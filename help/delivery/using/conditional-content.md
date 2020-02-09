@@ -1,0 +1,112 @@
+---
+title: 条件内容
+seo-title: 条件内容
+description: 条件内容
+seo-description: null
+page-status-flag: never-activated
+uuid: d1c38263-a163-448c-8822-8b3e776e45cf
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: delivery
+content-type: reference
+topic-tags: personalizing-deliveries
+discoiquuid: 167cc61a-fbc7-48cb-89ff-fbdbf9321c01
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+
+---
+
+
+# 条件内容{#conditional-content}
+
+通过配置条件内容字段，您可以创建基于收件人配置文件的动态个性化。 当满足特定条件时，替换文本块和／或图像。
+
+## 在电子邮件中使用条件 {#using-conditions-in-an-email}
+
+在以下示例中，您将学习如何创建消息，并根据收件人的性别和兴趣动态个性化。
+
+* 显示“Mr.” 或“女士” 根据数据源中 **[!UICONTROL Gender]** 字段（M或F）的值，
+* 根据显示或检测到的兴趣个性化组合新闻稿或促销优惠：
+
+   * Interest 1 — > Block 1
+   * Interest 2 — > Block 2
+   * 兴趣三— >第3块
+   * 兴趣四— >第四块
+
+要根据字段的值创建条件内容，请应用以下步骤：
+
+1. 单击个性化图标，然后选择 **[!UICONTROL Conditional content > If]**。
+
+   ![](assets/s_ncs_user_conditional_content02.png)
+
+   个性化元素将插入消息正文中。 您现在必须配置它们。
+
+1. 然后，填充if表达式的 **参数** 。
+
+   操作步骤：
+
+   * 选择表达式的第一个元素 **`<field>`**,(默认情况下，插入 **** if表达式时会高亮显示此元素)，然后单击个性化图标以将其替换为测试字段。
+
+      ![](assets/s_ncs_user_conditional_content03.png)
+
+   * 用 **`<value>`** 满足条件的字段的值替换。 此值必须用引号表示。
+   * 指定满足条件时要插入的内容。 这可能由文本、图像、表单、超文本链接等组成。
+
+      ![](assets/s_ncs_user_conditional_content04.png)
+
+1. 单击选 **[!UICONTROL Preview]** 项卡，根据分发收件人查看消息的内容：
+
+   * 选择条件为true的收件人：
+
+      ![](assets/s_ncs_user_conditional_content05.png)
+
+   * 选择条件不为的收件人：
+
+      ![](assets/s_ncs_user_conditional_content06.png)
+
+您可以添加其他情况并根据一个或多个字段的值定义不同的内容。 为此，请使用 **[!UICONTROL Conditional content > Else]** 和 **[!UICONTROL Conditional content > Else if]**。 这些表达式的配置方式与if表达式 **相同** 。
+
+![](assets/s_ncs_user_conditional_content07.png)
+
+>[!CAUTION]
+>
+>要遵循JavaScript语法，必 **须在添加Else和Else（如果条件）之后删除** % **> &lt;%** 字符 **** 。
+
+单击 **[!UICONTROL Preview]** 并选择收件人以查看条件内容。
+
+![](assets/s_ncs_user_conditional_content08.png)
+
+## 创建多语言电子邮件 {#creating-multilingual-email}
+
+在以下示例中，您将学习如何创建多语言电子邮件。 内容将以一种语言或另一种语言显示，具体取决于接收者喜欢的语言。
+
+1. 创建电子邮件并选择目标人群。 在此示例中，显示一个版本或另一个版本的条件将基于收件人配置文件的 **“语言** ”值。 在此示例中，这些值设置 **为EN**、 **FR**、 **ES**。
+1. 在电子邮件HTML内容中，单击该选 **[!UICONTROL Source]** 项卡并粘贴以下代码：
+
+   ```
+   <% if (language == "EN" ) { %>
+   <DIV id=en-version>Hello <%= recipient.firstName %>,</DIV>
+   <DIV>Discover your new offers!</DIV>
+   <DIV><a href="https://www.adobe.com/products/en">www.adobe.com/products/en</A></FONT></DIV><%
+    } %>
+   <% if (language == "FR" ) { %>
+   <DIV id=fr-version>Bonjour <%= recipient.firstName %>,</DIV>
+   <DIV>Découvrez nos nouvelles offres !</DIV>
+   <DIV><a href="https://www.adobe.com/products/fr">www.adobe.com/products/fr</A></DIV><%
+    } %>
+    <% if (language == "ES" ) { %>
+   <DIV id=es-version><FONT face=Arial>
+   <DIV>Olà <%= recipient.firstName %>,</DIV>
+   <DIV>Descubra nuestros nuevas ofertas !</DIV>
+   <DIV><a href="https://www.adobe.com/products/es">www.adobe.com/products/es</A></DIV>
+   <% } %>
+   ```
+
+1. 通过选择具有不同首选语 **[!UICONTROL Preview]** 言的收件人，在选项卡中测试电子邮件内容。
+
+   >[!NOTE]
+   >
+   >由于电子邮件内容中未定义任何替代版本，请确保在发送电子邮件之前过滤目标人群。
