@@ -1,0 +1,157 @@
+---
+title: Web应用程序跟踪退出
+seo-title: Web应用程序跟踪退出
+description: Web应用程序跟踪退出
+seo-description: null
+page-status-flag: never-activated
+uuid: c9b9eee2-a5be-4378-b2d7-53ed7121eae8
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: web
+content-type: reference
+topic-tags: web-applications
+discoiquuid: 8f413002-bd32-426f-88b9-44cefae68593
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+
+---
+
+
+# Web应用程序跟踪退出{#web-application-tracking-opt-out}
+
+Adobe Campaign使您能够停止跟踪通过cookies或网络信标选择退出行为跟踪的最终用户的Web行为。 该功能包括显示横幅以向最终用户显示该选项的功能；您可以将这些横幅添加到Web应用程序或登录页面。
+
+如果最终用户通过cookies或网络信标选择退出行为跟踪，则该信息会通过JavaScript API传输到Adobe Campaign跟踪服务器。 请注意，某些地区可能要求客户在向最终用户提供选择退出服务之前（或有其他法律要求），并且客户有责任遵守适用法律。
+
+## 配置横幅 {#configuring-the-banner-}
+
+要在Web应用程序或登陆页面中显示横幅，需要配置。
+
+Adobe Campaign会提供一个范例横幅，您必须根据自己的需求进行调整。 此横幅版本显示为位于内容模型文件夹中的个性化块。 请参见[此页面](../../delivery/using/personalization-blocks.md)。
+
+>[!CAUTION]
+>
+>要创建自己的横幅，您必须个性化现成的横幅。
+
+要激活横幅，您必须配置Web应用程序属性。 请参阅设 [计Web应用程序一节](../../web/using/designing-a-web-application.md) 。
+
+如果Web跟踪已激活，您可以：
+
+* 无横幅。
+* 在每个页面上手动配置横幅：选中此选项，然后在页面属性的每个页面中选择横幅。
+
+   ![](assets/pageproperties.png)
+
+* 自动向所有页面添加横幅：直接在Web应用程序属性中选择横幅。
+
+   ![](assets/optoutconfig.png)
+
+>[!NOTE]
+>
+>v5 web应用程序具有相同的行为，可使用兼容模式。
+
+默认横幅的结构如下：
+
+```
+<div onClick="NL.ClientWebTracking.closeOptOutBanner(this);" id="defaultOptOutBanner">
+  <p>Please insert your message here
+   <a onClick="NL.ClientWebTracking.allow();" class="optout-accept">Accept</a>
+   <a onClick="NL.ClientWebTracking.forbid();" class="optout-decline">Refuse</a>
+  </p>
+</div>
+      
+```
+
+您必须用包含 **您的跟踪信息的块替换** “请在此处插入消息”。 此替换应在与退出横幅相关的新个性化块中执行。
+
+横幅是通过特定CSS交付的。 但是，在创建和配置网页时，可以覆盖样式。 请参见[此页面](../../web/using/content-editor-interface.md)。
+
+## 使用API设置退出Cookie {#setting-the-opt-out-cookie-using-api}
+
+Adobe Campaign是通过API交付的，它允许您管理Cookie值和检索用户首选项。
+
+Cookie名称为 **退出**。 常见值有：
+
+* 0:用户已允许Web跟踪（默认值）
+* 1:用户已禁止Web跟踪
+* null:用户尚未选择，但允许Web跟踪，因为它是默认值
+
+用于自定义横幅的可用客户端API包括：
+
+* **NL.ClientWebTracking.allow()**:设置退出Cookie值以允许Web跟踪。 默认情况下，允许Web跟踪。
+* **NL.ClientWebTracking.ordin()**:设置退出Cookie值以禁止Web跟踪。 网络跟踪需要禁止用户输入。
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**:用户单击“接受”或“拒绝”按钮后，关闭退出Cookie横幅。 （在单击事件冒泡阶段）
+
+   bannerDomElt {DOMElement}需要删除的cookie横幅的根DOM元素
+
+* **NL.ClientWebTracking.hasUserPrefs()**:如果用户已选择Web跟踪的首选项，则返回true。
+* **NL.ClientWebTracking.getUserPrefs()**:返回定义用户首选项的退出Cookie值。
+
+如果必须编写JSSP，则可以使用服务器端API:
+
+* **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**:为要插入JSSP页面的退出横幅生成标记
+
+   **escapeJs {Boolean}**:当需要转义生成的标记以在JavaScript中使用时为true。
+
+   它返回需要在页面中打印的退出横幅标记的HTML。
+
+* **NL.ServerWebTracking。_displayOptOutBanner()**
+
+   如果在管理员选择退出横幅后应显示退出横幅，则返回true
+
+   当管理员已选择使用Web跟踪退出横幅时，将调用此代码。
+
+   如果用户尚未选择是否要跟踪，则应显示横幅。
+
+* **NL.ServerWebTracking.renderOptOutBanner(escapeJs)**
+
+   通过将退出横幅插入JSSP页面来呈现标记。 在Jssp中，它在&lt;% %>之间被调用
+
+   **escapeJs {Boolean}**:当需要转义生成的标记以在JavaScript内使用时为true
+
+JSSP示例：
+
+```
+<%@ page import="/nl/core/shared/nl.js" %>
+<!doctype html>
+<%
+NL.require('/nl/core/shared/webTracking.js');
+NL.client.require('/nl/core/shared/webTracking.js');
+%>
+<html>
+<head>
+<%==NL.client.deps()%>
+</head>
+
+<body>
+
+<!-- TEST USING SERVER API IN JSSP -->
+<% 
+var webTracking = new NL.ServerWebTracking(request, 'optOutBanner');
+webTracking.renderOptOutBanner();
+%>
+
+<!-- TEST USING SERVER API IN A SCRIPT -->
+<!--
+<% 
+var webTracking = new NL.ServerWebTracking(request, 'optOutBanner');
+%>
+<script>var el = document.createElement('div'); el.innerHTML =  "<% webTracking.renderOptOutBanner(true); %>";document.body.appendChild(el);</script>
+-->
+
+<!-- TEST OF THE CLIENT API -->
+<!--
+<div onClick="NL.ClientWebTracking.closeOptOutBanner(this);" id="defaultOptOutBanner">
+  <p>Please insert your message here
+   <a onClick="NL.ClientWebTracking.allow();" class="optout-accept">Accept</a>
+   <a onClick="NL.ClientWebTracking.forbid();" class="optout-decline">Refuse</a>
+  </p>
+</div>
+-->
+</body>
+</html>
+```
+
