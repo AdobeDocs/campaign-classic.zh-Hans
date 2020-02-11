@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f7f59e2341d7b68b8b28869efc5bfb04cd5ba14
+source-git-commit: c7521a076418d8f162d241cd883d10b1ed543d35
 
 ---
 
@@ -25,6 +25,10 @@ source-git-commit: 5f7f59e2341d7b68b8b28869efc5bfb04cd5ba14
 本页列出了Adobe Campaign Classic每个版本的所有新增功能和文档更新。
 
 您还可以参阅 [Adobe Campaign Classic发行说明](../../rn/using/latest-release.md)。
+
+## 2020年2月 {#february-2020}
+
+AMP for Email现在由三个电子邮件提供商（Gmail、Outlook和Mail.ru）支持，其中介绍如何使用AMP定义交互式内容的部分已更新。 [阅读更多](../../delivery/using/defining-interactive-content.md)
 
 ## 2020年1月 {#january-2020}
 
@@ -106,7 +110,7 @@ Campaign Standard和Campaign Classic的错误消息列表已更新。 [阅读更
 
 GDPR入门指南已得到改进和丰富。 它现在是包括GDPR和CCPA在内的隐私管理文档。 [阅读更多](https://helpx.adobe.com/content/help/en/campaign/kb/campaign-privacy.html)
 
-添加了新的疑难解答页面，用于在Campaign Classic中进行跟踪。 [阅读更多](https://helpx.adobe.com/campaign/kb/classic-tracking-troubleshooting.html)。
+添加了新的疑难解答页面，用于在Campaign Classic中跟踪。 [阅读更多](https://helpx.adobe.com/campaign/kb/classic-tracking-troubleshooting.html)。
 
 新增了Adobe Analytics Data Connector的最佳实践页面。 [阅读有关Adobe Analytics Data Connector的更多信息](../../platform/using/adobe-analytics-data-connector.md)
 
