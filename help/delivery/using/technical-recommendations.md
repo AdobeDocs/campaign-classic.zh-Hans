@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3a4eb0cf49b81d720fa3925d48cd250e0c3fde32
+source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ---
 
@@ -78,7 +78,7 @@ DKIM来自DomainKeys, Yahoo! 和Cisco Internet Mail身份验证原则，用于�
 
 DKIM已取代 **DomainKeys身份** 验证。
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >对于托管或混合安装，如果您已升级到增强的MTA，则DKIM电子邮件身份验证签名由增强的MTA完成。 作为增强的MTA升级的一部分，本机Campaign MTA的DKIM **[!UICONTROL Domain management]** 签名将在表中关闭。
 >
@@ -229,7 +229,7 @@ Gmail、Outlook.com和Microsoft outlook支持此方法，并且可在其界面�
 
 1. 列表——取消订阅：&lt;mailto:unsubscribe@domain.com>
 
-   单击取 **消订阅** (Unsubscribe)链接可打开用户的默认电子邮件客户端。 此类型学规则必须添加到用于创建电子邮件的类型学中。
+   单击取 **消订阅** (Unsubscribe)链接可打开用户的默认电子邮件客户端。 此排版规则必须添加到用于创建电子邮件的排版中。
 
 1. 列表——取消订阅： `<https://domain.com/unsubscribe.jsp>`
 
