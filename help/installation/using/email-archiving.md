@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 5b9c57b3cba0e8c24300396c2abac613f6e1193a
 
 ---
 
@@ -31,9 +31,10 @@ source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
 ## 建议和限制 {#recommendations-and-limitations}
 
 * 电子邮件存档功能是可选的。 请检查您的许可协议。
-* 对于托管和混合架构，请与您的客户经理联系以激活它。 对于内部部署安装，请遵循以下准则——请参阅激活电子邮件归档( [内部部署)](#activating-email-archiving--on-premise-) 和 [配置密送电子邮件地址（内部部署）部分](#configuring-the-bcc-email-address--on-premise-) 。
-* 配置电子邮件密送后，请确保在分发模板中或通过选项在分发中启用该功 **[!UICONTROL Archive emails]** 能。 For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
+* 对于 **托管和混合架构**，请联系您的客户经理以激活它。 您选择的密件抄送地址必须提供给Adobe团队，由团队为您配置。
+* 对于 **内部部署安装**，请按照以下准则激活它——请参阅激活电子邮件归档（内部部署） [和配置密送电子邮件地址(内部部](#activating-email-archiving--on-premise-) 署)部分 [](#configuring-the-bcc-email-address--on-premise-) 。
 * 您只能使用一个密送电子邮件地址。
+* 配置电子邮件密送后，请确保在分发模板中或通过选项在分发中启用该功 **[!UICONTROL Archive emails]** 能。 For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
 * 只有成功发送的电子邮件才会被考虑在内，而弹回则不会被考虑在内。
 * 电子邮件归档系统随Adobe Campaign 17.2（内部版本8795）而发生更改。 如果您已经在使用电子邮件归档，则必须手动升级到新的电子邮件归档系统（密件抄送）。 有关详细信息，请参阅更 [新的电子邮件归档系统（密送）部分](#updated-email-archiving-system--bcc-) 。
 
