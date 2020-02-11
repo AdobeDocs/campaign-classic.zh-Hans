@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ce2a1a55e244180a4e62d6f3b5a5ed5bb8aff6e
+source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ---
 
@@ -28,10 +28,11 @@ source-git-commit: 2ce2a1a55e244180a4e62d6f3b5a5ed5bb8aff6e
 
 >[!NOTE]
 >
->有关Adobe Campaign平台有效发送和接收消息的所有技术建议均可在“交付性技术说明”中 **找到** 。
->
->某些配置只能由Adobe为Adobe托管的部署执行。 例如，访问服务器和实例配置文件。 要进一步了解不同的部署，请参阅托 [管模型部分](../../installation/using/hosting-models.md) ，或 [本文](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。\
->请参阅入门指 [南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) ，其中介绍了与交付性相关的概念和最佳做法。
+>某些配置只能由Adobe为Adobe托管的部署执行。 例如，访问服务器和实例配置文件。 要进一步了解不同的部署，请参阅托 [管模型部分](../../installation/using/hosting-models.md) ，或 [本文](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。
+
+有关与可交付性相关的概念和最佳实践的详细信息，请参阅本 [节](../../delivery/using/about-deliverability.md)。
+
+本节提供有关Adobe Campaign平台有效发送和接收消息的所有技术建 [议](../../delivery/using/technical-recommendations.md)。
 
 ## 工作原理 {#operating-principle}
 
@@ -139,7 +140,7 @@ Mta **决定** ，此邮件的程序（恢复、放弃、隔离等）根据响�
 
 MX规则（邮件eXchanger）是管理发送服务器和接收服务器之间的通信的规则。
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >对于托管或混合安装，如果您已升级到增强的MTA，则不再使 **[!UICONTROL MX management]** 用交付吞吐量规则。 增强的MTA使用其自己的MX规则，该规则允许它根据您自己的历史电子邮件信誉以及来自您发送电子邮件的域的实时反馈，按域自定义您的吞吐量。
 >
@@ -416,4 +417,4 @@ maxWorkingSetMb **(maxWorkingSetMb** )参数是通过经验计算的，方法是
 
 ### 调整字段数 {#adjust-the-number-of-mtachild}
 
-子代的数量不应超过计算机中的处理器数量(约1000次会议)。 我们建议您不要超过8英 **镑**。 然后，您可以增加每个子代的消 **息数** (**maxMsgPerChild**)，以实现足够的寿命。
+子代的数量不应超过计算机中的处理器数量(约为1000次会议)。 我们建议您不要超过8英 **镑**。 然后，您可以增加每个子代的消 **息数** (**maxMsgPerChild**)，以实现足够的寿命。
