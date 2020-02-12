@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0237aafd79753db1bc1ca54853b7c51b65492eb2
+source-git-commit: e091bab4032a0fe8292ea65100627fefab2a5e30
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: 0237aafd79753db1bc1ca54853b7c51b65492eb2
 
 单 [击此处](../../rn/using/release--19-1.md#release-19-1-4-build-9032) ，查看上 **一个稳定版本** (GA)。
 
-## ![](assets/blue2.png) 版本19.2.3 —— 内部版本9081 {#release-19-2-3-build-9081}
+## ![](assets/blue-2.png) 版本19.2.3 —— 内部版本9081 {#release-19-2-3-build-9081}
 
 _2020年2月7日_
 
@@ -50,7 +50,7 @@ _2020年2月7日_
 * 修复了由于实施SSL认证而导致用户连接在Windows服务器上失败的回归问题。 (NEO-20629)
 * 修复了在“关于”菜单中显示错误版本标签 **号的问** 题。
 
-## ![](assets/orange2.png) 版本19.2 —— 内部版本9080 {#release-19-2-build-9080}
+## ![](assets/orange-2.png) 版本19.2 —— 内部版本9080 {#release-19-2-build-9080}
 
 _2019年12月2日_
 
