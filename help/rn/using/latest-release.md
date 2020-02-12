@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 37946a63a0cd0312de31b26dd4d115895d959638
+source-git-commit: 48969956922cf11aa208c23d985cc13b300bab05
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: 37946a63a0cd0312de31b26dd4d115895d959638
 
 单 [击此处](../../rn/using/release--19-1.md#release-19-1-4-build-9032) ，查看上 **一个稳定版本** (GA)。
 
-## ![](assets/orange2.png) 版本19.2.3 —— 内部版本9081 {#release-19-2-2-build-9081}
+## ![](assets/orange2.png) 版本19.2.3 —— 内部版本9081 {#release-19-2-3-build-9081}
 
 2020年2月7日_
 
