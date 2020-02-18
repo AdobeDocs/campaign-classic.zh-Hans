@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 1c4b5b7c44bbc74f56d3c70b93b131bba4d78c6f
 
 ---
 
@@ -126,4 +126,4 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
    ![](assets/uc_enrichment_20.png)
 
-您的电子邮件现已准备就绪。 您可以开始发送校样并确认已送达以发送生日电子邮件。
+您的电子邮件现已准备就绪。 您可以开始发送校样并确认您的送达方式以发送生日电子邮件。
