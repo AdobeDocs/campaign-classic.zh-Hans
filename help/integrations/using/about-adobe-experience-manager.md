@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 4a71d93e7e3284eaeb36b3536204474947d695f5
 
 ---
 
@@ -36,7 +36,11 @@ Adobe Campaign与Adobe Experience manager之间的集成允许您直接在Adobe 
 * Adobe Experience Manager发布 **实例** 。
 * Adobe Campaign实例。
 
-Adobe Campaign与Adobe Experience Manager 6.1、6.2、6.3和6.4兼容。以下各节概述了集成。
+Adobe Campaign与Adobe Experience Manager 6.1、6.2、6.3、6.4和6.5兼容。以下各节概述了集成。
+
+>[!NOTE]
+>
+>Adobe Campaign Classic模板不再在Adobe Experience Manager 6.5中可用。
 
 有关详细信息，请参阅为您的Adobe Experience manager版本提供的文档：
 
@@ -44,4 +48,4 @@ Adobe Campaign与Adobe Experience Manager 6.1、6.2、6.3和6.4兼容。以下�
 * [单击此处查看Adobe Experience Manager 6.2](https://docs.adobe.com/docs/en/aem/6-2/administer/integration/marketing-cloud/campaign/campaignonpremise.html)
 * [单击此处查看Adobe Experience Manager 6.3](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/campaignonpremise.html)
 * [单击此处查看Adobe Experience Manager 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/campaignonpremise.html)
-
+* [单击此处查看Adobe Experience Manager 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html)
