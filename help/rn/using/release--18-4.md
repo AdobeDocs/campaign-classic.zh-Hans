@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -111,7 +111,7 @@ source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
     <ul> 
      <li> <p>访问权限：允许数据主体接收由数据管理者捕获的个人数据的副本，可能包括Adobe Campaign中存储的数据。</p> </li> 
      <li> <p>删除权：使数据主体能够擦除由数据管理者捕获的个人数据，可能包括存储在Adobe Campaign中的数据。</p> </li> 
-    </ul> 有关详细信息，请参阅详 <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html">细文档</a>。<br /> </td> 
+    </ul> 有关详细信息，请参阅详 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">细文档</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> 使用中的用户档案<br /> </td> 
@@ -119,7 +119,7 @@ source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
   </tr> 
   <tr> 
    <td> Android Push Connector增强功能<br /> </td> 
-   <td> <p>Android连接器已得到增强以支持更高的吞吐量。 </p> <p>有关详细信息，请参阅详 <a href="../../delivery/using/setting-up-mobile-app-channel.md#android-connectors">细文档</a>。</p> </td> 
+   <td> <p>Android连接器已得到增强以支持更高的吞吐量。 </p> <p>有关详细信息，请参阅详 <a href="../../delivery/using/configuring-the-mobile-application.md">细文档</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -141,7 +141,7 @@ source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
 * 使用命令行可以使用新模式导入包，从而允许循环依赖关系（对于大包，不建议使用此模式）。 有关详细信息，请参阅“技术演化”部分。 (NEO-8979)
 * 改进了在Teradata中加载大量数据的性能，并修复了阻止显示日志中处理的正确数据值的问题。 (NEO-10429)
 * 从Audience Manager导入受众现在可处理拆分文件。 以前，只有区段的最后一个文件是由importSharedAudience技术工作流导入的。 (NEO-10156)
-* 在Windows上，Campaign服务器默认安装路径已更改。 启动64位版本设置时，默认安装路径现在为： **C：计划文件AdobeAdobe Campaign Classic v7** ，而不 **是C：计划文件(x86)AdobeAdobe Campaign Classic v7**
+* 在Windows上，Campaign服务器默认安装路径已更改。 启动64位版本设置时，默认安装路径现在为： **C:\Program Files\Adobe\Adobe Campaign Classic v7** ，而 **不是C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * 默认MX规则已得到增强，可包含更多域并优化吞吐量。
 * 对部署向导SOAP调用(xtk:serverOptions#SaveOptions)强制实施访问限制。
 * weka.jar过时的库已删除，OpenSSL库已更新，以便进行安全优化。
