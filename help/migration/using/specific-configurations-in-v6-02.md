@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -46,11 +46,11 @@ Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/
 
 ## 用户友好：主页和导航 {#user-friendliness--home-page-and-navigation}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果要继续使用v6.02概述类型的Web应用程序，则必须在播放升级之前，在不同的安全区域中激活 **allowSQLInjeption** 选项。 请参阅 [Web应用程序](#web-applications)。
 
-从版本6.02迁移后，Adobe Campaign v6.02主页不再显示，但仍可访问，并且与Adobe Campaign v7兼容。
+从版本6.02迁移后，Adobe Campaign v6.02主页不再显示，但仍可访问，并与Adobe Campaign v7兼容。
 
 要继续使用v6.02主页，必须在迁移后安装“兼容性”包。
 
