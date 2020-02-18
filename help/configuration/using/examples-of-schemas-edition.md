@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -49,7 +49,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
    在此示例中，添加索引字段(**保真度**)，并辅以枚举字段(区域 **AreaA)来补充位置元素(已存在于** nms:recipient ********&#x200B;架构中)。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >请记住添加 **extendedSchema属性** ，以引用扩展架构。
 
