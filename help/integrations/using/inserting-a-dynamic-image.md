@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 ---
 
@@ -26,9 +26,9 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 您必须事先在Adobe Target中执行以下操作：
 
-* 创建一个或多个 [重定向选件](https://marketing.adobe.com/resources/help/en_US/tnt/help/t_Creating_a_Redirect_Offer.html)，您必须在其中指定要使用的图像的URL。
+* 创建一个或多个 [重定向选件](https://docs.adobe.com/help/en/target/using/experiences/offers/offer-redirect.html)，您必须在其中指定要使用的图像的URL。
 * 创建一个或多 [个受众](https://marketing.adobe.com/resources/help/en_US/target/target/t_create-audience.html)，以定义活动的目标。
-* 创建基 [于表单的体验编写器活动](https://marketing.adobe.com/resources/help/en_US/tnt/help/t_Creating_an_A_B_Test.html) ，您必须在其中选择一个rawbox并根据创建的重定向选件的数量指定多个体验。 对于每个体验，您必须选择一个已创建的重定向选件。
+* 创建基 [于表单的体验编写器活动](https://docs.adobe.com/content/help/en/target/using/activities/abtest/create/test-create-ab.html) ，您必须在其中选择一个rawbox并根据创建的重定向选件的数量指定多个体验。 对于每个体验，您必须选择一个已创建的重定向选件。
 
    要指定这些体验，您可以使用Adobe Campaign中的信息创建区段。 要在选件的选择规则中使用Adobe Campaign中的数据，您必须在Adobe Target的rawbox中指定数据。
 
