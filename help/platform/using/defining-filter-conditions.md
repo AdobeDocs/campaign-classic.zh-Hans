@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 
 ---
 
@@ -212,7 +212,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_48.png" /> </td> 
-   <td> 主键。 此SQL字段是标识表中记录的一种方法。<br /> </td> 
+   <td> 主键。 此SQL字段是一种标识表中记录的方法。<br /> </td> 
    <td> 标识符接收者是主键，标识符根据定义是唯一的。<br /> </td> 
   </tr> 
   <tr> 
@@ -267,7 +267,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 >* 使用 **[!UICONTROL Add]** 按钮（侧图标栏上方）可添加要在其中编辑表达式的输出列。 有关编辑表达式的详细信息，请参阅构建 [表达式](#building-expressions)。
 >* 通过单击红色的“x”（删除）删除输&#x200B;**出列**。
 >* 使用箭头更改输出列的顺序。
->* 该 **[!UICONTROL Distribution of values]** 功能用于查看所选字段值的分布情况（例如，链接到收件人城镇的分布情况、收件人语言等）。
+>* 此 **[!UICONTROL Distribution of values]** 选项用作查看所选字段值的分布的方式（例如，链接到收件人城镇的分布、收件人语言等）。
 
 
 ## 创建计算字段 {#creating-calculated-fields}
