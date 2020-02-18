@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 通过Adobe Campaign，当收件人匿名浏览您的网站时，您可以将收集的Web跟踪信息关联到收件人。 当用户浏览您网站的标记页面时，会收集此浏览信息，以便用户在单击由Adobe Campaign发送的电子邮件后，即可识别这些页面，并自动将这些信息链接到这些页面。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >在网站上设置匿名跟踪可触发大量跟踪日志的收集，从而影响数据库操作。 谨慎配置。\
 >跟踪日志将保存在数据库中，直到清除跟踪数据。 使用部署向导配置清除频率。 如需详细信息，请参阅[此部分](../../installation/using/deploying-an-instance.md#purging-data)。
