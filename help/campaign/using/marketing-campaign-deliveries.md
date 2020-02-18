@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -72,7 +72,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 使用工 [作流自动化指南](../../workflow/using/executing-a-workflow.md#architecture) (Automating with workflows)包含工作流模块操作方式的详细说明。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >在同一营销活动中，不能设置28个以上的工作流。 超出此限制后，其他工作流在界面中不可见，并且可能生成错误。
 
@@ -233,7 +233,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
 1. 单击选 **[!UICONTROL Control group]** 项卡，然后选择 **[!UICONTROL Enable and edit control group configuration]**。
-1. 单击 **[!UICONTROL Edit...]** 以配置控制组
+1. 单击 **[!UICONTROL Edit...]** 以配置控件组。
 
 从主目标提取控 [制组和添加人群中介绍了配置](#extracting-the-control-group-from-the-main-target)[过程](#adding-a-population)。
 
@@ -353,7 +353,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 您可以将各种文档与营销活动关联：报告、照片、网页、图表等。 这些文档可以采用任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 要将文档与营销活动关联，请参阅 [添加文档](#adding-documents)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >此模式保留给小文档。
 
