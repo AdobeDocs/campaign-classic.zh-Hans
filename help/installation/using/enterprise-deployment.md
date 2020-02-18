@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
 ---
 
@@ -178,6 +178,11 @@ source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
    * 对于Windows:适用 [于Windows的客户端控制台可用性](../../installation/using/client-console-availability-for-windows.md)。
 
 1. 启动Adobe Campaign服务器(**Windows中的Net Start nlserver6** , **/etc/init.d/nlserver6在Linux中启动** )并再次运行命令 **nlserver pdump** ，以检查是否存在所有已启用的模块。
+
+   >[!NOTE]
+   >
+   >从20.1开始，我们建议改用以下命令（对于Linux）:系 **统mctl启动nlserver**
+
 
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
