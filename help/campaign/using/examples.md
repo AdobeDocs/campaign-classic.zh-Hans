@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -29,8 +29,6 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 >[!NOTE]
 >
 >API在专用文档中有详细介绍，其访问权限取决于您的合同。 请参阅 [API](../../configuration/using/about-web-services.md)。
-
->[!NOTE]
 >
 >此示例中使用的Web应用程序不是随Adobe Campaign一起推出的Web应用程序。 要在营销活动中使用表单，您必须创建专用的Web应用程序。
 
@@ -159,7 +157,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    * 发送给通知中的本地实体的消息内容，
    * 批准提醒，
-   * 营销活动的预期处理
+   * 营销活动的预期处理。
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
 1. 保存记录。
