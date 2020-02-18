@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 194d2263de0bf98afa0efc7e2e0b4ca433c95b6d
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -30,7 +30,7 @@ Campaign中有三种类型的交付对象：
 
 可以从分发列表中或通过“分发”活动在工作流中创建 [分发](../../workflow/using/delivery.md) 。
 
-工作流还根据您要使用的渠道类型提供特定的交付活动。 For more on these activites, refer to [this section](../../workflow/using/cross-channel-deliveries.md).
+工作流还根据您要使用的渠道类型提供特定的交付活动。 For more on these activities, refer to [this section](../../workflow/using/cross-channel-deliveries.md).
 
 ## 重复交付 {#recurring-delivery}
 
