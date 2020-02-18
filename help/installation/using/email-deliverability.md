@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
+source-git-commit: 21d808695bfde2fb3220964c066558ad30952443
 
 ---
 
@@ -28,7 +28,8 @@ source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 >[!NOTE]
 >
->某些配置只能由Adobe为Adobe托管的部署执行。 例如，访问服务器和实例配置文件。 要进一步了解不同的部署，请参阅托 [管模型部分](../../installation/using/hosting-models.md) ，或 [本文](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。
+>某些配置只能由Adobe为Adobe托管的部署执行。 例如，访问服务器和实例配置文件。 要进一步了解不同的部署，请参阅托 [管模型部分](../../installation/using/hosting-models.md) ，或 [本文](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。\
+>请参阅入门指 [南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) ，其中介绍了与交付性相关的概念和最佳做法。
 
 有关与可交付性相关的概念和最佳实践的详细信息，请参阅本 [节](../../delivery/using/about-deliverability.md)。
 
@@ -379,19 +380,24 @@ MIME结 **构** （多用途Internet邮件扩展）参数允许您定义将发�
 
 * **地址**:这是要使用的MTA主机的IP地址。
 * **helo主机**:此标识符表示SMTP服务器将看到的IP地址。
+
 * **publicId**:当NAT路由器后面的几个Adobe Campaign mta共享IP地址时，此 **信息很** 有用。 统计服务器使用该标识符来存储该起始点和目标服务器之间的连接和发送统计信息。
 * **粗细**:允许您定义地址的相对使用频率。 默认情况下，所有地址的粗细均等于1。
 
-   在上一个示例中，在正常情况下，地址将按如下方式分发：
+>[!NOTE]
+>
+>在serverConf.xml文件中，您需要验证一个IP是否对应于具有唯一标识符(public_id)的单个主机。 它无法映射到多个主机，这可能导致交付限制问题。
 
-   * &quot;1&quot;: 5 / (5+5+1) = 45%
-   * &quot;2&quot;: 5 / (5+5+1) = 45%
-   * &quot;3&quot;: 1 / (5+5+1) = 10%
-   例如，如果第一个地址不能用于给定的MX，则消息将按如下方式发送：
+在上一个示例中，在正常情况下，地址将按如下方式分发：
 
-   * &quot;2&quot;: 5 / (5+1) = 83%
-   * &quot;3&quot;: 1 / (5+1) = 17%
+    * &quot;1&quot;: 5 / (5+5+1) = 45%
+    * &quot;2&quot;: 5 / (5+5+1) = 45%
+    * &quot;3&quot;: 1 / (5+5+1) = 10%
 
+例如，如果第一个地址不能用于给定的MX，则消息将按如下方式发送：
+
+    * &quot;2&quot;: 5 / (5+1) = 83%
+    * &quot;3&quot;: 1 / (5+1) = 17%
 
 * **includeDomains**:允许您为属于特定域的电子邮件保留此IP地址。 这是一个蒙版列表，它可以包含一个或多个通配符(&#39;*&#39;)。 如果未指定属性，则所有域都可以使用此IP地址。
 
