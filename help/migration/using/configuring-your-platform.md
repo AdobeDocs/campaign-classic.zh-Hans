@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 40391fbea53757decb48fd937f5e74e8ba6fb207
 
 ---
 
@@ -45,8 +45,6 @@ Adobe Campaign v7中的某些重大更改需要配置以确保其有效运行。
    如果要使用“多时区”模式，请参阅“时 [区”部分](../../migration/using/general-configurations.md#time-zones) 。
 
    如果将Oracle用作数据库，请检查Oracle时区文件是否已在应用程序服务器和数据库服务器之间正确同步。 For more on this, refer to the [Oracle](../../migration/using/general-configurations.md#oracle) section.
-
-   此外，在从v.5.11平台迁移期间，在MySQL中，您必须执行其他配置。 有关详细信息，请参阅 [MySQL](../../migration/using/specific-configurations-in-v5-11.md#mysql) 部分。
 
 * 安全区
 
