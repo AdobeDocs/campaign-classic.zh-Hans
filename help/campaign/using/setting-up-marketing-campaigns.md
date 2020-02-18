@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -148,14 +148,14 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 执行调度的配置模式与工作流 **[!UICONTROL Scheduler]** 的对象一致。 如需详细信息，请参阅[此部分](../../workflow/using/executing-a-workflow.md#architecture)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >必须仔细执行执行执行计划配置，以避免数据库过载。 重复的营销活动会根据指定的计划复制模板的工作流。 过度频繁的工作流创建的实现会阻碍数据库的操作。
 
 1. 在字段中指定 **[!UICONTROL Create in advance for]** 一个值，以便为指示的期间创建相应的工作流。
 1. 根据此模板创建要在营销活动中使用的工作流模板，其中包含定位参数和一个或多个通用提交。
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >此工作流必须另存为循环工作流模板。 为此，请编辑工作流属性，并在选 **[!UICONTROL Recurring workflow template]** 项卡中选择 **[!UICONTROL Execution]** 选项。
 
@@ -174,7 +174,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
    对于每行，您可以添加以下附加选项：
 
-   * **[!UICONTROL To be approved]** :允许您在工作流中强制提交批准请求
+   * **[!UICONTROL To be approved]** :允许您在工作流中强制提交批准请求。
    * **[!UICONTROL To be started]** :允许您在到达开始日期后启动工作流。
    通过 **[!UICONTROL Create in advance for]** 该字段，您可以创建涵盖所输入期间的所有工作流。
 
@@ -211,7 +211,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 1. 输入模板的属性。
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >分配了模板的操作员需要拥有相应的权限才能在选定计划中创建营销活动。
 
@@ -227,7 +227,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >定期营销活动模板会根据上述定义的计划创建新营销活动。 因此，必须仔细完成它，以避免Adobe Campaign数据库过载。
 
