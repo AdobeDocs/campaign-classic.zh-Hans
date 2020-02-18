@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -53,7 +53,7 @@ source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
 
 在服务器配置中，您可以定义Web跟踪参数要考虑的最大字符数。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >增加要考虑的最大字符数可能会影响平台的Web跟踪性能。
 
@@ -76,15 +76,25 @@ webTrackingParamSize="64"/>
 
 * 停止承载重定向模块（Apache、IIS等）的Web服务器，
 * 停止Adobe Campaign服务器：在 **Windows中停止nlserver6** ，在 **Linux中停止/etc/init.d** /nlserver6,
+
+   >[!NOTE]
+   >
+   >从20.1开始，我们建议改用以下命令（对于Linux）:系 **统mctl停止nlserver**
+
 * 在Linux中，使用 **ipcrm命令删除共享内存段** ,
 * 重新启动Adobe Campaign服务器：在 **Windows中启动nlserver6** ，在 **Linux中启动/etc/init.d/nlserver6** ,
+
+   >[!NOTE]
+   >
+   >从20.1开始，我们建议改用以下命令（对于Linux）:系 **统mctl启动nlserver**
+
 * 重新启动Web服务器。
 
 **示例**:考虑Linux下的配置。
 
 ```
-adobe@selma:~$ /etc/init.d/nlserver6 stop
-adobe@selma:~$ /etc/init.d/apache stop
+adobe@selma:~$ systemctl stop nlserver
+adobe@selma:~$ systemctl stop apache2
 adobe@selma:~$ ipcs shm
 
 ------ Shared Memory Segments --------
@@ -100,8 +110,8 @@ key        msqid      owner      perms      used-bytes   messages
 
 adobe@selma:~$ ipcrm shm 2097153                             
 1 resource(s) deleted
-adobe@selma:~$ /etc/init.d/nlserver6 start
-adobe@selma:~$ /etc/init.d/apache start
+adobe@selma:~$ systemctl start nlserver
+adobe@selma:~$ systemctl start apache2
 ```
 
 >[!NOTE]
