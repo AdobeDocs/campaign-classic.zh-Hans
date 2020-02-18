@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -33,8 +33,7 @@ source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
 >[!NOTE]
 >
 >如果需要强制重新生成所有架构（例如，要解决反向链接中的某些依赖关系问题），可以从Adobe Campaign应用程序服务器中启动以下命令：
-
+>
 >**nlserver config -postupgrade -instance:`&lt;instance name>&#39; -force**
-
+>
 >然后，必须重新启动Adobe Campaign应用程序服务器，并断开与客户端控制台的连接／重新连接。
-
