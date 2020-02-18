@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
+source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
 参阅我们直观的逐步指南，开始使用 Adobe Campaign。
 
 * [使用 Adobe Experience Manager 编辑电子邮件内容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html)：了解 Adobe Campaign 和 Experience Manager 集成的基本知识。
-* [一般数据保护条例](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html)：了解 Adobe Campaign Classic 提供哪些功能可帮助您在使用我们的服务时遵循 GDPR。
+* [隐私管理](https://helpx.adobe.com/campaign/kb/acc-privacy.html):了解Adobe Campaign Classic在使用我们的服务时提供哪些帮助来帮助您遵守隐私。
 * [在电子邮件中集成动态内容](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/target.html)：了解 Campaign Classic 和 Target Standard 集成的基本知识。
 * [管理可投放性](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)：了解与可投放性相关的概念和最佳实践，以及 Adobe Campaign Classic 提供的工具，从而最佳地发送您的投放内容。
 * [投放最佳实践](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)：了解有关使用 Adobe Campaign Classic 设计投放内容并发送内容的最佳实践。
