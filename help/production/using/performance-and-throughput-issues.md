@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
 ---
 
@@ -57,7 +57,7 @@ Adobe Campaign还提供了一 [个检查](../../production/using/monitoring-proc
 
 * MTA和MTAChild进程和内存：mta **模块** 向其子模块分 **发消息** 。 每个 **计算机** 在从统计服务器请求授权并发送消息之前准备消息。 Refer to this [page](../../installation/using/email-deliverability.md) for more information.
 * TLS配置：不建议全局启用TLS，因为它可以降低吞吐量。 相反，应根据需要调整由可交付性团队管理的每域TLS设置。 Refer to this [page](../../installation/using/email-deliverability.md#mx-configuration) for more information.
-* DKIM:为确保DKIM的安全级别，建议采用最佳实践加密大小。 大多数访问提供者不会认为低DKIM密钥有效。 请参阅本 [页](../../delivery/using/technical-recommendations.md#domainkeys-identified-mail--dkim-) 和此技 [术说明](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html)。
+* DKIM:为确保DKIM的安全级别，建议采用最佳实践加密大小。 大多数访问提供者不会认为低DKIM密钥有效。 请参阅本 [页](../../delivery/using/technical-recommendations.md#dkim) 和此技 [术说明](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html)。
 
 ## 可交付性问题 {#deliverability-issues}
 
@@ -66,7 +66,7 @@ Adobe Campaign还提供了一 [个检查](../../production/using/monitoring-proc
 * IP声誉：如果IP声誉不够好，就会对业绩产生影响。 可交 **付性监视模块** ，提供各种工具来跟踪平台的可交付性能。 Refer to this [page](../../delivery/using/technical-monitoring.md).
 * IP预热：ip预热由可交付性团队执行。 这包括在几周内通过新IP逐渐增加电子邮件数量。
 * IP亲和力设置：不正确的IP关联设置可以完全停止电子邮件（配置中的运算符／关联名称不正确）或降低吞吐量（关联中的IP数量较少）。 Refer to this [page](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* 电子邮件大小：电子邮件大小在吞吐量中起着重要作用。 建议的最大电子邮件大小为60 KB。 Refer to this [page](https://helpx.adobe.com/legal/product-descriptions/campaign.html). 在“交 [付吞吐量](../../reporting/using/reports-on-deliveries.md#delivery-throughput) ”报告中，检查按小时传输的字节数。
+* 电子邮件大小：电子邮件大小在吞吐量中起着重要作用。 建议的最大电子邮件大小为60 KB。 Refer to this [page](https://helpx.adobe.com/legal/product-descriptions/campaign.html). 在“交 [付吞吐量](../../reporting/using/delivery-reports.md#delivery-throughput) ”报告中，检查按小时传输的字节数。
 * 大量无效收件人：当存在大量无效收件人时，它可能会影响吞吐量。 MTA会继续重试向无效收件人发送电子邮件。 请确保数据库得到妥善维护。
 * 个性化数量：如果交付仍在“进行个性化”中，请检查个性化基块中使用的JavaScript。
 
