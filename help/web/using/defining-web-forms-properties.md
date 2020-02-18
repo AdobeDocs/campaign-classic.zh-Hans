@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -141,7 +141,7 @@ Web表单可完全配置且可个性化，可满足您的要求。 必须在属�
 * **来源** ，以指定答复者的来源。
 * **_uuid** 在发布和错误跟踪之前启用表单查看。 此参数供内部使用（创建和调试）:当您通过此URL访问Web表单时，在跟踪（报告）中不会考虑创建的记录。 将源强制设置为该 **[!UICONTROL Adobe Campaign]** 值。
 
-   它与 **_preview参数和** /或** _debug**一起使用：
+   它与 **_preview参数和／或** _debug一起使用 ****:
 
    **_preview** ，以显示上次保存的版本。 此参数只能在测试阶段中使用。
 
