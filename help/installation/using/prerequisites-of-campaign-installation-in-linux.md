@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8ad1a83d40f5a841b01aaeb17fe271b44f2480dd
+source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 ---
 
@@ -53,15 +53,13 @@ source-git-commit: 8ad1a83d40f5a841b01aaeb17fe271b44f2480dd
 
 * 您必须 **拥有0.9.8** 或 **1.0版OpenSSL** 。
 
-   对于RHEL 7和CentOS 6分发，需要OpenSSL版本1.0。
+   对于RHEL 7分发版，需要OpenSSL版本1.0。
 
 * 要使用Adobe Campaign，您需要安装 **libicu** library。
 
    支持以下 **版本** （32位或64位）:
 
-   * RHEL 6、SLES、CentOS 6:libicu4.2
    * RHEL 7, CentOS 7:libicu50
-   * 德比安7:libicu48
    * 德比安8:libicu52
    * 德比9:libicu57
    要使用Adobe Campaign，您需要安装libc-ares库。 在RHEL/CentOS上，运行以下命令：
