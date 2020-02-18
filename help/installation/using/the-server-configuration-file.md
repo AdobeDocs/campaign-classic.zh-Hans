@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9d7cbe5f2407deb8fd2e00a60bf9e3789101e6ff
+source-git-commit: 09fa3751d94fd71a68470174dd0b4a48d94d3f44
 
 ---
 
@@ -1555,6 +1555,12 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*&quot;
    <td> 如果未定义，则使用最新版本。 <br /> </td> 
   </tr> 
   <tr> 
+   <td> useMomentum<br /> </td> 
+   <td> 如果设置为“true”，则您的实例使用增强的 <a href="https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html" target="_blank">MTA</a>。<br /> </td> 
+   <td> Boolean<br /> </td> 
+   <td> <br /> </td>b 
+  </tr>
+  <tr> 
    <td> verifyMode<br /> </td> 
    <td> 验证模式：激活验证模式(不进行消息的物理传输；用于模拟和测试)。<br /> </td> 
    <td> Boolean<br /> </td> 
@@ -1571,7 +1577,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*&quot;
    <td> X-Mailer字段：SMTP邮件头中字段“X-Mailer”的值。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> 'nlserver，内部版本$(PRODUCT_VERSION)'<br /> </td> 
-  </tr> 
+  </tr>  
  </tbody> 
 </table>
 
