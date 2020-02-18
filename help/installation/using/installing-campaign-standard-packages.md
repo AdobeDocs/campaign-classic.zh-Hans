@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
+source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
 
 ---
 
@@ -210,7 +210,7 @@ source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
    <td> 收件箱渲染(IR)<br /> </td> 
    <td> 使您能够预览在可能接收消息的不同上下文中发送的消息，并检查主要桌面和应用程序的兼容性。 你需要个利特姆斯账户。<br /> </td> 
    <td> 营销<br /> </td> 
-   <td> 可选，了 <a href="../../delivery/using/about-deliverability.md#inbox-rendering">解更多</a> </td> 
+   <td> 可选，了 <a href="../../delivery/using/inbox-rendering.md">解更多</a> </td> 
   </tr> 
   <tr> 
    <td> 中央／本地营销（分布式营销）<br /> </td> 
@@ -250,9 +250,9 @@ source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
   </tr> 
   <tr> 
    <td> 隐私数据保护规定<br /> </td> 
-   <td> 包含帮助项目在Campaign Classic中符合GDPR的其他功能。<br /> </td> 
+   <td> 包含其他功能，可帮助您在Campaign Classic中实现隐私合规性。<br /> </td> 
    <td> 全部</td> 
-   <td> <a href="https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html">了解更多</a> </td> 
+   <td> <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">了解更多</a> </td> 
   </tr> 
   <tr> 
    <td> 转移至中间采购 <br /> </td> 
