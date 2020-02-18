@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -90,7 +90,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/social_twitter_service_009.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >服 **[!UICONTROL Internal name]** 务的名称必须与Twitter帐户的名称相同。 要确保没有输入错误，请应用以下步骤。
 
@@ -124,7 +124,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## 同步Twitter帐户 {#synchronizing-twitter-accounts}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >要使工作流恢复Twitter订阅者列表，必须在链 **[!UICONTROL Twitter account synchronization]** 接到帐户的服务的编辑部分选中该框。 有关详细信息，请参 [阅委派对Adobe Campaign的写权限](#delegating-write-access-to-adobe-campaign)。
 
