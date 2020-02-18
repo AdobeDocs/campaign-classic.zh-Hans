@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Campaign提供多个连接器，允许您与外部应用程序通信、连
 
 这些连接器包括：
 
-* FDA Connector(**Federated Data Access**)使您能够将Campaign连接到一个或多个外部数据库并处理存储在这些数据库中的信息，而不会影响您的Campaign数据。 [了解更多信息](../../platform/using/accessing-an-external-database.md)。
+* FDA Connector(**Federated Data Access**)使您能够将Campaign连接到一个或多个外部数据库并处理存储在这些数据库中的信息，而不会影响您的Campaign数据。 [了解更多信息](../../platform/using/about-fda.md)。
 * CRM连接器使Adobe Campaign与您的CRM解决方案之间能够使用专用的工作流程活动交换数据。 [了解更多信息](../../platform/using/crm-connectors.md)。
 * Analytics Data Connectors(以前是 **Adobe Genesis**)使您能够在Adobe Campaign和Adobe Analytics之间共享数据。 [了解更多信息](../../platform/using/adobe-analytics-data-connector.md)。
 
