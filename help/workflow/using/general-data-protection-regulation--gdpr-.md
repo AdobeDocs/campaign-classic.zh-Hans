@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: aa941e4f8803f65ce9d5f7567206b1fcc20a6dc6
 
 ---
 
 
-# 一般数据保护规定(GDPR){#general-data-protection-regulation-gdpr}
+# 隐私数据保护规定{#general-data-protection-regulation-gdpr}
 
-以下详细介绍的工作流默 **认情况下随“一般数据保护规定”(GDPR)** 模块一起安装。 For more on this module, refer to this [section](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html).
+下面详述的工作流默认情况下随 **隐私数据保护规定模块一起安装** 。 有关本单元的详细信息，请参阅本 [文](https://helpx.adobe.com/campaign/kb/acc-privacy.html)。
 
 <table> 
  <tbody> 
