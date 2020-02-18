@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8ad1a83d40f5a841b01aaeb17fe271b44f2480dd
+source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 ---
 
@@ -30,9 +30,7 @@ source-git-commit: 8ad1a83d40f5a841b01aaeb17fe271b44f2480dd
 
 * 将文件复制到 **/usr/local/neolane**
 * 创建一个Adobe Campaign linux帐户（和关联的组），该帐户以 **/usr/local/neolane** 作为其主目录创建
-* 创建自动脚本 **/etc/init.d/nlserver6** ，以在启动时使用
-
-此包是使用GCC 4编译的，这意味着与特定版本的库存在依赖关系，这些库并不总是在安装平台上可用。
+* 创建供启动 **时使用的自动脚本** /etc/init.d/nlserver6，或创建系统单元（从20.1开始）。
 
 >[!NOTE]
 >
@@ -76,72 +74,7 @@ source-git-commit: 8ad1a83d40f5a841b01aaeb17fe271b44f2480dd
 yum install bc.x86_64
 ```
 
-**在SLES 11 SP2上安装的示例：**
-
-* 禁用 **[!UICONTROL libboost_regex]** :
-
-   ```
-   zypper remove libboost_regex1_36_0
-   ```
-
-* 安装Oracle Java或OpenJDK(有关详细信息，请参阅 [Java开发工具包- JDK](../../installation/using/application-server.md#java-development-kit---jdk)):
-
-   ```
-   ./jdk-6uxx-linux-x64-rpm.bin
-   ```
-
-* 安装OpenSSL 1.0(有关详细信息，请参阅 [库](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#libraries)):
-
-   ```
-   yast -i libopenssl1_0_0-1.0.0c-18.42.1.x86_64.rpm
-   ```
-
-   您需要创建指向OpenSSL库文件的别名：
-
-   ```
-   ln -s /lib64/libssl.so.1.0.0 /lib64/libssl.so.10
-   ln -s /lib64/libcrypto.so.1.0.0 /lib64/libcrypto.so.10
-   ```
-
-* 安装libicu 4.2(有关详细信息，请参阅 [库](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#libraries)):
-
-   ```
-   yast -i libicu-4.2-7.3.1.x86_64.rpm
-   ```
-
-* 安装Adobe Campaign服务器的包：
-
-   ```
-   yast -i nlserver6-v7-xxx-x.x86_64.rpm
-   ```
-
 ## 基于APT(Debian)的分发 {#distribution-based-on-apt--debian-}
-
-### 在德比亚32位中 {#in-debian-32-bits}
-
-要在Debian 32位操作系统上安装Adobe Campaign 32位，请应用以下步骤：
-
-1. 您必须首先获得两个Adobe Campaign包。
-
-   * **nlserver6-v7-XXXX-linux-2.6-intel.deb** for v7.
-   * **用于v6.1的nlserver6-XXXX-linux-2.6-intel.deb** 。
-   **XXXX** 是Adobe Campaign内部版本号。
-
-   >[!CAUTION]
-   >
-   >确保在本节的命令范例中为您的Adobe Campaign版本使用正确的文件名。
-
-1. 要安装它，请以 **root身份连接** ，并执行以下命令(其中 **XXXX** 是Adobe Campaign内部版本号):
-
-   ```
-   dpkg -i nlserver6-v7-XXXX-linux-2.6-intel.deb
-   ```
-
-   如果缺少相关性，请运行以下命令：
-
-   ```
-   apt-get install -f
-   ```
 
 ### 在德比亚64位中 {#in-debian-64-bits}
 
@@ -163,15 +96,21 @@ yum install bc.x86_64
    dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
    ```
 
-**德比安“7·8”特点**
-
-在Debian 7操作系统上安装Adobe Campaign时，请考虑以下事项：
-
-* 必须事先安装OpenSSL。
-* 使用以下命令安装libicu48(Debian 7)、libicu52(Debian 8)或libicu57(Debian 9)、libprotobuf9(Debian8)和libc-ares2:
+   如果缺少相关性，请运行以下命令：
 
    ```
-   aptitude install libicu48 (Debian 7) libicu52 (Debian 8) libicu57 (Debian 9)
+   apt-get install -f
+   ```
+
+**德比安“8·9”特点**
+
+在Debian 8/9操作系统上安装Adobe Campaign时，请考虑以下事项：
+
+* 必须事先安装OpenSSL。
+* 使用以下命令安装libicu52(Debian 8)或libicu57(Debian 9)、libprotobuf9(Debian8)和libc-ares2:
+
+   ```
+   aptitude install libicu52 (Debian 8) libicu57 (Debian 9)
    ```
 
    ```
@@ -179,13 +118,13 @@ yum install bc.x86_64
    ```
 
    ```
-   aptitude install libprotobuf9 (only Debian 7/8)
+   aptitude install libprotobuf9 (only Debian 8)
    ```
 
 * 使用以下命令安装JDK7:
 
    ```
-   aptitude install openjdk-7-jdk (Debian 7/8)
+   aptitude install openjdk-7-jdk (Debian 8)
    ```
 
    ```
@@ -264,7 +203,7 @@ export neolane_LANG=fra
 
    * 德比安
 
-      提供了OOO_INSTALL_DIR、OOO_BASIS_INSTALL_DIR、OOO_URE_INSTALL_DIR的默认值。 如果LibreOffice安装的布 **局不同** ，则可以在customer.sh中覆盖这些设置：
+      提供了OOO_INSTALL_DIR、OOO_BASIS_INSTALL_DIR、OOO_URE_INSTALL_DIR的默认值。 如果LibreOffice安装的布 **局不同** ，则可以在customer.sh中覆盖它们：
 
       ```
       export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
@@ -309,6 +248,13 @@ export neolane_LANG=fra
 /etc/init.d/nlserver6 start
 ```
 
+从20.1开始，我们建议改用以下命令：
+
+```
+systemctl stop nlserver
+systemctl start nlserver
+```
+
 ### Linux中的Oracle客户端 {#oracle-client-in-linux}
 
 将Oracle与Adobe Campaign结合使用时，您需要在Linux中配置Oracle客户端层。
@@ -316,7 +262,7 @@ export neolane_LANG=fra
 * 使用完整客户端
 * TNS定义
 
-   必须在安装阶段添加TNS定义。 为此，请使用以下命令：
+   TNS定义必须在安装阶段添加。 为此，请使用以下命令：
 
    ```
    cd /etc
@@ -340,7 +286,7 @@ export neolane_LANG=fra
    ln -s libclntsh.so.10.1 libclntsh.so
    ```
 
-如果您遇到问题，请确保 [Oracle安装文档中列出的包已正确安装](http://www.oracle.com/pls/db112/portal.portal_db?selected=11) 。
+如果您遇到问题，请确保 [Oracle安装文档中列出的包已正确安装](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) 。
 
 ## 安装检查 {#installation-checks}
 
