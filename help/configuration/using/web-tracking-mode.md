@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Campaign允许您选择Web跟踪模式，该模式定义在应用程序中
 
 每种模式都有特定的特性。 “永久”Web跟踪模式包括“会话”Web跟踪模式的特性，而“匿名”模式包括“永久”和“会话”模式的特性。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果启用“Lead”包，则默认情况下将启用“匿名”Web跟踪模式。 在所有其他情况下，默认情况下启用“会话”Web跟踪模式。
 >
