@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
 
    Adobe Campaign社交营销还使您能通过Facebook轻松获取新联系人：联系用户并询问他们是否希望共享其个人资料信息。 如果他们接受，Adobe Campaign会自动恢复数据，这使您能够开展定位营销活动，并在可能的情况下实施跨渠道战略。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Facebook和Twitter会定期更改其屏幕和流程。 此文档将相应更新。
 >
