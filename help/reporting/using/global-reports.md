@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 ![](assets/s_ncs_user_report_global_list.png)
 
->[!CAUTION]
+>[!NOTE]
 >
 >此部分仅显示链接到交付的报表。
 
@@ -104,7 +104,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
    >
    >此指示器仅涉及移动渠道上的交付。 如需详细信息，请参阅[此部分](../../delivery/using/sms-channel.md)。
 
-   单击+符号可打开值表的每 [行] 。 对于每个错误类型，您可以按域显示错误消息的细分。
+   单击符号可打开值表的每行 `[+]` 。 对于每个错误类型，您可以按域显示错误消息的细分。
 
    ![](assets/s_ncs_user_errors_report_detail.png)
 
@@ -257,7 +257,7 @@ For more information on viral marketing, refer to [this section](../../delivery/
 
 ![](assets/s_ncs_user_services_report.png)
 
-可通过单击主页的节点或资源管理器 **[!UICONTROL Profiles and targets > Services and subscriptions]** 来显示订阅的订阅。 选择所需的订阅，然后单击选 **[!UICONTROL Reports]** 项卡。 默 **[!UICONTROL Subscriptions tracking]** 认情况下报告可用。 它允许您查看订阅和取消订阅趋势以及一段时间内的忠诚度率。 您可以通过下拉列表配置此数据的表示形式。 单击 **[!UICONTROL Refresh]** 以验证选定的配置。
+单击主页的节点或资源管理器可 **[!UICONTROL Profiles and targets > Services and subscriptions]** 以显示订阅的订阅。 选择所需的订阅，然后单击选 **[!UICONTROL Reports]** 项卡。 默 **[!UICONTROL Subscriptions tracking]** 认情况下报告可用。 它允许您查看订阅和取消订阅趋势以及一段时间内的忠诚度率。 您可以通过下拉列表配置此数据的表示形式。 单击 **[!UICONTROL Refresh]** 以验证选定的配置。
 
 如需详细信息，请参阅[此页面](../../delivery/using/managing-subscriptions.md)。
 
