@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
+source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
 
 ---
 
@@ -45,7 +45,7 @@ source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
 
    该过程与 **Query**-type活动的过程相同。
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >最多可以过滤两个外部数据库(FDA)中的数据。
 
@@ -59,7 +59,7 @@ source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
 
    ![](assets/s_user_segmentation_partage_add.png)
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >如果未 **[!UICONTROL Enable overlapping of output populations]** 选中此选项，则按选项卡的顺序创建子集。 使用此窗口右上角的箭头移动它们。 例如，如果第一子集恢复了初始种群的70%，则下一个子集将仅将其选择标准应用于其余的30%，依此类推。
 
@@ -135,7 +135,7 @@ source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >要使用此功能，您需要购买“分布式营销”模块（即营销活动选项）。 请检查您的许可协议。
 
@@ -200,7 +200,7 @@ source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
 
       如果在未经本地批准的情况下由数据分组进行简单限制，则无需输入字 **[!UICONTROL Group or operator]** 段。
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >确保已为运营商分配了相应的权限。
 
