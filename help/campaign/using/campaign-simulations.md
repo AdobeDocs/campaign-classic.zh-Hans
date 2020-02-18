@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -78,11 +78,11 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   如有必要，您可以通过链接使用动态条 **[!UICONTROL Edit the dynamic condition...]** 件
+   如有必要，您可以通过链接使用动态 **[!UICONTROL Edit the dynamic condition...]** 条件。
 
    单击 **[!UICONTROL Save]** 以批准此配置。
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >在计算模拟时，只考虑已计算目标的交付(状态：Target ready **** (目标就绪 **)**&#x200B;或Ready to deliver（就绪）。
 
@@ -215,13 +215,13 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    * **[!UICONTROL Generate target overlap statistics]** 允许您恢复模拟报告中的所有重叠统计信息。 重叠是在一个模拟内至少两个传送中的目标收件人。
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >选择此选项会显着增加模拟执行时间。
 
    * **[!UICONTROL Keep the simulation work table]** 让您保留模拟跟踪。
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >自动保存这些表需要大量存储容量：确保数据库足够大。
 
