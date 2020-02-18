@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4f8a13e3788b99ff4214e00dec1f88fdef0cb964
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -49,7 +49,7 @@ source-git-commit: 4f8a13e3788b99ff4214e00dec1f88fdef0cb964
 
 1. 如果开发环境迁移成功，您可以迁移生产环境。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >由于对数据结构进行了更改，在v5平台和v7平台之间无法导入和导出数据包。
 
