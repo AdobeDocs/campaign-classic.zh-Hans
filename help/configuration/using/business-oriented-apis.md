@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -43,7 +43,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 本节详细介绍了“订阅”、“取消订阅”和“SubmitDelivery”服务的使用。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >[Campaign JSAPI文档包含有关SOAP调用和在Adobe Campaign中使用Javascript的其他信息](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) ，以及对应用程序中使用的所有方法和函数的完整参考。
 
