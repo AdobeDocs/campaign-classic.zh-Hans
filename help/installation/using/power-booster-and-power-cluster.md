@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a5072ba55690d4d88c12ac7ff647f163deddbf32
+source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 ---
 
@@ -41,7 +41,6 @@ Adobe Campaign为您提供两组预先打包的架构选项，用于确定部署
 Power Booster和Power Cluster选项可供以下应用程序使用：
 
 * 营销活动
-* 潜在客户
 * 投放
 * 消息中心
 
