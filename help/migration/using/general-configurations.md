@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -37,7 +37,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 要使用TIMESTAMP WITH TIMEZONE模式，您还需要将 **-userTimestamptz:1** 选项添加到postupgrade命令行。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果 **-usetimestamptz:1** 参数与不兼容的数据库引擎一起使用，则您的数据库将损坏，您必须恢复数据库的备份并重新执行上述命令。
 
@@ -87,7 +87,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ### 安全区 {#security-zones}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >出于安全原因，Adobe Campaign平台在默认情况下不再可访问：您必须配置安全区域，因此必须收集运营商IP地址。
 
@@ -107,7 +107,7 @@ Adobe Campaign v7包含安全区 **的概念**。 每个用户都必须与某个
 nlserver config -internalpassword
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >对于 **所有跟踪服务器** ，内部密码必须相同。 有关详细信息，请参 [阅本节](../../installation/using/campaign-server-configuration.md#internal-identifier)[和本节](../../platform/using/access-management.md#about-permissions)。
 
@@ -118,7 +118,7 @@ nlserver config -internalpassword
    受此修改影响的用户在配置过程中进行标识和列出。
 
 * 如果密码为空，则跟踪不再有效。 如果出现这种情况，将显示一条错误消息，通知您并要求您重新配置它。
-* 用户口令不再存储在 **xtk:sessionInfo架构中** 。
+* 用户密码不再存储在 **xtk:sessionInfo架构中** 。
 * 现在，使用 **xtk:builder:EvaluateJavaScript** 和 **xtk:builder:EvaluateJavaScriptTemplate函数需要管理权限** 。
 
 某些现成架构已修改，默认情况下，仅可通过具有管理员权限的操作员的写访问权限访 **问** :
@@ -170,7 +170,7 @@ nlserver config -internalpassword
 /nl/jsp/logon.jsp?login=<trusted login>&action=submit&target=/view/recipientOverview
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果您使用与信任的IP掩码链接的运算符，请检查它是否具有最小权限，以及它是否处于 **sessionTokenOnly模式的安全区** 。
 
@@ -178,7 +178,7 @@ nlserver config -internalpassword
 
 未知的SQL函数调用不再自然地发送到服务器。 当前，所有SQL函数都必须添加到 **xtk:funcList架构中** (有关详细信息，请参 [阅此部分](../../configuration/using/adding-additional-sql-functions.md))。 迁移时，在配置过程中会添加一个选项，该选项允许您保持与旧的未声明的SQL函数的兼容性。 如果要继续使用这些函数，请检查 **XtkPassUnknownSQLFunctionsToRDBMS** 选项是否确实在节点级 **[!UICONTROL Administration > Platform > Options]** 定义。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >由于此选项带来的安全风险，我们强烈建议不要使用此选项。
 
@@ -199,7 +199,7 @@ nlserver config -internalpassword
 
 ### JavaScript {#javascript}
 
-Adobe Campaign v7集成了更新的JavaScript解释器。 但是，此更新可能导致某些脚本发生故障。 由于以前的引擎权限更大，某些语法会起作用，而新版本的引擎不再适用。
+Adobe Campaign v7集成了更新的JavaScript解释器。 但是，此更新可能导致某些脚本发生故障。 由于以前的引擎权限更大，因此某些语法会起作用，而新版本的引擎不再适用。
 
 该 **[!UICONTROL myObject.@attribute]** 语法现在仅对XML对象有效。 此语法可用于个性化分发和内容管理。 如果您在非XML对象上使用了此类语法，个性化功能将不再有效。
 
@@ -460,7 +460,7 @@ allowSQLInjection="false"
 * **[!UICONTROL Accept the new version]**:如果用户未更改随Adobe Campaign提供的资源，则建议使用此选项。
 * **[!UICONTROL Keep the current version]**:表示更新被拒绝。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    如果选择此解决模式，则可能丢失新版本中的修补程序。 因此，强烈建议不要仅为专家操作员使用或保留此选项。
 
 如果选择手动解决冲突，请按如下步骤继续：
@@ -506,7 +506,7 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 
 在v7中，已移动选件内容。 在v6.02中，内容位于每个表示架构(**nms:emailOfferView**)中。 在v7中，内容现在位于选件架构中。 配置升级后，内容将不会显示在界面中。 配置升级后，您必须重新创建选件内容，或开发一个脚本，该脚本会自动将内容从表示架构移到选件架构。
 
->[!CAUTION]
+>[!IMPORTANT]
 如果迁移后要发送使用已配置选件的某些交付，则必须删除这些交付并在v7中重新创建所有这些交付。 如果您无法这样做，则提供“兼容性模式”。 不建议使用此模式，因为您不会从Interaction v7中的所有新增功能中受益。 这是一种过渡模式，允许您在实际6.1迁移之前完成正在进行的营销活动。 有关此模式的详细信息，请联系我们。
 
 Adobe Campaign v7文件夹的“迁移”**文件夹中提供了移动脚本(interactionTo610_full_XX.js****** )的示例。 此文件显示了一个客户端脚本示例，该脚本使用每个选件（和字段）的单一电子 **[!UICONTROL htmlSource]** 邮件 **[!UICONTROL textSource]** 表示形式。 NmsEmailOfferView表中 **的内容已移至** offer表。
