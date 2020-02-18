@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Campaign提供以下交付渠道：
 1. **电子邮件渠道**:电子邮件发送允许您向目标人群发送个性化的电子邮件。 请参阅关 [于电子邮件渠道](../../delivery/using/about-email-channel.md)。
 1. **直邮渠道**:通过直邮发送，您可以生成包含目标人群数据的提取文件。 请参阅关 [于直邮渠道](../../delivery/using/about-direct-mail-channel.md)。
 1. **移动渠道**:通过移动渠道发送，您可以向目标人群发送个性化的SMS或LINE消息。 请参阅 [SMS频道](../../delivery/using/sms-channel.md)。
-1. **移动应用程序渠道**:移动应用程序交付允许您向iOs和Android系统发送通知。 请参阅移动应 [用程序渠道一章](../../delivery/using/about-mobile-app-channel.md) 。
+1. **移动应用程序渠道**:移动应用程序交付允许您向iOS和Android系统发送通知。 请参阅移动应 [用程序渠道一章](../../delivery/using/about-mobile-app-channel.md) 。
 
    本页介绍了其 [他渠道](../../delivery/using/other-channels.md)。
 
