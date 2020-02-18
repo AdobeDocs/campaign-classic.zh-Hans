@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
 
 # 扩展架构{#extending-a-schema}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >某些内置架构不能扩展：主要是定义了以下设置的用户：\
 >**dataSource=&quot;file&quot;** and **mappingType=&quot;xmlFile&quot;**。\
@@ -38,7 +38,7 @@ source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
 
    扩展架构没有其自己的架构：将使用扩展架构的字段填充源架构生成的架构。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >不允许修改应用程序的内置架构，而是模式扩展机制。 否则，在应用程序将来升级时，修改的架构将不会更新。 这可能导致Adobe Campaign使用中出现故障。
 
@@ -66,7 +66,7 @@ source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
 
    字段 **上的telsTo** 属性填充声明该字段的架构。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >要考虑修改，您需要重新生成架构。 有关详细信息，请参阅重新生 [成架构部分](../../configuration/using/regenerating-schemas.md) 。\
 >如果修改影响到数据库的结构，您需要运行更新。 有关详细信息，请参阅更新数 [据库结构一节](../../configuration/using/updating-the-database-structure.md) 。
