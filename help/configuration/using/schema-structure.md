@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -123,7 +123,7 @@ source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
 
 * 每个 **`<element>`** 属性 **`<attribute>`** 都必须通过name属性由name **标识** 。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >元素的名称应简明，最好是英文，并且仅包含符合XML命名规则的授权字符。
 
@@ -135,7 +135,7 @@ source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
 
 数据类型通过和元素 **中的** type属性 **`<attribute>`** 输入 **`<element>`** 。
 
-元素和元素的说明中提供了详细 [`<attribute>` 列表](../../configuration/using/elements-and-attributes.md#attribute--element)[`<element>` 。](../../configuration/using/elements-and-attributes.md#element--element)
+元素和元素的说明中提供了详细 [`<attribute>` 列表](../../configuration/using/elements-and-attributes.md#attribute--element)[`<element>`](../../configuration/using/elements-and-attributes.md#element--element)。
 
 如果未填充此属性，则 **字符串** 是默认数据类型，除非元素包含子元素。 如果确实如此，则它仅用于按层次结构化元素(本例中&#x200B;**`<location>`** 的元素)。
 
