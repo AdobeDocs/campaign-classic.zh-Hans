@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Campaign允许用户定义自己 **的函数** ，这些函数可以访问
 
 添加这些函数后，它们将像其他预定义函数一样显示在表达式编辑器中。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >控制台中的SQL函数调用不再自然地发送到服务器。 因此，此处介绍的机制 **成为调用计划外SQL函数服务器** 的唯一方式。
 
@@ -40,7 +40,7 @@ Adobe Campaign允许用户定义自己 **的函数** ，这些函数可以访问
 
 要从控制台中安装它，请从菜单中选择 **Tools/Advanced/Import包选项** ，然后选择 **[!UICONTROL Install from file]** ，并按照导入向导中的说明进行操作。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >警告：即使导入的函数列表直接显示在函数编辑器中，它们也直到Adobe Campaign重新启动后才可用。
 
@@ -73,7 +73,7 @@ Adobe Campaign允许用户定义自己 **的函数** ，这些函数可以访问
 </package>
 ```
 
-* 名 **称**、 **namespace****** 和标签仅供参考。 这些组件允许您在已安装的包列表中查看包的摘要（资源管理器／管理／包管理／已安装包）。
+* 名 **称**、 **namespace****** 和标签仅供参考。 这些组件允许您在已安装的包列表中查看包的摘要（资源管理器／管理／包管理／已安装的包）。
 * buildVersion **和buildNumber****** 字段是必填字段。 它们必须与控制台所连接的服务器号相对应。 此信息位于“帮助／关于”框中。
 * 以下块、实 **体****和基** 础。 在funcList中，字段“name”和“namespace”是必填字段，但其名称由用户决定，并且它们以唯一方式指定函数列表。
 
@@ -92,7 +92,7 @@ Adobe Campaign允许用户定义自己 **的函数** ，这些函数可以访问
      name="window"          ( label="Windowing functions" )
    ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >确保完成@label属性：这是将在可用函数列表中显示的名称。 如果未输入任何内容，则用户组将没有名称。 但是，如果输入的名称不是现有名称，则整个组的名称将发生更改。
 
