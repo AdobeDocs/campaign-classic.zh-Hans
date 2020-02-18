@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 12f4237c34560257901ae210d4e22a7d152a795d
+source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 12f4237c34560257901ae210d4e22a7d152a795d
 
 **改进**
 
-* 现在，我们允许在导入工作流程期间删除在Microsoft Dynamics中创建的虚拟记录。
+* 现在，我们允许在导入工作流程期间删除在Microsoft Dynamics中创建的伪记录。
 * 修复了文件收集器工作流活动的一个问题，该问题可能导致在拒绝访问文件时在循环中记录错误。 (NEO-12085)
 * 修复了导致用户活动与打开的交付指示器的跟踪报告不一致的问题。 (NEO-11742)
 * 改进了在使用内部帐户时执行安全区包的权限。
@@ -128,7 +128,7 @@ source-git-commit: 12f4237c34560257901ae210d4e22a7d152a795d
      <li> <p>在iOS中跟踪静默通知 </p> </li> 
      <li> <p>在iOS中实施注册调用反馈</p> </li> 
      <li> <p>提高iOS交付准备速度</p> </li> 
-    </ul> <p>作为Google GCM折旧的一部分，Android V2连接器现在仅允许与FCM服务器连接。</p><p>有关详细信息，请参阅详 <a href="../../delivery/using/setting-up-mobile-app-channel.md#integrating-campaign-sdk-into-the-mobile-application">细文档</a>。 本文详细介绍了人工对FCM的 <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">升级</a>。 </p> </td> 
+    </ul> <p>作为Google GCM折旧的一部分，Android V2连接器现在仅允许与FCM服务器连接。</p><p>有关详细信息，请参阅详 <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">细文档</a>。 本文详细介绍了人工对FCM的 <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">升级</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td> SQL数据管理活动<br /> </td> 
