@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e04eb83a7c2e29f8d3ea6458dd3f0e780dfb9c3
+source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
 ---
 
@@ -138,7 +138,7 @@ source-git-commit: 2e04eb83a7c2e29f8d3ea6458dd3f0e780dfb9c3
 
 ![](assets/wf-notification_error-console.png)
 
-您可以配置工作流，以便它不会暂停并在出错时继续执行。 为此，请编辑工作 **[!UICONTROL Properties]** 流，并在部 **[!UICONTROL Error management]** 分中，选择 **[!UICONTROL Ignore]** 字段中的选 **[!UICONTROL In case of error]** 项。 然后，您可以指定在暂停进程之前可忽略的连续错误数。
+您可以配置工作流，以便它不会暂停并在出错时继续执行。 为此，请编辑工作 **[!UICONTROL Properties]** 流，并在部 **[!UICONTROL Error management]** 分中，选择 **[!UICONTROL Ignore]** 字段中的选 **[!UICONTROL In case of error]** 项。 然后，您可以指定在暂停进程之前可以忽略的连续错误数。
 
 在这种情况下，将中止错误任务。 此模式特别适用于设计为稍后重新尝试营销活动（定期操作）的工作流。
 
@@ -172,7 +172,7 @@ source-git-commit: 2e04eb83a7c2e29f8d3ea6458dd3f0e780dfb9c3
 
 ## 实例监督 {#instance-supervision}
 
-通过 **[!UICONTROL Instance supervision]** 该页面，您可以查看Adobe Campaign服务器活动并显示含有错误的工作流和交付的列表。
+通过 **[!UICONTROL Instance supervision]** 该页面，您可以查看Adobe Campaign服务器活动并显示包含错误的工作流和交付的列表。
 
 要访问此页，请转到范 **[!UICONTROL Monitoring]** 围并单击链 **[!UICONTROL General view]** 接。
 
@@ -259,26 +259,23 @@ instance.vars.isRunning = false
 
 ## 根据工作流的状态筛选工作流{#filtering-workflows-status}
 
-“营销活动经典”界面允许您使用预定义视图监视实例上所有工作流的执行&#x200B;**状态**。 要访问这些视图，请打开“管&#x200B;**理**/审&#x200B;**计**/工作流&#x200B;**状态”节点**。
+“营销活动经典”界面允许您使用预定义视图监视实例上所有工作流的执行&#x200B;**状态**。 要访问这些视图，请打开&#x200B;**[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**&#x200B;节点。
 
 提供以下视图：
 
-* **正在运行**：列出所有正在运行的工作流。
-* **已暂停**：列出所有已暂停的工作流。
-* **失败**：列出所有失败的工作流。
-
-<!--Start Pending: lists all workflows that are waiting to be started by the operationMgt process.-->
+* **[!UICONTROL Running]**：列出所有正在运行的工作流。
+* **[!UICONTROL Paused]**：列出所有已暂停的工作流。
+* **[!UICONTROL Failed]**：列出所有失败的工作流。
+* **[!UICONTROL Start Pending]**：列出正在等待operationMgt进程启动的所有工作流。 此视图仅对&#x200B;**Marketing campaigns包可用**(请参阅安装 [Campaign标准包](../../installation/using/installing-campaign-standard-packages.md))。
 
 ![](assets/workflow-monitoring-views.png)
 
-<!--The Start Pending view is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
-默认情况下，这些视图可在“审核”文件夹&#x200B;**中访问**。 但是，您可以在文件夹树中选择的位置重新创建它们。 这样，无管理权的标准用户就可以使用它们。
+默认情况下，这些视图可在文件夹中&#x200B;**[!UICONTROL Audit]**&#x200B;访问。 但是，您可以在文件夹树中选择的位置重新创建它们。 这样，无管理权的标准用户就可以使用它们。
 
 为此，请执行以下操作：
 
 1. 右键单击要添加视图的文件夹。
-1. 在 **添加新文件夹**/**管理中**，选择要添加的视图。
+1. 在 **[!UICONTROL Add new folder]**/**[!UICONTROL Administration]**&#x200B;中，选择要添加的视图。
 1. 将文件夹添加到树中后，请确保将其配置为视图，以便显示所有工作流，无论其源文件夹是什么。有关如何配置视图的详细信息，请参阅 [此部分](../../platform/using/access-management.md#adding-folders-and-creating-views)。
 
 除了这些视图之外，您还可以设置过滤器文件夹，以便根据工作流的执行状态过滤工作流列表。 操作步骤：
@@ -293,6 +290,3 @@ instance.vars.isRunning = false
 
 * [创建高级过滤器](../../platform/using/creating-filters.md#creating-an-advanced-filter)
 * [保存过滤器](../../platform/using/creating-filters.md#saving-a-filter)
-
-<!-- need to check if pending status filter will be implemented or not in january release, note, Additionally to these views, a prefedefined filter is available in workflow-type folders. It allows you to display in the list workflows that are waiting to be started by the operationMgt process only.This filter is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
