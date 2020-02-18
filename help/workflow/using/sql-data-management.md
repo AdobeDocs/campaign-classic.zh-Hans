@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 在配置活动之前，请确保满足以下先决条件：
 
-* 活动仅对远程数据源可用。 因 **[!UICONTROL FDA]** 此，(Federated Data Access)包必须安装在实例上(请参 [阅本节](../../platform/using/accessing-an-external-database.md))。
+* 活动仅对远程数据源可用。 因 **[!UICONTROL FDA]** 此，(Federated Data Access)包必须安装在实例上(请参 [阅本节](../../platform/using/about-fda.md))。
 * 出站架构必须存在于数据库中并链接到FDA数据库(有关数据架构的详细信息，请参 [阅本节](../../configuration/using/about-schema-reference.md))。
 * 执行工作流的操作符必须具有命 **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** 名权限。 For more on named rights, refer to [this section](../../platform/using/access-management.md#named-rights).
 
