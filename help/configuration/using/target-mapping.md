@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8b3ab02d1fd90c3f14314508a8fa7d99df82436c
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -101,11 +101,11 @@ source-git-commit: 8b3ab02d1fd90c3f14314508a8fa7d99df82436c
 
    单 **[!UICONTROL Define new additional fields]** 击以选择要在分发中定位的维。
 
-   默认情况下，排除管理与消息存储在同一个表中。 如果要 **为链接到目标映射的跟踪配置存储** ，请选中生成要跟踪的存储架构复选框。
+   默认情况下，排除管理与消息存储在同一个表中。 如果要 **为链接到目标映射的跟踪配置存储** ，请选中“生成要跟踪的存储架构”复选框。
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Adobe Campaign不支持链接到相同广播和／或跟踪日志架构的多个收件人架构（称为定位架构）。 否则，这可能导致以后数据协调中的异常。 有关此信息，请参阅建议和 [限制页](../../configuration/using/about-custom-recipient-table.md) 。
 
