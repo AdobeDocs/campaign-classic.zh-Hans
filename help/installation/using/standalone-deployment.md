@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
 ---
 
@@ -181,7 +181,7 @@ source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
    * 对于Linux:集 [成到Linux的Web服务器](../../installation/using/integration-into-a-web-server-for-linux.md)
    * 对于Windows:与 [Windows版Web服务器集成](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. 启动网站并使用URL测试重定向： [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test)。
+1. 启动网站并使用URL测试重定向：https://tracking.campaign.net/r/test。
 
    浏览器必须显示以下消息：
 
@@ -196,6 +196,10 @@ source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
 
 1. 启动Adobe Campaign服务器(**Windows中的Net Start nlserver6** , **/etc/init.d/nlserver6在Linux中启动** )并再次运行命令 **nlserver pdump** ，以检查是否存在所有已启用的模块。
 
+   >[!NOTE]
+   >
+   >从20.1开始，我们建议改用以下命令（对于Linux）:系 **统mctl启动nlserver**
+
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    syslogd@default (7611) - 9.2 MB
@@ -209,7 +213,7 @@ source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
 
    此命令还可让您了解计算机上安装的Adobe Campaign服务器的版本和内部版本号。
 
-1. 使用URL **测试Nlserver web** module: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test)
+1. 使用URL **测试Nlserver web** module:https://console.campaign.net/nl/jsp/logon.jsp
 
    此URL允许您访问客户端安装程序的下载页。
 
@@ -222,7 +226,7 @@ source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
    * 对于Linux:适用于 [Linux的客户端控制台可用性](../../installation/using/client-console-availability-for-linux.md)
    * 对于Windows:适用 [于Windows的客户端控制台可用性](../../installation/using/client-console-availability-for-windows.md)
 
-1. 启动Adobe Campaign客户端控制台（从上一个下载页面启动或直接在服务器上为Windows安装启动），将服务器连接URL设置为 [https://console.campaign.net](https://console.campaign.net) ，然后使用内部登录 **进行连接** 。
+1. 启动Adobe Campaign客户端控制台（从上一个下载页面启动或直接在服务器上为Windows安装启动），将服务器连接URL设置为https://console.campaign.net并使用内部登录名进 **行连接** 。
 
    请参阅 [创建实例并登录和](../../installation/using/creating-an-instance-and-logging-on.md)[内部标识符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
 
