@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f46b499e4b81cf500baa84cf683a6e0273f802a7
+source-git-commit: 9a1db0fbced3550621c5520656a34344128ee13f
 
 ---
 
@@ -74,58 +74,3 @@ Adobe考虑到域名系统(DNS)来发送电子邮件，该系统允许客户端�
 
 [单击此处了解更多信息](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html)。
 
-作为管理员用户，您可以通过Campaign控制面板设置向Adobe的完全域委托。 [阅读更多](https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/subdomains-branding.html)。
-
-## 10. How to get emails in the recipient&#39;s inbox? {#how-to-get-emails-in-the-recipient-s-inbox-}
-
-阅读[设置电子邮件可投放性](https://helpx.adobe.com/campaign/kb/acc-deliverability.html)，开始了解有关可投放性的概念和最佳实践，以及优化电子邮件发送的工具。
-
-## 更像这样 {#more-faq}
-
-阅读有关特定主题的更多常见问题。
-
-<table>
-<tr>
-<td>
-        <a href="../../platform/using/faq-key-concepts.md"><img alt="条件" src="assets/icon_start.png"/></a>
-        <div><a href="../../platform/using/faq-key-concepts.md"><strong>重要概念</strong></a></div>
-        <em>全球常见问题解答</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-audiences.md"><img alt="条件" src="assets/icon_audience.png"/></a>
-        <div><a href="../../platform/using/faq-audiences.md"><strong>收件人</strong></a></div>
-        <em>受众常见问题解答</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-designing.md"><img alt="条件" src="assets/icon_content.png"/></a>
-        <div><a href="../../platform/using/faq-designing.md"><strong>设计</strong></a></div>
-        <em>消息设计常见问题解答</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-messages.md"><img alt="条件" src="assets/icon_delivery.png"/></a>
-        <div><a href="../../platform/using/faq-messages.md"><strong>发送</strong></a></div>
-        <br/><em>消息测试和发送常见问题解答</em>
-    </td>
-</tr>
-<tr>
-    <td>
-        <a href="../../platform/using/faq-workflows.md"><img alt="条件" src="assets/icon_process.png"/></a>
-        <div><a href="../../platform/using/faq-workflows.md"><strong>工作流</strong></a></div>
-        <em>流程自动化常见问题解答</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-reporting.md"><img alt="条件" src="assets/icon_report.png"/></a>
-        <div><a href="../../platform/using/faq-reporting.md"><strong>报告</strong></a></div>
-        <em>营销活动报告常见问题解答</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-campaign-config.md"><img alt="条件" src="assets/icon_config.png"/></a>
-        <div><a href="../../platform/using/faq-campaign-config.md"><strong>配置</strong></a></div>
-        <em>实例设置常见问题解答</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-developers.md"><img alt="条件" src="assets/icon_server.png"/></a>
-        <div><a href="../../platform/using/faq-developers.md"><strong>开发</strong></a></div>
-        <br/><em>开发人员常见问题解答</em>
-    </td>
-    </tr></table>
