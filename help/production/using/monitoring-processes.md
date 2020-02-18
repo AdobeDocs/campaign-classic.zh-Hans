@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 954018e1016fc924064bd795066f80704499f6a7
 
 ---
 
@@ -417,7 +417,7 @@ wfserver@prod
 
 #### /nl/jsp/monitor.jsp {#nl-jsp-monitor-jsp}
 
-这是一项测试，旨在检查运营商是否可以通过网页访问Adobe Campaign服务器；与通过客户端控制台菜单访问的网页相同。 我们建议将其包含在您的监视工具（Tivoli、Nagios等）中。
+这是一项测试，旨在检查运营商是否可以通过网页访问Adobe Campaign服务器；与通过客户端控制台菜单访问的网页相同。 您可以通过监视工具（Tivoli、Nagios等）调用此页。
 
 ![](assets/ncs_monitoring_web.png)
 
@@ -478,7 +478,7 @@ Adobe Campaign支持各种部署配置(有关详细信息，请参阅 [本节](.
 
 ## 通过Adobe Campaign脚本进行自动监视 {#automatic-monitoring-via-adobe-campaign-scripts}
 
-Adobe Campaign可以提供实例监视工具（网络），允许您通过电子邮件发送有关检测到的异常的报告。
+Adobe Campaign可以提供实例监视工具（网络），通过该工具，您可以通过电子邮件发送有关检测到的异常的报告。
 
 ![](assets/pro_netreport.png)
 
