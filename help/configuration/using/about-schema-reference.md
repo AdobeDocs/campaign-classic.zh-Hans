@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5130802f3723311bcd09e21fc405d298923dd20e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -79,7 +79,7 @@ XML描述了应用程序中所承载数据的物理和逻辑结构。 它遵循A
 
 通过命名空间，您可以按感兴趣的区域对一组架构进行分组。 例如，cus命名 **空间用于** 特定于客户的配置(**客户**)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >作为标准，命名空间的名称必须简明，且必须仅包含符合XML命名规则的授权字符。
 >
