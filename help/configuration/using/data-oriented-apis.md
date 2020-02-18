@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -392,7 +392,7 @@ Write/WriteCollection(xtk:session)中 [显示了Write方法](#write---writecolle
 
 要避免绑定参数，必须用值“true”填充“noSqlBind”属性。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果查询包含“order-by”或“group-by”说明，则数据库引擎将无法“绑定”值。 必须将@noSqlBind=&quot;true&quot;属性放在查询的“select”和／或“where”说明上。
 
