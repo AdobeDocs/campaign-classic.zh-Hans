@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 31f30db6eaf1fee43f9f757124e3fa8ed1d0075f
 
 ---
 
@@ -65,7 +65,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 1. 打开 **serverConf.xml配置文件** 。
 1. 访问选 **定安全区域的allowUserPassword** 属性，并将其设置为 **true**。
 
-   这将允许Adobe Experience manager通过登录名／密码连接Adobe Campaign。
+   这将允许Adobe Experience Manager通过登录名／密码连接Adobe Campaign。
 
 ### 配置外部帐户 {#configure-the-external-account}
 
@@ -95,7 +95,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ### 配置AEM资源筛选 {#configure-aem-resources-filtering}
 
-**AEMResourceTypeFilter **选项用于筛选Experience manager资源的类型，这些资源可用于Adobe Campaign。 这允许Adobe Campaign检索专门设计用于Adobe Campaign的Experience manager内容。
+AEMResourceTypeFilter **** 选项用于过滤Experience manager资源的类型，这些资源可用于Adobe Campaign。 这允许Adobe Campaign检索专门设计用于Adobe Campaign的Experience manager内容。
 
 要检查选项是否 **[!UICONTROL AEMResourceTypeFilter]** 已配置：
 
@@ -122,7 +122,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 1. 配置复 **制** ，以从AEM创作实例复制到AEM发布实例。
 
-   要了解如何配置复制，请参阅Adobe Experience manager文 [档](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/replication.html)。
+   要了解如何配置复制，请参阅Adobe Experience manager文 [档](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html)。
 
 1. 在创作实 **例上安装集成FeaturePack** ，然后在发布实例上复制安装。 （仅限AEM版本5.6.1和6.0）。
 
@@ -130,9 +130,9 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 1. 通过配置专用云服务，将Adobe Experience manager连接到Adobe **Campaign**。
 
-   要了解如何通过云服务连接这两个解决方案，请参阅Adobe Experience manager文 [档](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
+   要了解如何通过云服务连接这两个解决方案，请参阅Adobe Experience manager文 [档](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
 
 1. 配置 **Externalizer服务**。
 
-   要了解如何配置它，请参阅Adobe Experience manager文 [档](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/externalizer.html)。
+   要了解如何配置它，请参阅Adobe Experience manager文 [档](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html)。
 
