@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: 7aa381654805798fcdd24f588160bed15e037a2b
 
 ---
 
@@ -59,7 +59,7 @@ Adobe Campaign 目前提供英语、法语、德语和日语共 4 种语言的�
 
 Adobe Campaign 提供了联合数据访问 (FDA) 选项，以处理存储在一个或多个外部数据库中的信息：无需改变 Adobe Campaign 数据的结构就可以访问外部数据。
 
-[单击此处了解更多信息](../../platform/using/accessing-an-external-database.md)。
+[单击此处了解更多信息](../../platform/using/connecting-to-database.md)。
 
 ## Which external databases can I connect Campaign to? {#which-external-databases-can-i-connect-campaign-to-}
 
