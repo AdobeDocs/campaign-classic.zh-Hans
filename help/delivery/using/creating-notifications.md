@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6d503847787f2a8e0c4efdef0fa2f5769ea6035b
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -59,7 +59,7 @@ source-git-commit: 6d503847787f2a8e0c4efdef0fa2f5769ea6035b
    >“静 **默推送** ”模式在iOS 7中可用。 这允许向移动应用程序发送“静默”通知。 用户未获知通知的到达。 它会直接传输到应用程序。
 
 1. 在字 **[!UICONTROL Title]** 段中，输入要在通知中显示的标题标签。 它将仅显示在通知中心提供的通知列表中。 此字段允许您定义iOS通知有效负荷 **的** title参数的值。
-1. 如果使用HTTP/2连接器，则可以添加子标题(iOS通知有效负荷的子标 **题** 参数的值)。 请参阅“ [Connectors](../../delivery/using/setting-up-mobile-app-channel.md#connectors) （连接器）”部分。
+1. 如果使用HTTP/2连接器，则可以添加子标题(iOS通知有效负荷的子标 **题** 参数的值)。 请参阅在Adobe [Campaign中配置移动应用程序一节](../../delivery/using/configuring-the-mobile-application.md) 。
 1. 然后，根据 **[!UICONTROL Message]** 所选通 **[!UICONTROL Value of the badge]** 知类型输入和。
 
    ![](assets/nmac_delivery_ios_5.png)
@@ -77,13 +77,13 @@ source-git-commit: 6d503847787f2a8e0c4efdef0fa2f5769ea6035b
 
    >[!NOTE]
    >
-   >音效必须包含在应用程序中，并在创建服务时进行定义。 请参阅应 [用程序声音](../../delivery/using/setting-up-mobile-app-channel.md#application-sounds)。
+   >音效必须包含在应用程序中，并在创建服务时进行定义。 请参阅配 [置iOS外部帐户](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios)。
 
 1. 在字 **[!UICONTROL Application variables]** 段中，输入每个变量的值。 应用程序变量允许您定义通知行为：例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
 
    >[!NOTE]
    >
-   >应用程序变量必须在手机应用程序的代码中定义，并在服务创建过程中输入。 For more on this, refer to: [General information](../../delivery/using/setting-up-mobile-app-channel.md#general-information).
+   >应用程序变量必须在手机应用程序的代码中定义，并在服务创建过程中输入。 有关详细信息，请参阅：在 [Adobe Campaign中配置移动应用程序](../../delivery/using/configuring-the-mobile-application.md)。
 
 1. 配置通知后，单击选 **[!UICONTROL Preview]** 项卡以预览通知。
 
@@ -129,7 +129,7 @@ source-git-commit: 6d503847787f2a8e0c4efdef0fa2f5769ea6035b
 
    >[!NOTE]
    >
-   >应用程序变量必须在手机应用程序的代码中定义，并在服务创建过程中输入。 For more on this, refer to: [General information](../../delivery/using/setting-up-mobile-app-channel.md#general-information).
+   >应用程序变量必须在手机应用程序的代码中定义，并在服务创建过程中输入。 有关详细信息，请参阅：在 [Adobe Campaign中配置移动应用程序](../../delivery/using/configuring-the-mobile-application.md)。
 
 1. 配置通知后，单击选 **[!UICONTROL Preview]** 项卡以预览通知。
 
