@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: abddb3cdfcee9e41cab2e7e662d5bfd5d53d6f7e
+source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
 
 ---
 
@@ -65,12 +65,6 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
 
 1. 在 **/etc/apache2/mods-available中创建文件nlsrv.load** ，并插入以下内容 **** :
 
-   在德边7号：
-
-   ```
-   LoadModule requesthandler22_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
-   ```
-
    在德边8中：
 
    ```
@@ -89,7 +83,7 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
     a2enmod nlsrv
    ```
 
-   如果您使用Adobe Campaign页的 **mod_rewrite** 模块，则需要将 **nlsrv.** 和 **nlsrv.conf文件重命名为********** lsrv.nlsrv.nzz和jzz-lsrv.conf文件重命名为jlsrv.nlsrv.load.conf。 要激活模块，请运行以下命令：
+   如果您使用Adobe Campaign页的 **mod_rewrite** 模块，则需要将 **nlsrv.** 和 **nlsrv.conf文件重命名为********** lsrv.nlsrv.nzz和jzz-lsrv.conf负载重命名为jlsrv.load.srv.conf文件。 要激活模块，请运行以下命令：
 
    ```
    a2enmod zz-nlsrv
@@ -147,63 +141,47 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
    userdir
    ```
 
-对链接到取消激活模块的函数进行注释：
-
-    &quot;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    DirectoryIndexIndexIndexOptionsAddIconByEncodingAddIconByTypeAddIconDefaultIconReadmeNameHeaderNameIndexIndexIgnoreLanguagePriorityForceLanguagePriority
-    &quot;
-
-1. 在文件夹中创建特定于Adobe Campaign的配置 `/etc/httpd/conf.d/` 文件。
-
-例如 `CampaignApache.conf`。
-
-1. 对 **于RHEL6**，在文件中添加以下说明：
+   对链接到取消激活模块的函数进行注释：
 
    ```
-   LoadModule requesthandler22_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
+   DirectoryIndex
+   IndexOptions    
+   AddIconByEncoding    
+   AddIconByType    
+   AddIcon    
+   DefaultIcon    
+   ReadmeName    
+   HeaderName    
+   IndexIgnore    
+   LanguagePriority    
+   ForceLanguagePriority
+   ```
+
+1. 在文件夹中创建特定于Adobe Campaign的配置 `/etc/httpd/conf.d/` 文件。 例如 `CampaignApache.conf`
+
+1. 对 **于RHEL7**，在文件中添加以下说明：
+
+   ```
+   LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
    Include /usr/local/neolane/nl6/tomcat-7/conf/apache_neolane.conf
    ```
 
-对 **于RHEL7**，在文件中添加以下说明：
+1. 对于 **RHEL7**:
 
-LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.soInclude /usr/local/neolane/nl6/tomcat-7/conf/apache_neolane.conf
+   添加包 `/etc/systemd/system/httpd.service` 含以下内容的文件：
 
-1. 对于 **RHEL6**:
+   ```
+   .include /usr/lib/systemd/system/httpd.service
+   
+   [Service]
+   Environment=USERPATH=/usr/local/neolane LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib
+   ```
 
-在文件中添加以下说 `/etc/sysconfig/httpd` 明：
+   更新系统使用的模块：
 
-    &quot;
-    #Neolane/Adobe Campaign
-    Configurationif [ &quot;$LD_LIBRARY_PATH&quot; != &quot;&quot; ];然后导出LD_LIBRARY_PATH=&quot;/usr/local/neolane/nl6/lib:$LD_LIBRARY_PATH&quot;;else export LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib;
-    fiexport USERPATH=/usr/local/neolane
-    &quot;
-
-对于 **RHEL7**:
-
-添加包 `/etc/systemd/system/httpd.service` 含以下内容的文件：
-
-    &quot;
-    包括/usr/lib/systemd/system/httpd.service
-    
-    [服务]
-    Environment=USERPATH=/usr/local/neolane LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib
-    &quot;
-
-更新系统使用的模块：
-
-    &quot;
-    systemctl daemon-reload
-    &quot;
+   ```
+   systemctl daemon-reload
+   ```
 
 1. 然后，通过运行以下命令，将Adobe Campaign操作符添加到Apache操作符组中，反之亦然：
 
@@ -211,23 +189,17 @@ LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.soIncl
    usermod -a -G neolane apache
    usermod -a -G apache neolane
    ```
-要使用的组名称取决于Apache的配置方式。
+
+   要使用的组名称取决于Apache的配置方式。
 
 1. 运行Apache和Adobe Campaign服务器。
 
-对于RHEL6:
+   对于RHEL7:
 
-    &quot;
-    /etc/init.d/httpd start
-    /etc/init.d/nlserver start
-    &quot;
-
-对于RHEL7:
-
-    &quot;
-    systemctl启动
-    httpdsystemctl启动nlserver
-    &quot;
+   ```
+   systemctl start httpd
+   systemctl start nlserver
+   ```
 
 ## 启动Web服务器并测试配置{#launching-the-web-server-and-testing-the-configuration}
 
@@ -277,4 +249,4 @@ GET /r/test
 Connection closed by foreign host.
 ````
 
-您还可以从Web浏览器 [`http://<computer>`](http://machine/r/test) 请求该URL。
+您还可以从Web浏览器 [`https://<computer>`](https://machine/r/test) 请求该URL。
