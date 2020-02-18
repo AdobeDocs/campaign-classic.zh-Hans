@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
+source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 ---
 
@@ -32,13 +32,12 @@ source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
 
 本机客户端必须安装在Adobe Campaign应用程序服务器上。
 
-可以通过ODBC驱动程序配置面板、 **SQL Native Client** （对于Microsoft SQL Server 2005客户端）或 **SQL Server Native Client 10.0** （对于Microsoft SQL Server 2008和2008 R2客户端）检查服务器上的本机客户端或 **SQL Server Native Client 11.0** （对于Microsoft SQL Server 2012客户端）。
+可以通过ODBC驱动程序配置面板检查服务器上的本机客户端，位于 **SQL Server Native Client 10.0** （对于Microsoft SQL Server 2008和2008 R2客户端）或 **SQL Server Native Client 11.0** （对于Microsoft SQL Server 20）下客户端)。
 
 必须存在以下访问DLL:
 
-* **sqlncli.dll** for Microsoft SQL Server 2005客户端，
 * **sqlncli10.dll** for Microsoft SQL Server 2008和2008 R2客户端，
-* **sqlncli11.dll** for Microsoft SQL Server 2012客户端。
+* **sqlncli11.dll** for Microsoft SQL Server 2012、2014、2016和2017客户端。
 
    访问DLL可在Microsoft网站上找到。
 
