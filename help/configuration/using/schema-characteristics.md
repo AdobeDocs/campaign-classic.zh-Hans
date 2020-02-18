@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 * 必须明确指定表和列的名称，
 * 必须声明索引。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >请勿删除标准收件人表中的字段，即使这些字段没有用处。 这可能会在Adobe Campaign数据库中导致行为错误。
 
