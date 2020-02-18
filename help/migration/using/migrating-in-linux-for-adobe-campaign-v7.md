@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -26,10 +26,10 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Linux中的迁移步骤如下：
 
-1. 停止服务：请参 [见服务停止](#service-stop),
-1. 保存数据库：请 [参阅备份数据库和现有安装](#back-up-the-database-and-the-existing-installation),
-1. 卸载以前的Adobe Campaign版本包：请参 [阅卸载Adobe Campaign先前版本包](#uninstalling-adobe-campaign-previous-version-packages),
-1. 迁移平台：请参阅 [部署Adobe Campaign v7](#deploying-adobe-campaign-v7),
+1. 停止服务：请参 [阅服务停止](#service-stop)。
+1. 保存数据库：请参 [阅备份数据库和现有安装](#back-up-the-database-and-the-existing-installation)。
+1. 卸载以前的Adobe Campaign版本包：请参 [阅卸载Adobe Campaign先前版本的包](#uninstalling-adobe-campaign-previous-version-packages)。
+1. 迁移平台：请参阅 [部署Adobe Campaign v7](#deploying-adobe-campaign-v7)。
 1. 重新启动服务：请参阅 [重新启动服务](#re-starting-services)。
 
 ## 服务停止 {#service-stop}
@@ -90,7 +90,7 @@ Linux中的迁移步骤如下：
    mv nl5 nl5.back
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >为防患未然，我们建议您将 **nl5.back文件夹压缩** ，并将其保存到服务器以外的安全位置。
 
@@ -125,7 +125,7 @@ Linux中的迁移步骤如下：
    mv nl6 nl6.back
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >为防患未然，我们建议您将 **nl6.back文件夹压缩** ，并将其保存到服务器以外的安全位置。
 
@@ -160,7 +160,7 @@ Linux中的迁移步骤如下：
    mv nl6 nl6.back
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >为防患未然，我们建议您将 **nl6.back文件夹压缩** ，并将其保存到服务器以外的安全位置。
 
@@ -264,15 +264,15 @@ Linux中的迁移步骤如下：
    * 在德 **比亚**:
 
       ```
-      dpkg -i nlserver6-v7-XXXX-linux-2.6-intel.deb
+      dpkg -i nlserver6-XXXX-linux-2.6-intel.deb
       ```
 
    * 在 **Red Hat中**:
 
       ```
-      rpm -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+      rpm -Uvh nlserver6-XXXX-0.x86_64.rpm
       ```
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >必须成功安装包，然后才能继续执行下一步。
 
@@ -308,13 +308,13 @@ Linux中的迁移步骤如下：
 1. 以root用户身 **份登录** ，然后使用以下命令准备实例：
 
    ```
-   /etc/init.d/nlserver6-v7 start   
-   Starting nlserver6-v7: [  OK  ]
+   /etc/init.d/nlserver6 start   
+   Starting nlserver6: [  OK  ]
    ```
 
    ```
-   /etc/init.d/nlserver6-v7 stop
-   Stopping nlserver6-v7: [  OK  ]
+   /etc/init.d/nlserver6 stop
+   Stopping nlserver6: [  OK  ]
    ```
 
    >[!NOTE]
@@ -323,7 +323,7 @@ Linux中的迁移步骤如下：
 
 1. 转到 **nl5.back** backup文件夹，并复制（覆盖）每个实例的配置文件和子文件夹。 以Neolane身份登录 **** ，然后运行以下命令：
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >对于以下第一个命令，请勿复制 **config-default.xml文件** 。
 
@@ -348,7 +348,7 @@ Linux中的迁移步骤如下：
    <trackinglogd autoStart="true"/>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >如果跟 **踪服务器上未启动** trackinglogd服务，则不会转发跟踪信息。
 
@@ -365,7 +365,7 @@ Linux中的迁移步骤如下：
    nlserver config -timezone:<time zone> -postupgrade -instance:<instance name>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >必须指定在配置过程中用作引用的时区(使用 **时区选项** )。 在本例中，我们使用欧洲／巴黎时区 **时区：“欧洲／巴黎”**。
 
@@ -373,7 +373,7 @@ Linux中的迁移步骤如下：
    >
    >我们强烈建议将您的用户群升级为“多时区”。 有关时区选项的详细信息，请参阅时 [区部分](../../migration/using/general-configurations.md#time-zones) 。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >尚未启动Adobe Campaign服务：仍需在Apache中进行更改。
 
@@ -391,15 +391,15 @@ Linux中的迁移步骤如下：
    * 在德 **比亚**:
 
       ```
-      dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+      dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
    * 在 **Red Hat中**:
 
       ```
-      rpm -Uvh nlserver6-v7-XXXX-x86_64_rhX.rpm
+      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
       ```
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >必须成功安装包，然后才能继续执行下一步。
 
@@ -423,7 +423,7 @@ Linux中的迁移步骤如下：
    <trackinglogd autoStart="true"/>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >如果跟 **踪服务器上未启动** trackinglogd服务，则不会转发跟踪信息。
 
@@ -469,15 +469,15 @@ Linux中的迁移步骤如下：
    * 在德 **比亚**:
 
       ```
-      dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+      dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
    * 在 **Red Hat中**:
 
       ```
-      rpm -Uvh nlserver6-v7-XXXX-x86_64_rhX.rpm
+      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
       ```
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >必须成功安装包，然后才能继续执行下一步。
 
@@ -563,13 +563,6 @@ Linux中的迁移步骤如下：
    * 在 **Red Hat中**:
 
       转到/usr/ **local/apache** /conf目录，编辑 **http.conf** 文件，将 **nl5** 替换为 **** nl6中的以下行。
-
-      在 **RHEL 6/Debian 7中**:
-
-      ```
-      LoadModule requesthandler22_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
-      Include /usr/local/neolane/nl6/tomcat-6/conf/apache_neolane.conf
-      ```
 
       在 **RHEL 7/Debian 8中**:
 
