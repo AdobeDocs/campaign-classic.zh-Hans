@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
+source-git-commit: 80b500653f5cfe216b32db045974b18d85838d9a
 
 ---
 
@@ -74,11 +74,11 @@ logInfo("Start date: " + task.creationDate)
 
 ### 实例变量 {#instance-variables}
 
-实例变量(**[!UICONTROL instance.vars.xxx]**)与全局变量类似：所有活动都共享它们。
+实例变量(**[!UICONTROL instance.vars.xxx]**)与全局变量类似。 所有活动都共享它们。
 
 ### 任务变量 {#task-variables}
 
-任务变量(**[!UICONTROL task.vars.xxx]**)与本地变量类似：它们仅用于当前任务。 这些变量由持续活动用来保留数据，有时用于在同一活动的不同脚本之间交换数据。
+任务变量(**[!UICONTROL task.vars.xxx]**)与本地变量类似。 它们仅用于当前任务。 这些变量由持续活动用来保留数据，有时用于在同一活动的不同脚本之间交换数据。
 
 ### 事件变量 {#event-variables}
 
