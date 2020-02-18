@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 305906f001203f1922266ab370fcc942458f9e8d
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 305906f001203f1922266ab370fcc942458f9e8d
 
 如果您是从6.10平台迁移，并且您的客户端控制台比8104版本旧，则必须更新它。 如果迁移之前未执行此操作，则在重新连接时将提示您更新客户端控制台。 单击 **[!UICONTROL Yes]**.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果您拒绝更新，则将无法连接。
 
