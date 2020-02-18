@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -64,11 +64,10 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 1. 添加和配置活 **[!UICONTROL Wait]** 动，以便收件人不会同时接收过多的提交。
 1. 添加一 **[!UICONTROL Split]** 个活动以划分iOS或Android移动应用程序的订阅者。
 
-   为每个操作系统选择一项服务。 有关服务创建的详细信息，请参阅此 [页](../../delivery/using/setting-up-mobile-app-channel.md#creating-the-service-and-collecting-subscriptions)。
+   为每个操作系统选择一项服务。 有关服务创建的详细信息，请参阅此 [页](../../delivery/using/configuring-the-mobile-application.md)。
 
    ![](assets/cross_channel_delivery_4.png)
 
 1. 为每个操作系统选择和配置移动应用程序交付。
 
    ![](assets/cross_channel_delivery_5.png)
-
