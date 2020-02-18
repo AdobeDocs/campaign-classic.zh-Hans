@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -37,4 +37,4 @@ HTTP/2连接器：您必须允许与以下服务器进行通信：
 
 >[!NOTE]
 >
->有关两个连接器的详细信息，请参阅 [连接器](../../delivery/using/setting-up-mobile-app-channel.md#connectors)。
+>有关两个连接器的详细信息，请参 [阅在Adobe Campaign中配置移动应用程序](../../delivery/using/configuring-the-mobile-application.md)。
