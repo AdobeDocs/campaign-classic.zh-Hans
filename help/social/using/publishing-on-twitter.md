@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -100,7 +100,7 @@ source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
 >
 >在交付模 **[!UICONTROL Tweet]** 板中，默认情况下启用跟踪。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >我们无法分辨分析帖子的机器人和实际点击的用户之间的区别。
 
@@ -134,7 +134,7 @@ source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
 
 ![](assets/social_twitter_visitors_001.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >要使工作流恢复Twitter关注者列表，必须在链 **[!UICONTROL Synchronize Twitter accounts]** 接到帐户的服务的“编辑”屏幕中选中该框。 有关详细信息，请参阅：委 [派对Adobe Campaign的写权限](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign)。
 
@@ -181,7 +181,7 @@ source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
 
    * 选择 **[!UICONTROL Twitter subscribers]** 以向所有帐户关注者发送直接消息。
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >每天不能发送超过250条消息。 如果您的Twitter帐户有超过250个关注者，我们强烈建议大量投递。 这与电子邮件发送过程相同。 Refer to [this section](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 
