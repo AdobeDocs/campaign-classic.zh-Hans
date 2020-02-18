@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
 
 通过社交营销，您可以将分发发送到各个Facebook页面和Twitter帐户，而不是收件人配置文件。 在Facebook上，交付内容以出版物的形式显示在页面墙上，也将显示在所有页面粉丝的新闻源中。 在Twitter上，交付内容显示为帖子，并将显示在帐户关注者的主页上。 您还可以向您收集的帐户关注者发送直接消息。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Campaign要求您遵守Facebook和Twitter所通知的有关消息传递的服务条款。
 >
