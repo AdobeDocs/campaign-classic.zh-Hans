@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -171,7 +171,7 @@ _operation(string), advanced(boolean), applicableIf(string), autoIncrement(boole
 * **userEnum（字符串）**:接收“open”枚举的内部名称。 枚举的值可由用户在界面中定义。
 * **visibleIf(string)**:以XTK表达式的形式定义一个条件以显示或隐藏属性。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >该属性是隐藏的，但仍可访问其数据。
 
@@ -547,7 +547,7 @@ Adobe Campaign中有四种 `<element>` 类型的元素：
 * **revTarget（字符串）**:目标。
 * **sql（布尔值）**:如果激活了此属性(@sql=&quot;true&quot;)，则会强制存储SQL元素，即使元素具有xml=&quot;true&quot;属性也是如此。
 * **sqlname(string)**:表创建过程中字段的名称。 如果未指定&quot;@sqlname&quot;，则默认情况下使用&quot;@name&quot;属性的值。 将架构写入表时，前缀会根据字段的类型自动添加。
-* **sqltable(string)**:对于架构的主要元素，此属性将覆盖默认生成的SQL表的名称。 如果未指定&quot;@sqltable&quot;，则默认名称将采用如下结构：namespace（第一个字母大写），后跟SrcSchema &quot;@name&quot;的值。
+* **sqltable(string)**:对于架构的主元素，此属性会覆盖默认生成的SQL表的名称。 如果未指定&quot;@sqltable&quot;，则默认名称将采用如下结构：namespace（第一个字母大写），后跟SrcSchema &quot;@name&quot;的值。
 * **tableSpace（字符串）**:此属性允许您指定存储表表空间的新数据(在根上有 `<element>`效)。
 * **tableSpaceIndex（字符串）**:此属性允许您为表指定新的索引存储表空间(在根上有 `<element>`效)。
 * **target(MNTOKEN)**:在表之间创建链接时接收目标架构的名称。 此属性仅对“链接”类型元素处于活动状态。
