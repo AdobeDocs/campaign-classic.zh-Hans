@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -42,7 +42,7 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
    >
    >复制交付时，将重置参数。
 
-* **[!UICONTROL Send using multiple waves]**:有关详细信息，请参阅 [使用多个波形发送](#sending-using-multiple-waves)。
+* **[!UICONTROL Send using multiple waves]**:有关详细信息，请参 [阅使用多波发送](#sending-using-multiple-waves)。
 
 * **[!UICONTROL Test SMTP delivery]**:此选项允许您测试通过SMTP发送。 交付将一直处理到连接到SMTP服务器，但不会发送。
 
