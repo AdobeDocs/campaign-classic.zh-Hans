@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d5813af76e3cad16d9094a19509dcb855e36c01f
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -152,13 +152,13 @@ source-git-commit: d5813af76e3cad16d9094a19509dcb855e36c01f
 
       其中 **$(l)** 是交付的标识符。
 
-   * 在交付日志表(**NmsBroadlogXxx**)中，以10,000条记录的批量删除被执行。
-   * 在优惠提议表(**NmsCompatitionXxx**)中，批量删除以10,000条记录批量执行。
-   * 在跟踪日志表(**NmsTrackinglogXxx**)中，成批执行成批删除（5,000条记录）。
-   * 在交付片段表(**NmsDeliveryPart**)中，以5,000条记录的批量执行成批删除。 此表包含有关要传送的其余消息的个性化信息。
-   * 在镜像页面数据片段表(**NmsMirrorPageInfo**)中，成批执行成批删除（5,000条记录）。 此表包含有关用于生成镜像页面的所有消息的个性化信息。
-   * 在镜像页面搜索表(**NmsMirrorPageSearch**)中，成批执行成批删除（5,000条记录）。 此表是一个搜索索引，它提供对存储在 **NmsMirrorPageInfo表中的个性化信息的访问** 。
-   * 在批处理日志表(**XtkJobLog**)中，成批删除以5,000条记录执行。 此表包含要删除的分发日志。
+   * 在交付日志表(**NmsBroadlogXxx**)中，批量删除以20,000条记录批量执行。
+   * 在优惠提议表(**NmsCompatitionXxx**)中，批量删除以20,000条记录批量执行。
+   * 在跟踪日志表(**NmsTrackinglogXxx**)中，批量删除以20,000条记录的批量执行。
+   * 在交付片段表(**NmsDeliveryPart**)中，成批执行成批删除（500,000条记录）。 此表包含有关要传送的其余消息的个性化信息。
+   * 在镜像页面数据片段表(**NmsMirrorPageInfo**)中，对过期的传送部分和已完成或取消的部分以20,000条记录的批量执行删除。 此表包含有关用于生成镜像页面的所有消息的个性化信息。
+   * 在镜像页面搜索表(**NmsMirrorPageSearch**)中，批量删除以20,000条记录的批量执行。 此表是一个搜索索引，它提供对存储在 **NmsMirrorPageInfo表中的个性化信息的访问** 。
+   * 在批处理日志表(**XtkJobLog**)中，成批删除以20,000条记录执行。 此表包含要删除的分发日志。
    * 在交付URL跟踪表(**NmsTrackingUrl**)中，使用以下查询：
 
       ```
@@ -576,6 +576,26 @@ DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FRO
    DROP TABLE wkSimu_456831_aggr
    ```
 
+### 清除审计跟踪 {#cleanup-of-audit-trail}
+
+使用以下查询：
+
+```
+DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
+```
+
+其 **中$(tsDate)** 是当前服务器日期，从该日期起，将为 **** XtkCleanup_AuditTrailPurgeDelay选项定义的期间提交到该日期。
+
+### 清除Nmsaddress {#cleanup-of-nmsaddress}
+
+使用以下查询：
+
+```
+DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=STATUS_QUARANTINE AND tsLastModified < $(NmsCleanup_AppSubscriptionRcpPurgeDelay + 5d) AND iType IN (MESSAGETYPE_IOS, MESSAGETYPE_ANDROID ) LIMIT 5000)
+```
+
+此查询将删除所有与iOS和Android相关的条目。
+
 ### 统计数据更新和存储优化 {#statistics-update}
 
 使用 **XtkCleanup_NoStats** 选项可以控制清除工作流中存储优化步骤的行为。
@@ -590,13 +610,15 @@ DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FRO
 
 此任务将删除与已删除的服务或移动应用程序相关的所有订阅。
 
-1. 要恢复广播架构列表，请使用以下查询：
+要恢复广播架构列表，请使用以下查询：
 
-   ```
-   SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
-   ```
+```
+SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
+```
 
-1. 然后，该任务会恢复链接到appSubscription链接的表 **的名称** ，并删除这些表。
+然后，该任务会恢复链接到appSubscription链接的表 **的名称** ，并删除这些表。
+
+此清除工作流还会删除自 **NmsCleanup_AppSubscriptionRcpPurgeDelay选项中设置的时间以来未更新的idisabled = 1的所有条目** 。
 
 ### 清理会话信息 {#cleansing-session-information}
 
@@ -613,13 +635,3 @@ DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FRO
 ### 清洁反应 {#cleansing-reactions}
 
 此任务清除已删除假 **设的反应(表NmsRemaMatchRcp**)。
-
-### 清除审计跟踪 {#cleanup-of-audit-trail}
-
-使用以下查询：
-
-```
-DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
-```
-
-其 **中$(tsDate)** 是当前服务器日期，从该日期起，将为 **** XtkCleanup_AuditTrailPurgeDelay选项定义的期间提交到该日期。
