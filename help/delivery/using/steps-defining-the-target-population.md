@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
 * **递送的主要收件人**。 [阅读更多](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)。
 * **校样消息的接收方**，以设置验证周期。 [阅读更多](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
 
-此外，您还可以定义种 [子地址](../../delivery/using/about-seed-addresses.md), [以及控制组](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。 如果交付包含在营销活动中。
+此外，您还可以定义种 [子地址](../../delivery/using/about-seed-addresses.md)，以 [及控制组](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。 如果交付包含在营销活动中。
 
 ## 选择分发的主收件人 {#selecting-the-main-target}
 
@@ -121,7 +121,7 @@ source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
 
 ### 设置排除设置 {#customizing-exclusion-settings}
 
-地址错误和质量等级由服务提供商(IAP)提供。 此信息会在发送操作之后在收件人配置文件中自动更新，并且会与服务提供商返回的文件一起更新。 可在配置文件中以只读方式查看它。
+地址错误和质量等级由服务提供商(IAP)提供。 此信息会在发送操作之后在收件人配置文件中自动更新，并会与服务提供商返回的文件一起更新。 可在配置文件中以只读方式查看它。
 
 您可以选择排除已达到特定数量连续错误或质量等级低于此窗口中指定阈值的地址。 您还可以选择是否对尚未返回任何数据的未限定地址授权。
 
@@ -227,4 +227,4 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 >
 >种子地址显示在“关于 [种子地址”中](../../delivery/using/about-seed-addresses.md)。
 
-您可以使用此选项将特定证明目标的定义和种子地址的使用结合 **[!UICONTROL Specific target and Seed addresses]** 起来。 相关配置随后在两个单独的子标签中定义。
+您可以使用此选项将特定证明目标的定义与种子地址的使用结合 **[!UICONTROL Specific target and Seed addresses]** 起来。 相关配置随后在两个单独的子标签中定义。
