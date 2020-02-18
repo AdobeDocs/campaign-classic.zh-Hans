@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3946d97e786423bf831d17e486186660db403709
+source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
 
 ---
 
@@ -103,7 +103,7 @@ Adobe Campaign允许您定义和管理分配给各个运营商的权限。 这�
 
 >[!NOTE]
 >
->该字 **[!UICONTROL Session timeout]** 段允许您调整FDA会话超时前的延迟。 有关详细信息，请参阅关 [于Federated Data Access](../../platform/using/accessing-an-external-database.md#about-federated-data-access)。
+>该字 **[!UICONTROL Session timeout]** 段允许您调整FDA会话超时前的延迟。 有关详细信息，请参阅关 [于Federated Data Access](../../platform/using/about-fda.md)。
 
 ### 操作员的时区 {#time-zone-of-the-operator}
 
