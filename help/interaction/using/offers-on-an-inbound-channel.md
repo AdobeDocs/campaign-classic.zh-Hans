@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: aa0eb7acfb5d3b622475544735aed37d6beea892
 
 ---
 
@@ -28,11 +28,11 @@ Neobank网站希望在其网站上显示一个针对浏览该页面的身份不�
 
 要设置此交互，我们将：
 
-1. [创建匿名环境](#creating-an-anonymous-environment)。
-1. [创建匿名优惠空间](#creating-anonymous-offer-spaces)。
-1. [创建选件类别和主题](#creating-an-offer-category-and-a-theme)。
-1. [创建匿名选件](#creating-anonymous-offers)。
-1. [在网站上配置Web选件空间](#configure-the-web-offer-space-on-the-website)。
+1. [创建匿名环境](#creating-an-anonymous-environment)
+1. [创建匿名选件空间](#creating-anonymous-offer-spaces)
+1. [创建选件类别和主题](#creating-an-offer-category-and-a-theme)
+1. [创建匿名选件。](#creating-anonymous-offers)
+1. [在网站上配置Web选件空间](#configure-the-web-offer-space-on-the-website)
 
 ### 创建匿名环境 {#creating-an-anonymous-environment}
 
@@ -64,7 +64,7 @@ Neobank网站希望在其网站上显示一个针对浏览该页面的身份不�
    * 标题
    * HTML内容
    * 图像URL
-   * 目标URL。
+   * 目标URL
    ![](assets/offer_inbound_anonymous_example_030.png)
 
 1. 编辑HTML渲染函数，例如：
