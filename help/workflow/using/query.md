@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
+source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
 
 ---
 
@@ -25,10 +25,11 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 ## 创建查询 {#creating-a-query}
 
 查询允许您根据条件选择目标。 您可以将区段代码与查询结果关联，并在查询结果中插入其他数据。
+有关查询范例的详细信息，请参阅此 [部分](../../workflow/using/querying-recipient-table.md)。
 
 >[!NOTE]
 >
->本节将介绍查询 [范例](../../workflow/using/querying-recipient-table.md)。
+>使用Oracle时，查询活动与CLOB字段不兼容。
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
@@ -112,7 +113,7 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 
    * 如果集合的单个元素与此集合的筛选条件一致，请在字段 **[!UICONTROL Single row]** 中进行 **[!UICONTROL Data collected]** 选择。
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >此模式优化了由于集合元素上的直接接合而生成的SQL查询。
       >
