@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -37,6 +37,10 @@ source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
 
    * **/etc/init.d/nlserver6开始**
    * **/etc/init.d/nlserver6停止**
+
+>[!NOTE]
+>
+>从20.1开始，我们建议改用以下命令（对于Linux）:系 **统mctl启动nlserver** / **systemctl停止nlserver**
 
 以下是Linux中可访问的常见管理命令列表(如 **Adobe Campaign**):
 
@@ -76,24 +80,22 @@ source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
    **nlserver重新启动Web**
 
    >[!NOTE]
-
-   >* 如果未指定该实例，则将使用“default”实例。
-   >    
-   >    
+   > 
+   >    * 如果未指定该实例，则将使用“default”实例。
    >    * 在发生紧急情况时，使用 **-immediate** 选项强制立即停止进程(相当于Unix命令 **kill -9**)。
-   * 使用 **-noconsole** 选项可确保启动的模块在控制台上不显示任何内容。 其日志将通过syslogd模块写入 **磁盘** 。
-   * 使用 **-verbose选项** ，可显示有关进程操作的其他信息。
-
-
+   >    * 使用 **-noconsole** 选项可确保启动的模块在控制台上不显示任何内容。 其日志将通过syslogd模块写入 **磁盘** 。
+   >    * 使用 **-verbose选项** ，可显示有关进程操作的其他信息。
+      >    
+      >      
       例如：
-
-
+      >    
+      >      
       **nlserver重新启动web-verbose**
-
-
+      >    
+      >      
       **nlserver start mta@myinstance -verbose**
-
-
+      >    
+      >      
       此选项可添加其他日志。 在您找到所需信息后，我们建议在不使用 **-verbose** 选项的情况下再次启动进程，以避免日志过载。
 
 
@@ -110,5 +112,6 @@ source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
    **nlserver config -reload**
 
    >[!NOTE]
-   某些配置更改不会被动态考虑；必须关闭Adobe Campaign，然后重新启动。
+   >
+   >某些配置更改不会被动态考虑；必须关闭Adobe Campaign，然后重新启动。
 
