@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -78,7 +78,7 @@ Facebook固有以下限制。
 * **[!UICONTROL Cities]**
 * **[!UICONTROL Languages]**
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >谨慎使用此函数。 在传送报告中，该指 **[!UICONTROL Number of fans]** 示器将不考虑这些Facebook过滤器。
 >
@@ -115,7 +115,7 @@ Facebook固有以下限制。
 
 输入各种字段：
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >所有URL必须以“ **http://”** 或“ **https://”开头**。
 
@@ -136,7 +136,7 @@ Facebook固有以下限制。
 
 1. 在字 **[!UICONTROL Image]** 段中，输入将在发布左侧显示的图像的URL。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >该图像必须托管在公共互联网站点上，Facebook才能上传。
 
