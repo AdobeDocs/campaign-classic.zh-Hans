@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 该平台已知的用户是已经被传送定位并且已经点击了至少一次接收消息的接收者。 永久Cookie用于标识此收件人。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Campaign平台不适用于在消息中单击后访问网站的上下文之外用作网站跟踪工具。 启用此选项后，可能会导致在承载服务器的计算机（重定向、应用程序和数据库）上对资源的高度使用。 建议您确保硬件架构能够支持此负载，并避免在最频繁访问的页面（如主页）中放置Web跟踪标记。
 
