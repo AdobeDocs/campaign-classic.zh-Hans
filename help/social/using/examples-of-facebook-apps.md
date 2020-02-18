@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7f03e1fbb94bbd5b00fa0094a0b5e9be45629ec7
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: 7f03e1fbb94bbd5b00fa0094a0b5e9be45629ec7
 
 ![](assets/social_webapp_fb_000.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >请遵循创建Facebook应用程序中所述 [的配置步骤](../../social/using/creating-a-facebook-application.md)。
 
@@ -44,7 +44,7 @@ source-git-commit: 7f03e1fbb94bbd5b00fa0094a0b5e9be45629ec7
 * 如何将设置转发到Facebook应用程序。 请参阅 [如何将设置转发到Facebook应用程序？](#how-to-forward-settings-to-a-facebook-application-)。
 * 如何获取风扇数据。 请参阅 [如何获取风扇数据？](#how-to-acquire-fan-data-)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >这些简单的用例作为示例来说明Facebook类型Web应用程序的功能。
 
@@ -97,7 +97,7 @@ source-git-commit: 7f03e1fbb94bbd5b00fa0094a0b5e9be45629ec7
 
 ## 如何将设置转发到Facebook应用程序？ {#how-to-forward-settings-to-a-facebook-application-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >遵守创建Facebook应用程序中 [详细的配置步骤](../../social/using/creating-a-facebook-application.md)。
 
