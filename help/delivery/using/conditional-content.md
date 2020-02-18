@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -81,7 +81,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ## 创建多语言电子邮件 {#creating-multilingual-email}
 
-在以下示例中，您将学习如何创建多语言电子邮件。 内容将以一种语言或另一种语言显示，具体取决于接收者喜欢的语言。
+在以下示例中，您将学习如何创建多语言电子邮件。 内容将根据收件人的首选语言以一种语言或另一种语言显示。
 
 1. 创建电子邮件并选择目标人群。 在此示例中，显示一个版本或另一个版本的条件将基于收件人配置文件的 **“语言** ”值。 在此示例中，这些值设置 **为EN**、 **FR**、 **ES**。
 1. 在电子邮件HTML内容中，单击该选 **[!UICONTROL Source]** 项卡并粘贴以下代码：
