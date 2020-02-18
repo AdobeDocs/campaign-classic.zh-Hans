@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -38,7 +38,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
    要执行此操作，请单击链 **[!UICONTROL Import seed templates...]** 接，然后选择包含地址模板的文件夹。 有关详细信息，请参阅创 [建种子地址模板](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates)。
 
-   如有必要，添加这些地址后，您可以双击它们或单击按 **[!UICONTROL Detail...]** 钮以调整每个地址的内容。
+   如有必要，添加这些内容后，您可以双击它们或单击按 **[!UICONTROL Detail...]** 钮以调整每个地址的内容。
 
 1. 创建条件以动态选择要插入的控件地址。
 
