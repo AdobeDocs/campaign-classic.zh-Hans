@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9662e88578747a519df2e68e5a7d7987cc3ffdd4
+source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
 ---
 
@@ -368,7 +368,7 @@ function sqlGetMemo(strSql)
 
 >[!NOTE]
 >
->对于Microsoft SQL Server，可以使用本页中详细介绍的 [维护计划](http://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)。
+>对于Microsoft SQL Server，可以使用本页中详细介绍的 [维护计划](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)。
 
 以下示例涉及Microsoft SQL Server 2005。 如果您使用的是其他版本，请与数据库管理员联系以了解维护过程。
 
