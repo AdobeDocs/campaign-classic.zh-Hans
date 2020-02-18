@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -38,7 +38,7 @@ Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数�
 
 创建新表单后，您可以查看和编辑外部收件人表格的数据。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >表单的名称必须与其所关注的架构的名称相同。
 
