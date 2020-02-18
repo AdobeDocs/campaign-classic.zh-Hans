@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -304,7 +304,7 @@ SQL字段约束如下所示：
 
 从ACC 18.10开始， **XtkNewId** 不再是现成的架构中序列的默认值。 您现在可以构建架构或使用专用序列扩展现有架构。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
@@ -346,7 +346,7 @@ SQL字段约束如下所示：
 
 除了键及其索引的定义之外，还向扩展架构中添加了一个名为“id”的数字字段，以包含自动生成的主键。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >在创建表时，将主键设置为0的记录自动插入。 此记录用于避免外部连接，这对卷表无效。 默认情况下，所有外键都使用值0进行初始化，这样，在数据项未填充时，结果始终可以在连接时返回。
 
@@ -373,7 +373,7 @@ SQL字段约束如下所示：
 * ![](assets/join_fda_11.png) :基数1-1
 * ![](assets/join_fda_1m.png) :基数1-N
 
-有关FDA表的详细信息，请参阅 [访问外部数据库](../../platform/using/accessing-an-external-database.md)。
+有关FDA表的详细信息，请参阅 [访问外部数据库](../../platform/using/about-fda.md)。
 
 必须在包含通过主元素链接的表的外键的架构中声明链接：
 
