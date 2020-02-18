@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
 
 ---
 
@@ -86,7 +86,7 @@ source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
 
 ## 定义其他设置 {#defining-additional-settings}
 
-在该 **[!UICONTROL Settings]** 选项卡中，您可以为报告创建其他设置：这些设置将在调用期间传递到URL。
+在该 **[!UICONTROL Parameters]** 选项卡中，您可以为报告创建其他设置：这些设置将在调用期间传递到URL。
 
 本页详细介绍了Web表 [单属性](../../web/using/about-web-forms.md)。
 
@@ -111,6 +111,14 @@ source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
 
    通过 **[!UICONTROL Variable]** 此选项，可创建或选择一个变量，该变量将作为URL的参数传递，并可用于筛选器中。
 
+使 **[!UICONTROL Response HTTP headers]** 用iframe将报表页面包含在HTML页面中时，可防止单击劫持。 要避免单击劫持，您可以选择 **[!UICONTROL X-Frame-options header]** 行为：
+
+* **[!UICONTROL None]**:报告没有 **[!UICONTROL X-Frame-options header]**。
+* **[!UICONTROL Same as origin]**:默认情况下，为新报告和重新发布的报告设置。 主机名与报告的URL相同。
+* **[!UICONTROL Deny]**:使用iframe时，HTML页中不能包含该报告。
+
+![](assets/s_ncs_advuser_report_properties_09c.png)
+
 ## 添加变量 {#adding-variables}
 
 该选 **[!UICONTROL Variables]** 项卡包含报告中配置的变量列表。 这些变量在报告的上下文中显示，并可用于计算。
@@ -129,7 +137,7 @@ source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
 
 ## 个性化错误页面 {#personalizing-the-error-page}
 
-通过 **[!UICONTROL Error page]** 该选项卡，可以配置报告显示出错时将显示的消息。
+该 **[!UICONTROL Error page]** 选项卡允许您配置报告显示中出错时将显示的消息。
 
 您可以定义文本并将它们链接到特定标识符以管理报表本地化。 有关详细信息，请参阅 [添加页眉和页脚](../../reporting/using/element-layout.md#adding-a-header-and-a-footer)。
 
