@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
 
 此方法包括通过在要跟踪的网页的HTML源代码中插入 **`<img>`** HTML标签，向重定向服务器发送HTTP调用。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >此方法使用Web浏览器发送的Cookie来标识收件人，并且不是100%可靠。
 
