@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -82,7 +82,7 @@ source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
 
 * **[!UICONTROL Label and code of the delivery]** :屏幕的此部分相关的选项用于计算这些字段在交付分析阶段的值。 该字 **[!UICONTROL Calculate the execution folder during the delivery analysis]** 段计算将在分析阶段包含此提交操作的文件夹的名称。
 * **[!UICONTROL Approval mode]** :通过此字段，您可以选择交付批准的类型。 批准模式在验证过 [程中与类型一起显示](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies)。
-* **[!UICONTROL Prepare the personalization data with a workflow]** :此选项允许您在自动工作流程中准备交付中包含的个性化数据。 它使得在处理大量数据时，特别是当个性化数据来自外部表通过FDA时，能够大幅提高交付分析性能。 请参阅访 [问外部数据库(FDA)部分](../../platform/using/accessing-an-external-database.md#optimizing-email-personalization-with-external-data) 。
+* **[!UICONTROL Prepare the personalization data with a workflow]** :此选项允许您在自动工作流程中准备交付中包含的个性化数据。 它使得在处理大量数据时，特别是当个性化数据来自外部表通过FDA时，能够大幅提高交付分析性能。 请参阅访 [问外部数据库(FDA)部分](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data) 。
 * **[!UICONTROL Start job in a detached process]** :通过此选项，您可以在单独的流程中启动交付分析。 默认情况下，分析功能使用Adobe Campaign应用程序服务器进程(Web Nlserver)。 通过选择此选项，即使在应用程序服务器出现故障时，您也可以确保完成分析。
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** :此选项会在分析阶段将SQL查询日志添加到分发日志。
 * **[!UICONTROL Ignore personalization scripts during sending]** :通过此选项，您可以绕过对HTML内容中的JavaScript指令的解释。 它们将按原样显示在已传送的内容中。 这些指令与 **&lt;%=标签一起引入** 。
