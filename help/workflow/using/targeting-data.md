@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -72,7 +72,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ### 与其他数据协调 {#reconciliation-with-additional-data}
 
-在数据协调阶段(**[!UICONTROL Union]**、 **[!UICONTROL Intersection]**&#x200B;等)中 活动)，则可以从其他列中选择要用于数据协调的列。 为此，请对所选列配置对帐并指定主集。 然后，选择窗口下列中的列，如下例所示：
+在数据协调阶段(**[!UICONTROL Union]**、 **[!UICONTROL Intersection]**&#x200B;等)中 活动)，则可以从其他列中选择要用于数据协调的列。 为此，请针对所选列配置对帐并指定主集。 然后，选择窗口下列中的列，如下例所示：
 
 ![](assets/select-column-and-join.png)
 
@@ -182,7 +182,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   For more on this, refer to this [section](../../platform/using/accessing-an-external-database.md).
+   For more on this, refer to this [section](../../platform/using/about-fda.md).
 
 然后，我们需要添加新子集：
 
