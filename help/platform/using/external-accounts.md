@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6ae45cbd87fc0152fc654202e03501fc8d2abd06
+source-git-commit: e7df1f73dd454f826096ce4d5fe430e10fe407ad
 
 ---
 
@@ -113,8 +113,8 @@ Adobe Campaign附带一组预定义的外部帐户。 要与外部系统（如�
 * [代理](../../delivery/using/other-channels.md)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
-* [iOS渠道](../../delivery/using/setting-up-mobile-app-channel.md#ios-connectors)
-* [Android通道](../../delivery/using/setting-up-mobile-app-channel.md#android-connectors)
+* [iOS渠道](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
+* [Android通道](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-android)
 
 ## FTP外部帐户 {#ftp-external-account}
 
@@ -154,10 +154,9 @@ Adobe Campaign提供了多个连接器，允许您与外部应用程序通信并
 
 可以配置以下连接类型：
 
-* Oracle。 For more information, refer to this [page](../../platform/using/accessing-an-external-database.md#configure-access-to-oracle).
-* MySQL。 要配置对MYSQL的访问，请参阅此 [页](../../platform/using/accessing-an-external-database.md#configure-access-to-mysql)。
-* 老千。 For more information, refer to this [page](../../platform/using/accessing-an-external-database.md#configure-access-to-netezza).
-* SAP HANA。 For more information, refer to this [page](../../platform/using/accessing-an-external-database.md#configure-access-to-sap-hanaa).
+* Oracle。 For more information, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
+* 老千。 For more information, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
+* SAP HANA。 For more information, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-sap-hana).
 * InfiniDB
 * Microsoft SQL Server
 * AsterData
@@ -168,9 +167,33 @@ Adobe Campaign提供了多个连接器，允许您与外部应用程序通信并
 * ODBC(Sybase ASE, Sybase IQ)
 * HTTP中继到远程数据库
 
+### 雪花外部帐户 {#snowflake-external-account}
+
+使用 **Snowflake外部帐户** ，您可以将Campaign实例连接到Snowflake外部数据库。 有关如何配置Campaign Classic与Snowflake的更多信息，请参阅此 [页](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)。
+
+要配置此外部帐户以与Adobe Campaign一起使用，您需要提供以下详细信息：
+
+* **[!UICONTROL Server]**
+
+       雪花服务器的URL。
+   
+* **[!UICONTROL Account]**
+
+       用户的名称。
+   
+* **[!UICONTROL Password]**
+
+       用户帐户密码。
+   
+* **[!UICONTROL Database]**
+
+       数据库的名称。
+   
+![](assets/snowflake.png)
+
 ### Teradata外部帐户 {#teradata-external-account}
 
-通过 **Teradata** 外部帐户，您可以将Campaign实例连接到Teradata外部数据库。 有关如何使用Teradata配置Campaign Classic的详细信息，请参阅本页 [或](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) 本节 [内容](../../platform/using/accessing-an-external-database.md#configure-access-to-teradata)。
+通过 **Teradata** 外部帐户，您可以将Campaign实例连接到Teradata外部数据库。 有关如何使用Teradata配置Campaign Classic的详细信息，请参阅本页 [或](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) 本节 [内容](../../platform/using/specific-configuration-database.md#configure-access-to-teradata)。
 
 ![](assets/ext_account_19.png)
 
@@ -198,11 +221,11 @@ Adobe Campaign提供了多个连接器，允许您与外部应用程序通信并
 
 * **[!UICONTROL Options]**
 
-   要通过Teradata传递的选项
+   要通过Teradata传递的选项。
 
 * **[!UICONTROL Timezone]**
 
-   Teradata中的时区设置
+   在Teradata中设置时区。
 
 ![](assets/ext_account_20.png)
 
@@ -244,7 +267,7 @@ Adobe Campaign提供了多个连接器，允许您与外部应用程序通信并
 
 * **[!UICONTROL Application secret]**
 
-   您的Facebook应用程序的应用程序机密
+   您的Facebook应用程序的应用程序机密。
 
 如果选择由此实例模式托管，则需要将安全画布URL粘贴到Facebook上的 **Facebook web游戏(https)字段**
 
@@ -290,11 +313,11 @@ For more information on this configuration, refer to this [page](../../message-c
 
 * **[!UICONTROL IMS client secret]**
 
-   IMS客户端机密的凭据
+   您的IMS客户端机密的凭据。
 
 * **[!UICONTROL Callback server]**
 
-   访问Adobe Campaign实例的URL
+   访问Adobe Campaign实例的URL。
 
 * **[!UICONTROL IMS organization ID]**
 
@@ -408,7 +431,7 @@ Amazon Simple Storage Service(S3)连接器可用于将数据导入或导出到Ad
 
 ## Hadoop外部帐户 {#hadoop-external-account}
 
-外部 **[!UICONTROL Hadoop]** 帐户支持与共享外部数据库的连接，只要此连接处于活动状态，就可以通过Adobe Campaign访问该数据库。 有关如何配置对Hadoop的访问的详细信息，请参阅此 [部分](../../platform/using/accessing-an-external-database.md#configure-access-to-hadoop)。
+外部 **[!UICONTROL Hadoop]** 帐户支持与共享外部数据库的连接，只要此连接处于活动状态，就可以通过Adobe Campaign访问该数据库。 有关如何配置对Hadoop的访问的详细信息，请参阅此 [部分](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop)。
 
 ![](assets/ext_account_16.png)
 
