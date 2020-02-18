@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -75,11 +75,15 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
    通过使用HTTP/HTTPS访问的Web服务或通过Federated Data Access(FDA)模块进行数据收集。
 
+   >[!NOTE]
+   >
+   >请注意，在HTTP上使用FDA时，仅支持使用Postgres数据库的执行实例。 不支持MSSQL或Oracle数据库。
+
    如果控制实例可以直接访问执行实例的数据库，则建议使用第二种方法。 否则，选择Web服务访问。 要指定的FDA帐户与在控制实例上创建的各种执行实例的数据库的连接一致。
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   有关Federated Data Access(FDA)的详细信息，请参阅 [访问外部数据库](../../platform/using/accessing-an-external-database.md)。
+   有关Federated Data Access(FDA)的详细信息，请参阅 [访问外部数据库](../../platform/using/about-fda.md)。
 
 1. 单 **[!UICONTROL Test the connection]** 击以确保控件实例和执行实例已关联。
 
