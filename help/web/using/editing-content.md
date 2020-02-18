@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -135,13 +135,14 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 >对于每种类型的链接，您可以配置打开模式：在“目标”下拉列 **表中** ，选择目标窗口。 此值与 **`<target>`** HTML标记相对应。
 >
 >可用目标 **列表** 如下：
-
+>
 >* 其他(IFrame)
 >* 顶部窗口(_top)
-* 父窗口(_parent)
-* 新窗口(_blank)
-* 当前窗口(_self)
-* 默认浏览器行为
+>* 父窗口(_parent)
+>* 新窗口(_blank)
+>* 当前窗口(_self)
+>* 默认浏览器行为
+>
 
 
 
@@ -170,7 +171,8 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 ![](assets/dce_toolbar_imgblock_action.png)
 
 >[!NOTE]
-“向按钮添加动作” [部分中详细介绍了可用的动作](#adding-an-action-to-a-button) 。
+>
+>“向按钮添加动作” [部分中详细介绍了可用的动作](#adding-an-action-to-a-button) 。
 
 ### 删除链接 {#delete-a-link}
 
@@ -180,7 +182,8 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 * **[!UICONTROL Break the link]** 允许您在确认后删除链接和所有相关参数。
 
 >[!NOTE]
-如果删除链接，则内容仍会保留。
+>
+>如果删除链接，则内容仍会保留。
 
 ## 更改字体属性 {#changing-font-attributes}
 
@@ -202,8 +205,10 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 * **更改文本颜色** 图标：允许您更改选定块的文本颜色或仅更改选定文本(`<span style="color: #CODE">`)
 
 >[!NOTE]
-* **删除图标** :删除块及其所有内容。
-
+>
+>* **删除图标** :删除块及其所有内容。
+   >
+   >
 * **复制** 图标：复制块以及与块相关的所有样式。
 
 
@@ -223,7 +228,8 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 ```
 
 >[!CAUTION]
-不得在HTML页的script标签中 **调用** 外部文件。 这些文件不会导入到Adobe Campaign服务器上。
+>
+>不得在HTML页的script标签中 **调用** 外部文件。 这些文件不会导入到Adobe Campaign服务器上。
 
 ### 添加／删除／复制图像 {#adding---deleting---duplicating-an-image}
 
@@ -240,7 +246,8 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 复制 **图标** ，将复制标 ![]() 记及其内容。
 
 >[!CAUTION]
-复制图像时，与新图像相关的标识符将被删除。
+>
+>复制图像时，与新图像相关的标识符将被删除。
 
 ### 编辑图像属性 {#editing-image-properties}
 
