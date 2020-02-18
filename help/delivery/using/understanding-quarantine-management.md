@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 16e7266a101b4abea3271c32fcc403e7d7fbaa2d
 
 ---
 
@@ -116,15 +116,23 @@ Adobe Campaign会根据发送失败类型和在错误消息资格(请参阅弹�
 
 * **忽略的错误**:忽略的错误不会发送地址进行隔离。
 * **硬错误**:相应的电子邮件地址会立即发送到隔离区。
-* **软错误**:软错误不会立即发送要隔离的地址，但会增加一个错误计数器。 当错误计数器达到限制阈值时，地址将进入隔离。 在默认配置中，阈值设置为5个错误，其中，如果两个错误间隔至少24小时，则它们会显着。 地址在第六个错误时被置于隔离中。 可以修改错误计数器阈值。 有关详细信息，请参阅“在临时 [交付失败后重试”](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
-
-   当重试后传送成功时，重新初始化隔离之前的地址的错误计数器。 地址状态将变为“ **有效** ”，并在“数据库清除”工作流两天后从隔离列 **表中删除** 。
+* **软错误**:软错误不会立即发送要隔离的地址，但会增加一个错误计数器。 有关此方面的详细信息，请参 [阅软错误管理](#soft-error-management)。
 
 如果用户将电子邮件归为垃圾邮件(**反馈循环**)，则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，用户的电子邮件地址会自动发送到隔离区。
 
 在隔离地址列表中，字段 **[!UICONTROL Error reason]** 指示将选定地址置于隔离中的原因。 Adobe Campaign中的隔离区区分大小写。 确保以小写形式导入电子邮件地址，以便以后不会重新定位。
 
 ![](assets/tech_quarant_error_reasons.png)
+
+### 软错误管理 {#soft-error-management}
+
+与硬错误相反，软错误不会立即发送要隔离的地址，而是会增加一个错误计数器。
+
+* 当错误计数器达到限制阈值时，地址将进入隔离。
+* 在默认配置中，阈值设置为5个错误，其中，如果两个错误间隔至少24小时，则它们会显着。 地址在第六个错误时被置于隔离中。
+* 可以修改错误计数器阈值。 有关详细信息，请参阅“在临时 [交付失败后重试”](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
+
+如果上次出现重大错误的时间超过10天，则错误计数器将重新初始化。 然后，地址状态将更改为“ **有效** ”，并且数据库清除工作流会从隔离列 **表中删除该状态** 。
 
 ## 推送通知隔离 {#push-notification-quarantines}
 
