@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f460c79a763c6a207656c54351a4c685f2a78a03
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -77,7 +77,7 @@ source-git-commit: f460c79a763c6a207656c54351a4c685f2a78a03
 nlserver config -internalpassword
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >对于 **所有跟踪服务器** ，内部密码必须相同。 有关详细信息，请参阅“内部标 [识符](../../installation/using/campaign-server-configuration.md#internal-identifier) ”和“ [关于权限](../../platform/using/access-management.md#about-permissions) ”部分。
 
