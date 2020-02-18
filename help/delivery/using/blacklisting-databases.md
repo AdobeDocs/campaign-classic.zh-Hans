@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62553344f557206443fa2de0499df42d8b771e21
+source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: 62553344f557206443fa2de0499df42d8b771e21
 * 按发送者域：列出发送垃圾邮件的发送者域（弹回邮件地址的完整域）或错误配置。
 * 按Web域：列出在垃圾邮件内容中包含的链接和图像的URL中找到的域（通过注册商注册的高级域）。 在Adobe Campaign中，要考虑的域通常是用于跟踪的地址。
 
-以下是使用最广泛的RBL列表。 有关更全面的列表，您可以参阅 [https://www.declude.com/Articles.asp?ID=97](https://www.declude.com/Articles.asp?ID=97) 或 [https://www.dnsstuff.com/](https://www.dnsstuff.com/) （“IP工具”部分，“垃圾数据库查找”表单）。
+以下是使用最广泛的RBL列表。 有关更全面的列表，您可以参阅https://www.dnsstuff.com/ [](https://tools.dnsstuff.com/) （“垃圾邮件黑名单查找”表单）。
 
 * **Spamhaus**
 
