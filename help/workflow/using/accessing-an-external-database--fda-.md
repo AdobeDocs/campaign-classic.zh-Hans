@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -31,4 +31,4 @@ Adobe Campaign 提供了联合数据访问 (FDA) 选项，以处理存储在一�
 * 扩充
 * 数据加载
 
-FDA选项的使用取决于您的Adobe Campaign许可。 配置此选项以及与使用该选项相关的最佳实践和限制将在本节中详细 [介绍](../../platform/using/accessing-an-external-database.md)。
+FDA选项的使用取决于您的Adobe Campaign许可。 配置此选项以及与使用该选项相关的最佳实践和限制将在本节中详细 [介绍](../../platform/using/about-fda.md)。
