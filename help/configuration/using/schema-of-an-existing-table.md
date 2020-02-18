@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -68,4 +68,4 @@ source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
 
 利用 **Federated Data Access - FDA** 选项，您可以访问存储在外部数据库中的数据。
 
-本页详细介绍了架构上用于访问外部数据库中数据的 [配置](../../platform/using/accessing-an-external-database.md#creating-the-data-schema)。
+本页详细介绍了架构上用于访问外部数据库中数据的 [配置](../../platform/using/creating-data-schema.md)。
