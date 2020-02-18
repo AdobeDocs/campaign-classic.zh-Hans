@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 58b69ae83d0ff2bece26cb3ff0604cd92e3c20f4
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -90,7 +90,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 xpath **** 属性指向您要索引的架构中的字段。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >记住，索引提供的SQL查询读取性能提高也会在写入记录时带来性能命中。 因此，应谨慎使用这些指标。
 
@@ -112,7 +112,7 @@ xpath **** 属性指向您要索引的架构中的字段。
 
 在本例中，我们指定的不是 **@autopk** 属性创建名为“id”的默认主键，而是我们自己的“houseldId”主键。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
@@ -171,7 +171,7 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >尽管大多数属性都根据1-1基数链接到数据库的物理字段，但XML字段或计算字段的情况并非如此。\
 >XML字段存储在表的备注字段(“mData”)中。\
