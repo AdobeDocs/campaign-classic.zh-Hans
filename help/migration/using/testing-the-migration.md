@@ -79,7 +79,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ### -showCustomEntities和-showDeletedEntities选项 {#showcustomentities-and--showdeletedentities-options}
 
-* - **showCustomEntities** 选项显示所有非标准对象的列表：
+* \- **showCustomEntities** 选项显示所有非标准对象的列表：
 
    ```
    nlserver.exe config -showCustomEntities -instance:<instanceName>
@@ -91,7 +91,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
    xtk_migration:opsecurity2 xtk:entity
    ```
 
-* - **showDeletedEntities** 选项显示数据库或文件系统中缺少的所有标准对象的列表。 对于每个缺少的对象，都指定了路径。
+* \- **showDeletedEntities** 选项显示数据库或文件系统中缺少的所有标准对象的列表。 对于每个缺少的对象，都指定了路径。
 
    ```
    nlserver.exe config -showDeletedEntities -instance:<instanceName>
