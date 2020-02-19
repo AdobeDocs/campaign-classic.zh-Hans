@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 78c94268723e172b4a4e3c3a965877978b075b82
+source-git-commit: 1206b2dcee8a4b0e95a005e47b947b00388e7e43
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 78c94268723e172b4a4e3c3a965877978b075b82
    <td><img src="assets/red3.png"/><strong>已弃用</strong></td> 
   </tr> 
    <tr> 
-   <td>提供最新的稳定版本。 <br>构建在生产中验证的内容。 </td>
+   <td>提供最新的稳定版本。 <br>构建在生产中经过验证的内容。 </td>
    <td>由Adobe验证的构建。 <br>等待生产校样。 </td>
    <td>可用于错误修复的更新版本。 <br>需要更新。 </td>
    <td>包含已知的回归。 <br>更新是必需的。 </td>
@@ -56,7 +56,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>雪花是一个完全受管的云数据仓库，可在存储和计算级别进行扩展。 借助这一新的连接器，Adobe Campaign现在可以利用雪花的强大功能执行大数据分割。 此连接器适用于所有客户，包括Adobe托管的客户。</p>
-    <p>有关详细信息，请参阅详 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">细文档</a>。</p>
+    <p>有关详细信息，请参阅详细 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">文档</a> 和教 <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html.">程视频</a>。</p>
    </td> 
   </tr> 
  </tbody> 
@@ -109,7 +109,7 @@ _2020年2月17日_
 
 * 在Linux上，nlserver服务启动现在使用系统单元而不是/etc/init.d/nlserver6脚本。 在安装20.1包时，会自动执行到新启动方案的迁移。 /etc/init.d/nlserver6仍然提供，但是为了与nlserver服务（启动、重新启动、停止等）进行交互，建议您直接使用systemctl命令。
 
-* 最耗用的自定义表已从 **xtkNewId序列移到专用序列** 。 [阅读更多](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* 最耗用的自定义表已从 **xtkNewId序列移至专用序列** 。 [阅读更多](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * 改进了查询性能，这些性能可能会受到不必要的数据库连接的影响。
 
