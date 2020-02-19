@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1206b2dcee8a4b0e95a005e47b947b00388e7e43
+source-git-commit: d94ded3b87244a7cd51a15c1ebe409c9fdfcd843
 
 ---
 
@@ -56,7 +56,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>雪花是一个完全受管的云数据仓库，可在存储和计算级别进行扩展。 借助这一新的连接器，Adobe Campaign现在可以利用雪花的强大功能执行大数据分割。 此连接器适用于所有客户，包括Adobe托管的客户。</p>
-    <p>有关详细信息，请参阅详细 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">文档</a> 和教 <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html.">程视频</a>。</p>
+    <p>有关详细信息，请参阅详细 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">文档</a> 和教 <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">程视频</a>。</p>
    </td> 
   </tr> 
  </tbody> 
