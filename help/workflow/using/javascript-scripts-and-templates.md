@@ -128,29 +128,29 @@ logInfo("Start date: " + task.creationDate)
 
 1. 从上一个示例中采用工作流，将 **JavaScript代码活动的脚本替换为以下脚本** :
 
-   ```
-   instance.vars.foo = "bar1"
-   vars.foo = "bar2"
-   task.vars.foo = "bar3"
-   ```
+    ```
+    instance.vars.foo = "bar1"
+    vars.foo = "bar2"
+    task.vars.foo = "bar3"
+    ```
 
 1. 将以下脚本添加到“结束”活动的初始 **化脚本** :
 
-   ```
-   logInfo("instance.vars.foo = " + instance.vars.foo)
-   logInfo("vars.foo = " + vars.foo)
-   logInfo("task.vars.foo = " + task.vars.foo)
-   ```
+    ```
+    logInfo("instance.vars.foo = " + instance.vars.foo)
+    logInfo("vars.foo = " + vars.foo)
+    logInfo("task.vars.foo = " + task.vars.foo)
+    ```
 
 1. 启动工作流，然后查看日志。
 
-   ```
-   Workflow finished
-   task.vars.foo = undefined
-   vars.foo = bar2
-   instance.vars.foo = bar1
-   Starting workflow (operator 'admin')
-   ```
+    ```
+    Workflow finished
+    task.vars.foo = undefined
+    vars.foo = bar2
+    instance.vars.foo = bar1
+    Starting workflow (operator 'admin')
+    ```
 
 此示例显示， **JavaScript Code** （代码）之后的活动访问实例变量和事件变量，但任务变量无法从外部访问(&#39;undefined&#39;)。
 
