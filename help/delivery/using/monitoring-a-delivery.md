@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 ---
 
@@ -67,7 +67,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 >
 >如果未为分发启用跟踪，则不显示此选项卡。
 
-跟踪配置在交付向导的相应阶段执行。 请参阅 [如何配置跟踪的链接](../../delivery/using/how-to-configure-tracked-links.md)。
+跟踪配置在交付向导的相应阶段执行。 请参 [阅如何配置跟踪的链接](../../delivery/using/how-to-configure-tracked-links.md)。
 
 **[!UICONTROL Tracking]** 数据会在交付报告中进行解释。 请参 [阅此部分](../../reporting/using/delivery-reports.md)。
 
@@ -92,11 +92,11 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 某些指示器或状态可能不正确或不是最新，这可通过以下解决方案解决：
 
 * 如果您的交付状态不正确，请检查是否已为此交付完成所有必要的批准，或者是否正在运行 **[!UICONTROL operationMgt]** 和工 **[!UICONTROL deliveryMgt]** 作流而未出错。 这也可能是因为发送实例上使用未配置的关联进行传送。
-* 如果您的交货指标仍为零，并且您处于中间采购配置中，请检查技术工 **[!UICONTROL Mid-sourcing (delivery counters)]** 作流程。 如果状态不是，则启动它 **[!UICONTROL Started]**。 然后，您可以尝试重新计算指示器，方法是在Adobe Campaign资源管理器中右键单击相关交付，然后选择 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**。 For more information on tracking indicators, refer to this [section](../../reporting/using/reports-on-deliveries.md#tracking-indicators).
-* 如果您的交付计数器与您的交付不匹配，请尝试重新计算指示器，方法是在Adobe Campaign资源管理器中右键单击相关的交付，然后选择 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** 重新同步。 For more information on tracking indicators, refer to this [section](../../reporting/using/reports-on-deliveries.md#tracking-indicators).
+* 如果您的交货指标仍为零，并且您处于中间采购配置中，请检查技术工 **[!UICONTROL Mid-sourcing (delivery counters)]** 作流程。 如果状态不是，则启动它 **[!UICONTROL Started]**。 然后，您可以尝试重新计算指示器，方法是在Adobe Campaign资源管理器中右键单击相关交付，然后选择 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**。 For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
+* 如果您的交付计数器与您的交付不匹配，请尝试重新计算指示器，方法是在Adobe Campaign资源管理器中右键单击相关的交付，然后选择 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** 重新同步。 For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
 * 如果您的交货计数器不是中部采购部署的最新状态，请检查技术工 **[!UICONTROL Mid-Sourcing (Delivery counters)]** 作流是否正在运行。 For more on this, refer to this [page](../../installation/using/mid-sourcing-deployment.md).
 
-您还可以通过交付仪表板使用不同的报表跟踪您的交付。 For more on this, refer to this [section](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports).
+您还可以通过交付仪表板使用不同的报表跟踪您的交付。 For more on this, refer to this [section](../../reporting/using/delivery-reports.md).
 
 ## 性能问题 {#performance-issues}
 
@@ -106,7 +106,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 * **交付的大小**:大型交付可能需要更长的时间才能完成。 MTA子项配置为处理默认的批大小，这适用于大多数情况，但在交付速度持续缓慢时需要检查。
 * **交付目标**:交付性能禁止受软弹回错误的影响，软弹回错误根据重试配置进行处理。 错误数越多，需要的重试次数就越多。
-* **整体平台负载**:当发送多个大型交付时，整个平台可能会受到影响。 您还可以检查IP信誉和可交付性问题。 有关此内容的详细信息，请参阅Adobe Campaign [交付性最佳实践指南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) ，以 [及本页](../../delivery/using/about-deliverability.md)。
+* **整体平台负载**:当发送多个大型交付时，整个平台可能会受到影响。 您还可以检查IP信誉和可交付性问题。 有关此内容的详细信息，请参阅Adobe Campaign [可交付性最佳实践指南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) ，并 [访问此页](../../delivery/using/about-deliverability.md)。
 
 平台和数据库的维护也会影响交付发送性能。 有关详细信息，请参见[此页面](../../production/using/database-performances.md)。
 
@@ -114,11 +114,11 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 单击该按 **[!UICONTROL Send]** 钮后，您的交付似乎比通常花费的时间更长。 这可能由不同元素引起：
 
-* 某些电子邮件提供商可能已将您的IP地址列入黑名单。 在这种情况下，请检查您的广播并查阅 [此快速入门](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) 。
+* 某些电子邮件提供商可能已将您的IP地址列入黑名单。 在这种情况下，请检查您的广播并查阅 [此入门指南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) 。
 * 您的交付量可能太大，无法快速处理，这可能与高JavaScript个性化一起发生，或者如果您的交付量超过60KB。 请参阅Adobe Campaign交付 [最佳实践](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) ，了解内容指南。
 * Adobe Campaign MTA中可能已发生限制。 这是由以下原因造成的：
 
-   * 已暂停的消息(**[!UICONTROL quotas met]** 消息):已满足在Campaign中定义的声明性MX规则声明的配额。 For more information about this message, refer to [this page](../../delivery/using/technical-recommendations.md#quota-met). 要进一步了解MX规则，请参 [阅本页](../../delivery/using/technical-recommendations.md#mx-rules)。
+   * 已暂停的消息(**[!UICONTROL quotas met]** 消息):已满足在Campaign中定义的声明性MX规则声明的配额。 For more information about this message, refer to [this page](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). 要进一步了解MX规则，请参 [阅本页](../../delivery/using/technical-recommendations.md#mx-rules)。
    * 已暂停的消息(**[!UICONTROL dynamic flow control]** 消息):Campaign MTA在尝试为给定ISP发送消息时遇到错误，这会导致延迟以避免错误密度过大，从而面临潜在黑名单。
 
 * 系统问题可能会阻止服务器进行交互：这会减慢整个发送过程。 检查服务器，以确保在获取个性化数据的过程中不存在可能影响营销活动的内存或资源问题。
@@ -255,7 +255,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 * 交付失败时，交付日志中可能显示以下错误： **DLV-XXXX准备的消息计数(123)大于要发送的消息数(111)。 请联系支持部门。**
 
-   通常，此错误意味着电子邮件中有一个为收件人提供多个值的个性化字段或块。 正在使用个性化块，并且它正在为特定收件人获取多个记录。
+   通常，此错误意味着电子邮件中有一个为收件人提供多个值的个性化字段或块。 正在使用个性化块，它正在为特定收件人获取多个记录。
 
    要解决此问题，请检查使用的个性化数据，然后检查这些字段中任何一个字段有多个条目的收件人的目标。 在分发活动之 **[!UICONTROL Deduplication]** 前，您还可以在定位工作流中使用活动来检查一次只有一个个性化字段。 For more information on deduplication, refer to [this page](../../workflow/using/deduplication.md).
 
