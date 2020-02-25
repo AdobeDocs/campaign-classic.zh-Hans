@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -376,7 +376,7 @@ Captcha将插入到页面中，并且输入字段位于可视下方。 这两个
 
 要向表单页面插入上传字段，请在页面编 **[!UICONTROL Advanced controls > File...]** 辑器的工具栏中选择菜单。
 
-默认情况下，上传的文件存储在可通过菜单访问的资源文 **[!UICONTROL Resources > Online > Public resources]** 件中。 您可以使用脚本更改此行为。 此脚本可以使用 [Campaign JSAPI文档中定义的函数](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)，包括那些涉及文件处理的函数。
+默认情况下，上传的文件存储在可通过菜单访问的资源文 **[!UICONTROL Resources > Online > Public resources]** 件中。 您可以使用脚本更改此行为。 此脚本可以使用 [Campaign JSAPI文档中定义的函数](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)，包括那些涉及文件处理的函数。
 
 您可以将指向这些文件的链接存储在本地变量或数据库字段中。 例如，您可以扩展收件人架构以添加指向基于文件的资源的链接。
 
