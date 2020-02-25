@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
 
 使用它们的主要原因之一是您的邮 **寄列表保护**。 将种子地址插入到邮寄列表中可让您注意到第三方是否正在使用它，因为它包含的种子地址将收到发送到您的邮寄列表的递送。
 
-此外，种子地址还允许您在 **发送之前通过发送证明来预览和测试交付的个性化和呈现** (请参阅使用种 [子地址作为证明](../../delivery/using/steps-validating-the-delivery.md#using-seed-addresses-as-proof))。
+此外，种子地址还允许您在 **发送之前通过发送证明来预览和测试交付的个性化和呈现** (请参阅使用种 [子地址作为证明](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof))。
 
 种子地址功能具有以下优点：
 
