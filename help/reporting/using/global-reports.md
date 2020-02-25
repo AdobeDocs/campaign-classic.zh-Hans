@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
+source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ---
 
@@ -39,12 +39,12 @@ source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
 * **[!UICONTROL Sharing to social networks]** :请参阅 [共享到社交网络](#sharing-to-social-networks)。
 * **[!UICONTROL Statistics on sharing activities]** :请参阅有 [关共享活动的统计信息](#statistics-on-sharing-activities)。
 * **[!UICONTROL Operating systems]** :请参阅操 [作系统](#operating-systems)。
-* **[!UICONTROL URLs and click streams]** :引用URL [并单击流](#urls-and-click-streams)。
-* **[!UICONTROL Tracking indicators]** :请参阅跟 [踪指示器](#tracking-indicators)。
+* **[!UICONTROL URLs and click streams]** :引用URL [并单击流](../../reporting/using/delivery-reports.md#urls-and-click-streams)。
+* **[!UICONTROL Tracking indicators]** :请参阅跟 [踪指示器](../../reporting/using/delivery-reports.md#tracking-indicators)。
 * **[!UICONTROL Non-deliverables and bounces]** :请参阅 [非可交付产品和弹回](#non-deliverables-and-bounces)。
 * **[!UICONTROL User activities]** :请参阅用 [户活动](#user-activities)。
 * **[!UICONTROL Subscription tracking]** :请参阅 [订阅跟踪](#subscription-tracking)。
-* **[!UICONTROL Delivery summary]** :请参阅 [交付摘要](#delivery-summary)。
+* **[!UICONTROL Delivery summary]** :请参阅 [交付摘要](../../reporting/using/delivery-reports.md#delivery-summary)。
 * **[!UICONTROL Delivery statistics]** :请参阅交 [付统计信息](#delivery-statistics)。
 * **[!UICONTROL Breakdown of opens]** :请参阅打 [开的细分](#breakdown-of-opens)。
 
@@ -64,7 +64,7 @@ source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
 
 可以使用以下选项：
 
-* **[!UICONTROL Opens]** :已打开消息的总数。 不考虑文本格式的电子邮件。 有关跟踪打开的详细信息，请参阅 [跟踪打开](#tracking-opens-)。
+* **[!UICONTROL Opens]** :已打开消息的总数。 不考虑文本格式的电子邮件。 有关跟踪打开的详细信息，请参阅 [跟踪打开](../../reporting/using/indicator-calculation.md#tracking-opens-)。
 * **[!UICONTROL Clicks]** :提交中链接的总点击次数。 取消订阅链接和镜像页面上的点击量不会被考虑在内。
 * **[!UICONTROL Transactions]** :收到消息后的事务总数。 要考虑事务，必须将事务类型Web跟踪标记插入到匹配的网页中。 本节介绍Web跟踪 [配置](../../configuration/using/about-web-tracking.md)。
 
@@ -302,7 +302,7 @@ For more information on viral marketing, refer to [this section](../../delivery/
 
 此报告按操作系统、设备和浏览器显示有关期间的打开情况细分。 对于每个类别，使用两个图表。 第一个显示有关计算机和移动设备上打开情况的统计信息。 第二个显示仅与移动设备上的打开有关的统计信息。
 
-打开次数与已打开的消息总数相对应。 不会计算文本格式电子邮件。 有关“跟踪”打开的详细信息，请参阅“跟 [踪打开](#tracking-opens-) ”部分。
+打开次数与已打开的消息总数相对应。 不会计算文本格式电子邮件。 有关“跟踪”打开的详细信息，请参阅“跟 [踪打开](../../reporting/using/indicator-calculation.md#tracking-opens-) ”部分。
 
 ![](assets/dlv_useragent_report.png)
 
