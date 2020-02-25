@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8b836ca3179b85877ec917a3bf28c94dbbac7772
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -36,7 +36,7 @@ source-git-commit: 8b836ca3179b85877ec917a3bf28c94dbbac7772
 
 此活动的配置过程与根据可用选项创建交付模板的过程类似。 For more on this, refer to this [section](../../delivery/using/about-templates.md).
 
-有关此活动的示例，请参阅此部 [分](../../campaign/using/marketing-campaign-deliveries.md#creating-a-recurring-delivery-in-a-targeting-workflow)。
+有关此活动的示例，请参阅此部 [分](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)。
 
 >[!NOTE]
 >
