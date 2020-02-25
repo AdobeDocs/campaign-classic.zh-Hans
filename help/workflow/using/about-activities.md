@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 71662675e347e5f5b289afa03e2898e6ce0ecaa9
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 71662675e347e5f5b289afa03e2898e6ce0ecaa9
 
 工作流活动按类别分组。 同时有四个可用选项卡。
 
-在营销活动工作流中，选 **[!UICONTROL Events]** 项卡将替换为该选 **[!UICONTROL Deliveries]** 项卡。 “操作”活动部分详细介绍了此选项卡 [中的活动](#action-activities) 。
+在营销活动工作流中，选 **[!UICONTROL Events]** 项卡将替换为该选 **[!UICONTROL Deliveries]** 项卡。 “操作”活动部分详细介绍了此选项卡 [中的活动](../../workflow/using/about-action-activities.md) 。
 
 ![](assets/wf-activity-tabs.png)
 
