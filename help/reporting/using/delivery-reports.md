@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: b74ea9a6b079bbe88ed17a79e532bd8ce6ce13ae
 
 ---
 
@@ -35,19 +35,19 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
    默认情况下，以下报告可用：
 
-   * **[!UICONTROL Delivery throughput]** :请参阅交 [付吞吐量](#delivery-throughput)。
-   * **[!UICONTROL Sharing to social networks]** :请参阅 [共享到社交网络](#sharing-to-social-networks)。
-   * **[!UICONTROL Statistics on sharing activities]** :请参阅有 [关共享活动的统计信息](#statistics-on-sharing-activities)。
+   * **[!UICONTROL Delivery throughput]** :请参阅交 [付吞吐量](../../reporting/using/global-reports.md#delivery-throughput)。
+   * **[!UICONTROL Sharing to social networks]** :请参阅 [共享到社交网络](../../reporting/using/global-reports.md#sharing-to-social-networks)。
+   * **[!UICONTROL Statistics on sharing activities]** :请参阅有 [关共享活动的统计信息](../../reporting/using/global-reports.md#statistics-on-sharing-activities)。
    * **[!UICONTROL Hot clicks]** :请参阅热 [点单击](#hot-clicks)。
    * **[!UICONTROL Tracking statistics]** :请参阅跟 [踪统计信息](#tracking-statistics)
    * **[!UICONTROL URLs and click streams]** :引用URL [并单击流](#urls-and-click-streams)。
    * **[!UICONTROL Tracking indicators]** :请参阅跟 [踪指示器](#tracking-indicators)。
-   * **[!UICONTROL Non-deliverables and bounces]** :请参阅 [非可交付产品和弹回](#non-deliverables-and-bounces)。
-   * **[!UICONTROL User activities]** :请参阅用 [户活动](#user-activities)。
+   * **[!UICONTROL Non-deliverables and bounces]** :请参阅 [非可交付产品和弹回](../../reporting/using/global-reports.md#non-deliverables-and-bounces)。
+   * **[!UICONTROL User activities]** :请参阅用 [户活动](../../reporting/using/global-reports.md#user-activities)。
    * **[!UICONTROL Delivery summary]** :请参阅 [交付摘要](#delivery-summary)。
-   * **[!UICONTROL Subscription tracking]** :请参阅 [订阅跟踪](#subscription-tracking)。
-   * **[!UICONTROL Delivery statistics]** :请参阅交 [付统计信息](#delivery-statistics)。
-   * **[!UICONTROL Breakdown of opens]** :请参阅打 [开的细分](#breakdown-of-opens)。
+   * **[!UICONTROL Subscription tracking]** :请参阅 [订阅跟踪](../../reporting/using/global-reports.md#subscription-tracking)。
+   * **[!UICONTROL Delivery statistics]** :请参阅交 [付统计信息](../../reporting/using/global-reports.md#delivery-statistics)。
+   * **[!UICONTROL Breakdown of opens]** :请参阅打 [开的细分](../../reporting/using/global-reports.md#breakdown-of-opens)。
 
 ## 跟踪指标 {#tracking-indicators}
 
@@ -55,7 +55,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 >[!NOTE]
 >
->根据消息打开次数计算的值始终是估计值，因为文本格式电子邮件链接的错误边距。 指 **[!UICONTROL Distinct opens/Sum of opens for the population reached]** 示符将此误差范围考虑在内。 有关跟踪打开的详细信息，请参阅 [跟踪打开](#tracking-opens-)。
+>根据消息打开次数计算的值始终是估计值，因为文本格式电子邮件链接的错误边距。 指 **[!UICONTROL Distinct opens/Sum of opens for the population reached]** 示符将此误差范围考虑在内。 有关跟踪打开的详细信息，请参阅 [跟踪打开](../../reporting/using/indicator-calculation.md#tracking-opens-)。
 
 ![](assets/s_ncs_user_tracking_synth_report.png)
 
@@ -78,7 +78,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
    >[!NOTE]
    >
-   >有关不同人员与目标收件人之间差异的更多信息，请参阅 [目标人员／收件人](#targeted-persons---recipients)。
+   >有关不同人员与目标收件人之间差异的更多信息，请参阅 [目标人员／收件人](../../reporting/using/indicator-calculation.md#targeted-persons---recipients)。
 
 **[!UICONTROL 3. Open and click-through rate]**
 
@@ -121,7 +121,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 **[!UICONTROL 6. Sharing activities to email and social networks]**
 
-此部分显示每个社交网络上共享的消息数。 有关详细信息，请参阅 [共享到社交网络](#sharing-to-social-networks)。
+此部分显示每个社交网络上共享的消息数。 有关详细信息，请参阅 [共享到社交网络](../../reporting/using/global-reports.md#sharing-to-social-networks)。
 
 ## URL 和点击流 {#urls-and-click-streams}
 
@@ -137,7 +137,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
    >[!NOTE]
    >
-   >有关跟踪打开的详细信息，请参阅 [跟踪打开](#tracking-opens-)。
+   >有关跟踪打开的详细信息，请参阅 [跟踪打开](../../reporting/using/indicator-calculation.md#tracking-opens-)。
 
 * **[!UICONTROL Distinct clicks]** :在分发中至少单击一次（不包括取消订阅链接和镜像页面）的不同用户数。 根据成功传送的消息数计算显示的速率。
 * **[!UICONTROL Cumulated clicks]** :目标收件人的点击总数（不包括取消订阅链接和镜像页面）。 根据成功转发的消息数计算显示的速率。
@@ -199,6 +199,6 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 此报告提供值表和帕累托图，其中显示交付达到最高效率所需的时间。 使用以下指示符：
 
-* **[!UICONTROL Opens]** :估计达到所打开消息总数的百分比所需的时间。 不考虑文本格式的电子邮件。 有关跟踪打开的详细信息，请参阅 [跟踪打开](#tracking-opens-)。
+* **[!UICONTROL Opens]** :估计达到所打开消息总数的百分比所需的时间。 不考虑文本格式的电子邮件。 有关跟踪打开的详细信息，请参阅 [跟踪打开](../../reporting/using/indicator-calculation.md#tracking-opens-)。
 * **[!UICONTROL Clicks]** :估计达到记录的点击总数百分比所需的时间。 单击退出链接后，将不考虑镜像页面。
 * **[!UICONTROL Transactions]** :在收到消息后达到事务处理总数百分比所需的时间。 要考虑事务，必须将事务类型Web跟踪标记插入到匹配的网页中。 本节介绍Web跟踪 [配置](../../configuration/using/about-web-tracking.md)。
