@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -38,7 +38,7 @@ Campaign中有三种类型的交付对象：
 
 例如，如果每月运行一次此类活动，则一年后最终会有12次提交。
 
-循环提交是通过循环提交活动在工作流 [中创建的](../../workflow/using/recurring-delivery.md)。 本节介绍了使用此活动的示例：在定 [位工作流中创建循环提交](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-recurring-delivery-in-a-targeting-workflow)。
+循环提交是通过循环提交活动在工作流 [中创建的](../../workflow/using/recurring-delivery.md)。 本节介绍了使用此活动的示例：在定 [位工作流中创建循环提交](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)。
 
 ## 持续交付 {#continuous-delivery}
 
