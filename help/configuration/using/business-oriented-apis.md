@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -45,7 +45,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI文档包含有关SOAP调用和在Adobe Campaign中使用Javascript的其他信息](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) ，以及对应用程序中使用的所有方法和函数的完整参考。
+>[Campaign JSAPI文档包含有关SOAP调用和在Adobe Campaign中使用Javascript的其他信息](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) ，以及对应用程序中使用的所有方法和函数的完整参考。
 
 ## 订阅（nms：订阅） {#subscribe--nms-subscription-}
 
