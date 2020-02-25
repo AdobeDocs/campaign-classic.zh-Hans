@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -96,7 +96,7 @@ XML文档包含根元素，其 **`<navtree>`** 中具有名称 **和namespace** 
 
 命令分隔符可让您在命令之间显示分隔条。 它由命令标 **签中包含的** &#39;-&#39;值标识。
 
-标签及其输入参 **`<soapcall>`** 数的可选存在定义要执行的SOAP方法的调用。 有关SOAP API的详细信息，请参阅 [Campaign JSAPI文档](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)。
+标签及其输入参 **`<soapcall>`** 数的可选存在定义要执行的SOAP方法的调用。 有关SOAP API的详细信息，请参阅 [Campaign JSAPI文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
 
 在从标记初始化时，可以更新表单上 **`<enter>`** 下文。 有关此标记的详细信息，请参阅有关输入表单的文档。
 
@@ -269,7 +269,7 @@ XML文档包含根元素，其 **`<navtree>`** 中具有名称 **和namespace** 
 
 命令分隔符可让您在命令之间显示分隔条。 它由命令标 **签中包含的** &#39;-&#39;值标识。
 
-标签及其输入参 **`<soapcall>`** 数的可选存在定义要执行的SOAP方法的调用。 有关SOAP API的详细信息，请参阅 [Campaign JSAPI文档](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)。
+标签及其输入参 **`<soapcall>`** 数的可选存在定义要执行的SOAP方法的调用。 有关SOAP API的详细信息，请参阅 [Campaign JSAPI文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
 
 表单上下文可以通过标签在初始化时进行 **`<enter>`** 更新。 有关此标记的详细信息，请参阅输入表单文档。
 
