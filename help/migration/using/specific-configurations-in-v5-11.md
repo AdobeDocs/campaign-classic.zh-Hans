@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -71,7 +71,7 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 >[!NOTE]
 >
->有关详细信息，请参阅http://dev.mysql.com/doc/refman/5.5/en/time-zone-support.html [页面](http://dev.mysql.com/doc/refman/5.5/en/time-zone-support.html) 。
+>有关详细信息，请参阅https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html [页面](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) 。
 
 如果对数据库结构进行了修改，例如在配置（创建特定索引、创建SQL视图等）期间，迁移时应采取某些预防措施。 事实上，某些修改可以从与迁移过程的不兼容性中产生。 例如，创建包含 **Timestamp** 字段的SQL视图与 **usetimestamptz选项不兼容** 。 因此，我们建议您遵循以下建议：
 
