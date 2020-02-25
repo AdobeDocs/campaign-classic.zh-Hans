@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -56,4 +56,4 @@ source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 * [管理电子邮件中的种子和验证](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html)：了解如何在 Adobe Campaign 中向现有电子邮件添加种子和验证。
 * [Adobe Campaign 与 Microsoft Dynamics 365 集成](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/integrating/dynamics365-integration.html)：了解如何通过 CRM 连接器功能，链接和同步 Adobe Campaign 与 Microsoft Dynamics。
 
-除了这些短视频和详细视频，您还可以在我们的网站上找到[培训资源](https://training.adobe.com/training/courses.html)以及[演示视频](https://www.adobe.com/training/video.html)。
+除了这些短视频和详细视频，您还可以在我们的网站上找到[培训资源](https://learning.adobe.com/catalog.html)以及[演示视频](https://www.adobe.com/training/video.html)。
