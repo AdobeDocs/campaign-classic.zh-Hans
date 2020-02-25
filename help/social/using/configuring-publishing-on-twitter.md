@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 首先，创建一个或多个Twitter帐户，将您的帖子发送到。
 
-要创建Twitter帐户，请转到 [http://twitter.com](http://twitter.com)。
+要创建Twitter帐户，请转到 [https://twitter.com](https://twitter.com)。
 
 ## 在Twitter上创建测试帐户 {#creating-a-test-account-on-twitter}
 
