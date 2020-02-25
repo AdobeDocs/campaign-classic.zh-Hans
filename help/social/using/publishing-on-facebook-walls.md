@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -42,7 +42,7 @@ source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ## 创建测试Facebook页面 {#creating-a-test-facebook-page}
 
-我们建议创建用于传送出版物校样的专用Facebook页面(有关详细信息，请参阅 [发送证明](#sending-the-proof))。
+我们建议创建用于传送出版物校样的专用Facebook页面(有关详细信息，请参阅 [发送证明](../../social/using/publishing-on-facebook.md#sending-the-proof)。
 
 1. 登录到用于管理页面的Facebook帐户。
 1. 创建新Facebook页面。
