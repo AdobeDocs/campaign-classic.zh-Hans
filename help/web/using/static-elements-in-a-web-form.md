@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
    >[!NOTE]
    >
-   >在服务器端，脚本可以使用 [Campaign JSAPI文档中定义的函数](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)。
+   >在服务器端，脚本可以使用 [Campaign JSAPI文档中定义的函数](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
 
 ## 插入HTML内容 {#inserting-html-content}
 
