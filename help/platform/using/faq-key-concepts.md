@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -106,7 +106,7 @@ Adobe Campaign 包括在不同的应用程序服务器模块之间编排所有�
 
 ## How can I track deliveries? {#how-can-i-track-deliveries-}
 
-在 Campaign Classic 中您可通过专用的[投放报告](../../reporting/using/reports-on-deliveries.md#delivery-reports)跟踪并监视您发送的投放内容。
+在 Campaign Classic 中您可通过专用的[投放报告](../../reporting/using/delivery-reports.md)跟踪并监视您发送的投放内容。
 
 在此页面中进一步了解Campaign中的跟 [踪管理](https://helpx.adobe.com/campaign/kb/acc-tracking.html)。
 
