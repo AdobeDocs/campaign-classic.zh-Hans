@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
 ---
 
@@ -125,7 +125,7 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 1. 单击 **[!UICONTROL Next]** 以开始配置开发应用程序。
 
-1. 确保在Adobe Campaign和 **[!UICONTROL Integration key]** 通过SDK在应用程序代码中定义相同的内容。 有关详细信息，请参阅：将 [Campaign SDK集成到移动应用程序中](#integrating-campaign-sdk-into-the-mobile-application)。 此集成密钥是每个应用程序特有的，它允许您将移动应用程序链接到Adobe Campaign平台。
+1. 确保在Adobe Campaign和 **[!UICONTROL Integration key]** 通过SDK在应用程序代码中定义相同的内容。 有关详细信息，请参阅：将 [Campaign SDK集成到移动应用程序中](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。 此集成密钥是每个应用程序特有的，它允许您将移动应用程序链接到Adobe Campaign平台。
 
    >[!NOTE]
    >
@@ -256,7 +256,7 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 1. 输入 **[!UICONTROL Label]**。
 
-1. 确保在Adobe Campaign和 **[!UICONTROL Integration key]** 通过SDK在应用程序代码中定义相同的内容。 有关详细信息，请参阅：将 [Campaign SDK集成到移动应用程序中](#integrating-campaign-sdk-into-the-mobile-application)。
+1. 确保在Adobe Campaign和 **[!UICONTROL Integration key]** 通过SDK在应用程序代码中定义相同的内容。 有关详细信息，请参阅：将 [Campaign SDK集成到移动应用程序中](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
 
    >[!NOTE]
    >
@@ -280,7 +280,7 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 1. 在选项卡中定义映 **[!UICONTROL Subscription parameters]** 射。
    >[!CAUTION]
    >
-   >确保选项卡中的配置名 **[!UICONTROL Subscription parameters]** 称与手机应用程序代码中的配置名称相同。 请参阅将Campaign SDK [集成到移动应用程序部分](#integrating-campaign-sdk-into-the-mobile-application) 。
+   >确保选项卡中的配置名 **[!UICONTROL Subscription parameters]** 称与手机应用程序代码中的配置名称相同。 请参阅将Campaign SDK [集成到移动应用程序部分](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) 。
 
 ### 第4步：创建Android富通知 {#creating-android-delivery}
 
