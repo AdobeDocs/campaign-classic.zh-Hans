@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7aa381654805798fcdd24f588160bed15e037a2b
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -45,7 +45,7 @@ Adobe Campaign 目前提供英语、法语、德语和日语共 4 种语言的�
 
 ## 如何配置电子邮件可投放性? {#how-to-configure-email-deliverability-}
 
-除了阅读[可投放性入门](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)，请参阅有关电子邮件可投放性配置的部分，了解如何配置您的实例，以充分利用 Campaign 的投放功能。
+除了阅读[可投放性入门](https://docs.adobe.com/content/help/en/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html)，请参阅有关电子邮件可投放性配置的部分，了解如何配置您的实例，以充分利用 Campaign 的投放功能。
 
 [单击此处了解更多信息](../../installation/using/email-deliverability.md)。
 
