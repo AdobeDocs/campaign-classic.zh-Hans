@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c2b5ce9afa45b472f161d6d62517513888e062e
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -103,5 +103,5 @@ Adobe Campaign允许您以UTC（协调通用时间）格式存储日期／时间
 * 欧洲／伦敦
 * America/New_York等
 
-   这些值取自tz(Olson)数据库。 有关详细信息，请参 [阅http://en.wikipedia.org/wiki/List_of_tz_database_time_zones](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones)。
+   这些值取自tz(Olson)数据库。 有关详细信息，请参 [阅https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)。
 
