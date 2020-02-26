@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
 
 # 通信渠道{#communication-channels}
 
-借助Adobe Campaign，您可以发送跨渠道营销活动，包括电子邮件、短信、LINE消息、推送通知和直邮，并使用各种专用报告衡量其 [效果](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports)。 这些消息是通过发送来设计和发送的，并且可以为每个收件人个性化。
+借助Adobe Campaign，您可以发送跨渠道营销活动，包括电子邮件、短信、LINE消息、推送通知和直邮，并使用各种专用报告衡量其 [效果](../../reporting/using/delivery-reports.md)。 这些消息是通过发送来设计和发送的，并且可以为每个收件人个性化。
 
 核心功能包括定位、消息定义和个性化、通信执行和相关的运营报告。 主要功能访问点是交付向导。 此访问点可带来Adobe Campaign涵盖的多项功能。
 
