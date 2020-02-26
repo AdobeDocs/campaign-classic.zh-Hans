@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4969c5e56f1911b3abfd770ca4f8f5ed25784a52
+source-git-commit: cb081f893b7da13cda5892409b063b8781e93b2a
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 4969c5e56f1911b3abfd770ca4f8f5ed25784a52
 
 >[!CAUTION]
 >
->Adobe Campaign用户需要外部数据库和Adobe Campaign应用程序服务器的特定权限才能处理来自外部数据库的数据。 有关详细信息，请参阅远程数 [据库访问权限部分](#remote-database-access-rights) 。
+>Adobe Campaign用户需要外部数据库和Adobe Campaign应用程序服务器的特定权限才能处理来自外部数据库的数据。 有关详细信息，请参阅远程数 [据库访问权限部分](../../platform/using/remote-database-access-rights.md) 。
 >
 >要避免任何故障，访问远程共享数据的操作员必须从不同的空间工作。
 
@@ -38,7 +38,7 @@ source-git-commit: 4969c5e56f1911b3abfd770ca4f8f5ed25784a52
 1. 单击按 **[!UICONTROL New]** 钮并选择类 **[!UICONTROL External database]** 型。
 1. 定义外 **[!UICONTROL Connection]** 部数据库的参数。
 
-   对于与 **ODBC** **[!UICONTROL Server]** type数据库的连接，字段必须包含ODBC数据源的名称，而不包含服务器名称。 此外，可能需要某些附加配置，具体取决于所使用的数据库。 请参阅“按数 [据库类型的特定配置](#specific-configurations-by-database-type) ”部分。
+   对于与 **ODBC** **[!UICONTROL Server]** type数据库的连接，字段必须包含ODBC数据源的名称，而不包含服务器名称。 此外，可能需要某些附加配置，具体取决于所使用的数据库。 请参阅“按数 [据库类型的特定配置](../../platform/using/specific-configuration-database.md) ”部分。
 
 1. 输入参数后，单击按钮 **[!UICONTROL Test the connection]** 以批准这些参数。
 
