@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -72,7 +72,7 @@ source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
    >
    >**[!UICONTROL Badge]** 键 **[!UICONTROL Alert and badge]** 入通知后，您可以修改徽章的值（移动应用程序徽标上方的数字）。 要刷新标记，您只需输入0作为值。 如果字段为空，则徽章值不会更改。
 
-1. 该 **[!UICONTROL Action button]** 选项允许您为警报通知(有效负荷的&#x200B;**** action_loc_key字段)上显示的操作按钮定义标签。 如果您的iOS应用程序管理可本地化的字符串(**Localizable.strings**)，请在此字段中输入相应的键。 如果应用程序不管理可本地化的文本，请输入要显示在操作按钮上的标签。 有关可本地化字符串的详细信息，请参阅 [Apple文档](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.md#//apple_ref/doc/uid/TP40008194-CH10-SW1) 。
+1. 该 **[!UICONTROL Action button]** 选项允许您为警报通知(有效负荷的&#x200B;**** action_loc_key字段)上显示的操作按钮定义标签。 如果您的iOS应用程序管理可本地化的字符串(**Localizable.strings**)，请在此字段中输入相应的键。 如果应用程序不管理可本地化的文本，请输入要显示在操作按钮上的标签。 有关可本地化字符串的详细信息，请参阅 [Apple文档](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) 。
 1. 在字 **[!UICONTROL Play a sound]** 段中，选择要在收到通知时由移动终端播放的声音。
 
    >[!NOTE]
