@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 
 ---
 
@@ -584,7 +584,7 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
    + 其他配置 {#additional-configurations}
       + [配置Campaign服务器](installation/using/configuring-campaign-server.md)
       + [通过LDAP连接](installation/using/connecting-through-ldap.md)
-      + [电子邮件发送能力](installation/using/email-deliverability.md)
+      + [技术电子邮件配置](installation/using/email-deliverability.md)
       + [电子邮件存档](installation/using/email-archiving.md)
       + [时区管理](installation/using/time-zone-management.md)
       + [配置SpamAssassin](installation/using/configuring-spamassassin.md)
