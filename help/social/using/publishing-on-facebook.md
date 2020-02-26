@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -159,7 +159,7 @@ Facebook固有以下限制。
 
 1. 在字 **[!UICONTROL Status]** 段中，输入将在页面名称下显示的文本。
 1. 在字段 **[!UICONTROL Name]** 中，输入发布标题。
-1. 在字 **[!UICONTROL Video code]** 段中，输入YouTube视频的代码。 例如，对于“http://www.youtube.com/watch?v=abc123456&#39;”链接，视频代码将为“abc123456”。
+1. 在字 **[!UICONTROL Video code]** 段中，输入YouTube视频的代码。 例如，对于“https://www.youtube.com/watch?v=abc123456&#39;”链接，视频代码将为“abc123456”。
 1. 在字 **[!UICONTROL Caption]** 段中，输入将在发布末尾显示的文本。
 1. 转到字 **[!UICONTROL Description]** 段并输入要在标题下显示的文本。
 
