@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ![](assets/edit_test.png)
 
-有关通过工作流JavaScript可访问的应用程序服务器的所有其他JavaScript函数和SOAP方法的详细信息，请参阅 [JSAPI文档](http://docs.campaign.adobe.com/doc/AC/en/jsapi/p-1.html)。
+有关通过工作流JavaScript可访问的应用程序服务器的所有其他JavaScript函数和SOAP方法的详细信息，请参阅 [JSAPI文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
 
 您还可以直接从此编辑器插入变量。
 
