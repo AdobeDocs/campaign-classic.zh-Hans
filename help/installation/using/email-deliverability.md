@@ -15,25 +15,24 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 21d808695bfde2fb3220964c066558ad30952443
+source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 
 ---
 
 
-# 电子邮件发送能力{#email-deliverability}
+# 技术电子邮件配置{#email-deliverability}
 
 ## 概述 {#overview}
 
-以下部分概述了在传送消息时控制Adobe Campaign实例输出所需的配置。
+以下部分概述了在传送电子邮件时控制Adobe Campaign实例输出所需的配置。
 
 >[!NOTE]
 >
->某些配置只能由Adobe为Adobe托管的部署执行。 例如，访问服务器和实例配置文件。 要进一步了解不同的部署，请参阅托 [管模型部分](../../installation/using/hosting-models.md) ，或 [本文](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。\
->请参阅入门指 [南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) ，其中介绍了与交付性相关的概念和最佳做法。
+>某些配置只能由Adobe为Adobe托管的部署执行，例如，访问服务器和实例配置文件。 要进一步了解不同的部署，请参阅托 [管模型部分](../../installation/using/hosting-models.md) ，或 [本文](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。
 
 有关与可交付性相关的概念和最佳实践的详细信息，请参阅本 [节](../../delivery/using/about-deliverability.md)。
 
-本节提供有关Adobe Campaign平台有效发送和接收消息的所有技术建 [议](../../delivery/using/technical-recommendations.md)。
+本节提供有关Adobe Campaign平台有效发送和接收电子邮件的所有技术建 [议](../../delivery/using/technical-recommendations.md)。
 
 ## 工作原理 {#operating-principle}
 
