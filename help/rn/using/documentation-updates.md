@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cc6f0f2989977c5a199dbfd413c6a2bac4628545
+source-git-commit: 230ff1a8453cf512b7da828cdcdd49edca59331c
 
 ---
 
@@ -25,6 +25,20 @@ source-git-commit: cc6f0f2989977c5a199dbfd413c6a2bac4628545
 本页列出了Adobe Campaign Classic每个版本的所有新增功能和文档更新。
 
 您还可以参阅 [Adobe Campaign Classic发行说明](../../rn/using/latest-release.md)。
+
+## 2020年2月 {#february-2020}
+
+现在提供了设计Adobe Campaign数据模型时概述最佳实践和主要建议的新部分。 [阅读更多](../../configuration/using/data-model-best-practices.md)
+
+“电子邮件可交付性”部分已更名为“技术电子邮件配置”。 [阅读更多](../../installation/using/email-deliverability.md)
+
+“交付性常见问题解答”文档已更新，其中包含有关“满足配额”错误消息的更多详细信息。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
+
+AMP for Email现在由三个电子邮件提供商（Gmail、Outlook和Mail.ru）支持，其中介绍如何使用AMP定义交互式内容的部分已更新。 [阅读更多](../../delivery/using/defining-interactive-content.md)
+
+电子邮件存档部分已阐明。 [阅读更多](../../installation/using/email-archiving.md#recommendations-and-limitations)
+
+
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
@@ -67,12 +81,6 @@ Campaign **Classic内部部署和托管功能列表页面已使用新的FDA连�
 新增了一个部分，以详细描述增强的电子邮件地址验证规则，以便在软错误时发送地址进行隔离。 [阅读更多](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
 配置文件中的参数指示实例是否使用增强的MTA，现在已记录。 [阅读更多](../../installation/using/the-server-configuration-file.md#mta)
-
-## 2020年2月 {#february-2020}
-
-AMP for Email现在由三个电子邮件提供商（Gmail、Outlook和Mail.ru）支持，其中介绍如何使用AMP定义交互式内容的部分已更新。 [阅读更多](../../delivery/using/defining-interactive-content.md)
-
-电子邮件存档部分已阐明。 [阅读更多](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
 ## 2020年1月 {#january-2020}
 
