@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c4e4c7d7433f782f810fdc2ecdeeedacd72b6c6
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -52,6 +52,6 @@ source-git-commit: 7c4e4c7d7433f782f810fdc2ecdeeedacd72b6c6
 
    ![](assets/s_user_segmentation_scheduler5.png)
 
-使用调度程序活动可能导致同时运行多个工作流的执行。 例如，您可以让一个调度程序每小时触发工作流执行，但有时整个工作流的执行需要超过一小时。 如果工作流已在运行，您可能希望跳过执行。 有关如何防止同时执行工作流的详细信息，请参阅 [本页](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-execution)。
+使用调度程序活动可能导致同时运行多个工作流的执行。 例如，您可以让一个调度程序每小时触发工作流执行，但有时整个工作流的执行需要超过一小时。 如果工作流已在运行，您可能希望跳过执行。 有关如何防止同时执行工作流的详细信息，请参阅 [本页](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)。
 
 另请注意，如果工作流执行长期任务（如导入），或wfserver模块停止了一段时间，则可以在数小时后激活过渡。 在这种情况下，可能需要将由调度器激活的任务的执行限制在一定的时间范围内。
