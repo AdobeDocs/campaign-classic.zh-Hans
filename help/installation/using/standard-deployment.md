@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -63,7 +63,7 @@ LAN中的应用程序服务器为最终用户提供服务并执行所有重复�
 
 ### 安装应用程序服务器 {#installing-the-application-server}
 
-按照以下步骤从Adobe Campaign应用程序服务器安装独立实例以创建数据库（第12步）。 请参阅 [安装和配置（单台计算机）](#installing-and-configuring--single-machine-)。
+按照以下步骤从Adobe Campaign应用程序服务器安装独立实例以创建数据库（第12步）。 请参阅 [安装和配置（单台计算机）](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-)。
 
 由于计算机不是跟踪服务器，因此不要考虑与Web服务器的集成。
 
