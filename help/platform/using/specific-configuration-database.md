@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
+source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
 
 ---
 
@@ -165,10 +165,10 @@ source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
 
 1. 下载和安装ODBC驱动程序后，您需要重新启动Campaign Classic。 为此，请运行以下命令：
 
-     ```
-    /etc/init.d/nlserver6 stop
-    /etc/init.d/nlserver6 start
-     ```
+   ```
+   /etc/init.d/nlserver6 stop
+   /etc/init.d/nlserver6 start
+   ```
 
 1. 在Campaign Classic中，在Campaign Classic中配置Snowflake外部帐户。 从中 **[!UICONTROL Explorer]**&#x200B;展开菜 **[!UICONTROL Administration]** 单。
 
