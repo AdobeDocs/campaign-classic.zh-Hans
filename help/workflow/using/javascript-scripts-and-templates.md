@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 80b500653f5cfe216b32db045974b18d85838d9a
+source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
 
 ---
 
@@ -100,7 +100,7 @@ logInfo("Start date: " + task.creationDate)
 
 1. 添加和配置JavaScript代码活动以定义实例变量。
 
-   例如： `instance.vars.segmentpercent = 10;`
+   For example: `instance.vars.segmentpercent = 10;`
 
    ![](assets/js_ex1.png)
 
@@ -114,7 +114,9 @@ logInfo("Start date: " + task.creationDate)
 
 1. 在拆分活动的高级选项卡的初始化脚本部分中，定义JS条件。 JS条件选择从拆分活动中产生的第一个过渡的随机采样百分比，并将其更新为先前创建的实例变量设置的值。
 
-   ```activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;```
+   ```
+   activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;
+   ```
 
    ![](assets/js_ex3.png)
 
@@ -128,29 +130,29 @@ logInfo("Start date: " + task.creationDate)
 
 1. 从上一个示例中采用工作流，将 **JavaScript代码活动的脚本替换为以下脚本** :
 
-    ```
-    instance.vars.foo = "bar1"
-    vars.foo = "bar2"
-    task.vars.foo = "bar3"
-    ```
+   ```
+   instance.vars.foo = "bar1"
+   vars.foo = "bar2"
+   task.vars.foo = "bar3"
+   ```
 
 1. 将以下脚本添加到“结束”活动的初始 **化脚本** :
 
-    ```
-    logInfo("instance.vars.foo = " + instance.vars.foo)
-    logInfo("vars.foo = " + vars.foo)
-    logInfo("task.vars.foo = " + task.vars.foo)
-    ```
+   ```
+   logInfo("instance.vars.foo = " + instance.vars.foo)
+   logInfo("vars.foo = " + vars.foo)
+   logInfo("task.vars.foo = " + task.vars.foo)
+   ```
 
 1. 启动工作流，然后查看日志。
 
-    ```
-    Workflow finished
-    task.vars.foo = undefined
-    vars.foo = bar2
-    instance.vars.foo = bar1
-    Starting workflow (operator 'admin')
-    ```
+   ```
+   Workflow finished
+   task.vars.foo = undefined
+   vars.foo = bar2
+   instance.vars.foo = bar1
+   Starting workflow (operator 'admin')
+   ```
 
 此示例显示， **JavaScript Code** （代码）之后的活动访问实例变量和事件变量，但任务变量无法从外部访问(&#39;undefined&#39;)。
 
