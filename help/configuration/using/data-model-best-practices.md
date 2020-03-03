@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a8bfeaecc8a4832cac96f479ea1a0b11cd73c1e8
+source-git-commit: ad3aedeb18cfce809f959ccb62cb27928877c9d2
 
 ---
 
@@ -68,7 +68,7 @@ Adobe Campaign默认数据模型在此文档中 [显示](https://final-docs.camp
 
 如果不属于上述任何一种情况，您很可能不需要Adobe Campaign中的此属性。
 
-## 数据类型选择 {#data-types}
+### 数据类型选择 {#data-types}
 
 要确保系统的良好架构和性能，请按照以下最佳做法在Adobe Campaign中设置数据。
 
@@ -78,6 +78,28 @@ Adobe Campaign默认数据模型在此文档中 [显示](https://final-docs.camp
 * XML **类型** ，是避免创建过多字段的好方法。 但是，当它使用数据库中的CLOB列时，它也占用了磁盘空间。 它还可能导致复杂的SQL查询，并可能影响性能。
 * 字符串字段 **的长度** ，应始终用列进行定义。 默认情况下，Adobe Campaign中的最大长度为255，但如果您已经知道字段的大小不会超过较短的长度，Adobe建议将字段缩短。
 * 如果您确定源系统中的字段大小被高估且无法达到，则可以在Adobe Campaign中将字段缩短到源系统中的字段。 这可能意味着Adobe Campaign中的字符串更短或更小的整数。
+
+### 字段选择 {#choice-of-fields}
+
+如果字段具有定位或个性化目的，则需要将字段存储在表中。 换句话说，如果字段不用于发送个性化的电子邮件或用作查询中的标准，则占用磁盘空间，而它无用。
+
+对于混合型和内部部署型实例，FDA（Federated Data Access，允许访问外部数据的可选功能）涵盖在营销活动过程中“实时”添加字段的需要。 如果您有FDA，则无需导入所有产品。 有关此方面的详细信息，请参 [阅关于Federated Data Access](../../platform/using/about-fda.md)。
+
+### 选择键 {#choice-of-keys}
+
+除了大多数表 **中默认定义的autopk** ，您还应考虑添加一些逻辑或业务密钥（帐户号码、客户端号码等）。 以后可将它用于导入／对帐或数据包。 有关详细信息，请参 [阅标识符](#identifiers)。
+
+高效密钥对性能至关重要。 数字数据类型应始终作为表的键。
+
+对于SQLServer数据库，如果需要性能，可以考虑使用“clustered index”。 由于Adobe不处理此问题，您需要在SQL中创建它。
+
+### 专用表空间 {#dedicated-tablespaces}
+
+架构中的表空间属性允许您为表指定专用表空间。
+
+安装向导允许您按类型（数据、临时和索引）存储对象。
+
+专用表空间更适合于分区、安全规则，并允许流畅灵活的管理、更好的优化和性能。
 
 ## 标识符 {#identifiers}
 
@@ -201,6 +223,8 @@ Adobe Campaign既不是数据仓库也不是报表工具。 因此，为确保Ad
 * 在Adobe Campaign外的数据仓库中导出数据。
 * 生成汇总值，这些值在满足您的营销实践需求的同时占用较少的空间。 例如，您无需在Adobe Campaign中拥有完整的客户交易历史记录即可跟踪上次购买。
 
+您可以在架构中声明“deleteStatus”属性。 将记录标记为已删除，然后延迟清除任务中的删除会更有效。
+
 ## 性能 {#performance}
 
 为了确保在任何时间获得更好的性能，请遵循以下最佳实践。
@@ -222,9 +246,11 @@ Adobe Campaign既不是数据仓库也不是报表工具。 因此，为确保Ad
 * 将所有基本字段放在一个表中是件好事，因为这使用户更容易构建查询。 有时，如果可以避免连接，则跨表复制某些字段也会有好的性能。
 * 某些内置功能将不能引用一对多关系，例如“优惠加权公式”和“交付”。
 
-### 大表 {#large-tables}
+## 大表 {#large-tables}
 
-以下是使用大表和复杂连接设计数据模型时应遵循的一些最佳实践。
+Adobe Campaign依赖第三方数据库引擎。 根据提供者的不同，为较大的表优化性能可能需要特定的设计。
+
+以下是使用大表和复杂连接设计数据模型时应遵循的一些常见最佳做法。
 
 * 使用其他自定义收件人表时，请确保每个传送映射都有一个专用的日志表。
 * 减少列数，特别是通过识别未使用的列数。
@@ -232,4 +258,36 @@ Adobe Campaign既不是数据仓库也不是报表工具。 因此，为确保Ad
 * 对于连接键，请始终使用数字数据而不是字符串。
 * 尽可能减少日志保留深度。 如果需要更深入的历史记录，您可以聚合计算和／或处理自定义日志表以存储更大的历史记录。
 
-有关如何为较大的卷优化数据库设计的更多详细信息，请参阅 [Campaign Classic数据模型最佳实践](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html)。
+### 表的大小 {#size-of-tables}
+
+表大小是记录数和每个记录的列数的组合。 两者都会影响查询的性能。
+
+* 小 **型表与** “交付”表类似。
+* 中 **等大小的表** ，与“收件人”表的大小相同。 每位客户只有一个记录。
+* 大 **型表与** “广泛”日志表类似。 每个客户都有许多记录。
+例如，如果您的数据库包含1000万个收件人，则“广泛”日志表包含约1亿到2亿条消息，而“交付”表包含几千条记录。
+
+在PostgreSQL上，行不应超过8KB以避免 [TOAST](https://wiki.postgresql.org/wiki/TOAST) 机制。 因此，尽量减少列数和每行的大小以保持系统（内存和CPU）的最佳性能。
+
+行数也会影响性能。 Adobe Campaign数据库并非用于存储未用于定位或个性化目的的历史数据——这是一个运营数据库。
+
+要防止与高行数相关的任何性能问题，请仅在数据库中保留必要的记录。 任何其他记录应导出到第三方数据仓库并从Adobe Campaign操作数据库中删除。
+
+以下是有关表大小的一些最佳实践：
+
+* 设计字段更少、数字数据更多的大表。
+* 请勿使用大数字列类型(例如：int64)存储小数字（如布尔值）。
+* 从表定义中删除未使用的列。
+* 请勿将历史数据或非活动数据保留在Adobe Campaign数据库中（导出和清除）。
+
+以下是一个示例：
+
+![](assets/transaction-table-example.png)
+
+在本例中：
+* “事 *务处理* ”和“事 *务处理项* ”表很大：1000多万。
+* 产 *品表**和商店* 表较小：不到一万。
+* 产品标签和引用已放在产品 *表中* 。
+* “事 *务处理项* ”(Transaction Item *)表仅包含指向“产品”(* Product)表的链接，该表为数字表。
+
+<!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->
