@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 230ff1a8453cf512b7da828cdcdd49edca59331c
+source-git-commit: 7082ff9c8ce18f12734831bc4f00c9a1b71376b3
 
 ---
 
@@ -25,6 +25,10 @@ source-git-commit: 230ff1a8453cf512b7da828cdcdd49edca59331c
 本页列出了Adobe Campaign Classic每个版本的所有新增功能和文档更新。
 
 您还可以参阅 [Adobe Campaign Classic发行说明](../../rn/using/latest-release.md)。
+
+## 2020年3月 {#march-2020}
+
+数据模型最佳实践页面已更新，其中包括序列、性 [能](../../configuration/using/data-model-best-practices.md#sequences)[、](../../configuration/using/data-model-best-practices.md#performance) 大表等新部分 [](../../configuration/using/data-model-best-practices.md#large-tables)。 [阅读更多](../../configuration/using/data-model-best-practices.md)
 
 ## 2020年2月 {#february-2020}
 
