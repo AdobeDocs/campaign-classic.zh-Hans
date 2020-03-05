@@ -33,7 +33,7 @@ source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
    <td><img src="assets/red3.png"/><strong>已弃用</strong></td> 
   </tr> 
    <tr> 
-   <td>提供最新的稳定版本。 构建在生产中验证的内容。<br> </td>
+   <td>提供最新的稳定版本。 构建在生产中经过验证的内容。<br> </td>
    <td>由Adobe验证的构建。 等待生产校样。<br> </td>
    <td>可用于错误修复的更新版本。 需要更新。<br> </td>
    <td>包含已知的回归。 更新是必需的。<br> </td>
