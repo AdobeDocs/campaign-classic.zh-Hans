@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 410fd89cd030ac3d4644e6aa025ed5f03adb788f
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
@@ -33,26 +33,26 @@ source-git-commit: 410fd89cd030ac3d4644e6aa025ed5f03adb788f
    <td><img src="assets/red3.png"/><strong>已弃用</strong></td> 
   </tr> 
    <tr> 
-   <td>提供最新的稳定版本。 <br>构建在生产中经过验证的内容。 </td>
-   <td>由Adobe验证的构建。 <br>等待生产校样。 </td>
-   <td>可用于错误修复的更新版本。 <br>需要更新。 </td>
-   <td>包含已知的回归。 <br>更新是必需的。 </td>
+   <td>提供最新的稳定版本。 构建在生产中验证的内容。<br> </td>
+   <td>由Adobe验证的构建。 等待生产校样。<br> </td>
+   <td>可用于错误修复的更新版本。 需要更新。<br> </td>
+   <td>包含已知的回归。 更新是必需的。<br> </td>
   </tr> 
  </tbody> 
 </table>
 
-单 [击此处](../../rn/using/release--19-1.md#release-19-1-4-build-9032) ，查看上 **一个稳定版本** (GA)。
+最 **后一个稳定版本** 为9032(205c981c3)。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue-2.png) 版本19.2.3 —— 内部版本9081 {#release-19-2-3-build-9081}
+## ![](assets/blue_2.png) 版本19.2.3 —— 内部版本9081 {#release-19-2-3-build-9081}
 
 _2020年2月7日_
 
 **改进**
 
 * 修复了由于实施SSL认证而导致用户连接在Windows服务器上失败的回归问题。 (NEO-20629)
-* 修复了在“关于”菜单中显示错误版本标签 **号的问** 题。
+* 修复了在“关于”菜单中显示错误版本标 **签编号** 的问题。
 
-## ![](assets/orange-2.png) 版本19.2 —— 内部版本9080 {#release-19-2-build-9080}
+## ![](assets/orange_2.png) 版本19.2 —— 内部版本9080 {#release-19-2-build-9080}
 
 _2019年12月2日_
 
@@ -134,7 +134,7 @@ _2019年12月2日_
 * 已添 [加新的系列活](../../installation/using/configuring-campaign-options.md) 动选项：
    * 使用 **WdbcKillSessionPolicy** (WdbcKillSessionPolicy **)配置选项可以影响所有工作流和PostgreSQL数据库查询的“无条件停止** ”行为。
    * 使用 **NmsOperation_DeliveryPreparationWindow** 选项可以定义超过天数，在天数内，状态不一致的提交将从正在运行的提交计数中排除。
-   * 使用 **WdbcOptions_TempDbName** 选项可以为Microsoft SQL server上的工作表配置单独的数据库。 这将优化备份和复制。 [阅读更多](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
+   * 使用 **WdbcOptions_TempDbName** 选项可以为Microsoft SQL Server上的工作表配置单独的数据库。 这将优化备份和复制。 [阅读更多](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
    * PostgreSQL **的XtkCleanup_NoStats** 选项已得到增强，可更好地控制数据库清理工作流的存储优化步骤的行为。 [阅读更多](../../production/using/database-cleanup-workflow.md#statistics-update)
 * 帐户锁定机制已添加到 **logon()** API。 它可防止在指定时间范围内连续多次登录尝试失败后再进行任何登录尝试。
 * 交付属 **性中新增的“最大个性化运行时间** ”选项允许您为个性化运行时间定义超时时间段，以防止个性化阶段运行过长。 [阅读更多](../../delivery/using/personalization-fields.md#timing-out-personalization)
@@ -144,7 +144,7 @@ _2019年12月2日_
 
 _已弃用的系统_
 
-Campaign Classic实施现在不 [推荐使用](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) 以下系统：
+Campaign Classic实施现已弃 [用以下系](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) 统：
 * Apache 2.2
 * Centos 6
 
@@ -160,7 +160,7 @@ iOS SDK的内部版本1.0.26现已推出。 在此新版本中，我们添加了
 * 修复了一个问题，该问题可能导致某些消息无法由中间采购服务器处理。 (NEO-12395)
 * 修复了在Teradata中使用查询条带选项时数据库清理工作流中的一个问题。 (NEO-12399)
 * 修复了影响包括ne.jp域的排版规则的交付分析的问题。 (NEO-12609)
-* 修复了与TLS更新上的SMS相关的问题，该问题暗示存在更严格的证书策略。 这些更新可能导致在发生过期证书时，营销和中部采购服务器之间发生连接故障。 (NEO-17698)
+* 修复了与TLS更新上的SMS相关的问题，该问题暗示证书策略更严格。 这些更新可能导致在发生过期证书时，营销和中部采购服务器之间发生连接故障。 (NEO-17698)
 * 修复了在具有Vault身份验证 **的中间资源环境中对外部帐户使用** “测试连接”按钮时的问题。 (NEO-12722)
 * 修复了在FDA Hadoop连接中使用日期函数的查询的问题。 (NEO-12847)
 * 修复了在电子邮件编辑器中替换图像时的问题。 (NEO-13098)
