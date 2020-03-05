@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 44d8ba19f2e79d30229239312e6a5148d247fb28
 
 ---
 
 
 # 关于营销活动类型{#about-campaign-typologies}
 
-营销活动优化是Adobe Campaign模块，可让您控制、过滤和监控分发的发送。 为了避免营销活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。
+营销活动优化是Adobe Campaign模块，可让您控制、过滤和监控分发的发送。 为了避免营销活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这保证发送的消息满足客户和公司通信策略的需求和期望。
 
 >[!NOTE]
 >
