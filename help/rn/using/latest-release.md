@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d94ded3b87244a7cd51a15c1ebe409c9fdfcd843
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
@@ -31,17 +31,17 @@ source-git-commit: d94ded3b87244a7cd51a15c1ebe409c9fdfcd843
    <td><img src="assets/red3.png"/><strong>已弃用</strong></td> 
   </tr> 
    <tr> 
-   <td>提供最新的稳定版本。 <br>构建在生产中经过验证的内容。 </td>
-   <td>由Adobe验证的构建。 <br>等待生产校样。 </td>
-   <td>可用于错误修复的更新版本。 <br>需要更新。 </td>
-   <td>包含已知的回归。 <br>更新是必需的。 </td>
+   <td>提供最新的稳定版本。 构建在生产中经过验证的内容。<br> </td>
+   <td>由Adobe验证的构建。 等待生产校样。<br> </td>
+   <td>可用于错误修复的更新版本。 需要更新。<br> </td>
+   <td>包含已知的回归。 更新是必需的。<br> </td>
   </tr> 
  </tbody> 
 </table>
 
-单 [击此处](../../rn/using/release--19-1.md#release-19-1-4-build-9032) ，查看上 **一个稳定版本** (GA)。
+最 **后一个稳定版本** 为9032(205c981c3)。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue-2.png) 版本20.1 —— 内部版本9122 {#release-20-1-build-XXXX}
+## ![](assets/blue_2.png) 版本20.1 —— 内部版本9122 {#release-20-1-build-9122}
 
 _2020年2月17日_
 
@@ -109,7 +109,7 @@ _2020年2月17日_
 
 * 在Linux上，nlserver服务启动现在使用系统单元而不是/etc/init.d/nlserver6脚本。 在安装20.1包时，会自动执行到新启动方案的迁移。 /etc/init.d/nlserver6仍然提供，但是为了与nlserver服务（启动、重新启动、停止等）进行交互，建议您直接使用systemctl命令。
 
-* 最耗用的自定义表已从 **xtkNewId序列移至专用序列** 。 [阅读更多](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* 最耗用的自定义表已从 **xtkNewId序列移到专用序列** 。 [阅读更多](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * 改进了查询性能，这些性能可能会受到不必要的数据库连接的影响。
 
@@ -181,7 +181,7 @@ _2020年2月17日_
 
 * 修复了上传目录是远程共享位置时无法将数据上传到公共资源的问题。 (NEO-19361)
 
-* 修复了导致从Adobe Experience cloud技 **术工作流程导入受众时常失败的问题** 。 (NEO-18463)
+* 修复了导致从Adobe Experience Cloud技 **术工作流程导入受众时常失败的问题** 。 (NEO-18463)
 
 * 修复了使用从Experience Manager导入的模板时无法发送提交的问题。 (NEO-17540)
 
@@ -203,7 +203,7 @@ _2020年2月17日_
 
 * 当分发存在关联配置问题时，现在会显示错误。
 
-* 修复了在“关于”菜单中显示错误版本标签 **号的问** 题。
+* 修复了在“关于”菜单中显示错误版本标 **签编号** 的问题。
 
 * 修复了在工作流中尝试从重复交付的属性更新路由选择帐户时出现的问题。 (NEO-18684)
 
