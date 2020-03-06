@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
 
 ---
 
@@ -37,17 +37,13 @@ source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
 
 ## 在 Campaign 中能轻松导入现有的 HTML 以制作电子邮件吗? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
-了解如何导入现有HTML以在Adobe Campaign中一键创建和发送电子邮件。
+了解如何导入现有HTML，以便在Adobe Campaign中一键创建和发送电子邮件。
 
 [单击此处了解更多信息](../../delivery/using/defining-the-email-content.md#message-content)。
 
 ## How to use Campaign DCE to create an email content? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
 [使用 Campaign 数字内容编辑器设计电子邮件](../../web/using/use-case--creating-an-email-delivery.md)：通过一个示例了解如何使用 Campaign DCE 设计电子邮件。
-
-## How can I add a barcode in an email? {#how-can-i-add-a-barcode-in-an-email-}
-
-了解如何在个性化电子邮件中轻松[添加条形码](../../delivery/using/inserting-a-barcode-in-an-email.md)。
 
 ## How can I create a subscription-based newsletter in Campaign? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 
