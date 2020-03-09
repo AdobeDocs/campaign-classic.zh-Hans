@@ -291,7 +291,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [故障排除](integrations/using/troubleshooting.md)
       + [导入和导出受众](integrations/using/importing-and-exporting-audiences.md)
    + 资产共享 {#asset-sharing}
-      + [与Adobe Experience cloud共享资产](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [与Adobe Experience Cloud共享资产](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
       + [配置对资产的访问](integrations/using/configuring-access-to-assets.md)
       + [插入共享资源](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
@@ -436,7 +436,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [线路渠道](workflow/using/line-channel.md)
       + [营销资源(MRM)](workflow/using/marketing-resources--mrm-.md)
       + [社交营销](workflow/using/social-marketing.md)
-      + [与Adobe Experience cloud解决方案集成](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
+      + [与Adobe Experience Cloud解决方案集成](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
       + [隐私数据保护规定](workflow/using/general-data-protection-regulation--gdpr-.md)
       + [转移至中间采购](workflow/using/transfer-to-mid-sourcing.md)
       + [中部采购平台](workflow/using/mid-sourcing-platform.md)
