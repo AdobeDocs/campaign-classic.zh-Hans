@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
+source-git-commit: defbe3793be531eeb5c7aab913607ff094a624c7
 
 ---
 
@@ -40,6 +40,10 @@ source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 </table>
 
 最 **后一个稳定版本** 为9032(205c981c3)。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+
+## 版本20.1.2 —— 内部版本9123 {#release-20-1-2-build-9123}
+
+* 修复了阻止在Red Hat 7服务器上部署版本的问题。 (NEO-23332)
 
 ## ![](assets/blue_2.png) 版本20.1 —— 内部版本9122 {#release-20-1-build-9122}
 
