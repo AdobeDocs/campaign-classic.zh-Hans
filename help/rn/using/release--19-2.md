@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
+source-git-commit: 1d08730421c598873e272f305a819e3fb4509d90
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
    <td><img src="assets/red3.png"/><strong>已弃用</strong></td> 
   </tr> 
    <tr> 
-   <td>提供最新的稳定版本。 构建在生产中验证的内容。<br> </td>
+   <td>提供最新的稳定版本。 构建在生产中经过验证的内容。<br> </td>
    <td>由Adobe验证的构建。 等待生产校样。<br> </td>
    <td>可用于错误修复的更新版本。 需要更新。<br> </td>
    <td>包含已知的回归。 更新是必需的。<br> </td>
@@ -43,14 +43,14 @@ source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 最 **后一个稳定版本** 为9032(205c981c3)。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue_2.png) 版本19.2.3 —— 内部版本9081 {#release-19-2-3-build-9081}
+## ![](assets/orange_2.png) 版本19.2.3 —— 内部版本9081 {#release-19-2-3-build-9081}
 
 _2020年2月7日_
 
 **改进**
 
 * 修复了由于实施SSL认证而导致用户连接在Windows服务器上失败的回归问题。 (NEO-20629)
-* 修复了在“关于”菜单中显示错误版本标 **签编号** 的问题。
+* 修复了在“关于”菜单中显示错误版本标签 **号的问** 题。
 
 ## ![](assets/orange_2.png) 版本19.2 —— 内部版本9080 {#release-19-2-build-9080}
 
@@ -144,7 +144,7 @@ _2019年12月2日_
 
 _已弃用的系统_
 
-Campaign Classic实施现已弃 [用以下系](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) 统：
+Campaign Classic实施现在不 [推荐使用](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) 以下系统：
 * Apache 2.2
 * Centos 6
 
