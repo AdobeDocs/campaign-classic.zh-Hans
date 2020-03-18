@@ -15,16 +15,16 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c57fb0f2d9867b5ea96185c1984e0b1baeb056a
+source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ---
 
 
 # 活动说明{#event-description}
 
-## 关于事务消息传递数据模型 {#about-transactional-messaging-datamodel}
+## 关于交易消息传递数据模型 {#about-transactional-messaging-datamodel}
 
-交易消息传递依赖于Campaign数据模型，并使用两个额外的单独表。 这些表( **NmsRtEvent** 和 **NmsBatchEvent**)包含相同的字段，允许您管理实时事件和批处理事件。
+交易消息传递依赖于Adobe Campaign数据模型，并使用另外两个单独的表。 这 [些表](../../configuration/using/data-model-description.md#message-center-module)( **NmsRtEvent** 和 **NmsBatchEvent**)包含相同的字段，允许您管理实时事件和批处理事件。
 
 ## SOAP方法 {#soap-methods}
 
