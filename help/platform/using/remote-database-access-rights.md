@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2758b5e81d1720a4f01a610e51c4a33995d88d1
+source-git-commit: ae44e38e9d05478e8ebfacb1e063cdfd5d7ff30c
 
 ---
 
@@ -52,4 +52,4 @@ source-git-commit: d2758b5e81d1720a4f01a610e51c4a33995d88d1
 
 >[!NOTE]
 >
->数据库管理员需要使这些权限与每个数据库引擎的特定权限相匹配。 有关详细信息，请参阅 [RDBMS特定权限](https://docs.campaign.adobe.com/doc/AC6.1/en/technicalResources/technicalResources.html)。
+>数据库管理员需要使这些权限与每个数据库引擎的特定权限相匹配。 有关详细信息，请参阅 [RDBMS特定权限](https://docs.adobe.com/content/help/en/campaign-classic/using/assets/fda_rdbms_rights.pdf)。
