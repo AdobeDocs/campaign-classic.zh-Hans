@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c2c53041d8a19a491b8ec4da12a8a0ced25cf9a
+source-git-commit: ceb5b2fdcd0dfca28412534ed3417367026f71d0
 
 ---
 
@@ -31,7 +31,6 @@ source-git-commit: 1c2c53041d8a19a491b8ec4da12a8a0ced25cf9a
 要处理事务性消息传递事件，必须应用以下步骤：
 
 1. 活动集合、
-1. 在将活动扩充传输到消息模板之前（如果您获得了可用于Campaign事务消息模块的扩充选项）,
 1. 将活动传输到消息模板，
 1. 通过个性化数据丰富活动内容，
 1. 交付执行、
