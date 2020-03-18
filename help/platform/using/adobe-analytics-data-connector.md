@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: becdffadaaaa40359b61a6ad786b9fd8ebecc6e9
 
 ---
 
@@ -63,12 +63,16 @@ Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Analyt
 
    ![](assets/adobe_genesis_install_001.png)
 
-1. 从Experience cloud解决方案列表中，选择 **[!UICONTROL Analytics]**。
+1. 从Experience Cloud解决方案列表中，选择 **[!UICONTROL Analytics]**。
 
    ![](assets/adobe_genesis_install_013.png)
 
 1. 从选项卡 **[!UICONTROL Admin]** 中，选择 **[!UICONTROL Data Connectors]**。
 
+   您需要具有以下分析工具权限才能访问 **[!UICONTROL Data Connectors]** 菜单。 For more on this, refer to this [page](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
+   * 集成（创建）
+   * 集成（更新）
+   * 集成（删除）
    ![](assets/adobe_genesis_install_002.png)
 
 1. 从合作伙伴列表中，选择 **[!UICONTROL Neolane - Enterprise Marketing Platform]**。
@@ -82,11 +86,12 @@ Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Analyt
 
    ![](assets/adobe_genesis_install_015.png)
 
-1. 输入将代表连接器接收通知的电子邮件地址，然后复制其在外部Adobe Campaign帐户中显示的状态(有关详细信息，请参阅 **[!UICONTROL Account ID]**[&#x200B;步骤2:在Campaign中创建外部帐户](#step-2--create-the-external-account-in-campaign))。
+1. 输入将代表连接器接收通知的电子邮件地址，然后复制该电子邮件在外部Adobe Campaign帐户中的显示 **[!UICONTROL Account ID]** 情况(有关详细信息，请参阅 [步骤2:在Campaign中创建外部帐户](#step-2--create-the-external-account-in-campaign))。
 
    ![](assets/adobe_genesis_install_005.png)
 
 1. 指定测量电子邮件营销活动影响所需的标识符，即内部营销活动名称(cid)和iNmsBroadlog(bid)表ID。 您还应指定要收集活动的指示器。
+确保您的类 **[!UICONTROL Events]** 型为“数字”，否则它们不会显示在下拉菜单中。
 
    ![](assets/adobe_genesis_install_006.png)
 
@@ -231,7 +236,7 @@ Adobe Campaign和Adobe Analytics之间的数据交换——数据连接器由作
 
 ## 在Adobe Campaign中跟踪分发 {#tracking-deliveries-in-adobe-campaign}
 
-为了使Adobe Experience cloud能够在Adobe Campaign发送交付后跟踪站点上的活动，您需要在交付属性中引用匹配连接器。 为此，请应用以下步骤：
+为了使Adobe Experience Cloud能够在Adobe Campaign发送交付后跟踪站点上的活动，您需要在交付属性中引用匹配连接器。 为此，请应用以下步骤：
 
 1. 打开要跟踪的营销活动的交付。
 
