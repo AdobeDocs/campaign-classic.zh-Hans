@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad3aedeb18cfce809f959ccb62cb27928877c9d2
+source-git-commit: 1336bf7ab9cce7f2ffe7d4ffa5e119851e946885
 
 ---
 
@@ -34,7 +34,7 @@ Adobe Campaign系统极其灵活，可扩展至初始实施之外。 但是，�
 
 ## 数据模型架构 {#data-model-architecture}
 
-Adobe Campaign standard是一款功能强大的跨渠道营销活动管理系统，可帮助您整合线上和线下策略，创造个性化的客户体验。
+Adobe Campaign Standard是一款功能强大的跨渠道营销活动管理系统，可帮助您整合线上和线下策略，创造个性化的客户体验。
 
 ### 以客户为中心的方法 {#customer-centric-approach}
 
@@ -46,11 +46,11 @@ Adobe Campaign standard是一款功能强大的跨渠道营销活动管理系统
 
 要访问每个表的说明，请转到 **[!UICONTROL Admin > Configuration > Data schemas]**，从列表中选择一个资源，然后单击选 **[!UICONTROL Documentation]** 项卡。
 
-Adobe Campaign默认数据模型在此文档中 [显示](https://final-docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html)。
+Adobe Campaign默认数据模型在此文档中 [显示](../../configuration/using/data-model-description.md)。
 
 >[!NOTE]
 >
->Adobe Campaign Classic允许构建自定义客户表。 但是，在大多数情况下，建议使用标准的“收件人 [表”](../../configuration/using/default-recipient-table.md) ，该表已预建了其他表和功能。
+>Adobe Campaign Classic允许构建自定义客户表。 但是，在大多数情况下，建议使用标准的“收件人 [表”](../../configuration/using/about-data-model.md#default-recipient-table) ，该表已预建了其他表和功能。
 
 ### Adobe Campaign的数据 {#data-for-campaign}
 
@@ -73,7 +73,7 @@ Adobe Campaign默认数据模型在此文档中 [显示](https://final-docs.camp
 要确保系统的良好架构和性能，请按照以下最佳做法在Adobe Campaign中设置数据。
 
 * 大表应大部分包含数字字段并包含引用表的链接（在使用值列表时）。
-* expr **属性** 允许将架构属性定义为计算字段，而不是表中的物理集值。 这可以访问不同格式（例如年龄和出生日期）的信息，而无需存储这两个值。 这是避免重复字段的好方法。 例如，“收件人”表使用域的表达式，该表达式已在电子邮件字段中显示。
+* expr **属性** 允许将架构属性定义为计算字段，而不是表中的物理集值。 这可以访问不同格式（例如，年龄和出生日期）的信息，而无需存储这两个值。 这是避免重复字段的好方法。 例如，“收件人”表使用域的表达式，该表达式已在电子邮件字段中显示。
 * 但是，当表达式计算复杂时，建议不要使用 **expr** 属性，因为即时计算可能会影响查询的性能。
 * XML **类型** ，是避免创建过多字段的好方法。 但是，当它使用数据库中的CLOB列时，它也占用了磁盘空间。 它还可能导致复杂的SQL查询，并可能影响性能。
 * 字符串字段 **的长度** ，应始终用列进行定义。 默认情况下，Adobe Campaign中的最大长度为255，但如果您已经知道字段的大小不会超过较短的长度，Adobe建议将字段缩短。
@@ -188,7 +188,7 @@ Adobe建议定义其他索引，因为这可能会提高性能。
 
 请勿以“id”作为后缀命名链接。 例如，将其命名为“transaction”而不是“transactionId”。
 
-默认情况下，Adobe Campaign将使用外部表的主键创建一个链接。 更清晰地说，最好在链接定义中显式定义连接。
+默认情况下，Adobe Campaign将使用外部表的主键创建链接。 更清晰地说，最好在链接定义中显式定义连接。
 
 索引将添加到链接中使用的属性。
 
