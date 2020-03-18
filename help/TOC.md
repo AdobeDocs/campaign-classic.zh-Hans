@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
+source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
 
 ---
 
@@ -645,9 +645,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 + 配置营销活动经典 {#configuring-campaign-classic}
    + 数据模型 {#data-model}
       + [关于数据模型](configuration/using/about-data-model.md)
-      + [使用默认的“收件人”表](configuration/using/default-recipient-table.md)
-      + [扩展数据模型](configuration/using/extending-data-model.md)
-      + [使用自定义收件人表](configuration/using/custom-recipient-table.md)
+      + [数据模型描述](configuration/using/data-model-description.md)
       + [最佳实践](configuration/using/data-model-best-practices.md)
    + 架构引用 {#schema-reference}
       + [关于架构引用](configuration/using/about-schema-reference.md)
