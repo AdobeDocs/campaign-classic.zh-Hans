@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 >
 >MTA优先处理事务性消息，而不是任何其他传送。
 
-在执行实例上，一旦浓缩阶段完成并且传送模板已链接到该事件，就发送传送。 所有分发都在文件夹中进 **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** 行分组。
+在执行实例上，一旦富集阶段完成并且传送模板已链接到该事件，则发送传送。 所有分发都在文件夹中进 **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** 行分组。
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
