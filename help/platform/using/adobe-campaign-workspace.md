@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 443c119593e9ba4c3cdf6a6d2ee742a0a17830c5
+source-git-commit: 14e67ca7f57d39e6939d6ff3479aa897674b18dc
 
 ---
 
@@ -60,8 +60,8 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 您可以在五种不同的语言之间进行选择：
 
+* 英语（英国）
 * 美式英语
-* 英式英语
 * 法语
 * 德语
 * 日语
