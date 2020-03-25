@@ -1,11 +1,11 @@
 ---
 keywords: Campaign Classic;home;popular topics
-seo-title: Adobe Campaign Classic产品文档
+seo-title: Adobe Campaign经典产品文档
 solution: Campaign Classic
-title: Adobe Campaign Classic产品文档
+title: Adobe Campaign经典产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
+source-git-commit: d674d8a0cabb72a8a344019de688ad7027cb3e8d
 
 ---
 
@@ -16,15 +16,13 @@ source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
 
 ## 新增功能
 
-* **[隐私管理](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/>了解Adobe Campaign如何帮助您遵守隐私权。
+* **[隐私管理](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/>了解Adobe Campaign如何帮助您遵守隐私。
 
-* **[跟踪指南](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/>了解Campaign中的跟踪功能
+* **[跟踪指南](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/>了解活动中的跟踪功能
 
-* **[维护指南](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)**<br/>了解如何监控Campaign实例和流程
+* **[维护指南](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)**<br/>了解如何监控活动实例和流程
 
 * **[使用AMP的交互式内](delivery/using/defining-interactive-content.md)**<br/>容了解如何使用新的[AMP for Email格式发送动态电](https://amp.dev/about/email/)子邮件
-
-* **[控制面板](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)**<br/>了解如何管理设置和跟踪Campaign实例的使用情况
 
 [单击此处以了解更多更新](/help/rn/using/documentation-updates.md)
 
@@ -41,7 +39,7 @@ source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
     常见 <strong>问题解答</strong></a>
     </div>
     <p>
-    <em>使用Campaign Classic时查找常见问题的解答</em>
+    <em>使用Campaign Classic时查找常见问题的答案</em>
     <p>
   </td>
    <td>
@@ -71,15 +69,13 @@ source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
 </tr>
 </table>
 
-
 ## 其他资源
 
-* [发行说明](/help/rn/using/latest-release.md)
-
-* [操作说明视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)
-
-* [兼容性矩阵](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
-
-* [实施指南](https://helpx.adobe.com/campaign/kb/acc-implementation.html)
-
-* [技术说明](https://helpx.adobe.com/campaign/kb/article-list.html)
+<table>
+<tr>
+  <td valign="top"><strong>有用页面</strong>* [发行说明](/help/rn/using/latest-release.md)* [操作方法视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)* [兼容性矩阵](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)* [Campaign Classic入门](../../platform/using/about-adobe-campaign-classic.md)* [黄金标准升级](https://helpx.adobe.com/campaign/kb/gold-standard.html)* [弃用和删除功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)* [控制面板文档](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+  </td>
+  <td valign="top"><strong>开发人员的资源</strong>* [列表错误消息](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)* [Campaign Classic数据模型](../../configuration/using/about-data-model.md)* [JSAPI文档](../../configuration/using/about-web-services.md)* [实施指南](https://helpx.adobe.com/campaign/kb/acc-implementation.html)* [跟踪指南](https://helpx.adobe.com/campaign/kb/acc-tracking.html)* [安全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html)* [技术说明](https://helpx.adobe.com/campaign/kb/article-list.html)
+  </td>
+</tr>
+</table>
