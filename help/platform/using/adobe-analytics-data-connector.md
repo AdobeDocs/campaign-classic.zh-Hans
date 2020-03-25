@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: becdffadaaaa40359b61a6ad786b9fd8ebecc6e9
+source-git-commit: cda7ae757a6de0e8cd6227faa2b731e9f392791b
 
 ---
 
@@ -28,22 +28,22 @@ source-git-commit: becdffadaaaa40359b61a6ad786b9fd8ebecc6e9
 >
 >Adobe Analytics Data Connector与Transactional Messaging(Message Center)不兼容。
 
-Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Analytics通过 **Web Analytics连接器包进行交互** 。 它以区段形式将数据转发到Adobe Campaign，这些区段涉及电子邮件营销活动之后的用户行为。 相反，它会将Adobe Campaign提供的电子邮件营销活动的指标和属性发送到Adobe Analytics - Data connector。
+Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Analytics通过 **Web Analytics连接器包进行交互** 。 它以区段形式将数据转发给Adobe Campaign，这些区段涉及电子邮件活动后的用户行为。 相反，它通过Adobe Campaign将电子邮件活动的指标和属性发送到Adobe Analytics —— 数据连接器。
 
-使用数据连接器，Adobe Campaign可以衡量Internet受众（Web分析）。 借助这些集成，Adobe Campaign可以恢复营销活动后一个或多个站点的访客行为数据，并（分析后）运行再营销活动以将其转换为购买者。 相反，Web分析工具使Adobe Campaign能够将指标和营销活动属性转发到其平台。
+使用数据连接器，Adobe Campaign可以测量Internet受众（Web分析）。 借助这些集成，Adobe Campaign可以恢复营销活动后一个或多个站点的访客行为数据，并(分析后)与视图一起运行再营销活动以将其转换为购买者。 反之，Web分析工具使Adobe Campaign能够将指示器和活动属性转发到其平台。
 
-有关实施Adobe Analytics与Adobe Campaign集成的更多信息，请参阅本 [文档](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html)。
+有关Adobe Analytics与Adobe Campaign集成的实施的详细信息，请参阅本 [文档](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html)。
 
 每个工具的操作字段如下所示：
 
 * Web分析的角色：
 
-   1. 标记使用Adobe Campaign启动的电子邮件营销活动，
-   1. 以区段的形式保存收件人在单击营销活动电子邮件后浏览的站点上的行为。 区段涉及放弃的产品（已查看但未添加到购物车或购买）、购买或放弃购物车。
+   1. 标记用Adobe Campaign启动的电子邮件活动,
+   1. 以区段的形式保存收件人行为，这些行为是在单击活动电子邮件后浏览的站点上的。 区段涉及放弃的产品（已查看但未添加到购物车或购买）、购买或放弃购物车。
 
 * Adobe Campaign的角色：
 
-   1. 将指示器和营销活动属性发送到连接器，连接器将指示器和营销活动属性转发到网络分析工具，
+   1. 将指示器和活动属性发送到连接器，然后连接器将它们转发到Web分析工具，
    1. 恢复和分析细分，
    1. 触发再营销活动。
 
@@ -52,7 +52,7 @@ Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Analyt
 要设置数据连接器，必须连接到Adobe Campaign实例并执行以下操作：
 
 * [第1步：在Analytics中配置集成](#step-1--configure-integration-in-analytics)
-* [第2步：在Campaign中创建外部帐户](#step-2--create-the-external-account-in-campaign)
+* [第2步：创建活动外部帐户](#step-2--create-the-external-account-in-campaign)
 * [第3步：同步Adobe Campaign和Adobe Analytics](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
 
 ### 第1步：在Analytics中配置集成 {#step-1--configure-integration-in-analytics}
@@ -63,7 +63,7 @@ Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Analyt
 
    ![](assets/adobe_genesis_install_001.png)
 
-1. 从Experience Cloud解决方案列表中，选择 **[!UICONTROL Analytics]**。
+1. 从Experience Cloud解决方案的列表中，选择 **[!UICONTROL Analytics]**。
 
    ![](assets/adobe_genesis_install_013.png)
 
@@ -75,7 +75,7 @@ Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Analyt
    * 集成（删除）
    ![](assets/adobe_genesis_install_002.png)
 
-1. 从合作伙伴列表中，选择 **[!UICONTROL Neolane - Enterprise Marketing Platform]**。
+1. 从合作伙伴的列表中，选择 **[!UICONTROL Adobe Campaign Classic]**。
 
    ![](assets/adobe_genesis_install_014.png)
 
@@ -86,11 +86,11 @@ Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Analyt
 
    ![](assets/adobe_genesis_install_015.png)
 
-1. 输入将代表连接器接收通知的电子邮件地址，然后复制该电子邮件在外部Adobe Campaign帐户中的显示 **[!UICONTROL Account ID]** 情况(有关详细信息，请参阅 [步骤2:在Campaign中创建外部帐户](#step-2--create-the-external-account-in-campaign))。
+1. 输入将代表连接器接收通知的电子邮件地址，然后复制外部Adobe Campaign帐户中显示的通知(有关详细信息，请参阅 **[!UICONTROL Account ID]**[&#x200B;步骤2:创建活动外部帐户](#step-2--create-the-external-account-in-campaign))。
 
    ![](assets/adobe_genesis_install_005.png)
 
-1. 指定测量电子邮件营销活动影响所需的标识符，即内部营销活动名称(cid)和iNmsBroadlog(bid)表ID。 您还应指定要收集活动的指示器。
+1. 指定测量电子邮件活动影响所需的标识符，即内部活动名称(cid)和iNmsBroadlog(bid)表ID。 您还应指定要收集的事件的指示器。
 确保您的类 **[!UICONTROL Events]** 型为“数字”，否则它们不会显示在下拉菜单中。
 
    ![](assets/adobe_genesis_install_006.png)
@@ -103,7 +103,7 @@ Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Analyt
 
    ![](assets/adobe_genesis_install_009.png)
 
-1. 选择要在功能板中显示的信息。
+1. 选择要在仪表板中显示的信息。
 
    ![](assets/adobe_genesis_install_0112.png)
 
@@ -117,19 +117,19 @@ Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Analyt
 
    数据连接器现已配置。
 
-### 第2步：在Campaign中创建外部帐户 {#step-2--create-the-external-account-in-campaign}
+### 第2步：创建活动外部帐户 {#step-2--create-the-external-account-in-campaign}
 
 将Adobe Campaign集成到Analytics平台中是使用连接器进行的。 要同步应用程序，请应用以下过程：
 
-1. 在Adobe Campaign中 **安装Web Analytics Connectors** 包。
-1. 转到Adobe **[!UICONTROL Administration > Platform > External accounts]** Campaign树的文件夹。
-1. 右键单击外部帐户列表，在下拉 **[!UICONTROL New]** 菜单中进行选择(或单击外部帐户列 **[!UICONTROL New]** 表上方的按钮)。
+1. 在Adobe Campaign **中安装Web Analytics Connectors** 包。
+1. 转到Adobe Campaign **[!UICONTROL Administration > Platform > External accounts]** 树的文件夹。
+1. 右键单击外部帐户的列表，在下 **[!UICONTROL New]** 拉菜单中进行选择(或单击列表外部帐户 **[!UICONTROL New]** 上方的按钮)。
 1. 使用下拉列表选择类 **[!UICONTROL Web Analytics]** 型。
 1. 选择连接器的提供者，即 **[!UICONTROL Adobe Analytics - Data Connector]** 在此例中。
 
    ![](assets/webanalytics_ext_account_create_001.png)
 
-1. 单击链 **[!UICONTROL Enrich the formula...]** 接以更改URL计算公式，以指定Web分析工具集成信息（系列活动ID）和必须跟踪其活动的站点的域。
+1. 单击链 **[!UICONTROL Enrich the formula...]** 接以更改URL计算公式，以指定Web分析工具集成信息(活动ID)和必须跟踪其活动的站点的域。
 1. 指定站点的域名。
 
    ![](assets/webanalytics_tracking_001.png)
@@ -144,16 +144,16 @@ Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Analyt
 
    >[!CAUTION]
    >
-   >此配置模式为专家用户保留：此公式中的任何错误都可能导致电子邮件发送停止。
+   >此配置模式为专家用户保留：此公式中的任何错误都可能导致电子邮件投放停止。
 
 1. 通过 **[!UICONTROL Advanced]** 选项卡可以配置或修改更多技术设置。
 
-   * **[!UICONTROL Lifespan]**:允许您指定延迟（以天数_为单位），之后Adobe Campaign中的Web事件会通过技术工作流恢复。 默认：180天。
+   * **[!UICONTROL Lifespan]**:允许您指定延迟（以天数_为单位），之后Web事件将在Adobe Campaign中由技术工作流恢复。 默认：180天。
    * **[!UICONTROL Persistence]**:允许您将所有Web事件（例如购买）归因到再营销活动的期间，默认值：7天。
 
 >[!NOTE]
 >
->如果您使用多个受众评估工具，则可以在创 **[!UICONTROL Other]** 建外部 **[!UICONTROL Partners]** 帐户时在下拉列表中进行选择。 您只能在传送属性中引用一个外部帐户：因此，您需要通过添加Adobe和所有其他使用的测量工具所需的参数来调整跟踪URL的公式。
+>如果您使用多个受众测量工具，则可 **[!UICONTROL Other]** 以在创 **[!UICONTROL Partners]** 建外部帐户时在下拉列表中进行选择。 您只能在外部帐户属性中引用一个投放:因此，您需要通过添加Adobe和所有其他使用的测量工具所需的参数来调整跟踪URL的公式。
 
 ### 第3步：同步Adobe Campaign和Adobe Analytics {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
 
@@ -175,32 +175,32 @@ Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Analyt
 
    ![](assets/webanalytics_ext_account_setting_003.png)
 
-1. 按照“数据连接器向导”指南执行步骤，然后返回Adobe Campaign中的外部帐户。
-1. 单 **[!UICONTROL Next]** 击以便在Adobe Campaign和Adobe Analytics —— 数据连接器之间进行数据交换。
+1. 按照“数据连接器”向导的指南执行步骤，然后返回到Adobe Campaign中的外部帐户。
+1. 单 **[!UICONTROL Next]** 击以便在Adobe Campaign与Adobe Analytics —— 数据连接器之间进行数据交换。
 
    同步完成后，将显示区段列表。
 
    ![](assets/webanalytics_ext_account_setting_004.png)
 
-当Adobe Campaign与Adobe Analytics - Data connector之间的数据同步有效时，Adobe Campaign会恢复在Data Connector向导中定义的三个默认区段，并可在Adobe Campaign外部帐户的选项卡中访问这些区段。 **[!UICONTROL Segments]**
+当Adobe Campaign与Adobe Analytics —— 数据连接器之间的数据同步有效时，Adobe Campaign会恢复在数据连接器向导中定义的三个默认段，并可在Adobe Campaign外部帐户的选项卡中访问这些段。 **[!UICONTROL Segments]**
 
 ![](assets/webanalytics_segments.png)
 
-如果已在数据连接器向导中配置了其他区段，则可以将其添加到Adobe Campaign。 为此，请单击链接， **[!UICONTROL Update segment list]** 然后按照外部帐户向导中所述的步骤操作。 执行操作后，新区段将显示在列表中。
+如果已在数据连接器向导中配置了其他区段，则可以将其添加到Adobe Campaign。 要执行此操作，请单击链 **[!UICONTROL Update segment list]** 接，然后按照外部帐户向导中所述的步骤操作。 执行操作后，新区段将显示在列表中。
 
 ![](assets/webanalytics_segments_update.png)
 
-### Web分析流程的技术工作流程 {#technical-workflows-of-web-analytics-processes}
+### 技术工作流网络分析流程 {#technical-workflows-of-web-analytics-processes}
 
-Adobe Campaign和Adobe Analytics之间的数据交换——数据连接器由作为后台任务运行的四个技术工作流程处理。
+Adobe Campaign与Adobe Analytics之间的数据交换——数据连接器由四个技术工作流处理，它们作为后台任务运行。
 
-它们位于Adobe Campaign树中的文件夹下 **[!UICONTROL Administration > Production > Technical workflows > Web analytics process]** 。
+它们位于Adobe Campaign树中，位于文件夹下 **[!UICONTROL Administration > Production > Technical workflows > Web analytics process]** 。
 
 ![](assets/webanalytics_workflows.png)
 
-* **[!UICONTROL Recovering of web events]**:该工作流每小时会下载有关给定站点上用户行为的区段，并将其包含在Adobe Campaign数据库中，并启动再营销工作流。
-* **[!UICONTROL Event purge]**:此工作流允许您根据字段中配置的时间段从数据库中删除所有事 **[!UICONTROL Lifespan]** 件。 有关此方面的详细信息，请参 [阅步骤2:在Campaign中创建外部帐户](#step-2--create-the-external-account-in-campaign)。
-* **[!UICONTROL Identification of converted contacts]**:再营销活动后进行购买的访客的目录。 通过此工作流收集的数据可在报告 **[!UICONTROL Re-marketing efficiency]** 中访问，请参阅此 [页](#creating-a-re-marketing-campaign)。* **[!UICONTROL Sending of indicators and campaign attributes]**:允许您使用Adobe Analytics —— 数据连接器通过Adobe Campaign将电子邮件营销活动指示器发送到Adobe Experience Cloud。 此工作流每天凌晨4点触发，并且可能需要24小时才能将数据发送到Analytics。
+* **[!UICONTROL Recovering of web events]**:该工作流每小时会下载关于给定站点上用户行为的区段，将这些区段包括在Adobe Campaign数据库中，并开始再营销工作流。
+* **[!UICONTROL Event purge]**:此工作流允许您从数据库中删除所有事件，具体取决于字段中配置的时 **[!UICONTROL Lifespan]** 间段。 有关此方面的详细信息，请参 [阅步骤2:创建活动外部帐户](#step-2--create-the-external-account-in-campaign)。
+* **[!UICONTROL Identification of converted contacts]**:再营销访客后购买的活动目录。 通过此工作流收集的数据可在报告 **[!UICONTROL Re-marketing efficiency]** 中访问，请参阅此 [页](#creating-a-re-marketing-campaign)。* **[!UICONTROL Sending of indicators and campaign attributes]**:允许您使用Adobe Analytics —— 数据连接器通过Adobe Campaign将电子邮件活动指示器发送到Adobe Experience Cloud。 此工作流每天凌晨4点触发，并且可能需要24小时才能将数据发送到Analytics。
 
    请注意，此工作流不应重新启动，否则它将重新发送所有可能歪斜Analytics结果的先前数据。
 
@@ -224,50 +224,50 @@ Adobe Campaign和Adobe Analytics之间的数据交换——数据连接器由作
 
    * **[!UICONTROL Internal name]** (@internalName)
    * **[!UICONTROL Label]** (@label)
-   * **[!UICONTROL Label]** (operation/@label):仅在安装 **了Campaign** 包时
-   * **[!UICONTROL Nature]** (operation/@nature):仅在安装 **了Campaign** 包时
+   * **[!UICONTROL Label]** (operation/@label):仅在安装 **活动** 包时
+   * **[!UICONTROL Nature]** (operation/@nature):仅在安装 **活动** 包时
    * **[!UICONTROL Tag 1]** (webAnalytics/@tag1)
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
    * **[!UICONTROL Contact date]** (scheduling/@contactDate)
 
 
-* **转换的联系人标识**:再营销活动后进行购买的访客的目录。 通过此工作流收集的数据可在报 **[!UICONTROL Re-marketing efficiency]** 告中访问(请参阅 [此页](../../platform/using/adobe-analytics-data-connector.md#creating-a-re-marketing-campaign))。
+* **转换的联系人标识**:再营销访客后购买的活动目录。 通过此工作流收集的数据可在报 **[!UICONTROL Re-marketing efficiency]** 告中访问(请参阅 [此页](../../platform/using/adobe-analytics-data-connector.md#creating-a-re-marketing-campaign))。
 
-## 在Adobe Campaign中跟踪分发 {#tracking-deliveries-in-adobe-campaign}
+## 跟踪Adobe Campaign中的投放 {#tracking-deliveries-in-adobe-campaign}
 
-为了使Adobe Experience Cloud能够在Adobe Campaign发送交付后跟踪站点上的活动，您需要在交付属性中引用匹配连接器。 为此，请应用以下步骤：
+为了使Adobe Experience Cloud能够在Adobe Campaign发送投放后跟踪站点上的活动，您需要在投放属性中引用匹配连接器。 为此，请应用以下步骤：
 
-1. 打开要跟踪的营销活动的交付。
+1. 打开要跟踪的活动的投放。
 
    ![](assets/webanalytics_delivery_properties_003.png)
 
-1. 打开提交属性。
-1. 转到选项卡 **[!UICONTROL Web Analytics]** 并选择之前创建的外部帐户。 请参阅 [步骤2:在Campaign中创建外部帐户](#step-2--create-the-external-account-in-campaign))。
+1. 打开投放属性。
+1. 转到选项卡 **[!UICONTROL Web Analytics]** 并选择之前创建的外部帐户。 请参阅 [步骤2:创建活动外部帐户](#step-2--create-the-external-account-in-campaign))。
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
-1. 您现在可以在Adobe Analytics中发送交付并访问报告。
+1. 您现在可以发送投放并在Adobe Analytics中访问其报告。
 
 ## 创建再营销活动 {#creating-a-re-marketing-campaign}
 
-要准备再营销活动，只需创建用于再营销类型营销活动的交付模板。 然后配置再营销活动并将其关联到区段。 每个区段必须有不同的再营销活动。
+要准备再营销活动，只需创建用于再营销类型活动的投放模板。 然后配置再营销活动并将其关联到区段。 每个细分必须具有不同的再营销活动。
 
-在Adobe Campaign完成恢复细分后，重新营销活动会自动启动，这些细分分析初始营销活动所针对人群的行为。 如果放弃购物车或查看产品而不购买，则会向相关收件人发送交货，以便其浏览网站以购买结束。
+在Adobe Campaign完成恢复细分后，再营销活动会自动启动，这些细分分析最初活动所针对人群的行为。 如果放弃购物车或查看产品而未购买，则会向相关收件人发送投放，以便其浏览网站以购买结束。
 
-Adobe Campaign提供个性化的投放模板，您可以使用这些模板或将自己的数据库用于准备营销活动。
+Adobe Campaign提供个性化投放模板，您可以使用这些活动或在上建立数据库。
 
 1. 从中 **[!UICONTROL Explorer]**，转到Adobe Campaign **[!UICONTROL Resources > Templates > Delivery templates]** 树的文件夹。
-1. 复制 **[!UICONTROL Email delivery (re-marketing)]** Adobe Campaign提供的模板或再营销模板示例。
+1. 重复 **[!UICONTROL Email delivery (re-marketing)]** 模板或Adobe Campaign提供的再营销模板示例。
 1. 个性化模板以满足您的需求并保存它。
 
    ![](assets/webanalytics_delivery_model.png)
 
-1. 创建新营销活动，然后从 **[!UICONTROL Re-marketing campaign]** 下拉列表中选择模板。
+1. 创建新活动，然后从 **[!UICONTROL Re-marketing campaign]** 下拉列表中选择模板。
 
    ![](assets/webanalytics_remarketing_campaign_002.png)
 
-1. 单击链 **[!UICONTROL Configure...]** 接以指定链接到营销活动的区段和分发模板。
+1. 单击链 **[!UICONTROL Configure...]** 接以指定链接到活动的区段和投放模板。
 1. 选择之前配置的外部帐户。
 
    ![](assets/webanalytics_remarketing_campaign_003.png)
@@ -276,13 +276,13 @@ Adobe Campaign提供个性化的投放模板，您可以使用这些模板或将
 
    ![](assets/webanalytics_remarketing_campaign_005.png)
 
-1. 选择要用于此再营销活动的分发模板，然后单击以 **[!UICONTROL Finish]** 关闭窗口。
+1. 选择要用于此再营销活动的投放模板，然后单击 **[!UICONTROL Finish]** 以关闭窗口。
 
    ![](assets/webanalytics_remarketing_campaign_006.png)
 
-1. 单击 **[!UICONTROL OK]** 以关闭营销活动窗口。
+1. 单击 **[!UICONTROL OK]** 以关闭活动窗口。
 
-通 **[!UICONTROL Re-marketing efficiency]** 过全局报告页面访问报告。 它允许您查看与Adobe Campaign再营销活动后放弃的购物车数量相关的已转换联系人数（即已购买商品）。 转化率是每周、每月或自Adobe Campaign和Web分析工具开始同步以来计算的。
+通 **[!UICONTROL Re-marketing efficiency]** 过全局报告页面访问报告。 它允许您视图与Adobe Campaign再营销活动后放弃的购物车数量相关的转换联系人数（即已购买商品）。 转化率是按周、月或自Adobe Campaign与Web分析工具之间的同步开始计算的。
 
 ![](assets/webanalytics_reporting.png)
 
