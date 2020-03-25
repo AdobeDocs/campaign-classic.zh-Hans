@@ -1,7 +1,7 @@
 ---
-title: 配置Campaign服务器
-seo-title: 配置Campaign服务器
-description: 配置Campaign服务器
+title: 配置活动服务器
+seo-title: 配置活动服务器
+description: 配置活动服务器
 seo-description: null
 page-status-flag: never-activated
 uuid: be21ae4b-ca2a-4952-b256-cd8dc51309cf
@@ -15,16 +15,20 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
+source-git-commit: 7db84fc951234cb6257d8e41615ba7fc5b2c6f77
 
 ---
 
 
-# 配置Campaign服务器{#configuring-campaign-server}
+# 配置活动服务器{#configuring-campaign-server}
 
-下面的部分详细介绍了可以根据您的需求和环境特殊性执行的服务器端配置。
+下节详细介绍了可根据您的需求和环境特性执行的服务器端配置。
 
-这些配置必须由管理员执行，并且仅 **适用于预置** 托管模型。 对于 **托管部署** ，服务器端设置只能由Adobe配置。 但是，可以在控制面板中设置一些设置（例如，IP白名单或URL权限）。
+>[!IMPORTANT]
+>
+>这些配置必须由管理员执行，并且仅 **适用于预置** 托管模型。
+>
+>对于 **托管部署** ，服务器端设置只能由Adobe配置。 但是，可以在控制面板中设置一些设置（例如，IP白名单或URL权限）。
 
 有关详细信息，请参阅以下各节：
 
@@ -33,7 +37,7 @@ source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
 * [Campaign Classic内部部署和托管功能矩阵](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
 * [混合型号和托管型号配置步骤](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_About_hybrid_and_hosted_models.html)
 
-Campaign Classic配置文件存储在Adobe Campaign安 **装文件夹** 的conf文件夹中。 配置分布在两个文件上：
+Campaign Classic配置文件存储在 **Adobe Campaign安装文件夹的** conf文件夹中。 配置分布在两个文件上：
 
 * **serverConf.xml**:所有实例的常规配置。 此文件结合了Adobe Campaign服务器的技术参数：这些属性由所有实例共享。 下面详细介绍了其中一些参数。 本节中列出的不同节点和 [参数](../../installation/using/the-server-configuration-file.md)。
 * **config-`<instance>`.xml** (其中 **instance是实例的名称** ):实例的特定配置。 如果在多个实例之间共享服务器，请在其相关文件中输入每个实例的特定参数。
@@ -44,7 +48,7 @@ Campaign Classic配置文件存储在Adobe Campaign安 **装文件夹** 的conf�
 
 每个运营商都需要链接到一个区域才能登录到一个实例，而运营商IP必须包含在安全区域中定义的地址或地址集中。 安全区配置在Adobe Campaign服务器的配置文件中执行。
 
-操作符从控制台（节点）中的配置文件链接到安全 **[!UICONTROL Administration > Access management > Operators]** 区域。 本节将了解如何将区域链接到营销活 [动操作员](#linking-a-security-zone-to-an-operator)。
+操作符从控制台（节点）中的用户档案链接到安全 **[!UICONTROL Administration > Access management > Operators]** 区域。 在本节中了解如何将区域链接到活动 [运算符](#linking-a-security-zone-to-an-operator)。
 
 ### 创建安全区域 {#creating-security-zones}
 
@@ -61,7 +65,7 @@ Campaign Classic配置文件存储在Adobe Campaign安 **装文件夹** 的conf�
 
 * HTTP连接而不是HTTPS
 * 错误显示（Java错误、JavaScript、C++等）
-* 报告和WebApp预览
+* 报告和webApp预览
 * 通过登录名／密码进行身份验证
 * 非安全连接模式
 
@@ -74,7 +78,7 @@ Campaign Classic配置文件存储在Adobe Campaign安 **装文件夹** 的conf�
 
 >[!NOTE]
 >
->**开箱即用的配置是安全的**。 但是，在从Adobe Campaign的早期版本迁移之前，可能需要临时降低安全性以迁移和批准新规则。
+>**开箱即用的配置是安全的**。 但是，在从较早版本的Adobe Campaign迁移之前，可能需要临时降低安全性以迁移和批准新规则。
 
 如何在serverConf.xml文件中定义 **区域的示例** :
 
@@ -109,11 +113,11 @@ Campaign Classic配置文件存储在Adobe Campaign安 **装文件夹** 的conf�
 * **sessionTokenOnly**:连接URL中不需要安全令牌
 * **showErrors**:转发并显示服务器端的错误
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >在区域定义中，每个具有 **true** 值的属性都会降低安全性。
 
-使用消息中心时，如果存在多个执行实例，则需要创建一个额外的安全区域，其 **sessionTokenOnly** 属性定义为 **true**，其中只需添加必要的IP地址。 有关配置实例的详细信息，请参阅 [本文档](../../message-center/using/creating-a-shared-connection.md)。
+使用消息中心时，如果有多个执行实例，您需要创建一个额外的安全区，其 **sessionTokenOnly** 属性定义为 **true**，其中只需添加必要的IP地址。 有关配置实例的详细信息，请参阅 [此文档](../../message-center/using/creating-a-shared-connection.md)。
 
 ### 安全区的最佳实践 {#best-practices-for-security-zones}
 
@@ -153,17 +157,17 @@ Campaign Classic配置文件存储在Adobe Campaign安 **装文件夹** 的conf�
 
 当引用代理并通过此代理进入连接时（通过HTTP X-Forwarded-For头可见），验证区域是代理客户端的区域，而不是代理客户端的区域。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果配置了代理并且可以覆盖它（或者如果不存在），则将测试的IP地址将能够被篡改。
 >
->此外，中继现在也像代理一样生成。 因此，您可以将IP地址127.0.0.1添加到安全区配置中的代理列表中。
+>此外，中继现在也像代理一样生成。 因此，您可以将IP地址127.0.0.1添加到安全区配置中的代理列表。
 >
->例如：“ `<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`”。
+>For example: &quot; `<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`&quot;.
 
 可能会出现各种情况：
 
-* 子网络在安全区中直接引用，并且未配置代理：子网络的用户可以直接连接到Adobe Campaign服务器。
+* 子网络在安全区中直接引用，并且未配置代理：子网用户可以直接连接到Adobe Campaign服务器。
 
    ![](assets/8101_proxy1.png)
 
@@ -171,11 +175,11 @@ Campaign Classic配置文件存储在Adobe Campaign安 **装文件夹** 的conf�
 
    ![](assets/8101_proxy2.png)
 
-* 代理包含在安全区子网络中：通过此代理访问权限的用户，无论其来源如何，都可以访问Adobe Campaign服务器。
+* 代理包含在安全区子网络中：通过此代理具有访问权限的用户，无论其来源如何，都可以访问Adobe Campaign服务器。
 
    ![](assets/8101_proxy3.png)
 
-可能访问Adobe Campaign服务器的代理的IP地址必须在相关网络和一级 **`<subnetwork>`** 子网络中输入 **`<subnetwork name="all"/>`**。 例如，此处用于IP地址为10.131.146.102的代理：
+可能访问Adobe Campaign服务器的代理的IP地址必须在相关网络和一级子网 **`<subnetwork>`** 络中输入 **`<subnetwork name="all"/>`**。 例如，此处用于IP地址为10.131.146.102的代理：
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -202,14 +206,14 @@ Campaign Classic配置文件存储在Adobe Campaign安 **装文件夹** 的conf�
 
 定义区域后，必须将每个操作员链接到其中一个，以便能够登录到实例，并且该操作员的IP地址必须包含在区域中引用的地址或地址范围中。
 
-区域的技术配置在Campaign server的配置文件中执行： **serverConf.xml**。
+区域的技术配置在活动服务器的配置文件中进行： **serverConf.xml**。
 
-在此之前，您必须首先配置现成的枚举，以将标签链接到 **[!UICONTROL Security zone]** serverConf.xml文件中定义的区域的 **内部名称** 。
+在此之前，您必须通过配置现成开始来明细列表标签，以将标签链接到 **[!UICONTROL Security zone]** serverConf.xml文件中定义的区域的内部名称 **** 。
 
-此配置在营销活动浏览器中完成：
+此配置在活动资源管理器中完成：
 
 1. 单击节 **[!UICONTROL Administration > Platform > Enumerations]** 点。
-1. 选择系 **[!UICONTROL Security zone (securityZone)]** 统枚举。
+1. 选择系 **[!UICONTROL Security zone (securityZone)]** 统明细列表。
 
    ![](assets/enum_securityzone.png)
 
@@ -220,7 +224,7 @@ Campaign Classic配置文件存储在Adobe Campaign安 **装文件夹** 的conf�
 
 1. 单击确定并保存修改。
 
-定义区域并配置枚 **[!UICONTROL Security zone]** 举后，您需要将每个操作符链接到安全区域：
+定义区域并配置明细列表后， **[!UICONTROL Security zone]** 您需要将每个操作符链接到安全区域：
 
 1. 单击节 **[!UICONTROL Administration > Access management > Operators]** 点。
 1. 选择要将安全区域链接到的操作员，然后单击选 **[!UICONTROL Edit]** 项卡。
@@ -228,7 +232,7 @@ Campaign Classic配置文件存储在Adobe Campaign安 **装文件夹** 的conf�
 
    ![](assets/zone_operator.png)
 
-1. 从下拉列表中选择 **[!UICONTROL Authorized connection zone]** 一个区域
+1. 从下拉列表中 **[!UICONTROL Authorized connection zone]** 选择区域
 
    ![](assets/zone_operator_selection.png)
 
@@ -251,7 +255,7 @@ Campaign Classic配置文件存储在Adobe Campaign安 **装文件夹** 的conf�
 
 ### 在Tomcat中映射文件夹 {#mapping-a-folder-in-tomcat}
 
-要定义客户特定的设置，可以在 **/tomcat-7/conf文件夹中创建** user_contexts.xml **文件，该文件中还包含** contexts.xml **** 文件。
+要定义客户特定的设置，可以在 **/tomcat-7/conf文件夹中创建** user_上下文.xml **文件，该文件夹还包含** 上下文.xml **** 文件。
 
 此文件将包含以下类型的信息：
 
@@ -261,11 +265,11 @@ Campaign Classic配置文件存储在Adobe Campaign安 **装文件夹** 的conf�
 
 如果需要，可以在服务器端重现此操作。
 
-## 个性化交付参数 {#personalizing-delivery-parameters}
+## 个性化投放参数 {#personalizing-delivery-parameters}
 
-交付参数在serverConf.xml配 **置文件中定义** 。 serverConf.xml中可用的所 **有参数都列在本节** 中 [](../../installation/using/the-server-configuration-file.md)。
+投放参数在serverConf.xml配 **置文件中定义** 。 serverConf.xml中可用的所 **有参数都列在本节** 中 [](../../installation/using/the-server-configuration-file.md)。
 
-常规服务器配置和命令在 [Campaign服务器配置中有详细介绍](../../installation/using/campaign-server-configuration.md)。
+常规服务器配置和命令在活动服务器配 [置中有详细说明](../../installation/using/campaign-server-configuration.md)。
 
 您还可以根据需要和设置执行以下配置。
 
@@ -273,7 +277,7 @@ Campaign Classic配置文件存储在Adobe Campaign安 **装文件夹** 的conf�
 
 MTA模块用作SMTP广播（端口25）的本机邮件传输代理。
 
-但是，如果您的安全策略需要中继服务器来替换它，这是可能的。 在这种情况下，全局吞吐量将是中继吞吐量（前提是中继服务器吞吐量低于Adobe Campaign 1）。
+但是，如果您的安全策略需要中继服务器来替换它，这是可能的。 在这种情况下，全局吞吐量将是中继吞吐量(前提是中继服务器吞吐量低于Adobe Campaign吞吐量)。
 
 在这种情况下，通过在部分中配置SMTP服务器来设置这些参 **`<relay>`** 数。 必须指定用于传输邮件的SMTP服务器的IP地址（或主机）及其关联端口（默认为25）。
 
@@ -281,9 +285,9 @@ MTA模块用作SMTP广播（端口25）的本机邮件传输代理。
 <relay address="192.0.0.3" port="25"/>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->这种操作模式对传送的限制很严重，因为由于中继服务器的固有性能（延迟、带宽……），它可以大大降低吞吐量。 此外，限定同步交付错误（通过分析SMTP流量检测到）的容量将受到限制，如果中继服务器不可用，则发送将不可能。
+>此操作模式对投放的限制很严重，因为由于中继服务器的固有性能（延迟、带宽……），它可以大大降低吞吐量。 此外，限定同步投放错误（通过分析SMTP流量检测到）的容量将受到限制，如果中继服务器不可用，则发送将不可能。
 
 ### MTA子进程 {#mta-child-processes}
 
@@ -295,19 +299,19 @@ MTA模块用作SMTP广播（端口25）的本机邮件传输代理。
 
 另请参阅电子 [邮件发送优化](../../installation/using/email-deliverability.md#email-sending-optimization)。
 
-### 管理具有相关性的出站SMTP流量 {#managing-outbound-smtp-traffic-with-affinities}
+### 使用关联管理出站SMTP流量 {#managing-outbound-smtp-traffic-with-affinities}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->从一台服务器到另一台服务器的关联配置需要一致。 我们建议您与Adobe联系进行亲和配置，因为应在运行MTA的所有应用程序服务器上复制配置更改。
+>关联配置需要从一台服务器到另一台服务器的一致性。 我们建议您与Adobe联系以进行关联配置，因为应在运行MTA的所有应用程序服务器上复制配置更改。
 
-您可以通过IP地址的相似性来改进出站SMTP流量。
+您可以通过具有IP地址的关联改善出站SMTP流量。
 
 为此，请应用以下步骤：
 
-1. 在serverConf.xml文 **`<ipaffinity>`** 件的一 **节中输入相似性** 。
+1. 在serverConf.xml文 **`<ipaffinity>`** 件的一 **节中输入关联** 。
 
-   **一个关联可以有多个不同的名称：分离，使用**;字符。
+   一个关联可以有多个不同的名称：分离，使用 **;** 字符。
 
    例如：
 
@@ -316,29 +320,29 @@ MTA模块用作SMTP广播（端口25）的本机邮件传输代理。
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   要查看相关参数，请参阅 **serverConf.xml文件** 。
+   要视图相关参数，请参阅 **serverConf.xml文件** 。
 
-1. 要在下拉列表中启用关联选择，您需要在 **IPAffinity枚举中添加关联名称** 。
+1. 要在下拉关联中启用明细列表选择，您需要在 **IPAfinity列表中添加关联名称** 。
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >本文档详细介绍了 [这些枚举](../../platform/using/managing-enumerations.md)。
+   >明细列表详见 [本文档](../../platform/using/managing-enumerations.md)。
 
-   然后，您可以选择要使用的亲和力，如下面所示的类型：
+   然后，您可以选择要使用的关联，如下面所示的类型：
 
    ![](assets/ipaffinity_typology.png)
 
    >[!NOTE]
    >
-   >您还可以参考交 [付服务器配置](../../installation/using/email-deliverability.md#delivery-server-configuration)。
+   >您还可以参考 [投放服务器配置](../../installation/using/email-deliverability.md#delivery-server-configuration)。
 
 ## URL权限 {#url-permissions}
 
-可由JavaScript代码（工作流等）调用的URL的默认列表活动经典实例的限制。 这些URL允许实例正常工作。
+可由JavaScript代码调用的URL的默认列表(工作流等)Campaign Classic实例有限。 这些URL允许实例正常工作。
 
-默认情况下，实例不允许连接到外部URL。 但是，可以将一些外部URL添加到授权URL列表，这样您的实例就可以连接到它们。 这允许您将Campaign实例连接到外部系统（例如，SFTP服务器或网站），以启用文件和／或数据传输。
+默认情况下，实例不允许连接到外部URL。 但是，可以向授权URL的列表添加一些外部URL，这样您的实例就可以连接到它们。 这允许您将活动实例连接到外部系统（例如，SFTP服务器或网站），以便启用文件和／或数据传输。
 
 添加URL后，该URL将在实例的配置文件(serverConf.xml)中引用。
 
@@ -363,17 +367,17 @@ MTA模块用作SMTP广播（端口25）的本机邮件传输代理。
 </urlPermission>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >默认情况下，新客户的客户端使用阻 **止模式**。 如果他们需要允许新的URL，则应联系其管理员以将其列入白名单。
 >
->来自迁移的现有客户可以在一段时间 **内使用警** 告模式。 同时，他们需要在授权URL之前分析出站流量。 定义授权URL列表后，他们应联系其管理员以将URL列入白名单并激活阻 **止模式**。
+>来自迁移的现有客户可以在一段时间 **内使用警** 告模式。 同时，他们需要在授权URL之前分析出站流量。 定义授权URL的列表后，他们应联系其管理员以将URL列入白名单并激活阻 **止模式**。
 
 ## 动态页面安全性和中继 {#dynamic-page-security-and-relays}
 
-默认情况下，所有动态页都自动与启动 **Web模块的计算机的本地** Tomcat服务器相关。 此配置在 **`<url>`** ServerConf.xml文件的查询中继配置 **的一节中** 输入。 serverConf.xml中可用的所 **有参数都列在本节** 中 [](../../installation/using/the-server-configuration-file.md)。
+默认情况下，所有动态页都自动与启动 **Web模块的计算机的本地** Tomcat服务器相关。 此配置在 **`<url>`** ServerConf.xml文件的查询中继配置部分中输入 **** 。 serverConf.xml中可用的所 **有参数都列在本节** 中 [](../../installation/using/the-server-configuration-file.md)。
 
-在远程服务器上中继动态页的执 **行** ;如果计算机上未激活Web模块。 为此，必须将 **localhost** 替换为JSP和JSSP、Web应用程序、报告和字符串的远程计算机的名称。
+在远程服务器上中继动态页的执 **行** ;如果计算机上未激活Web模块。 为此，必须将 **localhost** 替换为JSP和JSSP、Web 应用程序、报告和字符串的远程计算机的名称。
 
 有关各种可用参数的详细信息，请参 **阅serverConf.xml配置文件** 。
 
@@ -386,7 +390,7 @@ MTA模块用作SMTP广播（端口25）的本机邮件传输代理。
 Adobe Campaign使用以下JSP页：
 
 * /nl/jsp/**soaprouter.jsp**:客户端控制台和Web服务连接(SOAP API),
-* /nl/jsp/**m.jsp**:镜像页面，
+* /nl/jsp/**m.jsp**:镜像页面,
 * /nl/jsp/**logon.jsp**:通过Web访问报告和客户端控制台的部署，
 * /nl/jsp/**s.jsp** :使用病毒式营销（赞助和社交网络）。
 
@@ -397,7 +401,7 @@ Adobe Campaign使用以下JSP页：
 
 **例如：**
 
-可以防止从外部连接客户端机器。 为此，只需限制 **soaprouter.jsp的执行** ，并仅授权执行镜像页面、病毒式链接、Web表单和公共资源。
+可以防止从外部连接客户端机器。 为此，只需限制 **soapruter.jsp的执行** ，并仅授权执行镜像页面、病毒式链接、Web表单和公共资源。
 
 参数如下：
 
@@ -415,7 +419,7 @@ Adobe Campaign使用以下JSP页：
 <url IPMask=""               deny="true" hostMask="" relayHost="false" relayPath="false" targetUrl="http://localhost:8080" timeout="" urlPath="*.jssp"/>
 ```
 
-在此示例中，该值 **`<IP_addresses>`** 与授权使用此掩码的中继模块的IP地址列表（以命令分隔）一致。
+在此示例中，该值 **`<IP_addresses>`** 与授权使用此掩码的中继模块的IP地址的列表（用命令分隔）一致。
 
 >[!NOTE]
 >
@@ -427,9 +431,9 @@ Adobe Campaign使用以下JSP页：
 >
 >仅内部部署安装需要以下配置。
 
-从构建8780开始，技术管理员可以限制可在Adobe Campaign中使用的授权外部命令列表。
+从构建8780开始，技术管理员可以限制列表可用于Adobe Campaign的授权外部命令。
 
-为此，您需要创建一个文本文件，其中包含您要阻止使用的命令列表，例如：
+为此，您需要创建一个文本文件，其中列表了您希望禁止使用的命令，例如：
 
 ```
 ln
@@ -444,9 +448,9 @@ ruby
 sh
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->此列表并非详尽无遗。
+>此列表并非完全。
 
 在服务 **器配置文件** exec节点中，您需要引用blacklistFile属性中先前创建的 **文件** 。
 
@@ -464,9 +468,9 @@ sh
 </serverConf>
 ```
 
-此用户需要添加到“Adobe Campaign”运营商的用户列表。
+此用户需要添加到“neolane”Adobe Campaign运算符的用户列表。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >您不应使用自定义sudo。 系统上需要安装标准Sudo。
 
@@ -475,7 +479,7 @@ sh
 默认情况下，不会中继所有HTTP头。 您可以在中继发送的回复中添加特定的标题。 操作步骤：
 
 1. 转到 **serverConf.xml文件** 。 serverConf.xml中可用的所 **有参数都列在本节** 中 [](../../installation/using/the-server-configuration-file.md)。
-1. 在节 **`<relay>`** 点中，转到中继的HTTP头列表。
+1. 在节 **`<relay>`** 点中，转到中继HTTP头的列表。
 1. 添加具 **`<responseheader>`** 有以下属性的元素：
 
    * **name**:标题名称
@@ -488,7 +492,7 @@ sh
 
 ## 冗余跟踪 {#redundant-tracking}
 
-当多台服务器用于重定向时，它们必须能够通过SOAP调用相互通信，以共享来自要重定向的URL的信息。 在交付启动时，可能并非所有重定向服务器都可用；因此他们可能没有同等级别的信息。
+当多台服务器用于重定向时，它们必须能够通过SOAP调用相互通信，以共享来自要重定向的URL的信息。 在投放开始时，可能并非所有重定向服务器都可用；因此他们可能没有同等级别的信息。
 
 >[!NOTE]
 >
@@ -509,13 +513,13 @@ enableIf **** 属性为可选属性（默认情况下为空），并且仅当结
 
 ## 管理公共资源 {#managing-public-resources}
 
-公共资源在管理公共 [资源中显示](../../installation/using/deploying-an-instance.md#managing-public-resources)。
+公共资源显示在管理 [公共资源中](../../installation/using/deploying-an-instance.md#managing-public-resources)。
 
-它们存储在Adobe Campaign **安装目录的** /var/res/instance目录中。
+它们存储在Adobe Campaign安 **装目录的/var/res/instance** 目录中。
 
 匹配的URL为： **http://server/res/instance** ，其 **中instance** 是跟踪实例的名称。
 
-可以通过向 **conf-`<instance>`** .xml文件添加节点来指定另一个目录，以配置服务器上的存储。 这意味着添加以下行：
+可以通过向 **conf-`<instance>`** .xml文件添加节点来指定另一个目录，以在服务器上配置存储。 这意味着添加以下行：
 
 ```
 <serverconf>
@@ -528,27 +532,27 @@ enableIf **** 属性为可选属性（默认情况下为空），并且仅当结
 </serverconf>
 ```
 
-在这种情况下，部署向导窗口上半部分提供的公共资源的新URL应指向此文件夹。
+在这种情况下，部署向导窗口上半部分中给定的公共资源的新URL应指向此文件夹。
 
-## 高可用性工作流程和亲和度 {#high-availability-workflows-and-affinities}
+## 高可用性工作流和关联 {#high-availability-workflows-and-affinities}
 
-您可以配置多个工作流服务器(wfserver)，并将它们分发到两台或多台计算机上。 如果选择此类架构，请根据Adobe Campaign访问权限配置负载平衡器的连接模式。
+您可以配置多个工作流服务器(wfserver)，并将它们分发到两台或多台计算机上。 如果选择此类型的架构，请根据Adobe Campaign访问配置负载平衡器的连接模式。
 
 要从Web访问，请选择负载平衡 **器模式** ，以限制连接时间。
 
-如果通过Adobe Campaign控制台访问，请选择 **哈希** 或 **粘滞ip模式** 。 这允许您维护富客户端与服务器之间的连接，并防止用户会话在导入或导出操作期间中断。
+如果通过Adobe Campaign控制台访问，请选择 **哈希** 或 **粘性ip** 模式。 这允许您维护富客户端与服务器之间的连接，并防止用户会话在导入或导出操作期间中断。
 
-您可以选择强制在特定计算机上执行工作流或工作流活动。 为此，您必须为相关工作流或活动定义一个或多个相关性。
+您可以选择强制在特定计算机上执行工作流或工作流活动。 为此，您必须为相关工作流或关联定义一个或多个活动。
 
-1. 通过在字段中输入工作流或活动的相关性来创建它们的 **[!UICONTROL Affinity]** 相关性。
+1. 通过在字段中输入工作流或活动的关联，创建这些 **[!UICONTROL Affinity]** 。
 
-   您可以随意选择亲和度名称。 但是，请确保不使用空格或标点符号。 如果使用不同的服务器，请指定不同的名称。
+   您可以自由选择关联名称。 但是，请确保不使用空格或标点符号。 如果使用不同的服务器，请指定不同的名称。
 
    ![](assets/s_ncs_install_server_wf_affinity01.png)
 
    ![](assets/s_ncs_install_server_wf_affinity02.png)
 
-   下拉列表包含以前使用的相关性。 它会随着时间推移而使用不同的输入值完成。
+   下拉列表包含以前使用的关联。 它会随着时间推移而使用不同的输入值完成。
 
 1. 打开 **nl6/conf/config-`<instance>.xml`**文件。
 1. 修改与模块匹配的 **[!UICONTROL wfserver]** 行，如下所示：
@@ -557,15 +561,15 @@ enableIf **** 属性为可选属性（默认情况下为空），并且仅当结
    <wfserver autoStart="true" affinity="XXX,"/>
    ```
 
-   如果定义多个相似性，则必须用逗号分隔，不带空格：
+   如果定义多个关联，则必须用逗号分隔，不带空格：
 
    ```
    <wfserver autoStart="true" affinity="XXX,YYY,"/>
    ```
 
-   在执行未定义关联的工作流时，必须使用关联名称后面的逗号。
+   执行未定义关联的工作流时，必须在关联名称后添加逗号。
 
-   如果您希望仅执行定义了关联的工作流，请不要在关联列表的末尾添加逗号。 例如，按如下方式修改行：
+   如果您希望仅执行定义了工作流的关联，请不要在关联的列表末尾添加逗号。 例如，按如下方式修改行：
 
    ```
    <wfserver autoStart="true" affinity="XXX"/>
@@ -581,7 +585,7 @@ enableIf **** 属性为可选属性（默认情况下为空），并且仅当结
 
 在此文件中配置的每个进程都有一个 **processRestartTime** 属性。 您可以修改此属性的值，以根据您的需求调整每个进程的重新启动时间。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >请勿删除此属性。 必须每天重新启动所有进程。
 
@@ -593,17 +597,17 @@ enableIf **** 属性为可选属性（默认情况下为空），并且仅当结
 
 此属性的默认值是 **。+** ，并且它允许您上传任何文件类型。
 
-要限制可能的格式，必须用有效的java正则表达式替换属性值。 您可以通过用逗号分隔多个值来输入它们。
+要限制可能的格式，必须用有效的java常规表达式替换属性值。 您可以通过用逗号分隔多个值来输入它们。
 
 例如： **uploadWhiteList=&quot;。*.png,.*.jpg&quot;** ，允许您在服务器上上传PNG和JPG格式。 不接受其他格式。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->在Internet explorer中，完整的文件路径必须由正则表达式验证。
+>在Internet Explorer中，完整的文件路径必须由常规表达式验证。
 
 ## 代理连接配置 {#proxy-connection-configuration}
 
-如果需要通过代理（例如使用文件传输工作流活动）将Campaign服务器连接到外部，则需要通过命令配置serverConf的proxyConfig部分。 可以使用以下代理连接：HTTP、HTTPS、FTP、SFTP。 serverConf.xml中可用的所 **有参数都列在本节** 中 [](../../installation/using/the-server-configuration-file.md)。
+如果需要通过代理(例如使用文件传输工作流活动)将活动服务器连接到外部，则需要通过命令配置serverConf的proxyConfig部分。 可以使用以下代理连接：HTTP、HTTPS、FTP、SFTP。 serverConf.xml中可用的所 **有参数都列在本节** 中 [](../../installation/using/the-server-configuration-file.md)。
 
 >[!NOTE]
 >
