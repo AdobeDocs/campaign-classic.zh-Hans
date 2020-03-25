@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 443c119593e9ba4c3cdf6a6d2ee742a0a17830c5
 
 ---
 
@@ -52,6 +52,22 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 ![](assets/operation_from_web.png)
 
+### 语言 {#languages}
+
+安装Adobe Campaign经典实例时会选择该语言，之后将无法更改该语言。 有关如何创建实例的详细信息，请参阅本 [页](../../installation/using/creating-an-instance-and-logging-on.md)。
+
+![](assets/language.png)
+
+您可以在五种不同的语言之间进行选择：
+
+* 美式英语
+* 英式英语
+* 法语
+* 德语
+* 日语
+
+您为Adobe Campaign经典实例选择的语言可能会影响日期和时间格式。 For more on this, refer to this [section](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+
 ## 导览基本功能 {#navigation-basics}
 
 ### 浏览页面 {#browsing-pages}
@@ -82,7 +98,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 通过每个核心功能部分可以浏览各种可用的元素。要执行此操作，可使用 **[!UICONTROL Browsing]** 部分中的快捷方式。**[!UICONTROL Other choices]** 链接可用于访问其他所有页面，无论工作环境如何。
 
-您可以创建新元素（分发、Web应用程序、工作流等）使用屏幕左 **[!UICONTROL Create]** 侧部分中的快捷键。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
+您可以创建新元素(投放、Web 应用程序、工作流等)使用屏幕左 **[!UICONTROL Create]** 侧部分中的快捷键。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
 
 例如，在投放页面上，使用 **[!UICONTROL Create]** 按钮创建新的投放。
 
@@ -164,7 +180,7 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 
 在列表中添加列有两种方法。
 
-您可以从记录的详细信息快速将列添加到列表。 操作步骤：
+您可以从记录的详细信息快速向列表添加列。 操作步骤：
 
 1. 在详细信息屏幕中，右键单击要在列中显示的字段。
 1. Select **[!UICONTROL Add in the list]**.
@@ -289,7 +305,7 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 
 此外也可以配置排序或组合排序标准。为此请执行以下操作步骤：
 
-1. **[!UICONTROL Configure list]** 列表右侧。
+1. **[!UICONTROL Configure list]** 在列表的右边。
 
    ![](assets/s_ncs_user_configure_list.png)
 
