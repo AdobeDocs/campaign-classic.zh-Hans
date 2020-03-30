@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Adobe Campaign经典产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: d674d8a0cabb72a8a344019de688ad7027cb3e8d
+source-git-commit: 234fffd42829a37a705a9472fe23053c8b8ab03d
 
 ---
 
@@ -71,11 +71,12 @@ source-git-commit: d674d8a0cabb72a8a344019de688ad7027cb3e8d
 
 ## 其他资源
 
-<table>
-<tr>
-  <td valign="top"><strong>有用页面</strong>* [发行说明](/help/rn/using/latest-release.md)* [操作方法视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)* [兼容性矩阵](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)* [Campaign Classic入门](../../platform/using/about-adobe-campaign-classic.md)* [黄金标准升级](https://helpx.adobe.com/campaign/kb/gold-standard.html)* [弃用和删除功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)* [控制面板文档](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
-  </td>
-  <td valign="top"><strong>开发人员的资源</strong>* [列表错误消息](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)* [Campaign Classic数据模型](../../configuration/using/about-data-model.md)* [JSAPI文档](../../configuration/using/about-web-services.md)* [实施指南](https://helpx.adobe.com/campaign/kb/acc-implementation.html)* [跟踪指南](https://helpx.adobe.com/campaign/kb/acc-tracking.html)* [安全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html)* [技术说明](https://helpx.adobe.com/campaign/kb/article-list.html)
-  </td>
-</tr>
-</table>
+| 有用页面 | 面向开发人员的资源 |
+|---|---|
+| [发行说明](/help/rn/using/latest-release.md) | [列表错误消息](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
+| [操作说明视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Campaign Classic数据模型](configuration/using/about-data-model.md) |
+| [兼容性矩阵](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI文档](configuration/using/about-web-services.md) |
+| [Campaign Classic入门](platform/using/about-adobe-campaign-classic.md) | [实施指南](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
+| [黄金标准版升级](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [跟踪指南](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
+| [已弃用和已删除的功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [安全性和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html) |
+| [控制面板文档](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) | [技术说明](https://helpx.adobe.com/campaign/kb/article-list.html) |
