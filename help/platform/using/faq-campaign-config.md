@@ -1,5 +1,5 @@
 ---
-title: 营销活动设置常见问题解答
+title: 活动设置常见问题解答
 seo-title: 如何配置 Campaign
 description: Campaign Classic常见问题解答
 page-status-flag: never-activated
@@ -14,12 +14,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+source-git-commit: c5a9823b2feb6e2f721a2ad15dc08c1abe672054
 
 ---
 
 
-# 营销活动设置常见问题解答 {#settings-faq}
+# 活动设置常见问题解答 {#settings-faq}
 
 了解根据您的需求设置 Campaign 实例的主要配置工作。
 
@@ -51,7 +51,7 @@ Adobe Campaign 目前提供英语、法语、德语和日语共 4 种语言的�
 
 ## How can I implement content approval? {#how-can-i-implement-content-approval-}
 
-通过Campaign，您可以在协作模式下为营销活动的主要步骤设置批准流程。 对于每个营销活动，您都可以批准分发目标、内容和成本。 负责批准工作的 Adobe Campaign 操作员收到电子邮件通知后，可通过控制台或 Web 连接批准或拒绝批准相关请求。
+活动允许您以协作模式为营销活动的主要步骤设置审批流程。 对于每个活动，您可以批准投放目标、内容和成本。 负责批准工作的 Adobe Campaign 操作员收到电子邮件通知后，可通过控制台或 Web 连接批准或拒绝批准相关请求。
 
 [单击此处了解更多信息](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)，并了解如何在 Campaign 中实施投放内容的批准工作。
 
@@ -78,3 +78,35 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 通过这些连接器，可快速轻松地集成数据：Adobe Campaign 提供专用的向导，让您从 CRM 中提供的表中收集和选择数据。并且可确保双向同步处理，让整个系统中的数据随时保持最新。
 
 请参阅[配置 CRM 连接器](../../platform/using/crm-connectors.md)，了解如何将 CRM 工具与 Adobe Campaign 同步。观看有关[Adobe Campaign 与 Microsoft Dynamics 365 集成](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)的用例视频。
+
+## 如何在问题特定于计算机或特定于用户时执行软缓存清除？ {#perform-soft-cache-clear}
+
+如果您遇到了新徽标正确反映的问题，能够成功导出计算机特定／用户特定的数据，则可能需要在Windows(Windows 7、Windows XP、Windows 10)上执行软缓存清除。
+
+登录后，转到 **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**。 之后，注销并重新登录。
+
+![](assets/faq_soft_cache.png)
+
+如果这仍然无效，请尝试通过执行以下步骤清除硬缓存。
+
+## 如何在问题特定于计算机或特定于用户时执行硬缓存清除？ {#perform-hard-cache-clear}
+
+如果您遇到了新徽标正确反映的问题，能够成功导出计算机特定／用户特定的数据，则可能需要在Windows(Windows 7、Windows XP、Windows 10)上执行硬缓存清除。
+
+1. 在客户端控制台上，选择 **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**。
+
+1. 注销并关闭客户端控制台（富客户端）。
+
+1. 根据您的操作系统版本，转到以下位置：
+
+   * Windows 7:C:\Users\&lt;用户名>\AppData\Roaming\Neolane\NL_5\
+   * Windows XP:C:\Documents and Settings\&lt;用户名>\Application Data\Neolane\NL_5
+   这里您将看到许多名为nlclient-config-&lt;字母数字值>.xml的xml文件。
+
+1. 删除这些xml文件和关联的文件夹。
+
+   >[!CAUTION]
+   >
+   >请勿删除nlclient_cnx.xml文件。
+
+1. 登录到客户端控制台。
