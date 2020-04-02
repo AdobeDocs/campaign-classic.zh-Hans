@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 295dcd0ac302194df5e202ccabb579f006ed5651
+source-git-commit: 11aab98507be594bde79e21c9a5e8ae0b2e8fe36
 
 ---
 
@@ -26,9 +26,19 @@ source-git-commit: 295dcd0ac302194df5e202ccabb579f006ed5651
 
 您还可以查阅 [Adobe Campaign经典发行说明](../../rn/using/latest-release.md)。
 
+## 2020年4月 {#april-2020}
+
+联合数据访问权限表已移至访问外部数据库(联合数据访问)文档。 [阅读更多](../../platform/using/remote-database-access-rights.md)
+
+常见问题解答已更新，其中包含有关如何清除软缓存和硬缓存的提示。 [阅读更多](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
+
+“数据模型最佳实践”部分已得到改进，增加了有关索引的更多信息。 [阅读更多](../../configuration/using/data-model-best-practices.md#indexes)
+
+描述Adobe Campaign预定义数据模型的部分已更新，其中提供了每个现成表格的更多详细信息以及指向相关模块的链接。 [阅读更多](../../configuration/using/data-model-description.md)
+
 ## 2020年3月 {#march-2020}
 
-数据模型最佳实践页面已更新，其中包括序列、性 [能](../../configuration/using/data-model-best-practices.md#sequences)[、](../../configuration/using/data-model-best-practices.md#performance) 大表等新部分 [](../../configuration/using/data-model-best-practices.md#large-tables)。 [阅读更多](../../configuration/using/data-model-best-practices.md)
+“数据模型最佳实践”页已更新，其中包括序列、性 [能](../../configuration/using/data-model-best-practices.md#sequences)[、](../../configuration/using/data-model-best-practices.md#performance) 大表等新部分 [](../../configuration/using/data-model-best-practices.md#large-tables)。 [阅读更多](../../configuration/using/data-model-best-practices.md)
 
 现在提供了描述Adobe Campaign预定义数据模型和现成表交互的新部分。 [阅读更多](../../configuration/using/data-model-description.md)
 
@@ -329,7 +339,7 @@ Campaign ClassicAPI现在在专用页 [面中可用](https://docs.campaign.adobe
 
 “已弃用和已删除的Campaign Classic功能”页面已更新。 [阅读更多](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
-在发行 [说明和](https://docs.campaign.adobe.com/doc/AC/en/RN.html)[旧版发行说明中](https://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html)，已为已召回的版本添加了警告。 还增加了17.9、18.4和18.6的累积版本。
+在发行 [说明和旧版发](https://docs.campaign.adobe.com/doc/AC/en/RN.html) 行说明中 [](https://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html)，已为已召回的版本添加了警告。 还增加了17.9、18.4和18.6的累积版本。
 
 安 [全性](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)、交付 [](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) 、构建 [](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) 升级入门指南已更新。
 
