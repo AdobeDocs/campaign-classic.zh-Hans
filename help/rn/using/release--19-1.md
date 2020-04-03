@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f5217fb45d2ffcb73ad4ec7d32ba6bd7ddbc15
+source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: c1f5217fb45d2ffcb73ad4ec7d32ba6bd7ddbc15
    <td><img src="assets/red3.png"/><strong>已弃用</strong></td> 
   </tr> 
    <tr> 
-   <td>提供最新的稳定版本。 构建在生产中经过验证的内容。<br> </td>
+   <td>提供最新的稳定版本。 构建在生产中验证的内容。<br> </td>
    <td>由Adobe验证的构建。 等待生产校样。<br> </td>
    <td>可用于错误修复的更新版本。 需要更新。<br> </td>
    <td>包含已知的回归。 更新是必需的。<br> </td>
@@ -74,13 +74,7 @@ _2019年8月13日_
 
 ## 版本19.1.4 —— 内部版本9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 2020 **年4月3日**:新版本(9032-...e8b36257e)，包括以下修复：
-
-* 我们引入了用于跟踪电子邮件中链接的签名机制，以防止潜在的恶意使用（网络钓鱼）。 这防止了跟踪参数的重写，该跟踪参数可能包括用于重定向用户的URL。 默认情况下，此机制当前处于禁用状态。 如果需要激活客户关怀，请与其联系。
-
-* 已添加补充的安全保护，以防止从先前构建或当签名机制关闭时生成的格式错误的URL的重定向。 如果需要，请与客户服务联系。
-
-![](assets/orange_2.png) 2020 **年3月5日**:新版本(9032-...205c981c3)，其中包括以下修复：
+![](assets/green_2.png) 2020 **年3月5日**:新版本(9032-...205c981c3)，其中包括以下修复：
 
 * 修复了使用FTP over SSL的外部帐户存在的问题。 (NEO-20498)
 
