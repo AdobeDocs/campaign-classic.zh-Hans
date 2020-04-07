@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 707e16e9e493e175c70af606bf4568a9127cedb2
+source-git-commit: 4406e11e33e14136ea43fc3cc5a92e0d1c466100
 
 ---
 
@@ -73,6 +73,8 @@ NmsRcpGrpRel关系表只包含与iRecipientId和iGroupId链接表的标识符相
 ### NmsService {#NmsService}
 
 此表与 **nms:service模式匹配** 。
+
+在Adobe Campaign中，您可以创建和管理信息服务的订阅（主题）。 NmsService表存储您优惠信息服务以订阅的收件人（例如新闻稿）的定义。
 
 服务是与组(静态收件人组)类似的实体，只是它们会传播更多信息并通过表单轻松管理订阅和退订。
 
