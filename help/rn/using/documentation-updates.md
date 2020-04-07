@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 11aab98507be594bde79e21c9a5e8ae0b2e8fe36
+source-git-commit: 75f195a11170b4213f930deed886f8bf5b0817bc
 
 ---
 
@@ -35,6 +35,10 @@ source-git-commit: 11aab98507be594bde79e21c9a5e8ae0b2e8fe36
 “数据模型最佳实践”部分已得到改进，增加了有关索引的更多信息。 [阅读更多](../../configuration/using/data-model-best-practices.md#indexes)
 
 描述Adobe Campaign预定义数据模型的部分已更新，其中提供了每个现成表格的更多详细信息以及指向相关模块的链接。 [阅读更多](../../configuration/using/data-model-description.md)
+
+“使用工作流实现自动化”指南中的使用案例已重新组织为主题部分。 [阅读更多](../../workflow/using/using-the-local-approval-activity.md)
+
+弹回邮 [件资格](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) 、电子邮件 [](../../delivery/using/understanding-delivery-failures.md#email-management-rules) 管理规则部分已通过更新的信息得到增强。
 
 ## 2020年3月 {#march-2020}
 
@@ -174,7 +178,7 @@ Adobe Campaign与Adobe实时客户数据平台之间的集成现已在与Adobe E
 
 添加的信息指定个性化字段内容不能超过1024个字符。 [阅读更多](../../delivery/using/personalization-fields.md)
 
-控制面板文档已集成到新的协作文档集中。 [阅读更多](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+控制面板文档已集成到新的协作文档集中。 [阅读更多](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
 
 投放最佳实践快速入门指南已更新。 [阅读更多](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
 
@@ -210,7 +214,7 @@ GDPR入门指南已得到改进和丰富。 它现在是包括GDPR和CCPA在内�
 
 **版本中包含的新功能**
 
-控制面板——阅 [读更多](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+控制面板——阅 [读更多](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
 
 审核跟踪——阅 [读更多](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Audit_trail.html)
 
