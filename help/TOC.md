@@ -1,11 +1,11 @@
 ---
 audience: end-user
-user-guide-title: Adobe Campaign Classic Help
+user-guide-title: Adobe Campaign经典帮助
 index: y
 product: adobe campaign
-sub-product: adobe campaign classic
+sub-product: adobe活动经典
 translation-type: tm+mt
-source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
+source-git-commit: ce5513c2af9b522919c038e25557634b11e8e3cb
 
 ---
 
@@ -54,23 +54,23 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [SFTP 服务器使用情况](platform/using/sftp-server-usage.md)
    + 筛选数据 {#filtering-data}
       + [筛选选项](platform/using/filtering-options.md)
-      + [创建滤镜](platform/using/creating-filters.md)
+      + [创建过滤器](platform/using/creating-filters.md)
       + [用例](platform/using/use-case.md)
    + 创建查询 {#creating-queries}
-      + [关于Campaign中的查询](platform/using/about-queries-in-campaign.md)
+      + [关于活动中的查询](platform/using/about-queries-in-campaign.md)
       + [创建查询的步骤](platform/using/steps-to-create-a-query.md)
       + [定义过滤条件](platform/using/defining-filter-conditions.md)
    + 管理基础知识 {#administration-basics}
       + [访问管理](platform/using/access-management.md)
       + [使用数据包](platform/using/working-with-data-packages.md)
-      + [管理枚举](platform/using/managing-enumerations.md)
+      + [管理明细列表](platform/using/managing-enumerations.md)
       + [外部帐户](platform/using/external-accounts.md)
-   + 访问外部数据库(FDA){#accessing-external-database}
-      + [关于FDA](platform/using/about-fda.md)
+   + 访问外部数据库(联合数据访问){#accessing-external-database}
+      + [关于联合数据访问](platform/using/about-fda.md)
       + [按数据库类型的特定配置](platform/using/specific-configuration-database.md)
       + [远程数据库访问权限](platform/using/remote-database-access-rights.md)
       + [连接到数据库](platform/using/connecting-to-database.md)
-      + [创建数据架构](platform/using/creating-data-schema.md)
+      + [创建数据模式](platform/using/creating-data-schema.md)
       + [定义数据映射](platform/using/defining-data-mapping.md)
       + [其他选项](platform/using/additional-options.md)
       + [在工作流中使用来自外部数据库的数据](platform/using/data-external-database-workflow.md)
@@ -79,47 +79,47 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [CRM连接器](platform/using/crm-connectors.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
 + 发送消息 {#sending-messages}
-   + 关于分发和渠道 {#about-deliveries-and-channels}
+   + 关于投放和渠道 {#about-deliveries-and-channels}
       + [通信渠道](delivery/using/communication-channels.md)
-      + [访问交付信息](delivery/using/accessing-deliveries-information.md)
-      + [交付类型](delivery/using/types-of-deliveries.md)
-   + 创建分发时的关键步骤 {#key-steps-when-creating-a-delivery}
-      + [关于交付创建 ](delivery/using/steps-about-delivery-creation-steps.md)
-      + [创建和识别交付](delivery/using/steps-create-and-identify-the-delivery.md)
-      + [定义目标人群](delivery/using/steps-defining-the-target-population.md)
-      + [验证交付](delivery/using/steps-validating-the-delivery.md)
-      + [发送交付](delivery/using/steps-sending-the-delivery.md)
+      + [访问投放信息](delivery/using/accessing-deliveries-information.md)
+      + [投放类型](delivery/using/types-of-deliveries.md)
+   + 创建投放时的关键步骤 {#key-steps-when-creating-a-delivery}
+      + [关于投放创建 ](delivery/using/steps-about-delivery-creation-steps.md)
+      + [创建和识别投放](delivery/using/steps-create-and-identify-the-delivery.md)
+      + [定义目标人口](delivery/using/steps-defining-the-target-population.md)
+      + [验证投放](delivery/using/steps-validating-the-delivery.md)
+      + [发送投放](delivery/using/steps-sending-the-delivery.md)
    + 发送电子邮件 {#sending-emails}
       + [关于电子邮件渠道](delivery/using/about-email-channel.md)
-      + [创建电子邮件分发](delivery/using/creating-an-email-delivery.md)
+      + [创建电子邮件投放](delivery/using/creating-an-email-delivery.md)
       + [定义电子邮件内容](delivery/using/defining-the-email-content.md)
       + [定义交互式内容](delivery/using/defining-interactive-content.md)
       + [发送消息](delivery/using/sending-messages.md)
       + [附加文件](delivery/using/attaching-files.md)
    + 在手机上发送消息 {#sending-messages-on-mobiles}
-      + [SMS频道](delivery/using/sms-channel.md)
-      + [线路通道](delivery/using/line-channel.md)
+      + [SMS渠道](delivery/using/sms-channel.md)
+      + [线渠道](delivery/using/line-channel.md)
    + 发送推送通知 {#sending-push-notifications}
       + [关于移动应用程序渠道](delivery/using/about-mobile-app-channel.md)
-      + [将Campaign SDK集成到移动应用程序](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+      + [将活动SDK集成到移动应用程序](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + [在Adobe Campaign中配置移动应用程序](delivery/using/configuring-the-mobile-application.md)
       + [创建通知](delivery/using/creating-notifications.md)
       + [故障排除](delivery/using/troubleshooting.md)
    + 发送直邮 {#sending-direct-mail}
       + [关于直邮渠道](delivery/using/about-direct-mail-channel.md)
-      + [创建直邮递送](delivery/using/creating-a-direct-mail-delivery.md)
+      + [创建直邮投放](delivery/using/creating-a-direct-mail-delivery.md)
       + [定义直邮内容](delivery/using/defining-the-direct-mail-content.md)
       + [验证](delivery/using/validating.md)
       + [其他渠道](delivery/using/other-channels.md)
-   + 使用交付模板 {#using-delivery-templates}
+   + 使用投放模板 {#using-delivery-templates}
       + [关于模板](delivery/using/about-templates.md)
-      + [创建分发模板](delivery/using/creating-a-delivery-template.md)
+      + [创建投放模板](delivery/using/creating-a-delivery-template.md)
       + [选择目标映射](delivery/using/selecting-a-target-mapping.md)
-      + [从模板创建分发](delivery/using/creating-a-delivery-from-a-template.md)
-   + 个性化交付 {#personalizing-deliveries}
+      + [从模板创建投放](delivery/using/creating-a-delivery-from-a-template.md)
+   + 个性化投放 {#personalizing-deliveries}
       + [关于个性化](delivery/using/about-personalization.md)
       + [个性化字段](delivery/using/personalization-fields.md)
-      + [个性化基块](delivery/using/personalization-blocks.md)
+      + [个性化块](delivery/using/personalization-blocks.md)
       + [条件内容](delivery/using/conditional-content.md)
       + [个性化优惠券](delivery/using/personalized-coupons.md)
       + [生成个性化的PDF文档](delivery/using/generating-personalized-pdf-documents.md)
@@ -128,13 +128,13 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [创建种子地址](delivery/using/creating-seed-addresses.md)
       + [添加种子地址](delivery/using/adding-seed-addresses.md)
       + [使用外部收件人表](delivery/using/using-an-external-recipient-table.md)
-      + [用例：在条件上选择种子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+      + [用例：根据条件选择种子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
       + [用例：配置字段替换](delivery/using/use-case--configuring-the-field-substitution.md)
-   + 订阅和引用 {#subscriptions-and-referrals}
+   + 订阅和推荐 {#subscriptions-and-referrals}
       + [关于服务和订阅](delivery/using/about-services-and-subscriptions.md)
       + [管理订阅](delivery/using/managing-subscriptions.md)
       + [病毒式和社交营销](delivery/using/viral-and-social-marketing.md)
-   + 监控交付 {#monitoring-deliveries}
+   + 监控投放 {#monitoring-deliveries}
       + [监控投放](delivery/using/monitoring-a-delivery.md)
       + [了解投放失败](delivery/using/understanding-delivery-failures.md)
       + [了解隔离管理](delivery/using/understanding-quarantine-management.md)
@@ -160,21 +160,21 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [关于内容管理](delivery/using/about-content-management.md)
       + [内容管理者资源和原则](delivery/using/content-manager-resources-and-principles.md)
       + [用例：创建内容管理](delivery/using/use-case--creating-content-management.md)
-      + [数据架构](delivery/using/data-schemas.md)
+      + [数据模式](delivery/using/data-schemas.md)
       + [输入表单](delivery/using/input-forms.md)
       + [格式化](delivery/using/formatting.md)
-      + [出版物模板](delivery/using/publication-templates.md)
+      + [发布模板](delivery/using/publication-templates.md)
       + [使用内容模板](delivery/using/using-a-content-template.md)
       + [丰富内容](delivery/using/enriching-content.md)
       + [通过工作流实现自动化](delivery/using/automating-via-workflows.md)
-+ 编排营销活动 {#orchestrating-campaigns}
++ 编排活动 {#orchestrating-campaigns}
    + 关于营销活动 {#about-marketing-campaigns}
       + [设计营销活动](campaign/using/designing-marketing-campaigns.md)
       + [访问营销活动](campaign/using/accessing-marketing-campaigns.md)
-   + 编排营销活动 {#orchestrate-campaigns}
+   + 编排活动 {#orchestrate-campaigns}
       + [设置营销活动](campaign/using/setting-up-marketing-campaigns.md)
       + [营销活动模板](campaign/using/marketing-campaign-templates.md)
-      + [营销活动交付](campaign/using/marketing-campaign-deliveries.md)
+      + [营销活动投放](campaign/using/marketing-campaign-deliveries.md)
       + [营销活动批准](campaign/using/marketing-campaign-approval.md)
       + [营销活动监控](campaign/using/marketing-campaign-monitoring.md)
       + [供应商、库存和预算](campaign/using/providers--stocks-and-budgets.md)
@@ -184,39 +184,39 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [控制成本](campaign/using/controlling-costs.md)
       + [管理营销资源](campaign/using/managing-marketing-resources.md)
       + [论坛](campaign/using/discussion-forums.md)
-   + 营销活动优化 {#campaign-optimization}
-      + [关于营销活动类型](campaign/using/about-campaign-typologies.md)
+   + 活动优化 {#campaign-optimization}
+      + [关于活动类型](campaign/using/about-campaign-typologies.md)
       + [压力规则](campaign/using/pressure-rules.md)
       + [一致性规则](campaign/using/consistency-rules.md)
       + [控制规则](campaign/using/control-rules.md)
       + [筛选规则](campaign/using/filtering-rules.md)
       + [应用规则](campaign/using/applying-rules.md)
-      + [营销活动模拟](campaign/using/campaign-simulations.md)
+      + [活动模拟](campaign/using/campaign-simulations.md)
    + 分布式营销 {#distributed-marketing}
       + [关于分布式营销](campaign/using/about-distributed-marketing.md)
-      + [创建本地营销活动](campaign/using/creating-a-local-campaign.md)
-      + [创建协作营销活动](campaign/using/creating-a-collaborative-campaign.md)
-      + [发布营销活动包](campaign/using/publishing-the-campaign-package.md)
-      + [访问营销活动](campaign/using/accessing-campaigns.md)
-      + [跟踪营销活动](campaign/using/tracking-a-campaign.md)
+      + [创建本地活动](campaign/using/creating-a-local-campaign.md)
+      + [创建协作活动](campaign/using/creating-a-collaborative-campaign.md)
+      + [发布活动包](campaign/using/publishing-the-campaign-package.md)
+      + [访问活动](campaign/using/accessing-campaigns.md)
+      + [跟踪活动](campaign/using/tracking-a-campaign.md)
       + [示例](campaign/using/examples.md)
    + 响应管理器 {#response-manager}
       + [关于响应管理器](campaign/using/about-response-manager.md)
       + [配置](campaign/using/configuration.md)
-      + [假设模板](campaign/using/hypothesis-templates.md)
-      + [创建假设](campaign/using/creating-hypotheses.md)
-      + [假设跟踪](campaign/using/hypothesis-tracking.md)
+      + [假设验证模板](campaign/using/hypothesis-templates.md)
+      + [创建假设验证](campaign/using/creating-hypotheses.md)
+      + [假设验证跟踪](campaign/using/hypothesis-tracking.md)
 + 报告 {#reporting}
-   + Adobe Campaign中的报告 {#reporting-in-adobe-campaign}
-      + [报告入门](reporting/using/about-adobe-campaign-reporting-tools.md)
-      + [报告的最佳实践](reporting/using/best-practices.md)
+   + 报告Adobe Campaign {#reporting-in-adobe-campaign}
+      + [开始使用报告](reporting/using/about-adobe-campaign-reporting-tools.md)
+      + [最佳报告实践](reporting/using/best-practices.md)
    + 访问内置报告 {#accessing-built-in-reports}
-      + [关于Campaign内置报告](reporting/using/about-campaign-built-in-reports.md)
+      + [关于活动内置报告](reporting/using/about-campaign-built-in-reports.md)
       + [报告列表](reporting/using/list-of-reports.md)
-   + 有关交付的报告{#reports-on-deliveries}
-      + [关于提交的报告](reporting/using/reports-on-deliveries.md)
+   + 投放报告{#reports-on-deliveries}
+      + [关于投放报告](reporting/using/reports-on-deliveries.md)
       + [全局报告](reporting/using/global-reports.md)
-      + [交付报告](reporting/using/delivery-reports.md)
+      + [投放报告](reporting/using/delivery-reports.md)
       + [累积报告](reporting/using/cumulative-reports.md)
       + [指标计算](reporting/using/indicator-calculation.md)
       + [人员／人员和收件人](reporting/using/person-people-recipients.md)
@@ -226,7 +226,7 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [处理报告](reporting/using/processing-a-report.md)
       + [用例](reporting/using/use-cases.md)
    + 创建新报告 {#creating-new-reports}
-      + [关于在Campaign中创建报表](reporting/using/about-reports-creation-in-campaign.md)
+      + [关于在活动中创建报告](reporting/using/about-reports-creation-in-campaign.md)
       + [创建新报告](reporting/using/creating-a-new-report.md)
       + [收集数据以进行分析](reporting/using/collecting-data-to-analyze.md)
       + [使用上下文](reporting/using/using-the-context.md)
@@ -238,38 +238,38 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [报表的属性](reporting/using/properties-of-the-report.md)
       + [配置对报告的访问权限](reporting/using/configuring-access-to-the-report.md)
       + [报告操作](reporting/using/actions-on-reports.md)
-   + 使用立方设计报表 {#designing-reports-with-cubes}
-      + [关于立方](reporting/using/about-cubes.md)
+   + 设计包含多维数据集的报告 {#designing-reports-with-cubes}
+      + [关于多维数据集](reporting/using/about-cubes.md)
       + [创建指示器](reporting/using/creating-indicators.md)
-      + [使用立方体浏览数据](reporting/using/using-cubes-to-explore-data.md)
+      + [使用多维数据集浏览数据](reporting/using/using-cubes-to-explore-data.md)
       + [概念和方法](reporting/using/concepts-and-methodology.md)
-      + [用例：显示在线调查答案的报告](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
+      + [用例：显示在线调查的答案报告](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + 设计Web内容 {#designing-content}
-   + Web应用程序 {#web-applications}
+   + Web 应用程序 {#web-applications}
       + [关于Web应用程序](web/using/about-web-applications.md)
       + [创建新的Web应用程序](web/using/creating-a-new-web-application.md)
       + [设计Web应用程序](web/using/designing-a-web-application.md)
       + [用例：创建概述](web/using/use-cases--creating-overviews.md)
       + [翻译Web应用程序](web/using/translating-a-web-application.md)
       + [跟踪Web应用程序](web/using/tracking-a-web-application.md)
-      + [Web应用程序跟踪退出](web/using/web-application-tracking-opt-out.md)
+      + [Web 应用程序跟踪退出](web/using/web-application-tracking-opt-out.md)
    + 编辑HTML内容 {#editing-html-content}
-      + [关于Campaign HTML编辑器](web/using/about-campaign-html-editor.md)
+      + [关于活动HTML编辑器](web/using/about-campaign-html-editor.md)
       + [模板管理](web/using/template-management.md)
       + [内容编辑器界面](web/using/content-editor-interface.md)
       + [编辑内容](web/using/editing-content.md)
       + [内容编辑最佳实践](web/using/content-editing-best-practices.md)
-      + [创建登陆页面](web/using/creating-a-landing-page.md)
-      + [用例：创建电子邮件发送](web/using/use-case--creating-an-email-delivery.md)
-   + Web表单 {#web-forms}
+      + [创建登陆页](web/using/creating-a-landing-page.md)
+      + [用例：创建电子邮件投放](web/using/use-case--creating-an-email-delivery.md)
+   + Web 窗体 {#web-forms}
       + [关于Web表单](web/using/about-web-forms.md)
       + [使用Web表单模板](web/using/using-a-web-form-template.md)
       + [将字段添加到Web表单](web/using/adding-fields-to-a-web-form.md)
-      + [Web表单中的静态元素](web/using/static-elements-in-a-web-form.md)
+      + [静态元素Web表单](web/using/static-elements-in-a-web-form.md)
       + [定义Web表单布局](web/using/defining-web-forms-layout.md)
       + [表单渲染](web/using/form-rendering.md)
       + [定义Web表单页面排序](web/using/defining-web-forms-page-sequencing.md)
-      + [Web表单答案](web/using/web-forms-answers.md)
+      + [Web 窗体答案](web/using/web-forms-answers.md)
       + [发布Web表单](web/using/publishing-a-web-form.md)
       + [定义Web表单属性](web/using/defining-web-forms-properties.md)
       + [翻译Web表单](web/using/translating-a-web-form.md)
@@ -285,7 +285,7 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
 + Integrating with Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [关于 Campaign 集成](integrations/using/about-campaign-integrations.md)
    + 受众共享 {#audience-sharing}
-      + [使用Adobe Experience Cloud共享受众](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [与Adobe Experience Cloud共享受众](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [向Adobe提交请求](integrations/using/submitting-request-to-adobe.md)
       + [在Adobe Campaign中配置共享受众集成](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [故障排除](integrations/using/troubleshooting.md)
@@ -298,9 +298,9 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [关于Adobe Experience Manager](integrations/using/about-adobe-experience-manager.md)
       + [配置集成](integrations/using/configuring-the-integration.md)
       + [创建Experience Manager新闻快讯](integrations/using/creating-an-experience-manager-newsletter.md)
-   + Adobe Target {#adobe-target}
-      + [与Adobe Target集成](integrations/using/integrating-with-adobe-target.md)
-      + [配置与Adobe Target的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
+   + Adobe目标 {#adobe-target}
+      + [与Adobe目标集成](integrations/using/integrating-with-adobe-target.md)
+      + [配置与Adobe目标的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
    + 通过Adobe ID连接 {#connecting-via-an-adobe-id}
       + [关于Adobe ID](integrations/using/about-adobe-id.md)
@@ -309,7 +309,7 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [IMS疑难解答](integrations/using/ims-troubleshooting.md)
    + ACS连接器 {#acs-connector}
       + [ACS Connector原理和数据循环](integrations/using/acs-connector-principles-and-data-cycle.md)
-      + [同步配置文件](integrations/using/synchronizing-profiles.md)
+      + [同步用户档案](integrations/using/synchronizing-profiles.md)
       + [同步受众](integrations/using/synchronizing-audiences.md)
       + [同步Web应用程序](integrations/using/synchronizing-web-applications.md)
       + [ACS连接器故障排除](integrations/using/troubleshooting-the-acs-connector.md)
@@ -328,17 +328,17 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [关于定位活动](workflow/using/about-targeting-activities.md)
       + [查询](workflow/using/query.md)
       + [增量查询](workflow/using/incremental-query.md)
-      + [阅读列表](workflow/using/read-list.md)
+      + [读取列表](workflow/using/read-list.md)
       + [合并](workflow/using/union.md)
       + [交叉](workflow/using/intersection.md)
       + [排除](workflow/using/exclusion.md)
       + [拆分](workflow/using/split.md)
       + [单元格](workflow/using/cells.md)
-      + [按单元格列出的优惠](workflow/using/offers-by-cell.md)
-      + [交付大纲](workflow/using/delivery-outline.md)
+      + [优惠（按单元格）](workflow/using/offers-by-cell.md)
+      + [投放概要](workflow/using/delivery-outline.md)
       + [扩充](workflow/using/enrichment.md)
-      + [编辑架构](workflow/using/edit-schema.md)
-      + [优惠引擎](workflow/using/offer-engine.md)
+      + [编辑模式](workflow/using/edit-schema.md)
+      + [优惠发动机](workflow/using/offer-engine.md)
       + [重复数据删除](workflow/using/deduplication.md)
       + [更改维度](workflow/using/change-dimension.md)
       + [列表更新](workflow/using/list-update.md)
@@ -355,18 +355,18 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [等待](workflow/using/wait.md)
       + [时间约束](workflow/using/time-constraint.md)
       + [子工作流](workflow/using/sub-workflow.md)
-      + [跳转（起点和终点）](workflow/using/jump--start-point-and-end-point-.md)
+      + [跳转(开始点和终点)](workflow/using/jump--start-point-and-end-point-.md)
       + [外部信号](workflow/using/external-signal.md)
       + [批准](workflow/using/approval.md)
       + [警报](workflow/using/alert.md)
       + [任务](workflow/using/task.md)
-   + 行动活动 {#action-activities}
+   + 操作活动 {#action-activities}
       + [关于操作活动](workflow/using/about-action-activities.md)
       + [投放](workflow/using/delivery.md)
-      + [交付控制](workflow/using/delivery-control.md)
-      + [持续交付](workflow/using/continuous-delivery.md)
-      + [重复交付](workflow/using/recurring-delivery.md)
-      + [跨渠道交付](workflow/using/cross-channel-deliveries.md)
+      + [投放控制](workflow/using/delivery-control.md)
+      + [连续投放](workflow/using/continuous-delivery.md)
+      + [循环投放](workflow/using/recurring-delivery.md)
+      + [跨渠道投放](workflow/using/cross-channel-deliveries.md)
       + [本地批准](workflow/using/local-approval.md)
       + [数据加载(RDBMS)](workflow/using/data-loading--rdbms-.md)
       + [加载(SOAP)](workflow/using/loading--soap-.md)
@@ -377,70 +377,73 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [SQL数据管理](workflow/using/sql-data-management.md)
       + [Nlserver模块](workflow/using/nlserver-module.md)
       + [更新聚合](workflow/using/update-aggregate.md)
-   + 活动活动 {#event-activities}
-      + [关于活动活动](workflow/using/about-event-activities.md)
+   + 事件活动 {#event-activities}
+      + [关于事件活动](workflow/using/about-event-activities.md)
       + [文件收集器](workflow/using/file-collector.md)
       + [文件传输](workflow/using/file-transfer.md)
       + [Web下载](workflow/using/web-download.md)
       + [入站电子邮件](workflow/using/inbound-emails.md)
       + [入站SMS](workflow/using/inbound-sms.md)
    + 用例 {#use-cases}
-      + [使用本地批准活动](workflow/using/using-the-local-approval-activity.md)
-      + [向列表发送报告](workflow/using/sending-a-report-to-a-list.md)
-      + [监督工作流](workflow/using/supervising-workflows.md)
-      + [协调数据更新](workflow/using/coordinating-data-updates.md)
-      + [创建摘要列表](workflow/using/creating-a-summary-list.md)
-      + [丰富数据](workflow/using/enriching-data.md)
-      + [A/B测试](workflow/using/a-b-testing.md)
-      + [使用聚合](workflow/using/using-aggregates.md)
-      + [发送生日电子邮件](workflow/using/sending-a-birthday-email.md)
-      + [加载交付内容](workflow/using/loading-delivery-content.md)
-      + [跨渠道交付工作流](workflow/using/cross-channel-delivery-workflow.md)
+      + 投放 {#deliveries}
+         + [使用本地批准活动](workflow/using/using-the-local-approval-activity.md)
+         + [A/B测试](workflow/using/a-b-testing.md)
+         + [发送生日电子邮件](workflow/using/sending-a-birthday-email.md)
+         + [加载投放内容](workflow/using/loading-delivery-content.md)
+         + [跨渠道投放工作流](workflow/using/cross-channel-delivery-workflow.md)
+         + [具有自定义日期字段的电子邮件扩充](workflow/using/email-enrichment-with-custom-date-fields.md)
+      + 监控 {#monitoring}
+         + [向列表发送报告](workflow/using/sending-a-report-to-a-list.md)
+         + [监督工作流](workflow/using/supervising-workflows.md)
+         + [向运营商发送个性化提醒](workflow/using/sending-personalized-alerts-to-operators.md)
+      + 数据管理 {#data-management}
+         + [协调数据更新](workflow/using/coordinating-data-updates.md)
+         + [创建摘要列表](workflow/using/creating-a-summary-list.md)
+         + [丰富数据](workflow/using/enriching-data.md)
+         + [使用聚合](workflow/using/using-aggregates.md)
       + 设计查询 {#designing-queries}
          + [查询收件人表](workflow/using/querying-recipient-table.md)
-         + [查询交付信息](workflow/using/querying-delivery-information.md)
+         + [查询投放信息](workflow/using/querying-delivery-information.md)
          + [执行聚合计算](workflow/using/performing-aggregate-computing.md)
          + [使用分组管理进行查询](workflow/using/querying-using-grouping-management.md)
          + [使用多对多关系进行查询](workflow/using/querying-using-many-to-many-relationship.md)
-         + [添加枚举类型计算字段](workflow/using/adding-enumeration-type-calculated-field.md)
+         + [添加明细列表类型计算字段](workflow/using/adding-enumeration-type-calculated-field.md)
          + [创建过滤器](workflow/using/creating-a-filter.md)
          + [过滤重复的收件人](workflow/using/filtering-duplicated-recipients.md)
-      + [向运营商发送个性化提醒](workflow/using/sending-personalized-alerts-to-operators.md)
-      + [电子邮件丰富了自定义日期字段](workflow/using/email-enrichment-with-custom-date-fields.md)
-   + 监视工作流 {#monitoring-workflows}
+   + 监控工作流 {#monitoring-workflows}
       + [监视工作流执行](workflow/using/monitoring-workflow-execution.md)
-      + [监控技术工作流程](workflow/using/monitoring-technical-workflows.md)
+      + [监控技术工作流](workflow/using/monitoring-technical-workflows.md)
       + [Workflow HeatMap](workflow/using/heatmap.md)
    + 高级管理 {#advanced-management}
       + [工作流属性](workflow/using/workflow-properties.md)
       + [高级参数](workflow/using/advanced-parameters.md)
       + [JavaScript脚本和模板](workflow/using/javascript-scripts-and-templates.md)
-      + [访问外部数据库(FDA)](workflow/using/accessing-an-external-database--fda-.md)
+      + [访问外部数据库(联合数据访问)](workflow/using/accessing-an-external-database--fda-.md)
       + [管理权限](workflow/using/managing-rights.md)
       + [管理活动图像](workflow/using/managing-activity-images.md)
       + [管理倾向](workflow/using/managing-propensity.md)
       + [管理时区](workflow/using/managing-time-zones.md)
    + 技术工作流 {#technical-workflows}
-      + [关于技术工作流程](workflow/using/about-technical-workflows.md)
-      + [交付](workflow/using/deliveries.md)
+      + [关于技术工作流](workflow/using/about-technical-workflows.md)
+      + [投放](workflow/using/deliveries.md)
       + [营销活动](workflow/using/campaign.md)
       + [Web分析](workflow/using/web-analytics.md)
       + [分布式营销](workflow/using/distributed-marketing.md)
       + [可交付性监控](workflow/using/email-deliverability.md)
       + [收件箱呈现](workflow/using/inbox-rendering.md)
       + [交互](workflow/using/interaction.md)
-      + [优惠引擎的控制](workflow/using/control-of-offer-engine.md)
+      + [优惠发动机的控制](workflow/using/control-of-offer-engine.md)
       + [消息中心（控制）](workflow/using/message-center--control-.md)
       + [消息中心（执行）](workflow/using/message-center--execution-.md)
       + [移动应用程序渠道](workflow/using/mobile-app-channel.md)
-      + [线路渠道](workflow/using/line-channel.md)
-      + [营销资源(MRM)](workflow/using/marketing-resources--mrm-.md)
+      + [线渠道](workflow/using/line-channel.md)
+      + [营销资源语(MRM)](workflow/using/marketing-resources--mrm-.md)
       + [社交营销](workflow/using/social-marketing.md)
       + [与Adobe Experience Cloud解决方案集成](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
       + [隐私数据保护规定](workflow/using/general-data-protection-regulation--gdpr-.md)
-      + [转移至中间采购](workflow/using/transfer-to-mid-sourcing.md)
-      + [中部采购平台](workflow/using/mid-sourcing-platform.md)
-+ 管理选件 {#managing-offers}
+      + [转让至中间源](workflow/using/transfer-to-mid-sourcing.md)
+      + [中间源平台](workflow/using/mid-sourcing-platform.md)
++ 管理优惠 {#managing-offers}
    + 交互概述 {#interaction-overview}
       + [交互和优惠管理](interaction/using/interaction-and-offer-management.md)
       + [词汇表](interaction/using/glossary.md)
@@ -450,34 +453,34 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [基本原则](interaction/using/fundamental-principles.md)
    + 管理环境 {#managing-environments}
       + [环境概述](interaction/using/environments-overview.md)
-      + [操作员配置文件](interaction/using/operator-profiles.md)
+      + [运营商用户档案](interaction/using/operator-profiles.md)
       + [实时／设计环境](interaction/using/live-design-environments.md)
-      + [创建选件空间](interaction/using/creating-offer-spaces.md)
-      + [创建预定义的过滤器](interaction/using/creating-predefined-filters.md)
-   + 管理选件目录 {#managing-an-offer-catalog}
+      + [创建优惠空间](interaction/using/creating-offer-spaces.md)
+      + [创建预定义过滤器](interaction/using/creating-predefined-filters.md)
+   + 管理优惠目录 {#managing-an-offer-catalog}
       + [优惠目录概述](interaction/using/offer-catalog-overview.md)
-      + [创建选件类别](interaction/using/creating-offer-categories.md)
+      + [创建优惠类别](interaction/using/creating-offer-categories.md)
       + [推荐类别](interaction/using/recommending-a-category.md)
-      + [创建选件](interaction/using/creating-an-offer.md)
+      + [创建优惠](interaction/using/creating-an-offer.md)
       + [批准和激活优惠](interaction/using/approving-and-activating-an-offer.md)
-      + [管理选件模板](interaction/using/managing-offer-templates.md)
-      + [管理选件演示文稿](interaction/using/managing-offer-presentation.md)
-   + 模拟选件 {#simulating-offers}
-      + [关于选件模拟](interaction/using/about-offers-simulation.md)
+      + [管理优惠模板](interaction/using/managing-offer-templates.md)
+      + [管理优惠演示文稿](interaction/using/managing-offer-presentation.md)
+   + 模拟优惠 {#simulating-offers}
+      + [关于优惠模拟](interaction/using/about-offers-simulation.md)
       + [执行设置](interaction/using/execution-settings.md)
       + [模拟范围](interaction/using/simulation-scope.md)
       + [模拟跟踪](interaction/using/simulation-tracking.md)
-   + 提供优惠 {#delivering-an-offer}
+   + 交付优惠 {#delivering-an-offer}
       + [关于出站渠道](interaction/using/about-outbound-channels.md)
-      + [通过向导集成选件](interaction/using/integrating-an-offer-via-the-wizard.md)
-      + [通过工作流集成选件](interaction/using/integrating-an-offer-via-a-workflow.md)
+      + [通过向导集成优惠](interaction/using/integrating-an-offer-via-the-wizard.md)
+      + [通过工作流集成优惠](interaction/using/integrating-an-offer-via-a-workflow.md)
    + 幺正相互作用 {#unitary-interactions}
       + [关于入站渠道](interaction/using/about-inbound-channels.md)
       + [通过JavaScript集成（客户端）](interaction/using/integration-via-javascript--client-side-.md)
       + [通过SOAP（服务器端）进行集成](interaction/using/integration-via-soap--server-side-.md)
       + [匿名互动](interaction/using/anonymous-interactions.md)
-   + 跟踪选件 {#tracking-offers}
-      + [提供主张历史](interaction/using/offer-proposition-history.md)
+   + 跟踪优惠 {#tracking-offers}
+      + [优惠建议历史](interaction/using/offer-proposition-history.md)
       + [优惠分析报告](interaction/using/offer-analysis-report.md)
    + 高级参数 {#advanced-parameters}
       + [使用高级参数](interaction/using/using-advanced-parameters.md)
@@ -488,39 +491,39 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [分布式架构](interaction/using/distributed-architectures.md)
       + [数据缓冲区](interaction/using/data-buffer-zone.md)
    + 案例研究 {#case-study}
-      + [演示规则](interaction/using/presentation-rules.md)
-      + [入站渠道上的选件](interaction/using/offers-on-an-inbound-channel.md)
-      + [出站渠道上的选件](interaction/using/offers-on-an-outbound-channel.md)
+      + [推荐规则](interaction/using/presentation-rules.md)
+      + [优惠入站渠道](interaction/using/offers-on-an-inbound-channel.md)
+      + [优惠对外渠道](interaction/using/offers-on-an-outbound-channel.md)
 + Transactional Messaging {#transactional-messaging}
    + 简介 {#introduction}
       + [关于交易消息传递](message-center/using/about-transactional-messaging.md)
       + [交易消息架构](message-center/using/transactional-messaging-architecture.md)
-      + [活动说明](message-center/using/event-description.md)
+      + [事件说明](message-center/using/event-description.md)
    + 实例配置 {#instance-configuration}
       + [创建共享连接](message-center/using/creating-a-shared-connection.md)
       + [识别执行实例](message-center/using/identifying-execution-instances.md)
       + [监视阈值](message-center/using/monitoring-thresholds.md)
       + [清除事件](message-center/using/purging-events.md)
       + [技术工作流](message-center/using/technical-workflows.md)
-      + [创建活动类型](message-center/using/creating-event-types.md)
+      + [创建事件类型](message-center/using/creating-event-types.md)
       + [配置多品牌](message-center/using/configuring-multibranding.md)
    + 消息模板 {#message-templates}
       + [简介](message-center/using/introduction.md)
       + [创建消息模板](message-center/using/creating-the-message-template.md)
       + [创建消息内容](message-center/using/creating-message-content.md)
-      + [管理事务消息中的种子地址](message-center/using/managing-seed-addresses-in-transactional-messages.md)
+      + [管理事务性消息中的种子地址](message-center/using/managing-seed-addresses-in-transactional-messages.md)
       + [个性化数据](message-center/using/personalization-data.md)
-      + [交易消息预览](message-center/using/transactional-message-preview.md)
-      + [发送证明](message-center/using/sending-a-proof.md)
+      + [事务性消息预览](message-center/using/transactional-message-preview.md)
+      + [发送验证](message-center/using/sending-a-proof.md)
       + [模板发布](message-center/using/template-publication.md)
    + 事件处理 {#event-processing}
       + [关于事件处理](message-center/using/about-event-processing.md)
-      + [活动集合](message-center/using/event-collection.md)
-      + [向模板传送](message-center/using/routing-towards-a-template.md)
-      + [交付执行](message-center/using/delivery-execution.md)
+      + [事件集合](message-center/using/event-collection.md)
+      + [路由到模板](message-center/using/routing-towards-a-template.md)
+      + [投放执行](message-center/using/delivery-execution.md)
    + 报告 {#reports}
       + [关于交易消息传送报告](message-center/using/about-transactional-messaging-reports.md)
-      + [消息中心活动的历史记录](message-center/using/history-of-message-center-events.md)
+      + [消息中心事件的历史记录](message-center/using/history-of-message-center-events.md)
       + [消息中心服务级别](message-center/using/message-center-service-level.md)
       + [消息中心处理时间](message-center/using/message-center-processing-time.md)
    + 用例 {#use-case}
@@ -530,7 +533,7 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
 + 与社交媒体集成 {#integrating-with-social-media}
    + [关于社交营销](social/using/about-social-marketing.md)
    + 配置 {#configuration}
-      + [启动工作流](social/using/starting-workflows.md)
+      + [开始工作流](social/using/starting-workflows.md)
       + [在Facebook墙上发布](social/using/publishing-on-facebook-walls.md)
       + [创建Facebook应用程序](social/using/creating-a-facebook-application.md)
       + [配置在Twitter上发布](social/using/configuring-publishing-on-twitter.md)
@@ -561,16 +564,16 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [独立部署](installation/using/standalone-deployment.md)
       + [标准部署](installation/using/standard-deployment.md)
       + [企业部署](installation/using/enterprise-deployment.md)
-      + [中部署](installation/using/mid-sourcing-deployment.md)
+      + [中间源部署](installation/using/mid-sourcing-deployment.md)
       + [电源升压器和电源群集](installation/using/power-booster-and-power-cluster.md)
-   + 在Windows中安装Campaign {#installing-campaign-in-windows-}
-      + [在Windows中安装Campaign的先决条件](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+   + 在Windows中安装活动 {#installing-campaign-in-windows-}
+      + [在Windows中安装活动的先决条件](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [安装服务器](installation/using/installing-the-server.md)
       + [集成到Windows版Web服务器](installation/using/integration-into-a-web-server-for-windows.md)
       + [适用于Windows的客户端控制台可用性](installation/using/client-console-availability-for-windows.md)
       + [安装客户端控制台](installation/using/installing-the-client-console.md)
-   + 在Linux中安装Campaign {#installing-campaign-in-linux-}
-      + [在Linux中安装Campaign的先决条件](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+   + 在Linux中安装活动 {#installing-campaign-in-linux-}
+      + [在Linux中安装活动的先决条件](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [使用Linux安装包](installation/using/installing-packages-with-linux.md)
       + [集成到Linux的Web服务器](installation/using/integration-into-a-web-server-for-linux.md)
       + [适用于Linux的客户端控制台可用性](installation/using/client-console-availability-for-linux.md)
@@ -578,25 +581,25 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [关于初始配置](installation/using/about-initial-configuration.md)
       + [创建实例并登录](installation/using/creating-an-instance-and-logging-on.md)
       + [创建和配置数据库](installation/using/creating-and-configuring-the-database.md)
-      + [营销活动服务器配置](installation/using/campaign-server-configuration.md)
+      + [活动服务器配置](installation/using/campaign-server-configuration.md)
       + [部署实例](installation/using/deploying-an-instance.md)
       + [安装Campaign Classic标准包](installation/using/installing-campaign-standard-packages.md)
    + 其他配置 {#additional-configurations}
-      + [配置Campaign服务器](installation/using/configuring-campaign-server.md)
+      + [配置活动服务器](installation/using/configuring-campaign-server.md)
       + [通过LDAP连接](installation/using/connecting-through-ldap.md)
       + [技术电子邮件配置](installation/using/email-deliverability.md)
       + [电子邮件存档](installation/using/email-archiving.md)
       + [时区管理](installation/using/time-zone-management.md)
       + [配置SpamAssassin](installation/using/configuring-spamassassin.md)
-      + [中间采购服务器](installation/using/mid-sourcing-server.md)
+      + [中间源服务器](installation/using/mid-sourcing-server.md)
       + [交互——数据缓冲区](installation/using/interaction---data-buffer.md)
    + 附录 {#appendices}
       + [服务器配置文件](installation/using/the-server-configuration-file.md)
       + [命令行](installation/using/command-lines.md)
       + [创建新实例](installation/using/creating-new-instances.md)
-      + [营销活动经典选项列表](installation/using/configuring-campaign-options.md)
-      + [卸载Campaign](installation/using/uninstalling-campaign.md)
-+ 监视营销活动经典 {#monitoring-campaign-classic}
+      + [列表Campaign Classic选项](installation/using/configuring-campaign-options.md)
+      + [卸载活动](installation/using/uninstalling-campaign.md)
++ 监控Campaign Classic {#monitoring-campaign-classic}
    + 简介 {#introduction}
       + [前言](production/using/foreword.md)
       + [一般架构](production/using/general-architecture.md)
@@ -642,28 +645,28 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [控制台更新](production/using/console-update.md)
       + [丢失密码](production/using/lost-password.md)
       + [JSP行为](production/using/jsp-behavior.md)
-+ 配置营销活动经典 {#configuring-campaign-classic}
++ 配置Campaign Classic {#configuring-campaign-classic}
    + 数据模型 {#data-model}
       + [关于数据模型](configuration/using/about-data-model.md)
       + [数据模型描述](configuration/using/data-model-description.md)
-      + [最佳实践](configuration/using/data-model-best-practices.md)
-   + 架构引用 {#schema-reference}
-      + [关于架构引用](configuration/using/about-schema-reference.md)
-      + [架构结构](configuration/using/schema-structure.md)
+      + [最佳做法](configuration/using/data-model-best-practices.md)
+   + 模式参考 {#schema-reference}
+      + [关于模式引用](configuration/using/about-schema-reference.md)
+      + [模式结构](configuration/using/schema-structure.md)
       + [数据库映射](configuration/using/database-mapping.md)
       + [元素和属性](configuration/using/elements-and-attributes.md)
-   + 编辑架构 {#editing-schemas}
-      + [关于架构版](configuration/using/about-schema-edition.md)
-      + [数据架构](configuration/using/data-schemas.md)
-      + [现有表的架构](configuration/using/schema-of-an-existing-table.md)
-      + [扩展架构](configuration/using/extending-a-schema.md)
-      + [筛选架构](configuration/using/filtering-schemas.md)
+   + 编辑模式 {#editing-schemas}
+      + [关于模式版](configuration/using/about-schema-edition.md)
+      + [数据模式](configuration/using/data-schemas.md)
+      + [模式现有表](configuration/using/schema-of-an-existing-table.md)
+      + [扩展模式](configuration/using/extending-a-schema.md)
+      + [筛选模式](configuration/using/filtering-schemas.md)
       + [限制PII视图](configuration/using/restricting-pii-view.md)
       + [更新数据库结构](configuration/using/updating-the-database-structure.md)
       + [新建字段向导](configuration/using/new-field-wizard.md)
-      + [数据架构的结构](configuration/using/structure-of-a-data-schema.md)
-      + [重新生成架构](configuration/using/regenerating-schemas.md)
-      + [架构版示例](configuration/using/examples-of-schemas-edition.md)
+      + [数据模式的结构](configuration/using/structure-of-a-data-schema.md)
+      + [再生模式](configuration/using/regenerating-schemas.md)
+      + [模式版示例](configuration/using/examples-of-schemas-edition.md)
    + 输入表单 {#input-forms}
       + [识别表单](configuration/using/identifying-a-form.md)
       + [编辑表单](configuration/using/editing-forms.md)
@@ -682,21 +685,21 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [版本](configuration/using/edition.md)
    + 使用自定义收件人表 {#use-a-custom-recipient-table}
       + [关于自定义收件人表](configuration/using/about-custom-recipient-table.md)
-      + [架构特性](configuration/using/schema-characteristics.md)
+      + [模式特性](configuration/using/schema-characteristics.md)
       + [目标映射](configuration/using/target-mapping.md)
       + [配置界面](configuration/using/configuring-the-interface.md)
       + [种子地址](configuration/using/seed-addresses.md)
-      + [创建滤镜](configuration/using/creating-filters.md)
-      + [使用工作流创建配置文件列表](configuration/using/creating-a-profile-list-with-a-workflow.md)
+      + [创建过滤器](configuration/using/creating-filters.md)
+      + [使用工作流创建用户档案列表](configuration/using/creating-a-profile-list-with-a-workflow.md)
       + [管理工作流](configuration/using/managing-workflows.md)
       + [管理报告](configuration/using/managing-reports.md)
    + 设置Web跟踪 {#setting-up-web-tracking}
       + [关于Web跟踪](configuration/using/about-web-tracking.md)
-      + [Web跟踪模式](configuration/using/web-tracking-mode.md)
-      + [Web跟踪标记：定义](configuration/using/web-tracking-tag--definition.md)
+      + [Web 跟踪模式](configuration/using/web-tracking-mode.md)
+      + [Web 跟踪标记:定义](configuration/using/web-tracking-tag--definition.md)
       + [设置阶段](configuration/using/setup-stages.md)
       + [其他参数](configuration/using/additional-parameters.md)
-      + [创建Web跟踪标记](configuration/using/creating-web-tracking-tags.md)
+      + [创建Web跟踪标签](configuration/using/creating-web-tracking-tags.md)
       + [在站点中插入标记](configuration/using/inserting-tags-in-your-site.md)
       + [收集所有访问](configuration/using/collecting-all-visits.md)
       + [匿名跟踪](configuration/using/anonymous-tracking.md)
@@ -709,10 +712,10 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [开始迁移前](migration/using/before-starting-migration.md)
       + [测试迁移](migration/using/testing-the-migration.md)
       + [配置平台](migration/using/configuring-your-platform.md)
-   + 迁移到Adobe Campaign 7 {#migrating-to-adobe-campaign-7}
-      + [迁移到Adobe Campaign 7的先决条件](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
-      + [在Windows中迁移Adobe Campaign 7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-      + [在Linux中迁移以用于Adobe Campaign v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+   + 迁移到Adobe Campaign7 {#migrating-to-adobe-campaign-7}
+      + [迁移到Adobe Campaign7的先决条件](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
+      + [在Windows中迁移以用于Adobe Campaign7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
+      + [在Linux中迁移以Adobe Campaignv7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
    + 配置 {#configuration}
       + [常规配置](migration/using/general-configurations.md)
       + [v5.11中的特定配置](migration/using/specific-configurations-in-v5-11.md)
