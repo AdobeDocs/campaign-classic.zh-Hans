@@ -1,7 +1,7 @@
 ---
-title: 配置营销活动选项
-seo-title: 配置营销活动选项
-description: 配置营销活动选项
+title: 配置活动选项
+seo-title: 配置活动选项
+description: 配置活动选项
 seo-description: null
 page-status-flag: never-activated
 uuid: 32e85e41-6898-4fb3-90c8-2201ceea2e91
@@ -15,12 +15,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
+source-git-commit: 05831dbcf2450600a9f2f91f87c4440d7e599c9d
 
 ---
 
 
-# 营销活动经典选项列表{#configuring-campaign-options}
+# 列表Campaign Classic选项{#configuring-campaign-options}
 
 该节 **[!UICONTROL Administration / Platform / Options]** 点允许您配置Adobe Campaign选项。
 
@@ -28,7 +28,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
 >
 >修改或更新Adobe Campaign选项只能由专家用户执行。
 
-其中一些是内置的，安装Campaign时，另一些则可以根据需要手动添加。 可用选项因实例中安装的包而异。
+其中一些是内置的，安装活动时可以手动添加，其他则可以根据需要手动添加。 可用选项因实例中安装的包而异。
 
 ## 投放 {#delivery}
 
@@ -50,15 +50,15 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_cuid</span><br /> </td> 
-   <td> 传送报告标识符。 请联系支持部门以获取您的标识符。<br /> </td> 
+   <td> 投放报告标识符。 请联系支持部门以获取您的标识符。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_SeedTargets</span><br /> </td> 
-   <td> 要将测试地址用于收件箱渲染的架构列表。 （元素名称以逗号分隔）例如：custom_nms_recipient。<br /> </td> 
+   <td> 列表要对其使用“收件箱渲染”测试地址的模式。 （元素名称以逗号分隔）例如：custom_nms_收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span><br /> </td> 
-   <td> 收件人最少数量，以便将付款视为计费报告中的主要分发。<br /> </td> 
+   <td> 最低收件人数，以使投放在计费报告中被视为主要的。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_DefaultProvider</span><br /> </td> 
@@ -66,7 +66,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_LogsPerTransac</span><br /> </td> 
-   <td> 一次为分发创建的BroadLog数。<br /> </td> 
+   <td> 一次为投放创建的BroadLog数。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MaxDelayPerTransac</span><br /> </td> 
@@ -74,27 +74,27 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span><br /> </td> 
-   <td> 分析中间来源补充交货时交货部分的分组大小。<br /> </td> 
+   <td> 分析投放投放时中间源部件的分组大小。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MsgValidityDuration</span><br /> </td> 
-   <td> 交付的默认交付期（以秒为单位）。<br /> </td> 
+   <td> 投放的默认投放时间（以秒为单位）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RegexRules</span><br /> </td> 
-   <td> 用于标准化传送消息的正则表达式。<br /> </td> 
+   <td> 用于标准化表达式消息的常规投放。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span><br /> </td> 
-   <td> 输入“1”作为值可排除不再希望联系的收件人。<br /> </td> 
+   <td> 输入“1”作为值可排除不再希望与之联系的收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span><br /> </td> 
-   <td> 输入“1”作为值可自动忽略两倍。<br /> </td> 
+   <td> 输入“1”作为值可自动忽略多次。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span><br /> </td> 
-   <td> Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数据库(nms:recipient)进行对话。<br /> 选项值必须与与外部收件人表匹配的架构的名称相对应。<br /> </td> 
+   <td> Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数据库(nms:收件人)对话。<br /> 选项值必须与与外部模式表匹配的收件人的名称相对应。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMasks</span><br /> </td> 
@@ -106,7 +106,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRetry</span><br /> </td> 
-   <td> 分析期间的最大重试次数。<br /> </td> 
+   <td> 分析期间的最大重试数。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_PublishingScript</span><br /> </td> 
@@ -118,67 +118,67 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDeliveryWizard_ShowDeliveryWeight</span><br /> </td> 
-   <td> 在传送向导中显示消息粗细。<br /> </td> 
+   <td> 在投放向导中显示消息权重。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultErrorAddr</span><br /> </td> 
-   <td> 用户留空时，实例级别的默认“error”电子邮件地址用于电子邮件发送。<br /> </td> 
+   <td> 用户留空时，实例级别的默认“错误”电子邮件地址用于电子邮件投放。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultFromAddr</span><br /> </td> 
-   <td> 用户留空时，实例级别的默认“发件人”电子邮件地址用于电子邮件发送。<br /> </td> 
+   <td> 用户留空时，实例级别的默认“发件人”电子邮件地址用于电子邮件投放。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultReplyToAddr</span><br /> </td> 
-   <td> 如果用户留空，则默认的“回复”电子邮件地址位于用于电子邮件发送的实例级别。<br /> </td> 
+   <td> 用户留空时，实例级别的默认“回复”电子邮件地址用于电子邮件投放。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span><br /> </td> 
-   <td> 客户的通用名称。 用于显示给收件人的某些警告消息。<br /> “您收到此消息是因为您与*****或联属公司联系。 不再接收来自*****”的消息。<br /> </td> 
+   <td> 客户的通用名称。 用于显示给收件人的一些警告消息。<br /> “您收到此消息是因为您与*****或附属公司联系。 不再接收来自*****”的消息。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span><br /> </td> 
-   <td> 如果用户将“发件人”电子邮件标签留空，则默认为实例级别，用于电子邮件发送。<br /> </td> 
+   <td> 如果用户将电子邮件投放留空，则在实例级别的默认“发件人”电子邮件标签用于电子邮件标签。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ReplyToName</span><br /> </td> 
-   <td> 用户留空时，在用于电子邮件发送的实例级别默认的“回复”电子邮件标签。<br /> </td> 
+   <td> 用户留空时，实例级别上用于电子邮件投放的默认“回复”电子邮件标签。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span><br /> </td> 
-   <td> 电子邮件两次重试之间的时间（以秒为单位）。<br /> </td> 
+   <td> 两重试电子邮件之间的时间（以秒为单位）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryPeriod</span><br /> </td> 
-   <td> 电子邮件的重试时间。<br /> </td> 
+   <td> 电子邮件的重试期。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsForecast_MsgWeightFormula</span><br /> </td> 
-   <td> 用于计算临时传送消息的权重的公式。<br /> </td> 
+   <td> 用于计算临时投放消息权重的公式。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInmail_Whitelist电子邮件</span><br /> </td> 
-   <td> 授权转发电子邮件地址列表（来自入站邮件处理模块）。 地址必须用逗号（或*）分隔，才能允许所有地址。 例如xyz@abc.com、pqr@abc.com。<br /> </td> 
+   <td> 列表授权转发电子邮件地址（来自入站邮件处理模块）。 地址必须用逗号（或*）分隔，才能允许所有地址。 例如xyz@abc.com、pqr@abc.com。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span><br /> </td> 
-   <td> 在渠道“email”上（用作默认值）:在将接收者隔离之前，发送过程中SOFT错误被接受的最大错误数。<br /> </td> 
+   <td> 在渠道“email”时（用作默认值）:在将收件人置入隔离之前，对于发送过程中的SOFT错误，可接受的最大错误数。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailInvergientErrorDelay</span><br /> </td> 
-   <td> 在渠道“email”上（用作默认值）:在考虑新的SOFT错误之前，自上一个引用的SOFT错误以来花费的最短时间。<br /> </td> 
+   <td> 在渠道“email”时（用作默认值）:在考虑新的SOFT错误之前，自上一个引用的SOFT错误以来花费的最短时间。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileMaxError</span><br /> </td> 
-   <td> 在渠道“移动”上：在将接收者隔离之前，发送过程中SOFT错误被接受的最大错误数。<br /> </td> 
+   <td> 关于渠道“移动”:在将收件人置入隔离之前，对于发送过程中的SOFT错误，可接受的最大错误数。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileAppriventErrorDelay</span><br /> </td> 
-   <td> 在渠道“移动”上：在考虑新的SOFT错误之前，自上一个引用的SOFT错误以来花费的最短时间。<br /> </td> 
+   <td> 关于渠道“移动”:在考虑新的SOFT错误之前，自上一个引用的SOFT错误以来花费的最短时间。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span><br /> </td> 
-   <td> 镜像页面服务器的URL（默认情况下，应与NmsTracking_ServerUrl相同）。<br /> 在路由定义中未指定URL时，它是电子邮件发送的默认值。<br /> </td> 
+   <td> 镜像页面服务器的URL（默认情况下，应与NmsTracking_ServerUrl相同）。<br /> 在投放定义中未指定URL时，它是电子邮件路由的默认值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span><br /> </td> 
@@ -202,7 +202,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr>
     <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span><br /> </td> 
-   <td><p>在计算正在运行的提交 <span class="uicontrol"><a href="../../workflow/using/campaign.md">数量时</a></span> ,OperationMagt技术工作流会使用此选项。</p>它允许您定义天数，在天数内，状态不一致的交货将从正在运行的交货的计数中排除。</p><p>默认情况下，该值设置为“7”，这意味着将排除早于7天的不一致提交。</p></td> 
+   <td><p>在计算正在运行的投放数 <span class="uicontrol"><a href="../../workflow/using/campaign.md">量时</a></span> ,OperationMgt技术工作流会使用此选项。</p>它允许您定义多少天，在这些天内，状态不一致的投放将从正在运行的投放计数中排除。</p><p>默认情况下，该值设置为“7”，这意味着将排除7天以前不一致的投放。</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span><br /> </td> 
@@ -210,11 +210,11 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_RetryCount</span><br /> </td> 
-   <td> 发送SMS消息时的重试次数。<br /> </td> 
+   <td> 发送SMS消息时的重试数。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_RetryPeriod</span><br /> </td> 
-   <td> 执行SMS消息重试的期间。<br /> </td> 
+   <td> 执行重试SMS消息的期间。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkEmail_Characters</span><br /> </td> 
@@ -230,11 +230,11 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span><br /> </td> 
-   <td><p> 允许您允许负责交付的操作员确认发送（如果指定特定的操作员或操作员组在交付的属性中开始交付）。</p><p> 为此，请通过输入“1”作为值来激活该选项。 要取消激活此选项，请输入“0”。</p><p> 然后，发送确认过程将作为默认操作：只有在交付属性（或管理员）中为发送指定的操作员或操作员组才能确认和执行发送。 请参 <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">阅此部分</a>。</p> </td> 
+   <td><p> 允许您允许负责投放的操作员确认发送(如果指定了特定操作员或操作员组以在投放的属性中启动投放)。</p><p> 为此，请通过输入“1”作为值来激活该选项。 要取消激活此选项，请输入“0”。</p><p> 然后，发送确认过程将作为默认操作：只有在投放属性（或管理员）中为发送指定的操作员或操作员组才能确认和执行发送。 请参 <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">阅此部分</a>。</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMTA_Alert_Delay</span><br /> </td> 
-   <td> 自定义延迟（以分钟为单位），之后传送被视为“延迟”，默认为30分钟。<br /> </td> 
+   <td> 自定义延迟（以分钟为单位），之后投放被视为“延迟”，默认为30分钟。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkBarcode_SpecialChar</span><br /> </td> 
@@ -242,7 +242,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_AESKey</span><br /> </td> 
-   <td> 在“lineImage”servlet中使用AES键对URL（LINE通道）进行编码。<br /> </td> 
+   <td> 在“lineImage”servlet中使用的AES键对URL(LINE渠道)进行编码。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span><br /> </td> 
@@ -254,7 +254,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
-   <td> 添加此选项并带有“0”值，以禁用分发版本的XML代码(右键单击/ <span class="uicontrol">编辑XML源</span> ，或 <span class="uicontrol">CTRL + F4快捷键</span> )。<br /> </td> 
+   <td> 添加此选项并带有“0”值，以禁用投放XML代码版本(右键单击/ <span class="uicontrol">编辑XML源</span> ，或 <span class="uicontrol">CTRL + F4快捷键</span> )。<br /> </td> 
   </tr> 
   <!--<tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
@@ -283,11 +283,11 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span><br /> </td> 
-   <td> 上传期间跳过的图像的URL蒙版列表。<br /> </td> 
+   <td> 列表上传期间跳过的图像的URL蒙版。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
-   <td> 图像上传的配置。 这些值可以是无／跟踪／脚本／列表（可以由运算符的可选设置覆盖）。 </td> 
+   <td> 图像上传的配置。 这些值可以是无／跟踪／脚本/列表（可由运算符的可选设置覆盖）。 </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span><br /> </td> 
@@ -303,7 +303,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span><br /> </td> 
-   <td> 允许您定义存储传送中使用的图像的服务器，以便浏览器获取这些图像。<br /> 对于构建版本&lt;= 5098，我们使用上传到实例的图像的URL。<br /> 对于构建版本&gt; 5098，我们使用交付的公共URL或 <span class="uicontrol">XtkFileRes_Public_URL</span> 选项的URL。<br /> </td> 
+   <td> 允许您定义存储投放中使用的图像的服务器，以便浏览器获取这些图像。<br /> 对于构建版本&lt;= 5098，我们使用上传到实例的图像的URL。<br /> 对于构建版本&gt; 5098，我们改为使用投放的公共URL或 <span class="uicontrol">XtkFileRes_Public_URL</span> 选项的URL。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span><br /> </td> 
@@ -319,16 +319,16 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MsgWebValidityDuration</span><br /> </td> 
-   <td> 交付的在线资源的默认有效期（以秒为单位）。<br /> </td> 
+   <td> 投放的在线资源的默认有效期（以秒为单位）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkFileRes_Public_URL</span><br /> </td> 
-   <td> 公共资源文件的新URL。<br /> </td> 
+   <td> 新的公共资源文件URL。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 营销活动和工作流管理 {#campaign-e-workflow-management}
+## 活动和工作流管理 {#campaign-e-workflow-management}
 
 <table> 
  <thead> 
@@ -340,15 +340,15 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">CrmMarketingActivityWindow</span><br /> </td> 
-   <td> 显示此月数的营销历史记录。<br /> </td> 
+   <td> 营销历史显示此月数。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_Duration</span><br /> </td> 
-   <td> 营销活动的默认有效期（以秒为单位）。<br /> </td> 
+   <td> 活动的默认有效期（以秒为单位）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_LimitConcurrency</span><br /> </td> 
-   <td> 可由OperationMgt工作流开始的一次可处理的交付／工作流／假设／模拟作业的最大数量。<br /> </td> 
+   <td> 由OperationMagt工作流启动的投放/工作流/假设验证/模拟作业的最大数量。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span><br /> </td> 
@@ -368,11 +368,11 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_PausedWorkflowPeriod</span><br /> </td> 
-   <td> 检查已暂停的工作流之间等待的天数。<br /> </td> 
+   <td> 检查暂停的工作流之间等待的天数。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCampaign_Activate_OwnerConfirmation</span><br /> </td> 
-   <td> 通过输入“1”作为值，激活工序所有者的交货验证。 要取消激活此选项，请输入“0”。<br /> </td> 
+   <td> 通过输入“1”作为值，激活工序所有者的投放验证。 要取消激活此选项，请输入“0”。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsAsset_JavascriptExt</span><br /> </td> 
@@ -397,7 +397,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkKey</span><br /> </td> 
-   <td> 此密钥用于加密数据库中的大多数口令。 （外部帐户、LDAP口令……）。<br /> </td> 
+   <td> 此密钥用于加密数据库中的大多数口令。 (外部帐户、LDAP口令……)。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Allow_PrivilegeEscalation</span><br /> </td> 
@@ -421,7 +421,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkTraceDeleteLogin</span><br /> </td> 
-   <td> 输入“1”值，以跟踪mData中包含审核跟踪信息的元素删除，方法是在删除记录之前修改其“修改者”字段。<br /> </td> 
+   <td> 输入“1”值，在删除记录之前，通过修改“修改者”字段，跟踪删除mData中包含审核跟踪信息的元素。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -438,22 +438,22 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">MC_ExcentrixtCustomJs</span><br /> </td> 
-   <td> 个性化的JavaScript库以丰富活动。 必须包含以下两个功能的实现：<br /> 
+   <td> 个性化的JavaScript库以丰富事件。 必须包含以下两个功能的实现：<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> 丰富RtEvents(aiEventId);:丰富和保存数据库中的事件( <span class="uicontrol">aiEventId</span> 对应于处理的实时事件表)。</p> </li> 
-     <li> <p> <span class="uicontrol"></span> mythingBatchEvents(aiEventId);:丰富和保存数据库中的事件( <span class="uicontrol">其中aiEventId</span> 对应于处理的批处理事件的ID表)。</p> </li> 
+     <li> <p> <span class="uicontrol">丰富RtEvents(aiEventId);</span> :丰富和保存数据库中的事件( <span class="uicontrol">其中aiEventId</span> 对应于已处理的实时事件表)。</p> </li> 
+     <li> <p> <span class="uicontrol">mythingBatchEvents(aiEventId);</span> :丰富和保存数据库中的事件( <span class="uicontrol">其中aiEventId</span> 对应于已处理批次事件的ID表)。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_LastUpdateFromBL</span><br /> </td> 
-   <td> 通过交付日志进行上次事件状态更新的日期。<br /> </td> 
+   <td> 通过事件更新上次投放日志状态的日期。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RoutingCustomJs</span><br /> </td> 
-   <td> 要针对路由事件进行个性化的JavaScript库。 必须包含以下两个功能的实现：<br /> 
+   <td> 将JavaScript库个性化以用于路由事件。 必须包含以下两个功能的实现：<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> dispatchRtEvent(iEventId);:返回选定用于处理实时事件的事务性消息的内部名称(其中 <span class="uicontrol">iEventId</span> 对应于所处理实时事件的ID)。</p> </li> 
-     <li> <p> <span class="uicontrol"></span> dispatchBatchEvent(iEventId);:返回选定用于处理批处理事件的事务性消息的内部名称(其中 <span class="uicontrol">iEventId</span> 与所处理的批处理事件的ID相对应)。</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> :返回选定用于处理事务性消息的实时事件的内部名称(其中 <span class="uicontrol">iEventId</span> 与处理的实时事件的ID相对应)。</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> :返回选定用于处理事务性消息的批次事件的内部名称(其中 <span class="uicontrol">iEventId</span> 与处理的批次事件的ID相对应)。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -466,7 +466,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgProcessTimeAlert</span><br /> </td> 
-   <td> 实时事件平均处理时间的警报阈值。<br /> </td> 
+   <td> 实时事件的平均处理时间的警报阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgProcessTimeWarning</span><br /> </td> 
@@ -490,7 +490,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventErrorAlert</span><br /> </td> 
-   <td> 实时事件处理错误的警报阈值。<br /> </td> 
+   <td> 处理实时事件错误的警报阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventErrorWarning</span><br /> </td> 
@@ -510,7 +510,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMinQueueWarning</span><br /> </td> 
-   <td> 已排队实时事件的最小数量的警告阈值。<br /> </td> 
+   <td> 排队实时事件的最小数量的警告阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueAlert</span><br /> </td> 
@@ -518,7 +518,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueWarning</span><br /> </td> 
-   <td> 挂起实时事件队列警告前的阈值。<br /> </td> 
+   <td> 等待实时事件队列警告前的阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventThroughputAlert</span><br /> </td> 
@@ -530,7 +530,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMessageCenter_RoutingBatchSize</span><br /> </td> 
-   <td> 事件路由的重新分组大小。<br /> </td> 
+   <td> 事件路由的重组大小。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_LastRtEventStat</span><br /> </td> 
@@ -538,7 +538,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_MessageCenterURL</span><br /> </td> 
-   <td> 用于发送欢迎消息的消息中心服务器URL（LINE频道）。<br /> </td> 
+   <td> 用于发送欢迎消息的消息中心服务器URL(LINE渠道)。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -568,7 +568,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_EventPurgeDelay</span><br /> </td> 
-   <td><p> 允许您定义从数据库中擦除事件后的延迟。</p><p>在界面中修改延迟后，会自动创建此选项。 如果从选项列表中修改值，应以秒为单位表示。</p><br /> </td> 
+   <td><p> 允许您定义从数据库中擦除事件的延迟。</p><p>在界面中修改延迟后，会自动创建此选项。 如果从选项列表中修改值，应以秒为单位表示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_EventStatPurgeDelay</span><br /> </td> 
@@ -580,11 +580,11 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_QuarantineMailboxFull</span><br /> </td> 
-   <td> <p>允许您定义从数据库中删除隔离的延迟。</p><p> 在界面中修改延迟后，会自动创建此选项。 如果从选项列表中修改值，应以秒为单位表示。</p><br /> </td> 
+   <td> <p>允许您定义从数据库中擦除隔离的延迟。</p><p> 在界面中修改延迟后，会自动创建此选项。 如果从选项列表中修改值，应以秒为单位表示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_RecycledDeliveryPurgeDelay</span><br /> </td> 
-   <td> <p>允许您定义从数据库中擦除循环的交付的延迟。</p><p> 在界面中修改延迟后，会自动创建此选项。 如果从选项列表中修改值，应以秒为单位表示。</p><br /> </td> 
+   <td> <p>允许您定义从数据库中擦除循环投放的延迟。</p><p> 在界面中修改延迟后，会自动创建此选项。 如果从选项列表中修改值，应以秒为单位表示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_RejicesPurgeDelay</span><br /> </td> 
@@ -600,7 +600,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_VisitorPurgeDelay</span><br /> </td> 
-   <td> <p>允许您定义从数据库中删除访客的延迟。</p><p> 在界面中修改延迟后，会自动创建此选项。 如果从选项列表中修改值，应以秒为单位表示。</p><br /> </td> 
+   <td> <p>允许您定义从数据库中擦除访客的延迟。</p><p> 在界面中修改延迟后，会自动创建此选项。 如果从选项列表中修改值，应以秒为单位表示。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_WorkflowResultPurgeDelay</span><br /> </td> 
@@ -635,7 +635,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span><br /> </td> 
-   <td> 允许您为Microsoft SQL server上的工作表配置单独的数据库。 这将优化备份和复制。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)">阅读更多</a><br /> </td> 
+   <td> 允许您为Microsoft SQL Server上的工作表配置单独的数据库，以优化备份和复制。 此选项与临时数据库的名称相对应：如果指定，将在此数据库中写入工作表。 示例：'tempdb.dbo.' （请注意，名称必须以点结尾）。</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">阅读更多</a><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span><br /> </td> 
@@ -658,19 +658,19 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
    <td> 添加到自动生成的内部名称的前缀。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkQuery_Schema_LineCount</span><br /> </td> 
-   <td> xtk:schema和xtk:srcSchema上的查询返回的最大结果数。<br /> </td> 
+   <td> <span class="uicontrol">XtkQuery_模式_LineCount</span><br /> </td> 
+   <td> xtk:模式和xtk:srcSchema上的查询返回的最大结果数。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSequence_AutoGeneration</span><br /> </td> 
-   <td> 此时后创建的所有自定义架构（具有autopk="true"且不具有属性"pkSequence"）将获得一个自动生成的序列"auto_ &lt;schemanamespace&gt; &lt;schemaname&gt; _seq"。 
+   <td> 在此之后创建的所有自定义模式（带autopk="true"且不带属性"pkSequence"）将获得一个自动生成的序列"auto_ &lt;schemanamespace&gt; &lt;schemaname&gt; _seq"。 
    </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span><br /> </td> 
    <td> 在迁移过程中，将根据新版本标准自动重新组织树结构。<br /> 此选项允许您禁用导航树的自动迁移。 如果您使用它，则在迁移后，您必须删除废弃的文件夹，添加新文件夹并运行所有必要的检查。<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> 数据类型：整数</p> </li> 
+     <li> <p> <span class="uicontrol">数据类型：</span> 整数</p> </li> 
      <li> <p> <span class="uicontrol">值（文本）</span> :1 </p> </li> 
     </ul> 仅当现成的导航树进行了太多更改时，才应使用此选项。<br /> 有关此内容的详细信息，请参 <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">阅此部分</a>。<br /> </td> 
   </tr> 
@@ -680,7 +680,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span><br /> </td> 
-   <td> <br /> 与Postupgrade中发生的错误相关的信息，请遵循以下语法： <strong>{内部版本号}:{mode:pre/post/...}:{出现错误的'lessThan'/'greaterOrEquelThan' +子步骤}</strong> </td> 
+   <td> 与Postupgrade中发生的错误相关的信息，请遵循以下语法：<br /><strong>{内部版本号}:{mode:pre/post/...}:{出现错误的'lessThan'/'greaterOrEquelThan' +子步骤}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span><br /> </td> 
@@ -701,11 +701,11 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">AEMResourceTypeFilter</span><br /> </td> 
-   <td> 可在Adobe Campaign中使用的AEM资源类型。 值必须用逗号分隔。<br /> </td> 
+   <td> 可用于Adobe Campaign的AEM资源类型。 值必须用逗号分隔。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span><br /> </td> 
-   <td> 允许您配置Experience cloud触发器。 数据类型为“长文本”，且必须采用JSON格式。 请参 <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">阅如何将Experience Cloud触发器与Adobe Campaign Classic结合使用</a>。<br /> </td> 
+   <td> 允许您配置Experience Cloud触发器。 数据类型为“长文本”，且必须采用JSON格式。 请参 <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">阅如何将Experience Cloud触发器与Adobe Campaign经典结合使用</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span><br /> </td> 
@@ -717,19 +717,19 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span><br /> </td> 
-   <td> 用于集成的Adobe Target服务器。 默认情况下，此选项已被选中。 此值与Adobe Target域服务器相对应，后跟值/m2。 例如：tt.omtrdc.net/m2。<br /> 请参 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">阅此部分</a>。<br /> </td> 
+   <td> 用于集成的Adobe目标服务器。 默认情况下，此选项已被选中。 此值与Adobe目标域服务器相对应，后跟值/m2。 例如：tt.omtrdc.net/m2。<br /> 请参 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">阅此部分</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span><br /> </td> 
-   <td> Adobe target组织名称。 此值与Adobe Target客户端的名称相对应。<br /> 请参 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">阅此部分</a>。<br /> </td> 
+   <td> Adobe目标组织名称。 此值与Adobe目标客户端的名称相对应。<br /> 请参 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">阅此部分</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span><br /> </td> 
-   <td> 用于与Adobe Audience manager集成的选项。<br /> </td> 
+   <td> 用于与Adobe受众管理器集成的选项。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DestinationId</span><br /> </td> 
-   <td> 用于与Adobe Audience manager集成的选项。<br /> </td> 
+   <td> 用于与Adobe受众管理器集成的选项。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span><br /> </td> 
@@ -758,11 +758,11 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_LastCompationSynchControl_</span><br /> </td> 
-   <td> '+ [主张的架构] + "_" + extAccountSource。@executionInstanceId + [命题的架构] + "_" + vars.executionInstanceIdFilter<br /> </td> 
+   <td> '+ [主张的模式] + "_" + extAccountSource。@executionInstanceId + [命题的模式] + "_" + vars.executionInstanceIdFilter<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_LastCompationSynchExec_</span><br /> </td> 
-   <td> '+ [命题架构] + "_" + extAccountSource。@executionInstanceId + "_" + extAccountTarget。@executionInstanceId<br /> </td> 
+   <td> '+ [提案模式] + "_" + extAccountSource。@executionInstanceId + "_" + extAccountTarget。@executionInstanceId<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_SynchWorkflowIds</span><br /> </td> 
@@ -856,7 +856,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Pointer</span><br /> </td> 
-   <td> 指针会跟踪通过其ID和日期处理的最后一个消息事件。<br /> </td> 
+   <td> 指针会跟踪通过其ID和日期处理的最后一条消息事件。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_SecureServerUrl</span><br /> </td> 
@@ -868,7 +868,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ServerUrlList</span><br /> </td> 
-   <td> 用于联系跟踪服务器的URL列表。<br /> </td> 
+   <td> 列表用于联系跟踪服务器的URL。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_UserAgentRules</span><br /> </td> 
@@ -876,11 +876,11 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_WebFormula</span><br /> </td> 
-   <td> 用于计算Web跟踪标签的脚本。<br /> </td> 
+   <td> 用于计算Web 跟踪标记的脚本。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_WebTrackingDelivery</span><br /> </td> 
-   <td> 为Web跟踪管理设计的虚拟交付的名称。<br /> </td> 
+   <td> 为Web跟踪管理而设计的虚拟投放的名称。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_WebTrackingMode</span><br /> </td> 
@@ -942,7 +942,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AutoOperator</span><br /> </td> 
-   <td> 在Adobe Campaign中支持自动创建运营商和权限。<br /> </td> 
+   <td> 支持自动创建Adobe Campaign中的运营商和权利。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DN</span><br /> </td> 
@@ -970,7 +970,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Rights</span><br /> </td> 
-   <td> 启用从LDAP目录到Adobe Campaign中指定权限的授权和组的同步。<br /> </td> 
+   <td> 启用从LDAP目录到Adobe Campaign中已命名权限的授权和组的同步。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsAttr</span><br /> </td> 
@@ -986,7 +986,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsMask</span><br /> </td> 
-   <td> 用于从LDAP授权中提取Adobe Campaign权限名称的表达式。<br /> </td> 
+   <td> 表达式从LDAP授权中提取Adobe Campaign权限的名称。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsScope</span><br /> </td> 
@@ -999,7 +999,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
  </tbody> 
 </table>
 
-## Web表单 {#web-forms}
+## Web 窗体 {#web-forms}
 
 <table> 
  <thead> 
@@ -1023,7 +1023,7 @@ source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span><br /> </td> 
-   <td> 用于指定Web表单的失效模式的选项：默认情况下，如果选项为“跟踪”，则使用跟踪服务器，并将个性化列表与“其他服务器”选项一起使用。<br /> </td> 
+   <td> 用于指定Web表单的失效模式的选项：默认情况下，如果选项为“跟踪”，则使用跟踪服务器，并与“其他服务器”选项使用个性化列表。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURL</span><br /> </td> 
