@@ -12,7 +12,7 @@ discoiquuid: null
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 10419ee0fb466bddd05ab67087ccdbfdda1e48c8
+source-git-commit: 79f8cc179fcbf9d537a1cc889b268a43202d7369
 
 ---
 
@@ -52,8 +52,8 @@ Adobe不断评估产品功能，以确定应用更现代的替代方案取代的
    <tr> 
    <td>Javascript SDK安全性<br></td>
    <td>decryptString<br></td>
-   <td><p>出于安全原因，decryptString API在默认情况下不再可用于新安装。</p> 
-   <p>在指向18.6（及更高版本）的上下文中，此API不再被激活，并且已被decryptPassword函数替换。</p><br> </td>
+   <td><p>出于安全原因， <em>对于新安装，decryptString</em> API在默认情况下不再可用。</p> 
+   <p>在指向18.6（及更高版本）的上下文中，此API不再激活，并已由decryptPassword函数 <em>替换</em> 。</p><br> </td>
   </tr> 
  </tbody> 
 </table>
@@ -125,7 +125,7 @@ Adobe不断评估产品功能，以确定应用更现代的替代方案取代的
    <tr> 
    <td>活动API文档- jsapi.chm文件<br></td>
    <td>Campaign ClassicAPI现在可在专用页面中使用。 如果您使用的是jsapi.chm文件，您现在应该参阅 <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">新的联机版本</a>。</td>
-   <td>&lt;19.1</td>
+   <td>19.1</td>
   </tr> 
   <tr> 
    <td>活动编排——预测营销</td>
