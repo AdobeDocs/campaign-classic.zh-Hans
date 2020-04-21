@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: c8910fdfd07bd835d456baca29710ea927ad20e5
 
 ---
 
@@ -40,7 +40,7 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 弹回邮 [件资格](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) 、电子邮件 [](../../delivery/using/understanding-delivery-failures.md#email-management-rules) 管理规则部分已通过更新的信息得到增强。
 
-Adobe Campaign增强的MTA文章已更新。 现在只适用于Campaign Classic。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-acc-campaign-enhanced-mta.html)
+Adobe Campaign增强的MTA文章已更新。 现在只适用于Campaign Classic。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 ## 2020年3月 {#march-2020}
 
@@ -116,7 +116,7 @@ Hadoop联合数据访问连接器增强——阅 [读更多](../../platform/usin
 
 现在提供了描述Adobe Campaign经典数据模型基础知识以及如何访问每个表的说明的新部分。 [阅读更多](../../configuration/using/about-data-model.md)
 
-Adobe Campaign增强的MTA文章已更新，其中更详细地介绍了在实例上安装特定的类型学包，这些实例不向每条消息添加所需的增强的MTA标题。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
+Adobe Campaign增强的MTA文章已更新，其中更详细的信息是，在不向每条消息添加所需增强的MTA标题的实例上安装特定的排版包。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
 
 与查询设计相关的用例已重新组织为单独的部分。 [阅读更多](../../workflow/using/querying-recipient-table.md)
 
@@ -345,7 +345,7 @@ Campaign ClassicAPI现在在专用页 [面中可用](https://docs.campaign.adobe
 
 “已弃用和已删除的Campaign Classic功能”页面已更新。 [阅读更多](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
-在发行 [说明和旧版发](https://docs.campaign.adobe.com/doc/AC/en/RN.html) 行说明中 [](https://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html)，已为已召回的版本添加了警告。 还增加了17.9、18.4和18.6的累积版本。
+在发行 [说明和](https://docs.campaign.adobe.com/doc/AC/en/RN.html)[旧版发行说明中](https://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html)，已为已召回的版本添加了警告。 还增加了17.9、18.4和18.6的累积版本。
 
 安 [全性](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)、交付 [](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) 、构建 [](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) 升级入门指南已更新。
 
