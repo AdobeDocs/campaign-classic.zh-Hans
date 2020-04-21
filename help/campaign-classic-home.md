@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Adobe Campaign经典产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
+source-git-commit: 12c38d8ccf198b59ce93ee4155940612637b2856
 
 ---
 
@@ -15,6 +15,8 @@ source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
 ## 新增功能
+
+* **[获取支持](https://helpx.adobe.com/campaign/kb/ac-support.html)**</br>&#x200B;访问常见问题解答、最佳实践、帮助资源，并与活动专家和客户关怀团队联系
 
 * **[隐私合规性](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/>&#x200B;了解Adobe Campaign如何帮助您遵守隐私权
 
