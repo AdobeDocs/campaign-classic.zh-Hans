@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 75f195a11170b4213f930deed886f8bf5b0817bc
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -39,6 +39,8 @@ source-git-commit: 75f195a11170b4213f930deed886f8bf5b0817bc
 “使用工作流实现自动化”指南中的使用案例已重新组织为主题部分。 [阅读更多](../../workflow/using/using-the-local-approval-activity.md)
 
 弹回邮 [件资格](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) 、电子邮件 [](../../delivery/using/understanding-delivery-failures.md#email-management-rules) 管理规则部分已通过更新的信息得到增强。
+
+Adobe Campaign增强的MTA文章已更新。 现在只适用于Campaign Classic。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-acc-campaign-enhanced-mta.html)
 
 ## 2020年3月 {#march-2020}
 
@@ -114,7 +116,7 @@ Hadoop联合数据访问连接器增强——阅 [读更多](../../platform/usin
 
 现在提供了描述Adobe Campaign经典数据模型基础知识以及如何访问每个表的说明的新部分。 [阅读更多](../../configuration/using/about-data-model.md)
 
-Adobe Campaign增强的MTA文章已更新，其中更详细的信息是，在不向每条消息添加所需增强的MTA标题的实例上安装特定的排版包。 [阅读更多](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html#impacts)
+Adobe Campaign增强的MTA文章已更新，其中更详细地介绍了在实例上安装特定的类型学包，这些实例不向每条消息添加所需的增强的MTA标题。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
 
 与查询设计相关的用例已重新组织为单独的部分。 [阅读更多](../../workflow/using/querying-recipient-table.md)
 
@@ -152,7 +154,7 @@ Adobe Campaign增强的MTA文章已更新，其中更详细的信息是，在不
 
 **随版本提供的其他文档更新**
 
-Adobe Campaign增强的MTA文档现已推出。 [阅读更多](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)
+Adobe Campaign增强的MTA文档现已推出。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 新增了一节，介绍如何对工作流在活动内保持“开始”状态进行疑难解答。 阅[读更多](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
