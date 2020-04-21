@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0932d0836c53b8dea715f471f9319603140c9950
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -255,7 +255,7 @@ Adobe Campaign过滤器此消息以删除变量内容（如ID、日期、电子�
 * 对于使用无 **Webhooks/EFS的增强MTA的实例****[!UICONTROL Inbound email]** ，这些规则还将用于处理来自增强MTA的同步弹回电子邮件，使用与异步弹回电子邮件相同的电子邮件地址。
 >
 >
-有关Adobe Campaign增强MTA的详细信息，请参阅本 [文档](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+有关Adobe Campaign增强MTA的详细信息，请参阅本 [文档](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 ### 电子邮件管理规则 {#email-management-rules}
 
@@ -291,7 +291,7 @@ Adobe Campaign过滤器此消息以删除变量内容（如ID、日期、电子�
 >
 >对于托管或混合安装，如果您已升级到增强的MTA，并且您的实例具有 **Webhooks/EFS****[!UICONTROL Inbound email]** ，则规则不再用于同步投放失败错误消息。 For more on this, see [this section](#bounce-mail-qualification).
 >
->有关Adobe Campaign增强MTA的详细信息，请参阅本 [文档](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+>有关Adobe Campaign增强MTA的详细信息，请参阅本 [文档](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 #### 域管理 {#domain-management}
 
@@ -308,7 +308,7 @@ Adobe Campaign消息服务器将单个域管 **理规则应用** 到所有域。
 >
 >对于托管或混合安装，如果您已升级到增强的MTA, **[!UICONTROL Domain management]** 则不再使用规则。 **DKIM(DomainKeys Indentifed Mail)** ，电子邮件身份验证签名由增强的MTA对所有域的所有消息执行。 除非在增强的MTA级别 **另有指定，否则它不**&#x200B;会使用发送者ID **、** DomainKeys **或** S/MIME进行签名。
 >
->有关Adobe Campaign增强MTA的详细信息，请参阅本 [文档](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+>有关Adobe Campaign增强MTA的详细信息，请参阅本 [文档](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 #### MX管理 {#mx-management}
 
@@ -324,4 +324,4 @@ For more on MX management, refer to [this section](../../installation/using/emai
 >
 >对于托管或混合安装，如果您已升级到增强的MTA，则不再使用 **[!UICONTROL MX management]** 投放吞吐量规则。 增强的MTA使用其自己的MX规则，该规则允许它根据您自己的历史电子邮件信誉以及来自您发送电子邮件的域的实时反馈，按域自定义您的吞吐量。
 >
->有关Adobe Campaign增强MTA的详细信息，请参阅本 [文档](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+>有关Adobe Campaign增强MTA的详细信息，请参阅本 [文档](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
