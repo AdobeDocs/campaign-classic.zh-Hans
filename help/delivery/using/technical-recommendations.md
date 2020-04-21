@@ -1,6 +1,6 @@
 ---
-title: 使用Adobe Campaign Classic改进交付性的技术建议
-description: 探索可用于提高Adobe Campaign Classic交付率的技术、配置和工具。
+title: 使用Adobe Campaign经典提高可交付性的技术建议
+description: 探索可用于提高Adobe Campaign经典交付率的技术、配置和工具。
 page-status-flag: never-activated
 uuid: 71be1087-e5ff-4a7a-85ca-36803839e72f
 contentOwner: sauviat
@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ### 反向DNS {#reverse-dns}
 
-Adobe Campaign检查是否为IP地址提供了反向DNS，并且这会正确地指向IP。
+Adobe Campaign检查是否为IP地址提供反向DNS，并检查这是否正确指向IP。
 
 网络配置中的一个重要点是确保为传出消息的每个IP地址定义了正确的反向DNS。 这意味着对于给定的IP地址，存在一个反向DNS记录（PTR记录），该记录具有匹配的DNS（A记录），该DNS（记录）循环回初始IP地址。
 
@@ -38,13 +38,13 @@ Adobe Campaign检查是否为IP地址提供了反向DNS，并且这会正确地�
 
 MX规则（邮件eXchanger）是管理发送服务器和接收服务器之间的通信的规则。
 
-更准确地说，它们用于控制Campaign MTA（邮件传输代理）向每个单独的电子邮件域或ISP（例如，hotmail.com、comcast.net）发送电子邮件的速度。 这些规则通常基于ISP发布的限制（例如，每个SMTP连接不包含超过20条消息）。
+更准确地说，它们用于控制活动MTA（邮件传输代理）向每个电子邮件域或ISP（例如，hotmail.com、comcast.net）发送电子邮件的速度。 这些规则通常基于ISP发布的限制（例如，每个SMTP连接不包含超过20条消息）。
 
 有关MX管理的详细信息，请参阅专 [用部分](../../installation/using/email-deliverability.md#mx-configuration)。
 
 ### TLS {#tls}
 
-TLS（传输层安全性）是一种加密协议，可用于保护两个电子邮件服务器之间的连接并保护电子邮件内容不被目标收件人以外的任何人读取。
+TLS（传输层安全性）是一种加密协议，可用于保护两个电子邮件服务器之间的连接并保护电子邮件内容不被任何收件人读取。
 
 ## 身份验证 {#authentication}
 
@@ -80,15 +80,15 @@ DKIM已取代 **DomainKeys身份** 验证。
 
 >[!IMPORTANT]
 >
->对于托管或混合安装，如果您已升级到增强的MTA，则DKIM电子邮件身份验证签名由增强的MTA完成。 作为增强的MTA升级的一部分，本机Campaign MTA的DKIM **[!UICONTROL Domain management]** 签名将在表中关闭。
+>对于托管或混合安装，如果您已升级到增强的MTA，则DKIM电子邮件身份验证签名由增强的MTA完成。 作为增强的MTA升级的一部分，本机活动MTA的DKIM **[!UICONTROL Domain management]** 签名将在表中关闭。
 >
->有关Adobe Campaign增强型MTA的详细信息，请参阅本 [文档](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)。
+>有关Adobe Campaign增强MTA的详细信息，请参阅本 [文档](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 使用DKIM需要一些先决条件：
 
 * **安全性**:加密是DKIM的一个关键元素，确保自2013年春季起DKIM的安全级别为建议的加密大小的最佳实践。 大多数访问提供者不会认为低DKIM密钥有效。
 * **声誉**:信誉基于IP和／或域，但较不透明的DKIM选择器也是需要考虑的关键元素。 选择选择器很重要：避免保留“违约”，因为“违约”可以被任何人使用，因此声誉非常薄弱。 您必须为保留与客户获取通信以 **及身份验证实施不同的** 选择器。
-* **Adobe Campaign选项声明**:在Adobe Campaign中，DKIM私钥基于DKIM选择器和域。 当前，无法使用不同的选择器为同一域／子域创建多个私钥。 无法定义平台或电子邮件中的身份验证必须使用哪个选择器域／子域。 该平台可选择地选择其中一个私钥，这意味着该身份验证有很高的失败概率。
+* **Adobe Campaign选项声明**:在Adobe活动中，DKIM私钥基于DKIM选择器和域。 当前，无法使用不同的选择器为同一域／子域创建多个私钥。 无法定义平台或电子邮件中的身份验证必须使用哪个选择器域／子域。 该平台可选择地选择其中一个私钥，这意味着该身份验证有很高的失败概率。
 
 >[!NOTE]
 >
@@ -99,10 +99,10 @@ DKIM已取代 **DomainKeys身份** 验证。
 
 ### DMARC {#dmarc}
 
-DMARC（基于域的消息身份验证、报告和符合性）是最新的电子邮件身份验证形式，它依赖SPF和DKIM身份验证来确定电子邮件是否通过或失败。 DMARC在两个非常重要的方面具有独特性和强大性：
+DMARC(基于域的消息身份验证、报告和符合性)是最新的电子邮件身份验证形式，它依赖SPF和DKIM身份验证来确定电子邮件是否通过或失败。 DMARC在两个非常重要的方面具有独特性和强大性：
 
 * 符合性——它允许发送方指示ISP如何处理未通过身份验证的消息（例如，不接受它）。
-* 报告——它向发送方提供详细报告，其中显示DMARC验证失败的所有消息，以及每个消息使用的“发件人”域和IP地址。 这使公司能够识别身份验证失败且需要某种类型的“修复”（例如，将IP地址添加到其SPF记录）的合法电子邮件，以及其电子邮件域上网络钓鱼尝试的来源和流行情况。
+* 报告-它向发送方提供详细报告，其中显示DMARC验证失败的所有消息，以及每个消息使用的“发件人”域和IP地址。 这允许公司识别身份验证失败且需要某种类型的“修复”（例如，将IP地址添加到其SPF记录）的合法电子邮件，以及其电子邮件域上网络钓鱼尝试的来源和流行情况。
 
 DMARC可以利用 [250ok生成的报告](https://250ok.com/)。
 
@@ -137,7 +137,7 @@ Recommendations for defining an SPF record:
 
 ## 反馈循环 {#feedback-loop}
 
-通过在ISP级别为用于发送消息的IP地址范围声明给定的电子邮件地址，反馈循环起作用。 ISP将以类似于弹回消息的方式发送到此邮箱，接收者将其报告为垃圾邮件。 应将平台配置为阻止将来向已投诉的用户交付。 即使他们没有使用正确的退出链接，也必须不再联系他们。 ISP将IP地址列入黑名单，正是基于这些抱怨。 根据ISP的不同，投诉率在1%左右会导致IP地址被列入黑名单。
+通过在ISP级别为用于发送消息的IP地址范围声明给定的电子邮件地址，反馈循环起作用。 ISP将以类似于弹回消息的方式发送到此邮箱，收件人将这些消息报告为垃圾邮件。 应将平台配置为阻止将来向投诉的用户投放。 即使他们没有使用正确的退出链接，也必须不再联系他们。 ISP将IP地址列入黑名单，正是基于这些抱怨。 根据ISP的不同，投诉率在1%左右会导致IP地址被列入黑名单。
 
 目前正在制定一个标准来定义反馈循环消息的格式：滥用 [反馈报告格式(ARF)](https://tools.ietf.org/html/rfc6650)。
 
@@ -146,7 +146,7 @@ Recommendations for defining an SPF record:
 * 专用于实例的邮箱，该邮箱可能是弹回邮箱
 * 专用于实例的IP发送地址
 
-在Adobe Campaign中实施简单的反馈循环时，会使用弹回消息功能。 反馈循环邮箱用作弹回邮箱，并定义规则以检测这些邮件。 将邮件报告为垃圾信息的收件人的电子邮件地址添加到隔离列表中。
+在Adobe Campaign中实现简单的反馈循环使用弹回消息功能。 反馈循环邮箱用作弹回邮箱，并定义规则以检测这些邮件。 将邮件报告为垃圾信息的收件人的电子邮件地址会添加到隔离列表。
 
 * 创建或修改弹回邮件规则 **Feedback_loop**, **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** 其原因 **为“拒绝** ”，类型为“ **硬”**。
 * 如果邮箱是为反馈循环专门定义的，请在中创建一个新的外部弹回邮件帐户来定义参数以访问该邮箱 **[!UICONTROL Administration > Platform > External accounts]**。
@@ -162,7 +162,7 @@ nlserver inMail -instance:instance -verbose.
 
 * 复制在任意数量的邮箱上收到的消息，
 * 每个邮箱都用一个实例来选取，
-* 配置实例，以便它们只处理与它们相关的消息：实例信息包含在Adobe Campaign发送的消息的消息ID标题中，因此也位于反馈循环消息中。 只需在实例 **配置文件中指定checkInstanceName** （默认情况下，该实例不进行验证，这可能导致某些地址被错误地隔离）:
+* 配置实例，以便它们只处理与它们相关的消息：实例信息被包括在由Adobe Campaign发送的消息的消息ID头中，因此也位于反馈循环消息中。 只需在实例 **配置文件中指定checkInstanceName** （默认情况下，该实例不进行验证，这可能导致某些地址被错误地隔离）:
 
    ```
    <serverConf>
@@ -170,23 +170,23 @@ nlserver inMail -instance:instance -verbose.
    </serverConf>
    ```
 
-Adobe Campaign的Deliverability服务管理您对以下ISP的反馈循环服务的订阅：AOL、BlueTie、Cox、EarthLink、FastMail、Gmail、Hotmail、HostedEmail、Libero、Mail.ru、MailTrust、OpenSRS、QQ、RoadRunner、Synacor、Telenor、Terra、Unite、USAnine、 USA、X、X、X、X、XALL,Yahoo,Yandex,Zoho。
+Adobe Campaign的可交付性服务管理您对以下ISP的反馈循环服务的订阅:AOL、BlueTie、Cox、EarthLink、FastMail、Gmail、Hotmail、HostedEmail、Libero、Mail.ru、MailTrust、OpenSRS、QQ、RoadRunner、Synacor、Telenor、Terra、Unite、USAne、 USA、X、X、X、XS4X、XALL,Yahoo,Yandex,Zoho。
 
-## 列表——取消订阅 {#list-unsubscribe}
+## 列表-取消订阅 {#list-unsubscribe}
 
-### 关于列表取消订阅 {#about-list-unsubscribe}
+### 关于列表-取消订阅 {#about-list-unsubscribe}
 
-必须添加名为“List-Unsubscribe **** ”的SMTP头，以确保实现最佳的可交付性管理。
+必须添加名为“ **列表-取消订阅** ”的SMTP头，以确保最佳的可交付性管理。
 
-此标题可用作“报告为垃圾邮件”图标的替代内容。 它将在电子邮件界面中显示为取消订阅链接。
+此标题可用作“报告为垃圾邮件”图标的替代内容。 它将在电子邮件界面中显示为退订链接。
 
-使用此功能有助于保护您的声誉，并且反馈将作为取消订阅执行。
+使用此功能有助于保护您的声誉，并将反馈作为退订执行。
 
 >[!NOTE]
 >
 >此功能可从Build 6831获得。
 
-要使用“列表取消订阅”，您必须输入类似于以下内容的命令行：
+要使用“列表-取消订阅”，您必须输入如下所示的命令行：
 
 ```
 List-Unsubscribe: mailto: client@newsletter.example.com?subject=unsubscribe?body=unsubscribe
@@ -196,44 +196,44 @@ List-Unsubscribe: mailto: client@newsletter.example.com?subject=unsubscribe?body
 >
 >以上示例基于收件人表。 如果数据库实现是从另一个表中完成的，请确保用正确的信息重述命令行。
 
-以下命令行可用于创建动态 **List-Unsubscribe**:
+以下命令行可用于创建动态 **列表取消订阅**:
 
 ```
 List-Unsubscribe: mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessageId%
 ```
 
-Gmail、Outlook.com和Microsoft outlook支持此方法，并且可在其界面中直接使用取消订阅按钮。 这种技术降低了投诉率。
+Gmail、Outlook.com和Microsoft Outlook支持此方法，并且可在其界面中直接使用取消订阅按钮。 这种技术降低了投诉率。
 
 ![](assets/s_tn_del_msn_unsubscribe_list.png)
 
 ![](assets/s_tn_del_gmail_unsubscribe_list.png)
 
-您可以通过以下方 **式实施List-Unsubscribe** :
+您可以通过以下 **方式实施列表** -取消订阅：
 
-* 直接在交付模板中添加命令行——请参 [阅此部分](#adding-a-command-line-in-a-delivery-template),
-* 或者，创建排版规则——请参 [阅此部分](#creating-a-typology-rule)。
+* 直接在投放模板中添加命令行——请参 [阅此部分](#adding-a-command-line-in-a-delivery-template),
+* 或创建类型规则-请参 [阅此部分](#creating-a-typology-rule)。
 
-### 在分发模板中添加命令行 {#adding-a-command-line-in-a-delivery-template}
+### 在投放模板中添加命令行 {#adding-a-command-line-in-a-delivery-template}
 
 必须在电子邮件的SMTP头的其他部分中添加命令行。
 
-此增补功能可在每封电子邮件中或在现有的分发模板中完成。 您还可以创建包含此功能的新分发模板。
+此增补功能可在每封电子邮件中或在现有投放模板中完成。 您还可以创建包含此功能的新投放模板。
 
-### 创建排版规则 {#creating-a-typology-rule}
+### 创建类型规则 {#creating-a-typology-rule}
 
 规则必须包含生成命令行的脚本，并且必须包含在电子邮件标题中。
 
 >[!NOTE]
 >
->我们建议创建一个类型规则：列表取消订阅功能将自动添加到每封电子邮件中。
+>我们建议创建类型规则:列表取消订阅功能将自动添加到每封电子邮件中。
 
-1. 列表——取消订阅：&lt;mailto:unsubscribe@domain.com>
+1. 列表-取消订阅：&lt;mailto:unsubscribe@domain.com>
 
-   单击取 **消订阅** (Unsubscribe)链接可打开用户的默认电子邮件客户端。 此排版规则必须添加到用于创建电子邮件的排版中。
+   单击取 **消订阅** (Unsubscribe)链接可打开用户的默认电子邮件客户端。 此类型规则必须添加到用于创建电子邮件的类型学中。
 
-1. 列表——取消订阅： `<https://domain.com/unsubscribe.jsp>`
+1. 列表-取消订阅： `<https://domain.com/unsubscribe.jsp>`
 
-   单击“取 **消订阅** ”链接会将用户重定向到您的取消订阅表单。
+   单击“ **取消订阅** ”链接会将用户重定向到您的退订表单。
 
    例如：
 
@@ -245,35 +245,35 @@ Gmail、Outlook.com和Microsoft outlook支持此方法，并且可在其界面�
 
 SMTP（简单邮件传输协议）是用于电子邮件传输的因特网标准。
 
-未通过规则检查的SMTP错误列在 **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** >文 **[!UICONTROL Delivery log qualification]** 件夹中。 默认情况下，这些错误消息被解释为不可访问的软错误。 如果要正确限定来自SMTP服务器的反馈，则必须识别最常见的错误，并在 **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** 中添加相应的规则。 否则，平台将执行不必要的重试（未知用户的情况）或在给定数量的测试后错误地将某些收件人置于隔离中。
+未通过规则检查的SMTP错误列在 **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** >文 **[!UICONTROL Delivery log qualification]** 件夹中。 这些错误消息默认解释为不可到达的软错误。 如果要正确限定来自SMTP服务器的反馈，则必须识别最常见的错误，并在 **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** 中添加相应的规则。 否则，平台将执行不必要的重试(未知用户情况)，或在给定数量的测试后错误地将某些收件人放在隔离中。
 
 ### 专用IP {#dedicated-ips}
 
-Adobe为每位客户提供专用的IP战略，提供一个升级的IP，以建立声誉并优化交付性能。
+Adobe为每位客户提供专用的IP战略，提供一个升级的IP，以建立声誉并优化投放性能。
 
-## IP认证 {#ip-certification}
+## IP 认证 {#ip-certification}
 
-IP认证是一项白名单和发送实践程序，可帮助确保接收电子邮件时不会被防垃圾邮件过滤器或其他电子邮件阻止系统阻止。
+IP认证是一个白名单和发送实践项目，它有助于确保接收电子邮件时不会被反垃圾邮件过滤器或其他电子邮件拦截系统阻止。
 
-目前，两家提供商提供IP认证：退回路径和认证发送方联盟。
+目前有两个优惠IP认证的提供商：退回路径和认证发送方联盟。
 
-已验证的发送者会添加到全球邮箱提供商和电子邮件安全公司使用的电子邮件白名单中。 这些商业白名单基于一个系统，该系统允许发送方完全绕过防垃圾邮件过滤器，或在他们进入系统时分配增量点。
+已验证的发送方会添加到全球邮箱提供商和电子邮件安全公司使用的电子邮件白名单中。 这些商业白名单基于一个系统，该系统允许发送方完全绕过防垃圾邮件过滤器，或在他们进入系统时分配增量点。
 
-Return [Path Certification计划提供了许多优势](https://www.validity.com/products/returnpath/certification/) ，包括：
+Return [Path Certification项目优惠了许多优势](https://www.validity.com/products/returnpath/certification/) ，包括：
 
 * 在Microsoft、AOL、Yahoo、Gmail、Comcast、Orange、Mail.ru等顶级邮箱提供商处放置收件箱的量度增加
-* 在Cloudmark、SpamAssassin和Cisco Ironport等关键过滤器上享有良好的声誉和待遇
+* 在Cloudmark、SpamAssassin和Cisco Ironport等关键过滤器享有良好声誉和待遇
 * 专门负责24/7全天候监控的合规团队提供安全警报，并通过解决任何妥协与您合作
 * 邮箱提供商数据提供有关KPI、位置和认证效果的详细信息
 * 简化和更快的IP加温，包括在迁移或获取新IP地址时更高的信誉和识别度
 
-认证发 [](https://certified-senders.org/certification-process/) 送方联盟认证提供以下优势之一：
+认证发 [送方联盟认证优惠](https://certified-senders.org/certification-process/) ，还有以下优势：
 
 * 符合高质量标准的商业电子邮件发送者的认证
-* 改进了商业电子邮件的发送和发送功能，以提高收件箱的放置率并减少垃圾邮件过滤
+* 改进了商业电子邮件的投放和交付能力，以提高收件箱的放置率并减少垃圾邮件过滤
 * 通过完全遵守法律标准，保护客户免受法律和财务风险
 * 通过CSA投诉办公室的早期警告和每日垃圾邮件陷阱报告保护声誉
 
 ISP可免费使用这些服务，ISP的数量可能因白名单而异。
 
-但是，由于越来越多的ISP根据每个收件箱所有者的行为而不是分析邮件内容本身来构建防垃圾邮件过滤器，使用IP认证无法保证收件箱的放置甚至发送。
+但是，由于越来越多的ISP根据每个收件箱所有者的行为而不是分析邮件内容本身来构建其防垃圾邮件过滤器，使用IP认证无法保证收件箱的放置甚至投放。
