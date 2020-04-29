@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c8910fdfd07bd835d456baca29710ea927ad20e5
+source-git-commit: 0b3622bb0ac95eff61e2d96332e67623dffa68be
 
 ---
 
@@ -134,7 +134,7 @@ Adobe Campaign增强的MTA文章已更新，其中更详细的信息是，在不
 
 “WdbcOptions_TempDbName”选项已添加到列表活动选项。 [阅读更多](../../installation/using/configuring-campaign-options.md)
 
-联合数据访问矩阵页面已移到此 [处](/help/rn/using/assets/fda_rdbms_rights.pdf)。
+联合数据访问矩阵页面已移到此 [处](../../platform/using/remote-database-access-rights.md)。
 
 “访问权限矩阵”页面已移到此 [处](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)。
 
@@ -345,7 +345,7 @@ Campaign ClassicAPI现在在专用页 [面中可用](https://docs.campaign.adobe
 
 “已弃用和已删除的Campaign Classic功能”页面已更新。 [阅读更多](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
-在发行 [说明和](https://docs.campaign.adobe.com/doc/AC/en/RN.html)[旧版发行说明中](https://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html)，已为已召回的版本添加了警告。 还增加了17.9、18.4和18.6的累积版本。
+在发行 [说明和旧版发](https://docs.campaign.adobe.com/doc/AC/en/RN.html) 行说明中 [](https://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html)，已为已召回的版本添加了警告。 还增加了17.9、18.4和18.6的累积版本。
 
 安 [全性](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)、交付 [](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) 、构建 [](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) 升级入门指南已更新。
 
