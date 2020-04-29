@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
@@ -27,13 +27,13 @@ source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>一般可用性</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Release Candidate</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>不再可用</strong></td> 
-   <td><img src="assets/red3.png"/><strong>已弃用</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>一般可用性</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>Release Candidate</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>不再可用</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>已弃用</strong></td> 
   </tr> 
    <tr> 
-   <td>提供最新的稳定版本。 构建在生产中验证的内容。<br> </td>
+   <td>提供最新的稳定版本。 构建在生产中经过验证的内容。<br> </td>
    <td>由Adobe验证的构建。 等待生产校样。<br> </td>
    <td>可用于错误修复的更新版本。 需要更新。<br> </td>
    <td>包含已知的回归。 更新是必需的。<br> </td>
@@ -41,9 +41,9 @@ source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
  </tbody> 
 </table>
 
-最 **后一个稳定版本** 为9032(205c981c3)。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+最 **后一个稳定版本** 为9032(3a9dc9c)。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/orange_2.png) 版本19.1.6 —— 内部版本9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/orange_2.png) 版本19.1.6 —— 内部版本9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -59,7 +59,7 @@ _2019年10月3日_
 * 修复了可能导致某些消息未由中间源服务器处理的问题。 (NEO-12395)
 * 修复了阻止充分使用SQL数据管理活动(缺少名为right的“SQL数据管理”)的问题。
 
-## ![](assets/orange_2.png) 版本19.1.5 —— 内部版本9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/orange_2.png) 版本19.1.5 —— 内部版本9033{#release-19-1-5-build-9033}
 
 _2019年8月13日_
 
@@ -74,31 +74,35 @@ _2019年8月13日_
 
 ## 版本19.1.4 —— 内部版本9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 2020 **年3月5日**:新版本(9032-...205c981c3)，其中包括以下修复：
+![](assets/do-not-localize/green_2.png) 2020 **年4月29日**:new build(9032@3a9dc9c)，其中包括以下修复：
+
+* 改进了跟踪电子邮件中链接的安全性。 默认情况下，所有客户都启用此功能。 另外，还提供了增强的安全功能，可通过联系客户服务部门来启用此功能。 有关非托管客户启用此功能的功能和步骤的更多详细信息，请参阅安 [全和隐私清单](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
+* 修复了一个问题，该问题可能会阻止图像显示在“行投放”上。 (NEO-23207)
+
+![](assets/do-not-localize/orange_2.png) 2020 **年3月5日**:new build(9032@19f73c5)，其中包括以下修复：
 
 * 修复了使用FTP over SSL的外部帐户存在的问题。 (NEO-20498)
 
-![](assets/orange_2.png) 2019 **年12月17日**:新版本(9032-...9d34fb17e)，包括以下修复：
+![](assets/do-not-localize/orange_2.png) 2019 **年12月17日**:new build(9032@d6b8062)，其中包括以下修复：
 
-* 修复了以下通信渠道的跟踪问题：移动(SMS、MMS)、推送(iOS、Android)和社交网络(Facebook、Twitter)。
-(NEO-19595)
+* 修复了以下通信渠道的跟踪问题：移动(SMS、MMS)、推送(iOS、Android)和社交网络(Facebook、Twitter)。 (NEO-19595)
 
-![](assets/orange_2.png) 2019 **年12月11日**:新版本(9032-...e28b428b7)，包括以下修复：
+![](assets/do-not-localize/orange_2.png) 2019 **年12月11日**:new build(9032@bc4a935)，其中包括以下修复：
 
 * 修复了在发送包含MSSQL数据库的消息时的性能问题。 (NEO-17558)
 
-![](assets/orange_2.png) 2019 **年11月20日**:新版本(9032-...3468c7bb5)，包含以下修复：
+![](assets/do-not-localize/orange_2.png) 2019 **年11月20日**:new build(9032@3468c7b)，其中包括以下修复：
 
 * 修复了通过IMS身份验证的登录问题。 (NEO-17312)
 * 修复了在多个投放上显示累积报告时的问题。 (NEO-18165)
 * 修复了可能阻止或导致Web服务器崩溃的问题。
 
-![](assets/orange_2.png) 2019 **年9月19日**:新版本(9032-...cee805c93)，其中包括以下修复：
+![](assets/do-not-localize/orange_2.png) 2019 **年9月19日**:new build(9032@cee805c)，其中包括以下修复：
 
 * 修复了在使用CRM Connector for Salesforce时的问题。 (NEO-17712)
 * 修复了在发送事务性消息时可能导致性能问题的索引问题。
 
-![](assets/orange_2.png) 2019 **年8月13日**:初始19.1.4版本，包括以下修复：
+![](assets/do-not-localize/orange_2.png) 2019 **年8月13日**:初始19.1.4版本，包括以下修复：
 
 * 修复了调度程序活动在向导配置过程中生成不需要的错误消息的问题。 从NEO-11662还原更新。 (NEO-17097)
 * 修复了由NEO-12727导致的回归，该回归可能导致在执行两次测试活动时工作流停止。 (NEO-16835)
@@ -106,7 +110,7 @@ _2019年8月13日_
 * 修复了DKIM密钥的问题，该问题不再嵌入到电子邮件中，从而导致可交付性问题。 (NEO-16804)
 * 修复了工作流计划的各种问题。 工作流计划每天执行一次，而不考虑调度程序配置。 (NEO-16619, NEO-16426)
 
-## ![](assets/orange_2.png) 版本19.1.2 —— 内部版本9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/orange_2.png) 版本19.1.2 —— 内部版本9029{#release-19-1-2-build-9029}
 
 _2019年6月21日_
 
@@ -122,7 +126,7 @@ _2019年6月21日_
 * 现在，我们允许在导入工作流程期间删除在Microsoft Dynamics中创建的虚拟记录。
 * 改进了在使用内部帐户时执行安全区包的权限。
 
-## ![](assets/orange_2.png) 版本19.1 —— 内部版本9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/orange_2.png) 版本19.1 —— 内部版本9026{#release-19-1-build-9026}
 
 _2019年5月30日_
 
@@ -138,7 +142,7 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>要提高管理员用户的工作效率，请通过监控存储、将IP地址列入白名单以及为每个实例安装SSH密钥来管理SFTP服务器的设置。 请注意，控制面板仅适用于今天起在AWS上托管的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天通过Experience Cloud登录</a>)。</p> <p>有关详细信息，请参 <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">阅详细文档</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">和操作方法视频</a>。 </p><p>注意：访问控制面板不需要升级到最新的活动版本。</p> </td> 
+   <td> <p>要提高管理员用户的工作效率，请通过监控存储、将IP地址列入白名单以及为每个实例安装SSH密钥来管理SFTP服务器的设置。 请注意，控制面板仅适用于今天起在AWS上托管的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天通过Experience Cloud登录</a>)。</p> <p>有关详细信息，请参 <a href="https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html">阅详细文档</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">和操作方法视频</a>。 </p><p>注意：访问控制面板不需要升级到最新的活动版本。</p> </td> 
   </tr> 
     <tr> 
    <td> 审核跟踪<br /> </td> 
