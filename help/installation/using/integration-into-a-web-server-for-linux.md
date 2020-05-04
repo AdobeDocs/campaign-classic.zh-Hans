@@ -15,39 +15,39 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
+source-git-commit: 4fbc576ba65c44d91ac87ea2967fac3b0a88a040
 
 ---
 
 
 # 集成到Linux的Web服务器{#integration-into-a-web-server-for-linux}
 
-Adobe Campaign包含Apache Tomcat，它通过HTTP（和SOAP）充当应用程序服务器中的入口点。
+Adobe Campaign包括Apache Tomcat，它通过HTTP（和SOAP）充当应用程序服务器中的入口点。
 
 您可以使用此集成的Tomcat服务器来提供HTTP请求。
 
-在这种情况下：
+在本例中：
 
-* 默认监听端口为8080。 要更改它，请参阅配 [置Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat)。
+* 默认监听端口为8080。 要更改它，请参阅 [配置Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat)。
 * 然后，客户端控制台使用URL进行连接，如：
 
    ```
    http://<computer>:8080
    ```
 
-但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开对网络外控制台的访问时，我们建议使用专用Web服务器作为HTTP通信的主要入口点。
+但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开对网络外控制台的访问时，我们建议使用专用Web服务器作为HTTP通信的主入口点。
 
 Web服务器还允许您使用HTTP协议保证数据的机密性。
 
-同样，当您希望使用跟踪功能时，必须使用Web服务器，该功能仅作为Web服务器的扩展模块可用。
+同样，当您希望使用跟踪功能时，必须使用Web服务器，该功能仅作为Web服务器的扩展模块提供。
 
 >[!NOTE]
 >
->如果不使用跟踪功能，则可以通过重定向到Campaign来执行Apache或IIS的标准安装。 无需跟踪Web服务器扩展模块。
+>如果不使用跟踪功能，则可以通过重定向到活动来执行Apache或IIS的标准安装。 无需跟踪Web服务器扩展模块。
 
-## 使用Debian配置Apache web服务器 {#configuring-the-apache-web-server-with-debian}
+## 使用Debian配置Apache Web服务器 {#configuring-the-apache-web-server-with-debian}
 
-如果您在基于APT的分发下安装了Apache，则此过程适用。
+如果已在基于APT的分发下安装Apache，则此过程适用。
 
 应用以下步骤：
 
@@ -57,21 +57,21 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   确保 **别名**、authz_host **** 和mime **** 模块仍处于启用状态。 为此，请使用以下命令：
+   确保别 **名**、 **authz_host****** 和mime模块仍然启用。 为此，请使用以下命令：
 
    ```
    a2enmod  alias authz_host mime
    ```
 
-1. 在 **/etc/apache2/mods-available中创建文件nlsrv.load** ，并插入以下内容 **** :
+1. 在/etc/ **apache** 2/mods-available **中创建nlsrv.load文件** ，并插入以下内容：
 
-   在德边8中：
+   在德比安8:
 
    ```
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
    ```
 
-1. 使用以 **下命令在** /etc/apache2/mods-available中创建文件 **** nlsrv.conf:
+1. 使用以 **下命令** 在/etc/apache2/mods-available中创建nlsrv **** .conf文件：
 
    ```
    ln -s /usr/local/[INSTALL]/nl6/tomcat-7/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
@@ -83,7 +83,7 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
     a2enmod nlsrv
    ```
 
-   如果您使用Adobe Campaign页的 **mod_rewrite** 模块，则需要将 **nlsrv.** 和 **nlsrv.conf文件重命名为********** lsrv.nlsrv.nzz和jzz-lsrv.conf负载重命名为jlsrv.load.srv.conf文件。 要激活模块，请运行以下命令：
+   如果对Adobe Campaign页 **使用mod_rewrite** 模块，则需要将nlsrv.load **和** nlsrv.conf文件重命名 **为zz-nlsrv.load**********&#x200B;和zz-nlsrv.conf。 要激活模块，请运行以下命令：
 
    ```
    a2enmod zz-nlsrv
@@ -112,9 +112,9 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
    invoke-rc.d apache2 restart
    ```
 
-## 在RHEL中配置Apache web服务器 {#configuring-apache-web-server-in-rhel}
+## 在RHEL中配置Apache Web服务器 {#configuring-apache-web-server-in-rhel}
 
-如果您在基于RPM（RHEL、CentOS和Suse）的包下安装并保护了Apache，则此过程适用。
+如果您已在基于RPM（RHEL、CentOS和Suse）的包下安装并保护Apache，则此过程适用。
 
 应用以下步骤：
 
@@ -141,7 +141,7 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
    userdir
    ```
 
-   对链接到取消激活模块的函数进行注释：
+   对链接到已取消激活模块的函数进行注释：
 
    ```
    DirectoryIndex
@@ -157,9 +157,9 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
    ForceLanguagePriority
    ```
 
-1. 在文件夹中创建特定于Adobe Campaign的配置 `/etc/httpd/conf.d/` 文件。 例如 `CampaignApache.conf`
+1. 在文件夹中创建Adobe Campaign特定配置 `/etc/httpd/conf.d/` 文件。 For example `CampaignApache.conf`
 
-1. 对 **于RHEL7**，在文件中添加以下说明：
+1. 对 **于RHEL** 7，在文件中添加以下说明：
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
@@ -183,7 +183,7 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
    systemctl daemon-reload
    ```
 
-1. 然后，通过运行以下命令，将Adobe Campaign操作符添加到Apache操作符组中，反之亦然：
+1. 然后，通过运行以下命令，将Adobe Campaign运算符添加到Apache运算符组，反之亦然：
 
    ```
    usermod -a -G neolane apache
@@ -209,7 +209,7 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
  /etc/init.d/apache start
 ```
 
-此时将显示以下信息：
+将显示以下信息：
 
 ```
 12:26:28 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -222,31 +222,31 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
 
 接下来检查它是否通过提交测试URL做出响应。
 
-您可以通过执行以下操作，从命令行测试：
+您可以通过执行以下操作，从命令行测试此功能：
 
 ```
  telnet localhost 80  
 ```
 
-您应当获得：
+您应获得：
 
 ```
 Trying 127.0.0.1...
 Connected to localhost.localdomain.
 Escape character is '^]'.
-````
+```
 
 然后输入：
 
 ```
 GET /r/test
-````
+```
 
-此时将显示以下信息：
+将显示以下信息：
 
 ```
 <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='' localHost='XXXX'/>
 Connection closed by foreign host.
-````
+```
 
-您还可以从Web浏览器 [`https://<computer>`](https://machine/r/test) 请求该URL。
+您还可以从Web浏 [`https://<computer>`](https://machine/r/test) 览器请求URL。
