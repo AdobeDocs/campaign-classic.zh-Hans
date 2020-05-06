@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c5a9823b2feb6e2f721a2ad15dc08c1abe672054
+source-git-commit: 928c2d944bb9709b54a41b07e8828646f2601cb9
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -45,9 +48,9 @@ Adobe Campaign 目前提供英语、法语、德语和日语共 4 种语言的�
 
 ## 如何配置电子邮件可投放性? {#how-to-configure-email-deliverability-}
 
-除了阅读[可投放性入门](https://docs.adobe.com/content/help/en/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html)，请参阅有关电子邮件可投放性配置的部分，了解如何配置您的实例，以充分利用 Campaign 的投放功能。
+除了“可交付 [性配置](../../delivery/using/about-deliverability.md#configuration) ”部分，请阅读可交付性技术建议，了解如何配置实例以最大化活动交付能力。
 
-[单击此处了解更多信息](../../installation/using/email-deliverability.md)。
+[单击此处了解更多信息](../../delivery/using/technical-recommendations.md)。
 
 ## How can I implement content approval? {#how-can-i-implement-content-approval-}
 
@@ -79,19 +82,19 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 请参阅[配置 CRM 连接器](../../platform/using/crm-connectors.md)，了解如何将 CRM 工具与 Adobe Campaign 同步。观看有关[Adobe Campaign 与 Microsoft Dynamics 365 集成](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)的用例视频。
 
-## 如何在问题特定于计算机或特定于用户时执行软缓存清除？ {#perform-soft-cache-clear}
+## 当问题特定于计算机或用户特定时，如何执行软缓存清除？ {#perform-soft-cache-clear}
 
-如果您遇到了新徽标正确反映的问题，能够成功导出计算机特定／用户特定的数据，则可能需要在Windows(Windows 7、Windows XP、Windows 10)上执行软缓存清除。
+如果您遇到问题，如新徽标正确反映，能够成功导出计算机特定／用户特定的数据，则可能需要在Windows(Windows 7、Windows XP、Windows 10)上执行软缓存清除。
 
-登录后，转到 **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**。 之后，注销并重新登录。
+登录后，转到 **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**。 此后，注销并重新登录。
 
 ![](assets/faq_soft_cache.png)
 
 如果这仍然无效，请尝试通过执行以下步骤清除硬缓存。
 
-## 如何在问题特定于计算机或特定于用户时执行硬缓存清除？ {#perform-hard-cache-clear}
+## 当问题是特定于计算机或特定于用户时，如何执行硬缓存清除？ {#perform-hard-cache-clear}
 
-如果您遇到了新徽标正确反映的问题，能够成功导出计算机特定／用户特定的数据，则可能需要在Windows(Windows 7、Windows XP、Windows 10)上执行硬缓存清除。
+如果您遇到问题，如新徽标正确反映、能够成功导出计算机特定／用户特定的数据，则可能需要在Windows(Windows 7、Windows XP、Windows 10)上执行硬缓存清除。
 
 1. 在客户端控制台上，选择 **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**。
 
@@ -99,13 +102,13 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 1. 根据您的操作系统版本，转到以下位置：
 
-   * Windows 7:C:\Users\&lt;用户名>\AppData\Roaming\Neolane\NL_5\
-   * Windows XP:C:\Documents and Settings\&lt;用户名>\Application Data\Neolane\NL_5
-   这里您将看到许多名为nlclient-config-&lt;字母数字值>.xml的xml文件。
+   * Windows 7: C:\Users\&lt;用户名>\AppData\Roaming\Neolane\NL_5\
+   * Windows XP: C:\Documents and Settings\&lt;用户名>\Application Data\Neolane\NL_5
+   在这里，您将看到许多名为nlclient-config-&lt;字母数字值>.xml的xml文件。
 
 1. 删除这些xml文件和关联的文件夹。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >请勿删除nlclient_cnx.xml文件。
 
