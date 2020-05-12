@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a30c4a2d31c3f674ac4a7bb4827a6951b36014ab
+source-git-commit: 74e1a883088d347cb1aab05d76b630c912411fc4
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,14 @@ ht-degree: 0%
 
 * 该 **[!UICONTROL Delivery throughput]** 报告概述了给定时间段内整个平台的吞吐量。 For more on this, see [this section](../../reporting/using/global-reports.md#delivery-throughput).
 * 该报 **[!UICONTROL Technical deliverability monitoring]** 告包含多个平台的可交付性质量指标。 For more on this, see [this section](#technical-deliverability-monitoring).
-* 投放 [仪表板](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) ，您可以访问 [投放摘要](../../delivery/using/monitoring-a-delivery.md#delivery-summary)、投放日志 [、历史记录](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)[、跟踪日志](../../delivery/using/monitoring-a-delivery.md#tracking-logs)。 它们显示发送的详细信息、已排除的目标、原因以及打开和单击等跟踪信息。 <!--For more on this, see [Monitoring a delivery](../../delivery/using/monitoring-a-delivery.md).-->
-* 您还可以检查要发送、处理并成功发送的邮件数。 For more on this, see [this section](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent)
-   <!--[SpamAssassin](../../installation/using/configuring-spamassassin.md)?-->
+* 每个投放为不同的Internet服务提供商(ISP)生成广播统计报告。 它显示一些可能影响您的交付能力的数据质量和信誉指标，包括以下数字：
+   * **[!UICONTROL Hard bounces]** 指示数据质量。 此数字应小于2%。
+   * **[!UICONTROL Soft bounces]** 表明声誉。 对于任何给定的ISP，此数字不应高于10%。
+   有关此方面的详细信息，请参 [阅投放统计](../../reporting/using/global-reports.md#delivery-statistics) 部分。
+* 更一般地说， [投放仪表板](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) 允许您访问：
+   * 投放 [摘要](../../delivery/using/monitoring-a-delivery.md#delivery-summary)，显示发送的详细信息以及发送、 [处理和发送的消息数](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) ;
+   * 投放日志 [和历史](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)，这些目标显示哪些被排除，以及原因；
+   * 跟踪日志 [符](../../delivery/using/monitoring-a-delivery.md#tracking-logs)，显示打开和单击等跟踪信息。
 
 ## 监控指南 {#monitoring-guidelines}
 
