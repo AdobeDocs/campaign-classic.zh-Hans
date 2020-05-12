@@ -5,10 +5,10 @@ index: y
 product: adobe campaign
 sub-product: adobe活动经典
 translation-type: tm+mt
-source-git-commit: 2ba9efa49f26559786641ff5e1caa9c481f770b2
+source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2078'
+ht-degree: 10%
 
 ---
 
@@ -532,9 +532,7 @@ ht-degree: 0%
       + [消息中心服务级别](message-center/using/message-center-service-level.md)
       + [消息中心处理时间](message-center/using/message-center-processing-time.md)
    + 用例 {#use-case}
-      + [用途](message-center/using/purpose.md)
-      + [重要说明](message-center/using/important-notes.md)
-      + [实施](message-center/using/implementation.md)
+      + [发送带有附件的交易电子邮件](message-center/using/transactional-email-with-attachments.md)
 + 与社交媒体集成 {#integrating-with-social-media}
    + [关于社交营销](social/using/about-social-marketing.md)
    + 配置 {#configuration}
@@ -651,7 +649,7 @@ ht-degree: 0%
       + [密码丢失](production/using/lost-password.md)
       + [JSP行为](production/using/jsp-behavior.md)
 + 配置Campaign Classic {#configuring-campaign-classic}
-   + 数据模型 {#data-model}
+   + Data model {#data-model}
       + [关于数据模型](configuration/using/about-data-model.md)
       + [数据模型描述](configuration/using/data-model-description.md)
       + [最佳做法](configuration/using/data-model-best-practices.md)
