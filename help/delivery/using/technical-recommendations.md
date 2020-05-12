@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f73f6bc4cbc00c1b4e2f2a75e27a3056b517006
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2432'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ MX规则（邮件eXchanger）是管理发送服务器与接收服务器之间通
 
 更准确地说，它们用于控制活动MTA（邮件传输代理）向每个电子邮件域或ISP（如hotmail.com、comcast.net）发送电子邮件的速度。 这些规则通常基于ISP发布的限制（例如，每个SMTP连接不包含20条以上的邮件）。
 
-有关MX管理的详细信息，请参阅专 [门的部分](../../installation/using/email-deliverability.md#mx-configuration)。
+For more on MX management, refer to [this section](../../installation/using/email-deliverability.md#mx-configuration).
 
 ### TLS {#tls}
 
