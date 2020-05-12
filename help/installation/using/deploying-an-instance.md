@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '3055'
+ht-degree: 0%
 
 ---
 
@@ -160,7 +163,7 @@ source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
 * **[!UICONTROL Address for errors]** : 填写此字段以仅将inMail进程无法确认的错误消息传输到第三方地址。
 * **[!UICONTROL SMTP server]** : 服务器用于发送未处理的弹回电子邮件。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >要转发未处理的弹回电子邮件，Adobe建议仅填写字 **[!UICONTROL Address for errors]** 段。 但是，请确保定期检查所使用的地址，因为这可能会给邮件服务器带来沉重负载。 有关详细信息，请与客户经理联系。
 
@@ -310,7 +313,7 @@ source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
 
 ## 从Internet访问 {#access-from-the-internet}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >出于隐私原因，我们建议对所有外部资源使用HTTPS。
 
@@ -334,7 +337,7 @@ Adobe Campaign允许您区分这三个URL，将负载分散到多个平台。
 
 ## 管理公共资源 {#managing-public-resources}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >出于隐私原因，我们建议对所有外部资源使用HTTPS。
 
