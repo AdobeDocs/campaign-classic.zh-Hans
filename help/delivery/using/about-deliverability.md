@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c687c8ad19560d4181c2db52a91e096cceea705e
+source-git-commit: e6617614ae22b73c6783f9775f441e5e25ae19e3
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
 
 
 # 关于投放能力{#about-deliverability}
+
+**交付性** ，包括衡量活动在到达收件人收件箱时是否成功，不会出现弹跳或标记为垃圾邮件。
 
 Adobe Campaign优惠一定数量的工具来跟踪平台的可交付性能。 本节还重点介绍在管理和优化交付能力时应牢记的主要原则。
 
