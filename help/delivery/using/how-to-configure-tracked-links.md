@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 8%
 
 ---
 
@@ -26,45 +29,45 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 >[!NOTE]
 >
->跟踪适用于消息，但Web跟踪允许您监视收件人浏览网站的方式（访问的页面、购买）。
+>跟踪适用于消息，但Web跟踪允许您监视收件人浏览网站（访问的页面、购买）的方式。
 >
->本节介绍了Web跟踪的 [配置](../../configuration/using/about-web-tracking.md)。
+>本节介绍Web跟踪的 [配置](../../configuration/using/about-web-tracking.md)。
 
 默认情况下，消息跟踪处于启用状态。 要个性化跟踪URL的方式，请执行以下步骤：
 
-1. 在分 **[!UICONTROL Display URLs]** 发向导的下半部分，在消息内容下选择选项。
+1. 在投放向导 **[!UICONTROL Display URLs]** 的下半部分，在消息内容下选择选项。
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
-   从跟踪的URL列表中选择URL后，该URL将在交付内容中高亮显示——但镜像页面中的链接和默认提供的取消订阅链接除外。
+   当您从跟踪的URL列表中选择URL时，该URL将在投放内容中高亮显示——默认情况下提供的镜像页面和退订链接除外。
 
    ![](assets/s_ncs_user_email_del_show_urls.png)
 
-1. 对于消息的每个URL，选择是否激活跟踪。
+1. 对于邮件的每个URL，选择是否激活跟踪。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
-   >当链接的URL用作标签时，建议取消激活跟踪以避免网络钓鱼导致拒绝的风险。
+   >当链接的URL用作标签时，建议取消激活跟踪以避免由于网络钓鱼而被拒绝的风险。
    >
-   >例如，如果将www.adobe.com URL插入消息中并在消息上激活了跟踪，则超文本链接的内容将修改为https://nlt.adobe.net/r/?id=xxxxxx。 这意味着收件人消息客户端可能认为它具有欺骗性。
+   >例如，如果将www.adobe.com URL插入消息并激活了该消息的跟踪，则超文本链接的内容将修改为https://nlt.adobe.net/r/?id=xxxxxx。 这意味着收件人消息客户端可能认为它具有欺骗性。
 
-1. 如果需要，请更改跟踪标签，双击该标签并输入新标签。
+1. 如果需要，请更改跟踪标签，多次单击标签并输入新标签。
 
    >[!NOTE]
    >
-   >可以修改跟踪的URL的标签和标签，以简化跟踪分发时的信息读取。 在计算点击计数时，将添加两个或两个同名的URL。
+   >跟踪的URL的标签和标签可以修改，以简化跟踪投放时的信息读取。 计算点击计数时，将同时添加两个或两个同名的URL。
 
-1. 如果需要，请更改跟踪模式，在列中选择与目标链接 **[!UICONTROL Tracking]** 匹配的新模式，如下所示：
+1. 如果需要，请更改跟踪模式，在列中选择与目标链 **[!UICONTROL Tracking]** 接匹配的新模式，如下所示：
 
    ![](assets/s_ncs_user_select_tracking_mode.png)
 
    对于每个URL，可以将跟踪模式设置为以下值之一：
 
-   * **[!UICONTROL Enabled]** :激活对此URL的跟踪。
-   * **[!UICONTROL Not tracked]** :禁用此URL上的跟踪。
-   * **[!UICONTROL Always enabled]** :始终激活此URL的跟踪。 此信息会保存，这样，下次，如果URL再次出现在将来的消息内容中，则其跟踪会自动激活。
-   * **[!UICONTROL Never tracked]** :从不激活此URL的跟踪。 此信息会保存，这样，下次，如果URL再次显示在将来的消息中，则其跟踪会自动停用。
-   * **[!UICONTROL Opt-out]** :将此URL视为选择退出或取消订阅URL。
-   * **[!UICONTROL Mirror page]** :将此URL视为镜像页面URL。
+   * **[!UICONTROL Enabled]** : 在此URL上激活跟踪。
+   * **[!UICONTROL Not tracked]** : 禁用此URL上的跟踪。
+   * **[!UICONTROL Always enabled]** : 始终激活此URL的跟踪。 此信息会保存，以便下次，如果URL再次出现在将来的消息内容中，其跟踪会自动激活。
+   * **[!UICONTROL Never tracked]** : 从不激活此URL的跟踪。 此信息将保存，这样，如果下次URL再次出现在将来的消息中，其跟踪将自动取消激活。
+   * **[!UICONTROL Opt-out]** : 将此URL视为退出或退订URL。
+   * **[!UICONTROL Mirror page]** : 将此URL视为镜像页面URL。
 
-1. 此外，您还可以在列的下拉列表中选择每个跟踪的URL的类 **[!UICONTROL Category]** 别。 这些类别可以显示报告，如中所示 **[!UICONTROL URLs and click streams]** (请参 [阅此部分](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams))。 类别在特定枚举中定义：(请 **[!UICONTROL urlCategory]** 参阅 [管理枚举](../../platform/using/managing-enumerations.md))。
+1. 此外，您还可以在列的下拉类别中为每个跟踪的URL选择一个列表 **[!UICONTROL Category]** 符。 这些类别可以显示报表，如 **[!UICONTROL URLs and click streams]** 中( [请参阅](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams))。 类别在特定明细列表中定义： **[!UICONTROL urlCategory]** (请参 [阅管理明细列表](../../platform/using/managing-enumerations.md))。
