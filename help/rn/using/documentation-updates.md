@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e82605eda5bccd2e5604614acd4cb7d646822fc
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
 workflow-type: tm+mt
-source-wordcount: '6502'
+source-wordcount: '6464'
 ht-degree: 0%
 
 ---
@@ -23,19 +23,18 @@ ht-degree: 0%
 
 # 文档更新{#documentation-updates}
 
-了解Adobe Campaign经典文档的所有最新更新。
+此页面列表每月所有新增功能和文档更新以及活动版本。
 
-本页列表了每个Adobe Campaign经典版本的所有新增功能和文档更新。
+您还可以查阅Adobe Campaign经 [典发行说明](../../rn/using/latest-release.md) ，以获取更多更新。
 
-您还可以查阅 [Adobe Campaign经典发行说明](../../rn/using/latest-release.md)。
 
 ## 2020年5月 {#may-2020}
 
-“监视可交付性”部分已移动并重新组织。 [阅读更多](../../delivery/using/monitoring-deliverability.md)
+“监视可交付性”部分已移动和改进。 [阅读更多](../../delivery/using/monitoring-deliverability.md)
 
-“可交付性”疑难解答部分已移动并更新。 [阅读更多](../../delivery/using/deliverability-faq.md)
+“可交付性”疑难解答部分已移动和改进。 [阅读更多](../../delivery/using/deliverability-faq.md)
 
-开始新平台部分已得到增强。 [阅读更多](../../delivery/using/starting-new-platform.md)
+启动新平台部分时的可交付性指南已得到增强。 [阅读更多](../../delivery/using/starting-new-platform.md)
 
 已移动并更新“发送带有附件的交易电子邮件”部分。 [阅读更多](../../message-center/using/transactional-email-with-attachments.md)
 
@@ -45,11 +44,11 @@ ht-degree: 0%
 
 常见问题解答已更新，其中包含有关如何清除软缓存和硬缓存的提示。 [阅读更多](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
 
-数据模型最佳实践部分已得到改进，增加了有关索引的信息。 [阅读更多](../../configuration/using/data-model-best-practices.md#indexes)
+数据模型最佳实践已得到改进，并添加了有关索引的更多信息。 [阅读更多](../../configuration/using/data-model-best-practices.md#indexes)
 
-描述Adobe Campaign预定义数据模型的部分已更新，其中提供了每个现成表格的更多详细信息，并包含指向相关模块的链接。 [阅读更多](../../configuration/using/data-model-description.md)
+描述Adobe Campaign内置数据模型的部分已更新，并且每个表中都有更多详细信息。 [阅读更多](../../configuration/using/data-model-description.md)
 
-“使用工作流实现自动化”指南中的使用案例已重新组织为主题部分。 [阅读更多](../../workflow/using/using-the-local-approval-activity.md)
+工作流使用案例已更新并重新组织为主题部分。 [阅读更多](../../workflow/using/using-the-local-approval-activity.md)
 
 弹回 [邮件资格](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) 和电子邮件 [管理规则部分已](../../delivery/using/understanding-delivery-failures.md#email-management-rules) 通过更新的信息进行了增强。
 
@@ -57,29 +56,29 @@ Adobe Campaign增强的MTA文章已更新。 现在只适用于Campaign Classic�
 
 ## 2020年3月 {#march-2020}
 
-“数据模型最佳实践”页已更新，其中包 [括序列](../../configuration/using/data-model-best-practices.md#sequences)、 [性能](../../configuration/using/data-model-best-practices.md#performance)[](../../configuration/using/data-model-best-practices.md#large-tables)和大表等。 [阅读更多](../../configuration/using/data-model-best-practices.md)
+数据模型最佳实践已通过包括序列、性能 [和大表](../../configuration/using/data-model-best-practices.md#sequences)等新 [的部](../../configuration/using/data-model-best-practices.md#performance) 分进行更新 [](../../configuration/using/data-model-best-practices.md#large-tables)。 [阅读更多](../../configuration/using/data-model-best-practices.md)
 
-现在提供了描述Adobe Campaign预定义数据模型和现成表交互的新部分。 [阅读更多](../../configuration/using/data-model-description.md)
+现在提供了描述Adobe Campaign内置数据模型和表之间交互的新部分。 [阅读更多](../../configuration/using/data-model-description.md)
 
-已向文档主页添加其他资源。 [阅读更多](../../campaign-classic-home.md)
+其他关键链接已添加到文档主页。 [阅读更多](../../campaign-classic-home.md)
 
 已添加一个用例，说明如何将Adobe动态优惠目标集成到Adobe Campaign的电子邮件中。 [阅读更多](../../integrations/using/inserting-a-dynamic-image.md)
 
 现在提供了详细介绍Adobe Campaign中不同语言的新部分。 [阅读更多](../../platform/using/adobe-campaign-workspace.md#languages)
 
-“访问管理”页面已更新，其中包含有关已命名权限的更多信息。 [阅读更多](../../platform/using/access-management.md#named-rights)
+访问管理指南已更新，其中包含有关已命名权限的更多信息。 [阅读更多](../../platform/using/access-management.md#named-rights)
 
 ## 2020年2月 {#february-2020}
 
 现在提供设计Adobe Campaign数据模型时概述最佳实践和主要建议的新部分。 [阅读更多](../../configuration/using/data-model-best-practices.md)
 
-“电子邮件可发送性”部分已更名为“技术电子邮件配置”。 [阅读更多](../../installation/using/email-deliverability.md)
+新增了有关技术电子邮件配置的部分。 [阅读更多](../../installation/using/email-deliverability.md)
 
-“交付性常见问题解答”文档已更新，其中包含有关“满足配额”错误消息的更多详细信息。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
+“交付性常见问题解答”已更新，其中包含有关“满足配额”错误消息的更多详细信息。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
 
-AMP for Email现在由三家电子邮件提供商（Gmail、Outlook和Mail.ru）支持，该部分描述了如何使用AMP定义交互式内容。 [阅读更多](../../delivery/using/defining-interactive-content.md)
+新的电子邮件提供商现在支持电子邮件AMP: 相关文档已更新。 [阅读更多](../../delivery/using/defining-interactive-content.md)
 
-电子邮件存档部分已明确。 [阅读更多](../../installation/using/email-archiving.md#recommendations-and-limitations)
+电子邮件存档部分已得到改进。 [阅读更多](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
@@ -91,7 +90,7 @@ Hadoop联合数据访问连接器增强- [阅读更多](../../platform/using/spe
 
 **随版本提供的其他文档更新**
 
-安 [装、](../../installation/using/before-reading.md)生产和配 [置指南](../../production/using/foreword.md)[](../../configuration/using/additional-parameters.md) ，已使用nlserver服务启动使用的新系统单元进行更新。 您仍可以使用/etc/init.d/nlserver6，但我们建议您现在使用systemctl命令与nlserver服务进行交互。
+安 [装、](../../installation/using/before-reading.md)生产和配 [置指南](../../production/using/foreword.md)[](../../configuration/using/additional-parameters.md) ，已使用nlserver服务启动使用的新系统单元进行更新。 您仍可以使用/etc/init.d/nlserver6，但Adobe建议您现在使用systemctl命令与nlserver服务进行交互。
 
 安装指南已更新并与最新版本的兼容性矩阵同步。 新增了支持的系统。 已删除已弃用和不支持的系统的实例。 [阅读更多](../../installation/using/before-reading.md)
 
@@ -593,7 +592,7 @@ A/B测试范例已更新，缺少说明。 [阅读更多](https://docs.campaign.
 
 添加暂停的工作流最佳实践。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html)
 
-有关在工作流中导出数据时导入和后处理文件的新过程。 请 [在这里](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html)。
+有关在工作流中导出数据时导入和后处理文件的新过程。 请 [在此处](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html)。
 
 SMS消息文档的隔离机制已更新，以反映扩展通用SMPP连接器的错误管理的特性。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_quarantine_management.html#SMS_quarantines)。
 
