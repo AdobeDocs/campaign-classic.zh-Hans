@@ -5,7 +5,10 @@ solution: Campaign Classic
 title: Adobe Campaign经典产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 32de7af9adcfff15ef3f40a7434ee7abca5864d6
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 25%
 
 ---
 
@@ -16,13 +19,13 @@ source-git-commit: 32de7af9adcfff15ef3f40a7434ee7abca5864d6
 
 ## 新增功能
 
-* **[获取支持](https://helpx.adobe.com/campaign/kb/ac-support.html)**<br/>&#x200B;访问常见问题解答、最佳实践、帮助资源，并与活动专家和客户关怀团队联系
+* **[获取支持](https://helpx.adobe.com/campaign/kb/ac-support.html)**<br/>&#x200B;访问常见问题解答、最佳实践、帮助资源和请求帮助
 
-* **[隐私合规性](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/>&#x200B;了解Adobe Campaign如何帮助您遵守隐私权
+* **[隐私合规](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/>&#x200B;性了解Adobe Campaign如何帮助您遵守隐私
 
-* **[跟踪功能了](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/>&#x200B;解活动中的跟踪功能
+* **[跟踪功能](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/>&#x200B;了解活动中的跟踪功能和流程
 
-* **[使用AMP的交互式内](delivery/using/defining-interactive-content.md)**<br/>容了解如何使用新的[AMP for Email格式发送动态电](https://amp.dev/about/email/)子邮件
+* **[使用AMP的交互式内](delivery/using/defining-interactive-content.md)**<br/>容学习如何使用新的AMP格式发送动态电子邮件
 
 [单击此处以了解更多更新](/help/rn/using/documentation-updates.md)
 
@@ -36,7 +39,8 @@ source-git-commit: 32de7af9adcfff15ef3f40a7434ee7abca5864d6
     </a>
     <div>
       <a href="platform/using/common-questions.md">
-    常见 <strong>问题解答</strong></a>
+    <strong>常见问题解答</strong>
+    </a>
     </div>
     <p>
     <em>使用Campaign Classic时查找常见问题的答案</em>
@@ -48,7 +52,8 @@ source-git-commit: 32de7af9adcfff15ef3f40a7434ee7abca5864d6
     </a>
     <div>
       <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html">
-    升 <strong>级到最新版本</strong></a>
+    <strong>升级到最新版本</strong>
+    </a>
     </div>
     <p>
     <em>了解执行构建升级的关键步骤和最佳实践</em>
@@ -60,7 +65,8 @@ source-git-commit: 32de7af9adcfff15ef3f40a7434ee7abca5864d6
     </a>
     <div>
        <a href="delivery/using/creating-notifications.md">
-    发 <strong>送推送通知</strong></a>
+    <strong>发送推送通知</strong>
+    </a>
     </div>
     <p>
     <em>在手机上设计和发送个性化的推送通知</em>
@@ -73,10 +79,10 @@ source-git-commit: 32de7af9adcfff15ef3f40a7434ee7abca5864d6
 
 | 有用页面 | 面向开发人员的资源 |
 |---|---|
-| [发行说明](/help/rn/using/latest-release.md) | [列表错误消息](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [操作说明视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [活动数据模型](configuration/using/about-data-model.md) |
+| [发行说明](/help/rn/using/latest-release.md) | [错误消息列表](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
+| [操作说明视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Campaign 数据模型](configuration/using/about-data-model.md) |
 | [兼容性矩阵](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [活动JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [开始使用Campaign Classic](platform/using/about-adobe-campaign-classic.md) | [实施指南](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
-| [黄金标准版升级](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [跟踪指南](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
-| [已弃用和已删除的功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [安全性和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html) |
+| [Campaign 快速入门](platform/using/about-adobe-campaign-classic.md) | [实施指南](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
+| [Gold Standard升级](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [跟踪指南](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
+| [弃用功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [安全性和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html) |
 | [活动控制面板](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html) | [监控最佳实践](https://helpx.adobe.com/campaign/kb/acc-maintenance.html) |
