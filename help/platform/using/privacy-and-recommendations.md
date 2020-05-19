@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 74%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
 
 ## 有关隐私及许可 {#about-privacy-and-consent}
 
-Adobe Campaign 是一款用于收集和处理超大量数据（包括个人信息）的强大工具。我们鼓励Adobe Campaign的所有用户在法规（DPA、CAN-SPAM、欧洲隐私和电子通信指令、欧洲GDPR、CCPA等）范围内工作，对个人信息进行负责任和合乎道德的使用，并避免发送主动提供的电子邮件、推送通知和SMS消息（“垃圾邮件”）。 为了实现客户终生价值并提高客户忠诚度，我们坚信许可营销原则，也因此严格禁止使用 Adobe Campaign 发送未经请求的消息。
+Adobe Campaign 是一款用于收集和处理超大量数据（包括个人信息）的强大工具。我们鼓励所有Adobe Campaign用户在立法（DPA、CAN-SPAM、欧洲隐私和电子通信指令、欧洲GDPR、CCPA等）范围内工作，对个人信息进行负责任且合乎道德的使用，并避免发送未经请求的电子邮件、推送通知和SMS消息（“垃圾邮件”）。 为了实现客户终生价值并提高客户忠诚度，我们坚信许可营销原则，也因此严格禁止使用 Adobe Campaign 发送未经请求的消息。
 
 如需详细信息，请参阅 [Adobe Experience Cloud 隐私政策](https://www.adobe.com/privacy/marketing-cloud.html)。
 
@@ -32,13 +35,15 @@ Adobe Campaign 是一款用于收集和处理超大量数据（包括个人信�
 
 ## 隐私管理 {#privacy-management}
 
-GDPR（一般数据保护规定）是欧盟(EU)隐私法，它协调数据保护要求并使其现代化。 GDPR 适用于所持有数据的数据主体位于欧盟的 Adobe Campaign 客户。
+Adobe Campaign优惠一套工具，帮助您遵守隐私规定（GDPR、CCPA等）。
 
-CCPA(California Consumer Privacy Act)为加利福尼亚州居民提供与其个人信息有关的新权利，并对在加利福尼亚从事业务的某些实体强制实施数据保护责任。
+GDPR（一般数据保护规定）是欧洲合并(EU)隐私法，旨在协调数据保护要求并使之现代化。 GDPR 适用于所持有数据的数据主体位于欧盟的 Adobe Campaign 客户。
 
-除了同意管理、数据保留设置和权限管理之外，我们还以数据处理者的身份提供其他功能，以帮助您为数据管理者准备处理某些隐私请求。
+CCPA(California Consumer Privacy Act)为加利福尼亚州居民提供与其个人信息有关的新权利，并对在加利福尼亚开展业务的特定实体承担数据保护责任。
 
-在本文 [中](https://helpx.adobe.com/campaign/kb/acc-privacy.html)，您将了解Adobe Campaign如何帮助您管理不同的隐私主要功能：访问权、被遗忘权、同意权、数据保留权和用户角色。 您还会找到最佳实践，以在使用我们的服务时帮助您遵守隐私权。
+除了同意管理、数据保留设置和权限管理之外，我们还以数据处理者的身份提供其他功能，以帮助您作为数据管理者就绪处理某些隐私请求。
+
+在 [本文中](https://helpx.adobe.com/campaign/kb/acc-privacy.html)，您将了解Adobe Campaign如何帮助您管理不同的隐私关键功能： 访问权、被遗忘权、同意权、数据保留权和用户角色。 您还会找到最佳实践，以在使用我们的解决方案时帮助您遵守隐私。
 
 ## Cookie 和跟踪功能 {#cookies-and-tracking-capabilities}
 
