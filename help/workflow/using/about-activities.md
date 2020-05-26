@@ -15,18 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 8%
 
 ---
 
 
 # 关于活动{#about-activities}
 
-本节介绍所有可用的活动。 根据创建／编辑工作流的节点或上下文，可用的活动可能会有所不同。 例如，在营销活动中创建的工作流具有特定于渠道的交付活动。
+本节介绍所有可用活动。 根据创建／编辑工作流的节点或上下文，可用活动可能会有所不同。 例如，在活动中创建的工作流具有特定于渠道的投放活动。
 
 工作流活动按类别分组。 同时有四个可用选项卡。
 
-在营销活动工作流中，选 **[!UICONTROL Events]** 项卡将替换为该选 **[!UICONTROL Deliveries]** 项卡。 “操作”活动部分详细介绍了此选项卡 [中的活动](../../workflow/using/about-action-activities.md) 。
+在活动工作流中，选 **[!UICONTROL Events]** 项卡将替换为选 **[!UICONTROL Deliveries]** 项卡。 此选项卡中的活动详细列在“操 [作活动](../../workflow/using/about-action-activities.md) ”部分。
 
 ![](assets/wf-activity-tabs.png)
 
@@ -34,5 +37,5 @@ source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 * [关于定位活动](../../workflow/using/about-targeting-activities.md)
 * [导入数据](../../workflow/using/importing-data.md)
-* [执行工作流](../../workflow/using/executing-a-workflow.md)
+* [执行工作流](../../workflow/using/starting-a-workflow.md)
 * [工作流最佳实践](../../workflow/using/workflow-best-practices.md)
