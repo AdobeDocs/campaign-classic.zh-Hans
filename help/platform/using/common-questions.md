@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9a1db0fbced3550621c5520656a34344128ee13f
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 30%
 
 ---
 
@@ -25,23 +28,23 @@ source-git-commit: 9a1db0fbced3550621c5520656a34344128ee13f
 
 ## 1. How can I upgrade Campaign to the latest version? {#how-can-i-upgrade-campaign-to-the-latest-version-}
 
-Adobe Campaign Classic特别使用各种技术来提供价值。 这一技术组合要求您定期升级Campaign Classic实例，以确保使用最新版本提供出众的安全性、稳定性和性能。
+Adobe Campaign经典特别使用一系列技术来提供价值。 这一技术组合要求您定期升级Campaign Classic实例，以确保使用最新版本提供出众的安全性、稳定性和性能。
 
-如果您使用的是Adobe Managed Services，则可以从Campaign Gold Standard升级中受益。 For more on this refer to [this article](https://helpx.adobe.com/campaign/kb/gold-standard.html).
+如果您使用的是Adobe Managed Services，则可以从活动Gold Standard升级中受益。 For more on this refer to [this article](https://helpx.adobe.com/campaign/kb/gold-standard.html).
 
-[阅读本文](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) ，了解如何更新环境并阅读有关此特定主 [题的常见问题](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html) 。
+[阅读本文](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) ，了解如何更新环境并阅读 [有关此特定](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html) 主题的常见问题。
 
 ## 2. What is the database cleanup workflow? {#what-is-the-database-cleanup-workflow-}
 
-数据库清理工作流会删除过时的数据，以免数据库内容呈指数增长。此内置的技术工作流程是自动触发的，无需用户干预。 可通过系列活动浏览器 **[!UICONTROL Administration > Production > Technical workflows]** 的节点访问它。
+数据库清理工作流会删除过时的数据，以免数据库内容呈指数增长。此内置的技术工作流程是自动触发的，无需用户干预。 它可通过活动资 **[!UICONTROL Administration > Production > Technical workflows]** 源管理器的节点访问。
 
 [单击此处了解有关](../../production/using/database-cleanup-workflow.md)数据库清理工作流的更多信息。
 
 ## 3. How can I configure security zones? {#how-can-i-configure-security-zones-}
 
-安全区自助服务界面可用于管理Adobe Campaign Classic部署的VPN安全区配置中的条目。 阅读[此部分](../../installation/using/configuring-campaign-server.md#defining-security-zones)内容，了解 Campaign 中的安全区。
+安全区自助服务接口可用于管理Adobe Campaign经典部署的VPN安全区配置中的条目。 阅读[此部分](../../installation/using/configuring-campaign-server.md#defining-security-zones)内容，了解 Campaign 中的安全区。
 
-[单击此处可了解有关](https://helpx.adobe.com/campaign/kb/configuring-security-zones-self-service.html) “安全区自助服务UI”的更多信息。
+[单击此处了解有关](https://helpx.adobe.com/campaign/kb/configuring-security-zones-self-service.html) “安全区自助UI”的更多信息。
 
 ## 4. How can I make sure my delivery is sent without errors? {#how-can-i-make-sure-my-delivery-is-sent-without-errors-}
 
@@ -51,7 +54,7 @@ Adobe Campaign 提供了一组仪表板和工具来监视电子邮件投送。
 
 ## 5. Can I monitor workflow execution? {#can-i-monitor-workflow-execution}
 
-在[本页面](../../workflow/using/executing-a-workflow.md)中了解如何监视 Campaign 工作流执行情况。
+在[本页面](../../workflow/using/starting-a-workflow.md)中了解如何监视 Campaign 工作流执行情况。
 
 ## 6. How can I connect to Campaign Classic? {#how-can-i-connect-to-campaign-classic-}
 
@@ -69,8 +72,8 @@ You can get the list of all systems and components supported for the latest buil
 
 ## 9. What is the procedure for domain delegation? {#what-is-the-procedure-for-domain-delegation-}
 
-子域是您的域的一个分区，可用于隔离您的品牌或各种类型的流量（交易消息、营销信息等）。
-Adobe考虑到域名系统(DNS)来发送电子邮件，该系统允许客户端通过使用域名的DNS别名来保持其品牌形象，Adobe还可以自主实施所有技术最佳实践，以便在发送电子邮件时优化可交付性。
+子域是域的一个分区，可用于隔离您的品牌或各种类型的流量(事务性消息、营销信息等)。
+Adobe考虑使用域名系统(DNS)进行电子邮件投放，该系统允许客户端通过使用域名的DNS别名来保持其品牌形象，Adobe可自主实施所有技术最佳实践，以便在发送电子邮件时优化交付能力。
 
 [单击此处了解更多信息](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html)。
 
