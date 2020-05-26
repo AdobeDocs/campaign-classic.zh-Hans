@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+source-git-commit: 5d8959dc790c0cf0e6ea62122310bfbee5bcc0dd
 workflow-type: tm+mt
-source-wordcount: '6464'
+source-wordcount: '6477'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ ht-degree: 0%
 启动新平台部分时的可交付性指南已得到增强。 [阅读更多](../../delivery/using/starting-new-platform.md)
 
 已移动并更新“发送带有附件的交易电子邮件”部分。 [阅读更多](../../message-center/using/transactional-email-with-attachments.md)
+
+数据包最佳实践部分已移动并更新。 [阅读更多](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
 ## 2020年4月 {#april-2020}
 
