@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9773e8ae39133968e4e167d11715c123e00d22c2
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 2%
@@ -335,7 +335,7 @@ CR: 回车
 
 >[!NOTE]
 >
->data_coding值与实际 **使用的编码** 之间的映射是标准化的。 然而，某些中小企业供应链有自己的具体映射： 在这种情况下，您的 **Adobe Campaign** 管理员需要声明此映射。 请咨询您的提供商，了解更多信息。
+>data_coding值与实际 **使用的编码** 之间的映射是标准化的。 然而，某些中小企业供应链有自己的具体地图： 在这种情况下，您的 **Adobe Campaign** 管理员需要声明此映射。 请咨询您的提供商，了解更多信息。
 
 您可以声 **明data_codings** ，并在必要时强制进行编码： 为此，请在表中指定单个编码。
 
@@ -532,13 +532,13 @@ nlserver **sms** 模块定期查询SMS路由器。 这允许Adobe Campaign跟踪
    >
    >发送的每条短信都链接到外部帐户的主密钥。 这样：
    >
-   > * 未正确处理已删除外部SMS帐户的状态报告。
+   > * 已删除的外部SMS帐户的状态报告未正确处理。
    > * SMS帐户只能链接到单个外部帐户，以确保状态报告归因到正确的帐户
 
 
 * **退订**: 希望停止接收SMS投放的收件人可以返回包含STOP字样的消息。 如果您的提供商根据合同条款允许它访问，您可以通过 **Inbound SMS工作流活动检索消息** ，然后创建一个查询，为相关收件人启 **用“不再联系此收件人** ”选项。
 
-   请参阅 [工作流](../../workflow/using/executing-a-workflow.md#architecture) 指南。
+   请参阅 [工作流](../../workflow/using/architecture.md) 指南。
 
 ## InSMS模式 {#insms-schema}
 
