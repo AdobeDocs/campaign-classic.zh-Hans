@@ -5,10 +5,10 @@ index: y
 product: adobe campaign
 sub-product: adobe活动经典
 translation-type: tm+mt
-source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
-source-wordcount: '2078'
-ht-degree: 10%
+source-wordcount: '2090'
+ht-degree: 9%
 
 ---
 
@@ -327,8 +327,13 @@ ht-degree: 10%
       + [定位数据](workflow/using/targeting-data.md)
       + [导入数据](workflow/using/importing-data.md)
       + [如何使用工作流数据](workflow/using/how-to-use-workflow-data.md)
-      + [执行工作流](workflow/using/executing-a-workflow.md)
       + [工作流最佳实践](workflow/using/workflow-best-practices.md)
+   + 执行工作流 {#executing-a-workflow}
+      + [启动工作流](workflow/using/starting-a-workflow.md)
+      + [工作流生命周期](workflow/using/workflow-life-cycle.md)
+      + [数据生命周期](workflow/using/data-life-cycle.md)
+      + [定义审批](workflow/using/defining-approvals.md)
+      + [架构](workflow/using/architecture.md)
    + 定位活动 {#targeting-activities}
       + [关于定位活动](workflow/using/about-targeting-activities.md)
       + [查询](workflow/using/query.md)
@@ -535,7 +540,7 @@ ht-degree: 10%
       + [发送带有附件的交易电子邮件](message-center/using/transactional-email-with-attachments.md)
 + 与社交媒体集成 {#integrating-with-social-media}
    + [关于社交营销](social/using/about-social-marketing.md)
-   + 配置 {#configuration}
+   + Configuration {#configuration}
       + [开始工作流](social/using/starting-workflows.md)
       + [在Facebook墙上发布](social/using/publishing-on-facebook-walls.md)
       + [创建Facebook应用程序](social/using/creating-a-facebook-application.md)
@@ -719,7 +724,7 @@ ht-degree: 10%
       + [迁移到Adobe Campaign7的先决条件](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
       + [在Windows中迁移，Adobe Campaign7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
       + [在Linux中迁移以Adobe Campaignv7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
-   + 配置 {#configuration}
+   + Configuration {#configuration}
       + [常规配置](migration/using/general-configurations.md)
       + [v5.11中的特定配置](migration/using/specific-configurations-in-v5-11.md)
       + [v6.02中的特定配置](migration/using/specific-configurations-in-v6-02.md)
