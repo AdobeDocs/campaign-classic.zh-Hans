@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+source-git-commit: cedcd9150c374116f187da7fd9e76bf81e978e2a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2798'
 ht-degree: 0%
 
 ---
@@ -180,17 +180,21 @@ HTML格式的电子邮件投放可以包含图像。 在该投放向导中，您
 
 ![](assets/s_ncs_user_image_from_library.png)
 
-为了使收件人能够视图他们收到的消息中包含的图像，这些消息必须在可从外部访问的服务器上可用。
+>[!IMPORTANT]
+>
+>为了使收件人能够视图他们收到的消息中包含的图像，这些消息必须在可从外部访问的服务器上可用。
 
-要通过投放向导管理图像，必须单击工 **[!UICONTROL Tracking & Images]** 具栏中的图标。
+要通过投放向导管理图像，请执行以下操作：
 
-![](assets/s_ncs_user_email_del_img_param.png)
+1. 单击工 **[!UICONTROL Tracking & Images]** 具栏中的图标。
+   ![](assets/s_ncs_user_email_del_img_param.png)
 
-在选 **[!UICONTROL Upload images]** 项卡中 **[!UICONTROL Images]** 选择。 然后，您可以选择是否要在电子邮件中包含图像。
+1. 在选 **[!UICONTROL Upload images]** 项卡中 **[!UICONTROL Images]** 选择。
+1. 然后，您可以选择是否要在电子邮件中包含图像。
 
 ![](assets/s_ncs_user_email_del_img_upload.png)
 
-* 您可以手动上传图像，无需等待投放分析阶段。 为此，请单击链 **[!UICONTROL Upload images now]** 接。
+* 您可以手动上传图像，无需等待投放分析阶段。 为此，请单击链 **[!UICONTROL Upload the images straightaway...]** 接。
 * 您可以指定另一个路径以访问跟踪服务器上的图像。 为此，请在字段中输入 **[!UICONTROL Image URL]** 它。 此值将覆盖在安装向导的参数中定义的值。
 
 在投放向导中打开包含图像的HTML内容时，系统会显示一条消息，提示您根据投放参数立即上传图像。
@@ -201,7 +205,7 @@ HTML格式的电子邮件投放可以包含图像。 在该投放向导中，您
 >
 >在手动上传或发送消息时，会修改图像访问路径。
 
-**示例： 用图像发送消息{#example--sending-a-message-with-images}**
+### 示例： 用图像发送消息 {#example--sending-a-message-with-images}
 
 以下是包含四个图像的投放的示例：
 
@@ -324,7 +328,7 @@ Adobe Campaign管理手机上电子邮件的三种特定日文格式： **Deco-m
 
 ### 限制和建议 {#limitations-and-recommendations}
 
-发送将在日本提供商(Softbank、DoCoMo、KDDI AU)所运营的移动设备上读取的电子邮件时，会受到一定数量的限制。
+发送将在日本提供商(Softbank、DoCoMo、KDDI AU)所运营的移动设备上读取的电子邮件时，会遇到一些限制。
 
 因此，您必须：
 
@@ -369,7 +373,7 @@ Adobe Campaign允许您检查消息格式是否适用于发送到日文手机。
 
 此类型规则允许您确保投放遵守日文运 [算符](#limitations-and-recommendations) （尤其是与电子邮件总大小、HTML和文本部分的大小、消息中的图像数以及HTML内容中的标记相关）定义的格式限制。
 
-#### 发送验证 {#sending-proofs}
+#### 发送校样 {#sending-proofs}
 
 您可以发送验证来测试投放。 当您发送验证时，如果您使用的是替代地址，请输入与所使用用户档案的电子邮件格式对应的地址。
 
@@ -382,7 +386,7 @@ Adobe Campaign允许您检查消息格式是否适用于发送到日文手机。
 要向具有活动的日本电子邮件格式发送电子邮件至收件人，可以使用以下两种方式：
 
 * 创建两个投放: 一个仅适用于日语收件人，另一个适用于其他收件人-请参 [阅本节](#designing-a-specific-delivery-for-japanese-formats)。
-* 创建单个投放,Adobe Campaign将自动检测要使用的格式——请参 [阅本节](#designing-a-delivery-for-all-formats)。
+* 创建单个投放,Adobe Campaign将自动检测要使用的格式——请参阅 [本节](#designing-a-delivery-for-all-formats)。
 
 #### 为日文格式设计特定投放 {#designing-a-specific-delivery-for-japanese-formats}
 
