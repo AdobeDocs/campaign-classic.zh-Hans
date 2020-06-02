@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a976144d70b113d1358b0514a3e805d79e11484a
+source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
 workflow-type: tm+mt
 source-wordcount: '3740'
 ht-degree: 0%
@@ -60,6 +60,13 @@ ht-degree: 0%
    <td> 要将测试地址用于收件箱渲染的模式列表。 （元素名称以逗号分隔）例如： custom_nms_收件人。<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
+   <td><p> 允许负责投放的操作符确认发送(如果指定了特定操作符或操作员组以在投放的属性中启动投放)。</p><p> 为此，请输入“1”作为值来激活选项。 要取消激活此选项，请输入“0”。</p><p> 然后，发送确认过程将作为默认过程： 只有在投放属性（或管理员）中为发送指定的运算符或操作员组才能确认和执行发送。 请参 <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">阅此部分</a>。</p> </td> 
+   <tr> 
+   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
+   <td> Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数据库(nms:收件人)对话。<br /> 选项值必须与与外部模式表匹配的收件人的名称相对应。<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
    <td> 最小收件人数，以便投放在计费报告中被视为主要客户。<br /> </td> 
   </tr> 
@@ -94,10 +101,6 @@ ht-degree: 0%
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span> <br /> </td> 
    <td> 输入“1”作为值可自动忽略多次。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数据库(nms:收件人)对话。<br /> 选项值必须与与外部模式表匹配的收件人的名称相对应。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMasks</span> <br /> </td> 
@@ -164,6 +167,10 @@ ht-degree: 0%
    <td> 列表授权转发电子邮件地址（来自入站邮件处理模块）。 地址必须用逗号分隔（或*以允许所有地址）。 例如xyz@abc.com、pqr@abc.com。<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
+   <td> 在“lineImage”servlet中使用的AES键对URL(LINE渠道)进行编码。<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
    <td> 在渠道“email”（用作默认值）时： 在将收件人置入隔离之前，SOFT错误被接受的最大错误数。<br /> </td> 
   </tr> 
@@ -180,9 +187,21 @@ ht-degree: 0%
    <td> 关于渠道“移动”: 在考虑新的SOFT错误之前，自上一个引用的SOFT错误以来花费的最短时间。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> 镜像页面服务器的URL（默认情况下，应与NmsTracking_ServerUrl相同）。<br /> 在投放定义中未指定URL时，它是电子邮件路由的默认值。<br /> </td> 
+   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
+   <td> 允许指定最大时间段（以小时为单位），以限制每次执行同步工作流时恢复的广播日志数。</a>.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
+   <td> MidSourcing会话中可以并行运行的最大调用数（默认为3）。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
+   <td> 自定义延迟（以分钟为单位）之后，投放会被视为“延迟”，默认为30分钟。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
+   <td><p>计算正在运行的投放数 <span class="uicontrol"><a href="../../workflow/using/campaign.md">量时</a></span> ,OperationMgt技术工作流会使用此选项。</p>它允许您定义超过天数，在运行投放计数中将排除状态不一致的投放。</p><p>默认情况下，该值设置为“7”，这意味着将排除7天以前不一致的投放。</p></td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
    <td> 发件人地址的第1行。<br /> </td> 
@@ -203,10 +222,10 @@ ht-degree: 0%
    <td> <span class="uicontrol">NmsPaper_SenderLine7</span> <br /> </td> 
    <td> 发件人地址行7。<br /> </td> 
   </tr>
-    <tr> 
-   <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>计算正在运行的投放数 <span class="uicontrol"><a href="../../workflow/using/campaign.md">量时</a></span> ,OperationMgt技术工作流会使用此选项。</p>它允许您定义超过天数，在运行投放计数中将排除状态不一致的投放。</p><p>默认情况下，该值设置为“7”，这意味着将排除7天以前不一致的投放。</p></td> 
-  </tr>
+  <tr> 
+   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
+   <td> 镜像页面服务器的URL（默认情况下，应与NmsTracking_ServerUrl相同）。<br /> 在投放定义中未指定URL时，它是电子邮件路由的默认值。<br /> </td> 
+  </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
    <td> 已发送SMS消息的参数： 发送到SMS网关以指示消息优先级的信息。<br /> </td> 
@@ -220,51 +239,33 @@ ht-degree: 0%
    <td> 执行重试SMS消息的期间。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkEmail_Characters</span> <br /> </td> 
-   <td> 电子邮件地址的有效字符。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
-   <td> 允许指定最大时间段（以小时为单位），以限制每次执行同步工作流时恢复的广播日志数。</a>.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
-   <td> MidSourcing会话中可以并行运行的最大调用数（默认为3）。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> 允许负责投放的操作符确认发送(如果指定了特定操作符或操作员组以在投放的属性中启动投放)。</p><p> 为此，请输入“1”作为值来激活选项。 要取消激活此选项，请输入“0”。</p><p> 然后，发送确认过程将作为默认过程： 只有在投放属性（或管理员）中为发送指定的运算符或操作员组才能确认和执行发送。 请参 <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">阅此部分</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
-   <td> 自定义延迟（以分钟为单位）之后，投放会被视为“延迟”，默认为30分钟。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
-   <td> 启用／禁用对Code128特殊字符的支持。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
-   <td> 在“lineImage”servlet中使用的AES键对URL(LINE渠道)进行编码。<br /> </td> 
+   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
+   <td> NmsUserAgent统计信息的上 <span class="uicontrol">次合并日</span> 期。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
    <td> 包含网段及其状态的选项的名称。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> NmsUserAgent统计信息的上 <span class="uicontrol">次合并日</span> 期。<br /> </td> 
+   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
+   <td> 启用／禁用对Code128特殊字符的支持。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">XtkEmail_Characters</span> <br /> </td> 
+   <td> 电子邮件地址的有效字符。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
    <td> 添加此选项并带有“0”值，可禁用投放XML代码的版本(右键单击/ <span class="uicontrol">编辑XML源</span> , <span class="uicontrol">或CTRL + F4快捷键</span> )。<br /> </td> 
-  </tr> 
-  <!--<tr> 
+  </tr>  
+ </tbody> 
+</table>
+
+<!--<tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
    <td> BCC email address for Momentum to send a raw copy of the sent emails. <br /> </td> 
-  </tr> 
- </tbody> 
-</table>-->
+  </tr>
+-->
 
 ## 资源 {#resources}
 
@@ -443,7 +444,7 @@ ht-degree: 0%
    <td> <span class="uicontrol">MC_ExchrencistCustomJs</span> <br /> </td> 
    <td> 个性化的JavaScript库以丰富事件。 必须包含以下两个功能的实现：<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">丰富RtEvents(aiEventId);</span> : 丰富并保存事件库中的 <span class="uicontrol">(其中</span> aiEventId与处理的实时事件表相对应)。</p> </li> 
+     <li> <p> <span class="uicontrol">丰富RtEvents(aiEventId);</span> : 丰富和保存事件库中的 <span class="uicontrol">(其中</span> aiEventId与处理的实时事件表相对应)。</p> </li> 
      <li> <p> <span class="uicontrol">丰富BatchEvents(aiEventId);</span> : 丰富和保存事件在数据 <span class="uicontrol">库中</span> (aiEventId对应于已处理批次事件的ID表)。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -509,7 +510,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMinQueueAlert</span> <br /> </td> 
-   <td> 排队实时事件的最小数目的警报阈值。<br /> </td> 
+   <td> 排队实时事件的最小数量的警报阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMinQueueWarning</span> <br /> </td> 
