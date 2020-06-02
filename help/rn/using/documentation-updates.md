@@ -13,17 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5d8959dc790c0cf0e6ea62122310bfbee5bcc0dd
+source-git-commit: e2ba309643a10a2bfdb031b3ee0acd90c3d02fc0
 workflow-type: tm+mt
 source-wordcount: '6477'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 
 # 文档更新{#documentation-updates}
 
-此页面列表每月所有新增功能和文档更新以及活动版本。
+本页列表每月所有新增功能和文档更新以及活动版本。
 
 您还可以查阅Adobe Campaign经 [典发行说明](../../rn/using/latest-release.md) ，以获取更多更新。
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 Adobe Campaign增强的MTA文章已更新。 现在只适用于Campaign Classic。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
-## 2020年3月 {#march-2020}
+## 2020 年 3 月 {#march-2020}
 
 数据模型最佳实践已通过包括序列、性能 [和大表](../../configuration/using/data-model-best-practices.md#sequences)等新 [的部](../../configuration/using/data-model-best-practices.md#performance) 分进行更新 [](../../configuration/using/data-model-best-practices.md#large-tables)。 [阅读更多](../../configuration/using/data-model-best-practices.md)
 
@@ -70,7 +70,7 @@ Adobe Campaign增强的MTA文章已更新。 现在只适用于Campaign Classic�
 
 访问管理指南已更新，其中包含有关已命名权限的更多信息。 [阅读更多](../../platform/using/access-management.md#named-rights)
 
-## 2020年2月 {#february-2020}
+## 2020 年 2 月 {#february-2020}
 
 现在提供设计Adobe Campaign数据模型时概述最佳实践和主要建议的新部分。 [阅读更多](../../configuration/using/data-model-best-practices.md)
 
@@ -124,7 +124,7 @@ Campaign Classic **本地和托管功能矩阵页面已使用** 新的联合数�
 
 配置文件中的参数表明实例是否正在使用增强的MTA，现在记录在案。 [阅读更多](../../installation/using/the-server-configuration-file.md#mta)
 
-## 2020年1月 {#january-2020}
+## 2020 年 1 月 {#january-2020}
 
 “可交付性”部分已通过更新的内容进行移动、重新组织和增强。 [阅读更多](../../delivery/using/about-deliverability.md)
 
@@ -144,7 +144,7 @@ Adobe Campaign增强的MTA文章已更新，其中包含有关在未向每条消
 
 已添加一个如何在工作流中使用实例变量的示例。 [阅读更多](../../workflow/using/javascript-scripts-and-templates.md)
 
-## 2019年12月 {#december-2019}
+## 2019 年 12 月 {#december-2019}
 
 “WdbcOptions_TempDbName”选项已添加到活动选项的列表。 [阅读更多](../../installation/using/configuring-campaign-options.md)
 
@@ -170,7 +170,7 @@ Adobe Campaign增强的MTA文章已更新，其中包含有关在未向每条消
 
 Adobe Campaign增强MTA文档现已可用。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
-新增了一节，介绍如何对工作流在开始中保持“尽快”状态进行故障诊断。 [阅读更多](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
+新增了一节，介绍如何对工作流在开始中保持“尽快”状态进行故障诊断。 [Read more](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
 新的“NmsOperation_DeliveryPreparationWindow”和“WdbcKillSessionPolicy”选项已添加到活动选项列表中。 [阅读更多](../../installation/using/configuring-campaign-options.md)
 
@@ -305,7 +305,7 @@ Android应用程序从Google Cloud Messaging(GCM)到Firebase Cloud Messaging(FCM
 
 添加了关于Teradata查询的外部帐户条带的信息。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#External_database_external_account)
 
-## 2019年1月{#release-doc-16-01-2019}
+## 2019 年 1 月{#release-doc-16-01-2019}
 
 Marketing Cloud触发器技术说明已更新。 [阅读更多](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
 
@@ -594,7 +594,7 @@ A/B测试范例已更新，缺少说明。 [阅读更多](https://docs.campaign.
 
 添加暂停的工作流最佳实践。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html)
 
-有关在工作流中导出数据时导入和后处理文件的新过程。 请 [在此处](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html)。
+有关在工作流中导出数据时导入和后处理文件的新过程。 请 [在这里](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html)。
 
 SMS消息文档的隔离机制已更新，以反映扩展通用SMPP连接器的错误管理的特性。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_quarantine_management.html#SMS_quarantines)。
 
@@ -626,7 +626,7 @@ SMS渠道文档已更新，在“自动回复”部分中添加了一些说明�
 
 多次选择加入示例已更新。 [阅读更多](../../web/using/use-cases--web-forms.md)
 
-## 2017年3月{#release-doc-31-03-2017}
+## 2017 年 3 月{#release-doc-31-03-2017}
 
 可交付性： 已 [更新入门](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) 指南。 交付性文档现在包含更详细 [的概述](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_About_deliverability.html) ，以及实施 [过程和主要步骤的说明](../../delivery/using/deliverability-key-points.md)。
 
