@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: adb25307146847a1c49d9c548d00557e95562541
+source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,13 @@ ht-degree: 0%
 
 ## 关于电子邮件附件 {#about-email-attachments}
 
-您可以将一个或多个文件附加到电子邮件投放。 可能有两种情况：
+您可以将一个或多个文件附加到电子邮件投放。
+
+>[!NOTE]
+>
+>为避免性能问题，建议每封电子邮件不要包含多个附件。 可以通过列表的 [Campaign Classic选项配置建议的阈值](../../installation/using/configuring-campaign-options.md#delivery)。
+
+可能有两种情况：
 
 * 选择一个文件，并按原样将其附加到投放。
 * 为每个收件人个性化附件的内容。 在这种情况下，您需要创建计算 **附件**: 在投放时，根据收件人计算每个消息的附件名称。 如果您有“可变数字打印”选项，投放时也可以个性化内容并将其 **转换为PDF** 格式。
@@ -45,7 +51,7 @@ ht-degree: 0%
 >可以向投放附加多个文件。 附件可以采用任何格式，包括压缩格式。
 
 1. 单击链 **[!UICONTROL Attachments]** 接。
-1. Click the **[!UICONTROL Add]** button.
+1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 1. 单 **[!UICONTROL File...]** 击以选择要附加到投放的文件。
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
@@ -92,7 +98,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
-   然后，该文件在服务器上可用，并附加到从该模板创建的不同投放。
+然后，该文件在服务器上可用，并附加到从该模板创建的不同投放。
 
 ### 附加个性化信息 {#attach-a-personalized-message}
 
@@ -120,6 +126,10 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
+>[!NOTE]
+>
+>为避免性能问题，如果您将通过个性化URL动态下载的图像作为附件，则默认情况下，每个图像大小不应超过100,000字节。 此推荐阈值可以通过 [列表Campaign Classic选项配置](../../installation/using/configuring-campaign-options.md#delivery)。
+
 ### 附加计算文件 {#attach-a-calculated-file}
 
 您可以在准备投放时计算附件名称。 要执行此操作，请选择选项 **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**。
@@ -131,7 +141,7 @@ ht-degree: 0%
 1. 指定要应用于附件的标签。
 1. 在定义窗口中指定文件的访问路径及其确切名称。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >服务器上必须存在该文件。
 
@@ -156,7 +166,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >服务器上必须存在该文件。
 
