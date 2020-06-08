@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d80e3d47b06b7a03974d9cfdd465861b3c5bcf81
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Adobe Campaign还提供 [检查](../../production/using/monitoring-processes.md#
 * IP信誉： 如果IP信誉不够好，将会影响性能。 可 **交付性监控模块** 优惠各种工具来跟踪平台的可交付性能。 Refer to this [page](../../delivery/using/monitoring-deliverability.md).
 * IP预热： IP预热由可交付性团队执行。 这包括在几周内通过新IP逐渐增加电子邮件数量。
 * IP关联设置： 不正确的IP关联设置可以完全停止电子邮件(配置中的运算符/关联名称不正确)或降低吞吐量(关联中的IP数量较少)。 Refer to this [page](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* 电子邮件大小： 电子邮件大小在吞吐量中起着重要作用。 建议的最大电子邮件大小为60 KB。 Refer to this [page](https://helpx.adobe.com/legal/product-descriptions/campaign.html). 在投放 [吞吐量报](../../reporting/using/delivery-reports.md#delivery-throughput) 告中，检查按小时传输的字节数。
+* 电子邮件大小： 电子邮件大小在吞吐量中起着重要作用。 建议的最大电子邮件大小为60 KB。 Refer to this [page](https://helpx.adobe.com/legal/product-descriptions/campaign.html). 在投放 [吞吐量报](../../reporting/using/global-reports.md#delivery-throughput) 告中，检查按小时传输的字节数。
 * 大量无效收件人: 当存在大量无效收件人时，会影响吞吐量。 MTA会继续重试向无效收件人发送电子邮件。 请确保数据库得到妥善维护。
 * 个性化数量： 如果投放保持“个性化正在进行中”，请检查个性化块中使用的JavaScript。
 
