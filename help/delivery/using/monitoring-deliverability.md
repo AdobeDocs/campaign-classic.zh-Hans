@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 74e1a883088d347cb1aab05d76b630c912411fc4
+source-git-commit: f4d82657fbeae39af173c867975455669497d8eb
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -53,12 +53,12 @@ ht-degree: 0%
 以下是有关交付性监控的一些附加准则：
 
 * 定期检查 [整个平台的投放](../../reporting/using/global-reports.md#delivery-throughput) 吞吐量，以验证它是否与原始设置一致。
-* 检查 [重试](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) (重试期为30分钟，投放模板为20个以上)设置正确。
+* 检查 [重试](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) 是否设置正确(重试期为30分钟，投放模板为20个以上)。
 * 定期验证弹 [回邮箱](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management) 是否可访问，以及帐户是否即将过期。
 * 检查每个投放吞吐量，确保其与投放内容的有效性(例如， “flash sales”应在几分钟内交付，而不是几天内交付)。
 * 在使用 [批次](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)时，请验证在触发下一个波形之前，每个波形是否有足够的时间完成。
 * 检查错误和新隔离的 [数量](../../delivery/using/understanding-quarantine-management.md) ，与其他投放一致。
-* 仔细查 [阅投放日志](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) ，检查突出显示的错误类型（灰色或黑名单、DNS问题、防垃圾邮件规则等……）。
+* 仔细查 [阅投放日志](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) ，检查突出显示的错误类型（灰色或黑名单、DNS问题、防垃圾邮件规则等）。
 
 ## 信号垃圾邮件 {#signal-spam}
 
@@ -70,7 +70,7 @@ Signal Spam是一种法国服务，它为法国ISP(Orange, SFR)优惠匿名反�
 
 ## 250ok {#deliverability-250ok}
 
-[250ok是Adobe](https://250ok.com/) 可交付性内部工具的补充性监控解决方案，可提供IP、域黑名单和信誉指标。
+[250ok是Adobe](https://250ok.com/) 交付能力内部工具的补充性监控解决方案，可提供IP、域黑名单和信誉指标。
 
 提供的信息是实时的，它允许主动提供帮助。
 
