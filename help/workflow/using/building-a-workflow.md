@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1631'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
 * 访问和创建技术工作流，请参阅 [技术工作流](#technical-workflows)
 * 使用模板创建工作流，请参阅工 [作流模板](#workflow-templates)
 
-## 创建新工作流 {#creating-a-new-workflow}
+## Creating a new workflow {#creating-a-new-workflow}
 
 从中访 **[!UICONTROL Explorer]**&#x200B;问工作流文件夹。 默认情况下，您可以 **[!UICONTROL Profiles and Targets]** 使用 **[!UICONTROL Jobs]** > > **[!UICONTROL Targeting workflows]**。
 
@@ -91,8 +91,6 @@ ht-degree: 1%
 >[!CAUTION]
 >
 >您可以在同一工作流中复制和粘贴活动。 但是，我们不建议跨不同的活动复制粘贴工作流。 某些附加到活动(如投放和调度程序)的设置可能会导致在执行目标工作流时发生冲突和出错。 相反，我们建议您 **重复** 工作流。 有关详细信息，请参阅 [复制工作流](#duplicating-workflows)。
-
-### 其他布局选项 {#additional-layout-options}
 
 您可以使用以下元素更改图表的显示和布局：
 
