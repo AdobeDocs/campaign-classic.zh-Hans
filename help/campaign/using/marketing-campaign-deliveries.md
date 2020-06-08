@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: e31a0faf6c48e2d34ce47fc1cd5a23aae05aeebf
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2925'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ![](assets/campaign_op_add_delivery.png)
 
-建议的配置适用于不同类型的投放(直邮、电子邮件、移动渠道、传真或电话)。
+建议的配置适用于不同类型的投放: 直邮、电子邮件、移动渠道
 
 >[!NOTE]
 >
@@ -314,7 +314,7 @@ ht-degree: 0%
 ![](assets/s_ncs_user_file_valid_select_BAT.png)
 
 
-* 单击按 **[!UICONTROL Send a proof]** 钮以创建验证。
+* Click the **[!UICONTROL Send a proof]** button to create the proofs.
 
    验证目标必须事先定义。
 
