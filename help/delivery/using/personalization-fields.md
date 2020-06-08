@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: e9e9b1352706e15a0d0c6ff8921e430524a44b13
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '843'
 ht-degree: 2%
 
 ---
@@ -83,11 +83,11 @@ ht-degree: 2%
 
 ## 优化个性化 {#optimizing-personalization}
 
-您可以使用专用选项优化个性化： **[!UICONTROL Prepare the personalization data with a workflow]**，位于投放 **[!UICONTROL Analysis]** 属性的选项卡中。
+您可以使用专用选项优化个性化： **[!UICONTROL Prepare the personalization data with a workflow]**，位于投放 **[!UICONTROL Analysis]** 属性的选项卡中。 有关分析投放的详细信息，请参 [阅本节](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 在投放分析期间，此选项自动创建并执行一个工作流，该工作流将链接到目标的所有数据存储在临时表中，包括来自链接到联合数据访问的表的数据。
 
-通过选中此选项，您可以显着提高执行个性化的性能。
+选中此选项可以在处理大量数据时大幅提高投放分析性能，尤其是当个性化数据通过联合数据访问从外部表时。 有关此方面的详细信息，请 [参阅访问外部数据库(联合数据访问)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data)。
 
 例如，如果您在邮件内容中使用大量收件人和／或个性化块时向大量个性化字段传送时遇到性能问题，此选项可加快个性化处理，从而加快邮件传送。
 
