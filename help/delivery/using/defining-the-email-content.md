@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cedcd9150c374116f187da7fd9e76bf81e978e2a
+source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2887'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,8 @@ ht-degree: 0%
 >[!NOTE]
 >
 >个性化字段的使用在“关于个 [性化”中](../../delivery/using/about-personalization.md)。
+
+您还可以在弹出窗口中将表情图标插 **[!UICONTROL Insert emoticon]** 入到主题行。
 
 ## 消息内容 {#message-content}
 
@@ -114,6 +116,19 @@ ht-degree: 0%
    对于HTML格式，请单 **[!UICONTROL Preview]** 击页面底部的选项卡，视图消息的呈现及其个性化。
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
+
+### 在电子邮件中插入表情图标 {#inserting-emoticons}
+
+您可以在电子邮件内容中插入表情图标。
+
+1. 单击该 **[!UICONTROL Insert emoticon]** 图标。
+1. 从弹出窗口中选择一个表情图标。
+
+   ![](assets/emoticon_4.png)
+
+1. 完成后 **[!UICONTROL Close]** 单击按钮。
+
+要自定义表情图标列表，请参阅 [此页](../../delivery/using/customizing-emoticon-list.md)。
 
 ## 选择消息格式 {#selecting-message-formats}
 
@@ -191,11 +206,10 @@ HTML格式的电子邮件投放可以包含图像。 在该投放向导中，您
 
 1. 在选 **[!UICONTROL Upload images]** 项卡中 **[!UICONTROL Images]** 选择。
 1. 然后，您可以选择是否要在电子邮件中包含图像。
-
-![](assets/s_ncs_user_email_del_img_upload.png)
+   ![](assets/s_ncs_user_email_del_img_upload.png)
 
 * 您可以手动上传图像，无需等待投放分析阶段。 为此，请单击链 **[!UICONTROL Upload the images straightaway...]** 接。
-* 您可以指定另一个路径以访问跟踪服务器上的图像。 为此，请在字段中输入 **[!UICONTROL Image URL]** 它。 此值将覆盖在安装向导的参数中定义的值。
+* 您可以指定另一个路径以访问跟踪服务器上的图像。 为此，请在字段中输入 **[!UICONTROL Images URL]** 它。 此值将覆盖在安装向导的参数中定义的值。
 
 在投放向导中打开包含图像的HTML内容时，系统会显示一条消息，提示您根据投放参数立即上传图像。
 
@@ -205,7 +219,11 @@ HTML格式的电子邮件投放可以包含图像。 在该投放向导中，您
 >
 >在手动上传或发送消息时，会修改图像访问路径。
 
-### 示例： 用图像发送消息 {#example--sending-a-message-with-images}
+### 发送包含图像的消息 {#sending-a-message-with-images}
+
+>[!NOTE]
+>
+>为避免性能问题，如果您将通过个性化URL动态下载的图像 [作为附件](../../delivery/using/attaching-files.md)，则默认情况下，每个图像大小不应超过100,000字节。 此推荐阈值可以通过 [列表Campaign Classic选项配置](../../installation/using/configuring-campaign-options.md#delivery)。
 
 以下是包含四个图像的投放的示例：
 
