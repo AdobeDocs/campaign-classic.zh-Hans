@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
+source-wordcount: '354'
+ht-degree: 74%
 
 ---
 
@@ -33,11 +36,11 @@ source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
 
 投放配置和参数可以保存在投放模板中，以便日后重复使用。
 
-单击此处了解更多信息.
+[单击此处了解更多信息](../../delivery/using/about-templates.md)。
 
 ## 在 Campaign 中能轻松导入现有的 HTML 以制作电子邮件吗? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
-了解如何导入现有HTML，以便在Adobe Campaign中一键创建和发送电子邮件。
+了解如何导入现有HTML以通过一键式创建和发送Adobe Campaign电子邮件。
 
 [单击此处了解更多信息](../../delivery/using/defining-the-email-content.md#message-content)。
 
