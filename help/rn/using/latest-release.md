@@ -13,17 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e329ee546a3990850daeb7a46ee9de77fd075ff1
+source-git-commit: cb55216e75559e1ce7eefa24d2302fe2c2224d40
 workflow-type: tm+mt
-source-wordcount: '1411'
-ht-degree: 0%
+source-wordcount: '1739'
+ht-degree: 1%
 
 ---
 
 
 # 最新版本{#latest-release}
 
-[构建升级](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) |控 [制面板版本](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) |文 [档更新](../../rn/using/documentation-updates.md) |先 [前版本](../../rn/using/release--19-2.md) |已弃 [用功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[构建升级](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) |控 [制面板版本](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) |文 [档更新](../../rn/using/documentation-updates.md) |先 [前版本](../../rn/using/release--20-1.md) |已弃 [用功能](../../rn/using/deprecated-features.md)
 
 <table> 
  <tbody> 
@@ -44,34 +44,22 @@ ht-degree: 0%
 
 最 **后一个稳定** 构建为9032(3a9dc9c)。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/do-not-localize/blue_2.png) 版本20.1.3 —— 内部版本9124 {#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/blue_2.png) 版本20.2.1 —— 内部版本9178 {#release-20-2-1-build-9178}
 
-_2020年5月6日_
-
-* 修复了文件传输 **活动的问题** ，该问题导致基于SFTP密钥的身份验证无法在Debian 9上工作。 (NEO-23183)
-
-## ![](assets/do-not-localize/orange_2.png) 版本20.1.2 —— 内部版本9123 {#release-20-1-2-build-9123}
-
-_2020年3月13日_
-
-* 修复了阻止在Red Hat 7服务器上部署版本的问题。 (NEO-23332)
-
-## ![](assets/do-not-localize/orange_2.png) 版本20.1 —— 内部版本9122 {#release-20-1-build-9122}
-
-_2020年2月17日_
+_2020年6月8日_
 
 **新增内容?**
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>雪花联合数据访问连接器</strong><br /> </th> 
+   <th> <strong>支持表情图标</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>雪花是一个完全托管的云数据仓库，可在存储和计算级别进行扩展。 有了这个新的连接器，Adobe Campaign现在可以利用雪花的强大功能执行大数据分割。 此连接器可供所有客户使用，包括由Adobe托管的客户。</p>
-    <p>有关详细信息，请参阅详 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">细文档</a> 和教 <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">程视频</a>。</p>
+   <td> <p>在活动中设计消息时，您现在可以使用专用按钮在消息正文中轻松插入表情图标。 还可以在电子邮件主题行中添加这些内容。 您可以自定义界面中可用表情图标的列表。</p>
+    <p>有关添加表情图标的详细信息，请参阅详 <a href="../../delivery/using/defining-the-email-content.md#inserting-emoticons">细文档</a>。 在本节中了解如何自定义 <a href="../../delivery/using/customizing-emoticon-list.md">表情列表</a>。</p>
    </td> 
   </tr> 
  </tbody> 
@@ -80,13 +68,33 @@ _2020年2月17日_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Hadoop联合数据访问连接器增强</strong><br /> </th> 
+   <th> <strong>Azure突触联合数据访问连接器</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Hadoop联合数据访问连接器已得到改进，可支持Hadoop 3.0和Cloudera。</p>
-    <p>有关详细信息，请参阅详 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">细文档</a>。</p>
+   <td> <p>您现在可以将活动实例连接到Azure突触外部数据库。 此连接通过新外部帐户管理。</p>
+    <p>Azure Synapse仅适用于混合和内部部署环境。 有关详细信息，请参阅<a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">详细文档</a>。</p>
+   </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> <strong>泰国和巴西隐私法</strong><br /> </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td> <p>泰国的个人数据保护法(PDPA)是一项新的隐私法，旨在协调泰国的数据保护要求并使之现代化。 </p>
+   <p>巴西的Lei Geral de Proteção de Dados(LGPD)将从8月16日起生效，适用于巴西所有收集或处理个人数据的公司。</p>
+   <p>这些法规适用于为居住在这些国家／地区的Adobe Campaign主体持有数据的客户。 除了活动中已有的隐私权功能（包括同意管理、数据保留设置和用户角色），我们还将利用此机会加入其他功能，以帮助您做好PDPA和LGPD的准备：</p>
+   <ul> 
+     <li><p>访问权和删除权： 我们正在利用为GDPR和CCPA添加的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">阅读更多</a></p></li> 
+     <li> <p>使用活动接口或API创建隐私请求时，您现在选择规 <strong>定类</strong> 型： PDPA、LGPD、GDPR、CCPA。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">阅读更多</a>。</p></li>
+    </ul>
    </td> 
   </tr> 
  </tbody> 
@@ -94,132 +102,159 @@ _2020年2月17日_
 
 **安全性增强**
 
-* 改进了报告配置中的安全性，以防止点击劫持。 这适用于新报告。 对于旧报告，您需要重新发布它们以应用更改。 (NEO-13282)
+* 默认情况下，为所有客户启用了对跟踪电子邮件中链接的安全性。 另外还提供了增强的安全功能，可通过联系客户服务中心来启用此功能。 有关非托管客户启用此功能的功能和步骤的更多详细信息，请参阅安 [全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html)。 (NEO-24232)
 
-* 修复cryptString中的小内存问题。 (NEO-20071)
+* 为了优化安全性，用于生成文件名的MD5哈希算法已通过sha256得到增强，以用于公共文件上传。 (NEO-17044)
 
-* 改进了监视器JSP以修复内部IP泄露。 (NEO-16821)
+* 为了增强XSS攻击的安全性，在执行镜像页面时禁用客户端脚本。 (NEO-17987)
 
-* 修复了堆栈跟踪信息可显示给非管理员用户的问题。 (NEO-12388)
+* 修复了隐私请求清除 **技术工作流无法** 删除对帐数据的问题。 (NEO-25168, NEO-21004)
 
-* 改进了对以前会话中缓存数据的管理。 (NEO-17039)
+* 修复了文件传输 **活动的问题** ，该问题导致基于SFTP密钥的身份验证无法在Debian 9上工作。 (NEO-23183)
 
-* 修复了导致logins.log文件无法通过IMS记录成功登录尝试的问题。 (NEO-11004)
+**兼容性增强**
+
+活动现在支持以下系统：
+* 操作系统： 德比10
+* RDBMS: Oracle 18c和Oracle 19c
+* 联合数据访问: Azure突触分析
+
+了解有关活动 [兼容性矩阵的更多信息](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
 
 **改进**
 
-* HTTP2连接器现在支持iOS 13。
+* 交易消息已得到改进，可获得更好的用户体验。 您现在可以取消发布事务性消息模板，这将从执行实例中删除它。 [了解更多](../../message-center/using/template-unpublication.md)。
 
-* 改进了隔离管理和清除推送通知功能（nms:address和nms:appSubscriptionRcp）使用的表。 对于iOS（仅限HTTP2连接器），禁用的令牌现在处理方式与Android相同。 现在在NmsAppSubscriptionRcp表中设置禁用标志。 [阅读更多](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* 新选项可用于设置发送包含图像或附件的电子邮件时的限制。 这些护栏可以避免性能问题，这对于事务性消息尤为有用。 [阅读更多](../../installation/using/configuring-campaign-options.md#delivery)
 
-* 在JavaScript代码和高级JavaScript **代码工作流活动****中添加了一个新选项** ，用于定义超时时间段。 这可防止javascript执行阶段运行太长。 如果经过超时时间，则停止工作流。 默认超时为1小时。 [阅读更多](../../workflow/using/sql-code-and-javascript-code.md)
+* 新的“ **在投放库中准备部分** ”选项允许直接在数据库中执行投放准备，这可以显着加快分析。 此选项仅适用于特定配置。 [了解更多](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis)。 (NEO-23886)
 
-* 现在，当在投放服务器上找不到匹配的关联时，中间源分析会停止，并显示相应的错误消息。
+* 针对Microsoft Dynamics [的CRM连接器活动](../../workflow/using/crm-connector.md) (CRM Connector Connector)的性能已得到改进。 (NEO-13303, NEO-12710)
 
-* 现在支持Postgres的数据库故障转移： 当活动库服务器崩溃和重新启动时，现在数据库自动重新连接到它。
+* 已增加共享内存版本。
 
-* 已将 **开始挂起** 视图添加到“管理”>“审核”>“工作流状态”节点。 这允许您监视实例上正在等待operationMgt进程启动的所 **有工作流** 。 此视图包含在营销活动包中。 [阅读更多](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+   >[!WARNING]
+   >
+   >执行升级后，此改进需要执行额外的步骤。 请参阅下 **面的技术** 演变部分。
+
+* 清理工作流已得到增强。 所有已删除工作流的孤立工作表现在也由清除工作流自动删除。 [了解更多](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances)。
+
+* 使用iOS HTTP2连接器的iOS移动应用程序的证书现在在发送推送通知之前经过验证，从而防止投放因证书过期而失败。
+
+* HTTP代理连接的管理已得到改进。 [了解更多](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)。
 
 **其他更改**
 
-* 在Linux上，nlserver服务启动现在使用系统单元而不是/etc/init.d/nlserver6脚本。 安装20.1包时，将自动执行到新启动方案的迁移。 /etc/init.d/nlserver6仍然提供，但是为了与nlserver服务(开始、重新启动、停止等)交互，我们建议您直接使用systemctl命令。
+* 现已弃用传统SMS连接器。 请参阅“已弃 [用的功能”页](../../rn/using/deprecated-features.md)。
 
-* 最耗用的自定义表已从xtkNewId序 **列移动** 到专用序列。 [阅读更多](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* 您不能再使用自己的Litmus帐户来配置和使用Adobe Campaign中的收件箱呈现。 [了解更多](../../delivery/using/inbox-rendering.md)。
 
-* 改进了查询性能，这些性能可能会受到不必要的数据库连接的影响。
+* 为了更好地区分视图和文件夹，视图名称的颜色已从深蓝色更改为深青色。 [阅读更多](../../platform/using/access-management.md#about-views)
 
-* 改进了数据库更新向导的性能。
+* Campaign Classic现在可以连接到托管在英国、印度和加拿大地区的Microsoft Dynamics CRM帐户。 这适用于Office 365和内部部署(Dynamics 2015)部署类型。
 
-* 数据库记录管理得到了增强。
+* 活动现在执行TLS验证以检查服务器的主机名是否与提供的证书中的主机名匹配。
 
-* 连接池的健壮性已得到改进，这可能防止意外连接故障的发生频率过高。
+* 投放和跟踪统计信息表现在为SMS渠道显示每个投放一个条目，而不是每个投放收件人显示一个条目。
 
-* 增强了在软错误时向隔离发送地址的电子邮件地址验证规则。 [阅读更多](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+* 在日志文件中添加了一条错误消息，当下载的文件大于磁盘空间时警告用户。
 
-* 对于Debian,活动现在在系统PCRE库可用时使用它们。
+* 雪花连接器现在可使用以下功能： 几个月前，几天前Int,ToDateTime，几年前。
 
-* 活动现在允许使用更新的系统ODBC库。
+**技术演进**
 
-* 在打开连接以加载富映像时，超时已添加到LINE servlet。 如果加载图像所花的时间过长，Servlet将停止连接以避免出现瓶颈。
+此新版本更新了共享内存，并需要执行升级的其他步骤。 作为活动管理员，您需要删除内存段。 这些步骤是必需的，因为旧段将阻止nlserver/nlsrvmod启动。
+
+在Windows上，需要重新启动系统。
+
+在Debian/CentOs上，需要删除共享内存。 以下是步骤：
+
+在升级之前，您需要执行以下步骤：
+
+1. 如果apache2（CentOS上的http2）服务正在运行，请停止该服务。
+1. 如果nlserver(nlserver6 for older builds)服务正在运行，请停止它。
+
+升级后：
+
+1. 如果版本比当前版 **本旧** ，请使用ipcrm命令删除共享内存。
+1. 开始nlserver服务（如果它正在运行）。
+1. 开始apache2服务（如果它正在运行）。
+
+下面是Debian的命令行：
+
+```
+/etc/init.d/nlserver* stop
+/etc/init.d/apache2 stop
+```
+
+```
+for i in `ipcs -s | awk '/www-data/
+{print $2}'`; do (ipcrm -s $i); done
+```
+
+```
+for i in `ipcs -m | awk '/www-data/ {print $2}
+'`; do (ipcrm shm $i); done
+```
+
+```
+for i in `ipcs -m | awk '/neolane/
+{print $2}'`; do (ipcrm shm $i); done
+```
+
+```
+for i in `ipcs -s | awk '/neolane/ {print $2}
+'`; do (ipcrm -s $i); done
+```
+
+```
+/etc/init.d/apache2 restart
+/etc/init.d/nlserver* start
+```
+
+本页提供Linux的示 [例](../../configuration/using/additional-parameters.md#redirection-server-configuration)。
 
 **修补程序**
 
-* 修复了使用Hadoop连接器时的帐户密钥加密问题。
-
-* 修复了由于实施SSL认证而导致用户连接在Windows服务器上失败的回归问题。 (NEO-20629)
-
-* 修复了负工作流ID情况下增量查询活动的问题。 (NEO-19779)
-
-* 修复了通过Netezza查询连接器运行联合数据访问时的编码问题。 (NEO-19594)
-
-* 修复了在Web下载工作流事件活动中使用POST方法 **时导致错误** 的问题。
-
-* 修复了生成优惠建议的问题。 (NEO-18176)
-
-* 修复了使用客户获取Web表单模板时的页脚显示问题。
-
-* 修复了分析连续投放内容中的URL时可能导致其崩溃的问题。 (NEO-16910)
-
-* 修复了在创建新 **开始****时不** 计算“活动”和“结束”字段的问题。
-
-* 修复了使用URL时 **“文件下载** ”工作流活动的问题。
-
-* 修复了在报表的列表活动中预览导入的查询时的问题。 (NEO-13119)
-
-* 修复了在电子邮件编辑器中选择“以活动为后盾” **个性化块时** ，显示过时图像的问题。
-
-* 客户端与服务器之间的网络通信已得到改进。
-
-* 修复了在同一工作流中创建过多活动的问题。 现在，您创建的工作流不能超过28个。 将显示警告。
-
-* 修复了在合并工作 **流活动中使用** “选择列”对帐选 **项时的** 问题。
-
-* 修复了在工作流中使用损坏的扩充列表时可能发生的控制台崩溃问题。 (NEO-18096)
-
-* 修复了工作流(NEO-18010、NEO-18032)中可能发生的各种控制台崩溃问题
-
-* 修复了允许执行外部信号工作 **流活动的问** 题，即使该信号处于禁用状态。 (NEO-17524)
-
-* 修复了创建新模式时的问题。
-
-* 修复了发送SMS消息时的跟踪问题。 (NEO-19595)
-
-* 修复了在受众指示器中显示错误的目标投放号的问题。
-
-* 修复了在通过工作流活动生成描述性报告时显示错误百分比的问题。 (NEO-14314)
-
-* 修复了在时间投放参数时使视图吞吐量报告显示不同数字的问题。 (NEO-11783)
-
-* 修复了事务性消息跟踪指示器无法由跟踪工作流更新的问题。 (NEO-17770)
-
-* 修复了在通过SOAP请求优惠时导致Web进程崩溃和重新启动的回归问题。 (NEO-19482)
-
-* 修复了上载目录是远程共享位置时无法将数据上载到公共资源的问题。 (NEO-19361)
-
-* 修复了导致Adobe Experience Cloud技 **术工作流程中的导入受众** （连续失败）的问题。 (NEO-18463)
-
-* 修复了在使用从Experience Manager导入的模板时无法发送投放的问题。 (NEO-17540)
-
-* 修复了升级到构建9032并阻止实例通过SSL协议连接到FTP服务器后出现的问题。 (NEO-20498)
-
-* 修复了在工作流中使用活动联合数据访问作为模式来删除、插 **入或更新大量数据** ，时出现的问题。 (NEO-13280)
-
-* 修复了在标记外使用“if”语句时无法发送电子邮件的问 `body` 题。
-
-* 修复了在尝试显示来自已发送消息的投放日志的镜像页面时发生的问题。 (NEO-17976)
-
-* 修复了在镜像页面中单 **击“导入HTML** ”后，“文本内容”选 **项卡中无法显** 示“指向投放个 **性化** ”块的链接的问题。 (NEO-17568)
-
-* 单击指向已过期的镜像页面的链接时显示错误消息。 (NEO-17340)
-
-* 修复了阻止在“数据分发”创建屏幕中使用某 **些按钮** 的问题。
-
-* 修复了在以亚洲／加尔各答为时区的实例中安排投放活动时发生的问题。 (NEO-20001)
-
-* 现在，当投放有关联配置问题时显示错误。
-
-* 修复了在“关于”菜单中显示错误版本标 **签号** 的问题。
-
-* 修复了在工作流中尝试从重复路由的属性更新投放帐户时发生的问题。 (NEO-18684)
-
-* 修复了通过重定向模块连接到实例时出现的问题，该问题导致关闭后连接无法正确清理。
+* 修复了清除工作流日志中的次要回归。
+* 修复了分析WSDL文件 **时工作流加载(SOAP** )活动中的问题。
+* 修复了使用工作流活动升级大量调查以有效处理大量工作流 **时** ，导致出错的问题。
+* 修复了处理增强MTA中的inMail邮件时的间歇性连接问题。 (NEO-20380)
+* 修复了在HTML中以100%宽度显示图像时，热点单击百分比无法正确显示的问题。 (NEO-23203)
+* 修复了导致投放的条件内容无法在热点单击报告中完全显示的问题。 (NEO-18729)
+* 修复了在恢复工作流以发送重复目标时跳过投放批准步骤的问题。 (NEO-18166)
+* 修复了在工作流中修 **复错误后** ,“重新启动消息准备”按钮无法恢复投放的问题。 (NEO-13488)
+* 修复了在中间源阶段可能导致投放在目标包括日语电子邮件格式的收件人的模式下失败的问题。 (NEO-23846)
+* 修复了雪花连接器的时区转换问题(NEO-20105)
+* 修复了外部帐户使用FTP over SSL时的问题。 (NEO-20498)
+* 修复了一个问题，该问题可能会阻止图像以行投放显示。 (NEO-23207)
+* 修复了在发布优惠时导致错误的问题。 (NEO-23312)
+* 修复了推送通知的问题，该问题导致即使证书已过期，测试连接也能在移动应用程序中工作。 (NEO-22991)
+* 修复了在以高频率发送时可能影响推送通知的问题。 (NEO-20516)
+* 修复了导致跟踪数据包含重复的问题，即使跟踪日志没有。 (NEO-20040)
+* 修复了在跟踪服务器通信失败后导致发送重复事务电子邮件的问题。 (NEO-23640)
+* 修复了从跟踪URL重定向时删除编码参数值的问题。 (NEO-25637)
+* 修复了在比较浮点数时查询无法工作的问题。 (NEO-23243)
+* 修复了在重新启动工作流 **后，** “修改者”列内容无法显示的问题。 (NEO-23035)
+* 修复了从第二个容器下载日志时导致跟踪技术工作流失败的问题。 (NEO-23159)
+* 修复了在运行工作流活动时可能导致扩充失败 **的问题** 。 (NEO-17338)
+* 已向多次添加检查以 **将字段保留** 在外部重复数据删除工 **作流活动** 中，以防输入null或负值。
+* 已从重复 **的调度程序** 中删除活动向导，以避免提及小时和分钟数。 只考虑日期。
+* 修复了通过“脚本”工作流存储中的“由脚本计 **算”选项创建投放时** ，其他活动字段 **存在的一** 个问题。 (NEO-20609)
+* 修复了阻止在工作流库清除任务中删除Ghost的问题。
+* 修复了导致计费(活 **动用户档案)技术工作** 流失败的问题。 (NEO-1977)
+* 修复了测试acsDefaultAccount外部帐户连接时的问题。 (NEO-23433)
+* 修复了一个问题，该问题导致您无法使用Hadoop表创建具有多列的主键模式扩展。 (NEO-17390)
+* 修复了加载(SOAP) **活动中的一个问题** ，该问题可能会阻止从URL加载WSDL文件。 (NEO-16924)
+* 修复了在负载平衡多个活动工作流服 **务器时** ，无法通过控制台执行无条件停止的问题。 (NEO-19556)
+* 修复了导致清除工作流崩溃的回归。
+* 修复了在执行实例上发布模板时可能发生的问题。
+* 修复了可能阻止collectPrivacyRequests技术工作流运行的问题。 (NEO-20513, NEO-25169)
+* 修复了在升级到构建9080后尝试连接到受众管理器时可能发生的问题。 (NEO-20511, NEO-25167)
+* 修复了以PDF或XLS格式导出报表时可能出现的问题。 (NEO-20982、NEO-23493、NEO-23348)
+* 修复了在投放列表发送后，在投放中显示两次的问题。
+* 修复了投放准备问题，该问题在将路由配置设置为通过中间源发送投放时可能发生。
+* 修复了在单击“行”消息中的Web应用程序链接时可能显示错误消息的问题。
+* 修复了可能阻止Microsoft Dynamics CRM检索所有实体的问题。 (NEO-24528)
+* 修复了在运行清理工作流 **后删除增量查询** 活动历史记录的问题。
+* 修复了创建中间源外部帐户时缺少NmsMidSourcing_LastBroadLog_&lt;InternalName>选项的问题
