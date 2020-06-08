@@ -1,7 +1,7 @@
 ---
-title: 营销资源(MRM)
-seo-title: 营销资源(MRM)
-description: 营销资源(MRM)
+title: 营销资源语(MRM)
+seo-title: 营销资源语(MRM)
+description: 营销资源语(MRM)
 seo-description: null
 page-status-flag: never-activated
 uuid: cccd9046-be4f-4eaa-adb4-802fbb2ea87a
@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '95'
+ht-degree: 0%
 
 ---
 
 
-# 营销资源(MRM){#marketing-resources-mrm}
+# 营销资源语(MRM){#marketing-resources-mrm}
 
-下面详细介绍的工作流默 **认情况下随“营销资源(MRM)** ”模块安装。 For more on this module, refer to this [section](../../campaign/using/designing-marketing-campaigns.md).
+默认情况下，下面详细介绍的工作流 **随营销资源(MRM** )模块一起安装。 For more on this module, refer to this [section](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 
@@ -32,19 +35,19 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">营销资源通知</span><br /> </td> 
-   <td> <span class="uicontrol">assetMgt</span><br /> </td> 
-   <td> 此工作流管理与批准和发布营销资源相关的通知。 <br /> </td> 
+   <td> <span class="uicontrol">营销资源通知</span> <br /> </td> 
+   <td> <span class="uicontrol">资产管理</span> <br /> </td> 
+   <td> 此工作流管理与营销资源审批和发布相关的通知。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">任务通知</span><br /> </td> 
-   <td> <span class="uicontrol">taskMgt</span><br /> </td> 
+   <td> <span class="uicontrol">任务通知</span> <br /> </td> 
+   <td> <span class="uicontrol">taskMgt</span> <br /> </td> 
    <td> 通过此工作流，您可以发送与营销活动中的任务相关的通知消息。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">讨论论坛流程</span><br /> </td> 
-   <td> <span class="uicontrol">newsgroupMgt</span><br /> </td> 
-   <td> 此工作流管理来自论坛的通知的交付。 当接收到批准信号时触发。<br /> </td> 
+   <td> <span class="uicontrol">讨论论坛流程</span> <br /> </td> 
+   <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
+   <td> 此工作流管理来自论坛的通知的投放。 当接收到批准信号时触发。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
