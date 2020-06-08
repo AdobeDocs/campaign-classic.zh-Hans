@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
+source-git-commit: 3b04cf988f144b8bfb846aff83e97c9b3a82e6e0
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 91%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 >[!NOTE]
 >
->Adobe Campaign Classic 有 v6.11 和 v7 两个版本。除非另行提及，否则帮助资料适用于两个版本的最新版本。屏幕截图均为 Campaign Classic v7。
+>Adobe Campaign Classic 有 v6.11 和 v7 两个版本。除非另行提及，否则帮助资料适用于两个版本的最新版本。屏幕截图反映了Campaign Classicv7用户界面。
 
 ## 重点功能 {#key-capabilities}
 
@@ -72,7 +75,7 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 
 根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。A detailed product description is available here: [Adobe Campaign Classic Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).
 
-下列功能可供使用。根据您的许可协议，这些功能中的某些功能在您的实例中是否可用。
+下列功能可供使用。根据您的许可协议，其中某些功能可在您的实例中使用或不使用。
 
 * [渠道](../../delivery/using/communication-channels.md) - 在不同渠道上设计并投放内容：电子邮件、SMS、Line、移动应用程序、直邮，
 * [活动](../../campaign/using/designing-marketing-campaigns.md) - 跨渠道编排各种活动，
