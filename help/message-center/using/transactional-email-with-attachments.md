@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
+source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 关键步骤 {#key-steps}
 
-在此方案中，您将学习如何发送包含个人和／或个性化附件的交易电子邮件。 附件不会预上传到Transactional Messaging服务器上： 而是在飞机上生成。
+在此方案中，您将学习如何发送包含个人和／或个性化附件的交易电子邮件。 附件不会预上传到Transactional Messaging服务器： 而是在飞机上生成。
 
 捕获客户互动或详细信息时，您可能需要在流程结束时将此信息发回给客户，例如，在电子邮件附加的PDF文件中。
 
@@ -45,6 +45,10 @@ ht-degree: 0%
 * 如果附件与事务关联（如上面所述的示例方案中），则可能包含在客户流程中生成的动态数据。
 * 附加PDF文件将优化安全性，因为您可以加密文件并通过HTTPS发送文件。
 
+>[!NOTE]
+>
+>为避免性能问题，如果您将通过个性化URL动态下载的图像作为附件，则默认情况下，每个图像大小不应超过100,000字节。 此推荐阈值可以通过 [列表Campaign Classic选项配置](../../installation/using/configuring-campaign-options.md#delivery)。
+
 ## 建议 {#important-notes}
 
 在实施此方案之前，请仔细阅读以下准则：
@@ -53,6 +57,10 @@ ht-degree: 0%
 * 由于Adobe以外没有直接访问事务消息实例或服务器的权限，因此没有标准方法将这些文件推送到这些服务器上（无FTP访问权限）。
 * 在合同上使用事务消息传递实例上的磁盘空间存储任何类型的文件是不正确的，甚至用于附件也是如此。
 * 您需要使用其他联机磁盘系统来托管这些文件。 您需要FTP访问此系统，并且必须能够写入和删除文件。
+
+>[!NOTE]
+>
+>为避免性能问题，建议每封电子邮件不要包含多个附件。 可以通过列表的 [Campaign Classic选项配置建议的阈值](../../installation/using/configuring-campaign-options.md#delivery)。
 
 ## 实施 {#implementation}
 
