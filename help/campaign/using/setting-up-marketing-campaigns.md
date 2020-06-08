@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1227'
 ht-degree: 1%
 
 ---
@@ -144,10 +144,6 @@ ht-degree: 1%
 在此标签中，指定基于此模板的活动的计划执行日期。
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
-
-您可以使用计划创建向导自动填写所有执行日期。 为此，请单击位 **[!UICONTROL Complete the execution schedule...]** 于表上方的链接。
-
-![](assets/s_ncs_user_op_template_recur_planning_wz.png)
 
 执行计划的配置模式与工作流 **[!UICONTROL Scheduler]** 的对象一致。 如需详细信息，请参阅[此部分](../../workflow/using/architecture.md)。
 
