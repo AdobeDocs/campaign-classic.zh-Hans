@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e9923eb8cb78e7af05d64a122cd35b9cf3a4f215
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 0%
@@ -246,7 +246,7 @@ Adobe Campaign与Adobe Analytics之间的数据交换——数据连接器由四
    ![](assets/webanalytics_delivery_properties_003.png)
 
 1. 打开投放属性。
-1. 转到选项 **[!UICONTROL Web Analytics]** 卡，然后选择之前创建的外部帐户。 请参阅 [步骤2: 创建外部帐户](#step-2--create-the-external-account-in-campaign))。
+1. 转到选项 **[!UICONTROL Web Analytics]** 卡，然后选择之前创建的外部帐户。 请参阅 [步骤2: 以活动创建外部帐户](#step-2--create-the-external-account-in-campaign)。
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
