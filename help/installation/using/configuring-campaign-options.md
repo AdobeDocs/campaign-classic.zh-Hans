@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
+source-git-commit: de1173786c94c2a526153e7e6948f71c9523fa7b
 workflow-type: tm+mt
-source-wordcount: '3740'
+source-wordcount: '3903'
 ht-degree: 0%
 
 ---
@@ -109,6 +109,18 @@ ht-degree: 0%
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_FromAddressMasks</span> <br /> </td> 
    <td> 允许您定义发送消息时使用的发件人地址的语法。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_ImageServerTimeout</span> <br /> </td> 
+   <td> 允许您定义在检索从个性化URL下载并附加到电子邮件的图像时从服务器获取响应的超时限制（以秒为单位）。 如果超出此值，则无法发送消息。 The default value is 60 seconds.<br /> </td> 
+  </tr> 
+ <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
+   <td> 允许您定义从个性化URL下载并附加到电子邮件的图像所允许的最大大小（以字节为单位）。 默认值为100,000字节。 在发送验证并下载图像以处理电子邮件时，如果图像的大小超过此值或存在下载问题，则投放日志中将显示错误，验证投放将失败。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
+   <td> 允许您在电子邮件或交易电子邮件模板中设置最大数量的附件。 如果超出此值，则在投放分析日志或发布事务电子邮件模板时将显示警告。 默认值为1 attachment。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRetry</span> <br /> </td> 
