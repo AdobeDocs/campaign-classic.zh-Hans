@@ -5,10 +5,10 @@ index: y
 product: adobe campaign
 sub-product: adobe活动经典
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 56ddf3dc1505c0507c67f8b08c9f33b4007f8857
 workflow-type: tm+mt
-source-wordcount: '2090'
-ht-degree: 9%
+source-wordcount: '2100'
+ht-degree: 10%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 9%
 + 发行说明 {#release-notes}
    + [最新版本](rn/using/latest-release.md)
    + 之前版本 {#previous-releases}
+      + [版本20.1](rn/using/release--20-1.md)
       + [版本19.2](rn/using/release--19-2.md)
       + [版本19.1](rn/using/release--19-1.md)
       + [版本18.10](rn/using/release--18-10.md)
@@ -127,6 +128,7 @@ ht-degree: 9%
       + [条件内容](delivery/using/conditional-content.md)
       + [个性化优惠券](delivery/using/personalized-coupons.md)
       + [生成个性化PDF文档](delivery/using/generating-personalized-pdf-documents.md)
+      + [自定义表情图标列表](delivery/using/customizing-emoticon-list.md)
    + 使用种子地址 {#using-seed-addresses}
       + [关于种子地址](delivery/using/about-seed-addresses.md)
       + [创建种子地址](delivery/using/creating-seed-addresses.md)
@@ -526,6 +528,7 @@ ht-degree: 9%
       + [事务性消息预览](message-center/using/transactional-message-preview.md)
       + [发送验证](message-center/using/sending-a-proof.md)
       + [模板发布](message-center/using/template-publication.md)
+      + [模板取消发布](message-center/using/template-unpublication.md)
    + 事件处理 {#event-processing}
       + [关于事件处理](message-center/using/about-event-processing.md)
       + [事件集合](message-center/using/event-collection.md)
@@ -593,7 +596,7 @@ ht-degree: 9%
       + [部署实例](installation/using/deploying-an-instance.md)
       + [安装Campaign Classic标准包](installation/using/installing-campaign-standard-packages.md)
    + 其他配置 {#additional-configurations}
-      + [配置活动服务器](installation/using/configuring-campaign-server.md)
+      + [配置 Campaign 服务器](installation/using/configuring-campaign-server.md)
       + [通过LDAP连接](installation/using/connecting-through-ldap.md)
       + [技术电子邮件配置](installation/using/email-deliverability.md)
       + [电子邮件存档](installation/using/email-archiving.md)
@@ -603,6 +606,7 @@ ht-degree: 9%
       + [交互——数据缓冲区](installation/using/interaction---data-buffer.md)
    + 附录 {#appendices}
       + [服务器配置文件](installation/using/the-server-configuration-file.md)
+      + [活动网络端点](installation/using/campaign-network-endpoints.md)
       + [命令行](installation/using/command-lines.md)
       + [创建新实例](installation/using/creating-new-instances.md)
       + [列表Campaign Classic选项](installation/using/configuring-campaign-options.md)
@@ -625,7 +629,7 @@ ht-degree: 9%
       + [恢复](production/using/restoration.md)
       + [复制环境](production/using/duplicating-environments.md)
       + [数据库清理工作流](production/using/database-cleanup-workflow.md)
-   + 更新Adobe Campaign {#updating-adobe-campaign}
+   + 更新 Adobe Campaign {#updating-adobe-campaign}
       + [简介](production/using/introduction.md)
       + [升级](production/using/upgrading.md)
       + [切换到Unicode](production/using/switching-to-unicode.md)
