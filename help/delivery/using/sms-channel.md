@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3152'
 ht-degree: 2%
 
 ---
@@ -25,54 +25,29 @@ ht-degree: 2%
 
 # SMS渠道{#sms-channel}
 
-Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人用户档案必须至少包含移动电话号码。
+Adobe Campaign lets you perform mass personalized deliveries of SMS messages. 收件人用户档案必须至少包含移动电话号码。
 
 >[!NOTE]
 >
->Adobe Campaign还允许您通过其Adobe Campaign移动应用程序 **渠道(NMAC)选项在移动终端上提** 交通知。
+>Adobe Campaign also lets you submit notifications on mobile terminals, via its **Adobe Campaign Mobile App Channel (NMAC)** option.
 > 
->有关此内容的详细信息，请参 [阅关于移动应用渠道](../../delivery/using/about-mobile-app-channel.md) 。
+>For more on this, refer to the [About mobile app channel](../../delivery/using/about-mobile-app-channel.md) section.
 
 以下各节提供特定于SMS渠道的信息。 有关如何创建投放的全局信息，请参[阅此部分](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
-## 设置SMS渠道 {#setting-up-sms-channel}
+## Setting up SMS channel {#setting-up-sms-channel}
 
 要发送到移动电话，您需要：
 
 1. 指定连接器和消息类型的外部帐户。
 
-   可用连接器包括： NetSize、通用SMPP（支持二进制模式的SMPP版本3.4）、Sybase365(SAP SMS 365)、 CLX Communications、Tele2、O2和扩展通用SMPP。
+   请注意，从20.2版开始将弃用以下连接器： NetSize、通用SMPP（支持二进制模式的SMPP版本3.4）、Sybase365(SAP SMS 365)、 CLX Communications、Tele2、O2和iOS。 已弃用的功能仍然可用，但不会进一步增强，也不支持。 For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html).
 
 1. 引用此投放模板的外部帐户。
 
-### 激活外部帐户 {#activating-an-external-account}
-
-外部帐户的列表位于Adobe Campaign浏览器 **[!UICONTROL Platform]** 树 **[!UICONTROL External accounts]** 的>节点中。
-
-* 例如，转到名为的默认帐户 **[!UICONTROL NetSize mobile delivery]**。
-* 在选 **[!UICONTROL General]** 项卡中，选中 **[!UICONTROL Enabled]** 复选框。
-
-   ![](assets/s_user_external_account_01.png)
-
-* 检查是否 **[!UICONTROL Mobile]** 为字段选择了 **[!UICONTROL Channel]** 选项。
-* 在选 **[!UICONTROL Mobile]** 项卡中，从下拉列表中选择连接器： NetSize、通用SMPP、Sybase365(SAP SMS 365)、 CLX Communications、Tele2、O2或扩展通用SMPP。 有关扩展通用SMPP连接器的详细信息，请参 [阅创建SMPP外部帐户](#creating-an-smpp-external-account) 。
-
-   ![](assets/s_user_external_account_connect_01.png)
-
-* 根据供应商提供的信息配置连接器。 在以下示例中，运算符为NetSize。
-
-   ![](assets/s_user_external_account_param.png)
-
-* 在选项 **[!UICONTROL Connector]** 卡中，将激活 **[!UICONTROL Call Web Service]** 模式保留为默认选中状态。
-
-   ![](assets/s_user_external_account_param_02.png)
-
-* 如果显 **[!UICONTROL Connector]** 示选项卡，则指定连接器的访问URL。 如果提供程序是 **NetSize，则该地址必须以** netsize.jsp结尾。 对于所有其他连接器，URL地址以 **smpp34.jsp结尾**。
-
 ### 创建SMPP外部帐户 {#creating-an-smpp-external-account}
 
-如果要使用SMPP协议，还可以创建新外部帐户。
-
+要将SMS发送到移动电话，您首先需要创建SMPP外部帐户。
 有关SMS协议和设置的详细信息，请参阅此技 [术说明](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)。
 
 为此请执行以下操作步骤：
@@ -87,7 +62,11 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
 
    ![](assets/extended_smpp_connector.png)
 
-   该 **[!UICONTROL Enable verbose SMPP traces in the log file]** 选项允许您将所有SMPP流量转储到日志文件中。 必须启用此选项才能对连接器进行故障诊断，并与提供者看到的流量进行比较。
+   >[!CAUTION]
+   >
+   > 从20.2版开始，将弃用旧版连接器，不支持。 我们建议使用连 **[!UICONTROL Extended generic SMPP]** 接器。 有关如何迁移到推荐连接器的详细信息，请参阅本 [页](https://helpx.adobe.com/campaign/kb/sms-connector.html)。
+
+1. 该 **[!UICONTROL Enable verbose SMPP traces in the log file]** 选项允许您将所有SMPP流量转储到日志文件中。 必须启用此选项才能对连接器进行故障诊断，并与提供者看到的流量进行比较。
 
 1. 联系您的SMS服务提供商，他们将向您说明如何从选项卡中填写不同的外部帐户 **[!UICONTROL Connection settings]** 字段。
 
@@ -119,7 +98,7 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
 
    如需详细信息，请参阅[此部分](#about-text-encodings)。
 
-1. 在选项 **[!UICONTROL SMSC specificities]** 卡中，该 **[!UICONTROL Send full phone number]** 选项默认处于禁用状态。 如果要遵守SMPP协议并仅将数字传输到SMS提供者(SMSC)的服务器，请不要启用它。
+1. 在选项 **[!UICONTROL SMSC specificities]** 卡中，该选 **[!UICONTROL Send full phone number]** 项默认处于禁用状态。 如果要遵守SMPP协议并仅将数字传输到SMS提供者(SMSC)的服务器，请不要启用它。
 
    但是，鉴于某些提供者需要使用“+”前缀，建议您与提供者进行核对，他们将建议在必要时启用此选项。
 
@@ -329,7 +308,7 @@ CR: 回车
 
 ### 关于文本编码 {#about-text-encodings}
 
-在发送SMS消息时，Adobe Campaign可以使用一个或多个文本编码。 每个编码都有其自己的特定字符集，并确定适合SMS消息的字符数。
+发送SMS消息时，Adobe Campaign可以使用一个或多个文本编码。 每个编码都有其自己的特定字符集，并确定适合SMS消息的字符数。
 
 配置新的SMPP移动投放外部帐户时，您可以在选项卡 **[!UICONTROL Mapping of encodings]** 中定义 **[!UICONTROL Mobile]** : 该字 **[!UICONTROL data_coding]** 段允许Adobe Campaign向SMSC通信使用哪种编码。
 
@@ -378,6 +357,7 @@ CR: 回车
 
 如果您有多个外部帐户使用具有相同提供者帐户的扩展通用SMPP连接器，则可能会出现以下问题： 在向短代码发送回复时，可能会在您的任何外部帐户连接上收到该回复。 因此，发送的自动回复不能是预期消息。
 要避免这种情况，请根据您所使用的提供商，应用以下解决方案之一：
+
 * 为每个外部帐户创建一个提供程序帐户。
 * 使用> **[!UICONTROL System type]** 选项卡中的字 **[!UICONTROL Mobile]** 段 **[!UICONTROL Connection settings]** 来区分每个短代码。 为每个帐户向提供者询问不同的值。
 
@@ -393,19 +373,19 @@ Adobe Campaign为您提供了用于传送到移动设备的模板。 此模板�
 
 为了保持本机投放模板，我们建议您重复它，然后对其进行配置。
 
-在以下示例中，我们创建一个模板，通过先前启用的NetSize帐户传送消息。 操作步骤：
+在以下示例中，我们创建一个模板，通过先前启用的SMPP帐户传送消息。 操作步骤：
 
 1. 转到节 **[!UICONTROL Delivery templates]** 点。
 1. 右键单击模 **[!UICONTROL Send to mobiles]** 板，然后选择 **[!UICONTROL Duplicate]**。
 
    ![](assets/s_user_mobile_template_change_01.png)
 
-1. 更改模板的标签。
+1. 更改模板的标签，例如“已 **发送到移动设备(SMPP)”**。
 
    ![](assets/s_user_mobile_template_change_02.png)
 
 1. 单击 **[!UICONTROL Properties]**.
-1. 在选 **[!UICONTROL General]** 项卡中，选择与您配置的路由对应的外部帐户模式，例如 **[!UICONTROL NetSize mobile delivery]**。
+1. 在选 **[!UICONTROL General]** 项卡中，选择与您在前面的步骤中创建的路由对应的外部帐户模式。
 
    ![](assets/s_user_mobile_template_change_03.png)
 
@@ -426,7 +406,7 @@ Adobe Campaign为您提供了用于传送到移动设备的模板。 此模板�
 >本节介绍有关投放创建的全 [局概念](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
 1. 创建新投放，例如从投放仪表板创建。
-1. 选择您之 **[!UICONTROL Send to mobiles (NetSize)]** 前创建的投放模板。 有关此内容的详细信息，请参 [阅更改投放模板](#changing-the-delivery-template) 。
+1. 选择您之 **前创建的投放模板** “发送到手机”(SMPP)。 有关此内容的详细信息，请参 [阅更改投放模板](#changing-the-delivery-template) 。
 
    ![](assets/s_user_mobile_wizard.png)
 
@@ -488,7 +468,7 @@ Adobe Campaign为您提供了用于传送到移动设备的模板。 此模板�
 
 可以使用以下选项：
 
-* **发件人地址** （仅适用于NetSize连接器和SMPP连接器）: 允许您使用限制为11个字符的字母数字字符串，个性化投放发件人的姓名。 这个领域不能只由数字组成。 您可以定义一个条件来显示，例如，根据收件人的区域代码显示不同的名称：
+* **发件人地址**: 允许您使用限制为11个字符的字母数字字符串，个性化投放发件人的姓名。 这个领域不能只由数字组成。 您可以定义一个条件来显示，例如，根据收件人的区域代码显示不同的名称：
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
