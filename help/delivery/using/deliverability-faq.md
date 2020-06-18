@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: 56fed9fff445892366d3e0f1367029882077ae20
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1355'
 ht-degree: 0%
 
 ---
@@ -50,38 +50,37 @@ ht-degree: 0%
 
 如果问题仍然存在，请联系商业或可交付性服务、Adobe Campaign客户服务或Adobe Campaign支持。
 
-## 黑名单与隔离 {#blacklisting-versus-quarantine}
+## 块列表与隔离 {#block-list-versus-quarantine}
 
-* **已列入黑名单电子邮件地址和隔离的电子邮件地址之间有何区别？**
+* **阻止列表中的电子邮件地址与隔离的电子邮件地址之间有何区别？**
 
-   * 状态 **[!UICONTROL Blacklisted]** 是反馈循环的结果（当人员将邮件报告为垃圾邮件时）。
+   * 状态 **[!UICONTROL On block list]** 是反馈循环的结果（当人员将邮件报告为垃圾邮件时）。
 
    * 状态 **[!UICONTROL Quarantined]** 是软弹回或硬弹回的结果。
-   For more on this, see [this section](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-blacklisting).
+   For more on this, see [this section](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list).
 
 * **不同的隔离错误原因意味着什么？**
 
-   以下是10个可能的原因： 未定义，用户未知，无效域,已列入黑名单地址，拒绝，错误忽略，不可到达，帐户禁用，邮箱已满，未连接。
+   以下是10个可能的原因： 未定义、用户未知、无效域、块列表地址、拒绝、忽略错误、不可到达、帐户禁用、邮箱已满、未连接。
 
    有关此方面的详细信息，请参 [阅了解隔离管理](../../delivery/using/understanding-quarantine-management.md)。
 
-## 未列入黑名单 {#unblacklisting}
+## 从块列表中删除 {#remove-from-block-list}
 
-* **我的一个收件人错误地已列入黑名单了。 如何取消他们的黑名单，以便让开始再次发送邮件？**
+* **我的一个收件人误地被添加到了阻止名单。 如何从块列表中删除它们，以便我能够开始再次发送消息？**
 
    * 转到 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
    * 在相应记录的详细信息中，将字段的值 **[!UICONTROL Status]** 设置为 **[!UICONTROL Valid]**。
    * 保存记录。
 
-* **如何确定我的IP是否已列入黑名单? 如何取消IP黑名单？**
+* **如何确定我的IP是否在块列表中？ 如何从块列表中删除我的IP?**
 
-   要检查您的IP地址是否已列入黑名单，您可以使用各个网站验证它：
-   * [https://mxtoolbox.com/](https://mxtoolbox.com/)
-   * [https://whatismyipaddress.com/blacklist-check](https://whatismyipaddress.com/blacklist-check)
-   * [https://www.blacklistalert.org/](https://www.blacklistalert.org/)
-   通常，IP地址检查的结果将返回一个列表，其中包含黑名单的详细信息以及已列入黑名单IP地址的网站的名称。
+   要检查您的IP地址是否在块列表中，您可以使用各种网站验证它，例如：
+   * [MX工具箱](https://mxtoolbox.com/)
+   * [我的IP地址是什么](https://whatismyipaddress.com)
+   通常，IP地址检查的结果将返回一个列表，其中包含块列表的详细信息以及阻止IP地址的网站的名称。
 
-   通过单击相应的链接，您可以访问网站详细信息。 然后，您可以请求从已列入黑名单IP地址的网站中取消列出您的网站。
+   通过单击相应的链接，您可以访问网站详细信息。 然后，您可以请求从将IP地址添加到其块列表的网站中取消列出您的网站。
 
    >[!NOTE]
    >
