@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cc9ea59a9925930d4a4b260ce73a6bd4b615db5a
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
 workflow-type: tm+mt
-source-wordcount: '2857'
+source-wordcount: '2865'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 1. 配置 [!DNL Azure Synapse] 外部帐户，必须指定：
 
-   * **[!UICONTROL Type]**: Azure突触分析
+   * **[!UICONTROL Type]**: Azure突触Analytics
 
    * **[!UICONTROL Server]**: Azure突触服务器的URL
 
@@ -123,7 +123,7 @@ ht-degree: 1%
 
 1. 在Campaign Classic中，您随后可以配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的详细信息，请参阅此 [部分](../../platform/using/specific-configuration-database.md#azure-external)。
 
-1. 由于Azure突触分析通过TCP 1433端口进行通信，您需要在防火墙上打开此端口。 使用以下命令：
+1. 由于Azure Synapse Analytics通过TCP 1433端口进行通信，您需要在防火墙上打开此端口。 使用以下命令：
 
    ```
    firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="[server_ip_here]/32" port port="1433" protocol="tcp" accept'
@@ -132,7 +132,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >要允许来自Azure突触分析端的通信，您可能需要将您的公共IP列入白名单。 为此，请参阅Azure [文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
+   >要允许来自Azure突触分析端的通信，可能需要将公共IP添加到允许列表。 为此，请参阅Azure [文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
 1. 如果是iptables，请运行以下命令：
 
@@ -215,7 +215,7 @@ ht-degree: 1%
 
 1. 在Campaign Classic中，您现在可以配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的详细信息，请参阅此 [部分](../../platform/using/specific-configuration-database.md#azure-external)。
 
-1. 要在Debian上配置iptables以确保与Azure突触分析连接，请使用以下命令为主机名启用出站TCP 1433端口：
+1. 要在Debian上配置iptables以确保与Azure突触Analytics连接，请使用以下命令为主机名启用出站TCP 1433端口：
 
    ```
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
@@ -223,7 +223,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >要允许来自Azure突触分析端的通信，您可能需要将您的公共IP列入白名单。 为此，请参阅Azure [文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
+   >要允许来自Azure突触分析端的通信，可能需要将公共IP添加到允许列表。 为此，请参阅Azure [文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
 ## 配置对雪花的访问 {#configure-access-to-snowflake}
 
