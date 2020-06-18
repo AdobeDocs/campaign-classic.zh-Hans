@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1909cc8640a32eb709187dab084778f03ef39118
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3608'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 >
 >这些配置必须由管理员执行，并且 **仅适用于预置** 托管模型。
 >
->对 **于托管** (Hosted)部署，服务器端设置只能由Adobe配置。 但是，可以在控制面板中设置一些设置（例如，IP白名单或URL权限）。
+>对 **于托管** (Hosted)部署，服务器端设置只能由Adobe配置。 但是，可以在控制面板中设置一些设置（例如，IP允许列表管理或URL权限）。
 
 有关详细信息，请参阅以下部分：
 
@@ -211,7 +211,7 @@ Campaign Classic配置文件存储在 **Adobe Campaign** 安装文件夹的conf�
 
 区域的技术配置在活动服务器的配置文件中执行： **serverConf.xml**。
 
-在此之前，您必须通过配置现成开始来明细列表 **[!UICONTROL Security zone]** ，将标签链接到serverConf.xml文件中定义的 **区域的内部名称** 。
+在此之前，您必须通过配置现成的开始来 **[!UICONTROL Security zone]** 明细列表标签，以将标签链接到serverConf.xml文件中定义的 **区域的内部名称** 。
 
 此配置在活动资源管理器中完成：
 
@@ -358,9 +358,9 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 
 存在三种连接保护模式：
 
-* **阻止**: 将阻止不属于白名单的所有URL，并显示错误消息。 这是在配置升级之后的默认模式。
-* **允许**: 允许所有不属于白名单的URL。
-* **警告**: 允许所有非白色URL，但JS解释器会发出警告，以便管理员可以收集这些URL。 此模式添加JST-310027警告消息。
+* **阻止**: 将阻止所有不属于允许列表的URL，并显示错误消息。 这是在配置升级之后的默认模式。
+* **允许**: 允许所有不属于允许列表的URL。
+* **警告**: 允许所有不属于允许列表的URL，但JS解释器会发出警告，以便管理员可以收集这些URL。 此模式添加JST-310027警告消息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -372,9 +372,9 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 
 >[!IMPORTANT]
 >
->默认情况下，新客户的客户端使用 **阻止模式**。 如果他们需要允许新URL，则应联系管理员将其列入白名单。
+>默认情况下，新客户的客户端使用 **阻止模式**。 如果他们需要允许新URL，则应联系其管理员，将其添加到允许列表。
 >
->来自迁移的现有客户可以使用 **警告模式** ，时间较长。 同时，在对URL授权之前，他们需要分析出站流量。 定义授权URL的列表后，他们应联系其管理员以将URL列入白名单并激活 **阻止模式**。
+>来自迁移的现有客户可以使用 **警告模式** ，时间较长。 同时，在对URL授权之前，他们需要分析出站流量。 定义授权URL的列表后，他们应联系其管理员，将URL添加到允许列表并激活 **阻止模式**。
 
 ## 动态页面安全性和中继 {#dynamic-page-security-and-relays}
 
@@ -455,7 +455,7 @@ sh
 >
 >此列表并非完全。
 
-在服务 **器配置** 文件的执行节点中，您需要引用blacklistFile属性中先前创建 **的文件** 。
+在服务器 **配置** 文件的执行节点中，需要引用blocklistFile属性中以前创建 **的文件** 。
 
 **仅适用于Linux**: 在服务器配置文件中，我们重命令您指定一个专用于执行外部命令的用户，以增强您的安全配置。 此用户在配置文 **件的** “执行”节点中设置。 serverConf.xml中的所 **有可用参数** 都列在本 [节中](../../installation/using/the-server-configuration-file.md)。
 
@@ -467,7 +467,7 @@ sh
 
 ```
 <serverConf>
- <exec user="theUnixUser" blacklistFile="/pathtothefile/blacklist"/>
+ <exec user="theUnixUser" blocklistFile="/pathtothefile/blocklist"/>
 </serverConf>
 ```
 
@@ -594,7 +594,7 @@ enableIf **属性是** 可选的（默认情况下为空），并且仅当结果
 
 ## 限制可上载文件 {#limiting-uploadable-files}
 
-通过新属 **性uploadWhiteList** ，可以限制可在Adobe Campaign服务器上上传的文件类型。
+通过新属 **性uploadAllowList** ，可限制可在Adobe Campaign服务器上上传的文件类型。
 
 此属性在serverConf.xml **文件的** dataStore元 **素中可用** 。 serverConf.xml中的所 **有可用参数** 都列在本 [节中](../../installation/using/the-server-configuration-file.md)。
 
@@ -602,7 +602,7 @@ enableIf **属性是** 可选的（默认情况下为空），并且仅当结果
 
 要限制可能的格式，必须用有效的java常规表达式替换属性值。 可以通过用逗号分隔多个值。
 
-例如： **uploadWhiteList=&quot;。*.png,*.jpg** &quot;允许您在服务器上上传PNG和JPG格式。 不接受其他格式。
+例如： **uploadAllowList=&quot;。*.png,*.jpg** &quot;允许您在服务器上上传PNG和JPG格式。 不接受其他格式。
 
 >[!IMPORTANT]
 >
