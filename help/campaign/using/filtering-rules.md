@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 9784e0db6f1bef5abdf93d3517da04fe1ba69e7d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '507'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 3%
 
 默认情况下有两种筛选规则： **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) **[!UICONTROL Exclude domains]** 和( **[!UICONTROL domainExclusions]** )。 在电子邮件分析期间，这些规则将收件人电子邮件地址与在可交付性实例中管理的加密全局禁止列表中包含的禁止地址或域名进行比较。 如果存在匹配项，则消息不会发送到该收件人。
 
-这是为了避免由于恶意活动，特别是使用Spamtrap而已列入黑名单。 例如，如果使用垃圾邮件陷阱通过您的某个Web表单进行订阅，则会自动向该垃圾邮件陷阱发送确认电子邮件，这会导致您的地址自动已列入黑名单。
+这可以避免由于恶意活动（特别是使用垃圾邮件陷阱）而被添加到阻止列表。 例如，如果使用垃圾邮件陷阱通过您的某个Web表单进行订阅，则会自动向该垃圾邮件陷阱发送确认电子邮件，这会导致您的地址被自动添加到阻止列表中。
 
 >[!NOTE]
 >
