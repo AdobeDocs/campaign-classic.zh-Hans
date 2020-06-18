@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe活动经典
 translation-type: tm+mt
-source-git-commit: 56ddf3dc1505c0507c67f8b08c9f33b4007f8857
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2101'
 ht-degree: 10%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 10%
    + 连接器 {#connectors}
       + [关于连接器](platform/using/about-connectors.md)
       + [CRM连接器](platform/using/crm-connectors.md)
-      + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
+      + [AdobeAnalytics数据连接器](platform/using/adobe-analytics-data-connector.md)
 + 发送消息 {#sending-messages}
    + 关于投放和渠道 {#about-deliveries-and-channels}
       + [通信渠道](delivery/using/communication-channels.md)
@@ -161,7 +161,7 @@ ht-degree: 10%
       + [收件箱呈现](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [重新参与最佳实践](delivery/using/re-engagement-best-practices.md)
-      + [黑名单数据库](delivery/using/blacklisting-databases.md)
+      + [块列表数据库](delivery/using/block-list-databases.md)
       + [故障排除](delivery/using/deliverability-faq.md)
    + 内容管理模块 {#content-management}
       + [关于内容管理](delivery/using/about-content-management.md)
@@ -302,15 +302,15 @@ ht-degree: 10%
       + [配置对[!DNL资产]的访问](integrations/using/configuring-access-to-assets.md)
       + [插入共享资源](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [关于[!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [关于[!DNLAdobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [配置集成](integrations/using/configuring-the-integration.md)
-      + [创建[!DNL Experience Manager]新闻稿](integrations/using/creating-an-experience-manager-newsletter.md)
-   + Adobe目标 {#adobe-target}
-      + [与[!DNL Adobe目标集成]](integrations/using/integrating-with-adobe-target.md)
-      + [配置与[!DNL Adobe目标]的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [创建[!DNLExperience Manager]新闻稿](integrations/using/creating-an-experience-manager-newsletter.md)
+   + Adobe Target {#adobe-target}
+      + [与[!DNLAdobe Target集成]](integrations/using/integrating-with-adobe-target.md)
+      + [配置与[!DNLAdobe Target]的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
    + 通过Adobe ID连接 {#connecting-via-an-adobe-id}
-      + [关于[!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+      + [关于[!DNLAdobe ID]](integrations/using/about-adobe-id.md)
       + [配置[!DNL IMS]](integrations/using/configuring-ims.md)
       + [实现[!DNL IMS]](integrations/using/implementing-ims.md)
       + [IMS疑难解答](integrations/using/ims-troubleshooting.md)
@@ -439,7 +439,7 @@ ht-degree: 10%
       + [关于技术工作流](workflow/using/about-technical-workflows.md)
       + [投放](workflow/using/deliveries.md)
       + [营销活动](workflow/using/campaign.md)
-      + [Web分析](workflow/using/web-analytics.md)
+      + [网络Analytics](workflow/using/web-analytics.md)
       + [分布式营销](workflow/using/distributed-marketing.md)
       + [交付性监控](workflow/using/email-deliverability.md)
       + [收件箱呈现](workflow/using/inbox-rendering.md)
