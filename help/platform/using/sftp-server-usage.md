@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '732'
+ht-degree: 79%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
 
 如果未正确使用或监视此空间，则此空间可能回快速填满服务器上可用的物理空间，并导致在后续上传时截断文件。一旦空间饱和，即可触发自动清除并从 SFTP 存储器中删除最旧的文件。
 
-为避免此类问题，Adobe建议遵循以下最佳实践。
+为避免出现此类问题，Adobe建议遵循以下最佳实践。
 
 >[!NOTE]
 >
@@ -47,7 +50,7 @@ source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
 * 时常登入 SFTP 以直接检查其内容。
 * 请记住，SFTP 硬盘的管理主要由您负责。
 * 默认情况下，您创建的所有文件夹仅为标识符的读/写模式。创建 Campaign 需要访问的文件夹时，请确保使用整个组的读/写权限进行配置。否则，出于安全原因，工作流程可能无法创建/删除文件，因为它们在同一组内的不同标识符下运行。
-* 您尝试启动 SFTP 连接的公共 IP 必须在 Campaign 实例上列入允许清单。可以通过[支持票证](https://support.neolane.net)请求将 IP 地址列入允许列表。
+* 您尝试从中启动SFTP连接的公共IP必须添加到活动实例的允许列表。 可以通过支持票证请求向允许列表添加IP [地址](https://support.neolane.net)。
 
 >[!CAUTION]
 >
@@ -89,7 +92,7 @@ source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
 
    如果端口未打开，请确保打开侧面的传出联机，然后重试。如果仍遇到连接问题，请与 Adobe 支持团队分享该命令的输出。
 
-1. 检查您尝试启动 SFTP 联机的公共 IP 是否在您提供给 Adobe 支持团队的允许列表中。
+1. 检查您尝试从中启动SFTP连接的公共IP是否是您提供给Adobe支持部门的允许列表的IP。
 1. 如果您使用基于密码的身份验证，则您的密码可能已过期（密码的有效期为90天）。 因此，我们强烈建议使用基于密钥的身份验证(请参 [阅SFTP服务器最佳实践](#sftp-server-best-practices))。
 1. 如果您使用的是基于密钥的身份验证，请检查您使用的密钥是否与提供给 Adobe 支持团队以用于实例配置的密钥相同。
 1. 如果您使用的是 FileZilla 或类似的 FTP 工具，请在支持票证中提供联机日志详细信息。
