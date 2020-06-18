@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 0%
@@ -55,9 +55,9 @@ Adobe Campaign依赖于包含链接在一起的表的关系数据库。
 * iEmailFormat: 电子邮件的首选格式（文本为1,HTML为2，未定义时为0）。
 * sAddress1、sAddress2、sAddress3、sAddress4、sZipCode、sCity用于构建邮政地址（与1997年5月起的XPZ 10-011 AFNOR标准保持一致）。
 * sPhone、sMobilePhone、sFax分别包含电话、移动电话和传真号码。
-* iBlackList是用于用户档案的默认退出标志（1表示“取消订阅”，否则为0）。
+* iBlockList是用于用户档案的默认退出标志（1表示“取消订阅”，否则为0）。
 
-iFolderId字段是将收件人链接到其执行文件夹的外键。 有关此的详细信息，请参 [阅XtkFolder](#XtkFolder)。
+iFolderId字段是将收件人链接到其执行文件夹的外键。 For more on this, see [XtkFolder](#XtkFolder).
 
 sCountryCode字段是与收件人关联的国家／地区的3166-1 Alpha 2 ISO代码（2个字符）。 此字段实际上是国家／地区参考表(NmsCountry)上的外键，它包含国家／地区标签和其他国家／地区代码数据。 如果未填充国家／地区，则存储值“XX”（并用于代替零ID记录）。
 
@@ -67,7 +67,7 @@ sCountryCode字段是与收件人关联的国家／地区的3166-1 Alpha 2 ISO�
 
 此表与nms: **group模式匹配** 。
 
-它允许您创建 **静态收件人组**。 收件人和群之间有多对多的关系。 例如，一个收件人可以属于多个组，而一个组可以包含多个收件人。 可以通过导入或投放定位手动创建组。 组通常用作投放目标。 字段上有一个唯一索引，它表示sName组的内部名称。 该组链接到文件夹(键为iFolderId。 有关此内容的详细信息，请 [参阅XtkFolder](#XtkFolder))。
+它允许您创建 **静态收件人组**。 收件人和群之间有多对多的关系。 例如，一个收件人可以属于多个组，而一个组可以包含多个收件人。 可以通过导入或投放定位手动创建组。 组通常用作投放目标。 字段上有一个唯一索引，它表示sName组的内部名称。 该组链接到文件夹(键为iFolderId。 For more on this, see [XtkFolder](#XtkFolder)).
 
 ### NmsRcpGrpRel {#NmsRcpGrpRel}
 
@@ -81,7 +81,7 @@ NmsRcpGrpRel关系表只包含与iRecipientId和iGroupId链接表的标识符对
 
 服务是与组(静态收件人组)相似的实体，只是它们会传递更多信息并通过表单轻松管理订阅和退订。
 
-字段上有一个唯一索引，它表示sName服务的内部名称。 服务链接到文件夹(键为iFolderId。 有关此内容的详细信息，请 [参阅XtkFolder](#XtkFolder))。 最后，iType字段指定此服务的投放渠道（0表示电子邮件，1表示SMS,2表示电话，3表示直邮，4表示传真）。
+字段上有一个唯一索引，它表示sName服务的内部名称。 服务链接到文件夹(键为iFolderId。 For more on this, see [XtkFolder](#XtkFolder)). 最后，iType字段指定此服务的投放渠道（0表示电子邮件，1表示SMS,2表示电话，3表示直邮，4表示传真）。
 
 ### Nms订阅 {#NmsSubscription}
 
@@ -101,7 +101,7 @@ NmsRcpGrpRel关系表只包含与iRecipientId和iGroupId链接表的标识符对
 
 此表中的每个记录都表示 **投放操作** 或 **投放模板**。 它包含执行投放(目标、内容等)所需的所有参数。 投放（广播）日志(NmsBroadLog)和关联的跟踪URL(NmsTrackingUrl)是在分析阶段创建的（有关这两个表的更多详细信息，请参见下文）。
 
-字段上有一个唯一索引，它表示sInternalName投放或方案的内部名称。 该投放链接到一个执行文件夹(外键为iFolderProcessId。 有关此内容的详细信息，请 [参阅XtkFolder](#XtkFolder))。
+字段上有一个唯一索引，它表示sInternalName投放或方案的内部名称。 该投放链接到一个执行文件夹(外键为iFolderProcessId。 For more on this, see [XtkFolder](#XtkFolder)).
 
 ### XtkFolder {#XtkFolder}
 
@@ -194,7 +194,7 @@ NmsRcpGrpRel关系表只包含与iRecipientId和iGroupId链接表的标识符对
 * 每个联系人的平均毛利： **dContactRenatedAvgMargin**。 假设验证中目标的每个联系人的平均毛利。
 * 对照组总利润： **dProofRenatedTotalMargin**。 假设验证中目标对照组的总利润。
 * 平均对照组率： **dProofRenatedAvgMargin**。 对照组中目标假设验证的平均边距。
-* 额外收入： **dAdditionalAmount**。 (联系人的平均收入-对照组的平均收入)*联系人数。
+* 额外收入： **附加金额**。 (联系人的平均收入-对照组的平均收入)*联系人数。
 * 附加利润： **附加毛利**。 (联系人的平均对照组率——平均联系人率)/联系人数。
 * 每个联系人的平均成本(SQL表达式)。 计算投放成本／联系人数。
 * ROI(SQL表达式)。 已计算投放成本／联系的毛利总额。
