@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4d82657fbeae39af173c867975455669497d8eb
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
 * 检查每个投放吞吐量，确保其与投放内容的有效性(例如， “flash sales”应在几分钟内交付，而不是几天内交付)。
 * 在使用 [批次](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)时，请验证在触发下一个波形之前，每个波形是否有足够的时间完成。
 * 检查错误和新隔离的 [数量](../../delivery/using/understanding-quarantine-management.md) ，与其他投放一致。
-* 仔细查 [阅投放日志](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) ，检查突出显示的错误类型（灰色或黑名单、DNS问题、防垃圾邮件规则等）。
+* 仔细查 [阅投放日志](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) ，检查突出显示的错误类型（块列表、DNS问题、防垃圾邮件规则等）。
 
 ## 信号垃圾邮件 {#signal-spam}
 
@@ -70,7 +70,7 @@ Signal Spam是一种法国服务，它为法国ISP(Orange, SFR)优惠匿名反�
 
 ## 250ok {#deliverability-250ok}
 
-[250ok是Adobe](https://250ok.com/) 交付能力内部工具的补充性监控解决方案，可提供IP、域黑名单和信誉指标。
+[250ok是Adobe](https://250ok.com/) 交付能力内部工具的补充性监控解决方案，它提供IP和域块列表以及信誉指标。
 
 提供的信息是实时的，它允许主动提供帮助。
 
@@ -94,7 +94,7 @@ Signal Spam是一种法国服务，它为法国ISP(Orange, SFR)优惠匿名反�
 
 * **[!UICONTROL DomainKeys]** : 由Yahoo开发、旨在验证电子邮件发件人身份的服务。
 
-* **[!UICONTROL IP and RBL domain]** (实时黑洞列表): 列表IP地址和域，这些IP地址和域已被区块列表组织标记为发送信誉不佳。 这些列表由专用组织（如Spamhaus、Spampoc、SURBL/URIBL等）进行维护。 Adobe Campaign当前处理对RBL的检查，这些RBL对交付能力有显着影响。 这些RBL反映发送的声誉，在接受接收您的电子邮件前，可能会由ISP引用。
+* **[!UICONTROL IP and RBL domain]** (实时黑洞列表): 一列表IP地址和域，这些IP地址和域已被块列表组织标记为发送信誉不佳。 这些列表由专用组织（如Spamhaus、Spampoc、SURBL/URIBL等）进行维护。 Adobe Campaign当前处理对RBL的检查，这些RBL对交付能力有显着影响。 这些RBL反映发送的声誉，在接受接收您的电子邮件前，可能会由ISP引用。
 
 * **[!UICONTROL SNDS]** （智能网络数据服务）: Windows [Live Hotmail防垃圾邮件服务](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx)。 Hotmail是唯一提供此类信息的ISP。 基准分数是一个绿色过滤结果，投诉率低于0.1%，垃圾邮件陷阱为零。
 
