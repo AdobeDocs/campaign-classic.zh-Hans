@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2436'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 下面列出了几种可用于提高交付率的技术、配置和工具。
 
-## 配置 {#configuration}
+## Configuration {#configuration}
 
 ### 反向DNS {#reverse-dns}
 
@@ -138,7 +138,7 @@ Recommendations for defining an SPF record:
 
 ## 反馈循环 {#feedback-loop}
 
-反馈循环在ISP级别为用于发送消息的IP地址范围声明给定的电子邮件地址。 ISP将以与弹回消息类似的方式发送到此邮箱，收件人将这些消息作为垃圾邮件报告。 该平台应配置为阻止向已投诉的用户发送未来投放。 即使他们没有使用正确的退出链接，也必须不再与他们联系。 ISP会根据这些投诉将IP地址列入黑名单。 如果投诉率在1%左右，则IP地址将被列入黑名单。
+反馈循环在ISP级别为用于发送消息的IP地址范围声明给定的电子邮件地址。 ISP将以与弹回消息类似的方式发送到此邮箱，收件人将这些消息作为垃圾邮件报告。 该平台应配置为阻止向已投诉的用户发送未来投放。 即使他们没有使用正确的退出链接，也必须不再与他们联系。 根据这些投诉，ISP将在其块列表中添加一个IP地址。 如果投诉率在1%左右，则会阻止IP地址。
 
 目前正在制定一个标准来定义反馈循环消息的格式： 滥用 [反馈报告格式(ARF)](https://tools.ietf.org/html/rfc6650)。
 
@@ -152,7 +152,7 @@ Recommendations for defining an SPF record:
 * 创建或修改弹回邮件规 **则Feedback_loop**, **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** 其原因 **为Recombed** ，类型 **为Hard**。
 * 如果邮箱已专门为反馈循环定义，请在中创建新的外部弹回邮件帐户，定义参数以访问该邮箱 **[!UICONTROL Administration > Platform > External accounts]**。
 
-该机制立即开始运作，处理投诉通知。 为确保此规则正常工作，您可以暂时取消激活帐户，以便它们不收集这些邮件，然后手动检查反馈循环邮箱的内容。 在服务器上，执行以下命令：
+该机制立即开始运作，处理投诉通知。 为确保此规则正常工作，您可以暂时取消激活帐户以使其不收集这些邮件，然后手动检查反馈循环邮箱的内容。 在服务器上，执行以下命令：
 
 ```
 nlserver stop inMail@instance,
@@ -254,11 +254,11 @@ Adobe为每位客户提供专用的IP战略，提供快速升级的IP，以建�
 
 ## IP 认证 {#ip-certification}
 
-IP认证是白名单和发送实践项目，有助于确保收到电子邮件时不会被反垃圾邮件过滤器或其他电子邮件拦截系统阻止。
+IP认证是一种发送最佳实践项目，有助于确保接收电子邮件时不会被防垃圾邮件过滤器或其他电子邮件拦截系统阻止。
 
 目前有两个提供商优惠IP认证： Return Path和Certified Senders Alliance。
 
-认证发件人会添加到全球邮箱提供商和电子邮件安全公司使用的电子邮件白名单中。 这些商业白名单基于一个系统，该系统允许发送方完全绕过防垃圾邮件过滤器，或在他们进入系统时分配增量点。
+已验证的发件人会添加到电子邮件允许列表中，全球邮箱提供商和电子邮件安全公司会使用这些列表。 这些商业允许列表基于一个系统，该系统使发送方能够完全绕过防垃圾邮件过滤器，或在他们进入系统时分配增量点。
 
 Return [Path Certification](https://www.validity.com/products/returnpath/certification/) 项目优惠了许多优势，包括：
 
@@ -275,6 +275,6 @@ Return [Path Certification](https://www.validity.com/products/returnpath/certifi
 * 充分遵守法律标准，防范法律和财务风险
 * 通过CSA投诉办公室的早期警告和每日垃圾邮件陷阱报告保护声誉
 
-ISP可免费使用这些服务，ISP的数量可能因白名单而异。
+ISP可免费使用这些服务，ISP的数量可能因允许列表而异。
 
 但是，由于越来越多的ISP根据每个收件箱所有者的行为而不是分析邮件内容本身来构建其防垃圾邮件过滤器，使用IP认证无法保证收件箱的放置甚至投放。
