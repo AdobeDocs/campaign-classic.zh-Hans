@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2602'
+ht-degree: 1%
 
 ---
 
@@ -111,18 +111,18 @@ ht-degree: 0%
 * **投放的目标**: 投放性能禁止受软跳出错误影响，软跳出错误根据重试配置进行处理。 错误数越多，需要的重试就越多。
 * **整个平台负载**: 当发送多个大型投放时，整个平台可能会受到影响。 您还可以检查IP信誉和可交付性问题。 有关此内容的详细信息，请参 [阅Adobe Campaign交付性最佳](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) 实践指 [南和本页](../../delivery/using/about-deliverability.md)。
 
-平台和投放库维护也会影响数据发送性能。 有关详细信息，请参见[此页面](../../production/using/database-performances.md)。
+Platform和投放库的维护也会影响发送性能。 有关详细信息，请参见[此页面](../../production/using/database-performances.md)。
 
 ### 慢速投放 {#slow-deliveries}
 
 单击该按 **[!UICONTROL Send]** 钮后，投放的时间似乎比往常长。 这可能由不同元素引起：
 
-* 某些电子邮件提供商可能具有已列入黑名单的IP地址。 在这种情况下，请检查广播并参 [阅此入门](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) 。
+* 某些电子邮件提供商可能已将您的IP地址添加到块列表。 在这种情况下，请检查广告并参 [阅此部分](../../delivery/using/about-deliverability.md)。
 * 您的投放可能太大，无法快速处理，高JavaScript个性化可能会发生这种情况，或者如果您的投放重量超过60kbytes。 请参阅Adobe Campaign [投放最佳实践](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) ，了解内容指南。
 * Adobe CampaignMTA中可能已发生限制。 这是由以下原因造成的：
 
    * 已暂停的消息&#x200B;**[!UICONTROL quotas met]** （消息）: 已满足在活动中定义的声明性MX规则声明的配额。 For more information about this message, refer to [this page](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). 要进一步了解MX规则，请参 [阅本页](../../delivery/using/technical-recommendations.md#mx-rules)。
-   * 已暂停的消息&#x200B;**[!UICONTROL dynamic flow control]** （消息）: 活动MTA在尝试为给定ISP发送消息时遇到错误，这会导致速度下降，以避免错误密度过大，从而面临潜在的黑名单。
+   * 已暂停的消息&#x200B;**[!UICONTROL dynamic flow control]** （消息）: 活动MTA在尝试为给定ISP发送消息时遇到错误，这会导致延迟以避免错误密度过大，从而面临潜在的块列表。
 
 * 系统问题可能会阻止服务器进行交互： 这会减慢整个发送过程。 检查服务器，以确保在获取个性化数据的过程中不存在可能影响活动的内存或资源问题。
 
@@ -166,7 +166,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> 已忽略<br /> </td> 
-   <td> 由于投放地址出错，该收件人未被发送到该地址。 它要么是已列入黑名单的、隔离的、没有提供的，要么是重复。 <br /> </td> 
+   <td> 由于投放地址出错，该收件人未被发送到该地址。 它已添加到阻止列表、已隔离、未提供或重复。 <br /> </td> 
   </tr> 
   <tr> 
    <td> 已发送<br /> </td> 
