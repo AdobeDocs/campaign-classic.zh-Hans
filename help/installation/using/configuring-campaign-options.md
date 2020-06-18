@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: de1173786c94c2a526153e7e6948f71c9523fa7b
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
 source-wordcount: '3903'
 ht-degree: 0%
@@ -95,7 +95,7 @@ ht-degree: 0%
    <td> 正则表达式，用于标准化投放消息。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsBroadcast_RemoveBlockList</span> <br /> </td> 
    <td> 输入“1”作为值，可以排除不再希望联系的收件人。<br /> </td> 
   </tr> 
   <tr> 
@@ -175,7 +175,7 @@ ht-degree: 0%
    <td> 用于计算临时投放消息权重的公式。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsInmail_Whitelist电子邮件</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
    <td> 列表授权转发电子邮件地址（来自入站邮件处理模块）。 地址必须用逗号分隔（或*以允许所有地址）。 例如xyz@abc.com、pqr@abc.com。<br /> </td> 
   </tr> 
   <tr> 
@@ -456,7 +456,7 @@ ht-degree: 0%
    <td> <span class="uicontrol">MC_ExchrencistCustomJs</span> <br /> </td> 
    <td> 个性化的JavaScript库以丰富事件。 必须包含以下两个功能的实现：<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">丰富RtEvents(aiEventId);</span> : 丰富和保存事件库中的 <span class="uicontrol">(其中</span> aiEventId与处理的实时事件表相对应)。</p> </li> 
+     <li> <p> <span class="uicontrol">丰富RtEvents(aiEventId);</span> : 丰富并保存事件库中的 <span class="uicontrol">(其中</span> aiEventId与处理的实时事件表相对应)。</p> </li> 
      <li> <p> <span class="uicontrol">丰富BatchEvents(aiEventId);</span> : 丰富和保存事件在数据 <span class="uicontrol">库中</span> (aiEventId对应于已处理批次事件的ID表)。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -522,7 +522,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMinQueueAlert</span> <br /> </td> 
-   <td> 排队实时事件的最小数量的警报阈值。<br /> </td> 
+   <td> 排队实时事件的最小数目的警报阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMinQueueWarning</span> <br /> </td> 
@@ -721,7 +721,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> 允许您配置Experience Cloud触发器。 数据类型为“长文本”，且必须采用JSON格式。 了 <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">解如何将Experience Cloud触发器与Adobe Campaign经典结合使用</a>。<br /> </td> 
+   <td> 允许您配置Experience Cloud触发器。 数据类型为“长文本”，且必须采用JSON格式。 请参 <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">阅如何将Experience Cloud触发器与Adobe Campaign经典结合使用</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
@@ -733,19 +733,19 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> 用于集成的Adobe目标服务器。 默认情况下，此选项已被选中。 此值与Adobe目标域服务器对应，后跟值/m2。 例如： tt.omtrdc.net/m2。<br /> 请参 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">阅此部分</a>。<br /> </td> 
+   <td> 用于集成的Adobe Target服务器。 默认情况下，此选项已被选中。 此值与Adobe Target域服务器对应，后跟值/m2。 例如： tt.omtrdc.net/m2。<br /> 请参 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">阅此部分</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Adobe目标组织名称。 此值与Adobe目标客户端的名称相对应。<br /> 请参 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">阅此部分</a>。<br /> </td> 
+   <td> Adobe Target组织名称。 此值与Adobe Target客户端的名称相对应。<br /> 请参 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">阅此部分</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
-   <td> 用于与Adobe受众管理器集成的选项。<br /> </td> 
+   <td> 用于与Adobe Audience Manager集成的选项。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DestinationId</span> <br /> </td> 
-   <td> 用于与Adobe受众管理器集成的选项。<br /> </td> 
+   <td> 用于与Adobe Audience Manager集成的选项。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
