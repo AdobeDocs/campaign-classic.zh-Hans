@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 55%
 
 ---
 
@@ -33,8 +36,8 @@ Adobe Campaign 还提供了一个导入模块，可让您使用外部文件为�
 您可以：
 
 * 创建导入或导出模板并对其进行配置（参见下文）。
-* 创建导入或导出：请参阅导 [出数据](../../platform/using/exporting-data.md) 或导 [入数据](../../platform/using/importing-data.md)。
-* 启动导入或导出并监控其执行情况。 请参阅 [执行跟踪](#execution-tracking)。
+* 创建导入或导出： 请参阅导 [出数据](../../platform/using/exporting-data.md) 或 [导入数据](../../platform/using/importing-data.md)。
+* 启动导入或导出并监视其执行。 请参阅 [执行跟踪](#execution-tracking)。
 
 >[!CAUTION]
 >
@@ -50,11 +53,11 @@ Import and export templates are stored in the **[!UICONTROL Resources > Template
 
 ![](assets/s_ncs_user_export_wizard_template_create.png)
 
-创建进程模板的过程在导出向导和导 [入向导中](../../platform/using/exporting-data.md#export-wizard)[介绍](../../platform/using/importing-data.md#import-wizard)。
+创建流程模板的过程以导出向导和 [导入向导](../../platform/using/exporting-data.md#export-wizard)[形式](../../platform/using/importing-data.md#import-wizard)。
 
 >[!NOTE]
 >
->The native template **[!UICONTROL Import blacklist]** is already configured to import a list of blacklisted e-mail addresses.
+>本机模 **[!UICONTROL Import block list]** 板已配置为导入已添加到块列表的电子邮件地址列表。
 > 
 >通过 **[!UICONTROL New text import]** 和 **[!UICONTROL New text export]** 模板，您可以从头开始配置导入或导出。
 
@@ -76,7 +79,7 @@ Import and export templates are stored in the **[!UICONTROL Resources > Template
 
 * 也可以从 Adobe Campaign Explorer 启动导入和导出。
 
-   要导出／导入数据，请单击节 **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** 点，然后单击图 **[!UICONTROL New]** 标，然后选择 **[!UICONTROL Export]** 或 **[!UICONTROL Import]**。 这将打开相应的向导。
+   要导出／导入数据，请单 **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** 击节点，然 **[!UICONTROL New]** 后单击图标，并选 **[!UICONTROL Export]** 择或 **[!UICONTROL Import]**。 这将打开相应的向导。
 
    ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
 
