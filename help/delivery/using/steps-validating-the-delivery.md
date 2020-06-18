@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b0bcdfca1767aab5c54f06a5af5fb9097d2ec6f
+source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1676'
 ht-degree: 3%
 
 ---
@@ -181,7 +181,7 @@ ht-degree: 3%
 可以使用以下选项：
 
 * 第一个选项允许您保留验证多次。
-* 以下两个选项都允许您保持已列入黑名单收件人和地址的隔离。 请参阅自定义排除设置中主目标的这些 [选项说明](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings)。 与投放的目标不同，默认情况下排除这些地址，默认情况下保留这些地址作为验证的目标。
+* 以下两个选项都允许您保留块列表中的收件人和隔离地址。 请参阅自定义排除设置中主目标的这些 [选项说明](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings)。 与投放的目标不同，默认情况下排除这些地址，默认情况下保留这些地址作为验证的目标。
 * 通 **[!UICONTROL Keep the delivery code for the proof]** 过该选项，您可以为验证提供与其相关的投放定义的相同的投放代码。 此代码在投放向导的第一步中指定。
 * 默认情况下，验证的主题以“验证#”为前缀，其中#是验证的编号。 您可以在字段中更改此前 **[!UICONTROL Label prefix]** 缀。
 
