@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a1192bc804e752d13af869da66ba0505c077ed19
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * 开始发送电子邮件是一个敏感步骤，因为该平台没有任何使用历史记录，而且当发送的IP从未用于此目的时，就没有声誉。
 
-* ISP自然会怀疑从未用来发送电子邮件的IP地址，并突然开始发送大量电子邮件流量。 事实上，垃圾邮件发送者通常使用“未知”的IP地址(从未已列入黑名单过的地址)发送尽可能多的邮件，然后再进行检测。
+* ISP自然会怀疑从未用来发送电子邮件的IP地址，并突然开始发送大量电子邮件流量。 事实上，垃圾邮件发送者通常使用“未知”IP地址（从未添加到阻止列表的地址）发送尽可能多的邮件，然后再进行检测。
 
 * 在生产阶段的开始，您无法期望在输出方面达到操作速度。 此外，您不应尝试以此速率发送消息，因为这可能会导致ISP阻止发送地址，并严重危害开始的其余阶段。
 
