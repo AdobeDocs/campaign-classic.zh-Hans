@@ -15,42 +15,45 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
 
 # IMS疑难解答{#ims-troubleshooting}
 
-以下疑难解答提示将帮 **助内部客户解决** IMS集成中最常见的问题。 对于托 **管客户** ，请联系Adobe。
+以下故障排除提示将帮 **助预置型** 客户解决使用IMS集成时出现的最常见问题。 对于 **托管** ，请与Adobe联系。
 
 **外部帐户**
 
-只应有一个 **具有** 以下设置的外部帐户：
+只应有一 **个外部帐户** ，并且设置如下：
 
-* **内部名称**:Adobe_Marketing_Cloud
-* **类型**:Adobe Marketing Cloud
+* **内部名称**: Adobe_Marketing_Cloud
+* **类型**: Adobe Marketing Cloud
 
 删除具有相同设置的任何重复外部帐户。
 
-**Product Context**
+**产品上下文**
 
-如果外部帐户有“ **Product Context** ”字段，请检查其值是否设置为： **dma_campaign_classic**
+如果外部帐户有“ **产品上下文** ”字段，请检查其值是否设置为： **dma_活动_classic**
 
-确保您的产品上下文与Campaign和Experience cloud的上下文相同。
+确保您的产品上下文对于活动和Experience Cloud相同。
 
-例如，如果未显 **示产品上下文** ，则默认产品上下文应为 **dma_campaign** ，同时位于Campaign和Experience Cloud中。 如果显 **示“产品上下文** ”字段，则默认的产品上下文应为 **dma_campaign_classic** ，在Campaign和Experience cloud中均是如此。
+例如，如果未显 **示Product** Context **，则默认的product context应同时** 采用活动和Experience Cloud。 如果出 **现“Product Context** （产品上下文）”字段 **，则默认产品上下文应** 在活动和Experience Cloud中均为dma_活动_classic。
 
 **[!UICONTROL IMS Server URL]**
 
-在Campaign **Adobe Marketing cloud外部帐户中，检查** 是 **[!UICONTROL IMS Server URL]** adobeid-na1.services.adobe.com还是 [ims-na1.adobelogin.com](https://adobeid-na1.services.adobe.com/)[](http://ims-na1.adobelogin.com/)。 确保舞台和生产实例都指向同一个IMS生产端点。
+在活动 **Adobe Marketing Cloud** 外部帐户中，检 **[!UICONTROL IMS Server URL]** 查是 [adobeid-na1.services.adobe.com还](https://adobeid-na1.services.adobe.com/) 是ims-na1.adobelogin.com [](http://ims-na1.adobelogin.com/)。 确保舞台和生产实例指向同一IMS生产端点。
 
-**关联蒙版**
+**关联掩码**
 
-* 检查尝试登录的用户是否属于Enterprise Dashboard中的操作员组。
-* 在Enterprise Dashboard **[!UICONTROL Association Mask]** 中，检查该用户的操作员组名称的前缀。
-* 确保没有空格和拼写错误。
-* 检查Campaign中运算符组的名称是否未更改，并遵循以下语法：
+* 检查尝试登录的用户是否属于企业仪表板中的操作员组。
+* 检查该 **[!UICONTROL Association Mask]** 是“企业”仪表板中用户的操作员组名称的前缀。
+* 确保没有空白和拼写错误。
+* 检查活动中运算符组的名称是否未更改，并遵循以下语法：
 
 ```
 <Association Mask> + <Operator Group Name in Campaign> = Complete name of the operator group in Enterprise Dashboard
@@ -58,29 +61,29 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 **范围**
 
-营销活动外部帐户中定义的范围必须是IMS提供的范围的子集。
+活动外部帐户中定义的范围必须是IMS提供的范围的子集。
 
 **回调URL**
 
-回 **调URL应列入白名单** ，并以“https://”开头。 检查回 **调URL** 是否已链接到相应的实例。 例如，生产实例应重定向到生产URL。
+回 **调URL** 应添加到允许列表中，并使用“https://”开始。 检查回 **调URL** 是否已链接到相应实例。 例如，生产实例应重定向到生产URL。
 
 **客户端ID和机密**
 
-客户端ID在Campaign外部帐户和IMS提供的帐户之间匹配。
+活动外部帐户与IMS提供的客户端ID匹配。
 
 检查输入的客户端机密是否正确。
 
 **重新启动服务器**
 
-如果对Campaign外部帐户中的上述设置进行了任何更改，请重新启动服务器
+如果在活动外部帐户中对上述设置进行了任何更改，请重新启动服务器
 
-**常见的错误类型和可能的解决方案**
+**常见错误类型和可能的解决方案**
 
 * 用户被重定向到adobe.com页面：
 
-   问题在于 **[!UICONTROL Callback URL]**。 请参阅上述步骤以检查配 **[!UICONTROL Callback URL]** 置。
+   这有问题 **[!UICONTROL Callback URL]**。 请参阅上述步骤以检查配 **[!UICONTROL Callback URL]** 置。
 
-* 消息“登录没有与表达式匹配的任何权限”:
+* 消息“登录名没有与表达式匹配的任何权利”:
 
    请参阅上述步骤以检查和运 **[!UICONTROL Association Mask]** 算符组配置。
 
