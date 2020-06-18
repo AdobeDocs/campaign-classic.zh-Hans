@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: 9c26ef0b520c6486d86e73cb93612cc7ab9556d0
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2450'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 发送消息后，投放日志允许您视图每个用户档案的投放状态以及关联的故障类型和原因。
 
-如果地址被隔离或投放已列入黑名单，也可以在用户档案准备过程中排除邮件。 排除的消息列在投放仪表板中。
+如果地址被隔离或投放在阻止列表上，也可以在用户档案准备过程中排除邮件。 排除的消息列在投放仪表板中。
 
 **相关主题：**
 
@@ -86,10 +86,10 @@ ht-degree: 1%
    <td> 此地址的质量等级太低。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 已列入黑名单地址 </td> 
+   <td> 块列表上的地址 </td> 
    <td> 硬 </td> 
    <td> 8 </td> 
-   <td> 发送时地址已列入黑名单。 此状态用于在将数据导入到列表隔离列表时从外部Adobe Campaign和外部系统导入数据。<br /> </td> 
+   <td> 地址已在发送时添加到块列表。 此状态用于将数据从外部列表和外部系统导入Adobe Campaign隔离列表。<br /> </td> 
   </tr> 
   <tr> 
    <td> 控制地址 </td> 
@@ -107,7 +107,7 @@ ht-degree: 1%
    <td> 忽略错误 </td> 
    <td> 已忽略 </td> 
    <td> 25 </td> 
-   <td> 地址已列入白名单。 因此，该错误会被忽略，并将发送电子邮件。<br /> </td> 
+   <td> 地址在允许列表中。 因此，该错误会被忽略，并将发送电子邮件。<br /> </td> 
   </tr> 
   <tr> 
    <td> 仲裁后排除 </td> 
@@ -158,7 +158,7 @@ ht-degree: 1%
    <td> 由于作为垃圾邮件报告的安全反馈，该地址已置于隔离中。 根据错误，地址将再次尝试，直到错误计数器达到5，或直接发送给隔离。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 目标大小有限 </td> 
+   <td> Target大小有限 </td> 
    <td> 已忽略 </td> 
    <td> 17 </td> 
    <td> 已达到投放的最大收件人大小。<br /> </td> 
@@ -207,7 +207,7 @@ ht-degree: 1%
    >
    >弹回邮箱的配置详见 [本节](../../installation/using/deploying-an-instance.md#managing-bounced-emails)。
 
-   反馈循环的运行方式与弹回电子邮件类似。 当用户将电子邮件归为垃圾邮件时，您可以配置Adobe Campaign中的电子邮件规则，以阻止此用户的所有投放。 发送给已将电子邮件限定为垃圾邮件的用户的邮件会自动重定向到专为此目的而创建的邮箱。 这些用户的地址是已列入黑名单的，即使他们没有单击退订链接。 地址在(NmsAddress **)已列入黑名单表中是隔离**&#x200B;的&#x200B;**，而不是(NmsRecipient**)收件人表中。
+   反馈循 [环就像](../../delivery/using/technical-recommendations.md#feedback-loop) “弹回电子邮件”一样。 当用户将电子邮件归为垃圾邮件时，您可以配置Adobe Campaign中的电子邮件规则，以阻止此用户的所有投放。 发送给已将电子邮件限定为垃圾邮件的用户的邮件会自动重定向到专为此目的而创建的邮箱。 这些用户的地址在块列表中，即使他们没有单击退订链接。 地址在(NmsAddress **)隔离表的块列**&#x200B;表中&#x200B;**，而不在(NmsRecipient**)收件人表中。
 
    >[!NOTE]
    >
