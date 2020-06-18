@@ -15,22 +15,25 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+workflow-type: tm+mt
+source-wordcount: '639'
+ht-degree: 0%
 
 ---
 
 
 # 面向业务的API{#business-oriented-apis}
 
-业务API特定于每种类型的对象。 它们对以下问题有影响：
+业务API特定于每种类型的对象。 它们对以下方面有影响：
 
-* 交付：
+* 投放:
 
-   * 创建交付操作，请参 [阅SubmitDelivery(nms:delivery)](#submitdelivery--nms-delivery-),
-   * 发送营销活动（开始、暂停、停止、发送证明）,
-   * 恢复交付日志。
+   * 创建投放操作，请参 [阅SubmitDelivery(nms:投放](#submitdelivery--nms-delivery-))
+   * 发送活动(开始、暂停、停止、发送验证),
+   * 恢复投放日志。
 
-* 工作流：
+* 工作流:
 
    * 启动工作流，
    * 验证进程等。
@@ -38,27 +41,27 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
       请参阅 [JavaScript中的SOAP方法](../../configuration/using/soap-methods-in-javascript.md)。
 
 * 内容管理
-* 订阅管理，请参 [阅订阅(nms:subscription)](#subscribe--nms-subscription-)[和取消订阅(nms:subscription)](#unsubscribe--nms-subscription-)。
-* 数据流程：进口，出口。
+* 订阅管理，请 [参阅订阅(nms:订阅](#subscribe--nms-subscription-) ) [和取消订阅(nms:订阅)](#unsubscribe--nms-subscription-)。
+* 数据流程： 进口，出口。
 
-本节详细介绍了“订阅”、“取消订阅”和“SubmitDelivery”服务的使用。
+本节详细介绍“订阅”、“取消订阅”和“SubmitDelivery”服务的使用。
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI文档包含有关SOAP调用和在Adobe Campaign中使用Javascript的其他信息](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) ，以及对应用程序中使用的所有方法和函数的完整参考。
+>[活动JSAPI文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) 包含有关SOAP调用和在Adobe Campaign中使用Javascript的其他信息，以及对应用程序中使用的所有方法和函数的完整引用。
 
-## 订阅（nms：订阅） {#subscribe--nms-subscription-}
+## 订阅(nms:订阅) {#subscribe--nms-subscription-}
 
-此服务允许您将收件人订阅到信息服务并更新收件人配置文件。
+此服务允许您订阅收件人信息服务并更新收件人用户档案。
 
-调用服务需要以下参数：
+调用服务时需要以下参数：
 
 * 身份验证，
 * 订阅服务的内部名称，
-* 包含收件人信息的XML文档（来自“nms:recipient”架构）,
-* 一个布尔值，用于创建收件人（如果不存在）。
+* 包含收件人信息的XML文档(来自“nms:收件人”模式),
+* 一个布尔值，用于收件人创建（如果还没有）。
 
-“nms:subscription”架构中的“subscribe”方法说明：
+“nms:订阅”模式中“subscribe”方法的描述：
 
 ```
 <method name="Subscribe" static="true">
@@ -70,13 +73,13 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 </method>
 ```
 
-对帐密钥的定义必须通过XML文档元素&#x200B;**上的** _ `<recipient>` key属性输入。 此属性的内容是以逗号分隔的XPath列表。
+必须通过XML合并关键项元素上&#x200B;**的** _key属 `<recipient>` 性输入文档的定义。 此属性的内容是以逗号分隔的XPath列表。
 
 除错误外，此调用不返回任何数据。
 
 ### 示例 {#examples}
 
-使用电子邮件地址上的收件人对帐密钥进行订阅：输入的XML文档必须引用此字段中的电子邮件地址和键的定义。
+订阅电子邮件地址为收件人合并关键项: 输入XML文档必须引用此字段中的电子邮件地址和键的定义。
 
 ```
 <recipient _key="email" email= "john.doe@adobe.com"/>
@@ -120,17 +123,17 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
    </SOAP-ENV:Envelope>
    ```
 
-## 取消订阅(nms:subscription) {#unsubscribe--nms-subscription-}
+## 取消订阅(nms:订阅) {#unsubscribe--nms-subscription-}
 
-此服务允许您从信息服务中取消订阅收件人并更新收件人配置文件。
+此服务允许您取消收件人与信息服务的订阅并更新收件人用户档案。
 
-调用服务需要以下参数：
+调用服务时需要以下参数：
 
 * 身份验证，
 * 要取消订阅的服务的内部名称，
-* 包含收件人信息的XML文档（来自“nms:recipient”架构）,
+* 包含收件人信息的XML文档(来自“nms:收件人”模式),
 
-“nms:subscription”架构中“取消订阅”方法的说明：
+“nms:订阅”模式中“取消订阅”方法的描述：
 
 ```
 <method name="Unsubscribe" static="true">
@@ -141,13 +144,13 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 </method>
 ```
 
-对帐密钥的定义必须通过XML文档元素上的_key属 `<recipient>` 性进行输入。 此属性的内容是以逗号分隔的XPath列表。
+必须通过XML合并关键项元素上的_key属性输 `<recipient>` 入文档的定义。 此属性的内容是以逗号分隔的XPath列表。
 
-如果接收者不在数据库中或者没有订阅相关信息服务，则服务不执行任何操作并且不生成错误。
+如果收件人不在信息服务库中，或者未订阅相关，则服务将不执行任何操作，并且不生成错误。
 
 >[!NOTE]
 >
->如果未将服务名称指定为参数，则接收者将自动列入黑名单(@blackList=&quot;1&quot;)。
+>如果未将服务名称指定为参数，则收件人会自动显示在块列表(@blockList=&quot;1&quot;)上。
 
 除错误外，此调用不返回任何数据。
 
@@ -181,19 +184,19 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 </SOAP-ENV:Envelope>
 ```
 
-## SubmitDelivery(nms:delivery) {#submitdelivery--nms-delivery-}
+## SubmitDelivery(nms:投放) {#submitdelivery--nms-delivery-}
 
-此服务允许您创建和提交交付操作。
+此服务允许您创建和提交投放操作。
 
-调用服务需要以下参数：
+调用服务时需要以下参数：
 
 * 身份验证，
-* 交付模板的内部名称，
-* 包含其他交付数据的可选XML文档。
+* 投放模板的内部名称，
+* 可选的XML文档，包含其他投放数据。
 
 不应在卷中调用此API，因为您可能遇到性能问题。
 
-方法在其架构中的描述：
+方法在其模式中的描述：
 
 ```
 <method name="SubmitDelivery" static="true">
@@ -204,15 +207,15 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 </method>
 ```
 
-必须从Adobe Campaign客户端控制台创建分发模板。 它包含所有分发（发送者地址或消息有效期）的通用参数。
+必须从投放模板客户端控制台创建Adobe Campaign。 它包含所有投放（发送者地址或消息有效期）通用的参数。
 
-输入XML文档是符合“nms:delivery”架构结构的交付模板片段。 它将包含无法在交付模板中静态定义的所有其他数据（例如，要定位的收件人列表）。
+输入XML文档是符合“nms:投放”模式结构的投放模板片段。 它将包含所有无法在投放模板中静态定义的附加数据(例如，收件人到目标的列表)。
 
 除错误外，此调用不返回任何数据。
 
 ### XML文档示例 {#xml-document-example}
 
-此示例基于来自外部数据源（本例中为文件）的自定义交付模板。 该配置在交付模板中进行了完整说明，因此在调用发生时，所有仍要发送的内容都是元素中的文件的内 `<externalsource>` 容。
+此示例基于来自外部数据源（本例中为文件）的自定义投放模板。 该配置在投放模板中进行了完整的说明，因此在调用发生时仍要发送的所有内容都是元素中的文件 `<externalsource>` 内容。
 
 ```
 <delivery>
@@ -225,7 +228,7 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 </delivery>
 ```
 
-如果您没有分发模板，则可以使用以下示例：
+如果您没有投放模板，可以使用以下示例：
 
 ```
 <delivery>
