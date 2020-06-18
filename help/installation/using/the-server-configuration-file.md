@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9b0f943fa09b3d0ad8547eb708e888724f1ae7e
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '7852'
+source-wordcount: '7859'
 ht-degree: 3%
 
 ---
@@ -207,7 +207,7 @@ Adobe Campaign的总体配置在位于安 **装目录的conf** 目录中的serve
    <td> “$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/upload/” <br /> </td> 
   </tr> 
   <tr> 
-   <td> uploadWhitelist<br /> </td> 
+   <td> uploadAllowlist<br /> </td> 
    <td> 授权文件以“,”分隔。 该字符串必须是有效的常规java表达式。 请参 <a href="../../installation/using/configuring-campaign-server.md#limiting-uploadable-files" target="_blank">阅限制可上载文件</a>。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '.+' <br /> </td> 
@@ -575,8 +575,8 @@ For additional information, refer to this [section](../../installation/using/con
  </thead> 
  <tbody> 
   <tr> 
-   <td> blacklistFile<br /> </td> 
-   <td> 包含要列入黑名单的命令的文件的路径。 <br /> </td> 
+   <td> blocklistFile<br /> </td> 
+   <td> 包含要添加到允许列表的命令的文件的路径。 <br /> </td> 
    <td> 字符串<br /> </td> 
   </tr> 
   <tr> 
@@ -1627,7 +1627,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*&quot;
 
 ### 中继 {#relay}
 
-在mta > **relay节点** ，配置以下参数。 这是邮件服务器的邮件投放配置。
+在mta > **relay节点** ，配置以下参数。 这是邮件服务器的消息投放配置。
 
 有关详细信息，请参 [阅SMTP中继](../../installation/using/configuring-campaign-server.md#smtp-relay)。
 
@@ -2824,7 +2824,7 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告： 对给定进程消耗的RAM量（以Mb为单位）发出警告<br /> </td> 
+   <td> 内存消耗警告： 针对给定进程消耗的RAM量（以Mb为单位）的警告<br /> </td> 
    <td> 长<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -3079,7 +3079,7 @@ For additional information, refer to this [section](../../installation/using/dep
   </tr> 
   <tr> 
    <td> 状态<br /> </td> 
-   <td> 公共资源(明细列表)的同步状态。 可能的值为“正常”（正常执行）、“黑名单”（如果出现错误404，则为url黑名单）和“备用”（如果存在，则为在备用服务器上上传文件）。<br /> </td> 
+   <td> 公共资源(明细列表)的同步状态。 可能的值为“normal”（正常执行）、“blocklist”（在出现错误404时添加到块列表的url）和“spare”（如果存在，则在备用服务器上上传文件）。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> 正常<br /> </td> 
   </tr> 
@@ -3137,19 +3137,19 @@ For additional information, refer to this [section](../../installation/using/dep
      timeout="" status="normal" httpAllowed="true" urlPath="/nl/jsp/s.jsp"/>
 
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="*.jssp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="*.jssp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="true" urlPath="/webApp/*"/>
+     timeout="" status="blocklist" httpAllowed="true" urlPath="/webApp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/report/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/report/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/jssp/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/jssp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
      timeout="" status="normal" httpAllowed="false" urlPath="/strings/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
@@ -3219,7 +3219,7 @@ For additional information, refer to this [section](../../installation/using/dep
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> IMS组织标识符： Adobe Marketing Cloud中的唯一组织标识符，尤其用于VisitorID服务和IMS SSO。 <br /> </td> 
+   <td> IMS组织标识符： Adobe Marketing Cloud内的唯一组织标识符，尤其用于VisitorID服务和IMS SSO。 <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
