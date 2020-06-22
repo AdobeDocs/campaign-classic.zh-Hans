@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2c555f29f0e0029b468927dbdb4bc79f9a35990d
+source-git-commit: 655544352070b0e2fab72b1991d2e4d80e03e349
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2808'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,19 @@ _2019年8月13日_
 
 ## 版本19.1.4 —— 内部版本9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **2020年4月29日**: 新版本(9032@3a9dc9c)，包含以下修复：
+![](assets/do-not-localize/green_2.png) **2020年6月22日**: 新版本(9032@800be2e)，包含以下修复：
+
+* iOS HTTP2连接器已得到改进（第三方更新和错误管理）。 (NEO-25904、NEO-25903、NEO-25799)
+
+以下修复与跟踪链接安全机制相关：
+
+* 修复了导致跟踪“通知单击”无法正常工作的问题（iOS和Android推送通知）。 (NEO-25965)
+* 修复了在使用某些旧版Outlook时无法打开／单击跟踪URL的问题。  (NEO-25688)
+* 修复了在个性化参数（带磅签名的锚点标记）中使用片段跟踪URL时无法正常工作的问题。 (NEO-25774)
+* 修复了反网络钓鱼服务的问题。 (NEO-25283)
+* 修复了使用特定自定义跟踪公式时的跟踪问题。 (NEO-25277)
+
+![](assets/do-not-localize/orange_2.png) **2020年4月29日**: 新版本(9032@3a9dc9c)，包含以下修复：
 
 * 改进了跟踪电子邮件链接的安全性。 默认情况下，所有客户都启用此功能。 另外还提供了增强的安全功能，可通过联系客户服务中心来启用此功能。 有关非托管客户启用此功能的功能和步骤的更多详细信息，请参阅安 [全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
 * 修复了一个问题，该问题可能会阻止图像显示在行投放上。 (NEO-23207)
