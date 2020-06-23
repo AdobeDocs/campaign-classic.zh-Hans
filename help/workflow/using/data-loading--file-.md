@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e3de6f7b21d912efa4f6faca5e57cb480e8f1805
+source-git-commit: 9c9554b83726da7a7dbc747878d7d0758e71a4d7
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ ht-degree: 0%
 ![](assets/s_advuser_wf_etl_file.png)
 
 您可以定义在文件导入过程中要执行的预处理，例如，这样不必在服务器上解压文件（因此为解压文件节省空间），而是在文件处理中包含解压。 选择选 **[!UICONTROL Pre-process the file]** 项，然后从3个选项中进行选择： **[!UICONTROL None]**、 **[!UICONTROL Decompression]** (zcat)或 **[!UICONTROL Decrypt]** (gpg)。
+
+![](assets/preprocessing-dataloading.png)
+
+有关此内容的详细信息，请参阅此部分： [在处理之前解压或解密文件](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing)。
 
 ## 定义文件格式 {#defining-the-file-format}
 
