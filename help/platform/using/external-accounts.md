@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2218'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 * [路由外部帐户](#routing-external-account)
 * [FTP外部帐户](#ftp-external-account)
 * [外部数据库外部帐户](#external-database-external-account)
-* [Web分析外部帐户](#web-analytics-external-account)
+* [网络Analytics外部帐户](#web-analytics-external-account)
 * [Facebook连接外部帐户](#facebook-connect-external-account)
 * [执行实例外部帐户](#execution-instance-external-account)
 * [Adobe Experience Cloud外部帐户](#adobe-experience-cloud-external-account)
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 Adobe Campaign附带一组预定义外部帐户。 要与外部系统（如用于文件传输的FTP服务器）建立连接，您可以创建自己的外部帐户。
 
-外部帐户由技术工作流或活动工作流等技术流程使用。 在工作流中设置文件传输或与任何其他应用程序(Adobe目标、Experience Manager等)进行数据交换时，您需要选择外部帐户。
+外部帐户由技术工作流或活动工作流等技术流程使用。 在工作流中设置文件传输或与任何其他应用程序(Adobe Target、Experience Manager等)进行数据交换时，您需要选择外部帐户。
 
 1. 从中 **[!UICONTROL Explorer]**&#x200B;展开菜 **[!UICONTROL Administration]** 单。
 1. 展开菜 **[!UICONTROL Platform]** 单并单击 **[!UICONTROL External accounts]**。
@@ -245,9 +245,9 @@ Teradata **外部帐户** 允许您将活动实例连接到Teradata外部数据�
 
 For more information on **[!UICONTROL Query banding]**, refer to the [Teradata documentation](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
-## Web分析外部帐户 {#web-analytics-external-account}
+## 网络Analytics外部帐户 {#web-analytics-external-account}
 
-该 **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** 外部帐户允许您以细分形式将数据从Adobe Analytics转发到Adobe Campaign。 相反，它通过Adobe Campaign将电子邮件活动的指标和属性发送到Adobe Analytics - Data connector。
+该 **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** 外部帐户允许您以细分形式将数据从AdobeAnalytics转发到Adobe Campaign。 相反，它通过Adobe Campaign将电子邮件活动的指标和属性发送到Adobe Dibos-Data Connector。
 
 ![](assets/ext_account_10.png)
 
@@ -299,7 +299,7 @@ For more information on this configuration, refer to this [page](../../message-c
 
 ## Adobe Experience Cloud外部帐户 {#adobe-experience-cloud-external-account}
 
-要使用Adobe ID连接到Adobe Campaign控制台，必须配置外部帐户 **[!UICONTROL Adobe Experience Cloud (MAC)]** 。
+要使用Adobe Campaign连接到Adobe ID控制台，必须配置外部帐户。 **[!UICONTROL Adobe Experience Cloud (MAC)]**
 
 ![](assets/ext_account_9.png)
 
@@ -325,7 +325,7 @@ For more information on this configuration, refer to this [page](../../message-c
 
 * **[!UICONTROL IMS organization ID]**
 
-   IMS组织的ID。 要查找您的组织ID，请参 [阅本页](https://marketing.adobe.com/resources/help/en_US/mcloud/faq.html) (**在哪里可以找到我的IMS组织ID?**)。
+   IMS组织的ID。 要查找您的组织ID，请参 [阅本页](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) (**在哪里可以找到我的IMS组织ID?**)。
 
 * **[!UICONTROL Association mask]**
 
@@ -365,7 +365,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问�
 
 ## Adobe Experience Manager外部帐户 {#adobe-experience-manager-external-account}
 
-该 **[!UICONTROL AEM (AEM instance)]** 外部帐户允许您直接在Adobe Experience Manager中管理电子邮件投放和表单的内容。
+外部帐户 **[!UICONTROL AEM (AEM instance)]** 允许您直接以Adobe Experience Manager管理电子邮件投放和表单的内容。
 
 ![](assets/ext_account_5.png)
 
