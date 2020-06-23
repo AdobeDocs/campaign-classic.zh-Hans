@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e8a9d8d63c01cc19380267fced45e180b4d7ccb4
+source-git-commit: e6f8eb6f4ffc3ffe9dbc643cf0edeef439c0f969
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 支持多个控制实例 {#supporting-several-control-instances}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >仅内部部署控制实例支持与多个环境共享执行群集。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 安装事务性消息包时，需要采取多种预防措施。 Adobe建议您在投入生产之前先在测试环境中工作。 您还需要具有兼容的Adobe Campaign许可证。 有关详细信息，请与您的Adobe客户经理联系。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >控制实例和执行实例必须安装在不同的计算机上。 他们不能共享同一活动实例。
 
@@ -90,7 +90,7 @@ To use transactional messaging with Interaction, you need to apply the following
 
 * Install the **Interaction** package onto the control instance and configure your offer catalog.
 
-  >[!CAUTION]
+  >[!IMPORTANT]
   >
   >Do not replicate the offers onto the execution instances.
 
@@ -226,7 +226,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
    * **[!UICONTROL Method]** : 选择 **[!UICONTROL Federated Data Access (FDA)]** 。
    * **[!UICONTROL FDA account]** : 从下拉列表中选择您的联合数据访问帐户。
-   * Click the **[!UICONTROL Create the archiving workflow]** button.
+   * 单击&#x200B;**[!UICONTROL Create the archiving workflow]**&#x200B;按钮。
    * 单击按 **[!UICONTROL Create data synchronization workflow]** 钮以创建LINE数据同步工作流。
 
 
