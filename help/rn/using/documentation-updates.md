@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1b0980d540992538f7961afd7c218888dee4a39
+source-git-commit: 57263746675152b472aa5df4ce94f97b77a84a6b
 workflow-type: tm+mt
-source-wordcount: '6708'
+source-wordcount: '6726'
 ht-degree: 8%
 
 ---
@@ -28,6 +28,8 @@ ht-degree: 8%
 您还可以查阅Adobe Campaign经 [典发行说明](../../rn/using/latest-release.md) ，以获取更多更新。
 
 ## 2020年6月 {#june-2020}
+
+在如何使用控制面板和活动工作流 [加密](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)[和解](../../workflow/using/importing-data.md#use-case-gpg-decrypt) 密数据方面添加了用例。
 
 “白名单”和“黑名单”术语已从Adobe Campaign文档中删除。 这些产品UI、选项名称和内部代码中可能仍然存在这些术语的某些出现，但在即将发布的活动版本中，这些术语将替换为“blocklist”和“allowlist”。
 
