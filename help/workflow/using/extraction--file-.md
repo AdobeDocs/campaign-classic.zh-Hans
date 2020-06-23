@@ -1,6 +1,6 @@
 ---
 title: 数据提取（文件）
-description: 进一步了解数据提取（文件）工作流程活动。
+description: 进一步了解数据提取（文件）工作流活动。
 page-status-flag: never-activated
 uuid: c1e3fde3-183c-4602-9cef-760e4648fcf7
 contentOwner: sauviat
@@ -13,29 +13,32 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5eb82bb5dae589cb18d42695565b25dad36006bd
+source-git-commit: a215109db2d511180c91723059cd8ca10a34a612
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 0%
 
 ---
 
 
 # 数据提取（文件）{#extraction-file}
 
-您可以使用活动从外部文件中的工作流表提取数 **[!UICONTROL Data extraction (file)]** 据。
+您可以使用该活动从外部文件中的工作流表提取数 **[!UICONTROL Data extraction (file)]** 据。
 
 >[!CAUTION]
 >
 >此活动必须始终具有包含要提取的数据的入站过渡。
 
-要配置数据提取，请应用以下步骤：
+要配置提取，请应用以下步骤：
 
-1. 指定输出文件的名称：此名称可包含变量，这些变量通过字段右侧的个性化按钮插入。
+1. 指定输出文件的名称： 此名称可包含变量，这些变量通过字段右侧的个性化按钮插入。
 1. 单 **[!UICONTROL Edit the file format...]** 击以选择要提取的数据。
 
    ![](assets/s_advuser_extract_file_param.png)
 
-   该选 **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** 项会添加一个额外的步骤，以过滤汇总的最终结果，例如，在给定的采购订单类型上，订购次数超过10次的客户，等等。
+   此选 **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** 项会添加一个额外的步骤来筛选聚合的最终结果，例如，在给定的采购订单类型、订购次数超过10次的客户等。
 
-1. 如有必要，可向输出文件添加新列，例如计算或处理结果。 要执行此操作，请单击图 **[!UICONTROL Add]** 标
+1. 如有必要，可向输出文件添加新列，例如计算或处理结果。 为此，请单击图 **[!UICONTROL Add]** 标。
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
@@ -51,16 +54,22 @@ source-git-commit: 5eb82bb5dae589cb18d42695565b25dad36006bd
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
-## 集合函数列表 {#list-of-aggregate-functions}
+您可以定义要在数据提取期间执行的后期进程，以便压缩或加密文件。 为此，必须在活动的选项卡中添 **[!UICONTROL Script]** 加所需的命令。
 
-以下是可用聚合函数的列表：
+有关此内容的详细信息，请参阅此部分： [压缩或加密文件](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
 
-* **[!UICONTROL Count]** 计算要聚集的字段的所有非空值，包括（聚集字段）的重复值，
+![](assets/postprocessing_dataextraction.png)
 
-   **[!UICONTROL Distinct]** 要计算要聚集的字段的不同值和非空值的总数（在计算之前排除重复值）,
+## 列表聚合函数 {#list-of-aggregate-functions}
 
-* **[!UICONTROL Sum]** 计算数值场的值和，
+以下是可用聚合函数的列表:
+
+* **[!UICONTROL Count]** 计算要聚集的字段的所有非空值，包括重复值（聚集字段的值）,
+
+   **[!UICONTROL Distinct]** 要计算要聚合的字段的不同值和非空值的总数(在计算之前排除重复值),
+
+* **[!UICONTROL Sum]** 计算数值域的值和，
 * **[!UICONTROL Minimum value]** 计算字段的最小值（数字或其他）,
-* **[!UICONTROL Maximum value]** 计算字段的最大值（数字或其他值）,
+* **[!UICONTROL Maximum value]** 计算字段的最大值（数值或其他）,
 * **[!UICONTROL Average]** 计算数值字段的平均值。
 
