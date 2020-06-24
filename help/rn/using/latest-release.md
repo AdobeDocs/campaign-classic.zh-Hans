@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e3e8802aae0d10befcf9eef1ccf720f82c460038
+source-git-commit: b2cc71f8f9b7df80b1601a9fa55bfd77f9a82433
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1765'
 ht-degree: 1%
 
 ---
@@ -43,6 +43,8 @@ ht-degree: 1%
 </table>
 
 最 **后一个稳定** 构建为9032(3a9dc9c)。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+
+![](assets/do-not-localize/cp-icon.png) **新的控制面板6月发布** ，包含活动用户档案监视、子域交付性审核和GPG密钥管理。 [了解更多](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/blue_2.png) 版本20.2.1 —— 内部版本9178 {#release-20-2-1-build-9178}
 
@@ -117,7 +119,7 @@ _2020年6月8日_
 活动现在支持以下系统：
 * 操作系统： 德比10
 * RDBMS: Oracle 18c和Oracle 19c
-* 联合数据访问: Azure突触分析
+* 联合数据访问: Azure突触Analytics
 
 了解有关活动 [兼容性矩阵的更多信息](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
 
@@ -240,7 +242,7 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 * 修复了导致清除工作流崩溃的回归。
 * 修复了在执行实例上发布模板时可能发生的问题。
 * 修复了可能阻止collectPrivacyRequests技术工作流运行的问题。 (NEO-20513, NEO-25169)
-* 修复了在升级到构建9080后尝试连接到受众管理器时可能发生的问题。 (NEO-20511, NEO-25167)
+* 修复了在升级到构建9080后尝试连接到Audience Manager时可能发生的问题。 (NEO-20511, NEO-25167)
 * 修复了以PDF或XLS格式导出报表时可能出现的问题。 (NEO-20982、NEO-23493、NEO-23348)
 * 修复了在投放列表发送后，在投放中显示两次的问题。
 * 修复了投放准备问题，该问题在将路由配置设置为通过中间源发送投放时可能发生。
