@@ -5,10 +5,10 @@ solution: Campaign Classic
 title: Adobe Campaign经典产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: b247a3702249183e1e0851160fb3ac3809437ff1
+source-git-commit: 30b2860250c6d1c4032a22a28f6e2e48dcacc6a8
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 30%
+source-wordcount: '266'
+ht-degree: 25%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 30%
 
 ## 新增功能
 
-* “白名单”和“黑名单”术语已从Adobe Campaign文档中删除。 [阅读更多](/help/rn/using/documentation-updates.md)
+* **[表情](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>图标您现在可以在消息和主题行中插入表情图标
 
 * **[获取支持](https://helpx.adobe.com/campaign/kb/ac-support.html)**<br/>&#x200B;访问常见问题解答、最佳实践、帮助资源和请求帮助
 
@@ -49,11 +49,11 @@ ht-degree: 30%
     <p>
   </td>
    <td>
-    <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html">
+    <a href="https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html">
       <img alt="构建升级" src="platform/using/assets/upgrade.png" />
     </a>
     <div>
-      <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html">
+      <a href="https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html">
     <strong>升级到最新版本</strong>
     </a>
     </div>
