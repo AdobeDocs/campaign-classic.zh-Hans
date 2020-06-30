@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 3a932bc440853151704f1ba1e188fa0af9d4c5cb
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,3 @@ ht-degree: 0%
 * “工作流实例运行器”(runwf)进程执行给定工作流实例的所有任务。 当暂时没有任务需要执行时，它会变为“被动”，即它保存在数据库中的状态，然后停止。
 * “工作流服务器”(wfserver)模块监视当前工作流实例。 当存在要执行的任务时，此模块会创建一个过程以激活（或重新激活）相应实例。
 
-当操作者对工作流执行操作(开始、停止、暂停等)时，“nlserver”模块不会直接执行该操作，而是将其置于队列中，以便由工作流模块处理。
