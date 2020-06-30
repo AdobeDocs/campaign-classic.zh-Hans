@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe活动经典
 translation-type: tm+mt
-source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
 workflow-type: tm+mt
-source-wordcount: '2101'
+source-wordcount: '2126'
 ht-degree: 10%
 
 ---
@@ -320,6 +320,13 @@ ht-degree: 10%
       + [同步受众](integrations/using/synchronizing-audiences.md)
       + [同步Web应用程序](integrations/using/synchronizing-web-applications.md)
       + [对[!DNL ACS连接器]进行故障诊断](integrations/using/troubleshooting-the-acs-connector.md)
+   + Experience Cloud Triggers {#experience-triggers}
+      + [关于[!DNL Adobe Experience Cloud触发器]](integrations/using/about-triggers.md)
+      + [配置管道](integrations/using/configuring-pipeline.md)
+      + [管道选项NmsPipeline_Config](integrations/using/nmspipeline-config.md)
+      + [触发事件](integrations/using/events.md)
+      + [管道监控](integrations/using/pipeline-monitoring.md)
+      + [管道疑难解答](integrations/using/pipeline-troubleshooting.md)
 + 通过工作流实现自动化 {#automating-with-workflows}
    + 简介 {#introduction}
       + [关于工作流](workflow/using/about-workflows.md)
@@ -397,6 +404,7 @@ ht-degree: 10%
       + [入站电子邮件](workflow/using/inbound-emails.md)
       + [入站SMS](workflow/using/inbound-sms.md)
    + 用例 {#use-cases}
+      + [关于工作流使用案例](workflow/using/about-workflow-use-cases.md)
       + 投放 {#deliveries}
          + [使用本地批准活动](workflow/using/using-the-local-approval-activity.md)
          + [A/B测试](workflow/using/a-b-testing.md)
