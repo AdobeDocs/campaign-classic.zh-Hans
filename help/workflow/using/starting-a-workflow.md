@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 68a95962dfecc4b10f48ba16d4f8ab29cae02ee8
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ ht-degree: 0%
 工具栏允许您开始和跟踪工作流的执行。
 
 菜单和右键菜单中 **[!UICONTROL Actions]** 可用选项的列表在下面详细介绍。
+
+>[!IMPORTANT]
+>
+>请记住，当操作员对工作流执行操作(开始、停止、暂停等)时，不会立即执行该操作，而是将其放在队列中，以便由工作流模块 [处理](../../workflow/using/architecture.md)。
 
 ## 操作工具栏 {#actions-toolbar}
 
@@ -81,7 +85,7 @@ ht-degree: 0%
 
 * **[!UICONTROL Save as template]**
 
-   此操作会根据所选工作流创建新的工作流模板。 您需要指定保存该文件夹的文件夹(在字 **[!UICONTROL Folder]** 段中)。
+   此操作将根据选定的工作流创建新的工作流模板。 您需要指定保存该文件夹的文件夹(在字 **[!UICONTROL Folder]** 段中)。
 
    和选 **[!UICONTROL Mass update of selected lines]** 项 **[!UICONTROL Merge selected lines]** 是所有菜单中可用的通用平台 **[!UICONTROL Actions]** 选项。 For more on this, refer to this [section](../../platform/using/updating-data.md).
 
