@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 655544352070b0e2fab72b1991d2e4d80e03e349
+source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
 workflow-type: tm+mt
-source-wordcount: '2808'
+source-wordcount: '2848'
 ht-degree: 1%
 
 ---
@@ -92,6 +92,11 @@ _2019年8月13日_
 ![](assets/do-not-localize/orange_2.png) **2020年4月29日**: 新版本(9032@3a9dc9c)，包含以下修复：
 
 * 改进了跟踪电子邮件链接的安全性。 默认情况下，所有客户都启用此功能。 另外还提供了增强的安全功能，可通过联系客户服务中心来启用此功能。 有关非托管客户启用此功能的功能和步骤的更多详细信息，请参阅安 [全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
+
+>[!CAUTION]
+>
+>如果您在使用跟踪链接的推送通知或使用锚点标记的投放时遇到问题，建议您禁用用于跟踪链接的新签名机制。 该过程在此页中详 [细](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+
 * 修复了一个问题，该问题可能会阻止图像显示在行投放上。 (NEO-23207)
 * 修复了文件传输 **活动的问题** ，该问题导致基于SFTP密钥的身份验证无法在Debian 9上工作。 (NEO-23183)
 * 修复了在以高频率发送时可能影响推送通知的问题。 (NEO-20516)
