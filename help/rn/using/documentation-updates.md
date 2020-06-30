@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 57263746675152b472aa5df4ce94f97b77a84a6b
+source-git-commit: 229df9ee7da5ac9c773a7af82aabceb755299cc6
 workflow-type: tm+mt
-source-wordcount: '6726'
+source-wordcount: '6767'
 ht-degree: 8%
 
 ---
@@ -29,9 +29,13 @@ ht-degree: 8%
 
 ## 2020年6月 {#june-2020}
 
+已更新删除隔离地址部分。 这包括明确哪些情况下地址会自动从隔离列表中删除。 [阅读更多](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
+
 在如何使用控制面板和活动工作流 [加密](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)[和解](../../workflow/using/importing-data.md#use-case-gpg-decrypt) 密数据方面添加了用例。
 
 “白名单”和“黑名单”术语已从Adobe Campaign文档中删除。 这些产品UI、选项名称和内部代码中可能仍然存在这些术语的某些出现，但在即将发布的活动版本中，这些术语将替换为“blocklist”和“allowlist”。
+
+Experience Cloud触发器和AdobeCampaign Classic集成页面已移 [到此处](../../integrations/using/about-triggers.md)。
 
 ## 20.2 - 08/06/2020{#release-20-2}
 
@@ -88,7 +92,7 @@ Spam Assassin安装部分已更新为新的安装文件名。 [了解更多](../
 
 描述Adobe Campaign内置数据模型的部分已更新，并且每个表中都有更多详细信息。 [阅读更多](../../configuration/using/data-model-description.md)
 
-工作流使用案例已更新并重新组织为主题部分。 [阅读更多](../../workflow/using/using-the-local-approval-activity.md)
+工作流使用案例已更新并重新组织为主题部分。 [阅读更多](../../workflow/using/about-workflow-use-cases.md)
 
 弹回 [邮件资格](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) 和电子邮件 [管理规则部分已](../../delivery/using/understanding-delivery-failures.md#email-management-rules) 通过更新的信息进行了增强。
 
@@ -220,7 +224,7 @@ Adobe Campaign增强MTA文档现已可用。 [阅读更多](https://helpx.adobe.
 
 添加了模式 **定义中** sqlDefault属性的建议。 [阅读更多](../../configuration/using/elements-and-attributes.md#attribute-description)。
 
-Adobe Campaign与Adobe实时客户数据Platform之间的集成现在已在“与Adobe Experience Cloud集 **成”指南中提及** 。 [阅读更多](../../integrations/using/about-campaign-integrations.md)。
+Adobe Campaign与Adobe实时客户数据平台之间的集成现在在“与Adobe Experience Cloud集 **成”指南中提到** 。 [阅读更多](../../integrations/using/about-campaign-integrations.md)。
 
 ## 2019年11月 {#november-2019}
 
@@ -349,7 +353,7 @@ Marketing Cloud触发器技术说明已更新。 [阅读更多](https://helpx.ad
 
 在优惠批准部分添加了注释，以指定“已批准内容”提及指示内容批准流程已完成，无论是否已启用／批准所有优惠。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/ITA_Managing_an_offer_catalog_Approving_and_activating_an_offer.html#Approving_offer_content)
 
-在安装指南中添加了新部分，其中列出了“管理”/“Platform”/“选项”节点中的选项。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
+在安装指南中添加了新部分，其中列出了“管理／平台／选项”节点中的选项。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
 
 添加了有关使用种子地址保护邮寄列表的信息。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
