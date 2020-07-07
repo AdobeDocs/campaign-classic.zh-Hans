@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 3%
@@ -47,7 +47,7 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
    请参 [阅本节](#example-for-salesforce-com) ，了解如何设置与Salesforce.com的连接。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >将Adobe Campaign与Salesforce.com连接时，限制如下：
    >
@@ -62,7 +62,7 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
    请参 [阅本节](#example-for-oracle-on-demand) ，了解如何设置与Oracle On Demand的连接。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >将Adobe Campaign与Oracle On Demand连接时，限制有：
    >
@@ -80,7 +80,7 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
    在此视频中了解Adobe Campaign和Microsoft Dynamics集成用 [例](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >将Adobe Campaign与Microsoft Dynamics连接时，限制如下：
    >
@@ -277,7 +277,7 @@ Adobe Campaign与CRM之间的同步通过专用工作流活动进行： [CRM连�
 
    如有必要，可通过列的下拉列表更改数据格 **[!UICONTROL Conversion]** 式。 可能的转换类型以数据格 [式详细介绍](#data-format)。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >对于在CRM中和在Adobe Campaign中链接对象，CRM中记录的标识符是必需的。 在批准包装盒时，会自动添加它。
    >
@@ -289,7 +289,7 @@ Adobe Campaign与CRM之间的同步通过专用工作流活动进行： [CRM连�
 
    ![](assets/crm_task_import_filter.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >与数据过滤模式链接的限制在过滤数据中 [有详细说明](#filtering-data)。
 
@@ -382,7 +382,7 @@ Adobe Campaign与CRM之间的同步通过专用工作流活动进行： [CRM连�
 1. 选择一个 **[!UICONTROL Export to CRM]** 操作。
 1. 转到下 **[!UICONTROL Remote object]** 拉列表，选择进程所关注的对象。 此对象与连接器配置期间在Adobe Campaign中创建的一个表重合。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >CRM连接器活动的 **导出功能** ，可以在CRM端插入或更新字段。 要在CRM中启用字段更新，您需要指定远程表的主键。 如果缺少密钥，则将插入数据（而不是更新）。
 
@@ -457,7 +457,7 @@ Adobe Campaign与CRM之间的同步通过专用工作流活动进行： [CRM连�
 
    ![](assets/crm_import_deleted_obj.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >元素删除期间必须与CRM特定的限制一致。 这意味着对于Salesforce.com，例如，30天前删除的元素无法恢复。
 
