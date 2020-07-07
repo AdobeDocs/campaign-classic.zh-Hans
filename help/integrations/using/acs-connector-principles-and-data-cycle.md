@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '1996'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ACS连接器桥Adobe Campaignv7和Adobe Campaign Standard。 它是v7活动中�
 
 借助ACS Connector，数字营销人员继续使用Campaign Standard来设计、目标和执行活动，而活动v7为面向数据的用户（如数据库营销人员）量身定制。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >ACS连接器仅作为Adobe CampaignPrime产品的一部分提供。 有关如何许可Adobe CampaignPrime的更多信息，请与客户经理联系。
 >
@@ -83,7 +83,7 @@ ACS连接器将以下项目定期从Campaign Standard复制到活动v7:
 
 通过复制投放ID和电子邮件日志，可以访问v7收件人的投放历史记录和跟踪v7活动的数据。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >只有电子邮件广告和跟踪日志从Campaign Standard复制到活动v7。
 
@@ -120,7 +120,7 @@ ACS连接器在活动v7和Campaign Standard之间同步隔离。
 
 ACS连接器有两种实现类型。 这两个任务始终由Adobe Campaign咨询团队执行。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >本节仅面向专家用户，为他们提供实施过程及其主要步骤的全球视图。
 >
@@ -140,7 +140,7 @@ ACS连接器有两种实现类型。 这两个任务始终由Adobe Campaign咨�
 
 安装软件包后，可在下面找到两个技术工作流 **[!UICONTROL Administration > ACS Connector > Process]**。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >切勿尝试修改这些工作流。 它们不应出错或暂停。 如果发生这种情况，请联系您的Adobe Campaign顾问。
 
@@ -219,7 +219,7 @@ ACS连接器有两种实现类型。 这两个任务始终由Adobe Campaign咨�
   </tr> 
   <tr> 
    <td> 不再联系(由任何渠道)<br /> </td> 
-   <td> @blockList<br /> </td> 
+   <td> @阻止列表<br /> </td> 
   </tr> 
   <tr> 
    <td> 不再通过电子邮件联系<br /> </td> 
@@ -290,7 +290,7 @@ ACS连接器有两种实现类型。 这两个任务始终由Adobe Campaign咨�
 
 本节介绍高级实施方面的一些可能性。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >此信息只能用作一般准则。 与Adobe Campaign顾问联系以了解实施。
 
