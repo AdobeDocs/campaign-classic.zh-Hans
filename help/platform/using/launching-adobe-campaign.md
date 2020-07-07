@@ -15,16 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 84f06afb36aa6a9fa13db1fda7034389b762eb99
+workflow-type: tm+mt
+source-wordcount: '386'
+ht-degree: 74%
 
 ---
 
 
 # 启动 Adobe Campaign{#launching-adobe-campaign}
 
+活动客户端控制台是一个富客户端，它允许您连接到活动应用服务器。 了解如何在本页中下载和配置客户端 [控制台](../../installation/using/installing-the-client-console.md)。
+
 ## 打开 Adobe Campaign {#starting-adobe-campaign}
 
-您可以通过选择来启动Adobe Campaign **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**。
+您可以通过选择来开始 **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]** Adobe Campaign。
 
 您可以利用客户端控制台连接窗口选择或配置现有数据库，并使用用户名和密码连接系统：
 
@@ -60,14 +65,13 @@ source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
 
 然后您必须定义连接设置。操作步骤：
 
-* 输入 **[!UICONTROL Label]**，为数据库连接命名。
-* 在 **[!UICONTROL URL]** 字段中，添加应用程序服务器的地址。如果您不知道连接 URL，请联系管理员。
-* Check **[!UICONTROL Connect with an Adobe ID]** for the operators to connect to the console using their Adobe ID. 有关详细信息，请参见[此页面](../../integrations/using/about-adobe-id.md)。
-* Click **[!UICONTROL OK]** to validate.
+1. 输入 **[!UICONTROL Label]**，为数据库连接命名。
 
->[!NOTE]
->
->The **[!UICONTROL Add]** button lets you create **[!UICONTROL folders]** to organize all your connections. 只需将每个连接拖放到某个文件夹中。
+1. 在 **[!UICONTROL URL]** 字段中，添加应用程序服务器的地址。如果您不知道连接 URL，请联系管理员。
+
+1. Check **[!UICONTROL Connect with an Adobe ID]** for the operators to connect to the console using their Adobe ID. 有关详细信息，请参见[此页面](../../integrations/using/about-adobe-id.md)。
+
+1. Click **[!UICONTROL OK]** to validate.
 
 ## 操作员和权限 {#operators-and-permissions}
 
