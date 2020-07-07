@@ -1,7 +1,7 @@
 ---
-title: 监控技术工作流程
-seo-title: 监控技术工作流程
-description: 监控技术工作流程
+title: 监视技术工作流
+seo-title: 监视技术工作流
+description: 监视技术工作流
 seo-description: null
 page-status-flag: never-activated
 uuid: 4d215ff4-a61d-4294-8f15-17c612022577
@@ -15,68 +15,71 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 0%
 
 ---
 
 
-# 监控技术工作流程 {#monitoring-technical-workflows}
+# 监视技术工作流 {#monitoring-technical-workflows}
 
-需要监控技术工作流程，并在它们失败时采取相应的操作。
+技术工作流需要被监控，并且在失败时需要采取相应的操作。
 
-本页介绍了其他监视不同营销活动流程 [的方法](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)。
+本页介绍了监视不同活动过程的其 [他方法](../../production/using/monitoring-guidelines.md)。
 
-## 实例监视功能板 {#instance-monitoring-dashboard}
+## 实例监视仪表板 {#instance-monitoring-dashboard}
 
-实例监控仪表板可以通过范围 **[!UICONTROL Monitoring]** 访问。
+实例监视仪表板可以通过宇宙进 **[!UICONTROL Monitoring]** 行访问。
 
 ![](assets/monitoring_technical_workflows1.png)
 
-在“System Indicators（系统指示器）”和核心文件下，检查是否没有指示器以红色突出显示。 如果情况确实如此，而有些情况确实如此，您应该：
+在“System Indicators（系统指示器）”和核心文件下，检查是否没有以红色突出显示任何指示器。 如果情况确实如此，而有些情况确实如此，您应：
 
-* 检查所需的进程是否始终在运行，
-* 检查所有过程都不是太老，
-* 检查不同进程的日志文件中不包含警告和重复错误。
+* 检查必要的进程是否始终运行，
+* 检查流程是否都过旧，
+* 检查不同进程的日志文件中是否不包含警告和重复错误。
 
 ## 技术工作流 {#technical-workflows}
 
-技术工作流可从 **[!UICONTROL Administration]** > **[!UICONTROL Production]** >获取 **[!UICONTROL Technical workflows]**。
+技术工作流可从 **[!UICONTROL Administration]** > **[!UICONTROL Production]** >获 **[!UICONTROL Technical workflows]**&#x200B;得。
 
 根据技术工作流程，请按照以下详细步骤确保一切正常工作。
 
-要更好地了解每个技术工作流应该做什么，请参阅此 [部分](../../workflow/using/about-technical-workflows.md)。
+要更好地了解每个技术工作流程应执行的操作，请参阅此 [部分](../../workflow/using/about-technical-workflows.md)。
 
 对于 **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. 检查工作 **[!UICONTROL Database Cleanup]** 流是否每天成功运行并完成。 For more on this, refer to this [page](../../workflow/using/delivery.md).
-1. 查看日志以验证已用时间是否随时间相对恒定，并且不会干扰其他工作流。
-1. 有关详细信息，请检查此 [页面](../../production/using/database-cleanup-workflow.md)。
+1. 检查工作流 **[!UICONTROL Database Cleanup]** 是否每天运行并成功完成。 For more on this, refer to this [page](../../workflow/using/delivery.md).
+1. 查看日志，验证已用时间是否随时间相对恒定，并且不会干扰其他工作流。
+1. 有关详细信息，请检查 [此页](../../production/using/database-cleanup-workflow.md)。
 
 对于 **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
-检查跟踪工作流是否按计划运行（默认为每小时），以及日记帐是否不突出显示经常出现的错误。 For more on this, refer to this [section](../../workflow/using/delivery.md).
+检查跟踪工作流是否按计划运行（默认为每小时），以及日志是否不会突出显示重复错误。 For more on this, refer to this [section](../../workflow/using/delivery.md).
 
 对于 **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. 检查工作 **[!UICONTROL Deliverability update]** 流是否每天成功运行并完成。 For more on this, refer to this [page](../../workflow/using/delivery.md).
-1. 在日志中验证规则是否定期更新。
+1. 检查工作流 **[!UICONTROL Deliverability update]** 是否每天运行并成功完成。 For more on this, refer to this [page](../../workflow/using/delivery.md).
+1. 在日志中验证规则是否正在定期更新。
 
 对于 **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. 查看位于该文件夹下的所有工作 **[!UICONTROL Campaign process]** 流。 For more on this, refer to this [page](../../workflow/using/campaign.md).
-1. 检查工作流是否按计划运行，以及日记帐是否不突出显示重复的错误。
+1. 查看文件夹下的所有 **[!UICONTROL Campaign process]** 工作流。 For more on this, refer to this [page](../../workflow/using/campaign.md).
+1. 检查工作流是否按计划运行，以及日志是否突出显示重复的错误。
 
-## 工作流监督 {#workflow-supervision}
+## 工作流监控 {#workflow-supervision}
 
-该 **[!UICONTROL Workflow supervisors]** 组应包含需要及时告知故障和可以及时采取行动的运营商。
+该 **[!UICONTROL Workflow supervisors]** 组应包含需要通知故障和可以及时采取行动的操作员。
 
 ![](assets/monitoring_technical_workflows3.png)
 
-如果出现问题，应生成警报并将其发送到正确的组。
+出现问题时，应生成警报并将其发送到正确的组。
 
 确保每个操作员都有有效的电子邮件地址。
 
-为了保持平台正常工作而应运行的任何工作流（如每日数据导入）都应声明为“生产”（复选框）并以粗体显示。
+为了保持平台正常工作，应运行的任何工作流（如每日数据导入）都应声明为“生产”（复选框）并以粗体显示。
 
 ## 工作流维护列表 {#workflow-maintenance-list}
 
@@ -84,22 +87,22 @@ source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
 
 * 工作流的名称和位置。
 * 目的。
-* 计划和依赖关系。
-* 负责监控的运营商。
+* 计划和相关性。
+* 负责监控的操作员。
 * 关于在出错时要做什么的说明。
 
 ![](assets/monitoring_technical_workflows4.png)
 
 ## 监控的规划和自动化 {#planning-and-automation-of-monitoring}
 
-规划工作流监控提高了其效率。 某些任务需要每天完成，而其他任务可以每周或每月完成。
+规划工作流监控提高了其效率。 某些任务需要每天进行，而其他任务则可以每周或每月进行。
 
-在循环命名的文件夹中设置工作流，并按执行计划排序，从而提高监视效率。
+在按循环命名的文件夹中设置工作流，并按执行计划排序，从而提高监视效率。
 
 自动监控减少了资源开销，并确保任务以适当的频率进行调度。
 
-您可以构建一个监视工作流，以在某些任务失败或关键表过大时发送电子邮件。
+您可以构建一个监视工作流，在某些任务失败或关键表过大时发送电子邮件。
 
-您可以创建一个视图，以便监控跨功能区域或系统范围的所有工作流。
+您可以创建视图，以便监视整个功能区域或系统范围内的所有工作流。
 
-您还可以使用Adobe Campaign作业或报告功能按需构建文档，该文档始终是最新的。
+您还可以使用Adobe Campaign作业或报表功能按需构建文档，文档始终是最新的。
