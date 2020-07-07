@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 229df9ee7da5ac9c773a7af82aabceb755299cc6
+source-git-commit: 306c7bf0a94684d27c5f95035f3d3e77da8c7097
 workflow-type: tm+mt
-source-wordcount: '6767'
+source-wordcount: '6795'
 ht-degree: 8%
 
 ---
@@ -27,13 +27,19 @@ ht-degree: 8%
 
 您还可以查阅Adobe Campaign经 [典发行说明](../../rn/using/latest-release.md) ，以获取更多更新。
 
+## 2020 年 7 月 {#july-2020}
+
+新增了一节，其中载有与Campaign Classic监测相关的准则。 [阅读更多](../../production/using/monitoring-guidelines.md)
+
+“隐私和同意”部分已得到增强，其中包含更详细的信息和有用的链接。 [阅读更多](../../platform/using/privacy-and-recommendations.md)。
+
 ## 2020年6月 {#june-2020}
 
 已更新删除隔离地址部分。 这包括明确哪些情况下地址会自动从隔离列表中删除。 [阅读更多](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 在如何使用控制面板和活动工作流 [加密](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)[和解](../../workflow/using/importing-data.md#use-case-gpg-decrypt) 密数据方面添加了用例。
 
-“白名单”和“黑名单”术语已从Adobe Campaign文档中删除。 这些产品UI、选项名称和内部代码中可能仍然存在这些术语的某些出现，但在即将发布的活动版本中，这些术语将替换为“blocklist”和“allowlist”。
+“白名单”和“黑名单”术语已从Adobe Campaign文档中删除。 这些术语的某些出现可能仍存在于产品UI、选项名称和内部代码中，但将在即将发布的活动版本中替换为“阻止列表”和“允许列表”。
 
 Experience Cloud触发器和AdobeCampaign Classic集成页面已移 [到此处](../../integrations/using/about-triggers.md)。
 
@@ -68,7 +74,6 @@ Azure突触联合数据访问连接器- [阅读更多](../../platform/using/spec
 Spam Assassin安装部分已更新为新的安装文件名。 [了解更多](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
 
 有关复制环境的部分已更新。 [了解更多](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
-
 
 ## 2020年5月 {#may-2020}
 
@@ -260,7 +265,7 @@ GDPR入门指南已得到改进和丰富。 它现在是包括GDPR和CCPA在内�
 
 ## 2019 年 9 月 {#september-2019}
 
-添加了新页面，以提供维护Campaign Classic的一般准则。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)
+添加了新页面，以提供维护Campaign Classic的一般准则。 [阅读更多](../../production/using/monitoring-guidelines.md)
 
 与工作流监测有关的信息已集中到新的专设部分。 [阅读更多](../../workflow/using/monitoring-workflow-execution.md)。
 
