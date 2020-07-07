@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9188a68ca2ffcd9cf9e82b475aa2a0dd5807561b
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 0%
@@ -54,7 +54,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. 由于此投放的收件人尚未确认其批准，因此他们仍在数据库块列表中。 要让投放接收此通信，您需要根据此模板授权目标到块列表中的收件人。
+1. 由于此投放的收件人尚未确认其批准，因此他们仍在数据库阻止列表中。 要让投放接收此通信，您需要根据此模板授权目标收件人，使其能够访问阻止列表。
 
    为此，请单击选 **[!UICONTROL Exclusions]** 项卡。
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >此选项只能在此类型的上下文中禁用。
 
@@ -112,7 +112,7 @@ Web表单工作流将包括以下活动:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   第一个 **[!UICONTROL Script]** 活动将向块列表添加收件人，直到他们确认其订阅到新闻稿。 其内容必须如下：
+   第一个 **[!UICONTROL Script]** 活动将向阻止列表添加收件人，直到他们确认其对新闻稿的订阅。 其内容必须如下：
 
    ```
    ctx.recipient.@blockList=1
@@ -175,7 +175,7 @@ Web表单工作流将包括以下活动:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   用户将添加到文件夹中的Adobe Campaign **[!UICONTROL Temp]** 用户档案库，并将其添加到块列表，直到用电子邮件确认其订阅。
+   用户将添加到文件夹中的Adobe Campaign **[!UICONTROL Temp]** 用户档案库，并将其添加到阻止列表，直到用电子邮件确认其订阅。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -189,7 +189,7 @@ Web表单工作流将包括以下活动:
 
    在Adobe Campaign中，用户用户档案会更新：
 
-   * 它们不再在阻止列表上，
+   * 他们不再在阻止列表上，
    * 他们订阅了信息服务。
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
