@@ -1,7 +1,7 @@
 ---
-title: Adobe Analytics Data Connector
-seo-title: Adobe Analytics Data Connector
-description: Adobe Analytics Data Connector
+title: AdobeAnalytics数据连接器
+seo-title: AdobeAnalytics数据连接器
+description: AdobeAnalytics数据连接器
 seo-description: null
 page-status-flag: never-activated
 uuid: 5a1de443-04de-49a8-9057-5d8381e48630
@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 0%
@@ -23,19 +23,19 @@ ht-degree: 0%
 ---
 
 
-# Adobe Analytics Data Connector{#adobe-analytics-data-connector}
+# AdobeAnalytics数据连接器{#adobe-analytics-data-connector}
 
 ## 关于数据连接器集成 {#about-data-connector-integration}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->Adobe Analytics Data Connector与Transactional Messaging(Message Center)不兼容。
+>AdobeAnalytics数据连接器与事务消息（消息中心）不兼容。
 
-Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Analytics通过Web Analytics **连接器包进行** 交互。 它以区段形式将Adobe Campaign转发给活动，其中涉及电子邮件后的用户行为。 相反，它通过Adobe Campaign将电子邮件活动的指标和属性发送到Adobe Analytics - Data connector。
+Data Connector（以前称为Adobe Genesis）允许Adobe Campaign和Adobe Deasion通过Web Deasis连接 **器包进行交互** 。 它以区段形式将Adobe Campaign转发给活动，其中涉及电子邮件后的用户行为。 相反，它通过Adobe Campaign将电子邮件活动的指标和属性发送到Adobe Dibos-Data Connector。
 
-Adobe Campaign使用数据连接器，可以衡量Internet受众（Web分析）。 借助这些集成，Adobe Campaign可以恢复营销活动后一个或多个站点的访客行为数据，并(分析后)与视图一起运行再营销活动以将其转换为购买者。 相反，Web分析工具使Adobe Campaign能够将指标和活动属性转发到其平台。
+Adobe Campaign使用数据连接器，可以测量Internet受众(WebAnalytics)。 借助这些集成，Adobe Campaign可以恢复营销活动后一个或多个站点的访客行为数据，并(分析后)与视图一起运行再营销活动以将其转换为购买者。 相反，Web分析工具使Adobe Campaign能够将指标和活动属性转发到其平台。
 
-有关Adobe Analytics与Adobe Campaign集成的实施的更多信息，请参阅本 [文档](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html)。
+有关实施AdobeAnalytics与Adobe Campaign集成的更多信息，请参阅本 [文档](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html)。
 
 每个工具的操作字段如下所示：
 
@@ -54,25 +54,25 @@ Adobe Campaign使用数据连接器，可以衡量Internet受众（Web分析）�
 
 要设置Adobe Campaign连接器，必须连接到数据实例并执行以下操作：
 
-* [第1步： 在Analytics中配置集成](#step-1--configure-integration-in-analytics)
+* [第1步： 在Analytics配置集成](#step-1--configure-integration-in-analytics)
 * [第2步： 在活动中创建外部帐户](#step-2--create-the-external-account-in-campaign)
-* [第3步： 同步Adobe Campaign和Adobe Analytics](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
+* [第3步： 同步Adobe Campaign和AdobeAnalytics](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
 
-### 第1步： 在Analytics中配置集成 {#step-1--configure-integration-in-analytics}
+### 第1步： 在Analytics配置集成 {#step-1--configure-integration-in-analytics}
 
 以下步骤使用向导详细说明数据连接器的配置。
 
-1. 使用Adobe ID或Enterprise ID登录到Adobe Experience Cloud。
+1. 使用Adobe ID或Enterprise ID登录Adobe Experience Cloud。
 
    ![](assets/adobe_genesis_install_001.png)
 
-1. 从Experience Cloud解决方案列表，选择 **[!UICONTROL Analytics]**。
+1. 从Experience Cloud解决方案列表中，选择 **[!UICONTROL Analytics]**。
 
    ![](assets/adobe_genesis_install_013.png)
 
 1. 从选项卡 **[!UICONTROL Admin]** 中，选择 **[!UICONTROL Data Connectors]**。
 
-   您需要具有以下分析工具权限才能访问 **[!UICONTROL Data Connectors]** 菜单。 For more on this, refer to this [page](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
+   您需要具有以下Analytics工具权限才能访问 **[!UICONTROL Data Connectors]** 菜单。 For more on this, refer to this [page](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
    * 集成（创建）
    * 集成（更新）
    * 集成（删除）
@@ -145,7 +145,7 @@ Adobe Campaign使用数据连接器，可以衡量Internet受众（Web分析）�
 
    ![](assets/webanalytics_tracking_003.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >此配置模式为专家用户保留： 此公式中的任何错误都可能导致电子邮件投放停止。
 
@@ -158,7 +158,7 @@ Adobe Campaign使用数据连接器，可以衡量Internet受众（Web分析）�
 >
 >如果您使用多个受众测量工具，则可 **[!UICONTROL Other]** 以在创 **[!UICONTROL Partners]** 建外部帐户时在下拉列表中进行选择。 您只能在外部帐户属性中引用一个投放: 因此，您需要通过添加Adobe和所有其他使用的测量工具所需的参数来调整跟踪URL的公式。
 
-### 第3步： 同步Adobe Campaign和Adobe Analytics {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
+### 第3步： 同步Adobe Campaign和AdobeAnalytics {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
 
 创建外部帐户后，您需要同步这两个应用程序。
 
@@ -179,13 +179,13 @@ Adobe Campaign使用数据连接器，可以衡量Internet受众（Web分析）�
    ![](assets/webanalytics_ext_account_setting_003.png)
 
 1. 按照“数据连接器”向导的步骤操作，然后返回Adobe Campaign外部帐户。
-1. 单 **[!UICONTROL Next]** 击以在Adobe Campaign和Adobe Analytics —— 数据连接器之间进行数据交换。
+1. 单 **[!UICONTROL Next]** 击以在Adobe Campaign与Adobe Deta Connector之间进行数据交换。
 
    同步完成后，将显示段列表。
 
    ![](assets/webanalytics_ext_account_setting_004.png)
 
-当Adobe Campaign与Adobe Analytics —— 数据连接器之间的数据同步有效时，Adobe Campaign会恢复在数据连接器向导中定义的三个默认段，并可在Adobe Campaign外部帐户的选 **[!UICONTROL Segments]** 项卡中访问它们。
+当Adobe Campaign与AdobeAnalytics之间的数据同步——数据连接器有效时，Adobe Campaign会恢复在数据连接器向导中定义的三个默认段，并可在Adobe Campaign外部帐户的选 **[!UICONTROL Segments]** 项卡中访问它们。
 
 ![](assets/webanalytics_segments.png)
 
@@ -195,7 +195,7 @@ Adobe Campaign使用数据连接器，可以衡量Internet受众（Web分析）�
 
 ### 技术工作流Web分析流程 {#technical-workflows-of-web-analytics-processes}
 
-Adobe Campaign与Adobe Analytics之间的数据交换——数据连接器由四个技术工作流处理，它们作为后台任务运行。
+Adobe Campaign与AdobeAnalytics之间的数据交换——数据连接器由四个技术工作流处理，它们作为后台任务运行。
 
 它们位于Adobe Campaign树中的文件夹 **[!UICONTROL Administration > Production > Technical workflows > Web analytics process]** 下。
 
@@ -204,9 +204,9 @@ Adobe Campaign与Adobe Analytics之间的数据交换——数据连接器由四
 * **[!UICONTROL Recovering of web events]**: 此工作流每小时会下载一次有关给定站点上用户行为的细分，将其包括在Adobe Campaign库中，并开始再营销工作流。
 * **[!UICONTROL Event purge]**: 此工作流允许您根据字段中配置的期间从事件库删除所有 **[!UICONTROL Lifespan]** 。 有关此方面的详细信息，请参 [阅步骤2: 以活动创建外部帐户](#step-2--create-the-external-account-in-campaign)。
 * **[!UICONTROL Identification of converted contacts]**: 再营销访客后进行购买的活动的目录。 此工作流收集的数据可在报 **[!UICONTROL Re-marketing efficiency]** 告中访问，请参 [阅此页](#creating-a-re-marketing-campaign)。
-* **[!UICONTROL Sending of indicators and campaign attributes]**: 允许您使用Adobe Analytics - Data connector通过Adobe Campaign将电子邮件活动指示符发送到Adobe Experience Cloud。 此工作流程每天凌晨4点触发，可能需要24小时才能将数据发送到Analytics。
+* **[!UICONTROL Sending of indicators and campaign attributes]**: 允许您使用Adobe Dita Connector通过Adobe Campaign将电子邮件活动指示符发送到Adobe Experience Cloud。 此工作流程每天凌晨4点触发，可能需要24小时才能将数据发送到Analytics。
 
-   请注意，此工作流不应重新启动，否则将重新发送所有可能歪斜Analytics结果的先前数据。
+   请注意，此工作流不应重新启动，否则将重新发送所有以前的数据，这可能会歪斜Analytics结果。
 
    所涉指标包括：
 
@@ -250,7 +250,7 @@ Adobe Campaign与Adobe Analytics之间的数据交换——数据连接器由四
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
-1. 您现在可以发送投放并在Adobe Analytics中访问报告。
+1. 您现在可以发送投放并访问AdobeAnalytics的报告。
 
 ## 创建再营销活动 {#creating-a-re-marketing-campaign}
 
