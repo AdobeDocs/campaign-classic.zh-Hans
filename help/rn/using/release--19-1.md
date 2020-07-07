@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
+source-git-commit: 8c352c850777852d14ccf3002c20f651b46f9047
 workflow-type: tm+mt
-source-wordcount: '2848'
+source-wordcount: '2917'
 ht-degree: 1%
 
 ---
@@ -77,11 +77,27 @@ _2019年8月13日_
 
 ## 版本19.1.4 —— 内部版本9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **2020年6月22日**: 新版本(9032@800be2e)，包含以下修复：
+![](assets/do-not-localize/green_2.png) **金标10版**
+
+_2020年7月7日_
+
+此新版本(9032@efd8a94)包含以下修复：
+
+* 修复了跟踪链接无法工作的问题。 (NEO-26411)
+
+>[!CAUTION]
+>
+>我们建议您使用此版本中提供的客户端控制台进行升级。 Refer to this [page](../../installation/using/installing-the-client-console.md)
+
+![](assets/do-not-localize/orange_2.png) **Gold Standard 9版**
+
+_2020年6月22日_
+
+此新版本(9032@800be2e)包含以下修复：
 
 * iOS HTTP2连接器已得到改进（第三方更新和错误管理）。 (NEO-25904、NEO-25903、NEO-25799)
 
-以下修复与跟踪链接安全机制相关：
+以下修复与跟踪链接安全机制相关(请参阅安全 [和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)):
 
 * 修复了导致跟踪“通知单击”无法正常工作的问题（iOS和Android推送通知）。 (NEO-25965)
 * 修复了在使用某些旧版Outlook时无法打开／单击跟踪URL的问题。  (NEO-25688)
@@ -89,7 +105,11 @@ _2019年8月13日_
 * 修复了反网络钓鱼服务的问题。 (NEO-25283)
 * 修复了使用特定自定义跟踪公式时的跟踪问题。 (NEO-25277)
 
-![](assets/do-not-localize/orange_2.png) **2020年4月29日**: 新版本(9032@3a9dc9c)，包含以下修复：
+![](assets/do-not-localize/orange_2.png) **Gold Standard 8版**
+
+_2020年4月29日_
+
+此新版本(9032@3a9dc9c)包含以下修复：
 
 * 改进了跟踪电子邮件链接的安全性。 默认情况下，所有客户都启用此功能。 另外还提供了增强的安全功能，可通过联系客户服务中心来启用此功能。 有关非托管客户启用此功能的功能和步骤的更多详细信息，请参阅安 [全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
 
@@ -110,30 +130,54 @@ _2019年8月13日_
 * 修复了导致清除工作流崩溃的回归。
 * 修复了清除工作流日志中的次要回归。
 
-![](assets/do-not-localize/orange_2.png) **2020年3月5日**: new build(9032@19f73c5)，其中包含以下修复：
+![](assets/do-not-localize/orange_2.png) **金标6版**
+
+_2019年3月9日_
+
+此新版本(9032@19f73c5)包含以下修复：
 
 * 修复了外部帐户使用FTP over SSL时的问题。 (NEO-20498)
 
-![](assets/do-not-localize/orange_2.png) **2019年12月17日**: new build(9032@d6b8062)，其中包含以下修复：
+![](assets/do-not-localize/orange_2.png) **Gold Standard 5版**
+
+_2019年12月17日_
+
+此新版本(9032@d6b8062)包含以下修复：
 
 * 修复了以下通信渠道的跟踪问题： 移动(SMS、MMS)、推送(iOS、Android)和社交网络(Facebook、Twitter)。 (NEO-19595)
 
-![](assets/do-not-localize/orange_2.png) **2019年12月11日**: new build(9032@bc4a935)，其中包含以下修复：
+![](assets/do-not-localize/orange_2.png) **Gold Standard 4版**
+
+_2019年12月11日_
+
+此新版本(9032@bc4a935)包含以下修复：
 
 * 修复了使用MSSQL数据库发送消息时的性能问题。 (NEO-17558)
 
-![](assets/do-not-localize/orange_2.png) **2019年11月20日**: 新版本(9032@3468c7b)，包含以下修复：
+![](assets/do-not-localize/orange_2.png) **Gold Standard 3版本**
+
+_2019年11月20日_
+
+此新版本(9032@3468c7b)包含以下修复：
 
 * 修复了通过IMS身份验证的登录问题。 (NEO-17312)
 * 修复了在多个投放上显示累积报告时的问题。 (NEO-18165)
 * 修复了可能阻止或导致Web服务器崩溃的问题。
 
-![](assets/do-not-localize/orange_2.png) **2019年9月19日**: 新版本(9032@cee805c)，包含以下修复：
+![](assets/do-not-localize/orange_2.png) **Gold Standard 2版**
+
+_2019年9月19日_
+
+此新版本(9032@cee805c)包含以下修复：
 
 * 修复了在使用Salesforce的CRM连接器时的问题。 (NEO-17712)
 * 修复了在发送事务性消息时可能导致性能问题的索引问题。
 
-![](assets/do-not-localize/orange_2.png) **2019年8月13日**: 初始19.1.4版本，包括以下修复：
+![](assets/do-not-localize/orange_2.png) **版本19.1.4 —— 内部版本9032**
+
+_2019年8月13日_
+
+初始19.1.4版本，包括以下修复：
 
 * 修复了调度程序活动在向导配置过程中生成不需要的错误消息的问题。 正在还原NEO-11662的更新。 (NEO-17097)
 * 修复了由NEO-12727引起的回归，该回归可能导致在执行两次测试工作流时停止活动。 (NEO-16835)
@@ -173,7 +217,7 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>要提高管理员用户的工作效率，请通过监视存储来管理SFTP服务器的设置，添加IP地址以允许列表，并为每个实例安装SSH密钥。 请注意，控制面板仅适用于今天起托管在AWS上的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天通过Experience Cloud登录</a>)。</p> <p>有关详细信息，请参 <a href="https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html">阅详细文档</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">和操作方法视频</a>。 </p><p>注意： 访问控制面板不需要升级到最新的活动版本。</p> </td> 
+   <td> <p>要提高管理员用户的工作效率，请通过监视存储、向允许列表添加IP地址以及为每个实例安装SSH密钥来管理SFTP服务器的设置。 请注意，控制面板仅适用于今天起托管在AWS上的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天通过Experience Cloud登录</a>)。</p> <p>有关详细信息，请参 <a href="https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html">阅详细文档</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">和操作方法视频</a>。 </p><p>注意： 访问控制面板不需要升级到最新的活动版本。</p> </td> 
   </tr> 
     <tr> 
    <td> 审核跟踪<br /> </td> 
