@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8089eb39e7326408f94b5fd6acacd8950c0e6021
+source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2460'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 数据包支持以 XML 格式文件的形式显示 Adobe Campaign 数据库的实体。数据包中包含的每个实体由其全部数据表示。
 
-The principle of **data packages** is to export a data configuration and integrate it into another Adobe Campaign system. 有关如何维护一组一致数据包的详细信息，请参阅此技 [术说明](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/Technotes/AdobeCampaign_How_to_maintain_a_consistent_set_of_data_packages.pdf)。
+The principle of **data packages** is to export a data configuration and integrate it into another Adobe Campaign system. 了解如何在本节中保持一组一致的 [数据包](#data-package-best-practices)。
 
 ### 包类型 {#types-of-packages}
 
@@ -343,15 +343,11 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 本节介绍如何在项目的整个生命周期中以一致的方式组织数据包。
 
-<!--Adobe Campaign allows you to export or import the platform configuration through a package system.-->
-
 包可以包含不同类型的配置和元素，无论是否已过滤。 如果缺少某些元素或未按正确的顺序导入元素／包，平台配置可能会中断。
 
 此外，由于同一平台上有多人工作，具有许多不同的功能，因此包装规范文件夹会很快变得复杂。
 
 虽然这并非强制性要求，但本节优惠了一个解决方案，帮助在大型项目的Adobe Campaign中组织和使用包。
-
-<!--This solution has been used with a project involving more than 10 consultants.-->
 
 主要限制如下：
 * 整理包并跟踪更改内容及更改时间
@@ -400,7 +396,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 **更新**
 
-配置后，功能可导出到其他环境。 例如，可以将包从开发环境导出到测试环境。 在本试验中发现了缺陷。 首先，它需要在开发环境上修复。 然后，应将该修补程序应用到测试平台。
+配置后，功能可导出到其他环境。 例如，可以将包从开发环境导出到测试环境。 在本试验中，发现了缺陷。 首先，它需要在开发环境上修复。 然后，应将该修补程序应用到测试平台。
 
 第一个解决方案是再次导出整个功能。 但是，为了避免任何风险（更新不需要的元素），更安全的方法是只包含修正的包。
 
