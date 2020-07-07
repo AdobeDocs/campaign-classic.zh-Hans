@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2001'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 此外，实例的管理员可以使用审 **核跟踪** ，检查活动和对工作流所做的最后修改，即工作流的状态。 For more on this, refer to the [dedicated section](../../production/using/audit-trail.md).
 
-本页介绍了监视不同活动过程的其 [他方法](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)。
+本页介绍了监视不同活动过程的其 [他方法](../../production/using/monitoring-guidelines.md)。
 
 ## 显示进度 {#displaying-progress}
 
