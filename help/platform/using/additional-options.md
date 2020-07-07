@@ -15,13 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
+source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 0%
 
 ---
 
 
 # 其他选项 {#additional-options}
-
 
 <!--
 
@@ -73,9 +75,9 @@ Thus, in the previous example, the cleanup workflow of the remote instance will 
 
 -->
 
-## 直接创建临时架构 {#directly-creating-temporary-schemas}
+## 直接创建临时模式 {#directly-creating-temporary-schemas}
 
-如果要管理对FDA外部数据库的多次访问，则可使用新选项在配置外部帐户时直接创建工作架构。
+如果要管理对联合数据访问外部模式库的多次访问，可使用新选项在配置外部帐户时直接创建工作数据。
 
 >[!NOTE]
 >
@@ -85,12 +87,35 @@ Thus, in the previous example, the cleanup workflow of the remote instance will 
 
 ## 利用外部数据优化电子邮件个性化 {#optimizing-email-personalization-with-external-data}
 
-从内部版本8740开始， **[!UICONTROL Prepare the personalization data with a workflow]** 该选项现在在交付属 **[!UICONTROL Analysis]** 性的选项卡中可用。
+从内部版本8740开始， **[!UICONTROL Prepare the personalization data with a workflow]** 投放属性的选 **[!UICONTROL Analysis]** 项卡中现在提供此选项。
 
-在分发分析过程中，此选项会自动创建并执行一个工作流，该工作流将链接到目标的所有数据存储在临时表中，包括FDA中链接的表中的数据。
+在投放分析期间，此选项自动创建并执行一个工作流，该工作流将链接到目标的所有数据存储在临时表中，包括来自链接到联合数据访问的表的数据。
 
 通过选中此选项，您可以显着提高执行个性化的性能。
 
+## 在工作流中使用来自外部数据库的数据 {#using-data-from-an-external-database-in-a-workflow}
+
+在多个Adobe Campaign工作流活动中，您可以使用存储在外部数据库中的数据。
+
+### 对外部数据进行筛选 {#filtering-on-external-data}
+
+查询活动允许您添加外部数据并在定义的筛选器配置中使用它。
+
+For more on this, refer to the [Query](../../workflow/using/targeting-data.md#selecting-data) section.
+
+### 创建子集 {#creating-sub-sets}
+
+拆分活动允许您创建子集。 您可以使用外部数据来定义要使用的筛选条件。
+
+For more on this, refer to the [Split](../../workflow/using/split.md) section.
+
+### 加载外部数据库 {#loading-external-database}
+
+您可以在数据加载(RDBMS)中使用外部数据。 此活动显示在“数 [据加载](../../workflow/using/data-loading--rdbms-.md) ”部分。
+
+### 添加信息和链接 {#adding-information-and-links}
+
+扩充活动允许您向工作流的工作台添加其他数据，以及向外部表添加链接。 因此，它可以利用外部数据库中的数据。 此活动显示在 [扩充](../../workflow/using/enrichment.md) 部分。
 <!--
 
 ## Cloud Messaging - FDA synchronization {#cloud-messaging---fda-synchronization}
