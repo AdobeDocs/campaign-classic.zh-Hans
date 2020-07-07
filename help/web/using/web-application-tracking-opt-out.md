@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Adobe Campaign允许您通过cookie或网络信标停止跟踪退出行为跟踪
 
 Adobe Campaign提供的横幅示例必须适应您的需求。 此横幅版本显示为位于内容模型文件夹中的个性化块。 请参见[此页面](../../delivery/using/personalization-blocks.md)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >要创建自己的横幅，您必须个性化现成的横幅。
 
