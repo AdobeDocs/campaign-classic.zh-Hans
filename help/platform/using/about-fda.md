@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9d22af2a2e25cb0dd83759096139996372f60c33
+source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 1%
 
 ---
 
@@ -34,24 +37,37 @@ Adobe Campaign provides the **Federated Data Access** (FDA) option in order to p
 
 要使用此功能，您必须：
 
-1. 具有与Adobe Campaign联合数据访问模块兼容的外部数据库。 兼容性矩阵详细介绍了数据库系统和兼容版本 [的列表](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。 用户还必须在Adobe Campaign [中和在外部数据库](../../platform/using/remote-database-access-rights.md) 上拥有必要的权限。
-1. [在Adobe Campaign服务器上安装](../../platform/using/specific-configuration-database.md) ，与您的数据库相对应的驱动程序。
-1. [创建和配置外部帐户](../../platform/using/connecting-to-database.md) ，该Adobe Campaign允许您在与外部数据库之间建立连接。 有关可用外部帐户的详细信息，请参阅此 [页](../../platform/using/external-accounts.md)。
-1. [创建外部数据库的模式](../../platform/using/creating-data-schema.md) (在Adobe Campaign中)。 这允许您识别外部数据库的数据结构。
-1. 最终， [从先前创建的目标映射](../../platform/using/defining-data-mapping.md) (如果投放的收件人来自外部数据库)创建新的模式。 这提出了一些限制，特别是在个性化投放方面。
+1. 具有与Adobe Campaign联合数据访问模块兼容的外部数据库。 兼容性矩阵中详细介绍了列表库系统和兼容 [版本的](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。 用户在Adobe Campaign和 [外部](../../platform/using/remote-database-access-rights.md) ，也必须具有必要的权限。
+1. [在Adobe Campaign服务器上](../../platform/using/specific-configuration-database.md) ，安装与您的数据库对应的驱动程序。
+1. [创建并配置外部帐户](../../platform/using/connecting-to-database.md) ，它允许您在Adobe Campaign和外部数据库之间建立连接。 有关可用外部帐户的详细信息，请参阅 [本页](../../platform/using/external-accounts.md)。
+1. [以模式](../../platform/using/creating-data-schema.md) ，创建外部数据库的Adobe Campaign。 这允许您识别外部数据库的数据结构。
+1. 最终， [从先前创建的目标映射](../../platform/using/defining-data-mapping.md) (如果投放的收件人来自外部模式)创建新的。 这提出了一些限制，特别是在个性化投放方面。
 
-创建数据模式后，可以在Adobe Campaign工作流中处理数据。 如需详细信息，请参阅[此部分](../../workflow/using/accessing-an-external-database--fda-.md)。
+创建模式后，可以在Adobe Campaign工作流中处理数据。 如需详细信息，请参阅[此部分](../../workflow/using/accessing-an-external-database--fda-.md)。
+
+## 可用的外部数据库 {#external-database}
+
+您可以在与Adobe Campaign列表模块兼容的每个外部数据库的联合数据访问下找到：
+
+* 微软Azure突触Analytics。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#azure-external).
+* 雪花。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
+* Hadoop。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3).
+* 甲骨文。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
+* 内泰扎。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
+* Sybase IQ。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-sybase-iq).
+* Teradata。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
+* SAP HANA。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md).
 
 ## 最佳实践和建议 {#best-practices-and-recommendations}
 
-联合数据访问选项用于在工作流中以批处理模式处理外部数据库中的数据。 在另一个环境中使用联合数据访问，例如，对于统一操作，必须谨慎地执行(个性化、交互、实时投放等)。
+联合数据访问选项用于以工作流的批处理模式处理外部数据库中的数据。 在另一个环境中使用联合数据访问，例如，对于统一操作，必须谨慎(个性化、交互、实时投放等)。
 
-避免需要尽可能使用Adobe Campaign和外部数据库的操作。 为此，您可以：
+避免需要尽可能同时使用Adobe Campaign和外部数据库的操作。 为此，您可以：
 
-* 将Adobe Campaign数据库导出到外部数据库，并在将结果重新导入Adobe Campaign之前仅从外部数据库执行操作。
-* 从外部Adobe Campaign数据库收集数据并在本地执行操作。
+* 将Adobe Campaign库导出到外部数据库，并在将结果重新导入Adobe Campaign之前仅从外部数据库执行操作。
+* 从外部Adobe Campaign库收集数据并在本地执行操作。
 
-如果您希望使用外部数据库中的数据在投放中进行个性化，请收集要在工作流中使用的数据，以便在临时表中提供。 然后使用临时表中的数据个性化您的投放。
+如果您希望使用外部投放库的数据在中进行个性化，请收集要在工作流中使用的数据，以便在临时表中提供。 然后使用临时表中的数据个性化您的投放。
 
 ## 限制 {#limitations}
 
