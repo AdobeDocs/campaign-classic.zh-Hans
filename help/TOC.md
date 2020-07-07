@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe活动经典
 translation-type: tm+mt
-source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
+source-git-commit: c38fe4cc442768550ee90cecc6b31b78d39f3da1
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2122'
 ht-degree: 10%
 
 ---
@@ -73,12 +73,13 @@ ht-degree: 10%
    + 访问外部数据库(联合数据访问){#accessing-external-database}
       + [关于联合数据访问](platform/using/about-fda.md)
       + [按数据库类型的特定配置](platform/using/specific-configuration-database.md)
+      + [传统连接器](platform/using/legacy-connectors.md)
       + [远程数据库访问权限](platform/using/remote-database-access-rights.md)
       + [连接到数据库](platform/using/connecting-to-database.md)
       + [创建数据模式](platform/using/creating-data-schema.md)
       + [定义数据映射](platform/using/defining-data-mapping.md)
       + [其他选项](platform/using/additional-options.md)
-      + [在工作流中使用来自外部数据库的数据](platform/using/data-external-database-workflow.md)
+      + [附录](platform/using/appendices-fda.md)
    + 连接器 {#connectors}
       + [关于连接器](platform/using/about-connectors.md)
       + [CRM连接器](platform/using/crm-connectors.md)
@@ -161,7 +162,7 @@ ht-degree: 10%
       + [收件箱呈现](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [重新参与最佳实践](delivery/using/re-engagement-best-practices.md)
-      + [块列表数据库](delivery/using/block-list-databases.md)
+      + [阻止列表库](delivery/using/block-list-databases.md)
       + [故障排除](delivery/using/deliverability-faq.md)
    + 内容管理模块 {#content-management}
       + [关于内容管理](delivery/using/about-content-management.md)
@@ -623,6 +624,7 @@ ht-degree: 10%
    + 简介 {#introduction}
       + [前言](production/using/foreword.md)
       + [一般架构](production/using/general-architecture.md)
+      + [监控指南](production/using/monitoring-guidelines.md)
    + 生产流程 {#production-procedures}
       + [配置原理](production/using/configuration-principle.md)
       + [工作原理](production/using/operating-principle.md)
