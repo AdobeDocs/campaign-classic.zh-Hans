@@ -15,57 +15,162 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+source-git-commit: a3b5378c2e67b9982fa425f32e14e0b1c66e1bf3
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 74%
+source-wordcount: '1751'
+ht-degree: 4%
 
 ---
 
 
-# 隐私和建议{#privacy-and-recommendations}
+# 隐私和同意{#privacy-and-recommendations}
 
-## 有关隐私及许可 {#about-privacy-and-consent}
+## 一般性建议 {#general-recommendations}
 
-Adobe Campaign 是一款用于收集和处理超大量数据（包括个人信息）的强大工具。我们鼓励所有Adobe Campaign用户在立法（DPA、CAN-SPAM、欧洲隐私和电子通信指令、欧洲GDPR、CCPA等）范围内工作，对个人信息进行负责任且合乎道德的使用，并避免发送未经请求的电子邮件、推送通知和SMS消息（“垃圾邮件”）。 为了实现客户终生价值并提高客户忠诚度，我们坚信许可营销原则，也因此严格禁止使用 Adobe Campaign 发送未经请求的消息。
+Adobe Campaign是收集和处理大量数据（包括个人信息和敏感数据）的强大工具。 这就是为什么隐私需要谨慎管理的原因。
 
-如需详细信息，请参阅 [Adobe Experience Cloud 隐私政策](https://www.adobe.com/privacy/marketing-cloud.html)。
+* 始终以负责任和道德的方式使用个人信息。
 
-请查看[安全和隐私检查列表](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)，了解有关安全和隐私方面需要检查的核心元素。
+* 避免发送未经请求的电子邮件、推送通知和SMS消息（“垃圾邮件”）。 Adobe坚信许可营销原则能够培养客户终身价值和忠诚度，因此严格禁止在发送未经请求的消息时使用Adobe Campaign。
+
+请查看[安全和隐私检查列表](https://helpx.adobe.com/campaign/kb/acc-security.html)，了解有关安全和隐私方面需要检查的核心元素。
+
+### 隐私法规 {#privacy-regulations}
+
+要正确处理隐私和管理个人数据，请在适用于您所在地区的法规范围内开展工作。 这些规定包括：
+* [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) （欧洲一般数据保护规定）
+* [DPA](https://www.gov.uk/data-protection) （英国实施GDPR）
+* [欧洲隐私和电子通信指令](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02002L0058-20091219)
+* [CAN-SPAM Act](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business) （美国法律为商业电子邮件制定规则和要求）
+* [CCPA](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.标题(&amp;T)=1.81.5。&amp;part=4。&amp;chapter=&amp;article=) (California Consumer Privacy Act)
+* [PDPA](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/) （泰国个人数据保护法）
+* [LGPD](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf) （巴西一般数据保护法）-将于2020年8月16日起生效
+
+>[!NOTE]
+>
+>有关GDPR、CCPA、PDPA和LGPD如何应用于Adobe Campaign的更多信息，请参 [阅本页](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)。
+
+### Adobe Experience Cloud隐私 {#experience-cloud-privacy}
+
+Adobe Campaign是Adobe Experience Cloud解决方案的一部分。 隐私在活动中的处理遵循Experience Cloud的一般原则，如：
+
+* **使用Adobe Experience Cloud时收集哪些信息**
+
+   作为使用Adobe Experience Cloud解决方案的公司，您可以选择要收集哪些信息并将其发送到您的Adobe Experience Cloud帐户。 可能收集的信息类型示例包括Web浏览活动、IP地址、移动设备的位置信息、活动成功率、购买或放入购物车的物品等。
+
+   >[!NOTE]
+   >
+   >对于所有Adobe产品，活动会收集有关应用程序和网站用户的信息。 有关此方面的详细信息，请参 [阅Adobe隐私政策](https://www.adobe.com/privacy/policy.html)。
+
+* **如何使用Adobe Experience Cloud收集信息**
+
+   * Adobe Experience Cloud解决方案使用cookies及类似技术(如网络信标（也称为标签或像素）)来收集信息。 有关使用Adobe Campaign的cookie和跟踪功能的更多信息，请参 [阅此部分](#tracking-capabilities)。
+   * 您还可以在您的移动应用程序中使用Adobe Experience Cloud技术。 有关使用活动发送移动投放的更多信 [息，请参阅SMS渠道](../../delivery/using/sms-channel.md) 和移 [动应用渠道](../../delivery/using/about-mobile-app-channel.md)。
+
+* **您用户对您使用Adobe Experience Cloud的隐私权选择**
+
+   Adobe要求您提供客户隐私政策，其中描述：
+
+   * 您与Adobe Experience Cloud相关的隐私权惯例
+   * 用户如何为收集或使用与Adobe Experience Cloud相关的信息设置首选项
+   >[!NOTE]
+   >
+   >至于所有Adobe产品，活动用户可以选择不共享通过应用程序和网站收集到的有关它们的信息。 有关此方面的更多信息，请参 [阅Adobe Experience Cloud使用信息常见问题解答](https://www.adobe.com/privacy/experience-cloud-usage-info-faq.html)。
+
+有关Adobe Experience Cloud隐私的更多详细信息，请参 [阅此页](https://www.adobe.com/privacy/marketing-cloud.html)。
+
+## 个人数据和角色 {#personal-data}
+
+在管理隐私时，必须明确应当谨慎处理哪些数据以及由谁处理哪些数据。
+* **个人数据** ，是指可以直接或间接识别活人的信息。
+* **敏感个人数据** 是与个人的种族、政治视图、宗教信仰、犯罪背景、遗传信息、健康数据、性偏好、生物识别信息以及贸易合并会员资格相关的信息。
+
+主 [要法规](#privacy-regulations) ，是指管理数据的不同实体，具体如下：
+* 数 **据控制** 器是决定收集、使用和共享个人数据的手段和目的的权威。
+* 数 **据处理者** ，是指按照数据管理者的指示收集、使用或共享个人数据的任何个人或一方。
+* 数 **据主体** ，是指收集、使用或共享个人数据，并可以直接或间接地参照该个人数据识别的任何活人。
+
+因此，作为收集和共享个人数据的公司，您是数据管理者，您的客户是数据主体，Adobe Campaign在按照您的指示处理其个人数据时充当数据处理者。 请注意，您作为数据管理者有责任处理与数据主体的关系，例如管理隐私 [请求](#privacy-requests)。
+
+当将活动与其他Experience Cloud解决方案集成时，您需要支付额外的费用来保护个人数据 [，例如Adobe](../../platform/using/adobe-analytics-data-connector.md)Analytics、 [](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)Audience Manager或People核心服务 [、](../../integrations/using/synchronizing-audiences.md)[](../../platform/using/crm-connectors.md)Campaign Standard或通过CRM Connectors将受众从一个系统传输到另一个系统。
+
+## 数据采集 {#data-acquisition}
+
+Adobe Campaign使您能够收集数据，包括个人和敏感信息。 因此，您必须获得并监控收件人的同意。
+
+* 始终让收件人同意接收通信。 为此，请继续尽快遵守退出请求并通过多次选择加入流程验证同意。 有关此内容的详细信息，请 [参阅创建包含订阅选择加入的多次表单](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)。
+* 请勿导入欺诈性列表并使用种子地址来检查您的客户文件是否未被欺骗性地使用。 有关此内容的详细信息，请参 [阅关于种子地址](../../delivery/using/about-seed-addresses.md)。
+* 通过同意和权限管理，您可以跟踪收件人的偏好，并管理组织内谁可以访问哪些数据。 For more on this, see [this section](#consent).
+* 方便和管理收件人的隐私请求。 For more on this, see [this section](#privacy-requests).
 
 ## 隐私管理 {#privacy-management}
 
-Adobe Campaign优惠一套工具，帮助您遵守隐私规定（GDPR、CCPA等）。
+隐私管理是指可帮助您遵守隐私法规（GDPR、CCPA等）的所有流程和工具。 获取本页隐私管理概 [述](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html)。
 
-GDPR（一般数据保护规定）是欧洲合并(EU)隐私法，旨在协调数据保护要求并使之现代化。 GDPR 适用于所持有数据的数据主体位于欧盟的 Adobe Campaign 客户。
+Adobe Campaign为您提供了专门用于隐私管理的各种功能：
+* 同意管理、数据保留和用户角色。 请参 [阅此部分](#consent)。
+* 隐私请求（访问权和被遗忘权）。 请参 [阅此部分](#privacy-requests)。
+* 选择退出销售个人信息(CCPA-specific)。 请参 [阅此部分](https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa)。
 
-CCPA(California Consumer Privacy Act)为加利福尼亚州居民提供与其个人信息有关的新权利，并对在加利福尼亚开展业务的特定实体承担数据保护责任。
+本节介绍活动中的主要隐私功能以及相关角色 [的示例](https://helpx.adobe.com/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow)。
 
-除了同意管理、数据保留设置和权限管理之外，我们还以数据处理者的身份提供其他功能，以帮助您作为数据管理者就绪处理某些隐私请求。
 
-在 [本文中](https://helpx.adobe.com/campaign/kb/acc-privacy.html)，您将了解Adobe Campaign如何帮助您管理不同的隐私关键功能： 访问权、被遗忘权、同意权、数据保留权和用户角色。 您还会找到最佳实践，以在使用我们的解决方案时帮助您遵守隐私。
+### 同意、保留和角色 {#consent}
 
-## Cookie 和跟踪功能 {#cookies-and-tracking-capabilities}
+Adobe Campaign优惠最初包含对隐私至关重要的重要功能：
 
-借助跟踪功能，您能够使用 Adobe Campaign 跟踪投放内容的接收者在网站上的浏览痕迹。Adobe Campaign 使用会话 Cookie 和永久性 Cookie 实现上述功能。
+* **同意管理**: 通过订阅管理流程，您可以管理收件人偏好并跟踪哪些收件人已选择了哪类订阅。 有关此内容的详细信息，请参 [阅关于订阅](../../delivery/using/about-services-and-subscriptions.md)。
+* **数据保留**: 所有内置的标准日志表都具有预设的保留期，通常将其数据存储限制在6个月或更短。 可以通过工作流设置额外的保留期。 要了解更多信息，请联系Adobe顾问或技术管理员。
+* **权限管理**: Adobe Campaign允许您通过不同的预建或自定义角色管理分配给各种活动操作符的权限。 这允许您管理公司内可以访问、修改或导出不同类型数据的人员。 有关此方面的详细信息，请参 [阅关于访问管理](../../platform/using/access-management.md)。
 
-欧盟的“隐私及电子通信”指令 2009/136/CE 和欧盟一般数据保护条例 (GDPR) 规定，公司在安装任何 Cookie 之前都需要获得网站用户的同意。您必须通过授权请求（有时出现在页面上方）告知用户，您网站已配备了 Web 跟踪工具并要求用户选中复选框来授权安装 Cookie，或者在用户登陆的首页顶端添加横幅等。不要使用弹出式窗口，因为浏览器通常会拦截此类窗口。
+有关这些功能以及如何在Adobe Campaign中管理这些功能的更多信息，请参 [阅本页](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent)。
 
-在 Web 应用程序以及带有选择退出横幅的登陆页面上都可以配置用户跟踪管理功能。请参见[此页面](../../web/using/web-application-tracking-opt-out.md)。
+### 隐私请求 {#privacy-requests}
 
-Adobe Campaign 使用两种类型的 Cookie：
+Adobe Campaign提供了其他功能，帮助您作为数据管理者，为特定隐私请求做好准备：
 
-1. 会话 Cookie (nlid)：它包含发送到联系人的电子邮件的标识符 (broadlogId)，以及消息模板的标识符 (deliveryId)。联系人单击由 Adobe Campaign 发送的电子邮件中包含的 URL 后即可添加标识符，让您能够跟踪他们在网络上的行为。关闭浏览器时，将自动擦除会话 Cookie。联系人可以将浏览器配置为拒绝 Cookie。
-1. 永久性 Cookie (uuid230)：它让您在用户访问网站时，能够识别出与 Adobe Campaign 互动的用户。Adobe Campaign 可使用该 Cookie 计算在市场营销活动中的点击数并估算用户转换率。联系人在电子邮件中点击、在 Adobe Campaign 中填写窗体内容或在入站互动引擎呼叫期间，都将放置此 Cookie。用户可以将浏览器配置为删除或拒绝 Cookie。
+* 访问 **权是** ，数据主体有权从数据管理者那里获得关于是否正在处理与其有关的个人数据的确认，其地点和原因。
 
-## 数据库完整性 {#database-integrity}
+* 被 **遗忘权** （删除请求）赋予数据主体让数据管理者擦除其个人数据的权利。
 
-Adobe Campaign 拥有丰富的功能。因此，它使用了复杂的数据库结构。数据库中包含许多表、字段、链接以及索引。某些中间表未显示在界面中。该软件会自动创建、删除或修改某些链接、字段和索引。只有 Adobe Campaign 界面（图形界面、导入程序、服务器模块、Web 模块、投放服务器、添加字段、数据库扩展等）可以修改数据库的内容，同时保持数据库的完整性。
+>[!NOTE]
+>
+>这套工具可帮助您遵守GDPR、CCPA、PDPA和LGPD的隐私权。 有关这些不同法规的更多信息，请 [参阅本页](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)。
 
-**切勿使用此软件以外的任何工具修改数据库內容或结构**。此类修改极有可能损坏数据库，导致：意外修改或链接丢失、创建虚影记录或链接、严重错误消息等，或者导致 Adobe Campaign 提供的担保与技术支持合同无效或废止。
+<!--* **GDPR** (General Data Protection Regulation) is the European Union’s (EU) privacy law that harmonizes and modernizes data protection requirements. GDPR applies to Adobe Campaign customers who hold data for Data Subjects residing in the EU.
 
-在 Adobe Campaign 系统中，所有数据都存储在数据库中。能否正确使用整个 Adobe Campaign 系统取决于以下数据的可用性：用于订阅、管理和退订的网络模块，以及管理屏幕、投放队列、投放优化机制等。
+* **CCPA** (California Consumer Privacy Act) provides California residents new rights in regards to their personal information and imposes data protection responsibilities on certain entities whom conduct business in California.
 
-## Apache Tomcat {#apache-tomcat}
+* **Thailand's PDPA** (Personal Data Protection Act) is the new privacy law that harmonizes and modernizes data protection requirements for Thailand. This regulation applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.
 
-Adobe Campaign 包含由 Apache Software Foundation ([https://www.apache.org/](https://www.apache.org/)) 开发的 Apache Tomcat。
+Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug, 16 for all companies collecting or processing personal data in Brazil. This regulation also applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.-->
+
+访问 **和** 删除请 **求将显示在** 此页上 [](https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess)。 创建这些请求的实施步骤详见 [本节](https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)。 <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
+
+## 跟踪功能 {#tracking-capabilities}
+
+### Cookie {#cookies}
+
+凭借其跟踪功能，Adobe Campaign使您能够使用两种类型的cookies跟踪投放收件人的浏览：
+
+* 会 **话cookie** (nlid)。 它包含发送给联系人的电子邮件标识符(broadlogId)和邮件模板的标识符(deliveryId)。 联系人单击由 Adobe Campaign 发送的电子邮件中包含的 URL 后即可添加标识符，让您能够跟踪他们在网络上的行为。关闭浏览器时，将自动擦除会话 Cookie。联系人可以将浏览器配置为拒绝 Cookie。
+* 在Adobe **Experience Cloud解决方案** 之间共享的永久Cookie。 这使您能够识别访问网站时与Experience Cloud解决方案交互的用户。 此处提供此Cookie的说 [明](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html)。
+
+《一般数据保护规定》(GDPR)等法规规定，公司在安装任何Cookie之前必须获得网站用户的同意。
+
+* 您必须通过授权请求（例如，页面上出现的请求）通知用户您的网站已配备Web跟踪工具，该请求中带有一个复选框，用于授权使用Cookie，或在登录的首页顶部添加横幅等。
+* 弹出窗口应避免出现，因为它们经常被浏览器阻止。
+
+### 消息跟踪 {#message-tracking}
+
+Adobe Campaign允许您跟踪已发送的电子邮件和投放收件人的行为： 打开、单击链接、退订等。 有关此方面的详细信息，请参 [阅关于消息跟踪](../../delivery/using/about-message-tracking.md)。
+
+为此，请向消 [息中](../../delivery/using/how-to-configure-tracked-links.md) 添加跟踪链接 [，以便在投放仪表板的“跟踪”选项卡中衡量投放和](../../delivery/using/monitoring-a-delivery.md#tracking-logs) 收件人行为的影响。 跟踪数据在“跟踪指示器”报 [告中进行解](../../reporting/using/delivery-reports.md#tracking-indicators) 释。
+
+### Web 跟踪 {#web-tracking}
+
+Adobe Campaign还允许您监视收件人浏览网站的方式： 插入跟踪标签以收集信息并衡量Web应用程序页面上的访问量。 有关此方面的详细信息，请 [参阅跟踪Web应用程序](../../web/using/tracking-a-web-application.md)。
+
+本节介绍Web跟踪的 [配置](../../configuration/using/about-web-tracking.md)。
+
+为了进一步管理跟踪，Adobe Campaign允许您显示退出横幅，以停止跟踪退出行为跟踪的最终用户的Web行为。 有关此内容的详细信息，请 [参阅Web 应用程序跟踪退出](../../web/using/web-application-tracking-opt-out.md)。
