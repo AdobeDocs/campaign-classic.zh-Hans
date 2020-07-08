@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
+source-git-commit: d60389eb735fb50188ddc2f2e3df3788a3213446
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1128'
 ht-degree: 2%
 
 ---
@@ -132,12 +132,6 @@ ht-degree: 2%
    <td> 使用带Adobe Campaign的移动／短信渠道发送投放。 可选。<a href="../../delivery/using/sms-channel.md">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
-  <tr> 
-   <td> 电话渠道<br /> </td> 
-   <td> 使用电话投放发送Adobe Campaign。<br /> </td> 
-   <td> 所有<br /> </td> 
-   <td> 可选</td> 
-  </tr>
   <tr> 
    <td> 移动应用渠道<br /> </td> 
    <td> 使用Adobe Campaign平台，通过应用程序向iOS和Android终端发送个性化通知。 可选。<a href="../../delivery/using/about-mobile-app-channel.md">了解更多</a> <br /> </td> 
