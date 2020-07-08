@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6ce00d34ecbdfa6a13593772ffa1850768ad6e45
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1407'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-最 **后一个稳定** 构建为9032(3a9dc9c)。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+最后 **一个稳定的版本** 是金标10。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) 版本20.1.3 —— 内部版本9124 {#release-20-1-3-build-9124}
 
@@ -70,7 +70,7 @@ _2020年2月17日_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>雪花是一个完全托管的云数据仓库，可在存储和计算级别进行扩展。 有了这个新的连接器，Adobe Campaign现在可以利用雪花的强大功能执行大数据分割。 此连接器可供所有客户使用，包括由Adobe托管的客户。</p>
+   <td> <p>雪花是一种完全受管的云data warehouse，可在存储和计算级别进行扩展。 有了这个新的连接器，Adobe Campaign现在可以利用雪花的强大功能执行大数据分割。 此连接器可供所有客户使用，包括由Adobe托管的客户。</p>
     <p>有关详细信息，请参阅详 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">细文档</a> 和教 <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">程视频</a>。</p>
    </td> 
   </tr> 
@@ -198,7 +198,7 @@ _2020年2月17日_
 
 * 修复了导致Adobe Experience Cloud技 **术工作流程中的导入受众** （连续失败）的问题。 (NEO-18463)
 
-* 修复了在使用从Experience Manager导入的模板时无法发送投放的问题。 (NEO-17540)
+* 修复了在使用从投放导入的模板时无法发送Experience Manager的问题。 (NEO-17540)
 
 * 修复了升级到构建9032并阻止实例通过SSL协议连接到FTP服务器后出现的问题。 (NEO-20498)
 
