@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
+source-git-commit: a6b15dd1be6bb53b7a757d7fe1333314df9693a4
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2462'
 ht-degree: 2%
 
 ---
@@ -315,7 +315,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 包导入向导可通过Adobe Campaign客户端控制台 **[!UICONTROL Tools > Advanced > Package import...]** 的主菜单访问。
 
-您可以从以前执行的导出导入包，例如，从其他Adobe Campaign实例或标准包导入包，具体取决于许可证条款。
+您可以从先前执行的导出导入包，例如从其他Adobe Campaign实例或 [内置包导入](../../installation/using/installing-campaign-standard-packages.md)，具体取决于许可条款。
 
 ![](assets/ncs_datapackage_import.png)
 
@@ -331,13 +331,13 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ![](assets/ncs_datapackage_import_2.png)
 
-### 安装标准包 {#installing-a-standard-package}
+### 安装内置包 {#installing-a-standard-package}
 
-配置Adobe Campaign时，将安装标准包。 根据您的权限和部署模型，如果您获得了新选项或加载项，或者升级到新优惠，则可以导入新的标准包。
+标准包是内置包，在配置Adobe Campaign时安装。 根据您的权限和部署模型，如果您获得了新选项或加载项，或者升级到新优惠，则可以导入新的标准包。
 
 请参阅您的许可协议，检查可以安装哪些包。
 
-有关标准包的详细信息，请参 [阅本页](../../installation/using/installing-campaign-standard-packages.md)。
+有关内置包的详细信息，请参阅 [本页](../../installation/using/installing-campaign-standard-packages.md)。
 
 ## 数据包最佳实践 {#data-package-best-practices}
 
@@ -396,7 +396,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 **更新**
 
-配置后，功能可导出到其他环境。 例如，可以将包从开发环境导出到测试环境。 在本试验中，发现了缺陷。 首先，它需要在开发环境上修复。 然后，应将该修补程序应用到测试平台。
+配置后，功能可导出到其他环境。 例如，可以将包从开发环境导出到测试环境。 在本试验中发现了缺陷。 首先，它需要在开发环境上修复。 然后，应将该修补程序应用到测试平台。
 
 第一个解决方案是再次导出整个功能。 但是，为了避免任何风险（更新不需要的元素），更安全的方法是只包含修正的包。
 
