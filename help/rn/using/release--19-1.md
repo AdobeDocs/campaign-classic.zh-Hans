@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c352c850777852d14ccf3002c20f651b46f9047
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
 workflow-type: tm+mt
-source-wordcount: '2917'
+source-wordcount: '2934'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-最 **后一个稳定** 构建为9032(3a9dc9c)。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+最后 **一个稳定的版本** 是金标10。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) 版本19.1.6 —— 内部版本9035 {#release-19-1-6-build-9035}
 
@@ -83,7 +83,7 @@ _2020年7月7日_
 
 此新版本(9032@efd8a94)包含以下修复：
 
-* 修复了跟踪链接无法工作的问题。 (NEO-26411)
+* 修复了当中间源服务器在内部版本9032(Gold Standard 7)上和在较旧版本（9032之前）上的营销服务器上运行时，跟踪无法正常工作的问题。 (NEO-26411)
 
 >[!CAUTION]
 >
