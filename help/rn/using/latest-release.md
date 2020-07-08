@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b2cc71f8f9b7df80b1601a9fa55bfd77f9a82433
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1764'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-最 **后一个稳定** 构建为9032(3a9dc9c)。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+最后 **一个稳定的版本** 是金标10。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ![](assets/do-not-localize/cp-icon.png) **新的控制面板6月发布** ，包含活动用户档案监视、子域交付性审核和GPG密钥管理。 [了解更多](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
 
