@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb35d2ae2d40aaef3bb381675d0c36ffb100b242
+source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2450'
 ht-degree: 0%
 
 ---
@@ -86,12 +86,15 @@ Adobe Campaign允许您导入压缩或加密文件。 在数据加载（文件�
 
 在此用例中，我们将构建一个工作流，以便使用控制面板中生成的密钥导入外部系统中已加密的数据。
 
+本节还提供了一个教程视频，其中显示了如何使用GPG密钥解密 [数据](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html)。
+
 执行此用例的步骤如下：
 
 1. 使用控制面板生成密钥对（公共／私有）。 控制面板文档中提供 [了详细步骤](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)。
 
    * 公钥将与外部系统共享，外部系统将使用公钥加密要发送给活动的数据。
    * Campaign Classic将使用私钥解密传入的加密数据。
+
    ![](assets/gpg_generate.png)
 
 1. 在外部系统中，使用从控制面板下载的公钥加密要导入到Campaign Classic中的数据。
@@ -223,6 +226,7 @@ zcat nl6/var/vp/import/filename.gz
    * **[!UICONTROL Split]**: 创建过滤器，根据记录是否可以对帐，以不同方式处理记录。
    * **[!UICONTROL Deduplication]**: 在将数据插入数据库之前，从传入文件中消除重复数据。
    * **[!UICONTROL Update data]**: 使用导入的用户档案更新数据库。
+
    ![](assets/import_template_example0.png)
 
 1. 配置 **[!UICONTROL Data Loading (file)]** 活动:
@@ -244,6 +248,7 @@ zcat nl6/var/vp/import/filename.gz
 
    * 在选项 **[!UICONTROL Enrichment]** 卡中，选 **[!UICONTROL Add data]** 择并定义导入数据与收件人定位维度之间的链接。 在此示例中， **CRM ID自定** 义字段用于创建连接条件。 只要字段允许识别唯一记录，就可以使用所需字段或字段组合。
    * 在选项卡 **[!UICONTROL Reconciliation]** 中，将选项保留 **[!UICONTROL Identify the document from the working data]** 为未选中状态。
+
    ![](assets/import_template_example2.png)
 
 1. 配置活动 **[!UICONTROL Split]** 以在一个过渡和收件人中检索已协调的收件人，这些无法协调，但在第二个过渡中具有足够的数据。
@@ -284,6 +289,7 @@ zcat nl6/var/vp/import/filename.gz
 
    * 在此示例中，电子邮件字段用于查找唯一用户档案。 您可以使用您确定已填写的任何字段，并且它是唯一组合的一部分。
    * 在屏 **[!UICONTROL Deduplication method]** 幕中，选 **[!UICONTROL Advanced parameters]** 择并选中选 **[!UICONTROL Disable automatic filtering of 0 ID records]** 项，以确保主键等于0(该键应为此过渡的所有记录)的记录不被排除。
+
    ![](assets/import_template_example7.png)
 
 1. 配置先 **[!UICONTROL Update data]** 前配置活动之 **[!UICONTROL Deduplication]** 后的活动。
