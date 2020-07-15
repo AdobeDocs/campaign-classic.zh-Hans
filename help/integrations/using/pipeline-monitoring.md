@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 # 管道监控 {#pipeline-monitoring}
 
-流水线状态web服务提供关于流水线处理的状态的信息。
+状 [!DNL pipelined] 态Web服务提供有关进程状态的 [!DNL pipelined] 信息。
 
 它可以使用浏览器手动访问，也可以通过监视应用程序自动访问。
 
@@ -50,7 +50,7 @@ ht-degree: 0%
    * next offsets-flush: 等到下一批完成时。
    * processed-since-last-flush: 上一批处理的触发器数。
 * 路由
-   * 触发器： 已检索触发器列表。 在管道选项中配置。
+   * 触发器： 已检索触发器列表。 在选项中 [!DNL pipelined] 配置。
 * 统计
    * average-pointer-flush-time-ms: 一批触发器的平均处理时间。
    * average-trigger-processing-time-ms: 分析触发器数据所用的平均时间。
