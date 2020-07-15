@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9957dabca4c63d504a3d06cf527a97b79fee46d5
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 # 管道选项NmsPipeline_Config {#nmspipeline_config}
 
-一旦验证工作正常，管道可以检索事件并进行处理。 它只处理以Adobe Campaign配置的触发器，而忽略其他触发器。 触发器必须是Analytics发出的，并事先被推上管道。
+一旦身份验证工 [!DNL pipelined] 作，即可检索事件并进行处理。 它只处理以Adobe Campaign配置的触发器，而忽略其他触发器。 触发器必须是Analytics发出的，并事先被推上管道。
 也可以使用通配符配置该选项，以捕获所有触发器（无论名称如何）。
 
 触发器的配置在选项中完成，位于 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** >下 **[!UICONTROL Options]**。 选项名称为 **[!UICONTROL NmsPipeline_Config]**。 数据类型为JSON格式的“长文本”。
@@ -90,6 +90,6 @@ ht-degree: 0%
 
 * “name”是触发器ID。 通配符“*”捕获所有触发器。
 * “Consumer”是唯一标识nlserver实例的唯一字符串。 它通常可以是实例名称本身。 对于多个环境(dev/stage/prod)，请确保每个实例都具有唯一性，以便每个实例都获得消息的副本。
-* 管道还支持“别名”主题。
+* [!DNL Pipelined] 还支持“别名”主题。
 
-进行更改后重新启动管道。
+进行更改 [!DNL pipelined] 后重新启动。
