@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7d944973e10c4df166325049b947e359853a2353
+source-git-commit: fdc305ff5bf27aa5cc0a4a9e89ac8ed9d5bead57
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 2%
 
 ---
 
@@ -27,24 +27,26 @@ ht-degree: 1%
 
 Campaign Classic **[!UICONTROL Monitoring]** 主页可访问该选项卡，它是帮助您监视实例的主要入口点。
 
-它提供实例发生情况的仪表板:  其状态（内部版本、安装的包等）、系统指示符、日志、当前正在运行的工作流、上次发送投放的状态等。
+它提供实例发生情况的仪表板: 其状态（内部版本、安装的包等）、系统指示符、日志、当前正在运行的工作流、上次发送投放的状态等。
 
-详情请见 [此处](../../production/using/monitoring-processes.md)。
+详情请见[此处](../../production/using/monitoring-processes.md)。
 
 ![](assets/monitoring_tab.png)
 
 ## 监控Campaign Classic流程 {#monitoring-campaign-classic-processes}
 
-还提供了其他监视不同活动过程的方法。 有关详细信息，请参阅以下各节。
-
 <table>
-<tr><td><img src="assets/do-not-localize/instance_icon.svg" width="60px"><p><a href="#monitoring-instance">监视您的实例</a></p></td>
-<td><img src="assets/do-not-localize/workflow_icon.svg" width="60px"><p><a href="#moniroting-workflows">监视工作流</a></p></td>
-<td><img src="assets/do-not-localize/database_icon.svg" width="60px"><p><a href="#monitoring-database">监视数据库</a></p></td>
-<td><img src="assets/do-not-localize/delivery_icon.svg" width="60px"><p><a href="#monitoring-deliveries">监视投放</a></p></td></tr>
+<tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">监视您的实例</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">监视工作流</a></p></td>
+<td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">监视数据库</a></p></td>
+<td><img src="assets/do-not-localize/icon_Send.svg" width="60px"><p><a href="#monitoring-deliveries">监视投放</a></p></td></tr>
 </table>
 
+还提供了其他监视不同活动过程的方法。 它们提供多种监视实例的方法，以确保您的系统正常，并最终解决在设置工作流、发送投放等时可能出现的问题。
+
 ### 监视实例 {#monitoring-instance}
+
+<img src="assets/do-not-localize/icon_system.svg" width="60px">
 
 **自动监控工具**
 
@@ -56,13 +58,15 @@ Campaign Classic **[!UICONTROL Monitoring]** 主页可访问该选项卡，它�
 
 **控制面板**
 
-控制面板允许您管理实例的多个设置： 管理URL权限，检查您的实例详细信息，如服务器的构建版本等。 它还允许您监视连接到实例的SFTP服务器上的可用空间。 [单击此处](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html) ，了解更多信息。
+该控制面板允许您管理实例的多个设置： 管理URL权限，检查您的实例详细信息，如服务器的构建版本等。 它还允许您监视连接到实例的SFTP服务器上的可用空间。 [单击此处](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html) ，了解更多信息。
 
 >[!NOTE]
 >
->请注意，控制面板仅供管理员用户访问，并可供所有使用Adobe Managed Services的客户使用。
+>请注意，控制面板仅供管理员用户访问，并且适用于所有使用Adobe Managed Services的客户。
 
 ### 监视工作流 {#monitoring-workflows}
+
+<img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
 **工作流热图**
 
@@ -88,6 +92,8 @@ Workflow HeatMap为实例上运行的所有工作流提供了直观的表示形�
 
 ### 监视投放 {#monitoring-deliveries}
 
+<img src="assets/do-not-localize/icon_send.svg" width="60px">
+
 **SMTP报告**
 
 SMTP报告按域显示投放统计和SMTP错误。 [单击此处](../../production/using/monitoring-processes.md) ，了解更多信息。
@@ -103,6 +109,8 @@ SMTP报告按域显示投放统计和SMTP错误。 [单击此处](../../producti
 * [临时文件问题](../../production/using/temporary-files.md) -仅 *限预置托管模型*
 
 ### 监视数据库 {#monitoring-database}
+
+<img src="assets/do-not-localize/icon_database.svg" width="60px">
 
 **数据库清理工作流**
 
