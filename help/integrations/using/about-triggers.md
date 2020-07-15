@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
@@ -46,11 +46,11 @@ Pipeline是托管在Experience Cloud中的一个消息传递系统，它使 [用
 
 ### Pipeline是如何工作的？ {#how-pipeline-work}
 
-“管道化”流程始终在Adobe Campaign营销服务器上运行。 它连接到管线，检索事件并立即处理它们。
+流 [!DNL pipelined] 程始终在Adobe Campaign营销服务器上运行。 它连接到管线，检索事件并立即处理它们。
 
 ![](assets/triggers_2.png)
 
-流水线处理使用验证服务登录到Experience Cloud并发送私钥。 身份验证服务返回一个令牌。 在检索事件时，令牌用于进行身份验证。 [!DNL Triggers] 从REST web服务中使用简单的GET请求检索。 响应为JSON格式。 请求的参数包括触发器的名称和指示上次检索的消息的指针。 流水线处理会自动处理它。
+进 [!DNL pipelined] 程使用身份验证服务登录到Experience Cloud并发送私钥。 身份验证服务返回一个令牌。 在检索事件时，令牌用于进行身份验证。 [!DNL Triggers] 从REST web服务中使用简单的GET请求检索。 响应为JSON格式。 请求的参数包括触发器的名称和指示上次检索的消息的指针。 该流 [!DNL pipelined] 程会自动处理它。
 
 ## 使用Adobe Experience Cloud Triggers与Adobe Campaign经典集成
 
