@@ -15,44 +15,47 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 0%
 
 ---
 
 
 # 更新数据{#update-data}
 
-“更 **新数据**-类型”活动执行数据库中字段的成批更新。
+“更 **新**”数据类型活动执行数据库中字段的成批更新。
 
 ## 操作类型 {#operation-type}
 
 该 **[!UICONTROL Operation type]** 字段允许您选择要对数据库中的数据执行的过程：
 
-* **[!UICONTROL Insert or update]**:添加数据或更新数据（如果已添加）。
-* **[!UICONTROL Insert]**:仅添加数据。
-* **[!UICONTROL Update]**:仅更新数据。
-* **[!UICONTROL Update and merge collections]**:更新数据并选择“主”记录，然后链接到此主记录中副本的元素。 然后，可以删除重复项，而无需创建孤立的附加元素。
-* **[!UICONTROL Delete]**:删除数据。
+* **[!UICONTROL Insert or update]**: 添加数据或更新数据（如果已添加）。
+* **[!UICONTROL Insert]**: 仅添加数据。
+* **[!UICONTROL Update]**: 仅更新数据。
+* **[!UICONTROL Update and merge collections]**: 更新数据并选择主记录，然后链接链接到此主记录中重复的元素。 然后，无需创建孤立的附加元素即可删除重复。
+* **[!UICONTROL Delete]**: 删除数据。
 
 ![](assets/s_advuser_update_data_1.png)
 
-通过 **[!UICONTROL Batch size]** 该字段，您可以选择要更新的入站过渡元素的数量。 例如，如果您声明为500，则处理的前500条记录将更新。
+该 **[!UICONTROL Batch size]** 字段允许您选择要更新的入站过渡元素数。 例如，如果您声明为500，则处理的前500条记录将更新。
 
 ## 记录标识 {#record-identification}
 
-指定如何识别数据库中的记录：
+指定如何在数据库中标识记录：
 
-* 如果数据条目与现有定位维相关，请选择该 **[!UICONTROL By directly using the targeting dimension]** 选项，然后在字段中选择该 **[!UICONTROL Updated dimension]** 选项。
+* 如果数据条目与现有定位维度相关，请选 **[!UICONTROL By directly using the targeting dimension]** 择选项，然后在字段中选 **[!UICONTROL Updated dimension]** 择它。
 
-   您可以使用放大镜按钮显示选定维度 **[!UICONTROL Edit this link]** 的字段。
+   您可以使用放大镜按钮显示选定维 **[!UICONTROL Edit this link]** 的字段。
 
-* 否则，指定一个或多个链接，这些链接将启用数据库中数据的标识或直接使用对帐密钥。
+* 否则，指定一个或多个链接，这些链接将启用数据库中数据的标识或直接使用合并关键项。
 
 ![](assets/s_advuser_update_data_2.png)
 
 ## 选择要更新的字段 {#selecting-the-fields-to-be-updated}
 
-使用 **[!UICONTROL Automatically associate fields with the same name]** 此选项可让Adobe Campaign自动识别要更新的字段。
+使用选 **[!UICONTROL Automatically associate fields with the same name]** 项，以便Adobe Campaign自动标识要更新的字段。
 
 ![](assets/s_advuser_update_data_3b.png)
 
@@ -60,42 +63,42 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ![](assets/s_advuser_update_data_3.png)
 
-选择所有要更新的字段，并根据需要添加条件，具体取决于要执行的更新。 为此，请使用 **[!UICONTROL Taken into account if]** 列。 条件会逐个应用，并与列表中的顺序保持一致。 使用右侧的箭头更改更新的顺序。
+选择所有要更新的字段，并根据要执行的更新添加条件（如有必要）。 为此，请使用 **[!UICONTROL Taken into account if]** 列。 条件会一个接一个地应用，并与列表中的顺序保持一致。 使用右侧的箭头更改更新的顺序。
 
 可以多次使用同一目标字段。
 
-在某个操 **[!UICONTROL Insert or update]** 作中，您可以选择要应用的营销活动（单独应用或为每个字段应用）。 为此，请在列中选择所需的 **[!UICONTROL Operation]** 值。
+在操作 **[!UICONTROL Insert or update]** 中，您可以选择要应用的活动（单独或为每个字段应用）。 为此，请在列中选择所需 **[!UICONTROL Operation]** 值。
 
 ![](assets/s_advuser_update_data_5.png)
 
-除非在 **[!UICONTROL modifiedDate]**&#x200B;字段更新表中专门配置了字段 **[!UICONTROL modifiedBy]****[!UICONTROL createdDate]****[!UICONTROL createdBy]** 、字段和字段的管理模式，否则在数据更新期间，字段和字段会自动更新。
+除非 **[!UICONTROL modifiedDate]**&#x200B;在字 **[!UICONTROL modifiedBy]**&#x200B;段更新 **[!UICONTROL createdDate]****[!UICONTROL createdBy]** 表中专门配置了字段的管理模式，否则在数据更新期间，会自动更新这些字段和字段。
 
-只对包含至少一个差的记录执行记录更新。 如果值相同，则不执行更新。
+只对包含至少一个差异的记录执行记录更新。 如果值相同，则不执行更新。
 
-通过 **[!UICONTROL Advanced parameters]** 该链接，您可以指定其他选项来处理更新数据和管理副本。 您还可以：
+通过 **[!UICONTROL Advanced parameters]** 链接，您可以指定其他选项来处理更新数据和管理重复。 您还可以：
 
 * **[!UICONTROL Disable automatic key management]**.
 * **[!UICONTROL Disable audit]**.
 * **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**. 默认情况下，此选项会自动选中。
 * **[!UICONTROL Update all columns with matching names]**.
-* 指定使用字段中的表达式考虑源元素的 **[!UICONTROL Enabled if]** 条件。
-* 指定使用表达式考虑复制的条件。 如果选中该选 **[!UICONTROL Ignore records which concern the same target]** 项，则只考虑表达式列表中的第一个。
+* 在字段中指定使用表达式考虑源元素的 **[!UICONTROL Enabled if]** 条件。
+* 指定使用重复考虑表达式的条件。 如果选中该选 **[!UICONTROL Ignore records which concern the same target]** 项，则只考虑表达式列表中的第一个选项。
 
 **[!UICONTROL Generate an outbound transition]**
 
-创建将在执行结束时激活的出站过渡。 更新通常表示定位工作流的结束，因此此选项在默认情况下不会激活。
+创建将在执行结束时激活的出站过渡。 更新通常表示定位工作流的结束，因此默认情况下不激活该选项。
 
 **[!UICONTROL Generate an outbound transition for the rejects]**
 
-创建一个出站过渡，其中包含更新后未正确处理的记录（例如，如果有重复记录）。 更新通常标记定位工作流的结束，因此此选项在默认情况下不会激活。
+创建一个出站过渡，其中包含更新后未正确处理的记录(例如，如果有重复)。 更新通常标记定位工作流的结束，因此默认情况下不激活该选项。
 
 ## 更新和合并集合 {#updating-and-merging-collections}
 
-通过更新数据和合并集合，您可以使用来自一个或多个辅助记录的数据来更新记录中包含的数据，以便在需要时只保留一个记录。 这些更新由一组规则管理。
+通过更新数据和合并集合，您可以使用来自一个或多个辅助记录的数据来更新记录中包含的数据，以期在需要时只保留一个。 这些更新由一组规则管理。
 
 >[!NOTE]
 >
->此选项还允许您处理对工作流工作表(targetWorkflow)、提交(targetDelivery)和列表(targetList)中辅助记录的引用。 如果需要，这些链接将显示在您选择字段和集合的列表中。
+>此选项还允许您处理对工作流工作表(targetWorkflow)、投放(targetDelivery)和列表(targetList)中辅助记录的引用。 如果需要，这些链接会显示在您选择字段和集合的列表中。
 
 1. 选择操 **[!UICONTROL Update and merge collections]** 作。
 
@@ -107,27 +110,27 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 1. 选择要移到主记录的集合和要更新的字段。
 
-   输入一次识别一个或多个辅助记录时适用于这些记录的规则。 为此，可以使用表达式构建器。 For more on this, refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions). 例如，通过指定它是所有必须保存的不同记录中最近更新的值。
+   输入一次识别一个或多个辅助记录时适用于这些记录的规则。 为此，可使用表达式生成器。 For more on this, refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions). 例如，通过指定它是所有必须保留的不同记录中最近更新的值。
 
    然后输入要考虑规则的条件。
 
-   最后，指定要执行的更新类型。 例如，您可以选择在更新数据后删除辅助记录。
+   最后，指定要执行的更新类型。 例如，您可以在更新数据后选择删除辅助记录。
 
-   例如，您可以配置合并包含异构数据的集合，如收件人的订阅列表。 使用规则，您还可以从次记录订阅创建新的订阅历史记录，甚至可以将订阅列表从次记录移到主记录。
+   例如，您可以配置合并包含异构数据的集合，如收件人的列表。 使用规则，您还可以从辅助记录订阅创建新的订阅历史记录，甚至可以将订阅的列表从辅助记录移到主记录。
 
-1. 通过选择 **[!UICONTROL Advanced parameters]** >，指定要处理辅助记录的顺序 **[!UICONTROL Duplicates]**。
+1. 通过选择>，指定要处理辅助记录的顺 **[!UICONTROL Advanced parameters]** 序 **[!UICONTROL Duplicates]**。
 
    ![](assets/update_and_merge_collections3.png)
 
-如果定义的规则适用，则辅助记录的数据与主记录相关联。 根据所选的更新类型，可以删除次记录。
+辅助记录的数据与主记录相关联（如果定义的规则适用）。 根据所选的更新类型，可以删除辅助记录。
 
-## 示例：丰富后更新数据 {#example--update-data-following-an-enrichment}
+## 示例： 更新扩充 {#example--update-data-following-an-enrichment}
 
-第 [2步：将富集数据写入用例的“购买”表部分](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) ，该表部分中创建重新查看列表的详细信息提供了丰富活动后数据更新的示例。
+第 [2步： 将丰富数据写入用例的](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) “购买”表部分，该表部分详细描述创建重新列表优惠的过程，以及在扩充活动之后的数据更新的示例。
 
 ## 输入参数 {#input-parameters}
 
 * tableName
-* 架构
+* 模式
 
-每个入站事件都必须指定由这些参数定义的目标。
+每个入站事件必须指定由这些参数定义的目标。
