@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 您可以在一个工作流中调用多个子工作流。 子工作流同步执行。
 
-在以下示例中，“主”工作流使用跳转调用子工作流。 有关跳转类型图形对象的详细信息，请参 [阅此部分](../../workflow/using/jump--start-point-and-end-point-.md)。
+在以下示例中，主工作流使用跳转调用子工作流。 有关跳转类型图形对象的详细信息，请参 [阅此部分](../../workflow/using/jump--start-point-and-end-point-.md)。
 
 1. 创建一个工作流，您将该工作流用作另一个工作流中的子工作流。
 1. 在工 **[!UICONTROL Jump (end point)]** 作流开始处插入优先级为1的活动。 如果您有多个“端点”类型跳转，Adobe Campaign将使用“端点”跳转的最小数。
@@ -44,7 +44,7 @@ ht-degree: 0%
    >要正确运行子工作流，您只有一个“结束点”类型跳转（编号最小），而只有一个“开始点”类型跳转（编号最大）。
 
 1. 完成并保存此“子工作流”。
-1. 创建“主”工作流。
+1. 创建主工作流。
 1. 插入 **[!UICONTROL Sub-workflow]** 活动并打开。
 1. 从下拉列表中选择要使用 **[!UICONTROL Workflow template]** 的工作流。
 
@@ -57,13 +57,17 @@ ht-degree: 0%
 
 1. 运行工作流。
 
-运行后，作为子工作流调用的工作流仍处于状态，这 **[!UICONTROL Being edited]** 意味着：
+运行后，作为子工作流调用的工作流将保 **[!UICONTROL Being edited]** 持状态，这意味着：
 
 * 您无法右键单击过渡以显示目标。
 * 无法显示中间群体的计数。
-* 日志在“主”工作流中进行聚合，并且只标记为“子工作流”。
+* 子工作流日志显示在主工作流中。
 
-事实上，此工作流程只是一个模板。 从“主”工作流调用时，将创建基于此模板的新子工作流。
+   ![](assets/subworkflow_logs.png)
+
+>[!NOTE]
+>
+>如果子工作流中发生任何错误，则主工作流将暂停并创建子工作流的副本。
 
 ## 输入参数（可选） {#input-parameters--optional-}
 
