@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4f1f1cd9c5ebb77fbb01cadad6c587ed2fe64dcc
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1833'
 ht-degree: 1%
 
 ---
 
 
-# 按数据库类型的特定配置 {#specific-configurations-by-database-type}
+# 配置联合数据访问连接器 {#specific-configurations-by-database-type}
 
 根据您希望能够从Adobe Campaign访问的外部数据库，您需要执行特定配置。 这些配置实质上涉及安装驱动程序并声明属于环境服务器上每个RDBMS的Adobe Campaign变量。
 
@@ -59,6 +59,7 @@ ht-degree: 1%
    * **[!UICONTROL Password]**: 用户帐户密码
 
    * **[!UICONTROL Database]**: 数据库的名称
+
    ![](assets/azure_1.png)
 
 ### CentOS上的Azure突触 {#azure-centos}
@@ -258,6 +259,7 @@ ht-degree: 1%
    * **[!UICONTROL Password]**: 用户帐户密码
 
    * **[!UICONTROL Database]**: 数据库的名称
+
    ![](assets/snowflake.png)
 
 1. 单击选 **[!UICONTROL Parameters]** 项卡，然 **[!UICONTROL Deploy functions]** 后单击按钮以创建函数。
@@ -346,6 +348,7 @@ ht-degree: 1%
    * **[!UICONTROL Database]**: 如果未在DSN中指定数据库的名称。 如果在DSN中指定，则可将其留空
 
    * **[!UICONTROL Time zone]**: 服务器时区
+
    ![](assets/hadoop3.png)
 
 连接器支持以下ODBC选项：
@@ -404,11 +407,12 @@ ht-degree: 1%
    * **[!UICONTROL Password]**: 用户帐户密码
 
    * **[!UICONTROL Time zone]**: 服务器时区
+
    ![](assets/oracle_config.png)
 
 ### Linux上的Oracle {#for-linux-1}
 
-在联合数据访问下连接到Oracle外部数据库需要在Adobe Campaign服务器上进行以下其他配置。
+在联合数据访问下连接到Oracle外部数据库需要在Adobe Campaign服务器下面进行其他配置。
 
 1. 安装与您的Oracle版本对应的Oracle完整客户端。
 1. 将TNS定义添加到安装中。 为此，请在/etc/oracle **存储库的tnsnames** .ora文件中指定它们。 如果此存储库不存在，请创建它。
@@ -450,7 +454,7 @@ ht-degree: 1%
 
 ### Windows上的Oracle {#for-windows-1}
 
-在联合数据访问下连接到Oracle外部数据库需要在Adobe Campaign服务器下面进行其他配置。
+在联合数据访问下连接到Oracle外部数据库需要在Adobe Campaign服务器上进行以下其他配置。
 
 1. 安装Oracle客户端。
 
