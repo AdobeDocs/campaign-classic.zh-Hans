@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ee483a8ed8d04fec561f8d4e96b630890209793c
+source-git-commit: a33132f64f160b20c98afd08cb9d0fe4cdf62b1a
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 0%
 
 ---
 
@@ -24,15 +27,15 @@ source-git-commit: ee483a8ed8d04fec561f8d4e96b630890209793c
 
 >[!NOTE]
 >
->要能够继续操作，请确保在系统上启用了IMS。 请查阅有关 [IMS的部分](../../integrations/using/about-adobe-id.md)。
+>为了能够继续操作，请确保在您的系统上启用IMS。 请查阅有关IMS [的部分](../../integrations/using/about-adobe-id.md)。
 
-启用IMS后，您可以请求People核心服务/Audience manager与Campaign的集成的供应。 为此，请向Digital-Request@adobe.com发送一封 [电子邮件](mailto:Digital-Request@adobe.com) ，其中包含以下信息：
+启用IMS后，您可以请求与活动的People核心服务/Audience Manager集成的供应。 为此，请向Digital-Request@adobe.com发送一封 [电子邮](mailto:Digital-Request@adobe.com) 件，其中包含以下信息：
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>请求类型：</strong><br /> </td> 
-   <td> 配置AAM/People核心服务- Campaign集成 </td> 
+   <td> 配置AAM/People核心服务-活动集成 </td> 
   </tr> 
   <tr> 
    <td> <strong>组织名称：</strong><br /> </td> 
@@ -40,19 +43,19 @@ source-git-commit: ee483a8ed8d04fec561f8d4e96b630890209793c
   </tr> 
   <tr> 
    <td> <strong>IMS组织ID</strong><br /> </td> 
-   <td> 您的IMS组织ID。 <br> 您可以在Experience cloud的“管理”菜单中找到您的IMS组织ID。 首次连接到Adobe Experience cloud时也会提供该功能。 </td> 
+   <td> 您的IMS组织ID。 <br> 您可以在“管理”菜单的Experience Cloud中找到您的IMS组织ID。 首次连接到Adobe Experience Cloud时，也会提供该功能。 </td> 
   </tr> 
   <tr> 
-   <td> <strong>环境：</strong><br /> </td> 
-   <td> 示例：制作 </td> 
+   <td> <strong>环境:</strong><br /> </td> 
+   <td> 示例： 制作 </td> 
   </tr> 
   <tr> 
    <td> <strong>AAM或People Service</strong><br /> </td> 
-   <td> 示例：Adobe Audience Manager。 无论您是否拥有Audience manager许可证，请务必向供应团队提及。</td> 
+   <td> 示例： Adobe Audience Manager。 请务必向供应团队提及您是否拥有Audience Manager许可证。</td> 
   </tr> 
   <tr> 
    <td> <strong>声明的ID或访客ID</strong><br /> </td> 
-   <td> 示例：声明的ID </td> 
+   <td> 示例： 声明的ID </td> 
   </tr> 
   <tr> 
    <td> <strong>其他信息</strong><br /> </td> 
