@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
+source-git-commit: 2f0bb31f7234289f39a561fa58a23cac0390b465
 workflow-type: tm+mt
-source-wordcount: '3152'
+source-wordcount: '3151'
 ht-degree: 2%
 
 ---
@@ -25,17 +25,17 @@ ht-degree: 2%
 
 # SMS渠道{#sms-channel}
 
-Adobe Campaign lets you perform mass personalized deliveries of SMS messages. 收件人用户档案必须至少包含移动电话号码。
+Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人用户档案必须至少包含移动电话号码。
 
 >[!NOTE]
 >
->Adobe Campaign also lets you submit notifications on mobile terminals, via its **Adobe Campaign Mobile App Channel (NMAC)** option.
+>Adobe Campaign还允许您通过其Adobe Campaign移动应用程序 **渠道(NMAC)选项在移动终端上提** 交通知。
 > 
->For more on this, refer to the [About mobile app channel](../../delivery/using/about-mobile-app-channel.md) section.
+>有关此内容的详细信息，请参 [阅关于移动应用渠道](../../delivery/using/about-mobile-app-channel.md) 。
 
 以下各节提供特定于SMS渠道的信息。 有关如何创建投放的全局信息，请参[阅此部分](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
-## Setting up SMS channel {#setting-up-sms-channel}
+## 设置SMS渠道 {#setting-up-sms-channel}
 
 要发送到移动电话，您需要：
 
@@ -64,7 +64,7 @@ Adobe Campaign lets you perform mass personalized deliveries of SMS messages. �
 
    >[!CAUTION]
    >
-   > 从20.2版开始，将弃用旧版连接器，不支持。 我们建议使用连 **[!UICONTROL Extended generic SMPP]** 接器。 有关如何迁移到推荐连接器的详细信息，请参阅本 [页](https://helpx.adobe.com/campaign/kb/sms-connector.html)。
+   > 从20.2版开始，已弃用传统连接器，不支持。 我们建议使用连 **[!UICONTROL Extended generic SMPP]** 接器。 有关如何迁移到推荐连接器的详细信息，请参阅本 [页](https://helpx.adobe.com/campaign/kb/sms-connector.html)。
 
 1. 该 **[!UICONTROL Enable verbose SMPP traces in the log file]** 选项允许您将所有SMPP流量转储到日志文件中。 必须启用此选项才能对连接器进行故障诊断，并与提供者看到的流量进行比较。
 
@@ -308,7 +308,7 @@ CR: 回车
 
 ### 关于文本编码 {#about-text-encodings}
 
-发送SMS消息时，Adobe Campaign可以使用一个或多个文本编码。 每个编码都有其自己的特定字符集，并确定适合SMS消息的字符数。
+在发送SMS消息时，Adobe Campaign可以使用一个或多个文本编码。 每个编码都有其自己的特定字符集，并确定适合SMS消息的字符数。
 
 配置新的SMPP移动投放外部帐户时，您可以在选项卡 **[!UICONTROL Mapping of encodings]** 中定义 **[!UICONTROL Mobile]** : 该字 **[!UICONTROL data_coding]** 段允许Adobe Campaign向SMSC通信使用哪种编码。
 
@@ -352,7 +352,7 @@ CR: 回车
 收件人列在可通过 **[!UICONTROL Non deliverables and addresses]** > >菜单 **[!UICONTROL Administration]** 查 **[!UICONTROL Campaign Management]** 看的表 **[!UICONTROL Non deliverables Management]** 中。
 
 * 要发送相同的回复，无论使用什么短代码，请将该列 **[!UICONTROL Short code]** 留空。
-* 要发送相同的回复，无论关键字是什么，请将该 **[!UICONTROL Keyword]** 列留空。
+* 要发送相同的回复，无论关键字是什么，请将列 **[!UICONTROL Keyword]** 留空。
 * 要在不发送响应的情况下执行操作，请将该列 **[!UICONTROL Response]** 留空。 例如，这允许您从回复消息(“STOP”)的用户的隔离中删除。
 
 如果您有多个外部帐户使用具有相同提供者帐户的扩展通用SMPP连接器，则可能会出现以下问题： 在向短代码发送回复时，可能会在您的任何外部帐户连接上收到该回复。 因此，发送的自动回复不能是预期消息。
@@ -367,7 +367,7 @@ CR: 回车
 
 ### 更改投放模板 {#changing-the-delivery-template}
 
-Adobe Campaign为您提供了用于传送到移动设备的模板。 此模板在节点中 **[!UICONTROL Resources > Templates > Delivery templates]** 可用。 有关此内容的详细信息，请参阅“关 [于模板](../../delivery/using/about-templates.md) ”部分。
+Adobe Campaign为您提供了用于传送到移动设备的模板。 此模板在节点中 **[!UICONTROL Resources > Templates > Delivery templates]** 可用。 For more on this, refer to the [About templates](../../delivery/using/about-templates.md) section.
 
 要通过SMS渠道进行传送，您必须创建引用渠道连接器的模板。
 
@@ -443,7 +443,7 @@ Adobe Campaign为您提供了用于传送到移动设备的模板。 此模板�
    >
    >启动分析时，将检查消息的长度，并在溢出事件中显示警告。
 
-1. 如果您使用NetSize连接器或SMPP连接器，则可以个性化投放发送者的姓名。 有关此内容的详细信息，请参 [阅高级参数](#advanced-parameters) 部分。
+1. 如果您使用NetSize连接器或SMPP连接器，则可以个性化投放发送者的姓名。 For more on this, refer to the [Advanced parameters](#advanced-parameters) section.
 
 ## 选择目标群 {#selecting-the-target-population}
 
@@ -580,7 +580,7 @@ InSMS模式包含与传入SMS相关的信息。 可通过desc属性描述这些�
 
 1. 对于 **标记** name属 **`<shortcode>`** 性，指定将在消息发送者名称的位置显示的简短代码。
 
-   在每个 **`<reply>`** 标记中，输 **入关键字属性** ，输入文本属 **** 性，并输入要为此关键字发送的消息。
+   在每个 **`<reply>`** 标记中，输 **入关键字属性** ，并输入文本属 **性** ，其中包含您要为此关键字发送的消息。
 
    >[!NOTE]
    >
