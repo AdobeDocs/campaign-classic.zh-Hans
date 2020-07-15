@@ -15,15 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fddd0b61c71c90849a1f64776eea43c57d9debe2
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
 
 
 # 传统连接器 {#legacy-connectors}
+
+Adobe仍支持传统联合数据访问连接器。 但是，我们建议用本页中列出的更新替代内容来替换 [它们](../../platform/using/specific-configuration-database.md)。
 
 ## 配置对Hadoop 2.1的访问 {#configure-access-to-hadoop}
 
