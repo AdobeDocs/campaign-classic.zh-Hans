@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 567cae1b91efbcd04a041630eeeb446450e002f7
+source-git-commit: 2140468e52d78a91fc4128e9187d927f08e2f0ee
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 28%
+source-wordcount: '149'
+ht-degree: 29%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 28%
 * 密码管理策略更安全。
 * 使用联合 ID 帐户（外部 ID 提供商）。
 
-Adobe的身份管理系统可帮助管理员创建和管理用户对应用程序和服务的访问权限。 有关不同类型的Adobe ID的详细信息，请参 [阅本页](https://helpx.adobe.com/enterprise/using/identity.html)。
+Adobe IMS(Identity Management系统)帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的Adobe ID的详细信息，请参 [阅本页](https://helpx.adobe.com/enterprise/using/identity.html)。
 
 >[!IMPORTANT]
 >
->IMS实施严格由Adobe技术管理员负责。 IMS的实现是一个复杂的过程，要实现时间很长。
+>Adobe IMS实施严格由Adobe技术管理员负责。 与Adobe主管联系以开始实施过程。
 
 ## 相关主题
 
@@ -45,4 +45,3 @@ Adobe的身份管理系统可帮助管理员创建和管理用户对应用程序
 | [配置IMS](../../integrations/using/configuring-ims.md) | [Experience Cloud常见问题解答](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) |
 | [实施IMS](../../integrations/using/implementing-ims.md) | [访问管理](../../platform/using/access-management.md) |
 | [IMS疑难解答](../../integrations/using/ims-troubleshooting.md) | [安装活动包](../../installation/using/installing-campaign-standard-packages.md) |
-
