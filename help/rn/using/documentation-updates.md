@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 306c7bf0a94684d27c5f95035f3d3e77da8c7097
+source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
 workflow-type: tm+mt
-source-wordcount: '6795'
+source-wordcount: '6898'
 ht-degree: 8%
 
 ---
@@ -33,15 +33,23 @@ ht-degree: 8%
 
 “隐私和同意”部分已得到增强，其中包含更详细的信息和有用的链接。 [阅读更多](../../platform/using/privacy-and-recommendations.md)。
 
-## 2020年6月 {#june-2020}
+“Campaign Classic中的隐私管理”页面已更新，其中包含有关“规定”字段的信息，现在在使用允许设置自动隐私请求流程的API时，该字段可用。 [阅读更多](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+
+隐私管理概述页面已更新，以包含有关泰国个人数据保护法(PDPA)和巴西Lei Geral de Proteção de Dados(LGPD)的信息。 [阅读更多](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+
+已在子工作流日志和行为中添加信息，以防出错。 [阅读更多](../../workflow/using/sub-workflow.md)
+
+最佳实践已添加到“ **[!UICONTROL Scheduler]** 活动”部分。 [阅读更多](../../workflow/using/scheduler.md)
+
+## 2020 年 6 月 {#june-2020}
 
 已更新删除隔离地址部分。 这包括明确哪些情况下地址会自动从隔离列表中删除。 [阅读更多](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-在如何使用控制面板和活动工作流 [加密](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)[和解](../../workflow/using/importing-data.md#use-case-gpg-decrypt) 密数据方面添加了用例。
+在如何使用控制面板和活动工作流加 [密](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)[和解](../../workflow/using/importing-data.md#use-case-gpg-decrypt) 密数据方面，增加了用例。
 
-“白名单”和“黑名单”术语已从Adobe Campaign文档中删除。 这些术语的某些出现可能仍存在于产品UI、选项名称和内部代码中，但将在即将发布的活动版本中替换为“阻止列表”和“允许列表”。
+“白名单”和“黑名单”术语已从 Adobe Campaign 文档中删除。这些术语可能仍会出现于产品 UI、选项名称和内部代码中，但将在即将发布的活动版本中替换为“阻止列表”和“允许列表”。
 
-Experience Cloud触发器和AdobeCampaign Classic集成页面已移 [到此处](../../integrations/using/about-triggers.md)。
+“Experience Cloud触发器”和“Adobe Campaign经典”集成页面已移 [到此处](../../integrations/using/about-triggers.md)。
 
 ## 20.2 - 08/06/2020{#release-20-2}
 
@@ -75,7 +83,7 @@ Spam Assassin安装部分已更新为新的安装文件名。 [了解更多](../
 
 有关复制环境的部分已更新。 [了解更多](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
-## 2020年5月 {#may-2020}
+## 2020 年 5 月 {#may-2020}
 
 “监视可交付性”部分已移动和改进。 [阅读更多](../../delivery/using/monitoring-deliverability.md)
 
@@ -277,7 +285,7 @@ GDPR入门指南已得到改进和丰富。 它现在是包括GDPR和CCPA在内�
 
 **此版本中包含的新功能**
 
-控制面板——阅 [读更多](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
+控制面板- [阅读更多](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
 
 审核跟踪——阅 [读更多](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Audit_trail.html)
 
@@ -659,7 +667,7 @@ SMS渠道文档已更新，在“自动回复”部分中添加了一些说明�
 
 已添加新的内部版本升级入门。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html)。
 
-## 2017年5月{#release-doc-30-05-2017}
+## 2017 年 5 月{#release-doc-30-05-2017}
 
 提供了新的入门指南： 它介绍了一些最佳实践，可用于通过Adobe Campaign提供，从创建和定位到发送和监控。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
 
