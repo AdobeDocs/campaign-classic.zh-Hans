@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 管道使用JavaScript函数处理每条消息。 此函数是用户定义的。
 
-它在“JSConnector” **[!UICONTROL NmsPipeline_Config]** 属性下的选项中配置。 每次收到事件时都会调用此javascript。 它由流水线处理运行。
+它在“JSConnector” **[!UICONTROL NmsPipeline_Config]** 属性下的选项中配置。 每次收到事件时都会调用此javascript。 它由流程运 [!DNL pipelined] 行。
 
 示例JS文件为cus:triggers.js。
 
 ### JavaScript函数 {#function-js}
 
-管道Javascript必须开始特定的函数。
+Javascript [!DNL pipelined] 必须开始特定的函数。
 
 每个事件调用此函数一次：
 
@@ -51,7 +51,7 @@ function processPipelineMessage(xmlTrigger) {}
 <undefined/>
 ```
 
-在编辑JS后重新启动管道。
+编辑 [!DNL pipelined] JS后重新启动。
 
 ### 触发数据格式 {#trigger-format}
 
@@ -110,7 +110,7 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 事件处理顺序 {#order-events}
 
-事件按偏移顺序一次处理一个。 管道的每个线程处理不同的分区。
+事件按偏移顺序一次处理一个。 每个线程处 [!DNL pipelined] 理不同的分区。
 
 上次检索的事件的“偏移”存储在数据库中。 因此，如果进程停止，则从最后一条消息重新启动。 此模式存储在内置的xtk:pipelineOffset中。
 
@@ -122,8 +122,8 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 日志记录和错误处理 {#logging-error-handling}
 
-日志(如logInfo()))被定向到管道化日志。 将logError()等错误写入流水线日志，并导致事件被置于重试队列中。 检查管道日志。
-错误消息在流水线选项中设置的持续时间中重试多次。
+日志(如logInfo())被定向到日 [!DNL pipelined] 志。 日志中写入了logError()等 [!DNL pipelined] 错误，导致事件被置于重试队列中。 检查管道日志。
+错误消息在选项中设置的持续时间内重试 [!DNL pipelined] 多次。
 
 为了调试和监控，将完全触发数据写入触发表。 它位于XML格式的“数据”字段中。 或者，包含触发器数据的logInfo()也具有相同的用途。
 
