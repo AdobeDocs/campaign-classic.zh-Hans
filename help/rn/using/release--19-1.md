@@ -15,36 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 77bb2ee42919a1bbf9a1a9e4594505f5cf99ca68
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2118'
 ht-degree: 1%
 
 ---
 
 
 # 版本19.1{#release-19-1}
-
-[构建升级](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) |控 [制面板版本](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) |文 [档更新](../../rn/using/documentation-updates.md) |先 [前版本](../../rn/using/release--19-1.md) |已弃 [用功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>一般可用性</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>释放候选</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>不再可用</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>已弃用</strong></td> 
-  </tr> 
-   <tr> 
-   <td>提供最新的稳定版本。 在生产中验证构建。<br> </td>
-   <td>由Adobe验证的构建。 等待生产校样。<br> </td>
-   <td>可用于错误修复的更新版本。 需要更新。<br> </td>
-   <td>包含已知的回归。 必须更新。<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-最后 **一个稳定的版本** 是金标10。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) 版本19.1.6 —— 内部版本9035 {#release-19-1-6-build-9035}
 
@@ -62,7 +41,7 @@ _2019年10月3日_
 * 修复了可能导致某些邮件不被中间源服务器处理的问题。 (NEO-12395)
 * 修复了阻止完全使用SQL数据管理活动(缺少名为right的“SQL数据管理”)的问题。
 
-## ![](assets/do-not-localize/orange_2.png) 版本19.1.5 —— 内部版本9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/red_2.png) 版本19.1.5 —— 内部版本9033{#release-19-1-5-build-9033}
 
 _2019年8月13日_
 
@@ -75,117 +54,14 @@ _2019年8月13日_
 * 新增了一个身份验证选项，用于在AC连接器中通过Microsoft Dynamics支持OAuth凭据。 (NEO-11982)
 * 修复UUID（唯一通用标识符）问题会导致扩充活动失败，而配置Hive联合数据访问。
 
-## 版本19.1.4 —— 内部版本9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/green_2.png) 版本19.1.4 —— 内部版本9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **金标10版**
-
-_2020年7月7日_
-
-此新版本(9032@efd8a94)包含以下修复：
-
-* 修复了在禁用签名功能时跟踪无法工作的问题。 (NEO-26411)
-
->[!CAUTION]
+>[!NOTE]
 >
->我们建议您使用此版本中提供的客户端控制台进行升级。 Refer to this [page](../../installation/using/installing-the-client-console.md)
+>19.1.4金本位币版本列在本 [页](../../rn/using/gold-standard.md)。
 
-![](assets/do-not-localize/orange_2.png) **Gold Standard 9版**
 
-_2020年6月22日_
-
-此新版本(9032@800be2e)包含以下修复：
-
-* iOS HTTP2连接器已得到改进（第三方更新和错误管理）。 (NEO-25904、NEO-25903、NEO-25799)
-
-以下修复与跟踪链接安全机制相关(请参阅安全 [和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)):
-
-* 修复了导致跟踪“通知单击”无法正常工作的问题（iOS和Android推送通知）。 (NEO-25965)
-* 修复了在使用某些旧版Outlook时无法打开／单击跟踪URL的问题。  (NEO-25688)
-* 修复了在个性化参数（带磅签名的锚点标记）中使用片段跟踪URL时无法正常工作的问题。 (NEO-25774)
-* 修复了反网络钓鱼服务的问题。 (NEO-25283)
-* 修复了使用特定自定义跟踪公式时的跟踪问题。 (NEO-25277)
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard 8版**
-
-_2020年4月29日_
-
-此新版本(9032@3a9dc9c)包含以下修复：
-
-* 改进了跟踪电子邮件链接的安全性。 默认情况下，所有客户都启用此功能。 另外还提供了增强的安全功能，可通过联系客户服务中心来启用此功能。 有关非托管客户启用此功能的功能和步骤的更多详细信息，请参阅安 [全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
-
->[!CAUTION]
->
->如果您在使用跟踪链接的推送通知或使用锚点标记的投放时遇到问题，建议您禁用用于跟踪链接的新签名机制。 该过程在此页中详 [细](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
-
-* 修复了一个问题，该问题可能会阻止图像显示在行投放上。 (NEO-23207)
-* 修复了文件传输 **活动的问题** ，该问题导致基于SFTP密钥的身份验证无法在Debian 9上工作。 (NEO-23183)
-* 修复了在以高频率发送时可能影响推送通知的问题。 (NEO-20516)
-* 修复了优惠响应管理中可能导致Web服务器崩溃的问题。 (NEO-19482)
-* 修复了LibreOffice管理中阻止导出报告的错误。 (NEO-20982)
-* 修复了使用工作流活动升级大量调查时导致错误的问题。
-* 改进了LibreOffice管理，以避免在电子邮件预览中使用。odt文件失败。
-* 改进了Apache连接的管理以避免Web服务上的延迟。
-* 改进了版本标签（7位数）在“关于”菜单 **中的显** 示。
-* 修复了列表管理中的回归，阻止优惠发布。
-* 修复了导致清除工作流崩溃的回归。
-* 修复了清除工作流日志中的次要回归。
-
-![](assets/do-not-localize/orange_2.png) **金标6版**
-
-_2019年3月9日_
-
-此新版本(9032@19f73c5)包含以下修复：
-
-* 修复了外部帐户使用FTP over SSL时的问题。 (NEO-20498)
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard 5版**
-
-_2019年12月17日_
-
-此新版本(9032@d6b8062)包含以下修复：
-
-* 修复了以下通信渠道的跟踪问题： 移动(SMS、MMS)、推送(iOS、Android)和社交网络(Facebook、Twitter)。 (NEO-19595)
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard 4版**
-
-_2019年12月11日_
-
-此新版本(9032@bc4a935)包含以下修复：
-
-* 修复了使用MSSQL数据库发送消息时的性能问题。 (NEO-17558)
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard 3版本**
-
-_2019年11月20日_
-
-此新版本(9032@3468c7b)包含以下修复：
-
-* 修复了通过IMS身份验证的登录问题。 (NEO-17312)
-* 修复了在多个投放上显示累积报告时的问题。 (NEO-18165)
-* 修复了可能阻止或导致Web服务器崩溃的问题。
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard 2版**
-
-_2019年9月19日_
-
-此新版本(9032@cee805c)包含以下修复：
-
-* 修复了在使用Salesforce的CRM连接器时的问题。 (NEO-17712)
-* 修复了在发送事务性消息时可能导致性能问题的索引问题。
-
-![](assets/do-not-localize/orange_2.png) **版本19.1.4 —— 内部版本9032**
-
-_2019年8月13日_
-
-初始19.1.4版本，包括以下修复：
-
-* 修复了调度程序活动在向导配置过程中生成不需要的错误消息的问题。 正在还原NEO-11662的更新。 (NEO-17097)
-* 修复了由NEO-12727引起的回归，该回归可能导致在执行两次测试工作流时停止活动。 (NEO-16835)
-* 修复了在API调用中使用无效或过期的会话令牌时，导致返回错误的HTTP代码（HTTP 200 OK而非HTTP 403已禁止）的问题。 (NEO-16826)
-* 修复了DKIM密钥的问题，该问题不再嵌入到电子邮件中，从而导致交付性问题。 (NEO-16804)
-* 修复了工作流计划的各种问题。 工作流计划每天执行一次，而不考虑调度程序配置。 (NEO-16619, NEO-16426)
-
-## ![](assets/do-not-localize/orange_2.png) 版本19.1.2 —— 内部版本9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/red_2.png) 版本19.1.2 —— 内部版本9029{#release-19-1-2-build-9029}
 
 _2019年6月21日_
 
@@ -201,7 +77,7 @@ _2019年6月21日_
 * 现在，我们允许在导入工作流程期间删除在Microsoft Dynamics中创建的虚拟记录。
 * 改进了使用内部帐户时执行安全区包的权限。
 
-## ![](assets/do-not-localize/orange_2.png) 版本19.1 —— 内部版本9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/red_2.png) 版本19.1 —— 内部版本9026{#release-19-1-build-9026}
 
 _2019年5月30日_
 
@@ -217,7 +93,7 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>要提高管理员用户的工作效率，请通过监视存储、向允许列表添加IP地址以及为每个实例安装SSH密钥来管理SFTP服务器的设置。 请注意，控制面板仅适用于今天起托管在AWS上的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天通过Experience Cloud登录</a>)。</p> <p>有关详细信息，请参 <a href="https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html">阅详细文档</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">和操作方法视频</a>。 </p><p>注意： 访问控制面板不需要升级到最新的活动版本。</p> </td> 
+   <td> <p>要提高管理员用户的工作效率，请通过监视存储、向允许列表添加IP地址以及为每个实例安装SSH密钥来管理SFTP服务器的设置。 请注意，控制面板仅适用于今天在AWS上托管的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天通过Experience Cloud登录</a>)。</p> <p>有关详细信息，请参 <a href="https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html">阅详细文档</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">和操作方法视频</a>。 </p><p>注意： 升级到最新活动版本不是访问控制面板的必需条件。</p> </td> 
   </tr> 
     <tr> 
    <td> 审核跟踪<br /> </td> 
