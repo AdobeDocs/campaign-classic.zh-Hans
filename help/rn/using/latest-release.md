@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: 5b7c0dc12b41b8482dce9d42bbf88878bb03bf38
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1692'
 ht-degree: 1%
 
 ---
@@ -23,28 +23,7 @@ ht-degree: 1%
 
 # 最新版本{#latest-release}
 
-[构建升级](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) |控 [制面板版本](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) |文 [档更新](../../rn/using/documentation-updates.md) |先 [前版本](../../rn/using/release--20-1.md) |已弃 [用功能](../../rn/using/deprecated-features.md)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>一般可用性</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>释放候选</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>不再可用</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>已弃用</strong></td> 
-  </tr> 
-   <tr> 
-   <td>提供最新的稳定版本。 在生产中验证构建。<br> </td>
-   <td>由Adobe验证的构建。 等待生产校样。<br> </td>
-   <td>可用于错误修复的更新版本。 需要更新。<br> </td>
-   <td>包含已知的回归。 必须更新。<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-最后 **一个稳定的版本** 是金标10。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
-
-![](assets/do-not-localize/cp-icon.png) **新的控制面板6月发布** ，包含活动用户档案监视、子域交付性审核和GPG密钥管理。 [了解更多](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新控制面板6月版** ，包含活动用户档案监视、子域交付性审核和GPG密钥管理。 [了解更多](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/blue_2.png) 版本20.2.1 —— 内部版本9178 {#release-20-2-1-build-9178}
 
