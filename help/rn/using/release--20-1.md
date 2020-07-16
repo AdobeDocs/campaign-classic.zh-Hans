@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1330'
 ht-degree: 1%
 
 ---
@@ -23,40 +23,19 @@ ht-degree: 1%
 
 # 版本20.1{#release-20-1}
 
-[构建升级](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) |控 [制面板版本](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) |文 [档更新](../../rn/using/documentation-updates.md) |先 [前版本](../../rn/using/release--19-2.md) |已弃 [用功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>一般可用性</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>释放候选</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>不再可用</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>已弃用</strong></td> 
-  </tr> 
-   <tr> 
-   <td>提供最新的稳定版本。 在生产中验证构建。<br> </td>
-   <td>由Adobe验证的构建。 等待生产校样。<br> </td>
-   <td>可用于错误修复的更新版本。 需要更新。<br> </td>
-   <td>包含已知的回归。 必须更新。<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-最后 **一个稳定的版本** 是金标10。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
-
-## ![](assets/do-not-localize/orange_2.png) 版本20.1.3 —— 内部版本9124 {#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/orange_2.png) 版本20.1.3 —— 内部版本9124{#release-20-1-3-build-9124}
 
 _2020年5月6日_
 
 * 修复了文件传输 **活动的问题** ，该问题导致基于SFTP密钥的身份验证无法在Debian 9上工作。 (NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) 版本20.1.2 —— 内部版本9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/orange_2.png) 版本20.1.2 —— 内部版本9123{#release-20-1-2-build-9123}
 
 _2020年3月13日_
 
 * 修复了阻止在Red Hat 7服务器上部署版本的问题。 (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) 版本20.1 —— 内部版本9122 {#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) 版本20.1 —— 内部版本9122{#release-20-1-build-9122}
 
 _2020年2月17日_
 
