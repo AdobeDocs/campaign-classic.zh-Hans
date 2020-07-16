@@ -15,36 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: c7b00960ffde49df65cd5c8fcfb8fab6aee485d7
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1295'
 ht-degree: 2%
 
 ---
 
 
 # 版本19.2{#release-19-2}
-
-[构建升级](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) |控 [制面板版本](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) |文 [档更新](../../rn/using/documentation-updates.md) |先 [前版本](../../rn/using/release--19-1.md) |已弃 [用功能](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>一般可用性</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>释放候选</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>不再可用</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>已弃用</strong></td> 
-  </tr> 
-   <tr> 
-   <td>提供最新的稳定版本。 在生产中验证构建。<br> </td>
-   <td>由Adobe验证的构建。 等待生产校样。<br> </td>
-   <td>可用于错误修复的更新版本。 需要更新。<br> </td>
-   <td>包含已知的回归。 必须更新。<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-最后 **一个稳定的版本** 是金标10。 单击此 [处](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) 版本19.2.3 —— 内部版本9081 {#release-19-2-3-build-9081}
 
