@@ -39,7 +39,7 @@ Campaign Classic **[!UICONTROL Monitoring]** 主页可访问该选项卡，它�
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">监视您的实例</a></p></td>
 <td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">监视工作流</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">监视数据库</a></p></td>
-<td><img src="assets/do-not-localize/icon_Send.svg" width="60px"><p><a href="#monitoring-deliveries">监视投放</a></p></td></tr>
+<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">监视投放</a></p></td></tr>
 </table>
 
 还提供了其他监视不同活动过程的方法。 它们提供多种监视实例的方法，以确保您的系统正常，并最终解决在设置工作流、发送投放等时可能出现的问题。
@@ -92,7 +92,7 @@ Workflow HeatMap为实例上运行的所有工作流提供了直观的表示形�
 
 ### 监视投放 {#monitoring-deliveries}
 
-<img src="assets/do-not-localize/icon_Send.svg" width="60px">
+<img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 **SMTP报告**
 
