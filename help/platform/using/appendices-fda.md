@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 353f5df040087175c9f211308704f1af1844ef2c
+source-git-commit: 789799f79608c26126d70e896bd1b7a6df33e4fa
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -247,7 +247,7 @@ $ apt update
 $ apt install libmysqlclient20
 ```
 
-#### Windows [#windows-mysql}
+#### Windows {#windows-mysql}
 
 从此页面下载C连 [接器](https://dev.mysql.com/downloads/connector/c)。 我们建议下载版本5.7。
 
