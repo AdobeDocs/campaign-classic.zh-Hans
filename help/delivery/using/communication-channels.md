@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '904'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Adobe Campaign优惠以下投放渠道:
 1. **移动渠道**: 移动渠道上的投放可让您向目标群发送个性化的SMS或LINE消息。 请参阅 [SMS渠道](../../delivery/using/sms-channel.md)。
 1. **移动应用程序渠道**: 移动应用程序投放允许您向iOS和Android系统发送通知。 请参阅移动 [应用程序渠道](../../delivery/using/about-mobile-app-channel.md) 一章。
 
-   本页介绍了其 [他渠道](../../delivery/using/other-channels.md)。
+   本页介绍了其 [他渠道](../../delivery/using/communication-channels.md#other-channels)。
 
    >[!NOTE]
    >
@@ -93,3 +93,13 @@ Adobe Campaign允许您通过专用应用程 [序在iOS](../../delivery/using/ab
 [直接邮寄](../../delivery/using/about-direct-mail-channel.md) 是一种离线渠道，它允许您个性化并生成直接邮寄提供商所需的文件。 它使您能够在客户旅程中混合线上和线下渠道。
 
 在线渠道允许您创建消息(电子邮件、短信、移动应用投放等) 并直接从受众发送给Adobe Campaign。 离线渠道则不同。 在准备直邮投放时，Adobe Campaign会生成一个文件，其中包括所有目标用户档案和所选联系信息（例如邮政地址）。 然后，您可以将此文件发送给直接邮件提供商，由其负责实际发送。
+
+## 其他渠道 {#other-channels}
+
+Adobe Campaign优惠代理或电话投放模板，用于创建外部投放。 使用这些渠道意味着您设置了专门的方法来处理输出文件。 配置步骤与直接邮件 [渠道相同](../../delivery/using/about-direct-mail-channel.md)。
+
+此外，“其他”类型投放使用不执行进程的特定技术模板： 这样，他们就可以管理在Adobe Campaign平台之外执行的营销操作。
+
+此渠道没有具体机制。 它是一个通用渠道，它具有自己的外部帐户路由选项、投放模板类型和活动工作流活动，就像Adobe Campaign中提供的任何其他通信渠道一样。
+
+此渠道仅用于描述性目的，例如，定义要跟踪在非Adobe Campaign工具中执行的活动的目标的投放。
