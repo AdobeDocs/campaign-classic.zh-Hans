@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b7c0dc12b41b8482dce9d42bbf88878bb03bf38
+source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1987'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,29 @@ ht-degree: 1%
 
 ![](assets/do-not-localize/cp-icon.png) **新控制面板6月版** ，包含活动用户档案监视、子域交付性审核和GPG密钥管理。 [了解更多](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/blue_2.png) 版本20.2.1 —— 内部版本9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/blue_2.png) 版本20.2.1 —— 内部版本9180 {#release-20-2-2-build-9180}
+
+_2020年7月22日_
+
+* 修复了在禁用签名功能或将旧营销实例与最近的“中间”一起使用时，跟踪无法正常工作的问题。 (NEO-26411)
+* 修复了导致个性化域中未签名链接在应允许时被阻止的问题。 (NEO-25210)
+* 修复了在使用某些旧版Outlook时无法打开／单击跟踪URL的问题。 (NEO-25688)
+* 修复了导致镜像页面URL在电子邮件投放中定义不正确的问题。 (NEO-26084)
+* 修复了防网络钓鱼服务中的URL管理编码问题。 (NEO-25283)
+* 修复了在个性化参数（带磅签名的锚点标记）中使用片段跟踪URL时无法正常工作的问题。 (NEO-25774)
+* 修复了使用特定自定义跟踪公式时的跟踪问题。 (NEO-25277)修复了导致跟踪“通知单击”无法工作的问题（iOS和Android推送通知）。 (NEO-25965)
+* 修复了影响工作流中计算字段的回归问题。 (NEO-25194)
+* 修复了导致动态创建Web跟踪URL无法正常工作的回归问题。 (NEO-20999)
+* 修复了现成投放报告的问题，该问题在导出到PDF时显示被截断。 (NEO-25757)
+* 修复了部署向导中的崩溃问题。
+* 修复了一个问题，该问题可能会阻止优惠通知工作流在配置升级后正常工作。
+* iOS HTTP2连接器已得到改进（第三方更新和错误管理）。 (NEO-25904, NEO-25903)
+* catalina.properties中的jarToSkip列表已更新，以删除对不再使用的jar文件（iOS通知）的引用。
+* 修复了在放置后阻止投放准备的问题。
+* 切换到新的序 [列ID机制后](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)，所有更新收件人表的Web应用程序都会在升级过程中重新发布。
+* 修复了投放内容中的潜在XSS漏洞。 (NEO-17987, NEO-26073)
+
+## ![](assets/do-not-localize/orange_2.png) 版本20.2.1 —— 内部版本9178 {#release-20-2-1-build-9178}
 
 _2020年6月8日_
 
