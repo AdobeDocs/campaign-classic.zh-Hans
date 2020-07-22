@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 * [路由外部帐户](#routing-external-account)
 * [FTP外部帐户](#ftp-external-account)
 * [外部数据库外部帐户](#external-database-external-account)
-* [网络Analytics外部帐户](#web-analytics-external-account)
+* [WebAnalytics外部帐户](#web-analytics-external-account)
 * [Facebook连接外部帐户](#facebook-connect-external-account)
 * [执行实例外部帐户](#execution-instance-external-account)
 * [Adobe Experience Cloud外部帐户](#adobe-experience-cloud-external-account)
@@ -111,9 +111,9 @@ Adobe Campaign附带一组预定义外部帐户。 要与外部系统（如用�
 
 * [电子邮件](../../installation/using/deploying-an-instance.md#email-channel-parameters)
 * [移动(SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
-* [电话](../../delivery/using/other-channels.md)
+* [电话](../../delivery/using/communication-channels.md#other-channels)
 * [直邮](../../delivery/using/about-direct-mail-channel.md)
-* [代理](../../delivery/using/other-channels.md)
+* [代理](../../delivery/using/communication-channels.md#other-channels)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
 * [iOS渠道](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
@@ -245,9 +245,9 @@ Teradata **外部帐户** 允许您将活动实例连接到Teradata外部数据�
 
 For more information on **[!UICONTROL Query banding]**, refer to the [Teradata documentation](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
-## 网络Analytics外部帐户 {#web-analytics-external-account}
+## WebAnalytics外部帐户 {#web-analytics-external-account}
 
-该 **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** 外部帐户允许您以细分形式将数据从AdobeAnalytics转发到Adobe Campaign。 相反，它通过Adobe Campaign将电子邮件活动的指标和属性发送到Adobe Dibos-Data Connector。
+外部帐户 **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** 允许您以细分形式将数据从AdobeAnalytics转发到Adobe Campaign。 相反，它会通过Adobe Campaign将电子邮件活动的指示符和属性发送给AdobeAnalytics-数据连接器。
 
 ![](assets/ext_account_10.png)
 
