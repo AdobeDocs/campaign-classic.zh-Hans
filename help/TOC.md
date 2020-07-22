@@ -3,11 +3,11 @@ audience: end-user
 user-guide-title: Adobe Campaign经典帮助
 index: y
 product: adobe campaign
-sub-product: adobe活动经典
+sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
+source-git-commit: 14e275203e3436183d5a5c743375ba42f6153c6d
 workflow-type: tm+mt
-source-wordcount: '2089'
+source-wordcount: '2094'
 ht-degree: 10%
 
 ---
@@ -18,14 +18,14 @@ ht-degree: 10%
 + [产品文档](campaign-classic-home.md)
 + [最新更新](rn/using/documentation-updates.md)
 + 发行说明 {#release-notes}
-   + [升级入门](rn/using/rn-overview.md)
+   + [Get started with upgrades](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
    + [金标版](rn/using/gold-standard.md)
    + 之前版本 {#previous-releases}
-      + [版本20.1](rn/using/release--20-1.md)
-      + [版本19.2](rn/using/release--19-2.md)
-      + [版本19.1](rn/using/release--19-1.md)
-      + [版本18.10](rn/using/release--18-10.md)
+      + [Release 20.1](rn/using/release--20-1.md)
+      + [Release 19.2](rn/using/release--19-2.md)
+      + [Release 19.1](rn/using/release--19-1.md)
+      + [Release 18.10](rn/using/release--18-10.md)
       + [版本18.6](rn/using/release--18-6.md)
       + [版本18.4](rn/using/release--18-4.md)
    + 已弃用的功能和兼容性 {#deprecated-compatibility}
@@ -120,7 +120,6 @@ ht-degree: 10%
       + [创建直邮投放](delivery/using/creating-a-direct-mail-delivery.md)
       + [定义直邮内容](delivery/using/defining-the-direct-mail-content.md)
       + [验证](delivery/using/validating.md)
-      + [其他渠道](delivery/using/other-channels.md)
    + 使用投放模板 {#using-delivery-templates}
       + [关于模板](delivery/using/about-templates.md)
       + [创建投放模板](delivery/using/creating-a-delivery-template.md)
@@ -189,8 +188,8 @@ ht-degree: 10%
       + [营销活动投放](campaign/using/marketing-campaign-deliveries.md)
       + [营销活动批准](campaign/using/marketing-campaign-approval.md)
       + [营销活动监控](campaign/using/marketing-campaign-monitoring.md)
-      + [供应商、库存和预算](campaign/using/providers--stocks-and-budgets.md)
-   + 任务、资源和预算 {#tasks--resources-and-budgets}
+      + [Providers, stocks and budgets](campaign/using/providers--stocks-and-budgets.md)
+   + Tasks, resources and budgets {#tasks--resources-and-budgets}
       + [关于营销资源管理](campaign/using/about-marketing-resource-management.md)
       + [创建和管理任务](campaign/using/creating-and-managing-tasks.md)
       + [控制成本](campaign/using/controlling-costs.md)
@@ -198,32 +197,32 @@ ht-degree: 10%
       + [论坛](campaign/using/discussion-forums.md)
    + 活动优化 {#campaign-optimization}
       + [关于活动类型](campaign/using/about-campaign-typologies.md)
-      + [压力规则](campaign/using/pressure-rules.md)
-      + [一致性规则](campaign/using/consistency-rules.md)
+      + [Pressure rules](campaign/using/pressure-rules.md)
+      + [Consistency rules](campaign/using/consistency-rules.md)
       + [控制规则](campaign/using/control-rules.md)
       + [筛选规则](campaign/using/filtering-rules.md)
-      + [应用规则](campaign/using/applying-rules.md)
-      + [活动模拟](campaign/using/campaign-simulations.md)
-   + 分布式营销 {#distributed-marketing}
+      + [Applying rules](campaign/using/applying-rules.md)
+      + [Campaign simulations](campaign/using/campaign-simulations.md)
+   + Distributed Marketing {#distributed-marketing}
       + [关于分布式营销](campaign/using/about-distributed-marketing.md)
       + [创建本地活动](campaign/using/creating-a-local-campaign.md)
       + [创建协作活动](campaign/using/creating-a-collaborative-campaign.md)
-      + [发布活动包](campaign/using/publishing-the-campaign-package.md)
-      + [访问活动](campaign/using/accessing-campaigns.md)
-      + [跟踪活动](campaign/using/tracking-a-campaign.md)
+      + [Publishing the campaign package](campaign/using/publishing-the-campaign-package.md)
+      + [Accessing campaigns](campaign/using/accessing-campaigns.md)
+      + [Tracking a campaign](campaign/using/tracking-a-campaign.md)
       + [示例](campaign/using/examples.md)
    + 响应管理器 {#response-manager}
-      + [关于响应管理器](campaign/using/about-response-manager.md)
+      + [About response manager](campaign/using/about-response-manager.md)
       + [配置](campaign/using/configuration.md)
-      + [假设验证模板](campaign/using/hypothesis-templates.md)
-      + [创建假设验证](campaign/using/creating-hypotheses.md)
-      + [假设验证跟踪](campaign/using/hypothesis-tracking.md)
+      + [Hypothesis templates](campaign/using/hypothesis-templates.md)
+      + [Creating hypotheses](campaign/using/creating-hypotheses.md)
+      + [Hypothesis tracking](campaign/using/hypothesis-tracking.md)
 + 报告 {#reporting}
    + 报告Adobe Campaign {#reporting-in-adobe-campaign}
       + [开始使用报告](reporting/using/about-adobe-campaign-reporting-tools.md)
-      + [报告最佳实践](reporting/using/best-practices.md)
-   + 访问内置报告 {#accessing-built-in-reports}
-      + [关于活动内置报告](reporting/using/about-campaign-built-in-reports.md)
+      + [Best practices for reporting](reporting/using/best-practices.md)
+   + Accessing built-in reports {#accessing-built-in-reports}
+      + [About Campaign built-in reports](reporting/using/about-campaign-built-in-reports.md)
       + [报告列表](reporting/using/list-of-reports.md)
    + 投放报告{#reports-on-deliveries}
       + [关于投放报告](reporting/using/reports-on-deliveries.md)
@@ -426,6 +425,7 @@ ht-degree: 10%
          + [创建摘要列表](workflow/using/creating-a-summary-list.md)
          + [丰富数据](workflow/using/enriching-data.md)
          + [使用聚合](workflow/using/using-aggregates.md)
+         + [每季度列表更新(使用增量查询)](workflow/using/quarterly-list-update.md)
       + 设计查询 {#designing-queries}
          + [查询收件人表](workflow/using/querying-recipient-table.md)
          + [查询投放信息](workflow/using/querying-delivery-information.md)
@@ -452,7 +452,7 @@ ht-degree: 10%
       + [关于技术工作流](workflow/using/about-technical-workflows.md)
       + [投放](workflow/using/deliveries.md)
       + [营销活动](workflow/using/campaign.md)
-      + [网络Analytics](workflow/using/web-analytics.md)
+      + [WebAnalytics](workflow/using/web-analytics.md)
       + [分布式营销](workflow/using/distributed-marketing.md)
       + [交付性监控](workflow/using/email-deliverability.md)
       + [收件箱呈现](workflow/using/inbox-rendering.md)
