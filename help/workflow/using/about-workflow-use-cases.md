@@ -12,9 +12,9 @@ discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
+source-git-commit: 6d9e2b54da9de37ed8f4f873a1049b35493112d4
 workflow-type: tm+mt
-source-wordcount: '67'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,46 @@ ht-degree: 0%
 
 它们将帮助您发现可以使用工作流的不同上下文，并响应您的需求。
 
-用例分为三个主题：
+## 投放 {#deliveries}
 
-<table>
-<tr>
-<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="../../workflow/using/using-the-local-approval-activity.md">投放</a></p></td><td><img src="assets/do-not-localize/icon_monitoring.svg" width="60px"><p><a href="../../workflow/using/sending-a-report-to-a-list.md">监控</a></p></td><td><img src="assets/do-not-localize/icon_manage.svg" width="60px"><p><a href="../../workflow/using/coordinating-data-updates.md">数据管理</a></p></td>
-<td><img src="assets/do-not-localize/icon_filter.svg" width="60px"><p><a href="../../workflow/using/querying-recipient-table.md">设计查询</a></p></td></tr>
-</table>
+<img src="assets/do-not-localize/icon_workflows.svg" width="60px">
+
+* [使用本地批准活动](../../workflow/using/using-the-local-approval-activity.md)
+* [A/B测试](../../workflow/using/a-b-testing.md)
+* [发送生日电子邮件](../../workflow/using/sending-a-birthday-email.md)
+* [加载投放内容](../../workflow/using/loading-delivery-content.md)
+* [跨渠道投放工作流](../../workflow/using/cross-channel-delivery-workflow.md)
+* [具有自定义日期字段的电子邮件扩充](../../workflow/using/email-enrichment-with-custom-date-fields.md)
+
+## 监控 {#monitoring}
+
+<img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
+
+* [向列表发送报告](../../workflow/using/sending-a-report-to-a-list.md)
+* [监督工作流](../../workflow/using/supervising-workflows.md)
+* [向运营商发送个性化提醒](../../workflow/using/sending-personalized-alerts-to-operators.md)
+
+## 数据管理 {#management}
+
+<img src="assets/do-not-localize/icon_manage.svg" width="60px">
+
+* [协调数据更新](../../workflow/using/coordinating-data-updates.md)
+* [创建摘要列表](../../workflow/using/creating-a-summary-list.md)
+* [丰富数据](../../workflow/using/enriching-data.md)
+* [使用聚合](../../workflow/using/using-aggregates.md)
+* [导入使用控制面板生成的密钥加密的数据](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
+* [使用控制面板上安装的密钥加密和导出数据](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
+* [每季度列表更新(使用增量查询)](../../workflow/using/quarterly-list-update.md)
+
+## 设计查询 {#designing-queries}
+
+<img src="assets/do-not-localize/icon_filter.svg" width="60px">
+
+* [查询收件人表](../../workflow/using/querying-recipient-table.md)
+* [查询投放信息](../../workflow/using/querying-delivery-information.md)
+* [执行聚合计算](../../workflow/using/performing-aggregate-computing.md)
+* [使用分组管理进行查询](../../workflow/using/querying-using-grouping-management.md)
+* [使用多对多关系进行查询](../../workflow/using/querying-using-many-to-many-relationship.md)
+* [添加明细列表类型计算字段](../../workflow/using/adding-enumeration-type-calculated-field.md)
+* [创建过滤器](../../workflow/using/creating-a-filter.md)
+* [过滤重复的收件人](../../workflow/using/filtering-duplicated-recipients.md)
