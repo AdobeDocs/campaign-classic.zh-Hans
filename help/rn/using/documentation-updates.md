@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 64b31b8d4f88023f4285bf161d236973a7d63107
+source-git-commit: 13fefe429862e856bc7ec1d376d80c176398da0b
 workflow-type: tm+mt
-source-wordcount: '6939'
+source-wordcount: '6963'
 ht-degree: 8%
 
 ---
@@ -28,6 +28,8 @@ ht-degree: 8%
 您还可以查阅Adobe Campaign经 [典发行说明](../../rn/using/latest-release.md) ，以获取更多更新。
 
 ## 2020 年 7 月 {#july-2020}
+
+一个关于如何使用增量列表自动更新查询的用例已添加到工作流用例中。 [阅读更多](../../workflow/using/about-workflow-use-cases.md)
 
 “发 [行说明](../../rn/using/latest-release.md) ”已重新组织： 已添 [加概述页](../../rn/using/latest-release.md) ，其中包含有关构建状态、升级过程、建议和重要链接的信息。 此外，还添加了 [Gold Standard版本](../../rn/using/gold-standard.md) 的专用页面，并集 [成了兼容性](../../rn/using/compatibility-matrix.md) 矩阵。
 
@@ -263,7 +265,7 @@ GDPR入门指南已得到改进和丰富。 它现在是包括GDPR和CCPA在内�
 
 新增了一个疑难解答页面，用于在Campaign Classic中跟踪。 [阅读更多](https://helpx.adobe.com/campaign/kb/classic-tracking-troubleshooting.html)。
 
-新增了AdobeAnalytics数据连接器的最佳实践页面。 [阅读有关AdobeAnalytics数据连接器的更多信息](../../platform/using/adobe-analytics-data-connector.md)
+新增了AdobeAnalyticsData Connector的最佳实践页面。 [阅读有关AdobeAnalytics数据连接器的更多信息](../../platform/using/adobe-analytics-data-connector.md)
 
 投放最佳实践快速入门指南已移动并更新。 [阅读更多](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
 
@@ -341,7 +343,7 @@ Transactional Messaging文档已更新，并带有有关模板发布的说明。
 添加了有关Campaign Classic中可用的不同外部帐户以及如何配置这些数据的信息。
 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html)
 
-更新了Analytics数据连接器部分以反映接口更改。
+更新了“Analytics数据连接器”部分以反映接口更改。
 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_Adobe_Analytics_Data_Connector.html)
 
 添加了有关帐单报表的信息。
@@ -518,7 +520,7 @@ IP关联配置部分已更新。 [阅读更多](https://docs.campaign.adobe.com/
 
 添加了有关包定义管理的新部分。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_Working_with_data_packages.html#Managing_package_definitions)
 
-活动与Adobe Deta Connector - Data Connector部分的集成已得到改进和重新组织。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_Adobe_Analytics_Data_Connector.html)
+活动与AdobeAnalytics-数据连接器部分的集成已得到改进和重新组织。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_Adobe_Analytics_Data_Connector.html)
 
 新增了“教程”部分，其中包含指向分步指南和操作方法视频的链接。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
@@ -651,7 +653,7 @@ A/B测试范例已更新，缺少说明。 [阅读更多](https://docs.campaign.
 
 添加暂停的工作流最佳实践。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html)
 
-有关在工作流中导出数据时导入和后处理文件的新过程。 请 [在这里](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html)。
+有关在工作流中导出数据时导入和后处理文件的新过程。 请 [在此处](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html)。
 
 SMS消息文档的隔离机制已更新，以反映扩展通用SMPP连接器的错误管理的特性。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_quarantine_management.html#SMS_quarantines)。
 
