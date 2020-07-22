@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
+source-git-commit: f097fcc4363181cda21386840f19e2523c3af3f9
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ _2020年7月7日_
 
 内部版本9032@efd8a94包含以下修复：
 
-* 修复了在禁用签名功能时跟踪无法工作的问题。 (NEO-26411)
+修复了在禁用签名功能或将旧营销实例与最近的“中间”一起使用时，跟踪无法正常工作的问题。 (NEO-26411)
 
 >[!CAUTION]
 >
