@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 651dfdab75f64d72a1c5beb1273a878ee7102b47
+source-git-commit: 65399d7b3917e2df37c32735e7015d742f5f022c
 workflow-type: tm+mt
-source-wordcount: '2912'
+source-wordcount: '2935'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这�
 >
 >操作符需要链接到安全区域才能登录到实例。 有关Adobe Campaign中安全区域的详细信息，请参 [阅本页](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
 
-用户还可以使用其Adobe ID直接连接到Adobe Campaign。 For more on this, refer to this [page](../../integrations/using/about-adobe-id.md).
+用户还可以使用Adobe Campaign直接连接到Adobe ID。 For more on this, refer to this [page](../../integrations/using/about-adobe-id.md).
 
 ### 创建运算符 {#creating-an-operator}
 
@@ -258,6 +258,7 @@ Adobe Campaign使用技术操作符，默认配置用户档案: 管理员（“�
 
    * 插入文件夹： 将文件夹插入Adobe Campaign树的权利（前提是您对相关分支具有编辑权限）,
    * 工作流： 使用工作流。
+
    >[!NOTE]
    >
    >此组不允许操作员开始投放。
@@ -346,7 +347,9 @@ Adobe Campaign使用技术操作符，默认配置用户档案: 管理员（“�
 
 默认组和已命名权限允许操作员访问导航层次结构中的特定文件夹，并授予读取、写入和删除权限。
 
-Adobe Campaign访问权限表可在 [此处](/help/platform/using/assets/accessrights.pdf)。
+Adobe Campaign访问权限表可在 [此处](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)。
+
+[![图像](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)
 
 ## 文件夹访问管理 {#folder-access-management}
 
