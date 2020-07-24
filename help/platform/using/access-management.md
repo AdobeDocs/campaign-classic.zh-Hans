@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 752318fa4e5b330965bef0906aa0991673e8bd68
+source-git-commit: 4d04c261441d4d66441c3665a7beb785383c9f14
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2924'
 ht-degree: 0%
 
 ---
@@ -347,7 +347,7 @@ Adobe Campaign使用技术操作符，默认配置用户档案: 管理员（“�
 
 默认组和已命名权限允许操作员访问导航层次结构中的特定文件夹，并授予读取、写入和删除权限。
 
-Adobe Campaign访问权限表可在 [此处](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)。
+Adobe Campaign访问权限表可在 [此处](/help/platform/using/assets/access-rights-matrix.pdf)。
 
 [![图像](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
