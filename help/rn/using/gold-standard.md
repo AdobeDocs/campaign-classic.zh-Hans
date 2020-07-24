@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f097fcc4363181cda21386840f19e2523c3af3f9
+source-git-commit: 890153a5b30594a1cb90606db4be8fd1ec19267b
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 有关Gold Standard升级的详细信息，请参阅本 [文](https://helpx.adobe.com/campaign/kb/gold-standard.html)。
 
-## ![](assets/do-not-localize/blue_2.png) 金标10版{#gs-10}
+## ![](assets/do-not-localize/limited.png) 金标10版{#gs-10}
 
 _2020年7月7日_
 
