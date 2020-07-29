@@ -1,6 +1,6 @@
 ---
 title: 导入数据
-description: 了解如何在Adobe Campaign经典中导入数据
+description: 了解如何在Adobe Campaign Classic导入数据
 page-status-flag: never-activated
 uuid: c8cf2bf1-f7a5-4de4-9e53-a961c9e5beca
 contentOwner: sauviat
@@ -13,15 +13,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
+source-git-commit: d4edd389fde91c3f316c5213f4d7f34e51979112
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2473'
 ht-degree: 0%
 
 ---
 
 
 # 导入数据{#importing-data}
+
+>[!CAUTION]
+>
+>使用此功能时，请记住SFTP存储、数据库存储和有效用户档案限制，这些限制均符合AdobeCampaign合同的规定。
 
 ## 如何收集数据 {#how-to-collect-data}
 
@@ -63,7 +67,7 @@ Adobe Campaign允许您导入压缩或加密文件。 在数据加载（文件�
    >
    >控制面板适用于在AWS上托管的所有客户（预先托管其营销实例的客户除外）。
 
-1. 如果Adobe Campaign安装由Adobe托管，请与Adobe客户服务部联系，在服务器上安装必要的实用程序。
+1. 如果Adobe Campaign安装由Adobe托管，请与Adobe客户服务部门联系，在服务器上安装必要的实用程序。
 1. 如果您的Adobe Campaign安装是事先安装的，请安装您要使用的实用程序(例如： GPG、GZIP)以及应用程序服务器上必需的密钥（加密密钥）。
 
 然后，您可以在工作流中使用所需的预处理命令：
@@ -84,20 +88,20 @@ Adobe Campaign允许您导入压缩或加密文件。 在数据加载（文件�
 
 ### 用例： 导入使用控制面板生成的密钥加密的数据 {#use-case-gpg-decrypt}
 
-在此用例中，我们将构建一个工作流，以便使用控制面板中生成的密钥导入外部系统中已加密的数据。
+在此用例中，我们将构建一个工作流，以便使用在控制面板中生成的密钥导入外部系统中已加密的数据。
 
 本节还提供了一个教程视频，其中显示了如何使用GPG密钥解密 [数据](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html)。
 
 执行此用例的步骤如下：
 
-1. 使用控制面板生成密钥对（公共／私有）。 控制面板文档中提供 [了详细步骤](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)。
+1. 使用控制面板生成密钥对（公共／私有）。 控制面板文档中提供了详 [细步骤](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)。
 
    * 公钥将与外部系统共享，外部系统将使用公钥加密要发送给活动的数据。
    * Campaign Classic将使用私钥解密传入的加密数据。
 
    ![](assets/gpg_generate.png)
 
-1. 在外部系统中，使用从控制面板下载的公钥加密要导入到Campaign Classic中的数据。
+1. 在外部系统中，使用从控制面板下载的公钥加密要导入到Campaign Classic的数据。
 
    ![](assets/gpg_external.png)
 
@@ -106,7 +110,7 @@ Adobe Campaign允许您导入压缩或加密文件。 在数据加载（文件�
    ![](assets/gpg_workflow.png)
 
    * **[!UICONTROL File transfer]** 活动: 将文件从外部源传输到Campaign Classic。 在此示例中，我们希望从SFTP服务器传输文件。
-   * **[!UICONTROL Data loading (file)]** 活动: 将数据从文件加载到数据库中，并使用控制面板中生成的私钥对其进行解密。
+   * **[!UICONTROL Data loading (file)]** 活动: 将文件中的数据加载到控制面板库，然后使用在数据库中生成的私钥进行解密。
 
 1. 打开 **[!UICONTROL File transfer]** 活动，然后指定要从中导入加密的。gpg文件的外部帐户。
 
