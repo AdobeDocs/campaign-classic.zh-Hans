@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4d04c261441d4d66441c3665a7beb785383c9f14
+source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2961'
 ht-degree: 0%
 
 ---
@@ -241,55 +241,63 @@ Adobe Campaign使用技术操作符，默认配置用户档案: 管理员（“�
 
 默认运算符组为：
 
-1. 投放运算符
+1. **[!UICONTROL Administrator]**
+
+   此组中的运算符对实例具有完全访问权限。 管理员是可访问界面中技术含量最高的部分的用户。 他们担 **[!UICONTROL Administration]** 当角色并确保平台已全部设置。
+
+   此组包含以下命名权限：
+
+   * **[!UICONTROL ADMINISTRATION]**: 执行／创建／编辑／删除任何对象(如工作流、投放、脚本等)的权利。
+
+1. **[!UICONTROL Delivery operators]**
 
    此组中的运营商负责管理投放: 它们允许访问创建和准备投放(活动类型、投放映射、默认模板、个性化块等)所需的主要资源。
 
    此组包含以下已命名权限:
 
-   * 准备投放: 创建、编辑和开始投放分析,
-   * 开始投放: 有权批准先前分析的投放。
+   * **[!UICONTROL PREPARE DELIVERIES]**: 创建、编辑和开始投放分析,
+   * **[!UICONTROL START DELIVERIES]**: 有权批准先前分析的投放。
 
-1. 活动经理
+1. **[!UICONTROL Campaign managers]**
 
-   此组中的运营商可以管理营销活动: 它允许您访问链接到活动(计划、项目、工作流、预算等)的对象。
+   此组中的运营商可以管理营销活动: 它允许您访问链接到活动的对象(计划、项目、工作流、预算等) (可选Adobe Campaign **[!UICONTROL Campaign]** 模块)。
 
    此组包含以下已命名权限:
 
-   * 插入文件夹： 将文件夹插入Adobe Campaign树的权利（前提是您对相关分支具有编辑权限）,
-   * 工作流： 使用工作流。
+   * **[!UICONTROL INSERT FOLDERS]**: 将文件夹插入Adobe Campaign树的权利（前提是您对相关分支具有编辑权限）,
+   * **[!UICONTROL WORKFLOW]**: 使用工作流。
 
    >[!NOTE]
    >
    >此组不允许操作员开始投放。
 
-1. 内容参与者
+1. **[!UICONTROL Content contributors]**
 
-   此组中的操作符可以访问内容管理框架(可选 **Adobe Campaign模块** )中的内容文件夹。 此组不授予任何附加权利。
+   此组中的操作符可以访问Content文件夹，该文件夹位于 **[!UICONTROL Content management]** (可选Adobe Campaign模块)的框架中。 此组不授予任何附加权利。
 
-1. 访问报告
+1. **[!UICONTROL Access to reports]**
 
    此组保留给外部操作员，以便通过Web访问访问访问投放报告。
 
-1. 工作流执行
+1. **[!UICONTROL Workflow execution]**
 
    通过此组，您可以分配操作员管理与工作流无关的活动的权利。
 
-1. 工作流监管器
+1. **[!UICONTROL Workflow supervisors]**
 
    如果出现与活动工作流相关的警报，此组中的操作员将收到电子邮件通知。
 
 1. 本地／中央管理
 
-   这些组允许您使 **用分布式** 营销(可选Adobe Campaign模块)。
+   这些组允许您使 **[!UICONTROL Distributed marketing]** 用(可选Adobe Campaign模块)。
 
-1. 优惠经理
+1. **[!UICONTROL Offer managers]**
 
    此组中的运算符可以创建和维护优惠。 For more information on this, refer to this [page](../../interaction/using/operator-profiles.md).
 此组包含以下已命名权限:
 
-   * 插入文件夹： 将文件夹插入Adobe Campaign树的权利（前提是您对相关分支具有编辑权限）,
-   * 编辑文件夹： 有权更改文件夹属性，如内部名称、标签、关联图像、子文件夹顺序等。
+   * **[!UICONTROL INSERT FOLDERS]**: 将文件夹插入Adobe Campaign树的权利（前提是您对相关分支具有编辑权限）,
+   * **[!UICONTROL EDIT FOLDERS]**: 有权更改文件夹属性，如内部名称、标签、关联图像、子文件夹顺序等。
 
 ## 已命名权限 {#named-rights}
 
