@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 9f70468e3dd7003a18812d07669f10c561e8bef7
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
@@ -77,12 +77,12 @@ function processPipelineMessage(xmlTrigger) {}
 >
 >它是各种可能实现的一个特定示例。
 
-内容在Analytics为每个触发器定义。 它采用JSON格式。
+内容以Analytics形式为每个触发器定义。 它采用JSON格式。
 例如，在触发器LogoUpload_uploading_Victs中：
 
 * **[!UICONTROL eVar01]** can contain Shopper ID, which is used to reconcile with活动收件人。 它采用字符串格式。 <br>它必须协调以查找Shopper ID，它是主键。
 
-* **[!UICONTROL timeGMT]** 可以在Analytics一方控制扳机的时间。 它采用UTC Epoc格式（自01/01/1970 UTC起的秒）。
+* **[!UICONTROL timeGMT]** 可以在Analytics端包含触发时间。 它采用UTC Epoc格式（自01/01/1970 UTC起的秒）。
 
 例如：
 
@@ -129,7 +129,7 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 解析数据 {#data-parsing}
 
-此示例JS代码解析扩充中的eVar01。
+此示例JS代码解析eVar中的扩充01。
 
 ```
 function processPipelineMessage(xmlTrigger)
@@ -161,7 +161,7 @@ function processPipelineMessage(xmlTrigger)
 
 ```
 function processPipelineMessage(xmlTrigger)
- {```
+ {
  (…)
  var event = 
  <pipelineEvent
@@ -207,10 +207,10 @@ triggerType字段标识数据从哪个触发器发起。
 | 数据 | 备忘录 | 触发数据 | 以XML格式触发数据的完整内容。 用于调试和审核目的。 |
 | triggerType | 字符串50 | TriggerType | 触发器的名称。 确定客户在网站上的行为。 |
 | shopper_id | 字符串32 | shopper_id | 购物者的内部标识符。 由对帐工作流设置。 如果为零，则表示活动中的客户未知。 |
-| shopper_key | 长 | shopper_key | The shopper&#39;s外部标识符, as captured byAnalytics. |
+| shopper_key | 长 | shopper_key | Analytics捕获的购物者外部标识符。 |
 | 已创建 | 日期时间 | 已创建 | 在活动中创建事件的时间。 |
-| lastModified | 日期时间 | 上次修改时间 | 上次在Adobe中修改事件的时间。 |
-| timeGMT | 日期时间 | 时间戳 | 事件在Analytics产生的时间。 |
+| lastModified | 日期时间 | 上次修改时间 | 事件上次以Adobe修改的时间。 |
+| timeGMT | 日期时间 | 时间戳 | 在事件中生成Analytics的时间。 |
 
 ### 显示事件 {#display-events}
 
@@ -226,7 +226,7 @@ triggerType字段标识数据从哪个触发器发起。
 
 ### 对帐工作流 {#reconciliation-workflow}
 
-协调是将Analytics的客户匹配到活动数据库的过程。 例如，匹配的条件可以是shopper_id。
+对帐是将客户从Analytics匹配到活动数据库的过程。 例如，匹配的条件可以是shopper_id。
 
 由于性能原因，匹配必须由工作流在批处理模式下完成。
 必须将频率设置为15分钟，以优化工作量。 因此，在Adobe Campaign中的事件接收与由营销工作流处理之间的延迟最多为15分钟。
