@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f599bc5483779ae62dd4d5eb1936cbc2760639b5
+source-git-commit: 4548eda6f87566398ddf19131b777012cbf8917b
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4361'
 ht-degree: 4%
 
 ---
 
 
 # 投放最佳实践 {#delivery-best-practices}
+
+了解与投放设计和与Adobe Campaign一起发送相关的最佳实践。
 
 ## 优化投放 {#optimize-delivery}
 
@@ -102,7 +104,7 @@ ht-degree: 4%
 
 **提示**:  为避免在Campaign Standard中出现配置错误，我们建议您重复本机模板并更改其属性，而不是创建新模板。
 
-**配置地址**
+### 配置地址
 
 * 发送者的地址是强制性的，允许发送电子邮件。
 
@@ -126,7 +128,7 @@ ht-degree: 4%
 
 1. 在字 **[!UICONTROL Reply address text]** 段中，发送者的地址默认用于回复。 但是，Adobe建议使用现有的真实地址，如您品牌的客户关怀。 在这种情况下，如果收件人发送回复，客户服务中心将能够处理。
 
-**设置对照组**
+### 设置对照组
 
 发送投放后，您可以将被排除收件人的行为与收到投放的收件人进行比较。 然后，您可以衡量活动的效率。 进一步了解 [对照组](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。
 
@@ -134,7 +136,7 @@ ht-degree: 4%
 
 ![](assets/d_best_practices_control_group.png)
 
-**使用类型应用过滤器或控制规则**
+### 使用类型应用过滤器或控制规则
 
 类型学包含在分析阶段应用的检查规则，然后发送任何消息。
 
@@ -342,7 +344,7 @@ Adobe建议预览您的消息，检查其个性化以及收件人将如何看到
 
 在发送消息之前，还应确保参数和配置与投放一致。
 
-### 验证是关键 {#validation-is-key}
+### 验证为何重要 {#validation-is-key}
 
 在发送投放之前，您需要确保收件人将收到您真正希望发送的消息。 为此，您需要验证消息内容和投放参数。
 
@@ -461,7 +463,7 @@ Adobe建议预览您的消息，检查其个性化以及收件人将如何看到
 
 * 不要试着计划大投放。 请注意，可能需要5到10分钟才能将负载均匀分布到系统上。
 
-## 投放疑难解答 {#delivery-troubleshooting}
+### 投放疑难解答 {#delivery-troubleshooting}
 
 遇到投放问题时，可以执行特定操作：
 
