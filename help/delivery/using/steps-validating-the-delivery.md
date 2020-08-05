@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 3%
+source-wordcount: '1673'
+ht-degree: 4%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 1. **分析投放**: 通过此步骤，您可以准备要传送的消息。 请参阅 [分析投放](#analyzing-the-delivery)。
 
-   在分析期间应用的规则在带有类型 [的验证流程中显示](#validation-process-with-typologies) 。 可用校验模式在更改批准 [模式部分中详细](#changing-the-approval-mode) 。
+   本节将介绍在分析过程中应 [用的规则](#validation-process-with-typologies) 。 可用校验模式在更改批准 [模式部分中详细](#changing-the-approval-mode) 。
 
 1. **发送验证**: 通过此步骤，您可以批准内容、URL、个性化字段等。 请参阅 [发送验证](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)[和定义特定验证目标](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
 
@@ -46,7 +46,7 @@ ht-degree: 3%
 ### 启动分析 {#launching-the-analysis}
 
 1. 要启动投放分析，请单击 **[!UICONTROL Send]**。
-1. Select **[!UICONTROL Deliver as soon as possible]**.
+1. 选择 **[!UICONTROL Deliver as soon as possible]**。
 
    ![](assets/s_ncs_user_email_del_send.png)
 
@@ -76,6 +76,7 @@ ht-degree: 3%
    * 蓝色图标表示有信息消息。
    * 黄色图标表示出现非关键处理错误。
    * 红色图标指示阻止发送投放的严重错误。
+
    ![](assets/s_ncs_user_email_del_analyze_error.png)
 
 1. 单击 **[!UICONTROL Close]** 以更正错误（如果有）。
@@ -100,7 +101,7 @@ ht-degree: 3%
 
 * **[!UICONTROL Label and code of the delivery]** : 本节中的选项用于计算投放分析阶段中这些字段的值。 字 **[!UICONTROL Compute the execution folder during the delivery analysis]** 段计算将在投放阶段包含此分析操作的文件夹的名称。
 * **[!UICONTROL Approval mode]** : 此字段允许您在完成投放后定义手动或自动分析。 这些校验模式显示在更 [改批准模式部分](#changing-the-approval-mode) 。
-* **[!UICONTROL Prepare the delivery parts in the database]** : 此选项使您能够提高投放分析性能。 For more on this, see [this section](#improving-delivery-analysis).
+* **[!UICONTROL Prepare the delivery parts in the database]** : 此选项使您能够提高投放分析性能。 有关更多信息，请参阅[此章节](#improving-delivery-analysis)。
 * **[!UICONTROL Prepare the personalization data with a workflow]** : 此选项允许您在自动工作流程中准备包含在投放中的个性化数据，这可以显着提高执行个性化的性能。 有关此方面的详细信息，请参 [阅优化个性化](../../delivery/using/personalization-fields.md#optimizing-personalization)。
 * **[!UICONTROL Start job in a detached process]** : 通过此选项，您可以在单独的流程中开始投放分析。 默认情况下，分析函数使用Adobe Campaign应用程序服务器进程(web nlserver)。 通过选择此选项，即使在应用程序服务器故障事件，您也能确保完成分析。
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : 此选项会在查询阶段将SQL投放日志添加到分析日志。
@@ -134,7 +135,7 @@ ht-degree: 3%
 >
 >为确保较大的投放分析不会减慢工作流的进度，您可以通过滴答来计划其执行 **[!UICONTROL Schedule execution for a time of low activity]**。
 
-## 发送验证 {#sending-a-proof}
+## 发送校样{#sending-a-proof}
 
 为了检测邮件配置中可能出现的错误，Adobe 强烈建议您设置投放验证周期。尽可能频繁地向测试收件人发送验证内容，确保内容已获得批准。每次进行变更时都应发送验证内容，以批准内容。
 
@@ -142,6 +143,7 @@ ht-degree: 3%
 >
 >* 可用校验模式在更改审 [批模式中详细介绍](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode)。
 >* 验证目标的配置在定义特 [定验证目标中有说明](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
+
 >
 
 
@@ -156,7 +158,7 @@ ht-degree: 3%
 1. 开始消息分析。 请参 [阅分析投放](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。
 1. 您现在可以发送投放(请参 [阅发送投放](../../delivery/using/steps-sending-the-delivery.md))。
 
-   发送投放后，验证将显示在投放列表中，并自动创建和编号。 如果您希望访问其内容和属性，可以编辑该内容。 For more on this, refer to this [page](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+   发送投放后，验证将显示在投放列表中，并自动创建和编号。 如果您希望访问其内容和属性，可以编辑该内容。 有关详细信息，请参见此 [ 页面](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard)。
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
@@ -181,13 +183,13 @@ ht-degree: 3%
 可以使用以下选项：
 
 * 第一个选项允许您保留验证多次。
-* 以下两个选项都允许您保留块列表中的收件人和隔离地址。 请参阅自定义排除设置中主目标的这些 [选项说明](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings)。 与投放的目标不同，默认情况下排除这些地址，默认情况下保留这些地址作为验证的目标。
+* 以下两个选项都允许您将阻止列表和地址的收件人保留为隔离。 请参阅自定义排除设置中主目标的这些 [选项说明](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings)。 与投放的目标不同，默认情况下排除这些地址，默认情况下保留这些地址作为验证的目标。
 * 通 **[!UICONTROL Keep the delivery code for the proof]** 过该选项，您可以为验证提供与其相关的投放定义的相同的投放代码。 此代码在投放向导的第一步中指定。
 * 默认情况下，验证的主题以“验证#”为前缀，其中#是验证的编号。 您可以在字段中更改此前 **[!UICONTROL Label prefix]** 缀。
 
 ## 含类型的验证流程 {#validation-process-with-typologies}
 
-在发送任何消息之前，您应分析活动以批准其内容和配置。 在分析阶段应用的检查规则在类型学中 **定义**。 默认情况下，对于电子邮件，分析涵盖以下要点：
+在发送任何消息之前，您应分析活动以批准其内容和配置。 The checking rules applied during the analysis phase are defined in a **typology**. 默认情况下，对于电子邮件，分析涵盖以下要点：
 
 * 批准对象
 * 批准URL和图像
@@ -215,7 +217,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** 类型类型在销售压力管理框架内使用。 如需详细信息，请参阅[此部分](../../campaign/using/about-marketing-resource-management.md)。
+>**[!UICONTROL Arbitration]** 类型类型在销售压力管理框架内使用。 有关更多信息，请参阅[此章节](../../campaign/using/about-marketing-resource-management.md)。
 
 ## 更改审批模式 {#changing-the-approval-mode}
 
