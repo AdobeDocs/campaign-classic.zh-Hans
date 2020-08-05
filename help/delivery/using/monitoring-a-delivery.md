@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
 workflow-type: tm+mt
-source-wordcount: '2602'
-ht-degree: 1%
+source-wordcount: '2597'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 * [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
 * [了解隔离管理](../../delivery/using/understanding-quarantine-management.md)
-* [投放最佳实践](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
+* [投放最佳实践](../../delivery/using/delivery-best-practices.md)
 * [管理投放能力](../../delivery/using/about-deliverability.md)
 
 ## 投放仪表板 {#delivery-dashboard}
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 选 **[!UICONTROL Summary]** 项卡包含投放的特性： 投放状态、渠道已使用、发送方信息、主题、执行信息。 有关详细信息，请参 [阅发送的消息数](#number-of-messages-sent)。
 
-通过 **[!UICONTROL reports]** 该链接，您可以查看一组与投放操作相关的报告： 一般投放报告、详细报告、投放报告、失败消息的分发、打开率、点击量和交易等。 此选项卡的内容可以根据您的要求进行配置。 有关更多信息，请参见[此部分](../../reporting/using/delivery-reports.md)。
+通过 **[!UICONTROL reports]** 该链接，您可以查看一组与投放操作相关的报告： 一般投放报告、详细报告、投放报告、失败消息的分发、打开率、点击量和交易等。 此选项卡的内容可以根据您的要求进行配置。 有关更多信息，请参见[此章节](../../reporting/using/delivery-reports.md)。
 
 ### 投放日志和历史 {#delivery-logs-and-history}
 
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 跟踪配置在投放向导的相应阶段执行。 请参 [阅如何配置跟踪的链接](../../delivery/using/how-to-configure-tracked-links.md)。
 
-**[!UICONTROL Tracking]** 数据在投放报告中解释。 请参 [阅此部分](../../reporting/using/delivery-reports.md)。
+**[!UICONTROL Tracking]** 数据在投放报告中解释。 请参阅[此章节](../../reporting/using/delivery-reports.md)。
 
 ![](assets/s_ncs_user_delivery_tracking_tab.png)
 
@@ -97,9 +97,9 @@ ht-degree: 1%
 * 如果您的投放状态不正确，请检查是否已为此投放完成所有必要的批准，或者是否正在运行 **[!UICONTROL operationMgt]** 和 **[!UICONTROL deliveryMgt]** 工作流并且没有错误。 这也可能是由于投放在发送实例上使用未配置的关联。
 * 如果您的投放指示器仍为零，并且您处于中间源配置中，请检查技术 **[!UICONTROL Mid-sourcing (delivery counters)]** 工作流。 开始它，如果它的状态不 **[!UICONTROL Started]**&#x200B;是。 然后，您可以尝试重新计算指示器，方法是右键单击投放浏览器中的相关Adobe Campaign，然后选择 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**。 For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
 * 如果投放计数器与投放不匹配，请尝试重新计算指示器，方法是右键单击Adobe Campaign资源管理器中的相关投放，然后选择 **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** 重新同步。 For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
-* 如果您的投放计数器不是中间源部署的最新状态，请检查技术工 **[!UICONTROL Mid-Sourcing (Delivery counters)]** 作流是否正在运行。 For more on this, refer to this [page](../../installation/using/mid-sourcing-deployment.md).
+* 如果您的投放计数器不是中间源部署的最新状态，请检查技术工 **[!UICONTROL Mid-Sourcing (Delivery counters)]** 作流是否正在运行。 有关详细信息，请参见此 [ 页面](../../installation/using/mid-sourcing-deployment.md)。
 
-您还可以通过投放仪表板，通过不同的报告跟踪投放。 For more on this, refer to this [section](../../reporting/using/delivery-reports.md).
+您还可以通过投放仪表板，通过不同的报告跟踪投放。 有关更多信息，请参阅此](../../reporting/using/delivery-reports.md)章节[。
 
 ## 性能问题 {#performance-issues}
 
@@ -111,18 +111,18 @@ ht-degree: 1%
 * **投放的目标**: 投放性能禁止受软跳出错误影响，软跳出错误根据重试配置进行处理。 错误数越多，需要的重试就越多。
 * **整个平台负载**: 当发送多个大型投放时，整个平台可能会受到影响。 您还可以检查IP信誉和可交付性问题。 有关此内容的详细信息，请参 [阅Adobe Campaign交付性最佳](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) 实践指 [南和本页](../../delivery/using/about-deliverability.md)。
 
-Platform和投放库的维护也会影响发送性能。 有关详细信息，请参见[此页面](../../production/using/database-performances.md)。
+平台和投放库维护也会影响数据发送性能。 有关详细信息，请参见[此页面](../../production/using/database-performances.md)。
 
 ### 慢速投放 {#slow-deliveries}
 
 单击该按 **[!UICONTROL Send]** 钮后，投放的时间似乎比往常长。 这可能由不同元素引起：
 
-* 某些电子邮件提供商可能已将您的IP地址添加到块列表。 在这种情况下，请检查广告并参 [阅此部分](../../delivery/using/about-deliverability.md)。
+* 某些电子邮件提供商可能已将您的IP地址添加到阻止列表。 在这种情况下，请检查广告并参 [阅此部分](../../delivery/using/about-deliverability.md)。
 * 您的投放可能太大，无法快速处理，高JavaScript个性化可能会发生这种情况，或者如果您的投放重量超过60kbytes。 请参阅Adobe Campaign [投放最佳实践](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) ，了解内容指南。
 * Adobe CampaignMTA中可能已发生限制。 这是由以下原因造成的：
 
    * 已暂停的消息&#x200B;**[!UICONTROL quotas met]** （消息）: 已满足在活动中定义的声明性MX规则声明的配额。 For more information about this message, refer to [this page](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). 要进一步了解MX规则，请参 [阅本页](../../delivery/using/technical-recommendations.md#mx-rules)。
-   * 已暂停的消息&#x200B;**[!UICONTROL dynamic flow control]** （消息）: 活动MTA在尝试为给定ISP发送消息时遇到错误，这会导致延迟以避免错误密度过大，从而面临潜在的块列表。
+   * 已暂停的消息&#x200B;**[!UICONTROL dynamic flow control]** （消息）: 活动MTA在尝试为给定ISP发送消息时遇到错误，这会导致延迟以避免错误密度过大，从而面临潜在阻止列表。
 
 * 系统问题可能会阻止服务器进行交互： 这会减慢整个发送过程。 检查服务器，以确保在获取个性化数据的过程中不存在可能影响活动的内存或资源问题。
 
@@ -166,7 +166,7 @@ Platform和投放库的维护也会影响发送性能。 有关详细信息，�
   </tr> 
   <tr> 
    <td> 已忽略<br /> </td> 
-   <td> 由于投放地址出错，该收件人未被发送到该地址。 它已添加到阻止列表、已隔离、未提供或重复。 <br /> </td> 
+   <td> 由于投放地址出错，该收件人未被发送到该地址。 它已添加到阻止列表、隔离、未提供或重复。 <br /> </td> 
   </tr> 
   <tr> 
    <td> 已发送<br /> </td> 
@@ -209,7 +209,7 @@ Platform和投放库的维护也会影响发送性能。 有关详细信息，�
 
 确认投放后，您可以看到投放的状态为 **[!UICONTROL Pending]**。 此状态意味着执行进程正在等待某些资源的可用性。
 
-状 **[!UICONTROL Pending]** 态可以首先表示投放已计划，并且在指定日期之前一直处于待定状态。 有关详细信息，请参阅 [投放计划](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending) 。
+状 **[!UICONTROL Pending]** 态可以首先表示投放已计划，并且在指定日期之前一直处于待定状态。 For more on this, refer to the [Delivery scheduling](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending) section.
 
 如果投放未发送，且其状态 **[!UICONTROL Pending]**&#x200B;保持不变，则可能是以下结果：
 
@@ -254,7 +254,7 @@ Platform和投放库的维护也会影响发送性能。 有关详细信息，�
 
    为此，我们建议对数据库执行真空并重新索引。 For more information on database maintenance, refer to [this section](../../production/using/recommendations.md).
 
-   您还应使用计划工作流重新启动所有活动，以及所有处于失败状态的工作流。 Refer to [this section](../../workflow/using/scheduler.md).
+   您还应使用计划工作流重新启动所有活动，以及所有处于失败状态的工作流。 请参阅[此章节](../../workflow/using/scheduler.md) 。
 
 * 投放失败时，投放日志中可能显示以下错误： **DLV-XXXX准备的消息计数(123)大于要发送的消息数(111)。 请联系支持人员。**
 
@@ -268,9 +268,9 @@ Platform和投放库的维护也会影响发送性能。 有关详细信息，�
 
 * [投放日志和历史](#delivery-logs-and-history)
 * [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
-* [投放故障类型和原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
+* [投放失败类型和原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
 
-## 已发送邮件数 {#number-of-messages-sent}
+## Number of messages sent {#number-of-messages-sent}
 
 您可以通过树的节点从投放 **[!UICONTROL Campaign Management > Deliveries]** 列表访问投放。
 
