@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1527'
 ht-degree: 0%
 
 ---
@@ -29,25 +29,23 @@ ht-degree: 0%
 
 对于每个投放，您可以定义几种类型的目标群体。 以下部分提供有关如何选择的更多信息：
 
-* **投放的主要收件人**。 [阅读更多](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)。
-* **收件人验证消息**，以便设置验证周期。 [阅读更多](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
+* 投放的主要收件人。 [阅读更多](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* 收件人验证消息，以设置验证周期。 [阅读更多](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
 
-此外，您还可以定 [义种子地址](../../delivery/using/about-seed-addresses.md)和 [对照组](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。 如果投放包含在营销活动中。
+此外，如果投放包含在营销活动中，您还可以定义 [种子地址](../../delivery/using/about-seed-addresses.md)和 [对照组](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。
 
 ## 选择投放的主要收件人 {#selecting-the-main-target}
 
-在大多数情况下，主目标会从活动数据库中提取（默认模式）。
+在大多数情况下，主目标会从Adobe Campaign数据库中提取（默认模式）。 但是，收件人也可以存储在外部文件中。 在本节中了 [解更多](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)。
 
-收件人也可以存储在外部文件中。 选择外部投放中显示此类收件人 [的配置](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)。
+要选择收件人，请按照以下步骤操作：
 
-要选择要创建的收件人的投放，请执行以下步骤：
-
-1. 单击链 **[!UICONTROL To]** 接。
+1. 在投放编辑器中，选择 **[!UICONTROL To]**。
 1. 如果收件人存储在数据库中，请选择第一个选项。
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. 在下拉目标映射 **[!UICONTROL Target mapping]** 中选择列表。 Adobe Campaign默认目标映射 **[!UICONTROL Recipients]**&#x200B;为。
+1. 在下拉目标映射 **[!UICONTROL Target mapping]** 中选择列表。 Adobe Campaign默认目标映射 **[!UICONTROL Recipients]**&#x200B;基于 **nms:收件人** 模式。
 
    其他目标映射可用，有些可能与您的特定配置相关。 有关目标映射的详细信息，请参 [阅选择目标映射](../../delivery/using/selecting-a-target-mapping.md)。
 
@@ -157,7 +155,7 @@ ht-degree: 0%
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** ，即其电子邮件地址在块列表(&#39;选择退出&#39;)中的收件人。 为了遵守电子营销的职业道德和电子商务法律，必须继续选择此选项。
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** ，即其电子邮件地址位于阻止列表(“选择退出”)上的收件人。 为了遵守电子营销的职业道德和电子商务法律，必须继续选择此选项。
 * **[!UICONTROL Exclude quarantined recipients]**. 此选项允许您从目标中排除任何地址没有响应的用户档案。 我们强烈建议保持选中此选项。
 
    >[!NOTE]
