@@ -1,14 +1,14 @@
 ---
 audience: end-user
-user-guide-title: Adobe Campaign经典帮助
+user-guide-title: Adobe Campaign Classic帮助
 index: y
 product: adobe campaign
-sub-product: adobe campaign classic
+sub-product: adobe活动经典
 translation-type: tm+mt
-source-git-commit: 14e275203e3436183d5a5c743375ba42f6153c6d
+source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
 workflow-type: tm+mt
-source-wordcount: '2094'
-ht-degree: 10%
+source-wordcount: '2097'
+ht-degree: 11%
 
 ---
 
@@ -18,14 +18,14 @@ ht-degree: 10%
 + [产品文档](campaign-classic-home.md)
 + [最新更新](rn/using/documentation-updates.md)
 + 发行说明 {#release-notes}
-   + [Get started with upgrades](rn/using/rn-overview.md)
+   + [升级入门](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
    + [金标版](rn/using/gold-standard.md)
    + 之前版本 {#previous-releases}
-      + [Release 20.1](rn/using/release--20-1.md)
-      + [Release 19.2](rn/using/release--19-2.md)
-      + [Release 19.1](rn/using/release--19-1.md)
-      + [Release 18.10](rn/using/release--18-10.md)
+      + [版本20.1](rn/using/release--20-1.md)
+      + [版本19.2](rn/using/release--19-2.md)
+      + [版本19.1](rn/using/release--19-1.md)
+      + [版本18.10](rn/using/release--18-10.md)
       + [版本18.6](rn/using/release--18-6.md)
       + [版本18.4](rn/using/release--18-4.md)
    + 已弃用的功能和兼容性 {#deprecated-compatibility}
@@ -65,7 +65,7 @@ ht-degree: 10%
       + [筛选选项](platform/using/filtering-options.md)
       + [创建过滤器](platform/using/creating-filters.md)
       + [用例](platform/using/use-case.md)
-   + 创建查询 {#creating-queries}
+   + 创建查询{#creating-queries}
       + [关于查询活动](platform/using/about-queries-in-campaign.md)
       + [创建查询的步骤](platform/using/steps-to-create-a-query.md)
       + [定义筛选条件](platform/using/defining-filter-conditions.md)
@@ -87,10 +87,11 @@ ht-degree: 10%
    + 连接器 {#connectors}
       + [关于连接器](platform/using/about-connectors.md)
       + [CRM连接器](platform/using/crm-connectors.md)
-      + [AdobeAnalytics数据连接器](platform/using/adobe-analytics-data-connector.md)
+      + [Adobe Analytics数据连接器](platform/using/adobe-analytics-data-connector.md)
 + 发送消息 {#sending-messages}
-   + 关于投放和渠道 {#about-deliveries-and-channels}
+   + 消息入门 {#about-deliveries-and-channels}
       + [通信渠道](delivery/using/communication-channels.md)
+      + [投放最佳实践](delivery/using/delivery-best-practices.md)
       + [访问投放信息](delivery/using/accessing-deliveries-information.md)
       + [投放类型](delivery/using/types-of-deliveries.md)
    + 创建投放时的关键步骤 {#key-steps-when-creating-a-delivery}
@@ -114,7 +115,7 @@ ht-degree: 10%
       + [将活动SDK集成到移动应用程序](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + [在Adobe Campaign中配置移动应用程序](delivery/using/configuring-the-mobile-application.md)
       + [创建通知](delivery/using/creating-notifications.md)
-      + [故障排除](delivery/using/troubleshooting.md)
+      + [疑难解答](delivery/using/troubleshooting.md)
    + 发送直邮 {#sending-direct-mail}
       + [关于直邮渠道](delivery/using/about-direct-mail-channel.md)
       + [创建直邮投放](delivery/using/creating-a-direct-mail-delivery.md)
@@ -166,7 +167,7 @@ ht-degree: 10%
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [重新参与最佳实践](delivery/using/re-engagement-best-practices.md)
       + [阻止列表库](delivery/using/block-list-databases.md)
-      + [故障排除](delivery/using/deliverability-faq.md)
+      + [疑难解答](delivery/using/deliverability-faq.md)
    + 内容管理模块 {#content-management}
       + [关于内容管理](delivery/using/about-content-management.md)
       + [内容管理者资源和原则](delivery/using/content-manager-resources-and-principles.md)
@@ -188,8 +189,8 @@ ht-degree: 10%
       + [营销活动投放](campaign/using/marketing-campaign-deliveries.md)
       + [营销活动批准](campaign/using/marketing-campaign-approval.md)
       + [营销活动监控](campaign/using/marketing-campaign-monitoring.md)
-      + [Providers, stocks and budgets](campaign/using/providers--stocks-and-budgets.md)
-   + Tasks, resources and budgets {#tasks--resources-and-budgets}
+      + [供应商、库存和预算](campaign/using/providers--stocks-and-budgets.md)
+   + 任务、资源和预算 {#tasks--resources-and-budgets}
       + [关于营销资源管理](campaign/using/about-marketing-resource-management.md)
       + [创建和管理任务](campaign/using/creating-and-managing-tasks.md)
       + [控制成本](campaign/using/controlling-costs.md)
@@ -197,32 +198,32 @@ ht-degree: 10%
       + [论坛](campaign/using/discussion-forums.md)
    + 活动优化 {#campaign-optimization}
       + [关于活动类型](campaign/using/about-campaign-typologies.md)
-      + [Pressure rules](campaign/using/pressure-rules.md)
-      + [Consistency rules](campaign/using/consistency-rules.md)
+      + [压力规则](campaign/using/pressure-rules.md)
+      + [一致性规则](campaign/using/consistency-rules.md)
       + [控制规则](campaign/using/control-rules.md)
       + [筛选规则](campaign/using/filtering-rules.md)
-      + [Applying rules](campaign/using/applying-rules.md)
-      + [Campaign simulations](campaign/using/campaign-simulations.md)
-   + Distributed Marketing {#distributed-marketing}
+      + [应用规则](campaign/using/applying-rules.md)
+      + [活动模拟](campaign/using/campaign-simulations.md)
+   + 分布式营销 {#distributed-marketing}
       + [关于分布式营销](campaign/using/about-distributed-marketing.md)
       + [创建本地活动](campaign/using/creating-a-local-campaign.md)
       + [创建协作活动](campaign/using/creating-a-collaborative-campaign.md)
-      + [Publishing the campaign package](campaign/using/publishing-the-campaign-package.md)
-      + [Accessing campaigns](campaign/using/accessing-campaigns.md)
-      + [Tracking a campaign](campaign/using/tracking-a-campaign.md)
+      + [发布活动包](campaign/using/publishing-the-campaign-package.md)
+      + [访问活动](campaign/using/accessing-campaigns.md)
+      + [跟踪活动](campaign/using/tracking-a-campaign.md)
       + [示例](campaign/using/examples.md)
    + 响应管理器 {#response-manager}
-      + [About response manager](campaign/using/about-response-manager.md)
+      + [关于响应管理器](campaign/using/about-response-manager.md)
       + [配置](campaign/using/configuration.md)
-      + [Hypothesis templates](campaign/using/hypothesis-templates.md)
-      + [Creating hypotheses](campaign/using/creating-hypotheses.md)
-      + [Hypothesis tracking](campaign/using/hypothesis-tracking.md)
+      + [假设验证模板](campaign/using/hypothesis-templates.md)
+      + [创建假设验证](campaign/using/creating-hypotheses.md)
+      + [假设验证跟踪](campaign/using/hypothesis-tracking.md)
 + 报告 {#reporting}
    + 报告Adobe Campaign {#reporting-in-adobe-campaign}
       + [开始使用报告](reporting/using/about-adobe-campaign-reporting-tools.md)
-      + [Best practices for reporting](reporting/using/best-practices.md)
-   + Accessing built-in reports {#accessing-built-in-reports}
-      + [About Campaign built-in reports](reporting/using/about-campaign-built-in-reports.md)
+      + [报告最佳实践](reporting/using/best-practices.md)
+   + 访问内置报告 {#accessing-built-in-reports}
+      + [关于活动内置报告](reporting/using/about-campaign-built-in-reports.md)
       + [报告列表](reporting/using/list-of-reports.md)
    + 投放报告{#reports-on-deliveries}
       + [关于投放报告](reporting/using/reports-on-deliveries.md)
@@ -299,7 +300,7 @@ ht-degree: 10%
       + [共享受众 [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [向Adobe提交请求](integrations/using/submitting-request-to-adobe.md)
       + [配置共享受众集成 [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
-      + [故障排除](integrations/using/troubleshooting.md)
+      + [疑难解答](integrations/using/troubleshooting.md)
       + [导入和导出受众](integrations/using/importing-and-exporting-audiences.md)
    + 资产共享 {#asset-sharing}
       + [与 [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
@@ -352,8 +353,8 @@ ht-degree: 10%
       + [查询](workflow/using/query.md)
       + [增量查询](workflow/using/incremental-query.md)
       + [读取列表](workflow/using/read-list.md)
-      + [合并](workflow/using/union.md)
-      + [交叉](workflow/using/intersection.md)
+      + [并集](workflow/using/union.md)
+      + [交集](workflow/using/intersection.md)
       + [排除](workflow/using/exclusion.md)
       + [拆分](workflow/using/split.md)
       + [单元格](workflow/using/cells.md)
@@ -423,7 +424,7 @@ ht-degree: 10%
       + 数据管理 {#data-management}
          + [协调数据更新](workflow/using/coordinating-data-updates.md)
          + [创建摘要列表](workflow/using/creating-a-summary-list.md)
-         + [丰富数据](workflow/using/enriching-data.md)
+         + [扩充数据](workflow/using/enriching-data.md)
          + [使用聚合](workflow/using/using-aggregates.md)
          + [每季度列表更新(使用增量查询)](workflow/using/quarterly-list-update.md)
       + 设计查询 {#designing-queries}
@@ -451,8 +452,8 @@ ht-degree: 10%
    + 技术工作流 {#technical-workflows}
       + [关于技术工作流](workflow/using/about-technical-workflows.md)
       + [投放](workflow/using/deliveries.md)
-      + [营销活动](workflow/using/campaign.md)
-      + [WebAnalytics](workflow/using/web-analytics.md)
+      + [营销策划](workflow/using/campaign.md)
+      + [Web分析](workflow/using/web-analytics.md)
       + [分布式营销](workflow/using/distributed-marketing.md)
       + [交付性监控](workflow/using/email-deliverability.md)
       + [收件箱呈现](workflow/using/inbox-rendering.md)
@@ -507,7 +508,7 @@ ht-degree: 10%
    + 跟踪优惠 {#tracking-offers}
       + [优惠建议历史](interaction/using/offer-proposition-history.md)
       + [优惠分析报告](interaction/using/offer-analysis-report.md)
-   + 高级参数 {#advanced-parameters}
+   + 高级参数{#advanced-parameters}
       + [使用高级参数](interaction/using/using-advanced-parameters.md)
       + [其他数据](interaction/using/additional-data.md)
       + [扩展示例](interaction/using/extension-example.md)
@@ -521,7 +522,7 @@ ht-degree: 10%
       + [优惠在出站渠道](interaction/using/offers-on-an-outbound-channel.md)
 + Transactional Messaging {#transactional-messaging}
    + 简介 {#introduction}
-      + [关于交易消息传递](message-center/using/about-transactional-messaging.md)
+      + [关于事务型消息传递](message-center/using/about-transactional-messaging.md)
       + [交易消息架构](message-center/using/transactional-messaging-architecture.md)
       + [事件描述](message-center/using/event-description.md)
    + 实例配置 {#instance-configuration}
@@ -539,7 +540,7 @@ ht-degree: 10%
       + [管理事务性消息中的种子地址](message-center/using/managing-seed-addresses-in-transactional-messages.md)
       + [个性化数据](message-center/using/personalization-data.md)
       + [事务性消息预览](message-center/using/transactional-message-preview.md)
-      + [发送验证](message-center/using/sending-a-proof.md)
+      + [发送校样](message-center/using/sending-a-proof.md)
       + [模板发布](message-center/using/template-publication.md)
       + [模板取消发布](message-center/using/template-unpublication.md)
    + 事件处理 {#event-processing}
@@ -556,7 +557,7 @@ ht-degree: 10%
       + [发送带有附件的交易电子邮件](message-center/using/transactional-email-with-attachments.md)
 + 与社交媒体集成 {#integrating-with-social-media}
    + [关于社交营销](social/using/about-social-marketing.md)
-   + Configuration {#configuration}
+   + 配置{#configuration}
       + [开始工作流](social/using/starting-workflows.md)
       + [在Facebook墙上发布](social/using/publishing-on-facebook-walls.md)
       + [创建Facebook应用程序](social/using/creating-a-facebook-application.md)
@@ -672,9 +673,9 @@ ht-degree: 10%
       + [密码丢失](production/using/lost-password.md)
       + [JSP行为](production/using/jsp-behavior.md)
 + 配置Campaign Classic {#configuring-campaign-classic}
-   + Data model {#data-model}
+   + 数据模型 {#data-model}
       + [关于数据模型](configuration/using/about-data-model.md)
-      + [数据模型描述](configuration/using/data-model-description.md)
+      + [数据模型说明](configuration/using/data-model-description.md)
       + [最佳做法](configuration/using/data-model-best-practices.md)
    + 模式参考 {#schema-reference}
       + [关于模式引用](configuration/using/about-schema-reference.md)
@@ -742,7 +743,7 @@ ht-degree: 10%
       + [迁移到Adobe Campaign7的先决条件](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
       + [在Windows中迁移，Adobe Campaign7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
       + [在Linux中迁移以Adobe Campaignv7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
-   + Configuration {#configuration}
+   + 配置{#configuration}
       + [常规配置](migration/using/general-configurations.md)
       + [v5.11中的特定配置](migration/using/specific-configurations-in-v5-11.md)
       + [v6.02中的特定配置](migration/using/specific-configurations-in-v6-02.md)
