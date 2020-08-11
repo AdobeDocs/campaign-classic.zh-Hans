@@ -1,6 +1,6 @@
 ---
-title: 在Adobe Campaign经典中管理交付性时的要点
-description: 在Adobe Campaign经典中管理交付性时，需要检查哪些要点？
+title: 在Adobe Campaign Classic管理可交付性时的要点
+description: 在Adobe Campaign Classic管理可交付性时，需要检查哪些要点？
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4582ea496fff35c5b586049b8daa379464bd78fc
+source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 0%
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## 发送到有效地址 {#valid-addresses}
 
-垃圾邮件发送者通常使用基于列表频繁姓名和名字的地址生成器； 此外，他们很少处理邮件服务器发送的技术通知。 无效地址的高率通常被解释为垃圾邮件的标志。 多次选择加入机制和对技术弹回消息的有效处理使避免这种情况成为可能。
+垃圾邮件发送者通常使用基于列表频繁姓名和名字的地址生成器；此外，他们很少处理邮件服务器发送的技术通知。 无效地址的高率通常被解释为垃圾邮件的标志。 多次选择加入机制和对技术弹回消息的有效处理使避免这种情况成为可能。
 
 ## 减少投诉和弹出率 {#reduce-complaint-rates}
 
@@ -71,3 +71,92 @@ ISP和其他组织(请参 [阅Project Honey Pot](https://www.projecthoneypot.org
 ## 善用声誉 {#reputation}
 
 垃圾邮件发送者使程序化投放能够随着时间的流逝保持其声誉。 他们有时需要调整营销计划，以符合ISP实施的最佳实践，因此，在声誉达到高峰（加速）后，他们会配置常规投放。
+
+## 最佳做法 {#best-practices}
+
+了解与Adobe Campaign交付性相关的最佳实践。 使用以下链接浏览主题并查找指南。
+
+<table>
+<tr>
+  <td>
+    <a href="starting-new-platform.md">
+      <img alt="开始" src="assets/do-not-localize/start.svg"/>
+    </a>
+    <div>
+      <a href="starting-new-platform.md">
+    <strong>开始</strong>
+    </a>
+    </div>
+    <p>
+    <em>启动新平台</em>
+    <p>
+  </td>
+   <td>
+    <a href="control-message-content.md">
+      <img alt="设计" src="assets/do-not-localize/design.svg"/>
+    </a>
+    <div>
+      <a href="control-message-content.md">
+    <strong>设计</strong>
+    </a>
+    </div>
+    <p>
+    <em>控制消息内容</em>
+    <p>
+  </td>
+  <td>
+    <a href="improve-reputation.md">
+      <img alt="设计" src="assets/do-not-localize/check.svg"/>
+    </a>
+    <div>
+      <a href="improve-reputation.md">
+    <strong>发送</strong>
+    </a>
+    </div>
+    <p>
+    <em>提高声誉</em>
+    <p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a href="technical-recommendations.md">
+      <img alt="优化" src="assets/do-not-localize/optimize.svg"/>
+    </a>
+    <div>
+      <a href="technical-recommendations.md">
+    <strong>优化</strong>
+    </a>
+    </div>
+    <p>
+    <em>技术建议</em>
+    <p>
+  </td>
+   <td>
+    <a href="monitoring-deliverability.md">
+      <img alt="检查" src="assets/do-not-localize/monitor.svg"/>
+    </a>
+    <div>
+      <a href="monitoring-deliverability.md">
+    <strong>监视器</strong>
+    </a>
+    </div>
+    <p>
+    <em>监视工具</em>
+    <p>
+  </td>
+  <td>
+    <a href="deliverability-faq.md">
+      <img alt="优化" src="assets/do-not-localize/troubleshoot.svg"/>
+    </a>
+    <div>
+      <a href="deliverability-faq.md">
+    <strong>疑难解答</strong>
+    </a>
+    </div>
+    <p>
+    <em>解决问题</em>
+    <p>
+  </td>
+</tr>
+</table>
