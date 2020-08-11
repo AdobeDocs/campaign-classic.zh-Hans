@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 41c515008a12fa066cedc9d7125195e2c4776f40
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 2%
+source-wordcount: '710'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 Campaign Classic **[!UICONTROL Monitoring]** 主页可访问该选项卡，它是帮助您监视实例的主要入口点。
 
-它提供实例发生情况的仪表板: 其状态（内部版本、安装的包等）、系统指示符、日志、当前正在运行的工作流、上次发送投放的状态等。
+它提供实例发生情况的仪表板:其状态（内部版本、安装的包等）、系统指示符、日志、当前正在运行的工作流、上次发送投放的状态等。
 
 详情请见[此处](../../production/using/monitoring-processes.md)。
 
@@ -58,7 +58,7 @@ Campaign Classic **[!UICONTROL Monitoring]** 主页可访问该选项卡，它�
 
 **控制面板**
 
-该控制面板允许您管理实例的多个设置： 管理URL权限，检查您的实例详细信息，如服务器的构建版本等。 它还允许您监视连接到实例的SFTP服务器上的可用空间。 [单击此处](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html) ，了解更多信息。
+该控制面板允许您管理实例的多个设置：管理URL权限，检查您的实例详细信息，如服务器的构建版本等。 它还允许您监视连接到实例的SFTP服务器上的可用空间。 [单击此处](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html) ，了解更多信息。
 
 >[!NOTE]
 >
@@ -96,11 +96,11 @@ Workflow HeatMap为实例上运行的所有工作流提供了直观的表示形�
 
 **SMTP报告**
 
-SMTP报告按域显示投放统计和SMTP错误。 [单击此处](../../production/using/monitoring-processes.md) ，了解更多信息。
+SMTP报告按域显示投放统计和SMTP错误。 [了解更多](../../production/using/monitoring-processes.md)
 
 **最佳做法**
 
-[投放发送和设计的最佳实践](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) ，可帮助您改进其性能。
+[投放发送和设计的最佳实践](../../delivery/using/delivery-best-practices.md) ，可帮助您改进其性能。
 
 **投放疑难**&#x200B;排解遇到投放问题时，可以执行特定操作：
 * [可交付性问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
