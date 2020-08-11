@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e31a0faf6c48e2d34ce47fc1cd5a23aae05aeebf
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2928'
 ht-degree: 0%
 
 ---
@@ -27,17 +27,17 @@ ht-degree: 0%
 
 投放可以通过活动仪表板、活动工作流或直接通过投放概述创建。
 
-## 创建投放 {#creating-deliveries}
+## 创建投放{#creating-deliveries}
 
 要创建链接到投放的活动，请单 **[!UICONTROL Add a delivery]** 击活动仪表板中的链接。
 
 ![](assets/campaign_op_add_delivery.png)
 
-建议的配置适用于不同类型的投放: 直邮、电子邮件、移动渠道
+建议的配置适用于不同类型的投放:直邮、电子邮件、移动渠道
 
 >[!NOTE]
 >
->有关创建和配置投放的详细信息，请参阅 [发送消息](../../delivery/using/communication-channels.md) 。
+>有关创建和配置投放的详细信息，请参阅 [发送消息](../../delivery/using/steps-about-delivery-creation-steps.md) 。
 
 ## 选择目标群 {#selecting-the-target-population}
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 * 主目标。 有关此问题的详细信息，请 [参阅在工作流中构建主目标](#building-the-main-target-in-a-workflow)[和选择目标填充](#selecting-the-target-population)。
 * 对照组。 有关此内容的详细信息，请参 [阅定义对照组](#defining-a-control-group)。
-* 种子地址。 如需详细信息，请参阅[此部分](../../delivery/using/about-seed-addresses.md)。
+* 种子地址。 有关更多信息，请参阅[此章节](../../delivery/using/about-seed-addresses.md)。
 
 其中一些信息是从模板继承的。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 要构建投放目标，您可以为数据库中的收件人定义过滤条件。 此收件人选择模式显示在“发送消 [息”部分](../../delivery/using/steps-defining-the-target-population.md) 。
 
-### 示例： 交付给一组收件人 {#example--delivering-to-a-group-of-recipients}
+### 示例：交付给一组收件人 {#example--delivering-to-a-group-of-recipients}
 
 您可以将人口导入列表，然后以投放目标此列表。
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 ### 在工作流中构建主目标 {#building-the-main-target-in-a-workflow}
 
-投放的主目标也可以在定位工作流中定义： 此图形环境允许您使用查询、测试和运算符构建目标: 合并、外部重复数据删除、共享等。
+投放的主目标也可以在定位工作流中定义：此图形环境允许您使用查询、测试和运算符构建目标:合并、外部重复数据删除、共享等。
 
 “使 [用工作流自动](../../workflow/using/architecture.md) ”指南包含工作流模块操作方式的详细说明。
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 >
 >在同一活动下，设置的工作流数不能超过28个。 超出此限制后，其他工作流在接口中不可见，并且可能生成错误。
 
-#### 创建定位工作流 {#creating-a-targeting-workflow}
+#### Creating a targeting workflow {#creating-a-targeting-workflow}
 
 可以通过工作流中图形序列中的过滤条件组合来创建定位。 您可以创建根据您的需求定位的人口和子人口。 要显示工作流编辑器，请单击 **[!UICONTROL Targeting and workflows]** 活动仪表板中的选项卡。
 
@@ -124,7 +124,7 @@ ht-degree: 0%
 
 可以根据计划(调度程序)或事件（外部信号、文件导入等）对目标进行编程以自动执行。
 
-与执行定位工作流（启动、停止、暂停等）相关的操作 是异 **步进** 程： 命令将保存，并在服务器可用时生效。
+与执行定位工作流（启动、停止、暂停等）相关的操作 是异 **步进** 程：命令将保存，并在服务器可用时生效。
 
 工具栏图标允许您执行定位工作流。
 
@@ -201,7 +201,7 @@ ht-degree: 0%
 
 ### 定义对照组 {#defining-a-control-group}
 
-对照组是不接受投放的人； 它通过与已接收投放的目标群体的行为进行比较来跟踪活动后行为和投放影响。
+对照组是不接受投放的人；它通过与已接收投放的目标群体的行为进行比较来跟踪活动后行为和投放影响。
 
 对照组可从主目标提取和／或来自特定组或查询。
 
@@ -219,7 +219,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-配置过程在从主对照组 [中提取目标和添加](#extracting-the-control-group-from-the-main-target)[填充中介绍](#adding-a-population)。
+配置过程在从主对照组 [中提取目标和添加对照组](#extracting-the-control-group-from-the-main-target)[中介绍](#adding-a-population)。
 
 #### 激活对照组以投放 {#activating-the-control-group-for-a-delivery}
 
@@ -238,7 +238,7 @@ ht-degree: 0%
 1. 单击选 **[!UICONTROL Control group]** 项卡，然后选择 **[!UICONTROL Enable and edit control group configuration]**。
 1. 单击 **[!UICONTROL Edit...]** 以配置对照组。
 
-配置过程在从主对照组 [中提取目标和添加](#extracting-the-control-group-from-the-main-target)[填充中介绍](#adding-a-population)。
+配置过程在从主对照组 [中提取目标和添加对照组](#extracting-the-control-group-from-the-main-target)[中介绍](#adding-a-population)。
 
 #### 从主对照组提取目标 {#extracting-the-control-group-from-the-main-target}
 
@@ -248,8 +248,8 @@ ht-degree: 0%
 
 要提取对照组，请为活动或投放启用对照组，然后选择以下选项之一： **[!UICONTROL Activate random sampling]** 或 **[!UICONTROL Keep only the first records after sorting]**&#x200B;者
 
-* **[!UICONTROL Activate random sampling]** : 此选项将随机采样应用于目标群体中的收件人。 如果您随后将阈值设置为100，则对照组将由100个从目标人群中随机选择的收件人组成。 随机采样取决于数据库引擎。
-* **[!UICONTROL Keep only the first records after sorting]** : 此选项允许您根据一个或多个排序顺序定义限制。 如果选择字 **[!UICONTROL Age]** 段作为排序标准，然后将100定义为阈值，则对照组将由100个最年轻的收件人组成。 例如，定义一个包含购买量很少的对照组或频繁购买的收件人的收件人，并将其行为与联系的收件人进行比较，这可能会很有意思。
+* **[!UICONTROL Activate random sampling]** :此选项将随机采样应用于目标群体中的收件人。 如果您随后将阈值设置为100，则对照组将由100个从目标人群中随机选择的收件人组成。 随机采样取决于数据库引擎。
+* **[!UICONTROL Keep only the first records after sorting]** :此选项允许您根据一个或多个排序顺序定义限制。 如果选择字 **[!UICONTROL Age]** 段作为排序标准，然后将100定义为阈值，则对照组将由100个最年轻的收件人组成。 例如，定义一个包含购买量很少的对照组或频繁购买的收件人的收件人，并将其行为与联系的收件人进行比较，这可能会很有意思。
 
 单 **[!UICONTROL Next]** 击以定义排序顺序（如有必要）并选择收件人限制模式。
 
@@ -257,7 +257,7 @@ ht-degree: 0%
 
 此配置等效于工作流中的共享活动，它允许您将目标分解为子集。 对照组是这些子集之一。 Refer to the [this section](../../workflow/using/architecture.md) for more information.
 
-### 添加人口 {#adding-a-population}
+### 添加对照组 {#adding-a-population}
 
 您可以定义要用作对照组的新人口。 此群体可以来自一组收件人，也可以通过特定查询创建。
 
@@ -279,7 +279,7 @@ ht-degree: 0%
 >
 >如果指定了特定运算符或操作员组以在投放的属性中启动投放，则还可以允许负责投放的运算符确认发送。 为此，请输 **入1作为值** ，激活 **NMS** _ActivateOwnerConfirmation选项。 这些选项通过Adobe Campaign资 **[!UICONTROL Administration]** 源 **[!UICONTROL Platform]** 管理器 **[!UICONTROL Options]** 中的> >节点进行管理。
 >  
->要取消激活此选项， **请输** 入0作为值。 然后，发送确认过程将作为默认过程： 只有在投放属性（或管理员）中为发送指定的运算符或操作员组才能确认和执行发送。
+>要取消激活此选项， **请输** 入0作为值。 然后，发送确认过程将作为默认过程：只有在投放属性（或管理员）中为发送指定的运算符或操作员组才能确认和执行发送。
 
 ![](assets/s_ncs_user_edit_del_to_start_from_del.png)
 
@@ -322,7 +322,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
-* 投放状态将更改为 **[!UICONTROL To submit]**。 单击按 **[!UICONTROL Submit proofs]** 钮以开始审批流程。
+* 投放状态将更改为 **[!UICONTROL To submit]**。 Click the **[!UICONTROL Submit proofs]** button to start the approval process.
 
    ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
@@ -338,7 +338,7 @@ ht-degree: 0%
 
 ### 计算费用和库存 {#calculation-of-costs-and-stocks}
 
-文件提取启动两个操作： 预算计算和库存计算。 将更新预算条目。
+文件提取启动两个操作：预算计算和库存计算。 将更新预算条目。
 
 * 通 **[!UICONTROL Budget]** 过选项卡可以管理活动的预算。 成本条目的总数显示在活动的 **[!UICONTROL Calculates cost]** 主标签和其所属项目的字段中。 金额也反映在活动预算中。
 
@@ -354,7 +354,7 @@ ht-degree: 0%
 
 ## 管理关联文档 {#managing-associated-documents}
 
-您可以将各种文档与活动关联： 报告、照片、网页、图表等。 这些文档可以采用任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 要将文档与活动关联，请参阅 [添加文档](#adding-documents)。
+您可以将各种文档与活动关联：报告、照片、网页、图表等。 这些文档可以采用任何格式(Microsoft Word、PowerPoint、PNG、JPG、AcrobatPDF等)。 要将文档与活动关联，请参阅 [添加文档](#adding-documents)。
 
 >[!IMPORTANT]
 >
@@ -401,9 +401,9 @@ ht-degree: 0%
 
 投放概要表示一组结构化元素(文档、分店／商店、促销优惠券等) 为特定公司创建。
 
-这些元素按投放概要进行分组，特定投放概要将与投放关联； 它将在发送到提取的服务提供商文件 **中引用** ，以便附加到投放。 例如，您可以创建引用分支及其使用的营销小册子的投放概要。
+这些元素按投放概要进行分组，特定投放概要将与投放关联；它将在发送到提取的服务提供商文件 **中引用** ，以便附加到投放。 例如，您可以创建引用分支及其使用的营销小册子的投放概要。
 
-对于活动,投放概要允许您根据特定条件构造要与投放关联的外部元素： 相关分支、授予的促销优惠、向本地事件发出的邀请等。
+对于活动,投放概要允许您根据特定条件构造要与投放关联的外部元素：相关分支、授予的促销优惠、向本地事件发出的邀请等。
 
 #### 创建大纲 {#creating-an-outline}
 
