@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5e8598fd445f6e2ebd891af1e15c07eb836cd647
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '618'
 ht-degree: 6%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 6%
 
 # 兼容性矩阵{#compatibility-matrix}
 
-此文档列表最新版本的 **Adobe Campaign经典（v6.11和v7）支持的所有系统和组件**。 不属于本列表的产品和版本与Adobe Campaign不兼容。
+此文档列表支持最新版本的 **Adobe Campaign Classic（v6.11和v7）的所有系统和组件**。 不属于本列表的产品和版本与Adobe Campaign不兼容。
 
 ## 重要说明{#important-notes}
 
@@ -31,7 +31,7 @@ ht-degree: 6%
 
 除非另有说明，否则支持所有次要版本。
 
-Adobe Campaign经典与本页中列出的所有系统和工具兼容。 由于这些第三方系统和工具的特定版本与其各自的创建者达到生命周期终止(EOL),Adobe Campaign将不再与这些版本兼容，并且它们将在后续产品版本中从我们的兼容性矩阵中删除。 请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
+Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于这些第三方系统和工具的特定版本与其各自的创建者达到生命周期终止(EOL),Adobe Campaign将不再与这些版本兼容，并且它们将在后续产品版本中从我们的兼容性矩阵中删除。 请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
 
 要了解有关已弃用项目的更多信息，请 [访问此页](../../rn/using/deprecated-features.md)。
 
@@ -159,7 +159,7 @@ Adobe Campaign经典与本页中列出的所有系统和工具兼容。 由于�
 <p>9.6.x</p>
 <p>10.x</p>
 <p>11.x</p>
-<p>注意： 您还可以将Amazon RDS for PostgreSQL与上述指定的版本一起使用。</p>
+<p>注意：您还可以将AmazonRDS for PostgreSQL与上述指定的版本一起使用。</p>
 </td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ Adobe Campaign经典与本页中列出的所有系统和工具兼容。 由于�
 <p>2014</p>
 <p>2016</p>
 <p>2017</p>
-<p>警告： 当活动服务器在Linux上运行时，不支持将Microsoft SQL Server作为主数据库。 请参阅安 <a href="https://docs.campaign.adobe.com/doc/AC/en/INS_Prerequisites_and_recommendations__Database.html#Microsoft_SQL_Server">装指南</a>。</p>
+<p>警告：当活动服务器在Linux上运行时，不支持将Microsoft SQL Server作为主数据库。 <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">了解更多</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -204,9 +204,9 @@ Adobe Campaign经典与本页中列出的所有系统和工具兼容。 由于�
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>Soap API —— 内部部署： 2007、2015、2016</p>
-<p>Soap API —— 在线： 2015年， 2016年</p>
-<p>Web API —— 内部部署和在线： 365、2016、2016更新1</p>
+<p>Soap API —— 内部部署：2007、2015、2016</p>
+<p>Soap API —— 在线：2015年， 2016年</p>
+<p>Web API —— 内部部署和在线：365、2016、2016更新1</p>
 </td>
 </tr>
 </tbody>
@@ -217,11 +217,11 @@ Adobe Campaign经典与本页中列出的所有系统和工具兼容。 由于�
 <table>
 <tbody>
 <tr>
-<td>微软Azure突触Analytics</td>
+<td>Microsoft Azure突触分析</td>
 <td> </td>
 </tr>
 <tr>
-<td>Amazon Redshift</td>
+<td>Amazon红移</td>
 <td><p> </p>
 </td>
 </tr>
@@ -292,7 +292,7 @@ Adobe Campaign经典与本页中列出的所有系统和工具兼容。 由于�
 </td>
 </tr>
 <tr>
-<td>雪花</td>
+<td>Snowflake</td>
 <td> </td>
 </tr>
 </tbody>
