@@ -13,23 +13,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
+source-git-commit: 251244225076dd11a319d1c4b2124c0d05168eaa
 workflow-type: tm+mt
-source-wordcount: '1987'
-ht-degree: 1%
+source-wordcount: '1976'
+ht-degree: 3%
 
 ---
 
 
 # 最新版本{#latest-release}
 
-![](assets/do-not-localize/cp-icon.png) **新控制面板6月版** ，包含活动用户档案监视、子域交付性审核和GPG密钥管理。 [了解更多](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新控制面板6月版** ，包含活动用户档案监视、子域交付性审核和GPG密钥管理。 [了解更多](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) 版本20.2.1 —— 内部版本9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/blue_2.png) 版本20.2.2 —— 内部版本9180 {#release-20-2-2-build-9180}
 
 _2020年7月22日_
 
-* 修复了在禁用签名功能或将旧营销实例与最近的“中间”一起使用时，跟踪无法正常工作的问题。 (NEO-26411)
+* 修复了在禁用签名功能时跟踪无法工作的问题。 (NEO-26411)
 * 修复了导致个性化域中未签名链接在应允许时被阻止的问题。 (NEO-25210)
 * 修复了在使用某些旧版Outlook时无法打开／单击跟踪URL的问题。 (NEO-25688)
 * 修复了导致镜像页面URL在电子邮件投放中定义不正确的问题。 (NEO-26084)
@@ -51,7 +51,7 @@ _2020年7月22日_
 
 _2020年6月8日_
 
-**新增内容?**
+**新增功能**
 
 <table> 
  <thead> 
@@ -95,8 +95,8 @@ _2020年6月8日_
    <p>巴西的Lei Geral de Proteção de Dados(LGPD)将从8月16日起生效，适用于巴西所有收集或处理个人数据的公司。</p>
    <p>这些法规适用于为居住在这些国家／地区的Adobe Campaign主体持有数据的客户。 除了活动中已有的隐私权功能（包括同意管理、数据保留设置和用户角色），我们还将利用此机会加入其他功能，以帮助您做好PDPA和LGPD的准备：</p>
    <ul> 
-     <li><p>访问权和删除权： 我们正在利用为GDPR和CCPA添加的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">阅读更多</a></p></li> 
-     <li> <p>使用活动接口或API创建隐私请求时，您现在选择规 <strong>定类</strong> 型： PDPA、LGPD、GDPR、CCPA。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">阅读更多</a>。</p></li>
+     <li><p>访问权和删除权：我们将充分利用 GDPR 和 CCPA 所增加的权利。<a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">阅读更多</a></p></li> 
+     <li> <p>使用活动接口或API创建隐私请求时，您现在选择规 <strong>定类</strong> 型：PDPA、LGPD、GDPR、CCPA。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">了解更多</a>。</p></li>
     </ul>
    </td> 
   </tr> 
@@ -118,19 +118,19 @@ _2020年6月8日_
 **兼容性增强**
 
 活动现在支持以下系统：
-* 操作系统： 德比10
-* RDBMS: Oracle 18c和Oracle 19c
-* 联合数据访问: Azure突触Analytics
+* 操作系统：德比10
+* RDBMS:Oracle 18c和Oracle 19c
+* 联合数据访问:Azure突触分析
 
 了解有关活动 [兼容性矩阵的更多信息](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
 
 **改进**
 
-* 交易消息已得到改进，可获得更好的用户体验。 您现在可以取消发布事务性消息模板，这将从执行实例中删除它。 [了解更多](../../message-center/using/template-unpublication.md)。
+* 交易消息已得到改进，可获得更好的用户体验。 您现在可以取消发布事务性消息模板，这将从执行实例中删除它。 [了解更多](../../message-center/using/template-unpublication.md).
 
 * 新选项可用于设置发送包含图像或附件的电子邮件时的限制。 这些护栏可以避免性能问题，这对于事务性消息尤为有用。 [阅读更多](../../installation/using/configuring-campaign-options.md#delivery)
 
-* 新的“ **在投放库中准备部分** ”选项允许直接在数据库中执行投放准备，这可以显着加快分析。 此选项仅适用于特定配置。 [了解更多](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis)。 (NEO-23886)
+* 新的“ **在投放库中准备部分** ”选项允许直接在数据库中执行投放准备，这可以显着加快分析。 此选项仅适用于特定配置。 [了解更多](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
 
 * 针对Microsoft Dynamics [的CRM连接器活动](../../workflow/using/crm-connector.md) (CRM Connector Connector)的性能已得到改进。 (NEO-13303, NEO-12710)
 
@@ -140,17 +140,17 @@ _2020年6月8日_
    >
    >执行升级后，此改进需要执行额外的步骤。 请参阅下 **面的技术** 演变部分。
 
-* 清理工作流已得到增强。 所有已删除工作流的孤立工作表现在也由清除工作流自动删除。 [了解更多](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances)。
+* 清理工作流已得到增强。 所有已删除工作流的孤立工作表现在也由清除工作流自动删除。 [了解更多](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
 
 * 使用iOS HTTP2连接器的iOS移动应用程序的证书现在在发送推送通知之前经过验证，从而防止投放因证书过期而失败。
 
-* HTTP代理连接的管理已得到改进。 [了解更多](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)。
+* HTTP代理连接的管理已得到改进。 [了解更多](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
-**其他更改**
+**其他变更**
 
 * 现已弃用传统SMS连接器。 请参阅“已弃 [用的功能”页](../../rn/using/deprecated-features.md)。
 
-* 您不能再使用自己的Litmus帐户来配置和使用Adobe Campaign中的收件箱呈现。 [了解更多](../../delivery/using/inbox-rendering.md)。
+* 您不能再使用自己的Litmus帐户来配置和使用Adobe Campaign中的收件箱呈现。 [了解更多](../../delivery/using/inbox-rendering.md).
 
 * 为了更好地区分视图和文件夹，视图名称的颜色已从深蓝色更改为深青色。 [阅读更多](../../platform/using/access-management.md#about-views)
 
@@ -162,7 +162,7 @@ _2020年6月8日_
 
 * 在日志文件中添加了一条错误消息，当下载的文件大于磁盘空间时警告用户。
 
-* 雪花连接器现在可使用以下功能： 几个月前，几天前Int,ToDateTime，几年前。
+* Snowflake连接器现在可使用以下功能：几个月前，几天前Int,ToDateTime，几年前。
 
 **技术演进**
 
@@ -218,7 +218,7 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 * 修复了在恢复工作流以发送重复目标时跳过投放批准步骤的问题。 (NEO-18166)
 * 修复了在工作流中修 **复错误后** ,“重新启动消息准备”按钮无法恢复投放的问题。 (NEO-13488)
 * 修复了在中间源阶段可能导致投放在目标包括日语电子邮件格式的收件人的模式下失败的问题。 (NEO-23846)
-* 修复了雪花连接器的时区转换问题(NEO-20105)
+* 修复了Snowflake连接器的时区转换问题(NEO-20105)
 * 修复了外部帐户使用FTP over SSL时的问题。 (NEO-20498)
 * 修复了一个问题，该问题可能会阻止图像以行投放显示。 (NEO-23207)
 * 修复了在发布优惠时导致错误的问题。 (NEO-23312)
