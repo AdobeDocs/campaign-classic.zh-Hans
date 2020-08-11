@@ -14,10 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 74%
+source-wordcount: '346'
+ht-degree: 76%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 74%
 
 开始设计电子邮件之前，请先了解通过 Adobe Campaign 进行投放设计以及发送相关的概念和最佳实践。
 
-[单击此处了解更多信息](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)。
+[单击此处了解更多信息](../../delivery/using/delivery-best-practices.md)。
 
 ## What is a delivery template? {#what-is-a-delivery-template-}
 
