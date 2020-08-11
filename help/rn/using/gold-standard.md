@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 890153a5b30594a1cb90606db4be8fd1ec19267b
+source-git-commit: 2604df2e6b6a7520e2f2a82f04c75ceb749fde79
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ _2020年7月7日_
 
 内部版本9032@efd8a94包含以下修复：
 
-修复了在禁用签名功能或将旧营销实例与最近的“中间”一起使用时，跟踪无法正常工作的问题。 (NEO-26411)
+修复了在禁用签名功能时跟踪无法工作的问题。 (NEO-26411)
 
 >[!CAUTION]
 >
@@ -102,7 +102,7 @@ _2019年12月17日_
 
 内部版本9032@d6b8062包含以下修复：
 
-* 修复了以下通信渠道的跟踪问题： 移动(SMS、MMS)、推送(iOS、Android)和社交网络(Facebook、Twitter)。 (NEO-19595)
+* 修复了以下通信渠道的跟踪问题：移动(SMS、MMS)、推送(iOS、Android)和社交网络(Facebook、Twitter)。 (NEO-19595)
 
 ## ![](assets/do-not-localize/orange_2.png) Gold Standard 4版{#gs-4}
 
