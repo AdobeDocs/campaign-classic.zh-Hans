@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
 workflow-type: tm+mt
-source-wordcount: '6943'
+source-wordcount: '7069'
 ht-degree: 13%
 
 ---
@@ -25,7 +25,37 @@ ht-degree: 13%
 
 本页列表每月所有新增功能和文档更新以及活动版本。
 
+
 您还可以查阅《Adobe Campaign Classic [发行说明](../../rn/using/latest-release.md) 》以获取更多更新。
+
+## 2020 年 8 月 {#aug-2020}
+
+通过专门的章节了解与投放设计和与活动一起发送相关的最佳实践。 [阅读更多](../../delivery/using/delivery-best-practices.md)
+
+改进了“交付能力”最佳做法登陆页，以便访问各分节。 [阅读更多](../../delivery/using/deliverability-key-points.md)
+
+操作方法视频现在可用于以下主题：
+
+* [如何利用类型规则和预定义过滤器建立疲劳管理](../../campaign/using/about-campaign-typologies.md)
+
+* [如何在活动中创建电子邮件](../../campaign/using/designing-marketing-campaigns.md)
+
+* [如何创建包含条件内容的多语言新闻稿](../../delivery/using/conditional-content.md)
+
+* [如何配置和部署投放模板](../../delivery/using/creating-a-delivery-template.md)
+
+* [如何激活和使用AMP处理电子邮件](../../delivery/using/defining-interactive-content.md)
+
+* [如何使用动态内容块个性化电子邮件](../../delivery/using/personalization-blocks.md)
+
+* [如何使用个性化字段个性化电子邮件](../../delivery/using/personalization-fields.md)
+
+* [如何在电子邮件中管理种子和验证](../../delivery/using/steps-defining-the-target-population.md)
+
+* [如何设置重复投放](../../workflow/using/recurring-delivery.md)
+
+* [如何设置连续投放](../../workflow/using/continuous-delivery.md)
+
 
 ## 2020 年 7 月 {#july-2020}
 
