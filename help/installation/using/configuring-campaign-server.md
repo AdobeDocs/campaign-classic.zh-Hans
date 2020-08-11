@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3593'
 ht-degree: 3%
 
 ---
@@ -31,19 +31,19 @@ ht-degree: 3%
 >
 >这些配置必须由管理员执行，并且 **仅适用于预置** 托管模型。
 >
->对 **于托管** (Hosted)部署，服务器端设置只能由Adobe配置。 但是，可以在控制面板中设置一些设置（例如，IP允许列表管理或URL权限）。
+>对于 **托管** (Hosted)部署，服务器端设置只能由Adobe配置。 但是，可以在控制面板中设置一些设置(例如，IP允许列表管理或URL权限)。
 
 有关详细信息，请参阅以下部分：
 
 * [控制面板文档](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
 * [托管模型](../../installation/using/hosting-models.md)
 * [Campaign Classic本地和托管功能矩阵](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
-* [混合型号和托管型号配置步骤](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_About_hybrid_and_hosted_models.html)
+* [混合型号和托管型号配置步骤](../../installation/using/about-hybrid-and-hosted-models.md) )
 
 Campaign Classic配置文件存储在 **Adobe Campaign** 安装文件夹的conf文件夹中。 配置分布在两个文件上：
 
-* **serverConf.xml**: 所有实例的常规配置。 此文件结合了Adobe Campaign服务器的技术参数： 这些属性由所有实例共享。 下面详细介绍了其中一些参数。 本节中列出的不同节点和 [参数](../../installation/using/the-server-configuration-file.md)。
-* **config-`<instance>`.xml** (其中 **instance是实例的名称** ): 实例的特定配置。 如果您在多个实例之间共享服务器，请在其相关文件中输入每个实例的特定参数。
+* **serverConf.xml**:所有实例的常规配置。 此文件结合了Adobe Campaign服务器的技术参数：这些属性由所有实例共享。 下面详细介绍了其中一些参数。 本节中列出的不同节点和 [参数](../../installation/using/the-server-configuration-file.md)。
+* **config-`<instance>`.xml** (其中 **instance是实例的名称** ):实例的特定配置。 如果您在多个实例之间共享服务器，请在其相关文件中输入每个实例的特定参数。
 
 ## 定义安全区域 {#defining-security-zones}
 
@@ -109,12 +109,12 @@ Campaign Classic配置文件存储在 **Adobe Campaign** 安装文件夹的conf�
 
 定义区域的所有权利如下：
 
-* **allowDebug**: 允许在“调试”模式下执行webApp
-* **allowEmptyPassword**: 授权无口令连接实例
-* **allowHTTP**: 无需使用HTTPS协议即可创建会话
-* **allowUserPassword**: 会话令牌可以具有以下格式“`<login>/<password>`”
-* **sessionTokenOnly**: 连接URL中不需要安全令牌
-* **showErrors**: 转发并显示服务器端的错误
+* **allowDebug**:允许在“调试”模式下执行webApp
+* **allowEmptyPassword**:授权无口令连接实例
+* **allowHTTP**:无需使用HTTPS协议即可创建会话
+* **allowUserPassword**:会话令牌可以具有以下格式“`<login>/<password>`”
+* **sessionTokenOnly**:连接URL中不需要安全令牌
+* **showErrors**:转发并显示服务器端的错误
 
 >[!IMPORTANT]
 >
@@ -170,15 +170,15 @@ Campaign Classic配置文件存储在 **Adobe Campaign** 安装文件夹的conf�
 
 可能会发生各种情况：
 
-* 子网络在安全区中直接引用，并且未配置代理： 子网用户可以直接连接到Adobe Campaign服务器。
+* 子网络在安全区中直接引用，并且未配置代理：子网用户可以直接连接到Adobe Campaign服务器。
 
    ![](assets/8101_proxy1.png)
 
-* 为安全区域中的子网络指定代理： 来自此子网络的用户可以通过此代理访问Adobe Campaign服务器。
+* 为安全区域中的子网络指定代理：来自此子网络的用户可以通过此代理访问Adobe Campaign服务器。
 
    ![](assets/8101_proxy2.png)
 
-* 代理包含在安全区子网络中： 有权通过此代理访问的用户，无论其来源如何，都可以访问Adobe Campaign服务器。
+* 代理包含在安全区子网络中：有权通过此代理访问的用户，无论其来源如何，都可以访问Adobe Campaign服务器。
 
    ![](assets/8101_proxy3.png)
 
@@ -211,7 +211,7 @@ Campaign Classic配置文件存储在 **Adobe Campaign** 安装文件夹的conf�
 
 区域的技术配置在活动服务器的配置文件中执行： **serverConf.xml**。
 
-在此之前，您必须通过配置现成的开始来 **[!UICONTROL Security zone]** 明细列表标签，以将标签链接到serverConf.xml文件中定义的 **区域的内部名称** 。
+在此之前，您必须通过配置现成开始来明细列表 **[!UICONTROL Security zone]** ，将标签链接到serverConf.xml文件中定义的 **区域的内部名称** 。
 
 此配置在活动资源管理器中完成：
 
@@ -306,7 +306,7 @@ MTA模块充当SMTP广播（端口25）的本机邮件传输代理。
 
 >[!IMPORTANT]
 >
->关联配置需要从一台服务器协调到另一台服务器。 我们建议您联系Adobe进行关联配置，因为应在运行MTA的所有应用程序服务器上复制配置更改。
+>关联配置需要从一台服务器协调到另一台服务器。 我们建议您与Adobe联系进行关联配置，因为应在运行MTA的所有应用程序服务器上复制配置更改。
 
 您可以通过具有IP地址的关联改善出站SMTP通信。
 
@@ -314,9 +314,9 @@ MTA模块充当SMTP广播（端口25）的本机邮件传输代理。
 
 1. 在serverConf.xml文 **`<ipaffinity>`** 件的一 **节中输入关联** 。
 
-   一个关联可以有多个不同的名称： 分离，使用 **;** 字符。
+   一个关联可以有多个不同的名称：分离，使用 **;** 字符。
 
-   例如：
+   示例:
 
    ```
     IPAffinity name="mid.Server;WWserver;local.Server">
@@ -351,16 +351,16 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 
 它们取决于您的托管模式，用于管理URL权限的方式如下：
 
-* **混合** 或 **内部部署**: 添加允许进入serverConf. **xml文件的URL**。 详细信息请参阅以下部分。
-* **托管**: 通过控制面板添加允许 **的URL**。 有关详细信息，请参阅[专用文档](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)。
+* **混合** 或 **内部部署**:添加允许进入serverConf. **xml文件的URL**。 详细信息请参阅以下部分。
+* **托管**:添加允许通过控制面板的 **URL**。 有关详细信息，请参阅[专用文档](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)。
 
 借助 **Hybrid****和On-premise** 托管模型，管理员需要在 **ServerConf.xml文件中引** 用新的 **urlPermission** 。 serverConf.xml中的所 **有可用参数** 都列在本 [节中](../../installation/using/the-server-configuration-file.md)。
 
 存在三种连接保护模式：
 
-* **阻止**: 将阻止所有不属于允许列表的URL，并显示错误消息。 这是在配置升级之后的默认模式。
-* **允许**: 允许所有不属于允许列表的URL。
-* **警告**: 允许所有不属于允许列表的URL，但JS解释器会发出警告，以便管理员可以收集这些URL。 此模式添加JST-310027警告消息。
+* **阻止**:将阻止所有不属于该允许列表的URL，并显示错误消息。 这是在配置升级之后的默认模式。
+* **允许**:允许所有不属于允许列表的URL。
+* **警告**:允许所有不属于该允许列表的URL，但JS解释器会发出警告，以便管理员可以收集这些URL。 此模式添加JST-310027警告消息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -372,15 +372,15 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 
 >[!IMPORTANT]
 >
->默认情况下，新客户的客户端使用 **阻止模式**。 如果他们需要允许新URL，则应联系其管理员，将其添加到允许列表。
+>默认情况下，新客户的客户端使用 **阻止模式**。 如果需要允许新URL，则应联系管理员以将其添加到允许列表。
 >
->来自迁移的现有客户可以使用 **警告模式** ，时间较长。 同时，在对URL授权之前，他们需要分析出站流量。 定义授权URL的列表后，他们应联系其管理员，将URL添加到允许列表并激活 **阻止模式**。
+>来自迁移的现有客户可以使用 **警告模式** ，时间较长。 同时，在对URL授权之前，他们需要分析出站流量。 定义授权URL的列表后，应联系其管理员，将URL添加到允许列表并激活阻 **止模式**。
 
 ## 动态页面安全性和中继 {#dynamic-page-security-and-relays}
 
 默认情况下，所有动态页都自动与启 **动Web模块** 的计算机的本地Tomcat服务器相关。 此配置在ServerConf.xml **`<url>`** 文件的查询中继配置 **部分中输入** 。 serverConf.xml中的所 **有可用参数** 都列在本 [节中](../../installation/using/the-server-configuration-file.md)。
 
-在远程服务器上中继动态页 **的执** 行； 如果计算机上未激活Web模块。 为此，必须用JSP和 **JSSP** 、Web 应用程序、报表和字符串的远程计算机名称替换localhost。
+在远程服务器上中继动态页 **的执** 行；如果计算机上未激活Web模块。 为此，必须用JSP和 **JSSP** 、Web 应用程序、报表和字符串的远程计算机名称替换localhost。
 
 有关各种可用参数的详细信息，请 **参阅serverConf.xml** 配置文件。
 
@@ -392,17 +392,17 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 
 Adobe Campaign使用以下JSP页：
 
-* /nl/jsp/**soaprouter.jsp**: 客户端控制台和Web服务连接(SOAP API),
-* /nl/jsp/**m.jsp**: 镜像页面,
-* /nl/jsp/**logon.jsp**: 基于Web访问报告和客户端控制台的部署，
-* /nl/jsp/**s.jsp** : 使用病毒式营销（赞助和社交网络）。
+* /nl/jsp/**soaprouter.jsp**:客户端控制台和Web服务连接(SOAP API),
+* /nl/jsp/**m.jsp**:镜像页面,
+* /nl/jsp/**logon.jsp**:基于Web访问报告和客户端控制台的部署，
+* /nl/jsp/**s.jsp** :使用病毒式营销（赞助和社交网络）。
 
 用于移动应用程序渠道的JSSP如下：
 
 * nms/mobile/1/registerIOS.jssp
 * nms/mobile/1/registerAndroid.jssp
 
-**例如：**
+**示例:**
 
 可以从外部阻止客户机连接。 为此，只需限制soaprouter.jsp **的执行** ，并仅授权执行镜像页面、病毒链接、Web表单和公共资源。
 
@@ -457,7 +457,7 @@ sh
 
 在服务器 **配置** 文件的执行节点中，需要引用blocklistFile属性中以前创建 **的文件** 。
 
-**仅适用于Linux**: 在服务器配置文件中，我们重命令您指定一个专用于执行外部命令的用户，以增强您的安全配置。 此用户在配置文 **件的** “执行”节点中设置。 serverConf.xml中的所 **有可用参数** 都列在本 [节中](../../installation/using/the-server-configuration-file.md)。
+**仅适用于Linux**:在服务器配置文件中，我们重命令您指定一个专用于执行外部命令的用户，以增强您的安全配置。 此用户在配置文 **件的** “执行”节点中设置。 serverConf.xml中的所 **有可用参数** 都列在本 [节中](../../installation/using/the-server-configuration-file.md)。
 
 >[!NOTE]
 >
@@ -485,8 +485,9 @@ sh
 1. 在节 **`<relay>`** 点中，转到中继HTTP头的列表。
 1. 添加具 **`<responseheader>`** 有以下属性的元素：
 
-   * **name**: 标题名称
-   * **值**: 值名称。
+   * **name**:标题名称
+   * **值**:值名称。
+
    例如：
 
    ```
@@ -495,7 +496,7 @@ sh
 
 ## 冗余跟踪 {#redundant-tracking}
 
-当多台服务器用于重定向时，它们必须能够通过SOAP调用彼此通信，以共享来自要重定向的URL的信息。 在投放开始时，可能并非所有重定向服务器都可用； 因此他们可能没有同等级别的信息。
+当多台服务器用于重定向时，它们必须能够通过SOAP调用彼此通信，以共享来自要重定向的URL的信息。 在投放开始时，可能并非所有重定向服务器都可用；因此他们可能没有同等级别的信息。
 
 >[!NOTE]
 >
@@ -503,14 +504,14 @@ sh
 
 必须通过serverConf.xml文件在重定向配置中指定冗余服 **务器的URL** 。 serverConf.xml中的所 **有可用参数** 都列在本 [节中](../../installation/using/the-server-configuration-file.md)。
 
-**例如：**
+**示例:**
 
 ```
 <spareserver enabledIf="$(hostname)!='front_srv1'" id="1" url="http://front_srv1:8080" />
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-enableIf **属性是** 可选的（默认情况下为空），并且仅当结果为true时，才允许启用连接； 这样，您就可以在所有重定向服务器上获得相同的配置。
+enableIf **属性是** 可选的（默认情况下为空），并且仅当结果为true时，才允许启用连接；这样，您就可以在所有重定向服务器上获得相同的配置。
 
 要获取计算机的主机名，请运行以下命令： **hostname -s**。
 
@@ -610,7 +611,7 @@ enableIf **属性是** 可选的（默认情况下为空），并且仅当结果
 
 ## 代理连接配置 {#proxy-connection-configuration}
 
-如果需要通过代理将活动服务器连接到外部(例如使用文件传输工作流活动)，则需要通过命令配置serverConf的proxyConfig部分。 可以使用以下代理连接： HTTP、HTTPS、FTP、SFTP。 serverConf.xml中的所 **有可用参数** 都列在本 [节中](../../installation/using/the-server-configuration-file.md)。
+如果需要通过代理将活动服务器连接到外部(例如使用文件传输工作流活动)，则需要通过命令配置serverConf的proxyConfig部分。 可以使用以下代理连接：HTTP、HTTPS、FTP、SFTP。 serverConf.xml中的所 **有可用参数** 都列在本 [节中](../../installation/using/the-server-configuration-file.md)。
 
 >[!NOTE]
 >
