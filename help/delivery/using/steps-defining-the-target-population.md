@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -59,16 +59,16 @@ ht-degree: 0%
 
    默认情况下，提供以下目标类型：
 
-   * **[!UICONTROL Filtering conditions]** : 此选项允许您定义查询并显示结果。 本节介绍了定义查询 [的方法](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
-   * **[!UICONTROL Subscribers of an information service]** : 通过此选项，您可以选择收件人必须订阅到的新闻稿，以便由创建的投放定位。
+   * **[!UICONTROL Filtering conditions]** :此选项允许您定义查询并显示结果。 本节介绍了定义查询 [的方法](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
+   * **[!UICONTROL Subscribers of an information service]** :通过此选项，您可以选择收件人必须订阅到的新闻稿，以便由创建的投放定位。
 
       ![](assets/s_ncs_user_wizard_email02c.png)
 
-   * **[!UICONTROL Recipients of a delivery]** : 此选项允许您将现有收件人的投放定义为定位标准。 然后，您必须在投放中选择列表:
+   * **[!UICONTROL Recipients of a delivery]** :此选项允许您将现有收件人的投放定义为定位标准。 然后，您必须在投放中选择列表:
 
       ![](assets/s_ncs_user_wizard_email02d.png)
 
-   * **[!UICONTROL Delivery recipients belonging to a folder]** : 通过此选项，您可以选择投放文件夹，并目标该文件夹中的投放的收件人。
+   * **[!UICONTROL Delivery recipients belonging to a folder]** :通过此选项，您可以选择投放文件夹，并目标该文件夹中的投放的收件人。
 
       ![](assets/s_ncs_user_wizard_email02e.png)
 
@@ -80,10 +80,10 @@ ht-degree: 0%
       >
       >通过 **[!UICONTROL Include sub-folders]** 该选项还可以目标包含在选定节点下树结构中文件夹中的投放。
 
-   * **[!UICONTROL Recipients included in a folder]** : 通过此选项，可以目标树的特定文件夹中包含的用户档案。
-   * **[!UICONTROL A recipient]** : 通过此选项，您可以从收件人库的用户档案中选择特定的数据。
-   * **[!UICONTROL A list of recipients]** : 此选项允许您目标一列表收件人。 列表显示在 [本节中](../../platform/using/creating-and-managing-lists.md)。
-   * **[!UICONTROL User filters]** : 通过此选项，您可以访问预配置的过滤器，将其用作用户档案库中的筛选条件。 此部分显示预配置 [的过滤器](../../platform/using/creating-filters.md#saving-a-filter)。
+   * **[!UICONTROL Recipients included in a folder]** :通过此选项，可以目标树的特定文件夹中包含的用户档案。
+   * **[!UICONTROL A recipient]** :通过此选项，您可以从收件人库的用户档案中选择特定的数据。
+   * **[!UICONTROL A list of recipients]** :此选项允许您目标一列表收件人。 列表显示在 [本节中](../../platform/using/creating-and-managing-lists.md)。
+   * **[!UICONTROL User filters]** :通过此选项，您可以访问预配置的过滤器，将其用作用户档案库中的筛选条件。 此部分显示预配置 [的过滤器](../../platform/using/creating-filters.md#saving-a-filter)。
    * 通过该选 **[!UICONTROL Exclude recipients corresponding to this segment]** 项，可以目标不满足定义的目标条件的收件人。 要使用此选项，请选择相应的框，然后应用定位（如前面所定义）以排除生成的用户档案。
 
       ![](assets/s_ncs_user_wizard_email02g.png)
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->在为电子邮件投放定义邮件内容时，不要包含指向镜像页面的链接； 无法在此投放模式下生成。
+>在为电子邮件投放定义邮件内容时，不要包含指向镜像页面的链接；无法在此投放模式下生成。
 
 ### 设置排除设置 {#customizing-exclusion-settings}
 
@@ -142,14 +142,14 @@ ht-degree: 0%
 
 可以使用以下选项：
 
-* **[!UICONTROL Exclude duplicate addresses during delivery]**. 此选项默认处于活动状态： 它允许您在投放期间删除重复电子邮件地址。 所应用的策略可能因Adobe Campaign的使用方式和数据库中数据的类型而异。
+* **[!UICONTROL Exclude duplicate addresses during delivery]**. 此选项默认处于活动状态：它允许您在投放期间删除重复电子邮件地址。 所应用的策略可能因Adobe Campaign的使用方式和数据库中数据的类型而异。
 
    可以为每个投放模板配置选项的默认值。
 
    例如：
 
-   * 投放新闻稿或电子文档投放。 在某些情况下，如果重复没有本机重复，则不排除该数据。 订阅同一电子邮件地址的夫妇可能会收到两条特定的个性化电子邮件： 每个人的姓名。 在这种情况下，可以取消选择此选项。
-   * 营销投放活动: 重复排除对于避免向同一收件人发送过多消息至关重要。 在这种情况下，可以选择此选项。
+   * 投放新闻稿或电子文档投放。 在某些情况下，如果重复没有本机重复，则不排除该数据。 订阅同一电子邮件地址的夫妇可能会收到两条特定的个性化电子邮件：每个人的姓名。 在这种情况下，可以取消选择此选项。
+   * 营销投放活动:重复排除对于避免向同一收件人发送过多消息至关重要。 在这种情况下，可以选择此选项。
 
       如果取消选择此选项，则可以访问其他选项： **[!UICONTROL Keep duplicate records (same identifier)]**. 它允许您为满足多个定位标准的投放授权多个收件人。
 
@@ -208,7 +208,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 1. 单击图 **[!UICONTROL Add]** 标以定义替代。
 1. 输入要使用的收件人地址，或从列表中选择它。
-1. 选择要在用户档案中使用的验证: 将值 **[!UICONTROL Random]** 保存在列 **[!UICONTROL Profile to use]** 中，以使用验证中用户档案的任何目标的数据。
+1. 选择要在用户档案中使用的验证:将值 **[!UICONTROL Random]** 保存在列 **[!UICONTROL Profile to use]** 中，以使用验证中用户档案的任何目标的数据。
 
    ![](assets/s_ncs_user_wizard_email_bat_substitute_choose.png)
 
@@ -220,7 +220,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 ## 将种子地址用作验证 {#using-seed-addresses-as-proof}
 
-您可以 **[!UICONTROL Seed addresses]** 用作目标验证: 此选项允许您使用或导入现有列表的种子地址。
+您可以 **[!UICONTROL Seed addresses]** 用作目标验证:此选项允许您使用或导入现有列表的种子地址。
 
 ![](assets/s_ncs_user_wizard_email_bat_control_address.png)
 
@@ -229,3 +229,15 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 >种子地址显示在“关于 [种子地址”中](../../delivery/using/about-seed-addresses.md)。
 
 您可以使用选项组合特定验证目标的定义和种子地址的 **[!UICONTROL Specific target and Seed addresses]** 使用。 相关配置随后在两个单独的子标签中定义。
+
+## 如何在电子邮件中管理种子和验证
+
+在此视频中，您将学习如何在现有电子邮件中添加种子和验证，以及如何发送。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+另请参阅：
+* [选择验证目标](#selecting-the-proof-target)
+
+* [关于种子地址](../../delivery/using/about-seed-addresses.md)
+
+* [用例：根据条件选择种子地址](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
