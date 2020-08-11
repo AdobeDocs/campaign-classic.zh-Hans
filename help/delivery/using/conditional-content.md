@@ -15,55 +15,58 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
 
 # 条件内容{#conditional-content}
 
-通过配置条件内容字段，您可以创建基于收件人配置文件的动态个性化。 当满足特定条件时，替换文本块和／或图像。
+通过配置条件内容字段，您可以根据收件人的用户档案创建动态个性化。 当满足特定条件时替换文本块和／或图像。
 
 ## 在电子邮件中使用条件 {#using-conditions-in-an-email}
 
-在以下示例中，您将学习如何创建消息，并根据收件人的性别和兴趣动态个性化。
+在以下示例中，您将学习如何创建信息，根据收件人的性别和兴趣动态个性化。
 
-* 显示“Mr.” 或“女士” 根据数据源中 **[!UICONTROL Gender]** 字段（M或F）的值，
-* 根据显示或检测到的兴趣个性化组合新闻稿或促销优惠：
+* 展示“先生” 或“女士” 根据数据源 **[!UICONTROL Gender]** 中字段（M或F）的值，
+* 根据所显示或检测到的兴趣个性化组合新闻稿或促销优惠:
 
-   * Interest 1 — > Block 1
-   * Interest 2 — > Block 2
-   * 兴趣三— >第3块
-   * 兴趣四— >第四块
+   * 利息1 — >块1
+   * 利息2 — >块2
+   * 利息3 — >第3块
+   * 利息4 — >第4块
 
 要根据字段的值创建条件内容，请应用以下步骤：
 
-1. 单击个性化图标，然后选择 **[!UICONTROL Conditional content > If]**。
+1. 单击个性化图标并选择 **[!UICONTROL Conditional content > If]**。
 
    ![](assets/s_ncs_user_conditional_content02.png)
 
-   个性化元素将插入消息正文中。 您现在必须配置它们。
+   个性化元素会插入消息正文中。 您现在必须配置它们。
 
-1. 然后，填充if表达式的 **参数** 。
+1. 然后，填写if表达式的 **参数** 。
 
    操作步骤：
 
-   * 选择表达式的第一个元素 **`<field>`**,(默认情况下，插入 **** if表达式时会高亮显示此元素)，然后单击个性化图标以将其替换为测试字段。
+   * 选择表达式的第一个元素 **`<field>`**(默认情况下，插入if表达式时，此元素会高亮 **显示** )，然后单击个性化图标以将其替换为测试字段。
 
       ![](assets/s_ncs_user_conditional_content03.png)
 
-   * 用 **`<value>`** 满足条件的字段的值替换。 此值必须用引号表示。
+   * 替 **`<value>`** 换为满足条件的字段的值。 此值必须用引号表示。
    * 指定满足条件时要插入的内容。 这可能由文本、图像、表单、超文本链接等组成。
 
       ![](assets/s_ncs_user_conditional_content04.png)
 
-1. 单击选 **[!UICONTROL Preview]** 项卡，根据分发收件人查看消息的内容：
+1. 单击选 **[!UICONTROL Preview]** 项卡以根据视图收件人投放消息的内容：
 
-   * 选择条件为true的收件人：
+   * 选择条件为True的收件人:
 
       ![](assets/s_ncs_user_conditional_content05.png)
 
-   * 选择条件不为的收件人：
+   * 选择条件不为真的收件人:
 
       ![](assets/s_ncs_user_conditional_content06.png)
 
@@ -73,18 +76,18 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 >[!CAUTION]
 >
->要遵循JavaScript语法，必 **须在添加Else和Else（如果条件）之后删除** % **> &lt;%** 字符 **** 。
+>要遵循JavaScript语法，必 **须在添加Else和Else条件后** ，删除%> **&lt;** % **>** 字符（如果条件）。
 
-单击 **[!UICONTROL Preview]** 并选择收件人以查看条件内容。
+单 **[!UICONTROL Preview]** 击并选择收件人以视图条件内容。
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
 ## 创建多语言电子邮件 {#creating-multilingual-email}
 
-在以下示例中，您将学习如何创建多语言电子邮件。 内容将根据收件人的首选语言以一种语言或另一种语言显示。
+在以下示例中，您将学习如何创建多语言电子邮件。 内容将以一种语言或另一种语言显示，具体取决于收件人喜欢的语言。
 
-1. 创建电子邮件并选择目标人群。 在此示例中，显示一个版本或另一个版本的条件将基于收件人配置文件的 **“语言** ”值。 在此示例中，这些值设置 **为EN**、 **FR**、 **ES**。
-1. 在电子邮件HTML内容中，单击该选 **[!UICONTROL Source]** 项卡并粘贴以下代码：
+1. 创建电子邮件并选择目标群。 在此示例中，显示一个版本或另一个版本的条件将基于 **收件人** 用户档案的“语言”值。 在此示例中，这些值设 **置为** EN **、FR**、 **ES**。
+1. 在电子邮件HTML内容中，单击 **[!UICONTROL Source]** 选项卡并粘贴以下代码：
 
    ```
    <% if (language == "EN" ) { %>
@@ -105,8 +108,14 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
    <% } %>
    ```
 
-1. 通过选择具有不同首选语 **[!UICONTROL Preview]** 言的收件人，在选项卡中测试电子邮件内容。
+1. 通过选择使用不同首选 **[!UICONTROL Preview]** 语言的收件人，在选项卡中测试电子邮件内容。
 
    >[!NOTE]
    >
-   >由于电子邮件内容中未定义任何替代版本，请确保在发送电子邮件之前过滤目标人群。
+   >由于电子邮件内容中未定义任何替代版本，请确保在发送电子邮件之前过滤目标群。
+
+## 如何创建包含条件内容的多语言新闻稿
+
+通过多语言新闻快讯的示例，了解如何向投放添加条件内容。
+
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
