@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe活动经典
 translation-type: tm+mt
-source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
+source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2110'
 ht-degree: 11%
 
 ---
@@ -89,13 +89,17 @@ ht-degree: 11%
       + [CRM连接器](platform/using/crm-connectors.md)
       + [Adobe Analytics数据连接器](platform/using/adobe-analytics-data-connector.md)
 + 发送消息 {#sending-messages}
-   + 消息入门 {#about-deliveries-and-channels}
-      + [通信渠道](delivery/using/communication-channels.md)
-      + [投放最佳实践](delivery/using/delivery-best-practices.md)
-      + [访问投放信息](delivery/using/accessing-deliveries-information.md)
-      + [投放类型](delivery/using/types-of-deliveries.md)
+   + [消息入门](delivery/using/communication-channels.md)
+   + 投放最佳实践 {#delivery-bestpractices}
+      + [学习最佳实践](delivery/using/delivery-best-practices.md)
+      + [优化投放](delivery/using/optimize-delivery.md)
+      + [使用模板](delivery/using/use-templates.md)
+      + [构建个性化内容](delivery/using/design-and-personalize.md)
+      + [定义正确的受众](delivery/using/define-the-right-audience.md)
+      + [发送前检查](delivery/using/check-before-sending.md)
+      + [跟踪和监视](delivery/using/track-and-monitor.md)
    + 创建投放时的关键步骤 {#key-steps-when-creating-a-delivery}
-      + [关于投放创建 ](delivery/using/steps-about-delivery-creation-steps.md)
+      + [开始使用投放](delivery/using/steps-about-delivery-creation-steps.md)
       + [创建和识别投放](delivery/using/steps-create-and-identify-the-delivery.md)
       + [定义目标群](delivery/using/steps-defining-the-target-population.md)
       + [验证投放](delivery/using/steps-validating-the-delivery.md)
@@ -139,8 +143,8 @@ ht-degree: 11%
       + [创建种子地址](delivery/using/creating-seed-addresses.md)
       + [添加种子地址](delivery/using/adding-seed-addresses.md)
       + [使用外部收件人表](delivery/using/using-an-external-recipient-table.md)
-      + [用例： 根据条件选择种子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
-      + [用例： 配置字段替换](delivery/using/use-case--configuring-the-field-substitution.md)
+      + [用例：根据条件选择种子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+      + [用例：配置字段替换](delivery/using/use-case--configuring-the-field-substitution.md)
    + 订阅和推荐 {#subscriptions-and-referrals}
       + [关于服务和订阅](delivery/using/about-services-and-subscriptions.md)
       + [管理订阅](delivery/using/managing-subscriptions.md)
@@ -171,7 +175,7 @@ ht-degree: 11%
    + 内容管理模块 {#content-management}
       + [关于内容管理](delivery/using/about-content-management.md)
       + [内容管理者资源和原则](delivery/using/content-manager-resources-and-principles.md)
-      + [用例： 创建内容管理](delivery/using/use-case--creating-content-management.md)
+      + [用例：创建内容管理](delivery/using/use-case--creating-content-management.md)
       + [数据模式](delivery/using/data-schemas.md)
       + [输入表单](delivery/using/input-forms.md)
       + [格式化](delivery/using/formatting.md)
@@ -255,13 +259,13 @@ ht-degree: 11%
       + [创建指示器](reporting/using/creating-indicators.md)
       + [使用多维数据集浏览数据](reporting/using/using-cubes-to-explore-data.md)
       + [概念和方法](reporting/using/concepts-and-methodology.md)
-      + [用例： 显示在线调查的答案报告](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
+      + [用例：显示在线调查的答案报告](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + 设计Web内容 {#designing-content}
    + Web 应用程序 {#web-applications}
       + [关于Web应用程序](web/using/about-web-applications.md)
       + [创建新Web应用程序](web/using/creating-a-new-web-application.md)
       + [设计Web应用程序](web/using/designing-a-web-application.md)
-      + [用例： 创建概述](web/using/use-cases--creating-overviews.md)
+      + [用例：创建概述](web/using/use-cases--creating-overviews.md)
       + [翻译Web应用程序](web/using/translating-a-web-application.md)
       + [跟踪Web应用程序](web/using/tracking-a-web-application.md)
       + [Web 应用程序跟踪退出](web/using/web-application-tracking-opt-out.md)
@@ -272,7 +276,7 @@ ht-degree: 11%
       + [编辑内容](web/using/editing-content.md)
       + [内容编辑最佳实践](web/using/content-editing-best-practices.md)
       + [创建登陆页](web/using/creating-a-landing-page.md)
-      + [用例： 创建电子邮件投放](web/using/use-case--creating-an-email-delivery.md)
+      + [用例：创建电子邮件投放](web/using/use-case--creating-an-email-delivery.md)
    + Web 窗体 {#web-forms}
       + [关于Web表单](web/using/about-web-forms.md)
       + [使用Web表单模板](web/using/using-a-web-form-template.md)
@@ -285,7 +289,7 @@ ht-degree: 11%
       + [发布Web表单](web/using/publishing-a-web-form.md)
       + [定义Web表单属性](web/using/defining-web-forms-properties.md)
       + [翻译Web表单](web/using/translating-a-web-form.md)
-      + [用例： Web表单](web/using/use-cases--web-forms.md)
+      + [用例：Web表单](web/using/use-cases--web-forms.md)
    + 在线调查 {#online-surveys}
       + [关于调查](web/using/about-surveys.md)
       + [调查入门](web/using/getting-started-with-surveys.md)
@@ -293,7 +297,7 @@ ht-degree: 11%
       + [管理答案](web/using/managing-answers.md)
       + [发布、跟踪和使用收集的数据](web/using/publish--track-and-use-collected-data.md)
       + [配置调查](web/using/configuring-surveys.md)
-      + [用例： 创建参考朋友表单](web/using/use-case--creating-a-refer-a-friend-form.md)
+      + [用例：创建参考朋友表单](web/using/use-case--creating-a-refer-a-friend-form.md)
 + Integrating with Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [关于 Campaign 集成](integrations/using/about-campaign-integrations.md)
    + 受众共享 {#audience-sharing}
@@ -723,7 +727,7 @@ ht-degree: 11%
    + 设置Web跟踪 {#setting-up-web-tracking}
       + [关于Web跟踪](configuration/using/about-web-tracking.md)
       + [Web 跟踪模式](configuration/using/web-tracking-mode.md)
-      + [Web 跟踪标记: 定义](configuration/using/web-tracking-tag--definition.md)
+      + [Web 跟踪标记:定义](configuration/using/web-tracking-tag--definition.md)
       + [设置阶段](configuration/using/setup-stages.md)
       + [其他参数](configuration/using/additional-parameters.md)
       + [创建Web跟踪标签](configuration/using/creating-web-tracking-tags.md)
