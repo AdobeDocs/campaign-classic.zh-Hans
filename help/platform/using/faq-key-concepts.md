@@ -1,6 +1,6 @@
 ---
 title: 重要概念
-seo-title: 营销活动功能常见问题解答
+seo-title: 活动功能常见问题解答
 description: Campaign Classic常见问题解答
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 72%
 
 ---
 
@@ -56,11 +59,11 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块及其配置
 
 [单击此处了解有关](../../platform/using/access-management.md)用户权限的更多信息。
 
-## 如何确保隐私权与Campaign的合规性？ {#how-to-be-gdpr-compliant-with-campaign-}
+## 如何确保隐私符合活动? {#how-to-be-gdpr-compliant-with-campaign-}
 
-Adobe Campaign提供一套工具，可帮助您遵守GDPR和CCPA的隐私保护规定。
+Adobe Campaign优惠一组工具，帮助您遵守GDPR和CCPA的隐私权。
 
-请参阅[此文档](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html)，了解 Adobe Campaign 提供的工具、功能以及最佳实践，帮助您在使用我们的服务时遵循 GDPR 规定。本文介绍了Campaign Classic的实施 [步骤](https://helpx.adobe.com/campaign/kb/acc-privacy.html)。
+请参阅[此文档](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html)，了解 Adobe Campaign 提供的工具、功能以及最佳实践，帮助您在使用我们的服务时遵循 GDPR 规定。本文介绍了Campaign Classic的实 [施步骤](https://helpx.adobe.com/campaign/kb/acc-privacy.html)。
 
 ## 我应该了解哪些 Campaign 用户界面概念? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
@@ -108,7 +111,7 @@ Adobe Campaign 包括在不同的应用程序服务器模块之间编排所有�
 
 在 Campaign Classic 中您可通过专用的[投放报告](../../reporting/using/delivery-reports.md)跟踪并监视您发送的投放内容。
 
-在此页面中进一步了解Campaign中的跟 [踪管理](https://helpx.adobe.com/campaign/kb/acc-tracking.html)。
+在本页了解有关活动中跟踪管 [理的更多信息](https://helpx.adobe.com/campaign/kb/acc-tracking.html)。
 
 ## What are security best practices (on-premise)? {#what-are-security-best-practices--on-premise--}
 
@@ -116,7 +119,7 @@ Adobe Campaign 包括在不同的应用程序服务器模块之间编排所有�
 
 ## How to translate an error message? {#how-to-translate-an-error-message-}
 
-错误消息是用外文显示的？[此页面](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)中列出了所有错误消息及其译文。
+错误消息是用外文显示的？[此页面](https://docs.adobe.com/content/help/zh-Hans/campaign-classic/technicalresources/error_messages/error_codes.html)中列出了所有错误消息及其译文。
 
 ## Can I create a webform and collect answers in Campaign? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 
