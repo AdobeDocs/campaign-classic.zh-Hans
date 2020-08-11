@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '6953'
+source-wordcount: '6943'
 ht-degree: 13%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 13%
 
 一个关于如何使用增量列表自动更新查询的用例已添加到工作流用例中。 [阅读更多](../../workflow/using/about-workflow-use-cases.md)
 
-“发 [行说明](../../rn/using/latest-release.md) ”已重新组织： 已添 [加概述页](../../rn/using/latest-release.md) ，其中包含有关构建状态、升级过程、建议和重要链接的信息。 此外，还添加了 [Gold Standard版本](../../rn/using/gold-standard.md) 的专用页面，并集 [成了兼容性](../../rn/using/compatibility-matrix.md) 矩阵。
+“发 [行说明](../../rn/using/latest-release.md) ”已重新组织：已添 [加概述页](../../rn/using/latest-release.md) ，其中包含有关构建状态、升级过程、建议和重要链接的信息。 此外，还添加了 [Gold Standard版本](../../rn/using/gold-standard.md) 的专用页面，并集 [成了兼容性](../../rn/using/compatibility-matrix.md) 矩阵。
 
 新增了一节，其中载有与Campaign Classic监测相关的准则。 [阅读更多](../../production/using/monitoring-guidelines.md)
 
@@ -137,7 +137,7 @@ Adobe Campaign增强的MTA文章已更新。 现在只适用于Campaign Classic�
 
 “交付性常见问题解答”已更新，其中包含有关“满足配额”错误消息的更多详细信息。 [阅读更多](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
 
-新的电子邮件提供商现在支持电子邮件AMP: 相关文档已更新。 [阅读更多](../../delivery/using/defining-interactive-content.md)
+新的电子邮件提供商现在支持电子邮件AMP:相关文档已更新。 [阅读更多](../../delivery/using/defining-interactive-content.md)
 
 电子邮件存档部分已得到改进。 [阅读更多](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
@@ -291,7 +291,7 @@ Adobe Campaign与Adobe实时客户数据平台之间的集成现在在与Adobe E
 
 控制面板 - [了解更多](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
 
-审核跟踪——阅 [读更多](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Audit_trail.html)
+审核跟踪——阅 [读更多](../../production/using/audit-trail.md)
 
 **随版本提供的其他文档更新**
 
@@ -337,7 +337,7 @@ Transactional Messaging文档已更新，并带有有关模板发布的说明。
 
 新增了有关工作流计划最佳实践的一节。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Workflow_best_practices.html#Execution_and_performance)
 
-为列表活动选项添加了两个新选项： XtkSecurity_Restrict_EditXML和NmsOperation_OperationMgtDebug。
+为列表活动选项添加了两个新选项：XtkSecurity_Restrict_EditXML和NmsOperation_OperationMgtDebug。
 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
 
 添加了有关Campaign Classic中可用的不同外部帐户以及如何配置这些数据的信息。
@@ -382,7 +382,7 @@ Marketing Cloud触发器技术说明已更新。 [阅读更多](https://helpx.ad
 
 * 如果您已经使用旧版本的电子邮件归档(在Adobe Campaign17.2 —— 内部版本8795之前)，则我们更新了升级到新电子邮件归档系统(BCC)的步骤。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Updated_email_archiving_system__BCC_)
 
-在“使用工作流实现自动化”指南中添加了一个用例： 向运营商发送个性化提醒。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Sending_personalized_alerts_to_operators.html)
+在“使用工作流实现自动化”指南中添加了一个用例：向运营商发送个性化提醒。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Sending_personalized_alerts_to_operators.html)
 
 “迁移到新版本”部分已更新。 文档现在只详细介绍从任何旧版本迁移到Adobe Campaign Classicv7的步骤，因为不再可以迁移到Adobe Campaignv6.11。阅 [读更多](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
 
@@ -440,7 +440,7 @@ Campaign ClassicAPI现在可在专用 [页面中使用](https://docs.campaign.ad
 
 已将有关如何使用种子地址的部分移到“发送消息指南”概述章节。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
-添加了新的工作流用例： 管理伴随的工作流执行中的更新。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
+添加了新的工作流用例：管理伴随的工作流执行中的更新。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
 “收件箱呈现”部分已更新，其中包含有关Litmus的更多信息和更详细的操作过程。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html#Multiplexing_the_mid-sourcing_server)
 
@@ -635,7 +635,7 @@ SAP HANA连接器——阅 [读更多](https://docs.campaign.adobe.com/doc/AC/en
 
 通过HiveSQL的Hadoop Connector —— 阅 [读更多](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_Accessing_an_external_database.html#Hadoop)
 
-行渠道: 消息传递增强- [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_messages_on_mobiles_LINE_channel.html)
+行渠道:消息传递增强- [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_messages_on_mobiles_LINE_channel.html)
 
 **随版本提供的其他文档更新**
 
@@ -653,7 +653,7 @@ A/B测试范例已更新，缺少说明。 [阅读更多](https://docs.campaign.
 
 添加暂停的工作流最佳实践。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html)
 
-有关在工作流中导出数据时导入和后处理文件的新过程。 请 [在这里](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html)。
+有关在工作流中导出数据时导入和后处理文件的新过程。 请 [在此处](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html)。
 
 SMS消息文档的隔离机制已更新，以反映扩展通用SMPP连接器的错误管理的特性。 [了解更多](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_quarantine_management.html#SMS_quarantines)。
 
@@ -687,15 +687,15 @@ SMS渠道文档已更新，在“自动回复”部分中添加了一些说明�
 
 ## 2017 年 3 月{#release-doc-31-03-2017}
 
-可交付性： 已 [更新入门](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) 指南。 交付性文档现在包含更详细 [的概述](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_About_deliverability.html) ，以及实施 [过程和主要步骤的说明](../../delivery/using/deliverability-key-points.md)。
+可交付性：已 [更新入门](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) 指南。 交付性文档现在包含更详细 [的概述](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_About_deliverability.html) ，以及实施 [过程和主要步骤的说明](../../delivery/using/deliverability-key-points.md)。
 
 “使用批次发送”部分已通过详细示例、建议和使用案例进行移动和增强。    [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/DLV_Sending_emails_Sending_messages.html#Sending_using_multiple_waves)
 
 “隔离管理”部分已添加一个表，其中描述了SMS消息特有的错误。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_quarantine_management.html#SMS_quarantines)
 
-工作流: 新增了多渠道工作流示例。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Cross-channel_deliveries)
+工作流:新增了多渠道工作流示例。 [阅读更多](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Cross-channel_deliveries)
 
-Marketing Cloud触发器： 添加了有关如何配置它并将其与Adobe Campaign一起使用的技术说明。 [了解更多](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
+Marketing Cloud触发器：添加了有关如何配置它并将其与Adobe Campaign一起使用的技术说明。 [了解更多](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
 
 重组并扩展了工作流指南。Easily find how to [build](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Building_a_workflow.html) and [execute](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html) a workflow, how to [target](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Targeting_data.html) and [manage](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Targeting_data.html#Data_Management) your data, how to [import](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html) data, and how to use workflow data to [update the database](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Updating_the_database) or to [send deliveries](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Delivering_via_a_workflow).
 
