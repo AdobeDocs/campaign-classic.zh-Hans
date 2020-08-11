@@ -1,5 +1,5 @@
 ---
-title: 档案和受众常见问题解答
+title: 用户档案和受众常见问题解答
 seo-title: 常见问题
 description: Campaign Classic常见问题解答
 page-status-flag: never-activated
@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 54%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
 
 ## How to create recipients? {#how-to-create-recipients-}
 
-您可以导入收件人或使用营销活动客户端控制台手动创建收件人。 阅读[此部分](../../platform/using/about-profiles.md)，并了解如何在 Campaign 中创建和管理用户档案。
+您可以导入收件人或使用活动客户端控制台手动创建它们。 阅读[此部分](../../platform/using/about-profiles.md)，并了解如何在 Campaign 中创建和管理用户档案。
 
 ## How to import profiles? {#how-to-import-profiles-}
 
@@ -39,7 +42,7 @@ source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
 
 列表是一组静态的收件人，用于在投放操作期间提供定位目标，在导入操作或工作流执行期间进行更新。例如，通过查询从数据库中提取出的一组数据即可形成一个列表。
 
-[单击此处了解更多信息](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。You can also watch [this video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) about how to create a list manually, and [this other video](https://docs.campaign.adobe.com/doc/AC/en/Videos/creating_list_recipients_611.mp4) to create and automatically update a list of recipients in a workflow.
+[单击此处了解更多信息](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。You can also watch [this video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) about how to create a list manually, and [this other video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) to create and automatically update a list of recipients in a workflow.
 
 ## How can I deduplicate a population before sending a message? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
