@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3b04cf988f144b8bfb846aff83e97c9b3a82e6e0
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 91%
@@ -41,7 +41,7 @@ Adobe Campaign 中的营销活动周期体现了产品功能的主要方面：
 
 ![](assets/d_ncs_user_emarketing.png)
 
-### 整合的客户档案 {#integrated-customer-profile}
+### 整合的客户用户档案 {#integrated-customer-profile}
 
 用户档案（客户、潜在客户、新闻稿订阅者等）将集中存储在 Adobe Campaign 数据库中。有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助 Adobe Campaign，您可以整合营销历史、购买信息、偏好、CRM 数据，以及整合视图中任何相关的 PII 数据，从而进行分析并采取行动。
 
@@ -77,7 +77,7 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 
 下列功能可供使用。根据您的许可协议，其中某些功能可在您的实例中使用或不使用。
 
-* [渠道](../../delivery/using/communication-channels.md) - 在不同渠道上设计并投放内容：电子邮件、SMS、Line、移动应用程序、直邮，
+* [渠道](../../delivery/using/steps-about-delivery-creation-steps.md) - 在不同渠道上设计并投放内容：电子邮件、SMS、Line、移动应用程序、直邮，
 * [活动](../../campaign/using/designing-marketing-campaigns.md) - 跨渠道编排各种活动，
 * [MRM](../../campaign/using/about-marketing-resource-management.md) - 管理营销资源和预算，
 * [互动](../../interaction/using/interaction-and-offer-management.md) - 通过 Campaign 管理优惠方案，
