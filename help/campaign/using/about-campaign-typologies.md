@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 6%
+source-wordcount: '479'
+ht-degree: 8%
 
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->根据您的产品，可以包含活动优化或加载项。 请检查您的许可协议。
+>根据您的产品，可以包含活动优化或加载项。 请核实您的许可协议。
 
-## 类型规则 {#typology-rules}
+## 分类规则 {#typology-rules}
 
 利用Adobe Campaign，您可以设计并应用四种类型规则:
 
@@ -42,7 +42,7 @@ ht-degree: 6%
 
 创建类型规则后，活动类型将分组，这些在投放中引用。 请参 [阅应用排版](#applying-typologies)。
 
-## 类型 {#typologies}
+## 分类 {#typologies}
 
 活动类型可以包含多 [个类型规则](#typology-rules)，但投放只能引用一种类型。
 
@@ -64,11 +64,27 @@ ht-degree: 6%
 
    通过>节点访 **[!UICONTROL Administration > Campaign Management > Typology management]** 问 **[!UICONTROL Typologies]** 字体。
 
-1. 配置投放以使用您创建的排版。 如需详细信息，请参阅[此部分](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery)。
+1. 配置投放以使用您创建的排版。 有关更多信息，请参阅[此章节](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery)。
 1. 通过活动模拟测试和控制行为。 For more on campaign simulations, refer to [this section](../../campaign/using/campaign-simulations.md).
 
-在准备投放时，在满足标准时排除收件人。 您可以检查日志以监视排除。 本页提供压力类型规则的示 [例用例](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)。
+在准备投放时，在满足标准时排除收件人。 您可以检查日志以监视排除情况。本页提供压力类型规则的示 [例用例](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)。
+
+## 如何使用类型规则建立疲劳管理
+
+此视频介绍如何通过利用类型规则在Adobe Campaign Classic实施疲劳管理。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
+
+## 如何使用预定义过滤器建立疲劳管理
+
+疲劳管理控制消息传递的频率和数量，以避免收件人过度请求。 如果您的活动实例中没有活动优化模块，您可以配置一个预定义的过滤器，它将按收到的消息数来过滤目标群。此视频介绍如何使用过滤器在Adobe Campaign Classic实施疲劳管理。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
 **相关主题**
 
 * [将自动业务规则应用于任何投放的渠道](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
+
+* [关于活动类型](../../campaign/using/pressure-rules.md)
+
+* [使用压力规则管理营销疲劳](https://docs.adobe.com/content/help/en/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
