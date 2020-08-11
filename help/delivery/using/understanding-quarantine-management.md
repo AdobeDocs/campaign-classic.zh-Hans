@@ -15,59 +15,59 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b080bdc4d719994c74ec5c094c917e2c40839a49
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 2%
+source-wordcount: '2576'
+ht-degree: 14%
 
 ---
 
 
 # 了解隔离管理{#understanding-quarantine-management}
 
-## 关于隔离 {#about-quarantines}
+## 关于隔离{#about-quarantines}
 
 Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认情况下会将其地址已被隔离的收件人排除在外，不会将其设为目标。举例来说，信箱已满或地址不存在时，可以隔离某个电子邮件地址。无论如何，隔离程序都符合下面描述的特定规则。
 
 >[!NOTE]
 >
->本条适用于在线渠道: 电子邮件、短信、推送通知。
+>本条适用于在线渠道:电子邮件、短信、推送通知。
 
-### 通过投放优化您的隔离 {#optimizing-your-delivery-through-quarantines}
+### 通过隔离优化投放{#optimizing-your-delivery-through-quarantines}
 
-在准备邮件时，其电子邮件地址或电话号码处于隔离的用户档案会自动被排除(请 [参阅识别投放的隔离地址](#identifying-quarantined-addresses-for-a-delivery))。 这将加快投放速度，因为错误率对投放速度有显着影响。
+在准备消息时，电子邮件地址或电话号码处于隔离状态的用户档案会被自动被排除（请参阅[确定投放的隔离地址](#identifying-quarantined-addresses-for-a-delivery)）。这样可加快投放速度，因为错误率对投放速度有显著的影响。
 
-如果无效地址的速率过高，某些互联网访问提供商会自动将电子邮件视为垃圾邮件。 因此，隔离允许您避免被这些提供者添加到块列表。
+如果无效地址率过高，某些互联网访问提供商会自动将电子邮件判断为垃圾邮件。因此，隔离允许您避免被这些提供商添加到阻止列表。
 
-此外，隔离排除来自投放的错误电话号码有助于降低短信发送成本。 有关保护和优化投放的最佳实践的更多信息，请参 [阅本页](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)。
+此外，隔离还可避免向错误的电话号码投放短信，有助于降低短信发送成本。有关安全防护和优化投放之最佳做法的更多信息，请参阅[此页面](../../delivery/using/delivery-best-practices.md)。
 
-### 隔离与块列表 {#quarantine-vs-block-list}
+### 隔离与阻止列表 {#quarantine-vs-block-list}
 
-**隔离** 仅适用于地址，而不适用于用户档案本身。 这意味着，如果两个用户档案具有相同的电子邮件地址，那么如果地址被隔离，他们都会受到影响。
+**隔离**&#x200B;仅适用于地址，而不适用于用户档案本身。这意味着，如果两个用户档案具有相同的电子邮件地址，那么隔离该地址会同时影响这两个用户档案。
 
-同样，被隔离电子邮件地址的用户档案可以更新其用户档案并输入新地址，然后可以再次通过投放操作来定位。
+同样，其电子邮件地址被隔离的用户档案可以更新其用户档案并输入新地址，然后即可再次被投放操作定向。
 
-另一方 **面**，位于块列表上将导致用户档案不再被任何投放定位，例如，在退订（选择退出）之后。
-
->[!NOTE]
->
->当用户用诸如“STOP”的关键字回复SMS消息以选择不接收SMS投放时，其用户档案不会像电子邮件选择退出过程那样添加到块列表中。 用户档案电话号码被发送给隔离，以便用户继续接收电子邮件。
-
-## 识别隔离地址 {#identifying-quarantined-addresses}
-
-可以为特定投放或整个平台列出隔离的地址。
-
-### 识别投放的隔离地址 {#identifying-quarantined-addresses-for-a-delivery}
-
-特定投放的隔离地址在投放准备阶段列在投放仪表板的投放日志中(请参阅投放日志 [和历史记录](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history))。
-
-### 识别整个平台的隔离地址 {#identifying-quarantined-addresses-for-the-entire-platform}
-
-管理员可以从节点列表整个平台的隔离中的地 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** 址。
+Being on the **block list**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
 
 >[!NOTE]
 >
->此菜单列表隔离了 **电子邮件**、 **SMS** 和推 **送通知** 渠道的元素。
+>当用户用诸如“STOP”的关键字回复SMS消息以选择不接收SMS投放时，其用户档案不会像电子邮件选择退出过程中那样添加到阻止列表中。 用户档案电话号码被发送给隔离，以便用户继续接收电子邮件。
+
+## 确定隔离的地址{#identifying-quarantined-addresses}
+
+可以针对特定投放或整个平台列出隔离的地址。
+
+### 确定投放的隔离地址{#identifying-quarantined-addresses-for-a-delivery}
+
+Quarantined addresses for a specific delivery are listed during the delivery preparation phase, in the delivery logs of the delivery dashboard (see [Delivery logs and history](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)).
+
+### 确定整个平台的隔离地址{#identifying-quarantined-addresses-for-the-entire-platform}
+
+Administrators can list the addresses in quarantine for the entire platform from the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** node.
+
+>[!NOTE]
+>
+>此菜单列出了&#x200B;**电子邮件**、**短信**&#x200B;和&#x200B;**推送通知**&#x200B;渠道的隔离元素。
 
 每个地址都有以下信息：
 
@@ -77,8 +77,8 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 >
 >隔离数量的增加是正常的，与数据库的&quot;磨损&quot;有关。 例如，如果将电子邮件地址的使用期视为三年，并且收件人表每年增加50%，则隔离的增加可以按如下方式计算：
 >
->年末1: (1*0.33)/(1+0.5)=22%。
-年末2: ((1.22*0.33)+0.33)/(1.5+0.75)=32.5%。
+>年末1:(1*0.33)/(1+0.5)=22%。
+第 2 年年末：((1.22*0.33)+0.33)/(1.5+0.75)=32.5%。
 
 ### 在投放报告中识别隔离地址 {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -94,7 +94,7 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 
 您可以查找该平台的所有投放()或&#x200B;**[!UICONTROL Home page > Reports]**&#x200B;特定投放的此信息。 您还可以创建自定义报告并选择要显示的信息。
 
-### 识别收件人的隔离地址 {#identifying-quarantined-addresses-for-a-recipient}
+### Identifying quarantined addresses for a recipient {#identifying-quarantined-addresses-for-a-recipient}
 
 您可以查找任何收件人的电子邮件地址的状态。 要执行此操作，请选择收件人用户档案并单击选 **[!UICONTROL Deliveries]** 项卡。 对于该收件人的所有投放，您可以了解该地址是否失败、是否在分析期间被隔离等。 对于每个文件夹，您只能显示其电子邮件地址处于隔离的收件人。 为此，请使用应用程 **[!UICONTROL Quarantined email address]** 序过滤器。
 
@@ -125,19 +125,19 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 >[!IMPORTANT]
 地址为或状态 **[!UICONTROL Quarantine]** 的收件人 **[!UICONTROL On block list]** 将永远不会被删除，即使他们收到电子邮件。
 
-您可以修改错误数以及两个错误之间的时间段。 为此，请在部署向导(>)中更改相应&#x200B;**[!UICONTROL Email channel]** 的设 **[!UICONTROL Advanced parameters]**&#x200B;置。 有关部署向导的详细信息，请参 [阅本节](../../installation/using/deploying-an-instance.md)。
+您可以修改错误数以及两个错误之间的时间段。 为此，请在部署向导(>)中更改相应&#x200B;**[!UICONTROL Email channel]** 的设 **[!UICONTROL Advanced parameters]**&#x200B;置。 For more on the deployment wizard, refer to [this section](../../installation/using/deploying-an-instance.md).
 
-## 向隔离发送地址的条件 {#conditions-for-sending-an-address-to-quarantine}
+## 将地址加入隔离的条件{#conditions-for-sending-an-address-to-quarantine}
 
 Adobe Campaign根据投放故障类型和在错误消息鉴定过程中分配的原因(请参阅弹 [回邮件鉴定](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification))以及 [投放故障类型和原因管理隔离](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
 
-* **忽略的错误**: 忽略的错误不会向隔离发送地址。
-* **硬错误**: 相应的电子邮件地址会立即发送到隔离。
-* **软错误**: 软错误不会立即向隔离发送地址，但会增加错误计数器。 有关此方面的详细信息，请 [参阅软错误管理](#soft-error-management)。
+* **已忽略的错误**：已忽略的错误不会将地址添加到隔离。
+* **硬错误**：相应的电子邮件地址会立即添加到隔离。
+* **软错误**：软错误不会立即将地址添加到隔离，但会增加错误计数。有关此方面的详细信息，请 [参阅软错误管理](#soft-error-management)。
 
-如果用户将电子邮件归为垃圾邮件(反[馈循环](../../delivery/using/technical-recommendations.md#feedback-loop))，则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，用户的电子邮件地址会自动发送到隔离。
+If a user qualifies an email as a spam ([Feedback loop](../../delivery/using/technical-recommendations.md#feedback-loop)), the message is automatically redirected towards a technical mailbox managed by Adobe. 随后，用户的电子邮件地址会自动发送到隔离。
 
-在隔离地址的列表中，字 **[!UICONTROL Error reason]** 段会指示将选定地址置于隔离的原因。 隔离Adobe Campaign区区分大小写。 请确保以小写方式导入电子邮件地址，以便以后不重新定位这些地址。
+在隔离地址的列表中，字 **[!UICONTROL Error reason]** 段会指示将选定地址置于隔离的原因。 Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式导入电子邮件地址，这样以后就不会重新定向这些地址。
 
 ![](assets/tech_quarant_error_reasons.png)
 
@@ -146,8 +146,8 @@ Adobe Campaign根据投放故障类型和在错误消息鉴定过程中分配的
 与硬错误相反，软错误不会立即向隔离发送地址，而是增加一个错误计数器。
 
 * 当错误计数器达到限制阈值时，地址将进入隔离。
-* 在默认配置中，阈值设置为5个错误，其中，如果两个错误间隔至少24小时，则它们会显着。 地址在第五个错误处置为隔离。
-* 可以修改错误计数器阈值。 有关详细信息，请参 [阅投放临时故障后的重试](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
+* 在默认配置中，阈值被设置为 5 次错误，其中如果两次错误间隔至少 24 小时，则会将其突出显示。在第 5 次出错后，即会将地址添加到隔离。
+* 可修改错误计数阈值。For more on this, refer to [Retries after a delivery temporary failure](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 如果上一个重大错误在10天前发生，则错误计数器将重新初始化。 地址状态随后会更 **改为** “有效”，并会通过“数据库清理”工作流从列表 **中删除该** 状态。
 
@@ -163,10 +163,10 @@ Adobe Campaign根据投放故障类型和在错误消息鉴定过程中分配的
 
 对于每个通知，Adobe Campaign从APNS服务器接收同步和异步错误。 对于以下同步错误，Adobe Campaign会生成软错误：
 
-* 负载长度问题： 无重试，失败原因为 **[!UICONTROL Unreachable]**。
-* 证书过期问题： 无重试，失败原因为 **[!UICONTROL Unreachable]**。
-* 在投放期间连接丢失： 重试，失败原因为 **[!UICONTROL Unreachable]**。
-* 服务配置问题（证书无效、证书密码无效、证书无效）: 无重试，失败原因为 **[!UICONTROL Unreachable]**。
+* 负载长度问题：无重试，失败原因为 **[!UICONTROL Unreachable]**。
+* 证书过期问题：无重试，失败原因为 **[!UICONTROL Unreachable]**。
+* 在投放期间连接丢失：重试，失败原因为 **[!UICONTROL Unreachable]**。
+* 服务配置问题（证书无效、证书密码无效、证书无效）:无重试，失败原因为 **[!UICONTROL Unreachable]**。
 
 APNS服务器异步通知Adobe Campaign设备令牌已注册（当用户卸载了移动应用程序时）。 该工 **[!UICONTROL mobileAppOptOutMgt]** 作流每6小时运行一次，以与APNS反馈服务联系以更 **新AppSubscriptionRcp** 表。 对于所有已取消激活的令牌 **,Disabled** （禁用）字段 **设置为** True，链接到该设备令牌的订阅将自动从将来的投放中排除。
 
@@ -211,7 +211,7 @@ http/2协议允许直接反馈和每个推送投放的状态。 如果使用http
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 消息创建/分析阶段——负载太大<br /> </td> 
+   <td> 消息创建/分析阶段——有效负荷过大<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 负载过长<br /> </td> 
    <td> 柔和<br /> </td> 
@@ -243,7 +243,7 @@ http/2协议允许直接反馈和每个推送投放的状态。 如果使用http
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> APNS消息拒绝： 取消注册<br /> ，用户已删除应用程序或令牌已过期<br /> </td> 
+   <td> APNS消息拒绝：取消注册<br /> ，用户已删除应用程序或令牌已过期<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 未注册<br /> </td> 
    <td> 硬<br /> </td> 
@@ -251,7 +251,7 @@ http/2协议允许直接反馈和每个推送投放的状态。 如果使用http
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
-   <td> APNS消息拒绝： 所有其他错误<br /> </td> 
+   <td> APNS消息拒绝：所有其他错误<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 错误消息中将显示错误拒绝原因<br /> </td> 
    <td> 柔和<br /> </td> 
@@ -265,11 +265,11 @@ http/2协议允许直接反馈和每个推送投放的状态。 如果使用http
 
 **对于Android V1**
 
-对于每个通知，Adobe Campaign直接从FCM服务器接收同步错误。 Adobe活动会动态处理这些错误，并根据错误的严重性生成硬错误或软错误，并可以执行重试:
+对于每个通知，Adobe Campaign直接从FCM服务器接收同步错误。 Adobe活动会立即处理这些错误，并根据错误的严重性生成硬错误或软错误，并可以执行重试:
 
-* 超出负载长度、连接问题、服务可用性问题： 已执行重试、软错误、失败原因 **[!UICONTROL Refused]**&#x200B;为。
-* 超出设备配额： 无重试、软错误、失败原因 **[!UICONTROL Refused]**&#x200B;为
-* 无效或未注册的令牌，意外错误，发送者帐户问题： 无重试、硬错误、失败原因 **[!UICONTROL Refused]**&#x200B;为。
+* 超出负载长度、连接问题、服务可用性问题：已执行重试、软错误、失败原因 **[!UICONTROL Refused]**&#x200B;为。
+* 超出设备配额：无重试、软错误、失败原因 **[!UICONTROL Refused]**&#x200B;为
+* 无效或未注册的令牌，意外错误，发送者帐户问题：无重试、硬错误、失败原因 **[!UICONTROL Refused]**&#x200B;为。
 
 该工 **[!UICONTROL mobileAppOptOutMgt]** 作流每6小时运行一次，以更 **新AppSubscriptionRcp** 表。 对于声明为未注册或不再有效的令牌， **字段** Disabled设置 **为** True，链接到该设备令牌的订阅将自动从将来的投放中排除。
 
@@ -277,15 +277,15 @@ http/2协议允许直接反馈和每个推送投放的状态。 如果使用http
 
 >[!NOTE]
 对于使用百度连接器的客户，以下是不同类型的错误：
-* 投放开始时的连接问题： 失败类 **[!UICONTROL Undefined]**&#x200B;型、失败原因 **[!UICONTROL Unreachable]**、重试被执行。
-* 在投放期间连接丢失： 软错误、失败原 **[!UICONTROL Refused]**&#x200B;因、重试被执行。
-* 百度在发送过程中返回的同步错误： 硬错误、失败原 **[!UICONTROL Refused]**&#x200B;因、不执行重试。
+* 投放开始时的连接问题：失败类 **[!UICONTROL Undefined]**&#x200B;型、失败原因 **[!UICONTROL Unreachable]**、重试被执行。
+* 在投放期间连接丢失：软错误、失败原 **[!UICONTROL Refused]**&#x200B;因、重试被执行。
+* 百度在发送过程中返回的同步错误：硬错误、失败原 **[!UICONTROL Refused]**&#x200B;因、不执行重试。
 
 Adobe Campaign每10分钟与百度服务器联系，检索发送消息的状态并更新广播。 如果消息被声明为已发送，则广播中消息的状态将设置为 **[!UICONTROL Received]**。 如果百度声明错误，状态将设置为 **[!UICONTROL Failed]**。
 
 **对于Android V2**
 
-Android V2隔离机制与Android V1使用的过程相同，对订阅和排除更新的过程也相同。 有关详细信息，请参阅 [Android V1部分](#android-quarantine) 。
+Android V2隔离机制与Android V1使用的过程相同，对订阅和排除更新的过程也相同。 For more on this refer to the [Android V1](#android-quarantine) section.
 
 <table> 
  <tbody> 
@@ -298,17 +298,17 @@ Android V2隔离机制与Android V1使用的过程相同，对订阅和排除更
    <td> <strong>重试</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 消息创建/分析阶段： 自定义字段中使用的非法关键字<br /> </td> 
+   <td> 消息创建/分析阶段：自定义字段中使用的非法关键字<br /> </td> 
    <td> 失败<br /> </td> 
-   <td> 下列关键字不能使用： {1}<br /> </td> 
+   <td> 下列关键字不能使用：{1}<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> </td> 
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
-   <td> 消息创建/分析阶段： 负载过大<br /> </td> 
+   <td> 消息创建/分析阶段：负载过大<br /> </td> 
    <td> 失败<br /> </td> 
-   <td> 通知太重： {1} bits, while only {2} are authorized<br /> </td> 
+   <td> 通知太重：{1} bits, while only {2} are authorized<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
@@ -316,13 +316,13 @@ Android V2隔离机制与Android V1使用的过程相同，对订阅和排除更
   <tr> 
    <td> 发送过程中网络连接丢失<br /> </td> 
    <td> 失败<br /> </td> 
-   <td> 地址上没有来自Firebase Cloud Messaging服务的响应： {1}<br /> </td> 
+   <td> 地址上没有来自Firebase Cloud Messaging服务的响应：{1}<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 不可到达<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> FCM消息拒绝： FCM服务器暂时不可用（例如超时）。 <br /> </td> 
+   <td> FCM消息拒绝：FCM服务器暂时不可用（例如超时）。 <br /> </td> 
    <td> 失败<br /> </td> 
    <td> Firebase Cloud Messaging服务暂时不可用<br /> </td> 
    <td> 柔和<br /> </td> 
@@ -330,7 +330,7 @@ Android V2隔离机制与Android V1使用的过程相同，对订阅和排除更
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> FCM消息拒绝： 验证发件人帐户时出错<br /> </td> 
+   <td> FCM消息拒绝：验证发件人帐户时出错<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 无法识别开发人员帐户，请检查您的ID和密码<br /> </td> 
    <td> 柔和<br /> </td> 
@@ -338,7 +338,7 @@ Android V2隔离机制与Android V1使用的过程相同，对订阅和排除更
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
-   <td> FCM消息拒绝： 超出设备配额<br /> </td> 
+   <td> FCM消息拒绝：超出设备配额<br /> </td> 
    <td> 失败<br /> </td> 
    <td> </td> 
    <td> 柔和<br /> </td> 
@@ -346,7 +346,7 @@ Android V2隔离机制与Android V1使用的过程相同，对订阅和排除更
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> FCM消息拒绝： 注册无效／未注册<br /> </td> 
+   <td> FCM消息拒绝：注册无效／未注册<br /> </td> 
    <td> 失败<br /> </td> 
    <td> </td> 
    <td> 硬<br /> </td> 
@@ -354,9 +354,9 @@ Android V2隔离机制与Android V1使用的过程相同，对订阅和排除更
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
-   <td> FCM消息拒绝： 所有其他错误<br /> </td> 
+   <td> FCM消息拒绝：所有其他错误<br /> </td> 
    <td> 失败<br /> </td> 
-   <td> Firebase Cloud Messaging服务器返回了意外的错误代码： {1} </td> 
+   <td> Firebase Cloud Messaging服务器返回了意外的错误代码：{1} </td> 
    <td> </td> 
    <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
@@ -429,7 +429,7 @@ SMPP连接器从SR（状态报告）消息中检索数据，该消息使用常�
 在限定新类型的错误之前，默认情况下，故障原因始终设 **置为** “拒绝”。
 
 >[!NOTE]
-失败类型和失败原因与电子邮件的失败类型和原因相同。 请参 [阅投放失败类型和原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
+失败类型和失败原因与电子邮件的失败类型和原因相同。 See [Delivery failure types and reasons](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 在投放日志资格表中，要求提供商提供状态和错误代码列表，以设置正确的故障类型和故障原因。
 
 生成消息的示例：
@@ -439,13 +439,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * 所有错误消息都以SR **开头** ，以区分SMS错误代码和电子邮件错误代码。
-* 错误消息的&#x200B;**第二部分** （本例中的通用）引用SMSC实现的名称，如在SMS外部帐户的字 **[!UICONTROL SMSC implementation name]** 段中定义的。 请参 [阅此页](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
+* 错误消息的&#x200B;**第二部分** （本例中的通用）引用SMSC实现的名称，如在SMS外部帐户的字 **[!UICONTROL SMSC implementation name]** 段中定义的。 请参阅[此页](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
 
    由于同一错误代码可能对每个提供程序具有不同的含义，因此此字段允许您了解生成错误代码的提供程序。 然后，您可以在相关提供商的文档中找到该错误。
 
 * 错误消息的第&#x200B;**三部分** （本例中的DELIVRD）与使用SMS外部帐户中定义的状态提取正则表达式从SR检索到的状态代码相对应。
 
-   此正则表达式在外部帐户 **[!UICONTROL SMSC specificities]** 的选项卡中指定。 请参 [阅此页](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
+   此正则表达式在外部帐户 **[!UICONTROL SMSC specificities]** 的选项卡中指定。 请参阅[此页](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -453,10 +453,10 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * 错误消息的第&#x200B;**四部分** （在本例中为000）与使用SMS外部帐户中定义的错误代码提取正则表达式从SR提取的错误代码相对应。
 
-   此正则表达式在外部帐户 **[!UICONTROL SMSC specificities]** 的选项卡中指定。 请参 [阅此页](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
+   此正则表达式在外部帐户 **[!UICONTROL SMSC specificities]** 的选项卡中指定。 请参阅[此页](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
 
    默认情况下，正则表达式会提取 **错误：** SMPP 3.4规 **范的附录** B部分 **定义的字段**。
 
 * 管道符号(|)之后的所有内容只显示在 **[!UICONTROL First text]** 表的列 **[!UICONTROL Delivery log qualification]** 中。 在消息规范化后， **此内容始终由** #MESSAGE#替换。 此过程可避免出现多个条目，以处理类似错误，与电子邮件相同。 有关此方面的详细信息，请参 [阅弹回邮件资格](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)。
 
-扩展的通用SMPP连接器应用启发式方法来查找合理的默认值： 如果状态以DELIV开 **头**，则它被视为成功，因为它与大多数提供商使用的常 **用状态** DELIVRD **或** DELIVERED相匹配。 任何其他状态都会导致硬故障。
+扩展的通用SMPP连接器应用启发式方法来查找合理的默认值：如果状态以DELIV开 **头**，则它被视为成功，因为它与大多数提供商使用的常 **用状态** DELIVRD **或** DELIVERED相匹配。 任何其他状态都会导致硬故障。
