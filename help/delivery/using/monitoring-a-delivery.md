@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2567'
 ht-degree: 2%
 
 ---
@@ -44,9 +44,9 @@ ht-degree: 2%
 
 ### 投放摘要 {#delivery-summary}
 
-选 **[!UICONTROL Summary]** 项卡包含投放的特性： 投放状态、渠道已使用、发送方信息、主题、执行信息。 有关详细信息，请参 [阅发送的消息数](#number-of-messages-sent)。
+选 **[!UICONTROL Summary]** 项卡包含投放的特性：投放状态、渠道已使用、发送方信息、主题、执行信息。 有关详细信息，请参 [阅发送的消息数](#number-of-messages-sent)。
 
-通过 **[!UICONTROL reports]** 该链接，您可以查看一组与投放操作相关的报告： 一般投放报告、详细报告、投放报告、失败消息的分发、打开率、点击量和交易等。 此选项卡的内容可以根据您的要求进行配置。 有关更多信息，请参见[此章节](../../reporting/using/delivery-reports.md)。
+通过 **[!UICONTROL reports]** 该链接，您可以查看一组与投放操作相关的报告：一般投放报告、详细报告、投放报告、失败消息的分发、打开率、点击量和交易等。 此选项卡的内容可以根据您的要求进行配置。 有关更多信息，请参见[此章节](../../reporting/using/delivery-reports.md)。
 
 ### 投放日志和历史 {#delivery-logs-and-history}
 
@@ -107,9 +107,9 @@ ht-degree: 2%
 
 如果投放性能不佳，您可以检查：
 
-* **投放的大小**: 大型投放可能需要更长的时间才能完成。 MTA子项配置为处理默认的批大小，这适用于大多数情况，但当投放速度持续变慢时，需要检查该大小。
-* **投放的目标**: 投放性能禁止受软跳出错误影响，软跳出错误根据重试配置进行处理。 错误数越多，需要的重试就越多。
-* **整个平台负载**: 当发送多个大型投放时，整个平台可能会受到影响。 您还可以检查IP信誉和可交付性问题。 有关此内容的详细信息，请参 [阅Adobe Campaign交付性最佳](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) 实践指 [南和本页](../../delivery/using/about-deliverability.md)。
+* **投放的大小**:大型投放可能需要更长的时间才能完成。 MTA子项配置为处理默认的批大小，这适用于大多数情况，但当投放速度持续变慢时，需要检查该大小。
+* **投放的目标**:投放性能禁止受软跳出错误影响，软跳出错误根据重试配置进行处理。 错误数越多，需要的重试就越多。
+* **整个平台负载**:当发送多个大型投放时，整个平台可能会受到影响。 您还可以检查IP信誉和可交付性问题。 有关此内容的详细信息，请参 [阅Adobe Campaign交付性最佳](../../delivery/using/deliverability-key-points.md) 实践指 [南和本页](../../delivery/using/about-deliverability.md)。
 
 平台和投放库维护也会影响数据发送性能。 有关详细信息，请参见[此页面](../../production/using/database-performances.md)。
 
@@ -118,13 +118,13 @@ ht-degree: 2%
 单击该按 **[!UICONTROL Send]** 钮后，投放的时间似乎比往常长。 这可能由不同元素引起：
 
 * 某些电子邮件提供商可能已将您的IP地址添加到阻止列表。 在这种情况下，请检查广告并参 [阅此部分](../../delivery/using/about-deliverability.md)。
-* 您的投放可能太大，无法快速处理，高JavaScript个性化可能会发生这种情况，或者如果您的投放重量超过60kbytes。 请参阅Adobe Campaign [投放最佳实践](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) ，了解内容指南。
+* 您的投放可能太大，无法快速处理，高JavaScript个性化可能会发生这种情况，或者如果您的投放重量超过60kbytes。 请参阅Adobe Campaign [投放最佳实践](../../delivery/using/delivery-best-practices.md) ，了解内容指南。
 * Adobe CampaignMTA中可能已发生限制。 这是由以下原因造成的：
 
-   * 已暂停的消息&#x200B;**[!UICONTROL quotas met]** （消息）: 已满足在活动中定义的声明性MX规则声明的配额。 For more information about this message, refer to [this page](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). 要进一步了解MX规则，请参 [阅本页](../../delivery/using/technical-recommendations.md#mx-rules)。
-   * 已暂停的消息&#x200B;**[!UICONTROL dynamic flow control]** （消息）: 活动MTA在尝试为给定ISP发送消息时遇到错误，这会导致延迟以避免错误密度过大，从而面临潜在阻止列表。
+   * 已暂停的消息&#x200B;**[!UICONTROL quotas met]** （消息）:已满足在活动中定义的声明性MX规则声明的配额。 For more information about this message, refer to [this page](../../delivery/using/deliverability-faq.md) . 要进一步了解MX规则，请参 [阅本页](../../delivery/using/technical-recommendations.md#mx-rules)。
+   * 已暂停的消息&#x200B;**[!UICONTROL dynamic flow control]** （消息）:活动MTA在尝试为给定ISP发送消息时遇到错误，这会导致延迟以避免错误密度过大，从而面临潜在阻止列表。
 
-* 系统问题可能会阻止服务器进行交互： 这会减慢整个发送过程。 检查服务器，以确保在获取个性化数据的过程中不存在可能影响活动的内存或资源问题。
+* 系统问题可能会阻止服务器进行交互：这会减慢整个发送过程。 检查服务器，以确保在获取个性化数据的过程中不存在可能影响活动的内存或资源问题。
 
 ### 性能最佳实践 {#best-practices-performance}
 
@@ -203,7 +203,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-要了解如何优化Adobe Campaign电子邮件的可交付性，请参阅Adobe Campaign可 [交付性最佳实践指南](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) ，以 [及本页](../../delivery/using/about-deliverability.md)。
+要了解如何优化Adobe Campaign电子邮件的可交付性，请参阅Adobe Campaign可 [交付性最佳实践指南](../../delivery/using/deliverability-key-points.md) ，以 [及本页](../../delivery/using/about-deliverability.md)。
 
 ### 待定状态 {#pending-status}
 
@@ -244,11 +244,11 @@ ht-degree: 2%
 
 投放日志是了解投放失败原因的关键。 以下是您可以从投放日志中检测到的可能错误：
 
-* 如果收件人消息失败，并显示“不可到达”错误，说明： **编译脚本“content htmlContent”行X时出错：`[table]`未定义。 JavaScript: 评估脚本“content htmlContent**”时出错，此问题的原因几乎始终是HTML中的个性化，它们试图调用尚未在上游定位或投放目标映射中定义或映射的表或字段。
+* 如果收件人消息失败，并显示“不可到达”错误，说明： **编译脚本“content htmlContent”行X时出错：`[table]`未定义。 JavaScript:评估脚本“content htmlContent**”时出错，此问题的原因几乎始终是HTML中的个性化，它们试图调用尚未在上游定位或投放目标映射中定义或映射的表或字段。
 
    要更正此问题，需要检查工作流和投放内容，以明确确定尝试调用该表的个性化内容以及是否可以映射该表。 从此处，在HTML中删除对此表的调用或将映射修复到投放将成为解析路径。
 
-* 在中间源部署模型中，投放日志中可能显示以下消息： **在中间来源服务器上调用方法“AppendDeliveryPart”时出错： &#39;与服务器通信错误： 请检查此配置是否正确。 代码HTTP 408“服务暂时不可用”**。
+* 在中间源部署模型中，投放日志中可能显示以下消息： **在中间来源服务器上调用方法“AppendDeliveryPart”时出错：&#39;与服务器通信错误：请检查此配置是否正确。 代码HTTP 408“服务暂时不可用”**。
 
    原因与性能问题有关。 这意味着在将数据发送到中间源服务器之前，营销实例花费了太多时间构建数据。
 
@@ -262,7 +262,7 @@ ht-degree: 2%
 
    要解决此问题，请检查所使用的个性化目标，然后检查这些字段中有多个条目的收件人。 在活动之前，您 **[!UICONTROL Deduplication]** 还可以在定位工作流中使用投放活动，以检查一次只有一个个性化字段。 For more information on deduplication, refer to [this page](../../workflow/using/deduplication.md).
 
-* 某些投放可能失败，并显示“不可到达”错误： “入站电子邮件弹回（规则&#39;Auto_replies&#39;已匹配此弹回）。 这意味着投放成功，但Adobe Campaign收到了来自收件人的自动回复(例如，与“Auto_replies”入站电子邮件规则匹配的“Out off”回复)。 Adobe Campaign会忽略自动回复电子邮件，收件人的地址不会发送给隔离。
+* 某些投放可能失败，并显示“不可到达”错误：“入站电子邮件弹回（规则&#39;Auto_replies&#39;已匹配此弹回）。 这意味着投放成功，但Adobe Campaign收到了来自收件人的自动回复(例如，与“Auto_replies”入站电子邮件规则匹配的“Out off”回复)。 Adobe Campaign会忽略自动回复电子邮件，收件人的地址不会发送给隔离。
 
 **相关主题：**
 
