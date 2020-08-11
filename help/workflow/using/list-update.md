@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 通常，在列表中保存目标会标记工作流的结束。 因此，默认 **[!UICONTROL List update]** 情况下活动没有出站过渡。 选中该 **[!UICONTROL Generate an outbound transition]** 选项可添加一个。
 
-## 示例： 列表更新 {#example--list-update}
+## 示例：列表更新 {#example--list-update}
 
 在以下示例中，列表更新活动遵循查询，该的目标男子30岁以上居住在法国。 列表最初将根据查询结果创建。 然后，每次从工作流中启动它时，都会更新它。 例如，它可以定期用于活动的目标促销优惠。
 
@@ -58,13 +58,13 @@ ht-degree: 0%
 1. 选中 **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** 此选项可删除与定位条件不匹配的收件人，并将新的列表插入该。
 1. 同时保持选 **[!UICONTROL Create or use a list with its own table]** 中选项。
 1. 不选中 **[!UICONTROL Generate an outbound transition]** 此选项。
-1. 单击 **[!UICONTROL Ok]** ，然后开始工作流。
+1. Click **[!UICONTROL Ok]** then start the workflow.
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
 
    然后创建或更新匹配收件人的列表。
 
-有关此内容的详细信息，请参 [阅创建列表收件人视频](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) 。
+有关此内容的详细信息，请参 [阅创建列表收件人视频](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) 。
 
 ## 输入参数 {#input-parameters}
 
@@ -75,4 +75,4 @@ ht-degree: 0%
 
 ## 输出参数 {#output-parameters}
 
-* groupId: 组标识符。
+* groupId:组标识符。
