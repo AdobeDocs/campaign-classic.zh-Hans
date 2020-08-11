@@ -1,6 +1,6 @@
 ---
 title: Campaign Classic已弃用和已删除的功能
-description: 本页列表已弃用并删除了Adobe Campaign经典功能
+description: 本页列表已弃用并删除了Adobe Campaign Classic的功能
 page-status-flag: never-activated
 uuid: null
 contentOwner: simonetn
@@ -11,17 +11,17 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e46325ab8f68a0b71198aee9cf04f2b1eb97fdd3
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
 workflow-type: tm+mt
 source-wordcount: '1468'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
 # 已弃用和已删除的功能 {#deprecated-and-removed-features}
 
-Adobe不断评估产品功能，以确定应用更现代的替代方案替换的旧功能，以提高整体客户价值，始终要仔细考虑向后兼容性。 由于Adobe Campaign经典可与第三方工具一起使用，因此会定期更新兼容性，以便仅实施受支持的版本。 下面和兼容性矩阵中列出了不再与Adobe Campaign经典兼容 [的版本](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
+Adobe不断评估产品功能，以确定应用更现代的替代方案替换的旧功能，以提高整体客户价值，始终在仔细考虑向后兼容性的情况下。 在Adobe Campaign Classic使用第三方工具时，将定期更新兼容性，以便仅实施受支持的版本。 下面和兼容性矩阵中列出了不再与Adobe Campaign Classic兼容 [的版本](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
 
 要传达即将拆除／替换Campaign Classic功能，请应用以下规则：
 
@@ -61,14 +61,14 @@ Adobe不断评估产品功能，以确定应用更现代的替代方案替换的
    </ul>
   <p>如果您使用其中一个连接器，您需要相应地调整实施。 <a href="../../delivery/using/sms-channel.md">了解更多</a></p> 
   <p>阅读此技术说明，了解如何迁移 <a href="https://helpx.adobe.com/campaign/kb/sms-connector.html">传统连接器</a>。</p>
-  <p><em>目标删除日期： 2021</em></p>
+  <p><em>目标删除日期：2021</em></p>
   </td> 
  </tr>
   <tr>  
    <td>传真渠道<br></td>
    <td><p>从20.2版本开始，已弃用传真渠道。</p> 
-   <p>如果您使用此渠道，则需要相应地调整实施。 <a href="../../delivery/using/communication-channels.md">进一步了解</a> 活动渠道。</p>
-   <p><em>目标删除日期： 2021</em></p></td>
+   <p>如果您使用此渠道，则需要相应地调整实施。 <a href="../../delivery/using/steps-about-delivery-creation-steps.md">进一步了解</a> 活动渠道。</p>
+   <p><em>目标删除日期：2021</em></p></td>
   </tr>
  </tbody> 
 </table>
@@ -101,11 +101,11 @@ Adobe不断评估产品功能，以确定应用更现代的替代方案替换的
   </tr> 
   <tr> 
    <td>Web 应用程序-微型站点</td>
-   <td>从活动18.10版开始，不再提供微型站点。 您可以通过限制仅访问Adobe Campaign配置文件上的专用域来提高安全性，并通过使用DNS别名在活动中使用个性化URL。 <a href="https://helpx.adobe.com/campaign/kb/domain-name-delegation.html">了解更多</a></td>
+   <td>从活动18.10版开始，不再提供微型站点。 您可以通过限制仅访问Adobe Campaign配置文件上的专用域来提高安全性，并通过使用DNS别名在活动中使用个性化URL。 <a href="https://helpx.adobe.com/cn/campaign/kb/domain-name-delegation.html">了解更多</a></td>
   </tr> 
   <tr> 
    <td>推送通知- iOS二进制连接器</td>
-   <td>根据Apple的建议，Adobe已删除旧版iOS二进制连接器，从活动18.10版开始。 功能更强、效率更高的基于HTTP/2的连接器现已可用。</td>
+   <td>根据Apple的推荐，Adobe已删除旧版iOS二进制连接器，启动活动18.10版本。 功能更强、效率更高的基于HTTP/2的连接器现已可用。</td>
   </tr> 
   <tr> 
    <td>decryptString API</td>
@@ -131,15 +131,15 @@ Adobe不断评估产品功能，以确定应用更现代的替代方案替换的
 
 从20.2版本开始，已弃用以下系统进行Campaign Classic。 兼容性将在20.3版本（2020年9月）中终止。
 
-* 客户端控制台： Windows 7
+* 客户端控制台：Windows 7
 * 旧版SMS连接器（请参阅下面的已弃用功能部分）
 
 ### Adobe Campaign19.2版  {#compat-19-2-release}
 
 从19.2版本开始，Campaign Classic不再支持以下操作系统。 兼容性将于2020年结束。
 
-* Web服务器： Apache 2.2。
-* 操作系统： CentOS 6。
+* Web服务器：Apache 2.2。
+* 操作系统：CentOS 6。
 
 请参阅兼容性 [表](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) ，以升级到较新版本或迁移到新系统。
 
@@ -147,11 +147,11 @@ Adobe不断评估产品功能，以确定应用更现代的替代方案替换的
 
 >[!CAUTION]
 >
->Adobe Campaign经典与兼容性矩阵中列出的所有系统和工 [具兼容](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。 当这些第三方系统和工具的特定版本与其各自的创建者达到生命周期终止(EOL)时，Adobe Campaign不再与这些版本兼容： 它们被宣布为已弃用，然后从后续产品发行版的兼容性矩阵中删除。 请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
+>Adobe Campaign Classic与兼容性矩阵中列出的所有系统和工 [具兼容](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。 当这些第三方系统和工具的特定版本与其各自的创建者达到生命周期终止(EOL)时，Adobe Campaign不再与这些版本兼容：它们被宣布为已弃用，然后从后续产品发行版的兼容性矩阵中删除。 请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
 
 ### 客户端控制台 {#client-console-eol}
 
-Adobe Campaign经典客户端控制台无法再在以下系统上运行，因为其编辑器已弃用它们。 在其中某个版本上运行活动客户端控制台的客户需要在目标删除日期之前升级到最新版本。 请参阅兼容性 [表](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
+Adobe Campaign Classic客户端控制台不再能在以下系统上运行，因为其编辑已弃用它们。 在其中某个版本上运行活动客户端控制台的客户需要在目标删除日期之前升级到最新版本。 请参阅兼容性 [表](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
 
 * Windows Server 2003、2008、2008 R2
 * Windows XP、Vista
@@ -209,7 +209,7 @@ Campaign Classic与联合数据访问(联合数据访问)下的服务器不兼�
 * 内泰扎6.02,7.0。 [了解更多](https://en.wikipedia.org/wiki/Netezza)
 * AsterData 5.0。 AsterData已经寿终正寝。 [了解更多](https://en.wikipedia.org/wiki/Aster_Data_Systems)
 * Sybase IQ 15.2、15.4、15.5和Sybase ASE 15.0。支持更新版本的Sybase通过联合数据访问(联合数据访问)。 [了解更多](https://sites.google.com/site/dbatipsandtricks/time-tracker)
-* 通过HiveSQL的Hadoop: Hadoop 2.7.3、HiveSQL 1.2.1。Adobe Campaign经典仍通过联合数据访问(联合数据访问)通过HiveSQL支持列出的Hadoop版本，但这些版本与以下版本合并： HortonWorks(HDP 2.4.X、2.5.x、2.6.x)和HDInsight 3.4(HDP 2.4)、3.5(HDP 2.5)、3.6(HDP 2.6)
+* 通过HiveSQL的Hadoop:Hadoop 2.7.3、HiveSQL 1.2.1。Adobe Campaign Classic仍将通过联合数据访问(联合数据访问)通过HiveSQL支持列出的Hadoop版本，但这些版本与以下版本合并：HortonWorks(HDP 2.4.X、2.5.x、2.6.x)和HDInsight 3.4(HDP 2.4)、3.5(HDP 2.5)、3.6(HDP 2.6)
 
 **RDBMS服务器**
 
