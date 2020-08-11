@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 99dfefe3f51115b78bfeb02094d614a6e63af124
+source-git-commit: 27a72257904ff356b1a341c29f9a1ab3ccb20dd2
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 0%
+source-wordcount: '439'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Campaign会定期更新。 平均每年发布两、三个次要版本，�
 
 ![](assets/do-not-localize/limited.png) **有限可用性** -当前在生产验证中构建。 仅限按需部署。
 
-![](assets/do-not-localize/blue3.png) **发行候选** -由Adobe验证的内部版本。 等待生产校样。
+![](assets/do-not-localize/blue3.png) **Release Candidate** —— 由Adobe验证生成。 等待生产校样。
 
 ![](assets/do-not-localize/orange3.png) **不再可用** -更新的版本可用于错误修复。 需要更新。
 
@@ -49,7 +49,7 @@ Adobe Campaign会定期更新。 平均每年发布两、三个次要版本，�
 
 作为托管客户（托管服务或混合），您需要联系客户关怀团队以升级环境。
 
-作为金标用户，您无需采取任何操作，即可通过最新稳定版本自动从金标升级中受益。 [了解更多](https://helpx.adobe.com/campaign/kb/gold-standard.html)
+作为金标用户，您无需采取任何操作，即可通过最新稳定版本自动从金标升级中受益。 [了解更多](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
 
 作为预置型用户，您可以执行升级。 为此，您需要下载最 [新的稳定版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) ，并升级所有环境。 了解有关升级过程 [的更多信息](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)，并参阅构建 [升级常见问题解答](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html)。
 
@@ -59,14 +59,14 @@ Adobe Campaign会定期更新。 平均每年发布两、三个次要版本，�
 
 为了使您的实施保持最新，请确保在每个新版本中 [阅读已弃用和已删除的功能](../../rn/using/deprecated-features.md)[和兼容性](../../rn/using/compatibility-matrix.md) 表页面。
 
-要了解新的Experience Cloud解决方案版本，请订阅 [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html)。
+要了解新的Experience Cloud解决方案版本，请订阅 [Adobe优先产品更新](https://www.adobe.com/subscription/priority-product-update.html)。
 
 查找有关其他建议的更 [多信息](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html#Recommendations)。
 
 ## 支持和其他有用链接{#support}
 
 * [帮助与支持](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
-* [控制面板版本](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)
+* [控制面板版本](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)
 * [文档更新](../../rn/using/documentation-updates.md)
 * [先前版本](../../rn/using/release--20-1.md)
 * [弃用功能](../../rn/using/deprecated-features.md)
