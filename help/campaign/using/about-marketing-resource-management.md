@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 0%
 
 ---
 
@@ -24,45 +27,45 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ## 简介 {#introduction}
 
-通过 **营销资源管理(MRM)** ，您可以通过提供对相关任务、预算和营销资源的完整管理和实时跟踪，以协作模式控制营销活动。
+营销资源 **管理(MRM)模块** ，通过提供对相关任务、预算和营销资源的全面管理和实时跟踪，您可以以协作模式控制营销活动。
 
-Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具协调其操作并批准其在所有阶段的进度：报告、批准跟踪、通知、论坛等。 在事件、错误或延迟时以及验证周期的每个新阶段，都会提醒这些用户。
+Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具协调其操作并批准其在所有阶段的进度：报告、审批跟踪、通知、论坛等。 在事件、错误或延迟以及验证周期的每个新阶段，都会向它们发出警告。
 
-因此，在营销计划的方案和子方案的背景下，可以创建任务并分配给相关经营者，然后通过其所有阶段进行管理。
+因此，在项目和营销计划子项目的背景下，可以创建任务并将其分配给相关操作者，然后通过其所有阶段进行管理。
 
-**MRM** 还允许您管理涉及多个参与者的营销资源：通过专用仪表板执行资源的完整性和监控。
+**MRM** 还允许您管理涉及多个参加者的营销资源:通过专用仪表板执行资源的完整性和监控。
 
-最后，由于管理目标和费用项目以及延长提供标准报告，预算管理得到了扩大；这样，您就可以监控并准确衡量所有营销活动的工作效率和效果。
+最后，由于目标和费用的管理以及标准报告的优惠的扩大，预算管理得到了扩大；这样，您就可以监控并准确衡量所有营销活动的工作效率和绩效。
 
 ## 核心概念 {#core-concepts}
 
-在Adobe Campaign的上下文中，必须定义以下概念：
+在Adobe Campaign环境中，必须定义以下概念：
 
 * **任务**
 
-   任务与要在营销活动上下文中执行的操作相对应。 任务分配给组或人员。 子任务可以取决于父任务，这意味着直到所有子任务完成后，才会执行父任务。 任务示例包括：引用网站、预算审核、简介等。
+   任务与要在活动环境中执行的操作相对应。 任务被分配给组或人员。 子任务可以取决于父任务，这意味着直到所有子任务都完成后，才会执行父任务。 任务示例包括：引用网站、预算审核、简介等。
 
-   有关此功能的详细信息，请参阅 [创建和管理任务](../../campaign/using/creating-and-managing-tasks.md)。
+   有关此内容的详细信息，请参 [阅创建和管理任务](../../campaign/using/creating-and-managing-tasks.md)。
 
 * **营销资源**
 
-   Adobe Campaign可让您跟踪协作营销项目（如通信媒体、操作计划、新闻稿等）的进度。 这些营销资源的创建和审批周期可以从资源功能板中跟踪，直至其发布。
+   Adobe Campaign允许您跟踪协作营销项目（如通信媒体、操作计划、新闻稿等）的进度。 这些营销资源的创建和审批周期可从资源仪表板跟踪，直到其发布。
 
-   有关详细信息，请参阅管 [理营销资源](../../campaign/using/managing-marketing-resources.md)。
-
-## 用户友好性 {#user-friendliness}
+   有关此内容的详细信息，请参阅 [管理营销资源](../../campaign/using/managing-marketing-resources.md)。
 
 >[!NOTE]
 >
->有关Adobe Campaign整体工作区的详细信息，请参阅 [此部分](../../platform/using/adobe-campaign-workspace.md)。
+>有关整个Adobe Campaign工作区的详细信息，请参 [阅此部分](../../platform/using/adobe-campaign-workspace.md)。
 >  
->与交付和配置文件管理相关的所有功能在本节中 [有详细介绍](../../delivery/using/communication-channels.md)。
+>与投放和通信渠道链接的所有功能在本节 [中详述](../../delivery/using/steps-about-delivery-creation-steps.md)。
 >
->访问营销活动中详细介绍了所有与营 [销活动相关的功能](../../campaign/using/accessing-marketing-campaigns.md)。
+>所有活动相关功能在访问营销 [活动中有详细介绍](../../campaign/using/accessing-marketing-campaigns.md)。
 
-此外，Adobe Campaign中的计划和计划还提供以下附加功能：
+此外，Adobe Campaign优惠中的计划和项目还具有其他功能：
 
-* 预算管理。 For more on this, refer to [Controlling costs](../../campaign/using/controlling-costs.md),
-* 任务管理。 有关此功能的详细信息，请参 [阅创建和管理任务](../../campaign/using/creating-and-managing-tasks.md),
-* 营销资源管理。 有关详细信息，请参阅管 [理营销资源](../../campaign/using/managing-marketing-resources.md)。
+* 预算管理。 For more on this, refer to [Controlling costs](../../campaign/using/controlling-costs.md)
+
+* 任务管理。 有关此内容的详细信息，请参阅 [创建和管理任务](../../campaign/using/creating-and-managing-tasks.md)
+
+* 营销资源管理。 有关此内容的详细信息，请参阅管 [理营销资源](../../campaign/using/managing-marketing-resources.md)
 
