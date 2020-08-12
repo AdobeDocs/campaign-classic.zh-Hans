@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,7 @@ ht-degree: 0%
 
 Adobe Campaign使您能够试用新的交 [互式AMP for Email](https://amp.dev/about/email/) ，该格式允许在特定条件下发送动态电子邮件。
 
->[!IMPORTANT]
->
->* 此功能是Adobe Campaign测试版功能。
->* AMP for Email是一种新的开放源码格式，它使开发人员能创建动态和交互式电子邮件。 目前，一些电子邮件提供商支持该功能：Gmail、Outlook和Mail.ru。
-
-
-目前，您只能：
+在此版本中，您可以：
 * 测试向正确配置的特定地址传送AMP电子邮件。
 * 向相应提供商注册后，将AMP电子邮件发送到Gmail、Outlook或Mail.ru地址。
 
@@ -39,11 +33,9 @@ Adobe Campaign使您能够试用新的交 [互式AMP for Email](https://amp.dev/
 
 此功能可通过Adobe Campaign专用包获得。 要使用它，必须安装此包。 完成后，重新启动服务器以便考虑包。
 
-对于混合和托管架构，该软件包需要安装在所有服务器上，包括 [中间源服](../../installation/using/mid-sourcing-server.md) 务器和 [执行实例](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 与您的客户经理联系。
+>[!NOTE]
+>>对于混合和托管架构，包需要安装在所有服务器上，包括 [中间源服](../../installation/using/mid-sourcing-server.md) 务器和 [执行实例](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 与您的客户经理联系。
 
-以下视频介绍如何在Adobe Campaign Classic激活AMP并展示其用法。
-
->[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
 ## 关于AMP for Email {#about-amp-for-email}
 
@@ -53,6 +45,8 @@ Adobe Campaign使您能够试用新的交 [互式AMP for Email](https://amp.dev/
 * 使用AMP编写的电子邮件可以包含交互式元素，如图像轮盘。
 * 内容在消息中保持最新。
 * 收件人可以采取类似响应表单的操作，而不离开其收件箱。
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#amp-email-video)
 
 AMP for Email与现有电子邮件兼容。 除HTML和／或纯文本外，邮件的AMP版本作为新的MIME部分嵌入到电子邮件中，确保所有电子邮件客户端之间的兼容性。
 
@@ -218,3 +212,9 @@ AMP内容和备份准备就绪后，定义兼容目标后，您可以像通常�
 >您可以创建邮件处理规则，以阻止特定域接收AMP电子邮件。 请参阅 [管理电子邮件格式](../../installation/using/email-deliverability.md#managing-email-formats)。
 >
 >默认情况 **[!UICONTROL AMP inclusion]** 下，选项设置为 **[!UICONTROL No]**。
+
+## 如何激活和使用AMP处理电子邮件 {#amp-email-video}
+
+以下视频介绍如何在Adobe Campaign Classic激活AMP并展示其用法。
+
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
