@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '416'
 ht-degree: 4%
 
 ---
@@ -70,10 +70,3 @@ Adobe Campaign使您能够定义、优化、执行和分析通信和营销活动
 
    有关详细信息，请参阅 [关联和构造通过投放概要链接的资源](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
-## 如何在活动中创建电子邮件
-
-此视频介绍如何在Adobe Campaign Classic创建活动和电子邮件。
-
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
-
-For more details, refer to [this section](../../campaign/using/marketing-campaign-deliveries.md)
