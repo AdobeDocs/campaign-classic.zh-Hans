@@ -15,15 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
 
 
 # Creating a delivery template{#creating-a-delivery-template}
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#delivery-template-video)
 
 ## 将现有投放转换为模板 {#converting-an-existing-delivery-to-a-template}
 
@@ -74,7 +76,7 @@ Right-click and select **[!UICONTROL Actions > Save as template...]**.
 >
 >为避免出现配置错误，我们建议您重复本机模板并更改其属性，而不是创建新模板。
 
-## 如何配置投放模板
+## 如何配置投放模板 {#delivery-template-video}
 
 以下视频演示如何为临时投放配置模板。
 
