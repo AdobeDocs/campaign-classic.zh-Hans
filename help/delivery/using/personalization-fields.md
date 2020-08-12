@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 3%
@@ -126,7 +126,7 @@ ht-degree: 3%
 
 如果将此选项设置为0，则个性化阶段将没有时间限制。
 
-## 如何使用个性化字段个性化电子邮件 {#personalization-field-video}
+## 如何使用个性化字段个性化电子邮件 {#personalization-fields-video}
 
 了解如何将个性化字段添加到主题行和电子邮件投放的内容。
 
