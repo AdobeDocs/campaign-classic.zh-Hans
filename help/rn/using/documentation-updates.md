@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
 source-wordcount: '7069'
 ht-degree: 13%
@@ -38,7 +38,7 @@ ht-degree: 13%
 
 * [如何利用类型规则和预定义过滤器建立疲劳管理](../../campaign/using/about-campaign-typologies.md)
 
-* [如何在活动中创建电子邮件](../../campaign/using/designing-marketing-campaigns.md)
+* [如何在活动中创建电子邮件](../../campaign/using/marketing-campaign-deliveries.md)
 
 * [如何创建包含条件内容的多语言新闻稿](../../delivery/using/conditional-content.md)
 
