@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 32076ea0a817d8649d1db9e39628221e15ede37e
 workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 0%
@@ -235,6 +235,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 在此视频中，您将学习如何在现有电子邮件中添加种子和验证，以及如何发送。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+
 另请参阅：
 * [选择验证目标](#selecting-the-proof-target)
 
