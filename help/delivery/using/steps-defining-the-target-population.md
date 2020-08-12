@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 32076ea0a817d8649d1db9e39628221e15ede37e
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1578'
 ht-degree: 0%
 
 ---
@@ -174,6 +174,9 @@ ht-degree: 0%
 
 验证是一条特殊消息，允许您在将投放发送到主目标之前测试该。 验证收件人负责批准邮件的表单和内容。
 
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#seeds-and-proofs-video)
+
+
 要选择目标，请按照以下步骤操作：
 
 1. 单击链 **[!UICONTROL To]** 接。
@@ -230,7 +233,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 您可以使用选项组合特定验证目标的定义和种子地址的 **[!UICONTROL Specific target and Seed addresses]** 使用。 相关配置随后在两个单独的子标签中定义。
 
-## 如何在电子邮件中管理种子和验证
+## 如何在电子邮件中管理种子和验证 {#seeds-and-proofs-video}
 
 在此视频中，您将学习如何在现有电子邮件中添加种子和验证，以及如何发送。
 
