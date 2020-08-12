@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2956'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ ht-degree: 0%
 # 营销活动投放 {#marketing-campaign-deliveries}
 
 投放可以通过活动仪表板、活动工作流或直接通过投放概述创建。
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#create-email-video)
 
 ## 创建投放{#creating-deliveries}
 
@@ -78,6 +80,13 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >在同一活动下，设置的工作流数不能超过28个。 超出此限制后，其他工作流在接口中不可见，并且可能生成错误。
+
+### 如何在活动中创建电子邮件 {#create-email-video}
+
+此视频介绍如何在Adobe Campaign Classic创建活动和电子邮件。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
 
 #### Creating a targeting workflow {#creating-a-targeting-workflow}
 
@@ -277,7 +286,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果指定了特定运算符或操作员组以在投放的属性中启动投放，则还可以允许负责投放的运算符确认发送。 为此，请输 **入1作为值** ，激活 **NMS** _ActivateOwnerConfirmation选项。 这些选项通过Adobe Campaign资 **[!UICONTROL Administration]** 源 **[!UICONTROL Platform]** 管理器 **[!UICONTROL Options]** 中的> >节点进行管理。
+>如果指定了特定的运算符或操作员组以在投放的属性中启动投放，则还可以允许负责投放的运算符确认发送。 为此，请输 **入1作为值** ，激活 **NMS** _ActivateOwnerConfirmation选项。 这些选项通过Adobe Campaign资 **[!UICONTROL Administration]** 源 **[!UICONTROL Platform]** 管理器 **[!UICONTROL Options]** 中的> >节点进行管理。
 >  
 >要取消激活此选项， **请输** 入0作为值。 然后，发送确认过程将作为默认过程：只有在投放属性（或管理员）中为发送指定的运算符或操作员组才能确认和执行发送。
 
