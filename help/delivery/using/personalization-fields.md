@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '873'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,9 @@ ht-degree: 3%
 
 例如，具有&lt;%=收件人.LastName **%>语法的个性化字段** ，会告知Adobe Campaign将收件人的名称插入数据库(收件人表)。
 
->[!NOTE]
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#personalization-fields-video)
+
+>[!CAUTION]
 >
 >个性化字段内容不能超过1024个字符。
 
@@ -124,7 +126,7 @@ ht-degree: 3%
 
 如果将此选项设置为0，则个性化阶段将没有时间限制。
 
-## 如何使用个性化字段个性化电子邮件
+## 如何使用个性化字段个性化电子邮件 {#personalization-field-video}
 
 了解如何将个性化字段添加到主题行和电子邮件投放的内容。
 
