@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
 workflow-type: tm+mt
 source-wordcount: '1616'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Adobe Campaign使您能够试用新的交 [互式AMP for Email](https://amp.dev/
 此功能可通过Adobe Campaign专用包获得。 要使用它，必须安装此包。 完成后，重新启动服务器以便考虑包。
 
 >[!NOTE]
->>对于混合和托管架构，包需要安装在所有服务器上，包括 [中间源服](../../installation/using/mid-sourcing-server.md) 务器和 [执行实例](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 与您的客户经理联系。
+> 对于混合和托管架构，该软件包需要安装在所有服务器上，包括 [中间源服](../../installation/using/mid-sourcing-server.md) 务器和 [执行实例](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 与您的客户经理联系。
 
 
 ## 关于AMP for Email {#about-amp-for-email}
@@ -46,11 +46,11 @@ Adobe Campaign使您能够试用新的交 [互式AMP for Email](https://amp.dev/
 * 内容在消息中保持最新。
 * 收件人可以采取类似响应表单的操作，而不离开其收件箱。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#amp-email-video)
-
 AMP for Email与现有电子邮件兼容。 除HTML和／或纯文本外，邮件的AMP版本作为新的MIME部分嵌入到电子邮件中，确保所有电子邮件客户端之间的兼容性。
 
 有关AMP的电子邮件格式、规范和要求的详细信息，请参阅AMP开 [发人员文档](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email)。
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#amp-email-video)
 
 ## 将AMP用于具有Adobe Campaign的电子邮件的关键步骤 {#key-steps-to-use-amp}
 
