@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,9 @@ ht-degree: 0%
 # 条件内容{#conditional-content}
 
 通过配置条件内容字段，您可以根据收件人的用户档案创建动态个性化。 当满足特定条件时替换文本块和／或图像。
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#conditionnal-content-video)
+
 
 ## 在电子邮件中使用条件 {#using-conditions-in-an-email}
 
@@ -114,7 +117,7 @@ ht-degree: 0%
    >
    >由于电子邮件内容中未定义任何替代版本，请确保在发送电子邮件之前过滤目标群。
 
-## 如何创建包含条件内容的多语言新闻稿
+## 如何创建包含条件内容的多语言新闻稿 {#conditionnal-content-video}
 
 通过多语言新闻快讯的示例，了解如何向投放添加条件内容。
 
