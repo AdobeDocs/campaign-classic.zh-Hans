@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '484'
 ht-degree: 8%
 
 ---
@@ -26,6 +26,8 @@ ht-degree: 8%
 # 关于活动类型{#about-campaign-typologies}
 
 活动优化是Adobe Campaign模块，它允许您控制、过滤和监控投放的发送。 为了避免营销活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这保证所发送的消息满足客户的需求和期望以及公司通信策略。
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#typologies-video)
 
 >[!NOTE]
 >
@@ -69,7 +71,7 @@ ht-degree: 8%
 
 在准备投放时，在满足标准时排除收件人。 您可以检查日志以监视排除情况。本页提供压力类型规则的示 [例用例](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)。
 
-## 如何使用类型规则建立疲劳管理
+## 如何使用类型规则建立疲劳管理 {#typologies-video}
 
 此视频介绍如何通过利用类型规则在Adobe Campaign Classic实施疲劳管理。
 
