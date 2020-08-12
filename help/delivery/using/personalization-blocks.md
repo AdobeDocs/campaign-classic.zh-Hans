@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,15 @@ ht-degree: 0%
 
 个性化块是动态的、个性化的，并包含可插入投放的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。 请参阅 [插入个性化块](#inserting-personalization-blocks)。
 
->[!NOTE]
->
->个性化块也可从中获取 **[!UICONTROL Digital Content Editor (DCE)]** 。 有关详细信息，请参见[此页面](../../web/using/editing-content.md#inserting-a-personalization-block)。
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#personalization-blocks-video)
 
 个性化块通过Adobe Campaign资 **[!UICONTROL Resources > Campaign Management > Personalization blocks]** 源管理器的节点访问。 默认情况下，有几个块可 [用(请参阅现成个性化块](#out-of-the-box-personalization-blocks))。
 
 您能够定义新的基块，从而优化投放个性化。 有关此内容的详细信息，请参阅定 [义自定义个性化块](#defining-custom-personalization-blocks)。
+
+>[!NOTE]
+>
+>个性化块也可从中获取 **[!UICONTROL Digital Content Editor (DCE)]** 。 有关详细信息，请参见[此页面](../../web/using/editing-content.md#inserting-a-personalization-block)。
 
 ## 插入个性化块 {#inserting-personalization-blocks}
 
@@ -160,7 +162,7 @@ HTML源代码将插入投放内容中。 例如，个性化 **[!UICONTROL Greeti
 
    * 输入内容（HTML、文本、JavaScript等） ，然后单击 **[!UICONTROL Save]**。
 
-## 如何使用动态内容块个性化电子邮件
+## 如何使用动态内容块个性化电子邮件 {#personalization-blocks-video}
 
 了解如何创建动态内容块以及如何使用它们个性化您的电子邮件投放的内容。
 
