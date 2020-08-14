@@ -1,7 +1,7 @@
 ---
 title: 常见问题
 seo-title: 常见问题
-description: Campaign Classic常见问题解答
+description: Campaign Classic 常见问题解答
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,8 +13,11 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+workflow-type: ht
+source-wordcount: '528'
+ht-degree: 100%
 
 ---
 
@@ -23,15 +26,15 @@ source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
 
 作为一个开放式解决方案，Adobe Campaign 可进行自定义，并进行高级应用程序开发。
 
-## 什么是Campaign数据模型？ {#what-is-the-campaign-data-model}
+## 什么是 Campaign 数据模型？ {#what-is-the-campaign-data-model}
 
-Adobe Campaign数据库的概念数据模型由一组内置表及其交互组成。 XML描述了应用程序中所承载数据的物理和逻辑结构。 它遵循Adobe Campaign特有的语法（称为架构）。 有关Adobe Campaign架构的详细信 [息，请参阅此部分](../../configuration/using/about-schema-edition.md)。
+Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间的交互组成。应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循 Adobe Campaign 特有的语法，称为模式。有关 Adobe Campaign 模式的详细信息，[请参阅本部分](../../configuration/using/about-schema-edition.md)。
 
-[单击此处可了解有关Campaign数据模型的更多信息](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)。
+[单击此处了解有关 Campaign 数据模型的更多信息](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html)。
 
-本文中列出了 [最佳实践](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html)。
+[本文列出了](https://helpx.adobe.com/cn/campaign/kb/acc-data-model-best-practices.html)最佳实践。
 
-## How to work with Campaign schemas? {#how-to-work-with-campaign-schemas-}
+## 如何使用 Campaign 模式？{#how-to-work-with-campaign-schemas-}
 
 在 Adobe Campaign 中，数据模式用于：
 
@@ -41,25 +44,25 @@ Adobe Campaign数据库的概念数据模型由一组内置表及其交互组成
 
 阅读[表和模式入门](../../configuration/using/about-schema-edition.md)，了解如何使用数据模式、扩展和自定义 Campaign 来满足您的需求。
 
-## How to use a custom recipient table? {#how-to-use-a-custom-recipient-table-}
+## 如何使用自定义收件人表？{#how-to-use-a-custom-recipient-table-}
 
 您可以在 Campaign 中创建并实施非标准的收件人表，以发送邮件。
 
 [单击此处了解更多信息](../../configuration/using/about-custom-recipient-table.md)
 
-## What are the best practices to define queries in Campaign? {#what-are-the-best-practices-to-define-queries-in-campaign-}
+## 在 Campaign 中定义查询的最佳实践是什么？{#what-are-the-best-practices-to-define-queries-in-campaign-}
 
 Adobe Campaign 查询编辑器是一款功能强大的工具，可用于探索数据和创建分段。
 
 您可在软件的多个级别上找到 Adobe Campaign 查询工具：创建目标群体、细分客户、提取和过滤跟踪日志、构建过滤器等。
 
-您可以使用通用查询编辑器查询 Campaign 数据库。可通过 **Tools > Generic query editor...** 菜单访问查询编辑器。它可您能够提取数据库中存储的信息，将其整理、分组、排序等。例如，用户可以找到在给定的期间内，在新闻稿的链接上点击超过 n 次的收件人。通过这个工具，您可根据自己的需求收集、排序和显示结果。此工具结合了 Adobe Campaign 所有可能的查询方式。例如，您可以创建和保存限制过滤器。这意味着在定位工作流等的 Query 框中可以使用在通用查询编辑器中创建的用户过滤器。
+您可以使用通用查询编辑器查询 Campaign 数据库。可通过 **Tools > Generic query editor...** 菜单访问查询编辑器。它可让您提取数据库中存储的信息，将其整理、分组、排序等。例如，用户可以找到在给定的期间内，在新闻稿的链接上点击超过 n 次的收件人。通过这个工具，您可根据自己的需求收集、排序和显示结果。此工具结合了 Adobe Campaign 所有可能的查询方式。例如，您可以创建和保存限制过滤器。这意味着在定位工作流等的 Query 框中可以使用在通用查询编辑器中创建的用户过滤器。
 
 使用所选表的字段或使用公式可以创建查询。[此页面](../../platform/using/about-queries-in-campaign.md)介绍了在 Campaign 数据库上创建查询的主要原则。
 
-[单击此处](../../workflow/using/query.md) ，发现Campaign查询编辑器。
+[单击此处](../../workflow/using/query.md) ，了解 Campaign 查询编辑器。
 
-## How can I import a data package? {#how-can-i-import-a-data-package-}
+## 如何导入数据包？{#how-can-i-import-a-data-package-}
 
 使用 Adobe Campaign，您可以通过数据包系统导出或导入平台配置和数据。数据包支持以 XML 格式文件的形式显示 Adobe Campaign 数据库的实体。数据包中包含的每个实体由其全部数据表示。
 
@@ -67,6 +70,6 @@ Adobe Campaign 查询编辑器是一款功能强大的工具，可用于探索�
 
 [单击此处](../../platform/using/working-with-data-packages.md)了解如何使用数据包导入和导出 Campaign 配置。
 
-## 在哪里可以找到Campaign Classic API列表？ {#where-can-i-find-the-list-of-campaign-classic-apis}
+## 在哪里可以找到 Campaign Classic API 的列表？ {#where-can-i-find-the-list-of-campaign-classic-apis}
 
-此专用文档中提供了包括其完整说明在内的所 [有Campaign API](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
+所有 Campaign API（包括其完整说明）均在此[专用文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)中提供。
