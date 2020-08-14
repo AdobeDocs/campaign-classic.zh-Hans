@@ -18,7 +18,7 @@ translation-type: tm+mt
 source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->Adobe Campaign Classic 有 v6.11 和 v7 两个版本。除非另行提及，否则帮助资料适用于两个版本的最新版本。屏幕截图反映了Campaign Classicv7用户界面。
+>Adobe Campaign Classic 有 v6.11 和 v7 两个版本。除非另行提及，否则帮助资料适用于两个版本的最新版本。屏幕截图反映了Campaign Classic v7 用户界面。
 
 ## 重点功能 {#key-capabilities}
 
@@ -41,17 +41,17 @@ Adobe Campaign 中的营销活动周期体现了产品功能的主要方面：
 
 ![](assets/d_ncs_user_emarketing.png)
 
-### 整合的客户用户档案 {#integrated-customer-profile}
+### 整合的客户档案 {#integrated-customer-profile}
 
 用户档案（客户、潜在客户、新闻稿订阅者等）将集中存储在 Adobe Campaign 数据库中。有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助 Adobe Campaign，您可以整合营销历史、购买信息、偏好、CRM 数据，以及整合视图中任何相关的 PII 数据，从而进行分析并采取行动。
 
 在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、SMS 等）所定位的默认用户档案。凭借数据库中存储的收件人数据，您可以过滤将接收任何给定投放的目标并在投放内容中添加个性化数据。数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
 
-Profile management basics are explained in [About profiles](../../platform/using/about-profiles.md).
+[关于用户档案](../../platform/using/about-profiles.md)中说明了用户档案管理的基本知识。
 
 ### 目标市场细分 {#targeted-segmentation}
 
-Adobe Campaign 具有功能强大且易于使用的市场细分和定位功能，让您可以打造极具针对性的差异化优惠方案。您可以使用描述性分析功能分析营销活动的上游和下游信息，而过滤器管理及[图形查询编辑器](../../platform/using/about-queries-in-campaign.md)功能可用于过滤订阅者群体及样本，或根据无数量限制标准设定目标组。The analysis and targeting features are described in [this page](../../reporting/using/about-descriptive-analysis.md) and in the [Creating filters](../../platform/using/creating-filters.md) section.
+Adobe Campaign 具有功能强大且易于使用的市场细分和定位功能，让您可以打造极具针对性的差异化优惠方案。您可以使用描述性分析功能分析营销活动的上游和下游信息，而过滤器管理及[图形查询编辑器](../../platform/using/about-queries-in-campaign.md)功能可用于过滤订阅者群体及样本，或根据无数量限制标准设定目标组。[此页面](../../reporting/using/about-descriptive-analysis.md)及[创建过滤器](../../platform/using/creating-filters.md)部分中介绍了分析和定位功能。
 
 高级数据管理功能可进一步扩充数据处理能力。通过包含未在数据集市中建模的数据，该功能可简化并优化定位流程。[此页面](../../workflow/using/targeting-data.md#data-management)中详细介绍了该功能。
 
@@ -69,13 +69,13 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 
 ### Adobe Experience Cloud 集成 {#adobe-experience-cloud-integrations}
 
-您可以将 Adobe Campaign 的投放功能以及高级活动管理功能与帮助您个性化用户体验的解决方案（例如　Adobe Experience Manager、Adobe Analytics、Adobe Target 或 Adobe Experience Cloud 触发程序）结合起来。此外，您也可以使用 Adobe ID 集成到 Adobe IMS 并登录 Campaign。For more on cross-solution and authentication integrations, refer to [this section](../../integrations/using/about-adobe-id.md).
+您可以将 Adobe Campaign 的投放功能以及高级活动管理功能与帮助您个性化用户体验的解决方案（例如　Adobe Experience Manager、Adobe Analytics、Adobe Target 或 Adobe Experience Cloud 触发程序）结合起来。此外，您也可以使用 Adobe ID 集成到 Adobe IMS 并登录 Campaign。如需有关跨解决方案和身份验证集成的详细信息，请参阅[此部分](../../integrations/using/about-adobe-id.md)。
 
 ## 核心功能及附加组件 {#core-capabilities-and-add-ons}
 
-根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。A detailed product description is available here: [Adobe Campaign Classic Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).
+根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。此处提供了详细的产品说明：[Adobe Campaign Classic 产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)。
 
-下列功能可供使用。根据您的许可协议，其中某些功能可在您的实例中使用或不使用。
+下列功能可供使用。根据您的许可协议，某些功能可能无法使用或者不在您的实例中。
 
 * [渠道](../../delivery/using/steps-about-delivery-creation-steps.md) - 在不同渠道上设计并投放内容：电子邮件、SMS、Line、移动应用程序、直邮，
 * [活动](../../campaign/using/designing-marketing-campaigns.md) - 跨渠道编排各种活动，
