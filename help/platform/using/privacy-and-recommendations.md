@@ -99,7 +99,7 @@ Adobe Campaign是Adobe Experience Cloud解决方案的一部分。 隐私在活�
 
 Adobe Campaign使您能够收集数据，包括个人和敏感信息。 因此，您必须获得并监控收件人的同意。
 
-* 始终让收件人同意接收通信。 为此，请继续尽快遵守退出请求并通过多次选择加入流程验证同意。 有关此内容的详细信息，请 [参阅创建包含订阅选择加入的多次表单](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)。
+* 始终让收件人同意接收通信。 为此，请继续尽快遵守退出请求并通过多次选择加入流程验证同意。 有关此内容的详细信息，请 [参阅创建带有订阅选择加入的多次表单](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)。
 * 请勿导入欺诈性列表并使用种子地址来检查您的客户文件是否未被欺骗性地使用。 有关此内容的详细信息，请参 [阅关于种子地址](../../delivery/using/about-seed-addresses.md)。
 * 通过同意和权限管理，您可以跟踪收件人的偏好，并管理组织内谁可以访问哪些数据。 有关更多信息，请参阅[此章节](#consent)。
 * 方便和管理收件人的隐私请求。 有关更多信息，请参阅[此章节](#privacy-requests)。
