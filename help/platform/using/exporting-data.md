@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: b690e6c7141ba88c8ce72f631ec24fc068ade8f5
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 59%
 
 ---
 
@@ -40,7 +43,7 @@ source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
    本机模板为 **[!UICONTROL New text export]**。 不得修改此模板，但您可以复制它以配置新模板。By default, export templates are saved in the **[!UICONTROL Resources > Templates > Job templates]** node.
 
 1. Enter a name for export in the **[!UICONTROL Label]** field. 您可以添加描述。
-1. 选择导出类型。有两种可能的导出类型：只导 **[!UICONTROL Simple export]** 出一个文件，并在单次执行中从一种或多种类型 **[!UICONTROL Multiple export]** 的源文档导出多个文件。
+1. 选择导出类型。有两种可能的导出类型： **[!UICONTROL Simple export]** 只导出一个文件，并 **[!UICONTROL Multiple export]** 在一次执行中从一种或多种类型的源文档导出多个文件。
 
 ### 第 2 步 - 要导出的文件类型 {#step-2---type-of-file-to-export}
 
@@ -50,7 +53,7 @@ By default, when the export is launched from the **[!UICONTROL Jobs]** node the 
 
 ![](assets/s_ncs_user_export_wizard02.png)
 
-* 默认情况下，选 **[!UICONTROL Download the file generated on the server after the export]** 中此选项。 In the **[!UICONTROL Local file]** field, fill in the name and path of the file to be created, or browse your local disk by clicking the folder to the right of the field. 您可以取消选择此选项以输入服务器输出文件的访问路径和名称。
+* By default, the **[!UICONTROL Download the file generated on the server after the export]** option is selected. In the **[!UICONTROL Local file]** field, fill in the name and path of the file to be created, or browse your local disk by clicking the folder to the right of the field. 您可以取消选择此选项以输入服务器输出文件的访问路径和名称。
 
    >[!NOTE]
    >
@@ -58,7 +61,7 @@ By default, when the export is launched from the **[!UICONTROL Jobs]** node the 
    >
    >To export only some of the data, click **[!UICONTROL Advanced parameters]** and enter the number of lines to be exported in the appropriate field.
 
-* 您可以创建差异导出以仅导出自上次执行后修改的记录。要执行此操作，请单击链 **[!UICONTROL Advanced parameters]** 接，然后单击选 **[!UICONTROL Differential export]** 项卡，然后选择 **[!UICONTROL Activate differential export]**。
+* 您可以创建差异导出以仅导出自上次执行后修改的记录。为此，请单击链 **[!UICONTROL Advanced parameters]** 接，然后单击选 **[!UICONTROL Differential export]** 项卡，然后选择 **[!UICONTROL Activate differential export]**。
 
    ![](assets/s_ncs_user_export_wizard02_b.png)
 
@@ -73,7 +76,7 @@ By default, when the export is launched from the **[!UICONTROL Jobs]** node the 
 * For **[!UICONTROL Text]** format, select the delimiters to separate the columns (tabs, commas, semi-colons, or custom) and the strings (single or double quotes, or none).
 * 对于 **[!UICONTROL text]** 和 **[!UICONTROL CSV]**，您可以选择选项 **[!UICONTROL Use first lines as column titles]**。
 * 指示日期格式和数字格式。To do this, click the **[!UICONTROL Edit]** button for the field concerned and use the editor.
-* 对于包含枚举值的字段，您可以选择 **[!UICONTROL Export labels instead of internal values of enumerations]**。 For example, the title can be stored in the form **1=Mr.**, **2=Miss**,** 3=Mrs.**. 如果选择此选项，将导出 **Mr.****、Miss** 和 **Mrs.**。
+* 对于包含枚举值的字段，可以选 **[!UICONTROL Export labels instead of internal values of enumerations]**&#x200B;择。 For example, the title can be stored in the form **1=Mr.**, **2=Miss**, **3=Mrs.**. 如果选择此选项，将导出 **Mr.****、Miss** 和 **Mrs.**。
 
 ### 第 4 步 - 数据选择 {#step-4---data-selection}
 
@@ -84,7 +87,7 @@ By default, when the export is launched from the **[!UICONTROL Jobs]** node the 
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Click the **[!UICONTROL Add]** button to call on functions. 有关详细信息，请参阅 [函数列表](../../platform/using/defining-filter-conditions.md#list-of-functions)。
+1. Click the **[!UICONTROL Add]** button to call on functions. 有关此的详细信息，请参 [阅函数列表](../../platform/using/defining-filter-conditions.md#list-of-functions)。
 
 ### 第 5 步 - 对列进行排序 {#step-5---sorting-columns}
 
@@ -109,6 +112,7 @@ By default, when the export is launched from the **[!UICONTROL Jobs]** node the 
    * 切换到小写
    * 切换到大写
    * 首字母大写
+
    ![](assets/s_ncs_user_export_wizard06.png)
 
 * Click **[!UICONTROL Add a calculated field]** if you want to create a new calculated field (for example, a column containing last name + first name). For more on this, refer to [Calculated fields](../../platform/using/importing-data.md#calculated-fields).
@@ -119,7 +123,7 @@ By default, when the export is launched from the **[!UICONTROL Jobs]** node the 
 
 ### 第 8 步 - 数据预览 {#step-8---data-preview}
 
-单击 **[!UICONTROL Start the preview of the data]** 可预览导出结果。 按照默认，显示前 200 行。To change this value, click the arrows to the right of the **[!UICONTROL Lines to display]** field.
+单 **[!UICONTROL Start the preview of the data]** 击以预览导出结果。 按照默认，显示前 200 行。To change this value, click the arrows to the right of the **[!UICONTROL Lines to display]** field.
 
 ![](assets/s_ncs_user_export_wizard07.png)
 
@@ -127,7 +131,7 @@ By default, when the export is launched from the **[!UICONTROL Jobs]** node the 
 
 ### 第 9 步 - 启动导出 {#step-9---launching-the-export}
 
-单击 **[!UICONTROL Start]** 以启动数据导出。
+单击 **[!UICONTROL Start]** 启动数据导出。
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
