@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 68d532a9597877f2f265dfc2d16ea31d1ce80858
 workflow-type: tm+mt
 source-wordcount: '3602'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 显示的页面允许您视图已连接实例的状态，即：
 
-* 有关实例的信息： 版本，名称，数据库引擎，已安装的包，服务器系统指示器，
+* 有关实例的信息：版本，名称，数据库引擎，已安装的包，服务器系统指示器，
 * 缺失进程和执行信息的列表(开始日期、PID等),
 * 一视图工作流和投放。
 
@@ -53,56 +53,56 @@ ht-degree: 0%
 
 #### 在Windows中 {#in-windows}
 
-* **[!UICONTROL Pending events queued]** : 消息中心特 **定的指示符**。 Refer to [this section](../../message-center/using/monitoring-thresholds.md) for more information.
-* **[!UICONTROL Memory]** : 有关物理内存(RAM)的信息。
+* **[!UICONTROL Pending events queued]** :消息中心特 **定的指示符**。 Refer to [this section](../../message-center/using/monitoring-thresholds.md) for more information.
+* **[!UICONTROL Memory]** :有关物理内存(RAM)的信息。
 
-   **[!UICONTROL Current value]** : 实际内存消耗。
+   **[!UICONTROL Current value]** :实际内存消耗。
 
-   **[!UICONTROL Max Value]** : 已安装的内存总量。
+   **[!UICONTROL Max Value]** :已安装的内存总量。
 
-   **[!UICONTROL Available]** : 可用内存量。
+   **[!UICONTROL Available]** :可用内存量。
 
-   **[!UICONTROL Warning]** : 当内存消耗达到总量的80%时，将显示此指示器。
+   **[!UICONTROL Warning]** :当内存消耗达到总量的80%时，将显示此指示器。
 
-   **[!UICONTROL Alert]** : 当内存消耗达到总量的90%时，将显示此指示器。
+   **[!UICONTROL Alert]** :当内存消耗达到总量的90%时，将显示此指示器。
 
    显示 **[!UICONTROL Warning]** 和指 **[!UICONTROL Alert]** 示符后，您可以通过向Adobe Campaign服务器所安装的计算机添加RAM来解决问题。 您还可以决定在专用计算机上安装Adobe Campaign服务器。
 
-* **[!UICONTROL Swap Memory]** : 与与寻呼文件匹配的虚拟内存相关的信息： 硬盘上的某个区域，Windows使用它就像RAM一样。
+* **[!UICONTROL Swap Memory]** :与与寻呼文件匹配的虚拟内存相关的信息：硬盘上的某个区域，Windows使用它就像RAM一样。
 
-   **[!UICONTROL Current value]** : 实际内存消耗。
+   **[!UICONTROL Current value]** :实际内存消耗。
 
-   **[!UICONTROL Max Value]** : 内存总量。
+   **[!UICONTROL Max Value]** :内存总量。
 
-   **[!UICONTROL Available]** : 可用内存量。
+   **[!UICONTROL Available]** :可用内存量。
 
-   **[!UICONTROL Warning]** : 当内存消耗达到总量的80%时，将显示此指示器。
+   **[!UICONTROL Warning]** :当内存消耗达到总量的80%时，将显示此指示器。
 
-   **[!UICONTROL Alert]** : 当内存消耗达到总量的90%时，将显示此指示器。
+   **[!UICONTROL Alert]** :当内存消耗达到总量的90%时，将显示此指示器。
 
    当显示 **[!UICONTROL Warning]** 和指 **[!UICONTROL Alert]** 示符时，您可以通过在高级Windows设置中增加交换文件的大小来解决问题。
 
-* **[!UICONTROL Disk XXX]** : 有关机器阅读器的信息。
+* **[!UICONTROL Disk XXX]** :有关机器阅读器的信息。
 
-   **[!UICONTROL Current value]** : 实际使用的磁盘空间。
+   **[!UICONTROL Current value]** :实际使用的磁盘空间。
 
-   **[!UICONTROL Max Value]** : 磁盘总容量。
+   **[!UICONTROL Max Value]** :磁盘总容量。
 
-   **[!UICONTROL Available]** : 可用磁盘空间
+   **[!UICONTROL Available]** :可用磁盘空间
 
-   **[!UICONTROL Used]** : 已使用磁盘的百分比。
+   **[!UICONTROL Used]** :已使用磁盘的百分比。
 
-   **[!UICONTROL Warning]** : 当可用磁盘空间达到总容量的80%时，将显示此指示器。
+   **[!UICONTROL Warning]** :当可用磁盘空间达到总容量的80%时，将显示此指示器。
 
-   **[!UICONTROL Alert]** : 当可用磁盘空间达到总容量的90%时，将显示此指示器。
+   **[!UICONTROL Alert]** :当可用磁盘空间达到总容量的90%时，将显示此指示器。
 
-* **[!UICONTROL Number of processes too old]** : 有关Adobe Campaign进程的信息，这些进程已活动超过一天。
+* **[!UICONTROL Number of processes too old]** :有关Adobe Campaign进程的信息，这些进程已活动超过一天。
 
-   **[!UICONTROL Current value]** : 当前活动的进程数。
+   **[!UICONTROL Current value]** :当前活动的进程数。
 
-   **[!UICONTROL Max Value]** : 最大授权进程数(1)。
+   **[!UICONTROL Max Value]** :最大授权进程数(1)。
 
-   **[!UICONTROL Alert]** : 如果进程数等于1，则显示此指示符。
+   **[!UICONTROL Alert]** :如果进程数等于1，则显示此指示符。
 
    当显 **[!UICONTROL Alert]** 示指示符时，可能相关进程被SQL数据库引擎锁定，或者它卡在无限循环中。 由Adobe Campaign **提供** 的监视程序会每天自动重新开始所有进程，使您能够解决此问题。 但是，您也可以自行停止相关过程以强制重新开始。
 
@@ -110,108 +110,108 @@ ht-degree: 0%
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Pending events queued]** : 消息中心特 **定的指示符**。 Refer to [this section](../../message-center/using/monitoring-thresholds.md) for more information.
-* **[!UICONTROL Load average (1/5/15 minutes)]** : 有关负载的信息，即在最后一分钟、五分钟或十五分钟内计算机上运行的进程对处理器的使用率
+* **[!UICONTROL Pending events queued]** :消息中心特 **定的指示符**。 Refer to [this section](../../message-center/using/monitoring-thresholds.md) for more information.
+* **[!UICONTROL Load average (1/5/15 minutes)]** :有关负载的信息，即在最后一分钟、五分钟或十五分钟内计算机上运行的进程对处理器的使用率
 
-   **[!UICONTROL Current value]** : 机器的实际负载。
+   **[!UICONTROL Current value]** :机器的实际负载。
 
-   **[!UICONTROL Max value]** : 机器上进程的最大使用负载
+   **[!UICONTROL Max value]** :机器上进程的最大使用负载
 
-   **[!UICONTROL Warning]** : 在最后一分钟、五分钟或十五分钟内，当负载达到最大授权值的80%时，将显示此指示器。
+   **[!UICONTROL Warning]** :在最后一分钟、五分钟或十五分钟内，当负载达到最大授权值的80%时，将显示此指示器。
 
-   **[!UICONTROL Alert]** : 当负载达到最后一分钟、五分钟或十五分钟的最大授权值的90%时，将显示此指示器。
+   **[!UICONTROL Alert]** :当负载达到最后一分钟、五分钟或十五分钟的最大授权值的90%时，将显示此指示器。
 
-* **[!UICONTROL Memory]** : 有关物理内存(RAM)的信息。
+* **[!UICONTROL Memory]** :有关物理内存(RAM)的信息。
 
-   **[!UICONTROL Current value]** : 实际内存消耗。
+   **[!UICONTROL Current value]** :实际内存消耗。
 
-   **[!UICONTROL Max Value]** : 已安装的内存总量。
+   **[!UICONTROL Max Value]** :已安装的内存总量。
 
-   **[!UICONTROL Available]** : 可用内存量。
+   **[!UICONTROL Available]** :可用内存量。
 
-   **[!UICONTROL Warning]** : 当内存消耗达到总量的80%时，将显示此指示器。
+   **[!UICONTROL Warning]** :当内存消耗达到总量的80%时，将显示此指示器。
 
-   **[!UICONTROL Alert]** : 当内存消耗达到总量的90%时，将显示此指示器。
+   **[!UICONTROL Alert]** :当内存消耗达到总量的90%时，将显示此指示器。
 
    显示 **[!UICONTROL Warning]** 和指 **[!UICONTROL Alert]** 示符后，您可以通过向Adobe Campaign服务器所安装的计算机添加RAM来解决问题。 您还可以决定在专用计算机上安装Adobe Campaign服务器。
 
-* **[!UICONTROL Swap Memory]** : 与与寻呼文件匹配的虚拟内存相关的信息： 硬盘上的某个区域，Windows使用它就像RAM一样。
+* **[!UICONTROL Swap Memory]** :与与寻呼文件匹配的虚拟内存相关的信息：硬盘上的某个区域，Windows使用它就像RAM一样。
 
-   **[!UICONTROL Current value]** : 实际内存消耗。
+   **[!UICONTROL Current value]** :实际内存消耗。
 
-   **[!UICONTROL Max Value]** : 内存总量。
+   **[!UICONTROL Max Value]** :内存总量。
 
-   **[!UICONTROL Available]** : 可用内存量。
+   **[!UICONTROL Available]** :可用内存量。
 
-   **[!UICONTROL Warning]** : 当内存消耗达到总量的80%时，将显示此指示器。
+   **[!UICONTROL Warning]** :当内存消耗达到总量的80%时，将显示此指示器。
 
-   **[!UICONTROL Alert]** : 当内存消耗达到总量的90%时，将显示此指示器。
+   **[!UICONTROL Alert]** :当内存消耗达到总量的90%时，将显示此指示器。
 
    当显示 **[!UICONTROL Warning]** 和指 **[!UICONTROL Alert]** 示符时，您可以通过增加交换文件的大小来解决问题。
 
-* **[!UICONTROL Core Files]** : 与Adobe Campaign进程崩溃后生成的文件相关的信息。 这些文件使您能够诊断崩溃的原因。
+* **[!UICONTROL Core Files]** :与Adobe Campaign进程崩溃后生成的文件相关的信息。 这些文件使您能够诊断崩溃的原因。
 
-   **[!UICONTROL Current Value]** : 现有文件数。
+   **[!UICONTROL Current Value]** :现有文件数。
 
-   **[!UICONTROL Max Value]** : 最大授权文件数(1)。
+   **[!UICONTROL Max Value]** :最大授权文件数(1)。
 
-   **[!UICONTROL Warning]** : 当文件数接近1时，将显示此指示器。
+   **[!UICONTROL Warning]** :当文件数接近1时，将显示此指示器。
 
-   **[!UICONTROL Alert]** : 当文件数等于1时，将显示此指示器。
+   **[!UICONTROL Alert]** :当文件数等于1时，将显示此指示器。
 
    当因崩溃而丢失进程时，该进程在进程列表上以红色显示，并由Adobe Campaign提供的监视程序自 **动** 重新启动。
 
-* **[!UICONTROL Number of shared memory segments]** : 所有Adobe Campaign进程共享的内存段的相关信息。
+* **[!UICONTROL Number of shared memory segments]** :所有Adobe Campaign进程共享的内存段的相关信息。
 
-   **[!UICONTROL Current value]** : 当前使用的内存段数。
+   **[!UICONTROL Current value]** :当前使用的内存段数。
 
-   **[!UICONTROL Max Value]** : 已授权的最大内存段数(2)。
+   **[!UICONTROL Max Value]** :已授权的最大内存段数(2)。
 
-   **[!UICONTROL Warning]** : 当内存段数达到1时，将显示此指示器。
+   **[!UICONTROL Warning]** :当内存段数达到1时，将显示此指示器。
 
-   **[!UICONTROL Alert]** : 当内存段数达到2时，将显示此指示器。
+   **[!UICONTROL Alert]** :当内存段数达到2时，将显示此指示器。
 
-* **[!UICONTROL Number of processes too old]** : 有关活动超过一天的流程的信息。
+* **[!UICONTROL Number of processes too old]** :有关活动超过一天的流程的信息。
 
-   **[!UICONTROL Current value]** : 当前活动的进程数。
+   **[!UICONTROL Current value]** :当前活动的进程数。
 
-   **[!UICONTROL Max Value]** : 最大授权进程数。
+   **[!UICONTROL Max Value]** :最大授权进程数。
 
-   **[!UICONTROL Warning]** : 当进程数达到授权阈值的80%时，将显示此指示符。
+   **[!UICONTROL Warning]** :当进程数达到授权阈值的80%时，将显示此指示符。
 
-   **[!UICONTROL Alert]** : 当进程数达到授权阈值的90%时，将显示此指示符。
+   **[!UICONTROL Alert]** :当进程数达到授权阈值的90%时，将显示此指示符。
 
-* **[!UICONTROL File Handles]** : 有关文件描述符的信息，即每个进程打开的文件数。
+* **[!UICONTROL File Handles]** :有关文件描述符的信息，即每个进程打开的文件数。
 
-   **[!UICONTROL Current value]** : 当前文件描述符数。
+   **[!UICONTROL Current value]** :当前文件描述符数。
 
-   **[!UICONTROL Max Value]** : 操作系统授权的文件描述符的最大数量。
+   **[!UICONTROL Max Value]** :操作系统授权的文件描述符的最大数量。
 
-   **[!UICONTROL Warning]** : 当授权文件描述符的数量达到80%阈值时，将显示此指示符。
+   **[!UICONTROL Warning]** :当授权文件描述符的数量达到80%阈值时，将显示此指示符。
 
-   **[!UICONTROL Alert]** : 当授权文件描述符的数量达到90%阈值时，将显示此指示符。
+   **[!UICONTROL Alert]** :当授权文件描述符的数量达到90%阈值时，将显示此指示符。
 
-* **[!UICONTROL Processes]** : 与机器进程相关的信息。
+* **[!UICONTROL Processes]** :与机器进程相关的信息。
 
-   **[!UICONTROL Current value]** : 当前活动的进程数。
+   **[!UICONTROL Current value]** :当前活动的进程数。
 
-   **[!UICONTROL Max Value]** : 最大授权进程数。
+   **[!UICONTROL Max Value]** :最大授权进程数。
 
-   **[!UICONTROL Active Processes]** : 活动进程数。
+   **[!UICONTROL Active Processes]** :活动进程数。
 
-   **[!UICONTROL Inactive Processes]** : 非活动进程数。
+   **[!UICONTROL Inactive Processes]** :非活动进程数。
 
-   **[!UICONTROL Warning]** : 当授权进程数达到80%阈值时，将显示此指示符。
+   **[!UICONTROL Warning]** :当授权进程数达到80%阈值时，将显示此指示符。
 
-   **[!UICONTROL Alert]** : 当授权进程数达到90%阈值时，将显示此指示符。
+   **[!UICONTROL Alert]** :当授权进程数达到90%阈值时，将显示此指示符。
 
-* **[!UICONTROL Zombie Processes]** : 与已停止但仍具有进程标识符(PID)且在进程表中仍可见的进程相关的信息。
+* **[!UICONTROL Zombie Processes]** :与已停止但仍具有进程标识符(PID)且在进程表中仍可见的进程相关的信息。
 
-   **[!UICONTROL Current value]** : 当前处于活动状态的僵尸进程数。
+   **[!UICONTROL Current value]** :当前处于活动状态的僵尸进程数。
 
-   **[!UICONTROL Max Value]** : 授权僵尸进程的最大数量(2)。
+   **[!UICONTROL Max Value]** :授权僵尸进程的最大数量(2)。
 
-   **[!UICONTROL Warning]** : 当僵尸进程数接近2时，将显示此指示器。
+   **[!UICONTROL Warning]** :当僵尸进程数接近2时，将显示此指示器。
 
    **[!UICONTROL Alert]** 当僵尸进程数达到2时，将显示此指示器。
 
@@ -263,6 +263,7 @@ SMTP投放监视报告已集成到Adobe Campaign平台中。 可以通过控制�
 >
 >* 仅当激活了电子邮件渠道时，与SMTP监视相关的信息才可用。
 >* 只有 **[!UICONTROL SMTP sending statistics]** 在实例上启动统计信息服务器时，才会提供。
+
 >
 
 
@@ -277,20 +278,21 @@ SMTP投放监视报告已集成到Adobe Campaign平台中。 可以通过控制�
 
 1. 已发送邮件的总数。
 1. 
-   * 蓝线： 已准备好发送的邮件已到达Shaper，即发送SMTP之前的最后一阶段（与传入数据一致）。
+   * 蓝线：已准备好发送的邮件已到达Shaper，即发送SMTP之前的最后一阶段（与传入数据一致）。
 
-   * 绿线： 消息已成功发送（与传出数据一致）。
+   * 绿线：消息已成功发送（与传出数据一致）。
 
-   * 红线： 由Shaper放弃的消息返回到 **mta** （与此恢复中拒绝的数据一致）。
+   * 红线：由Shaper放弃的消息返回到 **mta** （与此恢复中拒绝的数据一致）。
+
    这些值以每小时的消息数表示。
 
 1. 表示Shaper的两个队列：
 
-   * 蓝色曲线： 活动消息队列。 这些消息将尽快发送。
+   * 蓝色曲线：活动消息队列。 这些消息将尽快发送。
 
-   * 卡基曲线： “延迟”队列。 由于限制或没有可用的目标连接，暂时无法返回这些消息。 重试每5秒、10秒、20秒、40秒、2分钟等进行一次。 定义的 **MaxAgeSec** 时间。
+   * 卡基曲线：“延迟”队列。 由于限制或没有可用的目标连接，暂时无法返回这些消息。 重试每5秒、10秒、20秒、40秒、2分钟等进行一次。 定义的 **MaxAgeSec** 时间。
 
-1. 此图表显示放弃消息的详细信息（第2个图表上的红色曲线）: 与发送失败（红色）的消息相比，它显示放弃的未重试消息(mauve)的比例。 这样，您就可以视图由于统计服务器的限制（限制）或由于远程服务器不可用而在授予的期限内未处理的邮件比例。
+1. 此图表显示放弃消息的详细信息（第2个图表上的红色曲线）:与发送失败（红色）的消息相比，它显示放弃的未重试消息(mauve)的比例。 这样，您就可以视图由于统计服务器的限制（限制）或由于远程服务器不可用而在授予的期限内未处理的邮件比例。
 1. 打开或正在打开SMTP连接。
 1. 估计匹 **配数**。
 
@@ -320,11 +322,11 @@ SMTP投放监视报告已集成到Adobe Campaign平台中。 可以通过控制�
 
 >[!NOTE]
 >
->Cnx、Sent和 **Volume**&#x200B;列中显 **示的值**&#x200B;是根据字段中选定的时 **间计算的****[!UICONTROL Period]** 。
+>Cnx、Sent和 **Volume**&#x200B;列中显 **示的值**&#x200B;将根据字段中选定的 **时间段****[!UICONTROL Period]** 进行计算。
 
 单击某个域名以视图其错误。
 
-它们按PublicId分类： 此标识符对应于由路由器后的多个Adobe Campaignmta共享的IP地址。 统计服务器使用此标识符来记住该起始点与投放服务器之间的连接和目标统计。
+它们按PublicId分类：此标识符对应于由路由器后的多个Adobe Campaignmta共享的IP地址。 统计服务器使用此标识符来记住该起始点与投放服务器之间的连接和目标统计。
 
 ![](assets/smtp_error_report_details.png)
 
@@ -344,7 +346,7 @@ SMTP投放监视报告已集成到Adobe Campaign平台中。 可以通过控制�
 
 ## 帐单报表 {#billing-report}
 
-技术 **[!UICONTROL Billing]** 工作流通过电子邮件将系统活动报告发送给“付费”运营商。 默认为每月25日触发。
+The **[!UICONTROL Billing]** technical workflow sends the system activity report to the &#39;billing&#39; operator by email. 默认为每月25日触发。
 
 技术工作流程可在以下节点的子文件夹中找到： **“管理** ”>“ **生产** ” **>“**&#x200B;技术工作流”。
 
@@ -356,13 +358,13 @@ SMTP投放监视报告已集成到Adobe Campaign平台中。 可以通过控制�
 
 可使用以下指标跟踪投放:
 
-* **[!UICONTROL Start date]** : 开始日期投放。 请注意，它可以早于报表的“开始”日期。
-* **[!UICONTROL Label]** : 投放的标签。 要发送的投放少于100条，被认为过小，因此会按开始日期进行聚合，在这种情况下，标签会显示聚合的数量，如3个 [小投放的聚合]。
-* **[!UICONTROL Total volume]** : 为投放传输的字节总数。
-* **[!UICONTROL Avg volume]** : 传输的字节的平均卷数。 这是以下公式(总 **体量／消息**)的结果，它是度量的计算基 **[!UICONTROL Multiplier]** 础。
-* **[!UICONTROL Messages]** : 已发送邮件数。 这包括成功发送的消息和重试（在从联系的服务器收到弹回消息后）。
-* **[!UICONTROL Multiplier (x)]** : 从消息的平均体积推导出乘法器的值。
-* **[!UICONTROL Count]** : 消息和乘数的乘法结果。
+* **[!UICONTROL Start date]** :开始日期投放。 请注意，它可以早于报表的“开始”日期。
+* **[!UICONTROL Label]** :投放的标签。 要发送的投放少于100条，被认为过小，因此会按开始日期进行聚合，在这种情况下，标签会显示聚合的数量，如3个 [小投放的聚合]。
+* **[!UICONTROL Total volume]** :为投放传输的字节总数。
+* **[!UICONTROL Avg volume]** :传输的字节的平均卷数。 这是以下公式(总 **体量／消息**)的结果，它是度量的计算基 **[!UICONTROL Multiplier]** 础。
+* **[!UICONTROL Messages]** :已发送邮件数。 这包括成功发送的消息和重试（在从联系的服务器收到弹回消息后）。
+* **[!UICONTROL Multiplier (x)]** :从消息的平均体积推导出乘法器的值。
+* **[!UICONTROL Count]** :消息和乘数的乘法结果。
 
 ## 自动监控 {#automatic-monitoring}
 
@@ -400,13 +402,13 @@ http( **s)://`<application>`/r/test** (http:////r/test)页用于测试重定向�
 <redir status='OK' date='YYYY-MM-DD HH:MM:SS.112Z' build='XXXX' host='<hostname>' localHost='<servername>'/>
 ```
 
-**频率**: 此测试不使用任何负载，因此可以经常运行它（例如每秒运行一次）。
+**频率**:此测试不使用任何负载，因此可以经常运行它（例如每秒运行一次）。
 
 #### /nl/jsp/ping.jsp {#nl-jsp-ping-jsp}
 
-此 **http(s)://`<Application server url>`/nl/jsp/ping.jsp** (p)页的操作方式与其网络对应方相同： 它测试一个完整的查询，它通过apache/tomcat/web模块／数据库上传到客户端。 如果一切正常，则返回“OK”。 我们建议在具有数据库访问权限的计算机上运行此测试(例如，mta和调查)。
+此 **http(s)://`<Application server url>`/nl/jsp/ping.jsp** (p)页的操作方式与其网络对应方相同：它测试一个完整的查询，它通过apache/tomcat/web模块／数据库上传到客户端。 如果一切正常，则返回“OK”。 我们建议在具有数据库访问权限的计算机上运行此测试(例如，mta和调查)。
 
-**用法**: 要远程登录，必须将与操作员登录关联的会话令牌作为参数进行传递(请参阅通过Adobe Campaign脚本 [进行自动监视中的提示](#automatic-monitoring-via-adobe-campaign-scripts))。
+**用法**:要远程登录，必须将与操作员登录关联的会话令牌作为参数进行传递(请参阅通过Adobe Campaign脚本 [进行自动监视中的提示](#automatic-monitoring-via-adobe-campaign-scripts))。
 
 例如：
 
@@ -416,19 +418,19 @@ http( **s)://`<application>`/r/test** (http:////r/test)页用于测试重定向�
 
 ![](assets/ncs_operators_rights_01.png)
 
-**频率**: 这是一个使用很少带宽的测试。 因此，它可以相当频繁地运行，但每分钟不会运行一次。
+**频率**:这是一个使用很少带宽的测试。 因此，它可以相当频繁地运行，但每分钟不会运行一次。
 
 #### /nl/jsp/monitor.jsp {#nl-jsp-monitor-jsp}
 
-这是一项测试，检查操作员是否可以通过网页访问Adobe Campaign服务器； 与通过客户端控制台菜单访问的网页相同。 您可以通过监视工具（Tivoli、Nagios等）调用此页。
+这是一项测试，检查操作员是否可以通过网页访问Adobe Campaign服务器；与通过客户端控制台菜单访问的网页相同。 您可以通过监视工具（Tivoli、Nagios等）调用此页。
 
 ![](assets/ncs_monitoring_web.png)
 
-**用法**: 与操作符登录关联的会话令牌，它允许您连接到实例，该令牌需要用作参数(请参阅通过Adobe Campaign脚本 [进行自动监视中的提示](#automatic-monitoring-via-adobe-campaign-scripts))。
+**用法**:与操作符登录关联的会话令牌，它允许您连接到实例，该令牌需要用作参数(请参阅通过Adobe Campaign脚本 [进行自动监视中的提示](#automatic-monitoring-via-adobe-campaign-scripts))。
 
 操作员及其登录名需要先在Adobe Campaign客户端控制台中配置相应的数据库权限和限制。
 
-**频率**: 这是一个完整的服务器测试，不需要经常运行（例如，每十分钟可以执行一次）。
+**频率**:这是一个完整的服务器测试，不需要经常运行（例如，每十分钟可以执行一次）。
 
 #### /nl/jsp/soaprouter.jsp {#nl-jsp-soaprouter-jsp}
 
@@ -493,7 +495,7 @@ Adobe Campaign可以提供实例监视工具(netreport)，它允许您通过电�
 
 自动监控需要以下安装前预防措施：
 
-* 您必须具有**netreport.tgz **（Linux安装）或 **netreport.zip** （Windows安装）文件，
+* 您必须具 **有netreport.tgz** （Linux安装） **或netreport.zip** （Windows安装）文件，
 * 我们强烈建议您不要在要监视的计算机上安装监视程序，
 * 它必须安装在装有JRE或JDK的计算机上，
 * 在Linux中，要监视的计算机必须具有 **bc** 包。 如需详细信息，请参阅[此部分](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages)。
@@ -506,7 +508,7 @@ Adobe Campaign可以提供实例监视工具(netreport)，它允许您通过电�
 1. 运行存档提取。
 1. 阅读自 **述文** 件。
 1. 更新 **netconf.xml** 配置文件。
-1. 更新 **netreport.bat** (Windows)或**netreport.sh **(Linux)文件。
+1. 更新 **netreport.bat** (Windows)或 **netreport.sh(Linux** )文件。
 
 ### 配置netconf.xml文件 {#configuring-the-netconf-xml-file}
 
@@ -557,9 +559,9 @@ XML配置文件包含以下元素：
 
 此元素用于填充电子邮件的配置，即
 
-* **mailServer**: 用于发送电子邮件的SMTP服务器(例如： smtp.domain.net)。
-* **mailFrom**: 报告发件人的电子邮件地址(例如： monitoring@domain.net)。
-* **recipientList**: 监视收件人的电子邮件地址列表。 地址必须用逗号分隔（无空格）。
+* **mailServer**:用于发送电子邮件的SMTP服务器(例如：smtp.domain.net)。
+* **mailFrom**:报告发件人的电子邮件地址(例如：monitoring@domain.net)。
+* **recipientList**:监视收件人的电子邮件地址列表。 地址必须用逗号分隔（无空格）。
 * “**夜**&#x200B;间”模式（可选）用于避免在指定时间段之间发送电子邮件。 相反，数据会进行整合，并在结束时间后（默认为7:00）发送一封有关夜间活动的电子邮件。
 * buildRange **子元素** （可选）允许您指定最小和最大内部版本号。 将为内部版本号不在此范围内的所有计算机生成错误
 
@@ -567,7 +569,7 @@ XML配置文件包含以下元素：
    <buildRange minimum="0000" maximum="9999"/>
    ```
 
-* 可以在属 **`<sla>`** 性元素中添加（可选）子 **元素** 。 每次执行Netreport时都会生成日志文件。 文件的名称包含配置名称以及日期和时间， **例如dev_06_12_13_16_47_05.tmp**。 该文件包含以下信息： 实例名称、计算机名称、严重性级别、（0到3，从最低严重到最严重）、日期（时间戳格式）、查询与响应之间经过的时间（以毫秒为单位）、使用的服务(http、ncs、ncsex、redir)。 此信息在每项服务结束时通过表格标记和换行分隔。
+* 可以在属 **`<sla>`** 性元素中添加（可选）子 **元素** 。 每次执行Netreport时都会生成日志文件。 文件的名称包含配置名称以及日期和时间， **例如dev_06_12_13_16_47_05.tmp**。 该文件包含以下信息：实例名称、计算机名称、严重性级别、（0到3，从最低严重到最严重）、日期（时间戳格式）、查询与响应之间经过的时间（以毫秒为单位）、使用的服务(http、ncs、ncsex、redir)。 此信息在每项服务结束时通过表格标记和换行分隔。
 
 >[!NOTE]
 >
@@ -588,30 +590,30 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 </instance
 ```
 
-* **name**: 将在电子邮件第一部分中显示的实例名称。
-* **recipientList** （可选）: 允许您通过电子邮件发送有关特定实例的监视报告。
+* **name**:将在电子邮件第一部分中显示的实例名称。
+* **recipientList** （可选）:允许您通过电子邮件发送有关特定实例的监视报告。
 
 #### “主机”元素 {#host--element}
 
 此元素配置主机上给定服务器的监视，即
 
-* **name**: 要监视的计算机的名称。
-* **alias** （可选）: 被监视计算机的名称，如报告中所示。
-* **sessionToken**: 通过授权会话令牌提供登录身份验证。
+* **name**:要监视的计算机的名称。
+* **alias** （可选）:被监视计算机的名称，如报告中所示。
+* **sessionToken**:通过授权会话令牌提供登录身份验证。
 
    要配置会话令牌，请在Adobe Campaign控 **制台** 中选择监视操作符。 在“访 **问权限** ”选项卡中，指定授权监视此实例的计算机的IP地址。 然后，您将能够使用监视标识符从这些计算机连接到监 **视页** ，无需指定口令。
 
    ![](assets/ncs_operators_rights_02.png)
 
-* **criticalLevel** （可选）: 允许您按严重性级别对要显示的错误进行排序。 可能的值为“0”（显示所有级别）、“1”（仅显示高错误和严重错误）和“2”（仅显示严重错误）。 如果未提供此属性，则显示所有错误级别。
-* **filter** （可选）: 允许您排除某些工作流错 **误，例如filter=&quot;wkf;wkf1&quot;**。 工作流标签必须用分号分隔。
+* **criticalLevel** （可选）:允许您按严重性级别对要显示的错误进行排序。 可能的值为“0”（显示所有级别）、“1”（仅显示高错误和严重错误）和“2”（仅显示严重错误）。 如果未提供此属性，则显示所有错误级别。
+* **filter** （可选）:允许您排除某些工作流错 **误，例如filter=&quot;wkf;wkf1&quot;**。 工作流标签必须用分号分隔。
 
 #### 子元素 {#sub-elements}
 
-* **tcp**: 检查服务器是否处于打开或关闭状态。 必须输入端口号。
-* **http**: 检查Web服务器是否存在（应用程序服务器是可操作的）。
-* **ncs**: 检查在“instance”属性中输入的实例上的进程（工作流错误、内存使用情况等）。 include **** (mandatory)属性允许您选择显示死进程（“true”或“false”值）。
-* **redir**: 检查跟踪。
+* **tcp**:检查服务器是否处于打开或关闭状态。 必须输入端口号。
+* **http**:检查Web服务器是否存在（应用程序服务器是可操作的）。
+* **ncs**:检查在“instance”属性中输入的实例上的进程（工作流错误、内存使用情况等）。 include **** (mandatory)属性允许您选择显示死进程（“true”或“false”值）。
+* **redir**:检查跟踪。
 
 在大多数情况下，只 **能保留****ncs** 和redir子元素。
 
