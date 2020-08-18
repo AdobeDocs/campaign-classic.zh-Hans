@@ -15,15 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972dce4b8429bb5b56fdf32b237384155bcc417a
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 66%
+source-wordcount: '915'
+ht-degree: 64%
 
 ---
 
 
 # 关于用户档案{#about-profiles}
+
+用户档案（客户、潜在客户、新闻稿订阅者等）将集中存储在 Adobe Campaign 数据库中。有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。通过Adobe Campaign，您可以将营销历史、购买信息、偏好、CRM数据和任何相关PI数据合并到一个整合的视图中，以便进行分析并采取行动。
+
+在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、SMS 等）所定位的默认用户档案。凭借数据库中存储的收件人数据，您可以过滤将接收任何给定投放的目标并在投放内容中添加个性化数据。数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
+
+![](assets/do-not-localize/how-to-video.png) [了解视频中用户档案的概念](#create-profiles-video)
 
 ## 用户档案类型 {#profile-types}
 
@@ -57,10 +63,10 @@ The **[!UICONTROL Profiles and targets]** link lets you display recipients store
 
 您还可以通过它访问：
 
-* 列表; 请参 [阅创建和管理列表](../../platform/using/creating-and-managing-lists.md),
+* 列表;请参 [阅创建和管理列表](../../platform/using/creating-and-managing-lists.md),
 * 订阅服务；请参阅[此页面](../../delivery/using/managing-subscriptions.md)，
 * web 应用程序；请参阅[此页面](../../web/using/about-web-applications.md)，
-* 进出口（就业）; 请参阅 [通用导入和导出](../../platform/using/generic-imports-and-exports.md),
+* 进出口（就业）;请参阅 [通用导入和导出](../../platform/using/generic-imports-and-exports.md),
 * 定位工作流；请参阅[此页面](../../workflow/using/building-a-workflow.md#implementation-steps-)。
 
 收件人页面允许您对用户档案执行常见的操作：编辑、更新、添加、删除、排序。
@@ -71,9 +77,9 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 * sort and filter the profiles of the database; see [Filtering options](../../platform/using/filtering-options.md),
 * move, copy or delete profiles from the database; see [Managing profiles](../../platform/using/managing-profiles.md),
-* 更新用户档案; 请参 [阅更新数据](../../platform/using/updating-data.md),
-* 出口收件人; 请参 [阅导出和导入用户档案](../../platform/using/exporting-and-importing-profiles.md),
-* 创建收件人组； 请参 [阅创建和管理列表](../../platform/using/creating-and-managing-lists.md)。
+* 更新用户档案;请参 [阅更新数据](../../platform/using/updating-data.md),
+* 出口收件人;请参 [阅导出和导入用户档案](../../platform/using/exporting-and-importing-profiles.md),
+* 创建收件人组；请参 [阅创建和管理列表](../../platform/using/creating-and-managing-lists.md)。
 
 要访问各种高级功能和配置，需单击 **[!UICONTROL Explorer]** 图标。
 
@@ -103,4 +109,24 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 您可以从“Campaign Standard”菜 **[!UICONTROL Number of active profiles]** 单获得概 **[!UICONTROL Administration > Campaign Management > Customer metrics]** 述。 The actual count is performed by the **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technical workflow](../../workflow/using/deliveries.md), which runs every day and adds the new data to the existing report for the current period in the **[!UICONTROL Customer metrics]** menu. 每个时段的时长均为 12 个月。
 
-如果您托管在AWS上，并使用构建8931中的Campaign Classic，您还可以直接从控制面板监视实例上使用的活动用户档案数。 有关此问题的详细信息，请参 [阅控制面板文档](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
+如果您托管在AWS上，并使用构建8931中的Campaign Classic，您还可以直接从控制面板监视实例上使用的活动用户档案数。 For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+
+## 如何创建和管理用户档案 {#create-profiles-video}
+
+了解如何访问用户档案数据、对用户档案进行排序和筛选以及手动创建和管理用户档案。
+
+此视频还解释了Adobe Campaign Classic遵守一般数据保护法规的情况。
+
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+
+**另请参阅**
+
+* [活动中的隐私管理](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)
+
+* [定义目标群](../../delivery/using/define-the-right-audience.md)
+
+* [在工作流中创建查询和细分数据](../../workflow/using/targeting-data.md)
+
+* [选择目标映射](../../delivery/using/selecting-a-target-mapping.md)
+
+* [定义受众-最佳实践](../../delivery/using/define-the-right-audience.md)
