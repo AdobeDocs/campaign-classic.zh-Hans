@@ -1,7 +1,7 @@
 ---
-title: 加载交付内容
-seo-title: 加载交付内容
-description: 加载交付内容
+title: 加载投放内容
+seo-title: 加载投放内容
+description: 加载投放内容
 seo-description: null
 page-status-flag: never-activated
 uuid: f2004fb0-9beb-463f-9903-10f291b3663e
@@ -15,39 +15,44 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 4%
 
 ---
 
 
-# 加载交付内容{#loading-delivery-content}
+# 加载投放内容{#loading-delivery-content}
 
-如果您的交付内容位于Amazon S3、FTP或SFTP服务器上的HTML文件中，则可以轻松将此内容加载到Adobe Campaign交付中。
+如果您的投放内容位于AmazonS3、FTP或SFTP服务器上的HTML文件中，则可以轻松将此内容加载到Adobe Campaign投放中。
 
 操作步骤：
 
-1. 如果您尚未在Adobe Campaign和承载内容文件的(S)FTP服务器之间定义连接，请在 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** >中新建一个S3、FTP或SFTP外部帐户 **[!UICONTROL External Accounts]**。 在此外部帐户中指定用于建立与S3或(S)FTP服务器连接的地址和凭据。
+1. 如果您尚未在Adobe Campaign与托管内容文件的(S)FTP服务器之间定义连接，请在>中新建一个S3、FTP或SFTP **[!UICONTROL Administration]** 外部帐户 **[!UICONTROL Platform]****[!UICONTROL External Accounts]**。 在此外部帐户中指定用于建立与S3或(S)FTP服务器连接的地址和凭据。
 
    以下是S3外部帐户的示例：
 
    ![](assets/delivery_loadcontent_filetransfertexamples3.png)
 
-1. 创建新工作流，例如，从 **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**。
-1. 将活动 **[!UICONTROL File transfer]** 添加到工作流中，并通过指定
+1. 创建新工作流，例如，从 **[!UICONTROL Profiles and Targets]** > > **[!UICONTROL Jobs]** 创建 **[!UICONTROL Targeting workflows]**。
+1. 将活动添 **[!UICONTROL File transfer]** 加到工作流中，并通过指定
 
    * 用于连接到S3或(S)FTP服务器的外部帐户。
    * 文件在S3或(S)FTP服务器上的路径。
+
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
-1. 添加活 **[!UICONTROL Delivery]** 动并将其连接到活动的出站转 **[!UICONTROL File transfer]** 换。 配置如下：
+1. 添加 **[!UICONTROL Delivery]** 活动并将其连接到活动的出站 **[!UICONTROL File transfer]** 过渡。 按如下方式配置它：
 
-   * 交付：根据您的需求，它可以是系统中已创建的特定交付，也可以是基于现有模板的新交付。
-   * 收件人：在本例中，将目标视为在交付本身中指定。
-   * 内容：即使内容已导入上一个活动，也可选择 **[!UICONTROL Specified in the delivery]**。 由于内容直接从位于远程服务器上的文件导入，因此当工作流处理时，它没有标识符，并且不能标识为来自入站事件。
-   * 要执行的操作：选择 **[!UICONTROL Save]** 以保存传送，并在执行工作流后，从 **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** 访问它。
+   * 投放:根据您的需要，它可以是系统中已创建的特定投放，也可以是基于现有模板的新投放。
+   * 收件人:在此示例中，会考虑在目标本身中指定投放。
+   * 内容：即使内容是在上一个活动中导入的，也请选择 **[!UICONTROL Specified in the delivery]**。 由于内容直接从位于远程服务器上的文件导入，因此当工作流处理时，它没有标识符，无法标识为来自入站事件。
+   * 要执行的操作：选 **[!UICONTROL Save]** 择以保存投放，并在执行工作流 **[!UICONTROL Campaign management]** 后 **[!UICONTROL Deliveries]** 能够从>访问它。
+
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. 在活动 **[!UICONTROL Script]** 的选项卡中，添 **[!UICONTROL Delivery]** 加以下命令，以在分发中加载导入的文件的内容：
+1. 在活动 **[!UICONTROL Script]** 的选项卡 **[!UICONTROL Delivery]** 中，添加以下命令以加载投放中导入的文件的内容：
 
    ```
    delivery.content.md.source=loadFile(vars.filename)
@@ -55,9 +60,8 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
    ![](assets/delivery_loadcontent_script.png)
 
-1. 保存并执行工作流。 将在 **[!UICONTROL Campaign management]** >下创建包含加载内容的新分发 **[!UICONTROL Deliveries]**。
+1. 保存并执行工作流。 在>下将创建包含已加载内容的新 **[!UICONTROL Campaign management]** 投放 **[!UICONTROL Deliveries]**。
 
 >[!NOTE]
 >
 >有关SFTP服务器使用的最佳实践和疑难解答， [请参阅本页](../../platform/using/sftp-server-usage.md)。
-
