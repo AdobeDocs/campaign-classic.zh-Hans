@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+workflow-type: tm+mt
+source-wordcount: '695'
+ht-degree: 73%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 列表是一组静态用户档案，用于在投放操作期间提供定位目标，或在导入操作或工作流执行期间进行更新。例如，通过查询从数据库中提取出的一组数据即可形成一个列表。
 
-然后可针对这些列表设置投放内容（通过电子邮件、SMS 或其他渠道），从而与许可营销的专业伦理保持一致。
+
 
 Lists are created and managed via the **[!UICONTROL Lists]** link in the **[!UICONTROL Profiles and targets]** tab.
 
@@ -34,17 +37,17 @@ Lists are created and managed via the **[!UICONTROL Lists]** link in the **[!UIC
 
 Adobe Campaign 提供两类列表：
 
-* **[!UICONTROL Group]** type:类 **[!UICONTROL Group]** 型列表属于根据特定 **条件选择** 的静态人员列表。 此列表就像一组用户档案的快照。请注意，将用户档案添加到数据库时，列表不会自动更新。
+* **[!UICONTROL Group]** 类型：类 **[!UICONTROL Group]** 型列表属于根据特 **定条件选** 择的人员的静态列表。 此列表就像一组用户档案的快照。请注意，将用户档案添加到数据库时，列表不会自动更新。
 
    For more information on how to create a **[!UICONTROL Group]** type list, refer to this [page](#creating-a-profile-list-from-a-group).
 
-* **[!UICONTROL List]** type:类型 **[!UICONTROL List]** 列表允许您使用工作流创建和管理列表。 These will be specific lists resulting from data imports, that can be updated via the dedicated **[!UICONTROL List update]** workflow activity.
+* **[!UICONTROL List]** 类型：类型 **[!UICONTROL List]** 列表允许您使用工作流创建和管理列表。 These will be specific lists resulting from data imports, that can be updated via the dedicated **[!UICONTROL List update]** workflow activity.
 
    Unlike the **[!UICONTROL Group]** type list, this type list can be automatically updated with a **[!UICONTROL Scheduler]** activity. Note that For an example on how to create **[!UICONTROL List]** type lists, refer to [this page](../../workflow/using/list-update.md).
 
 ## 通过组创建用户档案列表 {#creating-a-profile-list-from-a-group}
 
-**[!UICONTROL Group]** 通过链接创建的类 **[!UICONTROL Profiles and targets]** 型列表必须基于默认的Adobe Campaign配置文件表(nms:recipient)。
+**[!UICONTROL Group]** 通过链接创建 **[!UICONTROL Profiles and targets]** 的类型列表必须基于默认Adobe Campaign用户档案表(nms:收件人)。
 
 >[!NOTE]
 >
@@ -74,7 +77,7 @@ To create a new **[!UICONTROL Group]** type list, apply the following steps:
 
 ![](assets/s_ncs_user_new_recipient_from_group.png)
 
-与其他列表一样，也可以配置该用户档案列表。请参阅 [配置列表](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
+与其他列表一样，也可以配置该用户档案列表。请参 [阅配置列表](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
 
 ## 将数据链接到列表 {#linking-data-to-a-list}
 
@@ -85,7 +88,7 @@ To create a new **[!UICONTROL Group]** type list, apply the following steps:
 可对一组用户档案进行过滤并将得到的用户档案链接到列表。然后可将投放操作发送到此列表，从而定位用户档案。要分组用户档案：
 
 1. 选择用户档案并单击鼠标右键。
-1. Select **[!UICONTROL Actions > Associate selection with a list...]**.
+1. 选择 **[!UICONTROL Actions > Associate selection with a list...]**。
 
    ![](assets/s_ncs_user_add_selection_to_group.png)
 
@@ -93,7 +96,7 @@ To create a new **[!UICONTROL Group]** type list, apply the following steps:
 
    ![](assets/s_ncs_user_add_selection_to_group_2.png)
 
-1. Click the **[!UICONTROL Start]** button.
+1. 单击 **[!UICONTROL Start]** 按钮。
 
    ![](assets/s_ncs_user_add_selection_to_group_3.png)
 
@@ -125,7 +128,7 @@ If you uncheck the **[!UICONTROL No trace of this job is saved in the database]*
 
 ## 删除用户档案列表 {#deleting-a-list-of-profiles}
 
-您可以从 Adobe Campaign 树状结构的组列表中删除一个或多个列表。为此可通过 Adobe Campaign 主页中的 **[!UICONTROL Advanced > Explorer]** 链接编辑树状结构。选择相关的组，然后单击鼠标右键。Select **[!UICONTROL Delete]**. 警告消息会要求您确认此删除操作。
+您可以从 Adobe Campaign 树状结构的组列表中删除一个或多个列表。为此可通过 Adobe Campaign 主页中的 **[!UICONTROL Advanced > Explorer]** 链接编辑树状结构。选择相关的组，然后单击鼠标右键。选择 **[!UICONTROL Delete]**。警告消息会要求您确认此删除操作。
 
 >[!NOTE]
 >
