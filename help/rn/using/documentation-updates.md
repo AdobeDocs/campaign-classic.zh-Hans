@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
 workflow-type: tm+mt
-source-wordcount: '7069'
+source-wordcount: '7095'
 ht-degree: 95%
 
 ---
@@ -24,7 +24,6 @@ ht-degree: 95%
 # 文档更新{#documentation-updates}
 
 本页列出了每月所有新增功能和文档更新以及 Campaign 版本。
-
 
 您还可以查阅 [Adobe Campaign Classic Release 发行说明](../../rn/using/latest-release.md) ，了解更多更新信息。
 
@@ -56,6 +55,7 @@ ht-degree: 95%
 
 * [如何设置连续投放](../../workflow/using/continuous-delivery.md)
 
+在连接到FTP服务器后，收到“无法解析主机名”错误时，要执行的检查和操作中已添加信息。 [阅读更多](../../platform/using/sftp-server-usage.md)
 
 ## 2020 年 7 月 {#july-2020}
 
