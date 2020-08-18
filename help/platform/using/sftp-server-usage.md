@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '999'
 ht-degree: 58%
 
 ---
@@ -95,9 +95,9 @@ ht-degree: 58%
 1. 如果您使用的是基于密钥的身份验证，请检查您使用的密钥是否与提供给 Adobe 支持团队以用于实例配置的密钥相同。
 1. 如果您使用的是 FileZilla 或类似的 FTP 工具，请在支持票证中提供联机日志详细信息。
 
-## “无法解析主机名”错误，cURL中出现上载错误
+## “无法解析主机名”错误
 
-本节提供有关获取“无法解析主机名”时要执行的检查和操作的信息。 从Campaign Classic连接到FTP服务器后出错。
+本节提供从Campaign Classic连接到FTP服务器后，收到“无法解析主机名”错误时要执行的检查和操作的信息。
 
 工作流日志显示以下日志：
 
