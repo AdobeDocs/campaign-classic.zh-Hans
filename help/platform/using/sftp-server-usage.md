@@ -1,5 +1,5 @@
 ---
-title: SFTP服务器最佳实践和疑难解答
+title: SFTP 服务器使用情况
 description: 了解有关SFTP服务器最佳实践和疑难解答的更多信息。
 page-status-flag: never-activated
 uuid: 5281058d-91bd-4f98-835d-1d46dc7b8b1f
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
+source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '996'
 ht-degree: 58%
 
 ---
@@ -118,9 +118,9 @@ ht-degree: 58%
    1. 检查服务器名称是否已添加到本地DNS服务器。
    1. 如果是，请在Adobe Campaign服务器上运行以下命令以获取IP地址：
 
-   `nslookup <server domain name>`
+      `nslookup <server domain name>`
 
-   这将确认FTP服务器正在工作，并可从Adobe Campaign应用程序服务器访问。
+      这将确认FTP服务器正在工作，并可从Adobe Campaign应用程序服务器访问。
 
 1. 会话 **日志疑难解答**:
 
@@ -128,11 +128,11 @@ ht-degree: 58%
    1. 转到选 **[!UICONTROL File Transfer]** 项卡，然后单 **[!UICONTROL Advanced Parameters]**&#x200B;击。
    1. 勾选 **[!UICONTROL Display the session logs]** 选项。
 
-   ![](assets/sftp-error-display-logs.png)
+      ![](assets/sftp-error-display-logs.png)
 
    1. 转到工作流审核并检查日志是否显示“无法解析主机名”错误。
 
-   如果SFTP服务器由Adobe托管，请联系客户服务部，检查是否已将IP添加到允许列表。
+1. 如果SFTP服务器由Adobe托管，请联系客户服务部，检查是否已将IP添加到允许列表。
 
    否则验证：
 
