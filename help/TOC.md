@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2110'
 ht-degree: 95%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 95%
       + [一般导入和导出](platform/using/generic-imports-and-exports.md)
       + [导出数据](platform/using/exporting-data.md)
       + [导入数据](platform/using/importing-data.md)
-      + [SFTP服务器最佳实践和疑难解答](platform/using/sftp-server-usage.md)
+      + [SFTP 服务器使用情况](platform/using/sftp-server-usage.md)
    + 筛选数据 {#filtering-data}
       + [筛选选项](platform/using/filtering-options.md)
       + [创建过滤器](platform/using/creating-filters.md)
