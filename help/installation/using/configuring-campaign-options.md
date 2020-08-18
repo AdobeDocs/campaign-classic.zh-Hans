@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
 workflow-type: tm+mt
-source-wordcount: '3903'
+source-wordcount: '3927'
 ht-degree: 0%
 
 ---
 
 
-# 列表Campaign Classic选项{#configuring-campaign-options}
+# Campaign Classic 选项列表{#configuring-campaign-options}
 
 节 **[!UICONTROL Administration / Platform / Options]** 点允许您配置Adobe Campaign选项。
 
@@ -57,11 +57,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
-   <td> 要将测试地址用于收件箱渲染的模式列表。 （元素名称以逗号分隔）例如： custom_nms_收件人。<br /> </td> 
+   <td> 要将测试地址用于收件箱渲染的模式列表。 （元素名称以逗号分隔）例如：custom_nms_收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> 允许负责投放的操作符确认发送(如果指定了特定操作符或操作员组以在投放的属性中启动投放)。</p><p> 为此，请输入“1”作为值来激活选项。 要取消激活此选项，请输入“0”。</p><p> 然后，发送确认过程将作为默认过程： 只有在投放属性（或管理员）中为发送指定的运算符或操作员组才能确认和执行发送。 请参 <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">阅此部分</a>。</p> </td> 
+   <td><p> 允许负责投放的操作符确认发送(如果指定了特定操作符或操作员组以在投放的属性中启动投放)。</p><p> 为此，请输入“1”作为值来激活选项。 要取消激活此选项，请输入“0”。</p><p> 然后，发送确认过程将作为默认过程：只有在投放属性（或管理员）中为发送指定的运算符或操作员组才能确认和执行发送。 请参阅<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">此章节</a>。</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数据库(nms:收件人)对话。<br /> 选项值必须与与外部模式表匹配的收件人的名称相对应。<br /> </td> 
@@ -80,7 +80,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MaxDelayPerTransac</span> <br /> </td> 
-   <td> 为每个事务插入日志(broadLogs)的表： 每批要处理的行数。<br /> </td> 
+   <td> 为每个事务插入日志(broadLogs)的表：每批要处理的行数。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span> <br /> </td> 
@@ -184,19 +184,19 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
-   <td> 在渠道“email”（用作默认值）时： 在将收件人置入隔离之前，SOFT错误被接受的最大错误数。<br /> </td> 
+   <td> 在渠道“email”（用作默认值）时：在将收件人置入隔离之前，SOFT错误被接受的最大错误数。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailInvergientErrorDelay</span> <br /> </td> 
-   <td> 在渠道“email”（用作默认值）时： 在考虑新的SOFT错误之前，自上一个引用的SOFT错误以来花费的最短时间。<br /> </td> 
+   <td> 在渠道“email”（用作默认值）时：在考虑新的SOFT错误之前，自上一个引用的SOFT错误以来花费的最短时间。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileMaxError</span> <br /> </td> 
-   <td> 关于渠道“移动”: 在将收件人置入隔离之前，SOFT错误被接受的最大错误数。<br /> </td> 
+   <td> 关于渠道“移动”:在将收件人置入隔离之前，SOFT错误被接受的最大错误数。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileInvergiantErrorDelay</span> <br /> </td> 
-   <td> 关于渠道“移动”: 在考虑新的SOFT错误之前，自上一个引用的SOFT错误以来花费的最短时间。<br /> </td> 
+   <td> 关于渠道“移动”:在考虑新的SOFT错误之前，自上一个引用的SOFT错误以来花费的最短时间。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
@@ -240,7 +240,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
-   <td> 已发送SMS消息的参数： 发送到SMS网关以指示消息优先级的信息。<br /> </td> 
+   <td> 已发送SMS消息的参数：发送到SMS网关以指示消息优先级的信息。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_RetryCount</span> <br /> </td> 
@@ -279,7 +279,7 @@ ht-degree: 0%
   </tr>
 -->
 
-## 资源 {#resources}
+## 资源{#resources}
 
 <table> 
  <thead> 
@@ -291,11 +291,11 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDir</span> <br /> </td> 
-   <td> Adobe Campaign客户端控制台中要发布的资源位置。 请参 <a href="../../delivery/using/formatting.md#image-referencing">阅此部分</a>。<br /> </td> 
+   <td> Adobe Campaign客户端控制台中要发布的资源位置。 请参阅<a href="../../delivery/using/formatting.md#image-referencing">此章节</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDirPreview</span> <br /> </td> 
-   <td> 在Adobe Campaign客户端控制台中预览的资源位置。 请参 <a href="../../delivery/using/formatting.md#image-referencing">阅此部分</a>。<br /> </td> 
+   <td> 在Adobe Campaign客户端控制台中预览的资源位置。 请参阅<a href="../../delivery/using/formatting.md#image-referencing">此章节</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
@@ -409,7 +409,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPasswords</span> <br /> </td> 
-   <td> (安装兼容模式： build&gt;6000)激活后（值“1”），此选项允许使用存储在外部帐户库中的旧口令连接到或实例。<br /> </td> 
+   <td> (安装兼容模式：build&gt;6000)激活后（值“1”），此选项允许使用存储在外部帐户库中的旧口令连接到或实例。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkKey</span> <br /> </td> 
@@ -456,8 +456,8 @@ ht-degree: 0%
    <td> <span class="uicontrol">MC_ExchrencistCustomJs</span> <br /> </td> 
    <td> 个性化的JavaScript库以丰富事件。 必须包含以下两个功能的实现：<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">丰富RtEvents(aiEventId);</span> : 丰富并保存事件库中的 <span class="uicontrol">(其中</span> aiEventId与处理的实时事件表相对应)。</p> </li> 
-     <li> <p> <span class="uicontrol">丰富BatchEvents(aiEventId);</span> : 丰富和保存事件在数据 <span class="uicontrol">库中</span> (aiEventId对应于已处理批次事件的ID表)。</p> </li> 
+     <li> <p> <span class="uicontrol">丰富RtEvents(aiEventId);</span> :丰富并保存事件库中的 <span class="uicontrol">(其中</span> aiEventId与处理的实时事件表相对应)。</p> </li> 
+     <li> <p> <span class="uicontrol">丰富BatchEvents(aiEventId);</span> :丰富和保存事件在数据 <span class="uicontrol">库中</span> (aiEventId对应于已处理批次事件的ID表)。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -468,8 +468,8 @@ ht-degree: 0%
    <td> <span class="uicontrol">MC_RoutingCustomJs</span> <br /> </td> 
    <td> 个性化JavaScript库，以供路由事件使用。 必须包含以下两个功能的实现：<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> : 返回选定用于处理事务性消息的实时事件的内部名称( <span class="uicontrol">其中</span> iEventId与所处理实时事件的ID对应)。</p> </li> 
-     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> : 返回选定用于处理事务性消息的批次事件的内部名称( <span class="uicontrol">其中</span> iEventId与所处理批次事件的ID对应)。</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> :返回选定用于处理事务性消息的实时事件的内部名称( <span class="uicontrol">其中</span> iEventId与所处理实时事件的ID对应)。</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> :返回选定用于处理事务性消息的批次事件的内部名称( <span class="uicontrol">其中</span> iEventId与所处理批次事件的ID对应)。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -522,7 +522,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMinQueueAlert</span> <br /> </td> 
-   <td> 排队实时事件的最小数目的警报阈值。<br /> </td> 
+   <td> 排队实时事件的最小数量的警报阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMinQueueWarning</span> <br /> </td> 
@@ -629,29 +629,29 @@ ht-degree: 0%
    <tr> 
    <td> <span class="uicontrol">WdbcKillSessionPolicy</span> <br /> </td> 
    <td>允许您根据以下潜在值影响所有工作流和PostgreSQL查询库的“无条件停止”行为：<ul>
-    <li><p>0 —— 默认值： 停止工作流进程，不影响数据库<p></li>
-    <li><p>1 - pg_cancel_backend: 停止工作流进程并取消查询库中的数据<p></li>
-    <li><p>2 - pg_terminate_backend: 停止工作流进程并终止查询库中的数据<p></li></ul></td> 
+    <li><p>0 —— 默认值：停止工作流进程，不影响数据库<p></li>
+    <li><p>1 - pg_cancel_backend:停止工作流进程并取消查询库中的数据<p></li>
+    <li><p>2 - pg_terminate_backend:停止工作流进程并终止查询库中的数据<p></li></ul></td> 
   </tr>  
-  <tr> 
-   <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> 要包含Adobe Campaign标准表索引的表空间的名称。<br /> </td> 
+    <tr> 
+   <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
+   <td> 要包含Adobe Campaign标准表数据的表空间的名称。<br />请参 <a href="../../installation/using/creating-and-configuring-the-database.md">阅创建和配置数据库</a>。</td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> 要包含标准Adobe Campaign表数据的表空间的名称。<br /> </td> 
+   <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
+   <td> 要包含Adobe Campaign标准表索引的表空间的名称。<br />请参 <a href="../../installation/using/creating-and-configuring-the-database.md">阅创建和配置数据库</a>。</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
-   <td> 要包含Adobe Campaign工作表数据的表空间的名称。<br /> </td> 
+   <td> 要包含Adobe Campaign工作表数据的表空间的名称。<br />请参 <a href="../../installation/using/creating-and-configuring-the-database.md">阅创建和配置数据库</a>。</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWorkIndex</span> <br /> </td> 
-   <td> 要包含Adobe Campaign工作表索引的表空间的名称。<br /> </td> 
+   <td> 要包含Adobe Campaign工作表索引的表空间的名称。<br />请参 <a href="../../installation/using/creating-and-configuring-the-database.md">阅创建和配置数据库</a>。</td> 
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> 允许您为Microsoft SQL Server上的工作表配置单独的数据库，以优化备份和复制。 该选项与临时数据库的名称相对应： 如果指定，将在此数据库中写入工作表。 示例： 'tempdb.dbo.' （请注意，名称必须以点结尾）。</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">阅读更多</a> <br /> </td> 
+   <td> 允许您为Microsoft SQL Server上的工作表配置单独的数据库，以优化备份和复制。 该选项与临时数据库的名称相对应：如果指定，将在此数据库中写入工作表。 示例：'tempdb.dbo.' （请注意，名称必须以点结尾）。</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">阅读更多</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
@@ -687,7 +687,7 @@ ht-degree: 0%
    <td> 在迁移过程中，将根据新版本标准自动重新组织树结构。<br /> 此选项允许您禁用导航树的自动迁移。 如果您使用它，则在迁移后必须删除已废弃的文件夹，添加新文件夹并运行所有必要的检查。<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">数据类型：</span> 整数</p> </li> 
-     <li> <p> <span class="uicontrol">值（文本）</span> : 1 </p> </li> 
+     <li> <p> <span class="uicontrol">值（文本）</span> :1 </p> </li> 
     </ul> 仅当现成的导航树进行了太多更改时，才应使用此选项。<br /> 有关此内容的详细信息，请参 <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">阅本节</a>。<br /> </td> 
   </tr> 
   <tr> 
@@ -696,7 +696,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span> <br /> </td> 
-   <td> 有关Postupgrade中发生的错误的信息，请遵循以下语法：<br /> <strong>{内部版本号}:{mode: pre/post/...}:{出现错误的'lessThan'/'greaterOrEquelThan' +子步骤}</strong> </td> 
+   <td> 有关Postupgrade中发生的错误的信息，请遵循以下语法：<br /><strong>{内部版本号}:{mode:pre/post/...}:{出现错误的'lessThan'/'greaterOrEquelThan' +子步骤}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span> <br /> </td> 
@@ -721,19 +721,19 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> 允许您配置Experience Cloud触发器。 数据类型为“长文本”，且必须采用JSON格式。 请参 <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">阅如何将Experience Cloud触发器与Adobe Campaign经典结合使用</a>。<br /> </td> 
+   <td> 允许您配置Experience Cloud触发器。 数据类型为“长文本”，且必须采用JSON格式。 请参 <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">阅如何将Experience Cloud触发器与Adobe Campaign Classic结合使用</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
    <td> 当通过CRM连接器从第三方系统导入数据时，会使用此选项。 启用此选项后，您只能收集自上次导入后修改的对象。 必须手动创建并填充此选项，如下所示： 
     <ul> 
-     <li> <p> <span class="uicontrol">内部名称</span> : LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</p> </li> 
-     <li> <p> <span class="uicontrol">值（字段）</span> : 上次导入的日期，格式为yyyy/MM/dd hh:mm:ss。 </p> </li> 
+     <li> <p> <span class="uicontrol">内部名称</span> :LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</p> </li> 
+     <li> <p> <span class="uicontrol">值（字段）</span> :上次导入的日期，格式为yyyy/MM/dd hh:mm:ss。 </p> </li> 
     </ul><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> 用于集成的Adobe Target服务器。 默认情况下，此选项已被选中。 此值与Adobe Target域服务器对应，后跟值/m2。 例如： tt.omtrdc.net/m2。<br /> 请参 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">阅此部分</a>。<br /> </td> 
+   <td> Adobe Target服务器用于集成。 默认情况下，此选项已被选中。 此值与Adobe Target域服务器对应，后跟值/m2。 例如：tt.omtrdc.net/m2。<br /> 请参 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">阅此部分</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
@@ -741,11 +741,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
-   <td> 用于与Adobe Audience Manager集成的选项。<br /> </td> 
+   <td> 用于与Adobe Audience Manager整合的选项。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DestinationId</span> <br /> </td> 
-   <td> 用于与Adobe Audience Manager集成的选项。<br /> </td> 
+   <td> 用于与Adobe Audience Manager整合的选项。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
@@ -1039,7 +1039,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> 用于指定Web表单的失效模式的选项： 默认情况下，如果选项为“跟踪”，则使用跟踪服务器，并对“其他服务器”选项使用个性化列表。<br /> </td> 
+   <td> 用于指定Web表单的失效模式的选项：默认情况下，如果选项为“跟踪”，则使用跟踪服务器，并对“其他服务器”选项使用个性化列表。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURL</span> <br /> </td> 
