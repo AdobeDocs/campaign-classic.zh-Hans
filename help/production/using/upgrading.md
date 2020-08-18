@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 5598682078a8fd3c8d9ecdca083f3a310c48f5f0
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 0%
+source-wordcount: '1120'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->另请参阅安装 [指南](../../installation/using/general-architecture.md) 和内 [部升级](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) 入门。
+>另请参阅安装 [指南](../../installation/using/general-architecture.md) 和内 [部升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html) 入门。
 
 ## 在Windows中 {#in-windows}
 
@@ -257,7 +257,7 @@ ht-degree: 0%
 
 在安装(nlserver web)**Adobe Campaign应用**&#x200B;程序服务器的计算机上，下载并复制文件
 
-**setup-client-6。** XXXX **.exe**
+**setup-client-6.XXXX.exe**
 
 **应[用程序的路径]**datakitnlengjsp
 
@@ -271,7 +271,7 @@ ht-degree: 0%
 
 在安装Adobe Campaign应用程序服务器(**nlserver web**)的计算机上，检索以下包：
 
-**setup-client-6。** XXXX **.exe**
+**setup-client-6.XXXX.exe**
 
 并复制它，另 **存为/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
