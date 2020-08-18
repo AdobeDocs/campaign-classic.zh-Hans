@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d4edd389fde91c3f316c5213f4d7f34e51979112
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
 workflow-type: tm+mt
-source-wordcount: '2473'
+source-wordcount: '2474'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->使用此功能时，请记住SFTP存储、数据库存储和有效用户档案限制，这些限制均符合AdobeCampaign合同的规定。
+>在导入数据时，请记住SFTP存储、存储库和活动用户档案限制。
 
 ## 如何收集数据 {#how-to-collect-data}
 
-### 使用列表中的数据： 读取列表 {#using-data-from-a-list--read-list}
+### 使用列表中的数据：读取列表 {#using-data-from-a-list--read-list}
 
 在工作流中发送的数据可以来自列表，据此数据已事先准备好并进行结构化。
 
@@ -53,91 +53,6 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-## 在处理文件之前解压缩或解密文件 {#unzipping-or-decrypting-a-file-before-processing}
-
-### 关于预处理阶段 {#about-pre-processing-stages}
-
-Adobe Campaign允许您导入压缩或加密文件。 在数据加载（文件） [活动中读取它们之前](../../workflow/using/data-loading--file-.md) ，您可以定义一个预处理来解压缩或解密文件。
-
-要做到这一点，请执行以下操作：
-
-1. 使用 [控制面板](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) ，生成公钥／私钥对。
-
-   >[!NOTE]
-   >
-   >控制面板适用于在AWS上托管的所有客户（预先托管其营销实例的客户除外）。
-
-1. 如果Adobe Campaign安装由Adobe托管，请与Adobe客户服务部门联系，在服务器上安装必要的实用程序。
-1. 如果您的Adobe Campaign安装是事先安装的，请安装您要使用的实用程序(例如： GPG、GZIP)以及应用程序服务器上必需的密钥（加密密钥）。
-
-然后，您可以在工作流中使用所需的预处理命令：
-
-1. 在工作流中添 **[!UICONTROL File transfer]** 加和配置活动。
-1. 添加 **[!UICONTROL Data loading (file)]** 活动并定义文件格式。
-1. 选中该 **[!UICONTROL Pre-process the file]** 选项。
-1. 指定要应用的预处理命令。
-1. 添加其他活动以管理来自文件的数据。
-1. 保存并执行您的工作流。
-
-在下面的用例中给出一个示例。
-
-**相关主题：**
-
-* [数据加载（文件）活动](../../workflow/using/data-loading--file-.md)。
-* [压缩或加密文件](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
-
-### 用例： 导入使用控制面板生成的密钥加密的数据 {#use-case-gpg-decrypt}
-
-在此用例中，我们将构建一个工作流，以便使用在控制面板中生成的密钥导入外部系统中已加密的数据。
-
-本节还提供了一个教程视频，其中显示了如何使用GPG密钥解密 [数据](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html)。
-
-执行此用例的步骤如下：
-
-1. 使用控制面板生成密钥对（公共／私有）。 控制面板文档中提供了详 [细步骤](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)。
-
-   * 公钥将与外部系统共享，外部系统将使用公钥加密要发送给活动的数据。
-   * Campaign Classic将使用私钥解密传入的加密数据。
-
-   ![](assets/gpg_generate.png)
-
-1. 在外部系统中，使用从控制面板下载的公钥加密要导入到Campaign Classic的数据。
-
-   ![](assets/gpg_external.png)
-
-1. 在Campaign Classic中，构建一个工作流以导入加密数据，并使用通过控制面板安装的私钥对其进行解密。 为此，我们将按如下方式构建工作流：
-
-   ![](assets/gpg_workflow.png)
-
-   * **[!UICONTROL File transfer]** 活动: 将文件从外部源传输到Campaign Classic。 在此示例中，我们希望从SFTP服务器传输文件。
-   * **[!UICONTROL Data loading (file)]** 活动: 将文件中的数据加载到控制面板库，然后使用在数据库中生成的私钥进行解密。
-
-1. 打开 **[!UICONTROL File transfer]** 活动，然后指定要从中导入加密的。gpg文件的外部帐户。
-
-   ![](assets/gpg_transfer.png)
-
-   有关如何配置活动的全局概念，请参 [阅本节](../../workflow/using/file-transfer.md)。
-
-1. 打开 **[!UICONTROL Data loading (file)]** 活动，然后根据需要配置它。 有关如何配置活动的全局概念，请参 [阅本节](../../workflow/using/data-loading--file-.md)。
-
-   为活动添加预处理阶段，以解密传入数据。 为此，请选择选 **[!UICONTROL Pre-process the file]** 项，然后在字段中复制并粘贴此解密命 **[!UICONTROL Command]** 令：
-
-   `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
-
-   ![](assets/gpg_load.png)
-
-   >[!CAUTION]
-   >
-   >在本示例中，我们使用控制面板默认使用的密码短语，即“密码短语”。
-   >
-   >如果您过去通过客户关怀请求在实例上安装了GPG密钥，则该密码可能已更改，并且默认情况下与该密码不同。
-
-1. 单击 **[!UICONTROL OK]** 以确认活动配置。
-
-1. 您现在可以运行工作流。 一旦执行，您就可以检入已执行解密且已导入文件中数据的工作流日志。
-
-   ![](assets/gpg_run.png)
-
 ## 导入数据时的最佳实践 {#best-practices-when-importing-data}
 
 谨慎并遵循下面详述的几个简单规则将有助于确保数据库内数据的一致性，避免在数据库更新或数据导出过程中出现常见错误。
@@ -160,12 +75,12 @@ Adobe Campaign允许您导入压缩或加密文件。 在数据加载（文件�
 
 例如：
 
-* 分隔符： 制表符或分号
+* 分隔符：制表符或分号
 * 带标题的第一行
 * 无字符串分隔符
-* 日期格式： YYYY/MM/DD HH:mm:SS
+* 日期格式：YYYY/MM/DD HH:mm:SS
 
-Adobe Campaign无法使用标准文件导入活动导入XML文件。 可以使用JavaScript导入XML文件，但只能使用小卷： 每个文件的记录少于10K。
+Adobe Campaign无法使用标准文件导入活动导入XML文件。 可以使用JavaScript导入XML文件，但只能使用小卷：每个文件的记录少于10K。
 
 ### 使用压缩和加密 {#using-compression-and-encryption}
 
@@ -216,7 +131,7 @@ zcat nl6/var/vp/import/filename.gz
 
 * **在导入**&#x200B;数据时，消除重复、协调并维护一致性。
 
-## 设置重复导入 {#setting-up-a-recurring-import}
+## 用例：设置重复导入 {#setting-up-a-recurring-import}
 
 如果需要定期导入结构相同的文件，使用导入模板是最佳做法。
 
@@ -225,17 +140,17 @@ zcat nl6/var/vp/import/filename.gz
 1. 从创建新的工作流模板 **[!UICONTROL Resources > Templates > Workflow templates]**。
 1. 添加以下活动:
 
-   * **[!UICONTROL Data loading (file)]**: 定义包含要导入的数据的文件的预期结构。
-   * **[!UICONTROL Enrichment]**: 协调导入的数据与数据库数据。
-   * **[!UICONTROL Split]**: 创建过滤器，根据记录是否可以对帐，以不同方式处理记录。
-   * **[!UICONTROL Deduplication]**: 在将数据插入数据库之前，从传入文件中消除重复数据。
-   * **[!UICONTROL Update data]**: 使用导入的用户档案更新数据库。
+   * **[!UICONTROL Data loading (file)]**:定义包含要导入的数据的文件的预期结构。
+   * **[!UICONTROL Enrichment]**:协调导入的数据与数据库数据。
+   * **[!UICONTROL Split]**:创建过滤器，根据记录是否可以对帐，以不同方式处理记录。
+   * **[!UICONTROL Deduplication]**:在将数据插入数据库之前，从传入文件中消除重复数据。
+   * **[!UICONTROL Update data]**:使用导入的用户档案更新数据库。
 
    ![](assets/import_template_example0.png)
 
 1. 配置 **[!UICONTROL Data Loading (file)]** 活动:
 
-   * 通过上传示例文件来定义预期结构。 示例文件应仅包含几行，但包含导入所需的所有列。 检查并编辑文件格式，确保正确设置每列的类型： 文本、日期、整数等。 例如：
+   * 通过上传示例文件来定义预期结构。 示例文件应仅包含几行，但包含导入所需的所有列。 检查并编辑文件格式，确保正确设置每列的类型：文本、日期、整数等。 例如：
 
       ```
       lastname;firstname;birthdate;email;crmID
@@ -263,13 +178,13 @@ zcat nl6/var/vp/import/filename.gz
 
    * 在活动 **[!UICONTROL General]** 的选项卡中，选 **[!UICONTROL Use the additional data only]** 择“筛选设置”并确保 **[!UICONTROL Targeting dimension]** 自动设置为 **[!UICONTROL Enrichment]**。
 
-      选中 **[!UICONTROL Generate complement]** 此选项，可查看是否无法在数据库中插入任何记录。 如果需要，您随后可以对补充数据应用进一步处理： 文件导出、列表更新等。
+      选中 **[!UICONTROL Generate complement]** 此选项，可查看是否无法在数据库中插入任何记录。 如果需要，您随后可以对补充数据应用进一步处理：文件导出、列表更新等。
 
    * 在选项卡的第一个 **[!UICONTROL Subsets]** 子集中，在入站填充上添加过滤条件，以仅选择收件人主键不等于0的记录。 这样，在该子集中选择与来自收件人库的数据协调的文件数据。
 
       ![](assets/import_template_example3.png)
 
-   * 添加第二个子集，它选择具有足够数据要插入数据库的未协调记录。 例如： 电子邮件地址、名字和姓氏。
+   * 添加第二个子集，它选择具有足够数据要插入数据库的未协调记录。 例如：电子邮件地址、名字和姓氏。
 
       子集按其创建顺序进行处理，这意味着当处理第二个子集时，在第一子集中已经选择数据库中已存在的所有记录。
 
@@ -311,3 +226,87 @@ zcat nl6/var/vp/import/filename.gz
 
 ![](assets/import_template_example9.png)
 
+## 在处理文件之前解压缩或解密文件 {#unzipping-or-decrypting-a-file-before-processing}
+
+### 关于预处理阶段 {#about-pre-processing-stages}
+
+Adobe Campaign允许您导入压缩或加密文件。 在数据加载（文件） [活动中读取它们之前](../../workflow/using/data-loading--file-.md) ，您可以定义一个预处理来解压缩或解密文件。
+
+要做到这一点，请执行以下操作：
+
+1. 使用 [控制面板](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) ，生成公钥／私钥对。
+
+   >[!NOTE]
+   >
+   >控制面板适用于在AWS上托管的所有客户（预先托管其营销实例的客户除外）。
+
+1. 如果Adobe Campaign安装由Adobe托管，请与Adobe客户服务部门联系，在服务器上安装必要的实用程序。
+1. 如果您的Adobe Campaign安装是事先安装的，请安装您要使用的实用程序(例如：GPG、GZIP)以及应用程序服务器上必需的密钥（加密密钥）。
+
+然后，您可以在工作流中使用所需的预处理命令：
+
+1. 在工作流中添 **[!UICONTROL File transfer]** 加和配置活动。
+1. 添加 **[!UICONTROL Data loading (file)]** 活动并定义文件格式。
+1. 勾选 **[!UICONTROL Pre-process the file]** 选项。
+1. 指定要应用的预处理命令。
+1. 添加其他活动以管理来自文件的数据。
+1. 保存并执行您的工作流。
+
+在下面的用例中给出一个示例。
+
+**相关主题：**
+
+* [数据加载（文件）活动](../../workflow/using/data-loading--file-.md)。
+* [压缩或加密文件](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
+
+### 用例：导入使用控制面板生成的密钥加密的数据 {#use-case-gpg-decrypt}
+
+在此用例中，我们将构建一个工作流，以便使用在控制面板中生成的密钥导入外部系统中已加密的数据。
+
+本节还提供了一个教程视频，其中显示了如何使用GPG密钥解密 [数据](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html)。
+
+执行此用例的步骤如下：
+
+1. 使用控制面板生成密钥对（公共／私有）。 控制面板文档中提供了详 [细步骤](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)。
+
+   * 公钥将与外部系统共享，外部系统将使用公钥加密要发送给活动的数据。
+   * Campaign Classic将使用私钥解密传入的加密数据。
+
+   ![](assets/gpg_generate.png)
+
+1. 在外部系统中，使用从控制面板下载的公钥加密要导入到Campaign Classic的数据。
+
+   ![](assets/gpg_external.png)
+
+1. 在Campaign Classic中，构建一个工作流以导入加密数据，并使用通过控制面板安装的私钥对其进行解密。 为此，我们将按如下方式构建工作流：
+
+   ![](assets/gpg_workflow.png)
+
+   * **[!UICONTROL File transfer]** 活动:将文件从外部源传输到Campaign Classic。 在此示例中，我们希望从SFTP服务器传输文件。
+   * **[!UICONTROL Data loading (file)]** 活动:将文件中的数据加载到控制面板库，然后使用在数据库中生成的私钥进行解密。
+
+1. 打开 **[!UICONTROL File transfer]** 活动，然后指定要从中导入加密的。gpg文件的外部帐户。
+
+   ![](assets/gpg_transfer.png)
+
+   有关如何配置活动的全局概念，请参 [阅本节](../../workflow/using/file-transfer.md)。
+
+1. 打开 **[!UICONTROL Data loading (file)]** 活动，然后根据需要配置它。 有关如何配置活动的全局概念，请参 [阅本节](../../workflow/using/data-loading--file-.md)。
+
+   为活动添加预处理阶段，以解密传入数据。 为此，请选择选 **[!UICONTROL Pre-process the file]** 项，然后在字段中复制并粘贴此解密命 **[!UICONTROL Command]** 令：
+
+   `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
+
+   ![](assets/gpg_load.png)
+
+   >[!CAUTION]
+   >
+   >在本示例中，我们使用控制面板默认使用的密码短语，即“密码短语”。
+   >
+   >如果您过去通过客户关怀请求在实例上安装了GPG密钥，则该密码可能已更改，并且默认情况下与该密码不同。
+
+1. 单击 **[!UICONTROL OK]** 以确认活动配置。
+
+1. 您现在可以运行工作流。 一旦执行，您就可以检入已执行解密且已导入文件中数据的工作流日志。
+
+   ![](assets/gpg_run.png)
