@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 653f630079277ffb75915206c445e9414cfcdd7c
+source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 0%
+source-wordcount: '1296'
+ht-degree: 1%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 0%
 
 在创建Adobe Campaign库时，该数据库提供两个不同的选项：
 
-1. 创建或循环使用数据库： 如果要创建新数据库或重复使用现有数据库，请选择此选项。 请参阅 [案例1: 创建／循环使用数据库](#case-1--creating-recycling-a-database)。
-1. 使用现有数据库： 如果管理员已创建空数据库并且您希望使用它，则选择此选项； 或扩展现有数据库的结构。 请参 [阅案例2: 使用现有数据库](#case-2--using-an-existing-database)。
+1. 创建或循环使用数据库：如果要创建新数据库或重复使用现有数据库，请选择此选项。 请参阅 [案例1:创建／循环使用数据库](#case-1--creating-recycling-a-database)。
+1. 使用现有数据库：如果管理员已创建空数据库并且您希望使用它，则选择此选项；或扩展现有数据库的结构。 请参 [阅案例2:使用现有数据库](#case-2--using-an-existing-database)。
 
 下文详细介绍了配置步骤。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 >
 >只有内部 **标识符** 才能执行这些操作。 For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-## 案例1: 创建／循环使用数据库 {#case-1--creating-recycling-a-database}
+## 案例1:创建／循环使用数据库 {#case-1--creating-recycling-a-database}
 
 创建数据库或循环使用现有库的步骤如下所示。 某些配置取决于所使用的数据库引擎：
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-支持的数据库在兼容性矩阵一 [节中介绍](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
+支持的数据库在兼容性矩阵一 [节中介绍](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
 
 识别服务器并选择要执行的操作类型。 在这个例子中， **[!UICONTROL Create or recycle a database]**。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 * 对于 **PostgreSQL** 或 **DB2引擎** ，必须指定在应用程序服务器上定义的DNS名称（或IP地址）才能访问数据库服务器。
 * 对于 **Microsoft SQL Server** Engine，必须定义：
 
-   1. 应用程序服务器上定义的用于访问数据库服务器的DNS名称（或IP地址）: **DNS** 或 **DNS\ `<instance>`**（实例模式）,
+   1. 应用程序服务器上定义的用于访问数据库服务器的DNS名称（或IP地址）: **DNS** 或 **DNS\`<instance>`** （实例模式）,
    1. 用于访问Microsoft SQL Server的身份验证方法： **[!UICONTROL SQL Server authentication]** 或 **[!UICONTROL Windows NT authentication]**&#x200B;者
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
@@ -132,12 +132,12 @@ ht-degree: 0%
 
 * 对于Oracle、Microsoft SQL Server或PostgreSQL数据库，管理员还可以定义创建存储 **对象时** 要使用的参数。
 
-   这些参数接收确切的表空间名称(警告： 区分大小写)。 它们分别存储在节 **[!UICONTROL Administration > Platform > Options]** 点的以下选项中：
+   这些参数接收确切的表空间名称(警告：区分大小写)。 它们分别存储在节 **[!UICONTROL Administration > Platform > Options]** 点的以下选项中(请参 [](../../installation/using/configuring-campaign-options.md#database)阅):
 
-   * **WdbcOptions_TableSpaceUser**: 基于模式的用户表
-   * **WdbcOptions_TableSpaceIndex**: 根据模式
-   * **WdbcOptions_TableSpaceWork**: 无模式的工作表
-   * **WdbcOptions_TableSpaceWorkIndex**: 无模式的工作表索引
+   * **WdbcOptions_TableSpaceUser**:基于模式的用户表
+   * **WdbcOptions_TableSpaceIndex**:根据模式
+   * **WdbcOptions_TableSpaceWork**:无模式的工作表
+   * **WdbcOptions_TableSpaceWorkIndex**:无模式的工作表索引
 
 * 对于OracleAdobe Campaign库，用户必须具有对Oracle库的访问权限，通常作为oinstall组的 **成员** 。
 * 通过 **[!UICONTROL Set or change the administrator password]** 此选项，您可以输入与具有管理员权限的Adobe Campaign操作员链接的口令。
@@ -162,11 +162,11 @@ ht-degree: 0%
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
 
-## 案例2: 使用现有数据库 {#case-2--using-an-existing-database}
+## 案例2:使用现有数据库 {#case-2--using-an-existing-database}
 
 数据库以及用户必须由数据库管理员创建，并且访问权限配置正确。
 
-例如，对于Oracle数据库，最低要求的权限是： 授予连接、资源和无限表空间。
+例如，对于Oracle数据库，最低要求的权限是：授予CONNECT、资源和无限表空间。
 
 要使用现有数据库，配置步骤如下：
 
