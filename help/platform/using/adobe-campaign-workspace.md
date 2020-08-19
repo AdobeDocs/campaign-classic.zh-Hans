@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 14e67ca7f57d39e6939d6ff3479aa897674b18dc
+source-git-commit: 11a6ddd275dc8482e82f163abc14cacaf0281dff
+workflow-type: tm+mt
+source-wordcount: '2165'
+ht-degree: 88%
 
 ---
 
@@ -36,7 +39,7 @@ source-git-commit: 14e67ca7f57d39e6939d6ff3479aa897674b18dc
 >
 >在您的实例上有哪些 Adobe Campaign 功能可用取决于已安装的模块和附加组件。根据您的权限及具体配置，部分功能可能无法使用。
 >
->在安装任何模块或加载项之前，您需要检查许可协议或与Adobe客户经理联系。
+>在安装任何模块或加载项之前，您需要检查许可协议或与Adobe帐户管理人员联系。
 
 ### 控制台和 Web 访问 {#console-and-web-access}
 
@@ -54,11 +57,11 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 ### 语言 {#languages}
 
-安装Adobe Campaign经典实例时会选择该语言，之后将无法更改该语言。 有关如何创建实例的详细信息，请参阅本 [页](../../installation/using/creating-an-instance-and-logging-on.md)。
+安装Adobe Campaign Classic实例时会选择该语言，之后将无法更改。 For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
 
 ![](assets/language.png)
 
-您可以在五种不同的语言之间进行选择：
+您可以选择五种不同的语言：
 
 * 英语（英国）
 * 美式英语
@@ -66,7 +69,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 * 德语
 * 日语
 
-您为Adobe Campaign经典实例选择的语言可能会影响日期和时间格式。 For more on this, refer to this [section](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关更多信息，请参阅此](../../platform/using/adobe-campaign-workspace.md#date-and-time)章节[。
 
 ## 导览基本功能 {#navigation-basics}
 
@@ -98,7 +101,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 通过每个核心功能部分可以浏览各种可用的元素。要执行此操作，可使用 **[!UICONTROL Browsing]** 部分中的快捷方式。**[!UICONTROL Other choices]** 链接可用于访问其他所有页面，无论工作环境如何。
 
-您可以创建新元素(投放、Web 应用程序、工作流等)使用屏幕左 **[!UICONTROL Create]** 侧部分中的快捷键。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
+您可以创建新元素(投放、Web 应用程序、工作流等) 使用屏幕左 **[!UICONTROL Create]** 侧部分中的快捷键。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
 
 例如，在投放页面上，使用 **[!UICONTROL Create]** 按钮创建新的投放。
 
@@ -140,7 +143,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 >
 >Configuration and personalization of list content are presented in [Configuring lists](#configuring-lists).
 >
->您也可以排序和过滤数据。请参阅 [筛选选项](../../platform/using/filtering-options.md)。
+>您也可以排序和过滤数据。请参 [阅筛选选项](../../platform/using/filtering-options.md)。
 
 ### 记录计数 {#counting-records}
 
@@ -183,7 +186,7 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 您可以从记录的详细信息快速向列表添加列。 操作步骤：
 
 1. 在详细信息屏幕中，右键单击要在列中显示的字段。
-1. Select **[!UICONTROL Add in the list]**.
+1. 选择 **[!UICONTROL Add in the list]**。
 
    该列会添加到现有列的右侧。
 
@@ -207,10 +210,9 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
    >
    >使用 **Search** 字段在可用字段中执行搜索。有关详细信息，请参 [阅对列表排序](#sorting-a-list)。
    >
-   >通过具体图标标识各字段：SQL 字段、链接的表、已计算字段等。针对选中的每个字段，在可用字段的列表下会显示其说明。
-   [配置列表](#configuring-lists).
+   >通过具体图标标识各字段：SQL 字段、链接的表、已计算字段等。针对选中的每个字段，在可用字段的列表下会显示其说明。[配置列表](#configuring-lists).
    >
-   >您也可以排序和过滤数据。请参阅 [筛选选项](../../platform/using/filtering-options.md)。
+   >您也可以排序和过滤数据。请参 [阅筛选选项](../../platform/using/filtering-options.md)。
 
 1. 对要显示的每个列重复此步骤。
 1. 使用箭头修改&#x200B;**显示顺序**。值最高的列将显示在记录列表的左侧。
@@ -272,7 +274,7 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 要保存此列表配置，使其可重复使用，可执行以下操作：
 
 1. 右键单击其中包含已显示数据的文件夹。
-1. Select **[!UICONTROL Properties]**.
+1. 选择 **[!UICONTROL Properties]**。
 1. Click **[!UICONTROL Advanced settings]** and then specify a name in the **[!UICONTROL Configuration]** field.
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
@@ -291,7 +293,7 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 
 要从列表中导出数据，必须使用导出向导。要启动此向导，可从列表中选择要导出的元素，右键单击它后选择 **[!UICONTROL Export...]**。
 
-导入和导出功能的使用在通用导入和导 [出中有说明](../../platform/using/generic-imports-and-exports.md)。
+导入和导出功能的使用在通用导入 [和导出中说明](../../platform/using/generic-imports-and-exports.md)。
 
 >[!CAUTION]
 >
@@ -305,7 +307,7 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 
 此外也可以配置排序或组合排序标准。为此请执行以下操作步骤：
 
-1. **[!UICONTROL Configure list]** 在列表的右边。
+1. **[!UICONTROL Configure list]** 在列表右下。
 
    ![](assets/s_ncs_user_configure_list.png)
 
