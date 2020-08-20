@@ -15,20 +15,20 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 2%
+source-wordcount: '388'
+ht-degree: 5%
 
 ---
 
 
 # 操作员用户档案{#operator-profiles}
 
-使用交互的运算符有两种类型： 优惠经理和投放经理。 他们每个人都具有特定权限，这些权限仅允许他们访问树和平台的某些部分。
+使用交互的运算符有两种类型：优惠经理和投放经理。 他们每个人都具有特定权限，这些权限仅允许他们访问树和平台的某些部分。
 
-* **[!UICONTROL Offer manager]** : 创建和维护优惠。 请注意，如果工作流中使用了优惠，则运算符需要位于或 **[!UICONTROL Administrator]** [! **UICONTROL优惠管理器** )运算符组中才能执行工作流。
-* **[!UICONTROL Delivery manager]** : 批准和使用优惠
+* **[!UICONTROL Offer manager]** :创建和维护优惠。 请注意，如果工作流中使用了优惠，则操作员需要位于或运 **[!UICONTROL Administrator]** 算符组 **[!UICONTROL Offer managers]** 中才能执行工作流。
+* **[!UICONTROL Delivery manager]** :批准和使用优惠
 
 创建特定于交互的运算符的步骤与创建平台上所有其他运算符的步骤完全相同。 如需详细信息，请参阅[此部分](../../platform/using/access-management.md#creating-an-operator)。权限在操作员创建过程中进行配置。
 
@@ -115,7 +115,7 @@ ht-degree: 2%
    <td> 阅读<br /> </td> 
   </tr> 
   <tr> 
-   <td> 类型规则<br /> </td> 
+   <td> 分类规则<br /> </td> 
    <td> 读／写<br /> </td> 
    <td> 阅读<br /> </td> 
   </tr> 
@@ -175,7 +175,7 @@ ht-degree: 2%
    <td> 阅读<br /> </td> 
   </tr> 
   <tr> 
-   <td> 类型规则<br /> </td> 
+   <td> 分类规则<br /> </td> 
    <td> </td> 
    <td> 阅读<br /> </td> 
   </tr> 
