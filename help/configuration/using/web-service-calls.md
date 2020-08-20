@@ -1,7 +1,7 @@
 ---
-title: Web服务调用
-seo-title: Web服务调用
-description: Web服务调用
+title: Web 服务调用
+seo-title: Web 服务调用
+description: Web 服务调用
 seo-description: null
 page-status-flag: never-activated
 uuid: 7defe0e4-bb4a-4f6a-b6e8-e2ffac73b4c1
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Web服务调用{#web-service-calls}
+# Web 服务调用{#web-service-calls}
 
 ## 一般信息 {#general-information}
 
@@ -77,7 +77,7 @@ Web服务允许您从第三方系统创建许多应用程序：
 
 此方法的输入参数是格式为“xtk:queryDef”文档的XML模式。
 
-## Web服务描述： WSDL {#web-service-description--wsdl}
+## Web服务描述：WSDL {#web-service-description--wsdl}
 
 每个服务都有一个WSDL（Web服务描述库）文件。 此XML文件使用元语言描述服务，并指定可用的方法、参数和与服务器联系以执行服务。
 
@@ -85,12 +85,12 @@ Web服务允许您从第三方系统创建许多应用程序：
 
 要生成WSDL文件，必须从Web浏览器输入以下URL:
 
-[https://`<server>`/nl/jsp/schemawsdl.jsp?模式=`<schema>`
+https://`<server>`/nl/jsp/schemawsdl.jsp?模式=`<schema>`
 
 具有：
 
-* **`<server>`**: Adobe Campaign应用程序服务器(nlserver web)
-* **`<schema>`**: 模式标识密钥(命名空间:模式名)
+* **`<server>`**:adobe campaign应用程序服务器(nlserver web)
+* **`<schema>`**:模式标识密钥(命名空间:模式名)
 
 ### 模式“xtk:queryDef”的“ExecuteQuery”方法示例 {#example-on-the--executequery--method-of-schema--xtk-querydef-}
 
@@ -202,7 +202,7 @@ Adobe Campaign通过引入安全区(请参阅本节的“定 **义安全区** �
 
 * **通过调用登录方法()**。 此模式生成会话令牌和安全令牌。 它是最安全的模式，因此也是最推荐的模式。
 
-或
+或者
 
 * **通过Adobe Campaign登录名** +密码创建会话令牌。 会话令牌会在设置的时间段后自动过期。 不建议使用此模式，并要求为某些区域设置（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）减少应用程序安全设置。
 
@@ -237,7 +237,7 @@ Adobe Campaign通过引入安全区(请参阅本节的“定 **义安全区** �
 * 在登录响应中传输（在HTTP头中）
 * 用于每个查询（在HTTP头中）
 
-从POST和GET HTTP:
+来自POST和GETHTTP:
 
 * 服务器用令牌完成链接
 * 服务器向表单添加隐藏字段
@@ -250,41 +250,42 @@ Adobe Campaign通过引入安全区(请参阅本节的“定 **义安全区** �
 
 * 使用 **HttpSoapConnection/SoapService**:
 
-   ```
-     var cnx = new HttpSoapConnection("https://serverURL/nl/jsp/soaprouter.jsp");
-   var session = new SoapService(cnx, 'urn:xtk:session');
-   session.addMethod("Logon", "xtk:session#Logon",
-                       ["sessiontoken", "string", "Login", "string", "Password", "string", "Parameters", "NLElement"],
-                       ["sessionToken", "string", "sessionInfo", "NLElement", "securityToken", "string"]);
-   
-   var res = session.Logon("", "admin", "pwd", <param/>);
-   var sessionToken = res[0];
-   var securityToken = res[2];
-   
-   cnx.addTokens(sessionToken, securityToken);
-   var query = new SoapService(cnx, 'urn:xtk:queryDef');
-   query.addMethod("ExecuteQuery", "xtk:queryDef#ExecuteQuery",
-                       ["sessiontoken", "string", "entity", "NLElement"],
-                       ["res", "NLElement"]);
-   
-   var queryRes = query.ExecuteQuery("", <queryDef operation="select" schema="nms:recipient">
-             <select>
-               <node expr="@email"/>
-               <node expr="@lastName"/>
-               <node expr="@firstName"/>
-             </select>
-             <where>
-               <condition expr="@email = 'joe.doe@aol.com'"/>
-             </where>
-           </queryDef>);
-   logInfo(queryRes[0].toXMLString())
-   ```
+```
+  
+    var cnx = new HttpSoapConnection("https://serverURL/nl/jsp/soaprouter.jsp");
+  var session = new SoapService(cnx, 'urn:xtk:session');
+  session.addMethod("Logon", "xtk:session#Logon",
+                      ["sessiontoken", "string", "Login", "string", "Password", "string", "Parameters", "NLElement"],
+                      ["sessionToken", "string", "sessionInfo", "NLElement", "securityToken", "string"]);
+  
+  var res = session.Logon("", "admin", "pwd", <param/>);
+  var sessionToken = res[0];
+  var securityToken = res[2];
+  
+  cnx.addTokens(sessionToken, securityToken);
+  var query = new SoapService(cnx, 'urn:xtk:queryDef');
+  query.addMethod("ExecuteQuery", "xtk:queryDef#ExecuteQuery",
+                      ["sessiontoken", "string", "entity", "NLElement"],
+                      ["res", "NLElement"]);
+  
+  var queryRes = query.ExecuteQuery("", <queryDef operation="select" schema="nms:recipient">
+            <select>
+              <node expr="@email"/>
+              <node expr="@lastName"/>
+              <node expr="@firstName"/>
+            </select>
+            <where>
+              <condition expr="@email = 'joe.doe@aol.com'"/>
+            </where>
+          </queryDef>);
+  logInfo(queryRes[0].toXMLString())
+```
 
 * 使用 **HttpServletRequest**:
 
 >[!NOTE]
 >
->以下HttpServletRequest调 **用中使用的** URL必须位于serverConf.xml文件的url权限部分的 **允许列表中** 。 服务器本身的URL也是如此。
+>以下HttpServletRequest调 **用中使用的URL** ，必须位于serverConf.xml文件的url权限 **部分的允许列表中** 。 服务器本身的URL也是如此。
 
 登录执行():
 
@@ -294,18 +295,18 @@ req.header["Content-Type"] = "text/xml; charset=utf-8";
 req.header["SOAPAction"] =   "xtk:session#Logon";
 req.method = "POST";
 req.body = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">' +
-  '<soapenv:Header/>' +
-  '<soapenv:Body>' +
-      '<urn:Logon>' +
-          '<urn:sessiontoken></urn:sessiontoken>' +
-          '<urn:strLogin>LOGIN_HERE</urn:strLogin>' +
-          '<urn:strPassword>PASSWORD_HERE</urn:strPassword>' +
-          '<urn:elemParameters></urn:elemParameters>' +
-      '</urn:Logon>' +
-  '</soapenv:Body>' +
+    '<soapenv:Header/>' +
+    '<soapenv:Body>' +
+        '<urn:Logon>' +
+            '<urn:sessiontoken></urn:sessiontoken>' +
+            '<urn:strLogin>LOGIN_HERE</urn:strLogin>' +
+            '<urn:strPassword>PASSWORD_HERE</urn:strPassword>' +
+            '<urn:elemParameters></urn:elemParameters>' +
+        '</urn:Logon>' +
+    '</soapenv:Body>' +
 '</soapenv:Envelope>';
 req.execute();
-         
+           
 var resp = req.response;
 var xmlRes = new XML(String(resp.body).replace("<?xml version='1.0'?>",""));
 var sessionToken = String(xmlRes..*::pstrSessionToken);;
@@ -321,14 +322,13 @@ req2.header["SOAPAction"] =   "xtk:queryDef#ExecuteQuery";req2.header["X-Securit
 req2.header["cookie"]           = "__sessiontoken="+sessionToken;
 req2.method = "POST";
 req2.body = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:queryDef">' +
-           '<soapenv:Header/><soapenv:Body><urn:ExecuteQuery><urn:sessiontoken/><urn:entity>' +
-              '<queryDef operation="select" schema="nms:recipient">' +
-                '<select><node expr="@email"/><node expr="@lastName"/><node expr="@firstName"/></select>' +
-                '<where><condition expr="@email = \'john.doe@aol.com\'"/></where>' +
-              '</queryDef>' +
-         '</urn:entity></urn:ExecuteQuery></soapenv:Body></soapenv:Envelope>';
+             '<soapenv:Header/><soapenv:Body><urn:ExecuteQuery><urn:sessiontoken/><urn:entity>' +
+                '<queryDef operation="select" schema="nms:recipient">' +
+                  '<select><node expr="@email"/><node expr="@lastName"/><node expr="@firstName"/></select>' +
+                  '<where><condition expr="@email = \'john.doe@aol.com\'"/></where>' +
+                '</queryDef>' +
+           '</urn:entity></urn:ExecuteQuery></soapenv:Body></soapenv:Envelope>';
 req2.execute();
 var resp2 = req2.response;
 logInfo(resp2.body)
 ```
-
