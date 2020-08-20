@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
 source-wordcount: '1833'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 外部帐户 [!DNL Azure] 允许您将活动实例连接到Azure突触外部数据库。
 要创建外部帐户 [!DNL Azure Synapse] 外部帐户，请执行以下操作：
 
-1. 在Campaign Classic中，配置您的 [!DNL Azure Synapse] 外部帐户。 在中， **[!UICONTROL Explorer]**&#x200B;单击 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+1. 在Campaign Classic中，配置您的 [!DNL Azure Synapse] 外部帐户。 From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. 单击 **[!UICONTROL New]**.
 
@@ -50,21 +50,21 @@ ht-degree: 1%
 
 1. 配置 [!DNL Azure Synapse] 外部帐户，必须指定：
 
-   * **[!UICONTROL Type]**: Azure突触Analytics
+   * **[!UICONTROL Type]**:Azure突触分析
 
-   * **[!UICONTROL Server]**: Azure突触服务器的URL
+   * **[!UICONTROL Server]**:Azure突触服务器的URL
 
-   * **[!UICONTROL Account]**: 用户的名称
+   * **[!UICONTROL Account]**:用户的名称
 
-   * **[!UICONTROL Password]**: 用户帐户密码
+   * **[!UICONTROL Password]**:用户帐户密码
 
-   * **[!UICONTROL Database]**: 数据库的名称
+   * **[!UICONTROL Database]**:数据库的名称
 
    ![](assets/azure_1.png)
 
 ### CentOS上的Azure突触 {#azure-centos}
 
-**先决条件：**
+**先决条件:**
 
 * 您需要根权限才能安装ODBC驱动程序。
 * Microsoft提供的Red Hat Enterprise ODBC驱动程序也可与CentOS一起使用，以连接到SQL Server。
@@ -128,7 +128,7 @@ ht-degree: 1%
 
 1. 在Campaign Classic中，您随后可以配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的详细信息，请参阅此 [部分](../../platform/using/specific-configuration-database.md#azure-external)。
 
-1. 由于Azure Synapse Analytics通过TCP 1433端口进行通信，您需要在防火墙上打开此端口。 使用以下命令：
+1. 由于Azure突触分析通过TCP 1433端口进行通信，您需要在防火墙上打开此端口。 使用以下命令：
 
    ```
    firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="[server_ip_here]/32" port port="1433" protocol="tcp" accept'
@@ -149,7 +149,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->这仅对ODBC驱动程序的版本13有限，但Adobe Campaign经典也可以使用SQL Server本机客户端驱动程序11.0和10.0。
+>这是ODBC驱动程序版本13独有的，但Adobe Campaign Classic还可以使用SQL Server本机客户端驱动程序11.0和10.0。
 
 在Windows上配置Azure突触：
 
@@ -161,7 +161,7 @@ ht-degree: 1%
    your_language\your_architecture\msodbcsql.msi (i.e: English\X64\msodbcsql.msi)
    ```
 
-1. 安装ODBC驱动程序后，可以根据需要测试它。 For more on this, refer to this [page](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server).
+1. 安装ODBC驱动程序后，可以根据需要测试它。 有关详细信息，请参见此 [ 页面](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server)。
 
 1. 在Campaign Classic中，您随后可以配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的详细信息，请参阅此 [部分](../../platform/using/specific-configuration-database.md#azure-external)。
 
@@ -169,7 +169,7 @@ ht-degree: 1%
 
 ### Azure突触到Debian {#azure-debian}
 
-**先决条件：**
+**先决条件:**
 
 * 您需要根权限才能安装ODBC驱动程序。
 * 安装msodbcsql包时需要Curl。 如果尚未安装，请运行以下命令：
@@ -220,7 +220,7 @@ ht-degree: 1%
 
 1. 在Campaign Classic中，您现在可以配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的详细信息，请参阅此 [部分](../../platform/using/specific-configuration-database.md#azure-external)。
 
-1. 要在Debian上配置iptables以确保与Azure突触Analytics连接，请使用以下命令为主机名启用出站TCP 1433端口：
+1. 要在Debian上配置iptables以确保与Azure突触分析连接，请使用以下命令为主机名启用出站TCP 1433端口：
 
    ```
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
@@ -230,19 +230,19 @@ ht-degree: 1%
    >
    >要允许从Azure突触分析端进行通信，您可能需要将公共IP添加到允许列表。 为此，请参阅Azure [文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
-## 配置对雪花的访问 {#configure-access-to-snowflake}
+## 配置对Snowflake的访问 {#configure-access-to-snowflake}
 
 >[!NOTE]
 >
->[!DNL Snowflake] connector可用于托管和内部部署。 For more on this, refer to [this article](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>[!DNL Snowflake] connector可用于托管和内部部署。 For more on this, refer to [this article](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ![](assets/snowflake_3.png)
 
-### 雪花外部帐户 {#snowflake-external}
+### Snowflake外部帐户 {#snowflake-external}
 
 外部帐户 [!DNL Snowflake] 允许您将活动实例连接到Snowflake外部数据库。
 
-1. 在Campaign Classic中，配置您的 [!DNL Snowflake] 外部帐户。 在中， **[!UICONTROL Explorer]**&#x200B;单击 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+1. 在Campaign Classic中，配置您的 [!DNL Snowflake] 外部帐户。 From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. 单击 **[!UICONTROL New]**.
 
@@ -252,13 +252,13 @@ ht-degree: 1%
 
    * **[!UICONTROL Type]**: [!DNL Snowflake]
 
-   * **[!UICONTROL Server]**: 服务器的 [!DNL Snowflake] URL
+   * **[!UICONTROL Server]**:服务器的 [!DNL Snowflake] URL
 
-   * **[!UICONTROL Account]**: 用户的名称
+   * **[!UICONTROL Account]**:用户的名称
 
-   * **[!UICONTROL Password]**: 用户帐户密码
+   * **[!UICONTROL Password]**:用户帐户密码
 
-   * **[!UICONTROL Database]**: 数据库的名称
+   * **[!UICONTROL Database]**:数据库的名称
 
    ![](assets/snowflake.png)
 
@@ -272,11 +272,11 @@ ht-degree: 1%
 |---|---|
 | 工作架构 | 用于工作表的模式库 |
 | 仓库 | 要使用的默认仓库的名称。 它将覆盖用户的默认设置。 |
-| 时区名称 | 默认为空，这意味着使用Campaign Classic应用服务器的系统时区。 该选项可用于强制TIMEZONE会话参数。 <br>有关详细信息，请参见[此页面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
-| WeekStart | WEEK_开始会话参数。 默认情况下，设置为0。 <br>有关详细信息，请参见[此页面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)。 |
-| UseCachedResult | USE_CACHED_RESULTS会话参数。 默认设置为TRUE。 此选项可用于禁用雪花缓存结果。 <br>有关详细信息，请参见[此页面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
+| 时区名称 | 默认为空，这意味着使用Campaign Classic应用服务器的系统时区。 该选项可用于强制TIMEZONE会话参数。 <br>[有关详细信息，请参见此  页面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
+| WeekStart | WEEK_开始会话参数。 默认情况下，设置为0。 <br>[有关详细信息，请参见此  页面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)。 |
+| UseCachedResult | USE_CACHED_RESULTS会话参数。 默认设置为TRUE。 此选项可用于禁用Snowflake缓存结果。 <br>[有关详细信息，请参见此  页面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
 
-### CentOS上的雪花 {#snowflake-centos}
+### SnowflakeCentOS {#snowflake-centos}
 
 1. 下载ODBC驱动程序 [!DNL Snowflake]。 [单击此处](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) ,开始下载。
 1. 然后，您需要使用以下命令在CentOs上安装ODBC驱动程序：
@@ -295,7 +295,7 @@ ht-degree: 1%
 
 1. 在Campaign Classic中，您随后可以配置 [!DNL Snowflake] 外部帐户。 有关如何配置外部帐户的详细信息，请参阅此 [部分](../../platform/using/specific-configuration-database.md#snowflake-external)。
 
-### 德比亚雪花 {#snowflake-debian}
+### Snowflake德比 {#snowflake-debian}
 
 1. 下载ODBC驱动程序 [!DNL Snowflake]。 [单击此处](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) ,开始下载。
 
@@ -315,7 +315,7 @@ ht-degree: 1%
 
 1. 在Campaign Classic中，您随后可以配置 [!DNL Snowflake] 外部帐户。 有关如何配置外部帐户的详细信息，请参阅此 [部分](../../platform/using/specific-configuration-database.md#snowflake-external)。
 
-### 窗口上的雪花 {#snowflake-windows}
+### SnowflakeWindows {#snowflake-windows}
 
 1. 下载适 [用于Windows的ODBC驱动程序](https://docs.snowflake.net/manuals/user-guide/odbc-download.html)。 请注意，您需要管理员级权限才能安装驱动程序。 For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
 
@@ -329,7 +329,7 @@ ht-degree: 1%
 
 外部帐户 [!DNL Hadoop] 允许您将活动实例连接到Hadoop外部数据库。
 
-1. 在Campaign Classic中，配置您的 [!DNL Hadoop] 外部帐户。 在中， **[!UICONTROL Explorer]**&#x200B;单击 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+1. 在Campaign Classic中，配置您的 [!DNL Hadoop] 外部帐户。 From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. 单击 **[!UICONTROL New]**.
 
@@ -337,17 +337,17 @@ ht-degree: 1%
 
 1. 配置 **[!UICONTROL Hadoop]** 外部帐户，必须指定：
 
-   * **[!UICONTROL Type]**: ODBC(Sybase ASE、Sybase IQ)
+   * **[!UICONTROL Type]**:ODBC(Sybase ASE、Sybase IQ)
 
-   * **[!UICONTROL Server]**: DNS的名称
+   * **[!UICONTROL Server]**:DNS的名称
 
-   * **[!UICONTROL Account]**: 用户的名称
+   * **[!UICONTROL Account]**:用户的名称
 
-   * **[!UICONTROL Password]**: 用户帐户密码
+   * **[!UICONTROL Password]**:用户帐户密码
 
-   * **[!UICONTROL Database]**: 如果未在DSN中指定数据库的名称。 如果在DSN中指定，则可将其留空
+   * **[!UICONTROL Database]**:如果未在DSN中指定数据库的名称。 如果在DSN中指定，则可将其留空
 
-   * **[!UICONTROL Time zone]**: 服务器时区
+   * **[!UICONTROL Time zone]**:服务器时区
 
    ![](assets/hadoop3.png)
 
@@ -390,7 +390,7 @@ ht-degree: 1%
 
 外部帐户 [!DNL Oracle] 允许您将活动实例连接到Hadoop外部数据库。
 
-1. 在Campaign Classic中，配置您的 [!DNL oracle] 外部帐户。 在中， **[!UICONTROL Explorer]**&#x200B;单击 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+1. 在Campaign Classic中，配置您的 [!DNL oracle] 外部帐户。 From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. 单击 **[!UICONTROL New]**.
 
@@ -398,26 +398,26 @@ ht-degree: 1%
 
 1. 配置 **[!UICONTROL Oracle]** 外部帐户，必须指定：
 
-   * **[!UICONTROL Type]**: Oracle
+   * **[!UICONTROL Type]**:Oracle
 
-   * **[!UICONTROL Server]**: DNS的名称
+   * **[!UICONTROL Server]**:DNS的名称
 
-   * **[!UICONTROL Account]**: 用户的名称
+   * **[!UICONTROL Account]**:用户的名称
 
-   * **[!UICONTROL Password]**: 用户帐户密码
+   * **[!UICONTROL Password]**:用户帐户密码
 
-   * **[!UICONTROL Time zone]**: 服务器时区
+   * **[!UICONTROL Time zone]**:服务器时区
 
    ![](assets/oracle_config.png)
 
 ### Linux上的Oracle {#for-linux-1}
 
-在联合数据访问下连接到Oracle外部数据库需要在Adobe Campaign服务器下面进行其他配置。
+在联合数据访问下连接到Oracle外部数据库需要在Adobe Campaign服务器上进行以下其他配置。
 
 1. 安装与您的Oracle版本对应的Oracle完整客户端。
 1. 将TNS定义添加到安装中。 为此，请在/etc/oracle **存储库的tnsnames** .ora文件中指定它们。 如果此存储库不存在，请创建它。
 
-   然后新建一个TNS_ADMIN环境变量： 导出TNS_ADMIN=/etc/oracle并重新启动计算机。
+   然后新建一个TNS_ADMIN环境变量：导出TNS_ADMIN=/etc/oracle并重新启动计算机。
 
 1. 将Oracle集成到Adobe Campaign服务器(nlserver)中。 为此，请检查Adobe Campaign服 **务器树结构的** “nl6”文件夹中是否存在customer.sh文件，以及它是否包含指向Oracle库的链接。
 
