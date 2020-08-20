@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7cf3b189f328cd1ea6ca8b67a3fc4c0c0bddd84
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -33,16 +33,16 @@ ht-degree: 0%
 
 | 数据库版本 | 驱动程序版本 | 所需的最低活动版本 | 注释 |
 |:-:|:-:|:-:|:-:|
-| 15 | 15 | Campaign Classic17.9 | 在Linux下： 具有时间戳的查询可能会失败（在内部版本8937中修复为18.4，在版本8977中修复为18.10）在调试模式下，可能会出现与驱动程序中内存使用不良相关的警告。 |
+| 15 | 15 | Campaign Classic17.9 | 在Linux下：具有时间戳的查询可能会失败（在内部版本8937中修复为18.4，在版本8977中修复为18.10）在调试模式下，可能会出现与驱动程序中内存使用不良相关的警告。 |
 | 15 | 16 | Campaign Classic17.9 | 建议在Linux下设置Teradata 15数据库。 |
 | 16 | 16 | Campaign Classic18.10 | 未完全处理带代理对的Unicode字符。 在数据中使用替代字符应可行。 在查询的筛选条件下使用代理不进行此更改是行不通的。 |
 | 16 | 15 | 不支持 |   |
 
 **基于拉丁语1**
 
-Adobe CampaignClassic 17.9之前的版本仅支持Teradata Latin-1数据库。
+Adobe Campaign Classic17.9之前的版本仅支持Teradata Latin-1数据库。
 
-从Adobe CampaignClassic 17.9开始，我们现在默认支持Unicode中的Teradata数据库。
+从Adobe Campaign Classic17.9开始，我们现在默认支持Unicode中的Teradata数据库。
 
 具有Latin-1 TeradataCampaign Classic库迁移到最新外部帐户版本的客户必须在选项中添加参数APICharSize=1。
 
@@ -50,7 +50,7 @@ Adobe CampaignClassic 17.9之前的版本仅支持Teradata Latin-1数据库。
 
 #### 用户配置 {#user-configuration}
 
-需要以下权限： 创建／删除／执行自定义过程，创建／删除／插入／选择表。 如果要在Adobe Campaign实例上使用md5和sha2函数，则可能还必须创建用户模式函数。
+需要以下权限：创建／删除／执行自定义过程，创建／删除／插入／选择表。 如果要在Adobe Campaign实例上使用md5和sha2函数，则可能还必须创建用户模式函数。
 
 确保配置正确的时区。 它应与在外部帐户实例中创建的Adobe Campaign中将设置的内容匹配。
 
@@ -184,13 +184,13 @@ Adobe Campaign不会为它将在数据库中创建的对象设置保护模式（
 
 #### 驱动程序配置 {#driver-configuration}
 
-要了解有关驱动程序配置的更多信息，请参 [阅本节](../../platform/using/legacy-connectors.md#configure-access-to-teradata)。
+To learn more on driver configuration, refer to this [section](../../platform/using/legacy-connectors.md#configure-access-to-teradata).
 
 #### 环境变量 {#environment-varaiables}
 
 要进一步了解环境服务器的Adobe Campaign变量，请参阅本 [节](../../platform/using/legacy-connectors.md#configure-access-to-teradata)。
 
-### 活动服务器配置(Windows #活动服务器-windows})
+### 活动Windows服务器配置 {#campaign-server-windows}
 
 您首先需要下载Teradata Tools和Windows实用程序。 您可以从此页面下 [载](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package)
 
@@ -200,7 +200,7 @@ Adobe Campaign不会为它将在数据库中创建的对象设置保护模式（
 
 ### 外部帐户疑难解答 {#external-account-troubleshooting}
 
-如果测试连接时出现以 **下错误TIM-030008日期“2”: 缺少字符(iRc=-53)** ，请确保正确安装ODBC驱动程序，并为活动服务器设置LD_LIBRARY_PATH(Linux)/PATH(Windows)。
+如果测试连接时出现以 **下错误TIM-030008日期“2”:缺少字符(iRc=-53)** ，请确保正确安装ODBC驱动程序，并为活动服务器设置LD_LIBRARY_PATH(Linux)/PATH(Windows)。
 
 错误 **ODB-240000 ODBC错误：[找不到][ODBC Driver Manager]Microsoft数据源名称，未指定默认驱动程序。** 如果使用16.X驱动程序，则出现在Windows中。 Adobe Campaign希望在odbcinst.ini中将teradata命名为“{teradata}”。
 如果您有18.10Adobe Campaign服务器版本，则可在外部帐户选项中添加ODBCDriverName=&quot;Teradata数据库ODBC驱动程序16.10&quot;。 版本号可以更改，可以通过运行odbcad32.exe并访问“驱动程序”选项卡找到确切名称。
@@ -212,7 +212,7 @@ Adobe Campaign不会为它将在数据库中创建的对象设置保护模式（
 
 Teradata使用的时区名称不是标准名称，您可以在Teradata站点上找 [到列表](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA)。 Adobe Campaign将尝试将外部配置中给定的时区转换为Teradata了解的时区。 如果找不到通信，则会话将找到衣柜GMT+X（或GMT-X）时区，日志中会显示警告。
 
-转换完成后，将读取名为teradata_timezones.txt的文件，该文件应位于以下datakit目录中： /usr/local/neolane/nl6/datakit under linux. 如果编辑此文件，请确保与Adobe Campaign团队联系以更改源代码，否则，在下次活动更新期间将覆盖此文件。
+转换完成后，将读取名为teradata_timezones.txt的文件，该文件应位于以下datakit目录中：/usr/local/neolane/nl6/datakit under linux. 如果编辑此文件，请确保与Adobe Campaign团队联系以更改源代码，否则，在下次活动更新期间将覆盖此文件。
 
 使用-verbose开关运行nlserver时，将指示用于连接的时区，例如：
 
@@ -236,7 +236,7 @@ MODIFY USER $login$ AS TIME ZONE = 'Europe Central';
 
 ### 驱动程序安装 {#driver-installation-mysql}
 
-#### 德比安 {#debian-mysql}
+#### Debian {#debian-mysql}
 
 从此页下载mysql-apt-config. [deb](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en)。
 
