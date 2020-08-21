@@ -1,6 +1,6 @@
 ---
-title: 版本20.1
-description: 版本20.1
+title: 版本 20.1
+description: 版本 20.1
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -13,44 +13,44 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
+source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
 workflow-type: tm+mt
-source-wordcount: '1330'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# 版本20.1{#release-20-1}
+# 版本 20.1{#release-20-1}
 
-## ![](assets/do-not-localize/orange_2.png) 版本20.1.3 —— 内部版本9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/orange_2.png) 版本 20.1.3 - 版本 9124{#release-20-1-3-build-9124}
 
 _2020年5月6日_
 
-* 修复了文件传输 **活动的问题** ，该问题导致基于SFTP密钥的身份验证无法在Debian 9上工作。 (NEO-23183)
+* 修复了&#x200B;**文件传输**&#x200B;活动的问题，该问题导致基于 SFTP 密钥的身份验证无法在 Debian 9 上工作。(NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) 版本20.1.2 —— 内部版本9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/orange_2.png) 版本 20.1.2 - 版本 9123{#release-20-1-2-build-9123}
 
 _2020年3月13日_
 
 * 修复了阻止在Red Hat 7服务器上部署版本的问题。 (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) 版本20.1 —— 内部版本9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) 版本 20.1 - 版本 9122{#release-20-1-build-9122}
 
 _2020年2月17日_
 
-**新增内容?**
+**新增内容？**
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>雪花联合数据访问连接器</strong><br /> </th> 
+   <th> <strong>Snowflake联合数据访问连接器</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>雪花是一种完全受管的云data warehouse，可在存储和计算级别进行扩展。 有了这个新的连接器，Adobe Campaign现在可以利用雪花的强大功能执行大数据分割。 此连接器可供所有客户使用，包括由Adobe托管的客户。</p>
-    <p>有关详细信息，请参阅详 <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">细文档</a> 和教 <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">程视频</a>。</p>
+   <td> <p>Snowflake是完全托管的云data warehouse，可在存储和计算级别进行扩展。 有了这个新的连接器，Adobe Campaign现在可以利用Snowflake的强大功能来执行大数据分段。 此连接器可供所有客户使用，包括由Adobe托管。</p>
+    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -95,7 +95,7 @@ _2020年2月17日_
 
 * 现在，当在投放服务器上找不到匹配的关联时，中间源分析会停止，并显示相应的错误消息。
 
-* 现在支持Postgres的数据库故障转移： 当活动库服务器崩溃和重新启动时，现在数据库自动重新连接到它。
+* 现在支持Postgres的数据库故障转移：当活动库服务器崩溃和重新启动时，现在数据库自动重新连接到它。
 
 * 已将 **开始挂起** 视图添加到“管理”>“审核”>“工作流状态”节点。 这允许您监视实例上正在等待operationMgt进程启动的所 **有工作流** 。 此视图包含在营销活动包中。 [阅读更多](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
@@ -103,7 +103,7 @@ _2020年2月17日_
 
 * 在Linux上，nlserver服务启动现在使用系统单元而不是/etc/init.d/nlserver6脚本。 安装20.1包时，将自动执行到新启动方案的迁移。 /etc/init.d/nlserver6仍然提供，但是为了与nlserver服务(开始、重新启动、停止等)交互，我们建议您直接使用systemctl命令。
 
-* 最耗用的自定义表已从xtkNewId序 **列移动** 到专用序列。 [阅读更多](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* 最耗用的自定义表已从xtkNewId序 **列移动** 到专用序列。 [阅读更多](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * 改进了查询性能，这些性能可能会受到不必要的数据库连接的影响。
 
@@ -131,7 +131,7 @@ _2020年2月17日_
 
 * 修复了通过Netezza查询连接器运行联合数据访问时的编码问题。 (NEO-19594)
 
-* 修复了在Web下载工作流事件活动中使用POST方法 **时导致错误** 的问题。
+* 修复了在Web下载工作流POST活动中使用事件方法 **时导致错误** 的问题。
 
 * 修复了生成优惠建议的问题。 (NEO-18176)
 
@@ -175,7 +175,7 @@ _2020年2月17日_
 
 * 修复了上载目录是远程共享位置时无法将数据上载到公共资源的问题。 (NEO-19361)
 
-* 修复了导致Adobe Experience Cloud技 **术工作流程中的导入受众** （连续失败）的问题。 (NEO-18463)
+* 修复了导致从Adobe Experience Cloud技术工 **作流导入受众** (Import Magins)始终失败的问题。 (NEO-18463)
 
 * 修复了在使用从投放导入的模板时无法发送Experience Manager的问题。 (NEO-17540)
 
@@ -183,7 +183,7 @@ _2020年2月17日_
 
 * 修复了在工作流中使用活动联合数据访问作为模式来删除、插 **入或更新大量数据** ，时出现的问题。 (NEO-13280)
 
-* 修复了在标记外使用“if”语句时无法发送电子邮件的问 `body` 题。
+* 修复了在标记外使用“if”语句时无法发送电子邮件的问 `body` 题。 (NEO-18628)
 
 * 修复了在尝试显示来自已发送消息的投放日志的镜像页面时发生的问题。 (NEO-17976)
 
