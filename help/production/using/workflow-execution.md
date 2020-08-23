@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 5a4ee9b14d4c77f74ff73209d4323bf4f1347155
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 0%
+source-wordcount: '635'
+ht-degree: 3%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
    有关技术工作流监视的详细信息，请 [参阅此页](../../workflow/using/monitoring-technical-workflows.md)。
 
-   >[注意]
+   >[!NOTE]
    >
    >重新启动工作流后，请确保您执行待处理任务(右 **[!UICONTROL Scheduler]** 键单击活动 **[!UICONTROL Execute pending task(s) now]**/)，以检查它是否在任何活动上再次失败。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 1. 检查选 **[!UICONTROL wfserver]** 项卡中的模 **[!UICONTROL Monitoring]** 块状态，可从Campaign Classic主页访问(请参 [阅监视进程](../../production/using/monitoring-processes.md))。 此过程负责运行所有工作流。
 
-   管理员用户还可以使用以下 **命令检查`<instance>`**wfserver@module是否已在主应用程序服务器上启动。
+   管理员用户还可以使用以下 **命令检查`<instance>`** wfserver@module是否已在主应用程序服务器上启动。
 
    ```
    nlserver pdump
@@ -62,7 +62,7 @@ ht-degree: 0%
    [...]
    ```
 
-   如果模块未运行，请与Adobe客户关怀部门联系。 如果您有内部部署安装，管理员用户必须使用以下命令重新启动服务。
+   如果模块未运行，请与Adobe客户服务部门联系。 如果您有内部部署安装，管理员用户必须使用以下命令重新启动服务。
 
    ```
    nlserver start wfserver@<INSTANCENAME>
@@ -79,9 +79,9 @@ ht-degree: 0%
 
    要解决此问题，请停止不需要的工作流并删除失败的投放。 如果达到阈值，则允许运行新进程。
 
-   要检查实例运行的工作流数，我们建议使用预定义视图，默认情况下可在／文件夹中 **[!UICONTROL Administration]** 访 **[!UICONTROL Audit]** 问它。 For more information, refer to [this page](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
+   要检查实例运行的工作流数，我们建议使用预定义视图，默认情况下可在／文件夹中 **[!UICONTROL Administration]** 访 **[!UICONTROL Audit]** 问它。 有关详细信息，请参见[此页面](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)。
 
-   >[警告]
+   >[!CAUTION]
    >
    >增加选 **[!UICONTROL NmsOperation_LimitConcurrency]** 项阈值可能会导致实例的性能问题。 无论如何，请勿自行执行此操作，并联系Adobe Campaign联系人。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 1. 检查选 **[!UICONTROL wfserver]** 项卡中的模 **[!UICONTROL Monitoring]** 块状态，可从Campaign Classic主页访问(请参 [阅监视进程](../../production/using/monitoring-processes.md))。
 
-   管理员用户还可以使用以下 **命令检查`<instance>`**wfserver@module是否已在主应用程序服务器上启动。
+   管理员用户还可以使用以下 **命令检查`<instance>`** wfserver@module是否已在主应用程序服务器上启动。
 
    ```
    nlserver pdump
@@ -107,7 +107,7 @@ ht-degree: 0%
 
    有关如何监视模块的详细信息，请参 [阅本节](../../production/using/usual-commands.md#monitoring-commands-)。
 
-1. 如果模块未运行，请与Adobe客户关怀部门联系。 如果您有内部部署安装，管理员必须使用以下命令重新启动该安装。
+1. 如果模块未运行，请与Adobe客户服务部门联系。 如果您有内部部署安装，管理员必须使用以下命令重新启动该安装。
 
    ```
    nlserver start wfserver@<INSTANCENAME>
