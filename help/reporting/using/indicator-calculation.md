@@ -788,7 +788,7 @@ ht-degree: 1%
    <td> 错误<br /> </td> 
    <td> @error<br /> </td> 
    <td> 在投放和自动弹回处理期间累积的错误总数。<br /> </td> 
-   <td> sum([indicators/@error)<br /> </td> 
+   <td> sum([indicators/@error])<br /> </td> 
   </tr> 
   <tr> 
    <td> 新隔离<br /> </td> 
