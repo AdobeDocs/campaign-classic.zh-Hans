@@ -1,8 +1,6 @@
 ---
 title: 分叉
-seo-title: 分叉
 description: 分叉
-seo-description: null
 page-status-flag: never-activated
 uuid: 90db1991-cff9-4dbd-a478-7aae1d845836
 contentOwner: sauviat
@@ -15,16 +13,20 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: f7ed7e59be2cfbde467b0c80d21cfbf52016a2b8
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 4%
 
 ---
 
 
 # 分叉{#fork}
 
-叉形允许您并行启动多个活动。
+叉子允许您同时激活其所有出站活动。
 
-双击图形对象以定义出站过渡的数量，创建新过渡或更改所选过渡的标签。
+例如，您可以在内容创建和投放发送自动化的上下文中使用活动，以便同时启动目标计算和内容创建。 本节提供专用 [用例](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)。
+
+要配置活动，请打开该过渡，然后定义所需出站的编号和标签。
 
 ![](assets/s_user_segmentation_fork.png)
-
