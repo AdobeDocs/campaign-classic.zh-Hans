@@ -12,10 +12,10 @@ discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6d9e2b54da9de37ed8f4f873a1049b35493112d4
+source-git-commit: 00a9b7def9d0ad0190c389c6bcde431f8e2f2b44
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 0%
+source-wordcount: '195'
+ht-degree: 46%
 
 ---
 
@@ -28,14 +28,15 @@ ht-degree: 0%
 
 ## 投放 {#deliveries}
 
-<img src="assets/do-not-localize/icon_workflows.svg" width="60px">
+<img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 * [使用本地批准活动](../../workflow/using/using-the-local-approval-activity.md)
-* [A/B测试](../../workflow/using/a-b-testing.md)
+* [A/B 测试](../../workflow/using/a-b-testing.md)
 * [发送生日电子邮件](../../workflow/using/sending-a-birthday-email.md)
 * [加载投放内容](../../workflow/using/loading-delivery-content.md)
 * [跨渠道投放工作流](../../workflow/using/cross-channel-delivery-workflow.md)
 * [具有自定义日期字段的电子邮件扩充](../../workflow/using/email-enrichment-with-custom-date-fields.md)
+* [内容创建、编辑和发布自动化](../../delivery/using/automating-via-workflows.md#examples)
 
 ## 监控 {#monitoring}
 
@@ -44,6 +45,7 @@ ht-degree: 0%
 * [向列表发送报告](../../workflow/using/sending-a-report-to-a-list.md)
 * [监督工作流](../../workflow/using/supervising-workflows.md)
 * [向运营商发送个性化提醒](../../workflow/using/sending-personalized-alerts-to-operators.md)
+* [在发送收件人之前设置投放批准流程](../../workflow/using/using-the-local-approval-activity.md)
 
 ## 数据管理 {#management}
 
@@ -57,7 +59,7 @@ ht-degree: 0%
 * [使用控制面板上安装的密钥加密和导出数据](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [每季度列表更新(使用增量查询)](../../workflow/using/quarterly-list-update.md)
 
-## 设计查询 {#designing-queries}
+## 定位 {#designing-queries}
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
@@ -69,3 +71,5 @@ ht-degree: 0%
 * [添加明细列表类型计算字段](../../workflow/using/adding-enumeration-type-calculated-field.md)
 * [创建过滤器](../../workflow/using/creating-a-filter.md)
 * [过滤重复的收件人](../../workflow/using/filtering-duplicated-recipients.md)
+* [在查询中调用实例变量](../../workflow/using/javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
+* [对人口应用分解百分比](../../workflow/using/javascript-scripts-and-templates.md#example)
