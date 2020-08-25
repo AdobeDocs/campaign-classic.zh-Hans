@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
+source-git-commit: 70efc8a7f1fab68d73e36b4373116c4aaaa0af5d
 workflow-type: tm+mt
-source-wordcount: '7096'
-ht-degree: 95%
+source-wordcount: '7164'
+ht-degree: 94%
 
 ---
 
@@ -56,6 +56,15 @@ ht-degree: 95%
 * [如何设置连续投放](../../workflow/using/continuous-delivery.md)
 
 在连接到FTP服务器后，收到“无法解析主机名”错误时，要执行的检查和操作中已添加信息。 [阅读更多](../../platform/using/sftp-server-usage.md)
+
+在工作流用例的列表中引用了 [新的用例](../../workflow/using/about-workflow-use-cases.md):
+
+* 内容创建、编辑和发布自动化
+* 在发送收件人之前设置投放批准流程
+* 在查询中调用实例变量
+* 对人口应用分解百分比
+
+活动 **[!UICONTROL AND-join]** 一节已丰富了关于其使用情况的更多信息，并有关于变量使用情况的说明。 [阅读更多](../../workflow/using/and-join.md)
 
 ## 2020 年 7 月 {#july-2020}
 
