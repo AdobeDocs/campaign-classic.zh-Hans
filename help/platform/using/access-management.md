@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 6c66718fbbf13486d52b0cc98eae6c854b34030d
 workflow-type: tm+mt
 source-wordcount: '2955'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这�
 
 >[!NOTE]
 >
->在开始定义权限之前，Adobe建议您阅读安 [全配置清单](https://helpx.adobe.com/campaign/kb/acc-security.html)。
+>在开始定义权限之前，Adobe建议您阅读安 [全配置清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)。
 
 ## 运算符 {#operators}
 
@@ -137,7 +137,7 @@ The **[!UICONTROL Edit the access parameters...]** link lets you access the foll
 
    如果Adobe Campaign的IP地址在此列表中，则操作员无需输入口令即可连接到该。
 
-   您还可以指定一组IP地址，这些地址将授权在无口令的情况下进行连接，如以下示例中所示：
+   您还可以指定一组IP地址，这些地址将被授权在无口令的情况下进行连接，如以下示例中所示：
 
    ![](assets/operator_trustip.png)
 
@@ -211,7 +211,7 @@ Adobe Campaign使用技术操作符，默认配置用户档案:管理员（“�
 
 >[!NOTE]
 >
->有关安全准则的详细信息，请参阅 [Adobe Campaign安全配置清单](https://helpx.adobe.com/campaign/kb/acc-security.html)。
+>有关安全准则的详细信息，请参阅 [Adobe Campaign安全配置清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)。
 
 ## 运算符组 {#operator-groups}
 
@@ -331,7 +331,7 @@ Adobe Campaign使用技术操作符，默认配置用户档案:管理员（“�
 
 * **[!UICONTROL PREPARE DELIVERIES]**:创建、编辑和保存投放的权利。 具有权限 **[!UICONTROL PREPARE DELIVERIES]** 的用户还可以开始投放分析过程。
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**:收集和删除隐私数据的权利。 有关详细信息，请参见此 [ 页面](https://helpx.adobe.com/campaign/kb/acc-privacy.html)。
+* **[!UICONTROL PRIVACY DATA RIGHT]**:收集和删除隐私数据的权利。 有关详细信息，请参见此 [ 页面](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)。
 
 * **[!UICONTROL PROGRAM EXECUTION]**:使用各种编程语言执行命令的权利。
 
@@ -357,7 +357,7 @@ Adobe Campaign使用技术操作符，默认配置用户档案:管理员（“�
 
 Adobe Campaign访问权限表可在 [此处](/help/platform/using/assets/access-rights-matrix.pdf)。
 
-[![图像](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
+[![图像](assets/do-not-localize/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
 ## 文件夹访问管理 {#folder-access-management}
 
