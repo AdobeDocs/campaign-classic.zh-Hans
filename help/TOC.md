@@ -6,9 +6,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 0810608c67e6da4d9afa3a366df664594b0b6840
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2109'
 ht-degree: 95%
 
 ---
@@ -432,7 +432,7 @@ ht-degree: 95%
          + [丰富数据](workflow/using/enriching-data.md)
          + [使用聚合](workflow/using/using-aggregates.md)
          + [每季度列表更新(使用增量查询)](workflow/using/quarterly-list-update.md)
-      + 设计查询 {#designing-queries}
+      + 定位 {#designing-queries}
          + [查询收件人表](workflow/using/querying-recipient-table.md)
          + [查询投放信息](workflow/using/querying-delivery-information.md)
          + [执行聚合计算](workflow/using/performing-aggregate-computing.md)
