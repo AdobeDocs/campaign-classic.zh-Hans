@@ -13,15 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
+source-git-commit: f52e00ade7c97662eb4061e19fd38b863b2c2bd3
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 0%
+source-wordcount: '1624'
+ht-degree: 3%
 
 ---
 
 
-# 定义交互式内容{#defining-interactive-content}
+# 定义互动内容{#defining-interactive-content}
 
 Adobe Campaign使您能够试用新的交 [互式AMP for Email](https://amp.dev/about/email/) ，该格式允许在特定条件下发送动态电子邮件。
 
@@ -33,8 +33,9 @@ Adobe Campaign使您能够试用新的交 [互式AMP for Email](https://amp.dev/
 
 此功能可通过Adobe Campaign专用包获得。 要使用它，必须安装此包。 完成后，重新启动服务器以便考虑包。
 
->[!NOTE]
-> 对于混合和托管架构，该软件包需要安装在所有服务器上，包括 [中间源服](../../installation/using/mid-sourcing-server.md) 务器和 [执行实例](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 与您的客户经理联系。
+    >[!NOTE]
+    >
+    >对于混合型和托管型架构，需要将包安装在所有服务器上，包括[中间源服务器](../../installation/using/mid-sourcing-server.md)和[执行实例](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 与您的客户经理联系。
 
 
 ## 关于AMP for Email {#about-amp-for-email}
@@ -215,6 +216,6 @@ AMP内容和备份准备就绪后，定义兼容目标后，您可以像通常�
 
 ## 如何激活和使用AMP处理电子邮件 {#amp-email-video}
 
-以下视频介绍如何在Adobe Campaign Classic激活AMP并展示其用法。
+以下视频介绍如何在 Adobe Campaign Classic 中激活 AMP。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
