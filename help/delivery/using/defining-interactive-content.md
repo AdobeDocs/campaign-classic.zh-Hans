@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f52e00ade7c97662eb4061e19fd38b863b2c2bd3
+source-git-commit: 80de051cde62038c11246f8da08a7e00505a3313
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1616'
 ht-degree: 3%
 
 ---
@@ -33,10 +33,9 @@ Adobe Campaign使您能够试用新的交 [互式AMP for Email](https://amp.dev/
 
 此功能可通过Adobe Campaign专用包获得。 要使用它，必须安装此包。 完成后，重新启动服务器以便考虑包。
 
-    >[!NOTE]
-    >
-    >对于混合型和托管型架构，需要将包安装在所有服务器上，包括[中间源服务器](../../installation/using/mid-sourcing-server.md)和[执行实例](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 与您的客户经理联系。
-
+>[!NOTE]
+>
+> 对于混合和托管架构，该软件包需要安装在所有服务器上，包括 [中间源服](../../installation/using/mid-sourcing-server.md) 务器和 [执行实例](../../message-center/using/creating-a-shared-connection.md#execution-instance)。 与您的客户经理联系。
 
 ## 关于AMP for Email {#about-amp-for-email}
 
