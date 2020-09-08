@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 98c880e1218f179b8b804d52690135a2f28520a0
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 88%
 
 ---
 
@@ -38,7 +41,7 @@ source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
 
 ### 大量更新 {#mass-update}
 
-对于批量更新，请使用 **[!UICONTROL Action > Mass update of selected lines...]**。 向导可帮助您配置并运行更新。
+要进行批量更新，请使用 **[!UICONTROL Action > Mass update of selected lines...]**。 向导可帮助您配置并运行更新。
 
 向导的第一步是指定要更新的字段。
 
@@ -104,7 +107,7 @@ Select **[!UICONTROL Merge selected lines...]** to launch the merging of two rec
 在大多数情況下，收件人可通过专用的登陆页来订阅新闻稿，如[本节所述](../../delivery/using/managing-subscriptions.md)。但是，过滤后的收件人用户档案可以手动订阅某个服务（新闻稿或传播服务）。操作步骤：
 
 1. 选择您想要订阅的收件人，然后单击鼠标右键。
-1. Select **[!UICONTROL Actions > Subscribe selection to a service]**.
+1. 选择 **[!UICONTROL Actions > Subscribe selection to a service]**。
 
    ![](assets/s_ncs_user_selection_subscribe_service.png)
 
@@ -116,7 +119,7 @@ Select **[!UICONTROL Merge selected lines...]** to launch the merging of two rec
    >
    >此编辑器允许您创建新的服务：单击 **[!UICONTROL Create]** 按钮。
 
-1. 您可以 **[!UICONTROL Send a confirmation message]** 发送给收件人。 可在链接到所选服务的订阅场景中配置此消息的內容。
+1. 你可以 **[!UICONTROL Send a confirmation message]** 去收件人。 可在链接到所选服务的订阅场景中配置此消息的內容。
 1. 单击 **[!UICONTROL Start]** 按钮执行订阅过程。
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
