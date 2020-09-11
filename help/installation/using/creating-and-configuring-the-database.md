@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
+source-git-commit: aeedcfb489e0dc0cd62e4472dc86102fa40cf6b4
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
@@ -69,7 +69,7 @@ ht-degree: 1%
 * 对于 **PostgreSQL** 或 **DB2引擎** ，必须指定在应用程序服务器上定义的DNS名称（或IP地址）才能访问数据库服务器。
 * 对于 **Microsoft SQL Server** Engine，必须定义：
 
-   1. 应用程序服务器上定义的用于访问数据库服务器的DNS名称（或IP地址）: **DNS** 或 **DNS\ `<instance>`** （实例模式）,
+   1. 应用程序服务器上定义的用于访问数据库服务器的DNS名称（或IP地址）: **DNS** 或 **DNS`\<instance>`** （实例模式）,
    1. 用于访问Microsoft SQL Server的身份验证方法： **[!UICONTROL SQL Server authentication]** 或 **[!UICONTROL Windows NT authentication]**&#x200B;者
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
