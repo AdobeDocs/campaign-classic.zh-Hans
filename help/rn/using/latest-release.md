@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c96c94fe0b98e298968c329466ee4e2e04b11a35
+source-git-commit: f92180f93850d5bc33e74210d17cdd36c0c15e5f
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 85%
+source-wordcount: '2119'
+ht-degree: 80%
 
 ---
 
@@ -25,7 +25,20 @@ ht-degree: 85%
 
 ![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含活动用户档案监测、子域投放能力审核和 GPG 密钥管理。[了解详情](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/blue_2.png) 版本 20.2.2 - 版本 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/blue_2.png) 版本 20.2.3 - 版本 9182 {#release-20-2-3-build-9182}
+
+_2020年9月11日_
+
+* 修复了导致投放准备被阻止的回归，该回归是由于投放部分上的单个错误函数导致内存过载。 (NEO-27346)
+* 修复了在重新发布Web应用程序之前关闭Apache和Web服务器的错误升级问题。 (NEO-27155)
+* 修复了HTML模板管理上的回归问题，该回归导致跟踪URL由于选项卡的误解而变得可见。 (NEO-25909)
+* 修复了由于非托管数据源而导致数据库清理工作流失败的问题。 (NEO-23160, NEO-23364)
+* 清理工作流现在按100批而不是逐批清除过期列表。
+* 修复了阻止修改外部帐户内部名称的回归。 (NEO-27323)
+* 在错误升级期间修复回归，导致nlserver开始不正确（错误日志）。
+* 已改进共享内存的更新管理。 不再需要20.2中需要的其他步骤。
+
+## ![](assets/do-not-localize/orange_2.png) 版本 20.2.2 - 版本 9180 {#release-20-2-2-build-9180}
 
 _2020年7月22日_
 
