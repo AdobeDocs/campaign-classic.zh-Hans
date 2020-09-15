@@ -1,7 +1,7 @@
 ---
-title: 版本19.2
-seo-title: 版本19.2
-description: 版本19.2
+title: 版本 19.2
+seo-title: 版本 19.2
+description: 版本 19.2
 seo-description: null
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -15,17 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c7b00960ffde49df65cd5c8fcfb8fab6aee485d7
+source-git-commit: 9357be26b1bc436b19861faa2a43ec6a17cb5b3c
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 2%
+source-wordcount: '1318'
+ht-degree: 8%
 
 ---
 
 
-# 版本19.2{#release-19-2}
+# 版本 19.2{#release-19-2}
 
-## ![](assets/do-not-localize/orange_2.png) 版本19.2.3 —— 内部版本9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/orange_2.png) 版本 19.2.3 - 版本 9081 {#release-19-2-3-build-9081}
 
 _2020年2月7日_
 
@@ -34,11 +34,11 @@ _2020年2月7日_
 * 修复了由于实施SSL认证而导致用户连接在Windows服务器上失败的回归问题。 (NEO-20629)
 * 修复了在“关于”菜单中显示错误版本标 **签号** 的问题。
 
-## ![](assets/do-not-localize/orange_2.png) 版本19.2 —— 内部版本9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/orange_2.png) 版本 19.2 - 版本 9080 {#release-19-2-build-9080}
 
 _2019年12月2日_
 
-**新增内容?**
+**新增内容？**
 
 <table> 
  <thead> 
@@ -51,7 +51,7 @@ _2019年12月2日_
    <td> <p>CCPA是加利福尼亚州新的隐私法，它协调2020年1月1日起生效的数据保护要求并使其现代化。 CCPA适用于持有居住在加利福尼亚的数据主体数据的Adobe Campaign客户。</p>
     <p>除了现有的隐私权功能（包括同意管理、数据保留设置和用户角色）之外，Adobe Campaign还有助于您为CCPA做好准备：</p>
     <ul>
-      <li>访问权和删除权： 我们正在利用为GDPR增加的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">阅读更多</a></li>
+      <li>访问权和删除权：我们正在利用为GDPR增加的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">阅读更多</a></li>
       <li>您可以跟踪消费者是否已选择出售个人信息。 为此，您需要扩展用户档案表并添 <strong>加CCPA的退出字段</strong> 。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">阅读更多</a></li></td> 
   </tr> 
  </tbody> 
@@ -82,7 +82,7 @@ _2019年12月2日_
   <tr> 
 <td> <p>Adobe Campaign使您能够试用新的交互式 <a href="https://amp.dev/about/email/">AMP</a> for Email格式，它允许营销人员将AMP组件包含在邮件中，以增强包含丰富、动态和交互式内容的电子邮件体验，这些内容在邮件本身中直接具有可操作性。</p>
    <p>此功能作为公共测试版发布。</p>
-   <p>有关详细信息，请参阅详 <a href="../../delivery/using/defining-interactive-content.md">细文档</a> 和教 <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">程视频</a>。</p><br /></td> 
+   <p>有关更多信息，请参阅<a href="../../delivery/using/defining-interactive-content.md">详细文档</a>和<a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">教程视频</a>。</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
@@ -96,7 +96,7 @@ _2019年12月2日_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>现在，扩展通用SMPP连接器支持安全SMS。 这允许与提供者建立加密连接。</p> <p><strong>警告</strong> ：此功能要求所有服务器上都有最新证书。 无效、已吊销或过期的证书将生成影响整体SMS发送功能的错误。</p><p>有关详细信息，请参阅<a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html">详细文档</a>。 </p> </td> 
+<td> <p>现在，扩展通用SMPP连接器支持安全SMS。 这允许与提供者建立加密连接。</p> <p><strong>警告</strong> ：此功能要求所有服务器上都有最新证书。 无效、已吊销或过期的证书将生成影响整体SMS发送功能的错误。</p><p>有关详细信息，请参阅<a href="https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html">详细文档</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -126,19 +126,19 @@ _2019年12月2日_
 
 _弃用的系统_
 
-以下系统现已弃 [用](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) ，用于Campaign Classic实现：
+The following systems are now [deprecated](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html) for Campaign Classic implementations:
 * Apache 2.2
 * Centos 6
 
-请确保您使用最新活动兼容性矩阵中列出的所有系统的受支持版本。 [阅读更多](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+请确保您使用最新活动兼容性矩阵中列出的所有系统的受支持版本。 [阅读更多](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 
 _活动移动SDK_
 
-iOS SDK的内部版本1.0.26现已可用。 在此新版本中，我们增加了对iOS 13的支持。 此新版本现在支持iOS 13推送通知的通知优先级和新的注册令牌管理流程。 如果您在SDK的先前版本上运行应用程序，则需要使用新的SDK重新编译应用程序。 要获取SDK，请与Adobe客户关怀部门联系。
+iOS SDK的内部版本1.0.26现已可用。 在此新版本中，我们增加了对iOS 13的支持。 此新版本现在支持iOS 13推送通知的通知优先级和新的注册令牌管理流程。 如果您在SDK的先前版本上运行应用程序，则需要使用新的SDK重新编译应用程序。 要获取SDK，请与Adobe客户关怀联系。
 
 **修补程序**
 
-* 修复了在数据加载(RDBMS)工作流活动中添加空链接 **表时可能发生的控制台崩** 溃问题。 (NEO-12213)
+* 修复了在数据加载( **RDBMS)工作流活动** 中“添加链接表” **字段为空时的崩** 溃问题。 (NEO-12213)
 * 修复了可能导致某些邮件不被中间源服务器处理的问题。 (NEO-12395)
 * 修复了在Teradata中使用查询条带选项时数据库清理工作流中的问题。 (NEO-12399)
 * 修复了影响投放分析（包括ne.jp域）的问题。 (NEO-12609)
@@ -152,7 +152,7 @@ iOS SDK的内部版本1.0.26现已可用。 在此新版本中，我们增加了
 * 修复了使用文件传输工作流下载 **文件时的活动问题** ，该使用传 **** 输后删除源文件选项（名称包含空格字符）。 (NEO-13411)
 * 修复了Tomcat缓存清除的一个问题，该问题可能导致内存问题。 (NEO-13456)
 * 修复了在Microsoft SQL 2017中 **运行的现有优惠上安装具有执行实例内置包的控制实例引擎控制** (Control of Control of Bitd-in)时的问题。 (NEO-13539)
-* 修复了在从“文本内容”选项卡中取消检查电子邮件中跟踪的URL时可能发 **生的控制台** 崩溃。 (NEO-13545)
+* 修复了由于未初始化变量，从“文本内容”选项卡取消检查电子邮件中 **跟踪的** URL时可能发生的控制台崩溃问题。 (NEO-13545)
 * 修复了中文发件人姓名的编码问题。 (NEO-13837)
 * 修复了在从资源管理器显示调查响应数据时可能引发的错误。 (NEO-14590)
 * 修复了可能导致投放日志分类与隔离表不一致的问题。 (NEO-16547)
@@ -166,4 +166,6 @@ iOS SDK的内部版本1.0.26现已可用。 在此新版本中，我们增加了
 * 修复了从外部SFTP导入数据时的超时问题。 (NEO-19723)
 * 修复了访问预测模型时的问题。 (NEO-19713)
 * 修复了在Hadoop活动库的Split工作 **流联合数据访问** 中影响随机采样的问题。 (NEO-16636)
+* 修复了Oracle上的回归，该回归导致某些函数在错误升级后被视为无效。 (NEO-12759)
+
 
