@@ -1,7 +1,7 @@
 ---
-title: 版本19.1
-seo-title: 版本19.1
-description: 版本19.1
+title: 版本 19.1
+seo-title: 版本 19.1
+description: 版本 19.1
 seo-description: null
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -15,17 +15,48 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
+source-git-commit: edb8f495fff90f51ae00006453b6ec09d84a8f55
 workflow-type: tm+mt
-source-wordcount: '2118'
-ht-degree: 1%
+source-wordcount: '2639'
+ht-degree: 6%
 
 ---
 
 
-# 版本19.1{#release-19-1}
+# 版本 19.1{#release-19-1}
 
-## ![](assets/do-not-localize/orange_2.png) 版本19.1.6 —— 内部版本9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/limited_2.png) 版本 19.1.7 - 版本 9036 {#release-19-1-7-build-9036}
+
+_2020年9月15日_
+
+**改进**
+
+* 针对Apache 2.4线程使用改进了nlsrvmod以修复nlsrvmod崩溃。
+* 修复了将文件传输活动与Azure外部帐户和SSL加密一起使用时的问题。 连接是通过HTTP而不是HTTPS执行的。 (NEO-26720)
+* 在投放属性中， **[!UICONTROL Archive emails]** 已重命名该选 **[!UICONTROL Email BCC]** 项以获得更好的用户体验。
+* 修复了url缓存机制未检索标签或类别的问题。
+* 修复了导致电子邮件镜像页面中错误定义投放URL的问题（由于ASCII字符控制不当）。 (NEO-26084)
+* catalina.properties中的jarToSkip列表已更新，以删除对不再使用的jar文件（iOS通知）的引用。
+* 修复了在放置后发布后阻止的回归问题。
+* 修复了带有现成投放报告的回归，该回归在导出到PDF时显示被截断。 (NEO-25757)
+* 修复了从跟踪URL重定向时删除编码参数值（对日语字符的影响）的问题。 (NEO-25637)
+* 修复了导致个性化域中未签名链接在应允许时被阻止的问题。 (NEO-25210)
+* 修复了影响工作流中计算字段的回归，导致工作流失败。 (NEO-25194)
+* 修复了Microsoft Dynamics（从版本8.2）的兼容性问题，该问题可能会阻止某些API调用执行(RetrieveAllEntities)。 (NEO-24528)
+* 修复了使用ACS连接器功能时导致无法连接到Campaign Standard实例的回归问题（FOH/FOH2连接管理不正确）。 (NEO-23433)
+* 修复了数据库连接上的回归问题，该问题导致Web服务器由于数据库编码问题而不断重新启动。 这可能导致过度消费。 (NEO-23264)
+* 修复了由于非托管数据源而导致数据库清理工作流失败的问题。 (NEO-23160, NEO-23364)
+* 清理工作流现在按100批而不是逐批清除过期列表。
+* 切换到新的序 [列ID机制后](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)，所有更新收件人表的Web应用程序都会在升级过程中重新发布。
+* 修复了在HTML内容标记外存在Javascript代码时无法发送电子邮件的问题。 (NEO-18628)
+* 修复了事务性消息跟踪指示器无法由跟踪工作流更新的问题。 (NEO-17770)
+* 改进了数据库更新向导的性能，以减少SQL语句的数量，从而优化响应时间。
+* 修复了由于未初始化变量，从“文本内容”选项卡取消检查电子邮件中 **跟踪的** URL时可能发生的控制台崩溃问题。 (NEO-13545)
+* 修复了由于未初始化的变量(m_pCurlReader)，您无法使用Azure Blob活动外部帐户在文件传输存储中上传文件的问题。 (NEO-13717)
+* 修复了在重新发布Web应用程序之前关闭Apache和Web服务器的错误升级问题。 (NEO-27155)
+* 修复了在调度程序工作流活动中设置时间时导致选取错误时 **区** 的回归。
+
+## ![](assets/do-not-localize/orange_2.png) 版本 19.1.6 - 版本 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -41,7 +72,7 @@ _2019年10月3日_
 * 修复了可能导致某些邮件不被中间源服务器处理的问题。 (NEO-12395)
 * 修复了阻止完全使用SQL数据管理活动(缺少名为right的“SQL数据管理”)的问题。
 
-## ![](assets/do-not-localize/red_2.png) 版本19.1.5 —— 内部版本9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/red_2.png) 版本 19.1.5 - 版本 9033{#release-19-1-5-build-9033}
 
 _2019年8月13日_
 
@@ -49,19 +80,21 @@ _2019年8月13日_
 
 * 修复了SQL语句“SELECT COUNT”的问题，该语句在数据管理活动中的联合数据访问提取期间在默认数据库而不是数据库上执行。
 * 为了改进客户基础架构功能，服务器配置文件中现在提供了SFTP代理声明。
-* 修复了在无表名的数据加载(RDBMS)工作流活动中“添加链接表”时客户端控制台崩溃的问题。 (NEO-12213)
-* 修复了通过命令行安装midEmeter包的问题。
+* 修复了在数据加载( **RDBMS)工作流活动** 中“添加链接表” **字段为空时的崩** 溃问题。 (NEO-12213)
+* 修复了通过命令行安装midEmitter包的问题。
 * 新增了一个身份验证选项，用于在AC连接器中通过Microsoft Dynamics支持OAuth凭据。 (NEO-11982)
-* 修复UUID（唯一通用标识符）问题会导致扩充活动失败，而配置Hive联合数据访问。
+* 修复了UUID（唯一通用标识符）管理导致查询和数据加载工作流活动在配置单元联合数据访问时失败的问题。
+* 修复了Oracle上的回归，该回归导致某些函数在错误升级后被视为无效。 (NEO-12759)
+* 修复了在调度程序工作流活动中设置时间时，导致选取错误时区的回归问题。
 
-## ![](assets/do-not-localize/green_2.png) 版本19.1.4 —— 内部版本9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/green_2.png) 版本 19.1.4 - 版本 9032{#release-19-1-4-build-9032}
 
 >[!NOTE]
 >
 >19.1.4金本位币版本列在本 [页](../../rn/using/gold-standard.md)。
 
 
-## ![](assets/do-not-localize/red_2.png) 版本19.1.2 —— 内部版本9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/red_2.png) 版本 19.1.2 - 版本 9029{#release-19-1-2-build-9029}
 
 _2019年6月21日_
 
@@ -77,11 +110,11 @@ _2019年6月21日_
 * 现在，我们允许在导入工作流程期间删除在Microsoft Dynamics中创建的虚拟记录。
 * 改进了使用内部帐户时执行安全区包的权限。
 
-## ![](assets/do-not-localize/red_2.png) 版本19.1 —— 内部版本9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/red_2.png) 版本 19.1 - 版本 9026{#release-19-1-build-9026}
 
 _2019年5月30日_
 
-**新增内容?**
+**新增内容？**
 
 <table> 
  <thead> 
@@ -93,11 +126,11 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>要提高管理员用户的工作效率，请通过监视存储、向允许列表添加IP地址以及为每个实例安装SSH密钥来管理SFTP服务器的设置。 请注意，控制面板仅适用于今天在AWS上托管的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天通过Experience Cloud登录</a>)。</p> <p>有关详细信息，请参 <a href="https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html">阅详细文档</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">和操作方法视频</a>。 </p><p>注意： 升级到最新活动版本不是访问控制面板的必需条件。</p> </td> 
+   <td> <p>要提高管理员用户的工作效率，请通过监视存储、向允许列表添加IP地址以及为每个实例安装SSH密钥来管理SFTP服务器的设置。 请注意，控制面板仅适用于今天在AWS上托管的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天通过Experience Cloud登录</a>)。</p> <p>有关更多信息，请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html">详细文档</a>和<a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">操作方法视频</a>。 </p><p>注意：升级到最新活动版本不是访问控制面板的必需条件。</p> </td> 
   </tr> 
     <tr> 
    <td> 审核跟踪<br /> </td> 
-   <td> <p>作为管理员，通过监控和管理Adobe Campaign经典实例中所做的更改来提高工作效率。 审核跟踪将记录对源模式、工作流和选项执行的操作。 您可以快速查看元素是已创建、修改还是已删除。</p><p>有关详细信息，请参 <a href="../../production/using/audit-trail.md">阅详细文档</a><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/monitoring/audit-trail.html">和操作方法视频</a>。</p></td> 
+   <td> <p>作为管理员，通过监控和管理Adobe Campaign Classic实例中所做的更改来提高生产效率。 审核跟踪将记录对源模式、工作流和选项执行的操作。 您可以快速查看元素是已创建、修改还是已删除。</p><p>For more information, refer to the <a href="../../production/using/audit-trail.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/monitoring/audit-trail.html">how-to video</a>.</p></td> 
   </tr> 
   <tr> 
    <td> Guardrail、强健性和可伸缩性<br /> </td> 
@@ -105,7 +138,7 @@ _2019年5月30日_
   </tr> 
   <tr> 
    <td> 兼容性矩阵更新<br /> </td> 
-   <td> 有了此新版本，Adobe Campaign现在支持以下数据库系统。 请参阅兼 <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">容性表</a>。<br /> 
+   <td> 有了此新版本，Adobe Campaign现在支持以下数据库系统。 Refer to the <a href="https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html">Compatibility Matrix</a>.<br /> 
     <ul> 
      <li> <p>Oracle 18c</p> </li> 
      <li> <p>MySQL 5.7(联合数据访问)</p> </li> 
@@ -119,7 +152,7 @@ _2019年5月30日_
 
 **安全性增强**
 
-* 出于安全原因，在工作流活动中使用选项时，您不 **[!UICONTROL Pre-process the file]** 能再插入任 **[!UICONTROL Data loading (file)]** 意命令。 现在提供一个下拉列表，允许您从3个选项中进行选择： **[!UICONTROL None]**、 **[!UICONTROL Decompression]** (zcat)或 **[!UICONTROL Decrypt]** (gpg)。 已添加XtkSecurity_Disable_Preproc安全标志。 对于新客户，此选项将设置为0。 对于现有客户，此选项将由配置级设置为1，以保持以前的行为。 请参阅此 [部分](../../workflow/using/data-loading--file-.md)。
+* 出于安全原因，在工作流活动中使用选项时，您不 **[!UICONTROL Pre-process the file]** 能再插入任 **[!UICONTROL Data loading (file)]** 意命令。 现在提供一个下拉列表，允许您从3个选项中进行选择： **[!UICONTROL None]**、 **[!UICONTROL Decompression]** (zcat)或 **[!UICONTROL Decrypt]** (gpg)。 已添加XtkSecurity_Disable_Preproc安全标志。 对于新客户，此选项将设置为0。 对于现有客户，此选项将由配置级设置为1，以保持以前的行为。 Refer to this [section](../../workflow/using/data-loading--file-.md).
 * 修复了在未设置时区的情况下测试联合数据访问外部帐户连接时发生的口令可见性问题。
 * 已删除PDFBox库。
 * Tomcat已更新至版本7.0.93。
@@ -135,25 +168,25 @@ _2019年5月30日_
 
 **护栏、强健性和可伸缩性改进**
 
-* 寿命- XtkNewId序列使用优化： 最耗用的表已从xtkNewId序列移动到专用序列。 [阅读更多](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
-* 联合数据访问HTTP v2: 联合数据访问HTTP协议广泛用于混合部署，尤其用于广泛的日志检索和投放准备。 增强了健壮性，以避免在检索或推送数据时出现网络问题和可能的错误。 这要求连接两端的构建都是最新的，否则仍将使用旧协议。
-* 跟踪工作流： 跟踪工作流的鲁棒性得到增强。 已修复与跟踪日志插入／更新和URL跟踪自定义相关的几个问题。 此外，跟踪工作流现在会检测可能导致错误的跟踪日志问题并停止该工作流。 这些问题现已丢弃，且未处理。
-* 清除工作流： 已改进清理工作流，以避免潜在错误和停止。 这将优化数据库大小和性能。
-* 事务性消息中的嵌入图像： 我们已在事务性消息中添加了对嵌入图像的完全支持，以避免可能的崩溃或丢失图像。
-* 数据库大小- XtkJobLog: 已将清除机制添加到此表。 这对数据库大小有积极影响。
-* 密送存档： 已更改BCC归档的默认参数以提高归档速度。 [阅读更多](../../installation/using/email-archiving.md#parameters)
-* 数据库结构更新： 数据库结构更新向导生成的SQL请求已得到改进，可加快执行速度。
-* 操作员操作的护栏： 已实施若干护栏，以防止运营商采取可能影响平台完整性的行动。 内置模式不再能通过界面删除。 此外，非管理员用户不再可以编辑工作流源XML。
+* 寿命- XtkNewId序列使用优化：最耗用的表已从xtkNewId序列移动到专用序列。 [阅读更多](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* 联合数据访问HTTP v2:联合数据访问HTTP协议广泛用于混合部署，尤其用于广泛的日志检索和投放准备。 增强了健壮性，以避免在检索或推送数据时出现网络问题和可能的错误。 这要求连接两端的构建都是最新的，否则仍将使用旧协议。
+* 跟踪工作流：跟踪工作流的鲁棒性得到增强。 已修复与跟踪日志插入／更新和URL跟踪自定义相关的几个问题。 此外，跟踪工作流现在会检测可能导致错误的跟踪日志问题并停止该工作流。 这些问题现已丢弃，且未处理。
+* 清除工作流：已改进清理工作流，以避免潜在错误和停止。 这将优化数据库大小和性能。
+* 事务性消息中的嵌入图像：我们已在事务性消息中添加了对嵌入图像的完全支持，以避免可能的崩溃或丢失图像。
+* 数据库大小- XtkJobLog:已将清除机制添加到此表。 这对数据库大小有积极影响。
+* 密送存档：已更改BCC归档的默认参数以提高归档速度。 [阅读更多](../../installation/using/email-archiving.md#parameters)
+* 数据库结构更新：数据库结构更新向导生成的SQL请求已得到改进，可加快执行速度。
+* 操作员操作的护栏：已实施若干护栏，以防止运营商采取可能影响平台完整性的行动。 内置模式不再能通过界面删除。 此外，非管理员用户不再可以编辑工作流源XML。
 * 提供了两个新选项： **XtkSecurity_Restrict_EditXML** (允许您禁用投放的XML代码版本)和 **NmsOperation_OperationMgtDebug** （允许您监视操作管理技术工作流执行）。 [阅读更多](../../installation/using/configuring-campaign-options.md)
 
 **其他更改**
 
-* 推送通知： 现在，我们支持iOS推送的“线程ID”选项。
+* 推送通知：现在，我们支持iOS推送的“线程ID”选项。
 * 改进了长名称索引的管理，这些索引可能导致错误升级问题。
-* 现在，在反编译分析投放期间，如果发布模式在部署向导 **[!UICONTROL None]** 中设置为，则会记录错误并停止分析: &quot;发布模式设置为&#39;none&#39;: 无法嵌入图像。 功能电话上不显示图像。” (NEO-12208)
+* 现在，在反编译分析投放期间，如果发布模式在部署向导 **[!UICONTROL None]** 中设置为，则会记录错误并停止分析:&quot;发布模式设置为&#39;none&#39;:无法嵌入图像。 功能电话上不显示图像。” (NEO-12208)
 * 针对事务性消息传递，广播管理已得到改进。 当广播从执行实例同步到控制实例时，@lastModified字段将更新为系统的当前日期。 已为控制实例添加MC_Update_BlLastModified选项。 True表示当前日期将用于控制实例（默认行为）。 False表示我们使用执行实例广播的@lastModified日期。 (NEO-12579)
 * 在优惠券临时表中添加了索引以优化投放发送。 (NEO-12437)
-* 在Analytics集成中，现在允许检索字符为%的AAM段数据。 (NEO-12025)
+* 在Analytics集成中，现在允许检索包含%字符的AAM区段数据。 (NEO-12025)
 * 已删除工作流热图中的10,000记录限制，以修复缺少的数据问题。 (NEO-12329)
 * 不支持Open Office，现在已完全从应用程序中删除。 如果您仍在使用它，请转到Libre Office，因为从19.1开始它将不再工作。
 * 您现在可以使用sysfilter属性限制对工作流中的“更新活动”的“写入”访问。 [阅读更多](../../configuration/using/filtering-schemas.md)
@@ -183,7 +216,7 @@ _2019年5月30日_
 * 修复了在导出然后通过XML导入对象时，可能会覆盖某些值的问题。 已添加XtkExport_IncludeDefaultValues选项。 当设置为True（默认行为）时，将导出所有值。 设置为False时，修改将被默认值覆盖。 (NEO-11979)
 * 修复了在添加活动 **[!UICONTROL Alert]** 后扩充活动时导致工作流查询失败的问题。 (NEO-12132)
 * 修复了Oracle设置上的一个问题，该问题导致管线（触发器）偏移未从数据库成功检索，从而导致重复。 (NEO-12121)
-* 修复了在使用Analytics集成(NEO-12103)时可能导致透视表显示错误的问题
+* 修复了在使用Analytics集成时，可能导致透视表显示错误的问题(NEO-12103)
 * 修复了描述性分析报表的问题。 (NEO-11414)
 * 修复了远程表包含名称带有下划线的字段时CRM连接器的问题。
 * 修复了可能导致假设验证报表中货币符号显示的问题。 (NEO-11634)
