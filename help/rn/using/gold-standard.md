@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2604df2e6b6a7520e2f2a82f04c75ceb749fde79
+source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
 workflow-type: tm+mt
 source-wordcount: '815'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 本页列表Gold Standard版本。
 
-有关Gold Standard升级的详细信息，请参阅本 [文](https://helpx.adobe.com/campaign/kb/gold-standard.html)。
+有关Gold Standard升级的详细信息，请参阅本 [文](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
 
-## ![](assets/do-not-localize/limited.png) 金标10版{#gs-10}
+## ![](assets/do-not-localize/limited_2.png) 金标10版{#gs-10}
 
 _2020年7月7日_
 
@@ -69,14 +69,14 @@ _2020年4月29日_
 
 内部版本9032@3a9dc9c包括以下修复：
 
-* 改进了跟踪电子邮件链接的安全性。 默认情况下，所有客户都启用此功能。 另外还提供了增强的安全功能，可通过联系客户服务中心来启用此功能。 有关非托管客户启用此功能的功能和步骤的更多详细信息，请参阅安 [全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
+* 改进了跟踪电子邮件链接的安全性。 默认情况下，所有客户都启用此功能。 另外还提供了增强的安全功能，可通过联系客户服务中心来启用此功能。有关此功能及非托管客户启用此功能的步骤的更多详细信息，请参阅[安全和隐私检查列表](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)。
 
 >[!CAUTION]
 >
 >如果您在使用跟踪链接的推送通知或使用锚点标记的投放时遇到问题，建议您禁用用于跟踪链接的新签名机制。 该过程在此页中详 [细](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
 
 * 修复了一个问题，该问题可能会阻止图像显示在行投放上。 (NEO-23207)
-* 修复了文件传输 **活动的问题** ，该问题导致基于SFTP密钥的身份验证无法在Debian 9上工作。 (NEO-23183)
+* 修复了&#x200B;**文件传输**&#x200B;活动的问题，该问题导致基于 SFTP 密钥的身份验证无法在 Debian 9 上工作。(NEO-23183)
 * 修复了在以高频率发送时可能影响推送通知的问题。 (NEO-20516)
 * 修复了优惠响应管理中可能导致Web服务器崩溃的问题。 (NEO-19482)
 * 修复了LibreOffice管理中阻止导出报告的错误。 (NEO-20982)
@@ -85,8 +85,8 @@ _2020年4月29日_
 * 改进了Apache连接的管理以避免Web服务上的延迟。
 * 改进了版本标签（7位数）在“关于”菜单 **中的显** 示。
 * 修复了列表管理中的回归，阻止优惠发布。
-* 修复了导致清除工作流崩溃的回归。
-* 修复了清除工作流日志中的次要回归。
+* 修复了导致清理工作流崩溃的回归。
+* 修复了清理工作流日志中的次要回归。
 
 ## ![](assets/do-not-localize/green_2.png) 金标6版{#gs-6}
 
@@ -94,7 +94,7 @@ _2020年3月9日_
 
 内部版本9032@19f73c5包含以下修复：
 
-* 修复了外部帐户使用FTP over SSL时的问题。 (NEO-20498)
+* 修复了外部帐户使用 FTP over SSL 时的问题。(NEO-20498)
 
 ## ![](assets/do-not-localize/orange_2.png) Gold Standard 5版{#gs-5}
 
@@ -131,7 +131,7 @@ _2019年9月19日_
 * 修复了在使用Salesforce的CRM连接器时的问题。 (NEO-17712)
 * 修复了在发送事务性消息时可能导致性能问题的索引问题。
 
-## ![](assets/do-not-localize/red_2.png) 版本19.1.4 —— 内部版本9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/red_2.png) 版本 19.1.4 - 版本 9032{#release-19-1-4-build-9032}
 
 _2019年8月13日_
 
