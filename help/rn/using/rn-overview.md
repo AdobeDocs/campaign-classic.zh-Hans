@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 27a72257904ff356b1a341c29f9a1ab3ccb20dd2
+source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -35,9 +35,9 @@ Adobe Campaign会定期更新。 平均每年发布两、三个次要版本，�
 
 ![](assets/do-not-localize/green3.png) **一般可用性** -提供最新的稳定版本。 在生产中验证构建。
 
-最 **后一个稳定的版** 本是金标6。 单击此 [处](../../rn/using/gold-standard.md)
+最 **后一个稳定的版** 本是金标6。 单击 [此处](../../rn/using/gold-standard.md)
 
-![](assets/do-not-localize/limited.png) **有限可用性** -当前在生产验证中构建。 仅限按需部署。
+![](assets/do-not-localize/limited3.png) **有限可用性** -当前在生产验证中构建。 仅限按需部署。
 
 ![](assets/do-not-localize/blue3.png) **Release Candidate** —— 由Adobe验证生成。 等待生产校样。
 
@@ -49,13 +49,13 @@ Adobe Campaign会定期更新。 平均每年发布两、三个次要版本，�
 
 作为托管客户（托管服务或混合），您需要联系客户关怀团队以升级环境。
 
-作为金标用户，您无需采取任何操作，即可通过最新稳定版本自动从金标升级中受益。 [了解更多](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
+作为金标用户，您无需采取任何操作，即可通过最新稳定版本自动从金标升级中受益。 [了解详情](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
 
-作为预置型用户，您可以执行升级。 为此，您需要下载最 [新的稳定版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) ，并升级所有环境。 了解有关升级过程 [的更多信息](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)，并参阅构建 [升级常见问题解答](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html)。
+作为预置型用户，您可以执行升级。 为此，您需要下载最 [新的稳定版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) ，并升级所有环境。 了解有关升级过程 [的更多信息](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)，并参阅构建 [升级常见问题解答](https://helpx.adobe.com/cn/campaign/kb/build-upgrade-faq.html)。
 
 ## 建议{#recommendations}
 
-为确保配置稳定，我们建议您在同一客户机配置上运行的所有服务器上安装相同的稳定版本。
+为确保配置稳定，建议您在同一客户机配置上运行的所有服务器上安装相同的稳定版本。
 
 为了使您的实施保持最新，请确保在每个新版本中 [阅读已弃用和已删除的功能](../../rn/using/deprecated-features.md)[和兼容性](../../rn/using/compatibility-matrix.md) 表页面。
 
@@ -69,6 +69,6 @@ Adobe Campaign会定期更新。 平均每年发布两、三个次要版本，�
 * [控制面板版本](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)
 * [文档更新](../../rn/using/documentation-updates.md)
 * [先前版本](../../rn/using/release--20-1.md)
-* [弃用功能](../../rn/using/deprecated-features.md)
+* [已弃用的功能](../../rn/using/deprecated-features.md)
 * [兼容性矩阵](../../rn/using/compatibility-matrix.md)
 
