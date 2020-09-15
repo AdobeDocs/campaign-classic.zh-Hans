@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
+source-git-commit: 9357be26b1bc436b19861faa2a43ec6a17cb5b3c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1344'
+ht-degree: 6%
 
 ---
 
@@ -107,7 +107,7 @@ _2020年2月17日_
 
 * 改进了查询性能，这些性能可能会受到不必要的数据库连接的影响。
 
-* 改进了数据库更新向导的性能。
+* 改进了数据库更新向导的性能，以减少SQL语句的数量，从而优化响应时间。
 
 * 数据库记录管理得到了增强。
 
@@ -183,7 +183,7 @@ _2020年2月17日_
 
 * 修复了在工作流中使用活动联合数据访问作为模式来删除、插 **入或更新大量数据** ，时出现的问题。 (NEO-13280)
 
-* 修复了在标记外使用“if”语句时无法发送电子邮件的问 `body` 题。 (NEO-18628)
+* 修复了在HTML内容标记外存在Javascript代码时无法发送电子邮件的问题。 (NEO-18628)
 
 * 修复了在尝试显示来自已发送消息的投放日志的镜像页面时发生的问题。 (NEO-17976)
 
