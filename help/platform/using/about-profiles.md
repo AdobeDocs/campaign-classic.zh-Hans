@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+source-git-commit: 762a6ba3fdad9c30407bf807f2cd8076796f98c2
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 64%
+source-wordcount: '944'
+ht-degree: 62%
 
 ---
 
@@ -97,6 +97,12 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 使用中的用户档案是指可计费开立账单的用户档案。
 
+>[!NOTE]
+>
+>如果您托管在AWS上，并使用构建8931中的Campaign Classic，您还可以直接从控制面板监视实例上使用的活动用户档案数。 For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>
+>请注意，活动用户档案计数仅适 **用于Marketing** 实例。 它不适用于执行实例，即MID（中间采购）和RT（消息中心／实时消息）实例。
+
 “**用户档案**”是指代表最终客户或潜在客户的信息记录（例如 nmsRecipient 表或外部表中的记录，包含 cookie ID、客户 ID、移动标识符或与特定渠道相关的其他信息）。
 
 计费账单的开立仅会考虑&#x200B;**使用中**&#x200B;的用户档案。如果用户档案在过去 12 个月通过任何渠道被定位或进行了传输，则该用户档案被视为使用中。
@@ -108,8 +114,6 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 >Facebook 和 Twitter 渠道不包含在內。
 
 您可以从“Campaign Standard”菜 **[!UICONTROL Number of active profiles]** 单获得概 **[!UICONTROL Administration > Campaign Management > Customer metrics]** 述。 The actual count is performed by the **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technical workflow](../../workflow/using/deliveries.md), which runs every day and adds the new data to the existing report for the current period in the **[!UICONTROL Customer metrics]** menu. 每个时段的时长均为 12 个月。
-
-如果您托管在AWS上，并使用构建8931中的Campaign Classic，您还可以直接从控制面板监视实例上使用的活动用户档案数。 For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 ## 如何创建和管理用户档案 {#create-profiles-video}
 
