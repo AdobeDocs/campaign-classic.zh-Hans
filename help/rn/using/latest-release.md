@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2bd946fc0e5b206280a7946e0cbc6fa6d1be90f2
+source-git-commit: ab9d2c2e80ba09b5a2cceadb49c06ff13989da0f
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 76%
@@ -48,7 +48,8 @@ _2020年7月22日_
 * 修复了导致电子邮件镜像页面中错误定义投放URL的问题（由于ASCII字符控制不当）。 (NEO-26084)
 * 修复了防网络钓鱼服务中的URL管理编码问题。 (NEO-25283)
 * 修复了在个性化参数（带磅签名的锚点标记）中使用片段跟踪URL时无法正常工作的问题。 (NEO-25774)
-* 修复了使用特定自定义跟踪公式时的跟踪问题。 (NEO-25277)修复了导致跟踪“通知单击”无法工作的问题（iOS和Android推送通知）。 (NEO-25965)
+* 修复了使用特定自定义跟踪公式时的跟踪问题。 (NEO-25277)
+* 修复了导致跟踪“通知单击”无法正常工作的问题（iOS和Android推送通知）。 (NEO-25965)
 * 修复了影响工作流中计算字段的回归，导致工作流失败。 (NEO-25194)
 * 修复了导致动态创建Web跟踪URL无法正常工作的回归问题。 (NEO-20999)
 * 修复了现成投放报告的回归问题，该问题在导出到PDF时显示被截断。 (NEO-25757)
