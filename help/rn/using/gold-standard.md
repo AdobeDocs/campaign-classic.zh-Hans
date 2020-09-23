@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
+source-git-commit: 7f7b53f0a7ec0f50bf3a99314606272b8ebdc8d7
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 14%
@@ -35,7 +35,7 @@ ht-degree: 14%
 
 有关Gold Standard升级的详细信息，请参阅本 [文](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
 
-## ![](assets/do-not-localize/limited_2.png) 金标10版{#gs-10}
+## ![](assets/do-not-localize/green_2.png) 金标10版{#gs-10}
 
 _2020年7月7日_
 
@@ -88,7 +88,7 @@ _2020年4月29日_
 * 修复了导致清理工作流崩溃的回归。
 * 修复了清理工作流日志中的次要回归。
 
-## ![](assets/do-not-localize/green_2.png) 金标6版{#gs-6}
+## ![](assets/do-not-localize/orange_2.png) 金标6版{#gs-6}
 
 _2020年3月9日_
 
