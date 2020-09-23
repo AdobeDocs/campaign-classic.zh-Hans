@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
+source-git-commit: 7f7b53f0a7ec0f50bf3a99314606272b8ebdc8d7
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 6%
@@ -35,7 +35,7 @@ Adobe Campaign会定期更新。 平均每年发布两、三个次要版本，�
 
 ![](assets/do-not-localize/green3.png) **一般可用性** -提供最新的稳定版本。 在生产中验证构建。
 
-最 **后一个稳定的版** 本是金标6。 单击 [此处](../../rn/using/gold-standard.md)
+最后 **一个稳定的版本** 是金标10。 单击 [此处](../../rn/using/gold-standard.md#gs-10)
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** -当前在生产验证中构建。 仅限按需部署。
 
@@ -49,7 +49,7 @@ Adobe Campaign会定期更新。 平均每年发布两、三个次要版本，�
 
 作为托管客户（托管服务或混合），您需要联系客户关怀团队以升级环境。
 
-作为金标用户，您无需采取任何操作，即可通过最新稳定版本自动从金标升级中受益。 [了解详情](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
+作为金标用户，您无需采取任何操作，即可通过最新稳定版本自动从金标升级中受益。 [了解详情](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-10)
 
 作为预置型用户，您可以执行升级。 为此，您需要下载最 [新的稳定版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) ，并升级所有环境。 了解有关升级过程 [的更多信息](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)，并参阅构建 [升级常见问题解答](https://helpx.adobe.com/cn/campaign/kb/build-upgrade-faq.html)。
 
