@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 71aeeda3edafc64dbe696ce6f344b8b0ccdc43d1
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 0%
+source-wordcount: '212'
+ht-degree: 4%
 
 ---
 
@@ -26,6 +26,10 @@ ht-degree: 0%
 # 模板取消发布{#template-unpublication}
 
 在执行实例上发布消息模板后，即可取消发布该消息模板。
+
+>[!NOTE]
+>
+>此功能可从活动20.2版开始使用。
 
 事实上，仍可以调用已发布的模板。 因此，如果您不再使用消息模板，建议取消发布该模板。 这是为了避免误发送不需要的事务性消息。 例如，您发布了仅用于圣诞节活动的消息模板。 在圣诞节结束后，您可能希望取消发布它，并在明年再次发布它。
 
