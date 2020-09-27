@@ -1,7 +1,7 @@
 ---
 title: 设计营销活动
 seo-title: 设计营销活动
-description: 设计营销活动
+description: 定义、优化、执行和分析营销活动。
 seo-description: null
 page-status-flag: never-activated
 uuid: e0fd5df6-7516-4ca6-bbdf-243a264d0283
@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 4%
+source-wordcount: '420'
+ht-degree: 6%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 Adobe Campaign使您能够定义、优化、执行和分析通信和营销活动。 Adobe Campaign就像营销战略的统一订单和执行中心。 有关此内容的详细信息，请参 [阅访问活动](../../campaign/using/accessing-campaigns.md)[和设置营销活动](../../campaign/using/setting-up-marketing-campaigns.md)。
 
-此外，营销资源管 **理(MRM)模块还允许您** ，通过提供对相关任务、预算和营销资源的全面管理和实时跟踪，以协作模式控制营销活动。 营销资源管理允许您优化和规范对内部和外部流程、资源和营销活动以及第三方关系（代理、打印机等）的管理。 有关更多信息，请参阅[此章节](../../campaign/using/about-marketing-resource-management.md)。
+此外，营销资源管 **理(MRM)模块还允许您** ，通过提供对相关任务、预算和营销资源的全面管理和实时跟踪，以协作模式控制营销活动。 营销资源管理允许您优化和规范对内部和外部流程、资源和营销活动以及第三方关系（代理、打印机等）的管理。 如需详细信息，请参阅[此部分](../../campaign/using/about-marketing-resource-management.md)。
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Adobe Campaign使您能够定义、优化、执行和分析通信和营销活动
 
 需要在活动环境中了解以下概念：
 
-* **营销策划**
+* **营销活动**
 
    活动集中处理与营销活动相关的所有元素：投放、定位规则、成本、导出文件、相关文档等。 每个活动都与一个项目相连。
 
@@ -58,7 +58,7 @@ Adobe Campaign使您能够定义、优化、执行和分析通信和营销活动
 
    活动工作流包含与所有工作流相同的活动，但特定于活动。 它允许您为所有可用投放创建和配置渠道。
 
-   有关更多信息，请参阅[此章节](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。
+   如需详细信息，请参阅[此部分](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。
 
 * **目标**
 
