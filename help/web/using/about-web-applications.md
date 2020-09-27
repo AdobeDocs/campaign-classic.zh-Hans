@@ -1,8 +1,6 @@
 ---
-title: 关于Web应用程序
-seo-title: 关于Web应用程序
-description: 关于Web应用程序
-seo-description: null
+title: 关于 Web 应用程序
+description: 创建和共享动态Web 应用程序、登陆页和调查。
 page-status-flag: never-activated
 uuid: acfa6e5e-b503-4a1a-871e-e70007874f57
 contentOwner: sauviat
@@ -15,15 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1667dd0c8a38db0e554c59062cbcc5b6c6d992bb
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 1%
+source-wordcount: '687'
+ht-degree: 19%
 
 ---
 
 
-# 关于Web应用程序{#about-web-applications}
+# 开始使用Web应用程序{#about-web-applications}
 
 Adobe Campaign允许您使用来自Web 应用程序库的数据和根据连接用户权限调整的内容创建和发布动态的交互式数据。
 
@@ -37,7 +35,7 @@ Adobe Campaign允许您使用来自Web 应用程序库的数据和根据连接�
 
 >[!NOTE]
 >
->请参阅安 [全和隐私检查表](https://helpx.adobe.com/campaign/kb/acc-security.html) ，了解如何优化Web应用程序的安全性。
+>请参阅安 [全和隐私检查表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html) ，了解如何优化Web应用程序的安全性。
 
 >[!CAUTION]
 >
@@ -47,23 +45,23 @@ Adobe Campaign允许您使用来自Web 应用程序库的数据和根据连接�
 
 Adobe Campaign中的Web 应用程序可访问以下功能：
 
-* 创建多页表单。 For more on this, refer to this [page](../../web/using/about-web-forms.md).
-* 借助集成的翻译工具实现多语言调查管理。 For more on this, refer to this [page](../../web/using/translating-a-web-application.md).
-* 图形页面管理界面，多列页面布局。 For more on this, refer to this [page](../../web/using/designing-a-web-application.md).
-* 呈现个性化和现场定位。 For more on this, refer to this [page](../../web/using/editing-content.md#adding-personalization-content).
-* 根据答案条件显示调查字段。 For more on this, refer to this [page](../../web/using/form-rendering.md#defining-fields-conditional-display).
-* 随机显示问题。 For more on this, refer to this [page](../../web/using/building-a-survey.md#adding-questions).
-* 条件页面显示。 For more on this, refer to this [page](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
-* 验证前的信息检查取决于预期的数据类型（编号、电子邮件地址、日期等） 和必填字段。 For more on this, refer to this [page](../../web/using/form-rendering.md#defining-control-settings).
-* 电子邮件邀请或通知。 For more on this, refer to this [page](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
-* 个性化错误和结束消息。 For more on this, refer to this [page](../../web/using/defining-web-forms-properties.md#setting-up-an-error-page).
-* 使用图像、视频、超文本链接、captcha等 For more on this, refer to this [page](../../web/using/editing-content.md).
-* 实时监控响应。 For more on this, refer to this [page](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
+* 创建多页表单。 有关详细信息，请参见此 [ 页面](../../web/using/about-web-forms.md)。
+* 借助集成的翻译工具实现多语言调查管理。 有关详细信息，请参见此 [ 页面](../../web/using/translating-a-web-application.md)。
+* 图形页面管理界面，多列页面布局。 有关详细信息，请参见此 [ 页面](../../web/using/designing-a-web-application.md)。
+* 呈现个性化和现场定位。 有关详细信息，请参见此 [ 页面](../../web/using/editing-content.md#adding-personalization-content)。
+* 根据答案条件显示调查字段。 有关详细信息，请参见此 [ 页面](../../web/using/form-rendering.md#defining-fields-conditional-display)。
+* 随机显示问题。 有关详细信息，请参见此 [ 页面](../../web/using/building-a-survey.md#adding-questions)。
+* 条件页面显示。 有关详细信息，请参见此 [ 页面](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display)。
+* 验证前的信息检查取决于预期的数据类型（编号、电子邮件地址、日期等） 和必填字段。 有关详细信息，请参见此 [ 页面](../../web/using/form-rendering.md#defining-control-settings)。
+* 电子邮件邀请或通知。 有关详细信息，请参见此 [ 页面](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email)。
+* 个性化错误和结束消息。 有关详细信息，请参见此 [ 页面](../../web/using/defining-web-forms-properties.md#setting-up-an-error-page)。
+* 使用图像、视频、超文本链接、captcha等 有关详细信息，请参见此 [ 页面](../../web/using/editing-content.md)。
+* 实时监控响应。 有关详细信息，请参见此 [ 页面](../../web/using/publish--track-and-use-collected-data.md#response-tracking)。
 
 可选的 **调查** 创建模块优惠以下附加功能：
 
-* 数据库的动态扩展： 创建未包含在初始数据模板中的响应。 For more on this, refer to this [page](../../web/using/managing-answers.md#storing-collected-answers).
-* 生成专用报告。 For more on this, refer to this [page](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* 数据库的动态扩展：创建未包含在初始数据模板中的响应。 有关详细信息，请参见此 [ 页面](../../web/using/managing-answers.md#storing-collected-answers)。
+* 生成专用报告。 有关详细信息，请参见此 [ 页面](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys)。
 
 与Web 应用程序相比，调查具有简化的图形界面，并减少了编辑控件的数量。
 
@@ -79,7 +77,7 @@ Adobe Campaign中的Web 应用程序可访问以下功能：
 
 1. 创建内容(字段、列表、表、图形等)。
 
-   您还可以视图详细介绍表单可用字段的部分： 所有这些字段也适用于Web 应用程序。 此信息在此页 [面中可用](../../web/using/adding-fields-to-a-web-form.md)。
+   您还可以视图详细介绍表单可用字段的部分：所有这些字段也适用于Web 应用程序。 此信息在此页 [面中可用](../../web/using/adding-fields-to-a-web-form.md)。
 
 1. 根据需要，您可以添加预加载、测试和保存步骤，并配置访问控制系统（主要在外部网出版物的框架内）。
 1. 发布Web 应用程序以在外部网或Adobe Campaign中提供。
@@ -90,8 +88,8 @@ Web 应用程序通过选项卡 **[!UICONTROL Web Applications]** 和选项卡�
 
 Web 应用程序存储在 **[!UICONTROL Resources > Online > Web Applications]** Adobe Campaign树的节点中。 配置在以下文件夹中进行划分：
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**: 包含Web表单演示文稿(应用程序和调查)的渲染模板。 模板允许您生成表单。 它还使用CSS样式表。 此样式表在模板级别可能会过载。 有关详细信息，请参见[此页面](../../web/using/form-rendering.md#selecting-the-form-rendering-template)。
-* **[!UICONTROL Resources > Templates > Web application templates]**: 包含表单模板。 要创建表单或Web 应用程序，您必须从模板进行开始。
+* **[!UICONTROL Administration > Configuration > Form renderings]**:包含Web表单演示文稿(应用程序和调查)的渲染模板。 模板允许您生成表单。 它还使用CSS样式表。 此样式表在模板级别可能会过载。 有关详细信息，请参见[此页面](../../web/using/form-rendering.md#selecting-the-form-rendering-template)。
+* **[!UICONTROL Resources > Templates > Web application templates]**:包含表单模板。 要创建表单或Web 应用程序，您必须从模板进行开始。
 
 ## Web 应用程序模板 {#web-application-templates}
 
@@ -99,7 +97,7 @@ Web 应用程序存储在 **[!UICONTROL Resources > Online > Web Applications]**
 
 >[!NOTE]
 >
->您可以将现有Web 应用程序转换为模板。 为此，请选择表单并右键单击。 Select **[!UICONTROL Actions > Save as template...]**.
+>您可以将现有Web 应用程序转换为模板。 为此，请选择表单并右键单击。 选择 **[!UICONTROL Actions > Save as template...]**。
 
 您可以通过Adobe Campaign树的 **[!UICONTROL Resources > Templates > Web Application templates]** 节点创建新模板。
 
@@ -109,5 +107,5 @@ Web 应用程序存储在 **[!UICONTROL Resources > Online > Web Applications]**
 
 >[!CAUTION]
 >
->可用的应用程序取决于您的选项和模块。 请检查您的许可协议。
+>可用的应用程序取决于您的选项和模块。 请核实您的许可协议。
 
