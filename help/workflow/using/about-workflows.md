@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 700cd82d87eccf6579afab5c9e8f7945807817da
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 16%
@@ -82,5 +82,5 @@ Adobe Campaign使用工作流来：
 * 了解如何在本节的工作流中使用 [导入活动](../../workflow/using/importing-data.md)。
 * 本页详细介绍了工作流 [程最佳实践](../../workflow/using/workflow-best-practices.md)。
 * 在本节中查找有关工作流执 [行的指导](../../workflow/using/starting-a-workflow.md)。
-* 了解如何在本页中监 [视工作流](../../workflow/using/monitoring-workflow-execution)。
+* 了解如何在本页中监 [视工作流](../../workflow/using/monitoring-workflow-execution.md)。
 * 了解如何授予用户在本页中使用工作流 [的权限](../../workflow/using/managing-rights.md)。
