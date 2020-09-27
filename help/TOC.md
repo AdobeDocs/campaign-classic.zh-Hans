@@ -9,10 +9,10 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 5e765777d79df28ae306d02512851b1b3f49018d
+source-git-commit: 546c8f14006e333bb81aa52a008e9f1dfa79f03b
 workflow-type: tm+mt
-source-wordcount: '2109'
-ht-degree: 95%
+source-wordcount: '2119'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 95%
       + [兼容性矩阵](rn/using/compatibility-matrix.md)
 + 快速入门{#getting-started}
    + 开始使用 Adobe Campaign {#starting-with-adobe-campaign}
-      + [关于 Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
+      + [开始使用Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [隐私和同意](platform/using/privacy-and-recommendations.md)
       + [启动 Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Adobe Campaign 工作区](platform/using/adobe-campaign-workspace.md)
@@ -266,7 +266,7 @@ ht-degree: 95%
       + [用例：显示在线调查的答案报告](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + 设计 Web 内容 {#designing-content}
    + Web 应用程序 {#web-applications}
-      + [关于 Web 应用程序](web/using/about-web-applications.md)
+      + [开始使用Web应用程序](web/using/about-web-applications.md)
       + [创建新 Web 应用程序](web/using/creating-a-new-web-application.md)
       + [设计 Web 应用程序](web/using/designing-a-web-application.md)
       + [用例：创建概述](web/using/use-cases--creating-overviews.md)
@@ -342,7 +342,7 @@ ht-degree: 95%
       + [管道故障排除](integrations/using/pipeline-troubleshooting.md)
 + 通过工作流实现自动化 {#automating-with-workflows}
    + 简介 {#introduction}
-      + [关于工作流](workflow/using/about-workflows.md)
+      + [开始使用工作流](workflow/using/about-workflows.md)
       + [关于活动](workflow/using/about-activities.md)
    + 一般操作 {#general-operation}
       + [构建工作流](workflow/using/building-a-workflow.md)
@@ -478,7 +478,7 @@ ht-degree: 95%
       + [传输到中间源](workflow/using/transfer-to-mid-sourcing.md)
       + [中间源平台](workflow/using/mid-sourcing-platform.md)
 + 管理优惠 {#managing-offers}
-   + 互动概述 {#interaction-overview}
+   + 交互入门 {#interaction-overview}
       + [互动和优惠管理](interaction/using/interaction-and-offer-management.md)
       + [词汇表](interaction/using/glossary.md)
       + [互动最佳实践](interaction/using/interaction-best-practices.md)
@@ -530,7 +530,7 @@ ht-degree: 95%
       + [出站渠道优惠](interaction/using/offers-on-an-outbound-channel.md)
 + 交易消息传递 {#transactional-messaging}
    + 简介 {#introduction}
-      + [关于交易消息传递](message-center/using/about-transactional-messaging.md)
+      + [交易消息处理入门](message-center/using/about-transactional-messaging.md)
       + [交易消息架构](message-center/using/transactional-messaging-architecture.md)
       + [事件描述](message-center/using/event-description.md)
    + 实例配置 {#instance-configuration}
