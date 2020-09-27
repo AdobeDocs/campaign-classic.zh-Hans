@@ -1,8 +1,6 @@
 ---
 title: 一般架构
-seo-title: 一般架构
-description: 一般架构
-seo-description: null
+description: 了解如何安装和配置Campaign Classic。
 page-status-flag: never-activated
 uuid: 686bc660-2403-4bab-a4ea-9b872adf8fa0
 contentOwner: sauviat
@@ -15,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -43,21 +41,21 @@ Adobe Campaign基于面向服务的体系结构(SOA)，并包含多个功能模�
 
 >[!NOTE]
 >
->作为软件供应商，我们指定兼容的硬件和软件基础架构。 此处提供的硬件建议仅供参考，并基于我们的经验。 Adobe不对根据这些决定作出的任何决定负责。 它还取决于您的业务规则和做法，以及项目的关键程度和所需的性能级别。
+>作为软件供应商，我们指定兼容的硬件和软件基础架构。 此处提供的硬件建议仅供参考，并基于我们的经验。 Adobe对根据这些决定作出的任何决定概不负责。 它还取决于您的业务规则和做法，以及项目的关键程度和所需的性能级别。
 
 ![](assets/s_ncs_install_architecture.png)
 
 >[!CAUTION]
 >
->如果未明确说明，Adobe Campaign平台的所有组件上的安装、更新和维护由托管这些组件的计算机管理员负责。 这包括实现Adobe Campaign应用程序的先决条件，以及遵守组件 [之间的兼容性](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) 矩阵。
+>如果未明确说明，Adobe Campaign平台的所有组件上的安装、更新和维护由托管这些组件的计算机管理员负责。 这包括实现Adobe Campaign应用程序的先决条件，并遵守组件 [之间的兼容性](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html) 矩阵。
 
 ## 表示层 {#presentation-layer}
 
-根据用户的需要，可以通过不同的方式访问应用程序： 富客户端、瘦客户端或API集成。
+根据用户的需要，可以通过不同的方式访问应用程序：富客户端、瘦客户端或API集成。
 
-* **富客户端**: 应用程序的主用户界面是一个富客户端，换言之，是一个与Adobe Campaign应用程序服务器仅通过标准Internet协议（SOAP、HTTP等）通信的本机应用程序(Windows)。 此控制台为工作效率提供了极好的用户友好性，使用很少的带宽（通过使用本地缓存），并且设计为易于部署。 此控制台可以从Internet浏览器进行部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)通信。
-* **瘦客户端**: 应用程序的某些部分可以使用HTML用户界面通过简单的Web浏览器访问，包括报告模块、投放批准阶段、分布式营销模块的功能（中央／本地）、实例监视等。 此模式允许在内部网或外部网中包含Adobe Campaign功能。
-* **通过API进行集成**: 在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。
+* **富客户端**:应用程序的主用户界面是一个富客户端，换言之，是一个与Adobe Campaign应用程序服务器仅通过标准Internet协议（SOAP、HTTP等）通信的本机应用程序(Windows)。 此控制台为工作效率提供了极好的用户友好性，使用很少的带宽（通过使用本地缓存），并且设计为易于部署。 此控制台可以从Internet浏览器进行部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)通信。
+* **瘦客户端**:应用程序的某些部分可以使用HTML用户界面通过简单的Web浏览器访问，包括报告模块、投放批准阶段、分布式营销模块的功能（中央／本地）、实例监视等。 此模式允许在内部网或外部网中包含Adobe Campaign功能。
+* **通过API进行集成**:在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。
 
 ## 逻辑应用层 {#logical-application-layer}
 
@@ -77,9 +75,9 @@ Adobe Campaign依赖于一组可协同工作的服务器端进程。
 
 它还处理定期执行的技术工作流，包括：
 
-* 跟踪： 恢复和整合跟踪日志。 它允许您从重定向服务器检索日志并创建聚合模块使用的报告指示符。
-* 清除： 数据库清理。 用于清除旧记录并避免数据库呈指数级增长。
-* 帐单： 自动发送平台活动报告（数据库大小、营销操作数等）。
+* 跟踪：恢复和整合跟踪日志。 它允许您从重定向服务器检索日志并创建聚合模块使用的报告指示符。
+* 清除：数据库清理。 用于清除旧记录并避免数据库呈指数级增长。
+* 帐单：自动发送平台活动报告（数据库大小、营销操作数等）。
 
 **投放服务器** (nlserver mta)
 
@@ -91,7 +89,7 @@ Adobe Campaign具有本机电子邮件广播功能。 此进程充当SMTP邮件�
 
 对于电子邮件，Adobe Campaign会自动处理打开和点击跟踪（更有可能的是网站级别的事务跟踪）。 为此，重写包含在电子邮件中的URL，以指向此模块，该模块在将Internet用户重定向到所需URL之前注册其通过。
 
-为保证最高可用性，此过程完全独立于数据库： 其他服务器进程仅使用SOAP调用(HTTP、HTTP(S)和XML)与其通信。 技术上，此功能在HTTP服务器的扩展模块（IIS中的ISAPI扩展，或DSO Apache模块等）中实现。 并且仅在Windows中可用。
+为保证最高可用性，此过程完全独立于数据库：其他服务器进程仅使用SOAP调用(HTTP、HTTP(S)和XML)与其通信。 技术上，此功能在HTTP服务器的扩展模块（IIS中的ISAPI扩展，或DSO Apache模块等）中实现。 并且仅在Windows中可用。
 
 还提供其他技术流程：
 
