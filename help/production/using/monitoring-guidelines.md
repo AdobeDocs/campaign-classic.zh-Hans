@@ -1,6 +1,6 @@
 ---
 title: 监控指南
-description: 本节介绍监测Campaign Classic的一般准则。
+description: 了解监控活动实例和流程的准则和最佳实践。
 page-status-flag: never-activated
 uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
 contentOwner: sauviat
@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 3%
+source-wordcount: '712'
+ht-degree: 6%
 
 ---
 
@@ -33,7 +33,7 @@ Campaign Classic **[!UICONTROL Monitoring]** 主页可访问该选项卡，它�
 
 ![](assets/monitoring_tab.png)
 
-## 监控Campaign Classic流程 {#monitoring-campaign-classic-processes}
+## Monitoring Campaign Classic processes {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">监视您的实例</a></p></td>
@@ -64,7 +64,7 @@ Campaign Classic **[!UICONTROL Monitoring]** 主页可访问该选项卡，它�
 >
 >请注意，控制面板仅供管理员用户访问，并且适用于所有使用Adobe Managed Services的客户。
 
-### 监视工作流 {#monitoring-workflows}
+### 监控工作流 {#monitoring-workflows}
 
 <img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
@@ -74,7 +74,7 @@ Workflow HeatMap为实例上运行的所有工作流提供了直观的表示形�
 
 **审核跟踪**
 
-审核跟踪允许您可视化在工作流中所做的所有修改及其当前状态。 [单击此处](../../production/using/audit-trail.md)。
+审核跟踪允许您可视化在工作流中所做的所有修改及其当前状态。 [单击 此处](../../production/using/audit-trail.md).
 
 **工作流疑难解答**
 
@@ -88,15 +88,15 @@ Workflow HeatMap为实例上运行的所有工作流提供了直观的表示形�
 
 在使用工作流时遵循准则和最佳实践有助于提高性能。 有关详细信息，请参阅以下部分：
 * [使用工作流时的最佳实践](../../workflow/using/workflow-best-practices.md)
-* [监视工作流执行](../../workflow/using/monitoring-workflow-execution.md)
+* [监控工作流执行](../../workflow/using/monitoring-workflow-execution.md)
 
-### 监视投放 {#monitoring-deliveries}
+### 监控投放 {#monitoring-deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 **SMTP报告**
 
-SMTP报告按域显示投放统计和SMTP错误。 [了解更多](../../production/using/monitoring-processes.md)
+SMTP报告按域显示投放统计和SMTP错误。 [了解详情](../../production/using/monitoring-processes.md)
 
 **最佳做法**
 
@@ -139,7 +139,7 @@ SMTP报告按域显示投放统计和SMTP错误。 [了解更多](../../producti
 **托管模型和功能**
 
 * [Campaign Classic托管模型](../../installation/using/hosting-models.md)
-* [托管模型功能](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [托管模型功能](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)
 
 **服务器配置**
 
