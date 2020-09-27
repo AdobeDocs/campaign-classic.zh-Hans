@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 700cd82d87eccf6579afab5c9e8f7945807817da
+source-git-commit: 546c8f14006e333bb81aa52a008e9f1dfa79f03b
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 16%
@@ -21,9 +21,9 @@ ht-degree: 16%
 ---
 
 
-# 开始使用工作流{#about-workflows}
+# 开始使用工作流{#gs-workflows}
 
-## 关于工作流
+## 关于工作流{#about-workflows}
 
 Adobe Campaign包括一个工作流模块，它允许您跨应用程序服务器的不同模块精心安排各种流程和任务。 您可以利用这个全面的图形环境设计各式流程，包括部分划分、活动执行、文件处理、人员参与等。工作流引擎会执行并跟踪这些流程。
 
@@ -73,7 +73,7 @@ Adobe Campaign使用工作流来：
 
    在本节中进一步了解工作流数 [据和表](../../workflow/using/how-to-use-workflow-data.md)。
 
-## 主要原则和最佳做法
+## 主要原则和最佳做法{#principles-workflows}
 
 请参阅这些部分，找到指导和最佳实践，让工作流实现流程自动化：
 
