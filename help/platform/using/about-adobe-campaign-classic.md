@@ -1,7 +1,7 @@
 ---
 title: 关于 Adobe Campaign Classic
 seo-title: 关于 Adobe Campaign Classic
-description: 关于 Adobe Campaign Classic
+description: 发现关键功能、用户界面和全局指南。
 seo-description: null
 page-status-flag: never-activated
 uuid: 2d0160fa-8328-4ff9-ab91-56e4058f8a99
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 100%
+source-wordcount: '883'
+ht-degree: 98%
 
 ---
 
 
-# 关于 Adobe Campaign Classic{#about-adobe-campaign-classic}
+# Get Started with Campaign Classic{#about-adobe-campaign-classic}
 
 为了实现高水准的客户交互和优秀的客户体验，企业必须确保客户在所有接触点上的旅程是一致且连续的。现在，营销人员能够高效的设计、计划、执行、管理，并且优化跨渠道营销活动，从而创造更高的市场营销投资回报，并且提高客户忠诚度。
 
