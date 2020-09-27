@@ -1,8 +1,6 @@
 ---
-title: 关于交易消息传递
-seo-title: 关于交易消息传递
-description: 关于交易消息传递
-seo-description: null
+title: 关于事务型消息传递
+description: '根据从信息系统生成的事件发送触发消息。 '
 page-status-flag: never-activated
 uuid: c854daac-8756-44f3-a4e2-be31177ab9d1
 contentOwner: sauviat
@@ -15,17 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 7%
+source-wordcount: '164'
+ht-degree: 3%
 
 ---
 
 
-# 关于交易消息传递{#about-transactional-messaging}
+# 关于事务型消息传递{#about-transactional-messaging}
 
-事务消息（消息中心）是用于管理触发消息的活动模块。 这些消息是从信息系统触发的事件生成的，可以是： 例如，发票、订单确认、发运确认、密码更改、产品不可用性通知、帐户对帐单或网站帐户创建。
+事务消息（消息中心）是用于管理触发消息的活动模块。 这些消息是从信息系统触发的事件生成的，可以是：例如，发票、订单确认、发运确认、密码更改、产品不可用性通知、帐户对帐单或网站帐户创建。
 
 >[!IMPORTANT]
 >
@@ -37,4 +35,4 @@ Adobe Campaign消息中心模块被集成到一个信息系统中，该系统将
 
 >[!NOTE]
 >
->要为托管在Adobe Cloud上的消息中心执行实例创建新用户，您需要联系Adobe客户服务。 消息中心用户是需要专用权限才能访问“实时事件”(nmsRtEvent)文件夹的特定操作员。
+>要为托管在Adobe云上的消息中心执行实例创建新用户，您需要联系Adobe客户服务。 消息中心用户是需要专用权限才能访问“实时事件”(nmsRtEvent)文件夹的特定操作员。
