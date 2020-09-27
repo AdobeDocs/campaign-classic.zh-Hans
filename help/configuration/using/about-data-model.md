@@ -1,6 +1,6 @@
 ---
-title: 关于Adobe Campaign经典数据模型
-description: 本文档介绍Adobe Campaign经典数据模型的基础知识。
+title: 关于Adobe Campaign Classic数据模型
+description: 了解如何扩展活动数据模型、编辑模式、使用API等。
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,19 +13,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 580be39d09bd59770d490945c3ba2b29e12fb3c4
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 0%
+source-wordcount: '971'
+ht-degree: 5%
 
 ---
 
 
-# 关于活动数据模型{#about-data-model}
+# About the Campaign data model{#about-data-model}
 
-本节介绍Adobe Campaign经典数据模型的基础知识，以更好地了解活动内置表及其交互。
+本节介绍Adobe Campaign Classic数据模型的基础知识，以更好地了解活动内置表及其交互。
 
-Adobe Campaign库的概念数据模型由一组内置表及其交互组成。
+Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间的交互组成。
 
 要访问每个表的说明，请转 **[!UICONTROL Admin > Configuration > Data schemas]**&#x200B;到，从列表中选择资源，然后单击选 **[!UICONTROL Documentation]** 项卡。
 
@@ -33,7 +33,7 @@ Adobe Campaign库的概念数据模型由一组内置表及其交互组成。
 
 有关默认Campaign Classic数据模型描述的详细信息，请参 [阅本节](../../configuration/using/data-model-description.md)。
 
-应用中所承载数据的物理和逻辑结构用XML进行描述。 它遵循Adobe Campaign特有的语法，称为模式。 有关Adobe Campaign模式的详细信息，请阅 [读本节](../../configuration/using/about-schema-reference.md)。
+应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循 Adobe Campaign 特有的语法，称为模式。For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
 
 ## 概述 {#data-model-overview}
 
@@ -101,7 +101,7 @@ Adobe Campaign中开箱即用的收件人表为构建数据模型提供了良好
 >
 >扩展数据模型是为高级用户保留的。
 
-## 使用自定义收件人表 {#custom-recipient-table}
+## Using a custom recipient table {#custom-recipient-table}
 
 在设计Adobe Campaign数据模型时，您可 [以使用现成的收件人表](#default-recipient-table)，或者决定创建非标准收件人表来存储您的营销用户档案。
 
@@ -133,4 +133,4 @@ Adobe Campaign中开箱即用的收件人表为构建数据模型提供了良好
 
 >[!IMPORTANT]
 >
->使用自定义收件人表是为高级用户保留的，并受某些限制。 For more on this, see [this section](../../configuration/using/about-custom-recipient-table.md).
+>使用自定义收件人表是为高级用户保留的，并受某些限制。 有关更多信息，请参阅[此章节](../../configuration/using/about-custom-recipient-table.md)。
