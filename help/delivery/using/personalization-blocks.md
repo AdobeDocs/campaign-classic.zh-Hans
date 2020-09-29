@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 811d664807776473790b74c4cb6a672b5ca2bdd8
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 个性化块是动态的、个性化的，并包含可插入投放的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。 请参阅 [插入个性化块](#inserting-personalization-blocks)。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png) 在视频中发 [现此功能](#personalization-blocks-video)
 
 个性化块通过Adobe Campaign资 **[!UICONTROL Resources > Campaign Management > Personalization blocks]** 源管理器的节点访问。 默认情况下，有几个块可 [用(请参阅现成个性化块](#out-of-the-box-personalization-blocks))。
 
