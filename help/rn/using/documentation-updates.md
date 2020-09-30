@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1b76fb1694545f4be02a63e4c670b81db632c5ee
+source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3704'
 ht-degree: 87%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 87%
 已添加注释，以指定“有效用户档案”计数仅适用于Marketing实例。 [阅读更多](../../platform/using/about-profiles.md#active-profiles)
 
 已添加有关模式版本的新示例，以将字段链接到现有引用表。 [阅读更多](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+
+增加了关于在投放中对种子地址使用额外数据的说明。 [阅读更多](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## 2020 年 8 月 {#aug-2020}
 
