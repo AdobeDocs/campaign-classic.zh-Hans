@@ -11,27 +11,27 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 discoiquuid: ad1ce80d-8976-430d-9964-e50d548b2822
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 21%
 
 ---
 
 
 # 访问跟踪日志{#accessing-the-tracking-logs}
 
-发送传送并激活跟踪后，技术工 **[!UICONTROL Tracking]** 作流负责检索跟踪数据。 默认情况下，它以每小时为单位执行。
+当投放被发送并激活跟踪时，技 **[!UICONTROL Tracking]** 术工作流负责检索跟踪数据。 默认情况下，每小时执行一次。
 
-此信息显示在 **[!UICONTROL Tracking]** 由分发定位的收件人配置文件的选项卡中，如下例所示：
+此信息显示在 **[!UICONTROL Tracking]** 用户档案所针对的收件人的选项卡中，如下例所示：
 
 ![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
-也可通过交付的选 **[!UICONTROL Tracking]** 项卡访问它。
+也可通过投放的 **[!UICONTROL Tracking]** 选项卡访问。
 
 ![](assets/s_ncs_user_select_tracking_tab_from_del.png)
 
 >[!NOTE]
 >
->如果看不到交 **[!UICONTROL Tracking]** 付的标签，则表示跟踪尚未激活。 Refer to [this section](../../delivery/using/how-to-configure-tracked-links.md).
+>如果看不到投放 **[!UICONTROL Tracking]** 的选项卡，则表示跟踪尚未激活。 请参阅[此章节](../../delivery/using/how-to-configure-tracked-links.md) 。
