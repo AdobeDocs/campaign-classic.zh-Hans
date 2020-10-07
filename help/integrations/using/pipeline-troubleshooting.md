@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -71,7 +68,7 @@ IMSOrgid配置无效。
 1. 确保进程 [!DNL pipelined] 正在运行。
 1. 在日志中查找 [!DNL pipelined] 错误。
 1. 在状态页面中查 [!DNL pipelined] 找错误。 触发器丢弃，触发器故障应为零。
-1. 检查是否在选项中配置了触发 **[!UICONTROL NmsPipeline_Config]** 器名称。 如有疑问，请使用通配符选项。
+1. 检查是否在选项中配置了触发器 **[!UICONTROL NmsPipeline_Config]** 名称。 如有疑问，请使用通配符选项。
 1. 检查Analytics是否具有活动触发器并正在生成事件。 在Analytics中进行配置后，在激活之前，可能会延迟几个小时。
 
 **事件未与客户关联**
