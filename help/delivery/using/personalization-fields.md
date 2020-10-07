@@ -11,21 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
 
 # 个性化字段{#personalization-fields}
 
-个性化字段用于传递消息内容的一级个性化。 在主内容中插入的字段显示插入选定数据源中数据的位置。
+个性化字段用于投放消息内容的一级个性化。在主内容中插入的字段显示插入选定数据源中数据的位置。
 
 例如，具有&lt;%=收件人.LastName **%>语法的个性化字段** ，会告知Adobe Campaign将收件人的名称插入数据库(收件人表)。
 
@@ -81,7 +78,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >当投放是工作流的一部分时，您可以使用临时工作流表中的数据。 此数据将在菜单中进 **[!UICONTROL Target extension]** 行分组。 有关更多信息，请参阅[此章节](../../workflow/using/data-life-cycle.md#target-data)。
+   >当投放是工作流的一部分时，您可以使用临时工作流表中的数据。 此数据将在菜单中进 **[!UICONTROL Target extension]** 行分组。 如需详细信息，请参阅[此部分](../../workflow/using/data-life-cycle.md#target-data)。
 
 ## 优化个性化 {#optimizing-personalization}
 
@@ -95,7 +92,7 @@ ht-degree: 3%
 
 要使用此选项，请按照以下步骤操作：
 
-1. 创建营销策划. 有关更多信息，请参阅[此章节](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
+1. 创建营销策划. 如需详细信息，请参阅[此部分](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在活动 **[!UICONTROL Targeting and workflows]** 的选项卡中，将查询 **活动** 添加到工作流。 For more on using this activity, refer to [this section](../../workflow/using/query.md).
 1. 向工作 **[!UICONTROL Email delivery]** 流中添加活动并将其打开。 For more on using this activity, refer to [this section](../../workflow/using/delivery.md).
 1. 转到选 **[!UICONTROL Analysis]** 项卡并 **[!UICONTROL Delivery properties]** 选择选 **[!UICONTROL Prepare the personalization data with a workflow]** 项。
