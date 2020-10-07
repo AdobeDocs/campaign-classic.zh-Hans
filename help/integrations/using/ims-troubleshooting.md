@@ -1,7 +1,7 @@
 ---
-title: IMS疑难解答
-seo-title: IMS疑难解答
-description: IMS疑难解答
+title: IMS 疑难解答
+seo-title: IMS 疑难解答
+description: IMS 疑难解答
 seo-description: null
 page-status-flag: never-activated
 uuid: 5db95afc-8cbf-4ec3-b58f-504486fe4a40
@@ -11,28 +11,25 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: e31db11a-ad8e-4fd0-bab7-0df1079231c9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# IMS疑难解答{#ims-troubleshooting}
+# IMS 疑难解答{#ims-troubleshooting}
 
-以下故障排除提示将帮 **助预置型** 客户解决使用IMS集成时出现的最常见问题。 对于 **托管** ，请与Adobe联系。
+以下故障排除提示将帮 **助预置型** 客户解决使用IMS集成时出现的最常见问题。 对于托 **管客户** ，请与Adobe联系。
 
 **外部帐户**
 
 只应有一 **个外部帐户** ，并且设置如下：
 
-* **内部名称**: Adobe_Marketing_Cloud
-* **类型**: Adobe Marketing Cloud
+* **内部名称**:Adobe_Marketing_Cloud
+* **类型**:Adobe Marketing Cloud
 
 删除具有相同设置的任何重复外部帐户。
 
@@ -46,7 +43,7 @@ ht-degree: 0%
 
 **[!UICONTROL IMS Server URL]**
 
-在活动 **Adobe Marketing Cloud** 外部帐户中，检 **[!UICONTROL IMS Server URL]** 查是 [adobeid-na1.services.adobe.com还](https://adobeid-na1.services.adobe.com/) 是ims-na1.adobelogin.com [](http://ims-na1.adobelogin.com/)。 确保舞台和生产实例指向同一IMS生产端点。
+在活动 **Adobe Marketing Cloud** 外部帐户中，检 **[!UICONTROL IMS Server URL]** 查是 [adobeid-na1.services.adobe.com还是ims](https://adobeid-na1.services.adobe.com/) -na1 [.adobelogin.com](http://ims-na1.adobelogin.com/)。 确保舞台和生产实例指向同一IMS生产端点。
 
 **关联掩码**
 
@@ -65,7 +62,7 @@ ht-degree: 0%
 
 **回调URL**
 
-回 **调URL** 应添加到允许列表中，并使用“https://”开始。 检查回 **调URL** 是否已链接到相应实例。 例如，生产实例应重定向到生产URL。
+回 **调URL** 应添加到允许列表和开始中，并带有“https://”。 检查回 **调URL** 是否已链接到相应实例。 例如，生产实例应重定向到生产URL。
 
 **客户端ID和机密**
 
@@ -87,7 +84,7 @@ ht-degree: 0%
 
    请参阅上述步骤以检查和运 **[!UICONTROL Association Mask]** 算符组配置。
 
-* 用户无法访问Adobe ID登录页：
+* 用户无法访问Adobe ID登录页面：
 
    请参阅上述步骤以检查范围配置。
 
