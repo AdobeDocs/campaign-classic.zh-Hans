@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1069b23-e08d-43c5-bbfb-3158ac40dc7e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 005be008585f75a87fb0029a8a88578cfde5ce51
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
@@ -27,11 +24,11 @@ ht-degree: 2%
 
 活动客户端控制台是一个富客户端，它允许您连接到活动应用服务器。
 
-在开始之前，您需要检查活动 [兼容性表](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)，获取活动服务器URL和用户凭据。
+在开始之前，您需要检查活动 [兼容性表](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)，获取活动服务器URL和用户凭据。
 
 >[!CAUTION]
 >
->活动客户端控制台和活动应用服务器必须在同一产品版本上运行。 Adobe还建议使用相同的产品版本。
+>活动客户端控制台和活动应用服务器必须在同一产品版本上运行。 Adobe还建议使用同一产品版本。
 
 ## 下载控制台{#download-the-client-console}
 
@@ -49,7 +46,7 @@ ht-degree: 2%
 
 1. 单击安 **[!UICONTROL Download]** 装页面上的链接。
 1. 下载并保存客户端安装文件。
-1. 在Windows上的计算机上执行下载的文件： 安装开始。 根据Adobe Campaign版本，客户端控制台 **的默认安装路径为$PROGRAMFILES$/Adobe/Adobe Campaign经典vX客户端**，其中“X”为“6”或“7”。
+1. 在Windows上的计算机上执行下载的文件：安装开始。 根据您的Adobe Campaign版本，客户 **端控制台的默认安装路径为$PROGRAMFILES$/Adobe/Adobe Campaign ClassicvX客户端**，其中“X”为“6”或“7”。
 
 >[!NOTE]
 >
@@ -73,9 +70,9 @@ ht-degree: 2%
 
    例如，您可以使用类 [`https://<machine>.<domain>.com`](https://machine) 型URL。
 
-1. 如果为您的组织配置了Adobe IMS，请选中此选项 **[!UICONTROL Connect with an Adobe ID]**
+1. 如果为您的组织配置了AdobeIMS，请选中此选项 **[!UICONTROL Connect with an Adobe ID]**
 
-1. 单击 **[!UICONTROL Ok]** 以保存设置。
+1. Click **[!UICONTROL Ok]** to save your settings.
 
 例如，您可以根据需要添加任意数量的连接以连接到测试、舞台和生产环境。
 
@@ -100,6 +97,6 @@ ht-degree: 2%
 
 **相关主题**
 
-* [创建实例并登录](../../installation/using/creating-an-instance-and-logging-on.md)。
-* [兼容性矩阵](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+* [创建实例并登陆](../../installation/using/creating-an-instance-and-logging-on.md).
+* [兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 * [安装和设置Adobe Campaign客户端](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/install-and-setup-the-adobe-campaign-client.html) （视频）
