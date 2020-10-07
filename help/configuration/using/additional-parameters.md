@@ -11,27 +11,27 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 1b2ae224-8406-4506-b589-6e5f6631e87f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 2%
 
 ---
 
 
 # 其他参数{#additional-parameters}
 
-## 参数的定义 {#definition-of-parameters}
+## 参数定义 {#definition-of-parameters}
 
-您的Adobe Campaign平台提供两个TRANSACTION类型的Web跟踪参数作为标准：
+您的Adobe Campaign平台将两个TRANSACTION类型的Web跟踪参数优惠为标准：
 
 * **amount**:表示交易金额，
-* **文章**:表示事务中的项数。
+* **文章**:表示事务处理中的项数。
 
-这些参数在 **nms:webTrackingLog架构中定义** ，是报告中看到的一些指示符。
+这些参数在nms:webTrackingLog **模式中定义** ，是报告中看到的一些指标。
 
-要定义其他参数，必须扩展此架构。
+要定义其他参数，必须扩展此模式。
 
 **示例**:
 
@@ -47,23 +47,23 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 </srcSchema>
 ```
 
-您可以通过配置跟踪日志列表（分发或收件人）来显示这些参数的值。
+您可以通过配置跟踪日志列表(投放或收件人)来显示这些参数的值。
 
 ## 重定向服务器配置 {#redirection-server-configuration}
 
-在服务器配置中，您可以定义Web跟踪参数要考虑的最大字符数。
+在服务器配置中，您可以定义要考虑到Web跟踪参数的最大字符数。
 
 >[!IMPORTANT]
 >
 >增加要考虑的最大字符数可能会影响平台的Web跟踪性能。
 
-为此，请修改 **serverConf.xml文件中元** 素的webTrackingParamSize **`<trackinglogd>`****属性** 。 此文件保存在Adobe Campaign安 **装目录** 的conf子目录中。
+为此，请修 **改serverConf.xml文** 件中元素 **`<trackinglogd>`** 的webTrackingParamSize属性 **** 。 此文件保存在 **Adobe Campaign** 安装目录的conf子目录中。
 
 **示例**:
 
-默认值为64个字符。 此值允许您考虑 **amount** 和 **article** (&quot;amount=xxxxxxxxx&amp;article=xxxxxxx&quot;)标准参数。
+默认值为64个字符。 此值允许您考虑 **amount****和** article(&quot;amount=xxxxxxxxx&amp;article=xxxxxxxxx&quot;)标准参数。
 
-通过考虑上述扩展架构示例中指示的两个参数（名称大小+值大小），您可以修改配置以考虑100个字符(“amount=xxxxxxxxxxxxx&amp;article=xxxxxxxx&amp;mode=xxxxxxxxxxxxx&amp;code=xxxxx”)。
+通过考虑上述扩展模式示例中指示的两个参数（名称大小+值大小），您可以修改配置以考虑100个字符(&quot;amount=xxxxxxxxxxxx&amp;article=xxxxxxxxx&amp;mode=xxxxxxxxxxxxx&amp;code=xxxxxx&quot;)。
 
 ```
 <trackinglogd args="" autoStart="false" initScript="" maxCreateFileRetry="5" maxLogsSizeOnDiskMb="500"
@@ -75,18 +75,18 @@ webTrackingParamSize="64"/>
 修改配置后，您必须：
 
 * 停止承载重定向模块（Apache、IIS等）的Web服务器，
-* 停止Adobe Campaign服务器：在 **Windows中停止nlserver6** ，在 **Linux中停止/etc/init.d** /nlserver6,
+* 停止Adobe Campaign服务器： **net stop nlserver6在Windows** 中，/etc/init.d **/nlserver6在Linux中停止** ,
 
    >[!NOTE]
    >
-   >从20.1开始，我们建议改用以下命令（对于Linux）:系 **统mctl停止nlserver**
+   >从20.1开始，我们建议改用以下命令（对于Linux）: **systemctl停止nserver**
 
-* 在Linux中，使用 **ipcrm命令删除共享内存段** ,
-* 重新启动Adobe Campaign服务器：在 **Windows中启动nlserver6** ，在 **Linux中启动/etc/init.d/nlserver6** ,
+* 在Linux中，使用ipcrm命令删除共享 **内存** 段，
+* 重新启动Adobe Campaign服务器： **网络开始Windows中的** nlserver6, **/etc/init.d/nlserver6在Linux中的开始** ,
 
    >[!NOTE]
    >
-   >从20.1开始，我们建议改用以下命令（对于Linux）:系 **统mctl启动nlserver**
+   >从20.1开始，我们建议改用以下命令（对于Linux）: **systemctl开始nlserver**
 
 * 重新启动Web服务器。
 
@@ -116,5 +116,5 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->对于Linux，如果增加 **webTrackingParamSize** 或 **** maxSharedLogs参数的大小，则可能需要增加共享内存(SHM)的大小。
+>对于Linux，如果您增加 **webTrackingParamSize** 或 **** maxSharedLogs参数的大小，则可能需要增加共享内存(SHM)的大小。
 
