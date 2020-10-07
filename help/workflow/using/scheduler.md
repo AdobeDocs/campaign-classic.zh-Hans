@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 093dbe8a-494f-4fe7-8614-3bf58486e34c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 23629289ac5da3f9bef01f50c452f7c761a6fa44
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 1%
+ht-degree: 11%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 1%
 
 调度程序 **是** 持续性任务，在计划指定的时间激活其过渡。
 
-该 **[!UICONTROL Scheduler]** 活动应被视为计划开始。 图表中的活动定位规则与活动相同。 **[!UICONTROL Start]** 此活动不得具有入站过渡。
+**[!UICONTROL Scheduler]** 活动应视为排程开始的时间。图表中的活动定向规则与 **[!UICONTROL Start]** 活动相同。此活动不得包含集客过渡。
 
 ## 最佳做法 {#best-practices}
 
