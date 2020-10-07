@@ -9,14 +9,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 6%
+ht-degree: 16%
 
 ---
 
@@ -31,11 +28,11 @@ ht-degree: 6%
 
 除非另有说明，否则支持所有次要版本。
 
-Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于这些第三方系统和工具的特定版本与其各自的创建者达到生命周期终止(EOL),Adobe Campaign将不再与这些版本兼容，并且它们将在后续产品版本中从我们的兼容性矩阵中删除。 请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
+Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于这些第三方系统和工具的特定版本与各自的创建者达到生命周期终止(EOL),Adobe Campaign将不再与这些版本兼容，并且它们将在后续产品版本中从我们的兼容性矩阵中删除。 请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
 
 要了解有关已弃用项目的更多信息，请 [访问此页](../../rn/using/deprecated-features.md)。
 
-## 操作系统{#OperatingSystems}
+## Operating Systems{#OperatingSystems}
 
 <table> 
 <tbody> 
@@ -46,7 +43,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 </td>
 </tr>
 <tr>
-<td>德比安</td>
+<td>Debian</td>
 <td>
 <p>8（64位）</p>
 <p>9（64位）</p>
@@ -71,7 +68,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 </tbody>
 </table>
 
-## Web服务器{#WebServers}
+## Web Servers{#WebServers}
 
 <table>
 <tbody>
@@ -169,7 +166,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <p>2014</p>
 <p>2016</p>
 <p>2017</p>
-<p>警告：当活动服务器在Linux上运行时，不支持将Microsoft SQL Server作为主数据库。 <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">了解更多</a>.</p>
+<p>警告：当活动服务器在Linux上运行时，不支持将Microsoft SQL Server作为主数据库。 <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">了解详情</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -179,7 +176,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 >
 >PostgreSQL是托管环境的默认数据库服务器。
 
-## CRM连接器{#CRMconnectors}
+## CRM connectors{#CRMconnectors}
 
 <table>
 <tbody>
@@ -212,7 +209,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 </tbody>
 </table>
 
-## 联合数据访问(联合数据访问){#FederatedDataAccessFDA}
+## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
 <table>
 <tbody>
@@ -368,8 +365,8 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 
 * [Campaign Classic发行说明](https://docs.adobe.com/content/help/zh-Hans/campaign-classic/using/release-notes/latest-release.html)
 * [安装指南](https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/general-architecture.html)
-* [已弃用的功能和系统](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-* [构建升级过程](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)
-* [Campaign Classic19.0版本的兼容性矩阵](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-0.html)
-* [Campaign Classic19.1版本的兼容性矩阵](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-1.html)
+* [已弃用的功能和系统](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html)
+* [构建升级过程](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)
+* [Campaign Classic19.0版本的兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix-19-0.html)
+* [Campaign Classic19.1版本的兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix-19-1.html)
 
