@@ -9,11 +9,8 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: e53af1c2-b50c-4a8c-b5b8-f23a85bd3211
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+source-git-commit: b04d802ce1041aecbb60aeeabbd35b1d78c2451d
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 0%
@@ -25,7 +22,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->在导入数据时，请记住SFTP存储、存储库和活动用户档案限制。
+>导入数据时，请记住SFTP存储、存储库Adobe Campaign和活动用户档案限制。
 
 ## 如何收集数据 {#how-to-collect-data}
 
@@ -124,7 +121,7 @@ zcat nl6/var/vp/import/filename.gz
 
 * 如果导入的数据与Adobe Campaign中的引用表匹配，则应将其与工作流中的该表协调。 不匹配的记录应被拒绝。
 * 确保导入的数据始终“ **标准化** ”（电子邮件、电话号码、直接邮件地址），并且此标准化是可靠的，并且多年内不会更改。 如果不是这样，某些重复可能会出现在Adobe Campaign库中，而由于不提供进行“模糊”匹配的工具，因此很难管理和删除这些数据。
-* 事务数据应具有合并关键项并与现有数据协调，以避免创建重复。
+* 事务数据应具有合并关键项并与现有数据进行协调，以避免创建重复。
 * **按顺序导入相关文件**。
 
    如果导入由多个相互依赖的文件组成，则工作流应确保以正确的顺序导入文件。 文件失败时，不导入其他文件。
@@ -186,7 +183,7 @@ zcat nl6/var/vp/import/filename.gz
 
    * 添加第二个子集，它选择具有足够数据要插入数据库的未协调记录。 例如：电子邮件地址、名字和姓氏。
 
-      子集按其创建顺序进行处理，这意味着当处理第二个子集时，在第一子集中已经选择数据库中已存在的所有记录。
+      子集按其创建顺序进行处理，这意味着当处理第二个子集时，已存在于数据库中的所有记录都已在第一子集中被选择。
 
       ![](assets/import_template_example3_2.png)
 
@@ -307,6 +304,6 @@ Adobe Campaign允许您导入压缩或加密文件。 在数据加载（文件�
 
 1. 单击 **[!UICONTROL OK]** 以确认活动配置。
 
-1. 您现在可以运行工作流。 一旦执行，您就可以检入已执行解密且已导入文件中数据的工作流日志。
+1. 您现在可以运行工作流。 一旦执行，您就可以检入已执行解密的工作流日志以及已导入文件中的数据。
 
    ![](assets/gpg_run.png)
