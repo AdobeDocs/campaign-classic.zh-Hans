@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 9834638f-a8bb-4969-9f8d-99b8d9fdb1ca
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f8d36b9fca9624500c5273eb73a1702f077dd60c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -130,7 +127,7 @@ ht-degree: 0%
 
       有关此的详细信息，请参 [阅创建实例并登录](../../installation/using/creating-an-instance-and-logging-on.md)。
 
-      或
+      或者
 
    * 使用命令行创建实例：
 
@@ -181,8 +178,8 @@ ht-degree: 0%
 
 1. 按照以下各节中所述的Web服务器集成过程(IIS, Apache)操作：
 
-   * 对于Linux: [集成到Linux的Web服务器](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * 对于Windows: [集成到Windows版Web服务器](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. 开始网站并使用URL测试重定向：https://tracking.campaign.net/r/test。
 
