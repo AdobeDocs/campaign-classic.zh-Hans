@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 3ad38469-8e22-4bfc-8029-5d360f76d6bb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 7%
 
 ---
 
@@ -24,51 +24,51 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 为确保编辑的最佳操作，我们建议遵循以下准则：
 
-* 在Adobe **Campaign中导入HTML页面模板之前** ，请确保在各种浏览器中正确打开和显示该模板。
-* 如果HTML页包含 **JavaScript脚本**，则需要在编辑器外执行 **时不出错** 。
-* 在构建模板时，我们建议向标 **记添加“type** ”属 `<input>` 性。 此信息将由编辑者处理，并帮助用户在配置Web应用程序时将数据库的字段链接到表单的字段。
+* Before **importing an HTML page template** in Adobe Campaign, please make sure the template opens and displays correctly in the various browsers.
+* If the HTML page contains **JavaScript scripts**, they need to execute **without errors** outside of the editor.
+* 在构建模板时，我们建议向标记添加 **&#39;type’** 属性。`<input>`此信息将由编辑者处理，并帮助用户在配置Web 应用程序时将数据库的字段链接到表单的字段。
 
-   模板中的HTML代码示例：
+   模板中的 HTML 代码示例：
 
    ```
    <input id="email" type="email" name="email"/>
    ```
 
-   “ **type”属性** 在界面中以以下形式显示：
+   “ **type”属性** 在接口中以以下形式显示：
 
    ![](assets/dce_sidebar_inputtypechanges.png)
 
-   此网站提供“类型”属性的正 [式列表](https://www.w3schools.com/tags/att_input_type.asp)。
+   此网站提供“类型”属性的 [官方列表](https://www.w3schools.com/tags/att_input_type.asp)。
 
-* 使用DCE模拟结束页面的步骤：
+* 使用数字内容编辑器模拟结束页面的步骤：
 
    ![](assets/dce_enchainement.png)
 
 * 确保页面中只 `<body> </body>` 有一个。
-* 上传CSS或JS文件时，.zip文件中包含的图像不会上传。 因此，不会更新对CSS中存在的这些图像的引用。
+* 上传CSS或JS文件时，.zip文件中包含的图像不会上传。 因此，不更新对CSS中存在的这些图像的引用。
 
 ## 内容编辑器支持的格式 {#content-editor-supported-formats}
 
-数字内容编辑器支持HTML格式：您可以随时切换 **到源** 模式。
+数字内容编辑器支持HTML格式：您可以随时切换 **到** “源”模式。
 
-数字内容编辑器的导入功能可使用以下支持的格式：
+数字内容编辑器的导入函数与以下支持的格式配合使用：
 
-* CSS:.zip文件中的图像不会导入。 不更新对CSS中这些图像的引用。
-* JS:.zip文件中的图像不会导入。 JS中对这些图像的引用不会更新。
+* CSS:.zip文件中的图像未导入。 CSS中对这些图像的引用不会更新。
+* JS:.zip文件中的图像未导入。 JS中对这些图像的引用不会更新。
 * Iframe:链接的页面不会导入。
-* 登录页面和Web应用程序：如果缺 **少表单** 标记，将显示一条警告消息。 消息 `<form> </form>` 正文中必须始终存在一个。
+* 登陆页和Web应用程序：如果缺 **少表** 单标记，则会显示警告。 消息 `<form> </form>` 正文中必须始终存在。
 
-数字内容编辑器还适用于以下支持的代码页：
+该数字内容编辑器还适用于以下支持的代码页：
 
 * iso-8859-1
 * iso-8859-2
 * utf-7
-* utf-8（在使用BOM时建议）
+* utf-8（使用BOM时建议）
 * iso-8859-15
 * us-ascii
 * shift jis
 * iso-2022-jp
-* big-5
+* 大5
 * euc-kr
 * utf-16
 
@@ -84,19 +84,19 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 * **蓝色消息**:与正在编辑的内容相关的信息消息。
 * **黄色消息**:需要代表用户执行操作的警告或错误消息。
 
-### 编辑Web应用程序时的消息列表 {#list-of-messages-when-editing-a-web-application}
+### 列表编辑Web 应用程序时的消息 {#list-of-messages-when-editing-a-web-application}
 
 * HTML内容可正常使用。
-* Web应用程序尚未发布，无法联机访问。
-* Web应用程序处于联机状态，请再次发布以应用任何更改。
-* 页面内容不起作用。 它必须包含HTML表单(`<form>`)
+* Web 应用程序尚未发布，无法联机访问。
+* Web 应用程序处于联机状态，请再次发布以应用任何更改。
+* 页面内容无法正常工作。 它必须包含HTML表单(`<form>`)
 * 没有要配置的输入区域或按钮。
-* 要启用到下一页的过渡，您需要将“下一页”动作链接到当前页面上的按钮或链接。
+* 要启用过渡到下一页，您需要将“下一页”操作链接到当前页面上的按钮或链接。
 
-### 编辑传送时的消息列表 {#list-of-messages-when-editing-a-delivery}
+### 列表编辑投放时的消息 {#list-of-messages-when-editing-a-delivery}
 
-* 交付内容具有功能
-* 没有要配置的字段或个性化基块。
-* 交付内容已准备好，请再次运行分析以应用任何更改。
-* 交付已准备好发送。
+* 投放内容具有功能
+* 没有要配置的字段或个性化块。
+* 投放内容已就绪，请再次运行分析以应用任何更改。
+* 投放已准备好发送。
 
