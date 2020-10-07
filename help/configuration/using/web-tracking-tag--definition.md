@@ -1,7 +1,7 @@
 ---
-title: “网络跟踪标签：定义”
-seo-title: “网络跟踪标签：定义”
-description: “网络跟踪标签：定义”
+title: '"Web 跟踪标记：定义"'
+seo-title: '"Web 跟踪标记：定义"'
+description: '"Web 跟踪标记：定义"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 915ddfd8-ad1b-41ac-96ed-f7fae687c09f
@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: b8996508-7173-4225-95e7-b51209aae1f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3ad288bc983002da82b564e8ab3f4244c6324573
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 5%
 
 ---
 
 
-# Web跟踪标记：定义{#web-tracking-tag-definition}
+# Web 跟踪标记：定义{#web-tracking-tag-definition}
 
-Web跟踪标记只是使用适当的参数构建的URL，通过HTTP查询发送到重定向服务器。
+Web跟踪标签只是使用适当的参数构建的URL，通过HTTP查询发送到重定向服务器。
 
 ## 要发送的数据的格式 {#format-of-the-data-to-be-sent}
 
@@ -30,9 +30,9 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`:`<port>`
 
 >[!NOTE]
 >
->添加到URL的随机数可避免浏览器缓存网页导致的问题。
+>添加到URL的随机数避免了浏览器缓存网页所引起的问题。
 
-下表提供了重定向服务器支持的特殊参数列表。
+下表提供了重定向服务器支持的特殊参数的列表。
 
 <table>
                      <thead>
@@ -51,7 +51,7 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`:`<port>`
                               <p>会话Cookie</p> 
                            </td>
                            <td>
-                              <p>交付标识符和收件人标识符。</p> 
+                              <p>投放标识符和收件人标识符。</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -62,7 +62,7 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`:`<port>`
                               <p>永久Cookie</p> 
                            </td>
                            <td>
-                              <p>收件人标识符（在会话Cookie不存在时有用）。</p> 
+                              <p>收件人标识符（如果缺少会话cookie，则此标识符很有用）。</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -84,7 +84,7 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`:`<port>`
                               <p>URL参数</p> 
                            </td>
                            <td>
-                              <p>如果没有会话Cookie，则使用的传送标识符。 此值将以十六进制表示。
+                              <p>投放标识符，如果没有会话Cookie则使用。 此值以十六进制表示。
                               </p> 
                            </td> 
                         </tr>
@@ -96,7 +96,7 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`:`<port>`
                               <p>URL参数</p> 
                            </td>
                            <td>
-                              <p>用于标识Internet用户的参数。 此参数的格式为“name=value”，其中name是收件人架构的字段。 此参数优先于会话cookie中包含的标识符。
+                              <p>用于标识Internet用户的参数。 此参数的格式为“name=value”，其中name是收件人模式的字段。 此参数优先于会话cookie中包含的标识符。
                               </p> 
                            </td> 
                         </tr> 
@@ -113,26 +113,26 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`:`<port>`
 
    **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
-* 指定字段以查找收件人
+* 指定一个字段以查找收件人
 
    **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
-   帐号为10的收件人将发送到主页。
+   帐号为10的收件人将发送给主页。
 
-* 使用默认交付
+* 使用默认投放
 
    **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
-   收件人将发送到主页。 除非随该查询发送包含传送标识符的会话cookie，否则该信息将以标识符230（数据库16中的e6）存储在传送中。
+   收件人被发送给主页。 此信息将存储在标识符为230(投放库16中为e6)的中，除非与此查询一起发送包含投放标识符的会话cookie。
 
 >[!NOTE]
 >
->通过URL参数发送到重定向服务器的所有值都必须经过URL编码。 在给定的示例中，请注意，字符&#39;=&#39;和&#39;|&#39;分别编码为&#39;%3D&#39;和&#39;%7C&#39;。
+>通过URL参数发送到重定向服务器的所有值都必须进行URL编码。 在给定的示例中，请注意字符“=”和“|”分别编码为“%3D”和“%7C”。
 
 ## 数据传输方法 {#data-transmission-methods}
 
 可以使用以下方法：
 
-* 在要跟踪的网 **页中合并的HTML标****`<img>`** 记的“src”属性中插入URL。
+* 在要跟踪的网 **页中加入** HTML标 **`<img>`** 签的“src”属性中插入URL。
 * 生成要跟踪的网页时直接调用重定向服务器。
 
