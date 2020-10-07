@@ -1,6 +1,6 @@
 ---
-title: 设置Web跟踪
-seo-title: 设置Web跟踪
+title: 设置 Web 跟踪
+seo-title: 设置 Web 跟踪
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -8,14 +8,14 @@ uuid: ece9eba7-1857-4d83-869d-4d2d2e646573
 contentOwner: sauviat
 discoiquuid: b512bc5b-eb08-4038-a279-a9c3b713a7a5
 iscontainer: true
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '14'
+ht-degree: 100%
 
 ---
 
 
-# 设置Web跟踪{#setting-up-web-tracking}
+# 设置 Web 跟踪{#setting-up-web-tracking}
 
