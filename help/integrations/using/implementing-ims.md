@@ -11,20 +11,20 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: 3999577b-0460-4898-a4ec-a7b0e5002065
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '53'
+ht-degree: 0%
 
 ---
 
 
-# 实施IMS{#implementing-ims}
+# Implementing IMS{#implementing-ims}
 
 ## 启用IMS连接 {#enabling-the-ims-connection}
 
-1. 要通过IMS启用连接，请在控 **[!UICONTROL Connect with an Adobe ID]** 制台的连接窗口中选中。
+1. 要启用通过IMS进行连接，请 **[!UICONTROL Connect with an Adobe ID]** 在控制台的连接窗口中选中。
 
    ![](assets/ims_1.png)
 
@@ -34,7 +34,7 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ## 禁用IMS连接 {#disabling-the-ims-connection}
 
-要禁用通过Adobe ID进行连接，请断开连接，单击并取 **[!UICONTROL File > Connections]** 消选中 **[!UICONTROL Connect with an Adobe ID]**。
+要禁用通过Adobe ID进行连接，请断开连接，单 **[!UICONTROL File > Connections]** 击并取消选 **[!UICONTROL Connect with an Adobe ID]**&#x200B;中。
 
 ![](assets/ims_4.png)
 
