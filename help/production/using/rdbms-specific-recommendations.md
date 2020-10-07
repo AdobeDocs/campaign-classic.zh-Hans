@@ -1,7 +1,7 @@
 ---
-title: RDBMS特定建议
-seo-title: RDBMS特定建议
-description: RDBMS特定建议
+title: RDBMS 特定建议
+seo-title: RDBMS 特定建议
+description: RDBMS 特定建议
 seo-description: null
 page-status-flag: never-activated
 uuid: 637c1b5a-0484-4734-a012-eb4ba8036263
@@ -11,19 +11,16 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# RDBMS特定建议{#rdbms-specific-recommendations}
+# RDBMS 特定建议{#rdbms-specific-recommendations}
 
 为了帮助您设置维护计划，本节将列表一些与Adobe Campaign支持的各种RDBMS引擎相适应的建议／最佳实践。 但是，这些只是建议。 根据您的内部流程和限制，您应根据自己的需要调整它们。 数据库管理员负责构建和执行这些计划。
 
@@ -98,11 +95,12 @@ vacuum full nmsdelivery;
 
 >[!NOTE]
 >
->* Adobe建议从较小的表开始： 这样，如果大型表（故障风险最大）上的进程失败，则至少部分维护已完成。
->* Adobe会重新命令添加特定于数据模型的表，这些表可能会受到重要更新的影响。 如果您有大的每日数 **据复制流** ，则NmsRecipient可能会出现这种情况。
+>* Adobe建议从较小的表开始：这样，如果大型表（故障风险最大）上的进程失败，则至少部分维护已完成。
+>* Adobe重新命令添加特定于数据模型的表，该表可能会受到重大更新的影响。 如果您有大的每日数 **据复制流** ，则NmsRecipient可能会出现这种情况。
 >* 真 **空** 和重 **** 新索引命令将锁定表，在执行维护时暂停一些进程。
->* 对于超大的表（通常高于5 Gb）, **完全真空** 可能会变得非常低效，并且需要很长时间。 Adobe不建议将其用于YyyNmsBroadLogXxx **表** 。
+>* 对于超大的表（通常高于5 Gb）, **完全真空** 可能会变得非常低效，并且需要很长时间。 Adobe不建议将其用于 **YyyNmsBroadLogXxx表** 。
 >* 此维护操作可通过Adobe Campaign工作流使用 **[!UICONTROL SQL]** 活动来实现(有关详细信息，请参 [阅本节](../../workflow/using/architecture.md))。 确保计划维护时间较短，不会与备份窗口相冲突。
+
 >
 
 
@@ -387,7 +385,7 @@ function sqlGetMemo(strSql)
    >我们建议至少执行下面所示的维护任务。 您也可以选择统计信息更新任务，但它已由数据库清理工作流执行。
 
 1. 在下拉列表中，选择要运行任务的数据库 **[!UICONTROL Database Check Integrity]** 。
-1. 选择数据库并单击 **[!UICONTROL OK]** ，然后单击 **[!UICONTROL Next]** 。
+1. 选择数据库并单击， **[!UICONTROL OK]** 然后单击 **[!UICONTROL Next]** 。
 1. 配置分配给数据库的最大大小，然后单击 **[!UICONTROL Next]** 。
 
    >[!NOTE]
@@ -419,7 +417,7 @@ function sqlGetMemo(strSql)
 
 1. 完成维护计划后，单击 **[!UICONTROL Close]** 。
 1. 在Microsoft SQL Server资源管理器中，多次单击文 **[!UICONTROL Management > Maintenance Plans]** 件夹。
-1. 选择Adobe Campaign维护计划： 各个步骤在工作流中有详细介绍。
+1. 选择Adobe Campaign维护计划：各个步骤在工作流中有详细介绍。
 
    请注意，已在文件夹中创建了 **[!UICONTROL SQL Server Agent > Jobs]** 对象。 此对象允许您开始维护计划。 在我们的示例中，只有一个对象，因为所有维护任务都是同一计划的一部分。
 
