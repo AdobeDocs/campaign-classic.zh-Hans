@@ -11,19 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 discoiquuid: 0e67d9dd-3ee8-4c06-98a4-3a2c644b6c0a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
 
-# Creating a delivery template{#creating-a-delivery-template}
+# 创建投放模板{#creating-a-delivery-template}
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#delivery-template-video)
 
