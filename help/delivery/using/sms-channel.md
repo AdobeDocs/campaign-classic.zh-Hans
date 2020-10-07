@@ -1,7 +1,7 @@
 ---
-title: SMS渠道
-seo-title: SMS渠道
-description: SMS渠道
+title: SMS 渠道
+seo-title: SMS 渠道
+description: SMS 渠道
 seo-description: null
 page-status-flag: never-activated
 uuid: be6a2abc-ba5c-4363-bf38-cc309ee3a8d9
@@ -11,19 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 discoiquuid: 8b101c0b-3611-4f15-813b-7c0bf54fc48a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2f0bb31f7234289f39a561fa58a23cac0390b465
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3151'
-ht-degree: 2%
+ht-degree: 20%
 
 ---
 
 
-# SMS渠道{#sms-channel}
+# SMS 渠道{#sms-channel}
 
 Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人用户档案必须至少包含移动电话号码。
 
@@ -41,14 +38,14 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
 
 1. 指定连接器和消息类型的外部帐户。
 
-   请注意，从20.2版开始将弃用以下连接器： NetSize、通用SMPP（支持二进制模式的SMPP版本3.4）、Sybase365(SAP SMS 365)、 CLX Communications、Tele2、O2和iOS。 已弃用的功能仍然可用，但不会进一步增强，也不支持。 For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html).
+   请注意，从20.2版开始将弃用以下连接器：NetSize、通用SMPP（支持二进制模式的SMPP版本3.4）、Sybase365(SAP SMS 365)、 CLX Communications、Tele2、O2和iOS。 已弃用的功能仍然可用，但不会进一步增强，也不支持。 有关详细信息，请参见此 [ 页面](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html)。
 
 1. 引用此投放模板的外部帐户。
 
-### 创建SMPP外部帐户 {#creating-an-smpp-external-account}
+### Creating an SMPP external account {#creating-an-smpp-external-account}
 
 要将SMS发送到移动电话，您首先需要创建SMPP外部帐户。
-有关SMS协议和设置的详细信息，请参阅此技 [术说明](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)。
+有关短信协议和设置的更多信息，请参阅此[技术说明](https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html)。
 
 为此请执行以下操作步骤：
 
@@ -64,9 +61,9 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
 
    >[!CAUTION]
    >
-   > 从20.2版开始，已弃用传统连接器，不支持。 我们建议使用连 **[!UICONTROL Extended generic SMPP]** 接器。 有关如何迁移到推荐连接器的详细信息，请参阅本 [页](https://helpx.adobe.com/campaign/kb/sms-connector.html)。
+   > 从20.2版开始，已弃用传统连接器，不支持。 我们建议使用连 **[!UICONTROL Extended generic SMPP]** 接器。 有关如何迁移到推荐连接器的详细信息，请参阅本 [页](https://helpx.adobe.com/cn/campaign/kb/sms-connector.html)。
 
-1. 该 **[!UICONTROL Enable verbose SMPP traces in the log file]** 选项允许您将所有SMPP流量转储到日志文件中。 必须启用此选项才能对连接器进行故障诊断，并与提供者看到的流量进行比较。
+1. The **[!UICONTROL Enable verbose SMPP traces in the log file]** option allows you to dump all SMPP traffic in log files. 必须启用此选项才能对连接器进行故障诊断，并与提供商的通信记录进行对比。
 
 1. 联系您的SMS服务提供商，他们将向您说明如何从选项卡中填写不同的外部帐户 **[!UICONTROL Connection settings]** 字段。
 
@@ -76,33 +73,33 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
 
 1. 默认情况下，SMS中的字符数符合GSM标准。
 
-   使用GSM编码的SMS消息限于160个字符，或对于多个部分发送的消息，每个SMS限制153个字符。
+   使用 GSM 编码的短信消息长度上限为 160 个字符，而对于分段发送的消息，每段短信的长度上限为 153 个字符。
 
    >[!NOTE]
    >
-   >某些字符计为两个（大括号、方括号、欧元符号等）。
+   >某些字符会被计为两个字符（大括号、方括号、欧元符号等）。
    >
    >可用GSM字符的列表如下。
 
-   如果您喜欢，可通过选中相应的框来授权字符音译。
+   如果需要，您可通过勾选对应的方框来授权字符音译。
 
    ![](assets/extended_smpp_transliteration.png)
 
    如需详细信息，请参阅[此部分](#about-character-transliteration)。
 
-1. 在选 **[!UICONTROL Throughput and delays]** 项卡中，可以指定每秒MT的出站消息的最大吞吐量（“MT”，已终止移动设备）。 如果在相应字段中输入“0”，吞吐量将无限制。
+1. In the **[!UICONTROL Throughput and delays]** tab, you can specify the maximum throughput of outbound messages (&quot;MT&quot;, Mobile Terminated) in MT per second. 如果在对应的字段中输入“0”，则吞吐量将没有限制。
 
-   需要以秒完成与持续时间对应的所有字段的值。
+   对应于持续时间的所有字段值，都必须填写以秒为单位的值。
 
 1. 在选项卡 **[!UICONTROL Mapping of encodings]** 中，您可以定义编码。
 
    如需详细信息，请参阅[此部分](#about-text-encodings)。
 
-1. 在选项 **[!UICONTROL SMSC specificities]** 卡中，该选 **[!UICONTROL Send full phone number]** 项默认处于禁用状态。 如果要遵守SMPP协议并仅将数字传输到SMS提供者(SMSC)的服务器，请不要启用它。
+1. 在选项 **[!UICONTROL SMSC specificities]** 卡中，该 **[!UICONTROL Send full phone number]** 选项默认处于禁用状态。 如果要遵守SMPP协议并仅将数字传输到SMS提供者(SMSC)的服务器，请不要启用它。
 
    但是，鉴于某些提供者需要使用“+”前缀，建议您与提供者进行核对，他们将建议在必要时启用此选项。
 
-   通过 **[!UICONTROL Enable TLS over SMPP]** 此复选框可加密SMPP通信。 有关此的详细信息，请参阅此 [技术说明](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)。
+   The **[!UICONTROL Enable TLS over SMPP]** checkbox allows you to encrypt SMPP traffic. For more on this, refer to this [technical note](https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html).
 
 1. 如果要配置连接 **[!UICONTROL Extended generic SMPP]** 器，则可以设置自动回复。
 
@@ -112,20 +109,20 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
 
 字符音译可在SMPP移动投放外部帐户中的选项卡下 **[!UICONTROL Mobile]** 设置。
 
-音译包括当GSM标准未考虑SMS字符时，用另一个字符替换该字符。
+音译指的是，如果 GSM 标准无法识别某个短信字符，则会用另一个字符替换该字符。
 
-* 如果音译 **[!UICONTROL authorized]**&#x200B;是音译的，则在发送消息时，未考虑的每个字符将替换为GSM字符。 例如，字母“ë”被替换为“e”。 因此，消息会稍作更改，但字符限制将保持不变。
-* 当音译 **[!UICONTROL not authorized]**&#x200B;时，包含未考虑的字符的每条消息都以二进制格式(Unicode)发送： 因此，所有字符都按原样发送。 但是，使用Unicode的SMS消息最多限制为70个字符（对于多部分发送的消息，每个SMS限制为67个字符）。 如果超过最大字符数，则会发送多条消息，这可能会产生额外费用。
+* If transliteration is **[!UICONTROL authorized]**, each character that is not taken into account is replaced by a GSM character when the message is sent. 例如，字母“ë”会被替换为“e”。因此，消息会有些微变化，但字符限制将保持不变。
+* When transliteration is **[!UICONTROL not authorized]**, each message that contains characters that are not taken into account is sent in binary format (Unicode): all of the characters are therefore sent as they are. 但是，使用 Unicode 的短信消息长度上限为 70 个字符（对于分段发送的消息，每段短信的长度上限为 67 个字符）。如果超过最大字符数，则会分段发送多条消息，这可能会产生额外的费用。
 
 >[!IMPORTANT]
 >
->将个性化字段插入SMS消息内容可能会引入GSM编码未考虑的字符。
+>将个性化字段插入短信消息内容，可能会引入 GSM 编码无法识别的字符。
 
-默认情况下，字符音译处于禁用状态。 如果您希望SMS消息中的所有字符都按原样保留，请不要更改正确的名称，例如，我们建议您不启用此选项。
+默认情况下，字符音译处于禁用状态。如果您希望将短信消息中的所有字符都按原样保留，以免名称等内容被错误地更改，我们建议您不要启用此选项。
 
-但是，如果SMS消息包含大量生成Unicode消息的字符，则可以选择启用此选项来限制发送消息的成本。
+但是，如果短信消息包含大量会生成 Unicode 消息的字符，则可以选择加入此选项以限制发送消息的成本。
 
-下表显示GSM标准中考虑的字符。 除下面提到的字符外，插入消息正文的所有字符都会将整个消息转换为二进制格式(Unicode)，因此将其限制为70个字符。
+下表显示GSM标准中考虑的字符。 除下方所列的字符外，插入消息正文的所有其他字符都会导致整个消息被转换为二进制格式 (Unicode)，从而使其长度限制变成 70 个字符。
 
 **基本字符**
 
@@ -154,7 +151,7 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
   <tr> 
    <td> $ </td> 
    <td> <img height="21px" src="assets/phi.png" /> </td> 
-   <td> " </td> 
+   <td> ” </td> 
    <td> 2 </td> 
    <td> B </td> 
    <td> R </td> 
@@ -182,7 +179,7 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
    <td> t </td> 
   </tr> 
   <tr> 
-   <td> 埃 </td> 
+   <td> é </td> 
    <td> <img height="21px" src="assets/omega.png" /> </td> 
    <td> % </td> 
    <td> 5 </td> 
@@ -192,7 +189,7 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
    <td> u </td> 
   </tr> 
   <tr> 
-   <td> 耶 </td> 
+   <td> ù </td> 
    <td> <img height="21px" src="assets/pi.png" /> </td> 
    <td> &amp; </td> 
    <td> 6 </td> 
@@ -202,7 +199,7 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
    <td> v </td> 
   </tr> 
   <tr> 
-   <td> 伊 </td> 
+   <td> ì </td> 
    <td> <img height="21px" src="assets/psi.png" /> </td> 
    <td> ' </td> 
    <td> 7 </td> 
@@ -212,7 +209,7 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
    <td> w </td> 
   </tr> 
   <tr> 
-   <td> 奥 </td> 
+   <td> ò </td> 
    <td> <img height="21px" src="assets/sigma.png" /> </td> 
    <td> ( </td> 
    <td> 8 </td> 
@@ -226,9 +223,9 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
    <td> <img height="21px" src="assets/theta.png" /> </td> 
    <td> ) </td> 
    <td> 9 </td> 
-   <td> 我 </td> 
+   <td> I </td> 
    <td> Y </td> 
-   <td> 我 </td> 
+   <td> i </td> 
    <td> y </td> 
   </tr> 
   <tr> 
@@ -242,7 +239,7 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
    <td> z </td> 
   </tr> 
   <tr> 
-   <td> 岛 </td> 
+   <td> Ø </td> 
    <td> ESC </td> 
    <td> + </td> 
    <td> ; </td> 
@@ -252,12 +249,12 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
    <td> ä </td> 
   </tr> 
   <tr> 
-   <td> 岛 </td> 
-   <td> AE </td> 
+   <td> ø </td> 
+   <td> Æ </td> 
    <td> , </td> 
    <td> &lt; </td> 
    <td> L </td> 
-   <td> 厄 </td> 
+   <td> Ö </td> 
    <td> l </td> 
    <td> ö </td> 
   </tr> 
@@ -269,67 +266,67 @@ Adobe Campaign使您能够执行大量个性化的SMS消息投放。 收件人�
    <td> M </td> 
    <td> Ñ </td> 
    <td> m </td> 
-   <td> - </td> 
+   <td> ñ </td> 
   </tr> 
   <tr> 
-   <td> 奥 </td> 
+   <td> Å </td> 
    <td> ß </td> 
    <td> . </td> 
    <td> &gt; </td> 
    <td> N </td> 
-   <td> 乌 </td> 
+   <td> Ü </td> 
    <td> n </td> 
-   <td> 女 </td> 
+   <td> ü </td> 
   </tr> 
   <tr> 
    <td> å </td> 
-   <td> 埃 </td> 
+   <td> É </td> 
    <td> / </td> 
    <td> ? </td> 
    <td> O </td> 
    <td> § </td> 
    <td> o </td> 
-   <td> 如 </td> 
+   <td> à </td> 
   </tr> 
  </tbody> 
 </table>
 
-SP: 空间
+SP：空格键
 
-ESC: 逃生
+ESC：Escape 键
 
-LF: 线源
+LF：换行
 
-CR: 回车
+CR：回车
 
-**高级字符（计数两次）**
+**高级字符（计为两个字符）**
 
 ^ { } `[ ~ ]` | €
 
 ### 关于文本编码 {#about-text-encodings}
 
-在发送SMS消息时，Adobe Campaign可以使用一个或多个文本编码。 每个编码都有其自己的特定字符集，并确定适合SMS消息的字符数。
+发送短信消息时，Adobe Campaign 可以使用一个或多个文本编码。每个编码都有属于自己的特定字符集，可确定其适合短信消息的字符数。
 
-配置新的SMPP移动投放外部帐户时，您可以在选项卡 **[!UICONTROL Mapping of encodings]** 中定义 **[!UICONTROL Mobile]** : 该字 **[!UICONTROL data_coding]** 段允许Adobe Campaign向SMSC通信使用哪种编码。
+配置新的SMPP移动投放外部帐户时，您可以在选项卡 **[!UICONTROL Mapping of encodings]** 中定义 **[!UICONTROL Mobile]** :该字 **[!UICONTROL data_coding]** 段允许Adobe Campaign向SMSC通信使用哪种编码。
 
 >[!NOTE]
 >
->data_coding值与实际 **使用的编码** 之间的映射是标准化的。 然而，某些中小企业供应链有自己的具体地图： 在这种情况下，您的 **Adobe Campaign** 管理员需要声明此映射。 请咨询您的提供商，了解更多信息。
+>**Data_coding** 值与实际使用的编码之间的映射，经过标准化处理。Nevertheless, certain SMSC have their own specific mapping: in this case, your **Adobe Campaign** administrator needs to declare this mapping. 有关更多信息，请咨询您的提供商。
 
-您可以声 **明data_codings** ，并在必要时强制进行编码： 为此，请在表中指定单个编码。
+You can declare **data_codings** and force the encoding if necessary: to do this, specify a single encoding in the table.
 
 * 当未定义编码映射时，连接器采用通用行为：
 
-   * 它将尝试使用其分配值data_coding = **0的GSM编码**。
-   * 如果GSM编码失败，它将 **使用** UCS2编码，它将值 **data_coding = 8**。
+   * 它会尝试将 GSM 编码用于分配值 **data_coding = 0**。
+   * 如果 GSM 编码失败，则会将 **UCS2** 编码用于分配值 **data_coding = 8**。
 
 * 当您定义要使用的编码以及链接的字段值时， **[!UICONTROL data_coding]** Adobe Campaign将尝试在列表中使用第一个编码，如果第一个编码被证明不可能，则使用下面的编码。
 
 >[!IMPORTANT]
 >
->申报顺序很重要： 建议您按成本的升序排 **列列表** ，以便使用编码，在每条SMS消息中尽可能多地显示字符。
+>声明的顺序很重要：建议您按照&#x200B;**成本**&#x200B;的升序方式排列编码列表，以选出可尽量减少短信消息发送条数的编码。
 >
->仅声明要使用的编码。 如果SMSC提供的某些编码与您的使用目的不对应，请不要在列表中声明这些编码。
+>仅声明您要使用的编码。如果SMSC提供的某些编码与您的使用目的不对应，请不要在列表中声明这些编码。
 
 ### 自动回复 {#automatic-reply}
 
@@ -355,7 +352,7 @@ CR: 回车
 * 要发送相同的回复，无论关键字是什么，请将列 **[!UICONTROL Keyword]** 留空。
 * 要在不发送响应的情况下执行操作，请将该列 **[!UICONTROL Response]** 留空。 例如，这允许您从回复消息(“STOP”)的用户的隔离中删除。
 
-如果您有多个外部帐户使用具有相同提供者帐户的扩展通用SMPP连接器，则可能会出现以下问题： 在向短代码发送回复时，可能会在您的任何外部帐户连接上收到该回复。 因此，发送的自动回复不能是预期消息。
+如果您有多个外部帐户使用具有相同提供者帐户的扩展通用SMPP连接器，则可能会出现以下问题：在向短代码发送回复时，可能会在您的任何外部帐户连接上收到该回复。 因此，发送的自动回复不能是预期消息。
 要避免这种情况，请根据您所使用的提供商，应用以下解决方案之一：
 
 * 为每个外部帐户创建一个提供程序帐户。
@@ -375,7 +372,7 @@ Adobe Campaign为您提供了用于传送到移动设备的模板。 此模板�
 
 在以下示例中，我们创建一个模板，通过先前启用的SMPP帐户传送消息。 操作步骤：
 
-1. 转到节 **[!UICONTROL Delivery templates]** 点。
+1. Go to the **[!UICONTROL Delivery templates]** node.
 1. 右键单击模 **[!UICONTROL Send to mobiles]** 板，然后选择 **[!UICONTROL Duplicate]**。
 
    ![](assets/s_user_mobile_template_change_01.png)
@@ -406,7 +403,7 @@ Adobe Campaign为您提供了用于传送到移动设备的模板。 此模板�
 >本节介绍有关投放创建的全 [局概念](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
 1. 创建新投放，例如从投放仪表板创建。
-1. 选择您之 **前创建的投放模板** “发送到手机”(SMPP)。 有关此内容的详细信息，请参 [阅更改投放模板](#changing-the-delivery-template) 。
+1. 选择您之 **前创建的投放模板** “发送到手机”(SMPP)。 For more on this, refer to the [Changing the delivery template](#changing-the-delivery-template) section.
 
    ![](assets/s_user_mobile_wizard.png)
 
@@ -468,7 +465,7 @@ Adobe Campaign为您提供了用于传送到移动设备的模板。 此模板�
 
 可以使用以下选项：
 
-* **发件人地址**: 允许您使用限制为11个字符的字母数字字符串，个性化投放发件人的姓名。 这个领域不能只由数字组成。 您可以定义一个条件来显示，例如，根据收件人的区域代码显示不同的名称：
+* **发件人地址**:允许您使用限制为11个字符的字母数字字符串，个性化投放发件人的姓名。 这个领域不能只由数字组成。 您可以定义一个条件来显示，例如，根据收件人的区域代码显示不同的名称：
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
@@ -478,25 +475,25 @@ Adobe Campaign为您提供了用于传送到移动设备的模板。 此模板�
    >
    >检查您所在国家／地区有关编辑发件人姓名的法律。 您还应询问操作员是否优惠此功能。
 
-* **传输模式**: 短信发送
-* **优先级**: 消息的重要性级别。 **[!UICONTROL Normal]** 优先级默认为选中。 询问您的服务提供商优先发送的短信费 **[!UICONTROL High]** 用。
-* **应用程序类型**: 选择要分配给SMS投放的应用程序。 默认 **[!UICONTROL Direct Marketing]** 情况下，该选项处于选中状态，是最常用的选项。
+* **传输模式**:短信发送
+* **优先级**:消息的重要性级别。 **[!UICONTROL Normal]** 优先级默认为选中。 询问您的服务提供商优先发送的短信费 **[!UICONTROL High]** 用。
+* **应用程序类型**:选择要分配给SMS投放的应用程序。 默认 **[!UICONTROL Direct Marketing]** 情况下，该选项处于选中状态，是最常用的选项。
 
 **特定于NetSize连接器的参数**
 
 ![](assets/s_user_mobile_sms_adv_netsize.png)
 
-* **对单条消息使用多条SMS**: 这样，您就可以通过多个SMS消息发送超过160个字符的消息。
+* **对单条消息使用多条SMS**:这样，您就可以通过多个SMS消息发送超过160个字符的消息。
 
 **SMPP连接器特有的参数**
 
 ![](assets/s_user_mobile_sms_adv_smpp.png)
 
-* **每条消息的最大短信数**: 通过此选项，可设置用于发送消息的SMS数。 如果数字设置为0，则可以使用SMS发送消息。 如果SMS的数量设置为1或2，并且消息超过此阈值，则不会发送该消息。
+* **每条消息的最大短信数**:通过此选项，可设置用于发送消息的SMS数。 如果数字设置为0，则可以使用SMS发送消息。 如果SMS的数量设置为1或2，并且消息超过此阈值，则不会发送该消息。
 
 ## 监控和跟踪SMS投放 {#monitoring-and-tracking-sms-deliveries}
 
-发送消息后，您可以监视和跟踪投放。 有关此内容的详细信息，请参阅以下部分：
+发送消息后，您可以监视和跟踪投放。 有关更多信息，请参阅一下章节。
 
 * [监控投放](../../delivery/using/monitoring-a-delivery.md)
 * [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
@@ -506,7 +503,7 @@ Adobe Campaign为您提供了用于传送到移动设备的模板。 此模板�
 
 nlserver **sms** 模块定期查询SMS路由器。 这允许Adobe Campaign跟踪投放进度并处理状态报告和收件人退订请求。
 
-* **状态报告**: 视图投放日志检查消息的状态。
+* **状态报告**:视图投放日志检查消息的状态。
 
    >[!NOTE]
    >
@@ -516,7 +513,7 @@ nlserver **sms** 模块定期查询SMS路由器。 这允许Adobe Campaign跟踪
    > * SMS帐户只能链接到单个外部帐户，以确保状态报告归因到正确的帐户
 
 
-* **退订**: 希望停止接收SMS投放的收件人可以返回包含STOP字样的消息。 如果您的提供商根据合同条款允许它访问，您可以通过 **Inbound SMS工作流活动检索消息** ，然后创建一个查询，为相关收件人启 **用“不再联系此收件人** ”选项。
+* **退订**:希望停止接收SMS投放的收件人可以返回包含STOP字样的消息。 如果您的提供商根据合同条款允许它访问，您可以通过 **Inbound SMS工作流活动检索消息** ，然后创建一个查询，为相关收件人启 **用“不再联系此收件人** ”选项。
 
    请参阅 [工作流](../../workflow/using/architecture.md) 指南。
 
@@ -524,11 +521,11 @@ nlserver **sms** 模块定期查询SMS路由器。 这允许Adobe Campaign跟踪
 
 InSMS模式包含与传入SMS相关的信息。 可通过desc属性描述这些字段。
 
-* **消息**: 收到的短信内容。
-* **来源**: 消息来源处的移动号码。
-* **providerId**: SMSC（消息中心）返回的消息的标识符。
-* **已创建**: 将传入消息插入Adobe Campaign。
-* **extAccount**: Adobe Campaign外部帐户。
+* **消息**:收到的短信内容。
+* **来源**:消息来源处的移动号码。
+* **providerId**:SMSC（消息中心）返回的消息的标识符。
+* **已创建**:将传入消息插入Adobe Campaign。
+* **extAccount**:Adobe Campaign外部帐户。
 
    >[!IMPORTANT]
    >
@@ -536,15 +533,15 @@ InSMS模式包含与传入SMS相关的信息。 可通过desc属性描述这些�
    >
    >如果使用的运算符不是NetSize，则这些字段被视为空。
 
-* **别名**: 传入消息的别名。
-* **分隔符**: 别名和邮件正文之间的分隔符。
-* **messageDate**: 运算符给出的消息日期。
-* **receivalDate**: SMSC（消息中心）接收来自运营商的日期消息。
-* **deliveryDate**: SMSC（消息中心）发送的日期消息。
-* **largeAccount**: 客户帐户代码链接到传入的SMS。
-* **countryCode**: 运营商国家代码。
-* **operatorCode**: 运营商网络代码。
-* **linkedSmsId**: Adobe Campaign标识符(broadlogId)，链接到传出SMS，其中此SMS是响应。
+* **别名**:传入消息的别名。
+* **分隔符**:别名和邮件正文之间的分隔符。
+* **messageDate**:运算符给出的消息日期。
+* **receivalDate**:SMSC（消息中心）接收来自运营商的日期消息。
+* **deliveryDate**:SMSC（消息中心）发送的日期消息。
+* **largeAccount**:客户帐户代码链接到传入的SMS。
+* **countryCode**:运营商国家／地区代码。
+* **operatorCode**:运营商网络代码。
+* **linkedSmsId**:Adobe Campaign标识符(broadlogId)，链接到传出SMS，其中此SMS是响应。
 
 ## 管理自动回复（美国法规） {#managing-automatic-replies--american-regulation-}
 
@@ -580,7 +577,7 @@ InSMS模式包含与传入SMS相关的信息。 可通过desc属性描述这些�
 
 1. 对于 **标记** name属 **`<shortcode>`** 性，指定将在消息发送者名称的位置显示的简短代码。
 
-   在每个 **`<reply>`** 标记中，输 **入关键字属性** ，并输入文本属 **性** ，其中包含您要为此关键字发送的消息。
+   在每个 **`<reply>`** 标记中，输 **入关键字属性** ，输入文本属 **** 性，并输入要为此关键字发送的消息。
 
    >[!NOTE]
    >
