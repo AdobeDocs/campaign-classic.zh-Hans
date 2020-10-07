@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b7ff47e1-ef12-4f04-afff-1a6c01d7701f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -37,8 +34,8 @@ ht-degree: 0%
 
 该选 **[!UICONTROL Data linked to the filtering dimension]** 项允许您访问：
 
-* 过滤维度数据： 对工作表数据的访问
-* 链接到过滤维度的数据： 对链接到工作表的数据的访问
+* 过滤维度数据：对工作表数据的访问
+* 链接到过滤维度的数据：对链接到工作表的数据的访问
 
 ![](assets/wf_enrich_linkoptions.png)
 
@@ -48,29 +45,29 @@ ht-degree: 0%
 
 链接有四种类型：
 
-* **[!UICONTROL Define a collection]**: 允许您定义表之间具有1-N基数的链接。
-* **[!UICONTROL Define a link whose target is still available]**: 允许您定义表之间具有1-1基数的链接。 连接条件必须由目标表中的单个记录定义。
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: 允许您定义表之间具有0-1基数的链接。 连接条件必须由0或1（最大）定义。 记录在目标表中。
+* **[!UICONTROL Define a collection]**:允许您定义表之间具有1-N基数的链接。
+* **[!UICONTROL Define a link whose target is still available]**:允许您定义表之间具有1-1基数的链接。 连接条件必须由目标表中的单个记录定义。
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**:允许您定义表之间具有0-1基数的链接。 连接条件必须由0或1（最大）定义。 记录在目标表中。
 
    此选项在选项卡 **[!UICONTROL Simple Join]** 中配置，可通过活动 **[!UICONTROL Edit additional data]** 的链接访 **[!UICONTROL Enrichment]** 问。
 
-* **[!UICONTROL Define a link by searching for a reference among several options]**: 此类型的链接定义对唯一记录的协调。 Adobe Campaign通过在目标表中添加外键来创建指向目标表的链接，以存储对唯一记录的引用。
+* **[!UICONTROL Define a link by searching for a reference among several options]**:此类型的链接定义对唯一记录的协调。 Adobe Campaign通过在目标表中添加外键来创建指向目标表的链接，以存储对唯一记录的引用。
 
    此选项在选项卡 **[!UICONTROL Reconciliation and deduplication]** 中配置，可通过活动 **[!UICONTROL Edit additional data]** 的链接访 **[!UICONTROL Enrichment]** 问。
 
 在以下各节中还提供详细说明扩充活动在其上下文中操作的使用案例：
 
-* [电子邮件扩充和自定义日期字段](../../workflow/using/email-enrichment-with-custom-date-fields.md)。
+* [具有自定义日期字段的电子邮件扩充](../../workflow/using/email-enrichment-with-custom-date-fields.md).
 * [丰富数据](../../workflow/using/enriching-data.md)
 * [创建摘要列表](../../workflow/using/creating-a-summary-list.md)
 
 ## 添加信息 {#adding-information}
 
-使用 **[!UICONTROL Enrichment]** 活动向工作表添加列： 此活动可用作查询活动的补充。
+使用 **[!UICONTROL Enrichment]** 活动向工作表添加列：此活动可用作查询活动的补充。
 
 附加列的配置在添加数据中 [有详细介绍](../../workflow/using/query.md#adding-data)。
 
-在字 **[!UICONTROL Primary set]** 段中，您可以选择入站过渡: 丰富了活动工作台的数据。
+在字 **[!UICONTROL Primary set]** 段中，您可以选择入站过渡:丰富了活动工作台的数据。
 
 单击链 **[!UICONTROL Add data]** 接，然后选择要添加的数据类型。 提供的列表类型取决于平台上安装的模块和选项。 在最小的配置中，您始终可以添加链接到过滤维度和链接的数据。
 
@@ -110,7 +107,7 @@ ht-degree: 0%
 
 ## 创建链接 {#creating-a-link}
 
-您可以使用扩充活动创建工作数据与Adobe Campaign数据库之间的链接： 这将是入站数据之间工作流的本地链接。
+您可以使用扩充活动创建工作数据与Adobe Campaign数据库之间的链接：这将是入站数据之间工作流的本地链接。
 
 例如，如果加载包含收件人的帐号、国家／地区和电子邮件的文件的数据，则必须创建指向国家／地区表的链接，才能在其用户档案中更新此信息。
 
@@ -133,7 +130,7 @@ ht-degree: 0%
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. 选择选 **[!UICONTROL Link definition]** 项并单击 **[!UICONTROL Next]** 按钮。 指定要创建的链接类型。 在此示例中，我们希望将文件收件人的国家与数据库专用表中可用国家列表的国家进行协调。 选择选 **[!UICONTROL Define a link by searching for a reference among several options]** 项。 在字段中选择国家／地 **[!UICONTROL Target schema]** 区表。
+1. 选择选 **[!UICONTROL Link definition]** 项并单击 **[!UICONTROL Next]** 按钮。 指定要创建的链接类型。 在此示例中，我们希望将文件收件人的国家与数据库专用表中可用国家列表的国家进行协调。 选择 **[!UICONTROL Define a link by searching for a reference among several options]** 选项。在字段中选择国家／地 **[!UICONTROL Target schema]** 区表。
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -149,7 +146,7 @@ ht-degree: 0%
 
 扩充活动可用于配置数据协调，包括数据加载到数据库后的数据协调。 在这种情况下，通 **[!UICONTROL Reconciliation]** 过选项卡可以定义Adobe Campaign库中数据与工作表中数据之间的链接。
 
-选择选 **[!UICONTROL Identify the targeting document based on work data]** 项，指定要创建链接的模式并定义连接条件： 为此，请在工作数据()和定位维度()中&#x200B;**[!UICONTROL Source expression]**&#x200B;选择要调节的字&#x200B;**[!UICONTROL Destination expression]**&#x200B;段。
+选择选 **[!UICONTROL Identify the targeting document based on work data]** 项，指定要创建链接的模式并定义连接条件：为此，请在工作数据()和定位维度()中&#x200B;**[!UICONTROL Source expression]**&#x200B;选择要调节的字&#x200B;**[!UICONTROL Destination expression]**&#x200B;段。
 
 您可以使用一个或多个对帐条件。
 
@@ -161,7 +158,7 @@ ht-degree: 0%
 
 扩充活动允许您为投放添加优惠或指向优惠的链接。
 
-有关扩充活动的详细信息，请参阅此 [部分](../../workflow/using/enrichment.md)。
+For more information on the enrichment activity, refer to this [section](../../workflow/using/enrichment.md).
 
 例如，您可以在收件人查询之前丰富数据。
 
@@ -170,7 +167,7 @@ ht-degree: 0%
 配置查询后(请参阅此 [部分](../../workflow/using/query.md)):
 
 1. 添加和打开扩充活动。
-1. 在选项卡 **[!UICONTROL Enrichment]** 中，选择 **[!UICONTROL Add data]**。
+1. 在 **[!UICONTROL Enrichment]** 选项卡中，选择 **[!UICONTROL Add data]**。
 1. 选择 **[!UICONTROL An offer proposition]** 要添加的数据类型。
 
    ![](assets/int_enrichment_offer2.png)
@@ -178,11 +175,11 @@ ht-degree: 0%
 1. 为要添加的命题指定标识符和标签。
 1. 指定优惠选择。 这有两种可能的选项：
 
-   * **[!UICONTROL Search for the best offer in a category]**: 选中此选项并指定优惠引擎调用参数(优惠空间、类别或主题、联系日期、要保留的优惠数)。 引擎将根据这些参数自动计算要添加的优惠。 我们建议填写 **[!UICONTROL Category]** 或字 **[!UICONTROL Theme]** 段，而不是同时填写这两个字段。
+   * **[!UICONTROL Search for the best offer in a category]**:选中此选项并指定优惠引擎调用参数(优惠空间、类别或主题、联系日期、要保留的优惠数)。 引擎将根据这些参数自动计算要添加的优惠。 我们建议填写 **[!UICONTROL Category]** 或字 **[!UICONTROL Theme]** 段，而不是同时填写这两个字段。
 
       ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL A predefined offer]**: 选中此选项并指定优惠空间、特定优惠和联系日期，以直接配置要添加的优惠，无需调用优惠引擎。
+   * **[!UICONTROL A predefined offer]**:选中此选项并指定优惠空间、特定优惠和联系日期，以直接配置要添加的优惠，无需调用优惠引擎。
 
       ![](assets/int_enrichment_offer4.png)
 
@@ -222,7 +219,7 @@ ht-degree: 0%
 
 但是，您可以按如下方式存储此信息：
 
-1. 在放置在优惠之后和扩充活动之前的查询活动中创建对投放引擎的调用。 请参阅此 [部分](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine)。
+1. 在放置在优惠之后和扩充活动之前的查询活动中创建对投放引擎的调用。 Refer to this [section](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
 1. 在活动的主窗口中，选择 **[!UICONTROL Edit additional data...]**。
 
    ![](assets/ita_enrichment_rankweight_1.png)
