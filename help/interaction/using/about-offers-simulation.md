@@ -1,7 +1,7 @@
 ---
-title: 关于选件模拟
-seo-title: 关于选件模拟
-description: 关于选件模拟
+title: 关于优惠模拟
+seo-title: 关于优惠模拟
+description: 关于优惠模拟
 seo-description: null
 page-status-flag: never-activated
 uuid: 3c6783a0-6bab-4c41-8101-1d926c1ac6ac
@@ -11,26 +11,26 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 discoiquuid: 0af021af-2686-4a37-97d9-6d13a851b5dd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 4%
 
 ---
 
 
-# 关于选件模拟{#about-offers-simulation}
+# 关于优惠模拟{#about-offers-simulation}
 
-通过 **模拟** ，您可以在将建议发送到收件人之前，测试属于某个类别或环境的选件的分发。
+通过 **模拟** 模块，您可以测试属于类别或环境的优惠的分布情况，然后再将您的建议发送给收件人。
 
-模拟会考虑以前应用于选件的上下文和资格规则(请参阅“ [选件目录概述](../../interaction/using/offer-catalog-overview.md)”)，以及其演示规则(请参阅管理选 [件演示](../../interaction/using/managing-offer-presentation.md))。 这样，您就可以测试和优化您的优惠主张的各个版本，而无需实际使用优惠或在征求／征求目标时使用，因为模拟对目标接收者没有影响。
+模拟考虑以前应用于优惠的上下文和合格规则(请参 [阅优惠目录概述](../../interaction/using/offer-catalog-overview.md))，以及其推荐规则(请参阅管 [理优惠演示](../../interaction/using/managing-offer-presentation.md))。 这样，您无需实际使用优惠建议或过量／正在征求目标，即可测试和优化您的模拟的各个版本，因为优惠对目标收件人没有影响。
 
-要了解如何模拟选件，请阅读以下步骤。 You can also watch this [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&ref=helpx.adobe.com).
+要了解如何模拟优惠，请阅读以下步骤。 You can also watch this [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com).
 
 ## 创建模拟的主要步骤 {#main-steps-for-creating-a-simulation}
 
-要运行选件模拟，请应用以下步骤：
+要运行模拟优惠，请应用以下步骤：
 
 1. 在宇宙 **[!UICONTROL Profiles and Targets]** 中，单击链 **[!UICONTROL Simulations]** 接，然后单击按 **[!UICONTROL Create]** 钮。
 
@@ -45,22 +45,22 @@ source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
 
    >[!NOTE]
    >
-   >执行设置仅在您使用与营销活动的交互时才可用。
+   >仅当您使用与活动交互时，执行设置才可用。
 
 1. 指定模拟范围。
 
-   有关详细信息，请参 [阅范围定义](../../interaction/using/simulation-scope.md#definition-of-the-scope)。
+   有关此问题的详细信息， [请参阅范围的定义](../../interaction/using/simulation-scope.md#definition-of-the-scope)。
 
    ![](assets/offer_simulation_004.png)
 
-1. 添加报表轴以增强 **[!UICONTROL Offer distribution by rank]** 报表（可选）。
+1. 添加报告轴以增 **[!UICONTROL Offer distribution by rank]** 强报表（可选）。
 
-   有关详细信息，请参阅添 [加报表轴](../../interaction/using/simulation-scope.md#adding-reporting-axes)。
+   有关详细信息，请参阅添 [加报告轴](../../interaction/using/simulation-scope.md#adding-reporting-axes)。
 
    ![](assets/offer_simulation_005.png)
 
 1. 单击 **[!UICONTROL Save]** 以记录模拟设置。
-1. 通过仪表板启动模拟。
+1. 通过开始模拟。
 
    ![](assets/offer_simulation_006.png)
 
