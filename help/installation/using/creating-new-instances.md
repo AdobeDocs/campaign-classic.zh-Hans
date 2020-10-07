@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: ba9c8e4c-441b-4422-a465-758771025ee8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '85'
+ht-degree: 14%
 
 ---
 
@@ -28,9 +28,9 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 1. 声明新实例
 
-   转到 **[!UICONTROL Tools > Advanced > Declare a new instance...]** 启动向导。
+   转到 **[!UICONTROL Tools > Advanced > Declare a new instance...]** 开始向导。
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
-   指定新实例的参数。 有关详细信息，请参阅 [创建实例并登录](../../installation/using/creating-an-instance-and-logging-on.md)。
+   指定新实例的参数。 有关此的详细信息，请参 [阅创建实例并登录](../../installation/using/creating-an-instance-and-logging-on.md)。
 
