@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: c886bd02-c484-443c-93ca-ca244adbf893
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '4142'
+ht-degree: 64%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Campaign 允许您以文本、CSV、TAB 或 XML 格式从一个或多个�
 >[!NOTE]
 >
 >You can import data without mapping it with the database data using the **[!UICONTROL Import a list]** function.
-> 
+>
 >The data can then be used exclusively in workflows via the **[!UICONTROL Read list]** object. 有关详细信息，请参见[此页面](../../workflow/using/read-list.md)。
 >
 >有关详细信息，请观看[导入用户档案](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html)视频。
@@ -44,7 +44,7 @@ Adobe Campaign 允许您以文本、CSV、TAB 或 XML 格式从一个或多个�
 >
 >如果使用 IIS Web 服务器，则可能需要通过配置授权上传大文件 (> 28 MB)。
 >
->有关更多信息，请参见[此部分](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit)。
+>有关更多信息，请参见[此章节](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit)。
 
 ### 第1步 - 选择导入模板 {#step-1---choosing-the-import-template}
 
@@ -57,10 +57,10 @@ Adobe Campaign 允许您以文本、CSV、TAB 或 XML 格式从一个或多个�
 
 1. Click the arrow to the right of the **[!UICONTROL Import template]** field to select your template, or click **[!UICONTROL Select link]** to browse the tree.
 
-   本机模板为 **[!UICONTROL New text import]**。 不得修改此模板，但您可以根据您的要求复制它以配置新模板。默认情况下，导入模板会保存在节 **[!UICONTROL Profiles and targets > Templates > Job templates]** 点中。
+   本机模板为 **[!UICONTROL New text import]**。 不得修改此模板，但您可以根据您的要求复制它以配置新模板。默认情况下，导入模板保存在节 **[!UICONTROL Profiles and targets > Templates > Job templates]** 点中。
 
 1. Enter a name for this import in the **[!UICONTROL Label]** field. 您可以添加描述。
-1. 在相应字段中选择导入类型。导入有两种可能的类型：只导 **[!UICONTROL Simple import]** 入一个文件，并在单 **[!UICONTROL Multiple import]** 次执行中导入多个文件。
+1. 在相应字段中选择导入类型。导入有两种可能类型： **[!UICONTROL Simple import]** 只导入一个文件，并 **[!UICONTROL Multiple import]** 在一次执行中导入多个文件。
 
    For a multiple import, select **[!UICONTROL Multiple import]** from the **[!UICONTROL Import type]** drop-down list in the first screen of the import wizard.
 
@@ -96,7 +96,7 @@ The **[!UICONTROL Advanced parameters]** link lets you access the following opti
 
    * **[!UICONTROL Do not update enumerations]**
 
-      选择此选项可避免扩大数据库中的枚举值清单。请参阅 [管理枚举](../../platform/using/managing-enumerations.md)。
+      选择此选项可避免扩大数据库中的枚举值清单。请参阅 [管理明细列表](../../platform/using/managing-enumerations.md)。
 
 * **[!UICONTROL Variables]** 选项卡
 
@@ -110,7 +110,7 @@ The **[!UICONTROL Advanced parameters]** link lets you access the following opti
 
 源文件可以是文本格式（txt、csv、tab、固定列）或 xml。
 
-默认情况下， **[!UICONTROL Upload file on the server]** 处于选中状态。 Click the folder to the right of the **[!UICONTROL Local file]** field to browse the local disk and select the file to import. 您可以取消选择此选项以输入访问路径以及要在服务器上导入的文件名。
+By default, **[!UICONTROL Upload file on the server]** is selected. Click the folder to the right of the **[!UICONTROL Local file]** field to browse the local disk and select the file to import. 您可以取消选择此选项以输入访问路径以及要在服务器上导入的文件名。
 
 ![](assets/s_ncs_user_import_wizard02_1.png)
 
@@ -121,8 +121,8 @@ When the file has been specified, you can view its data in the lower section of 
 使用此视图上方提供的选项配置导入。通过这些选项定义的参数将传输到预览中。可以使用以下选项：
 
 * **[!UICONTROL Click here to change the file format...]** 允许您检查文件格式并微调配置。
-* **[!UICONTROL Update on server...]** 允许您将本地文件传输到服务器。 此选项仅在选择时 **[!UICONTROL Upload file on the server]** 可用。
-* **[!UICONTROL Download]** 仅当文件已上载到服务器时才可用。
+* **[!UICONTROL Update on server...]** 允许您将本地文件传输到服务器。 此选项仅在选中时 **[!UICONTROL Upload file on the server]** 可用。
+* **[!UICONTROL Download]** 仅当文件已上载到服务器上时才可用。
 * **[!UICONTROL Auto-detect format]** 用于重新初始化数据源的格式。 This option lets you reapply the original formats to data that has been formatted via the **[!UICONTROL Click here to change the file format...]** option.
 * The **[!UICONTROL Advanced parameters]** link lets you filter the source data and access advanced options. 在此屏幕中，您可以选择仅导入部分文件。您还可以定义筛选器，例如，根据相应行的值仅导入“潜在客户”或“客户”类型的用户。这些选项仅供专业 JavaScript 用户使用。
 
@@ -174,7 +174,7 @@ Click **[!UICONTROL OK]** to save the formatting, then click **[!UICONTROL Next]
 * **[!UICONTROL Fixed string]**:对于源文件的所有行，计算字段的值都相同。 允许您设置插入或更新的记录的字段值。例如，您可以为所有导入的记录将标记设置为“是”。
 * **[!UICONTROL String with JavaScript tags]**:计算字段的值是包含JavaScript命令的字符串。
 * **[!UICONTROL JavaScript expression]**:计算字段的值是评估JavaScript函数的结果。 返回的值可以是数字、日期等。
-* **[!UICONTROL Enumeration]**:根据源文件中包含的值将字段的值归属。 编辑器允许您指定源列并输入枚举值清单，如以下示例所示：
+* **[!UICONTROL Enumeration]**:根据源文件中包含的值将字段的值归因。 编辑器允许您指定源列并输入枚举值清单，如以下示例所示：
 
    ![](assets/s_ncs_user_import_wizard03_3.png)
 
@@ -206,8 +206,8 @@ Click **[!UICONTROL OK]** to save the formatting, then click **[!UICONTROL Next]
 
 导入所涉及的表中的每个字段都有以下选项：
 
-* **[!UICONTROL Update (empty) if source value is empty]**:如果源文件中的字段为空，则更新时，字段中的值将删除数据库值。 否则，保留数据库字段。
-* **[!UICONTROL Update only if destination is empty]**:源文件中的值不会覆盖数据库字段中的值，除非数据库字段为空。 在这种情况下，它采用源文件的值。
+* **[!UICONTROL Update (empty) if source value is empty]**:在更新事件中，如果源文件中的字段为空，则字段中的值将删除数据库值。 否则，保留数据库字段。
+* **[!UICONTROL Update only if destination is empty]**:除非数据库字段为空，否则源文件中的值不会覆盖数据库字段中的值。 在这种情况下，它采用源文件的值。
 * **[!UICONTROL Update the field only when the record is inserted]**:在更新或插入操作期间，将只导入新的源文件记录。
 
 >[!NOTE]
@@ -243,7 +243,7 @@ Click **[!UICONTROL OK]** to save the formatting, then click **[!UICONTROL Next]
 The **[!UICONTROL Management of doubles]** field lets you configure the deduplication of data. 重复数据删除涉及&#x200B;**源文件**&#x200B;中多次出现的记录（或多文件导入时的源文件），即合并关键项的字段相同的行。
 
 * Duplicate management in **[!UICONTROL Update]** mode (the default mode) does not perform deduplication. 因此，最后一条记录具有优先权（因为它更新了先前记录的数据）。在此模式下不执行重复计数。
-* 在模式下进行复 **[!UICONTROL Ignore]** 制管理，或 **[!UICONTROL Reject entity]** 从导入中排除重复项。 在这种情况下，不会导入任何记录。
+* 重复管理 **[!UICONTROL Ignore]** 模式或 **[!UICONTROL Reject entity]** 从导入中排除重复。 在这种情况下，不会导入任何记录。
 * In **[!UICONTROL Reject entity]** mode, the element is not imported, and an error is generated in the import logs.
 * In **[!UICONTROL Ignore]** mode, the element is not imported, but no trace of the error is kept. 此模式可让您优化性能。
 
@@ -251,9 +251,9 @@ The **[!UICONTROL Management of doubles]** field lets you configure the deduplic
 >
 >重复数据删除仅在内存中执行。因此，采用重复数据删除的导入存在大小限制。限制取决于几个参数（应用程序服务器的容量、活动、密钥中的字段数等）。重复数据删除的最大大小为 1,000,000 行。
 
-重复数据删除涉及源文件和数据库中都存在的记录。它仅涉及更新操作(即 **[!UICONTROL Update and insertion]** 或 **[!UICONTROL Update]**)。 The **[!UICONTROL Duplicate management]** option lets you update or ignore the record if it is in both the source file and the database. The **[!UICONTROL Update or insert based on origin]** option belongs to the optional module and cannot be used in a standard context.
+重复数据删除涉及源文件和数据库中都存在的记录。它只涉及更新操作(即 **[!UICONTROL Update and insertion]** 或 **[!UICONTROL Update]**)。 The **[!UICONTROL Duplicate management]** option lets you update or ignore the record if it is in both the source file and the database. The **[!UICONTROL Update or insert based on origin]** option belongs to the optional module and cannot be used in a standard context.
 
-购股权 **[!UICONTROL Reject]** 及操 **[!UICONTROL Ignore]** 作如下。
+上述选 **[!UICONTROL Reject]** 项 **[!UICONTROL Ignore]** 及操作如下。
 
 #### 发生错误时的行为 {#behavior-in-the-event-of-an-error}
 
@@ -272,8 +272,8 @@ There are two types of rejects (the type is displayed in the **[!UICONTROL Conne
 
 在数据调解页面中，您可以按字段和逐个表定义所需的错误管理类型字段。
 
-* **[!UICONTROL Ignore and log a warning]**:除了生成错误的字段外，所有字段都将导入到数据库中。
-* **[!UICONTROL Reject parent element]**:将拒绝记录的整行，而不仅仅是导致错误的字段。
+* **[!UICONTROL Ignore and log a warning]**:除生成错误的字段外，所有字段都会导入到数据库。
+* **[!UICONTROL Reject parent element]**:记录的整行将被拒绝，而不仅仅是导致错误的字段。
 * **[!UICONTROL Reject all elements]**:导入停止，并拒绝记录的所有元素。
 
    ![](assets/s_ncs_user_import_wizard04_4.png)
@@ -308,7 +308,7 @@ You can generate a file containing these records via the **[!UICONTROL Export re
 
       ![](assets/s_ncs_user_import_wizard05_2.png)
 
-      要创建新文件夹，请选择要从中添加文件夹的节点，然后按鼠标右键。Select **[!UICONTROL Create a new 'Recipients' folder]**.
+      要创建新文件夹，请选择要从中添加文件夹的节点，然后按鼠标右键。选择 **[!UICONTROL Create a new 'Recipients' folder]**。
 
       ![](assets/s_ncs_user_import_wizard05_3.png)
 
@@ -322,7 +322,7 @@ You can generate a file containing these records via the **[!UICONTROL Export re
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      You can create a new list for these recipients by clicking **[!UICONTROL Select link]**, then **[!UICONTROL Create]**. 创建和管理列表中介绍了列表的 [创建和管理](../../platform/using/creating-and-managing-lists.md)。
+      You can create a new list for these recipients by clicking **[!UICONTROL Select link]**, then **[!UICONTROL Create]**. 创建和管理列表在创建和管 [理列表中介绍](../../platform/using/creating-and-managing-lists.md)。
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -396,8 +396,8 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 1. 创建清单
 
-   * 单击Adobe **[!UICONTROL Lists]** Campaign主页 **[!UICONTROL Profiles and targets]** 菜单中的链接。
-   * 单击该 **[!UICONTROL Create]** 按钮，然后单击 **[!UICONTROL Import a list]** 该按钮。
+   * 单击 **[!UICONTROL Lists]** Adobe Campaign主页 **[!UICONTROL Profiles and targets]** 菜单中的链接。
+   * 单击该 **[!UICONTROL Create]** 按钮，然后 **[!UICONTROL Import a list]** 单击该按钮。
 
 1. 选择要导入的文件
 
@@ -423,10 +423,10 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
 1. 选择模板
 
-   * 在Adobe Campaign主页中，单击链 **[!UICONTROL Profiles and targets]** 接，然后 **[!UICONTROL Jobs]**。 Above the list of jobs, click **[!UICONTROL New import]**.
-   * 默认情况 **[!UICONTROL New text import]** 下，保持模板处于选中状态。
+   * 在Adobe Campaign主页中，单 **[!UICONTROL Profiles and targets]** 击链接，然后 **[!UICONTROL Jobs]**。 Above the list of jobs, click **[!UICONTROL New import]**.
+   * 默认情况下， **[!UICONTROL New text import]** 保持选中该模板。
    * 更改标签和描述。
-   * Select **[!UICONTROL Simple import]**.
+   * 选择 **[!UICONTROL Simple import]**。
    * 保留默认作业文件夹。
    * Click **[!UICONTROL Advanced parameters]** and select the **[!UICONTROL Tracking mode]** option to view the details of your import during execution.
 
@@ -442,7 +442,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
-1. 调解
+1. 协调
 
    * 转到 **Recipients (nms:recipient)** 表。
    * Select the **[!UICONTROL Insertion]** operation and leave the default values in the other fields.
@@ -463,7 +463,7 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
       ![](assets/s_ncs_user_import_example06_01.png)
 
-      The **[!UICONTROL Tracking]** mode lets you track the details of the import for each record in the source file. 为此，请在主页中单击，然 **[!UICONTROL Profiles and Targets]** 后 **[!UICONTROL Processes]**&#x200B;选择相关的导入，并查找 **[!UICONTROL General]**、和 **[!UICONTROL Journal]** 选 **[!UICONTROL Rejects]** 项卡。
+      The **[!UICONTROL Tracking]** mode lets you track the details of the import for each record in the source file. 为此，请在主页中单 **[!UICONTROL Profiles and Targets]** 击 **[!UICONTROL Processes]**，然后选择相关导入，并查 **[!UICONTROL General]**&#x200B;找、 **[!UICONTROL Journal]** 和 **[!UICONTROL Rejects]** 选项卡。
 
       * 检查导入进度
 
@@ -493,11 +493,11 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
    执行上面示例 2 中的过程。
 
-1. 调解
+1. 协调
 
-   * 默认情 **[!UICONTROL Update or insert]** 况下保持选中状态。
+   * 默认 **[!UICONTROL Update or insert]** 情况下保持选中状态。
    * Keep the option **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** mode so that existing records in the database will be modified with data from the text file.
-   * 选择字段 **[!UICONTROL Birth date]**，然 **[!UICONTROL Name]** 后为 **[!UICONTROL Company]** 它们分配对帐密钥。
+   * 选择字段 **[!UICONTROL Birth date]**, **[!UICONTROL Name]** 然后 **[!UICONTROL Company]** 为它们分配合并关键项。
 
       ![](assets/s_ncs_user_import_example04_02.png)
 
@@ -543,14 +543,14 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
    在预览文件的第一行时，您可以看到该文件包含某些记录的更新。
 
-1. 调解
+1. 协调
 
    * Go to the table and select the **[!UICONTROL Update]** operation.
    * 选择字段 **[!UICONTROL Reject entity]** 的选 **[!UICONTROL Management of doubles]** 项。
    * Keep the option **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** mode so that existing records in the database will be modified with data from the text file.
-   * 将光标放在节点 **[!UICONTROL Last name (@lastName)]** 上并选择 **[!UICONTROL Update only if destination is empty]** 选项。
+   * 将光标放在节 **[!UICONTROL Last name (@lastName)]** 点上并选择 **[!UICONTROL Update only if destination is empty]** 选项。
    * 为节点重复此 **[!UICONTROL Company (@company)]** 操作。
-   * 为字段和分配对 **[!UICONTROL Birth date]**&#x200B;帐 **[!UICONTROL E-mail]** 密钥 **[!UICONTROL First name]**。
+   * 为字段分配合并关键项 **[!UICONTROL Birth date]**, **[!UICONTROL E-mail]** 然后 **[!UICONTROL First name]**。
 
       ![](assets/s_ncs_user_import_example04_03.png)
 
@@ -592,13 +592,13 @@ Click **[!UICONTROL Next]** to validate this step and display the following step
 
    执行上面示例 2 中的过程。
 
-1. 调解
+1. 协调
 
    * Go to the table and select **[!UICONTROL Update]**.
    * 选择字段 **[!UICONTROL Reject entity]** 的选 **[!UICONTROL Management of doubles]** 项。
    * Leave the option **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** mode for existing records in the database to be modified with data from the text file.
-   * 将光标放在节点 **[!UICONTROL Account number (@account)]** 上并选择选项 **[!UICONTROL Take empty values into account]**。
-   * 选择字段 **[!UICONTROL Birth date]**，然 **[!UICONTROL E-mail]** 后为 **[!UICONTROL First name]** 它们分配对帐密钥。
+   * 将光标放在节 **[!UICONTROL Account number (@account)]** 点上并选择选项 **[!UICONTROL Take empty values into account]**。
+   * 选择字段 **[!UICONTROL Birth date]**, **[!UICONTROL E-mail]** 然后 **[!UICONTROL First name]** 为它们分配合并关键项。
 
       ![](assets/s_ncs_user_import_example04_04.png)
 
