@@ -1,7 +1,7 @@
 ---
-title: 安装Campaign Classic标准包
-seo-title: 安装Campaign Classic标准包
-description: 安装Campaign Classic标准包
+title: 安装 Campaign Classic 标准包
+seo-title: 安装 Campaign Classic 标准包
+description: 安装 Campaign Classic 标准包
 seo-description: null
 page-status-flag: never-activated
 uuid: 1cba9487-52fc-442f-ae99-f8a2c157f25e
@@ -11,19 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d60389eb735fb50188ddc2f2e3df3788a3213446
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
 
-# 安装Campaign Classic内置包{#installing-campaign-standard-packages}
+# Installing Campaign Classic built-in packages{#installing-campaign-standard-packages}
 
 ## 关于内置包 {#campaign-standard-packages}
 
@@ -33,14 +30,14 @@ ht-degree: 2%
 >
 >您只能安装与许可协议中所述选项对应的软件包。
 >
->安装新包可能会影响您的所有平台： 它必须经过测试和验证，然后才能进行最终部署。
+>安装新包可能会影响您的所有平台：它必须经过测试和验证，然后才能进行最终部署。
 >
 >安装包后，将无法卸载它。
 
 安装内置包：
 
 1. 从导入向导客户端控制台 **[!UICONTROL Tools > Advanced > Package import...]** 中访问包Adobe Campaign。
-1. Select **[!UICONTROL Install a standard package]**.
+1. 选择 **[!UICONTROL Install a standard package]**。
 1. 在包列表中，检查要安装的包。
    >[!NOTE]
    >
@@ -68,7 +65,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td> 投放<br /> </td> 
-   <td> 监视投放以及发送消息时遇到的最终问题。 <a href="../../delivery/using/monitoring-a-delivery.md">了解更多</a><br /> </td> 
+   <td> 监视投放以及发送消息时遇到的最终问题。 <a href="../../delivery/using/monitoring-a-delivery.md">了解详情</a><br /> </td> 
    <td> 所有</td> 
   </tr> 
   <tr> 
@@ -77,7 +74,7 @@ ht-degree: 2%
    <td> 营销</td>
   </tr> 
   <tr> 
-   <td> 营销资源语(MRM)<br /> </td> 
+   <td> Marketing resources (MRM)<br /> </td> 
    <td> 通过提供对任务、预算和营销资源的管理和跟踪，以协作模式控制营销活动。 <a href="../../campaign/using/about-marketing-resource-management.md">了解更多</a> <br /> </td> 
    <td> 营销</td> 
   </tr> 
@@ -118,7 +115,7 @@ ht-degree: 2%
    <td> 执行<br /> </td>
   </tr> 
   <tr> 
-   <td> 行渠道<br /> </td> 
+   <td> LINE 渠道<br /> </td> 
    <td> 使用带投放的LINE渠道发送Adobe Campaign。 可选。必填事务消息（消息中心包）。 <a href="../../delivery/using/line-channel.md">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
@@ -133,7 +130,7 @@ ht-degree: 2%
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
-   <td> 移动应用渠道<br /> </td> 
+   <td> 移动应用程序渠道<br /> </td> 
    <td> 使用Adobe Campaign平台，通过应用程序向iOS和Android终端发送个性化通知。 可选。<a href="../../delivery/using/about-mobile-app-channel.md">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
@@ -188,37 +185,37 @@ ht-degree: 2%
    <td> 营销 </td> 
   </tr> 
   <tr> 
-   <td> CRM连接器<br /> </td> 
+   <td> CRM connectors<br /> </td> 
    <td> 提供各种CRM连接器，用于将Adobe Campaign平台关联到第三方系统。  <a href="../../platform/using/crm-connectors.md">了解更多</a> <br /> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
-   <td> 网络Analytics连接器<br /> </td> 
-   <td> 允许Adobe Campaign和AdobeAnalytics通过WebAnalytics连接器包进行交互。 与事务消息（消息中心包）不兼容。 <a href="../../platform/using/adobe-analytics-data-connector.md">了解更多</a><br /> </td> 
+   <td> Web分析连接器<br /> </td> 
+   <td> 允许Adobe Campaign和Adobe Analytics通过Web Analytics连接器包进行交互。 与事务消息（消息中心包）不兼容。 <a href="../../platform/using/adobe-analytics-data-connector.md">了解更多</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
    <td> AEM集成<br /> </td> 
-   <td> 允许您以Adobe Experience Manager方式直接管理电子邮件投放的内容和表单，以便从AEM的内容编辑功能以及Adobe Campaign的投放能力中受益。 <a href="../../integrations/using/about-adobe-experience-manager.md">了解更多</a> <br /> </td> 
+   <td> 允许您直接在Adobe Experience Manager管理电子邮件投放的内容和表单，以从AEM内容编辑功能和Adobe Campaign的投放能力中受益。 <a href="../../integrations/using/about-adobe-experience-manager.md">了解更多</a> <br /> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
    <td> Adobe Marketing Cloud共享受众集成<br /> </td> 
-   <td> 利用Adobe Experience Cloud解决方案和核心服务，您可以交换和共享受众/细分。 需要IMS <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">了解更多</a> <br /> </td> 
+   <td> 允许您与Adobe Experience Cloud解决方案和核心服务交换和共享受众/细分。 需要IMS <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
    <td> 与Adobe Marketing Cloud集成<br /> </td> 
-   <td> 使您能够将受众/区段从不同的Adobe Marketing Cloud解决方案导入和导出到Adobe Campaign。 可选。<a href="../../integrations/using/configuring-ims.md#installing-the-package">了解更多</a> </td> 
+   <td> 使您能够将受众/细分从不同的Adobe Marketing Cloud解决方案导入和导出到Adobe Campaign。 可选。<a href="../../integrations/using/configuring-ims.md#installing-the-package">了解更多</a> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
    <td> 隐私数据保护规定<br /> </td> 
-   <td> 包含其他功能，可帮助您在Campaign Classic中遵守隐私。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">了解更多</a> <br /> </td> 
+   <td> 包含其他功能，可帮助您在Campaign Classic中遵守隐私。 <a href="https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html">了解更多</a> <br /> </td> 
    <td> 所有</td> 
   </tr> 
   <tr> 
-   <td> 传输到中间源 <br /> </td> 
+   <td> Transfer to Mid-Sourcing <br /> </td> 
    <td> 详细说明中间源服务器的安装和配置以及允许第三方以中间源模式发送消息的实例的部署。 可选。<a href="../../installation/using/mid-sourcing-server.md">了解更多</a> <br /> </td> 
    <td> 营销 </td> 
   </tr> 
@@ -228,7 +225,7 @@ ht-degree: 2%
    <td> 中间源 </td> 
   </tr> 
   <tr> 
-   <td> ACS连接器<br /> </td> 
+   <td> ACS Connector<br /> </td> 
    <td> 桥梁Adobe Campaignv7和Adobe Campaign Standard。 它是v7活动中的一个集成功能，可自动将Campaign Standard复制到数据中，从而将两种应用程序的最佳结合起来。 可选。<a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">了解更多</a> <br /> </td> 
    <td> 营销 </td> 
   </tr> 
