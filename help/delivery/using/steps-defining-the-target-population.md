@@ -1,7 +1,7 @@
 ---
-title: 定义目标群
-seo-title: 定义目标群
-description: 定义目标群
+title: 定义目标群体
+seo-title: 定义目标群体
+description: 定义目标群体
 seo-description: null
 page-status-flag: never-activated
 uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
@@ -11,19 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1578'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 定义目标群 {#defining-the-target-population}
+# 定义目标群体 {#defining-the-target-population}
 
 ## 关于目标群 {#about-target-populations}
 
@@ -233,7 +230,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 您可以使用选项组合特定验证目标的定义和种子地址的 **[!UICONTROL Specific target and Seed addresses]** 使用。 相关配置随后在两个单独的子标签中定义。
 
-## 如何在电子邮件中管理种子和验证 {#seeds-and-proofs-video}
+## How to manage seed and proofs in an email {#seeds-and-proofs-video}
 
 在此视频中，您将学习如何在现有电子邮件中添加种子和验证，以及如何发送。
 
