@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 1%
@@ -23,21 +20,21 @@ ht-degree: 1%
 ---
 
 
-# 设置营销活动{#setting-up-marketing-campaigns}
+# Setting up marketing campaigns{#setting-up-marketing-campaigns}
 
 活动包括操作(投放)和流程（导入或提取文件），以及资源(营销文档、投放概要)。 它们用于营销活动。 活动是项目的一部分，项目包含在活动计划中。
 
 要创建营销活动，请执行以下操作：
 
-1. 创建活动: 发现活动及其特征： 标签、类型、开始和结束日期、预算、关联资源、经理和参加者。
+1. 创建活动:发现活动及其特征：标签、类型、开始和结束日期、预算、关联资源、经理和参加者。
 
    请参 [阅创建活动](#creating-a-campaign)。
 
-1. 定义目标群： 创建包含定位查询的工作流。
+1. 定义目标群：创建包含定位查询的工作流。
 
    请参 [阅选择目标群体](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
 
-1. 创建投放: 选择渠道并定义要发送的内容。
+1. 创建投放:选择渠道并定义要发送的内容。
 
    请参阅 [创建投放](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
 
@@ -75,7 +72,7 @@ ht-degree: 1%
 1. 右键单击新创建的计划，然 **后选择新建“项目”文件夹**。
 1. 重复上述步骤以重命名新的项目文件夹及其内部名称。
 
-## 创建活动 {#creating-a-campaign}
+## 创建营销策划{#creating-a-campaign}
 
 ### 添加活动 {#adding-a-campaign}
 
@@ -109,7 +106,7 @@ ht-degree: 1%
 
 然后，您可以编辑刚刚创建的活动并定义其参数。
 
-要打开和配置活动，请从计划中选择它，然后单击 **[!UICONTROL Open]**。
+要打开和配置活动，请从计划中选择它并单击 **[!UICONTROL Open]**。
 
 ![](assets/s_ncs_user_new_op_edit.png)
 
@@ -121,7 +118,7 @@ ht-degree: 1%
 
 周期活动是根据模板的执行计划自动创建的活动。
 
-### 创建循环活动 {#creating-a-recurring-campaign}
+### Creating a recurring campaign {#creating-a-recurring-campaign}
 
 循环活动是从定义要执行的工作流模板和执行计划的特定模板创建的。
 
@@ -173,8 +170,9 @@ ht-degree: 1%
 
    对于每行，您可以添加以下附加选项：
 
-   * **[!UICONTROL To be approved]** : 允许您在工作流中强制投放批准请求。
-   * **[!UICONTROL To be started]** : 允许您在达到开始日期后开始工作流。
+   * **[!UICONTROL To be approved]** :允许您在工作流中强制投放批准请求。
+   * **[!UICONTROL To be started]** :允许您在达到开始日期后开始工作流。
+
    通过 **[!UICONTROL Create in advance for]** 该字段，您可以创建所有涵盖所输入期间的工作流。
 
    在执行该工作 **[!UICONTROL Jobs on campaigns]** 流时，根据在工作流计划中定义的发生情况创建专用活动。 因此，将为每个执行日期创建一个工作流。
@@ -185,7 +183,7 @@ ht-degree: 1%
 
    重复工作流实例的标签由其模板标签和工作流编号组成，其中间有#字符。
 
-   从工作流创建的计划会自动与其关联在选 **[!UICONTROL Workflow]** 项卡的列 **[!UICONTROL Schedule]** 中。
+   从计划创建的工作流会自动与其关联在 **[!UICONTROL Workflow]** 选项卡的列 **[!UICONTROL Schedule]** 中。
 
    ![](assets/s_ncs_user_op_recur_planning_wfs_1.png)
 
@@ -198,7 +196,7 @@ ht-degree: 1%
    >与工作流关联的开始行的计划日期可从工作流的变量中使用以下语法：\
    >`$date(instance/vars/@startPlanningDate)`
 
-### 创建周期活动 {#creating-a-periodic-campaign}
+### Creating a periodic campaign {#creating-a-periodic-campaign}
 
 周期活动是基于特定模板的活动，允许您根据执行计划创建活动实例。 活动实例根据周期活动模板自动创建，具体取决于模板计划中定义的频率。
 
@@ -222,7 +220,7 @@ ht-degree: 1%
    >
    >此工作流是工作流模板。 无法从活动模板执行。
 
-1. 完成循环计划的执行活动模板: 单击按 **[!UICONTROL Add]** 钮并定义开始和结束日期，或通过链接填写执行计划。
+1. 完成循环计划的执行活动模板:单击按 **[!UICONTROL Add]** 钮并定义开始和结束日期，或通过链接填写执行计划。
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
