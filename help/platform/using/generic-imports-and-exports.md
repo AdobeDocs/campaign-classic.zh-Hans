@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 55%
@@ -36,7 +33,7 @@ Adobe Campaign 还提供了一个导入模块，可让您使用外部文件为�
 您可以：
 
 * 创建导入或导出模板并对其进行配置（参见下文）。
-* 创建导入或导出： 请参阅导 [出数据](../../platform/using/exporting-data.md) 或 [导入数据](../../platform/using/importing-data.md)。
+* 创建导入或导出：请参阅导 [出数据](../../platform/using/exporting-data.md) 或 [导入数据](../../platform/using/importing-data.md)。
 * 启动导入或导出并监视其执行。 请参阅 [执行跟踪](#execution-tracking)。
 
 >[!CAUTION]
@@ -57,7 +54,7 @@ Import and export templates are stored in the **[!UICONTROL Resources > Template
 
 >[!NOTE]
 >
->本机模 **[!UICONTROL Import block list]** 板已配置为导入已添加到块列表的电子邮件地址列表。
+>本机模 **[!UICONTROL Import block list]** 板已配置为导入已添加到该列表的电子邮件地址阻止列表。
 > 
 >通过 **[!UICONTROL New text import]** 和 **[!UICONTROL New text export]** 模板，您可以从头开始配置导入或导出。
 
