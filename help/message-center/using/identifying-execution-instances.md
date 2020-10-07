@@ -11,20 +11,20 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: c4b3f1f1-4be7-441e-b348-35d0e26b57d8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 11%
 
 ---
 
 
 # 识别执行实例{#identifying-execution-instances}
 
-必须为每个实例分配一个唯一标识符，以便在控件实例中查看每个执行实例的历史记录。 即使您的控件和执行实例安装在同一台计算机上，此步骤也是必需的。 可以通过部署向导将此标识符手动分配给每个执行实例，也可以通过单击控件实例中的 **Initialize connection** （初始化连接）按钮自动分配给它(请参 [阅Control实例](../../message-center/using/creating-a-shared-connection.md#control-instance))。
+必须为每个实例分配唯一标识符，以便在执行实例中视图每个控制实例的历史记录。 即使您的控件和执行实例安装在同一台计算机上，此步骤也是强制执行的。 此标识符可以通过部署向导手动分配给每个执行实例，也可以通过单击控制实例中的“初始 **化连接** ”按钮自动分配给 [(请参阅](../../message-center/using/creating-a-shared-connection.md#control-instance)控制实例)。
 
-要手动对标识符进行属性化，请打开每个执行实例的部署向导，转到窗口，并将您选择的标识符 **[!UICONTROL Message Center]** 分配给该实例。
+要手动设置标识符的属性，请打开每个执行实例上的部署向导，转 **[!UICONTROL Message Center]** 到窗口，然后为实例分配您选择的标识符。
 
 ![](assets/messagecenter_id_execinstance_001.png)
 
