@@ -1,7 +1,7 @@
 ---
-title: 常规命令
-seo-title: 常规命令
-description: 常规命令
+title: 常用命令
+seo-title: 常用命令
+description: 常用命令
 seo-description: null
 page-status-flag: never-activated
 uuid: f06df8c0-d4ec-4d6b-84d5-f46d852388a3
@@ -11,29 +11,30 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 90718075-87a7-4e9a-935b-571010908e79
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 3%
 
 ---
 
 
-# 常规命令{#usual-commands}
+# 常用命令{#usual-commands}
 
-此部分列出了Adobe Campaign中的常用命令。
+此部分列表Adobe Campaign中的常用命令。
 
 命令 **nlserver** 是整个Adobe Campaign应用程序的输入命令。
 
 此命令的语法如下： **nlserver **`<command>`****`<arguments>`****
 
-该参 **`<command>`** 数与模块相对应。
+该参 **`<command>`** 数对应于模块。
 
 >[!NOTE]
 >
 >* 无论如何，您都可以添加 **-noconsole参数** ，以删除在启动模块后显示的注释。
->* 相反，您可以添加参数 **-verbose** 以显示详细信息。
+>* 相反，您可以添加参数- **verbose** 以显示详细信息。
+
 >
 
 
@@ -42,9 +43,9 @@ source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 >[!NOTE]
 >
->要列出所有模块，您需要使用nlserver pdump **命令** 。
+>要列表所有模块，您需要使用nlserver **pdump命令** 。
 
-可以添加参数 **-谁** ，以列出正在进行的连接（数据库和应用程序）。
+可以添加参 **数** -谁列表正在进行的连接（数据库和应用程序）。
 
 ```
 nlserver pdump -who
@@ -66,9 +67,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-另一个有用的命令是 **nlserver monitor**。 它列出监视XML文件(在Adobe Campaign客户端或通过 **monitor.jsp** 网页获取)。
+另一个有用的命令是 **nlserver monitor**。 它列表监视XML文件(在Adobe Campaign客户端或通过 **monitor.jsp** 网页获取)。
 
-您可以添加缺失参 **数** ，以列出缺失的模块（模块错误、模块关闭等）
+可以添加缺少参 **数** ，以列表缺失的模块（模块错误、模块关闭等）
 
 ```
 nlserver monitor -missing
@@ -82,7 +83,7 @@ wfserver@test
 
 ## 模块启动命令 {#module-launch-commands}
 
-启动模块的语法仍将具有以下格式：
+用于启动模块的语法仍将具有以下格式：
 
 ```
 nlserver start <module>@<INSTANCE>
@@ -94,7 +95,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** 对应于在配置文件中输入的实例名称，或单实例模 **块的默认** 。
+>**`<instance>`** 对应于在配置文件中输入的实例名称，或单实例 **模块** （默认值）。
 
 ## 关闭服务 {#shut-down-services}
 
@@ -110,7 +111,7 @@ nlserver stop <module>@<INSTANCE>
 
       >[!NOTE]
       >
-      >从20.1开始，我们建议改用以下命令（对于Linux）:系 **统mctl停止nlserver**
+      >从20.1开始，我们建议改用以下命令（对于Linux）: **systemctl停止nserver**
 
    * 在Windows中：
 
@@ -118,7 +119,7 @@ nlserver stop <module>@<INSTANCE>
       net stop nlserver6
       ```
 
-* 否则，请在Adobe Campaign帐户中：
+* 否则，在Adobe Campaign帐户中：
 
    ```
    nlserver shutdown 
@@ -134,17 +135,17 @@ nlserver stop <module>@<INSTANCE>
 
       >[!NOTE]
       >
-      >从20.1开始，我们建议改用以下命令（对于Linux）:系 **统mctl启动nlserver**
+      >从20.1开始，我们建议改用以下命令（对于Linux）: **systemctl开始nlserver**
 
-   * 在Windows中：网络启动nlserver6
+   * 在Windows中：网络开始nlserver6
 
-* 否则，在Adobe Campaign帐户中：nlserver watchdog -svc -noconsole ****
+* 否则，在Adobe Campaign帐户中： **nlserver watchgdog -svc -noconsole**
 
 ## config命令 {#the-config-command}
 
-使用 **config命令** ，可以管理服务器配置，包括重新配置数据库连接。
+config命 **令可** 用于管理服务器配置，包括重新配置数据库连接。
 
-使用 **nlserver可执行文件的config** 命令和-setdblogin ******** 参数。
+将nlserver可 **执行文** 件的 **config命令与-setdblogin参数一** 起使用 **** 。
 
 ```
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -156,17 +157,18 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 输入密码。
 
-要更改内部 **密码** : **nlserver config -internalpassword**
+要更改内部 **密码** : **nlserver config -internpassword**
 
 >[!CAUTION]
 >
->要使用内部标 **识符登录** ，您需要事先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+>要使用内部标 **识** 符登录，您需要事先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/campaign-server-configuration.md#internal-identifier)。
 
 >[!NOTE]
 >
->* 通常，您可以使用config命令，而不是手动修改配 **置文件**
->* 要获取参数列表，请使 **用-?** 参数：nlserver **config -?**
+>* 通常，您可以使用config命令，而不是手动修改配 **置文** 件
+>* 要获取参数的列表，请使 **用-?** 参数： **nlserver config -?**
 >* 对于Oracle数据库，不能指定帐户。 语法如下：
+
 >
 >  
 nlserver config -setdblogin:Oracle:test6@dbserver
