@@ -1,6 +1,6 @@
 ---
-title: Adobe Campaign经典事务消息传递体系结构
-description: 本节介绍Adobe Campaign经典事务消息传递体系结构。
+title: Adobe Campaign Classic事务消息体系结构
+description: 本节介绍Adobe Campaign Classic事务消息传递体系结构。
 page-status-flag: never-activated
 uuid: a8fe7a37-6df7-49f4-838f-97a72e4a38f3
 contentOwner: sauviat
@@ -9,14 +9,11 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 discoiquuid: a910d5fe-cef4-47d8-b3bc-0055ef0d1afd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e6f8eb6f4ffc3ffe9dbc643cf0edeef439c0f969
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -52,7 +49,7 @@ ht-degree: 0%
 
 ## 安装实例 {#installing-instances}
 
-安装事务性消息包时，需要采取多种预防措施。 Adobe建议您在投入生产之前先在测试环境中工作。 您还需要具有兼容的Adobe Campaign许可证。 有关详细信息，请与您的Adobe客户经理联系。
+安装事务性消息包时，需要采取多种预防措施。 Adobe建议您在投入生产之前在测试环境中工作。 您还需要具有兼容的Adobe Campaign许可证。 有关详细信息，请与您的Adobe客户经理联系。
 
 >[!IMPORTANT]
 >
@@ -130,7 +127,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 * 移动设备ID(**Android的** registrationId,iOS **的** deviceToken)。 此ID表示通知将发送到的“地址”。
 * 指向移动应用程序或集成密钥(**uuid**)的链接，用于恢复特定于应用程序的连接信息。
-* 将通知发送到的渠道(**whistedChannel**): 41适用于iOS,42适用于Android
+* 将通知发送到的渠道(**whistedChannel**):41适用于iOS,42适用于Android
 * 所有对个性化有用的数据
 
 以下是包含此信息的事件的示例：
@@ -176,21 +173,22 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
    ![](assets/line_config_mc.png)
 
-   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** : 根据需要为您的外部帐户命名。
-   * **[!UICONTROL Type]** : 选择 **[!UICONTROL External database]** 。
+   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** :根据需要为您的外部帐户命名。
+   * **[!UICONTROL Type]** :选择 **[!UICONTROL External database]** 。
    * **[!UICONTROL Enabled]** 框中，选择“ 0 ”。
+
    从 **[!UICONTROL Connection]** 类别:
 
-   * **[!UICONTROL Type]** : 选择数据库服务器，例如PostgresSQL。
-   * **[!UICONTROL Server]** : 输入数据库服务器URL。
-   * **[!UICONTROL Account]** : 输入您的数据库帐户。
+   * **[!UICONTROL Type]** :选择数据库服务器，例如PostgresSQL。
+   * **[!UICONTROL Server]** :输入数据库服务器URL。
+   * **[!UICONTROL Account]** :输入您的数据库帐户。
 
       >[!NOTE]
       >
-      >联合数据访问库用户需要对以下表具有读取权限才能进行连接： XtkOption、NmsVisitor、NmsVisitorSub、NmsService、NmsBroadLogRtEvent、NmsBroadLogBatchEvent、NmsTrackingLogRtEvent、NmsTrackingLogBatchEvent、NmsRtEvent、NmsBatchEvent、NmsBroadLogMsg、NmsTrackingUrl、NmsDelivery、NmsWebTrackingLogXtkFolder。
+      >联合数据访问库用户需要对以下表具有读取权限才能进行连接：XtkOption、NmsVisitor、NmsVisitorSub、NmsService、NmsBroadLogRtEvent、NmsBroadLogBatchEvent、NmsTrackingLogRtEvent、NmsTrackingLogBatchEvent、NmsRtEvent、NmsBatchEvent、NmsBroadLogMsg、NmsTrackingUrl、NmsDelivery、NmsWebTrackingLogXtkFolder。
 
-   * **[!UICONTROL Password]** : 输入数据库帐户的口令。
-   * **[!UICONTROL Database]** : 输入执行实例的数据库名称。
+   * **[!UICONTROL Password]** :输入数据库帐户的口令。
+   * **[!UICONTROL Database]** :输入执行实例的数据库名称。
    * **[!UICONTROL Target of an HTTP relay to remote database's account]** 框中，选择“ 0 ”。
 
 
@@ -198,37 +196,40 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
    ![](assets/line_config_mc_1.png)
 
-   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** : 根据需要为您的外部帐户命名。
-   * **[!UICONTROL Type]** : 选择 **[!UICONTROL External database]** 。
+   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** :根据需要为您的外部帐户命名。
+   * **[!UICONTROL Type]** :选择 **[!UICONTROL External database]** 。
    * 必须选中“已启用”框。
+
    从 **[!UICONTROL Connection]** 类别:
 
-   * **[!UICONTROL Type]** : 选择 **[!UICONTROL HTTP relay to remote Database]** 。
-   * **[!UICONTROL Server]** : 输入活动的服务器URL。
-   * **[!UICONTROL Account]** : 输入用于访问执行实例的帐户。
-   * **[!UICONTROL Password]** : 输入用于访问执行实例的帐户的口令。
-   * **[!UICONTROL Data Source]** : 输入以下语法 **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** 。
+   * **[!UICONTROL Type]** :选择 **[!UICONTROL HTTP relay to remote Database]** 。
+   * **[!UICONTROL Server]** :输入活动的服务器URL。
+   * **[!UICONTROL Account]** :输入用于访问执行实例的帐户。
+   * **[!UICONTROL Password]** :输入用于访问执行实例的帐户的口令。
+   * **[!UICONTROL Data Source]** :输入以下语法 **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** 。
 
 
 1. 使用以 **[!UICONTROL Execution instance]** 下配置在 **您的营销实例** 中创建外部帐户，以创建数据同步工作流：
 
    ![](assets/line_config_mc_2.png)
 
-   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** : 根据需要为您的外部帐户命名。
-   * **[!UICONTROL Type]** : 选择 **[!UICONTROL Execution instance]** 。
+   * **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]** :根据需要为您的外部帐户命名。
+   * **[!UICONTROL Type]** :选择 **[!UICONTROL Execution instance]** 。
    * 必须选中“已启用”框。
+
    从 **[!UICONTROL Connection]** 类别:
 
-   * **[!UICONTROL URL]** : 输入执行实例的URL。
-   * **[!UICONTROL Account]** : 输入用于访问执行实例的帐户。
-   * **[!UICONTROL Password]** : 输入用于访问执行实例的帐户的口令。
+   * **[!UICONTROL URL]** :输入执行实例的URL。
+   * **[!UICONTROL Account]** :输入用于访问执行实例的帐户。
+   * **[!UICONTROL Password]** :输入用于访问执行实例的帐户的口令。
+
    从 **[!UICONTROL Account connection method]** 类别:
 
-   * **[!UICONTROL Method]** : 选择 **[!UICONTROL Federated Data Access (FDA)]** 。
-   * **[!UICONTROL FDA account]** : 从下拉列表中选择您的联合数据访问帐户。
-   * 单击&#x200B;**[!UICONTROL Create the archiving workflow]**&#x200B;按钮。
+   * **[!UICONTROL Method]** :选择 **[!UICONTROL Federated Data Access (FDA)]** 。
+   * **[!UICONTROL FDA account]** :从下拉列表中选择您的联合数据访问帐户。
+   * 单击 **[!UICONTROL Create the archiving workflow]** 按钮。
    * 单击按 **[!UICONTROL Create data synchronization workflow]** 钮以创建LINE数据同步工作流。
 
 
 
-1. 您现在可以开始创建事务性消息。 For more on this, refer to this [page](../../message-center/using/introduction.md).
+1. 您现在可以开始创建事务性消息。 有关详细信息，请参见此 [ 页面](../../message-center/using/introduction.md)。
