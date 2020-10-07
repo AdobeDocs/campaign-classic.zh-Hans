@@ -1,7 +1,7 @@
 ---
-title: 关于Web服务
-seo-title: 关于Web服务
-description: 关于Web服务
+title: 关于 Web 服务
+seo-title: 关于 Web 服务
+description: 关于 Web 服务
 seo-description: null
 page-status-flag: never-activated
 uuid: f0b21cb3-aa75-4f54-a9f5-64e880f93e53
@@ -11,19 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 65919173-3ce0-4d98-936b-f4581df536ae
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
 
-# 关于Web服务{#about-web-services}
+# 关于 Web 服务{#about-web-services}
 
 ## Adobe CampaignAPI的定义 {#definition-of-adobe-campaign-apis}
 
