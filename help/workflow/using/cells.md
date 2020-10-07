@@ -11,22 +11,22 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: f7187d42-56e9-4681-b172-22abd43ecd29
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '128'
+ht-degree: 9%
 
 ---
 
 
 # 单元格{#cells}
 
-活 **[!UICONTROL Cells]** 动以数据列的形式提供各种子集的视图。 它简化了子集操作，并且还设计为鼓励个性化可能性。
+该 **[!UICONTROL Cells]** 活动以数据列的形式提供各种子集的视图。 它简化了子集操作，还设计为鼓励个性化可能性。
 
 ![](assets/wf_split_cells.png)
 
-可以根据用户需求配置此活动以输入特定参数。 默认情况下，每个子集的详细信息都会通过选项卡和选项卡在专用窗口中 **[!UICONTROL Selection]** 进行 **[!UICONTROL Advanced]** 详细说明。 在以下示例中，表单已被修改：已添 **[!UICONTROL Data]** 加选项卡，以启用选件与每个子集的优先级的关联。
+此活动可配置为根据用户需求输入特定参数。 默认情况下，每个子集的详细信息都会通过选项卡和选项卡在专用窗口中 **[!UICONTROL Selection]** 进行 **[!UICONTROL Advanced]** 详细介绍。 在以下示例中，表单已被修改：已添 **[!UICONTROL Data]** 加选项卡，以启用优惠与每个子集的优先级的关联。
 
 ![](assets/wf_split_cells_with_customization.png)
 
@@ -55,4 +55,4 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
                 </container>
 ```
 
-Adobe Campaign中的入门级表单个性化是专家用户专用的。 For more on this, refer to this [section](../../configuration/using/identifying-a-form.md).
+Adobe Campaign中的入口表单个性化是专家用户专用的。 有关更多信息，请参阅此](../../configuration/using/identifying-a-form.md)章节[。
