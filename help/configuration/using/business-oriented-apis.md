@@ -1,7 +1,7 @@
 ---
-title: 面向业务的API
-seo-title: 面向业务的API
-description: 面向业务的API
+title: 面向业务的 API
+seo-title: 面向业务的 API
+description: 面向业务的 API
 seo-description: null
 page-status-flag: never-activated
 uuid: ddb6e5cf-dfe0-4dc9-ac5b-fab21827b874
@@ -11,19 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: e7b3ffca-c85f-498d-89b4-23fcff59de49
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# 面向业务的API{#business-oriented-apis}
+# 面向业务的 API{#business-oriented-apis}
 
 业务API特定于每种类型的对象。 它们对以下方面有影响：
 
@@ -42,7 +39,7 @@ ht-degree: 0%
 
 * 内容管理
 * 订阅管理，请 [参阅订阅(nms:订阅](#subscribe--nms-subscription-) ) [和取消订阅(nms:订阅)](#unsubscribe--nms-subscription-)。
-* 数据流程： 进口，出口。
+* 数据流程：进口，出口。
 
 本节详细介绍“订阅”、“取消订阅”和“SubmitDelivery”服务的使用。
 
@@ -77,9 +74,9 @@ ht-degree: 0%
 
 除错误外，此调用不返回任何数据。
 
-### 示例 {#examples}
+### 示例{#examples}
 
-订阅电子邮件地址为收件人合并关键项: 输入XML文档必须引用此字段中的电子邮件地址和键的定义。
+订阅电子邮件地址为收件人合并关键项:输入XML文档必须引用此字段中的电子邮件地址和键的定义。
 
 ```
 <recipient _key="email" email= "john.doe@adobe.com"/>
@@ -150,7 +147,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果未将服务名称指定为参数，则收件人会自动显示在块列表(@blockList=&quot;1&quot;)上。
+>如果未将服务名称指定为参数，则收件人将自动阻止列表(阻止列表@=&quot;1&quot;)。
 
 除错误外，此调用不返回任何数据。
 
