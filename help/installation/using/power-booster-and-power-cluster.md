@@ -1,7 +1,7 @@
 ---
-title: 电源升压器和电源群集
-seo-title: 电源升压器和电源群集
-description: 电源升压器和电源群集
+title: Power Booster 和 Power Cluster
+seo-title: Power Booster 和 Power Cluster
+description: Power Booster 和 Power Cluster
 seo-description: null
 page-status-flag: never-activated
 uuid: 4d23ed42-a368-4bd6-afaf-48452e253d19
@@ -11,34 +11,34 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 715d2b69-5b47-4890-8b7d-1dc0a0d4ead8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 7%
 
 ---
 
 
-# 电源升压器和电源群集{#power-booster-and-power-cluster}
+# Power Booster 和 Power Cluster{#power-booster-and-power-cluster}
 
 ## 概述 {#overview}
 
-Adobe Campaign为您提供两组预先打包的架构选项，用于确定部署的尺寸：
+Adobe Campaign为您提供两组预封装的体系结构选项，用于调整部署尺寸：
 
-* **增力器**
+* **助力器**
 
-   此选项支持与主Adobe Campaign应用程序实例分离的单个附加执行实例。 专用执行实例可以远程或由第三方托管。 实施后，电子邮件执行、跟踪、镜像页面和弹回消息将独立于中央应用程序功能进行处理。
+   此选项支持与主执行实例应用程序实例分离的单个附加Adobe Campaign。 专用执行实例可以远程或由第三方托管。 实施时，电子邮件执行、跟踪、镜像页面和弹回消息将独立于中央应用程序功能进行处理。
 
 * **电源群集**
 
-   此选项提供对2到N个群集执行实例的支持，这些实例与Adobe Campaign主应用程序实例相对于给定应用程序脱钩。 群集可以远程托管、在分布式部署中由第三方托管。 除了流程隔离的优势外，Adobe Campaign Power Cluster选项还支持冗余和扩展战略，使用商品硬件简化SLA或性能的演化。
+   此选项提供对2到N个群集执行实例的支持，这些群集Adobe Campaign与主应用程序实例相关于给定应用程序去耦。 群集可以远程托管、在分布式部署中托管以及由第三方托管。 除了流程隔离的好处外，Adobe Campaign电源群集选项还支持冗余并使用商品硬件扩展战略，以简化SLA或性能的演化。
 
 ![](assets/architectural_options_diagram.png)
 
 ## 符合条件的应用程序 {#eligible-applications}
 
-Power Booster和Power Cluster选项可供以下应用程序使用：
+“Power Booster（电源升压）”和“Power Cluster（电源群集）”选项可供以下应用程序使用：
 
 * 营销活动
 * 投放
@@ -51,45 +51,45 @@ Power Booster和Power Cluster选项可供以下应用程序使用：
   <tr> 
    <td> </td> 
    <td> <strong>标准架构</strong><br /> </td> 
-   <td> <strong>增力器</strong><br /> </td> 
+   <td> <strong>助力器</strong><br /> </td> 
    <td> <strong>电源群集</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 电子邮件营销活动和出站互动<br /> </td> 
-   <td> 每月最多约3000万封电子邮件<br /> </td> 
+   <td> 电子邮件活动和出站交互<br /> </td> 
+   <td> 每月最多可收到约3000万封电子邮件<br /> </td> 
    <td> 每月3000万到1亿封电子邮件<br /> </td> 
    <td> 每月超过1亿封电子邮件<br /> </td> 
   </tr> 
   <tr> 
-   <td> 交易消息<br /> </td> 
+   <td> 事务型消息传递<br /> </td> 
    <td> 每台执行服务器每小时50,000<br /> </td> 
    <td> 每台执行服务器每小时50,000<br /> </td> 
    <td> 每台执行服务器每小时50,000<br /> </td> 
   </tr> 
   <tr> 
    <td> 可用性<br /> </td> 
-   <td> 主数据库的数据库<br /> </td> 
-   <td> 24/7，执行实例的维护窗口和下载时间除外<br /> </td> 
+   <td> 主数据库的<br /> </td> 
+   <td> 24/7,执行实例的维护窗口和下载时间除外<br /> </td> 
    <td> 24/7/365服务可能<br /> </td> 
   </tr> 
   <tr> 
    <td> 安全性<br /> </td> 
    <td> 数据集市可从公共Internet访问<br /> </td> 
-   <td> 数据集市与面向Internet的正面组件相分离<br /> </td> 
-   <td> 数据集市与面向Internet的正面组件相分离<br /> </td> 
+   <td> 数据市场与面向Internet的正面组件相分离<br /> </td> 
+   <td> 数据市场与面向Internet的正面组件相分离<br /> </td> 
   </tr> 
   <tr> 
    <td> 部署模板<br /> </td> 
    <td> 全部在一个站点上（可以是内部部署或在云中）<br /> </td> 
-   <td> 可在云中执行的内部部署营销<br /> </td> 
-   <td> 在云中执行内部部署营销；在不同的可能地位执行<br /> </td> 
+   <td> 通过在云中执行实现预先营销<br /> </td> 
+   <td> 在云中执行，实现事先营销；可能在不同地区执行<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 建议 {#recommendations}
+## 建议{#recommendations}
 
-* 执行实例必须专用于服务。 无法为尚未订阅的服务安装包。 例如，如果您订阅了 **Message Center** （消息中心）服务的 **Power Booster** （电源升级）选项，则只能在专用执行实例 **[!UICONTROL Execution of transactional messages]** 上安装该包。 请检查您的许可协议。
-* 由于专用实例（或群集）是Adobe Campaign实例，因此推荐与主实例相同。 For more on this, refer to [this document](../../production/using/foreword.md).
-* 要从数据库／硬件组件的视角正确配置实例，请与Adobe Campaign Professional services联系。
+* 执行实例必须专用于服务。 无法为尚未订阅的服务安装包。 例如，如果您订阅了消息 **中心服务** 的Power Booster选 **项** ，则只能在专用执行实例 **[!UICONTROL Execution of transactional messages]** 上安装该包。 请核实您的许可协议。
+* 由于专用实例（或群集）是Adobe Campaign实例，因此建议与主实例相同。 For more on this, refer to [this document](../../production/using/foreword.md).
+* 要从视图库／硬件组件点正确配置实例，请与Adobe Campaign专业服务部门联系。
 
