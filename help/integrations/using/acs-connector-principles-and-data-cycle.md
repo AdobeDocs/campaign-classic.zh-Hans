@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 discoiquuid: 64d87bea-2376-4684-ac93-6ca56fe0f262
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1996'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# ACS连接器原理和数据周期{#acs-connector-principles-and-data-cycle}
+# ACS Connector principles and data cycle{#acs-connector-principles-and-data-cycle}
 
 ## 简介 {#introduction}
 
@@ -39,16 +36,16 @@ ACS连接器桥Adobe Campaignv7和Adobe Campaign Standard。 它是v7活动中�
 >
 >ACS连接器仅适用于托管和混合架构。 它不适用于完整的内部部署安装。
 >
->要使用此功能，您必须连接到活动与Adobe ID(IMS)。 请参 [阅通过Adobe ID连接](../../integrations/using/about-adobe-id.md)。
+>要使用此功能，您必须连接到Adobe ID(IMS)的活动。 See [Connecting via an Adobe ID](../../integrations/using/about-adobe-id.md).
 
 此文档显示ACS连接器功能。 以下各节提供了有关该功能如何复制数据的信息以及有关如何使用复制用户档案的说明。
 
-* [流程](#process): ACS连接器概述以及如何管理数据复制。
-* [实施](#implementation): 如何开始使用ACS连接器的概述以及如何复制基本和高级数据的说明。
-* [同步用户档案](../../integrations/using/synchronizing-profiles.md): 有关如何复制用户档案以及如何使用投放的说明。
-* [同步受众](../../integrations/using/synchronizing-audiences.md): 关于如何在活动v7中目标列表收件人，然后将列表复制到Campaign Standard作为受众的说明。
-* [同步Web应用程序](../../integrations/using/synchronizing-web-applications.md): 有关如何将活动v7 Web应用程序链接到Campaign Standard的说明。
-* [ACS连接器故障诊断](../../integrations/using/troubleshooting-the-acs-connector.md): 查看常见问题的答案。
+* [流程](#process):ACS连接器概述以及如何管理数据复制。
+* [实施](#implementation):如何开始使用ACS连接器的概述以及如何复制基本和高级数据的说明。
+* [同步用户档案](../../integrations/using/synchronizing-profiles.md):有关如何复制用户档案以及如何使用投放的说明。
+* [同步受众](../../integrations/using/synchronizing-audiences.md):关于如何在活动v7中目标列表收件人，然后将列表复制到Campaign Standard作为受众的说明。
+* [同步Web应用程序](../../integrations/using/synchronizing-web-applications.md):有关如何将活动v7 Web应用程序链接到Campaign Standard的说明。
+* [ACS连接器故障诊断](../../integrations/using/troubleshooting-the-acs-connector.md):查看常见问题的答案。
 
 >[!NOTE]
 >
@@ -101,18 +98,18 @@ ACS连接器在活动v7和Campaign Standard之间同步隔离。
 
 有关如何使用复制投放在Campaign Standard中发送用户档案的说明，请参阅同 [步用户档案](../../integrations/using/synchronizing-profiles.md)。 还提供了在退订v7和Campaign Standard之间共享活动数据的其他说明。
 
-### 限制 {#limitations}
+### 限制{#limitations}
 
 复制用户档案可供投放使用，但在Campaign Standard方面有某些限制。 查看以下项目，了解如何最好地管理它们。
 
-* **Campaign Standard的只读用户档案**: 复制的用户档案在Campaign Standard中为只读。 但是，您可以在活动v7中编辑收件人，并且修改会由ACS连接器以Campaign Standard自动更新。
-* **用户档案在Campaign Standard中创建**: ACS连接器将收件人数据从活动v7复制到Campaign Standard。 因此，源自Campaign Standard的用户档案不会复制到活动v7。
-* **收件人的基本Campaign Standard数据**: ACS连接器复制适合收件人的Campaign Standard数据。 它包括收件人的姓名、地址、电子邮件地址、移动电话号码、家庭电话号码和其他相关的联系信息。 如果活动v7中提供的其他收件人字段和自定义定位表对您的工作流至关重要，请咨询您的顾问。
-* **导入隔离的用户档案**: 不希望与列表联系的用户档案可以作为隔离的用户档案导入活动v7或Campaign Standard。 用户档案的状态包括在应用程序之间的隔离同步中，不会在投放中使用。
-* **取消订阅Campaign Standard中的服务**: 取消订阅投放的选项未从Campaign Standard同步到活动v7。 但是，您可以配置Campaign Standard投放，将其退订链接定向到活动v7。 单击退订链接的收件人的用户档案在活动v7中更新，并将数据复制到Campaign Standard。 请参 [阅更改退订链接](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link)。
+* **Campaign Standard的只读用户档案**:复制的用户档案在Campaign Standard中为只读。 但是，您可以在活动v7中编辑收件人，并且修改会由ACS连接器以Campaign Standard自动更新。
+* **用户档案在Campaign Standard中创建**:ACS连接器将收件人数据从活动v7复制到Campaign Standard。 因此，源自Campaign Standard的用户档案不会复制到活动v7。
+* **收件人的基本Campaign Standard数据**:ACS连接器复制适合收件人的Campaign Standard数据。 它包括收件人的姓名、地址、电子邮件地址、移动电话号码、家庭电话号码和其他相关的联系信息。 如果活动v7中提供的其他收件人字段和自定义定位表对您的工作流至关重要，请咨询您的顾问。
+* **导入隔离的用户档案**:不希望与列表联系的用户档案可以作为隔离的用户档案导入活动v7或Campaign Standard。 用户档案的状态包括在应用程序之间的隔离同步中，不会在投放中使用。
+* **取消订阅Campaign Standard中的服务**:取消订阅投放的选项未从Campaign Standard同步到活动v7。 但是，您可以配置Campaign Standard投放，将其退订链接定向到活动v7。 单击退订链接的收件人的用户档案在活动v7中更新，并将数据复制到Campaign Standard。 请参 [阅更改退订链接](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link)。
 * 只有电子邮件广告和跟踪日志从Campaign Standard复制到活动v7。
 
-### 计费 {#billing}
+### 付费 {#billing}
 
 您选择发送投放、活动v7或Campaign Standard，不会影响计费。 在活动v7和Campaign Standard之间对帐单信息进行协调。 因此，如果您使用两个应用程序将投放发送到同一收件人，它仍计为一个活动用户档案。
 
@@ -146,20 +143,20 @@ ACS连接器有两种实现类型。 这两个任务始终由Adobe Campaign咨�
 
 ![](assets/acs_connect_implementation_3.png)
 
-* **[!UICONTROL `[ACS] Quarantine synchronization`]** (quarantineSync): 此工作流将同步所有隔离信息。 活动v7中的所有新隔离都被复制到Campaign Standard。 所有来自Campaign Standard的新隔离都被复制到活动v7。 这保证所有排除规则在活动v7和Campaign Standard之间同步。
-* **[!UICONTROL `[ACS] Security group synchronization`]** (securityGroupSync): 此工作流用于权限转换。 请参阅 [权限转换](#rights-conversion)。
+* **[!UICONTROL `[ACS] Quarantine synchronization`]** (quarantineSync):此工作流将同步所有隔离信息。 活动v7中的所有新隔离都被复制到Campaign Standard。 所有来自Campaign Standard的新隔离都被复制到活动v7。 这保证所有排除规则在活动v7和Campaign Standard之间同步。
+* **[!UICONTROL `[ACS] Security group synchronization`]** (securityGroupSync):此工作流用于权限转换。 请参阅 [权限转换](#rights-conversion)。
 
 以下复制工作流可作为“准备使用”模板使用。 它们需要由您的Adobe Campaign顾问实施。
 
 ![](assets/acs_connect_implementation_2.png)
 
-* **[!UICONTROL `[ACS] Profile replication`]** (newProfileReplication): 此增量工作流将收件人复制到Campaign Standard。 默认情况下，它复制所有现成的收件人字段。 请参阅 [默认收件人字段](#default-recipient-fields)。
-* **[!UICONTROL `[ACS] Service replication`]** (newServiceReplication): 此增量式工作流将所选服务复制到Campaign Standard。 请参阅同步Web应 [用程序的用例](../../integrations/using/synchronizing-web-applications.md)。
-* **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication): 此增量式工作流程将选定的Web应用程序复制到Campaign Standard。 活动v7 Web应用程序将显示为Campaign Standard中的登陆页。 请参阅同步Web应 [用程序的用例](../../integrations/using/synchronizing-web-applications.md)。
-* **[!UICONTROL `[ACS] New replication`]** (newReplication): 此增量式工作流是一个可用于复制自定义表的示例。 请参 [阅高级实施](#advanced-implementation)。
-* **[!UICONTROL `[ACS] Delivery-mesage replication`]** (newDlvMsgEqualition): 此增量工作流将投放消息从Campaign Standard复制到活动v7。
-* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): 此增量式工作流程将投放ID、电子邮件广泛日志和电子邮件跟踪日志从Campaign Standard复制到活动v7。 它只考虑从Campaign Standard发送到属于收件人v7的nms:投放表的用户档案的活动。
-* **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): 此增量式工作流程将投放ID、电子邮件广泛日志和电子邮件跟踪日志从Campaign Standard复制到活动v7。 它只考虑从Campaign Standard发送到作为活动v7特定表(定义nms:收件人除外)的用户档案的投放。
+* **[!UICONTROL `[ACS] Profile replication`]** (newProfileReplication):此增量工作流将收件人复制到Campaign Standard。 默认情况下，它复制所有现成的收件人字段。 请参阅 [默认收件人字段](#default-recipient-fields)。
+* **[!UICONTROL `[ACS] Service replication`]** (newServiceReplication):此增量式工作流将所选服务复制到Campaign Standard。 请参阅同步Web应 [用程序的用例](../../integrations/using/synchronizing-web-applications.md)。
+* **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication):此增量式工作流程将选定的Web应用程序复制到Campaign Standard。 活动v7 Web应用程序将显示为Campaign Standard中的登陆页。 请参阅同步Web应 [用程序的用例](../../integrations/using/synchronizing-web-applications.md)。
+* **[!UICONTROL `[ACS] New replication`]** (newReplication):此增量式工作流是一个可用于复制自定义表的示例。 请参 [阅高级实施](#advanced-implementation)。
+* **[!UICONTROL `[ACS] Delivery-mesage replication`]** (newDlvMsgEqualition):此增量工作流将投放消息从Campaign Standard复制到活动v7。
+* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication):此增量式工作流程将投放ID、电子邮件广泛日志和电子邮件跟踪日志从Campaign Standard复制到活动v7。 它只考虑从Campaign Standard发送到属于收件人v7的nms:投放表的用户档案的活动。
+* **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication):此增量式工作流程将投放ID、电子邮件广泛日志和电子邮件跟踪日志从Campaign Standard复制到活动v7。 它只考虑从Campaign Standard发送到作为活动v7特定表(定义nms:收件人除外)的用户档案的投放。
 
 ### 默认收件人字段 {#default-recipient-fields}
 
@@ -202,7 +199,7 @@ ACS连接器有两种实现类型。 这两个任务始终由Adobe Campaign咨�
    <td> @middleName<br /> </td> 
   </tr> 
   <tr> 
-   <td> 移动<br /> </td> 
+   <td> 手机<br /> </td> 
    <td> @mobilePhone<br /> </td> 
   </tr> 
   <tr> 
