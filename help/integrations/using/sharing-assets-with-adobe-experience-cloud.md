@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 discoiquuid: d10624ea-d961-4162-879b-1754f897d763
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 与Adobe Experience Cloud共享资产{#sharing-assets-with-adobe-experience-cloud}
+# Sharing assets with Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
 Experience Cloud资产提供一个集中的营销就绪型资产存储库，您可以在各种解决方案之间共享这些资产。 资产是数字文档、图像、视频或音频文件。
 
@@ -32,7 +29,7 @@ Experience Cloud资产提供一个集中的营销就绪型资产存储库，您�
 * 资产存储、管理界面、嵌入式选择界面（通过解决方案访问）。
 * 与Creative Cloud和Experience Cloud解决方案集成。
 
-在Adobe Campaign中编辑电子邮件投放或登陆页时，可以放置Adobe Experience Cloud库中的资源。 根据您使用的解决方案，这些资产可以存储在资产核心服务或Adobe Experience Manager资产中。
+在Adobe Campaign中编辑电子邮件投放或登陆页时，可以放置Adobe Experience Cloud图书馆的资源。 根据您使用的解决方案，这些资产可以存储在Assets核心服务或Adobe Experience Manager资产中。
 
 此文档中详细介绍了不同的 [可用库](https://docs.adobe.com/content/help/en/core-services/interface/assets/experience-cloud-assets.html)。
 
@@ -40,5 +37,5 @@ Experience Cloud资产提供一个集中的营销就绪型资产存储库，您�
 
 >[!NOTE]
 >
->如果您使用Adobe Campaign内部部署，则不可以与资产核心服务和AEM Assets集成，除非AEM Assets也是内部部署。
+>如果您使用Adobe Campaign内部部署，则不提供与Assets核心服务和AEM Assets的集成，除非AEM Assets也是内部部署。
 
