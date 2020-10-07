@@ -11,26 +11,26 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 41338d32-b95c-45ae-bee6-17b2af5bd837
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d5c1732858fd5d079bbd9a755997c04adf5c9d47
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 3%
 
 ---
 
 
 # 种子地址{#seed-addresses}
 
-如果收件人表是自定义表，则需要其他配置。 必 **[!UICONTROL nms:seedMember]** 须延长模式。 种子地址中会添加一个用于定义适当字段的附加选项卡，如下所示：
+如果收件人表是自定义表，则需要其他配置。 必 **[!UICONTROL nms:seedMember]** 须延长模式。 在种子地址中会添加一个额外的选项卡，用于定义适当的字段，如下所示：
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-有关使用种子地址的详细信息，请参 [阅本节](../../delivery/using/about-seed-addresses.md)。
+有关使用种子地址的详细信 [息，请参阅](../../delivery/using/about-seed-addresses.md)。
 
 ## 实施 {#implementation}
 
-**nms:seedMember** 模式和现成的链接表单旨在扩展用于客户配置，以引用所有必要字段。 模式定义包含详细描述其配置模式的注释。
+nms **:seedMember** 模式和现成附带的链接表单旨在扩展用于客户配置，以引用所有必要字段。 模式定义包含详细描述其配置模式的注释。
 
 收件人表扩展模式的定义：
 
@@ -49,8 +49,8 @@ source-git-commit: d5c1732858fd5d079bbd9a755997c04adf5c9d47
 
 应用以下步骤：
 
-1. 创建 **nms:seedMember模式的扩展** 。 有关此问题的详细信息，请参 [阅扩展模式](../../configuration/using/extending-a-schema.md)。
-1. 在此新扩展中，在的根添加一个新元素， **[!UICONTROL seedMember]** 并使用以下参数：
+1. 创建nms:seedMember **模式的扩展** 。 有关此内容的详细信息，请参 [阅扩展模式](../../configuration/using/extending-a-schema.md)。
+1. 在此新扩展中，使用以下参数在的根 **[!UICONTROL seedMember]** 添加新元素：
 
    ```
    name="custom_customNamespace_customSchema"
@@ -75,19 +75,19 @@ source-git-commit: d5c1732858fd5d079bbd9a755997c04adf5c9d47
 
    >[!NOTE]
    >
-   >nms:seedMember模式的扩 **** 展必须符合活动和Adobe Campaign中投放的结构。
+   >nms:seedMember模式 **的扩展** ，必须符合Adobe Campaign中活动和投放的结构。
 
    >[!IMPORTANT]
    >
    >
    >    
    >    
-   >    * 在扩展过程中，必须为“ **email”字段指定SQL名称(@sqlname)** 。 SQL名称必须与为收件人模式保留的&#39;sEmail&#39;不同。
-   >    * 必须使用在扩展 **nms:seedMember时创建的模式更新数据库结构**。
-   >    * 在 **nms:seedMember** extension中，包含电子邮件地址的字段必须 **将name=&quot;email&quot;** 作为属性。 SQL名称必须不同于已用于收件人模式的“sEmail”。 此属性必须立即在元素下声明 **`<element name="custom_cus_person" />`** 。
+   >    * 在扩展期间，必须为“ **email”字段指定SQL名称** (@sqlname)。 SQL名称必须与为收件人模式保留的&#39;sEmail&#39;不同。
+   >    * 必须使用在扩展nms:seedMember时创建的模式更 **新库结构**。
+   >    * 在nms: **seedMember** extension中，包含电子邮件地址的字段 **必须将name=&quot;email** &quot;作为属性。 SQL名称必须与已用于收件人模式的&#39;sEmail&#39;不同。 此属性必须立即在元素下声 **`<element name="custom_cus_person" />`** 明。
 
 
-1. 相应地修 **[!UICONTROL seedMember]** 改表单，以在窗口中定义新的“内部收件人”选 **[!UICONTROL Seed addresses]** 项卡。 For more on this, refer to [Form structure](../../configuration/using/form-structure.md).
+1. 相应地 **[!UICONTROL seedMember]** 修改表单以在窗口中定义新的“内部收件人” **[!UICONTROL Seed addresses]** 选项卡。 For more on this, refer to [Form structure](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"
@@ -102,4 +102,4 @@ source-git-commit: d5c1732858fd5d079bbd9a755997c04adf5c9d47
      </container>
    ```
 
-如果未输入种子地址的所有属性，则Adobe Campaign会自动替换用户档案:在个性化过程中，将使用现有用户档案中的数据自动输入这些内容。
+如果未输入种子地址的所有属性，Adobe Campaign会自动替换用户档案:它们将在个性化过程中使用来自现有用户档案的数据自动输入。
