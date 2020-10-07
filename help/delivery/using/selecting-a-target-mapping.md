@@ -11,33 +11,33 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 discoiquuid: e2c6e273-1640-4f46-a80e-0cecb06e2769
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 10%
 
 ---
 
 
 # 选择目标映射{#selecting-a-target-mapping}
 
-默认情况下，交付模板为目标 **[!UICONTROL Recipients]**。 因此，他们的目标映射使用 **nms:recipient表的字段** 。 Adobe Campaign为您的分发提供了其他目标映射，以根据您的需求使用。
+默认情况下，投放模板目标 **[!UICONTROL Recipients]**。 因此，其目标映射使用nms: **收件人表的字段** 。 Adobe Campaign优惠其他目标映射以供投放根据您的需求使用。
 
 ![](assets/delivery_select_mapping.png)
 
 这些映射如下所示：
 
-| 名称 | 使用 | 标准架构 |
+| 名称 | 使用 | 标准模式 |
 |---|---|---|
-| 收件人 | 交付给Adobe Campaign数据库的收件人 | nms：收件人 |
-| 访客 | 向通过推荐（病毒式营销）或社交网络(Facebook、Twitter)收集其个人资料的访客提供。 | mns:visitor |
-| 订阅 | 向订阅新闻快讯等信息服务的收件人传送 | nms：订阅 |
-| 访客订阅 | 为订阅信息服务的访客提供 | nms:visitorSub |
-| 服务 | 发布到Twitter帐户或Facebook页面 | nms:service |
-| 运营商 | 交付给Adobe Campaign运营商 | nms:operator |
-| 外部文件 | 通过包含交付所需所有信息的文件进行交付 | 没有链接的架构，没有输入目标 |
+| 收件人 | 交付到收件人Adobe Campaign库 | nms:收件人 |
+| 访客 | 向通过推荐（病毒式营销）或社交网络(Facebook、Twitter)收集用户档案的访客提供。 | mns:访客 |
+| 订阅 | 交付给订阅新闻稿等信息服务的收件人 | nms:订阅 |
+| 访客订阅 | 交付给订阅访客的信息服务 | nms:visitorSub |
+| 服务 | 发布到Twitter帐户或Facebook页面 | nms：服务 |
+| 运算符 | 交付给Adobe Campaign运营商 | nms：操作员 |
+| 外部文件 | 通过包含投放所需所有信息的文件传送 | 无链接模式，无目标输入 |
 
 >[!NOTE]
 >
->您还可以创建新的目标映射。 此操作为专家用户保留。 有关详细信息，请参阅配 [置指南](../../configuration/using/target-mapping.md)。
+>您还可以创建新目标映射。 此操作为专家用户保留。 For more information, refer to the [Configuration guide](../../configuration/using/target-mapping.md).
