@@ -1,7 +1,7 @@
 ---
-title: Web下载
-seo-title: Web下载
-description: Web下载
+title: Web 下载
+seo-title: Web 下载
+description: Web 下载
 seo-description: null
 page-status-flag: never-activated
 uuid: 44039e9c-0cd8-4d3f-b73f-e01c5343835a
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: 8590cc75-11c8-450d-90e8-56744e12ac70
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 
-# Web下载{#web-download}
+# Web 下载{#web-download}
 
 Web **下载活动** ，启动在显式URL、外部帐户或Adobe Campaign实例上下载文件。 使用HTTP协议。 这可以是GET或POST下载。
 
@@ -55,9 +52,10 @@ Web **下载活动** ，启动在显式URL、外部帐户或Adobe Campaign实例
 
    可以使用以下选项：
 
-   * **[!UICONTROL Use a default storage directory]**: 文件在处理前始终被移动。 如果选中此选项，则文件将移入默认存储目录(Adobe Campaign安 **装文** 件夹的vars目录)。 要指定存储目录，请取消选中该框，并在字段中输入其路 **[!UICONTROL Storage directory]** 径
-   * **[!UICONTROL Number of files]**: 输入要保留在存储目录中的最大文件数。
-   * **[!UICONTROL Maximum size (in Mb)]**: 输入存储目录的最大容量(MB)。
+   * **[!UICONTROL Use a default storage directory]**:文件在处理前始终被移动。 如果选中此选项，则文件将移入默认存储目录(Adobe Campaign安 **装文** 件夹的vars目录)。 要指定存储目录，请取消选中该框，并在字段中输入其路 **[!UICONTROL Storage directory]** 径
+   * **[!UICONTROL Number of files]**:输入要保留在存储目录中的最大文件数。
+   * **[!UICONTROL Maximum size (in Mb)]**:输入存储目录的最大容量(MB)。
+
    每个文件在遵守定义的清除规则之前保存24小时。 清除操作在开始活动之前进行，因此不会考虑正在进行的工作流文件。
 
    文件会根据其年龄（从最早到最新）而删除。 在验证两个清除规则之前，将清除最旧的文件。 因此，如果定义了100文件限制，这意味着存储目录将始终包含工作流开始之前的100个最新文件，以及正在处理的工作流中正在处理的文件。
@@ -74,4 +72,4 @@ Web **下载活动** ，启动在显式URL、外部帐户或Adobe Campaign实例
 
 ## 输出参数 {#output-parameters}
 
-* 文件名： 下载文件的完整名称。
+* 文件名：下载文件的完整名称。
