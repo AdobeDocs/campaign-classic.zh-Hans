@@ -11,14 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -29,6 +26,7 @@ ht-degree: 1%
 >
 >* 对消息中心模式在控件或模式 [上使用的技术工作流](../../message-center/using/technical-workflows.md) ，进行的执行实例扩展需要在Adobe Campaign事务消息模块使用的其他实例上进行复制。
 >* 控制实例和执行实例必须安装在不同的计算机上。 他们不能共享同一活动实例。
+
 >
 
 
@@ -43,7 +41,7 @@ ht-degree: 1%
 
 要创建执行实例类型外部帐户，请应用以下步骤：
 
-1. 转到文件 **[!UICONTROL Administration > Platform > External accounts]** 夹。
+1. Go to the **[!UICONTROL Administration > Platform > External accounts]** folder.
 1. 选择附带执行实例的现成外部帐户类型之一，右键单击并选择 **[!UICONTROL Duplicate]** 。
 
    ![](assets/messagecenter_create_extaccount_001.png)
@@ -123,7 +121,7 @@ ht-degree: 1%
 
 您可以与各种控制实例共享执行群集。 此类型的架构需要以下配置。
 
-例如，如果公司管理两个品牌，每个品牌都有其自己的控制实例: **控制1** 和 **控制2**。 还使用了两个执行实例。 您需要为每个控制实例输入不同的消息中心运算符： Control **1实例** 的mc1运 **算符和Control** 2实例的 **mc2** 运 **算符** 的mc2运算符。
+例如，如果公司管理两个品牌，每个品牌都有其自己的控制实例: **控制1** 和 **控制2**。 还使用了两个执行实例。 您需要为每个控制实例输入不同的消息中心运算符：Control **1实例** 的mc1运 **算符和Control** 2实例的 **mc2** 运 **算符** 的mc2运算符。
 
 在所有执行实例的树中，为每个运算符创建一个文件&#x200B;**夹(文件夹** 1 **和文件夹2**)，并限制每个运算符对其文件夹的数据访问。
 
@@ -157,7 +155,7 @@ ht-degree: 1%
    >
    >**mc1和** mc2 **运营商必****[!UICONTROL Message Center execution]** 须拥有权限，并且无法访问Adobe Campaign客户端控制台。 操作员必须始终与安全区域链接。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
 
-1. 对于每个运算符，选 **[!UICONTROL Restrict to information found in sub-folders of]** 中相应的文件夹(**mc1运算符的文件夹** 为1 **，而mc2运** 算符的文件夹为2 ******** )。
+1. 对于每个运算符，选 **[!UICONTROL Restrict to information found in sub-folders of]** 中相应的文件夹(**mc1运算符的文件夹1** , **mc1运算符的文件夹2** , mc2运算符的文件夹2 ******** )。
 
    ![](assets/messagecenter_multi_control_5.png)
 
