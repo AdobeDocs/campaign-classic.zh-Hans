@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: acab51f3-686b-4d2b-bb02-8fbfae36b1ba
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 1%
@@ -27,7 +24,7 @@ ht-degree: 1%
 
 排 **除类**&#x200B;型活动基于主目标创建目标，从中提取一个或多个其他目标。
 
-要配置此活动，请输入其标签并选择主收件人集： 主集合中的人口允许您构建结果。 将排除由主集共享的用户档案和至少一个条目活动。
+要配置此活动，请输入其标签并选择主收件人集：主集合中的人口允许您构建结果。 将排除由主集共享的用户档案和至少一个条目活动。
 
 ![](assets/s_user_segmentation_exclu.png)
 
@@ -35,7 +32,7 @@ ht-degree: 1%
 >
 >有关配置和使用排除活动的详细信息，请 [参阅排除人口（排除）](../../workflow/using/targeting-data.md#excluding-a-population--exclusion-)。
 
-如果要 **[!UICONTROL Generate complement]** 利用剩余人口，请选中此选项。 补充将包括主要的外来人口减去即将流出的人口。 随后将向该过渡添加一个额外的输出活动，如下所示：
+Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. 补充将包括主要的外来人口减去即将流出的人口。 随后将向该过渡添加一个附加输出活动，如下所示：
 
 ![](assets/s_user_segmentation_exclu_compl.png)
 
