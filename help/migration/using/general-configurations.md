@@ -11,11 +11,8 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: f4b1c108-7f71-4aa1-8394-a7f660834c9c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2822'
 ht-degree: 0%
@@ -38,7 +35,7 @@ ht-degree: 0%
 
 在v6.02中，“多时区”模式仅对PostgreSQL数据库引擎可用。 现在，无论使用哪种类型的数据库引擎，都可提供该引擎。 我们强烈建议您将您的基础转换为“多时区”基础。
 
-要使用TIMESTAMP WITH TIMEZONE模式，您还需要将-userTimestamptz: **1选项添加到** postupgrade命令行。
+要使用TIMESTAMP WITH TIMEZONE模式，您还需要将-userTimestamptz: **1选项添加到** postupgrade命令行中。
 
 >[!IMPORTANT]
 >
@@ -92,7 +89,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->出于安全原因，Adobe Campaign平台在默认情况下不再可访问： 您必须配置安全区域，并因此收集运营商IP地址。
+>出于安全原因，Adobe Campaign平台在默认情况下不再可访问：您必须配置安全区域，并因此收集运营商IP地址。
 
 Adobe Campaignv7涉及安全 **区的概念**。 每个用户必须与某个区域关联才能登录实例，并且用户的IP地址必须包含在安全区域中定义的地址或地址范围中。 配置安全区可在Adobe Campaign服务器配置文件中完成。 必须在控制台()中定义用户与之关联的安全&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;区。
 
@@ -121,7 +118,7 @@ nlserver config -internalpassword
    在播放过程中，将识别并列出受此修改影响的用户。
 
 * 如果密码为空，跟踪将不再有效。 如果出现这种情况，将显示一条错误消息，通知您并要求您重新配置它。
-* 用户密码不再存储在 **xtk:sessionInfo** 模式中。
+* 用户口令不再存储在xtk: **sessionInfo模式** 。
 * 现在，使用xtk:builder:EvaluateJavaScript **和xtk** : **builder:EvaluateJavaScriptTemplate函数需要管理权限** 。
 
 某些现成模式已修改，默认情况下，现在只能通过具有管理员权限的操作员的写入访问 **权限** :
@@ -206,7 +203,7 @@ Adobe Campaignv7集成了更新的JavaScript解释器。 但是，此更新可�
 
 语 **[!UICONTROL myObject.@attribute]** 法现在仅对XML对象有效。 此语法可用于个性化投放和内容管理。 如果在非XML对象上使用此类语法，个性化功能将不再有效。
 
-对于所有其他对象类型，语法现 **[!UICONTROL myObject`[`在为“attribute”`]`]**。 例如，使用以下语法的非XML对象：**[!UICONTROL employee.@sn]**，现在必须使用以下语法：**[!UICONTROL employee`[`“sn”`]`]**。
+对于所有其他对象类型，语法现 **[!UICONTROL myObject`[`在为“attribute”`]`]**。 例如，使用以下语法的非XML对象： **[!UICONTROL employee.@sn]**，现在必须使用以下语法： **[!UICONTROL employee`[`“sn”`]`]**。
 
 * 以前的语法：
 
@@ -256,19 +253,19 @@ Adobe Campaignv7集成了更新的JavaScript解释器。 但是，此更新可�
 
 为了增强实例安全性，在v7Adobe Campaign中引入了新的语法来取代基于SQLData的语法。 如果将这些代码元素与此语法一起使用，则必须修改它们。 主要内容有：
 
-* 按子查询筛选： 新的语法基于元 `<subQuery>` 素来定义子查询
-* 聚合: 新语法为“聚合函数（集合）”
-* 按连接过滤： 新语法为 `[schemaName:alias:xPath]`
+* 按子查询筛选：新的语法基于元 `<subQuery>` 素来定义子查询
+* 聚合:新语法为“聚合函数（集合）”
+* 按连接过滤：新语法为 `[schemaName:alias:xPath]`
 
 已修改queryDef(xtk:queryDef)模式:
 
 * 新元 `<subQuery>` 素可用于替换SQLData中包含的SELECT
 * 为@setOperator属性引入了两个新值“IN”和“NOT IN”
-* 新元 `<where>` 素，它是元素的子 `<node>` 元素： 这使您能够在SELECT中进行“子选择”
+* 新元 `<where>` 素，它是元素的子 `<node>` 元素：这使您能够在SELECT中进行“子选择”
 
-当使用“@expr”属性时，可能存在SQLData。 可以搜索以下术语： &quot;SQLData&quot;、&quot;aliasSqlTable&quot;、&quot;sql&quot;。
+当使用“@expr”属性时，可能存在SQLData。 可以搜索以下术语：&quot;SQLData&quot;、&quot;aliasSqlTable&quot;、&quot;sql&quot;。
 
-Adobe Campaignv7实例默认为安全。 安全性是指文件中安全区域的定 **[!UICONTROL serverConf.xml]** 义： allowSQLI **njoffent** 属性管理SQL语法安全。
+Adobe Campaignv7实例默认为安全。 安全性是指文件中安全区域的定 **[!UICONTROL serverConf.xml]** 义：allowSQLI **njoffent** 属性管理SQL语法安全。
 
 如果在配置级执行期间发生SQLData错误，则必须修改此属性以暂时允许使用基于SQLData的语法，从而允许您重写代码。 为此，必须在serverConf.xml文件中更改以 **下选项** :
 
@@ -400,7 +397,7 @@ allowSQLInjection="false"
 
 在元 `<subQuery>` 素中，要引用主元素的“字段”字 `<queryDef>` 段，请使用以下语法： `[../@field]`
 
-例如：
+示例:
 
 ```
 <queryDef operation="select" schema="xtk:jobLog" startPath="/" xtkschema="xtk:queryDef">
@@ -459,9 +456,9 @@ allowSQLInjection="false"
 
 解决冲突有三种可能的方法：
 
-* **[!UICONTROL Declared as resolved]**: 需要事先操作员干预。
-* **[!UICONTROL Accept the new version]**: 如果用户未更改随Adobe Campaign提供的资源，则建议使用此选项。
-* **[!UICONTROL Keep the current version]**: 表示更新被拒绝。
+* **[!UICONTROL Declared as resolved]**:需要事先操作员干预。
+* **[!UICONTROL Accept the new version]**:如果用户未更改随Adobe Campaign提供的资源，则建议使用此选项。
+* **[!UICONTROL Keep the current version]**:表示更新被拒绝。
 
    >[!IMPORTANT]
    如果选择此解决模式，则可能丢失新版本中的修补程序。 因此，强烈建议不要仅为专家操作员使用或保留此选项。
@@ -477,7 +474,7 @@ allowSQLInjection="false"
    ![](assets/s_ncs_production_conflict003.png)
 
 1. 转到您应已解决的冲突。 单击图 **[!UICONTROL Actions]** 标并选择 **[!UICONTROL Declare as resolved]**。
-1. 保存更改： 冲突现已解决。
+1. 保存更改：冲突现已解决。
 
 ## Tomcat {#tomcat}
 
@@ -493,9 +490,9 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/jsp-api.jar
 $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 ```
 
-## 交互 {#interaction}
+## 互动 {#interaction}
 
-### 先决条件 {#prerequisites}
+### 先决条件{#prerequisites}
 
 **在配置升级**&#x200B;之前，必须从6.02中删除v7中将不再存在的所有模式引用。
 
@@ -620,7 +617,7 @@ logInfo("Done");
 
 ### 标准报表 {#standard-reports}
 
-所有标准报告当前都使用渲染引擎v6.x。 如果已将JavaScript添加到这些报表中，某些元素可能不再有效。 事实上，旧版JavaScript与v6.x渲染引擎不兼容。 因此，您必须检查JavaScript代码，然后重新调整它。 应测试每个报告，特别是导出功能。
+所有标准报告当前都使用渲染引擎v6.x。如果已将JavaScript添加到这些报表中，某些元素可能不再有效。 事实上，旧版JavaScript与v6.x渲染引擎不兼容。 因此，您必须检查JavaScript代码，然后重新调整它。 应测试每个报告，特别是导出功能。
 
 ### 个性化报告 {#personalized-reports}
 
