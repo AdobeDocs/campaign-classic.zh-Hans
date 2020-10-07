@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 86c18986-1f65-40ff-80dc-1fbff37f406d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2980'
 ht-degree: 0%
@@ -31,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->某些配置只能由Adobe为Adobe托管的部署执行，例如，访问服务器和实例配置文件。 要进一步了解不同的部署，请参 [阅托管模型](../../installation/using/hosting-models.md) 部分或 [本文](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。
+>某些配置只能通过Adobe来执行由Adobe托管的部署，例如，访问服务器和实例配置文件。 要进一步了解不同的部署，请参 [阅托管模型](../../installation/using/hosting-models.md) 部分或 [本文](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)。
 
 有关可交付性相关概念和最佳实践的更多信息，请参阅本 [节](../../delivery/using/about-deliverability.md)。
 
@@ -41,9 +38,9 @@ ht-degree: 0%
 
 可以控制一个或多个Adobe Campaign实例的输出，以限制根据域发送的电子邮件数。 例如，您可以将yahoo.com地址的输出限制为 **每小时20** ，同时为所有其他域配置每小时100,000条消息。
 
-需要针对投放服务器(mta)使用的每个IP地址控制消&#x200B;**息输**&#x200B;出。 在多 **台计算机** 上划分并属于不同Adobe Campaign实例的多个mta可以共享相同的IP地址用于电子邮件投放: 需要设置一个进程来协调这些IP地址的使用。
+需要针对投放服务器(mta)使用的每个IP地址控制消&#x200B;**息输**&#x200B;出。 在多 **台计算机** 上划分并属于不同Adobe Campaign实例的多个mta可以共享相同的IP地址用于电子邮件投放:需要设置一个进程来协调这些IP地址的使用。
 
-这是stat模块 **的功** 能： 它将所有要发送到邮件服务器的连接请求和消息转发到一组IP地址。 统计服务器会跟踪投放，并可以根据设置的配额启用或禁用发送。
+这是stat模块 **的功** 能：它将所有要发送到邮件服务器的连接请求和消息转发到一组IP地址。 统计服务器会跟踪投放，并可以根据设置的配额启用或禁用发送。
 
 ![](assets/s_ncs_install_mta.png)
 
@@ -91,7 +88,7 @@ mta **模块** 将消息分发到 **其mtachild子模** 块。 每个 **计算**
 
 在发送消息之前，模块从服务器请求“令牌”。 这些令牌通常至少包含10个令牌，可减少服务器的查询数。
 
-服务器保存所有与连接和投放相关的统计信息。 如果重新启动，信息将暂时丢失： 每个客户端都保留发送统计数据的本地副本，并定期（每2分钟）将其返回给服务器。 然后，服务器可以重新聚合数据。
+服务器保存所有与连接和投放相关的统计信息。 如果重新启动，信息将暂时丢失：每个客户端都保留发送统计数据的本地副本，并定期（每2分钟）将其返回给服务器。 然后，服务器可以重新聚合数据。
 
 以下各节介绍了电子邮件流量整形器组 **件对消息的处** 理。
 
@@ -99,9 +96,9 @@ mta **模块** 将消息分发到 **其mtachild子模** 块。 每个 **计算**
 
 发送消息时，可能有3个结果：
 
-1. **成功**: 消息发送成功。 消息将更新。
-1. **消息失败**: 联系的服务器拒绝了所选收件人的消息。 此结果与返回代码550至599匹配，但可以定义例外。
-1. **会话失败** （向上5.11）: 如果 **mta** 收到此消息的答案，则消息将被放弃(请参阅消 [息放弃](#message-abandonment))。 消息将发送到其他路径，如果没有其他路径可用，则设置为“挂起”(请参阅“ [消息挂起](#message-pending)”)。
+1. **成功**:消息发送成功。 消息将更新。
+1. **消息失败**:联系的服务器拒绝了所选收件人的消息。 此结果与返回代码550至599匹配，但可以定义例外。
+1. **会话失败** （向上5.11）:如果 **mta** 收到此消息的答案，则消息将被放弃(请参阅消 [息放弃](#message-abandonment))。 消息将发送到其他路径，如果没有其他路径可用，则设置为“挂起”(请参阅“ [消息挂起](#message-pending)”)。
 
    >[!NOTE]
    >
@@ -121,13 +118,13 @@ mta **决定** 此消息的程序(恢复、放弃、隔离等) 取决于响应�
 
 ## 统计服务器配置 {#statistics-server-configuration}
 
-统计服务器可以由多个实例使用： 它必须独立于将使用它的实例进行配置。
+统计服务器可以由多个实例使用：它必须独立于将使用它的实例进行配置。
 
 开始，方法是定义将托管配置的Adobe Campaign数据库。
 
 ### 开始配置 {#start-configuration}
 
-默认情况下，每 **个实例** 都会启动stat模块。 当实例在同一台计算机上共享时，或当实例共享同一IP地址时，将使用单个统计信息服务器： 其他人必须被禁用。
+默认情况下，每 **个实例** 都会启动stat模块。 当实例在同一台计算机上共享时，或当实例共享相同的IP地址时，将使用单个统计信息服务器：其他人必须被禁用。
 
 ### 服务器端口的定义 {#definition-of-the-server-port}
 
@@ -147,7 +144,7 @@ MX规则（邮件eXchanger）是管理发送服务器与接收服务器之间通
 >
 >对于托管或混合安装，如果您已升级到增强的MTA，则不 **[!UICONTROL MX management]** 再使用投放吞吐量规则。 增强的MTA使用其自己的MX规则，该规则允许它根据您自己的历史电子邮件信誉以及来自您发送电子邮件的域的实时反馈，按域自定义您的吞吐量。
 >
->有关Adobe Campaign增强MTA的详细信息，请参阅此 [文档](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
+>有关Adobe Campaign增强MTA的详细信息，请参阅此 [文档](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 这些规则每天早上6点（服务器时间）自动重新加载，以便定期提供客户端实例。
 
@@ -223,7 +220,7 @@ MX要遵循的规则在树的节 **[!UICONTROL MX management]** 点文档 **[!UI
 如果 **[!UICONTROL MX management]** 文档在节点中不存在，则可以手动创建它。 操作步骤：
 
 1. 创建新邮件规则集。
-1. 选择模 **[!UICONTROL MX management]** 式。
+1. Choose the **[!UICONTROL MX management]** mode.
 
    ![](assets/s_ncs_install_mx_mgt_rule.png)
 
@@ -241,21 +238,23 @@ MX要遵循的规则在树的节 **[!UICONTROL MX management]** 点文档 **[!UI
 
 文档 **[!UICONTROL MX management]** 列表所有链接到MX规则的域。
 
-这些规则按顺序应用： 应用其MX掩码与目标MX兼容的第一条规则。
+这些规则按顺序应用：应用其MX掩码与目标MX兼容的第一个规则。
 
 每个规则的以下可用参数为：
 
-* **[!UICONTROL MX mask]**: 应用规则的域。 每个规则定义MX的地址掩码。 因此，其名称与此掩码匹配的任何MX都符合条件。 遮罩可包含“*”和“?” 通用字符。
+* **[!UICONTROL MX mask]**:应用规则的域。 每个规则定义MX的地址掩码。 因此，其名称与此掩码匹配的任何MX都符合条件。 遮罩可包含“*”和“?” 通用字符。
 
    例如，以下地址：
 
    * a.mx.yahoo.com
    * b.mx.yahoo.com
    * c.mx.yahoo.com
+
    与以下蒙版兼容：
 
    * *.yahoo.com
    * ?.mx.yahoo.com
+
    例如，对于电子邮件地址foobar@gmail.com，域为gmail.com,MX记录为：
 
    ```
@@ -268,10 +267,11 @@ MX要遵循的规则在树的节 **[!UICONTROL MX management]** 点文档 **[!UI
 
    在这种情况下，将 `*.google.com` 使用MX规则。 如您所见，MX规则掩码不一定与邮件中的域匹配。 适用于gmail.com电子邮件地址的MX规则将是带有遮罩的规则 `*.google.com`。
 
-* **[!UICONTROL Range of identifiers]**: 此选项允许您指示应用规则的标识符(publicID)范围。 您可以指定：
+* **[!UICONTROL Range of identifiers]**:此选项允许您指示应用规则的标识符(publicID)范围。 您可以指定：
 
-   * 数字： 规则将仅适用于此publicId,
-   * 数字范围(**number1-number2**): 该规则将适用于这两个数字之间的所有publicId。
+   * 数字：规则将仅适用于此publicId,
+   * 数字范围(**number1-number2**):该规则将适用于这两个数字之间的所有publicId。
+
    >[!NOTE]
    >
    >如果字段为空，则规则将应用于所有标识符。
@@ -280,28 +280,28 @@ MX要遵循的规则在树的节 **[!UICONTROL MX management]** 点文档 **[!UI
 
    ![](assets/s_ncs_install_mta_ips.png)
 
-* **[!UICONTROL Shared]**: 定义此MX规则的属性范围。 选中后，所有参数都将共享到实例上所有可用的IP上。 如果不选中，将为每个IP定义MX规则。 最大消息数乘以可用IP数。
-* **[!UICONTROL Maximum number of connections]**: 到发送方域的同时连接的最大数目。
-* **[!UICONTROL Maximum number of messages]**: 在连接上可以发送的最大消息数。 当消息超过此数时，将关闭连接并打开新连接。
-* **[!UICONTROL Messages per hour]**: 发送方域可在一小时内发送的最大消息数。
-* **[!UICONTROL Connection time out]**: 连接到域的时间阈值。
+* **[!UICONTROL Shared]**:定义此MX规则的属性范围。 选中后，所有参数都将共享到实例上所有可用的IP上。 如果不选中，将为每个IP定义MX规则。 最大消息数乘以可用IP数。
+* **[!UICONTROL Maximum number of connections]**:到发送方域的同时连接的最大数目。
+* **[!UICONTROL Maximum number of messages]**:在连接上可以发送的最大消息数。 当消息超过此数时，将关闭连接并打开新连接。
+* **[!UICONTROL Messages per hour]**:发送方域可在一小时内发送的最大消息数。
+* **[!UICONTROL Connection time out]**:连接到域的时间阈值。
 
    >[!NOTE]
    >
    >Windows可以在此阈 **值之** 前发出超时，这取决于您的Windows版本。
 
-* **[!UICONTROL Timeout Data]**: 发送邮件内容（SMTP协议的“数据”部分）后的最长等待时间。
-* **[!UICONTROL Timeout]**: 与SMTP服务器进行其他交换的最长等待时间。
-* **[!UICONTROL TLS]**: TLS协议允许您对电子邮件投放进行加密，可以有选择地启用。 对于每个MX蒙版，可以使用以下选项：
+* **[!UICONTROL Timeout Data]**:发送邮件内容（SMTP协议的“数据”部分）后的最长等待时间。
+* **[!UICONTROL Timeout]**:与SMTP服务器进行其他交换的最长等待时间。
+* **[!UICONTROL TLS]**:TLS协议允许您对电子邮件投放进行加密，可以有选择地启用。 对于每个MX蒙版，都提供以下选项：
 
-   * **[!UICONTROL Default configuration]**: 这是在所应用的serverConf.xml配置文件中指定的常规配置。
+   * **[!UICONTROL Default configuration]**:这是在所应用的serverConf.xml配置文件中指定的常规配置。
 
       >[!IMPORTANT]
       >
       >不建议修改默认配置。
 
-   * **[!UICONTROL Disabled]** : 系统发送消息时不加密。
-   * **[!UICONTROL Opportunistic]** : 如果接收服务器(SMTP)可以生成TLS协议，则消息投放将被加密。
+   * **[!UICONTROL Disabled]** :系统发送消息时不加密。
+   * **[!UICONTROL Opportunistic]** :如果接收服务器(SMTP)可以生成TLS协议，则消息投放将被加密。
 
 配置示例：
 
@@ -317,14 +317,14 @@ MX要遵循的规则在树的节 **[!UICONTROL MX management]** 点文档 **[!UI
 
 ![](assets/mail_rule_sets.png)
 
-MIME结 **构** （多用途Internet邮件扩展）参数允许您定义将发送给不同邮件客户端的邮件结构。 有三个可用选项：
+MIME结 **构** （多用途Internet邮件扩展）参数允许您定义将发送给不同邮件客户端的邮件结构。 提供了三个选项：
 
-* **多部分**: 消息以文本或HTML格式发送。 如果HTML格式不被接受，消息仍能以文本格式显示。
+* **多部分**:消息以文本或HTML格式发送。 如果HTML格式不被接受，消息仍能以文本格式显示。
 
    默认情况下，多部件结构是多 **部件／替代结构**，但当将图像添加到 **消息时，它会自动变** 为多部件／相关结构。 某些提供者预 **期默认采用** multipart/related格式 **[!UICONTROL Force multipart/related]** ，即使未附加图像，此选项也强制采用此格式。
 
-* **HTML**: 将发送仅HTML消息。 如果HTML格式不被接受，则不显示消息。
-* **文本**: 将发送仅文本格式的消息。 文本格式消息的优点是其大小很小。
+* **HTML**:将发送仅HTML消息。 如果HTML格式不被接受，则不显示消息。
+* **文本**:将发送仅文本格式的消息。 文本格式消息的优点是其大小很小。
 
 如果启 **[!UICONTROL Image inclusion]** 用了此选项，则这些选项会直接显示在电子邮件正文中。 随后将上传图像，URL链接将替换为其内容。
 
@@ -368,7 +368,7 @@ MIME结 **构** （多用途Internet邮件扩展）参数允许您定义将发�
 
 对于 **每个IPAfinity** 元素，您需要声明可用于计算机的IP地址。
 
-例如：
+示例:
 
 ```
 <IPAffinity localDomain="<domain>" name="default">
@@ -380,11 +380,11 @@ MIME结 **构** （多用途Internet邮件扩展）参数允许您定义将发�
 
 参数如下：
 
-* **地址**: 这是要使用的MTA主机的IP地址。
-* **helo主机**: 此标识符表示SMTP服务器将看到的IP地址。
+* **地址**:这是要使用的MTA主机的IP地址。
+* **helo主机**:此标识符表示SMTP服务器将看到的IP地址。
 
-* **publicId**: 当NAT路由器后的多个Adobe Campaignmtas共享IP地 **址** 时，此信息很有用。 统计服务器使用此标识符来存储该起始点与目标服务器之间的连接和发送统计信息。
-* **权重**: 允许您定义地址的相对使用频率。 默认情况下，所有地址的权重均等于1。
+* **publicId**:当NAT路由器后的多个Adobe Campaignmtas共享IP地 **址** 时，此信息很有用。 统计服务器使用此标识符来存储该起始点与目标服务器之间的连接和发送统计信息。
+* **权重**:允许您定义地址的相对使用频率。 默认情况下，所有地址的权重均等于1。
 
 >[!NOTE]
 >
@@ -401,11 +401,11 @@ MIME结 **构** （多用途Internet邮件扩展）参数允许您定义将发�
     * &quot;2&quot;: 5 / (5+1) = 83%
     * &quot;3&quot;: 1 / (5+1) = 17%
 
-* **includeDomains**: 允许您为属于特定域的电子邮件保留此IP地址。 这是一列表蒙版，可包含一个或多个通配符(“*”)。 如果未指定属性，则所有域都可以使用此IP地址。
+* **includeDomains**:允许您为属于特定域的电子邮件保留此IP地址。 这是一列表蒙版，可包含一个或多个通配符(“*”)。 如果未指定属性，则所有域都可以使用此IP地址。
 
    示例： **includeDomains=&quot;wanadoo.com,orange.com,yahoo.*&quot;**
 
-* **excludeDomains**: 不包括此IP地址的列表域。 在includeDomains过滤器后应 **用此过滤** 器。
+* **excludeDomains**:不包括此IP地址的列表域。 在includeDomains过滤器后应 **用此过滤** 器。
 
    ![](assets/s_ncs_install_mta_ips.png)
 
