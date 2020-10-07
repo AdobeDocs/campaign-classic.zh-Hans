@@ -11,14 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: ec66e3e3-b09a-44a4-914d-e3b38c7643f8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -31,7 +28,7 @@ ht-degree: 0%
 
 ## 硬件和基础架构 {#hardware-and-infrastructure}
 
-本文详细介绍了内部部署Campaign Classic的硬件要求的一般 [准则](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html)。
+本文详细介绍了内部部署Campaign Classic的硬件要求的一般 [准则](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)。
 
 咨询团队可以为托管客户提供一个工具，它允许您轻松视图数据库中各种类型的表使用了多少空间以及SFTP站点上使用的空间。 它还提供允许您清除不必要数据的工具。 如果您需要实施此工具，请与咨询或支持团队联系。 下面是使用此工具检查的一些重要事项：
 
