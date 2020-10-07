@@ -1,7 +1,7 @@
 ---
-title: Linux中的堆栈跟踪
-seo-title: Linux中的堆栈跟踪
-description: Linux中的堆栈跟踪
+title: Linux 中的堆栈跟踪
+seo-title: Linux 中的堆栈跟踪
+description: Linux 中的堆栈跟踪
 seo-description: null
 page-status-flag: never-activated
 uuid: d839df47-902f-4b92-bc78-536fc4fb6c98
@@ -11,28 +11,29 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 60f306ea-4593-4e56-896e-8933277ee26a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9482a99c3be164651b3428179388cb0a8a75783f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 14%
 
 ---
 
 
-# Linux中的堆栈跟踪{#stack-trace-in-linux}
+# Linux 中的堆栈跟踪{#stack-trace-in-linux}
 
-堆栈 **描摹** ，表示包含在核心类型文 **件中的** 描摹。 此文件在发生计算机错误时生成。 它可以标识错误的来源。
+堆 **栈跟踪** ，表示核心类型文件 **中包含** 的跟踪。 此文件在计算机错误事件中生成。 它可以识别错误的来源。
 
 >[!NOTE]
 >
->* 核 **心文件** ，名为 **core.`<num>`**.
->* **gdb —— 必须在计算机上安装GNU调试器** 。
+>* 核 **心文件** 名为 **core.`<num>`**.
+>* **gdb —— 必须在计算机上** 安装GNU调试器。
+
 >
 
 
 
-Adobe Campaign技术支持可要求您提供此堆栈 **跟踪**。 要获取它，请在Linux中输入以下命令：
+Adobe Campaign技术支持可以要求您提供此堆 **栈跟踪**。 要获得它，请在Linux中输入以下命令：
 
 ```
 su - neolane
@@ -59,9 +60,9 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-Adobe Campaign技术支持可能会要求您使用特定可执行文件（由我们提供）运行此命令。
+Adobe Campaign技术支持可能会要求您使用特定可执行文件运行此命令（由我们提供）。
 
-在这种情况下，只需将nlserver替换为Adobe Campaign提供的可执 **行文件** ，即可运行以下命令：
+在这种情况下，只需将nlserver替换为Adobe Campaign提 **供的可** 执行文件，即可运行以下命令：
 
 ```
 gdb nlserver <coreFile>
