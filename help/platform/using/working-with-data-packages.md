@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: 42867665-d0ca-486e-9110-91716c0d5c57
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a6b15dd1be6bb53b7a757d7fe1333314df9693a4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2462'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -35,14 +32,14 @@ The principle of **data packages** is to export a data configuration and integra
 
 ### 包类型 {#types-of-packages}
 
-有三种类型的可导出包： 用户包、平台包和管理员包。
+有三种类型的可导出包：用户包、平台包和管理员包。
 
-* **用户包**: 它允许您选择要导出的图元的列表。 此类型的包管理依赖关系并验证错误。
-* **平台包**: 它包括所有附加的技术资源（非标准）: 模式、JavaScript代码等。
+* **用户包**:它允许您选择要导出的图元的列表。 此类型的包管理依赖关系并验证错误。
+* **平台包**:它包括所有附加的技术资源（非标准）:模式、JavaScript代码等。
 
    ![](assets/ncs_datapackage_package_platform.png)
 
-* **管理程序包**: 它包括所有添加的模板和业务对象（非标准）: 模板、库等。
+* **管理程序包**:它包括所有添加的模板和业务对象（非标准）:模板、库等。
 
    ![](assets/ncs_datapackage_package_admin.png)
 
@@ -91,7 +88,7 @@ XML文档必须以元素开头和结 **`<package>`** 尾。 随 **`<entities>`**
 
 数据包可以从任何文本编辑器手动构建。 只需确保XML文档的结构符合“xtk:navtree”模式。 Adobe Campaign控制台具有数据包导出和导入模块。
 
-## 导出包 {#exporting-packages}
+## 导出资源包 {#exporting-packages}
 
 ### 关于包导出 {#about-package-export}
 
@@ -164,7 +161,7 @@ XML文档必须以元素开头和结 **`<package>`** 尾。 随 **`<entities>`**
 
 #### 导出活动 {#exporting-a-campaign}
 
-以下是如何导出活动的示例。 要导出的营销活动包含任务(标签： “MyTask”)和工作流(标签： “MyWorkflow”文件夹(节点： 管理／生产/技术工作流/活动流程/ MyWorkflow)。
+以下是如何导出活动的示例。 要导出的营销活动包含任务(标签：“MyTask”)和工作流(标签：“MyWorkflow”文件夹(节点：管理／生产/技术工作流/活动流程/ MyWorkflow)。
 
 任务和工作流将导出到与活动相同的包中，因为匹配模式通过具有“自己”类型完整性的链接连接。
 
@@ -222,9 +219,9 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 最后，@ **pkgStatus** 属性允许您定义这些元素或属性的导出规则。 根据属性的值，元素或属性将在导出的包中找到。 此属性的三个可能值是：
 
-* **从不**: 不导出字段／链接
-* **always**: 向这个领域出口
-* **preCreate**: 授权创建链接的实体
+* **从不**:不导出字段／链接
+* **always**:向这个领域出口
+* **preCreate**:授权创建链接的实体
 
 >[!NOTE]
 >
@@ -243,7 +240,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 * [配置包定义生成](#configuring-package-definitions-generation)
 * [从包定义导出包](#exporting-packages-from-a-package-definition)
 
-### 创建包定义 {#creating-a-package-definition}
+### Creating a package definition {#creating-a-package-definition}
 
 可从菜单访问包定 **[!UICONTROL Administration > Configuration > Package management > Package definitions]** 义。
 
@@ -285,9 +282,9 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ![](assets/packagedefinition_generationparameters.png)
 
-* **[!UICONTROL Include the definition]**: 包括当前在包定义中使用的定义。
-* **[!UICONTROL Include an installation script]**: 允许您添加要在包导入时执行的javascript脚本。 选中后，将 **[!UICONTROL Script]** 在包定义屏幕中添加一个选项卡。
-* **[!UICONTROL Include default values]**: 向包中添加所有实体属性的值。
+* **[!UICONTROL Include the definition]**:包括当前在包定义中使用的定义。
+* **[!UICONTROL Include an installation script]**:允许您添加要在包导入时执行的javascript脚本。 选中后，将 **[!UICONTROL Script]** 在包定义屏幕中添加一个选项卡。
+* **[!UICONTROL Include default values]**:向包中添加所有实体属性的值。
 
    为避免冗长的出口，默认情况下不选择此选项。 这意味着，具有默认值(“空字符串”、“0”和“false”(如果未在模式中另行定义)的实体属性不会添加到包中，因此不会导出。
 
@@ -337,7 +334,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 请参阅您的许可协议，检查可以安装哪些包。
 
-有关内置包的详细信息，请参阅 [本页](../../installation/using/installing-campaign-standard-packages.md)。
+For more information on built-in packages, refer to [this page](../../installation/using/installing-campaign-standard-packages.md).
 
 ## 数据包最佳实践 {#data-package-best-practices}
 
@@ -357,7 +354,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 >
 >有关设置工作流以自动导出包的详细信息，请参 [阅此页](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html)。
 
-### 建议 {#data-package-recommendations}
+### 建议{#data-package-recommendations}
 
 始终在平台的同一版本内导入。 必须检查是否在具有相同内部版本的两个实例之间部署包。 切勿强制导入并始终先更新平台（如果版本不同）。
 
@@ -390,13 +387,13 @@ template="xtk:folder" pkgAdmin="@id != 0">
 * 包含一个或多个功能。
 * 应包含所有依赖项，以便能够在没有任何其他包的情况下运行该功能。
 
-**活动**
+**营销策划**
 
 此包不是强制的。 有时，为所有活动创建特定类型很有用，即使活动可以看作是功能。
 
 **更新**
 
-配置后，功能可导出到其他环境。 例如，可以将包从开发环境导出到测试环境。 在本试验中发现了缺陷。 首先，它需要在开发环境上修复。 然后，应将该修补程序应用到测试平台。
+配置后，功能可导出到其他环境。 例如，可以将包从开发环境导出到测试环境。 在本试验中，发现了缺陷。 首先，它需要在开发环境上修复。 然后，应将该修补程序应用到测试平台。
 
 第一个解决方案是再次导出整个功能。 但是，为了避免任何风险（更新不需要的元素），更安全的方法是只包含修正的包。
 
@@ -408,10 +405,10 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 既然已定义类型，我们应指定命名约定。 Adobe Campaign不允许为包规范创建子文件夹，这意味着数字是保持条理井然的最佳解决方案。 编号作为包名称前缀。 您可以使用以下约定：
 
-* 实体： 从1到99
-* 功能： 从100到199
-* 活动: 从200到299
-* 更新： 从5000到5999
+* 实体：从1到99
+* 功能：从100到199
+* 活动:从200到299
+* 更新：从5000到5999
 
 ### 包 {#data-packages}
 
@@ -429,11 +426,11 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 >[!NOTE]
 >
->表单只应在模式更新后导入。
+>Forms只有在模式更新后才应进口。
 
 #### 包200 {#package-200}
 
-包编号“200”不应用于特定活动: 此数字将用于更新与所有活动相关的内容。
+包编号“200”不应用于特定活动:此数字将用于更新与所有活动相关的内容。
 
 #### 更新包 {#update-package}
 
@@ -444,13 +441,13 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 更新包应仅包含一个特定实体，以便能够轻松地重用。 要拆分它们，请添加一个新数字(开始自1)。 这些包没有特定的订购规则。 为了更好地了解情况，请设想我们有一个101功能，一个社交应用程序：
 * 它包含webApp和外部帐户。
-   * 包标签为： 101 —— 社交应用程序(socialApplication)。
+   * 包标签为：101 —— 社交应用程序(socialApplication)。
 * webApp存在缺陷。
    * 已更正wepApp。
-   * 需要创建一个具有以下名称的修复包： 5101 - 1 —— 社交应用程序webApp(socialApplication_webApp)。
+   * 需要创建一个具有以下名称的修复包：5101 - 1 —— 社交应用程序webApp(socialApplication_webApp)。
 * 需要为社交功能添加新的外部帐户。
    * 外部帐户已创建。
-   * 新包为： 5101 - 2 —— 社交应用程序外部帐户(socialApplication_extAccount)。
+   * 新包为：5101 - 2 —— 社交应用程序外部帐户(socialApplication_extAccount)。
    * 并行更新101包以添加到外部帐户，但它未部署。
       ![](assets/ncs_datapackage_best-practices-1.png)
 
