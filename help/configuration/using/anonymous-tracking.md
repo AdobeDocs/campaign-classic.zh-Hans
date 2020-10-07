@@ -11,32 +11,32 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 2d2c6ae9-4dba-4b82-a25e-eda65a49572d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 7%
 
 ---
 
 
 # 匿名跟踪{#anonymous-tracking}
 
-通过Adobe Campaign，当收件人匿名浏览您的网站时，您可以将收集的Web跟踪信息关联到收件人。 当用户浏览您网站的标记页面时，会收集此浏览信息，以便用户在单击由Adobe Campaign发送的电子邮件后，即可识别这些页面，并自动将这些信息链接到这些页面。
+Adobe Campaign允许您在收集的Web 跟踪信息以匿名方式浏览您的站点时，将其链接到收件人。 当用户浏览您网站的标记页面时，会收集此浏览信息，这样，一旦用户单击由Adobe Campaign发送的电子邮件，就会识别这些用户并自动将这些信息链接到他们。
 
 >[!IMPORTANT]
 >
->在网站上设置匿名跟踪可触发大量跟踪日志的收集，从而影响数据库操作。 谨慎配置。\
->跟踪日志将保存在数据库中，直到清除跟踪数据。 使用部署向导配置清除频率。 如需详细信息，请参阅[此部分](../../installation/using/deploying-an-instance.md#purging-data)。
+>在网站上设置匿名跟踪可以触发大量跟踪日志的收集，从而影响数据库操作。 谨慎配置。\
+>跟踪日志会保存在数据库中，直到清除跟踪数据。 使用部署向导配置清除频率。 如需详细信息，请参阅[此部分](../../installation/using/deploying-an-instance.md#purging-data)。
 
-要对实例启用匿名Web跟踪，必须配置以下元素：
+要对实例启用匿名Web 跟踪，必须配置以下元素：
 
-* 必须 **将** serverConf.xml文件元素的 **trackWeb** 参数设置为“ **trueConf.xml** ”，以在未知用户访问网站的Internet浏览器中放置永久Cookie跟踪(******** permonentalUuid20Cookie，即Cookie跟踪)，从而将Internet的WebConf.xml文件元素的WebWebCof参数设置为。
-* 必须 **** 在部署向导的跟踪配置屏幕中选择“匿名Web跟踪”模式。
+* 跟 **踪服务器** serverConf.xml文件的元素的trackWebVisitors **参数必须设置为“** trueConf”，在访问该站点的未知用户的Internet浏览器中放置永久Cookie( ************ remonentUuid230Cookie)。
+* 必 **须在部署向导** 的跟踪配置屏幕中选择匿名Web 跟踪模式。
 
    ![](assets/webtracking_anonymous_set.png)
 
-* 必须在跟踪服务器上发布和执行Web表单和调查。 必须在部署向导中选择匹配选项。
+* Web 窗体和调查必须在跟踪服务器上发布和执行。 必须在部署向导中选择匹配选项。
 
    ![](assets/webtracking_publication_set_for_webapps.png)
 
