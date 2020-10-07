@@ -9,14 +9,11 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 discoiquuid: 0af1fd96-48ef-43c9-a03b-0f9a6e0e02fe
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 3%
+ht-degree: 10%
 
 ---
 
@@ -40,9 +37,9 @@ Adobe Experience Cloud是一套全面的一流集成解决方案，构建于一�
 
 ## 关联您的解决方案 {#working-with-experience-cloud-solutions}
 
-根据您的环境，可以将多个解决方案链接到Adobe Experience Cloud。 它们作为组织链接。 组 **织** 是允许管理员配置组和用户以及控制Experience Cloud中的单一登录的实体。 组织的功能类似于跨所有Experience Cloud产品和解决方案的登录公司。 大多数情况下，组织是您的公司名称。 但是，公司可以有许多组织。
+根据您的环境，可以将多个解决方案链接到Adobe Experience Cloud。 它们作为组织链接。 An **organization** is the entity that enables an administrator to configure groups and users, and to control single sign-on in the Experience Cloud. 组织的功能类似于跨所有 Experience Cloud 产品和解决方案的登录公司。大多数情况下，组织是您的公司名称。但是，公司可以有许多组织。
 
-Adobe Experience Cloud帐户的组织管理和关联在Adobe Experience Cloud帮 [助门户中详细介绍](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)。
+Adobe Experience Cloud帐户的组织管理和关联在Adobe Experience Cloud帮 [助门户中详细介绍](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/manage-users-and-products/organizations.html)。
 
 >[!CAUTION]
 >
@@ -74,11 +71,11 @@ Adobe Experience Cloud帐户的组织管理和关联在Adobe Experience Cloud帮
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
-   <td> 允许您创建映射到Adobe Campaign库的电子邮件内容或表单，直接在 <strong>Adobe Experience Manager</strong>。<br /> <p><a href="../../integrations/using/about-adobe-experience-manager.md">进一步了解Adobe Campaign</a> -Adobe Experience Manager集成。</p><br /> </td> 
+   <td> Allows you to create email contents or forms mapped to the Adobe Campaign database directly in <strong>Adobe Experience Manager</strong>.<br /> <p><a href="../../integrations/using/about-adobe-experience-manager.md">进一步了解Adobe Campaign</a> -Adobe Experience Manager集成。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Target</strong><br /> </td> 
-   <td> 允许您插入打开由Adobe Target创建 <strong>和发送</strong> 的电子邮件时由Adobe Campaign动态计算的图像。<br /> <p><a href="../../integrations/using/integrating-with-adobe-target.md">进一步了解Adobe Campaign</a> -Adobe Target集成。</p><br /> </td> 
+   <td> Allows you to insert images that are dynamically computed by <strong>Adobe Target</strong> when the email created and sent by Adobe Campaign is opened.<br /> <p><a href="../../integrations/using/integrating-with-adobe-target.md">进一步了解Adobe Campaign</a> -Adobe Target集成。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>人员核心服务</strong><br /><strong>Adobe Audience Manager</strong><br /> </td> 
@@ -86,11 +83,11 @@ Adobe Experience Cloud帐户的组织管理和关联在Adobe Experience Cloud帮
   </tr> 
   <tr> 
    <td> <strong>资产核心服务</strong><br /> </td> 
-   <td> 允许您将来自Adobe Experience Cloud图书馆的资源插入在Adobe Campaign中创建的电子邮件和登陆页中。<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">了解有关Adobe Campaign</a> -资产核心服务集成的更多信息</p><br /> </td> 
+   <td> 允许将来自 Adobe Experience Cloud 库的资源插入到在 Adobe Campaign 中创建的电子邮件和登陆页。<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">了解有关Adobe Campaign</a> -资产核心服务集成的更多信息</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>AEM Assets</strong><br /> </td> 
-   <td> 允许您将来自AEM Assets图书馆的资 <strong>源插入</strong> 在Adobe Campaign中创建的电子邮件和登陆页。<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">进一步了解Adobe Campaign</a> -AEM Assets集成。</p><br /> </td> 
+   <td> Allows you to insert assets from your <strong>AEM Assets</strong> library into emails and landing pages created in Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">进一步了解Adobe Campaign</a> -AEM Assets集成。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Experience Cloud Triggers</strong><br /> </td> 
