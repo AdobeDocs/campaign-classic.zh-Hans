@@ -1,7 +1,7 @@
 ---
-title: 通过JavaScript集成（客户端）
-seo-title: 通过JavaScript集成（客户端）
-description: 通过JavaScript集成（客户端）
+title: 通过 JavaScript 集成（客户端）
+seo-title: 通过 JavaScript 集成（客户端）
+description: 通过 JavaScript 集成（客户端）
 seo-description: null
 page-status-flag: never-activated
 uuid: 19cafecd-cf13-458a-857e-0a45c346f4ed
@@ -11,18 +11,18 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 7453d768-31eb-4372-aae3-27527cd5c79b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 2%
 
 ---
 
 
-# 通过JavaScript集成（客户端）{#integration-via-javascript-client-side}
+# 通过 JavaScript 集成（客户端）{#integration-via-javascript-client-side}
 
-要在网页中调用交互引擎，请将对JavaScript代码的调用直接插入该页面。 此调用将返回目标
+要在网页中调用交互引擎，请将对JavaScript代码的调用直接插入该页面。 此调用返回目标位置中的优惠内容
 
 元素。
 
@@ -34,37 +34,37 @@ Adobe建议使用JavaScript集成方法。
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
 ```
 
-“**env**”参数接收用于匿名交互的实时环境的内部名称。
+“env ****”参数接收专用于匿名交互的实时环境的内部名称。
 
-要展示选件，我们需要在Adobe Campaign中创建一个环境和选件空间，然后配置HTML页面。
+要演示优惠，我们需要创建Adobe Campaign和优惠空间，然后配置HTML页。
 
-以下用例详细介绍了通过JavaScript集成选件的可能选项。
+以下用例详细说明了通过JavaScript集成优惠的可能选项。
 
 ## HTML模式 {#html-mode}
 
-### 展示匿名优惠 {#presenting-an-anonymous-offer}
+### 呈现匿名优惠 {#presenting-an-anonymous-offer}
 
 1. **准备交互引擎**
 
-   打开Adobe Campaign界面并准备一个匿名环境。
+   打开Adobe Campaign界面并准备匿名环境。
 
-   创建链接到匿名环境的选件空间。
+   创建链接到匿名优惠空间的环境。
 
-   创建选件及其链接到选件空间的表示形式。
+   创建优惠及其与优惠空间链接的表示形式。
 
 1. **HTML页面的内容**
 
    HTML页面必须包含
 
-   元素，其属性为@id，其值为创建的选件空间的内部名称(“i_internal name space”)。 此选件将通过交互插入到此元素中。
+   具有@id属性的元素，其值为已创建优惠空间的内部名称(“i_internal name space”)。 优惠将通过“交互”插入到此元素中。
 
-   在我们的示例中，@id属性接收“i_SPC12”值，其中“SPC12”是先前创建的选件空间的内部名称：
+   在我们的示例中，@id属性接收“i_SPC12”值，其中“SPC12”是先前创建的优惠空间的内部名称：
 
    ```
    <div id="i_SPC12"></div>
    ```
 
-   在我们的示例中，调用脚本的URL如下（“OE3”是实时环境的内部名称）:
+   在我们的示例中，调用脚本的URL如下(“OE3”是实时环境的内部名称):
 
    ```
    <script id="interactionProposalScript" src="https://instance.adobe.org:8080/nl/interactionProposal.js?env=OE3" type="text/javascript"></script>
@@ -72,15 +72,15 @@ Adobe建议使用JavaScript集成方法。
 
    >[!CAUTION]
    >
-   >标 `<script>` 签不得自行关闭。
+   >标 `<script>` 签不能自行关闭。
 
-   此静态调用将自动生成一个动态调用，其中包含交互引擎所需的所有参数。
+   此静态调用将自动生成包含交互引擎所需的所有参数的动态调用。
 
-   此行为允许您在同一页面上使用多个选件空间，通过对引擎的单次调用进行管理。
+   此行为允许您在同一页面上使用多个优惠空间，通过对引擎的一次调用进行管理。
 
 1. **HTML页中的结果**
 
-   通过交互引擎将选件表示形式的内容返回到HTML页面：
+   优惠呈现的内容由交互引擎返回到HTML页面：
 
    ```
    <div id="banner_header">
@@ -104,9 +104,9 @@ Adobe建议使用JavaScript集成方法。
    </div>
    ```
 
-### 展示已识别的选件 {#presenting-an-identified-offer}
+### 呈现已识别的优惠 {#presenting-an-identified-offer}
 
-要向已识别的联系人提供选件，该过程与此处详述的过程类似：提 [供匿名优惠](#presenting-an-anonymous-offer)。 在网页内容中，您需要添加以下脚本，以在调用引擎时识别联系人：
+要向已识别的联系人提供优惠，该过程与此处详述的过程类似： [呈现匿名优惠](#presenting-an-anonymous-offer)。 在网页内容中，您需要添加以下脚本，以在调用引擎时识别联系人：
 
 ```
 <script type="text/javascript">
@@ -114,15 +114,15 @@ Adobe建议使用JavaScript集成方法。
 </script>
 ```
 
-1. 转到网页将调用的选件空间，单击并添 **[!UICONTROL Advanced parameters]** 加一个或多个标识键。
+1. 转至网页将调用的优惠空间，单击并添 **[!UICONTROL Advanced parameters]** 加一个或多个标识键。
 
    ![](assets/interaction_htmlmode_001.png)
 
-   在此示例中，标识密钥是综合的，因为它既基于电子邮件也基于收件人姓名。
+   在此示例中，标识密钥是组合的，因为它既基于电子邮件，也基于收件人名。
 
-1. 在网页显示过程中，脚本评估允许您将收件人ID传递给选件引擎。 如果ID是复合的，则按与高级设置中使用的相同顺序显示键，并由|.
+1. 在网页显示过程中，脚本评估允许您将收件人ID传递给优惠引擎。 如果ID是复合的，则按与高级设置中相同的顺序显示键，并由 |。
 
-   在以下示例中，联系人已登录到网站，并在调用交互引擎时被识别，这归功于其电子邮件和姓名。
+   在以下示例中，联系人已登录到网站，在调用交互引擎时，由于其电子邮件和姓名而被识别。
 
    ```
    <script type="text/javascript">
@@ -132,21 +132,21 @@ Adobe建议使用JavaScript集成方法。
 
 ### 使用HTML渲染功能 {#using-an-html-rendering-function}
 
-要自动生成HTML选件表示，您可以使用渲染函数。
+要自动生成HTML优惠呈现，您可以使用渲染函数。
 
-1. 转到选件空间并单击链 **[!UICONTROL Edit functions]** 接。
-1. Select **[!UICONTROL Overload the HTML rendering function]**.
-1. 转到选项卡 **[!UICONTROL HTML rendering]** ，并在选件空间中插入与为选件内容定义的字段相匹配的变量。
+1. 转到优惠空间并单击链 **[!UICONTROL Edit functions]** 接。
+1. 选择 **[!UICONTROL Overload the HTML rendering function]**。
+1. 转到选项 **[!UICONTROL HTML rendering]** 卡，并插入与为优惠内容定义的字段相匹配的变量。
 
    ![](assets/interaction_htmlmode_002.png)
 
-   在此示例中，选件以网页中横幅的形式显示，并且由可单击的图像和与选件内容中定义的字段相匹配的标题组成。
+   在此示例中，优惠以网页中横幅的形式显示，由可单击的图像和与优惠内容中定义的字段相匹配的标题组成。
 
 ## XML模式 {#xml-mode}
 
 ### 展示优惠 {#presenting-an-offer}
 
-通过交互，可将XML节点返回到调用选件引擎的HTML页。 此XML节点可由客户端开发的函数进行处理。
+交互允许您将XML节点返回到调用优惠引擎的HTML页。 此XML节点可由客户端开发的函数进行处理。
 
 对交互引擎的调用如下所示：
 
@@ -154,17 +154,17 @@ Adobe建议使用JavaScript集成方法。
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
 ```
 
-“**env**”参数接收实时环境的内部名称。
+“env ****”参数接收实时环境的内部名称。
 
-“**cb**”参数接收函数的名称，该名称将读取由包含（回调）命题的引擎返回的XML节点。 此参数为可选参数。
+“cb ****”参数接收将读取引擎返回的包含（回调）命题的XML节点的函数名称。 此参数是可选的。
 
-“**t**”参数接收目标值，仅用于标识的交互。 此参数也可以与interactionTarget变量 **一起传递** 。 此参数为可选参数。
+“t ****”参数接收目标值，仅用于标识的交互。 此参数也可以与interactionTarget变 **量一起** 传递。 此参数是可选的。
 
-“**c**”参数接收类别的内部名称列表。 此参数为可选参数。
+“**c**”参数接收类别的内部名称的列表。 此参数是可选的。
 
-“**th**”参数接收主题列表。 此参数为可选参数。
+“th ****”参数接收主题。 此参数是可选的。
 
-“**gctx**”参数接收到整个页面的全局（上下文）调用数据。 此参数为可选参数。
+“gctx ****”参数接收整个页面的全局调用数据（上下文）。 此参数是可选的。
 
 返回的XML节点如下所示：
 
@@ -177,19 +177,19 @@ Adobe建议使用JavaScript集成方法。
 </propositions>
 ```
 
-以下用例详细介绍了在Adobe Campaign中要启用XML模式进行的配置，然后在HTML页中显示对引擎的调用结果。
+以下用例详细介绍了在Adobe Campaign下进行的配置以启用XML模式，然后在HTML页中显示对引擎的调用结果。
 
-1. **创建环境和选件空间**
+1. **创建环境和优惠空间**
 
    有关创建环境的详细信息，请参 [阅实时／设计环境](../../interaction/using/live-design-environments.md)。
 
-   有关创建选件空间的详细信息，请参阅创 [建选件空间](../../interaction/using/creating-offer-spaces.md)。
+   有关创建优惠空间的详细信息，请参阅 [创建优惠空间](../../interaction/using/creating-offer-spaces.md)。
 
-1. **扩展选件架构以添加新字段**
+1. **扩展优惠模式以添加新字段**
 
-   此架构将定义以下字段：标题2和价格。
+   此模式将定义以下字段：标题2和价格。
 
-   示例中架构的名称为 **cus:offer**
+   示例中模式的名称为 **cus:优惠**
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
@@ -216,17 +216,17 @@ Adobe建议使用JavaScript集成方法。
 
    >[!CAUTION]
    >
-   >每个元素都需要定义两次。 CDATA(&quot;_jst&quot;)类型元素可以包含个性化字段。
+   >每个元素需要定义两次。 CDATA(&quot;_jst&quot;)类型元素可包含个性化字段。
    >
    >不要忘记更新数据库结构。 如需详细信息，请参阅[此部分](../../configuration/using/updating-the-database-structure.md)。
 
    >[!NOTE]
    >
-   >您可以扩展选件架构，以批处理和统一模式以及任何格式（文本、HTML和XML）添加新字段。
+   >您可以扩展优惠模式，以批处理和统一模式以及任何格式（文本、HTML和XML）添加新字段。
 
-1. **扩展选件公式以编辑新字段和修改现有字段**
+1. **扩展优惠公式以编辑新字段和修改现有字段**
 
-   编辑选 **件(nsm)输入表** 单。
+   编辑 **优惠(nsm)** 输入表单。
 
    在“视图”部分，插入包含以下内容的两个新字段：
 
@@ -266,23 +266,23 @@ Adobe建议使用JavaScript集成方法。
 
    >[!CAUTION]
    >
-   >()表单的字 `<input>`段必须指向在创建的架构中定义的CDATA类型元素。
+   >()表单的字 `<input>`段必须指向在创建的模式中定义的CDATA类型元素。
 
-   选件表示形式中的渲染如下所示：
+   优惠呈现表单中的呈现如下所示：
 
    ![](assets/interaction_xmlmode_form.png)
 
-   已 **[!UICONTROL Title 2]** 添加 **[!UICONTROL Price]** 和字段，且不再 **[!UICONTROL Destination URL]** 显示字段。
+   已 **[!UICONTROL Title 2]** 添加 **[!UICONTROL Price]** 和字段，且不再 **[!UICONTROL Destination URL]** 显示该字段。
 
-1. **创建选件**
+1. **创建优惠**
 
-   有关创建选件的详细信息，请参阅 [创建选件](../../interaction/using/creating-an-offer.md)。
+   有关创建优惠的详细信息，请 [参阅创建优惠](../../interaction/using/creating-an-offer.md)。
 
-   在以下用例中，选件按如下方式输入：
+   在以下用例中，优惠按如下方式输入：
 
    ![](assets/interaction_xmlmode_offer.png)
 
-1. 批准选件或让其他人批准该选件，然后在上一步创建的选件空间上激活它，以便在链接的实时环境中可用。
+1. 批准优惠或让其他人批准，然后在上一步创建的优惠空间上激活它，以便在链接的实时环境中提供它。
 1. **HTML页上的引擎调用和结果**
 
    在HTML页面中调用交互引擎的情况如下：
@@ -291,9 +291,9 @@ Adobe建议使用JavaScript集成方法。
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
    ```
 
-   “**env**”参数的值是实时环境的内部名称。
+   “env ****”参数的值是实时环境的内部名称。
 
-   “**cb**”参数的值是需要解释引擎返回的XML节点的函数名。 在我们的示例中，调用的up函数打开一个模态窗口(alert()函数)。
+   “cb ****”参数的值是需要解释引擎返回的XML节点的函数名称。 在我们的示例中，调用的函数打开一个模态窗口(alert()函数)。
 
    交互引擎返回的XML节点如下所示：
 
@@ -315,13 +315,13 @@ Adobe建议使用JavaScript集成方法。
 
 ### 使用渲染函数 {#using-a-rendering-function-}
 
-可以使用XML渲染功能创建选件演示。 此函数将修改在调用引擎期间返回到HTML页面的XML节点。
+可以使用XML渲染功能创建优惠演示文稿。 此函数将修改在调用引擎期间返回到HTML页面的XML节点。
 
-1. 转到选件空间并单击链 **[!UICONTROL Edit functions]** 接。
-1. Select **[!UICONTROL Overload the XML rendering function]**.
+1. 转到优惠空间并单击链 **[!UICONTROL Edit functions]** 接。
+1. 选择 **[!UICONTROL Overload the XML rendering function]**。
 1. 转到选项卡 **[!UICONTROL XML rendering]** 并插入所需的函数。
 
-   该函数可以如下：
+   该函数可以如下所示：
 
    ```
    function (proposition) {
