@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: 9b937d4d-55ae-4bd4-8dc6-eea42f15b69f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -41,7 +38,7 @@ ht-degree: 0%
 
    * **[!UICONTROL Directory]**
 
-      包含要下载的文件的目录。 必须事先在服务器上创建此目录： 如果它不存在，则会引发错误。
+      包含要下载的文件的目录。 必须事先在服务器上创建此目录：如果它不存在，则会引发错误。
 
    * **[!UICONTROL Filter]**
 
@@ -51,7 +48,7 @@ ht-degree: 0%
 
       如果启用此选项，则任务在收到第一个文件后结束。 如果目录中存在与筛选器对应的多个文件，则只会考虑一个文件。 此选项保证只发送一个事件。 文件是列表中按字母顺序排列的第一个文件。
 
-      对于未调度的活动，如果在指定的目录中找不到与过滤器匹配的文件，并且 **[!UICONTROL Process file nonexistence]** 如果未启用该选项，则会引发错误。
+      对于未计划活动，如果在指定的目录中找不到与过滤器匹配的文件，并且 **[!UICONTROL Process file nonexistence]** 如果未启用该选项，则会引发错误。
 
    * **[!UICONTROL Execution schedule]**
 
@@ -85,4 +82,4 @@ ht-degree: 0%
 
 ## 输出参数 {#output-parameters}
 
-* 文件名： 完整文件名。 这是文件名在移到历史化目录后。 因此，路径不同，但如果目录中已存在同名的其他文件，则名称也不同。 延长被保留。
+* 文件名：完整文件名。 这是文件名在移到历史化目录后。 因此，路径不同，但如果目录中已存在同名的其他文件，则名称也不同。 延长被保留。
