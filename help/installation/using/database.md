@@ -11,20 +11,20 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 1%
 
 ---
 
 
 # 数据库{#database}
 
-只要数据库服务器之间有网络连接，该数据库服务器就可以在任何给定操作系统上运行，而不管应用程序服务器或服务器使用的操作系统。
+只要数据库服务器之间有网络连接，它就可以在任何给定的操作系统上运行，而不管应用程序服务器或服务器使用的操作系统。
 
-只要可以与Adobe Campaign的不同组件建立连接，数据库服务器的操作系统就不重要。
+只要能够与Adobe Campaign的不同组件建立连接，数据库服务器的操作系统就不重要。
 
 另请检查“数 [据库访问层](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) ”部分。
 
@@ -32,18 +32,18 @@ source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 本机客户端必须安装在Adobe Campaign应用程序服务器上。
 
-可以通过ODBC驱动程序配置面板检查服务器上的本机客户端，位于 **SQL Server Native Client 10.0** （对于Microsoft SQL Server 2008和2008 R2客户端）或 **SQL Server Native Client 11.0** （对于Microsoft SQL Server 20）下客户端)。
+可以通过ODBC驱动程序配置面板检查服务器上的本机客户端，位 **于SQL Server Native Client 10.0** （对于Microsoft SQL Server 2008和2008 R2客户端）或 **SQL Server Native Client 11.0** （对于Microsoft SQL Server 20）下客户端)。
 
 必须存在以下访问DLL:
 
-* **sqlncli10.dll** for Microsoft SQL Server 2008和2008 R2客户端，
+* **用于Microsoft SQL** Server 2008和2008 R2客户端的sqlncli10.dll,
 * **sqlncli11.dll** for Microsoft SQL Server 2012、2014、2016和2017客户端。
 
    访问DLL可在Microsoft网站上找到。
 
 >[!NOTE]
 >
->不支持从Linux中运行的应用程序服务器访问Microsoft SQL Server。
+>不支持从在Linux中运行的应用程序服务器访问Microsoft SQL Server。
 
 ## Oracle {#oracle}
 
@@ -51,30 +51,30 @@ source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 >
 >不支持具有多字节字符的列名称。
 
-需要 **正确配置NLS_NCHAR_CHARACTERSET** 和 **NLS_CHARACTERSET** 参数，以使数据库在Unicode或ANSI中工作。
+需 **要正确配置NLS_NCHAR** _ **** CHARACTERSET和NLS_CHARACTERSET参数，以使数据库在Unicode或ANSI中工作。
 
-Adobe Campaign使用默认的Oracle编码。 使用其他编码可能会触发兼容性问题：在这种情况下，请联系技术支持。
+Adobe Campaign使用默认的Oracle编码。 使用其他编码可能会触发兼容性问题：在这种情况下，请与技术支持联系。
 
-要了解您的编码，请使用以下 **sqlplus命令** :
+要了解您的编码，请使用以下 **sqlplus命** 令：
 
 ```
 SELECT * FROM nls_database_parameters ;
 ```
 
-* 对于Unicode安装，支持的编码包括：
+* 对于Unicode安装，支持的编码为：
 
    ```
    NLS_NCHAR_CHARACTERSET         AL16UTF16
    NLS_CHARACTERSET         AL32UTF8
    ```
 
-* 对于ANSI安装（非Unicode），只支持以下编码：
+* 对于ANSI安装（非Unicode），仅支持以下编码：
 
 ```
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-要登录到 **sqlplus**，请使用Oracle用户配置文件：
+要登录到 **sqlplus**，请使用Oracle用户用户档案:
 
 ```
 su - oracle 
@@ -82,7 +82,7 @@ sqlplus
 [login] [password]
 ```
 
-您还可以在Linux中 [引用Oracle Client](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux)。
+您还可以在Linux [中引用Oracle Client](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux)。
 
 ## PostgresSQL {#postgressql}
 
@@ -90,4 +90,4 @@ sqlplus
 
 **相关主题**
 
-* [Adobe Campaign Classic表格中的取消登录选项](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Adobe Campaign Classic表中未登录的选项](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
