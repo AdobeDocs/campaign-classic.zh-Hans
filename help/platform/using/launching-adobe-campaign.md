@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 84f06afb36aa6a9fa13db1fda7034389b762eb99
+source-git-commit: 28f56534a57e675e42a417acfbf9b1a3053250a8
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 74%
+source-wordcount: '485'
+ht-degree: 58%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 74%
 
 ![](assets/s_ncs_user_connections_management.png)
 
-在窗口 **[!UICONTROL Connections]** 中，单击 **[!UICONTROL Add > Connection]**。
+In the **[!UICONTROL Connections]** window, click **[!UICONTROL Add > Connection]**.
 
 ![](assets/s_ncs_user_add_connexion.png)
 
@@ -93,11 +93,23 @@ This functionality is detailed in the [Access management](../../platform/using/a
 
 The **[!UICONTROL Help > About...]** menu lets you access the following information:
 
-* **版本**&#x200B;号，
-* **构建**&#x200B;号，
-* 可联系 Adobe Campaign 支持的链接。
+* **版本号** 。
+* **内部版本号** (Build Number)
+* 联系Adobe客户关怀的链接
+* adobe隐私政策、使用条款和Cookie政策的链接
 
-   >[!CAUTION]
-   >
-   >无论何时需要联系 Adobe 支持团队，都需要提供 Campaign 客户端控制台和应用程序服务器的版本号和构建号。
+![](assets/about-acc.png)
 
+无论何时需要联系 Adobe 支持团队，都需要提供 Campaign 客户端控制台和应用程序服务器的版本号和构建号。
+
+如果您运行的是 [活动金标版](../../rn/using/gold-standard.md)，则还需要共享框中显示的SHA/1字 **[!UICONTROL About]** 符。 例如，对于Gold Standard 10 **版本**，内部版本号将显 **示内部版本** 9032@efd8a94，如下所示：
+
+![](assets/about-acc-gs.png)
+
+在本文中进一步了 [解金本位](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
+
+**相关主题**：
+
+* [活动支持选项](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
+* [软件分发](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)
+* [Experience Cloud支持和专家会议](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
