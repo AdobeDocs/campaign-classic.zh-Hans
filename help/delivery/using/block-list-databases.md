@@ -1,7 +1,7 @@
 ---
-title: 块列表数据库
-seo-title: 块列表数据库
-description: 块列表数据库
+title: 阻止列表数据库
+seo-title: 阻止列表数据库
+description: 阻止列表数据库
 seo-description: null
 page-status-flag: never-activated
 uuid: 8a4a69f9-87d5-4044-bc55-76cdcb2e7800
@@ -11,27 +11,24 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: eede254d-2b25-46ed-b10f-fa1d54780a75
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f99e3a4f69cb2b0122f2f6957d419d6b95ad54b1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# 块列表数据库{#blocklisting-databases}
+# 阻止列表数据库{#blocklisting-databases}
 
 一些组织维护着据称被垃圾邮件发送者使用的IP地址和域数据库。 咨询这些站点有助于了解为什么某些邮件会被拒绝为垃圾邮件。 通常可以请求删除错误地添加到这些列表的地址。
 
 这些列表库称为RBL（实时黑洞），它们通过DNS机制进行查询。 RBL有三种类型：
 
-* 按IP地址： 列表发送垃圾邮件或可能转发垃圾邮件的IP地址。
-* 按发件人域： 列表发送垃圾邮件或配置不正确的发件人域（弹回邮件地址的完整域）。
-* 按Web域： 列表在垃圾邮件内容中包含的链接和图像的URL中找到的域（通过注册器注册的高级域）。 在Adobe Campaign中，要考虑的域通常是用于跟踪的地址。
+* 按IP地址：列表发送垃圾邮件或可能转发垃圾邮件的IP地址。
+* 按发件人域：列表发送垃圾邮件或配置不正确的发件人域（弹回邮件地址的完整域）。
+* 按Web域：列表在垃圾邮件内容中包含的链接和图像的URL中找到的域（通过注册器注册的高级域）。 在Adobe Campaign中，要考虑的域通常是用于跟踪的地址。
 
 以下是使用最广的RBL的列表。 有关更全面的列表，请参阅 [https://www.dnsstuff.com/](https://tools.dnsstuff.com/)。
 
