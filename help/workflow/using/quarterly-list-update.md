@@ -9,11 +9,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 31071cd2-7d97-4a4f-a6cc-5ac5b6178be5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: aa192d975a08246ba684940fff3d33853d7d9345
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
@@ -30,7 +27,7 @@ ht-degree: 0%
 ![](assets/incremental_query_example.png)
 
 1. 将增量查询和列表更新活动添加到新工作流中。
-1. 按照创 **[!UICONTROL Incremental query]** 建活动中的指定配置查询 [的选项卡](../../workflow/using/query.md#creating-a-query)。
+1. 按照创 **[!UICONTROL Incremental query]** 建活动中指定的方式配 [置查询选项卡](../../workflow/using/query.md#creating-a-query)。
 1. 选择选 **[!UICONTROL Scheduling & History]** 项卡，然后指定270天历史记录。 已被攻击的收件人在270天或大约9个月内不再被攻击。
 
    Then click the **[!UICONTROL Change...]** button.
