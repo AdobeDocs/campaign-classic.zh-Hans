@@ -11,14 +11,11 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 24d4875b-81fa-4bf3-8cf0-e6998bec4949
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -63,6 +60,6 @@ Adobe Campaign使用必须相应使用的ID序列： **xtkNewId**。 如果该�
 
 将数 [据导入](../../workflow/using/data-life-cycle.md#work-table) 到Adobe Campaign的每个工作流程都会导致数据库的大小增大。
 
-检查清除或清除工作流是否正在运行并有效清除记录。 必须清除所有事务数据和日志。 清理任务仅清除标准表： 跟踪和广泛的日志。 特定表必须由特定工作流清除。 Refer to [this section](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+检查清除或清除工作流是否正在运行并有效清除记录。 必须清除所有事务数据和日志。 清理任务仅清除标准表：跟踪和广泛的日志。 特定表必须由特定工作流清除。 请参阅[此章节](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs) 。
 
 通过检查记录的最旧创建日期来观察事务数据的老化。
