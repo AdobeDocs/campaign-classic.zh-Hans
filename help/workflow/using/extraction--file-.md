@@ -9,14 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: fe4e6f64-eb0a-44bc-8221-6c9bfb99871f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a215109db2d511180c91723059cd8ca10a34a612
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,7 +28,7 @@ ht-degree: 0%
 
 要配置提取，请应用以下步骤：
 
-1. 指定输出文件的名称： 此名称可包含变量，这些变量通过字段右侧的个性化按钮插入。
+1. 指定输出文件的名称：此名称可包含变量，这些变量通过字段右侧的个性化按钮插入。
 1. 单 **[!UICONTROL Edit the file format...]** 击以选择要提取的数据。
 
    ![](assets/s_advuser_extract_file_param.png)
@@ -60,7 +57,7 @@ ht-degree: 0%
 
 ![](assets/postprocessing_dataextraction.png)
 
-## 列表聚合函数 {#list-of-aggregate-functions}
+## List of aggregate functions {#list-of-aggregate-functions}
 
 以下是可用聚合函数的列表:
 
