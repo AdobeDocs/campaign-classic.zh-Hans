@@ -11,28 +11,28 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 031f8d5d-940c-4a4c-97e7-ad4ef61983c1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 8%
 
 ---
 
 
 # 更新聚合{#update-aggregate}
 
-聚合在立方级别定义，用于报告目的。 配 **[!UICONTROL Workflow]** 置聚合时，选项卡可用。
+聚合在多维数据集级别定义以供报告。 配 **[!UICONTROL Workflow]** 置聚合时，选项卡可用。
 
-有关Adobe Campaign中立方体和使用聚合的详细信息，请参阅专用部 [分](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates)。
+有关多维数据集和在Adobe Campaign中使用聚合的详细信息，请参阅专用 [部分](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates)。
 
-通过 **[!UICONTROL Update aggregate]** 该活动，您可以选择要应用的更新模式：完整或部分。
+该 **[!UICONTROL Update aggregate]** 活动允许您选择要应用的更新模式：完整或部分。
 
-默认情况下，在每次计算期间都会执行完全更新。 要启用部分更新，请选择相关选项并定义更新条件。
+默认情况下，在每次计算过程中都会执行完全更新。 要启用部分更新，请选择相关选项并定义更新条件。
 
 ![](assets/s_advuser_cube_agregate_05.png)
 
-**良好做法**:活 **[!UICONTROL Scheduler]** 动可用于指定计算更新的频率。
+**良好做法**:活动 **[!UICONTROL Scheduler]** 可用于指定计算更新的频率。
 
 ![](assets/s_advuser_cube_agregate_04.png)
 
