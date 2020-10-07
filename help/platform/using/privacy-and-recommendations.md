@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a3b5378c2e67b9982fa425f32e14e0b1c66e1bf3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1751'
 ht-degree: 7%
@@ -48,7 +45,7 @@ Adobe Campaign是收集和处理大量数据（包括个人信息和敏感数据
 
 >[!NOTE]
 >
->有关GDPR、CCPA、PDPA和LGPD如何应用于Adobe Campaign的更多信息，请参 [阅本页](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)。
+>有关GDPR、CCPA、PDPA和LGPD如何应用于Adobe Campaign的更多信息，请参 [阅本页](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy-overview.html#whatisgdpr)。
 
 ### Adobe Experience Cloud privacy {#experience-cloud-privacy}
 
@@ -99,7 +96,7 @@ Adobe Campaign是Adobe Experience Cloud解决方案的一部分。 隐私在活�
 
 Adobe Campaign使您能够收集数据，包括个人和敏感信息。 因此，您必须获得并监控收件人的同意。
 
-* 始终让收件人同意接收通信。 为此，请继续尽快遵守退出请求并通过多次选择加入流程验证同意。 有关此内容的详细信息，请 [参阅创建带有订阅选择加入的多次表单](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)。
+* 始终让收件人同意接收通信。 为此，请继续尽快遵守退出请求并通过多次选择加入流程验证同意。 有关此内容的详细信息，请 [参阅创建包含订阅选择加入的多次表单](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)。
 * 请勿导入欺诈性列表并使用种子地址来检查您的客户文件是否未被欺骗性地使用。 有关此内容的详细信息，请参 [阅关于种子地址](../../delivery/using/about-seed-addresses.md)。
 * 通过同意和权限管理，您可以跟踪收件人的偏好，并管理组织内谁可以访问哪些数据。 有关更多信息，请参阅[此章节](#consent)。
 * 方便和管理收件人的隐私请求。 有关更多信息，请参阅[此章节](#privacy-requests)。
@@ -136,7 +133,7 @@ Adobe Campaign提供了其他功能，帮助您作为数据管理者，为特定
 
 >[!NOTE]
 >
->这套工具可帮助您遵守GDPR、CCPA、PDPA和LGPD的隐私权。 有关这些不同法规的更多信息，请 [参阅本页](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)。
+>这套工具可帮助您遵守GDPR、CCPA、PDPA和LGPD的隐私权。 有关这些不同法规的更多信息，请 [参阅本页](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy-overview.html#whatisgdpr)。
 
 <!--* **GDPR** (General Data Protection Regulation) is the European Union’s (EU) privacy law that harmonizes and modernizes data protection requirements. GDPR applies to Adobe Campaign customers who hold data for Data Subjects residing in the EU.
 
