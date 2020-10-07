@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 0%
@@ -25,7 +22,7 @@ ht-degree: 0%
 
 # 传统连接器 {#legacy-connectors}
 
-Adobe仍支持传统联合数据访问连接器。 但是，我们建议用本页中列出的更新替代内容来替换 [它们](../../platform/using/specific-configuration-database.md)。
+传统联合数据访问连接器仍受Adobe支持。 但是，我们建议用本页中列出的更新替代内容来替换 [它们](../../platform/using/specific-configuration-database.md)。
 
 ## 配置对Hadoop 2.1的访问 {#configure-access-to-hadoop}
 
@@ -138,8 +135,8 @@ Adobe仍支持传统联合数据访问连接器。 但是，我们建议用本�
 
 1. 根据您使用的操作系统，安装Netezza的ODBC驱动程序：
 
-   * **nz-linuxclient-v7.2.0.0.tar.gz** for Linux。 选择与您的操作系统（linux或linux64）对应的文件夹，并开始unpack命令。 您可以保留默认建议在存储库中执行的安装： &quot;/usr/local/nz&quot;。
-   * **nz-winclient-v7.2.0.0.zip** for Windows 解压缩文件并开始与操作系统对应的可执行脚本： nzodbcsetup.exe或nzodbcsetup64.exe。 按照向导说明完成驱动程序的安装。
+   * **nz-linuxclient-v7.2.0.0.tar.gz** for Linux。 选择与您的操作系统（linux或linux64）对应的文件夹，并开始unpack命令。 您可以保留默认建议在存储库中执行的安装：&quot;/usr/local/nz&quot;。
+   * **nz-winclient-v7.2.0.0.zip** for Windows 解压缩文件并开始与操作系统对应的可执行脚本：nzodbcsetup.exe或nzodbcsetup64.exe。 按照向导说明完成驱动程序的安装。
 
 1. 配置ODBC驱动程序。 配置可以在标准文件中执行： **/etc/odbc.ini** ，用于常规参数， **/etc/odbcinst.ini** ，用于声明驱动程序。
 
@@ -175,25 +172,25 @@ Adobe仍支持传统联合数据访问连接器。 但是，我们建议用本�
 
 1. 指定环境服务器的Adobe Campaign变量：
 
-   * **LD_LIBRARY_PATH**: /usr/local/nz/lib和/usr/local/nz/lib64。 “/usr/local/nz”与安装驱动程序时默认提供的安装存储库相对应。 您需要在此指定已为安装选择的存储库。
-   * **ODBCINI**: odbc.ini文件的位置(例如/etc/odbc.ini)。
-   * **NZ_ODBC_INI_PATH**: odbc.ini文件的位置。 Netezza还要求使用odbc.ini文件的第二个变量。
+   * **LD_LIBRARY_PATH**:/usr/local/nz/lib和/usr/local/nz/lib64。 “/usr/local/nz”与安装驱动程序时默认提供的安装存储库相对应。 您需要在此指定已为安装选择的存储库。
+   * **ODBCINI**:odbc.ini文件的位置(例如/etc/odbc.ini)。
+   * **NZ_ODBC_INI_PATH**:odbc.ini文件的位置。 Netezza还要求使用odbc.ini文件的第二个变量。
 
-1. 在Campaign Classic中，您随后可以配置Netezza外部帐户。 在中， **[!UICONTROL Explorer]**&#x200B;单击 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+1. 在Campaign Classic中，您随后可以配置Netezza外部帐户。 From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. 单击 **[!UICONTROL New]** 并选 **[!UICONTROL External database]** 择为 **[!UICONTROL Type]**。
 
 1. 要配置 **[!UICONTROL Netezza]** 外部帐户，必须指定：
 
-   * **[!UICONTROL Type]**: 内泰扎
+   * **[!UICONTROL Type]**:内泰扎
 
-   * **[!UICONTROL Server]**: Netezza服务器的URL
+   * **[!UICONTROL Server]**:Netezza服务器的URL
 
-   * **[!UICONTROL Account]**: 用户的名称
+   * **[!UICONTROL Account]**:用户的名称
 
-   * **[!UICONTROL Password]**: 用户帐户密码
+   * **[!UICONTROL Password]**:用户帐户密码
 
-   * **[!UICONTROL Database]**: 数据库的名称
+   * **[!UICONTROL Database]**:数据库的名称
 
 >[!NOTE]
 >
@@ -208,7 +205,7 @@ Adobe仍支持传统联合数据访问连接器。 但是，我们建议用本�
 1. 确保unixodbc包在服务器上。
 1. 安 **装iq_odbc**。 安装结束时可能会出错。 可以忽略此错误。
 1. 安 **装iq_client_common**。 安装结束时可能会发生Java错误。 可以忽略此错误。
-1. 配置ODBC驱动程序。 配置可以在标准文件中执行： /etc/odbc.ini用于常规参数，/etc/odbcinst.ini用于声明驱动程序：
+1. 配置ODBC驱动程序。 配置可以在标准文件中执行：/etc/odbc.ini用于常规参数，/etc/odbcinst.ini用于声明驱动程序：
 
    * **/etc/odbc.ini** (将字符等 `<server_alias>` 值替换为您自己的值):
 
@@ -237,24 +234,24 @@ Adobe仍支持传统联合数据访问连接器。 但是，我们建议用本�
 
 1. 在LD_LIBRARY_PATH变量中为新libodbc16.so库添加路径。 为此：
 
-   * 如果您使用customer.sh文件声明您的路径： 为LD_LIBRARY_PATH变量添加路径/opt/sybase/IQ-16_0/lib64。
+   * 如果您使用customer.sh文件声明您的路径：为LD_LIBRARY_PATH变量添加路径/opt/sybase/IQ-16_0/lib64。
    * 否则，请使用Unix命令。
 
-1. 在Campaign Classic中，您随后可以配置Sybase IQ外部帐户。 在中， **[!UICONTROL Explorer]**&#x200B;单击 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+1. 在Campaign Classic中，您随后可以配置Sybase IQ外部帐户。 From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. 单击 **[!UICONTROL New]** 并选 **[!UICONTROL External database]** 择为 **[!UICONTROL Type]**。
 
 1. 要配置 **[!UICONTROL Sybase IQ]** 外部帐户，必须指定：
 
-   * **[!UICONTROL Type]**: ODBC(Sybase ASE、Sybase IQ)
+   * **[!UICONTROL Type]**:ODBC(Sybase ASE、Sybase IQ)
 
-   * **[!UICONTROL Server]**: 与第5步中定义的ODBC`<server_alias>`连接()相对应。 不一定是服务器本身的名称。
+   * **[!UICONTROL Server]**:与第5步中定义的ODBC`<server_alias>`连接()相对应。 不一定是服务器本身的名称。
 
-   * **[!UICONTROL Account]**: 用户的名称
+   * **[!UICONTROL Account]**:用户的名称
 
-   * **[!UICONTROL Password]**: 用户帐户密码
+   * **[!UICONTROL Password]**:用户帐户密码
 
-   * **[!UICONTROL Database]**: 数据库的名称
+   * **[!UICONTROL Database]**:数据库的名称
 
 >[!NOTE]
 >
@@ -281,7 +278,7 @@ Adobe仍支持传统联合数据访问连接器。 但是，我们建议用本�
       InstallDir=/etc/
       ```
 
-      “InstallDir”与odbcinst.ini文件的 **位置相对应** 。
+      &quot;InstallDir&quot;与odbcinst.ini文件的 **位置相对应** 。
 
    * **/etc/odbcinst.ini**
 
@@ -299,25 +296,25 @@ Adobe仍支持传统联合数据访问连接器。 但是，我们建议用本�
 
 1. 指定环境服务器的Adobe Campaign变量：
 
-   * **LD_LIBRARY_PATH**: /opt/teradata/client/15.10/lib64和/opt/teradata/client/15.10/odbc_64/lib。
-   * **ODBCINI**: odbc.ini文件的位置(例如/etc/odbc.ini)。
-   * **NLSPATH**: opermsgs.cat文件的位置(/opt/teradata/client/15.10/msg/opermsgs.cat)
+   * **LD_LIBRARY_PATH**:/opt/teradata/client/15.10/lib64和/opt/teradata/client/15.10/odbc_64/lib。
+   * **ODBCINI**:odbc.ini文件的位置(例如/etc/odbc.ini)。
+   * **NLSPATH**:opermsgs.cat文件的位置(/opt/teradata/client/15.10/msg/opermsgs.cat)
 
-1. 在Campaign Classic中，您随后可以配置Teradata外部帐户。 在中， **[!UICONTROL Explorer]**&#x200B;单击 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+1. 在Campaign Classic中，您随后可以配置Teradata外部帐户。 From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. 单击 **[!UICONTROL New]** 并选 **[!UICONTROL External database]** 择为 **[!UICONTROL Type]**。
 
 1. 要配置 **[!UICONTROL Teradata]** 外部帐户，必须指定：
 
-   * **[!UICONTROL Type]**: Teradata
+   * **[!UICONTROL Type]**:Teradata
 
-   * **[!UICONTROL Server]**: Teradata服务器的URL
+   * **[!UICONTROL Server]**:Teradata服务器的URL
 
-   * **[!UICONTROL Account]**: 用户的名称
+   * **[!UICONTROL Account]**:用户的名称
 
-   * **[!UICONTROL Password]**: 用户帐户密码
+   * **[!UICONTROL Password]**:用户帐户密码
 
-   * **[!UICONTROL Database]**: 数据库的名称
+   * **[!UICONTROL Database]**:数据库的名称
 
 ## 配置对SAP HANA的访问 {#configure-access-to-sap-hana}
 
@@ -328,7 +325,7 @@ Adobe仍支持传统联合数据访问连接器。 但是，我们建议用本�
    * **适用于Linux的hdb_client_linux** .tgz。 解压后，启动hdbinst命令并按照说明完成驱动程序安装。
    * **适用于Windows的hdb_client_windows** .zip。 解压缩文件并开始可执行文件： **hdbinst.exe**。 按照向导说明完成驱动程序的安装。
 
-1. 配置ODBC驱动程序。 配置可以在标准文件中执行： /etc/odbc.ini用于常规参数，/etc/odbcinst.ini用于声明驱动程序。
+1. 配置ODBC驱动程序。 配置可以在标准文件中执行：/etc/odbc.ini用于常规参数，/etc/odbcinst.ini用于声明驱动程序。
 
    * **/etc/odbc.ini**
 
@@ -342,7 +339,7 @@ Adobe仍支持传统联合数据访问连接器。 但是，我们建议用本�
       User:SYSTEM
       ```
 
-      “InstallDir”与odbcinst.ini文件的 **位置相对应** 。
+      &quot;InstallDir&quot;与odbcinst.ini文件的 **位置相对应** 。
 
    * **/etc/odbcinst.ini**
 
@@ -354,19 +351,19 @@ Adobe仍支持传统联合数据访问连接器。 但是，我们建议用本�
 
 1. 指定环境服务器的Adobe Campaign变量：
 
-   * **LD_LIBRARY_PATH**: 默认情况下，它应包含指向SAP Hana客户端(/usr/sap/hdbclient/libodbcHDB.so)的链接。
-   * **ODBCINI**: odbc.ini文件的位置(例如/etc/odbc.ini)。
+   * **LD_LIBRARY_PATH**:默认情况下，它应包含指向SAP Hana客户端(/usr/sap/hdbclient/libodbcHDB.so)的链接。
+   * **ODBCINI**:odbc.ini文件的位置(例如/etc/odbc.ini)。
 
-1. 在Campaign Classic中，您随后可以配置SAP Hana外部帐户。 在中， **[!UICONTROL Explorer]**&#x200B;单击 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
+1. 在Campaign Classic中，您随后可以配置SAP Hana外部帐户。 From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. 单击 **[!UICONTROL New]** 并选 **[!UICONTROL External database]** 择为 **[!UICONTROL Type]**。
 
 1. 要配置 **[!UICONTROL SAP Hana]** 外部帐户，必须指定：
 
-   * **[!UICONTROL Type]**: SAP Hana
+   * **[!UICONTROL Type]**:SAP Hana
 
-   * **[!UICONTROL Server]**: SAP Hana服务器的URL
+   * **[!UICONTROL Server]**:SAP Hana服务器的URL
 
-   * **[!UICONTROL Account]**: 用户的名称
+   * **[!UICONTROL Account]**:用户的名称
 
-   * **[!UICONTROL Password]**: 用户帐户密码
+   * **[!UICONTROL Password]**:用户帐户密码
