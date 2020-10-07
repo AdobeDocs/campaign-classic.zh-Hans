@@ -11,24 +11,24 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: b64c9729-cfe2-4d02-8c59-9e53efd34a96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '129'
+ht-degree: 3%
 
 ---
 
 
 # 故障排除{#troubleshooting}
 
-如果移动设备已连接到Wi-Fi且您未收到通知，请检查FCM/APNS端口是否未被防火墙阻止。
+如果移动设备已连接到Wi-Fi且您未收到通知，请检查防火墙是否未阻止FCM/APNS端口。
 
-**Android**:移动设备连接到端口5228到5230上的FCM服务器。 因此，必须配置防火墙，以便它授权与FCM连接。 要打开的端口包括：5228（最常用的）、5229和5230。
+**Android**:移动设备连接到端口5228到5230上的FCM服务器。 因此，必须配置防火墙，以便它授权与FCM连接。 要打开的端口有：5228（最常用的）、5229和5230。
 
 **iOS**:
 
-二进制连接器：要发送通知，必须对端口2195上的入站和出站TCP通信进行授权。 连接到推送服务的设备必须授权端口5223上的入站和出站TCP通信。
+二进制连接器：要发送通知，必须对端口2195上的入站和出站TCP通信授权。 连接到推送服务的设备必须授权端口5223上的入站和出站TCP通信。
 
 HTTP/2连接器：您必须允许与以下服务器进行通信：
 
