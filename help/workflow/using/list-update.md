@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: ca2cd5bf-78a2-4e43-955d-206f4474d1e0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -56,8 +53,8 @@ ht-degree: 0%
 1. 选择要保存列表的文件夹。
 1. 输入列表的标签。 您可以插入动态字段以自动从列表生成名称。 在此示例中，列表与查询同名，可轻松识别其内容。
 1. 选中 **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** 此选项可删除与定位条件不匹配的收件人，并将新的列表插入该。
-1. 同时保持选 **[!UICONTROL Create or use a list with its own table]** 中选项。
-1. 不选中 **[!UICONTROL Generate an outbound transition]** 此选项。
+1. Also leave the **[!UICONTROL Create or use a list with its own table]** option checked.
+1. Leave the **[!UICONTROL Generate an outbound transition]** option unchecked.
 1. Click **[!UICONTROL Ok]** then start the workflow.
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
