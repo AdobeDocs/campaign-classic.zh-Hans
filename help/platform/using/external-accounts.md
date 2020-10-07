@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 11%
@@ -197,7 +194,7 @@ Snowflake **外部帐户** 允许您将活动实例连接到Snowflake外部数�
 
 ### Teradata外部帐户 {#teradata-external-account}
 
-Teradata **外部帐户** 允许您将活动实例连接到Teradata外部数据库。 有关如何使用Teradata配置Campaign Classic的详细信息，请参 [阅本页](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) 或本 [部分](../../platform/using/specific-configuration-database.md#configure-access-to-teradata)。
+Teradata **外部帐户** 允许您将活动实例连接到Teradata外部数据库。 有关如何使用Teradata配置Campaign Classic的详细信息，请参 [阅本页](https://helpx.adobe.com/cn/campaign/kb/campaign_fda_teradata.html) 或本 [部分](../../platform/using/specific-configuration-database.md#configure-access-to-teradata)。
 
 ![](assets/ext_account_19.png)
 
@@ -431,7 +428,7 @@ Amazon简单存储服务(S3)连接器可用于将数据导入或导出到Adobe C
 
 * **[!UICONTROL Access key]**
 
-   要了解在何处找到您的访问密钥，请参阅此 [页](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-manage) (部分 **视图和复制访问密钥**)。
+   要了解在何处找到您的访问密钥，请参阅此页 [面](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-manage) (部分 **视图和复制访问密钥**)。
 
 ## Hadoop外部帐户 {#hadoop-external-account}
 
