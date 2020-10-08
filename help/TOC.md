@@ -4,12 +4,11 @@ user-guide-title: Adobe Campaign Classic指南
 breadcrumb-title: Campaign Classic Guide
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Design, plan, execute, manage, and optimize cross-channel marketing campaigns that deliver a high return on marketing investment.
-index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 546c8f14006e333bb81aa52a008e9f1dfa79f03b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2119'
 ht-degree: 94%
@@ -637,7 +636,7 @@ ht-degree: 94%
    + 简介 {#introduction}
       + [前言](production/using/foreword.md)
       + [一般架构](production/using/general-architecture.md)
-      + [监控指南](production/using/monitoring-guidelines.md)
+      + [监控准则](production/using/monitoring-guidelines.md)
    + 生产流程 {#production-procedures}
       + [配置原理](production/using/configuration-principle.md)
       + [工作原理](production/using/operating-principle.md)
