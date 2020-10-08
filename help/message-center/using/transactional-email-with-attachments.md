@@ -1,6 +1,6 @@
 ---
-title: 使用Adobe Campaign经典将附件添加到事务性消息
-description: 了解如何使用Adobe Campaign经典发送包含个人和／或个性化附件的交易电子邮件
+title: 向事务性消息添加附件(与Adobe Campaign Classic)
+description: 了解如何使用Adobe Campaign Classic发送包含个人和／或个性化附件的交易电子邮件
 page-status-flag: never-activated
 uuid: 4452d839-318a-49d8-8abb-4ba04c803e9f
 contentOwner: sauviat
@@ -9,25 +9,22 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 discoiquuid: 7b8ab9d6-e47e-46d8-99df-da793486654c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 用例： 发送带有附件的交易电子邮件{#transactional-email-with-attachments}
+# 用例：发送带有附件的交易电子邮件{#transactional-email-with-attachments}
 
 此用例的用途是将电子邮件附件快速添加到出站派单。
 
 ## 关键步骤 {#key-steps}
 
-在此方案中，您将学习如何发送包含个人和／或个性化附件的交易电子邮件。 附件不会预上传到Transactional Messaging服务器： 而是在飞机上生成。
+在此方案中，您将学习如何发送包含个人和／或个性化附件的交易电子邮件。 附件不会预上传到Transactional Messaging服务器：而是在飞机上生成。
 
 捕获客户互动或详细信息时，您可能需要在流程结束时将此信息发回给客户，例如，在电子邮件附加的PDF文件中。
 
@@ -49,12 +46,12 @@ ht-degree: 0%
 >
 >为避免性能问题，如果您将通过个性化URL动态下载的图像作为附件，则默认情况下，每个图像大小不应超过100,000字节。 此推荐阈值可以通过 [列表Campaign Classic选项配置](../../installation/using/configuring-campaign-options.md#delivery)。
 
-## 建议 {#important-notes}
+## 建议{#important-notes}
 
 在实施此方案之前，请仔细阅读以下准则：
 
 * 事务消息实例不应用于存储、导出或上传文件或数据。 它们只能用于事件数据和相关信息。 不应将它们视为文件存储系统。
-* 由于Adobe以外没有直接访问事务消息实例或服务器的权限，因此没有标准方法将这些文件推送到这些服务器上（无FTP访问权限）。
+* 由于无法直接访问Adobe之外的事务消息实例或服务器，因此没有标准方法将这些文件推送到这些服务器上（无FTP访问）。
 * 在合同上使用事务消息传递实例上的磁盘空间存储任何类型的文件是不正确的，甚至用于附件也是如此。
 * 您需要使用其他联机磁盘系统来托管这些文件。 您需要FTP访问此系统，并且必须能够写入和删除文件。
 
@@ -70,7 +67,7 @@ ht-degree: 0%
 
 要将电子邮件附件快速添加到事务性消息，请执行以下步骤：
 
-1. 开始。 For more on this, see [this section](../../delivery/using/attaching-files.md#attach-a-personalized-file).
+1. 开始。 有关更多信息，请参阅[此章节](../../delivery/using/attaching-files.md#attach-a-personalized-file)。
 
    这允许您将文件附加到电子邮件，即使这些文件未托管在执行实例上。
 
