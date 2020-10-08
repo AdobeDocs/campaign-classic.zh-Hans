@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3593'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -37,7 +34,7 @@ ht-degree: 3%
 
 * [控制面板文档](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
 * [托管模型](../../installation/using/hosting-models.md)
-* [Campaign Classic本地和托管功能矩阵](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [Campaign Classic本地和托管功能矩阵](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)
 * [混合型号和托管型号配置步骤](../../installation/using/about-hybrid-and-hosted-models.md) )
 
 Campaign Classic配置文件存储在 **Adobe Campaign** 安装文件夹的conf文件夹中。 配置分布在两个文件上：
@@ -211,7 +208,7 @@ Campaign Classic配置文件存储在 **Adobe Campaign** 安装文件夹的conf�
 
 区域的技术配置在活动服务器的配置文件中执行： **serverConf.xml**。
 
-在此之前，您必须通过配置现成开始来明细列表 **[!UICONTROL Security zone]** ，将标签链接到serverConf.xml文件中定义的 **区域的内部名称** 。
+在此之前，您必须通过配置现成开始来明细列表 **[!UICONTROL Security zone]** ，将标签链接到serverConf.xml文件中定义的区 **域的内部名称** 。
 
 此配置在活动资源管理器中完成：
 
@@ -258,7 +255,7 @@ Campaign Classic配置文件存储在 **Adobe Campaign** 安装文件夹的conf�
 
 ### 在Tomcat中映射文件夹 {#mapping-a-folder-in-tomcat}
 
-要定义客户特定设置，可以在 **/tomcat-7/conf文件夹** 中创建user_上下文 **.xml文件** ，该文件夹也包含 **上下文.xml** 文件。
+要定义客户特定设置，可以在 **/tomcat-7/conf文件夹** 中创建user_上下文 **.xml文件** ，该文件夹也包 **含** 上下文.xml文件。
 
 此文件将包含以下类型的信息：
 
@@ -558,7 +555,7 @@ enableIf **属性是** 可选的（默认情况下为空），并且仅当结果
 
    下拉列表包含以前使用的关联。 它会随着时间推移用不同的输入值完成。
 
-1. 打开 **nl6/conf/config-`<instance>.xml`**文件。
+1. 打开 **nl6/conf/config-`<instance>.xml`** 文件。
 1. 按如下方式修改与模 **[!UICONTROL wfserver]** 块匹配的行：
 
    ```
