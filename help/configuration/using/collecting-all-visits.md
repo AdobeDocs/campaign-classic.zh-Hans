@@ -11,34 +11,34 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 7f841368-3867-4d6e-9720-c038d9bea0ce
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 4%
 
 ---
 
 
 # 收集所有访问{#collecting-all-visits}
 
-通过Adobe Campaign提供的Web跟踪模块，您可以在消息中单击后在站点跟踪上下文中收集对收件人执行的站点特定页面的访问。
+由Adobe Campaign提供的Web跟踪模块允许您在消息中单击后在站点跟踪上下文中收集收件人对站点的特定页面的访问。
 
-但是，您可以配置平台，以便它通过Web跟踪标记收集平台已知用户对页面的所有访问。
+但是，您可以配置您的平台，以便它通过Web跟踪标签收集平台所知用户对页面的所有访问。
 
-该平台已知的用户是已经被传送定位并且已经点击了至少一次接收消息的接收者。 永久Cookie用于标识此收件人。
+该平台所知的用户是已被收件人瞄准并且已点击至少一次所接收消息的投放。 永久cookie用于标识此收件人。
 
 >[!IMPORTANT]
 >
->Adobe Campaign平台不适用于在消息中单击后访问网站的上下文之外用作网站跟踪工具。 启用此选项后，可能会导致在承载服务器的计算机（重定向、应用程序和数据库）上对资源的高度使用。 建议您确保硬件架构能够支持此负载，并避免在最频繁访问的页面（如主页）中放置Web跟踪标记。
+>Adobe Campaign平台不适用于在消息中点击后访问网站的上下文之外用作网站跟踪工具。 启用此选项后，可能会在承载服务器的计算机（重定向、应用程序和数据库）上引起资源的高使用率。 建议您确保硬件架构能够支持此负载，并避免将Web跟踪标签放置到最频繁访问的页面(如主页)中。
 
 ## 服务器配置 {#server-configuration}
 
-通过使serverConf.xml文件的某些元素过载 **来配置服务器** 。 这些文件保存在Adobe Campaign安 **装目录** 的conf子目录中。
+通过重载serverConf.xml文件的某 **些元素来配置服** 务器。 这些文件保存在 **Adobe Campaign** 安装目录的conf子目录中。
 
 ### 重定向服务器 {#redirection-server}
 
-对于重定向服务器，将重 **定向元素的trackWebVisitors** 属性 **设置为** true ****。
+对于重定向服务器，将重 **定向元素** trackWebVisitors **属性设** 置为 **true**。
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -47,11 +47,11 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="true"
 trackingPassword=""
 ```
 
-## 配置默认匹配营销活动 {#configuring-a-default-matching-campaign}
+## 配置默认匹配活动 {#configuring-a-default-matching-campaign}
 
-要通过客户端控制台查看跟踪信息，您必须：
+要通过客户端控制台视图跟踪信息，您必须：
 
-* 创建 **虚拟交付** （交付映射必须与目标架构的映射相同）,
-* 在 **NmsTracking_WebTrackingDelivery选项中** ，输入此交付的 **内部名称** 。
+* 创建 **伪投放** (投放映射必须与目标模式的映射相同),
+* 在NmsTracking_ **WebTrackingDelivery** 选项中输入此 **投放的内** 部名称。
 
-并非在电子邮件中单击之后直接查看的所有站点跟踪信息都可以在创建的虚拟分发中查看。
+并非直接在电子邮件中单击之后查看的所有站点跟踪信息都可以在创建的虚拟投放中查看。
