@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '580'
-ht-degree: 1%
+ht-degree: 16%
 
 ---
 
@@ -29,7 +26,7 @@ Adobe Campaign provides the **Federated Data Access** (FDA) option in order to p
 
 >[!CAUTION]
 >
->通过联合数据访问访问外部数据库仅可用于内部安装或混合安装，雪花连接器除外。 For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>通过联合数据访问访问外部Snowflake库只能用于内部安装或混合安装，但连接器除外。 有关详细信息，请参见此 [ 页面](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)。
 
 ## 工作原理 {#operating-principle}
 
@@ -37,7 +34,7 @@ Adobe Campaign provides the **Federated Data Access** (FDA) option in order to p
 
 要使用此功能，您必须：
 
-1. 具有与Adobe Campaign联合数据访问模块兼容的外部数据库。 兼容性矩阵中详细介绍了列表库系统和兼容 [版本的](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。 用户在Adobe Campaign和 [外部](../../platform/using/remote-database-access-rights.md) ，也必须具有必要的权限。
+1. 具有与Adobe Campaign联合数据访问模块兼容的外部数据库。 兼容性矩阵中详细介绍了列表库系统和兼容 [版本的](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。 用户在Adobe Campaign和 [外部](../../platform/using/remote-database-access-rights.md) ，也必须具有必要的权限。
 1. [在Adobe Campaign服务器上](../../platform/using/specific-configuration-database.md) ，安装与您的数据库对应的驱动程序。
 1. [创建并配置外部帐户](../../platform/using/connecting-to-database.md) ，它允许您在Adobe Campaign和外部数据库之间建立连接。 有关可用外部帐户的详细信息，请参阅 [本页](../../platform/using/external-accounts.md)。
 1. [以模式](../../platform/using/creating-data-schema.md) ，创建外部数据库的Adobe Campaign。 这允许您识别外部数据库的数据结构。
@@ -49,14 +46,14 @@ Adobe Campaign provides the **Federated Data Access** (FDA) option in order to p
 
 您可以在与Adobe Campaign列表模块兼容的每个外部数据库的联合数据访问下找到：
 
-* 微软Azure突触Analytics。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#azure-external).
-* 雪花。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
-* Hadoop。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3).
-* 甲骨文。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
-* 内泰扎。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
-* Sybase IQ。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-sybase-iq).
-* Teradata。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
-* SAP HANA。 For more on this, refer to this [section](../../platform/using/specific-configuration-database.md).
+* Microsoft Azure突触分析。 有关更多信息，请参阅此](../../platform/using/specific-configuration-database.md#azure-external)章节[。
+* Snowflake。 有关更多信息，请参阅此](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)章节[。
+* Hadoop。 有关更多信息，请参阅此](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)章节[。
+* 甲骨文。 有关更多信息，请参阅此](../../platform/using/specific-configuration-database.md#configure-access-to-oracle)章节[。
+* 内泰扎。 有关更多信息，请参阅此](../../platform/using/specific-configuration-database.md#configure-access-to-netezza)章节[。
+* Sybase IQ。 有关更多信息，请参阅此](../../platform/using/specific-configuration-database.md#configure-access-to-sybase-iq)章节[。
+* Teradata。 有关更多信息，请参阅此](../../platform/using/specific-configuration-database.md#configure-access-to-teradata)章节[。
+* SAP HANA。 有关更多信息，请参阅此](../../platform/using/specific-configuration-database.md)章节[。
 
 ## 最佳实践和建议 {#best-practices-and-recommendations}
 
@@ -69,7 +66,7 @@ Adobe Campaign provides the **Federated Data Access** (FDA) option in order to p
 
 如果您希望使用外部投放库的数据在中进行个性化，请收集要在工作流中使用的数据，以便在临时表中提供。 然后使用临时表中的数据个性化您的投放。
 
-## 限制 {#limitations}
+## 限制{#limitations}
 
 联合数据访问选项在您使用的外部数据库系统中受到软限制。
 
