@@ -1,7 +1,7 @@
 ---
-title: 监视技术工作流
-seo-title: 监视技术工作流
-description: 监视技术工作流
+title: 监控技术工作流
+seo-title: 监控技术工作流
+description: 监控技术工作流
 seo-description: null
 page-status-flag: never-activated
 uuid: 4d215ff4-a61d-4294-8f15-17c612022577
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
 
-# 监视技术工作流 {#monitoring-technical-workflows}
+# 监控技术工作流 {#monitoring-technical-workflows}
 
 技术工作流需要被监控，并且在失败时需要采取相应的操作。
 
@@ -51,22 +48,22 @@ ht-degree: 0%
 
 对于 **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. 检查工作流 **[!UICONTROL Database Cleanup]** 是否每天运行并成功完成。 For more on this, refer to this [page](../../workflow/using/delivery.md).
-1. 查看日志，验证已用时间是否随时间相对恒定，并且不会干扰其他工作流。
+1. 检查工作流 **[!UICONTROL Database Cleanup]** 是否每天运行并成功完成。 有关详细信息，请参见此 [ 页面](../../workflow/using/delivery.md)。
+1. 查看日志，确认已用时间随时间的推移是相对恒定的，并且不会干扰其他工作流。
 1. 有关详细信息，请检查 [此页](../../production/using/database-cleanup-workflow.md)。
 
 对于 **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
-检查跟踪工作流是否按计划运行（默认为每小时），以及日志是否不会突出显示重复错误。 For more on this, refer to this [section](../../workflow/using/delivery.md).
+检查跟踪工作流是否按计划运行（默认为每小时），以及日志是否不会突出显示重复错误。 有关更多信息，请参阅此](../../workflow/using/delivery.md)章节[。
 
 对于 **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. 检查工作流 **[!UICONTROL Deliverability update]** 是否每天运行并成功完成。 For more on this, refer to this [page](../../workflow/using/delivery.md).
+1. 检查工作流 **[!UICONTROL Deliverability update]** 是否每天运行并成功完成。 有关详细信息，请参见此 [ 页面](../../workflow/using/delivery.md)。
 1. 在日志中验证规则是否正在定期更新。
 
 对于 **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. 查看文件夹下的所有 **[!UICONTROL Campaign process]** 工作流。 For more on this, refer to this [page](../../workflow/using/campaign.md).
+1. 查看文件夹下的所有 **[!UICONTROL Campaign process]** 工作流。 有关详细信息，请参见此 [ 页面](../../workflow/using/campaign.md)。
 1. 检查工作流是否按计划运行，以及日志是否突出显示重复的错误。
 
 ## 工作流监控 {#workflow-supervision}
@@ -95,7 +92,7 @@ ht-degree: 0%
 
 ## 监控的规划和自动化 {#planning-and-automation-of-monitoring}
 
-规划工作流监控提高了其效率。 某些任务需要每天进行，而其他任务则可以每周或每月进行。
+规划工作流监控提高了其效率。 某些任务需要每天进行，而其他任务可以每周或每月进行。
 
 在按循环命名的文件夹中设置工作流，并按执行计划排序，从而提高监视效率。
 
