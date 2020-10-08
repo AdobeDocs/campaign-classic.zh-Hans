@@ -11,14 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: bd057441-8524-49e6-b5d5-fbd0ec5bca85
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1573'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -39,7 +36,7 @@ ht-degree: 0%
 1. 订购活动。
 1. 执行活动。
 
-## 创建本地活动模板 {#creating-a-local-campaign-template}
+## Creating a local campaign template {#creating-a-local-campaign-template}
 
 要创建活动包，必须首先通过节 **点** 创建 **[!UICONTROL Resources > Templates]** 活动模板。
 
@@ -67,11 +64,11 @@ Web界面与本地实体在订购活动时要填写的表单相对应。
 
 可用的Web界面有四种类型：
 
-* **[!UICONTROL By brief]** : 本地实体必须提供描述活动配置的说明。 一旦订单被批准，中央实体将配置并执行整个活动。
+* **[!UICONTROL By brief]** :本地实体必须提供描述活动配置的说明。 一旦订单被批准，中央实体将配置并执行整个活动。
 
    ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** : 本地实体有权访问Web表单，根据所使用的模板，他们可以编辑内容、目标、最大大小以及使用个性化字段创建和提取日期。 本地实体可以评估来自此Web表单的目标和预览内容。
+* **[!UICONTROL By form]** :本地实体有权访问Web表单，根据所使用的模板，他们可以编辑内容、目标、最大大小以及使用个性化字段创建和提取日期。 本地实体可以评估来自此Web表单的目标和预览内容。
 
    ![](assets/mkt_distr_8.png)
 
@@ -83,8 +80,8 @@ Web界面与本地实体在订购活动时要填写的表单相对应。
 
    ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** : 本地实体有权访问其外部网中的活动参数(非Adobe Campaign)。 这些参数与局部活动(按 **表单)的参数相同**。
-* **[!UICONTROL Pre-set]** : 本地实体使用默认表单对活动进行排序，而不对其进行本地化。
+* **[!UICONTROL By external form]** :本地实体有权访问其外部网中的活动参数(非Adobe Campaign)。 这些参数与局部活动(按 **表单)的参数相同**。
+* **[!UICONTROL Pre-set]** :本地实体使用默认表单对活动进行排序，而不对其进行本地化。
 
    ![](assets/mkt_distr_5.png)
 
@@ -131,7 +128,7 @@ Web界面与本地实体在订购活动时要填写的表单相对应。
 
 ![](assets/s_advuser_mkg_dist_disable_op_parameters.png)
 
-### 工作流 {#workflow}
+### Workflow {#workflow}
 
 在选 **[!UICONTROL Targeting and workflows]** 项卡中，创建活动工作流，该工作流会收集 **[!UICONTROL Default values]** 在中指定的 **[!UICONTROL Advanced campaign settings...]** 投放并创建。
 
@@ -174,7 +171,7 @@ Web界面与本地实体在订购活动时要填写的表单相对应。
 应用以下步骤：
 
 1. 在活动 **[!UICONTROL Navigation]** 页面的 **部分** ，单击该链 **[!UICONTROL Campaign packages]** 接。
-1. 单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
+1. 单击 **[!UICONTROL Create]** 按钮。
 
    ![](assets/mkg_dist_add_an_entry.png)
 
@@ -184,7 +181,7 @@ Web界面与本地实体在订购活动时要填写的表单相对应。
 
 1. 指定活动包的标签、文件夹和执行计划。
 
-### 日期 {#dates}
+### 日期{#dates}
 
 开始和结束日期定义活动在活动包列表中的可见性期间。
 
@@ -276,9 +273,9 @@ Web界面与本地实体在订购活动时要填写的表单相对应。
 
    ![](assets/mkg_dist_local_op_catalog_detail_3.png)
 
-   有关此内容的详细信息，请参 [阅批准流程](#approval-process) 部分。
+   For more on this, refer to the [Approval process](#approval-process) section.
 
-1. 然后，将通知本地运算符该活动可用： 活动可用性可以在活动范围内的活动包的 **列表中** 。 然后可以使用活动。 For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
+1. 然后，将通知本地运算符该活动可用：活动可用性可以在活动范围内的活动包的 **列表中** 。 然后可以使用活动。 For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
 
    该 **[!UICONTROL Start targeting with order approval]** 选项允许本地实体在订单获得批准后立即运行活动。
 
@@ -318,7 +315,7 @@ Web界面与本地实体在订购活动时要填写的表单相对应。
 >
 >在活动发布日期之前，仍可以编辑和重新配置活动。 本地实体还可以通过单击按钮拒绝该 **[!UICONTROL Cancel]** 活动。
 
-#### 创建活动 {#creating-a-campaign}
+#### 创建营销策划{#creating-a-campaign}
 
 活动订单一经批准，即可由本地实体配置并执行。
 
@@ -332,7 +329,7 @@ For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-
 
 ![](assets/mkg_dist_do_not_valid.png)
 
-如果审阅人拒绝订单，则相关通知会自动发送给相关本地实体: 它显示由拒绝批准的操作员输入的注释。
+如果审阅人拒绝订单，则相关通知会自动发送给相关本地实体:它显示由拒绝批准的操作员输入的注释。
 
 信息显示在活动包的列表页或活动顺序页。 如果本地实体有权访问Adobe Campaign控制台，则会告知其拒绝。
 
