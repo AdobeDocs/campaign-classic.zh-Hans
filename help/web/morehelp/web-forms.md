@@ -1,6 +1,6 @@
 ---
-title: Web表单
-seo-title: Web表单
+title: Web 窗体
+seo-title: Web 窗体
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -8,14 +8,14 @@ uuid: 4b418ace-d198-4fc9-8593-aa144005e333
 contentOwner: sauviat
 discoiquuid: 9a0546da-5bde-4e34-a694-f56c74b01017
 iscontainer: true
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '8'
+ht-degree: 100%
 
 ---
 
 
-# Web表单{#web-forms}
+# Web 窗体{#web-forms}
 
