@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: 892b93ed-cb0e-4af5-a1ae-eff0c8b703c6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2470'
 ht-degree: 0%
@@ -57,11 +54,11 @@ Adobe Campaign允许您使用营销资源管理模块控制已计划的、已承
 
 ## 创建预算 {#creating-a-budget}
 
-预算通过节点在地图中创 **[!UICONTROL Campaign management > Budgets]** 建。 通过 **[!UICONTROL New]** 工具栏中的按钮可以创建预算。
+预算通过节点在地图中创 **[!UICONTROL Campaign management > Budgets]** 建。 利用工 **[!UICONTROL New]** 具栏中的按钮，您可以创建预算。
 
 * 添加新预算
 
-   单击图 **[!UICONTROL New]** 标、命名并保存预算。
+   单击图 **[!UICONTROL New]** 标、名称并保存预算。
 
 * 输入初始金额
 
@@ -208,6 +205,7 @@ Adobe Campaign允许您使用营销资源管理模块控制已计划的、已承
    * 对于尚未分析的投放，计算成本为估计临时成本。 如果分析已经执行，则计算成本将是服务提供成本结构计算的所有成本和目标收件人数之和。
    * 对于在建任务，计算成本采用估计临时成本。 如果任务完成，则计算成本将是从服务提供商成本结构计算的所有成本和完成天数之和。
    * 对于营销计划，对于项目，计算成本是为活动计算的成本总和。 如果这些费用没有具体说明，计算的费用将使用估计的临时费用。
+
    >[!NOTE]
    >
    >通过 **[!UICONTROL Breakdown]** 链接，您可以视图计算的详细信息和上次成本计算日期。
@@ -222,7 +220,7 @@ Adobe Campaign允许您使用营销资源管理模块控制已计划的、已承
 
 可以通过预算批准对提交给活动的金额执行检查。 可以在活动中创建其他检查点样式任务，以设置其他批准。 请参 [阅任务类型](../../campaign/using/creating-and-managing-tasks.md#types-of-task)。
 
-### Example {#example}
+### 示例{#example}
 
 我们将创建一个活动:
 
@@ -253,9 +251,11 @@ Adobe Campaign允许您使用营销资源管理模块控制已计划的、已承
    对于任务，请创建以下两个成本类别:
 
    * **[!UICONTROL Room reservation]** （小房间和大房间）, **固定** 成本结构为300和500欧元：
+
    ![](assets/s_user_cost_mgmt_sample_6.png)
 
    * **[!UICONTROL Creation]** (**内容模板** )，每日 **成本结** 构为300欧元：
+
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
 #### 第3步——在活动中计入预算 {#step-3---charging-the-budget-in-the-campaign}
@@ -278,7 +278,7 @@ Adobe Campaign允许您使用营销资源管理模块控制已计划的、已承
 
 1. 为活动创建工作流并定位查询活动以选择目标(警告，必须指定收件人邮政地址)。
 
-1. 创建直接邮件投放并选择在步骤2中创建的服务提供商: 成本类别会自动显示。
+1. 创建直接邮件投放并选择在步骤2中创建的服务提供商:成本类别会自动显示。
 
 1. 改写信封的成本并添加固定成本。 还可以选择类别，考虑这些成本。
 
@@ -324,7 +324,7 @@ Adobe Campaign允许您使用营销资源管理模块控制已计划的、已承
 
    当任务完成(状态 **[!UICONTROL Finished]** )时，计算的成本将自动更新为大会议室的成本，这是在其成本结构中输入的。 此成本也会显示在细分类别中。
 
-1. 然后，按照同一过程创建第二个任务; 计划超过五天，与先前创建的成本结构有关。
+1. 然后，按照同一过程创建第二个任务;计划超过五天，与先前创建的成本结构有关。
 
    ![](assets/s_user_cost_mgmt_sample_16.png)
 
