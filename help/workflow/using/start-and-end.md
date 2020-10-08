@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 8b239d5e-2317-42c8-9fee-7d40bea624da
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 9%
 
 ---
 
@@ -26,17 +26,17 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 * **[!UICONTROL Start]**
 
-   执行工作流以活动开始，而没有入站过渡和“开始”类型活动。
+   使用活动执行工作流开始，而不使用入站过渡和开始类型活动。
 
    ![](assets/s_user_segmentation_start_stop.png)
 
 * **[!UICONTROL End]**
 
-   您可以配置活 **[!UICONTROL End]** 动以中断所有正在执行的任务。 为此，请双击活动以显示其属性，然后选中相应的选项。
+   您可以配置 **[!UICONTROL End]** 活动以中断所有正在进行的任务。 为此，请多次单击活动以显示其属性，并选中相应的选项。
 
    ![](assets/s_user_segmentation_end.png)
 
-   启用结束活动后，工作台中的数据会自动删除。 如果这不是必需的，并且要避免不必要的加载，您可以选择在上次活动输出时禁用过渡。 例如，在交付输出中，如果没有预定进程，请取消选中以下相关选项：
+   启用结束活动时，工作台中的数据将自动删除。 如果这不是必需的，并且为了避免不必要的载入，您可以选择在最后一个过渡输出时禁用活动。 例如，在投放输出中，如果没有计划进程，请取消选中相关选项，如下所示：
 
    ![](assets/s_advuser_delivery_option_no_output.png)
 
