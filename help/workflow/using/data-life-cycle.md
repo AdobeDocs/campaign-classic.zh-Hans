@@ -9,14 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -45,9 +42,9 @@ ht-degree: 0%
 
    通过此菜单，您可以访问描述性分析向导，该向导可以生成过渡数据的统计信息和报告。
 
-   For more on this, refer to this [section](../../reporting/using/using-the-descriptive-analysis-wizard.md).
+   有关更多信息，请参阅此](../../reporting/using/using-the-descriptive-analysis-wizard.md)章节[。
 
-执行工作流时将清除目标数据。 只有最后一个工作表可供访问。 您可以配置工作流，以便所有工作表仍可访问： 选中工 **[!UICONTROL Keep the result of interim populations between two executions]** 作流属性中的选项。
+执行工作流时将清除目标数据。 只有最后一个工作表可供访问。 您可以配置工作流，以便所有工作表仍可访问：选中工 **[!UICONTROL Keep the result of interim populations between two executions]** 作流属性中的选项。
 
 但是，我们建议您避免在大量数据情况下激活此选项。
 
@@ -65,7 +62,7 @@ ht-degree: 0%
 
 **[!UICONTROL Target extension]** (targetData)类型个性化元素不适用于定位工作流。 投放目标必须在工作流中构建并在投放的入站过渡中指定。
 
-如果要创建投放验证，则需要根据该模式构建验证 **[!UICONTROL Address substitution]** 目标，以便输入个性化数据。 For more on this, refer to this [section](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+如果要创建投放验证，则需要根据该模式构建验证 **[!UICONTROL Address substitution]** 目标，以便输入个性化数据。 有关更多信息，请参阅此](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof)章节[。
 
 在以下示例中，我们将收集一列表客户信息，并在个性化的电子邮件中使用。
 
@@ -97,7 +94,7 @@ ht-degree: 0%
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. 然后，配置 **[!UICONTROL Delivery]**: 它基于模板创建，收件人由入站过渡指定。
+1. 然后，配置 **[!UICONTROL Delivery]**:它基于模板创建，收件人由入站过渡指定。
 
    ![](assets/wf-targetdata-sample-4.png)
 
