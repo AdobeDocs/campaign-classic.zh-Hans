@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: f3666c12-5e6f-452e-b1d6-b69a7e9f6f6e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -36,7 +33,7 @@ ht-degree: 0%
 可能有两种情况：
 
 * 选择一个文件，并按原样将其附加到投放。
-* 为每个收件人个性化附件的内容。 在这种情况下，您需要创建计算 **附件**: 在投放时，根据收件人计算每个消息的附件名称。 如果您有“可变数字打印”选项，投放时也可以个性化内容并将其 **转换为PDF** 格式。
+* 为每个收件人个性化附件的内容。 在这种情况下，您需要创建计算 **附件**:在投放时，根据收件人计算每个消息的附件名称。 如果您有“可变数字打印”选项，投放时也可以个性化内容并将其 **转换为PDF** 格式。
 
 >[!NOTE]
 >
@@ -51,7 +48,7 @@ ht-degree: 0%
 >可以向投放附加多个文件。 附件可以采用任何格式，包括压缩格式。
 
 1. 单击链 **[!UICONTROL Attachments]** 接。
-1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
+1. 单击 **[!UICONTROL Add]** 按钮。
 1. 单 **[!UICONTROL File...]** 击以选择要附加到投放的文件。
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
@@ -60,7 +57,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 
-选择文件后，它会立即上传到服务器，供投放时使用。 它列在字 **[!UICONTROL Attachments]** 段中。
+选择文件后，该文件将立即上传到服务器，供投放时使用。 它列在字 **[!UICONTROL Attachments]** 段中。
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
@@ -87,7 +84,7 @@ ht-degree: 0%
 
 ### 附加本地文件 {#attach-a-local-file}
 
-如果附件是本地文件，请选择以下选项： **[!UICONTROL File name is specified when creating the delivery template]**. 文件将选择在本地并上传到服务器。 按照以下步骤操作：
+如果附件是本地文件，请选择以下选项： **[!UICONTROL File name is specified when creating the delivery template]**. 文件将选择在本地并上传到服务器。 按照下面的步骤进行操作：
 
 1. 在字段中选择要上传的 **[!UICONTROL Local file]** 文件。
 1. 根据需要指定标签。 在消息传递系统中查看时，标签将替换文件名。 如果未指定任何内容，则默认情况下使用文件名。
@@ -132,7 +129,7 @@ ht-degree: 0%
 
 ### 附加计算文件 {#attach-a-calculated-file}
 
-您可以在准备投放时计算附件名称。 要执行此操作，请选择选项 **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**。
+您可以在准备投放时计算附件名称。 To do this, select the option **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
 
 >[!NOTE]
 >
