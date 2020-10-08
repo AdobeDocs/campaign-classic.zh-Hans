@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 3bc88f9c-cc42-4bf6-a318-0093c73e4d82
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '57'
+ht-degree: 21%
 
 ---
 
@@ -28,11 +28,11 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
    ![](assets/messagecenter_preview_001.png)
 
-1. 在下 **[!UICONTROL A seed address]** 拉列表中进行选择。
+1. Select **[!UICONTROL A seed address]** in the drop-down list.
 
    ![](assets/messagecenter_preview_002.png)
 
-1. 选择以前创建的种子地址以显示个性化消息。
+1. 选择之前创建的种子地址以显示个性化信息。
 
    ![](assets/messagecenter_create_seedaddr_009.png)
 
