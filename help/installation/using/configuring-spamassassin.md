@@ -1,7 +1,7 @@
 ---
-title: 配置SpamAssassin
-seo-title: 配置SpamAssassin
-description: 配置SpamAssassin
+title: 配置 SpamAssassin
+seo-title: 配置 SpamAssassin
+description: 配置 SpamAssassin
 seo-description: null
 page-status-flag: never-activated
 uuid: 327548c0-d621-4417-9fc9-b0bf30251dc0
@@ -11,23 +11,20 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: aa37bdc6-0f85-4eca-859f-e8b15083cfb5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1a9d4c9eadf996d37481f33636eae98e482ac115
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '984'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 配置SpamAssassin{#configuring-spamassassin}
+# 配置 SpamAssassin{#configuring-spamassassin}
 
 >[!NOTE]
 >
->某些配置只能由Adobe为Adobe托管的部署执行。 例如，访问服务器和实例配置文件。 要进一步了解不同的部署，请参 [阅托管模型](../../installation/using/hosting-models.md) 部分或 [本文](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。
+>某些配置只能由Adobe执行，以便由Adobe托管。 例如，访问服务器和实例配置文件。 要进一步了解不同的部署，请参 [阅托管模型](../../installation/using/hosting-models.md) 部分或 [本文](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)。
 
 ## 概述 {#overview}
 
@@ -73,11 +70,11 @@ SpamAssassin是一款用于过滤不需要的电子邮件的软件。 与此软�
 
    输 **入run_me.bat** ，然后单 **击Enter** 以开始安装和更新过程。 此操作返回以下值之一以指示更新结果。
 
-   * **0**: 已进行更新。
-   * **1**: 没有可用的新更新。
-   * **2**: 没有新更新可用。
-   * **3**: 更新在先前验证期间失败。
-   * **4个或** 更多： 出现错误。
+   * **0**:已进行更新。
+   * **1**:没有可用的新更新。
+   * **2**:没有新更新可用。
+   * **3**:更新在先前验证期间失败。
+   * **4个或** 更多：出现错误。
 
 1. 要检查SpamAssassin安装是否成功，请按照以下过程使用GTUBE测试（主动提供的批量电子邮件的常规测试）:
 
