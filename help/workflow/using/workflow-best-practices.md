@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 3da951ef-5775-4593-8301-f143c71edc19
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1610'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -33,7 +30,7 @@ ht-degree: 0%
 
 ### 日志 {#logs}
 
-JavaScript方法是 **[!UICONTROL logInfo()]** 调试工作流的一个极好的解决方案。 它很有用，但必须谨慎使用，尤其是对于经常运行的活动: 它会使日志过载，并显着增加日志表的大小。 但您可能还需要更多 **[!UICONTROL logInfo()]**。
+JavaScript方法是 **[!UICONTROL logInfo()]** 调试工作流的一个极好的解决方案。 它很有用，但必须谨慎使用，尤其是对于经常运行的活动:它会使日志过载，并显着增加日志表的大小。 但您可能还需要更多 **[!UICONTROL logInfo()]**。
 
 还提供两个其他解决方案来帮助您：
 
@@ -51,7 +48,7 @@ JavaScript方法是 **[!UICONTROL logInfo()]** 调试工作流的一个极好的
 
    此选项在 **[!UICONTROL Execution]** 工作流属性的选项卡中可用，它将记录该工具从不同查询生成的所有SQL活动。 它是查看平台实际执行什么的好方法。 但是，此选项仅应在开发过程中暂时使用，而不应在生产时激活。
 
-在日志不再需要时清除日志。 工作流历史记录不会自动清除： 默认情况下，所有消息都保留。 可以通过菜单或单 **[!UICONTROL File > Actions]** 击列表上方工具栏中的“操作”按钮来清除历史记录。 选择清除历史记录。
+在日志不再需要时清除日志。 工作流历史记录不会自动清除：默认情况下，所有消息都保留。 可以通过菜单或单 **[!UICONTROL File > Actions]** 击列表上方工具栏中的“操作”按钮来清除历史记录。 选择清除历史记录。
 要了解如何清除日志，请参阅本 [文档](../../workflow/using/starting-a-workflow.md)。
 
 ### 工作流计划 {#workflow-planning}
@@ -94,9 +91,9 @@ Adobe建议您在专用文件夹中创建工作流。
 
 ### 工作流命名 {#workflow-naming}
 
-由于如果工作流没有按照预期的方式执行，Adobe建议给他们正确的名称和标签，这样他们便更容易找到并排除故障： 填写工作流的描述字段，汇总要执行的过程，以便操作员能够轻松理解它。
+Adobe 建议为工作流赋予正确的名称和标签，这样工作流没有按照预期的方式执行，可轻松地找到并排除故障：填写工作流的描述字段，在其中加入执行流程的摘要，以便操作员能够轻松理解。
 
-如果工作流是涉及多个工作流的流程的一部分，则在输入标签时可以明确； 使用数字是对工作流进行排序的极好方法（按标签）。
+如果工作流是涉及多个工作流的流程的一部分，则在输入标签时可以明确；使用数字是对工作流进行排序的极好方法（按标签）。
 
 例如：
 
@@ -111,7 +108,7 @@ Adobe建议您在专用文件夹中创建工作流。
 您可以在工作流属性的选项卡中配置工作流的严 **[!UICONTROL Execution]** 重性：
 
 * 正常
-* 制作
+* Production
 * 关键
 
 在创建工作流时提供此信息将帮助您了解所配置进程的严重性。
@@ -147,7 +144,7 @@ Workflow HeatMap使Adobe Campaign平台管理员能够监控实例的负载并�
 ### 第一个和最后一个活动 {#first-and-last-activities}
 
 * 始终用开始或 **[!UICONTROL Start]** 活动活动您的 **[!UICONTROL Scheduler]** 工作流。 相关时，您还可以使用 **[!UICONTROL External signal]** 活动。
-* 在构建工作流时，每个分支只 **[!UICONTROL Scheduler]** 使用一个活动。 如果工作流的同一分支具有多个调度程序（相互链接），则要执行的任务数将呈指数级增长，这将使数据库过载。 此规则也适用于具有选项卡的所有 **[!UICONTROL Scheduling & History]** 活动。 进一步了 [解计划](../../workflow/using/scheduler.md)。
+* When building your workflow, only use one **[!UICONTROL Scheduler]** activity per branch. 如果工作流的同一分支具有多个调度程序（相互链接），则要执行的任务数量将呈指数级增长，这将使数据库严重过载。此规则也适用于具有选项卡的所有 **[!UICONTROL Scheduling & History]** 活动。 进一步了 [解计划](../../workflow/using/scheduler.md)。
 
    ![](assets/wf-scheduler.png)
 
@@ -157,7 +154,7 @@ Workflow HeatMap使Adobe Campaign平台管理员能够监控实例的负载并�
 
 在初始化工作流活动时，您可能希望添加JavaScript。 此操作可在活动的 **[!UICONTROL Advanced]** 活动选项卡中完成。
 
-为了更轻松地发现工作流，我们建议在多次标签的开始和结尾处使用活动虚线，如下所示： —我的标签—。
+为了更轻松地发现工作流，我们建议在多次标签的开始和结尾处使用活动虚线，如下所示：—我的标签—。
 
 ### 信号 {#signal}
 
