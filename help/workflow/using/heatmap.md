@@ -11,21 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1326'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
 # 工作流热图 {#workflow-heatmap}
 
-Adobe Campaign工作流热图以颜色编码的图形形式表示当前运行的所有工作流。 它仅对实例管理员可用。
+Adobe Campaign Workflow HeatMap 以颜色编码的图形形式表示当前运行的所有工作流。它仅对实例管理员可用。
 
 本页介绍了监视不同活动过程的其 [他方法](../../production/using/monitoring-guidelines.md)。
 
@@ -38,8 +35,8 @@ Adobe Campaign工作流热图以颜色编码的图形形式表示当前运行的
 * 查看和了解并发工作流
 * 按持续时间筛选工作流，以查看哪些工作流可能遇到问题
 * 按持续时间筛选活动，以查看哪些活动可能遇到问题
-* 轻松查找个别工作流和所有相关活动（持续时间）
-* 按工作流类型搜索([技术工作流](../../workflow/using/building-a-workflow.md#technical-workflows) 或 [活动工作流](../../workflow/using/building-a-workflow.md#campaign-workflows))
+* 轻松查找个别工作流和所有相关活动（及持续时间）
+* 按工作流类型进行搜索（[技术工作流](../../workflow/using/building-a-workflow.md#technical-workflows)或[活动工作流](../../workflow/using/building-a-workflow.md#campaign-workflows)）
 * 查找要分析的特定工作流
 
 >[!NOTE]
@@ -48,22 +45,22 @@ Adobe Campaign工作流热图以颜色编码的图形形式表示当前运行的
 
 使用Workflow HeatMap需要充分了解以下概念： [工作流](../../workflow/using/about-workflows.md)、 [活动](../../workflow/using/about-activities.md) 和工 [作流最佳实践](../../workflow/using/workflow-best-practices.md)。
 
-默认情况下，从18.10版开始的Adobe Campaign中提供工作流热图。 如果您的内部版本介于8700和8977(18.10)之间，您还可以从此功能中受益。 要请求相应的包，请与Adobe [客户关怀](https://support.neolane.net/) ，并按照本页 [中的说](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) 明进行操作，以了解如何安装它。
+默认情况下，从18.10版开始的Adobe Campaign中提供工作流热图。 如果您的内部版本介于8700和8977(18.10)之间，您还可以从此功能中受益。 要请求相应的包，请与 [Adobe](https://support.neolane.net/) “客户服务”部门联系 [，并按照本](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) 页中的说明，了解如何安装它。
 
 首次访问Worklow HeatMap时，将显示以下弹出窗口。 本协议允许在美国进行转让和存储，允许Adobe Campaign:
 
 * 监视实例以调查任何性能问题。
 * 收集数据以进行异常检测。
 
-请注意，只有使用Adobe Campaign连接Adobe ID的用户才能传输数据。
+请注意，只有使用Adobe ID连接到Adobe Campaign的用户才能传输数据。
 
 ![](assets/wf_monitoring_agreement.png)
 
 有三个选项可用：
 
-* **[!UICONTROL Accept]** : 接受本协议后，即授权Adobe Campaign收集您的数据并将其传输到美国，以便在发现异常时为您提供帮助。
-* **[!UICONTROL Refuse]** : 通过拒绝协议，您的数据将不会传输，但您仍可以使用工作流热图。
-* **[!UICONTROL Do not show this message again]** : 通过单 **[!UICONTROL Do not show this message again]** 击，在访问工作流热图时，弹出窗口将停止显示，但仍可通过按钮 **[!UICONTROL Term of use]** 使用。
+* **[!UICONTROL Accept]** :接受本协议后，即授权Adobe Campaign收集您的数据并将其传输到美国，以便在发现异常时为您提供帮助。
+* **[!UICONTROL Refuse]** :通过拒绝协议，您的数据将不会传输，但您仍可以使用工作流热图。
+* **[!UICONTROL Do not show this message again]** :通过单 **[!UICONTROL Do not show this message again]** 击，在访问工作流热图时，弹出窗口将停止显示，但仍可通过按钮 **[!UICONTROL Term of use]** 使用。
 
 此选项不是最终选项，您始终可以通过单击按钮来更 **[!UICONTROL Term of use]** 改它。
 
@@ -84,9 +81,9 @@ Adobe Campaign工作流热图以颜色编码的图形形式表示当前运行的
    >[!NOTE]
    >
    >只有尚未被工作流删除的工作流 **[!UICONTROL Database cleanup]** 才可见。 有关数据库清理工作流的详细信息，请参 [阅本节](../../production/using/database-cleanup-workflow.md)。\
-   >默认情况下，工作流热图时区是为当前管理员用户定义的时区。 例如，如果您与正在处理的营销用户不在同一区域，则您可能希望对其进行更改。
+   >默认情况下，工作流热图时区是为当前管理员用户定义的时区。 例如，如果您与正在处理的营销用户不在同一区域，您可能希望对其进行更改。
 
-1. 单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮。
+1. 单击 **[!UICONTROL Filters]** 按钮。
 
    ![](assets/wkf_monitoring_filters.png)
 
@@ -104,8 +101,8 @@ Adobe Campaign工作流热图以颜色编码的图形形式表示当前运行的
 
 1. 您还可以对以下内容进行筛选 **[!UICONTROL Workflow type]** :
 
-   * **[!UICONTROL Technical]** : 只 [显示现成的技术工作流](../../workflow/using/building-a-workflow.md#technical-workflows)[和数据管理](../../workflow/using/targeting-data.md#data-management) 工作流。
-   * **[!UICONTROL Marketing]** : 只显示链接到营销活动的工作流( [称为](../../workflow/using/building-a-workflow.md#campaign-workflows)活动工作流)。
+   * **[!UICONTROL Technical]** :只 [显示现成的技术工作流](../../workflow/using/building-a-workflow.md#technical-workflows)[和数据管理](../../workflow/using/targeting-data.md#data-management) 工作流。
+   * **[!UICONTROL Marketing]** :只显示链接到营销活动的工作流( [称为](../../workflow/using/building-a-workflow.md#campaign-workflows)活动工作流)。
 
 1. 要按名称搜索特定工作流，您还可以使用该 **[!UICONTROL Workflow name filter]** 字段。
 
@@ -141,7 +138,7 @@ Adobe Campaign工作流热图以颜色编码的图形形式表示当前运行的
 1. 单击工作流ID或名称以直接打开工作流。
 1. 要返回视图, **[!UICONTROL Campaign Workflow HeatMap]** 请单击该 **[!UICONTROL Home]** 按钮。
 
-## 用例： 使用热图执行操作 {#use-cases--using-the-heatmap-to-take-actions}
+## 用例：使用热图执行操作 {#use-cases--using-the-heatmap-to-take-actions}
 
 活动工作流热图在以下两种主要情况下非常有用。
 
@@ -169,14 +166,14 @@ Adobe Campaign工作流热图以颜色编码的图形形式表示当前运行的
 
    ![](assets/wkf_monitoring_long_duration.png)
 
-1. 减少滤镜，增加效 **[!UICONTROL Min duration]** 果。
+1. 通过减少滤镜来增加效 **[!UICONTROL Min duration]** 果。
 1. 浏览结果，找到最长的工作流，这些数据可能会对服务器和数据库资源（CPU、RAM、网络、IOPS等）产生更大影响。
 1. 采取适当的操作：
 
    * 建议营销用户分割最长工作流，以缩短处理时间。
    * 开始对特定工作流和特定活动（如JavaScript、导入、导出等）进行更深入的分析，以隔离问题并更轻松地解决它们。
 
-## 示例： 使用HeatMap改进工作流规划 {#example--using-the-heatmap-to-improve-workflow-planning}
+## 示例：使用HeatMap改进工作流规划 {#example--using-the-heatmap-to-improve-workflow-planning}
 
 以下示例演示了在使用Adobe Campaign工作流热图时如何提高计划效率以及如何改进性能。
 
