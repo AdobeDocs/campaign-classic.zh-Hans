@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: a4669fee-4512-455f-b495-ebd5a0746b76
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 4%
 
 ---
 
@@ -24,43 +24,43 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ## 目标 {#objectives}
 
-Adobe Campaign提供了响应管理应用程序（响应管理器），可让您衡量营销活动的成功和盈利能力，或为所有通信渠道（电子邮件、移动设备、电话、直邮、传真、代理等）提供建议。
+Adobe Campaign优惠一个响应管理应用程序(响应管理器)，它允许您衡量所有通信渠道（电子邮件、移动设备、电话、直邮、传真、代理等）的营销活动或优惠建议的成功和盈利能力。
 
-## 假设概念 {#hypothesis-concept}
+## 假设验证概念 {#hypothesis-concept}
 
-可以在从接触日期开始的给定时间段内配置假设，以推断在收到递送之后被定位的那些行为。 这些假设基于保存购 **买的事务** 表以及这些购买的详细信息。
+假设验证可以在从联系日期开始的给定时间段内进行配置，以推断在收到投放后目标用户的行为。 这些假设验证基于保存 **购买** 的事务表以及这些购买的详细信息。
 
-假设在时间上是有限的，并且可以应用于控制组以与目标群体进行比较。 假设结果由一旦计 **算完成** ，就自动更新的指示器提供。 营销活动报告中将考虑与这些假设相关的投资回报率。
+假设验证时间有限，可应用于对照组以与目标人口进行比较。 假设验证结果由一 **旦计算** 完成，将自动更新的指示器提供。 与假设验证相关的ROI将在活动报告中予以考虑。
 
-此外，随响 **应管理器提供的报表** ，使您能够汇总与营业额增加、利润计算以及交付或优惠的ROI相关的信息。
+此外，通 **过响应管理器** 提供的报表，您可以汇总与营业额增加、利润计算以及投放或优惠的ROI相关的信息。
 
-此外，由于购买详细信息行，您可以指定假设以仅关注一个特定产品。
+此外，由于有了购买详细信息行，您可以指定假设验证只关注一个特定产品。
 
-例如，在提升物料的交付之后，我们希望评估生成的收入。 我们应用假设，即在触发交付后的一个月中购买了至少一件物品的任何接收者都对此行为做出反应。 响应管理将根据此假设确定应为其分配哪些采购请求行。 然后，根据这一点，可以确定这些行的总和作为最终收入。
+例如，在投放提升项目后，我们希望评估生成的收入。 我们应用假设验证，在触发投放后的一个月内购买了至少一件物品的任何收件人都对此操作作出了反应。 响应管理将根据此假设验证确定应为其分配哪些采购请求行。 然后，根据这一点，可以确定生成的收入作为这些行的总和。
 
 >[!CAUTION]
 >
->响应管理器是一个 **[!UICONTROL Campaign]** 选项。 请检查您的许可协议。
+>响应管理器是一个 **[!UICONTROL Campaign]** 选项。 请核实您的许可协议。
 
-您还可以计算接收送货或优惠的整个接收者家庭的所有反应。
+您还可以计算整个收件人家庭收到投放或优惠的所有反应。
 
-每个假设都与单个事务表相关联。 一个交付或报价可以链接到多个假设。
+每个假设验证都链接到单个事务表。 一个投放或优惠可以链接到多个假设验证。
 
 ## 方法 {#method}
 
-在开始使用Response Manager之前，请参阅 [配置](../../campaign/using/configuration.md) ，并执行必要的配置。
+在使用开始之前，请参 [阅](../../campaign/using/configuration.md) “配置”并执行必要的配置。
 
-为了在交付或选件上启动假设，您需要在模板中定义其上下文，该上下文将用于您创建的每个假设。
+要在投放或优惠上启动假设验证，您需要在模板中定义其上下文，该上下文将用于您创建的每个假设验证。
 
-要定义和创建测量假设，请应用以下过程：
+要定义和创建度量假设验证，请应用以下流程：
 
-1. 定义假设模型。 请参阅 [创建假设模型](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model)。
-1. 在现有交付上创建一个或多个假设。 请参阅在 [营销活动交付中引用假设](../../campaign/using/creating-hypotheses.md#referencing-a-hypothesis-in-a-campaign-delivery)。
+1. 定义假设验证模型。 请参阅 [创建假设验证模型](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model)。
+1. 在现有假设验证上创建一个或多个投放。 请参阅 [在假设验证投放中引用活动](../../campaign/using/creating-hypotheses.md#referencing-a-hypothesis-in-a-campaign-delivery)。
 
-   或
+   或者
 
-   创建关于选件的一个或多个假设。 请参阅 [创建选件假设](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-an-offer)。
+   在优惠上创建一个或多个假设验证。 请参阅 [在优惠上创建假设验证](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-an-offer)。
 
-1. 检查假设结果。 请参阅假 [说跟踪](../../campaign/using/hypothesis-tracking.md)。
-1. 如有必要，重新发布假设。 请参阅 [在交货时即时创建假设](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)。
+1. 检查假设验证结果。 请参阅 [假设验证跟踪](../../campaign/using/hypothesis-tracking.md)。
+1. 如有必要，重新启动假设验证。 请参 [阅在假设验证上动态创建投放](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)。
 
