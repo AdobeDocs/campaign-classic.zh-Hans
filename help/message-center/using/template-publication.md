@@ -11,14 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 43908738-a71a-49be-ac00-175f57a0555c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1486e897a125520c51661db3030c62ab380fb173
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
