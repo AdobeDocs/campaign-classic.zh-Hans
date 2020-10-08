@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 0d50826e-2211-4c3b-8413-ca1453bba6c4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9784e0db6f1bef5abdf93d3517da04fe1ba69e7d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 3%
@@ -29,7 +26,7 @@ ht-degree: 3%
 
 过滤规则可以链接到其他类型的规则（控制、压力等） 或按专用的过滤排 **版** 。 有关此方面的详细信息，请 [参阅创建和使用过滤排版](#creating-and-using-a-filtering-typology)。
 
-## 创建筛选规则 {#creating-a-filtering-rule}
+## Creating a filtering rule {#creating-a-filtering-rule}
 
 例如，您可以过滤新闻稿订阅者，以防止将通信发送给未满收件人。
 
@@ -71,11 +68,11 @@ ht-degree: 3%
 
 ## 创建和使用过滤排版 {#creating-and-using-a-filtering-typology}
 
-您可以创建 **[!UICONTROL Filtering]** 类型： 它们只包含过滤规则。
+您可以创建 **[!UICONTROL Filtering]** 类型：它们只包含过滤规则。
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-选择投放后，这些特定类型可以链接到目标: 在投放向导中，单击链 **[!UICONTROL To]** 接，然后单击选 **[!UICONTROL Exclusions]** 项卡。
+选择投放后，这些特定类型可以链接到目标:在投放向导中，单击链 **[!UICONTROL To]** 接，然后单击选 **[!UICONTROL Exclusions]** 项卡。
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
@@ -96,7 +93,7 @@ ht-degree: 3%
 
 默认情况下有两种筛选规则： **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) **[!UICONTROL Exclude domains]** 和( **[!UICONTROL domainExclusions]** )。 在电子邮件分析期间，这些规则将收件人电子邮件地址与在可交付性实例中管理的加密全局禁止列表中包含的禁止地址或域名进行比较。 如果存在匹配项，则消息不会发送到该收件人。
 
-这可以避免由于恶意活动（特别是使用垃圾邮件陷阱）而被添加到阻止列表。 例如，如果使用垃圾邮件陷阱通过您的某个Web表单进行订阅，则会自动向该垃圾邮件陷阱发送确认电子邮件，这会导致您的地址被自动添加到阻止列表中。
+这可以避免由于恶意活动而添加到阻止列表，特别是使用垃圾邮件陷阱。 例如，如果使用垃圾邮件陷阱通过您的某个Web表单进行订阅，则会自动向该垃圾邮件陷阱发送确认电子邮件，这会导致您的地址被自动添加到阻止列表。
 
 >[!NOTE]
 >
