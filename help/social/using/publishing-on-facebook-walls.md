@@ -1,7 +1,7 @@
 ---
-title: 在Facebook墙上发布
-seo-title: 在Facebook墙上发布
-description: 在Facebook墙上发布
+title: 在 Facebook 好友墙上发布
+seo-title: 在 Facebook 好友墙上发布
+description: 在 Facebook 好友墙上发布
 seo-description: null
 page-status-flag: never-activated
 uuid: 02288473-a0d7-42b5-9f86-3c96550ab1a8
@@ -11,19 +11,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 discoiquuid: 8577db0b-f1fc-41af-aa0f-ec4d02dac376
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 在Facebook墙上发布{#publishing-on-facebook-walls}
+# 在 Facebook 好友墙上发布{#publishing-on-facebook-walls}
 
 为了Adobe Campaign能够将出版物发送到Facebook墙，您需要将这些页面的写入权限委托给Adobe Campaign。 这涉及以下配置步骤：
 
@@ -32,9 +29,9 @@ ht-degree: 0%
 1. 创建Facebook应用程序。
 1. 在Adobe Campaign中，将Facebook应用程序设置输入 **[!UICONTROL Facebook routing]** 外部帐户。
 
-## 先决条件 {#prerequisites}
+## 先决条件{#prerequisites}
 
-开始方式：创建Facebook帐户和多个页面： 这些将用于发送发布。
+开始方式：创建Facebook帐户和多个页面：这些将用于发送发布。
 
 * 要创建Facebook帐户，请使用https://www.facebook.com [链接](https://www.facebook.com) 。
 * 要创建Facebook页面，请使用https://www.facebook.com/pages/create [链接](https://www.facebook.com/pages/create) 。
@@ -50,12 +47,12 @@ ht-degree: 0%
 1. 登录到用于管理页面的Facebook帐户。
 1. 创建新Facebook页面。
 1. 单击 **[!UICONTROL Settings]** 右上角的按钮。
-1. 在选项卡 **[!UICONTROL General]** 中，修改页面的可见性参数： 复选 **[!UICONTROL Page unpublished]** 框。
-1. 单击&#x200B;**[!UICONTROL Save Changes]**&#x200B;按钮。
+1. 在选项卡 **[!UICONTROL General]** 中，修改页面的可见性参数：复选 **[!UICONTROL Page unpublished]** 框。
+1. 单击 **[!UICONTROL Save Changes]** 按钮。
 
 ![](assets/social_facebook_test_page.png)
 
-## 创建Facebook应用程序 {#creating-a-facebook-application}
+## 创建 Facebook 应用程序 {#creating-a-facebook-application}
 
 为了让Adobe Campaign能够在页面的墙上发布，您需要创建一个Facebook应用程序。 为此，请应用以下步骤：
 
@@ -94,7 +91,7 @@ ht-degree: 0%
 >
 >Adobe Campaign操作员必须具有管理权限才能执行此配置。
 
-* **Facebook**: 选择之前创建的应用程序( [https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然后选择选 **[!UICONTROL Settings > Basic]** 项卡。
+* **Facebook**:选择之前创建的应用程序( [https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然后选择选 **[!UICONTROL Settings > Basic]** 项卡。
 
    ![](assets/social_facebook_external_account_002.png)
 
@@ -102,7 +99,7 @@ ht-degree: 0%
    >
    >如果 **[!UICONTROL Facebook Web Games]** 未显示章节，请单 **[!UICONTROL Add Platform]** 击页面底部的按钮，然后选择 **[!UICONTROL Facebook Web Games]**。
 
-* **Adobe Campaign**: 转到树 **[!UICONTROL Administration > Platform > External Accounts]** 的节点，选择外部帐户 **[!UICONTROL Facebook routing]** 并单击选 **[!UICONTROL Connector]** 项卡。
+* **Adobe Campaign**:转到树 **[!UICONTROL Administration > Platform > External Accounts]** 的节点，选择外部帐户 **[!UICONTROL Facebook routing]** 并单击选 **[!UICONTROL Connector]** 项卡。
 
    ![](assets/social_facebook_external_account_001.png)
 
@@ -127,7 +124,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >该字 **[!UICONTROL Marketing URL]** 段是可选字段。
+   >The **[!UICONTROL Marketing URL]** field is optional.
 
 1. 在Adobe Campaign控制台中，单 **[!UICONTROL Request the authorization from the application]** 击选项卡底部的链 **[!UICONTROL Connector]** 接。 该工 **[!UICONTROL Synchronize Facebook pages]** 作流会自动触发并收集管理员管理的所有Facebook页面。 有关此方面的详细信息，请参 [阅同步Facebook页面](#synchronizing-facebook-pages)。
 
