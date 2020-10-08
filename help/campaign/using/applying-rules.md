@@ -11,14 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: a0e76d27-bedd-4f81-b4d2-1221444e670e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
@@ -37,7 +34,7 @@ ht-degree: 1%
 
    ![](assets/campaign_opt_pressure_sample_1_6.png)
 
-1. 保存类型学： 是否将其添加到现有字体的列表。
+1. 保存类型学：是否将其添加到现有字体的列表。
 1. 打开要应用规则的投放。
 1. 打开投放属性并访问选 **[!UICONTROL Typology]** 项卡。
 1. 在下拉列表中选择类型。
@@ -46,7 +43,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >可以在投放模板中定义类型，并自动应用于使用此模板创建的所有投放。
+   >可以在投放模板中定义分类，以自动应用至使用此模板创建的所有投放。
 
 ## 定义应用产品条件 {#defining-application-conditions}
 
@@ -62,7 +59,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->对于筛选规则，您可以选择筛选条件的应用条件： 他们可以依赖投放或投放概要。 有关详细信息，请参阅 [调整过滤规则](../../campaign/using/filtering-rules.md#conditioning-a-filtering-rule)。
+>对于筛选规则，您可以选择筛选条件的应用条件：他们可以依赖投放或投放概要。 有关详细信息，请参阅 [调整过滤规则](../../campaign/using/filtering-rules.md#conditioning-a-filtering-rule)。
 
 ## 调整计算频率 {#adjusting-calculation-frequency}
 
@@ -72,7 +69,7 @@ ht-degree: 1%
 
 为此，选项卡 **[!UICONTROL Frequency]** 的字段 **[!UICONTROL General]** 允许您定义保存定位的最长时间段。 默认情况下，值0 **表示** ，在下次执行每日重新仲裁之前，计算仍然有效。
 
-要保存超过此期间的结果，请在字段中输入大于12的 **[!UICONTROL Frequency]** 值： 此期间到期后，将重新应用所有规则。
+要保存超过此期间的结果，请在字段中输入大于12的 **[!UICONTROL Frequency]** 值：此期间到期后，将重新应用所有规则。
 
 通过 **[!UICONTROL Re-apply the rule at the start of personalization]** 此选项，您可以在个性化阶段自动应用规则，包括字段中所述的期间 **[!UICONTROL Frequency]** 是否仍然有效。
 
@@ -82,19 +79,19 @@ ht-degree: 1%
 
 ### 执行顺序 {#execution-order}
 
-在标准操作模式下，规则按以下顺序应用：
+在标准操作模式下，按以下顺序应用规则：
 
-1. 控制规则(如果在定位开始应用)。
-1. 筛选规则:
+1. 控制规则（如果在开始定向时应用）。
+1. 筛选规则：
 
-   * 地址资格的本机应用规则： 已定义的地址／块列表上的未验证地址／地址／隔离地址／地址质量。
+   * 地址资格的本机应用规则：阻止列表/隔离地址／地址质量上的已定义地址／未验证地址／地址。
    * 筛选用户定义的规则。
    * 外部重复数据删除地址或标识符规则（如有必要，应用）。
 
-1. 压力规则。
+1. 压力规则.
 1. 容量规则。
-1. 控制规则（如果在定位结束时应用它们）。
-1. 控制规则(如果在个性化开始应用)。 如果用户规则（过滤／压力／电容性）已过期，需要重新计算，则将在此步骤中应用这些规则。
+1. 控制规则（如果在定向结束时应用）。
+1. 控制规则（如果在开始个性化时应用）。如果用户规则（过滤／压力／电容性）已过期，需要重新计算，则将在此步骤中应用这些规则。
 1. 控制规则（如果在个性化结束时适用）。
 
 >[!NOTE]
@@ -121,7 +118,7 @@ ht-degree: 1%
 
    如果您需要了解目标的音量以应用控制规则，请选择此阶段。
 
-   例如，控制规 **[!UICONTROL Check proof size]** 则在每个定位阶段之后应用： 如果验证收件人过多，此规则将阻止消息个性化。
+   例如，控制规 **[!UICONTROL Check proof size]** 则在每个定位阶段之后应用：如果验证收件人过多，此规则将阻止消息个性化。
 
 * **[!UICONTROL At the start of personalization]**
 
@@ -152,6 +149,6 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在类型和类型规则中，如 **[!UICONTROL Distributed Marketing]** 果许可证包含以下选项，则会添加选项卡： 请检查您的许可协议。\
+>在类型和类型规则中，如 **[!UICONTROL Distributed Marketing]** 果许可证包含以下选项，则会添加选项卡：请检查您的许可协议。\
 >有关分布式营销的详细信息，请参 [阅关于分布式营销](../../campaign/using/about-distributed-marketing.md)。
 
