@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2576'
 ht-degree: 14%
@@ -123,7 +120,7 @@ Administrators can list the addresses in quarantine for the entire platform from
 状态随后更改为 **[!UICONTROL Valid]**。
 
 >[!IMPORTANT]
-地址为或状态 **[!UICONTROL Quarantine]** 的收件人 **[!UICONTROL On block list]** 将永远不会被删除，即使他们收到电子邮件。
+地址为或状态 **[!UICONTROL Quarantine]** 的收件人 **[!UICONTROL On block list]** 将永远不会被删除，即使他们收到电子邮件也是如此。
 
 您可以修改错误数以及两个错误之间的时间段。 为此，请在部署向导(>)中更改相应&#x200B;**[!UICONTROL Email channel]** 的设 **[!UICONTROL Advanced parameters]**&#x200B;置。 For more on the deployment wizard, refer to [this section](../../installation/using/deploying-an-instance.md).
 
