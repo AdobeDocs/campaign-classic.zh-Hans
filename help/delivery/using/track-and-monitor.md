@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -25,17 +22,17 @@ ht-degree: 0%
 
 您单击了“发送”按钮？ 让我们看看会发生什么。 发送投放后，Adobe Campaign使您能够跟踪已发送的消息并了解收件人对投放的反应。 这将帮助您改进未来发送并优化您的下一活动。
 
-## 监视投放 {#monitoring-deliveries}
+## 监控投放 {#monitoring-deliveries}
 
 要控制活动，您必须确保消息确实已送达收件人。
 
 从活动投放仪表板中，您可以检查已处理的消息和投放审计日志。
-您还可以控制投放日志中消息的状态。 [了解更多](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+您还可以控制投放日志中消息的状态。 [了解详情](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard)。
 
 如果投放未被发送，且其状态仍为“待 **定”**?
 
 * 执行过程正在等待某些资源的可用性。 MTA可能尚未启动。
-检查您的mta@instance模块是否已在MTA服务器上启动，并在必要时开始MTA模块。 [了解更多](../../production/using/administration.md).
+检查您的mta@instance模块是否已在MTA服务器上启动，并在必要时开始MTA模块。 [了解详情](../../production/using/administration.md)。
 
 * 投放可能正在使用尚未在发送实例上配置的关联。
 提示：检查流量管理(IP关联)的配置。 有关详细信息，请参阅控制传出SMTP通信。
