@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 12f13b8d-afc3-4b55-a31b-080d31f84fc9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 2%
 
 ---
 
@@ -24,13 +24,13 @@ source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
 
 ## 更改syslogd监听端口 {#changing-the-syslogd-listening-port}
 
-默认情况下， **syslogd** 监听端口为666(udp)。 如有必要，您可以使用环境变量更改它。
+默认情况下， **syslogd** 监听端口为666(udp)。 如有必要，可以使用环境变量更改它。
 
 配置此变量后，所有Adobe Campaign模块都会考虑此变量。
 
 ### 在Linux中 {#in-linux}
 
-编辑 **customer.sh文件** ，并添加以下行：
+编辑 **customer.sh** 文件并添加以下行：
 
 ```
 export TRACE_ADDR=localhost:<listening port>
@@ -38,15 +38,15 @@ export TRACE_ADDR=localhost:<listening port>
 
 ### 在Windows中 {#in-windows}
 
-您需要使用 **localhost值创建TRACE_ADDR** .environment **变量** : **`<listening port="" />`**.
+您需要使用 **localhost值创建** TRACE **_ADDR.** 环境变量： **`<listening port="" />`**.
 
 >[!CAUTION]
 >
->我们建议运行一些测试，以确保您的平台在创建此环境变量后能够正常工作。
+>我们建议运行一些测试，以确保在创建此环境变量后您的平台能正常工作。
 
 ## 配置安全区域 {#configuring-security-zones}
 
-每个运营商都需要链接到一个区域才能登录到一个实例，而运营商IP必须包含在安全区域中定义的地址或地址集中。 技术区配置在Adobe Campaign服务器的配置文件中执行。 必须在控制台（节点）中定义操作员与安全区域的 **[!UICONTROL Administration > Access management > Operators]** 链接。
+每个操作员需要链接到一个区域才能登录到实例，并且操作员IP必须包含在安全区域中定义的地址或地址集中。 技术区配置在Adobe Campaign服务器的配置文件中执行。 必须在控制台（节点）中定义操作员与安全区 **[!UICONTROL Administration > Access management > Operators]** 域的链接。
 
 >[!NOTE]
 >
