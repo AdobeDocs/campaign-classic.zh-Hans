@@ -11,11 +11,8 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2980'
 ht-degree: 1%
@@ -141,7 +138,7 @@ ht-degree: 1%
 
 **按域细分**
 
-报告的第二部分按Internet域（而非错误类型）详细列出故障消息的细分。 在这种情况下，链 **接到** “错误”指示符(@value)的公式为： Count（@status=2和@domain=&quot;域名的值&quot;），即此域状态为失败的所有消息的计数。
+报告的第二部分按Internet域（而非错误类型）详细列出故障消息的细分。 在这种情况下，链 **接到** “错误”指示符(@value)的公式为：Count（@status=2和@domain=&quot;域名的值&quot;），即此域状态为失败的所有消息的计数。
 
 ## 浏览器 {#browsers-1}
 
@@ -166,7 +163,7 @@ ht-degree: 1%
    <td> Sum(@访客)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 页面视图<br /> </td> 
+   <td> Page views<br /> </td> 
    <td> @totalPages<br /> </td> 
    <td> 所有投放使用此浏览器点击投放链接的总次数。<br /> </td> 
    <td> Sum(@pages) <br /> </td> 
@@ -228,7 +225,7 @@ ht-degree: 1%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 要传送的消息数<br /> </td> 
+   <td> Number of messages to deliver<br /> </td> 
    <td> @totalTarget<br /> </td> 
    <td> 在投放分析中处理的邮件总数。<br /> </td> 
    <td> sum([properties/@totalTarget])<br /> </td> 
@@ -304,7 +301,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> 细分<br /> </td> 
-   <td> @百分比<br /> </td> 
+   <td> @percent<br /> </td> 
    <td> 此社交网络上的股份数与总股份数的百分比。<br /> </td> 
    <td> 百分比(@forward, sum(@forward))<br /> </td> 
   </tr> 
@@ -368,7 +365,7 @@ ht-degree: 1%
    <td> 新联系人<br /> </td> 
    <td> @newContacts<br /> </td> 
    <td> 链接到访客的收件人数。<br /> </td> 
-   <td> 公式： count(@id)过滤<br /> 器： @收件人id != 0<br /> </td> 
+   <td> 公式：count(@id)过滤<br /> 器：@收件人id != 0<br /> </td> 
   </tr> 
   <tr> 
    <td> 打开<br /> </td> 
@@ -437,7 +434,7 @@ ht-degree: 1%
   <tr> 
    <td> 使用率<br /> </td> 
    <td> @访客<br /> </td> 
-   <td> 此操作系统每天的访客数与当天访问次数最多的访客数的百分比。<br /> </td> 
+   <td> 此操作系统每天的访客数与当天访问次数最多时测量的访客数的百分比。<br /> </td> 
    <td> percent(sum(@访客), max(@visitorsOfTheDay))<br /> </td> 
   </tr> 
   <tr> 
@@ -567,7 +564,7 @@ ht-degree: 1%
   <tr> 
    <td> 投诉<br /> </td> 
    <td> @complaints<br /> </td> 
-   <td> 状态等于“失败”且原因等于“添加到块列表的地址”的邮件计数。<br /> </td> 
+   <td> 状态等于“失败”且原因等于“已添加到阻止列表的地址”的邮件计数。<br /> </td> 
    <td> Count（@status=2和msg/@failureReason=8）<br /> </td> 
   </tr> 
   <tr> 
@@ -769,7 +766,7 @@ ht-degree: 1%
   <tr> 
    <td> 规则拒绝的邮件<br /> </td> 
    <td> @拒绝<br /> </td> 
-   <td> 在分析期间忽略的地址数与类型规则一致： 未指定地址、已隔离、已添加到阻止列表等。<br /> </td> 
+   <td> 在分析期间忽略的地址数与类型规则一致：未指定地址、隔离地址、添加到阻止列表等。<br /> </td> 
    <td> sum([properties/@reject])<br /> </td> 
   </tr> 
   <tr> 
@@ -788,7 +785,7 @@ ht-degree: 1%
    <td> 错误<br /> </td> 
    <td> @error<br /> </td> 
    <td> 在投放和自动弹回处理期间累积的错误总数。<br /> </td> 
-   <td> sum([indicators/@error])<br /> </td> 
+   <td> sum([indicators/@error)<br /> </td> 
   </tr> 
   <tr> 
    <td> 新隔离<br /> </td> 
@@ -869,7 +866,7 @@ ht-degree: 1%
   <tr> 
    <td> 硬弹回<br /> </td> 
    <td> @hardBounce<br /> </td> 
-   <td> 状态为“失败”且原因为“用户未知”的邮件总数。<br /> </td> 
+   <td> 状态为“失败”和原因为“用户未知”的邮件总数。<br /> </td> 
    <td> @unknownUser<br /> </td> 
   </tr> 
   <tr> 
