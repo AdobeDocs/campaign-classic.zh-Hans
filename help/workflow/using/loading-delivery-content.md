@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 3667da3d-4940-4128-8878-f1ee67216f56
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 4%
@@ -35,7 +32,7 @@ ht-degree: 4%
 
    ![](assets/delivery_loadcontent_filetransfertexamples3.png)
 
-1. 创建新工作流，例如，从 **[!UICONTROL Profiles and Targets]** > > **[!UICONTROL Jobs]** 创建 **[!UICONTROL Targeting workflows]**。
+1. 创建新工作流，例如从> **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** 创建 **[!UICONTROL Targeting workflows]**。
 1. 将活动添 **[!UICONTROL File transfer]** 加到工作流中，并通过指定
 
    * 用于连接到S3或(S)FTP服务器的外部帐户。
