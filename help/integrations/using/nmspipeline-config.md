@@ -11,21 +11,18 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# 管道选项NmsPipeline_Config {#nmspipeline_config}
+# 管道选项 NmsPipeline_Config {#nmspipeline_config}
 
-一旦身份验证工 [!DNL pipelined] 作，即可检索事件并进行处理。 它只处理以Adobe Campaign配置的触发器，而忽略其他触发器。 触发器必须是Analytics发出的，并事先被推上管道。
+一旦身份验证工 [!DNL pipelined] 作，即可检索事件并进行处理。 它只处理以Adobe Campaign配置的触发器，而忽略其他触发器。 触发器必须是从Analytics生成的，并提前推送到渠道中。
 也可以使用通配符配置该选项，以捕获所有触发器（无论名称如何）。
 
 触发器的配置在选项中完成，位于 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** >下 **[!UICONTROL Options]**。 选项名称为 **[!UICONTROL NmsPipeline_Config]**。 数据类型为JSON格式的“长文本”。
@@ -75,7 +72,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在Analytics [!DNL Trigger] 接口中，特定触发器名称的UID值可以作为触发器接口中URL查询字符串参数的一部分找到。 triggerType UID在管道数据流中传递，代码可写入pipeline.JS中，将触发器UID映射到用户友好标签，该标签可存储在pipelineEvents模式的“触发器名称”列中。
+>Analytics [!DNL Trigger] 界面中特定触发器名称的UID值可作为Triggers界面中URL查询字符串参数的一部分找到。 triggerType UID在管道数据流中传递，代码可写入pipeline.JS中，将触发器UID映射到用户友好标签，该标签可存储在pipelineEvents模式的“触发器名称”列中。
 
 ## 用户参数 {#consumer-parameter}
 
@@ -85,7 +82,7 @@ ht-degree: 0%
 
 ## 如何配置管道选项 {#configure-pipeline-option}
 
-在“触发器”数组下添加或编辑Experience Cloud触发器； 不要编辑其余内容。
+在“触发器”数组下添加或编辑Experience Cloud触发器；不要编辑其余内容。
 确保在此网站的帮助下JSON有效 [](http://jsonlint.com/)。
 
 * “name”是触发器ID。 通配符“*”捕获所有触发器。
