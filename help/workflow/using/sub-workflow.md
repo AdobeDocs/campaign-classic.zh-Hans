@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: a4441820-1b3d-4bac-a6e3-1c9c14466d19
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -51,7 +48,7 @@ ht-degree: 0%
    ![](assets/subworkflow_selection.png)
 
 1. 您还可以添加配置脚本以更改引用的工作流。
-1. 单击 **[!UICONTROL Ok]**. 它将自动创建一个出站过渡，其标签为 **[!UICONTROL Jump (start point)]** 所选工作流中的活动。
+1. 单击 **[!UICONTROL Ok]**。它将自动创建一个出站过渡，其标签为 **[!UICONTROL Jump (start point)]** 所选工作流中的活动。
 
    ![](assets/subworkflow_outbound.png)
 
@@ -84,4 +81,4 @@ ht-degree: 0%
 
 这三组值标识查询所针对的人群。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是人口的模式(通常是nms:收件人 **[!UICONTROL recCount]** )，是表中元素的数量。
 
-* targetSchema: 此值是工作表的模式。 此参数对于包含和的所有过渡 **[!UICONTROL tableName]** 都有 **[!UICONTROL schema]**&#x200B;效。
+* targetSchema:此值是工作表的模式。 此参数对于包含和的所有过渡 **[!UICONTROL tableName]** 都有 **[!UICONTROL schema]**&#x200B;效。
