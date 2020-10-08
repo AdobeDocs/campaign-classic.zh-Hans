@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 3%
@@ -95,11 +92,11 @@ ht-degree: 3%
 
 您可以：
 
-* 在serverConf.xml配置文件中定义IP关联。 [了解更多](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
+* 在serverConf.xml配置文件中定义IP关联。 [了解详情](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
 
-* 对于每个IPAfinity元素，声明可使用的IP地址。 [了解更多](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
+* 对于每个IPAfinity元素，声明可使用的IP地址。 [了解详情](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* 在您 [选择](../../campaign/using/about-campaign-typologies.md) 的排版中，使用 **[!UICONTROL Managing affinities with IP addresses]** 该字段将投放链接到投放服务器(MTA)，该服务器管理所述关联。 [了解更多](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
+* 在您 [选择](../../campaign/using/about-campaign-typologies.md) 的排版中，使用 **[!UICONTROL Managing affinities with IP addresses]** 该字段将投放链接到投放服务器(MTA)，该服务器管理所述关联。 [了解详情](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic)。
 
 * 发送电子邮件后，检查标题以验证投放从哪个IP地址发送。 电子邮件管理员应帮助您获取标题信息。
 
