@@ -11,14 +11,11 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cb44d439c6866d94f8e1201575ab3d3094d6ad79
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1291'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -33,9 +30,9 @@ ht-degree: 0%
 >
 >如果您无权访问服务器和数据库(托管环境)，您将无法执行下面描述的过程。 请联系Adobe。
 
-使用Adobe Campaign需要安装和配置一个或多个环境: 开发、测试、预制、生产等。
+使用Adobe Campaign需要安装和配置一个或多个环境:开发、测试、预制、生产等。
 
-每个环境包含一个Adobe Campaign实例，每个Adobe Campaign实例都链接到一个或多个数据库。 应用程序服务器可以执行一个或多个进程： 几乎所有这些都可以直接访问实例数据库。
+每个环境包含一个Adobe Campaign实例，每个Adobe Campaign实例都链接到一个或多个数据库。 应用程序服务器可以执行一个或多个进程：几乎所有这些都可以直接访问实例数据库。
 
 本节详细介绍了应用于重复Adobe Campaign环境的流程，即将源环境恢复到目标环境，从而产生两个相同的工作环境。
 
@@ -49,7 +46,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >在Adobe Campaign环境中， **烧尾** 会组合使用动作，停止与外部交互的所有进程： 日志、跟踪、投放、活动工作流等。\
+   >在Adobe Campaign环境中， **烧尾** 会结合使用操作，停止与外部交互的所有进程：日志、跟踪、投放、活动工作流等。\
    >必须执行此步骤，以避免多次传送消息(一次来自标称环境，另一次来自重复环境)。
 
    >[!CAUTION]
@@ -69,14 +66,15 @@ ht-degree: 0%
 
 ### 转移过程 {#transfer-procedure}
 
-本节将帮助您了解通过案例研究将源环境传输到目标环境所需的步骤： 我们的目标是将生产环境(**prod** instance)恢复为开发环境(**** dev instance)，以在尽可能接近“live”平台的上下文中工作。
+本节将帮助您了解通过案例研究将源环境传输到目标环境所需的步骤：我们的目标是将生产环境(**prod** instance)恢复为开发环境(**** dev instance)，以在尽可能接近“live”平台的上下文中工作。
 
-必须谨慎执行以下步骤： 复制源环境库时，某些进程可能仍在进行中。 烧灼（下面的步骤3）可防止消息发送两次并保持数据一致性。
+必须谨慎执行以下步骤：复制源环境库时，某些进程可能仍在进行中。 烧灼（下面的步骤3）可防止消息发送两次并保持数据一致性。
 
 >[!CAUTION]
 >
 >* 以下过程在PostgreSQL语言中有效。 如果SQL语言不同（例如Oracle），则必须调整SQL查询。
 >* 以下命令在prod实例和PostgreSQL下 **的** dev实例 **的上下** 文中应用。
+
 >
 
 
@@ -95,7 +93,7 @@ pg_dump mydatabase > mydatabase.sql
 
 ### 步骤2 —— 导出目标环境配置(dev) {#step-2---export-the-target-environment-configuration--dev-}
 
-大多数配置元素对于每个环境都是不同的： 外部帐户(中间源、路由等)、技术选项（平台名称、数据库ID、电子邮件地址和默认URL等）。
+大多数配置元素对于每个环境都是不同的：外部帐户(中间源、路由等)、技术选项（平台名称、数据库ID、电子邮件地址和默认URL等）。
 
 在目标库上保存源数据库之前，您需要导出目标环境(dev)配置。 为此，请导出以下两个表的内容： **xtkoption** 和 **nmsextaccount**。
 
@@ -103,7 +101,7 @@ pg_dump mydatabase > mydatabase.sql
 
 为此，请对以下两个元素执行包导出：
 
-* 将xtk: **option表导出** 到“options_dev.xml”文件中，但没有以下内部名称的记录： “WdbcTimeZone”、“NmsServer_LastPostUpgrade”和“NmsBroadcast_RegexRules”。
+* 将xtk: **option表导出** 到“options_dev.xml”文件中，但没有以下内部名称的记录：“WdbcTimeZone”、“NmsServer_LastPostUpgrade”和“NmsBroadcast_RegexRules”。
 * 在“extaccount_dev.xml”文件中，导出 **ID不为0** (@id &lt;> 0)的所有记录的nms:extAccount表。
 
 检查导出的选项／帐户数是否等于每个文件中要导出的行数。
@@ -112,7 +110,7 @@ pg_dump mydatabase > mydatabase.sql
 >
 >在包导出中要导出的行数为1000行。 如果选项或外部帐户数超过1000，则必须执行多项出口。
 > 
->有关更多信息，请参见[此部分](../../platform/using/working-with-data-packages.md#exporting-packages)。
+>有关更多信息，请参见[此章节](../../platform/using/working-with-data-packages.md#exporting-packages)。
 
 >[!NOTE]
 >
@@ -152,8 +150,8 @@ nlserver pdump
 
 为此，请使用以下流程：
 
-* 在Windows中： 打开 **任务** ，检查是否没有 **nlserver.exe** 进程。
-* 在Linux中： 运行 **ps aux | grep nlserver** 命令并检查没有nlserver **进程** 。
+* 在Windows中：打开 **任务** ，检查是否没有 **nlserver.exe** 进程。
+* 在Linux中：运行 **ps aux | grep nlserver** 命令并检查没有nlserver **进程** 。
 
 ### 第4步——在目标环境中恢复数据库(dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -200,7 +198,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 
 >[!NOTE]
 >
->在开发Adobe Campaign重新启 **动环境** 之前，您可以应用其他安全过程： 仅开始 **web** 模块。
+>在开发Adobe Campaign重新启 **动环境** 之前，您可以应用其他安全过程：仅开始 **web** 模块。
 >  
 >为此，请编辑实例的配置文件&#x200B;**(config-dev.xml**)，然后在每个模块（mta、stat等）的autoStart=&quot;true&quot;选项前添加&quot;_&quot;字符。
 
@@ -224,7 +222,7 @@ nlserver pdump
 >
 >此步骤应仅启动Web进程。 如果不是这样，请在继续之前停止其他正在运行的进程
 
-最重要的是，在导入之前检查多行文件的值(例如： 选项表的“NmsTracking_Pointer”和投放表的中间源帐户)
+最重要的是，在导入之前检查多行文件的值(例如：选项表的“NmsTracking_Pointer”和投放表的中间源帐户)
 
 要从目标环境库(dev)导入配置：
 
