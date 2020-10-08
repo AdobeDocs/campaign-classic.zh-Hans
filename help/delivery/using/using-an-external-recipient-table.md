@@ -11,23 +11,23 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: 92c32b2d-d8bf-41ab-9349-ef4a15f10521
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 22%
 
 ---
 
 
 # 使用外部收件人表{#using-an-external-recipient-table}
 
-如果传送表是外部表，您将需要进行其他配置。 必须 **[!UICONTROL nms:seedmember]** 扩展架构。 此时会向种子地址添加一个选项卡以定义适当的字段，如下所示：
+如果投放表是外部表，则需要进行其他配置。 必 **[!UICONTROL nms:seedmember]** 须延长模式。 种子地址中会添加一个选项卡以定义适当的字段，如下所示：
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-在这种情况下，要将种子地址添加到传送，请直接在匹配选项卡中输入适当的字段，或导入地址模板：
+在这种情况下，要向投放添加种子地址，请直接在匹配选项卡中输入适当的字段，或导入地址模板：
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-此部 **分是nms:seedMember** 架构扩 [展](../../configuration/using/seed-addresses.md)。
+nms: **seedMember** 模式扩展 [为此部分](../../configuration/using/seed-addresses.md)。
