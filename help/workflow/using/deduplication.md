@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 83b915bd-7e23-41b5-9f9a-f7eb72026376
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0d2270c9d980d963437f9bb5cf37795474d261d6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '728'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -38,7 +35,7 @@ ht-degree: 0%
 
 ![](assets/dedup_bonnepratique.png)
 
-## 配置 {#configuration}
+## 配置{#configuration}
 
 要配置外部重复数据删除，请输入其标签、方法、外部重复数据删除标准以及与结果相关的选项。
 
@@ -48,14 +45,15 @@ ht-degree: 0%
 
 1. 目标选择
 
-   选择此活动的目标类型(默认情况下，外部重复数据删除与收件人相关)和要使用的标准，即相同值允许您标识重复的字段： 电子邮件地址、手机或电话号码、传真号码或直邮地址。
+   选择此活动的目标类型(默认情况下，外部重复数据删除与收件人相关)和要使用的标准，即相同值允许您标识重复的字段：电子邮件地址、手机或电话号码、传真号码或直邮地址。
 
    ![](assets/s_user_segmentation_dedup_param2.png)
 
    >[!NOTE]
    >
    >如果使用外部数据作为输入，例如从外部文件输入，请确保选择该 **[!UICONTROL Temporary schema]** 选项。
-在下一步中，选 **[!UICONTROL Other]** 项允许您选择要使用的标准：
+   >
+   >在下一步中，选 **[!UICONTROL Other]** 项允许您选择要使用的标准：
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -67,16 +65,16 @@ ht-degree: 0%
 
    可以使用以下方法：
 
-   * **[!UICONTROL Choose for me]**: 随机选择要从重复中保留的记录。
-   * **[!UICONTROL Following a list of values]**: 允许您为一个或多个字段定义值优先级。 要定义值，请选择一个字段或创建表达式，然后将值添加到相应的表中。 要定义新字段，请单击 **[!UICONTROL Add]** 位于值列表上方的按钮。
+   * **[!UICONTROL Choose for me]**：随机选择要保留的重复项记录。
+   * **[!UICONTROL Following a list of values]**：用于为一个或多个字段定义值优先级。要定义该值，请选择一个字段或创建表达式，然后将值添加到相应的表格中。要定义新字段，请单击位于值列表上方的 **[!UICONTROL Add]** 按钮。
 
       ![](assets/s_user_segmentation_dedup_param5.png)
 
-   * **[!UICONTROL Non-empty value]**: 这样，您就可以保留选定表达式的值不为空的记录作为优先级。
+   * **[!UICONTROL Non-empty value]**：利用此选项可优先保留选定表达式的值不为空的记录。
 
       ![](assets/s_user_segmentation_dedup_param6.png)
 
-   * **[!UICONTROL Using an expression]**: 允许您使用给定表达式的最低（或最高）值保存记录。
+   * **[!UICONTROL Using an expression]**:允许您使用给定表达式的最低（或最高）值保存记录。
 
       ![](assets/s_user_segmentation_dedup_param7.png)
    单击 **[!UICONTROL Finish]** 以批准所选外部重复数据删除方法。
@@ -87,11 +85,11 @@ ht-degree: 0%
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-   如果要 **[!UICONTROL Generate complement]** 利用剩余人口，请选中此选项。 补码由所有重复组成。 随后将向该过渡添加一个额外的活动，如下所示：
+   Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. 补码由所有重复组成。 随后将向该过渡添加一个额外的活动，如下所示：
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## 示例： 在重复之前识别投放 {#example--identify-the-duplicates-before-a-delivery}
+## 示例：在重复之前识别投放 {#example--identify-the-duplicates-before-a-delivery}
 
 在以下示例中，外部重复数据删除涉及三个查询的合并。
 
@@ -103,7 +101,7 @@ ht-degree: 0%
 
 1. 添加并链接工作流运行所需的各种活动，如上所示。
 
-   合并活动用于将三个查询“统一”为一个过渡。 因此，外部重复数据删除不会单独为每个查询工作，而是为整个查询工作。 有关此主题的详细信息，请参阅 [最佳实践](#best-practices)。
+   合并活动用于将三个查询“统一”为一个过渡。 因此，外部重复数据删除不会单独适用于每个查询，而是适用于整个查询。 有关此主题的详细信息，请参阅 [最佳实践](#best-practices)。
 
 1. 打开外部重复数据删除活动，然后单 **[!UICONTROL Edit configuration...]** 击链接以定义外部重复数据删除模式。
 1. 在新窗口中，选择 **[!UICONTROL Database schema]**。
