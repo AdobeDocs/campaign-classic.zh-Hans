@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -43,7 +40,7 @@ ht-degree: 0%
 
 ## 安排发送 {#configuring-the-scheduler}
 
-1. 首先，添加 **调度程序** ，触发每天发送投放。 在以下示例中，每天清晨6点创建投放。
+1. 首先，添加 **调度程序** ，触发每天发送投放。 在以下示例中，每天早上6点创建投放。
 
    ![](assets/recur_delivery2.png)
 
@@ -54,7 +51,7 @@ ht-degree: 0%
 
 为此，请应用以下步骤：
 
-1. 将活动拖放到 **[!UICONTROL Query]** 工作流中，然后多次单击它。
+1. 将活动拖放 **[!UICONTROL Query]** 到工作流中，然后多次单击它。
 1. 单击“编 **辑查询** ”链接并选择 **[!UICONTROL Filtering conditions]**。
 
    ![](assets/s_ncs_user_create_exp_exple00.png)
