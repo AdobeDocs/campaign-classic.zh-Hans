@@ -11,36 +11,36 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: 4d2e765b-750b-457f-ad55-8bd6faaa86af
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 40391fbea53757decb48fd937f5e74e8ba6fb207
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '943'
+ht-degree: 2%
 
 ---
 
 
 # 配置平台{#configuring-your-platform}
 
-Adobe Campaign v7中的某些重大更改需要配置以确保其有效运行。 迁移前后可能需要这些参数。 本节介绍了相关更改及其配置模式。
+Adobe Campaignv7中的某些重大更改需要配置以确保其有效运行。 迁移前后可能需要这些参数。 本节介绍相关更改及其配置模式。
 
-在迁移期间， **从架构定义重建NmsRecipient** 表。 在Adobe Campaign之外对此表的SQL结构所做的任何更改都将丢失。
+在迁移期间， **从模式** 定义重建NmsRecipient表。 在Adobe Campaign之外对此表的SQL结构所做的任何更改都将丢失。
 
 要检查的元素示例：
 
-* 如果已将列（或索引）添加到 **NmsRecipient** 表，但您尚未在架构中详细描述该列（或索引），则不会保存该列。
+* 如果已将列（或索引）添加到 **NmsRecipient** 表中，但您尚未在模式中详细说明，则不会保存该列。
 * 默认 **情况下** ，表空间属性会返回其值，即部署向导中定义的值。
 * 如果已将引用视图添加到NmsRecipient表，则必须在迁移之前删除它。
 
-此警告还与Oracle用户有关：如果在播放过程中 **添加了usetimestamptz:1** (请参阅时区 [](../../migration/using/general-configurations.md#time-zones))选项，则将重新构建包含至少一个date+time字段的 **** 所有表。
+此警告还与Oracle用户有关：如果在postupgrade中添 **加了usetimestamptz:1** 选项(请参阅时区 [)](../../migration/using/general-configurations.md#time-zones)，则将重新构建至少包含一个date+ **time字段的所有表** 。
 
 ## 迁移前 {#before-the-migration}
 
-迁移到Adobe Campaign v7时，必须配置以下元素。 必须先解决这些元素，然后才能开始 **操作**。
+迁移到Adobe Campaignv7时，必须配置以下元素。 在开始播放之前，必须解决这 **些元素**。
 
 * 时区
 
-   在从v5.11平台迁移期间，必须指定在配置过程中要使用的时区。
+   在从v5.11平台迁移期间，必须指定在配置升级期间要使用的时区。
 
    如果要使用“多时区”模式，请参阅“时 [区”部分](../../migration/using/general-configurations.md#time-zones) 。
 
@@ -50,75 +50,75 @@ Adobe Campaign v7中的某些重大更改需要配置以确保其有效运行。
 
    出于安全原因，Adobe Campaign平台在默认情况下不再可访问：您必须配置安全区域，这要求在迁移之前收集用户IP地址。
 
-   有关详细信息，请参阅“安 [全](../../migration/using/general-configurations.md#security) ”部分。
+   For more information, refer to the [Security](../../migration/using/general-configurations.md#security) section.
 
 * 语法
 
-   由于使用了新的解释器，JavaScript中的某些语法可能在版本5.11和6.02中被接受，在v7版本中不再被接受。 有关详细信息，请参阅 [JavaScript](../../migration/using/general-configurations.md#javascript) 部分。
+   由于使用了新的解释器，JavaScript中的某些语法可能在版本5.11和6.02中被接受，在v7版本中不再被接受。 For more information, refer to the [JavaScript](../../migration/using/general-configurations.md#javascript) section.
 
-   同样，Adobe Campaign v7中引入了新的语法以替换基于SQLData的语法。 如果使用此语法使用代码元素，则必须调整它们。 有关详细信息，请参阅 [SQLData部分](../../migration/using/general-configurations.md#sqldata) 。
+   同样，在Adobe Campaignv7中引入了新语法以替换基于SQLData的语法。 如果将此语法使用代码元素，则必须调整它们。 For more information, refer to the [SQLData](../../migration/using/general-configurations.md#sqldata) section.
 
 * 密码
 
-   您必须配置“管 **理员** ”和“ **内部** ”密码。 有关详细信息，请参阅“用 [户密码](../../migration/using/before-starting-migration.md#user-passwords) ”部分。
+   您必须配置管 **理员** 和 **内部** 密码。 For more information, refer to the [User passwords](../../migration/using/before-starting-migration.md#user-passwords) section.
 
 * 树结构
 
-   如果从v5.11平台迁移，则必须根据Adobe Campaign v6规范重新组织树结构文件夹。 有关详细信息，请参阅 [Adobe Campaign v7树结构部分](../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure) 。
+   如果从v5.11平台迁移，则必须根据v6规范重新组织树结构文件夹Adobe Campaign。 有关详细信息，请参 [阅Adobe Campaignv7树结构部分](../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure) 。
 
-* 交互
+* 互动
 
-   如果使用 **交互**，则必须删除v7中不再存在的所有6.02架构引用。 有关详细信息，请参阅“交 [互](../../migration/using/general-configurations.md#interaction) ”部分。
+   如果您使 **用Interaction**，则必须删除v7中不再存在的所有6.02模式引用。 For more information, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
 
 ## 迁移后 {#after-the-migration}
 
-运行 **配置后**，必须考虑以下元素并执行相应的配置。
+运行 **Postupgrade**&#x200B;后，必须考虑以下元素并执行相应的配置。
 
 * 镜像页面
 
-   镜像页面个性化块已随v6.x而更改。此新版本提高了访问这些页面时的安全性。
+   镜像页面个性化块已随v6.x而更改。此新版本可在访问这些页面时提高安全性。
 
-   如果您在消息中使用了v5个性化块，则镜像页面显示将失败。 Adobe强烈建议在消息中插入镜像页面时使用新的个性化块。
+   如果您在邮件中使用v5个性化块，镜像页面显示将失败。 Adobe强烈建议在消息中插入镜像页面时使用新的个性化块。
 
-   但是，作为临时解决方案（由于镜像页面仍处于实时状态），您可以通过更改选项并将其设置为，返回旧的个性化块以避免 **[!UICONTROL XtkAcceptOldPasswords]** 出现此问题 **[!UICONTROL 1]**。 这不会影响新v6.x个性化块的使用。
+   但是，作为临时解决方案(并且镜像页面仍然有效)，您可以返回旧的个性化块，通过更改选项并将其设置为来避免 **[!UICONTROL XtkAcceptOldPasswords]** 此问题 **[!UICONTROL 1]**。 这不会影响新v6.x个性化块的使用。
 
 * 语法
 
-   如果遇到与语法相关的任何错误，在播放过程中，必须临时激活 **serverConf.xml文件中的** allowSQLInjeption **** 选项，因为这给您重写代码的时间。 修改代码后，请务必重新激活安全性。 For more on this, refer to the [SQLData](../../migration/using/general-configurations.md#sqldata) section.
+   如果遇到任何与语法相关的错误，在播放过程中，必须临时激 **活serverConf.xml文** 件中的allowSQLInjeption **** 选项，因为这给您重写代码的时间。 修改代码后，请务必重新激活安全性。 For more on this, refer to the [SQLData](../../migration/using/general-configurations.md#sqldata) section.
 
 * 冲突
 
-   迁移通过配置程序执行，并且冲突可能会出现在报告、表单或Web应用程序中。 这些冲突可以从控制台中解决。
+   迁移是通过程序升级执行的，冲突可能会在报表、表单或Web应用程序中出现。 这些冲突可以通过控制台解决。
 
-   请参阅 [冲突](../../migration/using/general-configurations.md#conflicts) 。
+   请参阅 [冲突](../../migration/using/general-configurations.md#conflicts) 部分。
 
 * Tomcat
 
-   如果自定义了安装文件夹，请确保检查该文件夹在迁移后是否正确更新。 有关更多详细信息，请参阅 [Tomcat](../../migration/using/general-configurations.md#tomcat) 部分。
+   如果自定义了安装文件夹，请确保在迁移后检查它是否正确更新。 有关更多详细信息，请参 [阅Tomcat](../../migration/using/general-configurations.md#tomcat) 部分。
 
 * 报告
 
-   所有现成报告当前都使用v6.x渲染引擎。 如果已将JavaScript代码添加到报告中，某些元素可能会被更改。
+   现成的所有报告当前都使用v6.x渲染引擎。 如果已将JavaScript代码添加到报表中，某些元素可能会被更改。
 
-   请参阅“ [报告](../../migration/using/general-configurations.md#reports) ”部分。
+   请参阅 [报告](../../migration/using/general-configurations.md#reports) 部分。
 
-* Web应用程序
+* Web 应用程序
 
-   配置升级后，如果连接到已识别的Web应用程序时遇到任何问题，则必须在 **serverConf.xml文件中激活** allowUserPassword **** 和sessionTokenOnly **** 选项。 记住，然后取消激活这两个选项。 有关详细信息，请参阅“已识 [别的Web应用程序](../../migration/using/general-configurations.md#identified-web-applications) ”部分。
+   配置升级后，如果连接到已识别的Web 应用程序时出现任何问题，则必须在 **serverConf.xml文件中激活****allowUserPassword****和sessionTokenOnly** 选项。 请记住，然后取消激活这两个选项。 有关详细信息，请参阅“已识 [别的Web应用程序](../../migration/using/general-configurations.md#identified-web-applications) ”部分。
 
-   根据Web应用程序的类型及其配置，您必须执行其他操作以确保它们能够正常工作。
+   根据Web 应用程序的类型及其配置，您必须执行其他操作以确保它们正常工作。
 
-   请参阅 [Web应用程序部分](../../migration/using/general-configurations.md#web-applications) 。
+   请参阅 [Web 应用程序](../../migration/using/general-configurations.md#web-applications) 部分。
 
-   如果从v5.11平台迁移，则必须执行其他配置：有关详细信息，请参阅 [Web应用程序部分](../../migration/using/specific-configurations-in-v5-11.md#web-applications) 。
+   如果从v5.11平台迁移，则必须执行其他配置：有关详细信息，请参阅 [Web 应用程序](../../migration/using/specific-configurations-in-v5-11.md#web-applications) 部分。
 
 * 安全区。
 
-   在启动服务器之前，必须配置安全区域。 有关详细信息，请参 [阅本节](../../installation/using/configuring-campaign-server.md#defining-security-zones) 和安 [全部](../../migration/using/general-configurations.md#security) 。
+   启动服务器之前，必须配置安全区域。 有关详细信息，请参 [阅此部分](../../installation/using/configuring-campaign-server.md#defining-security-zones) ，以及 [安全性](../../migration/using/general-configurations.md#security) 部分。
 
-* 架构
+* 模式
 
-   在Red hat中，编辑某些架构时可能会遇到错误。 For more on this, refer to the [Red-Hat](../../migration/using/general-configurations.md#red-hat) section.
+   在Red Hat中，编辑某些模式时可能会遇到错误。 For more on this, refer to the [Red-Hat](../../migration/using/general-configurations.md#red-hat) section.
 
 * 工作流
 
@@ -130,9 +130,9 @@ Adobe Campaign v7中的某些重大更改需要配置以确保其有效运行。
 
 * 主页
 
-   如果从v6.02平台迁移，您可以定义其他参数以保留旧主页从v6.02。有关详细信息，请参阅“用户友好 [性：主页和导航部分](../../migration/using/specific-configurations-in-v6-02.md#user-friendliness--home-page-and-navigation) 。
+   如果从v6.02平台迁移，您可以定义其他参数以将旧主页从v6.02迁移。有关详细信息，请参阅“用户友好 [性：主页和导航](../../migration/using/specific-configurations-in-v6-02.md#user-friendliness--home-page-and-navigation) 部分。
 
-* 交互
+* 互动
 
-   如果您使用 **Interaction**，则必须在迁移后调整任何参数。 For more on this, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
+   如果您使 **用Interaction**，则必须在迁移后调整任何参数。 For more on this, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
 
