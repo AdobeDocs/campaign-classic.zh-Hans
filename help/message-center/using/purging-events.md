@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 2f643080-93b4-4c9f-80cf-b1770b149e6c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 8%
 
 ---
 
@@ -24,15 +24,15 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 您可以使用部署向导配置数据在数据库中存储的时间。
 
-事件清除由工作流自动执 **[!UICONTROL Database cleanup]** 行。 此工作流清除在执行实例上接收和存储的事件以及在控制实例上归档的事件。
+事件清除由工作流自动执 **[!UICONTROL Database cleanup]** 行。 此工作流会清除在控制实例上归档的执行实例和事件上接收和存储的事件。
 
 根据需要使用箭头更改清除设置。
 
-控制实例上的事件清除设置：
+事件清除控制实例设置：
 
 ![](assets/messagecenter_delete_events_001.png)
 
-执行实例上的事件清除设置：
+事件清除执行实例设置：
 
 ![](assets/messagecenter_delete_events_002.png)
 
