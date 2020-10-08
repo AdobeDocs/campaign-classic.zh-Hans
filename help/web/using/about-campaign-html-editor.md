@@ -1,7 +1,7 @@
 ---
-title: 关于活动HTML编辑器
-seo-title: 关于活动HTML编辑器
-description: 关于活动HTML编辑器
+title: 关于 Campaign HTML 编辑器
+seo-title: 关于 Campaign HTML 编辑器
+description: 关于 Campaign HTML 编辑器
 seo-description: null
 page-status-flag: never-activated
 uuid: 1b1d392d-4f19-4092-b57d-02051a242675
@@ -11,19 +11,16 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 1ffe9f58-7258-4794-a314-524065f8a33b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# 关于活动HTML编辑器{#about-campaign-html-editor}
+# 关于 Campaign HTML 编辑器{#about-campaign-html-editor}
 
 数字内容编辑器 **(数字内容编辑器)是HTML内容编辑器** ，可让您在Adobe Campaign中轻松创建或修改HTML格式的模板或内容。
 
