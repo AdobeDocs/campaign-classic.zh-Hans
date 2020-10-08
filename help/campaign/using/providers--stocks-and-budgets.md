@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: d4627141-cef1-4ddb-ad6a-5dc217b9fa96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1906'
 ht-degree: 0%
@@ -70,7 +67,7 @@ Adobe Campaign允许您定义将参与在活动中执行的任务的服务提供
 
 >[!NOTE]
 >
->有关此问题的详细信息，请 [参阅定义成本结构](#defining-the-cost-structure)。
+>For more on this, refer to [Defining the cost structure](#defining-the-cost-structure).
 
 成本类别是包含一组符合投放类型（电子邮件、直邮等）条件的成本的实体 或者任务。 成本类别在与服务提供商关联的服务模板中进行分组。 每个服务提供商都可引用一个或多个服务模板。
 
@@ -84,7 +81,7 @@ Adobe Campaign允许您定义将参与在活动中执行的任务的服务提供
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
-   * 为此成本类别输入标签，然后选择相关流程类型： 投放 **[!UICONTROL Direct mail]**&#x200B;方 **[!UICONTROL E-mail]**&#x200B;式、 **[!UICONTROL Mobile]**&#x200B;或 **[!UICONTROL Telephone]****[!UICONTROL Task]**。
+   * 为此成本类别输入标签，然后选择相关流程类型：投放 **[!UICONTROL Direct mail]**&#x200B;方 **[!UICONTROL E-mail]**&#x200B;式、 **[!UICONTROL Mobile]**&#x200B;或 **[!UICONTROL Telephone]****[!UICONTROL Task]**。
    * 单击按 **[!UICONTROL Add]** 钮以定义与此类别关联的成本类型。
    * 如有必要，将库存线与每种成本类型关联，以便使用的数量将自动与现有库存相关。
 
@@ -101,7 +98,7 @@ Adobe Campaign允许您定义将参与在活动中执行的任务的服务提供
 
    ![](assets/s_ncs_user_supplier_default_cost.png)
 
-### 定义成本结构 {#defining-the-cost-structure}
+### Defining the cost structure {#defining-the-cost-structure}
 
 对于每种类型的成本，成本结构指定要应用的计算规则。
 
@@ -113,7 +110,7 @@ Adobe Campaign允许您定义将参与在活动中执行的任务的服务提供
 
    您必须为成本结构分配标签。 默认情况下，它具有以下投放概要: **成本类别-成本类型**。
 
-   但是，您可以重命名它： 直接在字段中输入所需 **[!UICONTROL Label]** 值。
+   但是，您可以重命名它：直接在字段中输入所需 **[!UICONTROL Label]** 值。
 
 * 成本计算公式在窗口的下半部分中定义。
 
@@ -123,7 +120,7 @@ Adobe Campaign允许您定义将参与在活动中执行的任务的服务提供
 
 #### 线性结构 {#linear-structure}
 
-如果消息（或一批消息）的金额始终相同，而与消息总数无关，则选择并输 **[!UICONTROL Linear]** 入每条消息的成本。
+如果消息（或一批消息）的金额始终相同，而与消息总数无关，则选择并 **[!UICONTROL Linear]** 输入每条消息的成本。
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_01.png)
 
