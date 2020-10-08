@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '7859'
 ht-degree: 5%
@@ -1371,7 +1368,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*&quot;
   </tr> 
   <tr> 
    <td> nextOffersSize<br /> </td> 
-   <td> 符合条件的优惠在命题后排序，要存储以用于统计的最大数量。<br /> </td> 
+   <td> 符合条件的优惠在建议后排序，要存储以用于统计的最大数量。<br /> </td> 
    <td> 长<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1618,7 +1615,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*&quot;
   </tr> 
   <tr> 
    <td> purgePeriodSec<br /> </td> 
-   <td> 清除频率：缓存清除机制执行之间的时间（以秒为单位）。<br /> </td> 
+   <td> 清除频率：执行缓存清除机制之间的时间（以秒为单位）。<br /> </td> 
    <td> 长<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
@@ -1627,7 +1624,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*&quot;
 
 ### 中继 {#relay}
 
-在mta > **relay节点** ，配置以下参数。 这是邮件服务器的消息投放配置。
+在mta > **relay节点** ，配置以下参数。 这是邮件服务器的邮件投放配置。
 
 有关详细信息，请参 [阅SMTP中继](../../installation/using/configuring-campaign-server.md#smtp-relay)。
 
@@ -2053,7 +2050,7 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> pointerFlushMessageCount<br /> </td> 
-   <td> 每次处理此数量的消息时，指针都会存储在数据库中。<br /> </td> 
+   <td> 每次处理此数量的消息时，指针都将存储在数据库中。<br /> </td> 
    <td> <br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -2312,7 +2309,7 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> keepAlivePeriod<br /> </td> 
-   <td> 会话连续性帧的重复：max。 两帧之间的时间段（以秒为单位），用于通知接收会话仍处于启用状态。<br /> </td> 
+   <td> 会话连续性帧的重复：max。 两帧之间的句点（以秒为单位），以通知接收会话仍处于启用状态。<br /> </td> 
    <td> 长<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
@@ -2824,7 +2821,7 @@ For additional information, refer to this [section](../../installation/using/con
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告：对给定进程消耗的RAM量（以Mb为单位）发出警告<br /> </td> 
+   <td> 内存消耗警告：针对给定进程消耗的RAM量（以Mb为单位）的警告<br /> </td> 
    <td> 长<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
