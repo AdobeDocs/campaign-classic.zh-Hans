@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f3ef7b0a7b656f81400ed55a713058d43e6c96b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -23,13 +20,13 @@ ht-degree: 0%
 ---
 
 
-# 将活动SDK集成到移动应用程序 {#integrating-campaign-sdk-into-the-mobile-application}
+# 将 Campaign SDK 集成到移动应用程序 {#integrating-campaign-sdk-into-the-mobile-application}
 
 适用于iOS和Android的活动SDK是移动应用程序渠道模块的组件之一。
 
 >[!NOTE]
 >
->要获取活动SDK（以前称为Neolane SDK），请与Adobe客户关怀部门联系。
+>要获取活动SDK（以前称为Neolane SDK），请与Adobe客户服务联系。
 
 SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
 
@@ -37,7 +34,7 @@ SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
 
 ## 加载活动SDK {#loading-campaign-sdk}
 
-* **在Android中**: 必须 **将neolane_sdk-release** .aar文件链接到项目。
+* **在Android中**:必须 **将neolane_sdk-release** .aar文件链接到项目。
 
    以下权限授予对Adobe Campaign服务器的访问权限：
 
@@ -57,7 +54,7 @@ SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
 
    从SDK的1.0.26版，不再使用此权限。
 
-* **在iOS中**: 必须 **将libNeolaneSDK** .a **** 和Neolane_SDK.h文件链接到项目。 从SDK的1.0.24版中，将激 **活选项ENABLE** _BITCODE。
+* **在iOS中**:必须 **将libNeolaneSDK** .a **** 和Neolane_SDK.h文件链接到项目。 从SDK的1.0.24版中，将激 **活选项ENABLE** _BITCODE。
 
    >[!NOTE]
    >
@@ -67,14 +64,14 @@ SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
 
 要将活动SDK集成到移动应用程序中，功能管理员必须向开发人员提供以下信息：
 
-* **集成密钥**: 使Adobe Campaign平台能够识别移动应用程序。
+* **集成密钥**:使Adobe Campaign平台能够识别移动应用程序。
 
    >[!NOTE]
    >
    >此集成密钥在Adobe Campaign控制台中，在专用于移 **[!UICONTROL Information]** 动应用程序的服务选项卡中输入。 请参阅在 [Adobe Campaign中配置移动应用程序](../../delivery/using/configuring-the-mobile-application.md)。
 
-* **跟踪URL**: 匹配Adobe Campaign跟踪服务器的地址。
-* **营销URL**: 以启用订阅集。
+* **跟踪URL**:匹配Adobe Campaign跟踪服务器的地址。
+* **营销URL**:以启用订阅集。
 
 * **在Android中**:
 
@@ -583,7 +580,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 >[!CAUTION]
 >
->Adobe建议选择短变量名称，因为对于iOS和Android，通知大小限制为4kB。
+>Adobe建议选择短变量名称，因为iOS和Android的通知大小限制为4kB。
 
 ## 通知服务扩展 {#notification-service-extension}
 
