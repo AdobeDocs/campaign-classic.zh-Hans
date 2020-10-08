@@ -1,6 +1,6 @@
 ---
-title: 在使用Adobe Campaign经典时提高声誉
-description: 进一步了解如何在使用Adobe Campaign经典时提高声誉。
+title: 利用Adobe Campaign Classic提高声誉
+description: 进一步了解如何在使用Adobe Campaign Classic时提高声誉。
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 1%
@@ -23,7 +20,7 @@ ht-degree: 1%
 
 # 提高您的声誉{#improve-reputation}
 
-为避免让收件人精疲力尽，请从目标中删除重复电子邮件地址。 此步骤可保护您发送的信誉并确保良好的隔离管理。 Adobe Campaign优惠执行这些建议所需的工具，并避免被ISP添加到块列表中的风险。
+为避免让收件人精疲力尽，请从目标中删除重复电子邮件地址。 此步骤可保护您发送的信誉并确保良好的隔离管理。 Adobe Campaign优惠执行这些建议所需的工具，并避免ISP将其添加到阻止列表的风险。
 
 要尽可能避免重复，必须执行以下操作：
 
@@ -45,12 +42,12 @@ ht-degree: 1%
 * 同一邮件被多次发送。 即使活动在发送前默认执行外部重复数据删除过程，在拆分目标时，也没有任何内容可以阻止具有相同内容的不同操作发送相同的消息。
 * 退订请求未接受。 如果收件人在收到消息后取消订阅，其重复用户档案仍有资格获取将来的消息。
 
-除了选择加入程序的这一侧行，这种情况还可能导致用户将消息视为垃圾信息，并在ISP触发阻止列表过程。
+除了选择加入程序的这一侧面，这种情况还可能导致用户将消息视为垃圾邮件，并在ISP触发阻止列表程序。
 
 对数据库执行操作时，必须特别谨慎：
 
 * 必须仔细配置导入，特别是在选择合并关键项时。
-* 更改的电子邮件地址也可以是重复源。 特别地，具有不同域的两个地址可以被路由到同一邮箱，例如，在名称已更改且已保留前一个域一段时间的公司的情况下： joe.doe@amce-co.com和joe.doe@acme-rebranded.com。
+* 更改的电子邮件地址也可以是重复源。 特别地，具有不同域的两个地址可以被路由到同一邮箱，例如，在名称已更改且已保留前一个域一段时间的公司的情况下：joe.doe@amce-co.com和joe.doe@acme-rebranded.com。
 * 自动导入，无论是列表导入还是其他数据库导入，都是管理用户档案时要考虑的元素。 删除或移动其他分区中的用户档案时会发生什么情况？ 它可以通过自动导入在初始分区中重新创建，例如，下订单时。
 * 可以使用用户档案而不是分区来将视图存储在不同文件夹中。 这样，您就确保用户档案位于同一物理分区中，同时仍然能够显示和管理适当的权限。
 
@@ -58,6 +55,6 @@ ht-degree: 1%
 
 ## 隔离 {#quarantines}
 
-Adobe Campaign 管理了一个隔离地址列表。在投放分析中，默认情况下将排除其地址被隔离的收件人: 他们不是目标。 可以隔离电子邮件地址，例如，当收件箱已满或地址不存在时。 在所有情况下，隔离均符合下面详细介绍的具体规则。
+Adobe Campaign 管理了一个隔离地址列表。在投放分析中，默认情况下将排除其地址被隔离的收件人:他们不是目标。 可以隔离电子邮件地址，例如，当收件箱已满或地址不存在时。 在所有情况下，隔离均符合下面详细介绍的具体规则。
 
 隔离管理在本节 [中介绍](../../delivery/using/understanding-quarantine-management.md)。
