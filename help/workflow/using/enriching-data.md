@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: f87da08f-68b9-4e2b-821f-b3ff20e390f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '744'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 丰富数据{#enriching-data}
+# 扩充数据{#enriching-data}
 
 ## 关于丰富数据 {#about-enriching-data}
 
@@ -56,7 +53,7 @@ ht-degree: 0%
 1. 类 **[!UICONTROL Split]** 型活动允许我们根据得分创建收件人子集。
 1. 对于每个子集， **[!UICONTROL Delivery]** 都添加类型活动。
 
-## 第1步： 定位 {#step-1--targeting}
+## 第1步：定位 {#step-1--targeting}
 
 第一个查询使我们能够目标过去六个月内添加到数据库的收件人。
 
@@ -68,7 +65,7 @@ ht-degree: 0%
 
 然 **[!UICONTROL Intersection]** 后，会添加一个类型活动，以目标在过去六个月内添加到数据库的收件人以及参加最后一场比赛的。
 
-## 第2步： 扩充 {#step-2--enrichment}
+## 第2步：扩充 {#step-2--enrichment}
 
 在此示例中，我们希望根据存储在表中 **[!UICONTROL Score]** 的字段个性化 **[!UICONTROL Competition results]** 投放。 此表与收件人表具有1-n类型关系。 该 **[!UICONTROL Enrichment]** 活动允许我们从链接到过滤维度的表添加数据到工作流的工作表。
 
@@ -112,7 +109,7 @@ ht-degree: 0%
 
 ![](assets/uc1_enrich_14.png)
 
-## 第3步： 拆分和投放 {#step-3--split-and-delivery}
+## 第3步：拆分和投放 {#step-3--split-and-delivery}
 
 要根据收件人的得分对进行排序， **[!UICONTROL Split]** 将在扩充后添加一个活动。
 
