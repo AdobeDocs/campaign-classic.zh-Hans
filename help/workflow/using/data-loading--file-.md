@@ -9,14 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: dcb5b8e8-be38-4d89-908d-f57c2413a9bc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9c9554b83726da7a7dbc747878d7d0758e71a4d7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
@@ -25,7 +22,7 @@ ht-degree: 0%
 
 ## 使用 {#use}
 
-该 **[!UICONTROL Data loading (File)]** 活动允许您直接访问外部数据源并在Adobe Campaign中使用它。 事实上，定位操作所需的所有数据并不总是在Adobe Campaign库中找到： 可在外部文件中使用。
+该 **[!UICONTROL Data loading (File)]** 活动允许您直接访问外部数据源并在Adobe Campaign中使用它。 事实上，定位操作所需的所有数据并不总是在Adobe Campaign库中找到：可在外部文件中使用。
 
 要加载的文件可由过渡指定或在执行此活动时计算。 例如，它可以是客户端10个最喜爱产品的列表，这些产品的购买在外部数据库中进行管理。
 
@@ -43,7 +40,7 @@ ht-degree: 0%
 
 有关此内容的详细信息，请参阅此部分： [在处理之前解压或解密文件](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing)。
 
-## 定义文件格式 {#defining-the-file-format}
+## Defining the file format {#defining-the-file-format}
 
 加载文件时，将自动检测列格式以及每种数据类型的默认参数。 您可以修改这些默认参数，以指定要应用于数据的特定进程，尤其是当存在错误或空值时。
 
@@ -55,38 +52,38 @@ ht-degree: 0%
 
 通用文件格式允许您定义列的识别方式（文件编码、使用分隔符等）。
 
-列格式允许您定义每列的值处理：
+利用列格式，可定义每个列的值处理：
 
-* **[!UICONTROL Ignore column]**: 在数据加载过程中不处理此列。
-* **[!UICONTROL Data type]**: 指定每列所需的数据类型。
-* **[!UICONTROL Allow NULLs]**: 指定如何管理空值。
+* **[!UICONTROL Ignore column]**：在数据加载过程中不处理此列。
+* **[!UICONTROL Data type]**：指定每个列所需的数据类型。
+* **[!UICONTROL Allow NULLs]**:指定如何管理空值。
 
-   * **[!UICONTROL Adobe Campaign default]**: 仅为数字字段生成错误，否则插入NULL值。
-   * **[!UICONTROL Empty value allowed]**: 授权空值。 因此插入值NULL。
-   * **[!UICONTROL Always populated]**: 如果值为空，则生成错误。
+   * **[!UICONTROL Adobe Campaign default]**：仅为数字字段生成错误，否则插入 NULL 值。
+   * **[!UICONTROL Empty value allowed]**：授权空值。因此，会插入 NULL 值。
+   * **[!UICONTROL Always populated]**：如果值为空，则生成错误。
 
-* **[!UICONTROL Length]**: 指定字符串数据类型的最 **大字符** 数。
-* **[!UICONTROL Format]**: 定义时间和日期格式。
-* **[!UICONTROL Data transformation]**: 定义是否需要对字符串应用字符大小写 **过程**。
+* **[!UICONTROL Length]**:指定字符串数据类型的最 **大字符** 数。
+* **[!UICONTROL Format]**:定义时间和日期格式。
+* **[!UICONTROL Data transformation]**:定义是否需要对字符串应用字符大小写 **过程**。
 
-   * **[!UICONTROL None]**: 导入的字符串未修改。
-   * **[!UICONTROL First letter in upper case]**: 带大写的字符串开始的每个单词的第一个字母。
-   * **[!UICONTROL Upper case]**: 字符串中的所有字符均为大写。
-   * **[!UICONTROL Lower case]**: 字符串中的所有字符均以小写字母形式显示。
+   * **[!UICONTROL None]**:导入的字符串未修改。
+   * **[!UICONTROL First letter in upper case]**:带大写的字符串开始的每个单词的第一个字母。
+   * **[!UICONTROL Upper case]**:字符串中的所有字符均为大写。
+   * **[!UICONTROL Lower case]**:字符串中的所有字符均以小写字母形式显示。
 
-* **[!UICONTROL White space management]**: 指定字符串中是否需要忽略某些空格。 值 **[!UICONTROL Ignore spaces]** 只允许忽略字符串开头和结尾的空格。
-* **[!UICONTROL Error processings]**: 定义遇到错误时的行为。
+* **[!UICONTROL White space management]**:指定字符串中是否需要忽略某些空格。 值 **[!UICONTROL Ignore spaces]** 只允许忽略字符串开头和结尾的空格。
+* **[!UICONTROL Error processings]**：定义遇到错误时的行为。
 
-   * **[!UICONTROL Ignore the value]**: 将忽略该值。 工作流执行日志中会生成警告。
-   * **[!UICONTROL Reject line]**: 不处理整行。
-   * **[!UICONTROL Use a default value in case of error]**: 将导致错误的值替换为在字段中定义的默认值 **[!UICONTROL Default value]** 。
-   * **[!UICONTROL Reject the line when there is no remapping value]**: 除非为错误值定义了映射，否则不会处理整行(请参阅 **[!UICONTROL Mapping]** 下面的选项)。
-   * **[!UICONTROL Use a default value in case the value is not remapped]**: 将导致错误的值替换为默认值(在字段中定 **[!UICONTROL Default value]** 义)，除非为错误值定义了映射(请参 **[!UICONTROL Mapping]** 阅下面的选项)。
+   * **[!UICONTROL Ignore the value]**：忽略值。工作流执行日志中会生成警告。
+   * **[!UICONTROL Reject line]**：不处理整个行。
+   * **[!UICONTROL Use a default value in case of error]**：将导致错误的值替换为在 **[!UICONTROL Default value]** 字段中定义的默认值。
+   * **[!UICONTROL Reject the line when there is no remapping value]**:除非为错误值定义了映射，否则不会处理整行(请参阅 **[!UICONTROL Mapping]** 下面的选项)。
+   * **[!UICONTROL Use a default value in case the value is not remapped]**:将导致错误的值替换为默认值(在字段中定 **[!UICONTROL Default value]** 义)，除非为错误值定义了映射(请参 **[!UICONTROL Mapping]** 阅下面的选项)。
 
-* **[!UICONTROL Default value]**: 根据所选的错误处理指定默认值。
-* **[!UICONTROL Mapping]**: 此字段仅在列详细信息配置中可用(通过多次单击或列列表右侧的选项访问)。 导入某些值时，这会转换这些值。 例如，您可以将“three”转换为“3”。
+* **[!UICONTROL Default value]**：根据所选的错误处理指定默认值。
+* **[!UICONTROL Mapping]**:此字段仅在列详细信息配置中可用(通过多次单击或列列表右侧的选项访问)。 导入某些值时，这会转换这些值。 例如，您可以将“three”转换为“3”。
 
-## 示例： 收集数据并将其加载到数据库中 {#example--collecting-data-and-loading-it-in-the-database}
+## 示例：收集数据并将其加载到数据库中 {#example--collecting-data-and-loading-it-in-the-database}
 
 以下示例允许您每天在服务器上收集文件、加载其内容并根据其包含的信息更新数据库中的数据。 要收集的文件包含客户的信息，这些客户可能已购买（价格在3000欧元以上）、要求购买时退款，或者在没有购买任何商品的情况下访问商店。 根据此信息，各种进程将应用于其用户档案库中的进程。
 
@@ -116,9 +113,10 @@ ht-degree: 0%
 
    此处，文件包含五列：
 
-   * 第一列包含与事件一致的代码： 购买（大于或小于3,000欧元），不购买或退款一次或多次购买。
+   * 第一列包含与事件一致的代码：购买（大于或小于3,000欧元），不购买或退款一次或多次购买。
    * 以下四列包含客户端的名字、姓氏、电子邮件和帐号。
-   要加载的文件的格式配置与在Adobe Campaign中导入数据时定义的格式配置一致。 For more on this, refer to this [section](../../platform/using/importing-data.md#step-2---source-file-selection).
+
+   要加载的文件的格式配置与在Adobe Campaign中导入数据时定义的格式配置一致。 有关更多信息，请参阅此](../../platform/using/importing-data.md#step-2---source-file-selection)章节[。
 
 1. 在拆分活动中，根据事件列值指定要创建的 **子集** 。
 
