@@ -1,7 +1,7 @@
 ---
-title: 数据架构
-seo-title: 数据架构
-description: 数据架构
+title: 数据模式
+seo-title: 数据模式
+description: 数据模式
 seo-description: null
 page-status-flag: never-activated
 uuid: 9f08750a-e125-4531-8c2c-1ab218190210
@@ -11,63 +11,63 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: b65e8d27-f427-464e-ad42-51c0a88eee86
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 2%
 
 ---
 
 
-# 数据架构{#data-schemas}
+# 数据模式{#data-schemas}
 
 ## 原则 {#principles}
 
-要编辑、创建和配置架构，请单击Adobe Campaign客 **[!UICONTROL Administration > Configuration > Data schemas]** 户端控制台的节点。
+要编辑、创建和配置模式，请单 **[!UICONTROL Administration > Configuration > Data schemas]** 击Adobe Campaign客户端控制台的节点。
 
 >[!NOTE]
 >
->现成数据架构只能由Adobe Campaign Classic控制台的管理员删除。
+>开箱即用模式只能由您的Adobe Campaign Classic控制台的管理员删除。
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 
-编辑字段显示源架构的XML内容：
+编辑字段显示源模式的XML内容：
 
 ![](assets/d_ncs_integration_schema_edition.png)
 
 >[!NOTE]
 >
->通过“名称”编辑控件，可以输入由名称和命名空间组成的架构密钥。 架构的根元素的“name”和“namespace”属性会在架构的XML编辑区域中自动更新。
+>通过“名称”编辑控件，您可以输入由名称和模式组成的命名空间键。 命名空间的根元素的“name”和“模式”属性在模式的XML编辑区域中自动更新。
 
-预览会自动生成扩展架构：
+预览会自动生成扩展模式:
 
 ![](assets/d_ncs_integration_schema_edition2.png)
 
 >[!NOTE]
 >
->保存源架构后，将自动启动扩展架构的生成。
+>保存源模式时，将自动启动扩展模式的生成。
 
-如果需要检查架构的完整结构，可以使用预览选项卡。 如果架构已扩展，您随后将能够可视化其所有扩展。 作为补充，“文档”选项卡显示所有架构属性和元素及其属性（SQL字段、类型／长度、标签、说明）。 “文档”选项卡仅适用于生成的架构。 有关详细信息，请参阅重新生 [成架构部分](../../configuration/using/regenerating-schemas.md) 。
+如果需要检查模式的完整结构，可以使用预览选项卡。 如果模式已扩展，您就能够可视化其所有扩展。 作为补充，“文档”选项卡显示所有模式属性和元素及其属性（SQL字段、类型／长度、标签、说明）。 “文档”选项卡仅适用于生成的模式。 For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
 
 ## 示例：创建合同表 {#example--creating-a-contract-table}
 
-在以下示例中，我们要为Adobe Campaign数据库的数据库 **模型** 中的合同创建一个新表。 此表允许您存储每个合同的持有人和共同持有人的名字和姓氏以及电子邮件地址。
+在以下示例中，我们要在Adobe Campaign库的 **** 库模型中为合同创建新表。 此表允许您存储每个合同的持有人和共同持有人的姓名和姓氏以及电子邮件地址。
 
-为此，您需要创建表的架构并更新数据库结构以生成相应的表。 应用以下阶段：
+为此，您需要创建表的模式并更新数据库结构以生成相应的表。 应用以下阶段：
 
-1. 编辑Adobe **[!UICONTROL Administration > Configuration > Data schemas]** Campaign树的节点，然后单击 **[!UICONTROL New]** 。
-1. 选择该选 **[!UICONTROL Create a new table in the data model]** 项并单击 **[!UICONTROL Next]** 。
+1. 编辑Adobe Campaign **[!UICONTROL Administration > Configuration > Data schemas]** 树的节点，然后单击 **[!UICONTROL New]** 。
+1. 选择选 **[!UICONTROL Create a new table in the data model]** 项并单击 **[!UICONTROL Next]** 。
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
-1. 指定表的名称和命名空间。
+1. 指定表和命名空间的名称。
 
    ![](assets/s_ncs_configuration_create_new_param.png)
 
    >[!NOTE]
    >
-   >默认情况下，用户创建的架构存储在“cus”命名空间中。 有关此功能的详细信息，请参 [阅架构的标识](../../configuration/using/about-schema-reference.md#identification-of-a-schema)。
+   >默认情况下，用户创建的模式存储在“自定义”命名空间中。 有关详细信息，请参 [阅模式标识](../../configuration/using/about-schema-reference.md#identification-of-a-schema)。
 
 1. 创建表的内容。 我们建议使用输入向导来确保没有缺少设置。 要执行此操作，请单 **[!UICONTROL Insert]** 击按钮并选择要添加的设置类型。
 
@@ -121,9 +121,9 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
    </srcSchema>
    ```
 
-1. 保存架构以生成结构：
+1. 保存模式以生成结构：
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. 更新数据库结构以创建将架构链接到的表。 有关详细信息，请参阅更 [新数据库结构](../../configuration/using/updating-the-database-structure.md)。
+1. 更新模式库结构以创建要链接到的表。 For more on this, refer to [Updating the database structure](../../configuration/using/updating-the-database-structure.md).
 
