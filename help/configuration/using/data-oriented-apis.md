@@ -1,7 +1,7 @@
 ---
-title: 面向数据的API
-seo-title: 面向数据的API
-description: 面向数据的API
+title: 面向数据的 API
+seo-title: 面向数据的 API
+description: 面向数据的 API
 seo-description: null
 page-status-flag: never-activated
 uuid: f81356b3-8eef-4b65-9510-47c9d4b4e871
@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: fba46d42-0253-425b-bbc2-6702d4140e05
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 面向数据的API{#data-oriented-apis}
+# 面向数据的 API{#data-oriented-apis}
 
 面向数据的API允许您处理整个数据模型。
 
@@ -545,7 +542,7 @@ XPath **语法** ，用于根据输入模式定位数据。 有关XPath的详细
 
 数据对帐基于在关联模式中输入的键的定义进行。 写入过程根据输入文档中输入的数据来查找第一合格密钥。 根据实体在数据库中的存在情况插入或更新实体。
 
-要更新的实体模式的键基于xtkschema属性 **完成** 。
+要更新的实体的模式的键基于xtkschema属性 **完成** 。
 
 因此，可以使用包含构成键的 **XPath的合并关键项** （用逗号分隔）的列表的_key属性强制。
 
