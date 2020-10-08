@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 0%
@@ -25,7 +22,7 @@ ht-degree: 0%
 
 # 查询{#query}
 
-## 创建查询 {#creating-a-query}
+## Creating a query {#creating-a-query}
 
 查询允许您根据条件选择目标。 您可以将段代码与查询结果关联，并在其中插入其他数据。
 有关查询示例的详细信息，请参 [阅本节](../../workflow/using/querying-recipient-table.md)。
@@ -124,15 +121,16 @@ ht-degree: 0%
 
    * 如果选择恢复多行(**[!UICONTROL Limit the line count]**)，则可以指定要收集的行数。
    * 如果收集的列包含聚合，例如已声明的故障数、站点平均支出等。 您可以使用该 **[!UICONTROL Aggregates]** 值。
+
    ![](assets/query_add_collection_param.png)
 
-1. 指定集合的子选择。 例如： 仅限过去15天内购买。
+1. 指定集合的子选择。 例如：仅限过去15天内购买。
 
    ![](assets/query_add_columns_collection_filter.png)
 
 1. 如果您已选 **[!UICONTROL Limit the line count]** 择该选项，请定义筛选所收集数据的顺序。 一旦收集的行数超过您指定要保留的行数，筛选顺序就允许您指定要保留的行数。
 
-## 示例： 基于简单收件人属性定位 {#example--targeting-on-simple-recipient-attributes}
+## 示例：基于简单收件人属性定位 {#example--targeting-on-simple-recipient-attributes}
 
 在以下例子中，查询试图查明居住在法国的18至30岁男子。 此查询将用于旨在使其成为例如专用优惠的工作流。
 
@@ -148,6 +146,7 @@ ht-degree: 0%
    * 收件人30岁以下。
    * 收件人18岁以上。
    * 收件人住在法国。
+
    ![](assets/query_example.png)
 
    您可以视图符合条件组合的SQL:
@@ -192,7 +191,7 @@ ht-degree: 0%
 
    确保您知道查询的执行计划。 避免全表扫描，尤其是实时查询或几乎每分钟运行的实时查询。
 
-有关此方面的详细信息，请参[阅数据模型最佳实践](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html)[和数据库映射部分](../../configuration/using/database-mapping.md) 。
+有关此方面的详细信息，请参[阅数据模型最佳实践](https://helpx.adobe.com/cn/campaign/kb/acc-data-model-best-practices.html)[和数据库映射部分](../../configuration/using/database-mapping.md) 。
 
 ### 函数 {#functions}
 
@@ -226,11 +225,12 @@ For more on filtering dimensions, refer to [this section](../../workflow/using/b
 * 构建一个与生产平台具有相似卷、参数和体系结构的开发平台。
 * 对开发和生产环境使用相同的值。 尽可能多地使用相同的功能：
 
-   * 操作系统、
+   * 操作系统,
    * 版本、
    * 数据、
    * 应用程序、
    * 卷。
+
    >[!NOTE]
    >
    >在开发环境有效的功能在数据可能不同的生产环境可能无效。 尝试确定主要差异，以预测风险并准备解决方案。
