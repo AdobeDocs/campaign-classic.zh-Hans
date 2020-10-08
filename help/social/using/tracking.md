@@ -11,28 +11,28 @@ audience: social
 content-type: reference
 topic-tags: annexes
 discoiquuid: 1755ab4f-b655-48da-bf9a-426807bd85fd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 5%
 
 ---
 
 
 # 跟踪{#tracking}
 
-社交营销提供报告，使您能够测量Facebook和Twitter投放的反应率，并分析Facebook配置文件的获取情况。 以下报告可用：
+社交营销提供报告，使您能够衡量Facebook和Twitter投放的反应率，并分析对Facebook用户档案的赢取。 以下报告可用：
 
-* 通 **[!UICONTROL Reactivity rate]** 过Facebook或Twitter分发的 **[!UICONTROL Summary]** 选项卡可获得报告。
+* 报 **[!UICONTROL Reactivity rate]** 告，可通过Facebook或 **[!UICONTROL Summary]** Twitter投放的选项卡访问。
 
    ![](assets/social_report_3.png)
 
-* 通 **[!UICONTROL Reactivity rate]** 过Twitter或Facebook服务的 **[!UICONTROL Dashboard]** 选项卡提供的报告。
+* 通 **[!UICONTROL Reactivity rate]** 过Twitter或Facebook服 **[!UICONTROL Dashboard]** 务的选项卡提供的报告。
 
    ![](assets/social_report_2.png)
 
-* 通 **[!UICONTROL Fan acquisition]** 过Facebook服务的选项 **[!UICONTROL Dashboard]** 卡提供的报告。
+* 报 **[!UICONTROL Fan acquisition]** 告，可通过Facebook服 **[!UICONTROL Dashboard]** 务的选项卡访问。
 
    ![](assets/social_report_1.png)
 
