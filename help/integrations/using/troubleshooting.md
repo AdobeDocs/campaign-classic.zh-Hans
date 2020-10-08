@@ -11,11 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: f3ff8c8e-22b0-4d61-9f26-11f5ca3bc0be
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 4%
 
 ---
 
@@ -26,13 +26,13 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 * **外部帐户**
 
-   在中， **[!UICONTROL Administration > Platform > External accounts]**&#x200B;确保正确配置了以下外部SFTP帐户。 您的顾问应已在Adobe Experience cloud中配置上述SFTP服务器。
+   在 **[!UICONTROL Administration > Platform > External accounts]**&#x200B;中，确保正确配置了以下外部SFTP帐户。 上述SFTP服务器应由您的顾问在Adobe Experience Cloud进行配置。
 
    * **[!UICONTROL importSharedAudience]** :专用于导入受众的SFTP帐户。
    * **[!UICONTROL exportSharedAudience]** :专用于导出受众的SFTP帐户。
 
 * **AMC数据源**
 
-   在中， **[!UICONTROL Administration > Platform > AMC Data sources]**&#x200B;检查AMC数据源是否设置得当。
+   在 **[!UICONTROL Administration > Platform > AMC Data sources]**&#x200B;中，检查AMC数据源设置是否正确。
 
-在通过“人员”核心服务共享受众或导入受众时，可能会发生一些数据缺失的情况。 只有ID（“访客ID”或“声明ID”）能够与配置文件维度协调的记录才会被传输。 不会导入Adobe Campaign无法识别的People核心服务区段的ID。
+在通过People核心服务共享受众或导入受众时，可能会丢失某些数据。 只能传输ID(“访客ID”或“声明ID”)与用户档案维协调的记录。 不会导入Adobe Campaign无法识别的People核心服务区段的ID。
