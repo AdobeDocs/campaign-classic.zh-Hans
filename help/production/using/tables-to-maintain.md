@@ -11,20 +11,20 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 6ec4e566-7116-4d7f-835d-cb0f3c3a6a7a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1126'
+ht-degree: 1%
 
 ---
 
 
 # 要维护的表{#tables-to-maintain}
 
-要维护的表列表取决于您的Adobe Campaign版本、使用方式和数据模型配置。
+要维护的表的列表取决于Adobe Campaign的版本、使用方式和数据模型配置。
 
-以下列表仅包含最易碎的表。 影响如下：
+以下列表只包含最易碎的表。 影响如下：
 
 * 磁盘空间过度消耗，从而影响数据库访问，
 * 未定期更新的索引，这会降低查询性能。
@@ -34,54 +34,54 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>表名 </strong><br /> </th> 
+   <th> <strong>表名称 </strong><br /> </th> 
    <th> <strong>大小</strong><br /> </th> 
    <th> <strong>主要活动类型</strong><br /> </th> 
-   <th> <strong>评论</strong><br /> </th> 
+   <th> <strong>注释</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> NmsDelivery<br /> </td> 
    <td> 小<br /> </td> 
-   <td> 更新<br /> </td> 
-   <td> 每个交付操作有一条记录。 单个记录可以多次更新以反映交付进度，因此此表上的索引往往会快速分段。 <br /> </td> 
+   <td> Updates<br /> </td> 
+   <td> 每个投放操作有一条记录。 单个记录可以多次更新以反映投放进度，因此此表上的索引往往会快速分段。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsDeliveryPart<br /> </td> 
    <td> 中<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 在交付准备过程中插入记录的工作表。 然后，在交付过程中更新它们，最后在交付完成后删除它们。<br /> 尽管该表的平均大小相当有限，但它往往会迅速分割。<br /> </td> 
+   <td> 在准备投放时插入记录的工作表。 然后在投放期间更新它们，最后在投放完成后删除它们。<br /> 尽管平均大小相当有限，但此表往往会迅速碎裂。<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMirrorPageInfo<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、删除<br /> </td> 
-   <td> 此表包含生成个性化镜像页面所需的信息。 它包含一个备忘录(CLOB)字段，因此它往往很大。 卷与保留的镜像页面历史记录直接成比例。 <br /> </td> 
+   <td> 此表包含生成个性化镜像页面所需的信息。 它包含一个备忘录(CLOB)字段，因此它将非常大。 音量与保存的镜像页面历史直接成比例。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsDeliveryStat<br /> </td> 
    <td> 中<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 此表包含有关交付过程的统计信息。 其记录会定期更新。 <br /> </td> 
+   <td> 此表包含有关投放进程的统计信息。 其记录会定期更新。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsAddress<br /> </td> 
    <td> 中<br /> </td> 
    <td> 更新、插入<br /> </td> 
-   <td> 此表包含有关电子邮件地址的信息。 它经常作为隔离过程的一部分进行更新（记录是在第一个传送错误时创建的，在计数器发生更改时更新，并在传送成功后删除）。 <br /> </td> 
+   <td> 此表包含有关电子邮件地址的信息。 它经常作为隔离过程的一部分进行更新(记录是在第一个投放错误时创建的，在计数器发生更改时进行更新并在投放成功后删除)。 <br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflow<br /> </td> 
    <td> 小<br /> </td> 
-   <td> 更新<br /> </td> 
-   <td> 每个工作流实例有一条记录，因此记录很少。 但是，会定期更新表，以反映状态和进度。<br /> </td> 
+   <td> Updates<br /> </td> 
+   <td> 每个工作流实例有一条记录，因此记录很少。 但是，会定期更新表，以反映状态和进展。<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowTask<br /> </td> 
    <td> 小<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 每次执行工作流活动都会导致在此表中创建记录。 清除机制会在它们过期后将其删除。<br /> </td> 
+   <td> 工作流活动的每次执行都会导致在此表中创建记录。 清除机制会在它们过期后将其删除。<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowEvent<br /> </td> 
@@ -91,91 +91,91 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
   </tr> 
   <tr> 
    <td> XtkWorkflowJob<br /> </td> 
-   <td> 很小 <br /> </td> 
+   <td> 非常小 <br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 此表仅适用于工作流引擎。 它允许向工作流（例如，开始、停止、暂停）发送命令。 尽管它很小，但在清除链接到工作流的事务表时会考虑此表。<br /> </td> 
+   <td> 此表特定于工作流引擎。 它允许向工作流(例如开始、停止、暂停)发送命令。 尽管它很小，但在清除链接到工作流的事务表时，会考虑此表。<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLog<br /> </td> 
    <td> 最大<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 这是系统中最大的表。 每条消息发送一条记录，这些记录将被插入、更新以跟踪传送状态，并在清除历史记录时被删除。 <br /> </td> 
+   <td> 这是系统中最大的表。 每条消息发送一条记录，这些记录将被插入、更新以跟踪投放状态，并在清除历史记录时被删除。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLog<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、删除<br /> </td> 
-   <td> 在清除历史记录时，将插入和删除跟踪日志，但不会更新它们。 <br /> </td> 
+   <td> 跟踪日志在清除历史记录时被插入和删除，但不会更新。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadlogMsg <br /> </td> 
    <td> 小<br /> </td> 
-   <td> 更新<br /> </td> 
-   <td> 此表包含用于确认SMTP错误的信息。 它相当小，但会大量更新，因此此表上的索引往往会快速分割。 <br /> </td> 
+   <td> Updates<br /> </td> 
+   <td> 此表包含用于确认SMTP错误的信息。 它相当小，但会进行大量更新，因此此表上的索引往往会迅速分解。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsEmailErrorStat<br /> </td> 
    <td> 中<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 此表包含按域排序的SMTP错误的聚合。 它最初包含详细信息，一旦清理任务过时，该信息就会由清理任务汇总。 <br /> </td> 
+   <td> 此表包含按域排序的SMTP错误聚合。 它最初包含详细信息，一旦过时，清理任务会汇总这些详细信息。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsBroadLogMid（在中间采购实例上）<br /> </td> 
+   <td> NmsBroadLogMid(在中间源实例上)<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 仅当5.10（或更高版本）实例用作中间采购实例时。 这是数据库中最大的表之一。 每条消息发送一条记录，这些记录将被插入、更新以跟踪传送状态，并在清除历史记录时被删除。 在使用中间采购时，建议限制历史记录（通常不到两个月），因此此表在大小（6000万行中少于30 Go，数据+索引）方面保持合理，但是，不时重新构建它非常重要。 <br /> </td> 
+   <td> 仅当5.10（或更高版本）实例用作中间源实例时。 这是数据库中最大的表之一。 每条消息发送一条记录，这些记录将被插入、更新以跟踪投放状态，并在清除历史记录时被删除。 使用中间源时，建议限制历史记录（通常不到两个月），因此此表在大小（6000万行中小于30 Go，数据+索引）方面保持合理，但是不时重新构建它很重要。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLogRcp（当使用NmsRecipient表时） <br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 这是系统中最大的表。 每条消息发送一条记录，这些记录将被插入、更新以跟踪传送状态，并在清除历史记录时被删除。 请注意，在5.10中，此表比4.05(NmsBroadLog)中的等效表小，因为SMTP消息文本在5.10版本的NmsBroadLogMsg表中被分解。 但是，必须定期（每隔一周从此开始）重新索引此表，并不时（每月一次，或当性能受到影响时）完全重建它。 <br /> </td> 
+   <td> 这是系统中最大的表。 每条消息发送一条记录，这些记录将被插入、更新以跟踪投放状态，并在清除历史记录时被删除。 请注意，在5.10中，此表比4.05(NmsBroadLog)中的等效表小，因为SMTP消息文本在5.10版本的NmsBroadLogMsg表中被分解。 但是，仍然必须定期（每隔一周）重新编制此表的索引，以便与之开始，并不时（每月一次，或当性能受到影响时）完全重建它。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> YyyBroadLogXxx（当使用外部收件人表时）<br /> </td> 
+   <td> YyyBroadLogXxx(当使用外部收件人表时)<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 与NmsBroadLogRcp相同，但与外部收件人表相同。 请将Yyy和Xxx与交付映射中的值进行调整。 <br /> </td> 
+   <td> 与NmsBroadLogRcp相同，但带有外部收件人表。 请将Yyy和Xxx与投放映射中的值进行调整。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLogRcp（当使用NmsRecipient表时） <br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、删除<br /> </td> 
-   <td> 在清除历史记录时，将插入和删除跟踪日志，但不会更新它们。 卷取决于数据保留的长度。 <br /> </td> 
+   <td> 跟踪日志在清除历史记录时被插入和删除，但不会更新。 卷取决于数据保留的长度。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> YyyTrackingLogXxx（当使用外部收件人表时）<br /> </td> 
+   <td> YyyTrackingLogXxx(当使用外部收件人表时)<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、删除<br /> </td> 
-   <td> 与NmsTrackingLogRcp相同，但与外部收件人表相同。 请使用在交付映射中使用的值调整Yyy和Xxx。 <br /> </td> 
+   <td> 与NmsTrackingLogRcp相同，但带有外部收件人表。 请使用投放映射中使用的值调整Yyy和Xxx。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsBroadLogRtEvent（消息中心执行实例）<br /> </td> 
+   <td> NmsBroadLogRtEvent(消息中心执行实例)<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 与其他广播表类似，但与NmsRtEvent而不是NmsRecipient一起使用。<br /> </td> 
+   <td> 与其他广播表相似，但与NmsRtEvent（而非NmsRecipient）一起使用。<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsTrackingLogRtEvent（消息中心执行实例）<br /> </td> 
+   <td> NmsTrackingLogRtEvent(消息中心执行实例)<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、删除<br /> </td> 
-   <td> 与其他trackingLog表类似，但与NmsRtEvent表相似，而不是与NmsRecipient相同。<br /> </td> 
+   <td> 与其他trackingLog表相似，但与NmsRtEvent表相似，而不是与NmsRecipient相同。<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsRtEvent（消息中心执行实例）<br /> </td> 
+   <td> NmsRtEvent(消息中心执行实例)<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 包含消息中心事件队列的表。 这些事件的状态由消息中心在处理时更新。 在清除期间执行删除操作。 建议您定期重新创建此表的索引并重新构建它。<br /> </td> 
+   <td> 包含消息中心事件序列的表。 这些事件的状态由消息中心在处理时更新。 清除期间执行删除操作。 我们建议您定期重新创建此表的索引并重新构建它。<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsEventHisto（消息中心控制实例）<br /> </td> 
+   <td> NmsEventHisto(消息中心控制实例)<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 与NmsRtEvent类似。 此表存档所有执行实例中的每个事件。 它仅由报告使用，无需实时流程。<br /> </td> 
+   <td> 与NmsRtEvent相似。 此表存档所有事件的每个执行实例。 它不由实时进程使用，只由报告使用。<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMobileApp<br /> </td> 
-   <td> 很小<br /> </td> 
+   <td> 非常小<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
    <td> 包含移动应用程序及其配置的表。<br /> </td> 
   </tr> 
@@ -183,19 +183,19 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
    <td> NmsAppSubscriptionRcp<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新<br /> </td> 
-   <td> 包括用于发送通知的移动设备（地址）的标识符的表（类似于收件人表）。<br /> </td> 
+   <td> 包含用于发送通知的移动设备（地址）标识符的表(与收件人表类似)。<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLogAppSubRcp<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 与其他广播表类似，但使用NmsappSubscriptionRcp而不是NmsRecipient。<br /> </td> 
+   <td> 与其他广播表类似，但使用NmsappSubscriptionRcp而非NmsRecipient。<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLogAppSubRcp<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、删除<br /> </td> 
-   <td> 与其他trackingLog表类似，但与NmsappSubscriptionRcp表相似，而不是与NmsRecipient相同。<br /> </td> 
+   <td> 与其他trackingLog表相似，但使用NmsappSubscriptionRcp表而不是NmsRecipient。<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkSessionInfo<br /> </td> 
@@ -208,4 +208,4 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ## 客户表 {#customer-tables}
 
-除上面的列表外，客户在平台设置过程中创建的包含表（Adobe Campaign数据模型中不存在）也可能会发生碎片化，尤其是在数据加载或同步过程中频繁更新时。 这些表可以是默认Adobe Campaign数据模型(例如 **NmsRecipient**)的一部分。 在这种情况下，Adobe Campaign平台的管理员需要对其特定数据库模型进行审核才能找到这些自定义表。 这些表不一定在我们的维护过程中明确提及。
+除了上述列表之外，在平台设置期间由客户创建(Adobe Campaign数据模型中不存在)的表也可能会碎片化，尤其是在数据加载或同步过程中频繁更新时。 这些表可以是默认Adobe Campaign数据模型(例如 **NmsRecipient**)的一部分。 在这种情况下，Adobe Campaign平台的管理员应对其特定数据库模型进行审核以找到这些自定义表。 这些表不一定在我们的维护过程中被明确提及。
