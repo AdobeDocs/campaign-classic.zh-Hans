@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 discoiquuid: 199eb687-3da6-49c1-9997-ef1cbd2647b6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 2%
 
 ---
 
@@ -26,16 +26,16 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 默认情况下，Adobe Campaign显示有关操作员具有读取权限的数据库中的所有数据。
 
-此数据可以通过浏览器窗口上部的选项过滤。
+此数据可以通过浏览器窗口上半部分的选项过滤。
 
 ![](assets/filter_web_zone.png)
 
-筛选要显示的数据有几种方法。 如有必要，可以结合使用以下组件：
+筛选要显示的数据有几种方法。 如有必要，可结合使用以下各项：
 
-* 对文件夹进行筛选，请参阅按 [文件夹筛选](#filter-by-folder),
+* 对文件夹进行筛选，请参阅按 [文件夹进行筛选](#filter-by-folder),
 * 按状态过滤，请参阅按 [状态过滤](#filter-by-status),
-* 数据排序，请参阅 [排序依据](#order-by),
-* 搜索，请参阅快 [速搜索](#quick-search)。
+* 数据排序，请参 [阅顺序](#order-by),
+* 搜索，请参阅 [快速搜索](#quick-search)。
 
 ## 按文件夹过滤 {#filter-by-folder}
 
@@ -43,15 +43,15 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ![](assets/filter_web_select_folder.png)
 
-将仅显示文件夹中的配置文件：
+将仅显示文件夹中的用户档案:
 
 ![](assets/filter_web_folder_display.png)
 
-使用文件夹选择字段右侧的叉号可返回到默认显示模式。
+使用文件夹选择字段右侧的叉号返回默认显示模式。
 
-## 按状态过滤 {#filter-by-status}
+## 按状态筛选 {#filter-by-status}
 
-根据显示的信息类型，您可以按状态或按状态应用过滤器。 例如，对于提交，您可以选择仅显示已完成的提交，如下所示：
+根据显示的信息类型，您可以按状态或按状态应用筛选器。 例如，对于投放，您可以选择仅显示完成的投放，如下所示：
 
 ![](assets/d_ncs_user_interface_filter_delivery.png)
 
@@ -65,7 +65,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## 快速搜索 {#quick-search}
 
-使用搜索字段快速访问要查找的项目：输入要显示的项目的标签或内部名称中包含的字符，然后确认对页面上的数据应用自动过滤器。
+使用搜索字段快速访问要查找的项目：输入要显示的项目的标签或内部名称中包含的字符，然后确认对页面上的数据应用自动筛选器。
 
 ![](assets/d_ncs_user_interface_filter_search.png)
 
