@@ -11,11 +11,8 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: edb8f495fff90f51ae00006453b6ec09d84a8f55
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2639'
 ht-degree: 6%
@@ -114,7 +111,7 @@ _2019年6月21日_
 
 _2019年5月30日_
 
-**新增内容？**
+**新增功能**
 
 <table> 
  <thead> 
@@ -179,7 +176,7 @@ _2019年5月30日_
 * 操作员操作的护栏：已实施若干护栏，以防止运营商采取可能影响平台完整性的行动。 内置模式不再能通过界面删除。 此外，非管理员用户不再可以编辑工作流源XML。
 * 提供了两个新选项： **XtkSecurity_Restrict_EditXML** (允许您禁用投放的XML代码版本)和 **NmsOperation_OperationMgtDebug** （允许您监视操作管理技术工作流执行）。 [阅读更多](../../installation/using/configuring-campaign-options.md)
 
-**其他更改**
+**其他变更**
 
 * 推送通知：现在，我们支持iOS推送的“线程ID”选项。
 * 改进了长名称索引的管理，这些索引可能导致错误升级问题。
@@ -201,7 +198,7 @@ _2019年5月30日_
 * 修复了在直接邮件优惠中提取投放详细信息时可能发生的问题。 (NEO-11700)
 * 修复了可能影响SMS事务性消息性能的问题。 (NEO-9812)
 * 修复了在投放的主目标使用外部文件中的定义选项时可能发生的控制台崩溃。 (NEO-12349)
-* 修复了分析消息时针对日语(.JP)域的收件人的问题。 (NEO-12246)
+* 修复了分析消息时瞄准日语(.JP)域的收件人的问题。 (NEO-12246)
 * 修复了在1:N链接中使用值分布时的显示问题。 (NEO-12212, NEO-11820)
 * 修复了一个问题，该问题可能导致MTA日志中在错误升级后出现NmsMxDomain错误。 (NEO-12752)
 * 修复了在扩充工作流活动中使用“从主集保留所有其他数据”选项时的问题。 (NEO-13291)
