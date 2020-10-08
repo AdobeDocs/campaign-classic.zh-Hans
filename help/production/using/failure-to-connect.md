@@ -11,18 +11,18 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 493067fb-68f1-48b9-afaa-3127a847db83
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 90813bc2913d56136067b9f64c0e934df3f17473
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 3%
 
 ---
 
 
 # 连接失败{#failure-to-connect}
 
-这种情况的原因可能是多重的，并取决于不同的上下文。
+原因可能是多重的，并取决于各种上下文。
 
 检查安全区域的常规配置。
 
@@ -36,43 +36,43 @@ source-git-commit: 90813bc2913d56136067b9f64c0e934df3f17473
 
    * 您是否可以从计算机访问Internet?
 
-      检查是否可以连接到Internet上的网站（例如）。 如果无法连接，则问题出在您的计算机上。 联系您的系统管理员。
+      检查是否可以连接到Internet上的网站（例如）。 如果无法连接，则问题出在您的计算机上。 与系统管理员联系。
 
-   * 您是否可以通过其他服务连接到承载Adobe Campaign的服务器？
+   * 是否可以通过其他服务连接到承载Adobe Campaign的服务器？
 
-      通过SSH或任何其他方式连接到服务器。 如果这不可能，则您的主机公司会出现问题。 联系系统管理员。
+      通过SSH或任何其他方式连接到服务器。 如果这不可能，则主机公司有问题。 与系统管理员联系。
 
-1. **检查Web服务器端** (IIS/apache/etc)
+1. **检查Web服务器端** (IIS/apache/etc.)
 
    * Web服务器是否响应？
 
-      使用Web浏览器连接到Adobe Campaign服务器访问URL: **http://`<urlserver>`**. 如果它没有响应，则Web服务器在计算机上停止。 请与主机公司的系统管理员联系以重新启动该服务。
+      使用Web浏览器连接到Adobe Campaign服务器访问URL: **//`<urlserver>`**。 如果它没有响应，则计算机上停止Web服务器。 请与主机公司的系统管理员联系以重新启动该服务。
 
    * Adobe Campaign是否已正确集成？
 
-      登录到： **http:///`<urlserver>`/r/test** URL。 服务器应返回以下类型的消息
+      登录到： **http(s)://`<urlserver>`//r/test** URL。 服务器应返回以下类型的消息
 
       ```
       <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='<hostname>' localHost='<server>'/>
       ```
 
-      如果未获得此结果，请检查Web服务器配置是否考虑了集成。
+      如果未获得此结果，请检查Web服务器配置中是否考虑了集成。
 
-1. **在Adobe Campaign端进行检查**
+1. **检查Adobe Campaign**
 
-   * Adobe Campaign web模块是否已启动？
+   * Adobe CampaignWeb模块是否已启动？
 
-      连接到以下URL: **http://`<URLSERVER>`/nl/jsp/logon.jsp**
+      连接到以下URL: **/nl/jsp/logon.jsp`<URLSERVER>`**
 
-      * 如果您获得Tomcat java错误：
+      * 如果获得Tomcat Java错误：
 
          JAVA集成是否正确执行？ Adobe Campaign需要SUN JDK。
 
-         它集成在文件/nl6/customer.sh **`[path of application]`中&#x200B;**
+         它集成在文件/nl6/customer.sh **`[path of application]`中**
 
       * 如果您获得空白页面：
 
-         Adobe Campaign web模块是否已启动？ 您应当获得：
+         Adobe CampaignWeb模块是否已启动？ 您应获得：
 
          ```
          nlserver pdump
@@ -82,12 +82,12 @@ source-git-commit: 90813bc2913d56136067b9f64c0e934df3f17473
          [...]
          ```
 
-      * 否则，请使用以下命令重新启动它：
+      * 如果不是，请使用以下命令重新启动它：
 
          ```
          nlserver start web
          ```
 >[!NOTE]
 >
->如果您在列出Adobe Campaign模块时获得以下类型的响应： **nlserver pdump**
->HH:MM:SS > Adobe Campaign Classic(7.X YY.R内部版本XXX@SHA1),DD/MM/YYYY，无任务您必须重新启动整个Adobe Campaign应用程序。 为此，请使用以下命令：**nlserver watchdog -svc -noconsole **
+>如果在列表Adobe Campaign模块时获得以下类型的响应： **nlserver pdump**
+>HH:MM:SS >Adobe Campaign Classic(7.X YY.R内部版本XXX@SHA1)的应用程序服务器：DD/MM/YYYY无任务。您必须重新启动整个Adobe Campaign应用程序。 为此，请使用以下命令：**nlserver watchdog -svc -noconsole **
