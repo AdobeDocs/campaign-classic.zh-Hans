@@ -11,14 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1456'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -38,19 +35,19 @@ ht-degree: 1%
 
    默认情况下，以下报告可用：
 
-   * **[!UICONTROL Delivery throughput]** : 参考 [投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)。
-   * **[!UICONTROL Sharing to social networks]** : 请参阅 [共享到社交网络](../../reporting/using/global-reports.md#sharing-to-social-networks)。
-   * **[!UICONTROL Statistics on sharing activities]** : 请参阅 [共享活动统计](../../reporting/using/global-reports.md#statistics-on-sharing-activities)。
-   * **[!UICONTROL Hot clicks]** : 请参阅热 [点单击](#hot-clicks)。
-   * **[!UICONTROL Tracking statistics]** : 请参阅跟 [踪统计信息](#tracking-statistics)
-   * **[!UICONTROL URLs and click streams]** : 请参阅 [URL并单击流](#urls-and-click-streams)。
-   * **[!UICONTROL Tracking indicators]** : 请参阅 [跟踪指示器](#tracking-indicators)。
-   * **[!UICONTROL Non-deliverables and bounces]** : 请参阅 [非交付件和弹回](../../reporting/using/global-reports.md#non-deliverables-and-bounces)。
-   * **[!UICONTROL User activities]** : 请参阅 [用户活动](../../reporting/using/global-reports.md#user-activities)。
-   * **[!UICONTROL Delivery summary]** : 请参阅 [投放摘要](#delivery-summary)。
-   * **[!UICONTROL Subscription tracking]** : 请参阅 [订阅跟踪](../../reporting/using/global-reports.md#subscription-tracking)。
-   * **[!UICONTROL Delivery statistics]** : 请参阅 [投放统计](../../reporting/using/global-reports.md#delivery-statistics)。
-   * **[!UICONTROL Breakdown of opens]** : 请参阅打 [开的细分](../../reporting/using/global-reports.md#breakdown-of-opens)。
+   * **[!UICONTROL Delivery throughput]** :参考 [投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)。
+   * **[!UICONTROL Sharing to social networks]** :请参阅 [共享到社交网络](../../reporting/using/global-reports.md#sharing-to-social-networks)。
+   * **[!UICONTROL Statistics on sharing activities]** :请参阅 [共享活动统计](../../reporting/using/global-reports.md#statistics-on-sharing-activities)。
+   * **[!UICONTROL Hot clicks]** :请参阅热 [点单击](#hot-clicks)。
+   * **[!UICONTROL Tracking statistics]** :请参阅跟 [踪统计信息](#tracking-statistics)
+   * **[!UICONTROL URLs and click streams]** :请参阅 [URL并单击流](#urls-and-click-streams)。
+   * **[!UICONTROL Tracking indicators]** :请参阅 [跟踪指示器](#tracking-indicators)。
+   * **[!UICONTROL Non-deliverables and bounces]** :请参阅 [非交付件和弹回](../../reporting/using/global-reports.md#non-deliverables-and-bounces)。
+   * **[!UICONTROL User activities]** :请参阅 [用户活动](../../reporting/using/global-reports.md#user-activities)。
+   * **[!UICONTROL Delivery summary]** :请参阅 [投放摘要](#delivery-summary)。
+   * **[!UICONTROL Subscription tracking]** :请参阅 [订阅跟踪](../../reporting/using/global-reports.md#subscription-tracking)。
+   * **[!UICONTROL Delivery statistics]** :请参阅 [投放统计](../../reporting/using/global-reports.md#delivery-statistics)。
+   * **[!UICONTROL Breakdown of opens]** :请参阅打 [开的细分](../../reporting/using/global-reports.md#breakdown-of-opens)。
 
 ## 跟踪指标 {#tracking-indicators}
 
@@ -64,8 +61,8 @@ ht-degree: 1%
 
 **[!UICONTROL 1. Delivery statistics]**
 
-* **[!UICONTROL Messages to deliver]** : 投放分析后要传送的消息总数。
-* **[!UICONTROL Success]** : 已成功处理的邮件数。
+* **[!UICONTROL Messages to deliver]** :投放分析后要传送的消息总数。
+* **[!UICONTROL Success]** :已成功处理的邮件数。
 
 **[!UICONTROL 2. Reception statistics]**
 
@@ -73,11 +70,11 @@ ht-degree: 1%
 >
 >相关百分比根据成功转发的消息数计算。
 
-* **[!UICONTROL Distinct opens for the population reached]** : 至少一次已打开消息的目标收件人数的估计。 单击退订链接和镜像页面会被考虑在内。
-* **[!UICONTROL Sum of opens for the population reached]** : 目标收件人的打开总数估计。
-* **[!UICONTROL Clicks on opt-out link]** : 单击退订链接的次数。
-* **[!UICONTROL Clicks on the mirror page link]** : 点击指向镜像页面的链接的次数。 为了考虑这些因素，必须在投放向导（跟踪的URL）中将链接定义为这样。 Refer to this [page](../../delivery/using/monitoring-a-delivery.md).
-* **[!UICONTROL Estimation of forwards]** : 目标收件人转发的电子邮件数的估计。 此值通过减去单击电子邮件的不同人员数和不同收件人数来计算。
+* **[!UICONTROL Distinct opens for the population reached]** :至少一次已打开消息的目标收件人数的估计。 单击退订链接和镜像页面会被考虑在内。
+* **[!UICONTROL Sum of opens for the population reached]** :目标收件人的打开总数估计。
+* **[!UICONTROL Clicks on opt-out link]** :单击退订链接的次数。
+* **[!UICONTROL Clicks on the mirror page link]** :点击指向镜像页面的链接的次数。 为了考虑这些因素，必须在投放向导（跟踪的URL）中将链接定义为这样。 Refer to this [page](../../delivery/using/monitoring-a-delivery.md).
+* **[!UICONTROL Estimation of forwards]** :目标收件人转发的电子邮件数的估计。 此值通过减去单击电子邮件的不同人员数和不同收件人数来计算。
 
    >[!NOTE]
    >
@@ -87,11 +84,11 @@ ht-degree: 1%
 
 此值表显示每个Internet域的投放、打开次数、点击次数和原始反应性的细分。 使用以下指示符：
 
-* **[!UICONTROL Sent]** : 此域上发送的消息总数。
-* **[!UICONTROL Complaints]** : 此域的消息数，该收件人报告为不需要的消息数。 该速率根据在此域上发送的消息总数计算。
-* **[!UICONTROL Opens]** : 此域至少打开一次消息的不同目标收件人数。 该速率根据在此域上发送的消息总数计算。
-* **[!UICONTROL Clicks]** : 点击同一收件人至少一次的不同目标投放数。 该速率根据在此域上发送的消息总数计算
-* **[!UICONTROL Raw reactivity]** : 点击收件人至少一次的投放数与打开投放至少一次的收件人数的百分比。
+* **[!UICONTROL Sent]** :此域上发送的消息总数。
+* **[!UICONTROL Complaints]** :此域的消息数，该收件人报告为不需要的消息数。 该速率根据在此域上发送的消息总数计算。
+* **[!UICONTROL Opens]** :此域至少打开一次消息的不同目标收件人数。 该速率根据在此域上发送的消息总数计算。
+* **[!UICONTROL Clicks]** :点击同一收件人至少一次的不同目标投放数。 该速率根据在此域上发送的消息总数计算
+* **[!UICONTROL Raw reactivity]** :点击收件人至少一次的投放数与打开投放至少一次的收件人数的百分比。
 
 >[!NOTE]
 >
@@ -103,20 +100,20 @@ ht-degree: 1%
 >
 >相关百分比根据成功转发的消息数计算。
 
-* **[!UICONTROL Distinct clicks for the population reached]** : 点击投放至少一次的不同人数。
-* **[!UICONTROL Cumulated clicks]** : 目标收件人(不包括退订链接和镜像页面)的总点击次数。
-* **[!UICONTROL Recipient clicks]** : 点击同一收件人至少一次的不同目标投放数。
-* **[!UICONTROL Estimated recipient reactivity]** : 在投放中点击至少一次的收件人数与已打开投放至少一次的收件人数的估计数之比。 单击选择退出和镜像页面链接时，不会考虑这些链接。
+* **[!UICONTROL Distinct clicks for the population reached]** :点击投放至少一次的不同人数。
+* **[!UICONTROL Cumulated clicks]** :目标收件人(不包括退订链接和镜像页面)的总点击次数。
+* **[!UICONTROL Recipient clicks]** :点击同一收件人至少一次的不同目标投放数。
+* **[!UICONTROL Estimated recipient reactivity]** :在投放中点击至少一次的收件人数与已打开投放至少一次的收件人数的估计数之比。 单击选择退出和镜像页面链接时，不会考虑这些链接。
 
 **[!UICONTROL 5. Web tracking]**
 
-* **[!UICONTROL Visited pages]** : 接收消息后访问的网页数。
-* **[!UICONTROL Transactions]** : 消息接收后的购买数。
-* **[!UICONTROL Total amount]** : 消息接收后的购买总量。
-* **[!UICONTROL Average transaction amount]** : 不同投放收件人的平均购买量。
-* **[!UICONTROL Articles]** : 投放收件人购买的文章数。
-* **[!UICONTROL Average count of articles per transaction]** : 不同收件人每次购买的平均项目数。
-* **[!UICONTROL Average amount per message]** : 每条消息生成的平均购买量。
+* **[!UICONTROL Visited pages]** :接收消息后访问的网页数。
+* **[!UICONTROL Transactions]** :消息接收后的购买数。
+* **[!UICONTROL Total amount]** :消息接收后的购买总量。
+* **[!UICONTROL Average transaction amount]** :不同投放收件人的平均购买量。
+* **[!UICONTROL Articles]** :投放收件人购买的文章数。
+* **[!UICONTROL Average count of articles per transaction]** :不同收件人每次购买的平均项目数。
+* **[!UICONTROL Average amount per message]** :每条消息生成的平均购买量。
 
    >[!NOTE]
    >
@@ -132,25 +129,25 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_url_report.png)
 
-您可以通过选择以下项来配置此报告的内容： 要显示的得分图表、时间筛选器（自启动操作以来，在启动后的前6小时内，等等） 以及类别显示模式（按标签、按URL、按），有关详细信息，请参阅 [本页](../../delivery/using/monitoring-a-delivery.md)。 Click **[!UICONTROL Refresh]** to confirm your selection.
+您可以通过选择以下项来配置此报告的内容：要显示的得分图表、时间筛选器（自启动操作以来，在启动后的前6小时内，等等） 以及类别显示模式（按标签、按URL、按），有关详细信息，请参阅 [本页](../../delivery/using/monitoring-a-delivery.md)。 单击 **[!UICONTROL Refresh]** 以确认您的选择。
 
 报表的上半部分显示以下比率：
 
-* **[!UICONTROL Reactivity]** : 点击投放的目标收件人数与已打开投放的估计目标收件人数之比。 单击退出链接和镜像页面时不会考虑。
+* **[!UICONTROL Reactivity]** :点击投放的目标收件人数与已打开投放的估计目标收件人数之比。 单击退出链接和镜像页面时不会考虑。
 
    >[!NOTE]
    >
    >有关跟踪打开的详细信息，请参阅 [跟踪打开](../../reporting/using/indicator-calculation.md#tracking-opens-)。
 
-* **[!UICONTROL Distinct clicks]** : 在投放中点击至少一次(不包括退订链接和镜像页面)的不同人数。 显示的速率根据成功传送的消息数计算。
-* **[!UICONTROL Cumulated clicks]** : 目标收件人(不包括退订链接和镜像页面)的点击总数。 根据成功转发的消息数计算显示的速率。
+* **[!UICONTROL Distinct clicks]** :在投放中点击至少一次(不包括退订链接和镜像页面)的不同人数。 显示的速率根据成功传送的消息数计算。
+* **[!UICONTROL Cumulated clicks]** :目标收件人(不包括退订链接和镜像页面)的点击总数。 根据成功转发的消息数计算显示的速率。
 
-**[!UICONTROL Platform average]** : 此平均比率（反应性、不同点击量和累积点击量）是为过去六个月内发送的投放计算的。 仅考虑具有相同类型和相同渠道的投放。 验证排除。
+**[!UICONTROL Platform average]** :此平均比率（反应性、不同点击量和累积点击量）是为过去六个月内发送的投放计算的。 仅考虑具有相同类型和相同渠道的投放。 验证排除。
 
 中心表提供以下信息：
 
-* **[!UICONTROL Clicks]** : 每个链接的累积点击次数。
-* **[!UICONTROL Clicks (in %)]** : 与累计点击总数相关的每个链接点击次数细分。
+* **[!UICONTROL Clicks]** :每个链接的累积点击次数。
+* **[!UICONTROL Clicks (in %)]** :与累计点击总数相关的每个链接点击次数细分。
 
 **[!UICONTROL Breakdown of clicks in time]**
 
@@ -166,8 +163,8 @@ ht-degree: 1%
 
 本节包含两个指标：
 
-* **[!UICONTROL Initial population]** : 投放目标收件人总数。
-* **[!UICONTROL Messages rejected by the rule]** : 应用分析时在类型规则期间忽略的地址数： 地址缺失、已隔离、已添加到块列表等。 有关类型规则的详细信息，请参阅 [本页](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies)。
+* **[!UICONTROL Initial population]** :投放目标收件人总数。
+* **[!UICONTROL Messages rejected by the rule]** :应用分析时在类型规则期间忽略的地址数：地址缺失、已隔离、已添加到阻止列表等。 For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
 **[!UICONTROL Causes of exclusion]**
 
@@ -177,10 +174,10 @@ ht-degree: 1%
 
 本节包括以下指标：
 
-* **[!UICONTROL Messages to be delivered]** : 投放分析后要传送的消息总数。
-* **[!UICONTROL Success]** : 已成功处理的邮件数。 关联速率是要传递的消息数的比率。
-* **[!UICONTROL Errors]** : 在投放和自动回弹处理期间累积的错误总数。 关联速率是要传递的消息数的比率。
-* **[!UICONTROL New quarantines]** : 失败投放后隔离的地址数(用户未知，无效域)。 关联速率是要传递的消息数的比率。
+* **[!UICONTROL Messages to be delivered]** :投放分析后要传送的消息总数。
+* **[!UICONTROL Success]** :已成功处理的邮件数。 关联速率是要传递的消息数的比率。
+* **[!UICONTROL Errors]** :在投放和自动回弹处理期间累积的错误总数。 关联速率是要传递的消息数的比率。
+* **[!UICONTROL New quarantines]** :失败投放后隔离的地址数(用户未知，无效域)。 关联速率是要传递的消息数的比率。
 
 ## 热门点击 {#hot-clicks}
 
@@ -198,10 +195,10 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_stat_report.png)
 
-它可让您跟踪投放的营销影响。 您可以通过更改时间刻度(1小时、3小时或24小时视图等)来配置值的显示方式。 Click **[!UICONTROL Refresh]** to confirm your selection.
+它可让您跟踪投放的营销影响。 您可以通过更改时间刻度(1小时、3小时或24小时视图等)来配置值的显示方式。 单击 **[!UICONTROL Refresh]** 以确认您的选择。
 
 此报告提供值表和帕累托图，其中显示投放达到最高效率所需的时间。 使用以下指示符：
 
-* **[!UICONTROL Opens]** : 估计达到所打开邮件总数的百分比所需的时间。 文本格式的电子邮件未予考虑。 有关跟踪打开的详细信息，请参阅 [跟踪打开](../../reporting/using/indicator-calculation.md#tracking-opens-)。
-* **[!UICONTROL Clicks]** : 估计达到所记录点击总数的百分比所需的时间。 单击退出链接后，不会考虑镜像页面。
-* **[!UICONTROL Transactions]** : 在收到消息后达到事务处理总数的百分比所需的时间。 要考虑事务，必须将事务类型Web跟踪标记插入到匹配的网页中。 本节介绍Web跟踪 [配置](../../configuration/using/about-web-tracking.md)。
+* **[!UICONTROL Opens]** :估计达到所打开邮件总数的百分比所需的时间。 文本格式的电子邮件未予考虑。 有关跟踪打开的详细信息，请参阅 [跟踪打开](../../reporting/using/indicator-calculation.md#tracking-opens-)。
+* **[!UICONTROL Clicks]** :估计达到所记录点击总数的百分比所需的时间。 单击退出链接后，不会考虑镜像页面。
+* **[!UICONTROL Transactions]** :在收到消息后达到事务处理总数的百分比所需的时间。 要考虑事务，必须将事务类型Web跟踪标记插入到匹配的网页中。 本节介绍Web跟踪 [配置](../../configuration/using/about-web-tracking.md)。
