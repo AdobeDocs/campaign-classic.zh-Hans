@@ -11,14 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 discoiquuid: 91115d4f-0cb6-4bce-b28d-17f15e9f9a0a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1203'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -27,13 +24,13 @@ ht-degree: 0%
 
 ACS连接器将活动v7复制到Campaign Standard。 从活动v7接收的数据可用于Campaign Standard以创建投放。 您可以通过执行下面列出的操作，了解用户档案的同步方式。
 
-* **添加新收件人**: 在活动v7中新建一个收件人，并确认相应用户档案已复制到Campaign Standard。 请参 [阅创建新收件人](#creating-a-new-recipient)。
-* **更新收件人**: 在活动v7中编辑新收件人，在Campaign Standard中视图相应用户档案，以确认已复制更新。 请参 [阅编辑收件人](#editing-a-recipient)。
-* **在Campaign Standard中构建工作流**: 在Campaign Standard中创建一个工作流，其中包括一个查询，该受众或用户档案从活动v7复制。 请参 [阅创建工作流](#creating-a-workflow)。
-* **在Campaign Standard中创建投放**: 按照工作流完成以发送投放。 请参 [阅创建投放](#creating-a-delivery)。
-* **验证退订链接**: 使用活动v7 Web应用程序确保收件人选择取消订阅服务会发送到活动v7数据库。 停止接收服务的选项被复制到Campaign Standard。 请参 [阅更改退订链接](#changing-the-unsubscription-link)。
+* **添加新收件人**:在活动v7中新建一个收件人，并确认相应用户档案已复制到Campaign Standard。 请参 [阅创建新收件人](#creating-a-new-recipient)。
+* **更新收件人**:在活动v7中编辑新收件人，在Campaign Standard中视图相应用户档案，以确认已复制更新。 请参 [阅编辑收件人](#editing-a-recipient)。
+* **在Campaign Standard中构建工作流**:在Campaign Standard中创建一个工作流，其中包括一个查询，该受众或用户档案从活动v7复制。 See [Creating a workflow](#creating-a-workflow).
+* **在Campaign Standard中创建投放**:按照工作流完成以发送投放。 请参 [阅创建投放](#creating-a-delivery)。
+* **验证退订链接**:使用活动v7 Web应用程序确保收件人选择取消订阅服务会发送到活动v7数据库。 停止接收服务的选项被复制到Campaign Standard。 请参 [阅更改退订链接](#changing-the-unsubscription-link)。
 
-## 先决条件 {#prerequisites}
+## 先决条件{#prerequisites}
 
 以下各节介绍ACS连接器如何帮助您在活动v7中添加和编辑收件人，然后在Campaign Standard投放中使用它们。 ACS连接器要求：
 
@@ -55,7 +52,7 @@ ACS连接器将活动v7复制到Campaign Standard。 从活动v7接收的数据�
 
    ![](assets/acs_connect_profile_sync_01.png)
 
-1. 确认已将新收件人添加到Campaign Standard。 在查看用户档案时，请确保您在活动v7中输入的数据也在Campaign Standard中可用。 要了解在Campaign Standard中查找用户档案的位置，请参阅导 [航基础](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
+1. 确认已将新收件人添加到Campaign Standard。 在查看用户档案时，请确保您在活动v7中输入的数据也在Campaign Standard中可用。 要了解在Campaign Standard中查找用户档案的位置，请参阅导 [航基础](https://docs.adobe.com/content/help/zh-Hans/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
 
    ![](assets/acs_connect_profile_sync_02.png)
 
@@ -69,13 +66,13 @@ ACS连接器将活动v7复制到Campaign Standard。 从活动v7接收的数据�
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. 确认收件人的名称已在Campaign Standard中更新。 要了解在Campaign Standard中查找用户档案的位置，请参阅导 [航基础](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
+1. 确认收件人的名称已在Campaign Standard中更新。 要了解在Campaign Standard中查找用户档案的位置，请参阅导 [航基础](https://docs.adobe.com/content/help/zh-Hans/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
 
    ![](assets/acs_connect_profile_sync_04.png)
 
    默认情况下，ACS连接器的定期复制每15分钟一次。 有关详细信息，请参 [阅数据复制](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication)。
 
-## 创建工作流 {#creating-a-workflow}
+## 创建工作流{#creating-a-workflow}
 
 从活动v7复制的用户档案和服务可供数字营销人员利用Campaign Standard中的丰富数据。 下面的说明演示如何向查询工作流中添加Campaign Standard，然后将其与复制的数据库一起使用。
 
@@ -182,7 +179,7 @@ ACS连接器将活动v7复制到Campaign Standard。 从活动v7接收的数据�
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. 转到Campaign Standard并打开收件人的用户档案详细信息。 确认复选框在旁边出现 **[!UICONTROL No longer contact (by any channel)]**。 要了解在Campaign Standard中查找用户档案的位置，请参阅导 [航基础](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
+1. 转到Campaign Standard并打开收件人的用户档案详细信息。 确认复选框在旁边出现 **[!UICONTROL No longer contact (by any channel)]**。 要了解在Campaign Standard中查找用户档案的位置，请参阅导 [航基础](https://docs.adobe.com/content/help/zh-Hans/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
 
    ![](assets/acs_connect_profile_sync_23.png)
 
