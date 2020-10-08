@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1833'
 ht-degree: 2%
@@ -272,9 +269,9 @@ ht-degree: 2%
 |---|---|
 | 工作架构 | 用于工作表的模式库 |
 | 仓库 | 要使用的默认仓库的名称。 它将覆盖用户的默认设置。 |
-| 时区名称 | 默认为空，这意味着使用Campaign Classic应用服务器的系统时区。 该选项可用于强制TIMEZONE会话参数。 <br>[有关详细信息，请参见此  页面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
-| WeekStart | WEEK_开始会话参数。 默认情况下，设置为0。 <br>[有关详细信息，请参见此  页面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)。 |
-| UseCachedResult | USE_CACHED_RESULTS会话参数。 默认设置为TRUE。 此选项可用于禁用Snowflake缓存结果。 <br>[有关详细信息，请参见此  页面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
+| 时区名称 | 默认为空，这意味着使用Campaign Classic应用服务器的系统时区。 该选项可用于强制TIMEZONE会话参数。 <br>有关详细信息，请参见[此页面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
+| WeekStart | WEEK_开始会话参数。 默认情况下，设置为0。 <br>有关详细信息，请参见[此页面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)。 |
+| UseCachedResult | USE_CACHED_RESULTS会话参数。 默认设置为TRUE。 此选项可用于禁用Snowflake缓存结果。 <br>有关详细信息，请参见[此页面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
 
 ### SnowflakeCentOS {#snowflake-centos}
 
