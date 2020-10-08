@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 6%
@@ -71,9 +68,9 @@ ht-degree: 6%
 
 * 如果列表的地址无效，Adobe建议通过> >将其导入到隔离 **[!UICONTROL Administration]** 表 **[!UICONTROL Campaign Management]** 中 **[!UICONTROL Non deliverables Management]** 。 **[!UICONTROL Non deliverables and addresses]**
 
-* 在投放分析中，默认情况下将排除其地址被隔离的收件人:他们不是目标。 这样可加快投放速度，因为错误率对投放速度有显著的影响。可以隔离电子邮件地址，例如，当收件箱已满或地址不存在时。 [了解更多](#identifying-quarantined-addresses-for-a-delivery)
+* 在投放分析中，默认情况下将排除其地址被隔离的收件人:他们不是目标。 这样可加快投放速度，因为错误率对投放速度有显著的影响。可以隔离电子邮件地址，例如，当收件箱已满或地址不存在时。 [了解详情](#identifying-quarantined-addresses-for-a-delivery)
 
-* Adobe Campaign根据返回的错误类型管理错误地址。 有关更多信息，请参阅[此章节](../../delivery/using/understanding-quarantine-management.md)。
+* Adobe Campaign根据返回的错误类型管理错误地址。 如需详细信息，请参阅[此部分](../../delivery/using/understanding-quarantine-management.md)。
 
 
 * 如果无效地址率过高，某些互联网访问提供商会自动将电子邮件判断为垃圾邮件。因此，隔离允许您避免被这些提供商添加到阻止列表。
