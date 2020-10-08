@@ -9,28 +9,28 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '225'
+ht-degree: 2%
 
 ---
 
 
 # 执行聚合计算 {#performing-aggregate-computing}
 
-在此示例中，我们希望根据性别计算住在伦敦的收件人数。
+在这个例子中，我们想根据性别来计算伦敦收件人的数量。
 
 * 需要选择哪个表？
 
-   收件人表(**nms:recipient**)
+   收件人表(**nms:收件人**)
 
-* 应在输出列中选择哪些字段？
+* 输出列中应选择哪些字段？
 
-   主要关键字（含计数）和性别
+   主键（含数）和性别
 
-* 根据哪些条件筛选信息？
+* 信息过滤依据是什么条件？
 
    根据住在伦敦的收件人
 
@@ -47,11 +47,11 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
    >[!NOTE]
    >
-   >值区分大小写。 如果在条件中输入“伦敦”值时没有大写字母，收件人列表中包含带大写字母的“伦敦”一词，则查询将失败。
+   >值区分大小写。 如果输入“伦敦”值时没有大写字母，而收件人的列表中含有带大写字母的“伦敦”一词，则查询将失败。
 
 1. 在窗口 **[!UICONTROL Data formatting]** 中，单击 **[!UICONTROL Next]**:此示例不需要格式设置。
 1. 在预览窗口中，单击 **[!UICONTROL Launch data preview]**。
 
-   按性别分类的每个排序有三个不同的值：女 **性** 2人，男性 **1人，** 性别不明 **** 时0人。 在本例中，名单中有10名妇女、16名男子和2名性别不明的人。
+   按性别分类的每个排序有三个不同的值： **女** 2人， **男1人** , **性别** 不明时0人。 在本例中，列表包含10名妇女、16名男子和2名性别不详的人。
 
    ![](assets/query_editor_agregat_04.png)
