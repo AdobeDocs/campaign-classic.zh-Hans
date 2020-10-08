@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -34,7 +31,7 @@ SpamAssassin利用各种垃圾邮件检测技术，包括：
 * 基于DNS和模糊校验的垃圾邮件检测
 * 贝叶斯滤波
 * 外部项目
-* 块列表
+* 阻止列表
 * 在线数据库
 
 >[!NOTE]
@@ -49,7 +46,7 @@ SpamAssassin利用各种垃圾邮件检测技术，包括：
 
 有关创建和设计投放的详细信息，请参 [阅本节](../../delivery/using/about-email-channel.md)。
 
-1. 转到选 **[!UICONTROL Preview]** 项卡。
+1. 转到 **[!UICONTROL Preview]** 选项卡。
 1. 选择收件人以预览投放。
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
@@ -63,7 +60,7 @@ SpamAssassin利用各种垃圾邮件检测技术，包括：
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
 1. 单击警 **[!UICONTROL More...]** 告旁的链接。
-1. 选择选 **[!UICONTROL Anti-spam checking]** 项卡。
+1. 选择 **[!UICONTROL Anti-spam checking]** 选项卡。
 1. 转到部分 **[!UICONTROL Points / Rule / Description]** 以视图产生此风险的原因。
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
