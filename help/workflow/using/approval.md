@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: a0090c78-5873-446d-8d5f-b0f94ff5d373
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
@@ -29,7 +26,7 @@ ht-degree: 0%
 
 ## 任务分配 {#task-assignment}
 
-默认情况下，批准会分配给操作员组。 此组表示角色，如 “新闻稿内容组”或“新闻稿定位组”。 组中的每个操作员都可以回答，但只考虑第一个答复(多个批准的事件除外)。
+默认情况下，批准会分配给操作员组。 此组表示角色，如“新闻稿内容组”或“新闻稿定位组”。 组中的每个操作员都可以回答，但只考虑第一个答复(多个批准的事件除外)。
 
 如有必要，您可以将批准任务分配给单个运算符或由筛选器定义的一组运算符。
 
@@ -45,7 +42,7 @@ ht-degree: 0%
 
    ![](assets/s_advuser_validation_box_filter.png)
 
-在单次审批事件中，激活与操作者选择对应的过渡，完成任务: 其他运算符无法答复。
+在单次审批事件中，激活与操作者选择对应的过渡，完成任务:其他运算符无法答复。
 
 在多个批准的事件中，启用与每个操作者的选择对应的过渡。 任务在组的所有操作符都已回复或任务过期时完成。
 
@@ -55,7 +52,7 @@ ht-degree: 0%
 
 修改活动的标题或消息正文不会影响当前任务，但是，另一方面，修改可能的选择会直接影响当前任务，后者会自动继承新的选择列表。
 
-**可以** 从节点访问批准类型 **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** 任务: 运营商可以通过此视图直接访问批准表。
+**可以** 从节点访问批准类型 **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** 任务:运营商可以通过此视图直接访问批准表。
 
 ![](assets/s_advuser_validation_from_console.png)
 
@@ -65,7 +62,7 @@ ht-degree: 0%
 
 ![](assets/edit_validation.png)
 
-此 **[!UICONTROL Title]** 字段包含消息的标题： 这是发送的电子邮件的主题。 标题以及消息正文都是JavaScript模板，因此可以包含根据工作流的上下文计算的值。
+此 **[!UICONTROL Title]** 字段包含消息的标题：这是发送的电子邮件的主题。 标题以及消息正文都是JavaScript模板，因此可以包含根据工作流的上下文计算的值。
 
 编辑器的下半部分允许您定义可能答案的列表。 每个答案都对应一个过渡。 名称是内部标识符，标签是将在选择列表中显示的文本。
 
