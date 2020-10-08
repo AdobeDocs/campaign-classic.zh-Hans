@@ -1,7 +1,7 @@
 ---
-title: 限制PII视图
-seo-title: 限制PII视图
-description: 限制PII视图
+title: 限制 PII 视图
+seo-title: 限制 PII 视图
+description: 限制 PII 视图
 seo-description: null
 page-status-flag: never-activated
 uuid: 4dddc7f5-dac3-47b3-b3cb-92b47eb595fa
@@ -11,26 +11,26 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 550439c1-978c-414e-be5b-a9e1a202c4cd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 3%
 
 ---
 
 
-# 限制PII视图{#restricting-pii-view}
+# 限制 PII 视图{#restricting-pii-view}
 
 ## 概述 {#overview}
 
-一些客户需要营销用户才能访问数据记录，但不希望他们查看个人身份信息(PII)，如名字、姓或电子邮件地址。 Adobe Campaign提出了一种保护隐私、防止数据被常规营销活动运营商滥用的方法。
+一些客户需要市场营销用户才能访问数据记录，但不希望他们查看个人身份信息(PII)，如名字、姓或电子邮件地址。 Adobe Campaign提出了一种保护隐私和防止活动运营商滥用数据的方法。
 
 ## 实施 {#implementation}
 
-可以应用于任何元素或属性的新属性已添加到架构中，它补充了现有属性 **[!UICONTROL visibleIf]** 。 此属性为： **[!UICONTROL accessibleIf]** . 当包含与当前用户上下文相关的XTK表达式时，它可以利用或( **[!UICONTROL HasNamedRight]** 例 **[!UICONTROL $(login)]** 如)。
+可以应用于任何元素或属性的新属性已添加到模式中，它补充了现有属性 **[!UICONTROL visibleIf]** 。 此属性为： **[!UICONTROL accessibleIf]** . 当包含与当前用户上下文相关的XTK表达式时，它可以利 **[!UICONTROL HasNamedRight]** 用或 **[!UICONTROL $(login)]** （例如）。
 
-您可以找到以下显示了此用法的收件人架构扩展示例：
+您可以找到收件人模式扩展的示例，它在下面显示了此用法：
 
 ```
 <srcSchema desc="Recipient table (profiles" entitySchema="xtk:srcSchema" extendedSchema="nms:recipient"
@@ -47,23 +47,23 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 主要属性有：
 
-* **[!UICONTROL visibleIf]** :隐藏元数据中的字段，因此无法在架构视图、列选择或表达式构建器中访问它们。 但这不会隐藏任何数据，如果字段名称是在表达式中手动输入的，则值将显示出来。
-* **[!UICONTROL accessibleIf]** :从生成的查询中隐藏数据（用空值替换它）。 如果visibleIf为空，则其表达式与相同 **[!UICONTROL accessibleIf]** 。
+* **[!UICONTROL visibleIf]** :隐藏元数据中的字段，因此无法在模式视图、列选择或表达式生成器中访问这些字段。 但这不会隐藏任何数据，如果字段名称是在表达式中手动输入的，则值将显示出来。
+* **[!UICONTROL accessibleIf]** :隐藏数据（用空值替换它），使其免受结果查询。 如果visibleIf为空，则得到的表达式与 **[!UICONTROL accessibleIf]** 。
 
-下面是在Campaign中使用此属性的后果：
+以下是在活动中使用此属性的后果：
 
-* 数据不会使用控制台中的通用查询编辑器显示，
-* 数据将不会显示在概述列表和记录列表（控制台）中。
-* 在详细视图中，数据将变为只读。
+* 控制台中不会使用通用查询编辑器显示数据，
+* 列表在概述列表和记录（控制台）中不可见。
+* 数据将在详细视图中变为只读。
 * 数据只能在过滤器中使用（这意味着使用某些二分法策略，您仍可以猜测值）。
-* 使用受限字段构建的任何表达式也会受到限制：lower(@email)与@email一样具有辅助功能。
+* 使用受限字段构建的任何表达式也会受到限制：lower(@email)与@email一样可访问。
 * 在工作流中，您可以将受限列作为过渡的额外列添加到目标人群，但Adobe Campaign用户仍无法访问该列。
-* 当将目标群体存储在组（列表）中时，所存储字段的特性与数据源相同。
+* 在组(列表)中存储目标群体时，存储字段的特性与数据源相同。
 * 默认情况下，JS代码无法访问数据。
 
-## 建议 {#recommendations}
+## 建议{#recommendations}
 
-在每个分发中，电子邮件地址都会被复制到 **[!UICONTROL broadLog]** 和表中 **[!UICONTROL forecastLog]** :因此，这些字段也需要得到保护。
+在每个投放中，电子邮件地址都被复制到 **[!UICONTROL broadLog]** 和表中 **[!UICONTROL forecastLog]** :因此，这些字段也需要得到保护。
 
 以下是用于实现此功能的日志表扩展示例：
 
@@ -96,5 +96,5 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 >[!NOTE]
 >
->此限制适用于非技术用户：拥有相关权限的技术用户将能够检索数据。 因此，此方法不是100%安全。
+>此限制适用于非技术用户：拥有相关权限的技术用户将能够检索数据。 因此，此方法不是百分之百安全。
 
