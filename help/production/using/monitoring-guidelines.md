@@ -1,5 +1,5 @@
 ---
-title: 监控指南
+title: 监控准则
 description: 了解监控活动实例和流程的准则和最佳实践。
 page-status-flag: never-activated
 uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
@@ -9,19 +9,16 @@ audience: production
 content-type: reference
 topic-tags: introduction
 discoiquuid: 8b33e6af-15c3-4b30-8ad6-d76a1f33be21
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 
-# 监控指南 {#monitoring-guidelines}
+# 监控准则 {#monitoring-guidelines}
 
 ## 实例监视仪表板 {#instance-monitoring-dashboard}
 
