@@ -1,7 +1,7 @@
 ---
-title: 监视工作流执行
-seo-title: 监视工作流执行
-description: 监视工作流执行
+title: 监控工作流执行
+seo-title: 监控工作流执行
+description: 监控工作流执行
 seo-description: null
 page-status-flag: never-activated
 uuid: 4d215ff4-a61d-4294-8f15-17c612022577
@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2001'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 监视工作流执行 {#monitoring-workflow-execution}
+# 监控工作流执行 {#monitoring-workflow-execution}
 
 本节介绍如何监控工作流的执行。
 
@@ -61,7 +58,7 @@ ht-degree: 0%
    >
    >单击图背景以取消选择所有元素。
 
-* 仅视图链接到给定任务的消息。 为此，请选择选 **[!UICONTROL Tasks]** 项卡，然后在图中选择活动以限制列表。 多次单击任务以显示信息； 窗口中的最后一个选项卡包含日志。
+* 仅视图链接到给定任务的消息。 为此，请选择选 **[!UICONTROL Tasks]** 项卡，然后在图中选择活动以限制列表。 多次单击任务以显示信息；窗口中的最后一个选项卡包含日志。
 
    ![](assets/new-workflow-display-tasks-activity.png)
 
@@ -81,7 +78,7 @@ ht-degree: 0%
 
    ![](assets/s_user_segmentation_journal.png)
 
-   将显示所有活动消息： 活动执行以及警告或错误。
+   将显示所有活动消息：活动执行以及警告或错误。
 
 * 活动日志
 
@@ -91,7 +88,7 @@ ht-degree: 0%
 
       ![](assets/s_user_segmentation_show_logs.png)
 
-      图的下部显示两个选项卡： 日志和任务。
+      图的下部显示两个选项卡：日志和任务。
 
       在图中选择的活动充当日志和任务列表上的过滤器。
 
@@ -105,7 +102,7 @@ ht-degree: 0%
 
 ## 清除日志 {#purging-the-logs}
 
-工作流历史记录不会自动清除： 默认情况下，所有消息都保留。 可以通过菜单或单 **[!UICONTROL File > Actions]** 击列表上方工 **[!UICONTROL Actions]** 具栏中的按钮来清除历史记录。 Select **[!UICONTROL Purge history]**. 菜单中的可用选 **[!UICONTROL Actions]** 项在“操作”工具 [栏部分有详细](../../workflow/using/starting-a-workflow.md) 。
+工作流历史记录不会自动清除：默认情况下，所有消息都保留。 可以通过菜单或单 **[!UICONTROL File > Actions]** 击列表上方工 **[!UICONTROL Actions]** 具栏中的按钮来清除历史记录。 选择 **[!UICONTROL Purge history]**。菜单中的可用选 **[!UICONTROL Actions]** 项在“操作”工具 [栏部分有详细](../../workflow/using/starting-a-workflow.md) 。
 
 ![](assets/purge_historique.png)
 
@@ -131,7 +128,7 @@ ht-degree: 0%
 
 ![](assets/wf-properties_select-supervisors.png)
 
-通知内容在默认模板 **[!UICONTROL Workflow manager notification]** 中配置： 此模板会在工作流属 **[!UICONTROL Execution]** 性的选项卡中选中。 通知显示错误工作流的名称和相关任务。
+通知内容在默认模板 **[!UICONTROL Workflow manager notification]** 中配置：此模板会在工作流属 **[!UICONTROL Execution]** 性的选项卡中选中。 通知显示错误工作流的名称和相关任务。
 
 通知示例：
 
@@ -244,7 +241,7 @@ instance.vars.isRunning = false
 
 工作流使用大量占用空间的工作表，如果不进行维护，最终会减慢整个平台的速度。 有关数据库维护的详细信息，请参 [阅本节](../../production/using/tables-to-maintain.md) 。
 
-通过 **“管理** ”>“生产”>“技术工作流” **节点可访问的“清理”工作流** ，可删除过时的数据，以避免数据库呈指数级增长。 工作流会自动触发，无需用户干预。 请参阅此 [部分](../../production/using/database-cleanup-workflow.md)。
+通过 **“管理** ”>“生产”>“技术工作流” **节点可访问的“清理”工作流** ，可删除过时的数据，以避免数据库呈指数级增长。 工作流会自动触发，无需用户干预。 Refer to this [section](../../production/using/database-cleanup-workflow.md).
 
 您还可以创建特定技术工作流来清除不必要的数据占用空间。 请参阅本 [部分](../../production/using/application-objects.md) 和本 [页](#purging-the-logs)。
 
