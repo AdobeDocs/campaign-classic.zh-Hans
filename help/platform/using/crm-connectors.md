@@ -1,7 +1,7 @@
 ---
-title: CRM连接器
-seo-title: CRM连接器
-description: CRM连接器
+title: CRM 连接器
+seo-title: CRM 连接器
+description: CRM 连接器
 seo-description: null
 page-status-flag: never-activated
 uuid: ef3d88a1-b0fd-4790-b6e8-63fa339ef991
@@ -11,19 +11,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2541'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 
-# CRM连接器{#crm-connectors}
+# CRM 连接器{#crm-connectors}
 
 ## 关于CRM连接器 {#about-crm-connectors}
 
@@ -41,7 +38,7 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 下面列出的CRM可以集成到Adobe Campaign中。
 
-兼容性矩阵中详细介绍了 [支持的版本](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
+兼容性矩阵中详细介绍了 [支持的版本](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
 
 * **Salesforce.com**
 
@@ -130,7 +127,7 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
    为此，请单击链 **[!UICONTROL Synchronizing enumerations...]** 接并选择与CRMAdobe Campaign匹配的明细列表明细列表。
 
-   您可以将Adobe Campaign明细列表的所有值替换为CRM的值： 为此，请在列 **[!UICONTROL Yes]** 中选 **[!UICONTROL Replace]** 择。
+   您可以将Adobe Campaign明细列表的所有值替换为CRM的值：为此，请在列 **[!UICONTROL Yes]** 中选 **[!UICONTROL Replace]** 择。
 
    ![](assets/crm_connectors_sfdc_enum.png)
 
@@ -152,7 +149,7 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
    ![](assets/crm_connectors_ood_1.png)
 
-1. 打开配置向导： Adobe Campaign会自动显示Oracle数据模型的表。 选择要收集的表。
+1. 打开配置向导：Adobe Campaign会自动显示Oracle数据模型的表。 选择要收集的表。
 
    ![](assets/crm_connectors_ood_2.png)
 
@@ -192,19 +189,19 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 1. 选择部 **署类型**: **[!UICONTROL On-premise]**&#x200B;或 **[!UICONTROL Office 365]** , **[!UICONTROL Web API]**&#x200B;取决于要配置的连接器。
 
-   Adobe Campaign经典支持Dynamics 365 REST接口和OAuth协议进行身份验证。
+   Adobe Campaign Classic支持Dynamics 365 REST接口和OAuth协议进行身份验证。
 
    如果选择部 **[!UICONTROL WebAPI]** 署，则需要在Azure目录上注册应用程序并从Azure目 **录获取** clientId。 本页记录了 [此注册](https://msdn.microsoft.com/en-us/library/mt622431.aspx)。
 
    >[!NOTE]
    >
-   >Adobe Campaign经典不需要redirectURL参数。
+   >redirectURL参数不是Adobe Campaign Classic所必需的。
 
    ClientId **值与用户** 名／口令一起使用，以使用授权类型口令获取承载令牌。 这称为“资 **源所有者密码凭据授予**”。 有关详细信息，请参见[此页面](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/)。
 
    ![](assets/crm_connectors_msdynamics_01_3.png)
 
-   有关CRM版本兼容性的详细信息，请参 [阅兼容性表](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)。
+   有关CRM版本兼容性的详细信息，请参 [阅兼容性表](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
 
 1. 打开配置向导。 Adobe Campaign自动从Microsoft Dynamics数据模板检测表。
 
@@ -323,9 +320,9 @@ Adobe Campaign与CRM之间的同步通过专用工作流活动进行： [CRM连�
 
 激活选 **[!UICONTROL Automatic index]** 项可生成三个变量，这些变量可通过类型活动在同步工作流 **[!UICONTROL JavaScript code]** 中使用。 这些活动是：
 
-* **vars.crmOptionName**: 表示包含上次导入日期的选项的名称。
-* **vars.crmStartImport**: 表示上次开始恢复的日期（包括）。
-* **vars.crmEndDate**: 表示上次数据恢复的结束日期（已排除）。
+* **vars.crmOptionName**:表示包含上次导入日期的选项的名称。
+* **vars.crmStartImport**:表示上次开始恢复的日期（包括）。
+* **vars.crmEndDate**:表示上次数据恢复的结束日期（已排除）。
 
    >[!NOTE]
    >
@@ -344,7 +341,7 @@ Adobe Campaign与CRM之间的同步通过专用工作流活动进行： [CRM连�
 
 例如，以下过滤条件对于CRM导入无效，因为OR运算符与AND运算符位于同一级别：
 
-* OR运算符与AND运算符位于同一级别
+* OR运算符与AND运算符放在同一级别
 * 对文本字符串进行比较。
 
 ![](assets/crm_import_wrong_filter.png)
@@ -394,7 +391,7 @@ Adobe Campaign与CRM之间的同步通过专用工作流活动进行： [CRM连�
 
    >[!NOTE]
    >
-   >对于给定字段，如果CRM端未定义匹配项，则无法更新这些值： 它们直接插入到CRM中。
+   >对于给定字段，如果CRM端未定义匹配项，则无法更新这些值：它们直接插入到CRM中。
 
    如有必要，可通过列的下拉列表更改数据格 **[!UICONTROL Conversion]** 式。 可能的转换类型以数据格 [式详细介绍](#data-format)。
 
@@ -416,9 +413,9 @@ Adobe Campaign与CRM之间的同步通过专用工作流活动进行： [CRM连�
 
 其他可能的转换包括：
 
-* **[!UICONTROL Date only]**: 此模式将删除“日期+时间”类型字段。
-* **[!UICONTROL Without time offset]**: 此模式取消在默认模式下应用的时区管理。
-* **[!UICONTROL Copy/Paste]**: 此模式使用字符串等原始数据（无转换）。
+* **[!UICONTROL Date only]**:此模式将删除“日期+时间”类型字段。
+* **[!UICONTROL Without time offset]**:此模式取消在默认模式下应用的时区管理。
+* **[!UICONTROL Copy/Paste]**:此模式使用字符串等原始数据（无转换）。
 
 #### 错误处理 {#error-processing}
 
