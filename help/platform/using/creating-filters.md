@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 discoiquuid: 066e730b-2527-4257-b11f-2e73f746a8a5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6d63a43bdcf1c63b2ada240e7e15db8a5dfcfe11
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1980'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -114,7 +111,7 @@ Adobe Campaign允许您将过滤器应用于数据列表。
 
    默认筛选器字段显示在列表上方。
 
-1. 从下拉列表中选择筛选选项，或输入要应用的筛选条件(选择或输入条件的方法取决于字段的类型： 文本、枚举等。)
+1. 从下拉列表中选择筛选选项，或输入要应用的筛选条件(选择或输入条件的方法取决于字段的类型：文本、枚举等。)
 
    ![](assets/s_ncs_user_sort_fields.png)
 
@@ -185,7 +182,7 @@ Adobe Campaign允许您将过滤器应用于数据列表。
 高级过滤器可以使用功能； **具有函数的过滤器** ，通过表达式编辑器创建，该编辑器允许您使用数据库数据和高级函数创建公式。 要创建具有函数的过滤器，请重复创建高级过滤器步骤1、2和3，然后按如下步骤继续：
 
 1. 在字段选择窗口中，单击 **[!UICONTROL Advanced selection]**。
-1. 选择要使用的公式类型： 聚合、现有用户筛选器或表达式。
+1. 选择要使用的公式类型：聚合、现有用户筛选器或表达式。
 
    ![](assets/s_ncs_user_filter_formula_select.png)
 
@@ -200,7 +197,7 @@ Adobe Campaign允许您将过滤器应用于数据列表。
 
       ![](assets/s_ncs_user_create_exp_exple01.png)
 
-      它允许您选择数据库表中的字段，并为它们附加高级函数： 选择要在中使用的函数 **[!UICONTROL List of functions]**。 可用的功能在功能 [列表中详述](../../platform/using/defining-filter-conditions.md#list-of-functions)。 然后，选择与这些函数相关的字段，并单 **[!UICONTROL OK]** 击以批准表达式。
+      它允许您选择数据库表中的字段，并为它们附加高级函数：选择要在中使用的函数 **[!UICONTROL List of functions]**。 可用的功能在功能 [列表中详述](../../platform/using/defining-filter-conditions.md#list-of-functions)。 然后，选择与这些函数相关的字段，并单 **[!UICONTROL OK]** 击以批准表达式。
 
       >[!NOTE]
       >
@@ -210,7 +207,7 @@ Adobe Campaign允许您将过滤器应用于数据列表。
 
 过滤器特定于每个操作符，并且每次操作符清除其客户端控制台的缓存时都重新初始化。
 
-您可以通过保存高 **级过滤器** 来创建应用程序过滤器： 它可以通过在任何列表中右键单击或通过位于列表上 **[!UICONTROL Filters]** 方的按钮重新使用。
+您可以通过保存高 **级过滤器** 来创建应用程序过滤器：它可以通过在任何列表中右键单击或通过位于列表上 **[!UICONTROL Filters]** 方的按钮重新使用。
 
 这些过滤器还可以直接通过投放向导在目标选择阶段进行访问(有关创 [建投放的详](../../delivery/using/creating-an-email-delivery.md) 细信息，请参阅本节)。 要创建应用程序过滤器，您可以：
 
@@ -279,8 +276,8 @@ Adobe Campaign允许您将过滤器应用于数据列表。
    <td> 选择在过去Y个月中点击某个投放至少X次的收件人。<br /> </td> 
   </tr> 
   <tr> 
- <td> 块列表上的电子邮件地址<br /> </td> 
-    <td> 选择其电子邮件地址位于块列表中的收件人。<br/> </td>
+ <td> 阻止列表上的电子邮件地址<br /> </td> 
+    <td> 选择其电子邮件地址位于收件人上的阻止列表。<br/> </td>
   </tr> 
   <tr> 
    <td> 隔离的电子邮件地址<br /> </td> 
@@ -371,12 +368,12 @@ Adobe Campaign允许您将过滤器应用于数据列表。
 
 单击选 **[!UICONTROL Settings]** 项卡以访问以下选项：
 
-* **[!UICONTROL Default filter for the associated document type]**: 此选项允许您默认在排序相关列表的编辑器中建议使用此过滤器。
+* **[!UICONTROL Default filter for the associated document type]**:此选项允许您默认在排序相关列表的编辑器中建议使用此过滤器。
 
    例如，过滤器 **[!UICONTROL By name or login]** 将应用于运算符。 此选项处于选中状态，因此过滤器始终适用于所有操作符列表。
 
-* **[!UICONTROL Filter shared with other operators]**: 通过此选项，可使过滤器对当前数据库上的所有其他运算符可用。
-* **[!UICONTROL Use parameter entry form]**: 通过此选项，可定义在选择此筛选器时要在列表上方显示的筛选器字段。 这些字段允许您定义筛选器设置。 此表单必须通过按钮以XML格式 **[!UICONTROL Form]** 输入。 例如，预配置的筛 **[!UICONTROL Recipients who have opened]**&#x200B;选器(可从收件人列表中访问)会显示一个筛选器字段，通过该字段可以选择筛选器的目标投放。
+* **[!UICONTROL Filter shared with other operators]**:通过此选项，可使过滤器对当前数据库上的所有其他运算符可用。
+* **[!UICONTROL Use parameter entry form]**:通过此选项，可定义在选择此筛选器时要在列表上方显示的筛选器字段。 这些字段允许您定义筛选器设置。 此表单必须通过按钮以XML格式 **[!UICONTROL Form]** 输入。 例如，预配置的筛 **[!UICONTROL Recipients who have opened]**&#x200B;选器(可从收件人列表中访问)会显示一个筛选器字段，通过该字段可以选择筛选器的目标投放。
 
    按 **[!UICONTROL Preview]** 钮显示所选筛选器的结果。
 
