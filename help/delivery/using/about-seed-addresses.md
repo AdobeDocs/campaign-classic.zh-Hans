@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: b49acfd0-b601-4694-88e3-cc0a169cb866
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -54,7 +51,7 @@ ht-degree: 6%
 >对于直邮投放,提取文件格式必须符合以下限制：
 >
 >* 它不得使用该选项 **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**。
->* 如果提取了元素集合，则这些字段的种子地址值将为空，除非选 **[!UICONTROL Single row (expert user)]** 择了该选项。 有关更多信息，请参阅[此章节](../../platform/using/exporting-data.md#step-7---data-formatting)。
+>* 如果提取了元素集合，则这些字段的种子地址值将为空，除非选 **[!UICONTROL Single row (expert user)]** 择了该选项。 如需详细信息，请参阅[此部分](../../platform/using/exporting-data.md#step-7---data-formatting)。
 
 >
 
