@@ -1,7 +1,7 @@
 ---
-title: 创建新Web应用程序
-seo-title: 创建新Web应用程序
-description: 创建新Web应用程序
+title: 创建新 Web 应用程序
+seo-title: 创建新 Web 应用程序
+description: 创建新 Web 应用程序
 seo-description: null
 page-status-flag: never-activated
 uuid: 4e783bd5-222f-4d35-8df7-1e1b83587b5a
@@ -11,23 +11,20 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 84f9dbad-365f-405d-88a0-14171fbb805f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 12%
+ht-degree: 21%
 
 ---
 
 
-# 创建新Web应用程序{#creating-a-new-web-application}
+# 创建新 Web 应用程序{#creating-a-new-web-application}
 
 Web 应用程序类型在创建过程中被选中。
 
-转到活动 **选项卡** ，然后选择 **[!UICONTROL Web Applications]** 菜单。 单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮。选择要使用的Web 应用程序模板：
+转到活动 **选项卡** ，然后选择 **[!UICONTROL Web Applications]** 菜单。 单击 **[!UICONTROL Create]** 按钮。选择要使用的Web 应用程序模板：
 
 ![](assets/webapp_create_from_campaign.png)
 
@@ -39,7 +36,7 @@ Web 应用程序类型在创建过程中被选中。
 
 1. Web 窗体(+用户档案修改)
 
-   Web 窗体允许您使用输入或选择字段优惠网页： 用户输入的信息可以存储在Adobe Campaign库中。 For more on this, refer to [Web forms](../../web/using/about-web-forms.md).
+   Web 窗体允许您使用输入或选择字段优惠网页：用户输入的信息可以存储在Adobe Campaign库中。 For more on this, refer to [Web forms](../../web/using/about-web-forms.md).
 
 1. Web 应用程序
 
@@ -47,15 +44,15 @@ Web 应用程序类型在创建过程中被选中。
 
 1. 登陆页面
 
-   登陆页是HTML页，其内容在网站上可用，它使用户能够输入要存储在Adobe Campaign数据库用户档案中的信息。 此类页面的内容通常由专门的Web机构创建，然后导入Adobe Campaign进行发布、管理和跟进。 有关详细信息，请参见[此页面](../../web/using/creating-a-landing-page.md)。
+   登陆页是HTML页，其内容在网站上可用，并允许用户输入要存储在Adobe Campaign数据库用户档案中的信息。 此类页面的内容通常由专门的Web机构创建，然后导入Adobe Campaign进行发布、管理和跟进。 有关详细信息，请参见[此页面](../../web/using/creating-a-landing-page.md)。
 
 1. 调查
 
-   Adobe Campaign使您能够通过 **调查管理器** ，设计和管理在线调查并处理其结果： 动态字段创建、分数管理、导出答案和专用报告。 如需详细信息，请参阅[此部分](../../web/using/about-surveys.md)。
+   Adobe Campaign使您能够通过 **调查管理器** ，设计和管理在线调查并处理其结果：动态字段创建、分数管理、导出答案和专用报告。 如需详细信息，请参阅[此部分](../../web/using/about-surveys.md)。
 
    >[!CAUTION]
    >
-   >**调查管理器** 是可选的Adobe Campaign模块。 请检查您的许可协议。
+   >**调查管理器** 是可选的Adobe Campaign模块。 请核实您的许可协议。
 
 1. Facebook应用程序
 
@@ -63,6 +60,6 @@ Web 应用程序类型在创建过程中被选中。
 
    >[!CAUTION]
    >
-   >**社交营销** 是可选的Adobe Campaign模块。 请检查您的许可协议。
+   >**社交营销** 是可选的Adobe Campaign模块。 请核实您的许可协议。
 
 页面配置模式和可用配置对于多种Web 应用程序类型可以相同。 如需详细信息，请参阅[此部分](../../web/using/about-web-forms.md)。
