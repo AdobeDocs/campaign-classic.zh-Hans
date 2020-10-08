@@ -11,63 +11,63 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: ed4afa5e-c184-4c8e-a086-41d87b863190
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 1%
 
 ---
 
 
 # 配置{#configuration}
 
-本节面向负责配置响应管理的人员。 它假定了有关扩展架构、定义工作流和SQL编程的一定数量的知识。
+本节面向负责配置响应管理的人员。 它假定有关扩展模式、定义工作流和SQL编程的一定知识。
 
-这使您能够了解如何使用个人表来调整标准数据模型，使其符合Adobe Campaign外部的事务处理表的特定性质。 此人员表可以与Adobe Campaign中的可用人员表或其他表格保持一致
+这使您能够了解如何使标准数据模型适应与个人表Adobe Campaign外的事务处理表的特定性质。 此个人表可以与Adobe Campaign的可用个人表或不同的表重合
 
-测量假设由操作过程工作流( **[!UICONTROL operationMgt]** )启动。 每个假设表示以异步方式执行的单独进程（正在编辑、待定、已完成、失败等）由调度器控制，该调度器管理优先级约束、同时进程的数量限制、低活动页面和以频率自动执行。
+度量假设验证由操作流程工作流( **[!UICONTROL operationMgt]** )启动。 每个假设验证代表一个以执行状态（正在编辑、挂起、完成、失败等）异步执行的单独进程 由调度程序控制，该活动管理优先级约束、同时处理数量限制、低页以及频率自动执行。
 
-## 配置架构 {#configuring-schemas}
+## 配置模式 {#configuring-schemas}
 
 >[!CAUTION]
 >
->请勿修改应用程序的标准架构，而应使用架构扩展机制。 否则，在应用程序将来升级时，修改的架构将不会更新。 这可能导致在使用Adobe Campaign时出现故障。
+>请勿修改应用程序的标准模式，而应使用模式扩展机制。 否则，在应用程序将来升级时，将不更新修改的模式。 这可能导致在使用Adobe Campaign时出现故障。
 
-在使用反应模块之前，需要应用程序集成，以定义要测量的各种表（事务、交易详细信息）及其与交付、优惠和个人的关系。
+在使用反应模块之前，需要应用程序集成，以定义要测量的各种表（事务、事务详细信息）及其与投放、优惠和个人的关系。
 
-### 标准架构 {#standard-schemas}
+### 标准模式 {#standard-schemas}
 
-现成模式包含 **[!UICONTROL nms:remaMatch]** 反应日志表，即个体、假设和事务表之间的关系。 此模式将用作响应日志的最终目标表的继承模式。
+现成的模式包 **[!UICONTROL nms:remaMatch]** 含反应日志表，即个人、假设验证和事务表之间的关系。 此模式应用作反应日志最终目的表的继承模式。
 
-此 **[!UICONTROL nms:remaMatchRcp]** 架构也作为标准提供，它包含Adobe Campaign收件人的响应日志存储( **[!UICONTROL nms:recipient]** )。 为了使用，需要将其扩展以映射到事务表（包含购买等）。
+模式 **[!UICONTROL nms:remaMatchRcp]** 也作为标准，它包含Adobe Campaign收件人的反应日志存储( **[!UICONTROL nms:recipient]** )。 为了使用，需要将其扩展以映射到事务表（包含购买等）。
 
 ### 事务表和事务详细信息 {#transaction-tables-and-transaction-details}
 
 事务表必须包含指向个人的直接链接。
 
-您还可以添加包含事务详细信息的表。 这并不直接与个人相关。
+您还可以添加包含事务详细信息的表。 这不直接与个人相关。
 
-例如，如果我们以收款为例，则事务处理表会链接到联系人（收款表），而收款行表仅会链接到收款表（明细表）。 然后，您可以直接在接收行表与接收表链接的层配置假设。
+以收款为例，事务处理表链接到联系人（收款表），收款行表仅链接到收款表（明细表）。 然后，您可以直接在收款行表链接至收款表的层配置假设验证。
 
 >[!NOTE]
 >
->如果要保留描述假设中预期行为的接收标识符，则可以扩展nms:remaMatchRcp表模板以向其添加标识符（在本例中，不将ROI计算链接到这些字段）。
+>如果要保留描述假设验证中预期行为的接收标识符，可扩展nms:remaMatchRcp表模板以向其添加标识符（在这种情况下，没有将ROI计算链接到这些字段）。
 
-我们强烈建议添加活动日期。
+我们强烈建议添加事件日期。
 
-完成配置后，以下架构将显示不同表之间的连接：
+完成配置后，以下模式显示不同表之间的连接：
 
 ![](assets/response_data_model.png)
 
-### 使用Adobe Campaign收件人进行响应管理 {#response-management-with-adobe-campaign-recipients}
+### 利用Adobe Campaign收件人进行响应管理 {#response-management-with-adobe-campaign-recipients}
 
-在此示例中，我们将使用Adobe Campaign收件人表( **[!UICONTROL nms:recipient]** )在响应管理模块中集成购买表。
+在此示例中，我们将使用Adobe Campaign收件人表()在响应管理模块中集成购买表。 **[!UICONTROL nms:recipient]**
 
-对收件人上的响应日志表进 **[!UICONTROL nms:remaMatchRcp]** 行扩展，以添加指向购买表模式的链接。 在以下示例中，购买表称为 **demo:purchase**。
+收件人上的响应日志 **[!UICONTROL nms:remaMatchRcp]** 表经过扩展以添加指向购买表模式的链接。 在以下示例中，购买表称 **为demo:purchase**。
 
-1. 通过Adobe Campaign资源管理器，选择 **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**。
-1. 右键单击“收 **件人** ”，然后选 **[!UICONTROL Actions]** 择和 **[!UICONTROL Modify the options of the targeting dimensions]**。
+1. 通过Adobe Campaign浏览器，选择 **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**。
+1. 右键单击 **收件人** ，然后选 **[!UICONTROL Actions]** 择并 **[!UICONTROL Modify the options of the targeting dimensions]**。
 
    ![](assets/delivery_mapping1.png)
 
@@ -75,13 +75,13 @@ source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
 
    ![](assets/delivery_mapping2.png)
 
-1. 在类 **[!UICONTROL Response management]** 别中，确保选中 **[!UICONTROL Generate a storage schema for reactions]** 该框。
+1. 在类别 **[!UICONTROL Response management]** 中，确保选中 **[!UICONTROL Generate a storage schema for reactions]** 该框。
 
-   然后单 **[!UICONTROL Define additional fields...]** 击以选择相关的事务表，并将所需字段添加到nms:remaMatchRcp架构的扩展中。
+   然后单 **[!UICONTROL Define additional fields...]** 击以选择相关的事务表，并将所需字段添加到nms:remaMatchRcp模式的扩展。
 
    ![](assets/delivery_mapping3.png)
 
-创建的架构如下所示：
+创建的模式如下所示：
 
 ```
 <srcSchema _cs="Reactions (Recipients) (cus)" entitySchema="xtk:srcSchema" extendedSchema="nms:remaMatchRcp" 
@@ -105,15 +105,15 @@ name="remaMatchRcp" namespace="cus">
 </srcSchema>
 ```
 
-### 具有个性化收件人表的响应管理 {#response-management-with-a-personalized-recipient-table}
+### 通过个性化的收件人表进行响应管理 {#response-management-with-a-personalized-recipient-table}
 
-在此示例中，我们将使用除Adobe Campaign中提供的收件人表之外的其他人员表，在响应管理模块中集成购买表。
+在此示例中，我们将使用除Adobe Campaign中提供的收件人表之外的其他个人表，在响应管理模块中集成购买表。
 
-* 创建从架构派生的新响应日志 **[!UICONTROL nms:remaMatch]** 架构。
+* 创建从模式派生的新响应日志 **[!UICONTROL nms:remaMatch]** 模式。
 
-   由于个人表与Adobe Campaign收件人表不同，因此必须基于此架构创建响应日志的新架 **[!UICONTROL nms:remaMatch]** 构。 然后，填写它，并提供指向交付日志和购买表的链接。
+   由于个人表与Adobe Campaign收件人表不同，因此有必要根据模式创建响应日志的新模式 **[!UICONTROL nms:remaMatch]** 。 然后，使用指向投放日志和购买表的链接完成该操作。
 
-   在以下示例中，我们将使用 **demo:broadLogPers架构和** demo:purchase事务表 **** :
+   在以下示例中，我们将使 **用demo:broadLogPers** 模式和 **demo:purchase事务表** :
 
    ```
    <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
@@ -132,9 +132,9 @@ name="remaMatchRcp" namespace="cus">
    </srcSchema>
    ```
 
-* 修改架构中的假设 **[!UICONTROL nms:remaHypothesis]** 表单。
+* 在假设验证中修改模式表 **[!UICONTROL nms:remaHypothesis]** 单。
 
-   默认情况下，响应日志列表显示在收件人日志中。 因此，您必须修改假设表单才能查看在上一步中创建的新响应日志。
+   默认情况下，响应日志的列表显示在收件人日志中。 因此，您必须修改假设验证表单，以视图在上一步中创建的新响应日志。
 
    例如：
 
@@ -151,12 +151,12 @@ name="remaMatchRcp" namespace="cus">
 
 ## 管理指示器 {#managing-indicators}
 
-响应管理器模块附带预定义指示符列表。 但是，您可以添加其他个性化的衡量指标。
+响应管理器模块附带一列表预定义指示符。 但是，您可以添加其他个性化的衡量指标。
 
-为此，必须为每个新指示符插入两个字段来扩展假设表：
+为此，必须通过为每个新指示符插入两个字段来扩展假设验证表：
 
-* 第一个是目标人群，
-* 第二个是控制组。
+* 对目标来说，
+* 第二个对照组。
 
 例如：
 
