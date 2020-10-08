@@ -1,7 +1,7 @@
 ---
-title: 对数精度
-seo-title: 对数精度
-description: 对数精度
+title: 日志精度
+seo-title: 日志精度
+description: 日志精度
 seo-description: null
 page-status-flag: never-activated
 uuid: 8396bc4f-2954-40bb-b511-61802e60e123
@@ -11,28 +11,28 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: c6c39b7d-7bbd-4789-b1ea-b938153e9679
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 2%
 
 ---
 
 
-# 对数精度{#log-precision}
+# 日志精度{#log-precision}
 
 您可以将此过程应用于所有Adobe Campaign模块，以提高日志精度。
 
-它涉及重新启动具有更高级别日志的进程。
+它涉及使用更高级别的日志重新启动进程。
 
 >[!CAUTION]
 >
->此过程取消本模块中正在进行的服务。
+>此过程取消此模块上正在进行的服务。
 
-Adobe Campaign可以使用两个级别的日志：
+Adobe Campaign可以使用两个级别的日志操作：
 
-1. Verbose **模式** 是标准级别之后的第一级。 以下命令将其激活：
+1. Verbose **模式** 是标准级别之后的第一个级别。 以下命令将其激活：
 
    ```
    nlserver restart <MODULE_NAME> -verbose 
@@ -44,7 +44,7 @@ Adobe Campaign可以使用两个级别的日志：
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
-1. TraceFilter **模式** ，用于保存最大数量的日志。 它由以下命令激活：
+1. TraceFilter **模式** ，它允许您保存最多的日志。 它由以下命令激活：
 
    ```
    nlserver stop <MODULE_NAME>; nlserver <MODULE_NAME> -verbose -tracefilter:*
@@ -52,9 +52,9 @@ Adobe Campaign可以使用两个级别的日志：
 
    >[!NOTE]
    >
-   >如果您使用 **tracefilter:***，则激活所有日志类型：ncm, rdr, nms, jst，定时， wdbc, ldap,soap, xtk, xtkquery，会话， xtkwriter，网络，pop3, inmail\
-   最有用的日志类型有： **wdbc** （显示所有SQL查询）、 **soap** （显示所有SOAP调用）、 **ldap** （在身份验证后显示所有LDAP查询）、 **** xtkqueryCholding（显示所有querydef的列表）。\
-   可以单独使用它们(**例如，tracefilter:soap** 、wdbc)。 您还可以全部激活它们，并选择排除某些其他组件： **tracefilter:*,!soap**
+   >如果您使用 **tracefilter:***，则激活所有日志类型：ncm, rdr, nms, jst，时间， wdbc, ldap, soap, xtk, xtkquery，会话， xtkwriter，网络，pop3, inmail\
+   最有用的日志类型有： **wdbc** (显示所有SQL查询 **)、** soap **（显示所有SOAP调用）、ldap** (验证后显示所有LDAP查询)、 **xtkquery** (显示所有querydef的列表)。\
+   可以单独使用它们(**例如，tracefilter:soap** 、wdbc)。 您还可以全部激活它们，并选择排除某些其他组件： **-tracefilter:*,!soap**
 
    检查错误是否实际发生，然后以正常方式重新启动进程：
 
@@ -65,15 +65,15 @@ Adobe Campaign可以使用两个级别的日志：
 >[!CAUTION]
 这些命令的日志存储在模块的日志文件中。
 
-以下是特定于Web模块的示例。 其他模块如上所示操作。
+以下是特定于Web模块的示例。 其他模块如上所示运行。
 
-在发送此命令之前，请检查是否不会影响任何正在进行的作业。
+在发送此命令之前，请检查没有正在进行的作业会受到影响。
 
 ```
 nlserver pdump -who
 ```
 
-然后，在 **TraceFilter模式下关闭并重新启动模** 块。
+然后，在TraceFilter模式下关闭并重 **新启动** 模块。
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
@@ -86,10 +86,10 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 ```
 
 >[!NOTE]
-通过 **“跟踪** ”模式可保存日志。 在以上示例中，日志保存在 **var/`<instance-name>`/mta_debug.log和** var/default/web_debug.log **** 文件中。
+通过 **“跟踪** ”模式可保存日志。 在以上示例中，日志保存在var/ **/mta_debug.log`<instance-name>`和** var/default/web_debug.log **文件中** 。
 
 >[!CAUTION]
-在Windows中，请勿添加LD_PRELOAD选项。 以下命令足够：\
+在Windows中，不要添加LD_PRELOAD选项。 以下命令足够：\
 nlserver web -tomcat -verbose -tracefilter:*
 
 检查问题是否再次出现，然后重新启动模块：
