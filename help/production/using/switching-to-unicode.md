@@ -1,7 +1,7 @@
 ---
-title: 切换到Unicode
-seo-title: 切换到Unicode
-description: 切换到Unicode
+title: 切换到 Unicode
+seo-title: 切换到 Unicode
+description: 切换到 Unicode
 seo-description: null
 page-status-flag: never-activated
 uuid: 5f15b285-7377-453a-aa98-ca4cf14a4c80
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: 0f5399a8-860d-4a1b-86a9-9011b973346b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 9%
 
 ---
 
 
-# 切换到Unicode{#switching-to-unicode}
+# 切换到 Unicode{#switching-to-unicode}
 
 对于Linux/ **Postgre** SQL中的现有prod实例，切换到unicode的步骤如下：
 
@@ -44,13 +44,13 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
    createdb -E UNICODE mydatabase_unicode
    ```
 
-1. 恢复数据库：
+1. 还原数据库：
 
    ```
    psql mydatabase_unicode < mydatabase.sql
    ```
 
-1. 更新表示数据库为Unicode的选项：
+1. 更新指示数据库为Unicode的选项：
 
    ```
    psql mydatabase_unicode
@@ -65,7 +65,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
    vi config-prod.xml
    ```
 
-   在与数 **据库标识符** (databaseId)相关的值前添加u **字符**:
+   在与数 **据库** 标识符(databaseId)相关的值前添加&#x200B;**u字符**:
 
    ```
    <web>
@@ -102,6 +102,6 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 1. 确认交换机。 为此，请通过Adobe Campaign控制台进行连接，并：
 
-   * 检查数据显示是否正确，尤其是突出显示的字符：
-   * 启动交付并检查跟踪检索是否有效。
+   * 检查数据是否正确显示，特别是突出显示的字符：
+   * 启动投放并检查跟踪检索是否有效。
 
