@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c804745ae58a9bded885ac5aef32f019f43e82be
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 7%
@@ -74,7 +71,7 @@ ht-degree: 7%
 
 ### 镜像页面
 
-始终包含镜像页面链接。 首选职位是电子邮件的顶部。 [了解更多](../../delivery/using/sending-messages.md#generating-the-mirror-page)
+始终包含镜像页面链接。 首选职位是电子邮件的顶部。 [了解详情](../../delivery/using/sending-messages.md#generating-the-mirror-page)
 
 ### 退订链接
 
@@ -117,11 +114,11 @@ ht-degree: 7%
 
 要避免常见格式错误，请检查以下元素：
 
-* 更正日 **期格式**:Adobe Campaign为JavaScript模板和XSL样式表提供日期格式化功能。 [了解更多](../../delivery/using/formatting.md#date-display)
+* 更正日 **期格式**:Adobe Campaign为JavaScript模板和XSL样式表提供日期格式化功能。 [了解详情](../../delivery/using/formatting.md#date-display)
 
 * 在电子邮件 **中使用** 授权字符：电子邮件地址的有效字符列表在“XtkEmail_Characters”选项中定义。 了解如何访问本节 [中的活动选项](../../installation/using/configuring-campaign-options.md)。 要正确处理特殊字符，需要在Unicode中安装Adobe Campaign。
 
-* 电子邮件身 **份验证配置**:确保电子邮件标头包含DKIM签名。 DKIM（域密钥标识邮件）身份验证允许接收电子邮件服务器验证消息确实是由其声称其发送消息的个人或实体发送的，以及消息内容在最初发送（和DKIM“签名”）到接收时间之间是否发生了更改。 此标准通常使用发件人或发件人标题中的域。 有关更多信息，请参阅[此章节](../../delivery/using/technical-recommendations.md#dkim)。
+* 电子邮件身 **份验证配置**:确保电子邮件标头包含DKIM签名。 DKIM（域密钥标识邮件）身份验证允许接收电子邮件服务器验证消息确实是由其声称其发送消息的个人或实体发送的，以及消息内容在最初发送（和DKIM“签名”）到接收时间之间是否发生了更改。 此标准通常使用发件人或发件人标题中的域。 如需详细信息，请参阅[此部分](../../delivery/using/technical-recommendations.md#dkim)。
 
 ### 响应式电子邮件设计
 
@@ -155,9 +152,9 @@ ht-degree: 7%
 
 要从外部访问，链接到活动的电子邮件和公共资源中使用的图像必须存在于可从外部访问的服务器上。
 
-* 您可以检查实例配置是否启用公共资源管理。 [了解更多](../../installation/using/deploying-an-instance.md#managing-public-resources)
+* 您可以检查实例配置是否启用公共资源管理。 [了解详情](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* 在该投放向导中，您可以导入包含图像的HTML页面，或直接使用HTML编辑器通过图标插入 **[!UICONTROL Image]** 图像。 [了解更多](../../delivery/using/defining-the-email-content.md#adding-images)
+* 在该投放向导中，您可以导入包含图像的HTML页面，或直接使用HTML编辑器通过图标插入 **[!UICONTROL Image]** 图像。 [了解详情](../../delivery/using/defining-the-email-content.md#adding-images)
 
 * 如果未显示图像，请检查这些图像是否在服务器上可用。 为此，请单击投放中的“源”选项卡。 在Web浏览器中查找图像并复制粘贴每个图像的URL。 如果未显示图像，请与IT管理员或提供投放内容的第三方供应商联系。
 
@@ -165,6 +162,6 @@ ht-degree: 7%
 
 Adobe建议预览您的消息，检查其个性化以及收件人将如何看到您的投放。
 
-* 在投放向导中， **[!UICONTROL Preview]** 通过子选项卡可以视图收件人的每个内容的呈现。 个性化字段和内容的条件元素被替换为所选用户档案的相应信息。 [了解更多](../../delivery/using/defining-the-email-content.md#message-content)
+* 在投放向导中， **[!UICONTROL Preview]** 通过子选项卡可以视图收件人的每个内容的呈现。 个性化字段和内容的条件元素被替换为所选用户档案的相应信息。 [了解详情](../../delivery/using/defining-the-email-content.md#message-content)
 
-* 在每个预览期间执行自动防垃圾邮件检查。 在子选 **[!UICONTROL Preview]** 项卡中，检查SpamAssassin [垃圾邮件](../../delivery/using/spamassassin.md) 评分。  单击 **[!UICONTROL More...]** 以进一步了解警告。  在执行此操作之前，请确保在Adobe Campaign应用程序服务器上正确安装和配置了SpamAssassin。 [了解更多](../../installation/using/configuring-spamassassin.md)
+* 在每个预览期间执行自动防垃圾邮件检查。 在子选 **[!UICONTROL Preview]** 项卡中，检查SpamAssassin [垃圾邮件](../../delivery/using/spamassassin.md) 评分。  单击 **[!UICONTROL More...]** 以进一步了解警告。  在执行此操作之前，请确保在Adobe Campaign应用程序服务器上正确安装和配置了SpamAssassin。 [了解详情](../../installation/using/configuring-spamassassin.md)
