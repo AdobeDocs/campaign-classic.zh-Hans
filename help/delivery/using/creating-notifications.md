@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 345af5c2-c852-4086-8ed0-ff3e7e402e04
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c830d40cef836533c5104901d03a07e7cf96d3d6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -82,7 +79,7 @@ ht-degree: 1%
    >
    >在创建服务时，音效必须包含在应用程序中并进行定义。 请参阅配 [置iOS外部帐户](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios)。
 
-1. 在字 **[!UICONTROL Application variables]** 段中，输入每个变量的值。 应用程序变量允许您定义通知行为： 例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
+1. 在字 **[!UICONTROL Application variables]** 段中，输入每个变量的值。 应用程序变量允许您定义通知行为：例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
 
    >[!NOTE]
    >
@@ -100,7 +97,7 @@ ht-degree: 1%
 
 要发送验证和发送最终投放，请使用与电子邮件投放相同的流程。
 
-发送消息后，您可以监视和跟踪投放。 有关此内容的详细信息，请参阅以下部分：
+发送消息后，您可以监视和跟踪投放。 有关更多信息，请参阅一下章节。
 
 * [推送通知隔离](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
 * [监控投放](../../delivery/using/monitoring-a-delivery.md)
@@ -126,7 +123,7 @@ ht-degree: 1%
 
 1. 单击图 **[!UICONTROL Insert emoticon]** 标将表情图标插入推送通知。 要自定义表情图标列表，请参阅自 [定义表情图标列表](../../delivery/using/defining-interactive-content.md)
 
-1. 在字 **[!UICONTROL Application variables]** 段中，输入每个变量的值。 应用程序变量允许您定义通知行为： 例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
+1. 在字 **[!UICONTROL Application variables]** 段中，输入每个变量的值。 应用程序变量允许您定义通知行为：例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
 
    >[!NOTE]
    >
@@ -143,7 +140,7 @@ ht-degree: 1%
 * [验证投放](../../delivery/using/steps-validating-the-delivery.md)
 * [发送投放](../../delivery/using/steps-sending-the-delivery.md)
 
-发送消息后，您可以监视和跟踪投放。 有关此内容的详细信息，请参阅以下部分：
+发送消息后，您可以监视和跟踪投放。 有关更多信息，请参阅一下章节。
 
 * [推送通知隔离](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
 * [监控投放](../../delivery/using/monitoring-a-delivery.md)
