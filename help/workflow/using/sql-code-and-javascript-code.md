@@ -1,7 +1,7 @@
 ---
-title: SQL代码和JavaScript代码
-seo-title: SQL代码和JavaScript代码
-description: SQL代码和JavaScript代码
+title: SQL 代码和 JavaScript 代码
+seo-title: SQL 代码和 JavaScript 代码
+description: SQL 代码和 JavaScript 代码
 seo-description: null
 page-status-flag: never-activated
 uuid: 20a39bbf-c6b0-4697-97b4-c07609cfb048
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 1afa75c2-7377-4d03-9105-11bcc9e3206c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 26ba86073e4f1569bf05a7d8aa864ca87baed3ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '201'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
 
-# SQL代码和JavaScript代码{#sql-code-and-javascript-code}
+# SQL 代码和 JavaScript 代码{#sql-code-and-javascript-code}
 
 ## SQL代码 {#sql-code}
 
@@ -53,14 +50,14 @@ ht-degree: 0%
 
    ![](assets/javascript_code.png)
 
-   * **[!UICONTROL Script]**: 编辑器的中心区域包含要执行的脚本。
-   * **[!UICONTROL Processing errors]**: 请参阅处 [理错误](../../workflow/using/monitoring-workflow-execution.md#processing-errors)。
+   * **[!UICONTROL Script]**:编辑器的中心区域包含要执行的脚本。
+   * **[!UICONTROL Processing errors]**:请参阅处 [理错误](../../workflow/using/monitoring-workflow-execution.md#processing-errors)。
 
 * **[!UICONTROL Advanced JavaScript code]**
 
    ![](assets/advanced_javascript_code.png)
 
-   * **[!UICONTROL First call]**: 编辑器的第一个区域包含在第一次调用期间要执行的脚本。
-   * **[!UICONTROL Next calls]**: 编辑器的第二个区域包含在下次调用期间执行的脚本。
-   * **[!UICONTROL Transitions]**: 您可以定义多个活动输出过渡。
-   * **[!UICONTROL Schedule]**: 通 **[!UICONTROL Schedule]** 过选项卡可计划何时触发活动。
+   * **[!UICONTROL First call]**:编辑器的第一个区域包含在第一次调用期间要执行的脚本。
+   * **[!UICONTROL Next calls]**:编辑器的第二个区域包含在下次调用期间执行的脚本。
+   * **[!UICONTROL Transitions]**:您可以定义多个活动输出过渡。
+   * **[!UICONTROL Schedule]**:通 **[!UICONTROL Schedule]** 过选项卡可计划何时触发活动。
