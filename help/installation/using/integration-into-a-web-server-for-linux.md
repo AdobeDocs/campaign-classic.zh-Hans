@@ -1,7 +1,7 @@
 ---
-title: 集成到Linux的Web服务器
-seo-title: 集成到Linux的Web服务器
-description: 集成到Linux的Web服务器
+title: 集成到 Linux 版的 Web 服务器
+seo-title: 集成到 Linux 版的 Web 服务器
+description: 集成到 Linux 版的 Web 服务器
 seo-description: null
 page-status-flag: never-activated
 uuid: 7b18d176-4458-46a8-8da4-3621f90c6b13
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 752ba848-aee9-4bb0-b2c5-490f3124f74e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4fbc576ba65c44d91ac87ea2967fac3b0a88a040
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 7%
 
 ---
 
 
-# 集成到Linux的Web服务器{#integration-into-a-web-server-for-linux}
+# 集成到 Linux 版的 Web 服务器{#integration-into-a-web-server-for-linux}
 
 Adobe Campaign包括Apache Tomcat，它通过HTTP（和SOAP）充当应用程序服务器中的入口点。
 
