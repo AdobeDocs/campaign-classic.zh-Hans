@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 营销活动模板 {#campaign-templates}
+# Marketing Campaign templates {#campaign-templates}
 
 活动模板集中在节 **[!UICONTROL Resources > Templates > Campaign templates]** 点中。 默认模板将作为标准提供。 它允许您使用所有可用模块(活动、任务、种子地址等)创建新的Adobe Campaign，但提供的模块取决于您的权限和文档平台的配置。
 
@@ -143,7 +140,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_op_template_activate_5.png)
 
-   启用此模块后，将向活动的高级设置添加一个选项卡以定义进程执行顺序。
+   启用此模块后，将在活动的高级设置中添加一个选项卡以定义进程执行顺序。
 
    ![](assets/s_ncs_user_op_template_activate_5a.png)
 
