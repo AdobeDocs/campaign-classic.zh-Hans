@@ -11,23 +11,23 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '71'
+ht-degree: 11%
 
 ---
 
 
 # 累积报告 {#cumulative-reports}
 
-您可以显示有关提交的累积报表。 为此，请选择要比较的提交以获取这些提交的报表列表。
+可显示累计的投放报告。 为此，请选择要比较的投放，以获取这些投放的报告列表。
 
 ![](assets/s_ncs_user_report_compare_tab.png)
 
-要从列表中选择不相邻的提交，请在进行选择时按住CTRL键。
+要从投放中选择非相邻列表，请在进行选择时按住CTRL键。
 
-要选择保存在其他文件夹中的提交，请单 **[!UICONTROL Display sub-levels]** 击（可通过工具栏访问）。 然后，它们将显示在同一列表中。
+要选择保存在其他文件夹中的投放，请 **[!UICONTROL Display sub-levels]** 单击（可通过工具栏访问）。 然后，它们将以同一列表显示。
 
 ![](assets/s_ncs_user_display_children_icon.png)
