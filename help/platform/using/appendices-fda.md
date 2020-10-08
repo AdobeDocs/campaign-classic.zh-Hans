@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 0%
@@ -203,7 +200,7 @@ To learn more on driver configuration, refer to this [section](../../platform/us
 如果测试连接时出现以 **下错误TIM-030008日期“2”:缺少字符(iRc=-53)** ，请确保正确安装ODBC驱动程序，并为活动服务器设置LD_LIBRARY_PATH(Linux)/PATH(Windows)。
 
 错误 **ODB-240000 ODBC错误：[找不到][ODBC Driver Manager]Microsoft数据源名称，未指定默认驱动程序。** 如果使用16.X驱动程序，则出现在Windows中。 Adobe Campaign希望在odbcinst.ini中将teradata命名为“{teradata}”。
-如果您有18.10Adobe Campaign服务器版本，则可在外部帐户选项中添加ODBCDriverName=&quot;Teradata数据库ODBC驱动程序16.10&quot;。 版本号可以更改，可以通过运行odbcad32.exe并访问“驱动程序”选项卡找到确切名称。
+如果您有18.10Adobe Campaign服务器版本，可在外部帐户选项中添加ODBCDriverName=&quot;Teradata数据库ODBC驱动程序16.10&quot;。 版本号可以更改，可以通过运行odbcad32.exe并访问“驱动程序”选项卡找到确切名称。
 对于低于18.10的版本，您必须将驱动程序安装创建的odbcinst.ini的Teradata部分复制到名为Teradata的新部分，在这种情况下，可以使用regedit。
 
 如果您的基数为latin1，则必须在选项中添加APICharSize=1。
