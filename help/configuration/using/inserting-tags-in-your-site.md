@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 57988b00-62cc-43d3-a2eb-bfed5bff7dc1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 6%
 
 ---
 
@@ -24,11 +24,11 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ## 简单方法 {#simple-method}
 
-此方法包括通过在要跟踪的网页的HTML源代码中插入 **`<img>`** HTML标签，向重定向服务器发送HTTP调用。
+此方法包括通过在要跟踪的网页的HTML源代码中 **`<img>`** 插入HTML标记，向重定向服务器发送HTTP调用。
 
 >[!IMPORTANT]
 >
->此方法使用Web浏览器发送的Cookie来标识收件人，并且不是100%可靠。
+>此方法使用Web浏览器发送的Cookie识别收件人，且不是100%可靠。
 
 **示例**:
 
@@ -36,19 +36,19 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 <img height='0' width='0' alt='' src='https://localhost/r/12343?tagid=home'
 ```
 
-所插入的标签与重定向服务器联系。
+插入的标签与重定向服务器联系。
 
 ![](assets/d_ncs_integration_webtracking_structure2.png)
 
-在控制台中定义要跟踪的页面时，可以生成示例Web跟踪标记，以将其复制并粘贴到网页的源代码中。
+在控制台中定义要跟踪的页面时，可以生成一个示例Web跟踪标签，以复制并粘贴到网页的源代码中。
 
-但是，在使用TRANSACTION类型标记时，必须使用JavaScript修改示例标记，以插入事务信息（数量、项目数）和扩展架构定义的任何信息。
+但是，在使用TRANSACTION类型标记时，必须使用JavaScript修改示例标记，以插入事务信息（金额、项数）和扩展模式定义的任何信息。
 
 ### 静态插入标记 {#static-insertion-of-tags}
 
 要执行静态标记插入，只需将控制台生成或手动构建的标记复制并粘贴到网页源中。
 
-**示例**:在显示表单的页面上插入Web跟踪标记。
+**示例**:在显示表单的页面上插入Web跟踪标签。
 
 ```
 <html>
@@ -70,7 +70,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 </html>
 ```
 
-在确认页面(“amount.md”)中插入TRANSACTION类型的Web跟踪标记。
+在确认页面(“amount.md”)中插入TRANSACTION类型的Web跟踪标签。
 
 ```
 <html>
@@ -94,9 +94,9 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ### 动态生成Web跟踪标签 {#dynamic-generation-of-web-tracking-tags}
 
-动态生成网页时，可在页面生成时添加网络跟踪标签。
+动态生成网页时，可在页面生成时添加网页跟踪标签。
 
-**示例**:Web跟踪已添加到JSP。
+**示例**:Web 跟踪添加到JSP。
 
 ```
 <%@page import="java.util.Random" %>
@@ -133,15 +133,15 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 如果您希望控制发送到重定向服务器的信息，最可靠的方法是使用页面生成语言自行同步执行HTTP查询。
 
-您构建的URL必须遵守 [Web跟踪标记中定义的语法规则：定义](../../configuration/using/web-tracking-tag--definition.md)。
+您构造的URL必须遵守在Web 跟踪标记中定义的语法 [规则：定义](../../configuration/using/web-tracking-tag--definition.md)。
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
 >[!NOTE]
 >
->重定向和Web跟踪使用cookie，并且执行同步HTTP调用的Web服务器必须与重定向服务器位于同一域中。 各种HTTP交换必须传达“id”、“uuid”和“uuid230”cookie。
+>重定向和Web跟踪使用cookie，执行同步HTTP调用的Web服务器与重定向服务器位于同一域中非常重要。 各种HTTP交换必须传达“id”、“uuid”和“uuid230”cookie。
 
-**示例**:在Java中动态生成，并使用收件人的帐号进行身份验证。
+**示例**:在Java中动态生成，使用收件人的帐号进行身份验证。
 
 ```
 [...]
