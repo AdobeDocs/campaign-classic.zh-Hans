@@ -9,11 +9,8 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 58%
@@ -90,7 +87,7 @@ ht-degree: 58%
 
    如果端口未打开，请确保打开侧面的传出联机，然后重试。如果仍遇到连接问题，请与 Adobe 支持团队分享该命令的输出。
 
-1. 检查您试图从中启动SFTP连接的公共IP是否是您提供给Adobe支持允许列表的IP。
+1. 检查您尝试从中启动SFTP连接的公共IP是否是您提供给Adobe支持允许列表的IP。
 1. 如果您使用基于密码的身份验证，则您的密码可能已过期（密码的有效期为90天）。 因此，我们强烈建议使用基于密钥的身份验证(请参 [阅SFTP服务器最佳实践](#sftp-server-best-practices))。
 1. 如果您使用的是基于密钥的身份验证，请检查您使用的密钥是否与提供给 Adobe 支持团队以用于实例配置的密钥相同。
 1. 如果您使用的是 FileZilla 或类似的 FTP 工具，请在支持票证中提供联机日志详细信息。
