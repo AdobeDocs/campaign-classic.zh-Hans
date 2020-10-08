@@ -11,19 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2956'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 营销活动投放 {#marketing-campaign-deliveries}
+# Marketing campaign deliveries {#marketing-campaign-deliveries}
 
 投放可以通过活动仪表板、活动工作流或直接通过投放概述创建。
 
@@ -47,7 +44,7 @@ ht-degree: 0%
 
 * 主目标。 有关此问题的详细信息，请 [参阅在工作流中构建主目标](#building-the-main-target-in-a-workflow)[和选择目标填充](#selecting-the-target-population)。
 * 对照组。 有关此内容的详细信息，请参 [阅定义对照组](#defining-a-control-group)。
-* 种子地址。 有关更多信息，请参阅[此章节](../../delivery/using/about-seed-addresses.md)。
+* 种子地址。 如需详细信息，请参阅[此部分](../../delivery/using/about-seed-addresses.md)。
 
 其中一些信息是从模板继承的。
 
@@ -83,12 +80,12 @@ ht-degree: 0%
 
 ### 如何在活动中创建电子邮件 {#create-email-video}
 
-此视频介绍如何在Adobe Campaign Classic创建活动和电子邮件。
+此视频介绍如何在 Adobe Campaign Classic 中创建活动和电子邮件。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 
-#### Creating a targeting workflow {#creating-a-targeting-workflow}
+#### 创建定位工作流 {#creating-a-targeting-workflow}
 
 可以通过工作流中图形序列中的过滤条件组合来创建定位。 您可以创建根据您的需求定位的人口和子人口。 要显示工作流编辑器，请单击 **[!UICONTROL Targeting and workflows]** 活动仪表板中的选项卡。
 
@@ -208,7 +205,7 @@ ht-degree: 0%
 
    ![](assets/s_user_segmentation_stop_unconditional.png)
 
-### 定义对照组 {#defining-a-control-group}
+### Defining a control group {#defining-a-control-group}
 
 对照组是不接受投放的人；它通过与已接收投放的目标群体的行为进行比较来跟踪活动后行为和投放影响。
 
@@ -257,8 +254,8 @@ ht-degree: 0%
 
 要提取对照组，请为活动或投放启用对照组，然后选择以下选项之一： **[!UICONTROL Activate random sampling]** 或 **[!UICONTROL Keep only the first records after sorting]**&#x200B;者
 
-* **[!UICONTROL Activate random sampling]** :此选项将随机采样应用于目标群体中的收件人。 如果您随后将阈值设置为100，则对照组将由100个从目标人群中随机选择的收件人组成。 随机采样取决于数据库引擎。
-* **[!UICONTROL Keep only the first records after sorting]** :此选项允许您根据一个或多个排序顺序定义限制。 如果选择字 **[!UICONTROL Age]** 段作为排序标准，然后将100定义为阈值，则对照组将由100个最年轻的收件人组成。 例如，定义一个包含购买量很少的对照组或频繁购买的收件人的收件人，并将其行为与联系的收件人进行比较，这可能会很有意思。
+* **[!UICONTROL Activate random sampling]** :此选项将随机采样应用于目标群体中的收件人。 如果您随后将阈值设置为100，则对照组将由从目标人群中随机选择的100个收件人组成。 随机采样取决于数据库引擎。
+* **[!UICONTROL Keep only the first records after sorting]**：通过此选项可根据一个或多个排序顺序定义限制。如果选择字 **[!UICONTROL Age]** 段作为排序标准，然后将100定义为阈值，则对照组将由100个最年轻的收件人组成。 例如，定义一个包含购买量很少的对照组或频繁购买的收件人的收件人，并将其行为与联系的收件人进行比较，这可能会很有意思。
 
 单 **[!UICONTROL Next]** 击以定义排序顺序（如有必要）并选择收件人限制模式。
 
@@ -266,7 +263,7 @@ ht-degree: 0%
 
 此配置等效于工作流中的共享活动，它允许您将目标分解为子集。 对照组是这些子集之一。 Refer to the [this section](../../workflow/using/architecture.md) for more information.
 
-### 添加对照组 {#adding-a-population}
+### 添加控制组 {#adding-a-population}
 
 您可以定义要用作对照组的新人口。 此群体可以来自一组收件人，也可以通过特定查询创建。
 
@@ -300,7 +297,7 @@ ht-degree: 0%
 
 ### 启动脱机投放 {#starting-an-offline-delivery}
 
-一旦所有批准都获得批准，投放状态将变为 **[!UICONTROL Pending extraction]**。 提取文件通过特殊工作流创建，在默认配置中，当直接邮件投放挂起提取时，该工作流会自动开始。 进程进行中时，该进程会显示在仪表板中，并可通过其链接进行编辑。
+一旦所有批准都获得批准，投放状态将变为 **[!UICONTROL Pending extraction]**。 提取文件通过特殊工作流创建，在默认配置中，当直接邮件投放挂起提取时，该工作流会自动开始。 进程进行中时，该进程将显示在仪表板中，并可通过其链接进行编辑。
 
 >[!NOTE]
 >
@@ -373,7 +370,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您使用MRM，还可以管理可供多个参加者协作工作的营销资源库。 请参阅 [管理营销资源](../../campaign/using/managing-marketing-resources.md)。
+>如果您使用MRM，还可以管理可供多个参加者协作工作的营销资源库。 See [Managing marketing resources](../../campaign/using/managing-marketing-resources.md).
 
 ### 添加文档 {#adding-documents}
 
