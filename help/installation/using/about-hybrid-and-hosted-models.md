@@ -11,19 +11,19 @@ audience: installation
 content-type: reference
 topic-tags: hybrid-and-hosted-models
 discoiquuid: cf6dd02f-f493-4a83-ba77-b4544f63cab0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 26%
 
 ---
 
 
 # 关于混合和托管模型{#about-hybrid-and-hosted-models}
 
-如果您有托管或混合托管模型，则无需阅读本文档的全部内容。 主要安装和配置步骤由Adobe执行。 在本节中，我们重新分组了您需要了解的信息，这些信息是您拥有的托管模式还是混合托管模式。
+如果您有托管或混合托管模型，则无需阅读本文档全文。 主要安装和配置步骤由Adobe执行。 在本节中，我们重新分组了您需要了解的信息，这些信息是托管的还是混合的托管模型。
 
-本节介绍了不同的托管模 [型](../../installation/using/hosting-models.md)。
+本节介绍不同的托管模 [型](../../installation/using/hosting-models.md)。
 
-要进一步了解部署模式之间的主要差异，请参阅 [本文](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)。
+要进一步了解部署模式之间的主要差异，请参 [阅本文](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)。
