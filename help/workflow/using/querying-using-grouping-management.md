@@ -9,14 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f99e3a4f69cb2b0122f2f6957d419d6b95ad54b1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -55,7 +52,7 @@ ht-degree: 0%
 
    ![](assets/query_editor_nveau_70.png)
 
-1. 在中 **[!UICONTROL Data filtering]**，选择 **[!UICONTROL Filtering conditions]**。 转到窗 **[!UICONTROL Target elements]** 口并单击 **[!UICONTROL Next]**。
+1. 在 **[!UICONTROL Data filtering]** 中，选择 **[!UICONTROL Filtering conditions]**。转到窗 **[!UICONTROL Target elements]** 口并单击 **[!UICONTROL Next]**。
 1. 在窗 **[!UICONTROL Data grouping]** 口中，单击 **[!UICONTROL Email domain]** 以选择 **[!UICONTROL Add]**。
 
    此数据分组窗口仅在选中() **[!UICONTROL Handle groupings (GROUP BY + HAVING]**&#x200B;框时显示。
@@ -64,11 +61,11 @@ ht-degree: 0%
 
 1. 在窗口 **[!UICONTROL Grouping condition]** 中，指示主密钥计数大于30，因为我们只希望将目标电子邮件域的数目设置为超过30次以返回结果。
 
-   复选框后将显 **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** 示此窗口： 这是筛选分组结果(HAVING)的地方。
+   复选框后将显 **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** 示此窗口：这是筛选分组结果(HAVING)的地方。
 
    ![](assets/query_editor_blocklist_05.png)
 
-1. 在窗口 **[!UICONTROL Data formatting]** 中，单击 **[!UICONTROL Next]**: 此处无需格式设置。
-1. 在数据预览窗口中，单击 **[!UICONTROL Launch data preview]**: 此处，将返回三个目标超过30次的不同电子邮件域。
+1. 在窗口 **[!UICONTROL Data formatting]** 中，单击 **[!UICONTROL Next]**:此处无需格式设置。
+1. 在数据预览窗口中，单击 **[!UICONTROL Launch data preview]**:此处，将返回三个目标超过30次的不同电子邮件域。
 
    ![](assets/query_editor_blocklist_06.png)
