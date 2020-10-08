@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 853f26ad-d373-49a5-952e-4197ffc3d904
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 0%
@@ -32,7 +29,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关重新参与活动战略和Adobe的可交付性服务的更多信息，请联系您的可交付性顾问，或与您的Adobe销售代理联系。
+>有关重新参与活动策略和Adobe的可交付性服务的更多信息，请联系您的可交付性顾问或与Adobe销售代理联系。
 
 ## ISP如何视图非参与活动? {#how-do-isps-view-non-engagement-activity-}
 
@@ -55,7 +52,7 @@ ISP，如AOL、Gmail、Microsoft和Yahoo! 视图不参与（不需要的电子�
 ### 阶段1 {#phase-1}
 
 * 第一步是识别几乎没有打开或点击活动的订阅者，并相应地根据设置的时间帧对此组进行分段。 经验法则是审查过去90天内未打开或点击电子邮件的订阅者。 但是，这会因业务性质（例如，季节性发送）而异。
-* 定义时间框架时要记住的另一点是，ISP和阻止列表公司认为约定时间介于1.5到1.8年之间。 此外，行为活动(如购买和网站活动)或其他接触点（如注册阶段或第一个联系人时的偏好）。
+* 定义时间框架时要记住的另一点是，ISP和阻止列表公司认为约定时间在1.5到1.8年之间。 此外，行为活动(如购买和网站活动)或其他接触点（如注册阶段或第一个联系人时的偏好）。
 
 ### 阶段2 {#phase-2}
 
