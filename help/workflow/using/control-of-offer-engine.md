@@ -1,7 +1,7 @@
 ---
-title: 优惠引擎的控制
-seo-title: 优惠引擎的控制
-description: 优惠引擎的控制
+title: 优惠引擎控制
+seo-title: 优惠引擎控制
+description: 优惠引擎控制
 seo-description: null
 page-status-flag: never-activated
 uuid: e5d444d3-a5ef-4a10-ab25-681df77bff26
@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 8b6d5f89-a904-47d8-bfb7-5dd383fc1f63
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 32%
 
 ---
 
 
-# 优惠引擎的控制{#control-of-offer-engine}
+# 优惠引擎控制{#control-of-offer-engine}
 
-默认情况下，下面详细介绍的工作流 **随“选件引擎控制”(Control of of of of of offer engine** )一起安装。
+默认情况下，下面详细介绍的工作 **流随优惠引擎和执行实例模** 块一起安装。
 
 <table> 
  <tbody> 
@@ -32,9 +32,9 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">命题同步</span><br /> </td> 
-   <td> <span class="uicontrol">命题同步</span><br /> </td> 
-   <td> 此工作流将营销实例和用于交互的执行实例之间的命题同步。<br /> </td> 
+   <td> <span class="uicontrol">命题同步</span> <br /> </td> 
+   <td> <span class="uicontrol">命题同步</span> <br /> </td> 
+   <td> 此工作流将营销实例和用于交互的执行实例之间的建议同步。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
