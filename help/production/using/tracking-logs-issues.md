@@ -11,22 +11,22 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 1b9ff479-4847-408d-a5c2-9a164805081f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e1937c1ddcbde092a22f4fe8c50d3d72b02cfeed
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 16%
 
 ---
 
 
 # 跟踪日志问题{#tracking-logs-issues}
 
-跟踪日志未转发的原因可能有多种。 我们建议您检查以下信息：
+跟踪日志无法转发可能有多种原因。 我们建议您检查以下信息：
 
 * 跟踪工 **作流** 是否有错误？
 
-   请参阅监 [控技术工作流程](../../workflow/using/monitoring-technical-workflows.md)。
+   请参阅监 [视技术工作流](../../workflow/using/monitoring-technical-workflows.md)。
 
    ![](assets/tracking_scheduled_task.png)
 
@@ -34,5 +34,5 @@ source-git-commit: e1937c1ddcbde092a22f4fe8c50d3d72b02cfeed
 
    请参阅 [日志文件](../../production/using/log-files.md)。
 
-* 是否进行了更改？ 它们可以触发与使用跟踪别名的服务器的连接断开。
+* 是否进行了更改？ 它们可以使用跟踪别名触发到服务器的连接丢失。
 
