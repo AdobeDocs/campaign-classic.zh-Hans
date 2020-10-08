@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 4404c21e-0a89-4762-af20-384ad7071916
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '663'
+ht-degree: 1%
 
 ---
 
@@ -26,11 +26,11 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ## 通用查询 {#generic-queries}
 
-查询是通过选项卡中的发布模板进行 **[!UICONTROL Aggregator]** 配置的。
+查询通过选项卡中的发布模板进行 **[!UICONTROL Aggregator]** 配置。
 
 检索到的数据将通过其主元素丰富XML输出文档。
 
-从收件人架构(**nms:recipient**)上的查询返回的示例：
+从查询返回收件人模式(nms:**收件人**)的示例
 
 ```
 <book name="Content Management">
@@ -42,13 +42,13 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 </book>
 ```
 
-元 **`<collection-recipient>`** 素表示由查询生成的文档的输入元素。 检索到的数据在此元素下返回；在我们的示例中，收件人列表。
+元 **`<collection-recipient>`** 素表示由文档产生的查询的输入元素。 检索到的数据在此元素下返回；在我们的例子中，是收件人列表。
 
 ### 添加查询 {#adding-a-query}
 
-查询参数使用向导进行编辑。
+查询参数是使用向导进行编辑的。
 
-1. 在第一页中，指定标签和包含要检索的数据的架构。
+1. 在第一页中，指定标签和包含要检索的模式。
 
    ![](assets/d_ncs_content_query1.png)
 
@@ -60,11 +60,11 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
    ![](assets/d_ncs_content_query2.png)
 
-1. 下一页定义了筛选条件。
+1. 下一页定义筛选条件。
 
    ![](assets/d_ncs_content_query3.png)
 
-1. 最后一页将启动查询返回的数据的预览。
+1. 最后一页启动预览返回的查询。
 
    ![](assets/d_ncs_content_query4.png)
 
@@ -74,20 +74,20 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 链接数据有两种类型：
 
-* 内容链接：这是本机内容管理模式。 链接的内容会自动集成到XML输出文档中。
-* 指向外部表的链接允许访问数据库中的所有其他表，但限制是检索与聚合器一起的所选链接的数据。
+* 内容链接：这是本机内容管理模式。 链接的内容将自动集成到XML输出文档中。
+* 指向外部表的链接允许访问数据库中的所有其他表，但约束是使用聚合器检索所选链接的数据。
 
-### 链接到内容架构 {#link-to-a-content-schema}
+### 链接到内容模式 {#link-to-a-content-schema}
 
-数据架构中声明了内容链接，如下所示：
+在数据模式中声明内容链接，如下所示：
 
 ```
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-链接的定义将填充在 **字符串****`<element>`**&#x200B;类型上， **** expandSchemaTarget属性引用目标架构（我们示例中的“cus:chapter”）。 引用的架构必须是内容架构。
+链接的定义填充在字符串 **类型**&#x200B;上 **`<element>`**，并且 **expandSchemaTarget属性引** 用目标模式符（我们示例中的“cus:chapter”）。 引用的模式必须是内容模式。
 
-目标元素的内容丰富了链接元素，即示例架构中 **`<chapter>`** 的元素：
+目标元素的内容丰富了链接元素，即示例 **`<chapter>`** 模式中的元素：
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -97,7 +97,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 >[!NOTE]
 >
->链 **接的Compute字符串** （计算字符串）是从 **computeString属性** 中显示的。
+>链 **接的** Compute字符串由computeString属 **性显** 示。
 
 在输入表单中，链接的编辑控件声明如下：
 
@@ -111,7 +111,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 #### 链接集合 {#link-collection}
 
-要填充链接集合，请将unbound=&quot; **true&quot;** 属性添加到数据架构中链接元素的定义中：
+要填充链接集合，请向数 **据模式中链接元素的定义中** 添加unboind=&quot;true&quot;属性：
 
 ```
 <element expandSchemaTarget="cus:chapter" label="List of chapters" name="chapter"  ordered="true" unbound="true"/>
@@ -125,7 +125,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 </chapter>
 ```
 
-在输入表单中，列表控件声明如下：
+在输入形式中，列表控件声明如下：
 
 ```
 <input editable="false" nolabel="true" toolbarCaption="List of chapters" type="articleList" xpath="chapter" zoom="true"/>
@@ -133,23 +133,23 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ![](assets/d_ncs_content_link2.png)
 
-将显示一个默认列，以便查看目 **标元素的** “计算”字符串。
+将显示默认列，以视图目 **标元素的** “计算”字符串。
 
 ### 外部表的链接 {#links-to-external-tables}
 
-数据架构中声明了指向外部表的链接，如下所示：
+在数据模式中将声明指向外部表的链接，如下所示：
 
 ```
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-链接的定义填充在链接类 **型上**, **`<element>`**&#x200B;目标属性引 **用目标架构** （本例中为“nms:recipient”）。
+链接的定义填充在链 **接类型****`<element>`**&#x200B;上 **，并且** 目标属性引用目标模式(本例中的“nms:收件人”)。
 
-根据惯例，必须从数据架构的主元素中声明链接。
+根据惯例，链接必须从数据模式的主要元素中声明。
 
-计 **算字符串** ，以及目标元素的键可丰富主元素 **`<name>-id`** 和 **`<name>-cs`** 属性。
+计 **算字符串** 和目标元素的键可丰富主 **`<name>-id`** 要元素的 **`<name>-cs`** 属性和属性。
 
-在我们的示例中，链接填充在“cus:book”架构中，链接数据的内容包含在“mainContact-id”和“mainContact-cs”属性中：
+在我们的示例中，链接填充在“cus:book”模式中，链接数据的内容包含在“mainContact-id”和“mainContact-cs”属性中：
 
 ```
 <book computeString="Content management" date="2006/06/08" id="6106" language="en" mainContact-cs="John Doe (john.doe@adobe.com)" mainContact-id="3012" name="Content management" xtkschema="cus:book">
@@ -163,7 +163,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ![](assets/d_ncs_content_link3.png)
 
-您可以通过输入表单中的链接定义来添加元 **`<sysfilter>`** 素，从而限制目标元素的选择：
+您可以通过在输入表单中的链接定义 **`<sysfilter>`** 添加元素来限制目标元素的选择：
 
 ```
 <input xpath="mainContact">
@@ -180,7 +180,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 #### 链接集合 {#link-collection-1}
 
-集合的定义与集合元素上列表的定义相同：
+集合的定义与对集合元素的列表的定义相同：
 
 ```
 <element label="List of contacts" name="contact" unbound="true">
@@ -188,7 +188,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 </element>
 ```
 
-在输入表单中，列表控件声明如下：
+在输入形式中，列表控件声明如下：
 
 ```
 <input nolabel="true" toolbarCaption="List of contacts" type="list" xpath="contact">
@@ -200,7 +200,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 >[!NOTE]
 >
->该列表是可编辑的，并允许您从上面显示的“链接”类型控件中选择链接。
+>该列表是可编辑的，允许您从上面显示的“链接”类型控件中选择链接。
 
 目标元素的内容丰富了输出文档中的每个集合元素：
 
@@ -211,11 +211,11 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 #### 链接聚合 {#link-aggregation}
 
-引用的每个链接的内容仅限于目标元素的内部键 **和“计算** ”字符串。
+引用的每个链接的内容仅限于目标元素的 **内部键** 和计算字符串。
 
 JavaScript脚本用于通过SOAP查询丰富链接的内容。
 
-**示例**:将收件人姓名添加到“mainContact”链接和“contact”集合链接：
+**示例**:将收件人名称添加到“mainContact”链接和“contact”集合链接：
 
 ```
 // Update <mainContact> link
@@ -262,7 +262,7 @@ for each(var contact in content.contact)
 <contact id="11504982510" lastName="Martinez" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/> 
 ```
 
-JavaScript代码的内容通过文件夹添加， **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** 并且必须在每个转换的发布模板中填充。
+JavaScript代码的内容通过文件夹添加 **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** ，并且必须在每个转换的发布模板中填充。
 
 ![](assets/d_ncs_content_link5.png)
 
