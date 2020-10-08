@@ -11,15 +11,15 @@ audience: migration
 content-type: reference
 topic-tags: rollback
 discoiquuid: 0e17abea-5e86-43b5-8bca-ee39d9b24c90
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '29'
+ht-degree: 27%
 
 ---
 
 
 # 关于回滚{#about-rollback}
 
-下面的步骤详细描述了要回滚到先前平台版本时要执行的步骤。
+下面的步骤详细说明了如果要对先前平台版本执行回滚操作，需要执行的步骤。
