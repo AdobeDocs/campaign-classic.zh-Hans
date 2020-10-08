@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: b9846eda-eeca-433e-b961-6dfc2aa2708b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 1%
@@ -27,13 +24,13 @@ ht-degree: 1%
 
 ## 工作原理 {#operating-principle}
 
-Adobe Campaign允许您根据日期的时区来表示日期： 这使国际用户能够在世界各地的不同时区工作。 每个使用同一实例的国家／地区都可以管理活动的执行、跟踪、归档等。 取决于当地时间。
+Adobe Campaign允许您根据日期的时区来表示日期：这使国际用户能够在世界各地的不同时区工作。 每个使用同一实例的国家／地区都可以管理活动的执行、跟踪、归档等。 取决于当地时间。
 
 为了能够在国际范围内使用Adobe Campaign平台，系统使用的所有日期都必须可链接到一个时区。 因此，其时区已知的日期可以导入任何其他时区，或者不管时区。
 
 Adobe Campaign允许您以UTC（协调通用时间）格式存储日期／时间。 当数据被公开时，它将转换为操作符的本地日期／时间。 当数据库以UTC进行配置时，将自动执行转换(请参 [阅配置](#configuration))。 如果数据库未以UTC进行配置，则平台中日期的时区信息会存储在一个选项中。
 
-与时区管理相关的主要平台功能包括： 导入／导出数据、操作员和工作流管理。 继 **承概念** 适用于导入／导出或工作流。 默认情况下，它们是为数据库服务器时区配置的，但是您可以为工作流甚至单个活动重新定义新时区。
+与时区管理相关的主要平台功能包括：导入／导出数据、操作员和工作流管理。 继 **承概念** 适用于导入／导出或工作流。 默认情况下，它们是为数据库服务器时区配置的，但是您可以为工作流甚至单个活动重新定义新时区。
 
 **操作** 员可以在投放配 **置期间修改时** 区，并可以指定将执行投放的特定时区。
 
@@ -41,32 +38,32 @@ Adobe Campaign允许您以UTC（协调通用时间）格式存储日期／时间
 >
 >如果查询库不管理多个时区，则对于所有数据过滤操作，必须在数据库服务器的时区中执行SQL。
 
-每个Adobe Campaign运算符都链接到一个时区： 此信息在其用户档案中配置。 For more on this, refer to [this document](../../platform/using/access-management.md).
+每个Adobe Campaign运算符都链接到一个时区：此信息在其用户档案中配置。 For more on this, refer to [this document](../../platform/using/access-management.md).
 
 当Adobe Campaign平台不需要时区管理时，您可以将存储模式保留为具有特定链接时区的本地格式。
 
-## 建议 {#recommendations}
+## 建议{#recommendations}
 
-时区结合了几个现实： 该表达式可以描述与UTC日期一起的连续时间延迟，或者描述一个区域的时间，该时间可以每年更改两次（夏令时）。
+时区结合了几个现实：该表达式可以描述与UTC日期一起的连续时间延迟，或者描述一个区域的时间，该时间可以每年更改两次（夏令时）。
 
-例如，在postgreSQL中， **SET TIME ZONE为“Europe/Paris”;** command将考虑夏季和冬季时间： 日期将以UTC+1或UTC+2表示，具体取决于年份的时间。
+例如，在postgreSQL中， **SET TIME ZONE为“Europe/Paris”;** command将考虑夏季和冬季时间：日期将以UTC+1或UTC+2表示，具体取决于年份的时间。
 
 但是，如果您使 **用设置时区0200;** 命令时，时差将始终为UTC+2。
 
-## 配置 {#configuration}
+## 配置{#configuration}
 
 在创建存储库时，将选择日期和时间的模式(请参 [阅创建新实例](#creating-a-new-instance))。 在迁移时，链接到日期的小时数将转换为本地日期和小时数(请参阅 [迁移](#migration))。
 
 从视图的技术角度来看，有两种方法可以在 **库中存储** “日期+时间”类型信息：
 
-1. 带时区格式的时间戳： 数据库引擎以UTC为单位存储日期。 每个打开的会话都有一个时区，并且日期将根据它进行转换。
-1. 本地格式+本地时区： 所有日期都以本地格式存储（无时差管理），并且会为它们分配一个时区。 时区存储在Adobe Campaign **实例的** WdbcTimeZone选项中 **[!UICONTROL Administration > Platform > Options]** ，并可通过树的菜单进行更改。
+1. 带时区格式的时间戳：数据库引擎以UTC为单位存储日期。 每个打开的会话都有一个时区，并且日期将根据它进行转换。
+1. 本地格式+本地时区：所有日期都以本地格式存储（无时差管理），并且会为它们分配一个时区。 时区存储在Adobe Campaign **实例的** WdbcTimeZone选项中 **[!UICONTROL Administration > Platform > Options]** ，并可通过树的菜单进行更改。
 
 >[!IMPORTANT]
 >
 >请注意，此修改可能导致数据一致性和同步问题。
 
-### 创建新实例 {#creating-a-new-instance}
+### Creating a new instance {#creating-a-new-instance}
 
 为了使多个国际用户能够处理同一实例，您需要在创建实例时配置时区，以管理不同国家／地区之间的时差。 在实例创建过程中，在数据库配置阶段的一 **[!UICONTROL Time zone]** 节中选择日期和时间管理模式。
 
@@ -98,7 +95,7 @@ Adobe Campaign允许您以UTC（协调通用时间）格式存储日期／时间
 
 >[!IMPORTANT]
 >
->请确保为WdbcTimeZone选项配置了正确的值： 后来所做的更改可能导致不一致。
+>请确保为WdbcTimeZone选项配置了正确的值：后来所做的更改可能导致不一致。
 
 可能值的示例：
 
