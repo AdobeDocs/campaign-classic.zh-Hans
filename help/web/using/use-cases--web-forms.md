@@ -1,7 +1,7 @@
 ---
-title: “使用案例： Web表单”
-seo-title: “使用案例： Web表单”
-description: “使用案例： Web表单”
+title: '"用例：Web 窗体"'
+seo-title: '"用例：Web 窗体"'
+description: '"用例：Web 窗体"'
 seo-description: null
 page-status-flag: never-activated
 uuid: b2c3f171-325e-4913-a188-a791bad0df2e
@@ -11,19 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '972'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 用例： Web表单{#use-cases-web-forms}
+# 用例：Web 窗体{#use-cases-web-forms}
 
 ## 创建包含订阅选择加入的多次表单 {#create-a-subscription--form-with-double-opt-in}
 
@@ -48,7 +45,7 @@ ht-degree: 0%
 
 确认消息通过在临时服务级别引用的专用投放模板发送。
 
-1. 在中， **[!UICONTROL Explorer]** 选择 **[!UICONTROL Resources > Templates > Delivery templates]**。
+1. In the **[!UICONTROL Explorer]** , select **[!UICONTROL Resources > Templates > Delivery templates]**.
 1. 创建用于发送投放模板确认消息的订阅。
 1. 单击中 **[!UICONTROL To]** 的按 **[!UICONTROL Email parameters]** 钮，将投放模板与订阅目标映射而非收件人关联。
 
@@ -108,7 +105,7 @@ Web表单工作流将包括以下活动:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
-1. 为工作 **[!UICONTROL Script]** 流添加两个活动。
+1. 将两个 **[!UICONTROL Script]** 活动添加到工作流。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
