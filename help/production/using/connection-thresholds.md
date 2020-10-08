@@ -11,28 +11,28 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: f3db77db-94cc-4d75-a59b-2dddce776759
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 5%
 
 ---
 
 
 # 连接阈值{#connection-thresholds}
 
-对于负载较重的服务器，可能会超出连接阈值。 无论如何，找出原因都很有用。
+对于负载较重的服务器，可能会超出连接阈值。 在任何事件，找出原因都很有用。
 
 有三种不同的阈值：
 
-1. Web连接阈值，在Web服务器中配置。 要修改它，请与系统管理员联系。
+1. 在Web服务器中配置的Web连接阈值。 要修改它，请与系统管理员联系。
 1. 数据库连接阈值。 要修改它，请与数据库管理员联系。
-1. Adobe Campaign连接阈值有两个位置：
+1. Adobe Campaign连接阈值，在以下两个位置可用：
 
-   * Tomcat侧：实际到达Adobe Campaign Tomcat客户端的所有查询。
+   * Tomcat侧：所有查询实际上都到达了Adobe CampaignTomcat客户端。
 
-      此阈值在nl6/tomcat-7/conf/server.xml文件中 **配置** 。 使用 **maxThreads** 属性，您可以增加一次处理的查询数的阈值。 例如，可以将其更改为250。
+      此阈值在nl6/tomcat-7/conf/server.xml文件 **中配** 置。 maxThreads **属性** 允许您增加一次处理的查询数的阈值。 例如，可以将其更改为250。
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -46,9 +46,9 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
                   unpackWARs="true" autoDeploy="true">
       ```
 
-   * 数据库：一个进程在数据库上同时打开的所有连接集。
+   * 数据库：一组进程在数据库上同时打开的所有连接。
 
-      此阈值在文件nl6/conf/serverConf.xml中 **配置**。 位于 **数据源池中的** maxCnx **属性** ，可让您增加同时处理的查询的阈值。
+      此阈值在文件nl6/conf/serverConf.xml中 **配置**。 位于 **数据源** 池中的maxCnx **属性** ，可让您提高同时处理的查询的阈值。
 
       ```
           <!-- Data source
