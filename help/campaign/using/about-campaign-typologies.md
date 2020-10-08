@@ -11,14 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 72c5151c-ce1e-425a-9aee-beefe9f21a67
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -66,7 +63,7 @@ ht-degree: 8%
 
    通过>节点访 **[!UICONTROL Administration > Campaign Management > Typology management]** 问 **[!UICONTROL Typologies]** 字体。
 
-1. 配置投放以使用您创建的排版。 有关更多信息，请参阅[此章节](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery)。
+1. 配置投放以使用您创建的排版。 如需详细信息，请参阅[此部分](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery)。
 1. 通过活动模拟测试和控制行为。 For more on campaign simulations, refer to [this section](../../campaign/using/campaign-simulations.md).
 
 在准备投放时，在满足标准时排除收件人。 您可以检查日志以监视排除情况。本页提供压力类型规则的示 [例用例](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)。
