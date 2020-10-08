@@ -1,6 +1,6 @@
 ---
-title: 在Adobe Campaign经典中定义电子邮件内容
-description: 了解如何在使用Adobe Campaign经典时定义电子邮件内容。
+title: 定义Adobe Campaign Classic的电子邮件内容
+description: 了解如何使用Adobe Campaign Classic时定义电子邮件内容。
 page-status-flag: never-activated
 uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
 contentOwner: sauviat
@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2887'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +26,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
-在此窗口中，您可以输入创建电子邮件标头所需的所有信息。 此信息可以个性化。 为此，请使用输入字段右侧的按钮插入个性化字段。
+在此窗口中，您可以输入创建电子邮件标头所需的所有信息。 此信息可以个性化。为此，请使用输入字段右侧的按钮插入个性化字段。
 
 要了解如何插入和使用个性化字段，请参阅关于 [个性化](../../delivery/using/about-personalization.md) 部分。
 
@@ -113,7 +110,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_wizard_email01_141.png)
 
-   对于HTML格式，请单 **[!UICONTROL Preview]** 击页面底部的选项卡，视图消息的呈现及其个性化。
+   对于HTML格式，请单 **[!UICONTROL Preview]** 击页面底部的选项卡，将消息呈现与其个性化视图。
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
 
@@ -140,11 +137,11 @@ ht-degree: 0%
 
 * **[!UICONTROL Use recipient preferences]** （默认模式）
 
-   消息格式根据收件人用户档案中存储的数据定义，默认情况下存储在字 **[!UICONTROL email format]** 段(@emailFormat)中。 如果收件人希望以某种格式接收邮件，则此格式为发送的。 如果未填写字段，则会发送复合-可选消息（请参阅下文）。
+   The message format is defined according to the data stored in the recipient profile and stored by default in the **[!UICONTROL email format]** field (@emailFormat). 如果收件人希望以特定格式接收消息，则会将该格式用于发送的邮件。如果未填写字段，则会发送复合-可选消息（请参阅下文）。
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
-   消息包含两种格式： 文本和HTML。 接收时显示的格式取决于收件人邮件软件(复合-可选)的配置。
+   消息包含两种格式：文本和HTML。 接收时显示的格式取决于收件人邮件软件(复合-可选)的配置。
 
    >[!IMPORTANT]
    >
@@ -154,11 +151,11 @@ ht-degree: 0%
 
    消息以文本格式发送。 不会发送HTML格式，但仅当镜像页面单击消息时，才会将其用于收件人。
 
-## 定义交互式内容 {#amp-for-email-format}
+## 定义互动内容 {#amp-for-email-format}
 
 Adobe Campaign使您能够试用新的交 [互式AMP for Email](https://amp.dev/about/email/) ，该格式允许在特定条件下发送动态电子邮件。
 
-For more on this, see [this section](../../delivery/using/defining-interactive-content.md).
+有关更多信息，请参阅[此章节](../../delivery/using/defining-interactive-content.md)。
 
 ## 使用内容管理 {#using-content-management}
 
@@ -185,7 +182,7 @@ HTML格式的电子邮件投放可以包含图像。 在该投放向导中，您
 
    公共资源可通过Adobe Campaign **[!UICONTROL Resources > Online]** 层次结构的节点访问。 它们被分组在库中，并可以包含在电子邮件中，但也可用于活动或任务或内容管理。
 
-* 与Adobe Experience Cloud共享的资源。 Refer to [this section](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
+* 与Adobe Experience Cloud共享的资产。 请参阅[此章节](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md) 。
 
 >[!IMPORTANT]
 >
@@ -239,7 +236,7 @@ HTML格式的电子邮件投放可以包含图像。 在该投放向导中，您
 
 * 如果图像存储在本地或位于另一台服务器上，即使此服务器从外部（例如，在Internet站点上）可见，也会检测为 **[!UICONTROL Not yet online]**。
 * 在创建其他投放时， **[!UICONTROL Already online]** 会检测到图像，就像之前上传过一样。
-* 在部署向导中，您可以定义未启用图像检测的URL: 上传这些图像将 **[!UICONTROL Skipped]**&#x200B;是。
+* 在部署向导中，您可以定义未启用图像检测的URL:上传这些图像将 **[!UICONTROL Skipped]**&#x200B;是。
 
 >[!NOTE]
 >
@@ -273,7 +270,7 @@ HTML格式的电子邮件投放可以包含图像。 在该投放向导中，您
 
 可以使用使用客户条件定义的值动态生成条形码作为位图。 个性化条码可包含在电子邮件活动中。 收件人可以打印消息并将其显示给发布公司进行扫描（例如，在签出时）。
 
-要在电子邮件中插入条形码，请将光标放在要显示它的内容中，然后单击个性化按钮。 Select **[!UICONTROL Include > Barcode...]**.
+要在电子邮件中插入条形码，请将光标放在要显示它的内容中，然后单击个性化按钮。 选择 **[!UICONTROL Include > Barcode...]**。
 
 ![](assets/barcode_insert_14.png)
 
@@ -281,7 +278,7 @@ HTML格式的电子邮件投放可以包含图像。 在该投放向导中，您
 
 1. 选择条形码类型。
 
-   * 对于1D格式，Adobe Campaign中提供以下类型： Codabar，代码128, GS1-128（以前称为EAN-128）, UPC-A, UPC-E, ISBN, EAN-8，代码39，隔行2，共5个，邮递网和皇家邮政(RM4SCC)。
+   * 对于1D格式，Adobe Campaign中提供以下类型：Codabar，代码128, GS1-128（以前称为EAN-128）, UPC-A, UPC-E, ISBN, EAN-8，代码39，隔行2，共5个，邮递网和皇家邮政(RM4SCC)。
 
       1D条形码示例：
 
@@ -301,7 +298,7 @@ HTML格式的电子邮件投放可以包含图像。 在该投放向导中，您
 
       ![](assets/barcode_insert_12.png)
 
-1. 输入要插入到电子邮件中的条形码的大小： 通过配置比例，您可以增加或减少条形码的大小，从x1到x10。
+1. 输入要插入到电子邮件中的条形码的大小：通过配置比例，您可以增加或减少条形码的大小，从x1到x10。
 1. 字 **[!UICONTROL Value]** 段允许您定义条形码的值。 值可以与特殊优惠匹配，也可以是标准的函数，也可以是链接到客户的数据库字段的值。
 
    此示例显示EAN-8类型条形码，其中添加了收件人的帐号。 要添加此帐号，请单击字段右侧的个性化按 **[!UICONTROL Value]** 钮并选择 **[!UICONTROL Recipient > Account number]**。
@@ -342,7 +339,7 @@ Adobe Campaign管理手机上电子邮件的三种特定日文格式： **Deco-m
 
 但是，如果您将选 **[!UICONTROL Email format]** 项保留 **[!UICONTROL Unknown]**&#x200B;为， **[!UICONTROL HTML]****[!UICONTROL Text]**&#x200B;或者，Adobe Campaign将自动检测（发送电子邮件时）要使用的日文格式，以便正确显示消息。
 
-该自动检测系统基于在邮件规则集中定义的预定义域 **[!UICONTROL Management of Email Formats]** 的列表。 有关管理电子邮件格式的详细信息，请 [参阅本页](../../installation/using/email-deliverability.md#managing-email-formats)。
+该自动检测系统基于在邮件规则集中定义的预定义域 **[!UICONTROL Management of Email Formats]** 的列表。 For more on managing email formats, refer to [this page](../../installation/using/email-deliverability.md#managing-email-formats).
 
 ### 限制和建议 {#limitations-and-recommendations}
 
@@ -358,7 +355,7 @@ Adobe Campaign管理手机上电子邮件的三种特定日文格式： **Deco-m
 
 >[!NOTE]
 >
->创建邮件时，应考虑每个操作员的特定限制。 请参阅：
+>创建邮件时，应考虑每个操作员的特定限制。 请参阅:
 >
 >* 有关DoCoMo，请参 [阅本页](https://www.nttdocomo.co.jp/service/developer/make/content/deco_mail/index.html)
 >* 有关KDDI AU，请参 [阅本页](https://www.au.com/ezfactory/tec/spec/decorations/template.html)
@@ -367,7 +364,7 @@ Adobe Campaign管理手机上电子邮件的三种特定日文格式： **Deco-m
 
 ### 测试电子邮件内容 {#testing-the-email-content}
 
-#### 预览消息 {#previewing-the-message}
+#### Previewing the message {#previewing-the-message}
 
 Adobe Campaign允许您检查消息格式是否适用于发送到日文手机。
 
@@ -383,7 +380,7 @@ Adobe Campaign允许您检查消息格式是否适用于发送到日文手机。
 
 #### 运行类型规则 {#running-typology-rule}
 
-除了预览诊断之外，在发送验证或投放时还执行第二检查： 特定类型规则 **[!UICONTROL Deco-mail check]**&#x200B;在分析期间启动。
+除了预览诊断之外，在发送验证或投放时还执行第二检查：特定类型规则 **[!UICONTROL Deco-mail check]**&#x200B;在分析期间启动。
 
 >[!IMPORTANT]
 >
@@ -391,7 +388,7 @@ Adobe Campaign允许您检查消息格式是否适用于发送到日文手机。
 
 此类型规则允许您确保投放遵守日文运 [算符](#limitations-and-recommendations) （尤其是与电子邮件总大小、HTML和文本部分的大小、消息中的图像数以及HTML内容中的标记相关）定义的格式限制。
 
-#### 发送校样 {#sending-proofs}
+#### 发送校样{#sending-proofs}
 
 您可以发送验证来测试投放。 当您发送验证时，如果您使用的是替代地址，请输入与所使用用户档案的电子邮件格式对应的地址。
 
@@ -403,12 +400,12 @@ Adobe Campaign允许您检查消息格式是否适用于发送到日文手机。
 
 要向具有活动的日本电子邮件格式发送电子邮件至收件人，可以使用以下两种方式：
 
-* 创建两个投放: 一个仅适用于日语收件人，另一个适用于其他收件人-请参 [阅本节](#designing-a-specific-delivery-for-japanese-formats)。
-* 创建单个投放,Adobe Campaign将自动检测要使用的格式——请参阅 [本节](#designing-a-delivery-for-all-formats)。
+* 创建两个投放:一个仅适用于日语收件人，另一个适用于其他收件人-请参 [阅本节](#designing-a-specific-delivery-for-japanese-formats)。
+* 创建单个投放,Adobe Campaign将自动检测要使用的格式——请参 [阅本节](#designing-a-delivery-for-all-formats)。
 
 #### 为日文格式设计特定投放 {#designing-a-specific-delivery-for-japanese-formats}
 
-您可以创建包含两个投放的工作流： 一个在日本手机上阅读，另一个在标准电子邮件格式收件人上阅读。
+您可以创建包含两个投放的工作流：一个在日本手机上阅读，另一个在标准电子邮件格式收件人上阅读。
 
 为此，请在工作流 **[!UICONTROL Split]** 中使用活动，并将日文电子邮件格式（Deco邮件、装饰邮件和Decore邮件）定义为筛选条件。
 
@@ -418,7 +415,7 @@ Adobe Campaign允许您检查消息格式是否适用于发送到日文手机。
 
 #### 为所有格式设计投放 {#designing-a-delivery-for-all-formats}
 
-当Adobe Campaign根据域(电子邮件格式定义为、或的用户档案)动 **[!UICONTROL Unknown]**&#x200B;态管 **[!UICONTROL HTML]** 理格式 **[!UICONTROL Text]** 时，您可以向所有收件人发送相同的投放。
+当Adobe Campaign根据域(用户档案定义为、或的电子邮件格式)动 **[!UICONTROL Unknown]**&#x200B;态 **[!UICONTROL HTML]** 管理格式 **[!UICONTROL Text]** 时，您可以向所有收件人发送相同的投放。
 
 与标准收件人一样，消息联系人将正确显示给日本手机上的用户。
 
