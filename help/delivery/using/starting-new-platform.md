@@ -1,6 +1,6 @@
 ---
-title: 使用Adobe Campaign经典启动新平台
-description: 进一步了解在使用Adobe Campaign经典启动新平台时如何管理交付能力。
+title: 与Adobe Campaign Classic建立新平台
+description: 了解与Adobe Campaign Classic共同创建新平台时如何管理交付能力的更多信息。
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 0%
 
 * 开始发送电子邮件是一个敏感步骤，因为该平台没有任何使用历史记录，而且当发送的IP从未用于此目的时，就没有声誉。
 
-* ISP自然会怀疑从未用来发送电子邮件的IP地址，并突然开始发送大量电子邮件流量。 事实上，垃圾邮件发送者通常使用“未知”IP地址（从未添加到阻止列表的地址）发送尽可能多的邮件，然后再进行检测。
+* ISP自然会怀疑从未用来发送电子邮件的IP地址，并突然开始发送大量电子邮件流量。 事实上，垃圾邮件发送者通常使用“未知”IP地址(从未添加到阻止列表的地址)发送尽可能多的邮件，然后再进行检测。
 
 * 在生产阶段的开始，您无法期望在输出方面达到操作速度。 此外，您不应尝试以此速率发送消息，因为这可能会导致ISP阻止发送地址，并严重危害开始的其余阶段。
 
@@ -38,12 +35,13 @@ ht-degree: 0%
 
    * 如果列表的地址无效，则在首次发送之前将其导入隔离表(可通过菜单获 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** 得)符合您的最大利益。
    * 如果您仍希望重新指定无效地址，则最好在建立平台信誉并逐位地执行此操作，以便随着时间的推移“稀释”使用不良地址。
+
    有关此方面的详细信息，请参 [阅通过隔离优化投放](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines)。
 * **通过限制mtachild** 数量来限制吞吐量速率。 有关调整此类技术设置的更多信息，请与Adobe Campaign管理员联系。
 * **逐步增加发送的卷** ，以避免被标记为垃圾邮件。 不要从整个开始中目标整个列表库，而是在每次发送时添加额外的部分。 这样，您就可以在每一步增加卷，同时降低无效地址的总体速率。 为确保开始阶段的顺利开发，您可以使用批次。 有关此方面的详细信息，请参 [阅使用多个批次发送](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)。
 * **定期发送**。 从某种程度上讲，最好定期发送小照片，而不是偶尔发送大活动。
 * **要密切关注投放报告**。 高错误指示器可能意味着技术设置配置错误。 有关此方面的详细信息，请 [参阅监视投放](../../delivery/using/monitoring-a-delivery.md)。
 
-**相关主题**:
+**相关主题**：
 * [通过IP升温提高您的电子邮件声誉](https://helpx.adobe.com/campaign/kb/increase-email-rep-ip-warming.html)
 * [关于垃圾邮件陷阱](https://helpx.adobe.com/campaign/kb/spam-traps.html)
