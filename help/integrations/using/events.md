@@ -11,14 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f70468e3dd7003a18812d07669f10c561e8bef7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -62,7 +59,7 @@ function processPipelineMessage(xmlTrigger) {}
 * **[!UICONTROL @offset]** 是消息的“指针”。 它指示消息在队列中的顺序。
 * **[!UICONTROL @partitio]**n是队列中消息的容器。 偏移量相对于分区。 <br>队列中有大约15个分区。
 
-例如：
+示例:
 
 ```
 <trigger offset="1500435" partition="4" triggerId="LogoUpload_1_Visits_from_specific_Channel_or_ppp">
@@ -77,14 +74,14 @@ function processPipelineMessage(xmlTrigger) {}
 >
 >它是各种可能实现的一个特定示例。
 
-内容以Analytics形式为每个触发器定义。 它采用JSON格式。
+内容在Analytics中为每个触发器定义。 它采用JSON格式。
 例如，在触发器LogoUpload_uploading_Victs中：
 
 * **[!UICONTROL eVar01]** can contain Shopper ID, which is used to reconcile with活动收件人。 它采用字符串格式。 <br>它必须协调以查找Shopper ID，它是主键。
 
-* **[!UICONTROL timeGMT]** 可以在Analytics端包含触发时间。 它采用UTC Epoc格式（自01/01/1970 UTC起的秒）。
+* **[!UICONTROL timeGMT]** 可以在分析端包含触发时间。 它采用UTC Epoc格式（自01/01/1970 UTC起的秒）。
 
-例如：
+示例:
 
 ```
 {
@@ -210,7 +207,7 @@ triggerType字段标识数据从哪个触发器发起。
 | shopper_key | 长 | shopper_key | Analytics捕获的购物者外部标识符。 |
 | 已创建 | 日期时间 | 已创建 | 在活动中创建事件的时间。 |
 | lastModified | 日期时间 | 上次修改时间 | 事件上次以Adobe修改的时间。 |
-| timeGMT | 日期时间 | 时间戳 | 在事件中生成Analytics的时间。 |
+| timeGMT | 日期时间 | 时间戳 | 在Analytics中生成事件的时间。 |
 
 ### 显示事件 {#display-events}
 
@@ -226,7 +223,7 @@ triggerType字段标识数据从哪个触发器发起。
 
 ### 对帐工作流 {#reconciliation-workflow}
 
-对帐是将客户从Analytics匹配到活动数据库的过程。 例如，匹配的条件可以是shopper_id。
+对帐是将客户从Analytics匹配到活动库的过程。 例如，匹配的条件可以是shopper_id。
 
 由于性能原因，匹配必须由工作流在批处理模式下完成。
 必须将频率设置为15分钟，以优化工作量。 因此，在Adobe Campaign中的事件接收与由营销工作流处理之间的延迟最多为15分钟。
