@@ -9,14 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 68a95962dfecc4b10f48ba16d4f8ab29cae02ee8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -25,7 +22,7 @@ ht-degree: 0%
 
 工作流始终手动启动。 但是，启动后，它可能会根据通过调度程序指定的信息(请参阅 [调度程序](../../workflow/using/scheduler.md))或活动计划保持非活动状态。
 
-与定位工作流执行（启动、停止、暂停等）相关的操作 是异 **步进** 程： 订单将被记录下来，一旦服务器可以应用该订单，该订单将生效。
+与定位工作流执行（启动、停止、暂停等）相关的操作 是异 **步进** 程：订单将被记录下来，一旦服务器可以应用该订单，该订单将生效。
 
 工具栏允许您开始和跟踪工作流的执行。
 
@@ -43,13 +40,13 @@ ht-degree: 0%
 
 * **[!UICONTROL Start]**
 
-   通过此操作，您可以开始工作流的执行： 已完成、正在编 **辑或已**&#x200B;暂 **停的工作** 流将状 **态更改** 为“已 ****&#x200B;开始”。 工作流引擎随后将处理此工作流的执行。 如果工作流已暂停，则它将恢复，否则，工作流将从开始开始启动，并激活初始活动。
+   通过此操作，您可以开始工作流的执行：已完成、正在编 **辑或已**&#x200B;暂 **停的工作** 流将状 **态更改** 为“已 ****&#x200B;开始”。 工作流引擎随后将处理此工作流的执行。 如果工作流已暂停，则它将恢复，否则，工作流将从开始开始启动，并激活初始活动。
 
-   启动是一个异步进程： 此请求将被保存并尽快由工作流服务器进行处理。
+   启动是一个异步进程：此请求将被保存并尽快由工作流服务器进行处理。
 
 * **[!UICONTROL Pause]**
 
-   此操作将工作流的状态设置为“已 **暂停**”。 在恢复工作流之前，不会激活活动; 但是，不会暂停正在进行的操作。
+   此操作将工作流的状态设置为“已 **暂停**”。 在恢复工作流之前，不会激活活动;但是，不会暂停正在进行的操作。
 
 * **[!UICONTROL Stop]**
 
@@ -59,9 +56,9 @@ ht-degree: 0%
 
 * **[!UICONTROL Restart]**
 
-   此操作停止，然后重新启动工作流。 在大多数情况下，它使得能够更快地重启。 在停止需要一定时间时自动重新启动也很有用： 这是因为在工作流停止时“停止”命令不可用。
+   此操作停止，然后重新启动工作流。 在大多数情况下，它使得能够更快地重启。 在停止需要一定时间时自动重新启动也很有用：这是因为在工作流停止时“停止”命令不可用。
 
-   操 **[!UICONTROL Start / Pause / Stop / Restart]** 作也可通过工具栏中的执行图标使用。 For more on this, refer to this [section](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   操 **[!UICONTROL Start / Pause / Stop / Restart]** 作也可通过工具栏中的执行图标使用。 有关更多信息，请参阅此](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow)章节[。
 
 * **[!UICONTROL Purge history]**
 
@@ -87,7 +84,7 @@ ht-degree: 0%
 
    此操作将根据选定的工作流创建新的工作流模板。 您需要指定保存该文件夹的文件夹(在字 **[!UICONTROL Folder]** 段中)。
 
-   和选 **[!UICONTROL Mass update of selected lines]** 项 **[!UICONTROL Merge selected lines]** 是所有菜单中可用的通用平台 **[!UICONTROL Actions]** 选项。 For more on this, refer to this [section](../../platform/using/updating-data.md).
+   和选 **[!UICONTROL Mass update of selected lines]** 项 **[!UICONTROL Merge selected lines]** 是所有菜单中可用的通用平台 **[!UICONTROL Actions]** 选项。 有关更多信息，请参阅此](../../platform/using/updating-data.md)章节[。
 
 ## 右键单击菜单 {#right-click-menu}
 
@@ -97,7 +94,7 @@ ht-degree: 0%
 
 右击菜单中提供以下选项：
 
-**[!UICONTROL Open]**: 通过此选项，您可以访问活动属性。
+**[!UICONTROL Open]**:通过此选项，您可以访问活动属性。
 
 **[!UICONTROL Display logs:]** 通过此选项，可以视图所选活动的任务执行日志。 请参阅显 [示日志](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)。
 
