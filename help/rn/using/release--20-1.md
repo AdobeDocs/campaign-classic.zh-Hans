@@ -9,11 +9,8 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e765777d79df28ae306d02512851b1b3f49018d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -39,7 +36,7 @@ _2020年3月13日_
 
 _2020年2月17日_
 
-**新增内容？**
+**新增功能**
 
 <table> 
  <thead> 
@@ -99,7 +96,7 @@ _2020年2月17日_
 
 * 已将 **开始挂起** 视图添加到“管理”>“审核”>“工作流状态”节点。 这允许您监视实例上正在等待operationMgt进程启动的所 **有工作流** 。 此视图包含在营销活动包中。 [阅读更多](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
-**其他更改**
+**其他变更**
 
 * 在Linux上，nlserver服务启动现在使用系统单元而不是/etc/init.d/nlserver6脚本。 安装20.1包时，将自动执行到新启动方案的迁移。 /etc/init.d/nlserver6仍然提供，但是为了与nlserver服务(开始、重新启动、停止等)交互，我们建议您直接使用systemctl命令。
 
