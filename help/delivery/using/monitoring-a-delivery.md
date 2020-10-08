@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 2%
@@ -70,7 +67,7 @@ ht-degree: 2%
 >
 >如果未为投放启用跟踪，则不显示此选项卡。
 
-跟踪配置在投放向导的相应阶段执行。 请参 [阅如何配置跟踪的链接](../../delivery/using/how-to-configure-tracked-links.md)。
+跟踪配置在投放向导的相应阶段执行。 See [How to configure tracked links](../../delivery/using/how-to-configure-tracked-links.md).
 
 **[!UICONTROL Tracking]** 数据在投放报告中解释。 请参阅[此章节](../../reporting/using/delivery-reports.md)。
 
@@ -138,7 +135,7 @@ ht-degree: 2%
 
 * 尽可能减少电子邮件的大小。 建议的电子邮件最大大小约为35KB。 电子邮件投放的大小会在发送服务器中生成一定数量的卷。
 
-* 大型投放(如超过100万收件人的投放)需要在发送队列中留出空间。 单单这一点对服务器来说并不是问题，但是，如果与其他许多大型投放一起同时出现，就会引起发送延迟。
+* 大型投放(如100多万收件人的投放)需要在发送队列中留出空间。 单单这一点对服务器来说并不是问题，但是，如果与其他许多大型投放一起同时出现，就会引起发送延迟。
 
 * 电子邮件中的个性化会为每个收件人从数据库中提取数据。 如果存在许多个性化元素，则会增加准备投放所需的数据量。
 
@@ -248,7 +245,7 @@ ht-degree: 2%
 
    要更正此问题，需要检查工作流和投放内容，以明确确定尝试调用该表的个性化内容以及是否可以映射该表。 从此处，在HTML中删除对此表的调用或将映射修复到投放将成为解析路径。
 
-* 在中间源部署模型中，投放日志中可能显示以下消息： **在中间来源服务器上调用方法“AppendDeliveryPart”时出错：&#39;与服务器通信错误：请检查此配置是否正确。 代码HTTP 408“服务暂时不可用”**。
+* 在中间源部署模型中，投放日志中可能显示以下消息： **在中间来源服务器上调用方法“AppendDeliveryPart”时出错：&#39;与服务器通信错误：请检查此配置是否正确。 编码HTTP 408“服务暂时不可用”**。
 
    原因与性能问题有关。 这意味着在将数据发送到中间源服务器之前，营销实例花费了太多时间构建数据。
 
