@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: f26cc65a-76be-4b7a-bde3-d0cbe3eedaaf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Importing and exporting audiences{#importing-and-exporting-audiences}
+# 导入和导出受众{#importing-and-exporting-audiences}
 
 ## 导入受众 {#importing-an-audience}
 
@@ -37,7 +34,7 @@ ht-degree: 0%
 1. 在打开的窗口中，单 **[!UICONTROL Select a shared audience]** 击以转至其他Adobe Experience Cloud解决方案提供的共享受众/区段的列表。
 1. 选择受众并进行确认。 受众信息将自动完成。
 
-   请注意，要能够导入共享受众，您应在管理控制台中 **[!UICONTROL Audience library]** 分配产品，并成为Audience Manager中的管理员。 有关详细信息，请参阅Admin [Console文档](https://helpx.adobe.com/enterprise/managing/user-guide.html)。
+   请注意，要能够导入共享受众，您应在管理控制台中 **[!UICONTROL Audience library]** 分配产品，并成为Audience Manager中的管理员。 For more on this, refer to the [Admin console documentation](https://helpx.adobe.com/cn/enterprise/managing/user-guide.html).
 
    ![](assets/aam_import_audience_3.png)
 
@@ -53,9 +50,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果要将受众从AdobeAnalytics导入Adobe Campaign，则首先需要在People Core Service或Audience Manager中共享这些受众。 此过程需要12-24小时，必须与活动进行24-36小时的同步。
+>如果要将受众从Adobe Analytics导入Adobe Campaign，则首先需要在People Core Service或Audience Manager中共享这些受众。 此过程需要12-24小时，必须与活动在24-36小时内进行同步。
 >
->在这种情况下，受众共享时间最长可达60小时。 有关People Core服务和Analytics经理中Adobe受众受众共享的详细信息，请参阅本 [文档](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html)。
+>在这种情况下，受众共享时间最长可达60小时。 有关People Core服务和Adobe Analytics经理中的受众受众共享的详细信息，请参阅本 [文档](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html)。
 
 每次同步受众数据时，将完全替换数据。 只能导入区段。 不支持包括键值对、特征和规则在内的粒度数据。
 
@@ -85,9 +82,9 @@ ht-degree: 0%
 
 然后，将导出受众。 保存受众活动具有两个出站过渡。 主过渡包含成功导出的收件人。 附加过渡包含无法用访客ID或声明ID映射的收件人。
 
-Adobe Campaign与人员核心服务之间的同步需要24到36小时。 在此期间后，您将能够在People核心服务中找到新的受众，并在其他Adobe Experience Cloud解决方案中重复使用它。 有关在Adobe People核心服务中使用Adobe Campaign共享受众的更多信息，请参阅本 [文档](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-audience-create.html)。
+Adobe Campaign与人员核心服务之间的同步需要24到36小时。 在此期间，您将能够在People核心服务中找到新的受众，并在其他Adobe Experience Cloud解决方案中重复使用它。 有关在Adobe Campaign人员核心服务中使用受众共享Adobe的详细信息，请参阅本 [文档](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-audience-create.html)。
 
 >[!NOTE]
 >
->要进行核对，记录必须具有Adobe Experience Cloud ID(“访客ID”或“声明ID”)。 在导出和导入受众时，将忽略没有Adobe Experience Cloud ID的记录。
+>为了进行核对，记录必须具有Adobe Experience CloudID(“访客ID”或“声明ID”)。 在导出和导入受众时，不具有Adobe Experience CloudID的记录将被忽略。
 
