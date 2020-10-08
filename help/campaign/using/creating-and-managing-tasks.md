@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: d71e5ff7-1e81-4c49-9673-c6fae890029b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3737'
 ht-degree: 0%
@@ -75,19 +72,19 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其整个生
 
 ![](assets/s_ncs_user_task_create_simple.png)
 
-您还可以通过任务的仪表板创建活动: 在这种情况下，它会自动链接到创建它时所使用的活动。
+您还可以通过任务的仪表板创建活动:在这种情况下，它会自动链接到它所创建的活动。
 
 ![](assets/s_ncs_user_task_create_new_from_op.png)
 
-创建任务后，该计划会添加到活动列表和任务。 要编辑任务，请从计划中选择它，或在任务概述中单击其名称，然后单击链 **[!UICONTROL Open]** 接。
+创建任务后，它将添加到活动计划和任务列表。 要编辑任务，请从计划中选择它，或在任务概述中单击其名称，然后单击链 **[!UICONTROL Open]** 接。
 
 ![](assets/s_ncs_user_task_edit_simple.png)
 
 要进行配置，您必须指明：
 
-* 管理者和参加者： 请参阅 [管理者和参加者](#manager-and-participants)。
-* 创建计划: 请参阅 [执行计划](#execution-schedule)。
-* 承诺成本： 请参阅 [费用和收入](#expenses-and-revenues)。
+* 管理者和参加者：请参阅 [管理者和参加者](#manager-and-participants)。
+* 创建计划:请参阅 [执行计划](#execution-schedule)。
+* 承诺成本：请参阅 [费用和收入](#expenses-and-revenues)。
 
 还可以向审阅者广告(请参 [阅审](#reviewers)阅者)和引用文档 [(请参阅引用](#documents-referenced)的文档)。
 
@@ -111,7 +108,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其整个生
 
 ![](assets/s_ncs_user_task_add_resources.png)
 
-单击 **[!UICONTROL Ok]** 并输入使用率： 这表示在任务执行期间分配给运算符的负载。 此比率仅表示，以百分比表示。
+单击 **[!UICONTROL Ok]** 并输入使用率：这表示在任务执行期间分配给运算符的负载。 此比率仅表示，以百分比表示。
 
 例如，对于执行计划设置为10天的任务，使用率为50%的操作员将在此任务上移动其10天半工作时间。
 
@@ -219,7 +216,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其整个生
 
 ### 延迟任务 {#late-tasks}
 
-如果任务已达到其结束日期，且其状态未更改为，则该订阅将延迟 **[!UICONTROL Finished]**。 默认情况下，当任务延迟时，不会警告任何运算符。 您可以配置通知电子邮件的投放: 即使所有运营商不参与任务，也可以通知它们。
+如果任务已达到其结束日期，且其状态未更改为，则该订阅将延迟 **[!UICONTROL Finished]**。 默认情况下，当任务延迟时，不会警告任何运算符。 您可以配置通知电子邮件的投放:即使所有运营商不参与任务，也可以通知它们。
 
 转到框 **[!UICONTROL Resources]** 并将运算符添加到字 **[!UICONTROL Assignation]** 段。 要通知多个人，请选择操作员组。
 
@@ -248,8 +245,8 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其整个生
 
 要创建直接链接到任务的项目，请执行以下操作：
 
-1. 打开项目计划: 在主页上，转到 **[!UICONTROL Campaigns > Browse > Other choices > Programs]**。 整个项目计划在窗口的右侧部分打开。
-1. 在计划中，单击所需的项目: 窗子里有项目。
+1. 打开项目计划:在主页上，转到 **[!UICONTROL Campaigns > Browse > Other choices > Programs]**。 整个项目计划在窗口的右侧部分打开。
+1. 在计划中，单击所需的项目:窗子里有项目。
 1. 在此窗口中，单击 **[!UICONTROL Open]**。 项目计划打开。
 1. 单击右 **[!UICONTROL Add]** 侧计划上方的按钮，然后单击 **[!UICONTROL Add a task]**。
 
@@ -257,7 +254,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其整个生
 
 ### 运营商可用性 {#operator-availability}
 
-在任务仪表板中，操作符名称旁的图标表示在任务所涵盖的期间，他们已在处理其他任务或事件。 (经营者负责或参与的任务: 他出现在 **[!UICONTROL Assigned to]** 字段或任务 **[!UICONTROL Resources]** 框中)。
+在任务仪表板中，操作符名称旁的图标表示在任务所涵盖的期间，他们已在处理其他任务或事件。 (经营者负责或参与的任务:他出现在 **[!UICONTROL Assigned to]** 字段或任务 **[!UICONTROL Resources]** 框中)。
 
 ![](assets/mrm_task_alert_operator_busy.png)
 
@@ -289,7 +286,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其整个生
 
 ### 控制任务 {#control-tasks}
 
-A **[!UICONTROL Control task]** 与投放批准关联： 批准定位、内容、提取文件、预算或验证。
+A **[!UICONTROL Control task]** 与投放批准关联：批准定位、内容、提取文件、预算或验证。
 
 ![](assets/s_ncs_user_task_new_control.png)
 
@@ -301,7 +298,7 @@ A **[!UICONTROL Control task]** 与投放批准关联： 批准定位、内容�
 
 ### 营销资源创建任务 {#marketing-resource-creation-task}
 
-营销资源创建任务可用于管理营销资源的创建和发布。 如果您通过任务而非通过资源本身管理资源，您可以：
+营销资源创建任务可用于管理营销资源的创建和发布。 如果您通过任务而不是通过资源本身管理资源，您可以：
 
 * 通过活动控制资源创建过程。
 * 视图计划中的资源创建过程。
@@ -314,13 +311,13 @@ A **[!UICONTROL Control task]** 与投放批准关联： 批准定位、内容�
 营销资源创建任务与链接到它的资源交互。 这意味着：
 
 * 资源创建计划和与其关联的成本通过任务进行管理。
-* 操作员可以处理资源，如普通资源（下载或上传、锁定和解锁）: 这不会影响任务。
-* 资源审批和发布可以通过以下任务进行： 如果启 **[!UICONTROL Publish the marketing resource]** 用了该选项，则任务完成后，资源将自动获得批准并发布。 如果未启用该选项，则任务与资源不会交互： 对一个不会影响另一个。
+* 操作员可以处理资源，如普通资源（下载或上传、锁定和解锁）:这不会影响任务。
+* 资源审批和发布可以通过以下任务进行：如果启 **[!UICONTROL Publish the marketing resource]** 用了该选项，则任务完成后，资源将自动获得批准并发布。 如果未启用该选项，则任务与资源不会交互：对一个不会影响另一个。
 
-   您可以使用一系列链接任务来定义完整的审批周期。 仅选 **[!UICONTROL Publish the marketing resource]** 中最后一个任务: 需要完成所有任务才能发布资源。 此外，当您创建子营销资源任务时，将在子任务中自动选择资源。
+   您可以使用一系列链接任务来定义完整的审批周期。 仅选 **[!UICONTROL Publish the marketing resource]** 中最后一个任务:需要完成所有任务才能发布资源。 此外，当您创建子营销资源任务时，将在子任务中自动选择资源。
 
-   * **通过资源**: 如果您提交资源进行审批或批准，则这些操作不会影响任务。
-   * **通过任务**: 如果 **[!UICONTROL Publish the marketing resource]** 选项已在任务中选中，则任务完成后，资源将自动获得批准并发布（请参阅上文）。 如果未选中该选项，则任务与资源不会交互： 对一个不会影响另一个。
+   * **通过资源**:如果您提交资源进行审批或批准，则这些操作不会影响任务。
+   * **通过任务**:如果 **[!UICONTROL Publish the marketing resource]** 选项已在任务中选中，则任务完成后，资源将自动获得批准并发布（请参阅上文）。 如果未选中该选项，则任务与资源不会交互：对一个不会影响另一个。
 
 #### 配置营销资源创建任务 {#configuring-a-marketing-resource-creation-task}
 
@@ -330,10 +327,10 @@ A **[!UICONTROL Control task]** 与投放批准关联： 批准定位、内容�
 
 在字 **[!UICONTROL Marketing resource]** 段中，定义要通过此任务管理的资源。 您可以：
 
-* 选择现有资源： 下拉列表将优惠所有具有状态的资源 **[!UICONTROL Being edited]**。
-* 创建资源： 单击图 **[!UICONTROL Select the link]** 标，然后单击图 **[!UICONTROL Create]** 标。
+* 选择现有资源：下拉列表将优惠所有具有状态的资源 **[!UICONTROL Being edited]**。
+* 创建资源：单击图 **[!UICONTROL Select the link]** 标，然后单击图 **[!UICONTROL Create]** 标。
 
-通过 **[!UICONTROL Publish the marketing resource]** 此选项，可自动发布资源： 一旦任务 **[!UICONTROL Finished]**&#x200B;生效，资源的状态即自动切换为 **[!UICONTROL Published]**，即使它既未提交审批也未获得批准，包括完成任务的审阅者不是资源中定义的内容审阅者。
+通过 **[!UICONTROL Publish the marketing resource]** 此选项，可自动发布资源：一旦任务 **[!UICONTROL Finished]**&#x200B;生效，资源的状态即自动切换为 **[!UICONTROL Published]**，即使它既未提交审批也未获得批准，包括完成任务的审阅者不是资源中定义的内容审阅者。
 
 该 **[!UICONTROL Publish the resource]** 按钮可用，资源发布审阅者会收到通知电子邮件，告知其已准备好发布。 在选项卡 **[!UICONTROL Edit > Tracking]** 中，任务审阅者的审阅和发布变为可见。 如果已定义资源后处理工作流，则立即执行该工作流。
 
@@ -373,16 +370,16 @@ A **[!UICONTROL Control task]** 与投放批准关联： 批准定位、内容�
 * **[!UICONTROL In progress]** 发送电子邮件，直到到达结束日期
 * **[!UICONTROL Finished]** 到达结束日期后。
 
-#### Configuration {#configuration}
+#### 配置{#configuration}
 
 ![](assets/mrm_task_notif_dashboard.png)
 
 在创建过程中，必须在任务中输入以下元素：
 
-* **[!UICONTROL Assigned to]** : 接收电子邮件的运营商或操作员组。 如果在发送电子邮件后重新分配任务，则电子邮件将不会发送给新操作员(为此，您需要重新初始化任务并更改其开始日期)。
-* **任务开始日期**: 通知电子邮件的发送日期。 此日期必须在将来记录任务时发生。
-* **任务结束日期**: 任务状态更改为的日期 **[!UICONTROL Finished]**。 默认情况下，结束日期与开始日期相同。 但是，为任务指定持续时间允许您象征操作员在计划中必须执行的时间量（如果需要）。
-* **[!UICONTROL Description]** : 此处输入的文本将显示在通知电子邮件的正文中。
+* **[!UICONTROL Assigned to]** :接收电子邮件的运营商或操作员组。 如果在发送电子邮件后重新分配任务，则电子邮件将不会发送给新操作员(为此，您需要重新初始化任务并更改其开始日期)。
+* **任务开始日期**:通知电子邮件的发送日期。 此日期必须在将来记录任务时发生。
+* **任务结束日期**:任务状态更改为的日期 **[!UICONTROL Finished]**。 默认情况下，结束日期与开始日期相同。 但是，为任务指定持续时间允许您象征操作员在计划中必须执行的时间量（如果需要）。
+* **[!UICONTROL Description]** :此处输入的文本将显示在通知电子邮件的正文中。
 
    ![](assets/mrm_task_notif_dashboard_msg.png)
 
@@ -418,13 +415,13 @@ A **[!UICONTROL Control task]** 与投放批准关联： 批准定位、内容�
 
 对于分组任务,Adobe Campaign会自动将父任务的结束日期分配给子任务，作为开始日期。 例如，如果“创 **建邀请** ”任务在10月15日下午3:30结束，则“发送邀 **请电子邮件** ”子任务将于10月15日下午3:30开始。
 
-此外，如果你推迟了父母任务的结束，其子任务可能会受到影响： 这些是状态为且其任务日 **[!UICONTROL Scheduled]** 期早于父开始的新结束日期的子任务。 任务的持续时间保持不变。 如果子开始的任务日期晚于父任务的新结束日期，则子任务不受影响。
+此外，如果你推迟了父母任务的结束，其子任务可能会受到影响：这些是状态为且其任务日 **[!UICONTROL Scheduled]** 期早于父开始的新结束日期的子任务。 任务的持续时间保持不变。 如果子开始的任务日期晚于父任务的新结束日期，则子任务不受影响。
 
 **示例**
 
 任务A计划于10月9日下午5点结束，其父有两个子任务,任务A和任务B。任务A计划于10月10日下午2点开始,任务B计划于10月12日上午8点开始。
 
-让我们推迟家长任务: 现在10月11日下午1点结束。 只有任务A推迟，将于10月11日下午1点开始。
+让我们推迟家长任务:现在10月11日下午1点结束。 只有任务A推迟，将于10月11日下午1点开始。
 
 ![](assets/mrm_task_parent_postpones_child.png)
 
@@ -444,6 +441,7 @@ A **[!UICONTROL Control task]** 与投放批准关联： 批准定位、内容�
 >
 >* 任务状态会自动更新。
 >* 即使有效期结束，未关闭的任务仍显示在进行中的列表中。 警告会通知运算符任务已延迟。
+
 >
 
 
@@ -466,7 +464,7 @@ For more on this, refer to [Accessing tasks](#accessing-tasks).
 
    ![](assets/s_ncs_user_task_planed_send_message.png)
 
-   要发送此第一个通知，请单击 **[!UICONTROL Yes]**。 此通知会告诉他们下一个任务，并包含有关内容的详细信息以及截止日期之前剩余天数。
+   要发送此第一个通知，请单击 **[!UICONTROL Yes]**。 此通知会告知他们下一个任务，并包含有关内容的详细信息以及截止日期前剩余天数。
 
    在创建任务并计划在将来时，其状态为 **[!UICONTROL Scheduled]**。
 
