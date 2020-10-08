@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c8cfdb67a4be2bc27baa363032c74a4aa8665e2a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2908'
 ht-degree: 0%
@@ -31,9 +28,9 @@ ht-degree: 0%
 
 ![](assets/ncs_cleanup_workflow.png)
 
-## Configuration {#configuration}
+## 配置{#configuration}
 
-数据库清理配置在两个级别上： 在工作流调度程序和部署向导中。
+数据库清理配置在两个级别上：在工作流调度程序和部署向导中。
 
 ### 调度程序 {#the-scheduler}
 
@@ -68,7 +65,7 @@ ht-degree: 0%
 * 已删除投放: **NmsCleanup_RecycledDeliveryPurgeDelay** (请参 [阅清除要删除或回收的投放](#cleanup-of-deliveries-to-be-deleted-or-recycled))
 * 导入拒绝： **NmsCleanup_RejectsPurgeDelay** (请参 [阅Cleanup of rejects gerated by imports](#cleanup-of-rejects-generated-by-imports-))
 * 访客用户档案: **NmsCleanup_VisitorPurgeDelay** (请参 [阅访客清除](#cleanup-of-visitors))
-* 优惠建议: **NmsCleanup_CompationPurgeDelay** (请参阅 [Cleanup of propositions](#cleanup-of-propositions))
+* 优惠建议: **NmsCleanup_CompationPurgeDelay** (请参阅 [命题清除](#cleanup-of-propositions))
 
    >[!NOTE]
    >
@@ -396,7 +393,7 @@ DELETE FROM XtkWorkflowLogin WHERE iWorkflowId NOT IN (SELECT iWorkflowId FROM X
 
 ### 清除孤立工作表 {#cleanup-of-orphan-work-tables}
 
-此任务将删除链接到组的孤立工作表。 NmsGroup **表存** 储要清除的组（类型不同于0）。 表名的前缀是 **grp**。 要标识要清除的组，请使用以下查询:
+此任务删除链接到组的孤立工作表。 NmsGroup **表存** 储要清除的组（类型不同于0）。 表名的前缀是 **grp**。 要标识要清除的组，请使用以下查询:
 
 ```
 SELECT iGroupId FROM NmsGroup WHERE iType>0"
@@ -487,8 +484,8 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 此任务清 **除NmsEmailErrorStat** 表。 主项目(**coalesceErrors**)定义两个日期：
 
-* **开始日期**: 与NmsLastErrorStatCoalesce选项相 **匹配的下一进程的日期** ，或表中最近的日期。
-* **结束日期**: 当前服务器日期。
+* **开始日期**:与NmsLastErrorStatCoalesce选项相 **匹配的下一进程的日期** ，或表中最近的日期。
+* **结束日期**:当前服务器日期。
 
 如果开始日期大于或等于结束日期，则不进行任何流程。 在这种情况下，将 **显示coalesceUpToDate** 消息。
 
