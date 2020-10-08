@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1673'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -29,11 +26,11 @@ ht-degree: 4%
 
 操作步骤：
 
-1. **分析投放**: 通过此步骤，您可以准备要传送的消息。 请参阅 [分析投放](#analyzing-the-delivery)。
+1. **分析投放**:通过此步骤，您可以准备要传送的消息。 请参阅 [分析投放](#analyzing-the-delivery)。
 
    本节将介绍在分析过程中应 [用的规则](#validation-process-with-typologies) 。 可用校验模式在更改批准 [模式部分中详细](#changing-the-approval-mode) 。
 
-1. **发送验证**: 通过此步骤，您可以批准内容、URL、个性化字段等。 请参阅 [发送验证](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)[和定义特定验证目标](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
+1. **发送验证**:通过此步骤，您可以批准内容、URL、个性化字段等。 请参阅 [发送验证](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)[和定义特定验证目标](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
 
 >[!IMPORTANT]
 >
@@ -99,13 +96,13 @@ ht-degree: 4%
 
 此选项卡允许访问以下选项：
 
-* **[!UICONTROL Label and code of the delivery]** : 本节中的选项用于计算投放分析阶段中这些字段的值。 字 **[!UICONTROL Compute the execution folder during the delivery analysis]** 段计算将在投放阶段包含此分析操作的文件夹的名称。
-* **[!UICONTROL Approval mode]** : 此字段允许您在完成投放后定义手动或自动分析。 这些校验模式显示在更 [改批准模式部分](#changing-the-approval-mode) 。
-* **[!UICONTROL Prepare the delivery parts in the database]** : 此选项使您能够提高投放分析性能。 有关更多信息，请参阅[此章节](#improving-delivery-analysis)。
-* **[!UICONTROL Prepare the personalization data with a workflow]** : 此选项允许您在自动工作流程中准备包含在投放中的个性化数据，这可以显着提高执行个性化的性能。 有关此方面的详细信息，请参 [阅优化个性化](../../delivery/using/personalization-fields.md#optimizing-personalization)。
-* **[!UICONTROL Start job in a detached process]** : 通过此选项，您可以在单独的流程中开始投放分析。 默认情况下，分析函数使用Adobe Campaign应用程序服务器进程(web nlserver)。 通过选择此选项，即使在应用程序服务器故障事件，您也能确保完成分析。
-* **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : 此选项会在查询阶段将SQL投放日志添加到分析日志。
-* **[!UICONTROL Ignore personalization scripts during sending]** : 通过此选项，可以绕过对HTML内容中的JavaScript指令的解释。 它们将按原样显示在已交付的内容中。 这些指令与&lt;%=标 **签一起引入** 。)
+* **[!UICONTROL Label and code of the delivery]** :本节中的选项用于计算投放分析阶段中这些字段的值。 字 **[!UICONTROL Compute the execution folder during the delivery analysis]** 段计算将在投放阶段包含此分析操作的文件夹的名称。
+* **[!UICONTROL Approval mode]** :此字段允许您在完成投放后定义手动或自动分析。 这些校验模式显示在更 [改批准模式部分](#changing-the-approval-mode) 。
+* **[!UICONTROL Prepare the delivery parts in the database]** :此选项使您能够提高投放分析性能。 有关更多信息，请参阅[此章节](#improving-delivery-analysis)。
+* **[!UICONTROL Prepare the personalization data with a workflow]** :此选项允许您在自动工作流程中准备包含在投放中的个性化数据，这可以显着提高执行个性化的性能。 有关此方面的详细信息，请参 [阅优化个性化](../../delivery/using/personalization-fields.md#optimizing-personalization)。
+* **[!UICONTROL Start job in a detached process]** :通过此选项，您可以在单独的流程中开始投放分析。 默认情况下，分析函数使用Adobe Campaign应用程序服务器进程(web nlserver)。 通过选择此选项，即使在应用程序服务器故障事件，您也能确保完成分析。
+* **[!UICONTROL Log SQL queries generated during the analysis in the journal]** :此选项会在查询阶段将SQL投放日志添加到分析日志。
+* **[!UICONTROL Ignore personalization scripts during sending]** :通过此选项，可以绕过对HTML内容中的JavaScript指令的解释。 它们将按原样显示在已交付的内容中。 这些指令与&lt;%=标 **签一起引入** 。)
 
 ### 提高投放分析性能 {#improving-delivery-analysis}
 
@@ -217,11 +214,11 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** 类型类型在销售压力管理框架内使用。 有关更多信息，请参阅[此章节](../../campaign/using/about-marketing-resource-management.md)。
+>**[!UICONTROL Arbitration]** 类型类型在销售压力管理框架内使用。 如需详细信息，请参阅[此部分](../../campaign/using/about-marketing-resource-management.md)。
 
 ## 更改审批模式 {#changing-the-approval-mode}
 
-投放 **[!UICONTROL Analysis]** 属性的选项卡允许您选择校验模式。 如果在分析期间生成警告(例如，如果某些字符在投放的主题中突出等)，您可以配置投放以定义是否应仍执行该字符。 默认情况下，用户必须确认在分析阶段结束时发送消息： 这是手 **动验** 证。
+投放 **[!UICONTROL Analysis]** 属性的选项卡允许您选择校验模式。 如果在分析期间生成警告(例如，如果某些字符在投放的主题中突出等)，您可以配置投放以定义是否应仍执行该字符。 默认情况下，用户必须确认在分析阶段结束时发送消息：这是手 **动验** 证。
 
 从相应字段的下拉列表中选择其他批准模式。
 
@@ -229,6 +226,6 @@ ht-degree: 4%
 
 可以使用以下批准模式：
 
-* **[!UICONTROL Manual]**: 在分析阶段结束时，用户必须确认投放以发送开始。 为此，请单击 **[!UICONTROL Start]** 按钮以启动投放。
-* **[!UICONTROL Semi-automatic]**: 如果分析阶段不生成警告消息，则自动开始发送。
-* **[!UICONTROL Automatic]**: 发送在分析阶段结束时自动开始，而不管其结果如何。
+* **[!UICONTROL Manual]**:在分析阶段结束时，用户必须确认投放以发送开始。 为此，请单击 **[!UICONTROL Start]** 按钮以启动投放。
+* **[!UICONTROL Semi-automatic]**:如果分析阶段不生成警告消息，则自动开始发送。
+* **[!UICONTROL Automatic]**:发送在分析阶段结束时自动开始，而不管其结果如何。
