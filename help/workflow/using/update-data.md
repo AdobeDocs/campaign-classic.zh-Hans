@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: c94ce5b7-aa8a-4ea2-845d-68c9c7dc2a7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -31,11 +28,11 @@ ht-degree: 0%
 
 该 **[!UICONTROL Operation type]** 字段允许您选择要对数据库中的数据执行的过程：
 
-* **[!UICONTROL Insert or update]**: 添加数据或更新数据（如果已添加）。
-* **[!UICONTROL Insert]**: 仅添加数据。
-* **[!UICONTROL Update]**: 仅更新数据。
-* **[!UICONTROL Update and merge collections]**: 更新数据并选择主记录，然后链接链接到此主记录中重复的元素。 然后，无需创建孤立的附加元素即可删除重复。
-* **[!UICONTROL Delete]**: 删除数据。
+* **[!UICONTROL Insert or update]**:添加数据或更新数据（如果已添加）。
+* **[!UICONTROL Insert]**:仅添加数据。
+* **[!UICONTROL Update]**:仅更新数据。
+* **[!UICONTROL Update and merge collections]**:更新数据并选择主记录，然后链接链接到此主记录中重复的元素。 然后，无需创建孤立的附加元素即可删除重复。
+* **[!UICONTROL Delete]**：删除数据。
 
 ![](assets/s_advuser_update_data_1.png)
 
@@ -63,7 +60,7 @@ ht-degree: 0%
 
 ![](assets/s_advuser_update_data_3.png)
 
-选择所有要更新的字段，并根据要执行的更新添加条件（如有必要）。 为此，请使用 **[!UICONTROL Taken into account if]** 列。 条件会一个接一个地应用，并与列表中的顺序保持一致。 使用右侧的箭头更改更新的顺序。
+选择所有要更新的字段，并根据要执行的更新添加条件（如有必要）。 要实现此目的，请使用 **[!UICONTROL Taken into account if]** 列。条件会一个接一个地应用，并与列表中的顺序保持一致。 使用右侧的箭头更改更新的顺序。
 
 可以多次使用同一目标字段。
 
@@ -110,7 +107,7 @@ ht-degree: 0%
 
 1. 选择要移到主记录的集合和要更新的字段。
 
-   输入一次识别一个或多个辅助记录时适用于这些记录的规则。 为此，可使用表达式生成器。 For more on this, refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions). 例如，通过指定它是所有必须保留的不同记录中最近更新的值。
+   输入一次识别一个或多个辅助记录时适用于这些记录的规则。 为此，可使用表达式生成器。 有关更多信息，请参阅此](../../platform/using/defining-filter-conditions.md#building-expressions)章节[。例如，通过指定它是所有必须保留的不同记录中最近更新的值。
 
    然后输入要考虑规则的条件。
 
@@ -124,9 +121,9 @@ ht-degree: 0%
 
 辅助记录的数据与主记录相关联（如果定义的规则适用）。 根据所选的更新类型，可以删除辅助记录。
 
-## 示例： 更新扩充 {#example--update-data-following-an-enrichment}
+## 示例：更新扩充 {#example--update-data-following-an-enrichment}
 
-第 [2步： 将丰富数据写入用例的](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) “购买”表部分，该表部分详细描述创建重新列表优惠的过程，以及在扩充活动之后的数据更新的示例。
+第 [2步：将丰富数据写入用例的](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) “购买”表部分，该表部分详细描述创建重新列表优惠的过程，以及扩充活动后的数据更新的示例。
 
 ## 输入参数 {#input-parameters}
 
