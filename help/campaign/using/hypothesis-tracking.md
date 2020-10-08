@@ -1,7 +1,7 @@
 ---
-title: 假设跟踪
-seo-title: 假设跟踪
-description: 假设跟踪
+title: 假设验证跟踪
+seo-title: 假设验证跟踪
+description: 假设验证跟踪
 seo-description: null
 page-status-flag: never-activated
 uuid: cb949a9d-8bbe-446b-b5b4-22234a91a68b
@@ -11,73 +11,73 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: 4452bfc6-9ac4-4d81-a63c-879a163c13ee
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
 
-# 假设跟踪{#hypothesis-tracking}
+# 假设验证跟踪{#hypothesis-tracking}
 
-假设计算的结果可在Adobe Campaign平台的不同级别获得：通过假设和目标群体反应计算的指标通过实际假设以及通过活动和交付提供的假设报告中可见。
+假设验证计算结果可在Adobe Campaign平台的不同级别上获得：假设验证和目标群反应计算的指标可通过实际假设验证以及活动和投放提供的假设验证报告看到。
 
-## 假设结果 {#hypothesis-results}
+## 假设验证结果 {#hypothesis-results}
 
 ### 指标 {#indicators}
 
-一旦计算了该假设，就会自动更新多个测量指标。 这些选项卡在假 **[!UICONTROL General]** 说标签中可用。
+一旦计算了假设验证，就会自动更新多个度量指标。 这些选项卡位 **[!UICONTROL General]** 于假设验证的选项卡中。
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
 这些指标是：
 
-* **被申请人联系人数**:与假设相符的接触个体的数量。
-* **联系的响应率**:答复者联系人数／交付期间联系的总人数。
-* **答复者控制组联系人数**:与假设匹配的控制组数。
-* **控制组的响应率**:答复者控制组数量／交付控制组总数。
-* **反应数**:表中记录的数量包括个人、假设和事务表之间的关系。
+* **被申请人联系人数**:与假设验证匹配的联系人数。
+* **联系的响应率**:答复者联系人数/投放内联系的总人数。
+* **答复者对照组联系人数**:与对照组匹配的假设验证数。
+* **对照组的响应率**:答复对照组数/投放对照组总数。
+* **反应数**:表中记录数，它包含个人、假设验证和事务表之间的关系。
 
-对于指示器的完整列表，单击链 **[!UICONTROL Display the list]** 接：
+要获得完整的列表，请单击链 **[!UICONTROL Display the list]** 接：
 
 ![](assets/response_hypothesis_indicators_002.png)
 
-指示器提供以下信息：
+指标提供了以下信息：
 
-* **联系人口总收入**:总数超过所联系的个人数。
-* **控制组的总收益**:控制组数量的总额。
-* **每个联系人的平均收入**:总数／联系人数。
-* **控制组平均收入**:总金额／控制组。
-* **每位联系人的总利润**:联系的毛利总额。
-* **控制组的毛利总额**:控制组的毛利总额。
-* **每个联系人的平均边距**:总边距／联系人。
-* **控制组的平均边距**:总边距／控制组。
-* **额外收入**:（已联系的平均收入——控制组的平均收入）*已联系的人数
-* **附加边距**:（已联系的平均边距——控制组的平均边距）/已联系人数
-* **每个联系人的平均成本**:计算的交付成本／联系人数。
-* **ROI**:交付的计算成本／每个联系人的总利润
-* **有效的投资回报**:计算的交付成本／附加利润。
-* **重要性**:根据营销活动的重要性，包含0到3的值。
+* **联系的人口总收入**:所联系个人总数。
+* **对照组总收入**:对照组总数。
+* **每个联系人的平均收入**:总金额／联系人数。
+* **对照组平均收入**:总金额/对照组。
+* **每个联系人的毛利总额**:联系的毛利总数。
+* **对照组总利润**:对照组毛利总额。
+* **每个联系人的平均边距**:总利润／联系人。
+* **平均对照组率**:总边距/对照组。
+* **额外收入**:(联系人的平均收入-对照组的平均收入)*联系人数
+* **附加利润**:(平均联系对照组率——平均联系客户率)/联系人数
+* **每个联系人的平均成本**:计算投放成本／联系人数。
+* **ROI**:计算投放成本／每个联系人的毛利总额
+* **有效投资回报**:计算投放成本／附加毛利。
+* **重要性**:根据活动重要性，包含0到3的值。
 
 ### 反应 {#reactions}
 
-您可以通过选项卡查看收件人对假设的反 **[!UICONTROL Reactions]** 应。
+您可以通过选项卡视图收件人对假设验证的 **[!UICONTROL Reactions]** 反应。
 
-1. 假设计算完成后，转到Adobe **[!UICONTROL Campaign management > Measurement hypotheses]** Campaign树的节点。
-1. 选择所需假设并单击选 **[!UICONTROL Reactions]** 项卡，以查看可能在营销活动后购买内容的收件人列表。
+1. 假设验证计算完成后，转 **[!UICONTROL Campaign management > Measurement hypotheses]** 到Adobe Campaign树的节点。
+1. 选择所需的假设验证并单击选 **[!UICONTROL Reactions]** 项卡，以视图可能在营销活动后购买某些产品的收件人的列表。
 
    ![](assets/response_hypothesis_reactions_001.png)
 
 ## 报告 {#reports}
 
-您可 **[!UICONTROL Hypothesis report]** 以查看对营销活动和交付执行的假设的结果。 此报告包含由假设计算的指标(有关详细信息，请参阅 [指标](#indicators))。
+您 **[!UICONTROL Hypothesis report]** 可以视图对活动和投放执行的假设验证的结果。 此报告包含由假设验证计算的指标(有关详细信息，请参阅 [指标](#indicators))。
 
-* **在营销活动级别**:单击相 **[!UICONTROL Reports]** 关营销活动的链接，然后选择 **[!UICONTROL Hypothesis report]**。 此报告包含营销活动提交的列表以及为每个交付计算的假设。
+* **在活动级**:单击相 **[!UICONTROL Reports]** 关活动的链接，然后选择 **[!UICONTROL Hypothesis report]**。 此报告包含活动投放的列表以及为每个投放计算的假设验证。
 
    ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **在交付级别**:要访问报告，请打开相关的提交，单击选 **[!UICONTROL Reports]** 项卡中 **[!UICONTROL Summary]** 的，然后选择 **[!UICONTROL Hypothesis report]**。 如果为同一交付计算了若干假设，报告将包含所有假设。
+* **在投放级**:要访问报告，请打开相关投放，单击 **[!UICONTROL Reports]** 选项卡 **[!UICONTROL Summary]** 中的，然后选择 **[!UICONTROL Hypothesis report]**。 如果为同一假设验证计算了多个投放，则报表将包含所有假设验证。
 
    ![](assets/response_hypothesis_delivery_report_001.png)
