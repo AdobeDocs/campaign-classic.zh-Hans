@@ -11,24 +11,24 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 discoiquuid: cf6a79ac-c5b1-4508-bcf1-73f2fbbfe87b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '91'
+ht-degree: 13%
 
 ---
 
 
 # 关于导航层次结构{#about-navigation-hierarchy}
 
-导航层次结构的工作方式与文件浏览器（例如Windows资源管理器）类似。 文件夹可能包含子文件夹。 选择节点后，将显示与该节点对应的视图。
+导航层次结构的工作方式类似于文件浏览器（如Windows资源管理器）。 文件夹可能包含子文件夹。 选择节点后，将显示与该节点对应的视图。
 
-显示的视图是与架构关联的列表以及用于编辑选定行的输入表单。
+显示的视图是与模式相关联的列表和用于编辑所选行的输入表单。
 
 ![](assets/d_ncs_integration_navigation.png)
 
-要向树中添加新文件夹，请右键单击要插入文件夹的分支中的文件夹，然后选择 **[!UICONTROL Add new folder]** 。 在快捷菜单中，选择要创建的文件类型。
+要向树中添加新文件夹，请在要插入文件夹的分支中右键单击该文件夹，然后选择 **[!UICONTROL Add new folder]** 。 在快捷菜单中，选择要创建的文件类型。
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
