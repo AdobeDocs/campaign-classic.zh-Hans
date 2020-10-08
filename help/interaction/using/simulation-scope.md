@@ -11,49 +11,49 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 discoiquuid: ef658468-e20b-45d9-a714-c152e55c1c79
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 3%
 
 ---
 
 
 # 模拟范围{#simulation-scope}
 
-## 范围的定义 {#definition-of-the-scope}
+## 范围定义 {#definition-of-the-scope}
 
 打开选 **[!UICONTROL Scope]** 项卡以选择设置。
 
 以下项目是必填项：
 
-* 环境或选件类别。
-* 提供空间。
-* 联系日期。 在联系日期不符合条件的选件不会被考虑在内。
-* 目标人群。
+* 环境或优惠类别。
+* 优惠空间。
+* 联系日期。 在联系日期不符合资格的优惠不会被考虑在内。
+* 目标。
 
-   如果未在目标上配置过滤器，则会考虑整个收件人表。
+   如果未在目标上配置过滤器，则将考虑整个收件人表。
 
 * 每个目标要模拟的命题数。
 
-   接收方将收到这许多建议。 例如，如果输入5，则每个收件人最多将收到5个优惠建议。
+   收件人将接受这许多建议。 例如，如果输入5，则每个收件人最多将收到5个优惠建议。
 
    ![](assets/offer_simulation_009.png)
 
-要调整要考虑模拟的选件，您可以添加一个或多个主题（在类别中预先指定）。
+要细化要考虑优惠的模拟，您可以添加一个或多个主题(在类别中预先指定)。
 
-您还可以选择对所有选件或仅对联机选件进行模拟。 某些过滤器允许您根据需要更改选择。
+您还可以选择对所有优惠或只对联机的执行模拟。 某些过滤器允许您根据需要更改选择。
 
 >[!NOTE]
 >
->您必须指定联系日期。 这样，交互引擎就可以对选定环境或类别中的选件进行排序。 如果未配置日期，则模拟将引发错误。
+>必须指定联系日期。 这样交互引擎就可以对选定环境或类别中的优惠进行排序。 如果未配置日期，模拟将引发错误。
 
-## 添加报表轴 {#adding-reporting-axes}
+## 添加报告轴 {#adding-reporting-axes}
 
-您可以通过在目标或选件本身上添加报告轴来增强模拟分 **[!UICONTROL Calculations]** 析。
+您可以通过在模拟上添加报告轴或通过选项卡在优惠本身上添加分析 **[!UICONTROL Calculations]** 轴来增强。
 
-要执行此操作，请单击按 **[!UICONTROL Add]** 钮并选择相应的字段。 轴将用于计算模拟，并显示在分析报告中。 For more on this, refer to [Simulation tracking](../../interaction/using/simulation-tracking.md).
+为此，请单击按 **[!UICONTROL Add]** 钮并选择相应的字段。 轴将用于计算模拟，并显示在分析报告中。 For more on this, refer to [Simulation tracking](../../interaction/using/simulation-tracking.md).
 
 ![](assets/offer_simulation_011.png)
 
