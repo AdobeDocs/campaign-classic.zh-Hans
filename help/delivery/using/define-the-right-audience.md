@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 1%
@@ -41,11 +38,11 @@ ht-degree: 1%
 
 本节将介绍这 [些映射](../../delivery/using/selecting-a-target-mapping.md)。
 
-您还可以创建和使用自定义目标映射。 有关更多信息，请参阅[此章节](../../configuration/using/target-mapping.md)。
+您还可以创建和使用自定义目标映射。 如需详细信息，请参阅[此部分](../../configuration/using/target-mapping.md)。
 
 ## 外部收件人 {#external-recipients}
 
-您可以将存储在外部文件而非保存在收件人库中的传送到该数据库。 在本节 [中了解更多](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)。
+您可以将存储在外部文件而非保存在收件人库中的传送到数据库。 在本节 [中了解更多](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)。
 
 ## 发送给您的订阅者 {#send-to-subscribers}
 
