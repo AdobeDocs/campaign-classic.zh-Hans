@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 2d4ccf81-cd85-4f4c-8ba8-5b5612af1e16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1631'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -53,9 +50,9 @@ ht-degree: 1%
 >
 >修改工作流活动的内部名称或工作流本身时，请确保在关闭工作流之前保存该工作流，以便正确考虑新的内部名称。
 
-## 添加和链接活动 {#adding-and-linking-activities}
+## 添加和链接活动{#adding-and-linking-activities}
 
-您现在必须定义各种活动，并在图中将它们链接在一起。 在此配置阶段，我们可以看到图标签和工作流状态（正在编辑）。 窗口的下部仅用于编辑图。 它包含工具栏、活动面板（左侧）和图本身（右侧）。
+您现在必须定义各种活动，并在图表中将它们链接到一起。在此配置阶段，我们可以看到图标签和工作流状态（正在编辑）。 窗口的下部仅用于编辑图。 它包含工具栏、活动面板（左侧）和图本身（右侧）。
 
 ![](assets/new-workflow-2.png)
 
@@ -78,7 +75,7 @@ ht-degree: 1%
 
    ![](assets/new-workflow-3.png)
 
-1. 将活动拖放到开始 **活动** ，将过渡拖放到 **投放** 活动。
+1. Link the activities together by dragging the **Start** activity transition and dropping it on to the **Delivery** activity.
 
    ![](assets/new-workflow-4.png)
 
@@ -100,7 +97,7 @@ ht-degree: 1%
 
    ![](assets/s_user_segmentation_wizard_10.png)
 
-   这样，您可以调整编辑工具的布局： 调色板的显示以及图形对象的概述、大小和对齐方式。
+   这样，您可以调整编辑工具的布局：调色板的显示以及图形对象的概述、大小和对齐方式。
 
    ![](assets/s_user_segmentation_toolbar.png)
 
@@ -116,7 +113,7 @@ ht-degree: 1%
 
    您可以自定义图的背景图像以及与各种活动相关的背景图像。 请参阅 [管理活动图像](../../workflow/using/managing-activity-images.md)。
 
-## 配置活动 {#configuring-activities}
+## 配置活动{#configuring-activities}
 
 多次单击活动以对其进行配置，或右键单击并选择 **[!UICONTROL Open...]**。
 
@@ -126,7 +123,7 @@ ht-degree: 1%
 
 第一个选项卡包含基本配置。 该选 **[!UICONTROL Advanced]** 项卡包含附加参数，这些参数尤其用于在遇到错误时定义行为、指定活动的执行持续时间以及输入初始化脚本。
 
-为了更好地了解活动并提高工作流的易读性，您可以在活动中输入注释： 操作符滚动到活动上时，将自动显示这些值。
+为了更好地了解活动并提高工作流的易读性，您可以在活动中输入注释：操作符滚动到活动上时，将自动显示这些值。
 
 ![](assets/example1-comment.png)
 
@@ -160,7 +157,7 @@ ht-degree: 1%
 
 ### 定位和过滤维度 {#targeting-and-filtering-dimensions}
 
-在数据分段操作期间，定位密钥被映射到过滤维度。 定位维度允许您定义工序所针对的人口： 收件人、合同受益人、运营商、订户等。 该过滤维度允许您根据特定条件选择人口： 合同持有人、新闻稿订阅者等。
+在数据分段操作期间，定位密钥被映射到过滤维度。 定位维度允许您定义工序所针对的人口：收件人、合同受益人、运营商、订户等。 该过滤维度允许您根据特定条件选择人口：合同持有人、新闻稿订阅者等。
 
 例如，要选择拥有5年以上人寿保险单的客户，请选择以下定位维度: **客户端** 和以下过滤维度: **合同持有人**。 然后，您可以在查询活动中定义筛选条件
 
@@ -200,7 +197,7 @@ ht-degree: 1%
 
 原生模板可用于创建技术工作流。 可以配置它们以满足您的需求。
 
-子文 **[!UICONTROL Campaign process]** 件夹集中执行工作流中的进程所需的活动: 任务通知、库存管理、成本计算等。
+子文 **[!UICONTROL Campaign process]** 件夹集中执行工作流中的进程所需的活动:任务通知、库存管理、成本计算等。
 
 >[!NOTE]
 >
@@ -226,7 +223,7 @@ ht-degree: 1%
 
 ## 复制工作流 {#duplicating-workflows}
 
-您可以重复不同类型的工作流。 复制后，工作流的修改不会转移到工作流的副本中。
+您可以重复不同类型的工作流。 复制后，对于原工作流的修改不会被应用到该工作流的副本。
 
 >[!CAUTION]
 >
