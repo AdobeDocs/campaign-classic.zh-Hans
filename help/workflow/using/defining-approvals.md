@@ -9,11 +9,8 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -37,11 +34,11 @@ ht-degree: 0%
 
 此部分提供批准示 [例](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)。
 
-操作员可以通过以下两种方式之一做出响应： 使用电子邮件中链接的网页或通过控制台进行验证。
+操作员可以通过以下两种方式之一做出响应：使用电子邮件中链接的网页或通过控制台进行验证。
 
 >[!NOTE]
 >
->保存响应后，不能修改它。
+>保存响应后，不能修改响应。
 
 ## 发送电子邮件 {#sending-emails}
 
@@ -49,7 +46,7 @@ ht-degree: 0%
 
 操作员管理在本节中有 [详细介绍](../../platform/using/access-management.md)。
 
-批准电子邮件会持续发送。 默认投放模板为 **[!UICONTROL notifyAssignee]**: 它保存在文件夹 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 中。 可以自定义此方案，还建议制作副本并更改每个活动的模板。
+批准电子邮件会持续发送。 默认投放模板为 **[!UICONTROL notifyAssignee]**:它保存在文件夹 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 中。 可以自定义此方案，还建议制作副本并更改每个活动的模板。
 
 通过此模板创建的投放存储在文 **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** 件夹中。
 
@@ -87,14 +84,14 @@ ht-degree: 0%
 >
 >无需指定到期顺序，因为它们按时间顺序进行处理。
 
-当延 **[!UICONTROL Do not terminate the task]** 迟超出时，此选项会使批准保持活动状态。 通过此模式，可以在保留审批活动状态时管理提醒： 运营商仍然可以响应。 此选项默认处于禁用状态，这意味着任务在过期时被视为已完成，并且操作符可能不再响应。
+当延 **[!UICONTROL Do not terminate the task]** 迟超出时，此选项会使批准保持活动状态。 通过此模式，可以在保留审批活动状态时管理提醒：运营商仍然可以响应。 此选项默认处于禁用状态，这意味着任务在过期时被视为已完成，并且操作符可能不再响应。
 
 您可以创建四种过期类型：
 
-* **任务开始后延迟**: 到期时间的计算方法是将指定的时间长度添加到激活批准的日期。
-* **在指定日期后延迟**: 到期时间通过向指定的日期添加时间长度来计算。
-* **在给定日期之前延迟**: 过期时间的计算方法是从您指定的日期减去一段时间。
-* **按脚本计算过期时间**: 过期时间是使用JavaScript计算的。
+* **任务开始后延迟**:到期时间的计算方法是将指定的时间长度添加到激活批准的日期。
+* **在指定日期后延迟**:到期时间通过向指定的日期添加时间长度来计算。
+* **在给定日期之前延迟**:过期时间的计算方法是从您指定的日期减去一段时间。
+* **按脚本计算过期时间**:过期时间是使用JavaScript计算的。
 
    以下示例计算投放开始之日（由vars.deliveryId标识）前24小 **时的到期**:
 
