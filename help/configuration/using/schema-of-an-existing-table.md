@@ -1,7 +1,7 @@
 ---
-title: 现有表的架构
-seo-title: 现有表的架构
-description: 现有表的架构
+title: 现有表的模式
+seo-title: 现有表的模式
+description: 现有表的模式
 seo-description: null
 page-status-flag: never-activated
 uuid: cb766259-8ed7-40a1-8df7-75a8a3f9986d
@@ -11,45 +11,45 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 6877d94d-d6e5-4080-a537-ef1bb6e6f8cf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 11%
 
 ---
 
 
-# 现有表的架构{#schema-of-an-existing-table}
+# 现有表的模式{#schema-of-an-existing-table}
 
 ## 概述 {#overview}
 
-当应用程序需要访问现有表、SQL视图或远程数据库中的数据时，请使用以下数据在Adobe Campaign中创建其架构：
+当应用程序需要访问现有表、SQL视图或来自远程数据库的数据时，请使用以下数据创建其Adobe Campaign:
 
-* 表的名称：使用“sqltable”属性输入表的名称（使用dblink时使用其别名）,
-* 架构密钥：引用对帐字段，
-* 索引：用于生成查询，
-* XML结构中的字段及其位置：只填写应用程序中使用的字段，
-* 链接：如果与基的其他表存在连接。
+* 表的名称：在“sqltable”属性中输入表的名称（使用dblink时使用其别名）,
+* 模式键：引用对帐字段，
+* 索引：用于生成查询,
+* XML结构中的字段及其位置：仅填写应用程序中使用的字段，
+* 链接：是否与基的其他表存在连接。
 
 ## 实施 {#implementation}
 
-要创建相应的架构，请应用以下阶段：
+要创建相应的模式，请应用以下阶段：
 
-1. 编辑Adobe **[!UICONTROL Administration>Configuration>Data schemas]** Campaign树的节点，然后单击 **[!UICONTROL New]** 。
-1. 选择选 **[!UICONTROL Access data from an existing table or an SQL view]** 项并单击 **[!UICONTROL Next]** 。
+1. 编辑Adobe Campaign **[!UICONTROL Administration>Configuration>Data schemas]** 树的节点，然后单击 **[!UICONTROL New]** 。
+1. Select the **[!UICONTROL Access data from an existing table or an SQL view]** option and click **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
-1. 选择表或现有视图：
+1. 选择表或现有视图:
 
    ![](assets/s_ncs_configuration_select_table.png)
 
-1. 调整架构内容以满足您的需求。
+1. 调整模式内容以满足您的需求。
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   必须在根元素上使用view=&quot;true&quot;属性填充架构，才 `<srcSchema>` 能不生成表创建SQL脚本。
+   模式必须在根元素上填充视图=&quot;true&quot;属性， `<srcSchema>` 才能不生成表创建SQL脚本。
 
 **示例** :
 
@@ -66,6 +66,6 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ## 访问外部数据库 {#accessing-an-external-database}
 
-利用 **Federated Data Access - FDA** 选项，您可以访问存储在外部数据库中的数据。
+联合数据访问 **-联合数据访问选项** ，允许您访问存储在外部数据库中的数据。
 
-本页详细介绍了架构上用于访问外部数据库中数据的 [配置](../../platform/using/creating-data-schema.md)。
+本页详细介绍了在外部模式库中访问数据的 [配置](../../platform/using/creating-data-schema.md)。
