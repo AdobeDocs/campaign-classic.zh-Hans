@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 0%
@@ -92,7 +92,7 @@ ht-degree: 0%
    <td> 正则表达式，用于标准化投放消息。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsBroadcast_RemoveBlockList</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
    <td> 输入“1”作为值，可以排除不再希望联系的收件人。<br /> </td> 
   </tr> 
   <tr> 
@@ -684,7 +684,7 @@ ht-degree: 0%
    <td> 在迁移过程中，将根据新版本标准自动重新组织树结构。<br /> 此选项允许您禁用导航树的自动迁移。 如果您使用它，则在迁移后必须删除已废弃的文件夹，添加新文件夹并运行所有必要的检查。<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">数据类型：</span> 整数</p> </li> 
-     <li> <p> <span class="uicontrol">值（文本）</span> :3 </p> </li> 
+     <li> <p> <span class="uicontrol">值（文本）</span> :1 </p> </li> 
     </ul> 仅当现成的导航树进行了太多更改时，才应使用此选项。<br /> 有关此内容的详细信息，请参 <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">阅本节</a>。<br /> </td> 
   </tr> 
   <tr> 
