@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -47,38 +47,38 @@ For more on MX configuration, see [this section](../../installation/using/email-
 
 如果问题仍然存在，请联系商业或可交付性服务、Adobe Campaign客户服务或Adobe Campaign支持。
 
-## 阻止列表与隔离 {#block-list-versus-quarantine}
+## 阻止列表与隔离 {#denylist-versus-quarantine}
 
-* **阻止列表上的电子邮件地址与隔离的电子邮件地址之间有何区别？**
+* **电子邮件地址与隔离电子邮件地阻止列表址之间有何差异？**
 
-   * 状态 **[!UICONTROL On block list]** 是反馈循环的结果（当人员将邮件报告为垃圾邮件时）。
+   * 状态 **[!UICONTROL Denylisted]** 是反馈循环的结果（当人员将邮件报告为垃圾邮件时）。
 
    * 状态 **[!UICONTROL Quarantined]** 是软弹回或硬弹回的结果。
-   有关更多信息，请参阅[此章节](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list)。
+   有关更多信息，请参阅[此章节](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)。
 
 * **不同的隔离错误原因意味着什么？**
 
-   以下是10个可能的原因：未定义，用户未知，无效域,阻止列表地址，拒绝，忽略错误，不可到达，帐户禁用，邮箱已满，未连接。
+   以下是10个可能的原因：未定义、用户未知、无效域、、拒阻止列表绝、忽略错误、不可到达、帐户禁用、邮箱已满、未连接。
 
    For more on this, see [Understanding quarantine management](../../delivery/using/understanding-quarantine-management.md).
 
-## 从阻止列表删除 {#remove-from-block-list}
+## 从阻止列表删除 {#remove-from-denylist}
 
-* **我的一个收件人被误加到了阻止列表。 如何从阻止列表中删除它们，以便能够开始再次发送邮件？**
+* **我的一个收件人误阻止列表入。 如何从密文主义者中删除它们，以便我能够开始再次发送邮件？**
 
    * 转到 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
    * 在相应记录的详细信息中，将字段的值 **[!UICONTROL Status]** 设置为 **[!UICONTROL Valid]**。
    * 保存记录。
 
-* **如何确定我的IP是否在阻止列表上？ 如何从阻止列表中删除IP?**
+* **如何确定我的IP是否在阻止列表? 如何从中删除我的IP阻止列表?**
 
-   要检查您的IP地址是否在阻止列表上，您可以使用各种网站验证它，例如：
+   要检查您的IP地址是否在阻止列表程序中，您可以使用各个网站验证它，例如：
    * [MX工具箱](https://mxtoolbox.com/)
    * [我的IP地址是什么](https://whatismyipaddress.com)
 
-   通常，IP地址检查的结果将返回一个列表，其中包含阻止列表的详细信息以及阻止IP地址的网站的名称。
+   通常，IP地址检查的结果将返回一个列表，其中包阻止列表含的详细信息以及拒绝IP地址的网站的名称。
 
-   通过单击相应的链接，您可以访问网站详细信息。 然后，您可以请求从将IP地址添加到其阻止列表的网站中取消列出您的网站。
+   通过单击相应的链接，您可以访问网站详细信息。 然后，您可以请求从添加IP地址到其的网站中取消列出您的网阻止列表站。
 
    >[!NOTE]
    >
