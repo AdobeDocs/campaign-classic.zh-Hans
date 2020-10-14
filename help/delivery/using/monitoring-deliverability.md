@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 0baef937-f00b-4fc4-8608-a870997be684
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '786'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ Signal Spam是一种法国服务，它为法国ISP(Orange, SFR)优惠匿名反�
 
 ## 250ok {#deliverability-250ok}
 
-[250ok是Adobe交付性内部工具的补充性监控解决方案](https://250ok.com/) ，它提供IP和域阻止列表以及信誉指标。
+[250ok是Adobe](https://250ok.com/) 交付性内部工具的补充性监控解决方案，它提供IP和域阻止列表以及信誉指标。
 
 提供的信息是实时的，它允许主动提供帮助。
 
@@ -92,7 +92,7 @@ Signal Spam是一种法国服务，它为法国ISP(Orange, SFR)优惠匿名反�
 
 * **[!UICONTROL DomainKeys]** :由Yahoo开发、旨在验证电子邮件发件人身份的服务。
 
-* **[!UICONTROL IP and RBL domain]** (实时黑洞列表):由列表组织标出的IP地址和域的阻止列表，其发送信誉不佳。 这些列表由专用组织（如Spamhaus、Spampoc、SURBL/URIBL等）进行维护。 Adobe Campaign当前处理对RBL的检查，这些RBL对交付能力有显着影响。 这些RBL反映发送的声誉，在接受接收您的电子邮件前，可能会由ISP引用。
+* **[!UICONTROL IP and RBL domain]** (实时黑洞列表):列表IP地址和域，组织标记阻止列表其发送信誉不佳。 这些列表由专用组织（如Spamhaus、Spampoc、SURBL/URIBL等）进行维护。 Adobe Campaign当前处理对RBL的检查，这些RBL对交付能力有显着影响。 这些RBL反映发送的声誉，在接受接收您的电子邮件前，可能会由ISP引用。
 
 * **[!UICONTROL SNDS]** （智能网络数据服务）:Windows [Live Hotmail防垃圾邮件服务](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx)。 Hotmail是唯一提供此类信息的ISP。 基准分数是一个绿色过滤结果，投诉率低于0.1%，垃圾邮件陷阱为零。
 
