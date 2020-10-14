@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: eede254d-2b25-46ed-b10f-fa1d54780a75
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 3%
+source-wordcount: '373'
+ht-degree: 0%
 
 ---
 
 
-# 阻止列表数据库{#blocklisting-databases}
+# 阻止列表数据库{#denylist-databases}
 
 一些组织维护着据称被垃圾邮件发送者使用的IP地址和域数据库。 咨询这些站点有助于了解为什么某些邮件会被拒绝为垃圾邮件。 通常可以请求删除错误地添加到这些列表的地址。
 
