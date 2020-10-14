@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1453'
 ht-degree: 2%
 
 ---
@@ -164,7 +164,7 @@ ht-degree: 2%
 本节包含两个指标：
 
 * **[!UICONTROL Initial population]** :投放目标收件人总数。
-* **[!UICONTROL Messages rejected by the rule]** :应用分析时在类型规则期间忽略的地址数：地址缺失、已隔离、已添加到阻止列表等。 For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* **[!UICONTROL Messages rejected by the rule]** :应用分析时在类型规则期间忽略的地址数：地址缺失、隔离阻止列表、等。 For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
 **[!UICONTROL Causes of exclusion]**
 
