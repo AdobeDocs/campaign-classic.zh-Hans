@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 0%
@@ -187,7 +187,7 @@ ht-degree: 0%
 
    确保子 `where` 句与字段的类型相同。
 
-   一个常见错误是： `iBlocklist='3'` 其中 `iBlocklist` 是数字字段，并 `3` 表示文本值。
+   一个常见错误是： `iBlacklist='3'` 其中 `iBlacklist` 是数字字段，并 `3` 表示文本值。
 
    确保您知道查询的执行计划。 避免全表扫描，尤其是实时查询或几乎每分钟运行的实时查询。
 
