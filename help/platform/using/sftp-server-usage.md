@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 58%
+source-wordcount: '992'
+ht-degree: 59%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 58%
 * 时常登入 SFTP 以直接检查其内容。
 * 请记住，SFTP 硬盘的管理主要由您负责。
 * 默认情况下，您创建的所有文件夹仅为标识符的读/写模式。创建 Campaign 需要访问的文件夹时，请确保使用整个组的读/写权限进行配置。否则，出于安全原因，工作流程可能无法创建/删除文件，因为它们在同一组内的不同标识符下运行。
-* 您尝试从中启动SFTP连接的公共IP必须添加到活动实例的允许列表。 可以通过支持票证请求向允许列表添 [加IP地址](https://support.neolane.net)。
+* 您尝试从中启动SFTP连接的公共IP必须添加到活动允许列表程序实例上。 可通过支持票允许列表证请求向 [添加IP地址](https://support.neolane.net)。
 
 >[!CAUTION]
 >
@@ -87,7 +87,7 @@ ht-degree: 58%
 
    如果端口未打开，请确保打开侧面的传出联机，然后重试。如果仍遇到连接问题，请与 Adobe 支持团队分享该命令的输出。
 
-1. 检查您尝试从中启动SFTP连接的公共IP是否是您提供给Adobe支持允许列表的IP。
+1. 检查您尝试从中启动SFTP连接的公共IP是否是您提供给Adobe支持的允许列表IP。
 1. 如果您使用基于密码的身份验证，则您的密码可能已过期（密码的有效期为90天）。 因此，我们强烈建议使用基于密钥的身份验证(请参 [阅SFTP服务器最佳实践](#sftp-server-best-practices))。
 1. 如果您使用的是基于密钥的身份验证，请检查您使用的密钥是否与提供给 Adobe 支持团队以用于实例配置的密钥相同。
 1. 如果您使用的是 FileZilla 或类似的 FTP 工具，请在支持票证中提供联机日志详细信息。
@@ -129,7 +129,7 @@ ht-degree: 58%
 
    1. 转到工作流审核并检查日志是否显示“无法解析主机名”错误。
 
-1. 如果SFTP服务器由Adobe托管，请联系客户服务部，检查是否已将IP添加到允许列表。
+1. 如果SFTP服务器由Adobe托管，请联系客户服务部，检查是允许列表否已将IP添加到。
 
    否则验证：
 
