@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: filtering-data
 discoiquuid: 066e730b-2527-4257-b11f-2e73f746a8a5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1976'
 ht-degree: 1%
 
 ---
@@ -276,8 +276,8 @@ Adobe Campaign允许您将过滤器应用于数据列表。
    <td> 选择在过去Y个月中点击某个投放至少X次的收件人。<br /> </td> 
   </tr> 
   <tr> 
- <td> 阻止列表上的电子邮件地址<br /> </td> 
-    <td> 选择其电子邮件地址位于收件人上的阻止列表。<br/> </td>
+ <td> 列入阻止列表电子邮件地址<br /> </td> 
+    <td> 选择其电子邮件地址在收件人阻止列表上的。<br/> </td>
   </tr> 
   <tr> 
    <td> 隔离的电子邮件地址<br /> </td> 
