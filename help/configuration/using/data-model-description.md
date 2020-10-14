@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -52,7 +52,7 @@ Adobe Campaign依赖于包含链接在一起的表的关系数据库。
 * iEmailFormat:电子邮件的首选格式（文本为1,HTML为2，未定义时为0）。
 * sAddress1、sAddress2、sAddress3、sAddress4、sZipCode、sCity用于构建邮政地址（与1997年5月起的XPZ 10-011 AFNOR标准保持一致）。
 * sPhone、sMobilePhone、sFax分别包含电话、移动电话和传真号码。
-* iBlockList是用于用户档案的默认退出标志（1表示“取消订阅”，否则为0）。
+* iBlackList是用于用户档案的默认退出标志（1表示“取消订阅”，否则为0）。
 
 iFolderId字段是将收件人链接到其执行文件夹的外键。 For more on this, see [XtkFolder](#XtkFolder).
 
