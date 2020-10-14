@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: d6467875-949b-4b47-940f-620efd4db5e0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1303'
 ht-degree: 3%
 
 ---
@@ -151,5 +151,5 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
    * 如果在单个客户端的多个实例（开发、测试、生产）中使用相同的MTA，则从所有三个实例发送的消息将被dataLogPath选项复制。
 
 * **每个连接的电子邮件**:密件抄送电子邮件存档通过打开连接并尝试通过该连接发送所有电子邮件来操作。 Adobe建议与内部技术联系人核实在给定连接上接受的电子邮件数。 增加此数量会对密送吞吐量产生很大影响。
-* **密送发送IP**:目前，密送电子邮件不会通过普通MTA代理发送。 而是会打开从MTA服务器到目标电子邮件服务器的直接连接。 这意味着您可能需要根据电子邮件服务器配置向网络上的允许列表添加其他IP。
+* **密送发送IP**:目前，密送电子邮件不会通过普通MTA代理发送。 而是会打开从MTA服务器到目标电子邮件服务器的直接连接。 这意味着您可能需要根据电子邮件服务允许列表器配置向网络上的添加其他IP。
 
