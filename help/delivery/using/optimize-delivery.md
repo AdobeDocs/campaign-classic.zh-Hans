@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '736'
 ht-degree: 6%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 6%
 
 保持良好的隔离管理流程符合您的最佳利益。
 
-开始在新平台上发送电子邮件时，您可能会使用列表未完全限定的地址。 如果您发送到无效地址或蜜罐地址（仅为欺骗垃圾邮件发送者而创建的邮箱），这将开始您平台的声誉。 良好的隔离管理流程有助于：保持地址质量，避免因特网访问提供商的阻止列表，并降低错误率，加快投放和吞吐量。
+开始在新平台上发送电子邮件时，您可能会使用列表未完全限定的地址。 如果您发送到无效地址或蜜罐地址（仅为欺骗垃圾邮件发送者而创建的邮箱），这将开始您平台的声誉。 良好的隔离管理流程有助于：保持地址质量，避阻止列表免Internet访问提供商的，并降低错误率，加快投放和吞吐量。
 
 **提示**
 
@@ -73,7 +73,7 @@ ht-degree: 6%
 * Adobe Campaign根据返回的错误类型管理错误地址。 如需详细信息，请参阅[此部分](../../delivery/using/understanding-quarantine-management.md)。
 
 
-* 如果无效地址率过高，某些互联网访问提供商会自动将电子邮件判断为垃圾邮件。因此，隔离允许您避免被这些提供商添加到阻止列表。
+* 如果无效地址率过高，某些互联网访问提供商会自动将电子邮件判断为垃圾邮件。因此，隔离允许您避免被这阻止列表些提供商添加到。
 
 * 隔离管理还将通过排除投放的错误电话号码来帮助降低短信发送成本。
 
