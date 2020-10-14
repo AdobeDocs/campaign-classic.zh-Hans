@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2440'
 ht-degree: 16%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 16%
 
 发送消息后，投放日志允许您视图每个用户档案的投放状态以及关联的故障类型和原因。
 
-如果地址被隔离或投放处于用户档案，则还可在阻止列表准备过程中排除邮件。 排除的消息列在投放仪表板中。
+如果地址被隔离或投放处于隔离状态，则还可在用户档案准备过程中排除阻止列表消息。 排除的消息列在投放仪表板中。
 
 **相关主题：**
 
@@ -83,10 +83,10 @@ ht-degree: 16%
    <td> 此地址的质量等级太低。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 阻止列表地址 </td> 
+   <td> 列入阻止列表地址 </td> 
    <td> 硬 </td> 
    <td> 8 </td> 
-   <td> 地址已在发送时添加到阻止列表。 此状态用于将数据从外部列表和外部系统导入Adobe Campaign隔离列表。<br /> </td> 
+   <td> 地址已在发阻止列表送时添加到。 此状态用于将数据从外部列表和外部系统导入Adobe Campaign隔离列表。<br /> </td> 
   </tr> 
   <tr> 
    <td> 控制地址 </td> 
@@ -104,7 +104,7 @@ ht-degree: 16%
    <td> 忽略错误 </td> 
    <td> 已忽略 </td> 
    <td> 25 </td> 
-   <td> 地址在允许列表上。 因此，该错误会被忽略，并将发送一封电子邮件。<br /> </td> 
+   <td> 地址在允许列表。 因此，该错误会被忽略，并将发送一封电子邮件。<br /> </td> 
   </tr> 
   <tr> 
    <td> 仲裁后排除 </td> 
@@ -204,7 +204,7 @@ ht-degree: 16%
    >
    >弹回邮箱的配置详见 [本节](../../installation/using/deploying-an-instance.md#managing-bounced-emails)。
 
-   反馈循 [环就像](../../delivery/using/technical-recommendations.md#feedback-loop) “弹回电子邮件”一样。 当用户将电子邮件归为垃圾邮件时，您可以配置Adobe Campaign中的电子邮件规则，以阻止此用户的所有投放。 发送给已将电子邮件限定为垃圾邮件的用户的邮件会自动重定向到专为此目的而创建的邮箱。 这些用户的地址在阻止列表上，即使他们没有单击退订链接。 地址在(NmsAddress **)阻止列表表中的隔离**&#x200B;上&#x200B;**，而不在(NmsRecipient**)收件人表中。
+   反馈循 [环就像](../../delivery/using/technical-recommendations.md#feedback-loop) “弹回电子邮件”一样。 当用户将电子邮件归为垃圾邮件时，您可以配置Adobe Campaign中的电子邮件规则，以阻止此用户的所有投放。 发送给已将电子邮件限定为垃圾邮件的用户的邮件会自动重定向到专为此目的而创建的邮箱。 这些用户的地址处于状阻止列表态，即使他们没有单击退订链接。 地址在阻止列表(NmsAddress ****)隔离表中&#x200B;**，而不在(NmsRecipient**)收件人表中。
 
    >[!NOTE]
    >
