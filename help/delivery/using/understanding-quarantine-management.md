@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2571'
 ht-degree: 14%
 
 ---
@@ -34,21 +34,21 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 
 在准备消息时，电子邮件地址或电话号码处于隔离状态的用户档案会被自动被排除（请参阅[确定投放的隔离地址](#identifying-quarantined-addresses-for-a-delivery)）。这样可加快投放速度，因为错误率对投放速度有显著的影响。
 
-如果无效地址率过高，某些互联网访问提供商会自动将电子邮件判断为垃圾邮件。因此，隔离允许您避免被这些提供商添加到阻止列表。
+如果无效地址率过高，某些互联网访问提供商会自动将电子邮件判断为垃圾邮件。因此，隔离允许您避免被这阻止列表些提供商添加到。
 
 此外，隔离还可避免向错误的电话号码投放短信，有助于降低短信发送成本。有关安全防护和优化投放之最佳做法的更多信息，请参阅[此页面](../../delivery/using/delivery-best-practices.md)。
 
-### 隔离与阻止列表 {#quarantine-vs-block-list}
+### 隔离与阻止列表 {#quarantine-vs-denylist}
 
 **隔离**&#x200B;仅适用于地址，而不适用于用户档案本身。这意味着，如果两个用户档案具有相同的电子邮件地址，那么隔离该地址会同时影响这两个用户档案。
 
 同样，其电子邮件地址被隔离的用户档案可以更新其用户档案并输入新地址，然后即可再次被投放操作定向。
 
-Being on the **block list**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
+Being on the **denylist**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
 
 >[!NOTE]
 >
->当用户用诸如“STOP”的关键字回复SMS消息以选择不接收SMS投放时，其用户档案不会像电子邮件选择退出过程中那样添加到阻止列表中。 用户档案电话号码被发送给隔离，以便用户继续接收电子邮件。
+>当用户用诸如“STOP”的关键字回复SMS消息以从SMS投放中选择退出时，其用户档案不会像在电子邮件选择退出阻止列表过程中那样添加到该中。 用户档案电话号码被发送给隔离，以便用户继续接收电子邮件。
 
 ## 确定隔离的地址{#identifying-quarantined-addresses}
 
@@ -107,9 +107,7 @@ Administrators can list the addresses in quarantine for the entire platform from
 
    ![](assets/tech_quarant_error_status.png)
 
-* 您还可以将其状态更改为 **[!UICONTROL On allow list]**。 在这种情况下，地址仍保留在隔离列表中，但系统化地址将被定位，即使遇到错误也是如此。
-
-<!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
+* 您还可以将其状态更改为 **[!UICONTROL Allowlisted]**。 在这种情况下，地址仍保留在隔离列表中，但系统化地址将被定位，即使遇到错误也是如此。
 
 在以下情况下，地址会自动从隔离列表中删除：
 
@@ -120,7 +118,7 @@ Administrators can list the addresses in quarantine for the entire platform from
 状态随后更改为 **[!UICONTROL Valid]**。
 
 >[!IMPORTANT]
-地址为或状态 **[!UICONTROL Quarantine]** 的收件人 **[!UICONTROL On block list]** 将永远不会被删除，即使他们收到电子邮件也是如此。
+地址为或状态 **[!UICONTROL Quarantine]** 的收件人 **[!UICONTROL On denylist]** 将永远不会被删除，即使他们收到电子邮件也是如此。
 
 您可以修改错误数以及两个错误之间的时间段。 为此，请在部署向导(>)中更改相应&#x200B;**[!UICONTROL Email channel]** 的设 **[!UICONTROL Advanced parameters]**&#x200B;置。 For more on the deployment wizard, refer to [this section](../../installation/using/deploying-an-instance.md).
 
