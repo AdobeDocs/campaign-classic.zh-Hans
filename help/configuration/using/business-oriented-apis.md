@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: api
 discoiquuid: e7b3ffca-c85f-498d-89b4-23fcff59de49
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '638'
 ht-degree: 4%
 
 ---
@@ -147,7 +147,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->如果未将服务名称指定为参数，则收件人将自动阻止列表(阻止列表@=&quot;1&quot;)。
+>如果未将服务名称指定为参数，则收件人将自阻止列表动(@blackList=&quot;1&quot;)。
 
 除错误外，此调用不返回任何数据。
 
