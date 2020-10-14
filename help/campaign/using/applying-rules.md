@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: a0e76d27-bedd-4f81-b4d2-1221444e670e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '979'
 ht-degree: 10%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 10%
 1. 控制规则（如果在开始定向时应用）。
 1. 筛选规则：
 
-   * 地址资格的本机应用规则：阻止列表/隔离地址／地址质量上的已定义地址／未验证地址／地址。
+   * 地址资格的本机应用规则：已定义的地址／未验证的地址/阻止列表地址／隔离地址／地址质量。
    * 筛选用户定义的规则。
    * 外部重复数据删除地址或标识符规则（如有必要，应用）。
 
