@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 * 开始发送电子邮件是一个敏感步骤，因为该平台没有任何使用历史记录，而且当发送的IP从未用于此目的时，就没有声誉。
 
-* ISP自然会怀疑从未用来发送电子邮件的IP地址，并突然开始发送大量电子邮件流量。 事实上，垃圾邮件发送者通常使用“未知”IP地址(从未添加到阻止列表的地址)发送尽可能多的邮件，然后再进行检测。
+* ISP自然会怀疑从未用来发送电子邮件的IP地址，并突然开始发送大量电子邮件流量。 事实上，垃圾邮件发送者通常使用“未知”IP地址（从未过的地址）阻止列表在检测前发送尽可能多的邮件。
 
 * 在生产阶段的开始，您无法期望在输出方面达到操作速度。 此外，您不应尝试以此速率发送消息，因为这可能会导致ISP阻止发送地址，并严重危害开始的其余阶段。
 
