@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: fc95538b-b54d-44ec-81aa-f51b62982699
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2432'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ Recommendations for defining an SPF record:
 
 ## 反馈循环 {#feedback-loop}
 
-反馈循环在ISP级别为用于发送消息的IP地址范围声明给定的电子邮件地址。 ISP将以与弹回消息类似的方式发送到此邮箱，收件人将这些消息作为垃圾邮件报告。 该平台应配置为阻止向已投诉的用户发送未来投放。 即使他们没有使用正确的退出链接，也必须不再与他们联系。 ISP将根据这些投诉向其阻止列表添加IP地址。 如果投诉率在1%左右，则会阻止IP地址。
+反馈循环在ISP级别为用于发送消息的IP地址范围声明给定的电子邮件地址。 ISP将以与弹回消息类似的方式发送到此邮箱，收件人将这些消息作为垃圾邮件报告。 该平台应配置为阻止向已投诉的用户发送未来投放。 即使他们没有使用正确的退出链接，也必须不再与他们联系。 ISP将根据这些投诉在其中添加IP地阻止列表址。 如果投诉率在1%左右，则会阻止IP地址。
 
 目前正在制定一个标准来定义反馈循环消息的格式：滥用 [反馈报告格式(ARF)](https://tools.ietf.org/html/rfc6650)。
 
@@ -255,7 +255,7 @@ IP认证是一种发送最佳实践项目，有助于确保接收电子邮件时
 
 目前有两个提供商优惠IP认证：Return Path和Certified Senders Alliance。
 
-认证发件人会添加到全球邮箱提供商和电子邮件安全允许列表使用的电子邮件公司。 这些商业允许列表基于一种系统，该系统使发送方能够完全绕过防垃圾邮件过滤器，或在他们进入系统时分配增量点数。
+认证发件人会添加到全球邮允许列表箱提供商和电子邮件安全公司使用的电子邮件。 这些商业允许列表过滤器基于一种系统，该系统使发送方能够完全绕过防垃圾邮件，或在他们进入系统时分配增量点。
 
 Return [Path Certification](https://www.validity.com/products/returnpath/certification/) 项目优惠了许多优势，包括：
 
@@ -272,6 +272,6 @@ Return [Path Certification](https://www.validity.com/products/returnpath/certifi
 * 充分遵守法律标准，防范法律和财务风险
 * 通过CSA投诉办公室的早期警告和每日垃圾邮件陷阱报告保护声誉
 
-ISP可免费使用这些服务，ISP的数量可能因允许列表而异。
+ISP可免费使用这些服务，ISP的数量可能因而允许列表异。
 
 但是，由于越来越多的ISP根据每个收件箱所有者的行为而不是分析邮件内容本身来构建其防垃圾邮件过滤器，使用IP认证无法保证收件箱的放置甚至投放。
