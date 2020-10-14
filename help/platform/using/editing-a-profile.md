@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 93dd29e8-cf0a-4010-a3cc-f68c52c0d9ef
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 86%
+source-wordcount: '474'
+ht-degree: 87%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->When the **[!UICONTROL No longer contact (by any channel)]** option is selected, this means that the profile is on the block list, i.e. the profile has expressed a wish not to be contacted (for example, by clicking an unsubscription link in a newsletter). 通过任何渠道（电子邮件、直邮广告等）投放时都不会定位这些顾客。有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
+>When the **[!UICONTROL No longer contact (by any channel)]** option is selected, this means that the profile is on denylist, i.e. the profile has expressed a wish not to be contacted (for example, by clicking an unsubscription link in a newsletter). 通过任何渠道（电子邮件、直邮广告等）投放时都不会定位这些顾客。有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
 
 ## “联系人信息”选项卡{#contact-information-tab}
 
