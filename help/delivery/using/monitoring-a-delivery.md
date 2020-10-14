@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2562'
 ht-degree: 2%
 
 ---
@@ -114,7 +114,7 @@ ht-degree: 2%
 
 单击该按 **[!UICONTROL Send]** 钮后，投放的时间似乎比往常长。 这可能由不同元素引起：
 
-* 某些电子邮件提供商可能已将您的IP地址添加到阻止列表。 在这种情况下，请检查广告并参 [阅此部分](../../delivery/using/about-deliverability.md)。
+* 某些电子邮件提供商可能已将您的IP地址添加阻止列表到。 在这种情况下，请检查广告并参 [阅此部分](../../delivery/using/about-deliverability.md)。
 * 您的投放可能太大，无法快速处理，高JavaScript个性化可能会发生这种情况，或者如果您的投放重量超过60kbytes。 请参阅Adobe Campaign [投放最佳实践](../../delivery/using/delivery-best-practices.md) ，了解内容指南。
 * Adobe CampaignMTA中可能已发生限制。 这是由以下原因造成的：
 
@@ -163,7 +163,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 已忽略<br /> </td> 
-   <td> 由于投放地址出错，该收件人未被发送到该地址。 它已添加到阻止列表、隔离、未提供或重复。 <br /> </td> 
+   <td> 由于投放地址出错，该收件人未被发送到该地址。 它处于阻止列表状态、隔离状态、未提供或重复。 <br /> </td> 
   </tr> 
   <tr> 
    <td> 已发送<br /> </td> 
@@ -241,7 +241,7 @@ ht-degree: 2%
 
 投放日志是了解投放失败原因的关键。 以下是您可以从投放日志中检测到的可能错误：
 
-* 如果收件人消息失败，并显示“不可到达”错误，说明： **编译脚本“content htmlContent”行X时出错：`[table]`未定义。 JavaScript:评估脚本“content htmlContent**”时出错，此问题的原因几乎始终是HTML中的个性化，它们试图调用尚未在上游定位或投放目标映射中定义或映射的表或字段。
+* 如果收件人消息失败，并显示“不可到达”错误，说明： **编译脚本“content htmlContent”行X时出错： `[table]` 未定义。 JavaScript:评估脚本“content htmlContent**”时出错，此问题的原因几乎始终是HTML中的个性化，它们试图调用尚未在上游定位或投放目标映射中定义或映射的表或字段。
 
    要更正此问题，需要检查工作流和投放内容，以明确确定尝试调用该表的个性化内容以及是否可以映射该表。 从此处，在HTML中删除对此表的调用或将映射修复到投放将成为解析路径。
 
