@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: subscriptions-and-referrals
 discoiquuid: 9a61fe74-f779-4f23-be25-3d9a8e95704a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1101'
 ht-degree: 2%
 
 ---
@@ -153,7 +153,7 @@ ht-degree: 2%
 
 根据法律，电子邮件投放必须包含退订链接。 收件人可以单击此链接更新其用户档案，并排除在将来的目标之外。
 
-默认退订链接通过投放向导中提供的内容编辑器的工具栏中的最后一个按钮插入(请参阅关 [于个性化](../../delivery/using/about-personalization.md))。 当收件人单击此链接时，用户档案会添加到阻止列表（选择退出），这意味着此收件人将不再被任何投放操作定位。
+默认退订链接通过投放向导中提供的内容编辑器的工具栏中的最后一个按钮插入(请参阅关 [于个性化](../../delivery/using/about-personalization.md))。 当收件人单击此链接时，该将添阻止列表加到用户档案（选择退出），这意味着此收件人将不再被任何投放操作定位。
 
 但是，收件人可以选择取消订阅服务，而不取消订阅所有服务。 要实现此目的，您可以使用Web表单(请参 [阅本部](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)分)或插入个性化退订链接(请参 [阅个性化块](../../delivery/using/personalization-blocks.md))。
 
