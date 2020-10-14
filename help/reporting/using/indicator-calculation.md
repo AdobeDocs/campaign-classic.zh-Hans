@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2974'
 ht-degree: 1%
 
 ---
@@ -564,7 +564,7 @@ ht-degree: 1%
   <tr> 
    <td> 投诉<br /> </td> 
    <td> @complaints<br /> </td> 
-   <td> 状态等于“失败”且原因等于“已添加到阻止列表的地址”的邮件计数。<br /> </td> 
+   <td> 状态等于“失败”且原因等于“地址”的邮件数阻止列表。<br /> </td> 
    <td> Count（@status=2和msg/@failureReason=8）<br /> </td> 
   </tr> 
   <tr> 
@@ -766,7 +766,7 @@ ht-degree: 1%
   <tr> 
    <td> 规则拒绝的邮件<br /> </td> 
    <td> @拒绝<br /> </td> 
-   <td> 在分析期间忽略的地址数与类型规则一致：未指定地址、隔离地址、添加到阻止列表等。<br /> </td> 
+   <td> 在分析期间忽略的地址数与类型规则一致：未指定地址、已隔离、阻止列表已等。<br /> </td> 
    <td> sum([properties/@reject])<br /> </td> 
   </tr> 
   <tr> 
