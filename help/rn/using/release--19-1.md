@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2639'
+source-wordcount: '2638'
 ht-degree: 6%
 
 ---
@@ -123,7 +123,7 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>要提高管理员用户的工作效率，请通过监视存储、向允许列表添加IP地址以及为每个实例安装SSH密钥来管理SFTP服务器的设置。 请注意，控制面板仅适用于今天在AWS上托管的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天通过Experience Cloud登录</a>)。</p> <p>有关更多信息，请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html">详细文档</a>和<a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">操作方法视频</a>。 </p><p>注意：升级到最新活动版本不是访问控制面板的必需条件。</p> </td> 
+   <td> <p>要提高管理员用户的工作效率，请通过监视存储、添加要的IP地址和为每个实例安允许列表装SSH密钥来管理SFTP服务器的设置。 请注意，控制面板仅适用于今天在AWS上托管的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天通过Experience Cloud登录</a>)。</p> <p>有关更多信息，请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html">详细文档</a>和<a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">操作方法视频</a>。 </p><p>注意：升级到最新活动版本不是访问控制面板的必需条件。</p> </td> 
   </tr> 
     <tr> 
    <td> 审核跟踪<br /> </td> 
@@ -198,7 +198,7 @@ _2019年5月30日_
 * 修复了在直接邮件优惠中提取投放详细信息时可能发生的问题。 (NEO-11700)
 * 修复了可能影响SMS事务性消息性能的问题。 (NEO-9812)
 * 修复了在投放的主目标使用外部文件中的定义选项时可能发生的控制台崩溃。 (NEO-12349)
-* 修复了分析消息时瞄准日语(.JP)域的收件人的问题。 (NEO-12246)
+* 修复了分析消息时针对日语(.JP)域的收件人的问题。 (NEO-12246)
 * 修复了在1:N链接中使用值分布时的显示问题。 (NEO-12212, NEO-11820)
 * 修复了一个问题，该问题可能导致MTA日志中在错误升级后出现NmsMxDomain错误。 (NEO-12752)
 * 修复了在扩充工作流活动中使用“从主集保留所有其他数据”选项时的问题。 (NEO-13291)
