@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: web-forms
 discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '960'
 ht-degree: 2%
 
 ---
@@ -51,11 +51,11 @@ ht-degree: 2%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. 由于此投放的收件人尚未确认其批准，因此他们仍在数据库阻止列表中。 要让投放接收此通信，您需要根据此模板授权目标收件人，使其能够访问阻止列表。
+1. 由于此投放的收件人尚未确认其批准，因此他们仍在数据库阻止列表。 要让投放接收此通信，您需要根据此模板授权目标收件人。
 
    为此，请单击选 **[!UICONTROL Exclusions]** 项卡。
 
-1. 单击链 **[!UICONTROL Edit...]** 接并取消选中 **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]** 选项。
+1. 单击链 **[!UICONTROL Edit...]** 接并取消选中 **[!UICONTROL Exclude recipients who no longer want to be contacted (blacklist)]** 选项。
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -109,10 +109,10 @@ Web表单工作流将包括以下活动:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   第一个 **[!UICONTROL Script]** 活动将向阻止列表添加收件人，直到他们确认其对新闻稿的订阅。 其内容必须如下：
+   第一个活动 **[!UICONTROL Script]** 将添加收件人,阻止列表直到他们确认其订阅到新闻稿。 其内容必须如下：
 
    ```
-   ctx.recipient.@blockList=1
+   ctx.recipient.@blackList=1
    ```
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
@@ -120,7 +120,7 @@ Web表单工作流将包括以下活动:
    第二个 **[!UICONTROL Script]** 活动授权投放发送给用户并订阅新闻稿。 脚本的最后两行将允许您将收件人从临时文件夹传输到另一个文件夹，并在确认订阅后立即与现有用户档案协调。
 
    ```
-   ctx.recipient.@blockList=0
+   ctx.recipient.@blackList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>
    nms.subscription.Unsubscribe("TEMP", ctx.recipient)
@@ -172,7 +172,7 @@ Web表单工作流将包括以下活动:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   用户将添加到文件夹中的Adobe Campaign **[!UICONTROL Temp]** 用户档案库，并将其添加到阻止列表，直到用电子邮件确认其订阅。
+   用户将添加到文件夹中的Adobe Campaign **[!UICONTROL Temp]** 用户档案库，并且其处于状态，阻止列表直到用户确认其与电子邮件的订阅。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -186,7 +186,7 @@ Web表单工作流将包括以下活动:
 
    在Adobe Campaign中，用户用户档案会更新：
 
-   * 他们不再在阻止列表上，
+   * 他们不再阻止列表,
    * 他们订阅了信息服务。
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
