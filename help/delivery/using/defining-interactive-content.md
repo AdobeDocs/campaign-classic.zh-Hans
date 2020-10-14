@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1573'
 ht-degree: 3%
 
 ---
@@ -151,6 +151,7 @@ AMP for Email与现有电子邮件兼容。 除HTML和／或纯文本外，邮�
 目前，您可以尝试通过两个步骤发送AMP电子邮件：
 
 1. Adobe Campaign允许您测试向所选电子邮件地址传送AMP驱动的动态电子邮件是否进行了适当配置，以验证其内容和行为。 请参 [阅测试AMP电子邮件投放以了解选定的地址](#testing-amp-delivery-for-selected-addresses)。
+
 1. 经过测试后，您可以向相关电子邮件提供商注册，将您的发件人域添加到投放中，从而将允许列表或活动作为电子邮件项目的AMP的一部分发送。 请参 [阅通过向电子邮件提供商注册来传送AMP电子邮件](#delivering-amp-emails-by-registering)。
 
 ### 测试选定地址的AMP电子邮件投放 {#testing-amp-delivery-for-selected-addresses}
@@ -161,7 +162,7 @@ AMP for Email与现有电子邮件兼容。 除HTML和／或纯文本外，邮�
 >
 >目前，只有Gmail、Outlook和Mail.ru支持测试AMP格式。
 
-对于Gmail和Outlook，您必须首先将您使用的发件人地址添加到允许列表，以便从Adobe Campaign为您定位的Gmail和Outlook帐户发送邮件。
+对于Gmail和Outlook，您必须先将您使用的发件人地址添加到允许列表程序，以便从Adobe Campaign发送您所定位的Gmail和Outlook帐户。
 
 操作步骤：
 1. 确保为相关电子邮件提供商选中启用动态电子邮件的选项。
