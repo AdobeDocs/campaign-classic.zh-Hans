@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: e31db11a-ad8e-4fd0-bab7-0df1079231c9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 2%
 
 **回调URL**
 
-回 **调URL** 应添加到允许列表和开始中，并带有“https://”。 检查回 **调URL** 是否已链接到相应实例。 例如，生产实例应重定向到生产URL。
+回 **** 调URL应添允许列表加到开始和(带有“https://”)。 检查回 **调URL** 是否已链接到相应实例。 例如，生产实例应重定向到生产URL。
 
 **客户端ID和机密**
 
