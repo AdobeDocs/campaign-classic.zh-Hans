@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '3593'
+source-wordcount: '3587'
 ht-degree: 4%
 
 ---
@@ -355,9 +355,9 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 
 存在三种连接保护模式：
 
-* **阻止**:将阻止所有不属于该允许列表的URL，并显示错误消息。 这是在配置升级之后的默认模式。
-* **允许**:允许所有不属于允许列表的URL。
-* **警告**:允许所有不属于该允许列表的URL，但JS解释器会发出警告，以便管理员可以收集这些URL。 此模式添加JST-310027警告消息。
+* **阻止**:将阻止所有不属于该允许列表程序的URL，并显示错误消息。 这是在配置升级之后的默认模式。
+* **允许**:允许所有不属于该允许列表程序的URL。
+* **警告**:允许所有不属于该程序允许列表的URL，但JS解释程序会发出警告，以便管理员可以收集这些URL。 此模式添加JST-310027警告消息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -369,7 +369,7 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 
 >[!IMPORTANT]
 >
->默认情况下，新客户的客户端使用 **阻止模式**。 如果需要允许新URL，则应联系管理员以将其添加到允许列表。
+>默认情况下，新客户的客户端使用 **阻止模式**。 如果需要允许新URL，则应联系管理员以将其添加到允许列表该URL。
 >
 >来自迁移的现有客户可以使用 **警告模式** ，时间较长。 同时，在对URL授权之前，他们需要分析出站流量。 定义授权URL的列表后，应联系其管理员，将URL添加到允许列表并激活阻 **止模式**。
 
@@ -452,7 +452,7 @@ sh
 >
 >此列表并非完全。
 
-在服务器 **配置** 文件的执行节点中，需要引用blocklistFile属性中以前创建 **的文件** 。
+在服务 **器配置** 文件的执行节点中，您需要引用blacklistFile属性中先前创建 **的文件** 。
 
 **仅适用于Linux**:在服务器配置文件中，我们重命令您指定一个专用于执行外部命令的用户，以增强您的安全配置。 此用户在配置文 **件的** “执行”节点中设置。 serverConf.xml中的所 **有可用参数** 都列在本 [节中](../../installation/using/the-server-configuration-file.md)。
 
@@ -464,7 +464,7 @@ sh
 
 ```
 <serverConf>
- <exec user="theUnixUser" blocklistFile="/pathtothefile/blocklist"/>
+ <exec user="theUnixUser" blacklistFile="/pathtothefile/blacklist"/>
 </serverConf>
 ```
 
