@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 73%
+source-wordcount: '792'
+ht-degree: 68%
 
 ---
 
@@ -25,8 +25,6 @@ ht-degree: 73%
 ## 关于 Adobe Campaign 中的列表 {#about-lists-in-adobe-campaign}
 
 列表是一组静态用户档案，用于在投放操作期间提供定位目标，或在导入操作或工作流执行期间进行更新。例如，通过查询从数据库中提取出的一组数据即可形成一个列表。
-
-
 
 Lists are created and managed via the **[!UICONTROL Lists]** link in the **[!UICONTROL Profiles and targets]** tab.
 
@@ -41,6 +39,8 @@ Adobe Campaign 提供两类列表：
 * **[!UICONTROL List]** 类型：类型 **[!UICONTROL List]** 列表允许您使用工作流创建和管理列表。 These will be specific lists resulting from data imports, that can be updated via the dedicated **[!UICONTROL List update]** workflow activity.
 
    Unlike the **[!UICONTROL Group]** type list, this type list can be automatically updated with a **[!UICONTROL Scheduler]** activity. Note that For an example on how to create **[!UICONTROL List]** type lists, refer to [this page](../../workflow/using/list-update.md).
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#create-list-video)
 
 ## 通过组创建用户档案列表 {#creating-a-profile-list-from-a-group}
 
@@ -131,3 +131,22 @@ If you uncheck the **[!UICONTROL No trace of this job is saved in the database]*
 >
 >删除列表时，该列表上的用户档案不受影响，但会更新其用户档案中的数据。
 
+## 如何创建列表收件人 {#create-list-video}
+
+列表是一组静态收件人档案，用于在投放操作期间提供定位目标，或在导入操作或工作流执行期间进行更新。收件人列表也称为受众。
+
+了解如何通过从资源管理器配置受众列表来创建收件人。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+
+## 如何使用工作流创建列表收件人
+
+了解如何创建工作流以目标收件人，以及如何在电子邮件目标中使用列表之前使其重复。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+
+**另请参阅**
+
+* 
+
+* 
