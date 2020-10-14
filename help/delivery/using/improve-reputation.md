@@ -10,17 +10,17 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 1%
+source-wordcount: '550'
+ht-degree: 2%
 
 ---
 
 
 # 提高您的声誉{#improve-reputation}
 
-为避免让收件人精疲力尽，请从目标中删除重复电子邮件地址。 此步骤可保护您发送的信誉并确保良好的隔离管理。 Adobe Campaign优惠执行这些建议所需的工具，并避免ISP将其添加到阻止列表的风险。
+为避免让收件人精疲力尽，请从目标中删除重复电子邮件地址。 此步骤可保护您发送的信誉并确保良好的隔离管理。 Adobe Campaign优惠执行这些建议所需的工具，并避免被ISP添加阻止列表到的风险。
 
 要尽可能避免重复，必须执行以下操作：
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 * 同一邮件被多次发送。 即使活动在发送前默认执行外部重复数据删除过程，在拆分目标时，也没有任何内容可以阻止具有相同内容的不同操作发送相同的消息。
 * 退订请求未接受。 如果收件人在收到消息后取消订阅，其重复用户档案仍有资格获取将来的消息。
 
-除了选择加入程序的这一侧面，这种情况还可能导致用户将消息视为垃圾邮件，并在ISP触发阻止列表程序。
+除了选择加入程序的这一侧行，这种情况还可能导致用户将消息视为垃圾信息，并在ISP阻止列表触发程序。
 
 对数据库执行操作时，必须特别谨慎：
 
