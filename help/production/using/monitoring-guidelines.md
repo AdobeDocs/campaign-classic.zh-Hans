@@ -1,6 +1,6 @@
 ---
 title: 监控准则
-description: 了解监控活动实例和流程的准则和最佳实践。
+description: 了解监控 Campaign 实例和流程的准则和最佳实践。
 page-status-flag: never-activated
 uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
