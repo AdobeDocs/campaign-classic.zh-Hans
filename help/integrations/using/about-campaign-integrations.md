@@ -1,6 +1,6 @@
 ---
 title: 关于 Campaign 集成
-description: 使用其他Adobe解决方案，并将其不同的功能与活动相结合。
+description: 使用其他 Adobe 解决方案，并将其不同的功能与 Campaign 相结合。
 page-status-flag: never-activated
 uuid: 087abdf0-b4b2-45e6-be21-b03bf85ddf83
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
