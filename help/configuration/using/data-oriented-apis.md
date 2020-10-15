@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: api
 discoiquuid: fba46d42-0253-425b-bbc2-6702d4140e05
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 63b208e5607bdcddaef03292d229847c4b7366f8
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -226,7 +226,7 @@ XPath **语法** ，用于根据输入模式定位数据。 有关XPath的详细
 
 >[!NOTE]
 >
->我们再次使用上一个示例中的条件。 不 `<select>` 使用和子句。 </select>“
+>我们再次使用上一个示例中的条件。 不 `<select>` 使用和子句。 `</select>`
 
 #### 数据分组 {#data-grouping}
 
