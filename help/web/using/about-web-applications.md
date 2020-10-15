@@ -1,6 +1,6 @@
 ---
 title: 关于 Web 应用程序
-description: 创建和共享动态Web 应用程序、登陆页和调查。
+description: 创建和共享动态 Web 应用程序、登陆页和调查。
 page-status-flag: never-activated
 uuid: acfa6e5e-b503-4a1a-871e-e70007874f57
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
