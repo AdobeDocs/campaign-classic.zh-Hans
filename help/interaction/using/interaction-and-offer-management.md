@@ -1,6 +1,6 @@
 ---
 title: 互动和优惠管理
-description: 根据优惠将最佳合格规则发送给您的联系人。
+description: 根据资格条件规则将最佳优惠发送给您的联系人。
 page-status-flag: never-activated
 uuid: 70720baa-e64e-4fb6-8301-fe3920791f79
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 6%
+ht-degree: 10%
 
 ---
 
