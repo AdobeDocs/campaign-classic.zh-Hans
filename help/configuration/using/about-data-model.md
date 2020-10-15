@@ -1,6 +1,6 @@
 ---
 title: 关于Adobe Campaign Classic数据模型
-description: 了解如何扩展活动数据模型、编辑模式、使用API等。
+description: 了解如何扩展 Campaign 数据模型、编辑模式、使用 API 等。
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '971'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
