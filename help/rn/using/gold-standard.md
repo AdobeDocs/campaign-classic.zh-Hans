@@ -1,6 +1,6 @@
 ---
-title: 金标版
-description: 金标版
+title: Gold Standard 发行
+description: Gold Standard 发行
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
 
-# 金标版{#gold-standard}
+# Gold Standard 发行{#gold-standard}
 
 作为金标用户，您无需采取任何操作，即可通过最新稳定版本自动从金标升级中受益。
 
