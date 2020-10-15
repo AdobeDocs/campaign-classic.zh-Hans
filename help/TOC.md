@@ -1,29 +1,29 @@
 ---
 audience: end-user
-user-guide-title: Adobe Campaign Classic指南
-breadcrumb-title: Campaign Classic Guide
+user-guide-title: Adobe Campaign Classic 指南
+breadcrumb-title: Campaign Classic 指南
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: Design, plan, execute, manage, and optimize cross-channel marketing campaigns that deliver a high return on marketing investment.
+user-guide-description: 设计、规划、执行、管理和优化跨渠道营销活动，以实现较高的营销投资回报。
 product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '2139'
 ht-degree: 94%
 
 ---
 
 
-# Adobe Campaign Classic Guide {#using}
+# Adobe Campaign Classic 指南 {#using}
 
 + [产品文档](campaign-classic-home.md)
 + [最近更新](rn/using/documentation-updates.md)
 + 发行说明 {#release-notes}
    + [升级入门](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
-   + [金标版](rn/using/gold-standard.md)
+   + [Gold Standard 发行](rn/using/gold-standard.md)
    + 之前版本 {#previous-releases}
       + [版本 20.1](rn/using/release--20-1.md)
       + [版本 19.2](rn/using/release--19-2.md)
