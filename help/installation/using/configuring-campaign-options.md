@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 63b208e5607bdcddaef03292d229847c4b7366f8
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 0%
@@ -648,7 +648,7 @@ ht-degree: 0%
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> 允许您为Microsoft SQL Server上的工作表配置单独的数据库，以优化备份和复制。 该选项与临时数据库的名称相对应：如果指定，将在此数据库中写入工作表。 示例：'tempdb.dbo.' （请注意，名称必须以点结尾）。</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">阅读更多</a> <br /> </td> 
+   <td> 允许您为Microsoft SQL Server上的工作表配置单独的数据库，以优化备份和复制。 该选项与临时数据库的名称相对应：如果指定，将在此数据库中写入工作表。 示例：'tempdb.dbo.' （请注意，名称必须以点结尾）。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">阅读更多</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
