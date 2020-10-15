@@ -1,6 +1,6 @@
 ---
 title: 关于Adobe Campaign报告工具
-description: 分析活动在内置或自定义报告中的成功。
+description: 分析促销活动在内建或自定义报告中成功与否。
 page-status-flag: never-activated
 uuid: a8122c9e-60ba-4ef7-bc63-05d6cf16fad0
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 13%
+ht-degree: 16%
 
 ---
 
