@@ -1,6 +1,6 @@
 ---
 title: 关于社交媒体营销
-description: 了解如何使用活动通过Facebook和Twitter与客户互动。
+description: 了解如何使用 Campaign 通过 Facebook 和 Twitter 与客户互动。
 page-status-flag: never-activated
 uuid: 64c861e3-b685-44e2-9b5b-4fbf5d70baa9
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 4%
+ht-degree: 12%
 
 ---
 
