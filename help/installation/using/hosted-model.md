@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: hybrid-and-hosted-models
 discoiquuid: ada27825-42bd-48c7-bc03-a619f1fa9463
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '88'
 ht-degree: 9%
 
 ---
@@ -22,12 +22,11 @@ ht-degree: 9%
 
 # 托管模型{#hosted-model}
 
-以下是适用于托管型号的安装和配置步骤：
+作为托管客户，大多数安装和配置步骤由Adobe执行。 您可以访问以下部分来自定义您的实施：
 
-* 根据品牌配置跟踪和镜像页面URL。 有关事务性消息，请参阅此 [部分](../../message-center/using/configuring-multibranding.md)。
-* 安装客户端控制台：请参阅本 [部分](../../installation/using/installing-the-client-console.md)。
-* 安装包：请参阅本 [部分](../../installation/using/installing-campaign-standard-packages.md)。
+* 根据品牌配置跟踪和镜像页面URL。 有关事务性消息, [请参阅此部分](../../message-center/using/configuring-multibranding.md)。
+* 安装客户端控制台：请参 [阅本节](../../installation/using/installing-the-client-console.md)。
 * 阅读入门指南和详细文档，进一步了解 [交付工具](../../delivery/using/deliverability-key-points.md)[和最佳实践](../../delivery/using/about-deliverability.md)。
-* 配置活动选项：请参阅本 [部分](../../installation/using/configuring-campaign-options.md)。
-* 配置CRM连接器：请参阅本 [部分](../../platform/using/crm-connectors.md)。
+* 配置活动选项：请参 [阅本节](../../installation/using/configuring-campaign-options.md)。
+* 配置CRM连接器：请参 [阅本节](../../platform/using/crm-connectors.md)。
 
