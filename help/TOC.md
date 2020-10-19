@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2130'
 ht-degree: 94%
 
 ---
@@ -577,17 +577,16 @@ ht-degree: 94%
       + [Facebook 应用程序示例](social/using/examples-of-facebook-apps.md)
       + [跟踪](social/using/tracking.md)
 + 安装 Campaign Classic {#installing-campaign-classic}
-   + 架构和托管模型 {#architecture-and-hosting-models}
-      + [阅读前](installation/using/before-reading.md)
+   + 建筑原理 {#architecture-and-hosting-models}
       + [一般架构](installation/using/general-architecture.md)
-      + [托管模型](installation/using/hosting-models.md)
-   + 混合和托管模型 {#hybrid-and-hosted-models}
-      + [关于混合和托管模型](installation/using/about-hybrid-and-hosted-models.md)
-      + [混合模型](installation/using/hybrid-model.md)
-      + [托管模型](installation/using/hosted-model.md)
-   + 先决条件和建议  {#prerequisites-and-recommendations-}
-      + [开始前](installation/using/before-starting.md)
-      + [数据库](installation/using/database.md)
+      + 托管模型{#hosting-models-lp}
+         + [关于托管模型](installation/using/hosting-models.md)
+         + [混合模型](installation/using/hybrid-model.md)
+         + [托管模型](installation/using/hosted-model.md)
+         + [能力矩阵](installation/using/capability-matrix.md)
+   + 部署指南 {#deployment-guidelines}
+      + [先决条件](installation/using/before-starting.md)
+      + [数据库服务器](installation/using/database.md)
       + [应用程序服务器](installation/using/application-server.md)
       + [消息服务器](installation/using/messaging-server.md)
       + [网络配置](installation/using/network-configuration.md)
