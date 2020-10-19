@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: hybrid-and-hosted-models
 discoiquuid: f5244ab8-2421-4d76-bcf6-3574e68ea4e9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '131'
 ht-degree: 6%
 
 ---
@@ -22,15 +22,15 @@ ht-degree: 6%
 
 # 混合模型{#hybrid-model}
 
-以下是适用于混合主机托管模型的安装和配置步骤：
+作为托管客户，大多数安装和配置步骤由Adobe执行。 您可以访问以下部分来自定义您的实施：
 
-* 配置事务性消息:请参阅本 [部分](../../message-center/using/transactional-messaging-architecture.md)。
-* 根据品牌配置跟踪和镜像页面URL。 有关事务性消息，请参阅此 [部分](../../message-center/using/configuring-multibranding.md)。
-* 安装客户端控制台：请参阅本 [部分](../../installation/using/installing-the-client-console.md)。
-* 安装包：请参阅本 [部分](../../installation/using/installing-campaign-standard-packages.md)。
+* 配置事务性消息:请参 [阅本节](../../message-center/using/transactional-messaging-architecture.md)。
+* 根据品牌配置跟踪和镜像页面URL。 有关事务性消息, [请参阅此部分](../../message-center/using/configuring-multibranding.md)。
+* 安装客户端控制台：请参 [阅本节](../../installation/using/installing-the-client-console.md)。
+* 安装内置包：请参 [阅本节](../../installation/using/installing-campaign-standard-packages.md)。
 * 可交付性：配置 [MX规则](../../installation/using/email-deliverability.md#mx-configuration) 和 [电子邮件格式](../../installation/using/email-deliverability.md#managing-email-formats)。 阅读入门指南和详细文档，进一步了解 [交付工具](../../delivery/using/deliverability-key-points.md)[和最佳实践](../../delivery/using/about-deliverability.md)。
-* 配置活动选项：请参阅本 [部分](../../installation/using/configuring-campaign-options.md)。
-* 配置外部数据库(联合数据访问):请参阅本 [部分](../../platform/using/about-fda.md)。
-* 配置CRM连接器：请参阅本 [部分](../../platform/using/crm-connectors.md)。
-* 要进一步了解中间源部署原则，请参阅本 [节](../../installation/using/mid-sourcing-deployment.md)。
+* 配置活动选项：请参 [阅本节](../../installation/using/configuring-campaign-options.md)。
+* 配置外部数据库(联合数据访问):请参 [阅本节](../../platform/using/about-fda.md)。
+* 配置CRM连接器：请参 [阅本节](../../platform/using/crm-connectors.md)。
+* 要进一步了解中间源部署原则，请 [参阅本节](../../installation/using/mid-sourcing-deployment.md)。
 
