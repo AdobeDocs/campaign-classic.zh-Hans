@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fc014fe5fcadac680af31e86e258a4df7073e0bd
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 3%
@@ -78,7 +78,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >请注意，在使用HTTP联合数据访问时，仅支持使用Postgres数据库的实例。 不支持MSSQL或Oracle数据库。
+   >请注意，在使用HTTP联合数据访问时，仅支持使用PostgreSQL执行实例库的。 不支持MSSQL或Oracle数据库。
 
    如果控制实例可以直接访问执行实例的数据库，则建议使用第二种方法。 否则，选择Web服务访问。 要指定的联合数据访问帐户与在控制实例上创建的各种执行实例的数据库连接一致。
 
