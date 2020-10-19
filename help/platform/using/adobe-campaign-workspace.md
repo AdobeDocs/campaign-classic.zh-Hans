@@ -12,17 +12,17 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
 workflow-type: tm+mt
-source-wordcount: '2165'
-ht-degree: 88%
+source-wordcount: '2147'
+ht-degree: 87%
 
 ---
 
 
 # Adobe Campaign 工作区{#adobe-campaign-workspace}
 
-## 关于 Adobe Campaign 界面 {#about-adobe-campaign-interface}
+## 浏览Adobe Campaign界面 {#about-adobe-campaign-interface}
 
 连接到数据库后，即可访问 Adobe Campaign 主页，这是一个仪表板：其中包含允许您访问各种功能的链接和快捷方式，具体显示哪些取决于您的安装以及常规平台配置。
 
@@ -30,7 +30,7 @@ ht-degree: 88%
 
 ![](assets/d_ncs_user_interface_home.png)
 
-上面的屏幕快照是 Adobe Campaign 用户主页的一个示例。如需更多信息，请观看 [Adobe Campaign 界面概述视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)。
+![](assets/do-not-localize/how-to-video.png) [在视频中发现活动工作区](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 ### 语言 {#languages}
 
-安装Adobe Campaign Classic实例时会选择该语言，之后将无法更改。 For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+安装您的Adobe Campaign Classic实例时，会选择该语言。
 
 ![](assets/language.png)
 
@@ -67,6 +67,12 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 * 日语
 
 您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关更多信息，请参阅此](../../platform/using/adobe-campaign-workspace.md#date-and-time)章节[。
+
+For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+
+>[!CAUTION]
+>
+>创建实例后，无法更改该语言。
 
 ## 导览基本功能 {#navigation-basics}
 
@@ -174,9 +180,9 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-### 配置列表 {#configuring-lists}
+## 配置列表 {#configuring-lists}
 
-#### 添加列 {#add-columns}
+### 添加列 {#add-columns}
 
 在列表中添加列有两种方法。
 
@@ -222,14 +228,14 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 
 1. 单击 **[!UICONTROL OK]** 确认配置并显示结果。
 
-#### 新建列 {#create-a-new-column}
+### 新建列 {#create-a-new-column}
 
 您可以创建新的列来显示列表中的其他字段。操作步骤：
 
 1. Click **[!UICONTROL Configure the list]** at below and to the right of the list.
 1. 单击 **[!UICONTROL Add]** 在列表中显示新字段。
 
-#### 移除列 {#remove-a-column}
+### 移除列 {#remove-a-column}
 
 您可使用列表右下方的 **[!UICONTROL Configure list]** 屏蔽记录列表中的一个列或多个列。
 
@@ -241,11 +247,11 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 
 对要屏蔽的每个列重复此步骤。单击 **[!UICONTROL OK]** 确认配置并显示结果。
 
-#### 调整列宽 {#adjust-column-width}
+### 调整列宽 {#adjust-column-width}
 
 列表处于活动状态时，即至少选中了一行时，您可以使用 F9 调整列宽，以便在屏幕上显示所有的列。
 
-#### 显示子文件夹记录 {#display-sub-folders-records}
+### 显示子文件夹记录 {#display-sub-folders-records}
 
 列表可显示：
 
@@ -286,7 +292,7 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-### 导出列表 {#exporting-a-list}
+## 导出列表 {#exporting-a-list}
 
 要从列表中导出数据，必须使用导出向导。要启动此向导，可从列表中选择要导出的元素，右键单击它后选择 **[!UICONTROL Export...]**。
 
@@ -296,7 +302,7 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 >
 >不得使用“复制/粘贴”功能从列表中导出元素。
 
-### 排序列表 {#sorting-a-list}
+## 排序列表 {#sorting-a-list}
 
 列表中可包含大量的数据。您可以排序这些数据，或者应用简单或高级过滤器。利用排序，您可以按升序或降序顺序显示数据。您可以利用过滤器来定义并组合各种标准，从而仅显示所选的数据。
 
@@ -321,7 +327,7 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 
 1. 单击 **[!UICONTROL Ok]** 确认此配置，并在列表中显示结果。
 
-### 执行搜索 {#running-a-search}
+### 搜索元素 {#running-a-search}
 
 您可使用字段列表上方的 **[!UICONTROL Search]** 字段对编辑器中的可用字段进行搜索。按下键盘上的 **Enter** 键或浏览列表。符合搜索内容的字段将以粗体标签显示。
 
@@ -388,4 +394,3 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
 * **[!UICONTROL d]** 几天。
 
 ![](assets/enter_unit_sample.png)
-
