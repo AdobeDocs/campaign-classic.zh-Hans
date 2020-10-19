@@ -1,8 +1,6 @@
 ---
 title: 数据库清理工作流
-seo-title: 数据库清理工作流
-description: 数据库清理工作流
-seo-description: null
+description: 了解如何自动清理过时的数据
 page-status-flag: never-activated
 uuid: a7478641-cdf6-4bd4-9dd7-0c84416c9de6
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2910'
 ht-degree: 0%
 
 ---
@@ -32,7 +30,7 @@ ht-degree: 0%
 
 数据库清理配置在两个级别上：在工作流调度程序和部署向导中。
 
-### 调度程序 {#the-scheduler}
+### 工作流调度程序 {#the-scheduler}
 
 >[!NOTE]
 >
@@ -53,7 +51,7 @@ ht-degree: 0%
 
 ### 部署向导 {#deployment-wizard}
 
-通过 **[!UICONTROL Deployment wizard]** 菜单访问的 **[!UICONTROL Tools > Advanced]** 数据，可以配置数据的保存时间。 值以天数表示。 如果这些值未更改，工作流将使用默认值。
+通过 **[!UICONTROL Deployment wizard]**&#x200B;菜单访问 **[!UICONTROL Tools > Advanced]** 的数据，可以配置数据的保存时间。 值以天数表示。 如果这些值未更改，工作流将使用默认值。
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
