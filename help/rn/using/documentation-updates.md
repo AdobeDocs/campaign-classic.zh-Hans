@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: d06cc9c090e2ad8b72ce3192a26108ec213ba549
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '3695'
-ht-degree: 87%
+source-wordcount: '3731'
+ht-degree: 86%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 87%
 您还可以查阅 [Adobe Campaign Classic Release 发行说明](../../rn/using/latest-release.md) ，了解更多更新信息。
 
 ## 2020 年 10 月 {#oct-2020}
+
+活动报告高级功能部分已得到改进，可详细说明如何在自定义报告中使用URL参数和变量。 [阅读更多](../../reporting/using/advanced-functionalities.md)
+
+报表属性页面已重新组织并进行了丰富，以便于配置。 [阅读更多](../../reporting/using/properties-of-the-report.md)
 
 新技术已经被创建，其中包含如何从传统二进制协议迁移到基于HTTP/2的APNs提供程序API的详细信息。 [阅读更多](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
