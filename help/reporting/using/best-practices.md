@@ -1,8 +1,6 @@
 ---
 title: 报告最佳实践
-seo-title: 报告最佳实践
-description: 报告最佳实践
-seo-description: null
+description: 活动报告最佳实践
 page-status-flag: never-activated
 uuid: 09de6a17-b3a7-4543-b672-b0a21653aa75
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: reporting-in-adobe-campaign
 discoiquuid: 904961e0-7dff-4350-8d5d-e4bdd368b3ff
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 1%
+source-wordcount: '839'
+ht-degree: 0%
 
 ---
 
@@ -36,15 +34,15 @@ ht-degree: 1%
 
    例如，您可以：
 
-   * 浏览数据库中的数据并定义度量值(通 [过本节](../../reporting/using/about-cubes.md)),
-   * 向现有报告添加指标(请参 [阅本节](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * 视图数据库中的数据(通 [过本节](../../reporting/using/about-descriptive-analysis.md)),
-   * 创建新的投放报告(请参 [阅本节](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * 从Adobe Campaign库导出数据(通过工作流，参 [阅本节](../../workflow/using/about-workflows.md)),
-   * 创建透视表(请参 [阅本节](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)),
-   * 浏览聚集数据(通 [过本节](../../reporting/using/about-cubes.md)),
-   * 使用向导分析数据(通 [过本节](../../reporting/using/about-descriptive-analysis.md)),
-   * 分析大量数据(请参 [阅本节](../../reporting/using/about-reports-creation-in-campaign.md))等。
+   * 浏览数据库中的数据并定义测量。 在本节 [中了解更多](../../reporting/using/about-cubes.md)
+   * 向现有报告添加指标。 在本节 [中了解更多](../../reporting/using/about-reports-creation-in-campaign.md)
+   * 视图数据库中的数据。 在本节 [中了解更多](../../reporting/using/about-descriptive-analysis.md)
+   * 创建新投放报告。 在本节 [中了解更多](../../reporting/using/about-reports-creation-in-campaign.md)),
+   * 从Adobe Campaign库导出数据(通过工作流，请参 [阅本节](../../workflow/using/about-workflows.md)
+   * 创建透视表。 在本节 [中了解更多](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
+   * 浏览聚集数据。 在本节 [中了解更多](../../reporting/using/about-cubes.md)
+   * 使用向导分析数据。 在本节 [中了解更多](../../reporting/using/about-descriptive-analysis.md)
+   * 分析大量数据。 在本节 [中了解更多](../../reporting/using/about-reports-creation-in-campaign.md)
 
 1. 确定目标群
 
@@ -79,7 +77,7 @@ ht-degree: 1%
 
    同样，在设计阶段，如果报告计算超过60秒，则需要更改计算方法。
 
-* 使用Marketing Analytics时，被操纵的数据不得超过1000万行。
+* 使用Marketing Analytics模块时，报告数据不得超过1000万行。
 
 我们还建议在晚上计算聚合，并在报告中直接使用此汇总数据。 这些聚合必须通过专用数据管理工作流(SQL查询)创建。
 
@@ -103,15 +101,19 @@ if(string(ctx@_historyId)!==""))
 
 除此之外，Adobe Campaign还建议进行以下改进：
 
-* 研究数据模型：索引字段必须主要用于改进计算公式。
+* 处理您的数据模型：索引字段必须主要用于改进计算公式。
 
    要快速查找索引字段，请在Adobe Campaign界面中查看列的名称：如果对字段编制索引，则排序箭头的下划线为红色。
 
-* 确保报表长期有效：数据量可能随着时间推移而显着增加。
+   For more on indexes, refer to [this section](../../configuration/using/data-model-best-practices.md#indexes).
+
+* 确保报告可伸缩：数据量可能随着时间推移而显着增加。
 
    同样，在测试阶段期间操作的数据量可能与生产中的实际数据量不同。 这就是测试阶段很重要的原因。
 
    最后，需要知道数据清除延迟并在必要时加以调整，以便轻松进行数据处理。
+
+   有关清理和数据保留的详细信息，请参 [阅本节](../../configuration/using/data-model-best-practices.md#data-retention)。
 
 ### 导出报告 {#exporting-reports}
 
