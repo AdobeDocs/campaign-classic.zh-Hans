@@ -1,6 +1,6 @@
 ---
-title: 使用Adobe Campaign Classic收件人表
-description: 了解如何在设计收件人模型时使用Adobe Campaign Classic的现成数据表。
+title: 数据模型最佳实践
+description: 了解如何使用Campaign Classic数据模型
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '3997'
-ht-degree: 0%
+source-wordcount: '4014'
+ht-degree: 1%
 
 ---
 
@@ -253,6 +253,10 @@ Adobe Campaign既不是data warehouse，也不是报告工具。 因此，为了
 
 * 如果要延长日志保存时间，应根据数据库大小和发送的消息量仔细作出此决定。 作为提醒，Adobe Campaign序列是32位整数。
 * 建议在这些表中一次不要有超过10亿个记录（在21.4亿个可用ID中约占50%），以限制使用所有可用ID的风险。 这将要求一些客户将保留期限降至180天以下。
+
+按照活动隐私和安全准则进 [一步了解数据保留](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent)。
+
+在本节中进一步了解活动数据 [库清理工作流](../../production/using/database-cleanup-workflow.md)。
 
 >[!IMPORTANT]
 >
