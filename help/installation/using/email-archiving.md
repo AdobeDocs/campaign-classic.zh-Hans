@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: d6467875-949b-4b47-940f-620efd4db5e0
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '1303'
-ht-degree: 3%
+source-wordcount: '1306'
+ht-degree: 2%
 
 ---
 
 
-# 电子邮件存档{#email-archiving}
+# 密件抄送 {#email-archiving}
 
 您可以配置Adobe Campaign以保留从平台发送的电子邮件副本。
 
@@ -30,15 +30,15 @@ ht-degree: 3%
 
 ## Recommendations和限制 {#recommendations-and-limitations}
 
-* 电子邮件存档功能是可选的。 请核实您的许可协议。
-* 对于 **托管和混合架构**，请与客户经理联系以激活它。 您选择的密件抄送地址必须提供给将为您配置该地址的Adobe团队。
-* 对 **于内部部署安装**，请按照以下指南激活它——请参阅激活电子邮 [件归档（内部部署）](#activating-email-archiving--on-premise-) 和 [配置密送电子邮件地址（内部部署）部分](#configuring-the-bcc-email-address--on-premise-) 。
+* 密件抄送功能是可选的。 请核实您的许可协议。
+* 对于 **托管和混合架构**，请与客户经理联系以激活它。 您选择的密件抄送电子邮件地址必须提供给将为您配置该地址的Adobe团队。
+* 对 **于内部部署安装**，请按照以下指导方针激活它——请参阅激活 [密送电子邮件（内部部署）](#activating-email-archiving--on-premise-) 和 [配置密送电子邮件地址（内部部署）部分](#configuring-the-bcc-email-address--on-premise-) 。
 * 只能使用一个密送电子邮件地址。
-* 配置电子邮件密送后，请通过选项确保在投放模板或投放中启用该 **[!UICONTROL Archive emails]** 功能。 有关更多信息，请参阅[此章节](../../delivery/using/sending-messages.md#archiving-emails)。
+* 配置电子邮件密送后，请通过选项确保在投放模板或投放中启用该 **[!UICONTROL Email BCC]** 功能。 有关更多信息，请参阅[此章节](../../delivery/using/sending-messages.md#archiving-emails)。
 * 只会考虑成功发送的电子邮件，而不会考虑弹回。
-* 电子邮件归档系统因Adobe Campaign17.2（内部版本8795）而发生更改。 如果您已在使用电子邮件归档，则必须手动升级到新的电子邮件归档系统(BCC)。 有关此内容的详细信息，请参 [阅更新的电子邮件归档系统(BCC)](#updated-email-archiving-system--bcc-) 部分。
+* 电子邮件归档系统因Adobe Campaign17.2（内部版本8795）而发生更改。 如果您已在使用电子邮件存档，则必须手动升级到新的电子邮件密送系统。 有关此内容的详细信息，请 [参阅移至新的电子邮件密送](#updated-email-archiving-system--bcc-) 部分。
 
-## 激活电子邮件存档（内部部署） {#activating-email-archiving--on-premise-}
+## 激活电子邮件密送（内部部署） {#activating-email-archiving--on-premise-}
 
 要在事先安装Adobe Campaign时激活密送电子邮件归档，请执行以下步骤。
 
@@ -70,7 +70,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 >[!NOTE]
 >
->在中间源实例中，归档电子邮件的目录位于中间源服务器上。
+>在中间源实例中，密送电子邮件的目录位于中间源服务器上。
 >
 >当未发送电子邮件的状态时，deliveryID和broadlogID来自中间源服务器。 状态更改为后， **[!UICONTROL Sent]**&#x200B;这些ID将来自营销服务器。
 
@@ -128,7 +128,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 >
 >此外，中继会为所 **[!UICONTROL Sent]** 有电子邮件分配状态，包括未发送的电子邮件。 因此，所有邮件都会存档。
 
-## 更新的电子邮件存档系统（密送） {#updated-email-archiving-system--bcc-}
+## 转到新的电子邮件密送 {#updated-email-archiving-system--bcc-}
 
 >[!CAUTION]
 >
@@ -140,9 +140,9 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 1. 根据需 **要将compression** Format参 **数设置** 为1。
 1. 将archivingType **参数** 设置为 **1**。
 
-配置电子邮件密送后，请确保在投放模板 **[!UICONTROL Archive emails]** 或投放中选择相应选项。 有关更多信息，请参阅[此章节](../../delivery/using/sending-messages.md#archiving-emails)。
+配置电子邮件密送后，请确保在投放模板 **[!UICONTROL Email BCC]** 或投放中选择相应选项。 有关更多信息，请参阅[此章节](../../delivery/using/sending-messages.md#archiving-emails)。
 
-## 最佳做法 {#best-practices}
+## 密送电子邮件最佳实践 {#best-practices}
 
 * **密送地址邮箱**:确保它具有足够的接收能力来存档MTA发送的所有电子邮件。
 * **MTA共同化**:密送归档功能在MTA级别有效。 它允许您重复MTA发送的每封电子邮件。 由于MTA可以跨多个实例（例如开发、测试或生产）或甚至跨多个客户端(在中间源环境中)实现共同化，因此设置此功能会影响安全性：
