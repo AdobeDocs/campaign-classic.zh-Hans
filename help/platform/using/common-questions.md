@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9ef8e05904751cc141403af20582dc850610f6d2
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ Adobe Campaign 提供了一组仪表板和工具来监视电子邮件投放。
 
 您可在[此页面](https://docs.adobe.com/content/help/zh-Hans/campaign-classic/using/release-notes/latest-release.html)中访问最新的 Campaign Classic 版本说明。
 
-## 9. 域委派的程序是怎样的？{#what-is-the-procedure-for-domain-delegation-}
+## 9. What is the procedure for domain configuration? {#what-is-the-procedure-for-domain-delegation-}
 
 子域是域的一个分支，可用于隔离您的品牌或各种类型的流量（交易消息、营销信息等）。Adobe 使用域名系统 (DNS) 的帐户进行电子邮件投放，让客户端使用带有其域名的 DNS 别名维护品牌形象，Adobe 将自主实施所有技术最佳实践，在发送电子邮件期间优化投放效果。
 
