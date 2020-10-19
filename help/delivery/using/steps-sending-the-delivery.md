@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 5%
@@ -52,7 +52,7 @@ ht-degree: 5%
    >
    >有关配置SMTP服务器的详细信息，请参 [阅本节](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)。
 
-* **[!UICONTROL Archive emails]**:通过此选项，您只需向邮件目标添加密送电子邮件地址，即可通过密送方式在外部系统上存储电子邮件。 For more on this, refer to [Archiving emails](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**:通过此选项，您只需向邮件目标添加密送电子邮件地址，即可通过密送方式在外部系统上存储电子邮件。 For more on this, refer [to this section](../../delivery/using/sending-messages.md#archiving-emails).
 
 配置投放并准备发送后，请确保已运行投放 [分析](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。 完成后，单 **[!UICONTROL Confirm delivery]** 击以启动消息投放。
 
