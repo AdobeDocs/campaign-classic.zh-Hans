@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
 source-wordcount: '3731'
 ht-degree: 86%
@@ -201,9 +201,9 @@ Hadoop FDA 连接器增强 - [阅读更多](../../platform/using/specific-config
 
 **随版本提供的其他文档更新**
 
-[安装、](../../installation/using/before-reading.md) [生产](../../production/using/foreword.md)[和配置](../../configuration/using/additional-parameters.md)指南已更新，包含 nlserver 服务启动使用的新系统单元。您仍可以使用 /etc/init.d/nlserver6，但 Adobe 建议您现在使用 systemctl 命令与 nlserver 服务进行交互。
+[安装、](../../installation/using/general-architecture.md) [生产](../../production/using/foreword.md)[和配置](../../configuration/using/additional-parameters.md)指南已更新，包含 nlserver 服务启动使用的新系统单元。您仍可以使用 /etc/init.d/nlserver6，但 Adobe 建议您现在使用 systemctl 命令与 nlserver 服务进行交互。
 
-安装指南已更新并与最新版本的兼容性矩阵同步。新增了支持的系统。已删除已弃用和不支持的系统的实例。[阅读更多](../../installation/using/before-reading.md)
+安装指南已更新并与最新版本的兼容性矩阵同步。新增了支持的系统。已删除已弃用和不支持的系统的实例。[阅读更多](../../installation/using/general-architecture.md)
 
 更新了兼容性矩阵，纳入 Hadoop 3.0 和 Snowflake FDA 连接器。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 
@@ -375,7 +375,7 @@ Apache 配置步骤已更新。[阅读更多](https://docs.campaign.adobe.com/do
 
 子工作流活动部分新增了使用示例。[阅读更多](../../workflow/using/sub-workflow.md)
 
-[Campaign Classic 本地和托管功能矩阵](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)知识库文章已更新，其中包含与归档电子邮件相关的信息。
+The [Campaign Classic On-premise &amp; Hosted capability matrix](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html) Knowledge base article has been updated with information relating to Email BCC.
 
 事务性消息文档已更新，包含有关模板发布的说明。[阅读更多](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
