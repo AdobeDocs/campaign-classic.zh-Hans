@@ -1,8 +1,6 @@
 ---
 title: 报告的属性
-seo-title: 报告的属性
-description: 报告的属性
-seo-description: null
+description: 进一步了解报告属性设置
 page-status-flag: never-activated
 uuid: 56163f53-d115-45b8-94a5-c173ac4c6533
 contentOwner: sauviat
@@ -12,50 +10,50 @@ content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 5ec88743-be51-438c-9064-dd0196fdd7d3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b0b9a0714075474bf52c3eed78d45bcef25b44fc
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 3%
+source-wordcount: '458'
+ht-degree: 2%
 
 ---
 
 
 # 报告的属性{#properties-of-the-report}
 
-## 概述 {#overview}
-
-您可以完全个性化和配置报告，以满足您的需求。 为此，请编辑其属性。 报表属性通过活动序列图上方的属性按钮进行访问。
+您可以完全个性化和配置报告，以满足您的需求。 为此，请编辑其属性。 报表属性通过活动顺 **[!UICONTROL Properties]** 序图表上方的按钮访问。
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-## 总体属性 {#overall-properties}
+常规属性如下所述。 本节介绍在中配 **[!UICONTROL Parameters]**&#x200B;置的 **[!UICONTROL Variables]** 高级 **[!UICONTROL Scripts]** 功能 [，以](../../reporting/using/advanced-functionalities.md)及选项卡。
 
-通 **[!UICONTROL General]** 过选项卡，您可以视图或更改报表所关注的标签和模式。 这些元素是在创建报表时输入的。
+## 常规属性 {#overall-properties}
 
-我们不建议更改 **[!UICONTROL Internal name]** :这在报表访问URL中使用。
+在报表 **[!UICONTROL General]** 属性的选项卡中，您可以编辑以下列出的设置：
 
-报表模板在报表创建过程中处于选中状态，以后无法更改。
+* 报表的标签和内部名称。 报 **[!UICONTROL Internal name]** 表最终URL中使用。 在创建报告后不应更改它。
 
-要更改报表所关注的表，请单 **[!UICONTROL Select link]** 击字段右侧的图 **[!UICONTROL Document type]** 标。 要视图选定表格中的可用字段，请单击 **[!UICONTROL Magnifier]** 图标。
+* 在创建报 **表时** ，将选择报表文件夹。 最佳实践是为自定义报表创建专用文件夹，使其不与内置 [报表混合](../../reporting/using/about-campaign-built-in-reports.md)。
 
-![](assets/s_ncs_advuser_report_properties_02.png)
+* 创 **建报** 告时，将选择存储。 要更改报表的数据表，请单 **[!UICONTROL Select link]** 击字段右侧的图 **[!UICONTROL Document type]** 标。
 
-## 报告辅助功能 {#report-accessibility}
+   ![](assets/s_ncs_advuser_report_properties_02.png)
 
-报告可以在Adobe Campaign控制台之外访问，例如通过Web浏览器访问。 在这种情况下，可以需要配置报告访问控制，如下所示。
+* 访问控制 **参数** 。 这些设置如下所述。
+
+## Controlling access to the report {#report-accessibility}
+
+报表可在Adobe Campaign控制台中或通过Web浏览器访问。 在这种情况下，可以需要配置报告访问控制，如下所示。
 
 ![](assets/s_ncs_advuser_report_properties_02b.png)
 
-总体原则是：
+可能的选项包括：
 
-* 该选 **[!UICONTROL Anonymous access]** 项允许不受限制地访问报表。 但是，不可能进行任何操纵。
+* **[!UICONTROL Anonymous access]**:此选项允许不受限制地访问报告。 但是，不可能进行任何操纵。
 
-   默认(“webapp”)报表运算符的权限用于显示报表元素。
+   “webapp”技术运营商的权限用于显示报告元素。 在本节 [中了解更多](../../platform/using/access-management.md#default-operators)。
 
-* 该选 **[!UICONTROL Access control]** 项允许Adobe Campaign操作员在登录后访问它。
-* 通过 **[!UICONTROL Specific account]** 此选项，您可以在字段中选择操作员的权限后执行报 **[!UICONTROL Operator]** 告。
-
-本页详细介绍了Web [表单属性](../../web/using/about-web-forms.md)。
+* **[!UICONTROL Access control]**:此选项允许Adobe Campaign操作符在登录后访问它。
+* **[!UICONTROL Specific account]**:通过此选项，可以在字段中选择操作员的权限后执行报 **[!UICONTROL Operator]** 告。
 
 ## 管理报告本地化 {#managing-report-localization}
 
@@ -69,7 +67,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->有关此内容的详细信息，请参阅本部分的相 [应部分](../../web/using/translating-a-web-form.md)。
+>有关活动中网页本地化的详细信息，请参 [阅此部分](../../web/using/translating-a-web-form.md)。
 
 ## 个性化HTML渲染 {#personalizing-html-rendering}
 
@@ -80,60 +78,7 @@ ht-degree: 3%
 * 报表元素标签的默认位置。 此位置可以为每个元素重载。
 * 用于生成报表页面的模板或主题。
 
-本页详细介绍了Web [表单属性](../../web/using/about-web-forms.md)。
-
 ![](assets/s_ncs_advuser_report_properties_08.png)
-
-## 定义其他设置 {#defining-additional-settings}
-
-在选 **[!UICONTROL Parameters]** 项卡中，您可以为报表创建其他设置：这些设置将在调用期间传递到URL。
-
-本页详细介绍了Web [表单属性](../../web/using/about-web-forms.md)。
-
->[!CAUTION]
->
->出于安全原因，必须谨慎使用这些参数。
-
-要创建新设置，请执行以下操作：
-
-1. 单击按 **[!UICONTROL Add]** 钮并输入设置的名称。
-
-   ![](assets/s_ncs_advuser_report_properties_09a.png)
-
-1. 如有必要，请指定设置是否为必需设置。
-1. Select the type of setting you want to create: **[!UICONTROL Filter]** or **[!UICONTROL Variable]**.
-
-   该 **[!UICONTROL Filter entities]** 选项允许您使用数据库的字段作为参数。
-
-   ![](assets/s_ncs_advuser_report_properties_09b.png)
-
-   数据直接在实体级别恢复： **ctx/收件人/@account**。
-
-   通过 **[!UICONTROL Variable]** 此选项，可创建或选择一个变量，该变量将作为URL的参数进行传递，并可用于过滤器。
-
-使 **[!UICONTROL Response HTTP headers]** 用iframe将报表页面包含在HTML页面中时，可防止点击劫持。 要避免点击劫持，您可以选择 **[!UICONTROL X-Frame-options header]** 行为：
-
-* **[!UICONTROL None]**:报告没有 **[!UICONTROL X-Frame-options header]**。
-* **[!UICONTROL Same as origin]**:默认情况下，为新报表和重新发布的报表设置。 主机名与报告的URL相同。
-* **[!UICONTROL Deny]**:无法使用iframe将报告包含在HTML页面中。
-
-![](assets/s_ncs_advuser_report_properties_09c.png)
-
-## 添加变量 {#adding-variables}
-
-该选 **[!UICONTROL Variables]** 项卡包含在报表中配置的变量列表。 这些变量会在报表的上下文中显示，并可用于计算。
-
-单击按 **[!UICONTROL Add]** 钮以创建新变量。
-
-要视图变量的定义，请选择该变量，然后单击 **[!UICONTROL Detail...]** 按钮。
-
-![](assets/s_ncs_advuser_report_properties_10.png)
-
-## 引用脚本 {#referencing-scripts}
-
-该 **[!UICONTROL Scripts]** 选项卡允许您引用将在调用报告页时在客户端和／或服务器端执行的JavaScript代码。
-
-要在客户端正常执行，引用的脚本必须用JavaScript编写，并且需要与大多数浏览器兼容。 如需详细信息，请参阅[此部分](../../web/using/web-forms-answers.md)。
 
 ## 个性化错误页面 {#personalizing-the-error-page}
 
@@ -142,4 +87,3 @@ ht-degree: 3%
 您可以定义文本并将其链接到特定标识符以管理报告本地化。 有关此内容的详细信息， [请参阅添加页眉和页脚](../../reporting/using/element-layout.md#adding-a-header-and-a-footer)。
 
 ![](assets/s_ncs_advuser_report_properties_11.png)
-
