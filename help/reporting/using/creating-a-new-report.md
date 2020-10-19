@@ -1,8 +1,6 @@
 ---
 title: 创建新报告
-seo-title: 创建新报告
-description: 创建新报告
-seo-description: null
+description: 了解创建新报告的关键步骤
 page-status-flag: never-activated
 uuid: dcea5c28-da09-4a31-a13c-c8995c6faa63
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 2%
+source-wordcount: '923'
+ht-degree: 1%
 
 ---
 
@@ -60,29 +58,29 @@ ht-degree: 2%
 
 要构建报表，需要根据报表的性质和上下文确定有用的元素并将其逻辑序列建模。
 
-1. 用&quot;开始&quot;活动来实现第一个要进行的报告建立过程。 每个报告只能使用其中一个活动。
+1. 使用 **[!UICONTROL Start]** 该活动来实现构建报告要执行的第一个过程。 每个报告只能使用其中一个活动。
 
    如果图表包含循环，则此参数为必选参数。
 
-1. 添加一个或多个“查询”活动，以收集对构建报表有用的数据。 可以直接通过查询库模式上的列表或通过导入的或现有多维数据集收集数据。
+1. 添加一个或多个 **[!UICONTROL Query]** 活动以收集对构建报表有用的数据。 可以直接通过查询库模式上的列表或通过导入的或现有多维数据集收集数据。
 
    有关此方面的详细信息，请参 [阅收集数据以进行分析](../../reporting/using/collecting-data-to-analyze.md)。
 
    此数据将根据页面配置显示（或不显示）在报告中。
 
-1. 放置一个或多个“页面”活动以定义所收集数据的图形表示。 您可以插入表、图表、输入字段，并设置一个或多个页面或页面元素显示条件。 所显示的内容可完全配置。
+1. 放置一个或多 **[!UICONTROL Page]** 个活动以定义所收集数据的图形表示。 您可以插入表、图表、输入字段，并设置一个或多个页面或页面元素显示条件。 所显示的内容可完全配置。
 
    For more on this, refer to [Static elements](#static-elements).
 
-1. 使用“测试”活动定义显示或访问数据的条件。
+1. 使用活动 **[!UICONTROL Test]** 定义显示或访问数据的条件。
 
    For more on this, refer to [Conditioning page display](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
 
-1. 如有必要，可通过“脚本”活动添加个性化脚本，例如计算报告名称，在特定上下文中过滤结果显示等。
+1. 如有必要，可通过活动添 **[!UICONTROL Script]** 加个性化脚本，例如，计算报告名称，过滤特定上下文中结果的显示，等等。
 
    For more on this, refer to [Script activity](../../reporting/using/advanced-functionalities.md#script-activity).
 
-1. 最后，您可以插入一个或多个“跳转”类型活动，以便更轻松地阅读复杂报表。 这样，您就可以从一个活动切换到另一个过渡，而无需在报表上实现该数据。 “跳转”还可用于显示其他报表。
+1. 最后，您可以插入一个或多个类型活动，以便更轻松地阅读复 **[!UICONTROL Jump]** 杂报表。 这样，您就可以从一个活动切换到另一个过渡，而无需在报表上实现该数据。 该 **[!UICONTROL Jump]** 活动还可用于显示其他报表。
 
    For more on this, refer to [Jump activity](../../reporting/using/advanced-functionalities.md#jump-activity).
 
@@ -167,4 +165,3 @@ A **[!UICONTROL Page]** 可以包括以下元素：
 在此，您可以过滤报告中的数据，以仅显示树中某个文件夹包含的信息：
 
 ![](assets/reporting_control_folder.png)
-
