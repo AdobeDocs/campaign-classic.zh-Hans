@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 7d0a00f4ef49a48014735de36786a48c31b76804
 workflow-type: tm+mt
 source-wordcount: '3587'
 ht-degree: 4%
@@ -592,7 +592,7 @@ enableIf **属性是** 可选的（默认情况下为空），并且仅当结果
 
 ## 限制可上载文件 {#limiting-uploadable-files}
 
-通过新属 **性uploadAllowList** ，可限制可在Adobe Campaign服务器上上传的文件类型。
+通过新属 **性uploadWhiteList** ，可以限制可在Adobe Campaign服务器上上传的文件类型。
 
 此属性在serverConf.xml **文件的** dataStore元 **素中可用** 。 serverConf.xml中的所 **有可用参数** 都列在本 [节中](../../installation/using/the-server-configuration-file.md)。
 
@@ -600,7 +600,7 @@ enableIf **属性是** 可选的（默认情况下为空），并且仅当结果
 
 要限制可能的格式，必须用有效的java常规表达式替换属性值。 可以通过用逗号分隔多个值。
 
-例如： **uploadAllowList=&quot;。*.png,*.jpg** &quot;允许您在服务器上上传PNG和JPG格式。 不接受其他格式。
+例如： **uploadWhiteList=&quot;。*.png,*.jpg** &quot;允许您在服务器上上传PNG和JPG格式。 不接受其他格式。
 
 >[!IMPORTANT]
 >
