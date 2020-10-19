@@ -1,6 +1,6 @@
 ---
 title: 向Adobe Campaign Classic发送电子邮件
-description: 了解Adobe Campaign Classic电子邮件发送的特定参数。
+description: 了解电子邮件投放参数
 page-status-flag: never-activated
 uuid: 791f7a54-3225-46ca-ad6f-6c32e9c62d75
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 9%
+source-wordcount: '739'
+ht-degree: 8%
 
 ---
 
@@ -29,25 +29,25 @@ ht-degree: 9%
 
 以下各节详细介绍了特定于电子邮件发送的参数。
 
-## 存档电子邮件 {#archiving-emails}
+## 密件抄送 {#archiving-emails}
 
 Adobe Campaign允许您通过密送将密送电子邮件地址添加到邮件目标，从而将电子邮件存储在外部系统上。 激活该选项后，将为此投放保留所有已发送消息的确切副本。
 
-有关配置电子邮件密送的详细信息，请参 [阅此部分](../../installation/using/email-archiving.md)。
+有关电子邮件密件抄送配置和最佳实践的详细信息，请参 [阅此部分](../../installation/using/email-archiving.md)。
 
 >[!NOTE]
 >
->此功能属于可选功能。请核实您的许可协议并联系您的帐户管理员以将其激活。
+>密送电子邮件是可选功能。 请核实您的许可协议并联系您的帐户管理员以将其激活。
 
-创建新投放或投放模板时，默认情况下不启用电子邮件密送，即使已购买该选项也是如此。 您必须在要使用它的每个投放或模板中手动启用它。
+创建新投放或投放模板时，默认情况下不启用电子邮件密送。 您需要在电子邮件投放或投放模板级别手动启用它。
 
-为此请执行以下操作步骤：
+要为电子邮件投放模板启用电子邮件密送，请执行以下步骤：
 
 1. 转到 **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** 或 **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**。
 1. 选择您选择的投放或重复现成的电子邮件 **投放模板** ，然后选择复制的模板。
 1. Click the **Properties** button.
 1. 选择 **[!UICONTROL Delivery]** 选项卡。
-1. 选中“ **存档电子邮件** ”框，保留此投放或每个基于此模板投放的所有已发送邮件的副本。
+1. 选中“电 **子邮件密送** ”选项。 每个投放基于此模板发送的所有邮件的副本将发送到已配置的电子邮件密送地址。
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
