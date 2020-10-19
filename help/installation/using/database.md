@@ -1,8 +1,6 @@
 ---
-title: 数据库
-seo-title: 数据库
-description: 数据库
-seo-description: null
+title: Campaign Classic库建议
+description: 数据库建议
 page-status-flag: never-activated
 uuid: b318365c-8846-4c1d-b5f7-ece55fb8c4af
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 1%
+source-wordcount: '277'
+ht-degree: 0%
 
 ---
 
@@ -32,14 +30,11 @@ ht-degree: 1%
 
 本机客户端必须安装在Adobe Campaign应用程序服务器上。
 
-可以通过ODBC驱动程序配置面板检查服务器上的本机客户端，位 **于SQL Server Native Client 10.0** （对于Microsoft SQL Server 2008和2008 R2客户端）或 **SQL Server Native Client 11.0** （对于Microsoft SQL Server 20）下客户端)。
+可以通过ODBC驱动程序配置面板在SQL Server Native Client 11.0下检查 **服务器上的本机客户端**。
 
-必须存在以下访问DLL:
+必须存在以下访问DLL: **sqlncli11.dll**。
 
-* **用于Microsoft SQL** Server 2008和2008 R2客户端的sqlncli10.dll,
-* **sqlncli11.dll** for Microsoft SQL Server 2012、2014、2016和2017客户端。
-
-   访问DLL可在Microsoft网站上找到。
+访问DLL可在Microsoft网站上找到。
 
 >[!NOTE]
 >
