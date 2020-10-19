@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1848'
 ht-degree: 7%
 
 ---
@@ -149,10 +149,12 @@ Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug,
 
 ### Cookie {#cookies}
 
-凭借其跟踪功能，Adobe Campaign使您能够使用两种类型的cookies跟踪投放收件人的浏览：
+凭借其跟踪功能，Adobe Campaign使您能够使用三种类型的cookies跟踪投放收件人的浏览：会话cookie和两个永久cookie。
 
-* 会 **话cookie** (nlid)。 它包含发送给联系人的电子邮件标识符(broadlogId)和邮件模板的标识符(deliveryId)。 联系人单击由 Adobe Campaign 发送的电子邮件中包含的 URL 后即可添加标识符，让您能够跟踪他们在网络上的行为。关闭浏览器时，将自动擦除会话 Cookie。联系人可以将浏览器配置为拒绝 Cookie。
-* 在Adobe Experience Cloud **解决方案之间** 共享的永久cookie。 这使您能够识别访问网站时与Experience Cloud解决方案交互的用户。 此处提供此Cookie的说 [明](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html)。
+* A **session cookie**: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). 联系人单击由 Adobe Campaign 发送的电子邮件中包含的 URL 后即可添加标识符，让您能够跟踪他们在网络上的行为。关闭浏览器时，将自动擦除会话 Cookie。联系人可以将浏览器配置为拒绝 Cookie。
+* 两个 **永久cookie**:
+   * UUID **** (Universal Unique IDentifier)cookie在Adobe Experience Cloud解决方案之间共享。 它设置一次，直到生成新值时它从客户端浏览器中消失。 此Cookie使您能够识别访问网站时与Experience Cloud解决方案交互的用户。 它可由登陆页(将未知客户活动与收件人关联)或投放存放。 此处提供此Cookie的说 [明](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html)。
+   * nllastdelid **cookie(在Campaign Classic20.3中引入** )是永久cookie，包含用户从中单击链接的 **最后一个投放的** deliveryId。 当缺少会话cookie时，使用此cookie来标识将使用的跟踪表。
 
 《一般数据保护规定》(GDPR)等法规规定，公司在安装任何Cookie之前必须获得网站用户的同意。
 
