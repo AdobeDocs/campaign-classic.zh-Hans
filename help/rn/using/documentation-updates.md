@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
 workflow-type: tm+mt
-source-wordcount: '3731'
-ht-degree: 86%
+source-wordcount: '3764'
+ht-degree: 85%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 86%
 您还可以查阅 [Adobe Campaign Classic Release 发行说明](../../rn/using/latest-release.md) ，了解更多更新信息。
 
 ## 2020 年 10 月 {#oct-2020}
+
+活动内部预置、托管和混合托管模型现在在专用部分中进行说明。 [阅读更多](../../installation/using/hosting-models.md)
+
+已在《安装指南》中更新并移动每个托管模型的活动能力矩阵。 [阅读更多](../../installation/using/capability-matrix.md)
 
 活动报告高级功能部分已得到改进，可详细说明如何在自定义报告中使用URL参数和变量。 [阅读更多](../../reporting/using/advanced-functionalities.md)
 
