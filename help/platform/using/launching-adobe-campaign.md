@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 87ad4d4fc69d75e4367e7467ce27de29f58f9445
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 58%
+source-wordcount: '501'
+ht-degree: 50%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 58%
 
 您可以利用客户端控制台连接窗口选择或配置现有数据库，并使用用户名和密码连接系统：
 
-![](assets/acc-logon-screen.png)
+![](assets/s_ncs_user_login.png)
 
 ## 连接 Adobe Campaign {#connecting-to-adobe-campaign}
 
@@ -86,18 +86,18 @@ This functionality is detailed in the [Access management](../../platform/using/a
 >
 >您也可以关闭应用程序，无需先行注销。
 
-## 获得 Campaign 版本信息 {#getting-your-campaign-version}
+## Getting your Adobe Campaign version {#getting-your-campaign-version}
 
 The **[!UICONTROL Help > About...]** menu lets you access the following information:
 
-* **版本号** 。
-* **内部版本号** (Build Number)
+* **活动** 客户端控制台和应用程序服务器的版本号
+* **活动** 客户端控制台和应用程序服务器的内部版本号
 * 联系Adobe客户关怀的链接
 * adobe隐私政策、使用条款和Cookie政策的链接
 
 ![](assets/about-acc.png)
 
-无论何时需要联系 Adobe 支持团队，都需要提供 Campaign 客户端控制台和应用程序服务器的版本号和构建号。
+无论您何时联系Adobe客户关怀团队，您都需要提供活动客户控制台和应用程序服务器的版本号和内部版本号。
 
 如果您运行的是 [活动金标版](../../rn/using/gold-standard.md)，则还需要共享框中显示的SHA/1字 **[!UICONTROL About]** 符。 例如，对于Gold Standard 10 **版本**，内部版本号将显 **示内部版本** 9032@efd8a94，如下所示：
 
