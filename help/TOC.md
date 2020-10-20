@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 94%
+source-wordcount: '2124'
+ht-degree: 93%
 
 ---
 
@@ -590,21 +590,21 @@ ht-degree: 94%
       + [应用程序服务器](installation/using/application-server.md)
       + [消息服务器](installation/using/messaging-server.md)
       + [网络配置](installation/using/network-configuration.md)
-   + 部署类型  {#deployment-types-}
+   + 部署类型 {#deployment-types-}
       + [关于部署类型](installation/using/about-deployment-types.md)
       + [独立部署](installation/using/standalone-deployment.md)
       + [标准部署](installation/using/standard-deployment.md)
       + [企业部署](installation/using/enterprise-deployment.md)
       + [中间源部署](installation/using/mid-sourcing-deployment.md)
       + [Power Booster 和 Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + 在 Windows 中安装 Campaign{#installing-campaign-in-windows-}
-      + [在 Windows 中安装 Campaign 的先决条件](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+   + 活动Windows {#installing-campaign-in-windows-}
+      + [在Windows上安装活动之前](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [安装服务器](installation/using/installing-the-server.md)
       + [集成到 Windows 版 Web 服务器](installation/using/integration-into-a-web-server-for-windows.md)
       + [适用于 Windows 的客户端控制台可用性](installation/using/client-console-availability-for-windows.md)
       + [安装客户端控制台](installation/using/installing-the-client-console.md)
-   + 在 Linux 中安装 Campaign{#installing-campaign-in-linux-}
-      + [在 Linux 中安装 Campaign 的先决条件](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+   + 活动Linux  {#installing-campaign-in-linux-}
+      + [在Linux上安装活动之前](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [在 Linux 中安装包](installation/using/installing-packages-with-linux.md)
       + [集成到 Linux 版的 Web 服务器](installation/using/integration-into-a-web-server-for-linux.md)
       + [适用于 Linux 的客户端控制台可用性](installation/using/client-console-availability-for-linux.md)
@@ -629,7 +629,7 @@ ht-degree: 94%
       + [Campaign 网络端点](installation/using/campaign-network-endpoints.md)
       + [命令行](installation/using/command-lines.md)
       + [创建新实例](installation/using/creating-new-instances.md)
-      + [Campaign Classic 选项列表](installation/using/configuring-campaign-options.md)
+      + [Campaign 选项列表](installation/using/configuring-campaign-options.md)
       + [卸载 Campaign](installation/using/uninstalling-campaign.md)
 + 监控 Campaign Classic {#monitoring-campaign-classic}
    + 简介 {#introduction}
