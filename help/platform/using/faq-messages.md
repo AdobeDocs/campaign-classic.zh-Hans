@@ -11,9 +11,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '740'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 Adobe 强烈建议您先创建验证邮件，在将邮件发送到主目标前先行在审批组上测试投放。然后可以确认邮件内容、个性化和投放参数。
 
-[单击此处了解更多信息](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。您也可以观看[此视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html)。
+[单击此处了解更多信息](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
 ### 如何在 Adobe Campaign 中使用种子地址？{#how-to-use-seed-addresses-in-adobe-campaign-}
 
