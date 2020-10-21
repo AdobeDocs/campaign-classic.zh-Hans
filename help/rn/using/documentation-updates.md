@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '3764'
+source-wordcount: '3752'
 ht-degree: 85%
 
 ---
@@ -225,7 +225,7 @@ Hadoop FDA 连接器增强 - [阅读更多](../../platform/using/specific-config
 
 [此处](../../reporting/using/properties-of-the-report.md#defining-additional-settings)记录了 URL 报告配置的新参数。
 
-**Campaign Classic 本地和托管功能矩阵**&#x200B;页面已更新新的 FDA 连接器。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)
+**Campaign Classic 本地和托管功能矩阵**&#x200B;页面已更新新的 FDA 连接器。[阅读更多](../../installation/using/capability-matrix.md).
 
 **Campaign Classic 功能矩阵**&#x200B;页面已更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 
@@ -379,7 +379,7 @@ Apache 配置步骤已更新。[阅读更多](https://docs.campaign.adobe.com/do
 
 子工作流活动部分新增了使用示例。[阅读更多](../../workflow/using/sub-workflow.md)
 
-The [Campaign Classic On-premise &amp; Hosted capability matrix](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html) Knowledge base article has been updated with information relating to Email BCC.
+Campaign Classic [本地和托管功能矩阵页面已更新](../../installation/using/capability-matrix.md) ，其中包含与电子邮件密送相关的信息。
 
 事务性消息文档已更新，包含有关模板发布的说明。[阅读更多](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
@@ -446,6 +446,6 @@ Marketing Cloud 触发器技术说明已更新。[阅读更多](https://helpx.ad
 
 添加了一个用例，说明如何使用工作流中的扩充活动发送包含自定义数据字段的电子邮件。[阅读更多](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Email_enrichment_with_custom_date_fields.html)
 
-功能视频已移到[此处](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)。
+功能视频已移到[此处](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/overview.html)。
 
 [Teradata](https://helpx.adobe.com/cn/campaign/kb/campaign_fda_teradata.html) 和 [MySQL 5.7](https://helpx.adobe.com/cn/campaign/kb/campaign_fda_mysql.html) 中添加了两项技术说明。
