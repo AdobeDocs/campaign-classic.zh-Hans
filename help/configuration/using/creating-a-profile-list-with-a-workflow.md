@@ -1,8 +1,6 @@
 ---
 title: 使用工作流创建用户档案列表
-seo-title: 使用工作流创建用户档案列表
-description: 使用工作流创建用户档案列表
-seo-description: null
+description: 了解如何在工作流中创建用户档案列表
 page-status-flag: never-activated
 uuid: a30f7217-fe82-4290-b1e6-e7a126a316c1
 contentOwner: sauviat
@@ -12,17 +10,23 @@ content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 19%
+source-wordcount: '183'
+ht-degree: 7%
 
 ---
 
 
 # 使用工作流创建用户档案列表{#creating-a-profile-list-with-a-workflow}
 
-要根据新 **[!UICONTROL List]** 的列表表创建类型收件人，您需要创建一个将生成列表的定位工作流。 有关活动中列表的详细信息，请参 [阅本节](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign)。
+要根据新 **[!UICONTROL List]** 的列表表创建类型收件人，您需要创建一个将生成列表的定位工作流。
+
+有关活动中列表的详细信息，请参 [阅本节](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign)。
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
+
+要在自定义收件人表中创建定位工作流并更新收件人，请执行以下步骤：
 
 1. 转到资 **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** 源管理器的节点。
 1. 创建新的定位工作流。
@@ -46,7 +50,4 @@ ht-degree: 19%
 
    ![](assets/mapping_list_view.png)
 
->[!NOTE]
->
->您还可以参阅创 [建列表收件人视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) 。
 
