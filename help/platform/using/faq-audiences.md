@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 97%
+source-wordcount: '280'
+ht-degree: 84%
 
 ---
 
@@ -29,17 +29,22 @@ ht-degree: 97%
 
 ## 如何导入用户档案？{#how-to-import-profiles-}
 
-探索在数据库中[导入用户档案](../../platform/using/importing-data.md#generic-import-samples)的轻松用例。您也可以观看[此视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html)。
+探索在数据库中[导入用户档案](../../platform/using/importing-data.md#generic-import-samples)的轻松用例。
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
 
 ## 如何定义营销活动的目标群体？{#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
-您可以[使用工作流创建营销活动的目标群体](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。通过[此视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-workflow.html)了解如何在营销活动中创建定位工作流。
+您可以[使用工作流创建营销活动的目标群体](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。
+
 
 ## 如何创建用户档案列表？{#how-can-i-create-a-list-of-profiles-}
 
 列表是一组静态的收件人，用于在投放操作期间提供定位目标，在导入操作或工作流执行期间进行更新。例如，通过查询从数据库中提取出的一组数据即可形成一个列表。
 
-[单击此处了解更多信息](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。您也可以观看[此视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html)了解如何手动创建列表，或者观看[其他视频](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)，在工作流中创建或自动更新收件人列表。
+[单击此处了解更多信息](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。
+
+![](assets/do-not-localize/how-to-video.png) 在此视频和 [其他视频](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) 中 [发现此功能](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
 
 ## 如何在发送邮件前删除重复的群体？{#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
