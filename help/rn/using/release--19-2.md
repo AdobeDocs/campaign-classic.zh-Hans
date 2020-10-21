@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 8%
@@ -79,7 +79,7 @@ _2019年12月2日_
   <tr> 
 <td> <p>Adobe Campaign使您能够试用新的交互式 <a href="https://amp.dev/about/email/">AMP</a> for Email格式，它允许营销人员将AMP组件包含在邮件中，以增强包含丰富、动态和交互式内容的电子邮件体验，这些内容在邮件本身中直接具有可操作性。</p>
    <p>此功能作为公共测试版发布。</p>
-   <p>有关更多信息，请参阅<a href="../../delivery/using/defining-interactive-content.md">详细文档</a>和<a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">教程视频</a>。</p><br /></td> 
+   <p>有关更多信息，请参阅<a href="../../delivery/using/defining-interactive-content.md">详细文档</a>和<a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">教程视频</a>。</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
@@ -112,7 +112,7 @@ _2019年12月2日_
 * 添加了一个特定的保护栏，用于检查磁盘空间，然后允许在服务器上上传公共资源。
 * 新 [活动](../../installation/using/configuring-campaign-options.md) 选项已添加：
    * WdbcKillSessionPolicy **配置选项** ，可以影响所有工作流和 **PostgreSQL查询的无条件** 停止行为。
-   * NmsOperation **_DeliveryPreparationWindow** 选项允许您定义天数，超过天数后，状态不一致的投放将从正在运行的投放计数中排除。
+   * NmsOperation **_DeliveryPreparationWindow** 选项允许您定义天数，超过天数后，状态不一致的投放将从正在运行的投放数中排除。
    * 使用 **WdbcOptions_TempDbName** 选项可以为Microsoft SQL Server上的工作表配置单独的数据库。 这将优化备份和复制。 [阅读更多](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
    * PostgreSQL **的XtkCleanup** _NoStats选项已得到增强，可更好地控制存储库清除工作流中的数据优化步骤的行为。 [阅读更多](../../production/using/database-cleanup-workflow.md#statistics-update)
 * 已向登录()API添加帐户 **锁定机制** 。 它可防止在指定时间范围内连续登录尝试一定次数后再进行任何登录尝试。
