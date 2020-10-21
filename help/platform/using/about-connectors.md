@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 12%
+source-wordcount: '195'
+ht-degree: 10%
 
 ---
 
@@ -38,5 +38,5 @@ Adobe Campaign提供了多个连接器，允许您与外部应用程序通信、
 
 >[!NOTE]
 >
->这些模块的可用性及其使用取决于您的安装部署类型。 请参阅 [活动预先／托管功能矩阵](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)。
+>这些模块的可用性及其使用取决于您的安装部署类型。 请参阅 [活动本地——托管功能矩阵](../../installation/using/capability-matrix.md)。
 
