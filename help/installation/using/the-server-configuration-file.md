@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '7857'
+source-wordcount: '7852'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,7 @@ Adobe Campaign的总体配置在位于安 **装目录的conf** 目录中的serve
 
 >[!NOTE]
 >
->服务器端配置只能由Adobe执行，用于由Adobe托管的部署。 要进一步了解不同的部署，请参 [阅托管模型](../../installation/using/hosting-models.md) 部分或 [本文](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)。 本节介绍托管型号和混合型号的安装和配置步 [骤](../../installation/using/hosted-model.md)。
+>服务器端配置只能由Adobe执行，用于由Adobe托管的部署。 要进一步了解不同的部署，请参 [阅托管模型](../../installation/using/hosting-models.md) 部分或 [本页](../../installation/using/capability-matrix.md)。 本节介绍托管型号和混合型号的安装和配置步 [骤](../../installation/using/hosted-model.md)。
 
 第一个参数位于共享 **节点** 内。 它们与实例相关。 所有nlserver命令（nlserver web、nlserver wfserver等）都可能使用它们。 其他部分与特定的nlserver子命令相关。
 
