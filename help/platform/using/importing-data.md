@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: c886bd02-c484-443c-93ca-ca244adbf893
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '4142'
+source-wordcount: '4138'
 ht-degree: 64%
 
 ---
@@ -29,8 +29,8 @@ Adobe Campaign 允许您以文本、CSV、TAB 或 XML 格式从一个或多个�
 >You can import data without mapping it with the database data using the **[!UICONTROL Import a list]** function.
 >
 >The data can then be used exclusively in workflows via the **[!UICONTROL Read list]** object. 有关详细信息，请参见[此页面](../../workflow/using/read-list.md)。
->
->有关详细信息，请观看[导入用户档案](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html)视频。
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
 
 ## 要导入的数据的结构 {#structure-of-the-data-to-import}
 
