@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: f296676e-3bf1-47da-8239-f5ae54e52fc0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 3%
+source-wordcount: '550'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->服务器端配置只能由Adobe执行，由Adobe托管。 要进一步了解不同的部署，请参 [阅托管模型](../../installation/using/hosting-models.md) 部分或本 [文](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)。
+>服务器端配置只能由Adobe执行，由Adobe托管。 要进一步了解不同的部署，请参 [阅托管模型](../../installation/using/hosting-models.md) 部分或 [功能表](../../installation/using/capability-matrix.md)。
 
 ## 内部标识符 {#internal-identifier}
 
@@ -63,7 +63,7 @@ Confirmation: XXXX
 
 您可以配置存储数据&#x200B;**的Adobe Campaign** 目录（var目录）（日志、下载、重定向等）。 为此，请使 **用XTK_VAR_DIR** 系统变量：
 
-* 在Windows中，在XTK_VAR_DIR系 **统变量中指示以** 下值
+* 在Windows中，在XTK_VAR_DIR系统变 **量中指示以下值** 。
 
    ```
    D:\log\AdobeCampaign
