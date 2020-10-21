@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 95%
 
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 100%
 
 ## 在内部部署环境与托管环境中工作有何不同？{#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
-Adobe Campaign Classic 随附了一组模块和选项。这些模块及其配置是否可用取决于您的安装[部署类型](../../installation/using/hosting-models.md)：托管（受管理的服务）还是内部部署。
+Adobe Campaign Classic 随附了一组模块和选项。The availability of these modules and their configuration can depend on the [type of deployment](../../installation/using/hosting-models.md) of your installation: hosted (Managed Services), hybrid or on-premise.
 
-[单击此处了解更多信息](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)。
+[单击此处了解更多信息](../../installation/using/capability-matrix.md)。
 
 ## 如何设置用户权限? {#how-can-i-set-up-user-permissions-}
 
@@ -64,7 +64,9 @@ Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数�
 
 ## 我应该了解哪些 Campaign 用户界面概念? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
-请参阅[此部分](../../platform/using/adobe-campaign-workspace.md)，了解有关 Adobe Campaign 工作区基本知识的更多信息。您也可以观看[此视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)。
+请参阅[此部分](../../platform/using/adobe-campaign-workspace.md)，了解有关 Adobe Campaign 工作区基本知识的更多信息。
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现活动工作区](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## 如何选择邮件的受众？{#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -84,7 +86,9 @@ Adobe Campaign 包括在不同的应用程序服务器模块之间编排所有�
 
 ## 如何创建并发送第一封电子邮件？{#how-to-create-and-send-a-first-email-}
 
-[单击此处了解更多](../../delivery/using/about-email-channel.md)或[观看此视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-campaign-and-an-email.html)，在营销活动中创建电子邮件。
+[单击此处了解更多信息](../../delivery/using/about-email-channel.md)。
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此内容](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## 如何发送 SMS 消息？{#how-to-send-sms-messages-}
 
