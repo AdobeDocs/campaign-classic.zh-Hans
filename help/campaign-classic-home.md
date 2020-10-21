@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic 产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 5e765777d79df28ae306d02512851b1b3f49018d
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -80,9 +80,9 @@ ht-degree: 99%
 | 有用页面 | 面向开发人员的资源 |
 |---|---|
 | [发行说明](/help/rn/using/latest-release.md) | [错误消息列表](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [操作说明视频](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Campaign 数据模型](configuration/using/about-data-model.md) |
+| [操作说明视频](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/overview.html) | [Campaign 数据模型](configuration/using/about-data-model.md) |
 | [兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html) | [Campaign JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Campaign 快速入门](platform/using/about-adobe-campaign-classic.md) | [实施指南](https://helpx.adobe.com/cn/campaign/kb/acc-implementation.html) |
 | [Gold Standard 升级](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html) | [跟踪指南](https://helpx.adobe.com/cn/campaign/kb/acc-tracking.html) |
 | [已弃用的功能](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html) | [安全性和隐私检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html) |
-| [Campaign 控制面板](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html) | [监控指南](production/using/monitoring-guidelines.md) |
+| [Campaign 控制面板](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html) | [监控准则](production/using/monitoring-guidelines.md) |
