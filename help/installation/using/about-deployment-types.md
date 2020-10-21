@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 298d9b9f-220f-4862-bc4c-1ad7f8d51049
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 11%
+source-wordcount: '139'
+ht-degree: 8%
 
 ---
 
@@ -32,5 +32,5 @@ Adobe Campaign的模块化设计支持各种部署配置，从独立设置（一
 >Adobe由Adobe托管的部署。 例如，
 >配置服务器和实例配置文件。
 >
->要进一步了解部署之间的主要差异，请参阅托 [管模型](../../installation/using/hosting-models.md) ，或 [托管和内部部署功能差异文章](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html) 。
+>要进一步了解部署之间的主要差异，请参 [阅托管模型](../../installation/using/hosting-models.md) ，或 [访问托管和内部部署的功能差异](../../installation/using/capability-matrix.md)。
 
