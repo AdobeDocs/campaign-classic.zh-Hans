@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: c7c67ee5-ad60-420f-b597-08c388049529
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 677d631a075f50a80c9379fff0c17d3d06c7e803
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 89%
+source-wordcount: '399'
+ht-degree: 69%
 
 ---
 
@@ -42,18 +42,18 @@ ht-degree: 89%
 * [创建概要](../../web/using/use-cases--creating-overviews.md)：创建概要类型的 Web 应用程序，以显示数据库中的所有 Web 应用程序。
 * [工作流用例](../../workflow/using/about-workflow-use-cases.md)：通过这些用例了解工作流的不同使用方法。
 
-## 操作说明视频 {#how-to-videos}
+## 自助 {#how-to-videos}
 
-观看我们的操作说明视频，探索 Adobe Campaign 的主要功能。
+除了产品文档之外，您还可以访问下面列出的活动自助资源。
 
-* [创建受众](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html)：了解如何在 Adobe Campaign 中创建受众。
-* [创建活动和电子邮件](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-campaign-and-an-email.html)：了解如何在 Adobe Campaign 的活动中创建电子邮件。
-* [创建收件人列表](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html)：在 Adobe Campaign 中使用工作流创建收件人列表。
-* [创建定位工作流](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-targeting-workflow.html)：创建可以定位收件人生日的工作流。
-* [在 Campaign 中创建工作流](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-workflow.html)：了解如何在 Campaign 中创建工作流。
-* [导入用户档案](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html)：了解在 Adobe Campaign 中如何通过文件导入用户档案。
-* [界面概述](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)：了解如何导航 Adobe Campaign 界面。
-* [管理电子邮件中的种子和验证](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html)：了解如何在 Adobe Campaign 中向现有电子邮件添加种子和验证。
-* [Adobe Campaign 与 Microsoft Dynamics 365 集成](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/integrating/dynamics365-integration.html)：了解如何通过 CRM 连接器功能，链接和同步 Adobe Campaign 与 Microsoft Dynamics。
+### 教程视频
 
-除了这些短视频和详细视频，您还可以在我们的网站上找到[培训资源](https://learning.adobe.com/catalog.html)以及[演示视频](https://www.adobe.com/training/video.html)。
+探索Adobe Campaign在视频中的主要功能。 [了解详情](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/overview.html)
+
+### 培训会话和视频
+
+除了这些简短和详细的视频，您还可以在 [Adobe](https://learning.adobe.com/catalog.html) .com上查 [找培训课程](https://www.adobe.com/training/video.html) 和观看功能演示视频。
+
+### Experience League课程
+
+您还可以访问Adobe Campaign Classic [的推荐课](https://experienceleague.adobe.com/?lang=en#dashboard/learning) 程：课程是精心策划的课程集，可快速帮助您掌握技能和知识。
