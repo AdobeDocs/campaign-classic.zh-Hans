@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 3175b9ab-e305-4f19-8267-d6172fa07a2a
 translation-type: tm+mt
-source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 3%
+source-wordcount: '332'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Campaign优惠可选择三种托管模型，提供选择最佳模型的灵
 
 >[!NOTE]
 >
->对于Adobe托管环境，主要安装和配置步骤只能由Adobe执行，如配置服务器和自定义实例配置文件。 要进一步了解部署模式之间的主要差异，请参 [阅本文](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)。
+>对于Adobe托管环境，主要安装和配置步骤只能由Adobe执行，如配置服务器和自定义实例配置文件。 要进一步了解部署模式之间的主要差异，请参 [阅本页](../../installation/using/capability-matrix.md)。
 
 * **Managed Services（托管）**
 
