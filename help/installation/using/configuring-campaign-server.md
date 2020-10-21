@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 7d0a00f4ef49a48014735de36786a48c31b76804
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '3587'
-ht-degree: 4%
+source-wordcount: '3582'
+ht-degree: 3%
 
 ---
 
@@ -34,8 +34,8 @@ ht-degree: 4%
 
 * [控制面板文档](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
 * [托管模型](../../installation/using/hosting-models.md)
-* [Campaign Classic本地和托管功能矩阵](https://helpx.adobe.com/cn/campaign/kb/acc-on-prem-vs-hosted.html)
-* [混合型号和托管型号配置步骤](../../installation/using/about-hybrid-and-hosted-models.md) )
+* [Campaign Classic本地和托管功能矩阵](../../installation/using/capability-matrix.md)
+* [混合型号和托管型号配置步骤](../../installation/using/hosting-models.md)
 
 Campaign Classic配置文件存储在 **Adobe Campaign** 安装文件夹的conf文件夹中。 配置分布在两个文件上：
 
