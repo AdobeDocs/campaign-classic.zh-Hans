@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
+source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2125'
 ht-degree: 93%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 93%
       + 常见问题解答 {#faq}
          + [常见问题](platform/using/common-questions.md)
          + [重要概念](platform/using/faq-key-concepts.md)
+         + [构建升级](platform/using/faq-build-upgrade.md)
          + [受众](platform/using/faq-audiences.md)
          + [设计各种邮件](platform/using/faq-designing.md)
          + [发送邮件](platform/using/faq-messages.md)
@@ -652,7 +653,8 @@ ht-degree: 93%
       + [数据库清理工作流](production/using/database-cleanup-workflow.md)
    + 更新 Adobe Campaign {#updating-adobe-campaign}
       + [简介](production/using/introduction.md)
-      + [升级](production/using/upgrading.md)
+      + [执行内部版本升级](production/using/build-upgrade.md)
+      + [升级过程（内部部署）](production/using/upgrading.md)
       + [切换到 Unicode](production/using/switching-to-unicode.md)
       + [迁移过程](production/using/migration-procedures.md)
    + 数据库维护 {#database-maintenance}
@@ -754,8 +756,4 @@ ht-degree: 93%
       + [v5.11 中的特定配置](migration/using/specific-configurations-in-v5-11.md)
       + [v6.02 中的特定配置](migration/using/specific-configurations-in-v6-02.md)
       + [v6.10 中的特定配置](migration/using/specific-configurations-in-v6-10.md)
-   + 回滚 {#rollback}
-      + [关于回滚](migration/using/about-rollback.md)
-      + [恢复 v5.11](migration/using/restoring-v5-11.md)
-      + [恢复 v6.02](migration/using/restoring-v6-02.md)
-      + [恢复 v6.1](migration/using/restoring-v6-1.md)
+   + [回滚过程](migration/using/about-rollback.md)
