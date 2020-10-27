@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 5b2b7682-6bac-4282-8d27-e8a259934e7d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 * **优惠空间**:文件夹，用于定义优惠的显示位置。 通过定义空间，您可以指定使用的渠道，指定是否可以在统一模式下使用它(默认情况下：（仅在批处理模式下），使用渲染功能构建优惠的内容，并指定显示的优惠的优惠。 空间是渠道和优惠引擎之间的接口。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >优惠空间不是通信渠道，它与渠道上的特定展示位置一致。 例如，网站上公开的优惠可能在同一页面上占据两个空间。 在这种情况下，我们为同一渠道有两个空间。
    >
