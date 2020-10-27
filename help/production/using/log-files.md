@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: fac3e3ec-82a7-4087-ba88-2b28b0f69d1c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 2%
@@ -56,7 +56,7 @@ nlserver **syslogd** 模块将日志保存到磁盘。 此模块与Unix syslog�
 | inMail.log | 弹回邮件模块日志 |
 | logins.log | 记录所有登录尝试以Adobe Campaign（成功与否） |
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >redir **目录仅存** 在于重定向服务器上。 url子 **目录** 包含要重定向的URL的匹配项，子目录日 **志包** 含跟踪日志。 要生成跟踪日志, **trackinglogd** 模块必须运行。
 
@@ -68,4 +68,4 @@ nlserver **syslogd** 模块将日志保存到磁盘。 此模块与Unix syslog�
 
 如果希望在日志中保留更多详细级别，可以使用-verbose参数开始Adobe Campaign **模块** :
 
-**nlserver开始`<MODULE>`@`<INSTANCE>`-verbose**
+**nlserver开始 `<MODULE>`@`<INSTANCE>` -verbose**
