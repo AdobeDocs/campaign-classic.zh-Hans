@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: managing-environments
 discoiquuid: c7b4103d-99b2-4e64-a457-ee0e3326b172
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 8%
@@ -26,7 +26,7 @@ ht-degree: 8%
 
 管理和使用用户档案涉及多个不同的用户优惠。 因此，第一步是确保这些用户档案存在，如果没有，还要创建它们。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >以下配置需要由技术管理员 **执行**。
 
