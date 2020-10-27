@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 6358c8fd-2b75-4462-acd1-887ee44d3110
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 8%
@@ -57,7 +57,7 @@ ht-degree: 8%
 
 如需详细信息，请参阅[此部分](../../production/using/recommendations.md)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果您使用中间源配置，则定期维护数据库至关重要。 在营销平台上分析投放时，营销实例会向中间源实例发送信息。 如果流程放慢，则营销实例将受到影响。
 
@@ -69,7 +69,7 @@ ht-degree: 8%
 * 停止或删除因错误而暂停的工作流,
 * 停止所有用于测试的工作流，这些不包含 **[!UICONTROL End]** 活动，因此其状态保持 **[!UICONTROL Paused]** 不变。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果操作耗时长且释放了大量空间，这意味着需要深入的维护（索引重建等）。 如需详细信息，请参阅[此部分](../../production/using/recommendations.md)。
 
