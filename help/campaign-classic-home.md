@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic 产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 9844616f417608051bbff2593d6124d8ff83008c
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 84%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 100%
 
 ## 新增功能
 
-* **[表情符号](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>您现在可以在邮件和主题行中插入表情符号
+* **[移至基于HTTP/2的APNs提供程序](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> API了解如何从传统二进制协议迁移到基于HTTP/2的APNs提供程序API。
+
+* **[将表情图标添加到消息](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>您现在可以在消息和主题行中插入表情图标
 
 * **[获取支持](https://helpx.adobe.com/cn/campaign/kb/ac-support.html)**<br/>&#x200B;访问常见问题解答、最佳实践、帮助资源和请求帮助
 
 * **[隐私合规性](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy.html)**<br/>&#x200B;了解 Adobe Campaign 如何帮助您确保隐私合规性
 
 * **[跟踪功能](https://helpx.adobe.com/cn/campaign/kb/acc-tracking.html)**<br/>&#x200B;了解 Campaign 中的跟踪功能和流程
-
-* **[使用 AMP 的交互式内容](delivery/using/defining-interactive-content.md)**<br/>学习如何使用新的 AMP 格式发送动态电子邮件
 
 [单击此处以了解更多更新](/help/rn/using/documentation-updates.md)
 
