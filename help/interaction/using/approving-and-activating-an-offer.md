@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 7b1c58a0-6fd6-4c9d-b1c4-f3dffda42523
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 3%
@@ -36,7 +36,7 @@ ht-degree: 3%
 
 您可以选择批准某些可用空间上的优惠内容，而拒绝其他空间上的内容。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >优惠的内容和资格获得批准后，发布工作流(优惠通知)将自动运行，优惠将实时显示并在所有激活的空间上可用。
 
@@ -62,7 +62,7 @@ ht-degree: 3%
 
 批准优惠资格是指接受或拒绝优惠权重，并且合格规则也在优惠中配置或继承在父类别中创建的规则。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >优惠的内容和资格获得批准后，发布工作流(优惠通知)将自动运行，优惠将实时显示并在所有激活的空间上可用。
 
