@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 90718075-87a7-4e9a-935b-571010908e79
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 3%
@@ -159,7 +159,7 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 要更改内部 **密码** : **nlserver config -internpassword**
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >要使用内部标 **识** 符登录，您需要事先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/campaign-server-configuration.md#internal-identifier)。
 
@@ -172,5 +172,4 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 >
 >  
 nlserver config -setdblogin:Oracle:test6@dbserver
-
 
