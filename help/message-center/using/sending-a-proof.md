@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 81090be2-3ed4-4f35-948b-e21af6e19999
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 8%
@@ -26,7 +26,7 @@ ht-degree: 8%
 
 发送验证与常规投放的过程相同(有关详细信息，请参 [阅本节](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof))。 但是，要在消息中心内发送验证，您需要事先执行以下操作：
 
-* 使用测试数据创建一个或多个种子地址( [请参阅管理种子地址](../../message-center/using/managing-seed-addresses-in-transactional-messages.md))(请参阅个性 [化数据](../../message-center/using/personalization-data.md)),
+* 使用测试数据创建一个或多个种子地址( [请参阅管理事务性消息中的种子地址](../../message-center/using/managing-seed-addresses-in-transactional-messages.md))(请参阅个性 [化数据](../../message-center/using/personalization-data.md))。
 * 创建消息内容(请参阅创 [建消息内容](../../message-center/using/creating-message-content.md))。
 
 发送验证:
