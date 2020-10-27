@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: audience-sharing
 discoiquuid: 4443b0ca-80c6-467d-a4df-50864aae8496
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d567cb7dbc55d9c124d1cc83b7a5a9e2dfb5ab61
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '491'
 ht-degree: 2%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 2%
 1. [第3步：配置活动跟踪服务器](#step-3--configure-campaign-tracking-server)
 1. [第4步：配置访客ID服务](#step-4--configure-the-visitor-id-service)
 
+>[!IMPORTANT]
+>
+>如果您使用demdex域并遵循 **ftp-out.demdex** .com语法导入外部帐户和 **** ftp-in.demdex.com外部帐户，则需要相应地调整实施并移至Amazon简单存储服务(S3)连接器以导入或导出数据。 有关如何使用AmazonS3配置外部帐户的详细信息，请参阅此 [部分](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)。
+
 ## 第1步：在Adobe Campaign中配置或检查外部帐户 {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
 首先，我们需要按如下方式配置或检查Adobe Campaign中的外部帐户:
@@ -36,26 +40,35 @@ ht-degree: 2%
 1. 单击该 **[!UICONTROL Explorer]** 图标。
 1. 转到 **[!UICONTROL Administration > Platform > External accounts]**。 上述SFTP帐户应已按Adobe配置，并且必要的信息应已传达给您。
 
-   * **[!UICONTROL importSharedAudience]** :专用于导入受众的SFTP帐户。
-   * **[!UICONTROL exportSharedAudience]** :专用于导出受众的SFTP帐户。
+   * **[!UICONTROL importSharedAudience]**:专用于导入受众的帐户。
+   * **[!UICONTROL exportSharedAudience]**:专用于导出受众的帐户。
 
    ![](assets/aam_config_1.png)
 
-1. 填写字 **[!UICONTROL Server]** 段： **ftp-out.demdex.com域** (用于导入外部帐户) **和ftp-in.demdex.com域(** 用于导出外部帐户)。
+1. Select the **[!UICONTROL Export audiences to the Adobe Marketing Cloud]** external account.
 
-   请记住，从活动导出是Audience Manager或人员核心服务的导入。
+1. From the **[!UICONTROL Type]** drop-down, select **[!UICONTROL AWS S3]**.
 
-   >[!NOTE]
-   >
-   >如果您使用S3，请输入以 **[!UICONTROL AWS S3 Account Server]** 下语法：
-   >
-   >`<S3bucket name>.s3.amazonaws.com/<s3object path>`
-   >
-   >有关如何配置S3帐户的详细信息，请参阅此 [页](../../platform/using/external-accounts.md#amazon-simple-storage-service--s3--external-account)。
+1. 提供以下详细信息：
 
+   * **[!UICONTROL AWS S3 Account Server]**
+服务器的URL，应按如下方式填写：
+
+      ```
+      <S3bucket name>.s3.amazonaws.com/<s3object path>
+      ```
+
+   * **[!UICONTROL AWS access key ID]**
+要了解在何处找到您的AWS访问密钥ID，请参阅本 [页](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) 。
+
+   * **[!UICONTROL Secret access key to AWS]**
+要了解在何处找到AWS的秘密访问密钥，请参阅本 [页](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
+
+   * **[!UICONTROL AWS Region]**
+要了解有关AWS区域的更多信息，请参阅本 [页](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)。
    ![](assets/aam_config_2.png)
 
-1. 添加 **[!UICONTROL Account]** Adobe **[!UICONTROL Password]** 提供的和。
+1. 单 **[!UICONTROL Save]** 击并配置 **[!UICONTROL Import audiences from the Adobe Marketing Cloud]** 外部帐户，如前面的步骤所述。
 
 您的外部帐户现已配置。
 
