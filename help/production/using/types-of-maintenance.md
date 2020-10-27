@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 4a436ccf-097c-43e6-9eda-492bada5512a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Adobe Campaign提供了一个内置的工作流，它允许您计划特定的数
 * 删除孤立记录并重新初始化过期对象的状态，
 * 更新数据库统计信息。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >请注意，清除任务主要处理应用程序级别维护，而不是RDBMS级别维护（统计信息更新除外）。 但是，数据库上需要维护操作。 即使数据库清理工作流成功运行，这并不意味着数据库已得到最佳调整。
 
