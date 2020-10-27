@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: web-applications
 discoiquuid: 84f9dbad-365f-405d-88a0-14171fbb805f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2d6266957a1e290333c505e40f95df46797e19c4
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 21%
@@ -30,7 +30,7 @@ Web 应用程序类型在创建过程中被选中。
 
 >[!NOTE]
 >
->ALways保护可能包含个人信息的页面。 请参阅安全 [和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
+>始终保护可能包含个人信息的页面。 请参阅安全 [和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
 
 此模板决定Web 应用程序类型。 您可以创建：
 
