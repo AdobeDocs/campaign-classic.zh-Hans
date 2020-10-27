@@ -12,24 +12,24 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 1%
+source-wordcount: '585'
+ht-degree: 2%
 
 ---
 
 
 # 管道故障排除 {#pipeline-troubleshooting}
 
-**管道失败，错误为“没有任务与掩码管道@对应”**
+**管道化失败，错误为“没有任务与掩码管道化@&lt;实例>对应”**
 
 你版本的Adobe Campaign Classic不支持这条管道。
 
 1. 检查配置 [!DNL pipelined] 文件中是否存在元素。 否则，表示不支持。
 1. 升级到版本6.11内部版本8705或更高版本。
 
-**Pipelined fails with &quot;aurait dcommencer par`[`ou(`{`iRc=16384)&quot;**
+**Pipelined fails with &quot;aurait dcommencer par `[` ou( `{` iRc=16384)&quot;**
 
 未 **设置NmsPipeline** _Config选项。 这实际上是JSON解析错误。
 在选项NmsPipeline_Config中设 **置JSON配置**。 请参阅本页中的“路由选项”。
@@ -49,7 +49,7 @@ IMSOrgid配置无效。
 1. 检查是否已设置authPrivateKey。
 1. 检查authPrivateKey:带@的开始，以=结尾，长度约为4000个字符。
 1. 查找原始密钥并检查其是否为：以RSA格式、4096位长和开始—BEGIN RSA PRIVATE KEY —。
-   <br> 如有必要，请重新创建密钥并在Adobe Analytics注册。 Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation).
+   <br> 如有必要，请重新创建密钥并在Adobe Analytics注册。
 1. 检查密钥是否在与相同的实例中进行编码 [!DNL pipelined]。 <br>如有必要，请使用示例JavaScript或工作流重做编码。
 
 **管道化失败，“身份验证期间无法读取令牌”**
@@ -91,42 +91,3 @@ IMSOrgid配置无效。
 1. 检查队 [!DNL pipelined] 列大小的状态页。 如果队列大，请提高JS的性能。
 1. 由于延迟似乎随卷的增加而增加，因此在Analytics上使用较少的消息配置触发器。
 附件
-
-**如何使用密钥加密JavaScript**
-
-运行JavaScript以加密私钥。 管线配置需要它。
-
-以下是可用于运行cryptString函数的代码示例：
-
-```
-/*
-USAGE:
-  nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js
-*/
- 
-function usage()
-{
-  return "USAGE:\n" +
-    '  nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js\n'
-}
- 
-var fn = application.arg;
-if( fn == "" )
-  logError("Missing key file file\n" + usage());
- 
-//open the pem file
-plaintext = loadFile(fn)
- 
-if( !plaintext.match(/^-----BEGIN RSA PRIVATE KEY-----/) )
-  logError("File should be an rsa private key")
- 
-logInfo("Encrypted key:\n" + cryptString(plaintext, <xtkSecretKey>))
-```
-
-在服务器上执行Javascript:
-
-```
-nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js
-```
-
-将输出中的编码密钥复制并粘贴到控制台。
