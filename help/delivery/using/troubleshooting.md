@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: b64c9729-cfe2-4d02-8c59-9e53efd34a96
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 3%
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 # 故障排除{#troubleshooting}
 
-如果移动设备已连接到Wi-Fi且您未收到通知，请检查防火墙是否未阻止FCM/APNS端口。
+如果移动设备已连接到Wi-Fi且您未收到通知，请检查防火墙是否未阻止FCM/APNs端口。
 
 **Android**:移动设备连接到端口5228到5230上的FCM服务器。 因此，必须配置防火墙，以便它授权与FCM连接。 要打开的端口有：5228（最常用的）、5229和5230。
 
