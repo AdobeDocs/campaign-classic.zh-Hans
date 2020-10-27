@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 translation-type: tm+mt
-source-git-commit: 87ad4d4fc69d75e4367e7467ce27de29f58f9445
+source-git-commit: 285cf8c6521696a0a94f6ffd8fc1eb148977836d
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 50%
+source-wordcount: '507'
+ht-degree: 49%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 50%
 
 您可以利用客户端控制台连接窗口选择或配置现有数据库，并使用用户名和密码连接系统：
 
-![](assets/s_ncs_user_login.png)
+![](assets/acc-logon.png)
 
 ## 连接 Adobe Campaign {#connecting-to-adobe-campaign}
 
@@ -46,7 +46,7 @@ ht-degree: 50%
 
    首次访问数据库时，您的密码是由管理员为您提供的。Once you are connected, you can change your password via the **[!UICONTROL Tools > Change password...]** menu. Details on operators and connections are available in [Access management](../../platform/using/access-management.md).
 
-1. Click **[!UICONTROL Log in]** to confirm.
+1. Click **[!UICONTROL LOG IN]** to confirm.
 
 现在可以访问 [Adobe Campaign 工作区](../../platform/using/adobe-campaign-workspace.md)了。
 
@@ -57,8 +57,6 @@ ht-degree: 50%
 ![](assets/s_ncs_user_connections_management.png)
 
 In the **[!UICONTROL Connections]** window, click **[!UICONTROL Add > Connection]**.
-
-![](assets/s_ncs_user_add_connexion.png)
 
 然后您必须定义连接设置。操作步骤：
 
@@ -97,7 +95,7 @@ The **[!UICONTROL Help > About...]** menu lets you access the following informat
 
 ![](assets/about-acc.png)
 
-无论您何时联系Adobe客户关怀团队，您都需要提供活动客户控制台和应用程序服务器的版本号和内部版本号。
+无论您何时联系Adobe客户关怀团队，您都需要提供Adobe Campaign客户控制台和应用程序服务器的版本号和内部版本号。
 
 如果您运行的是 [活动金标版](../../rn/using/gold-standard.md)，则还需要共享框中显示的SHA/1字 **[!UICONTROL About]** 符。 例如，对于Gold Standard 10 **版本**，内部版本号将显 **示内部版本** 9032@efd8a94，如下所示：
 
@@ -107,6 +105,6 @@ The **[!UICONTROL Help > About...]** menu lets you access the following informat
 
 **相关主题**：
 
-* [活动支持选项](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
-* [软件分发](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)
-* [Experience Cloud支持和专家会议](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Campaign帮助和支持选项](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
+* [Adobe软件分发](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)
+* [Adobe Experience Cloud支助和专家会议](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
