@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: c6c39b7d-7bbd-4789-b1ea-b938153e9679
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 它涉及使用更高级别的日志重新启动进程。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >此过程取消此模块上正在进行的服务。
 
@@ -62,7 +62,7 @@ Adobe Campaign可以使用两个级别的日志操作：
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
->[!CAUTION]
+>[!IMPORTANT]
 这些命令的日志存储在模块的日志文件中。
 
 以下是特定于Web模块的示例。 其他模块如上所示运行。
@@ -88,7 +88,7 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 >[!NOTE]
 通过 **“跟踪** ”模式可保存日志。 在以上示例中，日志保存在var/ **/mta_debug.log`<instance-name>`和** var/default/web_debug.log **文件中** 。
 
->[!CAUTION]
+>[!IMPORTANT]
 在Windows中，不要添加LD_PRELOAD选项。 以下命令足够：\
 nlserver web -tomcat -verbose -tracefilter:*
 
