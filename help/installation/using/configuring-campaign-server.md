@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 2ff877607641435a2c2806f48f3c5b35d96d39c5
 workflow-type: tm+mt
 source-wordcount: '3582'
 ht-degree: 3%
@@ -242,7 +242,7 @@ Campaign Classic配置文件存储在 **Adobe Campaign** 安装文件夹的conf�
 
 ### Tomcat的默认端口 {#default-port-for-tomcat}
 
-当Tomcat服务器的8080侦听端口已忙于配置所需的其他应用程序时，您需要将8080端口替换为免费端口（例如8090）。 要更改它，请编 **辑保存在Adobe Campaign安** 装文件夹/tomcat-7/conf目录中 **** 的server.xml文件。
+当Tomcat服务器的8080侦听端口已忙于配置所需的其他应用程序时，您需要将8080端口替换为免费端口（例如8090）。 要更改它，请编 **辑保存在Adobe Campaign安** 装文件夹/tomcat-8/conf目录中 **** 的server.xml文件。
 
 然后修改JSP中继页的端口。 为此，请更改 **保存在Adobe Campaign安装目** 录的/conf目录中的 **** serverConf.xml文件。 serverConf.xml中的所 **有可用参数** 都列在本 [节中](../../installation/using/the-server-configuration-file.md)。
 
@@ -255,7 +255,7 @@ Campaign Classic配置文件存储在 **Adobe Campaign** 安装文件夹的conf�
 
 ### 在Tomcat中映射文件夹 {#mapping-a-folder-in-tomcat}
 
-要定义客户特定设置，可以在 **/tomcat-7/conf文件夹** 中创建user_上下文 **.xml文件** ，该文件夹也包 **含** 上下文.xml文件。
+要定义客户特定设置，可以在 **/tomcat-8/conf文件夹** 中创建user_上下文 **.xml文件** ，该文件夹也包 **含** 上下文.xml文件。
 
 此文件将包含以下类型的信息：
 
