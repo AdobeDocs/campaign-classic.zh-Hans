@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 7d8828c5-5776-49ca-b4f7-a4a6aaaa9db1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 3%
@@ -78,7 +78,7 @@ ht-degree: 3%
 
    要检查实例运行的工作流数，我们建议使用预定义视图，默认情况下可在／文件夹中 **[!UICONTROL Administration]** 访 **[!UICONTROL Audit]** 问它。 有关详细信息，请参见[此页面](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >增加选 **[!UICONTROL NmsOperation_LimitConcurrency]** 项阈值可能会导致实例的性能问题。 无论如何，请勿自行执行此操作，并联系Adobe Campaign联系人。
 
