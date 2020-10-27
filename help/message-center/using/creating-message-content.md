@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 1f420652-c9af-4a49-8d5c-a640e960aced
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 4%
@@ -24,7 +24,7 @@ ht-degree: 4%
 
 事务性消息内容的定义与普通投放在Adobe Campaign中的定义相同。 例如，对于电子邮件投放，您可以创建HTML或文本格式的内容、添加附件或个性化投放对象。 有关此内容的详细信息，请参阅“电子邮件 [投放”一章](../../delivery/using/about-email-channel.md)。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >消息中包含的图像必须可以公开访问。 Adobe Campaign不为事务性消息提供任何图像上传机制。\
 >与JSSP或webApp不同， `<%=` 没有任何默认转义。
