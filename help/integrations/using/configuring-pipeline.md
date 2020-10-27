@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 3%
+source-wordcount: '901'
+ht-degree: 1%
 
 ---
 
@@ -23,147 +23,142 @@ ht-degree: 3%
 # 配置管道 {#configuring-pipeline}
 
 身份验证参数（如客户ID、私钥和身份验证端点）在实例配置文件中进行配置。
-要处理的触发器列表在选项中进行配置。 它采用JSON格式。
-触发器会立即使用Javascript代码进行处理。 它将保存到数据库表中，无需进行进一步的实时处理。
+要处理的触发器列表在JSON格式的选项中进行配置。
 触发器用于通过发送电子邮件的活动工作流进行定位。 设置活动，以便同时触发事件的客户收到电子邮件。
+
+>[!CAUTION]
+>
+>如果是混合部署，请确保在中间实例上配置管道。
 
 ## 先决条件{#prerequisites}
 
 在活动 [!DNL Experience Cloud Triggers] 中使用需要：
 
-* Adobe Campaign版本6.11内部版本8705或更高版本。
-* Adobe Analytics Ultimate、Premium、Foundation、OD、Select、Prime、Mobile Apps、Select 或 Standard。
+* Adobe Campaign19.1.9版本或20.3.1.及更高版本。
+* Analytics Standard版本。
 
 先决条件配置包括：
 
-* 创建私钥文件，然后创建用该密钥注册的Oauth应用程序。
+* AdobeIO项目身份验证
+* IMSOrgId，添加了Experience Cloud客户的Adobe Analytics标识符。
+* 供应团队必须对客户的IMS组织具有系统管理员权限
 * Adobe Analytics的触发器配置。
-
-Adobe Analytics配置超出本文档的范围。
-
-Adobe Campaign需要Adobe Analytics提供以下信息：
-
-* 身份验证应用程序的名称。
-* IMSOrgId,Experience Cloud客户的标识符。
-* 在Analytics中配置的触发器的名称。
-* 要与Marketing数据库协调的数据字段的名称和格式。
-
-此配置的一部分是自定义开发，需要：
-
-* 在Adobe Campaign中分析JSON、XML和Javascript的工作知识。
-* QueryDef和Writer API的工作知识。
-* 使用私钥进行加密和身份验证的工作概念。
-
->[!NOTE]
->
->由于编辑JS代码需要技术技能，因此在没有适当理解的情况下不要尝试。 <br>触发器将保存到数据库表。 因此，营销运营商可以安全地使用触发工作流。
 
 ## 身份验证和配置文件 {#authentication-configuration}
 
 由于管道托管在Adobe Experience Cloud，因此需要身份验证。
-如果Marketing Server是在事先托管的，则当它登录到Pipeline时，它必须进行身份验证才能建立安全连接。
-它使用一对公钥和私钥。 此过程与用户／密码功能相同，只是更加安全。
+它使用一对公钥和私钥。 此过程与用户／密码功能相同，但更安全。
+支持通过Marketing CloudIO项目对Adobe进行身份验证。
 
-### IMSOrgId {#imsorgid}
+## 第1步：创建／更新AdobeIO项目 {#creating-adobe-io-project}
 
-IMSOrgId是Adobe Experience Cloud上客户的标识符。
-在实例serverConf.xml文件中，在IMSOrgId属性下设置它。
-示例:
+对于托管客户，您可以创建客户关怀票证，以便为您的组织启用AdobeIO技术帐户令牌以进行触发器集成。
+
+对于内部部署客户，请参阅为 [Adobe Experience Cloud触发器配置Adobe](../../integrations/using/configuring-adobe-io.md) IO页。 请注意，在向AdobeIO **[!UICONTROL Adobe Analytics]** 凭据添加API时，您需要进行选择。
+
+## 第2步：配置NmsPipeline_Config管道选项 {#configuring-nmspipeline}
+
+设置身份验证后，管道将检索事件。 它将仅处理以Adobe Campaign配置的触发器。 触发器必须是从Adobe Analytics生成的，并被推至管道，该管道将仅处理以Adobe Campaign配置的触发器。
+也可以使用通配符配置该选项，以捕获所有触发器，而不管其名称如何。
+
+1. 在Adobe Campaign中，访问> **[!UICONTROL Administration]** > **[!UICONTROL Platform]** 下的 **[!UICONTROL Options]** 选项菜 **[!UICONTROL Explorer]**&#x200B;单。
+
+1. 选择选 **[!UICONTROL NmsPipeline_Config]** 项。
+
+1. 在该字 **[!UICONTROL Value (long text)]** 段中，您可以粘贴以下指定两个触发器的JSON代码。 您需要确保删除注释。
+
+   ```
+   {
+   "topics": [ // list of "topics" that the pipelined is listening to.
+      {
+           "name": "triggers", // Name of the first topic: triggers.
+           "consumer": "customer_dev", // Name of the instance that listens.  This value can be found on the monitoring page of Adobe Campaign.
+           "triggers": [ // Array of triggers.
+               {
+                   "name": "3e8a2ba7-fccc-49bb-bdac-33ee33cf02bf", // TriggerType ID from Analytics 
+                   "jsConnector": "cus:triggers.js" // Javascript library holding the processing function.
+               }, {
+                   "name": "2da3fdff-13af-4c51-8ed0-05802a572e94", // Second TriggerType ID 
+                   "jsConnector": "cus:triggers.js" // Can use the same JS for all.
+               },
+           ]
+       }
+   ]
+   }
+   ```
+
+1. 您还可以选择粘贴以下可捕获所有触发器的JSON代码。
+
+   ```
+   {
+   "topics": [
+     {
+       "name": "triggers",
+       "consumer":  "customer_dev",
+       "triggers": [
+         {
+           "name": "*",
+           "jsConnector": "cus:pipeline.js"
+         }
+       ]
+     }
+   ]
+   }
+   ```
+
+### Consumer参数 {#consumer-parameter}
+
+管道的工作方式类似于供应商和消费者模型。 消息仅用于单个消费者：每个消费者都会收到自己的消息副本。
+
+Consumer **** （消费者）参数将实例标识为这些消费者之一。 实例的标识将调用管道。 您可以用实例名称填充该实例，该名称可在客户端控制台的“监视”页面上找到。
+
+管道服务跟踪每个消费者检索到的消息。 对不同实例使用不同的使用者可确保将每个消息发送到每个实例。
+
+### 管道选项建议 {#pipeline-option-recommendation}
+
+要配置管道选项，您应遵循以下建议：
+
+* 在下面添加或编 **[!UICONTROL Triggers]**&#x200B;辑触发器，您不应编辑其余的。
+* 确保JSON有效。 您可以使用JSON验证程序，例 [如](http://jsonlint.com/) ，参阅此网站。
+* “name”与触发器ID对应。 通配符“*”将捕获所有触发器。
+* “消费者”与调用实例或应用程序的名称相对应。
+* Pipelined还支持“别名”主题。
+* 进行更改后，应始终重新启动管道。
+
+## 第3步：可选配置 {#step-optional}
+
+您可以根据负载要求更改一些内部参数，但请确保在将它们投入生产之前对其进行测试。
+
+可选参数的列表如下所示：
+
+| 选项 | 说明 |
+|:-:|:-:|
+| appName（传统） | 在上传公钥的Legacy Oath应用程序中注册的OAuth应用程序的AppID。 For more on this, refer to this [page](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.) |
+| authGatewayEndpoint（传统） | 获取网关令牌的URL。 默认： ```https://api.omniture.com``` |
+| authPrivateKey（传统） | 私钥，上传到Legacy Oath应用程序中的公共部分，AES使用XtkKey选项进行加密： ```cryptString("PRIVATE_KEY")``` |
+| disableAuth（旧版） | 禁用身份验证，在没有网关令牌的情况下进行连接只会被某些开发管道端点接受。 |
+| discoverPipelineEndpoint | 用于查找要用于此租户的Pipeline Services端点的URL。 默认： ```https://producer-pipeline-pnw.adobe.net``` |
+| dumpStatePeriodSec | 内部状态中内部状态进程的两个转储 ```var/INSTANCE/pipelined.json.``` 之 <br> 间的期间也可在以下位置按需访问： ```http://INSTANCE:7781/pipelined/status``` |
+| forcedPipelineEndpoint | 禁用对PipelineServicesEndpoint的检测以强制它 |
+| monitorServerPort | 管道化进程将监听此端口以提供内部状态进程： ```http://INSTANCE:PORT/pipelined/status```. <br>默认为7781 |
+| pointerFlushMessageCount | 处理此数量的消息时，偏移将保存在数据库中。 <br> 默认值为1000 |
+| pointerFlushPeriodSec | 在此期间后，偏移将保存在数据库中。 <br>默认值为5（秒） |
+| processingJSThreads | 使用自定义JS连接器处理消息的专用线程数。 <br> 默认值为4 |
+| processingThreads | 使用内置代码处理消息的专用线程数。 <br>默认值为4 |
+| retryPeriodSec | 处理错误时重试之间的延迟。 <br>默认值为30（秒） |
+| retryValiditySec | 如果消息在此时段后未成功处理(重试过多)，请放弃消息。 <br>默认值为300（秒） |
+
+### 流水线处理自动开始 {#pipelined-process-autostart}
+
+需要自动启动流水线处理。
+
+为此，在配置文件中将&lt; pipelined >元素设置为autostart=&quot;true&quot;:
 
 ```
-<redirection IMSOrgId="C5E715(…)98A4@AdobeOrg" (…)
+ <pipelined autoStart="true" ... "/>
 ```
 
-### 密钥生成 {#key-generation}
-
-密钥是一对文件。 它采用RSA格式，长4096字节。 它可以使用开放源代码工具（如OpenSSL）生成。 每次运行该工具时，都会随机生成一个新键。
-为方便起见，下面列出了这些步骤：
-
-* ```openssl genrsa -out <private_key.pem> 4096```
-
-* ```openssl rsa -pubout -in <private_key.pem> -out <public_key.pem>```
-
-示例private_key.pem文件：
-
-```
-----BEGIN RSA PRIVATE KEY----
-MIIEowIBAAKCAQEAtqcYzt5WGGABxUJSfe1Xy8sAALrfVuDYURpdgbBEmS3bQMDb
-(…)
-64+YQDOSNFTKLNbDd+bdAA+JoYwUCkhFyvrILlgvlSBvwAByQ2Lx
-----END RSA PRIVATE KEY----
-```
-
-公共密钥。pem文件示例：
-
-```
-----BEGIN PUBLIC KEY----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtqcYzt5WGGABxUJSfe1X
-(…)
-EwIDAQAB
-----END PUBLIC KEY----
-```
-
->[!NOTE]
->
->密钥不应由PuttyGen生成，OpenSSL是最佳选择。
-
-### 在Adobe Experience Cloud创建身份验证客户端 {#oauth-client-creation}
-
-需要通过登录>下正确的组织帐户中的Adobe Analytics来创建JWT类型的应用 **[!UICONTROL Admin]** 程 **[!UICONTROL User Management]** 序 **[!UICONTROL Legacy Oath application]**。
-
-按照以下步骤操作：
-
-1. 选择 **[!UICONTROL Service Account (JWT Assertion)]**。
-1. 输入 **[!UICONTROL Application Name]**。
-1. 注册 **[!UICONTROL Public key]**。
-1. 选择触发器 **[!UICONTROL Scopes]**。
-
-   ![](assets/triggers_5.png)
-
-1. 单击并 **[!UICONTROL Create]** 检查已创 **[!UICONTROL Application ID]** 建的 **[!UICONTROL Application Secret]** 页面。
-
-   ![](assets/triggers_6.png)
-
-### Adobe Campaign Classic申请名注册 {#application-name-registration}
-
-创建的身份验证客户端的应用程序 ID必须以Adobe Campaign配置。 您可以通过在元素中编辑实例配置文件( [!DNL pipelined] 尤其是appName属性)来完成此操作。
-
-示例:
-
-```
-<pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
-```
-
-### 密钥加密 {#key-encription}
-
-要供使用， [!DNL pipelined]必须加密私钥。 加密是使用cryptString Javascript函数完成的，必须对与相同的实例执行 [!DNL pipelined]。
-
-本页中提供了使用JavaScript进行私钥加密的 [示例](../../integrations/using/pipeline-troubleshooting.md)。
-
-加密的私钥必须以Adobe Campaign注册。 您可以通过编辑元素中的实例配置文件( [!DNL pipelined] 特别是authPrivateKey属性)来执行此操作。
-
-示例:
-
-```
-<pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
-```
-
-### 流水线处理自动开始 {#pipelined-auto-start}
-
-该 [!DNL pipelined] 进程必须自动启动。
-为此，请将配置文件中的元素设置为autostart=&quot;true&quot;:
-
-```
-<pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
-```
-
-### 流水线处理重启 {#pipelined-restart}
-
-还可以使用命令行手动启动它：
-
-```
-nlserver start pipelined@instance
-```
+### 流水线处理重启 {#pipelined-process-restart}
 
 更改生效需要重新启动：
 
@@ -171,23 +166,10 @@ nlserver start pipelined@instance
 nlserver restart pipelined@instance
 ```
 
-如果出错，请在标准输出（如果您手动启动）或日志文件中查找 [!DNL pipelined] 错误。 有关解决问题的详细信息，请参阅本文档的“疑难解答”部分。
+## 第4步：验证 {#step-validation}
 
-### 流水线配置选项 {#pipelined-configuration-options}
+要验证管道设置以进行设置，请执行以下步骤：
 
-| 选项 | 说明 |
-|:-:|:-:|
-| appName | 在Adobe Analytics注册的OAuth应用程序(应用程序 ID)的ID（其中上传了公钥）:“管理员”>“用户管理”>“旧版宣誓应用程序”。 Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation). |
-| authGatewayEndpoint | 获取“网关令牌”的URL。 <br> 默认：https://api.omniture.com |
-| authPrivateKey | 私钥(在Adobe Analytics上传的公共部件（请参阅本节）。 使用XtkSecretKey选项加密的AES:xtk.session.EncryptPassword(&quot;PRIVATE_KEY&quot;); |
-| disableAuth | 禁用身份验证（仅某些开发管道端点接受不带网关令牌的连接） |
-| discoverPipelineEndpoint | 用于发现要用于此租户的Pipeline Services端点的URL。 默认：https://producer-pipeline-pnw.adobe.net |
-| dumpStatePeriodSec | 在var/INSTANCE/pipelined.json内部状态下的2个进程内部状态转储之间的期间也可在http://INSTANCE/pipelined/status（端口7781）按需访问。 |
-| forcedPipelineEndpoint | 禁用发现PipelineServicesEndpoint并强制它 |
-| monitorServerPort | 进 [!DNL pipelined] 程监听此端口以提供进程内部状态，网址为http://INSTANCE/pipelined/status（端口7781）。 |
-| pointerFlushMessageCount | 处理此数量的消息时，偏移量将保存在数据库中。 默认值为1000 |
-| pointerFlushPeriodSec | 在此期间后，偏移将保存在数据库中。 默认值为5（秒） |
-| processingJSThreads | 使用自定义JS连接器处理消息的专用线程数。 默认值为4 |
-| processingThreads | 使用内置代码处理消息的专用线程数。 默认值为4 |
-| retryPeriodSec | 重试之间的延迟（如果存在处理错误）。 默认值为30（秒） |
-| retryValiditySec | 如果消息在此时段后未成功处理(重试过多)，请放弃消息。 默认值为300（秒） |
+* 确保进 [!DNL pipelined] 程正在运行。
+* 检查pipelined.log是否有管道连接日志。
+* 验证连接，并检查是否收到ping。 托管客户可以从客户端控制台使用监视。
