@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 208bac758542db8dd514bda80c8c735897fcefec
 workflow-type: tm+mt
 source-wordcount: '944'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -114,7 +114,7 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 ## 如何创建和管理用户档案 {#create-profiles-video}
 
-了解如何访问用户档案数据、对用户档案进行排序和筛选以及手动创建和管理用户档案。
+了解如何访问个人资料数据、对个人资料进行排序和筛选以及手动创建和管理个人资料。
 
 此视频还解释了Adobe Campaign Classic遵守一般数据保护法规的情况。
 
