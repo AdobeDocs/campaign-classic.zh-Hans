@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 762b0233-4b2a-420c-ba28-240cfba362e8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 9%
@@ -30,7 +30,6 @@ ht-degree: 9%
 
 在创建优惠之前，必须先指定环境(请参阅 [环境概述](../../interaction/using/environments-overview.md))。 它将包含一组优惠的所有特征(资格、目标约束、推荐规则)，分类为类别，以及其空间的列表。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >创建优惠目录，即类别和优惠，是责任 **[!UICONTROL Offer manager]**。
-
