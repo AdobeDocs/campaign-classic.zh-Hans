@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 优惠同步通过包执行。 在执行实例上，所有目录对象都由外部帐户名称前缀。 这意味着可以在同一控制实例上支持多个执行实例（例如开发和生产实例）。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >我们建议您使用简明的内部名称。
 
@@ -112,7 +112,7 @@ ht-degree: 1%
 
 以下是列表上提供的维护选项：
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >这些选项只能用于特定的维护案例。
 
@@ -128,7 +128,7 @@ ht-degree: 1%
 
 如果您的实例之前没有交互包，则无需迁移。 默认情况下，命题表将在安装软件包后以64位为单位。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >根据实例中现有命题的数量，此操作可能需要一段时间。
 
