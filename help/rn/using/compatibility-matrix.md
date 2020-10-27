@@ -10,27 +10,31 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 16%
+source-wordcount: '543'
+ht-degree: 13%
 
 ---
 
 
 # 兼容性矩阵{#compatibility-matrix}
 
-此文档列表支持最新版本的 **Adobe Campaign Classic（v6.11和v7）的所有系统和组件**。 不属于本列表的产品和版本与Adobe Campaign不兼容。
+此文档列表支持最新版本的 [Adobe Campaign Classic的所有系统](../../rn/using/latest-release.md)**和组件**。 不属于本列表的产品和版本与Adobe Campaign不兼容。
+
+作为金本位用户，请参阅
 
 ## 重要说明{#important-notes}
 
-此矩阵会定期更新，新增受支持项目正在添加，已弃用项目正在删除。
-
 除非另有说明，否则支持所有次要版本。
 
-Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于这些第三方系统和工具的特定版本与各自的创建者达到生命周期终止(EOL),Adobe Campaign将不再与这些版本兼容，并且它们将在后续产品版本中从我们的兼容性矩阵中删除。 请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
+在其最 [新版本中](../../rn/using/latest-release.md),Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于这些第三方系统和工具的特定版本与各自的创建者达到生命周期终止(EOL),Adobe Campaign将不再与这些版本兼容，并且它们将在后续产品版本中从我们的兼容性矩阵中删除。 请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
 
 要了解有关已弃用项目的更多信息，请 [访问此页](../../rn/using/deprecated-features.md)。
+
+>[!CAUTION]
+>
+>此矩阵会定期更新，新增受支持项目正在添加，已弃用项目正在删除。
 
 ## Operating Systems{#OperatingSystems}
 
@@ -39,20 +43,22 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <tr> 
 <td>CentOs</td>
 <td>
+<p>8.x（64位）</p>
 <p>7.x（64位）</p>
 </td>
 </tr>
 <tr>
 <td>Debian</td>
 <td>
-<p>8（64位）</p>
-<p>9（64位）</p>
 <p>10（64位）</p>
+<p>9（64位）</p>
+<p>8（64位）</p>
 </td>
 </tr>
 <tr>
 <td>RHEL</td>
 <td>
+<p>8.x（64位）</p>
 <p>7.x（64位）</p>
 <p><strong>重要：</strong> 如果您使用RHEL，您必须愿意禁用SELinux，或让架构师编写自定义SELinux规则来检查启用的SELinux是否未导致活动操作问题。</p>
 </td>
@@ -60,9 +66,9 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2012</p>
-<p>2012年R2</p>
 <p>2016</p>
+<p>2012年R2</p>
+<p>2012</p>
 </td>
 </tr>
 </tbody>
@@ -75,9 +81,9 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>Windows Server 2012上的8.0 - Windows 8</p>
-<p>8.5 on Windows Server 2012 R2</p>
 <p>Windows Server 2016上的10.0</p>
+<p>8.5 on Windows Server 2012 R2</p>
+<p>Windows Server 2012上的8.0 - Windows 8</p>
 </td>
 </tr>
 <tr>
@@ -96,8 +102,9 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <tr>
 <td>Java开发工具包(JDK)</td>
 <td>
-<p>8</p>
+<p>11</p>
 <p>9</p>
+<p>8</p>
 <p>该应用程序已被批准用于Oracle开发的Java开发工具包(JDK)以及OpenJDK。</p>
 </td>
 </tr>
@@ -116,56 +123,43 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 </tbody>
 </table>
 
-## RDBMS驱动程序{#RDBMSdrivers}
-
-支持以下RDBMS驱动程序：
-
-* Oracle SQL*Net 11
-
-* Oracle SQL*Net 12
-
-* PostgreSQL(libpq)
-
-* SQLServer
-
-* DB2（ODBC驱动程序）
-
+## RDBMS服务器{#RDBMSservers}
 
 >[!NOTE]
 >
 >RDBMS驱动程序必须与RDBMS服务器版本匹配。
-
-## RDBMS服务器{#RDBMSservers}
 
 <table>
 <tbody>
 <tr>
 <td>Oracle</td>
 <td>
-<p>11g R2</p>
-<p>12c</p>
-<p>18c</p>
 <p>19c</p>
+<p>18c</p>
+<p>12c</p>
+<p>11g R2</p>
 </td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
 <td>
-<p>9.4.x</p>
-<p>9.5.x</p>
-<p>9.6.x</p>
-<p>10.x</p>
+<p>12.x</p>
 <p>11.x</p>
+<p>10.x</p>
+<p>9.6.x</p>
+<p>9.5.x</p>
+<p>9.4.x</p>
 <p>注意：您还可以将AmazonRDS for PostgreSQL与上述指定的版本一起使用。</p>
 </td>
 </tr>
 <tr>
 <td>SQL Server</td>
 <td>
-<p>2012 - SP1和SP2</p>
-<p>2014</p>
-<p>2016</p>
+<p>2019</p>
 <p>2017</p>
+<p>2016</p>
+<p>2014</p>
+<p>2012 - SP1和SP2</p>
 <p>警告：当活动服务器在Linux上运行时，不支持将Microsoft SQL Server作为主数据库。 <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">了解详情</a>。</p>
 </td>
 </tr>
@@ -189,8 +183,8 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <tr>
 <td>SFDC API</td>
 <td>
-<p>API版本15</p>
 <p>API版本21</p>
+<p>API版本15</p>
 </td>
 </tr>
 <tr><td>Oracle On Demand API</td>
@@ -225,27 +219,29 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <tr>
 <td>Oracle</td>
 <td>
-<p>11g</p>
-<p>12c</p>
 <p>18c</p>
+<p>12c</p>
+<p>11g</p>
 </td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
 <td>
-<p>9.4.x</p>
-<p>9.5.x</p>
-<p>9.6.x</p>
-<p>10.x</p>
+<p>12.x</p>
 <p>11.x</p>
+<p>10.x</p>
+<p>9.6.x</p>
+<p>9.5.x</p>
+<p>9.4.x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2012 SP1和SP2</p>
-<p>2014</p>
-<p>2016</p>
+<p>2019</p>
 <p>2017</p>
+<p>2016</p>
+<p>2014</p>
+<p>2012 SP1和SP2</p>
 </td>
 </tr>
 <tr><td>MySQL</td>
@@ -256,10 +252,10 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <tr>
 <td>Teradata</td>
 <td>
-<p>15.0</p>
-<p>15.10</p>
-<p>16</p>
 <p>16.20</p>
+<p>16</p>
+<p>15.10</p>
+<p>15.0</p>
 </td>
 </tr>
 <tr>
@@ -302,8 +298,8 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2012</p>
 <p>2016</p>
+<p>2012</p>
 </td>
 </tr>
 <tr>
@@ -323,20 +319,14 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <tr>
 <td>Android</td>
 <td>
-<p>7.x</p>
-<p>8.x</p>
-<p>9.0</p>
+<p>7.x、8.x、9.0</p>
 <p>与移动SDK内部版本1.0.27。</p>
 </td>
 </tr>
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9</p>
-<p>iOS 10</p>
-<p>iOS 11</p>
-<p>iOS 12</p>
-<p>iOS 13</p>
+<p>iOS 9 - 14</p>
 <p>与移动SDK内部版本1.0.26兼容，并兼容32和64位版本。</p>
 </td>
 </tr>
@@ -345,28 +335,13 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 
 ## 浏览器{#Browsers}
 
-支持Internet Explorer版本11。
+对于以下浏览器，支持最新版本：Microsoft Edge、Mozilla Firefox、Google Chrome、Safari。
 
-对于以下浏览器，支持最新版本：
-
-* Microsoft Edge
-
-* Firefox
-
-* 铬黄
-
-* Safari
-
-## Experience Cloud 集成{#ExperienceCloudintegrations}
-
-有关与Adobe解决方案集成的信息，请参阅本 [节](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/about-campaign-integrations.html#experience-cloud-integrations)。
+支持Internet Explorer 11。
 
 ## 更像这样{#Morelikethis}
 
-* [Campaign Classic发行说明](https://docs.adobe.com/content/help/zh-Hans/campaign-classic/using/release-notes/latest-release.html)
-* [安装指南](https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/general-architecture.html)
-* [已弃用的功能和系统](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html)
+* [Campaign Classic发行说明](../../rn/using/latest-release.md)
+* [安装指南](../../installation/using/general-architecture.md)
+* [已弃用的功能和系统](../../rn/using/deprecated-features.md)
 * [构建升级过程](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)
-* [Campaign Classic19.0版本的兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix-19-0.html)
-* [Campaign Classic19.1版本的兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix-19-1.html)
-
