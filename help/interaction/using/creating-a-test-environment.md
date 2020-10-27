@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 7a92bc51-24cf-4ce6-bd50-a315f8f6e34e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 12%
@@ -24,7 +24,7 @@ ht-degree: 12%
 
 要创建测试环境（沙箱模式），请应用以下步骤：
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >仅将此环境创建方法用于测试环境。 在所有其他情况下，请使用目标映射向导。 有关此内容的详细信息，请参 [阅创建优惠环境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
 
