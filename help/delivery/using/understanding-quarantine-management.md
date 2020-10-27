@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
 workflow-type: tm+mt
-source-wordcount: '2571'
-ht-degree: 14%
+source-wordcount: '2802'
+ht-degree: 13%
 
 ---
 
@@ -156,20 +156,23 @@ If a user qualifies an email as a spam ([Feedback loop](../../delivery/using/tec
 
 **对于iOS —— 二进制连接器**
 
-对于每个通知，Adobe Campaign从APNS服务器接收同步和异步错误。 对于以下同步错误，Adobe Campaign会生成软错误：
+>[!NOTE]
+从活动20.3版本开始，iOS旧版二进制连接器已弃用。 如果您使用此连接器，则需要相应地调整实施。 [了解详情](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+
+对于每个通知，Adobe Campaign从APNs服务器接收同步和异步错误。 对于以下同步错误，Adobe Campaign会生成软错误：
 
 * 负载长度问题：无重试，失败原因为 **[!UICONTROL Unreachable]**。
 * 证书过期问题：无重试，失败原因为 **[!UICONTROL Unreachable]**。
 * 在投放期间连接丢失：重试，失败原因为 **[!UICONTROL Unreachable]**。
 * 服务配置问题（证书无效、证书密码无效、证书无效）:无重试，失败原因为 **[!UICONTROL Unreachable]**。
 
-APNS服务器异步通知Adobe Campaign设备令牌已注册（当用户卸载了移动应用程序时）。 该工 **[!UICONTROL mobileAppOptOutMgt]** 作流每6小时运行一次，以与APNS反馈服务联系以更 **新AppSubscriptionRcp** 表。 对于所有已取消激活的令牌 **,Disabled** （禁用）字段 **设置为** True，链接到该设备令牌的订阅将自动从将来的投放中排除。
+APNs服务器异步通知Adobe Campaign设备令牌已注册（当用户卸载了移动应用程序时）。 该工 **[!UICONTROL mobileAppOptOutMgt]** 作流每6小时运行一次，以联系APNs反馈服务以更新 **AppSubscriptionRcp** 表。 对于所有已取消激活的令牌 **,Disabled** （禁用）字段 **设置为** True，链接到该设备令牌的订阅将自动从将来的投放中排除。
 
-**对于iOS - HTTP/2连接器**
+**对于iOS - HTTP/V2连接器**
 
-http/2协议允许直接反馈和每个推送投放的状态。 如果使用http/2协议连接器，则工作流不再调用反馈服 **[!UICONTROL mobileAppOptOutMgt]** 务。 未注册的令牌在iOS二进制连接器和iOS http/2连接器之间处理方式不同。 卸载或重新安装手机应用程序时，令牌被视为未注册。
+HTTP/V2协议允许直接反馈和每个推送投放的状态。 如果使用HTTP/V2协议连接器，工作流将不再调用反馈 **[!UICONTROL mobileAppOptOutMgt]** 服务。 未注册的令牌在iOS二进制连接器和iOS HTTP/V2连接器之间以不同方式处理。 卸载或重新安装手机应用程序时，令牌被视为未注册。
 
-同步地，如果APNS返回消息的“未注册”状态，则目标令牌将立即置入隔离。
+同步地，如果APNs返回消息的“未注册”状态，则目标令牌将立即置入隔离。
 
 <table> 
  <tbody> 
@@ -222,7 +225,7 @@ http/2协议允许直接反馈和每个推送投放的状态。 如果使用http
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
-   <td> 证书问题（密码、损坏等） 并测试与APNS问题的连接<br /> </td> 
+   <td> 证书问题（密码、损坏等） 并测试与APNs问题的连接<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 根据错误发送各种错误消息<br /> </td> 
    <td> 柔和<br /> </td> 
@@ -238,7 +241,7 @@ http/2协议允许直接反馈和每个推送投放的状态。 如果使用http
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> APNS消息拒绝：取消注册<br /> ，用户已删除应用程序或令牌已过期<br /> </td> 
+   <td> APNs消息拒绝：取消注册<br /> ，用户已删除应用程序或令牌已过期<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 未注册<br /> </td> 
    <td> 硬<br /> </td> 
@@ -246,7 +249,7 @@ http/2协议允许直接反馈和每个推送投放的状态。 如果使用http
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
-   <td> APNS消息拒绝：所有其他错误<br /> </td> 
+   <td> APNs消息拒绝：所有其他错误<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 错误消息中将显示错误拒绝原因<br /> </td> 
    <td> 柔和<br /> </td> 
@@ -356,6 +359,134 @@ Android V2隔离机制与Android V1使用的过程相同，对订阅和排除更
    <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr> 
+    <tr> 
+   <td> FCM消息拒绝：参数无效<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> INVALID_ARGUMENT </td> 
+   <td> 已忽略</td> 
+   <td> 未定义<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> FCM消息拒绝：第三方身份验证错误<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> THIRD_PARTY_AUTH_ERROR </td> 
+   <td> 已忽略</td>
+   <td> 拒绝<br /> </td> 
+   <td> 是<br /> </td> 
+  </tr>
+    <tr> 
+   <td> FCM消息拒绝：发件人ID不匹配<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> SENDER_ID_MISMATCH </td> 
+   <td> 柔和</td>
+   <td> 用户未知<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> FCM消息拒绝：未注册<br /> </td> 
+   <td> 失败<br /> </td>
+   <td> 未注册 </td> 
+   <td> 硬</td> 
+   <td> 用户未知<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> FCM消息拒绝：内部<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> 内部 </td> 
+   <td> 已忽略</td> 
+   <td> 拒绝<br /> </td> 
+   <td> 是<br /> </td> 
+  </tr>
+    <tr> 
+   <td> FCM消息拒绝：不可用<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> 不可用</td> 
+   <td> 已忽略</td> 
+   <td> 拒绝<br /> </td> 
+   <td> 是<br /> </td> 
+  </tr>
+    <tr> 
+   <td> FCM消息拒绝：意外错误代码<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> 意外错误代码</td> 
+   <td> 已忽略</td> 
+   <td> 拒绝<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+  <tr> 
+   <td> 身份验证：连接问题<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> 无法连接到身份验证服务器 </td> 
+   <td> 已忽略</td>
+   <td> 拒绝<br /> </td> 
+   <td> 是<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 身份验证：请求中的未授权客户端或范围。<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> unauthorized_client </td> 
+   <td> 已忽略</td>
+   <td> 拒绝<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 身份验证：客户端未授权使用此方法检索访问令牌，或者客户端未授权任何请求的范围。<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> unauthorized_client </td> 
+   <td> 已忽略</td>
+   <td> 拒绝<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 身份验证：拒绝访问<br /> </td> 
+   <td> 失败<br /> </td>
+   <td> access_denied</td> 
+   <td> 已忽略</td>
+   <td> 拒绝<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 身份验证：无效电子邮件<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> invalid_grant </td> 
+   <td> 已忽略</td> 
+   <td> 拒绝<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 身份验证：JWT无效<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> invalid_grant </td> 
+   <td> 已忽略</td> 
+   <td> 拒绝<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 身份验证：JWT签名无效<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> invalid_grant </td> 
+   <td> 已忽略</td> 
+   <td> 拒绝<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 身份验证：提供的OAuth范围或ID令牌受众无效<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> unauthorized_client</td> 
+   <td> 已忽略</td> 
+   <td> 拒绝<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
+    <tr> 
+   <td> 身份验证：已禁用OAuth客户端<br /> </td> 
+   <td> 失败<br /> </td> 
+   <td> disabled_client</td> 
+   <td> 已忽略</td> 
+   <td> 拒绝<br /> </td> 
+   <td> 否<br /> </td> 
+  </tr>
  </tbody> 
 </table>
 
