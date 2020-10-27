@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 5e9c17ad-14d2-4173-9fc9-0e48a21426c8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Adobe Campaign模块很多。 有些操作是连续的，而有些则偶尔启�
 
 nlserver工具的常 **规语法** 如下所示：
 
-**nlserver`<command>``<command arguments>`**
+**nlserver `<command>``<command arguments>`**
 
 对于可用模块的列表，请使用 **nlserver** 命令。
 
@@ -79,11 +79,11 @@ nlserver工具的常 **规语法** 如下所示：
 | web | 应用程序服务器（HTTP和SOAP） |
 | wfserver | 工作流服务器 |
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >最后一个模块：链接到应用服务器的跟踪和中继模块，为了提高性能，它通过本机机制通过动态库集成到Apache或IIS Web服务器中。 没有Adobe Campaign命令可以开始或管理此模块。 因此，必须使用Web服务器本身的命令。
 
-模块用法及其参数的语法使用以下命令显示： **nlserver`[module]`-?**
+模块用法及其参数的语法使用以下命令显示： **nlserver `[module]` -?**
 
 示例:
 
