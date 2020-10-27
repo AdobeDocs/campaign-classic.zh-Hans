@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1670'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 5%
 
 1. **分析投放**:通过此步骤，您可以准备要传送的消息。 请参阅 [分析投放](#analyzing-the-delivery)。
 
-   本节将介绍在分析过程中应 [用的规则](#validation-process-with-typologies) 。 可用校验模式在更改批准 [模式部分中详细](#changing-the-approval-mode) 。
+   本节介绍在分析期间应用 [的规则](#validation-process-with-typologies)。 可用校验模式在更改批准 [模式部分中详细](#changing-the-approval-mode) 。
 
 1. **发送验证**:通过此步骤，您可以批准内容、URL、个性化字段等。 请参阅 [发送验证](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)[和定义特定验证目标](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
 
