@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 93%
+source-wordcount: '2148'
+ht-degree: 91%
 
 ---
 
@@ -23,17 +23,19 @@ ht-degree: 93%
 + 发行说明 {#release-notes}
    + [升级入门](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
-   + [Gold Standard 发行](rn/using/gold-standard.md)
+   + Gold Standard Release {#gs-release}
+      + [金标发行说明](rn/using/gold-standard.md)
+      + [Gold Standard兼容性表](rn/using/compatibility-matrix-gs.md)
    + 之前版本 {#previous-releases}
+      + [版本 20.2](rn/using/release--20-2.md)
       + [版本 20.1](rn/using/release--20-1.md)
       + [版本 19.2](rn/using/release--19-2.md)
       + [版本 19.1](rn/using/release--19-1.md)
       + [版本 18.10](rn/using/release--18-10.md)
       + [版本 18.6](rn/using/release--18-6.md)
       + [版本 18.4](rn/using/release--18-4.md)
-   + 已弃用的功能和兼容性 {#deprecated-compatibility}
-      + [已弃用的功能](rn/using/deprecated-features.md)
-      + [兼容性矩阵](rn/using/compatibility-matrix.md)
+   + [已弃用的功能](rn/using/deprecated-features.md)
+   + [兼容性矩阵](rn/using/compatibility-matrix.md)
 + 快速入门{#getting-started}
    + 开始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [开始使用Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -121,7 +123,10 @@ ht-degree: 93%
    + 发送推送通知 {#sending-push-notifications}
       + [关于移动应用程序渠道](delivery/using/about-mobile-app-channel.md)
       + [将 Campaign SDK 集成到移动应用程序](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
-      + [在 Adobe Campaign 中配置移动应用程序](delivery/using/configuring-the-mobile-application.md)
+      + 配置移动应用程序{#configure-the-mobile-app}
+         + [应用程序配置入门](delivery/using/get-started-app-config.md)
+         + [iOS的配置步骤](delivery/using/configuring-the-mobile-application.md)
+         + [Android的配置步骤](delivery/using/configuring-the-mobile-application-android.md)
       + [创建通知](delivery/using/creating-notifications.md)
       + [故障排除](delivery/using/troubleshooting.md)
    + 发送直邮 {#sending-direct-mail}
@@ -336,8 +341,8 @@ ht-degree: 93%
    + Experience Cloud Triggers {#experience-triggers}
       + [关于 [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [配置管道](integrations/using/configuring-pipeline.md)
-      + [管道选项 NmsPipeline_Config](integrations/using/nmspipeline-config.md)
-      + [触发事件](integrations/using/events.md)
+      + [为Adobe Experience Cloud触发器配置AdobeIO](integrations/using/configuring-adobe-io.md)
+      + [为自定义实施配置事件](integrations/using/events.md)
       + [管道监控](integrations/using/pipeline-monitoring.md)
       + [管道故障排除](integrations/using/pipeline-troubleshooting.md)
 + 通过工作流实现自动化 {#automating-with-workflows}
