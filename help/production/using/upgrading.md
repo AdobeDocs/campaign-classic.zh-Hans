@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1132'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 在开始升级过程之前，确定并确认要升级到哪个版本的Adobe Campaign，并参阅 [发行说明](../../rn/using/latest-release.md) 。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >我们强烈建议在更新之前对每个实例进行数据库备份。 有关详细信息，请参阅 [备份](../../production/using/backup.md)。\
 >要执行升级，请确保您具有访问实例和日志的能力和权限。
@@ -31,7 +31,7 @@ ht-degree: 1%
 >
 >另请参阅安装 [指南](../../installation/using/general-architecture.md) 和内 [部升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html) 入门。
 
-## 在Windows中 {#in-windows}
+## Windows {#in-windows}
 
 要在传送新版本时更新新版本中的Adobe Campaign，应在Windows中应用以下过程：
 
@@ -53,7 +53,7 @@ ht-degree: 1%
       **iisreset /stop**
 
    * Adobe Campaign服务： **net stop nlserver6**
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >您还需要确保重定向服务器(webmdl)已停止，以便 **IIS使用的nlsrvmod.dll** 文件可以替换为新版本。
 
@@ -111,7 +111,7 @@ ht-degree: 1%
 
 * Adobe Campaign服务： **网络开始nlserver6**
 
-## 在Linux中 {#in-linux}
+## Linux {#in-linux}
 
 要在交付新版本时更新新版本中的Adobe Campaign,Linux的过程如下：
 
@@ -171,7 +171,7 @@ ht-degree: 1%
 /etc/init.d/apache stop
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* 您的脚本可能称为 **httpd** ，而非 **apache**。
 >* 您必须执行此命令，直到您获得以下回复：
@@ -223,7 +223,7 @@ ht-degree: 1%
 * **[!UICONTROL Accept the new version]** :如果用户未更改随Adobe Campaign提供的资源，则建议使用此选项。
 * **[!UICONTROL Keep the current version]** :表示更新被拒绝。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >如果选择此分辨率模式，您可能无法从新版本中的校正中受益。
 
@@ -248,7 +248,7 @@ ht-degree: 1%
 
 ## 警告客户端控制台可用的更新 {#warn-the-client-consoles-of-the-available-update}
 
-### 在Windows中 {#in-windows-1}
+### Windows {#in-windows-1}
 
 在安装(nlserver web)**Adobe Campaign应用**&#x200B;程序服务器的计算机上，下载并复制文件
 
@@ -262,7 +262,7 @@ ht-degree: 1%
 >
 >确保IIS_XPG用户具有此安装文件的相应读取权限，并参阅安装 [指南](../../installation/using/general-architecture.md) ，了解详细信息。
 
-### 在Linux中 {#in-linux-1}
+### Linux {#in-linux-1}
 
 在安装Adobe Campaign应用程序服务器(**nlserver web**)的计算机上，检索以下包：
 
