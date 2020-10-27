@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: case-study
 discoiquuid: 63245348-0402-4929-9c4f-71f01f97758e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '2093'
 ht-degree: 1%
@@ -79,7 +79,7 @@ Neobank网站希望在其网站上显示一个优惠，目标是浏览网页的�
        }   
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >渲染函数必须按照之前选择的顺序命名用于空间的字段，以便正确显示优惠。
 
@@ -223,7 +223,7 @@ Neobank公司希望为两个不同的目标创建营销优惠。 它希望为其
 
    ![](assets/offer_inbound_fallback_example_025.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >渲染函数必须按照之前选择的顺序命名用于空间的字段，以便正确显示优惠。
 
