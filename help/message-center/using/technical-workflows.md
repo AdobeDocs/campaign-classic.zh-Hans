@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 2e648e63-06d2-4e8f-9934-066a41d18eac
 translation-type: tm+mt
-source-git-commit: 76547b8e7ef377a6d2c786e721b16c571e8b7712
+source-git-commit: f7527a2d9b76e34fbaa2c9471c44a7a1e7e074d7
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '309'
 ht-degree: 11%
 
 ---
@@ -28,13 +28,11 @@ ht-degree: 11%
 
 ## 控制实例工作流 {#control-instance-workflows}
 
-在控制实例上，必须为每个执行实例创建一个存档工作流。 然后，可以从“管理”>“生产”>“ **消息中心”文件夹访问归档工作流** 。 创建后，归档工作流将自动启动。
-
-**分布式架构**
-
-如果您注册了一个或多个执行实例，则必须在控制实例上为每个外部帐户创建一个存档工作 **[!UICONTROL Message Center execution instance]** 流程。 单击按 **[!UICONTROL Create the archiving workflow]** 钮以创建和开始工作流。
+在控制实例上，无论您是注册了一个还是多个执行实例，都必须为每个外部帐户创建一个存档工作 **[!UICONTROL Message Center execution instance]** 流程。 单击按 **[!UICONTROL Create the archiving workflow]** 钮以创建和开始工作流。
 
 ![](assets/messagecenter_archiving_002.png)
+
+然后，可以从“管理”>“生 **产”>“消息中心”文件夹访问** 这些工作流。 创建后，归档工作流将自动启动。
 
 <!--**Minimal architecture**
 
