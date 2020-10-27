@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 968d0ee3-5efc-46d8-b408-b9cce3e730c4
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '3602'
+source-wordcount: '3600'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 列表系统指示器使您能够显示有关计算机的信息，如物理和虚拟内存、活动进程和可用磁盘空间。 Linux和Windows操作系统的指示器不同。 转到页 **[!UICONTROL Instance Monitoring]** 面并单击链 **[!UICONTROL Display]** 接以打开指示器列表
 
-#### 在Windows中 {#in-windows}
+#### Windows {#in-windows}
 
 * **[!UICONTROL Pending events queued]** :消息中心特 **定的指示符**。 Refer to [this section](../../message-center/using/monitoring-thresholds.md) for more information.
 * **[!UICONTROL Memory]** :有关物理内存(RAM)的信息。
@@ -103,7 +103,7 @@ ht-degree: 0%
 
    当显 **[!UICONTROL Alert]** 示指示符时，可能相关进程被SQL数据库引擎锁定，或者它卡在无限循环中。 由Adobe Campaign **提供** 的监视程序会每天自动重新开始所有进程，使您能够解决此问题。 但是，您也可以自行停止相关过程以强制重新开始。
 
-#### 在Linux中 {#in-linux}
+#### Linux {#in-linux}
 
 ![](assets/production_system_indicators_linux_001.png)
 
@@ -256,7 +256,7 @@ SMTP投放监视报告已集成到Adobe Campaign平台中。 可以通过控制�
 
 ![](assets/smtp_reports_access.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* 仅当激活了电子邮件渠道时，与SMTP监视相关的信息才可用。
 >* 只有 **[!UICONTROL SMTP sending statistics]** 在实例上启动统计信息服务器时，才会提供。
@@ -484,7 +484,7 @@ Adobe Campaign可以提供实例监视工具(netreport)，它允许您通过电�
 
 ![](assets/pro_netreport.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >此工具可用于监视实例，但Adobe Campaign不支持。 有关详细信息，请与活动管理员联系。
 
@@ -548,7 +548,7 @@ XML配置文件包含以下元素：
 >
 >可以通过向netconf.xml文件添加后缀 **来指定各种配置** ，例如， **netconf-dev.xml****、** netconf-prod.xml等。 然后，通过添加$JAVA_HOME/bin/java netreport dev **或@%JAVA_HOME** %bintreport prodexample，指定在netreport.bat或 ************ netreport.sh文件中执行netreport的配置。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >要使监 **视操作** 员正常工作，执行Netreport的计算机必须处于处于sessionTokenOnly模式的 **安全区** 。 如果未为此运算符指定可信的IP掩码，则安全区域还必须处于 **allowEmptyPassword** 和 **allowUserPassword模式** 。
 
