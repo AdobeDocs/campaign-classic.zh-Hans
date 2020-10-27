@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
+source-git-commit: 9cff35424b389d0cc6adb8ce0ec81d3258ffb6ba
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '549'
 ht-degree: 13%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 13%
 
 此文档列表支持最新版本的 [Adobe Campaign Classic的所有系统](../../rn/using/latest-release.md)**和组件**。 不属于本列表的产品和版本与Adobe Campaign不兼容。
 
-作为金本位用户，请参阅
+如果您是Gold Standard用户，请参阅Gold Standard [兼容性表](../../rn/using/compatibility-matrix-gs.md)。
 
 ## 重要说明{#important-notes}
 
