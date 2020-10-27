@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 1%
@@ -369,7 +369,7 @@ function sqlGetMemo(strSql)
 
 >[!NOTE]
 >
->对于Microsoft SQL Server，您可以使用本页中详 [细的维护计划](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)。
+>对于Microsoft SQL Server，您可以使用本页中详细的维护 [计划](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)。
 
 以下示例涉及Microsoft SQL Server 2005。 如果您使用的是其他版本，请与数据库管理员联系以了解维护过程。
 
@@ -421,7 +421,7 @@ function sqlGetMemo(strSql)
 
    请注意，已在文件夹中创建了 **[!UICONTROL SQL Server Agent > Jobs]** 对象。 此对象允许您开始维护计划。 在我们的示例中，只有一个对象，因为所有维护任务都是同一计划的一部分。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >要运行此对象，必须启用Microsoft SQL Server代理。
 
