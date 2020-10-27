@@ -2,7 +2,6 @@
 title: Campaign Classic 已弃用和已移除的功能
 description: 本页列出已弃用并移除的 Adobe Campaign Classic 功能
 page-status-flag: never-activated
-uuid: null
 contentOwner: simonetn
 products: SG_CAMPAIGN/CLASSIC
 audience: rn
@@ -11,10 +10,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
+source-git-commit: 87c2ee675b77be0f24a2028e7dbbf0bd1b91d46e
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 96%
+source-wordcount: '1607'
+ht-degree: 84%
 
 ---
 
@@ -45,9 +44,40 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
  <tbody> 
    <tr>
    <td><strong>功能</strong></td>
-   <td><strong>替换</strong></td> 
+   <td><strong>替换</strong></td>
   </tr>
+  <tr>
+  <td>CRM连接器<br></td>
+   <td><p>从活动20.3版本开始，已弃用以下CRM连接器：</p>
+   <ul>
+   <li>Soap API —— 内部部署：2007、2015、2016</li>
+   <li>Soap API —— 在线：2015年， 2016年</li>
+   </ul>
+  <p><em>目标移除日期：2021 年</em></p>
+  </td>
+ </tr>
+  <tr>
+  <td>iOS传统二进制<br></td>
+  <td><p>从活动20.3版本开始，iOS旧版二进制连接器已弃用。<p>
+  <p> 如果您使用此连接器，则需要相应地调整实施。
+  <a href="https://helpx.adobe.com/campaign/kb/migrate-to-http2.html">了解详情</a></p>
+  <p><em>目标移除日期：2021 年</em></p>
+  </td>
+ </tr>
    <tr>
+  <td>Demdex域<br></td>
+  <td><p> 从活动20.3版本开始，用于将受众导入和导出到Adobe Experience Cloud的demdex域已弃用。<p>
+  <p>如果您正在导入／导出外部帐户使用demdex域，则需要相应地调整实施。 <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">了解详情</a></p> 
+  <p><em>目标移除日期：2021 年</em></p>
+  </td>
+  <tr>
+  <td>OAuth身份验证（OAuth和JWT）<br></td>
+  <td><p> 从活动20.3版本开始，最初基于oAUTH身份验证设置触发集成身份验证以访问管道的操作现已更改并移至AdobeI/O。 <p>
+  <p>如果您使用触发器集成，则需要相应地调整实施。 <a href="../../integrations/using/about-triggers.md">了解详情</a></p> 
+  <p>有关OAuth身份验证折旧的详细信息，请参阅本 <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">页</a></p> 
+  <p><em>目标删除日期：2021年4月</em></p>
+  </td>
+  </tr>
   <td>SMS 连接器<br></td>
   <td><p> 从活动20.2版本开始，已弃用以下SMS连接器。<p>
    <ul>
@@ -83,6 +113,10 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <td><strong>区域 - 功能</strong></td>
    <td><strong>替换</strong></td> 
   </tr> 
+   <tr> 
+   <td>Windows NT身份验证<br></td>
+   <td><p>从活动20.3版本开始，在使用Microsoft SQL Server配置新数据库时，已从可用的身份验证方法中删除Windows NT身份验证。 <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">了解详情</a></p></td>
+  </tr>
    <tr> 
    <td>基于文件的电子邮件存档<br></td>
    <td><p>从 Campaign 20.2 版本开始，基于文件的电子邮件存档不再可用。电子邮件存档现在可通过专用的密送电子邮件地址进行。<a href="../../installation/using/email-archiving.md">了解详情</a></p></td>
@@ -129,20 +163,7 @@ Campaign Classic 不再支持以下操作系统。请参阅[兼容性矩阵](../
 
 ### Adobe Campaign 20.2 版 {#compat-20-2-release}
 
-从20.2版本开始，已弃用以下系统进行Campaign Classic。 兼容性将在20.3版本（2020年10月）中终止。
-
-* 客户端控制台：Windows 7
-* 旧版SMS连接器——请参阅已弃 [用的功能](#deprecated-features)
-* DB2 UDB 10.5 for联合数据访问(联合数据访问)
-
-### Adobe Campaign 19.2 版 {#compat-19-2-release}
-
-从 19.2 版本开始，Campaign Classic 不再支持以下操作系统。兼容性将于 2020 年结束时终止。
-
-* Web 服务器：Apache 2.2。
-* 操作系统：CentOS 6。
-
-请参阅[兼容性矩阵](../../rn/using/compatibility-matrix.md)，以升级到新版本或迁移到新系统。
+从20.2版开始，已弃用旧版SMS连接器。 请参阅 [已弃用功能部分](#deprecated-features)
 
 ## 兼容性终止 {#end-of-compatibility}
 
@@ -155,7 +176,7 @@ Campaign Classic 不再支持以下操作系统。请参阅[兼容性矩阵](../
 Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因为其编辑者已弃用它们。在其中某个版本上运行 Campaign 客户端控制台的客户需要在目标移除日期之前升级到最新版本。请参阅[兼容性矩阵](../../rn/using/compatibility-matrix.md)。
 
 * Windows Server 2003、2008、2008 R2
-* Windows XP、Vista
+* Windows 7、XP、Vista
 
 >[!NOTE]
 >从 Campaign 20.1版本开始，Campaign Classic 客户端控制台 32 位不再与 Campaign 最新版本兼容。您需要使用 64 位客户端控制台。
@@ -165,6 +186,7 @@ Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因
 
 从 19.1 版本开始，Adobe Campaign 不再与以下操作系统兼容。
 
+* CentOS 6了 [解更多](https://wiki.centos.org/Download)
 * Debian 7。[了解详情](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x。[了解详情](https://access.redhat.com/support/policy/updates/errata)
 * Windows Server 2008。[了解详情](https://support.microsoft.com/en-us/lifecycle/search/1163)
@@ -174,6 +196,7 @@ Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因
 
 从 19.1 Spring Release 开始，Adobe Campaign 不再与以下 Web 服务器兼容。
 
+* Apache 2.2.了解 [更多](https://httpd.apache.org/)
 * Microsoft IIS 7。[了解详情](https://support.microsoft.com/en-us/lifecycle/search/810)
 
 ### 工具 {#tools-eol}
@@ -191,7 +214,11 @@ Adobe 不支持以下数据库引擎，因为其编辑者已弃用它们。运�
 
 **联合数据访问 (FDA)**
 
-从19.1 Spring Release 开始，Adobe Campaign 不再与以下 FDA 兼容。
+从20.2版本开始，Adobe Campaign不再与以下联合数据访问服务器兼容：
+
+* DB2 UDB 10.5
+
+从19.1 Spring版本开始，Adobe Campaign不再与以下联合数据访问服务器兼容：
 
 * PostgreSQL 9.3。[了解详情](https://www.postgresql.org/support/versioning)
 * MySQL 5.5。[了解详情](http://www.fromdual.com/support-for-mysql-from-oracle)
