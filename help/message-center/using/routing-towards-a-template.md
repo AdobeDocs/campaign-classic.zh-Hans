@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: event-processing
 discoiquuid: 8fa464e6-3c88-441c-8179-0c54960469a7
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 12%
@@ -34,7 +34,6 @@ ht-degree: 12%
 
 默认情况下，路由基于以下信息：
 
-* 事件类型,
-* 要使用的渠道(默认情况下：电子邮件)、
-* 最新投放模板，基于发布日期。
-
+* 事件类型
+* 要使用的渠道(默认情况下：电子邮件)
+* 最新投放模板，基于发布日期
