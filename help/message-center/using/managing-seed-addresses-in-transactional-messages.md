@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 12e7043e-e8b5-48a9-8a2f-99e2e6040c3c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 11%
+source-wordcount: '193'
+ht-degree: 13%
 
 ---
 
@@ -46,13 +46,12 @@ ht-degree: 11%
 
    ![](assets/messagecenter_create_custo_001.png)
 
-## 创建多个种子地址 {#creating-several-seed-addresses}
-
+   <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
 1. 单击链 **[!UICONTROL Add other seed addresses]** 接，然后单击 **[!UICONTROL Add]** 按钮。
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
-1. 按照创建种子地址部分中详细介绍的 [种子地址配置步骤](#creating-a-seed-address) 。
+   <!--1. Follow the configuration steps for a seed address detailed in the [Creating a seed address](#creating-a-seed-address) section.-->
 1. 重复此过程以创建所需数量的地址。
 
    ![](assets/messagecenter_create_seedaddr_008.png)
