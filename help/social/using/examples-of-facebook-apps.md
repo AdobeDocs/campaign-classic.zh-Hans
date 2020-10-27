@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: annexes
 discoiquuid: 07be1d3c-b038-48ca-be37-a33adb8e0fc0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: a0ab8794bdbdfbe627bf33580dc8991793447336
 workflow-type: tm+mt
 source-wordcount: '1985'
 ht-degree: 1%
@@ -129,7 +129,7 @@ Facebook类型的Web应用程序示例详见：
 
 ## 如何获取风扇数据？ {#how-to-acquire-fan-data-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >遵守创建Facebook应用程序 [中详细的配置步骤](../../social/using/creating-a-facebook-application.md)。
 
@@ -250,7 +250,7 @@ Facebook类型的Web应用程序示例详见：
 
 1. 在字 **[!UICONTROL Mapping]** 段中，选择要进行对帐的模式。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >确保在投放映射中 **[!UICONTROL Social networks]** 正确输入选项卡的字段。 投放映射通过节点 **[!UICONTROL Administration > Campaign management > Target mappings]** 访问。
 
