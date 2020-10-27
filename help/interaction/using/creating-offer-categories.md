@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: a9fad813-3256-4a00-ba74-7dbaba9e8e23
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 4%
 
       ![](assets/offer_cat_create_004.png)
 
-   * 使用字段输入可用于从此优惠中选择类别的关键 **[!UICONTROL Themes]** 字。
+   * 使用字段输入可用于从此优惠中选择类别的关 **[!UICONTROL Themes]** 键字。
 
       ![](assets/offer_cat_create_005.png)
 
@@ -58,7 +58,7 @@ ht-degree: 4%
       >
       >调用优惠引擎时，只会选择主题或类别与参数匹配的目录部分。
 
-   * 您可以通过字段暂时“提升”给定时段内类别的优惠 **[!UICONTROL Multiplier weight]** 权重。
+   * 通过字段临时“提升”指定时段类别的优惠 **[!UICONTROL Multiplier weight]** 权重。
 
       ![](assets/offer_cat_create_006.png)
 
