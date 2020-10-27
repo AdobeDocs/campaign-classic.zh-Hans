@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 1%
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ### 概述 {#overview}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果您无权访问服务器和数据库(托管环境)，您将无法执行下面描述的过程。 请联系Adobe。
 
@@ -49,14 +49,14 @@ ht-degree: 1%
    >在Adobe Campaign环境中， **烧尾** 会结合使用操作，停止与外部交互的所有进程：日志、跟踪、投放、活动工作流等。\
    >必须执行此步骤，以避免多次传送消息(一次来自标称环境，另一次来自重复环境)。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >一个环境可以包含多个实例。 每个Adobe Campaign实例均需遵守许可合同。 检查您的许可协议，了解您可以拥有多少环境。\
    >通过以下过程，您可以传输环境，而不会影响已安装的环境和实例数。
 
 ### 开始之前 {#before-you-start}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >我们强烈建议在开始传输过程之前，为源目标和环境的所有实例运行数据库的完全备份。 这样，如果出现问题，您将能够恢复备份并返回初始配置。
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 
 必须谨慎执行以下步骤：复制源环境库时，某些进程可能仍在进行中。 烧灼（下面的步骤3）可防止消息发送两次并保持数据一致性。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* 以下过程在PostgreSQL语言中有效。 如果SQL语言不同（例如Oracle），则必须调整SQL查询。
 >* 以下命令在prod实例和PostgreSQL下 **的** dev实例 **的上下** 文中应用。
@@ -218,7 +218,7 @@ nlserver pdump
 
 ### 第8步——将选项和外部帐户导入目标环境(dev) {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >此步骤应仅启动Web进程。 如果不是这样，请在继续之前停止其他正在运行的进程
 
