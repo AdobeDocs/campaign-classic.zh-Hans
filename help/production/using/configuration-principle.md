@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: d08ff769-da93-4f86-8802-f0fb5b051ece
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 5%
@@ -28,7 +28,7 @@ Adobe Campaign平台基于实例的概念，类似于Apache使用的虚拟主机
 
 * 内部 **密码** :这是一般管理员密码。 它对特定应用程序服务器的所有实例都是通用的。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >要使用内部标 **识** 符登录，您需要事先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/campaign-server-configuration.md#internal-identifier)。
 
