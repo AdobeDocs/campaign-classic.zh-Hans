@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 1%
+source-wordcount: '1305'
+ht-degree: 2%
 
 ---
 
@@ -64,12 +64,13 @@ ht-degree: 1%
 
 * 对于Oracle **引擎** ，填充为应 **用程序服** 务器定义的TNS名称。
 * 对于 **PostgreSQL** 或 **DB2引擎** ，必须指定在应用程序服务器上定义的DNS名称（或IP地址）才能访问数据库服务器。
-* 对于 **Microsoft SQL Server** Engine，必须定义：
+* 对于 **Microsoft SQL Server** Engine，必须定义：应用程序服务器上定义的用于访问数据库服务器的DNS名称（或IP地址）: **DNS** 或 **DNS`\<instance>`** （实例模式）,
 
-   1. 应用程序服务器上定义的用于访问数据库服务器的DNS名称（或IP地址）: **DNS** 或 **DNS`\<instance>`** （实例模式）,
-   1. 用于访问Microsoft SQL Server的身份验证方法： **[!UICONTROL SQL Server authentication]** 或 **[!UICONTROL Windows NT authentication]**&#x200B;者
+   >[!CAUTION]
+   >
+   > 从20.3开始，Windows NT身份验证将停止使用。 **[!UICONTROL SQL Server authentication]** 现在是Microsoft SQL Server唯一可用的身份验证模式。 [阅读更多](../../rn/using/deprecated-features.md)
 
-      ![](assets/s_ncs_install_db_mssql_creation01.png)
+   ![](assets/s_ncs_install_db_mssql_creation01.png)
 
 ### 第2步——连接到服务器 {#step-2---connecting-to-the-server}
 
