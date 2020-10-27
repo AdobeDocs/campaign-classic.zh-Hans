@@ -1,7 +1,6 @@
 ---
 title: 常见问题
-seo-title: 常见问题
-description: Campaign Classic 常见问题解答
+description: Adobe Campaign Classic常见问题解答
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -11,17 +10,23 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 98%
+source-wordcount: '539'
+ht-degree: 87%
 
 ---
 
 
 # 常见问题{#common-questions}
 
-在使用 Campaign Classic 时需要帮助？请阅读下列 10 大问题，以及该页面中的其他常见问题。您也可以[观看教程视频](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/overview.html)和阅读 Campaign [入门指南](../../platform/using/tutorials.md#step-by-step-guides)，以了解核心概念。找不到答案？[咨询社区](https://forums.adobe.com/community/experience-cloud/marketing-cloud/campaign)。
+在使用 Campaign Classic 时需要帮助？请阅读下列 10 大问题，以及该页面中的其他常见问题。您还可以：
+
+* [观看教程视频](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/overview.html)
+* [浏览自助选项](../../platform/using/tutorials.md#how-to-videos)
+* [阅读入门和使用案例部分](../../platform/using/tutorials.md#step-by-step-guides)
+* 找不到答案？[询问专家](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+* 需要支持？ [参考活动帮助和支持选项](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
 
 ## 1. 如何将 Campaign 升级到最新版本？{#how-can-i-upgrade-campaign-to-the-latest-version-}
 
@@ -29,7 +34,7 @@ Adobe Campaign Classic 特别使用一系列技术来提供价值。这一技术
 
 如果您使用的是 Adobe Managed Services，则可以通过升级 Campaign Gold Standard 受益。如需详细信息，请参阅[本文](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
 
-[阅读本文](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)，了解如何更新环境并阅读有关此特定主题的[常见问题](https://helpx.adobe.com/cn/campaign/kb/build-upgrade-faq.html)。
+[阅读本节](../../production/using/build-upgrade.md) ，了解如何更新环境并阅读 [有关此特定](../../platform/using/faq-build-upgrade.md) 主题的常见问题。
 
 ## 2. 什么是数据库清理工作流？{#what-is-the-database-cleanup-workflow-}
 
