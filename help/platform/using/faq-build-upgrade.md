@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 1%
+source-wordcount: '2020'
+ht-degree: 2%
 
 ---
 
@@ -203,3 +203,10 @@ For more information, [refer to this document](https://helpx.adobe.com/cn/campai
    * 测试发送SMS
    * 如果已连接任何外部联合数据访问，请测试是否正在双向发送数据
    * 如果您使用Adobe Campaign-Adobe Experience Manager、Adobe Campaign-Adobe Analytics等集成，测试它们是否仍能正常工作
+
+**另请参阅**
+
+* [执行内部版本升级](../../production/using/build-upgrade.md)
+* [Campaign Classic发行说明](../../rn/using/rn-overview.md)
+* [Campaign Classic的帮助和支持选项](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [金本位项目](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)
