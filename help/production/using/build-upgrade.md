@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 8ec525f400c29b986eadd888d29f1579860871c6
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2355'
 ht-degree: 0%
 
 ---
@@ -209,10 +209,10 @@ ht-degree: 0%
 
 在安装Adobe Campaign应用程序服务器(nlserverweb)的计算机上，下载并复制文件：
 
+```
+Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
+```
 
-    &quot;
-    [应用程序路径]\datakit\nl\en\jsp中的Setup-client-7.xxxx.exe
-    &quot;
 
 下次连接客户端控制台时，将显示一个窗口通知用户有新更新的可用性，并优惠用户下载和安装该更新的可能性。
 
@@ -344,7 +344,7 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log文件包含同步结果
 * 将不升级对象
 * 长期影响：版本不兼容，客户将不会从错误修复中受益。
 
->[!CAUTION]
+>[!IMPORTANT]
 >强烈建议解决冲突。
 
 
@@ -408,7 +408,7 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log文件包含同步结果
 1. 在测试环境中执行
 
 
->[!CAUTION]
+>[!IMPORTANT]
 >执行复杂合并需要具备开发技能。
 
 
