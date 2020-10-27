@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ![](assets/ncs_cleanup_scheduler.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >要使工作流 **[!UICONTROL Database cleanup]** 在调度程序中定义的日期和时间开始，必须启动工作流引擎(wfserver)。 如果不是这样，数据库清理直到下次启动工作流引擎才会发生。
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 在工作流调度程序中定义的日期和时间(请参 [阅调度程序](#the-scheduler)),工作流引擎将开始数据库清除过程。 数据库清理连接到数据库，并按如下所示的顺序执行任务。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >如果其中一个任务失败，则不会执行下列操作。\
 >具有LIMIT属性 **的SQL查询** ，将重复执行，直到处理所有信息。
