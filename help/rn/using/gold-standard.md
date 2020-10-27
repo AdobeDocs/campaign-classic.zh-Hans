@@ -1,6 +1,6 @@
 ---
 title: Gold Standard 发行
-description: Gold Standard 发行
+description: Campaign Classic金标发行说明
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '820'
 ht-degree: 15%
 
 ---
@@ -20,15 +20,13 @@ ht-degree: 15%
 
 # Gold Standard 发行{#gold-standard}
 
-作为金标用户，您无需采取任何操作，即可通过最新稳定版本自动从金标升级中受益。
+Gold Standard是Campaign Classic长期支持版本。 作为金标用户，您无需采取任何操作，即可通过最新稳定版本自动从金标升级中受益。 内部部署和混合型客户还可以从Gold Standard版本中受益。
 
-内部部署和混合型客户还可以从Gold Standard版本中受益。
-
-这是我们的长期支持版本。 如果您从旧版本进行迁移，我们建议您先升级到此版本。
+如果您从旧版本进行迁移，我们建议您先升级到此版本。
 
 本页列表Gold Standard版本。
 
-有关Gold Standard升级的详细信息，请参阅本 [文](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
+有关活动金本位项目的详细信息，请 [参阅本文](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
 
 ## ![](assets/do-not-localize/green_2.png) 金标10版{#gs-10}
 
@@ -40,7 +38,7 @@ _2020年7月7日_
 
 >[!CAUTION]
 >
->我们建议您使用此版本中提供的客户端控制台进行升级。 Refer to this [page](../../installation/using/installing-the-client-console.md)
+>我们建议您使用此版本中提供的客户端控制台进行升级。 Refer [to this page](../../installation/using/installing-the-client-console.md)
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 9版{#gs-9}
 
@@ -50,7 +48,7 @@ _2020年6月22日_
 
 * iOS HTTP2连接器已得到改进（第三方更新和错误管理）。 (NEO-25904、NEO-25903、NEO-25799)
 
-以下修复与跟踪链接安全机制相关(请参阅安全 [和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)):
+以下修复与跟踪链接安全机制相关(请参阅安全和隐私核对 [清单了解更多](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)):
 
 * 修复了导致跟踪“通知单击”无法正常工作的问题（iOS和Android推送通知）。 (NEO-25965)
 * 修复了在使用某些旧版Outlook时无法打开／单击跟踪URL的问题。  (NEO-25688)
@@ -68,7 +66,7 @@ _2020年4月29日_
 
 >[!CAUTION]
 >
->如果您在使用跟踪链接的推送通知或使用锚点标记的投放时遇到问题，建议您禁用用于跟踪链接的新签名机制。 该过程在此页中详 [细](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+>如果您在使用跟踪链接的推送通知或使用锚点标记的投放时遇到问题，建议您禁用用于跟踪链接的新签名机制。 该过程在本 [页中详述](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
 
 * 修复了一个问题，该问题可能会阻止图像显示在行投放上。 (NEO-23207)
 * 修复了&#x200B;**文件传输**&#x200B;活动的问题，该问题导致基于 SFTP 密钥的身份验证无法在 Debian 9 上工作。(NEO-23183)
