@@ -1,8 +1,6 @@
 ---
-title: 安装 Campaign Classic 标准包
-seo-title: 安装 Campaign Classic 标准包
-description: 安装 Campaign Classic 标准包
-seo-description: null
+title: 安装Campaign Classic内置包
+description: 了解如何安装活动内置包
 page-status-flag: never-activated
 uuid: 1cba9487-52fc-442f-ae99-f8a2c157f25e
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 6%
+source-wordcount: '1154'
+ht-degree: 5%
 
 ---
 
@@ -52,7 +50,7 @@ ht-degree: 6%
 
 ### 列表现成包 {#list-of-standard-packages}
 
-下表列表了所有标准包及其说明、可安装的实例类型（Marketing、Mid等）。 和其他信息。
+下表列表了所有活动内置包。
 
 <table> 
  <thead> 
@@ -80,17 +78,17 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> 优惠引擎（交互）<br /> </td> 
-   <td> 在与给定联系人(客户或目标)的交互过程中，通过使其成为单个或多个调整的优惠进行实时响应。  可选。<a href="../../interaction/using/interaction-and-offer-management.md">了解更多</a> <br /> </td> 
+   <td> 在与给定联系人(客户或目标)的交互过程中，通过使其成为单个或多个调整的优惠进行实时响应。  可选。<a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
    <td> 控制优惠引擎和执行实例。 可选。<br /> </td> 
-   <td> </td> 
+   <td> 要安装在控制实例上的优惠引擎（交互）的包。 <a href="../../interaction/using/distributed-architectures.md#packages-configuration">了解更多</a> </td> 
    <td> 营销<br /> </td>  
   </tr> 
   <tr> 
    <td> 优惠引擎，执行实例。 可选。<br /> </td> 
-   <td> </td> 
+   <td> 要安装在执行实例上的优惠引擎（交互）的包。 <a href="../../interaction/using/distributed-architectures.md">了解更多</a> </td> 
    <td> 执行中 <br /> </td>  
   </tr> 
   <!--tr> 
@@ -200,13 +198,13 @@ ht-degree: 6%
    <td> 营销</td> 
   </tr> 
   <tr> 
-   <td> Adobe Marketing Cloud共享受众集成<br /> </td> 
+   <td> Adobe Experience Cloud共享受众集成<br /> </td> 
    <td> 允许您与Adobe Experience Cloud解决方案和核心服务交换和共享受众/细分。 需要IMS <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> 与Adobe Marketing Cloud集成<br /> </td> 
-   <td> 使您能够将受众/细分从不同的Adobe Marketing Cloud解决方案导入和导出到Adobe Campaign。 可选。<a href="../../integrations/using/configuring-ims.md#installing-the-package">了解更多</a> </td> 
+   <td> Integration with Adobe Experience Cloud<br /> </td> 
+   <td> 使您能够将受众/细分从不同的Adobe Experience Cloud解决方案导入和导出到Adobe Campaign。 可选。<a href="../../integrations/using/configuring-ims.md#installing-the-package">了解更多</a> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
@@ -223,6 +221,11 @@ ht-degree: 6%
    <td> 中间源平台<br /> </td> 
    <td> 此配置是托管(ASP)配置和内部化之间的最佳中间解决方案。 所述朝外执行组件在托管于Adobe Campaign的“中间源”服务器上执行。 可选。<a href="../../installation/using/mid-sourcing-server.md">了解更多</a> <br /> </td> 
    <td> 中间源 </td> 
+  </tr> 
+  <tr> 
+   <td> AMP支持<br /> </td> 
+   <td> 使您能够使用新的交互式AMP进行电子邮件格式并发送动态电子邮件。 可选。<a href="../../delivery/using/defining-interactive-content.md">了解更多</a> <br /> </td> 
+   <td> 所有 </td> 
   </tr> 
   <tr> 
    <td> ACS Connector<br /> </td> 
