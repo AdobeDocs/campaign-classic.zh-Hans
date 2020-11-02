@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1572'
 ht-degree: 3%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 # 定义互动内容{#defining-interactive-content}
 
-Adobe Campaign使您能够试用新的交 [互式AMP for Email](https://amp.dev/about/email/) ，该格式允许在特定条件下发送动态电子邮件。
+Adobe Campaign使您能够使用新的交 [互式AMP for Email](https://amp.dev/about/email/) ，该格式允许您在特定条件下发送动态电子邮件。
 
-目前，使用AMP for Email，您可以：
+使用AMP for Email，您可以：
 * 测试向正确配置的特定地址传送AMP电子邮件。
 * 向相应提供商注册后，将AMP电子邮件发送到Gmail、Outlook或Mail.ru地址。
 
