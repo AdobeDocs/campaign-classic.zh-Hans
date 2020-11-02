@@ -10,44 +10,44 @@ content-type: reference
 topic-tags: campaign-integrations
 discoiquuid: 0af1fd96-48ef-43c9-a03b-0f9a6e0e02fe
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 12%
+source-wordcount: '783'
+ht-degree: 9%
 
 ---
 
 
-# 关于 Campaign 集成 {#about-campaign-integrations}
+# Get started with Adobe Campaign integrations {#about-campaign-integrations}
 
 Adobe Experience Cloud是一套全面的一流集成解决方案，构建于一个具有一套强大核心服务的公共数据平台上。
 
 了解Adobe Campaign与Adobe Experience Cloud解决方案及核心服务 [之间的功](https://docs.adobe.com/content/help/en/core-services/interface/marketing-cloud-integrations.html) 能 [集成](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html)。 然后，您可以现代化解决方案实施并实施Experience Cloud，以便能够使用客户属性和受众等功能。
 
-本节提供可与Adobe集成的完整列表解决方案和核心服务以及相关文 [档](#experience-cloud-integrations)。
-
 ![](assets/ExCloud-solutions.png)
 
+本节提供可与Adobe集成的完整列表解决方案和核心服务以及相关文 [档](#experience-cloud-integrations)。
 
 >[!CAUTION]
 >
->大多数这些集成都需要通过Adobe ID(IMS)登录。 For more on this implementation, refer to [this page](../../integrations/using/about-adobe-id.md).
->
->请注意，IMS实施是一个复杂的过程，可能很长。 它严格保留给Adobe技术管理员。
+>这些集成中的大多数都需要实施AdobeIdentity Management系统(IMS)，才能通过Adobe ID登录。 [在本页中了解更多信息](../../integrations/using/about-adobe-id.md)。
+
 
 ## 关联您的解决方案 {#working-with-experience-cloud-solutions}
 
-根据您的环境，可以将多个解决方案链接到Adobe Experience Cloud。 它们作为组织链接。 An **organization** is the entity that enables an administrator to configure groups and users, and to control single sign-on in the Experience Cloud. 组织的功能类似于跨所有 Experience Cloud 产品和解决方案的登录公司。大多数情况下，组织是您的公司名称。但是，公司可以有许多组织。
+可以将多个解决方案与Adobe Experience Cloud关联。 The **organization** is the customer entity that enables an administrator to configure groups and users, and to control single sign-on (SSO) in Adobe Experience Cloud. 该组织的工作方式类似于跨所有Experience Cloud产品和解决方案的登录公司。 大多数情况下，组织是您的公司名称。但是，公司可以有许多组织。
 
 Adobe Experience Cloud帐户的组织管理和关联在Adobe Experience Cloud帮 [助门户中详细介绍](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/manage-users-and-products/organizations.html)。
 
->[!CAUTION]
->
->新安装Adobe Campaign或将现有安装与Adobe Experience Cloud集成时， [将启用Experience Cloud](https://docs.adobe.com/content/help/en/id-service/using/home.html) ID服务。 此服务取代了首先由Adobe Campaign跟踪功能使用的永久cookie。
->
->随后将为生成访客的收件人分配唯一的跟踪日志ID。 此ID将保存在表 **[!UICONTROL Requester UUID (@sourceID)]** 的字段 **[!UICONTROL nms:trackingLogRcp]** 中。 因此，在实施收件人ID服务之前存在的访客的跟踪数据将不再可用。
->
->随后，ID将被具有相同CNAME的其他Adobe Experience Cloud解决方 [案识别](https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/cname.html)。
+## 身份和cookie管理 {#id-and-cookies}
+
+安装Adobe Campaign或将现有安装与Adobe Experience Cloud集成时，将启 [用Adobe Experience Cloud身](https://docs.adobe.com/content/help/en/id-service/using/home.html) 份服务。 此服务取代了首先由Adobe Campaign跟踪功能使用的永久cookie。
+
+Adobe Experience Cloud标识服务（ID服务）提供通用的永久ID，用于在Experience Cloud中的所有解决方案中标识您的访客。
+
+唯一访客ID将分配给生成跟踪日志的收件人。 此ID将保存在表 **[!UICONTROL Requester UUID (@sourceID)]** 的字段 **[!UICONTROL nms:trackingLogRcp]** 中。 **因此，在实施收件人ID服务之前存在的访客的跟踪数据将不再可用**。
+
+随后，ID将被具有相同CNAME的其他Adobe Experience Cloud解决方 [案识别](https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/cname.html)。
 
 ## Experience Cloud 集成 {#experience-cloud-integrations}
 
@@ -62,11 +62,11 @@ Adobe Experience Cloud帐户的组织管理和关联在Adobe Experience Cloud帮
  </thead> 
  <tbody> 
   <tr> 
-   <td> <strong>Adobe实时客户数据平台</strong><br /> </td> 
-   <td> Adobe Campaign与Adobe实时客户数据平台之间的集成使您能够共享细分数据并将受众导入Adobe Campaign。<br /> <p><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html">进一步了解活动</a> -Adobe实时客户数据平台集成。</p><br /> </td> 
+   <td> <strong>Adobe实时客户数据平台(RTCDP)</strong><br /> </td> 
+   <td> Adobe Campaign与Adobe实时客户数据平台(RTCDP)之间的集成使您能够共享细分数据并将受众导入Adobe Campaign。<br /> <p><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html">进一步了解活动</a> -Adobe实时客户数据平台集成。</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>IMS -Adobe ID</strong><br /> </td> 
+   <td> <strong>AdobeIdentity Management系统(IMS)-Adobe ID</strong><br /> </td> 
    <td> 允许您与其他Adobe Experience Cloud解决方案的Adobe Campaign连接到相同的Adobe ID。<br /> Adobe ID必须用于登录才能使用与Adobe Experience Cloud集成相关的特定功能，特别是核心服务。<br /> <p><a href="../../integrations/using/about-adobe-id.md">进一步了解</a> “用Adobe Campaign实施Adobe ID”。</p><br /> </td> 
   </tr> 
   <tr> 
