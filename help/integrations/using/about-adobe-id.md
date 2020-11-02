@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 31%
@@ -27,7 +27,7 @@ ht-degree: 31%
 * 密码管理策略更安全。
 * 使用联合 ID 帐户（外部 ID 提供商）。
 
-AdobeIMS(Identity Management系统)帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的AdobeID的详细信息，请参 [阅本页](https://helpx.adobe.com/enterprise/using/identity.html)。
+AdobeIdentity Management系统(IMS)帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的AdobeID的详细信息，请参 [阅本页](https://helpx.adobe.com/enterprise/using/identity.html)。
 
 >[!IMPORTANT]
 >
