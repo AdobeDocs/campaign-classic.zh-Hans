@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 95%
 
 ## 在内部部署环境与托管环境中工作有何不同？{#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
-Adobe Campaign Classic 随附了一组模块和选项。The availability of these modules and their configuration can depend on the [type of deployment](../../installation/using/hosting-models.md) of your installation: hosted (Managed Services), hybrid or on-premise.
+Adobe Campaign Classic 随附了一组模块和选项。这些模块及其配置的可用性可能取决于安装的[部署类型](../../installation/using/hosting-models.md)：托管（托管服务）、混合或本地。
 
 [单击此处了解更多信息](../../installation/using/capability-matrix.md)。
 
@@ -65,7 +65,7 @@ Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数�
 
 请参阅[此部分](../../platform/using/adobe-campaign-workspace.md)，了解有关 Adobe Campaign 工作区基本知识的更多信息。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现活动工作区](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [在视频中发现 Campaign 工作区](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## 如何选择邮件的受众？{#how-can-i-select-the-target-population-of-my-messages-}
 
