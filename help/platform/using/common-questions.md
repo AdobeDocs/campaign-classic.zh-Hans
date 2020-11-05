@@ -1,6 +1,6 @@
 ---
 title: 常见问题
-description: Adobe Campaign Classic常见问题解答
+description: Adobe Campaign Classic 常见问题解答
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '539'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 87%
 
 * [观看教程视频](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/overview.html)
 * [浏览自助选项](../../platform/using/tutorials.md#how-to-videos)
-* [阅读入门和使用案例部分](../../platform/using/tutorials.md#step-by-step-guides)
-* 找不到答案？[询问专家](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
-* 需要支持？ [参考活动帮助和支持选项](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
+* [阅读入门和用例部分](../../platform/using/tutorials.md#step-by-step-guides)
+* 找不到答案？[咨询专家](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+* 需要支持？[参考 Campaign 帮助和支持选项](https://helpx.adobe.com/cn/campaign/kb/ac-support.html#acc-support)
 
 ## 1. 如何将 Campaign 升级到最新版本？{#how-can-i-upgrade-campaign-to-the-latest-version-}
 
@@ -34,7 +34,7 @@ Adobe Campaign Classic 特别使用一系列技术来提供价值。这一技术
 
 如果您使用的是 Adobe Managed Services，则可以通过升级 Campaign Gold Standard 受益。如需详细信息，请参阅[本文](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
 
-[阅读本节](../../production/using/build-upgrade.md) ，了解如何更新环境并阅读 [有关此特定](../../platform/using/faq-build-upgrade.md) 主题的常见问题。
+[阅读此部分](../../production/using/build-upgrade.md)以了解如何更新环境，并阅读有关此特定主题的[常见问题](../../platform/using/faq-build-upgrade.md)。
 
 ## 2. 什么是数据库清理工作流？{#what-is-the-database-cleanup-workflow-}
 
@@ -72,7 +72,7 @@ Adobe Campaign 提供了一组仪表板和工具来监视电子邮件投放。
 
 您可在[此页面](https://docs.adobe.com/content/help/zh-Hans/campaign-classic/using/release-notes/latest-release.html)中访问最新的 Campaign Classic 版本说明。
 
-## 9. What is the procedure for domain configuration? {#what-is-the-procedure-for-domain-delegation-}
+## 9. 域配置的过程是怎样的？{#what-is-the-procedure-for-domain-delegation-}
 
 子域是域的一个分支，可用于隔离您的品牌或各种类型的流量（交易消息、营销信息等）。Adobe 使用域名系统 (DNS) 的帐户进行电子邮件投放，让客户端使用带有其域名的 DNS 别名维护品牌形象，Adobe 将自主实施所有技术最佳实践，在发送电子邮件期间优化投放效果。
 
