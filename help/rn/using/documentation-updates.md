@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 54ac5abcc53c41d025238a3c89f9d732c0fb1376
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '3905'
-ht-degree: 82%
+ht-degree: 99%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 82%
 
 ## 2020 年 10 月 {#oct-2020}
 
-**20.3版本中包含的新功能**
+**20.3 版本中包含的新功能**
 
-iOS的推送通知改进——阅 [读更多](../../delivery/using/configuring-the-mobile-application.md)
+iOS 的推送通知改进 - [阅读更多](../../delivery/using/configuring-the-mobile-application.md)
 
-Android的推送通知改进——阅 [读更多](../../delivery/using/configuring-the-mobile-application-android.md)
+Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-the-mobile-application-android.md)
 
 **随版本提供的其他文档更新**
 
@@ -38,48 +38,48 @@ Android的推送通知改进——阅 [读更多](../../delivery/using/configuri
 
 更新了已弃用和已删除的功能页面。[阅读更多](../../rn/using/deprecated-features.md)
 
-Gold Standard版本的发行说明和兼容性列表现在可在专用部分中找到。
+Gold Standard 版本的发行说明和兼容性矩阵现在可在专用部分中获取。
 [阅读更多](../../rn/using/gold-standard.md#gs-10)。
 
-最初基于oAUTH身份验证设置进行的触发器集成，现在已更改并移至AdobeI/O。 [阅读更多](../../integrations/using/about-triggers.md)
+Triggers integration originally based on oAUTH authentication setup to access pipeline has now been changed and moved to Adobe I/O. [Read more](../../integrations/using/configuring-adobe-io.md)
 
 **其他更新**
 
-文档页面已更新，以反映Tomcat 8更新。
+已更新文档页面，以反映 Tomcat 8 更新。
 
-详细信息已添加到“获取Adobe Campaign版本”部分的“关于”框说明中。 [阅读更多](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
+已在“获取 Adobe Campaign 版本”部分的“关于”框说明中添加了详细信息。[阅读更多](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
-在“更新Adobe Campaign Classic”部分添加了执行内部版本升级的准则。 阅读更多 [阅读更多](../../production/using/build-upgrade.md)
+已向“更新 Adobe Campaign Classic”部分中添加了执行内部版本升级的准则。阅读更多 [阅读更多](../../production/using/build-upgrade.md)
 
-关于活动构建升级的常见问题解答已添加到活动常见问题中。 阅读更多 [阅读更多](../../platform/using/faq-build-upgrade.md)
+已向 Campaign 常见问题部分中添加了关于 Campaign 内部版本升级的常见问题解答。阅读更多 [阅读更多](../../platform/using/faq-build-upgrade.md)
 
-活动内部预置、托管和混合托管模型现在在专用部分中进行说明。 [阅读更多](../../installation/using/hosting-models.md)
+现在，在专用部分中对 Campaign 本地、托管和混合托管模型进行说明。[阅读更多](../../installation/using/hosting-models.md)
 
-已在《安装指南》中更新并移动每个托管模型的活动能力矩阵。 [阅读更多](../../installation/using/capability-matrix.md)
+已在《安装指南》中更新并移动每个托管模型的 Campaign 功能矩阵。[阅读更多](../../installation/using/capability-matrix.md)
 
-活动报告高级功能部分已得到改进，可详细说明如何在自定义报告中使用URL参数和变量。 [阅读更多](../../reporting/using/advanced-functionalities.md)
+“Campaign 报告高级功能”部分已得到改进，以详细说明如何在自定义报告中使用 URL 参数和变量。[阅读更多](../../reporting/using/advanced-functionalities.md)
 
-报表属性页面已重新组织并进行了丰富，以便于配置。 [阅读更多](../../reporting/using/properties-of-the-report.md)
+报告属性页面已重组并进行了丰富，以促进配置。[阅读更多](../../reporting/using/properties-of-the-report.md)
 
-新技术已经被创建，其中包含如何从传统二进制协议迁移到基于HTTP/2的APNs提供程序API的详细信息。 [阅读更多](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
+已使用有关如何从旧版二进制协议迁移到基于 HTTP/2 的 APNs 提供程序 API 的详细信息来创建新的技术说明。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)
 
 ## 2020 年 9 月 {#september-2020}
 
-已添加注释，以指定“有效用户档案”计数仅适用于Marketing实例。 [阅读更多](../../platform/using/about-profiles.md#active-profiles)
+已添加注释来指定“有效用户档案”计数仅适用于营销实例。[阅读更多](../../platform/using/about-profiles.md#active-profiles)
 
-已添加有关模式版本的新示例，以将字段链接到现有引用表。 [阅读更多](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+已添加有关模式版本的新示例来将字段链接到现有引用表。[阅读更多](../../configuration/using/examples-of-schemas-edition.md#uc-link)
 
-增加了关于在投放中对种子地址使用额外数据的说明。 [阅读更多](../../delivery/using/creating-seed-addresses.md#defining-addresses)
+已添加关于在投放中对种子地址使用额外数据的说明。[阅读更多](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## 2020 年 8 月 {#aug-2020}
 
-通过专门的章节了解与投放设计和与活动一起发送相关的最佳实践。 [阅读更多](../../delivery/using/delivery-best-practices.md)
+通过专用部分了解与使用 Campaign 进行投放设计和发送相关的最佳实践。[阅读更多](../../delivery/using/delivery-best-practices.md)
 
-改进了“交付能力”最佳做法登陆页，以便访问各分节。 [阅读更多](../../delivery/using/deliverability-key-points.md)
+改进了“投放能力”最佳实践登陆页，以促进访问各个子部分。[阅读更多](../../delivery/using/deliverability-key-points.md)
 
-操作方法视频现在可用于以下主题：
+现在，可在以下主题中获取操作方法视频：
 
-* [如何利用类型规则和预定义过滤器建立疲劳管理](../../campaign/using/about-campaign-typologies.md)
+* [如何使用类型学规则和预定义过滤器设置疲劳管理](../../campaign/using/about-campaign-typologies.md)
 
 * [如何在活动中创建电子邮件](../../campaign/using/marketing-campaign-deliveries.md)
 
@@ -87,46 +87,46 @@ Gold Standard版本的发行说明和兼容性列表现在可在专用部分中�
 
 * [如何配置和部署投放模板](../../delivery/using/creating-a-delivery-template.md)
 
-* [如何激活和使用AMP处理电子邮件](../../delivery/using/defining-interactive-content.md)
+* [如何激活和使用 AMP 处理电子邮件](../../delivery/using/defining-interactive-content.md)
 
 * [如何使用动态内容块个性化电子邮件](../../delivery/using/personalization-blocks.md)
 
 * [如何使用个性化字段个性化电子邮件](../../delivery/using/personalization-fields.md)
 
-* [如何在电子邮件中管理种子和验证](../../delivery/using/steps-defining-the-target-population.md)
+* [如何通过电子邮件管理种子和验证](../../delivery/using/steps-defining-the-target-population.md)
 
-* [如何设置重复投放](../../workflow/using/recurring-delivery.md)
+* [如何设置循环投放](../../workflow/using/recurring-delivery.md)
 
 * [如何设置连续投放](../../workflow/using/continuous-delivery.md)
 
-在连接到FTP服务器后，收到“无法解析主机名”错误时，要执行的检查和操作中已添加信息。 [阅读更多](../../platform/using/sftp-server-usage.md)
+已添加有关在连接到 FTP 服务器后收到“无法解析主机名”错误时要执行的检查和操作的信息。[阅读更多](../../platform/using/sftp-server-usage.md)
 
-在工作流用例的列表中引用了 [新的用例](../../workflow/using/about-workflow-use-cases.md):
+已在[工作流用例](../../workflow/using/about-workflow-use-cases.md)列表中引用新用例：
 
-* 内容创建、编辑和发布自动化
-* 在发送收件人之前设置投放批准流程
+* 自动完成内容创建、编辑和发布
+* 在发送投放之前设置收件人审批流程
 * 在查询中调用实例变量
-* 对人口应用分解百分比
+* 对总体应用分割百分比
 
-活动 **[!UICONTROL AND-join]** 一节已丰富了关于其使用情况的更多信息，并有关于变量使用情况的说明。 [阅读更多](../../workflow/using/and-join.md)
+**[!UICONTROL AND-join]** 活动部分已使用有关其使用情况的更多信息以及关于变量的使用说明进行了扩充。[阅读更多](../../workflow/using/and-join.md)
 
 ## 2020 年 7 月 {#july-2020}
 
-一个关于如何使用增量列表自动更新查询的用例已添加到工作流用例中。 [阅读更多](../../workflow/using/about-workflow-use-cases.md)
+已向工作流用例中添加了有关如何使用增量查询自动更新列表的用例。[阅读更多](../../workflow/using/about-workflow-use-cases.md)
 
-“发 [行说明](../../rn/using/latest-release.md) ”已重新组织：已添 [加概述页](../../rn/using/latest-release.md) ，其中包含有关构建状态、升级过程、建议和重要链接的信息。 此外，还添加了 [Gold Standard版本](../../rn/using/gold-standard.md) 的专用页面，并集 [成了兼容性](../../rn/using/compatibility-matrix.md) 矩阵。
+[发行说明](../../rn/using/latest-release.md)已重组：添加了[概述页面](../../rn/using/latest-release.md)，其中包含有关生成状态、升级过程、建议和重要链接的信息。此外，还添加了 [Gold Standard 版本](../../rn/using/gold-standard.md)的专用页面，并集成了[兼容性矩阵](../../rn/using/compatibility-matrix.md)。
 
-新增了一节，其中载有与Campaign Classic监测相关的准则。 [阅读更多](../../production/using/monitoring-guidelines.md)
+已添加新部分，其中包含与 Campaign Classic 监控相关的准则。[阅读更多](../../production/using/monitoring-guidelines.md)
 
-“隐私和同意”部分已得到增强，其中包含更详细的信息和有用的链接。 [阅读更多](../../platform/using/privacy-and-recommendations.md)。
+“隐私和同意”部分已得到增强，其中包含更多详细信息和有用的链接。[阅读更多](../../platform/using/privacy-and-recommendations.md)。
 
-“Campaign Classic中的隐私管理”页面已更新，其中包含有关“规定”字段的信息，现在在使用允许设置自动隐私请求流程的API时，该字段可用。 [阅读更多](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+“Campaign Classic 中的隐私管理”页面已更新，其中包含有关“规定”字段的信息，现在在使用允许设置自动隐私请求流程的 API 时，该字段可用。[阅读更多](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
 “隐私管理概述”页面已更新，包含有关泰国的个人数据保护法 (PDPA) 和巴西的 Lei Geral de Proteção de Dados(LGPD) 的信息。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
 
-已在子工作流日志和行为中添加信息，以防出错。 [阅读更多](../../workflow/using/sub-workflow.md)
+已添加有关子工作流日志和行为的信息，以防出错。[阅读更多](../../workflow/using/sub-workflow.md)
 
-最佳实践已添加到“ **[!UICONTROL Scheduler]** 活动”部分。 [阅读更多](../../workflow/using/scheduler.md)
+已在 **[!UICONTROL Scheduler]** 活动部分中添加最佳实践。[阅读更多](../../workflow/using/scheduler.md)
 
 ## 2020 年 6 月 {#june-2020}
 
@@ -134,11 +134,11 @@ Gold Standard版本的发行说明和兼容性列表现在可在专用部分中�
 
 在如何使用控制面板和活动工作流[加密](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)和[解密](../../workflow/using/importing-data.md#use-case-gpg-decrypt)数据方面添加了用例。
 
-The Experience Cloud Triggers and Adobe Campaign Classic integration page has been moved [here](../../integrations/using/about-triggers.md).
+Experience Cloud Triggers 和 Adobe Campaign Classic 集成页面已移至[此处](../../integrations/using/about-triggers.md)。
 
-## july 2020 {#release-20-2}
+## 2020 年 7 月 {#release-20-2}
 
-**20.2版本中包含的新功能**
+**20.2 版本中包含的新功能**
 
 支持表情符号 - [阅读更多](../../delivery/using/customizing-emoticon-list.md)
 
@@ -224,7 +224,7 @@ Adobe Campaign 增强 MTA 文章已更新。现在只适用于 Campaign Classic�
 
 ## 2020 年 1 月 {#release-20-1}
 
-**20.1版本中包含的新功能**
+**20.1 版本中包含的新功能**
 
 Snowflake FDA 连接器 - [阅读更多](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
 
@@ -252,7 +252,7 @@ Hadoop FDA 连接器增强 - [阅读更多](../../platform/using/specific-config
 
 [此处](../../reporting/using/properties-of-the-report.md#defining-additional-settings)记录了 URL 报告配置的新参数。
 
-**Campaign Classic 本地和托管功能矩阵**&#x200B;页面已更新新的 FDA 连接器。[阅读更多](../../installation/using/capability-matrix.md).
+**Campaign Classic 本地和托管功能矩阵**&#x200B;页面已更新新的 FDA 连接器。[阅读更多](../../installation/using/capability-matrix.md)。
 
 **Campaign Classic 功能矩阵**&#x200B;页面已更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 
@@ -292,7 +292,7 @@ FDA 矩阵页面已移到[此处](../../platform/using/remote-database-access-ri
 
 描述如何使用 AMP 定义交互式内容的部分已被移动。[阅读更多](../../delivery/using/defining-interactive-content.md)
 
-**19.2版本中包含的新功能**
+**19.2 版本中包含的新功能**
 
 加利福尼亚消费者隐私法 (CCPA) - [阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)
 
@@ -364,7 +364,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 ## 2019 年 5 月 {#release-19-1}
 
-**19.1版本中包含的新功能**
+**19.1 版本中包含的新功能**
 
 控制面板 - [阅读更多](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
 
@@ -406,7 +406,7 @@ Apache 配置步骤已更新。[阅读更多](https://docs.campaign.adobe.com/do
 
 子工作流活动部分新增了使用示例。[阅读更多](../../workflow/using/sub-workflow.md)
 
-Campaign Classic [本地和托管功能矩阵页面已更新](../../installation/using/capability-matrix.md) ，其中包含与电子邮件密送相关的信息。
+[Campaign Classic 本地和托管功能矩阵](../../installation/using/capability-matrix.md)页面已更新，其中包含与电子邮件密件抄送相关的信息。
 
 事务性消息文档已更新，包含有关模板发布的说明。[阅读更多](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
