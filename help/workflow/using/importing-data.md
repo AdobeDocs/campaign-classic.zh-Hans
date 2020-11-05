@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: e53af1c2-b50c-4a8c-b5b8-f23a85bd3211
 translation-type: tm+mt
-source-git-commit: b04d802ce1041aecbb60aeeabbd35b1d78c2451d
+source-git-commit: 1e6ef4a3924e2cab0e6baf06e0861620e17d240b
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 0%
@@ -272,8 +272,6 @@ Adobe Campaign允许您导入压缩或加密文件。 在数据加载（文件�
    ![](assets/gpg_generate.png)
 
 1. 在外部系统中，使用从控制面板下载的公钥加密要导入到Campaign Classic的数据。
-
-   ![](assets/gpg_external.png)
 
 1. 在Campaign Classic中，构建一个工作流以导入加密数据，并使用通过控制面板安装的私钥对其进行解密。 为此，我们将按如下方式构建工作流：
 
