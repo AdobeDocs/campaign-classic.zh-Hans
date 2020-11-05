@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: ba5e815dd1576b55d9b3226639680f6358137f13
+source-git-commit: 54ac5abcc53c41d025238a3c89f9d732c0fb1376
 workflow-type: tm+mt
-source-wordcount: '3882'
-ht-degree: 83%
+source-wordcount: '3905'
+ht-degree: 82%
 
 ---
 
@@ -40,6 +40,8 @@ Android的推送通知改进——阅 [读更多](../../delivery/using/configuri
 
 Gold Standard版本的发行说明和兼容性列表现在可在专用部分中找到。
 [阅读更多](../../rn/using/gold-standard.md#gs-10)。
+
+最初基于oAUTH身份验证设置进行的触发器集成，现在已更改并移至AdobeI/O。 [阅读更多](../../integrations/using/about-triggers.md)
 
 **其他更新**
 
