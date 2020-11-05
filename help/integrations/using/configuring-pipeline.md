@@ -1,8 +1,6 @@
 ---
-title: 配置集成
-seo-title: 配置集成
-description: 配置集成
-seo-description: null
+title: 配置管道
+description: 了解如何配置管道
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
+source-git-commit: f3caef21a269cf57624a07bfe1b4bf1e241061a6
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 1%
+source-wordcount: '911'
+ht-degree: 0%
 
 ---
 
@@ -32,17 +30,17 @@ ht-degree: 1%
 
 ## 先决条件{#prerequisites}
 
-在活动 [!DNL Experience Cloud Triggers] 中使用需要：
+在启动此配置之前，请检查您的配置：
 
-* Adobe Campaign19.1.9版本或20.3.1.及更高版本。
-* Analytics Standard版本。
+* 最新版Adobe Campaign:19.1.8或20.2.1版及更高版本，
+* Adobe Analytics Standard版
 
-先决条件配置包括：
+您还需要：
 
 * AdobeI/O项目身份验证
-* IMSOrgId，添加了Experience Cloud客户的Adobe Analytics标识符。
-* 供应团队必须对客户的IMS组织具有系统管理员权限
-* Adobe Analytics的触发器配置。
+* 有效的IMSOrgID，添加了Adobe Analytics的Experience Cloud客户的标识符
+* 开发者访问IMS组织
+* 触发器配置在Adobe Analytics完成
 
 ## 身份验证和配置文件 {#authentication-configuration}
 
