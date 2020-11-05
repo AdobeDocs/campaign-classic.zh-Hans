@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: e53af1c2-b50c-4a8c-b5b8-f23a85bd3211
 translation-type: tm+mt
-source-git-commit: 1e6ef4a3924e2cab0e6baf06e0861620e17d240b
+source-git-commit: 12a6409df4816519b979b911d7de03eae94bef33
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 0%
@@ -275,14 +275,14 @@ Adobe Campaign允许您导入压缩或加密文件。 在数据加载（文件�
 
 1. 在Campaign Classic中，构建一个工作流以导入加密数据，并使用通过控制面板安装的私钥对其进行解密。 为此，我们将按如下方式构建工作流：
 
-   ![](assets/gpg_workflow.png)
+   ![](assets/gpg_import_workflow.png)
 
    * **[!UICONTROL File transfer]** 活动:将文件从外部源传输到Campaign Classic。 在此示例中，我们希望从SFTP服务器传输文件。
    * **[!UICONTROL Data loading (file)]** 活动:将文件中的数据加载到控制面板库，然后使用在数据库中生成的私钥进行解密。
 
 1. 打开 **[!UICONTROL File transfer]** 活动，然后指定要从中导入加密的。gpg文件的外部帐户。
 
-   ![](assets/gpg_transfer.png)
+   ![](assets/gpg_key_transfer.png)
 
    有关如何配置活动的全局概念，请参 [阅本节](../../workflow/using/file-transfer.md)。
 
