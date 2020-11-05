@@ -3,9 +3,9 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic 产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
+source-git-commit: 6ac6145a38538f07b8080e503cd7750b19ed9621
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '277'
 ht-degree: 78%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 78%
 
 ## 新增功能
 
-* **[更新您的Adobe Experience Cloud触发器](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)**<br/>&#x200B;集成旧版身份验证服务已到期。 了解如何迁移到AdobeI/O。
+* **[更新您的Adobe Experience Cloud触发器](integrations/using/configuring-adobe-io.md))**<br/>)旧版身份验证服务已到期。 了解如何迁移到AdobeI/O。
 
 * **[移至基于HTTP/2的APNs提供程序](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)**<br/> API了解如何从传统二进制协议迁移到基于HTTP/2的APNs提供程序API。
 
