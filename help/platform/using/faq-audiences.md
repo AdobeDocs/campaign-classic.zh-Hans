@@ -10,11 +10,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 84%
 
 探索在数据库中[导入用户档案](../../platform/using/importing-data.md#generic-import-samples)的轻松用例。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
 
 ## 如何定义营销活动的目标群体？{#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -44,7 +44,7 @@ ht-degree: 84%
 
 [单击此处了解更多信息](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。
 
-![](assets/do-not-localize/how-to-video.png) 在此视频和 [其他视频](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) 中 [发现此功能](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
+![](assets/do-not-localize/how-to-video.png) [在此视频中](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html)和[在其他视频中](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)发现此功能
 
 ## 如何在发送邮件前删除重复的群体？{#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
