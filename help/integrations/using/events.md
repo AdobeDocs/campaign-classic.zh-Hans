@@ -1,8 +1,6 @@
 ---
-title: 配置集成
-seo-title: 配置集成
-description: 配置集成
-seo-description: null
+title: 配置事件
+description: 了解如何为自定义实施配置事件
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 1%
+source-wordcount: '1198'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +26,7 @@ ht-degree: 1%
 * QueryDef和Writer API的工作知识。
 * 使用私钥进行加密和身份验证的工作概念。
 
-由于编辑JS代码需要技术技能，请在没有正确理解的情况下不要尝试。
-
-事件的进一步处理是作为默认实现外部提供的ACX包的一部分完成的。 接收的事件会立即使用JavaScript代码进行处理。 它将保存到数据库表中，无需进行进一步的实时处理。 触发器用于通过发送电子邮件的活动工作流进行定位。 活动已设置，因此触发事件的客户将收到电子邮件。
+由于编辑Javascript代码需要技术技能，请在没有正确理解的情况下不要尝试。
 
 ## 在JavaScript中处理事件 {#events-javascript}
 
@@ -40,7 +36,7 @@ ht-degree: 1%
 
 它在“JSConnector” **[!UICONTROL NmsPipeline_Config]** 属性下的选项中配置。 每次收到事件时都会调用此javascript。 它由流程运 [!DNL pipelined] 行。
 
-示例JS文件为cus:triggers.js。
+示例Javascript文件为cus:triggers.js。
 
 ### JavaScript函数 {#function-js}
 
@@ -58,7 +54,7 @@ function processPipelineMessage(xmlTrigger) {}
 <undefined/>
 ```
 
-编辑JS [!DNL pipelined] 后应重新启动。
+您应在编 [!DNL pipelined] 辑Javascript后重新启动。
 
 ### 触发数据格式 {#trigger-format}
 
@@ -136,7 +132,7 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 解析数据 {#data-parsing}
 
-此示例JS代码解析eVar中的扩充01。
+此示例Javascript代码解析eVar中的扩充01。
 
 ```
 function processPipelineMessage(xmlTrigger)
