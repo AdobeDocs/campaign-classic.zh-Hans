@@ -9,9 +9,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-translation-type: ht
-source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 100%
 
@@ -90,7 +90,7 @@ Campaign 现在支持以下系统：
 在 20.3 中弃用了以下功能：
 
 * 弃用了用于将受众导入和导出到 Adobe Experience Cloud 的 demdex 域。如果您是将 demdex 域用于导入/导出外部帐户，则需要相应地调整实施。[了解详情](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
-* 最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成身份验证现已更改并移至 Adobe I/O。[了解详情](../../integrations/using/about-triggers.md)
+* 最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成身份验证现已更改并移至 Adobe I/O。[了解详情](../../integrations/using/configuring-adobe-io.md)
 
 在[已弃用和已删除的功能页面](../../rn/using/deprecated-features.md)中了解详情。
 
