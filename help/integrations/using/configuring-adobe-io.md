@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '425'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->如果您使用的是通过JWT令牌或身份验证进行的旧版触发器 **集成，则需要按照下面的说明移至AdobeI/O**。 JWT和oAuth身份验证模式现已弃用。 [了解详情](https://github.com/AdobeDocs/analytics-1.4-apis)
+>如果您使用的是通过身份验证进行触发器集成的旧 **版本，则需要按如下所述移**&#x200B;动到AdobeI/O。 旧版身份验证模式将于2021年4月30日停用。 [了解详情](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md)
 
 ## 先决条件{#adobe-io-prerequisites}
 
