@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: ec3844ca-8d80-4ddc-b08c-f18a6919bb28
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 1e6ef4a3924e2cab0e6baf06e0861620e17d240b
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 3%
@@ -108,7 +108,7 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过活动定义导 *
 
 1. 使用GPG实用程序生成GPG密钥对（公共／私有），然后将公钥安装到控制面板上。 控制面板文档中提供了详 [细步骤](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)。
 
-1. 在Campaign Classic中，构建一个工作流以导出数据，并使用通过控制面板安装的私钥将其导出。 为此，我们将按如下方式构建工作流：
+1. 在Campaign Classic中，构建一个工作流以导出数据，并使用通过控制面板安装的私钥对其加密。 为此，我们将按如下方式构建工作流：
 
    ![](assets/gpg-workflow-encrypt.png)
 
@@ -147,4 +147,3 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过活动定义导 *
 
 1. 您现在可以运行工作流。 执行目标后，查询的数据将导出到SFTP服务器中，生成加密的。gpg文件。
 
-   ![](assets/gpg-sftp-encrypt.png)
