@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '907'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 先决条件配置包括：
 
-* AdobeIO项目身份验证
+* AdobeI/O项目身份验证
 * IMSOrgId，添加了Experience Cloud客户的Adobe Analytics标识符。
 * 供应团队必须对客户的IMS组织具有系统管理员权限
 * Adobe Analytics的触发器配置。
@@ -48,13 +48,13 @@ ht-degree: 1%
 
 由于管道托管在Adobe Experience Cloud，因此需要身份验证。
 它使用一对公钥和私钥。 此过程与用户／密码功能相同，但更安全。
-支持通过Marketing CloudIO项目对Adobe进行身份验证。
+支持通过Marketing CloudI/O项目进行Adobe身份验证。
 
-## 第1步：创建／更新AdobeIO项目 {#creating-adobe-io-project}
+## 第1步：创建／更新AdobeI/O项目 {#creating-adobe-io-project}
 
-对于托管客户，您可以创建客户关怀票证，以便为您的组织启用AdobeIO技术帐户令牌以进行触发器集成。
+对于托管客户，您可以创建客户关怀票证，以便为您的组织启用AdobeI/O技术帐户令牌以进行触发器集成。
 
-对于内部部署客户，请参阅为 [Adobe Experience Cloud触发器配置Adobe](../../integrations/using/configuring-adobe-io.md) IO页。 请注意，在向AdobeIO **[!UICONTROL Adobe Analytics]** 凭据添加API时，您需要进行选择。
+对于内部部署客户，请参 [阅为Adobe Experience Cloud触发器配置Adobe](../../integrations/using/configuring-adobe-io.md) I/O页。 请注意，在向Adobe **[!UICONTROL Adobe Analytics]** I/O凭据添加API时，您需要进行选择。
 
 ## 第2步：配置NmsPipeline_Config管道选项 {#configuring-nmspipeline}
 
