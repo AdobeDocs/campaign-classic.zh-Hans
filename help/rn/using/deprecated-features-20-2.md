@@ -10,11 +10,11 @@ content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3402212bc6904dd5587d3b5a16fca7f4857fb908
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1444'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </tr>
    <tr>
   <td>SMS 连接器<br></td>
-  <td><p> 从活动20.2版本开始，已弃用以下SMS连接器。<p>
+  <td><p> 从 Campaign 20.2 版本开始，弃用以下 SMS 连接器。<p>
    <ul>
    <li>NetSize</li>
    <li>通用 SMPP（支持二进制模式的 SMPP 版本 3.4）</li>
@@ -66,7 +66,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
  </tr>
   <tr>  
    <td>传真渠道<br></td>
-   <td><p>从活动20.2版本开始，已弃用传真渠道。</p> 
+   <td><p>从 Campaign 20.2 版本开始，弃用传真渠道。</p> 
    <p>如果您使用此渠道，则需要相应地调整实施。<a href="../../delivery/using/steps-about-delivery-creation-steps.md">进一步了解</a> Campaign 渠道。</p>
    <p><em>目标移除日期：2021 年</em></p></td>
   </tr>
@@ -129,11 +129,11 @@ Campaign Classic 不再支持以下操作系统。请参阅[兼容性矩阵](../
 
 ### Adobe Campaign 20.2 版 {#compat-20-2-release}
 
-从20.2版本开始，已弃用以下系统进行Campaign Classic。 兼容性将在20.3版本（2020年10月）中终止。
+从 20.2 版本开始，Campaign Classic 弃用以下系统。兼容性将在 20.3 版本（2020 年 10 月）中终止。
 
 * 客户端控制台：Windows 7
-* 旧版SMS连接器——请参阅已弃 [用的功能](#deprecated-features)
-* DB2 UDB 10.5 for联合数据访问(联合数据访问)
+* 旧版 SMS 连接器 - 请参阅[已弃用的功能](#deprecated-features)
+* DB2 UDB 10.5 for Federated Data Access (FDA)
 
 ### Adobe Campaign 19.2 版 {#compat-19-2-release}
 
