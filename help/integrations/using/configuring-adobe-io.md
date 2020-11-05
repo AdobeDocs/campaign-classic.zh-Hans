@@ -13,22 +13,26 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
 
 
-# 为Adobe Experience Cloud触发器配置AdobeI/O {#configuring-adobe-io}
+# Configuring Adobe I/O for Adobe Experience Cloud Triggers {#configuring-adobe-io}
+
+>[!CAUTION]
+>
+>如果您使用的是通过JWT令牌或身份验证进行的旧版触发器 **集成，则需要按照下面的说明移至AdobeI/O**。 JWT和oAuth身份验证模式现已弃用。 [了解详情](https://github.com/AdobeDocs/analytics-1.4-apis)
 
 ## 先决条件{#adobe-io-prerequisites}
 
 在开始此实施之前，请检查您具有：
 
 * 最新版Adobe Campaign:19.1.8或20.2.1版及更高版本，
-* 有效的IMSOrgID:identity management系统(IMS)组织标识符是Adobe Experience Cloud内的唯一标识符，尤其用于VisitorID服务和IMS单点登录(SSO),
+* 有效的IMSOrgID:identity management系统(IMS)组织标识符是Adobe Experience Cloud内的唯一标识符，例如用于VisitorID服务和IMS单点登录(SSO),
 * 开发者访问IMS组织。
 
 >[!NOTE]
@@ -105,7 +109,3 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 ```
 <pipelined ... authType="imsJwtToken"  ... />
 ```
-
->[!NOTE]
->
->如果您使用旧版JWT令牌使用旧版触发器集成，则还应添加AdobeI/O API，详见第 [!DNL Adobe Analytics] 一步，以自动迁移到新的触发器身份验证。
