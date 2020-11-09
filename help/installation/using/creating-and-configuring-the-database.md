@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
+source-git-commit: 1781648fc17d729f451664204f99a77dfaa8c824
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1307'
 ht-degree: 2%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 2%
 
 * 对于Oracle、Microsoft SQL Server或PostgreSQL数据库，管理员还可以定义创建存储 **对象时** 要使用的参数。
 
-   这些参数接收确切的表空间名称(警告：区分大小写)。 它们分别存储在节 **[!UICONTROL Administration > Platform > Options]** 点的以下选项中(请参 [](../../installation/using/configuring-campaign-options.md#database)阅):
+   这些参数接收确切的表空间名称(警告：区分大小写)。 它们分别存储在以 **[!UICONTROL Administration > Platform > Options]** 下选项的节点中(请参 [阅本节](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**:基于模式的用户表
    * **WdbcOptions_TableSpaceIndex**:根据模式
