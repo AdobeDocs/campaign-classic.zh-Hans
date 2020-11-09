@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 075206aa-ff7b-4fa8-a05d-14a29fb119ba
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 1781648fc17d729f451664204f99a77dfaa8c824
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 5%
+source-wordcount: '173'
+ht-degree: 6%
 
 ---
 
@@ -34,4 +34,4 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->对于AND-join **类型活动** ,事件变量会合并，但如果同一变量定义了两次，则存在冲突，且值仍未确定。 有关详细信息，请参见 [](../../workflow/using/javascript-scripts-and-templates.md#event-variables)。
+>对于AND-join **类型活动** ,事件变量会合并，但如果同一变量定义了两次，则存在冲突，且值仍未确定。 如需详细信息，请参阅[此部分](../../workflow/using/javascript-scripts-and-templates.md#event-variables)。
