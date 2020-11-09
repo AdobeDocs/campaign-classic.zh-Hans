@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: 2e2d1134-9b83-4ada-b74f-c3842a0cf044
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: e01acc00d0b15df99c009fe29d170ed0fc9fa956
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 12%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 12%
 
 利用Adobe Campaign，您可以发送跨渠道活动，包括电子邮件、短信、LINE消息、推送通知和直接邮件，并使用各种专用报告衡量其 [有效性](../../reporting/using/delivery-reports.md)。 这些消息是通过投放设计和发送的，并且可以针对每个收件人进行个性化。
 
-核心功能包括定位、消息定义和个性化、通信执行和相关的运营报告。 主要功能接入点是投放向导。 此接入点可实现Adobe Campaign涵盖的多种功能。
+核心功能包括定位、消息定义和个性化、通信执行和相关的运营报告。 主要功能接入点是投放向导。 此接入点可带来Adobe Campaign覆盖的多种功能。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Adobe Campaign优惠以下投放渠道:
 
    >[!NOTE]
    >
-   >使用多个渠道取决于您的包。 请核实您的许可协议。
+   >可用渠道的数量取决于您的合同。 请核实您的许可协议。
 
 投放可以 **联机** (通过电子邮件、移动渠道和推送通知之一)和 **脱机** (直邮渠道)。
 
