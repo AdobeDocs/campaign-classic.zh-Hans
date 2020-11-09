@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic 产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: ccd4fe1366fd9ecaca83dbf7aac241524f0af7d6
+source-git-commit: c14d257bb4f206e56a16d45507ee98ccad239fe7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '274'
+ht-degree: 77%
 
 ---
 
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 ## 新增功能
 
-* **[更新您的Adobe Experience Cloud触发器](integrations/using/configuring-adobe-io.md)**<br/>集成旧版身份验证服务已到期。 了解如何迁移到AdobeI/O。
+* **[更新您的Adobe Experience Cloud触发器集](integrations/using/configuring-adobe-io.md)**<br/> 成旧版身份验证服务已到期。 了解如何迁移到AdobeI/O。
 
-* **[移至基于HTTP/2的APNs提供程序](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)**<br/> API了解如何从传统二进制协议迁移到基于HTTP/2的APNs提供程序API。
+* **[迁移到基于HTTP/2的APNs提供程序](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)**<br/> API了解如何从传统二进制协议迁移到基于HTTP/2的APNs提供程序API。
 
-* **[将表情图标添加到消息](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>您现在可以在消息和主题行中插入表情图标
+* **[向邮件中添加表情图标](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> 现在可在邮件和主题行中插入表情图标
 
 * **[获取支持](https://helpx.adobe.com/cn/campaign/kb/ac-support.html)**<br/>&#x200B;访问常见问题解答、最佳实践、帮助资源和请求帮助
 
 * **[跟踪功能](https://helpx.adobe.com/cn/campaign/kb/acc-tracking.html)**<br/>&#x200B;了解 Campaign 中的跟踪功能和流程
 
-[单击此处以了解更多更新](/help/rn/using/documentation-updates.md)
+[更多更新](/help/rn/using/documentation-updates.md)
 
 ## 热门页面
 
