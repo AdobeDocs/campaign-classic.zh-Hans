@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2abd9f987967484cc93009d8961ed6b152cdc354
 workflow-type: tm+mt
 source-wordcount: '2956'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 投放可以通过活动仪表板、活动工作流或直接通过投放概述创建。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[在视频中发现此功能](#create-email-video)
 
 ## 创建投放{#creating-deliveries}
 
@@ -297,7 +297,7 @@ ht-degree: 1%
 
 ### 启动脱机投放 {#starting-an-offline-delivery}
 
-一旦所有批准都获得批准，投放状态将变为 **[!UICONTROL Pending extraction]**。 提取文件通过特殊工作流创建，在默认配置中，当直接邮件投放挂起提取时，该工作流会自动开始。 进程进行中时，该进程将显示在仪表板中，并可通过其链接进行编辑。
+一旦所有批准都获得批准，投放状态将变为 **[!UICONTROL Pending extraction]**。 提取文件通过特殊工作流创建，在默认配置中，当直接邮件投放挂起提取时，该工作流会自动开始。 进程进行中时，该进程会显示在仪表板中，并可通过其链接进行编辑。
 
 >[!NOTE]
 >
