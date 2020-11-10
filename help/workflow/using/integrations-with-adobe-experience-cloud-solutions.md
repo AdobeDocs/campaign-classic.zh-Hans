@@ -1,8 +1,6 @@
 ---
-title: 与 Adobe Experience Cloud 解决方案集成
-seo-title: 与 Adobe Experience Cloud 解决方案集成
-description: 与 Adobe Experience Cloud 解决方案集成
-seo-description: null
+title: 与Adobe Experience Cloud解决方案工作流集成
+description: 进一步了解与Adobe Experience Cloud解决方案工作流集成
 page-status-flag: never-activated
 uuid: 6f179af5-1e5b-42a9-a493-1b726af2af8e
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: technical-workflows
 discoiquuid: dddc3bdc-2344-423b-81d9-6f93847448a0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 24%
+source-wordcount: '109'
+ht-degree: 8%
 
 ---
 
