@@ -1,8 +1,6 @@
 ---
 title: 投放概要
-seo-title: 投放概要
-description: 投放概要
-seo-description: null
+description: 进一步了解投放概要工作流活动
 page-status-flag: never-activated
 uuid: 2b924cc6-6b71-481e-acab-2d035bbc2852
 contentOwner: sauviat
@@ -12,17 +10,17 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: a2a65f97-425b-44b2-8cf4-beea850423bc
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 1%
 
 ---
 
 
 # 投放概要{#delivery-outline}
 
-投放概要允许您在活动工作流中使用大纲。 大纲必须事先在活动中创建。
+投放概要 **允许您** 在活动工作流中使用大纲。 大纲必须事先在活动中创建。
 
 有关Adobe Campaign中投放概要的详细信息，请参阅此 [部分](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
@@ -30,7 +28,7 @@ ht-degree: 3%
 
 ## 示例：通过优惠插入投放概要 {#example--inserting-an-offer-via-a-delivery-outline}
 
-投放概要活动在活动工作流中可用，它允许您展示当前投放概要中引用的优惠。
+投放概要 **活动** (在活动工作流中可用)允许您展示在投放概要中引用的，这些优惠来自当前进行中的活动。
 
 >[!NOTE]
 >
