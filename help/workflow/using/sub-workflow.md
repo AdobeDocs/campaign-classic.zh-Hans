@@ -1,8 +1,6 @@
 ---
 title: 子工作流
-seo-title: 子工作流
-description: 子工作流
-seo-description: null
+description: 进一步了解子工作流活动
 page-status-flag: never-activated
 uuid: c952633f-1aca-44cf-bb50-a67e9b086030
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: a4441820-1b3d-4bac-a6e3-1c9c14466d19
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 1%
+source-wordcount: '417'
+ht-degree: 0%
 
 ---
 
