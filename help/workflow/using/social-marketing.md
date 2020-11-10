@@ -1,8 +1,6 @@
 ---
 title: 社交媒体营销
-seo-title: 社交媒体营销
-description: 社交媒体营销
-seo-description: null
+description: 进一步了解社交营销技术工作流
 page-status-flag: never-activated
 uuid: ab84cc4d-0599-4fff-976c-89525faeb889
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 339f4aa9-0513-4b0e-ac2a-24f5dc012d49
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 8%
+source-wordcount: '116'
+ht-degree: 5%
 
 ---
 
