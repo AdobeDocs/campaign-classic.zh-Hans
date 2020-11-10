@@ -1,8 +1,6 @@
 ---
 title: 读取列表
-seo-title: 读取列表
-description: 读取列表
-seo-description: null
+description: 进一步了解读取列表工作流活动
 page-status-flag: never-activated
 uuid: 34e28675-f28b-407f-8d60-41a5383af0db
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 96a7aea4-4799-4ac7-8dff-666b075a1c43
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 1%
+source-wordcount: '488'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +50,7 @@ ht-degree: 1%
 
 New Contacts文件夹中包 **含的用户档案** ，必须通过投放操作来定位。 要从目标中排除的电子邮件地址存储在外部列表中。 在我们的示例中，排除时只需提供电子邮件地址相关信息。
 
-1. “新 **联系人** ”文件夹选择查询必须允许您加载选定用户档案的电子邮件地址，以便与列表中的信息保持对齐。
+1. “新 **联系人** ”文件夹选择查询必须允许您加载选定用户档案的电子邮件地址，以便与列表中的信息保持一致。
 
    ![](assets/s_advuser_list_read_sample_0.png)
 
