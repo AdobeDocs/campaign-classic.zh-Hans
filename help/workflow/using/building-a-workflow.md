@@ -1,8 +1,6 @@
 ---
 title: 构建工作流
-seo-title: 构建工作流
-description: 构建工作流
-seo-description: null
+description: 了解如何构建工作流
 page-status-flag: never-activated
 uuid: 55743545-dd4b-4a0a-aeff-8fd638812b9d
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: 2d4ccf81-cd85-4f4c-8ba8-5b5612af1e16
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1624'
 ht-degree: 3%
 
 ---
@@ -145,13 +143,13 @@ ht-degree: 3%
 
 在活动框架内定位工作流与所有活动工作流一起存储。
 
-### 实施步骤 {#implementation-steps-}
+### 创建定位工作流的关键步骤 {#implementation-steps-}
 
-定位数据构建阶段如下：
+创建定位工作流的步骤在以下各节中详细介绍：
 
-1. 有关在数据库中标识数据的信息，请参阅 [创建查询](../../workflow/using/targeting-data.md#creating-queries)。
-1. 要准备满足投放需求的数据，请参 [阅丰富和修改数据](../../workflow/using/targeting-data.md#enriching-and-modifying-data)。
-1. 有关使用数据执行更新或在投放中执行更新的信息，请参 [阅更新数据库](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)。
+1. **识别数据** -请参阅创建 [查询](../../workflow/using/targeting-data.md#creating-queries)
+1. **准备数据** ，以满足投放需求——请参 [阅丰富和修改数据](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
+1. **使用** 投放执行更新或在数据中——请参 [阅更新数据库](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
 
 所有扩充和在定位期间执行的所有处理的结果都在个性化字段中存储和可访问，特别是用于创建个性化消息。 For more on this, refer to [Target data](../../workflow/using/data-life-cycle.md#target-data)
 
@@ -179,15 +177,15 @@ ht-degree: 3%
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
-此选项卡包含与所有活动相同的工作流。 它们在“实施步 [骤”部分中](#implementation-steps-) 。
+此选项卡包含与所有活动相同的工作流。 [了解详情](#implementation-steps-)
 
-除了定位活动之外，活动工作流还允许您为所有可用渠道创建和配置投放。 在工作流中创建后，这些投放可从活动的仪表板访问。
+除了定位活动之外，活动工作流还允许您为所有可用渠道创建和配置投放。 在工作流中创建后，这些投放可从活动的仪表板访问。 [了解详情](../../campaign/using/marketing-campaign-deliveries.md)
 
 所有活动工作流都集中在该节 **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]** 点下。
 
 ![](assets/campaigns_wf.png)
 
-活动工作流和实施示例详见本 [页](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。
+活动工作流和实施示例详 [细介绍](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。
 
 ## 技术工作流 {#technical-workflows}
 
@@ -205,7 +203,7 @@ ht-degree: 3%
 
 您可以在树结构的节 **[!UICONTROL Administration > Production > Technical workflows]** 点中创建其他技术工作流。 但是，此过程是专家用户专用的。
 
-提供的活动与定位工作流相同。 For more on this, refer to [Implementation steps](#implementation-steps-).
+提供的活动与定位工作流相同。 [了解详情](#implementation-steps-)
 
 ## 工作流模板 {#workflow-templates}
 
