@@ -1,7 +1,7 @@
 ---
-title: 隐私和建议
-seo-title: 隐私和建议
-description: 隐私和建议
+title: 隐私和同意
+seo-title: 隐私和同意
+description: 隐私和同意
 seo-description: null
 page-status-flag: never-activated
 uuid: a044bbea-521d-4c1e-8aab-7d51a87fc94b
@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: 6ca61b4e927b7443815f0337b8e661c8ec126001
+source-git-commit: 53c15bca0f5cc3e6866e87a5ffbc7f68e7bcc1b8
 workflow-type: tm+mt
-source-wordcount: '1850'
-ht-degree: 7%
+source-wordcount: '1815'
+ht-degree: 6%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe Campaign是收集和处理大量数据（包括个人信息和敏感数据
 
 >[!NOTE]
 >
->有关GDPR、CCPA、PDPA和LGPD如何应用于Adobe Campaign的更多信息，请参 [阅本页](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy-overview.html#whatisgdpr)。
+>有关GDPR、CCPA、PDPA和LGPD如何应用于Adobe Campaign的更多信息，请参 [阅本页](../../platform/using/privacy-management.md#privacy-management-regulations)。
 
 ### Adobe Experience Cloud privacy {#experience-cloud-privacy}
 
@@ -83,7 +83,7 @@ Adobe Campaign是Adobe Experience Cloud解决方案的一部分。 隐私在活�
 * **个人数据** ，是指可以直接或间接识别活人的信息。
 * **敏感个人数据** 是与个人的种族、政治视图、宗教信仰、犯罪背景、遗传信息、健康数据、性偏好、生物识别信息以及贸易合并会员资格相关的信息。
 
-主 [要法规](#privacy-regulations) ，是指管理数据的不同实体，具体如下：
+主 [要法规](#privacy-regulations) ，是指管理数据的不同实体：
 * 数 **据控制** 器是决定收集、使用和共享个人数据的手段和目的的权威。
 * 数 **据处理者** ，是指按照数据管理者的指示收集、使用或共享个人数据的任何个人或一方。
 * 数 **据主体** ，是指收集、使用或共享个人数据，并可以直接或间接地参照该个人数据识别的任何活人。
@@ -108,10 +108,9 @@ Adobe Campaign使您能够收集数据，包括个人和敏感信息。 因此�
 Adobe Campaign为您提供了专门用于隐私管理的各种功能：
 * 同意管理、数据保留和用户角色。 请参阅[此章节](#consent)。
 * 隐私请求（访问权和被遗忘权）。 请参阅[此章节](#privacy-requests)。
-* 选择退出销售个人信息(CCPA-specific)。 请参阅[此章节](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html#ccpa)。
+* 选择退出销售个人信息(CCPA-specific)。 请参阅[此章节](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa)。
 
 本节介绍活动中的主要隐私功能以及相关角色 [的示例](https://helpx.adobe.com/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow)。
-
 
 ### 同意、保留和角色 {#consent}
 
@@ -121,7 +120,7 @@ Adobe Campaign优惠最初包含对隐私至关重要的重要功能：
 * **数据保留**:所有内置的标准日志表都具有预设的保留期，通常将其数据存储限制在6个月或更短。 可以通过工作流设置额外的保留期。 要了解更多信息，请联系Adobe顾问或技术管理员。
 * **权限管理**:Adobe Campaign允许您通过不同的预建或自定义角色管理分配给各种活动操作符的权限。 这允许您管理公司内可以访问、修改或导出不同类型数据的人员。 有关此方面的详细信息，请参 [阅关于访问管理](../../platform/using/access-management.md)。
 
-有关这些功能以及如何在Adobe Campaign中管理这些功能的更多信息，请参 [阅本页](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent)。
+有关这些功能以及如何在Adobe Campaign中管理这些功能的更多信息，请参 [阅此部分](../../platform/using/privacy-management.md#consent-retention-roles)。
 
 ### 隐私请求 {#privacy-requests}
 
@@ -133,7 +132,7 @@ Adobe Campaign提供了其他功能，帮助您作为数据管理者，为特定
 
 >[!NOTE]
 >
->这套工具可帮助您遵守GDPR、CCPA、PDPA和LGPD的隐私权。 有关这些不同法规的更多信息，请 [参阅本页](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy-overview.html#whatisgdpr)。
+>这套工具可帮助您遵守GDPR、CCPA、PDPA和LGPD的隐私权。 有关这些不同法规的更多信息，请 [参阅本页](../../platform/using/privacy-management.md#privacy-management-regulations)。
 
 <!--* **GDPR** (General Data Protection Regulation) is the European Union’s (EU) privacy law that harmonizes and modernizes data protection requirements. GDPR applies to Adobe Campaign customers who hold data for Data Subjects residing in the EU.
 
@@ -143,7 +142,7 @@ Adobe Campaign提供了其他功能，帮助您作为数据管理者，为特定
 
 Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug, 16 for all companies collecting or processing personal data in Brazil. This regulation also applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.-->
 
-访问 **和** 删除请 **求将显示在** 此页上 [](https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess)。 创建这些请求的实施步骤详见 [本节](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)。 <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
+访问 **和** 删除请 **求将显示在** 此页上 [](../../platform/using/privacy-management.md#right-access-forgotten)。 创建这些请求的实施步骤详见 [本节](../../platform/using/privacy-requests.md)。 <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
 
 ## 跟踪功能 {#tracking-capabilities}
 
@@ -154,7 +153,7 @@ Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug,
 * A **session** cookie: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). 联系人单击由 Adobe Campaign 发送的电子邮件中包含的 URL 后即可添加标识符，让您能够跟踪他们在网络上的行为。关闭浏览器时，将自动擦除会话 Cookie。联系人可以将浏览器配置为拒绝 Cookie。
 
 * 两个 **永久** cookie:
-   * UUID **** (Universal Unique IDentifier)cookie在Adobe Experience Cloud解决方案之间共享。 它设置一次，直到生成新值时它从客户端浏览器中消失。 此Cookie使您能够识别访问网站时与Experience Cloud解决方案交互的用户。 它可由登陆页(将未知客户活动与收件人关联)或投放存放。 本页提供此Cookie [的说明](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html)。
+   * UUID **** (Universal Unique IDentifier)cookie在Adobe Experience Cloud解决方案之间共享。 它设置一次，直到在生成新值时它从客户端浏览器中消失。 此Cookie使您能够识别访问网站时与Experience Cloud解决方案交互的用户。 它可由登陆页(将未知客户活动与收件人关联)或投放存放。 此页面提供此cookie的 [说明](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=en#ec-cookies)。
    * nllastdelid **cookie(在Campaign Classic20.3中引入** )是永久cookie，包含用户从中单击链接的 **最后一个投放的** deliveryId。 当缺少会话cookie时，使用此cookie来标识将使用的跟踪表。
 
 《一般数据保护规定》(GDPR)等法规规定，公司在安装任何Cookie之前必须获得网站用户的同意。
