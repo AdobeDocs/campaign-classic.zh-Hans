@@ -1,8 +1,6 @@
 ---
 title: 具有自定义日期字段的电子邮件扩充
-seo-title: 具有自定义日期字段的电子邮件扩充
-description: 具有自定义日期字段的电子邮件扩充
-seo-description: null
+description: 了解如何使用自定义日期字段丰富电子邮件
 page-status-flag: never-activated
 uuid: 6dd240b1-f995-4e12-90a5-55aeb584bcdc
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 9cb3be65-6652-47fa-b8a4-e088530aab4a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 5%
+source-wordcount: '538'
+ht-degree: 3%
 
 ---
 
