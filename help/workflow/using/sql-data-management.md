@@ -1,8 +1,6 @@
 ---
 title: SQL 数据管理
-seo-title: SQL 数据管理
-description: SQL 数据管理
-seo-description: null
+description: 进一步了解SQL数据管理工作流活动
 page-status-flag: never-activated
 uuid: b6057496-2dd5-4289-96df-98378e4f0ae7
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: action-activities
 discoiquuid: 18d6f5e1-308f-4080-b7c4-ebf836f74842
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 3%
+source-wordcount: '409'
+ht-degree: 1%
 
 ---
 
@@ -62,7 +60,7 @@ ht-degree: 3%
       >
       >(&#39;name&#39;)值与过渡属性 **[!UICONTROL Name]** 中的字段对应。
 
-1. 如果SQL脚本已包含用于创建出站工作表的命令，请取消选择该 **[!UICONTROL Automatically create work table]** 选项。 否则，工作流一旦执行，将自动创建工作表。
+1. 如果SQL脚本已包含用于创建出站工作表的命令，请取消选择 **[!UICONTROL Automatically create work table]** 选项。 否则，工作流一旦执行，将自动创建工作表。
 1. 单击 **[!UICONTROL Ok]** 以确认活动配置。
 
 活动现已配置。 它已准备好在工作流中执行。
