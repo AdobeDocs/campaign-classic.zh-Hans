@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2d0d2d4eefc67312e1b9a8edc7ae88def2980ef1
+source-git-commit: 160af30e13bb6a81672477f4f801dbd5cc3c767c
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 2%
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->如果您使用的是通过身份验证进行触发器集成的旧 **版本，则需要按如下所述移**&#x200B;动到AdobeI/O。 旧版身份验证模式将于2021年4月30日停用。 [了解详情](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md)
+>如果您使用的是通过身份验证进行触发器集成的旧 **版本，则需要按如下所述移**&#x200B;动到AdobeI/O。 旧版身份验证模式将于2021年4月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 
 ## 先决条件{#adobe-io-prerequisites}
 
