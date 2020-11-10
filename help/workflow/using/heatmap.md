@@ -1,8 +1,6 @@
 ---
 title: 工作流热图
-seo-title: 工作流热图
-description: 工作流热图
-seo-description: null
+description: 使用Workflow HeatMap监控活动工作流
 page-status-flag: never-activated
 uuid: 4d215ff4-a61d-4294-8f15-17c612022577
 contentOwner: sauviat
@@ -12,17 +10,17 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 5%
+source-wordcount: '1328'
+ht-degree: 3%
 
 ---
 
 
 # 工作流热图 {#workflow-heatmap}
 
-Adobe Campaign Workflow HeatMap 以颜色编码的图形形式表示当前运行的所有工作流。它仅对实例管理员可用。
+Adobe Campaign工作流热图包含当前运行的所有工作流的颜色编码图形表示。 它仅对实例管理员可用。
 
 本页介绍了监视不同活动过程的其 [他方法](../../production/using/monitoring-guidelines.md)。
 
