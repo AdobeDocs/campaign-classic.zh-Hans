@@ -10,15 +10,15 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: 868940d1-f19d-4e9a-bffa-8654abb4441c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 16%
+source-wordcount: '650'
+ht-degree: 20%
 
 ---
 
 
-# 开始使用工作流{#gs-workflows}
+# 工作流入门{#gs-workflows}
 
 ## 关于工作流{#about-workflows}
 
@@ -32,9 +32,9 @@ Adobe Campaign包括一个工作流模块，它允许您跨应用程序服务器
 
 Adobe Campaign使用工作流来：
 
-* 进行定位活动。 For more on this, refer to [Implementation steps](../../workflow/using/building-a-workflow.md#implementation-steps-).
-* 构建活动:对于每个活动, **[!UICONTROL Workflow]** 选项卡允许您构建目标并创建投放。 For more on this, refer to [Campaign workflows](../../workflow/using/building-a-workflow.md#campaign-workflows).
-* 执行技术流程：清除、收集跟踪信息或临时计算。 For more on this, refer to [Technical workflows](../../workflow/using/building-a-workflow.md#technical-workflows).
+* 进行定位活动。 [了解详情](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* 构建活动:对于每个活动, **[!UICONTROL Workflow]** 选项卡允许您构建目标并创建投放。 [了解详情](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* 执行技术流程：清除、收集跟踪信息或临时计算。 [了解详情](../../workflow/using/building-a-workflow.md#technical-workflows)
 
 工作流可以指进程定义（工作流模型，它是应发生的内容的表示）和此进程的实例（工作流实例，它是实际发生的内容的表示）。
 
