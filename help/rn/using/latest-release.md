@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 100%
@@ -60,7 +60,7 @@ _2020 年 10 月 27 日_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Android 推送通知已得到改进，可支持 FCM HTTP v1 API for Android 推送渠道身份验证。 </p>
+<td> <p><a href="../../delivery/using/configuring-the-mobile-application-android.md#creating-notification-message">Android 推送通知已得到改进，可支持 FCM HTTP v1 API for Android 推送渠道身份验证。</a> </p>
 <p>使用新的受支持 API 版本，您现在可以发送 FCM 通知消息，该消息提供增强的富推送消息传递功能。<a href="https://firebase.google.com/docs/cloud-messaging/migrate-v1">了解详情</a></p> 
 <p>在<a href="../../delivery/using/configuring-the-mobile-application-android.md">此部分</a>中了解如何在 Adobe Campaign 中配置 FCM HTTP v1 API for Android。</p>
 </td> 
