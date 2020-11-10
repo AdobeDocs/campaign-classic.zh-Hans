@@ -1,8 +1,6 @@
 ---
 title: 增量查询
-seo-title: 增量查询
-description: 增量查询
-seo-description: null
+description: 进一步了解增量查询工作流活动
 page-status-flag: never-activated
 uuid: 24d322e8-172c-4faa-8a1f-59085b390a76
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 31071cd2-7d97-4a4f-a6cc-5ac5b6178be5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 4%
+source-wordcount: '355'
+ht-degree: 3%
 
 ---
 
