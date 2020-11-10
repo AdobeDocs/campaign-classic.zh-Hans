@@ -1,8 +1,6 @@
 ---
 title: 隐私和同意
-seo-title: 隐私和同意
-description: 隐私和同意
-seo-description: null
+description: 进一步了解隐私和同意
 page-status-flag: never-activated
 uuid: a044bbea-521d-4c1e-8aab-7d51a87fc94b
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: 53c15bca0f5cc3e6866e87a5ffbc7f68e7bcc1b8
+source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
 workflow-type: tm+mt
 source-wordcount: '1815'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
