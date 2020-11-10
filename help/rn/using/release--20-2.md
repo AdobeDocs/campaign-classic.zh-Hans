@@ -1,6 +1,6 @@
 ---
-title: 版本20.2
-description: 版本20.2
+title: 版本 20.2
+description: 版本 20.2
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -10,19 +10,19 @@ content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: aeae6320f9b8de8618f7e5f07bc586d1b101611f
+source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
 source-wordcount: '2183'
-ht-degree: 76%
+ht-degree: 80%
 
 ---
 
 
-# Release 20.2{#release-20-2}
+# 版本 20.2{#release-20-2}
 
 ![](assets/do-not-localize/cp-icon.png) **新的控制面板10月版** ，包含使用CNAME进行域配置和新的库监视功能。 [了解详情](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/blue_2.png) 版本 20.2.3 - 版本 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/green_2.png) 版本 20.2.3 - 版本 9182 {#release-20-2-3-build-9182}
 
 _2020年9月11日_
 
@@ -39,20 +39,20 @@ _2020年9月11日_
 
 _2020年7月22日_
 
-* 修复了在禁用签名功能时跟踪无法工作的问题。 (NEO-26411)
+* 修复了在禁用签名功能时跟踪无法正常工作的问题。(NEO-26411)
 * 修复了导致个性化域中未签名链接在应允许时被阻止的问题。 (NEO-25210)
-* 修复了在使用某些旧版Outlook时无法打开／单击跟踪URL的问题。 (NEO-25688)
+* 修复了在使用某些旧版 Outlook 时可能导致无法打开/单击跟踪 URL 的问题。  (NEO-25688)
 * 修复了导致电子邮件镜像页面中错误定义投放URL的问题（由于ASCII字符控制不当）。 (NEO-26084)
 * 修复了防网络钓鱼服务中的URL管理编码问题。 (NEO-25283)
-* 修复了在个性化参数（带磅签名的锚点标记）中使用片段跟踪URL时无法正常工作的问题。 (NEO-25774)
-* 修复了使用特定自定义跟踪公式时的跟踪问题。 (NEO-25277)
-* 修复了导致跟踪“通知单击”无法正常工作的问题（iOS和Android推送通知）。 (NEO-25965)
+* 修复了在使用个性化参数（带井号的锚点标记）中的片段跟踪 URL 时无法正常工作的问题。(NEO-25774)
+* 修复了使用特定自定义跟踪公式时的跟踪问题。(NEO-25277)
+* 修复了跟踪“通知点击量”无法正常工作的问题（iOS 和 Android 推送通知）。(NEO-25965)
 * 修复了影响工作流中计算字段的回归，导致工作流失败。 (NEO-25194)
 * 修复了导致动态创建Web跟踪URL无法正常工作的回归问题。 (NEO-20999)
 * 修复了现成投放报告的回归问题，该问题在导出到PDF时显示被截断。 (NEO-25757)
 * 修复了部署向导中的崩溃问题。
 * 修复了一个问题，该问题可能会阻止优惠通知工作流在配置升级后正常工作。
-* iOS HTTP2连接器已得到改进（第三方更新和错误管理）。 (NEO-25904, NEO-25903)
+* iOS HTTP2 连接器已得到改进（第三方更新和错误管理）。(NEO-25904, NEO-25903)
 * catalina.properties中的jarToSkip列表已更新，以删除对不再使用的jar文件（iOS通知）的引用。
 * 修复了在放置后阻止投放准备的问题。
 * 切换到新的序 [列ID机制后](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)，所有更新收件人表的Web应用程序都会在升级过程中重新发布。
@@ -262,5 +262,5 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 * 修复了投放准备问题，该问题在将路由配置设置为通过中间源发送投放时可能发生。
 * 修复了在单击 Line 邮件中的 Web 应用程序链接时可能显示错误邮件的问题。
 * 修复了在运行清理工作流后删除&#x200B;**增量查询**&#x200B;活动历史记录的问题。
-* 修复了创建中间源外部帐户时缺少 NmsMidSourcing_LastBroadLog_&lt;InternalName> 选项的问题.
+* 修复了创建中间源外部帐户时缺少 NmsMidSourcing_LastBroadLog_&lt;InternalName> 选项的问题。
 * 修复了数据库连接上的回归问题，该问题导致Web服务器由于数据库编码问题而不断重新启动。 这可能导致过度消费。 (NEO-23264)
