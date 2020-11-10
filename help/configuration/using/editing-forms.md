@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: input-forms
 discoiquuid: 0c33fd79-8fa5-4cc0-8881-c6d6f4ee1648
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 16%
@@ -22,7 +22,7 @@ ht-degree: 16%
 
 # 编辑窗体{#editing-forms}
 
-可从Adobe Campaign客户端控制台的文件夹访问 **[!UICONTROL Administration > Configuration > Input forms]** 输入表单创建和配置屏幕：
+可从Adobe Campaign客户端控制台的> **[!UICONTROL Administration]>文 [!UICONTROL Configuration] 件夹[!UICONTROL Input forms]** 访问输入表单创建和配置屏幕：
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
