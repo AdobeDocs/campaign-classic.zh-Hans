@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8486213403bf848f1632aff06f3f1528b199f86d
+source-git-commit: 2d0d2d4eefc67312e1b9a8edc7ae88def2980ef1
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 2%
@@ -29,9 +29,10 @@ ht-degree: 2%
 
 ## 先决条件{#adobe-io-prerequisites}
 
+此集成仅适用于 **开始Campaign Classic20.3版本**。
+
 在开始此实施之前，请检查您具有：
 
-* adobe campaign（20.2.1及更高版本）,
 * 有效的IMSOrgID:identity management系统(IMS)组织标识符是Adobe Experience Cloud内的唯一标识符，例如用于VisitorID服务和IMS单点登录(SSO),
 * 开发者访问IMS组织。
 
