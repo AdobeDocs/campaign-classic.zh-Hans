@@ -1,8 +1,6 @@
 ---
 title: 营销活动投放
-seo-title: 营销活动投放
-description: 营销活动投放
-seo-description: 进一步了解营销活动投放
+description: 进一步了解营销活动投放
 page-status-flag: never-activated
 uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 translation-type: tm+mt
-source-git-commit: 2abd9f987967484cc93009d8961ed6b152cdc354
+source-git-commit: f6e820bd05b95e57b395407ed1e17c11b17cbf84
 workflow-type: tm+mt
-source-wordcount: '2956'
-ht-degree: 2%
+source-wordcount: '2917'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +22,9 @@ ht-degree: 2%
 
 投放可以通过活动仪表板、活动工作流或直接通过投放概述创建。
 
-![](assets/do-not-localize/how-to-video.png)[在视频中发现此功能](#create-email-video)
+当从活动创建投放时，将链接到此活动并在活动级别进行合并。
+
+![](assets/do-not-localize/how-to-video.png)[ 在视频中发现此功能](#create-email-video)
 
 ## 创建投放{#creating-deliveries}
 
@@ -32,29 +32,21 @@ ht-degree: 2%
 
 ![](assets/campaign_op_add_delivery.png)
 
-建议的配置适用于不同类型的投放:直邮、电子邮件、移动渠道
-
->[!NOTE]
->
->有关创建和配置投放的详细信息，请参阅 [发送消息](../../delivery/using/steps-about-delivery-creation-steps.md) 。
+建议的配置适用于不同类型的投放:直邮、电子邮件、移动渠道 [了解详情](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
 ## 选择目标群 {#selecting-the-target-population}
 
-对于每个投放,活动管理器将定义：
+对于每个投放，您可以定义：
 
-* 主目标。 有关此问题的详细信息，请 [参阅在工作流中构建主目标](#building-the-main-target-in-a-workflow)[和选择目标填充](#selecting-the-target-population)。
-* 对照组。 有关此内容的详细信息，请参 [阅定义对照组](#defining-a-control-group)。
-* 种子地址。 如需详细信息，请参阅[此部分](../../delivery/using/about-seed-addresses.md)。
+* 受众-了解有关在工作 [流中构建受众和选](#building-the-main-target-in-a-workflow) 择目标人口的更多信息 [](#selecting-the-target-population)。
+* 对照组-了解有关定义 [对照组的更多信息](#defining-a-control-group)。
+* 种子地址-在本节中了 [解更多](../../delivery/using/about-seed-addresses.md)。
 
-其中一些信息是从模板继承的。
+其中一些信息可以从模板 [继承](../../campaign/using/marketing-campaign-templates.md#campaign-templates)。
 
->[!NOTE]
->
->活动模板以 [活动模板显示](../../campaign/using/marketing-campaign-templates.md#campaign-templates)。
+要构建投放目标，您可以为数据库中的收件人定义过滤条件。 此收件人选择模式显示在 [本节中](../../delivery/using/steps-defining-the-target-population.md)。
 
-要构建投放目标，您可以为数据库中的收件人定义过滤条件。 此收件人选择模式显示在“发送消 [息”部分](../../delivery/using/steps-defining-the-target-population.md) 。
-
-### 示例：交付给一组收件人 {#example--delivering-to-a-group-of-recipients}
+**示例：向组发送消息**
 
 您可以将人口导入列表，然后以投放目标此列表。
 
@@ -68,24 +60,15 @@ ht-degree: 2%
 
 ![](assets/s_user_target_group_next.png)
 
-### 在工作流中构建主目标 {#building-the-main-target-in-a-workflow}
+### 在工作流中构建受众 {#building-the-main-target-in-a-workflow}
 
-投放的主目标也可以在定位工作流中定义：此图形环境允许您使用查询、测试和运算符构建目标:合并、外部重复数据删除、共享等。
-
-“使 [用工作流自动](../../workflow/using/architecture.md) ”指南包含工作流模块操作方式的详细说明。
+投放的主目标也可以在定位工作流中定义：此图形环境允许您使用查询、测试和运算符构建目标:合并、外部重复数据删除、共享等。 [了解详情](../../workflow/using/architecture.md)。
 
 >[!IMPORTANT]
 >
->在同一活动下，设置的工作流数不能超过28个。 超出此限制后，其他工作流在接口中不可见，并且可能生成错误。
+>在一个活动中不能创建超过28个工作流。 超出此限制后，其他工作流在接口中不可见，并且可能生成错误。
 
-### 如何在活动中创建电子邮件 {#create-email-video}
-
-此视频介绍如何在 Adobe Campaign Classic 中创建活动和电子邮件。
-
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
-
-
-#### 创建定位工作流 {#creating-a-targeting-workflow}
+#### 创建工作流 {#creating-a-targeting-workflow}
 
 可以通过工作流中图形序列中的过滤条件组合来创建定位。 您可以创建根据您的需求定位的人口和子人口。 要显示工作流编辑器，请单击 **[!UICONTROL Targeting and workflows]** 活动仪表板中的选项卡。
 
@@ -275,7 +258,7 @@ ht-degree: 2%
 
 ## 启动投放 {#starting-a-delivery}
 
-一旦所有批准都获得批准，投放即可开始。 投放过程随后取决于投放类型。 有关电子邮件或移动渠道投放，请参 [阅启动在线投放](#starting-an-online-delivery)，有关直邮投放，请参 [阅启动脱机投放](#starting-an-offline-delivery)。
+一旦所有批准都获得批准，投放即可开始。 投放过程随后取决于投放类型。 有关电子邮件或移动渠道 [投放，请参阅启](#starting-an-online-delivery)动联机投放 [，有关直接邮件投放，请参](#starting-an-offline-delivery)阅启动脱机投放。
 
 ### 启动在线投放 {#starting-an-online-delivery}
 
@@ -283,7 +266,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如果指定了特定的运算符或操作员组以在投放的属性中启动投放，则还可以允许负责投放的运算符确认发送。 为此，请输 **入1作为值** ，激活 **NMS** _ActivateOwnerConfirmation选项。 这些选项通过Adobe Campaign资 **[!UICONTROL Administration]** 源 **[!UICONTROL Platform]** 管理器 **[!UICONTROL Options]** 中的> >节点进行管理。
+>如果指定了特定运算符或操作员组以在投放的属性中启动投放，则还可以允许负责投放的运算符确认发送。 为此，请输 **入1作为值** ，激活 **NMS** _ActivateOwnerConfirmation选项。 这些选项通过Adobe Campaign资 **[!UICONTROL Administration]** 源 **[!UICONTROL Platform]** 管理器 **[!UICONTROL Options]** 中的> >节点进行管理。
 >  
 >要取消激活此选项， **请输** 入0作为值。 然后，发送确认过程将作为默认过程：只有在投放属性（或管理员）中为发送指定的运算符或操作员组才能确认和执行发送。
 
@@ -297,7 +280,7 @@ ht-degree: 2%
 
 ### 启动脱机投放 {#starting-an-offline-delivery}
 
-一旦所有批准都获得批准，投放状态将变为 **[!UICONTROL Pending extraction]**。 提取文件通过特殊工作流创建，在默认配置中，当直接邮件投放挂起提取时，该工作流会自动开始。 进程进行中时，该进程会显示在仪表板中，并可通过其链接进行编辑。
+一旦所有批准都获得批准，投放状态将变为 **[!UICONTROL Pending extraction]**。 提取文件通过特殊工作流创建，在默认配置中，当直接邮件投放挂起提取时，该工作流会自动开始。 进程进行中时，该进程将显示在仪表板中，并可通过其链接进行编辑。
 
 >[!NOTE]
 >
@@ -476,3 +459,9 @@ ht-degree: 2%
 >[!NOTE]
 >
 >有关导出的详细信息，请参 [阅入门](../../platform/using/generic-imports-and-exports.md) 部分。
+
+#### 如何在活动中创建电子邮件 {#create-email-video}
+
+此视频介绍如何在 Adobe Campaign Classic 中创建活动和电子邮件。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
