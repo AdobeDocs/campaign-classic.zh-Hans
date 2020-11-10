@@ -1,8 +1,6 @@
 ---
 title: 调度程序
-seo-title: 调度程序
-description: 调度程序
-seo-description: null
+description: 进一步了解调度程序工作流活动
 page-status-flag: never-activated
 uuid: e814b978-2edd-442e-9334-9633bc9ec63a
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 093dbe8a-494f-4fe7-8614-3bf58486e34c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 11%
+source-wordcount: '332'
+ht-degree: 10%
 
 ---
 
