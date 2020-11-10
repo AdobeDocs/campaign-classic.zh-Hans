@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 5f3ecffba2e505ad0bb074f6d635a51d983997e2
+source-git-commit: b8548e8d609ed099433b97b4c0704d27234e81c0
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2156'
 ht-degree: 99%
 
 ---
@@ -39,7 +39,6 @@ ht-degree: 99%
 + 快速入门{#getting-started}
    + 开始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
-      + [隐私和同意](platform/using/privacy-and-recommendations.md)
       + [启动 Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Adobe Campaign 工作区](platform/using/adobe-campaign-workspace.md)
       + 常见问题解答 {#faq}
@@ -54,6 +53,10 @@ ht-degree: 99%
          + [报告](platform/using/faq-reporting.md)
          + [开发](platform/using/faq-developers.md)
       + [教程](platform/using/tutorials.md)
+   + 隐私 {#privacy}
+      + [隐私和同意](platform/using/privacy-and-recommendations.md)
+      + [隐私管理](platform/using/privacy-management.md)
+      + [隐私请求](platform/using/privacy-requests.md)
    + 用户档案管理 {#profile-management}
       + [关于用户档案](platform/using/about-profiles.md)
       + [编辑用户档案](platform/using/editing-a-profile.md)
