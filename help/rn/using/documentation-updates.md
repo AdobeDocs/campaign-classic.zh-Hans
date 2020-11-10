@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: 7af0d17450ea2bee757e54dd4861f11ad023b700
 workflow-type: tm+mt
-source-wordcount: '3905'
-ht-degree: 99%
+source-wordcount: '3924'
+ht-degree: 98%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 99%
 本页列出了每月所有新增功能和文档更新以及 Campaign 版本。
 
 您还可以查阅 [Adobe Campaign Classic Release 发行说明](../../rn/using/latest-release.md) ，了解更多更新信息。
+
+## 2020 年 11 月{#nov-2020}
+
+隐私权部分已被移动，并且包含两个新部分： [隐私管理](../../platform/using/privacy-management.md) 和 [管理隐私请求](../../platform/using/privacy-requests.md)。
 
 ## 2020 年 10 月 {#oct-2020}
 
