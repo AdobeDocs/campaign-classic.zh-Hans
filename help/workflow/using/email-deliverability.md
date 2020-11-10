@@ -1,8 +1,6 @@
 ---
 title: 电子邮件发送功能
-seo-title: 电子邮件发送功能
-description: 电子邮件发送功能
-seo-description: null
+description: 进一步了解电子邮件发送能力包
 page-status-flag: never-activated
 uuid: f60a09f0-47a0-4fc0-b0ac-47178af6ad55
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: technical-workflows
 discoiquuid: da0779dc-b734-483b-81e9-ff4706a2b6de
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 3%
+source-wordcount: '101'
+ht-degree: 2%
 
 ---
 
