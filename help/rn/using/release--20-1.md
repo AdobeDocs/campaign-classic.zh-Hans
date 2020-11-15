@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -47,7 +47,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>Snowflake是完全托管的云data warehouse，可在存储和计算级别进行扩展。 有了这个新的连接器，Adobe Campaign现在可以利用Snowflake的强大功能来执行大数据分段。 此连接器可供所有客户使用，包括由Adobe托管。</p>
-    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
+    <p>For more information, refer to the <a href="../../installation/using/configure-fda-snowflake.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -62,7 +62,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>Hadoop联合数据访问连接器已得到改进，可支持Hadoop 3.0和Cloudera。</p>
-    <p>有关详细信息，请参阅<a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">详细文档</a>。</p>
+    <p>有关详细信息，请参阅<a href="../../installation/using/configure-fda-hadoop.md">详细文档</a>。</p>
    </td> 
   </tr> 
  </tbody> 
