@@ -1,8 +1,6 @@
 ---
-title: 设置移动应用程序渠道
-seo-title: 设置移动应用程序渠道
-description: 设置移动应用程序渠道
-seo-description: null
+title: 集成活动SDK
+description: 了解如何将活动SDK集成到移动应用程序
 page-status-flag: never-activated
 uuid: aff1a4a0-34e7-4ce0-9eb3-30a8de1380f2
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
 
 
-# 将 Campaign SDK 集成到移动应用程序 {#integrating-campaign-sdk-into-the-mobile-application}
+# 将活动SDK与您的应用程序集成 {#integrating-campaign-sdk-into-the-mobile-application}
 
 适用于iOS和Android的活动SDK是移动应用程序渠道模块的组件之一。
 
@@ -30,7 +28,7 @@ ht-degree: 0%
 
 SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
 
-要进一步了解支持的不同Android和iOS版本，请参阅兼容性 [表](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html#MobileSDK) 。
+要进一步了解支持的不同Android和iOS版本，请参阅兼容性 [表](../../rn/using/compatibility-matrix.md#MobileSDK) 。
 
 ## 加载活动SDK {#loading-campaign-sdk}
 
