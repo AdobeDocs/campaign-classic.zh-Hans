@@ -1,6 +1,6 @@
 ---
-title: 关于Adobe Campaign Classic数据模型
-description: 了解如何扩展 Campaign 数据模型、编辑模式、使用 API 等。
+title: Campaign Classic数据模型入门
+description: 了解如何扩展活动数据模型、编辑模式、使用API等
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -10,35 +10,21 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 6%
+source-wordcount: '983'
+ht-degree: 4%
 
 ---
 
 
-# About the Campaign data model{#about-data-model}
+# Campaign 数据模型快速入门{#about-data-model}
 
-本节介绍Adobe Campaign Classic数据模型的基础知识，以更好地了解活动内置表及其交互。
-
-Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间的交互组成。
-
-要访问每个表的说明，请转 **[!UICONTROL Admin > Configuration > Data schemas]**&#x200B;到，从列表中选择资源，然后单击选 **[!UICONTROL Documentation]** 项卡。
-
-![](assets/data-model_documentation-tab.png)
-
-有关默认Campaign Classic数据模型描述的详细信息，请参 [阅本节](../../configuration/using/data-model-description.md)。
-
-应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循 Adobe Campaign 特有的语法，称为模式。For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
+Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间的交互组成。本页中列出了主表和概念。
 
 ## 概述 {#data-model-overview}
 
 Adobe Campaign依赖于包含链接在一起的表的关系数据库。 Adobe Campaign数据模型的基本结构可以描述如下。
-
->[!NOTE]
->
->有关活动数据模型体系结构和相关最佳实践的详细信息，请参 [阅本节](../../configuration/using/data-model-best-practices.md#data-model-architecture)。
 
 ### 收件人表 {#recipient-table}
 
@@ -100,7 +86,7 @@ Adobe Campaign中开箱即用的收件人表为构建数据模型提供了良好
 
 ## Using a custom recipient table {#custom-recipient-table}
 
-在设计Adobe Campaign数据模型时，您可 [以使用现成的收件人表](#default-recipient-table)，或者决定创建非标准收件人表来存储您的营销用户档案。
+在设计Adobe Campaign收件人数据模型时，您可 [以使用现成的表](#default-recipient-table)，或决定创建自定 [义收件人表](../../configuration/using/about-custom-recipient-table.md) ，以存储营销用户档案。
 
 事实上，如果您的数据模型不符合以收件人为中心的结构，您可以设置其他表作为Adobe Campaign中的定位维度。 例如，当您需要目标家庭、帐户（如手机）和公司/站点，而不是简单的收件人时，这可能是相关的。
 
@@ -112,22 +98,29 @@ Adobe Campaign中开箱即用的收件人表为构建数据模型提供了良好
 
 使用自定义收件人表的好处如下：
 
-### 灵活的数据模型 {#flexible-data-model}
+* **灵活的收件人模型** -如果您不需要大多数收件人表字段，或者数据模型不是以收件人为中心，现成的表将毫无用处。
 
-如果您不需要大多数收件人表字段，或者数据模型不是以收件人为中心，现成的收件人表将毫无用处。
+* **可伸缩** 性——大卷需要简化表格，并且字段少，以便进行高效设计。 现成的收件人表中有太多无用的字段，这可能影响性能并且缺乏效率。
 
-### 可伸缩性 {#scalability}
+* **数据位置** -如果数据驻留在外部现有的营销收件人库上，则使用现成的营销表可能需要过多的精力。 基于现有结构创建新结构更简单。
 
-大型卷需要简化表格，并且字段少，这样才能进行高效设计。 现成的收件人表中有太多无用的字段，这可能影响性能并且缺乏效率。
-
-### 数据位置 {#data-location}
-
-如果数据驻留在外部现有的营销收件人库上，则使用现成的营销表可能需要过多的精力。 基于现有结构创建新结构更简单。
-
-### 轻松迁移 {#easy-migration}
-
-无需维护即可检查所有扩展在升级后是否仍然有效。
+* **轻松迁移** -无需维护即可检查所有扩展在升级后是否仍然有效。
 
 >[!IMPORTANT]
 >
 >使用自定义收件人表是为高级用户保留的，并受某些限制。 有关更多信息，请参阅[此章节](../../configuration/using/about-custom-recipient-table.md)。
+
+## 相关主题
+
+在以下几节中进一步了解活动数据模型：
+
+* **主表的说明** -有关默认Campaign Classic数据模型的详细说明，请参阅 [本节](../../configuration/using/data-model-description.md)。
+
+* **每个表的完整描述** -要访问每个表的完整描述，请转 **[!UICONTROL Admin > Configuration > Data schemas]**&#x200B;到，从列表中选择一个资源，然后单击选 **[!UICONTROL Documentation]** 项卡。
+
+   ![](assets/data-model_documentation-tab.png)
+
+
+* **活动** 模式-应用程序中所承载数据的物理和逻辑结构用XML进行描述。 它遵循 Adobe Campaign 特有的语法，称为模式。For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
+
+* **数据模型最佳实践** -在本节中学习活动数据模型体系结构和相关 [的最佳实践](../../configuration/using/data-model-best-practices.md#data-model-architecture)。
