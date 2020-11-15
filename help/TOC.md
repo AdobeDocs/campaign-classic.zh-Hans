@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: b8548e8d609ed099433b97b4c0704d27234e81c0
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
 workflow-type: tm+mt
-source-wordcount: '2156'
-ht-degree: 99%
+source-wordcount: '2167'
+ht-degree: 97%
 
 ---
 
@@ -82,17 +82,6 @@ ht-degree: 99%
       + [访问管理](platform/using/access-management.md)
       + [使用数据包](platform/using/working-with-data-packages.md)
       + [管理明细列表](platform/using/managing-enumerations.md)
-      + [外部帐户](platform/using/external-accounts.md)
-   + 访问外部数据库 (FDA){#accessing-external-database}
-      + [关于联合数据访问 (FDA)](platform/using/about-fda.md)
-      + [配置 FDA 连接器](platform/using/specific-configuration-database.md)
-      + [旧版连接器](platform/using/legacy-connectors.md)
-      + [远程数据库访问权限](platform/using/remote-database-access-rights.md)
-      + [连接到数据库](platform/using/connecting-to-database.md)
-      + [创建数据模式](platform/using/creating-data-schema.md)
-      + [定义数据映射](platform/using/defining-data-mapping.md)
-      + [其他选项](platform/using/additional-options.md)
-      + [附录](platform/using/appendices-fda.md)
    + 连接器 {#connectors}
       + [关于连接器](platform/using/about-connectors.md)
       + [CRM 连接器](platform/using/crm-connectors.md)
@@ -460,7 +449,7 @@ ht-degree: 99%
       + [工作流属性](workflow/using/workflow-properties.md)
       + [高级参数](workflow/using/advanced-parameters.md)
       + [JavaScript 脚本和模板](workflow/using/javascript-scripts-and-templates.md)
-      + [访问外部数据库 (FDA)](workflow/using/accessing-an-external-database--fda-.md)
+      + [访问外部数据库](workflow/using/accessing-an-external-database--fda-.md)
       + [管理权限](workflow/using/managing-rights.md)
       + [管理活动图像](workflow/using/managing-activity-images.md)
       + [管理偏好](workflow/using/managing-propensity.md)
@@ -585,7 +574,7 @@ ht-degree: 99%
    + 附件 {#annexes}
       + [Facebook 应用程序示例](social/using/examples-of-facebook-apps.md)
       + [跟踪](social/using/tracking.md)
-+ 安装 Campaign Classic {#installing-campaign-classic}
++ 安装和配置指南 {#installing-campaign-classic}
    + 架构原理 {#architecture-and-hosting-models}
       + [一般架构](installation/using/general-architecture.md)
       + 托管模型{#hosting-models-lp}
@@ -633,6 +622,23 @@ ht-degree: 99%
       + [配置 SpamAssassin](installation/using/configuring-spamassassin.md)
       + [中间源服务器](installation/using/mid-sourcing-server.md)
       + [互动 - 数据缓冲区](installation/using/interaction---data-buffer.md)
+      + [配置外部帐户](installation/using/external-accounts.md)
+   + 访问外部数据库 {#accessing-external-database}
+      + [开始使用联合数据访问](installation/using/about-fda.md)
+      + 配置准则 {#config-databases}
+         + [配置步骤](installation/using/configure-fda.md)
+         + [配置Snowflake](installation/using/configure-fda-snowflake.md)
+         + [配置Azure突触](installation/using/configure-fda-synapse.md)
+         + [配置Hadoop](installation/using/configure-fda-hadoop.md)
+         + [配置Oracle](installation/using/configure-fda-oracle.md)
+         + [配置Netezza](installation/using/configure-fda-netezza.md)
+         + [配置Sybase IQ](installation/using/configure-fda-sybase.md)
+         + [配置Teradata](installation/using/configure-fda-teradata.md)
+         + [配置SAP HANA](installation/using/configure-fda-sap-hana.md)
+      + [远程访问权限](installation/using/remote-database-access-rights.md)
+      + [连接到数据库](installation/using/connecting-to-database.md)
+      + [创建数据模式](installation/using/creating-data-schema.md)
+      + [定义数据映射](installation/using/defining-data-mapping.md)
    + 附录 {#appendices}
       + [服务器配置文件](installation/using/the-server-configuration-file.md)
       + [Campaign 网络端点](installation/using/campaign-network-endpoints.md)
@@ -640,7 +646,7 @@ ht-degree: 99%
       + [创建新实例](installation/using/creating-new-instances.md)
       + [Campaign 选项列表](installation/using/configuring-campaign-options.md)
       + [卸载 Campaign](installation/using/uninstalling-campaign.md)
-+ 监控 Campaign Classic {#monitoring-campaign-classic}
++ 监视指南 {#monitoring-campaign-classic}
    + 简介 {#introduction}
       + [前言](production/using/foreword.md)
       + [一般架构](production/using/general-architecture.md)
@@ -688,7 +694,7 @@ ht-degree: 99%
       + [控制台更新](production/using/console-update.md)
       + [密码丢失](production/using/lost-password.md)
       + [JSP 行为](production/using/jsp-behavior.md)
-+ 配置 Campaign Classic {#configuring-campaign-classic}
++ 开发人员指南 {#configuring-campaign-classic}
    + 数据模型 {#data-model}
       + [关于数据模型](configuration/using/about-data-model.md)
       + [数据模型描述](configuration/using/data-model-description.md)
@@ -746,7 +752,7 @@ ht-degree: 99%
       + [在站点中插入标记](configuration/using/inserting-tags-in-your-site.md)
       + [收集所有访问](configuration/using/collecting-all-visits.md)
       + [匿名跟踪](configuration/using/anonymous-tracking.md)
-+ 迁移到新版本 {#migrating-to-a-new-version}
++ 迁移指南 {#migrating-to-a-new-version}
    + 迁移概述 {#migration-overview}
       + [关于迁移](migration/using/about-migration.md)
       + [迁移方法](migration/using/migration-method.md)
