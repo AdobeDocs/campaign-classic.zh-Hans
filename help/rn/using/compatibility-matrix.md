@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
+source-git-commit: 75ab345e3b9360229ecc3ba9529a33e320228fa0
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '538'
 ht-degree: 13%
 
 ---
@@ -170,7 +170,7 @@ ht-degree: 13%
 >
 >PostgreSQL是托管环境的默认数据库服务器。
 
-## CRM connectors{#CRMconnectors}
+## CRM 连接器{#CRMconnectors}
 
 <table>
 <tbody>
@@ -342,4 +342,4 @@ ht-degree: 13%
 * [Campaign Classic发行说明](../../rn/using/latest-release.md)
 * [安装指南](../../installation/using/general-architecture.md)
 * [已弃用的功能和系统](../../rn/using/deprecated-features.md)
-* [构建升级过程](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)
+* [构建升级过程](../../production/using/build-upgrade.md)
