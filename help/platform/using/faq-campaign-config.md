@@ -10,10 +10,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '759'
+translation-type: tm+mt
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+workflow-type: tm+mt
+source-wordcount: '754'
 ht-degree: 100%
 
 ---
@@ -59,11 +59,11 @@ Adobe Campaign 目前提供英语、法语、德语和日语共 4 种语言的�
 
 Adobe Campaign 提供了联合数据访问 (FDA) 选项，以处理存储在一个或多个外部数据库中的信息：无需改变 Adobe Campaign 数据的结构就可以访问外部数据。
 
-[单击此处了解更多信息](../../platform/using/connecting-to-database.md)。
+[单击此处了解更多信息](../../installation/using/connecting-to-database.md)。
 
 ## 我能将 Campaign 连接到哪些外部数据库？{#which-external-databases-can-i-connect-campaign-to-}
 
-[兼容性表](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)中列出了通过联合数据访问 (FDA) 与 Campaign 兼容的外部数据库。
+[兼容性表](../../rn/using/compatibility-matrix.md)中列出了通过联合数据访问 (FDA) 与 Campaign 兼容的外部数据库。
 
 ## Adobe Campaign 可与轻型目录访问协议 (LDAP) 相集成吗？{#can-adobe-campaign-integrate-with-ldap-}
 
