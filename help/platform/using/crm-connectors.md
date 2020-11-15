@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2536'
 ht-degree: 4%
 
 ---
@@ -38,7 +38,7 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 下面列出的CRM可以集成到Adobe Campaign中。
 
-兼容性矩阵中详细介绍了 [支持的版本](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
+支持的版本详见活动 [兼容性表](../../rn/using/compatibility-matrix.md)。
 
 * **Salesforce.com**
 
