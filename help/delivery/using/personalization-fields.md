@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 8%
 
 在投放分析期间，此选项自动创建并执行一个工作流，该工作流将链接到目标的所有数据存储在临时表中，包括来自链接到联合数据访问的表的数据。
 
-选中此选项可以在处理大量数据时大幅提高投放分析性能，尤其是当个性化数据通过联合数据访问从外部表时。 有关此方面的详细信息，请 [参阅访问外部数据库(联合数据访问)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data)。
+选中此选项可以在处理大量数据时大幅提高投放分析性能，尤其是当个性化数据通过联合数据访问从外部表时。 有关此方面的详细信息，请 [参阅访问外部数据库(联合数据访问)](../../installation/using/about-fda.md)。
 
 例如，如果您在邮件内容中使用大量收件人和／或个性化块时向大量个性化字段传送时遇到性能问题，此选项可加快个性化处理，从而加快邮件传送。
 
