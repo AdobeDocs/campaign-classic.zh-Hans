@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: migration-overview
 discoiquuid: 3ac779a7-1f91-4c1c-a439-10d01697326a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 4%
+source-wordcount: '320'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ v7中仍支持32位版本的Adobe Campaign库和操作系统，但将来版本�
 >
 >Adobe Campaign5.11和6.02中支持的某些软件版本在Adobe Campaignv7中不再受支持。
 >
->有关Adobe Campaign支持的版本的详细信息，请查阅兼容 [性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
+>有关Adobe Campaign支持的版本的详细信息，请查阅兼容 [性矩阵](../../rn/using/compatibility-matrix.md)。
 
 ## 关键迁移步骤 {#key-migration-steps}
 
