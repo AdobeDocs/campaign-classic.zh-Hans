@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: administration-basics
 discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 2%
@@ -103,7 +103,7 @@ Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这�
 
 >[!NOTE]
 >
->该字 **[!UICONTROL Session timeout]** 段允许您调整联合数据访问会话超时之前的延迟。 有关此内容的详细信息，请参 [阅关于联合数据访问](../../platform/using/about-fda.md)。
+>该字 **[!UICONTROL Session timeout]** 段允许您调整联合数据访问会话超时之前的延迟。 有关此内容的详细信息，请参 [阅关于联合数据访问](../../installation/using/about-fda.md)。
 
 ### 操作员的时区 {#time-zone-of-the-operator}
 
