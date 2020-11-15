@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-management
 discoiquuid: 1ca7ec80-18d1-4e94-bfe6-16ecd094fdf3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 55%
@@ -31,4 +31,4 @@ Adobe Campaign 提供了联合数据访问 (FDA) 选项，以处理存储在一�
 * 扩充
 * 数据加载
 
-联合数据访问选项的使用取决于您的Adobe Campaign许可证。 配置此选项以及与使用该选项相关的最佳实践和限制将在本节中详细 [介绍](../../platform/using/about-fda.md)。
+联合数据访问选项的使用取决于您的Adobe Campaign许可证。 配置此选项以及与使用该选项相关的最佳实践和限制将在本节中详细 [介绍](../../installation/using/about-fda.md)。
