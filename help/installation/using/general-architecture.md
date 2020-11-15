@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 7c28c179-eb18-437e-baf2-25829566c766
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 1%
+source-wordcount: '1336'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe Campaign基于面向服务的体系结构(SOA)，并包含多个功能模�
 
 >[!CAUTION]
 >
->如果未明确说明，Adobe Campaign平台的所有组件上的安装、更新和维护由托管这些组件的计算机管理员负责。 这包括实现Adobe Campaign应用程序的先决条件，并遵守组件 [之间的兼容性](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html) 矩阵。
+>如果未明确说明，Adobe Campaign平台的所有组件上的安装、更新和维护由托管这些组件的计算机管理员负责。 这包括实现Adobe Campaign应用程序的先决条件，并遵守组件之间 [的活动兼容](../../rn/using/compatibility-matrix.md) 性矩阵。
 
 ## 表示层 {#presentation-layer}
 
