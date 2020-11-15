@@ -1,8 +1,6 @@
 ---
 title: 开始迁移前
-seo-title: 开始迁移前
 description: 开始迁移前
-seo-description: null
 page-status-flag: never-activated
 uuid: b9325510-2fa5-4be4-9cf0-f37232bbbd8c
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: migration-procedure
 discoiquuid: d8877378-fb43-4f32-91c6-60f2f788f916
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 3%
+source-wordcount: '524'
+ht-degree: 1%
 
 ---
 
@@ -27,6 +25,13 @@ ht-degree: 3%
 >在此文档中，以链接到数据库的命令为例。 这些属性可能因配置而异。 与数据库管理员联系。
 
 ## 警告 {#warnings}
+
+* 迁移过程必须由专家用户执行。 您必须至少得到Adobe Campaign库专家、系统管理员和应用程序开发人员的协助。
+* 开始迁移之前，请检查您使用的系统和系统组件是否与v7实际兼容。 请查阅兼 [容性矩阵](../../rn/using/compatibility-matrix.md)。
+* 如果您使用Adobe Campaign云消息(中间源)，请在开始整个迁移过程之前与Adobe联系。
+* 在开始迁移过程之前， **您必** 须备份数据。
+* 迁移过程可能需要数天才能完成。
+* Adobe Campaignv7在配置方面比5.11和6.02版本更严格。 这主要是为了避免数据损坏等问题，并在数据库中保持数据完整性。 因此，v5.11和v6.02中提供的某些功能在v7中可能不再工作，因此在迁移后可能需要调整。 在投入生产之前，我们建议您系统地测试所有配置，特别是使用工作流所必需的Adobe Campaign。
 
 ### 已安装版本 {#installed-version}
 
@@ -45,7 +50,7 @@ ht-degree: 3%
 
 ### 建议 {#recommendation}
 
-由于迁移过程特别敏感，我们强烈建议在开始该过程之前彻底阅读此文档。
+由于迁移过程是敏感的，我们强烈建议在开始该过程之前彻底阅读此文档。
 
 ## 迁移步骤 {#migration-steps}
 
@@ -64,10 +69,6 @@ ht-degree: 3%
    1. 迁移重定向和跟踪服务器(Apache / IIS)。
    1. 迁移Power Booster/群集服务器。
    1. 迁移营销服务器。
-
->[!NOTE]
->
->v6.02营销服务器与v7云消息或Power Booster/Cluster服务器之间可进行通信。 但是，如果您决定保留v6.02营销服务器，则必须使用最新v6.02版本更新此版本，然后才能迁移到云消息或Power Booster/Cluster。
 
 ## 用户密码 {#user-passwords}
 
