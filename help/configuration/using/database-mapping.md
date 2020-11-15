@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1976'
 ht-degree: 0%
@@ -373,7 +373,7 @@ SQL字段约束如下所示：
 * ![](assets/join_fda_11.png) :基数1-1
 * ![](assets/join_fda_1m.png) :基数1-N
 
-有关联合数据访问表的详细信息，请参阅 [访问外部数据库](../../platform/using/about-fda.md)。
+有关联合数据访问表的详细信息，请参阅 [访问外部数据库](../../installation/using/about-fda.md)。
 
 必须在包含通过主元素链接的表的外键的模式中声明链接：
 
