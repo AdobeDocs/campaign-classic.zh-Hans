@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: action-activities
 discoiquuid: 18d6f5e1-308f-4080-b7c4-ebf836f74842
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 1%
+source-wordcount: '394'
+ht-degree: 3%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 1%
 
 在配置活动之前，请确保满足以下先决条件：
 
-* 该活动仅适用于远程数据源。 因 **[!UICONTROL FDA]** 此，(联合数据访问)包必须安装在实例上(请参 [阅本节](../../platform/using/about-fda.md))。
-* 出站模式必须存在于联合数据访问库中，并且必须链接到数据库(有关数据模式的详细信息，请参 [阅此部分](../../configuration/using/about-schema-reference.md))。
-* 执行工作流的运算符必须具有 **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** 命名权限。 For more on named rights, refer to [this section](../../platform/using/access-management.md#named-rights).
+* 该活动仅适用于远程数据源。 因 **[!UICONTROL FDA]** 此，(联合数据访问)包必须安装在实例上。 [了解详情](../../installation/using/about-fda.md)。
+* 出站模式必须存在于联合数据访问库中，并且必须链接到出站数据库。 [了解详情](../../configuration/using/about-schema-reference.md)。
+* 执行工作流的运算符必须具有 **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** 命名权限。 [了解详情](../../platform/using/access-management.md#named-rights)。
 
 ## 配置SQL数据管理活动 {#configuring-the-sql-data-management-activity}
 
