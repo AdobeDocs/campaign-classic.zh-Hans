@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: 1781648fc17d729f451664204f99a77dfaa8c824
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 2%
+source-wordcount: '1301'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-支持的数据库在兼容性矩阵一 [节中介绍](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
+支持的活动库列在 [兼容性矩阵中](../../rn/using/compatibility-matrix.md)。
 
 识别服务器并选择要执行的操作类型。 在这个例子中， **[!UICONTROL Create or recycle a database]**。
 
