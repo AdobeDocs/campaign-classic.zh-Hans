@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: 79f1e85a-b5e6-4875-ac57-ab979fc57079
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 3%
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 添加其他数据后，您可以编辑它或使用它来优化在查询活动中定义的目标。
 
-通过 **[!UICONTROL Edit additional data...]** 该链接，您可以视图添加的数据，并修改它或将其添加到它。
+通过 **[!UICONTROL Edit additional data...]** 该链接，您可以视图添加的数据并修改它或将其添加到它。
 
 ![](assets/wf_add_data_edit_link.png)
 
@@ -180,7 +180,7 @@ ht-degree: 3%
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   有关更多信息，请参阅此](../../platform/using/about-fda.md)章节[。
+   有关更多信息，请参阅此](../../installation/using/about-fda.md)章节[。
 
 然后，我们需要添加新子集：
 
