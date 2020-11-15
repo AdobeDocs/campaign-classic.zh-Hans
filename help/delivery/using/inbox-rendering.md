@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -41,7 +41,7 @@ The mobile, messaging and webmail clients available for **Inbox rendering** in A
 对于预置安装，请按照以下步骤配置收件箱渲染。
 
 1. 通过 **[!UICONTROL Inbox rendering (IR)]** > >菜单 **[!UICONTROL Tools]** 安 **[!UICONTROL Advanced]** 装包 **[!UICONTROL Import package]** 。 有关此方面的详细信息，请参 [阅安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md)。
-1. 通过> >节点配置HTTP类 **[!UICONTROL Administration]** 型 **[!UICONTROL Platform]** 的外部帐户 **[!UICONTROL External Accounts]** 。 有关此内容的详细信息，请 [参阅创建外部帐户](../../platform/using/external-accounts.md#creating-an-external-account)。
+1. 通过> >节点配置HTTP类 **[!UICONTROL Administration]** 型 **[!UICONTROL Platform]** 的外部帐户 **[!UICONTROL External Accounts]** 。 有关此内容的详细信息，请 [参阅创建外部帐户](../../installation/using/external-accounts.md#creating-an-external-account)。
 1. 按如下方式设置外部帐户参数：
    * **[!UICONTROL Label]**:可交付性服务器信息
    * **[!UICONTROL Internal name]**:deliverabilityInstance
