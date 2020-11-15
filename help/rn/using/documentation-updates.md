@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '3932'
 ht-degree: 98%
@@ -148,7 +148,7 @@ Experience Cloud Triggers 和 Adobe Campaign Classic 集成页面已移至[此�
 
 支持表情符号 - [阅读更多](../../delivery/using/customizing-emoticon-list.md)
 
-Azure Synapse FDA 连接器 - [阅读更多](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse)
+Azure Synapse FDA 连接器 - [阅读更多](../../installation/using/configure-fda-synapse.md)
 
 泰国和巴西隐私法 - [阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
@@ -188,7 +188,7 @@ Spam Assassin 安装部分已更新为新的安装文件名。[了解详情](../
 
 ## 2020 年 4 月 {#april-2020}
 
-联合数据访问 (FDA) 权限表已移至访问外部数据库 (FDA) 文档。[阅读更多](../../platform/using/remote-database-access-rights.md)
+联合数据访问 (FDA) 权限表已移至访问外部数据库 (FDA) 文档。[阅读更多](../../installation/using/remote-database-access-rights.md)
 
 常见问题解答已更新，其中包含有关如何清除软缓存和硬缓存的提示。[阅读更多](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
 
@@ -232,9 +232,9 @@ Adobe Campaign 增强 MTA 文章已更新。现在只适用于 Campaign Classic�
 
 **20.1 版本中包含的新功能**
 
-Snowflake FDA 连接器 - [阅读更多](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
+Snowflake FDA 连接器 - [阅读更多](../../installation/using/configure-fda-snowflake.md)
 
-Hadoop FDA 连接器增强 - [阅读更多](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)
+Hadoop FDA 连接器增强 - [阅读更多](../../installation/using/configure-fda-hadoop.md)
 
 **随版本提供的其他文档更新**
 
@@ -292,7 +292,7 @@ Adobe Campaign 增强 MTA 文章已更新，其中包含有关在未向每封邮
 
 “WdbcOptions_TempDbName”选项已添加到 Campaign 选项的列表。[阅读更多](../../installation/using/configuring-campaign-options.md)
 
-FDA 矩阵页面已移到[此处](../../platform/using/remote-database-access-rights.md)。
+FDA 矩阵页面已移到[此处](../../installation/using/remote-database-access-rights.md)。
 
 “访问权限矩阵”页面已移到[此处](https://docs.adobe.com/content/help/zh-Hans/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)。
 
