@@ -1,8 +1,6 @@
 ---
 title: 迁移警告
-seo-title: 迁移警告
 description: 迁移警告
-seo-description: null
 page-status-flag: never-activated
 uuid: 35361471-881c-4aaf-a57b-ed7e89a97eae
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: migration-overview
 discoiquuid: 1fa1fe0f-c392-413a-9fa0-d1b4e10e2e5e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 6%
+source-wordcount: '181'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +21,7 @@ ht-degree: 6%
 # 迁移警告{#migration-warnings}
 
 * 迁移过程为专家用户保留。 您必须至少得到Adobe Campaign库专家、系统管理员和应用程序开发人员的协助。
-* 开始迁移之前，请检查您使用的系统和系统组件是否与v7实际兼容。 请查阅兼 [容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
+* 开始迁移之前，请检查您使用的系统和系统组件是否与v7实际兼容。 请查阅兼 [容性矩阵](../../rn/using/compatibility-matrix.md)。
 * 如果您使用Adobe Campaign云消息(以前为中间源)，请在开始整个迁移过程之前与Adobe Campaign联系。
 * 在开始迁移过程之前， **您必** 须备份数据。
 * 迁移过程可能需要数天才能完成。
