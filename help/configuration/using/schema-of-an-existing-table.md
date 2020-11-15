@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 6877d94d-d6e5-4080-a537-ef1bb6e6f8cf
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 11%
@@ -68,4 +68,4 @@ ht-degree: 11%
 
 联合数据访问 **-联合数据访问选项** ，允许您访问存储在外部数据库中的数据。
 
-本页详细介绍了在外部模式库中访问数据的 [配置](../../platform/using/creating-data-schema.md)。
+本页详细介绍了在外部模式库中访问数据的 [配置](../../installation/using/creating-data-schema.md)。
