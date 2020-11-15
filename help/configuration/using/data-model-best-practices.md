@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '4014'
 ht-degree: 1%
@@ -83,7 +83,7 @@ Adobe Campaign默认文档中显示 [数据模型](../../configuration/using/dat
 
 如果字段具有定位或个性化目的，则需要将其存储在表中。 换言之，如果字段不用于发送个性化电子邮件或用作查询中的标准，则会占用磁盘空间，而它是无用的。
 
-对于混合型和预置型实例，联合数据访问(联合数据访问，允许访问外部数据的可选功能)涵盖在活动过程中“实时”添加字段的需要。 如果您有联合数据访问，则无需导入所有内容。 有关此内容的详细信息，请参 [阅关于联合数据访问](../../platform/using/about-fda.md)。
+对于混合型和预置型实例，联合数据访问(联合数据访问，允许访问外部数据的可选功能)涵盖在活动过程中“实时”添加字段的需要。 如果您有联合数据访问，则无需导入所有内容。 有关此内容的详细信息，请参 [阅关于联合数据访问](../../installation/using/about-fda.md)。
 
 ### 密钥选择 {#choice-of-keys}
 
