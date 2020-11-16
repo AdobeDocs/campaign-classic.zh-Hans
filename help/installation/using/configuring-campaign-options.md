@@ -1,8 +1,6 @@
 ---
 title: 配置活动选项
-seo-title: 配置活动选项
-description: 配置活动选项
-seo-description: null
+description: 了解如何配置活动选项
 page-status-flag: never-activated
 uuid: 32e85e41-6898-4fb3-90c8-2201ceea2e91
 contentOwner: sauviat
@@ -12,7 +10,7 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
 translation-type: tm+mt
-source-git-commit: 63b208e5607bdcddaef03292d229847c4b7366f8
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 0%
