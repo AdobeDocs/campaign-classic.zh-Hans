@@ -10,15 +10,15 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
 translation-type: tm+mt
-source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '824'
-ht-degree: 1%
+ht-degree: 7%
 
 ---
 
 
-# iOS的配置步骤 {#configuring-the-mobile-application-in-adobe-campaign-ios}
+# iOS 配置步骤 {#configuring-the-mobile-application-in-adobe-campaign-ios}
 
 安装包后，您可以在Adobe Campaign Classic定义iOS应用程序设置。
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   > 从活动20.3版本开始，iOS旧版二进制连接器已弃用。 如果您使用此连接器，则需要相应地调整实施。 [了解详情](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+   > 从 Campaign 20.3 版本开始，弃用 iOS 旧版二进制连接器。如果您使用的是此连接器，则需要相应地调整实施。[了解详情](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)
 
    ![](assets/nmac_connectors.png)
 
@@ -110,7 +110,7 @@ ht-degree: 1%
 
 1. 选择 **[!UICONTROL Authentication mode]**。请注意，以后您始终可以在移动应用程序的选项卡 **[!UICONTROL Certificate]** 中更改身份验证模式。
    * **[!UICONTROL Certificate-based authentication]**:单 **[!UICONTROL Enter the certificate...]** 击，然后选择p12键并输入由移动应用程序开发人员提供的口令。
-   * **[!UICONTROL Token-based authentication]**:填写连接设 **[!UICONTROL Key ID]**&#x200B;置， **[!UICONTROL Team ID]** 然后 **[!UICONTROL Bundle ID]** 单击选择p8证书 **[!UICONTROL Enter the private key]**。 For more on **[!UICONTROL Token-based authentication]**, refer to [Apple documentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apnsToken-based).
+   * **[!UICONTROL Token-based authentication]**:填写连接设 **[!UICONTROL Key ID]**&#x200B;置， **[!UICONTROL Team ID]** 然后 **[!UICONTROL Bundle ID]** 单击选择p8证书 **[!UICONTROL Enter the private key]**。 For more on **[!UICONTROL Token-based authentication]**, refer to [Apple documentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns).
 
    >[!NOTE]
    >
