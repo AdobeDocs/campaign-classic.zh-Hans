@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1333'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ Adobe Campaign工作流热图包含当前运行的所有工作流的颜色编码
 
 使用Workflow HeatMap需要充分了解以下概念： [工作流](../../workflow/using/about-workflows.md)、 [活动](../../workflow/using/about-activities.md) 和工 [作流最佳实践](../../workflow/using/workflow-best-practices.md)。
 
-默认情况下，从18.10版开始的Adobe Campaign中提供工作流热图。 如果您的内部版本介于8700和8977(18.10)之间，您还可以从此功能中受益。 要请求相应的包，请与 [Adobe](https://support.neolane.net/) “客户服务”部门联系 [，并按照本](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) 页中的说明，了解如何安装它。
+默认情况下，从18.10版开始的Adobe Campaign中提供工作流热图。 如果您的内部版本介于8700和8977(18.10)之间，您还可以从此功能中受益。 要请求相应的包，请与 [Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) “客户服务”部门联系 [，并按照本](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) 页中的说明，了解如何安装它。
 
 首次访问Worklow HeatMap时，将显示以下弹出窗口。 本协议允许在美国进行转让和存储，允许Adobe Campaign:
 
