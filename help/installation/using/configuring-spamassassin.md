@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: aa37bdc6-0f85-4eca-859f-e8b15083cfb5
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,7 @@ SpamAssassin是一款用于过滤不需要的电子邮件的软件。 与此软�
 
 ### 安装SpamAssassin {#installing-spamassassin}
 
-1. 使用您的用 [户凭据](http://support.neolane.net) ，连接到Extranet门户。
-1. 转至下 **载中心** ，然后浏览页面以查找“工 **具** ”部分。
+1. 使用您的用 [户凭据连接](https://experience.adobe.com/downloads) 到软件分发门户。 在本页中进一步了解软 [件分发](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)。
 1. 下载 **Neolane Spam Assassin（Windows安装）(2.0)文件** (neolane_spamassassin.2.0.zip)。
 1. 将此文件复制到Adobe Campaign服务器上，然后将其解压缩。
 
