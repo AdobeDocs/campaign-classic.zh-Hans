@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 8%
+source-wordcount: '2367'
+ht-degree: 7%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->这栋建筑已被收回。 请升 [级到最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或与技 [术支持联系](https://support.neolane.net/)。
+>这栋建筑已被收回。 请升 [级到最新版本](../../production/using/build-upgrade.md) ，或与 [Adobe客户服务联系](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **改进**
 
@@ -87,7 +87,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->这栋建筑已被收回。 请升 [级到最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或与技 [术支持联系](https://support.neolane.net/)。
+>这栋建筑已被收回。 请升 [级到最新版本](../../production/using/build-upgrade.md) ，或与 [Adobe客户服务联系](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **改进**
 
@@ -109,7 +109,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->这栋建筑已被收回。 请升 [级到最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或与技 [术支持联系](https://support.neolane.net/)。
+>这栋建筑已被收回。 请升 [级到最新版本](../../production/using/build-upgrade.md) ，或与 [Adobe客户服务联系](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **新增功能**
 
@@ -122,7 +122,7 @@ ht-degree: 8%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 推送通知改进<br /> </td> 
+   <td> Push notification improvements<br /> </td> 
    <td> 在Adobe Campaign中已对推送通知实施了多项增强：<br /> 
     <ul> 
      <li> <p>在iOS中跟踪静默通知 </p> </li> 
@@ -151,7 +151,7 @@ ht-degree: 8%
 
 **改进**
 
-* Campaign Classic API 现在可在[专用页面](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)中使用。如果您使用的是 jsapi.chm 文件，您现在应该参阅新的在线版本。
+* Campaign Classic API 现在可在[专用页面](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)中使用。如果您使用的是 jsapi.chm 文件，您现在应该参阅新的在线版本。
 * 现在支持PostgreSQL 10、Debian 9和Teradata 16.20。 请参阅[兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
 * 创建SFTP连接时，您现在可以使用代理身份验证。 For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
 * 使 **用直邮投放** 创建单个投放时，投放模板属性中现在提供“日期计算公式”选项。 (NEO-9792)
