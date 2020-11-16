@@ -1,8 +1,6 @@
 ---
 title: 了解投放失败
-seo-title: 了解投放失败
-description: 了解投放失败
-seo-description: null
+description: 了解如何了解投放故障
 page-status-flag: never-activated
 uuid: 03a91f84-77fe-40a9-8be9-a6a35a873ae1
 contentOwner: sauviat
@@ -12,7 +10,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
 source-wordcount: '2440'
 ht-degree: 16%
