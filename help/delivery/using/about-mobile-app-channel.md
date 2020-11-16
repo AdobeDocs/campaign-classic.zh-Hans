@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 6b3fe8b9-dae6-4f8e-83e1-3376c0fe72a5
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -95,7 +95,7 @@ Adobe Campaign服务器必须能够通过以下端口与APNs服务器联系：
 
    >[!NOTE]
    >
-   > 从活动20.3版本开始，iOS旧版二进制连接器已弃用。 如果您使用此连接器，则需要相应地调整实施。 [了解详情](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+   > 从 Campaign 20.3 版本开始，弃用 iOS 旧版二进制连接器。如果您使用的是此连接器，则需要相应地调整实施。[了解详情](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)
 
 要检查它是否正常工作，请使用以下命令：
 
