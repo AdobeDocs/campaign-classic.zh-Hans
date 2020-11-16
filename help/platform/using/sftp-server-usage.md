@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 59%
+source-wordcount: '1007'
+ht-degree: 51%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 59%
 * 服务器大小容量因许可证而异。在任何情况下，尽量保持最小数据，并且只在需要的时间内保留数据（15 天是最长时间限制）。
 * 使用基于密钥的身份验证而不是密码身份验证，以避免密码过期（密码的有效期为 90 天）。此外，基于密钥的身份验证允许您生成多个密钥，例如在管理多个实体时。相反，密码身份验证要求您与所管理的所有实体共享密码。
 
-   支持的密钥格式为 SSH-2 RSA 2048。密钥可以通过 PuTTY (Windows) 或 ssh-keygen (Unix) 等工具生成。您将必须通过[支持票证](https://support.neolane.net)为 Adobe 支持团队提供公共密钥，将它上传到 Campaign 服务器上。
+   支持的密钥格式为 SSH-2 RSA 2048。Keys can be generated with tools like PyTTY (Windows), or ssh-keygen (Unix).You will have to provide the public key to Adobe Support team via [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) to have it uploaded on the Campaign server.
 
 * 按照工作流程正确删除数据（通过消费数据的工作流程来管理保留）。
 * 在 SFTP 上传和工作流程中使用批处理。
@@ -45,7 +45,7 @@ ht-degree: 59%
 * 时常登入 SFTP 以直接检查其内容。
 * 请记住，SFTP 硬盘的管理主要由您负责。
 * 默认情况下，您创建的所有文件夹仅为标识符的读/写模式。创建 Campaign 需要访问的文件夹时，请确保使用整个组的读/写权限进行配置。否则，出于安全原因，工作流程可能无法创建/删除文件，因为它们在同一组内的不同标识符下运行。
-* 您尝试从中启动SFTP连接的公共IP必须添加到活动允许列表程序实例上。 可通过支持票允许列表证请求向 [添加IP地址](https://support.neolane.net)。
+* 您尝试从中启动SFTP连接的公共IP必须添加到活动允许列表程序实例上。 可通过Adobe客户关允许列表怀请求向 [程序添加IP地址](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 >[!CAUTION]
 >
@@ -53,7 +53,7 @@ ht-degree: 59%
 
 ## Adobe托管SFTP服务器的连接问题 {#sftp-server-troubleshooting}
 
-以下部分列出了在遇到与 Adobe 托管的 SFTP 服务器的连接问题时，应通过[支持票证](https://support.neolane.net)检查并提供给 Adobe 支持团队的信息。
+The section below lists the information to check and provide to the Adobe Support team via [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) when encountering connection issues with Adobe hosted SFTP servers.
 
 1. 检查您的实例是否正在运行。To do this, open your browser, then make a **[!UICONTROL GET]** call on the instance **[!UICONTROL /r/test]** endpoint:
 
