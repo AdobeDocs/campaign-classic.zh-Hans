@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 7e56e4f98ffab752f0b86bb8620fb1b4af6a3dca
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 1%
+source-wordcount: '1158'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 
 1. 运 **行setup.exe**。
 
-   要下载此文件，请通过下载中心链接转 [到Adobe Campaign](https://support.neolane.net/)支持页 **面(https://support.neolane.net/** )。
+   要下载此文件，请使用您的用 [户凭据连接到](https://experience.adobe.com/downloads) “软件分发门户”。 在本页中进一步了解软 [件分发](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)。
 
 1. 选择安装模式：选择 **[!UICONTROL Update or repair]**
 1. 单击 **[!UICONTROL Next]** .
@@ -127,7 +127,7 @@ ht-degree: 1%
 
 ### 获取更新的包 {#obtain-updated-packages}
 
-开始：通过恢复更新的Adobe Campaign包：通过下载中心链接转 [到Adobe Campaign](https://support.neolane.net/)支 **持页面(** https://support.neolane.net/)。
+开始：通过恢复更新的Adobe Campaign包：使用您的用 [户凭据](https://experience.adobe.com/downloads) ，连接到软件分发门户。 在本页中进一步了解软 [件分发](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)。
 
 文件为 **nlserver6-v7-XXX.rpm**
 
