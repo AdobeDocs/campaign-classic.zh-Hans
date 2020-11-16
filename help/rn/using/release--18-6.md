@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 79a6d3cf-2425-49b9-9b92-b56be26438bf
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 8%
+source-wordcount: '795'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->这栋建筑已被收回。 请升 [级到最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或与技 [术支持联系](https://support.neolane.net/)。
+>这栋建筑已被收回。 请升 [级到最新版本](../../production/using/build-upgrade.md) ，或与 [Adobe客户服务联系](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **新增功能**
 
@@ -42,7 +42,7 @@ ht-degree: 8%
  <tbody> 
   <tr> 
    <td> 查询条带<br /> </td> 
-   <td> <p>当多个活动用户连接到同一联合数据访问Teradata外部帐户时，您现在可以传递每个用户特有的查询带（键／值对）。 每次活动用户对Teradata查询库执行时，Adobe Campaign现在能够发送与用户相关的元数据。 这些数据包含在一列表键和值中，然后Teradata管理员可以用于审核目的或管理访问权限，例如。</p><p>有关详细信息，请参阅<a href="https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#Teradata_external_account">详细文档</a>。</p> </td>
+   <td> <p>当多个活动用户连接到同一联合数据访问Teradata外部帐户时，您现在可以传递每个用户特有的查询带（键／值对）。 每次活动用户对Teradata查询库执行时，Adobe Campaign现在能够发送与用户相关的元数据。 这些数据包含在一列表键和值中，然后Teradata管理员可以用于审核目的或管理访问权限，例如。</p><p>有关详细信息，请参阅<a href="../../installation/using/external-accounts.md">详细文档</a>。</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -84,7 +84,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->这栋建筑已被收回。 请升 [级到最新版本](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) ，或与技 [术支持联系](https://support.neolane.net/)。
+>这栋建筑已被收回。 请升 [级到最新版本](../../production/using/build-upgrade.md) ，或与技 [术支持联系](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **新增功能**
 
