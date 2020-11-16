@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: content-management
 discoiquuid: 4abce633-647f-4ae4-9419-859f6e2e8628
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6d6f63fb6ac99c3a9e58a8670bc9bc59e6cfd420
 workflow-type: tm+mt
 source-wordcount: '1191'
 ht-degree: 1%
@@ -267,7 +267,7 @@ JavaScript **代码活动** ，检索每个生成文件的完整名称。
 <input label="File name" type="editbtn" xpath="/tmp/@name">
   <enter>
     <soapCall name="GetAndTransform" service="ncm:content">
-      <param exprIn="'https://server/incoming/' + [/tmp/@name] + '.xml'" type="string"/>
+      <param exprIn="'https://myserver.adobe.com/incoming/' + [/tmp/@name] + '.xml'" type="string"/>
       <param exprIn="'xtk:xslt|cus:book-workflow.xsl'" type="string"/>
       <param type="DOMElement" xpathOut="."/>
     </soapCall>
@@ -275,7 +275,7 @@ JavaScript **代码活动** ，检索每个生成文件的完整名称。
 </input>
 ```
 
-编辑区域允许您输入要检索的文件的名称。 URL是根据此名称构建的，例如：https://server/incomin/data.xml
+编辑区域允许您输入要检索的文件的名称。 URL是根据此名称构建的，例如：https://myserver.adobe.com/incomin/data.xml
 
 要检索的数据的格式与工作流自动化示例1中的格式相同。 我们将使用本示例中显示的“cus:book-workflow.xsl”样式表。
 
