@@ -1,6 +1,6 @@
 ---
-title: 关于Adobe Campaign Classic的可交付性
-description: 了解有关在Adobe Campaign Classic管理可交付性的更多信息。
+title: 关于活动中的可交付性
+description: 了解交付性最佳实践
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
