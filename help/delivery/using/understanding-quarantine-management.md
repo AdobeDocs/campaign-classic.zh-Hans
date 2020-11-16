@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '2802'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -157,7 +157,7 @@ If a user qualifies an email as a spam ([Feedback loop](../../delivery/using/tec
 **对于iOS —— 二进制连接器**
 
 >[!NOTE]
-从活动20.3版本开始，iOS旧版二进制连接器已弃用。 如果您使用此连接器，则需要相应地调整实施。 [了解详情](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+从 Campaign 20.3 版本开始，弃用 iOS 旧版二进制连接器。如果您使用的是此连接器，则需要相应地调整实施。[了解详情](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)
 
 对于每个通知，Adobe Campaign从APNs服务器接收同步和异步错误。 对于以下同步错误，Adobe Campaign会生成软错误：
 
