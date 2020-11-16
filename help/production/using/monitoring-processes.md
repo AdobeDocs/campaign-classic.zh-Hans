@@ -1,8 +1,6 @@
 ---
 title: 监控流程
-seo-title: 监控流程
-description: 监控流程
-seo-description: null
+description: 了解如何监控活动流程
 page-status-flag: never-activated
 uuid: 9dc1461f-5e95-454d-8df5-19baab85f184
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 968d0ee3-5efc-46d8-b408-b9cce3e730c4
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '3600'
+source-wordcount: '3602'
 ht-degree: 0%
 
 ---
@@ -319,7 +317,7 @@ SMTP投放监视报告已集成到Adobe Campaign平台中。 可以通过控制�
 
 >[!NOTE]
 >
->Cnx、Sent和 **Volume**&#x200B;列中显 **示的值**&#x200B;是根据字段中选定的时 **间计算的****[!UICONTROL Period]** 。
+>Cnx、Sent和 **Volume**&#x200B;列中显 **示的值**&#x200B;将根据字段中选定的 **时间段****[!UICONTROL Period]** 进行计算。
 
 单击某个域名以视图其错误。
 
