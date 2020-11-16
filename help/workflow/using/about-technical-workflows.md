@@ -1,8 +1,6 @@
 ---
 title: 关于技术工作流
-seo-title: 关于技术工作流
-description: 关于技术工作流
-seo-description: null
+description: 活动技术工作流列表
 page-status-flag: never-activated
 uuid: 60b66853-ae4f-458d-bd62-076f2d7c965f
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 0d65d47f-1f51-4757-8b1d-7d4a8ddc3c97
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 38%
+source-wordcount: '137'
+ht-degree: 35%
 
 ---
 
