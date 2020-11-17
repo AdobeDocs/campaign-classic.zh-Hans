@@ -1,8 +1,6 @@
 ---
 title: 关于模式版本
-seo-title: 关于模式版本
-description: 关于模式版本
-seo-description: null
+description: 开始使用模式版
 page-status-flag: never-activated
 uuid: edb4d47d-b507-4d86-9873-ebd5f6acefc6
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: editing-schemas
 discoiquuid: d5b08e4e-060c-4185-9dac-af270918e2b9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 30eaabba8962c518c734cc4e9ad27065cfe9d467
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1007'
 ht-degree: 7%
 
 ---
