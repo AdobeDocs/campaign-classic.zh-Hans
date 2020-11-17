@@ -1,6 +1,6 @@
 ---
 title: Adobe Campaign经典文档更新
-description: 本页列出了每个 Adobe Campaign Classic 版本的所有新增功能和文档更新。
+description: 本页列表了Adobe Campaign Classic每个版本的所有新增功能和文档更新
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 544fa260f9b35239a8fa8fbc141463a7b1898026
+source-git-commit: 58b7070ad765ba072b9c82e75ab1100f8cb38f3a
 workflow-type: tm+mt
-source-wordcount: '3528'
-ht-degree: 97%
+source-wordcount: '3568'
+ht-degree: 96%
 
 ---
 
@@ -25,6 +25,12 @@ ht-degree: 97%
 您还可以查阅 [Adobe Campaign Classic Release 发行说明](../../rn/using/latest-release.md) ，了解更多更新信息。
 
 ## 2020 年 11 月{#nov-2020}
+
+活动数据模型概述已得到改进和重新组织。 [阅读更多](../../configuration/using/about-data-model.md)。
+
+外部帐户配置已移 [到此部分](../../installation/using/external-accounts.md)。
+
+活动联合数据访问(联合数据访问)文档已得到改进，并且每个外部数据库配置都有详细信息，并已移 [到此部分](../../installation/using/about-fda.md)。
 
 [活动20.2.3版本已](../../rn/using/release--20-2.md#release-20-2-3-build-9182) 转为“一般可用性(GA)”。
 
