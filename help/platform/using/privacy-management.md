@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
+source-git-commit: 9240b6e194dbc26fbf37a9ecf88a1ae03f9e7a75
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Adobe Campaign优惠一组工具，帮助您遵守隐私权规定（包括GDPR�
 
 * 本节提供有关隐私管理的一般信息以及Adobe Campaign为管理访问权 [和被遗忘权而提供的功能](#right-access-forgotten)。
 
-* 它还包含有关管理隐私(同意、数[据保留和用户角色](#consent-retention-roles))的重要功能的信息，以及在使用Adobe Campaign时帮助您遵守隐私的最佳实践。
+* 它还包含有关管理隐私(同意、保留[和角色](#consent-retention-roles))的重要功能的信息，以及在使用Adobe Campaign时帮助您遵守隐私的最佳实践。
 
 ## 隐私管理法规 {#privacy-management-regulations}
 
@@ -74,7 +74,7 @@ https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/tutorials/p
 
 有关同意管理的详细信息，请参阅详 [细文档](../../delivery/using/managing-subscriptions.md)。
 
-除了Adobe Campaign提供的同意管理工具之外，您还可以跟踪消费者是否已选择出售个人信息。 请参阅[此章节](../../platform/using/privacy-requests.md#sale-of-personal-information) 。
+除了Adobe Campaign提供的同意管理工具之外，您还可以跟踪消费者是否已选择出售个人信息。 请参阅[此章节](../../platform/using/privacy-requests.md##sale-of-personal-information-ccpa) 。
 
 ### 数据保留 {#data-retention}
 
