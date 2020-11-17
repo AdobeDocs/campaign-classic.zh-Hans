@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dfa3938433fcd67eb8f38269e82ee1102eda41ce
+source-git-commit: a69c9132a776eac5591bbbac0c89d6374047bb17
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 2%
@@ -102,11 +102,7 @@ ht-degree: 2%
    >
    > 它 **[!UICONTROL Integration key]** 可以使用字符串值完全自定义，但必须与SDK中指定的值完全相同。
 
-1. 选择 **[!UICONTROL API version]**：
-
-   * HTTPV1。 此部分详细介绍了 [配置](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1)。
-   * HTTP（旧版）。 此部分详细介绍了 [配置](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http)。
-
+1. 选择 **[!UICONTROL API version]**:HTTP v1或HTTP（传统）。 本节详细介绍了 [这些配置](#select-api-version)
 
 1. Fill in the **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** fields.
 
@@ -118,9 +114,10 @@ ht-degree: 2%
 
 创建服务和新的移动应用程序后，您需要根据所选的API版本配置移动应用程序。
 
-有关服务和移动应用程序创建的详细信息，请参阅本 [部分](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service)
+* **HTTP v1配置** 在本节中有详细 [介绍](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1)。
+* **HTTP(旧版** )配置详见本 [节](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http)。
 
-#### 使用HTTP v1 API版本{#android-service-httpv1}
+#### 配置HTTP v1 API{#android-service-httpv1}
 
 要配置HTTP v1 API版本，请执行以下步骤：
 
@@ -157,7 +154,7 @@ ht-degree: 2%
 <br>
 <br>
 
-#### HTTP API版本{#android-service-http}
+#### 配置HTTP（传统）API{#android-service-http}
 
 要配置HTTP（旧版）API版本，请执行以下步骤：
 
