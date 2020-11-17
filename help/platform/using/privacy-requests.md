@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
+source-git-commit: e0ca252aceb0f2abca4a1324c5e4ece038927533
 workflow-type: tm+mt
-source-wordcount: '2443'
-ht-degree: 1%
+source-wordcount: '2444'
+ht-degree: 0%
 
 ---
 
@@ -82,7 +82,7 @@ Adobe Campaign优惠数据管理者工具，用于创建和处理Adobe Campaign�
 
 现成提供三种命名空间:电子邮件、电话和移动电话。 如果您需要其他命名空间(例如，收件人自定义字段)，则可以从> >创建 **[!UICONTROL Administration]** 新 **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**。
 
-## 创建隐私请求 {#create-privacy-request-ui}
+## Creating a Privacy request {#create-privacy-request-ui}
 
 Adobe Campaign **界面** ，允许您创建隐私请求并跟踪其演变。 要创建新的隐私请求，请按照以下说明操作：
 
@@ -129,7 +129,7 @@ Adobe Campaign **界面** ，允许您创建隐私请求并跟踪其演变。 �
 >如果您使用用户档案删除工作流执行隐私批请求，请考虑以下注释：
 >* 通过用户档案删除工作流不处理子表。
 >* 您需要处理所有子表的删除。
->* Adobe建议您创建一个ETL工作流，该工作流将要删除的行添加到“隐私访问”表 **[!UICONTROL Delete privacy requests data]** 中并允许执行删除。 出于性能原因，我们建议每天最多删除200个用户档案。
+>* Adobe建议您创建一个ETL工作流，该工作流将要删除的行添加到“隐私访问”表中，并 **[!UICONTROL Delete privacy requests data]** 让该工作流执行删除。 出于性能原因，我们建议每天最多删除200个用户档案。
 
 
 ### 隐私请求状态 {#privacy-request-statuses}
@@ -443,14 +443,14 @@ The **California Consumer Privacy Act** (CCPA) provides California residents new
 
 然后，您应确保永远不要向任何第三方销售已选择退出的用户档案的个人信息。
 
-要更改退出状态，请转到 **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** 并选择收件人。 在选项卡 **[!UICONTROL General]** 中，您将看到在上一节中配置的字段。
+1. 要更改退出状态，请转到 **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** 并选择收件人。 在选项卡 **[!UICONTROL General]** 中，您将看到在上一节中配置的字段。
 
-![](assets/privacy-ccpa-5.png)
+   ![](assets/privacy-ccpa-5.png)
 
-配置收件人列表以显示输出列。 要了解如何配置列表，请参阅详细 [文档](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
+1. 配置收件人列表以显示输出列。 要了解如何配置列表，请参阅详细 [文档](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
 
-![](assets/privacy-ccpa-6.png)
+   ![](assets/privacy-ccpa-6.png)
 
-您可以单击该列，根据退出信息对收件人进行排序。 您还可以创建一个过滤器以仅显示已选择退出的收件人。 For more on creating filters, see [this section](../../platform/using/creating-filters.md).
+1. 您可以单击该列，根据退出信息对收件人进行排序。 您还可以创建一个过滤器以仅显示已选择退出的收件人。 For more on creating filters, see [this section](../../platform/using/creating-filters.md).
 
-![](assets/privacy-ccpa-7.png)
+   ![](assets/privacy-ccpa-7.png)
