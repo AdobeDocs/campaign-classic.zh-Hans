@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic 产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 75ab345e3b9360229ecc3ba9529a33e320228fa0
+source-git-commit: 30eaabba8962c518c734cc4e9ad27065cfe9d467
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 70%
@@ -17,9 +17,9 @@ ht-degree: 70%
 
 ## 新增功能
 
-* **[更新您的Adobe Experience Cloud触发器集](integrations/using/configuring-adobe-io.md)**<br/> 成旧版身份验证服务已到期。 了解如何迁移到AdobeI/O。
+* **[更新您的Adobe Experience Cloud触发器集](integrations/using/configuring-adobe-io.md)**<br/> 成旧版身份验证服务已到期。 了解如何迁移到AdobeI/O
 
-* **[迁移到基于HTTP/2的APNs提供程序](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)**<br/> API了解如何从传统二进制协议迁移到基于HTTP/2的APNs提供程序API。
+* **[迁移到基于HTTP/2的APNs提供程序](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)**<br/> API了解如何从传统二进制协议迁移到基于HTTP/2的APNs提供程序API
 
 * **[向邮件中添加表情图标](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> 现在可在邮件和主题行中插入表情图标
 
