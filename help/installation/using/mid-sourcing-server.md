@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 34ee3d99-4ffb-4279-b994-5ab7abc7cf06
 translation-type: tm+mt
-source-git-commit: 270c86a8a15ebe38907be258aed9d245d2a49b6d
+source-git-commit: 544fa260f9b35239a8fa8fbc141463a7b1898026
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '999'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ ht-degree: 0%
 “中间源”体系结构在中间源部署 [中呈现](../../installation/using/mid-sourcing-deployment.md)。
 
 安装中间源服务器与正常安装服务器的过程相同（请参阅标准配置）。 它是一个独立实例，具有自己的投放库，可用于运行数据。 简而言之，它包含一个额外的配置，允许远程实例在投放模式下通过它执行中间源。
+
+>[!CAUTION]
+>
+>中间源服务器设置完毕且 [同步工作流](../../workflow/using/transfer-to-mid-sourcing.md) 首次运行后，请确保不更新中间源外部帐户的内部名称。
 
 ## 安装和配置实例的步骤 {#steps-for-installing-and-configuring-an-instance}
 
