@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
+source-git-commit: 6c5684ad4cd1a4d2bb4f39d9e531ebd5e72d4824
 workflow-type: tm+mt
 source-wordcount: '2802'
 ht-degree: 14%
@@ -24,7 +24,7 @@ ht-degree: 14%
 
 ## 关于隔离{#about-quarantines}
 
-Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认情况下会将其地址已被隔离的收件人排除在外，不会将其设为目标。举例来说，信箱已满或地址不存在时，可以隔离某个电子邮件地址。无论如何，隔离程序都符合下面描述的特定规则。
+Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认情况下会将其地址已被隔离的收件人排除在外，不会将其设为目标。举例来说，信箱已满或地址不存在时，可以隔离某个电子邮件地址。
 
 >[!NOTE]
 >
@@ -186,7 +186,7 @@ HTTP/V2协议允许直接反馈和每个推送投放的状态。 如果使用HTT
   </tr> 
   <tr> 
    <td> 目标设备开机<br /> </td> 
-   <td> 确定<br /> </td> 
+   <td> OK<br /> </td> 
    <td> </td> 
    <td> </td> 
    <td> </td> 
@@ -194,7 +194,7 @@ HTTP/V2协议允许直接反馈和每个推送投放的状态。 如果使用HTT
   </tr> 
   <tr> 
    <td> 关闭目标设备<br /> </td> 
-   <td> 确定<br /> </td> 
+   <td> OK<br /> </td> 
    <td> </td> 
    <td> </td> 
    <td> </td> 
@@ -202,7 +202,7 @@ HTTP/V2协议允许直接反馈和每个推送投放的状态。 如果使用HTT
   </tr> 
   <tr> 
    <td> 用户禁用应用程序的通知<br /> </td> 
-   <td> 确定<br /> </td> 
+   <td> OK<br /> </td> 
    <td> </td> 
    <td> </td> 
    <td> </td> 
