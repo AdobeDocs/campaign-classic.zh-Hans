@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 58b7070ad765ba072b9c82e75ab1100f8cb38f3a
+source-git-commit: ebec481d5a018d06e47c782627e9a9064cb0dd64
 workflow-type: tm+mt
-source-wordcount: '3568'
-ht-degree: 96%
+source-wordcount: '3588'
+ht-degree: 95%
 
 ---
 
@@ -37,6 +37,8 @@ ht-degree: 96%
 隐私权部分已被移动，并且包含两个新页面： [隐私管理](../../platform/using/privacy-management.md) 和 [管理隐私请求](../../platform/using/privacy-requests.md)。
 
 在中间源服务器配置页面中添加了注释，以指定在设置服务器后外部帐户的内部名称不应更新。 [阅读更多](../../installation/using/mid-sourcing-server.md)
+
+已在指定外部SFTP服务器的路径时使用的语法上添加了信息。 [阅读更多](../../platform/using/sftp-server-usage.md#external-SFTP-server)
 
 ## 2020 年 10 月 {#oct-2020}
 
