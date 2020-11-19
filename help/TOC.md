@@ -628,7 +628,7 @@ ht-degree: 97%
       + 配置准则 {#config-databases}
          + [配置步骤](installation/using/configure-fda.md)
          + [配置Snowflake](installation/using/configure-fda-snowflake.md)
-         + [配置Azure突触](installation/using/configure-fda-synapse.md)
+         + [配置Azure synapse](installation/using/configure-fda-synapse.md)
          + [配置Hadoop](installation/using/configure-fda-hadoop.md)
          + [配置Oracle](installation/using/configure-fda-oracle.md)
          + [配置Netezza](installation/using/configure-fda-netezza.md)
