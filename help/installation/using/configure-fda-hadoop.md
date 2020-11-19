@@ -1,6 +1,6 @@
 ---
-title: 配置对Hadoop的访问
-description: 了解如何在联合数据访问中配置对Hadoop的访问
+title: 配置访问Hadoop
+description: 了解如何在联合数据访问配置访问Hadoop
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -18,16 +18,16 @@ ht-degree: 0%
 ---
 
 
-# 配置对Hadoop的访问 {#configure-access-to-hadoop}
+# 配置访问Hadoop {#configure-access-to-hadoop}
 
-使用活动 **联合数据访问** (联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对Hadoop的访问。
+使用活动 **联合数据访问** (联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置访问Hadoop。
 
 1. 配置 [Hadoop数据库](#configuring-hadoop)
-1. 在活动中配 [置Hadoop](#hadoop-external) 外部帐户
+1. 在Hadoop中 [配置活动](#hadoop-external) 外部帐户
 
-## 配置Hadoop 3.0 {#configuring-hadoop}
+## 配置Hadoop3.0 {#configuring-hadoop}
 
-在联合数据访问下连接到Hadoop外部Adobe Campaign库需要在服务器上进行以下配置。 请注意，此配置适用于Windows和Linux。
+在联合数据访问中连接到Hadoop外部数据库需要Adobe Campaign服务器上的以下配置。 请注意，此配置适用于Windows和Linux。
 
 1. 根据您的操作系统版本，下载Hadoop的ODBC驱动程序。 驱动程序可在此页 [面上找到](https://www.cloudera.com/downloads.html)。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 1. 配置 **[!UICONTROL Hadoop]** 外部帐户，必须指定：
 
-   * **[!UICONTROL Type]**:ODBC(Sybase ASE、Sybase IQ)
+   * **[!UICONTROL Type]**:ODBC(Sybase ASE,Sybase IQ)
 
    * **[!UICONTROL Server]**:DNS的名称
 
@@ -85,11 +85,11 @@ ht-degree: 0%
 | fileFormat | 镶木 | 工作表的默认文件格式。 |
 
 
-## 配置Hadoop 2.1 {#configure-access-hadoop-2}
+## 配置Hadoop2.1 {#configure-access-hadoop-2}
 
-如果您需要连接到Hadoop 2.1，请按照下面为Windows或Linux说 [明的](#for-windows) 步 [骤操作](#for-linux)。
+如果需要连接到Hadoop2.1，请按照下面为Windows或Linux [说明](#for-windows) 的 [步骤](#for-linux)。
 
-### 适用于Windows的Hadoop 2.1 {#for-windows}
+### Hadoop2.1 for Windows {#for-windows}
 
 1. 安装适用于Windows [的ODBC和Azure](https://www.microsoft.com/en-us/download/details.aspx?id=40886) HD Insight驱动程序。
 1. 通过运行ODBC数据源管理工具创建DSN（数据源名称）。 Hive的系统DSN范例供您修改。
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 1. 创建Hadoop外部帐户，详 [细信息](#hadoop-external)。
 
-### 适用于Linux的Hadoop 2.1 {#for-linux}
+### Hadoop2.1 for Linux {#for-linux}
 
 1. 安装unixodbc for Linux。
 
@@ -158,7 +158,7 @@ ht-degree: 0%
    >
    >此处 **的UseNativeQuery** 参数非常重要。 活动识别配置单元，除非设置UseNativeQuery，否则将无法正常工作。 通常，驱动程序或Hive SQL Connector将重写查询并篡改列顺序。
 
-   身份验证设置取决于Hive/Hadoop配置。 例如，对于HD Insight，请使用AuthMech=6进行用户／密码身份验证，如 [下所述](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm)。
+   身份验证设置取决于配置单元/Hadoop配置。 例如，对于HD Insight，请使用AuthMech=6进行用户／密码身份验证，如 [下所述](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm)。
 
 1. 导出变量。
 
