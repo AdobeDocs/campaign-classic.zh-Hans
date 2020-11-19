@@ -1,6 +1,6 @@
 ---
-title: 配置对Netezza的访问
-description: 了解如何在联合数据访问中配置对Netezza的访问
+title: 配置访问Netezza
+description: 了解如何在联合数据访问配置访问Netezza
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -18,18 +18,18 @@ ht-degree: 0%
 ---
 
 
-# 配置对Netezza的访问 {#configure-access-to-netezza}
+# 配置访问Netezza {#configure-access-to-netezza}
 
-使用活动 [联合数据访问](../../installation/using/about-fda.md) (联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对Netezza的访问。
+使用活动 [联合数据访问](../../installation/using/about-fda.md) (联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置访问Netezza。
 
-1. 安装和配置Netezza [驱动程序](#netezza-config)
-1. 在活动中配 [置Netezza](#netezza-external) 外部帐户
+1. 安装和配置 [Netezza驱动程序](#netezza-config)
+1. 在Netezza中 [配置活动](#netezza-external) 外部帐户
 
 ## Netezza配置 {#netezza-config}
 
-在联合数据访问下连接到Netezza外部数据库需要在Adobe Campaign服务器上进行以下其他配置：
+在联合数据访问下连接到Netezza外部数据库需要在Adobe Campaign服务器下面进行其他配置：
 
-1. 根据您使用的操作系统，安装Netezza的ODBC驱动程序：
+1. 根据您使用的操作系统，为Netezza安装ODBC驱动程序：
 
    * **nz-linuxclient-v7.2.0.0.tar.gz** for Linux。 选择与您的操作系统（linux或linux64）对应的文件夹，并开始unpack命令。 您可以保留默认建议在存储库中执行的安装：&quot;/usr/local/nz&quot;。
    * **nz-winclient-v7.2.0.0.zip** for Windows 解压缩文件并开始与操作系统对应的可执行脚本：nzodbcsetup.exe或nzodbcsetup64.exe。 按照向导说明完成驱动程序的安装。
@@ -72,9 +72,9 @@ ht-degree: 0%
    * **ODBCINI**:odbc.ini文件的位置(例如/etc/odbc.ini)。
    * **NZ_ODBC_INI_PATH**:odbc.ini文件的位置。 Netezza还要求使用odbc.ini文件的第二个变量。
 
-## 内泰扎外部帐户 {#netezza-external}
+## Netezza外部帐户 {#netezza-external}
 
-Netezza外部帐户允许您将活动实例连接到Netezza外部数据库。
+netezza外部帐户允许您将活动实例连接到Netezza外部数据库。
 
 1. 在活动 **[!UICONTROL Explorer]**&#x200B;中， **[!UICONTROL Administration]** 单击“>” **[!UICONTROL Platform]** “>” **[!UICONTROL External accounts]**。
 
@@ -82,9 +82,9 @@ Netezza外部帐户允许您将活动实例连接到Netezza外部数据库。
 
 1. 要配置 **[!UICONTROL Netezza]** 外部帐户，必须指定：
 
-   * **[!UICONTROL Type]**:内泰扎
+   * **[!UICONTROL Type]**:Netezza
 
-   * **[!UICONTROL Server]**:Netezza服务器的URL
+   * **[!UICONTROL Server]**:netezza服务器的URL
 
    * **[!UICONTROL Account]**:用户的名称
 
@@ -96,4 +96,4 @@ Netezza外部帐户允许您将活动实例连接到Netezza外部数据库。
 >
 >不考虑对包含自动生成的主键的模式执行的操作。
 >
->该表将在模式中定 **义的第** 一个索引上使用Organize on子句。 由于此子句限制为Netezza的1到4列，因此此索引不能包含4列以上。
+>该表将在模式中定 **义的第** 一个索引上使用Organize on子句。 由于此子句限制为带有Netezza的1到4列，因此此索引不能包含4列以上。
