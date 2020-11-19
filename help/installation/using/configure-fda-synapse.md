@@ -18,14 +18,14 @@ ht-degree: 1%
 ---
 
 
-# 配置对Azure突触的访问 {#configure-access-to-azure-synapse}
+# 配置访问Azure synapse {#configure-access-to-azure-synapse}
 
-使用活动 [联合数据访问](../../installation/using/about-fda.md) (联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对Microsoft Azure突触分析的访问。
+使用活动 [联合数据访问](../../installation/using/about-fda.md) (联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对MicrosoftAzure synapse分析的访问。
 
-1. 在CentOS、Windows或 [Debian上](#azure-centos)[配置Azure](#azure-windows) Synapse [](#azure-debian)
-1. 在活动中配置Azure [突触](#azure-external) 外部帐户
+1. 在CentOS、Windows [或Debian](#azure-centos)上 [配置](#azure-windows) Azure synapse [。](#azure-debian)
+1. 在Azure synapse中 [配置活动](#azure-external) 外部帐户
 
-## CentOS上的Azure突触 {#azure-centos}
+## azure synapseCentOS {#azure-centos}
 
 >[!CAUTION]
 >
@@ -34,7 +34,7 @@ ht-degree: 1%
 >* 版本13.0将适用于Red Hat 6和7。
 
 
-要在CentOS上配置Azure突触，请执行以下步骤：
+要在CentOS上配置Azure synapse，请执行以下步骤：
 
 1. 首先，安装ODBC驱动程序。 您可以在此页中找 [到它](https://www.microsoft.com/en-us/download/details.aspx?id=50420)。
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
 1. 在活动中，您随后可以配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的详细信息，请参 [阅此部分](#azure-external)。
 
-1. 由于Azure突触分析通过TCP 1433端口进行通信，您需要在防火墙上打开此端口。 使用以下命令：
+1. 由于Azure synapse分析通过TCP 1433端口进行通信，您需要在防火墙上打开此端口。 使用以下命令：
 
    ```
    firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="[server_ip_here]/32" port port="1433" protocol="tcp" accept'
@@ -101,7 +101,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >要允许从Azure突触分析端进行通信，您可能需要将公共IP添加到允许列表。 为此，请参阅Azure [文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
+   >要允许来自Azure synapse分析团队的通信，您可能需要将公共IP添加到允许列表。 为此，请参阅Azure [文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
 1. 如果是iptables，请运行以下命令：
 
@@ -109,13 +109,13 @@ ht-degree: 1%
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
    ```
 
-## Windows上的Azure突触 {#azure-windows}
+## azure synapseWindows版 {#azure-windows}
 
 >[!NOTE]
 >
 >这是ODBC驱动程序版本13独有的，但Adobe Campaign Classic还可以使用SQL Server本机客户端驱动程序11.0和10.0。
 
-在Windows上配置Azure突触：
+在Windows上配置Azure synapse:
 
 1. 首先，安装Microsoft ODBC驱动程序。 您可以在此页 [中找到它](https://www.microsoft.com/en-us/download/details.aspx?id=50420)。
 
@@ -129,9 +129,9 @@ ht-degree: 1%
 
 1. 在Campaign Classic中，您随后可以配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的详细信息，请参 [阅此部分](#azure-external)。
 
-1. 由于Azure Synapse Analytics通过TCP 1433端口进行通信，您需要在Windows Defender Firewall上打开此端口。 For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
+1. 由于Azure synapse分析通过TCP 1433端口进行通信，您需要在Windows Defender Firewall上打开此端口。 For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
-## Azure突触到Debian {#azure-debian}
+## azure synapse德比 {#azure-debian}
 
 **先决条件:**
 
@@ -142,7 +142,7 @@ ht-degree: 1%
    sudo apt-get install curl
    ```
 
-在Debian上配置Azure突触：
+在Debian上配置Azure synapse:
 
 1. 首先，安装用于SQL Server的Microsoft ODBC驱动程序。 使用以下命令安装SQL Server的ODBC驱动程序13.1:
 
@@ -184,7 +184,7 @@ ht-degree: 1%
 
 1. 在Campaign Classic中，您现在可以配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的详细信息，请参 [阅此部分](#azure-external)。
 
-1. 要在Debian上配置iptables以确保与Azure突触分析连接，请使用以下命令为主机名启用出站TCP 1433端口：
+1. 要在Debian上配置iptables以确保与Azure synapse分析器连接，请使用以下命令为主机名启用出站TCP 1433端口：
 
    ```
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
@@ -192,12 +192,12 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >要允许从Azure突触分析端进行通信，您可能需要将公共IP添加到允许列表。 为此，请参阅Azure [文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
+   >要允许来自Azure synapse分析团队的通信，您可能需要将公共IP添加到允许列表。 为此，请参阅Azure [文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
 
-## Azure突触外部帐户 {#azure-external}
+## azure synapse外部帐户 {#azure-external}
 
-外部帐户 [!DNL Azure Synapse] 允许您将活动实例连接到Azure突触外部数据库。
+外部帐户 [!DNL Azure Synapse] 允许您将活动实例连接到Azure synapse外部数据库。
 
 要创建您的 [!DNL Azure Synapse] 外部帐户，请按照以下步骤操作：
 
@@ -211,9 +211,9 @@ ht-degree: 1%
 
 1. 配置 [!DNL Azure Synapse] 外部帐户，必须指定：
 
-   * **[!UICONTROL Type]**:Azure突触分析
+   * **[!UICONTROL Type]**:azure synapse分析
 
-   * **[!UICONTROL Server]**:Azure突触服务器的URL
+   * **[!UICONTROL Server]**:azure synapse服务器的URL
 
    * **[!UICONTROL Account]**:用户的名称
 
