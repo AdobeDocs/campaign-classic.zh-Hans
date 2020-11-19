@@ -1,6 +1,6 @@
 ---
-title: 配置对Sybase IQ的访问
-description: 了解如何在联合数据访问中配置对Sybase IQ的访问
+title: 配置访问Sybase IQ
+description: 了解如何在联合数据访问配置访问Sybase IQ
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -18,16 +18,16 @@ ht-degree: 0%
 ---
 
 
-# 配置对Sybase IQ的访问 {#configure-access-to-sybase-iq}
+# 配置访问Sybase IQ {#configure-access-to-sybase-iq}
 
-使用活动 **联合数据访问** (联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对Sybase IQ的访问。
+使用活动 **联合数据访问** (联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置访问Sybase IQ。
 
 1. 配置 [Sybase IQ数据库](#configuring-sybase)
-1. 在活动中配 [置Sybase](#sybase-external) IQ外部帐户
+1. 在Sybase IQ中 [配置活动](#sybase-external) 外部帐户
 
-## Sybase IQ配置 {#configuring-sybase}
+## sybase IQ配置 {#configuring-sybase}
 
-在联合数据访问下连接到Sybase IQ外部数据库需要在Adobe Campaign服务器上进行下面的其他配置。
+在联合数据访问下连接到Sybase IQ外部数据库需要在Adobe Campaign服务器下面进行其他配置。
 
 >[!NOTE]
 >
@@ -69,9 +69,9 @@ ht-degree: 0%
    * 如果您使用customer.sh文件声明您的路径：为LD_LIBRARY_PATH变量添加路径/opt/sybase/IQ-16_0/lib64。
    * 否则，请使用Unix命令。
 
-## Sybase IQ外部帐户 {#sybase-external}
+## sybase IQ外部帐户 {#sybase-external}
 
-Sybase IQ外部帐户允许您将活动实例连接到Sybase IQ外部数据库。
+sybase IQ外部帐户允许您将活动实例连接到Sybase IQ外部数据库。
 
 1. 在活动 **[!UICONTROL Explorer]**&#x200B;中， **[!UICONTROL Administration]** 单击“>” **[!UICONTROL Platform]** “>” **[!UICONTROL External accounts]**。
 
@@ -79,7 +79,7 @@ Sybase IQ外部帐户允许您将活动实例连接到Sybase IQ外部数据库�
 
 1. 要配置 **[!UICONTROL Sybase IQ]** 外部帐户，必须指定：
 
-   * **[!UICONTROL Type]**:ODBC(Sybase ASE、Sybase IQ)
+   * **[!UICONTROL Type]**:ODBC(Sybase ASE,Sybase IQ)
 
    * **[!UICONTROL Server]**:与第5步中定义的ODBC`<server_alias>`连接()相对应。 不一定是服务器本身的名称。
 
