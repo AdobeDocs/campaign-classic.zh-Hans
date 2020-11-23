@@ -879,7 +879,7 @@ ht-degree: 1%
   <tr> 
    <td> 点击<br /> </td> 
    <td> @personClick<br /> </td> 
-   <td> URL类别等于“电子邮件单击”的@source-id总数。 <br /> </td> 
+   <td> URL类别等于“电子邮件单击”的@source-id的总数。 <br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1, @source-id, 0)) <br /> </td> 
   </tr> 
   <tr> 
