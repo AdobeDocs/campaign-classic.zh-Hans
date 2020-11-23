@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: SpamAssassin
 description: 了解如何使用SpamAssassin设置电子邮件垃圾邮件检测
-page-status-flag: never-activated
-uuid: 4f439432-4215-42ed-8f92-b4ca8dd92726
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 6%
