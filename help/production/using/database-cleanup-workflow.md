@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 数据库清理工作流
 description: 了解如何自动清理过时的数据
-page-status-flag: never-activated
-uuid: a7478641-cdf6-4bd4-9dd7-0c84416c9de6
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: data-processing
-discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 0%
@@ -350,7 +347,7 @@ ht-degree: 0%
 
    其 **中$(lworkflow** )是工作流的标识符， **$(lhistory)** 是历史记录的标识符。
 
-1. 将删除所有未使用的表。 为此目的，所有表都由于使用以下查询( **postgresql** )的wkf%type掩码而收集：
+1. 将删除所有未使用的表。 为此目的，所有表都由于使用以下查询 **(postgresql** )的wkf%type掩码而被收集：
 
    ```
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkf%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
