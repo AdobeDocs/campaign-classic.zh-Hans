@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 版本 18.10
-seo-title: 版本 18.10
 description: 版本 18.10
-seo-description: null
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2366'
 ht-degree: 7%
 
 ---
@@ -75,7 +70,7 @@ ht-degree: 7%
 * 修复了数据库结构更新的问题，该问题导致NmsRecipient上丢弃新索引。
 * 修复了在投放的主目标使用外部文件中的定义选项时可能发生的控制台崩溃。 (NEO-12349)
 * 修复了多个InMail崩溃。
-* 修复了使用“更新”数据工作流活动删除存储在联合数据访问Teradata数据库中的记录时的问题。
+* 修复了使用“更新”数据工作流活动删除联合数据访问Teradata数据库中存储的记录时的问题。
 * 修复了密钥管理中的不一致问题。
 * 修复了将字段键入为时的扩充活动问题：xml=true并且calculated=true
 * 修复了在移动应用程序上发送推送通知时的字符转义问题。
@@ -96,7 +91,7 @@ ht-degree: 7%
 * 修复了在投放中使用种子地址时ID耗尽的问题。 (NEO-11842)
 * 修复了使用复杂工作流时可能发生的客户端冻结问题。 (NEO-11847)
 * 修复了在1:N链接中使用值分布时的显示问题。 (NEO-11820)
-* 修复了工作流热图中的Oracle错误。
+* 修复了Worflow热图中的Oracle错误。
 * 修复了在优惠建议活动中添加扩充时的正确问题。
 * 修复了SQL数据管理连接问题。
 * 修复了负ID情况下生成临时工作流表名称的问题。
@@ -152,7 +147,7 @@ ht-degree: 7%
 **改进**
 
 * Campaign Classic API 现在可在[专用页面](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)中使用。如果您使用的是 jsapi.chm 文件，您现在应该参阅新的在线版本。
-* 现在支持PostgreSQL 10、Debian 9和Teradata 16.20。 请参阅[兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
+* 现在支持PostgreSQL 10、Debian 9和Teradata16.20。 请参阅[兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
 * 创建SFTP连接时，您现在可以使用代理身份验证。 For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
 * 使 **用直邮投放** 创建单个投放时，投放模板属性中现在提供“日期计算公式”选项。 (NEO-9792)
 * 对cookie跟踪和Web应用程序的域名管理进行了改进。 有关详细信息，请参阅下面的“技术演变”部分。
@@ -225,24 +220,24 @@ NmsRecipient上的索引已重新工作。 这应会提高使用此表的查询�
 * 修复了一个问题，该问题可能会阻止在收件人和 **目标屏幕中搜** 索用户档案。 (NEO-8228)
 * 修复了在记录数量较多的情况下访问事件历史记录文件夹时可能导致超时错误的问题。 (NEO-11738)
 * 修复了可能导致LINE投放收件人错误地返回为“不可到达”的问题。 (NEO-10833)
-* 修复了在Oracle上执行附加列的工作流查询时的问题。 (NEO-11615)
+* 修复了在Oracle上用附加列执行工作流查询时的问题。 (NEO-11615)
 * 已进行了增强，以确保关闭的连接不会在连接池中保留太长时间。 (NEO-11392)
-* 修复了使用定位工作流活动(查询、数据加载(RDBMS)等)时的问题 通过联合数据访问连接到包含UTF8字符（在表名、字段名等中）的外部Oracle表 还包含一个主键约束，该约束具有系统生成的缺省约束名称。 (NEO-10714)
+* 修复了使用定位工作流活动(查询、数据加载(RDBMS)等)时的问题 通过联合数据访问连接到包含UTF8字符（在表名、字段名称等中）的外部Oracle表。 还包含一个主键约束，该约束具有系统生成的缺省约束名称。 (NEO-10714)
 * 修复了可能无法删除投放的HTML内容的问题。 (NEO-11327)
 * 修复了在运行预览后，直接邮件中XML和CSV文件的活动问题。 (NEO-11290)
 * 修复了在扩充工作流活动中对数据排序时的问题。 (NEO-11394)
 * 修复了在自定义报告中对数据排序时的问题。 (NEO-10896)
-* 修复了在将useVault设置与Teradata结合使用时导致错误的问题。 (NEO-11399)
+* 修复了在将useVault设置与Teradata一起使用时导致错误的问题。 (NEO-11399)
 * 修复了在删除多个Adobe Campaign行时导致查询客户端控制台崩溃的问题。 (NEO-10744)
 * 修复了在传送直接邮件时在某些情况下无法应用压力规则的问题。 (NEO-9004)
 * 修复了使用数据加载活动导入数据类型为“time”的列时发生的问题：即使删除时间分隔符后，也会重置时间分隔符。 (NEO-10743)
 * 修复了在编辑循环投放时，投放文件夹无法从投放属性的执行文件夹列表中显示的问题。 (NEO-11094)
 * 修复了导致视图填充窗口无法在工作流中显示200个以上记录作为查询活动的结果目标的问题。 (NEO-11195)
-* 修复了Oracle中的一个问题，该问题导致在选择1000个以上元素时无法执行DELETE查询。 (NEO-11171)
+* 修复了Oracle的一个问题，该问题导致在选择1000个以上元素时无法执行DELETE查询。 (NEO-11171)
 * 修复了导致在Android推送通知投放的其他参数中将URL编码为跟踪URL的问题。 (NEO-11468)
 * 修复了将参数设置为“一天间隔”和“打开”时“用户活动”报告中出现的脚本错误。 (NEO-11655)
 * 修复了通过已验证的Web代理连接到中间源服务器或消息中心时发生的问题。 (NEO-11309)
-* 修复了在根据SQL投放选择特定模式的元素后保存新视图合成时 **发生的Oracle错误**。 (NEO-11682)
+* 修复了在基于SQL视图选择特定模式的元素后保存新投放组合时 **发生的Oracle错误**。 (NEO-11682)
 * 修复了在使用解压缩选项通过加载文件活动处理包含。csv的zip文件时，导致生成包含误报的拒绝文件的问题。
 * xtkjoblog现在由清除清除。
 
