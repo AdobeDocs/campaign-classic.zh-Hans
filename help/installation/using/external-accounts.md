@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 外部帐户
 description: 了解如何创建外部帐户
-page-status-flag: never-activated
-uuid: e06e7a36-b449-4ab0-a4f6-fa82dbb8de11
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 10%
@@ -151,14 +148,14 @@ FTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问。
 
 外部帐户配置设置取决于数据库引擎。 请通过以下部分了解更多信息：
 
-* 配置对Azure突触 [的访问](../../installation/using/configure-fda-synapse.md)
-* 配置对Hadoop的访 [问](../../installation/using/configure-fda-hadoop.md)
-* 配置对Oracle的访 [问](../../installation/using/configure-fda-oracle.md)
-* 配置对Netezza的访 [问](../../installation/using/configure-fda-netezza.md)
-* 配置对SAP [HANA的访问](../../installation/using/configure-fda-sap-hana.md)
+* 配置访问 [Azure synapse](../../installation/using/configure-fda-synapse.md)
+* 配置访问 [Hadoop](../../installation/using/configure-fda-hadoop.md)
+* 配置访问 [Oracle](../../installation/using/configure-fda-oracle.md)
+* 配置访问 [Netezza](../../installation/using/configure-fda-netezza.md)
+* 配置访问 [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
 * 配置对Snowflake的 [访问](../../installation/using/configure-fda-snowflake.md)
-* 配置对Sybase [IQ的访问](../../installation/using/configure-fda-sybase.md)
-* 配置对Teradata的访 [问](../../installation/using/configure-fda-teradata.md)
+* 配置访问 [Sybase IQ](../../installation/using/configure-fda-sybase.md)
+* 配置访问 [Teradata](../../installation/using/configure-fda-teradata.md)
 
 ## Web分析外部帐户 {#web-analytics-external-account}
 
@@ -412,7 +409,7 @@ For more information on this configuration, refer to this [page](../../platform/
 
 ## Oracle按需外部帐户 {#oracle-on-demand-external-account}
 
-该 **[!UICONTROL Oracle on demand]** 外部帐户允许您将Oracle数据导入并导出到Adobe Campaign。
+外部帐户 **[!UICONTROL Oracle on demand]** 允许您将Oracle数据导入并导出到Adobe Campaign。
 
 ![](assets/ext_account_18.png)
 
@@ -420,15 +417,15 @@ For more information on this configuration, refer to this [page](../../platform/
 
 * **[!UICONTROL Account]**
 
-   用于登录Oracle CRM点播的帐户。
+   用于登录OracleCRM（按需）的帐户。
 
 * **[!UICONTROL Server]**
 
-   Oracle CRM on demand服务器的URL。
+   您的OracleCRM点播服务器的URL。
 
 * **[!UICONTROL Password]**
 
-   用于登录Oracle CRM on demand的口令。
+   用于按需登录OracleCRM的密码。
 
 For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-oracle-on-demand).
 
