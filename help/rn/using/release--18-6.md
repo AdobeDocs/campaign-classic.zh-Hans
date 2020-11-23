@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 版本 18.6
-seo-title: 版本 18.6
 description: 版本 18.6
-seo-description: null
-page-status-flag: never-activated
-uuid: 72941f8f-0b84-4868-a768-8aa972459ef2
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 79a6d3cf-2425-49b9-9b92-b56be26438bf
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '794'
 ht-degree: 6%
 
 ---
@@ -42,7 +37,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> 查询条带<br /> </td> 
-   <td> <p>当多个活动用户连接到同一联合数据访问Teradata外部帐户时，您现在可以传递每个用户特有的查询带（键／值对）。 每次活动用户对Teradata查询库执行时，Adobe Campaign现在能够发送与用户相关的元数据。 这些数据包含在一列表键和值中，然后Teradata管理员可以用于审核目的或管理访问权限，例如。</p><p>有关详细信息，请参阅<a href="../../installation/using/external-accounts.md">详细文档</a>。</p> </td>
+   <td> <p>当多个活动用户连接到同一联合数据访问Teradata外部帐户时，您现在可以传递每个用户特有的查询带（键／值对）。 每次活动用户对Teradata查询库执行时，Adobe Campaign现在能够发送与用户相关的元数据。 这些数据包含在一列表键和值中，然后Teradata管理员可以用于审计目的或管理访问权限。</p><p>有关详细信息，请参阅<a href="../../installation/using/external-accounts.md">详细文档</a>。</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -65,12 +60,12 @@ ht-degree: 6%
 
 查询条带
 
-特定密钥（PROXYUSER或PROXYROLE）用于将Teradata用户或角色与活动用户关联。 已添加新权限以使用此代理用户／角色。 您需要向CONNECT库帐户(Teradata外部帐户中定义的帐户)添加GRANTTHROUGH访问权限。
+特定密钥（PROXYUSER或PROXYROLE）用于将Teradata用户或角色与活动用户关联。 已添加新权限以使用此代理用户／角色。 您需要向CONNECT库帐户(在Teradata外部帐户中定义的帐户)添加GRANTTHROUGH访问权限。
 
-在Teradata外部帐户中添加了新选项卡。 该选 **[!UICONTROL Query banding]** 项卡包含以下选项：
+在Teradata外部帐户中添加了新标签。 该选 **[!UICONTROL Query banding]** 项卡包含以下选项：
 
 * **[!UICONTROL Active]**:选中此框可激活特征。
-* **[!UICONTROL Default]**:输入默认查询条带，如果用户没有关联的查询条带，则将使用该条带。 如果没有定义默认的查询条带，则没有关联查询条带的用户将无法使用Teradata。
+* **[!UICONTROL Default]**:输入默认查询条带，如果用户没有关联的查询条带，则将使用该条带。 如果没有定义默认查询条带，则没有关联查询条带的用户将无法使用Teradata。
 * **[!UICONTROL Users]**:为每个用户指定查询条带。 您可以添加所需数量的键／值对。 例如：“priority=1;workload=high;
 
 有关查询条纹的详细信息，请参阅以下文章：
