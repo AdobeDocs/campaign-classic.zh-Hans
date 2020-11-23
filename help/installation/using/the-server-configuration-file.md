@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 服务器配置文件
-seo-title: 服务器配置文件
 description: 服务器配置文件
-seo-description: null
-page-status-flag: never-activated
-uuid: 8ef7168b-3543-4830-80b0-65a023158b3f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: appendices
-discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
 translation-type: tm+mt
-source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '7855'
+source-wordcount: '7851'
 ht-degree: 5%
 
 ---
@@ -341,9 +336,9 @@ Adobe Campaign的总体配置在位于安 **装目录的conf** 目录中的serve
   </tr> 
   <tr> 
    <td> 提供程序<br /> </td> 
-   <td> 类型(明细列表)。 可能的值包括“Oracle”、“MSSQL”(Microsoft SQL Server)、“PostgreSQL”(PostgreSQL, Greenplum)、“Teradata”、“DB2”、“MySQL”、“Netezza”、“AsterData”、“SAPHANA”、RedShift”(Amazon红移)、“ODBC”(ODBC(Sybase ASE, Sybase IQ))、“中继”（HTTP中继到远程数据库）。<br /> </td> 
+   <td> 类型(明细列表)。 可能的值为“Oracle”、“MSSQL”(Microsoft SQL Server)、“PostgreSQL”(PostgreSQL, Greenplum)、“Teradata”、“DB2”、“MySQL”、“Netezza”、“AsterData”、“SAPHANA”(SAP HANA)、“Redshift”(Amazon红移)、 'ODBC'(ODBC(Sybase ASE,Sybase IQ))、 '中继'（HTTP中继到远程数据库）。<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> 'Oracle'<br /> </td> 
+   <td> 'Oracle<br /> </td> 
   </tr> 
   <tr> 
    <td> 服务器<br /> </td> 
@@ -1587,7 +1582,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*&quot;
  </tbody> 
 </table>
 
-### 高速缓存 {#cache}
+### cache {#cache}
 
 在缓存 **节点** ，配置以下参数。 这是本地文件缓存配置。
 
