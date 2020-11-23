@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 关于邮件跟踪
-seo-title: 关于邮件跟踪
 description: 关于邮件跟踪
-seo-description: null
-page-status-flag: never-activated
-uuid: 91127faf-b9c4-46af-b842-b9816c501ecf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-discoiquuid: 5d8bbfe0-e202-4062-aa47-9ad87b975bb7
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 19%
+source-wordcount: '186'
+ht-degree: 18%
 
 ---
 
