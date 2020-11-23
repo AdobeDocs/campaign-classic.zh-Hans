@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 供应商、库存和预算
-seo-title: 供应商、库存和预算
 description: 供应商、库存和预算
-seo-description: null
-page-status-flag: never-activated
-uuid: 6caffaaf-a6a6-40e1-8b17-07c81748382c
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-discoiquuid: d4627141-cef1-4ddb-ad6a-5dc217b9fa96
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '1902'
 ht-degree: 0%
 
 ---
@@ -120,7 +115,7 @@ Adobe Campaign允许您定义将参与在活动中执行的任务的服务提供
 
 #### 线性结构 {#linear-structure}
 
-如果消息（或一批消息）的金额始终相同，而与消息总数无关，则选择并 **[!UICONTROL Linear]** 输入每条消息的成本。
+如果消息（或一批消息）的金额始终相同，而与消息总数无关，则选择并输 **[!UICONTROL Linear]** 入每条消息的成本。
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_01.png)
 
