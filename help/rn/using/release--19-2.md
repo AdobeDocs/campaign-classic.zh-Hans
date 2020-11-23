@@ -107,7 +107,7 @@ _2019年12月2日_
 * 添加了一个特定的保护栏，用于检查磁盘空间，然后允许在服务器上上传公共资源。
 * 新 [活动](../../installation/using/configuring-campaign-options.md) 选项已添加：
    * WdbcKillSessionPolicy **配置选项** ，可以影响所有工作流和 **PostgreSQL查询的无条件** 停止行为。
-   * NmsOperation **_DeliveryPreparationWindow** 选项允许您定义天数，超过天数后，状态不一致的投放将从正在运行的投放计数中排除。
+   * NmsOperation **_DeliveryPreparationWindow** 选项允许您定义天数，超过天数后，状态不一致的投放将从正在运行的投放数中排除。
    * 使用 **WdbcOptions_TempDbName** 选项可以为Microsoft SQL Server上的工作表配置单独的数据库。 这将优化备份和复制。 [阅读更多](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
    * PostgreSQL **的XtkCleanup** _NoStats选项已得到增强，可更好地控制存储库清除工作流中的数据优化步骤的行为。 [阅读更多](../../production/using/database-cleanup-workflow.md#statistics-update)
 * 已向登录()API添加帐户 **锁定机制** 。 它可防止在指定时间范围内连续登录尝试一定次数后再进行任何登录尝试。
