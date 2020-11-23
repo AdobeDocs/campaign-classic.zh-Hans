@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: CRM 连接器
-seo-title: CRM 连接器
 description: CRM 连接器
-seo-description: null
-page-status-flag: never-activated
-uuid: ef3d88a1-b0fd-4790-b6e8-63fa339ef991
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: connectors
-discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
 translation-type: tm+mt
-source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2539'
 ht-degree: 4%
 
 ---
@@ -55,19 +50,19 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
    >    * 多选明细列表不受Adobe Campaign支持。
 
 
-* **Oracle On Demand**
+* **Oracle点播**
 
-   请参 [阅本节](#example-for-oracle-on-demand) ，了解如何设置与Oracle On Demand的连接。
+   请参 [阅本节](#example-for-oracle-on-demand) ，了解如何设置与Oracle点播的连接。
 
    >[!IMPORTANT]
    >
-   >将Adobe Campaign与Oracle On Demand连接时，限制有：
+   >在将Adobe Campaign与Oracle点播连接时，限制如下：
    >
    >    
    >    
-   >    * Adobe Campaign可以同步标准Oracle On Demand模板中可用的任何对象。 如果您已在Oracle On Demand中添加了个性化表，则这些表将无法在Adobe Campaign中恢复。
+   >    * Adobe Campaign可以同步标准Oracle点播模板中可用的任何对象。 如果您在Oracle点播中添加了个性化的表，这些表将无法在Adobe Campaign中恢复。
    >    * API版本1.0允许您在查询中对数据进行排序或筛选，但不允许您同时执行这两项操作。
-   >    * Oracle On Demand发送的日期不包含时区信息。
+   >    * oracle点播发送的日期不包含时区信息。
    >    * 多选明细列表不受Adobe Campaign支持。
 
 
@@ -141,15 +136,15 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
    ![](assets/crm_connectors_sfdc_wf.png)
 
-### Oracle On Demand示例 {#example-for-oracle-on-demand}
+### oracle点播示例 {#example-for-oracle-on-demand}
 
-要配置Oracle **On Demand连接器** ，以便与Adobe Campaign一起使用，请应用以下步骤：
+要将Oracle **点播连接器配置** ，以便与Adobe Campaign配合使用，请应用以下步骤：
 
 1. 通过外部帐户树的节 **[!UICONTROL Administration > Platform > External accounts]** 点创建新Adobe Campaign。
 
    ![](assets/crm_connectors_ood_1.png)
 
-1. 打开配置向导：Adobe Campaign会自动显示Oracle数据模型的表。 选择要收集的表。
+1. 打开配置向导：Adobe Campaign自动显示Oracle数据模型的表。 选择要收集的表。
 
    ![](assets/crm_connectors_ood_2.png)
 
@@ -159,25 +154,25 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
    ![](assets/crm_connectors_ood_3.png)
 
-1. 开始同步Adobe Campaign与Oracle On Demand之间的明细列表。
+1. 开始同步Adobe Campaign与Oracle按需明细列表。
 
    ![](assets/crm_connectors_ood_4.png)
 
-1. 要将Oracle On Demand数据导入Adobe Campaign，请创建以下类型的工作流：
+1. 要将Oracle点播数据导入Adobe Campaign，请创建以下类型的工作流：
 
    ![](assets/crm_connectors_ood_5.png)
 
-   此工作流通过Oracle On Demand导入联系人，将其与现有Adobe Campaign数据同步，删除重复联系人，并更新Adobe Campaign数据库。
+   此工作流通过Oracle按需导入联系人，将其与现有Adobe Campaign数据同步，删除重复联系人，并更新Adobe Campaign数据库。
 
    需 **[!UICONTROL CRM Connector]** 要配置活动，如下所示：
 
    ![](assets/crm_connectors_ood_6.png)
 
-1. 要将Adobe Campaign数据导出到Oracle On Demand，请创建以下工作流：
+1. 要将Adobe Campaign数据导出到Oracle点播，请创建以下工作流：
 
    ![](assets/crm_connectors_ood_7.png)
 
-   此工作流使用查询收集相关数据，然后将其导出到Oracle On Demand联系人表中。
+   此工作流使用查询收集相关数据，然后将其导出到Oracle点播联系人表中。
 
 ### Microsoft Dynamics的示例 {#example-for-microsoft-dynamics}
 
@@ -315,7 +310,7 @@ Adobe Campaign与CRM之间的同步通过专用工作流活动进行： [CRM连�
 默认情况下，将使用以下字段（按指定顺序）:
 
 * 对于Microsoft Dynamics: **修改**,
-* 对于Oracle On Demand: **LastUpdated**、 **ModifiedDate**、 **LastLoggedIn**、
+* oracle点播： **LastUpdated**、 **ModifiedDate**、 **LastLoggedIn**、
 * 对于Salesforce.com: **LastModifiedDate**、 **SystemModstamp**。
 
 激活选 **[!UICONTROL Automatic index]** 项可生成三个变量，这些变量可通过类型活动在同步工作流 **[!UICONTROL JavaScript code]** 中使用。 这些活动是：
@@ -439,7 +434,7 @@ Adobe Campaign与CRM之间的同步通过专用工作流活动进行： [CRM连�
 
 输出 **[!UICONTROL Reject]** 过渡允许您访问包含与错误消息和代码相关的特定列的输出模式。 以下列为：
 
-* 对于Oracle On Demand: **errorLogFilename** （Oracle端的日志文件名）、 **errorCode** （错误代码）、 **errorSymbol** （错误符号，不同于错误代码）、 **errorMessage** （错误上下文的说明）。
+* oracle点播： **errorLogFilename** (Oracle侧日志文件的名 **称)、** errorCode **（错误代码）、** errorSymbol **（错误符号，不同于错误代码）、** errorMessage（错误上下文的描述）。
 * 对于Salesforce.com: **errorSymbol** （错误符号，与错误代码不同）, **errorMessage** （错误上下文的描述）。
 
 ### 导入在CRM中删除的对象 {#importing-objects-deleted-in-the-crm}
