@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 定义目标群体
-seo-title: 定义目标群体
 description: 定义目标群体
-seo-description: null
-page-status-flag: never-activated
-uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 2%
+source-wordcount: '1572'
+ht-degree: 3%
 
 ---
 
@@ -230,7 +225,7 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 您可以使用选项组合特定验证目标的定义和种子地址的 **[!UICONTROL Specific target and Seed addresses]** 使用。 相关配置随后在两个单独的子标签中定义。
 
-## How to manage seed and proofs in an email {#seeds-and-proofs-video}
+## 如何通过电子邮件管理种子和验证 {#seeds-and-proofs-video}
 
 在此视频中，您将学习如何在现有电子邮件中添加种子和验证，以及如何发送。
 
