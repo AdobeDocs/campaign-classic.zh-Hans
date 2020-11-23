@@ -1,24 +1,21 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 关于 Web 应用程序
 description: 创建和共享动态 Web 应用程序、登陆页和调查。
-page-status-flag: never-activated
-uuid: acfa6e5e-b503-4a1a-871e-e70007874f57
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: web-applications
-discoiquuid: 3af763ad-6b0d-4f4c-aed1-c5e12efd4760
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
 
-# 开始使用Web应用程序{#about-web-applications}
+# Web 应用程序入门{#about-web-applications}
 
 Adobe Campaign允许您使用来自Web 应用程序库的数据和根据连接用户权限调整的内容创建和发布动态的交互式数据。
 
