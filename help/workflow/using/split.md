@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 拆分
 description: 进一步了解分割工作流活动
-page-status-flag: never-activated
-uuid: 00dc3436-e271-4512-8f29-71a55213afc3
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: 9eadfda0-0614-4e4e-aed0-26f0b9222fbd
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 0%
@@ -216,7 +213,7 @@ Check the **[!UICONTROL Generate complement]** option if you wish to exploit the
 
 要使此选项正常工作，入站数据必须具有主键。
 
-例如，如果通过活动直接从外部数据库(如Netezza（它不支持索引的概念）)读取数 **[!UICONTROL Data loading (RDBMS)]** 据，则活动生成的补码将 **[!UICONTROL Split]** 不正确。
+例如，如果通过Netezza直接从外部数据库(如活动，它不支持索引的概念)读取数 **[!UICONTROL Data loading (RDBMS)]** 据，则由活动生成的补 **[!UICONTROL Split]** 码将不正确。
 
 要避免这种情况，您可以在活动 **[!UICONTROL Enrichment]** 前拖放一个 **[!UICONTROL Split]** 活动。 在活动 **[!UICONTROL Enrichment]** 中，检 **[!UICONTROL Keep all additional data from the main set]** 查要用于配置活动过滤器的列，并在其他数据中指定这些 **[!UICONTROL Split]** 列。 然后，来自过渡的入站活动的 **[!UICONTROL Split]** 被本地存储在Adobe Campaign服务器上的临时表中，并且可以正确地生成补码。
 
