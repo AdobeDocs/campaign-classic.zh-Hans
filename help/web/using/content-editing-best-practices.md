@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 内容编辑最佳实践
-seo-title: 内容编辑最佳实践
 description: 内容编辑最佳实践
-seo-description: null
-page-status-flag: never-activated
-uuid: badc6806-b474-4cad-94a3-003a50271281
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-discoiquuid: 3ad38469-8e22-4bfc-8029-5d360f76d6bb
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 7%
+source-wordcount: '548'
+ht-degree: 6%
 
 ---
 
@@ -74,7 +69,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->HTML代码页必须在meta标签（HTML 4或HTML 5）或BOM中定义。 如果没有可用的代码页，请打开latin1中的文件。
+>HTML代码页必须在meta标签（HTML 4或HTML 5）或BOM中定义。 如果没有可用的代码页，请打开拉丁文1中的文件。
 
 ## HTML内容状态 {#html-content-statuses}
 
