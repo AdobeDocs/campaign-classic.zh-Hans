@@ -156,7 +156,7 @@ ht-degree: 0%
 
 **目标**:生成关于分析年龄的定量收件人报告
 
-1. 打开描述性分析向导， **[!UICONTROL Quantitative distribution]** 然后从下拉列表中选择。
+1. 打开描述性分析向导， **[!UICONTROL Quantitative distribution]** 然后从下拉列表中进行选择。
 
    ![](assets/s_ncs_user_report_wizard_011a.png)
 
