@@ -70,7 +70,7 @@ ht-degree: 0%
 
 1. 安装Oracle客户端。
 
-1. 在C:Oracle文件夹中，创 **建包含TNS定** 义的tnsnames.ora文件。
+1. 在C:Oracle文件夹中，创 **建包含您的TNS定** 义的tnsnames.ora文件。
 
 1. 添加一个TNS_ADMIN环境变量，其值为C:Oracle，然后重新启动计算机。
 
