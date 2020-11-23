@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 创建和配置数据库
-seo-title: 创建和配置数据库
 description: 创建和配置数据库
-seo-description: null
-page-status-flag: never-activated
-uuid: e5143d55-61fa-416a-80db-c29a0caf9a3e
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
-discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1296'
 ht-degree: 1%
 
 ---
@@ -62,7 +57,7 @@ ht-degree: 1%
 
 服务器标识信息可能因所选数据库引擎而异。
 
-* 对于Oracle **引擎** ，填充为应 **用程序服** 务器定义的TNS名称。
+* 对于 **Oracle** ，填充为应 **用程序服** 务器定义的TNS名称。
 * 对于 **PostgreSQL** 或 **DB2引擎** ，必须指定在应用程序服务器上定义的DNS名称（或IP地址）才能访问数据库服务器。
 * 对于 **Microsoft SQL Server** Engine，必须定义：应用程序服务器上定义的用于访问数据库服务器的DNS名称（或IP地址）: **DNS** 或 **DNS`\<instance>`** （实例模式）,
 
@@ -80,7 +75,7 @@ ht-degree: 1%
 
 为此，请输入具有访问数据库 **权限的** “管理”系统帐户的名称和密码，即：
 
-* **系统** ，用于Oracle数据库，
+* **oracle** 数据库系统，
 * **sa** 对于Microsoft SQL Server数据库，
 * **postgre** SQL数据库的postgres,
 * **db2inst1** ，用于DB2数据库。
@@ -106,9 +101,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >对于Oracle数据库，选 **[!UICONTROL Unicode storage]** 项允许您使 **用NCLOB** 和 **NVARCHAR类** 型字段。
+   >对于Oracle数据库， **[!UICONTROL Unicode storage]** 该选项允许 **您使用** NCLOB **和** NVARCHAR类型字段。
    > 
-   >如果不选择此选项，则Oracle数据库的字符集（字符集）必须启用所有语言的存储（建议使用AL32UTF8）。
+   >如果不选择此选项，则Oracle数据库的字符集（字符集）必须启用所有语言的数据存储（建议使用AL32UTF8）。
 
 * 为数据库选择时区，并指定是否希望它以UTC（如果可用）显示。
 
@@ -128,7 +123,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* 对于Oracle、Microsoft SQL Server或PostgreSQL数据库，管理员还可以定义创建存储 **对象时** 要使用的参数。
+* 对于Oracle、Microsoft SQL Server或PostgreSQL数据库，管理员还可以定义创建数据 **库对象时** 要使用的存储参数。
 
    这些参数接收确切的表空间名称(警告：区分大小写)。 它们分别存储在以 **[!UICONTROL Administration > Platform > Options]** 下选项的节点中(请参 [阅本节](../../installation/using/configuring-campaign-options.md#database)):
 
@@ -137,7 +132,7 @@ ht-degree: 1%
    * **WdbcOptions_TableSpaceWork**:无模式的工作表
    * **WdbcOptions_TableSpaceWorkIndex**:无模式的工作表索引
 
-* 对于OracleAdobe Campaign库，用户必须具有对Oracle库的访问权限，通常作为oinstall组的 **成员** 。
+* 对于OracleAdobe Campaign库，用户必须具有访问Oracle库的权限，通常作为安装组的 **成员** 。
 * 通过 **[!UICONTROL Set or change the administrator password]** 此选项，您可以输入与具有管理员权限的Adobe Campaign操作员链接的口令。
 
    我们建议为安全目的定义Adobe Campaign帐户管理员密码。
@@ -164,7 +159,7 @@ ht-degree: 1%
 
 数据库以及用户必须由数据库管理员创建，并且访问权限配置正确。
 
-例如，对于Oracle数据库，最低要求的权限是：授予CONNECT、资源和无限表空间。
+例如，对于Oracle数据库，最低要求权限为：授予CONNECT、资源和无限表空间。
 
 要使用现有数据库，配置步骤如下：
 
@@ -186,7 +181,7 @@ ht-degree: 1%
 
 服务器标识信息可能因所选数据库引擎而异。
 
-* 对于Oracle **引擎** ，填充为应 **用程序服** 务器定义的TNS名称。
+* 对于 **Oracle** ，填充为应 **用程序服** 务器定义的TNS名称。
 * 对于 **PostgreSQL** 或 **DB2引擎** ，必须指定在应用程序服务器上定义的DNS名称（或IP地址）才能访问数据库服务器。
 * 对于 **Microsoft SQL Server** Engine，必须定义：
 
@@ -227,8 +222,8 @@ ht-degree: 1%
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* 对于Oracle、Microsoft SQL Server或PostgreSQL存储库，管理员可以定义创建数 **据库对象** 时要使用的参数。
-* 对于OracleAdobe Campaign库，用户必须具有对Oracle库的访问权限，通常作为oinstall组的 **成员** 。
+* 对于Oracle、Microsoft SQL Server或PostgreSQL数据库，管理员可以定义创建数据 **库对象时** 要使用的存储参数。
+* 对于OracleAdobe Campaign库，用户必须具有访问Oracle库的权限，通常作为安装组的 **成员** 。
 * 通过 **[!UICONTROL Set or change the administrator password]** 此选项，您可以输入与具有管理员权限的Adobe Campaign操作员链接的口令。
 
    我们建议为安全目的定义Adobe Campaign帐户管理员密码。
