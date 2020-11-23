@@ -1,16 +1,17 @@
 ---
 audience: end-user
-user-guide-title: Adobe Campaign Classic 指南
-breadcrumb-title: Campaign Classic 指南
+breadcrumb-title: Campaign Classic
+product: campaign
+title: Campaign Classic 指南
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 设计、规划、执行、管理和优化跨渠道营销活动，以实现较高的营销投资回报。
-product: adobe campaign
+solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2169'
 ht-degree: 97%
 
 ---
