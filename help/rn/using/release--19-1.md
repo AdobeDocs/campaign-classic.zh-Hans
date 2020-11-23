@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 版本 19.1
-seo-title: 版本 19.1
 description: 版本 19.1
-seo-description: null
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2623'
-ht-degree: 5%
+source-wordcount: '2622'
+ht-degree: 7%
 
 ---
 
@@ -62,7 +57,7 @@ _2019年10月3日_
 
 **改进**
 
-* 修复了在使用Salesforce的CRM连接器时的问题。 (NEO-17712)
+* 修复了使用 CRM Connector for Salesforce 时的问题。(NEO-17712)
 * 修复了在发送事务性消息时可能导致性能问题的索引问题。
 * 修复了发送消息时的性能问题。 (NEO-17558)
 * 修复了可能导致某些邮件不被中间源服务器处理的问题。 (NEO-12395)
@@ -70,7 +65,7 @@ _2019年10月3日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.1.5 - 版本 9033{#release-19-1-5-build-9033}
 
-_2019年8月13日_
+_2019 年 8 月 13 日_
 
 **改进**
 
@@ -80,7 +75,7 @@ _2019年8月13日_
 * 修复了通过命令行安装midEmitter包的问题。
 * 新增了一个身份验证选项，用于在AC连接器中通过Microsoft Dynamics支持OAuth凭据。 (NEO-11982)
 * 修复了UUID（唯一通用标识符）管理导致查询和数据加载工作流活动在配置单元联合数据访问时失败的问题。
-* 修复了Oracle上的回归，该回归导致某些函数在错误升级后被视为无效。 (NEO-12759)
+* 修复了Oracle上的回归，该回归导致某些函数在放置后被视为无效。 (NEO-12759)
 * 修复了在调度程序工作流活动中设置时间时，导致选取错误时区的回归问题。
 
 ## ![](assets/do-not-localize/green_2.png) 版本 19.1.4 - 版本 9032{#release-19-1-4-build-9032}
@@ -122,7 +117,7 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>要提高管理员用户的工作效率，请通过监视存储、添加要的IP地址和为每个实例安允许列表装SSH密钥来管理SFTP服务器的设置。 请注意，控制面板仅适用于今天在AWS上托管的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天通过Experience Cloud登录</a>)。</p> <p>有关更多信息，请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html">详细文档</a>和<a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/control-panel/control-panel-overview.html">操作方法视频</a>。 </p><p>注意：升级到最新活动版本不是访问控制面板的必需条件。</p> </td> 
+   <td> <p>要提高管理员用户的工作效率，请通过监视存储、添加要的IP地址和为每个实例安允许列表装SSH密钥来管理SFTP服务器的设置。 请注意，控制面板仅适用于今天在AWS上托管的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">今天通过Experience Cloud登录</a>)。</p> <p>有关更多信息，请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html">详细文档</a>和<a href="https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/control-panel/control-panel-overview.html">操作方法视频</a>。 </p><p>注意：升级到最新活动版本不是访问控制面板的必需条件。</p> </td> 
   </tr> 
     <tr> 
    <td> 审核跟踪<br /> </td> 
@@ -136,10 +131,10 @@ _2019年5月30日_
    <td> 兼容性矩阵更新<br /> </td> 
    <td> 有了此新版本，Adobe Campaign现在支持以下数据库系统。 Refer to the <a href="https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html">Compatibility Matrix</a>.<br /> 
     <ul> 
-     <li> <p>Oracle 18c</p> </li> 
+     <li> <p>Oracle18c</p> </li> 
      <li> <p>MySQL 5.7(联合数据访问)</p> </li> 
      <li> <p>SQL Server 2017</p> </li> 
-     <li> <p>Teradata 16(联合数据访问)</p> </li> 
+     <li> <p>Teradata16(联合数据访问)</p> </li> 
      <li> <p>PostgreSQL 11</p> </li> 
     </ul> </td> 
   </tr> 
@@ -211,7 +206,7 @@ _2019年5月30日_
 * 修复了一个问题，该问题导致您无法删除Web应用程序，即使您具有正确的访问权限也是如此。 (NEO-12072)
 * 修复了在导出然后通过XML导入对象时，可能会覆盖某些值的问题。 已添加XtkExport_IncludeDefaultValues选项。 当设置为True（默认行为）时，将导出所有值。 设置为False时，修改将被默认值覆盖。 (NEO-11979)
 * 修复了在添加活动 **[!UICONTROL Alert]** 后扩充活动时导致工作流查询失败的问题。 (NEO-12132)
-* 修复了Oracle设置上的一个问题，该问题导致管线（触发器）偏移未从数据库成功检索，从而导致重复。 (NEO-12121)
+* 修复了Oracle设置上的一个问题，该问题导致管线（触发器）偏移未从数据库成功检索并导致重复。 (NEO-12121)
 * 修复了在使用Analytics集成时，可能导致透视表显示错误的问题(NEO-12103)
 * 修复了描述性分析报表的问题。 (NEO-11414)
 * 修复了远程表包含名称带有下划线的字段时CRM连接器的问题。
