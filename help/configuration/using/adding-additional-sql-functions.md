@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 添加其他 SQL 函数
-seo-title: 添加其他 SQL 函数
 description: 添加其他 SQL 函数
-seo-description: null
-page-status-flag: never-activated
-uuid: d66b5ca2-ac7d-4654-9f0e-9bfe56490c19
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: api
-discoiquuid: 728a95f8-46fe-49a8-a645-a0dd6eeb6615
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1021'
 ht-degree: 1%
 
 ---
@@ -132,7 +127,7 @@ Adobe Campaign允许用户定 **义自己的函数** ，这些函数可以访问
 * 最后，providerPart **元素提** 供函数实现。
 
    * provider **属性是** 必填字段，它指定为其提供实现的数据库系统。 如示例所示，当表达式语法或基础函数不同时，可以根据数据库提供替代实现。
-   * @body **属性** 包含函数实现。 请注意：此实现必须是表达式库语言（不是代码块）。 根据表达式库，查询可以是仅返回单个值的子(“（从表中选择列，其中……）”)。 例如，Oracle中就是这种情况(查询必须用括号写入)。
+   * @body **属性** 包含函数实现。 请注意：此实现必须是表达式库语言（不是代码块）。 根据表达式库，查询可以是仅返回单个值的子(“（从表中选择列，其中……）”)。 例如，在Oracle就是如此(查询必须写在括号中)。
 
    >[!NOTE]
    >
