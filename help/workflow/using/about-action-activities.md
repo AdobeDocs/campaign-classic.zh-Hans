@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 关于操作活动
-seo-title: 关于操作活动
 description: 关于操作活动
-seo-description: null
-page-status-flag: never-activated
-uuid: f7da73e0-0661-440e-8e69-f92290b69415
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-discoiquuid: d31c094e-c4c2-4948-b7f6-148dae2b5434
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 3%
+source-wordcount: '346'
+ht-degree: 2%
 
 ---
 
@@ -37,5 +32,5 @@ ht-degree: 3%
 * **SQL数据管理**:允许您编写自己的SQL查询来创建和填充工作表。 请参阅 [SQL数据管理](../../workflow/using/sql-data-management.md)。
 * **nlserver模块**:开始nlserver模块及其参数。 请参阅Nlserver [模块](../../workflow/using/nlserver-module.md)。
 * **导入和导出（v4兼容）**:导入和导出活动（v4兼容性）允许您使用活动中指定的模板（导入或导出）导入和导出数据。
-* **Microsoft CRM、Salesforce、Oracle CRM On Demand**:允许您将Adobe Campaign专门连接到某个预配置的CRM。 这些活动与本节中介绍的CRM连接 [器相似](../../workflow/using/crm-connector.md)，包含更多特定选项。 特别是，您可以选择要执行同步的活动类型。
+* **Microsoft CRM、Salesforce、OracleCRM On Demand**:允许您将Adobe Campaign专门连接到某个预配置的CRM。 这些活动与本节中介绍的CRM连接 [器相似](../../workflow/using/crm-connector.md)，包含更多特定选项。 特别是，您可以选择要执行同步的活动类型。
 * **更新聚合**:允许您选择聚合更新模式（完整或部分）。 Refer to [Update aggregate](../../workflow/using/update-aggregate.md).
