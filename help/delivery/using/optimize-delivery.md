@@ -1,18 +1,14 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 优化消息投放
-seo-title: 优化消息投放
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '733'
 ht-degree: 6%
 
 ---
@@ -28,7 +24,7 @@ ht-degree: 6%
 
 几个因素会直接影响服务器性能并降低平台速度：
 
-* 个性化元素的数量和类型：电子邮件中的个性化会为每个收件人从数据库中提取数据。 如果存在许多个性化元素，则会增加准备投放所需的数据量。  在本节中进一步了解 [个性化](../../delivery/using/about-personalization.md)
+* 个性化元素的数量和类型：电子邮件中的个性化会为每个收件人从数据库中提取数据。 如果存在许多个性化元素，则会增加准备投放所需的数据量。  Learn more about personalization in [this section](../../delivery/using/about-personalization.md)
 
 * 服务器加载：当营销服务器同时处理许多不同的任务时，它会降低性能。 营销服务器需要协调所有投放的所有传入和传出数据，以确保数据准确、及时。
 
