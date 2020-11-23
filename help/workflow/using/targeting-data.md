@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 定位数据
 description: 进一步了解工作流中的定位数据
-page-status-flag: never-activated
-uuid: 90c46ae9-8f9d-4538-a0fe-92fb3373f863
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-discoiquuid: 79f1e85a-b5e6-4875-ac57-ab979fc57079
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 3%
@@ -248,7 +245,7 @@ ht-degree: 3%
 >
 >当链接两个工作流时，删除源表元素并不意味着删除与其链接的所有数据。
 >  
->例如，通过工作流删除收件人不会导致删除收件人的所有投放历史记录。 但是，直接在“收件人”文件夹中删除收件人确实会删除与此收件人链接的所有数据。
+>例如，通过工作流删除收件人不会导致删除收件人的所有投放历史记录。 但是，直接在“收件人”文件夹中删除收件人会确实导致与此收件人链接的所有数据被删除。
 
 ### 丰富和修改数据 {#enriching-and-modifying-data}
 
