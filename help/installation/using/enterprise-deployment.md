@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 企业部署
-seo-title: 企业部署
 description: 企业部署
-seo-description: null
-page-status-flag: never-activated
-uuid: 2c2b5cef-86cb-4cb5-801a-ca6afeae90bb
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
-discoiquuid: 066d0ac1-033c-467b-aa6c-43a97ecd8632
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1263'
 ht-degree: 1%
 
 ---
@@ -66,7 +61,7 @@ ht-degree: 1%
    * 首先公开，以跟踪并指向虚拟IP地址(VIP)上的负载平衡器，然后分发给两台前端服务器，
    * 第二个控制台向内部用户公开，供其通过控制台访问，并指向虚拟IP地址(VIP)上的负载平衡器，然后该负载平衡器分发到两个应用程序服务器。
 
-* 防火墙配置为打开STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521(Oracle)、5432(PostgreSQL)等) 端口。 有关详细信息，请参阅“数据库 [访问”一节](../../installation/using/network-configuration.md#database-access)。
+* 防火墙配置为打开STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521(Oracle)、5432(PostgreSQL)等。 端口。 有关详细信息，请参阅“数据库 [访问”一节](../../installation/using/network-configuration.md#database-access)。
 
 >[!CAUTION]
 >
@@ -170,7 +165,7 @@ ht-degree: 1%
 
    有关详细信息，请参阅 [活动服务器配置](../../installation/using/campaign-server-configuration.md)。
 
-1. 将客户端设置项目(**v或** YYYY-client-6.XX **,************** EXE.exe setup v.1)复制到/Datat，它/Eng/JespJonsole文件夹中。
+1. 将客户端设置项目(**v或** YYYY-client-6.XX **,************** EXE.exe setup v.1)复制到/Datat，它/Eng/JespJansole文件夹。
 
    有关此方面的详细信息，请参阅以下各节：
 
