@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: JavaScript 脚本和模板
-seo-title: JavaScript 脚本和模板
 description: JavaScript 脚本和模板
-seo-description: null
-page-status-flag: never-activated
-uuid: d341a892-dc71-4413-acb8-9cba372b38cf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-discoiquuid: 8867d9c3-2ce4-4611-8c88-ce505c3a01d1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 1%
+source-wordcount: '1234'
+ht-degree: 2%
 
 ---
 
@@ -106,7 +101,7 @@ logInfo("Start date: " + task.creationDate)
 
 1. 添加和配置JavaScript代码活动以定义实例变量。
 
-   For example: `instance.vars.segmentpercent = 10;`
+   例如：`instance.vars.segmentpercent = 10;`
 
    ![](assets/js_ex1.png)
 
@@ -132,7 +127,7 @@ logInfo("Start date: " + task.creationDate)
 
    ![](assets/js_ex4.png)
 
-**示例2**
+**示例 2**
 
 1. 从上一个示例中采用工作流，将JavaScript代码 **活动的脚本** 替换为以下脚本：
 
