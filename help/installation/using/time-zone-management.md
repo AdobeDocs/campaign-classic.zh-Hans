@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 时区管理
-seo-title: 时区管理
 description: 时区管理
-seo-description: null
-page-status-flag: never-activated
-uuid: b8926761-65e2-48fd-8689-2ae6b0596e72
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-discoiquuid: b9846eda-eeca-433e-b961-6dfc2aa2708b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '886'
 ht-degree: 1%
 
 ---
@@ -73,7 +68,7 @@ Adobe Campaign允许您以UTC（协调通用时间）格式存储日期／时间
 
 >[!IMPORTANT]
 >
->如果您使 **用Oracle**，则Oracle客户端层的时区文件(.dat)必须与服务器上安装的时区文件兼容。
+>如果您使用 **Oracle**，则Oracle客户端层的时区文件(.dat)必须与服务器上安装的时区文件兼容。
 
 如果数据库不是UTC，则可以选择下拉列表中提供的某个时区。 您还可以使用服务器的时区或选择UTC（协调通用时间）选项。
 
