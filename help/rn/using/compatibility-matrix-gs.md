@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Gold Standard兼容性矩阵
 description: Gold Standard版本的Campaign Classic兼容性矩阵
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fd
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7p
 translation-type: tm+mt
-source-git-commit: 7f8b0458f947ae1863c2afb6e67cabf2d23200e1
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 15%
@@ -182,7 +179,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <p>API版本15</p>
 </td>
 </tr>
-<tr><td>Oracle On Demand API</td>
+<tr><td>Oracle点播API</td>
 <td>
 <p>Web服务v1.0 API</p>
 </td>
@@ -241,7 +238,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 </td>
 </tr>
 <tr>
-<td>内泰扎</td>
+<td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
@@ -259,7 +256,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <p>版本1 SP12或更高版本</p>
 </td>
 </tr>
-<tr><td>通过HiveSQL的Hadoop</td>
+<tr><td>Hadoop通过HiveSQL</td>
 <td>
 <p>HortonWorks HDP 2.4.X、2.5.x、2.6.x</p>
 <p>HDInsight 3.4(HDP 2.4)、3.5(HDP 2.5)、3.6(HDP 2.6)</p>
