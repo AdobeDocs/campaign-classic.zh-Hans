@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 在 Linux 中安装 Campaign 的先决条件
 description: 在 Linux 中安装 Campaign 的先决条件
-page-status-flag: never-activated
-uuid: 65c7af3f-ca1d-4255-b54a-6a3c83af40ae
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 2%
@@ -183,27 +180,27 @@ Adobe Campaign支持7.2版的所有PostgreSQL客户端库：(**libpq.so.5**、 *
 
 检索64位Debian的库版本，即： **libclntsh.so**、 **libclntsh.so.11.1****和libclntsh.so.10.1**。
 
-您可以从Oracle Technology Network获取Linux RPM包。
+您可以从Oracle技术网获取Linux RPM软件包。
 
 >[!NOTE]
 >
->如果已安装Oracle客户端，但已安装全局环境(例如：/etc/用户档案)未正确配置，您可以向nl6/customer.sh脚本添加缺 **失信息** 。有关详细信息，请参阅 [环境变量](../../installation/using/installing-packages-with-linux.md#environment-variables)。
+>如果您已安装Oracle客户端，但已安装全球环境(例如：/etc/用户档案)未正确配置，您可以向nl6/customer.sh脚本添加缺 **失信息** 。有关详细信息，请参阅 [环境变量](../../installation/using/installing-packages-with-linux.md#environment-variables)。
 
 **疑难解答和最佳实践**
 
-在Oracle客户端或服务器更新、版本更改后或实例的首次安装时，可能会出现问题。
+在Oracle客户端或服务器更新、版本更改或实例的首次安装后，可能会出现问题。
 
-如果您在客户端控制台上注意到日志、工作流上次处理、下次处理等中存在意外的延迟时间（一个或多个小时），则Oracle客户端的库与Oracle Server之间可能存在问题。 要避免此类问题
+如果您在客户端控制台上注意到日志、工作流上次处理、下次处理等中存在意外的延迟（一个或多个小时），则Oracle客户端的库与Oracle服务器之间可能存在问题。 要避免此类问题
 
 1. 确保使用完整 **客户端**。
 
-   在使用Oracle Instant Client版本时已发现各种问题。 此外，在即时客户端上更改时区文件是不可能的。
+   在使用Oracle即时客户端版本时发现了各种问题。 此外，在即时客户端上更改时区文件是不可能的。
 
 1. 确保客户端 **版本和** 数据 **库服务器版** 本相 **同**。
 
-   尽管Oracle有兼容性矩阵，并且建议将客户端和服务器版本相协调，但混合使用不同版本仍会导致问题。
+   尽管Oracle公司推出了兼容性矩阵，并建议将客户端和服务器版本相协调，但混合使用不同版本仍然会导致问题。
 
-   另外，检查ORACLE_HOME值，确保它指向预期的客户端版本（如果计算机上安装了多个版本）。
+   另请检查ORACLE_HOME值，确保它指向预期的客户端版本（如果计算机上安装了多个版本）。
 
 1. 确保客户端和服务器使用相同的 **时区文件**。
 
