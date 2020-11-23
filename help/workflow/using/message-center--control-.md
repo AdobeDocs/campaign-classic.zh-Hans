@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 消息中心（控制）
-seo-title: 消息中心（控制）
 description: 消息中心（控制）
-seo-description: null
-page-status-flag: never-activated
-uuid: bdb3610b-a893-4e60-a9f7-f21d90b66919
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-discoiquuid: 69e3e99f-d392-4316-926c-3c3c675415ad
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 8%
+source-wordcount: '157'
+ht-degree: 7%
 
 ---
 
