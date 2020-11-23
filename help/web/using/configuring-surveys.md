@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 配置调查
-seo-title: 配置调查
 description: 配置调查
-seo-description: null
-page-status-flag: never-activated
-uuid: e6798345-f408-43fb-b37c-aef889fb3a6d
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: online-surveys
-discoiquuid: 98706258-0621-4aa9-bf14-f92f14946308
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 7%
+source-wordcount: '112'
+ht-degree: 5%
 
 ---
 
