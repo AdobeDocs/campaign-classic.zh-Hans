@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 个性化优惠券
-seo-title: 个性化优惠券
 description: 个性化优惠券
-seo-description: null
-page-status-flag: never-activated
-uuid: c840e2de-f0ef-478b-af9f-82e1b6534933
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-discoiquuid: f324afa5-304c-470e-a592-290f76a11ccb
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '877'
 ht-degree: 1%
 
 ---
