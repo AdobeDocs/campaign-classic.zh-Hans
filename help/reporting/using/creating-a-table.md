@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 创建表
-seo-title: 创建表
 description: 创建表
-seo-description: null
-page-status-flag: never-activated
-uuid: c5bca799-a5d6-4d98-8fc5-25d7f71be5f7
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-discoiquuid: 74084618-2b35-42c5-8a86-87ce137abb71
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2495'
 ht-degree: 1%
 
 ---
