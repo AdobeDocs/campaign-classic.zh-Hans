@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 数据库映射
-seo-title: 数据库映射
 description: 数据库映射
-seo-description: null
-page-status-flag: never-activated
-uuid: a51df3eb-cae6-4e8d-8386-d62defc1b610
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1976'
+source-wordcount: '1974'
 ht-degree: 0%
 
 ---
@@ -310,7 +305,7 @@ SQL字段约束如下所示：
 
 >[!NOTE]
 >
->Adobe Campaign模式(例如&#x200B;**NmsTrackingLogId** )中引用的序列必须与SQL函数关联，该函数返回参数中的ID数（以逗号分隔）。 此函数必须 ******称为GetNewXXXIds**，其中 **XXX是序列的名称(** 例如GetNewNmsTrackingLog **** Id)。 视图 **datakit/nms/eng/sql**/directory中随 **应用程序提供的postgres-nms.nms** 、mssql-nmssql **或oracle-nmssql****** 文件，以恢复每个数据库引擎的“NmsTrackingLogId”序列创建示例。
+>Adobe Campaign模式(例如&#x200B;**NmsTrackingLogId** )中引用的序列必须与SQL函数关联，该函数返回参数中的ID数（以逗号分隔）。 此函数必须 ******称为GetNewXXXIds**，其中 **XXX是序列的名称(** 例如GetNewNmsTrackingLog **** Id)。 视图 **datakit/nms/eng/sql**/directory中随应 **用程序提供的postgres-nms.nms、mssql-nms** sql或 **oracle-nmssql****** 文件，以恢复每个数据库引擎的“NmsTrackingLogId”序列创建示例。
 
 要声明唯一键，请在数 **据模式** 的主要元素上填充autopk属性（带值“true”）。
 
@@ -478,7 +473,7 @@ SQL字段约束如下所示：
 * **未绑定**:链接将声明为1-N基数的集合元素（默认情况下）
 * **完整性**:默认情况下为“define”(可以强制使用源模式上链接定义中的“revIntegrity”属性)。
 
-### Example 2 {#example-2}
+### 示例 2 {#example-2}
 
 在此示例中，我们将声明指向“nms:address”模式表的链接。 连接是外部连接，并显式填充了收件人的电子邮件地址和链接表的“@address”字段(“nms:address”)。
 
