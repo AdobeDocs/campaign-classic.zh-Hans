@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 条件内容
-seo-title: 条件内容
 description: 条件内容
-seo-description: null
-page-status-flag: never-activated
-uuid: d1c38263-a163-448c-8822-8b3e776e45cf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-discoiquuid: 167cc61a-fbc7-48cb-89ff-fbdbf9321c01
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 2%
+source-wordcount: '471'
+ht-degree: 4%
 
 ---
 
