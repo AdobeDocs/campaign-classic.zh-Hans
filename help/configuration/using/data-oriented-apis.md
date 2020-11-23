@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 面向数据的 API
-seo-title: 面向数据的 API
 description: 面向数据的 API
-seo-description: null
-page-status-flag: never-activated
-uuid: f81356b3-8eef-4b65-9510-47c9d4b4e871
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: api
-discoiquuid: fba46d42-0253-425b-bbc2-6702d4140e05
 translation-type: tm+mt
-source-git-commit: 63b208e5607bdcddaef03292d229847c4b7366f8
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1881'
 ht-degree: 0%
 
 ---
@@ -572,7 +567,7 @@ XPath **语法** ，用于根据输入模式定位数据。 有关XPath的详细
 
 >[!NOTE]
 >
->对于删除操作，输入文档必须只包含构成该合并关键项的字段。
+>对于删除操作，输入文档必须只包含构成合并关键项的字段。
 
 ### 使用“WriteCollection”方法的示例 {#example-with-the--writecollection--method}
 
@@ -606,7 +601,7 @@ XPath **语法** ，用于根据输入模式定位数据。 有关XPath的详细
 >
 >在文件夹元素上输入的操作“无”定义了在文件夹上进行的对帐，而无需更新或插入。
 
-#### Example 2 {#example-2}
+#### 示例 2 {#example-2}
 
 从公司更新公司(“cus:收件人”模式中的链接表):
 
