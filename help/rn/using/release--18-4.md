@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 版本 18.4
-seo-title: 版本 18.4
 description: 版本 18.4
-seo-description: null
-page-status-flag: never-activated
-uuid: d132570e-20e6-4550-95bd-176701f43b19
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 4dc87ff3-eb6a-40ac-97ee-00b64cd7718d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2263'
+source-wordcount: '2262'
 ht-degree: 7%
 
 ---
@@ -43,7 +38,7 @@ ht-degree: 7%
 * 修复了查询包含重音字符(联合数据访问/Teradata)的字段时的问题。 该外部帐户现在允许您更改用于与Teradata驱动程序通信的编码。 (NEO-11818).
 * 修复了在推送通知中传递其他变量中的URL时的跟踪问题，该问题可能会导致移动应用程序收到的格式错误或数据不正确。 (NEO-11468, NEO-11960)
 * 修复了在使用1:N链接的值分布时导致显示问题的问题。 (NEO-11820)
-* 修复了阻止批量加载在Teradata 16上工作的问题。
+* 修复了阻止批量加载在Teradata16上工作的问题。
 * 增加了Teradata上时间戳的缓冲区大小，以避免与15.10驱动程序绑定问题。
 * 改进了长名称索引的管理，这些索引可能导致错误升级问题。
 * 改进了子级死区处理(MTA)期间的共享内存可用时间。
@@ -139,7 +134,7 @@ ht-degree: 7%
 **其他变更**
 
 * 使用命令行可以使用新模式导入包，从而允许循环依赖项（对于大包，不推荐使用）。 有关详细信息，请参阅“技术演化”部分。 (NEO-8979)
-* 改进了Teradata中大量数据加载的性能，并修复了无法显示日志中处理数据的正确值的问题。 (NEO-10429)
+* 改进了在Teradata进行大量数据加载的性能，并修复了无法显示日志中处理数据的正确值的问题。 (NEO-10429)
 * 从Audience Manager导入受众现在可以处理拆分文件。 以前，只有区段的最后一个文件是由importSharedAudience技术工作流导入的。 (NEO-10156)
 * 在Windows上，活动服务器默认安装路径已更改。 启动64位版本设置时，默认安装路径现在为： **C:\Program Files\Adobe\Adobe Campaign Classic v7** 而不 **是C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * 默认MX规则已得到增强，可包含更多域并优化吞吐量。
@@ -199,8 +194,8 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 **修补程序**
 
 * 修复了将投放和跟踪日志从Adobe Campaign Standard复制到Adobe Campaign Classic时的同步问题。 (NEO-10023)
-* 修复了在快速加载操作失败后恢复ETL工作流时，Teradata中错误和日志表的处理问题。 现在，每次恢复工作流时，错误和日志表都会正确删除。 (NEO-10672)
-* 修复了在安装联合数据访问包时自动安装Hive包（Hadoop需要）的配置升级问题。 (NEO-10592)
+* 修复了在快速加载操作失败后恢复ETL工作流时，在Teradata处理错误和日志表的问题。 现在，每次恢复工作流时，错误和日志表都会正确删除。 (NEO-10672)
+* 修复了在安装了配置包时自动安装配置包(Hadoop需要)的配置升级问题。 (NEO-10592)
 * 修复了将无效域视为未定义 **错误的错** 误。 (NEO-10248)
 * 修复了在发送android推送投放时，deliveryLogStats表中的日志重复的问题。 (NEO-10234)
 * 修复了可能导致条形码扫描程序无法读取某些条形码格式的问题。 (NEO-10125)
