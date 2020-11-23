@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 投放报告
-seo-title: 投放报告
 description: 投放报告
-seo-description: null
-page-status-flag: never-activated
-uuid: 83ea834e-08f7-441b-8f15-a25ec07c4aab
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '701'
 ht-degree: 6%
 
 ---
@@ -162,7 +157,7 @@ Henry进行的打开和4次点击显示在以下日志中：
 
 * **[!UICONTROL Clicks]** (已点击的收件人):2
 * **[!UICONTROL Distinct clicks for the population reached]** (点击者：6
-* **[!UICONTROL Distinct opens for the population reached]** (已打开的收件人):3
+* **[!UICONTROL Distinct opens for the population reached]** (已打开的收件人):1
 
 原始反应性和前向估算如下：
 
