@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 访问外部数据库的权限
 description: 外部数据库访问权限
-page-status-flag: never-activated
-uuid: b84359b9-c584-431d-80d5-71146d9b6854
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: connectors
-discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 1%
@@ -32,7 +29,7 @@ ht-degree: 1%
 
       >[!NOTE]
       >
-      >Oracle **中的** :base部件是可选的。
+      >在Oracle **,** :base部件是可选的。
 
 1. 保存已命名的权限，然后将其从Adobe Campaign浏览器的节点 **[!UICONTROL Administration > Access Management > Operators]** 链接到选定的用户。
 
@@ -66,7 +63,7 @@ ht-degree: 1%
 | **访问客户端数据** | 选择“开始（未来）”表或视图权限 | SELECT权限 | 选择或选择任何表权限 | SELECT权限 | SELECT权限 | SELECT权限 |
 | **访问元数据** | 选择“信息模式”模式权限 | SELECT权限 | 使用DESCRIBE语句无需权限 | 视图定义权限 | 使用“\d表”命令不需要权限 | SELECT权限 |
 
-|   | DB2 UDB | TeraData | InfiniDB | Sybase IQ/Sybase ASE | 内泰扎 | 青梅 | AsterData |
+|   | DB2 UDB | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | 青梅 | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | **连接到远程数据库** | CONNECT权 | CONNECT权限 | 创建绑定到具有所有权限的远程主机的用户 | 无需权限即可使用CONNECT语句 | 无需权限 | CONNECT权限 | CONNECT权限 |
 | **创建表** | CREATETAB权限 | 创建TABLE或TABLE关键字 | 创建权限 | 资源权限和创建权限 | TABLE权限 | 创建权限 | 创建权限 |
