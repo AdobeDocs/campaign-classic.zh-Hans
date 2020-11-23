@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: '在 Adobe Campaign 中配置移动应用程序 '
 description: 了解如何开始移动应用程序配置
-page-status-flag: never-activated
-uuid: aff1a4a0-34e7-4ce0-9eb3-30a8de1380f2
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '252'
-ht-degree: 4%
+ht-degree: 10%
 
 ---
 
@@ -26,7 +23,7 @@ ht-degree: 4%
 
 * 为Neotrips移 **[!UICONTROL Mobile application]** 动应用程序创建类型信息服务。 有关iOS, [请参阅此部分](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service)。 以及 [此部分针对Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service)。
 * 将应用程序的iOS和Android版本添加到此服务。
-* 为iOS和Android创建投放。 [请参见此页面](../../delivery/using/creating-notifications.md)。
+* 为iOS和Android创建投放。 [请参阅此页面](../../delivery/using/creating-notifications.md).
 
 ![](assets/nmac_service_diagram.png)
 
@@ -61,6 +58,6 @@ ht-degree: 4%
 完成此步骤后，您可以配置Android和iOS应用程序。
 请参阅以下部分：
 
-* [iOS的配置步骤](../../delivery/using/configuring-the-mobile-application.md)
+* [iOS 配置步骤](../../delivery/using/configuring-the-mobile-application.md)
 
-* [Android的配置步骤](../../delivery/using/configuring-the-mobile-application-android.md)
+* [Android 配置步骤](../../delivery/using/configuring-the-mobile-application-android.md)
