@@ -69,7 +69,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->HTML代码页必须在meta标签（HTML 4或HTML 5）或BOM中定义。 如果没有可用的代码页，请打开拉丁文1中的文件。
+>HTML代码页必须在meta标签（HTML 4或HTML 5）或BOM中定义。 如果没有可用的代码页，请打开latin1中的文件。
 
 ## HTML内容状态 {#html-content-statuses}
 
