@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 版本 19.2
-seo-title: 版本 19.2
 description: 版本 19.2
-seo-description: null
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1317'
 ht-degree: 8%
 
 ---
@@ -108,7 +103,7 @@ _2019年12月2日_
 * 推送通知的内存消耗优化。
 * 为了优化性能和存储，对logins. **log文件的处理** 已得到增强。 该文件现在分为多个文件，每天一个，最多保留365个文件。 [阅读更多](../../production/using/log-files.md)
 * 现在可以使用密码凭据（密码+用户名）或证书（私钥）配置Microsoft Dynamics CRM外部帐户。 [阅读更多](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
-* Hadoop联合数据访问连接器已添加一些增强功能以提高可靠性
+* 为提高可靠性，Hadoop联合数据访问连接器增加了一些增强功能
 * 添加了一个特定的保护栏，用于检查磁盘空间，然后允许在服务器上上传公共资源。
 * 新 [活动](../../installation/using/configuring-campaign-options.md) 选项已添加：
    * WdbcKillSessionPolicy **配置选项** ，可以影响所有工作流和 **PostgreSQL查询的无条件** 停止行为。
@@ -137,11 +132,11 @@ iOS SDK的内部版本1.0.26现已可用。 在此新版本中，我们增加了
 
 * 修复了在数据加载( **RDBMS)工作流活动** 中“添加链接表” **字段为空时的崩** 溃问题。 (NEO-12213)
 * 修复了可能导致某些邮件不被中间源服务器处理的问题。 (NEO-12395)
-* 修复了在Teradata中使用查询条带选项时数据库清理工作流中的问题。 (NEO-12399)
+* 修复了在Teradata使用查询条带选项时数据库清理工作流中的问题。 (NEO-12399)
 * 修复了影响投放分析（包括ne.jp域）的问题。 (NEO-12609)
 * 修复了与TLS更新上的SMS相关的问题，该问题暗示证书策略更加严格。 这些更新可能导致在证书过期时市场营销和中间源服务器之间发生连接故障。 (NEO-17698)
 * 修复了在具有保管库身份验证 **的外部帐户环境** 中使用中间源上的“测试连接”按钮时的问题。 (NEO-12722)
-* 修复了在查询Hadoop连接中使用日期函数的联合数据访问的问题。 (NEO-12847)
+* 修复了在查询使用日期函数时与联合数据访问Hadoop连接的问题。 (NEO-12847)
 * 修复了替换电子邮件编辑器中的图像时的问题。 (NEO-13098)
 * 修复了一个问题，该问题可能导致已删除或移动到其他位置的文件夹出现升级后错误。 (NEO-13118)
 * 修复了在LINE消息上使用“按设备屏 **幕大小定义图像”选项时** ，图像显示中的问题。 (NEO-13228)
@@ -162,7 +157,7 @@ iOS SDK的内部版本1.0.26现已可用。 在此新版本中，我们增加了
 * 修复了影响Salesforce的CRM连接器的问题。 (NEO-17712)
 * 修复了从外部SFTP导入数据时的超时问题。 (NEO-19723)
 * 修复了访问预测模型时的问题。 (NEO-19713)
-* 修复了在Hadoop活动库的Split工作 **流联合数据访问** 中影响随机采样的问题。 (NEO-16636)
-* 修复了Oracle上的回归，该回归导致某些函数在错误升级后被视为无效。 (NEO-12759)
+* 修复了影响使用Hadoop活动库的 **Split工作流** 联合数据访问中随机采样的问题。 (NEO-16636)
+* 修复了Oracle上的回归，该回归导致某些函数在放置后被视为无效。 (NEO-12759)
 
 
