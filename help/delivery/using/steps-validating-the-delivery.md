@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 验证投放
-seo-title: 验证投放
 description: 验证投放
-seo-description: null
-page-status-flag: never-activated
-uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1667'
 ht-degree: 5%
 
 ---
