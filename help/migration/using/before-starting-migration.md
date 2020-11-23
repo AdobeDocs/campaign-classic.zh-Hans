@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 开始迁移前
 description: 开始迁移前
-page-status-flag: never-activated
-uuid: b9325510-2fa5-4be4-9cf0-f37232bbbd8c
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-discoiquuid: d8877378-fb43-4f32-91c6-60f2f788f916
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 1%
@@ -45,7 +42,7 @@ ht-degree: 1%
 
 ### 环境 {#environment}
 
-* 无法更改数据库引擎类型(DBMS)。 例如，您无法从PostgreSQL引擎切换到Oracle引擎。 但是，您可以从Oracle 8引擎切换到Oracle 10引擎。
+* 无法更改数据库引擎类型(DBMS)。 例如，您无法从PostgreSQL引擎切换到Oracle引擎。 但是，您可以从Oracle8引擎切换到Oracle10引擎。
 * 无法从非Unicode数据库转换到Unicode数据库。
 
 ### 建议 {#recommendation}
