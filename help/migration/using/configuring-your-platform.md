@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 配置平台
-seo-title: 配置平台
 description: 配置平台
-seo-description: null
-page-status-flag: never-activated
-uuid: e6255e4b-c9c8-4ac9-9ee3-aaa4dc9e5ecf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-discoiquuid: 4d2e765b-750b-457f-ad55-8bd6faaa86af
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 2%
+source-wordcount: '940'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +27,7 @@ Adobe Campaignv7中的某些重大更改需要配置以确保其有效运行。 
 * 默认 **情况下** ，表空间属性会返回其值，即部署向导中定义的值。
 * 如果已将引用视图添加到NmsRecipient表，则必须在迁移之前删除它。
 
-此警告还与Oracle用户有关：如果在postupgrade中添 **加了usetimestamptz:1** 选项(请参阅时区 [)](../../migration/using/general-configurations.md#time-zones)，则将重新构建至少包含一个date+ **time字段的所有表** 。
+这一警告也令Oracle用户感到担忧：如果在postupgrade中添 **加了usetimestamptz:1** 选项(请参阅时区 [)](../../migration/using/general-configurations.md#time-zones)，则将重新构建至少包含一个date+ **time字段的所有表** 。
 
 ## 迁移前 {#before-the-migration}
 
