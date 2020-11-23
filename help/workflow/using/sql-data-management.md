@@ -57,7 +57,7 @@ ht-degree: 3%
       >
       >(&#39;name&#39;)值与过渡属性 **[!UICONTROL Name]** 中的字段对应。
 
-1. 如果SQL脚本已包含用于创建出站工作表的命令，请取消选择 **[!UICONTROL Automatically create work table]** 选项。 否则，工作流一旦执行，将自动创建工作表。
+1. 如果SQL脚本已包含用于创建出站工作表的命令，请取消选择该 **[!UICONTROL Automatically create work table]** 选项。 否则，工作流一旦执行，将自动创建工作表。
 1. 单击 **[!UICONTROL Ok]** 以确认活动配置。
 
 活动现已配置。 它已准备好在工作流中执行。
