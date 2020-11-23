@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 在Adobe Campaign Classic定义交互式内容
 description: 了解如何使用Adobe Campaign Classic的AMP定义交互式和动态电子邮件内容。
-page-status-flag: never-activated
-uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -206,7 +203,7 @@ AMP内容和备份准备就绪后，定义兼容目标后，您可以像通常�
 >
 >默认情况 **[!UICONTROL AMP inclusion]** 下，选项设置为 **[!UICONTROL No]**。
 
-## 如何激活和使用AMP处理电子邮件 {#amp-email-video}
+## 如何激活和使用 AMP 处理电子邮件 {#amp-email-video}
 
 以下视频介绍如何在 Adobe Campaign Classic 中激活 AMP。
 
