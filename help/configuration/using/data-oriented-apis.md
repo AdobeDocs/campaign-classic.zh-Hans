@@ -567,7 +567,7 @@ XPath **语法** ，用于根据输入模式定位数据。 有关XPath的详细
 
 >[!NOTE]
 >
->对于删除操作，输入文档必须只包含构成合并关键项的字段。
+>对于删除操作，输入文档必须只包含构成该合并关键项的字段。
 
 ### 使用“WriteCollection”方法的示例 {#example-with-the--writecollection--method}
 
