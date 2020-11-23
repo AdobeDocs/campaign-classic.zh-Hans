@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 兼容性矩阵
 description: 兼容性矩阵
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3402212bc6904dd5587d3b5a16fca7f4857fb908
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -120,9 +117,9 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 
 支持以下RDBMS驱动程序：
 
-* Oracle SQL*Net 11
+* OracleSQL*Net 11
 
-* Oracle SQL*Net 12
+* OracleSQL*Net 12
 
 * PostgreSQL(libpq)
 
@@ -176,7 +173,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 >
 >PostgreSQL是托管环境的默认数据库服务器。
 
-## CRM connectors{#CRMconnectors}
+## CRM 连接器{#CRMconnectors}
 
 <table>
 <tbody>
@@ -193,7 +190,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <p>API版本21</p>
 </td>
 </tr>
-<tr><td>Oracle On Demand API</td>
+<tr><td>Oracle点播API</td>
 <td>
 <p>Web服务v1.0 API</p>
 </td>
@@ -201,8 +198,8 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>Soap API —— 内部部署：2007、2015、2016</p>
-<p>Soap API —— 在线：2015年， 2016年</p>
+<p>Soap API - 本地：2007、2015、2016</p>
+<p>Soap API - 在线：2015、2016</p>
 <p>Web API —— 内部部署和在线：365、2016、2016更新1</p>
 </td>
 </tr>
@@ -214,7 +211,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <table>
 <tbody>
 <tr>
-<td>Microsoft Azure突触分析</td>
+<td>MicrosoftAzure synapse分析</td>
 <td> </td>
 </tr>
 <tr>
@@ -263,7 +260,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 </td>
 </tr>
 <tr>
-<td>内泰扎</td>
+<td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
@@ -281,7 +278,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 <p>版本1 SP12或更高版本</p>
 </td>
 </tr>
-<tr><td>通过HiveSQL的Hadoop</td>
+<tr><td>Hadoop通过HiveSQL</td>
 <td>
 <p>HortonWorks HDP 2.4.X、2.5.x、2.6.x</p>
 <p>HDInsight 3.4(HDP 2.4)、3.5(HDP 2.5)、3.6(HDP 2.6)</p>
