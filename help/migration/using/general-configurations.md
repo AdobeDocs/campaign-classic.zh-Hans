@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 常规配置
-seo-title: 常规配置
 description: 常规配置
-seo-description: null
-page-status-flag: never-activated
-uuid: 317a145d-36b0-40fe-a272-ad5e35b0b190
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: configuration
-discoiquuid: f4b1c108-7f71-4aa1-8394-a7f660834c9c
 translation-type: tm+mt
-source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2822'
+source-wordcount: '2820'
 ht-degree: 0%
 
 ---
@@ -49,7 +44,7 @@ ht-degree: 0%
 
 ### Oracle {#oracle}
 
-如果在播放过 **程中出现** ORA 01805错误，这意味着应用程序服务器和数据库服务器之间的Oracle时区文件不同步。 要重新同步它们，请应用以下步骤：
+如果在播放过 **程中出现ORA 01805** 错误，这意味着应用程序服务器和数据库服务器之间的Oracle时区文件不同步。 要重新同步它们，请应用以下步骤：
 
 1. 要标识所使用的时区文件，请运行以下命令：
 
@@ -73,7 +68,7 @@ ht-degree: 0%
    genezi -v
    ```
 
-   genezi是$ORACLE_HOME/ **bin存储库中的二进制文件** 。
+   genezi是$ORACLE_ **HOME/bin存储库中的二进制文件** 。
 
 1. 运行以下命令检查服务器端时区文件的版本：
 
