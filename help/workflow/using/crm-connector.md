@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: CRM Connector
 description: 进一步了解CRM连接器并配置数据同步
-page-status-flag: never-activated
-uuid: b3856a82-b1dc-4e36-a2d0-14edc5b66b3b
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: af7c0d1d-10ac-427b-8d12-b97eb91b30a1
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
@@ -92,7 +89,7 @@ LASTIMPORT_<%=instance.internalName%>_<%=activityName%>
 默认情况下，将使用以下字段（按指定顺序）:
 
 * 对于Microsoft Dynamics: **修改**,
-* 对于Oracle On Demand: **LastUpdated**、 **ModifiedDate**、 **LastLoggedIn**、
+* oracle点播： **LastUpdated**、 **ModifiedDate**、 **LastLoggedIn**、
 * 对于Salesforce.com: **LastModifiedDate**、 **SystemModstamp**。
 
 激活选 **[!UICONTROL Automatic index]** 项可生成三个变量，这些变量可通过类型活动在同步工作流 **[!UICONTROL JavaScript code]** 中使用。 这些活动是：
@@ -204,7 +201,7 @@ LASTIMPORT_<%=instance.internalName%>_<%=activityName%>
 
 出站 **[!UICONTROL Reject]** 过渡允许您访问包含与错误消息和代码相关的特定列的输出模式。 以下列为：
 
-* 对于Oracle On Demand: **errorLogFilename** （Oracle端的日志文件名）、 **errorCode** （错误代码）、 **errorSymbol** （错误符号，不同于错误代码）、 **errorMessage** （错误上下文的说明）。
+* oracle点播： **errorLogFilename** (Oracle侧日志文件的名 **称)、** errorCode **（错误代码）、** errorSymbol **（错误符号，不同于错误代码）、** errorMessage（错误上下文的描述）。
 * 对于Salesforce.com: **errorSymbol** （错误符号，与错误代码不同）, **errorMessage** （错误上下文的描述）。
 
 ## 导入在CRM中删除的对象 {#importing-objects-deleted-in-the-crm}
@@ -235,7 +232,7 @@ LASTIMPORT_<%=instance.internalName%>_<%=activityName%>
 
 ## 如何配置联系人导入的示例 {#example-of-how-to-configure-a-contact-import}
 
-在以下示例中，活动配置为从Oracle On Demand CRM导入联系人。 在导入之前，将以某种方式选择CRM字段，使其与Adobe Campaign库中已存在的字段保持一致。
+在以下示例中，活动配置为从Oracle点播CRM导入联系人。 在导入之前，将以某种方式选择CRM字段，使其与Adobe Campaign库中已存在的字段保持一致。
 
 ![](assets/crm_connectors_ood_6.png)
 
