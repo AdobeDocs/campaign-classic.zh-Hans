@@ -165,7 +165,7 @@ ht-degree: 1%
 
    有关详细信息，请参阅 [活动服务器配置](../../installation/using/campaign-server-configuration.md)。
 
-1. 将客户端设置项目(**v或** YYYY-client-6.XX **,************** EXE.exe setup v.1)复制到/Datat，它/Eng/JespJansole文件夹。
+1. 将客户端设置项目(**v或** YYYY-client-6.XX **,************** EXE.exe setup v.1)复制到/Datat，它/Eng/JespJonsole文件夹中。
 
    有关此方面的详细信息，请参阅以下各节：
 
