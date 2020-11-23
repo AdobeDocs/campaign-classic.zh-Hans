@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 关于 Adobe Experience Cloud 触发器
 description: 开始实施Adobe Experience Cloud触发器
-page-status-flag: never-activated
-uuid: c523822f-8178-4989-bd88-ab402470e540
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
-discoiquuid: 0d617f1c-0d0b-489f-9027-a92b1f1eee37
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 11%
