@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: v5.11 中的特定配置
-seo-title: v5.11 中的特定配置
 description: v5.11 中的特定配置
-seo-description: null
-page-status-flag: never-activated
-uuid: d6920beb-a766-4aec-8a8e-d32e47b545a4
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: configuration
-discoiquuid: fc280640-528d-44de-87d8-52f443772abd
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1041'
 ht-degree: 3%
 
 ---
@@ -119,7 +114,7 @@ Web 跟踪管理也已修改。 迁移到v7后，必须开始部署向导以完�
 
 * 内部名称：NlMigration_KeepFolderStructure
 * 数据类型：整数
-* 值（文本）:3
+* 值（文本）:1
 
 如果使用此选项，则迁移后必须删除已废弃的文件夹，添加新文件夹并运行所有必要的检查。
 
