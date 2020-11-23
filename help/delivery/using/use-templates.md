@@ -1,18 +1,14 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 使用投放模板
-seo-title: 使用投放模板
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 投放模板为大多数常见类型的活动提供现成方案，从而提高效率。 借助模板，营销人员可以在更短的时间内以最少的自定义次数部署新活动。
 
-在本节中进一步了 [解投放模板](../../delivery/using/creating-a-delivery-template.md)。
+Learn more about delivery templates in [this section](../../delivery/using/creating-a-delivery-template.md).
 
 ## 开始使用投放模板 {#gs-templates}
 
