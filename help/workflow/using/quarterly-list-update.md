@@ -1,24 +1,21 @@
 ---
-title: 每季度列表更新(使用增量查询)
+solution: Campaign Classic
+product: campaign
+title: 使用增量查询每季度更新列表
 description: 在此用例中，使用增量查询自动更新收件人列表。
-page-status-flag: never-activated
-uuid: 24d322e8-172c-4faa-8a1f-59085b390a76
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: 31071cd2-7d97-4a4f-a6cc-5ac5b6178be5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# 每季度列表更新(使用增量查询) {#quarterly-list-update}
+# 使用增量查询每季度更新列表 {#quarterly-list-update}
 
 在以下示例中，使用 [增量查询](../../workflow/using/incremental-query.md) ，以自动更新收件人列表。 这些收件人作为季节性营销活动的一部分而定。
 
