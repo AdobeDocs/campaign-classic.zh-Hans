@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 通过向导集成优惠
-seo-title: 通过向导集成优惠
 description: 通过向导集成优惠
-seo-description: null
-page-status-flag: never-activated
-uuid: 0d8cf0b5-fc27-4bf4-bd1d-892fe6e3257b
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
-discoiquuid: 181fcb70-9394-4091-93df-92c39273ec3d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '798'
 ht-degree: 2%
 
 ---
@@ -79,7 +74,7 @@ ht-degree: 2%
 * **[!UICONTROL Category]** :优惠排序的特定文件夹。 如果未指定类别，则优惠引擎将考虑环境中包含的所有优惠，除非选择了主题。
 * **[!UICONTROL Themes]** :关键词在类别中定义在上游。 这些优惠用作过滤器，通过在一组类别中选择它们，可以细化要显示的数。
 * **[!UICONTROL Number of propositions]** :引擎返回的可插入优惠主体的投放数。 如果优惠未插入到消息中，则仍将生成，但不显示。
-* **[!UICONTROL Exclude non-eligible recipients]** :通过此选项，可以激活或取消激活排除收件人(其中没有足够的合格优惠)。 合格命题的数量可以低于所请求的命题的数量。 如果选中此框，将从收件人中排除建议不足的投放。 如果您不选择此选项，这些收件人将不被排除，但它们将没有请求的建议数。
+* **[!UICONTROL Exclude non-eligible recipients]** :通过此选项，可以激活或取消激活排除收件人(其中没有足够的合格优惠)。 合格命题的数量可以低于所请求的命题的数量。 如果选中此框，将从收件人中排除建议不足的投放。 如果您不选择此选项，这些收件人将不被排除，但它们将没有请求数量的建议。
 * **[!UICONTROL Do not display anything if no offer is selected]** :此选项允许您选择在其中一个主张不存在的情况下如何处理消息。 选中此框后，将不显示缺少命题的表示，并且此命题的消息中不显示任何内容。 如果未选中该框，则消息本身在发送过程中将被取消，收件人将不再收到任何消息。
 
 ### 将优惠建议插入投放 {#inserting-an-offer-proposition-into-a-delivery}
