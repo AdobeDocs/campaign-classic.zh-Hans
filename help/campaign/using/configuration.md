@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 配置
-seo-title: 配置
 description: 配置
-seo-description: null
-page-status-flag: never-activated
-uuid: 59503b54-ad49-4b00-8ffb-52e6f6c62070
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-discoiquuid: ed4afa5e-c184-4c8e-a086-41d87b863190
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 1%
+source-wordcount: '739'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +21,7 @@ ht-degree: 1%
 
 这使您能够了解如何使标准数据模型适应与个人表Adobe Campaign外的事务处理表的特定性质。 此个人表可以与Adobe Campaign的可用个人表或不同的表重合
 
-度量假设验证由操作流程工作流( **[!UICONTROL operationMgt]** )启动。 每个假设验证代表一个以执行状态（正在编辑、挂起、完成、失败等）异步执行的单独进程 由调度程序控制，该活动管理优先级约束、同时处理数量限制、低页以及频率自动执行。
+度量假设验证由操作流程工作流( **[!UICONTROL operationMgt]** )启动。 每个假设验证代表一个以执行状态（正在编辑、挂起、完成、失败等）异步执行的单独进程。 由调度程序控制，该活动管理优先级约束、同时处理数量限制、低页以及频率自动执行。
 
 ## 配置模式 {#configuring-schemas}
 
