@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 关于 Campaign 集成
 description: 使用其他 Adobe 解决方案，并将其不同的功能与 Campaign 相结合。
-page-status-flag: never-activated
-uuid: 087abdf0-b4b2-45e6-be21-b03bf85ddf83
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
-discoiquuid: 0af1fd96-48ef-43c9-a03b-0f9a6e0e02fe
 translation-type: tm+mt
-source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 9%
