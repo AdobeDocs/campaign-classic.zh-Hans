@@ -27,7 +27,7 @@ ht-degree: 3%
 The webApp ids have been modified during the migration process. Please make sure to check your scripts/css for broken compatibility (any client side javascript or css dealing directly with another element through its id is impacted). See file 'c:\svn\602\nl\build\ncs\var\upgrade/postupgrade/webAppsMigration_*************.txt' for details about the references that were automatically updated, if any.
 ```
 
-Web应用程序的某些组件（例如各种公式字段）具有@id属性。 这些代码用于Web应用程序的XML代码，不再以相同的方式生成。 它们在界面中不可见，通常不能使用它们。 但是，在某些情况下，@id属性可能已用于个性化Web应用程序的呈现，例如通过样式表或使用JavaScript代码。
+Web应用程序的某些组件（例如各种公式字段）具有@id属性。 这些代码用于Web应用程序的XML代码，不再以相同的方式生成。 它们在界面中不可见，通常不能使用它们。 但是，在某些情况下，@id属性可能已用于个性化Web应用程序的渲染，例如通过样式表或使用JavaScript代码。
 
 迁移过程中， **必须** 检查警告中指定的日志文件路径：
 
