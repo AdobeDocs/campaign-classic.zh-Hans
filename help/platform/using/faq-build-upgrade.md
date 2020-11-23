@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 构建升级常见问题解答
 description: 与活动构建升级相关的常见问题
-page-status-flag: never-activated
-uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 2%
@@ -20,7 +17,7 @@ ht-degree: 2%
 
 # 构建升级常见问题解答 {#build-upgrade-faq}
 
-Adobe Campaign会定期更新。 如果您熟悉我们发布的发 [行说明](../../rn/using/rn-overview.md)，您可能会意识到，平均每年都会发布2/3个附带新功能、改进和修复的次要版本。 此外，我们定期发布仅包含累积修复的构建。 这种定期更新旨在让您掌握最新、最大限度的信息，使您的环境完全安全，并显着改进您使用我们产品的体验。
+Adobe Campaign 会定期更新。如果您熟悉我们发布的发 [行说明](../../rn/using/rn-overview.md)，您可能会意识到，平均每年都会发布2/3个附带新功能、改进和修复的次要版本。 此外，我们还定期发布仅包含累积修复的内部版本。这种定期更新旨在让您掌握最新、最大限度的信息，使您的环境完全安全，并显着改进您使用我们产品的体验。
 
 客户运行最新版Adobe Campaign至关重要。 它还允许Adobe在遇到问题时更高效地提供帮助——在旧版本上识别、重现和修复问题通常需要更多时间，更不用说您可能遇到的某些问题很可能已在最近版本中得到修复。
 
