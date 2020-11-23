@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 在 Linux 中安装包
-seo-title: 在 Linux 中安装包
 description: 在 Linux 中安装包
-seo-description: null
-page-status-flag: never-activated
-uuid: d83f00b5-500b-406a-a3d6-ea5639f244f0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-discoiquuid: 04faa9f3-d160-4060-b26e-44333f2faf71
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
@@ -61,7 +56,7 @@ ht-degree: 1%
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
-   rpm文件依赖于CentOS/Red Hat分发上的包。 如果不想使用其中的一些依赖关系（例如，如果想使用Oracle JDK而不是OpenJDK），则可能必须使用rpm的“nodeps”选项：
+   rpm文件依赖于CentOS/Red Hat分发上的包。 如果您不想使用其中的一些依赖关系(例如，如果您想使用OracleJDK而不是OpenJDK)，则可能必须使用rpm的“nodeps”选项：
 
    ```
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
@@ -187,7 +182,7 @@ export neolane_LANG=fra
 
 如有必要，请 **使用vi customer** .sh命 **令编辑customer** .sh文件，并调整配置或添加缺少的行：
 
-* 对于Oracle客户端：
+* 对于Oracle客户：
 
    ```
    export ORACLE_HOME=/usr/local/instantclient_10_2
@@ -195,7 +190,7 @@ export neolane_LANG=fra
    export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
    ```
 
-   ORACLE_HOME环境变量的内容与Oracle安装目录匹配。
+   oracle_HOME环境变量的内容与Oracle安装目录匹配。
 
    TNS_ADMIN变量的内容必须与tnsnames.ora文 **件的位置匹配** 。
 
@@ -257,9 +252,9 @@ systemctl stop nlserver
 systemctl start nlserver
 ```
 
-### Linux中的Oracle客户端 {#oracle-client-in-linux}
+### OracleLinux客户端 {#oracle-client-in-linux}
 
-在将Oracle与Adobe Campaign一起使用时，您需要在Linux中配置Oracle客户端层。
+在将Oracle与Adobe Campaign结合使用时，您需要在Linux中配置Oracle客户端层。
 
 * 使用完整客户端
 * TNS定义
@@ -279,7 +274,7 @@ systemctl start nlserver
 
 * Adobe Campaign配置
 
-   要完成Oracle客户端的Adobe Campaign安装，您需要为Adobe Campaign使用的。so文 **件创建符号** 链接。
+   要完成Oracle客户端的Adobe Campaign安装，您需要为Adobe Campaign使用的。so文 **件创建符** 号链接。
 
    为此，请使用以下命令：
 
