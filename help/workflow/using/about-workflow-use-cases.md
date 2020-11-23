@@ -1,21 +1,18 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 关于工作流使用案例
 description: 进一步了解可使用Campaign Classic工作流执行的使用案例。
-page-status-flag: never-activated
-uuid: 7c1e8cea-90d0-491f-ab8f-6cd69f8a6c3b
-contentOwner: sauviat
-products: SG_CAMPAIGN/STANDARD
 audience: workflow
 content-type: reference
 topic-tags: about-workflows-and-data-management
-discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00a9b7def9d0ad0190c389c6bcde431f8e2f2b44
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 46%
+ht-degree: 66%
 
 ---
 
@@ -36,7 +33,7 @@ ht-degree: 46%
 * [加载投放内容](../../workflow/using/loading-delivery-content.md)
 * [跨渠道投放工作流](../../workflow/using/cross-channel-delivery-workflow.md)
 * [具有自定义日期字段的电子邮件扩充](../../workflow/using/email-enrichment-with-custom-date-fields.md)
-* [内容创建、编辑和发布自动化](../../delivery/using/automating-via-workflows.md#examples)
+* [自动完成内容创建、编辑和发布](../../delivery/using/automating-via-workflows.md#examples)
 
 ## 监控 {#monitoring}
 
@@ -45,7 +42,7 @@ ht-degree: 46%
 * [向列表发送报告](../../workflow/using/sending-a-report-to-a-list.md)
 * [监督工作流](../../workflow/using/supervising-workflows.md)
 * [向运营商发送个性化提醒](../../workflow/using/sending-personalized-alerts-to-operators.md)
-* [在发送收件人之前设置投放批准流程](../../workflow/using/using-the-local-approval-activity.md)
+* [在发送投放之前设置收件人审批流程](../../workflow/using/using-the-local-approval-activity.md)
 
 ## 数据管理 {#management}
 
@@ -57,9 +54,9 @@ ht-degree: 46%
 * [使用聚合](../../workflow/using/using-aggregates.md)
 * [导入使用控制面板生成的密钥加密的数据](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
 * [使用控制面板上安装的密钥加密和导出数据](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
-* [每季度列表更新(使用增量查询)](../../workflow/using/quarterly-list-update.md)
+* [使用增量查询每季度更新列表](../../workflow/using/quarterly-list-update.md)
 
-## 定位 {#designing-queries}
+## 设定目标 {#designing-queries}
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
@@ -72,4 +69,4 @@ ht-degree: 46%
 * [创建过滤器](../../workflow/using/creating-a-filter.md)
 * [过滤重复的收件人](../../workflow/using/filtering-duplicated-recipients.md)
 * [在查询中调用实例变量](../../workflow/using/javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
-* [对人口应用分解百分比](../../workflow/using/javascript-scripts-and-templates.md#example)
+* [对总体应用分割百分比](../../workflow/using/javascript-scripts-and-templates.md#example)
