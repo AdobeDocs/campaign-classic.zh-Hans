@@ -58,7 +58,7 @@ Confirmation: XXXX
 
 您可以配置存储数据&#x200B;**的Adobe Campaign** 目录（var目录）（日志、下载、重定向等）。 为此，请使 **用XTK_VAR_DIR** 系统变量：
 
-* 在Windows中，在XTK_VAR_DIR系统变 **量中指示以下值** 。
+* 在Windows中，在XTK_VAR_DIR系 **统变量中指示以** 下值
 
    ```
    D:\log\AdobeCampaign
