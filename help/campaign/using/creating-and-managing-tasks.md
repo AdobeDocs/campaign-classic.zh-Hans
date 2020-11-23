@@ -67,7 +67,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其整个生
 
 ![](assets/s_ncs_user_task_create_simple.png)
 
-您还可以通过任务的仪表板创建活动:在这种情况下，它会自动链接到它所创建的活动。
+您还可以通过任务的仪表板创建活动:在这种情况下，它会自动链接到创建它时所使用的活动。
 
 ![](assets/s_ncs_user_task_create_new_from_op.png)
 
