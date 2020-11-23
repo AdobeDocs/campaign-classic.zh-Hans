@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: 常用命令
-seo-title: 常用命令
 description: 常用命令
-seo-description: null
-page-status-flag: never-activated
-uuid: f06df8c0-d4ec-4d6b-84d5-f46d852388a3
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: production-procedures
-discoiquuid: 90718075-87a7-4e9a-935b-571010908e79
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '408'
 ht-degree: 3%
 
 ---
@@ -167,7 +162,7 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 >
 >* 通常，您可以使用config命令，而不是手动修改配 **置文** 件
 >* 要获取参数的列表，请使 **用-?** 参数： **nlserver config -?**
->* 对于Oracle数据库，不能指定帐户。 语法如下：
+>* 对于Oracle数据库，您不能指定帐户。 语法如下：
 
 >
 >  
