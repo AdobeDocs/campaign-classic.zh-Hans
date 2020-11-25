@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: affc541c480ad7e618120fe90270841add06b711
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 5%
+source-wordcount: '153'
+ht-degree: 3%
 
 ---
 
@@ -34,6 +34,7 @@ ht-degree: 5%
    <tr> 
    <td> <span class="uicontrol">MessageCenter完整聚合计算</span> <br /> </td> 
    <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
+   <td> 此工作流会更 <strong>新消息</strong> 中心聚合 <strong>的“完</strong> 整多维数据集”。 默认情况下，每天凌晨3点触发。 此聚合捕获以下维：渠道、日期、状态和事件类型。<br /> 然后 <strong>使用消息</strong> 中心多维数据集生成基于事件的报表。 您可以在本节中进一步了 <a href="../../reporting/using/about-cubes.md">解多维数据集</a>。<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
