@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2171'
 ht-degree: 97%
 
 ---
@@ -58,6 +58,7 @@ ht-degree: 97%
       + [隐私和同意](platform/using/privacy-and-recommendations.md)
       + [隐私管理](platform/using/privacy-management.md)
       + [隐私请求](platform/using/privacy-requests.md)
+      + [隐私常见问题解答](platform/using/privacy-faq.md)
    + 用户档案管理 {#profile-management}
       + [关于用户档案](platform/using/about-profiles.md)
       + [编辑用户档案](platform/using/editing-a-profile.md)
