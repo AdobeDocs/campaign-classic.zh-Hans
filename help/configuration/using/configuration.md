@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6e0741d13aa954e81fe6416663399ffd1a81012f
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -162,7 +162,7 @@ XML文档包含根元 **`<navtree>`** 素，该元素具 **有** name和 **命�
 * **name**:内部名称
 * **标签**:标签(在菜单 **[!UICONTROL Add new folder]** 中使用)和在插入文件夹时用作默认标签。
 * **img**:文件夹插入时的默认图像。
-* **hiddenCommands**:列表要遮罩的命令（以逗号分隔）。 可能的值：“插入”、“删除”、“更新”和“重复”。
+* **hiddenCommands**:列表要遮罩的命令（以逗号分隔）。 可能的值：“adbnew”、“adbsave”、“adbcancel”和“adbdup”。
 * **newFolderShortCuts**:创建文件夹时模型&#x200B;**`<nodemodel>`** 的快捷键列表（以逗号分隔）。
 * **插入右**、 **编辑右**、 **删除右**:用于插入、编辑和删除文件夹的权限。
 
