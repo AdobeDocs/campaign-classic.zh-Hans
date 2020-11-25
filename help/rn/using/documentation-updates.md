@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 95%
+source-wordcount: '3631'
+ht-degree: 94%
 
 ---
 
@@ -36,6 +36,10 @@ ht-degree: 95%
 在中间源服务器配置页面中添加了注释，以指定在设置服务器后外部帐户的内部名称不应更新。 [阅读更多](../../installation/using/mid-sourcing-server.md)
 
 已在指定外部SFTP服务器的路径时使用的语法上添加了信息。 [阅读更多](../../platform/using/sftp-server-usage.md#external-SFTP-server)
+
+“个人数据和角色”部分已使用用例方案进行更新，以说明不同角色在隐私方面如何进行交互。 [阅读更多](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+
+新增了一节，其中列出了有关隐私的常见问题解答。 [阅读更多](../../platform/using/privacy-faq.md)
 
 ## 2020 年 10 月 {#oct-2020}
 
