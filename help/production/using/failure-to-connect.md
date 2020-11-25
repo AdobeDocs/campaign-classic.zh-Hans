@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: fc5a44fe7bf4c88eca4634a67eaae48c722d8e5e
+source-git-commit: 85fae38f864b031f069058dae79ce6753dc4bf03
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '370'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,11 @@ ht-degree: 2%
 </tr>
 <tr>
 <td>检查安全区域的常规配置。</td>
-<td>有关配置安全区域的详细信息，请参阅[本节](../../installation/using/configuring-campaign-server.md#defining-security-zones)</td>
+<td>有关配置安全区域的详细信息，请参 <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/>阅此部分。</a></td>
+</tr>
+<tr>
+<td>命令nlserver转储返回 <b>无任务</b></td>
+<td>必须重新启动整个Adobe Campaign应用程序。 为此，请使用以下命令： <b>nlserver watchgdog -svc -noconsole</b></td>
 </tr>
 </tbody> 
 </table>
