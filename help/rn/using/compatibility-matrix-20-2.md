@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: aabab5367ea4a26837fa3dc94a36fbbfa48d59e3
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 19%
@@ -196,7 +196,7 @@ Adobe Campaign Classic与本页中列出的所有系统和工具兼容。 由于
 </td>
 </tr>
 <tr>
-<td>MS Dynamics</td>
+<td>Microsoft Dynamics</td>
 <td>
 <p>Soap API - 本地：2007、2015、2016</p>
 <p>Soap API - 在线：2015、2016</p>
