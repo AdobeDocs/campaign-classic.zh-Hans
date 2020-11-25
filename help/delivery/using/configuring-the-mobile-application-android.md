@@ -10,9 +10,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1d7d48f52f69e4902eafa6806c2cd9170c21fe5a
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1648'
 ht-degree: 2%
 
 ---
@@ -61,6 +61,8 @@ ht-degree: 2%
    * **maxGCMConnectPerChild**:每个子服务器启动的对FCM的并行HTTP请求的最大限制（默认为8）。
 
 ## 配置Android服务 {#configuring-android-service}
+
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频中配置Android服务](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=en#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
 
 1. 转到节 **[!UICONTROL Profiles and Targets > Services and subscriptions]** 点并单击 **[!UICONTROL New]**。
 
@@ -178,6 +180,8 @@ ht-degree: 2%
 
 ## 扩展appsubscriptionRcp模式 {#extend-subscription-schema}
 
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频中扩展appsubscriptionRcp模式](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=en#extending-the-app-subscription-schema-to-personalize-push-notifications)
+
 您需要扩展 **appsubscriptionRcp** ，以定义新的附加字段，以将应用程序的参数存储在活动库中。 例如，这些字段将用于个性化。 操作步骤：
 
 1. 创建模式的扩 **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** 展并定义新字段。 在本页中进一步了解模式 [扩展](../../configuration/using/about-schema-edition.md)
@@ -187,7 +191,6 @@ ht-degree: 2%
    >[!CAUTION]
    >
    >确保选项卡中的配 **[!UICONTROL Subscription parameters]** 置名称与手机应用程序代码中的配置名称相同。 请参阅将 [活动SDK集成到移动应用程序部](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) 分。
-
 
 ## 创建Android富通知 {#creating-android-delivery}
 
@@ -241,6 +244,8 @@ ht-degree: 2%
 >[!NOTE]
 >
 >通知消息的其他选项仅在HTTP v1 API配置中可用。 有关更多信息，请参阅此](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1)章节[。
+
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频中创建Android推送通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=en#additional-resources)
 
 1. 转到 **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
 
