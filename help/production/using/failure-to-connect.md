@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 57063c1ed0100b171bda93e273c399c40d8e980a
+source-git-commit: 68fee697b65b2ba69f456803e0a7cebca9be3760
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '337'
 ht-degree: 2%
 
 ---
@@ -45,34 +45,17 @@ ht-degree: 2%
   </tr>
   <tr> 
    <td>Adobe Campaign是否已正确集成？</td> 
-   <td>登录到： <b>http(s)://&lt;urlserver&gt;/r/test</b> URL。 服务器应返回以下类型的消息：
-
-    &lt;pre>
-    &lt;redir status=&#39;OK&#39; date=&#39;YYYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&lt;server>&#39;/>
-    &lt;/pre>
-如果未获得此结果，请检查Web服务器配置中是否考虑了集成。</td>
-</tr>
+   <td>登录到： <b>http(s)://&lt;urlserver&gt;/r/test</b> URL。 服务器应返回以下类型的消息：&lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;如果您未获得此结果，请检查已考虑集成的Web服务器配置。</td>
+  </tr>
   <tr> 
-   <td>Adobe CampaignWeb模块是否已启动？</td> 
-   <td>连接到以下URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>*如果您获得Tomcat Java错误：
-
-JAVA集成是否正确执行？ Adobe Campaign需要SUN JDK。
-
-它集成在应用程序的文 [件路径中]/nl6/customer.sh
-
-* 如果您获得空白页面：Adobe CampaignWeb模块是否已启动？ 您应获得：
-
-<pre>
-nlserver pdumpHH:MM:SS &gt;Adobe Campaign Classic的应用程序服务器(7.X YY.R内部版本XXX@SHA1),DD/MM/YYYY[...]web@default(27515)- 55.2 Mb[...]
-</pre>
-* 如果不是，请使用以下命令重新启动它：
-
-<pre>        
-nlserver开始web
-</pre>
-</td>
-</tr>
-  <tr>
+   <td>连接到以下URL: <b>/nl/jsp/logon.jsp</b></td>
+   <td>如果获得Tomcat Java错误，请检查JAVA集成是否正确执行。 它集成在文件[应用程序路径]/nl6/customer.sh中</td>
+  </tr>
+  <tr> 
+   <td>连接到以下URL: <b>/nl/jsp/logon.jsp</b></td>
+   <td>如果获得空白页面，请检查Adobe CampaignWeb模块是否已启动。 命令nlserver转储应返回DD/MM/YYYY的Adobe Campaign Classic(7.X YY.R内部版本XXX@SHA1)的应用程序服务器。 如果不是，请使用命令nlserver开始web重新启动模块</td>
+  </tr>
+   <tr>
   	<td>检查安全区域的常规配置。</td>
   	<td>有关配置安全区域的详细信息，请参阅[本节](../../installation/using/configuring-campaign-server.md#defining-security-zones)</td>
   </tr>
