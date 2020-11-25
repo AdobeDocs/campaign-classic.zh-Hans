@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 97e039e48068e3862bc6640711efe54f21fc0f15
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '2043'
 ht-degree: 5%
 
 ---
@@ -78,6 +78,8 @@ Adobe Campaign是Adobe Experience Cloud解决方案的一部分。 隐私在活�
 * **个人数据** ，是指可以直接或间接识别活人的信息。
 * **敏感个人数据** 是与个人的种族、政治视图、宗教信仰、犯罪背景、遗传信息、健康数据、性偏好、生物识别信息以及贸易合并会员资格相关的信息。
 
+当将活动与其他Experience Cloud解决方案集成时，您需要为个人受众保护支付额外的费用。在其他解决方案中，可以从一个系统传输到 [另一个系统](../../platform/using/adobe-analytics-data-connector.md)，如 [Adobe Analytics、Audience Manager或人员核心服务](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)、 [](../../integrations/using/synchronizing-audiences.md)[](../../platform/using/crm-connectors.md)Campaign Standard或通过CRM连接器与其他解决方案集成。
+
 主 [要法规](#privacy-regulations) ，是指管理数据的不同实体：
 * 数 **据控制** 器是决定收集、使用和共享个人数据的手段和目的的权威。
 * 数 **据处理者** ，是指按照数据管理者的指示收集、使用或共享个人数据的任何个人或一方。
@@ -85,7 +87,31 @@ Adobe Campaign是Adobe Experience Cloud解决方案的一部分。 隐私在活�
 
 因此，作为收集和共享个人数据的公司，您是数据管理者，您的客户是数据主体，Adobe Campaign在按照您的指示处理其个人数据时充当数据处理者。 请注意，您作为数据管理者有责任处理与数据主体的关系，例如管理隐私 [请求](#privacy-requests)。
 
-当将活动与其他Experience Cloud解决方案集成时，您需要为个人受众保护支付额外的费用。在其他解决方案中，可以从一个系统传输到 [另一个系统](../../platform/using/adobe-analytics-data-connector.md)，如 [Adobe Analytics、Audience Manager或人员核心服务](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)、 [](../../integrations/using/synchronizing-audiences.md)[](../../platform/using/crm-connectors.md)Campaign Standard或通过CRM连接器与其他解决方案集成。
+### 用例方案 {#use-case-scenario}
+
+为了说明不同角色如何互动，以下是一个高级GDPR客户体验使用案例的示例。
+
+在本例中，航空公司公司是Adobe Campaign客户。 此公司是数 **据控制器** ，航空公司的所有客户都是 **数据主体**。 劳拉是航空公司公司的客户。
+
+以下是此示例中使用的不同角色：
+
+* **Laura** 是数 **据主题**。 她是接收航空公司公司消息的收件人。 劳拉可能是常客，但可能会在某个时刻决定，她不希望航空公司公司提供任何个性化的广告或营销信息。 她将要求航空公司的公司（根据他们的流程）删除她的常客号码。
+
+* **安妮** 是航 **空公司公司的** “数据控制者”。 她接收了劳拉的请求，检索为识别数据主体而请求的有用ID，并以Adobe Campaign提交请求。
+
+* **Adobe Campaign** 是数 **据处理器**。
+
+![](assets/privacy-gdpr-flow.png)
+
+以下是此用例的一般流程：
+
+1. 数 **据主体** (Laura)通过电子邮件、客户关怀或网 **站向数**&#x200B;据控制者发送GDPR请求。
+
+1. 数 **据控制** 器(Anne)通过接口或使用API将GDPR请求推送到活动。
+
+1. 数据处 **理者** (Adobe Campaign)收到信息后，将对GDPR请求采取操作，并向数据控制者(安 **妮)发送响** 应或确认。
+
+1. 数 **据控制** 器(Anne)随后会查看信息并将其发回数据 **主体** (Laura)。
 
 ## 数据采集 {#data-acquisition}
 
@@ -125,19 +151,9 @@ Adobe Campaign提供了其他功能，帮助您作为数据管理者，为特定
 
 * 被 **遗忘权** （删除请求）赋予数据主体让数据管理者擦除其个人数据的权利。
 
->[!NOTE]
->
->这套工具可帮助您遵守GDPR、CCPA、PDPA和LGPD的隐私权。 有关这些不同法规的更多信息，请 [参阅本页](../../platform/using/privacy-management.md#privacy-management-regulations)。
+此部 **分显** 示 **了Access** 和Delete [请求](../../platform/using/privacy-management.md#right-access-forgotten)。
 
-<!--* **GDPR** (General Data Protection Regulation) is the European Union’s (EU) privacy law that harmonizes and modernizes data protection requirements. GDPR applies to Adobe Campaign customers who hold data for Data Subjects residing in the EU.
-
-* **CCPA** (California Consumer Privacy Act) provides California residents new rights in regards to their personal information and imposes data protection responsibilities on certain entities whom conduct business in California.
-
-* **Thailand's PDPA** (Personal Data Protection Act) is the new privacy law that harmonizes and modernizes data protection requirements for Thailand. This regulation applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.
-
-Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug, 16 for all companies collecting or processing personal data in Brazil. This regulation also applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.-->
-
-访问 **和** 删除请 **求将显示在** 此页上 [](../../platform/using/privacy-management.md#right-access-forgotten)。 创建这些请求的实施步骤详见 [本节](../../platform/using/privacy-requests.md)。 <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
+创建这些请求的实施步骤详见 [本节](../../platform/using/privacy-requests.md)。
 
 ## 跟踪功能 {#tracking-capabilities}
 
