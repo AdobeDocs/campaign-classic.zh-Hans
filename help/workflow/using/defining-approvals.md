@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae342f41b9b74159607b313e1c29549b17488db5
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## 过期 {#expirations}
 
-过期是在不同类型的过渡中使用的特定活动，尤其是在批准中。 到期可用于在给定时间之后在没有响应的情况下触发操作或执行工作流（例如，将批准分配给其他组）。
+过期是在不同类型的过渡中使用的特定活动，尤其是在批准中。 您可以在给定时间后使用过期来触发操作，而无需响应。 例如，还可以使用它来追踪工作流并将批准分配给其他组。
 
 活动批准属性中的第二个选项卡允许您定义一个或多个过期时间。 事实上，您可以定义多个过期类型。
 
