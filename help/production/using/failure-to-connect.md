@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: cb6a2247e3b7617511aecf3d2d19985af0216494
+source-git-commit: eb7e1c98f69ba20ef4222bfefea74fdaf6072397
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -41,44 +41,45 @@ ht-degree: 2%
   </tr>
   <tr> 
    <td>Web服务器是否响应？</td> 
-   <td>使用Web浏览器连接到Adobe Campaign服务器访问URL:**`http(s):// <urlserver>`**. 如果它没有响应，则计算机上停止Web服务器。 请与主机公司的系统管理员联系以重新启动该服务。</td>
+   <td>使用Web浏览器连接到Adobe Campaign服务器访问URL: <b>http(s):// &lt;urlserver&gt;</b>。 如果它没有响应，则计算机上停止Web服务器。 请与主机公司的系统管理员联系以重新启动该服务。</td>
   </tr>
   <tr> 
    <td>Adobe Campaign是否已正确集成？</td> 
-   <td>登录到：**`http(s)://<urlserver>/r/test`** URL。 服务器应返回以下类型的消息
+   <td>登录到： <b>http(s)://&lt;urlserver&gt;/r/test</b> URL。 服务器应返回以下类型的消息：
 
-    &quot;
+    &lt;pre>
     &lt;redir status=&#39;OK&#39; date=&#39;YYYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&lt;server>&#39;/>
-    &quot;
+    
     
     如果您未获得此结果，请检查已考虑集成的Web服务器配置。&lt;/td>
 </tr>
   <tr> 
    <td>Adobe CampaignWeb模块是否已启动？</td> 
    <td>
-   连接到以下URL:**`http(s)://<URLSERVER>/nl/jsp/logon.jsp`** *如果您获得Tomcat Java错误：
+   连接到以下URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>*如果获得Tomcat Java错误：
 
     JAVA集成是否正确执行？ Adobe Campaign需要SUN JDK。
     
-    它集成在文件**`[应用程序路径]`/nl6/customer.sh*
+    它集成在文件[应用程序路径]/nl6/customer.sh
     
-    **中，如果您获得空白页面：是
+    *如果您获得空白页面：是
     
     否已启动Adobe CampaignWeb模块？ 您应获得
     
-    DD/MM/YYYY
-    [...]web@default(27515)- 55.2 Mb
-    [...)*的“Adobe Campaign Classic的Application Server(7.X YY.R build XXX@SHA1)”
+    :&lt;pre>
+    nlserver
+    pdumpHH:MM:SS >Adobe Campaign Classic的应用程序服务器(7.X YY.R内部版本XXX@SHA1)DD/MM
+    /YYYY
+    [...]
+    web@default(27515)- 55.2 Mb
+    [...]
     
     
     
     
     
     
-    
-    
-    
-    的“nlserver pdumpHH:MM:SS”否则，请使用以下命令重新启动它：“服务器开始Web”&lt;/td>
+    /pre>*如果没有，请使用以下命令重新启动它：&lt;pre>服务器开始&lt;/pre>&lt;/td>
 </tr>
   <tr>
   	<td>检查安全区域的常规配置。</td>
