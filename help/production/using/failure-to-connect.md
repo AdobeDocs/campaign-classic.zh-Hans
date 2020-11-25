@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 2cc4ab52f3cbdd00831d0b5104690b7adf6091ce
+source-git-commit: 57063c1ed0100b171bda93e273c399c40d8e980a
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -60,14 +60,11 @@ JAVA集成是否正确执行？ Adobe Campaign需要SUN JDK。
 
 它集成在应用程序的文 [件路径中]/nl6/customer.sh
 
-* 如果您获得空白页面：
-
-Adobe CampaignWeb模块是否已启动？ 您应获得：
+* 如果您获得空白页面：Adobe CampaignWeb模块是否已启动？ 您应获得：
 
 <pre>
 nlserver pdumpHH:MM:SS &gt;Adobe Campaign Classic的应用程序服务器(7.X YY.R内部版本XXX@SHA1),DD/MM/YYYY[...]web@default(27515)- 55.2 Mb[...]
 </pre>
-
 * 如果不是，请使用以下命令重新启动它：
 
 <pre>        
