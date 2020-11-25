@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1d7d48f52f69e4902eafa6806c2cd9170c21fe5a
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 10%
+source-wordcount: '273'
+ht-degree: 9%
 
 ---
 
@@ -32,6 +32,8 @@ ht-degree: 10%
 >转到服务 **[!UICONTROL Subscriptions]** 的选项卡，以视图订阅者对服务的列表，即在其移动设备上安装应用程序并同意接收通知的所有用户。
 
 ## 安装包 {#installing-package-ios}
+
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频中安装移动应用程序包](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
 作为混合／托管客户，请与Adobe客户关怀团队联系，以访问活动中的推送通知渠道。
 
