@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 6464a61148fd12738d95953161aea4ac4d19c04b
+source-git-commit: 2cc4ab52f3cbdd00831d0b5104690b7adf6091ce
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '343'
 ht-degree: 2%
 
 ---
@@ -49,37 +49,32 @@ ht-degree: 2%
 
     &lt;pre>
     &lt;redir status=&#39;OK&#39; date=&#39;YYYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&lt;server>&#39;/>
-    
-    
-    如果您未获得此结果，请检查已考虑集成的Web服务器配置。&lt;/td>
+    &lt;/pre>
+如果未获得此结果，请检查Web服务器配置中是否考虑了集成。</td>
 </tr>
   <tr> 
    <td>Adobe CampaignWeb模块是否已启动？</td> 
    <td>连接到以下URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>*如果您获得Tomcat Java错误：
 
-    JAVA集成是否正确执行？ Adobe Campaign需要SUN JDK。
-    
-    它集成在文件[应用程序路径]/nl6/customer.sh中
+JAVA集成是否正确执行？ Adobe Campaign需要SUN JDK。
+
+它集成在应用程序的文 [件路径中]/nl6/customer.sh
 
 * 如果您获得空白页面：
 
-       Adobe CampaignWeb模块是否已启动？ 您应获得：
-      
-       &lt;pre>
- Nlserver     dump
-     SS > Application Server(7.X YY.R build)。Dd/MM/YYYY
- .......Y.yyy.....Y...Y...Y..Y......................     ............................
- .................................................     
-    
-    ......................................................../pre>
-   
+Adobe CampaignWeb模块是否已启动？ 您应获得：
+
+<pre>
+nlserver pdumpHH:MM:SS &gt;Adobe Campaign Classic的应用程序服务器(7.X YY.R内部版本XXX@SHA1),DD/MM/YYYY[...]web@default(27515)- 55.2 Mb[...]
+</pre>
+
 * 如果不是，请使用以下命令重新启动它：
 
-       &lt;pre>
- nlserver     
- 开始Web     
- &lt;/pre>     &lt;/td>
-   </tr>
+<pre>        
+nlserver开始web
+</pre>
+</td>
+</tr>
   <tr>
   	<td>检查安全区域的常规配置。</td>
   	<td>有关配置安全区域的详细信息，请参阅[本节](../../installation/using/configuring-campaign-server.md#defining-security-zones)</td>
