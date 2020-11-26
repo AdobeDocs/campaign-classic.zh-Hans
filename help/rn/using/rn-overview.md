@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 已在生产中验证并受到 Adobe 推荐。
 
-最后 **一个GA版本** : [Gold Standard 10版](../../rn/using/gold-standard.md#gs-10) 和 [活动20.2.3版](../../rn/using/release--20-2.md#release-20-2-3-build-9182)
+最后 **一个 GA 版本** : [Gold Standard 10 版本](../../rn/using/gold-standard.md#gs-10) 和 [Campaign 20.2.3 版本](../../rn/using/release--20-2.md#release-20-2-3-build-9182)
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 仅限按需部署。
 
 ![](assets/do-not-localize/blue3.png) **发布候选项** (RC) - 具有新功能的最新版本。
 
-The **last RC build** is [Campaign Classic 20.3 release](../../rn/using/latest-release.md)
+**最后一个 RC 版本**[是 Campaign Classic 20.3 版本](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/orange3.png) **不再可用** - 需要更新到较新的内部版本。
 
