@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
 source-wordcount: '2171'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -335,7 +335,7 @@ ht-degree: 97%
    + Experience Cloud Triggers {#experience-triggers}
       + [开始使用 [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [配置管道](integrations/using/configuring-pipeline.md)
-      + [为Adobe Experience Cloud触发器配置AdobeI/O](integrations/using/configuring-adobe-io.md)
+      + [为 Adobe Experience Cloud 触发器配置 Adobe I/O](integrations/using/configuring-adobe-io.md)
       + [为自定义实施配置事件](integrations/using/events.md)
       + [管道监控](integrations/using/pipeline-monitoring.md)
       + [管道故障排除](integrations/using/pipeline-troubleshooting.md)
