@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6335c1cd327a83dbc8c4d43c4ab795b84531c3e1
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '378'
 ht-degree: 6%
 
 ---
@@ -68,20 +68,24 @@ Right-click and select **[!UICONTROL Actions > Save as template...]**.
 >
 >为避免出现配置错误，我们建议您重复本机模板并更改其属性，而不是创建新模板。
 
-## 如何配置投放模板 {#delivery-template-video}
+## 教程视频 {#delivery-template-video}
+
+### 如何配置投放模板
 
 以下视频演示如何为临时投放配置模板。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
-## 如何设置投放模板属性
+### 如何设置投放模板属性
 
 以下视频演示如何设置投放模板属性并详细说明每个属性。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
-## 如何部署临时投放模板
+### 如何部署临时投放模板
 
 此视频介绍如何部署临时电子邮件投放模板，并解释电子邮件投放与投放工作流程的区别。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
