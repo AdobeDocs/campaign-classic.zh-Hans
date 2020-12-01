@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '448'
 ht-degree: 7%
 
 ---
@@ -25,6 +25,8 @@ Adobe Campaign使您能够定义、优化、执行和分析通信和营销活动
 >
 >有关Adobe Campaign核心功能的详细信息，请参阅 [入门](../../platform/using/about-adobe-campaign-classic.md) 。\
 >本节详细介绍了各种渠道上与人口定位、消息个性化和消息投放相关 [的功能](../../delivery/using/steps-about-delivery-creation-steps.md)。
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现营销活动的关键概念](#video)
 
 ## 核心概念 {#core-concepts}
 
@@ -62,3 +64,10 @@ Adobe Campaign使您能够定义、优化、执行和分析通信和营销活动
 
    有关详细信息，请参阅 [关联和构造通过投放概要链接的资源](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
+## 教程 {#video}
+
+此视频介绍营销活动的主要概念。
+
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
