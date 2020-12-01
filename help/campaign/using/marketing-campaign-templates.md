@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 活动模板的创建和配置以活动模板 [形式](#campaign-templates)。
 
-有关活动创建的详细信息，请参 [阅此视频](../../campaign/using/marketing-campaign-deliveries.md#create-email-video)。
+![](assets/do-not-localize/how-to-video.png) 有关活动创建的详细信息，请参 [阅此视频](../../campaign/using/marketing-campaign-deliveries.md#create-email-video)。
 
 ## 可用模块的配置 {#configuration-of-the-available-modules}
 
