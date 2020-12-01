@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: e43a14a8be179dd4793176d15e2c30b3e778d3e0
+source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '923'
 ht-degree: 2%
 
 ---
@@ -97,7 +97,7 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过活动定义导 *
 
 在此用例中，我们将构建一个工作流，以便使用控制面板上安装的密钥加密和导出数据。
 
-本节还提供了一个教程视频，其中显示了如何使用GPG密钥加密 [数据](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/instance-settings/gpg-key-management/using-a-gpg-key-to-encrypt-data.html?lang=en#instance-settings)。
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#video)
 
 执行此用例的步骤如下：
 
@@ -142,3 +142,10 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过活动定义导 *
 
 1. 您现在可以运行工作流。 执行目标后，查询的数据将导出到SFTP服务器中，生成加密的。gpg文件。
 
+### 教程视频 {#video}
+
+此视频还介绍了如何使用GPG密钥加密数据
+
+>[!VIDEO](https://video.tv.adobe.com/v/36399?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
