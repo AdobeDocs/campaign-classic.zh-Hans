@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 4%
@@ -19,9 +19,7 @@ ht-degree: 4%
 
 优惠可以使用入站或出站渠道显示在各种优惠空间上。 本章详细介绍了入站渠道的一些特定功能。
 
->[!NOTE]
->
->您还可以观看此视 [频](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) ，详细了解如何在入站渠道上传送优惠。
+![](assets/do-not-localize/how-to-video.png) 您还可以观看此视 [频](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) ，详细了解如何在入站渠道上传送优惠。
 
 要使优惠由优惠引擎选择，它必须经过批准并可在实时环境中使用。有关详细信息，请参阅批 [准和激活优惠](../../interaction/using/approving-and-activating-an-offer.md)。
 
