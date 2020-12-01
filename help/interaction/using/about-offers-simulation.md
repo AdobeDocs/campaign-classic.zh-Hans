@@ -7,10 +7,10 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '259'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,9 @@ ht-degree: 3%
 
 模拟考虑以前应用于优惠的上下文和合格规则(请参 [阅优惠目录概述](../../interaction/using/offer-catalog-overview.md))，以及其推荐规则(请参阅管 [理优惠演示](../../interaction/using/managing-offer-presentation.md))。 这样，您无需实际使用优惠建议或过量／正在征求目标，即可测试和优化您的模拟的各个版本，因为优惠对目标收件人没有影响。
 
-要了解如何模拟优惠，请阅读以下步骤。 You can also watch this [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com).
+要了解如何模拟优惠，请阅读以下步骤。
+
+![](assets/do-not-localize/how-to-video.png)[您也可以观看此视频](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com)。
 
 ## 创建模拟的主要步骤 {#main-steps-for-creating-a-simulation}
 
