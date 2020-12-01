@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -99,7 +99,7 @@ Cookie名称为 **退出**。 常见值有：
 
 * **NL.ServerWebTracking。_displayOptOutBanner()**
 
-   如果管理员在选择退出横幅后应显示退出横幅，则返回true
+   如果管理员选择退出横幅后应显示退出横幅，则返回“true”
 
    管理员已选择使用Web 跟踪退出横幅时将调用此代码。
 
