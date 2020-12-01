@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Adobe Campaign允许您通过插入跟踪标签来跟踪和衡量Web 应用程�
 
    * **转化率**:显示导航路径所有步骤的人数。
    * **跳出率**:仅显示第一步的人数
-   * **转换通道**:每个步骤之间的丢失率。
+   * **转换漏斗**:每个步骤之间的丢失率。
 
    此外，Sector类 **型图** 则根据人口来源显示人口。
 
