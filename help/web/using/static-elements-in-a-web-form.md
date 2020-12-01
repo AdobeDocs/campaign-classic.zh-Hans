@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1269'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Web 窗体中的静态元素{#static-elements-in-a-web-form}
 
-您可以在表单的页面中包含用户没有交互的元素；这些是静态元素，如图像、HTML内容、水平条或超文本链接。 通过单击菜单，通过工具栏中的第一个按钮创建这些 **[!UICONTROL Add static element]** 元素。
+您可以在表单的页面中包含用户没有交互的元素；这些是静态元素，如图像、HTML内容、水平条或超文本链接。 通过选择工具栏中的第一个按钮创建这些元素 **[!UICONTROL Static elements]**。
 
 ![](assets/s_ncs_admin_survey_add_static_element.png)
 
@@ -36,7 +36,7 @@ ht-degree: 4%
 
 您可以在表单页面中包含HTML内容：超文本链接、图像、格式化段落、视频或Flash对象等。
 
-HTML编辑器允许您输入要插入到表单页面的内容。 要打开编辑器，请转到 **[!UICONTROL Static elements>HTML]** 。
+HTML编辑器允许您输入要插入到表单页面的内容。 要打开编辑器，请单击 **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** 。
 
 您可以直接输入内容并设置其格式，也可以显示要粘贴到某些外部内容中的源代码窗口。 要切换到“源代码”模式，请单击工具栏中的第一个图标：
 
@@ -54,7 +54,7 @@ HTML编辑器允许您输入要插入到表单页面的内容。 要打开编辑
 
 填写编辑窗口中的字段，如以下示例所示：
 
-要添加超文本链接，请转至 **[!UICONTROL Static elements>Link]**。
+要添加超文本链接，请转 **[!UICONTROL Static elements]** 到> **[!UICONTROL Link]**。
 
 ![](assets/s_ncs_admin_survey_add_link.png)
 
@@ -174,7 +174,7 @@ HTML编辑器允许您输入要插入到表单页面的内容。 要打开编辑
 
 >[!NOTE]
 >
->出于安全原因，在公式中输入的 **`<%=`** 值将替换为转义字符。 要避免这种情况，并且仅在必要时使用以下语法： **`<%=`**.
+>出于安全原因，公式中输入的 **`<%=`** 值将替换为转义字符。
 
 在我们的示例中，收件人的名字和姓氏存储在数据库的字段中，而其汽车品牌存储在变量中。 第2页个性化消息的语法如下：
 
@@ -210,19 +210,19 @@ HTML编辑器允许您输入要插入到表单页面的内容。 要打开编辑
 
    >[!CAUTION]
    >
-   >如果在HTML编辑器中输入这些字符，&lt; **和** > **字** 段将替换为转义字符。 在这种情况下，您需要通过单击HTML文本编辑器 **[!UICONTROL Display source code]** 的图标来更正源代码。
+   >如果在HTML编辑器中输入这些字符，&lt; **和** > **字** 段将替换为其转义字符。 在这种情况下，您需要通过单击HTML文本编辑器 **[!UICONTROL Display source code]** 的图标来更正源代码。
 
 1. 打开表 **[!UICONTROL Preview]** 单的标签以视图在HTML中输入的值：
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-此操作模式允许您对Web 窗体文本进行分解，并使用集成的翻译工具管理翻译。 有关此内容的详细信息，请 [参阅翻译Web表单](../../web/using/translating-a-web-form.md)。
+此操作模式允许您只定义Web 窗体文本一次，并使用集成的翻译工具管理翻译。 有关此内容的详细信息，请 [参阅翻译Web表单](../../web/using/translating-a-web-form.md)。
 
 ## Inserting images {#inserting-images}
 
 要将图像包含在表单中，必须将其保存在可从外部访问的服务器上。
 
-选择菜 **[!UICONTROL Static elements>Image]** 单。
+选择“ **[!UICONTROL Static elements]** >” **[!UICONTROL Image]** 菜单。
 
 选择要插入的图像的源：它可以来自公共资源库，也可以存储在外部可访问的外部服务器上。
 
