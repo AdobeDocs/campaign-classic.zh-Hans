@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 关于调查
-description: 关于调查
+title: 开始使用调查
+description: 开始使用活动调查
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 1%
+source-wordcount: '590'
+ht-degree: 0%
 
 ---
 
 
-# 关于调查{#about-surveys}
+# Get started with surveys{#about-surveys}
 
 Adobe Campaign包括一个用于定义和发布Web 应用程序的图形模块。 它用于创建页面，如外部网上的编辑表单，或通知表单，包括来自数据库的数据以及表、图表、输入表单等。 利用此功能，您可以设计和发布网页，用户可在其中查找或输入信息。
 
@@ -31,7 +31,7 @@ Web 应用程序管理在本节 [中详细介绍](../../web/using/about-web-appl
 >
 >出于隐私原因，我们建议对所有外部资源使用HTTPS。
 
-## 活动调查范围 {#campaign-surveys-scope}
+## 功能范围 {#campaign-surveys-scope}
 
 在Adobe Campaign中，Web 应用程序通常允许您访问以下功能：
 
