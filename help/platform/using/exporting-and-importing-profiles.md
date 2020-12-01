@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 30%
+source-wordcount: '144'
+ht-degree: 25%
 
 ---
 
@@ -34,8 +34,10 @@ Exports and imports are configured in dedicated templates executed through workf
 ![](assets/s_ncs_user_interface_import_link.png)
 
 
-## 如何导入用户档案{#import-profiles-video}
+## 教程视频 {#import-profiles-video}
 
 此视频介绍如何以Adobe Campaign导入用户档案，以便偶尔导入。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
