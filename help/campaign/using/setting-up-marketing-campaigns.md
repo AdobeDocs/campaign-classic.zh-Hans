@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1263'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 1%
 # Setting up marketing campaigns{#setting-up-marketing-campaigns}
 
 活动包括操作(投放)和流程（导入或提取文件），以及资源(营销文档、投放概要)。 它们用于营销活动。 活动是项目的一部分，项目包含在活动计划中。
+
+![](assets/do-not-localize/how-to-video.png) 了解如何在视频中创建营销计划、项目 [和活动](#video)
 
 要创建营销活动，请执行以下操作：
 
@@ -45,7 +47,7 @@ ht-degree: 1%
 
    请参 [阅创建服务提供商及其成本结构](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
 
-完成这些步骤后，您可以开始投放(请参 [阅启动投放](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery))，检查与投放相关的数据、流程和信息，并在必要时管理关联文档(请参阅 [管理关联文档](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents))。 您还可以跟踪活动和投放处理阶段的执行情况(请参 [阅跟踪](../../campaign/using/marketing-campaign-monitoring.md)。
+完成这些步骤后，您可以开始投放(请参 [阅启动投放](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery))，检查与投放相关的数据、流程和信息，并在必要时管理关联文档(请参阅 [管理关联文档](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents))。 您还可以跟踪活动和投放处理阶段的执行情况(请参 [阅](../../campaign/using/marketing-campaign-monitoring.md)跟踪)。
 
 ## 创建计划和项目层次结构 {#creating-plan-and-program-hierarchy}
 
@@ -230,3 +232,11 @@ ht-degree: 1%
    ![](assets/s_ncs_user_op_template_period_planning.png)
 
 每个周期活动包含相同的元素。 创建后，它将作为标准活动进行管理。
+
+## 教程视频 {#video}
+
+此视频演示如何创建营销计划、项目和活动。
+
+>[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
