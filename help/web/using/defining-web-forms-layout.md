@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
@@ -39,9 +39,9 @@ ht-degree: 2%
 
 ## 在页面上定位字段 {#positioning-the-fields-on-the-page}
 
-Web表单的布局是在每个容器中逐页定义的，并且可以为每个检查重载。
+Web表单的布局是在每个容器中逐页定义的，如果需要，可以重载。
 
-页面分为多列：每个页面都包含一定数量的列。 页面的每个字段都占 **用n个单** 元格。 容器还占用一定数量的列，而它们包含的字段占用一定数量的单元格
+页面分为多列：每个页面都包含一定数量的列。 页面的每个字段都占 **用n个单** 元格。 容器还占用一定数量的列，而它们包含的字段占用一定数量的单元格。
 
 默认情况下，页面构建在单个列上，每个元素占用一个单元格。 这意味着字段在另一个下方显示，每个字段占据一行，如下所示：
 
