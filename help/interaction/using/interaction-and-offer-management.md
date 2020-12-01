@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '286'
 ht-degree: 10%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 10%
 
 ![](assets/Offermgt2.png)
 
-要熟悉活动交互中使用的交互功能和术语，请观看此视频： [Adobe Campaign交互概述](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)。
+![](assets/do-not-localize/how-to-video.png) 要熟悉活动交互中使用的交互功能和术语，请观看 [此视频](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)。
 
 ## 相关主题
 
