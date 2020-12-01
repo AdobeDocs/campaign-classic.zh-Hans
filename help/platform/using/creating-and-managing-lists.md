@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 68%
+source-wordcount: '805'
+ht-degree: 67%
 
 ---
 
@@ -126,7 +126,9 @@ If you uncheck the **[!UICONTROL No trace of this job is saved in the database]*
 >
 >删除列表时，该列表上的用户档案不受影响，但会更新其用户档案中的数据。
 
-## 如何创建列表收件人 {#create-list-video}
+## 教程视频 {#create-list-video}
+
+### 如何创建列表收件人
 
 列表是一组静态收件人档案，用于在投放操作期间提供定位目标，或在导入操作或工作流执行期间进行更新。收件人列表也称为受众。
 
@@ -134,8 +136,10 @@ If you uncheck the **[!UICONTROL No trace of this job is saved in the database]*
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-## How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
+### How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
 
 了解如何创建工作流以目标收件人，以及如何在电子邮件目标中使用列表之前使其重复。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
