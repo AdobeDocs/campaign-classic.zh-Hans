@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Web 窗体可完全配置和可个性化，以满足您的要求。 参数必须
 
 默认情况下，Web 窗体字段存储在收件人表中。 您可以通过从字段中选择新表来更改所使用的 **[!UICONTROL Document type]** 表。 通过 **[!UICONTROL Zoom]** 该图标可视图选定表格的内容。
 
-默认情况下，答案存储在表 **[!UICONTROL Answer to a recipient form]** 中。
+默认情况下，答案存储在 **收件人表单的答案** 。
 
 ## 设置错误页面 {#setting-up-an-error-page}
 
