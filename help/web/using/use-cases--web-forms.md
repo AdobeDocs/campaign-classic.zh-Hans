@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '957'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,7 @@ Web表单工作流将包括以下活动:
 
 1. 配置活动 **[!UICONTROL Storage]** 以保存在表单页面中输入的信息。
 
-   此活动允许您在专用临时用户档案中创建收件人，以将其与数据库中的用户档案区分开，可以将通信发送到这些。
+   此活动允许您在专用的临时文件夹中创建收件人用户档案，以将其与可向其发送通信的用户档案区分开。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
 
