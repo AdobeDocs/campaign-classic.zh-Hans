@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 调查入门
-description: 调查入门
+title: 创建调查的关键步骤
+description: 使用活动创建您的第一个调查
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 1%
+source-wordcount: '912'
+ht-degree: 0%
 
 ---
 
 
-# 调查入门{#getting-started-with-surveys}
+# 创建调查的关键步骤{#getting-started-with-surveys}
 
 以下是使用以下模板快速概述创建简单调查的主要步骤：
 
