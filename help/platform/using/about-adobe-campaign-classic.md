@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 96%
+source-wordcount: '911'
+ht-degree: 94%
 
 ---
 
@@ -25,6 +25,8 @@ ht-degree: 96%
 >
 >Adobe Campaign Classic 有 v6.11 和 v7 两个版本。Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). 屏幕截图反映了Campaign Classic v7 用户界面。
 
+![](assets/do-not-localize/how-to-video.png) [发现视频的主要功能和功能](#video)
+
 ## 重点功能 {#key-capabilities}
 
 Adobe Campaign 提供了跨渠道客户体验设计平台，并为可视化的活动编排、实时互动管理和跨渠道执行提供了环境。
@@ -32,8 +34,6 @@ Adobe Campaign 提供了跨渠道客户体验设计平台，并为可视化的�
 Adobe Campaign 中的营销活动周期体现了产品功能的主要方面：
 
 ![](assets/d_ncs_user_emarketing.png)
-
-![](assets/do-not-localize/how-to-video.png) [发现视频的主要功能和功能](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/introduction-to-adobe-campaign-classic.html)
 
 ### 整合的客户档案 {#integrated-customer-profile}
 
@@ -87,3 +87,10 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 * [Web 服务](../../configuration/using/about-web-services.md) - 通过 API/Web 服务使用 Campaign，
 * [报告](../../reporting/using/about-adobe-campaign-reporting-tools.md) - 访问内置的报告、分析数据并设计您自己的报告。
 
+## 教程视频 {#video}
+
+此视频介绍Campaign Classic的主要特性和功能。
+
+>[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
