@@ -1,63 +1,56 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 关于 Campaign HTML 编辑器
-description: 关于 Campaign HTML 编辑器
+title: 开始使用活动HTML编辑器
+description: 开始活动数字内容编辑器
 audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 3%
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
 
-# 关于 Campaign HTML 编辑器{#about-campaign-html-editor}
+# 开始使用活动HTML编辑器{#about-campaign-html-editor}
 
-数字内容编辑器 **(数字内容编辑器)是HTML内容编辑器** ，可让您在Adobe Campaign中轻松创建或修改HTML格式的模板或内容。
+数字内容编辑器 **(数字内容编辑器)是HTML内容编辑器** ，可让您在Adobe Campaign中轻松创建HTML格式的内容和模板。
 
-该数字内容编辑器允许您插入页面元素并设置其格式，并将数据库字段与HTML页面的元素相关联。 默认情况下，在为Web 应用程序创建页面时会提供此选项，或在基于处于活动状态的模板创建投放时提供此选项。
+利用该数字内容编辑器，您可以插入页面元素并设置其格式，以及将数据库字段与HTML页面的元素进行映射。 为Web应用程序创建页面或根据投放模板创建数字内容编辑器时，可以使用此编辑器。
 
 >[!NOTE]
+>>如果需要添加服务器端JavaScript代码，请使用个性化块。 [了解详情](../../delivery/using/personalization-blocks.md)。
 >
->该数字内容编辑器仅允许您执行本节中详细介绍的操作。
->
->如果要添加服务器端JavaScript代码，最好将其添加到个性化块中。 有关创建和修改个性化块的详细信息，请参 [阅此页](../../delivery/using/personalization-blocks.md)。
-
 >[!CAUTION]
->
->出于隐私原因，我们建议对所有外部资源使用HTTPS。
+所有外部资源都需要使用HTTPS URL进行引用。
 
-## 内容编辑器常规操作 {#content-editor-general-operation}
+## 使用数字内容编辑器的关键步骤 {#content-editor-general-operation}
 
-本节介绍在数字内容编辑器框架和投放上下文中编辑和上传使用Web 应用程序编辑的内容的主要步骤。
+本节介绍在Web应用程序和数字内容编辑器设计的上下文中编辑和上传使用投放编辑的内容的关键步骤。
 
 一般操作如下：
 
 ![](assets/dce_schema.png)
 
-要创建简单的Web 应用程序，步骤如下：
+要创建简单的 **Web应用程序**，您需要：
 
-* 创建Web 应用程序，有关详细信息，请参 [阅创建登陆页](../../web/using/creating-a-landing-page.md),
-* 选择现有内容或从标准模板创建内容，有关详细信息，请参阅模 [板管理](../../web/using/template-management.md),
-* 编辑和配置内容，有关详细信息，请参阅编 [辑内容](../../web/using/editing-content.md),
-* 发布Web 应用程序，有关详细信息，请参阅 [发布内容](../../web/using/creating-a-landing-page.md#step-3---publishing-content)[和本页](../../web/using/publishing-a-web-form.md#managing-web-forms-delivery-and-tracking)。
-
->[!NOTE]
->
->有关详细说明数字内容编辑器在Web 应用程序框架内实施的完整示例，请参阅 [创建登陆页](../../web/using/creating-a-landing-page.md)。
-
-要创建电子邮件投放，步骤如下：
-
-* 从投放处于活动状态的电子邮件类型模板创建数字内容编辑器,
-* 选择现有内容或从标准模板创建内容，
-* 编辑和配置在线内容，
-* 请发送投放，以了解详情，请参 [阅本节](../../delivery/using/steps-about-delivery-creation-steps.md)。
+1. 创建Web应用程序——了 [解更多](../../web/using/creating-a-landing-page.md)
+1. 选择现有内容或从标准模板创建内容——了解 [更多](../../web/using/template-management.md)
+1. 编辑和配置内容——了 [解更多](../../web/using/editing-content.md)
+1. 发布Web 应用程序-了 [解更多](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
->
->有关详细说明在电子邮件数字内容编辑器框架内实施该投放的完整示例，请参 [阅此用例](../../web/using/use-case--creating-an-email-delivery.md)。
+本节提供Web应用程序上下文中的完整实现 [示例](../../web/using/creating-a-landing-page.md)。
 
+要创建电子 **邮件投放**，您需要：
+
+1. 从投放模板创建数字内容编辑器-了 [解更多](../../web/using/use-case--creating-an-email-delivery.md)
+1. 选择现有内容或从标准模板创 [建内容](../../web/using/template-management.md)
+1. 编辑和配置在线内容
+1. 发送投放-了 [解更多](../../delivery/using/steps-about-delivery-creation-steps.md)
+
+>[!NOTE]
+此用例提供电子邮件投放上下文中的完整 [实施示例](../../web/using/use-case--creating-an-email-delivery.md)。
