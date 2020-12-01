@@ -7,17 +7,21 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 3%
+source-wordcount: '364'
+ht-degree: 4%
 
 ---
 
 
 # 连续投放{#continuous-delivery}
 
-通过 **连续投放** 类型操作，您可以向现有投放添加新收件人。 此投放类型可避免您每次都必须创建新投放:此模式通常更有效，尤其是对于需要时发送的低容量警报或通知。 在投放模板级别，您可以指定一个脚本来计算关联投放的标签(和活动文件夹)。 如果脚本计算尚不存在的投放，则会动态创建该脚本。
+通过 **连续投放** 类型操作，您可以向现有投放添加新收件人。 此投放类型可避免您每次都必须创建新投放:此模式通常更有效，尤其是对于需要时发送的低容量警报或通知。
+
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#continuous-delivery-video)
+
+在投放模板级别，您可以指定一个脚本来计算关联投放的标签(和活动文件夹)。 如果脚本计算尚不存在的投放，则会动态创建该脚本。
 
 ![](assets/edit_diffusion_fil.png)
 
@@ -56,6 +60,10 @@ ht-degree: 3%
 
 ![连续投放](assets/delivery_continuous.jpg)
 
+## 教程视频 {#continuous-delivery-video}
+
 此视频演示如何使用增量投放配置连续查询。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
