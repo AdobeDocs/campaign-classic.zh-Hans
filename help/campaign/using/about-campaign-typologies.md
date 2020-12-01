@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '497'
 ht-degree: 11%
 
 ---
@@ -63,17 +63,21 @@ ht-degree: 11%
 
 在准备投放时，在满足标准时排除收件人。 您可以检查日志以监视排除情况。本页提供压力类型规则的示 [例用例](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)。
 
-## 如何使用类型规则建立疲劳管理 {#typologies-video}
+## 教程视频 {#typologies-video}
+
+### 如何使用类型规则建立疲劳管理
 
 此视频介绍如何通过利用类型规则在Adobe Campaign Classic实施疲劳管理。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
-## 如何使用预定义过滤器建立疲劳管理
+### 如何使用预定义过滤器建立疲劳管理
 
 疲劳管理控制消息传递的频率和数量，以避免收件人过度请求。 如果您的活动实例中没有活动优化模块，您可以配置一个预定义的过滤器，它将按收到的消息数来过滤目标群。此视频介绍如何使用过滤器在Adobe Campaign Classic实施疲劳管理。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
 
 **相关主题**
 
