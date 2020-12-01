@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 2%
@@ -61,7 +61,7 @@ Adobe Campaign 会定期更新。如果您熟悉我们发布的发 [行说明](.
 
 Adobe在进行任何更改之前将备份您的系统。 但是，如果非生产系统（开发或分阶段服务器）中存在关键的自定义工作，强烈建议您在进行任何升级之前以包形式导出这些工作。
 
-有关详细信息， [请观看此视频方法](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)。
+![](assets/do-not-localize/how-to-video.png) 有关详细信息， [请观看此视频方法](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)。
 
 ## 何时进行升级？
 
