@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 4%
+source-wordcount: '478'
+ht-degree: 2%
 
 ---
 
@@ -109,8 +109,10 @@ ht-degree: 4%
    >
    >由于电子邮件内容中未定义任何替代版本，请确保在发送电子邮件之前过滤目标群。
 
-## 如何创建包含条件内容的多语言新闻稿 {#conditionnal-content-video}
+## 教程视频 {#conditionnal-content-video}
 
 通过多语言新闻快讯的示例，了解如何向投放添加条件内容。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
