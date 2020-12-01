@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 4%
+source-wordcount: '1580'
+ht-degree: 3%
 
 ---
 
@@ -203,8 +203,10 @@ AMP内容和备份准备就绪后，定义兼容目标后，您可以像通常�
 >
 >默认情况 **[!UICONTROL AMP inclusion]** 下，选项设置为 **[!UICONTROL No]**。
 
-## 如何激活和使用 AMP 处理电子邮件 {#amp-email-video}
+## 教程视频 {#amp-email-video}
 
 以下视频介绍如何在 Adobe Campaign Classic 中激活 AMP。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
