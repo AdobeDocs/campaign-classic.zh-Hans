@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 3%
+source-wordcount: '465'
+ht-degree: 1%
 
 ---
 
@@ -35,6 +35,8 @@ ht-degree: 3%
 
 通常，在列表中保存目标会标记工作流的结束。 因此，默认 **[!UICONTROL List update]** 情况下活动没有出站过渡。 选中该 **[!UICONTROL Generate an outbound transition]** 选项可添加一个。
 
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频中从资源管理器创建列表收件人](#video)
+
 ## 示例：列表更新 {#example--list-update}
 
 在以下示例中，列表更新活动遵循查询，该的目标男子30岁以上居住在法国。 列表最初将根据查询结果创建。 然后，每次从工作流中启动它时，都会更新它。 例如，它可以定期用于活动的目标促销优惠。
@@ -56,8 +58,6 @@ ht-degree: 3%
 
    然后创建或更新匹配收件人的列表。
 
-有关此内容的详细信息，请参 [阅创建列表收件人视频](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) 。
-
 ## 输入参数 {#input-parameters}
 
 * tableName
@@ -68,3 +68,11 @@ ht-degree: 3%
 ## 输出参数 {#output-parameters}
 
 * groupId:组标识符。
+
+## 教程视频 {#video}
+
+此视频演示如何从资源管理器创建列表收件人。
+
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
