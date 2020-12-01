@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 2%
@@ -63,7 +63,7 @@ ht-degree: 2%
    > 
    >此函数对于Web 应用程序尤其有用，但对于公共表单不推荐。 所选访问控制选项必须为“启用访问控制”。
 
-如果 **[!UICONTROL Skip preloading if identification is empty]** 您不想更新用户档案，则必须选择该选项。 在这种情况下，输入的每个用户档案都将在表单批准后添加到数据库。 例如，在将表单发布到网站时，会使用此选项。
+如果 **[!UICONTROL Skip preloading if no ID]** 您不想更新用户档案，则必须选择该选项。 在这种情况下，输入的每个用户档案都将在表单批准后添加到数据库。 例如，在将表单发布到网站时，会使用此选项。
 
 通过 **[!UICONTROL Auto-load data referenced in the form]** 此选项，可自动预载与表单中的输入和合并字段相匹配的数据。 但是，中和活动 **[!UICONTROL Script]** 中引 **[!UICONTROL Test]** 用的数据并不相关。 如果未选择此选项，则需要使用该选项定义字 **[!UICONTROL Load additional data]** 段。
 
