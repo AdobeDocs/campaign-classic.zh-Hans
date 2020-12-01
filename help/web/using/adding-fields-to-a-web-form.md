@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2457'
 ht-degree: 1%
 
 ---
@@ -196,7 +196,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_radio_button.png)
 
-您可以单独（单位按钮）或通过多选列表创建单选按钮，但是，由于单选按钮的要点是选择一个或另一个选项，因此我们始终会创建至少一对单选按钮，而不仅仅是单个按钮。
+您可以单独（统一按钮）或通过多选列表创建单选按钮，但是由于单选按钮的要点是选择一个或另一个选项，因此我们始终会创建至少一对单选按钮，而不仅仅是单个按钮。
 
 >[!CAUTION]
 >
@@ -251,7 +251,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_date_calendar.png)
 
-要允许用户在表单页面中输入日期，请在工具栏 **[!UICONTROL Add input field > Date...]** 或页面编辑器中选择。
+要允许用户在表单页面中输入日期，请添加输入字段并选择类型 **[!UICONTROL Date...]**。
 
 输入字段标签并配置数据存储模式。
 
@@ -388,11 +388,13 @@ Captcha将插入页面，并且输入字段位于可视下方。 这两个元素
 
 ## 插入隐藏常数 {#inserting-a-hidden-constant}
 
-用户在表单的其中一个页面上传递时，可以高亮显示字段。 为此，请在页面中放置一个常量并指定值和存储位置。
+当用户验证表单的其中一个页面时，您可以为其用户档案的字段或变量设置特定值。
 
 此字段对用户不可见，但可用于丰富用户用户档案中的数据。
 
-在以下示例中，每当 **用户** 批准此页面时，来源用户档案的收件人文件会自动填写。 该常数不显示在页面上。
+为此，请在页面中 **放置** 常量，并指定值和存储位置。
+
+在以下示例中，每当用 **户批准** 此页面时，将自动填写来源用户档案的收件人字段。 该常数不显示在页面上。
 
 ![](assets/s_ncs_admin_survey_constante.png)
 
