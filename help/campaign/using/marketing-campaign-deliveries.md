@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '2917'
+source-wordcount: '2925'
 ht-degree: 1%
 
 ---
@@ -457,8 +457,10 @@ ht-degree: 1%
 >
 >有关导出的详细信息，请参 [阅入门](../../platform/using/generic-imports-and-exports.md) 部分。
 
-#### 如何在活动中创建电子邮件 {#create-email-video}
+#### 教程视频 {#create-email-video}
 
 此视频介绍如何在 Adobe Campaign Classic 中创建活动和电子邮件。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
