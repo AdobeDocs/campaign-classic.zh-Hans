@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 98%
+source-wordcount: '2179'
+ht-degree: 96%
 
 ---
 
@@ -273,7 +273,7 @@ ht-degree: 98%
       + [跟踪 Web 应用程序](web/using/tracking-a-web-application.md)
       + [Web 应用程序跟踪退出](web/using/web-application-tracking-opt-out.md)
    + 编辑 HTML 内容 {#editing-html-content}
-      + [关于 Campaign HTML 编辑器](web/using/about-campaign-html-editor.md)
+      + [HTML编辑器入门](web/using/about-campaign-html-editor.md)
       + [模板管理](web/using/template-management.md)
       + [内容编辑器界面](web/using/content-editor-interface.md)
       + [编辑内容](web/using/editing-content.md)
@@ -281,7 +281,7 @@ ht-degree: 98%
       + [创建登陆页面](web/using/creating-a-landing-page.md)
       + [用例：创建电子邮件投放](web/using/use-case--creating-an-email-delivery.md)
    + Web 窗体 {#web-forms}
-      + [关于 Web 窗体](web/using/about-web-forms.md)
+      + [Web表单入门](web/using/about-web-forms.md)
       + [使用 Web 窗体模板](web/using/using-a-web-form-template.md)
       + [向 Web 窗体添加字段](web/using/adding-fields-to-a-web-form.md)
       + [Web 窗体中的静态元素](web/using/static-elements-in-a-web-form.md)
@@ -294,9 +294,9 @@ ht-degree: 98%
       + [翻译 Web 窗体](web/using/translating-a-web-form.md)
       + [用例：Web 窗体](web/using/use-cases--web-forms.md)
    + 在线调查 {#online-surveys}
-      + [关于调查](web/using/about-surveys.md)
-      + [调查入门](web/using/getting-started-with-surveys.md)
-      + [构建调查](web/using/building-a-survey.md)
+      + [开始使用调查](web/using/about-surveys.md)
+      + [创建调查的关键步骤](web/using/getting-started-with-surveys.md)
+      + [设计调查](web/using/building-a-survey.md)
       + [管理答案](web/using/managing-answers.md)
       + [发布、跟踪和使用收集的数据](web/using/publish--track-and-use-collected-data.md)
       + [配置调查](web/using/configuring-surveys.md)
