@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 3%
+source-wordcount: '1579'
+ht-degree: 2%
 
 ---
 
@@ -225,15 +225,16 @@ For more on proof sending, refer to [this section](../../delivery/using/steps-va
 
 您可以使用选项组合特定验证目标的定义和种子地址的 **[!UICONTROL Specific target and Seed addresses]** 使用。 相关配置随后在两个单独的子标签中定义。
 
-## 如何通过电子邮件管理种子和验证 {#seeds-and-proofs-video}
+另请参阅：
+
+* [选择验证目标](#selecting-the-proof-target)
+* [关于种子地址](../../delivery/using/about-seed-addresses.md)
+* [用例：根据条件选择种子地址](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+
+## 教程视频 {#seeds-and-proofs-video}
 
 在此视频中，您将学习如何在现有电子邮件中添加种子和验证，以及如何发送。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-另请参阅：
-* [选择验证目标](#selecting-the-proof-target)
-
-* [关于种子地址](../../delivery/using/about-seed-addresses.md)
-
-* [用例：根据条件选择种子地址](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
