@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 定义 Web 窗体页面排序{#defining-web-forms-page-sequencing}
 
-表单可以包含一个或多个页面。 它通过图表构建，它允许您对页面和测试、脚本执行和页面跳转录制阶段进行排序。 图构建模式与工作流相同。
+表单可以包含一个或多个页面。 它通过图表构建，它允许您对页面进行排序、测试、脚本执行、页面跳转和记录步骤。 全局图设计模式与活动工作流模式相同。
 
 ## 关于上一页和下一页 {#about-previous-page-and-next-page}
 
