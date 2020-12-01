@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '952'
 ht-degree: 63%
 
 ---
@@ -107,13 +107,15 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 您可以从“Campaign Standard”菜 **[!UICONTROL Number of active profiles]** 单获得概 **[!UICONTROL Administration > Campaign Management > Customer metrics]** 述。 The actual count is performed by the **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technical workflow](../../workflow/using/deliveries.md), which runs every day and adds the new data to the existing report for the current period in the **[!UICONTROL Customer metrics]** menu. 每个时段的时长均为 12 个月。
 
-## 如何创建和管理用户档案 {#create-profiles-video}
+## 教程视频 {#create-profiles-video}
 
 了解如何访问个人资料数据、对个人资料进行排序和筛选以及手动创建和管理个人资料。
 
 此视频还解释了Adobe Campaign Classic遵守一般数据保护法规的情况。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
 
 **另请参阅**
 
