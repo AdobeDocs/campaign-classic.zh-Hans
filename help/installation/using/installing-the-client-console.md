@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 7%
+source-wordcount: '489'
+ht-degree: 6%
 
 ---
 
@@ -24,6 +24,8 @@ ht-degree: 7%
 >[!CAUTION]
 >
 >活动客户端控制台和活动应用服务器必须在同一产品版本上运行。 Adobe还建议使用同一产品版本。
+
+![](assets/do-not-localize/how-to-video.png) 了解如何在视频中安装和设置Adobe Campaign客 [户端](#video)
 
 ## 下载控制台{#download-the-client-console}
 
@@ -93,4 +95,11 @@ ht-degree: 7%
 
 * [创建实例并登陆](../../installation/using/creating-an-instance-and-logging-on.md).
 * [兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
-* [安装和设置Adobe Campaign客户端](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/install-and-setup-the-adobe-campaign-client.html) （视频）
+
+## 教程视频
+
+此视频演示如何安装和设置Adobe Campaign客户端。
+
+>[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
