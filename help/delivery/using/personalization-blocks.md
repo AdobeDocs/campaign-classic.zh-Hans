@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 3%
+source-wordcount: '896'
+ht-degree: 2%
 
 ---
 
@@ -154,8 +154,10 @@ HTML源代码将插入投放内容中。 例如，个性化 **[!UICONTROL Greeti
 
    * 输入内容（HTML、文本、JavaScript等） ，然后单击 **[!UICONTROL Save]**。
 
-## 如何使用动态内容块个性化电子邮件 {#personalization-blocks-video}
+## 教程视频 {#personalization-blocks-video}
 
-了解如何创建动态内容块以及如何使用它们个性化您的电子邮件投放的内容。
+了解如何创建动态内容块以及如何使用它们来个性化电子邮件投放的内容。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
+
+此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
