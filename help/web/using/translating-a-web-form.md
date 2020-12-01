@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
@@ -105,7 +105,7 @@ Adobe Campaign会收集所有静态元素标签中定义的字 **[!UICONTROL Tex
 
 ### 导出文件 {#exporting-files}
 
-1. 选择要导入其字符串的Web 应用程序，右键单击，然后选择 **[!UICONTROL Actions > Export strings for translation...]**
+1. 选择要导出其字符串的Web 应用程序，右键单击，然后选择 **[!UICONTROL Actions > Export strings for translation...]**
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
@@ -454,7 +454,7 @@ Web 窗体以在Web 应用程序属性的选项卡中指 **[!UICONTROL Localizat
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
 
-1. 选择翻译语言并输入字符串的翻译。 您可以通过选中该选项来批准转 **[!UICONTROL Translation validated]** 换。
+1. 选择翻译语言并输入字符串的翻译。 您可以通过选中该选项来批准转 **[!UICONTROL Translation approved]** 换。
 
    ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
@@ -470,7 +470,7 @@ Web 窗体以在Web 应用程序属性的选项卡中指 **[!UICONTROL Localizat
 
 要将Web 应用程序翻译为默认语言以外的语言(请参 [阅更改表单显示语言](#changing-forms-display-language))，您需要添加新的翻译语言。
 
-1. 单击Adobe Campaign **[!UICONTROL Administration > Platform > Itemized lists]** 树的节点，然后从列表中进行 **[!UICONTROL Languages available for translation]** 选择。 可用翻译的列表显示在窗口的下半部分。
+1. 单击Adobe Campaign **[!UICONTROL Administration > Platform > Enumerations]** 树的节点，然后从列表中进行 **[!UICONTROL Languages available for translation]** 选择。 可用翻译的列表显示在窗口的下半部分。
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
