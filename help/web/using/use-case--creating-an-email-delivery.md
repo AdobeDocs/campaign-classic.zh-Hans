@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: '"用例：创建电子邮件投放"'
-description: '"用例：创建电子邮件投放"'
+title: 用例——创建电子邮件投放
+description: 创建电子邮件投放用例
 audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 46aa896929c960abeb501642a5ffbbb56de4802e
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 >
 >在开始之前，必须至少配置一 **个HTML模板** ，以托管将来投放的内容。
 >
->在投放 **[!UICONTROL Properties]** 中，确保( **[!UICONTROL Content editing mode]** 在选项卡 **[!UICONTROL Advanced]** 中)设置为 **[!UICONTROL DCE]**。 要确保编辑器的最佳操作，请参阅内容 [编辑最佳实践](../../web/using/content-editing-best-practices.md)。
+>在投放 **[!UICONTROL Properties]**&#x200B;中，确保( **[!UICONTROL Content editing mode]** 在选项卡 **[!UICONTROL Advanced]** 中)设置为 **[!UICONTROL DCE]**。 要确保编辑器的最佳操作，请参阅内容 [编辑最佳实践](../../web/using/content-editing-best-practices.md)。
 
 ## 第1步——创建投放 {#step-1---creating-a-delivery}
 
