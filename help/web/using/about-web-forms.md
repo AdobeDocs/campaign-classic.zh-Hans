@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 关于 Web 窗体
-description: 关于 Web 窗体
+title: Web表单入门
+description: 开始使用活动中的Web表单
 audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 5%
+source-wordcount: '497'
+ht-degree: 3%
 
 ---
 
 
-# 关于 Web 窗体{#about-web-forms}
+# Get started with web forms{#about-web-forms}
 
 Adobe Campaign集成一个图形模块，用于定义和发布Web 窗体，以创建包含输入和选择字段的页面，并且该页面可以包括数据库中的数据。 这样，您就可以设计和发布网页，用户可以访问这些网页或输入视图信息。
 
@@ -53,7 +53,7 @@ Web 窗体可通过“Web 应用程序”选项卡的“活动” **菜单** 访
 
 要定义Web表单的配置和内容，请应用以下步骤：
 
-* 开始，创建所需的页面和检查：输入字段、下拉列表、HTML内容等。
+* 开始:输入字段、下拉列表、HTML内容等。
 
    此步骤详见下文。
 
