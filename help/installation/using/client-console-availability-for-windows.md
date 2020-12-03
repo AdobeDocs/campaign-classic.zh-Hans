@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 5%
@@ -19,15 +19,15 @@ ht-degree: 5%
 
 为了Adobe Campaign用户能够登录您创建和配置的实例，他们需要使用客户端控制台。
 
-当用于开始Adobe Campaign应用程序服务器(**nlserver web**)的计算机从客户端控制台接收用户连接时，您可以配置它，使Adobe Campaign富客户端的设置项目通过HTML界面可用。
+当用于开始Adobe Campaign应用服务器(**nlserver web**)的计算机从客户机控制台接收用户连接时，您可以配置它，使Adobe Campaign富客户端的设置项目通过HTML接口可用。
 
 为此，您必须：
 
 1. 恢复包含控制台安装项目的包。
 
-   此文件针 `setup-client-7.X.XXXX.exe` 对v7或 `setup-client-6.X.XXXX.exe` v6.1调用， `X` 其中是Adobe Campaign的子版本， `XXXX` 是内部版本号。
+   对于v7或v6.1，此文件称为`setup-client-7.X.XXXX.exe`，其中`X`是Adobe Campaign的子版本，`XXXX`是内部版本号。`setup-client-6.X.XXXX.exe`
 
-1. 将此包复制并粘贴到Adobe Campaign安装文 **件夹下/datakit/nl/eng/jsp**。
+1. 将此包复制并粘贴到Adobe Campaign安装文件夹中，位于&#x200B;**/datakit/nl/eng/jsp**&#x200B;下。
 1. 开始Adobe Campaign服务器。
 
 最终用户随后可以通过Web浏览器下载控制台安装项目，这要归功于以下URL:
@@ -38,23 +38,23 @@ https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
 
 此页要求在应用程序中定义登录名和口令。
 
-要下载并安装控制台，请参阅安 [装客户端控制台](../../installation/using/installing-the-client-console.md)。
+要下载并安装控制台，请参阅[安装客户端控制台](../../installation/using/installing-the-client-console.md)。
 
 只要有新版本的客户端控制台可用，您就会被邀请下载它。
 
 >[!NOTE]
 >
->在显示的提示中，Adobe建议取消选 **[!UICONTROL No longer ask this question]** 择该选项，以确保当有新版本的控制台可用时，所有用户都会收到警报。\
+>在显示的提示符中，Adobe建议取消选择选项&#x200B;**[!UICONTROL No longer ask this question]**，以确保当有新版本的控制台可用时，所有用户都会收到警报。\
 >如果您选择此选项并选择不下载最新版本，则不会通知任何其他用户有新的可用版本。
 
 要重置此提示，请按照以下步骤操作（只有熟悉编辑注册表的系统管理员才应进行这些更改）:
 
-1. 使用菜单中的regedit **命令** ，打开注册表 **[!UICONTROL Start > Run]** 编辑器。
+1. 使用&#x200B;**[!UICONTROL Start > Run]**&#x200B;菜单中的&#x200B;**regedit**&#x200B;命令打开注册表编辑器。
 1. 搜索节点并展开它。
 
    ```
    \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
    ```
 
-1. 删除 **confDewsedUpgrade项** ，并关闭注册表编辑器。
+1. 删除&#x200B;**confUndessedUpgrade**&#x200B;条目并关闭注册表编辑器。
 
