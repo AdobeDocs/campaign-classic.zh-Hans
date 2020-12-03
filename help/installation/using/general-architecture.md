@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 0%
@@ -41,17 +41,17 @@ Adobe Campaign基于面向服务的体系结构(SOA)，并包含多个功能模�
 
 >[!CAUTION]
 >
->如果未明确说明，Adobe Campaign平台的所有组件上的安装、更新和维护由托管这些组件的计算机管理员负责。 这包括实现Adobe Campaign应用程序的先决条件，并遵守组件之间 [的活动兼容](../../rn/using/compatibility-matrix.md) 性矩阵。
+>如果未明确说明，Adobe Campaign平台的所有组件上的安装、更新和维护由托管这些组件的计算机管理员负责。 这包括实现Adobe Campaign应用程序的先决条件，以及在组件之间遵守活动[兼容性矩阵](../../rn/using/compatibility-matrix.md)。
 
-## 表示层 {#presentation-layer}
+## 表示层{#presentation-layer}
 
 根据用户的需要，可以通过不同的方式访问应用程序：富客户端、瘦客户端或API集成。
 
-* **富客户端**:应用程序的主用户界面是一个富客户端，换言之，是一个与Adobe Campaign应用程序服务器仅通过标准Internet协议（SOAP、HTTP等）通信的本机应用程序(Windows)。 此控制台为工作效率提供了极好的用户友好性，使用很少的带宽（通过使用本地缓存），并且设计为易于部署。 此控制台可以从Internet浏览器进行部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)通信。
-* **瘦客户端**:应用程序的某些部分可以使用HTML用户界面通过简单的Web浏览器访问，包括报告模块、投放批准阶段、分布式营销模块的功能（中央／本地）、实例监视等。 此模式允许在内部网或外部网中包含Adobe Campaign功能。
+* **富客户端**:应用程序的主用户界面是一个富客户端，换言之，是一个与Adobe Campaign应用程序服务器仅通过标准Internet协议（SOAP、HTTP等）通信的本机应用程序(Windows)。此控制台为工作效率提供了极好的用户友好性，使用很少的带宽（通过使用本地缓存），并且设计为易于部署。 此控制台可以从Internet浏览器进行部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)通信。
+* **瘦客户端**:应用程序的某些部分可通过使用HTML用户界面的简单Web浏览器访问，包括报告模块、投放批准阶段、分布式营销模块的功能（中央／本地）、实例监控等。此模式允许在内部网或外部网中包含Adobe Campaign功能。
 * **通过API进行集成**:在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。
 
-## 逻辑应用层 {#logical-application-layer}
+## 逻辑应用程序层{#logical-application-layer}
 
 Adobe Campaign是一个具有不同应用程序的单一平台，这些应用程序结合在一起可创建开放、可扩展的架构。 Adobe Campaign平台编写在灵活的应用程序层上，可轻松配置以满足公司的业务需求。 这从功能和技术角度满足了企业日益增长的需求。 分布式体系结构确保线性系统的可伸缩性从数千条消息扩展到数百万条消息。
 
@@ -119,9 +119,9 @@ Adobe Campaign具有本机电子邮件广播功能。 此进程充当SMTP邮件�
 
 >[!NOTE]
 >
->此文档提供完整的列表 [模块](../../production/using/operating-principle.md)。
+>[此文档](../../production/using/operating-principle.md)提供完整的Adobe Campaign模块列表。
 
-## 持久性层 {#persistence-layer}
+## 持久性层{#persistence-layer}
 
 该Adobe Campaign库用作持久性层，并包含几乎所有由数据库管理的信息。 这包括功能数据(用户档案、订阅、内容等)、技术数据(投放作业和日志、跟踪日志等) 和工作数据（购买、潜在客户）。
 
