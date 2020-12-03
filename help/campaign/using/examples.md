@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 0%
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 # 示例{#examples}
 
-## 创建本地活动（按表单） {#creating-a-local-campaign--by-form-}
+## 创建本地活动（按表单）{#creating-a-local-campaign--by-form-}
 
-按 **表单类** 型Web界面涉及使 **用Web 应用程序**。 根据其配置，此Web 应用程序可以包含任何类型的已定义个性化元素。 例如，您可以建议使用链接来评估目标、预算、内容等。 通过专用API。
+**按形式**&#x200B;类型的web接口涉及使用&#x200B;**web应用程序**。 根据其配置，此Web应用程序可以包含任何类型定义的个性化元素。 例如，您可以建议使用链接来评估目标、预算、内容等。 通过专用API。
 
 >[!NOTE]
 >
->API在专用文档中详细介绍，其访问权限取决于您的合同。 请参阅 [API](../../configuration/using/about-web-services.md)。
+>API在专用文档中详细介绍，其访问权限取决于您的合同。 请参阅[API](../../configuration/using/about-web-services.md)。
 >
->此示例中使用的Web 应用程序不是附带Adobe Campaign的现成Web应用程序。 要在活动中使用表单，您必须创建专用Web 应用程序。
+>此示例中使用的Web 应用程序不是附带Adobe Campaign的现成Web应用程序。 要在活动中使用表单，您必须创建专用的Web应用程序。
 
-创建活动模板时，单击 **[!UICONTROL Zoom]** 链接选项 **[!UICONTROL Web interface]** 中的图 **[!UICONTROL Advanced campaign settings...]** 标以访问Web 应用程序的详细信息。
+创建活动模板时，单击&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;链接的&#x200B;**[!UICONTROL Web interface]**&#x200B;选项中的&#x200B;**[!UICONTROL Zoom]**&#x200B;图标以访问Web应用程序的详细信息。
 
 ![](assets/mkg_dist_local_op_form1.png)
 
@@ -35,11 +35,11 @@ ht-degree: 0%
 >
 >Web 应用程序参数仅在活动模板中可用。
 
-在标 **[!UICONTROL Edit]** 签中，选择 **活动顺序** 活动并打开它以访问其内容。
+在&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，选择&#x200B;**活动顺序**&#x200B;活动并打开它以访问其内容。
 
 ![](assets/mkg_dist_web_app1.png)
 
-在此示例中，活动 **订单** 活动包括：
+在此示例中，**活动顺序**&#x200B;活动包括：
 
 * 本地实体在订单中输入的字段，
 
@@ -73,7 +73,7 @@ ht-degree: 0%
    var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
    ```
 
-## 创建协作活动(通过目标批准) {#creating-a-collaborative-campaign--by-target-approval-}
+## 创建协作活动(通过目标批准){#creating-a-collaborative-campaign--by-target-approval-}
 
 ### 简介 {#introduction}
 
@@ -96,17 +96,17 @@ ht-degree: 0%
 
 **对于中央实体:**
 
-1. 创建 **[!UICONTROL Data distribution]** 活动
+1. 创建&#x200B;**[!UICONTROL Data distribution]**&#x200B;活动。
 1. 创建协作活动。
 1. 发布活动。
 
-### 本地实体 {#local-entity-side}
+### 本地实体端{#local-entity-side}
 
 1. 已选择参与本地实体的活动将收到电子邮件通知。
 
    ![](assets/mkg_dist_use_case_target_valid8.png)
 
-1. 通过单击链 **[!UICONTROL Access your contact list and approve targeting]** 接，本地实体可以（通过Web浏览器）访问为活动选择的客户机的列表。
+1. 通过单击&#x200B;**[!UICONTROL Access your contact list and approve targeting]**&#x200B;链接，本地实体可以（通过Web浏览器）访问为活动选择的客户机的列表。
 
    ![](assets/mkg_dist_use_case_target_valid9.png)
 
@@ -116,27 +116,27 @@ ht-degree: 0%
 
 检查获得批准后，活动可以自动开始。
 
-### 中央实体 {#central-entity-side}
+### 中央实体端{#central-entity-side}
 
-#### 创建数据分发活动 {#creating-a-data-distribution-activity}
+#### 创建活动{#creating-a-data-distribution-activity}
 
-1. 要设置协作活动(通过目标批准)，您必须先创建协作 **[!UICONTROL Data distribution activity]**。 单击节 **[!UICONTROL New]** 点中的 **[!UICONTROL Resources > Campaign management > Data distribution]** 图标。
+1. 要设置协作活动(通过目标批准)，您必须首先创建&#x200B;**[!UICONTROL Data distribution activity]**。 单击&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;节点中的&#x200B;**[!UICONTROL New]**&#x200B;图标。
 
    ![](assets/mkg_dist_use_case_target_valid3.png)
 
-1. 在选项卡 **[!UICONTROL General]** 中，您必须指定：
+1. 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，必须指定：
 
-   * the **[!UICONTROL Targeting dimension]**. 此处 **对收件人** 进行数据分 **发**。
-   * the **[!UICONTROL Distribution type]**. 您可以选择固 **定大小** ，或 **大小作为百分比**。
-   * the **[!UICONTROL Assignment type]**. 选择 **本地实体** 选项。
-   * the **[!UICONTROL Distribution type]**. 此处是收件人表 **[!UICONTROL Origin (@origin)]** 中的字段，用于识别联系人与本地实体之间的关系。
-   * 字 **[!UICONTROL Approval storage]** 段。 选择“ **本地批准收件人** ”选项。
+   * **[!UICONTROL Targeting dimension]**。 这里，在&#x200B;**收件人**&#x200B;上执行&#x200B;**数据分布**。
+   * **[!UICONTROL Distribution type]**。 可以选择&#x200B;**固定大小**&#x200B;或&#x200B;**大小（百分比**）。
+   * **[!UICONTROL Assignment type]**。 选择&#x200B;**本地实体**&#x200B;选项。
+   * **[!UICONTROL Distribution type]**。 此处，是收件人表中的&#x200B;**[!UICONTROL Origin (@origin)]**&#x200B;字段，用于识别联系人与本地实体之间的关系。
+   * **[!UICONTROL Approval storage]**&#x200B;字段。 选择&#x200B;**收件人的本地批准**&#x200B;选项。
 
-1. In the **[!UICONTROL Breakdown]** tab, specify:
+1. 在&#x200B;**[!UICONTROL Breakdown]**&#x200B;选项卡中，指定：
 
-   * 这 **[!UICONTROL Distribution field value]**&#x200B;与即将到来的活动中的本地实体相对应。
-   * 本地实体 **[!UICONTROL label]**。
-   * ( **[!UICONTROL Size]** 固定或百分比)。 0 **默认值** ，包括选择链接到该本地实体的所有收件人。
+   * **[!UICONTROL Distribution field value]**，它与即将到来的活动中涉及的本地实体相对应。
+   * 本地实体&#x200B;**[!UICONTROL label]**。
+   * **[!UICONTROL Size]**（固定或百分比）。 **0默认值**&#x200B;涉及选择链接到该收件人的所有本地实体。
 
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
@@ -144,12 +144,12 @@ ht-degree: 0%
 
 #### 创建协作活动 {#creating-a-collaborative-campaign}
 
-1. 从节 **[!UICONTROL Campaign management > Campaign]** 点创建新 **[!UICONTROL collaborative campaign (by target approval)]**。
-1. 在选项卡 **[!UICONTROL Targeting and workflows]** 中，为您的活动创建工作流。 它必须包含 **Split** 活动，该 **[!UICONTROL Record count limitation]** 由活动定义 **[!UICONTROL Data distribution]** 。
+1. 在&#x200B;**[!UICONTROL Campaign management > Campaign]**&#x200B;节点中新建一个&#x200B;**[!UICONTROL collaborative campaign (by target approval)]**。
+1. 在&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，为您的活动创建工作流。 它必须包含&#x200B;**Split**&#x200B;活动，其中&#x200B;**[!UICONTROL Record count limitation]**&#x200B;由&#x200B;**[!UICONTROL Data distribution]**&#x200B;活动定义。
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
 
-1. 添加可 **[!UICONTROL Local approval]** 以指定的操作：
+1. 添加&#x200B;**[!UICONTROL Local approval]**&#x200B;操作，您可以在其中指定：
 
    * 发送给通知中本地实体的消息内容，
    * 批准提醒，
@@ -159,18 +159,18 @@ ht-degree: 0%
 
 1. 保存您的记录。
 
-#### 发布活动 {#publishing-the-campaign}
+#### 发布活动{#publishing-the-campaign}
 
-您现在可以添加 **活动** ，来自 **活动世** 界。
+您现在可以从&#x200B;**活动**&#x200B;范围添加&#x200B;**活动包**。
 
-1. 选择您的 **[!UICONTROL Reference campaign]**&#x200B;产品。 在包 **[!UICONTROL Edit]** 的选项卡中，您可以选择要 **[!UICONTROL Approval mode]** 用于活动的：
+1. 选择&#x200B;**[!UICONTROL Reference campaign]**。 在包的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，可以选择&#x200B;**[!UICONTROL Approval mode]**&#x200B;用于活动:
 
-   * 在“ **手动** ”模式下，如果本地实体接受中央实体的邀请，则他们将参与活动。 如果需要，他们可以删除预先选择的联系人，并且需要经理的批准才能确认其参与活动。
-   * 在自 **动模式** 中，本地实体必须参与活动，除非他们注销自己。 他们无需批准即可删除联系人。
+   * 在&#x200B;**手动**&#x200B;模式中，如果本地实体接受中央实体的邀请，则他们将参加活动。 如果需要，他们可以删除预先选择的联系人，并且需要经理的批准才能确认其参与活动。
+   * 在&#x200B;**自动**&#x200B;模式中，本地实体必须参与活动，除非他们注销自己。 他们无需批准即可删除联系人。
 
    ![](assets/mkg_dist_use_case_target_valid.png)
 
-1. 在选 **[!UICONTROL Description]** 项卡中，您可以添加活动的描述以及要发送给本地实体的任何文档。
+1. 在&#x200B;**[!UICONTROL Description]**&#x200B;选项卡中，您可以添加活动的描述以及要发送给本地实体的任何文档。
 
    ![](assets/mkg_dist_use_case_target_valid1.png)
 
@@ -178,7 +178,7 @@ ht-degree: 0%
 
    ![](assets/mkg_dist_use_case_target_valid2.png)
 
-## 创建协作活动（按表单） {#creating-a-collaborative-campaign--by-form-}
+## 创建协作活动（按表单）{#creating-a-collaborative-campaign--by-form-}
 
 ### 简介 {#introduction-1}
 
@@ -203,12 +203,12 @@ ht-degree: 0%
 **对于中央实体:**
 
 1. 创建协作活动。
-1. 像为 **[!UICONTROL Advanced campaign settings...]** 本地活动配置一样配置。
+1. 像配置本地活动一样配置&#x200B;**[!UICONTROL Advanced campaign settings...]**。
 1. 像配置本地活动一样配置投放工作流和活动。
 1. 更新Web表单。
 1. 创建活动包并发布它。
 
-### 本地实体 {#local-entity-side-1}
+### 本地实体端{#local-entity-side-1}
 
 1. 选择参与活动的本地实体会收到电子邮件通知，通知他们参与活动。
 
@@ -226,26 +226,26 @@ ht-degree: 0%
 
    ![](assets/mkg_dist_use_case_form_9.png)
 
-### 中央实体 {#central-entity-side-1}
+### 中央实体端{#central-entity-side-1}
 
-1. 要实施协作活动（按表单），必须使用协作活动(按表 **单)模板创建活动** 。
+1. 要实现协作活动（按表单），必须使用&#x200B;**协作活动（按表单）**&#x200B;模板创建活动。
 
    ![](assets/mkg_dist_use_case_form_1.png)
 
-1. 在活动的选 **[!UICONTROL Edit]** 项卡中，单 **[!UICONTROL Advanced campaign settings...]** 击链接以将其配置为本地活动。 请参阅 [创建本地活动（按表单）](#creating-a-local-campaign--by-form-)。
+1. 在活动的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;链接，将其配置为本地活动。 请参阅[创建本地活动（按表单）](#creating-a-local-campaign--by-form-)。
 
    ![](assets/mkg_dist_use_case_form_2.png)
 
-1. 配置活动工作流和Web表单。 请参阅 [创建本地活动（按表单）](#creating-a-local-campaign--by-form-)。
+1. 配置活动工作流和Web表单。 请参阅[创建本地活动（按表单）](#creating-a-local-campaign--by-form-)。
 1. 通过指定执行活动和相关本地实体创建您的计划包。
 
    ![](assets/mkg_dist_use_case_form_3.png)
 
-1. 通过在选项卡中选择批准模式来完成包 **[!UICONTROL Edit]** 配置。
+1. 在&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中选择批准模式，完成包配置。
 
    ![](assets/mkg_dist_use_case_form_4.png)
 
-1. 在选项 **[!UICONTROL Description]** 卡中，您可以输入活动包描述，在发布包时向本地实体发送通知消息，并将任何信息文档附加到活动包。
+1. 在&#x200B;**[!UICONTROL Description]**&#x200B;选项卡中，可以输入活动包描述，在发布包时向本地实体发送通知消息，并将任何信息文档附加到活动包。
 
    ![](assets/mkg_dist_use_case_form_5.png)
 
