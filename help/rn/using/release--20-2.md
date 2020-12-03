@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2201'
 ht-degree: 80%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 80%
 
 # 版本 20.2{#release-20-2}
 
-![](assets/do-not-localize/cp-icon.png) **新的控制面板10月版** ，包含使用CNAME进行域配置和新的库监视功能。 [了解详情](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月版**，其中使用 CNAME 进行域配置并新增数据库监视功能。[了解详情](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/green_2.png) 版本 20.2.3 - 版本 9182 {#release-20-2-3-build-9182}
 
@@ -52,10 +52,10 @@ _2020年7月22日_
 * iOS HTTP2 连接器已得到改进（第三方更新和错误管理）。(NEO-25904, NEO-25903)
 * catalina.properties中的jarToSkip列表已更新，以删除对不再使用的jar文件（iOS通知）的引用。
 * 修复了在放置后阻止投放准备的问题。
-* 切换到新的序 [列ID机制后](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)，所有更新收件人表的Web应用程序都会在升级过程中重新发布。
+* 在切换到[新序列ID机制](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)后，所有更新收件人表的Web应用程序都会在升级期间重新发布。
 * 修复了投放内容中的潜在XSS漏洞。 (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含活动用户档案监测、子域投放能力审核和 GPG 密钥管理。[了解详情](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含活动用户档案监测、子域投放能力审核和 GPG 密钥管理。[了解详情](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/orange_2.png) 版本 20.2.1 - 版本 9178 {#release-20-2-1-build-9178}
 
@@ -155,6 +155,8 @@ Campaign 现在支持以下系统：
 * 使用 iOS HTTP2 连接器的 iOS 移动应用程序的证书现在将在发送推送通知之前经过验证，从而防止投放因证书过期而失败。
 
 * HTTP 代理连接的管理已得到改进。[了解详情](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)。
+
+* **[!UICONTROL Javascript Code]**&#x200B;和&#x200B;**[!UICONTROL Advanced Javascript Code]**&#x200B;工作流活动中的新选项，可在限制后停止执行。 默认值为1小时。 [了解详情](../../workflow/using/sql-code-and-javascript-code.md#javascript-code)。
 
 **其他更改**
 
