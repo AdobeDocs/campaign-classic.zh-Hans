@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Adobe Campaign经典文档更新
-description: 本页列表了Adobe Campaign Classic每个版本的所有新增功能和文档更新
+description: 本页列出了每个 Adobe Campaign Classic 版本的所有新增功能和文档更新
 audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3631'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,23 +23,23 @@ ht-degree: 94%
 
 ## 2020 年 11 月{#nov-2020}
 
-活动数据模型概述已得到改进和重新组织。 [阅读更多](../../configuration/using/about-data-model.md)。
+Campaign 数据模型概述已得到改进并重组。[阅读更多](../../configuration/using/about-data-model.md)。
 
-外部帐户配置已移 [到此部分](../../installation/using/external-accounts.md)。
+外部帐户配置已移至[此部分](../../installation/using/external-accounts.md)。
 
-活动联合数据访问(联合数据访问)文档已得到改进，并且每个外部数据库配置都有详细信息，并已移 [到此部分](../../installation/using/about-fda.md)。
+Campaign 联合数据访问 (FDA) 文档已通过每个外部数据库配置的详细信息得到改进，并已移至[此部分](../../installation/using/about-fda.md)。
 
-[活动20.2.3版本已](../../rn/using/release--20-2.md#release-20-2-3-build-9182) 转为“一般可用性(GA)”。
+[Campaign 20.2.3 版本](../../rn/using/release--20-2.md#release-20-2-3-build-9182)已转为“一般可用性 (GA)”。
 
-隐私权部分已被移动，并且包含两个新页面： [隐私管理](../../platform/using/privacy-management.md) 和 [管理隐私请求](../../platform/using/privacy-requests.md)。
+“隐私”部分已移动并新增两个页面：[隐私管理](../../platform/using/privacy-management.md)和[管理隐私请求](../../platform/using/privacy-requests.md)。
 
-在中间源服务器配置页面中添加了注释，以指定在设置服务器后外部帐户的内部名称不应更新。 [阅读更多](../../installation/using/mid-sourcing-server.md)
+在中间源服务器配置页面中添加了注释，以指定设置服务器后便不应更新外部帐户的内部名称。[阅读更多](../../installation/using/mid-sourcing-server.md)
 
-已在指定外部SFTP服务器的路径时使用的语法上添加了信息。 [阅读更多](../../platform/using/sftp-server-usage.md#external-SFTP-server)
+已添加有关在指定外部 SFTP 服务器的路径时要使用的语法的信息。[阅读更多](../../platform/using/sftp-server-usage.md#external-SFTP-server)
 
-“个人数据和角色”部分已使用用例方案进行更新，以说明不同角色在隐私方面如何进行交互。 [阅读更多](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+“个人数据和角色”部分已使用用例方案进行更新，以说明不同角色在隐私方面如何进行交互。[阅读更多](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
 
-新增了一节，其中列出了有关隐私的常见问题解答。 [阅读更多](../../platform/using/privacy-faq.md)
+新增了一个部分，其中列出了有关隐私的常见问题解答。[阅读更多](../../platform/using/privacy-faq.md)
 
 ## 2020 年 10 月 {#oct-2020}
 
@@ -58,7 +58,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 Gold Standard 版本的发行说明和兼容性矩阵现在可在专用部分中获取。
 [阅读更多](../../rn/using/gold-standard.md#gs-10)。
 
-Triggers integration originally based on oAUTH authentication setup to access pipeline has now been changed and moved to Adobe I/O. [Read more](../../integrations/using/configuring-adobe-io.md)
+最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成现已更改并移至 Adobe I/O。[阅读更多](../../integrations/using/configuring-adobe-io.md)
 
 **其他更新**
 
