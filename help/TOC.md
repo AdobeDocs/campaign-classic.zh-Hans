@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+source-git-commit: b78c9dc9112893f2b203eccf0bd2d92fa299425d
 workflow-type: tm+mt
-source-wordcount: '2179'
+source-wordcount: '2182'
 ht-degree: 98%
 
 ---
@@ -697,6 +697,8 @@ ht-degree: 98%
       + [密码丢失](production/using/lost-password.md)
       + [JSP 行为](production/using/jsp-behavior.md)
 + 开发者指南 {#configuring-campaign-classic}
++ 
+   + [关于活动配置](configuration/using/about-config-guide.md)
    + 数据模型 {#data-model}
       + [关于数据模型](configuration/using/about-data-model.md)
       + [数据模型描述](configuration/using/data-model-description.md)
