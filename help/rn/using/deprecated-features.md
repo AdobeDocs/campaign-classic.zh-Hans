@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -51,8 +51,8 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <ul>
    <li>Soap API - 本地：2007、2015、2016</li>
    <li>Soap API - 在线：2015、2016</li>
-   <li>Web API - Microsoft Dynamics CRM内部部署：2016, 2016更新1</li>
-   <li>Web API - Microsoft Dynamics CRM Online:2016, 2016更新1</li>
+   <li>Web API - Microsoft Dynamics CRM 本地版：2016 或 2016 Update 1</li>
+   <li>Web API - Microsoft Dynamics CRM 联机版：2016 或 2016 Update 1</li>
    </ul>
   <p><em>目标删除日期：2021 年 4 月</em></p>
   </td>
@@ -144,7 +144,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   <tr> 
    <td>decryptString API</td>
    <td><p>从 Campaign 18.6 版本开始，出于安全原因，<em>decryptString</em> API 在默认情况下不再可用于新安装。</p> 
-   <p>在之后升级到 18.6（及更高版本）的上下文中，此 API 不再激活，并由 <em>decryptPassword </em> 函数替换。<a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/f-decryptPassword.html?hl=decrypt">了解详情</a></p></td>
+   <p>在之后升级到 18.6（及更高版本）的上下文中，此 API 不再激活，并由 <em>decryptPassword</em> 函数替换。<a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/f-decryptPassword.html?hl=decrypt">了解详情</a></p></td>
   </tr> 
    <tr> 
    <td>移动渠道 - MMS 和 WAP 推送消息</td>
