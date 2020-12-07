@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '2179'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -626,17 +626,17 @@ ht-degree: 96%
       + [互动 - 数据缓冲区](installation/using/interaction---data-buffer.md)
       + [配置外部帐户](installation/using/external-accounts.md)
    + 访问外部数据库 {#accessing-external-database}
-      + [开始使用联合数据访问](installation/using/about-fda.md)
+      + [FDA 入门](installation/using/about-fda.md)
       + 配置准则 {#config-databases}
          + [配置步骤](installation/using/configure-fda.md)
-         + [配置Snowflake](installation/using/configure-fda-snowflake.md)
-         + [配置Azure synapse](installation/using/configure-fda-synapse.md)
-         + [配置Hadoop](installation/using/configure-fda-hadoop.md)
-         + [配置Oracle](installation/using/configure-fda-oracle.md)
-         + [配置Netezza](installation/using/configure-fda-netezza.md)
-         + [配置Sybase IQ](installation/using/configure-fda-sybase.md)
-         + [配置Teradata](installation/using/configure-fda-teradata.md)
-         + [配置SAP HANA](installation/using/configure-fda-sap-hana.md)
+         + [配置 Snowflake](installation/using/configure-fda-snowflake.md)
+         + [配置 Azure Synapse](installation/using/configure-fda-synapse.md)
+         + [配置 Hadoop](installation/using/configure-fda-hadoop.md)
+         + [配置 Oracle](installation/using/configure-fda-oracle.md)
+         + [配置 Netezza](installation/using/configure-fda-netezza.md)
+         + [配置 Sybase IQ](installation/using/configure-fda-sybase.md)
+         + [配置 Teradata](installation/using/configure-fda-teradata.md)
+         + [配置 SAP HANA](installation/using/configure-fda-sap-hana.md)
       + [远程访问权限](installation/using/remote-database-access-rights.md)
       + [连接到数据库](installation/using/connecting-to-database.md)
       + [创建数据模式](installation/using/creating-data-schema.md)
@@ -696,7 +696,7 @@ ht-degree: 96%
       + [控制台更新](production/using/console-update.md)
       + [密码丢失](production/using/lost-password.md)
       + [JSP 行为](production/using/jsp-behavior.md)
-+ 开发人员指南 {#configuring-campaign-classic}
++ 开发者指南 {#configuring-campaign-classic}
    + 数据模型 {#data-model}
       + [关于数据模型](configuration/using/about-data-model.md)
       + [数据模型描述](configuration/using/data-model-description.md)
