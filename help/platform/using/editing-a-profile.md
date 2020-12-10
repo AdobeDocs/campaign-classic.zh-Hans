@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 87%
@@ -41,7 +41,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->When the **[!UICONTROL No longer contact (by any channel)]** option is selected, this means that the profile is on denylist, i.e. the profile has expressed a wish not to be contacted (for example, by clicking an unsubscription link in a newsletter). 通过任何渠道（电子邮件、直邮广告等）投放时都不会定位这些顾客。有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
+>选择&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;选项后，表示用户档案处于状态阻止列表，即用户档案表示希望不要联系(例如，单击新闻稿中的退订链接)。 通过任何渠道（电子邮件、直邮广告等）投放时都不会定位这些顾客。有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
 
 ## “联系人信息”选项卡{#contact-information-tab}
 
@@ -53,7 +53,7 @@ ht-degree: 87%
 
 ## “其他”选项卡{#other-tab}
 
-此界面包含用户定义字段，可根据需求对其进行个性化设置。You can also change the names of the fields and define their format, via **[!UICONTROL Field properties...]**, as shown below:
+此界面包含用户定义字段，可根据需求对其进行个性化设置。您还可以通过&#x200B;**[!UICONTROL Field properties...]**&#x200B;更改字段名称并定义其格式，如下所示：
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
@@ -67,7 +67,7 @@ ht-degree: 87%
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-有关此内容的详细信息，请参 [阅创建和管理列表](../../platform/using/creating-and-managing-lists.md)。
+有关详细信息，请参阅[创建和管理列表](../../platform/using/creating-and-managing-lists.md)。
 
 ## “订阅”选项卡{#subscriptions-tab}
 
@@ -97,5 +97,5 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->如需有关跟踪功能的详细信息，请参阅[此页面](../../delivery/using/monitoring-a-delivery.md)。
+>如需有关跟踪功能的详细信息，请参阅[此页面](../../delivery/using/delivery-dashboard.md)。
 
