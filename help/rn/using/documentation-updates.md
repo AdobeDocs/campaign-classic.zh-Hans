@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
+source-git-commit: 5406b1cd6f9cf4f87071a9976be1728ba9d4fcef
 workflow-type: tm+mt
-source-wordcount: '3663'
+source-wordcount: '3660'
 ht-degree: 99%
 
 ---
@@ -311,7 +311,7 @@ Adobe Campaign 增强 MTA 文章已更新，其中包含有关在未向每封邮
 
 FDA 矩阵页面已移到[此处](../../installation/using/remote-database-access-rights.md)。
 
-“访问权限矩阵”页面已移到[此处](https://docs.adobe.com/content/help/zh-Hans/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)。
+“访问权限矩阵”页面已移到[此处](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en)。
 
 描述如何使用 AMP 定义交互式内容的部分已被移动。[阅读更多](../../delivery/using/defining-interactive-content.md)
 
