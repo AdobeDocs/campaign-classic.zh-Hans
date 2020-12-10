@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '991'
 ht-degree: 7%
 
 ---
@@ -23,19 +23,19 @@ Adobe Campaign使用数据模式来：
 * 定义 Campaign 应用程序中不同数据对象之间的链接。
 * 定义并描述每个对象中包含的个别字段。
 
-要更好地了解活动内置表及其交互，请参阅 [Campaign Classic数据模型](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html)。
+要更好地了解活动内置表及其交互，请参阅[Campaign Classic数据模型](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html)。
 
-## 扩展或创建模式 {#extending-or-creating-schemas}
+## 扩展或创建模式{#extending-or-creating-schemas}
 
-要在活动中向核心模式(如收件人表(nms:收件人))之一添加字段、索引或其他元素，您必须扩展该模式。 For more on this, refer to the [Extending a schema](../../configuration/using/extending-a-schema.md) section.
+要在活动中向核心模式(如收件人表(nms:收件人))之一添加字段、索引或其他元素，您必须扩展该模式。 有关详细信息，请参阅[扩展模式](../../configuration/using/extending-a-schema.md)部分。
 
-要添加Adobe Campaign中不存在的全新数据类型（例如合同表），您可以直接创建自定义模式。 For more on this, refer to the [Data schemas](../../configuration/using/data-schemas.md) section.
+要添加Adobe Campaign中不存在的全新数据类型（例如合同表），您可以直接创建自定义模式。 有关详细信息，请参阅[数据模式](../../configuration/using/data-schemas.md)部分。
 
 ![](assets/schemaextension_getting_started_1.png)
 
 扩展或创建模式后，最佳实践是按照其XML内容元素在下方的显示顺序定义其XML内容元素。
 
-## 明细列表 {#enumerations}
+## 明细列表{#enumerations}
 
 明细列表在模式的主元素之前先定义。 它们允许您在列表中显示值，以限制用户对给定字段的选择。
 
@@ -58,11 +58,11 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->您还可以使用用户管理的明细列表(通 **[!UICONTROL Administration]** 常在 **[!UICONTROL Platform]** >下)指定给定字段的值。 这些明细列表实际上是全局明细列表，如果您的可能在您所处的特定模式之外使用，则还是更好的选择。
+>您还可以使用用户管理的明细列表（通常在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]**&#x200B;下）来指定给定字段的值。 这些明细列表实际上是全局明细列表，如果您的可能在您所处的特定模式之外使用，则还是更好的选择。
 
-要进一步了解明细列表，请参阅 [明细列表](../../configuration/using/schema-structure.md#enumerations)[`<enumeration>` 和元素](../../configuration/using/elements-and-attributes.md#enumeration--element) 。
+要进一步了解明细列表，请参阅[明细列表](../../configuration/using/schema-structure.md#enumerations)和[`<enumeration>`元素](../../configuration/using/schema/enumeration.md)部分。
 
-## 索引 {#index}
+## 索引{#index}
 
 索引是在模式的主元素中声明的第一个元素。
 
@@ -83,19 +83,19 @@ type="string" enum="exTransactionTypeEnum"/>
 </dbindex>
 ```
 
-xpath **属性** 指向要索引的模式中的字段。
+**xpath**&#x200B;属性指向您要索引的模式中的字段。
 
 >[!IMPORTANT]
 >
 >请务必记住，索引提供的SQL查询读取性能提高也会对写入记录产生性能影响。 因此，应谨慎使用这些索引。
 
-有关索引的详细信息，请参 [阅索引字段](../../configuration/using/database-mapping.md#indexed-fields) 。
+有关索引的详细信息，请参阅[索引字段](../../configuration/using/database-mapping.md#indexed-fields)部分。
 
-## 按键 {#keys}
+## 键{#keys}
 
-每个表都必须至少有一个键，通常，它会使用设置为“true”的@autopk= **true** 属性在模式的主元素中自动建立。
+每个表都必须至少有一个键，并且通常，它会使用设置为“true”的&#x200B;**@autopk=true**&#x200B;属性自动在模式的主元素中建立。
 
-主键也可以使用内部属性进 **行定** 义。
+还可以使用&#x200B;**internal**&#x200B;属性定义主键。
 
 示例:
 
@@ -105,21 +105,21 @@ xpath **属性** 指向要索引的模式中的字段。
 </key>
 ```
 
-在此示例中，我们将指 **定自己的** “householdId”主键，而不是让@autopk属性创建名为“id”的默认主键。
+在此示例中，我们将指定自己的“househId”主键，而不是让&#x200B;**@autopk**&#x200B;属性创建名为“id”的默认主键。
 
 >[!IMPORTANT]
 >
 >创建新模式或在模式扩展期间，您需要为整个模式保留相同的主键序列值(@pkSequence)。
 
-要进一步了解密钥，请参阅“密钥 [管理”部分](../../configuration/using/database-mapping.md#management-of-keys) 。
+要进一步了解密钥，请参阅[密钥管理](../../configuration/using/database-mapping.md#management-of-keys)部分。
 
-## 属性（字段） {#attributes--fields-}
+## 属性（字段）{#attributes--fields-}
 
-属性允许您定义构成数据对象的字段。 您可以使用模式 **[!UICONTROL Insert]** 版工具栏中的按钮将空属性模板拖放到光标所在的XML中。 For more on this, refer to the [Data schemas](../../configuration/using/data-schemas.md) section.
+属性允许您定义构成数据对象的字段。 可以使用模式版工具栏中的&#x200B;**[!UICONTROL Insert]**&#x200B;按钮将空属性模板放置到光标所在的XML中。 有关详细信息，请参阅[数据模式](../../configuration/using/data-schemas.md)部分。
 
 ![](assets/schemaextension_getting_started_2.png)
 
-属性的完整列表在元素部 [`<attribute>` 分中](../../configuration/using/elements-and-attributes.md#attribute--element) 。 以下是一些最常用的属性：
+属性的完整列表在[`<attribute>`元素](../../configuration/using/schema/attribute.md)部分中可用。 以下是一些最常用的属性：
 
 * **@advanced**
 * **@dataPolicy**
@@ -136,9 +136,9 @@ xpath **属性** 指向要索引的模式中的字段。
 * **@xml**
 * **@type**
 
-   要视图一个表，其中列出了Adobe Campaign为不同数据库管理系统生成的数据类型的映射，请参 [阅映射Adobe Campaign/DBMS数据的类型](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) 。
+   要视图一个表，其中列出了Adobe Campaign为不同数据库管理系统生成的数据类型的映射，请参阅[映射Adobe Campaign/DBMS数据的类型](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)部分。
 
-有关每个属性的详细信息，请参阅“属 [性说明](../../configuration/using/elements-and-attributes.md#attribute-description) ”部分。
+有关每个属性的详细信息，请参阅[属性说明](../../configuration/using/schema/attribute.md)部分。
 
 ### 示例{#examples}
 
@@ -146,21 +146,20 @@ xpath **属性** 指向要索引的模式中的字段。
 
 ```
 <attribute name="transactionDate" label="Transaction Date" type="datetime" default="GetDate()"/>
-```
+`
 
-将公用属性用作字段模板的示例也标记为必填：
-
+Example of using a common attribute as a template for a field also marked as mandatory:
 ```
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
-```
+"
 
-使用@advanced属性隐藏的计算字 **段的示** 例：
+使用&#x200B;**@advanced**&#x200B;属性隐藏的计算字段的示例：
 
 ```
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
 ```
 
-XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属性。
+XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolicy**&#x200B;属性。
 
 ```
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
@@ -176,7 +175,7 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 链接是模式主元素中最后的一些元素。 它们定义实例中所有不同模式彼此的关联方式。
 
-链接在模式中声明，该 **包含链接** 到的表的外键。
+链接在包含其链接的表&#x200B;**外键**&#x200B;的模式中声明。
 
 基数有三种类型：1-1、1-N和N-N它是默认使用的1-N类型。
 
@@ -224,5 +223,5 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 >[!NOTE]
 >
->当修改不影响模式库结构时，您只需重新生成数据。 为此，请选择要更新的模式，右键单击并选择 **[!UICONTROL Actions > Regenerate selected schemas...]** 。 For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
+>当修改不影响模式库结构时，您只需重新生成数据。 为此，请选择要更新的模式，右键单击并选择&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]**。 有关详细信息，请参阅[重新生成模式](../../configuration/using/regenerating-schemas.md)部分。
 
