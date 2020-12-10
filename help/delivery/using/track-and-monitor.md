@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 2%
@@ -23,9 +23,9 @@ ht-degree: 2%
 要控制活动，您必须确保消息确实已送达收件人。
 
 从活动投放仪表板中，您可以检查已处理的消息和投放审计日志。
-您还可以控制投放日志中消息的状态。 [了解详情](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard)。
+您还可以控制投放日志中消息的状态。 [了解详情](../../delivery/using/about-delivery-monitoring.md)。
 
-如果投放未被发送，且其状态仍为“待 **定”**?
+如果未发送投放，且其状态仍为&#x200B;**待定**，该怎么办？
 
 * 执行过程正在等待某些资源的可用性。 MTA可能尚未启动。
 检查您的mta@instance模块是否已在MTA服务器上启动，并在必要时开始MTA模块。 [了解详情](../../production/using/administration.md)。
@@ -41,13 +41,13 @@ ht-degree: 2%
 
 要更好地了解收件人的行为，您可以跟踪他们对投放的反应：接收、打开、点击链接、退订等。 在Campaign Classic中，此信息显示在投放所定位的收件人的“跟踪”选项卡和投放的“跟踪”选项卡中。 在Campaign Standard中，它显示在投放的跟踪日志选项卡中。
 
-**提示**:默认情况下，消息跟踪处于启用状态。 要配置URL，请选择投放向导下半部分的“显示URL”选项。 对于邮件的每个URL，您可以选择是否激活跟踪。
+**提示**:默认情况下，消息跟踪处于启用状态。要配置URL，请选择投放向导下半部分的“显示URL”选项。 对于邮件的每个URL，您可以选择是否激活跟踪。
 
-有关此方面的详细信息，请参 [阅配置跟踪](../../delivery/using/how-to-configure-tracked-links.md) 部分和跟踪 [指示器说明](../../reporting/using/delivery-reports.md#tracking-indicators) 。
+有关详细信息，请参阅[配置跟踪](../../delivery/using/how-to-configure-tracked-links.md)部分和[跟踪指示器](../../reporting/using/delivery-reports.md#tracking-indicators)说明。
 
-## 投放性能 {#delivery-performances}
+## 投放性能{#delivery-performances}
 
-要测量消息的传送速度，您可以控制投放吞吐量。 标准是每小时发送的消息数和消息的大小（以位／秒为单位）。 有关详细信息，请参阅 [投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)。
+要测量消息的传送速度，您可以控制投放吞吐量。 标准是每小时发送的消息数和消息的大小（以位／秒为单位）。 有关详细信息，请参阅[投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)。
 
 **提示**:
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 
 * 不要试着计划大投放。 请注意，可能需要5到10分钟才能将负载均匀分布到系统上。
 
-## 投放疑难解答 {#delivery-troubleshooting}
+## 投放疑难解答{#delivery-troubleshooting}
 
 遇到投放问题时，可以执行特定操作：
 
@@ -65,6 +65,6 @@ ht-degree: 2%
 
 * [图像显示问题](../../production/using/image-display-issues.md)
 
-* [投放性能问题](../../delivery/using/monitoring-a-delivery.md#performance_issues)
+* [投放性能问题](../../delivery/using/delivery-performances.md)
 
 * [临时文件问题](../../production/using/temporary-files.md) - *仅限预置型客户*
