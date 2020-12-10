@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 13cc481606ffb78f9a755ef8aa8a9d7cbb5d44c2
+source-git-commit: 854d509315f1d8585cb041575908df896468cc77
 workflow-type: tm+mt
-source-wordcount: '2179'
-ht-degree: 98%
+source-wordcount: '2196'
+ht-degree: 97%
 
 ---
 
@@ -153,7 +153,12 @@ ht-degree: 98%
       + [管理订阅](delivery/using/managing-subscriptions.md)
       + [病毒式和社交媒体营销](delivery/using/viral-and-social-marketing.md)
    + 监控投放 {#monitoring-deliveries}
-      + [监控投放](delivery/using/monitoring-a-delivery.md)
+      + [开始投放监控](delivery/using/about-delivery-monitoring.md)
+      + [访问投放的列表](delivery/using/list-of-deliveries.md)
+      + [投放仪表板](delivery/using/delivery-dashboard.md)
+      + [投放性能最佳实践](delivery/using/delivery-performances.md)
+      + [投放疑难解答](delivery/using/delivery-troubleshooting.md)
+      + [投放状态](delivery/using/delivery-statuses.md)
       + [了解投放失败](delivery/using/understanding-delivery-failures.md)
       + [了解隔离管理](delivery/using/understanding-quarantine-management.md)
    + 跟踪消息 {#tracking-messages}
