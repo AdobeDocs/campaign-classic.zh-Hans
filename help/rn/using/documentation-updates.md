@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5406b1cd6f9cf4f87071a9976be1728ba9d4fcef
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '3660'
 ht-degree: 99%
@@ -339,7 +339,7 @@ Adobe Campaign 增强 MTA 文档现已可用。[阅读更多](https://helpx.adob
 
 更新了使用 **HttpServletRequest** 与 logon() 和 query() 的示例。[阅读更多](../../configuration/using/web-service-calls.md)。
 
-在模式定义中添加了&#x200B;**sqlDefault** 属性的建议。[阅读更多](../../configuration/using/elements-and-attributes.md#attribute-description)。
+在模式定义中添加了&#x200B;**sqlDefault** 属性的建议。[阅读更多](../../configuration/using/schema/attribute.md)).
 
 Adobe Campaign 与 Adobe 实时客户数据平台之间的集成现在在&#x200B;**“与 Adobe Experience Cloud 集成”**&#x200B;指南中提到。[阅读更多](../../integrations/using/about-campaign-integrations.md)。
 
