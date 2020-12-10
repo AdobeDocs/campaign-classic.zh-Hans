@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9aa0ecd423bfbf1082e9ce5bdb36aaf1611dea54
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 8%
@@ -17,9 +17,9 @@ ht-degree: 8%
 
 # 监控准则 {#monitoring-guidelines}
 
-## 实例监视仪表板 {#instance-monitoring-dashboard}
+## 实例监视仪表板{#instance-monitoring-dashboard}
 
-Campaign Classic **[!UICONTROL Monitoring]** 主页可访问该选项卡，它是帮助您监视实例的主要入口点。
+**[!UICONTROL Monitoring]**&#x200B;选项卡可从Campaign Classic主页访问，它是帮助您监视实例的主要入口点。
 
 它提供实例发生情况的仪表板:其状态（内部版本、安装的包等）、系统指示符、日志、当前正在运行的工作流、上次发送投放的状态等。
 
@@ -27,7 +27,7 @@ Campaign Classic **[!UICONTROL Monitoring]** 主页可访问该选项卡，它�
 
 ![](assets/monitoring_tab.png)
 
-## Monitoring Campaign Classic processes {#monitoring-campaign-classic-processes}
+## 监视Campaign Classic进程{#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">监视您的实例</a></p></td>
@@ -38,21 +38,21 @@ Campaign Classic **[!UICONTROL Monitoring]** 主页可访问该选项卡，它�
 
 还提供了其他监视不同活动过程的方法。 它们提供多种监视实例的方法，以确保您的系统正常，并最终解决在设置工作流、发送投放等时可能出现的问题。
 
-### 监视实例 {#monitoring-instance}
+### 监视实例{#monitoring-instance}
 
 <img src="assets/do-not-localize/icon_system.svg" width="60px">
 
 **自动监控工具**
 
-有几种自动方法可用。 以帮助您监控您的实例。 例如，您可以设置检测到异常的电子邮件报告，检索XML格式的列表指示符，等等。 [单击此处](../../production/using/monitoring-processes.md#automatic-monitoring) ，了解更多信息。
+有几种自动方法可用。 以帮助您监控您的实例。 例如，您可以设置检测到异常的电子邮件报告，检索XML格式的列表指示符，等等。 [单击此](../../production/using/monitoring-processes.md#automatic-monitoring) 处以了解更多信息。
 
 **审核跟踪**
 
-审核跟踪允许您查看与实例中的选项、工作流和模式相关更改的完整历史记录。 [单击此处](../../production/using/audit-trail.md) ，了解更多信息。
+审核跟踪允许您查看与实例中的选项、工作流和模式相关更改的完整历史记录。 [单击此](../../production/using/audit-trail.md) 处以了解更多信息。
 
 **控制面板**
 
-该控制面板允许您管理实例的多个设置：管理URL权限，检查您的实例详细信息，如服务器的构建版本等。 它还允许您监视连接到实例的SFTP服务器上的可用空间。 [单击此处](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html) ，了解更多信息。
+该控制面板允许您管理实例的多个设置：管理URL权限，检查您的实例详细信息，如服务器的构建版本等。 它还允许您监视连接到实例的SFTP服务器上的可用空间。 [单击此](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html) 处以了解更多信息。
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Campaign Classic **[!UICONTROL Monitoring]** 主页可访问该选项卡，它�
 
 **工作流热图**
 
-Workflow HeatMap为实例上运行的所有工作流提供了直观的表示形式。 它允许您轻松监视实例上的负载并相应地规划工作流。 [单击此处](../../workflow/using/heatmap.md) ，了解更多信息。
+Workflow HeatMap为实例上运行的所有工作流提供了直观的表示形式。 它允许您轻松监视实例上的负载并相应地规划工作流。 [单击此](../../workflow/using/heatmap.md) 处以了解更多信息。
 
 **审核跟踪**
 
@@ -72,11 +72,11 @@ Workflow HeatMap为实例上运行的所有工作流提供了直观的表示形�
 
 **工作流疑难解答**
 
-在工作流执行遇到问题时，可以执行特定操作。 [单击此处](../../production/using/workflow-execution.md) ，了解更多信息
+在工作流执行遇到问题时，可以执行特定操作。 [单击此](../../production/using/workflow-execution.md) 处以了解更多信息
 
 **工作流状态监视**
 
-除了热图之外，您还可以创建一个工作流，它允许您监视一组工作流的状态并向主管发送循环消息。 [单击此处](../../workflow/using/supervising-workflows.md) ，了解更多信息。
+除了热图之外，您还可以创建一个工作流，它允许您监视一组工作流的状态并向主管发送循环消息。 [单击此](../../workflow/using/supervising-workflows.md) 处以了解更多信息。
 
 **一般准则**
 
@@ -94,39 +94,40 @@ SMTP报告按域显示投放统计和SMTP错误。 [了解详情](../../producti
 
 **最佳做法**
 
-[投放发送和设计的最佳实践](../../delivery/using/delivery-best-practices.md) ，可帮助您改进其性能。
+[投放发送和设计的最](../../delivery/using/delivery-best-practices.md) 佳实践可以帮助您提高性能。
 
-**投放疑难**&#x200B;排解遇到投放问题时，可以执行特定操作：
+**投放**
+疑难解答遇到投放问题时，可以执行特定操作：
 * [可交付性问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [图像显示问题](../../production/using/image-display-issues.md)
-* [投放性能问题](../../delivery/using/monitoring-a-delivery.md#performance_issues)
+* [投放性能问题](../../delivery/using/delivery-performances.md)
 * [临时文件问题](../../production/using/temporary-files.md) -仅 *限预置托管模型*
 
-### 监视数据库 {#monitoring-database}
+### 监视数据库{#monitoring-database}
 
 <img src="assets/do-not-localize/icon_database.svg" width="60px">
 
 **数据库清理工作流**
 
-数据库清理工作流允许您从数据库中删除已废弃的数据。 建议避免数据库呈指数级增长。 [单击此处](../../production/using/database-cleanup-workflow.md) ，了解更多信息。
+数据库清理工作流允许您从数据库中删除已废弃的数据。 建议避免数据库呈指数级增长。 [单击此](../../production/using/database-cleanup-workflow.md) 处以了解更多信息。
 
 **数据库性能疑难解答**
 
-在遇到数据库性能问题时，可以执行特定操作。 [单击此处](../../production/using/database-performances.md) ，了解更多信息。
+在遇到数据库性能问题时，可以执行特定操作。 [单击此](../../production/using/database-performances.md) 处以了解更多信息。
 
 **数据库维护**
 
 *仅限预置和混合托管模型*
 
-我们建议您定期执行数据库维护，以避免磁盘空间的过度消耗，从而影响数据库访问。 [单击此处](../../production/using/recommendations.md) ，了解更多信息。
+我们建议您定期执行数据库维护，以避免磁盘空间的过度消耗，从而影响数据库访问。 [单击此](../../production/using/recommendations.md) 处以了解更多信息。
 
 **备份和恢复**
 
 *仅限预置和混合托管模型*
 
-备份是避免在计算机上出现问题（无论是物理问题还是与系统相关）的事件中丢失数据的关键。 [单击此处](../../production/using/backup.md) ，了解更多信息。 本节介绍了恢 [复过程](../../production/using/restoration.md)。
+备份是避免在计算机上出现问题（无论是物理问题还是与系统相关）的事件中丢失数据的关键。 [单击此](../../production/using/backup.md) 处以了解更多信息。恢复过程在[本节](../../production/using/restoration.md)中有介绍。
 
-## Campaign Classic技术原则 {#campaign-classic-technical-principles}
+## Campaign Classic技术原则{#campaign-classic-technical-principles}
 
 技术资源可在Campaign Classic文档中找到。 我们建议您在对实例执行任何技术操作之前先熟悉这些主题。
 
