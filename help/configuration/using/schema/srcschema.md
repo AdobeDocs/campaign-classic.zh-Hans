@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 1818bd2aeb60689b2ce0e59cb0bd157f000de513
+source-git-commit: c366326f6a439dabaa42fdd799ec2e55c180a929
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 1%
@@ -47,7 +47,7 @@ created(datetime)、createdBy-id(long)、desc(string)、entitySchema(string)、e
 
 ## 使用和使用上下文{#use-and-context-of-use-9}
 
-模式演示文稿位于[关于模式引用](../../configuration/using/about-schema-reference.md)和[模式结构](../../configuration/using/schema-structure.md)中。
+模式演示文稿位于[关于模式引用](../../../configuration/using/about-schema-reference.md)和[模式结构](../../../configuration/using/schema-structure.md)中。
 
 ## 属性描述{#attribute-description-14}
 
