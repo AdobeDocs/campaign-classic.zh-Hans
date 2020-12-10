@@ -1,0 +1,58 @@
+---
+solution: Campaign Classic
+product: campaign
+title: 元素和属性
+description: 元素和属性
+audience: configuration
+content-type: reference
+topic-tags: schema-reference
+translation-type: tm+mt
+source-git-commit: 1818bd2aeb60689b2ce0e59cb0bd157f000de513
+workflow-type: tm+mt
+source-wordcount: '92'
+ht-degree: 8%
+
+---
+
+
+# `<condition>` 元素  {#condition--element}
+
+## 内容模型{#content-model-2}
+
+条件：==EMPTY
+
+## 属性{#attributes-2}
+
+* @boolOperator（字符串）
+* @enabledIf（字符串）
+* @expr（字符串）
+
+## 父项{#parents-2}
+
+`<sysfilter>`
+
+## 子项{#children-2}
+
+无
+
+## 说明{#description-2}
+
+此元素允许您定义筛选条件。
+
+## 使用和使用上下文{#use-and-context-of-use-2}
+
+一个`<sysfiler>`元素可以包含多个过滤条件。
+
+## 属性描述{#attribute-description-2}
+
+* **boolOperator(string)**:如果在 `<conditions>` 同一元素中定义了  `<sysfilter>` 多个元素，则此属性允许您合并它们。默认情况下，`<condition>`元素之间的逻辑链接为“AND”。 “@boolOperator”属性允许您组合“OR”和“AND”类型链接。
+* **enabledIf（字符串）**:条件激活测试。
+* **expr(string)**:XTK表达式。
+
+## 示例{#examples-2}
+
+```
+<sysfilter>
+  <condition enabledIf="hasNamedRight('admin')=false" expr="@city=[currentOperator/location/@city]" />
+</sysfilter>
+```
