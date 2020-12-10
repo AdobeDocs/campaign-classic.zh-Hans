@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Web 服务调用{#web-service-calls}
 
-## 一般信息 {#general-information}
+## 一般信息{#general-information}
 
 所有API方法都以Web服务的形式呈现。 这使您能够通过SOAP调用管理所有Adobe Campaign函数，SOAP调用是Adobe Campaign应用服务器的本机入口点。 Adobe Campaign控制台本身仅使用SOAP调用。
 
@@ -27,11 +27,11 @@ Web服务允许您从第三方系统创建许多应用程序：
 * 开发具有简化功能的特殊界面（Web界面等）,
 * 在遵守贸易规则并与基础物理模型保持隔离的同时，在数据库中供给和查找数据。
 
-## Web服务的定义 {#definition-of-web-services}
+## Web服务的定义{#definition-of-web-services}
 
 在Adobe Campaign应用服务器上实现的Web服务的定义可从数据模式获得。
 
-在数据模式的语法中描述Web服务，并从元素中可 **`<methods>`** 用。
+Web服务在数据模式的语法中进行描述，可从&#x200B;**`<methods>`**&#x200B;元素中访问。
 
 ```
 <methods>
@@ -46,15 +46,15 @@ Web服务允许您从第三方系统创建许多应用程序：
 </methods>
 ```
 
-这里我们有一个名为GenerateForm的方法定义 **的示例**。
+这里我们有一个名为&#x200B;**GenerateForm**&#x200B;的方法定义的示例。
 
-服务开始与元素的说 `<method>` 明。 该方法的参数列表从元素中完 `<parameters>` 成。 每个参数都由名称、类型（布尔、字符串、DOMElement等）指定 和描述。 带有“out”值的“inout”属性允许您指定“result”参数在SOAP调用输出处。
+`<method>`元素对服务开始的描述。 从`<parameters>`元素完成方法参数的列表。 每个参数都由名称、类型（布尔、字符串、DOMElement等）指定 和描述。 带有“out”值的“inout”属性允许您指定“result”参数在SOAP调用输出处。
 
 存在“static”属性（值为“true”）将此方法描述为静态，这意味着必须声明该方法的所有参数。
 
 “const”方法隐式地将XML文档格式的相关模式作为其输入。
 
-有关Adobe Campaign模式 `<method>` 模式元素的完整说明，请参阅  <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    元素。
+在<a href="../../configuration/using/schema/method.md)" target="_blank">下的“Adobe Campaign引用”一章中，可以完整描述模式模式的`<method>`元素  `<method>`    元素。
 
 “xtk:queryDef”模式中“const”类型的“ExecuteQuery”方法的示例：
 
@@ -73,7 +73,7 @@ Web服务允许您从第三方系统创建许多应用程序：
 
 每个服务都有一个WSDL（Web服务描述库）文件。 此XML文件使用元语言描述服务，并指定可用的方法、参数和与服务器联系以执行服务。
 
-### WSDL文件生成 {#wsdl-file-generation}
+### WSDL文件生成{#wsdl-file-generation}
 
 要生成WSDL文件，必须从Web浏览器输入以下URL:
 
@@ -84,7 +84,7 @@ https://`<server>`/nl/jsp/schemawsdl.jsp?模式=`<schema>`
 * **`<server>`**:adobe campaign应用程序服务器(nlserver web)
 * **`<schema>`**:模式标识密钥(命名空间:模式名)
 
-### 模式“xtk:queryDef”的“ExecuteQuery”方法示例 {#example-on-the--executequery--method-of-schema--xtk-querydef-}
+### 模式“xtk:queryDef”{#example-on-the--executequery--method-of-schema--xtk-querydef-}的“ExecuteQuery”方法示例
 
 WSDL文件是从URL生成的：
 
@@ -92,9 +92,9 @@ WSDL文件是从URL生成的：
 
 WSDL描述开始，通过定义用于形成消息的类型（与“端口”关联），通过“绑定”与协议连接，形成Web服务。
 
-#### 类型 {#types}
+#### 类型{#types}
 
-类型定义基于XML模式。 在我们的示例中，“ExecuteQuery”方法采用“s:string”字符串和XML文档(`<s:complextype>`)作为参数。 方法的返回值(“ExecuteQueryResponse”)是XML文档( `<s:complextype>`)。
+类型定义基于XML模式。 在我们的示例中，“ExecuteQuery”方法采用“s:string”字符串和XML文档(`<s:complextype>`)作为参数。 方法的返回值(“ExecuteQueryResponse”)是XML文档(`<s:complextype>`)。
 
 ```
 <types>
@@ -128,9 +128,9 @@ WSDL描述开始，通过定义用于形成消息的类型（与“端口”关�
   </s:element>
 ```
 
-#### 消息 {#messages}
+#### 消息{#messages}
 
-介 `<message>` 绍要发送的一组字段的名称和类型。 该方法使用两条消息作为参数(“ExecuteQueryIn”)和返回值(“ExecuteQueryOut”)传递。
+`<message>`描述一组要发送的字段的名称和类型。 该方法使用两条消息作为参数(“ExecuteQueryIn”)和返回值(“ExecuteQueryOut”)传递。
 
 ```
 <message name="ExecuteQueryIn">
@@ -142,9 +142,9 @@ WSDL描述开始，通过定义用于形成消息的类型（与“端口”关�
 </message> 
 ```
 
-#### 端口类型 {#porttype}
+#### PortType {#porttype}
 
-将 `<porttype>` 消息关联到由生成响应的查询（“输入”）触发的“ExecuteQuery”操作。
+`<porttype>`将由生成响应(&quot;output&quot;)的查询(&quot;input&quot;)触发的“ExecuteQuery”操作的消息关联起来。
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -155,9 +155,9 @@ WSDL描述开始，通过定义用于形成消息的类型（与“端口”关�
 </portType>
 ```
 
-#### 绑定 {#binding}
+#### 绑定{#binding}
 
-该 `<binding>` 部分指定SOAP通信协议( `<soap:binding>` )、HTTP中的数据传输（“transport”属性的值）和“ExecuteQuery”操作的数据格式。 SOAP封套的正文直接包含消息段，无需转换。
+`<binding>`部分指定SOAP通信协议(`<soap:binding>`)、HTTP中的数据传输（“transport”属性的值）和“ExecuteQuery”操作的数据格式。 SOAP封套的正文直接包含消息段，无需转换。
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -176,7 +176,7 @@ WSDL描述开始，通过定义用于形成消息的类型（与“端口”关�
 
 #### 服务 {#service}
 
-本 `<service>` 部分描述“XtkQueryDef”服务，其URI位于Adobe Campaign应用程序服务器的URL上。
+`<service>`部分描述“XtkQueryDef”服务，其URI位于Adobe Campaign应用程序服务器的URL上。
 
 ```
 <service name="XtkQueryDef">
@@ -186,19 +186,19 @@ WSDL描述开始，通过定义用于形成消息的类型（与“端口”关�
 </service>
 ```
 
-## 连接性 {#connectivity}
+## 连接{#connectivity}
 
-Adobe Campaign通过引入安全区(请参阅本节的“定 **义安全区** ”一章) [和会话管理设置](../../installation/using/configuring-campaign-server.md#defining-security-zones)，提高了身份验证机制的安全性。
+Adobe Campaign通过引入安全区（请参阅[本节](../../installation/using/configuring-campaign-server.md#defining-security-zones)中的&#x200B;**定义安全区**&#x200B;一章）和会话管理设置，提高了身份验证机制的安全性。
 
 有两种可用的身份验证模式：
 
-* **通过调用登录方法()**。 此模式生成会话令牌和安全令牌。 它是最安全的模式，因此也是最推荐的模式。
+* **通过调用登录方法()**。此模式生成会话令牌和安全令牌。 它是最安全的模式，因此也是最推荐的模式。
 
 或者
 
-* **通过Adobe Campaign登录名** +密码创建会话令牌。 会话令牌会在设置的时间段后自动过期。 不建议使用此模式，并要求为某些区域设置（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）减少应用程序安全设置。
+* **通过Adobe Campaign登录+** 口令创建会话令牌。会话令牌会在设置的时间段后自动过期。 不建议使用此模式，并要求为某些区域设置（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）减少应用程序安全设置。
 
-### 会话令牌特性 {#session-token-characteristics}
+### 会话令牌特性{#session-token-characteristics}
 
 会话令牌具有以下特性：
 
@@ -209,7 +209,7 @@ Adobe Campaign通过引入安全区(请参阅本节的“定 **义安全区** �
    * 会话令牌成为永久令牌，一旦浏览器关闭，它不会被销毁
    * 它位于仅HTTP的Cookie中（必须为操作符激活Cookie）
 
-### 安全令牌特性 {#security-token-characteristics}
+### 安全令牌特性{#security-token-characteristics}
 
 安全令牌具有以下特征：
 
@@ -222,7 +222,7 @@ Adobe Campaign通过引入安全区(请参阅本节的“定 **义安全区** �
    * 页面URL将更新安全令牌
    * 表单也通过包含令牌的隐藏字段进行更新
 
-#### 安全令牌移动 {#security-token-movement}
+#### 安全令牌移动{#security-token-movement}
 
 通过控制台访问时，它为：
 
@@ -238,9 +238,9 @@ Adobe Campaign通过引入安全区(请参阅本节的“定 **义安全区** �
 
 * 添加到呼叫头
 
-### 调用示例 {#call-examples}
+### 调用示例{#call-examples}
 
-* 使用 **HttpSoapConnection/SoapService**:
+* 使用&#x200B;**HttpSoapConnection/SoapService**:
 
 ```
   
@@ -273,11 +273,11 @@ Adobe Campaign通过引入安全区(请参阅本节的“定 **义安全区** �
   logInfo(queryRes[0].toXMLString())
 ```
 
-* 使用 **HttpServletRequest**:
+* 使用&#x200B;**HttpServletRequest**:
 
 >[!NOTE]
 >
->以下HttpServletRequest调 **用中使用的URL** ，必须位于serverConf.xml文件的url权限 **部分的允许列表中** 。 服务器本身的URL也是如此。
+>以下&#x200B;**HttpServletRequest**&#x200B;调用中使用的URL必须位于&#x200B;**serverConf.xml**&#x200B;文件的url权限部分的允许列表。 服务器本身的URL也是如此。
 
 登录执行():
 
