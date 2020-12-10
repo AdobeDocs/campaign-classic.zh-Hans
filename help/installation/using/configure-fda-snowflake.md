@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 535339b5a9b39625100d630b0b831df143dbeb01
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 6%
@@ -15,25 +15,25 @@ ht-degree: 6%
 ---
 
 
-# 配置对Snowflake的访问 {#configure-access-to-snowflake}
+# 配置对Snowflake{#configure-access-to-snowflake}的访问
 
-使用活动 **联合数据访问** (联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置访问 [!DNL Snowflake]权。
+使用活动&#x200B;**联合数据访问**(联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对[!DNL Snowflake]的访问。
 
-1. 在CentOS [!DNL Snowflake] 、 [Windows或](#snowflake-centos)Debian [上配](#snowflake-windows)[置](#snowflake-debian)
-1. 在外部帐户 [!DNL Snowflake] 中 [配置](#snowflake-external) 活动
+1. 在[CentOS](#snowflake-centos)、[Windows](#snowflake-windows)或[Debian](#snowflake-debian)上配置[!DNL Snowflake]
+1. 在活动中配置[!DNL Snowflake] [外部帐户](#snowflake-external)
 
 
 >[!NOTE]
 >
->[!DNL Snowflake] connector可用于托管和内部部署。 有关详细信息，请参见[此页面](../../installation/using/capability-matrix.md)。
+>[!DNL Snowflake] connector可用于托管和内部部署。有关详细信息，请参见[此页面](../../installation/using/capability-matrix.md)。
 
 ![](assets/snowflake_3.png)
 
 ## SnowflakeCentOS {#snowflake-centos}
 
-要在CentOS [!DNL Snowflake] 上进行配置，请执行以下步骤：
+要在CentOS上配置[!DNL Snowflake]，请执行以下步骤：
 
-1. 下载ODBC驱动程序 [!DNL Snowflake]。 [单击此处](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) ,开始下载。
+1. 下载[!DNL Snowflake]的ODBC驱动程序。 [单击此](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) 处以下载开始。
 1. 然后，您需要使用以下命令在CentOs上安装ODBC驱动程序：
 
    ```
@@ -48,19 +48,19 @@ ht-degree: 6%
    /etc/init.d/nlserver6 start
    ```
 
-1. 在活动中，您随后可以配置 [!DNL Snowflake] 外部帐户。 有关如何配置外部帐户的详细信息，请参 [阅此部分](#snowflake-external)。
+1. 在活动中，您随后可以配置[!DNL Snowflake]外部帐户。 有关如何配置外部帐户的详细信息，请参阅[本节](#snowflake-external)。
 
 ## SnowflakeWindows {#snowflake-windows}
 
-1. 下载适 [用于Windows的ODBC驱动程序](https://docs.snowflake.net/manuals/user-guide/odbc-download.html)。 请注意，您需要管理员级权限才能安装驱动程序。 For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
+1. 下载用于Windows的[ODBC驱动程序](https://docs.snowflake.net/manuals/user-guide/odbc-download.html)。 请注意，您需要管理员级权限才能安装驱动程序。 有关详细信息，请参阅[此页](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
 
-1. 配置ODBC驱动程序。 For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
+1. 配置ODBC驱动程序。 有关详细信息，请参阅[此页](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
 
-1. 在活动中，您随后可以配置 [!DNL Snowflake] 外部帐户。 有关如何配置外部帐户的详细信息，请参 [阅此部分](#snowflake-external)。
+1. 在活动中，您随后可以配置[!DNL Snowflake]外部帐户。 有关如何配置外部帐户的详细信息，请参阅[本节](#snowflake-external)。
 
-## Snowflake德比 {#snowflake-debian}
+## SnowflakeDebian {#snowflake-debian}
 
-1. 下载ODBC驱动程序 [!DNL Snowflake]。 [单击此处](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) ,开始下载。
+1. 下载[!DNL Snowflake]的ODBC驱动程序。 [单击此](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) 处开始下载。
 
 1. 然后，您需要使用以下命令在Debian上安装ODBC驱动程序：
 
@@ -76,19 +76,19 @@ ht-degree: 6%
    systemctl start nlserver.service
    ```
 
-1. 在活动中，您随后可以配置 [!DNL Snowflake] 外部帐户。 有关如何配置外部帐户的详细信息，请参 [阅此部分](#snowflake-external)。
+1. 在活动中，您随后可以配置[!DNL Snowflake]外部帐户。 有关如何配置外部帐户的详细信息，请参阅[本节](#snowflake-external)。
 
-## Snowflake外部帐户 {#snowflake-external}
+## Snowflake外部帐户{#snowflake-external}
 
-您需要创建一个外部帐户 [!DNL Snowflake] 来将活动实例连接到外部 [!DNL Snowflake] 数据库。
+您需要创建[!DNL Snowflake]外部帐户才能将活动实例连接到[!DNL Snowflake]外部数据库。
 
-1. 在活动 **[!UICONTROL Explorer]**&#x200B;中， **[!UICONTROL Administration]** 单击“>” **[!UICONTROL Platform]** “>” **[!UICONTROL External accounts]**。
+1. 在活动&#x200B;**[!UICONTROL Explorer]**&#x200B;中，单击&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
 1. 单击 **[!UICONTROL New]**.
 
-1. 选 **[!UICONTROL External database]** 择作为外部帐户 **[!UICONTROL Type]**。
+1. 选择&#x200B;**[!UICONTROL External database]**&#x200B;作为外部帐户的&#x200B;**[!UICONTROL Type]**。
 
-1. 配置 **[!UICONTROL Snowflake]** 外部帐户，必须指定：
+1. 配置&#x200B;**[!UICONTROL Snowflake]**&#x200B;外部帐户，必须指定：
 
    * **[!UICONTROL Type]**: [!DNL Snowflake]
 
@@ -102,7 +102,7 @@ ht-degree: 6%
 
    ![](assets/snowflake.png)
 
-1. 单击选 **[!UICONTROL Parameters]** 项卡，然 **[!UICONTROL Deploy functions]** 后单击按钮以创建函数。
+1. 单击&#x200B;**[!UICONTROL Parameters]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Deploy functions]**&#x200B;按钮以创建函数。
 
    ![](assets/snowflake_2.png)
 
