@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 854d509315f1d8585cb041575908df896468cc77
+source-git-commit: 1b498e9f47dc3cfc108ee182829b83442819629d
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2215'
 ht-degree: 97%
 
 ---
@@ -711,6 +711,23 @@ ht-degree: 97%
       + [模式结构](configuration/using/schema-structure.md)
       + [数据库映射](configuration/using/database-mapping.md)
       + [元素和属性](configuration/using/elements-and-attributes.md)
+         + [属性](configuration/using/schema/attribute.md)
+         + [计算字符串](configuration/using/schema/compute-string.md)
+         + [条件](configuration/using/schema/condition.md)
+         + [数据库索引](configuration/using/schema/db-index.md)
+         + [元素](configuration/using/schema/element.md)
+         + [明细列表](configuration/using/schema/enumeration.md)
+         + [帮助](configuration/using/schema/help.md)
+         + [加入](configuration/using/schema/join.md)
+         + [键](configuration/using/schema/key.md)
+         + [Keyfield](configuration/using/schema/keyfield.md)
+         + [方法](configuration/using/schema/method.md)
+         + [方法](configuration/using/schema/methods.md)
+         + [参数](configuration/using/schema/param.md)
+         + [参数](configuration/using/schema/parameters.md)
+         + [SrcSchema](configuration/using/schema/srcschema.md)
+         + [Sysfilter](configuration/using/schema/sysfilter.md)
+         + [值](configuration/using/schema/value.md)
    + 编辑模式 {#editing-schemas}
       + [关于模式版本](configuration/using/about-schema-edition.md)
       + [数据模式](configuration/using/data-schemas.md)
