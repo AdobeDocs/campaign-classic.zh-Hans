@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+source-git-commit: c366326f6a439dabaa42fdd799ec2e55c180a929
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Web服务在数据模式的语法中进行描述，可从&#x200B;**`<methods>`**
 
 “const”方法隐式地将XML文档格式的相关模式作为其输入。
 
-在<a href="../../configuration/using/schema/method.md)" target="_blank">下的“Adobe Campaign引用”一章中，可以完整描述模式模式的`<method>`元素  `<method>`    元素。
+在[Method](../../configuration/using/schema/method.md)下的“Adobe Campaign引用”一章中，可以完整描述模式模式的`<method>`元素
 
 “xtk:queryDef”模式中“const”类型的“ExecuteQuery”方法的示例：
 
