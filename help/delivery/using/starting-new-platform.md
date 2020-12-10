@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 1%
@@ -27,17 +27,17 @@ ht-degree: 1%
 
 下面列出了启动新平台时要遵循的主要原则：
 
-* 如果您有此信息， **请将无效地址导入隔离表**。
+* 如果您有此信息，**将无效地址导入隔离表**。
 首次使用列表地址时，通常会启动平台，而该地址可能未完全限定。 如果发送到无效地址或蜜罐地址，这会降低平台的声誉。
 
-   * 如果列表的地址无效，则在首次发送之前将其导入隔离表(可通过菜单获 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** 得)符合您的最大利益。
+   * 如果列表的地址无效，则在首次发送之前，最好将其导入隔离表（可通过&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**&#x200B;菜单访问）。
    * 如果您仍希望重新指定无效地址，则最好在建立平台信誉并逐位地执行此操作，以便随着时间的推移“稀释”使用不良地址。
 
-   有关此方面的详细信息，请参 [阅通过隔离优化投放](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines)。
-* **通过限制mtachild** 数量来限制吞吐量速率。 有关调整此类技术设置的更多信息，请与Adobe Campaign管理员联系。
-* **逐步增加发送的卷** ，以避免被标记为垃圾邮件。 不要从整个开始中目标整个列表库，而是在每次发送时添加额外的部分。 这样，您就可以在每一步增加卷，同时降低无效地址的总体速率。 为确保开始阶段的顺利开发，您可以使用批次。 有关此方面的详细信息，请参 [阅使用多个批次发送](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)。
-* **定期发送**。 从某种程度上讲，最好定期发送小照片，而不是偶尔发送大活动。
-* **要密切关注投放报告**。 高错误指示器可能意味着技术设置配置错误。 有关此方面的详细信息，请 [参阅监视投放](../../delivery/using/monitoring-a-delivery.md)。
+   有关详细信息，请参阅[通过隔离优化投放](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines)。
+* **通过限制** mtachild数量来限制吞吐量速率。有关调整此类技术设置的更多信息，请与Adobe Campaign管理员联系。
+* **逐步增加发送的** 卷以避免标记为垃圾邮件。不要从整个开始中目标整个列表库，而是在每次发送时添加额外的部分。 这样，您就可以在每一步增加卷，同时降低无效地址的总体速率。 为确保开始阶段的顺利开发，您可以使用批次。 有关详细信息，请参阅[使用多个批次发送](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)。
+* **定期发送**。从某种程度上讲，最好定期发送小照片，而不是偶尔发送大活动。
+* **要密切关注投放报告**。高错误指示器可能意味着技术设置配置错误。 有关详细信息，请参阅[监视投放](../../delivery/using/about-delivery-monitoring.md)。
 
 **相关主题**：
 * [通过IP升温提高您的电子邮件声誉](https://helpx.adobe.com/campaign/kb/increase-email-rep-ip-warming.html)
