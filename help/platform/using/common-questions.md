@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 100%
@@ -49,7 +49,7 @@ Adobe Campaign Classic 特别使用一系列技术来提供价值。这一技术
 
 Adobe Campaign 提供了一组仪表板和工具来监视电子邮件投放。
 
-[单击此处了解](../../delivery/using/monitoring-a-delivery.md)如何确认邮件已发送、监视执行情况并在发生错误时采取行动。
+[单击此处了解](../../delivery/using/about-delivery-monitoring.md)如何确认邮件已发送、监视执行情况并在发生错误时采取行动。
 
 ## 5. 是否能监视工作流的执行？{#can-i-monitor-workflow-execution}
 
