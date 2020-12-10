@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 模式结构{#schema-structure}
 
-其基本结 `<srcschema>` 构如下：
+`<srcschema>`的基本结构如下：
 
 ```
 <srcSchema>
@@ -60,7 +60,7 @@ ht-degree: 1%
 </srcSchema>
 ```
 
-数据模式的XML文档必须包含 **`<srcschema>`** 根元素，其 **名称****和命名空间属性** 才能填充模式名称及其命名空间。
+数据模式的XML文档必须包含&#x200B;**`<srcschema>`**&#x200B;根元素，其中&#x200B;**name**&#x200B;和&#x200B;**命名空间**&#x200B;属性用于填充模式名称及其命名空间。
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -101,7 +101,7 @@ ht-degree: 1%
 <element name="recipient">
 ```
 
-主元 **`<attribute>`** 素 **`<element>`** 后面的元素和元素允许您定义XML结构中数据项的位置和名称。
+主元素后面的元素&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;使您能定义XML结构中数据项的位置和名称。
 
 在我们的示例模式中，这些是：
 
@@ -116,42 +116,42 @@ ht-degree: 1%
 
 必须遵守下列规定：
 
-* 每个 **`<element>`** 和 **`<attribute>`** 必须通过name属性由名称 **标识** 。
+* 每个&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;必须通过&#x200B;**name**&#x200B;属性以名称进行标识。
 
    >[!IMPORTANT]
    >
    >元素的名称应简洁明了，最好用英文写，并且只包含符合XML命名规则的授权字符。
 
-* 只有 **`<element>`** 元素才能 **`<attribute>`** 在XML **`<element>`** 结构中包含元素和元素。
-* 元 **`<attribute>`** 素在中必须具有唯一名称 **`<element>`**。
-* 建议在 **`<elements>`** 多行数据字符串中使用。
+* 在XML结构中，只有&#x200B;**`<element>`**&#x200B;元素可以包含&#x200B;**`<attribute>`**&#x200B;元素和&#x200B;**`<element>`**&#x200B;元素。
+* **`<attribute>`**&#x200B;元素在&#x200B;**`<element>`**&#x200B;中必须具有唯一的名称。
+* 建议在多行数据字符串中使用&#x200B;**`<elements>`**。
 
 ## 数据类型 {#data-types}
 
-数据类型通过和元素 **中的** type属 **`<attribute>`** 性输 **`<element>`** 入。
+数据类型通过&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;元素中的&#x200B;**type**&#x200B;属性输入。
 
-元素和元素的说明中提供详 [`<attribute>` 细列表](../../configuration/using/elements-and-attributes.md#attribute--element)[`<element>` 。](../../configuration/using/elements-and-attributes.md#element--element)
+[`<attribute>`元素](../../configuration/using/schema/attribute.md)和[`<element>`元素](../../configuration/using/schema/element.md)的说明中提供了详细列表。
 
-如果未填充此属性，则 **字符串** 是默认数据类型，除非元素包含子元素。 如果它这样做，则它仅用于按层次结构化元素(我们&#x200B;**`<location>`** 示例中的元素)。
+如果未填充此属性，则&#x200B;**string**&#x200B;是默认数据类型，除非元素包含子元素。 如果确实如此，则它仅用于按层次结构化元素（本例中为&#x200B;**`<location>`**&#x200B;元素）。
 
 模式支持以下数据类型：
 
-* **字符串**:字符串。 示例：名字，镇等。
+* **字符串**:字符串。示例：名字，镇等。
 
-   可以通过length属性 **指定** （可选，默认值“255”）。
+   可以通过&#x200B;**length**&#x200B;属性（可选，默认值“255”）指定大小。
 
-* **布尔**:布尔字段。 可能值的示例：true/false、0/1、yes/no等。
-* **字节**、 **短**、 **长**:整数（1字节、2字节、4字节）。 示例：年龄、帐号、积分等。
-* **多次**:多次精度浮点数。 示例：价格、费率等。
-* **date**, **datetime**:日期和日期+时间。 示例：出生日期、购买日期等。
+* **布尔**:布尔字段。可能值的示例：true/false、0/1、yes/no等。
+* **字节**、 **短**、 **长**:整数（1字节、2字节、4字节）。示例：年龄、帐号、积分等。
+* **多次**:多次精度浮点数。示例：价格、费率等。
+* **date**,  **datetime**:日期和日期+时间。示例：出生日期、购买日期等。
 * **datetimenotz**:日期+时间，无时区数据。
-* **timespan**:持续时间。 示例：资历。
-* **备忘录**:长文本字段（多行）。 示例：描述、注释等。
+* **timespan**:持续时间。示例：资历。
+* **备忘录**:长文本字段（多行）。示例：描述、注释等。
 * **uuid**:用于支持GUID的“uniqueidentifier”字段（仅在Microsoft SQL Server中受支持）。
 
    >[!NOTE]
    >
-   >要在Microsoft SQL **** Server以外的引擎中包含uuid字段，必须使用其默认值添加并完成“newuuid()”函数。
+   >要在Microsoft SQL Server以外的引擎中包含&#x200B;**uuid**&#x200B;字段，必须使用其默认值添加并完成“newuuid()”函数。
 
 下面是我们输入类型的示例模式:
 
@@ -168,7 +168,7 @@ ht-degree: 1%
 </srcSchema>
 ```
 
-### 映射Adobe Campaign/DBMS数据类型 {#mapping-the-types-of-adobe-campaign-dbms-data}
+### 映射Adobe Campaign/DBMS数据{#mapping-the-types-of-adobe-campaign-dbms-data}的类型
 
 下表列表了Adobe Campaign为不同数据库管理系统生成的数据类型的映射。
 
@@ -185,34 +185,34 @@ ht-degree: 1%
   <tr> 
    <td> 字符串<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
-   <td> VARCHAR2（如果为unicode，则为NVARCHAR2）<br /> </td> 
+   <td> VARCHAR2（如果unicode为NVARCHAR2）<br /> </td> 
    <td> VARCHAR（如果为Unicode，则为VARCHAR字符集UNICODE）<br /> </td> 
    <td> VARCHAR<br /> </td> 
    <td> VARCHAR（如果unicode为NVARCHAR）<br /> </td> 
   </tr> 
   <tr> 
-   <td> 布尔值<br /> </td> 
-   <td> 斯马林特<br /> </td> 
+   <td> Boolean<br /> </td> 
+   <td> SMALLINT<br /> </td> 
    <td> NUMBER(3)<br /> </td> 
    <td> NUMERIC(3)<br /> </td> 
-   <td> 斯马林特<br /> </td> 
+   <td> SMALLINT<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> 字节<br /> </td> 
-   <td> 斯马林特<br /> </td> 
+   <td> SMALLINT<br /> </td> 
    <td> NUMBER(3)<br /> </td> 
    <td> NUMERIC(3)<br /> </td> 
-   <td> 斯马林特<br /> </td> 
+   <td> SMALLINT<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> 短<br /> </td> 
-   <td> 斯马林特<br /> </td> 
-   <td> 数字(5)<br /> </td> 
-   <td> 斯马林特<br /> </td> 
-   <td> 斯马林特<br /> </td> 
-   <td> 斯马林特<br /> </td> 
+   <td> SMALLINT<br /> </td> 
+   <td> NUMBER(5)<br /> </td> 
+   <td> SMALLINT<br /> </td> 
+   <td> SMALLINT<br /> </td> 
+   <td> SMALLINT<br /> </td> 
   </tr> 
   <tr> 
    <td> 多次<br /> </td> 
@@ -242,12 +242,12 @@ ht-degree: 1%
    <td> 日期<br /> </td> 
    <td> DATE<br /> </td> 
    <td> DATE<br /> </td> 
-   <td> 时间戳<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
    <td> DATE<br /> </td> 
    <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
-   <td> Time<br /> </td> 
+   <td> 时间<br /> </td> 
    <td> TIME<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> TIME<br /> </td> 
@@ -258,16 +258,16 @@ ht-degree: 1%
    <td> 日期时间<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATE<br /> </td> 
-   <td> 时间戳<br /> </td> 
-   <td> 时间戳<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
    <td> MS SQL &lt; 2008:DATETIME<br /> MS SQL &gt;= 2012:DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATE<br /> </td> 
-   <td> 时间戳<br /> </td> 
-   <td> 时间戳<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
    <td> MS SQL &lt; 2008:DATETIME<br /> MS SQL &gt;= 2012:DATETIME2<br /> </td> 
   </tr> 
   <tr> 
@@ -279,10 +279,10 @@ ht-degree: 1%
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Memo<br /> </td> 
+   <td> 备忘录<br /> </td> 
    <td> TEXT<br /> </td> 
    <td> CLOB（如果为Unicode，则为NCLOB）<br /> </td> 
-   <td> CLOB（如果是Unicode，则为CLOB字符集UNICODE）<br /> </td> 
+   <td> CLOB（如果为Unicode，则为CLOB字符集UNICODE）<br /> </td> 
    <td> CLOB(6M)<br /> </td> 
    <td> TEXT（如果为Unicode，则为NTEXT）<br /> </td> 
   </tr> 
@@ -292,18 +292,18 @@ ht-degree: 1%
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB(4M)<br /> </td> 
-   <td> IMAGE<br /> </td> 
+   <td> 图像<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 属性 {#properties}
 
-数据 **`<elements>`** 模式 **`<attributes>`** 的元素和元素可以用各种属性进行丰富。 您可以填充标签以描述当前元素。
+数据模式的&#x200B;**`<elements>`**&#x200B;和&#x200B;**`<attributes>`**&#x200B;元素可以丰富各种属性。 您可以填充标签以描述当前元素。
 
-### 标签和说明 {#labels-and-descriptions}
+### 标签和说明{#labels-and-descriptions}
 
-* 标签 **属性** 允许您输入简短的说明。
+* 通过&#x200B;**label**&#x200B;属性可以输入简短说明。
 
    >[!NOTE]
    >
@@ -319,7 +319,7 @@ ht-degree: 1%
 
    ![](assets/d_ncs_integration_schema_label.png)
 
-* desc **属性** 允许您输入详细说明。
+* 使用&#x200B;**desc**&#x200B;属性可以输入较长的描述。
 
    描述可从Adobe Campaign客户端控制台主窗口的状态栏中的输入表单中查看。
 
@@ -333,34 +333,34 @@ ht-degree: 1%
    <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
    ```
 
-### 默认值 {#default-values}
+### 默认值{#default-values}
 
-默 **认属性** 允许您定义在内容创建时返回默认值的表达式。
+**default**&#x200B;属性允许您定义在内容创建时返回默认值的表达式。
 
-该值必须是符合XPath语言的表达式。 有关此的详细信息，请参 [阅Referencing with XPath](../../configuration/using/schema-structure.md#referencing-with-xpath)。
+该值必须是符合XPath语言的表达式。 有关详细信息，请参阅[ Referencing with XPath](../../configuration/using/schema-structure.md#referencing-with-xpath)。
 
 **示例**:
 
-* 当前日期： **default=&quot;GetDate()&quot;**
-* 计数器： **default=&quot;&#39;FRM&#39;+CounterValue(&#39;myCounter&#39;)&quot;**
+* 当前日期：**default=&quot;GetDate()&quot;**
+* 计数器：**default=&quot;&#39;FRM&#39;+CounterValue(&#39;myCounter&#39;)&quot;**
 
-   在本例中，默认值是使用字符串的串联和使用免费计数器名 **称调用** CounterValue函数来构建的。 每次插入时返回的数字递增1。
+   在此示例中，默认值是使用字符串的串联来构建的，并使用免费的计数器名称调用&#x200B;**CounterValue**&#x200B;函数。 每次插入时返回的数字递增1。
 
    >[!NOTE]
    >
-   >在Adobe Campaign客户端控制台中， **[!UICONTROL Administration>Counters]** 节点用于管理计数器。
+   >在Adobe Campaign客户端控制台中，**[!UICONTROL Administration>Counters]**&#x200B;节点用于管理计数器。
 
-要将默认值链接到字段，可使用 `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+要将默认值链接到字段，可使用`<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
-`<default>` :允许您在创建实体时用默认值预填字段。 该值不是默认的SQL值。
+`<default>` :允许您在创建实体时用默认值预填字段。该值不是默认的SQL值。
 
-`<sqldefault>` :允许您在创建字段时增加值。 此值显示为SQL结果。 在模式更新期间，只有新记录将受此值影响。
+`<sqldefault>` :允许您在创建字段时增加值。此值显示为SQL结果。 在模式更新期间，只有新记录将受此值影响。
 
-### 明细列表 {#enumerations}
+### 明细列表{#enumerations}
 
-#### 免费明细列表 {#free-enumeration}
+#### 免费明细列表{#free-enumeration}
 
-用户 **枚举** 属性允许您定义一个免费明细列表，以记住和显示通过此字段输入的值。 语法如下：
+使用&#x200B;**userEnum**&#x200B;属性，您可以定义一个免费明细列表来记住和显示通过此字段输入的值。 语法如下：
 
 **userEnum=&quot;明细列表名&quot;**
 
@@ -372,13 +372,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在Adobe Campaign客户端控制台中， **[!UICONTROL Administration > Enumerations]** 节点用于管理明细列表。
+>在Adobe Campaign客户端控制台中，**[!UICONTROL Administration > Enumerations]**&#x200B;节点用于管理明细列表。
 
-#### 设置明细列表 {#set-enumeration}
+#### 设置明细列表{#set-enumeration}
 
-枚 **举属性** 允许您定义在事先知道可能值的列表时使用的固定明细列表。
+通过&#x200B;**枚举**&#x200B;属性，可以定义在预先知道可能值的明细列表时使用的固定列表。
 
-枚举 **属性** 是指在主元素外部的明细列表中填充的模式类的定义。
+**枚举**&#x200B;属性引用在主元素外部的明细列表中填充的模式类的定义。
 
 明细列表允许用户从下拉列表中选择一个值，而不是在常规输入字段中输入该值：
 
@@ -394,7 +394,7 @@ ht-degree: 1%
 </enumeration>
 ```
 
-明细列表通过元素声明在主元素外 **`<enumeration>`** 部。
+明细列表通过&#x200B;**`<enumeration>`**&#x200B;元素在主元素外部声明。
 
 明细列表属性如下：
 
@@ -403,18 +403,18 @@ ht-degree: 1%
 * **name**:明细列表的名称，
 * **默认**:默认明细列表值。
 
-明细列表值在元素中声明， **`<value>`** 具有以下属性：
+明细列表值在&#x200B;**`<value>`**&#x200B;元素中声明，其属性如下：
 
 * **name**:内部存储的值的名称，
 * **标签**:标签。
 
-#### 明细列表 {#dbenum-enumeration}
+#### dbenum明细列表{#dbenum-enumeration}
 
-* dbenum **属性** 允许您定义其属性与枚举属性属性类似的 **明细列表** 。
+* 通过&#x200B;**dbenum**&#x200B;属性，可以定义属性与&#x200B;**enum**&#x200B;属性的属性相似的明细列表。
 
-   但是，name **属性** 不在内部存储值，它存储一个代码，使您可以扩展相关表而不修改其模式。
+   但是，**name**&#x200B;属性不在内部存储值，它存储一个代码，使您可以扩展相关表而不修改其模式。
 
-   这些值是通过节点定 **[!UICONTROL Administration>Enumerations]** 义的。
+   值通过&#x200B;**[!UICONTROL Administration>Enumerations]**&#x200B;节点定义。
 
    此明细列表用于指定活动的性质，例如。
 
@@ -447,7 +447,7 @@ ht-degree: 1%
 
 集合是具有相同名称和相同分层级别的元素的列表。
 
-使用 **值** “true”的未绑定属性可填充集合元素。
+值为“true”的&#x200B;**unboind**&#x200B;属性允许您填充集合元素。
 
 **示例**:在模式中 **`<group>`** 定义集合元素。
 
@@ -464,7 +464,7 @@ ht-degree: 1%
 <group label="Group2"/>
 ```
 
-## 使用XPath引用 {#referencing-with-xpath}
+## 与XPath {#referencing-with-xpath}引用
 
 XPath语言用于Adobe Campaign，以引用属于数据模式的元素或属性。
 
@@ -484,8 +484,8 @@ XPath是一种语法，它允许您在XML文档的树中找到节点。
 >
 >当路径与子元素交叉时，会添加附加约束。 在这种情况下，以下表达式必须放在括号之间：
 >
->* **location/@city** 无效；请使用 **`[location/@city]`**
->* **`[@email]`** 和 **@email** 是等效的
+>* **location/@** cityis无效；请使用  **`[location/@city]`**
+>* **`[@email]`** 和 **@** emailare等效项
 
 >
 
@@ -493,7 +493,7 @@ XPath是一种语法，它允许您在XML文档的树中找到节点。
 
 还可以定义复杂表达式，如以下算术运算：
 
-* **@gender+1**:在性别属性的内容 **中** ,
+* **@gender+1**:将genderattribute的内容添加 **** 1,
 * **@email + &#39;(&#39;+@created+&#39;)&#39;**:通过使用添加到创建日期的括号之间的电子邮件地址值构造字符串（对于字符串类型，将常数加引号）。
 
 表达式中增加了高级功能，以丰富该语言的潜力。
@@ -508,11 +508,11 @@ XPath是一种语法，它允许您在XML文档的树中找到节点。
 * **Year(@created)**:返回“已创建”属性中包含的日期的年份。
 * **GetEmailDomain(@email)**:返回电子邮件地址的域。
 
-## 通过计算字符串构建字符串 {#building-a-string-via-the-compute-string}
+## 通过计算字符串{#building-a-string-via-the-compute-string}构建字符串
 
-计 **算字符串** 是XPath表达式，用于在与模式关联的表中构造表示记录的字符串。 **计算字符串** ，主要用于图形界面中显示所选记录的标签。
+**计算字符串**&#x200B;是XPath表达式，用于在与该模式相关联的表中构造表示记录的字符串。 **计** 算字符串主要用于图形界面中显示所选记录的标签。
 
-Compute **字符串** ，通过数据模式 **`<compute-string>`** 主元素下的元素进行定义。 expr **属性** 包含用于计算显示的XPath表达式。
+**计算字符串**&#x200B;是通过数据模式主元素下的&#x200B;**`<compute-string>`**&#x200B;元素定义的。 **expr**&#x200B;属性包含用于计算显示的XPath表达式。
 
 **示例**:计算收件人表的字符串。
 
@@ -525,7 +525,7 @@ Compute **字符串** ，通过数据模式 **`<compute-string>`** 主元素下�
 </srcSchema>
 ```
 
-收件人的计算字符串结果： **Doe John(john.doe@aol.com)**
+收件人的计算字符串结果：**Doe John(john.doe@aol.com)**
 
 >[!NOTE]
 >
