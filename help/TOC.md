@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 1b498e9f47dc3cfc108ee182829b83442819629d
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2216'
 ht-degree: 97%
 
 ---
@@ -710,7 +710,8 @@ ht-degree: 97%
       + [关于模式参考](configuration/using/about-schema-reference.md)
       + [模式结构](configuration/using/schema-structure.md)
       + [数据库映射](configuration/using/database-mapping.md)
-      + [元素和属性](configuration/using/elements-and-attributes.md)
+      + [元素和属性]  {#elements-attributes}
+         + [简介](configuration/using/schema-introduction.md)
          + [属性](configuration/using/schema/attribute.md)
          + [计算字符串](configuration/using/schema/compute-string.md)
          + [条件](configuration/using/schema/condition.md)
