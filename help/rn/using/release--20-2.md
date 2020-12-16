@@ -6,11 +6,11 @@ description: 版本 20.2
 audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2201'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -21,41 +21,41 @@ ht-degree: 80%
 
 ## ![](assets/do-not-localize/green_2.png) 版本 20.2.3 - 版本 9182 {#release-20-2-3-build-9182}
 
-_2020年9月11日_
+_2020 年 9 月 11 日_
 
-* 修复了导致投放准备被阻止的回归，该回归是由于投放部分上的单个错误函数导致内存过载。 (NEO-27346)
-* 修复了在重新发布Web应用程序之前关闭Apache和Web服务器的错误升级问题。 (NEO-27155)
-* 修复了HTML模板管理上的回归问题，该回归导致跟踪URL由于选项卡的误解而变得可见。 (NEO-25909)
-* 修复了由于非托管数据源而导致数据库清理工作流失败的问题。 (NEO-23160, NEO-23364)
-* 清理工作流现在按100批而不是逐批清除过期列表。
-* 修复了阻止修改外部帐户内部名称的回归。 (NEO-27323)
-* 在错误升级期间修复回归，导致nlserver开始不正确（错误日志）。
-* 已改进共享内存的更新管理。 不再需要20.2中需要的其他步骤。
+* 修复了由于投放部分的单个错误函数造成内存过载而导致阻止投放准备的回归。(NEO-27346)
+* 修复了在重新发布 Web 应用程序之前关闭 Apache 和 Web 服务器的升级后问题。(NEO-27155)
+* 修复了由于选项卡的误解而导致跟踪 URL 变为可见的 HTML 模板管理回归。(NEO-25909)
+* 修复了由于非托管数据源而导致数据库清理工作流可能失败的问题。(NEO-23160, NEO-23364)
+* 清理工作流现在按 100 批而不是逐批清除过期列表。
+* 修复了阻止修改外部帐户的内部名称的回归。(NEO-27323)
+* 修复了在升级后期导致 nlserver 启动错误的回归（错误日志）。
+* 改进了共享内存的更新管理。不再需要 20.2 中必需的其他步骤。
 
 ## ![](assets/do-not-localize/orange_2.png) 版本 20.2.2 - 版本 9180 {#release-20-2-2-build-9180}
 
-_2020年7月22日_
+_2020 年 7 月 22 日_
 
 * 修复了在禁用签名功能时跟踪无法正常工作的问题。(NEO-26411)
-* 修复了导致个性化域中未签名链接在应允许时被阻止的问题。 (NEO-25210)
+* 修复了导致在应当允许个性化域中的未签名链接时将其阻止的问题。(NEO-25210)
 * 修复了在使用某些旧版 Outlook 时可能导致无法打开/单击跟踪 URL 的问题。  (NEO-25688)
-* 修复了导致电子邮件镜像页面中错误定义投放URL的问题（由于ASCII字符控制不当）。 (NEO-26084)
-* 修复了防网络钓鱼服务中的URL管理编码问题。 (NEO-25283)
+* 修复了导致在电子邮件投放中错误定义镜像页面 URL 的问题（由于 ASCII 字符控制不当）。(NEO-26084)
+* 修复了反网络钓鱼服务中的 URL 管理编码问题。(NEO-25283)
 * 修复了在使用个性化参数（带井号的锚点标记）中的片段跟踪 URL 时无法正常工作的问题。(NEO-25774)
 * 修复了使用特定自定义跟踪公式时的跟踪问题。(NEO-25277)
 * 修复了跟踪“通知点击量”无法正常工作的问题（iOS 和 Android 推送通知）。(NEO-25965)
-* 修复了影响工作流中计算字段的回归，导致工作流失败。 (NEO-25194)
-* 修复了导致动态创建Web跟踪URL无法正常工作的回归问题。 (NEO-20999)
-* 修复了现成投放报告的回归问题，该问题在导出到PDF时显示被截断。 (NEO-25757)
+* 修复了由于工作流中的计算字段受影响而导致该工作流失败的回归。(NEO-25194)
+* 修复了阻止动态创建 Web 跟踪 URL 正常工作的回归。(NEO-20999)
+* 修复了现成投放报告在导出到 PDF 时似乎已截断的回归问题。(NEO-25757)
 * 修复了部署向导中的崩溃问题。
-* 修复了一个问题，该问题可能会阻止优惠通知工作流在配置升级后正常工作。
+* 修复了在升级后可能阻止优惠通知工作流正常工作的问题。
 * iOS HTTP2 连接器已得到改进（第三方更新和错误管理）。(NEO-25904, NEO-25903)
-* catalina.properties中的jarToSkip列表已更新，以删除对不再使用的jar文件（iOS通知）的引用。
-* 修复了在放置后阻止投放准备的问题。
-* 在切换到[新序列ID机制](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)后，所有更新收件人表的Web应用程序都会在升级期间重新发布。
-* 修复了投放内容中的潜在XSS漏洞。 (NEO-17987, NEO-26073)
+* 更新了 catalina.properties 中的 jarToSkip 列表，以删除对不再使用的 jar 文件（iOS 通知）的引用。
+* 修复了在升级后阻止投放准备的问题。
+* 在切换到[新序列 ID 机制](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)后，所有更新收件人表的 Web 应用程序都会在升级后期间重新发布。
+* 修复了投放内容中的潜在 XSS 漏洞。(NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含活动用户档案监测、子域投放能力审核和 GPG 密钥管理。[了解详情](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含活动用户档案监测、子域投放能力审核和 GPG 密钥管理。[了解详情](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/orange_2.png) 版本 20.2.1 - 版本 9178 {#release-20-2-1-build-9178}
 
@@ -102,7 +102,7 @@ _2020 年 6 月 8 日_
  <tbody> 
   <tr> 
    <td> <p>泰国的《个人数据保护法》(PDPA) 是一项新的隐私法，旨在协调泰国的数据保护要求并使之现代化。 </p>
-   <p>2021年初，巴西的Lei Geral de Proteção de Dados(LGPD)将对巴西所有收集或处理个人数据的公司有效。</p>
+   <p>巴西的《通用数据保护法》(LGPD) 将从 2021 年初生效，适用于巴西境内所有收集或处理个人数据的公司。</p>
    <p>这些法规适用于为居住在这些国家/地区的数据主体持有数据的 Adobe Campaign 客户。除了 Campaign 中已有的隐私权功能（包括同意管理、数据保留设置和用户角色），我们还将利用此机会加入其他功能，以帮助您做好 PDPA 和 LGPD 的准备：</p>
    <ul> 
      <li><p>访问权和删除权：我们正在努力利用为 GDPR 和 CCPA 添加的功能。<a href="https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html">阅读更多</a></p></li> 
@@ -156,7 +156,7 @@ Campaign 现在支持以下系统：
 
 * HTTP 代理连接的管理已得到改进。[了解详情](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)。
 
-* **[!UICONTROL Javascript Code]**&#x200B;和&#x200B;**[!UICONTROL Advanced Javascript Code]**&#x200B;工作流活动中的新选项，可在限制后停止执行。 默认值为1小时。 [了解详情](../../workflow/using/sql-code-and-javascript-code.md#javascript-code)。
+* **[!UICONTROL Javascript Code]**&#x200B;和&#x200B;**[!UICONTROL Advanced Javascript Code]**&#x200B;工作流活动中新增可在达到限制后停止执行的选项。默认值为 1 小时。[了解详情](../../workflow/using/sql-code-and-javascript-code.md#javascript-code)。
 
 **其他更改**
 
@@ -238,7 +238,7 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 * 修复了在以高频率发送时可能影响推送通知的问题。(NEO-20516)
 * 修复了导致跟踪数据包含重复的问题，即使跟踪日志没有。(NEO-20040)
 * 修复了在解决跟踪服务器通信失败后导致发送重复事务电子邮件的问题。(NEO-23640)
-* 修复了从跟踪URL重定向时删除编码参数值（对日语字符的影响）的问题。 (NEO-25637)
+* 修复了从跟踪 URL 重定向时删除编码参数值的问题（影响日语字符）。(NEO-25637)
 * 修复了在比较浮点数时查询无法工作的问题。(NEO-23243)
 * 修复了在重新启动工作流后，**修改者**&#x200B;列内容无法显示的问题。(NEO-23035)
 * 修复了从第二个容器下载日志时导致跟踪技术工作流失败的问题。(NEO-23159)
@@ -248,7 +248,7 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 * 修复了通过&#x200B;**脚本**&#x200B;工作流活动中的&#x200B;**由脚本计算**&#x200B;选项创建投放时，其他活动字段存在的一个问题。(NEO-20609)
 * 修复了导致无法在数据库清理任务中删除幽灵工作流的问题。
 * 修复了导致&#x200B;**计费（活动用户档案）**&#x200B;技术工作流失败的问题。(NEO-19777)
-* 修复了使用ACS连接器功能时导致无法连接到Campaign Standard实例的回归问题（FOH/FOH2连接管理不正确）。 (NEO-23433)
+* 修复了使用 ACS 连接器功能时阻止连接到 Campaign Standard 实例的回归问题（FOH/FOH2 连接管理不正确）。(NEO-23433)
 * 修复了导致无法在 Hadoop 表中多列的主键上创建模式扩展的问题。(NEO-17390)
 * 修复了可能导致无法从 URL 加载 WSDL 文件的&#x200B;**加载 (SOAP)**&#x200B;活动中的一个问题。(NEO-16924)
 * 修复了在负载平衡多个活动工作流服务器时，导致无法执行&#x200B;**无条件停止**&#x200B;的问题。(NEO-19556)
@@ -262,4 +262,4 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 * 修复了在单击 Line 邮件中的 Web 应用程序链接时可能显示错误邮件的问题。
 * 修复了在运行清理工作流后删除&#x200B;**增量查询**&#x200B;活动历史记录的问题。
 * 修复了创建中间源外部帐户时缺少 NmsMidSourcing_LastBroadLog_&lt;InternalName> 选项的问题。
-* 修复了数据库连接上的回归问题，该问题导致Web服务器由于数据库编码问题而不断重新启动。 这可能导致过度消费。 (NEO-23264)
+* 修复了数据库连接上的导致 Web 服务器由于数据库编码问题而不断重新启动的回归问题。这可能会造成过度使用。(NEO-23264)
