@@ -7,43 +7,43 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2017'
 ht-degree: 2%
 
 ---
 
 
-# 构建升级常见问题解答 {#build-upgrade-faq}
+# 构建升级常见问题解答{#build-upgrade-faq}
 
-Adobe Campaign 会定期更新。如果您熟悉我们发布的发 [行说明](../../rn/using/rn-overview.md)，您可能会意识到，平均每年都会发布2/3个附带新功能、改进和修复的次要版本。 此外，我们还定期发布仅包含累积修复的内部版本。这种定期更新旨在让您掌握最新、最大限度的信息，使您的环境完全安全，并显着改进您使用我们产品的体验。
+Adobe Campaign 会定期更新。如果您熟悉我们发布的[发行说明](../../rn/using/rn-overview.md)，您可能会意识到，平均2/3个附带新功能、改进和修复的次要版本每年都会发布。 此外，我们还定期发布仅包含累积修复的内部版本。这种定期更新旨在让您掌握最新、最大限度的信息，使您的环境完全安全，并显着改进您使用我们产品的体验。
 
 客户运行最新版Adobe Campaign至关重要。 它还允许Adobe在遇到问题时更高效地提供帮助——在旧版本上识别、重现和修复问题通常需要更多时间，更不用说您可能遇到的某些问题很可能已在最近版本中得到修复。
 
-因此，我们开始 [了金本位项目](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html) ，与我们的客户合作，以主动、定期地升级他们的环境。
+因此，我们启动了[金本位](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)项目，与我们的客户合作，主动、定期地升级他们的环境。
 
 ## 什么是内部版本升级？
 
 “构建升级”是指将Adobe Campaign Classic软件更新为最新的安全构建号，但仍处于相同的主／次要构建级别。 例如：Campaign Classicv7内部版本9026至活动v7内部版本9032。
 
-在本节 [中了解更多](../../rn/using/rn-overview.md)。
+请阅读本节[了解更多信息。](../../rn/using/rn-overview.md)
 
 ## 最新版的Adobe Campaign Classic是什么？
 
-最新Campaign Classic版本（包括新增功能和文档）在最新发行说明中 [有详细说明](../../rn/using/latest-release.md)。
+最新的Campaign Classic版本（包括新功能和文档）详见最新的[发行说明](../../rn/using/latest-release.md)。
 
 ## 如何知道我运行的版本？
 
-从Adobe Campaign客户端控 **[!UICONTROL Help > About...]** 制台的菜单检查您的版本。 该 **[!UICONTROL About]** 框包含有关您为控制台和服务器运行的版本和版本的详细信息。
+从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Help > About...]**&#x200B;菜单检查您的版本。 **[!UICONTROL About]**&#x200B;框包含有关您正在为控制台和服务器运行的版本和版本的详细信息。
 
-在本节 [中了解更多](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
+请阅读本节[了解更多信息。](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
 ## 构建状态意味着什么？
 
 从Campaign Classic19.2开始，状态将关联到每个生成。
 
-在本节 [中了解更多](../../rn/using/rn-overview.md)。
+请阅读本节[了解更多信息。](../../rn/using/rn-overview.md)
 
 ## 内部版本升级与版本升级是否相同？
 
@@ -83,7 +83,7 @@ Adobe在进行任何更改之前将备份您的系统。 但是，如果非生�
 
 1. 升级本身——生产环境已升级。 此阶段通常在几小时内执行。 对于非常复杂的环境，应该期望更长的停机时间。 在出现问题的事件下，定义并可以执行回滚策略。
 
-For more information, [refer to this document](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html).
+有关详细信息，[请参阅此文档](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)。
 
 ## 构建升级需要哪些资源？
 
@@ -96,15 +96,15 @@ For more information, [refer to this document](https://helpx.adobe.com/cn/campai
 
 ## 如何准备内部版本升级？
 
-在开发和暂存系统中，导出任何关键且必须保留的工作。 有关详细信息，请 [观看此视频操作方法](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)。
+在开发和暂存系统中，导出任何关键且必须保留的工作。 有关详细信息，请[观看此视频操作方法](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)。
 
 通过查看在实施结束时提供给您的团队的文档，更新您对运行手册（或咨询团队／合作伙伴）中开发的关键路径工作流和投放的了解。
 
 确定低流量或低流量时间是维护窗口的理想选择，因为它们对业务的影响最小。
 
-查看以 [下构建升级清单](#check-list) ，以及您的测试计划，并确保可以执行这些测试的资源在24-48小时内可用。 完成升级。
+查看我们的[在](#check-list)下构建升级清单以及您的测试计划，并确保能够执行这些测试的资源在24-48小时内可用。 完成升级。
 
-For more information, [refer to this document](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html).
+有关详细信息，[请参阅此文档](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)。
 
 ## 构建升级可以在晚上或在非工作时间执行吗？
 
@@ -136,7 +136,7 @@ For more information, [refer to this document](https://helpx.adobe.com/cn/campai
 
 ## 是否需要更新客户端控制台？
 
-是的。 客户端控制台必须与服务器实例位于相同的内部版本或更新的内部版本。 升级完成后，客户端控制台应提示您升级到最新版本，以确保它与服务器版本保持一致。
+是的。 客户端控制台必须与服务器实例位于同一版本上。 升级完成后，客户端控制台应提示您升级到最新版本，以确保它与服务器版本保持一致。
 
 ## 回滚计划是什么？ 是否保留我的数据备份？
 
@@ -148,13 +148,13 @@ For more information, [refer to this document](https://helpx.adobe.com/cn/campai
 
 ## 升级后，我的系统上执行了哪些类型的测试？
 
-请参阅下面 [的构建升级清单](#check-list)。
+请参阅下面的[构建升级清单](#check-list)。
 
 ## 升级后，我必须执行哪类测试？
 
 开发和阶段环境是按顺序升级的，也是一起升级的，但升级生产实例之前需要签署。 这允许每个客户在签署对生产所做的任何更改之前进行彻底的测试。
 
-请参阅下 [面的列表构建升级清单](#check-list)。 客户应运行类似测试，并运行可能需要的其他环境。
+请参阅列表[在](#check-list)下构建升级清单。 客户应运行类似测试，并运行可能需要的其他环境。
 
 ## 我多久进行一次构建升级？
 
@@ -166,11 +166,11 @@ For more information, [refer to this document](https://helpx.adobe.com/cn/campai
 
 ## 要打开构建升级票证，应与谁联系？
 
-如果您在构建升级后遇到问题，请与 [Adobe客户服务联系](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客户关怀计划构建日期并打开构建升级相关票证。
+如果您在构建升级后遇到问题，请与[Adobe客户服务部门](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。 客户关怀计划构建日期并打开构建升级相关票证。
 
-通过帮助和支 [持选项了解更多Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+请阅读[Campaign Classic的帮助和支持选项](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)了解更多信息
 
-## 构建升级核对清单 {#check-list}
+## 构建升级清单{#check-list}
 
 ### 云消息服务器升级后核对清单
 
@@ -185,9 +185,12 @@ For more information, [refer to this document](https://helpx.adobe.com/cn/campai
 
 * 能否登录到服务器？ 检查活动客户端控制台是否工作正常，没有任何错误／警告弹出信息。
 * 升级后，请确保使用与构建版本相同的控制台版本。
-* 您是否有将数据插入活动库的Web应用程序？ 如果是，请运行它们并验证它们是否可以通过API插入新记录。
-* 能否成功发送测试电子邮件？ 使用已知模板创建新投放，将其发送到一个测试收件人，验证个性化，不明嫌犯链接，镜像页面所有工作。
-* 您的所有关键路径工作流都在运行吗？ 检查工作流，打开工作流日志，验证没有错误。
+* 您是否有将数据插入活动库的Web应用程序？ 如果是，请运行它们，然后
+验证他们是否可以通过API插入新记录。
+* 能否成功发送测试电子邮件？ 使用已知模板创建新投放，将其发送到
+一个测试收件人，验证个性化，不明嫌犯链接，镜像页面所有工作。
+* 您的所有关键路径工作流都在运行吗？ 检查工作流，打开工作流日志，验证
+没有错误。
 * 您的所有文件夹是否都存在、可见和可访问？ 浏览不同的文件夹并检查。
 所有内容都会显示和显示。
 * 您的投放是否在正确的时区内完成？
@@ -206,4 +209,4 @@ For more information, [refer to this document](https://helpx.adobe.com/cn/campai
 * [执行内部版本升级](../../production/using/build-upgrade.md)
 * [Campaign Classic发行说明](../../rn/using/rn-overview.md)
 * [Campaign Classic的帮助和支持选项](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
-* [金本位项目](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)
+* [金本位项目](https://helpx.adobe.com/campaign/kb/gold-standard.html)
