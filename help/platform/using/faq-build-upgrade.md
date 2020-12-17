@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2020'
 ht-degree: 2%
 
 ---
@@ -136,7 +136,7 @@ Adobe在进行任何更改之前将备份您的系统。 但是，如果非生�
 
 ## 是否需要更新客户端控制台？
 
-是的。 客户端控制台必须与服务器实例位于同一版本上。 升级完成后，客户端控制台应提示您升级到最新版本，以确保它与服务器版本保持一致。
+是的。 客户端控制台必须与服务器实例位于相同的内部版本或更新的内部版本。 升级完成后，客户端控制台应提示您升级到最新版本，以确保它与服务器版本保持一致。
 
 ## 回滚计划是什么？ 是否保留我的数据备份？
 
