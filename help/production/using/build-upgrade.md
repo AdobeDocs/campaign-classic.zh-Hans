@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2355'
 ht-degree: 0%
 
 ---
@@ -204,13 +204,12 @@ ht-degree: 0%
 
 ### 客户端控制台更新
 
-客户端控制台必须与服务器实例位于同一版本上。
-
 在安装Adobe Campaign应用程序服务器(nlserverweb)的计算机上，下载并复制文件：
 
 ```
 Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 ```
+
 
 下次连接客户端控制台时，将显示一个窗口通知用户有新更新的可用性，并优惠用户下载和安装该更新的可能性。
 
