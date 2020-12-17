@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: fa8e63051b4c8bbcfd4000a1e59fa6d91422149d
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2216'
 ht-degree: 98%
 
 ---
@@ -46,7 +46,6 @@ ht-degree: 98%
          + [常见问题](platform/using/common-questions.md)
          + [重要概念](platform/using/faq-key-concepts.md)
          + [内部版本升级](platform/using/faq-build-upgrade.md)
-         + [隐私](platform/using/privacy-faq.md)
          + [受众](platform/using/faq-audiences.md)
          + [设计各种邮件](platform/using/faq-designing.md)
          + [发送邮件](platform/using/faq-messages.md)
@@ -59,6 +58,7 @@ ht-degree: 98%
       + [隐私和同意](platform/using/privacy-and-recommendations.md)
       + [隐私管理](platform/using/privacy-management.md)
       + [隐私请求](platform/using/privacy-requests.md)
+      + [隐私常见问题解答](platform/using/privacy-faq.md)
    + 用户档案管理 {#profile-management}
       + [关于用户档案](platform/using/about-profiles.md)
       + [编辑用户档案](platform/using/editing-a-profile.md)
