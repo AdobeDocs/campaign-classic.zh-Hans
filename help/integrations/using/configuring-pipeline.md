@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 7353abfe07bc177d103c83c7f2a5d57d7fb415a3
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 在开始此配置之前，请检查您使用的是：
 
-* Adobe Campaign20.3或Gold Standard 11版最低
+* Adobe Campaign20.3版最低
 * Adobe Analytics Standard版
 
 您还需要：
