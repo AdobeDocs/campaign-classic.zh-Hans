@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 为Adobe Experience Cloud触发器配置AdobeI/O
-description: 了解如何为Adobe Experience Cloud触发器配置AdobeI/O
+title: 为 Adobe Experience Cloud 触发器配置 Adobe I/O
+description: 了解如何为Adobe Experience Cloud触发器配置Adobe I/O
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
@@ -10,23 +10,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 7353abfe07bc177d103c83c7f2a5d57d7fb415a3
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 0%
+source-wordcount: '423'
+ht-degree: 4%
 
 ---
 
 
-# Configuring Adobe I/O for Adobe Experience Cloud Triggers {#configuring-adobe-io}
+# 为 Adobe Experience Cloud 触发器配置 Adobe I/O {#configuring-adobe-io}
 
 >[!CAUTION]
 >
->如果您使用的是通过身份验证进行触发器集成的旧 **版本，则需要按如下所述移**&#x200B;动到AdobeI/O。 旧版身份验证模式将于2021年4月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>如果您使用的是通过身份验证进行触发器集成的旧版本，则&#x200B;**您需要移至Adobe I/O，如下所述**。 旧版身份验证模式将于2021年4月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 
 ## 先决条件{#adobe-io-prerequisites}
 
-此集成仅适用于 **开始Campaign Classic20.3版本**。
+此集成仅适用于从&#x200B;**Campaign Classic20.3和Gold Standard 11版本**&#x200B;开始。
 
 在开始此实施之前，请检查您具有：
 
@@ -35,12 +35,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您需要请求IMS组织的系统管理员权限，请按照本页中详细 [的过程](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) ，为所有产品用户档案提供此访问权限。
+>如果您需要请求IMS组织的系统管理员权限，请按照本页](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html)中详细的[过程为所有产品用户档案提供此访问权限。
 
 
-## 第1步：创建／更新AdobeI/O项目 {#creating-adobe-io-project}
+## 第1步：创建／更新Adobe I/O项目{#creating-adobe-io-project}
 
-1. 访问AdobeI/O，并与IMSorg的系统管理员一起登录。
+1. 访问Adobe I/O，并与IMSorg的系统管理员联系。
 
    >[!NOTE]
    >
@@ -50,37 +50,37 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果客户端ID为空，则可以直接 **[!UICONTROL Create a New project]** 在AdobeI/O中。
+   >如果您的客户端ID为空，您可以直接在Adobe I/O **[!UICONTROL Create a New project]**。
 
 1. 使用提取的客户端ID标识现有项目。 查找与上一步提取的客户端ID相同的现有项目。
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
-1. 选择 **[!UICONTROL + Add to Project]** 并选择 **[!UICONTROL API]**。
+1. 选择&#x200B;**[!UICONTROL + Add to Project]**&#x200B;并选择&#x200B;**[!UICONTROL API]**。
 
    ![](assets/do-not-localize/adobe_io_1.png)
 
-1. In the **[!UICONTROL Add an API]** window, select **[!UICONTROL Adobe Analytics]**.
+1. 在&#x200B;**[!UICONTROL Add an API]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Adobe Analytics]**。
 
    ![](assets/do-not-localize/adobe_io_2.png)
 
-1. 选择 **[!UICONTROL Service Account (JWT)]** 身份验证类型。
+1. 选择&#x200B;**[!UICONTROL Service Account (JWT)]**&#x200B;作为身份验证类型。
 
    ![](assets/do-not-localize/adobe_io_3.png)
 
-1. 如果您的客户端ID为空，则选 **[!UICONTROL Generate a key pair]** 择以创建公共和专用密钥对。
+1. 如果您的客户端ID为空，请选择&#x200B;**[!UICONTROL Generate a key pair]**&#x200B;以创建公共和专用密钥对。
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
-1. 上传您的公钥并单击 **[!UICONTROL Next]**。
+1. 上传公钥，然后单击&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. 选择名为Analytics-&lt;组 **织名称>的产品用户档案** ，然后单击 **[!UICONTROL Save configured API]**。
+1. 选择名为&#x200B;**Analytics-&lt;组织名称>**&#x200B;的产品用户档案，然后单击&#x200B;**[!UICONTROL Save configured API]**。
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
-1. 从您的项目中，选 **[!UICONTROL Service Account (JWT)]** 择并复制以下信息：
+1. 从您的项目中，选择&#x200B;**[!UICONTROL Service Account (JWT)]**&#x200B;并复制以下信息：
    * **[!UICONTROL Client ID]**
    * **[!UICONTROL Client Secret]**
    * **[!UICONTROL Technical account ID]**
@@ -88,9 +88,9 @@ ht-degree: 0%
 
    ![](assets/do-not-localize/adobe_io_7.png)
 
-## 第2步：在Adobe Campaign中添加项目凭据 {#add-credentials-campaign}
+## 第2步：在Adobe Campaign{#add-credentials-campaign}中添加项目凭据
 
-要在Adobe Campaign中添加项目凭据，请在Adobe Campaign实例的所有容器上以“neolane”用户身份运行以下命令，以将凭据插入 **[!UICONTROL Technical Account]** 实例配置文件中。
+要在Adobe Campaign中添加项目凭据，请在Adobe Campaign实例的所有容器上以“neolane”用户身份运行以下命令，以将&#x200B;**[!UICONTROL Technical Account]**&#x200B;凭据插入实例配置文件。
 
 ```
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID[/Client_Secret[/Base64_encoded_Private_Key]]
@@ -100,9 +100,9 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 >
 >您应以base64 UTF-8格式对私钥进行编码。 在编码新行之前，请记住从密钥中删除新行，但私钥除外。 私钥必须与用于创建集成的私钥相同。
 
-## 第3步：更新管道化标签 {#update-pipelined-tag}
+## 第3步：更新管道标记{#update-pipelined-tag}
 
-要更 [!DNL pipelined] 新标记，您需要将身份验证类型更新为配置文件 **config-&lt; instance-name >.xml中的AdobeI/O项目** ，如下所示：
+要更新[!DNL pipelined]标记，您需要将验证类型更新到配置文件&#x200B;**config-&lt; instance-name >.xml**&#x200B;中的Adobe I/O项目，如下所示：
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
