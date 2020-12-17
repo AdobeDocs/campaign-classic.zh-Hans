@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2368'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 本节将为您提供有关升级过程以及识别和解决冲突的步骤的深入演练。
 
-建设升级必须谨慎进行，其影响必须事先充分考虑，程序必须高度规范。 要确保升级成功，请确保只有专家用户才能执行下面列出的步骤。 此外，我们强烈建议在开始任何升级之 [前与Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) “客户服务”联系。
+建设升级必须谨慎进行，其影响必须事先充分考虑，程序必须高度规范。 要确保升级成功，请确保只有专家用户才能执行下面列出的步骤。 此外，我们强烈建议在开始任何升级之前先与[Adobe客户服务中心](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)取得联系。
 
 需要以下先决条件：
 
@@ -27,16 +27,16 @@ ht-degree: 0%
 * 系统和服务器端知识
 * 管理权限
 
-您可以在以下部分中找到更多信息： [更新Adobe Campaign](../../production/using/upgrading.md)[,](../../migration/using/about-migration.md)迁移到新版本。
+您可以在以下部分中找到更多信息：[更新Adobe Campaign](../../production/using/upgrading.md)、[迁移到新版本](../../migration/using/about-migration.md)。
 
-对于托管和混合实例，您必须向Adobe技术运营团队申请内部版本升级。 有关此问题的详细信息，请参阅本页底部的“常见问题”部分。 另请查阅构建 [升级常见问题解答](../../platform/using/faq-build-upgrade.md)。
+对于托管和混合实例，您必须向Adobe技术运营团队申请内部版本升级。 有关此问题的详细信息，请参阅本页底部的“常见问题”部分。 另请查阅[内部升级常见问题解答](../../platform/using/faq-build-upgrade.md)。
 
 ## 准备升级
 
 ![](assets/do-not-localize/icon_planification.png)
 
 在开始内部版本升级之前，您必须按照下面的说明执行完整准备。
-系统准备就绪后，构建升级至少 **需要** 2小时。
+系统准备好升级后，构建升级至少需要**** 2小时。
 
 构建升级过程需要以下资源：
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 1. 分发Adobe和客户员工的联系信息。
 1. 对于托管实例：Adobe和客户员工将协调升级时间和执行人员。
 1. 对于预置实例：客户员工负责整个流程——如果需要在测试自定义工作流和投放逻辑方面提供协助，应引入咨询服务。
-1. 确定并确认要升级到的Adobe Campaign版本——请参阅 [Adobe Campaign Classic发行说明](../../rn/using/rn-overview.md)。
+1. 确定并确认要升级到的Adobe Campaign版本——请参阅[Adobe Campaign Classic发行说明](../../rn/using/rn-overview.md)。
 1. 确认拥有升级可执行文件。
 
 ### 关键人物
@@ -82,11 +82,11 @@ ht-degree: 0%
 
 1. 为源目标和环境的所有实例执行数据库的完全备份。
 
-1. 获取最新版服务 [器配置文件](../../installation/using/the-server-configuration-file.md)。
+1. 获取[服务器配置文件](../../installation/using/the-server-configuration-file.md)的最新版本。
 
 1. 下载最新版本。 [进一步了解下载中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)。
 
-在开始内部版本升级之 [前，您还需要了解](../../installation/using/command-lines.md) 所有有用的命令行：
+在开始内部版本升级之前，您还需要了解所有[有用的命令行](../../installation/using/command-lines.md):
 
 * **nlserver pdump**:列表运行流程
 * **nlserver pdump -who**:列表活动客户端会话
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/icon_process.png)
 
-以下程序仅由预置 **型客户执行** 。 对于托管客户，托管团队会负责托管。 要将Adobe Campaign更新到新版本，详细过程如下所述。
+以下步骤仅由&#x200B;**内部部署**&#x200B;客户执行。 对于托管客户，托管团队会负责托管。 要将Adobe Campaign更新到新版本，详细过程如下所述。
 
 ### 重复环境
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 1. 在目标环境的所有实例中恢复这些副本。
 
-1. 在启动 **** 目标环境前，在上运行nms:freezeInstance.js烧灼脚本。 这将阻止所有进程与外部交互：日志、跟踪、投放、活动工作流等。
+1. 在启动目标环境前，运行&#x200B;**nms:freezeInstance.js**&#x200B;烧灼脚本。 这将阻止所有进程与外部交互：日志、跟踪、投放、活动工作流等。
 
    ```
    nlserverjavacsriptnms:freezeInstance.js–instance:<dev> -arg:run
@@ -121,7 +121,7 @@ ht-degree: 0%
 
 1. 检查烧灼，如下所示：
 
-   * 检查唯一的投放部件是ID设置为0的 **部件**:
+   * 检查唯一的投放部件是ID设置为&#x200B;**0**&#x200B;的部件：
 
       ```
       SELECT * FROM neolane.nmsdeliverypart;
@@ -146,14 +146,14 @@ ht-degree: 0%
 
 1. 关闭以下服务：
 
-   * Web服务(IIS): **iisreset /stop**
-   * Adobe Campaign服务： **net stop nlserver6**
+   * Web服务(IIS):**iisreset /stop**
+   * Adobe Campaign服务：**net stop nlserver6**
 
    >[!NOTE]
    >
    >确保重定向服务器(webmdl)已停止，以便IIS使用的nlsrvmod.dll文件可以替换为新版本。
 
-1. 通过运行nlserver pdump命令验证没有任务 **处于活动状态** 。 如果没有任务，则输出应类似于以下内容：
+1. 通过运行&#x200B;**nlserver pdump**&#x200B;命令验证没有任务处于活动状态。 如果没有任务，则输出应类似于以下内容：
 
    ```
    C:\<installation path>\bin>nlserverpdump HH:MM:SS > Application Server for Adobe Campaign version x.x (build xxx) dated xx/xx/xxxx No tasks
@@ -163,21 +163,21 @@ ht-degree: 0%
 
 ### 升级Adobe Campaign服务器应用程序
 
-1. 运行 **Setup.exe文件** 。 如果需要下载此文件，请访 [问下载中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)。
+1. 运行&#x200B;**Setup.exe**&#x200B;文件。 如果需要下载此文件，请访问[下载中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)。
 
-1. 选择安装模式： **更新** 或 **修复**。
+1. 选择安装模式：**更新**&#x200B;或&#x200B;**修复**。
 
-1. 单击“ **下一步**”。
+1. 单击&#x200B;**下一步**。
 
-1. 单击 **完成**:安装项目将复制新文件。
+1. 单击&#x200B;**完成**:安装项目将复制新文件。
 
-1. 操作完成后，单击“完 **成”**。
+1. 操作完成后，单击&#x200B;**完成**。
 
 ### 同步资源
 
 1. 打开命令行。
 
-1. 运 **行nlserver config -postupgrade -allinstances** ，以执行以下操作：
+1. 运行&#x200B;**nlserver config -postupgrade -allinstances**&#x200B;以执行以下操作：
 
    * 同步资源
    * 更新模式
@@ -199,17 +199,18 @@ ht-degree: 0%
 
 需要重新启动以下服务：
 
-* Web服务(IIS): **issreset /开始**
-* Adobe Campaign服务： **网络开始nlserver6**
+* Web服务(IIS):**issreset /开始**
+* Adobe Campaign服务：**净开始nlserver6**
 
 ### 客户端控制台更新
+
+客户端控制台必须与服务器实例位于同一版本上。
 
 在安装Adobe Campaign应用程序服务器(nlserverweb)的计算机上，下载并复制文件：
 
 ```
 Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 ```
-
 
 下次连接客户端控制台时，将显示一个窗口通知用户有新更新的可用性，并优惠用户下载和安装该更新的可能性。
 
@@ -245,7 +246,7 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 
 在中间源环境中，您需要执行以下其他步骤才能进行升级：
 
-1. 联 [系Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ，协调中间源服务器的升级。
+1. 联系[Adobe客户服务中心](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)协调中间源服务器的升级。
 1. 通过运行测试链接验证版本是否已更新。 例如：
 
    ```
@@ -276,7 +277,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 如果警告涉及资源冲突，则需要用户注意才能解决该问题。
 
-postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log文件包含同步结果** 。 默认情况下，它位于以下目录中： **installationDirectory/var/instanceName/postupgrade**。 错误和警告由错误和警告属性指示。
+**postupgrade_ServerVersionNumber_TimeOfPostupgrade.log**&#x200B;文件包含同步结果。 默认情况下，它位于以下目录中：**installationDirectory/var/instanceName/postupgrade**。 错误和警告由错误和警告属性指示。
 
 ### 分析冲突
 
@@ -312,10 +313,10 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log文件包含同步结果
 
 要解决冲突，请应用以下流程：
 
-1. 在Adobe Campaign资源管理器中，转 **到“管理”>“配置”>“包管理”>“编辑冲突**”。
+1. 在Adobe Campaign资源管理器中，转至&#x200B;**管理>配置>包管理>编辑冲突**。
 
 1. 在列表中选择要解决的冲突。
-有三种解决冲突的方法： **接受新版本**、 **保留当前版本**、合 **并代码（并声明为已解决）**、 **忽略冲突（不推荐）**。
+有三种解决冲突的方法：**接受新版本**、**保留当前版本**、**合并代码（并声明为已解析）**、**忽略冲突（不推荐）**。
 
 **我何时可以接受新版本？**
 
@@ -333,7 +334,7 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log文件包含同步结果
 * 只能合并表单、报表和Web应用程序。
 * 某些次要合并可以在不了解代码的情况下进行解决。
 * 更复杂的合并应由具备相应技能和能力的人进行。
-* 请参 [阅执行合并](#perform-a-merge)。
+* 请参阅[执行合并](#perform-a-merge)。
 
 **如果我忽视冲突呢？**
 
@@ -352,7 +353,7 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log文件包含同步结果
 1. 轻松合并：自定义元素和新元素很小且互不相关，无需编码。
 1. 无更改：接受新版本，只更改上次更新日期，只更改注释、制表符、空格或新行。 示例：意外保存。
 1. 微不足道的更改：只更改了一行。 示例：xpathToLoad
-1. 复杂合并：需要编码时。 需要开发技能。 请参 [阅复杂合并](#complex-merges)。
+1. 复杂合并：需要编码时。 需要开发技能。 请参阅[复杂合并](#complex-merges)。
 
 #### 如何合并？
 
@@ -364,8 +365,8 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log文件包含同步结果
 #### 在哪里可以找到代码？
 
 1. 内置代码存储在datakit文件夹的XML文件中。 查找与冲突对象匹配的XML文件。 示例：installationDirectory\datakit\nms\fra\form\recipient.xml
-1. 检索原始版本：通过下 [载中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) ，或其他未升级的产品安装。
-1. 检索新版本：或客 [户安](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) 装的文件。
+1. 检索原始版本：通过[下载中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)或其他未升级的产品安装。
+1. 检索新版本：通过[下载中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)或客户安装的文件。
 1. 检索自定义版本：从活动客户端中检索对象的源代码。
 
 ### 如何进行差异比较？
@@ -384,9 +385,9 @@ postupgrade_ **ServerVersionNumber_TimeOfPostupgrade.log文件包含同步结果
 
 如果选择手动解决冲突，请按如下步骤继续：
 
-1. 在窗口的下半部分中，搜索 **_conflict_string_** ，以查找存在冲突的实体。 随新版本一起安装的实体包含新参数，与先前版本匹配的实体包含自定义参数。
-1. 删除您不想保留的版本。 删除 **_要保留的实体_** conflict_argument字符串。
-1. 转到已解决的冲突。 单击“操 **作** ”图标，然 **后选择“声明为已解析”**。
+1. 在窗口的下半部分，搜索&#x200B;**_conflict_string_**&#x200B;以查找存在冲突的实体。 随新版本一起安装的实体包含新参数，与先前版本匹配的实体包含自定义参数。
+1. 删除您不想保留的版本。 删除要保留的实体的&#x200B;**_conflict_argument_**&#x200B;字符串。
+1. 转到已解决的冲突。 单击&#x200B;**操作**&#x200B;图标，然后选择&#x200B;**声明为已解析**。
 1. 保存更改：冲突现已解决。
 
 #### 复杂合并{#complex-merges}
