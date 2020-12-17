@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: a399adc47e4676fe2d001924c62019e829eea403
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 97%
+source-wordcount: '808'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 ## 关键术语 {#key-terms}
 
-### 有关隐私的关键术语有哪些？
+**有关隐私的关键术语有哪些？**
 
 以下所列项目链接到与 Adobe Campaign 中的隐私和同意相关的关键术语和概念：
 
@@ -32,7 +32,7 @@ ht-degree: 97%
 
 ## 隐私法规就绪性 {#privacy-regulations-readiness}
 
-### Adobe Campaign 关于遵守最新隐私法规的建议是什么？
+**Adobe Campaign 关于遵守最新隐私法规的建议是什么？**
 
 Adobe 不提供法律建议。您应与您自己的法律顾问合作，以确保其采取所有必要措施为 GDPR、CCPA、PDPA、LGPD 或任何其他适用法规做准备。
 
@@ -68,7 +68,7 @@ Adobe 不提供法律建议。您应与您自己的法律顾问合作，以确�
 
 ## 保持用户参与度 {#preserve-user-engagement}
 
-### 数据控制者如何在获得同意的同时对用户参与度影响最小？
+**数据控制者如何在获得同意的同时对用户参与度影响最小？**
 
 在需要针对特定营销活动获得同意的情况下，消费者同意需要有效（即，无“沉默即同意”框或预选框）、未捆绑，并且不能有条件地提供服务。
 
@@ -78,7 +78,7 @@ Adobe 不提供法律建议。您应与您自己的法律顾问合作，以确�
 
 ## 管理同意 {#manage-consent}
 
-### 数据控制者如何能够在 Adobe Campaign 中管理同意？
+**数据控制者如何能够在 Adobe Campaign 中管理同意？**
 
 Adobe Campaign 已经提供通过自定义数据字段或通过一个或多个服务在比大多数营销人员所使用更多的级别管理同意的功能。
 
@@ -88,7 +88,7 @@ Adobe Campaign 已经提供通过自定义数据字段或通过一个或多个�
 
 ## 数据删除 {#data-deletion}
 
-### 数据控制者可以删除 Adobe Campaign 中的哪些数据来响应数据主体的客户请求？
+**数据控制者可以删除 Adobe Campaign 中的哪些数据来响应数据主体的客户请求？**
 
 与数据主体关联的所有数据都将删除，包括现成表格和自定义表格。
 
@@ -96,21 +96,19 @@ Adobe Campaign 已经提供通过自定义数据字段或通过一个或多个�
 
 作为数据控制者，您可以选择通过更改数据模式中定义的链接的完整性来自定义此数据（例如，如果您有业务理由不删除某些数据）。
 
-### 删除投放和跟踪日志后报告会受到什么影响？
+**删除投放和跟踪日志后报告会受到什么影响？**
 
 Adobe Campaign 中的报告基于根据投放和跟踪日志中的汇总数据计算所得的指标。因此，删除个别日志应当不会影响报告中显示的指标。
 
 ## 重新导入数据 {#re-import-data}
 
-### 我是否需要注意在以后某个日期可能重新导入数据？
-
-在 Adobe Campaign 中，通常从外部数据源上传记录。
+**在 Adobe Campaign 中，通常从外部数据源上传记录。我是否需要注意在以后某个日期可能重新导入数据？**
 
 作为数据控制者，您将需要确保在收到删除请求时，从所有系统中删除有关数据主体的所有必要数据。
 
 ## 再次选择加入 {#opt-in-again}
 
-**数据主体(其数据已从Adobe Campaign中擦除)是否可选择加入以稍后再次？**
+**其数据已从 Adobe Campaign 中擦除的数据主体是否可以稍后再次选择加入？**
 
 数据主体可能再次选择加入，或者在从 Adobe Campaign 中删除其数据后添加为新收件人。
 
