@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: fa8e63051b4c8bbcfd4000a1e59fa6d91422149d
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '3668'
-ht-degree: 98%
+source-wordcount: '3660'
+ht-degree: 99%
 
 ---
 
@@ -26,8 +26,6 @@ ht-degree: 98%
 投放监测科已重组为专题。 [阅读更多](../../delivery/using/about-delivery-monitoring.md)
 
 在如何向投放日志添加发送方的IP地址方面已添加一个用例。 [阅读更多](../../delivery/using/delivery-dashboard.md#use-case)
-
-隐私常见问题解答已移至[此部分](../../platform/using/privacy-faq.md)。
 
 ## 2020 年 11 月{#nov-2020}
 
