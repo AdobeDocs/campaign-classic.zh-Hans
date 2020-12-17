@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 96%
+source-wordcount: '429'
+ht-degree: 100%
 
 ---
 
@@ -44,8 +44,6 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 ## 建议{#recommendations}
 
 为确保配置稳定，建议您在同一客户端配置上运行的所有服务器上安装相同的稳定内部版本。
-
-此外，客户端控制台应与服务器实例位于同一版本。
 
 要使您的实施保持为最新，请确保针对每个新版本阅读[已弃用和已删除的功能](../../rn/using/deprecated-features.md)和[兼容性矩阵](../../rn/using/compatibility-matrix.md)页面。
 
