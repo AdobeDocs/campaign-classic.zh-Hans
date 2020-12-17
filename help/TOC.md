@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+source-git-commit: fa8e63051b4c8bbcfd4000a1e59fa6d91422149d
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 97%
+source-wordcount: '2215'
+ht-degree: 98%
 
 ---
 
@@ -46,6 +46,7 @@ ht-degree: 97%
          + [常见问题](platform/using/common-questions.md)
          + [重要概念](platform/using/faq-key-concepts.md)
          + [内部版本升级](platform/using/faq-build-upgrade.md)
+         + [隐私](platform/using/privacy-faq.md)
          + [受众](platform/using/faq-audiences.md)
          + [设计各种邮件](platform/using/faq-designing.md)
          + [发送邮件](platform/using/faq-messages.md)
@@ -58,7 +59,6 @@ ht-degree: 97%
       + [隐私和同意](platform/using/privacy-and-recommendations.md)
       + [隐私管理](platform/using/privacy-management.md)
       + [隐私请求](platform/using/privacy-requests.md)
-      + [隐私常见问题解答](platform/using/privacy-faq.md)
    + 用户档案管理 {#profile-management}
       + [关于用户档案](platform/using/about-profiles.md)
       + [编辑用户档案](platform/using/editing-a-profile.md)
@@ -278,7 +278,7 @@ ht-degree: 97%
       + [跟踪 Web 应用程序](web/using/tracking-a-web-application.md)
       + [Web 应用程序跟踪退出](web/using/web-application-tracking-opt-out.md)
    + 编辑 HTML 内容 {#editing-html-content}
-      + [HTML编辑器入门](web/using/about-campaign-html-editor.md)
+      + [HTML 编辑器入门](web/using/about-campaign-html-editor.md)
       + [模板管理](web/using/template-management.md)
       + [内容编辑器界面](web/using/content-editor-interface.md)
       + [编辑内容](web/using/editing-content.md)
@@ -286,7 +286,7 @@ ht-degree: 97%
       + [创建登陆页面](web/using/creating-a-landing-page.md)
       + [用例：创建电子邮件投放](web/using/use-case--creating-an-email-delivery.md)
    + Web 窗体 {#web-forms}
-      + [Web表单入门](web/using/about-web-forms.md)
+      + [Web 窗体入门](web/using/about-web-forms.md)
       + [使用 Web 窗体模板](web/using/using-a-web-form-template.md)
       + [向 Web 窗体添加字段](web/using/adding-fields-to-a-web-form.md)
       + [Web 窗体中的静态元素](web/using/static-elements-in-a-web-form.md)
@@ -299,7 +299,7 @@ ht-degree: 97%
       + [翻译 Web 窗体](web/using/translating-a-web-form.md)
       + [用例：Web 窗体](web/using/use-cases--web-forms.md)
    + 在线调查 {#online-surveys}
-      + [开始使用调查](web/using/about-surveys.md)
+      + [调查入门](web/using/about-surveys.md)
       + [创建调查的关键步骤](web/using/getting-started-with-surveys.md)
       + [设计调查](web/using/building-a-survey.md)
       + [管理答案](web/using/managing-answers.md)
