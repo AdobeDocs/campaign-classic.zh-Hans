@@ -17,11 +17,11 @@ ht-degree: 2%
 
 # 模式版本示例{#examples-of-schemas-edition}
 
-## 扩展表 {#extending-a-table}
+## 扩展表{#extending-a-table}
 
-要扩展 **nms:收件人** 模式收件人表，请应用以下过程：
+要扩展&#x200B;**nms:收件人**&#x200B;模式收件人表，请应用以下过程：
 
-1. 使用以&#x200B;**下扩展模式**(cus:extension)创建：
+1. 使用以下数据创建扩展模式(**cus:extension**):
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -42,13 +42,13 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   在此示例中，添加索引字段(**保真度**)，并辅以 **枚举字段(** 收件人模式中已存在) ********&#x200B;的位置元素。
+   在本例中，添加索引字段（**保真度**），并且&#x200B;**location**&#x200B;元素(已存在于&#x200B;**nms:收件人**&#x200B;模式中)以枚举字段(**area**)进行补充。
 
    >[!IMPORTANT]
    >
-   >请记住添加 **extendedSchema** 属性以引用扩展模式。
+   >请记住添加&#x200B;**extendedSchema**&#x200B;属性以引用扩展模式。
 
-1. 检查扩展模式是 **nms:收件人** 模式，以及是否存在其他数据：
+1. 检查扩展模式是否为&#x200B;**nms:收件人**&#x200B;模式，并检查是否有其他数据：
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -84,7 +84,7 @@ ht-degree: 2%
    CREATE INDEX NmsRecipient_area ON NmsRecipient(sArea);
    ```
 
-## 链接的集合表 {#linked-collection-table}
+## 链接的集合表{#linked-collection-table}
 
 本节介绍如何创建链接到收件人表的基数为1-N的订单表。
 
@@ -103,7 +103,7 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-表类型是 **自动** 的，以便创建自动生成的主键，以便链接连接到收件人表。
+表类型为&#x200B;**autopk**，以创建自动生成的主键，以便链接连接到收件人表时使用。
 
 模式生成：
 
@@ -149,13 +149,13 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 >
 >在脚本末尾的SQL命令INSERT INTO允许您插入设置为0的标识符记录以模拟外连接。
 
-## 扩展表 {#extension-table}
+## 扩展表{#extension-table}
 
 扩展表允许您扩展已链接基数表1-1中现有表的内容。
 
 扩展表的目的是避免对表中支持的字段数的限制，或优化数据占用的空间（按需消耗）。
 
-创建扩展表模式&#x200B;**(cus:** feature):
+创建扩展表模式(**cus:feature**):
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -199,13 +199,13 @@ ALTER TABLE NmsRecipient ALTER COLUMN iFeatureId SET Default 0;
 CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 ```
 
-## 溢出表 {#overflow-table}
+## 溢出表{#overflow-table}
 
 溢出表是扩展表（基数1-1），但在溢出表的模式中填充到要扩展表的链接声明。
 
 溢出表包含要扩展的表的外键。 因此，不修改要扩展的表。 两个表之间的关系是要扩展的表的主键的值。
 
-创建溢出表模式&#x200B;**符(cus:** overflow):
+创建溢出表模式符(**cus:overflow**):
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -233,11 +233,11 @@ CREATE TABLE CusOverflow(iChildren NUMERIC(3) NOT NULL Default 0, iRecipientId I
 CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);  
 ```
 
-## 关系表 {#relationship-table}
+## 关系表{#relationship-table}
 
 关系表允许您将两个表与基数N-N链接。此表仅包含要链接的表的外键。
 
-组(nms:group)和收件人(**nms:收件人**)之间关系&#x200B;**表的示例**。
+组(**nms:group**)和收件人(**nms:收件人**)之间的关系表示例。
 
 关系表的源模式:
 
@@ -299,11 +299,11 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
-## 用例：将字段链接到现有引用表 {#uc-link}
+## 用例：将字段链接到现有引用表{#uc-link}
 
 此用例演示了如何使用现有引用表作为内置Adobe Campaign明细列表机制（enum、userEnum或dbEnum）的替代。
 
-您还可以在模式中将现有引用表用作明细列表。 这可以通过在表和引用表之间创建链接以及添加属性 **displayAsField=&quot;true&quot;来实现**。
+您还可以在模式中将现有引用表用作明细列表。 这可以通过在表和引用表之间创建链接和添加属性&#x200B;**displayAsField=&quot;true&quot;**&#x200B;来实现。
 
 在此示例中，引用表包含银行名称和标识符的列表:
 
@@ -321,7 +321,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-在使用此引用表的任何表中，定义链接并添 **加displayAsField=&quot;true&quot;属** 性。
+在使用此引用表的任何表中，定义链接并添加&#x200B;**displayAsField=&quot;true&quot;**&#x200B;属性。
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -333,7 +333,7 @@ xtkschema="xtk:srcSchema">
 
 * 要使其自动完成，必须在引用表中定义计算字符串。
 
-* 在链 **接定义中添加noDbIndex=** &quot;true&quot;属性，以防止Adobe Campaign对链接源表中存储的值创建索引。
+* 在链接定义中添加&#x200B;**noDbIndex=&quot;true&quot;**&#x200B;属性，以防止Adobe Campaign在链接的源表中存储的值上创建索引。
 
 ## 相关主题
 
