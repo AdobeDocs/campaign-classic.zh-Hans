@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 管道监控 {#pipeline-monitoring}
 
-状 [!DNL pipelined] 态Web服务提供有关进程状态的 [!DNL pipelined] 信息。
+[!DNL pipelined]状态Web服务提供有关[!DNL pipelined]进程状态的信息。
 
 它可以使用浏览器手动访问，也可以通过监视应用程序自动访问。
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ![](assets/triggers_8.png)
 
-## 指标 {#indicators}
+## 指示器{#indicators}
 
 此部分列表状态Web服务中的指示器。
 
@@ -42,7 +42,7 @@ ht-degree: 1%
    * next offsets-flush:等到下一批完成时。
    * processed-since-last-flush:上一批处理的触发器数。
 * 路由
-   * 触发器：已检索触发器列表。 在选项中 [!DNL pipelined] 配置。
+   * 触发器：已检索触发器列表。 在[!DNL pipelined]选项中配置。
 * 统计
    * average-pointer-flush-time-ms:一批触发器的平均处理时间。
    * average-trigger-processing-time-ms:分析触发器数据所用的平均时间。
@@ -72,7 +72,7 @@ ht-degree: 1%
    * retry-validity-duration-ms:从时间处理开始的持续时间将重试，直到消息被丢弃。
    * 管道消息报告
 
-## 管道消息报告 {#pipeline-report}
+## 管道消息报告{#pipeline-report}
 
 此报告显示过去五天内每小时的消息数。
 
