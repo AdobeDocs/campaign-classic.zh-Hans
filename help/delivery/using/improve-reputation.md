@@ -26,13 +26,13 @@ ht-degree: 2%
 * 在自动导入过程中要注意
 * 用户档案应排序到不同的文件夹
 
-隔离管理在本节 [中介绍](../../delivery/using/understanding-quarantine-management.md)。
+隔离管理显示在[此部分](../../delivery/using/understanding-quarantine-management.md)中。
 
 在下面，您将找到有关重复和隔离管理的详细信息。
 
 您可以按IP地址监视已发送的电子邮件量。 需要模式扩展。 您需要扩展广播表以添加“公共标识符”，并创建一个工作流以提取和显示数据。 如果需要，请与Adobe联系。
 
-## 重复 {#duplicates}
+## 重复{#duplicates}
 
 拥有重复电子邮件地址可能会产生多种后果：
 
@@ -50,8 +50,8 @@ ht-degree: 2%
 
 同样，在不同分区之间的重复是正常的情况。 例如，当为第三方或不同的公司实体发送时，出于不同原因，同一人成为收件人符合逻辑。 但是，在同一分区内查找重复很少是正常的。
 
-## 隔离 {#quarantines}
+## 隔离{#quarantines}
 
 Adobe Campaign 管理了一个隔离地址列表。在投放分析中，默认情况下将排除其地址被隔离的收件人:他们不是目标。 可以隔离电子邮件地址，例如，当收件箱已满或地址不存在时。 在所有情况下，隔离均符合下面详细介绍的具体规则。
 
-隔离管理在本节 [中介绍](../../delivery/using/understanding-quarantine-management.md)。
+隔离管理显示在[此部分](../../delivery/using/understanding-quarantine-management.md)中。
