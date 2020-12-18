@@ -9,8 +9,8 @@ topic-tags: editing-schemas
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 2%
 
 一些客户需要市场营销用户才能访问数据记录，但不希望他们查看个人身份信息(PII)，如名字、姓或电子邮件地址。 Adobe Campaign提出了一种保护隐私和防止活动运营商滥用数据的方法。
 
-## 实施 {#implementation}
+## 实现{#implementation}
 
-可以应用于任何元素或属性的新属性已添加到模式中，它补充了现有属性 **[!UICONTROL visibleIf]** 。 此属性为： **[!UICONTROL accessibleIf]** . 当包含与当前用户上下文相关的XTK表达式时，它可以利 **[!UICONTROL HasNamedRight]** 用或 **[!UICONTROL $(login)]** （例如）。
+可以应用于任何元素或属性的新属性已添加到模式中，它补充了现有属性&#x200B;**[!UICONTROL visibleIf]**。 此属性为：**[!UICONTROL accessibleIf]**。 当包含与当前用户上下文相关的XTK表达式时，它可以利用&#x200B;**[!UICONTROL HasNamedRight]**&#x200B;或&#x200B;**[!UICONTROL $(login)]**，例如。
 
 您可以找到收件人模式扩展的示例，它在下面显示了此用法：
 
@@ -42,8 +42,8 @@ ht-degree: 2%
 
 主要属性有：
 
-* **[!UICONTROL visibleIf]** :隐藏元数据中的字段，因此无法在模式视图、列选择或表达式生成器中访问这些字段。 但这不会隐藏任何数据，如果字段名称是在表达式中手动输入的，则值将显示出来。
-* **[!UICONTROL accessibleIf]** :隐藏数据（用空值替换它），使其免受结果查询。 如果visibleIf为空，则得到的表达式与 **[!UICONTROL accessibleIf]** 。
+* **[!UICONTROL visibleIf]** :隐藏元数据中的字段，因此无法在模式视图、列选择或表达式生成器中访问这些字段。但这不会隐藏任何数据，如果字段名称是在表达式中手动输入的，则值将显示出来。
+* **[!UICONTROL accessibleIf]** :隐藏数据（用空值替换它），使其免受结果查询。如果visibleIf为空，则它获得与&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的表达式。
 
 以下是在活动中使用此属性的后果：
 
@@ -58,7 +58,7 @@ ht-degree: 2%
 
 ## 建议{#recommendations}
 
-在每个投放中，电子邮件地址都被复制到 **[!UICONTROL broadLog]** 和表中 **[!UICONTROL forecastLog]** :因此，这些字段也需要得到保护。
+在每个投放中，电子邮件地址被复制到&#x200B;**[!UICONTROL broadLog]**&#x200B;和&#x200B;**[!UICONTROL forecastLog]**&#x200B;表中：因此，这些字段也需要得到保护。
 
 以下是用于实现此功能的日志表扩展示例：
 
