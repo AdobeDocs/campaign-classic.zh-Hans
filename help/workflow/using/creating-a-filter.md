@@ -21,19 +21,19 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->For more on creating filters, refer to [this section](../../platform/using/filtering-options.md).
+>有关创建过滤器的详细信息，请参阅[此部分](../../platform/using/filtering-options.md)。
 
-节 **[!UICONTROL Administration > Configuration > Predefined filters]** 点包含列表和概览中使用的所有过滤器。
+**[!UICONTROL Administration > Configuration > Predefined filters]**&#x200B;节点包含列表和概览中使用的所有过滤器。
 
-例如，可以按以下方式筛选运算符的列表 **[!UICONTROL Active accounts]**:
+例如，运算符的列表可以按&#x200B;**[!UICONTROL Active accounts]**&#x200B;过滤：
 
 ![](assets/query_editor_filter_sample_1.png)
 
-匹配筛选器包含查询 **[!UICONTROL Account disabled]** 的模式值 **[!UICONTROL Operators]** :
+匹配筛选器包含&#x200B;**[!UICONTROL Operators]**&#x200B;查询的&#x200B;**[!UICONTROL Account disabled]**&#x200B;值模式:
 
 ![](assets/query_editor_filter_sample_2.png)
 
-对于同一列表，通 **[!UICONTROL By login or label]** 过筛选器，您可以根据在筛选器字段中输入的值在列表上筛选数据：
+对于相同的列表,**[!UICONTROL By login or label]**&#x200B;过滤器允许您根据在过滤器字段中输入的值在列表上过滤数据：
 
 ![](assets/query_editor_filter_sample_3.png)
 
@@ -49,12 +49,12 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->函 **[!UICONTROL Upper]** 数允许您取消激活区分大小写的函数。
+>使用&#x200B;**[!UICONTROL Upper]**&#x200B;函数可以取消激活区分大小写的函数。
 
-该列 **[!UICONTROL Taken into account if]** 允许您为这些筛选条件定义应用程序条件。 此处， **$(/tmp/@text)** 字符表示链接到筛选器的输入字段的内容：
+**[!UICONTROL Taken into account if]**&#x200B;列允许您为这些过滤条件定义应用程序条件。 此处，**$(/tmp/@text)**&#x200B;字符表示链接到筛选器的输入字段的内容：
 
 ![](assets/query_editor_filter_sample_5.png)
 
-这里， **$(/tmp/@text)=&#39;agency&#39;**
+这里，**$(/tmp/@text)=&#39;agency&#39;**
 
-$( **/tmp/@text)!=&quot;** 表达式在输入字段不为空时应用每个条件。
+**$(/tmp/@text)!=&quot;**&#x200B;表达式在输入字段不为空时应用每个条件。
