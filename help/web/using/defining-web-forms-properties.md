@@ -19,25 +19,25 @@ ht-degree: 1%
 
 Web 窗体可完全配置和可个性化，以满足您的要求。 参数必须在属性窗口中输入。
 
-通过Web表单工具栏中 **[!UICONTROL Properties]** 的按钮可访问属性窗口。 通过此窗口可访问特定于Web表单的一系列设置。 某些设置可能来自模板配置。
+可通过Web表单工具栏中的&#x200B;**[!UICONTROL Properties]**&#x200B;按钮访问属性窗口。 通过此窗口可访问特定于Web表单的一系列设置。 某些设置可能来自模板配置。
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
-## 表单整体属性 {#overall-form-properties}
+## 表单属性{#overall-form-properties}
 
-在属 **[!UICONTROL General]** 性窗口的选项卡中，可以修改表 **单的** “标签”。 强烈建议不要更改内部 **名称**。
+在属性窗口的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，可以修改表单的&#x200B;**标签**。 强烈建议不要更改&#x200B;**内部名称**。
 
 ![](assets/s_ncs_admin_survey_properties_general_tab.png)
 
-表单创建过程中将选择表单模板。 以后无法更改。 有关创建和管理表单模板的详细信息，请 [参阅使用Web表单模板](../../web/using/using-a-web-form-template.md)。
+表单创建过程中将选择表单模板。 以后无法更改。 有关创建和管理表单模板的详细信息，请参阅[使用Web表单模板](../../web/using/using-a-web-form-template.md)。
 
-## 表单数据存储 {#form-data-storage}
+## 表单存储{#form-data-storage}
 
-默认情况下，Web 窗体字段存储在收件人表中。 您可以通过从字段中选择新表来更改所使用的 **[!UICONTROL Document type]** 表。 通过 **[!UICONTROL Zoom]** 该图标可视图选定表格的内容。
+默认情况下，Web 窗体字段存储在收件人表中。 可以通过从&#x200B;**[!UICONTROL Document type]**&#x200B;字段中选择新表来更改使用的表。 通过&#x200B;**[!UICONTROL Zoom]**&#x200B;图标可视图选定表的内容。
 
-默认情况下，答案存储在 **收件人表单的答案** 。
+默认情况下，答案存储在&#x200B;**收件人表**&#x200B;的答案中。
 
-## 设置错误页面 {#setting-up-an-error-page}
+## 设置错误页面{#setting-up-an-error-page}
 
 您可以配置错误页：在表单执行过程中出错时，将显示此页。
 
@@ -47,19 +47,19 @@ Web 窗体可完全配置和可个性化，以满足您的要求。 参数必须
 
 ![](assets/s_ncs_admin_survey_default_error_page.png)
 
-显示的字符串内容在属性窗口的 **[!UICONTROL Error page]** 选项卡中定义。 该选 **[!UICONTROL HTML]** 项卡显示渲染，该选项卡 **[!UICONTROL Texts]** 允许您修改文本字符串并根据需要添加一些文本：
+显示的字符串内容在属性窗口的&#x200B;**[!UICONTROL Error page]**&#x200B;选项卡中定义。 **[!UICONTROL HTML]**&#x200B;选项卡显示渲染，而&#x200B;**[!UICONTROL Texts]**&#x200B;选项卡允许您修改文本字符串并根据需要添加一些文本：
 
 ![](assets/s_ncs_admin_survey_error_page.png)
 
-## 表单本地化 {#form-localization}
+## 表单本地化{#form-localization}
 
-通过 **[!UICONTROL Localization]** 该选项卡可以选择Web表单的设计和显示语言。
+通过&#x200B;**[!UICONTROL Localization]**&#x200B;选项卡，可以选择Web表单的设计和显示语言。
 
-See [Translating a web form](../../web/using/translating-a-web-form.md).
+请参阅[转换Web表单](../../web/using/translating-a-web-form.md)。
 
-## 表单浏览和渲染 {#form-browsing-and-rendering}
+## 表单浏览和渲染{#form-browsing-and-rendering}
 
-通过 **[!UICONTROL Rendering]** 该选项卡，可定义Web表单的页面和所使用的呈现模板之间的浏览类型。
+通过&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡，可定义Web表单的页面和所使用的呈现模板之间的浏览类型。
 
 您可以选择通过链接或按钮进行导航。
 
@@ -67,47 +67,47 @@ See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 按钮默认为导航元素。 它们允许您执行以下操作：
 
-* 通过单击批准当前页面并显示下一页 **[!UICONTROL Next]**。 此按钮显示在除最后一页之外的所有页面上。
-* 单击以显示上一页 **[!UICONTROL Previous]**。 除第一个按钮外，此按钮会显示在所有页面上。
-* 单击按钮保存表单 **[!UICONTROL Approve]** 响应。 此按钮仅显示在最后一页上。
+* 通过单击&#x200B;**[!UICONTROL Next]**&#x200B;批准当前页面并显示下一页。 此按钮显示在除最后一页之外的所有页面上。
+* 单击&#x200B;**[!UICONTROL Previous]**&#x200B;显示上一页。 除第一个按钮外，此按钮会显示在所有页面上。
+* 单击&#x200B;**[!UICONTROL Approve]**&#x200B;按钮保存表单响应。 此按钮仅显示在最后一页上。
 
 这些元素显示在每页的底部。 他们的立场可以改变。 为此，必须修改样式表。
 
 >[!NOTE]
 >
->可以在某些页面 **[!UICONTROL Previous]** 上隐藏按钮。 要执行此操作，请转到相关页面并选中该 **[!UICONTROL Disallow returning to the previous page]** 选项。 选择页面树的根时，可以访问此选项。
+>可以在某些页面上隐藏&#x200B;**[!UICONTROL Previous]**&#x200B;按钮。 为此，请转至相关页面并选中&#x200B;**[!UICONTROL Disallow returning to the previous page]**&#x200B;选项。 选择页面树的根时，可以访问此选项。
 
-在选 **[!UICONTROL Template]** 项卡的字 **[!UICONTROL Rendering]** 段中，您可以从可用主题中选择主题。
+通过&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡的&#x200B;**[!UICONTROL Template]**&#x200B;字段，您可以从可用主题中选择主题。
 
-主题保存在 **[!UICONTROL Administration>Configuration>Form rendering]** 树的节点中。 请参 [阅选择表单渲染模板](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
+主题保存在树的&#x200B;**[!UICONTROL Administration>Configuration>Form rendering]**&#x200B;节点中。 请参阅[选择表单呈现模板](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
 
-属性窗口的下半部分会显示示例渲染。 通过 **[!UICONTROL Edit link]** 该图标可视图选定主题的配置。
+属性窗口的下半部分会显示示例渲染。 通过&#x200B;**[!UICONTROL Edit link]**&#x200B;图标，可以视图所选主题的配置。
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
 
-## 格式文本 {#texts-in-the-form}
+## 格式为{#texts-in-the-form}的文本
 
-使用 **[!UICONTROL Page]** 选项卡可定义表单页眉和页脚的内容。 请参 [阅定义页眉和页脚](../../web/using/form-rendering.md#defining-headers-and-footers)。
+使用&#x200B;**[!UICONTROL Page]**&#x200B;选项卡可定义表单页眉和页脚的内容。 请参阅[定义页眉和页脚](../../web/using/form-rendering.md#defining-headers-and-footers)。
 
-它还允许您管理翻译。 See [Translating a web form](../../web/using/translating-a-web-form.md).
+它还允许您管理翻译。 请参阅[转换Web表单](../../web/using/translating-a-web-form.md)。
 
-## 表单的可访问性 {#accessibility-of-the-form}
+## 表单{#accessibility-of-the-form}的可访问性
 
-如果Web表单在有效期内，且当 **[!UICONTROL Online]** 前日期在有效期内，则用户可以访问它。 在发布阶段将修改表单的状态(请参 [阅发布表单](../../web/using/publishing-a-web-form.md#publishing-a-form))。 状态显示在属性 **窗口** 选项卡 **[!UICONTROL General]** 的“项目”部分。
+如果Web表单&#x200B;**[!UICONTROL Online]**&#x200B;且当前日期在有效期内，则用户可以访问它。 在发布阶段修改表单的状态（请参阅[发布表单](../../web/using/publishing-a-web-form.md#publishing-a-form)）。 状态显示在属性窗口&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**项目**&#x200B;部分。
 
-有效期从日期 **[!UICONTROL Start]** 到日期 **[!UICONTROL End date]**。 如果这些字段中未指定日期，则表单具有永久有效性。
+有效期从&#x200B;**[!UICONTROL Start]**&#x200B;日期到&#x200B;**[!UICONTROL End date]**。 如果这些字段中未指定日期，则表单具有永久有效性。
 
 ![](assets/s_ncs_admin_survey_properties_date.png)
 
 >[!NOTE]
 >
->如果表单已关闭，因此其有效期尚未达到或已过期，或者如果表单已由Adobe Campaign操作符关闭，则当用户尝试访问表单时，将显示一条消息。 您可以通过单击来个性化此消息 **[!UICONTROL Personalize the message displayed if the form is closed...]**。
+>如果表单已关闭，因此其有效期尚未达到或已过期，或者如果表单已由Adobe Campaign操作符关闭，则当用户尝试访问表单时，将显示一条消息。 单击&#x200B;**[!UICONTROL Personalize the message displayed if the form is closed...]**&#x200B;可个性化此消息。
 
-## 表单访问控制 {#form-access-control}
+## 表单访问控制{#form-access-control}
 
 默认情况下，以匿名模式访问Web 窗体:访问表单的所有运算符都被分配为WebApp运算符权限。
 
-您可以启用表单显示访问控制，例如在内部网站点上传送表单时，以验证用户身份。 为此，请显示相 **[!UICONTROL Properties]** 关表单的窗口，并单击 **[!UICONTROL Enable access control]** 选项，如下所示：
+您可以启用表单显示访问控制，例如在内部网站点上传送表单时，以验证用户身份。 为此，请显示相关表单的&#x200B;**[!UICONTROL Properties]**&#x200B;窗口并单击&#x200B;**[!UICONTROL Enable access control]**&#x200B;选项，如下所示：
 
 ![](assets/s_ncs_admin_survey_access_ctrl.png)
 
@@ -117,42 +117,42 @@ See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 登录名和口令是Adobe Campaign运算符使用的口令。 如需详细信息，请参阅[此部分](../../platform/using/access-management.md)。
 
-通过 **[!UICONTROL Use a specific account]** 此选项，您可以限制访问表单的操作员的读或写权限。 使用下拉框选择负责授予这些权限的操作员或操作员组。
+使用&#x200B;**[!UICONTROL Use a specific account]**&#x200B;选项可以限制访问表单的操作员的读或写权限。 使用下拉框选择负责授予这些权限的操作员或操作员组。
 
 ![](assets/s_ncs_admin_survey_access_op_select.png)
 
-## 表单URL参数 {#form-url-parameters}
+## 表单URL参数{#form-url-parameters}
 
 您可以在表单的URL中添加其他参数，以个性化其内容并初始化上下文(语言、加密的收件人ID、公司、存储在变量中的计算公式等)。 这样，您就可以通过多个不同的URL访问一个表单，并根据URL中指示的参数值个性化页面内容。
 
 默认情况下，Adobe Campaign优惠参数用于预览表单和检查错误。 您可以创建链接到表单的新设置，该设置可能使用数据库中某个字段或本地变量的值。
 
-## 标准参数 {#standard-parameters}
+## 标准参数{#standard-parameters}
 
 默认情况下，以下参数可用：
 
-* **id** ，用于指示加密的标识符。
-* **lang** 更改显示语言。
-* **来源** ，指定被申请人的来源。
-* **_uuid** 在发布和错误跟踪之前启用表单查看。 此参数供内部使用（创建和调试）:当您通过此URL访问Web表单时，在跟踪（报告）中不会考虑创建的记录。 来源被强制设置为 **[!UICONTROL Adobe Campaign]** 值。
+* **** idto表示加密的标识符。
+* **** 语言。
+* **** 指定被申请人的来源。
+* **发布** 和错误跟踪之前查看表单(_U)。此参数供内部使用（创建和调试）:当您通过此URL访问Web表单时，在跟踪（报告）中不会考虑创建的记录。 该来源被强制设置为&#x200B;**[!UICONTROL Adobe Campaign]**&#x200B;值。
 
-   它与_ **预览参数** 和／或 **_debug一起使用**:
+   它与&#x200B;**_预览**&#x200B;参数和／或&#x200B;**_debug**&#x200B;一起使用：
 
-   **预览** ：显示上次保存的版本(_S)。 此参数只能在测试阶段使用。
+   **_** previewto显示上次保存的版本。此参数只能在测试阶段使用。
 
-   **_debug** 显示表单页面中输入或计算的数据的跟踪。 这用于获取更多有关错误的信息，包括表单发布后的信息。
+   **_** debugto显示表单页面中输入或计算的数据跟踪。这用于获取更多有关错误的信息，包括表单发布后的信息。
 
    >[!CAUTION]
    >
-   >当表单通过带有_uuid参数的 **URL显示** ，则参数的 **[!UICONTROL origin]** 值将强制 **Adobe Campaign**。
+   >当表单通过具有&#x200B;**_uuid**&#x200B;参数的URL显示时，**[!UICONTROL origin]**&#x200B;参数的值将强制为&#x200B;**Adobe Campaign**。
 
-## 添加参数 {#adding-parameters}
+## 添加参数{#adding-parameters}
 
-可以通过表单的“属 **[!UICONTROL Parameters...]** 性”窗口中的选项卡添加参数。 可以强制使用它们，如下所示：
+可以通过表单的“属性”窗口中的&#x200B;**[!UICONTROL Parameters...]**&#x200B;选项卡添加参数。 可以强制使用它们，如下所示：
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-必须指定从中检索参数值的存储位置。 为此，请选择一个存储选项，然后单 **[!UICONTROL Storage]** 击选项卡以选择相关字段或变量。 存储选项在响应存储字 [段中有详细说明](../../web/using/web-forms-answers.md#response-storage-fields)。
+必须指定从中检索参数值的存储位置。 为此，请选择一个存储选项，然后单击&#x200B;**[!UICONTROL Storage]**&#x200B;选项卡以选择相应的字段或变量。 [响应存储字段](../../web/using/web-forms-answers.md#response-storage-fields)中详细介绍了存储选项。
 
 答复者状态（0、1或任何其他值）随后可添加到URL以访问表单。 此信息可在表单的页面或测试框中重新使用。 显示的页面可以根据上下文的值进行条件设置，如下所示：
 
@@ -164,7 +164,7 @@ See [Translating a web form](../../web/using/translating-a-web-form.md).
 
    ![](assets/s_ncs_admin_survey_test_prospect.png)
 
-1. 其他用户档案的主页( **如status=12**):
+1. 其他用户档案的主页（例如，**status=12**）:
 
    ![](assets/s_ncs_admin_survey_test_other.png)
 
