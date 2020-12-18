@@ -31,4 +31,4 @@ ht-degree: 15%
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-要提高图的可读性，您可以更改与跳转关联的图像以显示相关数字。 See [Managing activity images](../../workflow/using/managing-activity-images.md).
+要提高图的可读性，您可以更改与跳转关联的图像以显示相关数字。 请参阅[管理活动图像](../../workflow/using/managing-activity-images.md)。
