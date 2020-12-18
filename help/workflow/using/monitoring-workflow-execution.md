@@ -19,17 +19,17 @@ ht-degree: 0%
 
 本节介绍如何监控工作流的执行。
 
-此部分还提供有关如何创建工作流的用例，该工作流允许您监视“已暂停”、“已停止”或“有错误”的工作流集的 [状态](../../workflow/using/supervising-workflows.md#supervising-workflows)。
+[此部分](../../workflow/using/supervising-workflows.md#supervising-workflows)还提供有关如何创建工作流以监视“已暂停”、“已停止”或“有错误”的工作流集的状态的用例。
 
-此外，实例的管理员可以使用审 **核跟踪** ，检查活动和对工作流所做的最后修改，即工作流的状态。 For more on this, refer to the [dedicated section](../../production/using/audit-trail.md).
+此外，实例的管理员可以使用&#x200B;**审计跟踪**&#x200B;检查活动和对工作流所做的最后修改，即工作流的状态。 有关详细信息，请参阅[专用部分](../../production/using/audit-trail.md)。
 
-本页介绍了监视不同活动过程的其 [他方法](../../production/using/monitoring-guidelines.md)。
+此页[中提供了监视不同活动进程的其他方法。](../../production/using/monitoring-guidelines.md)
 
-## 显示进度 {#displaying-progress}
+## 显示进度{#displaying-progress}
 
 您可以使用工具栏中相应的图标显示进度来监视执行情况。
 
-通过 **[!UICONTROL Display progress information]** 该图标，可在执行屏幕中显示状态和活动结果。
+通过&#x200B;**[!UICONTROL Display progress information]**&#x200B;图标，可在执行屏幕中显示状态和活动结果。
 
 ![](assets/s_user_segmentation_toolbar_progr.png)
 
@@ -37,15 +37,15 @@ ht-degree: 0%
 
 ![](assets/s_user_segmentation_results.png)
 
-## 显示日志 {#displaying-logs}
+## 显示日志{#displaying-logs}
 
 日志包含工作流的历史记录或审计跟踪。 它注册所有用户操作、执行的所有操作和遇到的错误。 您可以：
 
-* 在详细 **[!UICONTROL Tracking]** 信息中选择选项卡。 此列表包含所有工作流消息。
+* 在详细信息中选择&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡。 此列表包含所有工作流消息。
 
    ![](assets/new-workflow-display-log-tab.png)
 
-* 按活动过滤日志消息。 为此，请单 **[!UICONTROL Display the tasks and the log]** 击图上方的工具栏，以显示图下 **[!UICONTROL Log]** 方 **[!UICONTROL Tasks]** 的选项卡和选项卡。 选择活动以视图所有相关消息。 未选择列表时，此活动包含所有消息。
+* 按活动过滤日志消息。 为此，请单击图上方工具栏中的&#x200B;**[!UICONTROL Display the tasks and the log]** ，以在图下方显示&#x200B;**[!UICONTROL Log]**&#x200B;和&#x200B;**[!UICONTROL Tasks]**&#x200B;选项卡。 选择活动以视图所有相关消息。 未选择列表时，此活动包含所有消息。
 
    ![](assets/new-workflow-display-log-activity.png)
 
@@ -53,11 +53,11 @@ ht-degree: 0%
    >
    >单击图背景以取消选择所有元素。
 
-* 仅视图链接到给定任务的消息。 为此，请选择选 **[!UICONTROL Tasks]** 项卡，然后在图中选择活动以限制列表。 多次单击任务以显示信息；窗口中的最后一个选项卡包含日志。
+* 仅视图链接到给定任务的消息。 为此，请选择&#x200B;**[!UICONTROL Tasks]**&#x200B;选项卡，然后在图中选择活动以限制列表。 多次单击任务以显示信息；窗口中的最后一个选项卡包含日志。
 
    ![](assets/new-workflow-display-tasks-activity.png)
 
-   通过 **[!UICONTROL Details...]** 该按钮可显示有关活动执行的所有附加信息。 例如，您可以视图验证运算符，如果适用，还可以在审批过程中输入注释，如下例所示：
+   通过&#x200B;**[!UICONTROL Details...]**&#x200B;按钮可显示有关活动执行的所有附加信息。 例如，您可以视图验证运算符，如果适用，还可以在审批过程中输入注释，如下例所示：
 
    ![](assets/new-workflow-display-tasks-activity-details.png)
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 * 定位活动的日志
 
-   执行定位活动后，单击选 **[!UICONTROL Tracking]** 项卡以视图执行跟踪。
+   执行定位活动后，单击&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡以视图执行跟踪。
 
    ![](assets/s_user_segmentation_journal.png)
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
    您还可以视图执行日志和每个活动的详细信息。 有两种方法可以实现此目的：
 
-   1. 选择目标活动并单击 **[!UICONTROL Display the tasks and the log]** 图标。
+   1. 选择目标活动并单击&#x200B;**[!UICONTROL Display the tasks and the log]**&#x200B;图标。
 
       ![](assets/s_user_segmentation_show_logs.png)
 
@@ -89,41 +89,41 @@ ht-degree: 0%
 
       ![](assets/s_user_segmentation_logs.png)
 
-   1. 右键单击目标活动并选择 **[!UICONTROL Display logs]**。
+   1. 右键单击目标活动，然后选择&#x200B;**[!UICONTROL Display logs]**。
 
       ![](assets/s_user_segmentation_logs_menu.png)
 
       日志显示在单独的窗口中。
 
-## 清除日志 {#purging-the-logs}
+## 清除日志{#purging-the-logs}
 
-工作流历史记录不会自动清除：默认情况下，所有消息都保留。 可以通过菜单或单 **[!UICONTROL File > Actions]** 击列表上方工 **[!UICONTROL Actions]** 具栏中的按钮来清除历史记录。 选择 **[!UICONTROL Purge history]**。菜单中的可用选 **[!UICONTROL Actions]** 项在“操作”工具 [栏部分有详细](../../workflow/using/starting-a-workflow.md) 。
+工作流历史记录不会自动清除：默认情况下，所有消息都保留。 可以通过&#x200B;**[!UICONTROL File > Actions]**&#x200B;菜单或单击列表上方工具栏中的&#x200B;**[!UICONTROL Actions]**&#x200B;按钮来清除历史记录。 选择 **[!UICONTROL Purge history]**。**[!UICONTROL Actions]**&#x200B;菜单中的可用选项详见[操作工具栏](../../workflow/using/starting-a-workflow.md)部分。
 
 ![](assets/purge_historique.png)
 
-## 工作表和工作流模式 {#worktables-and-workflow-schema}
+## 工作表和工作流模式{#worktables-and-workflow-schema}
 
 该工作流传达了可通过某些活动处理的工作表。 Adobe Campaign允许您通过数据管理活动修改、重命名和扩充工作流工作表的列，例如根据客户的需要使这些列与命名符对齐，以收集有关合同共同受益人的其他信息，等等。
 
 还可以在各种工作维之间创建链接并定义维更改。 例如，对于记录在数据库中的每个合同，请向主持人寻址，并在附加信息中使用共同持有人数据。
 
-当工作流被钝化时，工作流的工作表会被自动删除。 如果要保留工作表，请通过列表将其保存在活动 **[!UICONTROL List update]** 中(请参 [阅列表更新](../../workflow/using/list-update.md))。
+当工作流被钝化时，工作流的工作表会被自动删除。 如果要保留工作表，请通过&#x200B;**[!UICONTROL List update]**&#x200B;列表将其保存在活动中(请参阅[列表更新](../../workflow/using/list-update.md))。
 
-## 管理错误 {#managing-errors}
+## 管理错误{#managing-errors}
 
-出错时，工作流暂停，发生错误时执行的活动闪烁红色。 在工作流概述(**[!UICONTROL Monitoring]** Universe > **[!UICONTROL Workflows]** link)中，您只能显示有错误的工作流，如下所示。
+出错时，工作流暂停，发生错误时执行的活动闪烁红色。 在工作流概述（**[!UICONTROL Monitoring]**&#x200B;范围> **[!UICONTROL Workflows]**&#x200B;链接）中，您只能显示有错误的工作流，如下所示。
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
-在Adobe Campaign资源管理器中，默认情况下，工作流列表 **[!UICONTROL Failed]** 显示一列。
+在Adobe Campaign资源管理器中，默认情况下，工作流列表显示&#x200B;**[!UICONTROL Failed]**&#x200B;列。
 
 ![](assets/wf-explorer_errors_col.png)
 
-当工作流出错时，只要其电子邮件地址列在其用户档案中，属于工作流监督组的操作员就会通过电子邮件通知。 此组会在工作流属 **[!UICONTROL Supervisor(s)]** 性的字段中选中。
+当工作流出错时，只要其电子邮件地址列在其用户档案中，属于工作流监督组的操作员就会通过电子邮件通知。 在工作流属性的&#x200B;**[!UICONTROL Supervisor(s)]**&#x200B;字段中选择此组。
 
 ![](assets/wf-properties_select-supervisors.png)
 
-通知内容在默认模板 **[!UICONTROL Workflow manager notification]** 中配置：此模板会在工作流属 **[!UICONTROL Execution]** 性的选项卡中选中。 通知显示错误工作流的名称和相关任务。
+通知内容在&#x200B;**[!UICONTROL Workflow manager notification]**&#x200B;默认模板中配置：此模板在工作流属性的&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡中被选中。 通知显示错误工作流的名称和相关任务。
 
 通知示例：
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ![](assets/wf-notification_error-console.png)
 
-您可以配置工作流，以便在出错时不暂停并继续执行。 为此，请编辑工 **[!UICONTROL Properties]** 作流，并在 **[!UICONTROL Error management]** 部分中 **[!UICONTROL Ignore]** 选择字段中的 **[!UICONTROL In case of error]** 选项。 然后，您可以指定在暂停进程之前可以忽略的连续错误数。
+您可以配置工作流，以便在出错时不暂停并继续执行。 为此，请编辑工作流&#x200B;**[!UICONTROL Properties]**，在&#x200B;**[!UICONTROL Error management]**&#x200B;部分，选择&#x200B;**[!UICONTROL In case of error]**&#x200B;字段中的&#x200B;**[!UICONTROL Ignore]**&#x200B;选项。 然后，您可以指定在暂停进程之前可以忽略的连续错误数。
 
 在这种情况下，错误任务被中止。 此模式特别适用于设计为稍后重新尝试活动（定期操作）的工作流。
 
@@ -141,21 +141,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可以对每个活动单独应用此配置。 为此，请编辑活动属性，并在选项卡中选择错误管理 **[!UICONTROL Advanced]** 模式。
+>您可以对每个活动单独应用此配置。 为此，请编辑活动属性，并在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中选择错误管理模式。
 
-有关工作流执行故障排除的详细信息，请参 [阅专用部分](../../production/using/workflow-execution.md)。
+有关工作流执行故障排除的详细信息，请参阅[专用部分](../../production/using/workflow-execution.md)。
 
-## 处理错误 {#processing-errors}
+## 处理错误{#processing-errors}
 
-关于活动, **[!UICONTROL Process errors]** 该选项显示在生成错误时将启用的特定过渡。 在这种情况下，工作流不会进入错误模式并继续执行。
+关于活动,**[!UICONTROL Process errors]**&#x200B;选项显示特定过渡，如果生成错误，将启用该选项。 在这种情况下，工作流不会进入错误模式并继续执行。
 
 考虑到的错误是文件系统错误（无法移动文件、无法访问目录等）。
 
 此选项不处理与活动配置相关的错误，即无效值。 与错误配置相关的错误将不启用此过渡（目录不存在等）。
 
-如果工作流已暂停（手动或在出错后自动），则按 **[!UICONTROL Start]** 钮将在停止工作流的位置重新启动该工作流执行。 将重新执行错误活动(或暂停的活动)。 以前的活动不会重新执行。
+如果工作流已暂停（手动或在出错后自动）,**[!UICONTROL Start]**&#x200B;按钮将在工作流停止的位置重新启动该工作流的执行。 将重新执行错误活动(或暂停的活动)。 以前的活动不会重新执行。
 
-要重新执行所有工作流活动，请使用 **[!UICONTROL Restart]** 按钮。
+要重新执行所有工作流活动，请使用&#x200B;**[!UICONTROL Restart]**&#x200B;按钮。
 
 如果修改已执行的活动，则在重新启动工作流执行时，不会考虑更改。
 
@@ -165,15 +165,15 @@ ht-degree: 0%
 
 如果可能，我们建议在进行修改后完全重新启动工作流。
 
-## 实例监督 {#instance-supervision}
+## 实例监视{#instance-supervision}
 
-通过 **[!UICONTROL Instance supervision]** 该页面可以视图Adobe Campaign服务器活动，并显示出工作流和投放的列表，但有错误。
+在&#x200B;**[!UICONTROL Instance supervision]**&#x200B;页面中，您可以视图Adobe Campaign服务器活动，并显示有错误的工作流和投放的列表。
 
-要访问此页，请转到“ **[!UICONTROL Monitoring]** 宇宙”并单击 **[!UICONTROL General view]** 链接。
+要访问此页，请转到&#x200B;**[!UICONTROL Monitoring]**&#x200B;范围并单击&#x200B;**[!UICONTROL General view]**&#x200B;链接。
 
 ![](assets/wf-monitoring_from-homepage.png)
 
-要显示所有工作流，请单击 **[!UICONTROL Workflows]** 链接。 使用下拉列表根据工作流的状态显示平台中的数据。
+要显示所有工作流，请单击&#x200B;**[!UICONTROL Workflows]**&#x200B;链接。 使用下拉列表根据工作流的状态显示平台中的数据。
 
 ![](assets/wf-monitoring_edit-wf.png)
 
@@ -181,7 +181,7 @@ ht-degree: 0%
 
 ![](assets/wf-monitoring_edit-task-wf.png)
 
-## 防止同时执行多个执行 {#preventing-simultaneous-multiple-executions}
+## 防止同时执行多个执行{#preventing-simultaneous-multiple-executions}
 
 单个工作流可以同时运行多个执行。 在某些情况下，您应该防止这种情况发生。
 
@@ -199,21 +199,21 @@ ht-degree: 0%
 
 ![](assets/wkf_simultaneous_execution1.png)
 
-每 **[!UICONTROL Scheduler]** 分钟都会触发事件。 以下 **[!UICONTROL Test]** 活动将测试 **isRunning实例** 变量，以决定是否继续执行：
+**[!UICONTROL Scheduler]**&#x200B;每分钟触发一个事件。 以下&#x200B;**[!UICONTROL Test]**&#x200B;活动将测试&#x200B;**isRunning**&#x200B;实例变量，以决定是否继续执行：
 
 ![](assets/wkf_simultaneous_execution2.png)
 
 >[!NOTE]
 >
->**isRunning是** 为此示例选择的变量名称。 这不是内置变量。
+>**** isRunning是为此示例选择的变量名称。这不是内置变量。
 
-紧接在yes分支 **[!UICONTROL Test]** 后的 **活动** ，必须在其初始化脚本中设置 **实例变量**:
+紧靠&#x200B;**yes**&#x200B;分支中的&#x200B;**[!UICONTROL Test]**&#x200B;后面的活动必须在其&#x200B;**初始化脚本**&#x200B;中设置实例变量：
 
 ```
 instance.vars.isRunning = true
 ```
 
-yes分支中的最后一个 **活动** ，必须在其初始化脚本中将变量还 **原为false**:
+**yes**&#x200B;分支中的最后一个活动必须将其&#x200B;**初始化脚本**&#x200B;中的变量还原为false:
 
 ```
 instance.vars.isRunning = false
@@ -221,7 +221,7 @@ instance.vars.isRunning = false
 
 请注意：
 
-* 您可以通过工作流属性中的变量选项卡 **检查实** 例变量的当 **前值**。
+* 您可以通过工作流&#x200B;**属性**&#x200B;中的&#x200B;**变量**&#x200B;选项卡检查实例变量的当前值。
 * 重新启动工作流时会重置实例变量。
 * 在JavaScript中，未定义的值在测试中为false，允许在初始化实例变量之前测试该实例变量。
 * 您可以通过向“no”结束的初始化脚本添加日志记录指令来监视因此机制未处理的活动。
@@ -230,53 +230,53 @@ instance.vars.isRunning = false
    logInfo("Workflow already running, parallel execution not allowed.");
    ```
 
-本节介绍了一个用例： [协调数据更新](../../workflow/using/coordinating-data-updates.md)。
+本节介绍了一个用例：[协调数据更新](../../workflow/using/coordinating-data-updates.md)。
 
 ## 数据库维护 {#database-maintenance}
 
-工作流使用大量占用空间的工作表，如果不进行维护，最终会减慢整个平台的速度。 有关数据库维护的详细信息，请参 [阅本节](../../production/using/tables-to-maintain.md) 。
+工作流使用大量占用空间的工作表，如果不进行维护，最终会减慢整个平台的速度。 有关数据库维护的详细信息，请参阅此[部分](../../production/using/tables-to-maintain.md)。
 
-通过 **“管理** ”>“生产”>“技术工作流” **节点可访问的“清理”工作流** ，可删除过时的数据，以避免数据库呈指数级增长。 工作流会自动触发，无需用户干预。 Refer to this [section](../../production/using/database-cleanup-workflow.md).
+通过&#x200B;**管理>生产>技术工作流**&#x200B;节点可访问的&#x200B;**数据库清理**&#x200B;工作流，可删除过时的数据以避免数据库的指数级增长。 工作流会自动触发，无需用户干预。 请参阅此[部分](../../production/using/database-cleanup-workflow.md)。
 
-您还可以创建特定技术工作流来清除不必要的数据占用空间。 请参阅本 [部分](../../production/using/application-objects.md) 和本 [页](#purging-the-logs)。
+您还可以创建特定技术工作流来清除不必要的数据占用空间。 请参阅此[部分](../../production/using/application-objects.md)和此[页面](#purging-the-logs)。
 
-## 处理暂停的工作流 {#handling-of-paused-workflows}
+## 处理暂停的工作流{#handling-of-paused-workflows}
 
 默认情况下，如果工作流已暂停，则不会清除其工作表。 从内部版本8880起，处于暂停状态的工作流将自动停止并清除其工作表。 此行为按如下方式触发：
 
 * 自7天以来已暂停的工作流在监视仪表板（和监视API）中显示为警告，并且会向主管组发送通知。
-* 每周触发技术工作流时都 **[!UICONTROL cleanupPausedWorkflows]** 会发生同样的情况。 有关此工作流的详细信息，请参 [阅此部分](../../workflow/using/delivery.md)。
-* 4个通知后（即默认处于暂停状态的一个月），工作流将无条件停止。 停止工作流后，该工作流中会显示日志。 在下一个执行工作流中将清除表 **[!UICONTROL cleanup]** 格
+* 每周触发&#x200B;**[!UICONTROL cleanupPausedWorkflows]**&#x200B;技术工作流时都会发生同样的情况。 有关该工作流的详细信息，请参阅[此部分](../../workflow/using/delivery.md)。
+* 4个通知后（即默认处于暂停状态的一个月），工作流将无条件停止。 停止工作流后，该工作流中会显示日志。 在下次执行&#x200B;**[!UICONTROL cleanup]**&#x200B;工作流时，将清除这些表
 
 可通过NmsServer_PausedWorkflowPeriod选项配置这些句点。
 
 将通知工作流监管者。 同时还会通知修改工作流的创建者和最后一个用户。 管理员不会收到通知。
 
-## 根据工作流的状态过滤数据 {#filtering-workflows-status}
+## 根据工作流的状态{#filtering-workflows-status}过滤数据
 
-Campaign Classic界面允许您使用预定义的视图监视实例上所有工作流的执行&#x200B;**状态**。 要访问这些视图，请打&#x200B;**[!UICONTROL Administration]**&#x200B;开/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**&#x200B;节点。
+Campaign Classic接口允许您使用预定义的&#x200B;**视图**&#x200B;监视实例上所有工作流的执行状态。 要访问这些视图，请打开&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]**&#x200B;节点。
 
 提供以下视图:
 
 * **[!UICONTROL Running]**:列表所有正在运行的工作流。
 * **[!UICONTROL Paused]**:列表所有已暂停的工作流。
 * **[!UICONTROL Failed]**:列表所有失败的工作流。
-* **[!UICONTROL Start Pending]**:列表正在等待operationMgt进程启动的所有工作流。 此视图仅可用于&#x200B;**Marketing活动包**(请参阅 [安装活动标准包](../../installation/using/installing-campaign-standard-packages.md))。
+* **[!UICONTROL Start Pending]**:列表正在等待operationMgt进程启动的所有工作流。此视图仅适用于&#x200B;**营销活动**&#x200B;包(请参阅[安装活动标准包](../../installation/using/installing-campaign-standard-packages.md))。
 
 ![](assets/workflow-monitoring-views.png)
 
-默认情况下，这些视图可在文件夹中&#x200B;**[!UICONTROL Audit]**&#x200B;访问。 但是，您可以在文件夹树中选择的位置重新创建它们。 这样，无管理权的标准用户就可以使用它们。
+默认情况下，可在&#x200B;**[!UICONTROL Audit]**&#x200B;文件夹中访问这些视图。 但是，您可以在文件夹树中选择的位置重新创建它们。 这样，无管理权的标准用户就可以使用它们。
 
 为此，请执行以下操作：
 
 1. 右键单击要添加视图的文件夹。
-1. 在 **[!UICONTROL Add new folder]**/**[!UICONTROL Administration]**&#x200B;中，选择要添加的视图。
-1. 将文件夹添加到树后，请确保将其配置为视图，以便显示所有工作流(无论其来源文件夹是什么)。有关如何配置视图的详细信息，请参 [阅此部分](../../platform/using/access-management.md#adding-folders-and-creating-views)。
+1. 在&#x200B;**[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**&#x200B;中，选择要添加的视图。
+1. 将文件夹添加到树后，请确保将其配置为视图，以便显示所有工作流，无论其来源文件夹是什么。有关如何配置视图的详细信息，请参阅[此部分](../../platform/using/access-management.md#adding-folders-and-creating-views)。
 
 除了这些视图之外，您还可以设置过滤器文件夹，以便根据工作流的执行状态过滤列表。 操作步骤：
 
-1. 访问工作流类型文件夹，然后选择 **[!UICONTROL Filters]** /菜 **[!UICONTROL Advanced filter]** 单。
-1. 配置过滤器，使工作流的 **[!UICONTROL @status]** 字段等于您选择的状态。
+1. 访问工作流类型文件夹，然后选择&#x200B;**[!UICONTROL Filters]** / **[!UICONTROL Advanced filter]**&#x200B;菜单。
+1. 配置过滤器，使工作流的&#x200B;**[!UICONTROL @status]**&#x200B;字段等于您选择的状态。
 1. 保存并命名过滤器。 然后，它将直接从过滤器列表访问。
 
 ![](assets/workflow-monitoring-filter.png)
