@@ -23,7 +23,7 @@ ht-degree: 10%
 
 ![](assets/d_ncs_integration_navigation.png)
 
-要向树中添加新文件夹，请在要插入文件夹的分支中右键单击该文件夹，然后选择 **[!UICONTROL Add new folder]** 。 在快捷菜单中，选择要创建的文件类型。
+要向树中添加新文件夹，请右键单击要插入文件夹的分支中的文件夹，然后选择&#x200B;**[!UICONTROL Add new folder]**。 在快捷菜单中，选择要创建的文件类型。
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
