@@ -30,11 +30,11 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->您可以参阅Adobe Campaign [硬件大小调整指南](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html) ，以获得洞察。
+>有关洞察，请参阅[Adobe Campaign硬件大小调整指南](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)。
 
-## 平台配置 {#platform-configuration}
+## 平台配置{#platform-configuration}
 
-不适当的配置可能会影响平台性能。 我们建议您在serverConf.xml文件中检查网络配置、平台可交付性选 **项和MTA配置** 。
+不适当的配置可能会影响平台性能。 我们建议您检查&#x200B;**serverConf.xml**&#x200B;文件中的网络配置、平台可交付性选项以及MTA配置。
 
 ## 数据库维护 {#database-maintenance}
 
@@ -60,9 +60,9 @@ ht-degree: 8%
 
 请检查工作表的编号和大小。 超过一定大小时，数据库性能会受到影响。 这些表由工作流和投放创建。 工作流和投放处于活动状态时，它们仍保留在数据库中。 要限制工作表的大小，可以执行以下操作：
 
-* 停止或删除具有以下状态的投放: **[!UICONTROL Failed]** 、 **[!UICONTROL In progress]** 、 **[!UICONTROL Ready for delivery]** 或 **[!UICONTROL Paused]** 。
+* 停止或删除具有以下状态的投放:**[!UICONTROL Failed]**、**[!UICONTROL In progress]**、**[!UICONTROL Ready for delivery]**&#x200B;或&#x200B;**[!UICONTROL Paused]**。
 * 停止或删除因错误而暂停的工作流,
-* 停止所有用于测试的工作流，这些不包含 **[!UICONTROL End]** 活动，因此其状态保持 **[!UICONTROL Paused]** 不变。
+* 停止用于测试的所有工作流，这些活动不包含&#x200B;**[!UICONTROL End]**，因此其状态仍为&#x200B;**[!UICONTROL Paused]**。
 
 >[!IMPORTANT]
 >
@@ -72,10 +72,10 @@ ht-degree: 8%
 
 根据Adobe Campaign安装设置，可以使用两种工具进行平台监视：
 
-* 实例生产页面。 For more on this, refer to [Manual monitoring](../../production/using/monitoring-processes.md#manual-monitoring).
-* netreport脚本。 有关详细信息，请参阅通过 [Adobe Campaign脚本进行自动监视](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)。
+* 实例生产页面。 有关详细信息，请参阅[手动监视](../../production/using/monitoring-processes.md#manual-monitoring)。
+* netreport脚本。 有关详细信息，请参阅[通过Adobe Campaign脚本自动监视](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)。
 
-## Specifics {#specifics}
+## 具体信息{#specifics}
 
 可能需要进行实时诊断以确定问题的原因。 开始，方法是检查进程和平台日志文件，然后在重新创建问题时监视活动库。 请特别注意以下事项：
 
