@@ -9,8 +9,8 @@ topic-tags: data-processing
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 2%
 
 大多数数据都在数据库中。 这表示要备份的信息的99%。
 
-## 物理文件 {#physical-files}
+## 物理文件{#physical-files}
 
 文件分为几个类别:
 
-* 配置文件，位 **于nl6/conf中**
+* 配置文件，位于&#x200B;**nl6/conf**&#x200B;中
 
    这使您能够快速地重新配置Adobe Campaign。
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
    这些服务器位于跟踪（通常称为“额面”）服务器上，并包含所有以前的活动重定向。 它们仍然被以前的活动使用。
 
-* 日志文件： **nl6/var/`<instancename>`log**
+* 日志文件：**nl6/var/`<instancename>`/log**
 
    这些可用于跟踪问题。
 
