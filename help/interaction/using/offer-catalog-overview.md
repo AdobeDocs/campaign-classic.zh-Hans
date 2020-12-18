@@ -23,8 +23,8 @@ ht-degree: 4%
 
 优惠管理通过Adobe Campaign中的文件夹树进行。
 
-在创建优惠之前，必须先指定环境(请参阅 [环境概述](../../interaction/using/environments-overview.md))。 它将包含一组优惠的所有特征(资格、目标约束、推荐规则)，分类为类别，以及其空间的列表。
+在创建优惠之前，必须先指定环境(请参阅[环境概述](../../interaction/using/environments-overview.md))。 它将包含一组优惠的所有特征(资格、目标约束、推荐规则)，分类为类别，以及其空间的列表。
 
 >[!IMPORTANT]
 >
->创建优惠目录，即类别和优惠，是责任 **[!UICONTROL Offer manager]**。
+>创建优惠目录(即类别和优惠)是&#x200B;**[!UICONTROL Offer manager]**&#x200B;的责任。
