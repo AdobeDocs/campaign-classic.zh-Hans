@@ -17,9 +17,9 @@ ht-degree: 2%
 
 # 模拟范围{#simulation-scope}
 
-## 范围定义 {#definition-of-the-scope}
+## 范围{#definition-of-the-scope}的定义
 
-打开选 **[!UICONTROL Scope]** 项卡以选择设置。
+打开&#x200B;**[!UICONTROL Scope]**&#x200B;选项卡以选择设置。
 
 以下项目是必填项：
 
@@ -44,11 +44,11 @@ ht-degree: 2%
 >
 >必须指定联系日期。 这样交互引擎就可以对选定环境或类别中的优惠进行排序。 如果未配置日期，模拟将引发错误。
 
-## 添加报告轴 {#adding-reporting-axes}
+## 添加报告轴{#adding-reporting-axes}
 
-您可以通过在模拟上添加报告轴或通过选项卡在优惠本身上添加分析 **[!UICONTROL Calculations]** 轴来增强。
+您可以通过&#x200B;**[!UICONTROL Calculations]**&#x200B;选项卡在模拟或优惠本身上添加报告轴来增强分析。
 
-为此，请单击按 **[!UICONTROL Add]** 钮并选择相应的字段。 轴将用于计算模拟，并显示在分析报告中。 For more on this, refer to [Simulation tracking](../../interaction/using/simulation-tracking.md).
+为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择相应的字段。 轴将用于计算模拟，并显示在分析报告中。 有关详细信息，请参阅[模拟跟踪](../../interaction/using/simulation-tracking.md)。
 
 ![](assets/offer_simulation_011.png)
 
