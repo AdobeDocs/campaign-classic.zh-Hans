@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # 社交媒体营销{#social-marketing}
 
-下面详细介绍的工作流默认 **情况下随Social** Marketing模块一起安装。 For more on this module, refer to this [section](../../social/using/starting-workflows.md).
+默认情况下，下面详细介绍的工作流随&#x200B;**Social Marketing**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[部分](../../social/using/starting-workflows.md)。
 
 <table> 
  <tbody> 
@@ -39,12 +39,12 @@ ht-degree: 5%
   <tr> 
    <td> <span class="uicontrol">同步Facebook页面</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebook</span> <br /> </td> 
-   <td> 此工作流每天早7点将Facebook页面与Adobe Campaign同步。<br /> </td> 
+   <td> 此工作流将Facebook页面与每天早上7点的Adobe Campaign同步。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">计算Twitter统计</span> <br /> </td> 
    <td> <span class="uicontrol">statsTwitter</span> <br /> </td> 
-   <td> 此工作流会计算与Twitter上的转发和访问关联的统计信息。<br /> </td> 
+   <td> 此工作流计算链接到Twitter上的转发和访问的统计信息。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">同步Twitter页面</span> <br /> </td> 
