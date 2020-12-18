@@ -17,20 +17,20 @@ ht-degree: 0%
 
 # 关于投放能力{#about-deliverability}
 
-**交付性** ，包括衡量活动在到达收件人收件箱时是否成功，不会出现弹跳或标记为垃圾邮件。
+**交付** 性包括衡量活动在到达收件人收件箱时是否成功而不会弹跳或标记为垃圾邮件。
 
 Adobe Campaign优惠一定数量的工具来跟踪平台的可交付性能。 本节还重点介绍在管理和优化交付能力时应牢记的主要原则。
 
 ## 配置{#configuration}
 
 此功能可通过Adobe Campaign专用包获得。 要使用它，必须安装此包。 完成后，重新启动服务器以便考虑包。
-* 对于托管和混合客户端， **Adobe技术支持** 和顾问会在您的实例上配置可交付性监控。 有关详细信息，请与Adobe客户经理联系。
+* 对于托管和混合客户端，**可交付性监视**&#x200B;由Adobe技术支持和顾问在您的实例上配置。 有关详细信息，请与Adobe客户经理联系。
 
-* 对于内部部署安装，必须通过> > **[!UICONTROL Deliverability monitoring (Email Deliverability)]** 菜单安装 **[!UICONTROL Tools]** 包 **[!UICONTROL Advanced]****[!UICONTROL Import package]** 。 有关此方面的详细信息，请参 [阅安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md)。
+* 对于内部部署安装，必须通过&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜单安装&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;包。 有关详细信息，请参阅[安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md)。
 
-在Adobe Campaign Classic, **可交付性监控** 由工作流进行 **[!UICONTROL Refresh for deliverability]** 管理。 它默认安装在所有实例中，并允许您初始化弹回邮件资格规则的列表、域的列表和MX的列表。 安装包 **[!UICONTROL Deliverability monitoring (Email Deliverability)]** 后，此工作流会在夜间运行，以定期更新规则的列表，并使您能够主动管理平台交付性。
+在Adobe Campaign Classic,**可交付性监控**&#x200B;由&#x200B;**[!UICONTROL Refresh for deliverability]**&#x200B;工作流管理。 它默认安装在所有实例中，并允许您初始化弹回邮件资格规则的列表、域的列表和MX的列表。 安装&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;包后，此工作流会在夜间运行，以定期更新规则列表，并使您能够主动管理平台交付性。
 
-## 背景 {#background}
+## 背景{#background}
 
 无论营销人员是发送几千条邮件还是发送几十亿条邮件，电子邮件的发送能力对营销人员来说都是一个重大挑战。 每五条邮件中就有一条永远无法到达收件箱或其预期收件人。
 
