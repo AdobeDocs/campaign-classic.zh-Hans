@@ -17,11 +17,11 @@ ht-degree: 1%
 
 # IMS 疑难解答{#ims-troubleshooting}
 
-以下故障排除提示将帮 **助预置型** 客户解决使用IMS集成时出现的最常见问题。 对于托 **管客户** ，请与Adobe联系。
+以下故障排除提示将帮助&#x200B;**内部部署**&#x200B;客户解决使用IMS集成时出现的最常见问题。 对于&#x200B;**托管的**&#x200B;客户，请与Adobe联系。
 
 **外部帐户**
 
-只应有一 **个外部帐户** ，并且设置如下：
+只应具有以下设置的&#x200B;**一个**&#x200B;外部帐户:
 
 * **内部名称**:Adobe_Marketing_Cloud
 * **类型**:Adobe Marketing Cloud
@@ -30,20 +30,20 @@ ht-degree: 1%
 
 **产品上下文**
 
-如果外部帐户有“ **产品上下文** ”字段，请检查其值是否设置为： **dma_活动_classic**
+如果外部帐户具有&#x200B;**Product Context**&#x200B;字段，请检查其值是否设置为：**dma_活动_classic**
 
 确保您的产品上下文对于活动和Experience Cloud相同。
 
-例如，如果未显 **示Product** Context **，则默认的product context应同时** 采用活动和Experience Cloud。 如果出 **现“Product Context** （产品上下文）”字段 **，则默认产品上下文应** 在活动和Experience Cloud中均为dma_活动_classic。
+例如，如果未显示&#x200B;**产品上下文**，则默认产品上下文应为&#x200B;**dma_活动**&#x200B;活动和Experience Cloud。 如果出现&#x200B;**Product Context**&#x200B;字段，则默认产品上下文应为&#x200B;**dma_活动_classic**&#x200B;活动和Experience Cloud。
 
 **[!UICONTROL IMS Server URL]**
 
-在活动 **Adobe Marketing Cloud** 外部帐户中，检 **[!UICONTROL IMS Server URL]** 查是 [adobeid-na1.services.adobe.com还是ims](https://adobeid-na1.services.adobe.com/) -na1 [.adobelogin.com](http://ims-na1.adobelogin.com/)。 确保舞台和生产实例指向同一IMS生产端点。
+在活动&#x200B;**Adobe Marketing Cloud**&#x200B;外部帐户中，检查&#x200B;**[!UICONTROL IMS Server URL]**&#x200B;是否为[adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/)或[ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/)。 确保舞台和生产实例指向同一IMS生产端点。
 
 **关联掩码**
 
 * 检查尝试登录的用户是否属于企业仪表板中的操作员组。
-* 检查该 **[!UICONTROL Association Mask]** 是“企业”仪表板中用户的操作员组名称的前缀。
+* 检查&#x200B;**[!UICONTROL Association Mask]**&#x200B;是否是“企业”仪表板中用户操作符组名称的前缀。
 * 确保没有空白和拼写错误。
 * 检查活动中运算符组的名称是否未更改，并遵循以下语法：
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 **回调URL**
 
-回 **** 调URL应添允许列表加到开始和(带有“https://”)。 检查回 **调URL** 是否已链接到相应实例。 例如，生产实例应重定向到生产URL。
+**回调URL**&#x200B;应添加到允许列表符和开始中，并带有“https://”。 检查&#x200B;**回调URL**&#x200B;是否已链接到相应实例。 例如，生产实例应重定向到生产URL。
 
 **客户端ID和机密**
 
@@ -73,11 +73,11 @@ ht-degree: 1%
 
 * 用户被重定向到adobe.com页面：
 
-   这有问题 **[!UICONTROL Callback URL]**。 请参阅上述步骤以检查配 **[!UICONTROL Callback URL]** 置。
+   **[!UICONTROL Callback URL]**&#x200B;有问题。 请参阅上述步骤以检查&#x200B;**[!UICONTROL Callback URL]**&#x200B;配置。
 
 * 消息“登录名没有与表达式匹配的任何权利”:
 
-   请参阅上述步骤以检查和运 **[!UICONTROL Association Mask]** 算符组配置。
+   请参阅上述步骤以检查&#x200B;**[!UICONTROL Association Mask]**&#x200B;和操作符组配置。
 
 * 用户无法访问Adobe ID登录页面：
 
