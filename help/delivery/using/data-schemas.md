@@ -19,11 +19,11 @@ ht-degree: 2%
 
 以下是关于在Adobe Campaign中使用数据模式的一些一般原则。
 
-有关在Adobe Campaign中创建和配置模式的详细信息，请参 [阅此部分](../../configuration/using/about-schema-edition.md)。
+有关在Adobe Campaign中创建和配置模式的详细信息，请参阅[本节](../../configuration/using/about-schema-edition.md)。
 
 ## 模式结构 {#schema-structure}
 
-数据模式的XML文档必须包含 **`<srcschema>`** 根元素，其 **名称****和命名空间属性** 才能填充模式名称及其命名空间。
+数据模式的XML文档必须包含&#x200B;**`<srcschema>`**&#x200B;根元素，其中&#x200B;**name**&#x200B;和&#x200B;**命名空间**&#x200B;属性用于填充模式名称及其命名空间。
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -39,13 +39,13 @@ ht-degree: 2%
 <element name="book" template="ncm:content" xmlChildren="true">
 ```
 
-在主 **要元素** 中输入的模板属性允许您将具有通用属性的模式扩展到所有内容定义，如名称、创建日期、作者、关联字符串等。
+在主元素中输入的&#x200B;**template**&#x200B;属性允许您将具有通用属性的模式扩展到所有内容定义，如名称、创建日期、作者、关联字符串等。
 
-这些属性在ncm:content **模式中有介绍** 。
+这些属性在&#x200B;**ncm:content**&#x200B;模式中有介绍。
 
 >[!NOTE]
 >
->xmlChildren属性 **的存在** ，表示通过主元素输入的数据结构存储在内容实例的XML文档中。
+>存在&#x200B;**xmlChildren**&#x200B;属性表示通过主元素输入的数据结构存储在内容实例的XML文档中。
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ ht-degree: 2%
 
 ## 属性 {#properties}
 
-可以使用各种属性来丰富 **`<element>`** 数据 **`<attribute>`** 模式的元素和元素。
+各种属性可用于丰富数据模式的&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;元素。
 
 在内容管理中使用的主要属性如下：
 
@@ -106,11 +106,11 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-## 集合元素 {#collection-elements}
+## 集合元素{#collection-elements}
 
 集合是具有相同名称和相同分层级别的元素的列表。
 
-在我们的示例中， **`<chapter>`** 和元 **`<page>`** 素是集合元素。 因此 **,** “未绑定”属性必须添加到以下元素的定义中：
+在我们的示例中，**`<chapter>`**&#x200B;和&#x200B;**`<page>`**&#x200B;元素是集合元素。 因此，必须将&#x200B;**unboind**&#x200B;属性添加到这些元素的定义中：
 
 ```
 <element name="chapter" label="Chapter" unbound="true" ordered="true">
@@ -122,15 +122,15 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->存在ordered=&quot; **true&quot;属性允许您** 对插入的集合元素进行排序。
+>存在&#x200B;**ordered=&quot;true&quot;**&#x200B;属性允许您对插入的集合元素进行排序。
 
-## 元素引用 {#element-referencing}
+## 引用{#element-referencing}的元素
 
-元素引用在内容模式中使用很多。 它允许您将元素的定义分解 **`<element>`** ，以便在具有相同结构的其他元素上引用它。
+元素引用在内容模式中使用很多。 它允许您对&#x200B;**`<element>`**&#x200B;元素的定义进行分解，以便能够在具有相同结构的其他元素上引用它。
 
-要 **引用** 的元素上的ref属性必须使用引用元素的路径(XPath)完成。
+要引用的元素上的&#x200B;**ref**&#x200B;属性必须使用引用元素的路径(XPath)完成。
 
-**示例**:添加与 **示例** 模式元素结 **`<chapter>`** 构相同的附录部分。
+**示例**:添加与示 **** 例模式元素结构相 **`<chapter>`** 同的Appendixsection。
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -152,11 +152,11 @@ ht-degree: 2%
 
 章结构将移至主元素外名为“section”的元素。 本章和章节引用“章节”元素。
 
-## 计算字符串 {#compute-string}
+## 计算字符串{#compute-string}
 
-计 **算字符串** 是用于构造表示内容实例的字符串的XPath表达式。
+**计算字符串**&#x200B;是用于构造表示内容实例的字符串的XPath表达式。
 
-下面是我们用其Compute字符串进行 **模式的示例**:
+下面是我们的示例模式，其&#x200B;**计算字符串**:
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -177,4 +177,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->通过 **“名** 称编辑”控件，您可以输入模式的键，包括名称和命名空间。 命名空间 **根元** 素的名 **** 称和模式属性会在模式的XML编辑字段中自动更新。
+>使用&#x200B;**名称**&#x200B;编辑控件可以输入模式的键，包括名称和命名空间。 命名空间根元素的&#x200B;**名称**&#x200B;和&#x200B;**模式**&#x200B;属性在模式的XML编辑字段中自动更新。
