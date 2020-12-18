@@ -17,28 +17,28 @@ ht-degree: 1%
 
 # 在 Linux 中迁移到 Adobe Campaign v7{#migrating-in-linux-for-adobe-campaign-v}
 
-## 一般程序 {#general-procedure}
+## 一般过程{#general-procedure}
 
 Linux中的迁移步骤如下：
 
-1. 停止服务：请参 [阅服务停止](#service-stop)。
-1. 保存数据库：请参 [阅备份数据库和现有安装](#back-up-the-database-and-the-existing-installation)。
-1. 卸载以前的Adobe Campaign版本包：请参 [阅卸载Adobe Campaign先前版本的软件包](#uninstalling-adobe-campaign-previous-version-packages)。
-1. 迁移平台：请参阅 [部署Adobe Campaignv7](#deploying-adobe-campaign-v7)。
-1. 重新开始服务：请参阅 [重新启动服务](#re-starting-services)。
+1. 停止服务：请参阅[服务停止](#service-stop)。
+1. 保存数据库：请参阅[备份数据库和现有安装](#back-up-the-database-and-the-existing-installation)。
+1. 卸载以前的Adobe Campaign版本包：请参阅[卸载Adobe Campaign先前版本的软件包](#uninstalling-adobe-campaign-previous-version-packages)。
+1. 迁移平台：请参阅[部署Adobe Campaignv7](#deploying-adobe-campaign-v7)。
+1. 重新开始服务：请参阅[重新启动服务](#re-starting-services)。
 
-## 服务停止 {#service-stop}
+## 服务停止{#service-stop}
 
 首先，通过访问相关所有计算机上的数据库来停止所有进程。
 
-1. 以根用户 **身份登录**。
-1. 需要停止使用重定向模块(**webmdl** 服务)的所有服务器。 对于Apache，运行以下命令：
+1. 以&#x200B;**root**&#x200B;身份登录。
+1. 需要停止使用重定向模块（**webmdl**&#x200B;服务）的所有服务器。 对于Apache，运行以下命令：
 
    ```
    /etc/init.d/apache2 stop
    ```
 
-1. 以root用户身份再次 **登录**。
+1. 再次以&#x200B;**root**&#x200B;身份登录。
 1. 停止Adobe Campaign所有服务器上的先前版本服务。
 
    ```
@@ -71,14 +71,14 @@ Linux中的迁移步骤如下：
    killall -9 nlserver
    ```
 
-## 备份数据库和现有安装 {#back-up-the-database-and-the-existing-installation}
+## 备份数据库和现有安装{#back-up-the-database-and-the-existing-installation}
 
 该过程取决于您的Adobe Campaign先前版本。
 
-### 从Adobe Campaignv5.11迁移 {#migrating-from-adobe-campaign-v5-11}
+### 从Adobe Campaignv5.11 {#migrating-from-adobe-campaign-v5-11}迁移
 
 1. 备份Adobe Campaign库。
-1. 以Neolane身 **份登录** ，然后使用以下命 **令备份nl** 5目录：
+1. 以&#x200B;**neolane**&#x200B;身份登录，然后使用以下命令备份&#x200B;**nl5**&#x200B;目录：
 
    ```
    su - neolane
@@ -87,44 +87,9 @@ Linux中的迁移步骤如下：
 
    >[!IMPORTANT]
    >
-   >为防患未然，我们建议您将nl5. **back文件夹压缩** ，并将其保存到服务器以外的安全位置。
+   >为防患未然，我们建议您将&#x200B;**nl5.back**&#x200B;文件夹压缩并保存到服务器以外的安全位置。
 
-1. 编辑 **config-`<instance name>`.xml** (在5.back nl **文件夹中)，以防止mta** 、wfserver **、、********** 、等。 服务自动启动。 例如，将autoStart **替换为****_autoStart** (仍为 **neolane**)。
-
-   ```
-   <?xml version='1.0'?>
-   <serverconf>
-     <shared>
-       <dataStore hosts="myServer*" lang="en_US">
-         <dataSource name="default">
-           <dbcnx encrypted="1" login="myLogin" password="myPassword"  provider="postgresql" server="myServer"/>
-         </dataSource>
-       </dataStore>
-     </shared>
-   
-     <mta _autoStart="true" statServerAddress="myStatServer"/>
-     <stat _autoStart="true"/>
-     <wfserver _autoStart="true"/>
-     <inMail _autoStart="true"/>
-     <sms _autoStart="false"/>
-   </serverconf>
-   ```
-
-### 从Adobe Campaignv6.02迁移 {#migrating-from-adobe-campaign-v6-02}
-
-1. 备份Adobe Campaign库。
-1. 以Neolane身 **份登录** ，然后使用以下命 **令备份nl** 6目录：
-
-   ```
-   su - neolane
-   mv nl6 nl6.back
-   ```
-
-   >[!IMPORTANT]
-   >
-   >为防患未然，我们建议您将nl6. **back文件夹压缩** ，并将其保存到服务器以外的安全位置。
-
-1. 编辑 **config-`<instance name>`.xml** (在 **6.back** 文件夹中)，以防止mta、 **wfserver**、、 ********、等。 服务自动启动。 例如，将autoStart **替换为****_autoStart** (仍为 **Adobe Campaign**)。
+1. 编辑&#x200B;**config-`<instance name>`.xml**（在&#x200B;**nl5.back**&#x200B;文件夹中），以防止&#x200B;**mta**、**wfserver**、**stat**&#x200B;等。 服务自动启动。 例如，将&#x200B;**autoStart**&#x200B;替换为&#x200B;**_autoStart**（仍为&#x200B;**neolane**）。
 
    ```
    <?xml version='1.0'?>
@@ -145,10 +110,10 @@ Linux中的迁移步骤如下：
    </serverconf>
    ```
 
-### 从Adobe Campaignv6.1迁移 {#migrating-from-adobe-campaign-v6-1}
+### 从Adobe Campaignv6.02 {#migrating-from-adobe-campaign-v6-02}迁移
 
 1. 备份Adobe Campaign库。
-1. 以Neolane身 **份登录** ，然后使用以下命 **令备份nl** 6目录：
+1. 以&#x200B;**neolane**&#x200B;身份登录，并使用以下命令备份&#x200B;**nl6**&#x200B;目录：
 
    ```
    su - neolane
@@ -157,18 +122,53 @@ Linux中的迁移步骤如下：
 
    >[!IMPORTANT]
    >
-   >为防患未然，我们建议您将nl6. **back文件夹压缩** ，并将其保存到服务器以外的安全位置。
+   >为防患未然，我们建议您将&#x200B;**nl6.back**&#x200B;文件夹压缩并保存到服务器以外的安全位置。
 
-## 卸载Adobe Campaign先前版本的包 {#uninstalling-adobe-campaign-previous-version-packages}
+1. 编辑&#x200B;**config-`<instance name>`.xml**（在&#x200B;**nl6.back**&#x200B;文件夹中）以防止&#x200B;**mta**、**wfserver**、**stat**&#x200B;等。 服务自动启动。 例如，将&#x200B;**autoStart**&#x200B;替换为&#x200B;**_autoStart**(仍为&#x200B;**Adobe Campaign**)。
+
+   ```
+   <?xml version='1.0'?>
+   <serverconf>
+     <shared>
+       <dataStore hosts="myServer*" lang="en_US">
+         <dataSource name="default">
+           <dbcnx encrypted="1" login="myLogin" password="myPassword"  provider="postgresql" server="myServer"/>
+         </dataSource>
+       </dataStore>
+     </shared>
+   
+     <mta _autoStart="true" statServerAddress="myStatServer"/>
+     <stat _autoStart="true"/>
+     <wfserver _autoStart="true"/>
+     <inMail _autoStart="true"/>
+     <sms _autoStart="false"/>
+   </serverconf>
+   ```
+
+### 从Adobe Campaignv6.1 {#migrating-from-adobe-campaign-v6-1}迁移
+
+1. 备份Adobe Campaign库。
+1. 以&#x200B;**neolane**&#x200B;身份登录，并使用以下命令备份&#x200B;**nl6**&#x200B;目录：
+
+   ```
+   su - neolane
+   mv nl6 nl6.back
+   ```
+
+   >[!IMPORTANT]
+   >
+   >为防患未然，我们建议您将&#x200B;**nl6.back**&#x200B;文件夹压缩并保存到服务器以外的安全位置。
+
+## 卸载Adobe Campaign先前版本的软件包{#uninstalling-adobe-campaign-previous-version-packages}
 
 该过程取决于您的Adobe Campaign先前版本。
 
-### 卸载Adobe Campaignv5包 {#uninstalling-adobe-campaign-v5-packages}
+### 卸载Adobe Campaignv5包{#uninstalling-adobe-campaign-v5-packages}
 
-1. 以根用户 **身份登录**。
+1. 以&#x200B;**root**&#x200B;身份登录。
 1. 标识使用以下命令安装的Adobe Campaign包。
 
-   * 在 **德比**:
+   * 在&#x200B;**Debian**&#x200B;中：
 
       ```
       dpkg -l | grep nl
@@ -181,7 +181,7 @@ Linux中的迁移步骤如下：
       ii  nlthirdparty5                   5660                     nlthirdparty5-5660
       ```
 
-   * 在 **Red Hat**:
+   * 在&#x200B;**Red Hat**&#x200B;中：
 
       ```
       rpm -qa | grep nl
@@ -189,26 +189,26 @@ Linux中的迁移步骤如下：
 
 1. 卸载Adobe Campaignv5包。
 
-   * 在 **德比**:
+   * 在&#x200B;**Debian**&#x200B;中：
 
       ```
       dpkg --purge nlserver5 nlthirdparty5
       ```
 
-   * 在 **Red Hat**:
+   * 在&#x200B;**Red Hat**&#x200B;中：
 
       ```
       rprm -ev nlserver5 nlthirdparty5
       ```
 
-### 卸载Adobe Campaignv6包 {#uninstalling-adobe-campaign-v6-packages}
+### 卸载Adobe Campaignv6包{#uninstalling-adobe-campaign-v6-packages}
 
 本节介绍如何卸载Adobe Campaignv6.02或v6.1包。
 
-1. 以根用户 **身份登录**。
+1. 以&#x200B;**root**&#x200B;身份登录。
 1. 标识使用以下命令安装的Adobe Campaign包。
 
-   * 在 **德比**:
+   * 在&#x200B;**Debian**&#x200B;中：
 
       ```
       dpkg -l | grep nl
@@ -221,7 +221,7 @@ Linux中的迁移步骤如下：
       ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
       ```
 
-   * 在 **Red Hat**:
+   * 在&#x200B;**Red Hat**&#x200B;中：
 
       ```
       rpm -qa | grep nl
@@ -229,13 +229,13 @@ Linux中的迁移步骤如下：
 
 1. 卸载Adobe Campaignv6包。
 
-   * 在 **德比**:
+   * 在&#x200B;**Debian**&#x200B;中：
 
       ```
       dpkg --purge nlserver6 nlthirdparty6
       ```
 
-   * 在 **Red Hat**:
+   * 在&#x200B;**Red Hat**&#x200B;中：
 
       ```
       rprm -ev nlserver6 nlthirdparty6
@@ -245,7 +245,7 @@ Linux中的迁移步骤如下：
 
 该过程取决于您的Adobe Campaign先前版本。
 
-### 从Adobe Campaignv5.11迁移 {#migrating-from-adobe-campaign-v5_11-1}
+### 从Adobe Campaignv5.11 {#migrating-from-adobe-campaign-v5_11-1}迁移
 
 部署Adobe Campaign涉及两个阶段：
 
@@ -256,13 +256,13 @@ Linux中的迁移步骤如下：
 
 1. 使用以下命令安装最新的Adobe Campaignv7包：
 
-   * 在 **德比**:
+   * 在&#x200B;**Debian**&#x200B;中：
 
       ```
       dpkg -i nlserver6-XXXX-linux-2.6-intel.deb
       ```
 
-   * 在 **Red Hat**:
+   * 在&#x200B;**Red Hat**&#x200B;中：
 
       ```
       rpm -Uvh nlserver6-XXXX-0.x86_64.rpm
@@ -273,9 +273,9 @@ Linux中的迁移步骤如下：
 
    >[!NOTE]
    >
-   >从v5.11迁移时，默认情况下，Adobe Campaign **安装在/usr/local/neolane/nl6/** directory中。
+   >从v5.11迁移时，默认情况下，Adobe Campaign安装在&#x200B;**/usr/local/neolane/nl6/**&#x200B;目录中。
    >
-   >安装包后，将显示以下消息： **缺少“WdbcTimeZone”选项**。 这很正常。
+   >安装包后，将显示以下消息：**“WdbcTimeZone”选项缺失**。 这很正常。
 
 1. 要使客户端控制台安装项目可用，请将其复制到Adobe Campaign安装目录中：
 
@@ -285,9 +285,9 @@ Linux中的迁移步骤如下：
 
    >[!NOTE]
    >
-   >有关如何在Linux中安装Adobe Campaign的详细信息，请参 [阅本节](../../installation/using/installing-campaign-standard-packages.md)。
+   >有关如何在Linux中安装Adobe Campaign的详细信息，请参阅[本节](../../installation/using/installing-campaign-standard-packages.md)。
 
-1. 修改与 **Neolane** 用户匹配的 **.bashrd文件** 。 以Neolane身份登录 **并** 运行以下命令：
+1. 修改与&#x200B;**neolane**&#x200B;用户匹配的&#x200B;**.bashrd**&#x200B;文件。 以&#x200B;**neolane**&#x200B;身份登录并运行以下命令：
 
    ```
    su - neolane
@@ -296,11 +296,11 @@ Linux中的迁移步骤如下：
 
    >[!NOTE]
    >
-   >当您以Neolane身份登录 **时**，将显示以下消息： **nl5/env.sh:没有此类文件或目录**。 这很正常。
+   >当您以&#x200B;**neolane**&#x200B;身份登录时，将显示以下消息：**nl5/env.sh没有此类文件或目录**。 这很正常。
 
-   在文件末尾，将nl5/env.sh **替换为****nl6/env.sh**。
+   在文件末尾，将&#x200B;**nl5/env.sh**&#x200B;替换为&#x200B;**nl6/env.sh**。
 
-1. 以root用户 **身份登录** ，然后使用以下命令准备实例：
+1. 以&#x200B;**root**&#x200B;身份登录，然后使用以下命令准备实例：
 
    ```
    /etc/init.d/nlserver6 start   
@@ -314,13 +314,13 @@ Linux中的迁移步骤如下：
 
    >[!NOTE]
    >
-   >通过这些命令，可以创建Adobe Campaignv6内部文件系统： **conf** 目录( **带有config-default** .xml和 **serverConf.xml文件),****var** 目录。
+   >通过这些命令，可以创建Adobe Campaignv6内部文件系统：**conf**&#x200B;目录（带有&#x200B;**config-default.xml**&#x200B;和&#x200B;**serverConf.xml**&#x200B;文件）、**var**&#x200B;目录。
 
-1. 转到nl5. **back** backup文件夹，复制（覆盖）每个实例的配置文件和子文件夹。 以Neolane身份登录 **并** 运行以下命令：
+1. 转到&#x200B;**nl5.back**&#x200B;备份文件夹，并复制（覆盖）每个实例的配置文件和子文件夹。 以&#x200B;**neolane**&#x200B;身份登录并运行以下命令：
 
    >[!IMPORTANT]
    >
-   >对于以下第一个命令，请不 **要复制config-default.xml** 文件。
+   >对于以下第一个命令，请勿复制&#x200B;**config-default.xml**&#x200B;文件。
 
    ```
    su - neolane
@@ -331,13 +331,13 @@ Linux中的迁移步骤如下：
    cp -r nl5.back/var/* nl6/var/
    ```
 
-1. 在Adobe Campaignv7 **serverConf.xml****** 和config-default.xml文件中，应用您对Adobe Campaignv5的特定配置。 对于 **serverConf.xml** 文件，请使 **用nl5/conf/serverConf.xml.diff** 文件。
+1. 在Adobe Campaignv7 **serverConf.xml**&#x200B;和&#x200B;**config-default.xml**&#x200B;文件中，应用您对Adobe Campaignv5的特定配置。 对于&#x200B;**serverConf.xml**&#x200B;文件，请使用&#x200B;**nl5/conf/serverConf.xml.diff**&#x200B;文件。
 
    >[!NOTE]
    >
    >当报告配置从Adobe Campaignv5到Adobe Campaignv7时，请确保物理目录的路径通向Adobe Campaignv7，而不是Adobe Campaignv5。
 
-1. 由于迁移不是通用安装，您需要强制重新启动跟踪 **日志** 。 为此，请打开 **nl6/conf/config-default.xml** 文件并确保已 **激活跟踪日志** （仅在跟踪／重定向服务器上）:
+1. 由于迁移不是通用安装，您需要强制重新启动&#x200B;**trackinglogd**&#x200B;服务。 为此，请打开&#x200B;**nl6/conf/config-default.xml**&#x200B;文件，并确保&#x200B;**trackinglogd**&#x200B;服务已激活（仅在跟踪／重定向服务器上）:
 
    ```
    <trackinglogd autoStart="true"/>
@@ -345,7 +345,7 @@ Linux中的迁移步骤如下：
 
    >[!IMPORTANT]
    >
-   >如果跟 **踪服** 务器上未启动跟踪日志服务，则不会转发跟踪信息。
+   >如果跟踪服务器上未启动&#x200B;**trackinglogd**&#x200B;服务，则不会转发跟踪信息。
 
 1. 使用以下命令重新加载Adobe Campaignv7配置：
 
@@ -353,7 +353,7 @@ Linux中的迁移步骤如下：
    nlserver config -reload
    ```
 
-1. 使用以下命令开始postupgrade进程(仍为 **neolane**):
+1. 使用以下命令开始postupgrade进程（仍为&#x200B;**neolane**）:
 
    ```
    su - neolane
@@ -362,17 +362,17 @@ Linux中的迁移步骤如下：
 
    >[!IMPORTANT]
    >
-   >必须指定在播放期间用作引用的时区(使用- **时区选项** )。 在本例中，我们使用欧洲／巴黎时 **区时区：“欧洲／巴黎”**。
+   >必须指定在播放期间用作引用的时区（使用&#x200B;**-timezone**&#x200B;选项）。 在这种情况下，我们使用欧洲／巴黎时区&#x200B;**时区：&quot;欧洲／巴黎&quot;**。
 
    >[!NOTE]
    >
-   >我们强烈建议将您的用户群升级为“多时区”。 有关时区选项的详细信息，请参 [阅时区](../../migration/using/general-configurations.md#time-zones) 部分。
+   >我们强烈建议将您的用户群升级为“多时区”。 有关时区选项的详细信息，请参阅[时区](../../migration/using/general-configurations.md#time-zones)部分。
 
 >[!IMPORTANT]
 >
 >尚未开始Adobe Campaign服务：仍需在Apache中进行更改。
 
-### 从Adobe Campaignv6.02迁移 {#migrating-from-adobe-campaign-v6_02-1}
+### 从Adobe Campaignv6.02 {#migrating-from-adobe-campaign-v6_02-1}迁移
 
 部署Adobe Campaign涉及两个阶段：
 
@@ -383,13 +383,13 @@ Linux中的迁移步骤如下：
 
 1. 使用以下命令安装最新的Adobe Campaignv7包：
 
-   * 在 **德比**:
+   * 在&#x200B;**Debian**&#x200B;中：
 
       ```
       dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
-   * 在 **Red Hat**:
+   * 在&#x200B;**Red Hat**&#x200B;中：
 
       ```
       rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
@@ -400,7 +400,7 @@ Linux中的迁移步骤如下：
 
    >[!NOTE]
    >
-   >Adobe Campaignv7默认安装在与Adobe Campaignv6.02相同的目录中： **/usr/local/neolane/nl6/**。
+   >Adobe Campaignv7默认安装在与Adobe Campaignv6.02相同的目录中：**/usr/local/neolane/nl6/**。
 
 1. 要使客户端控制台安装项目可用，请将其复制到Adobe Campaign安装目录中：
 
@@ -410,9 +410,9 @@ Linux中的迁移步骤如下：
 
    >[!NOTE]
    >
-   >有关如何在Linux中安装Adobe Campaign的详细信息，请参 [阅本节](../../installation/using/installing-campaign-standard-packages.md)。
+   >有关如何在Linux中安装Adobe Campaign的详细信息，请参阅[本节](../../installation/using/installing-campaign-standard-packages.md)。
 
-1. 由于迁移不是通用安装，您需要强制重新启动跟踪 **日志** 。 为此，请打开 **nl6/conf/config-default.xml** 文件并确保已 **激活跟踪日志** （仅在跟踪／重定向服务器上）:
+1. 由于迁移不是通用安装，您需要强制重新启动&#x200B;**trackinglogd**&#x200B;服务。 为此，请打开&#x200B;**nl6/conf/config-default.xml**&#x200B;文件，并确保&#x200B;**trackinglogd**&#x200B;服务已激活（仅在跟踪／重定向服务器上）:
 
    ```
    <trackinglogd autoStart="true"/>
@@ -420,9 +420,9 @@ Linux中的迁移步骤如下：
 
    >[!IMPORTANT]
    >
-   >如果跟 **踪服** 务器上未启动跟踪日志服务，则不会转发跟踪信息。
+   >如果跟踪服务器上未启动&#x200B;**trackinglogd**&#x200B;服务，则不会转发跟踪信息。
 
-1. 转到nl6. **back备份文件夹** ，并复制（覆盖）每个实例的配置文件和子文件夹。 以Neolane身份登录 **并** 运行以下命令：
+1. 转到&#x200B;**nl6.back**&#x200B;备份文件夹，并复制（覆盖）每个实例的配置文件和子文件夹。 以&#x200B;**neolane**&#x200B;身份登录并运行以下命令：
 
    ```
    su - neolane
@@ -439,7 +439,7 @@ Linux中的迁移步骤如下：
    nlserver config -reload
    ```
 
-1. 使用以下命令开始postupgrade进程(仍为 **neolane**):
+1. 使用以下命令开始postupgrade进程（仍为&#x200B;**neolane**）:
 
    ```
    su - neolane
@@ -448,9 +448,9 @@ Linux中的迁移步骤如下：
 
    >[!NOTE]
    >
-   >“多时区”模式仅在v6.02中对于PostgreSQL数据库引擎可用。 现在，无论使用哪个版本的数据库引擎，都可以使用它。 我们强烈建议将您的用户群升级为“多时区”。 有关时区选项的详细信息，请参 [阅时区](../../migration/using/general-configurations.md#time-zones) 部分。
+   >“多时区”模式仅在v6.02中对于PostgreSQL数据库引擎可用。 现在，无论使用哪个版本的数据库引擎，都可以使用它。 我们强烈建议将您的用户群升级为“多时区”。 有关时区选项的详细信息，请参阅[时区](../../migration/using/general-configurations.md#time-zones)部分。
 
-### 从Adobe Campaignv6.1迁移 {#migrating-from-adobe-campaign-v6_1-1}
+### 从Adobe Campaignv6.1 {#migrating-from-adobe-campaign-v6_1-1}迁移
 
 部署Adobe Campaign涉及两个阶段：
 
@@ -461,13 +461,13 @@ Linux中的迁移步骤如下：
 
 1. 使用以下命令安装最新的Adobe Campaignv7包：
 
-   * 在 **德比**:
+   * 在&#x200B;**Debian**&#x200B;中：
 
       ```
       dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
-   * 在 **Red Hat**:
+   * 在&#x200B;**Red Hat**&#x200B;中：
 
       ```
       rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
@@ -478,7 +478,7 @@ Linux中的迁移步骤如下：
 
    >[!NOTE]
    >
-   >Adobe Campaignv7默认 **安装在/usr/local/neolane/nl6/** directory中。
+   >Adobe Campaignv7默认安装在&#x200B;**/usr/local/neolane/nl6/**&#x200B;目录中。
 
 1. 要使客户端控制台安装项目可用，请将其复制到Adobe Campaign安装目录中：
 
@@ -488,9 +488,9 @@ Linux中的迁移步骤如下：
 
    >[!NOTE]
    >
-   >有关如何在Linux中安装Adobe Campaign的详细信息，请参 [阅本节](../../installation/using/installing-campaign-standard-packages.md)。
+   >有关如何在Linux中安装Adobe Campaign的详细信息，请参阅[本节](../../installation/using/installing-campaign-standard-packages.md)。
 
-1. 转到nl6. **back备份文件夹** ，并复制（覆盖）每个实例的配置文件和子文件夹。 以Neolane身份登录 **并** 运行以下命令：
+1. 转到&#x200B;**nl6.back**&#x200B;备份文件夹，并复制（覆盖）每个实例的配置文件和子文件夹。 以&#x200B;**neolane**&#x200B;身份登录并运行以下命令：
 
    ```
    su - neolane
@@ -507,31 +507,31 @@ Linux中的迁移步骤如下：
    nlserver config -reload
    ```
 
-1. 使用以下命令开始postupgrade进程(仍为 **neolane**):
+1. 使用以下命令开始postupgrade进程（仍为&#x200B;**neolane**）:
 
    ```
    su - neolane
    nlserver config -postupgrade -instance:<instance name>
    ```
 
-## 迁移重定向服务器(Apache) {#migrating-the-redirection-server--apache-}
+## 迁移重定向服务器(Apache){#migrating-the-redirection-server--apache-}
 
 >[!NOTE]
 >
 >本条仅在从Adobe Campaignv5.11迁移时适用。
 
-目前，阿帕奇需要停止。 请参阅： [服务停止](#service-stop)。
+目前，阿帕奇需要停止。 请参阅：[服务停止](#service-stop)。
 
-1. 以根用户 **身份登录**。
-1. 更改Apache环境变量，使其链接到 **nl6** 目录。
+1. 以&#x200B;**root**&#x200B;身份登录。
+1. 更改Apache环境变量，使其链接到&#x200B;**nl6**&#x200B;目录。
 
-   * 在 **德比**:
+   * 在&#x200B;**Debian**&#x200B;中：
 
       ```
       vi /etc/apache2/envvars
       ```
 
-   * 在 **Red Hat**:
+   * 在&#x200B;**Red Hat**&#x200B;中：
 
       ```
       vi /usr/local/apache2/bin/envvars
@@ -539,15 +539,15 @@ Linux中的迁移步骤如下：
 
 1. 然后运行以下命令：
 
-   * 在 **德比**:
+   * 在&#x200B;**Debian**&#x200B;中：
 
-      在nlsrv. **load文件中** ，将nl5 **替换为** nl **6**。
+      在&#x200B;**nlsrv.load**&#x200B;文件中，将&#x200B;**nl5**&#x200B;替换为&#x200B;**nl6**。
 
       ```
       vi /etc/apache2/mods-available/nlsrv.load
       ```
 
-      删除nlsrv.conf文 **件的链接** ，并创建新文件。
+      删除&#x200B;**nlsrv.conf**&#x200B;文件的链接并创建新链接。
 
       ```
       rm /etc/apache2/mods-available/nlsrv.conf 
@@ -555,34 +555,34 @@ Linux中的迁移步骤如下：
       mods-available/nlsrv.conf
       ```
 
-   * 在 **Red Hat**:
+   * 在&#x200B;**Red Hat**&#x200B;中：
 
-      转至/usr/ **local/apache/conf** directory，编辑 **http.conf文件，将** nl5 **替换为** 以 **** 下行中的nl6。
+      转到&#x200B;**/usr/local/apache2/conf**&#x200B;目录，编辑&#x200B;**http.conf**&#x200B;文件，并将以下行中的&#x200B;**nl5**&#x200B;替换为&#x200B;**nl6**。
 
-      在 **RHEL 7/Debian 8中**:
+      在&#x200B;**RHEL 7/Debian 8**&#x200B;中：
 
       ```
       LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
       Include /usr/local/neolane/nl6/tomcat-6/conf/apache_neolane.conf
       ```
 
-1. 转到alias. **conf文件** ，将所有nl5 **替换为** nl **6**。 要在Debian中执行此操作，请运行以下命令：
+1. 转到&#x200B;**alias.conf**&#x200B;文件，将所有&#x200B;**nl5**&#x200B;替换为&#x200B;**nl6**。 要在Debian中执行此操作，请运行以下命令：
 
    ```
    vi /etc/apache2/mods-available/alias.conf
    ```
 
-## 安全区 {#security-zones}
+## 安全区域{#security-zones}
 
-如果您是从v6.02或更低版本迁移的，则必须先配置安全区域，然后才能启动服务。 有关详细信息，请参阅 [安全性](../../migration/using/general-configurations.md#security)。
+如果您是从v6.02或更低版本迁移的，则必须先配置安全区域，然后才能启动服务。 有关详细信息，请参阅[安全](../../migration/using/general-configurations.md#security)。
 
-## 重新启动服务 {#re-starting-services}
+## 重新启动服务{#re-starting-services}
 
 该过程取决于您的Adobe Campaign先前版本。
 
-### 从Adobe Campaignv5.11迁移 {#migrating-from-adobe-campaign-v5_11-2}
+### 从Adobe Campaignv5.11 {#migrating-from-adobe-campaign-v5_11-2}迁移
 
-在config- **`<instance name>`.xml文件中，重新激活** mta、wfserver **、****、**&#x200B;等的自动 ****&#x200B;启动。 服务。
+在&#x200B;**config-`<instance name>`.xml**&#x200B;文件中，重新激活&#x200B;**mta**、**wfserver**、**stat**&#x200B;等的自动启动。 服务。
 
 ```
 <?xml version='1.0'?>
@@ -609,11 +609,11 @@ Linux中的迁移步骤如下：
 1. 中间源服务器.
 1. 营销服务器。
 
-在执行下一步之前，请对新安装运行完整测试，确保没有回归，并且所有功能都可以遵循“常规配置”部分中的所有建议 [来工作](../../migration/using/general-configurations.md) 。
+在执行下一步之前，请对新安装运行完整测试，确保没有退回，并且所有功能均可遵循[常规配置](../../migration/using/general-configurations.md)部分中的所有建议。
 
-### 从Adobe Campaignv6.02迁移 {#migrating-from-adobe-campaign-v6_02-2}
+### 从Adobe Campaignv6.02 {#migrating-from-adobe-campaign-v6_02-2}迁移
 
-在config- **`<instance name>`.xml文件中，重新激活** mta、wfserver **、****、**&#x200B;等的自动 ****&#x200B;启动。 服务。
+在&#x200B;**config-`<instance name>`.xml**&#x200B;文件中，重新激活&#x200B;**mta**、**wfserver**、**stat**&#x200B;等的自动启动。 服务。
 
 ```
 <?xml version='1.0'?>
@@ -640,9 +640,9 @@ Linux中的迁移步骤如下：
 1. 中间源服务器.
 1. 营销服务器。
 
-完全测试新安装，检查它没有倒回，并通过遵循“常规配置”部分中的所有建议确保一切正 [常工作](../../migration/using/general-configurations.md) 。
+请完全测试新安装，检查它是否没有倒回，并确保所有内容都正常工作，具体方法是遵循[常规配置](../../migration/using/general-configurations.md)部分中的所有建议。
 
-### 从Adobe Campaignv6.1迁移 {#migrating-from-adobe-campaign-v6_1-2}
+### 从Adobe Campaignv6.1 {#migrating-from-adobe-campaign-v6_1-2}迁移
 
 开始Apache和Adobe Campaign服务，位于以下各台服务器上：
 
@@ -650,7 +650,7 @@ Linux中的迁移步骤如下：
 1. 中间源服务器.
 1. 营销服务器。
 
-完全测试新安装，检查它没有倒回，并通过遵循“常规配置”部分中的所有建议确保一切正 [常工作](../../migration/using/general-configurations.md) 。
+请完全测试新安装，检查它是否没有倒回，并确保所有内容都正常工作，具体方法是遵循[常规配置](../../migration/using/general-configurations.md)部分中的所有建议。
 
 ## 删除和清理Adobe Campaignv5 {#deleting-and-cleansing-adobe-campaign-v5}
 
@@ -663,7 +663,7 @@ Linux中的迁移步骤如下：
 * 让功能团队对新安装进行完整检查。
 * 只有确定不需要回滚时，才能卸载Adobe Campaignv5。
 
-删除 **nl5.back目录** 。 以Neolane身份登录 **并** 运行以下命令：
+删除&#x200B;**nl5.back**&#x200B;目录。 以&#x200B;**neolane**&#x200B;身份登录并运行以下命令：
 
 ```
 su - neolane
