@@ -19,11 +19,11 @@ ht-degree: 8%
 
 技术工作流需要被监控，并且在失败时需要采取相应的操作。
 
-本页介绍了监视不同活动过程的其 [他方法](../../production/using/monitoring-guidelines.md)。
+此页[中提供了监视不同活动进程的其他方法。](../../production/using/monitoring-guidelines.md)
 
-## 实例监视仪表板 {#instance-monitoring-dashboard}
+## 实例监视仪表板{#instance-monitoring-dashboard}
 
-实例监视仪表板可以通过宇宙进 **[!UICONTROL Monitoring]** 行访问。
+实例监视仪表板可以通过&#x200B;**[!UICONTROL Monitoring]**&#x200B;范围访问。
 
 ![](assets/monitoring_technical_workflows1.png)
 
@@ -35,35 +35,35 @@ ht-degree: 8%
 
 ## 技术工作流 {#technical-workflows}
 
-技术工作流可从 **[!UICONTROL Administration]** > **[!UICONTROL Production]** >获 **[!UICONTROL Technical workflows]**&#x200B;得。
+技术工作流可从&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**&#x200B;获取。
 
 根据技术工作流程，请按照以下详细步骤确保一切正常工作。
 
-要更好地了解每个技术工作流程应执行的操作，请参阅此 [部分](../../workflow/using/about-technical-workflows.md)。
+要更好地了解每个技术工作流应执行的操作，请参阅此[部分](../../workflow/using/about-technical-workflows.md)。
 
-对于 **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
+对于&#x200B;**[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. 检查工作流 **[!UICONTROL Database Cleanup]** 是否每天运行并成功完成。 有关详细信息，请参见此 [ 页面](../../workflow/using/delivery.md)。
+1. 检查&#x200B;**[!UICONTROL Database Cleanup]**&#x200B;工作流是否每天运行并成功完成。 有关详细信息，请参见此 [ 页面](../../workflow/using/delivery.md)。
 1. 查看日志，确认已用时间随时间的推移是相对恒定的，并且不会干扰其他工作流。
-1. 有关详细信息，请检查 [此页](../../production/using/database-cleanup-workflow.md)。
+1. 有关详细信息，请检查此[页面](../../production/using/database-cleanup-workflow.md)。
 
-对于 **[!UICONTROL Tracking workflow (‘tracking’)]**:
+对于&#x200B;**[!UICONTROL Tracking workflow (‘tracking’)]**:
 
 检查跟踪工作流是否按计划运行（默认为每小时），以及日志是否不会突出显示重复错误。 有关更多信息，请参阅此](../../workflow/using/delivery.md)章节[。
 
-对于 **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
+对于&#x200B;**[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. 检查工作流 **[!UICONTROL Deliverability update]** 是否每天运行并成功完成。 有关详细信息，请参见此 [ 页面](../../workflow/using/delivery.md)。
+1. 检查&#x200B;**[!UICONTROL Deliverability update]**&#x200B;工作流是否每天运行并成功完成。 有关详细信息，请参见此 [ 页面](../../workflow/using/delivery.md)。
 1. 在日志中验证规则是否正在定期更新。
 
-对于 **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
+对于&#x200B;**[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. 查看文件夹下的所有 **[!UICONTROL Campaign process]** 工作流。 有关详细信息，请参见此 [ 页面](../../workflow/using/campaign.md)。
+1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;文件夹下的所有工作流。 有关详细信息，请参见此 [ 页面](../../workflow/using/campaign.md)。
 1. 检查工作流是否按计划运行，以及日志是否突出显示重复的错误。
 
-## 工作流监控 {#workflow-supervision}
+## 工作流监视{#workflow-supervision}
 
-该 **[!UICONTROL Workflow supervisors]** 组应包含需要通知故障和可以及时采取行动的操作员。
+**[!UICONTROL Workflow supervisors]**&#x200B;组应包含需要通知故障以及可以及时采取行动的运算符。
 
 ![](assets/monitoring_technical_workflows3.png)
 
@@ -73,7 +73,7 @@ ht-degree: 8%
 
 为了保持平台正常工作，应运行的任何工作流（如每日数据导入）都应声明为“生产”（复选框）并以粗体显示。
 
-## 工作流维护列表 {#workflow-maintenance-list}
+## 工作流维护列表{#workflow-maintenance-list}
 
 所有自定义技术工作流都应记录在包含以下内容的工作表中：
 
@@ -85,7 +85,7 @@ ht-degree: 8%
 
 ![](assets/monitoring_technical_workflows4.png)
 
-## 监控的规划和自动化 {#planning-and-automation-of-monitoring}
+## 规划和自动化监视{#planning-and-automation-of-monitoring}
 
 规划工作流监控提高了其效率。 某些任务需要每天进行，而其他任务可以每周或每月进行。
 
