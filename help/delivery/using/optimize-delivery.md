@@ -24,21 +24,21 @@ ht-degree: 6%
 
 几个因素会直接影响服务器性能并降低平台速度：
 
-* 个性化元素的数量和类型：电子邮件中的个性化会为每个收件人从数据库中提取数据。 如果存在许多个性化元素，则会增加准备投放所需的数据量。  Learn more about personalization in [this section](../../delivery/using/about-personalization.md)
+* 个性化元素的数量和类型：电子邮件中的个性化会为每个收件人从数据库中提取数据。 如果存在许多个性化元素，则会增加准备投放所需的数据量。  在[本节](../../delivery/using/about-personalization.md)中了解有关个性化的更多信息
 
 * 服务器加载：当营销服务器同时处理许多不同的任务时，它会降低性能。 营销服务器需要协调所有投放的所有传入和传出数据，以确保数据准确、及时。
 
-   **提示** -为避免这种情况，请与团队中的其他成员协调投放的安排以确保最佳性能。
+   **提示** -为避免这种情况，请与团队中的其他成员协调投放的安排，以确保获得最佳性能。
 
-* 工作流执行：监控工作流对于避免平台性能问题至关重要。 请遵循本文档 [中列出的准则](../../workflow/using/workflow-best-practices.md#execution-and-performance)。
+* 工作流执行：监控工作流对于避免平台性能问题至关重要。 遵循本文档](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的[准则。
 
-* 作为托管客户，您可以利用 [活动控制面板功能](https://docs.adobe.com/content/help/en/control-panel/using/discover-control-panel/key-features.html) ，使用性能监 [控功能监控平台](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/about-performance-monitoring.html) 。
+* 作为托管客户，您可以使用[性能监控](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/about-performance-monitoring.html)功能，利用[活动控制面板功能](https://docs.adobe.com/content/help/en/control-panel/using/discover-control-panel/key-features.html)来监控您的平台。
 
-## 检查网络配置 {#network-config}
+## 正在检查网络配置{#network-config}
 
 要在处理大量电子邮件时优化投放并避免被误认为是垃圾邮件发送者，请确保您拥有合法的网络配置，该配置不会尝试隐藏服务器的标识。
 
-**提示**: 使用与您品牌网站对应的透明发件人地址。 例如，旅行社公司管理华伦天奴连锁酒店。 它拥有其网站的valentino.com域。 为了推广巴黎的华伦天奴酒店，它使用paris.valentino.com子域。 因此，相关发件人地址可以是hotel@paris.valentino.com。
+**提示**:使用与您品牌网站对应的透明发件人地址。例如，旅行社公司管理华伦天奴连锁酒店。 它拥有其网站的valentino.com域。 为了推广巴黎的华伦天奴酒店，它使用paris.valentino.com子域。 因此，相关发件人地址可以是hotel@paris.valentino.com。
 
 ## 可交付性管理 {#deliverability-management}
 
@@ -48,13 +48,13 @@ ht-degree: 6%
 
    * 它指决定电子邮件被收件人服务器接受的能力的因素。 ISP(Internet服务提供商)过滤其标识为垃圾邮件的电子邮件，或阻止图像下载。 如果他们确定某个域发送的电子邮件过多，他们将对接受该发件人的电子邮件数量设置限制。
 
-   * 在检查电子邮件的可交付性时，您希望关注四个主要类别:数据质量、消息和内容、发送基础架构和声誉。 有关此主题的更深入介绍，请参 [阅此部分](../../delivery/using/about-deliverability.md)。
+   * 在检查电子邮件的可交付性时，您希望关注四个主要类别:数据质量、消息和内容、发送基础架构和声誉。 有关本主题的更深入介绍，请参阅[本节](../../delivery/using/about-deliverability.md)。
 
-* 应用此文档中 [详细的建议](../../delivery/using/deliverability-key-points.md)。
+* 应用此文档](../../delivery/using/deliverability-key-points.md)中详细的[建议。
 
 * 请与Adobe代表联系以获得帮助。
 
-## 隔离管理 {#quarantine-management}
+## 隔离管理{#quarantine-management}
 
 保持良好的隔离管理流程符合您的最佳利益。
 
@@ -62,7 +62,7 @@ ht-degree: 6%
 
 **提示**
 
-* 如果列表的地址无效，Adobe建议通过> >将其导入到隔离 **[!UICONTROL Administration]** 表 **[!UICONTROL Campaign Management]** 中 **[!UICONTROL Non deliverables Management]** 。 **[!UICONTROL Non deliverables and addresses]**
+* 如果列表的地址无效，Adobe建议将其导入到隔离表中，方法为：**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**。
 
 * 在投放分析中，默认情况下将排除其地址被隔离的收件人:他们不是目标。 这样可加快投放速度，因为错误率对投放速度有显著的影响。可以隔离电子邮件地址，例如，当收件箱已满或地址不存在时。 [了解详情](#identifying-quarantined-addresses-for-a-delivery)
 
@@ -73,8 +73,8 @@ ht-degree: 6%
 
 * 隔离管理还将通过排除投放的错误电话号码来帮助降低短信发送成本。
 
-## 多次加入机制 {#double-opt-in}
+## 多次加入机制{#double-opt-in}
 
 为了避免向无效地址发送消息、限制不当通信并提高发送者信誉，Adobe建议实施多次选择加入机制以进行订阅后确认。 这有助于确保收件人有意订阅。
 
-本节概述了实施这一机制 [的详细信息](../../web/using/use-cases--web-forms.md)。
+[本节](../../web/using/use-cases--web-forms.md)中概述了实现此机制的详细信息。
