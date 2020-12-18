@@ -23,7 +23,7 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->这栋建筑已被收回。 请升 [级到最新版本](../../production/using/build-upgrade.md) ，或与 [Adobe客户服务联系](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>这栋建筑已被收回。 请[升级到最新版本](../../production/using/build-upgrade.md)或与[Adobe客户服务部](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。
 
 **新增功能**
 
@@ -48,13 +48,13 @@ ht-degree: 6%
 * 修复了导致在跟踪广播中显示负载平衡器IP而非客户IP的问题。 (NEO-11295)
 * 修复了导致投放属性被错误覆盖的随机问题。 (NEO-11015)
 * 修复了在对扩充活动结果排序时出现的语法错误。 (NEO-11394)
-* 修复了在工作流活动中使用计算字段 **[!UICONTROL Survey answers]** 时的问题。 (NEO-11382)
+* 修复了在&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流活动中使用计算字段时的问题。 (NEO-11382)
 * Tomcat已更新，以防止漏洞利用。 (NEO-11503)
 * 修复了使用PostgreSQL联合数据访问库的连接时LATIN1编码错误。 (NEO-11299)
-* 修复了使用投放选项时发 **[!UICONTROL Prepare the personalization data with a workflow]** 生的问题。 (NEO-11047)
+* 修复了使用&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;投放选项时出现的问题。 (NEO-11047)
 * 修复了在使用扩展连接器时无法发送SMS的错误等级问题。
 * 改进的包导入／导出（在界面中添加了日志和区域）。
-* 修复了在工作流活动未完全配置时，在配置级别日志中 **[!UICONTROL Survey answers]** 显示无用错误的问题。
+* 修复了在&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流活动未完全配置时，在postupgrade日志中显示无用错误的问题。
 
 **技术演进**
 
@@ -62,11 +62,11 @@ ht-degree: 6%
 
 特定密钥（PROXYUSER或PROXYROLE）用于将Teradata用户或角色与活动用户关联。 已添加新权限以使用此代理用户／角色。 您需要向CONNECT库帐户(在Teradata外部帐户中定义的帐户)添加GRANTTHROUGH访问权限。
 
-在Teradata外部帐户中添加了新标签。 该选 **[!UICONTROL Query banding]** 项卡包含以下选项：
+在Teradata外部帐户中添加了新标签。 **[!UICONTROL Query banding]**&#x200B;选项卡包含以下选项：
 
 * **[!UICONTROL Active]**:选中此框可激活特征。
-* **[!UICONTROL Default]**:输入默认查询条带，如果用户没有关联的查询条带，则将使用该条带。 如果没有定义默认查询条带，则没有关联查询条带的用户将无法使用Teradata。
-* **[!UICONTROL Users]**:为每个用户指定查询条带。 您可以添加所需数量的键／值对。 例如：“priority=1;workload=high;
+* **[!UICONTROL Default]**:输入默认查询条带，如果用户没有关联的查询条带，则将使用该条带。如果没有定义默认查询条带，则没有关联查询条带的用户将无法使用Teradata。
+* **[!UICONTROL Users]**:为每个用户指定查询条带。您可以添加所需数量的键／值对。 例如：“priority=1;workload=high;
 
 有关查询条纹的详细信息，请参阅以下文章：
 
@@ -79,7 +79,7 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->这栋建筑已被收回。 请升 [级到最新版本](../../production/using/build-upgrade.md) ，或与技 [术支持联系](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>这栋建筑已被收回。 请[升级到最新版本](../../production/using/build-upgrade.md)或与[技术支持](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。
 
 **新增功能**
 
@@ -97,7 +97,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> 支持Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign现在与Windows Server 2016兼容。 请参阅 <a href="https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html">Campaign Classic兼容性表</a>。<br /> </td> 
+   <td> Adobe Campaign现在与Windows Server 2016兼容。 请参阅<a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campaign Classic兼容性矩阵</a>。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -106,21 +106,21 @@ ht-degree: 6%
 
 decryptString
 
-decryptString **函数** 已弃用。 请参阅已弃 [用和已删除功能](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html) 。
+**decryptString**&#x200B;函数已弃用。 请参阅[已弃用和已删除的功能](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html)文章。
 
-对于新客户，此函数现在仅用于解密登陆页中收件人的加密ID。 要解密存储在外部帐户中的口令，请使用新的 **decryptPassword** 函数。
+对于新客户，此函数现在仅用于解密登陆页中收件人的加密ID。 要解密存储在外部帐户中的密码，请使用新的&#x200B;**decryptPassword**&#x200B;函数。
 
-对于现有客户，此函数的行为不会更改，但建议您使用decryptPassword **，而** 不是decryptString ****。 XtkSecurity **_Unsafe_DecryptString兼容性选项由配置程序添加** ，并在默认情况下处于激活状态，这样您就可以继续使用该函数。 如果要取消激活 **decryptString**，请取消激活该选项。
+对于现有客户，此函数的行为不会更改，但建议您使用&#x200B;**decryptPassword**&#x200B;而不是&#x200B;**decryptString**。 **XtkSecurity_Unsafe_DecryptString**&#x200B;兼容性选项由配置程序添加并在默认情况下处于激活状态，这样您就可以继续使用该函数。 如果要取消激活&#x200B;**decryptString**，请取消激活该选项。
 
 decryptPassword
 
-已 **添加** decryptPassword函数。 它允许您解密存储在外部帐户中的密码。 有关详细 [信息](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html) ，请参阅JSAPI文档。
+已添加&#x200B;**decryptPassword**&#x200B;函数。 它允许您解密存储在外部帐户中的密码。 有关详细信息，请参阅[JSAPI](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)文档。
 
 文件API
 
-对于新安装，通过文件API访问文件夹的权限 **仅限于var**、 **sftp** 和临时Adobe Campaign文件夹。
+对于新安装，通过文件API访问文件夹仅限于&#x200B;**var**、**sftp**&#x200B;和临时Adobe Campaign文件夹。
 
-对于现有客户，文件API不再能访问 **Adobe Campaign** conf文件夹。 XtkSecurity **_Disable_JSFileSandboxing兼容性选项由配置程序添加** ，默认情况下会激活它，这样您就可以继续访问其他文件夹。 如果要限制对Adobe Campaign的var、 **sftp****** 和临时文件夹的访问，请取消激活该选项。
+对于现有客户，文件API无法再访问Adobe Campaign的&#x200B;**conf**&#x200B;文件夹。 **XtkSecurity_Disable_JSFileSandboxing**&#x200B;兼容性选项由配置程序添加，默认情况下处于激活状态，允许您继续访问其他文件夹。 如果要限制对&#x200B;**var**、**sftp**&#x200B;和临时Adobe Campaign文件夹的访问，请取消激活该选项。
 
 **修补程序**
 
