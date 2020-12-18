@@ -17,24 +17,24 @@ ht-degree: 1%
 
 # 附加文件{#attaching-files}
 
-## 关于电子邮件附件 {#about-email-attachments}
+## 关于电子邮件附件{#about-email-attachments}
 
 您可以将一个或多个文件附加到电子邮件投放。
 
 >[!NOTE]
 >
->为避免性能问题，建议每封电子邮件不要包含多个附件。 可以通过列表的 [Campaign Classic选项配置建议的阈值](../../installation/using/configuring-campaign-options.md#delivery)。
+>为避免性能问题，建议每封电子邮件不要包含多个附件。 建议的阈值可以从[Campaign Classic选项的列表](../../installation/using/configuring-campaign-options.md#delivery)进行配置。
 
 可能有两种情况：
 
 * 选择一个文件，并按原样将其附加到投放。
-* 为每个收件人个性化附件的内容。 在这种情况下，您需要创建计算 **附件**:在投放时，根据收件人计算每个消息的附件名称。 如果您有“可变数字打印”选项，投放时也可以个性化内容并将其 **转换为PDF** 格式。
+* 为每个收件人个性化附件的内容。 在这种情况下，您需要创建&#x200B;**计算附件**:在投放时，根据收件人计算每个消息的附件名称。 如果您有&#x200B;**可变数字打印**&#x200B;选项，则投放时也可以个性化内容并转换为PDF格式。
 
 >[!NOTE]
 >
->此类配置通常在投放模板中执行。 For more on this, refer to [About templates](../../delivery/using/about-templates.md).
+>此类配置通常在投放模板中执行。 有关详细信息，请参阅[关于模板](../../delivery/using/about-templates.md)。
 
-## 附加本地文件 {#attaching-a-local-file}
+## 附加本地文件{#attaching-a-local-file}
 
 要将本地文件附加到投放，请按照以下步骤操作。
 
@@ -42,21 +42,21 @@ ht-degree: 1%
 >
 >可以向投放附加多个文件。 附件可以采用任何格式，包括压缩格式。
 
-1. 单击链 **[!UICONTROL Attachments]** 接。
+1. 单击&#x200B;**[!UICONTROL Attachments]**&#x200B;链接。
 1. 单击 **[!UICONTROL Add]** 按钮。
-1. 单 **[!UICONTROL File...]** 击以选择要附加到投放的文件。
+1. 单击&#x200B;**[!UICONTROL File...]**&#x200B;以选择要附加到投放的文件。
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
 
-您还可以直接将文件拖放到投放 **[!UICONTROL Attachments]** 字段中，或使用 **[!UICONTROL Attach]** 投放向导工具栏中的图标。
+您还可以直接将文件拖放到投放&#x200B;**[!UICONTROL Attachments]**&#x200B;字段中，或使用投放向导工具栏中的&#x200B;**[!UICONTROL Attach]**&#x200B;图标。
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 
-选择文件后，该文件将立即上传到服务器，供投放时使用。 它列在字 **[!UICONTROL Attachments]** 段中。
+选择文件后，该文件将立即上传到服务器，供投放时使用。 它列在&#x200B;**[!UICONTROL Attachments]**&#x200B;字段中。
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
-## 创建计算附件 {#creating-a-calculated-attachment}
+## 创建计算附件{#creating-a-calculated-attachment}
 
 创建计算的附件时，可以在分析或投放每条消息时计算附件的名称，并取决于收件人。 还可以个性化并转换为PDF。
 
@@ -64,9 +64,9 @@ ht-degree: 1%
 
 要创建个性化附件，请执行以下步骤：
 
-1. 单击链 **[!UICONTROL Attachments]** 接。
-1. 单击按 **[!UICONTROL Add]** 钮，然后选择 **[!UICONTROL Calculated attachment]**。
-1. 从下拉列表中选 **[!UICONTROL Type]** 择计算类型：
+1. 单击&#x200B;**[!UICONTROL Attachments]**&#x200B;链接。
+1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后选择&#x200B;**[!UICONTROL Calculated attachment]**。
+1. 从&#x200B;**[!UICONTROL Type]**&#x200B;下拉列表中选择计算类型：
 
 ![](assets/s_ncs_user_wizard_email01_136.png)
 
@@ -77,24 +77,24 @@ ht-degree: 1%
 * **文件名在投放分析期间计算(它不能取决于收件人用户档案)**
 * **在投放时计算每个收件人的文件名(取决于收件人)**
 
-### 附加本地文件 {#attach-a-local-file}
+### 附加本地文件{#attach-a-local-file}
 
-如果附件是本地文件，请选择以下选项： **[!UICONTROL File name is specified when creating the delivery template]**. 文件将选择在本地并上传到服务器。 按照下面的步骤进行操作：
+如果附件是本地文件，请选择以下选项：**[!UICONTROL File name is specified when creating the delivery template]**。 文件将选择在本地并上传到服务器。 按照下面的步骤进行操作：
 
-1. 在字段中选择要上传的 **[!UICONTROL Local file]** 文件。
+1. 在&#x200B;**[!UICONTROL Local file]**&#x200B;字段中选择要上传的文件。
 1. 根据需要指定标签。 在消息传递系统中查看时，标签将替换文件名。 如果未指定任何内容，则默认情况下使用文件名。
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
 
-1. 如有必要，请选 **[!UICONTROL Upload file on the server]**&#x200B;择，然后单击 **[!UICONTROL Update on server]** 以开始传输。
+1. 如有必要，选择&#x200B;**[!UICONTROL Upload file on the server]**，然后单击&#x200B;**[!UICONTROL Update on server]**&#x200B;以开始传输。
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
 然后，该文件在服务器上可用，并附加到从该模板创建的不同投放。
 
-### 附加个性化信息 {#attach-a-personalized-message}
+### 附加个性化消息{#attach-a-personalized-message}
 
-通过选 **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** 项可以选择包含个性化字段的文件，如预期收件人的姓和名。
+选项&#x200B;**[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]**&#x200B;允许您选择包含个性化字段的文件，如预期收件人的姓和名。
 
 ![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
@@ -104,10 +104,10 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >必须在LibreOffice中创建源文件。 必须根据本节中详细介绍的先决条件配置 [实例](../../installation/using/before-starting.md)。
+   >必须在LibreOffice中创建源文件。 必须根据[本节](../../installation/using/before-starting.md)中详细介绍的先决条件配置实例。
 
 1. 根据需要指定标签。
-1. 选 **[!UICONTROL Upload file on the server]**&#x200B;择，然后单击 **[!UICONTROL Update on server]** 以开始传输。
+1. 选择&#x200B;**[!UICONTROL Upload file on the server]**，然后单击&#x200B;**[!UICONTROL Update on server]**&#x200B;以开始传输。
 1. 您可以显示预览。 为此，请选择收件人。
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_07.png)
@@ -120,11 +120,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->为避免性能问题，如果您将通过个性化URL动态下载的图像作为附件，则默认情况下，每个图像大小不应超过100,000字节。 此推荐阈值可以通过 [列表Campaign Classic选项配置](../../installation/using/configuring-campaign-options.md#delivery)。
+>为避免性能问题，如果您将通过个性化URL动态下载的图像作为附件，则默认情况下，每个图像大小不应超过100,000字节。 此建议的阈值可以从[Campaign Classic选项的列表](../../installation/using/configuring-campaign-options.md#delivery)进行配置。
 
-### 附加计算文件 {#attach-a-calculated-file}
+### 附加计算文件{#attach-a-calculated-file}
 
-您可以在准备投放时计算附件名称。 To do this, select the option **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
+您可以在准备投放时计算附件名称。 为此，请选择选项&#x200B;**[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**。
 
 >[!NOTE]
 >
@@ -145,9 +145,9 @@ ht-degree: 1%
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
 
-### 附加个性化文件 {#attach-a-personalized-file}
+### 附加个性化文件{#attach-a-personalized-file}
 
-选择附件时，可以选择选项 **[!UICONTROL The file name is calculated during delivery for each recipient (it can depend on the recipient)]**。 然后，您可以将收件人个性化数据与要发送的文件名称进行映射。
+选择附件时，可以选择选项&#x200B;**[!UICONTROL The file name is calculated during delivery for each recipient (it can depend on the recipient)]**。 然后，您可以将收件人个性化数据与要发送的文件名称进行映射。
 
 >[!NOTE]
 >
@@ -168,9 +168,9 @@ ht-degree: 1%
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_011.png)
 
-### 附件设置 {#attachment-settings}
+### 附件设置{#attachment-settings}
 
-对于前两个选项，您可以选 **[!UICONTROL Upload file on the server]** 择相应的选项。 链接 **[!UICONTROL Update the file on the server]** 允许您开始上传。
+对于前两个选项，您可以通过选择相应的选项来选择&#x200B;**[!UICONTROL Upload file on the server]**。 通过&#x200B;**[!UICONTROL Update the file on the server]**&#x200B;链接可以开始上传。
 
 ![](assets/s_ncs_user_wizard_email01_137.png)
 
@@ -182,9 +182,9 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_wizard_email01_1372.png)
 
-通过 **[!UICONTROL Advanced]** 该选项卡，您可以定义附加文件的高级选项：
+使用&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡，可以定义附加文件的高级选项：
 
-* 您可以定义筛选器选项，以避免将附加的文件发送到所有收件人。 该选 **[!UICONTROL Enable filtering of recipients who will receive the attachment]** 项激活用于定义收件人选择脚本的输入字段，该脚本必须在JavaScript中输入。
+* 您可以定义筛选器选项，以避免将附加的文件发送到所有收件人。 选项&#x200B;**[!UICONTROL Enable filtering of recipients who will receive the attachment]**&#x200B;激活用于定义收件人选择脚本的输入字段，该脚本必须在JavaScript中输入。
 * 您可以编写文件名称的脚本，以便对其进行个性化设置。
 
    在窗口中输入文本，然后使用下拉个性化字段卡中的可用列表。 在以下示例中，文件名是个性化的，以包含今天的日期和收件人的名称。
