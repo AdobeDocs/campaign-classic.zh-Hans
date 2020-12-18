@@ -23,9 +23,9 @@ Adobe Campaign允许您通过cookie或网络信标停止跟踪退出行为跟踪
 
 >[!NOTE]
 >
->脚本始终遵循安全和隐私核对清单 [中所述的准则](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)。
+>当脚本始终遵循[安全和隐私清单](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中所述的准则时。
 
-## 配置横幅 {#configuring-the-banner-}
+## 配置横幅{#configuring-the-banner-}
 
 要在Web 应用程序或登陆页中显示横幅，需要进行配置。
 
@@ -35,7 +35,7 @@ Adobe Campaign提供的横幅示例必须适应您的需求。 此横幅版本�
 >
 >要创建自己的横幅，您必须个性化现成的横幅。
 
-要激活横幅，您必须配置Web 应用程序属性。 请参阅设 [计Web应用程序部分](../../web/using/designing-a-web-application.md) 。
+要激活横幅，您必须配置Web 应用程序属性。 请参阅[设计Web应用程序](../../web/using/designing-a-web-application.md)部分。
 
 如果Web 跟踪已激活，您可以：
 
@@ -64,15 +64,15 @@ Adobe Campaign提供的横幅示例必须适应您的需求。 此横幅版本�
       
 ```
 
-您必须用包含 **您的跟踪信息的块替换** “请在此处插入邮件”。 此替换应在与退出横幅相关的新个性化块中执行。
+您必须将&#x200B;**Please insert your message here**&#x200B;替换为包含跟踪信息的块。 此替换应在与退出横幅相关的新个性化块中执行。
 
 横幅是通过特定CSS交付的。 但是，在创建和配置网页时，可以覆盖样式。 请参见[此页面](../../web/using/content-editor-interface.md)。
 
-## 使用API设置退出Cookie {#setting-the-opt-out-cookie-using-api}
+## 使用API {#setting-the-opt-out-cookie-using-api}设置退出Cookie
 
 Adobe Campaign通过API提供，它允许您管理cookie值和检索用户首选项。
 
-Cookie名称为 **退出**。 常见值有：
+Cookie名称为&#x200B;**acoptout**。 常见值有：
 
 * 0:用户已允许Web 跟踪（默认值）
 * 1:用户已禁止Web 跟踪
@@ -80,9 +80,9 @@ Cookie名称为 **退出**。 常见值有：
 
 可用于自定义横幅的客户端API包括：
 
-* **NL.ClientWebTracking.allow()**:设置退出Cookie值以允许Web 跟踪。 Web 跟踪默认为允许。
-* **NL.ClientWebTracking.ordion()**:设置退出Cookie值以禁止Web 跟踪。 Web 跟踪需要禁止用户输入。
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**:用户单击“接受”或“拒绝”按钮后，关闭退出Cookie横幅。 (在单击事件冒泡阶段)
+* **NL.ClientWebTracking.allow()**:设置退出Cookie值以允许Web 跟踪。Web 跟踪默认为允许。
+* **NL.ClientWebTracking.ordion()**:设置退出Cookie值以禁止Web 跟踪。Web 跟踪需要禁止用户输入。
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**:用户单击“接受”或“拒绝”按钮后，关闭退出Cookie横幅。(在单击事件冒泡阶段)
 
    bannerDomElt {DOMElement}需要删除的cookie横幅的根DOM元素
 
