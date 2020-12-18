@@ -27,13 +27,13 @@ ht-degree: 2%
 >
 >发布事务性消息模板时，类型规则会自动发布到执行实例。
 
-1. 在控制实例中，转 **[!UICONTROL Message Center > Transactional message templates]** 到树的文件夹。
+1. 在控制实例中，转到树的&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;文件夹。
 1. 选择要在执行实例上发布的模板。
 1. 单击 **[!UICONTROL Publish]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
-发布完成后，将在文件夹中生产实例的树中创建要应用于批处理和实时类型事件的消息模 **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** 板。
+发布完成后，将在&#x200B;**[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]**&#x200B;文件夹的生产实例树中创建要应用于批处理和实时类型事件的消息模板。
 
 ![](assets/messagecenter_deployed_model_001.png)
 
