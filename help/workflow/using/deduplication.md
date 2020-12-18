@@ -25,8 +25,8 @@ ht-degree: 10%
 
 此问题需要解决：
 
-* 创建 **合并** 活动以统一每个入站流。
-* 在外部重复数据删除 **之后** ，创建 **合并** 活动。
+* 创建&#x200B;**合并**&#x200B;活动以统一每个入站流。
+* 在&#x200B;**外部重复数据删除**&#x200B;活动之后创建&#x200B;**合并**&#x200B;活动。
 
 ![](assets/dedup_bonnepratique.png)
 
@@ -34,7 +34,7 @@ ht-degree: 10%
 
 要配置外部重复数据删除，请输入其标签、方法、外部重复数据删除标准以及与结果相关的选项。
 
-单击链 **[!UICONTROL Edit configuration...]** 接以定义外部重复数据删除模式。
+单击&#x200B;**[!UICONTROL Edit configuration...]**&#x200B;链接以定义外部重复数据删除模式。
 
 ![](assets/s_user_segmentation_dedup_param.png)
 
@@ -46,9 +46,9 @@ ht-degree: 10%
 
    >[!NOTE]
    >
-   >如果使用外部数据作为输入，例如从外部文件输入，请确保选择该 **[!UICONTROL Temporary schema]** 选项。
+   >如果使用外部数据作为输入，例如从外部文件输入，请确保选择&#x200B;**[!UICONTROL Temporary schema]**&#x200B;选项。
    >
-   >在下一步中，选 **[!UICONTROL Other]** 项允许您选择要使用的标准：
+   >在下一步中，使用&#x200B;**[!UICONTROL Other]**&#x200B;选项可以选择要使用的标准：
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -72,7 +72,7 @@ ht-degree: 10%
    * **[!UICONTROL Using an expression]**:允许您使用给定表达式的最低（或最高）值保存记录。
 
       ![](assets/s_user_segmentation_dedup_param7.png)
-   单击 **[!UICONTROL Finish]** 以批准所选外部重复数据删除方法。
+   单击&#x200B;**[!UICONTROL Finish]**&#x200B;以批准所选外部重复数据删除方法。
 
    窗口的中间部分汇总定义的配置。
 
@@ -80,11 +80,11 @@ ht-degree: 10%
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-   Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. 补码由所有重复组成。 随后将向该过渡添加一个额外的活动，如下所示：
+   如果要利用剩余人口，请选中&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补码由所有重复组成。 随后将向该过渡添加一个额外的活动，如下所示：
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## 示例：在重复之前识别投放 {#example--identify-the-duplicates-before-a-delivery}
+## 示例：识别投放{#example--identify-the-duplicates-before-a-delivery}之前的重复
 
 在以下示例中，外部重复数据删除涉及三个查询的合并。
 
@@ -96,33 +96,33 @@ ht-degree: 10%
 
 1. 添加并链接工作流运行所需的各种活动，如上所示。
 
-   合并活动用于将三个查询“统一”为一个过渡。 因此，外部重复数据删除不会单独适用于每个查询，而是适用于整个查询。 有关此主题的详细信息，请参阅 [最佳实践](#best-practices)。
+   合并活动用于将三个查询“统一”为一个过渡。 因此，外部重复数据删除不会单独适用于每个查询，而是适用于整个查询。 有关此主题的详细信息，请参阅[最佳实践](#best-practices)。
 
-1. 打开外部重复数据删除活动，然后单 **[!UICONTROL Edit configuration...]** 击链接以定义外部重复数据删除模式。
-1. 在新窗口中，选择 **[!UICONTROL Database schema]**。
-1. 选择 **收件人** ，作为定位和过滤维度。
-1. 选择重复的ID字 **[!UICONTROL Email]** 段，将投放仅发送一次到每个电子邮件地址，然后单击 **[!UICONTROL Next]**。
+1. 打开外部重复数据删除活动，然后单击&#x200B;**[!UICONTROL Edit configuration...]**&#x200B;链接以定义外部重复数据删除模式。
+1. 在新窗口中，选择&#x200B;**[!UICONTROL Database schema]**。
+1. 选择&#x200B;**收件人**&#x200B;作为定位和过滤维度。
+1. 选择&#x200B;**[!UICONTROL Email]**&#x200B;重复的ID字段，将投放仅发送一次到每个电子邮件地址，然后单击&#x200B;**[!UICONTROL Next]**。
 
-   如果希望将重复ID基于特定字段，请选 **[!UICONTROL Other]** 择以访问可用字段的列表。
+   如果希望将重复ID基于特定字段，请选择&#x200B;**[!UICONTROL Other]**&#x200B;以访问可用字段的列表。
 
 1. 当为多个收件人标识同一电子邮件地址时，选择只保留一个条目。
-1. 选择外部重复数据删除 **[!UICONTROL Choose for me]** 模式，以便随机选择在识别重复的情况下保存的记录，然后单击 **[!UICONTROL Finish]**。
+1. 选择&#x200B;**[!UICONTROL Choose for me]**&#x200B;外部重复数据删除模式，以随机选择在识别重复的情况下保存的记录，然后单击&#x200B;**[!UICONTROL Finish]**。
 
 运行工作流时，所有标识为重复的收件人都将从结果中排除(因此也将排除投放)并添加到重复列表。 此列表可以再次使用，而不必重新标识重复。
 
-## 输入参数 {#input-parameters}
+## 输入参数{#input-parameters}
 
 * tableName
 * 模式
 
 每个入站事件必须指定由这些参数定义的目标。
 
-## 输出参数 {#output-parameters}
+## 输出参数{#output-parameters}
 
 * tableName
 * 模式
 * recCount
 
-这三个值集标识由目标产生的外部重复数据删除。 **[!UICONTROL tableName]** 是保存目标标识符的表的名称 **[!UICONTROL schema]** ，是收件人的模式(通常nms: **[!UICONTROL recCount]** )，是表中元素的数量。
+这三个值集标识由目标产生的外部重复数据删除。 **[!UICONTROL tableName]** 是保存目标标识符的表的名 **[!UICONTROL schema]** 称，是人口的模式(通 **[!UICONTROL recCount]** 常是nms:收件人)，是表中的元素数。
 
 与补码关联的过渡具有相同的参数。
