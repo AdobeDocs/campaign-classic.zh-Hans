@@ -21,7 +21,7 @@ ht-degree: 3%
 
 * 投放:
 
-   * 创建投放操作，请参 [阅SubmitDelivery(nms:投放](#submitdelivery--nms-delivery-))
+   * 创建投放操作，请参阅[SubmitDelivery(nms:投放)](#submitdelivery--nms-delivery-),
    * 发送活动(开始、暂停、停止、发送验证),
    * 恢复投放日志。
 
@@ -30,19 +30,19 @@ ht-degree: 3%
    * 启动工作流，
    * 验证进程等。
 
-      请参阅 [JavaScript中的SOAP方法](../../configuration/using/soap-methods-in-javascript.md)。
+      请参阅JavaScript](../../configuration/using/soap-methods-in-javascript.md)中的[SOAP方法。
 
 * 内容管理
-* 订阅管理，请 [参阅订阅(nms:订阅](#subscribe--nms-subscription-) ) [和取消订阅(nms:订阅)](#unsubscribe--nms-subscription-)。
+* 订阅管理，请参阅[订阅(nms:订阅)](#subscribe--nms-subscription-)和[取消订阅(nms:订阅)](#unsubscribe--nms-subscription-)。
 * 数据流程：进口，出口。
 
 本节详细介绍“订阅”、“取消订阅”和“SubmitDelivery”服务的使用。
 
 >[!IMPORTANT]
 >
->[活动JSAPI文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) 包含有关SOAP调用和在Adobe Campaign中使用Javascript的其他信息，以及对应用程序中使用的所有方法和函数的完整引用。
+>[活动JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) 文档包含有关SOAP调用和Adobe Campaign中使用Javascript的其他信息，以及对应用程序中使用的所有方法和函数的完全引用。
 
-## 订阅(nms:订阅) {#subscribe--nms-subscription-}
+## 订阅(nms:订阅){#subscribe--nms-subscription-}
 
 此服务允许您订阅收件人信息服务并更新收件人用户档案。
 
@@ -65,7 +65,7 @@ ht-degree: 3%
 </method>
 ```
 
-必须通过XML合并关键项元素上&#x200B;**的** _key属 `<recipient>` 性输入文档的定义。 此属性的内容是以逗号分隔的XPath列表。
+必须通过XML合并关键项的`<recipient>`元素上的_**key**&#x200B;属性输入文档的定义。 此属性的内容是以逗号分隔的XPath列表。
 
 除错误外，此调用不返回任何数据。
 
@@ -83,7 +83,7 @@ ht-degree: 3%
 <recipient _key="email, [folder-id]" email= "john.doe@adobe.com" folder-id="1305" firstName="John" lastName="Doe"/>
 ```
 
-### SOAP消息示例 {#example-of-soap-messages}
+### SOAP消息{#example-of-soap-messages}的示例
 
 * 查询:
 
@@ -115,7 +115,7 @@ ht-degree: 3%
    </SOAP-ENV:Envelope>
    ```
 
-## 取消订阅(nms:订阅) {#unsubscribe--nms-subscription-}
+## 取消订阅(nms:订阅){#unsubscribe--nms-subscription-}
 
 此服务允许您取消收件人与信息服务的订阅并更新收件人用户档案。
 
@@ -136,7 +136,7 @@ ht-degree: 3%
 </method>
 ```
 
-必须通过XML合并关键项元素上的_key属性输 `<recipient>` 入文档的定义。 此属性的内容是以逗号分隔的XPath列表。
+必须通过XML合并关键项的`<recipient>`元素上的_key属性输入文档的定义。 此属性的内容是以逗号分隔的XPath列表。
 
 如果收件人不在信息服务库中，或者未订阅相关，则服务将不执行任何操作，并且不生成错误。
 
@@ -146,7 +146,7 @@ ht-degree: 3%
 
 除错误外，此调用不返回任何数据。
 
-### SOAP消息示例 {#example-of-soap-messages-1}
+### SOAP消息{#example-of-soap-messages-1}的示例
 
 查询:
 
@@ -176,7 +176,7 @@ ht-degree: 3%
 </SOAP-ENV:Envelope>
 ```
 
-## SubmitDelivery(nms:投放) {#submitdelivery--nms-delivery-}
+## SubmitDelivery(nms:投放){#submitdelivery--nms-delivery-}
 
 此服务允许您创建和提交投放操作。
 
@@ -205,9 +205,9 @@ ht-degree: 3%
 
 除错误外，此调用不返回任何数据。
 
-### XML文档示例 {#xml-document-example}
+### XML文档示例{#xml-document-example}
 
-此示例基于来自外部数据源（本例中为文件）的自定义投放模板。 该配置在投放模板中进行了完整的说明，因此在调用发生时仍要发送的所有内容都是元素中的文件 `<externalsource>` 内容。
+此示例基于来自外部数据源（本例中为文件）的自定义投放模板。 该配置在投放模板中进行了完整的说明，因此在调用发生时仍要发送的所有内容都是`<externalsource>`元素中的文件内容。
 
 ```
 <delivery>
