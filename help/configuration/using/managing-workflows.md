@@ -17,9 +17,9 @@ ht-degree: 11%
 
 # 管理工作流{#managing-workflows}
 
-默认情况下，您的新工作流基于已预配置的工作流模板，并基于收件人表(nms:收件人)。 要自动基于Nms_DefaultRcpSchema选项中引用的自定义收件人 **表(请参阅配** 置接口部分 [](../../configuration/using/configuring-the-interface.md) )，您必须创建新的工作流模板。
+默认情况下，您的新工作流基于已预配置的工作流模板，并基于收件人表(nms:收件人)。 要使这些收件人自动基于&#x200B;**Nms_DefaultRcpSchema**&#x200B;选项中引用的自定义表（请参阅[配置接口](../../configuration/using/configuring-the-interface.md)部分），必须创建新的工作流模板。
 
-通过节点创建新 **[!UICONTROL Resources > Templates > Workflow templates]** 模板。 在模板的属性中，提供的维与外部收件人表匹配。
+通过&#x200B;**[!UICONTROL Resources > Templates > Workflow templates]**&#x200B;节点创建新模板。 在模板的属性中，提供的维与外部收件人表匹配。
 
 通过将新工作流基于最近创建的模板，默认情况下将为工作流的全局定位和过滤维度选择您的个性化表。
 
