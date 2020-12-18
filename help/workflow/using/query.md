@@ -17,10 +17,10 @@ ht-degree: 0%
 
 # 查询{#query}
 
-## Creating a query {#creating-a-query}
+## 创建查询{#creating-a-query}
 
 查询允许您根据条件选择目标。 您可以将段代码与查询结果关联，并在其中插入其他数据。
-有关查询示例的详细信息，请参 [阅本节](../../workflow/using/querying-recipient-table.md)。
+有关查询示例的详细信息，请参阅此[本节](../../workflow/using/querying-recipient-table.md)。
 
 >[!NOTE]
 >
@@ -28,9 +28,9 @@ ht-degree: 0%
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
-有关使用和管理其他数据的详细信息，请参 [阅添加数据](#adding-data)。
+有关使用和管理其他数据的详细信息，请参阅[添加数据](#adding-data)。
 
-通过 **[!UICONTROL Edit query...]** 链接，您可以通过以下方式定义人口的定位类型、限制和选择标准：
+通过&#x200B;**[!UICONTROL Edit query...]**&#x200B;链接，可以通过以下方式定义人群的定位类型、限制和选择条件：
 
 1. 选择定位和过滤维度。 默认情况下，目标会从收件人中选择。 限制过滤器的列表与用于投放定位的相同。
 
@@ -38,35 +38,35 @@ ht-degree: 0%
 
    过滤维度能够收集这些要素，例如与目标人员有关的信息（合同、全额和最终结算等）。
 
-   有关此内容的详细信息，请参 [阅定位和过滤维度](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions)。
+   有关详细信息，请参阅[定位和过滤维度](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions)。
 
    ![](assets/s_user_segmentation_query_edit.png)
 
-   查询可以根据入站过渡中的数据（如果需要），在选择定位和过滤维度 **[!UICONTROL Temporary schema]** 时进行选择。
+   查询可以根据入站过渡中的数据（如有必要），在选择定位和过滤维度时选择&#x200B;**[!UICONTROL Temporary schema]**。
 
    ![](assets/query_temporary_table.png)
 
-1. 使用向导定义人口。 要输入的字段可能因目标类型而异。 您可以使用选项卡将目标人口与当前条件预览 **[!UICONTROL Preview]** 起来。
+1. 使用向导定义人口。 要输入的字段可能因目标类型而异。 您可以使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡将目标人口与当前条件预览。
 
-   有关创建和使用过滤器或查询的详细信息，请参阅此 [部分](../../platform/using/filtering-options.md)。
+   有关创建和使用过滤器或查询的详细信息，请参阅此[部分](../../platform/using/filtering-options.md)。
 
    ![](assets/s_user_segmentation_wizard.png)
 
-1. 如果您在步骤 **[!UICONTROL Filtering conditions]** 1中选择或使用 **[!UICONTROL Filters]** >选 **[!UICONTROL Advanced filter...]** 项，则以后必须手动添加筛选条件。
+1. 如果您在步骤1选择了&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;或使用&#x200B;**[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]**&#x200B;选项，则以后必须手动添加筛选条件。
 
-   您还可以通过选中相应的框来添加数据分组条件。 为此，过滤维度必须与查询的定位维度不同。 For more information on grouping, refer to this [section](../../workflow/using/querying-using-grouping-management.md).
+   您还可以通过选中相应的框来添加数据分组条件。 为此，过滤维度必须与查询的定位维度不同。 有关分组的详细信息，请参阅此[部分](../../workflow/using/querying-using-grouping-management.md)。
 
-   您还可以使用表达式生成器并将其与逻辑选项AND、OR和EXCEPT组合，来添加更多条件。 然后，您可以预览 **[!UICONTROL Corresponding SQL query...]** 条件组合。 For more on this refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions).
+   您还可以使用表达式生成器并将其与逻辑选项AND、OR和EXCEPT组合，来添加更多条件。 然后，您可以预览&#x200B;**[!UICONTROL Corresponding SQL query...]**&#x200B;作为条件组合。 有关详细信息，请参阅此[部分](../../platform/using/defining-filter-conditions.md#building-expressions)。
 
    如果您希望以后再使用过滤器，请保存过滤器。
 
    ![](assets/s_user_segmentation_query_advanced.png)
 
-## 添加数据 {#adding-data}
+## 添加数据{#adding-data}
 
 附加的列允许您收集有关目标人口的其他信息，例如合同编号、新闻稿订阅或来源。 此数据可以存储在Adobe Campaign库或外部数据库中。
 
-通过 **[!UICONTROL Add data...]** 链接可以选择要收集的其他数据。
+通过&#x200B;**[!UICONTROL Add data...]**&#x200B;链接可选择要收集的其他数据。
 
 ![](assets/wf_add_data_link.png)
 
@@ -74,9 +74,9 @@ ht-degree: 0%
 
 ![](assets/wf_add_data_1st_option.png)
 
-* 选 **[!UICONTROL Data linked to the filtering dimension]** 择以选择Adobe Campaign库中的数据。
-* 选择 **[!UICONTROL External data]** 以从外部数据库添加数据。 仅当您购买了联合数据访问选项时，此选 **项才** 可用。 有关此内容的详细信息，请参 [阅访问外部数据库(联合数据访问)](../../workflow/using/accessing-an-external-database--fda-.md)。
-* 选择 **[!UICONTROL An offer proposition]** 选项可添加一组列，这些列可存储优惠引擎生成的最佳主张。 仅当您购买了“交互”模块时，此 **选项** 才可用。
+* 选择&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;以选择Adobe Campaign库中的数据。
+* 选择&#x200B;**[!UICONTROL External data]**&#x200B;以从外部数据库添加数据。 仅当您购买了&#x200B;**联合数据访问**&#x200B;选项时，此选项才可用。 有关详细信息，请参阅[访问外部数据库(联合数据访问)](../../workflow/using/accessing-an-external-database--fda-.md)。
+* 选择&#x200B;**[!UICONTROL An offer proposition]**&#x200B;选项可添加一组列，这些列可存储优惠引擎生成的最佳主张。 仅当您购买了&#x200B;**Interaction**&#x200B;模块时，此选项才可用。
 
 如果平台上未安装可选模块，则不显示此阶段。 你会被带到下一个舞台。
 
@@ -92,21 +92,21 @@ ht-degree: 0%
 
    您可以添加：
 
-   * 根据从目标人口或聚合获取的数据（上个月的待定购买数、接收的平均数等）计算的字段。 例如，转到选择 [数据](../../workflow/using/targeting-data.md#selecting-data)。
-   * 使用输出列列表右 **[!UICONTROL Add]** 侧的按钮创建的新字段。
+   * 根据从目标人口或聚合获取的数据（上个月的待定购买数、接收的平均数等）计算的字段。 例如，转至[选择数据](../../workflow/using/targeting-data.md#selecting-data)。
+   * 使用输出列列表右侧的&#x200B;**[!UICONTROL Add]**&#x200B;按钮创建的新字段。
 
-      您还可以添加信息集合，例如合同列表、最后5个投放等。 集合与可具有相同用户档案（1-N关系）的多个值的字段重合。 有关此内容的详细信息，请参 [阅编辑其他数据](../../workflow/using/targeting-data.md#editing-additional-data)。
+      您还可以添加信息集合，例如合同列表、最后5个投放等。 集合与可具有相同用户档案（1-N关系）的多个值的字段重合。 有关详细信息，请参阅[编辑其他数据](../../workflow/using/targeting-data.md#editing-additional-data)。
 
 要添加链接到目标人群的信息集合，请执行以下操作：
 
-1. 在向导的第一步，选择以下 **[!UICONTROL Data linked to the filtering dimension]** 选项：
-1. 选择包含要收集的信息的表并单击 **[!UICONTROL Next]**。
+1. 在向导的第一步，选择&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;选项：
+1. 选择包含要收集的信息的表，然后单击&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/wf_add_data_linked_table.png)
 
-1. 如有必要，请通过在字段中选择一个值来指定要保留的集合元素 **[!UICONTROL Data collected]** 数。 默认情况下，将恢复集合的所有行，然后根据在以下步骤中指定的条件进行筛选。
+1. 如有必要，请通过在&#x200B;**[!UICONTROL Data collected]**&#x200B;字段中选择一个值来指定要保留的集合元素数。 默认情况下，将恢复集合的所有行，然后根据在以下步骤中指定的条件进行筛选。
 
-   * 如果集合的单个元素与此集合的筛选条件一致，请在字 **[!UICONTROL Single row]** 段中选 **[!UICONTROL Data collected]** 择。
+   * 如果集合的单个元素与此集合的筛选条件一致，请在&#x200B;**[!UICONTROL Data collected]**&#x200B;字段中选择&#x200B;**[!UICONTROL Single row]**。
 
       >[!IMPORTANT]
       >
@@ -114,8 +114,8 @@ ht-degree: 0%
       >
       >如果初始条件不得到遵守，结果可能有缺陷（缺少线或重叠线）。
 
-   * 如果选择恢复多行(**[!UICONTROL Limit the line count]**)，则可以指定要收集的行数。
-   * 如果收集的列包含聚合，例如已声明的故障数、站点平均支出等。 您可以使用该 **[!UICONTROL Aggregates]** 值。
+   * 如果选择恢复多行(**[!UICONTROL Limit the line count]**)，可指定要收集的行数。
+   * 如果收集的列包含聚合，例如已声明的故障数、站点平均支出等。 可以使用&#x200B;**[!UICONTROL Aggregates]**&#x200B;值。
 
    ![](assets/query_add_collection_param.png)
 
@@ -123,21 +123,21 @@ ht-degree: 0%
 
    ![](assets/query_add_columns_collection_filter.png)
 
-1. 如果您已选 **[!UICONTROL Limit the line count]** 择该选项，请定义筛选所收集数据的顺序。 一旦收集的行数超过您指定要保留的行数，筛选顺序就允许您指定要保留的行数。
+1. 如果已选择&#x200B;**[!UICONTROL Limit the line count]**&#x200B;选项，则定义过滤所收集数据的顺序。 一旦收集的行数超过您指定要保留的行数，筛选顺序就允许您指定要保留的行数。
 
-## 示例：基于简单收件人属性定位 {#example--targeting-on-simple-recipient-attributes}
+## 示例：根据简单的收件人属性{#example--targeting-on-simple-recipient-attributes}进行定位
 
 在以下例子中，查询试图查明居住在法国的18至30岁男子。 此查询将用于旨在使其成为例如专用优惠的工作流。
 
 >[!NOTE]
 >
->本节将介绍其他查询 [示例](../../workflow/using/querying-recipient-table.md)。
+>此部分[中显示了其他查询示例。](../../workflow/using/querying-recipient-table.md)
 
-1. 命名查询，然后选择 **[!UICONTROL Edit query...]** 链接。
-1. 在可 **[!UICONTROL Filtering conditions]** 用的筛选器类型列表中进行选择。
+1. 命名查询，然后选择&#x200B;**[!UICONTROL Edit query...]**&#x200B;链接。
+1. 在可用筛选器类型列表中选择&#x200B;**[!UICONTROL Filtering conditions]**。
 1. 输入建议目标的不同标准。 此处条件使用AND选项组合。 要被纳入选择，收件人必须满足以下四个条件：
 
-   * 标题为“Mr”的收件人(也可使用“性别 **”字段** ，然后选择 **“Male** ”作为值)。
+   * 标题为“Mr”的收件人（也可以使用&#x200B;**Gender**&#x200B;字段并选择&#x200B;**Male**&#x200B;作为值）。
    * 收件人30岁以下。
    * 收件人18岁以上。
    * 收件人住在法国。
@@ -152,26 +152,26 @@ ht-degree: 0%
 
    ![](assets/query_example_preview.png)
 
-1. 保存过滤器，以便在以后的日期通过单击>再次使 **[!UICONTROL Finish]** 用它 **[!UICONTROL OK]**&#x200B;们。
+1. 保存过滤器，以便在以后的日期再次使用它们，方法是单击&#x200B;**[!UICONTROL Finish]** > **[!UICONTROL OK]**。
 1. 通过向工作流中添加其他活动，继续编辑工作流。 启动查询并完成上一个收件人步骤后，将显示找到的数据数。 您可以使用鼠标弹出菜单显示更多详细信息(右键单击过渡> **[!UICONTROL Display the target...]**)。
 
    ![](assets/query_example_result.png)
 
-## 输出参数 {#output-parameters}
+## 输出参数{#output-parameters}
 
 * tableName
 * 模式
 * recCount
 
-这三组值标识查询所针对的人群。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是人口的模式(通常是nms:收件人 **[!UICONTROL recCount]** )，是表中元素的数量。
+这三组值标识查询所针对的人群。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是人口的模式(通常是nms:收件人) **[!UICONTROL recCount]** ，是表中元素的数量。
 
-此值是工作表的模式。 此参数对于包含和的所有过渡 **[!UICONTROL tableName]** 都有 **[!UICONTROL schema]**&#x200B;效。
+此值是工作表的模式。 此参数对于具有&#x200B;**[!UICONTROL tableName]**&#x200B;和&#x200B;**[!UICONTROL schema]**&#x200B;的所有过渡都有效。
 
-## 优化查询 {#optimizing-queries}
+## 优化查询{#optimizing-queries}
 
 以下部分提供优化Adobe Campaign上运行的查询的最佳实践，以限制数据库的工作量并改善用户体验。
 
-### 连接和索引 {#joins-and-indexes}
+### 连接和索引{#joins-and-indexes}
 
 * 高效的查询依赖索引。
 * 对所有联接使用索引。
@@ -180,22 +180,22 @@ ht-degree: 0%
 * 避免执行外部连接。 尽可能使用零ID记录来实现外连接功能。
 * 对连接使用正确的数据类型。
 
-   确保子 `where` 句与字段的类型相同。
+   确保`where`子句与字段的类型相同。
 
-   一个常见错误是： `iBlacklist='3'` 其中 `iBlacklist` 是数字字段，并 `3` 表示文本值。
+   一个常见错误是：`iBlacklist='3'`其中`iBlacklist`是数字字段，`3`表示文本值。
 
    确保您知道查询的执行计划。 避免全表扫描，尤其是实时查询或几乎每分钟运行的实时查询。
 
-有关此方面的详细信息，请参[阅数据模型最佳实践](https://helpx.adobe.com/cn/campaign/kb/acc-data-model-best-practices.html)[和数据库映射部分](../../configuration/using/database-mapping.md) 。
+有关详细信息，请参阅[数据模型最佳实践](https://helpx.adobe.com/cn/campaign/kb/acc-data-model-best-practices.html)和[数据库映射](../../configuration/using/database-mapping.md)部分。
 
 ### 函数 {#functions}
 
-* 谨防这样的功 `Lower(...)`能。 使用Lower函数时，不使用Index。
+* 注意`Lower(...)`等函数。 使用Lower函数时，不使用Index。
 * 仔细检查使用“like”指令或“upper”或“lower”指令的查询。 对用户输入应用“大写”，而不是对数据库字段应用“大写”。
 
-   For more on functions, refer to [this section](../../platform/using/defining-filter-conditions.md#list-of-functions).
+   有关函数的详细信息，请参阅[本节](../../platform/using/defining-filter-conditions.md#list-of-functions)。
 
-### 过滤维度 {#filtering-dimensions}
+### 过滤维度{#filtering-dimensions}
 
 使用查询的过滤维度，而不是使用“exists such”运算符。
 
@@ -213,7 +213,7 @@ SQL中过滤维度的等效项是内部连接：
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-For more on filtering dimensions, refer to [this section](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+有关过滤维度的详细信息，请参阅[此部分](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions)。
 
 ### 架构 {#architecture}
 
