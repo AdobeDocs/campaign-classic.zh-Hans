@@ -19,23 +19,23 @@ ht-degree: 1%
 
 要创建描述性分析报告，请使用专用向导。 配置取决于要分析的数据和所需的渲染。
 
-## 分析数据库中的数据 {#analyzing-data-in-the-database}
+## 分析数据库{#analyzing-data-in-the-database}中的数据
 
-描述性分析向导可通过菜单启 **[!UICONTROL Tools > Descriptive analysis]** 动：在这种情况下，分析默认为收件人(**nms:收件人**)。 它适用于Adobe Campaign库中的所有数据。
+描述性分析向导可通过&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;菜单启动：在这种情况下，分析默认关注收件人(**nms:收件人**)。 它适用于Adobe Campaign库中的所有数据。
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-要分析标准收件人之外的表(**nms:收件人**)，请单击向导最后一 **[!UICONTROL Advanced settings...]** 步中的链接，然后选择与设置匹配的表，在本例中， **cus:individual**:
+要分析标准收件人之外的表(**nms:收件人**)，请单击向导最后一步中的&#x200B;**[!UICONTROL Advanced settings...]**&#x200B;链接，然后选择与设置匹配的表，在此例中为&#x200B;**cus:individual**:
 
 ![](assets/reporting_descriptive_other_schema.png)
 
-如果要对部分数据生成统计信息，可以定义过滤器：为此，请单击链 **[!UICONTROL Advanced settings...]** 接并定义要应用的筛选器，如下所示：
+如果要对部分数据生成统计信息，可以定义过滤器：为此，请单击&#x200B;**[!UICONTROL Advanced settings...]**&#x200B;链接并定义要应用的过滤器，如下所示：
 
 ![](assets/reporting_descriptive_wz_filter.png)
 
 该分析只涉及16岁及以上、住在伦敦的收件人数据库。
 
-## 分析一组数据 {#analyzing-a-set-of-data}
+## 分析数据集{#analyzing-a-set-of-data}
 
 您可以通过其他上下文使用描述性分析向导：列表、工作流过渡、一个或多个投放、选择收件人等。
 
@@ -45,29 +45,29 @@ ht-degree: 1%
 
 ![](assets/reporting_descriptive_from_recipients.png)
 
-* 对于一组 **收件人**，选择要分析的收件人，然后右键单击并 **[!UICONTROL Actions > Explore...]**&#x200B;选择，如上所示。 如果对收件人的列表应用过滤器，则只会分析其内容。
+* 对于一组&#x200B;**收件人**，选择要分析的收件人，然后右键单击并选择&#x200B;**[!UICONTROL Actions > Explore...]**，如上所示。 如果对收件人的列表应用过滤器，则只会分析其内容。
 
    要选择文件夹或当前筛选器中的所有收件人，请使用CTRL+A快捷键。 这意味着，即使未显示的收件人也将被选中。
 
-   有关收件人的描述性分析的示例，请参阅： [定性数据分析](../../reporting/using/use-cases.md#qualitative-data-analysis)。
+   有关收件人的描述性分析的示例，请参阅：[定性数据分析](../../reporting/using/use-cases.md#qualitative-data-analysis)。
 
-* 在工作流的上 **下文中**，将光标放在指向收件人表的过渡上，右键单击并选择 **[!UICONTROL Analyze target]**。 有关此方面的详细信息，请参阅分析 [工作流中的过渡目标中的示例](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow)。
-* 对于 **列表**，请选择一个或多个列表，并应用与收件人相同的流程。
-* 在投放的上 **下文中**，选择要分析其目标的投放，右键单击并 **[!UICONTROL Actions > Explore the target]**&#x200B;选择，如下所示：
+* 在&#x200B;**工作流**&#x200B;的上下文中，将光标放在指向收件人表的过渡上，右键单击并选择&#x200B;**[!UICONTROL Analyze target]**。 有关详细信息，请参阅[分析工作流](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow)中的过渡目标示例。
+* 对于&#x200B;**列表**，选择一个或多个列表，并应用与收件人相同的流程。
+* 在&#x200B;**投放**&#x200B;的上下文中，选择要分析其目标的投放，右键单击并选择&#x200B;**[!UICONTROL Actions > Explore the target]**，如下所示：
 
    ![](assets/reporting_descriptive_from_deliveries.png)
 
-   以下是投放的描述性分析示例： [分析人口](../../reporting/using/use-cases.md#analyzing-a-population) ，并在此处： [分析收件人跟踪日志](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)。
+   以下是投放的描述性分析示例：[分析人口](../../reporting/using/use-cases.md#analyzing-a-population)，并在此处：[分析收件人跟踪日志](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)。
 
-## 配置定性分发模板 {#configuring-the-qualitative-distribution-template}
+## 配置定性分发模板{#configuring-the-qualitative-distribution-template}
 
-通过 **[!UICONTROL Qualitative distribution]** 模板，您可以创建有关所有类型数据(例如公司名称、电子邮件域)的统计信息。
+使用&#x200B;**[!UICONTROL Qualitative distribution]**&#x200B;模板可以创建所有类型数据(例如公司名称、电子邮件域)的统计信息。
 
-通过模板创建的报表的可用配 **[!UICONTROL Qualitative distribution]** 置选项在表 [中显示数据中详细介绍](#displaying-data-in-the-table)。 分析人口中详细介绍了 [完整的示例](../../reporting/using/use-cases.md#analyzing-a-population)。
+[显示表](#displaying-data-in-the-table)中的数据中详细介绍了通过&#x200B;**[!UICONTROL Qualitative distribution]**&#x200B;模板创建的报告可用的配置选项。 在[分析人口](../../reporting/using/use-cases.md#analyzing-a-population)中详细介绍了完整示例。
 
 使用描述性分析向导分析数据时，可用选项取决于所选的设置。 详情如下。
 
-### 数据绑定 {#data-binning}
+### 数据绑定{#data-binning}
 
 选择要显示的变量时，您可以定义数据绑定，即为选定数据配置分组条件。
 
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->当使用聚合计算计算所关注的场时，检查以 **[!UICONTROL The data is already aggregated]** 改善性能。
+>当使用聚合计算计算涉及的场时，检查&#x200B;**[!UICONTROL The data is already aggregated]**&#x200B;以改进性能。
 
 这些选项会因字段内容而异：
 
@@ -85,10 +85,10 @@ ht-degree: 1%
    >
    >应谨慎使用此选项：它会对报告和机器性能产生重大影响。
 
-* **[!UICONTROL Auto]** :此选项允许您显示n个最频繁表示的值。 这些变量是自动计算的，每个变量与素材箱数相比代表一个百分比。 对于数值，Adobe Campaign会自动生成n个类，将数据排序到其中。
-* **[!UICONTROL Manual]** :此选项的操作方 **[!UICONTROL Auto]** 式与选项类似，只是您可以手动设置这些值。 为此，请单 **[!UICONTROL Add]** 击值表右侧的按钮。
+* **[!UICONTROL Auto]** :此选项允许您显示n个最频繁表示的值。这些变量是自动计算的，每个变量与素材箱数相比代表一个百分比。 对于数值，Adobe Campaign会自动生成n个类，将数据排序到其中。
+* **[!UICONTROL Manual]** :此选项的操作方 **[!UICONTROL Auto]** 式与选项类似，只是您可以手动设置这些值。为此，请单击值表右侧的&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 
-   可以在个性化之前通过Adobe Campaign自动初始化值：为此，请输入要生成的素材箱数并单击链 **[!UICONTROL Initialize with]** 接，如下所示：
+   可以在个性化之前通过Adobe Campaign自动初始化值：为此，请输入要生成的素材箱数并单击&#x200B;**[!UICONTROL Initialize with]**&#x200B;链接，如下所示：
 
    ![](assets/reporting_descriptive_initialize.png)
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 
    ![](assets/reporting_descriptive_group_by_year.png)
 
-* **[!UICONTROL Modulo]** :允许您创建数值组。 例如，值为10的模允许您创建一个值间隔，该值间隔以十为单位更改。
+* **[!UICONTROL Modulo]** :允许您创建数值组。例如，值为10的模允许您创建一个值间隔，该值间隔以十为单位更改。
 
    ![](assets/reporting_descriptive_initialize_modulo.png)
 
@@ -108,7 +108,7 @@ ht-degree: 1%
 
    ![](assets/reporting_descriptive_initialize_modulo_result.png)
 
-### 显示表中的数据 {#displaying-data-in-the-table}
+### 显示表{#displaying-data-in-the-table}中的数据
 
 使用工具栏可个性化显示表格中的变量：删除列、以行而非列显示数据、将列向左或向右移动、视图或更改值计算。
 
@@ -116,9 +116,9 @@ ht-degree: 1%
 
 在窗口的上半部分，您可以选择显示设置。
 
-您可以显示或隐藏统计信息的名称和子合计，并选择统计信息的方向。 有关详细信息，请参阅 [分析报告显示设置](../../reporting/using/processing-a-report.md#analysis-report-display-settings)。
+您可以显示或隐藏统计信息的名称和子合计，并选择统计信息的方向。 有关详细信息，请参阅[分析报告显示设置](../../reporting/using/processing-a-report.md#analysis-report-display-settings)。
 
-### 在图表中显示数据 {#displaying-data-in-the-chart}
+### 显示图表{#displaying-data-in-the-chart}中的数据
 
 在描述性分析向导的第一步中，您可以选择仅以图表形式显示数据，而不显示表。 在这种情况下，配置图形时必须完成变量选择。 必须首先选择要显示的变量数，然后从相关数据库中选择字段。
 
@@ -130,19 +130,19 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->可以同时在图表和表中显示变量。 为此，请在窗口中输入变 **[!UICONTROL Table configuration]** 量。 单击 **[!UICONTROL Next]** 并在图表配置窗口中选择图表类型。 如果子维在表中定义，则不会在图表中显示。
+>可以同时在图表和表中显示变量。 为此，请在&#x200B;**[!UICONTROL Table configuration]**&#x200B;窗口中输入变量。 单击&#x200B;**[!UICONTROL Next]**，在图表配置窗口中选择图表类型。 如果子维在表中定义，则不会在图表中显示。
 
-单击链 **[!UICONTROL Variants]** 接以修改图表属性。
+单击&#x200B;**[!UICONTROL Variants]**&#x200B;链接以修改图表属性。
 
 ![](assets/reporting_descriptive_graphe_options.png)
 
 提供的选项取决于所选图表的类型。 有关详细信息，请参见[此页面](../../reporting/using/creating-a-chart.md#chart-types-and-variants)。
 
-### 统计计算 {#statistics-calculation}
+### 统计计算{#statistics-calculation}
 
 描述性分析向导允许您计算有关数据的几种类型的统计信息。 默认情况下，只配置一个简单计数。
 
-Click **[!UICONTROL Add]** to create a new statistic.
+单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建新统计。
 
 ![](assets/reporting_descriptive_create_stat.png)
 
@@ -160,7 +160,7 @@ Click **[!UICONTROL Add]** to create a new statistic.
 
    ![](assets/s_ncs_user_report_wizard_026.png)
 
-* **[!UICONTROL Calculated field]** 以创建个性化的操作员（仅适用于表）。 在字 **[!UICONTROL User function]** 段中，您可以输入要应用于数据的计算。
+* **[!UICONTROL Calculated field]** 以创建个性化的操作员（仅适用于表）。在&#x200B;**[!UICONTROL User function]**&#x200B;字段中可输入要应用于数据的计算。
 
    示例：根据国家／地区和来源计算每位客户的平均购买额
 
@@ -174,15 +174,15 @@ Click **[!UICONTROL Add]** to create a new statistic.
 
       ![](assets/report_compute_data_sample2.png)
 
-   1. 此统计信息不会显示在表中。 您需要取消选 **[!UICONTROL Display in the table]** 中选项卡的 **[!UICONTROL Advanced]** 选项。
+   1. 此统计信息不会显示在表中。 您需要取消选中&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡的&#x200B;**[!UICONTROL Display in the table]**&#x200B;选项。
 
       ![](assets/report_compute_data_sample3.png)
 
-   1. 创建新类 **[!UICONTROL Calculated field]** 型统计，并在字段中输入以下 **[!UICONTROL User function]** 公式： **@purchases/@count**。
+   1. 新建一个&#x200B;**[!UICONTROL Calculated field]**&#x200B;类型统计信息，并在&#x200B;**[!UICONTROL User function]**&#x200B;字段中输入以下公式：**@purchases/@count**。
 
       ![](assets/report_compute_data_sample4.png)
 
-### 显示报告 {#displaying-the-report}
+### 显示报告{#displaying-the-report}
 
 在向导的最后一步中，可以显示已配置的报表，即表或图表。
 
@@ -198,13 +198,13 @@ Click **[!UICONTROL Add]** to create a new statistic.
 
 ![](assets/report_display_data_in_graph.png)
 
-## 配置定量分发模板 {#configuring-the-quantitative-distribution-template}
+## 配置定量分发模板{#configuring-the-quantitative-distribution-template}
 
-要自行生成描述性分析，请 **从模板选项中选择“新建描述性分析** ”（如果默认情况下未设置）。
+要自行生成描述性分析，请从模板&#x200B;**中选择**&#x200B;新建描述性分析（如果默认情况下未设置）。
 
-用 **[!UICONTROL Quantitative distribution]** 于生成数据统计的模板，可以测量或计数数据(例如发票额、收件人年龄)。
+使用&#x200B;**[!UICONTROL Quantitative distribution]**&#x200B;模板，可以生成可衡量或计数的数据的统计信息(例如发票额、收件人年龄)。
 
-通过模板创建的分析报告的配 **[!UICONTROL Quantitative distribution]** 置模式在实现示例定量 [分析中详细说明](../../reporting/using/use-cases.md#quantitative-data-analysis)。
+通过&#x200B;**[!UICONTROL Quantitative distribution]**&#x200B;模板创建的分析报告的配置模式在实现示例[定量分析](../../reporting/using/use-cases.md#quantitative-data-analysis)中详细说明。
 
 使用描述性分析向导创建定量报告时可用的选项详述如下。
 
@@ -226,7 +226,7 @@ Click **[!UICONTROL Add]** to create a new statistic.
 * **[!UICONTROL Decile distribution]** 分布返回的值，使每个值代表数字字段中值的1/10。
 * **[!UICONTROL Custom distribution]** 根据用户定义的阈值分发返回的值。
 
-   通过 **[!UICONTROL Detail...]** 该按钮可编辑统计信息，并根据需要个性化其计算或显示：
+   通过&#x200B;**[!UICONTROL Detail...]**&#x200B;按钮可编辑统计信息，并根据需要个性化其计算或显示：
 
    ![](assets/s_ncs_user_report_wizard_030.png)
 
@@ -234,5 +234,5 @@ Click **[!UICONTROL Add]** to create a new statistic.
 
    ![](assets/reporting_descriptive_view_report.png)
 
-   要更改报表，请参阅处 [理报表](../../reporting/using/processing-a-report.md)。
+   要更改报告，请参阅[处理报告](../../reporting/using/processing-a-report.md)。
 
