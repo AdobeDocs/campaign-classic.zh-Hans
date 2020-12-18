@@ -27,7 +27,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->要显示数据库中所有收件人的列表，您必须创建一个视图。请参阅文 [件夹和视图](../../platform/using/access-management.md#folders-and-views)。
+>要显示数据库中所有收件人的列表，您必须创建一个视图。请参阅[文件夹和视图](../../platform/using/access-management.md#folders-and-views)。
 
 ## 移动收件人 {#moving-recipients}
 
