@@ -26,7 +26,7 @@ ht-degree: 2%
 * [第5步——创建发布模板](#step-5---creating-the-publication-template),
 * [第6步——创建内容](#step-6---creating-contents)。
 
-## 第1步——分析要生成的内容 {#step-1---analyzing-the-content-to-be-produced}
+## 第1步——分析要生成的内容{#step-1---analyzing-the-content-to-be-produced}
 
 在进行开始之前，您需要对要生成的内容进行精确分析:确定要显示的元素，研究与这些元素链接的约束，为每个元素定义类型等。 您还需要区分静态元素和可变客户。
 
@@ -52,23 +52,23 @@ ht-degree: 2%
 
 这些元素是通过专用模式创建的，它为每个内容指定以下元素：名称、标签、类型、大小，以及与Adobe Campaign处理相关的任何其他信息。
 
-## Step 2 - Creating the data schema {#step-2---creating-the-data-schema}
+## 第2步——创建模式{#step-2---creating-the-data-schema}
 
 数据模式是与内容关联的XML文档。 它描述此内容中数据的XML结构。
 
 >[!NOTE]
 >
->有关在Adobe Campaign中创建和配置模式的详细信息，请参 [阅此部分](../../configuration/using/about-schema-edition.md)。
+>有关在Adobe Campaign中创建和配置模式的详细信息，请参阅[本节](../../configuration/using/about-schema-edition.md)。
 >
->特定于内容管理的配置元素在数据 [模式中详述](../../delivery/using/data-schemas.md)。
+>[数据内容管理](../../delivery/using/data-schemas.md)中详细介绍了特定于模式的配置元素。
 
 要创建数据模式，请应用以下步骤：
 
-1. 打开Adobe Campaign资源管理器并选择 **[!UICONTROL Administration > Configuration > Data schemas]** 节点。
+1. 打开Adobe Campaign资源管理器并选择&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点。
 
-   单击位 **[!UICONTROL New]** 于列表模式上方的图标。
+   单击位于列表模式上方的&#x200B;**[!UICONTROL New]**&#x200B;图标。
 
-1. 选择内容管理 **[!UICONTROL Create a schema]** 选项，然后单击 **[!UICONTROL Next]**。
+1. 选择&#x200B;**[!UICONTROL Create a schema]**&#x200B;选项进行内容管理，然后单击&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/s_ncs_content_create_schema.png)
 
@@ -76,15 +76,15 @@ ht-degree: 2%
 
    ![](assets/s_ncs_content_param_schema.png)
 
-   Click **[!UICONTROL Next]** to validate.
+   单击&#x200B;**[!UICONTROL Next]**&#x200B;验证。
 
-1. 在窗口中输入模式的 **[!UICONTROL Edit schema]** 内容。
+1. 在&#x200B;**[!UICONTROL Edit schema]**&#x200B;窗口中输入模式的内容。
 
-   使用按 **[!UICONTROL Insert]** 钮创建模式内容。
+   使用&#x200B;**[!UICONTROL Insert]**&#x200B;按钮创建模式内容。
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   For more on this, refer to [Editing schemas](../../delivery/using/data-schemas.md#editing-schemas).
+   有关详细信息，请参阅[编辑模式](../../delivery/using/data-schemas.md#editing-schemas)。
 
    对于内容中引用的每个元素，您需要选择一个匹配的类型。
 
@@ -119,13 +119,13 @@ ht-degree: 2%
    <td> 日期<br /> </td> 
   </tr> 
   <tr> 
-   <td> 简介段落<br /> </td> 
+   <td> 导言段落<br /> </td> 
    <td> 元素<br /> </td> 
    <td> HTML<br /> </td> 
    <td> 概述<br /> </td> 
   </tr> 
   <tr> 
-   <td> 作者照片<br /> </td> 
+   <td> 作者的照片<br /> </td> 
    <td> 属性<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> URL<br /> </td> 
@@ -133,7 +133,7 @@ ht-degree: 2%
   <tr> 
    <td> 作者<br /> </td> 
    <td> 元素<br /> </td> 
-   <td> Memo<br /> </td> 
+   <td> 备忘录<br /> </td> 
    <td> 作者<br /> </td> 
   </tr> 
   <tr> 
@@ -160,9 +160,9 @@ ht-degree: 2%
   </element>
 ```
 
-1. 单击 **[!UICONTROL Save]** 以创建数据模式。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建数据模式。
 
-## 第3步——创建输入表单 {#step-3---creating-the-input-form}
+## 步骤3 —— 创建输入表单{#step-3---creating-the-input-form}
 
 输入表单允许您通过Adobe Campaign客户端控制台中的输入界面编辑内容实例。
 
@@ -170,23 +170,23 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关在Adobe Campaign中创建和配置表单的详细信息，请参 [阅此部分](../../configuration/using/identifying-a-form.md)。
+>有关在Adobe Campaign中创建和配置表单的详细信息，请参阅[本节](../../configuration/using/identifying-a-form.md)。
 >
->特定于内容管理的配置元素在输入表 [单中详细介绍](../../delivery/using/input-forms.md)。
+>特定于内容管理的配置元素详见[输入表单](../../delivery/using/input-forms.md)。
 
 要创建输入表单以进行内容管理，请应用以下步骤：
 
-1. 打开Adobe Campaign资源管理器并选择 **[!UICONTROL Administration > Configuration > Input forms]** 节点。
+1. 打开Adobe Campaign资源管理器并选择&#x200B;**[!UICONTROL Administration > Configuration > Input forms]**&#x200B;节点。
 
-   单击表 **[!UICONTROL New]** 单列表上方的图标。
+   单击表单列表上方的&#x200B;**[!UICONTROL New]**&#x200B;图标。
 
-1. 输入表单的名称和链接到表单的标签，然后选择类 **[!UICONTROL Content management]** 型。
+1. 输入表单的名称和链接到表单的标签，然后选择&#x200B;**[!UICONTROL Content management]**&#x200B;类型。
 
    ![](assets/s_ncs_content_param_form_edit.png)
 
    >[!NOTE]
    >
-   >为了使这两个元素能够自动匹配，我们建议使用与链接数据模式相同的名称。 使用输 **[!UICONTROL Insert]** 入区域上方的按钮添加来自链接到表单的模式的字段。
+   >为了使这两个元素能够自动匹配，我们建议使用与链接数据模式相同的名称。 使用输入区域上方的&#x200B;**[!UICONTROL Insert]**&#x200B;按钮添加链接到表单的模式中的字段。
 
    ![](assets/s_ncs_content_param_form_edit_step2.png)
 
@@ -208,13 +208,13 @@ ht-degree: 2%
      </input>
    ```
 
-   在编 **[!UICONTROL Preview]** 辑表单时，您可以使用选项卡检查表单的呈现：
+   使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡可以在编辑表单时检查表单的呈现：
 
    ![](assets/s_ncs_content_param_form_preview.png)
 
-1. 单击 **[!UICONTROL Save]** 以创建输入表单。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建输入表单。
 
-## 第4步——创建构建模板 {#step-4---creating-the-construction-template}
+## 第4步——创建构造模板{#step-4---creating-the-construction-template}
 
 通过XSLT语言，可以将XML文档转换为其他输出文档。 此转换在称为样式表的文档的XML中进行说明。
 
@@ -222,18 +222,18 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->与文档构建（JavaScript或XSL模板）链接的约束在格式中有 [详细说](../../delivery/using/formatting.md)明。
+>链接到文档构建（JavaScript或XSL模板）的约束在[格式](../../delivery/using/formatting.md)中有详细说明。
 
 要在Adobe Campaign中使用JavaScript模板，请应用以下步骤：
 
-1. 打开Adobe Campaign资源管理器并选择 **[!UICONTROL Administration > Configuration > JavaScript Templates]** 节点。
+1. 打开Adobe Campaign资源管理器并选择&#x200B;**[!UICONTROL Administration > Configuration > JavaScript Templates]**&#x200B;节点。
 
-   单击模 **[!UICONTROL New]** 板列表上方的图标。
+   单击模板列表上方的&#x200B;**[!UICONTROL New]**&#x200B;图标。
 
 1. 输入模板名称，然后选择您为模式创建的内容管理。
 1. 导入要在消息中显示的集内容。
 
-   添加变量元素，同时遵守JavaScript模板中详细 [的语法](../../delivery/using/formatting.md#javascript-templates)。
+   添加变量元素，同时遵守[JavaScript模板](../../delivery/using/formatting.md#javascript-templates)中详细介绍的语法。
 
    要显示示例中显示的内容，JavaScript模板必须包含以下元素：
 
@@ -326,7 +326,7 @@ ht-degree: 2%
    </html>
    ```
 
-   在模板开始调用函数可让您设置对从Adobe Campaign库获取的个性化数据的调用(在本例中：收件人.firstName和收件人.lastName)，以便在投放中使用时对其进行解释。 有关此的详细信息，请参 [阅包括JavaScript模板](../../delivery/using/formatting.md#including-a-javascript-template)。
+   在模板开始调用函数可让您设置对从Adobe Campaign库获取的个性化数据的调用(在本例中：收件人.firstName和收件人.lastName)，以便在投放中使用时对其进行解释。 有关详细信息，请参阅[包括JavaScript模板](../../delivery/using/formatting.md#including-a-javascript-template)。
 
    在此示例中，该函数将包含以下代码：
 
@@ -345,49 +345,49 @@ ht-degree: 2%
    }
    ```
 
-   要使JavaScript模板有效，必须事先从树结构中的节点 **[!UICONTROL JavaScript codes]** 创建此函数，如下所示：
+   要使JavaScript模板有效，必须事先从树结构中的&#x200B;**[!UICONTROL JavaScript codes]**&#x200B;节点创建此函数，如下所示：
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## 第5步——创建发布模板 {#step-5---creating-the-publication-template}
+## 第5步——创建发布模板{#step-5---creating-the-publication-template}
 
 下一步包括创建内容发布模板以链接模式、表单和内容构建模板。 此发布模板可以有多种输出格式。
 
 >[!NOTE]
 >
->有关内容发布模板的更多信息，请参阅 [发布模板](../../delivery/using/publication-templates.md)。
+>有关内容发布模板的详细信息，请参阅[发布模板](../../delivery/using/publication-templates.md)。
 
 在此示例中，步骤如下：
 
-1. 通过节点创建新发布模板 **[!UICONTROL Administration > Configuration > Publication templates]** 。
+1. 通过&#x200B;**[!UICONTROL Administration > Configuration > Publication templates]**&#x200B;节点创建新发布模板。
 1. 输入名称和标签，然后选择要使用的模式和表单。
-1. 然后输入模板的名称并选择要应用的渲染模式。 这里，我们根据 **[!UICONTROL JavaScript]** 上面创建的模板创建类型渲染。
+1. 然后输入模板的名称并选择要应用的渲染模式。 此处，我们根据上面创建的模板提供&#x200B;**[!UICONTROL JavaScript]**&#x200B;类型渲染。
 
    ![](assets/s_ncs_content_param_form_publish.png)
 
    >[!NOTE]
    >
-   >默 **[!UICONTROL DOM interface]** 认情况下选中该选项，这意味着如果使用E4X语法，将无法访问此文档。 选中此选项时必须使用DOM接口，并且是推荐的语法。
+   >默认情况下，**[!UICONTROL DOM interface]**&#x200B;选项处于选中状态，这意味着如果您使用E4X语法，将无法访问此文档。 选中此选项时必须使用DOM接口，并且是推荐的语法。
    >
    >您仍可以使用E4X语法。 如果是，请确保取消选中此选项。
 
-   使用该 **[!UICONTROL Add]** 按钮可创建其他转换模板。
+   使用&#x200B;**[!UICONTROL Add]**&#x200B;按钮创建其他转换模板。
 
-1. 单击 **[!UICONTROL Save]** 以创建发布模板。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建发布模板。
 
-## 第6步——创建内容 {#step-6---creating-contents}
+## 第6步——创建内容{#step-6---creating-contents}
 
 您现在可以基于此发布模板创建内容。
 
 >[!NOTE]
 >
->有关创建内容的详细信息，请 [参阅使用内容模板](../../delivery/using/using-a-content-template.md)。
+>有关创建内容的详细信息，请参阅[使用内容模板](../../delivery/using/using-a-content-template.md)。
 
-### 在投放向导中创建内容 {#creating-content-in-the-delivery-wizard}
+### 在投放向导{#creating-content-in-the-delivery-wizard}中创建内容
 
 要直接在投放中创建内容，请应用以下步骤：
 
-1. 开始，方法是通过投放属性 **[!UICONTROL Advanced]** 的选项卡引用发布模板。
+1. 开始，方法是通过投放属性的&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡引用发布模板。
 
    ![](assets/s_ncs_content_in_delivery.png)
 
@@ -397,6 +397,6 @@ ht-degree: 2%
 
    ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
-1. 单击选 **[!UICONTROL HTML preview]** 项卡以视图渲染。 您需要选择收件人来测试个性化。
+1. 单击&#x200B;**[!UICONTROL HTML preview]**&#x200B;选项卡以视图渲染。 您需要选择收件人来测试个性化。
 
    ![](assets/s_ncs_content_use_in_delivery_preview.png)
