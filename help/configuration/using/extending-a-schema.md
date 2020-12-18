@@ -9,8 +9,8 @@ topic-tags: editing-schemas
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 5%
 >[!IMPORTANT]
 >
 >某些内置模式不能扩展：主要是定义了以下设置的用户：\
->**dataSource=&quot;file&quot;** 和 **mappingType=&quot;xmlFile&quot;**。\
->以下模式不得扩展： **xtk:entityBackupNew**, **xtk:entityBackupOriginal**，原件， **xtk:form**,Xschema **,Photonig:netyBackupBackupNew,************************************************xtk:entityBackupBackupPhoxnmonmn：原件，原件，原件，原件：nmnmnmns:userAgent规则：Xx::XxAgent,XxInitDb,Xinit dbListXtkFuncTk,XtkFusionTk Xtk:tk融合tk:xtk, xtk连接：xkjst**, x **:navtree**, **xqueryDef:Menu**, **xqueryDef:** xresource ********************, xxX模式脚本xtk:xtk:QueryDef:xtkStrings:xtkStrings:tk
+>**dataSource=&quot;file&quot;** and  **mappingType=&quot;xmlFile&quot;**。\
+>以下模式不得扩展：**xtk:entityBackupNew**、**xtk:entityBackupOriginal**、**xtk:entityOriginal**、**xtk:form**、**xtk:srcSchema**、**ncm:publishing**、**nl:monitoring**、**nms:calendar**、**nms:remoteTracking**、**nms:userAgentRules**、**xtk:builder**、**xtk:connections**、**xtk:dbInit**、**xtk:funcList**、**xtk:fusion**, **xtk:jst**、**xtk:navtree**、**xtk:queryDef**、**xtk:resourceMenu**、**xtk:模式**、**xtk:scriptContext**、**xtk:session**、**xtk:sqlSchema**、**xtk:strings**。
 >此列表并非完全。
 
 扩展现有模式有两种方法：
@@ -29,7 +29,7 @@ ht-degree: 5%
 1. 直接修改源模式。
 1. 创建名称相同但命名空间不同的其他模式。 其优点是您无需修改原始模式即可扩展表。
 
-   模式的根元素必须包含extendedSchema **属性** ，该属性的名称将要扩展的模式的名称作为其值。
+   模式的根元素必须包含&#x200B;**extendedSchema**&#x200B;属性，其中要扩展的模式的名称为其值。
 
    扩展模式没有自己的模式:从源模式生成的模式将填入扩展模式的字段。
 
@@ -37,7 +37,7 @@ ht-degree: 5%
    >
    >不允许修改应用程序的内置模式，而是模式扩展机制。 否则，在应用程序将来升级时，将不更新修改的模式。 这会导致Adobe Campaign使用中的故障。
 
-   **示例**:nms:收件人 **模式的扩展** 。
+   **示例**:nms:recipentschema **的** 扩展。
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">
@@ -47,7 +47,7 @@ ht-degree: 5%
    </srcSchema>
    ```
 
-   nms: **收件人扩展** 模式填充了扩展模式中填充的字段：
+   **nms:收件人**&#x200B;扩展模式填充了在扩展模式中填充的字段：
 
    ```
    <schema dependingSchemas="cus:recipient" name="recipient" namespace="nms">
@@ -57,12 +57,12 @@ ht-degree: 5%
    </schema>
    ```
 
-   模式 **的根元素** 上的dependingSchemas属性引用了与扩展模式相关的依赖关系。
+   模式的根元素上的&#x200B;**dependingSchemas**&#x200B;属性引用了对扩展模式的依赖关系。
 
-   字 **段上** 的“属性”填充声明该字段的模式。
+   字段上的&#x200B;**tersTo**&#x200B;属性填充声明该字段的模式。
 
 >[!IMPORTANT]
 >
->要考虑修改，您需要重新生成模式。 For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.\
+>要考虑修改，您需要重新生成模式。 有关详细信息，请参阅[重新生成模式](../../configuration/using/regenerating-schemas.md)部分。\
 >如果修改影响数据库结构，则需要运行更新。 有关更多信息，请参阅[更新数据库结构](../../configuration/using/updating-the-database-structure.md)。
 
