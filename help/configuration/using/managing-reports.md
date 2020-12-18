@@ -17,11 +17,11 @@ ht-degree: 4%
 
 # 管理报告{#managing-reports}
 
-必须重新开发基于特定于默认Adobe Campaign模式(nm:收件人或链接的模式)的收件人的报表，以便考虑来自自定义表及其通过目标映射链接的表的数据(请参阅 [目标映射](../../configuration/using/target-mapping.md) 部分)。
+必须重新开发基于特定于默认Adobe Campaign模式(nm:收件人或链接的模式)的收件人的报表，以便考虑来自自定义表及其通过目标映射链接的表的数据(请参阅[目标映射](../../configuration/using/target-mapping.md)部分)。
 
-要创建新报告，请参 [阅此部分](../../reporting/using/about-reports-creation-in-campaign.md)。
+要创建新报告，请参阅[此部分](../../reporting/using/about-reports-creation-in-campaign.md)。
 
-在某些情况下，还必须放置特定于这些表的新多维数据集。 多维数据集详见 [本节](../../reporting/using/about-cubes.md)。
+在某些情况下，还必须放置特定于这些表的新多维数据集。 多维数据集详见[本节](../../reporting/using/about-cubes.md)。
 
 以下报告涉及：
 
