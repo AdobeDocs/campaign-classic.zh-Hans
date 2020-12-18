@@ -44,7 +44,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>Snowflake是完全托管的云data warehouse，可在存储和计算级别进行扩展。 有了这个新的连接器，Adobe Campaign现在可以利用Snowflake的强大功能来执行大数据分段。 此连接器可供所有客户使用，包括由Adobe托管。</p>
-    <p>For more information, refer to the <a href="../../installation/using/configure-fda-snowflake.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
+    <p>有关详细信息，请参阅<a href="../../installation/using/configure-fda-snowflake.md">详细文档</a>和<a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">教程视频</a>。</p>
    </td> 
   </tr> 
  </tbody> 
@@ -85,19 +85,19 @@ _2020年2月17日_
 
 * 改进了隔离管理和清除推送通知功能（nms:address和nms:appSubscriptionRcp）使用的表。 对于iOS（仅限HTTP2连接器），禁用的令牌现在处理方式与Android相同。 现在在NmsAppSubscriptionRcp表中设置禁用标志。 [阅读更多](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* 在JavaScript代码和高级JavaScript **代码工作流活动****中添加了一个新选项** ，用于定义超时时间段。 这可防止javascript执行阶段运行太长。 如果经过超时时间，则停止工作流。 默认超时为1小时。 [阅读更多](../../workflow/using/sql-code-and-javascript-code.md)
+* 在&#x200B;**JavaScript代码**&#x200B;和&#x200B;**高级JavaScript代码**&#x200B;工作流活动中添加了一个新选项，用于定义超时周期。 这可防止javascript执行阶段运行太长。 如果经过超时时间，则停止工作流。 默认超时为1小时。 [阅读更多](../../workflow/using/sql-code-and-javascript-code.md)
 
 * 现在，当在投放服务器上找不到匹配的关联时，中间源分析会停止，并显示相应的错误消息。
 
 * 现在支持Postgres的数据库故障转移：当活动库服务器崩溃和重新启动时，现在数据库自动重新连接到它。
 
-* 已将 **开始挂起** 视图添加到“管理”>“审核”>“工作流状态”节点。 这允许您监视实例上正在等待operationMgt进程启动的所 **有工作流** 。 此视图包含在营销活动包中。 [阅读更多](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* **开始挂起**&#x200B;视图已添加到“管理”>“审核”>“工作流状态”节点。 这允许您监视实例上等待由&#x200B;**operationMgt**&#x200B;进程启动的所有工作流。 此视图包含在营销活动包中。 [阅读更多](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 **其他变更**
 
 * 在Linux上，nlserver服务启动现在使用系统单元而不是/etc/init.d/nlserver6脚本。 安装20.1包时，将自动执行到新启动方案的迁移。 /etc/init.d/nlserver6仍然提供，但是为了与nlserver服务(开始、重新启动、停止等)交互，我们建议您直接使用systemctl命令。
 
-* 最耗用的自定义表已从xtkNewId序 **列移动** 到专用序列。 [阅读更多](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* 最耗用的自定义表已从&#x200B;**xtkNewId**&#x200B;序列移动到专用序列。 [阅读更多](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * 改进了查询性能，这些性能可能会受到不必要的数据库连接的影响。
 
@@ -125,7 +125,7 @@ _2020年2月17日_
 
 * 修复了通过Netezza查询连接器运行联合数据访问时的编码问题。 (NEO-19594)
 
-* 修复了在Web下载工作流POST活动中使用事件方法 **时导致错误** 的问题。
+* 修复了在&#x200B;**Web下载**&#x200B;工作流POST活动中使用事件方法时导致错误的问题。
 
 * 修复了生成优惠建议的问题。 (NEO-18176)
 
@@ -133,25 +133,25 @@ _2020年2月17日_
 
 * 修复了分析连续投放内容中的URL时可能导致其崩溃的问题。 (NEO-16910)
 
-* 修复了在创建新 **开始****时不** 计算“活动”和“结束”字段的问题。
+* 修复了在创建新开始时不计算&#x200B;**活动**&#x200B;和&#x200B;**结束**&#x200B;字段的问题。
 
-* 修复了使用URL时 **“文件下载** ”工作流活动的问题。
+* 修复了使用URL时的&#x200B;**文件下载**&#x200B;工作流活动的问题。
 
 * 修复了在报表的列表活动中预览导入的查询时的问题。 (NEO-13119)
 
-* 修复了在电子邮件编辑器中选择“以活动为后盾” **个性化块时** ，显示过时图像的问题。
+* 修复了在电子邮件编辑器中选择&#x200B;**由活动**&#x200B;提供个性化块时显示过时图像的问题。
 
 * 客户端与服务器之间的网络通信已得到改进。
 
 * 修复了在同一工作流中创建过多活动的问题。 现在，您创建的工作流不能超过28个。 将显示警告。
 
-* 修复了在合并工作 **流活动中使用** “选择列”对帐选 **项时的** 问题。
+* 修复了在&#x200B;**合并**&#x200B;工作流活动中使用&#x200B;**列**&#x200B;对帐选项时的问题。
 
 * 修复了在工作流中使用损坏的扩充列表时可能发生的控制台崩溃问题。 (NEO-18096)
 
 * 修复了工作流(NEO-18010、NEO-18032)中可能发生的各种控制台崩溃问题
 
-* 修复了允许执行外部信号工作 **流活动的问** 题，即使该信号处于禁用状态。 (NEO-17524)
+* 修复了允许执行&#x200B;**外部信号**&#x200B;工作流活动的问题，即使它被禁用。 (NEO-17524)
 
 * 修复了创建新模式时的问题。
 
@@ -169,29 +169,29 @@ _2020年2月17日_
 
 * 修复了上载目录是远程共享位置时无法将数据上载到公共资源的问题。 (NEO-19361)
 
-* 修复了导致从Adobe Experience Cloud技术工 **作流导入受众** (Import Magins)始终失败的问题。 (NEO-18463)
+* 修复了导致从Adobe Experience Cloud **技术工作流导入受众始终失败的问题。**(NEO-18463)
 
 * 修复了在使用从投放导入的模板时无法发送Experience Manager的问题。 (NEO-17540)
 
 * 修复了升级到构建9032并阻止实例通过SSL协议连接到FTP服务器后出现的问题。 (NEO-20498)
 
-* 修复了在工作流中使用活动联合数据访问作为模式来删除、插 **入或更新大量数据** ，时出现的问题。 (NEO-13280)
+* 修复了在工作流中使用&#x200B;**更新活动**&#x200B;以联合数据访问模式作为定位维度删除、插入或更新大量数据时发生的问题。 (NEO-13280)
 
 * 修复了在HTML内容标记外存在Javascript代码时无法发送电子邮件的问题。 (NEO-18628)
 
 * 修复了在尝试显示来自已发送消息的投放日志的镜像页面时发生的问题。 (NEO-17976)
 
-* 修复了在镜像页面中单 **击“导入HTML** ”后，“文本内容”选 **项卡中无法显** 示“指向投放个 **性化** ”块的链接的问题。 (NEO-17568)
+* 修复了在投放中单击&#x200B;**导入HTML**&#x200B;后，阻止&#x200B;**指向镜像页面**&#x200B;个性化块的链接显示在&#x200B;**文本内容**&#x200B;选项卡中的问题。 (NEO-17568)
 
 * 单击指向已过期的镜像页面的链接时显示错误消息。 (NEO-17340)
 
-* 修复了阻止在“数据分发”创建屏幕中使用某 **些按钮** 的问题。
+* 修复了阻止在&#x200B;**数据分发**&#x200B;创建屏幕中使用某些按钮的问题。
 
 * 修复了在以亚洲／加尔各答为时区的实例中安排投放活动时发生的问题。 (NEO-20001)
 
 * 现在，当投放有关联配置问题时显示错误。
 
-* 修复了在“关于”菜单中显示错误版本标 **签号** 的问题。
+* 修复了在&#x200B;**“关于**”菜单中显示错误版本标签号的问题。
 
 * 修复了在工作流中尝试从重复路由的属性更新投放帐户时发生的问题。 (NEO-18684)
 
