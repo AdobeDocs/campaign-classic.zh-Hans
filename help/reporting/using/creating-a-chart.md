@@ -21,7 +21,7 @@ ht-degree: 2%
 
 图表通过右键单击菜单或工具栏直接插入到报表页面。
 
-## 创建步骤 {#creation-steps}
+## 创建步骤{#creation-steps}
 
 要在报表中创建图表，请应用以下步骤：
 
@@ -33,15 +33,15 @@ ht-degree: 2%
 
    ![](assets/s_ncs_advuser_report_wizard_018.png)
 
-1. 单击选 **[!UICONTROL Data]** 项卡以定义数据源和要计算的系列。
+1. 单击&#x200B;**[!UICONTROL Data]**&#x200B;选项卡以定义数据源和要计算的系列。
 
-   要在图表中显示的统计信息可以基于查询或上下文数据(即当前页面的入站过渡提供的数据)来计算(有关详细信息，请参阅使 [用上下文数据](../../reporting/using/using-the-context.md#using-context-data))。
+   要在图表中显示的统计信息可以基于查询或上下文数据计算，即当前页面的入站过渡提供的数据（有关详细信息，请参阅[使用上下文数据](../../reporting/using/using-the-context.md#using-context-data)）。
 
-   * 单击链 **[!UICONTROL Filter data...]** 接以定义数据库中数据的筛选条件。
+   * 单击&#x200B;**[!UICONTROL Filter data...]**&#x200B;链接以定义数据库中数据的筛选条件。
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * 要使用上下文数据，请选择此选项并单击 **[!UICONTROL Advanced settings...]** 链接。 然后选择统计数据所关注的数据。
+   * 要使用上下文数据，请选择此选项，然后单击&#x200B;**[!UICONTROL Advanced settings...]**&#x200B;链接。 然后选择统计数据所关注的数据。
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
       ![](assets/reporting_graph_select-from_context.png)
 
-## 图表类型和变体 {#chart-types-and-variants}
+## 图表类型和变体{#chart-types-and-variants}
 
 Adobe Campaign优惠各种类型的图形表示。 详见下文。
 
@@ -57,13 +57,13 @@ Adobe Campaign优惠各种类型的图形表示。 详见下文。
 
 ![](assets/s_advuser_report_page_activity_04.png)
 
-也可以通过图表中 **[!UICONTROL Chart type]** 选项卡的 **[!UICONTROL General]** 部分更改它。
+也可以通过图表中&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL Chart type]**&#x200B;部分更改它。
 
 ![](assets/reporting_change_graph_type.png)
 
-变体取决于所选的图表类型。 它们通过链接进 **[!UICONTROL Variants...]** 行选择。
+变体取决于所选的图表类型。 它们通过&#x200B;**[!UICONTROL Variants...]**&#x200B;链接进行选择。
 
-### 细分：饼图 {#breakdown--pie-charts}
+### 细分：饼图{#breakdown--pie-charts}
 
 通过这种图形表示形式，可显示测量元素的概述。
 
@@ -71,7 +71,7 @@ Adobe Campaign优惠各种类型的图形表示。 详见下文。
 
 ![](assets/reporting_graph_type_sector_1.png)
 
-该链 **[!UICONTROL Variants]** 接可让您个性化图表的整体呈现。
+通过&#x200B;**[!UICONTROL Variants]**&#x200B;链接，您可以个性化图表的整体呈现。
 
 ![](assets/reporting_graph_type_sector_2.png)
 
@@ -91,21 +91,21 @@ Adobe Campaign优惠各种类型的图形表示。 详见下文。
 
 ![](assets/s_ncs_advuser_report_sector_exple3.png)
 
-### 演变：曲线和区域 {#evolution--curves-and-areas}
+### 演变：曲线和区域{#evolution--curves-and-areas}
 
 通过这种图形表示形式，您可以及时了解一个或多个度量的演变。
 
 ![](assets/reporting_graph_type_curve.png)
 
-### 比较：直方图 {#comparison--histograms}
+### 比较：直方图{#comparison--histograms}
 
 直方图允许您比较一个或多个变量的值。
 
-对于这些类型的图表，窗口中提供以下选 **[!UICONTROL Variants]** 项：
+对于这些类型的图表，**[!UICONTROL Variants]**&#x200B;窗口中提供以下选项：
 
 ![](assets/reporting_select_graph_var.png)
 
-选中选 **[!UICONTROL Display caption]** 项以显示图表中的题注并选择其位置：
+选中&#x200B;**[!UICONTROL Display caption]**&#x200B;选项以显示图表中的题注并选择其位置：
 
 ![](assets/reporting_select_graph_legend.png)
 
@@ -113,13 +113,13 @@ Adobe Campaign优惠各种类型的图形表示。 详见下文。
 
 ![](assets/reporting_graph_type_histo.png)
 
-如有必要，您可以颠倒值显示顺序。 To do this, select the **[!UICONTROL Reverse stacking]** option.
+如有必要，您可以颠倒值显示顺序。 为此，请选择&#x200B;**[!UICONTROL Reverse stacking]**&#x200B;选项。
 
-### 转换：漏斗 {#conversion--funnel}
+### 转换：漏斗{#conversion--funnel}
 
 通过这种图表可以跟踪测量元素的对话率。
 
-### 进度：仪表 {#progress--gauge}
+### 进度：仪表{#progress--gauge}
 
 此类型的图表允许您显示与定义的目标相比值的进度。 在以下示例中，黑色拨号显示成功发送(76)的投放数，该数量超出100个投放的目标。 该仪表分为三个范围，这些范围与特定状态相对应。
 
@@ -129,37 +129,37 @@ Adobe Campaign优惠各种类型的图形表示。 详见下文。
 
 ![](assets/reporting_graph_type_gauge1.png)
 
-* 该 **[!UICONTROL Value]** 字段由图表中的黑色拨号表示。 它表示要计算其进度的元素。 必须已保存要表示的值才能使用。
-* 字 **[!UICONTROL Goal]** 段表示要达到的最大值。
-* 使用字 **[!UICONTROL Other mark]** 段，您可以向图表添加第二个指示符。
-* 字 **[!UICONTROL Display range]** 段允许您指定计算报表的值。
-* 该字 **[!UICONTROL Value ranges]** 段允许您将状态（无、坏、可接受、好）归为一组值，以更好地说明进度。
+* **[!UICONTROL Value]**&#x200B;字段由图表中的黑色拨号表示。 它表示要计算其进度的元素。 必须已保存要表示的值才能使用。
+* **[!UICONTROL Goal]**&#x200B;字段表示要达到的最大值。
+* 使用&#x200B;**[!UICONTROL Other mark]**&#x200B;字段，您可以向图表添加第二个指示符。
+* 通过&#x200B;**[!UICONTROL Display range]**&#x200B;字段，可以指定计算报告的值。
+* **[!UICONTROL Value ranges]**&#x200B;字段允许您将状态（“无”、“坏”、“可接受”、“良好”）属性为一组值，以更好地说明进度。
 
-在部 **[!UICONTROL Display settings]** 分中， **[!UICONTROL Change appearance...]** 您可以配置图表的显示方式。
+在&#x200B;**[!UICONTROL Display settings]**&#x200B;部分，使用&#x200B;**[!UICONTROL Change appearance...]**&#x200B;可以配置图表的显示方式。
 
 ![](assets/reporting_graph_type_gauge2.png)
 
-通过 **[!UICONTROL Display the value below the gauge]** 此选项，可在图表下方显示值进度。
+使用&#x200B;**[!UICONTROL Display the value below the gauge]**&#x200B;选项可在图表下方显示值进度。
 
-该 **[!UICONTROL Aperture ratio]** 字段必须介于0和1之间，它允许您以或多或少完整的圆形编辑报表的光圈。 在上面的示例中，值0.50对应一个半圆。
+**[!UICONTROL Aperture ratio]**&#x200B;字段必须介于0和1之间，它允许您以或多或少的完整圆形编辑报表的光圈。 在上面的示例中，值0.50对应一个半圆。
 
-该字 **[!UICONTROL Width]** 段允许您编辑图表大小。
+通过&#x200B;**[!UICONTROL Width]**&#x200B;字段可编辑图表大小。
 
-## 与图表交互 {#interaction-with-the-chart}
+## 与图表{#interaction-with-the-chart}的交互
 
-用户单击图表时，您可以定义操作。 打开窗 **[!UICONTROL Interaction events]** 口并选择要执行的操作。
+用户单击图表时，您可以定义操作。 打开&#x200B;**[!UICONTROL Interaction events]**&#x200B;窗口，选择要执行的操作。
 
-本节详细介绍了可能的交互类型 [及其配置](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)。
+可能的交互类型及其配置详见[本节](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)。
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
-## 计算统计 {#calculating-statistics}
+## 计算统计数据{#calculating-statistics}
 
 通过图表可显示有关所收集数据的统计信息。
 
-这些统计信息是通过选 **[!UICONTROL Series parameters]** 项卡的部分定 **[!UICONTROL Data]** 义的。
+这些统计信息通过&#x200B;**[!UICONTROL Data]**&#x200B;选项卡的&#x200B;**[!UICONTROL Series parameters]**&#x200B;部分进行定义。
 
-要创建新统计信息，请单击图 **[!UICONTROL Add]** 标并配置相应的窗口。 可用的计算类型详见下文。
+要创建新统计信息，请单击&#x200B;**[!UICONTROL Add]**&#x200B;图标并配置相应的窗口。 可用的计算类型详见下文。
 
 ![](assets/reporting_add_statistics.png)
 
