@@ -49,7 +49,7 @@ ht-degree: 4%
 
    ![](assets/campaign_opt_create_a_rule_01.png)
 
-1. 在新规则的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，选择&#x200B;**压力**&#x200B;类型规则，并输入其名称和说明。
+1. 在新规则的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，选择&#x200B;**压力**&#x200B;类型规则并输入其名称和说明。
 
    ![](assets/campaign_opt_create_a_rule_02.png)
 
