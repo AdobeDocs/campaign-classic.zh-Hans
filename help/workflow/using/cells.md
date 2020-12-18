@@ -17,15 +17,15 @@ ht-degree: 8%
 
 # 单元格{#cells}
 
-该 **[!UICONTROL Cells]** 活动以数据列的形式提供各种子集的视图。 它简化了子集操作，还设计为鼓励个性化可能性。
+**[!UICONTROL Cells]**&#x200B;活动以数据列的形式提供各种子集的视图。 它简化了子集操作，还设计为鼓励个性化可能性。
 
 ![](assets/wf_split_cells.png)
 
-此活动可配置为根据用户需求输入特定参数。 默认情况下，每个子集的详细信息都会通过选项卡和选项卡在专用窗口中 **[!UICONTROL Selection]** 进行 **[!UICONTROL Advanced]** 详细介绍。 在以下示例中，表单已被修改：已添 **[!UICONTROL Data]** 加选项卡，以启用优惠与每个子集的优先级的关联。
+此活动可配置为根据用户需求输入特定参数。 默认情况下，每个子集的详细信息会通过&#x200B;**[!UICONTROL Selection]**&#x200B;和&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡在专用窗口中详细显示。 在以下示例中，表单已被修改：已添加&#x200B;**[!UICONTROL Data]**&#x200B;选项卡，以启用优惠与每个子集的优先级的关联。
 
 ![](assets/wf_split_cells_with_customization.png)
 
-对于此配置，以下信息已添加到工作流表单(在Adobe Campaign **[!UICONTROL Administration > Configurations > Input forms]** 树的节点中):
+对于此配置，以下信息已添加到工作流表单(在Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Configurations > Input forms]**&#x200B;节点中):
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
