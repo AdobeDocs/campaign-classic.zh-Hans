@@ -23,16 +23,16 @@ ht-degree: 4%
 
 这些SOAP方法的行为方式与应用程序中本机定义的方法相同。 支持相同的属性：静态、仅密钥和const。
 
-## 定义方法库 {#defining-a-method-library}
+## 定义方法库{#defining-a-method-library}
 
 创建方法库涉及两个阶段：
 
 * SOAP方法声明，
 * JavaScript中的定义（或实现）。
 
-### 声明 {#declaration}
+### 声明{#declaration}
 
-开始，在模式中声明方法(有关如何创建和编辑模式的详细信息，请参 [阅本节](../../configuration/using/about-schema-edition.md))。
+开始通过在模式中声明方法(有关如何创建和编辑模式的详细信息，请参阅[此部分](../../configuration/using/about-schema-edition.md))。
 
 它们的声明与本机方法的声明相似，只是需要添加指定定义所在方法库名称的“library”属性。
 
@@ -54,7 +54,7 @@ testLog(msg)方法在nms:收件人扩展中声明
 >
 >命名空间和用于库的名称与找到声明的命名空间和模式名称无关。
 
-### 定义 {#definition}
+### 定义{#definition}
 
 SOAP方法以JavaScript函数的形式实现，该函数以表示库的脚本的形式分组。
 
@@ -83,7 +83,7 @@ function nms_recipient_testLog(message)
  }
 ```
 
-**2. 签名**
+**2.签名**
 
 函数的签名必须包含声明的每个“in”或“inout”参数的参数。
 
@@ -92,7 +92,7 @@ function nms_recipient_testLog(message)
 * **非静态方法**:该函数必须首先包含一个附加参数，与以“xml”(E4X)类型对象形式传递的XML实体一致。
 * **“仅限键”类型方法**:该函数必须首先包含一个附加参数，与以字符串形式传递的键一致。
 
-**3. 返回值**
+**3.返回值**
 
 函数必须为每个“out”或“inout”类型参数返回一个值。 具体情况：如果声明方法时没有“static”、“key only”或“const”属性，则第一个返回值必须与修改后的实体一致。 可以返回新对象或返回第一个修改的参数。
 
