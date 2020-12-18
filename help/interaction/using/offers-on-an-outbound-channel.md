@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 出站渠道优惠{#offers-on-an-outbound-channel}
 
-## 电子邮件优惠投放 {#email-offer-delivery}
+## 电子邮件优惠投放{#email-offer-delivery}
 
 在我们的类别库里，有一旅行优惠前往非洲。 已配置每个优惠的资格、上下文和表示。 现在，我们希望创建一个活动，通过电子邮件向优惠展示。
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_001.png)
 
-1. 编辑电子邮件投放，然后单击 **[!UICONTROL Offers]** 图标。
+1. 编辑电子邮件投放并单击&#x200B;**[!UICONTROL Offers]**&#x200B;图标。
 
    ![](assets/offer_delivery_example_002.png)
 
@@ -53,18 +53,18 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_008.png)
 
-1. 单 **[!UICONTROL Preview]** 击预览投放中的优惠，然后选择一个预览来收件人将收到的优惠。
+1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;预览投放中的优惠，然后选择一个收件人预览优惠，使其与接收的一致。
 
    ![](assets/offer_delivery_example_009.png)
 
 1. 保存投放并开始定位工作流。
-1. 打开投放并单击 **[!UICONTROL Audit]** 投放的选项卡：您可以看到优惠引擎已选择要从目录中的各种优惠中提出的建议。
+1. 打开投放并单击投放的&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡：您可以看到优惠引擎已选择要从目录中的各种优惠中提出的建议。
 
    ![](assets/offer_delivery_example_010.png)
 
-## 执行优惠模拟 {#perform-an-offer-simulation}
+## 执行优惠模拟{#perform-an-offer-simulation}
 
-1. 在宇宙 **[!UICONTROL Profiles and Targets]** 中，单击链 **[!UICONTROL Simulations]** 接，然后单击按 **[!UICONTROL Create]** 钮。
+1. 在&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;宇宙中，单击&#x200B;**[!UICONTROL Simulations]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
 
    ![](assets/offer_simulation_001.png)
 
@@ -76,7 +76,7 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_003.png)
 
-1. 单击选 **[!UICONTROL Edit]** 项卡，然后 **[!UICONTROL Scope]**。
+1. 单击&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Scope]**。
 
    ![](assets/offer_simulation_example_004.png)
 
@@ -91,7 +91,7 @@ ht-degree: 3%
 1. 输入有效日期。 您必须至少输入开始日期。 这样，优惠引擎可以过滤优惠，并选择在给定日期有效的过滤器。
 1. 如有必要，请指定一个或多个主题，将优惠数限制为设置中包含此关键字的数。
 
-   在我们的示例中， **旅行类别** 包含两个子类别，其中两个子主题是单独的。 我们希望为优惠运行模拟，其主题 **为“客户>1年** ”。
+   在我们的示例中，**Travel**&#x200B;类别包含两个子类别，它们有两个单独的主题。 我们希望为具有&#x200B;**Customers>1年**&#x200B;主题的优惠运行模拟。
 
    ![](assets/offer_simulation_example_007.png)
 
@@ -105,21 +105,21 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_009.png)
 
-1. 保存设置，然后 **[!UICONTROL Start]** 单击选 **[!UICONTROL Dashboard]** 项卡以运行模拟。
+1. 保存设置，然后单击&#x200B;**[!UICONTROL Dashboard]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Start]**&#x200B;以运行模拟。
 
    ![](assets/offer_simulation_example_010.png)
 
-1. 模拟完成后，请查阅，以了 **[!UICONTROL Results]** 解每个优惠的主张的详细细目。
+1. 模拟完成后，请查阅&#x200B;**[!UICONTROL Results]**，了解每个优惠的主张的详细细目。
 
    在本例中，优惠引擎根据3个命题进行优惠细分。
 
    ![](assets/offer_simulation_example_011.png)
 
-1. 显示视图 **[!UICONTROL Breakdown of offers by rank]** 列表引擎选择的优惠的优惠。
+1. 显示&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;以视图由优惠引擎选择的优惠的列表。
 
    ![](assets/offer_simulation_example_012.png)
 
-1. 如有必要，可以更改范围设置并通过单击再次运行模拟 **[!UICONTROL Start simulation]**。
+1. 如有必要，可以通过单击&#x200B;**[!UICONTROL Start simulation]**&#x200B;更改范围设置并再次运行模拟。
 
    ![](assets/offer_simulation_example_010.png)
 
