@@ -33,11 +33,11 @@ ht-degree: 2%
 
 要创建此示例，请应用以下步骤：
 
-1. 在 **[!UICONTROL Data to extract]**&#x200B;中，定义主键的计数（如上一个示例所示）。 在输出 **[!UICONTROL Gender]** 列中添加字段。 选中列 **[!UICONTROL Group]** 中的选 **[!UICONTROL Gender]** 项。 这样，收件人将按性别分组。
+1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;中，定义主键的计数（如上例所示）。 在输出列中添加&#x200B;**[!UICONTROL Gender]**&#x200B;字段。 检查&#x200B;**[!UICONTROL Gender]**&#x200B;列中的&#x200B;**[!UICONTROL Group]**&#x200B;选项。 这样，收件人将按性别分组。
 
    ![](assets/query_editor_nveau_27.png)
 
-1. 在窗口 **[!UICONTROL Sorting]** 中，单击 **[!UICONTROL Next]**:此处不需要排序。
+1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Next]**:此处不需要排序。
 1. 配置数据过滤。 此处，您希望将选择限制为居住在伦敦的联系人。
 
    ![](assets/query_editor_22.png)
@@ -46,9 +46,9 @@ ht-degree: 2%
    >
    >值区分大小写。 如果输入“伦敦”值时没有大写字母，而收件人的列表中含有带大写字母的“伦敦”一词，则查询将失败。
 
-1. 在窗口 **[!UICONTROL Data formatting]** 中，单击 **[!UICONTROL Next]**:此示例不需要格式设置。
-1. 在预览窗口中，单击 **[!UICONTROL Launch data preview]**。
+1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Next]**:此示例不需要格式设置。
+1. 在预览窗口中，单击&#x200B;**[!UICONTROL Launch data preview]**。
 
-   按性别分类的每个排序有三个不同的值： **女** 2人， **男1人** , **性别** 不明时0人。 在本例中，列表包含10名妇女、16名男子和2名性别不详的人。
+   按性别分类的每个排序有三个不同的值：女性&#x200B;**2**，男性&#x200B;**1**，性别未知时为&#x200B;**0**。 在本例中，列表包含10名妇女、16名男子和2名性别不详的人。
 
    ![](assets/query_editor_agregat_04.png)
