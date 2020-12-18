@@ -17,15 +17,15 @@ ht-degree: 3%
 
 # 种子地址{#seed-addresses}
 
-如果收件人表是自定义表，则需要其他配置。 必 **[!UICONTROL nms:seedMember]** 须延长模式。 在种子地址中会添加一个额外的选项卡，用于定义适当的字段，如下所示：
+如果收件人表是自定义表，则需要其他配置。 **[!UICONTROL nms:seedMember]**&#x200B;模式必须扩展。 在种子地址中会添加一个额外的选项卡，用于定义适当的字段，如下所示：
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-有关使用种子地址的详细信 [息，请参阅](../../delivery/using/about-seed-addresses.md)。
+有关使用种子地址的详细信息，请参阅[本节](../../delivery/using/about-seed-addresses.md)。
 
-## 实施 {#implementation}
+## 实现{#implementation}
 
-nms **:seedMember** 模式和现成附带的链接表单旨在扩展用于客户配置，以引用所有必要字段。 模式定义包含详细描述其配置模式的注释。
+**nms:seedMember**&#x200B;模式和现成的链接表单旨在扩展用于客户配置，以引用所有必要字段。 模式定义包含详细描述其配置模式的注释。
 
 收件人表扩展模式的定义：
 
@@ -44,14 +44,14 @@ nms **:seedMember** 模式和现成附带的链接表单旨在扩展用于客户
 
 应用以下步骤：
 
-1. 创建nms:seedMember **模式的扩展** 。 有关此内容的详细信息，请参 [阅扩展模式](../../configuration/using/extending-a-schema.md)。
-1. 在此新扩展中，使用以下参数在的根 **[!UICONTROL seedMember]** 添加新元素：
+1. 创建&#x200B;**nms:seedMember**&#x200B;模式的扩展。 有关详细信息，请参阅[扩展模式](../../configuration/using/extending-a-schema.md)。
+1. 在此新扩展中，在&#x200B;**[!UICONTROL seedMember]**&#x200B;的根添加一个新元素，并使用以下参数：
 
    ```
    name="custom_customNamespace_customSchema"
    ```
 
-   此元素必须包含导出活动所需的字段。 这些字段应与外部模式中的相应字段同名。 例如，如果模式为 **[!UICONTROL cus:person]** , **[!UICONTROL nms:seedMember]** 则模式应按如下方式扩展：
+   此元素必须包含导出活动所需的字段。 这些字段应与外部模式中的相应字段同名。 例如，如果模式为&#x200B;**[!UICONTROL cus:person]**，则&#x200B;**[!UICONTROL nms:seedMember]**&#x200B;模式应按如下方式扩展：
 
    ```
      <srcSchema extendedSchema="nms:seedMember" label="Seed addresses" labelSingular="Seed address" name="seedMember" namespace="cus">
@@ -70,19 +70,19 @@ nms **:seedMember** 模式和现成附带的链接表单旨在扩展用于客户
 
    >[!NOTE]
    >
-   >nms:seedMember模式 **的扩展** ，必须符合Adobe Campaign中活动和投放的结构。
+   >**nms:seedMember**&#x200B;模式的扩展必须符合活动和Adobe Campaign中投放的结构。
 
    >[!IMPORTANT]
    >
    >
    >    
    >    
-   >    * 在扩展期间，必须为“ **email”字段指定SQL名称** (@sqlname)。 SQL名称必须与为收件人模式保留的&#39;sEmail&#39;不同。
-   >    * 必须使用在扩展nms:seedMember时创建的模式更 **新库结构**。
-   >    * 在nms: **seedMember** extension中，包含电子邮件地址的字段 **必须将name=&quot;email** &quot;作为属性。 SQL名称必须与已用于收件人模式的&#39;sEmail&#39;不同。 此属性必须立即在元素下声 **`<element name="custom_cus_person" />`** 明。
+   >    * 在扩展期间，必须为“email”字段指定&#x200B;**SQL名称(@sqlname)**。 SQL名称必须与为收件人模式保留的&#39;sEmail&#39;不同。
+   >    * 必须使用扩展&#x200B;**nms:seedMember**&#x200B;时创建的模式更新数据库结构。
+   >    * 在&#x200B;**nms:seedMember**&#x200B;扩展中，包含电子邮件地址的字段必须具有&#x200B;**name=&quot;email&quot;**&#x200B;作为属性。 SQL名称必须与已用于收件人模式的&#39;sEmail&#39;不同。 此属性必须立即在&#x200B;**`<element name="custom_cus_person" />`**&#x200B;元素下声明。
 
 
-1. 相应地 **[!UICONTROL seedMember]** 修改表单以在窗口中定义新的“内部收件人” **[!UICONTROL Seed addresses]** 选项卡。 For more on this, refer to [Form structure](../../configuration/using/form-structure.md).
+1. 相应地修改&#x200B;**[!UICONTROL seedMember]**&#x200B;表单，以在&#x200B;**[!UICONTROL Seed addresses]**&#x200B;窗口中定义新的“内部收件人”选项卡。 有关详细信息，请参阅[表单结构](../../configuration/using/form-structure.md)。
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"
