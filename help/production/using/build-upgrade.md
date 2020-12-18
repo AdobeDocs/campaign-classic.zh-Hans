@@ -9,7 +9,7 @@ topic-tags: updating-adobe-campaign
 translation-type: tm+mt
 source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
