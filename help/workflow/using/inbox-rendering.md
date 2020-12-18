@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 收件箱渲染(IR){#inbox-rendering}
 
-默认情况下，下面详细介绍的工 **作流会与收件箱渲** 染(IR)模块一起安装。 For more on Inbox rendering, refer to this [section](../../delivery/using/inbox-rendering.md).
+默认情况下，下面详细介绍的工作流与&#x200B;**收件箱渲染(IR)**&#x200B;模块一起安装。 有关收件箱渲染的详细信息，请参阅此[部分](../../delivery/using/inbox-rendering.md)。
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ ht-degree: 2%
   <tr> 
    <td> <strong>更新收件箱渲染的种子网络</strong><br /> </td> 
    <td> <span class="uicontrol">updateRenderingSeeds</span> <br /> </td> 
-   <td> 此工作流更新用于收件箱呈现的电子邮件地址，并且仅在HTTPS端口打开以供 <strong>deliverability.neolane.net时有效</strong>。<br /> </td> 
+   <td> 此工作流更新用于收件箱呈现的电子邮件地址，并且仅当HTTPS端口为<strong>deliverability.neolane.net</strong>打开时才有效。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
