@@ -9,7 +9,7 @@ topic-tags: database-maintenance
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## PostgreSQL {#postgresql}
 
-### 检测大表 {#detecting-large-tables}
+### 检测大表{#detecting-large-tables}
 
 1. 您可以向视图库添加以下数据：
 
@@ -44,9 +44,9 @@ ht-degree: 0%
    select * from uvSpace;
    ```
 
-### 简单维护 {#simple-maintenance}
+### 简单维护{#simple-maintenance}
 
-在PostgreSQL下，您可以使用的典型命令是真 **空完全** 并重 **新索引**。
+在PostgreSQL下，您可以使用的典型命令为&#x200B;**真空完全**&#x200B;和&#x200B;**重新索引**。
 
 下面是使用以下两个命令定期执行SQL维护计划的典型示例：
 
@@ -91,23 +91,23 @@ vacuum full nmsdelivery;
 >[!NOTE]
 >
 >* Adobe建议从较小的表开始：这样，如果大型表（故障风险最大）上的进程失败，则至少部分维护已完成。
->* Adobe重新命令添加特定于数据模型的表，该表可能会受到重大更新的影响。 如果您有大的每日数 **据复制流** ，则NmsRecipient可能会出现这种情况。
->* 真 **空** 和重 **** 新索引命令将锁定表，在执行维护时暂停一些进程。
->* 对于超大的表（通常高于5 Gb）, **完全真空** 可能会变得非常低效，并且需要很长时间。 Adobe不建议将其用于 **YyyNmsBroadLogXxx表** 。
->* 此维护操作可通过Adobe Campaign工作流使用 **[!UICONTROL SQL]** 活动来实现(有关详细信息，请参 [阅本节](../../workflow/using/architecture.md))。 确保计划维护时间较短，不会与备份窗口相冲突。
+>* Adobe重新命令添加特定于数据模型的表，该表可能会受到重大更新的影响。 如果您的每日数据复制流量较大，则&#x200B;**NmsRecipient**&#x200B;可能会出现这种情况。
+>* **真空**&#x200B;和&#x200B;**重新索引**&#x200B;命令将锁定表，在执行维护时会暂停一些进程。
+>* 对于超大的表（通常高于5 Gb）,**真空完全**&#x200B;可能会变得非常低效，并且需要很长时间。 Adobe不建议将其用于&#x200B;**YyyNmsBroadLogXxx**&#x200B;表。
+>* 此维护操作可通过Adobe Campaign工作流使用&#x200B;**[!UICONTROL SQL]**&#x200B;活动来实现（有关详细信息，请参阅[此部分](../../workflow/using/architecture.md)）。 确保计划维护时间较短，不会与备份窗口相冲突。
 
 >
 
 
 
-### 重建数据库 {#rebuilding-a-database}
+### 正在重建数据库{#rebuilding-a-database}
 
-由于真空完全锁定表，因此PostgreSQL不提供执行在线表重建 **的简单方** 法，因此无法进行常规生产。 这意味着必须在不使用表时执行维护。 您可以：
+由于&#x200B;**真空完全**&#x200B;锁定表，因此PostgreSQL不提供执行联机表重建的简单方法，因此无法进行常规生产。 这意味着必须在不使用表时执行维护。 您可以：
 
 * 在Adobe Campaign平台停止时执行维护，
-* 停止可能写入正在重建的表中的各种Adobe Campaign子服务(**nlserver停止wfserver instance_name** ，以停止工作流进程)。
+* 停止可能写入正在重建的表中的各种Adobe Campaign子服务（**nlserver停止wfserver instance_name**&#x200B;以停止工作流进程）。
 
-以下是使用特定函数生成必要DDL的表碎片整理的示例。 通过以下SQL可以创建新函数： **GenRebuildTablePart** 1和 **GenRebuildTablePart2**，这两个DDL可用于生成重新创建表所需的DDL。
+以下是使用特定函数生成必要DDL的表碎片整理的示例。 通过以下SQL可以创建新函数：**GenRebuildTablePart1**&#x200B;和&#x200B;**GenRebuildTablePart2**，可用于生成必要的DDL以重新创建表。
 
 * 第一个函数允许您创建工作表（** _tmp**此处），它是原始表的副本。
 * 然后，第二个函数删除原始表并重命名工作表及其索引。
@@ -327,7 +327,7 @@ vacuum full nmsdelivery;
  $$ LANGUAGE plpgsql;
 ```
 
-以下示例可用于工作流以重建所需的表，而不是使用真空/ **rebuild命令** :
+以下示例可用于工作流中以重建所需的表，而不是使用&#x200B;**真空/rebuild**&#x200B;命令：
 
 ```
 function sqlGetMemo(strSql)
@@ -364,24 +364,24 @@ function sqlGetMemo(strSql)
 
 >[!NOTE]
 >
->对于Microsoft SQL Server，您可以使用本页中详细的维护 [计划](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)。
+>对于Microsoft SQL Server，可以使用在[本页](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)中详细介绍的维护计划。
 
 以下示例涉及Microsoft SQL Server 2005。 如果您使用的是其他版本，请与数据库管理员联系以了解维护过程。
 
 1. 首先，使用具有管理员权限的登录名连接到Microsoft SQL Server Management Studio。
-1. 转到文 **[!UICONTROL Management > Maintenance Plans]** 件夹，右键单击它并选择 **[!UICONTROL Maintenance Plan Wizard]**
-1. 第 **[!UICONTROL Next]** 一页出现时单击。
-1. 选择要创建的维护计划类型(每个计划单独任务或整个计划的单个计划)，然后单击按 **[!UICONTROL Change...]** 钮。
-1. 在窗口 **[!UICONTROL Job schedule properties]** 中，选择所需的执行设置，然后单 **[!UICONTROL OK]** 击，然后单击 **[!UICONTROL Next]** 。
-1. 选择要执行的维护任务，然后单击 **[!UICONTROL Next]** 。
+1. 转到&#x200B;**[!UICONTROL Management > Maintenance Plans]**&#x200B;文件夹，右键单击它并选择&#x200B;**[!UICONTROL Maintenance Plan Wizard]**
+1. 出现第一页时，单击&#x200B;**[!UICONTROL Next]**。
+1. 选择要创建的维护计划类型(每个计划单独任务或整个计划单个计划)，然后单击&#x200B;**[!UICONTROL Change...]**&#x200B;按钮。
+1. 在&#x200B;**[!UICONTROL Job schedule properties]**&#x200B;窗口中，选择所需的执行设置并单击&#x200B;**[!UICONTROL OK]** ，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 选择要执行的维护任务，然后单击&#x200B;**[!UICONTROL Next]**。
 
    >[!NOTE]
    >
    >我们建议至少执行下面所示的维护任务。 您也可以选择统计信息更新任务，但它已由数据库清理工作流执行。
 
-1. 在下拉列表中，选择要运行任务的数据库 **[!UICONTROL Database Check Integrity]** 。
-1. 选择数据库并单击， **[!UICONTROL OK]** 然后单击 **[!UICONTROL Next]** 。
-1. 配置分配给数据库的最大大小，然后单击 **[!UICONTROL Next]** 。
+1. 在下拉列表中，选择要运行&#x200B;**[!UICONTROL Database Check Integrity]**&#x200B;任务的数据库。
+1. 选择数据库并单击&#x200B;**[!UICONTROL OK]** ，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 配置分配给数据库的最大大小，然后单击&#x200B;**[!UICONTROL Next]**。
 
    >[!NOTE]
    >
@@ -391,7 +391,7 @@ function sqlGetMemo(strSql)
 
    * 如果指数碎片化率在10%到40%之间，建议进行重组。
 
-      选择要重新组织的数据库和对象(表或视图)，然后单击 **[!UICONTROL Next]** 。
+      选择要重新组织的数据库和对象(表或视图)，然后单击&#x200B;**[!UICONTROL Next]**。
 
       >[!NOTE]
       >
@@ -399,22 +399,22 @@ function sqlGetMemo(strSql)
 
    * 如果索引碎片率高于40%，建议重建。
 
-      选择要应用于索引重建任务的选项，然后单击 **[!UICONTROL Next]** 。
+      选择要应用于索引重建任务的选项，然后单击&#x200B;**[!UICONTROL Next]**。
 
       >[!NOTE]
       >
-      >在处理器使用方面，重建索引过程更加紧缩，它锁定数据库资源。 如果希 **[!UICONTROL Keep index online while reindexing]** 望索引在重建过程中可用，请勾选此选项。
+      >在处理器使用方面，重建索引过程更加紧缩，它锁定数据库资源。 如果希望索引在重建过程中可用，请勾选&#x200B;**[!UICONTROL Keep index online while reindexing]**&#x200B;选项。
 
-1. 选择要在活动报告中显示的选项，然后单击 **[!UICONTROL Next]** 。
-1. 检查为维护计划配置的列表，然后单击 **[!UICONTROL Finish]** 。
+1. 选择要在活动报告中显示的选项，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 检查为维护计划配置的列表，然后单击&#x200B;**[!UICONTROL Finish]**。
 
    系统会显示维护计划及其各个步骤的状态摘要。
 
-1. 完成维护计划后，单击 **[!UICONTROL Close]** 。
-1. 在Microsoft SQL Server资源管理器中，多次单击文 **[!UICONTROL Management > Maintenance Plans]** 件夹。
+1. 完成维护计划后，单击&#x200B;**[!UICONTROL Close]**。
+1. 在Microsoft SQL Server资源管理器中，多次单击&#x200B;**[!UICONTROL Management > Maintenance Plans]**&#x200B;文件夹。
 1. 选择Adobe Campaign维护计划：各个步骤在工作流中有详细介绍。
 
-   请注意，已在文件夹中创建了 **[!UICONTROL SQL Server Agent > Jobs]** 对象。 此对象允许您开始维护计划。 在我们的示例中，只有一个对象，因为所有维护任务都是同一计划的一部分。
+   请注意，已在&#x200B;**[!UICONTROL SQL Server Agent > Jobs]**&#x200B;文件夹中创建了对象。 此对象允许您开始维护计划。 在我们的示例中，只有一个对象，因为所有维护任务都是同一计划的一部分。
 
    >[!IMPORTANT]
    >
@@ -426,7 +426,7 @@ function sqlGetMemo(strSql)
 >
 >此配置是可选的。
 
-使用 **WdbcOptions_TempDbName** 选项可以为Microsoft SQL Server上的工作表配置单独的数据库。 这将优化备份和复制。
+**WdbcOptions_TempDbName**&#x200B;选项允许您为Microsoft SQL Server上的工作表配置单独的数据库。 这将优化备份和复制。
 
 如果希望在另一个数据库上创建工作表（例如，在工作流执行过程中创建的表），则可以使用此选项。
 
