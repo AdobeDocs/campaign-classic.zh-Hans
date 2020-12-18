@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Sharing audiences with Adobe Experience Cloud{#sharing-audiences-with-adobe-experience-cloud}
+# 与Adobe Experience Cloud共享受众{#sharing-audiences-with-adobe-experience-cloud}
 
 >[!CAUTION]
 >
@@ -26,13 +26,13 @@ ht-degree: 0%
 1. 将Adobe Experience Platform细分数据发送给Adobe Campaign。 要实施此集成，您需要将实时客户数据平台与活动(RTCDP)连接。 [在本节中了解更多信息](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html)。
 
 
-1. 将 **Adobe Campaign****与People核心服务** (也称为 **用户档案和受众核心服务**)或Adobe Audience Manager集成。 然后，您将能够：
+1. 将&#x200B;**Adobe Campaign**&#x200B;与&#x200B;**人员核心服务**(也称为&#x200B;**用户档案和受众核心服务**)或Adobe Audience Manager集成。 然后，您将能够：
 
    * 将共享受众/区段从不同的Adobe Experience Cloud解决方案导入Adobe Campaign。 受众可以通过Adobe Campaign中的列表导入。
 
-   * 以Adobe Experience Cloud共享列表形式导出受众。 这些受众可用于您使用的不同Adobe Experience Cloud解决方案。 受众在工作流中定位后，可使用专用活动导 **[!UICONTROL Update shared audience]** 出。
+   * 以Adobe Experience Cloud共享列表形式导出受众。 这些受众可用于您使用的不同Adobe Experience Cloud解决方案。 受众在工作流中定位后，可使用专用的&#x200B;**[!UICONTROL Update shared audience]**&#x200B;活动导出。
 
 此集成支持两种类型的Adobe Experience CloudID:
 
 * **访客ID**:此类标识符将Adobe Experience Cloud访客与Adobe Campaign收件人协调。
-* **声明的ID**:此类型的标识符将所有类型的数据与Adobe Campaign库中的元素进行协调。 它以Adobe Campaign表示为预定义合并关键项。
+* **声明的ID**:此类型的标识符将所有类型的数据与Adobe Campaign库中的元素进行协调。它以Adobe Campaign表示为预定义合并关键项。
