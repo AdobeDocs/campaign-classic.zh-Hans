@@ -26,7 +26,7 @@ ht-degree: 70%
 * [在电子邮件中集成动态内容](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)：了解 Campaign Classic 和 Target Standard 集成的基本知识。
 * [管理可投放性](../../delivery/using/deliverability-key-points.md)：了解与可投放性相关的概念和最佳实践，以及 Adobe Campaign Classic 提供的工具，从而最佳地发送您的投放内容。
 * [投放最佳实践](../../delivery/using/delivery-best-practices.md)：了解有关使用 Adobe Campaign Classic 设计投放内容并发送内容的最佳实践。
-* [执行构建版升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)：本指南会显示执行 Campaign Classic 构建版升级的重要步骤和最佳实践。
+* [执行构建版升级](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)：本指南会显示执行 Campaign Classic 构建版升级的重要步骤和最佳实践。
 * [安全配置检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)：了解有关检查安全配置和强化内部部署的核心元素
 
 通过查看以下用例和示例，进一步了解 Adobe Campaign：
@@ -37,7 +37,7 @@ ht-degree: 70%
 * [创建概要](../../web/using/use-cases--creating-overviews.md)：创建概要类型的 Web 应用程序，以显示数据库中的所有 Web 应用程序。
 * [工作流用例](../../workflow/using/about-workflow-use-cases.md)：通过这些用例了解工作流的不同使用方法。
 
-## 自助 {#how-to-videos}
+## 自助{#how-to-videos}
 
 除了产品文档之外，您还可以访问下面列出的活动自助资源。
 
@@ -47,8 +47,8 @@ ht-degree: 70%
 
 ### 培训会话和视频
 
-除了这些简短和详细的视频，您还可以在 [Adobe](https://learning.adobe.com/catalog.html) .com上查 [找培训课程](https://www.adobe.com/training/video.html) 和观看功能演示视频。
+除了这些简短和详细的视频，您还可以在Adobe.com上找到[培训课程](https://learning.adobe.com/catalog.html)和观看功能[演示视频](https://www.adobe.com/training/video.html)。
 
 ### Experience League课程
 
-您还可以访问Adobe Campaign Classic [的推荐课](https://experienceleague.adobe.com/?lang=en#dashboard/learning) 程：课程是精心策划的课程集，可快速帮助您掌握技能和知识。
+您还可以访问[推荐的Adobe Campaign Classic课程](https://experienceleague.adobe.com/?lang=en#dashboard/learning):课程是精心策划的课程集，可快速帮助您掌握技能和知识。
