@@ -17,27 +17,27 @@ ht-degree: 2%
 
 # 报告的属性{#properties-of-the-report}
 
-您可以完全个性化和配置报告，以满足您的需求。 为此，请编辑其属性。 报表属性通过活动顺 **[!UICONTROL Properties]** 序图表上方的按钮访问。
+您可以完全个性化和配置报告，以满足您的需求。 为此，请编辑其属性。 通过活动序列图上方的&#x200B;**[!UICONTROL Properties]**&#x200B;按钮访问报表属性。
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-常规属性如下所述。 本节介绍在中配 **[!UICONTROL Parameters]**&#x200B;置的 **[!UICONTROL Variables]** 高级 **[!UICONTROL Scripts]** 功能 [，以](../../reporting/using/advanced-functionalities.md)及选项卡。
+常规属性如下所述。 在&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;选项卡中配置的高级功能在本节](../../reporting/using/advanced-functionalities.md)中有介绍。[
 
-## 常规属性 {#overall-properties}
+## 常规属性{#overall-properties}
 
-在报表 **[!UICONTROL General]** 属性的选项卡中，您可以编辑以下列出的设置：
+在报表属性的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，可以编辑以下列出的设置：
 
-* 报表的标签和内部名称。 报 **[!UICONTROL Internal name]** 表最终URL中使用。 在创建报告后不应更改它。
+* 报表的标签和内部名称。 **[!UICONTROL Internal name]**&#x200B;用于报告最终URL。 在创建报告后不应更改它。
 
-* 在创建报 **表时** ，将选择报表文件夹。 最佳实践是为自定义报表创建专用文件夹，使其不与内置 [报表混合](../../reporting/using/about-campaign-built-in-reports.md)。
+* 在创建报告时选择报告&#x200B;**文件夹**。 最佳实践是为自定义报表创建专用文件夹，使其不与[内置报表](../../reporting/using/about-campaign-built-in-reports.md)混合。
 
-* 创 **建报** 告时，将选择存储。 要更改报表的数据表，请单 **[!UICONTROL Select link]** 击字段右侧的图 **[!UICONTROL Document type]** 标。
+* 创建报告时，将选择&#x200B;**存储**。 要更改报表的数据表，请单击&#x200B;**[!UICONTROL Document type]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Select link]**&#x200B;图标。
 
    ![](assets/s_ncs_advuser_report_properties_02.png)
 
-* 访问控制 **参数** 。 这些设置如下所述。
+* **访问控制**&#x200B;参数。 这些设置如下所述。
 
-## Controlling access to the report {#report-accessibility}
+## 控制对报告{#report-accessibility}的访问
 
 报表可在Adobe Campaign控制台中或通过Web浏览器访问。 在这种情况下，可以需要配置报告访问控制，如下所示。
 
@@ -45,16 +45,16 @@ ht-degree: 2%
 
 可能的选项包括：
 
-* **[!UICONTROL Anonymous access]**:此选项允许不受限制地访问报告。 但是，不可能进行任何操纵。
+* **[!UICONTROL Anonymous access]**:此选项允许不受限制地访问报告。但是，不可能进行任何操纵。
 
-   “webapp”技术运营商的权限用于显示报告元素。 在本节 [中了解更多](../../platform/using/access-management.md#default-operators)。
+   “webapp”技术运营商的权限用于显示报告元素。 请阅读本节](../../platform/using/access-management.md#default-operators)了解更多信息。[
 
 * **[!UICONTROL Access control]**:此选项允许Adobe Campaign操作符在登录后访问它。
-* **[!UICONTROL Specific account]**:通过此选项，可以在字段中选择操作员的权限后执行报 **[!UICONTROL Operator]** 告。
+* **[!UICONTROL Specific account]**:通过此选项，可以在字段中选择操作员的权限执行报 **[!UICONTROL Operator]** 告。
 
-## 管理报告本地化 {#managing-report-localization}
+## 管理报告本地化{#managing-report-localization}
 
-您可以配置要将报表翻译为的语言。 为此，请单击选 **[!UICONTROL Localization]** 项卡。
+您可以配置要将报表翻译为的语言。 为此，请单击&#x200B;**[!UICONTROL Localization]**&#x200B;选项卡。
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 
@@ -64,11 +64,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关活动中网页本地化的详细信息，请参 [阅此部分](../../web/using/translating-a-web-form.md)。
+>有关活动中网页本地化的详细信息，请参阅[此部分](../../web/using/translating-a-web-form.md)。
 
-## 个性化HTML渲染 {#personalizing-html-rendering}
+## 个性化HTML渲染{#personalizing-html-rendering}
 
-在选项卡 **[!UICONTROL Rendering]** 中，您可以个性化页面的数据显示模式。 您可以选择：
+在&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡中，您可以个性化页面的数据显示模式。 您可以选择：
 
 * 图表渲染引擎：Adobe Campaign优惠两种不同的模式来生成图表渲染。 默认情况下，渲染引擎为HTML 5。 如有必要，可以选择Flash渲染。
 * 报告中的导航类型：按钮或链接。
@@ -77,10 +77,10 @@ ht-degree: 2%
 
 ![](assets/s_ncs_advuser_report_properties_08.png)
 
-## 个性化错误页面 {#personalizing-the-error-page}
+## 个性化错误页面{#personalizing-the-error-page}
 
-通过 **[!UICONTROL Error page]** 该选项卡，可以配置报告显示出错时将显示的消息。
+使用&#x200B;**[!UICONTROL Error page]**&#x200B;选项卡，可以配置在报告显示出现错误时将显示的消息。
 
-您可以定义文本并将其链接到特定标识符以管理报告本地化。 有关此内容的详细信息， [请参阅添加页眉和页脚](../../reporting/using/element-layout.md#adding-a-header-and-a-footer)。
+您可以定义文本并将其链接到特定标识符以管理报告本地化。 有关详细信息，请参阅[添加页眉和页脚](../../reporting/using/element-layout.md#adding-a-header-and-a-footer)。
 
 ![](assets/s_ncs_advuser_report_properties_11.png)
