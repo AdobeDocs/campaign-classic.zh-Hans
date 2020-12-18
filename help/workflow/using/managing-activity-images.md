@@ -19,11 +19,11 @@ ht-degree: 5%
 
 可以更改各种工作流的图中使用的图像。 但是，它们必须遵守某些限制。 以下是实施阶段：
 
-* 要更改背景图像，请选择所需的定位工作流，然后单击选 **[!UICONTROL Properties]** 项卡。
+* 要更改背景图像，请选择所需的定位工作流，然后单击&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡。
 
    ![](assets/s_user_segmentation_properties_tab.png)
 
-   要选择要使用的图像，请单 **[!UICONTROL Select link]** 击字段右侧的图 **[!UICONTROL Background image]** 标。
+   要选择要使用的图像，请单击&#x200B;**[!UICONTROL Background image]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Select link]**&#x200B;图标。
 
    >[!NOTE]
    >
@@ -31,21 +31,21 @@ ht-degree: 5%
 
    ![](assets/s_user_segmentation_background_select.png)
 
-   通过 **[!UICONTROL Edit link]** 该图标可视图选定的图像。
+   通过&#x200B;**[!UICONTROL Edit link]**&#x200B;图标可视图所选图像。
 
-* 要更改与活动关联的图像，请多次单击对象，然后单击选 **[!UICONTROL Advanced]** 项卡。
+* 要更改与活动关联的图像，请多次单击对象，然后单击&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡。
 
-   要选择要使用的图像，请单 **[!UICONTROL Select link]** 击字段右侧的图 **[!UICONTROL Image]** 标。
+   要选择要使用的图像，请单击&#x200B;**[!UICONTROL Image]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Select link]**&#x200B;图标。
 
    ![](assets/s_user_segmentation_activity_image.png)
 
-   通过 **[!UICONTROL Edit link]** 该图标可视图选定的图像。
+   通过&#x200B;**[!UICONTROL Edit link]**&#x200B;图标可视图所选图像。
 
    ![](assets/s_user_segmentation_activity_image_select.png)
 
 >[!NOTE]
 >
->保存在树的节 **[!UICONTROL Administration > Configuration > Images]** 点中的图像可供选择。
+>在树的&#x200B;**[!UICONTROL Administration > Configuration > Images]**&#x200B;节点中保存的图像可供选择。
 >  
 >图像必须采用PNG格式，具有48x48像素、1600万种颜色和透明背景。
 
