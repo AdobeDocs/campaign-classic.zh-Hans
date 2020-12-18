@@ -15,7 +15,7 @@ ht-degree: 2%
 ---
 
 
-# Configuring IMS{#configuring-ims}
+# 配置IMS{#configuring-ims}
 
 ## 先决条件{#prerequisites}
 
@@ -26,21 +26,21 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->确保您的用户已链接到将与Adobe Experience Cloud同步的Adobe Campaign组。 请参阅 [配置外部帐户](#configuring-the-external-account)。
+>确保您的用户已链接到将与Adobe Experience Cloud同步的Adobe Campaign组。 请参阅[配置外部帐户](#configuring-the-external-account)。
 
-## 更新控制台 {#updating-the-console}
+## 更新控制台{#updating-the-console}
 
 要使用此功能，必须安装最新版本的控制台。
 
-## 安装包 {#installing-the-package}
+## 安装软件包{#installing-the-package}
 
-必须安装 **[!UICONTROL Integration with the Adobe Experience Cloud]** 包。 安装集成包与安装标准包相同，本页对此进行了 [详细介绍](../../installation/using/installing-campaign-standard-packages.md)。
+必须安装&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;软件包。 安装集成包与安装标准包相同，详见[本页](../../installation/using/installing-campaign-standard-packages.md)。
 
 ![](assets/ims_6.png)
 
-## 配置外部帐户 {#configuring-the-external-account}
+## 配置外部帐户{#configuring-the-external-account}
 
-在中配 **置** Adobe Experience Cloud **[!UICONTROL Administration > Platform > External accounts]**&#x200B;外部帐户。
+在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中配置&#x200B;**Adobe Experience Cloud**&#x200B;外部帐户。
 
 >[!CAUTION]
 >
@@ -50,11 +50,11 @@ ht-degree: 2%
 
 输入以下信息：
 
-* 使用的IMS服务器的连接信息（ID和机密）。 此信息由Adobe支持提供。 有关详细信息，请参阅Adobe Experience Cloud管 [理员常见问题解答](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html)。
+* 使用的IMS服务器的连接信息（ID和机密）。 此信息由Adobe支持提供。 有关详细信息，请参阅[Adobe Experience Cloud管理员常见问题解答](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html)。
 
-   必须 **[!UICONTROL Callback server]** 在https中指定 **地址**。 此字段与Adobe Campaign实例的访问URL相对应。
+   **[!UICONTROL Callback server]**&#x200B;地址必须在&#x200B;**https**&#x200B;中指定。 此字段与Adobe Campaign实例的访问URL相对应。
 
-* IMS组织ID:此信息可在Experience Cloud（在中） **[!UICONTROL Administration > Experience Cloud Details]** 上找到，并在您首次连接Adobe Experience Cloud时提供。
+* IMS组织ID:此信息可在Experience Cloud（**[!UICONTROL Administration > Experience Cloud Details]**&#x200B;中）上找到，并在您首次连接到Adobe Experience Cloud时提供。
 * 关联掩码：此字段允许您定义语法，该语法允许在企业仪表板中与Adobe Campaign中的组同步配置名称。 如果使用语法“活动- tenant_id -(.*)”，在Adobe Campaign中创建的安全组将链接到企业仪表板中的配置名称“活动- tenant_id - internal_name”。
 
    >[!CAUTION]
