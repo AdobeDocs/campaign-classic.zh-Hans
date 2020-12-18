@@ -21,27 +21,27 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Adobe Campaign调查的生命周期及其发布和投放模式与Web 窗体的生命周期相似：这些内容在本 [节中详细介绍](../../web/using/about-web-forms.md)。
+>Adobe Campaign调查的生命周期及其发布和投放模式与Web 窗体的生命周期相似：这些内容详见[本节](../../web/using/about-web-forms.md)。
 
-## 调查仪表板 {#survey-dashboard}
+## 调查仪表板{#survey-dashboard}
 
-每个调查都有自己的仪表板，您可以通过它视图其状态、描述、公共URL和可用性计划。 它还允许您视图可用的报表。 有关详细信息，请参阅 [调查报告](#reports-on-surveys)。
+每个调查都有自己的仪表板，您可以通过它视图其状态、描述、公共URL和可用性计划。 它还允许您视图可用的报表。 有关详细信息，请参阅[调查报告](#reports-on-surveys)。
 
 调查的公共URL显示在仪表板上：
 
 ![](assets/survey_public_url.png)
 
-## 响应跟踪 {#response-tracking}
+## 响应跟踪{#response-tracking}
 
 您可以在日志和报告中跟踪对调查的响应。
 
-### 调查日志 {#survey-logs}
+### 调查日志{#survey-logs}
 
-对于交付的每个调查，您都可以在选项卡中跟踪 **[!UICONTROL Logs]** 响应。 此选项卡显示已完成列表的用户的调查及其来源:
+对于交付的每个调查，您都可以在&#x200B;**[!UICONTROL Logs]**&#x200B;选项卡中跟踪响应。 此选项卡显示已完成列表的用户的调查及其来源:
 
 ![](assets/s_ncs_admin_survey_logs.png)
 
-多次-单击某行以显示被申请人填写的调查表单。 您可以全文浏览调查并完整访问答案。 这些文件可以导出到外部文件中。 For more on this, refer to [Exporting answers](#exporting-answers).
+多次-单击某行以显示被申请人填写的调查表单。 您可以全文浏览调查并完整访问答案。 这些文件可以导出到外部文件中。 有关详细信息，请参阅[导出答案](#exporting-answers)。
 
 来源在调查URL中添加以下字符来指示：
 
@@ -49,19 +49,19 @@ ht-degree: 3%
 ?origin=xxx
 ```
 
-在编辑调查时，其URL包含参 **[!UICONTROL __uuid]**&#x200B;数，该参数指示它处于测试阶段且尚未联机。 当您通过此URL访问调查时，在跟踪（报告）中不会考虑创建的记录。 来源被强制为值 **[!UICONTROL Adobe Campaign]**。
+在编辑调查时，其URL包含参数&#x200B;**[!UICONTROL __uuid]**，该参数指示它处于测试阶段且尚未联机。 当您通过此URL访问调查时，在跟踪（报告）中不会考虑创建的记录。 该来源被强制设置为值&#x200B;**[!UICONTROL Adobe Campaign]**。
 
-For more on URL parameters, refer to [this page](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+有关URL参数的详细信息，请参阅[此页](../../web/using/defining-web-forms-properties.md#form-url-parameters)。
 
-### 调查报告 {#reports-on-surveys}
+### 关于调查{#reports-on-surveys}的报告
 
 仪表板选项卡允许您访问调查报告。 单击报告名称以视图它。
 
 ![](assets/s_ncs_admin_survey_report_doc.png)
 
-调查的结构在报告中可 **[!UICONTROL Documentation]** 见。
+该调查的结构显示在&#x200B;**[!UICONTROL Documentation]**&#x200B;报告中。
 
-Web调查的其他两个报告位于 **[!UICONTROL Reports]** 调查的选项卡中： **[!UICONTROL General]** 和 **[!UICONTROL Breakdown of responses]**。
+Web调查的&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡中还提供了另外两种报告：**[!UICONTROL General]**&#x200B;和&#x200B;**[!UICONTROL Breakdown of responses]**。
 
 * 常规
 
@@ -73,23 +73,23 @@ Web调查的其他两个报告位于 **[!UICONTROL Reports]** 调查的选项卡
 
 * 答复的细分
 
-   此报告显示每个问题的答复细分。 此细分仅适用于对类型容器中存储的字段给出 **[!UICONTROL Question]** 的答案。 它仅对选择控件有效（例如，不对文本字段进行细分）。
+   此报告显示每个问题的答复细分。 此细分仅适用于对存储在&#x200B;**[!UICONTROL Question]**&#x200B;类型容器中的字段给出的答案。 它仅对选择控件有效（例如，不对文本字段进行细分）。
 
    ![](assets/s_ncs_admin_survey_report_2.png)
 
-## 导出答案 {#exporting-answers}
+## 导出答案{#exporting-answers}
 
 可将调查的答案导出到外部文件中，以备以后处理。 有两种方法可以实现此目的：
 
 1. 导出报告数据
 
-   要导出报告数据，请单击 **[!UICONTROL Export]** 按钮并选择导出格式。
+   要导出报告数据，请单击&#x200B;**[!UICONTROL Export]**&#x200B;按钮并选择导出格式。
 
-   For more on exporting report data, refer to [this section](../../reporting/using/about-reports-creation-in-campaign.md).
+   有关导出报告数据的详细信息，请参阅[此部分](../../reporting/using/about-reports-creation-in-campaign.md)。
 
 1. 导出答案
 
-   要导出答案，请单 **[!UICONTROL Responses]** 击调查的选项卡，然后右键单击。 选择 **[!UICONTROL Export...]**。
+   要导出答案，请单击调查的&#x200B;**[!UICONTROL Responses]**&#x200B;选项卡，然后右键单击。 选择 **[!UICONTROL Export...]**。
 
    ![](assets/s_ncs_admin_survey_logs_export_menu.png)
 
@@ -103,31 +103,31 @@ Web调查的其他两个报告位于 **[!UICONTROL Reports]** 调查的选项卡
    * 格式化导出的数据，
    * 为文件中的信息选择编码格式。
 
-   如果要导出的调查包含多个 **[!UICONTROL Multi-line text]** 或 **[!UICONTROL HTML text]** 字段，则必须以格式导 **[!UICONTROL XML]** 出。 为此，请在字段的下拉列表中选择此 **[!UICONTROL Output format]** 格式，如下所示：
+   如果要导出的调查包含多个&#x200B;**[!UICONTROL Multi-line text]**&#x200B;或&#x200B;**[!UICONTROL HTML text]**&#x200B;字段，则必须以&#x200B;**[!UICONTROL XML]**&#x200B;格式导出。 为此，请在&#x200B;**[!UICONTROL Output format]**&#x200B;字段的下拉列表中选择此格式，如下所示：
 
    ![](assets/s_ncs_admin_survey_logs_export_xml.png)
 
-   单击 **[!UICONTROL Start]** 以运行导出。
+   单击&#x200B;**[!UICONTROL Start]**&#x200B;以运行导出。
 
    >[!NOTE]
    >
-   >本节详细介绍数据导出及其配置 [的各个阶段](../../platform/using/generic-imports-and-exports.md)。
+   >[本节](../../platform/using/generic-imports-and-exports.md)详细介绍数据导出及其配置的各个阶段。
 
-## 使用收集的数据 {#using-the-collected-data}
+## 使用收集的数据{#using-the-collected-data}
 
-通过在线调查收集的信息可以在定位工作流的框架内恢复。 To do this, use the **[!UICONTROL Survey responses]** box.
+通过在线调查收集的信息可以在定位工作流的框架内恢复。 为此，请使用&#x200B;**[!UICONTROL Survey responses]**&#x200B;框。
 
 在以下示例中，我们希望为至少有两个孩子的五个收件人制作一个Web优惠，并在一个在线调查中获得最高分。 本调查的答案是：
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 
-在定位工作流中， **[!UICONTROL Survey responses]** 将按如下方式配置：
+在定位工作流中，**[!UICONTROL Survey responses]**&#x200B;将进行如下配置：
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_1.png)
 
 开始，选择相关调查，然后在窗口的中央部分提取数据。 在这种情况下，我们至少需要提取得分列，因为它将用在拆分框中以恢复最高的五分。
 
-单击链接以指示答案的筛选 **[!UICONTROL Edit query...]** 条件。
+单击&#x200B;**[!UICONTROL Edit query...]**&#x200B;链接以指示答案的筛选条件。
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
@@ -143,25 +143,25 @@ Web调查的其他两个报告位于 **[!UICONTROL Reports]** 调查的选项卡
 
 编辑拆分框以进行配置：
 
-* 开始，在标签中选择适当的 **[!UICONTROL General]** 模式，然后配置子集：
+* 开始，在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中选择适当的模式，然后配置子集：
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
-* 转到选 **[!UICONTROL Sub-sets]** 项卡并选 **[!UICONTROL Limit the selected records]** 择选项，然后单击链 **[!UICONTROL Edit...]** 接。
+* 转到&#x200B;**[!UICONTROL Sub-sets]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接。
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* 选择选 **[!UICONTROL Keep only the first records after sorting]** 项，然后选择排序列。 勾选 **[!UICONTROL Descending sort]** 选项。
+* 选择&#x200B;**[!UICONTROL Keep only the first records after sorting]**&#x200B;选项并选择排序列。 勾选 **[!UICONTROL Descending sort]** 选项。
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
-* 单击按 **[!UICONTROL Next]** 钮，将记录数限制为5。
+* 单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮，将记录数限制为5。
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
-* 单击 **[!UICONTROL Finish]** 然后重新启动工作流以批准定位。
+* 单击&#x200B;**[!UICONTROL Finish]**，然后重新启动工作流以批准定位。
 
-## 数据标准化 {#standardizing-data}
+## 标准化数据{#standardizing-data}
 
 可以在Adobe Campaign中设置标准化流程，以便使用别名收集数据。 这使您能够标准化存储在数据库中的数据：为此，请在包含相关信息的分项列表中定义别名。
 
