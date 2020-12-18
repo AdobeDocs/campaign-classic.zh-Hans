@@ -21,12 +21,12 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->本节介绍有关投放创建的全 [局概念](../../delivery/using/steps-about-delivery-creation-steps.md)。
+>[本节](../../delivery/using/steps-about-delivery-creation-steps.md)介绍了有关创建投放的全局概念。
 
 1. 创建新投放，例如从投放仪表板创建。
-1. 选择直 **接邮寄投放模板（纸张）**。
+1. 选择投放模板&#x200B;**通过直邮传送（纸张）**。
 
    ![](assets/direct_mail.png)
 
-1. 用标签、代码和说明来识别投放。 For more on this, refer to [this section](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)
-1. 单击 **继续** ，确认此信息并显示消息配置窗口。
+1. 用标签、代码和说明来识别投放。 有关详细信息，请参阅[此部分](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)
+1. 单击&#x200B;**继续**&#x200B;确认此信息并显示消息配置窗口。
