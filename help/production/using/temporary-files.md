@@ -9,8 +9,8 @@ topic-tags: troubleshooting
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 原因如下：
 
-Adobe Campaign在/tmp下 **生成临时文件**，然后重命名这些文件，将其移 **动到/usr/local/neolane/nl6/var**。 当两个文件夹(**/tmp****和/usr/local/neolane/nl6/var**，即到/var/nl6的符号链接)对应于不同的设备时， ****&#x200B;会发生此错误。 df **命令** ，用于验证。
+Adobe Campaign在&#x200B;**/tmp**&#x200B;下生成临时文件，然后重命名这些文件将其移动到&#x200B;**/usr/local/neolane/nl6/var**。 当两个文件夹（**/tmp**&#x200B;和&#x200B;**/usr/local/neolane/nl6/var**）对应于不同的设备时，会发生此错误。 ******df**&#x200B;命令用于验证。
 
 要解决此问题，临时文件必须与目标位置在同一设备中生成。 例如，通过执行：
 
