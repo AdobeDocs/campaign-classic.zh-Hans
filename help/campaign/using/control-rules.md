@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 控制规则{#control-rules}
 
-## 分析和仲裁控制规则 {#analysis-and-arbitration-control-rules}
+## 分析和仲裁控制规则{#analysis-and-arbitration-control-rules}
 
 通过控制规则，您可以在投放之前保证消息的有效性和质量：字符显示、SMS大小、地址格式等。
 
@@ -32,9 +32,9 @@ ht-degree: 3%
 * **[!UICONTROL Wave scheduling check]** （电子邮件）:检查如果投放被分解为多个批次，则最后一波开始是否计划在有效期结束之前进行投放。
 * **[!UICONTROL Unsubscription link approval]** （电子邮件）:检查每个内容（HTML和文本）中是否存在至少一个退订（选择退出）URL。
 
-## Creating a control rule {#creating-a-control-rule}
+## 创建控制规则{#creating-a-control-rule}
 
-可以创建新的控制规则以满足您的需求。 为此，请创建一个 **[!UICONTROL Control]** 类型规则，并在选项卡的SQL中输入控制 **[!UICONTROL Code]** 公式。
+可以创建新的控制规则以满足您的需求。 为此，请创建&#x200B;**[!UICONTROL Control]**&#x200B;类型规则，并在&#x200B;**[!UICONTROL Code]**&#x200B;选项卡的SQL中输入控制公式。
 
 **示例:**
 
@@ -42,11 +42,11 @@ ht-degree: 3%
 
 应用以下步骤：
 
-1. 创建 **[!UICONTROL Control]** 类型规则 选择警 **[!UICONTROL Warning]** 报级别。
+1. 创建&#x200B;**[!UICONTROL Control]**&#x200B;类型规则。 选择&#x200B;**[!UICONTROL Warning]**&#x200B;警报级别。
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. 在选项卡 **[!UICONTROL Code]** 中，输入要应用所需阈值的脚本，如下所示：
+1. 在&#x200B;**[!UICONTROL Code]**&#x200B;选项卡中，输入要应用所需阈值的脚本，如下所示：
 
    ![](assets/campaign_opt_create_control_02.png)
 
@@ -70,7 +70,7 @@ ht-degree: 3%
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   在分析结束时，该 **[!UICONTROL Confirm delivery]** 按钮将不可用。
+   分析结束时，**[!UICONTROL Confirm delivery]**&#x200B;按钮将不可用。
 
    ![](assets/campaign_opt_create_control_06.png)
 
