@@ -19,15 +19,15 @@ ht-degree: 4%
 
 社交营销提供报告，使您能够衡量Facebook和Twitter投放的反应率，并分析对Facebook用户档案的赢取。 以下报告可用：
 
-* 报 **[!UICONTROL Reactivity rate]** 告，可通过Facebook或 **[!UICONTROL Summary]** Twitter投放的选项卡访问。
+* 通过Facebook或Twitter投放的&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡提供的&#x200B;**[!UICONTROL Reactivity rate]**&#x200B;报告。
 
    ![](assets/social_report_3.png)
 
-* 通 **[!UICONTROL Reactivity rate]** 过Twitter或Facebook服 **[!UICONTROL Dashboard]** 务的选项卡提供的报告。
+* **[!UICONTROL Reactivity rate]**&#x200B;报告，可通过Twitter或Facebook服务的&#x200B;**[!UICONTROL Dashboard]**&#x200B;选项卡访问。
 
    ![](assets/social_report_2.png)
 
-* 报 **[!UICONTROL Fan acquisition]** 告，可通过Facebook服 **[!UICONTROL Dashboard]** 务的选项卡访问。
+* **[!UICONTROL Fan acquisition]**&#x200B;报告，可通过Facebook服务的&#x200B;**[!UICONTROL Dashboard]**&#x200B;选项卡获取。
 
    ![](assets/social_report_1.png)
 
