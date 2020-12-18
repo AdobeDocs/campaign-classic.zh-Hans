@@ -23,15 +23,15 @@ ht-degree: 15%
 >
 >此功能仅在线可见，且仅对投放管理器可见。
 
-* 在优惠级别，在选项卡 **[!UICONTROL Edit]** 中单击 **[!UICONTROL Propositions]**。
+* 在优惠级别的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Propositions]**。
 
    ![](assets/offer_followup_006.png)
 
-* 在收件人的用户档案中，单击选 **[!UICONTROL Propositions]** 项卡。
+* 在收件人的用户档案中，单击&#x200B;**[!UICONTROL Propositions]**&#x200B;选项卡。
 
    ![](assets/offer_followup_002.png)
 
-* 在优惠空间级别，单击选 **[!UICONTROL Propositions]** 项卡。
+* 在优惠空间级别，单击&#x200B;**[!UICONTROL Propositions]**&#x200B;选项卡。
 
    ![](assets/offer_space_prop_001_b.png)
 
