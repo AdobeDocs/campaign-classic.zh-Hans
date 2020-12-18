@@ -17,7 +17,7 @@ ht-degree: 18%
 
 # 移动应用程序渠道{#mobile-app-channel}
 
-默认情况下，下面详细介绍的工作流 **程随“移动应用程序渠道** ”模块一起安装。 For more on this module, refer to this [section](../../delivery/using/about-mobile-app-channel.md).
+默认情况下，下面详细介绍的工作流与&#x200B;**移动应用渠道**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[部分](../../delivery/using/about-mobile-app-channel.md)。
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ ht-degree: 18%
   <tr> 
    <td> <span class="uicontrol">NMAC退出管理</span> <br /> </td> 
    <td> <span class="uicontrol">mobileAppOptOutMgt</span> <br /> </td> 
-   <td> 此工作流更新移动设备上的通知退订。 每6小时从凌晨1点到午夜触发一次。 For more details, refer to this <a href="../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines">section</a>.<br /> </td> 
+   <td> 此工作流更新移动设备上的通知退订。 每6小时从凌晨1点到午夜触发一次。 有关详细信息，请参阅此<a href="../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines">部分</a>。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
