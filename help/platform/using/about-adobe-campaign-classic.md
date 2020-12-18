@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '911'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
 
-# Get Started with Campaign Classic{#about-adobe-campaign-classic}
+# 开始使用Campaign Classic{#about-adobe-campaign-classic}
 
 为了实现高水准的客户交互和优秀的客户体验，企业必须确保客户在所有接触点上的旅程是一致且连续的。现在，营销人员能够高效的设计、计划、执行、管理，并且优化跨渠道营销活动，从而创造更高的市场营销投资回报，并且提高客户忠诚度。
 
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->Adobe Campaign Classic 有 v6.11 和 v7 两个版本。Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). 屏幕截图反映了Campaign Classic v7 用户界面。
+>Adobe Campaign Classic 有 v6.11 和 v7 两个版本。除非提及，[最新版本](../../rn/using/latest-release.md)中的帮助材料适用于这两个版本。 屏幕截图反映了Campaign Classic v7 用户界面。
 
 ![](assets/do-not-localize/how-to-video.png) [发现视频的主要功能和功能](#video)
 
@@ -87,10 +87,10 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 * [Web 服务](../../configuration/using/about-web-services.md) - 通过 API/Web 服务使用 Campaign，
 * [报告](../../reporting/using/about-adobe-campaign-reporting-tools.md) - 访问内置的报告、分析数据并设计您自己的报告。
 
-## 教程视频 {#video}
+## 教程视频{#video}
 
 此视频介绍Campaign Classic的主要特性和功能。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
+此处[提供其他Campaign Classic操作方法视频。](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
