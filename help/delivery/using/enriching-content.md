@@ -19,13 +19,13 @@ ht-degree: 0%
 
 聚合器允许您使用外部数据丰富内容。 此数据来自通用查询或链接表。
 
-## 通用查询 {#generic-queries}
+## 通用查询{#generic-queries}
 
-查询通过选项卡中的发布模板进行 **[!UICONTROL Aggregator]** 配置。
+查询通过&#x200B;**[!UICONTROL Aggregator]**&#x200B;选项卡中的发布模板进行配置。
 
 检索到的数据将通过其主元素丰富XML输出文档。
 
-从查询返回收件人模式(nms:**收件人**)的示例
+从收件人模式上的查询返回的示例(**nms:收件人**):
 
 ```
 <book name="Content Management">
@@ -37,9 +37,9 @@ ht-degree: 0%
 </book>
 ```
 
-元 **`<collection-recipient>`** 素表示由文档产生的查询的输入元素。 检索到的数据在此元素下返回；在我们的例子中，是收件人列表。
+**`<collection-recipient>`**&#x200B;元素表示由文档产生的查询的输入元素。 检索到的数据在此元素下返回；在我们的例子中，是收件人列表。
 
-### 添加查询 {#adding-a-query}
+### 添加查询{#adding-a-query}
 
 查询参数是使用向导进行编辑的。
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >编辑字段 **Path** （路径）用于重命名查询输出元素。
+   >编辑字段&#x200B;**路径**&#x200B;用于重命名查询输出元素。
 
 1. 在下一页中，您可以选择要检索的数据。
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
    ![](assets/d_ncs_content_query4.png)
 
-## 链接的表 {#linked-tables}
+## 链接的表{#linked-tables}
 
 链接允许您检索链接到内容的外部数据。
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 * 内容链接：这是本机内容管理模式。 链接的内容将自动集成到XML输出文档中。
 * 指向外部表的链接允许访问数据库中的所有其他表，但约束是使用聚合器检索所选链接的数据。
 
-### 链接到内容模式 {#link-to-a-content-schema}
+### 链接到内容模式{#link-to-a-content-schema}
 
 在数据模式中声明内容链接，如下所示：
 
@@ -80,9 +80,9 @@ ht-degree: 0%
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-链接的定义填充在字符串 **类型**&#x200B;上 **`<element>`**，并且 **expandSchemaTarget属性引** 用目标模式符（我们示例中的“cus:chapter”）。 引用的模式必须是内容模式。
+链接的定义填充在&#x200B;**string**-type **`<element>`**&#x200B;上，**expandSchemaTarget**&#x200B;属性引用目标模式（我们示例中的“cus:chapter”）。 引用的模式必须是内容模式。
 
-目标元素的内容丰富了链接元素，即示例 **`<chapter>`** 模式中的元素：
+目标元素的内容丰富了链接元素，即示例模式中的&#x200B;**`<chapter>`**&#x200B;元素：
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->链 **接的** Compute字符串由computeString属 **性显** 示。
+>链接的&#x200B;**计算字符串**&#x200B;由&#x200B;**computeString**&#x200B;属性显示。
 
 在输入表单中，链接的编辑控件声明如下：
 
@@ -102,11 +102,11 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link.png)
 
-该图 **[!UICONTROL Magnifier]** 标允许您打开链接元素的编辑表单。
+使用&#x200B;**[!UICONTROL Magnifier]**&#x200B;图标可打开链接元素的编辑表单。
 
-#### 链接集合 {#link-collection}
+#### 链接集合{#link-collection}
 
-要填充链接集合，请向数 **据模式中链接元素的定义中** 添加unboind=&quot;true&quot;属性：
+要填充链接集合，请在数据模式中将&#x200B;**unboind=&quot;true&quot;**&#x200B;属性添加到链接元素的定义中：
 
 ```
 <element expandSchemaTarget="cus:chapter" label="List of chapters" name="chapter"  ordered="true" unbound="true"/>
@@ -128,9 +128,9 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link2.png)
 
-将显示默认列，以视图目 **标元素的** “计算”字符串。
+显示默认列，以视图目标元素的&#x200B;**计算字符串**。
 
-### 外部表的链接 {#links-to-external-tables}
+### 外部表{#links-to-external-tables}的链接
 
 在数据模式中将声明指向外部表的链接，如下所示：
 
@@ -138,11 +138,11 @@ ht-degree: 0%
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-链接的定义填充在链 **接类型****`<element>`**&#x200B;上 **，并且** 目标属性引用目标模式(本例中的“nms:收件人”)。
+链接的定义填充在&#x200B;**link**-type **`<element>`**&#x200B;上，**目标**&#x200B;属性引用目标模式(我们示例中的“nms:收件人”)。
 
 根据惯例，链接必须从数据模式的主要元素中声明。
 
-计 **算字符串** 和目标元素的键可丰富主 **`<name>-id`** 要元素的 **`<name>-cs`** 属性和属性。
+**计算字符串**&#x200B;和目标元素的键丰富主元素的&#x200B;**`<name>-id`**&#x200B;和&#x200B;**`<name>-cs`**&#x200B;属性。
 
 在我们的示例中，链接填充在“cus:book”模式中，链接数据的内容包含在“mainContact-id”和“mainContact-cs”属性中：
 
@@ -158,7 +158,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link3.png)
 
-您可以通过在输入表单中的链接定义 **`<sysfilter>`** 添加元素来限制目标元素的选择：
+通过在输入表单中添加链接定义，可以限制目标元素的选择：**`<sysfilter>`**
 
 ```
 <input xpath="mainContact">
@@ -173,7 +173,7 @@ ht-degree: 0%
 >
 >此限制也适用于内容链接。
 
-#### 链接集合 {#link-collection-1}
+#### 链接集合{#link-collection-1}
 
 集合的定义与对集合元素的列表的定义相同：
 
@@ -204,9 +204,9 @@ ht-degree: 0%
 <contact id="11504982510" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/>
 ```
 
-#### 链接聚合 {#link-aggregation}
+#### 链路聚合{#link-aggregation}
 
-引用的每个链接的内容仅限于目标元素的 **内部键** 和计算字符串。
+引用的每个链接的内容仅限于目标元素的内部键和&#x200B;**计算字符串**。
 
 JavaScript脚本用于通过SOAP查询丰富链接的内容。
 
@@ -257,7 +257,7 @@ for each(var contact in content.contact)
 <contact id="11504982510" lastName="Martinez" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/> 
 ```
 
-JavaScript代码的内容通过文件夹添加 **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** ，并且必须在每个转换的发布模板中填充。
+JavaScript代码的内容通过&#x200B;**[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]**&#x200B;文件夹添加，并且必须在每个转换的发布模板中填充。
 
 ![](assets/d_ncs_content_link5.png)
 
