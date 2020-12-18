@@ -19,13 +19,13 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->此文档详细介绍了将您的移动应用程序与Adobe Campaign平台集成的过程。 它不提供有关如何创建移动应用程序或如何配置它以管理通知的信息。 如果您想要进一步了解此信息，请参阅官方的Apple [文档](https://developer.apple.com/) 和Android [文档](https://developer.android.com/index.html)。
+>此文档详细介绍了将您的移动应用程序与Adobe Campaign平台集成的过程。 它不提供有关如何创建移动应用程序或如何配置它以管理通知的信息。 如果您想要进一步了解此信息，请参阅官方的Apple [文档](https://developer.apple.com/)和Android [文档](https://developer.android.com/index.html)。
 
 以下各节提供特定于移动应用程序渠道的信息。
 
-有关如何创建投放的全局信息，请参[阅此部分](../../delivery/using/steps-about-delivery-creation-steps.md)。
+有关如何创建投放的全局信息，请参阅[此部分](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
-通过 **移动应用渠道** ，您可以使用Adobe Campaign平台通过应用程序向iOS和Android终端发送个性化通知。 提供两个投放渠道:
+通过&#x200B;**移动应用程序渠道**，您可以使用Adobe Campaign平台通过应用程序向iOS和Android终端发送个性化通知。 提供两个投放渠道:
 
 * 一种iOS渠道，允许您向Apple移动设备发送通知。
 
@@ -54,11 +54,11 @@ ht-degree: 5%
 >* 警告：在某些国家／地区，法律要求您将收集到的数据类型移动应用程序及其处理目的告知用户。 你必须检查立法。
 
 
-( **[!UICONTROL NMAC opt-out management]** mobileAppOptOutMgt)工作流程可更新移动设备上的通知退订。 For more information on this workflow, refer to the [Workflows guide](../../workflow/using/mobile-app-channel.md).
+**[!UICONTROL NMAC opt-out management]**(mobileAppOptOutMgt)工作流更新移动设备上的通知退订。 有关此工作流程的详细信息，请参阅[工作流指南](../../workflow/using/mobile-app-channel.md)。
 
-Adobe Campaign兼容二进制和HTTP/2 APN。 有关配置步骤的详细信息，请参阅在 [Adobe Campaign中配置移动应用程序](../../delivery/using/configuring-the-mobile-application.md) 。
+Adobe Campaign兼容二进制和HTTP/2 APN。 有关配置步骤的详细信息，请参阅[在Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)中配置移动应用程序一节。
 
-## 数据路径 {#data-path}
+## 数据路径{#data-path}
 
 以下模式详细介绍了使移动应用程序能够与Adobe Campaign交换数据的步骤。 此过程涉及三个实体：
 
@@ -68,13 +68,13 @@ Adobe Campaign兼容二进制和HTTP/2 APN。 有关配置步骤的详细信息�
 
 通知过程的三个主要步骤是：在Adobe Campaign(订阅收集)、投放和跟踪中注册应用程序。
 
-### 第1步：订阅集合 {#step-1--subscription-collection}
+### 第1步：订阅集合{#step-1--subscription-collection}
 
 用户从App Store或Google Play下载移动应用程序。 此应用程序包含连接设置（适用于Android的iOS证书和项目密钥）和集成密钥。 首次打开应用程序时（取决于配置），可要求用户输入注册信息(@userKey:电子邮件或帐号)。 同时，应用程序询问通知服务以收集通知ID（推送ID）。 所有这些信息（连接设置、集成密钥、通知标识符、用户密钥）都将发送给Adobe Campaign。
 
 ![](assets/nmac_register_view.png)
 
-### 第2步：投放 {#step-2--delivery}
+### 第2步：投放{#step-2--delivery}
 
 营销人员目标应用程序订阅者。 投放进程将连接设置发送到通知服务（iOS证书和Android项目密钥）、通知ID（推送ID）和通知内容。 通知服务向目标终端发送通知。
 
