@@ -17,7 +17,7 @@ ht-degree: 11%
 
 # 营销资源 (MRM){#marketing-resources-mrm}
 
-默认情况下，下面详细介绍的工作流 **随营销资源(MRM** )模块一起安装。 For more on this module, refer to this [section](../../campaign/using/designing-marketing-campaigns.md).
+下面详细介绍的工作流默认随&#x200B;**营销资源(MRM)**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[部分](../../campaign/using/designing-marketing-campaigns.md)。
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ ht-degree: 11%
   <tr> 
    <td> <span class="uicontrol">营销资源通知</span> <br /> </td> 
    <td> <span class="uicontrol">资产管理</span> <br /> </td> 
-   <td> 此工作流管理与营销资源审批和发布相关的通知。 <br /> </td> 
+   <td> 此工作流管理与营销资源审批和发布相关的通知。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">任务通知</span> <br /> </td> 
@@ -39,7 +39,7 @@ ht-degree: 11%
   <tr> 
    <td> <span class="uicontrol">讨论论坛流程</span> <br /> </td> 
    <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
-   <td> 此工作流管理来自论坛的通知的投放。 当接收到批准信号时触发。<br /> </td> 
+   <td> 此工作流管理来自论坛的通知的投放。 在收到批准信号时触发。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
