@@ -9,20 +9,20 @@ topic-tags: connectors
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# 配置访问Azure synapse {#configure-access-to-azure-synapse}
+# 配置对Azure synapse{#configure-access-to-azure-synapse}的访问
 
-使用活动 [联合数据访问](../../installation/using/about-fda.md) (联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对MicrosoftAzure synapse分析的访问。
+使用活动[联合数据访问](../../installation/using/about-fda.md)(联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对MicrosoftAzure synapse分析的访问。
 
-1. 在CentOS、Windows [或Debian](#azure-centos)上 [配置](#azure-windows) Azure synapse [。](#azure-debian)
-1. 在Azure synapse中 [配置活动](#azure-external) 外部帐户
+1. 在[CentOS](#azure-centos)、[Windows](#azure-windows)或[Debian](#azure-debian)上配置Azure synapse
+1. 将Azure synapse[外部帐户](#azure-external)配置为活动
 
-## azure synapseCentOS {#azure-centos}
+## azure synapse在CentOS上{#azure-centos}
 
 >[!CAUTION]
 >
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 要在CentOS上配置Azure synapse，请执行以下步骤：
 
-1. 首先，安装ODBC驱动程序。 您可以在此页中找 [到它](https://www.microsoft.com/en-us/download/details.aspx?id=50420)。
+1. 首先，安装ODBC驱动程序。 您可以在此[页](https://www.microsoft.com/en-us/download/details.aspx?id=50420)中找到它。
 
    >[!NOTE]
    >
@@ -87,7 +87,7 @@ ht-degree: 1%
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. 在活动中，您随后可以配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的详细信息，请参 [阅此部分](#azure-external)。
+1. 在活动中，您随后可以配置[!DNL Azure Synapse]外部帐户。 有关如何配置外部帐户的详细信息，请参阅[本节](#azure-external)。
 
 1. 由于Azure synapse分析通过TCP 1433端口进行通信，您需要在防火墙上打开此端口。 使用以下命令：
 
@@ -98,7 +98,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >要允许来自Azure synapse分析团队的通信，您可能需要将公共IP添加到允许列表。 为此，请参阅Azure [文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
+   >要允许来自Azure synapse分析团队的通信，您可能需要将公共IP添加到允许列表。 为此，请参阅[Azure文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
 1. 如果是iptables，请运行以下命令：
 
@@ -106,7 +106,7 @@ ht-degree: 1%
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
    ```
 
-## azure synapseWindows版 {#azure-windows}
+## azure synapse在Windows上{#azure-windows}
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ ht-degree: 1%
 
 在Windows上配置Azure synapse:
 
-1. 首先，安装Microsoft ODBC驱动程序。 您可以在此页 [中找到它](https://www.microsoft.com/en-us/download/details.aspx?id=50420)。
+1. 首先，安装Microsoft ODBC驱动程序。 您可以在[此页](https://www.microsoft.com/en-us/download/details.aspx?id=50420)中找到它。
 
 1. 选择要安装的以下文件：
 
@@ -124,11 +124,11 @@ ht-degree: 1%
 
 1. 安装ODBC驱动程序后，可以根据需要测试它。 有关详细信息，请参见此 [ 页面](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server)。
 
-1. 在Campaign Classic中，您随后可以配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的详细信息，请参 [阅此部分](#azure-external)。
+1. 在Campaign Classic中，您随后可以配置[!DNL Azure Synapse]外部帐户。 有关如何配置外部帐户的详细信息，请参阅[本节](#azure-external)。
 
-1. 由于Azure synapse分析通过TCP 1433端口进行通信，您需要在Windows Defender Firewall上打开此端口。 For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
+1. 由于Azure synapse分析通过TCP 1433端口进行通信，您需要在Windows Defender Firewall上打开此端口。 有关详细信息，请参阅[Windows文档](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule)。
 
-## azure synapse德比 {#azure-debian}
+## azure synapse在德比安{#azure-debian}
 
 **先决条件:**
 
@@ -152,7 +152,7 @@ ht-degree: 1%
    sudo ACCEPT_EULA=Y apt-get install msodbcsql
    ```
 
-1. 如果在调用sudo apt-get **update时出现以下错误“找不到方法驱动程序/usr/lib/apt/methods/https** ” **，应运行命令**:
+1. 如果在调用&#x200B;**sudo apt-get update**&#x200B;时出现以下错误：“找不到方法驱动程序/usr/lib/apt/methods/https”**，您应运行命令：**
 
    ```
    sudo apt-get install apt-transport-https ca-certificates
@@ -179,7 +179,7 @@ ht-degree: 1%
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. 在Campaign Classic中，您现在可以配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的详细信息，请参 [阅此部分](#azure-external)。
+1. 在Campaign Classic中，您现在可以配置[!DNL Azure Synapse]外部帐户。 有关如何配置外部帐户的详细信息，请参阅[本节](#azure-external)。
 
 1. 要在Debian上配置iptables以确保与Azure synapse分析器连接，请使用以下命令为主机名启用出站TCP 1433端口：
 
@@ -189,24 +189,24 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >要允许来自Azure synapse分析团队的通信，您可能需要将公共IP添加到允许列表。 为此，请参阅Azure [文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
+   >要允许来自Azure synapse分析团队的通信，您可能需要将公共IP添加到允许列表。 为此，请参阅[Azure文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
 
-## azure synapse外部帐户 {#azure-external}
+## azure synapse外部帐户{#azure-external}
 
-外部帐户 [!DNL Azure Synapse] 允许您将活动实例连接到Azure synapse外部数据库。
+[!DNL Azure Synapse]外部帐户允许您将活动实例连接到Azure synapse外部数据库。
 
-要创建您的 [!DNL Azure Synapse] 外部帐户，请按照以下步骤操作：
+要创建[!DNL Azure Synapse]外部帐户，请执行以下步骤：
 
-1. 在活动 **[!UICONTROL Explorer]**&#x200B;中， **[!UICONTROL Administration]** 单击“>” **[!UICONTROL Platform]** “>” **[!UICONTROL External accounts]**。
+1. 在活动&#x200B;**[!UICONTROL Explorer]**&#x200B;中，单击&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
 1. 单击 **[!UICONTROL New]**.
 
-1. 选 **[!UICONTROL External database]** 择作为外部帐户 **[!UICONTROL Type]**。
+1. 选择&#x200B;**[!UICONTROL External database]**&#x200B;作为外部帐户的&#x200B;**[!UICONTROL Type]**。
 
    ![](assets/azure_1.png)
 
-1. 配置 [!DNL Azure Synapse] 外部帐户，必须指定：
+1. 配置[!DNL Azure Synapse]外部帐户，必须指定：
 
    * **[!UICONTROL Type]**:azure synapse分析
 
