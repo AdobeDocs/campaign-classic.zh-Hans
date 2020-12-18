@@ -9,7 +9,7 @@ topic-tags: updating-adobe-campaign
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,16 +17,16 @@ ht-degree: 0%
 
 # 升级到新版本（内部部署）{#upgrading}
 
-在开始升级过程之前，确定并确认要升级到哪个版本的Adobe Campaign，并参阅 [发行说明](../../rn/using/latest-release.md) 。
+在开始升级过程之前，确定并确认要升级到哪个版本的Adobe Campaign，并参阅[发行说明](../../rn/using/latest-release.md)。
 
 >[!IMPORTANT]
 >
->我们强烈建议在更新之前对每个实例进行数据库备份。 有关详细信息，请参阅 [备份](../../production/using/backup.md)。\
+>我们强烈建议在更新之前对每个实例进行数据库备份。 有关详细信息，请参阅[备份](../../production/using/backup.md)。\
 >要执行升级，请确保您具有访问实例和日志的能力和权限。
 
 >[!NOTE]
 >
->另请参阅安装 [指南](../../installation/using/general-architecture.md) 和内 [部升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html) 入门。
+>另请参阅[安装指南](../../installation/using/general-architecture.md)和[内部升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)入门。
 
 ## Windows {#in-windows}
 
@@ -37,9 +37,9 @@ ht-degree: 0%
 * [同步资源](#synchronize-resources),
 * [重新启动服务](#restart-services)。
 
-要了解如何更新客户端控制台，请参阅 [此部分](../../installation/using/client-console-availability-for-windows.md)。
+要了解如何更新客户端控制台，请参阅[本节](../../installation/using/client-console-availability-for-windows.md)。
 
-### 关闭服务 {#shut-down-services}
+### 关闭服务{#shut-down-services}
 
 要用新版本替换所有文件，您需要关闭nlserver服务的所有实例。
 
@@ -49,12 +49,12 @@ ht-degree: 0%
 
       **iisreset /stop**
 
-   * Adobe Campaign服务： **net stop nlserver6**
+   * Adobe Campaign服务：**net stop nlserver6**
    >[!IMPORTANT]
    >
-   >您还需要确保重定向服务器(webmdl)已停止，以便 **IIS使用的nlsrvmod.dll** 文件可以替换为新版本。
+   >您还需要确保重定向服务器(webmdl)已停止，以便IIS使用的&#x200B;**nlsrvmod.dll**&#x200B;文件可以替换为新版本。
 
-1. 通过运行nlserver pdump命令检查没有任务 **处于活动状态** 。 应出现以下内容：
+1. 运行&#x200B;**nlserver pdump**&#x200B;命令检查没有任务处于活动状态。 应出现以下内容：
 
    ```
    C:<installation path>Adobe Campaign v7bin>nlserver pdump
@@ -64,23 +64,23 @@ ht-degree: 0%
 
    您可以使用Windows任务管理器来确保所有进程都停止。
 
-### 升级Adobe Campaign服务器应用程序 {#upgrade-the-adobe-campaign-server-application}
+### 升级Adobe Campaign服务器应用程序{#upgrade-the-adobe-campaign-server-application}
 
 要运行升级文件，请应用以下步骤：
 
-1. 运 **行setup.exe**。
+1. 运行&#x200B;**setup.exe**。
 
-   要下载此文件，请使用您的用 [户凭据连接到](https://experience.adobe.com/downloads) “软件分发门户”。 在本页中进一步了解软 [件分发](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)。
+   要下载此文件，请使用您的用户凭据连接到[软件分发门户](https://experience.adobe.com/downloads)。 了解有关[本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中软件分发的更多信息。
 
-1. 选择安装模式：选择 **[!UICONTROL Update or repair]**
-1. 单击 **[!UICONTROL Next]** .
-1. 单击 **[!UICONTROL Finish]** .
+1. 选择安装模式：选择&#x200B;**[!UICONTROL Update or repair]**
+1. 单击 **[!UICONTROL Next]**。
+1. 单击 **[!UICONTROL Finish]**。
 
    安装项目随后将复制新文件。
 
-1. 操作完成后，单击 **[!UICONTROL Finish]** 。
+1. 操作完成后，单击&#x200B;**[!UICONTROL Finish]**。
 
-### 同步资源 {#synchronize-resources}
+### 同步资源{#synchronize-resources}
 
 使用以下命令行：
 
@@ -94,11 +94,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此操作只应执行一次，并且仅在(nlserver web)应&#x200B;**用程序服**&#x200B;务器上执行。
+>此操作只应执行一次，并且仅在(**nlserver web**)应用程序服务器上执行。
 
-然后检查同步是否生成错误或警告。 有关此问题的详细信息，请参 [阅解决升级冲突](#resolving-upgrade-conflicts)。
+然后检查同步是否生成错误或警告。 有关详细信息，请参阅[解决升级冲突](#resolving-upgrade-conflicts)。
 
-### 重新启动服务 {#restart-services}
+### 重新启动服务{#restart-services}
 
 要重新启动的服务包括：
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 
    **iisreset /开始**
 
-* Adobe Campaign服务： **网络开始nlserver6**
+* Adobe Campaign服务：**净开始nlserver6**
 
 ## Linux {#in-linux}
 
@@ -116,19 +116,19 @@ ht-degree: 0%
 * [执行更新](#perform-an-update),
 * [重新启动Web服务器](#reboot-the-web-server)。
 
-要了解如何更新客户端控制台，请参阅 [此部分](../../installation/using/client-console-availability-for-linux.md)。
+要了解如何更新客户端控制台，请参阅[本节](../../installation/using/client-console-availability-for-linux.md)。
 
 >[!NOTE]
 >
 >从构建8757起，不再需要第三方库。
 
-### 获取更新的包 {#obtain-updated-packages}
+### 获取更新的包{#obtain-updated-packages}
 
-开始：通过恢复更新的Adobe Campaign包：使用您的用 [户凭据](https://experience.adobe.com/downloads) ，连接到软件分发门户。 在本页中进一步了解软 [件分发](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)。
+开始：通过恢复更新的Adobe Campaign包：使用您的用户凭据连接到[软件分发门户](https://experience.adobe.com/downloads)。 了解有关[本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中软件分发的更多信息。
 
-文件为 **nlserver6-v7-XXX.rpm**
+文件为&#x200B;**nlserver6-v7-XXX.rpm**
 
-### 执行更新 {#perform-an-update}
+### 执行更新{#perform-an-update}
 
 * 基于RPM的分发(RedHat、SuSe)
 
@@ -156,9 +156,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本节详细介绍了完整 [的安装过程](../../installation/using/installing-campaign-standard-packages.md)。 资源会自动同步，但您需要确保未发生错误。 有关此问题的详细信息，请参 [阅解决升级冲突](#resolving-upgrade-conflicts)。
+>完整安装过程详见[本节](../../installation/using/installing-campaign-standard-packages.md)。 资源会自动同步，但您需要确保未发生错误。 有关详细信息，请参阅[解决升级冲突](#resolving-upgrade-conflicts)。
 
-### 重新启动Web服务器 {#reboot-the-web-server}
+### 重新启动Web服务器{#reboot-the-web-server}
 
 必须关闭Apache才能使新库变得适用。
 
@@ -170,7 +170,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->* 您的脚本可能称为 **httpd** ，而非 **apache**。
+>* 您的脚本可能称为&#x200B;**httpd**&#x200B;而不是&#x200B;**apache**。
 >* 您必须执行此命令，直到您获得以下回复：
 
    >
@@ -184,15 +184,15 @@ ht-degree: 0%
 /etc/init.d/apache start
 ```
 
-## 解决升级冲突 {#resolving-upgrade-conflicts}
+## 解决升级冲突{#resolving-upgrade-conflicts}
 
-在资源同步过程中， **postupgrade** 命令允许您检测同步是否生成了错误或警告。
+在资源同步过程中，**postupgrade**&#x200B;命令允许您检测同步是否生成错误或警告。
 
-### 视图同步结果 {#view-the-synchronization-result}
+### 视图同步结果{#view-the-synchronization-result}
 
 有两种查看同步结果的方法：
 
-* 在命令行接口中，错误由三个V形标记>> **实现** ，同步将自动停止。 警告由多次V形标记 **>>实** 现，并且必须在同步完成后解决。 在播放结束时，命令提示符下会显示一个摘要。 它可以如下：
+* 在命令行接口中，错误由三个V形标记&#x200B;**>>**&#x200B;实现，同步自动停止。 警告由多次V形标记&#x200B;**>**&#x200B;实现，并且必须在同步完成后解决。 在播放结束时，命令提示符下会显示一个摘要。 它可以如下：
 
    ```
    2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
@@ -205,13 +205,13 @@ ht-degree: 0%
 
    如果警告涉及资源冲突，则需要用户注意才能解决该问题。
 
-* postupgrade **_`<server version number>_<time of postupgrade>`** .log日志文件包含同步结果。 默认情况下，它位于以下目录中： **`<installation directory>/var/<instance/postupgrade`**. 错误和警告由错误和警告属性指示。
+* **postupgrade_`<server version number>_<time of postupgrade>`.log**&#x200B;日志文件包含同步结果。 默认情况下，它位于以下目录中：**`<installation directory>/var/<instance/postupgrade`**。 错误和警告由错误和警告属性指示。
 
-### 解决冲突 {#resolving-conflicts}
+### 解决冲突{#resolving-conflicts}
 
 要解决冲突，请应用以下流程：
 
-1. 在Adobe Campaign树中，转到 **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** 。
+1. 在Adobe Campaign树中，转至&#x200B;**[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**。
 1. 在列表中选择要解决的冲突。
 
 解决冲突有三种方法：
@@ -226,15 +226,15 @@ ht-degree: 0%
 
 如果选择手动解决冲突，请按如下方式继续：
 
-1. 在窗口的下半部分，搜索冲突 **_字符串_** ，以查找存在冲突的实体。 随新版本一起安装的实体包 **含** new参数，与先前版本匹配的实体包含 **cus** 参数。
+1. 在窗口的下半部分，搜索&#x200B;**_conflict_**&#x200B;字符串以查找存在冲突的实体。 随新版本一起安装的实体包含&#x200B;**new**&#x200B;参数，与先前版本匹配的实体包含&#x200B;**cus**&#x200B;参数。
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. 删除您不想保留的版本。 删除 **_要保留的实体_** conflict_argument字符串。
+1. 删除您不想保留的版本。 删除要保留的实体的&#x200B;**_conflict_argument_**&#x200B;字符串。
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. 转到已解决的冲突。 单击图 **[!UICONTROL Actions]** 标并选择 **[!UICONTROL Declare as resolved]** 。
+1. 转到已解决的冲突。 单击&#x200B;**[!UICONTROL Actions]**&#x200B;图标，然后选择&#x200B;**[!UICONTROL Declare as resolved]**。
 1. 保存更改：冲突现已解决。
 
 ### 最佳做法 {#best-practices}
@@ -243,29 +243,29 @@ ht-degree: 0%
 
 例如，Unicode存储库不仅必须对LATIN1数据进行授权，等等。
 
-## 警告客户端控制台可用的更新 {#warn-the-client-consoles-of-the-available-update}
+## 警告客户端控制台可用更新{#warn-the-client-consoles-of-the-available-update}
 
 ### Windows {#in-windows-1}
 
-在安装(nlserver web)**Adobe Campaign应用**&#x200B;程序服务器的计算机上，下载并复制文件
+在安装(**nlserver web**)Adobe Campaign应用服务器的计算机上，下载并复制文件
 
 **setup-client-6.XXXX.exe**
 
-**应[用程序的路径]**datakitnlengjsp
+**[应用程序路径]**datakitlengjsp
 
 下次连接客户端控制台时，将显示一个窗口通知用户更新的可用性，并优惠用户下载和安装该更新的可能性。
 
 >[!NOTE]
 >
->确保IIS_XPG用户具有此安装文件的相应读取权限，并参阅安装 [指南](../../installation/using/general-architecture.md) ，了解详细信息。
+>确保IIS_XPG用户具有此安装文件的适当读取权限，并参阅[安装指南](../../installation/using/general-architecture.md)以了解更多信息。
 
 ### Linux {#in-linux-1}
 
-在安装Adobe Campaign应用程序服务器(**nlserver web**)的计算机上，检索以下包：
+在安装了Adobe Campaign应用程序服务器(**nlserver web**)的计算机上，检索以下包：
 
 **setup-client-6.XXXX.exe**
 
-并复制它，另 **存为/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
+并复制它，另存为&#x200B;**/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
 ```
  cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
@@ -275,5 +275,5 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->确保Apache用户具有适当的此安装文件读取权限，并参阅安 [装指南](../../installation/using/general-architecture.md) ，了解详细信息。
+>请确保Apache用户具有适当的读取权限，并参阅[安装指南](../../installation/using/general-architecture.md)以了解更多信息。
 
