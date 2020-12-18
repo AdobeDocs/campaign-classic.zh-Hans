@@ -9,8 +9,8 @@ topic-tags: connectors
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,19 +19,19 @@ ht-degree: 1%
 
 首先，为了使用户能够通过联合数据访问对外部数据库执行操作，后者必须在Adobe Campaign中具有特定的命名权限。
 
-1. 在Adobe Campaign **[!UICONTROL Administration > Access Management > Named Rights]** 资源管理器中选择节点。
+1. 在Adobe Campaign资源管理器中选择&#x200B;**[!UICONTROL Administration > Access Management > Named Rights]**&#x200B;节点。
 1. 通过指定所选标签创建新权限。
-1. 字段 **[!UICONTROL Name]** 必须采用以下格式 **用户：base@server**，其中：
+1. **[!UICONTROL Name]**&#x200B;字段必须采用以下格式&#x200B;**user:base@server**，其中：
 
    * **user** 与外部数据库中用户的名称相对应。
-   * **base** 与外部数据库的名称相对应。
-   * **服务器** 与外部数据库服务器的名称相对应。
+   * **** basecorresponses使用外部数据库的名称。
+   * **服** 务器与外部数据库服务器的名称相对应。
 
       >[!NOTE]
       >
-      >在Oracle **,** :base部件是可选的。
+      >**:base**&#x200B;部件在Oracle是可选的。
 
-1. 保存已命名的权限，然后将其从Adobe Campaign浏览器的节点 **[!UICONTROL Administration > Access Management > Operators]** 链接到选定的用户。
+1. 保存指定的权限，然后将其从Adobe Campaign资源管理器的&#x200B;**[!UICONTROL Administration > Access Management > Operators]**&#x200B;节点链接到选定用户。
 
 然后，要处理外部Adobe Campaign库中包含的数据，用户必须对数据库至少具有“写入”权限才能创建工作表。 这些内容会由Adobe Campaign自动删除。
 
@@ -41,13 +41,13 @@ ht-degree: 1%
 * **读取数据**:只读访问包含客户数据的表，
 * **阅读“MetaData”**:访问服务器数据目录以获取表结构，
 * **加载**:在工作表中成批加载（处理集合和联接时需要）,
-* **为TABLE** / **INDEX/PROCEDURE/FUNCTION创建／删除** (仅用于由Adobe Campaign生成的工作表),
+* **为TABLE/** INDEX/ **PROCEDURE/FUNCTION创建/DROP** (仅用于由Adobe Campaign生成的工作表),
 * **说明** （推荐）:以监测出问题时的表现，
 * **WRITE Data** （取决于集成方案）。
 
 数据库管理员需要使这些权限与每个数据库引擎的特定权限相匹配。 有关详细信息，请参阅下面的部分。
 
-## 联合数据访问权 {#fda-rights}
+## 联合数据访问权限{#fda-rights}
 
 |   | Snowflake | 红移 | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
