@@ -27,7 +27,7 @@ ht-degree: 1%
 
 Adobe Campaign可以使用两个级别的日志操作：
 
-1. Verbose **模式** 是标准级别之后的第一个级别。 以下命令将其激活：
+1. **Verbose**&#x200B;模式是标准级别之后的第一个级别。 以下命令将其激活：
 
    ```
    nlserver restart <MODULE_NAME> -verbose 
@@ -39,7 +39,7 @@ Adobe Campaign可以使用两个级别的日志操作：
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
-1. TraceFilter **模式** ，它允许您保存最多的日志。 它由以下命令激活：
+1. **TraceFilter**&#x200B;模式，用于保存最多日志。 它由以下命令激活：
 
    ```
    nlserver stop <MODULE_NAME>; nlserver <MODULE_NAME> -verbose -tracefilter:*
@@ -47,9 +47,9 @@ Adobe Campaign可以使用两个级别的日志操作：
 
    >[!NOTE]
    >
-   >如果您使用 **tracefilter:***，则激活所有日志类型：ncm, rdr, nms, jst，时间， wdbc, ldap, soap, xtk, xtkquery，会话， xtkwriter，网络，pop3, inmail\
-   最有用的日志类型有： **wdbc** (显示所有SQL查询 **)、** soap **（显示所有SOAP调用）、ldap** (验证后显示所有LDAP查询)、 **xtkquery** (显示所有querydef的列表)。\
-   可以单独使用它们(**例如，tracefilter:soap** 、wdbc)。 您还可以全部激活它们，并选择排除某些其他组件： **-tracefilter:*,!soap**
+   >如果使用&#x200B;**tracefilter:***，则激活所有日志类型：ncm, rdr, nms, jst，时间， wdbc, ldap, soap, xtk, xtkquery，会话， xtkwriter，网络，pop3, inmail\
+   最有用的日志类型有：**wdbc**(显示所有SQL查询)、**soap**（显示所有SOAP调用）、**ldap**(显示身份验证后的所有LDAP查询)、**xtkquery**(显示所有querydef的列表)。\
+   可以单独使用它们（例如&#x200B;**tracefilter:soap,wdbc**）。 您还可以全部激活它们，并选择排除某些其他组件：**tracefilter:*,!soap**
 
    检查错误是否实际发生，然后以正常方式重新启动进程：
 
@@ -68,7 +68,7 @@ Adobe Campaign可以使用两个级别的日志操作：
 nlserver pdump -who
 ```
 
-然后，在TraceFilter模式下关闭并重 **新启动** 模块。
+然后，在&#x200B;**TraceFilter**&#x200B;模式下关闭并重新启动模块。
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
@@ -81,7 +81,7 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 ```
 
 >[!NOTE]
-通过 **“跟踪** ”模式可保存日志。 在以上示例中，日志保存在var/ **/mta_debug.log`<instance-name>`和** var/default/web_debug.log **文件中** 。
+使用&#x200B;**跟踪文件**&#x200B;模式可以保存日志。 在以上示例中，日志保存在&#x200B;**var/`<instance-name>`/mta_debug.log**&#x200B;和&#x200B;**var/default/web_debug.log**&#x200B;文件中。
 
 >[!IMPORTANT]
 在Windows中，不要添加LD_PRELOAD选项。 以下命令足够：\
@@ -93,4 +93,4 @@ nlserver web -tomcat -verbose -tracefilter:*
 nlserver restart web -tomcat -noconsole
 ```
 
-所有信息均在文件/usr/local/neolane/nl6/var/default/log/web.log中 **可用**。
+文件&#x200B;**/usr/local/neolane/nl6/var/default/log/web.log**&#x200B;中提供所有信息。
