@@ -9,8 +9,8 @@ topic-tags: initial-configuration
 translation-type: tm+mt
 source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
