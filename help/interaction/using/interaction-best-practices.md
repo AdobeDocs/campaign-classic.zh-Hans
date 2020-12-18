@@ -17,13 +17,13 @@ ht-degree: 0%
 
 # 互动最佳实践{#interaction-best-practices}
 
-## 一般性建议 {#general-recommendations}
+## 一般建议 {#general-recommendations}
 
 本节介绍了在Adobe Campaign Classic管理交互模块的最佳实践方法，包括合格规则、预定义过滤器、工作流活动和数据库选项。
 
 Adobe Campaign互动需要谨慎管理，才能有效运作。 您必须在联系人数和优惠类别数和优惠数之间找到平衡。 如果这些因素未得到认真处理，您的Adobe Campaign实例可能会遇到问题。
 
-### 实施 {#implementation}
+### 实现{#implementation}
 
 下面列出了实施和配置交互时应牢记的重要元素。
 
@@ -32,7 +32,7 @@ Adobe Campaign互动需要谨慎管理，才能有效运作。 您必须在联�
 * 优惠目录设计对Adobe Campaign Classic的性能有着巨大的影响。
 * 当有许多优惠时，将它们分成若干优惠目录。
 
-### 合格规则 {#eligibility-rules}
+### 合格规则{#eligibility-rules}
 
 下面列出了有关合格规则的一些最佳实践。
 
@@ -46,7 +46,7 @@ Adobe Campaign互动需要谨慎管理，才能有效运作。 您必须在联�
 * 建议每个优惠空间优惠数量有限。 这可确保在任何给定空间中更快地检索优惠。
 * 使用索引，尤其是常用查找列。
 
-### 命题表 {#proposition-table}
+### 命题表{#proposition-table}
 
 下面列出了有关提议表的一些最佳实践。
 
@@ -56,17 +56,17 @@ Adobe Campaign互动需要谨慎管理，才能有效运作。 您必须在联�
 * 限制每个目标请求的建议数。 请勿设置超出实际使用的设置。
 * 在规则条件中尽可能避免连接。
 
-## 有关管理优惠的提示与技巧 {#tips-managing-offers}
+## 有关管理优惠{#tips-managing-offers}的提示与技巧
 
 本节包含有关管理优惠和使用Adobe Campaign Classic“交互”模块的更详细建议。
 
-### 在电子邮件优惠空间中使用多个投放 {#multiple-offer-spaces}
+### 在电子邮件投放{#multiple-offer-spaces}中使用多个优惠空间
 
 当将优惠包含在投放中时，通常通过扩充活动(或其他类似活动)在活动工作流中的上游选择优惠。
 
 在扩充活动中选择优惠时，您可以选择要使用的优惠空间。 但是，无论选定优惠空间如何，投放自定义菜单都取决于在投放中设置的优惠空间。
 
-在以下示例中，在优惠空间中选择的投放是 **[!UICONTROL Email (Environment - Recipient)]**:
+在以下示例中，投放中选择的优惠空间是&#x200B;**[!UICONTROL Email (Environment - Recipient)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
@@ -76,17 +76,17 @@ Adobe Campaign互动需要谨慎管理，才能有效运作。 您必须在联�
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
-此函数插入代码，如： `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
+此函数插入代码，如：`<%@ include proposition="targetData.proposition" view="rendering/html" %>`。
 
-选择命题时，属性的 **[!UICONTROL view]** 值如下：
+选择命题时，**[!UICONTROL view]**&#x200B;属性的值如下所示：
 * &quot;rendering/html&quot;:html渲染。 它使用HTML渲染功能。
 * &quot;优惠/视图/html&quot;:html内容。 它不使用HTML渲染功能。 它只包括HTML字段。
 
 当您在一个电子邮件投放中包含多个优惠空间时，如果其中某些优惠具有渲染功能，而某些优惠空间没有渲染功能，您必须记住哪些优惠空间使用了哪些，哪些具有渲染功能。
 
-因此，为避免任何问题，建议所有优惠空间都定义HTML渲染函数，即使优惠空间只需要HTML内容也是如此。
+因此，为避免任何问题，建议所有优惠空间都定义HTML渲染函数，即使优惠空间仅需要HTML内容也是如此。
 
-### 在命题日志表中设置排名 {#rank-proposition-log-table}
+### 在命题日志表{#rank-proposition-log-table}中设置排名
 
 优惠空间在生成或接受建议时能够将数据存储在建议表中：
 
@@ -108,7 +108,7 @@ Adobe Campaign互动需要谨慎管理，才能有效运作。 您必须在联�
 
 由于命名表中有一个名为@rank的字段，因此将复制工作流临时表中的值。
 
-有关在命题表中存储其他字段的详细信息，请参 [阅通过工作流集成优惠](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights)。
+有关在提议表中存储其他字段的详细信息，请参阅[通过工作流](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights)集成优惠。
 
 对于具有交互的出站优惠，当选择了多个优惠并且您希望记录它们在电子邮件中的显示顺序时，此功能非常有用。
 
@@ -120,10 +120,10 @@ Adobe Campaign互动需要谨慎管理，才能有效运作。 您必须在联�
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
-### 扩展nms:优惠模式 {#extending-nms-offer-schema}
+### 扩展nms:优惠模式{#extending-nms-offer-schema}
 
 在扩展nms:优惠模式时，请确保遵循现成的结构已设置：
-* 为下的内容存储定义任何新字段 `<element name="view">`。
+* 为`<element name="view">`下的内容存储定义任何新字段。
 * 每个新字段需要定义两次。 一次作为常规XML字段，一次作为CDATA XML字段，并在名称后附加“_jst”。 例如：
 
    ```
@@ -131,4 +131,4 @@ Adobe Campaign互动需要谨慎管理，才能有效运作。 您必须在联�
    <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
    ```
 
-* 任何包含要跟踪的URL的字段都必须放 `<element name="trackedUrls">` 置在下方 `<element name="view" >`。
+* 任何包含要跟踪的URL的字段都必须放在`<element name="trackedUrls">`下，该字段位于`<element name="view" >`下。
