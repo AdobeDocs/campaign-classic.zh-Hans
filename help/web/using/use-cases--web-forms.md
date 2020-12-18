@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 用例：Web 窗体{#use-cases-web-forms}
 
-## 创建包含订阅选择加入的多次表单 {#create-a-subscription--form-with-double-opt-in}
+## 创建具有订阅选择加入{#create-a-subscription--form-with-double-opt-in}的多次表单
 
 当您优惠信息服务时，收件人需要订阅才能接收所有链接的通信。 为避免不当通信并确保收件人有意订阅，我们建议发送订阅确认请求以创建多次选择加入。 只有当用户单击确认消息中包含的链接时，订阅才会生效。
 
@@ -26,9 +26,9 @@ ht-degree: 1%
 1. 在包含用于订阅临时服务的复选框的网站上创建新闻稿订阅表单。 此服务将允许您发送订阅确认消息。
 1. 使用链接到Web表单的订阅创建投放确认投放模板。 它包含确认链接，用于调用表单进行Newsletter订阅并显示订阅批准消息。
 
-### 第1步——创建信息服务 {#step-1---creating-information-services}
+### 步骤1 —— 创建信息服务{#step-1---creating-information-services}
 
-1. 创建要提供给您的订阅服务的Newsletter收件人。 有关如何创建新闻稿的详细信息，请参阅 [此部分](../../delivery/using/about-services-and-subscriptions.md)。
+1. 创建要提供给您的订阅服务的Newsletter收件人。 有关如何创建Newsletter的详细信息，请参阅[此部分](../../delivery/using/about-services-and-subscriptions.md)。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -36,21 +36,21 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
 
-### 第2步——创建确认消息 {#step-2---creating-confirmation-messages}
+### 第2步——创建确认消息{#step-2---creating-confirmation-messages}
 
 确认消息通过在临时服务级别引用的专用投放模板发送。
 
-1. In the **[!UICONTROL Explorer]** , select **[!UICONTROL Resources > Templates > Delivery templates]**.
+1. 在&#x200B;**[!UICONTROL Explorer]**&#x200B;中，选择&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**。
 1. 创建用于发送投放模板确认消息的订阅。
-1. 单击中 **[!UICONTROL To]** 的按 **[!UICONTROL Email parameters]** 钮，将投放模板与订阅目标映射而非收件人关联。
+1. 单击&#x200B;**[!UICONTROL Email parameters]**&#x200B;中的&#x200B;**[!UICONTROL To]**&#x200B;按钮，将投放模板与订阅目标映射而非收件人关联。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
 1. 由于此投放的收件人尚未确认其批准，因此他们仍在数据库阻止列表。 要让投放接收此通信，您需要根据此模板授权目标收件人。
 
-   为此，请单击选 **[!UICONTROL Exclusions]** 项卡。
+   为此，请单击&#x200B;**[!UICONTROL Exclusions]**&#x200B;选项卡。
 
-1. 单击链 **[!UICONTROL Edit...]** 接并取消选中 **[!UICONTROL Exclude recipients who no longer want to be contacted]** 选项。
+1. 单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接并取消选中&#x200B;**[!UICONTROL Exclude recipients who no longer want to be contacted]**&#x200B;选项。
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
-### 第3步——创建订阅表单 {#step-3---creating-the-subscription-form}
+### 第3步——创建订阅表单{#step-3---creating-the-subscription-form}
 
 Web表单支持收件人订阅和订阅确认。
 
@@ -80,31 +80,31 @@ Web表单工作流将包括以下活动:
 
 为此请执行以下操作步骤：
 
-1. 创建Web表单并选择模板 **[!UICONTROL Newsletter subscription (subNewsletter)]**。
+1. 创建Web表单并选择模板&#x200B;**[!UICONTROL Newsletter subscription (subNewsletter)]**。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
-1. 在该选 **[!UICONTROL Edit]** 项卡中，我们需要配置现有工作流，因为我们要向要订阅的收件人添加确认消息。
+1. 在&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，我们需要配置现有工作流，因为我们要向要订阅的收件人添加确认消息。
 
-   为此，请多次单击该 **[!UICONTROL Preloading]** 框并按如下配置。
+   为此，请多次单击&#x200B;**[!UICONTROL Preloading]**&#x200B;框，然后按如下配置。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
 
    这意味着，如果用户通过确认消息中的链接访问此表单，则将加载其用户档案信息。 如果他们通过网站的某个页面访问Web表单，则不会加载任何信息。
 
-1. 向工作 **[!UICONTROL Test]** 流中添加活动。
+1. 将&#x200B;**[!UICONTROL Test]**&#x200B;活动添加到工作流。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
-   活动 **[!UICONTROL Test]** 可以关注收件人电子邮件。 在这种情况下，请按如下方式配置它：
+   **[!UICONTROL Test]**&#x200B;活动可以关注收件人电子邮件。 在这种情况下，请按如下方式配置它：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
-1. 将两个 **[!UICONTROL Script]** 活动添加到工作流。
+1. 将两个&#x200B;**[!UICONTROL Script]**&#x200B;活动添加到您的工作流中。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   第一个活动 **[!UICONTROL Script]** 将添加收件人,阻止列表直到他们确认其订阅到新闻稿。 其内容必须如下：
+   第一个&#x200B;**[!UICONTROL Script]**&#x200B;活动将添加收件人,阻止列表直到他们确认其订阅到新闻稿。 其内容必须如下：
 
    ```
    ctx.recipient.@blackList=1
@@ -112,7 +112,7 @@ Web表单工作流将包括以下活动:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   第二个 **[!UICONTROL Script]** 活动授权投放发送给用户并订阅新闻稿。 脚本的最后两行将允许您将收件人从临时文件夹传输到另一个文件夹，并在确认订阅后立即与现有用户档案协调。
+   第二个&#x200B;**[!UICONTROL Script]**&#x200B;活动授权投放发送给用户并订阅新闻稿。 脚本的最后两行将允许您将收件人从临时文件夹传输到另一个文件夹，并在确认订阅后立即与现有用户档案协调。
 
    ```
    ctx.recipient.@blackList=0
@@ -123,15 +123,15 @@ Web表单工作流将包括以下活动:
 
    >[!NOTE]
    >
-   >也 **[!UICONTROL Temp]** 可以使用工作流定期清除分区。
+   >**[!UICONTROL Temp]**&#x200B;分区也可使用工作流定期清除。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
-1. 多次-单击活动 **[!UICONTROL Subscription]** 以个性化订阅表单，并将复选框与先前创建的临时服务链接起来。
+1. 多次-单击&#x200B;**[!UICONTROL Subscription]**&#x200B;活动，个性化订阅表单并将复选框与先前创建的临时服务链接。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
 
-1. 配置活动 **[!UICONTROL Storage]** 以保存在表单页面中输入的信息。
+1. 配置&#x200B;**[!UICONTROL Storage]**&#x200B;活动以保存在表单页面中输入的信息。
 
    此活动允许您在专用的临时文件夹中创建收件人用户档案，以将其与可向其发送通信的用户档案区分开。
 
@@ -141,9 +141,9 @@ Web表单工作流将包括以下活动:
    >
    >您不得定义任何对帐选项。
 
-1. 添加两 **[!UICONTROL End]** 个活动，以显示用户的消息。
+1. 添加两个&#x200B;**[!UICONTROL End]**&#x200B;活动以显示用户消息。
 
-   订阅完 **[!UICONTROL End]** 成后，第二个框将显示确认消息。
+   完成订阅后，第二个&#x200B;**[!UICONTROL End]**&#x200B;框将显示确认消息。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
@@ -151,7 +151,7 @@ Web表单工作流将包括以下活动:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
 
-### 第4步——发布和测试表单 {#step-4---publishing-and-testing-the-form}
+### 第4步——发布和测试表单{#step-4---publishing-and-testing-the-form}
 
 您现在可以发布表单，使用户能够访问它。
 
@@ -167,7 +167,7 @@ Web表单工作流将包括以下活动:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   用户将添加到文件夹中的Adobe Campaign **[!UICONTROL Temp]** 用户档案库，并且其处于状态，阻止列表直到用户确认其与电子邮件的订阅。
+   用户将添加到&#x200B;**[!UICONTROL Temp]**&#x200B;文件夹中的Adobe Campaign用户档案库，并且其处于状态，直阻止列表到用电子邮件确认其订阅。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -186,7 +186,7 @@ Web表单工作流将包括以下活动:
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
 
-## 根据所选值显示不同的选项 {#displaying-different-options-depending-on-the-selected-values}
+## 根据所选值{#displaying-different-options-depending-on-the-selected-values}显示不同的选项
 
 在以下示例中，用户将被要求选择一种车辆类型。 您可以根据所选类型显示可用的车辆类别。 这意味着在右列中显示的项目取决于用户的选择：
 
