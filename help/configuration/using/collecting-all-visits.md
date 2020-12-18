@@ -27,13 +27,13 @@ ht-degree: 3%
 >
 >Adobe Campaign平台不适用于在消息中点击后访问网站的上下文之外用作网站跟踪工具。 启用此选项后，可能会在承载服务器的计算机（重定向、应用程序和数据库）上引起资源的高使用率。 建议您确保硬件架构能够支持此负载，并避免将Web跟踪标签放置到最频繁访问的页面(如主页)中。
 
-## 服务器配置 {#server-configuration}
+## 服务器配置{#server-configuration}
 
-通过重载serverConf.xml文件的某 **些元素来配置服** 务器。 这些文件保存在 **Adobe Campaign** 安装目录的conf子目录中。
+通过使&#x200B;**serverConf.xml**&#x200B;文件的某些元素过载来配置服务器。 这些文件保存在Adobe Campaign安装目录的&#x200B;**conf**&#x200B;子目录中。
 
-### 重定向服务器 {#redirection-server}
+### 重定向服务器{#redirection-server}
 
-对于重定向服务器，将重 **定向元素** trackWebVisitors **属性设** 置为 **true**。
+对于重定向服务器，将&#x200B;**重定向**&#x200B;元素的&#x200B;**trackWebVisitors**&#x200B;属性设置为&#x200B;**true**。
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -42,11 +42,11 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="true"
 trackingPassword=""
 ```
 
-## 配置默认匹配活动 {#configuring-a-default-matching-campaign}
+## 配置默认匹配活动{#configuring-a-default-matching-campaign}
 
 要通过客户端控制台视图跟踪信息，您必须：
 
-* 创建 **伪投放** (投放映射必须与目标模式的映射相同),
-* 在NmsTracking_ **WebTrackingDelivery** 选项中输入此 **投放的内** 部名称。
+* 创建&#x200B;**伪投放**(投放映射必须与目标模式的映射相同),
+* 在&#x200B;**NmsTracking_WebTrackingDelivery**&#x200B;选项中输入此投放的&#x200B;**内部名称**。
 
 并非直接在电子邮件中单击之后查看的所有站点跟踪信息都可以在创建的虚拟投放中查看。
