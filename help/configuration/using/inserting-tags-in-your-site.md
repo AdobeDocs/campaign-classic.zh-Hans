@@ -17,9 +17,9 @@ ht-degree: 5%
 
 # 在站点中插入标记{#inserting-tags-in-your-site}
 
-## 简单方法 {#simple-method}
+## 简单方法{#simple-method}
 
-此方法包括通过在要跟踪的网页的HTML源代码中 **`<img>`** 插入HTML标记，向重定向服务器发送HTTP调用。
+此方法包括通过在要跟踪的网页的HTML源代码中插入&#x200B;**`<img>`** HTML标记，向重定向服务器发送HTTP调用。
 
 >[!IMPORTANT]
 >
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 但是，在使用TRANSACTION类型标记时，必须使用JavaScript修改示例标记，以插入事务信息（金额、项数）和扩展模式定义的任何信息。
 
-### 静态插入标记 {#static-insertion-of-tags}
+### 静态插入标记{#static-insertion-of-tags}
 
 要执行静态标记插入，只需将控制台生成或手动构建的标记复制并粘贴到网页源中。
 
@@ -87,7 +87,7 @@ ht-degree: 5%
 </html>
 ```
 
-### 动态生成Web跟踪标签 {#dynamic-generation-of-web-tracking-tags}
+### 动态生成Web跟踪标签{#dynamic-generation-of-web-tracking-tags}
 
 动态生成网页时，可在页面生成时添加网页跟踪标签。
 
@@ -124,11 +124,11 @@ ht-degree: 5%
 </html>
 ```
 
-## 最佳方法 {#optimum-method-}
+## 最佳方法{#optimum-method-}
 
 如果您希望控制发送到重定向服务器的信息，最可靠的方法是使用页面生成语言自行同步执行HTTP查询。
 
-您构造的URL必须遵守在Web 跟踪标记中定义的语法 [规则：定义](../../configuration/using/web-tracking-tag--definition.md)。
+您构造的URL必须遵循[Web 跟踪标记中定义的语法规则：definition](../../configuration/using/web-tracking-tag--definition.md)。
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
