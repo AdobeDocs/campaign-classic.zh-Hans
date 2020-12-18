@@ -19,11 +19,11 @@ ht-degree: 16%
 
 创建一个或多个种子地址和消息正文后，您可以预览消息并检查其个性化。
 
-1. 在消息模板中，单击选 **[!UICONTROL Preview]** 项卡。
+1. 在消息模板中，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
 
    ![](assets/messagecenter_preview_001.png)
 
-1. Select **[!UICONTROL A seed address]** in the drop-down list.
+1. 在下拉列表中选择&#x200B;**[!UICONTROL A seed address]**。
 
    ![](assets/messagecenter_preview_002.png)
 
