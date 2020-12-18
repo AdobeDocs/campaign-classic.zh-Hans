@@ -9,8 +9,8 @@ topic-tags: api
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 这是在Adobe Campaign服务器上执行的JavaScript。
 
-## 静态方法 {#static-methods}
+## 静态方法{#static-methods}
 
 静态SOAP方法通过调用表示模式的对象上的方法来访问。 模式是“命名空间”对象的属性。 这些命名空间是全局变量，因此，例如xtk或nms变量表示相应的命名空间
 
@@ -29,7 +29,7 @@ ht-degree: 9%
 xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false) 
 ```
 
-## 非静态方法 {#non-static-methods}
+## 非静态方法{#non-static-methods}
 
 要使用非静态SOAP方法，必须首先在相应模式上使用“get”或“create”方法检索实体。
 
