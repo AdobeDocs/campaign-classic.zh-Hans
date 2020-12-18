@@ -21,7 +21,7 @@ ht-degree: 3%
 
 根据活动类型和选定的选项，活动在本地或集中执行。
 
-## 访问活动 {#accessing-the-campaign}
+## 访问活动{#accessing-the-campaign}
 
 订单获得批准并达到发布日期后，将在本地创建活动并供您使用。 本地运营商将收到其可用性通知。
 
@@ -29,12 +29,12 @@ ht-degree: 3%
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
-活动仍可在活动概述中访问，该概述可通 **[!UICONTROL Campaigns]** 过主页上的链接找到。
+活动在活动概述中仍可访问，该概述通过主页上的&#x200B;**[!UICONTROL Campaigns]**&#x200B;链接找到。
 
-## 可用设置 {#available-settings}
+## 可用设置{#available-settings}
 
 本地实体可以使用所有活动仪表板元素，调整活动内容以满足其需求。 他们的主要任务是调整定位工作流，并可能个性化投放内容。
 
-## 活动执行 {#campaign-execution}
+## 活动执行{#campaign-execution}
 
 每个本地实体可以执行活动工作流，并根据活动模板中定义的流程执行必要的批准。
