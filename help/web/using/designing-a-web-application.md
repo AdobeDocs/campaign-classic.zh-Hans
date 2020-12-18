@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 设计 Web 应用程序{#designing-a-web-application}
 
-Web 应用程序的创建和管理遵循与在线调查相 [同的原则](../../web/using/about-surveys.md)。
+Web 应用程序是按照与[在线调查](../../web/using/about-surveys.md)相同的原则创建和管理的。
 
 但功能差异如下：
 
@@ -27,21 +27,21 @@ Web 应用程序的创建和管理遵循与在线调查相 [同的原则](../../
 
 >[!CAUTION]
 >
->强烈建议持续检查所应用的配置，以便在Web 应用程序构建过程的早期检测任何错误。 要检查修改的呈现，请保存应用程序，然后单击 **[!UICONTROL Preview]** 子选项卡。
+>强烈建议持续检查所应用的配置，以便在Web 应用程序构建过程的早期检测任何错误。 要检查修改的呈现，请保存应用程序，然后单击&#x200B;**[!UICONTROL Preview]**&#x200B;子选项卡。
 >
 >在发布Web 应用程序之前，最终用户无法看到更改。
 
-## 在Web 应用程序中插入图表 {#inserting-charts-in-a-web-application}
+## 在Web 应用程序{#inserting-charts-in-a-web-application}中插入图表
 
 您可以在Web 应用程序中包含图表。 为此，请使用任务栏中图表的下拉列表来选择要插入的图表类型。
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-您还可以选择菜 **[!UICONTROL Add a chart]** 单。
+您也可以选择&#x200B;**[!UICONTROL Add a chart]**&#x200B;菜单。
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
-## 在Web 应用程序中插入表 {#inserting-tables-in-a-web-application}
+## 在Web 应用程序{#inserting-tables-in-a-web-application}中插入表
 
 要添加表，请使用任务栏中表的下拉列表来选择要使用的表的类型。
 
@@ -51,15 +51,15 @@ Web 应用程序的创建和管理遵循与在线调查相 [同的原则](../../
 
 ![](assets/s_ncs_admin_webapps_table.png)
 
-## 概述类型Web 应用程序 {#overview-type-web-applications}
+## 概述类型Web 应用程序{#overview-type-web-applications}
 
 Adobe Campaign界面使用许多Web 应用程序来访问、管理收件人、投放、活动、股票等，并与之交互。
 
 在界面中，它们以仪表板形式显示，只有一页。
 
-现成Web 应用程序存储在节点 **[!UICONTROL Administration > Configuration > Web applications]** 中。
+现成的Web 应用程序存储在&#x200B;**[!UICONTROL Administration > Configuration > Web applications]**&#x200B;节点中。
 
-## 编辑表单类型Web 应用程序 {#edit-forms-type-web-applications}
+## 编辑表单类型Web 应用程序{#edit-forms-type-web-applications}
 
 为外部网编辑表单Web 应用程序的特征是：
 
@@ -72,4 +72,4 @@ Adobe Campaign界面使用许多Web 应用程序来访问、管理收件人、�
 
    “概述”类型的Web 应用程序都有单个页面，而编辑表单可以根据特定条件(测试、选择、连接运算符的用户档案等)优惠一系列页面。
 
-此类Web 应用程序的操作与调查类似，但 **没有**&#x200B;历史记录管理或字段存档。 用户通常通过登录页面访问它，在登录页面中必须识别自己。
+此类Web 应用程序的操作与&#x200B;**调查**&#x200B;类似，但没有历史记录管理或字段存档。 用户通常通过登录页面访问它，在登录页面中必须识别自己。
