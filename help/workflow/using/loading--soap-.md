@@ -19,9 +19,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->仅 **当您安装了活动** (联合数据访问)模块时， **加载(SOAP** )联合数据访问才可用。 请核实您的许可协议。
+>**加载(SOAP)**&#x200B;活动仅在安装了&#x200B;**联合数据访问(联合数据访问)**&#x200B;模块时可用。 请核实您的许可协议。
 
-当无 **法通过外部数据** 库中的活动直接收集数据时，除了数据加载(RDBMS) **** 活动外，还使用加载(SOAP)联合数据访问。
+当无法通过外部活动库中的联合数据访问直接收集数据时，除了&#x200B;**数据加载(RDBMS)**&#x200B;活动外，还使用&#x200B;**加载(SOAP)**。
 
 操作如下：
 
@@ -37,19 +37,19 @@ ht-degree: 4%
 
    ![](assets/soap_load_003.png)
 
-1. 选择 **[!UICONTROL Click here to view and edit analysis results]** 以指定每个标识的列。
+1. 选择&#x200B;**[!UICONTROL Click here to view and edit analysis results]**&#x200B;以指定每个已标识列。
 
    ![](assets/soap_load_001.png)
 
-   如果要更新示例，请选择 **[!UICONTROL Re-analyze the example]**。
+   如果要更新示例，请选择&#x200B;**[!UICONTROL Re-analyze the example]**。
 
-   您还可以通过链接个性化列数据 **[!UICONTROL Advanced parameters]** 格式。 有关格式化导入数据的详细信息，请参 [阅此部分](../../platform/using/importing-data.md#import-wizard)。
+   您还可以通过&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接个性化列数据的格式。 有关格式化导入数据的详细信息，请参阅此[部分](../../platform/using/importing-data.md#import-wizard)。
 
 1. 您可以使用行号作为标识符和／或指定SOAP调用返回多个元素。
 1. 根据选项卡脚本的函数输入以下选项卡脚本：
 
    * **[!UICONTROL Initialization]**:建立SOAP连接。
-   * **[!UICONTROL Iteration]**:执行对SOAP服务的调用。 此函数的返回必须是与示例或WSDL的描述兼容的XML对象。
+   * **[!UICONTROL Iteration]**:执行对SOAP服务的调用。此函数的返回必须是与示例或WSDL的描述兼容的XML对象。
 
       Adobe Campaign将在循环中调用此选项卡的代码，直到返回空XML对象。
 
