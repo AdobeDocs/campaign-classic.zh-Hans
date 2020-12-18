@@ -9,8 +9,8 @@ topic-tags: database-maintenance
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,19 +19,19 @@ ht-degree: 4%
 
 内置对象应受到监控，防止其增长过多非常重要。
 
-## ID序列 {#sequence-of-ids}
+## ID序列{#sequence-of-ids}
 
-Adobe Campaign使用必须相应使用的ID序列： **xtkNewId**。 如果该序列消耗得非常快（即从每天100,000个开始），您必须验证它是否符合您的业务要求，如每天发送数百万封电子邮件。 可以为特定表定义专用序列。 您可以设置一个工作流来监视ID使用情况。
+Adobe Campaign使用必须相应使用的ID序列：**xtkNewId**。 如果该序列消耗得非常快（即从每天100,000个开始），您必须验证它是否符合您的业务要求，如每天发送数百万封电子邮件。 可以为特定表定义专用序列。 您可以设置一个工作流来监视ID使用情况。
 
 当序列达到20亿多（确切数字为2147483648）时，它会回到零。 必须避免并引起问题，这就是必须监视此序列的原因。
 
-要防止在大表中出现这种情况，请考虑使用特定序列。 这可以使用模式 **中的** pkSequence属性完成。
+要防止在大表中出现这种情况，请考虑使用特定序列。 这可以使用模式中的&#x200B;**pkSequence**&#x200B;属性来完成。
 
 创建大量日志的高频工作流将占用大量ID。 因此，强烈建议避免工作流中日志过多和频率过高。
 
 如果序列已经循环，则最好的解决方案是切换到负ID，从-2,147,483,648开始。
 
-## 文件夹 {#folders}
+## 文件夹{#folders}
 
 任何实例上应少于1000个文件夹。 文件夹数超过此值会导致活动客户端出现性能问题。 您可以设置监视作业以计算文件夹、工作流等的数量，并定期报告。
 
@@ -43,17 +43,17 @@ Adobe Campaign使用必须相应使用的ID序列： **xtkNewId**。 如果该�
 
 应从实例中清除两年以上的投放。
 
-## 文件 {#files}
+## 文件{#files}
 
 应用程序服务器磁盘上的文件数不应无限增加。
 
-导入工作流创建文件，因此导致磁盘扩展。 使用标准文件收集器活动可以防 [止](../../workflow/using/file-collector.md) 。 文件收集器将文件移动到临时文件夹并自动清除它们。
+导入工作流创建文件，因此导致磁盘扩展。 使用标准[文件收集器](../../workflow/using/file-collector.md)活动可以防止这种情况。 文件收集器将文件移动到临时文件夹并自动清除它们。
 
 如果工作流导入文件但未使用标准功能，则需要清除该工作流才能将磁盘空间保持在最小。
 
-## 交易数据和日志 {#transactional-data-and-logs}
+## 事务性数据和日志{#transactional-data-and-logs}
 
-将数 [据导入](../../workflow/using/data-life-cycle.md#work-table) 到Adobe Campaign的每个工作流程都会导致数据库的大小增大。
+将数据导入Adobe Campaign的每个[工作流](../../workflow/using/data-life-cycle.md#work-table)都会导致数据库的大小增大。
 
 检查清除或清除工作流是否正在运行并有效清除记录。 必须清除所有事务数据和日志。 清理任务仅清除标准表：跟踪和广泛的日志。 特定表必须由特定工作流清除。 请参阅[此章节](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs) 。
 
