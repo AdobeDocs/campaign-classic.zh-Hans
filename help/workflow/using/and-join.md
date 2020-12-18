@@ -19,7 +19,7 @@ ht-degree: 6%
 
 仅当激活所有入站过渡(即完成所有先前活动)时，连接才会触发其出站过渡。 这样，您就可以确保在继续执行工作流之前，某些活动已完成。
 
-例如，您可以在内容创建和投放发送自动化的上下文中使用AND-join活动，以确保只有在目标查询和内容更新步骤完成后才启动投放。 本节提供专用 [用例](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
+例如，您可以在内容创建和投放发送自动化的上下文中使用AND-join活动，以确保只有在目标查询和内容更新步骤完成后才启动投放。 [此部分](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)中提供专用用例
 
 ![](assets/and-join-usage.png)
 
@@ -29,4 +29,4 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->对于AND-join **类型活动** ,事件变量会合并，但如果同一变量定义了两次，则存在冲突，且值仍未确定。 如需详细信息，请参阅[此部分](../../workflow/using/javascript-scripts-and-templates.md#event-variables)。
+>对于&#x200B;**AND-join**&#x200B;类型活动,事件变量将合并，但如果同一变量定义两次，则存在冲突，且值仍未确定。 如需详细信息，请参阅[此部分](../../workflow/using/javascript-scripts-and-templates.md#event-variables)。
