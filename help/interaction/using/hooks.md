@@ -17,17 +17,17 @@ ht-degree: 1%
 
 # 挂钩{#hooks}
 
-“交互”中的挂接允许您修 **改标准引擎行为**。
+“交互”中的挂接允许您修改&#x200B;**标准引擎行为**。
 
-在 **[!UICONTROL Target loading]** Adobe Campaign **[!UICONTROL Proposition post-processing]** 中，在优惠空间中配置了这些和挂钩：
+**[!UICONTROL Target loading]**&#x200B;和&#x200B;**[!UICONTROL Proposition post-processing]**&#x200B;挂钩以Adobe Campaign配置在优惠空间中：
 
 ![](assets/interaction_hooks_1.png)
 
-挂 **[!UICONTROL Dynamic offer]** 接配置了优惠权重:
+**[!UICONTROL Dynamic offer]**&#x200B;挂接配置了优惠权重:
 
 ![](assets/interaction_hooks_2.png)
 
-## 目标加载 {#target-loading}
+## 目标加载{#target-loading}
 
 此挂接允许您使用外部系统的额外用户档案来丰富联系人的(即现成查询加载的联系人)。
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->xml **Interaction** 参数包含现成查询加载的呼叫数据和联系人的用户档案。
+>**xmlInteraction**&#x200B;参数既包含呼叫数据，又包含现成查询加载的联系人用户档案。
 
 **示例:**
 
@@ -57,7 +57,7 @@ ht-degree: 1%
   interaction.@additionalData = additionalData;
 ```
 
-## 命题后处理 {#proposition-post-processing-}
+## 后处理命题{#proposition-post-processing-}
 
 通过此挂接，您可以检查给定交互中符合条件的主张的一致性和兼容性。 它还允许您定义新的评分或概率计算功能。
 
@@ -115,11 +115,11 @@ if( aProposition.length > 0 )
 return aReturnedProps;
 ```
 
-## 动态优惠 {#dynamic-offer}
+## 动态优惠{#dynamic-offer}
 
 此挂接允许您调用外部引擎以选择链接到列表的产品优惠。 它是在合格规则之后和优惠应用程序之前的类型规则中配置的。
 
-在此之前，集成商应使用产品上 **的附加信息** ，扩展命题CompationRcp模式。 要指定存储此数据的位置， **[!UICONTROL Proposition being processed]** 请在空间的选项卡 **[!UICONTROL Storage]** 中提供一个链接
+事先，集成商应使用产品上的附加信息扩展命题&#x200B;**CompationRcp**&#x200B;模式。 要指定此数据的存储位置，在空间的&#x200B;**[!UICONTROL Storage]**&#x200B;选项卡中有一个&#x200B;**[!UICONTROL Proposition being processed]**&#x200B;链接
 
 ![](assets/interaction_hooks_3.png)
 
