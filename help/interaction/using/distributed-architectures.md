@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 分布式架构{#distributed-architectures}
 
-## 原则 {#principle}
+## 原则{#principle}
 
 为了能够支持可伸缩性并在入站渠道提供24/7服务，您可以将交互与分布式架构结合使用。 此类架构已与消息中心一起使用，由多个实例组成：
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 >
 >控制实例专用于入站渠道并包含目录的联机版本。 每个执行实例都是独立的，专门用于一个联系人细分(例如，每个国家／地区一个执行实例)。 优惠引擎调用必须在执行时直接执行(每个执行实例一个特定URL)。 由于实例之间的同步不是自动的，因此必须通过同一实例发送来自同一联系人的交互。
 
-## 命题同步 {#proposition-synchronization}
+## 命题同步{#proposition-synchronization}
 
 优惠同步通过包执行。 在执行实例上，所有目录对象都由外部帐户名称前缀。 这意味着可以在同一控制实例上支持多个执行实例（例如开发和生产实例）。
 
@@ -54,17 +54,17 @@ ht-degree: 1%
 * 命题同步只通过联合数据访问连接进行。
 * 如果在同一实例上使用交互和消息中心，则两种情况下都将通过联合数据访问协议进行同步。
 
-## 包配置 {#packages-configuration}
+## 包配置{#packages-configuration}
 
-任何直接链接到交互 **的模式** 扩展(优惠、陈述、收件人等) 必须部署在执行实例上。
+直接链接到&#x200B;**Interaction**&#x200B;的任何模式扩展(优惠、陈述、收件人等) 必须部署在执行实例上。
 
 交互包必须安装在所有实例上（控制和执行）。 还提供两个附加包：一个要安装在控制实例上，另一个要安装在每个执行实例上。
 
 >[!NOTE]
 >
->安装包时， **nms** ：命 **名表的** long type字段（如命名ID）变 **为int64** 类型字段。 此类型的数据在本节中 [有详细说明](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)。
+>安装包时，**nms:pomposition**&#x200B;表的&#x200B;**long**&#x200B;类型字段（如命题ID）变为&#x200B;**int64**&#x200B;类型字段。 此类型的数据在[此部分](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)中详细介绍。
 
-必须在每个实例上配置数据保留持续时间(通 **[!UICONTROL Data purge]** 过部署向导中的窗口)。 在执行实例上，此期间必须与要计算类型规则（滑动期）和合格规则所需的历史深度相对应。
+必须在每个实例上配置数据保留持续时间（通过部署向导中的&#x200B;**[!UICONTROL Data purge]**&#x200B;窗口）。 在执行实例上，此期间必须与要计算类型规则（滑动期）和合格规则所需的历史深度相对应。
 
 控制实例:
 
@@ -76,8 +76,8 @@ ht-degree: 1%
    * 选择 **[!UICONTROL Execution instance]**。
    * 勾选 **[!UICONTROL Enabled]** 选项。
    * 完成执行实例的连接参数。
-   * 每个执行实例都必须链接到ID。 单击该按钮时，将分配此 **[!UICONTROL Initialize connection]** ID。
-   * 检查所使用的应用程序类型： **[!UICONTROL Message Center]**、 **[!UICONTROL Interaction]**&#x200B;或两者。
+   * 每个执行实例都必须链接到ID。 单击&#x200B;**[!UICONTROL Initialize connection]**&#x200B;按钮时，将分配此ID。
+   * 检查所使用的应用程序类型：**[!UICONTROL Message Center]**、**[!UICONTROL Interaction]**&#x200B;或两者。
    * 输入所使用的联合数据访问帐户。 必须在执行实例上创建运算符，并且必须对该实例的数据库具有以下读写权限：
 
       ```
@@ -99,11 +99,11 @@ ht-degree: 1%
       >
       >如果遇到错误，可以查阅同步工作流和优惠通知。 这些内容可在应用程序的技术工作流中找到。
 
-如果出于优化原因，仅部分营销模式库在执行实例上重复，则可以指定链接到环境的受限，以允许用户仅使用执行实例上可用的数据。 您可以使用优惠中不可用的数据创建执行实例。 为此，您必须通过限制出站渠道（字段）上的此规则来取消激活其他渠道上&#x200B;**[!UICONTROL Taken into account if]** 的规则。
+如果出于优化原因，仅部分营销模式库在执行实例上重复，则可以指定链接到环境的受限，以允许用户仅使用执行实例上可用的数据。 您可以使用优惠中不可用的数据创建执行实例。 为此，您必须通过限制出站渠道（**[!UICONTROL Taken into account if]**&#x200B;字段）上的此规则来取消激活其他渠道上的规则。
 
 ![](assets/ita_filtering.png)
 
-## 维护选项 {#maintenance-options}
+## 维护选项{#maintenance-options}
 
 以下是列表上提供的维护选项：
 
@@ -119,7 +119,7 @@ ht-degree: 1%
 
 **NmsExecutionInstanceId**:选项。
 
-## 包安装 {#packages-installation}
+## 包安装{#packages-installation}
 
 如果您的实例之前没有交互包，则无需迁移。 默认情况下，命题表将在安装软件包后以64位为单位。
 
@@ -166,7 +166,7 @@ ALTER TABLE nmspropositionrcp
 
 ### Oracle {#oracle}
 
-编辑Number类 **型的** 大小不会导致值或索引被重写。 因此，它是立竿见影的。
+编辑&#x200B;**Number**&#x200B;类型的大小不会导致值或索引被重写。 因此，它是立竿见影的。
 
 要执行的查询如下：
 
