@@ -21,9 +21,9 @@ Adobe Campaign提供了多个连接器，允许您与外部应用程序通信、
 
 这些连接器包括：
 
-* 联合数据访问连&#x200B;**接器**(联合数据访问)允许您将活动连接到一个或多个外部数据库并处理存储在这些数据库中的信息，而不会影响活动数据。 [了解详情](../../installation/using/about-fda.md)。
+* 联合数据访问连接器(**联合数据访问**)使您能够将活动连接到一个或多个外部数据库并处理存储在这些数据库中的信息，而不会影响活动数据。 [了解详情](../../installation/using/about-fda.md)。
 * CRM连接器允许Adobe Campaign与CRM解决方案之间使用专用工作流活动交换数据。 [了解详情](../../platform/using/crm-connectors.md)。
-* Analytics Data Connectors(曾经是 **Adobe Genesis**)使您能够在Adobe Campaign和Adobe Analytics之间共享数据。 [了解详情](../../platform/using/adobe-analytics-data-connector.md)。
+* Analytics Data Connectors(**Adobe Genesis**)使您能够在Adobe Campaign和Adobe Analytics之间共享数据。 [了解详情](../../platform/using/adobe-analytics-data-connector.md)。
 
 您还可以将活动与多个其他系统集成，例如：
 
@@ -33,5 +33,5 @@ Adobe Campaign提供了多个连接器，允许您与外部应用程序通信、
 
 >[!NOTE]
 >
->这些模块的可用性及其使用取决于您的安装部署类型。 请参阅 [活动本地——托管功能矩阵](../../installation/using/capability-matrix.md)。
+>这些模块的可用性及其使用取决于您的安装部署类型。 请参阅[活动本地——托管功能矩阵](../../installation/using/capability-matrix.md)。
 
