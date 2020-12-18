@@ -15,7 +15,7 @@ ht-degree: 31%
 ---
 
 
-# About Adobe ID{#about-adobe-id}
+# 关于Adobe ID{#about-adobe-id}
 
 活动用户可以使用其Adobe ID连接到Adobe Campaign控制台。 该集成具有以下优势︰
 
@@ -24,7 +24,7 @@ ht-degree: 31%
 * 密码管理策略更安全。
 * 使用联合 ID 帐户（外部 ID 提供商）。
 
-AdobeIdentity Management系统(IMS)帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的AdobeID的详细信息，请参 [阅本页](https://helpx.adobe.com/enterprise/using/identity.html)。
+AdobeIdentity Management系统(IMS)帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的AdobeID的详细信息，请参阅[此页](https://helpx.adobe.com/enterprise/using/identity.html)。
 
 >[!IMPORTANT]
 >
