@@ -15,11 +15,11 @@ ht-degree: 0%
 ---
 
 
-# About Adobe Experience Manager{#about-adobe-experience-manager}
+# 关于Adobe Experience Manager{#about-adobe-experience-manager}
 
 Adobe Campaign与Adobe Experience Manager的集成使您能够直接在Adobe Experience Manager管理电子邮件投放的内容和表单。
 
-您还可以在以Adobe Campaign编辑电子邮件或登陆页时直接插入AEM Assets图书馆的资源。 此功能在“资产”一 [章中详](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md) 细介绍。
+您还可以在以Adobe Campaign编辑电子邮件或登陆页时直接插入AEM Assets图书馆的资源。 此功能在[资产](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md)一章中有详细介绍。
 
 这意味着您可以充分利用AEM内容编辑功能以及Adobe Campaign的投放能力。
 
@@ -27,8 +27,8 @@ Adobe Campaign与Adobe Experience Manager的集成使您能够直接在Adobe Exp
 
 您必须具有以下元素：
 
-* 一个Adobe Experience Manager **创作** 实例。
-* Adobe Experience Manager **出版** 实例。
+* Adobe Experience Manager **创作**&#x200B;实例。
+* Adobe Experience Manager **publishing**&#x200B;实例。
 * Adobe Campaign实例。
 
 Adobe Campaign与Adobe Experience Manager6.1、6.2、6.3、6.4和6.5兼容。以下各节概述了整合情况。
