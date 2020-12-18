@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # 选择目标映射{#selecting-a-target-mapping}
 
-默认情况下，投放模板目标 **[!UICONTROL Recipients]**。 因此，其目标映射使用nms: **收件人表的字段** 。 Adobe Campaign优惠其他目标映射以供投放根据您的需求使用。
+默认情况下，投放模板目标&#x200B;**[!UICONTROL Recipients]**。 因此，目标映射使用&#x200B;**nms:收件人**&#x200B;表的字段。 Adobe Campaign优惠其他目标映射以供投放根据您的需求使用。
 
 ![](assets/delivery_select_mapping.png)
 
@@ -35,4 +35,4 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->您还可以创建新目标映射。 此操作为专家用户保留。 For more information, refer to the [Configuration guide](../../configuration/using/target-mapping.md).
+>您还可以创建新目标映射。 此操作为专家用户保留。 有关详细信息，请参阅[配置指南](../../configuration/using/target-mapping.md)。
