@@ -17,11 +17,11 @@ ht-degree: 2%
 
 # 定义 Web 窗体布局{#defining-web-forms-layout}
 
-## 创建容器 {#creating-containers}
+## 创建容器{#creating-containers}
 
 容器允许您组合页面的字段并配置其布局；来组织页面中的元素。
 
-对于表单的每个页面，容器通过工具栏 **[!UICONTROL Containers]** 的按钮创建。
+对于表单的每页，通过工具栏的&#x200B;**[!UICONTROL Containers]**&#x200B;按钮创建容器。
 
 ![](assets/s_ncs_admin_survey_containers_add.png)
 
@@ -31,17 +31,17 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_containers_std_arbo.png)
 
-标签的位置将应用于层次结构中容器下方的元素。 如有必要，可以为每个元素重载。 添加或删除列以更改布局。 请参 [阅定位页面上的字段](#positioning-the-fields-on-the-page)。
+标签的位置将应用于层次结构中容器下方的元素。 如有必要，可以为每个元素重载。 添加或删除列以更改布局。 请参阅[定位页面](#positioning-the-fields-on-the-page)上的字段。
 
 在上例中，渲染将如下所示：
 
 ![](assets/s_ncs_admin_survey_containers_std_ex.png)
 
-## 在页面上定位字段 {#positioning-the-fields-on-the-page}
+## 在页面{#positioning-the-fields-on-the-page}上放置字段
 
 Web表单的布局是在每个容器中逐页定义的，如果需要，可以重载。
 
-页面分为多列：每个页面都包含一定数量的列。 页面的每个字段都占 **用n个单** 元格。 容器还占用一定数量的列，而它们包含的字段占用一定数量的单元格。
+页面分为多列：每个页面都包含一定数量的列。 页面的每个字段都占用&#x200B;**n**&#x200B;单元格。 容器还占用一定数量的列，而它们包含的字段占用一定数量的单元格。
 
 默认情况下，页面构建在单个列上，每个元素占用一个单元格。 这意味着字段在另一个下方显示，每个字段占据一行，如下所示：
 
@@ -69,21 +69,21 @@ Web表单的布局是在每个容器中逐页定义的，如果需要，可以�
 
 ![](assets/s_ncs_admin_survey_container_ex2_rend.png)
 
-标题和列表分别占用一个单元格(因此占用容器的整行)，复选框延伸到两个单元格上。 根据字段的类型，在选项卡或选项卡 **[!UICONTROL General]** 中定义属 **[!UICONTROL Advanced]** 于输入字段的单元格数：
+标题和列表分别占用一个单元格(因此占用容器的整行)，复选框延伸到两个单元格上。 根据字段的类型，在&#x200B;**[!UICONTROL General]**&#x200B;选项卡或&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中定义属于输入字段的单元格数：
 
 ![](assets/s_ncs_admin_survey_container_ex2.png)
 
-## 定义标签的位置 {#defining-the-position-of-labels}
+## 定义标签{#defining-the-position-of-labels}的位置
 
 您可以定义表单中字段和标签的对齐方式。
 
 默认情况下，页面的字段和其他内容的显示参数从表单的常规配置、页面配置或父容器的配置（如果存在）继承。
 
-整个表单的全局显示参数在表单属性框中指定。 在选 **[!UICONTROL Rendering]** 项卡中，您可以选择标签的位置。
+整个表单的全局显示参数在表单属性框中指定。 使用&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡可以选择标签的位置。
 
 ![](assets/s_ncs_admin_survey_label_position.png)
 
-此位置可以通过选项卡为每页、每个容器和每个字段重载。 **[!UICONTROL Advanced]**
+通过&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡，可以为每个页面、每个容器和每个字段重载此位置。
 
 支持以下对齐方式：
 
