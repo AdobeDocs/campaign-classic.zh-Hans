@@ -19,11 +19,11 @@ ht-degree: 2%
 
 以下是关于在Adobe Campaign中使用输入表单的一些一般原则。
 
-Forms详 [细介绍](../../configuration/using/identifying-a-form.md)。
+Forms详见[本节](../../configuration/using/identifying-a-form.md)。
 
 ## 窗体结构 {#form-structure}
 
-输入表单的XML文档必须包含 **`<form>`** 根元素，其 **名称****和命名空间属** 性，以分别填充表单名称及其命名空间。
+输入表单的XML文档必须包含&#x200B;**`<form>`**&#x200B;根元素，其中&#x200B;**name**&#x200B;和&#x200B;**命名空间**&#x200B;属性分别用于填充表单名称及其命名空间。
 
 ```
 <form name="form_name" namespace="name_space">
@@ -31,7 +31,7 @@ Forms详 [细介绍](../../configuration/using/identifying-a-form.md)。
 </form>
 ```
 
-默认情况下，表单与具有相同名称和模式的数据命名空间关联。 要将表单与其他名称关联，请在元素的entity- **模式属性中** ，输入模式 **`<form>`** 键。
+默认情况下，表单与具有相同名称和模式的数据命名空间关联。 要将表单与其他名称关联，请在&#x200B;**`<form>`**&#x200B;元素的&#x200B;**entity-模式**&#x200B;属性中输入模式键。
 
 为了说明输入表单的结构，我们根据示例模式“cus:book”描述了一个接口：
 
@@ -47,9 +47,9 @@ Forms详 [细介绍](../../configuration/using/identifying-a-form.md)。
 </form>
 ```
 
-编辑元素的描述以根元素开 **`<form>`** 头。
+编辑元素的描述以&#x200B;**`<form>`**&#x200B;根元素开头。
 
-在元素中输入编辑控 **`<input>`** 件，该元 **素的xpath** 属性在其模式中包含字段的路径。
+在&#x200B;**`<input>`**&#x200B;元素中输入编辑控件，该元素具有&#x200B;**xpath**&#x200B;属性，该属性包含字段在其模式中的路径。
 
 **提醒您有关XPath语法：**
 
@@ -71,7 +71,7 @@ XPath是一种语法，它允许您在XML文档的树中找到节点。
 
 >[!CAUTION]
 >
->输入表单必须引用元 **素上的type** =&quot;contentForm&quot; **`<form>`** 属性，以自动添加要输入内容所需的框架。
+>输入表单必须引用&#x200B;**`<form>`**&#x200B;元素上的&#x200B;**type=&quot;contentForm&quot;**&#x200B;属性，以自动添加要输入内容所需的帧。
 
 ## 格式化 {#formatting}
 
@@ -79,11 +79,11 @@ XPath是一种语法，它允许您在XML文档的树中找到节点。
 
 如需详细信息，请参阅[此部分](../../configuration/using/form-structure.md#formatting)。
 
-## 列表类型控件 {#list-type-controls}
+## 列表类型控件{#list-type-controls}
 
 要编辑集合元素，必须使用列表类型控件。
 
-### 列列表 {#column-list}
+### 列列表{#column-list}
 
 此控件显示可编辑的列列表，其工具栏包含“添加”和“删除”按钮。
 
@@ -96,13 +96,13 @@ XPath是一种语法，它允许您在XML文档的树中找到节点。
 </input>
 ```
 
-列表控件必须用type=&quot; **列表&quot;属性填充** ,列表的路径必须引用集合元素。
+列表控件必须填入&#x200B;**type=&quot;列表&quot;**&#x200B;属性，列表的路径必须引用集合元素。
 
-列由列表的子 **`<input>`** 元素声明。
+列由列表的子&#x200B;**`<input>`**&#x200B;元素声明。
 
 >[!NOTE]
 >
->当数据模式中的集合元素完成 **ordered=&quot;true** &quot;属性时，会自动添加向上和向下排序箭头。
+>当数据模式中的集合元素完成&#x200B;**ordered=&quot;true&quot;**&#x200B;属性时，将自动添加向上和向下排序箭头。
 
 默认情况下，工具栏按钮垂直对齐。 还可以水平对齐它们：
 
@@ -115,13 +115,13 @@ XPath是一种语法，它允许您在XML文档的树中找到节点。
 </input>
 ```
 
-工 **具栏** “题注”属性强制工具栏的水平对齐，并填充列表上方的标题。
+**toolbarCaption**&#x200B;属性强制工具栏的水平对齐并填充列表上方的标题。
 
 >[!NOTE]
 >
->对于不要在控件左侧显示的集合元素标签，请添 **加nolabel=&quot;true&quot;属性** 。
+>对于不显示在控件左侧的集合元素标签，添加&#x200B;**nolabel=&quot;true&quot;**&#x200B;属性。
 
-#### 放大列表 {#zoom-in-a-list}
+#### 放大列表{#zoom-in-a-list}
 
 列表数据的插入和编辑可以在单独的编辑表单中执行。
 
@@ -146,15 +146,15 @@ XPath是一种语法，它允许您在XML文档的树中找到节点。
 </input>
 ```
 
-编辑表单的定义通过列表元素 **`<form>`** 下的元素指定。 其结构与输入形式的结构相同。
+编辑表单的定义通过列表元素下的&#x200B;**`<form>`**&#x200B;元素指定。 其结构与输入形式的结构相同。
 
-在 **[!UICONTROL Detail]** 列表定义中输 **入zoom=&quot;true** &quot;属性时，会自动添加按钮。 这样，您就可以在所选行上打开编辑表单。
+在列表定义中输入&#x200B;**zoom=&quot;true&quot;**&#x200B;属性时，会自动添加&#x200B;**[!UICONTROL Detail]**&#x200B;按钮。 这样，您就可以在所选行上打开编辑表单。
 
 >[!NOTE]
 >
->添加 **zoomOnAdd=&quot;true** &quot;属性会强制在插入列表元素时调用编辑表单。
+>添加&#x200B;**zoomOnAdd=&quot;true&quot;**&#x200B;属性会强制在插入列表元素时调用编辑表单。
 
-### 选项卡列表 {#tab-list}
+### 选项卡列表{#tab-list}
 
 此列表以选项卡的形式显示集合元素的编辑。
 
@@ -170,23 +170,23 @@ XPath是一种语法，它允许您在XML文档的树中找到节点。
 </container>
 ```
 
-列表控件必须用type=&quot; **notebooklist&quot;属性填充** ,列表的路径必须引用集合元素。
+列表控件必须填入&#x200B;**type=&quot;notebooklist&quot;**&#x200B;属性，列表的路径必须引用集合元素。
 
-选项卡的标题包含通过xpath-label属性输 **入的数据的值** 。
+选项卡的标题包含通过&#x200B;**xpath-label**&#x200B;属性输入的数据值。
 
-编辑控件必须在列表控 **`<container>`** 件的子元素下声明。
+编辑控件必须在&#x200B;**`<container>`**&#x200B;元素下声明，该元素是列表控件的子项。
 
 使用工具栏按钮可添加或删除列表元素。
 
 >[!NOTE]
 >
->为数据模式中的集合元素填充 **ordered=&quot;true** &quot;属性时，将自动添加左右排序箭头。
+>为数据模式中的集合元素填充&#x200B;**ordered=&quot;true&quot;**&#x200B;属性时，将自动添加左右排序箭头。
 
-## 容器 {#containers}
+## 容器{#containers}
 
-容器允许您对一组控件进行分组。 它们通过元素存 **`<container>`** 在。 它们已用于设置多列中的控件的格式以及选项卡列表的控件。
+容器允许您对一组控件进行分组。 它们通过&#x200B;**`<container>`**&#x200B;元素存在。 它们已用于设置多列中的控件的格式以及选项卡列表的控件。
 
-有关容器以及如何在输入表单中使用它们的更多信息，请参 [阅本节](../../configuration/using/form-structure.md#containers)。
+有关容器以及如何在输入表单中使用它们的详细信息，请参阅[本节](../../configuration/using/form-structure.md#containers)。
 
 ## 编辑窗体 {#editing-forms}
 
@@ -194,6 +194,6 @@ XPath是一种语法，它允许您在XML文档的树中找到节点。
 
 ![](assets/d_ncs_content_form12.png)
 
-在选 **[!UICONTROL Preview]** 项卡中，您可以视图输入表单：
+使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡可以视图输入表单：
 
 ![](assets/d_ncs_content_form13.png)
