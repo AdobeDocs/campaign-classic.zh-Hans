@@ -23,6 +23,6 @@ ht-degree: 8%
 
 要从投放中选择非相邻列表，请在进行选择时按住CTRL键。
 
-要选择保存在其他文件夹中的投放，请 **[!UICONTROL Display sub-levels]** 单击（可通过工具栏访问）。 然后，它们将以同一列表显示。
+要选择保存在其他文件夹中的投放，请单击&#x200B;**[!UICONTROL Display sub-levels]**（可通过工具栏访问）。 然后，它们将以同一列表显示。
 
 ![](assets/s_ncs_user_display_children_icon.png)
