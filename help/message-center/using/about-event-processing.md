@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 关于事件处理{#about-event-processing}
 
-在事务消息的上下文中，事件由外部信息系统生成，并通过所述和方法被发 **[!UICONTROL PushEvent]** 送 **[!UICONTROL PushEvents]** 给Adobe Campaign(参 [阅事件说明](../../message-center/using/event-description.md))。 它包含链接到事件的数据，如其类型（例如，在网站上订购确认或创建帐户）、电子邮件地址或移动号码，以及其他信息，这些信息允许您在投放前丰富和个性化事务性消息。 这可以是客户联系信息、消息语言或电子邮件格式。
+在事务消息的上下文中，由外部信息系统生成事件，并通过&#x200B;**[!UICONTROL PushEvent]**&#x200B;和&#x200B;**[!UICONTROL PushEvents]**&#x200B;方法发送Adobe Campaign(参见[事件描述](../../message-center/using/event-description.md))。 它包含链接到事件的数据，如其类型（例如，在网站上订购确认或创建帐户）、电子邮件地址或移动号码，以及其他信息，这些信息允许您在投放前丰富和个性化事务性消息。 这可以是客户联系信息、消息语言或电子邮件格式。
 
 事件数据示例：
 
@@ -31,16 +31,16 @@ ht-degree: 3%
 1. 投放执行,
 1. 链接投放失败的事件的回收(此步骤可通过Adobe Campaign工作流执行)。
 
-## 事件状态 {#event-statuses}
+## 事件状态{#event-statuses}
 
-事件 **历史记录**(位于 **[!UICONTROL Message Center]** >下)将 **[!UICONTROL Event history]** 所有已处理事件分组为一个视图。 它们可以按事件类型或状态 **分类**。 以下状态为：
+**事件历史记录**&#x200B;位于&#x200B;**[!UICONTROL Message Center]** > **[!UICONTROL Event history]**&#x200B;下，将所有已处理的事件分组为一个视图。 它们可以按事件类型或&#x200B;**status**&#x200B;分类。 以下状态为：
 
 * **待定**:即事件可能是：
 
-   * 刚刚收集但尚未处理的事件。 列 **[!UICONTROL Number of errors]** 显示值0。 电子邮件模板尚未链接。
-   * 已处理事件，但其确认错误。 列 **[!UICONTROL Number of errors]** 显示的值不是0。 要了解何时将再次处理此事件，请查阅 **[!UICONTROL Process requested on]** 列。
+   * 刚刚收集但尚未处理的事件。 **[!UICONTROL Number of errors]**&#x200B;列显示值0。 电子邮件模板尚未链接。
+   * 已处理事件，但其确认错误。 **[!UICONTROL Number of errors]**&#x200B;列显示的值不是0。 要了解何时再次处理此事件，请查阅&#x200B;**[!UICONTROL Process requested on]**&#x200B;列。
 
-* **待处理投放**:已处理事件并且投放模板已链接。 电子邮件正在挂起投放，且已应用经典投放流程。 有关详细信息，您可以打开投放。 请参阅 [投放](../../delivery/using/about-message-tracking.md)。
-* **已发送**、已 **忽略** 和 **投放错误**:这些投放状态通过updateEventsStatus工 **作流进行** 恢复。 有关详细信息，您可以打开相关投放。
-* **事件未涵盖**:消息中心路由阶段失败。 例如，Adobe Campaign找不到充当事件模板的电子邮件。
-* **事件已过期**:已达到发送尝试的最大数量。 该事件被视为null。
+* **待处理投放**:已处理事件并且投放模板已链接。电子邮件正在挂起投放，且已应用经典投放流程。 有关详细信息，您可以打开投放。 请参阅[投放](../../delivery/using/about-message-tracking.md)。
+* **已发送**，忽 **** 略和 **投放错误**:这些投放状态通过updateEventsStatus工作 **** 流恢复。有关详细信息，您可以打开相关投放。
+* **事件未涵盖**:消息中心路由阶段失败。例如，Adobe Campaign找不到充当事件模板的电子邮件。
+* **事件已过期**:已达到发送尝试的最大数量。该事件被视为null。
