@@ -29,15 +29,15 @@ Adobe建议使用JavaScript集成方法。
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
 ```
 
-“env ****”参数接收专用于匿名交互的实时环境的内部名称。
+“**env**”参数接收专用于匿名交互的实时环境的内部名称。
 
 要演示优惠，我们需要创建Adobe Campaign和优惠空间，然后配置HTML页。
 
 以下用例详细说明了通过JavaScript集成优惠的可能选项。
 
-## HTML模式 {#html-mode}
+## HTML模式{#html-mode}
 
-### 呈现匿名优惠 {#presenting-an-anonymous-offer}
+### 呈现匿名优惠{#presenting-an-anonymous-offer}
 
 1. **准备交互引擎**
 
@@ -51,7 +51,8 @@ Adobe建议使用JavaScript集成方法。
 
    HTML页面必须包含
 
-   具有@id属性的元素，其值为已创建优惠空间的内部名称(“i_internal name space”)。 优惠将通过“交互”插入到此元素中。
+   具有@id属性的元素，其值为已创建优惠空间的内部名称(“i_internal name space”)。 优惠将插入此
+元素。
 
    在我们的示例中，@id属性接收“i_SPC12”值，其中“SPC12”是先前创建的优惠空间的内部名称：
 
@@ -67,7 +68,7 @@ Adobe建议使用JavaScript集成方法。
 
    >[!IMPORTANT]
    >
-   >标 `<script>` 签不能自行关闭。
+   >`<script>`标记不能自行关闭。
 
    此静态调用将自动生成包含交互引擎所需的所有参数的动态调用。
 
@@ -99,9 +100,9 @@ Adobe建议使用JavaScript集成方法。
    </div>
    ```
 
-### 呈现已识别的优惠 {#presenting-an-identified-offer}
+### 呈现已识别的优惠{#presenting-an-identified-offer}
 
-要向已识别的联系人提供优惠，该过程与此处详述的过程类似： [呈现匿名优惠](#presenting-an-anonymous-offer)。 在网页内容中，您需要添加以下脚本，以在调用引擎时识别联系人：
+要向已识别的联系人提供优惠，该过程与此处详述的过程类似：[呈现匿名优惠](#presenting-an-anonymous-offer)。 在网页内容中，您需要添加以下脚本，以在调用引擎时识别联系人：
 
 ```
 <script type="text/javascript">
@@ -109,7 +110,7 @@ Adobe建议使用JavaScript集成方法。
 </script>
 ```
 
-1. 转至网页将调用的优惠空间，单击并添 **[!UICONTROL Advanced parameters]** 加一个或多个标识键。
+1. 转到将由网页调用的优惠空间，单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;并添加一个或多个标识键。
 
    ![](assets/interaction_htmlmode_001.png)
 
@@ -125,21 +126,21 @@ Adobe建议使用JavaScript集成方法。
    </script>
    ```
 
-### 使用HTML渲染功能 {#using-an-html-rendering-function}
+### 使用HTML渲染函数{#using-an-html-rendering-function}
 
 要自动生成HTML优惠呈现，您可以使用渲染函数。
 
-1. 转到优惠空间并单击链 **[!UICONTROL Edit functions]** 接。
+1. 转到优惠空间并单击&#x200B;**[!UICONTROL Edit functions]**&#x200B;链接。
 1. 选择 **[!UICONTROL Overload the HTML rendering function]**。
-1. 转到选项 **[!UICONTROL HTML rendering]** 卡，并插入与为优惠内容定义的字段相匹配的变量。
+1. 转至&#x200B;**[!UICONTROL HTML rendering]**&#x200B;选项卡，并插入与为优惠内容定义的字段相匹配的变量。
 
    ![](assets/interaction_htmlmode_002.png)
 
    在此示例中，优惠以网页中横幅的形式显示，由可单击的图像和与优惠内容中定义的字段相匹配的标题组成。
 
-## XML模式 {#xml-mode}
+## XML模式{#xml-mode}
 
-### 展示优惠 {#presenting-an-offer}
+### 呈现优惠{#presenting-an-offer}
 
 交互允许您将XML节点返回到调用优惠引擎的HTML页。 此XML节点可由客户端开发的函数进行处理。
 
@@ -149,17 +150,17 @@ Adobe建议使用JavaScript集成方法。
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
 ```
 
-“env ****”参数接收实时环境的内部名称。
+“**env**”参数接收实时环境的内部名称。
 
-“cb ****”参数接收将读取引擎返回的包含（回调）命题的XML节点的函数名称。 此参数是可选的。
+“**cb**”参数接收将读取由包含（回调）命题的引擎返回的XML节点的函数名称。 此参数是可选的。
 
-“t ****”参数接收目标值，仅用于标识的交互。 此参数也可以与interactionTarget变 **量一起** 传递。 此参数是可选的。
+“**t**”参数接收目标的值，仅用于标识的交互。 此参数也可以与&#x200B;**interactionTarget**&#x200B;变量一起传递。 此参数是可选的。
 
-“**c**”参数接收类别的内部名称的列表。 此参数是可选的。
+“**c**”参数接收列表的内部名称的类别。 此参数是可选的。
 
-“th ****”参数接收主题。 此参数是可选的。
+“**th**”参数接收主题的列表。 此参数是可选的。
 
-“gctx ****”参数接收整个页面的全局调用数据（上下文）。 此参数是可选的。
+“**gctx**”参数接收整个页面的全局调用数据（上下文）。 此参数是可选的。
 
 返回的XML节点如下所示：
 
@@ -176,15 +177,15 @@ Adobe建议使用JavaScript集成方法。
 
 1. **创建环境和优惠空间**
 
-   有关创建环境的详细信息，请参 [阅实时／设计环境](../../interaction/using/live-design-environments.md)。
+   有关创建环境的详细信息，请参阅[Live/Design环境](../../interaction/using/live-design-environments.md)。
 
-   有关创建优惠空间的详细信息，请参阅 [创建优惠空间](../../interaction/using/creating-offer-spaces.md)。
+   有关创建优惠空间的详细信息，请参阅[创建优惠空间](../../interaction/using/creating-offer-spaces.md)。
 
 1. **扩展优惠模式以添加新字段**
 
    此模式将定义以下字段：标题2和价格。
 
-   示例中模式的名称为 **cus:优惠**
+   示例中模式的名称为&#x200B;**cus:优惠**
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
@@ -221,7 +222,7 @@ Adobe建议使用JavaScript集成方法。
 
 1. **扩展优惠公式以编辑新字段和修改现有字段**
 
-   编辑 **优惠(nsm)** 输入表单。
+   编辑&#x200B;**优惠(nsm)**&#x200B;输入表单。
 
    在“视图”部分，插入包含以下内容的两个新字段：
 
@@ -261,17 +262,17 @@ Adobe建议使用JavaScript集成方法。
 
    >[!IMPORTANT]
    >
-   >()表单的字 `<input>`段必须指向在创建的模式中定义的CDATA类型元素。
+   >(`<input>`)表单的字段必须指向在创建的模式中定义的CDATA类型元素。
 
    优惠呈现表单中的呈现如下所示：
 
    ![](assets/interaction_xmlmode_form.png)
 
-   已 **[!UICONTROL Title 2]** 添加 **[!UICONTROL Price]** 和字段，且不再 **[!UICONTROL Destination URL]** 显示该字段。
+   已添加&#x200B;**[!UICONTROL Title 2]**&#x200B;和&#x200B;**[!UICONTROL Price]**&#x200B;字段，且不再显示&#x200B;**[!UICONTROL Destination URL]**&#x200B;字段。
 
 1. **创建优惠**
 
-   有关创建优惠的详细信息，请 [参阅创建优惠](../../interaction/using/creating-an-offer.md)。
+   有关创建优惠的详细信息，请参阅[创建优惠](../../interaction/using/creating-an-offer.md)。
 
    在以下用例中，优惠按如下方式输入：
 
@@ -286,9 +287,9 @@ Adobe建议使用JavaScript集成方法。
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
    ```
 
-   “env ****”参数的值是实时环境的内部名称。
+   “**env**”参数的值是活动环境的内部名称。
 
-   “cb ****”参数的值是需要解释引擎返回的XML节点的函数名称。 在我们的示例中，调用的函数打开一个模态窗口(alert()函数)。
+   “**cb**”参数的值是需要解释引擎返回的XML节点的函数名称。 在我们的示例中，调用的函数打开一个模态窗口(alert()函数)。
 
    交互引擎返回的XML节点如下所示：
 
@@ -308,13 +309,13 @@ Adobe建议使用JavaScript集成方法。
    </propositions>
    ```
 
-### 使用渲染函数 {#using-a-rendering-function-}
+### 使用渲染函数{#using-a-rendering-function-}
 
 可以使用XML渲染功能创建优惠演示文稿。 此函数将修改在调用引擎期间返回到HTML页面的XML节点。
 
-1. 转到优惠空间并单击链 **[!UICONTROL Edit functions]** 接。
+1. 转到优惠空间并单击&#x200B;**[!UICONTROL Edit functions]**&#x200B;链接。
 1. 选择 **[!UICONTROL Overload the XML rendering function]**。
-1. 转到选项卡 **[!UICONTROL XML rendering]** 并插入所需的函数。
+1. 转到&#x200B;**[!UICONTROL XML rendering]**&#x200B;选项卡并插入所需的函数。
 
    该函数可以如下所示：
 
