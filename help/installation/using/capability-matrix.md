@@ -21,9 +21,9 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 
 本页显示了托管(Managed Services)和内部部署之间的主要区别。 混合部署的具体性取决于由Adobe托管并托管在您所在地的元素。
 
-本节介绍不同的 [托管模型](../../installation/using/hosting-models.md)。
+本节[介绍了不同的托管模型。](../../installation/using/hosting-models.md)
 
-## 每个部署模型的可用性 {#capability-matrix}
+## 每个部署型号{#capability-matrix}的可用性
 
 | 功能 | 托管 | 混合 | 内部部署 | 详细信息 |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -41,13 +41,13 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 | 配置LDAP身份验证 | 不可用 | 可用 | 可用 | [了解详情](../../installation/using/connecting-through-ldap.md) |
 
 
-## Federated Data Access{#fda}
+## 联合数据访问{#fda}
 
-Adobe Campaign provides the **Federated Data Access** (FDA) option in order to process information stored in one or more external databases: you can access external data without changing the structure of Adobe Campaign data. [了解详情](../../installation/using/about-fda.md)
+Adobe Campaign提供&#x200B;**联合数据访问**(联合数据访问)选项，以便处理存储在一个或多个外部数据库中的信息：您可以访问外部数据，而无需更改Adobe Campaign数据的结构。 [了解详情](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->通过联合数据访问访问外部数据库仅可用于内部安装或混合安装，Snowflake连接器 [除外](../../installation/using/configure-fda-snowflake.md)。
+>通过联合数据访问访问外部Snowflake库只能用于内部或混合安装，但使用[连接器](../../installation/using/configure-fda-snowflake.md)除外。
 
 
 **另请参阅**
