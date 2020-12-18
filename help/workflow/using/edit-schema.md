@@ -17,13 +17,13 @@ ht-degree: 3%
 
 # 编辑模式{#edit-schema}
 
-数据可以使用活动进行转换、标准化，并在必要时在工作流中进行丰 **[!UICONTROL Edit schema]** 富。 它通常用于标准化数据结构：您可以重命名输出列或修改其内容，例如，计算字段或聚合的平均值。
+数据可以使用&#x200B;**[!UICONTROL Edit schema]**&#x200B;活动进行转换、标准化，并在必要时在工作流中进行丰富。 它通常用于标准化数据结构：您可以重命名输出列或修改其内容，例如，计算字段或聚合的平均值。
 
 此活动不会更改工作表中的数据，只更改其模式，即数据的逻辑视图。
 
 ![](assets/wf_manipulation_box.png)
 
-您还可以通过选项卡创建与其他工作表的 **[!UICONTROL Links]** 连接。
+还可以通过&#x200B;**[!UICONTROL Links]**&#x200B;选项卡创建与其他工作表的连接。
 
 ![](assets/wf_manipulation_box_link_tab.png)
 
