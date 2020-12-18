@@ -17,13 +17,13 @@ ht-degree: 10%
 
 # 模拟跟踪{#simulation-tracking}
 
-模拟完成后，您可以通过添加到模拟窗口的选 **[!UICONTROL Results]** 项卡和报告(在模拟仪表板 **[!UICONTROL Breakdown of offers by rank]** 中可以通过)分析其结果。
+模拟完成后，您可以通过添加到模拟窗口的&#x200B;**[!UICONTROL Results]**&#x200B;选项卡和&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;报告(可在模拟仪表板中访问)分析其结果。
 
 模拟结果包含按秩和按收件人的命题细分。 报告轴也会被考虑在内，并显示在此选项卡中。
 
 您可以保存这些结果，并根据需要导出它们，方法是创建一个描述性的结果分析。 为此，请在结果窗口中单击相应的链接。
 
-有关描述 [性分析](../../reporting/using/about-descriptive-analysis.md) 向导的更多信息，请参阅此部分。
+有关描述性分析向导的详细信息，请参阅[本节](../../reporting/using/about-descriptive-analysis.md)。
 
 ![](assets/offer_simulation_012.png)
 
