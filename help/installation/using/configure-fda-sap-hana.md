@@ -15,21 +15,21 @@ ht-degree: 0%
 ---
 
 
-# 配置访问SAP HANA {#configure-access-to-sap-hana}
+# 配置对SAP HANA{#configure-access-to-sap-hana}的访问
 
-使用活动 [联合数据访问](../../installation/using/about-fda.md) (联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置访问SAP HANA。
+使用活动[联合数据访问](../../installation/using/about-fda.md)(联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置访问SAP HANA。
 
-1. 配置 [SAP HANA数据库](#sap-config)
-1. 在SAP HANA中 [配置活动](#sap-external) 外部帐户
+1. 配置[SAP HANA数据库](#sap-config)
+1. 将SAP HANA[外部帐户](#sap-external)配置为活动
 
-## SAP HANA司机 {#sap-config}
+## SAP HANA驱动程序{#sap-config}
 
 在联合数据访问下连接到SAP HANA外部数据库需要在Adobe Campaign服务器上进行某些附加配置：
 
 1. 根据您使用的操作系统，为SAP HANA安装ODBC驱动程序：
 
-   * **适用于Linux的hdb_client_linux** .tgz。 解压后，启动hdbinst命令并按照说明完成驱动程序安装。
-   * **适用于Windows的hdb_client_windows** .zip。 解压缩文件并开始可执行文件： **hdbinst.exe**。 按照向导说明完成驱动程序的安装。
+   * **适用于Linux的hdb_client_linux.** tgz。解压后，启动hdbinst命令并按照说明完成驱动程序安装。
+   * **适用于Windows的hdb_client_windows.** zipp。解压缩文件并开始可执行文件：**hdbinst.exe**。 按照向导说明完成驱动程序的安装。
 
 1. 配置ODBC驱动程序。 配置可以在标准文件中执行：/etc/odbc.ini用于常规参数，/etc/odbcinst.ini用于声明驱动程序。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
       User:SYSTEM
       ```
 
-      &quot;InstallDir&quot;与odbcinst.ini文件的 **位置相对应** 。
+      &quot;InstallDir&quot;对应于&#x200B;**odbcinst.ini**&#x200B;文件的位置。
 
    * **/etc/odbcinst.ini**
 
@@ -64,11 +64,11 @@ ht-degree: 0%
 
 SAP HANA外部帐户允许您将活动实例连接到SAP HANA外部数据库。
 
-1. 在活动 **[!UICONTROL Explorer]**&#x200B;中， **[!UICONTROL Administration]** 单击“>” **[!UICONTROL Platform]** “>” **[!UICONTROL External accounts]**。
+1. 在活动&#x200B;**[!UICONTROL Explorer]**&#x200B;中，单击&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
-1. 单击 **[!UICONTROL New]** 并选 **[!UICONTROL External database]** 择为 **[!UICONTROL Type]**。
+1. 单击&#x200B;**[!UICONTROL New]**&#x200B;并选择&#x200B;**[!UICONTROL External database]**&#x200B;作为&#x200B;**[!UICONTROL Type]**。
 
-1. 要配置 **[!UICONTROL SAP Hana]** 外部帐户，必须指定：
+1. 要配置&#x200B;**[!UICONTROL SAP Hana]**&#x200B;外部帐户，必须指定：
 
    * **[!UICONTROL Type]**:SAP Hana
 
