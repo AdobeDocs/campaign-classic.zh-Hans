@@ -30,7 +30,7 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td> 导出 </td> 
-   <td> 执行导出过程<br /> </td> 
+   <td> 执行导出进程<br /> </td> 
    <td> 计划此导出的操作员需要重新启动它。 增量或完全重新启动。<br /> </td> 
   </tr> 
   <tr> 
@@ -56,7 +56,7 @@ ht-degree: 5%
   <tr> 
    <td> syslogd </td> 
    <td> 日志写入<br /> </td> 
-   <td> 如果日志文件中缺少某些日志，请检查以确保模块使用端口6666。 请参阅 <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">打开端口的列表</a>。<br /> </td> 
+   <td> 如果日志文件中缺少某些日志，请检查以确保模块使用端口6666。 请参阅<a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">打开端口的列表</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> 跟踪 </td> 
@@ -66,7 +66,7 @@ ht-degree: 5%
   <tr> 
    <td> 跟踪日志 </td> 
    <td> 跟踪日志写入和清除服务器<br /> </td> 
-   <td> 如果跟踪日志不再转发，且服务器上的文件中没有日志的痕迹，请检查此模块。 请参阅 <a href="../../production/using/tracking-logs-issues.md" target="_blank">跟踪日志问题</a>。<br /> </td> 
+   <td> 如果跟踪日志不再转发，且服务器上的文件中没有日志的痕迹，请检查此模块。 请参阅<a href="../../production/using/tracking-logs-issues.md" target="_blank">跟踪日志问题</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> 监视 </td> 
@@ -76,12 +76,12 @@ ht-degree: 5%
   <tr> 
    <td> web </td> 
    <td> 应用程序服务器（HTTP和SOAP）<br /> </td> 
-   <td> 如果控制台和Web连接不工作，请检查此模块并触发xtk: <strong>session类型错误</strong> 。<br /> </td> 
+   <td> 如果控制台和Web连接不工作并触发<strong>xtk:session</strong>类型错误<br />，请检查此模块 </td> 
   </tr> 
   <tr> 
    <td> wfserver </td> 
-   <td> 控制工作流实例执行。<br /> </td> 
-   <td> 如果遇到任何问题，请重新启动此模块。 如果需要，请应用该过程以提高日志精度部分中详 <a href="../../production/using/log-precision.md" target="_blank">述的日志</a> 精度。<br /> </td> 
+   <td> 控制工作流实例的执行。<br /> </td> 
+   <td> 如果遇到任何问题，请重新启动此模块。 如果需要，应用该过程以提高<a href="../../production/using/log-precision.md" target="_blank">日志精度</a>部分中详细描述的日志的精度。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
