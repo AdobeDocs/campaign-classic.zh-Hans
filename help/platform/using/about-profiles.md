@@ -45,45 +45,45 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->To find out how files and web forms are imported, refer to [Generic imports and exports](../../platform/using/generic-imports-and-exports.md).
+>要了解如何导入文件和Web表单，请参阅[通用导入和导出](../../platform/using/generic-imports-and-exports.md)。
 
 ## 用户档案和目标 {#profiles-and-targets}
 
-The **[!UICONTROL Profiles and targets]** link lets you display recipients stored in Adobe Campaign database. 您可以创建新的收件人、编辑现有的收件人以及访问其用户档案。有关详细信息，请参见[此页面](../../platform/using/editing-a-profile.md)。
+通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;链接可显示存储在Adobe Campaign库中的收件人。 您可以创建新的收件人、编辑现有的收件人以及访问其用户档案。有关详细信息，请参见[此页面](../../platform/using/editing-a-profile.md)。
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
 您还可以通过它访问：
 
-* 列表;请参 [阅创建和管理列表](../../platform/using/creating-and-managing-lists.md),
+* 列表;请参阅[创建和管理列表](../../platform/using/creating-and-managing-lists.md),
 * 订阅服务；请参阅[此页面](../../delivery/using/managing-subscriptions.md)，
 * web 应用程序；请参阅[此页面](../../web/using/about-web-applications.md)，
-* 进出口（就业）;请参阅 [通用导入和导出](../../platform/using/generic-imports-and-exports.md),
+* 进出口（就业）;请参阅[通用导入和导出](../../platform/using/generic-imports-and-exports.md),
 * 定位工作流；请参阅[此页面](../../workflow/using/building-a-workflow.md#implementation-steps-)。
 
 收件人页面允许您对用户档案执行常见的操作：编辑、更新、添加、删除、排序。
 
 如需更多高级用户档案操作，您需要编辑 Adobe Campaign 树状结构。为此可单击 Adobe Campaign 主页上的 **[!UICONTROL Explorer]** 链接。
 
-By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Recipients]** node of the tree. 您可通过此视图创建收件人，以及：
+默认情况下，收件人存储在树的&#x200B;**[!UICONTROL Profiles and Targets > Recipients]**&#x200B;节点中。 您可通过此视图创建收件人，以及：
 
-* sort and filter the profiles of the database; see [Filtering options](../../platform/using/filtering-options.md),
-* move, copy or delete profiles from the database; see [Managing profiles](../../platform/using/managing-profiles.md),
-* 更新用户档案;请参 [阅更新数据](../../platform/using/updating-data.md),
-* 出口收件人;请参 [阅导出和导入用户档案](../../platform/using/exporting-and-importing-profiles.md),
-* 创建收件人组；请参 [阅创建和管理列表](../../platform/using/creating-and-managing-lists.md)。
+* 对用户档案库进行排序和筛选；请参阅[筛选选项](../../platform/using/filtering-options.md),
+* 从用户档案库中移动、复制或删除数据；请参阅[管理用户档案](../../platform/using/managing-profiles.md),
+* 更新用户档案;请参阅[更新数据](../../platform/using/updating-data.md),
+* 出口收件人;请参阅[导出和导入用户档案](../../platform/using/exporting-and-importing-profiles.md),
+* 创建收件人组；请参阅[创建和管理列表](../../platform/using/creating-and-managing-lists.md)。
 
 要访问各种高级功能和配置，需单击 **[!UICONTROL Explorer]** 图标。
 
 ![](assets/d_ncs_user_interface01.png)
 
-“使用Adobe Campaign资源管理器”中显示Adobe Campaign资 [源管理器的常规布局](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)。
+[使用Adobe Campaign资源管理器](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)中显示Adobe Campaign资源管理器的常规布局。
 
 >[!NOTE]
 >
->也可以单击 **[!UICONTROL Profiles and targets > Recipients]** 链接，从 Adobe Campaign 树状结构中显示该列表的高级视图。可根据您的需求配置列表的显示。您可以添加或删除列、定义列顺序、对数据排序等。 列表显示配置在使用Adobe Campaign [资源管理器中有介绍](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)。
+>也可以单击 **[!UICONTROL Profiles and targets > Recipients]** 链接，从 Adobe Campaign 树状结构中显示该列表的高级视图。可根据您的需求配置列表的显示。您可以添加或删除列、定义列顺序、对数据排序等。 [使用列表资源管理器](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)中介绍了Adobe Campaign显示配置。
 >
->您也可以定义收件人视图。有关此功能的更多信息，请参阅 [文件夹和视图](../../platform/using/access-management.md#folders-and-views)。
+>您也可以定义收件人视图。有关此功能的详细信息，请参阅[文件夹和视图](../../platform/using/access-management.md#folders-and-views)。
 
 ## 使用中的用户档案 {#active-profiles}
 
@@ -91,9 +91,9 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 >[!NOTE]
 >
->如果您托管在AWS上，并使用构建8931中的Campaign Classic，您还可以直接从控制面板监视实例上使用的活动用户档案数。 For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>如果您托管在AWS上，并使用构建8931中的Campaign Classic，您还可以直接从控制面板监视实例上使用的活动用户档案数。 有关详细信息，请参阅[控制面板文档](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
 >
->请注意，活动用户档案计数仅适 **用于Marketing** 实例。 它不适用于执行实例，即MID（中间采购）和RT（消息中心／实时消息）实例。
+>请注意，活动用户档案计数仅适用于&#x200B;**营销实例**。 它不可用于执行实例，即MID（中间采购）和RT（消息中心／实时消息）实例。
 
 “**用户档案**”是指代表最终客户或潜在客户的信息记录（例如 nmsRecipient 表或外部表中的记录，包含 cookie ID、客户 ID、移动标识符或与特定渠道相关的其他信息）。
 
@@ -105,17 +105,17 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 >
 >Facebook 和 Twitter 渠道不包含在內。
 
-您可以从“Campaign Standard”菜 **[!UICONTROL Number of active profiles]** 单获得概 **[!UICONTROL Administration > Campaign Management > Customer metrics]** 述。 The actual count is performed by the **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technical workflow](../../workflow/using/deliveries.md), which runs every day and adds the new data to the existing report for the current period in the **[!UICONTROL Customer metrics]** menu. 每个时段的时长均为 12 个月。
+您可以从Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;菜单中概述&#x200B;**[!UICONTROL Number of active profiles]**。 实际计数由&#x200B;**[!UICONTROL Number of active billing profiles]**(**[!UICONTROL billingActiveContactCount]**)[技术工作流](../../workflow/using/deliveries.md)执行，该工作流每天运行，并将新数据添加到&#x200B;**[!UICONTROL Customer metrics]**&#x200B;菜单中当前时段的现有报告中。 每个时段的时长均为 12 个月。
 
-## 教程视频 {#create-profiles-video}
+## 教程视频{#create-profiles-video}
 
-了解如何访问个人资料数据、对个人资料进行排序和筛选以及手动创建和管理个人资料。
+了解如何访问档案数据、对档案进行排序和筛选以及手动创建和管理用户档案。
 
 此视频还解释了Adobe Campaign Classic遵守一般数据保护法规的情况。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
+此处提供其他Campaign Classic操作方法视频[。](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
 
 **另请参阅**
 
@@ -127,4 +127,4 @@ By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Re
 
 * [选择目标映射](../../delivery/using/selecting-a-target-mapping.md)
 
-* [定义受众-最佳实践](../../delivery/using/define-the-right-audience.md)
+* [定义受众——最佳实践](../../delivery/using/define-the-right-audience.md)
