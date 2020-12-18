@@ -21,7 +21,7 @@ ht-degree: 9%
 
 要以Adobe Campaign发送推送通知，您需要：
 
-* 为Neotrips移 **[!UICONTROL Mobile application]** 动应用程序创建类型信息服务。 有关iOS, [请参阅此部分](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service)。 以及 [此部分针对Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service)。
+* 为Neotrips移动应用程序创建&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型信息服务。 有关iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service)，请参阅[此部分。 和[此部分用于Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service)。
 * 将应用程序的iOS和Android版本添加到此服务。
 * 为iOS和Android创建投放。 [请参阅此页面](../../delivery/using/creating-notifications.md).
 
@@ -29,9 +29,9 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->转到服务 **[!UICONTROL Subscriptions]** 的选项卡，以视图订阅者对服务的列表，即在其移动设备上安装应用程序并同意接收通知的所有用户。
+>转到服务的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡，视图列表服务的订户，即在其移动设备上安装应用程序并同意接收通知的所有用户。
 
-## 安装包 {#installing-package-ios}
+## 安装软件包{#installing-package-ios}
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何在视频中安装移动应用程序包](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
@@ -39,19 +39,19 @@ ht-degree: 9%
 
 作为预置型客户，您需要执行以下安装步骤：
 
-1. 从导入向导客户端控制台 **[!UICONTROL Tools > Advanced > Package import...]** 中访问包Adobe Campaign。
+1. 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;访问包导入向导。
 
    ![](assets/package_ios.png)
 
 1. 选择 **[!UICONTROL Install a standard package]**。
 
-1. 在显示的列表中，选中 **[!UICONTROL Mobile App Channel]**。
+1. 在出现的列表中，选中&#x200B;**[!UICONTROL Mobile App Channel]**。
 
    ![](assets/package_ios_2.png)
 
-1. 单 **[!UICONTROL Next]**&#x200B;击，然 **[!UICONTROL Start]** 后开始包安装。
+1. 单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Start]**&#x200B;开始软件包安装。
 
-   安装包后，进度栏显示 **100%** ，您可以在安装日志中看到以下消息： **[!UICONTROL Installation of packages successful]**.
+   安装包后，进度栏显示&#x200B;**100%**，安装日志中显示以下消息：**[!UICONTROL Installation of packages successful]**。
 
    ![](assets/package_ios_3.png)
 
