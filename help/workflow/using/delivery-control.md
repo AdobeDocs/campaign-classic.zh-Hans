@@ -17,13 +17,13 @@ ht-degree: 5%
 
 # 投放控制{#delivery-control}
 
-投放 **控件**-类型操作允许您开始、暂停或停止投放。
+**投放控件**&#x200B;类型操作允许您开始、暂停或停止投放。
 
-这可以是过渡中指定的投放、显式选择的投放或由脚本计算的投放。 For more on this, refer to [Delivery](../../workflow/using/delivery.md).
+这可以是过渡中指定的投放、显式选择的投放或由脚本计算的投放。 有关详细信息，请参阅[投放](../../workflow/using/delivery.md)。
 
 ![](assets/edit_diffusion_act.png)
 
-如果您选 **[!UICONTROL Start]**&#x200B;择，活动将执行开始投放所需的所有步骤(目标计算、内容准备、投放)。 如果这些步骤中的某些步骤已经由以前的工作流活动执行，则不会再执行这些步骤。 例如，如果目标估计已由类型活动 **[!UICONTROL Delivery]** 执行(请参 [阅投放](../../workflow/using/delivery.md))，则 **[!UICONTROL Act on the delivery]** 活动将启动其余步骤(内容准备和投放)。
+如果选择&#x200B;**[!UICONTROL Start]**,活动将执行开始投放(目标计算、内容准备、投放)所需的所有步骤。 如果这些步骤中的某些步骤已经由以前的工作流活动执行，则不会再执行这些步骤。 例如，如果目标估计已由&#x200B;**[!UICONTROL Delivery]**&#x200B;类型活动执行(请参阅[投放](../../workflow/using/delivery.md))，则&#x200B;**[!UICONTROL Act on the delivery]**&#x200B;活动将启动其余步骤(内容准备和投放)。
 
 可以使用以下选项：
 
@@ -33,10 +33,10 @@ ht-degree: 5%
 
 * **[!UICONTROL Processing errors]**
 
-   请参阅处 [理错误](../../workflow/using/monitoring-workflow-execution.md#processing-errors)。
+   请参阅[处理错误](../../workflow/using/monitoring-workflow-execution.md#processing-errors)。
 
-## 输入参数 {#input-parameters}
+## 输入参数{#input-parameters}
 
 * deliveryId
 
-投放标识符(如果所选操作为 **[!UICONTROL Specified in the transition]**)。
+投放标识符（如果所选操作为&#x200B;**[!UICONTROL Specified in the transition]**）。
