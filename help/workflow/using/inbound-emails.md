@@ -17,17 +17,17 @@ ht-degree: 1%
 
 # 入站电子邮件{#inbound-emails}
 
-“入站 **电子邮件** ”活动允许您从POP3邮件服务器下载和处理电子邮件。
+**入站电子邮件**&#x200B;活动允许您从POP3邮件服务器下载和处理电子邮件。
 
 ![](assets/email_rec_edit_1.png)
 
-在“入站电子邮件 **”活动的第一个选项卡** ，您可以输入POP3服务器的参数，并输入在收到每条消息后要执行的脚本。 第二个选项卡允许您为计划分配活动，第三个选项卡定义活动到期条件。
+在&#x200B;**入站电子邮件**&#x200B;活动的第一个选项卡中，您可以输入POP3服务器的参数，并输入在收到每条消息时要执行的脚本。 第二个选项卡允许您为计划分配活动，第三个选项卡定义活动到期条件。
 
 1. **[!UICONTROL Inbound Emails]**
 
    * **[!UICONTROL Use an external account]**
 
-      激活此选项后，您可以选择外部POP3帐户，而不是输入连接参数。 该 **[!UICONTROL External account]** 字段指定用于连接到电子邮件服务的外部POP3帐户。 仅当启用“使用外部帐户”选项时，此字段才可见。
+      激活此选项后，您可以选择外部POP3帐户，而不是输入连接参数。 **[!UICONTROL External account]**&#x200B;字段指定用于连接到电子邮件服务的外部POP3帐户。 仅当启用“使用外部帐户”选项时，此字段才可见。
 
       如果未选择此选项，则必须指定以下参数：
 
@@ -64,19 +64,19 @@ ht-degree: 1%
    * 3 —— 从服务器删除消息。
    * 4 —— 将消息保留在服务器上。
 
-   消息内容可通过全局变量访 **[!UICONTROL mailMessage]** 问。
+   消息内容可通过全局&#x200B;**[!UICONTROL mailMessage]**&#x200B;变量访问。
 
 1. **[!UICONTROL Schedule]**
 
-   要为计划定义活动，请单击选 **[!UICONTROL Scheduling]** 项卡并选中 **[!UICONTROL Plan execution]**。 单击按 **[!UICONTROL Change]** 钮以配置计划。
+   要为计划定义活动，请单击&#x200B;**[!UICONTROL Scheduling]**&#x200B;选项卡并选中&#x200B;**[!UICONTROL Plan execution]**。 单击&#x200B;**[!UICONTROL Change]**&#x200B;按钮以配置计划。
 
-   计划配置与计划活动的配置相同。 请参阅 [调度程序](../../workflow/using/scheduler.md)。
+   计划配置与计划活动的配置相同。 请参阅[调度程序](../../workflow/using/scheduler.md)。
 
 1. **[!UICONTROL Expiration]**
 
-   您可以通过选项卡定义到期 **[!UICONTROL Expiration]** 延迟。
+   您可以通过&#x200B;**[!UICONTROL Expiration]**&#x200B;选项卡定义过期延迟。
 
    ![](assets/email_rec_edit_3.png)
 
-   配置与计划活动相同。 请参阅 [过期](../../workflow/using/defining-approvals.md)。
+   配置与计划活动相同。 请参阅[过期](../../workflow/using/defining-approvals.md)。
 
