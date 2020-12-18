@@ -23,7 +23,7 @@ Adobe Campaign包括Apache Tomcat，它通过HTTP（和SOAP）充当应用程序
 
 在本例中：
 
-* 默认监听端口为8080。 要更改它，请参阅 [配置Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat)。
+* 默认监听端口为8080。 要更改它，请参阅[配置Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat)。
 * 然后，客户端控制台使用URL进行连接，如：
 
    ```
@@ -40,7 +40,7 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
 >
 >如果不使用跟踪功能，则可以通过重定向到活动来执行Apache或IIS的标准安装。 无需跟踪Web服务器扩展模块。
 
-## 使用Debian配置Apache Web服务器 {#configuring-the-apache-web-server-with-debian}
+## 使用Debian {#configuring-the-apache-web-server-with-debian}配置Apache Web服务器
 
 如果已在基于APT的分发下安装Apache，则此过程适用。
 
@@ -52,13 +52,13 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   确保别 **名**、 **authz_host****** 和mime模块仍然启用。 为此，请使用以下命令：
+   确保&#x200B;**别名**、**authz_host**&#x200B;和&#x200B;**mime**&#x200B;模块仍处于启用状态。 为此，请使用以下命令：
 
    ```
    a2enmod  alias authz_host mime
    ```
 
-1. 在/etc/ **apache** 2/mods-available **中创建nlsrv.load文件** ，并插入以下内容：
+1. 在&#x200B;**/etc/apache2/mods-available**&#x200B;中创建文件&#x200B;**nlsrv.load**&#x200B;并插入以下内容：
 
    在德比安8:
 
@@ -66,7 +66,7 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
    ```
 
-1. 使用以 **下命令** 在/etc/apache2/mods-available中创建nlsrv **** .conf文件：
+1. 使用以下命令在&#x200B;**/etc/apache2/mods-available**&#x200B;中创建文件&#x200B;**nlsrv.conf**:
 
    ```
    ln -s /usr/local/[INSTALL]/nl6/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
@@ -78,13 +78,13 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
     a2enmod nlsrv
    ```
 
-   如果对Adobe Campaign页 **使用mod_rewrite** 模块，则需要将nlsrv.load **和** nlsrv.conf文件重命名 **为zz-nlsrv.load**********&#x200B;和zz-nlsrv.conf。 要激活模块，请运行以下命令：
+   如果对Adobe Campaign页使用&#x200B;**mod_rewrite**&#x200B;模块，则需要将&#x200B;**nlsrv.load**&#x200B;和&#x200B;**nlsrv.conf**&#x200B;文件重命名为&#x200B;**zz-nlsrv.load**&#x200B;和&#x200B;**zz-nlsrv.conf**。 要激活模块，请运行以下命令：
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. 编辑 **/etc/apache2/envvars文件** ，添加以下行：
+1. 编辑&#x200B;**/etc/apache2/envvars**&#x200B;文件，添加以下行：
 
    ```
    # Added Neolane
@@ -107,13 +107,13 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
    invoke-rc.d apache2 restart
    ```
 
-## 在RHEL中配置Apache Web服务器 {#configuring-apache-web-server-in-rhel}
+## 在RHEL {#configuring-apache-web-server-in-rhel}中配置Apache Web服务器
 
 如果您已在基于RPM（RHEL、CentOS和Suse）的包下安装并保护Apache，则此过程适用。
 
 应用以下步骤：
 
-1. 在文件 `httpd.conf` 中，激活以下Apache模块：
+1. 在`httpd.conf`文件中，激活以下Apache模块：
 
    ```
    alias
@@ -152,18 +152,18 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
    ForceLanguagePriority
    ```
 
-1. 在文件夹中创建Adobe Campaign特定配置 `/etc/httpd/conf.d/` 文件。 For example `CampaignApache.conf`
+1. 在`/etc/httpd/conf.d/`文件夹中创建特定于Adobe Campaign的配置文件。 例如`CampaignApache.conf`
 
-1. 对 **于RHEL** 7，在文件中添加以下说明：
+1. 对于&#x200B;**RHEL7**，在文件中添加以下说明：
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
    Include /usr/local/neolane/nl6/conf/apache_neolane.conf
    ```
 
-1. 对于 **RHEL7**:
+1. 对于&#x200B;**RHEL7**:
 
-   添加包 `/etc/systemd/system/httpd.service` 含以下内容的文件：
+   添加包含以下内容的`/etc/systemd/system/httpd.service`文件：
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -244,4 +244,4 @@ GET /r/test
 Connection closed by foreign host.
 ```
 
-您还可以从Web浏 [`https://<computer>`](https://myserver.adobe.com/r/test) 览器请求URL。
+您还可以从Web浏览器请求URL [`https://<computer>`](https://myserver.adobe.com/r/test)。
