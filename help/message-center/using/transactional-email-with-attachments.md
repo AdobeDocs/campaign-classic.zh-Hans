@@ -19,7 +19,7 @@ ht-degree: 1%
 
 此用例的用途是将电子邮件附件快速添加到出站派单。
 
-## 关键步骤 {#key-steps}
+## 关键步骤{#key-steps}
 
 在此方案中，您将学习如何发送包含个人和／或个性化附件的交易电子邮件。 附件不会预上传到Transactional Messaging服务器：而是在飞机上生成。
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->为避免性能问题，如果您将通过个性化URL动态下载的图像作为附件，则默认情况下，每个图像大小不应超过100,000字节。 此推荐阈值可以通过 [列表Campaign Classic选项配置](../../installation/using/configuring-campaign-options.md#delivery)。
+>为避免性能问题，如果您将通过个性化URL动态下载的图像作为附件，则默认情况下，每个图像大小不应超过100,000字节。 此建议的阈值可以从[Campaign Classic选项的列表](../../installation/using/configuring-campaign-options.md#delivery)进行配置。
 
 ## 建议{#important-notes}
 
@@ -54,9 +54,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->为避免性能问题，建议每封电子邮件不要包含多个附件。 可以通过列表的 [Campaign Classic选项配置建议的阈值](../../installation/using/configuring-campaign-options.md#delivery)。
+>为避免性能问题，建议每封电子邮件不要包含多个附件。 建议的阈值可以从[Campaign Classic选项的列表](../../installation/using/configuring-campaign-options.md#delivery)进行配置。
 
-## 实施 {#implementation}
+## 实现{#implementation}
 
 下图显示了实施此方案时的不同步骤：
 
@@ -70,11 +70,11 @@ ht-degree: 1%
 
 1. 您可以通过SOAP消息触发器发送电子邮件。 在SOAP调用中，有一个URL参数(attachmentURL)。
 
-   有关SOAP请求的详细信息，请参阅 [事件说明](../../message-center/using/event-description.md)。
+   有关SOAP请求的详细信息，请参阅[事件说明](../../message-center/using/event-description.md)。
 
-1. 设计电子邮件时，单击 **[!UICONTROL Attachment]**。
+1. 设计电子邮件时，单击&#x200B;**[!UICONTROL Attachment]**。
 
-1. 在屏幕 **[!UICONTROL Attachment definition]** 中，输入SOAP附件参数：
+1. 在&#x200B;**[!UICONTROL Attachment definition]**&#x200B;屏幕中，输入SOAP附件参数：
 
    ```
    <%= rtEvent.ctx.attachementUrl %>
