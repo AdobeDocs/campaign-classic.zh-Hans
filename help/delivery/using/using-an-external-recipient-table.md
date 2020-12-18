@@ -17,7 +17,7 @@ ht-degree: 18%
 
 # 使用外部收件人表{#using-an-external-recipient-table}
 
-如果投放表是外部表，则需要进行其他配置。 必 **[!UICONTROL nms:seedmember]** 须延长模式。 种子地址中会添加一个选项卡以定义适当的字段，如下所示：
+如果投放表是外部表，则需要进行其他配置。 **[!UICONTROL nms:seedmember]**&#x200B;模式必须扩展。 种子地址中会添加一个选项卡以定义适当的字段，如下所示：
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -25,4 +25,4 @@ ht-degree: 18%
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-nms: **seedMember** 模式扩展 [为此部分](../../configuration/using/seed-addresses.md)。
+**nms:seedMember**&#x200B;模式扩展是[此部分](../../configuration/using/seed-addresses.md)。
