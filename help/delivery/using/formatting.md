@@ -17,15 +17,15 @@ ht-degree: 0%
 
 # 格式化{#formatting}
 
-## JavaScript模板 {#javascript-templates}
+## JavaScript模板{#javascript-templates}
 
 JavaScript模板是包含JavaScript代码的HTML或文本文档。 它的构建方式与投放操作中的电子邮件内容相同。
 
-### JavaScript模板的标识 {#identification-of-a-javascript-template}
+### JavaScript模板{#identification-of-a-javascript-template}的标识
 
-JavaScript模板由其名称和命名空间进行标识，就像模式和表单一样。 但是，建议将。js选 **项添加** 到模板名称。
+JavaScript模板由其名称和命名空间进行标识，就像模式和表单一样。 但是，建议将&#x200B;**.js**&#x200B;选项添加到模板名称中。
 
-### JavaScript模板的结构 {#structure-of-a-javascript-template}
+### JavaScript模板的结构{#structure-of-a-javascript-template}
 
 基于“cus:book”模式的JavaScript HTML格式模板示例：
 
@@ -45,10 +45,10 @@ JavaScript模板由其名称和命名空间进行标识，就像模式和表单�
 
 各种JavaScript指令以以下形式显示：
 
-* 合并字段：使用语法显示数据的内 **`<%= <source> %>`** 容， `<source>`其中是要显示的数据的源字段。
+* 合并字段：使用&#x200B;**`<%= <source> %>`**&#x200B;语法显示数据的内容，其中`<source>`是要显示的数据的源字段。
 * 指令块：执行包含在&lt;%和%>标记之间的一系列JavaScript指令。
 
-内容 **对象** 表示输入XML文档的主要元素。
+**content**&#x200B;对象表示输入XML文档的主元素。
 
 在我们的示例中，以下行显示名称帐簿名称的内容：
 
@@ -56,7 +56,7 @@ JavaScript模板由其名称和命名空间进行标识，就像模式和表单�
 <h1><%= content.@name %></h1>
 ```
 
-以下代码迭代收集 `<chapter>` 元素：
+以下代码迭代`<chapter>`集合元素：
 
 ```
 <% for each(var chapter in content.chapter) { %>
@@ -69,17 +69,17 @@ JavaScript模板由其名称和命名空间进行标识，就像模式和表单�
 **示例**:
 
 * **内容。@name**:检索主元素的“name”属性的值
-* **内容。@`['name']`**:与内容相 **同。@name** 语法
+* **内容。@`['name']`**:与&#x200B;**内容相同。@name**&#x200B;语法
 * **content.chapter.length**:返回集合元素上的元 `<chapter` 素数
-* **content.chapter`[0]`。@name**:检索第一个元素的名 `<chapter>` 称
+* **content.chapter`[0]`。@name**:检索第一个`<chapter>`元素的名称
 * **chapter.name()**:返回元素的名 `<chapter>` 称
-* **chapter.parent()。name()**:返回的父元素的名称 `<chapter>`
+* **chapter.parent()。name()**:返回的父元素的名称  `<chapter>`
 
 >[!CAUTION]
 >
->由于“-”字符在JavaScript语言中是保留的，因此必须通过语法恢复包含此字符的任何属性或元素的 `['<field>']` 值。
+>由于“-”字符在JavaScript语言中是保留的，因此必须通过`['<field>']`语法恢复包含此字符的任何属性或元素的值。
 >
->For example: `content.@['offer-id']`.
+>例如：`content.@['offer-id']`。
 
 编程语言（变量、循环、条件测试、函数等）的全部功能。 )可用于构建输出文档。 SOAP API可用于丰富输出文档。
 
@@ -157,17 +157,17 @@ JavaScript模板由其名称和命名空间进行标识，就像模式和表单�
    <%= recipient.@lastName %>
    ```
 
-### 包括JavaScript模板 {#including-a-javascript-template}
+### 包括JavaScript模板{#including-a-javascript-template}
 
-您可以构成函数或变量库供以后使用。 为此，请导入带eval函数的JavaScript **模板** 。 这样，您就可以使用其他JavaScript模板中声明的其他函数丰富上下文。
+您可以构成函数或变量库供以后使用。 为此，请使用&#x200B;**eval**&#x200B;函数导入JavaScript模板。 这样，您就可以使用其他JavaScript模板中声明的其他函数丰富上下文。
 
-**示例**:导入 **common.jsp** 模板。
+**示例**:导入 **common.** jsptemplate。
 
 ```
 <% eval(xtk.javascript.get("cus:common.js").data);  %>
 ```
 
-### 编辑JavaScript模板 {#editing-a-javascript-template}
+### 编辑JavaScript模板{#editing-a-javascript-template}
 
 通过编辑区域，可以填充JavaScript模板的内容：
 
@@ -177,7 +177,7 @@ JavaScript模板由其名称和命名空间进行标识，就像模式和表单�
 >
 >必须填充关联的数据模型模式，以初始化JavaScript对象。
 
-要随时生成输出预览的文档，请选择内容和输出格式（HTML、文本、XML），然后单击 **[!UICONTROL Generate]** :
+要随时生成输出预览的文档，请选择内容和输出格式（HTML、文本、XML），然后单击&#x200B;**[!UICONTROL Generate]**:
 
 ![](assets/d_ncs_content_form17.png)
 
@@ -185,7 +185,7 @@ JavaScript模板由其名称和命名空间进行标识，就像模式和表单�
 >
 >不必保存更改即可预览输出文档。
 
-### 如何创建和使用JavaScript模板的示例 {#example-of-how-to-create-and-use-a-javascript-template}
+### 如何创建和使用JavaScript模板{#example-of-how-to-create-and-use-a-javascript-template}的示例
 
 在下面，您将找到使用JavaScript模板实现以下内容管理所需的配置：
 
@@ -193,7 +193,7 @@ JavaScript模板由其名称和命名空间进行标识，就像模式和表单�
 
 此示例涉及以下步骤：
 
-1. 创建以下模式(在本例中为： **neo:news**):
+1. 创建以下模式(在本例中为：**neo:news**:
 
    ```
    <srcSchema _cs="Invitation (neo)"   entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Invitation" mappingType="sql" name="news" namespace="neo" xtkschema="xtk:srcSchema">
@@ -232,7 +232,7 @@ JavaScript模板由其名称和命名空间进行标识，就像模式和表单�
    </srcSchema>
    ```
 
-1. 创建链接 **[!UICONTROL Content management]** 的类型表&#x200B;**单(neo:news**)
+1. 创建链接的&#x200B;**[!UICONTROL Content management]**&#x200B;类型表单(**neo:news**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -366,21 +366,21 @@ JavaScript模板由其名称和命名空间进行标识，就像模式和表单�
 
 1. 然后，您可以在投放中使用此内容模板。
 
-   有关此内容的详细信息，请 [参阅使用内容模板](../../delivery/using/using-a-content-template.md)。
+   有关详细信息，请参阅[使用内容模板](../../delivery/using/using-a-content-template.md)。
 
-## XSL样式表 {#xsl-stylesheets}
+## XSL样式表{#xsl-stylesheets}
 
 XSLT语言允许您将XML文档更改为输出文档。 根据样式表的输出方法，可以在HTML、纯文本或其他XML树中生成结果文档。
 
 此转换在XML中在称为样式表的文档中详细介绍。
 
-### 标识样式表 {#identifying-a-stylesheet}
+### 标识样式表{#identifying-a-stylesheet}
 
-样式表由其名称和命名空间来标识，就像模式和表单一样。 但是，建议将。xsl扩 **展名** 添加到样式表的名称。
+样式表由其名称和命名空间来标识，就像模式和表单一样。 但是，建议将&#x200B;**.xsl**&#x200B;扩展添加到样式表的名称中。
 
-样式表的标识键是由命名空间和冒号分隔的名称组成的字符串；例如： **cus:book.xsl**。
+样式表的标识键是由命名空间和冒号分隔的名称组成的字符串；例如：**cus:book.xsl**。
 
-### 样式表的结构 {#structure-of-a-stylesheet}
+### 样式表{#structure-of-a-stylesheet}的结构
 
 基于示例模式“cus:book”的HTML格式样式表示例：
 
@@ -410,16 +410,16 @@ XSLT语言允许您将XML文档更改为输出文档。 根据样式表的输出
 
 * 属性值在引号之间，
 * 元素必须具有开始标记和结束标记，
-* 将“&lt;”或“&amp;”字符替 **换为“** ” **或“&amp;** ”实体，
-* 每个XSL元素都必须使用 **xsl** 命名空间。
+* 将“&lt;”或“&amp;”字符替换为&#x200B;**”&lt;&#39;**&#x200B;或&#x200B;**&#39;&amp;&#39;**&#x200B;实体，
+* 每个XSL元素必须使用&#x200B;**xsl**&#x200B;命名空间。
 
-样式表必须开始XSL根元素标 **`<xsl:stylesheet>`** 记，以标记结 **`</xsl:stylesheet>`** 尾。 XSL命名空间必须在开始标记中定义，如下所示：
+样式表必须开始XSL根元素标记&#x200B;**`<xsl:stylesheet>`**，以&#x200B;**`</xsl:stylesheet>`**&#x200B;标记结束。 XSL命名空间必须在开始标记中定义，如下所示：
 
 ```
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 ```
 
-元 **`<xsl:output>`** 素指定生成的文档的格式。 指定所需的字符集和输出格式。
+**`<xsl:output>`**&#x200B;元素指定生成的文档的格式。 指定所需的字符集和输出格式。
 
 ```
 <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -444,7 +444,7 @@ XSLT语言允许您将XML文档更改为输出文档。 根据样式表的输出
 </xsl:template>
 ```
 
-默认情况下，XSLT处理器会 **搜索** 应用于输入XML文档的根节点或主节点的模板。 输出文档的构建从此模板开 **始**。
+默认情况下，XSLT处理器搜索应用于输入XML文档的根或主节点的&#x200B;**template**。 输出文档的构建从此&#x200B;**template**&#x200B;开始。
 
 在我们的示例中，通过显示书名和章节的列表，从“cus:book”模式生成HTML页面。
 
@@ -454,9 +454,9 @@ XSLT语言允许您将XML文档更改为输出文档。 根据样式表的输出
 
 ### 显示HTML/XML {#displaying-html-xml}
 
-要显示 **html** 字段，请使 **用指令中的disable-output-esceing=** &quot;yes&quot; **`<xsl:value-of>`** 选项。 这样，您就避免用字符的XML实体替换字符（例如&lt;和&lt;）。
+要显示&#x200B;**html**&#x200B;字段，请使用&#x200B;**`<xsl:value-of>`**&#x200B;指令中的&#x200B;**disable-output-esceing=&quot;yes&quot;**&#x200B;选项。 这样，您就避免用字符的XML实体替换字符（例如&lt;和&lt;）。
 
-使用 **`<xsl:text>`** disable-output- **esceing=&quot;yes&quot;选项的指令** ，可以为个性化字段或条件测试插入JavaScript标签。
+使用&#x200B;**disable-output-segine=&quot;yes&quot;**&#x200B;选项的&#x200B;**`<xsl:text>`**&#x200B;指令，可以为个性化字段或条件测试插入JavaScript标记。
 
 示例:
 
@@ -466,23 +466,23 @@ XSLT语言允许您将XML文档更改为输出文档。 根据样式表的输出
    <xsl:value-of select="summary" disable-output-escaping="yes"/>
    ```
 
-* 插入个性化 **字段&lt;%=收件人.email %>**:
+* 插入个性化字段&#x200B;**&lt;%=收件人.email %>**:
 
    ```
    <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
    ```
 
-* 添加条件测 **试&lt;% if(收件人.language == &#39;en&#39;) `{` %>**:
+* 添加条件测试&#x200B;**&lt;% if(收件人语== &#39;en&#39;)`{` %>**:
 
    ```
    <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
    ```
 
-### 包括样式表 {#including-stylesheets}
+### 包括样式表{#including-stylesheets}
 
-可以构建要在多个样式表之间共享的模板或变量库。 上面显示 **的**“longMonth”模板是一个典型的示例，其优点是在样式表中远程定位模板，以便以后可以重用它。
+可以构建要在多个样式表之间共享的模板或变量库。 上面显示的“longMonth”**template**&#x200B;是一个典型的示例，它可以在样式表中远程定位模板，以便以后可以重用。
 
-指 **`<xsl:include>`** 令指示要包含在文档中的样式表的名称。
+**`<xsl:include>`**&#x200B;指令指示要包含在文档中的样式表的名称。
 
 **示例**:包括“common.xsl”样式表。
 
@@ -499,13 +499,13 @@ XSLT语言允许您将XML文档更改为输出文档。 根据样式表的输出
 >
 >不得在要包含的样式表引用中输入命名空间的名称。 作为标准，此样式表是使用用户命名空间创建的。
 
-### 编辑样式表 {#editing-a-stylesheet}
+### 编辑样式表{#editing-a-stylesheet}
 
 通过编辑区域，您可以填充样式表的内容：
 
 ![](assets/d_ncs_content_form14.png)
 
-要随时生成输出预览的文档，请选择内容实例和格式（HTML、文本、XML），然后单击 **[!UICONTROL Generate]** :
+要随时生成输出预览的文档，请选择一个内容实例和格式（HTML、文本、XML），然后单击&#x200B;**[!UICONTROL Generate]**:
 
 ![](assets/d_ncs_content_form15.png)
 
@@ -513,22 +513,22 @@ XSLT语言允许您将XML文档更改为输出文档。 根据样式表的输出
 >
 >无需在样式表中保存更改来视图输出文档预览。
 
-## 图像管理 {#image-management}
+## 映像管理{#image-management}
 
-### 图像引用 {#image-referencing}
+### 图像引用{#image-referencing}
 
 在HTML输出文档中输入的图像可以使用绝对或相对引用进行引用。
 
-相对引用允许您在NcmRessourcesDir和NcmRessourcesDirPreview选项中输 **入包含图像** 的服 **务器的URL** 。 这些选项包含要在Adobe Campaign客户端控制台中发布和预览的图像的位置。
+相对引用允许您在&#x200B;**NcmRessourcesDir**&#x200B;和&#x200B;**NcmRessourcesDirPreview**&#x200B;选项中输入包含图像的服务器的URL。 这些选项包含要在Adobe Campaign客户端控制台中发布和预览的图像的位置。
 
-这两个选项可通过文件夹中的选项管理屏幕 **[!UICONTROL Administration > Platform > Options]** 访问。
+这两个选项可通过&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;文件夹中的选项管理屏幕访问。
 
 **示例**:
 
 * NcmResourcesDir = &quot;https://server/images/&quot;
 * NcmResourcesDirPreview = &quot;x:/images/&quot;
 
-在样式表处理 **过程中** ，输入XML文档的主元素上的_resPath属性会根据上下文(预览或发布)自动填充一个或其他选项。
+在样式表处理过程中，根据上下文(预览或发布)，输入XML文档的主元素上的&#x200B;**_resPath**&#x200B;属性会自动填充其中一个或其他选项。
 
 如何使用图像放置选项及其与图像一起使用的示例：
 
@@ -540,9 +540,9 @@ XSLT语言允许您将XML文档更改为输出文档。 根据样式表的输出
 >
 >我们建议声明一个变量，其中包含存储图像的服务器的引用（本例中为“resPath”）。
 
-### 使用公共资源 {#using-public-resources}
+### 使用公共资源{#using-public-resources}
 
-您还可以根据 **[!UICONTROL Public resources]** 在部署向导中输入的实例设置，使用声明图像并将其上传到服务器。
+还可以使用&#x200B;**[!UICONTROL Public resources]**&#x200B;声明图像并将其上传到服务器，具体取决于在部署向导中输入的实例设置。
 
 然后，可以在内容中调用这些图像。 为此，请在内容管理模式中使用以下语法：
 
@@ -562,27 +562,27 @@ XSLT语言允许您将XML文档更改为输出文档。 根据样式表的输出
 
 >[!NOTE]
 >
->有关配置和 **[!UICONTROL Public resources]** 如何使用它们的详细信息，请参 [阅本节](../../installation/using/deploying-an-instance.md#managing-public-resources)。
+>有关&#x200B;**[!UICONTROL Public resources]**&#x200B;以及如何配置和使用它们的详细信息，请参阅[本节](../../installation/using/deploying-an-instance.md#managing-public-resources)。
 
-## 日期显示 {#date-display}
+## 日期显示{#date-display}
 
-在XML输入文档中，日期以内部XML格式存储： **YYYY/MM/DD HH:MM:SS** （示例2018/10/01 12:23:30）。
+在XML输入文档中，日期以内部XML格式存储：**YYYY/MM/DD HH:MM:SS**（示例2018/10/01 12:23:30）。
 
 Adobe Campaign为JavaScript模板和XSL样式表提供日期格式化功能，详见下文。
 
-### JavaScript日期格式 {#javascript-date-formatting}
+### JavaScript日期格式{#javascript-date-formatting}
 
-要以所需格式显示日期，Adobe Campaign提 **供** formatDate函数，该函数将输入日期的内容，并提供一个字符串，该字符串使用以下语法指定输出格式： **%4Y/%2M/%2D %2H%2N%2S**
+要以所需格式显示日期，Adobe Campaign提供&#x200B;**formatDate**&#x200B;函数，该函数用作输入日期的内容，并提供一个字符串，该字符串使用以下语法指定输出格式：**%4Y/%2M/%2D %2H%2N%2S**
 
 示例:
 
-* 以31/10/2018 **格式显示日期** :
+* 以&#x200B;**31/10/2018**&#x200B;格式显示日期：
 
    ```
     <%= formatDate(content.@date, "%2D/%2M/%4Y") %>
    ```
 
-* 以2018年7月格 **式显示日** 期：
+* 以&#x200B;**2018年7月**&#x200B;格式显示日期：
 
    ```
    <%
@@ -601,19 +601,19 @@ Adobe Campaign为JavaScript模板和XSL样式表提供日期格式化功能，�
    <%= displayDate(content.@date) %>
    ```
 
-### XSL日期格式 {#xsl-date-formatting}
+### XSL日期格式{#xsl-date-formatting}
 
-XSLT语法中没有标准的日期管理功能。 要以所需格式显示日期，Adobe Campaign提供外部函 **数date-format**。 此函数将日期的内容作为输入，并使用以下语法指定输出格式的字符串： **%4Y/%2M/%2D %2H%2N%2S**
+XSLT语法中没有标准的日期管理功能。 要以所需格式显示日期，Adobe Campaign提供外部函数&#x200B;**date-format**。 此函数将日期的内容作为输入，并使用以下语法指定输出格式的字符串：**%4Y/%2M/%2D %2H%2N%2S**
 
 示例:
 
-* 要以01/10/2018 **格式显示日期** :
+* 要以&#x200B;**01/10/2018**&#x200B;格式显示日期：
 
    ```
    <xsl:value-of select="external:date-format(@date, '%2D/%2M/%4Y')"/>
    ```
 
-* 要以2018年7月格 **式显示日期** :
+* 要以&#x200B;**2018年7月**&#x200B;格式显示日期：
 
    ```
    <!-- Returns the month in the form of a string with the month number as input -->
