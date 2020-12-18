@@ -34,12 +34,12 @@ ht-degree: 15%
   <tr> 
    <td> <span class="uicontrol">付费</span> <br /> </td> 
    <td> <span class="uicontrol">billing</span> <br /> </td> 
-   <td> 此工作流通过电子邮件将系统活动报告发送给“付费”操作员。 默认情况下每月25号触发。<br /> </td> 
+   <td> 此工作流通过电子邮件将系统活动报告发送给“付费”操作员。 默认情况下，每月25日触发。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">有效开单用户档案数</span> <br /> </td> 
    <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
-   <td> <p>此工作流计算活动用户档案的数量。 默认情况下，每天晚上1点触发。</p> <p>“<strong>用户档案</strong>”是指代表最终客户或潜在客户的信息记录（例如 nmsRecipient 表或外部表中的记录，包含 cookie ID、客户 ID、移动标识符或与特定渠道相关的其他信息）。计费只涉及“活动”的用户档案。 如果用户档案在过去12个月内通过任何渠道被定向或传达，则用户档案被视为“活动”。</p> <p>Facebook 和 Twitter 渠道不包含在內。</p> <p>You can have an overview of the <span class="uicontrol">Number of active profiles</span> from the <span class="uicontrol">Administration</span> &gt; <span class="uicontrol">Campaign Management</span> &gt; <span class="uicontrol">Customer metrics</span> menu.</p> </td> 
+   <td> <p>此工作流计算活动用户档案的数量。 默认情况下，每天晚上1点触发。</p> <p>“<strong>用户档案</strong>”是指代表最终客户或潜在客户的信息记录（例如 nmsRecipient 表或外部表中的记录，包含 cookie ID、客户 ID、移动标识符或与特定渠道相关的其他信息）。计费只涉及“活动”的用户档案。 如果用户档案在过去12个月内通过任何渠道被定向或传达，则用户档案被视为“活动”。</p> <p>Facebook 和 Twitter 渠道不包含在內。</p> <p>您可以从<span class="uicontrol">管理</span>&gt;<span class="uicontrol">活动管理</span>&gt;<span class="uicontrol">客户指标</span>菜单中概述<span class="uicontrol">活动用户档案数</span>。</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">别名清理</span> <br /> </td> 
@@ -49,22 +49,22 @@ ht-degree: 15%
   <tr> 
    <td> <span class="uicontrol">可投放性更新</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td> 通过此工作流，您可以创建弹回邮件资格规则的列表，以及平台中域和MX的列表。 仅当HTTPS端口打开时，此工作流才有效。 除非安装了可交付性模块，否则不更新这些列表。<br /> </td> 
+   <td> 通过此工作流，您可以创建弹回邮件资格规则的列表，以及平台中域和MX的列表。 仅当HTTPS端口打开时，此工作流才有效。 除非安装了可交付模块，否则这些列表不会更新。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">数据库清理</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>此工作流是数据库维护工作流：它根据部署助手中定义的配置从数据库中删除过时的数据，从而与统计和进程进行不同的计算。 默认情况下，每天凌晨4点触发。</p> <p>For more information, refer to this <a href="../../production/using/database-cleanup-workflow.md">page</a>.</p> </td> 
+   <td> <p>此工作流是数据库维护工作流：它根据部署助手中定义的配置从数据库中删除过时的数据，从而与统计和进程进行不同的计算。 默认情况下，每天凌晨4点触发。</p> <p>有关详细信息，请参阅此<a href="../../production/using/database-cleanup-workflow.md">页面</a>。</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">暂停的工作流清除</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>此工作流会分析严重性设置为正常的已暂停工作流，并在暂停过长时触发警告和通知。 一个月后，暂停的技术工作流将被无条件停止。 默认情况下，每周一早上5点触发。</p> <p>有关详细信息，请参 <a href="../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">阅处理暂停的工作流</a>。</p></td> 
+   <td> <p>此工作流会分析严重性设置为正常的已暂停工作流，并在暂停过长时触发警告和通知。 一个月后，暂停的技术工作流将被无条件停止。 默认情况下，每周一早上5点触发。</p> <p>有关详细信息，请参阅<a href="../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">处理暂停的工作流</a>。</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">优惠通知</span> <br /> </td> 
    <td> <span class="uicontrol">offerMgt</span> <br /> </td> 
-   <td> 此工作流将经过批准的优惠部署到在线环境以及优惠目录中包含的每个类别。<br /> </td> 
+   <td> 此工作流将批准的优惠部署到联机环境以及优惠目录中包含的每个类别。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">预览</span> <br /> </td> 
@@ -74,7 +74,7 @@ ht-degree: 15%
   <tr> 
    <td> <span class="uicontrol">跟踪</span> <br /> </td> 
    <td> <span class="uicontrol">跟踪</span> <br /> </td> 
-   <td> 此工作流执行跟踪信息的恢复和合并。 它还确保重新计算跟踪和投放统计，特别是消息中心归档工作流使用的统计。 默认情况下，每小时触发一次。 <br /> </td> 
+   <td> 此工作流执行跟踪信息的恢复和合并。 它还确保重新计算跟踪和投放统计，特别是消息中心归档工作流使用的统计。 默认情况下，每小时触发一次。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
