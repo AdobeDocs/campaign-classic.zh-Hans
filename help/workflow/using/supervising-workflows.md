@@ -28,20 +28,20 @@ ht-degree: 0%
 
 1. 创建监视工作流。
 1. 编写JavaScript以确定工作流是暂停、停止还是出错。
-1. 创建 **[!UICONTROL Test]** 活动。
+1. 创建&#x200B;**[!UICONTROL Test]**&#x200B;活动。
 1. 准备投放模板。
 
 >[!NOTE]
 >
->除了工作流之外，活动工 **作流热图** 还允许您详细分析当前运行的工作流。 For more on this, refer to the [dedicated section](../../workflow/using/heatmap.md).
+>除了工作流，活动&#x200B;**工作流热图**&#x200B;还允许您详细分析当前运行的工作流。 有关详细信息，请参阅[专用部分](../../workflow/using/heatmap.md)。
 >
->有关如何监视 **工作流执行情况的详细**，请参 [阅本节](../../workflow/using/monitoring-workflow-execution.md)。
+>有关如何&#x200B;**监视工作流执行**&#x200B;的详细信息，请参阅[本节](../../workflow/using/monitoring-workflow-execution.md)。
 
-## 第1步：创建监视工作流 {#step-1--creating-the-monitoring-workflow}
+## 第1步：创建监视工作流{#step-1--creating-the-monitoring-workflow}
 
-我们要监视的工作流文件夹是“管理”>“ **生产”** >“技术工作流”节 **点中存储的“CustomWorkflow** ”文件夹。 此文件夹包含一组业务工作流。
+我们要监视的工作流文件夹是存储在&#x200B;**管理>生产>技术工作流**&#x200B;节点中的&#x200B;**&quot;CustomWorkflows&quot;**&#x200B;文件夹。 此文件夹包含一组业务工作流。
 
-监 **视工作流** 存储在技术工作流文件夹的根目录下。 使用的标签 **为“监视”**。
+**监视工作流**&#x200B;存储在技术工作流文件夹的根目录下。 使用的标签为&#x200B;**&quot;Monitoring&quot;**。
 
 以下模式显示了活动的顺序：
 
@@ -49,17 +49,17 @@ ht-degree: 0%
 
 此工作流由以下部分组成：
 
-* “ **开始** ”。
-* 一个 **“JavaScript代码** ”活动，负责分析业务工作流文件夹。
-* “测 **试”活动** ，用于向主管发送投放或重新开始工作流。
-* 负责 **消息布局** 的“投放”活动。
-* “等 **待”活动** ，控制工作流迭代之间的提前期。
+* a **&quot;开始&quot;**&#x200B;活动。
+* a **&quot;JavaScript code&quot;**&#x200B;活动，负责分析业务工作流文件夹。
+* **&quot;Test&quot;**&#x200B;活动向主管发送投放或重新开始工作流。
+* a **&quot;投放&quot;**&#x200B;活动负责消息布局。
+* **&quot;等待&quot;**&#x200B;活动，控制工作流迭代之间的提前期。
 
 ## 第2步：编写JavaScript {#step-2--writing-the-javascript}
 
-JavaScript代码的第一部分与一个 **查询符(queryDef)** ，它允许您用“pause”(@state == 13)、“error”(@failed == 1)或“stopped”(@state == 20)状态标识工作流符。
+JavaScript代码的第一部分与&#x200B;**查询符(queryDef)**&#x200B;一致，它允许您用&quot;pause&quot;(@state == 13)、&quot;error&quot;(@failed == 1)或&quot;stopped&quot;(@state == 20)状态标识工作流。
 
-在 **以下条件下** ，将给出要监视的工作流文件夹的内部名称：
+在以下条件下，将给出要监视的工作流文件夹的&#x200B;**内部名称**:
 
 ```
 <condition boolOperator="AND" expr="[folder/@name] = 'Folder20'" internalId="1"/>
@@ -91,7 +91,7 @@ var queryWkfError = xtk.queryDef.create(
 var ndWkfError = queryWkfError.ExecuteQuery(); 
 ```
 
-JavaScript代码的第二部分允许您根 **据在查询期间恢复的状态** ，为每个工作流显示一条消息。
+JavaScript代码的第二部分允许您根据在查询期间恢复的状态&#x200B;**显示每个工作流的消息**。
 
 >[!NOTE]
 >
@@ -117,11 +117,11 @@ vars.strWorkflowPaused = strPaused;
 vars.strWorkflowStop = strStop;
 ```
 
-## 第3步：创建“测试”活动 {#step-3--creating-the--test--activity}
+## 第3步：创建“Test”活动{#step-3--creating-the--test--activity}
 
 “测试”活动允许您根据“等待”活动确定是否需要发送投放或监视工作流是否需要运行另一个周期。
 
-如果三个投放变 **量“vars.strWorkflowError”、“vars.strWorkflowPaused”或“vars.strWorkflowStop”中的至少一个事件为非无效，则向主管发送。**
+如果三个投放变量“vars.strWorkflowError”、“vars.strWorkflowPaused”或“vars.strWorkflowStop”中的至少一个为非void，则向主管&#x200B;**发送事件。**
 
 ![](assets/uc_monitoring_workflow_test.png)
 
@@ -129,42 +129,42 @@ vars.strWorkflowStop = strStop;
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
-## 第4步：准备投放 {#step-4--preparing-the-delivery}
+## 第4步：准备投放{#step-4--preparing-the-delivery}
 
-“投放”活动基于存储在“资 **源** ”>“模 **板”>“投放模板”节点中的** 投放模板。
+“投放”活动基于存储在&#x200B;**资源>模板>投放模板**&#x200B;节点中的&#x200B;**投放模板**。
 
 此模板必须包括：
 
 * **主管的电子邮件地址**。
-* **用于插入个** 性化文本的HTML内容。
+* **用于** 插入个性化文本的HTML内容。
 
    ![](assets/uc_monitoring_workflow_variables_diffusion.png)
 
    声明的三个变量(WF_Stop、WF_Paused、WF_Error)与三个工作流事件变量匹配。
 
-   这些变量必须在投放模板属 **性的** “变量”选项卡中声明。
+   这些变量必须在投放模板属性的&#x200B;**变量**&#x200B;选项卡中声明。
 
-   要恢 **复工作流事件变量的内容**，您需要声明特定于投放的变量，该变量将使用JavaScript代码返回的值进行初始化。
+   要恢复&#x200B;**工作流事件变量**&#x200B;的内容，您需要声明特定于投放的变量，该变量将使用JavaScript代码返回的值进行初始化。
 
    投放模板具有以下内容：
 
    ![](assets/uc_monitoring_workflow_model_diffusion.png)
 
-创建并批准模板后，您需要将投放 **活动配** 置：
+创建并批准模板后，您需要将&#x200B;**投放**&#x200B;活动配置为：
 
 * 将“投放”活动链接到先前创建的投放模板。
 * 将工作流的事件变量链接到特定于投放模板的变量。
 
-多次-单击 **投放** 活动，然后选择以下选项：
+多次-单击&#x200B;**投放**&#x200B;活动，然后选择以下选项：
 
-* 投放:选 **择“新建”、从模板创建**，然后选择之前创建的投放模板。
-* 对于“ **收件人”和** “内容”字 **段，在投放中选择“指定”**。
-* 要执行的操作：选择 **准备和开始**。
-* 取消选中“ **处理错误** ”选项。
+* 投放:选择“新建”，从模板&#x200B;**创建，然后选择之前创建的投放模板。**
+* 对于&#x200B;**收件人和Content**&#x200B;字段，选择&#x200B;**投放**&#x200B;中的“指定”。
+* 要执行的操作：选择&#x200B;**准备和开始**。
+* 取消选中&#x200B;**处理错误**&#x200B;选项。
 
    ![](assets/uc_monitoring_workflow_optionmodel.png)
 
-* 转到 **投放** 活动的“脚本”选 **项卡** ，通过个性化字段菜 **单添加三个字** 符串类型变量。
+* 转到&#x200B;**投放**&#x200B;活动的&#x200B;**脚本**&#x200B;选项卡，通过个性化字段菜单添加三个&#x200B;**字符串**&#x200B;类型变量。
 
    ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
 
