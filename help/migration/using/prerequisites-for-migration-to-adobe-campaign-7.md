@@ -9,15 +9,15 @@ topic-tags: migrating-to-adobe-campaign-7
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # 迁移到 Adobe Campaign 7 的先决条件{#prerequisites-for-migration-to-adobe-campaign}
 
-在运行任何迁移之前，请参 [阅开始迁移](../../migration/using/before-starting-migration.md)[和配置平台部分](../../migration/using/configuring-your-platform.md) 。
+运行任何迁移之前，请参阅[开始迁移之前的](../../migration/using/before-starting-migration.md)和[配置平台](../../migration/using/configuring-your-platform.md)部分。
 
 从v6.02迁移到Adobe Campaignv7时，某些预先交付的文件将无法交付。
 
