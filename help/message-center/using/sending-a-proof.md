@@ -19,14 +19,14 @@ ht-degree: 6%
 
 可以通过将验证发送到先前创建的种子地址来测试消息投放。
 
-发送验证与常规投放的过程相同(有关详细信息，请参 [阅本节](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof))。 但是，要在消息中心内发送验证，您需要事先执行以下操作：
+发送验证与常规投放的过程相同（有关详细信息，请参阅[本节](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)）。 但是，要在消息中心内发送验证，您需要事先执行以下操作：
 
-* 使用测试数据创建一个或多个种子地址( [请参阅管理事务性消息中的种子地址](../../message-center/using/managing-seed-addresses-in-transactional-messages.md))(请参阅个性 [化数据](../../message-center/using/personalization-data.md))。
-* 创建消息内容(请参阅创 [建消息内容](../../message-center/using/creating-message-content.md))。
+* 使用测试数据创建一个或多个种子地址(请参阅[管理事务性消息](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)中的种子地址)（请参阅[个性化数据](../../message-center/using/personalization-data.md)）。
+* 创建消息内容（请参阅[创建消息内容](../../message-center/using/creating-message-content.md)）。
 
 发送验证:
 
-1. 单击投放 **[!UICONTROL Send a proof]** 窗口中的按钮。
+1. 单击投放窗口中的&#x200B;**[!UICONTROL Send a proof]**&#x200B;按钮。
 1. 分析投放。
 1. 更正所有错误并确认投放。
 
@@ -36,7 +36,7 @@ ht-degree: 6%
 
    ![](assets/messagecenter_send_proof_002.png)
 
-验证可以通过选项卡访问每个模 **[!UICONTROL Audit]** 板。
+验证可通过&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡访问每个模板。
 
 ![](assets/messagecenter_send_proof_003.png)
 
