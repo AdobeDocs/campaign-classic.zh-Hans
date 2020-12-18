@@ -21,7 +21,7 @@ ht-degree: 11%
 
 ## 创建种子地址 {#creating-a-seed-address}
 
-1. In the transactional message template, click the **[!UICONTROL Seed addresses]** tab.
+1. 在事务性消息模板中，单击&#x200B;**[!UICONTROL Seed addresses]**&#x200B;选项卡。
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
@@ -37,12 +37,12 @@ ht-degree: 11%
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
-1. 插入测试数据(请参 [阅个性化数据](../../message-center/using/personalization-data.md))。
+1. 插入测试数据（请参阅[个性化数据](../../message-center/using/personalization-data.md)）。
 
    ![](assets/messagecenter_create_custo_001.png)
 
    <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
-1. 单击链 **[!UICONTROL Add other seed addresses]** 接，然后单击 **[!UICONTROL Add]** 按钮。
+1. 单击&#x200B;**[!UICONTROL Add other seed addresses]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
@@ -51,4 +51,4 @@ ht-degree: 11%
 
    ![](assets/messagecenter_create_seedaddr_008.png)
 
-创建地址后，您可以显示其预览和个性化。 请参阅 [事务性消息预览](../../message-center/using/transactional-message-preview.md)。
+创建地址后，您可以显示其预览和个性化。 请参阅[事务性消息预览](../../message-center/using/transactional-message-preview.md)。
