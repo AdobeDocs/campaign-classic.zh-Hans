@@ -9,8 +9,8 @@ topic-tags: troubleshooting
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 
    * Tomcat侧：所有查询实际上都到达了Adobe CampaignTomcat客户端。
 
-      此阈值在nl6/tomcat-8/conf/server.xml文件 **中配** 置。 maxThreads **属性** 允许您增加一次处理的查询数的阈值。 例如，可以将其更改为250。
+      此阈值在&#x200B;**nl6/tomcat-8/conf/server.xml**&#x200B;文件中配置。 通过&#x200B;**maxThreads**&#x200B;属性，可以增加每次处理的查询数的阈值。 例如，可以将其更改为250。
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -43,7 +43,7 @@ ht-degree: 3%
 
    * 数据库：一组进程在数据库上同时打开的所有连接。
 
-      此阈值在文件nl6/conf/serverConf.xml中 **配置**。 位于 **数据源** 池中的maxCnx **属性** ，可让您提高同时处理的查询的阈值。
+      此阈值在文件&#x200B;**nl6/conf/serverConf.xml**&#x200B;中配置。 位于&#x200B;**数据源池**&#x200B;的&#x200B;**maxCnx**&#x200B;属性允许您增加同时处理的查询的阈值。
 
       ```
           <!-- Data source
