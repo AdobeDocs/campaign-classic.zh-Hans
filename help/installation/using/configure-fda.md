@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -23,21 +23,21 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->兼容版本列在 [活动兼容性表中](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA)。
+>兼容版本列在[活动兼容性矩阵](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA)中。
 
 
 ## 配置步骤 {#fda-configuration-steps}
 
 要使用联合数据访问设置对外部数据库的访问，配置步骤包括：
 
-1. 在Adobe Campaign服务器上安装与数据库对应的驱动程序。 驱动程序列在以下列出的数据库特定 [页面中](#fda-specific-configuration)。
-1. [创建并配置外部帐户](../../installation/using/connecting-to-database.md) ，它允许您在Adobe Campaign和外部数据库之间建立连接。 有关活动中外部帐户的详细信息，请参 [阅本页](../../installation/using/external-accounts.md)。
-1. [以模式](../../installation/using/creating-data-schema.md) ，创建外部数据库的Adobe Campaign。 这允许您识别外部数据库的数据结构。
-1. 如果需要， [从先前创建的目标映射](../../installation/using/defining-data-mapping.md) 创建新模式。 如果收件人的投放来自外部数据库，则这是必需的。 此实施具有与消息个性化相关的限制。
+1. 在Adobe Campaign服务器上安装与数据库对应的驱动程序。 驱动程序列在数据库特定页面[下面列出的](#fda-specific-configuration)中。
+1. [创建和配置外部](../../installation/using/connecting-to-database.md) 帐户，它允许您在Adobe Campaign和外部数据库之间建立连接。有关活动中外部帐户的详细信息，请参阅[此页](../../installation/using/external-accounts.md)。
+1. [以Adobe Campaign](../../installation/using/creating-data-schema.md) 创建外部数据库的计划。这允许您识别外部数据库的数据结构。
+1. 如果需要，[从先前创建的目标映射创建新模式](../../installation/using/defining-data-mapping.md)。 如果收件人的投放来自外部数据库，则这是必需的。 此实施具有与消息个性化相关的限制。
 
 创建模式后，可以在Adobe Campaign工作流中处理数据。 如需详细信息，请参阅[此部分](../../workflow/using/accessing-an-external-database--fda-.md)。
 
-## 数据库特定配置 {#fda-specific-configuration}
+## 数据库特定配置{#fda-specific-configuration}
 
 根据您希望能够从Adobe Campaign访问的外部数据库，您需要执行特定配置。 这些配置实质上涉及安装驱动程序并声明属于环境服务器上每个RDBMS的Adobe Campaign变量。
 
