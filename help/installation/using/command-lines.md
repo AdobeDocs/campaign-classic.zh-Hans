@@ -19,7 +19,7 @@ ht-degree: 4%
 
 以下命令行需要能够访问应用程序服务器。 对于由Adobe托管的部署，这些命令只能由Adobe执行。
 
-## 创建实例 {#creating-an-instance}
+## 创建实例{#creating-an-instance}
 
 可以使用命令行执行实例创建，语法为：
 
@@ -27,11 +27,11 @@ ht-degree: 4%
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-( **eng** 和 **fra是参数** 的可能 `[lang]` 值)
+（其中&#x200B;**eng**&#x200B;和&#x200B;**fra**&#x200B;是`[lang]`参数的可能值）
 
-使用命 **令nlserver config -addinstance:instance1/demo*/eng** ，您可以使用DNS掩码demo*创建一 **个名为instance** 1的英语实例。
+使用命令&#x200B;**nlserver config -addinstance:instance1/demo*/eng**，您可以使用DNS掩码demo*创建一个名为&#x200B;**instance1**&#x200B;的英语实例。
 
-## 声明数据库 {#declaring-a-database}
+## 声明数据库{#declaring-a-database}
 
 您可以使用以下语法从命令行将现有数据库与实例关联：
 
@@ -39,14 +39,14 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-参数可能有以下 **`[rdbms]`** 值：
+**`[rdbms]`**&#x200B;参数可以使用以下值：
 
 * **postgresql**:对于PostgreSQL,
 * **oracle**:oracle,
 * **mssql**:对于Microsoft SQL Server,
 * **DB2**:DB2引擎。
 
-以下命令使用SQL **类型实例服务器** (称为 **base**)配置demo，该实例服务器链接到 **活动帐户** ，并 **在dbsrv6服务器上****** 使用密码：
+以下命令使用SQL类型服务器&#x200B;**base6**&#x200B;配置&#x200B;**demo**&#x200B;实例，该服务器链接到&#x200B;**活动**&#x200B;帐户及其&#x200B;**密码**（在&#x200B;**dbsrv**&#x200B;服务器上）:
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
