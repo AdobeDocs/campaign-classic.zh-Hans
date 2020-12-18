@@ -19,7 +19,7 @@ ht-degree: 2%
 
 叉子允许您同时激活其所有出站活动。
 
-例如，您可以在内容创建和投放发送自动化的上下文中使用活动，以便同时启动目标计算和内容创建。 本节提供专用 [用例](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)。
+例如，您可以在内容创建和投放发送自动化的上下文中使用活动，以便同时启动目标计算和内容创建。 [此部分](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)提供专用用例。
 
 要配置活动，请打开该过渡，然后定义所需出站的编号和标签。
 
