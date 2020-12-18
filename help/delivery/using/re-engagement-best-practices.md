@@ -26,23 +26,23 @@ ht-degree: 0%
 >
 >有关重新参与活动策略和Adobe的可交付性服务的更多信息，请联系您的可交付性顾问或与Adobe销售代理联系。
 
-## ISP如何视图非参与活动? {#how-do-isps-view-non-engagement-activity-}
+## ISP如何视图非参与活动?{#how-do-isps-view-non-engagement-activity-}
 
 多年来，ISP一直使用用户的参与反馈指标来决定放送消息的位置，或者他们是否应该发送消息。 用户参与度由积极反馈和消极反馈以及ISP监控器组成，并且持续进行。 没有参与也许是消极参与的主要贡献者之一。 从可交付性的角度来看，向没有参与的用户一致发送活动也会降低您的IP地址和域的整体信誉。
 
 ISP，如AOL、Gmail、Microsoft和Yahoo! 视图不参与（不需要的电子邮件）和将邮件重定向到垃圾邮件文件夹的开始。 此外，这些订阅者可能不再拥有电子邮件帐户，这可用作“回收”垃圾邮件陷阱。 这意味着该地址在一段时间内无效，并且所有消息都被拒绝。 如果您的订户管理系统未删除“硬退回”地址，则很可能会邮寄垃圾邮件陷阱，从而导致严重的投放问题。
 
-## 您应该如何对待不活动？ {#how-should-you-approach-inactivity-}
+## 您应该如何对待不活动？{#how-should-you-approach-inactivity-}
 
 幸运的是，使用Adobe Campaign平台的客户可以通过查看打开的数据并根据细分单击数据来视图实例中的不活动。 由于不参与会妨碍投放，因此第一个想法是只将订阅者从数据库中删除。 但是，在某些情况下，这可能是一个错误的选择。 因此，重新参与（也称为赢回）策略是保留有兴趣接收邮件的订阅者并逐步淘汰不再显示活动的订阅者的最佳建议。
 
-## 重新参与活动真的有效吗？ {#do-re-engagement-campaigns-really-work-}
+## 重新参与活动真的有效吗？{#do-re-engagement-campaigns-really-work-}
 
 根据Return Path研究，重新参与活动的开放率为12%，而普通活动的平均开放率为14%。 尽管只有24%的订阅者阅读了重新参与活动，但约45%的订阅者阅读了后续消息。
 
 ![](assets/deliverability_implementation_1.png)
 
-## 如何创建重新参与活动? {#how-do-you-create-a-re-engagement-campaign-}
+## 如何创建重新参与活动?{#how-do-you-create-a-re-engagement-campaign-}
 
 ### 阶段1 {#phase-1}
 
