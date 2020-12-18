@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # 传输到中间源{#transfer-to-mid-sourcing}
 
-下面详细介绍的工作流默认 **情况下随“传输到中间源** ”模块一起安装。 For more on this module, refer to this [section](../../installation/using/mid-sourcing-deployment.md).
+下面详细介绍的工作流默认随&#x200B;**传输至中间源**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[部分](../../installation/using/mid-sourcing-deployment.md)。
 
 <table> 
  <tbody> 
