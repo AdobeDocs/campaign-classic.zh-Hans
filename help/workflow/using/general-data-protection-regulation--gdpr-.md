@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # 隐私数据保护规定{#general-data-protection-regulation-gdpr}
 
-下面详述的工作流默认随 **隐私数据保护规** 定模块安装。 For more on this module, refer to this [article](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html).
+下面详述的工作流默认情况下随&#x200B;**隐私数据保护规定**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[文章](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)。
 
 <table> 
  <tbody> 
