@@ -48,7 +48,7 @@ ht-degree: 7%
 * 修复了事务消息跟踪指示器的计算过程的问题。 (NEO-12529, NEO-12581)
 * 修复了HTTPRequest API的一个问题，该问题未等待所有回调完成。 (NEO-12628)
 * 在优惠券临时表中添加了索引以优化投放发送。 (NEO-12437)
-* 修复了分析消息时针对日语(.JP)域的收件人的问题。 (NEO-12246)
+* 修复了分析消息时瞄准日语(.JP)域的收件人的问题。 (NEO-12246)
 * 在Analytics集成中，现在允许检索包含%字符的AAM区段数据。 (NEO-12025)
 * 修复了使用HTTP2发送推送通知时的Tomcat崩溃问题。 (NEO-12701)
 
@@ -58,7 +58,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->这栋建筑已被收回。 请升 [级到最新版本](../../production/using/build-upgrade.md) ，或与 [Adobe客户服务联系](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>这栋建筑已被收回。 请[升级到最新版本](../../production/using/build-upgrade.md)或与[Adobe客户服务部](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。
 
 **改进**
 
@@ -82,7 +82,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->这栋建筑已被收回。 请升 [级到最新版本](../../production/using/build-upgrade.md) ，或与 [Adobe客户服务联系](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>这栋建筑已被收回。 请[升级到最新版本](../../production/using/build-upgrade.md)或与[Adobe客户服务部](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。
 
 **改进**
 
@@ -104,7 +104,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->这栋建筑已被收回。 请升 [级到最新版本](../../production/using/build-upgrade.md) ，或与 [Adobe客户服务联系](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>这栋建筑已被收回。 请[升级到最新版本](../../production/using/build-upgrade.md)或与[Adobe客户服务部](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。
 
 **新增功能**
 
@@ -117,21 +117,21 @@ ht-degree: 7%
  </thead> 
  <tbody> 
   <tr> 
-   <td> Push notification improvements<br /> </td> 
-   <td> 在Adobe Campaign中已对推送通知实施了多项增强：<br /> 
+   <td> 推送通知改进<br /> </td> 
+   <td> 已对Adobe Campaign中的推送通知实施了多项增强：<br /> 
     <ul> 
      <li> <p>在iOS中跟踪静默通知 </p> </li> 
      <li> <p>在iOS中实施注册呼叫反馈</p> </li> 
      <li> <p>提高iOS投放准备速度</p> </li> 
-    </ul> <p>作为Google GCM折旧的一部分，Android V2连接器现在仅允许与FCM服务器连接。</p><p>有关详细信息，请参阅<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">详细文档</a>。本文详细介绍了FCM的手 <a href="https://helpx.adobe.com/cn/campaign/kb/migrate-to-fcm.html">动升级</a>。 </p> </td> 
+    </ul> <p>作为Google GCM折旧的一部分，Android V2连接器现在仅允许与FCM服务器连接。</p><p>有关详细信息，请参阅<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">详细文档</a>。本<a href="https://helpx.adobe.com/cn/campaign/kb/migrate-to-fcm.html">文章</a>中详细介绍了手动升级到FCM。 </p> </td> 
   </tr> 
   <tr> 
    <td> SQL数据管理活动<br /> </td> 
-   <td> <p>已添加新的数据管理工作流活动。 使用 <strong>SQL数据管理</strong> 活动，您可以编写或复制粘贴自己的SQL脚本，以创建和填充工作表(仅联合数据访问)。 </p> <p>有关详细信息，请参阅<a href="../../workflow/using/sql-data-management.md">详细文档</a>。</p></td> 
+   <td> <p>已添加新的数据管理工作流活动。 使用<strong>SQL数据管理</strong>活动，您可以编写或复制粘贴自己的SQL脚本以创建和填充工作表(仅联合数据访问)。 </p> <p>有关详细信息，请参阅<a href="../../workflow/using/sql-data-management.md">详细文档</a>。</p></td> 
   </tr> 
   <tr> 
    <td> 工作流监视<br /> </td> 
-   <td> <p>借助新的Adobe Campaign工作流热图，平台管理员可以快速以图形形式呈现所有并发工作流，这使他们能够监控实例的负载并相应地规划工作流。</p> <p>有关详细信息，请参阅<a href="../../workflow/using/heatmap.md">详细文档</a>。</p> <p>Workflow HeatMap软件包也可根据需要在8977之前（从8700开始）进行构建。 有关请求和安装它的详细信息，请参 <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">阅本页</a>。</p> </td> 
+   <td> <p>借助新的Adobe Campaign工作流热图，平台管理员可以快速以图形形式呈现所有并发工作流，这使他们能够监控实例的负载并相应地规划工作流。</p> <p>有关详细信息，请参阅<a href="../../workflow/using/heatmap.md">详细文档</a>。</p> <p>Workflow HeatMap软件包也可根据需要在8977之前（从8700开始）进行构建。 有关请求和安装它的详细信息，请参阅<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">此页</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -148,8 +148,8 @@ ht-degree: 7%
 
 * Campaign Classic API 现在可在[专用页面](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)中使用。如果您使用的是 jsapi.chm 文件，您现在应该参阅新的在线版本。
 * 现在支持PostgreSQL 10、Debian 9和Teradata16.20。 请参阅[兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
-* 创建SFTP连接时，您现在可以使用代理身份验证。 For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
-* 使 **用直邮投放** 创建单个投放时，投放模板属性中现在提供“日期计算公式”选项。 (NEO-9792)
+* 创建SFTP连接时，您现在可以使用代理身份验证。 有关详细信息，请参阅[详细文档](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)(NEO-9868)
+* 使用直邮投放创建单个投放时，**日期计算公式**&#x200B;选项现在在投放模板属性中可用。 (NEO-9792)
 * 对cookie跟踪和Web应用程序的域名管理进行了改进。 有关详细信息，请参阅下面的“技术演变”部分。
 * Adobe Marketing Cloud在投放或登陆页共用资产的进口在安全性和性能方面都得到改进。
 * 移动渠道外部帐户中有一个新的复选框，用于在日志文件中启用详细的SMPP跟踪，这使得可以从Adobe Campaign界面直接访问该输出。
@@ -170,7 +170,7 @@ ht-degree: 7%
 
 对cookie跟踪和Web应用程序的域名管理进行了改进。
 
-现在，默认支持所有双字母二级域名（例如。aa.com）。 对于更复杂的域名（例如，三个字母的二级域，如。com.au），您需要将它们添加到serverConf的 **cookieDomains** 选项中（在重定向标记下）。 以下是一个示例：
+现在，默认支持所有双字母二级域名（例如。aa.com）。 对于更复杂的域名（例如，三个字母的二级域，如。com.au），您需要在serverConf的&#x200B;**cookieDomains**&#x200B;选项（在重定向标记下）中添加这些域名。 以下是一个示例：
 
 ```
 <redirection cookiedomain="http://toureiffel.paris">
@@ -197,8 +197,8 @@ NmsRecipient上的索引已重新工作。 这应会提高使用此表的查询�
 
 **修补程序**
 
-* 修复了阻止下载Web下载工作 **流活动** 中的文件的错误。 (NEO-11105)
-* 修复了偶尔将“发送指示 **器”和“活动属性** ”工作流保留为“失败”状态的错误(NEO-10820)。
+* 修复了阻止下载&#x200B;**Web下载**&#x200B;工作流活动中的文件的错误。 (NEO-11105)
+* 修复了偶尔将&#x200B;**发送指示器和活动属性**&#x200B;工作流保留为“失败”状态(NEO-10820)的错误。
 * 修复了删除在工作流中运行收件人更新列表后创建的列表活动的问题。 (NEO-11696)
 * 修复了在活动日历（日语实例）中提前一个月错误显示活动的问题。 (NEO-11445)
 * 修复了导致Analytics配置无法显示在投放属性的“Web分析”选项卡中的问题。 (NEO-11619)
@@ -217,7 +217,7 @@ NmsRecipient上的索引已重新工作。 这应会提高使用此表的查询�
 * 修复了使用扩展通用SMPP连接器设置移动渠道外部帐户时发生的问题：如果为接收器指定了不同的参数，则发送器将错误地使用这些参数而不是自己的参数。
 * 修复了在为压力规则设置频率时导致计划投放失败的问题，因为在第一次仲裁后，投放会不断重新计算。 (NEO-10016)
 * 修复了在应用程序池循环过程（在nlsrvmod.dll库中）期间导致IIS Web服务器崩溃的问题。 (NEO-10862)
-* 修复了一个问题，该问题可能会阻止在收件人和 **目标屏幕中搜** 索用户档案。 (NEO-8228)
+* 修复了一个问题，该问题可能会阻止在&#x200B;**收件人和目标**&#x200B;屏幕中搜索用户档案。 (NEO-8228)
 * 修复了在记录数量较多的情况下访问事件历史记录文件夹时可能导致超时错误的问题。 (NEO-11738)
 * 修复了可能导致LINE投放收件人错误地返回为“不可到达”的问题。 (NEO-10833)
 * 修复了在Oracle上用附加列执行工作流查询时的问题。 (NEO-11615)
@@ -237,7 +237,7 @@ NmsRecipient上的索引已重新工作。 这应会提高使用此表的查询�
 * 修复了导致在Android推送通知投放的其他参数中将URL编码为跟踪URL的问题。 (NEO-11468)
 * 修复了将参数设置为“一天间隔”和“打开”时“用户活动”报告中出现的脚本错误。 (NEO-11655)
 * 修复了通过已验证的Web代理连接到中间源服务器或消息中心时发生的问题。 (NEO-11309)
-* 修复了在基于SQL视图选择特定模式的元素后保存新投放组合时 **发生的Oracle错误**。 (NEO-11682)
+* 修复了在根据SQL视图&#x200B;**选择特定模式**&#x200B;的元素后保存新投放组合时发生的Oracle错误。 (NEO-11682)
 * 修复了在使用解压缩选项通过加载文件活动处理包含。csv的zip文件时，导致生成包含误报的拒绝文件的问题。
 * xtkjoblog现在由清除清除。
 
