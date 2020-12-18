@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 版本{#edition}
 
-可通过节点访问用于创建和配置导航层次结构配置文档的 **[!UICONTROL Administration > Configuration > Navigation hierarchies]** 屏幕：
+可通过&#x200B;**[!UICONTROL Administration > Configuration > Navigation hierarchies]**&#x200B;节点访问用于创建和配置导航层次结构配置文档的屏幕：
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->通过“名称”编辑控件，您可以输入由名称和文档组成的命名空间键。 元素的“name”和“命名空间”属 **`<navtree>`** 性会在模式的XML编辑字段中自动更新。
+>通过“名称”编辑控件，您可以输入由名称和文档组成的命名空间键。 **`<navtree>`**&#x200B;元素的“name”和“命名空间”属性会在模式的XML编辑字段中自动更新。
 
 预览会自动生成包含完整配置的合并文档:
 
