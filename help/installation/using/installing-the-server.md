@@ -17,13 +17,13 @@ ht-degree: 2%
 
 # 安装服务器{#installing-the-server}
 
-## 执行安装项目 {#executing-the-installation-program}
+## 执行安装项目{#executing-the-installation-program}
 
 对于Windows 32位平台，安装32位Adobe Campaign。 对于Windows 64位平台，安装64位Adobe Campaign。
 
 Adobe Campaign服务器的安装步骤如下：
 
-1. 执行文 **件setup.exe**。
+1. 执行文件&#x200B;**setup.exe**。
 
    ![](assets/s_ncs_install_installer_01.png)
 
@@ -34,11 +34,11 @@ Adobe Campaign服务器的安装步骤如下：
    有几种安装类型可用：
 
    * **[!UICONTROL Installation of an application server]** :安装Adobe Campaign应用服务器和客户端控制台。
-   * **[!UICONTROL Minimal installation (Network)]** :从网络安装客户端计算机。 如果需要，只有有限数量的DLL将安装在计算机上，所有其他组件将从网络驱动器中使用。
+   * **[!UICONTROL Minimal installation (Network)]** :从网络安装客户端计算机。如果需要，只有有限数量的DLL将安装在计算机上，所有其他组件将从网络驱动器中使用。
    * **[!UICONTROL Installation of a client]** :安装Adobe Campaign客户端所需的组件。
    * **[!UICONTROL Custom installation]** :用户选择要安装的元素。
 
-   选 **择应用程序服务器**，然后执行以下不同步骤：
+   选择&#x200B;**安装应用程序服务器**，然后执行以下步骤：
 
    ![](assets/s_ncs_install_installer_02.png)
 
@@ -46,7 +46,7 @@ Adobe Campaign服务器的安装步骤如下：
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. 单击 **[!UICONTROL Finish]** 以开始安装：
+1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;开始安装：
 
    ![](assets/s_ncs_install_installer_04.png)
 
@@ -62,9 +62,9 @@ Adobe Campaign服务器的安装步骤如下：
    >
    >服务器安装完成后，需要重新启动服务器以避免可能出现的网络问题。
 
-   安装完成后，将开始Adobe Campaign创建配置文件。 请参 [阅服务器的第一个开始](#first-start-up-of-the-server)。
+   安装完成后，将开始Adobe Campaign创建配置文件。 请参阅[服务器的首次开始](#first-start-up-of-the-server)。
 
-## 摘要安装测试 {#summary-installation-testing}
+## 摘要安装测试{#summary-installation-testing}
 
 可以使用以下命令测试初始安装：
 
@@ -78,9 +78,9 @@ nlserver pdump
 No task
 ```
 
-## 服务器的首次开始 {#first-start-up-of-the-server}
+## 服务器{#first-start-up-of-the-server}的首次开始
 
-安装测试完成后，通过菜单打开命令提 **[!UICONTROL Start > Programs > Adobe Campaign]** 示符并输入以下命令：
+安装测试完成后，通过&#x200B;**[!UICONTROL Start > Programs > Adobe Campaign]**&#x200B;菜单打开命令提示符并输入以下命令：
 
 ```
 nlserver web
@@ -102,7 +102,7 @@ nlserver web
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-按 **Ctrl+C** 可停止该进程，然后输入以下命令：
+按&#x200B;**Ctrl+C**&#x200B;可停止进程，然后输入以下命令：
 
 ```
 nlserver start web
@@ -135,13 +135,13 @@ nlserver stop web
 12:18:31 >   Web server stopped (pid=29188, tid=-1224824320)...
 ```
 
-## 内部标识符的口令 {#password-for-the-internal-identifier}
+## 内部标识符{#password-for-the-internal-identifier}的口令
 
-Adobe Campaign服务器定义名为internal的技术登 **录名** ，该登录名对所有实例具有所有权限。 安装后，登录名没有密码。 必须定义一个。
+Adobe Campaign服务器定义名为&#x200B;**internal**&#x200B;的技术登录名，该登录名对所有实例具有所有权限。 安装后，登录名没有密码。 必须定义一个。
 
-请参阅部 [分内部标识符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+请参见[内部标识符](../../installation/using/campaign-server-configuration.md#internal-identifier)一节。
 
-## 启动Adobe Campaign服务 {#starting-adobe-campaign-services}
+## 启动Adobe Campaign服务{#starting-adobe-campaign-services}
 
 要开始Adobe Campaign服务，您可以使用服务管理器或在命令行中输入以下内容（具有相应权限）:
 
@@ -157,7 +157,7 @@ net stop nlserver6
 
 ## 安装LibreOffice {#installing-libreoffice}
 
-例如，从https://www.libreoffice.org/download/libreoffice-fresh/下载LibreOffice [](https://www.libreoffice.org/download/libreoffice-fresh/) ，然后按照常规安装步骤操作。
+例如，从[https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/)下载LibreOffice，然后按照常规安装步骤操作。
 
 添加以下环境变量：
 
