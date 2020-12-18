@@ -17,32 +17,32 @@ ht-degree: 1%
 
 # 配置{#configuration}
 
-## 更改syslogd监听端口 {#changing-the-syslogd-listening-port}
+## 更改syslogd监听端口{#changing-the-syslogd-listening-port}
 
-默认情况下， **syslogd** 监听端口为666(udp)。 如有必要，可以使用环境变量更改它。
+默认情况下，**syslogd**&#x200B;侦听端口为666(udp)。 如有必要，可以使用环境变量更改它。
 
 配置此变量后，所有Adobe Campaign模块都会考虑此变量。
 
-### 在Linux中 {#in-linux}
+### 在Linux {#in-linux}中
 
-编辑 **customer.sh** 文件并添加以下行：
+编辑&#x200B;**customer.sh**&#x200B;文件并添加以下行：
 
 ```
 export TRACE_ADDR=localhost:<listening port>
 ```
 
-### 在Windows中 {#in-windows}
+### 在Windows {#in-windows}中
 
-您需要使用 **localhost值创建** TRACE **_ADDR.** 环境变量： **`<listening port="" />`**.
+您需要使用&#x200B;**localhost**&#x200B;值创建&#x200B;**TRACEADDR.**&#x200B;环境变量：**`<listening port="" />`**。
 
 >[!IMPORTANT]
 >
 >我们建议运行一些测试，以确保在创建此环境变量后您的平台能正常工作。
 
-## 配置安全区域 {#configuring-security-zones}
+## 配置安全区域{#configuring-security-zones}
 
-每个操作员需要链接到一个区域才能登录到实例，并且操作员IP必须包含在安全区域中定义的地址或地址集中。 技术区配置在Adobe Campaign服务器的配置文件中执行。 必须在控制台（节点）中定义操作员与安全区 **[!UICONTROL Administration > Access management > Operators]** 域的链接。
+每个操作员需要链接到一个区域才能登录到实例，并且操作员IP必须包含在安全区域中定义的地址或地址集中。 技术区配置在Adobe Campaign服务器的配置文件中执行。 必须在控制台（**[!UICONTROL Administration > Access management > Operators]**&#x200B;节点）中定义操作员与安全区域的链接。
 
 >[!NOTE]
 >
->有关配置安全区域的详细信息，请参 [阅此部分](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+>有关配置安全区域的详细信息，请参阅[本节](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
