@@ -15,17 +15,17 @@ ht-degree: 3%
 ---
 
 
-# 通过SOAP（服务器端）进行集成{#integration-via-soap-server-side}
+# 通过SOAP（服务器端）集成{#integration-via-soap-server-side}
 
 为优惠管理提供的SOAP Web服务与通常用于Adobe Campaign的服务不同。 您可以通过上一节中介绍的交互URL访问这些优惠，并让您展示或更新给定联系人的信息。
 
-## 优惠建议 {#offer-proposition}
+## 优惠建议{#offer-proposition}
 
-对于通过SOAP优惠建议，添 **加nms:postipation#Phoned** 命令后跟以下参数：
+对于通过SOAP优惠建议，添加&#x200B;**nms:postipation#Phoned**&#x200B;命令，后跟以下参数：
 
 * **targetId**:收件人的主键（可以是复合键）。
 * **maxCount**:指定联系人的优惠建议数。
-* **上下文**:允许您在空间模式中添加上下文信息。 如果使用的模式 **是nms:interaction****`<empty>`** ，则应添加。
+* **上下文**:允许您在空间模式中添加上下文信息。如果使用的模式为&#x200B;**nms:interaction**，则应添加&#x200B;**`<empty>`**。
 * **类别**:指定类别必须属于的优惠。
 * **主题**:指定优惠必须属于的主题。
 * **uuid**:adobe campaign永久cookie的值(“uuid230”)。
@@ -34,22 +34,22 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->targetId **和** maxCount **设置是必** 需的。 其他选项是可选的。
+>**targetId**&#x200B;和&#x200B;**maxCount**&#x200B;设置是强制设置。 其他选项是可选的。
 
 响应查询,SOAP服务将返回以下参数：
 
 * **interactionId**:交互的ID。
 * **命题**:XML元素，包含命题的列表，每个命题都有自己的ID和HTML表示。
 
-## 优惠更新 {#offer-update}
+## 优惠更新{#offer-update}
 
-将nms: **interaction#UpdateStatus命令添加** 到URL，后跟以下参数：
+将&#x200B;**nms:interaction#UpdateStatus**&#x200B;命令添加到URL，后跟以下参数：
 
-* **主张**:字符串，它包含在优惠建议期间作为输出给定的命题ID。 请参阅 [优惠建议](#offer-proposition)。
-* **状态**:字符串类型，它指定优惠的新状态。 可能的值列在nms: **common** 明细列表的命 **名状态模式中** 。 例如，现成的数字3与“已接受”状 **态** 。
-* **上下文**:XML元素，允许您在空间模式中添加上下文信息。 如果使用的模式 **是nms:interaction****`<empty>`** ，则应添加。
+* **主张**:字符串，它包含在优惠建议期间作为输出给定的命题ID。请参阅[优惠建议](#offer-proposition)。
+* **状态**:字符串类型，它指定优惠的新状态。可能的值列在&#x200B;**nms:common**&#x200B;明细列表的&#x200B;**命名状态**&#x200B;模式中。 例如，现成的数字3与&#x200B;**Accepted**&#x200B;状态相对应。
+* **上下文**:XML元素，允许您在空间模式中添加上下文信息。如果使用的模式为&#x200B;**nms:interaction**，则应添加&#x200B;**`<empty>`**。
 
-## 使用SOAP调用的示例 {#example-using-a-soap-call}
+## 使用SOAP调用{#example-using-a-soap-call}的示例
 
 以下是SOAP调用的代码示例：
 
