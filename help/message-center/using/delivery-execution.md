@@ -21,7 +21,7 @@ ht-degree: 8%
 >
 >MTA优先处理事务性消息，而不是任何其他投放。
 
-在执行实例上，一旦扩充阶段完成并且投放模板已链接到事件，就会发送投放。 所有投放都在文件夹中 **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** 分组。
+在执行实例上，一旦扩充阶段完成并且投放模板已链接到事件，就会发送投放。 所有投放都分组在&#x200B;**[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**&#x200B;文件夹中。
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
@@ -33,4 +33,4 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->对于托管或混合安装，如果您已升级到增强MTA，则所有事务性消息也可以与Adobe Campaign增强MTA一起发送，以改进交付能力、吞吐量和弹回处理。 所有影响与标准营销消息相同，并在Adobe Campaign增强的MTA [文档中详细介绍](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html) 。
+>对于托管或混合安装，如果您已升级到增强MTA，则所有事务性消息也可以与Adobe Campaign增强MTA一起发送，以改进交付能力、吞吐量和弹回处理。 所有影响与标准营销消息的影响相同，并在[Adobe Campaign增强MTA](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)文档中详细介绍。
