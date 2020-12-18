@@ -15,20 +15,20 @@ ht-degree: 0%
 ---
 
 
-# 配置访问Hadoop {#configure-access-to-hadoop}
+# 配置对Hadoop{#configure-access-to-hadoop}的访问
 
-使用活动 **联合数据访问** (联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置访问Hadoop。
+使用活动&#x200B;**联合数据访问**(联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置访问Hadoop。
 
-1. 配置 [Hadoop数据库](#configuring-hadoop)
-1. 在Hadoop中 [配置活动](#hadoop-external) 外部帐户
+1. 配置[Hadoop数据库](#configuring-hadoop)
+1. 将Hadoop[外部帐户](#hadoop-external)配置为活动
 
 ## 配置Hadoop3.0 {#configuring-hadoop}
 
 在联合数据访问中连接到Hadoop外部数据库需要Adobe Campaign服务器上的以下配置。 请注意，此配置适用于Windows和Linux。
 
-1. 根据您的操作系统版本，下载Hadoop的ODBC驱动程序。 驱动程序可在此页 [面上找到](https://www.cloudera.com/downloads.html)。
+1. 根据您的操作系统版本，下载Hadoop的ODBC驱动程序。 驱动程序可在[此页](https://www.cloudera.com/downloads.html)上找到。
 
-1. 然后，您需要安装ODBC驱动程序并为配置单元连接创建DSN。 说明可在此页 [中找到](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
+1. 然后，您需要安装ODBC驱动程序并为配置单元连接创建DSN。 说明可在[此页](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)中找到
 
 1. 下载和安装ODBC驱动程序后，需要重新启动Campaign Classic。 要执行此操作，请运行以下命令：
 
@@ -37,19 +37,19 @@ ht-degree: 0%
    systemctl start nlserver.service
    ```
 
-1. 在Campaign Classic中，您随后可以配置 [!DNL Hadoop] 外部帐户。 有关如何配置外部帐户的详细信息，请参 [阅此部分](#hadoop-external)。
+1. 在Campaign Classic中，您随后可以配置[!DNL Hadoop]外部帐户。 有关如何配置外部帐户的详细信息，请参阅[本节](#hadoop-external)。
 
-## Hadoop外部帐户 {#hadoop-external}
+## Hadoop外部帐户{#hadoop-external}
 
-外部帐户 [!DNL Hadoop] 允许您将活动实例连接到Hadoop外部数据库。
+[!DNL Hadoop]外部帐户允许您将活动实例连接到Hadoop外部数据库。
 
-1. 在Campaign Classic中，配置您的 [!DNL Hadoop] 外部帐户。 From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. 在Campaign Classic中，配置[!DNL Hadoop]外部帐户。 在&#x200B;**[!UICONTROL Explorer]**&#x200B;中，单击&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
 
 1. 单击 **[!UICONTROL New]**.
 
-1. 选 **[!UICONTROL External database]** 择作为外部帐户 **[!UICONTROL Type]**。
+1. 选择&#x200B;**[!UICONTROL External database]**&#x200B;作为外部帐户的&#x200B;**[!UICONTROL Type]**。
 
-1. 配置 **[!UICONTROL Hadoop]** 外部帐户，必须指定：
+1. 配置&#x200B;**[!UICONTROL Hadoop]**&#x200B;外部帐户，必须指定：
 
    * **[!UICONTROL Type]**:ODBC(Sybase ASE,Sybase IQ)
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
    * **[!UICONTROL Password]**:用户帐户密码
 
-   * **[!UICONTROL Database]**:如果未在DSN中指定数据库的名称。 如果在DSN中指定，则可将其留空
+   * **[!UICONTROL Database]**:如果未在DSN中指定数据库的名称。如果在DSN中指定，则可将其留空
 
    * **[!UICONTROL Time zone]**:服务器时区
 
@@ -77,18 +77,18 @@ ht-degree: 0%
 | 名称 | 值 | 说明 |
 |---|---|---|
 | bulkKey | Azureblob或DataLake访问密钥 | 对于wasb://或wasbs://批量加载程序(即，如果批量加载工具与wasb://或wasbs://开始)。 <br>它是用于批量加载的blob或DataLake存储桶的访问密钥。 |
-| hdfsPort | 端口号 <br>默认设置为8020 | 对于HDFS批量加载(即，如果批量加载工具开始为webhdfs://或webhdfss://)。 |
+| hdfsPort | 端口号<br>默认设置为8020 | 对于HDFS批量加载(即，如果批量加载工具开始为webhdfs://或webhdfss://)。 |
 | bucketsNumber | 20 | 创建聚簇表时的桶数。 |
 | fileFormat | 镶木 | 工作表的默认文件格式。 |
 
 
 ## 配置Hadoop2.1 {#configure-access-hadoop-2}
 
-如果需要连接到Hadoop2.1，请按照下面为Windows或Linux [说明](#for-windows) 的 [步骤](#for-linux)。
+如果需要连接到Hadoop2.1，请按照以下步骤操作[Windows](#for-windows)或[Linux](#for-linux)。
 
 ### Hadoop2.1 for Windows {#for-windows}
 
-1. 安装适用于Windows [的ODBC和Azure](https://www.microsoft.com/en-us/download/details.aspx?id=40886) HD Insight驱动程序。
+1. 为Windows安装ODBC和[Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886)驱动程序。
 1. 通过运行ODBC数据源管理工具创建DSN（数据源名称）。 Hive的系统DSN范例供您修改。
 
    ```
@@ -100,7 +100,7 @@ ht-degree: 0%
    User/Password: admin/<your password here>
    ```
 
-1. 创建Hadoop外部帐户，详 [细信息](#hadoop-external)。
+1. 创建Hadoop外部帐户，详见[本节](#hadoop-external)。
 
 ### Hadoop2.1 for Linux {#for-linux}
 
@@ -110,7 +110,7 @@ ht-degree: 0%
    apt-get install unixodbc
    ```
 
-1. 从HortonWorks下载并安装Apache Hive的ODBC驱动程序： [https://www.cloudera.com/downloads.html](https://www.cloudera.com/downloads.html)。
+1. 从HortonWorks下载并安装Apache Hive的ODBC驱动程序：[https://www.cloudera.com/downloads.html](https://www.cloudera.com/downloads.html)。
 
    ```
    dpkg -i hive-odbc-native_2.1.10.1014-2_amd64.deb
@@ -153,9 +153,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >此处 **的UseNativeQuery** 参数非常重要。 活动识别配置单元，除非设置UseNativeQuery，否则将无法正常工作。 通常，驱动程序或Hive SQL Connector将重写查询并篡改列顺序。
+   >此处的&#x200B;**UseNativeQuery**&#x200B;参数非常重要。 活动识别配置单元，除非设置UseNativeQuery，否则将无法正常工作。 通常，驱动程序或Hive SQL Connector将重写查询并篡改列顺序。
 
-   身份验证设置取决于配置单元/Hadoop配置。 例如，对于HD Insight，请使用AuthMech=6进行用户／密码身份验证，如 [下所述](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm)。
+   身份验证设置取决于配置单元/Hadoop配置。 例如，对于HD Insight，请使用AuthMech=6进行用户／密码身份验证，如[此处](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm)所述。
 
 1. 导出变量。
 
@@ -187,5 +187,5 @@ ht-degree: 0%
    isql vorac -v
    ```
 
-1. 创建Hadoop外部帐户，详 [细信息](#hadoop-external)。
+1. 创建Hadoop外部帐户，详见[本节](#hadoop-external)。
 
