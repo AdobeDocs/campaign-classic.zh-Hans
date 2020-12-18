@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # 与 Adobe Experience Cloud 解决方案集成{#integrations-with-adobe-experience-cloud-solutions}
 
-下面详细介绍的工作流默认 **情况下随“与Adobe Experience Cloud** ”模块集成一起安装。 For more on this module, refer to this [section](../../integrations/using/configuring-ims.md#installing-the-package).
+默认情况下，下面详细介绍的工作流随&#x200B;**与Adobe Experience Cloud**&#x200B;模块集成一起安装。 有关此模块的详细信息，请参阅此[部分](../../integrations/using/configuring-ims.md#installing-the-package)。
 
 <table> 
  <tbody> 
