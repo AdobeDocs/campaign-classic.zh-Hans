@@ -17,12 +17,12 @@ ht-degree: 2%
 
 # 任务{#task}
 
-在活动工作流中，活动 **[!UICONTROL Task]** 允许您指定两种方案：第一个是任务完成时的任务，第二个是未完成时的数据（如果手动标记为未完成或已过期）。
+在活动工作流程中，**[!UICONTROL Task]**&#x200B;活动允许您指定两种方案：第一个是任务完成时的任务，第二个是未完成时的数据（如果手动标记为未完成或已过期）。
 
 ![](assets/mrm_task_in_workflow.png)
 
-如何配置和操作任务在本节中有 [详细说](../../campaign/using/creating-and-managing-tasks.md)。
+如何配置和操作任务详见此[部分](../../campaign/using/creating-and-managing-tasks.md)。
 
 ![](assets/wkf_task_activity.png)
 
-通过 **[!UICONTROL Resources]** 此选项，您可以定义多个运算符以及任务的批准计划。 如果批准者拒绝，这不会导致任务本身被拒绝。
+使用&#x200B;**[!UICONTROL Resources]**&#x200B;选项可以定义多个运算符以及任务的批准计划。 如果批准者拒绝，这不会导致任务本身被拒绝。
