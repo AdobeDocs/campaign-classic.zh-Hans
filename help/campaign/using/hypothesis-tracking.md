@@ -19,11 +19,11 @@ ht-degree: 1%
 
 假设验证计算结果可在Adobe Campaign平台的不同级别上获得：假设验证和目标群反应计算的指标可通过实际假设验证以及活动和投放提供的假设验证报告看到。
 
-## 假设验证结果 {#hypothesis-results}
+## 假设验证结果{#hypothesis-results}
 
-### 指标 {#indicators}
+### 指示器{#indicators}
 
-一旦计算了假设验证，就会自动更新多个度量指标。 这些选项卡位 **[!UICONTROL General]** 于假设验证的选项卡中。
+一旦计算了假设验证，就会自动更新多个度量指标。 这些选项卡位于假设验证的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中。
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 * **对照组的响应率**:答复对照组数/投放对照组总数。
 * **反应数**:表中记录数，它包含个人、假设验证和事务表之间的关系。
 
-要获得完整的列表，请单击链 **[!UICONTROL Display the list]** 接：
+对于完整的列表，单击&#x200B;**[!UICONTROL Display the list]**&#x200B;链接：
 
 ![](assets/response_hypothesis_indicators_002.png)
 
@@ -56,23 +56,23 @@ ht-degree: 1%
 * **有效投资回报**:计算投放成本／附加毛利。
 * **重要性**:根据活动重要性，包含0到3的值。
 
-### 反应 {#reactions}
+### 反应{#reactions}
 
-您可以通过选项卡视图收件人对假设验证的 **[!UICONTROL Reactions]** 反应。
+您可以通过&#x200B;**[!UICONTROL Reactions]**&#x200B;选项卡视图收件人对假设验证的反应。
 
-1. 假设验证计算完成后，转 **[!UICONTROL Campaign management > Measurement hypotheses]** 到Adobe Campaign树的节点。
-1. 选择所需的假设验证并单击选 **[!UICONTROL Reactions]** 项卡，以视图可能在营销活动后购买某些产品的收件人的列表。
+1. 假设验证计算完成后，转到Adobe Campaign树的&#x200B;**[!UICONTROL Campaign management > Measurement hypotheses]**&#x200B;节点。
+1. 选择所需的假设验证，然后单击&#x200B;**[!UICONTROL Reactions]**&#x200B;选项卡以视图可能在营销活动后购买某些产品的收件人的列表。
 
    ![](assets/response_hypothesis_reactions_001.png)
 
 ## 报告 {#reports}
 
-您 **[!UICONTROL Hypothesis report]** 可以视图对活动和投放执行的假设验证的结果。 此报告包含由假设验证计算的指标(有关详细信息，请参阅 [指标](#indicators))。
+使用&#x200B;**[!UICONTROL Hypothesis report]**&#x200B;可以视图对活动和投放执行的假设验证的结果。 此报告包含由假设验证计算的指示器（有关详细信息，请参阅[指示器](#indicators)）。
 
-* **在活动级**:单击相 **[!UICONTROL Reports]** 关活动的链接，然后选择 **[!UICONTROL Hypothesis report]**。 此报告包含活动投放的列表以及为每个投放计算的假设验证。
+* **在活动级**:单击相 **[!UICONTROL Reports]** 关活动的链接，然后选择 **[!UICONTROL Hypothesis report]**。此报告包含活动投放的列表以及为每个投放计算的假设验证。
 
    ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **在投放级**:要访问报告，请打开相关投放，单击 **[!UICONTROL Reports]** 选项卡 **[!UICONTROL Summary]** 中的，然后选择 **[!UICONTROL Hypothesis report]**。 如果为同一假设验证计算了多个投放，则报表将包含所有假设验证。
+* **在投放级**:要访问报告，请打开相关投放，单 **[!UICONTROL Reports]** 击选 **[!UICONTROL Summary]** 项卡中的 **[!UICONTROL Hypothesis report]**。如果为同一假设验证计算了多个投放，则报表将包含所有假设验证。
 
    ![](assets/response_hypothesis_delivery_report_001.png)
