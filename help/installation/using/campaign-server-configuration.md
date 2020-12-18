@@ -19,15 +19,15 @@ ht-degree: 2%
 
 以下各节详细介绍了强制性服务器配置，这将保证大多数设置的Adobe Campaign的高效运行。
 
-配置活动服务器中提 [供了其他配置](../../installation/using/configuring-campaign-server.md)。
+在[配置活动服务器](../../installation/using/configuring-campaign-server.md)中提供其他配置。
 
 >[!NOTE]
 >
->服务器端配置只能由Adobe执行，由Adobe托管。 要进一步了解不同的部署，请参 [阅托管模型](../../installation/using/hosting-models.md) 部分或 [功能表](../../installation/using/capability-matrix.md)。
+>服务器端配置只能由Adobe执行，由Adobe托管。 要进一步了解不同的部署，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[功能矩阵](../../installation/using/capability-matrix.md)。
 
-## 内部标识符 {#internal-identifier}
+## 内部标识符{#internal-identifier}
 
-内部 **标识符** 是用于安装、管理和维护目的的技术登录名。 此登录名未与实例关联。
+**internal**&#x200B;标识符是用于安装、管理和维护的技术登录名。 此登录名未与实例关联。
 
 使用此登录名连接的操作员将拥有所有实例的所有权限。 在安装新的情况下，此登录名没有口令。 必须手动定义此密码。
 
@@ -49,36 +49,36 @@ Confirmation: XXXX
 17:34:02 >   Password successfully changed for account 'internal' (authentication mode 'nl')
 ```
 
-## 配置文件 {#configuration-files}
+## 配置文件{#configuration-files}
 
-配置文件存储在Adobe Campaign **安装文** 件夹的conf文件夹中。 配置分布在两个文件上：
+配置文件存储在Adobe Campaign安装文件夹的&#x200B;**conf**&#x200B;文件夹中。 配置分布在两个文件上：
 
-* **`config-<instance>.xml`** (其 **中** instance是实例的名称):实例的特定配置。 如果您在多个实例之间共享服务器，请在其相关文件中输入每个实例的特定参数。
-* **serverConf.xml**:所有实例的常规配置。 此文件结合了Adobe Campaign服务器的技术参数：这些属性由所有实例共享。 下面详细介绍了其中一些参数。 引用文件本身以视图所有可用参数。 本节中列出的不同节点和 [参数](../../installation/using/the-server-configuration-file.md)。
+* **`config-<instance>.xml`** (其 **** 中instance是实例的名称):实例的特定配置。如果您在多个实例之间共享服务器，请在其相关文件中输入每个实例的特定参数。
+* **serverConf.xml**:所有实例的常规配置。此文件结合了Adobe Campaign服务器的技术参数：这些属性由所有实例共享。 下面详细介绍了其中一些参数。 引用文件本身以视图所有可用参数。 此[部分](../../installation/using/the-server-configuration-file.md)中列出的不同节点和参数。
 
-您可以配置存储数据&#x200B;**的Adobe Campaign** 目录（var目录）（日志、下载、重定向等）。 为此，请使 **用XTK_VAR_DIR** 系统变量：
+您可以配置存储数据（日志、下载、重定向等）的Adobe Campaign目录（**var**&#x200B;目录）。 为此，请使用&#x200B;**XTK_VAR_DIR**&#x200B;系统变量：
 
-* 在Windows中，在XTK_VAR_DIR系 **统变量中指示以** 下值
+* 在Windows中，在&#x200B;**XTK_VAR_DIR**&#x200B;系统变量中指示以下值
 
    ```
    D:\log\AdobeCampaign
    ```
 
-* 在Linux中，转到 **customer.sh** 文件并指示： **导出XTK_VAR_DIR=/app/log/AdobeCampaign**。
+* 在Linux中，转到&#x200B;**customer.sh**&#x200B;文件并指示：**导出XTK_VAR_DIR=/app/log/AdobeCampaign**。
 
-   For more on this, refer to [Personalizing parameters](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+   有关详细信息，请参阅[个性化参数](../../installation/using/installing-packages-with-linux.md#personalizing-parameters)。
 
-## 启用进程 {#enabling-processes}
+## 启用进程{#enabling-processes}
 
-通过config-default.xml和文件启用(并禁 **用)服务器上的Adobe Campaign****`config-<instance>.xml`** 进程。
+通过&#x200B;**config-default.xml**&#x200B;和&#x200B;**`config-<instance>.xml`**&#x200B;文件启用（并禁用）服务器上的Adobe Campaign进程。
 
-要将更改应用于这些文件，如果Adobe Campaign服务已启动，则必须运 **行nlserver config -reload** 命令。
+要对这些文件应用更改，如果Adobe Campaign服务已启动，则必须运行&#x200B;**nlserver config -reload**&#x200B;命令。
 
 有两种流程：多实例和单实例。
 
-* **多实例**:为所有实例启动一个进程。 web、syslogd和 **trackinglogd**&#x200B;进程 **的情** 况如 **此** 。
+* **多实例**:为所有实例启动一个进程。**web**、**syslogd**&#x200B;和&#x200B;**trackinglogd**&#x200B;进程就是这种情况。
 
-   可以从config-default.xml **文件配置启用** 。
+   可以从&#x200B;**config-default.xml**&#x200B;文件配置启用。
 
    声明Adobe Campaign服务器访问客户端控制台和重定向（跟踪）:
 
@@ -89,9 +89,9 @@ Confirmation: XXXX
    <trackinglogd autoStart="true"/>
    ```
 
-   在此示例中，使用Linux中的vi命 **令** 编辑文件。 可以使用任何。txt **或。xml** 编 **辑器进行编** 辑。
+   在本示例中，在Linux中使用&#x200B;**vi**&#x200B;命令编辑文件。 可以使用任何&#x200B;**.txt**&#x200B;或&#x200B;**.xml**&#x200B;编辑器进行编辑。
 
-* **单实例**:每个实例(模块： **mta**、 **wfserver**、 **inMail**、 **stat** 、sms ****)。
+* **单实例**:每个实例(模块： **mta** **、wfserver**,  **inMail**、 **** sm **和** stat )。
 
    可以使用实例的配置文件配置启用：
 
@@ -108,20 +108,20 @@ Confirmation: XXXX
    <stat autoStart="true"/>
    ```
 
-## 投放设置 {#delivery-settings}
+## 投放设置{#delivery-settings}
 
-必须在serverConf.xml文件夹 **中配置投放参** 数。
+必须在&#x200B;**serverConf.xml**&#x200B;文件夹中配置投放参数。
 
-* **DNS配置**:指定投放域和DNS服务器的IP地址（或主机），从此开始，DNS服务器用于响应MTA模块创建的MX类型DNS查询 **`<dnsconfig>`** 。
+* **DNS配置**:指定投放域和DNS服务器的IP地址（或主机），从此开始，DNS服务器用于响应MTA模块创建的MX类型的DNS **`<dnsconfig>`** 查询。
 
    >[!NOTE]
    >
-   >nameServers **参数** 对于在Windows中进行安装是必不可少的。 对于Linux中的安装，它必须留空。
+   >**nameServers**&#x200B;参数对于在Windows中进行安装是必不可少的。 对于Linux中的安装，它必须留空。
 
    ```
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-此文件中可用的其他投放参数在个性化 [投放参数中显示](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)。
+此文件中可用的其他投放参数显示在[个性化投放参数](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)中。
 
-另请参阅电子 [邮件发送](../../installation/using/email-deliverability.md)。
+另请参阅[电子邮件可发送性](../../installation/using/email-deliverability.md)。
