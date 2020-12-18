@@ -23,6 +23,6 @@ ht-degree: 2%
 >
 >Adobe Campaign要求您遵守Facebook和Twitter就消息投放提供的服务条款。
 >
->在发送出版物之前，您需要遵守启动工作流中所述的 [配置步骤](../../social/using/starting-workflows.md)。
+>在发送发布之前，您需要遵循[启动工作流](../../social/using/starting-workflows.md)中所述的配置步骤。
 
-此部分详细介绍Facebook和Twitter投放特有的元素。 与电子邮件投放相同的所有元素在本节中 [进行了详细介绍](../../delivery/using/about-email-channel.md)。
+此部分详细介绍Facebook和Twitter投放特有的元素。 与电子邮件投放相同的所有元素在[本节](../../delivery/using/about-email-channel.md)中有详细说明。
