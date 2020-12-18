@@ -19,8 +19,8 @@ ht-degree: 5%
 
 信息系统生成的事件可以采用两种模式进行收集：
 
-* 调用SOAP方法可以在Adobe Campaign中推送事件:通过PushEvent方法可以一次发送一个事件，通过PushEvents方法可以一次发送多个数据。 请参阅 [事件说明](../../message-center/using/event-description.md)。
-* 通过创建工作流，您可以通过导入文件或通过SQL网关(使用事件选项)恢 **复联合数据访问** 。
+* 调用SOAP方法可以在Adobe Campaign中推送事件:通过PushEvent方法可以一次发送一个事件，通过PushEvents方法可以一次发送多个数据。 请参阅[事件说明](../../message-center/using/event-description.md)。
+* 创建工作流允许您通过导入文件或通过SQL网关(使用&#x200B;**事件**&#x200B;选项)恢复联合数据访问。
 
 收集事件后，在等待链接到消息模板时，技术工作流会在执行实例的实时队列和批处理队列之间按细分。
 
