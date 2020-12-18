@@ -30,7 +30,7 @@ Adobe Campaign包括一个工作流模块，它允许您跨应用程序服务器
 Adobe Campaign使用工作流来：
 
 * 进行定位活动。 [了解详情](../../workflow/using/building-a-workflow.md#implementation-steps-)
-* 构建活动:对于每个活动, **[!UICONTROL Workflow]** 选项卡允许您构建目标并创建投放。 [了解详情](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* 构建活动:对于每个活动,**[!UICONTROL Workflow]**&#x200B;选项卡允许您构建目标并创建投放。 [了解详情](../../workflow/using/building-a-workflow.md#campaign-workflows)
 * 执行技术流程：清除、收集跟踪信息或临时计算。 [了解详情](../../workflow/using/building-a-workflow.md#technical-workflows)
 
 工作流可以指进程定义（工作流模型，它是应发生的内容的表示）和此进程的实例（工作流实例，它是实际发生的内容的表示）。
@@ -43,11 +43,11 @@ Adobe Campaign使用工作流来：
 
 * **[!UICONTROL Activities]**
 
-   活动描述任务模板。 图中用图标表示各种可用活动。 每种类型都有通用属性和特定属性。 例如，尽管所有活动都有名称和标签，但只有活动 **[!UICONTROL Approval]** 有分配。
+   活动描述任务模板。 图中用图标表示各种可用活动。 每种类型都有通用属性和特定属性。 例如，尽管所有活动都有名称和标签，但只有&#x200B;**[!UICONTROL Approval]**&#x200B;活动有分配。
 
    在工作流图中，给定活动可以生成多个任务，尤其是当存在循环或重复（周期）操作时。
 
-   此部分列出了所有工作 [流活动](../../workflow/using/about-activities.md)，包括用例和示例。
+   所有工作流活动列在[本节](../../workflow/using/about-activities.md)中，包括用例和示例。
 
 * **[!UICONTROL Transitions]**
 
@@ -59,22 +59,22 @@ Adobe Campaign使用工作流来：
    >
    >仍可以执行包含未结束过渡的工作流：将生成一条警告消息，工作流在到达过渡后将暂停，但不会生成错误。 因此，可以在不完成的情况下开始工作流，并随时添加工作流。
 
-   有关如何构建工作流的详细信息，请参 [阅此部分](../../workflow/using/building-a-workflow.md)。
+   有关如何构建工作流的详细信息，请参阅[本节](../../workflow/using/building-a-workflow.md)。
 
 * **[!UICONTROL Worktables]**
 
    工作台包含过渡携带的所有信息。 每个工作流都使用多个工作表。 在工作流的整个生命周期中，只要不清除这些表中传送的数据，就可以加速并使用它们。 事实上，每次钝化工作流时，都会清除不需要的表，并且可能在执行最大工作流时会清除这些表，以避免服务器过载。
 
-   在本节中进一步了解工作流数 [据和表](../../workflow/using/how-to-use-workflow-data.md)。
+   了解有关[此部分](../../workflow/using/how-to-use-workflow-data.md)中的工作流数据和表的详细信息。
 
-## 主要原则和最佳做法{#principles-workflows}
+## 主要原则和最佳实践{#principles-workflows}
 
 请参阅这些部分，找到指导和最佳实践，让工作流实现流程自动化：
 
-* 了解有关本页中工作流活动 [的更多信息](../../workflow/using/how-to-use-workflow-data.md)。
-* 在本节中了解如何构建工 [作流](../../workflow/using/building-a-workflow.md)。
-* 了解如何在本节的工作流中使用 [导入活动](../../workflow/using/importing-data.md)。
-* 本页详细介绍了工作流 [程最佳实践](../../workflow/using/workflow-best-practices.md)。
-* 在本节中查找有关工作流执 [行的指导](../../workflow/using/starting-a-workflow.md)。
-* 了解如何在本页中监 [视工作流](../../workflow/using/monitoring-workflow-execution.md)。
-* 了解如何授予用户在本页中使用工作流 [的权限](../../workflow/using/managing-rights.md)。
+* 了解有关[此页](../../workflow/using/how-to-use-workflow-data.md)中的工作流活动的更多信息。
+* 了解如何在[本节](../../workflow/using/building-a-workflow.md)中构建工作流。
+* 了解如何使用工作流以[此部分](../../workflow/using/importing-data.md)中的活动导入数据。
+* 工作流最佳实践详见[本页](../../workflow/using/workflow-best-practices.md)。
+* 在[本节](../../workflow/using/starting-a-workflow.md)中查找有关工作流执行的指导。
+* 了解如何在[此页](../../workflow/using/monitoring-workflow-execution.md)中监视工作流。
+* 了解如何授予用户使用[本页](../../workflow/using/managing-rights.md)中的工作流的权限。
