@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '2157'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
 
 # Adobe Campaign 工作区{#adobe-campaign-workspace}
 
-## 浏览Adobe Campaign界面 {#about-adobe-campaign-interface}
+## 浏览Adobe Campaign接口{#about-adobe-campaign-interface}
 
 连接到数据库后，即可访问 Adobe Campaign 主页，这是一个仪表板：其中包含允许您访问各种功能的链接和快捷方式，具体显示哪些取决于您的安装以及常规平台配置。
 
@@ -47,7 +47,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 ![](assets/operation_from_web.png)
 
-### 语言 {#languages}
+### 语言{#languages}
 
 安装您的Adobe Campaign Classic实例时，会选择该语言。
 
@@ -63,7 +63,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关更多信息，请参阅此](../../platform/using/adobe-campaign-workspace.md#date-and-time)章节[。
 
-For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+有关如何创建实例的详细信息，请参阅此[页面](../../installation/using/creating-an-instance-and-logging-on.md)。
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ For more information on how to create an instance, refer to this [page](../../in
 
 每项功能都包含一套基于工作任务相关需求及使用情境的功能。例如，**[!UICONTROL Profiles and targets]** 链接可用于访问收件人列表、订阅服务、现有的定位工作流，以及创建这些元素的快捷方式。
 
-The lists are available via the **[!UICONTROL Lists]** link in the left-hand section of the **[!UICONTROL Profiles and Targets]** interface.
+这些列表可通过&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;接口左侧部分的&#x200B;**[!UICONTROL Lists]**&#x200B;链接访问。
 
 ![](assets/recipient_list_overview.png)
 
@@ -99,7 +99,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 通过每个核心功能部分可以浏览各种可用的元素。要执行此操作，可使用 **[!UICONTROL Browsing]** 部分中的快捷方式。**[!UICONTROL Other choices]** 链接可用于访问其他所有页面，无论工作环境如何。
 
-您可以创建新元素(投放、Web 应用程序、工作流等) 使用屏幕左 **[!UICONTROL Create]** 侧部分中的快捷键。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
+您可以创建新元素(投放、Web 应用程序、工作流等) 使用屏幕左侧&#x200B;**[!UICONTROL Create]**&#x200B;部分的快捷键。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
 
 例如，在投放页面上，使用 **[!UICONTROL Create]** 按钮创建新的投放。
 
@@ -139,15 +139,15 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 >[!NOTE]
 >
->Configuration and personalization of list content are presented in [Configuring lists](#configuring-lists).
+>[配置列表](#configuring-lists)中介绍了列表内容的配置和个性化。
 >
->您也可以排序和过滤数据。请参 [阅筛选选项](../../platform/using/filtering-options.md)。
+>您也可以排序和过滤数据。请参阅[筛选选项](../../platform/using/filtering-options.md)。
 
 ### 记录计数 {#counting-records}
 
 默认情况下，Adobe Campaign 会加载列表的前 200 条记录。这意味着不一定会显示您所查看的数据库表的所有记录。您可以统计列表中的记录数量并加载更多记录。
 
-In the lower right-hand part of the list screen, a **[!UICONTROL counter]** shows how many records have been loaded and the total number of records in the database (after applying any filters):
+在列表屏幕的右下方，**[!UICONTROL counter]**&#x200B;显示已加载的记录数和库中的记录总数(应用任何过滤器后):
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
@@ -206,11 +206,11 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
    >
    >会按照数据库表，然后按字母顺序显示各个标签。
    >
-   >使用 **Search** 字段在可用字段中执行搜索。有关详细信息，请参 [阅对列表排序](#sorting-a-list)。
+   >使用 **Search** 字段在可用字段中执行搜索。有关详细信息，请参阅[对列表排序](#sorting-a-list)。
    >
    >通过具体图标标识各字段：SQL 字段、链接的表、已计算字段等。针对选中的每个字段，在可用字段的列表下会显示其说明。[配置列表](#configuring-lists).
    >
-   >您也可以排序和过滤数据。请参 [阅筛选选项](../../platform/using/filtering-options.md)。
+   >您也可以排序和过滤数据。请参阅[筛选选项](../../platform/using/filtering-options.md)。
 
 1. 对要显示的每个列重复此步骤。
 1. 使用箭头修改&#x200B;**显示顺序**。值最高的列将显示在记录列表的左侧。
@@ -227,7 +227,7 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 
 您可以创建新的列来显示列表中的其他字段。操作步骤：
 
-1. Click **[!UICONTROL Configure the list]** at below and to the right of the list.
+1. 单击列表右下方的&#x200B;**[!UICONTROL Configure the list]**。
 1. 单击 **[!UICONTROL Add]** 在列表中显示新字段。
 
 ### 移除列 {#remove-a-column}
@@ -273,11 +273,11 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 
 1. 右键单击其中包含已显示数据的文件夹。
 1. 选择 **[!UICONTROL Properties]**。
-1. Click **[!UICONTROL Advanced settings]** and then specify a name in the **[!UICONTROL Configuration]** field.
+1. 单击&#x200B;**[!UICONTROL Advanced settings]**，然后在&#x200B;**[!UICONTROL Configuration]**&#x200B;字段中指定名称。
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. Click **[!UICONTROL OK]** and then click **[!UICONTROL Save]**.
+1. 单击&#x200B;**[!UICONTROL OK]**，然后单击&#x200B;**[!UICONTROL Save]**。
 
 然后可将此配置应用到另一个 **Delivery** 文件夹：
 
@@ -291,7 +291,7 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 
 要从列表中导出数据，必须使用导出向导。要启动此向导，可从列表中选择要导出的元素，右键单击它后选择 **[!UICONTROL Export...]**。
 
-导入和导出功能的使用在通用导入 [和导出中说明](../../platform/using/generic-imports-and-exports.md)。
+[通用导入和导出](../../platform/using/generic-imports-and-exports.md)中介绍了导入和导出功能的使用。
 
 >[!CAUTION]
 >
@@ -322,13 +322,13 @@ In the lower right-hand part of the list screen, a **[!UICONTROL counter]** show
 
 1. 单击 **[!UICONTROL Ok]** 确认此配置，并在列表中显示结果。
 
-### 搜索元素 {#running-a-search}
+### 搜索元素{#running-a-search}
 
 您可使用字段列表上方的 **[!UICONTROL Search]** 字段对编辑器中的可用字段进行搜索。按下键盘上的 **Enter** 键或浏览列表。符合搜索内容的字段将以粗体标签显示。
 
 >[!NOTE]
 >
->您可以创建过滤器，只显示列表中的部分数据。请参阅 [创建过滤器](../../platform/using/creating-filters.md)。
+>您可以创建过滤器，只显示列表中的部分数据。请参阅[创建过滤器](../../platform/using/creating-filters.md)。
 
 ## 格式和单位 {#formats-and-units}
 
@@ -377,7 +377,7 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
 
 >[!NOTE]
 >
->管理员通过 **[!UICONTROL Administration > Platform > Enumerations]** 部分管理枚举（也称为“分项列表”）。For more on this, refer to [Managing enumerations](../../platform/using/managing-enumerations.md).
+>管理员通过 **[!UICONTROL Administration > Platform > Enumerations]** 部分管理枚举（也称为“分项列表”）。有关详细信息，请参阅[管理明细列表](../../platform/using/managing-enumerations.md)。
 
 ### 默认单位 {#default-units}
 
@@ -390,10 +390,10 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
 
 ![](assets/enter_unit_sample.png)
 
-## 教程视频 {#video}
+## 教程视频{#video}
 
 此视频显示Campaign Classic工作区。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-此处提供其他Campaign Classic操作方 [法视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)。
+此处[提供其他Campaign Classic操作方法视频。](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
