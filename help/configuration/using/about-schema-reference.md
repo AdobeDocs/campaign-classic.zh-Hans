@@ -19,9 +19,9 @@ ht-degree: 7%
 
 本章介绍如何配置扩展模式以扩展Adobe Campaign库的概念数据模型。
 
-要更好地了解活动内置表及其交互，请参阅 [Campaign Classic数据模型](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html)。
+要更好地了解活动内置表及其交互，请参阅[Campaign Classic数据模型](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html)。
 
-应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。It obeys a grammar specific to Adobe Campaign, called a **schema**.
+应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循Adobe Campaign特有的语法，称为&#x200B;**模式**。
 
 模式是与数据库表关联的XML文档。 它定义数据结构并描述表的SQL定义：
 
@@ -44,11 +44,11 @@ ht-degree: 7%
 
 ![](assets/reference_schema_intro.png)
 
-## 模式语法 {#syntax-of-schemas}
+## 模式语法{#syntax-of-schemas}
 
-模式的根元素为 **`<srcschema>`**。 它包含 **`<element>`** 和 **`<attribute>`** 子元素。
+模式的根元素为&#x200B;**`<srcschema>`**。 它包含&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;子元素。
 
-第一个 **`<element>`** 子元素与实体的根重合。
+第一个&#x200B;**`<element>`**&#x200B;子元素与实体的根重合。
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -68,13 +68,13 @@ ht-degree: 7%
 
 ![](assets/s_ncs_configuration_schema_and_entity.png)
 
-标 **`<element>`** 记定义实体元素的名称。 **`<attribute>`** 模式的标记定义已链接到的标 **`<element>`** 记中属性的名称。
+**`<element>`**&#x200B;标签定义实体元素的名称。 **`<attribute>`** 模式的标签定义已链接到的标 **`<element>`** 签中属性的名称。
 
-## 模式 {#identification-of-a-schema}
+## 模式{#identification-of-a-schema}的标识
 
 数据模式由其名称和命名空间标识。
 
-命名空间允许您按兴趣区域对一组模式进行分组。 例如，自定义 **命名空间** （客户）用于特定于客&#x200B;**户的配置**。
+命名空间允许您按感兴趣的区域对一组模式进行分组。 例如，**cus**&#x200B;命名空间用于客户特定的配置(**customers**)。
 
 >[!IMPORTANT]
 >
@@ -90,4 +90,4 @@ ht-degree: 7%
 * **ncm**:内容管理,
 * **临时**:为临时模式保留。
 
-模式的标识键是使用命名空间和冒号分隔的名称构建的字符串；例如： **cus:收件人**。
+模式的标识键是使用命名空间和冒号分隔的名称构建的字符串；例如：**cus:收件人**。
