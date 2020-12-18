@@ -31,12 +31,12 @@ ht-degree: 3%
 1. 在工作流中，添加投放概要活动后再添加投放活动。
 1. 在“投放概要”活动中，指定要使用的轮廓。
 
-   有关指定投放概要的详细信息，请参阅 [活动- MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) 指南。
+   有关指定投放概要的详细信息，请参阅[活动- MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)指南。
 
 1. 根据您的投放填写可用字段。
 1. 可能有两种情况：
 
-   * 如果要调用优惠引擎，请选中该 **[!UICONTROL Restrict the number of propositions selected]** 框。 指定优惠空间和将在投放中显示的主张数。
+   * 如果要调用优惠引擎，请选中&#x200B;**[!UICONTROL Restrict the number of propositions selected]**&#x200B;框。 指定优惠空间和将在投放中显示的主张数。
 
       优惠权重和合格规则将由优惠引擎考虑。
 
@@ -53,7 +53,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->有关扩充活动的详细信息，请参阅工作流指南中的专用 [文档](../../workflow/using/enrichment.md)。
+>有关扩充活动的详细信息，请参阅[工作流指南](../../workflow/using/enrichment.md)中的专用文档。
 
 例如，您可以在收件人查询之前丰富数据。
 
@@ -64,20 +64,20 @@ ht-degree: 3%
 * 指定优惠或优惠引擎调用。
 * 引用指向优惠的链接。
 
-### 指定优惠或对优惠引擎的调用 {#specifying-an-offer-or-a-call-to-the-offer-engine}
+### 指定优惠或对优惠引擎的调用{#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-配置查询后(请参阅工作流 [指南](../../workflow/using/query.md)):
+配置查询后(请参阅[工作流指南](../../workflow/using/query.md)):
 
 1. 添加和打开扩充活动。
 1. 在 **[!UICONTROL Enrichment]** 选项卡中，选择 **[!UICONTROL Add data]**。
-1. 选择 **[!UICONTROL An offer proposition]** 要添加的数据类型。
+1. 在要添加的数据类型中选择&#x200B;**[!UICONTROL An offer proposition]**。
 
    ![](assets/int_enrichment_offer2.png)
 
 1. 为要添加的命题指定标识符和标签。
 1. 指定优惠选择。 这有两种可能的选项：
 
-   * **[!UICONTROL Search for the best offer in a category]** :选中此选项并指定优惠引擎调用参数(优惠空间、类别或主题、联系日期、要保留的优惠数)。 引擎将根据这些参数自动计算要添加的优惠。 我们建议填写 **[!UICONTROL Category]** 或字 **[!UICONTROL Theme]** 段，而不是同时填写这两个字段。
+   * **[!UICONTROL Search for the best offer in a category]** :选中此选项并指定优惠引擎调用参数(优惠空间、类别或主题、联系日期、要保留的优惠数)。引擎将根据这些参数自动计算要添加的优惠。 我们建议填写&#x200B;**[!UICONTROL Category]**&#x200B;或&#x200B;**[!UICONTROL Theme]**&#x200B;字段，而不是同时填写这两个字段。
 
       ![](assets/int_enrichment_offer3.png)
 
@@ -85,20 +85,20 @@ ht-degree: 3%
 
       ![](assets/int_enrichment_offer4.png)
 
-1. 然后，配置与所选投放对应的活动渠道。 有关此内容的详细信息，请参 [阅将优惠建议插入投放部分](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) 。
+1. 然后，配置与所选投放对应的活动渠道。 有关详细信息，请参阅[将优惠建议插入投放](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery)部分。
 
    >[!NOTE]
    >
    >预览可用的建议数取决于在扩充活动中执行的配置，而不是直接在投放中执行的任何可能的配置。
 
-### 引用指向优惠的链接 {#referencing-a-link-to-an-offer}
+### 引用指向优惠{#referencing-a-link-to-an-offer}的链接
 
 您还可以引用指向优惠的链接(在扩充活动中)。
 
 为此，请使用以下流程：
 
-1. 在活动 **[!UICONTROL Add data]** 的选项卡中 **[!UICONTROL Enrichment]** 选择。
-1. 在选择要添加的数据类型的窗口中，选择 **[!UICONTROL A link]**。
+1. 在活动的&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Add data]**。
+1. 在选择要添加的数据类型的窗口中，选择&#x200B;**[!UICONTROL A link]**。
 1. 选择要建立的链接类型及其目标。 在这种情况下，目标是优惠模式。
 
    ![](assets/int_enrichment_link1.png)
@@ -107,46 +107,46 @@ ht-degree: 3%
 
    ![](assets/int_enrichment_link2.png)
 
-1. 然后，配置与所选投放对应的活动渠道。 有关此内容的详细信息，请参 [阅将优惠建议插入投放部分](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) 。
+1. 然后，配置与所选投放对应的活动渠道。 有关详细信息，请参阅[将优惠建议插入投放](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery)部分。
 
    >[!NOTE]
    >
    >预览可用的建议数取决于投放中执行的配置。
 
-### 存储优惠排名和权重 {#storing-offer-rankings-and-weights}
+### 存储优惠排名和权重{#storing-offer-rankings-and-weights}
 
-默认情况下，当扩充 **活动用于** 交付优惠时，其排名和权重不会存储在命题表中。
+默认情况下，当使用&#x200B;**扩充**&#x200B;活动传送优惠时，其排名和权重不会存储在命题表中。
 
 >[!NOTE]
 >
->记住：默认 **[!UICONTROL Offer engine]** 情况下，活动会存储此信息。
+>记住：默认情况下，**[!UICONTROL Offer engine]**&#x200B;活动会存储此信息。
 
 但是，您可以按如下方式存储此信息：
 
-1. 在放置在优惠之后和扩充活动之前的查询活动中创建对投放引擎的调用。 请参阅指 [定优惠或对优惠引擎的调用](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine) 。
-1. 在活动的主窗口中，选择 **[!UICONTROL Edit additional data...]**。
+1. 在放置在优惠之后和扩充活动之前的查询活动中创建对投放引擎的调用。 请参阅[指定优惠或对优惠引擎的调用](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine)部分。
+1. 在活动的主窗口中，选择&#x200B;**[!UICONTROL Edit additional data...]**。
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
-1. 为排名 **[!UICONTROL @rank]** 和优惠权重添 **[!UICONTROL @weight]** 加列。
+1. 为排名添加&#x200B;**[!UICONTROL @rank]**&#x200B;列，为优惠权重添加&#x200B;**[!UICONTROL @weight]**&#x200B;列。
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
 1. 确认您的添加并保存您的工作流。
 
-投放自动存储优惠的排名和权重。 此信息显示在投放的选项 **[!UICONTROL Offers]** 卡中。
+投放自动存储优惠的排名和权重。 此信息显示在投放的&#x200B;**[!UICONTROL Offers]**&#x200B;选项卡中。
 
 ## 优惠引擎 {#offer-engine}
 
-活动 **[!UICONTROL Offer engine]** 还允许您在优惠之前指定对投放引擎的调用。
+**[!UICONTROL Offer engine]**&#x200B;活动还允许您指定在投放之前对优惠引擎的调用。
 
 此活动与引擎调用的扩充活动工作原理相同，通过在投放之前用引擎计算的优惠来丰富入站人口数据。
 
 ![](assets/int_offerengine_activity2.png)
 
-配置查询后(请参阅工作流 [指南](../../workflow/using/query.md)):
+配置查询后(请参阅[工作流指南](../../workflow/using/query.md)):
 
-1. 添加和打开 **[!UICONTROL Offer engine]** 活动。
+1. 添加并打开&#x200B;**[!UICONTROL Offer engine]**&#x200B;活动。
 1. 填写各种可用字段以指定对优惠引擎参数(优惠空间、类别或主题、联系日期、要保留的优惠数)的调用。 引擎将根据这些参数自动计算要添加的优惠。
 
    >[!NOTE]
@@ -155,22 +155,22 @@ ht-degree: 3%
 
    ![](assets/int_offerengine_activity1.png)
 
-1. 然后，配置与所选投放对应的活动渠道。 有关此内容的详细信息，请参 [阅将优惠建议插入投放部分](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) 。
+1. 然后，配置与所选投放对应的活动渠道。 有关详细信息，请参阅[将优惠建议插入投放](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery)部分。
 
 ## 单元格优惠 {#offers-by-cell}
 
-该 **[!UICONTROL Offers by cell]** 活动允许您将入站人口(例如从查询)分配到多个区段，并指定一个优惠，以便为每个区段显示。
+**[!UICONTROL Offers by cell]**&#x200B;活动允许您将入站人口(例如从查询)分布到多个区段，并指定每个区段显示的优惠。
 
 为此，请使用以下流程：
 
-1. 在指定 **[!UICONTROL Offers by cell]** 活动填充后添加目标，然后打开它。
-1. 在选 **[!UICONTROL General]** 项卡中，选择要显示优惠空间的优惠。
-1. 在选项卡 **[!UICONTROL Cells]** 中，使用按钮指定不同的子 **[!UICONTROL Add]** 集：
+1. 指定活动填充后，添加&#x200B;**[!UICONTROL Offers by cell]**&#x200B;目标，然后打开它。
+1. 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，选择要显示优惠空间的优惠。
+1. 在&#x200B;**[!UICONTROL Cells]**&#x200B;选项卡中，使用&#x200B;**[!UICONTROL Add]**&#x200B;按钮指定不同的子集：
 
    * 使用可用的过滤和限制规则指定子集填充。
    * 然后，选择要呈现给子集的优惠。 可用优惠是指符合上一步所选优惠环境条件的。
 
       ![](assets/int_offer_per_cell1.png)
 
-1. 然后，配置与所选投放对应的活动渠道。 有关此内容的详细信息，请参 [阅将优惠建议插入投放部分](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) 。
+1. 然后，配置与所选投放对应的活动渠道。 有关详细信息，请参阅[将优惠建议插入投放](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery)部分。
 
