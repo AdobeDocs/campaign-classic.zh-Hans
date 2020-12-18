@@ -17,9 +17,9 @@ ht-degree: 7%
 
 # 消息中心（控制）{#message-center-control}
 
-下面详细介绍的工作流计划每小时运行一次。 默认情况下，它随 **消息中心——控制** 模块一起安装。 For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
+下面详细介绍的工作流计划每小时运行一次。 默认情况下，它与&#x200B;**消息中心- Control**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[部分](../../message-center/using/about-transactional-messaging.md)。
 
-要详细了解如何配置与消息中心模块相关的技术工作流，请参 [阅本页](../../message-center/using/technical-workflows.md)。
+要进一步了解如何配置与消息中心模块相关的技术工作流，请参阅[此页](../../message-center/using/technical-workflows.md)。
 
 <table> 
  <tbody> 
