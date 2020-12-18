@@ -17,7 +17,7 @@ ht-degree: 15%
 
 # 中间源平台{#mid-sourcing-platform}
 
-默认情况下，下面详细介绍的工作流 **程随中间源平** 台模块一起安装。 For more on this module, refer to this [section](../../installation/using/mid-sourcing-deployment.md).
+默认情况下，下面详细介绍的工作流与&#x200B;**中间源平台**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[部分](../../installation/using/mid-sourcing-deployment.md)。
 
 <table> 
  <tbody> 
