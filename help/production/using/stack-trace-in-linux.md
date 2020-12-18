@@ -17,18 +17,18 @@ ht-degree: 11%
 
 # Linux 中的堆栈跟踪{#stack-trace-in-linux}
 
-堆 **栈跟踪** ，表示核心类型文件 **中包含** 的跟踪。 此文件在计算机错误事件中生成。 它可以识别错误的来源。
+**堆栈跟踪**&#x200B;表示包含在&#x200B;**核心**&#x200B;类型文件中的跟踪。 此文件在计算机错误事件中生成。 它可以识别错误的来源。
 
 >[!NOTE]
 >
->* 核 **心文件** 名为 **core.`<num>`**.
->* **gdb —— 必须在计算机上** 安装GNU调试器。
+>* **core**&#x200B;文件名为&#x200B;**core.`<num>`**。
+>* **gdb —— 必须在** 计算机上安装GNU调试器。
 
 >
 
 
 
-Adobe Campaign技术支持可以要求您提供此堆 **栈跟踪**。 要获得它，请在Linux中输入以下命令：
+Adobe Campaign技术支持可以要求您提供此&#x200B;**堆栈跟踪**。 要获得它，请在Linux中输入以下命令：
 
 ```
 su - neolane
@@ -57,7 +57,7 @@ gdb nlserver <coreFile>
 
 Adobe Campaign技术支持可能会要求您使用特定可执行文件运行此命令（由我们提供）。
 
-在这种情况下，只需将nlserver替换为Adobe Campaign提 **供的可** 执行文件，即可运行以下命令：
+在这种情况下，只需使用Adobe Campaign提供的可执行文件替换&#x200B;**nlserver**&#x200B;来运行以下命令：
 
 ```
 gdb nlserver <coreFile>
