@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 简介 {#introduction}
 
-营销资源 **管理(MRM)模块** ，通过提供对相关任务、预算和营销资源的全面管理和实时跟踪，您可以以协作模式控制营销活动。
+**营销资源管理(MRM)**&#x200B;模块允许您通过提供对相关任务、预算和营销资源的全面管理和实时跟踪，以协作模式控制营销活动。
 
 Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具协调其操作并批准其在所有阶段的进度：报告、审批跟踪、通知、论坛等。 在事件、错误或延迟以及验证周期的每个新阶段，都会向它们发出警告。
 
@@ -29,7 +29,7 @@ Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具
 
 最后，由于目标和费用的管理以及标准报告的优惠的扩大，预算管理得到了扩大；这样，您就可以监控并准确衡量所有营销活动的工作效率和绩效。
 
-## 核心概念 {#core-concepts}
+## 核心概念{#core-concepts}
 
 在Adobe Campaign环境中，必须定义以下概念：
 
@@ -37,27 +37,27 @@ Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具
 
    任务与要在活动环境中执行的操作相对应。 任务被分配给组或人员。 子任务可以取决于父任务，这意味着直到所有子任务都完成后，才会执行父任务。 任务示例包括：引用网站、预算审核、简介等。
 
-   有关此内容的详细信息，请参 [阅创建和管理任务](../../campaign/using/creating-and-managing-tasks.md)。
+   有关详细信息，请参阅[创建和管理任务](../../campaign/using/creating-and-managing-tasks.md)。
 
 * **营销资源**
 
    Adobe Campaign允许您跟踪协作营销项目（如通信媒体、操作计划、新闻稿等）的进度。 这些营销资源的创建和审批周期可从资源仪表板跟踪，直到其发布。
 
-   有关此内容的详细信息，请参阅 [管理营销资源](../../campaign/using/managing-marketing-resources.md)。
+   有关详细信息，请参阅[管理营销资源](../../campaign/using/managing-marketing-resources.md)。
 
 >[!NOTE]
 >
->有关整个Adobe Campaign工作区的详细信息，请参 [阅此部分](../../platform/using/adobe-campaign-workspace.md)。
+>有关整个Adobe Campaign工作区的详细信息，请参阅[此部分](../../platform/using/adobe-campaign-workspace.md)。
 >  
->与投放和通信渠道链接的所有功能在本节 [中详述](../../delivery/using/steps-about-delivery-creation-steps.md)。
+>与投放和通信渠道链接的所有功能在[本节](../../delivery/using/steps-about-delivery-creation-steps.md)中有详细说明。
 >
->所有活动相关功能在访问营销 [活动中有详细介绍](../../campaign/using/accessing-marketing-campaigns.md)。
+>[访问营销活动](../../campaign/using/accessing-marketing-campaigns.md)中详细介绍了所有与活动相关的功能。
 
 此外，Adobe Campaign优惠中的计划和项目还具有其他功能：
 
-* 预算管理。 For more on this, refer to [Controlling costs](../../campaign/using/controlling-costs.md)
+* 预算管理。 有关详细信息，请参阅[控制成本](../../campaign/using/controlling-costs.md)
 
-* 任务管理。 有关此内容的详细信息，请参阅 [创建和管理任务](../../campaign/using/creating-and-managing-tasks.md)
+* 任务管理。 有关详细信息，请参阅[创建和管理任务](../../campaign/using/creating-and-managing-tasks.md)
 
-* 营销资源管理。 有关此内容的详细信息，请参阅管 [理营销资源](../../campaign/using/managing-marketing-resources.md)
+* 营销资源管理。 有关详细信息，请参阅[管理营销资源](../../campaign/using/managing-marketing-resources.md)
 
