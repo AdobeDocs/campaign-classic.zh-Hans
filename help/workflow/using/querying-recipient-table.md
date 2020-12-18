@@ -33,12 +33,12 @@ ht-degree: 3%
 
 * 是否配置了类型？
 
-   是，基于 **[!UICONTROL Account number]** 和 **[!UICONTROL Last name]**
+   是，基于&#x200B;**[!UICONTROL Account number]**&#x200B;和&#x200B;**[!UICONTROL Last name]**
 
 要创建此示例，请应用以下步骤：
 
-1. 单 **[!UICONTROL Tools > Generic query editor...]** 击并选择 **收件人** (**nms:收件人**)表。 然后单击 **[!UICONTROL Next]**。
-1. 选择： **[!UICONTROL Last name]**、 **[!UICONTROL First name]**、 **[!UICONTROL Email]**&#x200B;以 **[!UICONTROL City]** 及 **[!UICONTROL Account number]**。 这些字段将添加到 **[!UICONTROL Output columns]**。 然后单击 **[!UICONTROL Next]**。
+1. 单击&#x200B;**[!UICONTROL Tools > Generic query editor...]**&#x200B;并选择&#x200B;**收件人**(**nms:收件人**)表。 然后单击 **[!UICONTROL Next]**。
+1. 选择：**[!UICONTROL Last name]**、**[!UICONTROL First name]**、**[!UICONTROL Email]**、**[!UICONTROL City]**&#x200B;和&#x200B;**[!UICONTROL Account number]**。 这些字段将添加到&#x200B;**[!UICONTROL Output columns]**。 然后单击 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_03.png)
 
@@ -46,45 +46,45 @@ ht-degree: 3%
 
    ![](assets/query_editor_04.png)
 
-1. 在窗口 **[!UICONTROL Data filtering]** 中，细化您的搜索：选择 **[!UICONTROL Filtering conditions]** 并单击 **[!UICONTROL Next]**。
-1. 在窗 **[!UICONTROL Target element]** 口中可输入筛选器设置。
+1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;窗口中，细化搜索：选择&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Target element]**&#x200B;窗口中可以输入过滤器设置。
 
-   定义以下筛选条件：电子邮件域等于“orange.co.uk”的收件人。 为此，请在列 **中选择“电子邮件域** (@email)” **[!UICONTROL Expression]** ，在列 **中选** 择 **[!UICONTROL Operator]** “等于” **[!UICONTROL Value]** ，并在列中输入“orange.co.uk”。
+   定义以下筛选条件：电子邮件域等于“orange.co.uk”的收件人。 为此，请在&#x200B;**[!UICONTROL Expression]**&#x200B;列中选择&#x200B;**电子邮件域(@email)**，在&#x200B;**[!UICONTROL Operator]**&#x200B;列中选择&#x200B;**等于**，并在&#x200B;**[!UICONTROL Value]**&#x200B;列中输入“orange.co.uk”。
 
    ![](assets/query_editor_05.png)
 
-1. 如果需要，请单 **[!UICONTROL Distribution of values]** 击按钮以根据潜在客户的电子邮件域视图分发。 数据库中每个电子邮件域都有一个百分比。 应用过滤器之前，将显示“orange.co.uk”以外的域。
+1. 如果需要，单击&#x200B;**[!UICONTROL Distribution of values]**&#x200B;按钮以视图基于潜在客户电子邮件域的分发。 数据库中每个电子邮件域都有一个百分比。 应用过滤器之前，将显示“orange.co.uk”以外的域。
 
-   查询的摘要显示在窗口底部： **电子邮件域等于“orange.co.uk”**。
+   查询的摘要显示在窗口底部：**电子邮件域等于“orange.co.uk”**。
 
-1. 单击 **[!UICONTROL Preview]** 以了解查询结果：只显示“orange.co.uk”电子邮件域。
+1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;可了解查询结果：只显示“orange.co.uk”电子邮件域。
 
    ![](assets/query_editor_nveau_17.png)
 
 1. 我们现在将改变查询，寻找不住在伦敦的人。
 
-   在列 **[!UICONTROL City (location/@city)]** 中选 **[!UICONTROL Expression]** 择，作 **[!UICONTROL different from]** 为运算符，然后 **[!UICONTROL London]** 在列中 **[!UICONTROL Value]** 输入。
+   在&#x200B;**[!UICONTROL Expression]**&#x200B;列中选择&#x200B;**[!UICONTROL City (location/@city)]**&#x200B;作为运算符，在&#x200B;**[!UICONTROL Value]**&#x200B;列中输入&#x200B;**[!UICONTROL London]**。**[!UICONTROL different from]**
 
    ![](assets/query_editor_08.png)
 
-1. 这会带你到窗 **[!UICONTROL Data formatting]** 户。 检查列顺序。 将“Account number”列下的“City”列向上移动。
+1. 这将带您进入&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口。 检查列顺序。 将“Account number”列下的“City”列向上移动。
 
    取消选中“名”列，将其从列表中删除。
 
    ![](assets/query_editor_nveau_15.png)
 
-1. In the **[!UICONTROL Data preview]** window, click **[!UICONTROL Start the preview of the data]**. 此函数计算查询的结果。
+1. 在&#x200B;**[!UICONTROL Data preview]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Start the preview of the data]**。 此函数计算查询的结果。
 
-   该选 **[!UICONTROL Column results]** 项卡在列中显示查询结果。
+   **[!UICONTROL Column results]**&#x200B;选项卡在列中显示查询结果。
 
    结果会显示所有不住在伦敦的具有“orange.co.uk”电子邮件域的收件人。 不显示“名”列，因为在上一阶段未选中该列。 帐号按降序排序。
 
    ![](assets/query_editor_nveau_12.png)
 
-   该选 **[!UICONTROL XML result]** 项卡以XML格式显示结果。
+   **[!UICONTROL XML result]**&#x200B;选项卡以XML格式显示结果。
 
    ![](assets/query_editor_nveau_13.png)
 
-   该选 **[!UICONTROL Generated QSL queries]** 项卡以SQL格式显示查询结果。
+   **[!UICONTROL Generated QSL queries]**&#x200B;选项卡以SQL格式显示查询结果。
 
    ![](assets/query_editor_nveau_14.png)
