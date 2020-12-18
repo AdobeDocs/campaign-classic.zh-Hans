@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 营销活动{#campaign}
 
-默认情况下，下面详细介绍的工作流 **随活动** 模块一起安装。 For more on this module, refer to this [section](../../campaign/using/designing-marketing-campaigns.md).
+下面详细介绍的工作流默认安装在&#x200B;**活动**&#x200B;模块中。 有关此模块的详细信息，请参阅此[部分](../../campaign/using/designing-marketing-campaigns.md)。
 
 >[!CAUTION]
 >
@@ -48,12 +48,12 @@ ht-degree: 3%
   <tr> 
    <td> <span class="uicontrol">活动作业</span> <br /> </td> 
    <td> <span class="uicontrol">operationMgt</span> <br /> </td> 
-   <td> 此工作流管理营销活动(启动项定位、文件提取等)的作业。 它还创建与循环和周期工作流相关的活动。<br /> </td> 
+   <td> 此工作流管理营销活动(启动项定位、文件提取等)的作业。 它还创建与循环和周期活动相关的工作流。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">服务提供商工作</span> <br /> </td> 
    <td> <span class="uicontrol">supplierMgt</span> <br /> </td> 
-   <td> 批准开始后，此工作流将负责处理提供商（向路由器发送电子邮件并进行后处理）。 <br /> </td> 
+   <td> 批准开始后，此工作流将负责处理提供商（向路由器发送电子邮件并进行后处理）。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
