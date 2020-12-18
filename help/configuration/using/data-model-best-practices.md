@@ -19,9 +19,9 @@ ht-degree: 1%
 
 此文档概述了设计Adobe Campaign数据模型时的主要建议。
 
-要更好地了解活动内置表及其交互，请参阅 [Campaign Classic数据模型部分](../../configuration/using/about-data-model.md) 。
+要更好地了解活动内置表及其交互，请参阅[Campaign Classic数据模型](../../configuration/using/about-data-model.md)部分。
 
-阅读此 [文档](../../configuration/using/about-schema-reference.md) ，开始使用活动模式。 了解如何配置扩展模式，以扩展此文档中Adobe Campaign数据库的概念数据 [模型](../../configuration/using/about-schema-edition.md)。
+阅读[本文档](../../configuration/using/about-schema-reference.md)，开始使用活动模式。 了解如何配置扩展模式，以扩展[此文档](../../configuration/using/about-schema-edition.md)中Adobe Campaign数据库的概念数据模型。
 
 ## 概述 {#overview}
 
@@ -29,27 +29,27 @@ Adobe Campaign系统极其灵活，可以扩展到初始实现之外。 但是�
 
 此文档提供了常见用例和最佳实践，以了解如何正确设计Adobe Campaign工具。
 
-## 数据模型架构 {#data-model-architecture}
+## 数据模型架构{#data-model-architecture}
 
 Adobe Campaign Standard是一个功能强大的跨渠道活动管理系统，可帮助您调整线上和线下战略，创造个性化的客户体验。
 
-### 以客户为中心的方法 {#customer-centric-approach}
+### 以客户为中心的方法{#customer-centric-approach}
 
 大多数电子邮件服务提供商都通过以列表为中心的方法与客户进行交流，而Adobe Campaign则依赖关系型数据库来利用客户及其属性的更广泛视图。
 
-以客户为中心的方法如下图所示。 灰 **色的收件人** 表表示正在构建所有内容的主客户表：
+以客户为中心的方法如下图所示。 灰色&#x200B;**收件人**&#x200B;表表示正在构建所有内容的主客户表：
 
 ![](assets/customer-centric-data-model.png)
 
-要访问每个表的说明，请转 **[!UICONTROL Admin > Configuration > Data schemas]**&#x200B;到，从列表中选择资源，然后单击选 **[!UICONTROL Documentation]** 项卡。
+要访问每个表的说明，请转至&#x200B;**[!UICONTROL Admin > Configuration > Data schemas]**，从列表中选择一个资源，然后单击&#x200B;**[!UICONTROL Documentation]**&#x200B;选项卡。
 
-Adobe Campaign默认文档中显示 [数据模型](../../configuration/using/data-model-description.md)。
+Adobe Campaign默认文档模型显示在[此](../../configuration/using/data-model-description.md)中。
 
 >[!NOTE]
 >
->Adobe Campaign Classic允许构建自定义客户表。 但是，在大多数情况下，建议使用已预 [建其他表](../../configuration/using/about-data-model.md#default-recipient-table) 和功能的标准收件人表。
+>Adobe Campaign Classic允许构建自定义客户表。 但是，在大多数情况下，建议使用标准[收件人表](../../configuration/using/about-data-model.md#default-recipient-table)，该表已经预建了其他表和功能。
 
-### Adobe Campaign {#data-for-campaign}
+### Adobe Campaign{#data-for-campaign}的数据
 
 哪些数据应发送给Adobe Campaign? 确定营销活动所需的数据至关重要。
 
@@ -59,38 +59,38 @@ Adobe Campaign默认文档中显示 [数据模型](../../configuration/using/dat
 
 要决定在Adobe Campaign中是否需要某个属性，请扪心自问，该属性是否属于以下类别之一：
 
-* 用于分段的属 **性**
-* 用于数据管理 **进程的属性** (例如聚合计算)
-* 用于个性化的 **属性**
+* 用于&#x200B;**segmentation**&#x200B;的属性
+* 用于&#x200B;**数据管理进程**&#x200B;的属性(例如聚合计算)
+* 用于&#x200B;**个性化**&#x200B;的属性
 
 如果不掉入其中，您很可能不需要在Adobe Campaign中使用此属性。
 
-### 数据类型选择 {#data-types}
+### 数据类型选择{#data-types}
 
 要确保系统的良好架构和性能，请按照以下最佳实践设置Adobe Campaign中的数据。
 
 * 大表应大多包含数字字段并包含引用表的链接(处理值列表时)。
-* expr **属性** 允许将模式属性定义为计算字段，而不是表中的物理集值。 这可以访问不同格式（例如，年龄和出生日期）的信息，而无需存储这两个值。 这是避免重复字段的好方法。 例如，收件人表使用域的表达式，该域已在电子邮件字段中显示。
-* 但是，当表达式计算复杂时，不建议使用 **expr** 属性，因为即时计算可能会影响查询的性能。
-* XML **类** 型是避免创建过多字段的好方法。 但它也占用了磁盘空间，因为它使用数据库中的CLOB列。 它还可能导致复杂的SQL查询，并可能影响性能。
-* 字符串字 **段的长** 度应始终用列进行定义。 默认情况下，Adobe Campaign中的最大长度为255，但Adobe建议在您已经知道大小不会超过较短长度时使字段保持较短。
+* **expr**&#x200B;属性允许将模式属性定义为计算字段，而不是表中的物理集值。 这可以访问不同格式（例如，年龄和出生日期）的信息，而无需存储这两个值。 这是避免重复字段的好方法。 例如，收件人表使用域的表达式，该域已在电子邮件字段中显示。
+* 但是，当表达式计算复杂时，不建议使用&#x200B;**expr**&#x200B;属性作为即时计算，这可能会影响查询的性能。
+* **XML**&#x200B;类型是避免创建过多字段的好方法。 但它也占用了磁盘空间，因为它使用数据库中的CLOB列。 它还可能导致复杂的SQL查询，并可能影响性能。
+* **string**&#x200B;字段的长度应始终由列定义。 默认情况下，Adobe Campaign中的最大长度为255，但Adobe建议在您已经知道大小不会超过较短长度时使字段保持较短。
 * 如果您确定源系统中的字段大小被高估，并且无法达到，则Adobe Campaign比源系统中的字段短是可以接受的。 这可能意味着Adobe Campaign中的字符串较短或整数较小。
 
-### 字段选择 {#choice-of-fields}
+### 字段选择{#choice-of-fields}
 
 如果字段具有定位或个性化目的，则需要将其存储在表中。 换言之，如果字段不用于发送个性化电子邮件或用作查询中的标准，则会占用磁盘空间，而它是无用的。
 
-对于混合型和预置型实例，联合数据访问(联合数据访问，允许访问外部数据的可选功能)涵盖在活动过程中“实时”添加字段的需要。 如果您有联合数据访问，则无需导入所有内容。 有关此内容的详细信息，请参 [阅关于联合数据访问](../../installation/using/about-fda.md)。
+对于混合型和预置型实例，联合数据访问(联合数据访问，允许访问外部数据的可选功能)涵盖在活动过程中“实时”添加字段的需要。 如果您有联合数据访问，则无需导入所有内容。 有关此内容的详细信息，请参阅[关于联合数据访问](../../installation/using/about-fda.md)。
 
-### 密钥选择 {#choice-of-keys}
+### 键选择{#choice-of-keys}
 
-除了大多数 **表中** 默认定义的自动项外，您还应考虑添加一些逻辑项或业务项（帐户号、客户端号等）。 它稍后可用于导入／对帐或数据包。 For more on this, see [Identifiers](#identifiers).
+除了大多数表中默认定义的&#x200B;**autopk**&#x200B;之外，您还应考虑添加一些逻辑或业务密钥（帐户号、客户端号等）。 它稍后可用于导入／对帐或数据包。 有关详细信息，请参阅[标识符](#identifiers)。
 
 高效的密钥对性能至关重要。 数字数据类型应始终作为表的键。
 
 对于SQLServer数据库，如果需要性能，可以考虑使用“clustered index”。 由于Adobe不处理此问题，您需要在SQL中创建它。
 
-### 专用表空间 {#dedicated-tablespaces}
+### 专用表空间{#dedicated-tablespaces}
 
 模式中的表空间属性允许您为表指定专用表空间。
 
@@ -98,7 +98,7 @@ Adobe Campaign默认文档中显示 [数据模型](../../configuration/using/dat
 
 专用表空间更适合于分区、安全规则，并允许流畅灵活的管理、更好的优化和性能。
 
-## 标识符 {#identifiers}
+## 标识符{#identifiers}
 
 Adobe Campaign资源具有三个标识符，并且可以添加一个附加标识符。
 
@@ -106,11 +106,11 @@ Adobe Campaign资源具有三个标识符，并且可以添加一个附加标识
 
 | 标识符 | 说明 | 最佳做法 |
 |--- |--- |--- |
-| ID | <ul><li>id是Adobe Campaign表的物理主键。 对于现成表，它是从序列生成的32位数</li><li>此标识符通常对特定Adobe Campaign实例唯一。 </li><li>自动生成的ID可在模式定义中显示。 搜索 *autopk=&quot;true&quot;属* 性。</li></ul> | <ul><li>自动生成的标识符不应用作工作流或包定义中的引用。</li><li>不应假定id将始终为递增数。</li><li>现成表中的id是32位数，不应更改此类型。 此编号取自该部分中使用相同名称的“序列”。</li></ul> |
-| 名称（或内部名称） | <ul><li>此信息是表中记录的唯一标识符。 此值可以手动更新，通常使用生成的名称。</li><li>此标识符在部署到其他Adobe Campaign实例时会保留其值，且不应为空。</li></ul> | <ul><li>如果对象要从Adobe Campaign部署到另一个环境，请重命名由生成的记录名称。</li><li>当对象具有命名空间属性(*例如* ,模式)时，此通用命名空间将被用于创建的所有自定义对象。 不应使用某些保留命名空间: *nms*、 *xtk*。</li><li>当对象没有任何命名空间(*例如**工作流或* 投放)时，此命名空间概念将添加为内部名称对象的前缀： *namespaceMyObjectName*。</li><li>请勿使用空格“”、半列“:”或连字符“-”等特殊字符。 所有这些字符将替换为下划线“_”（允许的字符）。 例如，“abc-def”和“abc:def”将存储为“abc_def”并互相覆盖。</li></ul> |
+| ID | <ul><li>id是Adobe Campaign表的物理主键。 对于现成表，它是从序列生成的32位数</li><li>此标识符通常对特定Adobe Campaign实例唯一。 </li><li>自动生成的ID可在模式定义中显示。 搜索&#x200B;*autopk=&quot;true&quot;*&#x200B;属性。</li></ul> | <ul><li>自动生成的标识符不应用作工作流或包定义中的引用。</li><li>不应假定id将始终为递增数。</li><li>现成表中的id是32位数，不应更改此类型。 此编号取自该部分中使用相同名称的“序列”。</li></ul> |
+| 名称（或内部名称） | <ul><li>此信息是表中记录的唯一标识符。 此值可以手动更新，通常使用生成的名称。</li><li>此标识符在部署到其他Adobe Campaign实例时会保留其值，且不应为空。</li></ul> | <ul><li>如果对象要从Adobe Campaign部署到另一个环境，请重命名由生成的记录名称。</li><li>当对象具有命名空间属性(例如&#x200B;*模式*)时，将在所有创建的自定义对象中利用此通用命名空间。 不应使用某些保留命名空间:*nms*、*xtk*。</li><li>当对象没有任何命名空间(例如&#x200B;*workflow*&#x200B;或&#x200B;*投放*)时，此命名空间概念将作为内部名称对象的前缀添加：*namespaceMyObjectName*。</li><li>请勿使用空格“”、半列“:”或连字符“-”等特殊字符。 所有这些字符将替换为下划线“_”（允许的字符）。 例如，“abc-def”和“abc:def”将存储为“abc_def”并互相覆盖。</li></ul> |
 | 标签 | <ul><li>标签是Adobe Campaign中对象或记录的业务标识符。</li><li>此对象允许空格和特殊字符。</li><li>它不能保证记录的唯一性。</li></ul> | <ul><li>建议确定对象标签的结构。</li><li>这是最易用的解决方案，用于为Adobe Campaign用户标识记录或对象。</li></ul> |
 
-## 自定义内部密钥 {#custom-internal-keys}
+## 自定义内部密钥{#custom-internal-keys}
 
 在Adobe Campaign中创建的每个表都需要主键。
 
@@ -128,15 +128,15 @@ Adobe Campaign资源具有三个标识符，并且可以添加一个附加标识
 >
 >在工作流中，不应将autopk用作引用。
 
-## 序列 {#sequences}
+## 序列{#sequences}
 
 Adobe Campaign主键是所有现成表的自动生成的id，对于自定义表可以是相同的。 有关更多信息，请参阅[此章节](#identifiers)。
 
-此值取自称为序列的 **数据**，该序列是用于生成编号序列的数据库对象。
+此值取自称为&#x200B;**序列**&#x200B;的数据库对象，该对象用于生成编号序列。
 
 有两种类型的序列：
-* **共享**:多个表格会从同一序列中选取其id。 这意味着，如果一个表使用了id“X”，则共享同一序列的其他表将没有具有该id“X”的记录。 **XtkNewId是** Adobe Campaign中可用的默认共享序列。
-* **专用**:只有一个表从序列中选取其id。 序列名称通常包含表名称。
+* **共享**:多个表格会从同一序列中选取其id。这意味着，如果一个表使用了id“X”，则共享同一序列的其他表将没有具有该id“X”的记录。 **XtkNewId** 是Adobe Campaign中可用的默认共享序列。
+* **专用**:只有一个表从序列中选取其id。序列名称通常包含表名称。
 
 >[!IMPORTANT]
 >
@@ -151,8 +151,8 @@ Adobe Campaign主键是所有现成表的自动生成的id，对于自定义表�
 默认情况下，自定义序列的值将介于+1,000到+2.1BB之间。 从技术上讲，通过启用负ID，可获得全范围4BB。 应谨慎使用，当从负数到正数时，将丢失一个id:记录0通常被Adobe Campaign Classic在生成的SQL查询中忽略。
 
 **相关主题：**
-* 有关序列自动 **生成功能的更多** ，请参 [阅此文档](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html)。
-* 有关序列耗尽的更多信息，请观 [看此视频](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
+* 有关&#x200B;**序列自动生成**&#x200B;功能的详细信息，请参阅[此文档](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html)。
+* 有关序列耗尽的详细信息，请观看[此视频](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
 
 ## 索引 {#indexes}
 
@@ -176,19 +176,19 @@ Adobe建议定义其他索引，因为它可以提高性能。
 ### 示例
 
 管理索引可能变得非常复杂，因此了解索引的工作方式非常重要。 为了说明这种复杂性，让我们举一个基本示例，如通过筛选名字和姓氏搜索收件人。 操作步骤：
-1. 转到列表数据库中所有收件人的文件夹。 For more on this, see [Managing profiles](../../platform/using/managing-profiles.md).
-1. 右键单击该 **[!UICONTROL First name]** 字段。
+1. 转到列表数据库中所有收件人的文件夹。 有关详细信息，请参阅[管理用户档案](../../platform/using/managing-profiles.md)。
+1. 右键单击&#x200B;**[!UICONTROL First name]**&#x200B;字段。
 1. 选择 **[!UICONTROL Filter on this field]**。
 
    ![](assets/data-model-index-example.png)
 
-1. 对字段重复此 **[!UICONTROL Last name]** 操作。
+1. 对&#x200B;**[!UICONTROL Last name]**&#x200B;字段重复此操作。
 
 两个相应的过滤器添加到屏幕顶部。
 
 ![](assets/data-model-index-search.png)
 
-您现在可以根据各种筛选条 **[!UICONTROL First name]** 件对 **[!UICONTROL Last name]** 字段和字段执行搜索筛选。
+您现在可以根据各种筛选条件对&#x200B;**[!UICONTROL First name]**&#x200B;和&#x200B;**[!UICONTROL Last name]**&#x200B;字段执行搜索筛选。
 
 现在，您可以添加索引以加快这些过滤器的搜索。 但应该使用哪些索引？
 
@@ -208,7 +208,7 @@ Adobe建议定义其他索引，因为它可以提高性能。
 | 名字包含“John” | 未使用 | 未使用 | 未使用 | 这是“left”和“right”搜索的组合。 由于后者，它将禁用索引，并将执行完全扫描。 |
 | 名字等于“john” | 未使用 | 未使用 | 未使用 | 索引区分大小写。 要使其不区分大小写，应创建包含SQL函数(如“upper(firstname)”)的特定索引。 您应该对其他数据转换(如“unaccent(firstname)”)执行同样的操作。 |
 
-## 链接和基数 {#links-and-cardinality}
+## 链接和基数{#links-and-cardinality}
 
 ### 链接 {#links}
 
@@ -228,9 +228,9 @@ Adobe建议定义其他索引，因为它可以提高性能。
 
 索引将添加到链接中使用的属性。
 
-创建者链接和上次修改者链接在许多表中。 如果企业未使用此信息，则可以在链接上使用属性noDbIndex来禁用索引。
+The   创建者链接和上次修改者链接在许多表中存在。 如果企业未使用此信息，则可以在链接上使用属性noDbIndex来禁用索引。
 
-### 基数 {#cardinality}
+### 基数{#cardinality}
 
 设计链接时，确保声明1-1关系后目标记录是唯一的。 否则，当仅需要一条记录时，连接可能会返回多条记录。 这会在投放准备过程中导致错误，当“查询返回的行数超过预期”时。 将链接名称设置为与目标模式相同的名称。
 
@@ -242,7 +242,7 @@ Adobe建议定义其他索引，因为它可以提高性能。
 
 执行外部连接(1-0..1)的链接应当使用得当，因为这将影响系统性能。
 
-## 数据保留——清除和清除 {#data-retention}
+## 数据保留——清除和清除{#data-retention}
 
 Adobe Campaign既不是data warehouse，也不是报告工具。 因此，为了确保Adobe Campaign解决方案的良好性能，数据库的增长应保持在可控范围内。 为此，遵循以下一些最佳实践可能会有所帮助。
 
@@ -251,9 +251,9 @@ Adobe Campaign既不是data warehouse，也不是报告工具。 因此，为了
 * 如果要延长日志保存时间，应根据数据库大小和发送的消息量仔细作出此决定。 作为提醒，Adobe Campaign序列是32位整数。
 * 建议在这些表中一次不要有超过10亿个记录（在21.4亿个可用ID中约占50%），以限制使用所有可用ID的风险。 这将要求一些客户将保留期限降至180天以下。
 
-按照活动隐私和安全准则进 [一步了解数据保留](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent)。
+在[活动隐私和安全准则](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent)中了解有关数据保留的更多信息。
 
-在本节中进一步了解活动数据 [库清理工作流](../../production/using/database-cleanup-workflow.md)。
+在本节](../../production/using/database-cleanup-workflow.md)中进一步了解活动数据库清理工作流[。
 
 >[!IMPORTANT]
 >
@@ -265,11 +265,11 @@ Adobe Campaign既不是data warehouse，也不是报告工具。 因此，为了
 
 您可以在模式中声明“deleteStatus”属性。 将记录标记为已删除，然后延迟清除任务中的删除更有效。
 
-## 性能 {#performance}
+## 性能{#performance}
 
 为确保在任何时间都能获得更好的性能，请遵循以下最佳实践。
 
-### 一般性建议 {#general-recommendations}
+### 一般建议 {#general-recommendations}
 
 * 避免在查询中使用“CONTAINS”等操作。 如果您知道要过滤什么，并且希望过滤什么，请使用“EQUAL TO”或其他特定筛选器运算符应用相同的条件。
 * 在工作流中构建数据时，避免加入非索引字段。
@@ -280,13 +280,13 @@ Adobe Campaign既不是data warehouse，也不是报告工具。 因此，为了
 * 使用一个或多个引用表，而不是在每个行中复制字段。 使用键／值对时，最好选择数字键。
 * 短字符串仍可接受。 如果引用表已在外部系统中，重复使用它将有助于数据与Adobe Campaign的集成。
 
-### 一对多关系 {#one-to-many-relationships}
+### 一对多关系{#one-to-many-relationships}
 
 * 数据设计会影响可用性和功能。 如果您设计的数据模型具有许多一对多关系，则用户在应用程序中构建有意义的逻辑将更加困难。 对于非技术营销人员来说，一对多过滤逻辑可能难以正确构建和理解。
 * 将所有必填字段放在一个表中是件好事，因为它使用户能更轻松地构建查询。 有时，如果能够避免连接，则在表之间重复某些字段也会对性能有好处。
 * 某些内置功能将不能引用一对多关系，例如优惠权重公式和投放。
 
-## 大表 {#large-tables}
+## 大表{#large-tables}
 
 Adobe Campaign依赖第三方数据库引擎。 根据提供者的不同，为较大的表优化性能可能需要特定的设计。
 
@@ -298,16 +298,16 @@ Adobe Campaign依赖第三方数据库引擎。 根据提供者的不同，为�
 * 对于连接键，请始终使用数字数据而非字符串。
 * 尽可能减少日志保留深度。 如果需要更深入的历史记录，您可以聚合计算和／或处理自定义日志表以存储更大的历史记录。
 
-### 表的大小 {#size-of-tables}
+### 表大小{#size-of-tables}
 
 表大小是记录数和每个记录的列数的组合。 两者都会影响查询的性能。
 
-* 小 **型表** 与投放表类似。
-* 中 **等大小** 的表与收件人表的大小相同。 每位客户有1个记录。
-* 大 **型表与** “广泛”日志表类似。 每个客户都有很多记录。
+* **小型**&#x200B;表与投放表类似。
+* **中等大小**&#x200B;表与收件人表的大小相同。 每位客户有1个记录。
+* **large-size**表与Broad日志表类似。 每个客户都有很多记录。
 例如，如果您的收件人库包含1000万个投放，则Broad日志表包含约1亿到2亿条消息，而表包含几千条记录。
 
-在PostgreSQL上，行不应超过8KB以避免 [TOAST](https://wiki.postgresql.org/wiki/TOAST) 机制。 因此，尽量减少列数和每行的大小以保持系统（内存和CPU）的最佳性能。
+在PostgreSQL上，行不应超过8KB以避免[TOAST](https://wiki.postgresql.org/wiki/TOAST)机制。 因此，尽量减少列数和每行的大小以保持系统（内存和CPU）的最佳性能。
 
 行数也会影响性能。 Adobe Campaign库不设计为存储不主动用于定位或个性化目的的历史数据——这是一个操作数据库。
 
@@ -325,9 +325,9 @@ Adobe Campaign依赖第三方数据库引擎。 根据提供者的不同，为�
 ![](assets/transaction-table-example.png)
 
 在此示例中：
-* “事 *务处理* ”和“事 *务处理项* ”表很大：超过一千万。
-* 产 *品* 和商 *店表* 较小：不到一万。
-* 产品标签和引用已放置在产 *品表* 中。
-* “事 *务处理* 项”表只包含指向“产 *品* ”表的链接，该表是数字表。
+* *事务*&#x200B;和&#x200B;*事务项*&#x200B;表较大：超过一千万。
+* *产品*&#x200B;和&#x200B;*商店*&#x200B;表较小：不到一万。
+* 产品标签和引用已放在&#x200B;*产品*&#x200B;表中。
+* *事务项*&#x200B;表只具有指向&#x200B;*产品*&#x200B;表的链接，该表是数字的。
 
 <!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->
