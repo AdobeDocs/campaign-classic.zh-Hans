@@ -27,11 +27,11 @@ ht-degree: 6%
 
 内容配置需要以下资源：
 
-* 数据模式:XML内容结构的描述。 For more on this, refer to [Data schemas](../../delivery/using/data-schemas.md).
-* 数据输入表单：数据输入屏幕的构建。 For more on this, refer to [Input forms](../../delivery/using/input-forms.md).
-* 图像：数据输入表单中使用的图像。 For more on this, refer to [Image management](../../delivery/using/formatting.md#image-management).
-* 样式表：格式设置输出文档。 For more on this, refer to [Formatting](../../delivery/using/formatting.md).
-* JavaScript模板：格式化输出文档。 For more on this, refer to [Publication templates](../../delivery/using/publication-templates.md).
-* JavaScript代码：用于数据聚合的JavaScript代码。 For more on this, refer to [Aggregator](../../delivery/using/publication-templates.md#aggregator).
-* 发布模板:发布模板的定义。 For more on this, refer to [Publication templates](../../delivery/using/publication-templates.md).
-* 内容：要创建和发布的内容实例。 有关此内容的详细信息，请 [参阅使用内容模板](../../delivery/using/using-a-content-template.md)。
+* 数据模式:XML内容结构的描述。 有关详细信息，请参阅[数据模式](../../delivery/using/data-schemas.md)。
+* 数据输入表单：数据输入屏幕的构建。 有关详细信息，请参阅[输入表单](../../delivery/using/input-forms.md)。
+* 图像：数据输入表单中使用的图像。 有关详细信息，请参阅[映像管理](../../delivery/using/formatting.md#image-management)。
+* 样式表：格式设置输出文档。 有关详细信息，请参阅[格式](../../delivery/using/formatting.md)。
+* JavaScript模板：格式化输出文档。 有关详细信息，请参阅[发布模板](../../delivery/using/publication-templates.md)。
+* JavaScript代码：用于数据聚合的JavaScript代码。 有关详细信息，请参阅[聚合器](../../delivery/using/publication-templates.md#aggregator)。
+* 发布模板:发布模板的定义。 有关详细信息，请参阅[发布模板](../../delivery/using/publication-templates.md)。
+* 内容：要创建和发布的内容实例。 有关详细信息，请参阅[使用内容模板](../../delivery/using/using-a-content-template.md)。
