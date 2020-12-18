@@ -9,15 +9,15 @@ topic-tags: introduction
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # 一般架构{#general-architecture}
 
-## 最小架构 {#minimum-architecture}
+## 最低体系结构{#minimum-architecture}
 
 在最低配置中，Adobe Campaign的操作包括：
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 1. 通过Internet到Adobe Campaign服务器的HTTP协议流量，
 1. 通过Internet从Adobe Campaign服务器传输和传输SMTP协议流量。
 
-## 分布式架构 {#distributed-architecture}
+## 分布式架构{#distributed-architecture}
 
 Adobe Campaign由多个模块组成，这些模块可以在多台计算机上划分。 此操作模式具有以下几个优点：
 
@@ -45,9 +45,9 @@ Adobe Campaign由多个模块组成，这些模块可以在多台计算机上划
 
 >[!NOTE]
 >
->For more on the various architectures, refer to [this section](../../installation/using/general-architecture.md).
+>有关各种体系结构的详细信息，请参阅[本节](../../installation/using/general-architecture.md)。
 
-## 开放端口列表 {#list-of-open-ports}
+## 列表打开端口{#list-of-open-ports}
 
 | 端口号 | 相关Adobe Campaign模块或应用程序 | 可配置 |
 |---|---|---|
