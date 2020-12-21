@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 100%
@@ -32,7 +32,7 @@ _2020 年 9 月 11 日_
 * 修复了在升级后期导致 nlserver 启动错误的回归（错误日志）。
 * 改进了共享内存的更新管理。不再需要 20.2 中必需的其他步骤。
 
-## ![](assets/do-not-localize/orange_2.png) 版本 20.2.2 - 版本 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/red_2.png) 版本 20.2.2 - 版本 9180 {#release-20-2-2-build-9180}
 
 _2020 年 7 月 22 日_
 
@@ -57,7 +57,7 @@ _2020 年 7 月 22 日_
 
 ![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含活动用户档案监测、子域投放能力审核和 GPG 密钥管理。[了解详情](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/orange_2.png) 版本 20.2.1 - 版本 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/red_2.png) 版本 20.2.1 - 版本 9178 {#release-20-2-1-build-9178}
 
 _2020 年 6 月 8 日_
 
