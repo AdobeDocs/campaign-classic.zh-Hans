@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: f9584342d81b53ad5854b30b7c4970b0aba6d4ff
+source-git-commit: e4cdeddaeb19f3ab7d601343d2a2c91f1c27822b
 workflow-type: tm+mt
 source-wordcount: '820'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ _2020 年 7 月 7 日_
 
 >[!CAUTION]
 >
->我们建议您使用此版本中提供的客户端控制台进行升级。请参阅[此页面](../../installation/using/installing-the-client-console.md)
+>我们建议您使用此版本中提供的客户端控制台进行升级。请参阅[此页](../../installation/using/installing-the-client-console.md)
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 9 版本{#gs-9}
 
@@ -78,7 +78,7 @@ _2020 年 4 月 29 日_
 * 修复了导致清理工作流崩溃的回归。
 * 修复了清理工作流日志中的次要回归。
 
-## ![](assets/do-not-localize/orange_2.png) Gold Standard 6 版本{#gs-6}
+## ![](assets/do-not-localize/red_2.png) Gold Standard 6 版本{#gs-6}
 
 _2020 年 3 月 9 日_
 
@@ -86,7 +86,7 @@ _2020 年 3 月 9 日_
 
 * 修复了外部帐户使用 FTP over SSL 时的问题。(NEO-20498)
 
-## ![](assets/do-not-localize/orange_2.png) Gold Standard 5 版本{#gs-5}
+## ![](assets/do-not-localize/red_2.png) Gold Standard 5 版本{#gs-5}
 
 _2019 年 12 月 17 日_
 
@@ -94,7 +94,7 @@ _2019 年 12 月 17 日_
 
 * 修复了以下通信渠道上的跟踪问题：移动（SMS 或 MMS）、推送（iOS 或 Android）和社交网络（Facebook 或 Twitter）。(NEO-19595)
 
-## ![](assets/do-not-localize/orange_2.png) Gold Standard 4 版本{#gs-4}
+## ![](assets/do-not-localize/red_2.png) Gold Standard 4 版本{#gs-4}
 
 _2019 年 12 月 11 日_
 
@@ -102,7 +102,7 @@ _2019 年 12 月 11 日_
 
 * 修复了使用 MSSQL 数据库发送消息时的性能问题。(NEO-17558)
 
-## ![](assets/do-not-localize/orange_2.png) Gold Standard 3 版本{#gs-3}
+## ![](assets/do-not-localize/red_2.png) Gold Standard 3 版本{#gs-3}
 
 _2019 年 11 月 20 日_
 
