@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -17,19 +17,19 @@ ht-degree: 6%
 
 # 版本 20.1{#release-20-1}
 
-## ![](assets/do-not-localize/orange_2.png) 版本 20.1.3 - 版本 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png) 版本 20.1.3 - 版本 9124{#release-20-1-3-build-9124}
 
 _2020年5月6日_
 
 * 修复了&#x200B;**文件传输**&#x200B;活动的问题，该问题导致基于 SFTP 密钥的身份验证无法在 Debian 9 上工作。(NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) 版本 20.1.2 - 版本 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png) 版本 20.1.2 - 版本 9123{#release-20-1-2-build-9123}
 
 _2020年3月13日_
 
 * 修复了阻止在Red Hat 7服务器上部署版本的问题。 (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) 版本 20.1 - 版本 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png) 版本 20.1 - 版本 9122{#release-20-1-build-9122}
 
 _2020年2月17日_
 
