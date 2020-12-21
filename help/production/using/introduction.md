@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '191'
 ht-degree: 1%
 
 ---
@@ -35,6 +35,10 @@ Adobe Campaign基于在更新过程中需要处理的服务器端执行的多个
 * 应用程序服务器(nlserver web)
 * 投放服务器(nlserver mta)
 * 重定向服务器(webmdl)
+
+>[!CAUTION]
+>
+>客户端控制台应与服务器实例位于同一版本。
 
 >[!NOTE]
 >
