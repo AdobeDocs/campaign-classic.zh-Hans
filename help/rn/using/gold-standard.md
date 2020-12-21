@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 2725767f826a9ee041555bb49e8bfd0964d41736
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '937'
+ht-degree: 90%
 
 ---
 
@@ -24,6 +24,24 @@ Gold Standard 是 Campaign Classic 长期支持版本。作为 Gold Standard 用
 本页列出 Gold Standard 版本。
 
 有关 Campaign Gold Standard 程序的详细信息，请参阅[本文](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
+
+## ![](assets/do-not-localize/limited_2.png) Gold Standard 11 版本{#gs-11}
+
+_2020年12月21日_
+
+>[!CAUTION]
+>
+>此版本附带新的连接协议：升级对于2020年3月21日之后能够连接到活动的活动服务器和客户端控制台都是强制性的
+
+构建9032@2a2a028包含以下改进和修复：
+
+* 已更新连接协议以遵循新的IMS身份验证机制。
+
+* 最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成身份验证现已更改并移至 Adobe I/O。[了解详情](../../integrations/using/configuring-adobe-io.md)
+
+* 在iOS APNs旧版二进制协议支持结束后，在配置升级期间，使用此协议的所有实例都更新为HTTP/2协议。
+
+* 修复了一个安全问题，以增强针对服务器端请求伪造(SSRF)问题的保护。 (NEO-27777)
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard 10 版本{#gs-10}
 
