@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: c511c1ac4b9fccff30f73fcfd0db650d860514d2
 workflow-type: tm+mt
 source-wordcount: '2539'
 ht-degree: 4%
@@ -186,13 +186,13 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
    Adobe Campaign Classic支持Dynamics 365 REST接口和OAuth协议进行身份验证。
 
-   如果选择&#x200B;**[!UICONTROL WebAPI]**&#x200B;部署，则需要在Azure目录上注册一个应用程序，并从Azure目录获取&#x200B;**clientId**。 此注册记录在[此页](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/mt622431(v=crm.8)?redirectedfrom=MSDN)中。
+   如果选择&#x200B;**[!UICONTROL WebAPI]**&#x200B;部署，则需要在Azure目录上注册一个应用程序，并从Azure目录获取&#x200B;**clientId**。 此注册记录在[此页](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory)中。
 
    >[!NOTE]
    >
    >redirectURL参数不是Adobe Campaign Classic所必需的。
 
-   **clientId**&#x200B;值与用户名／口令一起使用，以使用授权类型口令获取承载令牌。 这称为&#x200B;**资源所有者密码凭据授权**。 有关详细信息，请参见[此页面](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/)。
+   **clientId**&#x200B;值与用户名／口令一起使用，以使用授权类型口令获取承载令牌。 这称为&#x200B;**资源所有者密码凭据授权**。 有关详细信息，请参见[此页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc)。
 
    ![](assets/crm_connectors_msdynamics_01_3.png)
 
