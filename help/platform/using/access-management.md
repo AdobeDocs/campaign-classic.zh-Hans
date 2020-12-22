@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 647a872d71d19802d7334a6e8f881f8d7ad94d13
+source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
 workflow-type: tm+mt
-source-wordcount: '2950'
+source-wordcount: '2984'
 ht-degree: 2%
 
 ---
@@ -451,3 +451,7 @@ Adobe Campaign访问权限矩阵在[此处](/help/platform/using/assets/access-r
 投放中将显示以下视图:
 
 ![](assets/s_ncs_user_add_folder_exple02.png)
+
+>[!NOTE]
+>
+>在管理[事务消息](../../message-center/using/about-transactional-messaging.md)事件时，不能将&#x200B;**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹设置为执行实例上的视图，因为这可能导致访问权限问题。 有关事件集合的详细信息，请参阅[此部分](../../message-center/using/event-collection.md)。
