@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 63%
@@ -93,7 +93,7 @@ ht-degree: 63%
 >
 >如果您托管在AWS上，并使用构建8931中的Campaign Classic，您还可以直接从控制面板监视实例上使用的活动用户档案数。 有关详细信息，请参阅[控制面板文档](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
 >
->请注意，活动用户档案计数仅适用于&#x200B;**营销实例**。 它不可用于执行实例，即MID（中间采购）和RT（消息中心／实时消息）实例。
+>请注意，活动用户档案计数仅适用于&#x200B;**营销实例**。 它不适用于执行实例，即MID（中间采购）和RT（消息中心／实时消息）实例。
 
 “**用户档案**”是指代表最终客户或潜在客户的信息记录（例如 nmsRecipient 表或外部表中的记录，包含 cookie ID、客户 ID、移动标识符或与特定渠道相关的其他信息）。
 
@@ -105,7 +105,7 @@ ht-degree: 63%
 >
 >Facebook 和 Twitter 渠道不包含在內。
 
-您可以从Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;菜单中概述&#x200B;**[!UICONTROL Number of active profiles]**。 实际计数由&#x200B;**[!UICONTROL Number of active billing profiles]**(**[!UICONTROL billingActiveContactCount]**)[技术工作流](../../workflow/using/deliveries.md)执行，该工作流每天运行，并将新数据添加到&#x200B;**[!UICONTROL Customer metrics]**&#x200B;菜单中当前时段的现有报告中。 每个时段的时长均为 12 个月。
+您可以从Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;菜单中概述&#x200B;**[!UICONTROL Number of active profiles]**。 实际计数由&#x200B;**[!UICONTROL Number of active billing profiles]**(**[!UICONTROL billingActiveContactCount]**)[技术工作流](../../workflow/using/about-technical-workflows.md)执行，该工作流每天运行，并将新数据添加到&#x200B;**[!UICONTROL Customer metrics]**&#x200B;菜单中当前时段的现有报告中。 每个时段的时长均为 12 个月。
 
 ## 教程视频{#create-profiles-video}
 
@@ -115,7 +115,7 @@ ht-degree: 63%
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-此处提供其他Campaign Classic操作方法视频[。](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
+此处[提供其他Campaign Classic操作方法视频。](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
 
 **另请参阅**
 
@@ -127,4 +127,4 @@ ht-degree: 63%
 
 * [选择目标映射](../../delivery/using/selecting-a-target-mapping.md)
 
-* [定义受众——最佳实践](../../delivery/using/define-the-right-audience.md)
+* [定义受众-最佳实践](../../delivery/using/define-the-right-audience.md)
