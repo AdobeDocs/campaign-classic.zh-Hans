@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 97%
@@ -110,7 +110,7 @@ Adobe Campaign 中的报告基于根据投放和跟踪日志中的汇总数据�
 
 ## 再次选择加入 {#opt-in-again}
 
-**数据主体(其数据已从Adobe Campaign中擦除)是否可选择加入以稍后再次？**
+### 数据主体(其数据已从Adobe Campaign中擦除)是否可选择加入以稍后再次？
 
 数据主体可能再次选择加入，或者在从 Adobe Campaign 中删除其数据后添加为新收件人。
 
