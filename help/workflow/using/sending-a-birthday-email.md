@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '881'
 ht-degree: 1%
 
 ---
@@ -204,7 +204,7 @@ vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 
 >[!CAUTION]
 >
->要执行工作流，必须启动与活动进程相关的技术工作流。 有关详细信息，请参阅[活动进程工作流列表](../../workflow/using/campaign.md)部分。
+>要执行工作流，必须启动与活动包相关的技术工作流。 有关详细信息，请参阅[技术工作流列表](../../workflow/using/about-technical-workflows.md)部分。
 >
 >如果为活动启用了批准步骤，则只有确认这些步骤后，才会发送投放。 有关详细信息，请参阅[选择要批准的进程](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved)部分。
 
