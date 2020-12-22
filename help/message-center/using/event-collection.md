@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 5%
+source-wordcount: '137'
+ht-degree: 4%
 
 ---
 
@@ -25,3 +25,7 @@ ht-degree: 5%
 收集事件后，在等待链接到消息模板时，技术工作流会在执行实例的实时队列和批处理队列之间按细分。
 
 ![](assets/messagecenter_events_queues_001.png)
+
+>[!NOTE]
+>
+>在执行实例上，不能将&#x200B;**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹设置为视图，因为这可能导致[访问权限](../../platform/using/access-management.md#about-permissions)问题。 有关将文件夹设置为视图的详细信息，请参阅[关于视图](../../platform/using/access-management.md#about-views)。
