@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
 workflow-type: tm+mt
-source-wordcount: '3668'
-ht-degree: 98%
+source-wordcount: '3729'
+ht-degree: 97%
 
 ---
 
@@ -28,6 +28,12 @@ ht-degree: 98%
 在如何向投放日志添加发送方的IP地址方面已添加一个用例。 [阅读更多](../../delivery/using/delivery-dashboard.md#use-case)
 
 隐私常见问题解答已移至[此部分](../../platform/using/privacy-faq.md)。
+
+已添加一个关于如何使用外部重复数据删除活动的合并功能的用例。 [阅读更多](../../workflow/using/deduplication-merge.md)
+
+SMS连接器协议和设置页面已移至[此处](../../delivery/using/sms-protocol.md)。
+
+“事务消息”部分已添加注释，警告事件文件夹不能设置为执行实例上的视图，以避免出现访问权限问题。 [阅读更多](../../message-center/using/event-collection.md)
 
 ## 2020 年 11 月{#nov-2020}
 
