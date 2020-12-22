@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2926'
 ht-degree: 1%
 
 ---
@@ -281,7 +281,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->关于活动过程的技术工作流在活动过程工作流的[列表中呈现。](../../workflow/using/campaign.md)
+>与活动包相关的技术工作流以技术工作流](../../workflow/using/about-technical-workflows.md)的[列表显示。
 
 **步骤1 —— 文件批准**
 
