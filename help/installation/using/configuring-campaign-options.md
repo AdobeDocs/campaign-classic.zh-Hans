@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 0%
@@ -204,7 +204,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>在计算正在运行的投放数时， <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span>技术工作流会使用此选项。</p>它允许您定义超过天数，在运行投放计数中将排除状态不一致的投放。</p><p>默认情况下，该值设置为“7”，这意味着将排除7天以前不一致的投放。</p></td> 
+   <td><p>在计算正在运行的投放数时， <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span>技术工作流会使用此选项。</p>它允许您定义超过天数，在运行投放计数中将排除状态不一致的投放。</p><p>默认情况下，该值设置为“7”，这意味着将排除7天以前不一致的投放。</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -360,7 +360,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> 允许您监视<a href="../../workflow/using/campaign.md">operationMgt</a>技术工作流执行。 激活（值“1”）后，执行信息将记录在工作流审核日志中。<br /> </td> 
+   <td> 允许您监视<a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>技术工作流执行。 激活（值“1”）后，执行信息将记录在工作流审核日志中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -682,7 +682,7 @@ ht-degree: 0%
    <td> 在迁移过程中，将根据新版本标准自动重新组织树结构。<br /> 此选项允许您禁用导航树的自动迁移。如果您使用它，则迁移后必须删除已废弃的文件夹，添加新文件夹并运行所有必要的检查。<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">数据类型：</span> 整数</p> </li> 
-     <li> <p> <span class="uicontrol">值（文本）</span> :3 </p> </li> 
+     <li> <p> <span class="uicontrol">值（文本）</span> :1 </p> </li> 
     </ul> 仅当现成的导航树进行了太多更改时，才应使用此选项。<br /> 有关此内容的详细信息，请参 <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">阅本节</a>。<br /> </td> 
   </tr> 
   <tr> 
