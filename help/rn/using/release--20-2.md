@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
+source-git-commit: 26f232fafbcc39eb710135a1fc937e40a76ad0bd
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 100%
+source-wordcount: '2483'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +19,30 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月版**，其中使用 CNAME 进行域配置并新增数据库监视功能。[了解详情](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/green_2.png) 版本 20.2.3 - 版本 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/green_2.png) 版本 20.2.4 - 版本 9187 {#release-20-2-4-build-9187}
+
+_2020年12月22日_
+
+>[!CAUTION]
+>
+>此版本附带新的连接协议： 升级对于2020年3月21日之后能够连接到活动的活动服务器和客户端控制台都是强制性的
+
+**改进**
+
+* 已更新连接协议以遵循新的IMS身份验证机制。
+* 触发最初基于oAUTH身份验证设置的集成身份验证以访问管道已更改并移至Adobe I/O。[了解更多信息](../../integrations/using/configuring-adobe-io.md)
+* 在iOS APNs旧版二进制协议支持结束后，在配置升级期间，使用此协议的所有实例都更新为HTTP/2协议。
+* 修复了一个安全问题，以增强针对服务器端请求伪造(SSRF)问题的保护。 (NEO-27777)
+* 修复了在连接错误后导致SMPP连接器取消激活的问题，从而阻止发送其他SMS投放并导致性能问题。 (NEO-28609)
+* 通过防止在清除表达式分析器时内存损坏，修复了服务器崩溃问题。(NEO-26856)
+* 修复了在显示工作流中&#x200B;**拆分**&#x200B;活动的其余目标数据时导致服务器 崩溃的问题。
+* 修复了在查询除&#x200B;**收件人** (nms:recipient) 以外的其他模式后尝试预览 SMS 消息时可能显示错误消息的问题。(NEO-27517)
+* 修复了在主机名中显式定义端口号的HTTPS连接请求时，调用失败并出现证书错误的问题。 (NEO-29146)
+* 修复了POSIX线程管理中在营销实例上生成大核心转储文件的问题。 (NEO-28117, NEO-29281)
+* 修复了在准备投放或重复投放预览时可能导致Web进程崩溃的问题。 (NEO-27790, NEO-27517)
+* 修复了由非管理员操作员触发时导致投放或验证发送失败的问题。 (NEO-28597)
+
+## ![](assets/do-not-localize/red_2.png) 版本 20.2.3 - 版本 9182 {#release-20-2-3-build-9182}
 
 _2020 年 9 月 11 日_
 
