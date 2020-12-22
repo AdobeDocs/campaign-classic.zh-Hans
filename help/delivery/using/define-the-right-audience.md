@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '480'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,10 @@ ht-degree: 3%
 
 消除重复地址可保护您的发送信誉并确保良好的隔离管理。
 
-了解此用例中的更多[信息](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery)。
+**相关主题：**
+
+* [外部重复数据删除活动](../../workflow/using/deduplication.md)。
+* [用例：使用外部重复数据删除活动的合并功能](../../workflow/using/deduplication-merge.md)
 
 ## 索引电子邮件地址{#index-addresses}
 
