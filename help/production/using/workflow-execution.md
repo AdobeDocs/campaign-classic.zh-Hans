@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '633'
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 此问题有多种原因，请按照以下步骤解决：
 
-1. 检查[**[!UICONTROL operationMgt]**](../../workflow/using/campaign.md)技术工作流状态。 此工作流管理活动内的作业或工作流。 如果失败，将导致工作流不开始/停止。 重新启动它以恢复活动工作流的运行。
+1. 检查[**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md)技术工作流状态。 此工作流管理活动内的作业或工作流。 如果失败，将导致工作流不开始/停止。 重新启动它以恢复活动工作流的运行。
 
    有关技术工作流监视的详细信息，请参阅[此页](../../workflow/using/monitoring-technical-workflows.md)。
 
