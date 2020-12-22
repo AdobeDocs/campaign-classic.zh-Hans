@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
 workflow-type: tm+mt
-source-wordcount: '2215'
-ht-degree: 98%
+source-wordcount: '2181'
+ht-degree: 97%
 
 ---
 
@@ -114,6 +114,8 @@ ht-degree: 98%
    + 在手机上发送邮件 {#sending-messages-on-mobiles}
       + [SMS 渠道](delivery/using/sms-channel.md)
       + [LINE 渠道](delivery/using/line-channel.md)
+      + [SMS连接器协议和设置](delivery/using/sms-protocol.md)
+      + [SMS疑难解答](delivery/using/troubleshooting-sms.md)
    + 发送推送通知 {#sending-push-notifications}
       + [关于移动应用程序渠道](delivery/using/about-mobile-app-channel.md)
       + [将 Campaign SDK 集成到移动应用程序](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
@@ -438,6 +440,8 @@ ht-degree: 98%
          + [创建摘要列表](workflow/using/creating-a-summary-list.md)
          + [丰富数据](workflow/using/enriching-data.md)
          + [使用聚合](workflow/using/using-aggregates.md)
+         + [使用外部重复数据删除活动的合并功能](workflow/using/deduplication-merge.md)
+      + 设计查询 {#designing-queries}
          + [使用增量查询每季度更新列表](workflow/using/quarterly-list-update.md)
       + 设定目标 {#designing-queries}
          + [查询收件人表](workflow/using/querying-recipient-table.md)
@@ -461,26 +465,7 @@ ht-degree: 98%
       + [管理活动图像](workflow/using/managing-activity-images.md)
       + [管理偏好](workflow/using/managing-propensity.md)
       + [管理时区](workflow/using/managing-time-zones.md)
-   + 技术工作流 {#technical-workflows}
-      + [关于技术工作流](workflow/using/about-technical-workflows.md)
-      + [投放](workflow/using/deliveries.md)
-      + [营销活动](workflow/using/campaign.md)
-      + [网络分析](workflow/using/web-analytics.md)
-      + [分布式营销](workflow/using/distributed-marketing.md)
-      + [投放能力监控](workflow/using/email-deliverability.md)
-      + [收件箱呈现](workflow/using/inbox-rendering.md)
-      + [互动](workflow/using/interaction.md)
-      + [优惠引擎控制](workflow/using/control-of-offer-engine.md)
-      + [消息中心（控制）](workflow/using/message-center--control-.md)
-      + [消息中心（执行）](workflow/using/message-center--execution-.md)
-      + [移动应用程序渠道](workflow/using/mobile-app-channel.md)
-      + [LINE 渠道](workflow/using/line-channel.md)
-      + [营销资源 (MRM)](workflow/using/marketing-resources--mrm-.md)
-      + [社交媒体营销](workflow/using/social-marketing.md)
-      + [与 Adobe Experience Cloud 解决方案集成](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-      + [隐私数据保护规定](workflow/using/general-data-protection-regulation--gdpr-.md)
-      + [传输到中间源](workflow/using/transfer-to-mid-sourcing.md)
-      + [中间源平台](workflow/using/mid-sourcing-platform.md)
+      + [技术工作流](workflow/using/about-technical-workflows.md)
 + 管理优惠 {#managing-offers}
    + 互动入门 {#interaction-overview}
       + [互动和优惠管理](interaction/using/interaction-and-offer-management.md)
@@ -619,7 +604,7 @@ ht-degree: 98%
       + [创建和配置数据库](installation/using/creating-and-configuring-the-database.md)
       + [Campaign 服务器配置](installation/using/campaign-server-configuration.md)
       + [部署实例](installation/using/deploying-an-instance.md)
-      + [安装 Campaign Classic 标准包](installation/using/installing-campaign-standard-packages.md)
+      + [安装Campaign Classic内置包](installation/using/installing-campaign-standard-packages.md)
    + 其他配置 {#additional-configurations}
       + [配置 Campaign 服务器](installation/using/configuring-campaign-server.md)
       + [通过 LDAP 连接](installation/using/connecting-through-ldap.md)
