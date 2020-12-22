@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 55e2297c5c60a48be230d06a3c1880d79b8ea5f2
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '1089'
 ht-degree: 10%
 
 ---
@@ -18,6 +18,29 @@ ht-degree: 10%
 # 重复数据删除{#deduplication}
 
 外部重复数据删除从入站活动结果中删除重复。 外部重复数据删除可以在电子邮件地址、电话号码或其他字段上执行。
+
+**[!UICONTROL Deduplication]**&#x200B;活动用于从数据集中删除重复行。 例如，以下记录可被视为重复，因为它们具有相同的电子邮件地址和相同的移动和／或家庭电话。
+
+| 上次修改日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
+-----|------------|-----------|-------|--------------|------
+| 02/03/2020 | Bob | 蒂斯纳 | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+| 05/19/2020 | 罗伯特 | 蒂斯纳 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 07/22/2020 | 鲍比 | 蒂斯纳 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+
+**[!UICONTROL Deduplication]**&#x200B;活动能够在识别重复后将整行保留为唯一记录。 例如，在上述用例中，如果活动配置为仅保留最旧&#x200B;**[!UICONTROL Date]**&#x200B;的记录，则结果为：
+
+| 日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
+-----|----------|------------|-------|--------------|------
+| 02/03/2020 | Bob | 蒂斯纳 | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+
+所选择的主控记录将继承数据，而不将字段数据与重复行中的其他相关数据合并。
+
+补充：
+
+| 日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
+-----|------------|-----------|-------|--------------|------
+| 05/19/2020 | 罗伯特 | 蒂斯纳 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 07/22/2020 | 鲍比 | 蒂斯纳 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
 ## 最佳做法 {#best-practices}
 
@@ -34,15 +57,11 @@ ht-degree: 10%
 
 要配置外部重复数据删除，请输入其标签、方法、外部重复数据删除标准以及与结果相关的选项。
 
-单击&#x200B;**[!UICONTROL Edit configuration...]**&#x200B;链接以定义外部重复数据删除模式。
+1. 单击&#x200B;**[!UICONTROL Edit configuration...]**&#x200B;链接以定义外部重复数据删除模式。
 
-![](assets/s_user_segmentation_dedup_param.png)
+   ![](assets/s_user_segmentation_dedup_param.png)
 
-1. 目标选择
-
-   选择此活动的目标类型(默认情况下，外部重复数据删除与收件人相关)和要使用的标准，即相同值允许您标识重复的字段：电子邮件地址、手机或电话号码、传真号码或直邮地址。
-
-   ![](assets/s_user_segmentation_dedup_param2.png)
+1. 选择此活动的目标类型(默认情况下，外部重复数据删除链接到收件人)和要使用的标准，即相同值允许您标识重复的字段。
 
    >[!NOTE]
    >
@@ -50,11 +69,13 @@ ht-degree: 10%
    >
    >在下一步中，使用&#x200B;**[!UICONTROL Other]**&#x200B;选项可以选择要使用的标准：
 
+   ![](assets/s_user_segmentation_dedup_param2.png)
+
+1. 在下一步中，使用&#x200B;**[!UICONTROL Other]**&#x200B;选项，您可以选择在相同值情况下使用的标准或标准。
+
    ![](assets/s_user_segmentation_dedup_param3.png)
 
-1. 外部重复数据删除方法
-
-   从下拉列表中，选择要使用的外部重复数据删除方法，然后输入要保留的重复数。
+1. 从下拉列表中，选择要使用的外部重复数据删除方法，然后输入要保留的重复数。
 
    ![](assets/s_user_segmentation_dedup_param4.png)
 
@@ -72,7 +93,11 @@ ht-degree: 10%
    * **[!UICONTROL Using an expression]**:允许您使用给定表达式的最低（或最高）值保存记录。
 
       ![](assets/s_user_segmentation_dedup_param7.png)
-   单击&#x200B;**[!UICONTROL Finish]**&#x200B;以批准所选外部重复数据删除方法。
+   >[!NOTE]
+   >
+   >通过&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接可访问的&#x200B;**[!UICONTROL Merge]**&#x200B;功能，您可以配置一组规则，以便将字段或字段组合并到单个结果数据记录中。 有关详细信息，请参阅[将字段合并到单个记录](#merging-fields-into-single-record)。
+
+1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;以批准所选外部重复数据删除方法。
 
    窗口的中间部分汇总定义的配置。
 
@@ -80,7 +105,7 @@ ht-degree: 10%
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-   如果要利用剩余人口，请选中&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补码由所有重复组成。 随后将向该过渡添加一个额外的活动，如下所示：
+1. 如果要利用剩余人口，请选中&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补码由所有重复组成。 随后将向该过渡添加一个额外的活动，如下所示：
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
@@ -109,6 +134,32 @@ ht-degree: 10%
 1. 选择&#x200B;**[!UICONTROL Choose for me]**&#x200B;外部重复数据删除模式，以随机选择在识别重复的情况下保存的记录，然后单击&#x200B;**[!UICONTROL Finish]**。
 
 运行工作流时，所有标识为重复的收件人都将从结果中排除(因此也将排除投放)并添加到重复列表。 此列表可以再次使用，而不必重新标识重复。
+
+## 将字段合并到单个数据记录{#merging-fields-into-single-record}
+
+**[!UICONTROL Merge]**&#x200B;功能允许您为外部重复数据删除配置一组规则，以定义要合并到单个结果数据记录中的字段或字段组。
+
+例如，对于一组重复记录，您可以选择保留最旧的电话号码或最近的姓名。
+
+[本节](../../workflow/using/deduplication-merge.md)中提供利用此功能的用例。
+
+为此，请执行以下步骤：
+
+1. 在&#x200B;**[!UICONTROL Deduplication method]**&#x200B;选择步骤中，单击&#x200B;**[!UICONTROL Advanced Parameters]**&#x200B;链接。
+
+   ![](assets/dedup1.png)
+
+1. 选择&#x200B;**[!UICONTROL Merge records]**&#x200B;选项以激活该功能。
+
+   如果要在每个合并条件中对多个数据字段进行分组，请激活&#x200B;**[!UICONTROL Use several record merging criteria]**&#x200B;选项。
+
+   ![](assets/dedup2.png)
+
+1. 激活该功能后，**[!UICONTROL Deduplication]**&#x200B;活动中会添加一个&#x200B;**[!UICONTROL Merge]**&#x200B;选项卡。 它允许您定义要合并的字段组及其关联规则。
+
+   有关详细信息，请参阅[本部分](../../workflow/using/deduplication-merge.md)中提供的专用用例。
+
+   ![](assets/dedup3.png)
 
 ## 输入参数{#input-parameters}
 
