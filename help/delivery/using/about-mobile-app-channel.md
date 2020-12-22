@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '755'
 ht-degree: 5%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 5%
 >* 警告：在某些国家／地区，法律要求您将收集到的数据类型移动应用程序及其处理目的告知用户。 你必须检查立法。
 
 
-**[!UICONTROL NMAC opt-out management]**(mobileAppOptOutMgt)工作流更新移动设备上的通知退订。 有关此工作流程的详细信息，请参阅[工作流指南](../../workflow/using/mobile-app-channel.md)。
+**[!UICONTROL NMAC opt-out management]**(mobileAppOptOutMgt)工作流更新移动设备上的通知退订。 有关此工作流的详细信息，请参阅技术工作流](../../workflow/using/about-technical-workflows.md)的[列表。
 
 Adobe Campaign兼容二进制和HTTP/2 APN。 有关配置步骤的详细信息，请参阅[在Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)中配置移动应用程序一节。
 
