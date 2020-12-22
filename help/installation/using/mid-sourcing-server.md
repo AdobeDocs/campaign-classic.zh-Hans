@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->设置中间源服务器并首次运行[同步工作流](../../workflow/using/transfer-to-mid-sourcing.md)后，请确保不更新中间源外部帐户的内部名称。
+>设置中间源服务器并首次运行[同步工作流](../../workflow/using/about-technical-workflows.md)后，请确保不更新中间源外部帐户的内部名称。
 
 ## 安装和配置实例{#steps-for-installing-and-configuring-an-instance}的步骤
 
