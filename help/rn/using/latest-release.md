@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
 workflow-type: tm+mt
 source-wordcount: '1852'
 ht-degree: 98%
@@ -148,7 +148,7 @@ Tomcat 已从版本 7 (7.0.103) 更新到版本 8 (8.5.57)。
 * 修复了使用 Snowflake FDA 连接器时的问题。具有 Snowflake FDA 访问名称权限的用户无法对 Snowflake 模式执行查询。日志中显示了类型为“Password not found”的错误。(NEO-23851)
 * 修复了使用 FDA 连接器时的问题，当链接的 FDA 模式名称是当前模式的元素名称的子字符串时会发生该问题。例如，如果 FDA 模式为“cust”，而收件人模式中的其中一个元素为“customer”，则会发生这种情况。在提取“customer”元素中的列并从“cust”FDA 模式添加列时，缺少本地列的值。(NEO-20193)
 * 修复了从外部数据库获取记录并在 Campaign 活动库中插入这些记录时工作流中的问题。(NEO-26359)
-* 修复了&#x200B;**更新事件状态**&#x200B;技术工作流中的问题：为了与&#x200B;**投放统计**&#x200B;活动中传入的对应字段的大小匹配，**更新投放统计**&#x200B;活动中三个目标字段的大小已从 32 位更改为 64 位。(NEO-11557) 在&#x200B;**此部分**&#x200B;中了解有关[更新事件状态作](../../workflow/using/message-center--execution-.md)工作流的详情。
+* 修复了&#x200B;**更新事件状态**&#x200B;技术工作流中的问题：为了与&#x200B;**投放统计**&#x200B;活动中传入的对应字段的大小匹配，**更新投放统计**&#x200B;活动中三个目标字段的大小已从 32 位更改为 64 位。(NEO-11557) 在&#x200B;**此部分**&#x200B;中了解有关[更新事件状态作](../../workflow/using/about-technical-workflows.md)工作流的详情。
 * 修复了&#x200B;**消息中心事件历史记录**&#x200B;报告中的问题，该问题在尝试应用过滤器时导致脚本错误并造成无法按日期范围过滤。(NEO-23365)
 * 修复了 **Campaign 作业** (operationMgt) 与&#x200B;**预览** (forecasting) 技术工作流之间的干扰问题。当计划投放处于“目标就绪”或“准备投放”状态时，会发生这种情况。(NEO-20819)
 * 修复了 xtkOperator 中的 mdata 字段内不存在 XML 标识符时的 XML 解析问题。它导致升级后故障。(NEO-26113)
