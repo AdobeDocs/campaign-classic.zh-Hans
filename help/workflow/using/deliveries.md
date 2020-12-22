@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 7cd76b5a31ed9fc0e64a650316ea29293c628233
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 15%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 # 投放{#deliveries}
 
-默认情况下，会安装下面详述的工作流。
+下面详细介绍的工作流默认安装在&#x200B;**投放**&#x200B;模块中。
 
 <table> 
  <tbody> 
@@ -37,7 +37,7 @@ ht-degree: 15%
    <td> 此工作流通过电子邮件将系统活动报告发送给“付费”操作员。 默认情况下，每月25日触发。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">有效开单用户档案数</span> <br /> </td> 
+   <td> <span class="uicontrol">计费(有效用户档案)</span> <br /> </td> 
    <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
    <td> <p>此工作流计算活动用户档案的数量。 默认情况下，每天晚上1点触发。</p> <p>“<strong>用户档案</strong>”是指代表最终客户或潜在客户的信息记录（例如 nmsRecipient 表或外部表中的记录，包含 cookie ID、客户 ID、移动标识符或与特定渠道相关的其他信息）。计费只涉及“活动”的用户档案。 如果用户档案在过去12个月内通过任何渠道被定向或传达，则用户档案被视为“活动”。</p> <p>Facebook 和 Twitter 渠道不包含在內。</p> <p>您可以从<span class="uicontrol">管理</span>&gt;<span class="uicontrol">活动管理</span>&gt;<span class="uicontrol">客户指标</span>菜单中概述<span class="uicontrol">活动用户档案数</span>。</p> </td> 
   </tr> 
@@ -67,7 +67,7 @@ ht-degree: 15%
    <td> 此工作流将批准的优惠部署到联机环境以及优惠目录中包含的每个类别。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">预览</span> <br /> </td> 
+   <td> <span class="uicontrol">预测</span> <br /> </td> 
    <td> <span class="uicontrol">forecasting</span> <br /> </td> 
    <td> 此工作流会分析保存在临时日历中的投放（创建临时日志）。 默认情况下，每天凌晨1点触发。<br /> </td> 
   </tr> 
