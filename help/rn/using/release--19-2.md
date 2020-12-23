@@ -7,15 +7,26 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
+source-git-commit: b6f0a3afd6e41f41730009c576ae77fa0a9897cb
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # 版本 19.2{#release-19-2}
+
+## ![](assets/do-not-localize/limited_2.png) 版本 19.2.4 - 版本 9082 {#release-19-2-4-build-9082}
+
+_2020年12月23日_
+
+>[!CAUTION]
+>
+>此版本附带新的连接协议： 升级对于2020年3月21日之后能够连接到活动的活动服务器和客户端控制台都是强制性的
+
+* 已更新连接协议以遵循新的IMS身份验证机制。
+* 修复了一个安全问题，以增强针对服务器端请求伪造(SSRF)问题的保护。 (NEO-27777)
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.2.3 - 版本 9081 {#release-19-2-3-build-9081}
 
