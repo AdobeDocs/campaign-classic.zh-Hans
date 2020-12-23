@@ -7,7 +7,7 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 你版本的Adobe Campaign Classic不支持这条管道。
 
 1. 检查配置文件中是否存在[!DNL pipelined]元素。 否则，表示不支持。
-1. 升级到版本6.11内部版本8705或更高版本。
+1. 升级到活动20.3或Gold Standard 11。
 
 **“aurait dcommencer par ou(iRc= `[` 16384) `{` ”的管道失败**
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 **管道化失败，“主题必须是有效的组织或客户”**
 
-IMSOrgid配置无效。
+组织标识符配置无效。
 
 1. 检查IMSOrgId是否在serverConf.xml中设置。
 1. 在实例配置文件中查找可覆盖默认值的空IMSOrgId。 如果是，请删除它。
@@ -85,4 +85,3 @@ IMSOrgid配置无效。
 1. 在pipelined.log中查找可能导致重试的错误。 修复错误（如果适用）。
 1. 检查队列大小的[!DNL pipelined]状态页。 如果队列大，请提高JS的性能。
 1. 由于延迟似乎随卷的增加而增加，因此在Analytics上使用较少的消息配置触发器。
-附件
