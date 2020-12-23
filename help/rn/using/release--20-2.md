@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 26f232fafbcc39eb710135a1fc937e40a76ad0bd
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '2483'
 ht-degree: 91%
@@ -25,7 +25,7 @@ _2020年12月22日_
 
 >[!CAUTION]
 >
->此版本附带新的连接协议： 升级对于2020年3月21日之后能够连接到活动的活动服务器和客户端控制台都是强制性的
+>此版本附带新的连接协议： 2021年3月21日之后，活动服务器和客户端控制台都必须能够连接到活动。
 
 **改进**
 
