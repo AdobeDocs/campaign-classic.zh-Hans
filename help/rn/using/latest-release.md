@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '1852'
-ht-degree: 98%
+source-wordcount: '1875'
+ht-degree: 97%
 
 ---
 
@@ -65,6 +65,10 @@ _2020 年 10 月 27 日_
 </tbody> 
 </table>
 
+>[!CAUTION]
+>
+>此版本附带新的连接协议：2021年3月21日之后，活动服务器和客户端控制台都必须能够连接到活动。
+
 **安全性增强**
 
 * 库的安全加载：为了防止 DLL 预加载攻击，Campaign 现在在加载 Campaign 客户端 (nlclient) 时仅从 Windows 默认系统 DLL 路径加载 Windows DLL。[了解详情](https://support.microsoft.com/en-us/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
@@ -94,11 +98,7 @@ Campaign 现在支持以下系统：
 **改进**
 
 * 已对&#x200B;**客户端控制台**&#x200B;进行多项改进。
-   * 已更新连接协议以遵循新的IMS身份验证机制。
-
-      >[!CAUTION]
-      >
-      >在更新连接协议后，必须进行升级（服务器和控制台），才能从2020年3月21日开始连接。
+   * 已更新连接协议以遵循新的IMS身份验证机制。 服务器和客户端控制台升级是必需的，它们必须在2021年3月21日之后连接。
    * 为防止与某些互联网安全 GPO 规则限制不兼容，Campaign 客户端控制台登录屏幕已替换为内置标准 Windows 表单。
    * 修复了使用 64 位客户端控制台在工作流中复制/粘贴活动时的问题。(NEO-27635)
    * 在&#x200B;**关于**&#x200B;菜单中，已添加信息来区分 64 位和 32 位控制台。
