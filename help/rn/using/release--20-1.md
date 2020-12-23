@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: d7c590333b03b2448d37e58e194f3b9d1383fbb7
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 6%
@@ -23,7 +23,7 @@ _2020年12月23日_
 
 >[!CAUTION]
 >
->此版本附带新的连接协议： 升级对于2020年3月21日之后能够连接到活动的活动服务器和客户端控制台都是强制性的
+>此版本附带新的连接协议： 2021年3月21日之后，活动服务器和客户端控制台都必须能够连接到活动。
 
 * 已更新连接协议以遵循新的IMS身份验证机制。
 * 修复了一个安全问题，以增强针对服务器端请求伪造(SSRF)问题的保护。 (NEO-27777)
