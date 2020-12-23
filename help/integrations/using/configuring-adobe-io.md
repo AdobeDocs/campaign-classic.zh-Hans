@@ -10,10 +10,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 4%
+source-wordcount: '431'
+ht-degree: 5%
 
 ---
 
@@ -30,29 +30,24 @@ ht-degree: 4%
 
 在开始此实施之前，请检查您具有：
 
-* 有效的IMSOrgID:identity management系统(IMS)组织标识符是Adobe Experience Cloud内的唯一标识符，例如用于VisitorID服务和IMS单点登录(SSO),
-* 开发者访问IMS组织。
-
->[!NOTE]
+* 有效的&#x200B;**组织标识符**:identity management系统(IMS)组织标识符是Adobe Experience Cloud内的唯一标识符，例如用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
+* a **开发人员对您组织的访问权**。  如果您需要请求IMS组织的系统管理员权限，请按照本页](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中详细的[过程为所有产品用户档案提供此访问权限。
 >
->如果您需要请求IMS组织的系统管理员权限，请按照本页](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html)中详细的[过程为所有产品用户档案提供此访问权限。
-
-
 ## 第1步：创建／更新Adobe I/O项目{#creating-adobe-io-project}
 
-1. 访问Adobe I/O，并与IMSorg的系统管理员联系。
+1. 访问Adobe I/O，并与IMS组织的系统管理员联系。
 
    >[!NOTE]
    >
-   > 确保您登录到正确的IMSorg门户。
+   > 确保您已登录到正确的组织门户。
 
-1. 从实例配置文件ims/authIMSTAClientId提取现有集成客户端ID。 非现有或空属性表示未配置客户端ID。
+1. 从实例配置文件ims/authIMSTAClientId提取现有集成客户端ID。 非现有或空属性表示未配置客户端标识符。
 
    >[!NOTE]
    >
-   >如果您的客户端ID为空，您可以直接在Adobe I/O **[!UICONTROL Create a New project]**。
+   >如果您的客户端标识符为空，则可以直接在Adobe I/O **[!UICONTROL Create a New project]**。
 
-1. 使用提取的客户端ID标识现有项目。 查找与上一步提取的客户端ID相同的现有项目。
+1. 使用提取的客户端标识符标识现有项目。 查找与上一步提取的客户端标识符相同的现有项目。
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
