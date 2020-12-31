@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9c78d8f469bade41717eb854e8cec00859c1d4e3
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -75,23 +75,23 @@ ht-degree: 1%
    **nlserver重新启动web**
 
    >[!NOTE]
-   > 
-   >    * 如果未指定该实例，将使用“默认”实例。
-   >    * 在紧急事件，使用&#x200B;**-immediate**&#x200B;选项强制立即停止进程（相当于Unix命令&#x200B;**kill -9**）。
-   >    * 使用&#x200B;**-noconsole**&#x200B;选项确保启动的模块在控制台上不显示任何内容。 其日志将通过&#x200B;**syslogd**&#x200B;模块写入磁盘。
-   >    * 使用&#x200B;**-verbose**&#x200B;选项可显示有关进程操作的其他信息。
+   >
+   >* 如果未指定该实例，将使用“默认”实例。
+   >* 在紧急事件，使用&#x200B;**-immediate**&#x200B;选项强制立即停止进程（相当于Unix命令&#x200B;**kill -9**）。
+   >* 使用&#x200B;**-noconsole**&#x200B;选项确保启动的模块在控制台上不显示任何内容。 其日志将通过&#x200B;**syslogd**&#x200B;模块写入磁盘。
+   >* 使用&#x200B;**-verbose**&#x200B;选项可显示有关进程操作的其他信息。
 
-      >    
-      >      
+      >
+      >   
       示例:
-      >    
-      >      
+      >
+      >   
       **nlserver重新启动web -verbose**
-      >    
-      >      
+      >
+      >   
       **nlserver开始mta@myinstance -verbose**
-      >    
-      >      
+      >
+      >   
       此选项会添加其他日志。 我们建议在您找到所需信息后再次启动进程，而不使用&#x200B;**-verbose**&#x200B;选项，以避免日志过载。
 
 
