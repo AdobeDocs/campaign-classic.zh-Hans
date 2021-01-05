@@ -7,19 +7,19 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '130'
+ht-degree: 4%
 
 ---
 
 
 # 临时文件{#temporary-files}
 
-如果系统投入生产时出现以下错误消息(尤其是投放日志):
+在系统投入生产时，可能会显示以下错误消息(尤其是投放日志):
 
-**无法将文件“/tmp/tmp0000.tmp”重命名为/usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml ;（errno=18，无效的跨设备链接）(iRc=-52)**
+*无法将文件“/tmp/tmp0000.tmp”重命名为/usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml ;（errno=18，无效的跨设备链接）(iRc=-52)*
 
 原因如下：
 
