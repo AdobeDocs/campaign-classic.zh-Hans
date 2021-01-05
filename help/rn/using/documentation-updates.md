@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
+source-git-commit: 88172a79aad37e6a311b144f4ea685bb4846825b
 workflow-type: tm+mt
-source-wordcount: '3729'
-ht-degree: 98%
+source-wordcount: '3814'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,16 @@ ht-degree: 98%
 本页列出了每月所有新增功能和文档更新以及 Campaign 版本。
 
 您还可以查阅 [Adobe Campaign Classic Release 发行说明](../../rn/using/latest-release.md) ，了解更多更新信息。
+
+## 2021 年 1 月 {#jan,2021}
+
+**[!UICONTROL Fork]**&#x200B;活动部分已丰富了其他信息。 已添加注释，指定出站过渡不同时执行，因此不应使用活动来改进工作流的性能。 [阅读更多](../../workflow/using/fork.md)
+
+已将“查找Tomcat版本”部分[移至此处](../../production/using/locate-tomcat-version.md)。
+
+技术工作流及其关联包的列表已重新组织为一个页面。 [阅读更多](../../workflow/using/about-technical-workflows.md)
+
+“监视指南”中的疑难解答部分经过重新组织，并用登陆页进行了增强。 [阅读更多](../../production/using/troubleshooting.md)。
 
 ## 2020 年 12 月 {#dec-2020}
 
@@ -149,7 +159,7 @@ Gold Standard 版本的发行说明和兼容性矩阵现在可在专用部分中
 
 已添加新部分，其中包含与 Campaign Classic 监控相关的准则。[阅读更多](../../production/using/monitoring-guidelines.md)
 
-“隐私和同意”部分已得到增强，其中包含更多详细信息和有用的链接。[阅读更多](../../platform/using/privacy-and-recommendations.md)。
+“隐私和同意”部分已得到增强，其中包含更多详细信息和有用的链接。[阅读更多](../../platform/using/privacy-and-recommendations.md)
 
 “Campaign Classic 中的隐私管理”页面已更新，其中包含有关“规定”字段的信息，现在在使用允许设置自动隐私请求流程的 API 时，该字段可用。[阅读更多](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
