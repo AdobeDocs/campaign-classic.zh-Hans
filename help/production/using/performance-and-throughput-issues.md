@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 3%
@@ -17,13 +17,13 @@ ht-degree: 3%
 
 # 性能和吞吐量问题{#performance-and-throughput-issues}
 
->[!NOTE]
->
->首先，您应检查是否已安装最新版本。 这可确保您拥有最新功能和错误修复。 有关每个版本的内容的详细信息，请参阅[发行说明](../../rn/using/latest-release.md)。
+首先，您应检查是否已安装最新版本。 这可确保您拥有最新功能和错误修复。
+
+有关每个版本的内容的详细信息，请参阅[发行说明](../../rn/using/latest-release.md)。
 
 ## 硬件和基础架构{#hardware-and-infrastructure}
 
-本文[文章](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)中详细介绍了内部部署Campaign Classic的硬件要求的一般准则。
+本[页面](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)详细介绍了内部部署Campaign Classic的硬件要求的一般准则。
 
 咨询团队可以为托管客户提供一个工具，它允许您轻松视图数据库中各种类型的表使用了多少空间以及SFTP站点上使用的空间。 它还提供允许您清除不必要数据的工具。 如果您需要实施此工具，请与咨询或支持团队联系。 下面是使用此工具检查的一些重要事项：
 
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 Adobe Campaign还提供[工具](../../production/using/monitoring-processes.md#manual-monitoring)以检查CPU和RAM的使用情况。 使用此工具并查看特定指标，如：**内存**、**交换内存**、**磁盘**、**活动进程**。 如果值过高，您可以尝试在不同时间减少工作流或计划工作流的数量。
 
-## 数据库性能 {#database-performances}
+## 数据库检查{#database-performances}
 
 大多数时间、性能问题都与数据库维护相关。 以下是要检查的主要项目：
 
@@ -68,4 +68,3 @@ Adobe Campaign还提供[工具](../../production/using/monitoring-processes.md#m
 >[!NOTE]
 >
 >另请参阅[可交付性关键点](../../delivery/using/deliverability-key-points.md)部分。
-
