@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b7f44f4c18bef4cc412af878846b2c4305a17787
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 3%
+source-wordcount: '155'
+ht-degree: 8%
 
 ---
 
@@ -18,48 +18,56 @@ ht-degree: 3%
 # 密码丢失{#lost-password}
 
 您可以更改或恢复丢失的密码。
-
 有两种可能的情况：
 
-* Adobe Campaign操作员丢失密码。
+* **Adobe Campaign操作员丢失密码**
 
-   在这种情况下，您可以更改相关操作员的口令。 为此，请通过具有管理员权限的操作员进行连接，右键单击操作员，选择&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**&#x200B;并设置操作员的新密码。 我们建议运营商在首次重新连接时更改其口令。
+在这种情况下，您可以更改相关操作员的口令。
+为此请执行以下操作步骤：
+
+1. 通过具有管理员权限的操作员进行连接。
+1. 右键单击运算符。
+1. 选择&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**。
 
    ![](assets/operator-passwd.png)
 
-* **内** 部密码丢失（仅限预置型客户）。
+1. 设置操作员的新密码。 我们建议运营商在首次重新连接时更改其口令。
 
-   如果&#x200B;**internal**&#x200B;密码丢失，则必须重新初始化它。 为此，请应用以下过程：
+* **内部密码丢失（仅限预置型客户）**
 
-   1. 编辑&#x200B;**/usr/local/neolane/nl6/conf/serverConf.xml**&#x200B;文件。
-   1. 转至&#x200B;**internalPassword**&#x200B;行。
+如果内部密码丢失，则必须重新初始化它。
+为此，请应用以下过程：
 
-      ```
-      <!-- XTK authentication mode internalPassword : Password of internal account -->
-       <xtk internalPassword="myPassword"/>
-      ```
+1. 编辑&#x200B;**/usr/local/neolane/nl6/conf/serverConf.xml**&#x200B;文件。
 
-   1. 删除引号中的字符串，在本例中：**myPassword**
+1. 转至&#x200B;**internalPassword**&#x200B;行。
 
-      因此，您可以获得以下行：
+   ```
+   <!-- XTK authentication mode internalPassword : Password of internal account -->
+   <xtk internalPassword="myPassword"/>
+   ```
 
-      ```
-      !-- XTK authentication mode internalPassword : Password of internal account -->
-      <xtk internalPassword=""/
-      ```
+1. 删除引号中的字符串，在本例中：**myPassword**
 
-   1. 保存更改并关闭文件。
-   1. 配置新密码。 为此，请输入以下命令：
+   因此，您可以获得以下行：
 
-      ```
-      nlserver config -internalpassword
-      HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
-      Enter current password.
-      Password: (empty)
-      Enter the new password.
-      Password: 
-      Confirmation 
-      ```
+   ```
+   !-- XTK authentication mode internalPassword : Password of internal account -->
+   <xtk internalPassword=""/
+   ```
 
-   1. 您现在可以使用新密码在&#x200B;**内部**&#x200B;模式下进行连接。
+1. 保存更改并关闭文件。
 
+1. 配置新密码。 为此，请输入以下命令：
+
+   ```
+   nlserver config -internalpassword
+   HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
+   Enter current password.
+   Password: (empty)
+   Enter the new password.
+   Password: 
+   Confirmation 
+   ```
+
+1. 您现在可以使用新密码在&#x200B;**内部**&#x200B;模式下进行连接。
