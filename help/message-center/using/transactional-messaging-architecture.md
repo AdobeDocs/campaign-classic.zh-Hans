@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d45f393083ec540025a9e001b089a8b1241a8c99
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1025'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,15 @@ ht-degree: 1%
 
 ## 添加投放渠道{#adding-a-delivery-channel}
 
-添加投放渠道(移动渠道、移动应用渠道等) 必须先执行事务性消息包。 如果您已在电子邮件渠道上启动交易消息传递项目，则在项目过程中决定添加新渠道，则必须执行以下步骤：
+添加投放渠道(移动渠道、移动应用渠道等) 必须先执行事务性消息包。
+
+Adobe建议您在安装投放渠道包之前始终添加事务性消息包。
+
+但是，如果您已在电子邮件渠道上启动交易消息传递项目，则在项目过程中决定添加新渠道，您可以按照以下步骤操作。
+
+>[!NOTE]
+>
+>此过程仅适用于使用安装在与其工作相同计算机上的Windows NLServer的客户。
 
 1. 使用包渠道(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)安装所需的渠道，例如&#x200B;**移动导入向导**。
 1. 执行文件导入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，然后选择&#x200B;**datakitnms **`[Your language]`**packagemessageCenter.xml**&#x200B;文件。
