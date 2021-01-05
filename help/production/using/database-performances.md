@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -19,10 +19,10 @@ ht-degree: 8%
 
 大多数性能问题都与数据库维护相关。 以下是四个主要线索，帮助您找到性能下降的原因：
 
-* 配置,
-* 安装和配置Adobe Campaign平台、
-* 数据库维护,
-* 实时诊断。
+* 配置
+* Adobe Campaign平台的安装和配置
+* 数据库维护
+* 实时诊断
 
 ## 配置{#configuration}
 
