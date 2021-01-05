@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 6%
+source-wordcount: '190'
+ht-degree: 5%
 
 ---
 
@@ -22,6 +22,10 @@ ht-degree: 6%
 例如，您可以在内容创建和投放发送自动化的上下文中使用AND-join活动，以确保只有在目标查询和内容更新步骤完成后才启动投放。 [此部分](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)中提供专用用例
 
 ![](assets/and-join-usage.png)
+
+>[!NOTE]
+>
+>请注意，配置了不同过渡的入站定位维度不能使用&#x200B;**[!UICONTROL AND-join]**&#x200B;活动连接在一起。
 
 通过在活动的入站过渡中选择主集合来确定活动的出站发送群体。
 
