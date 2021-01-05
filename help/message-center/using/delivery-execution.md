@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
+source-git-commit: 1788346f7dfe2c18c490363c90358fcb737f1646
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 8%
+source-wordcount: '236'
+ht-degree: 4%
 
 ---
 
@@ -37,11 +37,17 @@ ht-degree: 8%
 >
 >对于托管或混合安装，如果您已升级到增强MTA，则所有事务性消息也可以与Adobe Campaign增强MTA一起发送，以改进交付能力、吞吐量和弹回处理。 所有影响与标准营销消息的影响相同，并在[Adobe Campaign增强MTA](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)文档中详细介绍。
 
-<!--## Transactional message monitoring {#transactional-message-monitoring}
+## 事务性消息监视{#transactional-message-monitoring}
 
-To monitor your transactional messages, check the delivery logs. Accessing the delivery logs is presented in [this section](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history).
+要监视事务性消息，请检查投放日志。 访问投放日志显示在[此部分](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)中。
 
-The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
+通过每小时运行的技术工作流(**[!UICONTROL Message Center execution instance]**)将从执行实例发送的事务投放同步回控制实例。
+
+>[!NOTE]
+>
+>投放每周根据最新的事件更新(而非在事件创建日期)累计事件。 因此，当从控制实例提取事务消息投放日志时，与每个投放日志ID关联的投放ID可能随着日志的更新而随时间发生变化(例如，当收到事件的入站弹回时)。
+
+<!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
 Let's take a [delivery template](../../message-center/using/introduction.md) labelled *Template_1*.
 
