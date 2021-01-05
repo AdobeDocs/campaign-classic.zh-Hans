@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 translation-type: tm+mt
-source-git-commit: 3f2e984f85e517777751e3c36dc96437eefb3010
+source-git-commit: a80f611140a5fb03e3547a8de228ecd8c96e8862
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1816'
 ht-degree: 6%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 6%
 | **计费** （计费） | 投放 | 此工作流通过电子邮件将系统活动报告发送给“付费”操作员。 默认情况下每月25号触发。 |
 | **计算Twitter统计信息** （统计信息Twitter） | 社交网络（社交营销） | 此工作流会计算与Twitter上的转发和访问关联的统计信息。 |
 | **活动作业** (operationMgt) | 营销活动(活动) | 此工作流管理营销活动(启动项定位、文件提取等)的作业。 它还创建与循环和周期工作流相关的活动。 |
+| **为HeatMap服务收集数据** (collectDataHeatMapService) | 默认安装 | 此工作流检索HeatMap服务所需的数据。 |
 | **收集隐私请求** (collectPrivacyRequests) | 隐私数据保护规定 | 此工作流生成存储在Adobe Campaign中的收件人数据，并在隐私请求的屏幕中提供下载。 |
 | **成本计算** （预算管理） | 营销活动(活动) | 此工作流开始预算、计划、项目、活动、投放和任务上的费用和成本行计算。 |
 | **数据库清理** （清除） | 投放 | 此工作流是数据库维护工作流：它根据部署助手中定义的配置从数据库中删除过时的数据，从而与统计和进程进行不同的计算。 默认情况下，每天凌晨4点触发。 有关详细信息，请参见[此页面](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic)。 |
@@ -57,11 +58,11 @@ ht-degree: 6%
 | **MID到LineUserID迁移** （MIDToUserIDM集成） | LINE 渠道 | 此工作流生成LINE V2用户ID，用于从LINE V1迁移到LINE V2。 |
 | **营销资源通知** （资产管理） | 营销资源语(MRM) | 此工作流管理与营销资源审批和发布相关的通知。 |
 | **消息中 &lt;external_account_name>** 心(mcSynch_&lt;external_account_name>) | 事务性消息控制（消息中心——控制） | 此工作流： <ul><li>恢复操作处理的事件的列表。</li><li>与NmsBroadLogMsg表同步，以恢复投放消息资格。</li><li>一旦与NmsBroadLogMsg表的同步完成，将恢复事件投放日志。</li><li>与NmsTrackingUrl表同步，以恢复投放URL的跟踪。</li><li>一旦与NmsTrackingUrl表的同步完成，将恢复事件跟踪URL。</li><li>允许您在发送隔离后每三小时恢复置入投放的所有电子邮件地址。</ul> |
-| **MessageCenter完整聚合计** 算(agg_messageCenter_full) | 优惠引擎（交互） | 此工作流将更新消息中心聚合的完整多维数据集。 默认情况下，每天凌晨3点触发。 此聚合捕获以下维：渠道、日期、状态和事件类型。 然后，消息中心多维数据集用于根据事件生成报告。 您可以在[本节](../../reporting/using/about-cubes.md)中进一步了解多维数据集 |
+| **MessageCenter完整聚合计** 算(agg_messageCenter_full) | 事务性消息控制（消息中心——控制） | 此工作流将更新消息中心聚合的完整多维数据集。 默认情况下，每天凌晨3点触发。 此聚合捕获以下维：渠道、日期、状态和事件类型。 然后，消息中心多维数据集用于根据事件生成报告。 您可以在[本节](../../reporting/using/about-cubes.md)中进一步了解多维数据集 |
 | **中间源(投放计数器** )(defaultMidSourcingDlv) | 传输到中间源 | 此工作流收集投放服务器上的计数信息。 计数信息包括一般投放指标，如发送的投放数等。 不包括打开等跟踪信息。 默认情况下，每十分钟触发一次。 |
 | **中间源(投放日志)** (defaultMidSourcingLog) | 传输到中间源 | 此工作流在中间源服务器上收集投放日志。 默认情况下，每小时触发一次。 |
 | **NMAC退出管理** (mobileAppOptOutMgt) | 移动应用程序渠道 | 此工作流更新移动设备上的通知退订。 每6小时从凌晨1点到午夜触发一次。 有关详细信息，请参阅[此部分](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)。 |
-| **有效开单用户档案数** (billingActiveContactCount) | 优惠引擎（交互） | 此工作流计算活动用户档案的数量。 默认情况下，每天晚上1点触发。 “用户档案”是指代表最终客户或潜在客户的信息记录（例如 nmsRecipient 表或外部表中的记录，包含 cookie ID、客户 ID、移动标识符或与特定渠道相关的其他信息）。计费只涉及“活动”的用户档案。 如果用户档案在过去12个月内通过任何渠道被定向或传达，则用户档案被视为“活动”。 Facebook 和 Twitter 渠道不包含在內。您可从 Administration > Campaign Management > Customer metrics 菜单中获得 Number of active profiles 的概要。 |
+| **有效开单用户档案数** (billingActiveContactCount) | 投放 | 此工作流计算活动用户档案的数量。 默认情况下，每天晚上1点触发。 “用户档案”是指代表最终客户或潜在客户的信息记录（例如 nmsRecipient 表或外部表中的记录，包含 cookie ID、客户 ID、移动标识符或与特定渠道相关的其他信息）。计费只涉及“活动”的用户档案。 如果用户档案在过去12个月内通过任何渠道被定向或传达，则用户档案被视为“活动”。 Facebook 和 Twitter 渠道不包含在內。您可从 Administration > Campaign Management > Customer metrics 菜单中获得 Number of active profiles 的概要。 |
 | **优惠通知** (offerMgt) | 投放 | 此工作流将经过批准的优惠部署到在线环境以及优惠目录中包含的每个类别。 |
 | **暂停的工作流清理** (cleanupPausedWorkflows) | 投放 | 此工作流会分析严重性设置为正常的已暂停工作流，并在暂停过长时触发警告和通知。 一个月后，暂停的技术工作流将被无条件停止。 默认情况下，每周一早上5点触发。 有关详细信息，请参阅[处理暂停的工作流](../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows)。 |
 | **隐私请求清除** (cleanupPrivacyRequests) | 隐私数据保护规定 | 此工作流会删除90天以前的访问请求文件。 |
@@ -69,7 +70,6 @@ ht-degree: 6%
 | **处理实时事件** (rtEventsProcessing) | 事务性消息执行（消息中心——执行） | 通过此工作流，您可以在将实时事件与消息模板关联之前，将它们放入队列中。 |
 | **命题同步** （命题同步） | 优惠引擎的执行实例控制 | 此工作流将营销实例和用于交互的执行实例之间的建议同步。 |
 | **Web事件的恢复** (webAnalyticsGetWebEvents) | Web分析连接器 | 该工作流每小时都会下载给定站点的Internet用户行为细分，将其放入Adobe Campaign库并启动再营销工作流。 |
-| **可交付性刷新** （可交付性更新） | 交付性监控（电子邮件交付性） | 安装“交付性监视（电子邮件交付性）”包后，此工作流将在夜间运行，以定期更新规则的列表，并允许主动管理平台交付性。 |
 | **报告聚合** (reportingAggregates) | 投放 | 此工作流更新报表中使用的聚合。 默认情况下，每天凌晨2点触发。 |
 | **发送指示器和活动属性** (webAnalyticsSendMetrics) | Web分析连接器 | 通过此工作流程，您可以通过Adobe Campaign®活动连接器将电子邮件Adobe指示符从Genesis发送到Adobe Experience Cloud套件。 相关指标如下：已发送(iSent)、打开总数(iTotalRecipientOpen)、单击收件人总数(iTotalRecipientClick)、错误(iError)、退出（选择退出）(iOptOut)。 |
 | **股票：订单和警报** (StockMgt) | 营销活动(活动) | 此工作流将启动订单行上的库存计算并管理警告警报阈值。 |
@@ -79,5 +79,5 @@ ht-degree: 6%
 | **任务通知** （任务管理） | 营销资源语(MRM) | 通过此工作流，您可以发送与营销活动中的任务相关的通知消息。 |
 | **跟踪** (跟踪 | 投放 | 此工作流执行跟踪信息的恢复和合并。 它还确保重新计算跟踪和投放统计，特别是消息中心归档工作流使用的统计。 默认情况下，每小时触发一次。 |
 | **更新事件状态** (updateEventsStatus) | 事务性消息执行（消息中心——执行） | 通过此工作流，您可以为事件分配状态。 事件状态如下：<ul><li>待定：事件在排队。 尚未与消息模板关联。</li><li>待处理投放:事件在队列中，消息模板已与其关联，当前正由投放处理。</li><li>已发送：此状态从投放日志复制。 这意味着投放已被发送。</li><li>投放忽略：此状态从投放日志复制。 这意味着投放被忽略了。</li><li>投放错误：此状态从投放日志复制。 这意味着投放失败了。</li><li>事件未涵盖：事件无法与消息模板关联。 不会重新处理事件。</li></ul> |
-| **可交付性更新** （可交付性更新） | 投放 | 通过此工作流，您可以创建弹回邮件资格规则的列表，以及平台中域和MX的列表。 仅当HTTPS端口打开时，此工作流才有效。 除非安装了可交付性模块，否则不更新这些列表。 |
+| **可交付性更新** （可交付性更新） | 投放 | 安装“可交付性监视（电子邮件可交付性）”包后，此工作流将在夜间运行，并管理弹回的电子邮件资格规则以及域和MX的列表。 这需要在平台上打开HTTPS端口 |
 | **更新收件箱渲染的种子网** 络(updateRenderingSeeds) | 收件箱渲染(IR) | 此工作流更新用于收件箱呈现的电子邮件地址，并且仅在HTTPS端口打开以供deliverability.neolane.net时有效。 |
