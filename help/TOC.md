@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
 workflow-type: tm+mt
 source-wordcount: '2181'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -155,12 +155,12 @@ ht-degree: 97%
       + [管理订阅](delivery/using/managing-subscriptions.md)
       + [病毒式和社交媒体营销](delivery/using/viral-and-social-marketing.md)
    + 监控投放 {#monitoring-deliveries}
-      + [开始投放监控](delivery/using/about-delivery-monitoring.md)
-      + [访问投放的列表](delivery/using/list-of-deliveries.md)
-      + [投放仪表板](delivery/using/delivery-dashboard.md)
-      + [投放性能最佳实践](delivery/using/delivery-performances.md)
-      + [投放疑难解答](delivery/using/delivery-troubleshooting.md)
-      + [投放状态](delivery/using/delivery-statuses.md)
+      + [消息传递入门](delivery/using/about-delivery-monitoring.md)
+      + [访问传递的列表](delivery/using/list-of-deliveries.md)
+      + [传递仪表板](delivery/using/delivery-dashboard.md)
+      + [传递性能最佳实践](delivery/using/delivery-performances.md)
+      + [传递疑难解答](delivery/using/delivery-troubleshooting.md)
+      + [传递状态](delivery/using/delivery-statuses.md)
       + [了解投放失败](delivery/using/understanding-delivery-failures.md)
       + [了解隔离管理](delivery/using/understanding-quarantine-management.md)
    + 跟踪消息 {#tracking-messages}
