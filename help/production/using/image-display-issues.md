@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '133'
+ht-degree: 6%
 
 ---
 
@@ -27,5 +27,4 @@ ht-degree: 0%
 
 1. 发送将显示图像的验证。
 1. 验证实例设置中的资源配置是否正确。
-1. 检查公共资源文件夹，或者(如果它不在公共资源文件夹中)检查投放中引用的文件夹。
-
+1. 检查公共资源文件夹，如果不在公共资源文件夹中，则检查投放中引用的文件夹。
