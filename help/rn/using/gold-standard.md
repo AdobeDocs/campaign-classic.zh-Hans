@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -35,7 +35,7 @@ _2020年12月22日_
 
 构建9032@2a2a028包含以下改进和修复：
 
-* 已更新连接协议以遵循新的IMS身份验证机制。
+* 连接协议已经更新，以遵循新的 IMS 认证机制。
 
 * 最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成身份验证现已更改并移至 Adobe I/O。[了解详情](../../integrations/using/configuring-adobe-io.md)
 
@@ -53,7 +53,7 @@ _2020 年 7 月 7 日_
 
 >[!CAUTION]
 >
->我们建议您使用此版本中提供的客户端控制台进行升级。请参阅[此页](../../installation/using/installing-the-client-console.md)
+>我们建议您使用此版本中提供的客户端控制台进行升级。请参见[此页面](../../installation/using/installing-the-client-console.md)。
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 9 版本{#gs-9}
 
