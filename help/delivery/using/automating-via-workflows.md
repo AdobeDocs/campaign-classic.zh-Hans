@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1186'
 ht-degree: 1%
 
 ---
@@ -200,7 +200,7 @@ ht-degree: 1%
 
 第一个&#x200B;**创建投放**&#x200B;任务创建投放操作。
 
-叉活动允许您同时启动目标计算和内容实例的创建。
+叉活动允许您并行启动目标计算和内容实例的创建。
 
 执行任务后，AND-join框将激活&#x200B;**投放**&#x200B;任务，以启动先前创建的有关内容和定位的投放。
 
