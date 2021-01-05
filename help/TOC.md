@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
+source-git-commit: 404ff67207f8c126e44736fe565cf57afcc6397e
 workflow-type: tm+mt
-source-wordcount: '2181'
-ht-degree: 99%
+source-wordcount: '2202'
+ht-degree: 98%
 
 ---
 
@@ -669,23 +669,31 @@ ht-degree: 99%
       + [维护类型](production/using/types-of-maintenance.md)
       + [RDBMS 特定建议](production/using/rdbms-specific-recommendations.md)
       + [应用程序对象](production/using/application-objects.md)
-   + 故障排除 {#troubleshooting}
-      + [性能和吞吐量问题](production/using/performance-and-throughput-issues.md)
-      + [缺少图像](production/using/images-missing.md)
-      + [图像显示问题](production/using/image-display-issues.md)
-      + [临时文件](production/using/temporary-files.md)
-      + [数据库性能](production/using/database-performances.md)
-      + [模块和常见问题](production/using/modules-and-frequent-issues.md)
-      + [日志精度](production/using/log-precision.md)
-      + [跟踪日志问题](production/using/tracking-logs-issues.md)
-      + [工作流执行](production/using/workflow-execution.md)
-      + [连接失败](production/using/failure-to-connect.md)
-      + [连接阈值](production/using/connection-thresholds.md)
-      + [Linux 中的堆栈跟踪](production/using/stack-trace-in-linux.md)
-      + [Oracle 数据库的编码](production/using/encoding-of-the-oracle-database.md)
-      + [控制台更新](production/using/console-update.md)
-      + [密码丢失](production/using/lost-password.md)
-      + [JSP 行为](production/using/jsp-behavior.md)
+   + 故障排除 {#troubleshooting-toc}
+      + [生产疑难解答概述](production/using/troubleshooting.md)
+      + 常见和一般问题{#common-general-issues-toc}
+         + [模块和常见问题](production/using/modules-and-frequent-issues.md)
+         + [工作流执行](production/using/workflow-execution.md)
+         + [密码丢失](production/using/lost-password.md)
+         + [控制台更新](production/using/console-update.md)
+      + 传递疑难解答 {#delivery-troubleshooting-toc}
+         + [性能和吞吐量问题](production/using/performance-and-throughput-issues.md)
+         + [图像显示问题](production/using/image-display-issues.md)
+         + [缺少图像](production/using/images-missing.md)
+         + [临时文件](production/using/temporary-files.md)
+      + 使用日志{#working-with-log-toc}
+         + [日志精度](production/using/log-precision.md)
+         + [跟踪日志问题](production/using/tracking-logs-issues.md)
+      + 数据库问题{#database-issues-toc}
+         + [数据库性能](production/using/database-performances.md)
+         + [Oracle 数据库的编码](production/using/encoding-of-the-oracle-database.md)
+      + 连接改进{#connection-improvements-toc}
+         + [连接失败](production/using/failure-to-connect.md)
+         + [连接阈值](production/using/connection-thresholds.md)
+      + 技术故障排除{#technical-troubleshooting-toc}
+         + [Linux 中的堆栈跟踪](production/using/stack-trace-in-linux.md)
+         + [JSP 行为](production/using/jsp-behavior.md)
+         + [查找Tomcat版本](production/using/locate-tomcat-version.md)
 + 开发者指南 {#configuring-campaign-classic}
    + 数据模型 {#data-model}
       + [关于数据模型](configuration/using/about-data-model.md)
