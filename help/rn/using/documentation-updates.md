@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
 workflow-type: tm+mt
 source-wordcount: '3729'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 97%
 
 ## 2020 年 12 月 {#dec-2020}
 
-投放监测科已重组为专题。 [阅读更多](../../delivery/using/about-delivery-monitoring.md)
+传递监测科已重组为专题。[阅读更多](../../delivery/using/about-delivery-monitoring.md)
 
-在如何向投放日志添加发送方的IP地址方面已添加一个用例。 [阅读更多](../../delivery/using/delivery-dashboard.md#use-case)
+添加了一个关于如何将发件人的IP地址添加到传递日志的用例。[阅读更多](../../delivery/using/delivery-dashboard.md#use-case)
 
 隐私常见问题解答已移至[此部分](../../platform/using/privacy-faq.md)。
 
