@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 802818fcd27e0dc40cc640092da1ef70ff21a191
+source-git-commit: dcef36c3ce14c45cb08a79180938ad8d26fa6549
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 86%
 
 ---
@@ -25,7 +25,7 @@ Gold Standard 是 Campaign Classic 长期支持版本。作为一个托管的Gol
 
 有关 Campaign Gold Standard 程序的详细信息，请参阅[本文](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
 
-## ![](assets/do-not-localize/limited_2.png) Gold Standard 11 版本{#gs-11}
+## ![](assets/do-not-localize/green_2.png) Gold Standard 11 版本{#gs-11}
 
 _2020年12月22日_
 
@@ -33,7 +33,7 @@ _2020年12月22日_
 >
 >此版本附带新的连接协议：2021年3月21日之后，活动服务器和客户端控制台都必须能够连接到活动。
 
-构建9032@2a2a028包含以下改进和修复：
+构建9032@d3b452f包含以下改进和修复：
 
 * 连接协议已经更新，以遵循新的 IMS 认证机制。
 
@@ -43,7 +43,7 @@ _2020年12月22日_
 
 * 修复了一个安全问题，以增强针对服务器端请求伪造(SSRF)问题的保护。 (NEO-27777)
 
-## ![](assets/do-not-localize/green_2.png) Gold Standard 10 版本{#gs-10}
+## ![](assets/do-not-localize/red_2.png) Gold Standard 10 版本{#gs-10}
 
 _2020 年 7 月 7 日_
 
