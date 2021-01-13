@@ -7,17 +7,17 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: a490744e4a94a498fbd0205f119617137910d40c
+source-git-commit: 0f2986f88f72c191262248029ec620fad538c218
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 13%
+source-wordcount: '219'
+ht-degree: 11%
 
 ---
 
 
 # 生产疑难解答{#troubleshooting}
 
-本节包含与Adobe Campaign一般生产问题相关的疑难解答过程，如投放和工作流执行、监控、数据库维护或连接。
+本节包含与Adobe Campaign一般生产问题相关的疑难解答过程，如投放和工作流执行、监控、数据库维护、连接等。
 
 ## 常见和一般问题{#common-and-general-issues}
 
@@ -28,9 +28,10 @@ ht-degree: 13%
 
 ## 传递疑难解答 {#delivery-troubleshooting}
 
-遇到投放问题时，可以执行特定操作：
+在出现投放问题时，可以执行特定操作：
 * [可交付性问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
-* [图像显示问](../../production/using/image-display-issues.md) 题和 [图像缺失](../../production/using/images-missing.md)
+* [图像显示问题](../../production/using/image-display-issues.md)
+* [图像缺失](../../production/using/images-missing.md)
 * [临时文件问题](../../production/using/temporary-files.md) (*仅限内部部署托管模型*)
 
 **相关主题**：
@@ -39,21 +40,29 @@ ht-degree: 13%
 
 ## 使用日志{#working-with-logs}
 
+以下是一些提示，帮助您改善使用日志的体验：
+
 * [日志精度](../../production/using/log-precision.md)
 * [跟踪日志问题](../../production/using/tracking-logs-issues.md)
 
 ## 数据库问题{#database-issues}
+
+了解如何通过阅读以下部分解决性能问题：
 
 * [数据库性能](../../production/using/database-performances.md)
 * [Oracle 数据库的编码](../../production/using/encoding-of-the-oracle-database.md)
 
 ## 连接改进{#connection-improvements}
 
+如果您遇到连接问题，请通过以下一些方法来修复它们：
+
 * [连接失败](../../production/using/failure-to-connect.md)
 * [连接阈值](../../production/using/connection-thresholds.md)
 
 ## 技术故障排除{#technical-troubleshooting}
 
+转到以下各节以了解更多具体问题：
+
 * [Linux 中的堆栈跟踪](../../production/using/stack-trace-in-linux.md)
 * [JSP 行为](../../production/using/jsp-behavior.md)
-<!-- * [Locating Tomcat version](../../production/using/locate-tomcat-version.md)-->
+* [查找Tomcat版本](../../production/using/locate-tomcat-version.md)
