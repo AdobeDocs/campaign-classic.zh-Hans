@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+source-git-commit: d35b22386bd2681ba02e4379c627821b35a7d04e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 您还可以在内容创建和投放发送自动化的上下文中使用活动，以同时启动目标计算和内容创建。 [此部分](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)提供专用用例。
 
->[!WARNING]
+>[!IMPORTANT]
 >
 >请记住，在Fork过渡后添加的出站活动不会同时执行。
 >
