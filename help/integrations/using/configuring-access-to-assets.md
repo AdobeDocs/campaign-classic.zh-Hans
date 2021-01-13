@@ -7,7 +7,7 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5d5d4b87bae44ce0a93458f79179434a5bf315c3
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 1%
@@ -68,5 +68,6 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果您的Adobe Campaign实例中也安装了&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;包，则您将只能使用Adobe Experience Cloud库中的可用资源。 要同时访问AEM Assets图书馆中的资源，必须同步AEM Assets和Adobe Experience Cloud。 AEM Assets的资产也将在Adobe Experience Cloud图书馆查阅。 在这种情况下，您无需创建特定投放模板。 有关在AEM Assets和Adobe Experience Cloud之间同步的详细信息，请参阅[详细文档](https://docs.adobe.com/docs/en/aod/overview/collaborating/aem-assets-aod-sync.html)。
+>如果您的Adobe Campaign实例中也安装了&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;包，则您将只能使用Adobe Experience Cloud库中的可用资源。 要同时访问AEM Assets图书馆中的资源，必须同步AEM Assets和Adobe Experience Cloud。 AEM Assets的资产也将在Adobe Experience Cloud图书馆查阅。 在这种情况下，您无需创建特定投放模板。 有关在AEM Assets和Adobe Experience Cloud之间同步的详细信息，请参阅[详细文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/configure-assets-cc-integration.html#integration)。
+
 
