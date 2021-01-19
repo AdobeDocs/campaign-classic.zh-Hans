@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1210'
 ht-degree: 12%
 
 ---
@@ -34,7 +34,7 @@ Adobe Campaign优惠以下投放渠道:
 1. **移动渠道**:移动渠道上的投放可让您向目标群发送个性化的SMS或LINE消息。请参阅[SMS渠道](../../delivery/using/sms-channel.md)。
 1. **移动应用程序渠道**:移动应用程序投放允许您向iOS和Android系统发送通知。请参阅[移动应用程序渠道](../../delivery/using/about-mobile-app-channel.md)一章。
 
-   有关其他渠道，请参阅此页[。](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
+   有关其他渠道，请参阅此页](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)。[
 
    >[!NOTE]
    >
@@ -88,7 +88,11 @@ Adobe Campaign允许您通过专用应用程序在iOS和Android移动设备上�
 
 ## 其他渠道 {#other-channels}
 
-Adobe Campaign优惠代理或电话投放模板，用于创建外部投放。 使用这些渠道意味着您设置了专门的方法来处理输出文件。 配置步骤与[直接邮件渠道](../../delivery/using/about-direct-mail-channel.md)的步骤相同。
+Adobe Campaign优惠电话投放模板，用于创建外部投放。 使用此渠道意味着您设置专用方法来处理输出文件。 配置步骤与[直接邮件渠道](../../delivery/using/about-direct-mail-channel.md)的步骤相同。
+
+>[!NOTE]
+>
+>电话渠道不现成可用。 其实施需要Adobe咨询或Adobe合作伙伴参与。 请联系您的Adobe代表以了解更多信息。
 
 此外，“其他”类型投放使用不执行进程的特定技术模板：这样，他们就可以管理在Adobe Campaign平台之外执行的营销操作。
 
