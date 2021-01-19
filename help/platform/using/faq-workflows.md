@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '362'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 如何在 Campaign 中导入数据？{#how-can-i-import-data-in-campaign-}
 
-在[此部分](../../workflow/using/importing-data.md)了解通过 Campaign 工作流导入数据的最佳实践。
+了解在[本节](../../platform/using/import-export-best-practices.md)中导入数据的最佳实践。
 
 ## 是否能监视工作流的执行？{#can-i-monitor-workflow-execution-}
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 
 您可以使用外部文本文件中的值来修改 Campaign 表中的某些字段。
 
-[单击此处了解如何操作](../../platform/using/importing-data.md#example--enrich-the-values-with-those-of-an-external-file)。
+[单击此处了解如何操作](../../platform/using/import-operations-samples.md#example--enrich-the-values-with-those-of-an-external-file)。
 
 ## 如何识别和定位新的收件人？{#how-can-i-identify-and-target-new-recipients-}
 
