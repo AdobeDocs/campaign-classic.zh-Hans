@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1173'
+ht-degree: 5%
 
 ---
 
@@ -122,6 +122,11 @@ ht-degree: 0%
   <tr> 
    <td> 移动渠道(SMS)<br /> </td> 
    <td> 使用带Adobe Campaign的移动／短信渠道发送投放。 可选。<a href="../../delivery/using/sms-channel.md">了解更多</a> <br /> </td> 
+   <td> 所有<br /> </td> 
+  </tr> 
+   <tr> 
+   <td> 电话渠道<br /> </td> 
+   <td> 使用电话投放发送Adobe Campaign。 用于呼叫中心。 可选。<a href="../../delivery/using/communication-channels.md">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
