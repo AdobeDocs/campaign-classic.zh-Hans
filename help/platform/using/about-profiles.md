@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 63%
@@ -45,7 +45,7 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->要了解如何导入文件和Web表单，请参阅[通用导入和导出](../../platform/using/generic-imports-and-exports.md)。
+>要了解如何导入文件和Web表单，请参阅[通用导入和导出](../../platform/using/get-started-data-import-export.md)。
 
 ## 用户档案和目标 {#profiles-and-targets}
 
@@ -58,7 +58,7 @@ ht-degree: 63%
 * 列表;请参阅[创建和管理列表](../../platform/using/creating-and-managing-lists.md),
 * 订阅服务；请参阅[此页面](../../delivery/using/managing-subscriptions.md)，
 * web 应用程序；请参阅[此页面](../../web/using/about-web-applications.md)，
-* 进出口（就业）;请参阅[通用导入和导出](../../platform/using/generic-imports-and-exports.md),
+* 进出口（就业）;请参阅[通用导入和导出](../../platform/using/about-generic-imports-exports.md),
 * 定位工作流；请参阅[此页面](../../workflow/using/building-a-workflow.md#implementation-steps-)。
 
 收件人页面允许您对用户档案执行常见的操作：编辑、更新、添加、删除、排序。
@@ -115,7 +115,7 @@ ht-degree: 63%
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-此处[提供其他Campaign Classic操作方法视频。](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
+此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供其他Campaign Classic操作方法视频。[
 
 **另请参阅**
 
