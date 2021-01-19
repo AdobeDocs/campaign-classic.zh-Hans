@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1266'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 4%
 
 ## 插入HTML内容{#inserting-html-content}
 
-您可以在表单页面中包含HTML内容：超文本链接、图像、格式化段落、视频或Flash对象等。
+您可以在表单页面中包含HTML内容：超文本链接、图像、格式化段落、视频等。
 
 HTML编辑器允许您输入要插入到表单页面的内容。 要打开编辑器，请单击&#x200B;**[!UICONTROL Static elements]** > **[!UICONTROL HTML]**。
 
