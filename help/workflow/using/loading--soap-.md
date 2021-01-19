@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
@@ -43,7 +43,7 @@ ht-degree: 4%
 
    如果要更新示例，请选择&#x200B;**[!UICONTROL Re-analyze the example]**。
 
-   您还可以通过&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接个性化列数据的格式。 有关格式化导入数据的详细信息，请参阅此[部分](../../platform/using/importing-data.md#import-wizard)。
+   您还可以通过&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接个性化列数据的格式。 有关格式化导入数据的详细信息，请参阅此[部分](../../platform/using/executing-import-jobs.md)。
 
 1. 您可以使用行号作为标识符和／或指定SOAP调用返回多个元素。
 1. 根据选项卡脚本的函数输入以下选项卡脚本：
