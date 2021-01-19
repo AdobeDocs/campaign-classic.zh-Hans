@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 16%
+source-wordcount: '94'
+ht-degree: 14%
 
 ---
 
@@ -28,6 +28,5 @@ ht-degree: 16%
 阅读更多:
 
 * [关于定位活动](../../workflow/using/about-targeting-activities.md)
-* [导入数据](../../workflow/using/importing-data.md)
 * [执行工作流](../../workflow/using/starting-a-workflow.md)
 * [工作流最佳实践](../../workflow/using/workflow-best-practices.md)
