@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -111,7 +111,7 @@ Web调查的&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡中还提供了另�
 
    >[!NOTE]
    >
-   >[本节](../../platform/using/generic-imports-and-exports.md)详细介绍数据导出及其配置的各个阶段。
+   >[本节](../../platform/using/about-generic-imports-exports.md)详细介绍数据导出及其配置的各个阶段。
 
 ## 使用收集的数据{#using-the-collected-data}
 
