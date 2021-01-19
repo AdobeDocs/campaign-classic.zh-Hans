@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '2820'
+source-wordcount: '2786'
 ht-degree: 0%
 
 ---
@@ -616,11 +616,11 @@ logInfo("Done");
 
 ### 个性化报告{#personalized-reports}
 
-如果要使用v7中的蓝色横幅（允许您访问宇宙），则必须重新发布报告。 如果遇到问题，可以强制使用v6.0渲染引擎。 为此，请转至报告中的&#x200B;**[!UICONTROL Properties]**，单击&#x200B;**[!UICONTROL Rendering]**&#x200B;并选择&#x200B;**[!UICONTROL Version 6.0 (Flash & OpenOffice)]**&#x200B;渲染引擎。
+<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
-
-如果您希望从新报告功能中受益，则必须选择v.6.x渲染引擎。 在这种情况下，请检查所有脚本并在必要时更改它们。 在PDF导出方面，如果您为OpenOffice添加了特定脚本，则新的PDF导出引擎(PhantomJS)将不再支持该脚本。
+-->
+如果您希望从新报告功能中受益，则必须重新发布报告。 为此，请编辑报告&#x200B;**[!UICONTROL Properties]**，单击&#x200B;**[!UICONTROL Rendering]**&#x200B;并选择v.6.x渲染引擎。 在这种情况下，请检查所有脚本并在必要时更改它们。 在PDF导出方面，如果您为Open Office添加了特定脚本，则新的PDF导出引擎(PhantomJS)将不再适用。
 
 ## Web 应用程序 {#web-applications}
 
