@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '2157'
 ht-degree: 87%
@@ -291,7 +291,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 要从列表中导出数据，必须使用导出向导。要启动此向导，可从列表中选择要导出的元素，右键单击它后选择 **[!UICONTROL Export...]**。
 
-[通用导入和导出](../../platform/using/generic-imports-and-exports.md)中介绍了导入和导出功能的使用。
+[通用导入和导出](../../platform/using/about-generic-imports-exports.md)中介绍了导入和导出功能的使用。
 
 >[!CAUTION]
 >
@@ -396,4 +396,4 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-此处[提供其他Campaign Classic操作方法视频。](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
+此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供其他Campaign Classic操作方法视频。[
