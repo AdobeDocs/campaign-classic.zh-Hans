@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 translation-type: tm+mt
-source-git-commit: a80f611140a5fb03e3547a8de228ecd8c96e8862
+source-git-commit: f57f52d8807eb771e2416b6648e1d746a206fa96
 workflow-type: tm+mt
 source-wordcount: '1816'
 ht-degree: 6%
@@ -57,7 +57,7 @@ ht-degree: 6%
 | **LINE V2访问令牌更新** (updateLineV2AccessToken) | LINE 渠道 | 此工作流将访问令牌刷新为LINE V2。 |
 | **MID到LineUserID迁移** （MIDToUserIDM集成） | LINE 渠道 | 此工作流生成LINE V2用户ID，用于从LINE V1迁移到LINE V2。 |
 | **营销资源通知** （资产管理） | 营销资源语(MRM) | 此工作流管理与营销资源审批和发布相关的通知。 |
-| **消息中 &lt;external_account_name>** 心(mcSynch_&lt;external_account_name>) | 事务性消息控制（消息中心——控制） | 此工作流： <ul><li>恢复操作处理的事件的列表。</li><li>与NmsBroadLogMsg表同步，以恢复投放消息资格。</li><li>一旦与NmsBroadLogMsg表的同步完成，将恢复事件投放日志。</li><li>与NmsTrackingUrl表同步，以恢复投放URL的跟踪。</li><li>一旦与NmsTrackingUrl表的同步完成，将恢复事件跟踪URL。</li><li>允许您在发送隔离后每三小时恢复置入投放的所有电子邮件地址。</ul> |
+| **消息中 &lt;external_account_name>** 心(mcSynch_&lt;external_account_name>) | 事务性消息控制（消息中心——控制） | 此工作流： <ul><li>恢复操作处理的事件的列表。</li><li>与NmsBroadLogMsg表同步，以恢复投放消息资格。</li><li>一旦与NmsBroadLogMsg表的同步完成，将恢复事件投放日志。</li><li>与NmsTrackingUrl表同步，以恢复投放URL的跟踪。</li><li>一旦与NmsTrackingUrl表的同步完成，将恢复事件跟踪URL。</li><li>允许您在发送隔离后每三小时恢复置入投放的所有电子邮件地址。</li></ul> |
 | **MessageCenter完整聚合计** 算(agg_messageCenter_full) | 事务性消息控制（消息中心——控制） | 此工作流将更新消息中心聚合的完整多维数据集。 默认情况下，每天凌晨3点触发。 此聚合捕获以下维：渠道、日期、状态和事件类型。 然后，消息中心多维数据集用于根据事件生成报告。 您可以在[本节](../../reporting/using/about-cubes.md)中进一步了解多维数据集 |
 | **中间源(投放计数器** )(defaultMidSourcingDlv) | 传输到中间源 | 此工作流收集投放服务器上的计数信息。 计数信息包括一般投放指标，如发送的投放数等。 不包括打开等跟踪信息。 默认情况下，每十分钟触发一次。 |
 | **中间源(投放日志)** (defaultMidSourcingLog) | 传输到中间源 | 此工作流在中间源服务器上收集投放日志。 默认情况下，每小时触发一次。 |
