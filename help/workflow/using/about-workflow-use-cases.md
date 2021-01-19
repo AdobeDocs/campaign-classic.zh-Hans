@@ -9,10 +9,10 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 64%
+source-wordcount: '207'
+ht-degree: 62%
 
 ---
 
@@ -52,10 +52,11 @@ ht-degree: 64%
 * [创建摘要列表](../../workflow/using/creating-a-summary-list.md)
 * [丰富数据](../../workflow/using/enriching-data.md)
 * [使用聚合](../../workflow/using/using-aggregates.md)
-* [导入使用控制面板生成的密钥加密的数据](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
+* [导入使用控制面板生成的密钥加密的数据](../../platform/using/unzip-decrypt.md)
 * [使用控制面板上安装的密钥加密和导出数据](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [使用增量查询每季度更新列表](../../workflow/using/quarterly-list-update.md)
 * [使用外部重复数据删除活动的合并功能](../../workflow/using/deduplication-merge.md)
+* [设置循环导入工作流](../../workflow/using/recurring-import-workflow.md)
 
 ## 设定目标 {#designing-queries}
 
