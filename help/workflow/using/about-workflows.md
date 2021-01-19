@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 20%
@@ -73,7 +73,7 @@ Adobe Campaign使用工作流来：
 
 * 了解有关[此页](../../workflow/using/how-to-use-workflow-data.md)中的工作流活动的更多信息。
 * 了解如何在[本节](../../workflow/using/building-a-workflow.md)中构建工作流。
-* 了解如何使用工作流以[此部分](../../workflow/using/importing-data.md)中的活动导入数据。
+* 了解如何使用工作流以[此部分](../../platform/using/import-export-workflows.md)中的活动导入数据。
 * 工作流最佳实践详见[本页](../../workflow/using/workflow-best-practices.md)。
 * 在[本节](../../workflow/using/starting-a-workflow.md)中查找有关工作流执行的指导。
 * 了解如何在[此页](../../workflow/using/monitoring-workflow-execution.md)中监视工作流。
