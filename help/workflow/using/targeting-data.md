@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 3%
@@ -135,7 +135,7 @@ ht-degree: 3%
 
 必要时，可以处理入站表。 事实上，要将目标排除在其他维度之外，必须将此目标返回到与主目标相同的定位维度。 为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并指定维度更改条件。
 
-通过标识符、更改轴或连接执行数据协调。 [使用列表中的数据中有一个示例：读取列表](../../workflow/using/importing-data.md#using-data-from-a-list--read-list)。
+通过标识符、更改轴或连接执行数据协调。 [使用列表中的数据中有一个示例：读取列表](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list)。
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
