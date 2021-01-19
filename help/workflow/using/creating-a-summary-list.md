@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -61,13 +61,13 @@ Phone;500;London 5
 
    **数据加载（文件）**&#x200B;活动允许您使用收集的数据丰富工作流的工作表。
 
-   有关此活动的详细信息，请参阅[从文件加载数据](../../workflow/using/importing-data.md#loading-data-from-a-file)。
+   有关此活动的详细信息，请参阅[从文件加载数据](../../platform/using/import-export-workflows.md#loading-data-from-a-file)。
 
 1. 配置&#x200B;**文件收集器**&#x200B;活动以从所选目录收集文本(*.txt)类型文件。
 
    ![](assets/uc2_enrich_collecteur.png)
 
-   使用&#x200B;**文件收集器**&#x200B;活动，可以管理源目录中文件的缺失情况。 为此，请选中&#x200B;**[!UICONTROL Process file nonexistence]**&#x200B;选项。 在此工作流中，如果集合时该目录中缺少&#x200B;**等待**&#x200B;活动，则已添加一个&lt;a0/>以尝试其他文件集合。
+   使用&#x200B;**文件收集器**&#x200B;活动，可以管理源目录中文件的缺失情况。 为此，请选中&#x200B;**[!UICONTROL Process file nonexistence]**&#x200B;选项。 在此工作流中，如果集合时该目录中缺少&#x200B;**等待**&#x200B;活动，则已添加一个以尝试其他文件集合。
 
 1. 使用与要导入的数据格式相同的示例文件配置&#x200B;**数据加载（文件）**&#x200B;活动。
 
