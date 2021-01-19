@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 10%
+source-wordcount: '1525'
+ht-degree: 11%
 
 ---
 
@@ -34,7 +34,6 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 * [Adobe Experience Manager 外部帐户](#adobe-experience-manager-external-account)
 * [Amazon简单存储服务(S3)外部帐户](#amazon-simple-storage-service--s3--external-account)
 * [Microsoft Dynamics CRM外部帐户](#microsoft-dynamics-crm-external-account)
-* [Oracle按需外部帐户](#oracle-on-demand-external-account)
 * [Salesforce CRM外部帐户](#salesforce-crm-external-account)
 
 ## 创建外部帐户{#creating-an-external-account}
@@ -331,35 +330,11 @@ Amazon简单存储服务(S3)连接器可用于将数据导入或导出到Adobe C
 
 **[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户允许您将Microsoft Dynamics数据导入并导出到Adobe Campaign。
 
-Microsoft Dynamics连接器的Adobe Campaign配置取决于您的部署类型。
-对于**[!UICONTROL On-premise]**&#x200B;和&#x200B;**[!UICONTROL Office 365]**&#x200B;部署类型，您需要提供以下详细信息：
+了解有关活动的更多信息——此[页面](../../platform/using/crm-ms-dynamics.md)中的Microsoft Dynamics CRM连接器。
 
-![](assets/ext_account_21.png)
-
-* **[!UICONTROL Account]**
-
-   用于登录Microsoft CRM的帐户。
-
-* **[!UICONTROL Server]**
-
-   Microsoft CRM服务器的URL。
-
-* **[!UICONTROL Password]**
-
-   用于登录Microsoft CRM的口令。
-
-* **[!UICONTROL Company name]** 用于内部部署和Office 365部署
-
-   公司的名称。
-
-* **[!UICONTROL Organization name]** 用于内部部署
-
-   您的组织的名称。
-可在Microsoft Dynamics的“开发人员资源”仪表板中找到的组织名称，**[!UICONTROL Unique Name]**&#x200B;字段。
-
-* **[!UICONTROL CRM version]** 适用于内部部署
-
-   **[!UICONTROL Dynamics CRM 2007]**、**[!UICONTROL Dynamics CRM 2015]**&#x200B;或&#x200B;**[!UICONTROL Dynamics CRM 2016]**&#x200B;之间的CRM版本。
+>[!NOTE]
+>
+> **[!UICONTROL On-premise]** 现在 **[!UICONTROL Office 365]** 已弃用部署类型。[了解详情](../../rn/using/deprecated-features.md)。
 
 使用&#x200B;**[!UICONTROL Web API]**&#x200B;部署类型和&#x200B;**[!UICONTROL Password credentials]**&#x200B;身份验证，您需要提供以下详细信息：
 
@@ -405,29 +380,7 @@ Microsoft Dynamics连接器的Adobe Campaign配置取决于您的部署类型。
 
    **[!UICONTROL Dynamics CRM 2007]**、**[!UICONTROL Dynamics CRM 2015]**&#x200B;或&#x200B;**[!UICONTROL Dynamics CRM 2016]**&#x200B;之间的CRM版本。
 
-有关此配置的详细信息，请参阅此[页面](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics)。
-
-## Oracle按需外部帐户{#oracle-on-demand-external-account}
-
-**[!UICONTROL Oracle on demand]**&#x200B;外部帐户允许您将Oracle数据导入并导出到Adobe Campaign。
-
-![](assets/ext_account_18.png)
-
-要将Oracle按需外部帐户配置为与Adobe Campaign结合使用，您需要提供以下详细信息：
-
-* **[!UICONTROL Account]**
-
-   用于登录OracleCRM（按需）的帐户。
-
-* **[!UICONTROL Server]**
-
-   您的OracleCRM点播服务器的URL。
-
-* **[!UICONTROL Password]**
-
-   用于按需登录OracleCRM的密码。
-
-有关此配置的详细信息，请参阅此[页面](../../platform/using/crm-connectors.md#example-for-oracle-on-demand)。
+有关此配置的详细信息，请参阅此[页面](../../platform/using/crm-connectors.md)。
 
 ## Salesforce CRM外部帐户{#salesforce-crm-external-account}
 
@@ -459,4 +412,4 @@ Microsoft Dynamics连接器的Adobe Campaign配置取决于您的部署类型。
 
 对于此外部帐户，您需要使用配置向导配置Salesforce CRM。
 
-有关此配置的详细信息，请参阅此[页面](../../platform/using/crm-connectors.md#example-for-salesforce-com)。
+有关此配置的详细信息，请参阅此[页面](../../platform/using/crm-connectors.md)。
