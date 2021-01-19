@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 18%
@@ -21,7 +21,7 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 
 本页显示了托管(Managed Services)和内部部署之间的主要区别。 混合部署的具体性取决于由Adobe托管并托管在您所在地的元素。
 
-本节[介绍了不同的托管模型。](../../installation/using/hosting-models.md)
+本节](../../installation/using/hosting-models.md)介绍了不同的托管模型。[
 
 ## 每个部署型号{#capability-matrix}的可用性
 
@@ -33,8 +33,8 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 | 管理中间源平台 | 按需 | 按需 | 可用 | [了解详情](../../installation/using/mid-sourcing-server.md) |
 | 通过Litmus呈现收件箱 | 按需 | 按需 | 可用 | [了解详情](../../delivery/using/inbox-rendering.md) |
 | 与因特网管理系统(Adobe ID)集成 | 按需 | 按需 | 按需 | [了解详情](../../integrations/using/about-adobe-id.md) |
-| 为文件传输加密／解密数据 | 按需 | 可用 | 可用 | [了解详情](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
-| 压缩／解压文件 | 按需 | 可用 | 可用 | [了解详情](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
+| 为文件传输加密／解密数据 | 按需 | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
+| 压缩／解压文件 | 按需 | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
 | 域名委派 | 按需 | 按需 | 不可用 | [了解详情](https://helpx.adobe.com/cn/campaign/kb/domain-name-delegation.html) |
 | 安装SpamAssassin | 按需 | 可用 | 可用 | [了解详情](../../delivery/using/spamassassin.md) |
 | 访问交付性报告 | 可用 | 按需 | 可用 | [了解详情](../../delivery/using/monitoring-deliverability.md) |
