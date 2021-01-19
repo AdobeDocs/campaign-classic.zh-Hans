@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 100%
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 如何导入用户档案？{#how-to-import-profiles-}
 
-探索在数据库中[导入用户档案](../../platform/using/importing-data.md#generic-import-samples)的轻松用例。
+探索在数据库中[导入用户档案](../../platform/using/import-operations-samples.md)的轻松用例。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
 
