@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 * **查询**:让你运行查询。请参阅[创建查询](../../workflow/using/query.md#creating-a-query)。
 * **增量查询**:允许您执行查询并计划其执行。请参阅[增量查询](../../workflow/using/incremental-query.md)部分。
-* **读取列表**:允许您使用列表中包含的数据。请参阅[使用列表中的数据：读取列表](../../workflow/using/importing-data.md#using-data-from-a-list--read-list)部分。
+* **读取列表**:允许您使用列表中包含的数据。请参阅[使用列表中的数据：读取列表](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list)部分。
 * **合并**:允许您将多个活动的结果分组为单个目标。请参阅[合并](../../workflow/using/union.md)部分。
 * **交叉**:允许您仅提取具有相同入站活动结果的人口。请参阅[交叉](../../workflow/using/intersection.md)部分。
 * **排除**:允许您根据主目标创建目标，从中提取一个或多个其他目标。请参阅[交叉](../../workflow/using/intersection.md)部分。
