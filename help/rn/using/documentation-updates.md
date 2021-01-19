@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 88172a79aad37e6a311b144f4ea685bb4846825b
+source-git-commit: 759346587e3ce98c408a0a17218341118dbceb82
 workflow-type: tm+mt
-source-wordcount: '3814'
-ht-degree: 96%
+source-wordcount: '3869'
+ht-degree: 94%
 
 ---
 
@@ -19,31 +19,39 @@ ht-degree: 96%
 
 本页列出了每月所有新增功能和文档更新以及 Campaign 版本。
 
-您还可以查阅 [Adobe Campaign Classic Release 发行说明](../../rn/using/latest-release.md) ，了解更多更新信息。
+有关发行相关更新，请参阅[《Adobe Campaign Classic发行说明》](../../rn/using/latest-release.md)。
 
-## 2021 年 1 月 {#jan,2021}
+## 2021 年 1 月 {#jan-2021}
 
-**[!UICONTROL Fork]**&#x200B;活动部分已丰富了其他信息。 已添加注释，指定出站过渡不同时执行，因此不应使用活动来改进工作流的性能。 [阅读更多](../../workflow/using/fork.md)
+**[!UICONTROL Fork]**&#x200B;活动部分已丰富了最佳实践。 [阅读更多](../../workflow/using/fork.md)
 
-已将“查找Tomcat版本”部分[移至此处](../../production/using/locate-tomcat-version.md)。
+**CRM Connectors**&#x200B;部分已更新、改进和重新组织。 [阅读更多](../../platform/using/crm-connectors.md)。
 
-技术工作流及其关联包的列表已重新组织为一个页面。 [阅读更多](../../workflow/using/about-technical-workflows.md)
+连接&#x200B;**Adobe Campaign和Microsoft Dynamics**&#x200B;的步骤现在在专用页面中详细介绍。 [阅读更多](../../platform/using/crm-ms-dynamics.md)。
 
-“监视指南”中的疑难解答部分经过重新组织，并用登陆页进行了增强。 [阅读更多](../../production/using/troubleshooting.md)。
+Oracle点播API现已作为与活动连接的CRM弃用。 [阅读更多](../../rn/using/deprecated-features.md)。
+
+了解如何在Adobe Campaign[此处](../../production/using/locate-tomcat-version.md)实例中查找嵌入的Tomcat Web servlet的当前版本。
+
+技术工作流及其关联包的列表已得到增强并集中到一个页面中。 [阅读更多](../../workflow/using/about-technical-workflows.md)
+
+**监视**&#x200B;指南的故障排除部分已重新组织，并通过登陆页进行了增强。 [阅读更多](../../production/using/troubleshooting.md)。
+
+新的&#x200B;**导入和导出数据**&#x200B;部分可用于与工作流、数据压缩、加密和导入最佳实践相关的新页面。 [阅读更多](../../platform/using/get-started-data-import-export.md)
 
 ## 2020 年 12 月 {#dec-2020}
 
-传递监测科已重组为专题。[阅读更多](../../delivery/using/about-delivery-monitoring.md)
+**投放监测**&#x200B;节已重新组织为专题主题。 [阅读更多](../../delivery/using/about-delivery-monitoring.md)
 
 添加了一个关于如何将发件人的IP地址添加到传递日志的用例。[阅读更多](../../delivery/using/delivery-dashboard.md#use-case)
 
 隐私常见问题解答已移至[此部分](../../platform/using/privacy-faq.md)。
 
-已添加一个关于如何使用外部重复数据删除活动的合并功能的用例。 [阅读更多](../../workflow/using/deduplication-merge.md)
+在如何使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动的合并功能方面添加了一个用例。 [阅读更多](../../workflow/using/deduplication-merge.md)
 
-SMS连接器协议和设置页面已移至[此处](../../delivery/using/sms-protocol.md)。
+现在[此处](../../delivery/using/sms-protocol.md)提供SMS连接器协议和设置页面的完整说明。
 
-“事务消息”部分已添加注释，警告事件文件夹不能设置为执行实例上的视图，以避免出现访问权限问题。 [阅读更多](../../message-center/using/event-collection.md)
+**事务消息**&#x200B;部分已添加注释，警告事件文件夹不能设置为执行实例上的视图，以避免访问权限问题。 [阅读更多](../../message-center/using/event-collection.md)
 
 ## 2020 年 11 月{#nov-2020}
 
@@ -173,7 +181,7 @@ Gold Standard 版本的发行说明和兼容性矩阵现在可在专用部分中
 
 更新了“删除隔离地址”部分。这包括明确了地址会自动从隔离列表中删除的情况。[阅读更多](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-在如何使用控制面板和活动工作流[加密](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)和[解密](../../workflow/using/importing-data.md#use-case-gpg-decrypt)数据方面添加了用例。
+在如何使用控制面板和活动工作流[加密](../../platform/using/zip-encrypt.md)和[解密](../../platform/using/unzip-decrypt.md)数据方面添加了用例。
 
 Experience Cloud Triggers 和 Adobe Campaign Classic 集成页面已移至[此处](../../integrations/using/about-triggers.md)。
 
