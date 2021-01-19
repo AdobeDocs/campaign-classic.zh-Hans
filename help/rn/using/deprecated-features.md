@@ -9,10 +9,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
+source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
 workflow-type: tm+mt
-source-wordcount: '1626'
-ht-degree: 100%
+source-wordcount: '1632'
+ht-degree: 99%
 
 ---
 
@@ -47,12 +47,13 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </tr>
   <tr>
   <td>CRM 连接器<br></td>
-   <td><p>从 Campaign 20.3 版本开始，弃用以下 CRM 连接器：</p>
+   <td><p>从活动20.3版本开始，以下CRM连接器已弃用活动:</p>
    <ul>
    <li>Soap API - 本地：2007、2015、2016</li>
    <li>Soap API - 在线：2015、2016</li>
    <li>Web API - Microsoft Dynamics CRM 本地版：2016 或 2016 Update 1</li>
    <li>Web API - Microsoft Dynamics CRM 联机版：2016 或 2016 Update 1</li>
+   <li>Oracle On Demand API</li>
    </ul>
   <p><em>目标删除日期：2021 年 4 月</em></p>
   </td>
