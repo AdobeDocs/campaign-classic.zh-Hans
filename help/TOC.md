@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 404ff67207f8c126e44736fe565cf57afcc6397e
+source-git-commit: ef502c023918baa1ae56b9619c7ab488ddf909e3
 workflow-type: tm+mt
-source-wordcount: '2202'
-ht-degree: 98%
+source-wordcount: '2293'
+ht-degree: 94%
 
 ---
 
@@ -68,10 +68,22 @@ ht-degree: 98%
       + [导出和导入用户档案](platform/using/exporting-and-importing-profiles.md)
       + [创建和管理列表](platform/using/creating-and-managing-lists.md)
    + 导入和导出数据 {#importing-and-exporting-data}
-      + [一般导入和导出](platform/using/generic-imports-and-exports.md)
-      + [导出数据](platform/using/exporting-data.md)
-      + [导入数据](platform/using/importing-data.md)
-      + [SFTP 服务器使用情况](platform/using/sftp-server-usage.md)
+      + [数据导入和导出入门](platform/using/get-started-data-import-export.md)
+      + [使用工作流导入和导出数据](platform/using/import-export-workflows.md)
+      + 处理通用导入和导出{generic-imports-exports}
+         + [开始使用通用导入和导出](platform/using/about-generic-imports-exports.md)
+         + [创建导入和导出模板](platform/using/creating-import-export-templates.md)
+         + [创建导入和导出作业](platform/using/creating-import-export-jobs.md)
+         + [配置导入作业](platform/using/executing-import-jobs.md)
+         + [配置导出作业](platform/using/executing-export-jobs.md)
+         + [监视作业执行](platform/using/monitoring-jobs-execution.md)
+         + [一般导入范例](platform/using/import-operations-samples.md)
+      + 管理数据加密和压缩{managing-data-encryption-compression}
+         + [在处理文件之前解压缩或解密文件](platform/using/unzip-decrypt.md)
+         + [在处理之前压缩或加密文件](platform/using/zip-encrypt.md)
+      + 最佳实践和{最佳实践}疑难解答
+         + [导入和导出最佳实践](platform/using/import-export-best-practices.md)
+         + [SFTP服务器最佳实践和疑难解答](platform/using/sftp-server-usage.md)
    + 筛选数据 {#filtering-data}
       + [筛选选项](platform/using/filtering-options.md)
       + [创建过滤器](platform/using/creating-filters.md)
@@ -86,7 +98,10 @@ ht-degree: 98%
       + [管理明细列表](platform/using/managing-enumerations.md)
    + 连接器 {#connectors}
       + [关于连接器](platform/using/about-connectors.md)
-      + [CRM 连接器](platform/using/crm-connectors.md)
+      + CRM 连接器{#crm-connectors}
+         + [CRM连接器入门](platform/using/crm-connectors.md)
+         + [与Microsoft Dynamics 365连接](platform/using/crm-ms-dynamics.md)
+         + [与CRM同步数据](platform/using/crm-data-sync.md)
       + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector.md)
 + 发送消息 {#sending-messages}
    + [消息入门](delivery/using/communication-channels.md)
@@ -114,8 +129,8 @@ ht-degree: 98%
    + 在手机上发送邮件 {#sending-messages-on-mobiles}
       + [SMS 渠道](delivery/using/sms-channel.md)
       + [LINE 渠道](delivery/using/line-channel.md)
-      + [SMS连接器协议和设置](delivery/using/sms-protocol.md)
-      + [SMS疑难解答](delivery/using/troubleshooting-sms.md)
+      + [短信连接器协议和设置](delivery/using/sms-protocol.md)
+      + [短信疑难解答](delivery/using/troubleshooting-sms.md)
    + 发送推送通知 {#sending-push-notifications}
       + [关于移动应用程序渠道](delivery/using/about-mobile-app-channel.md)
       + [将 Campaign SDK 集成到移动应用程序](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
@@ -347,13 +362,11 @@ ht-degree: 98%
       + [管道监控](integrations/using/pipeline-monitoring.md)
       + [管道故障排除](integrations/using/pipeline-troubleshooting.md)
 + 通过工作流实现自动化 {#automating-with-workflows}
-   + 简介 {#introduction}
-      + [工作流入门](workflow/using/about-workflows.md)
+   + 工作流入门 {#introduction}
+      + [关于工作流](workflow/using/about-workflows.md)
       + [关于活动](workflow/using/about-activities.md)
-   + 一般操作 {#general-operation}
       + [构建工作流](workflow/using/building-a-workflow.md)
       + [定位数据](workflow/using/targeting-data.md)
-      + [导入数据](workflow/using/importing-data.md)
       + [如何使用工作流数据](workflow/using/how-to-use-workflow-data.md)
       + [工作流最佳实践](workflow/using/workflow-best-practices.md)
    + 执行工作流 {#executing-a-workflow}
@@ -441,6 +454,7 @@ ht-degree: 98%
          + [丰富数据](workflow/using/enriching-data.md)
          + [使用聚合](workflow/using/using-aggregates.md)
          + [使用外部重复数据删除活动的合并功能](workflow/using/deduplication-merge.md)
+         + [设置循环导入工作流](workflow/using/recurring-import-workflow.md)
       + 设计查询 {#designing-queries}
          + [使用增量查询每季度更新列表](workflow/using/quarterly-list-update.md)
       + 设定目标 {#designing-queries}
