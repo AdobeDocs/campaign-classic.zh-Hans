@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 9%
@@ -46,7 +46,7 @@ ht-degree: 9%
 >对于直邮投放,提取文件格式必须符合以下限制：
 >
 >* 它不能使用选项&#x200B;**[!UICONTROL Handle groupings (GROUP BY+HAVING)]**。
->* 如果提取元素集合，则这些字段的种子地址值将为空，除非选中&#x200B;**[!UICONTROL Single row (expert user)]**&#x200B;选项。 如需详细信息，请参阅[此部分](../../platform/using/exporting-data.md#step-7---data-formatting)。
+>* 如果提取元素集合，则这些字段的种子地址值将为空，除非选中&#x200B;**[!UICONTROL Single row (expert user)]**&#x200B;选项。 如需详细信息，请参阅[此部分](../../platform/using/executing-export-jobs.md#step-7---data-formatting)。
 
 >
 
