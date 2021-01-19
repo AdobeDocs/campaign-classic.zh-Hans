@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 >
 >优惠券管理是一个必须安装的包。 要确认您有优惠券管理，请检查&#x200B;**[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 >
->优惠券数据可以使用CSV和XML格式导入和导出。 有关导入和导出的详细信息，请参阅[本节](../../platform/using/generic-imports-and-exports.md)。
+>优惠券数据可以使用CSV和XML格式导入和导出。 有关导入和导出的详细信息，请参阅[本节](../../platform/using/get-started-data-import-export.md)。
 
 ## 创建优惠券{#creating-a-coupon}
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >可以批量导入单个优惠券。 有关导入和导出的详细信息，请参阅[本节](../../platform/using/generic-imports-and-exports.md)。
+   >可以批量导入单个优惠券。 有关导入和导出的详细信息，请参阅[本节](../../platform/using/get-started-data-import-export.md)。
 
 ### 配置单个优惠券{#configuring-individual-coupons}
 
@@ -126,7 +126,7 @@ ht-degree: 1%
 
    ![](assets/deliv_coup_14.png)
 
-1. 在工具栏中，单击&#x200B;**[!UICONTROL Send]**（左上角），然后选择要发送投放的方式。
+1. 在工具栏中，单击&#x200B;**[!UICONTROL Send]**（左上方），然后选择要发送投放的方式。
 
    ![](assets/deliv_coup_15.png)
 
