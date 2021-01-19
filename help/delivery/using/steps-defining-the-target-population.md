@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1579'
 ht-degree: 2%
@@ -104,7 +104,7 @@ ht-degree: 2%
 
 1. 导入收件人时，单击&#x200B;**[!UICONTROL File format definition...]**&#x200B;链接以选择和配置外部文件。
 
-   有关数据导入的详细信息，请参阅[本节](../../platform/using/importing-data.md#step-2---source-file-selection)。
+   有关数据导入的详细信息，请参阅[本节](../../platform/using/executing-import-jobs.md#step-2---source-file-selection)。
 
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;并将投放配置为标准投放。
 
@@ -237,4 +237,4 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-此处[提供其他Campaign Classic操作方法视频。](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
+此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供其他Campaign Classic操作方法视频。[
