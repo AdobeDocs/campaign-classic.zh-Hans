@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 15%
@@ -35,7 +35,7 @@ ht-degree: 15%
 
 ![](assets/preprocessing-dataloading.png)
 
-有关此内容的详细信息，请参阅此部分：[在处理](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing)之前解压或解密文件。
+有关此内容的详细信息，请参阅此部分：[在处理](../../platform/using/unzip-decrypt.md)之前解压或解密文件。
 
 ## 定义文件格式{#defining-the-file-format}
 
@@ -59,14 +59,14 @@ ht-degree: 15%
    * **[!UICONTROL Empty value allowed]**：授权空值。因此，会插入 NULL 值。
    * **[!UICONTROL Always populated]**：如果值为空，则生成错误。
 
-* **[!UICONTROL Length]**:指定字符串数据类型的最 **** 大字符数。
+* **[!UICONTROL Length]**:指定stringdata类型的最大字 **** 符数。
 * **[!UICONTROL Format]**:定义时间和日期格式。
 * **[!UICONTROL Data transformation]**:定义是否需要对字符串应用字符大小写 **过程**。
 
-   * **[!UICONTROL None]**:导入的字符串不会被修改。
-   * **[!UICONTROL First letter in upper case]**:字符串每个单词的第一个字母以大写开头。
-   * **[!UICONTROL Upper case]**:字符串中的所有字符都以大写形式出现。
-   * **[!UICONTROL Lower case]**:字符串中的所有字符都采用小写形式。
+   * **[!UICONTROL None]**:导入的字符串未修改。
+   * **[!UICONTROL First letter in upper case]**:带大写的字符串开始的每个单词的第一个字母。
+   * **[!UICONTROL Upper case]**:字符串中的所有字符均为大写。
+   * **[!UICONTROL Lower case]**:字符串中的所有字符均以小写字母形式显示。
 
 * **[!UICONTROL White space management]**:指定字符串中是否需要忽略某些空格。**[!UICONTROL Ignore spaces]**&#x200B;值只允许忽略字符串开头和结尾的空格。
 * **[!UICONTROL Error processings]**：定义遇到错误时的行为。
@@ -78,50 +78,50 @@ ht-degree: 15%
    * **[!UICONTROL Use a default value in case the value is not remapped]**:将导致错误的值替换为默认值(在字段中 **[!UICONTROL Default value]** 定义)，除非为错误值定义了映射(请参 **[!UICONTROL Mapping]** 阅下面的选项)。
 
 * **[!UICONTROL Default value]**：根据所选的错误处理指定默认值。
-* **[!UICONTROL Mapping]**:此字段仅在列详细信息配置中可用（可通过双击或列列表右侧的选项访问）。当导入某些值时，这将变换这些值。 例如，您可以将“three”转换为“3”。
+* **[!UICONTROL Mapping]**:此字段仅在列详细信息配置中可用(通过多次单击或列列表右侧的选项访问)。导入某些值时，这会转换这些值。 例如，您可以将“three”转换为“3”。
 
 ## 示例：收集数据并将其加载到数据库{#example--collecting-data-and-loading-it-in-the-database}中
 
-下面的示例允许您每天在服务器上收集文件，加载其内容，并根据其包含的信息更新数据库中的数据。 要收集的文件包含客户的信息，这些客户可能已购买（3000欧元以上）、要求购买时退款，或者未购买任何商品就去了商店。 根据此信息，各种进程将应用于数据库中的其配置文件。
+以下示例允许您每天在服务器上收集文件、加载其内容并根据其包含的信息更新数据库中的数据。 要收集的文件包含客户的信息，这些客户可能已购买（价格在3000欧元以上）、要求购买时退款，或者在没有购买任何商品的情况下访问商店。 根据此信息，各种进程将应用于其用户档案库中的进程。
 
 ![](assets/s_advuser_load_file_sample_0.png)
 
-1. 文件收集器允许您恢复存储在目录中的文件，具体取决于给定的频率。
+1. 通过文件收集器可以恢复存储在目录中的文件，具体取决于给定的频率。
 
-   **[!UICONTROL Directory]**&#x200B;选项卡包含有关要恢复的文件的信息。 在我们的示例中，将恢复名称包含单词“customers”且存储在服务器的tmp/Adobe/Data/files目录中的所有文本格式的文件。
+   **[!UICONTROL Directory]**&#x200B;选项卡包含有关要恢复的文件的信息。 在我们的示例中，将恢复名称包含单词“customers”且存储在服务器tmp/Adobe/Data/files目录中的所有文本格式的文件。
 
-   [文件收集器](../../workflow/using/file-collector.md)部分详细介绍了使用&#x200B;**[!UICONTROL File collector]**。
+   使用&#x200B;**[!UICONTROL File collector]**&#x200B;在[文件收集器](../../workflow/using/file-collector.md)部分中有详细说明。
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
-   使用&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡可以安排收集器的执行，即指定检查这些文件存在的频率。
+   使用&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡可以计划收集器的执行，即指定检查这些文件存在的频率。
 
-   这里，我们希望每个工作日晚上9点触发收集器。
+   这里，我们希望在每个工作日晚上9点触发收集器。
 
    ![](assets/s_advuser_load_file_sample_2.png)
 
-   为此，请单击编辑工具右下角的&#x200B;**[!UICONTROL Change...]**&#x200B;按钮并配置计划。
+   为此，请单击编辑工具右下方的&#x200B;**[!UICONTROL Change...]**&#x200B;按钮并配置计划。
 
    有关详细信息，请参阅[调度程序](../../workflow/using/scheduler.md)。
 
-1. 然后配置数据加载（文件）活动，以指示如何读取收集的文件。 为此，请选择一个与要加载的文件具有相同结构的示例文件。
+1. 然后，配置数据加载（文件）活动以指示如何读取所收集的文件。 为此，请选择一个与要加载的文件结构相同的示例文件。
 
    ![](assets/s_advuser_load_file_sample_3.png)
 
    此处，文件包含五列：
 
-   * 第一列包含与事件一致的代码：购买（3000欧元以上），一次或多次购买时不得退款。
+   * 第一列包含与事件一致的代码：购买（大于或小于3,000欧元），不购买或退款一次或多次购买。
    * 以下四列包含客户端的名字、姓氏、电子邮件和帐号。
 
-   要加载的文件的格式配置与在Adobe Campaign数据导入期间定义的格式配置一致。 有关更多信息，请参阅此](../../platform/using/importing-data.md#step-2---source-file-selection)章节[。
+   要加载的文件的格式配置与在Adobe Campaign中导入数据时定义的格式配置一致。 有关更多信息，请参阅此](../../platform/using/executing-import-jobs.md#step-2---source-file-selection)章节[。
 
-1. 在拆分活动中，根据&#x200B;**Event**&#x200B;列值指定要创建的子集。
+1. 在拆分活动中，根据&#x200B;**事件**&#x200B;列值指定要创建的子集。
 
-   “拆分”活动详见一节。
+   “拆分”活动在一节中详细介绍。
 
    ![](assets/s_advuser_load_file_sample_4.png)
 
-   对于每个子集，指定&#x200B;**Event**&#x200B;列中的值之一。
+   对于每个子集，在&#x200B;**事件**&#x200B;列中指定一个值。
 
    ![](assets/s_advuser_load_file_sample_5.png)
 
@@ -129,7 +129,7 @@ ht-degree: 15%
 
    ![](assets/s_advuser_load_file_sample_6.png)
 
-1. 然后，指定要针对每种类型的填充执行的进程。 在我们的示例中，我们将转到数据库中的&#x200B;**[!UICONTROL Update the data]**。 为此，将&#x200B;**[!UICONTROL Update data]**&#x200B;活动放置在拆分活动的每个出站转换的末尾。
+1. 然后，指定要针对每种类型的人群执行的流程。 在我们的示例中，我们将转到数据库中的&#x200B;**[!UICONTROL Update the data]**。 为此，将&#x200B;**[!UICONTROL Update data]**&#x200B;活动放在拆分活动中每个出站过渡的末尾。
 
-   **[!UICONTROL Update data]**&#x200B;活动在[更新数据](../../workflow/using/update-data.md)部分中详细介绍。
+   **[!UICONTROL Update data]**&#x200B;活动在[更新数据](../../workflow/using/update-data.md)一节中详细介绍。
 
