@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '2926'
 ht-degree: 1%
@@ -455,7 +455,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关导出的详细信息，请参阅[快速入门](../../platform/using/generic-imports-and-exports.md)部分。
+>有关导出的详细信息，请参阅[快速入门](../../platform/using/get-started-data-import-export.md)部分。
 
 #### 教程视频{#create-email-video}
 
