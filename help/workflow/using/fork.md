@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: d35b22386bd2681ba02e4379c627821b35a7d04e
+source-git-commit: e5f718908d0bb6893e54c51700865ecda09c80db
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 0%
+source-wordcount: '196'
+ht-degree: 1%
 
 ---
 
@@ -28,11 +28,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->请记住，在Fork过渡后添加的出站活动不会同时执行。
->
->因此，不应使用该活动来改进工作流的性能，而应独立执行多个活动，并最终在执行其余的工作流之前将它们连接在一起。
+>在&#x200B;**[!UICONTROL Fork]**&#x200B;活动&#x200B;**后添加的出站过渡不会同时执行。**&#x200B;此行为会影响工作流的性能。 如果您需要独立执行多个活动，请使用此活动，并最终在执行其余的工作流之前将它们连接在一起。
 
-要配置活动，请打开该过渡，然后定义所需出站的编号和标签。
+要配置&#x200B;**[!UICONTROL Fork]**&#x200B;活动，请打开它，定义出站过渡的编号和标签。
 
 ![](assets/s_user_segmentation_fork.png)
 
