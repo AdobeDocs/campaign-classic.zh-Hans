@@ -81,7 +81,7 @@ ht-degree: 94%
       + 管理数据加密和压缩{managing-data-encryption-compression}
          + [在处理文件之前解压缩或解密文件](platform/using/unzip-decrypt.md)
          + [在处理之前压缩或加密文件](platform/using/zip-encrypt.md)
-      + 最佳实践和{最佳实践}疑难解答
+      + 最佳实践和疑难解答{best-practices}
          + [导入和导出最佳实践](platform/using/import-export-best-practices.md)
          + [SFTP服务器最佳实践和疑难解答](platform/using/sftp-server-usage.md)
    + 筛选数据 {#filtering-data}
