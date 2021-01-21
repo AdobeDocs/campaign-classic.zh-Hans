@@ -6,11 +6,11 @@ description: 最新 Campaign Classic 发行说明
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1911'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 96%
 
 ## ![](assets/do-not-localize/blue_2.png) 版本 20.3.3 - 版本 9234 {#release-20-3-3-build-9234}
 
-_2021年1月11日_
+_2021 年 1 月 11 日_
 
-* 修复了一个安全问题，以增强针对服务器端请求伪造(SSRF)问题的保护。 (NEO-27777)
-* 修复了与广播生成过程相关的回归问题，该问题可能导致MTA进程崩溃。
+* 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
+* 修复了与 broadlog 生成过程相关的回归问题，该问题可能导致 MTA 进程崩溃。
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.3.1 - 版本 9228 {#release-20-3-1-build-9228}
 
@@ -74,7 +74,7 @@ _2020 年 10 月 27 日_
 
 >[!CAUTION]
 >
->此版本附带新的连接协议：2021年3月21日之后，活动服务器和客户端控制台都必须能够连接到活动。
+>此版本附带新的连接协议：2021 年 3 月 21 日之后，活动服务器和客户端控制台都必须能够连接到活动。
 
 **安全性增强**
 
@@ -105,7 +105,7 @@ Campaign 现在支持以下系统：
 **改进**
 
 * 已对&#x200B;**客户端控制台**&#x200B;进行多项改进。
-   * 连接协议已经更新，以遵循新的 IMS 认证机制。服务器和客户端控制台升级是必需的，它们必须在2021年3月21日之后连接。
+   * 连接协议已经更新，以遵循新的 IMS 认证机制。必须对服务器和客户端控制台进行升级，它们必须在 2021 年 3 月 21 日之后连接。
    * 为防止与某些互联网安全 GPO 规则限制不兼容，Campaign 客户端控制台登录屏幕已替换为内置标准 Windows 表单。
    * 修复了使用 64 位客户端控制台在工作流中复制/粘贴活动时的问题。(NEO-27635)
    * 在&#x200B;**关于**&#x200B;菜单中，已添加信息来区分 64 位和 32 位控制台。
