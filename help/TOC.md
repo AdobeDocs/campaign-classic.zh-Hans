@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ef502c023918baa1ae56b9619c7ab488ddf909e3
+source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
 workflow-type: tm+mt
-source-wordcount: '2293'
-ht-degree: 94%
+source-wordcount: '2290'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 94%
    + 导入和导出数据 {#importing-and-exporting-data}
       + [数据导入和导出入门](platform/using/get-started-data-import-export.md)
       + [使用工作流导入和导出数据](platform/using/import-export-workflows.md)
-      + 处理通用导入和导出{generic-imports-exports}
+      + 使用通用导入和导出{#generic-imports-exports}
          + [开始使用通用导入和导出](platform/using/about-generic-imports-exports.md)
          + [创建导入和导出模板](platform/using/creating-import-export-templates.md)
          + [创建导入和导出作业](platform/using/creating-import-export-jobs.md)
@@ -78,10 +78,10 @@ ht-degree: 94%
          + [配置导出作业](platform/using/executing-export-jobs.md)
          + [监视作业执行](platform/using/monitoring-jobs-execution.md)
          + [一般导入范例](platform/using/import-operations-samples.md)
-      + 管理数据加密和压缩{managing-data-encryption-compression}
+      + 管理数据加密和压缩{#managing-data-encryption-compression}
          + [在处理文件之前解压缩或解密文件](platform/using/unzip-decrypt.md)
          + [在处理之前压缩或加密文件](platform/using/zip-encrypt.md)
-      + 最佳实践和疑难解答{best-practices}
+      + 最佳实践和疑难解答{#best-practices}
          + [导入和导出最佳实践](platform/using/import-export-best-practices.md)
          + [SFTP服务器最佳实践和疑难解答](platform/using/sftp-server-usage.md)
    + 筛选数据 {#filtering-data}
@@ -129,8 +129,8 @@ ht-degree: 94%
    + 在手机上发送邮件 {#sending-messages-on-mobiles}
       + [SMS 渠道](delivery/using/sms-channel.md)
       + [LINE 渠道](delivery/using/line-channel.md)
-      + [短信连接器协议和设置](delivery/using/sms-protocol.md)
-      + [短信疑难解答](delivery/using/troubleshooting-sms.md)
+      + [SMS 连接器协议和设置](delivery/using/sms-protocol.md)
+      + [SMS 疑难解答](delivery/using/troubleshooting-sms.md)
    + 发送推送通知 {#sending-push-notifications}
       + [关于移动应用程序渠道](delivery/using/about-mobile-app-channel.md)
       + [将 Campaign SDK 集成到移动应用程序](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
@@ -618,7 +618,7 @@ ht-degree: 94%
       + [创建和配置数据库](installation/using/creating-and-configuring-the-database.md)
       + [Campaign 服务器配置](installation/using/campaign-server-configuration.md)
       + [部署实例](installation/using/deploying-an-instance.md)
-      + [安装Campaign Classic内置包](installation/using/installing-campaign-standard-packages.md)
+      + [安装 Campaign Classic 内置软件包](installation/using/installing-campaign-standard-packages.md)
    + 其他配置 {#additional-configurations}
       + [配置 Campaign 服务器](installation/using/configuring-campaign-server.md)
       + [通过 LDAP 连接](installation/using/connecting-through-ldap.md)
@@ -685,7 +685,7 @@ ht-degree: 94%
       + [应用程序对象](production/using/application-objects.md)
    + 故障排除 {#troubleshooting-toc}
       + [生产疑难解答概述](production/using/troubleshooting.md)
-      + 常见和一般问题{#common-general-issues-toc}
+      + 常见问题和一般问题{#common-general-issues-toc}
          + [模块和常见问题](production/using/modules-and-frequent-issues.md)
          + [工作流执行](production/using/workflow-execution.md)
          + [密码丢失](production/using/lost-password.md)
@@ -701,13 +701,13 @@ ht-degree: 94%
       + 数据库问题{#database-issues-toc}
          + [数据库性能](production/using/database-performances.md)
          + [Oracle 数据库的编码](production/using/encoding-of-the-oracle-database.md)
-      + 连接改进{#connection-improvements-toc}
+      + 连接改进功能{#connection-improvements-toc}
          + [连接失败](production/using/failure-to-connect.md)
          + [连接阈值](production/using/connection-thresholds.md)
       + 技术故障排除{#technical-troubleshooting-toc}
          + [Linux 中的堆栈跟踪](production/using/stack-trace-in-linux.md)
          + [JSP 行为](production/using/jsp-behavior.md)
-         + [查找Tomcat版本](production/using/locate-tomcat-version.md)
+         + [查找 Tomcat 版本](production/using/locate-tomcat-version.md)
 + 开发者指南 {#configuring-campaign-classic}
    + 数据模型 {#data-model}
       + [关于数据模型](configuration/using/about-data-model.md)
