@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 7478ae37aee5e8b0d9c904f5b9d810375d9d6481
+source-git-commit: 521bc3bf9b2507947007d7f458679275d407f910
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -188,3 +188,22 @@ Campaign Classic:
 观看此视频，了解如何在Office 365部署环境中将Dynamics 365与Adobe Campaign Classic集成。
 
 >[!VIDEO](https://video.tv.adobe.com/v/23837?quality=12)
+
+
+## 支持的字段数据类型{#ms-dyn-supported-types}
+
+对于Microsoft Dynamics 365，以下列出了支持／不支持的属性类型：
+
+
+| 属性类型 | 支持 |
+| --------------------------------------------------------------------------------- | --------- |
+| 基本类型：boolean,datetime, decimal, float,多次, integer, bigint，字符串 | 是 |
+| 货币(作为多次) | 是 |
+| memo、entityname、primarykey、uniqueidentifier(as strings) | 是 |
+| 状态、选择列表(我们以明细列表存储可能的值)、状态（字符串） | 是 |
+| owner（作为字符串） | 是 |
+| 查找（仅单个实体引用查找） | 是 |
+| 客户 | 否 |
+| 关于 | 否 |
+| PartyList | 否 |
+| ManagedProperty | 否 |
