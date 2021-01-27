@@ -6,11 +6,11 @@ description: 最新 Campaign Classic 发行说明
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
-workflow-type: ht
-source-wordcount: '1911'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+workflow-type: tm+mt
+source-wordcount: '1937'
+ht-degree: 97%
 
 ---
 
@@ -31,6 +31,17 @@ _2021 年 1 月 11 日_
 ## ![](assets/do-not-localize/red_2.png) 版本 20.3.1 - 版本 9228 {#release-20-3-1-build-9228}
 
 _2020 年 10 月 27 日_
+
+>[!CAUTION]
+>
+> * 此版本附带新的连接协议：如果您通过活动标识服务(IMS)连接到Adobe，则活动服务器和客户端控制台都必须进行升级，才能在2021年3月21日&#x200B;**之后连接到活动。**
+   >
+   > 
+* 此版本附带安全修复：升级是强制性的，以增强环境安全性。
+
+>
+
+
 
 **新增功能**
 
@@ -71,10 +82,6 @@ _2020 年 10 月 27 日_
 </tr> 
 </tbody> 
 </table>
-
->[!CAUTION]
->
->此版本附带新的连接协议：2021 年 3 月 21 日之后，活动服务器和客户端控制台都必须能够连接到活动。
 
 **安全性增强**
 
