@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -22,10 +22,12 @@ ht-degree: 0%
 利用该数字内容编辑器，您可以插入页面元素并设置其格式，以及将数据库字段与HTML页面的元素进行映射。 为Web应用程序创建页面或根据投放模板创建数字内容编辑器时，可以使用此编辑器。
 
 >[!NOTE]
->>如果需要添加服务器端JavaScript代码，请使用个性化块。 [了解详情](../../delivery/using/personalization-blocks.md)。
 >
+>如果需要添加服务器端JavaScript代码，请使用个性化块。 [了解详情](../../delivery/using/personalization-blocks.md)。
+
 >[!CAUTION]
-所有外部资源都需要使用HTTPS URL进行引用。
+>
+>所有外部资源都需要使用HTTPS URL进行引用。
 
 ## 使用数字内容编辑器{#content-editor-general-operation}的关键步骤
 
@@ -43,7 +45,8 @@ ht-degree: 0%
 1. 发布Web 应用程序- [了解更多](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
-[本节](../../web/using/creating-a-landing-page.md)提供Web应用程序上下文中的完整实现示例。
+>
+>[本节](../../web/using/creating-a-landing-page.md)提供Web应用程序上下文中的完整实现示例。
 
 要创建&#x200B;**电子邮件投放**，您需要：
 
@@ -53,4 +56,5 @@ ht-degree: 0%
 1. 发送投放- [了解更多](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
-[此用例](../../web/using/use-case--creating-an-email-delivery.md)中提供电子邮件投放上下文中的完整实现示例。
+>
+>[此用例](../../web/using/use-case--creating-an-email-delivery.md)中提供电子邮件投放上下文中的完整实现示例。
