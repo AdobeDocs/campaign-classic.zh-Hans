@@ -5,10 +5,10 @@ product: campaign
 title: Adobe Campaign Classic 产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 60%
+source-wordcount: '292'
+ht-degree: 59%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 60%
 
 * **[通过IMS/Adobe ID连接？升级到最新版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS连接到活动，则必须升级才能在2021年3月21日**&#x200B;之后连接到活动。**
 
-* **[活动安](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> 全公告更新到最新版本以保护活动平台。
+* **[保护活动实](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> 例更新到最新版本以保护活动平台。
 
 * **[删除错误硬跳](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> 回了解如何在Gmail中断后更新错误硬跳回
 
