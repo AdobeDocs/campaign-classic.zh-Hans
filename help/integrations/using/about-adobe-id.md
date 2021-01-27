@@ -7,15 +7,17 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 31%
+source-wordcount: '194'
+ht-degree: 24%
 
 ---
 
 
 # 关于Adobe ID{#about-adobe-id}
+
+AdobeIdentity Management系统(IMS)帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的AdobeID的详细信息，请参阅[此页](https://helpx.adobe.com/enterprise/using/identity.html)。
 
 活动用户可以使用其Adobe ID连接到Adobe Campaign控制台。 该集成具有以下优势︰
 
@@ -24,11 +26,21 @@ ht-degree: 31%
 * 密码管理策略更安全。
 * 使用联合 ID 帐户（外部 ID 提供商）。
 
-AdobeIdentity Management系统(IMS)帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的AdobeID的详细信息，请参阅[此页](https://helpx.adobe.com/enterprise/using/identity.html)。
 
 >[!IMPORTANT]
 >
->AdobeIMS实施严格保留给Adobe技术管理员。 与Adobe主管联系以开始实施过程。
+>如果您通过活动身份服务(IMS)连接到Adobe，则需要升级到最新版本，才能在2021年3月21日&#x200B;**之后连接到活动。** 此升级对于活动服务器和客户端控制台都是强制的。 根据您当前的版本，您必须升级到以下某个版本：
+>
+> * [活动金标11](../../rn/using/gold-standard.md)
+> * [活动20.3.3](../../rn/using/latest-release.md)
+> * [活动20.2.4](../../rn/using/release--20-2.md)
+> * [活动20.1.4](../../rn/using/release--20-1.md)
+> * [活动19.2.4](../../rn/using/release--19-2.md)
+> * [活动19.1.8](../../rn/using/release--19-1.md)
+
+>
+
+
 
 ## 相关主题
 
