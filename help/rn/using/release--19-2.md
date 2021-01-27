@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 8%
+source-wordcount: '1402'
+ht-degree: 9%
 
 ---
 
@@ -19,14 +19,22 @@ ht-degree: 8%
 
 ## ![](assets/do-not-localize/limited_2.png) 版本 19.2.4 - 版本 9082 {#release-19-2-4-build-9082}
 
-_2020年12月23日_
+_2020 年 12 月 23 日_
 
 >[!CAUTION]
 >
->此版本附带新的连接协议： 2021年3月21日之后，活动服务器和客户端控制台都必须能够连接到活动。
+> * 此版本附带新的连接协议：如果您通过活动标识服务(IMS)连接到Adobe，则活动服务器和客户端控制台都必须进行升级，才能在2021年3月21日&#x200B;**之后连接到活动。**
+   >
+   > 
+* 此版本附带安全修复：升级是强制性的，以增强环境安全性。
 
-* 已更新连接协议以遵循新的IMS身份验证机制。
-* 修复了一个安全问题，以增强针对服务器端请求伪造(SSRF)问题的保护。 (NEO-27777)
+>
+
+
+
+
+* 连接协议已经更新，以遵循新的 IMS 认证机制。
+* 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.2.3 - 版本 9081 {#release-19-2-3-build-9081}
 
