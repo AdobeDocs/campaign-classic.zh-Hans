@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '3061'
-ht-degree: 18%
+source-wordcount: '3087'
+ht-degree: 20%
 
 ---
 
@@ -19,18 +19,26 @@ ht-degree: 18%
 
 ## ![](assets/do-not-localize/limited_2.png) 版本 19.1.8 - 版本 9039 {#release-19-1-8-build-9039}
 
-_2020年12月16日_
+_2020 年 12 月 16 日_
 
 >[!CAUTION]
 >
->此版本附带新的连接协议： 2021年3月21日之后，活动服务器和客户端控制台都必须能够连接到活动。
+> * 此版本附带新的连接协议：如果您通过活动标识服务(IMS)连接到Adobe，则活动服务器和客户端控制台都必须进行升级，才能在2021年3月21日&#x200B;**之后连接到活动。**
+   >
+   > 
+* 此版本附带安全修复：升级是强制性的，以增强环境安全性。
+
+>
+
+
+
 
 **改进**
 
-* 已更新连接协议以遵循新的IMS身份验证机制。
+* 连接协议已经更新，以遵循新的 IMS 认证机制。
 * 触发最初基于oAUTH身份验证设置的集成身份验证以访问管道已更改并移至Adobe I/O。[了解更多信息](../../integrations/using/configuring-adobe-io.md)
-* 在iOS APNs旧版二进制协议支持结束后，在配置升级期间，使用此协议的所有实例都更新为HTTP/2协议。
-* 修复了一个安全问题，以增强针对服务器端请求伪造(SSRF)问题的保护。 (NEO-27777)
+* 在 iOS APNs 旧版二进制协议支持结束后，在配置升级期间，使用此协议的所有实例全部更新为 HTTP/2 协议。
+* 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
 * 修复了在连接错误后导致SMPP连接器取消激活的问题，从而阻止发送其他SMS投放并导致性能问题。
 * 修复了在通过工作流活动生成描述性报告时显示错误百分比的问题。 (NEO-14314)
 * 修复了未选择“在投放&#x200B;**期间排除重复地址”选项时的投放准备问题。**(NEO-13240)
