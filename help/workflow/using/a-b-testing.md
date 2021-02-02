@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98a2c5aa01b4d45ceeb14fb1ad7a607b236c2817
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1337'
 ht-degree: 1%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 1%
 * [第3步：创建两个投放模板](#step-3--creating-two-delivery-templates)
 * [第4步：在工作流中配置投放](#step-4--configuring-the-deliveries-in-the-workflow)
 * [第5步：创建脚本](#step-5--creating-the-script)
+* [第6步：定义最终投放](#step-6--defining-the-final-delivery)
 * [第7步：启动工作流](#step-7--starting-the-workflow)
 * [第8步：分析结果](#step-8--analyzing-the-result)。
 
@@ -49,7 +50,7 @@ ht-degree: 1%
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. 更改现有工作流的标签或单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建新工作流（有关详细信息，请参阅此[部分](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)）。
+1. 更改现有工作流的标签，或单击&#x200B;**[!UICONTROL Add]**&#x200B;创建新工作流。
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
@@ -183,7 +184,7 @@ ht-degree: 1%
 
 ### 脚本{#example-of-a-script}的示例
 
-以下脚本可以像在定位工作流中一样使用。 有关详细信息，请参阅[实施](#implementation)。
+以下脚本可以像在定位工作流中一样使用（请参阅[配置脚本](../../workflow/using/a-b-testing.md#configuring-script)）。
 
 ```
  // query the database to find the winner (best open rate)
@@ -229,12 +230,12 @@ ht-degree: 1%
    vars.deliveryId = delivery.id
 ```
 
-有关脚本的详细说明，请参阅脚本的[详细信息](#details-of-the-script)。
+有关脚本的详细说明，请参阅[本节](../../workflow/using/a-b-testing.md#details-of-the-script)。
 
-### 实现{#implementation}
+### 配置脚本{#configuring-script}
 
 1. 打开&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动。
-1. 将[脚本示例](#example-of-a-script)中提供的脚本复制到&#x200B;**[!UICONTROL JavaScript code]**&#x200B;窗口中。
+1. 将先前显示的[脚本](../../workflow/using/a-b-testing.md#example-of-a-script)复制到&#x200B;**[!UICONTROL JavaScript code]**&#x200B;窗口中。
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
