@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 85fae38f864b031f069058dae79ce6753dc4bf03
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '377'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 连接问题的原因可能是多个，并取决于各种上下文。
 
-您可以尝试以下测试，如果连接故障仍然存在，请与&#x200B;**Adobe Campaign支持**&#x200B;联系。
+您可以尝试以下测试，如果连接故障仍然存在，请与[Adobe客户服务中心](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。
 
 
 
