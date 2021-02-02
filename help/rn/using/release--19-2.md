@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1416'
 ht-degree: 9%
 
 ---
@@ -26,10 +26,7 @@ _2020 年 12 月 23 日_
 > * 此版本附带新的连接协议：如果您通过活动标识服务(IMS)连接到Adobe，则活动服务器和客户端控制台都必须进行升级，才能在2021年3月21日&#x200B;**之后连接到活动。**
    >
    > 
-* 此版本附带安全修复：升级是强制性的，以增强环境安全性。
-
->
-
+* 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html):升级是强制性的，以增强环境安全性。
 
 
 
@@ -145,7 +142,7 @@ _弃用的系统_
 
 _活动移动SDK_
 
-iOS SDK的内部版本1.0.26现已可用。 在此新版本中，我们增加了对iOS 13的支持。 此新版本现在支持iOS 13推送通知的通知优先级和新的注册令牌管理流程。 如果您在SDK的先前版本上运行应用程序，则需要使用新的SDK重新编译应用程序。 要获取SDK，请与Adobe客户关怀联系。
+iOS SDK的内部版本1.0.26现已可用。 在此新版本中，我们增加了对iOS 13的支持。 此新版本现在支持iOS 13推送通知的通知优先级和新的注册令牌管理流程。 如果您在SDK的先前版本上运行应用程序，则需要使用新的SDK重新编译应用程序。 要获取SDK，请联系[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **修补程序**
 
