@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '563'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 2%
 >
 >我们强烈建议创建专用于AEM的安全区，以避免出现任何安全问题。 有关详细信息，请参阅安装[指南](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
 
-如果活动实例由Adobe托管，请与Adobe支持团队联系。 如果您使用活动内部部署，请按照以下步骤操作：
+如果活动实例由Adobe托管，请与[Adobe客户关怀团队](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。 如果您使用活动内部部署，请按照以下步骤操作：
 
 1. 打开&#x200B;**serverConf.xml**&#x200B;配置文件。
 1. 访问所选安全区域的&#x200B;**allowUserPassword**&#x200B;属性，并将其设置为&#x200B;**true**。
