@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: 为 Adobe Experience Cloud 触发器配置 Adobe I/O
-description: 了解如何为Adobe Experience Cloud触发器配置Adobe I/O
+description: 了解如何为Adobe Experience Cloud Triggers配置Adobe I/O
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
@@ -10,10 +10,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: ec03e5bfdacc16ce148b24e200b517d73fae00b3
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 5%
+source-wordcount: '484'
+ht-degree: 4%
 
 ---
 
@@ -23,10 +23,12 @@ ht-degree: 5%
 >[!CAUTION]
 >
 >如果您使用的是通过身份验证进行触发器集成的旧版本，则&#x200B;**您需要移至Adobe I/O，如下所述**。 旧版身份验证模式将于2021年4月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>
+>请注意，在迁至Adobe I/O期间，某些传入触发器可能会丢失。
 
 ## 先决条件{#adobe-io-prerequisites}
 
-此集成仅适用于从&#x200B;**Campaign Classic20.3和Gold Standard 11版本**&#x200B;开始。
+此集成仅适用于从&#x200B;**Campaign Classic20.3、20.2.4、19.1.8和Gold Standard 11版本**&#x200B;开始。
 
 在开始此实施之前，请检查您具有：
 
@@ -41,7 +43,7 @@ ht-degree: 5%
    >
    > 确保您已登录到正确的组织门户。
 
-1. 从实例配置文件ims/authIMSTAClientId提取现有集成客户端ID。 非现有或空属性表示未配置客户端标识符。
+1. 从实例配置文件ims/authIMSTAClientId提取现有集成客户端标识符（客户端ID）。 非现有或空属性表示未配置客户端标识符。
 
    >[!NOTE]
    >
@@ -63,7 +65,7 @@ ht-degree: 5%
 
    ![](assets/do-not-localize/adobe_io_3.png)
 
-1. 如果您的客户端ID为空，请选择&#x200B;**[!UICONTROL Generate a key pair]**&#x200B;以创建公共和专用密钥对。
+1. 如果您的客户端ID为空，请选择&#x200B;**[!UICONTROL Generate a key pair]**&#x200B;以创建公钥和私钥对。
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
@@ -83,17 +85,21 @@ ht-degree: 5%
 
    ![](assets/do-not-localize/adobe_io_7.png)
 
+>[!NOTE]
+>
+>Adobe I/O证书将在12个月后过期。 你每年都需要生成新的密钥对。
+
 ## 第2步：在Adobe Campaign{#add-credentials-campaign}中添加项目凭据
 
 要在Adobe Campaign中添加项目凭据，请在Adobe Campaign实例的所有容器上以“neolane”用户身份运行以下命令，以将&#x200B;**[!UICONTROL Technical Account]**&#x200B;凭据插入实例配置文件。
 
 ```
-nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID[/Client_Secret[/Base64_encoded_Private_Key]]
+nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
 >[!NOTE]
 >
->您应以base64 UTF-8格式对私钥进行编码。 在编码新行之前，请记住从密钥中删除新行，但私钥除外。 私钥必须与用于创建集成的私钥相同。
+>您应以base64 UTF-8格式对私钥进行编码。 编码新行之前，请记住从密钥中删除新行，私钥除外。 私钥必须与用于创建集成的私钥相同。 要测试私钥的base64编码，可使用[此网站](https://www.base64encode.org/)。
 
 ## 第3步：更新管道标记{#update-pipelined-tag}
 
