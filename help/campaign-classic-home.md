@@ -1,13 +1,13 @@
 ---
-keywords: Campaign Classic;home;popular topics
+keywords: Campaign Classic；主页；热门主题
 solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic 产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '296'
 ht-degree: 59%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 59%
 
 ## 新增功能
 
-* **[通过IMS/Adobe ID连接？升级到最新版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS连接到活动，则必须升级才能在2021年3月21日**&#x200B;之后连接到活动。**
+* **[通过IMS/Adobe ID连接？升级到最新版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS连接到活动，则必须升级才能在2021年3月31日**&#x200B;之后连接到活动。**
 
 * **[保护活动实](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> 例更新到最新版本以保护活动平台。
 
