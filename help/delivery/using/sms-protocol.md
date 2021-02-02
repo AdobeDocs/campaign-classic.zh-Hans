@@ -1,20 +1,20 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: SMS连接器协议和设置
+title: SMS 连接器协议和设置
 description: 进一步了解SMS连接器以及如何配置它。
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 9a104fdc7bed89f56178d5ab638e1440e6342efc
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '8424'
+source-wordcount: '8433'
 ht-degree: 0%
 
 ---
 
-# SMS连接器协议和设置{#sms-connector-protocol}
+# SMS 连接器协议和设置 {#sms-connector-protocol}
 
 >[!NOTE]
 >
@@ -819,7 +819,7 @@ SMS流程每分钟检查完整行，然后异步处理：
 ### 在检查{#enable-verbose}期间启用详细的SMPP跟踪
 
 您应始终在检查期间启用详细的SMPP跟踪。
-即使您无法自己检查日志，支持人员也会更轻松地为您提供帮助。
+即使您无法自行检查日志，[Adobe客户服务中心](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)也会更轻松地为您提供帮助。
 
 ### 测试SMS {#test}
 
