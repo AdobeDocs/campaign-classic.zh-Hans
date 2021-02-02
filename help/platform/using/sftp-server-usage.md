@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 41%
+source-wordcount: '1102'
+ht-degree: 36%
 
 ---
 
@@ -98,11 +98,11 @@ SFTP服务器设计为临时存储空间，您可以在该空间控制文件的�
    >
    >Netcat 工具可让您在各种操作系统上轻松管理网络联机（请参见 [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)）。
 
-   如果端口未打开，请确保打开侧面的传出联机，然后重试。如果仍遇到连接问题，请与 Adobe 支持团队分享该命令的输出。
+   如果端口未打开，请确保打开侧面的传出联机，然后重试。如果仍然遇到连接问题，请与[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)团队共享命令输出。
 
 1. 检查您尝试从中启动SFTP连接的公共IP是否是您提供给Adobe支持的允许列表IP。
 1. 如果您使用基于密码的身份验证，则您的密码可能已过期（密码的有效期为90天）。 因此，强烈建议使用基于密钥的身份验证（请参阅[SFTP服务器最佳实践](#sftp-server-best-practices)）。
-1. 如果您使用的是基于密钥的身份验证，请检查您使用的密钥是否与提供给 Adobe 支持团队以用于实例配置的密钥相同。
+1. 如果您使用基于密钥的身份验证，请检查您使用的密钥是否与您提供给[Adobe客户服务团队](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以进行实例配置的密钥相同。
 1. 如果您使用的是 FileZilla 或类似的 FTP 工具，请在支持票证中提供联机日志详细信息。
 
 ## “无法解析主机名”错误
