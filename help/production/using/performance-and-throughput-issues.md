@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '692'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 本[页面](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)详细介绍了内部部署Campaign Classic的硬件要求的一般准则。
 
-咨询团队可以为托管客户提供一个工具，它允许您轻松视图数据库中各种类型的表使用了多少空间以及SFTP站点上使用的空间。 它还提供允许您清除不必要数据的工具。 如果您需要实施此工具，请与咨询或支持团队联系。 下面是使用此工具检查的一些重要事项：
+咨询团队可以为托管客户提供一个工具，它允许您轻松视图数据库中各种类型的表使用了多少空间以及SFTP站点上使用的空间。 它还提供允许您清除不必要数据的工具。 如果您需要实施此工具，请与[Adobe客户服务部](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。 下面是使用此工具检查的一些重要事项：
 
 * 如果索引大小大于表大小，则需要真空。
 * 检查具有最大膨胀的表。 如果这些表格经常使用，则需要抽真空。
