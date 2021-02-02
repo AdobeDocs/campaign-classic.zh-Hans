@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d34435b0b8714a87add6a5e3f82e4f94376f205b
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 3%
+source-wordcount: '1189'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 Adobe Campaign工作流热图包含当前运行的所有工作流的颜色编码图形表示。 它仅对实例管理员可用。
 
-此页[中提供了监视不同活动进程的其他方法。](../../production/using/monitoring-guidelines.md)
+此页](../../production/using/monitoring-guidelines.md)中提供了监视不同活动进程的其他方法。[
 
 ## 关于工作流热图{#about-the-workflow-heatmap}
 
@@ -41,23 +41,6 @@ Adobe Campaign工作流热图包含当前运行的所有工作流的颜色编码
 使用Workflow HeatMap需要充分了解以下概念：[工作流](../../workflow/using/about-workflows.md)、[活动](../../workflow/using/about-activities.md)和[工作流最佳实践](../../workflow/using/workflow-best-practices.md)。
 
 默认情况下，从18.10版开始的Adobe Campaign中提供工作流热图。 如果您的内部版本介于8700和8977(18.10)之间，您还可以从此功能中受益。 要请求相应的软件包，请与[Adobe客户服务中心](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系，并按照[本页](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html)中的说明进行操作，了解如何安装它。
-
-首次访问Worklow HeatMap时，将显示以下弹出窗口。 本协议允许在美国进行转让和存储，允许Adobe Campaign:
-
-* 监视实例以调查任何性能问题。
-* 收集数据以进行异常检测。
-
-请注意，只有使用Adobe ID连接到Adobe Campaign的用户才能传输数据。
-
-![](assets/wf_monitoring_agreement.png)
-
-有三个选项可用：
-
-* **[!UICONTROL Accept]** :接受本协议后，即授权Adobe Campaign收集您的数据并将其传输到美国，以便在发现异常时为您提供帮助。
-* **[!UICONTROL Refuse]** :通过拒绝协议，您的数据将不会传输，但您仍可以使用工作流热图。
-* **[!UICONTROL Do not show this message again]** :通过单 **[!UICONTROL Do not show this message again]** 击，在访问工作流热图时，弹出窗口将停止显示，但仍可通过该按钮 **[!UICONTROL Term of use]** 显示。
-
-此选项不是最终选项，您始终可以单击&#x200B;**[!UICONTROL Term of use]**&#x200B;按钮来更改它。
 
 ## 使用热图{#using-the-heatmap}
 
