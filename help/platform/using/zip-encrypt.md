@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '538'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Adobe Campaign允许您导出压缩或加密文件。 通过&#x200B;**[!UICONTRO
    >
    >控制面板适用于在AWS上托管的所有客户（预先托管其营销实例的客户除外）。
 
-1. 如果Adobe Campaign安装由Adobe托管，请与Adobe客户服务部门联系，在服务器上安装必要的实用程序。
+1. 如果Adobe Campaign安装由Adobe托管，请与[Adobe客户服务中心](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系，在服务器上安装必要的实用程序。
 1. 如果您的Adobe Campaign安装是事先安装的，请安装您要使用的实用程序(例如：GPG、GZIP)以及应用程序服务器上必需的密钥（加密密钥）。
 
 然后，您可以在活动的&#x200B;**[!UICONTROL Script]**&#x200B;选项卡或&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动中使用命令或代码。 在下面的用例中给出一个示例。
