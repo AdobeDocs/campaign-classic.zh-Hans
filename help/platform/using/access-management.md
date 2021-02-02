@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
+source-git-commit: c24cdd21c2426ea12a1cbd76d78154256bc814c8
 workflow-type: tm+mt
-source-wordcount: '2984'
+source-wordcount: '3019'
 ht-degree: 2%
 
 ---
@@ -104,7 +104,7 @@ Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这�
 
 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，可以选择运算符的时区。 默认情况下，操作符在服务器时区中工作。 但是，可以使用下拉列表选择其他时区。
 
-此页[中介绍了时区配置。](../../installation/using/time-zone-management.md)
+此页](../../installation/using/time-zone-management.md)中介绍了时区配置。[
 
 >[!NOTE]
 >
@@ -123,6 +123,11 @@ Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这�
 通过&#x200B;**[!UICONTROL Edit the access parameters...]**&#x200B;链接可访问以下选项：
 
 * 使用&#x200B;**[!UICONTROL Disable account]**&#x200B;选项可以禁用操作员的帐户：他不会再去Adobe Campaign。
+
+   >[!NOTE]
+   >
+   >即使禁用了该帐户，操作员仍可接收来自活动的警报或通知。 要停止向此操作员发送活动通知，Adobe建议您从其用户档案中删除电子邮件地址。
+
 * 通过&#x200B;**[!UICONTROL Forbid access from the rich client]**&#x200B;选项，可将Adobe Campaign的使用限制为[Web访问](../../platform/using/adobe-campaign-workspace.md#console-and-web-access)或通过API进行：对Adobe Campaign客户端控制台的访问不再可用。
 * 可以将安全区与操作员连接。 有关详细信息，请参见[此页面](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
 * 您还可以使用相应的链接定义可信的IP掩码。
