@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 9ee7ef1faf06c31ec6659734582caac099a01bc1
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '2440'
-ht-degree: 16%
+source-wordcount: '2446'
+ht-degree: 15%
 
 ---
 
@@ -297,7 +297,7 @@ Adobe Campaign消息服务器将单个&#x200B;**域管理**&#x200B;规则应用�
 * 可以选择是否激活某些标识标准和加密密钥来检查域名，如&#x200B;**发送者ID**、**域密钥**、**DKIM**&#x200B;和&#x200B;**S/MIME**。
 * 使用&#x200B;**SMTP relay**&#x200B;参数，可以为特定域配置中继服务器的IP地址和端口。 有关更多信息，请参阅[此章节](../../installation/using/configuring-campaign-server.md#smtp-relay)。
 
-如果邮件在Outlook中以发件人地址&#x200B;**[!UICONTROL on behalf of]**&#x200B;显示，请确保您没有使用&#x200B;**发件人ID**（来自Microsoft的过时专有电子邮件身份验证标准）对电子邮件进行签名。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;选项处于启用状态，请取消选中相应的框，并与Adobe Campaign支持联系。 您的可交付性不会受到影响。
+如果邮件在Outlook中以发件人地址&#x200B;**[!UICONTROL on behalf of]**&#x200B;显示，请确保您没有使用&#x200B;**发件人ID**（来自Microsoft的过时专有电子邮件身份验证标准）对电子邮件进行签名。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;选项处于启用状态，请取消选中相应的框，并与[Adobe客户服务中心](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。 您的可交付性不会受到影响。
 
 >[!IMPORTANT]
 >
