@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 1d7d48f52f69e4902eafa6806c2cd9170c21fe5a
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '280'
 ht-degree: 9%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 9%
 
 * 为Neotrips移动应用程序创建&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型信息服务。 有关iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service)，请参阅[此部分。 和[此部分用于Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service)。
 * 将应用程序的iOS和Android版本添加到此服务。
-* 为iOS和Android创建投放。 [请参阅此页面](../../delivery/using/creating-notifications.md).
+* 为iOS和Android创建投放。 [请参见此页面](../../delivery/using/creating-notifications.md)。
 
 ![](assets/nmac_service_diagram.png)
 
@@ -35,7 +35,7 @@ ht-degree: 9%
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何在视频中安装移动应用程序包](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
-作为混合／托管客户，请与Adobe客户关怀团队联系，以访问活动中的推送通知渠道。
+作为混合／托管客户，请与[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)团队联系，以访问活动中的推送通知渠道。
 
 作为预置型客户，您需要执行以下安装步骤：
 
