@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 * 更新订阅表单以检测输入的域名中的任何错误(例如：gmaul.com或yaho.com)。
 * 如果您注意到错误消息被声明为垃圾邮件或消息被持续阻止的错误，请尝试排除在目标过去12个月中未打开或单击某封邮件的收件人。
 
-如果问题仍然存在，请联系商业或可交付性服务、Adobe Campaign客户服务或Adobe Campaign支持。
+如果问题仍然存在，请联系商业或可交付性服务[Adobe客户服务](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 ## 阻止列表与隔离{#denylist-versus-quarantine}
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 发送方可以从其[反馈循环](../../delivery/using/technical-recommendations.md#feedback-loop)投诉中获得大量信息：
 * 必须存储数据，并在选择加入来源、地址订阅时间、甚至某些行为人口统计等方面寻找模式。
-* 投诉通常可以识别文件中有风险的数据源或细分。 “风险”是指最有可能抱怨的，这会损害声誉，进而会损害收件箱费率。
+* 投诉通常可以识别文件中有风险的数据源或细分。 “风险”被定义为最有可能抱怨的，这会损害声誉，进而会损害收件箱费率。
 
 投诉还来自那些不再希望接收电子邮件的订户：
 * 这通常可能是由于消息过多、用户对消息的感知、他们不期望消息，或者不记得选择加入。
