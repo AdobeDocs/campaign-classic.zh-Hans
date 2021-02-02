@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: SMS连接器协议和设置
+title: SMS 连接器协议和设置
 description: 进一步了解SMS连接器以及如何配置它。
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 96ad3208c792efb47097768bc779bec59d9ca313
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2751'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ Unicode允许许多类似字符的变体，而Adobe Campaign无法处理所有�
 
 要将Unicode转换为十六进制，可使用联机工具，如[Unicode代码转换器](https://r12a.github.io/app-conversion/)网站。 键入文本，确保没有电话号码等PII，然后单击&#x200B;**转换**。 您将在底部看到十六进制值（UTF-32区域）。
 
-打开有关编码问题的票证时(无论是提供者还是Adobe Campaign支持)，始终包含您键入的内容和所看到内容的十六进制版本。
+打开有关编码问题的票证时，无论是与提供商还是[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)，始终包含您键入的内容和所看到内容的十六进制版本。
 
 **第3步：了解您应发送的内容**
 
