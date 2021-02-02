@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 11377b0218e20da9b1a5398539ebaa192801b283
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '773'
 ht-degree: 2%
 
 ---
@@ -71,17 +71,12 @@ Signal Spam是一种法国服务，它为法国ISP(Orange, SFR)优惠匿名反�
 
 ## 技术交付性监控报告{#technical-deliverability-monitoring}
 
-通过导航到&#x200B;**[!UICONTROL Monitoring]** > **[!UICONTROL Overview]**&#x200B;并单击Adobe Campaign **[!UICONTROL Home]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Technical monitoring]**&#x200B;链接，技术可交付性监视报告将每天更新并可用。 它包括许多适用于您的平台的交付质量指标。
+**技术可交付性监控**&#x200B;报告包括许多适用于您的平台的可交付性质量指标。 您可以通过电子邮件收到此每日报告。 要请求它，请打开特定[支持案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)并指定：
 
-这些指标每天上午9点更新。
+* 实例的名称
+* 要将报告发送到
 
->[!NOTE]
->
->此外，您还可以通过电子邮件在指定的地址接收每日报告。 通过电子邮件或Adobe Campaign外部网告知我们请求的电子邮件地址。
-
-![](assets/s_tn_del_monitoring.png)
-
-报告中使用了以下指标：
+此报告包含以下指标：
 
 * **[!UICONTROL Reverse DNS]** :Adobe Campaign检查是否为IP地址提供反向DNS，并且这正确地指向IP。
 
@@ -92,6 +87,9 @@ Signal Spam是一种法国服务，它为法国ISP(Orange, SFR)优惠匿名反�
 * **[!UICONTROL IP and RBL domain]** (实时黑洞列表):列表IP地址和域，组织标记阻止列表其发送信誉不佳。这些列表由专用组织（如Spamhaus、Spampoc、SURBL/URIBL等）进行维护。 Adobe Campaign当前处理对RBL的检查，这些RBL对交付能力有显着影响。 这些RBL反映发送的声誉，在接受接收您的电子邮件前，可能会由ISP引用。
 
 * **[!UICONTROL SNDS]** （智能网络数据服务）:Windows  [Live Hotmail防垃圾邮件服务](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx)。Hotmail是唯一提供此类信息的ISP。 基准分数是一个绿色过滤结果，投诉率低于0.1%，垃圾邮件陷阱为零。
+
+这些指标每天上午9点更新。
+
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
