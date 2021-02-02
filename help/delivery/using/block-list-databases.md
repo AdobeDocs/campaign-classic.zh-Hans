@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
    请参阅[https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   数据库更重要。 在这一列表上保密通常是一种严重的情况。 如果发生这种情况，您必须立即采取行动，并警告商业服务、交付能力和Adobe Campaign支持。
+   数据库更重要。 在这一列表上保密通常是一种严重的情况。 如果发生这种情况，您必须立即采取行动并警告商业服务、可交付性和[Adobe客户服务中心](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 * **SpamCop**
 
@@ -43,13 +43,13 @@ ht-degree: 0%
 
    请参阅[https://www.uribl.com/](https://www.uribl.com/)
 
-   此列表标识在声明为垃圾邮件的邮件中定期显示的域。 如果您的域出现在此列表上，则可能会显着影响您的交付能力。 您应立即通知提供服务和Adobe Campaign支持。
+   此列表标识在声明为垃圾邮件的邮件中定期显示的域。 如果您的域出现在此列表上，则可能会显着影响您的交付能力。 您应立即通知提供服务和[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 * **SURBL**
 
    请参阅[http://www.surbl.org/](http://www.surbl.org/)
 
-   SURBL识别定期出现在垃圾邮件中的网站。 如果您的域出现在此列表上，则可能会显着影响您的交付能力。 您应立即通知提供服务和Adobe Campaign支持。
+   SURBL识别定期出现在垃圾邮件中的网站。 如果您的域出现在此列表上，则可能会显着影响您的交付能力。 您应立即通知提供服务和[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 * **iX Manitu**
 
