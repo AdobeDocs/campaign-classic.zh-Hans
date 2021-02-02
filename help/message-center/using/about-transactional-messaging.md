@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '171'
 ht-degree: 9%
 
 ---
@@ -29,4 +29,4 @@ Adobe Campaign消息中心模块被集成到一个信息系统中，该系统将
 
 >[!NOTE]
 >
->要为托管在Adobe云上的消息中心执行实例创建新用户，您需要联系Adobe客户服务。 消息中心用户是需要专用权限才能访问“实时事件”(nmsRtEvent)文件夹的特定操作员。
+>要为托管在Adobe云上的消息中心执行实例创建新用户，您需要联系[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 消息中心用户是需要专用权限才能访问“实时事件”(nmsRtEvent)文件夹的特定操作员。
