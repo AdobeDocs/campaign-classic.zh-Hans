@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 3105372bc020057727e28d26e7969c31ac290115
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1039'
 ht-degree: 86%
 
 ---
@@ -48,6 +48,8 @@ _2020 年 12 月 22 日_
 * 在iOS APNs旧二进制协议](https://developer.apple.com/news/?id=c88acm2b)的支持结束[后，使用此协议的所有实例在启动升级期间都更新为HTTP/2协议。
 
 * 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
+
+* 修复了在运行&#x200B;**扩充**&#x200B;活动时可能导致工作流失败的问题。(NEO-17338)
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 10 版本{#gs-10}
 
