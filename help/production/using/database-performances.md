@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -46,9 +46,9 @@ ht-degree: 8%
 
 确保正确计划和执行数据库维护。 为此，请与数据库管理员联系以进一步了解：
 
-* 维护计划,
-* 以前执行的维护计划，
-* 视图脚本日志。
+* 他们的维护计划
+* 先前执行的维护计划
+* 查看脚本日志
 
 如需详细信息，请参阅[此部分](../../production/using/recommendations.md)。
 
@@ -61,7 +61,7 @@ ht-degree: 8%
 请检查工作表的编号和大小。 超过一定大小时，数据库性能会受到影响。 这些表由工作流和投放创建。 工作流和投放处于活动状态时，它们仍保留在数据库中。 要限制工作表的大小，可以执行以下操作：
 
 * 停止或删除具有以下状态的投放:**[!UICONTROL Failed]**、**[!UICONTROL In progress]**、**[!UICONTROL Ready for delivery]**&#x200B;或&#x200B;**[!UICONTROL Paused]**。
-* 停止或删除因错误而暂停的工作流,
+* 停止或删除因错误而暂停的工作流。
 * 停止用于测试的所有工作流，这些活动不包含&#x200B;**[!UICONTROL End]**，因此其状态仍为&#x200B;**[!UICONTROL Paused]**。
 
 >[!IMPORTANT]
@@ -72,14 +72,13 @@ ht-degree: 8%
 
 根据Adobe Campaign安装设置，可以使用两种工具进行平台监视：
 
-* 实例生产页面。 有关详细信息，请参阅[手动监视](../../production/using/monitoring-processes.md#manual-monitoring)。
-* netreport脚本。 有关详细信息，请参阅[通过Adobe Campaign脚本自动监视](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)。
+* 实例生产页。 有关详细信息，请参阅[手动监视](../../production/using/monitoring-processes.md#manual-monitoring)。
+* *netreport*&#x200B;脚本。 有关详细信息，请参阅[通过Adobe Campaign脚本自动监视](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)。
 
 ## 具体信息{#specifics}
 
 可能需要进行实时诊断以确定问题的原因。 开始，方法是检查进程和平台日志文件，然后在重新创建问题时监视活动库。 请特别注意以下事项：
 
-* 维护执行计划，
-* 正在执行的SQL查询,
+* 维护执行计划
+* 正在执行的SQL查询
 * 是否同时运行外部进程(清理、导入、聚合计算等)。
-
