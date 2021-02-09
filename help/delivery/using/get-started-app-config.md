@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 965aee2e310dd7e35d7a65bf9a1bda5dc8eb0959
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 9%
+source-wordcount: '295'
+ht-degree: 8%
 
 ---
 
@@ -37,7 +37,13 @@ ht-degree: 9%
 
 作为混合／托管客户，请与[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)团队联系，以访问活动中的推送通知渠道。
 
-作为预置型客户，您需要执行以下安装步骤：
+作为预置型客户，您需要安装内置软件包。
+
+>[!CAUTION]
+>
+>了解有关活动内置包、最佳实践和建议的更多信息，请参阅本页](../../installation/using/installing-campaign-standard-packages.md)。[
+
+安装步骤有：
 
 1. 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;访问包导入向导。
 
