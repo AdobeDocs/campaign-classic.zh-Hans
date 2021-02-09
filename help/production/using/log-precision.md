@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
@@ -62,13 +62,13 @@ Adobe Campaign可以使用两个级别的日志操作：
 
 以下是特定于Web模块的示例。 其他模块如上所示运行。
 
-在发送此命令之前，请检查没有正在进行的作业会受到影响。
+在发送此命令之前，请检查没有正在进行的作业会受到影响：
 
 ```
 nlserver pdump -who
 ```
 
-然后，在&#x200B;**TraceFilter**&#x200B;模式下关闭并重新启动模块。
+接下来，在&#x200B;**TraceFilter**&#x200B;模式下关闭并重新启动模块：
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
