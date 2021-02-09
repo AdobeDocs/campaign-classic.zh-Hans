@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5fa848d86f951cb9dc40eb7981abea29c1092291
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1304'
+ht-degree: 2%
 
 ---
 
@@ -69,7 +69,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 >
 >当未发送电子邮件的状态时，deliveryID和broadlogID来自中间源服务器。 状态更改为&#x200B;**[!UICONTROL Sent]**&#x200B;后，这些ID来自营销服务器。
 
-### 参数{#parameters}
+### 参数 {#parameters}
 
 定义本地文件夹路径后，根据&#x200B;**config-`<instance name>.xml`**&#x200B;文件中的需要添加和编辑以下元素。 以下是默认值：
 
@@ -102,7 +102,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 ## 配置密送电子邮件地址（内部部署）{#configuring-the-bcc-email-address--on-premise-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >出于隐私原因，密件抄送电子邮件必须由能够安全地存储个人身份信息(PII)的存档系统处理。
 
@@ -125,7 +125,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 ## 正在移至新的电子邮件密送{#updated-email-archiving-system--bcc-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >电子邮件归档系统(BCC)随Adobe Campaign17.2（内部版本8795）而发生更改。 如果您从旧版本升级并且已经使用电子邮件归档功能，则必须手动升级到新的电子邮件归档系统(BCC)。
 
