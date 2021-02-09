@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
-source-wordcount: '2446'
-ht-degree: 15%
+source-wordcount: '2572'
+ht-degree: 14%
 
 ---
 
@@ -23,7 +23,9 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->电子邮件错误消息（或“弹回”）由inMail流程限定。 短信错误消息（或“状态报告”的“SR”）由 MTA 进行鉴别。
+>**电子邮件**&#x200B;错误消息（或“退件”）由 Enhanced MTA（同步退回）或 inMail 进程（异步退回）进行鉴别。
+>
+>**短信**&#x200B;错误消息（或“状态报告”的“SR”）由 MTA 进行鉴别。
 
 发送消息后，投放日志允许您视图每个用户档案的投放状态以及关联的故障类型和原因。
 
@@ -184,9 +186,13 @@ ht-degree: 15%
 >
 >临时未传送的消息只能与&#x200B;**Soft**&#x200B;或&#x200B;**Ignored**&#x200B;错误相关，而不能与&#x200B;**Hard**&#x200B;错误相关(请参阅[投放故障类型和原因](#delivery-failure-types-and-reasons))。
 
-要修改投放的持续时间，请转至投放或投放模板的高级参数，并在相应的字段中指定所需的持续时间。 高级投放属性显示在[本节](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)中。
+>[!IMPORTANT]
+>
+>对于托管或混合安装，如果已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md),投放中的重试设置不再由活动使用。 软弹回重试和弹回时间长度由增强的MTA根据邮件电子邮件域返回的弹回响应的类型和严重性决定。
 
-默认配置允许每小时间隔五次重试，然后每天重试4天。 可以全局更改重试数(联系Adobe技术管理员)或针对每个投放或投放模板（请参阅[此部分](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)）。
+对于使用传统活动MTA的本地安装和托管／混合安装，要修改投放的持续时间，请转到投放或投放模板的高级参数，并在相应字段中指定所需的持续时间。 请参阅[定义有效期](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)。
+
+默认配置允许每小时间隔五次重试，然后每天重试4天。 可以全局更改重试数(联系Adobe技术管理员)或每个投放或投放模板(请参阅[配置重试](../../delivery/using/steps-sending-the-delivery.md#configuring-retries))。
 
 ## 同步和异步错误{#synchronous-and-asynchronous-errors}
 
@@ -207,17 +213,38 @@ ht-degree: 15%
 
 ## 弹回邮件管理{#bounce-mail-management}
 
-Adobe Campaign平台允许您通过弹回邮件功能管理电子邮件投放失败。 当无法将电子邮件发送给收件人时，远程消息服务器会自动将错误消息（弹回邮件）返回到专为此目的设计的技术收件箱。 错误消息由Adobe Campaign平台收集，并由inMail流程进行限定，以丰富电子邮件管理规则的列表
+Adobe Campaign平台允许您通过弹回邮件功能管理电子邮件投放失败。
+
+当无法将电子邮件发送给收件人时，远程消息服务器会自动将错误消息（弹回邮件）返回到专为此目的设计的技术收件箱。
+
+对于使用传统活动MTA的本地安装和托管／混合安装，错误消息由Adobe Campaign平台收集并由inMail流程确定，以丰富电子邮件管理规则的列表。
+
+>[!IMPORTANT]
+>
+>对于托管或混合安装，如果已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则大多数电子邮件管理规则不再被使用。 有关更多信息，请参阅[此章节](#email-management-rules)。
 
 ### 退回邮件鉴别{#bounce-mail-qualification}
 
-当电子邮件投放失败时，Adobe Campaign投放服务器从消息服务器或远程DNS服务器接收错误消息。 错误列表由远程服务器返回的消息中包含的字符串组成。 故障类型和原因被分配给每个错误消息。
+>[!IMPORTANT]
+>
+>对于托管或混合安装，如果您已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md):
+>
+>* **[!UICONTROL Delivery log qualification]**&#x200B;表中的弹回资格不再用于&#x200B;**synchronous**&#x200B;投放故障错误消息。 增强的MTA可确定退回类型和资格，并将该信息发回给活动。
+   >
+   >
+* ****&#x200B;异步退回仍然由 inMail 流程通过 **[!UICONTROL Inbound email]** 规则进行鉴别。有关此方面的详细信息，请参阅[电子邮件管理规则](#email-management-rules)。
+   >
+   >
+* 对于使用不带Webhooks/EFS **的增强MTA**&#x200B;的实例，**[!UICONTROL Inbound email]**&#x200B;规则还将用于处理来自增强MTA的同步弹回电子邮件，其电子邮件地址与异步弹回电子邮件的地址相同。
+
+
+对于使用传统活动MTA的本地安装和托管／混合安装，当电子邮件投放失败时，Adobe Campaign投放服务器从消息服务器或远程DNS服务器接收错误消息。 错误列表由远程服务器返回的消息中包含的字符串组成。 故障类型和原因被分配给每个错误消息。
 
 此列表可通过&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**&#x200B;节点使用。 它包含Adobe Campaign用来限定投放失败的所有规则。 它不是完全的，并且由Adobe Campaign定期更新，也可以由用户管理。
 
 ![](assets/tech_quarant_rules_qualif.png)
 
-* 远程服务器在第一次出现此错误类型时返回的消息显示在&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;表的&#x200B;**[!UICONTROL First text]**&#x200B;列中。 如果未显示此列，请单击列表右下方的&#x200B;**[!UICONTROL Configure list]**&#x200B;按钮以选择它。
+远程服务器在第一次出现此错误类型时返回的消息显示在&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;表的&#x200B;**[!UICONTROL First text]**&#x200B;列中。 如果未显示此列，请单击列表右下方的&#x200B;**[!UICONTROL Configure list]**&#x200B;按钮以选择它。
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
@@ -237,22 +264,11 @@ Adobe Campaign过滤器此消息以删除变量内容（如ID、日期、电子�
 
 ![](assets/deliverability_qualif_status.png)
 
+### 电子邮件管理规则{#email-management-rules}
+
 >[!IMPORTANT]
 >
->对于托管或混合安装，如果您已升级到增强的MTA:
->
->* **[!UICONTROL Delivery log qualification]**&#x200B;表中的弹回资格不再用于同步投放失败错误消息。 增强的MTA可确定退回类型和资格，并将该信息发回给活动。
-   >
-   >
-* 异步退回仍然由 inMail 流程通过 **[!UICONTROL Inbound email]** 规则进行鉴别。有关此方面的详细信息，请参阅[电子邮件管理规则](#email-management-rules)。
-   >
-   >
-* 对于使用不带&#x200B;**Webhooks/EFS**&#x200B;的增强MTA的实例，**[!UICONTROL Inbound email]**&#x200B;规则还将用于处理来自增强MTA的同步弹回电子邮件，其电子邮件地址与异步弹回电子邮件的地址相同。
->
->
-有关Adobe Campaign增强MTA的详细信息，请参阅[此文档](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)。
-
-### 电子邮件管理规则{#email-management-rules}
+>对于托管或混合安装，如果已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则大多数电子邮件管理规则不再被使用。 有关详细信息，请参阅以下各节。
 
 邮件规则可通过&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**&#x200B;节点访问。 电子邮件管理规则显示在窗口的下半部分。
 
@@ -272,7 +288,11 @@ Adobe Campaign过滤器此消息以删除变量内容（如ID、日期、电子�
 
 #### 入站电子邮件{#inbound-email}
 
-这些规则包含可由远程服务器返回的字符串列表，并可让您鉴别错误（**Hard**、**Soft** 或 **Ignored**）。
+>[!IMPORTANT]
+>
+>对于托管或混合安装，如果您已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，并且您的实例具有&#x200B;**Webhooks/EFS**&#x200B;功能，则&#x200B;**[!UICONTROL Inbound email]**&#x200B;规则不再用于同步投放故障消息。 有关更多信息，请参阅[此章节](#bounce-mail-qualification)。
+
+对于使用传统活动MTA的本地安装和托管／混合安装，这些规则包含可由远程服务器返回的字符串列表，并允许您限定错误（**Hard**、**Soft**&#x200B;或&#x200B;**Ignored**）。
 
 当电子邮件失败时，远程服务器将返回一条弹回消息至平台参数中指定的地址。 Adobe Campaign将每个弹回邮件的内容与规则列表中的字符串进行比较，然后将其分配为三个[错误类型](#delivery-failure-types-and-reasons)中的一个。
 
@@ -282,15 +302,13 @@ Adobe Campaign过滤器此消息以删除变量内容（如ID、日期、电子�
 
 有关弹回邮件资格的详细信息，请参阅[此部分](#bounce-mail-qualification)。
 
->[!IMPORTANT]
->
->对于托管或混合安装，如果您已升级到增强型MTA，并且您的实例具有&#x200B;**Webhooks/EFS**&#x200B;功能，则&#x200B;**[!UICONTROL Inbound email]**&#x200B;规则不再用于同步投放故障消息。 有关更多信息，请参阅[此章节](#bounce-mail-qualification)。
->
->有关Adobe Campaign增强MTA的详细信息，请参阅[此文档](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
-
 #### 域管理{#domain-management}
 
-Adobe Campaign消息服务器将单个&#x200B;**域管理**&#x200B;规则应用于所有域。
+>[!IMPORTANT]
+>
+>对于托管或混合安装，如果已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则不再使用&#x200B;**[!UICONTROL Domain management]**&#x200B;规则。 所有域名的所有消息，其 **DKIM（域名识别邮件）**&#x200B;电子邮件身份验证签名均由 Enhanced MTA 进行。除非在 Enhanced MTA 中专门说明，否则不会使用 **Sender ID**、**DomainKeys** 或 **S/MIME** 进行签名。
+
+对于使用传统活动MTA的本地安装和托管／混合安装，Adobe Campaign消息服务器将单个&#x200B;**域管理**&#x200B;规则应用于所有域。
 
 <!--![](assets/tech_quarant_domain_rules_02.png)-->
 
@@ -299,13 +317,13 @@ Adobe Campaign消息服务器将单个&#x200B;**域管理**&#x200B;规则应用�
 
 如果邮件在Outlook中以发件人地址&#x200B;**[!UICONTROL on behalf of]**&#x200B;显示，请确保您没有使用&#x200B;**发件人ID**（来自Microsoft的过时专有电子邮件身份验证标准）对电子邮件进行签名。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;选项处于启用状态，请取消选中相应的框，并与[Adobe客户服务中心](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。 您的可交付性不会受到影响。
 
+#### MX管理{#mx-management}
+
 >[!IMPORTANT]
 >
->对于托管或混合安装，如果已升级到增强的MTA，则不再使用&#x200B;**[!UICONTROL Domain management]**&#x200B;规则。 所有域名的所有消息，其 **DKIM（域名识别邮件）**&#x200B;电子邮件身份验证签名均由 Enhanced MTA 进行。除非在 Enhanced MTA 中专门说明，否则不会使用 **Sender ID**、**DomainKeys** 或 **S/MIME** 进行签名。
->
->有关Adobe Campaign增强MTA的详细信息，请参阅[此文档](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
+>对于托管或混合安装，如果已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则不再使用&#x200B;**[!UICONTROL MX management]**&#x200B;投放吞吐量规则。 增强的MTA使用其自己的MX规则，该规则允许它根据您自己的历史电子邮件信誉以及来自您发送电子邮件的域的实时反馈，按域自定义您的吞吐量。
 
-#### MX管理{#mx-management}
+对于使用传统活动MTA的本地安装和托管／混合安装：
 
 * MX管理规则用于为特定域调节传出电子邮件的流。 他们对弹回消息进行采样，并在适当时阻止发送。
 
@@ -314,9 +332,3 @@ Adobe Campaign消息服务器将单个&#x200B;**域管理**&#x200B;规则应用�
 * 要配置MX管理规则，只需设置一个阈值并选择某些SMTP参数。 **threshold**&#x200B;是以错误百分比计算的限制，超过该百分比，将阻止向特定域发送的所有消息。 例如，在一般情况下，如果错误率达到90%，则至少300条邮件的发送会被阻止3小时。
 
 有关MX管理的详细信息，请参阅[本节](../../installation/using/email-deliverability.md#mx-configuration)。
-
->[!IMPORTANT]
->
->对于托管或混合安装，如果已升级到增强的MTA，则不再使用&#x200B;**[!UICONTROL MX management]**&#x200B;投放吞吐量规则。 增强的MTA使用其自己的MX规则，该规则允许它根据您自己的历史电子邮件信誉以及来自您发送电子邮件的域的实时反馈，按域自定义您的吞吐量。
->
->有关Adobe Campaign增强MTA的详细信息，请参阅[此文档](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)。
