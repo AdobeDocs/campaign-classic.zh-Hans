@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 759346587e3ce98c408a0a17218341118dbceb82
+source-git-commit: 7473a64a7f3865d1e1eefde9607c539c2f632138
 workflow-type: tm+mt
-source-wordcount: '3869'
-ht-degree: 94%
+source-wordcount: '3914'
+ht-degree: 93%
 
 ---
 
@@ -20,6 +20,14 @@ ht-degree: 94%
 本页列出了每月所有新增功能和文档更新以及 Campaign 版本。
 
 有关发行相关更新，请参阅[《Adobe Campaign Classic发行说明》](../../rn/using/latest-release.md)。
+
+## 2021 年 2 月 {#feb-2021}
+
+新增了一节，其中详细介绍了如何使用工作流执行A/B测试。 [阅读更多](../../delivery/using/get-started-a-b-testing.md)
+
+Adobe Campaign增强的MTA部分已移动[此处](../../delivery/using/sending-with-enhanced-mta.md)。
+
+**发送电子邮件**&#x200B;部分已重新组织，并用新的子部分进行了说明。 [阅读更多](../../delivery/using/sending-messages.md)
 
 ## 2021 年 1 月 {#jan-2021}
 
