@@ -1,0 +1,141 @@
+---
+solution: Campaign Classic
+product: campaign
+title: 在Adobe Campaign Classic配置电子邮件参数
+description: 了解电子邮件投放的特定选项和设置。
+audience: delivery
+content-type: reference
+topic-tags: sending-emails
+translation-type: tm+mt
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+workflow-type: tm+mt
+source-wordcount: '888'
+ht-degree: 8%
+
+---
+
+
+# 电子邮件参数{#email-parameters}
+
+本节介绍特定于电子邮件投放的选项和参数。
+
+## 密件抄送{#email-bcc}
+
+Adobe Campaign允许您通过密送将密送电子邮件地址添加到邮件目标，从而将电子邮件存储在外部系统上。
+
+激活该选项后，将为此投放保留所有已发送消息的确切副本。
+
+有关电子邮件密件抄送配置和最佳实践的详细信息，请参阅[本节](../../installation/using/email-archiving.md)。
+
+>[!NOTE]
+>
+>密送电子邮件是可选功能。 请核实您的许可协议并联系您的帐户管理员以将其激活。
+
+创建新投放或投放模板时，默认情况下不启用电子邮件密送。 您需要在电子邮件投放或投放模板级别手动启用它。
+
+<!--
+>[!IMPORTANT]
+>
+>If you have upgraded to the [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md), you can request to use Email BCC with Enhanced MTA for improved efficiency and less latency. In that case, all sent emails are automatically sent to the BCC address. You cannot enable it at the delivery or delivery template level, thus the steps below do not apply. For more on this, see [this section](../../installation/using/email-archiving.md).-->
+
+要为电子邮件投放模板启用电子邮件密送，请执行以下步骤：
+
+1. 转到&#x200B;**[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]**&#x200B;或&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**。
+1. 选择您选择的投放或重复现成的&#x200B;**电子邮件投放**&#x200B;模板，然后选择复制的模板。
+1. 单击&#x200B;**属性**&#x200B;按钮。
+1. 选择 **[!UICONTROL Delivery]** 选项卡。
+1. 选中&#x200B;**电子邮件密送**&#x200B;选项。 每个投放基于此模板发送的所有邮件的副本将发送到已配置的电子邮件密送地址。
+
+   ![](assets/s_ncs_user_wizard_archiving.png)
+
+>[!NOTE]
+>
+>如果打开并点击发送到密送地址的电子邮件，则在发送分析的&#x200B;**[!UICONTROL Total opens]**&#x200B;和&#x200B;**[!UICONTROL Clicks]**&#x200B;中会考虑这一情况，这可能会导致一些错误计算。
+
+## 选择消息格式{#selecting-message-formats}
+
+您可以更改发送电子邮件的格式。 为此，请编辑投放属性，然后单击&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡。
+
+![](assets/s_ncs_user_wizard_email_param.png)
+
+在窗口的下半部分选择电子邮件的格式：
+
+* **[!UICONTROL Use recipient preferences]** （默认模式）
+
+   消息格式是根据收件人用户档案中存储的数据定义的，默认情况下存储在&#x200B;**[!UICONTROL email format]**&#x200B;字段(@emailFormat)中。 如果收件人希望以特定格式接收消息，则会将该格式用于发送的邮件。如果未填写字段，则会发送复合-可选消息（请参阅下文）。
+
+* **[!UICONTROL Let recipient mail client choose the most appropriate format]**
+
+   消息包含两种格式：文本和HTML。 接收时显示的格式取决于收件人邮件软件(复合-可选)的配置。
+
+   >[!IMPORTANT]
+   >
+   >此选项包括两个版本的文档。 因此，它会影响投放率，因为消息大小更大。
+
+* **[!UICONTROL Send all messages in text format]**
+
+   消息以文本格式发送。 不会发送HTML格式，但仅当镜像页面单击消息时，才会将其用于收件人。
+
+>[!NOTE]
+>
+>有关定义电子邮件内容的详细信息，请参阅[此部分](../../delivery/using/defining-the-email-content.md)。
+
+## 生成镜像页面{#generating-mirror-page}
+
+镜像页面是可通过Web浏览器在线访问的HTML页面。 其内容与电子邮件内容相同。
+
+默认情况下，如果链接插入到邮件内容中，则会生成镜像页面。 有关个性化块插入的详细信息，请参阅[个性化块](../../delivery/using/personalization-blocks.md)。
+
+在投放属性中，使用&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡的&#x200B;**[!UICONTROL Mode]**&#x200B;字段可以修改此页面的生成模式。
+
+![](assets/s_ncs_user_wizard_miror_page_mode.png)
+
+>[!IMPORTANT]
+>
+>必须为要创建投放的镜像页面定义HTML内容。
+
+除了默认模式之外，还提供以下选项：
+
+* **[!UICONTROL Force the generation of the mirror page]**:即使镜像页面中未插入指向该投放的链接，也会创建镜像页面。
+* **[!UICONTROL Do not generate the mirror page]**:不生成镜像页面，即使投放中存在链接也是如此。
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**:通过此选项，您可以在镜像页面日志窗口中访问包含个性化信息的投放内容。为此，在投放结束后，单击&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡，并选择要视图其镜像页面的收件人行。 单击&#x200B;**[!UICONTROL Display the mirror page for this message...]**&#x200B;链接。
+
+   ![](assets/s_ncs_user_wizard_miror_page_link.png)
+
+## 字符编码{#character-encoding}
+
+在投放参数的&#x200B;**[!UICONTROL SMTP]**&#x200B;选项卡中，**[!UICONTROL Character encoding]**&#x200B;部分允许您设置特定编码。
+
+默认编码为UTF-8。 如果某些收件人的电子邮件提供者不支持UTF-8标准编码，您可能希望设置特定编码以向电子邮件的收件人正确显示特殊字符。
+
+例如，您要发送包含日文字符的电子邮件。 为确保所有字符都能正确显示给日本的收件人，您可能希望使用支持日语字符的编码，而不是标准UTF-8。
+
+为此，请在&#x200B;**[!UICONTROL Character encoding]**&#x200B;部分选择&#x200B;**[!UICONTROL Force the encoding used for messages]**&#x200B;选项，并从显示的下拉列表中选择编码。
+
+![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
+
+## 管理弹回电子邮件{#managing-bounce-emails}
+
+投放参数的&#x200B;**[!UICONTROL SMTP]**&#x200B;选项卡允许您配置弹回邮件的管理。
+
+默认情况下，退回电子邮件会在平台的默认错误框中接收，但您可以为投放定义特定错误地址。
+
+您还可以从此屏幕定义特定地址，以调查在应用程序无法自动限定弹出邮件的原因。 对于每个字段，**添加个性化字段**&#x200B;图标允许您添加个性化参数。
+
+![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
+
+有关弹回邮件管理的详细信息，请参阅[此部分](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)。
+
+## 添加SMTP头{#adding-smtp-headers}
+
+可以向投放添加SMTP头。 为此，请使用投放中&#x200B;**[!UICONTROL SMTP]**&#x200B;选项卡的相关部分。
+
+在此窗口中输入的脚本必须在以下表单中引用每行一个标题：**name:value**。
+
+如有必要，将自动对值进行编码。
+
+>[!IMPORTANT]
+>
+>高级用户可随时添加脚本以插入其他 SMTP 标头。
+>
+>此脚本的语法必须符合此内容类型的要求：没有未使用的空格，没有空行等。
