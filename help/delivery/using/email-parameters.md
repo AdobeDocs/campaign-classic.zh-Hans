@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+source-git-commit: e84387c7c396c60c429c3f625870a97a7fdaef5a
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 8%
@@ -32,11 +32,6 @@ Adobe Campaign允许您通过密送将密送电子邮件地址添加到邮件目
 >密送电子邮件是可选功能。 请核实您的许可协议并联系您的帐户管理员以将其激活。
 
 创建新投放或投放模板时，默认情况下不启用电子邮件密送。 您需要在电子邮件投放或投放模板级别手动启用它。
-
-<!--
->[!IMPORTANT]
->
->If you have upgraded to the [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md), you can request to use Email BCC with Enhanced MTA for improved efficiency and less latency. In that case, all sent emails are automatically sent to the BCC address. You cannot enable it at the delivery or delivery template level, thus the steps below do not apply. For more on this, see [this section](../../installation/using/email-archiving.md).-->
 
 要为电子邮件投放模板启用电子邮件密送，请执行以下步骤：
 
