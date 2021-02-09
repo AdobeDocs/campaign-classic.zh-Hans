@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -19,9 +19,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->只有投放所有者才能开始投放。 要使其他运算符（或运算符组）能够开始投放，您必须在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;字段中将其添加为审阅者。
->
->有关详细信息，请参阅[本节](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
+>只有投放所有者才能开始投放。 要使其他运算符（或运算符组）能够开始投放，您必须在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;字段中将其添加为审阅者。 有关详细信息，请参阅[本节](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
 
 ## 投放附加参数{#delivery-additiona-parameters}
 
@@ -33,25 +31,29 @@ ht-degree: 5%
 
 * **[!UICONTROL Message batch quantity]**:此选项允许您定义在同一XML投放包内分组的消息数。如果参数设置为0，则消息将自动分组。 包大小由计算`<delivery size>/1024`定义，每个包最少8条消息，最多256条消息。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >复制投放时，会重置参数。
 
-* **[!UICONTROL Send using multiple waves]**:有关详细信息，请参 [阅使用多个批次发送](#sending-using-multiple-waves)。
+* **[!UICONTROL Send using multiple waves]**:有关此内容的详细信息，请参 [阅使用多个批次发送](#sending-using-multiple-waves)。
 
 * **[!UICONTROL Test SMTP delivery]**:此选项允许您测试通过SMTP发送投放。该投放会被处理到连接到SMTP服务器，但不会被发送。
 
    >[!NOTE]
    >
-   >在安装时，不建议使用此选项，即使用中间源调用mta。
-   >
-   >有关配置SMTP服务器的详细信息，请参阅本节](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)中的[。
+   >在安装时，不建议使用此选项，即使用中间源调用mta。 有关配置SMTP服务器的详细信息，请参阅本节](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)。[
 
-* **[!UICONTROL Email BCC]**:通过此选项，您只需向邮件目标添加密送电子邮件地址，即可通过密送方式在外部系统上存储电子邮件。有关此内容的详细信息，请参阅此部分](../../delivery/using/sending-messages.md#archiving-emails)的[。
+* **[!UICONTROL Email BCC]**:通过此选项，您只需向邮件目标添加密送电子邮件地址，即可通过密送方式在外部系统上存储电子邮件。如需详细信息，请参阅[此部分](../../delivery/using/sending-messages.md#archiving-emails)。
 
-配置投放并准备好发送后，请确保已运行[投放分析](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。 完成后，单击&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;启动消息投放。
+## 确认投放{#confirming-delivery}
+
+配置投放并准备发送时，请确保已运行投放分析。
+
+要执行此操作，请单击&#x200B;**[!UICONTROL Send]**，选择所需的操作，然后单击&#x200B;**[!UICONTROL Analyze]**。 有关详细信息，请参阅[启动分析](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 ![](assets/s_ncs_user_email_del_send.png)
+
+完成后，单击&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;启动消息投放。
 
 然后，您可以关闭投放向导并从&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡跟踪投放的执行，该选项卡可通过此投放的详细信息或投放列表访问。
 
@@ -73,7 +75,7 @@ ht-degree: 5%
 
 1. 然后，您可以开始投放分析，然后确认投放发送。 但是，投放发送直到&#x200B;**[!UICONTROL Contact date]**&#x200B;字段中给定的日期才会开始。
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >开始分析后，您定义的联系日期即已确定。 如果修改此日期，则必须重新启动分析，这样您所做的修改才会被考虑在内。
 
@@ -133,7 +135,7 @@ ht-degree: 5%
       ![](assets/s_ncs_user_wizard_waves_create.png)
    特定类型规则&#x200B;**[!UICONTROL Wave scheduling check]**&#x200B;确保在投放有效期限之前规划最后一波。 活动类型及其规则(在投放属性的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中配置)在[验证流程中以类型](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies)显示。
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >确保最后一个批次不超过投放截止日期，该截止日期在&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡中定义。 否则，可能无法发送某些消息。
    >
@@ -169,18 +171,15 @@ ht-degree: 5%
 
 由于&#x200B;**Soft**&#x200B;或&#x200B;**Ignored**&#x200B;错误而暂时未传送的消息将自动重试。 此[部分](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)介绍了投放故障类型和原因。
 
-投放参数&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡的中心部分指示在投放后一天应执行的重试数和重试之间的最小延迟。
+>[!IMPORTANT]
+>
+>对于托管或混合安装，如果已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md),投放中的重试设置不再由活动使用。 软弹回重试和弹回时间长度由增强的MTA根据邮件电子邮件域返回的弹回响应的类型和严重性决定。
+
+对于使用传统活动MTA的本地安装和托管／混合安装，投放参数&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡的中心部分指示在投放后一天应执行的重试数和重试之间的最小延迟。
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-默认情况下，在投放的第一天安排五个重试，每天的24小时间隔至少为1小时。 在此之后，每天编写一次重试，直到投放截止日期，该截止日期在&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡中定义（请参阅[定义有效期](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)）。
-
->[!NOTE]
->
->对于托管或混合安装，如果已升级到增强的MTA,投放中的重试设置不再由活动使用。 软弹回重试和弹回时间长度由增强的MTA根据邮件电子邮件域返回的弹回响应的类型和严重性决定。
->
->所有影响在[Adobe Campaign增强MTA](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)文档中详述。
-
+默认情况下，在投放的第一天安排五个重试，每天的24小时间隔至少为1小时。 在此之后，每天编写一次重试，直到投放截止日期，该截止日期在&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡中定义（请参阅[定义有效期](#defining-validity-period)）。
 
 ## 定义有效期{#defining-validity-period}
 
@@ -192,12 +191,10 @@ ht-degree: 5%
 
    您还可以选择指定日期。 为此，请选择&#x200B;**[!UICONTROL Explicitly set validity dates]**。 在这种情况下，投放和有效期限日期还允许您指定时间。 默认情况下使用当前时间，但您可以直接在输入字段中修改此时间。
 
+   >[!IMPORTANT]
+   >
+   >对于托管或混合安装，如果已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则只有在设置为&#x200B;**3.5天或更少**&#x200B;时，活动电子邮件投放中的&#x200B;**[!UICONTROL Delivery duration]**&#x200B;设置才会使用。 如果定义的值超过 3.5 天，则不会将其考虑在内。
+
 * **资源有效期限**:该字 **[!UICONTROL Validity limit]** 段用于上传的资源，主要用于镜像页面和图像。本页上的资源仅在限制时间内有效（以节省磁盘空间）。
 
    此字段中的值可以用[此部分](../../platform/using/adobe-campaign-workspace.md#default-units)中列出的单位表示。
-
->[!NOTE]
->
->对于托管或混合安装，如果已升级到增强的MTA，则只有在设置为&#x200B;**3.5**&#x200B;天或更少时，活动投放中的&#x200B;**[!UICONTROL Delivery duration]**&#x200B;设置才会使用。 如果定义的值超过 3.5 天，则不会将其考虑在内。
->
->所有影响在[Adobe Campaign增强MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)文档中详述。
