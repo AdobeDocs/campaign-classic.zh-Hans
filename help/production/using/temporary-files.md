@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 4%
@@ -25,7 +25,9 @@ ht-degree: 4%
 
 Adobe Campaign在&#x200B;**/tmp**&#x200B;下生成临时文件，然后重命名这些文件将其移动到&#x200B;**/usr/local/neolane/nl6/var**。 当两个文件夹（**/tmp**&#x200B;和&#x200B;**/usr/local/neolane/nl6/var**）对应于不同的设备时，会发生此错误。 ******df**&#x200B;命令用于验证。
 
-要解决此问题，临时文件必须与目标位置在同一设备中生成。 例如，通过执行：
+要解决此问题，临时文件必须与目标位置在同一设备中生成。
+
+例如，执行以下操作：
 
 ```
 $ cd ~/nl6/var
@@ -38,4 +40,3 @@ $ vi ~/nl6/customer.sh
 ```
 export TMPDIR=/usr/local/neolane/nl6/var/tmp 
 ```
-
