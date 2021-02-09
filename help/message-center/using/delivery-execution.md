@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: 1788346f7dfe2c18c490363c90358fcb737f1646
+source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 4%
+source-wordcount: '220'
+ht-degree: 7%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->对于托管或混合安装，如果您已升级到增强MTA，则所有事务性消息也可以与Adobe Campaign增强MTA一起发送，以改进交付能力、吞吐量和弹回处理。 所有影响与标准营销消息的影响相同，并在[Adobe Campaign增强MTA](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)文档中详细介绍。
+>对于托管或混合安装，如果已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则还可以使用Adobe Campaign增强的MTA发送所有事务性消息，以改进交付能力、吞吐量和弹回处理。 所有方面都与标准营销消息相同。
 
 ## 事务性消息监视{#transactional-message-monitoring}
 
