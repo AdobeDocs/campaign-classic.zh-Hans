@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
@@ -38,13 +38,13 @@ ht-degree: 4%
 
 * 收件箱呈现功能对于确定您的电子邮件活动是否成功地使其超过主要ISP(Internet服务提供商)和Web邮件服务的过滤器至关重要。 此类工具会将电子邮件的预检副本发送到测试收件箱网络，以便您能够查看消息在这些服务中的显示或呈现方式。 它们还可能包括报告和代码更正选项，可帮助您快速识别并进行可改进交付性的修复。
 
-请阅读本节[了解更多信息。](../../delivery/using/inbox-rendering.md)
+请阅读本节](../../delivery/using/inbox-rendering.md)了解更多信息。[
 
 ## 验证消息{#proof-messages}
 
 发送验证使您能够检查退出链接、镜像页面和任何其他链接、验证消息、验证图像是否显示、检测可能的错误等。 您可能还希望检查在不同设备上的设计和渲染。
 
-请阅读本节[了解更多信息。](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
+请阅读本节](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)了解更多信息。[
 
 ## 设置A/B测试投放{#a-b-testing-deliveries}
 
@@ -56,7 +56,7 @@ ht-degree: 4%
 
 * 选择成功率最高的目标，并将其发送至其他
 
-请阅读本节[了解更多信息。](../../workflow/using/a-b-testing.md)
+请阅读本节](../../delivery/using/get-started-a-b-testing.md)了解更多信息。[
 
 ## 确保消息已传送{#make-sure-your-message-is-delivered}
 
@@ -64,11 +64,11 @@ ht-degree: 4%
 
 ### 完成验证过程
 
-您可以定义一个包含Adobe Campaign运算符和组的完整验证流程，以验证目标和消息内容。 这将确保全面监测和控制该活动的各种进程：定位、内容、预算、提取和发送验证。 根据用户的权限，用户将收到通知、接收验证并能够验证或拒绝消息。 请阅读本节[了解更多信息。](../../campaign/using/marketing-campaign-approval.md#approval-process)
+您可以定义一个包含Adobe Campaign运算符和组的完整验证流程，以验证目标和消息内容。 这将确保全面监测和控制该活动的各种进程：定位、内容、预算、提取和发送验证。 根据用户的权限，用户将收到通知、接收验证并能够验证或拒绝消息。 请阅读本节](../../campaign/using/marketing-campaign-approval.md#approval-process)了解更多信息。[
 
 ### 使用批次
 
-您可以使用批次逐步增加发送的音量。 这将避免您的邮件被标记为垃圾邮件，或者您希望限制每天的邮件数。 使用批次，您可以将投放分为几批，而不是同时发送大量消息。 请阅读本节[了解更多信息。](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)
+您可以使用批次逐步增加发送的音量。 这将避免您的邮件被标记为垃圾邮件，或者您希望限制每天的邮件数。 使用批次，您可以将投放分为几批，而不是同时发送大量消息。 请阅读本节](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)了解更多信息。[
 
 ### 确定消息的优先级
 
@@ -102,7 +102,7 @@ ht-degree: 4%
 
 ### 使用类型
 
-您可以使用类型规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。例如，您可以从新闻稿的目标中过滤未达到规定的收件人。 请阅读本示例[了解更多信息。](../../campaign/using/filtering-rules.md)
+您可以使用类型规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。例如，您可以从新闻稿的目标中过滤未达到规定的收件人。 请阅读本示例](../../campaign/using/filtering-rules.md)了解更多信息。[
 
 ### 避免附件
 
