@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 0%
@@ -131,15 +131,15 @@ ht-degree: 0%
 
 ## MX配置{#mx-configuration}
 
+>[!IMPORTANT]
+>
+>对于托管或混合安装，如果已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则不再使用&#x200B;**[!UICONTROL MX management]**&#x200B;投放吞吐量规则。 增强的MTA使用其自己的MX规则，该规则允许它根据您自己的历史电子邮件信誉以及来自您发送电子邮件的域的实时反馈，按域自定义您的吞吐量。
+
+以下部分仅适用于使用传统活动MTA的本地安装和托管／混合安装。
+
 ### 关于MX规则{#about-mx-rules}
 
 MX规则（邮件eXchanger）是管理发送服务器与接收服务器之间通信的规则。
-
->[!IMPORTANT]
->
->对于托管或混合安装，如果已升级到增强的MTA，则不再使用&#x200B;**[!UICONTROL MX management]**&#x200B;投放吞吐量规则。 增强的MTA使用其自己的MX规则，该规则允许它根据您自己的历史电子邮件信誉以及来自您发送电子邮件的域的实时反馈，按域自定义您的吞吐量。
->
->有关Adobe Campaign增强MTA的详细信息，请参阅此[文档](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)。
 
 这些规则每天早上6点（服务器时间）自动重新加载，以便定期提供客户端实例。
 
