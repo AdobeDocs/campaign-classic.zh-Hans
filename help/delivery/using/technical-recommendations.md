@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2427'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,10 @@ SPF是一种技术，在某种程度上，它使您能够确保电子邮件中�
 
 ### DKIM {#dkim}
 
+>[!IMPORTANT]
+>
+>对于托管或混合安装，如果已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则DKIM电子邮件身份验证签名由增强的MTA对所有域的所有消息执行。
+
 DKIM（域密钥标识邮件）身份验证是SPF的后继服务器，它使用公钥密码术，允许接收电子邮件服务器验证消息实际上是由其声称其发送的个人或实体发送的，以及消息内容在最初发送（和DKIM“已签名”）和接收之间是否发生了更改。 此标准通常使用“发件人”或“发件人”标题中的域。 为确保DKIM的安全级别，建议使用最佳实践加密大小1024b。 大多数访问提供者不认为低DKIM密钥有效。
 
 DKIM来自DomainKeys, Yahoo! 和Cisco Internet Mail身份验证原则，用于检查发送方域的真实性并保证消息的完整性。
@@ -87,10 +91,6 @@ DKIM已替换&#x200B;**DomainKeys**&#x200B;身份验证。
 >* 对于DKIM是DomainKeys的改进版本，因此不必为同一域同时启用DomainKeys和DKIM。
 >* 以下域当前验证DKIM:AOL,Gmail。
 
-
->[!IMPORTANT]
->
->对于托管或混合安装，如果已升级到[增强的MTA](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)，则DKIM电子邮件身份验证签名由增强的MTA对所有域的所有消息执行。
 
 ### DMARC {#dmarc}
 
