@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: f24642223a2ec9f3d8e78e2f7e71a55bf14b80c7
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 8%
+source-wordcount: '171'
+ht-degree: 7%
 
 ---
 
@@ -20,9 +20,12 @@ ht-degree: 8%
 您可以更改或恢复丢失的密码。
 有两种可能的情况：
 
-**Adobe Campaign操作员丢失密码**
+* [Adobe Campaign操作员丢失密码](#password-lost-by-campaign-operator)
+* [内部密码丢失](#internal-password-lost) （仅限预置型客户）
 
-在这种情况下，您可以更改相关操作员的口令。
+## 活动运算符{#password-lost-by-campaign-operator}丢失密码
+
+如果Adobe Campaign操作员丢失了其密码，您可以更改密码。
 为此请执行以下操作步骤：
 
 1. 通过具有管理员权限的操作员进行连接。
@@ -31,9 +34,13 @@ ht-degree: 8%
 
    ![](assets/operator-passwd.png)
 
-1. 设置操作员的新密码。 我们建议运营商在首次重新连接时更改其口令。
+1. 设置操作员的新密码。 我们建议操作员在首次重新连接时更改其口令。
 
-**内部密码丢失（仅限预置型客户）**
+## 内部密码丢失{#internal-password-lost}
+
+>[!NOTE]
+>
+>本条仅适用于预置型客户。
 
 如果内部密码丢失，则必须重新初始化它。
 为此，请应用以下过程：
