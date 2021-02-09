@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fe4262a1da011cb155651c5e786f19188139cff1
 workflow-type: tm+mt
-source-wordcount: '2887'
+source-wordcount: '1990'
 ht-degree: 1%
 
 ---
 
 
-# 定义电子邮件内容{#defining-the-email-content}
+# 定义电子邮件内容 {#defining-the-email-content}
 
 ## 发件人{#sender}
 
@@ -111,42 +111,29 @@ ht-degree: 1%
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
 
-### 在电子邮件{#inserting-emoticons}中插入表情图标
+<!--## Selecting message formats {#selecting-message-formats}
 
-您可以在电子邮件内容中插入表情图标。
-
-1. 单击&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;图标。
-1. 从弹出窗口中选择一个表情图标。
-
-   ![](assets/emoticon_4.png)
-
-1. 完成后，单击&#x200B;**[!UICONTROL Close]**&#x200B;按钮。
-
-要自定义表情图标列表，请参阅此[页面](../../delivery/using/customizing-emoticon-list.md)。
-
-## 选择消息格式{#selecting-message-formats}
-
-您可以更改发送电子邮件的格式。 为此，请编辑投放属性，然后单击&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡。
+You can change the format of email messages sent. To do this, edit the delivery properties and click the **[!UICONTROL Delivery]** tab.
 
 ![](assets/s_ncs_user_wizard_email_param.png)
 
-在窗口的下半部分选择电子邮件的格式：
+Select the format of the email in the lower section of the window:
 
-* **[!UICONTROL Use recipient preferences]** （默认模式）
+* **[!UICONTROL Use recipient preferences]** (default mode)
 
-   消息格式是根据收件人用户档案中存储的数据定义的，默认情况下存储在&#x200B;**[!UICONTROL email format]**&#x200B;字段(@emailFormat)中。 如果收件人希望以特定格式接收消息，则会将该格式用于发送的邮件。如果未填写字段，则会发送复合-可选消息（请参阅下文）。
+  The message format is defined according to the data stored in the recipient profile and stored by default in the **[!UICONTROL email format]** field (@emailFormat). If a recipient wishes to receive messages in a certain format, this is the format sent. If the field is not filled in, a multipart-alternative message is sent (see below).
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
-   消息包含两种格式：文本和HTML。 接收时显示的格式取决于收件人邮件软件(复合-可选)的配置。
+  The message contains both formats: text and HTML. The format displayed on reception depends on the configuration of the recipient's mail software (multipart-alternative).
 
-   >[!IMPORTANT]
-   >
-   >此选项包括两个版本的文档。 因此，它会影响投放率，因为消息大小更大。
+  >[!IMPORTANT]
+  >
+  >This option includes both versions of the document. It therefore impacts the delivery rate, because the message size is greater.
 
 * **[!UICONTROL Send all messages in text format]**
 
-   消息以文本格式发送。 不会发送HTML格式，但仅当镜像页面单击消息时，才会将其用于收件人。
+  The message is sent in text format. HTML format will not be sent, but used for the mirror page only when the recipient clicks on the message.-->
 
 ## 定义互动内容 {#amp-for-email-format}
 
@@ -167,6 +154,19 @@ Adobe Campaign允许您尝试新的交互式[ AMP for Email](https://amp.dev/abo
 >[!NOTE]
 >
 >有关Adobe Campaign内容管理的详细信息，请参阅[本节](../../delivery/using/about-content-management.md)。
+
+## 插入表情图标{#inserting-emoticons}
+
+您可以在电子邮件内容中插入表情图标。
+
+1. 单击&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;图标。
+1. 从弹出窗口中选择一个表情图标。
+
+   ![](assets/emoticon_4.png)
+
+1. 完成后，单击&#x200B;**[!UICONTROL Close]**&#x200B;按钮。
+
+要自定义表情图标列表，请参阅此[页面](../../delivery/using/customizing-emoticon-list.md)。
 
 ## 添加图像{#adding-images}
 
@@ -324,98 +324,97 @@ HTML格式的电子邮件投放可以包含图像。 在该投放向导中，可
 
 ![](assets/barcode_insert_11.png)
 
-## 在日本手机上发送电子邮件{#sending-emails-on-japanese-mobiles}
+<!--## Sending emails on Japanese mobiles {#sending-emails-on-japanese-mobiles}
 
-### 日本手机的电子邮件格式{#email-formats-for-japanese-mobiles}
+### Email formats for Japanese mobiles {#email-formats-for-japanese-mobiles}
 
-Adobe Campaign管理手机上电子邮件的三种特定日文格式：**Deco-mail**（DoCoMo移动设备）、**Decore Mail**（Softbank移动设备）和&#x200B;**Decoration Mail**（KDDI AU移动设备）。 这些格式会施加特定的编码、结构和大小限制。 进一步了解[本节](#limitations-and-recommendations)中的限制和建议。
+Adobe Campaign manages three specific Japanese formats for email on mobiles: **Deco-mail** (DoCoMo mobiles), **Decore Mail** (Softbank mobiles) and **Decoration Mail** (KDDI AU mobiles). These formats impose particular coding, structure, and size constraints. Learn more about limitations and recommendations in [this section](#limitations-and-recommendations).
 
-为了让收件人正确接收这些格式中的某种消息，我们建议在相应的用户档案中选择&#x200B;**[!UICONTROL Deco-mail (DoCoMo)]**、**[!UICONTROL Decore Mail (Softbank)]**&#x200B;或&#x200B;**[!UICONTROL Decoration Mail (KDDI AU)]**:
+In order for the recipient to correctly receive messages in one of these formats, we recommend selecting **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** or **[!UICONTROL Decoration Mail (KDDI AU)]** in the corresponding profile:
 
 ![](assets/deco-mail_03.png)
 
-但是，如果将&#x200B;**[!UICONTROL Email format]**&#x200B;选项保留为&#x200B;**[!UICONTROL Unknown]**、**[!UICONTROL HTML]**&#x200B;或&#x200B;**[!UICONTROL Text]**,Adobe Campaign将自动检测（发送电子邮件时）要使用的日文格式，以便正确显示消息。
+However, if you leave the **[!UICONTROL Email format]** option as **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** or **[!UICONTROL Text]**, Adobe Campaign will automatically detect (when sending the email) the Japanese format to use so that the message is correctly displayed.
 
-此自动检测系统基于&#x200B;**[!UICONTROL Management of Email Formats]**&#x200B;邮件规则集中定义的预定义域的列表。 有关管理电子邮件格式的详细信息，请参阅[此页](../../installation/using/email-deliverability.md#managing-email-formats)。
+This automatic detection system is based on the list of predefined domains defined in the **[!UICONTROL Management of Email Formats]** mail rule set. For more on managing email formats, refer to [this page](../../installation/using/email-deliverability.md#managing-email-formats).
 
-### 限制和建议{#limitations-and-recommendations}
+### Limitations and recommendations {#limitations-and-recommendations}
 
-发送将在日本提供商(Softbank、DoCoMo、KDDI AU)所运营的移动设备上读取的电子邮件时，会遇到一些限制。
+A certain number of constraints apply for sending emails that will be read on a mobile operated by a Japanese provider (Softbank, DoCoMo, KDDI AU).
 
-因此，您必须：
+Therefore, you must:
 
-* 仅使用JPEG或GIF格式的图像
-* 创建文本和HTML部分严格低于10 000字节的投放（对于KDDI AU和DoCoMo）
-* 使用大小（编码前）小于100 KB的图像
-* 每封邮件使用的图像不超过20张
-* 使用缩小的HTML格式（每个操作员可以使用有限数量的标记）
+* Only use images in JPEG or GIF format
+* Create a delivery with text and HTML sections that are strictly lower than 10 000 bytes (for KDDI AU and DoCoMo)
+* Use images with a total size (before encoding) that is lower than 100 KB
+* Do not use more than 20 images per message
+* Use a reduced size HTML format (a limited number of tags are available for each operator)
 
 >[!NOTE]
 >
->创建邮件时，应考虑每个操作员的特定限制。 请参阅:
+>Limitations specific to each operator are to be taken into account when creating your message. Refer to:  
 >
->* 对于DoCoMo，请参阅[此页](https://www.nttdocomo.co.jp/service/developer/make/content/deco_mail/index.html)
->* 对于KDDI AU，请参阅[此页](https://www.au.com/ezfactory/tec/spec/decorations/template.html)
->* 有关软件库，请参阅[此页](https://www.support.softbankmobile.co.jp/partner/home_tech3/index.cfm)
+>* For DoCoMo, refer to [this page](https://www.nttdocomo.co.jp/service/developer/make/content/deco_mail/index.html)
+>* For KDDI AU, refer to [this page](https://www.au.com/ezfactory/tec/spec/decorations/template.html)
+>* For Softbank, refer to [this page](https://www.support.softbankmobile.co.jp/partner/home_tech3/index.cfm)
 
+### Testing the email content {#testing-the-email-content}
 
-### 测试电子邮件内容{#testing-the-email-content}
+#### Previewing the message {#previewing-the-message}
 
-#### 预览消息{#previewing-the-message}
+Adobe Campaign allows you to check that your message format is adapted to be sent to a Japanese mobile.
 
-Adobe Campaign允许您检查消息格式是否适用于发送到日文手机。
+Once you have defined your content and entered the email subject, you can check the display and formatting when the message is created.
 
-定义内容并输入电子邮件主题后，可以检查消息创建时的显示和格式。
+In the **[!UICONTROL Preview]** tab of the content editing window, clicking **[!UICONTROL More... > Deco-mail diagnostic]** allows you to:
 
-在内容编辑窗口的&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL More... > Deco-mail diagnostic]**&#x200B;可以：
+* Check that the HTML content tags conform to the Japanese format restrictions
+* Check that the number of images in the message does not exceed the limit imposed by the format (20 images)
+* Check the total message size (less than 100kB)
 
-* 检查HTML内容标记是否符合日文格式限制
-* 检查邮件中的图像数量是否不超过格式规定的限制（20张图像）
-* 检查邮件总大小（小于100kB）
+  ![](assets/deco-mail_06.png)
 
-   ![](assets/deco-mail_06.png)
+#### Running typology rule {#running-typology-rule}
 
-#### 运行类型规则{#running-typology-rule}
-
-除了预览诊断之外，在发送验证或投放时还执行第二检查：在分析期间启动特定类型规则&#x200B;**[!UICONTROL Deco-mail check]**。
+In addition to the previewing diagnosis, a second check is carried out when sending a proof or a delivery: a specific typology rule, **[!UICONTROL Deco-mail check]**, is started during the analysis.
 
 >[!IMPORTANT]
 >
->仅当将至少一个类型规则配置为以&#x200B;**[!UICONTROL Deco-mail (DoCoMo)]**、**[!UICONTROL Decore Mail (Softbank)]**&#x200B;或&#x200B;**[!UICONTROL Decoration Mail (KDDI AU)]**&#x200B;格式接收电子邮件时，才执行此收件人。
+>This typology rule is only executed if at least one of the recipients is configured to receive emails in **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** or **[!UICONTROL Decoration Mail (KDDI AU)]** format.
 
-此类型规则允许您确保投放符符合日语运算符定义的[格式约束](#limitations-and-recommendations)，特别是与电子邮件总大小、HTML和文本部分的大小、消息中的图像数以及HTML内容中的标记有关。
+This typology rule allows you to make sure that the delivery respects the [format constraints](#limitations-and-recommendations) defined by the Japanese operators, particularly in relation to the total size of the email, the size of the HTML and text sections, the number of images in the messages, and the tags in the HTML content.
 
-#### 发送校样{#sending-proofs}
+#### Sending proofs {#sending-proofs}
 
-您可以发送验证来测试投放。 当您发送验证时，如果您使用的是替代地址，请输入与所使用用户档案的电子邮件格式对应的地址。
+You can send proofs to test your delivery. When you send the proof, if you are using substitution addresses, please enter addresses that correspond to the email format of the profile used.
 
-例如，如果此用户档案的电子邮件格式是在&#x200B;**[!UICONTROL Decore Mail (Softbank)]**&#x200B;上预先定义的，则可以用test@softbank.ne.jp替换该用户档案的地址。
+For example, you can replace a profile's address by test@softbank.ne.jp if the email format for this profile was defined beforehand on **[!UICONTROL Decore Mail (Softbank)]**.
 
 ![](assets/deco-mail_05.png)
 
-### 发送消息 {#sending-messages}
+### Sending messages {#sending-messages}
 
-要向具有活动的日本电子邮件格式发送电子邮件至收件人，可以使用以下两种方式：
+To send an email to recipients with Japanese email formats with Campaign, two options are possible:
 
-* 创建两个投放:一个仅适用于日语收件人，另一个适用于其他收件人-请参阅[本节](#designing-a-specific-delivery-for-japanese-formats)。
-* 创建单个投放,Adobe Campaign将自动检测要使用的格式——请参阅[本节](#designing-a-delivery-for-all-formats)。
+* Create two deliveries: one only for Japanese recipients and another for other recipients - refer to [this section](#designing-a-specific-delivery-for-japanese-formats).
+* Create a single delivery and Adobe Campaign will automatically detect the format to use - refer to [this section](#designing-a-delivery-for-all-formats).
 
-#### 为日文格式{#designing-a-specific-delivery-for-japanese-formats}设计特定投放
+#### Designing a specific delivery for Japanese formats {#designing-a-specific-delivery-for-japanese-formats}
 
-您可以创建包含两个投放的工作流：一个在日本手机上阅读，另一个在标准电子邮件格式收件人上阅读。
+You can create a workflow that contains two deliveries: one to be read on a Japanese mobile and another for recipients with a standard email format.
 
-为此，请在工作流中使用&#x200B;**[!UICONTROL Split]**&#x200B;活动，并将日文电子邮件格式（Deco邮件、装饰邮件和Decore邮件）定义为过滤条件。
+To do this, use the **[!UICONTROL Split]** activity in your workflow and define the Japanese email formats (Deco-mail, Decoration Mail and Decore Mail) as filtering conditions.
 
 ![](assets/deco-mail_08.png)
 
 ![](assets/deco-mail_07.png)
 
-#### 设计所有格式{#designing-a-delivery-for-all-formats}的投放
+#### Designing a delivery for all formats {#designing-a-delivery-for-all-formats}
 
-当Adobe Campaign根据域(电子邮件格式定义为&#x200B;**[!UICONTROL Unknown]**、**[!UICONTROL HTML]**&#x200B;或&#x200B;**[!UICONTROL Text]**&#x200B;的用户档案)动态管理格式时，您可以向所有收件人发送相同的投放。
+When Adobe Campaign dynamically manages the formats according to the domain (profiles with email formats defined as **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** or **[!UICONTROL Text]** ), you can send the same delivery to all of your recipients.
 
-与标准收件人一样，消息联系人将正确显示给日本手机上的用户。
+The message contact will display correctly for the users on Japanese mobiles, just as for the standard recipients.
 
 >[!IMPORTANT]
 >
->确保尊重与每个日文电子邮件格式（Deco邮件、装饰邮件和Decore邮件）相关的特殊功能。 有关限制的详细信息，请参阅[本节](#limitations-and-recommendations)。
+>Make sure to respect the special features associated with each Japanese email format (Deco-mail, Decoration Mail, and Decore Mail). For more information on limitations, refer to [this section](#limitations-and-recommendations).-->
