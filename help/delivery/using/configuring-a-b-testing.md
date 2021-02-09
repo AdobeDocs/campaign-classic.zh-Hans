@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
+source-git-commit: a341980e9d940857388bb2755e5eaa74824cf6ea
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 1. 添加[Split](../../workflow/using/split.md)活动，将目标人群分为多个子集。
 
-1. 打开活动，然后根据您的需求配置每个子集。 有关如何配置&#x200B;**[!UICONTROL Split]**&#x200B;活动的详细信息，请参阅此部分。
+1. 打开活动，然后根据您的需求配置每个子集。 有关如何配置&#x200B;**[!UICONTROL Split]**&#x200B;活动的详细信息，请参阅[本节](../../workflow/using/split.md)。
 
    在此示例中，我们要测试新闻稿的两个新主题，将每个主题呈现给目标人口的10%。
 
