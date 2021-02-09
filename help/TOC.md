@@ -1,6 +1,6 @@
 ---
 audience: end-user
-breadcrumb-title: Campaign Classic
+breadcrumb-title: 帮助中心
 product: campaign
 title: Campaign Classic 指南
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
+source-git-commit: 7351912ed34525479401ef4983a0bc8a78de85f8
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 95%
+source-wordcount: '2347'
+ht-degree: 93%
 
 ---
 
@@ -124,7 +124,11 @@ ht-degree: 95%
       + [创建电子邮件投放](delivery/using/creating-an-email-delivery.md)
       + [定义电子邮件内容](delivery/using/defining-the-email-content.md)
       + [定义互动内容](delivery/using/defining-interactive-content.md)
-      + [发送消息](delivery/using/sending-messages.md)
+      + 发送电子邮件{#sending-an-email}
+         + [确认电子邮件投放](delivery/using/sending-messages.md)
+         + [电子邮件参数](delivery/using/email-parameters.md)
+         + [使用增强的MTA发送](delivery/using/sending-with-enhanced-mta.md)
+         + [在日本手机上发送](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [附加文件](delivery/using/attaching-files.md)
    + 在手机上发送邮件 {#sending-messages-on-mobiles}
       + [SMS 渠道](delivery/using/sms-channel.md)
@@ -165,6 +169,19 @@ ht-degree: 95%
       + [使用外部收件人表](delivery/using/using-an-external-recipient-table.md)
       + [用例：根据条件选择种子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
       + [用例：配置字段替换](delivery/using/use-case--configuring-the-field-substitution.md)
+   + A/B 测试 {#a-b-testing}
+      + [A/B测试入门](delivery/using/get-started-a-b-testing.md)
+      + [配置A/B测试](delivery/using/configuring-a-b-testing.md)
+      + 用例 {#use-case}
+         + [关于此用例](delivery/using/a-b-testing-use-case.md)
+         + [创建定位工作流](delivery/using/a-b-testing-uc-targeting-workflow.md)
+         + [配置填充示例](delivery/using/a-b-testing-uc-population-samples.md)
+         + [创建投放模板](delivery/using/a-b-testing-uc-delivery-templates.md)
+         + [配置投放](delivery/using/a-b-testing-uc-configuring-deliveries.md)
+         + [创建脚本](delivery/using/a-b-testing-uc-script.md)
+         + [定义最终投放](delivery/using/a-b-testing-uc-final-delivery.md)
+         + [启动工作流](delivery/using/a-b-testing-uc-start-workflow.md)
+         + [分析结果](delivery/using/a-b-testing-uc-analyzing.md)
    + 订阅和推荐 {#subscriptions-and-referrals}
       + [关于服务和订阅](delivery/using/about-services-and-subscriptions.md)
       + [管理订阅](delivery/using/managing-subscriptions.md)
@@ -439,7 +456,6 @@ ht-degree: 95%
       + [关于工作流使用案例](workflow/using/about-workflow-use-cases.md)
       + 投放 {#deliveries}
          + [使用本地批准活动](workflow/using/using-the-local-approval-activity.md)
-         + [A/B 测试](workflow/using/a-b-testing.md)
          + [发送生日电子邮件](workflow/using/sending-a-birthday-email.md)
          + [加载投放内容](workflow/using/loading-delivery-content.md)
          + [跨渠道投放工作流](workflow/using/cross-channel-delivery-workflow.md)
