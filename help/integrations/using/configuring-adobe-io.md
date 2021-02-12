@@ -10,7 +10,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ec03e5bfdacc16ce148b24e200b517d73fae00b3
+source-git-commit: 3b82796182525ffa55b17fe8ac2f84f1bec230cf
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 4%
@@ -34,7 +34,7 @@ ht-degree: 4%
 
 * 有效的&#x200B;**组织标识符**:identity management系统(IMS)组织标识符是Adobe Experience Cloud内的唯一标识符，例如用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
 * a **开发人员对您组织的访问权**。  如果您需要请求IMS组织的系统管理员权限，请按照本页](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中详细的[过程为所有产品用户档案提供此访问权限。
->
+
 ## 第1步：创建／更新Adobe I/O项目{#creating-adobe-io-project}
 
 1. 访问Adobe I/O，并与IMS组织的系统管理员联系。
