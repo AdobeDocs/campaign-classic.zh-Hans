@@ -10,7 +10,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3b82796182525ffa55b17fe8ac2f84f1bec230cf
+source-git-commit: 3348156f020d4c8af7e1d57c46cba99205422696
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 4%
@@ -22,22 +22,22 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->如果您使用的是通过身份验证进行触发器集成的旧版本，则&#x200B;**您需要移至Adobe I/O，如下所述**。 旧版身份验证模式将于2021年4月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>如果您使用的是通过身份验证进行触发器集成的旧版本，**您需要移至Adobe I/O，如下所述**。 旧版身份验证模式将于2021年4月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
->请注意，在迁至Adobe I/O期间，某些传入触发器可能会丢失。
+>请注意，在移动到Adobe I/O期间，某些传入触发器可能会丢失。
 
 ## 先决条件{#adobe-io-prerequisites}
 
-此集成仅适用于从&#x200B;**Campaign Classic20.3、20.2.4、19.1.8和Gold Standard 11版本**&#x200B;开始。
+此集成仅适用于从&#x200B;**Campaign Classic 20.3、20.2.4、19.1.8和Gold Standard 11版本**&#x200B;开始。
 
-在开始此实施之前，请检查您具有：
+在启动此实施之前，请检查您拥有：
 
-* 有效的&#x200B;**组织标识符**:identity management系统(IMS)组织标识符是Adobe Experience Cloud内的唯一标识符，例如用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **开发人员对您组织的访问权**。  如果您需要请求IMS组织的系统管理员权限，请按照本页](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中详细的[过程为所有产品用户档案提供此访问权限。
+* 有效的&#x200B;**组织标识符**:Identity Management系统(IMS)组织标识符是Adobe Experience Cloud内的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
+* a **开发人员对您组织的访问**。  如果您需要请求IMS组织的系统管理员权限，请按照本页](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中详细的[过程为所有产品用户档案提供此访问权限。
 
-## 第1步：创建／更新Adobe I/O项目{#creating-adobe-io-project}
+## 第1步：创建/更新Adobe I/O Project {#creating-adobe-io-project}
 
-1. 访问Adobe I/O，并与IMS组织的系统管理员联系。
+1. 访问Adobe I/O，并与IMS组织的系统管理员一起登录。
 
    >[!NOTE]
    >
@@ -47,9 +47,9 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >如果您的客户端标识符为空，则可以直接在Adobe I/O **[!UICONTROL Create a New project]**。
+   >如果您的客户端标识符为空，则可以直接在Adobe I/O中&#x200B;**[!UICONTROL Create a New project]**。
 
-1. 使用提取的客户端标识符标识现有项目。 查找与上一步提取的客户端标识符相同的现有项目。
+1. 使用提取的客户端标识符标识现有项目。 查找具有与上一步提取的相同客户端标识符的现有项目。
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
@@ -77,7 +77,7 @@ ht-degree: 4%
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
-1. 从您的项目中，选择&#x200B;**[!UICONTROL Service Account (JWT)]**&#x200B;并复制以下信息：
+1. 在您的项目中，选择&#x200B;**[!UICONTROL Service Account (JWT)]**&#x200B;并复制以下信息：
    * **[!UICONTROL Client ID]**
    * **[!UICONTROL Client Secret]**
    * **[!UICONTROL Technical account ID]**
@@ -87,7 +87,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe I/O证书将在12个月后过期。 你每年都需要生成新的密钥对。
+>Adobe I/O证书将在12个月后过期。 您需要每年生成新的密钥对。
 
 ## 第2步：在Adobe Campaign{#add-credentials-campaign}中添加项目凭据
 
@@ -99,11 +99,11 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 
 >[!NOTE]
 >
->您应以base64 UTF-8格式对私钥进行编码。 编码新行之前，请记住从密钥中删除新行，私钥除外。 私钥必须与用于创建集成的私钥相同。 要测试私钥的base64编码，可使用[此网站](https://www.base64encode.org/)。
+>应将私钥以base64 UTF-8格式进行编码。 在对新行进行编码之前，请记住从密钥中删除新行，但私钥除外。 私钥必须与用于创建集成的私钥相同。 要测试私钥的base64编码，可以使用[此网站](https://www.base64encode.org/)。
 
-## 第3步：更新管道标记{#update-pipelined-tag}
+## 第3步：更新流水线标记{#update-pipelined-tag}
 
-要更新[!DNL pipelined]标记，您需要将验证类型更新到配置文件&#x200B;**config-&lt; instance-name >.xml**&#x200B;中的Adobe I/O项目，如下所示：
+要更新[!DNL pipelined]标记，您需要将身份验证类型更新到配置文件&#x200B;**config-&lt; instance-name >.xml**&#x200B;中的Adobe I/O项目，如下所示：
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
