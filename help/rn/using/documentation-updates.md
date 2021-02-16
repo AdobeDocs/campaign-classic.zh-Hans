@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 7473a64a7f3865d1e1eefde9607c539c2f632138
+source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3947'
 ht-degree: 93%
 
 ---
@@ -19,47 +19,51 @@ ht-degree: 93%
 
 本页列出了每月所有新增功能和文档更新以及 Campaign 版本。
 
-有关发行相关更新，请参阅[《Adobe Campaign Classic发行说明》](../../rn/using/latest-release.md)。
+有关发行相关更新，请参阅[Adobe Campaign Classic发行说明](../../rn/using/latest-release.md)。
 
 ## 2021 年 2 月 {#feb-2021}
 
 新增了一节，其中详细介绍了如何使用工作流执行A/B测试。 [阅读更多](../../delivery/using/get-started-a-b-testing.md)
 
-Adobe Campaign增强的MTA部分已移动[此处](../../delivery/using/sending-with-enhanced-mta.md)。
+“Adobe Campaign增强的MTA”部分已移动[此处](../../delivery/using/sending-with-enhanced-mta.md)。
 
-**发送电子邮件**&#x200B;部分已重新组织，并用新的子部分进行了说明。 [阅读更多](../../delivery/using/sending-messages.md)
+添加了一个新页面，以概述[!DNL Campaign Classic]中的跟踪功能。 [阅读更多](../../delivery/using/about-message-tracking.md)
+
+添加了疑难解答部分，以帮助您解决与跟踪相关的常见问题。 [阅读更多](../../delivery/using/tracking-troubleshooting.md)
+
+**发送电子邮件**&#x200B;部分已重新组织，并用新子部分进行了澄清。 [阅读更多](../../delivery/using/sending-messages.md)
 
 ## 2021 年 1 月 {#jan-2021}
 
-**[!UICONTROL Fork]**&#x200B;活动部分已丰富了最佳实践。 [阅读更多](../../workflow/using/fork.md)
+**[!UICONTROL Fork]**&#x200B;活动部分已用最佳实践加以丰富。 [阅读更多](../../workflow/using/fork.md)
 
 **CRM Connectors**&#x200B;部分已更新、改进和重新组织。 [阅读更多](../../platform/using/crm-connectors.md)。
 
-连接&#x200B;**Adobe Campaign和Microsoft Dynamics**&#x200B;的步骤现在在专用页面中详细介绍。 [阅读更多](../../platform/using/crm-ms-dynamics.md)。
+连接&#x200B;**Adobe Campaign和Microsoft Dynamics**&#x200B;的步骤现在在专用页中详细介绍。 [阅读更多](../../platform/using/crm-ms-dynamics.md)。
 
-Oracle点播API现已作为与活动连接的CRM弃用。 [阅读更多](../../rn/using/deprecated-features.md)。
+Oracle On Demand API现已作为与活动连接的CRM弃用。 [阅读更多](../../rn/using/deprecated-features.md)。
 
-了解如何在Adobe Campaign[此处](../../production/using/locate-tomcat-version.md)实例中查找嵌入的Tomcat Web servlet的当前版本。
+了解如何查找Adobe Campaign[此处](../../production/using/locate-tomcat-version.md)实例中使用的嵌入式Tomcat web servlet的当前版本。
 
-技术工作流及其关联包的列表已得到增强并集中到一个页面中。 [阅读更多](../../workflow/using/about-technical-workflows.md)
+技术工作流与其关联包的列表已得到增强并集中到一个页面中。 [阅读更多](../../workflow/using/about-technical-workflows.md)
 
-**监视**&#x200B;指南的故障排除部分已重新组织，并通过登陆页进行了增强。 [阅读更多](../../production/using/troubleshooting.md)。
+**监视**&#x200B;指南的疑难解答部分已经过重新组织，并用登陆页进行了增强。 [阅读更多](../../production/using/troubleshooting.md)。
 
-新的&#x200B;**导入和导出数据**&#x200B;部分可用于与工作流、数据压缩、加密和导入最佳实践相关的新页面。 [阅读更多](../../platform/using/get-started-data-import-export.md)
+新&#x200B;**导入和导出数据**&#x200B;部分可用于与工作流、数据压缩、加密和导入最佳实践相关的新页面。 [阅读更多](../../platform/using/get-started-data-import-export.md)
 
 ## 2020 年 12 月 {#dec-2020}
 
-**投放监测**&#x200B;节已重新组织为专题主题。 [阅读更多](../../delivery/using/about-delivery-monitoring.md)
+**投放监测**&#x200B;节已重组为专题主题。 [阅读更多](../../delivery/using/about-delivery-monitoring.md)
 
 添加了一个关于如何将发件人的IP地址添加到传递日志的用例。[阅读更多](../../delivery/using/delivery-dashboard.md#use-case)
 
 隐私常见问题解答已移至[此部分](../../platform/using/privacy-faq.md)。
 
-在如何使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动的合并功能方面添加了一个用例。 [阅读更多](../../workflow/using/deduplication-merge.md)
+添加了一个关于如何使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动的合并功能的用例。 [阅读更多](../../workflow/using/deduplication-merge.md)
 
-现在[此处](../../delivery/using/sms-protocol.md)提供SMS连接器协议和设置页面的完整说明。
+现在[此处](../../delivery/using/sms-protocol.md)提供SMS连接器协议和设置页的完整说明。
 
-**事务消息**&#x200B;部分已添加注释，警告事件文件夹不能设置为执行实例上的视图，以避免访问权限问题。 [阅读更多](../../message-center/using/event-collection.md)
+**Transactional messaging**&#x200B;部分已添加注释，警告事件文件夹不能设置为执行实例上的视图，以避免访问权限问题。 [阅读更多](../../message-center/using/event-collection.md)
 
 ## 2020 年 11 月{#nov-2020}
 
