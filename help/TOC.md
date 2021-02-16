@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 7351912ed34525479401ef4983a0bc8a78de85f8
+source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2349'
 ht-degree: 93%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 93%
       + [数据导入和导出入门](platform/using/get-started-data-import-export.md)
       + [使用工作流导入和导出数据](platform/using/import-export-workflows.md)
       + 使用通用导入和导出{#generic-imports-exports}
-         + [开始使用通用导入和导出](platform/using/about-generic-imports-exports.md)
+         + [开始使用通用进口和导出](platform/using/about-generic-imports-exports.md)
          + [创建导入和导出模板](platform/using/creating-import-export-templates.md)
          + [创建导入和导出作业](platform/using/creating-import-export-jobs.md)
          + [配置导入作业](platform/using/executing-import-jobs.md)
@@ -99,7 +99,7 @@ ht-degree: 93%
    + 连接器 {#connectors}
       + [关于连接器](platform/using/about-connectors.md)
       + CRM 连接器{#crm-connectors}
-         + [CRM连接器入门](platform/using/crm-connectors.md)
+         + [CRM Connectors入门](platform/using/crm-connectors.md)
          + [与Microsoft Dynamics 365连接](platform/using/crm-ms-dynamics.md)
          + [与CRM同步数据](platform/using/crm-data-sync.md)
       + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector.md)
@@ -201,6 +201,7 @@ ht-degree: 93%
       + [个性化 URL 跟踪](delivery/using/personalizing-url-tracking.md)
       + [访问跟踪日志](delivery/using/accessing-the-tracking-logs.md)
       + [测试跟踪](delivery/using/testing-tracking.md)
+      + [跟踪疑难解答](delivery/using/tracking-troubleshooting.md)
    + 可交付性管理 {#deliverability-management}
       + [关于投放能力](delivery/using/about-deliverability.md)
       + [要检查的要点](delivery/using/deliverability-key-points.md)
