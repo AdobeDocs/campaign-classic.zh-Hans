@@ -6,11 +6,11 @@ description: Campaign Classic 兼容性矩阵
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -178,7 +178,7 @@ ht-degree: 99%
 </td>
 </tr>
 <tr>
-<td>Microsoft Dynamics连接器</td>
+<td>Microsoft Dynamics 连接器</td>
 <td>
 <p>Web API：Dynamics 365 本地版和联机版</p>
 </td>
