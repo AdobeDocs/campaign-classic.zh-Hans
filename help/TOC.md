@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
 workflow-type: tm+mt
 source-wordcount: '2349'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -70,8 +70,8 @@ ht-degree: 93%
    + 导入和导出数据 {#importing-and-exporting-data}
       + [数据导入和导出入门](platform/using/get-started-data-import-export.md)
       + [使用工作流导入和导出数据](platform/using/import-export-workflows.md)
-      + 使用通用导入和导出{#generic-imports-exports}
-         + [开始使用通用进口和导出](platform/using/about-generic-imports-exports.md)
+      + 处理通用导入和导出{#generic-imports-exports}
+         + [通用导入和导出入门](platform/using/about-generic-imports-exports.md)
          + [创建导入和导出模板](platform/using/creating-import-export-templates.md)
          + [创建导入和导出作业](platform/using/creating-import-export-jobs.md)
          + [配置导入作业](platform/using/executing-import-jobs.md)
@@ -79,11 +79,11 @@ ht-degree: 93%
          + [监视作业执行](platform/using/monitoring-jobs-execution.md)
          + [一般导入范例](platform/using/import-operations-samples.md)
       + 管理数据加密和压缩{#managing-data-encryption-compression}
-         + [在处理文件之前解压缩或解密文件](platform/using/unzip-decrypt.md)
+         + [在处理之前解压缩或解密文件](platform/using/unzip-decrypt.md)
          + [在处理之前压缩或加密文件](platform/using/zip-encrypt.md)
       + 最佳实践和疑难解答{#best-practices}
          + [导入和导出最佳实践](platform/using/import-export-best-practices.md)
-         + [SFTP服务器最佳实践和疑难解答](platform/using/sftp-server-usage.md)
+         + [SFTP 服务器最佳实践和疑难解答](platform/using/sftp-server-usage.md)
    + 筛选数据 {#filtering-data}
       + [筛选选项](platform/using/filtering-options.md)
       + [创建过滤器](platform/using/creating-filters.md)
@@ -99,9 +99,9 @@ ht-degree: 93%
    + 连接器 {#connectors}
       + [关于连接器](platform/using/about-connectors.md)
       + CRM 连接器{#crm-connectors}
-         + [CRM Connectors入门](platform/using/crm-connectors.md)
-         + [与Microsoft Dynamics 365连接](platform/using/crm-ms-dynamics.md)
-         + [与CRM同步数据](platform/using/crm-data-sync.md)
+         + [CRM 连接器入门](platform/using/crm-connectors.md)
+         + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
+         + [与 CRM 同步数据](platform/using/crm-data-sync.md)
       + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector.md)
 + 发送消息 {#sending-messages}
    + [消息入门](delivery/using/communication-channels.md)
