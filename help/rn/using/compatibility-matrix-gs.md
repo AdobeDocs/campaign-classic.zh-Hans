@@ -6,18 +6,18 @@ description: Gold Standard 版本的 Campaign Classic 兼容性矩阵
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9d1f5561098bb867b8a62e8bcdb14f60829be1ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '514'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Gold Standard 兼容性矩阵{#compatibility-matrix-gs}
 
-本文档列出针对 **Adobe Campaign Classic Gold Standard** 19.1 内部版本支持的所有系统和组件。不属于此列表的产品和版本与此版本的Adobe Campaign不兼容。
+本文档列出针对 **Adobe Campaign Classic Gold Standard** 19.1 内部版本支持的所有系统和组件。此列表中未包含的产品和版本与此版本的 Adobe Campaign 不兼容。
 
 ## 重要说明{#important-notes-gs}
 
