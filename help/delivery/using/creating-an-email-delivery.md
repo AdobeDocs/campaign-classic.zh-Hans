@@ -28,5 +28,5 @@ ht-degree: 21%
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
-1. 用标签、代码和说明来识别投放。 如需详细信息，请参阅[此部分](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
-1. 单击&#x200B;**继续**&#x200B;确认此信息并显示消息配置窗口。
+1. 用标签、代码和说明识别投放。 如需详细信息，请参阅[此部分](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
+1. 单击&#x200B;**继续**&#x200B;以确认此信息并显示消息配置窗口。
