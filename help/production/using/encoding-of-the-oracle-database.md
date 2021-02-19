@@ -19,4 +19,4 @@ ht-degree: 58%
 
 Adobe Campaign使用默认的Oracle编码。
 
-如果使用不同的，则可能出现不兼容性。 如需详细信息，请参阅[此部分](../../installation/using/database.md#oracle)。
+如果使用不同的，则可能出现不兼容。 如需详细信息，请参阅[此部分](../../installation/using/database.md#oracle)。
