@@ -19,9 +19,9 @@ ht-degree: 4%
 
 ## 简介 {#introduction}
 
-可以在JavaScript中创建SOAP方法。 该函数简单支持应用进程，避免了在表单中开发JSP及其调用。
+可以在JavaScript中创建SOAP方法。 该函数简单的支持了应用程序进程，避免了JSP及其在表单中的调用。
 
-这些SOAP方法的行为方式与应用程序中本机定义的方法相同。 支持相同的属性：静态、仅密钥和const。
+这些SOAP方法的行为方式与应用程序中本机定义的方法相同。 支持相同的属性：静态、仅键和const。
 
 ## 定义方法库{#defining-a-method-library}
 
@@ -32,11 +32,11 @@ ht-degree: 4%
 
 ### 声明{#declaration}
 
-开始通过在模式中声明方法(有关如何创建和编辑模式的详细信息，请参阅[此部分](../../configuration/using/about-schema-edition.md))。
+开始通过在模式中声明方法(有关如何创建和编辑模式的详细信息，请参阅[本节](../../configuration/using/about-schema-edition.md))。
 
-它们的声明与本机方法的声明相似，只是需要添加指定定义所在方法库名称的“library”属性。
+它们的声明与本机方法的声明类似，只是需要添加“library”属性，该属性指定定义所在的方法库的名称。
 
-此名称与“JavaScript代码”类型实体的名称(命名空间符)重合。
+此名称与“JavaScript代码”类型实体的名称(命名空间)一致。
 
 示例:
 
@@ -56,7 +56,7 @@ testLog(msg)方法在nms:收件人扩展中声明
 
 ### 定义{#definition}
 
-SOAP方法以JavaScript函数的形式实现，该函数以表示库的脚本的形式分组。
+SOAP方法以JavaScript函数的形式实现，这些JavaScript函数分组在表示库的脚本中。
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ SOAP方法以JavaScript函数的形式实现，该函数以表示库的脚本的
 
 示例:
 
-以下JavaScript函数是上述方法的实现。 它应使用“cus:test”名称在“JavaScript代码”类型实体中定义。
+下面的JavaScript函数是上述方法的实现。 它应使用“cus:test”名称在“JavaScript代码”类型实体中定义。
 
 ```
 function nms_recipient_testLog(message)
@@ -87,14 +87,14 @@ function nms_recipient_testLog(message)
 
 函数的签名必须包含声明的每个“in”或“inout”参数的参数。
 
-具体案例：
+具体情况：
 
-* **非静态方法**:该函数必须首先包含一个附加参数，与以“xml”(E4X)类型对象形式传递的XML实体一致。
-* **“仅限键”类型方法**:该函数必须首先包含一个附加参数，与以字符串形式传递的键一致。
+* **非静态方法**:该函数必须首先包含一个附加参数，与以“xml”(E4X)类型对象形式传递的XML实体相符。
+* **“仅键”类型方法**:函数必须首先包含一个附加参数，与以字符串形式传递的键相符。
 
 **3.返回值**
 
-函数必须为每个“out”或“inout”类型参数返回一个值。 具体情况：如果声明方法时没有“static”、“key only”或“const”属性，则第一个返回值必须与修改后的实体一致。 可以返回新对象或返回第一个修改的参数。
+函数必须为每个“out”或“inout”类型参数返回一个值。 具体情况：如果声明方法时没有任何“static”、“key only”或“const”属性，则第一个返回值必须与修改后的实体一致。 可以返回新对象或返回第一个修改的参数。
 
 例如：
 
