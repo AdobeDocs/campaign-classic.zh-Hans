@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 收件箱渲染技术工作流程
-description: 本节介绍随收件箱渲染包一起安装的技术工作流
+title: 收件箱渲染技术工作流
+description: 本节介绍随收件箱渲染包一起安装的技术工作流程
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
