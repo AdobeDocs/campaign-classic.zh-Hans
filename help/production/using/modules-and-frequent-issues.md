@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # 模块和常见问题{#modules-and-frequent-issues}
 
-下面是受频繁问题影响的一列表模块：
+以下是受常见问题影响的模块列表:
 
 <table> 
  <thead> 
@@ -40,7 +40,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td> inMail </td> 
-   <td> 阅读弹回邮箱<br /> </td> 
+   <td> 阅读弹回邮件框<br /> </td> 
    <td> 如果弹回邮件不再转发，请检查此模块。<br /> </td> 
   </tr> 
   <tr> 
@@ -50,23 +50,23 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td> stat </td> 
-   <td> 维护MTA连接统计<br /> </td> 
+   <td> 维护MTA连接统计数据<br /> </td> 
    <td> 如果不再发送邮件，请检查此模块。<br /> </td> 
   </tr> 
   <tr> 
    <td> syslogd </td> 
    <td> 日志写入<br /> </td> 
-   <td> 如果日志文件中缺少某些日志，请检查以确保模块使用端口6666。 请参阅<a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">打开端口的列表</a>。<br /> </td> 
+   <td> 如果日志文件中缺少某些日志，请检查以确保模块使用端口6666。 请参阅<a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">打开端口列表</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> 跟踪 </td> 
-   <td> 整合和检索跟踪日志<br /> </td> 
+   <td> 合并和检索跟踪日志<br /> </td> 
    <td> 如果跟踪日志不再转发，请检查此模块。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 跟踪日志 </td> 
+   <td> trackinglogd </td> 
    <td> 跟踪日志写入和清除服务器<br /> </td> 
-   <td> 如果跟踪日志不再转发，且服务器上的文件中没有日志的痕迹，请检查此模块。 请参阅<a href="../../production/using/tracking-logs-issues.md" target="_blank">跟踪日志问题</a>。<br /> </td> 
+   <td> 如果跟踪日志不再转发，且服务器上的文件中没有日志的跟踪，请检查此模块。 请参阅<a href="../../production/using/tracking-logs-issues.md" target="_blank">跟踪日志问题</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> 监视 </td> 
