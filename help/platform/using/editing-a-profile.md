@@ -41,7 +41,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->选择&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;选项后，表示用户档案处于状态阻止列表，即用户档案表示希望不要联系(例如，单击新闻稿中的退订链接)。 通过任何渠道（电子邮件、直邮广告等）投放时都不会定位这些顾客。有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
+>选择&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;选项后，这表示用户档案处于状态阻止列表，即用户档案表示希望不要联系(例如，单击新闻稿中的退订链接)。 通过任何渠道（电子邮件、直邮广告等）投放时都不会定位这些顾客。有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
 
 ## “联系人信息”选项卡{#contact-information-tab}
 
