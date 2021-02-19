@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # 分布式营销{#distributed-marketing}
 
-默认情况下，下面详细介绍的工作流与&#x200B;**分布式营销**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[部分](../../campaign/using/about-distributed-marketing.md)。
+默认情况下，下面详细介绍的工作流随&#x200B;**分布式营销**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[部分](../../campaign/using/about-distributed-marketing.md)。
 
 <table> 
  <tbody> 
