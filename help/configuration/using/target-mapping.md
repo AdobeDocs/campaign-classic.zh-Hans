@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 目标映射{#target-mapping}
 
-目标映射创建在以下两种情况下是必需的：
+在以下两种情况下必须创建目标映射:
 
 * 如果您使用的收件人表不是Adobe Campaign提供的表，
 * 如果配置的过滤维度与目标映射屏幕上的标准定位维度不同。
@@ -26,15 +26,15 @@ ht-degree: 0%
 
 ## 创建和配置链接到自定义表{#creating-and-configuring-schemas-linked-to-the-custom-table}的模式
 
-在创建目标映射之前，需要进行多种配置，Adobe Campaign才能使用新的收件人模式。
+在创建目标映射之前，需要多种配置才能使Adobe Campaign使用新的收件人模式。
 
 为此，请应用以下步骤：
 
-1. 新建一个模式，它集成要使用的自定义表的字段。
+1. 新建一个模式，它集成了要使用的自定义表的字段。
 
-   有关详细信息，请参阅[模式引用(xtk:srcSchema)](../../configuration/using/about-schema-reference.md)。
+   有关详细信息，请参阅[模式参考(xtk:srcSchema)](../../configuration/using/about-schema-reference.md)。
 
-   在我们的示例中，我们将创建一个客户模式，一个非常简单的表，其中包含以下字段：ID，名字，姓氏，电子邮件地址，手机号码。 其目的是能够向存储在此表中的个人发送电子邮件或短信警报。
+   在我们的示例中，我们将创建一个客户模式，一个非常简单的表，其中包含以下字段：ID，名字，姓，电子邮件地址，手机号码。 其目的是能够向存储在此表中的个人发送电子邮件或短信警报。
 
    示例模式(cus:individual)
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Administration > Campaign management > Target mappings]**&#x200B;节点。
 1. 单击&#x200B;**新建**&#x200B;按钮以打开目标映射创建向导。
-1. 输入&#x200B;**标签**&#x200B;字段，并选择刚在&#x200B;**定位维度**&#x200B;字段中创建的模式。
+1. 输入&#x200B;**标签**&#x200B;字段，然后在&#x200B;**定位维度**&#x200B;字段中选择刚刚创建的模式。
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
@@ -92,17 +92,17 @@ ht-degree: 0%
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. 在下面的&#x200B;**存储**&#x200B;窗口中，输入扩展模式&#x200B;**后缀字段，将新模式与Adobe Campaign提供的现成模式区分开来。**
+1. 在以下&#x200B;**存储**&#x200B;窗口中，输入扩展模式&#x200B;**的后缀字段，以将新模式与Adobe Campaign提供的现成模式区分开。**
 
-   单击&#x200B;**[!UICONTROL Define new additional fields]**&#x200B;以选择要在投放中目标的维。
+   单击&#x200B;**[!UICONTROL Define new additional fields]**&#x200B;以选择要在投放中目标的维度。
 
-   默认情况下，排除管理与消息存储在同一个表中。 如果要为链接到您的存储的跟踪配置存储，请选中&#x200B;**生成跟踪模式**&#x200B;框。
+   默认情况下，排除管理与消息存储在相同的表中。 如果要为链接到您的存储的跟踪配置存储，请选中&#x200B;**为跟踪生成模式目标映射框。**
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   >Adobe Campaign不支持链接到相同广播和／或跟踪日志模式的多个收件人模式(称为定位模式)。 否则，这可能导致之后的数据协调出现异常。 有关此信息，请参阅[建议和限制](../../configuration/using/about-custom-recipient-table.md)页。
+   >Adobe Campaign不支持链接到相同广播和/或跟踪日志模式的多个收件人模式(称为定位模式)。 否则，这可能导致之后数据协调出现异常。 有关详细信息，请参阅[建议和限制](../../configuration/using/about-custom-recipient-table.md)页。
 
 1. 在&#x200B;**扩展**&#x200B;窗口中，选择要生成的可选模式(可用模式的列表取决于Adobe Campaign平台上安装的模块)。
 
@@ -110,16 +110,16 @@ ht-degree: 0%
 
 1. 单击&#x200B;**保存**&#x200B;按钮以关闭向导。
 
-   该向导使用开始模式创建使新目标映射工作所需的所有其他模式。
+   该向导使用开始模式创建使新目标映射正常工作所需的所有其他模式。
 
    ![](assets/mapping_schema_list.png)
 
 ## 使用目标映射{#using-target-mapping}
 
-有两种方法可以将新模式用作投放的目标:
+有两种方法可将新模式用作投放的目标:
 
 * 根据映射创建一个或多个投放模板
-* 创建目标时，在投放选择过程中直接选择映射，如下所示：
+* 创建目标时，在选择投放时直接选择映射，如下所示：
 
 ![](assets/mapping_selection_ciblage.png)
 
