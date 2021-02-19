@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # 操作员用户档案{#operator-profiles}
 
-使用交互的运算符有两种类型：优惠经理和投放经理。 他们每个人都具有特定权限，这些权限仅允许他们访问树和平台的某些部分。
+使用交互的运算符有两种类型：优惠经理和投放经理。 他们每个人都拥有特定的权限，这些权限仅允许他们访问树和平台的某些部分。
 
 * **[!UICONTROL Offer manager]** :创建和维护优惠。请注意，如果工作流中使用了优惠，则运算符需要位于&#x200B;**[!UICONTROL Administrator]**&#x200B;或&#x200B;**[!UICONTROL Offer managers]**&#x200B;运算符组中才能执行工作流。
 * **[!UICONTROL Delivery manager]** :批准和使用优惠
@@ -31,7 +31,7 @@ ht-degree: 5%
 
    ![](assets/offer_operators_create_001.png)
 
-分配给优惠管理者的权限使他们能够执行以下任务:
+分配给优惠经理的权限使他们能够执行以下任务:
 
 * 修改&#x200B;**[!UICONTROL Design]**&#x200B;环境。
 * 视图&#x200B;**[!UICONTROL Live]**&#x200B;环境。
@@ -43,7 +43,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >优惠经理只能在两种情况下批准优惠。 第一个是，如果没有人特别指定为审阅者，第二个是，负责创建模板（有权分配审阅者）的操作员在优惠模板中指定他／她作为审阅者，优惠基于该模板。
+   >优惠经理只能在两种情况下批准优惠。 第一个是，如果没有人特别指定为审阅者，第二个是，如果负责创建模板（有权分配审阅者）的操作员在优惠所基于的优惠模板中指定他/她为审阅者。
 
 ## 投放管理器{#delivery-manager}
 
@@ -52,17 +52,17 @@ ht-degree: 5%
 
    ![](assets/offer_operators_create_002.png)
 
-分配给投放经理的权限可以／允许他们执行以下任务:
+分配给投放经理的权限可以/允许他们执行以下任务:
 
 * 显示&#x200B;**[!UICONTROL Live]**&#x200B;环境。
 * 显示和修改优惠类别。
-* 如果指定优惠为其审阅者之一，则批准该审核。
+* 如果指定优惠为审核者之一，则批准审核。
 
    >[!NOTE]
    >
-   >投放管理者只有在优惠配置期间被定义为审核者时才能批准优惠。
+   >只有在投放配置期间将优惠定义为审阅者，优惠管理器才能批准该。
 
-## 根据运算符{#recap-of-rights-according-to-operator}的权利重置
+## 根据运算符{#recap-of-rights-according-to-operator}的权利回顾
 
 <table> 
  <tbody> 
@@ -78,47 +78,47 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td> 正在编辑的优惠/实时优惠<br /> </td> 
-   <td> 读／写<br /> </td> 
+   <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 收件人-环境<br /> </td> 
-   <td> 读／写<br /> </td> 
+   <td> 收件人 - 环境<br /> </td> 
+   <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
    <td> 管理<br /> </td> 
-   <td> 读／写<br /> </td> 
+   <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
    <td> 空格<br /> </td> 
-   <td> 读／写<br /> </td> 
+   <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
    <td> 预定义的优惠过滤器<br /> </td> 
-   <td> 读／写<br /> </td> 
+   <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
    <td> 类型学<br /> </td> 
-   <td> 读／写<br /> </td> 
+   <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
    <td> 分类规则<br /> </td> 
-   <td> 读／写<br /> </td> 
+   <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
    <td> 优惠目录<br /> </td> 
-   <td> 读／写<br /> </td> 
+   <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
    <td> 优惠类别<br /> </td> 
-   <td> 读／写<br /> </td> 
+   <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
  </tbody> 
@@ -142,7 +142,7 @@ ht-degree: 5%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 收件人-环境<br /> </td> 
+   <td> 收件人 - 环境<br /> </td> 
    <td> </td> 
    <td> 读取<br /> </td> 
   </tr> 
