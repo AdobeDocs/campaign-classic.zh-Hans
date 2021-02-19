@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c5c881d6919a8715e6588fb39793f562a16873bb
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->如果您使用的是通过身份验证进行触发器集成的旧版本，**您需要移至Adobe I/O，如下所述**。 旧版身份验证模式将于2021年4月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>如果您使用的是通过身份验证进行触发器集成的旧版本，**您需要移至Adobe I/O，如下所述**。 旧版 oAuth 身份验证模式将于 2021 年 4 月 30 日停用。[了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
 >请注意，在移动到Adobe I/O期间，某些传入触发器可能会丢失。
 
