@@ -35,7 +35,7 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >事件类型永远不应链接到多个模板。
+   >事件类型不应链接到多个模板。
 
 1. 输入性质和说明，然后单击&#x200B;**[!UICONTROL Continue]**&#x200B;以创建消息正文（请参阅[创建消息内容](../../message-center/using/creating-message-content.md)）。
 
