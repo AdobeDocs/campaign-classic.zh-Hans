@@ -43,41 +43,41 @@ ht-degree: 2%
 
 ## 配置优惠资格{#configuring-offer-eligibility}
 
-在&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中，定义优惠有效的期间，并可显示过滤器，这些应用于目标和优惠权重。
+在&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中，定义优惠的有效期，并可显示该期间、要应用于目标和优惠权重的过滤器。
 
 ### 定义优惠{#defining-the-eligibility-period-of-an-offer}的资格期
 
-要定义优惠的资格期，请使用下拉列表，并在日历中选择开始和结束日期。
+要定义优惠的资格期，请使用下拉列表，然后在日历中选择开始和结束日期。
 
 ![](assets/offer_eligibility_create_002.png)
 
 在这些日期之外，交互引擎不会选择优惠。 如果您还为优惠类别配置了资格日期，则限制最严格的期限将适用。
 
-### 过滤器{#filters-on-the-target}目标
+### 过滤器目标{#filters-on-the-target}
 
 您可以将过滤器应用于优惠目标。
 
-为此，请单击&#x200B;**[!UICONTROL Edit query]**&#x200B;链接，然后选择要应用的筛选器。 （请参阅[本节](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)）。
+要执行此操作，请单击&#x200B;**[!UICONTROL Edit query]**&#x200B;链接，然后选择要应用的筛选器。 （请参阅[此部分](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)）。
 
 ![](assets/offer_eligibility_create_003.png)
 
-如果已创建预定义过滤器，则可以从用户过滤器的列表中选择它们。 有关详细信息，请参阅[创建预定义过滤器](../../interaction/using/creating-predefined-filters.md)。
+如果已创建预定义过滤器，则可以从用户过滤器的列表中选择。 有关详细信息，请参阅[创建预定义过滤器](../../interaction/using/creating-predefined-filters.md)。
 
 ![](assets/offer_eligibility_create_004.png)
 
 ### 优惠权重{#offer-weight}
 
-要使引擎能够在优惠符合条件的目标之间做出决定，您需要为优惠分配一个或多个权重。 如有必要，您还可以将过滤器应用于目标，或限制权重将应用于的优惠空间。 具有更重要权重的优惠将优先于权重较少的优惠。
+要使引擎能够在目标符合的优惠之间做出决定，您需要为优惠分配一个或多个权重。 如有必要，您还可以将过滤器应用于目标，或限制权重将应用到的优惠空间。 较之权重较少的优惠，更青睐具有更显着权重的优惠。
 
-您可以为同一优惠配置多个权重，例如，区分子、特定目标甚至优惠空间。
+您可以为同一优惠配置多个权重，例如，区分子时段、特定目标甚至优惠空间。
 
-例如，优惠可以具有A权重（对于年龄在18到25岁的联系人）和B权重（对于高于该范围的联系人）。 如果优惠在整个夏天都符合条件，则还可在7月获得A权重，在8月获得B权重。
+例如，优惠可以具有A权重（对于年龄在18到25岁之间的联系人）和B权重（对于超过该范围的联系人）。 如果优惠在整个夏季都符合条件，它还可以在7月获得A权重，在8月获得B权重。
 
 >[!NOTE]
 >
 >可以根据权重所属类别的参数临时修改指定的优惠。 有关详细信息，请参阅[创建优惠类别](../../interaction/using/creating-offer-categories.md)。
 
-要在权重中创建优惠，请应用以下步骤：
+要在优惠中创建权重，请应用以下步骤：
 
 1. 单击 **[!UICONTROL Add]**.
 
@@ -89,9 +89,9 @@ ht-degree: 2%
 
    >[!IMPORTANT]
    >
-   >如果未输入权重(0)，则目标将不被视为符合优惠资格。
+   >如果未输入权重(0)，则目标将不被视为有资格获得优惠。
 
-1. 如果希望权重在给定期间应用，请定义资格日期。
+1. 如果您希望权重在给定期间内应用，请定义资格日期。
 
    ![](assets/offer_weight_create_002.png)
 
@@ -99,21 +99,21 @@ ht-degree: 2%
 
    ![](assets/offer_weight_create_003.png)
 
-1. 对目标应用过滤器。
+1. 对目标应用滤镜。
 
    ![](assets/offer_weight_create_004.png)
 
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以保存权重。
+1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;保存权重。
 
    ![](assets/offer_weight_create_005.png)
 
    >[!NOTE]
    >
-   >如果目标有资格获得所选优惠的多个权重，引擎将保持最佳（最高）权重。 调用优惠引擎时，每个联系人最多选择一次优惠。
+   >如果目标有资格对所选优惠进行多个权重，引擎将保持最佳（最高）权重。 在调用优惠引擎时，每个联系人的优惠最多被选择一次。
 
-### 优惠合格规则摘要{#a-summary-of-offer-eligibility-rules}
+### 优惠合格规则{#a-summary-of-offer-eligibility-rules}摘要
 
-配置完成后，合格规则仪表板中将显示该优惠的摘要。
+配置完成后，合格规则摘要将在优惠仪表板上可用。
 
 要视图它，请单击&#x200B;**[!UICONTROL Schedule and eligibility rules]**&#x200B;链接。
 
@@ -127,7 +127,7 @@ ht-degree: 2%
 
 1. 填写优惠内容的各个字段。
 
-   * **[!UICONTROL Title]** :指定要在优惠中显示的标题。警告：这不是指优惠的标签，该标签在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义。
+   * **[!UICONTROL Title]** :指定要在优惠中显示的标题。警告：这不是引用优惠的标签，该标签在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义。
    * **[!UICONTROL Destination URL]** :指定优惠的URL。要正确处理，它必须开始为“http://”或“https://”。
    * **[!UICONTROL Image URL]** :指定优惠图像的URL或访问路径。
    * **[!UICONTROL HTML content]** /  **[!UICONTROL Text content]** :在要使用的选项卡中输入优惠的正文。要生成跟踪，**[!UICONTROL HTML content]**&#x200B;必须由HTML元素组成，这些元素可以包含在`<div>`类型元素中。 例如，HTML页中`<table>`元素的结果将如下所示：
@@ -147,7 +147,7 @@ ht-degree: 2%
       </div>
    ```
 
-   [配置接受主张时的状态](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted)部分中显示定义接受URL。
+   [配置接受主题时的状态](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted)部分中显示定义接受URL。
 
    ![](assets/offer_content_create_002.png)
 
@@ -159,31 +159,31 @@ ht-degree: 2%
 
 ## 预览优惠{#previewing-the-offer}
 
-一旦配置了优惠内容，您就可以预览优惠，就像收件人显示时一样。 操作步骤：
+一旦配置了优惠内容，您就可以预览优惠，就像的收件人一样。 操作步骤：
 
 1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
 
    ![](assets/offer_preview_create_001.png)
 
-1. 选择要优惠的表示形式。
+1. 选择要视图的优惠的表示形式。
 
    ![](assets/offer_preview_create_002.png)
 
-1. 如果您已经个性化了优惠内容，请选择优惠目标以实现视图个性化。
+1. 如果您已个性化了优惠内容，请选择优惠目标以实现视图个性化。
 
    ![](assets/offer_preview_create_003.png)
 
 ## 在优惠{#creating-a-hypothesis-on-an-offer}上创建假设验证
 
-您可以在假设验证上创建优惠建议。 这样，您可以确定优惠对相关产品进行的购买的影响。
+您可以在优惠建议上创建假设验证。 这样，您就可以确定优惠对为相关产品进行的购买的影响。
 
 >[!NOTE]
 >
->这些假设验证通过响应管理器进行。 请核实您的许可协议。
+>这些假设验证通过响应管理器执行。 请核实您的许可协议。
 
 在优惠建议上执行的假设验证在其&#x200B;**[!UICONTROL Measure]**&#x200B;选项卡中引用。
 
-创建假设验证在[此页](../../campaign/using/about-response-manager.md)中有详细介绍。
+创建假设验证详见[此页](../../campaign/using/about-response-manager.md)。
 
 ![](assets/offer_hypothesis_001.png)
 
