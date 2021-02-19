@@ -25,13 +25,13 @@ ht-degree: 21%
 
 >[!IMPORTANT]
 >
->本文档中描述的安装过程从Campaign Classic18.4（内部版本8931+）开始适用。 如果运行的版本是以前的版本，请参阅此[技术说明](https://helpx.adobe.com/cn/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html)。
+>本文档中描述的安装过程从Campaign Classic18.4（内部版本8931+）开始适用。 如果您运行的版本是以前的版本，请参阅此[技术说明](https://helpx.adobe.com/cn/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html)。
 
 ## 关于隐私请求{#about-privacy-requests}
 
 为了帮助您促进隐私就绪，Adobe Campaign 允许您处理访问和删除请求。**访问权**&#x200B;和&#x200B;**被遗忘权**（删除请求）在[此部分](../../platform/using/privacy-management.md#right-access-forgotten)中进行了描述。
 
-让我们看看如何创建访问和删除请求，以及Adobe Campaign如何处理这些请求。
+让我们看看您如何创建访问和删除请求，以及Adobe Campaign如何处理这些请求。
 
 ### 原则{#principles}
 
@@ -54,30 +54,30 @@ Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中�
 
 要使用此功能，您需要通过&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** > **[!UICONTROL Adobe Campaign Package]**&#x200B;菜单安装&#x200B;**[!UICONTROL Privacy Data Protection Regulation]**&#x200B;包。 有关如何安装软件包的详细信息，请参阅[详细文档](../../installation/using/installing-campaign-standard-packages.md)。
 
-在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]**&#x200B;下创建了两个专用于隐私的新文件夹：
+在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]**&#x200B;下创建了两个特定于隐私的新文件夹：
 
-* **[!UICONTROL Privacy Requests]**:这是您创建隐私请求并跟踪其演变的地方。
-* **[!UICONTROL Namespaces]**:这是您定义用于在Adobe Campaign库中标识数据主体的字段的位置。
+* **[!UICONTROL Privacy Requests]**:您将在此处创建您的隐私请求并跟踪其演变。
+* **[!UICONTROL Namespaces]**:您将在此处定义用于在Adobe Campaign数据库中标识数据主体的字段。
 
 ![](assets/privacy-folders.png)
 
-在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**&#x200B;中，每天运行三个技术工作流来处理隐私请求。
+在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**&#x200B;中，每天运行三个技术工作流以处理隐私请求。
 
 ![](assets/privacy-workflows.png)
 
 * **[!UICONTROL Collect privacy requests]**:此工作流会生成存储在Adobe Campaign中的收件人数据，并使其可在隐私请求的屏幕中进行下载。
-* **[!UICONTROL Delete privacy requests data]**:此工作流将删除收件人中存储的Adobe Campaign数据。
-* **[!UICONTROL Privacy request cleanup]**:此工作流会删除90天以前的访问请求文件。
+* **[!UICONTROL Delete privacy requests data]**:此工作流将删除收件人存储在Adobe Campaign中的数据。
+* **[!UICONTROL Privacy request cleanup]**:此工作流会清除90天以前的访问请求文件。
 
-在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UICONTROL Named rights]**&#x200B;中，已添加名为right的&#x200B;**[!UICONTROL Privacy Data Right]**。 数据管理者必须具有此指定权限才能使用隐私工具。 这允许他们创建新请求、跟踪其发展、使用API等。
+在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UICONTROL Named rights]**&#x200B;中，已添加&#x200B;**[!UICONTROL Privacy Data Right]**&#x200B;命名权限。 数据管理者必须具有此命名权限才能使用隐私工具。 这允许他们创建新请求、跟踪其演变、使用API等。
 
 ![](assets/privacy-right.png)
 
 ### 命名空间 {#namesspaces}
 
-在创建隐私请求之前，您需要定义将要使用的命名空间。这是用于在Adobe Campaign库中标识数据主体的键。
+在创建隐私请求之前，您需要定义将要使用的命名空间。这是用于在Adobe Campaign数据库中标识数据主体的键。
 
-现成提供三种命名空间:电子邮件、电话和移动电话。 如果您需要其他命名空间(例如，收件人自定义字段)，则可以从&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**&#x200B;创建一个新字段。
+有三种命名空间现成可用：电子邮件、电话和手机。 如果您需要其他命名空间(例如，收件人自定义字段)，则可以从&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**&#x200B;创建新字段。
 
 ## 创建隐私请求 {#create-privacy-request-ui}
 
@@ -87,7 +87,7 @@ Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中�
 
    ![](assets/privacy-requests-folder.png)
 
-1. 此屏幕允许您视图所有当前隐私请求、其状态和日志。 单击&#x200B;**[!UICONTROL New]**&#x200B;以创建隐私请求。
+1. 此屏幕允许您视图所有当前的隐私请求、其状态和日志。 单击&#x200B;**[!UICONTROL New]**&#x200B;以创建隐私请求。
 
    ![](assets/privacy-request-new.png)
 
@@ -95,20 +95,20 @@ Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中�
 
    ![](assets/privacy-request-properties.png)
 
-隐私技术工作流每天运行一次并处理每个新请求：
+隐私技术工作流每天运行一次，并处理每个新请求：
 
 * 删除请求：收件人存储在Adobe Campaign中的数据被擦除。
-* 访问请求：收件人存储在Adobe Campaign中的数据将生成并作为XML文件在请求屏幕的左侧部分可用。
+* 访问请求：收件人存储在Adobe Campaign中的数据将生成并作为XML文件在请求屏幕的左侧提供。
 
 ![](assets/privacy-request-download.png)
 
-### 列表表{#list-of-tables}
+### 表{#list-of-tables}的列表
 
-执行删除或访问隐私请求时，Adobe Campaign会根据所有具有指向收件人表（自有类型）链接的表中的&#x200B;**[!UICONTROL Reconciliation value]**&#x200B;搜索所有数据主体的数据。
+当执行删除或访问隐私请求时，Adobe Campaign会根据所有表中具有指向收件人表（自有类型）链接的&#x200B;**[!UICONTROL Reconciliation value]**&#x200B;搜索所有数据主体的数据。
 
 以下是执行隐私请求时考虑的现成表的列表:
 
-* 收件人语(收件人)
+* 收件人(收件人)
 * 收件人投放日志(broadLogRcp)
 * 收件人跟踪日志(trackingLogRcp)
 * 归档的事件投放日志(broadLogEventHisto)
@@ -116,17 +116,17 @@ Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中�
 * 访客优惠建议（命题访客）
 * 访客 (visitor)
 * 订阅历史记录（子历史记录）
-* 订阅语(订阅)
+* 订阅(订阅)
 * 收件人优惠建议（命题Rcp）
 
-如果创建的自定义表具有指向收件人表（自己的类型）的链接，则也会考虑这些表。 例如，如果您有一个与收件人表链接的事务表和一个与事务表链接的事务详细信息表，则这两个表都将被考虑在内。
+如果创建的自定义表具有指向收件人表（自有类型）的链接，则也会考虑这些表。 例如，如果您有一个与收件人表链接的事务处理表和一个与事务处理表链接的事务处理详细信息表，则这两个表都将被考虑在内。
 
 >[!IMPORTANT]
 >
->如果您使用用户档案删除工作流执行隐私批请求，请考虑以下注释：
+>如果您使用用户档案删除工作流执行隐私批请求，请考虑以下说明：
 >* 通过用户档案删除工作流不处理子表。
 >* 您需要处理所有子表的删除。
->* Adobe建议您创建一个ETL工作流，该工作流将要删除的行添加到隐私访问表中，并让&#x200B;**[!UICONTROL Delete privacy requests data]**&#x200B;工作流执行删除。 出于性能原因，我们建议每天最多删除200个用户档案。
+>* Adobe建议您创建一个ETL工作流，该工作流将在“隐私访问”表中添加要删除的行，并让&#x200B;**[!UICONTROL Delete privacy requests data]**&#x200B;工作流执行删除。 出于性能原因，我们建议每天最多删除200个用户档案。
 
 
 ### 隐私请求状态 {#privacy-request-statuses}
@@ -137,25 +137,25 @@ Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中�
 * **[!UICONTROL Processing]** / **[!UICONTROL Retry in progress]**：工作流正在处理请求。
 * **[!UICONTROL Delete pending]**：工作流已识别要删除的所有收件人数据。
 * **[!UICONTROL Delete in progress]**：工作流正在处理删除。
-* **[!UICONTROL Delete Confirmation Pending]** （在两步流程模式下删除请求）:工作流已处理访问请求。请求手动确认以执行删除。 该按钮可用15天。
+* **[!UICONTROL Delete Confirmation Pending]** （在两步流程模式下删除请求）：工作流已处理访问请求。请求手动确认以执行删除。 该按钮可用15天。
 * **[!UICONTROL Complete]**：请求的处理已完成，并且没有错误。
-* **[!UICONTROL Error]**：工作流遇到错误。原因显示在&#x200B;**[!UICONTROL Request status]**&#x200B;列的隐私请求列表中。 例如，**[!UICONTROL Error data not found]** 表示在数据库中找不到与数据主体的 **[!UICONTROL Reconciliation value]** 匹配的收件人数据。
+* **[!UICONTROL Error]**：工作流遇到错误。原因显示在&#x200B;**[!UICONTROL Request status]**&#x200B;列的“隐私请求”列表中。 例如，**[!UICONTROL Error data not found]** 表示在数据库中找不到与数据主体的 **[!UICONTROL Reconciliation value]** 匹配的收件人数据。
 
-### 2步进程{#two-step-process}
+### 2步流程{#two-step-process}
 
-默认情况下，将激活&#x200B;**2-step process**。 使用此模式创建新的删除请求时，Adobe Campaign始终会先执行访问请求。 这允许您在确认删除之前检查数据。
+默认情况下，将激活&#x200B;**2步进程**。 使用此模式创建新的删除请求时，Adobe Campaign始终会先执行访问请求。 这允许您在确认删除之前检查数据。
 
 您可以从隐私请求版本屏幕更改此模式。 单击 **[!UICONTROL Advanced settings]**.
 
 ![](assets/privacy-request-advanced-settings.png)
 
-在激活了2步模式后，新Delete请求的状态将变为&#x200B;**[!UICONTROL Confirm Delete Pending]**。 从隐私请求屏幕下载生成的XML文件并检查数据。 要确认清除数据，请单击&#x200B;**[!UICONTROL Confirm delete data]**&#x200B;按钮。
+激活了2步模式后，新Delete请求的状态将更改为&#x200B;**[!UICONTROL Confirm Delete Pending]**。 从隐私请求屏幕下载生成的XML文件并检查数据。 要确认擦除数据，请单击&#x200B;**[!UICONTROL Confirm delete data]**&#x200B;按钮。
 
 ![](assets/privacy-request-delete-data.png)
 
 ### JSSP URL {#jspp-url}
 
-在处理访问请求时，Adobe Campaign会生成一个JSSP，它从收件人库检索数据并将其导出到存储在本地计算机上的XML文件中。 JSSP URL定义如下：
+在处理访问请求时，Adobe Campaign会生成一个JSSP，它从收件人库中检索数据并将其导出到本地计算机上存储的XML文件中。 JSSP URL定义如下：
 
 ```
 "$(serverUrl)+'/nms/gdpr.jssp?id='+@id"
@@ -165,13 +165,13 @@ Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中�
 
 此URL存储在&#x200B;**[!UICONTROL Privacy Requests (gdprRequest)]**&#x200B;模式的&#x200B;**[!UICONTROL "File location" (@urlFile)]**&#x200B;字段中。
 
-该信息在数据库中可用90天。 一旦技术工作流清理了请求，信息就会从数据库中删除，URL就会过时。 从网页下载数据之前，请检查URL是否仍然有效。
+该信息在数据库中可用90天。 一旦技术工作流清理了请求，信息将从数据库中删除，URL就会过时。 从网页下载数据之前，请检查URL是否仍然有效。
 
 以下是数据主体数据文件的示例：
 
 ![](assets/privacy-access-file.png)
 
-数据管理者可以轻松创建包含相应JSSP URL的Web应用程序，使数据主体的数据文件可以从网页中访问。
+数据控制者可以轻松创建包含相应JSSP URL的Web应用程序，以使数据主体的数据文件可从网页中访问。
 
 ![](assets/privacy-gdpr-jssp.png)
 
@@ -211,15 +211,15 @@ Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中�
 </body> </html>
 ```
 
-由于对数据主体数据文件的访问受到限制，因此必须禁用网页匿名访问。 只有具有&#x200B;**[!UICONTROL Privacy Data Right]**&#x200B;命名权限的运算符才能登录页面并下载数据。
+由于访问数据主体的数据文件受到限制，因此必须禁用网页匿名访问。 只有名为&#x200B;**[!UICONTROL Privacy Data Right]**&#x200B;的运算符才能登录页面并下载数据。
 
 ## 自动隐私请求进程{#automatic-privacy-request-api}
 
-Adobe Campaign提供&#x200B;**API**，它允许您设置自动隐私请求过程。
+Adobe Campaign提供了一个&#x200B;**API**，它允许您设置一个自动的隐私请求过程。
 
-使用API时，一般隐私过程与使用接口](#create-privacy-request-ui)的[相同。 唯一的区别是创建隐私请求。 将向Adobe Campaign发送包含请求信息的POST，而不是在活动中创建请求。 对于每个请求，将在&#x200B;**[!UICONTROL Privacy Requests]**&#x200B;屏幕中添加一个新条目。 然后，隐私技术工作流处理请求，与使用接口添加的请求相同。
+使用API时，一般的隐私过程与使用接口](#create-privacy-request-ui)的[相同。 唯一的区别是创建隐私请求。 将向活动发送包含请求信息的POST，而不是在Adobe Campaign中创建请求。 对于每个请求，将在&#x200B;**[!UICONTROL Privacy Requests]**&#x200B;屏幕中添加一个新条目。 然后，隐私技术工作流将处理该请求，与使用接口添加的请求相同。
 
-如果您使用API提交隐私请求，我们建议您保留为第一个删除请求激活的&#x200B;**2步进程**，以测试返回的数据。 测试完成后，您可以取消激活两步流程，以便自动运行删除请求流程。
+如果您使用API提交隐私请求，我们建议您保留为第一个删除请求激活的&#x200B;**2步进程**，以测试返回的数据。 测试完成后，您可以取消激活两步进程，以便自动运行删除请求进程。
 
 **[!UICONTROL CreateRequestByName]** JS API定义如下。
 
@@ -247,27 +247,27 @@ Adobe Campaign提供&#x200B;**API**，它允许您设置自动隐私请求过程
 
 >[!NOTE]
 >
->“规则”字段仅在使用Campaign Classic20.2(build 9178+)时可用。
+>“规定”字段仅在您使用Campaign Classic 20.2（内部版本9178+）时可用。
 >
->如果您正在迁移到20.2，并且您已经使用了API，则必须添加如上所示的“规范”字段。 如果您使用的是以前的版本，则可以继续使用API，而不使用“规则”字段。
+>如果您要迁移到20.2，并且您已经使用了API，则必须添加上面所示的“规则”字段。 如果您使用的是以前的版本，则可以继续使用API，而不使用“regulation”字段。
 
 ### 在外部{#invoking-api-externally}调用API
 
-以下是如何在外部调用API的示例（通过API进行身份验证，以及有关隐私API的详细信息）。 有关隐私API的详细信息，请参阅[API文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/s-nms-privacyRequest.html)。 您还可以查阅[Web服务调用文档](../../configuration/using/web-service-calls.md)。
+下面是一个示例，说明如何在外部调用API（通过API进行身份验证，并具体说明隐私API的详细信息）。 有关隐私API的详细信息，请查阅[API文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/s-nms-privacyRequest.html)。 您还可以查阅[Web服务调用文档](../../configuration/using/web-service-calls.md)。
 
 首先，您需要通过API执行身份验证：
 
 1. 通过以下url下载&#x200B;**xtk:session** WSDL:**`<server url>`/nl/jsp/schemawsdl.jsp?模式=xtk:session**。
 
-1. 使用“登录”方法，并将用户名和密码作为参数传递到请求中。 您将获得包含会话令牌的响应。 以下是使用SoapUI的示例。
+1. 使用“登录”方法，并将用户名和密码作为参数传递到请求中。 您将获得一个包含会话令牌的响应。 以下是使用SoapUI的示例。
 
    ![](assets/privacy-api.png)
 
-1. 使用返回的会话令牌作为所有后续API调用的身份验证。 24小时后过期。
+1. 使用返回的会话令牌作为所有子序列API调用的身份验证。 24小时后到期。
 
 然后调用隐私API:
 
-1. 从此URL下载WSDL:**`<server url>`/nl/jsp/schemawsdl.jsp?模式=nms:privacyRequest**。
+1. 从以下URL下载WSDL:**`<server url>`/nl/jsp/schemawsdl.jsp?模式=nms:privacyRequest**。
 
 1. 使用&#x200B;**[!UICONTROL CreateRequestByName]**&#x200B;创建特定的隐私请求。
 
@@ -277,21 +277,21 @@ Adobe Campaign提供&#x200B;**API**，它允许您设置自动隐私请求过程
 
    要帮助您执行上述步骤，请考虑以下事项：
 
-   * 可以在&#x200B;**nms:gdprRequest**&#x200B;模式上使用&#x200B;**queryDef**&#x200B;检查访问请求的状态。
-   * 可以在&#x200B;**nms:gdprRequestData**&#x200B;模式上使用&#x200B;**queryDef**&#x200B;获取访问请求的结果。
+   * 可以在&#x200B;**nms:gdprRequest**&#x200B;模式上使用&#x200B;**queryDef**&#x200B;来检查访问请求的状态。
+   * 可以在&#x200B;**nms:gdprRequestData**&#x200B;模式上使用&#x200B;**queryDef**&#x200B;来获取访问请求的结果。
    * 要能够从&#x200B;**&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;**&#x200B;下载XML文件，您必须登录并从列入白名单的IP访问它。 为此，请创建一个Web应用程序，允许您访问JSSP生成的文件。
 
 ### 从JS {#invoking-api-from-js}调用API
 
-以下示例说明如何从Campaign Classic内的JS调用API。
+下面是一个示例，说明如何在Campaign Classic中从JS调用API。
 
 >[!NOTE]
 >
->“规则”字段仅在使用Campaign Classic20.2(build 9178+)时可用。
+>“规定”字段仅在您使用Campaign Classic 20.2（内部版本9178+）时可用。
 >
->如果您正在迁移到20.2，并且您已经使用了API，则必须添加“规则”字段。 如果您使用的是以前的版本，则可以继续使用API，而不使用“规则”字段。
+>如果您要迁移到20.2，并且您已经使用了API，则必须添加“regulation”字段。 如果您使用的是以前的版本，则可以继续使用API，而不使用“regulation”字段。
 
-* 如果您&#x200B;**使用的是以前的版本（带有GDPR包）**，则可以继续使用不带“规则”字段的API，如下所示：
+* 如果您&#x200B;**使用的是上一个版本（带有GDPR包）**，则可以继续使用API而不使用“规则”字段，如下所示：
 
    ```
    loadLibrary("nms:gdpr.js");
@@ -316,7 +316,7 @@ Adobe Campaign提供&#x200B;**API**，它允许您设置自动隐私请求过程
    // User can use a simple queryDef with requestID as a parameter to check request status.
    ```
 
-* 如果&#x200B;**正在迁移到20.2**，并且您已经使用了API，则必须添加“规则”字段，如下所示：
+* 如果您正在&#x200B;**迁移到20.2**，并且您已经使用了API，则必须添加“regulation”字段，如下所示：
 
    ```
    loadLibrary("nms:gdpr.js");
@@ -347,7 +347,7 @@ Adobe Campaign提供&#x200B;**API**，它允许您设置自动隐私请求过程
    // User can use a simple queryDef with requestID as a parameter to check request status.
    ```
 
-* 如果您&#x200B;**使用Campaign Classic20.2(build 9178+)或更高版本**，则“regulation”字段为可选字段，如下所示：
+* 如果您&#x200B;**使用Campaign Classic 20.2(build 9178+)或更高版本**，则“regulation”字段为可选字段，如下所示：
 
    ```
    loadLibrary("nms:gdpr.js");
@@ -384,21 +384,21 @@ Adobe Campaign提供&#x200B;**API**，它允许您设置自动隐私请求过程
 
 访问和删除请求的配置和使用对于 GDPR 和 CCPA 均通用。此部分介绍特定于 CCPA 的个人数据销售的选择退出。
 
-除了Adobe Campaign提供的[同意管理](../../platform/using/privacy-management.md#consent-management)工具外，您还可以跟踪消费者是否选择退出个人信息的销售。
+除了Adobe Campaign提供的[同意管理](../../platform/using/privacy-management.md#consent-management)工具外，您还可以跟踪消费者是否已选择出售个人信息。
 
 消费者通过您的系统决定不允许将其个人信息销售给第三方。在 Adobe Campaign 中，您将能够存储和跟踪此信息。
 
-要使此功能正常工作，您需要扩展用户档案表并添加&#x200B;**[!UICONTROL Opt-Out for CCPA]**&#x200B;字段。
+为了使此功能正常工作，您需要扩展用户档案表并添加&#x200B;**[!UICONTROL Opt-Out for CCPA]**&#x200B;字段。
 
 >[!IMPORTANT]
 >
 >作为数据控制者，您负责接收数据主体的请求并跟踪 CCPA 的请求日期。作为技术提供商，我们仅提供选择退出的方式。有关您作为数据控制者的角色的更多信息，请参阅[个人数据和角色](../../platform/using/privacy-and-recommendations.md#personal-data)。
 
-### 入门项目{#ccpa-prerequisite}
+### 先决条件{#ccpa-prerequisite}
 
-要利用这些信息，您需要在Adobe Campaign Classic创建此领域。 对于此，您将向&#x200B;**[!UICONTROL Recipient]**&#x200B;表添加一个布尔字段。 创建新字段后，Campaign API 自动支持该字段。
+要利用此信息，您需要在Adobe Campaign Classic中创建此字段。 对于此，您将向&#x200B;**[!UICONTROL Recipient]**&#x200B;表添加一个布尔字段。 创建新字段后，Campaign API 自动支持该字段。
 
-如果使用自定义收件人表，则还需要执行此操作。
+如果您使用自定义收件人表，则还需要执行此操作。
 
 有关如何创建新字段的详细信息，请参阅[模式版文档](../../configuration/using/about-schema-edition.md)。
 
@@ -414,11 +414,11 @@ Adobe Campaign提供&#x200B;**API**，它允许您设置自动隐私请求过程
 
    ![](assets/privacy-ccpa-2.png)
 
-   这将扩展或创建&#x200B;**[!UICONTROL Recipient (cus)]**&#x200B;模式。 单击它以验证字段是否已正确添加。
+   这将扩展或创建&#x200B;**[!UICONTROL Recipient (cus)]**&#x200B;模式。 单击它可验证字段是否已正确添加。
 
    ![](assets/privacy-ccpa-3.png)
 
-1. 单击资源管理器的&#x200B;**[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**&#x200B;节点。 在&#x200B;**[!UICONTROL Recipient (nms)]**&#x200B;的“常规包”下，添加一个`<input>`元素，并使用步骤2中定义的相对路径作为xpath值。 有关识别表单的详细信息，请参阅[此部分](../../configuration/using/identifying-a-form.md)。
+1. 单击资源管理器的&#x200B;**[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**&#x200B;节点。 在&#x200B;**[!UICONTROL Recipient (nms)]**&#x200B;的“常规包”下，添加一个`<input>`元素，并使用步骤2中定义的相对路径作为xpath值。 有关标识表单的详细信息，请参阅[此部分](../../configuration/using/identifying-a-form.md)。
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>
@@ -448,6 +448,6 @@ Adobe Campaign提供&#x200B;**API**，它允许您设置自动隐私请求过程
 
    ![](assets/privacy-ccpa-6.png)
 
-1. 您可以单击该列，以根据选择退出信息对收件人进行排序。您还可以创建一个过滤器以仅显示已选择退出的收件人。 有关创建过滤器的详细信息，请参阅[此部分](../../platform/using/creating-filters.md)。
+1. 您可以单击该列，以根据选择退出信息对收件人进行排序。您还可以创建一个筛选器以仅显示已选择退出的收件人。 有关创建过滤器的详细信息，请参阅[此部分](../../platform/using/creating-filters.md)。
 
    ![](assets/privacy-ccpa-7.png)
