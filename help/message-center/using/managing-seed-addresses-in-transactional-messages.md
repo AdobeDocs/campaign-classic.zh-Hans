@@ -17,7 +17,7 @@ ht-degree: 11%
 
 # 管理交易消息中的种子地址{#managing-seed-addresses-in-transactional-messages}
 
-种子地址可让您在发送电子邮件或短信预览之前显示消息的验证、发送投放并测试消息个性化。 种子地址链接到投放，不能用于其他投放。
+种子地址可让您在发送电子邮件或SMS投放之前显示消息的预览、发送验证和测试消息个性化。 种子地址链接到投放，不能用于其他投放。
 
 ## 创建种子地址 {#creating-a-seed-address}
 
@@ -25,7 +25,7 @@ ht-degree: 11%
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
-1. 为其分配标签，以便以后进行选择。
+1. 为其分配一个标签，以便日后进行选择。
 
    ![](assets/messagecenter_create_seedaddr_002.png)
 
@@ -33,7 +33,7 @@ ht-degree: 11%
 
    ![](assets/messagecenter_create_seedaddr_003.png)
 
-1. 输入外部标识符:此可选字段允许您输入业务密钥（唯一ID、名称+电子邮件等） 这是您网站上所有用于识别您的用户档案的应用程序所通用的。 如果Adobe Campaign营销数据库中也存在此字段，则您随后可以将事件与数据库中的用户档案进行协调。
+1. 输入外部标识符:此可选字段允许您输入业务密钥（唯一ID、名称+电子邮件等） 这是您网站上所有用于识别您的用户档案的应用程序所通用的。 如果此字段也存在于Adobe Campaign营销数据库中，则您随后可以将事件与数据库中的用户档案进行协调。
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
