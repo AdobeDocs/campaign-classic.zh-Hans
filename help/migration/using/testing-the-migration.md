@@ -21,13 +21,13 @@ ht-degree: 1%
 
 根据您的配置，可通过多种方式执行迁移测试。
 
-您应具有测试／开发环境来执行迁移测试。 开发环境需遵守许可：检查您的许可合同或与Adobe Campaign的销售服务联系。
+您应具有测试/开发环境来执行迁移测试。 开发环境需遵守以下许可：查看您的许可合同或与Adobe Campaign的销售服务联系。
 
-1. 停止所有正在进行的开发，并将其交付到生产环境。
-1. 备份开发环境库。
+1. 停止所有正在进行的开发，并将其转移到生产环境。
+1. 备份开发环境数据库。
 1. 停止开发实例上的所有Adobe Campaign进程。
-1. 备份生产环境环境库，并将其恢复为开发。
-1. 在启动Adobe Campaign服务之前，请运行&#x200B;**freezeInstance.js**&#x200B;烧灼脚本，该脚本允许您清除启动备份时正在运行的任何对象的数据库。
+1. 备份生产环境环境库，并将其恢复为开发数据库。
+1. 在启动Adobe Campaign服务之前，运行&#x200B;**freezeInstance.js**&#x200B;烧灼脚本，用于清除启动备份时正在运行的任何对象的数据库。
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -35,14 +35,14 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >默认情况下，该命令在&#x200B;**dry**&#x200B;模式下启动，并列表该命令执行的所有请求，而不启动它们。 要执行烧灼请求，请在命令中使用&#x200B;**run**。
+   >默认情况下，该命令以&#x200B;**dry**&#x200B;模式启动，并列表该命令执行的所有请求，而不启动它们。 要执行烧灼请求，请在命令中使用&#x200B;**run**。
 
-1. 通过尝试恢复备份，确保备份正确无误。 确保您可以访问数据库、表、数据等。
-1. 在开发环境测试迁移过程。
+1. 通过尝试还原来确保备份正确无误。 确保您可以访问数据库、表、数据等。
+1. 在开发环境中测试迁移过程。
 
-   [迁移到Adobe Campaign7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)部分的先决条件中详细介绍了完整过程。
+   [迁移到Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)部分的先决条件中详细介绍了完整过程。
 
-1. 如果开发环境迁移成功，则可以迁移生产环境。
+1. 如果开发环境迁移成功，您可以迁移生产环境。
 
 >[!IMPORTANT]
 >
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe Campaign更新命令(**postupgrade**)允许您同步资源并更新模式和数据库。 此操作只能在应用程序服务器上执行一次。 同步资源后，使用&#x200B;**postupgrade**&#x200B;命令可以检测同步是否生成任何错误或警告。
+>Adobe Campaign更新命令(**postupgrade**)允许您同步资源并更新模式和数据库。 此操作只能在应用程序服务器上执行一次。 同步资源后，**postupgrade**&#x200B;命令允许您检测同步是否生成任何错误或警告。
 
 ## 迁移工具{#migration-tools}
 
@@ -62,7 +62,7 @@ ht-degree: 1%
    nlserver.exe config <option> -instance:<instanceName>
    ```
 
-* 或者在postupgrade:
+* 或在Postupgrade:
 
    ```
    nlserver.exe config -postupgrade <option> -instance:<instanceName>
@@ -72,7 +72,7 @@ ht-degree: 1%
 >
 >必须使用&#x200B;**-instance:`<instanceame>`**&#x200B;选项。 我们不建议使用&#x200B;**-allinstances**&#x200B;选项。
 
-### -showCustomEntities和-showDeletedEntities选项{#showcustomentities-and--showdeletedentities-options}
+### -showCustomEntities和 — showDeletedEntities选项{#showcustomentities-and--showdeletedentities-options}
 
 * **-showCustomEntities**&#x200B;选项显示所有非标准对象的列表:
 
@@ -86,7 +86,7 @@ ht-degree: 1%
    xtk_migration:opsecurity2 xtk:entity
    ```
 
-* **-showDeletedEntities**&#x200B;选项显示列表库或文件系统中缺失的所有标准对象。 对于每个缺少的对象，指定路径。
+* **-showDeletedEntities**&#x200B;选项显示数据库或文件系统中缺失的所有标准对象的列表。 为每个缺少的对象指定路径。
 
    ```
    nlserver.exe config -showDeletedEntities -instance:<instanceName>
@@ -100,9 +100,9 @@ ht-degree: 1%
 
 ### 验证进程{#verification-process}
 
-该过程作为postupgrade命令中的标准集成，允许您显示可能导致迁移失败的警告和错误。 **如果显示错误，则迁移尚未执行。** 如果发生这种情况，请更正所有错误，然后重新开始错误。
+作为postupgrade命令中的标准集成，此过程允许您显示可能导致迁移失败的警告和错误。 **如果显示错误，则未执行迁移。** 如果发生这种情况，请更正所有错误，然后重新开始错误。
 
-您可以使用以下命令开始验证过程（不进行迁移）:
+您可以使用以下命令开始验证过程（不进行迁移）：
 
 ```
 nlserver.exe config -postupgrade -check -instance:<instanceName>
@@ -110,9 +110,9 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
 
 >[!NOTE]
 >
->请忽略包含JST-310040代码的所有警告和错误。
+>请忽略所有包含JST-310040代码的警告和错误。
 
-搜索以下表达式（区分大小写）:
+将搜索以下表达式（区分大小写）：
 
 <table> 
  <thead> 
@@ -128,7 +128,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 投放个性化不再支持此类语法。 请参阅<a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>。 否则，检查值类型是否正确。<br /> </td> 
+   <td> 在投放个性化中不再支持此类语法。 请参阅<a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>。 否则，检查值类型是否正确。<br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -137,7 +137,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> 不能使用此库。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 登录(<br /> </td> 
+   <td> logon(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> 警告<br /> </td> 
    <td> 此连接方法必须不再使用。 请参阅<a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">已识别的Web应用程序</a>。<br /> </td> 
@@ -146,7 +146,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> new SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 仅当从处于<strong>sessionTokenOnly</strong>模式的安全区域执行的JavaScript代码中使用此函数时，才支持此函数。<br /> </td> 
+   <td> 仅当在从<strong>sessionTokenOnly</strong>模式下的安全区域执行的JavaScript代码中使用此函数时，才支持此函数。<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -167,7 +167,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
 
 ### 恢复选项{#restoration-option}
 
-通过此选项，可以恢复现成的对象（如果已修改）。 对于每个还原的对象，更改的备份会存储在所选文件夹中：
+通过此选项，可以在已修改的现成对象中恢复它们。 对于每个还原的对象，更改的备份将存储在所选文件夹中：
 
 ```
 nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instanceName>
@@ -175,8 +175,8 @@ nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<insta
 
 >[!NOTE]
 >
->我们强烈建议使用绝对文件夹路径并保留文件夹树结构。 例如：backupFolder\nms\srcSchema\billing.xml。
+>我们强烈建议使用绝对文件夹路径并保持文件夹树结构。 例如：backupFolder\nms\srcSchema\billing.xml。
 
 ### 恢复迁移{#resuming-migration}
 
-如果在迁移失败后重新启动程序升级，它将从停止的同一位置恢复。
+如果在迁移失败后重新启动Postupgrade，它将从停止它的同一位置恢复。
