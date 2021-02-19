@@ -21,46 +21,46 @@ ht-degree: 1%
 
 ![](assets/s_ncs_advuser_report_wizard_2.png)
 
-工具栏允许您导出、打印、存档或在Web浏览器中显示报表。
+例如，工具栏允许您导出、打印、存档或在Web浏览器中显示报表。
 
 ![](assets/s_ncs_advuser_report_wizard_04.png)
 
 ## 导出报告{#exporting-a-report}
 
-从下拉列表中选择要将报表导出到的格式。 （.xls、.pdf或。ods）。
+从下拉列表中，选择要将报表导出到的格式。 (.xls、.pdf或.ods)。
 
 ![](assets/s_ncs_advuser_report_wizard_06.png)
 
-当报表包含多个页面时，您需要对每个页面重复此操作。
+当报表包含多个页面时，您需要对每个页面重复操作。
 
-您可以在以PDF、Excel或OpenOffice格式导出报表的视图下配置报表。 打开Adobe Campaign浏览器并选择相关报告。
+在以PDF、Excel或OpenOffice格式导出报表的视图下，可以配置报表。 打开Adobe Campaign浏览器并选择相关报告。
 
-通过&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中报告的&#x200B;**[!UICONTROL Page]**&#x200B;活动访问导出选项。
+通过&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中报表的&#x200B;**[!UICONTROL Page]**&#x200B;活动访问导出选项。
 
-更改&#x200B;**[!UICONTROL Paper]**&#x200B;和&#x200B;**[!UICONTROL Margins]**&#x200B;的设置以满足您的需求。 您还可以仅授权以PDF格式导出页面。 要执行此操作，请取消选中&#x200B;**[!UICONTROL Activate OpenOffice/Microsoft Excel export]**&#x200B;选项。
+更改&#x200B;**[!UICONTROL Paper]**&#x200B;和&#x200B;**[!UICONTROL Margins]**&#x200B;的设置以满足您的需求。 您还可以授权仅以PDF格式导出页面。 要执行此操作，请取消选中&#x200B;**[!UICONTROL Activate OpenOffice/Microsoft Excel export]**&#x200B;选项。
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
 ### 导出到Microsoft Excel {#exporting-into-microsoft-excel}
 
-对于要导出到Excel的&#x200B;**[!UICONTROL List with group]**&#x200B;类型报表，适用以下建议和限制：
+对于要导出到Excel的&#x200B;**[!UICONTROL List with group]**&#x200B;类型报表，有以下建议和限制：
 
-* 这些报告不得包含任何空行。
+* 这些报表不得包含任何空行。
 
    ![](assets/export_limitations_remove_empty_line.png)
 
-* 列表的传说必须隐藏。
+* 列表的图例必须隐藏。
 
    ![](assets/export_limitations_hide_label.png)
 
-* 报告不必使用在单元格级别定义的特定格式。 最好使用&#x200B;**[!UICONTROL Form rendering]**&#x200B;定义表中单元格的格式。 可通过&#x200B;**[!UICONTROL Administration > Configuration > Form rendering]**&#x200B;访问&#x200B;**[!UICONTROL Form rendering]**。
+* 报表不必使用在单元格级别定义的特定格式。 最好使用&#x200B;**[!UICONTROL Form rendering]**&#x200B;定义表中单元格的格式。 可通过&#x200B;**[!UICONTROL Administration > Configuration > Form rendering]**&#x200B;访问&#x200B;**[!UICONTROL Form rendering]**。
 * 我们不建议插入HTML内容。
-* 如果报表包含多个表、图表等。 类型元素，它们将在另一个下导出。
+* 如果报表包含多个表、图表等。 键入元素，它们将在另一个下面导出。
 * 可以强制单元格中的回车符：此配置将保留在Excel中。 有关详细信息，请参阅此[定义单元格格式](../../reporting/using/creating-a-table.md#defining-cell-format)。
 
 ### 推迟导出{#postpone-the-export}
 
-您可以推迟导出报告，例如等待异步调用。 为此，请在页面的初始化脚本中输入以下参数：
+可以推迟导出报表，例如等待异步调用。 为此，请在页面的初始化脚本中输入以下参数：
 
 ```
 document.nl_waitBeforeRender = true;
@@ -70,15 +70,15 @@ document.nl_waitBeforeRender = true;
 
 ### 内存分配{#memory-allocation}
 
-导出某些大型报告时，可能会发生内存分配错误。
+导出某些大型报表时，可能会发生内存分配错误。
 
-在某些情况下，在&#x200B;**serverConf.xml**&#x200B;配置文件中指示的JavaScript的默认值&#x200B;**maxMB**（托管实例的&#x200B;**SKMS**）设置为64 MB。 如果在导出报告时遇到内存不足的错误，建议将此数字增加到512 MB:
+在某些情况下，在&#x200B;**serverConf.xml**&#x200B;配置文件中指示的JavaScript的默认值&#x200B;**maxMB**（对于托管实例，为&#x200B;**SKMS**）设置为64 MB。 如果在导出报告时遇到内存不足的问题，建议将此数字增加到512 MB:
 
 ```
 <javaScript maxMB="512" stackSizeKB="8"/>
 ```
 
-要对配置应用所做的更改，需要重新启动&#x200B;**nlserver**&#x200B;服务。
+要应用对配置所做的更改，需要重新启动&#x200B;**nlserver**&#x200B;服务。
 
 要进一步了解&#x200B;**serverConf.xml**&#x200B;文件，请参阅[本节](../../production/using/configuration-principle.md)。
 
@@ -94,21 +94,21 @@ document.nl_waitBeforeRender = true;
 
 ## 创建报告存档{#creating-report-archives}
 
-通过存档报表，您可以创建报表在不同时段的视图，例如显示给定时段的统计信息。
+通过存档报表，您可以创建报表在不同时段的视图，例如，显示给定时段的统计信息。
 
 要创建存档，请打开相关报告并单击相应的图标。
 
 ![](assets/s_ncs_advuser_report_wizard_07.png)
 
-要显示或隐藏现有存档，请单击显示／隐藏图标。
+要显示或隐藏现有存档，请单击显示/隐藏图标。
 
 ![](assets/s_ncs_advuser_report_history_06.png)
 
-存档日期显示在显示／隐藏图标下。 单击存档以视图它。
+存档日期显示在显示/隐藏图标下。 单击存档以视图它。
 
 ![](assets/s_ncs_advuser_report_history_04.png)
 
-可以删除报表存档。 为此，请转到存储报告的Adobe Campaign节点。 单击&#x200B;**[!UICONTROL Archives]**&#x200B;选项卡，选择要删除的选项卡，然后单击&#x200B;**[!UICONTROL Delete]**。
+可以删除报表存档。 为此，请转到存储报表的Adobe Campaign节点。 单击&#x200B;**[!UICONTROL Archives]**&#x200B;选项卡，选择要删除的选项卡，然后单击&#x200B;**[!UICONTROL Delete]**。
 
 ![](assets/s_ncs_advuser_report_history_01.png)
 
