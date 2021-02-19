@@ -31,7 +31,7 @@ ht-degree: 87%
 >
 >在您的实例上有哪些 Adobe Campaign 功能可用取决于已安装的模块和附加组件。根据您的权限及具体配置，部分功能可能无法使用。
 >
->在安装任何模块或加载项之前，您需要检查许可协议或与Adobe帐户管理人员联系。
+>在安装任何模块或加载项之前，您需要检查您的许可协议或与您的Adobe帐户主管联系。
 
 ### 控制台和 Web 访问 {#console-and-web-access}
 
@@ -49,11 +49,11 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 ### 语言{#languages}
 
-安装您的Adobe Campaign Classic实例时，会选择该语言。
+安装Adobe Campaign Classic实例时，会选择该语言。
 
 ![](assets/language.png)
 
-您可以选择五种不同的语言：
+您可以在五种不同语言之间进行选择：
 
 * 英语（英国）
 * 美式英语
@@ -67,7 +67,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 >[!CAUTION]
 >
->创建实例后，无法更改该语言。
+>创建实例后无法更改语言。
 
 ## 导览基本功能 {#navigation-basics}
 
@@ -99,7 +99,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 通过每个核心功能部分可以浏览各种可用的元素。要执行此操作，可使用 **[!UICONTROL Browsing]** 部分中的快捷方式。**[!UICONTROL Other choices]** 链接可用于访问其他所有页面，无论工作环境如何。
 
-您可以创建新元素(投放、Web 应用程序、工作流等) 使用屏幕左侧&#x200B;**[!UICONTROL Create]**&#x200B;部分的快捷键。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
+您可以创建新元素(投放、Web 应用程序、工作流等) 使用屏幕左侧&#x200B;**[!UICONTROL Create]**&#x200B;部分中的快捷键。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
 
 例如，在投放页面上，使用 **[!UICONTROL Create]** 按钮创建新的投放。
 
@@ -147,7 +147,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 默认情况下，Adobe Campaign 会加载列表的前 200 条记录。这意味着不一定会显示您所查看的数据库表的所有记录。您可以统计列表中的记录数量并加载更多记录。
 
-在列表屏幕的右下方，**[!UICONTROL counter]**&#x200B;显示已加载的记录数和库中的记录总数(应用任何过滤器后):
+在列表屏幕的右下部，**[!UICONTROL counter]**&#x200B;显示已加载的记录数和库中的记录总数(应用任何过滤器后):
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
@@ -291,7 +291,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 要从列表中导出数据，必须使用导出向导。要启动此向导，可从列表中选择要导出的元素，右键单击它后选择 **[!UICONTROL Export...]**。
 
-[通用导入和导出](../../platform/using/about-generic-imports-exports.md)中介绍了导入和导出功能的使用。
+[通用导入和导出](../../platform/using/about-generic-imports-exports.md)中说明了导入和导出功能的使用。
 
 >[!CAUTION]
 >
@@ -305,7 +305,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 此外也可以配置排序或组合排序标准。为此请执行以下操作步骤：
 
-1. **[!UICONTROL Configure list]** 在列表右下。
+1. **[!UICONTROL Configure list]** 和列表右侧。
 
    ![](assets/s_ncs_user_configure_list.png)
 
@@ -383,8 +383,8 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
 
 在表示一段时间的字段中（例如，某次投放的资源的有效期、已批准的任务期限等），可采用以下&#x200B;**单位**&#x200B;表示该值：
 
-* **[!UICONTROL s]** 几秒钟内，
-* **[!UICONTROL mn]** 几分钟内，
+* **[!UICONTROL s]** 几秒钟，
+* **[!UICONTROL mn]** 几分钟，
 * **[!UICONTROL h]** 几个小时，
 * **[!UICONTROL d]** 几天。
 
@@ -396,4 +396,4 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供其他Campaign Classic操作方法视频。[
+其他Campaign Classic操作视频[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)可用。
