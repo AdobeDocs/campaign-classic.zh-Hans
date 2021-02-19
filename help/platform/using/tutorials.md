@@ -26,7 +26,7 @@ ht-degree: 70%
 * [在电子邮件中集成动态内容](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)：了解 Campaign Classic 和 Target Standard 集成的基本知识。
 * [管理可投放性](../../delivery/using/deliverability-key-points.md)：了解与可投放性相关的概念和最佳实践，以及 Adobe Campaign Classic 提供的工具，从而最佳地发送您的投放内容。
 * [投放最佳实践](../../delivery/using/delivery-best-practices.md)：了解有关使用 Adobe Campaign Classic 设计投放内容并发送内容的最佳实践。
-* [执行构建版升级](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)：本指南会显示执行 Campaign Classic 构建版升级的重要步骤和最佳实践。
+* [执行构建版升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)：本指南会显示执行 Campaign Classic 构建版升级的重要步骤和最佳实践。
 * [安全配置检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)：了解有关检查安全配置和强化内部部署的核心元素
 
 通过查看以下用例和示例，进一步了解 Adobe Campaign：
@@ -43,7 +43,7 @@ ht-degree: 70%
 
 ### 教程视频
 
-探索Adobe Campaign在视频中的主要功能。 [了解详情](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/overview.html)
+了解Adobe Campaign在视频中的主要功能。 [了解详情](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/overview.html)
 
 ### 培训会话和视频
 
@@ -51,4 +51,4 @@ ht-degree: 70%
 
 ### Experience League课程
 
-您还可以访问[推荐的Adobe Campaign Classic课程](https://experienceleague.adobe.com/?lang=en#dashboard/learning):课程是精心策划的课程集，可快速帮助您掌握技能和知识。
+您还可以访问[推荐的课程](https://experienceleague.adobe.com/?lang=en#dashboard/learning) for Adobe Campaign Classic:这些课程由经验丰富的课程组成，可帮助您快速获得技能和知识。
