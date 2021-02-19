@@ -9,8 +9,8 @@ topic-tags: data-processing
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '197'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 * 重定向文件** nl6/var/`<instancename>`/redir**
 
-   这些服务器位于跟踪（通常称为“额面”）服务器上，并包含所有以前的活动重定向。 它们仍然被以前的活动使用。
+   这些服务器位于跟踪（通常称为“额面”）服务器上，并包含所有以前的活动重定向。 它们仍被以前的活动使用。
 
 * 日志文件：**nl6/var/`<instancename>`/log**
 
@@ -58,6 +58,6 @@ ht-degree: 0%
 
 ## 数据库 {#database}
 
-Adobe Campaign库包含在富客户端控制台中显示的所有信息以及所有业务线数据。
+Adobe Campaign库包含在Adobe Rich客户端控制台中显示的所有信息以及所有业务线数据。
 
 您的托管公司，特别是其数据库管理员，负责此操作。
