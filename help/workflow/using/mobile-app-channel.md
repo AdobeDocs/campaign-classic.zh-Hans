@@ -17,7 +17,7 @@ ht-degree: 18%
 
 # 移动应用程序渠道{#mobile-app-channel}
 
-默认情况下，下面详细介绍的工作流与&#x200B;**移动应用渠道**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[部分](../../delivery/using/about-mobile-app-channel.md)。
+默认情况下，下面详细介绍的工作流随&#x200B;**移动应用渠道**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[部分](../../delivery/using/about-mobile-app-channel.md)。
 
 <table> 
  <tbody> 
