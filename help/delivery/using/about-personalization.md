@@ -26,4 +26,4 @@ ht-degree: 49%
 
 >[!CAUTION]
 >
->以下变量是可用于个性化但不得修改的内部变量：**投放**、**message**、**dataSource**、**targetData**、**provider**、**优惠券**、**优惠券值**,**命题**。
+>以下变量是可用于个性化但不得修改的内部变量：**投放**、**message**、**dataSource**、**targetData**、**provider**、**coupon**、**couponValue**,**命题**。
