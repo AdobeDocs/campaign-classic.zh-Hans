@@ -19,11 +19,11 @@ ht-degree: 3%
 
 ## 关于登陆页创建{#about-landing-pages-creation}
 
-此用例说明如何使用数字编辑器从登陆页控制台创建Adobe Campaign。
+此用例说明如何使用数字编辑器从Adobe Campaign控制台创建登陆页。
 
-在开始以Adobe Campaign配置登陆页之前，请确保您有&#x200B;**一个或多个模板**&#x200B;来表示HTML页面。
+在开始在Adobe Campaign中配置登陆页之前，请确保您有&#x200B;**一个或多个模板**&#x200B;来表示HTML页。
 
-此用例的主要目的是使登陆页表单字段与Adobe Campaign中使用数字内容编辑器中的函数的内部字段相对应。
+此用例的主要目的是使登陆页表单域与Adobe Campaign中使用数字内容编辑器中的函数的内部域相对应。
 
 ## 创建登陆页{#creating-the-landing-page}
 
@@ -37,13 +37,13 @@ ht-degree: 3%
 1. 单击&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡。
 1. 删除&#x200B;**End**&#x200B;活动。
 1. 在&#x200B;**[!UICONTROL Storage]**&#x200B;活动后添加&#x200B;**[!UICONTROL Page]**&#x200B;活动。
-1. 编辑&#x200B;**第2页**&#x200B;活动，然后取消选中&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Activate outbound transitions]**&#x200B;选项。
+1. 编辑&#x200B;**第2**&#x200B;页活动，然后取消选中&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Activate outbound transitions]**&#x200B;选项。
 
    ![](assets/dce_uc1_transition.png)
 
 1. 保存更改。
 
-然后，您将获得以下排序：
+然后，您将获得以下顺序：
 
 ![](assets/dce_uc1_edition_activity.png)
 
@@ -51,7 +51,7 @@ ht-degree: 3%
 >
 >有关创建Web 应用程序的详细信息，请参阅[此部分](../../web/using/creating-a-new-web-application.md)。
 
-## 步骤1 —— 选择并加载模板{#step-1---selecting-and-loading-templates}
+## 步骤1 — 选择并加载模板{#step-1---selecting-and-loading-templates}
 
 本节将介绍如何为Web 应用程序的每页&#x200B;**导入HTML内容**。
 
@@ -71,7 +71,7 @@ ht-degree: 3%
 1. 选择要使用的HTML文件。
 1. 单击&#x200B;**打开**&#x200B;以开始导入。
 
-   加载过程中，将显示共享文件的列表。 导入系统检查链接到所选HTML的所有文件（CSS、图像等）是否在此处。
+   在加载过程中，将显示共享文件的列表。 导入系统会检查链接到所选HTML的所有文件（CSS、图像等）是否在其中。
 
    完成导入后，单击&#x200B;**[!UICONTROL Close]**&#x200B;按钮。
 
@@ -86,13 +86,13 @@ ht-degree: 3%
 
    ![](assets/dce_uc1_pagelabel.png)
 
-对插入Web 应用程序的每个页面应用这些步骤。
+对在Web 应用程序中插入的每个页面应用这些步骤。
 
 >[!CAUTION]
 >
->**数字内容编辑器为加载的HTML页执行JavaScript代码。** HTML模板中可能显示在Adobe Campaign界面中的JavaScript错误。这些错误与编辑器无关。 要检查导入的文件中是否没有错误，建议先在浏览器(Internet Explorer/Firefox/Chrome)中测试这些错误，然后再将文件导入数字内容编辑器。
+>**数字内容编辑器为加载的HTML页执行JavaScript代码。** HTML模板中可能显示在Adobe Campaign界面中的JavaScript错误。这些错误与编辑器无关。 要检查导入的文件中是否没有错误，建议在将文件导入数字内容编辑器之前，先在浏览器(Internet Explorer/Firefox/Chrome)中测试这些文件。
 
-## 步骤2 —— 配置内容{#step-2---configuring-the-content}
+## 步骤2 — 配置内容{#step-2---configuring-the-content}
 
 在本节中，我们将调整导入的内容并将数据库的字段链接到网页的表单。 以前创建的Web 应用程序是：
 
@@ -102,7 +102,7 @@ ht-degree: 3%
 
 让我们通过更改页面颜色来开始。 操作步骤：
 
-1. 打开&#x200B;**[!UICONTROL Collection]**&#x200B;页面。
+1. 打开&#x200B;**[!UICONTROL Collection]**&#x200B;页。
 1. 单击背景。
 1. 单击右侧的&#x200B;**背景颜色**。
 1. 选择新的背景颜色。
@@ -110,7 +110,7 @@ ht-degree: 3%
 
    ![](assets/dce_uc1_changecolor.png)
 
-1. 应用这些相同的进程以更改按钮的颜色
+1. 应用这些相同的过程以更改按钮的颜色
 
    ![](assets/dce_uc1_finalcolor.png)
 
@@ -118,9 +118,9 @@ ht-degree: 3%
 
 为了保存提供的信息，我们将将页面中的字段链接到数据库中的字段。
 
-1. 选择表单字段。
+1. 选择表单域。
 1. 编辑编辑器右侧的&#x200B;**[!UICONTROL Field]**&#x200B;部分。
-1. 选择要链接到所选字段的数据库字段。
+1. 选择要链接到选定字段的数据库字段。
 
    ![](assets/dce_uc1_mapping.png)
 
@@ -144,7 +144,7 @@ ht-degree: 3%
 
 通过此步骤，您可以个性化“感谢”页面。 操作步骤：
 
-1. 打开&#x200B;**[!UICONTROL Thank you]**&#x200B;页面。
+1. 打开&#x200B;**[!UICONTROL Thank you]**&#x200B;页。
 1. 将光标放在文本区域中，您希望在该区域插入收件人的名字。
 1. 在工具栏的&#x200B;**[!UICONTROL Insert]**&#x200B;菜单中选择&#x200B;**[!UICONTROL Personalization field]**。
 1. 选择名。
@@ -155,7 +155,7 @@ ht-degree: 3%
 
 ![](assets/dce_uc1_edit_champperso.png)
 
-## 步骤3 —— 发布内容{#step-3---publishing-content}
+## 步骤3 — 发布内容{#step-3---publishing-content}
 
 内容从Web 应用程序仪表板发布。 单击&#x200B;**[!UICONTROL Publish]**&#x200B;按钮以运行它。
 
