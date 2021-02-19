@@ -17,12 +17,12 @@ ht-degree: 5%
 
 # 关于出站渠道{#about-outbound-channels}
 
-优惠可以使用入站或出站渠道显示在各种空间中。 本章详细介绍了出站渠道。
+优惠可以使用入站或出站渠道在各种空间中显示。 本章详细介绍了出站渠道。
 
-![](assets/do-not-localize/how-to-video.png) 您还可以观看此视 [](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) 频，其中详细介绍如何在出站优惠上传送渠道。
+![](assets/do-not-localize/how-to-video.png) 您还可以观看此视 [](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) 频，详细了解如何在出站渠道上传送优惠。
 
-要使优惠由优惠引擎选择，它必须经过批准，并可在实时环境中使用。 有关详细信息，请参阅[批准和激活优惠](../../interaction/using/approving-and-activating-an-offer.md)。
+要使优惠引擎选择优惠，它必须已获得批准，并可在实时环境中使用。 有关详细信息，请参阅[批准和激活优惠](../../interaction/using/approving-and-activating-an-offer.md)。
 
-通过出站通信渠道进行优惠演示通常以批处理模式（参见[术语表](../../interaction/using/glossary.md)）通过直接邮件、电子邮件或SMS活动等进行。 您还可以使用统一模式，尤其是与消息中心（有关详细信息，请参阅[消息中心](../../message-center/using/about-transactional-messaging.md)指南）。
+通过出站通信渠道进行优惠演示时，通常以批处理模式（参见[词汇表](../../interaction/using/glossary.md)）通过直接邮件、电子邮件或SMS活动等进行。 您还可以使用统一模式，尤其是与Message Center（有关详细信息，请参阅[Message Center](../../message-center/using/about-transactional-messaging.md)指南）。
 
-提供各种选项来展示优惠。 例如，通过投放、活动、投放概要，甚至通过工作流活动。
+提供多种选项来展示优惠。 例如，通过投放、活动、投放概要，甚至通过工作流活动。
