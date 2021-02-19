@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 投放状态
-description: 进一步了解投放仪表板中的可用状态。
+title: 传递状态
+description: 进一步了解您的投放仪表板中可用的状态。
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
@@ -10,18 +10,18 @@ translation-type: tm+mt
 source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
 workflow-type: tm+mt
 source-wordcount: '592'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 
-# 投放状态{#delivery-statuses}
+# 传递状态 {#delivery-statuses}
 
 <!--ajouter intro 
 
 ajouter screenshot -->
 
-发送投放后，投放仪表板将显示状态，允许您监视发送是否成功。 可能的状态详见以下部分。
+发送投放后，投放仪表板将显示状态，允许您监视发送是否成功。 以下部分详细介绍了可能的状态。
 
 ![](assets/delivery-status.png)
 
@@ -29,11 +29,11 @@ ajouter screenshot -->
 
 **相关主题：**
 
-* [投放仪表板](../../delivery/using/delivery-dashboard.md)
-* [投放疑难解答](../../delivery/using/delivery-troubleshooting.md)
+* [传递仪表板](../../delivery/using/delivery-dashboard.md)
+* [传递疑难解答](../../delivery/using/delivery-troubleshooting.md)
 * [关于投放能力](../../delivery/using/about-deliverability.md)
 
-## 列表状态{#list-delivery-statuses}
+## 列表投放状态{#list-delivery-statuses}
 
 <table> 
  <thead> 
@@ -45,15 +45,15 @@ ajouter screenshot -->
  <tbody> 
   <tr> 
    <td> 已发送<br /> </td> 
-   <td> 投放已正确发送到消息提供程序(但收件人未必收到)。<br /> </td> 
+   <td> 投放已正确发送到消息提供程序(但收件人未必收到它)。<br /> </td> 
   </tr> 
   <tr> 
    <td> 已忽略<br /> </td> 
-   <td> 由于投放地址出错，该收件人未被发送到该地址。 它处于阻止列表状态、隔离状态、未提供或重复。<br /> </td> 
+   <td> 由于投放的地址出错，未将其发送到收件人。 它处于阻止列表、隔离、未提供或重复。<br /> </td> 
   </tr> 
   <tr> 
    <td> 失败<br /> </td> 
-   <td> 例如，由于地址无效或收件箱已满，投放无法到达收件人。 它还可以链接到个性化块的问题，因为当模式与投放映射不匹配时，这些数据可能会生成错误。 请参阅<a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">了解投放故障</a><br /> </td> 
+   <td> 例如，由于地址无效或收件箱已满，投放无法到达收件人。 它还可以链接到个性化块的问题，因为当模式与投放映射不匹配时，它们会生成错误。 请参阅<a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">了解投放故障</a><br /> </td> 
   </tr>
   <tr> 
    <td> 挂起<br /> </td> 
@@ -65,7 +65,7 @@ ajouter screenshot -->
   </tr>  
   <tr> 
    <td> 投放已取消<br /> </td> 
-   <td> 操作符已取消投放。<br /> </td> 
+   <td> 操作符取消了投放。<br /> </td> 
   </tr> 
   <tr> 
    <td> 由服务提供商<br />考虑 </td> 
@@ -76,7 +76,7 @@ ajouter screenshot -->
    <td> 收件人在其移动设备上收到SMS。<br /> </td> 
   </tr>
   <tr> 
-   <td> 已发送给服务提供商<br /> </td> 
+   <td> 已发送到服务提供商<br /> </td> 
    <td> 投放已发送到SMS服务提供商，但尚未收到。<br />
    </td> 
   </tr> 
@@ -87,25 +87,25 @@ ajouter screenshot -->
  </tbody> 
 </table>
 
-要了解如何优化Adobe Campaign电子邮件的可传送性，请参阅Adobe Campaign[可传送性最佳实践指南](../../delivery/using/deliverability-key-points.md)和[此页](../../delivery/using/about-deliverability.md)。
+要了解如何优化Adobe Campaign电子邮件的可交付性，请参阅Adobe Campaign[可交付性最佳实践指南](../../delivery/using/deliverability-key-points.md)和[本页](../../delivery/using/about-deliverability.md)。
 
 ## 挂起状态{#pending-status}
 
-确认投放后，您可以看到投放的状态为&#x200B;**[!UICONTROL Pending]**。 此状态意味着执行进程正在等待某些资源的可用性。
+确认投放后，您可以看到投放的状态为&#x200B;**[!UICONTROL Pending]**。 此状态表示执行进程正在等待某些资源的可用性。
 
-**[!UICONTROL Pending]**&#x200B;状态首先表示您的投放已计划并待定到指定日期。 有关详细信息，请参阅[投放调度](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending)部分。
+**[!UICONTROL Pending]**&#x200B;状态首先表示您的投放已计划并待处理到指定日期。 有关详细信息，请参阅[投放调度](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending)部分。
 
-如果投放未发送，且其状态仍为&#x200B;**[!UICONTROL Pending]**，则可能是以下结果：
+如果未发送投放，且其状态仍为&#x200B;**[!UICONTROL Pending]**，则可能是以下结果：
 
-* 在投放服务器上运行模块和进程并管理电子邮件发送的MTA（邮件传输代理）可能尚未启动，或需要重新启动。
+* 在投放服务器上运行模块和进程并管理电子邮件发送的MTA（邮件传输代理）可能尚未启动或需要重新启动。
 
-   要检查此项并在必要时开始模块，请应用以下步骤：
+   要选中此项并在必要时开始模块，请应用以下步骤：
 
    >[!NOTE]
    >
-   >此操作可以使用访问活动服务器的&#x200B;**本地**&#x200B;或&#x200B;**混合**&#x200B;托管模型执行（请参见[托管模型](../../installation/using/hosting-models.md)）。
+   >此操作可以使用&#x200B;**内部部署**&#x200B;或&#x200B;**混合**&#x200B;托管模型执行，并访问活动服务器（请参阅[托管模型](../../installation/using/hosting-models.md)）。
 
-   1. 检查您的`mta@<instance>`模块是否已在MTA服务器上启动。
+   1. 检查您的`mta@<instance>`模块是否已在您的MTA服务器上启动。
 
       ```
       nlserver pdump
@@ -133,7 +133,7 @@ ajouter screenshot -->
 
    同时活动的限制在&#x200B;**[!UICONTROL NmsOperation_LimitConcurrency]**&#x200B;选项中定义。 默认值为 10。
 
-   了解有关此页[中选项的更多信息。](../../installation/using/configuring-campaign-options.md)
+   了解有关[本页](../../installation/using/configuring-campaign-options.md)中选项的更多信息。
 
 
 **相关主题：**
