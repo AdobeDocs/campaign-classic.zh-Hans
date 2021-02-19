@@ -20,21 +20,21 @@ ht-degree: 7%
 您可以更改或恢复丢失的密码。
 有两种可能的情况：
 
-* [Adobe Campaign操作员丢失密码](#password-lost-by-campaign-operator)
+* [密码由Adobe Campaign运算符丢失](#password-lost-by-campaign-operator)
 * [内部密码丢失](#internal-password-lost) （仅限预置型客户）
 
-## 活动运算符{#password-lost-by-campaign-operator}丢失密码
+## 活动运算符{#password-lost-by-campaign-operator}丢失了密码
 
-如果Adobe Campaign操作员丢失了其密码，您可以更改密码。
+如果Adobe Campaign运算符丢失了其密码，您可以更改它。
 为此请执行以下操作步骤：
 
-1. 通过具有管理员权限的操作员进行连接。
+1. 通过具有管理员权限的操作员连接。
 1. 右键单击运算符。
 1. 选择&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**。
 
    ![](assets/operator-passwd.png)
 
-1. 设置操作员的新密码。 我们建议操作员在首次重新连接时更改其口令。
+1. 设置操作员的新密码。 我们建议操作员在首次重新连接时更改其密码。
 
 ## 内部密码丢失{#internal-password-lost}
 
@@ -47,16 +47,16 @@ ht-degree: 7%
 
 1. 编辑&#x200B;**/usr/local/neolane/nl6/conf/serverConf.xml**&#x200B;文件。
 
-1. 转至&#x200B;**internalPassword**&#x200B;行。
+1. 转到&#x200B;**internalPassword**&#x200B;行。
 
    ```
    <!-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword="myPassword"/>
    ```
 
-1. 删除引号中的字符串，在本例中：**myPassword**
+1. 删除引号中的字符串，在此例中为：**myPassword**
 
-   因此，您可以获得以下行：
+   因此，您获得以下行：
 
    ```
    !-- XTK authentication mode internalPassword : Password of internal account -->
@@ -65,7 +65,7 @@ ht-degree: 7%
 
 1. 保存更改并关闭文件。
 
-1. 配置新密码。 为此，请输入以下命令：
+1. 配置新密码。 要执行此操作，请输入以下命令：
 
    ```
    nlserver config -internalpassword
@@ -77,4 +77,4 @@ ht-degree: 7%
    Confirmation 
    ```
 
-1. 您现在可以使用新密码在&#x200B;**内部**&#x200B;模式下进行连接。
+1. 您现在可以使用新口令在&#x200B;**Internal**&#x200B;模式下连接。
