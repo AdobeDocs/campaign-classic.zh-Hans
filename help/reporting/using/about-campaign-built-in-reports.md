@@ -17,25 +17,25 @@ ht-degree: 4%
 
 # 关于 Campaign 内置报告{#about-campaign-built-in-reports}
 
-本章提供Adobe Campaign内置报表的列表、内容和上下文。 以下信息将帮助您避免创建平台中已有的报告。
+本章提供Adobe Campaign内置报表、其内容和上下文的列表。 以下信息将帮助您避免创建平台中已有的报告。
 
 >[!NOTE]
 >
 >您还可以了解如何将自己的报告添加到&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。 有关详细信息，请参阅此[页面](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options)。
 
-这些报告及其内容在与其相关功能相关的文档中详细介绍。
+这些报告及其内容在与其相关功能相关的文档中进行了详细说明。
 
-Adobe Campaign优惠多种类型的报告，可通过客户控制台或Internet浏览器访问。
+Adobe Campaign优惠多种类型的报表，可通过客户控制台或Internet浏览器访问。
 
-可以使用以下类型的报告：
+可使用以下类型的报告：
 
 * 有关整个平台的报告，请参阅[全局报告](../../reporting/using/global-reports.md)。
-* 投放报告，请参见[投放报告](../../reporting/using/delivery-reports.md)。
-* 累积报告，请参阅[累积报告](../../reporting/using/cumulative-reports.md)。
+* 投放报告，请参阅[投放报告](../../reporting/using/delivery-reports.md)。
+* 累积报表，请参阅[累积报表](../../reporting/using/cumulative-reports.md)。
 
-您可以从客户端控制台主页、报告仪表板或投放列表访问报告。 报告的显示模式取决于其上下文。 主报告的列表可在主页上找到，并允许您快速访问投放数据。 可以更改此列表以满足您的需求。 有关详细信息，请参阅[本节](../../reporting/using/about-reports-creation-in-campaign.md)。
+您可以从客户端控制台主页、报表仪表板或投放列表访问报表。 报表的显示模式取决于其上下文。 可在主页上列表主报表，并让您快速访问投放数据。 可以更改此列表以满足您的需求。 有关详细信息，请参阅[本节](../../reporting/using/about-reports-creation-in-campaign.md)。
 
-要访问活动内置报表，请执行以下操作：
+要访问活动内置报表：
 
 1. 选择Adobe Campaign接口的&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。
 
@@ -43,7 +43,7 @@ Adobe Campaign优惠多种类型的报告，可通过客户控制台或Internet�
 
 1. 使用搜索字段可过滤显示的报表。
 
-1. 然后，单击要显示的报告。
+1. 然后单击要显示的报表。
 
    ![](assets/reporting_edit_a_report.png)
 
@@ -51,12 +51,12 @@ Adobe Campaign优惠多种类型的报告，可通过客户控制台或Internet�
 
    ![](assets/reporting_back_button.png)
 
-对正在编辑的报告执行的其他可能操作详见[此页](../../reporting/using/actions-on-reports.md)。
+对正在编辑的报表执行的其他可能操作详见[此页](../../reporting/using/actions-on-reports.md)。
 
 特定于活动或投放的报告可通过其各自的仪表板访问。
 
 ![](assets/reporting_on_a_delivery.png)
 
-列表、服务、优惠等的原则相同。 如下所示：
+对于列表、服务、优惠等，原则是一样的。 如下所示：
 
 ![](assets/reporting_on_an_offer.png)
