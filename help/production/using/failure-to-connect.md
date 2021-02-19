@@ -19,7 +19,7 @@ ht-degree: 2%
 
 连接问题的原因可能是多个，并取决于各种上下文。
 
-您可以尝试以下测试，如果连接故障仍然存在，请与[Adobe客户服务中心](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。
+您可以尝试以下测试，如果连接故障仍然存在，请与[Adobe客户服务部门](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。
 
 
 
@@ -32,8 +32,8 @@ ht-degree: 2%
 </thead> 
 <tbody> 
 <tr> 
-<td>您是否可以从计算机访问Internet?</td> 
-<td>检查是否可以连接到Internet上的网站（例如）。 如果无法连接，则问题出在您的计算机上。 与系统管理员联系。</td>
+<td>您可以从计算机访问Internet吗？</td> 
+<td>检查是否可以连接到Internet上的网站（例如）。 如果无法连接，则问题出在您的计算机上。 与您的系统管理员联系。</td>
 </tr>
 <tr> 
 <td>是否可以通过其他服务连接到承载Adobe Campaign的服务器？</td> 
@@ -41,12 +41,12 @@ ht-degree: 2%
 </tr>
 <tr> 
 <td>Web服务器是否响应？</td> 
-<td>使用Web浏览器连接到Adobe Campaign服务器访问URL:<b>http(s):// &lt;urlserver&gt;</b>。 如果它没有响应，则计算机上停止Web服务器。 请与主机公司的系统管理员联系以重新启动该服务。</td>
+<td>使用Web浏览器连接到Adobe Campaign服务器访问URL:<b>http(s):// &lt;urlserver&gt;</b>。 如果它未响应，则在计算机上停止Web服务器。 请与主机公司的系统管理员联系以重新启动该服务。</td>
 </tr>
 <tr> 
 <td>Adobe Campaign是否已正确集成？</td> 
 <td>登录到：<b>http(s)://&lt;urlserver&gt;/r/test</b> URL。 服务器应返回以下类型的消息：&lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
-如果未获得此结果，请检查Web服务器配置中是否考虑了集成。</td>
+如果未获得此结果，请检查Web服务器配置，该配置已考虑集成。</td>
 </tr>
 <tr> 
 <td>连接到以下URL:<b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
@@ -54,7 +54,7 @@ ht-degree: 2%
 </tr>
 <tr> 
 <td>连接到以下URL:<b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
-<td>如果获得空白页面，请检查Adobe CampaignWeb模块是否已启动。 命令nlserver转储应返回DD/MM/YYYY的Adobe Campaign Classic(7.X YY.R内部版本XXX@SHA1)的应用程序服务器。 如果不是，请使用命令nlserver开始web重新启动模块</td>
+<td>如果您获得空白页，请检查Adobe Campaign Web模块是否已启动。 命令nlserver转储应返回DD/MM/YYYY的Adobe Campaign Classic(7.X YY.R内部版本XXX@SHA1)的应用程序服务器。 否则，使用命令nlserver 开始 web重新启动模块</td>
 </tr>
 <tr>
 <td>检查安全区域的常规配置。</td>
@@ -62,7 +62,7 @@ ht-degree: 2%
 </tr>
 <tr>
 <td>命令nlserver转储返回<b>没有任务</b></td>
-<td>必须重新启动整个Adobe Campaign应用程序。 为此，请使用以下命令：<b>nlserver watchdog -svc -noconsole</b></td>
+<td>必须重新启动整个Adobe Campaign应用程序。 要执行此操作，请使用以下命令：<b>nlserver watchdog -svc -noconsole</b></td>
 </tr>
 </tbody> 
 </table>
