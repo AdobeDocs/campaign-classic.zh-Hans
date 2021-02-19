@@ -10,18 +10,18 @@ translation-type: tm+mt
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
 
 
-# 配置导出作业{#executing-export-jobs}
+# 配置导出作业 {#executing-export-jobs}
 
-导出作业允许您访问和提取数据库中的数据：联系人、客户、列表、细分等。
+导出作业允许您访问和提取数据库中的数据：联系人、客户、列表、细分等
 
-例如，它可能有用于使用活动跟踪数据（跟踪历史记录等）。 在电子表格中。 输出数据可以是 txt、CSV、TAB 或 XML 格式。
+例如，使用活动跟踪数据（跟踪历史记录等）可能很有用 在电子表格中。 输出数据可以是 txt、CSV、TAB 或 XML 格式。
 
-该导出向导允许您配置导出、定义其选项并启动执行。 它是一系列屏幕，其内容取决于导出类型（简单或多个）和操作员的权利。
+该导出向导允许您配置导出、定义其选项并启动执行。 它是一系列屏幕，其内容取决于导出的类型（简单或多个）和操作员的权限。
 
 创建新的导出作业后将显示导出向导（请参阅[创建导入和导出作业](../../platform/using/creating-import-export-jobs.md)）。
 
@@ -34,18 +34,18 @@ ht-degree: 46%
 
    ![](assets/s_ncs_user_export_wizard01.png)
 
-1. 单击&#x200B;**[!UICONTROL Export template]**&#x200B;字段右侧的箭头以选择模板，或单击&#x200B;**[!UICONTROL Select link]**&#x200B;以浏览树。
+1. 单击&#x200B;**[!UICONTROL Export template]**&#x200B;字段右侧的箭头以选择模板，或单击&#x200B;**[!UICONTROL Select link]**&#x200B;浏览树。
 
    本机模板为&#x200B;**[!UICONTROL New text export]**。 不得修改此模板，但您可以复制它以配置新模板。默认情况下，导出模板保存在&#x200B;**[!UICONTROL Resources > Templates > Job templates]**&#x200B;节点中。
 
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入要导出的名称。 您可以添加描述。
-1. 选择导出类型。有两种可能的导出类型：**[!UICONTROL Simple export]**&#x200B;仅导出一个文件，**[!UICONTROL Multiple export]**&#x200B;在单次执行中从一个或多个类型的源文档导出多个文件。
+1. 选择导出类型。有两种可能的导出类型：**[!UICONTROL Simple export]**&#x200B;可仅导出一个文件，**[!UICONTROL Multiple export]**&#x200B;可在单次执行中从一个或多个源文档导出多个文件。
 
 ## 第 2 步 - 要导出的文件类型 {#step-2---type-of-file-to-export}
 
 选择要导出的文档类型，即要导出的数据模式。
 
-默认情况下，从&#x200B;**[!UICONTROL Jobs]**&#x200B;节点启动导出时，数据将来自收件人表。 从列表数据（从&#x200B;**[!UICONTROL right click > Export]**&#x200B;菜单）启动导出时，数据所属的表会自动填入&#x200B;**[!UICONTROL Document type]**&#x200B;字段。
+默认情况下，从&#x200B;**[!UICONTROL Jobs]**&#x200B;节点启动导出时，数据来自收件人表。 从列表数据（从&#x200B;**[!UICONTROL right click > Export]**&#x200B;菜单）启动导出时，数据所属的表将自动填入&#x200B;**[!UICONTROL Document type]**&#x200B;字段。
 
 ![](assets/s_ncs_user_export_wizard02.png)
 
@@ -55,9 +55,9 @@ ht-degree: 46%
    >
    >始终在服务器上执行自动导入和导出作业。
    >
-   >要仅导出部分数据，请单击&#x200B;**[!UICONTROL Advanced parameters]**，然后在相应字段中输入要导出的行数。
+   >要仅导出部分数据，请单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;并在相应字段中输入要导出的行数。
 
-* 您可以创建差异导出以仅导出自上次执行后修改的记录。为此，请单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Differential export]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL Activate differential export]**。
+* 您可以创建差异导出以仅导出自上次执行后修改的记录。要执行此操作，请单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Differential export]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL Activate differential export]**。
 
    ![](assets/s_ncs_user_export_wizard02_b.png)
 
@@ -70,7 +70,7 @@ ht-degree: 46%
 ![](assets/s_ncs_user_export_wizard03.png)
 
 * 对于&#x200B;**[!UICONTROL Text]**&#x200B;格式，选择分隔符以分隔各列（制表符、逗号、分号或自定义）和字符串(单引号或多次引号，或无)。
-* 对于&#x200B;**[!UICONTROL text]**&#x200B;和&#x200B;**[!UICONTROL CSV]**，您可以选择选项&#x200B;**[!UICONTROL Use first lines as column titles]**。
+* 对于&#x200B;**[!UICONTROL text]**&#x200B;和&#x200B;**[!UICONTROL CSV]**，可以选择选项&#x200B;**[!UICONTROL Use first lines as column titles]**。
 * 指示日期格式和数字格式。要执行此操作，请单击相关字段的&#x200B;**[!UICONTROL Edit]**&#x200B;按钮，然后使用编辑器。
 * 对于包含枚举值的字段，可以选择&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，标题可以以&#x200B;**1=Mr**、**2=Miss**、**3=Mrs的形式存储。**.如果选择此选项，将导出 **Mr.****、Miss** 和 **Mrs.**。
 
@@ -78,12 +78,12 @@ ht-degree: 46%
 
 选择要导出的字段。操作步骤：
 
-1. 多次-单击&#x200B;**[!UICONTROL Available fields]**&#x200B;列表中的所需字段，以将其添加到&#x200B;**[!UICONTROL Output columns]**&#x200B;部分。
+1. 多次在&#x200B;**[!UICONTROL Available fields]**&#x200B;列表中单击所需的字段，以将其添加到&#x200B;**[!UICONTROL Output columns]**&#x200B;部分。
 1. 使用清单右侧的箭头定义输出文件中字段的顺序。
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以调用函数。 有关详细信息，请参阅[函数列表](../../platform/using/defining-filter-conditions.md#list-of-functions)。
+1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮调用函数。 有关详细信息，请参阅[函数列表](../../platform/using/defining-filter-conditions.md#list-of-functions)。
 
 ## 第 5 步 - 对列进行排序 {#step-5---sorting-columns}
 
@@ -131,4 +131,4 @@ ht-degree: 46%
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-然后，您可以监视导入作业的执行情况(请参阅[监视作业执行](../../platform/using/monitoring-jobs-execution.md)。
+然后，可以监视导入作业的执行情况（请参阅[监视作业执行](../../platform/using/monitoring-jobs-execution.md)）。
