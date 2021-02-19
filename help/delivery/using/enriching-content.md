@@ -37,19 +37,19 @@ ht-degree: 0%
 </book>
 ```
 
-**`<collection-recipient>`**&#x200B;元素表示由文档产生的查询的输入元素。 检索到的数据在此元素下返回；在我们的例子中，是收件人列表。
+**`<collection-recipient>`**&#x200B;元素表示由文档产生的查询的输入元素。 检索到的数据在此元素下返回；在我们的示例中，收件人列表。
 
 ### 添加查询{#adding-a-query}
 
-查询参数是使用向导进行编辑的。
+查询参数是使用向导编辑的。
 
-1. 在第一页中，指定标签和包含要检索的模式。
+1. 在第一页中，指定包含要检索的数据的标签和模式。
 
    ![](assets/d_ncs_content_query1.png)
 
    >[!NOTE]
    >
-   >编辑字段&#x200B;**路径**&#x200B;用于重命名查询输出元素。
+   >编辑字段&#x200B;**Path**&#x200B;用于重命名查询输出元素。
 
 1. 在下一页中，您可以选择要检索的数据。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
    ![](assets/d_ncs_content_query3.png)
 
-1. 最后一页启动预览返回的查询。
+1. 最后一页启动预览查询返回的数据。
 
    ![](assets/d_ncs_content_query4.png)
 
@@ -69,18 +69,18 @@ ht-degree: 0%
 
 链接数据有两种类型：
 
-* 内容链接：这是本机内容管理模式。 链接的内容将自动集成到XML输出文档中。
-* 指向外部表的链接允许访问数据库中的所有其他表，但约束是使用聚合器检索所选链接的数据。
+* 内容链接：这是本机内容管理模式。 链接的内容会自动集成到XML输出文档中。
+* 指向外部表的链接允许访问数据库中的所有其他表，但约束是检索带有聚合器的所选链接的数据。
 
 ### 链接到内容模式{#link-to-a-content-schema}
 
-在数据模式中声明内容链接，如下所示：
+内容链接在数据模式中声明如下：
 
 ```
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-链接的定义填充在&#x200B;**string**-type **`<element>`**&#x200B;上，**expandSchemaTarget**&#x200B;属性引用目标模式（我们示例中的“cus:chapter”）。 引用的模式必须是内容模式。
+链接的定义填充在&#x200B;**string**-type **`<element>`**&#x200B;上，**expandSchemaTarget**&#x200B;属性引用目标模式（我们的示例中为“cus:chapter”）。 引用的模式必须是内容模式。
 
 目标元素的内容丰富了链接元素，即示例模式中的&#x200B;**`<chapter>`**&#x200B;元素：
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 </chapter>
 ```
 
-在输入形式中，列表控件声明如下：
+在输入表单中，列表控件声明如下：
 
 ```
 <input editable="false" nolabel="true" toolbarCaption="List of chapters" type="articleList" xpath="chapter" zoom="true"/>
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link2.png)
 
-显示默认列，以视图目标元素的&#x200B;**计算字符串**。
+将显示默认列，以便视图目标元素的&#x200B;**计算字符串**。
 
 ### 外部表{#links-to-external-tables}的链接
 
@@ -138,13 +138,13 @@ ht-degree: 0%
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-链接的定义填充在&#x200B;**link**-type **`<element>`**&#x200B;上，**目标**&#x200B;属性引用目标模式(我们示例中的“nms:收件人”)。
+链接的定义填充在&#x200B;**link**-type **`<element>`**&#x200B;上，**目标**&#x200B;属性引用目标模式(我们的示例中为“nms:收件人”)。
 
-根据惯例，链接必须从数据模式的主要元素中声明。
+根据惯例，必须从数据模式的主要元素中声明链接。
 
-**计算字符串**&#x200B;和目标元素的键丰富主元素的&#x200B;**`<name>-id`**&#x200B;和&#x200B;**`<name>-cs`**&#x200B;属性。
+**计算字符串**&#x200B;和目标元素的键丰富主元素上的&#x200B;**`<name>-id`**&#x200B;和&#x200B;**`<name>-cs`**&#x200B;属性。
 
-在我们的示例中，链接填充在“cus:book”模式中，链接数据的内容包含在“mainContact-id”和“mainContact-cs”属性中：
+在我们的示例中，链接会填充到“cus:book”模式中，链接数据的内容包含在“mainContact-id”和“mainContact-cs”属性中：
 
 ```
 <book computeString="Content management" date="2006/06/08" id="6106" language="en" mainContact-cs="John Doe (john.doe@adobe.com)" mainContact-id="3012" name="Content management" xtkschema="cus:book">
@@ -158,7 +158,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link3.png)
 
-通过在输入表单中添加链接定义，可以限制目标元素的选择：**`<sysfilter>`**
+您可以通过在输入表单中的链接定义添加&#x200B;**`<sysfilter>`**&#x200B;元素来限制目标元素的选择：
 
 ```
 <input xpath="mainContact">
@@ -175,7 +175,7 @@ ht-degree: 0%
 
 #### 链接集合{#link-collection-1}
 
-集合的定义与对集合元素的列表的定义相同：
+集合的定义与集合元素上列表的定义相同：
 
 ```
 <element label="List of contacts" name="contact" unbound="true">
@@ -183,7 +183,7 @@ ht-degree: 0%
 </element>
 ```
 
-在输入形式中，列表控件声明如下：
+在输入表单中，列表控件声明如下：
 
 ```
 <input nolabel="true" toolbarCaption="List of contacts" type="list" xpath="contact">
@@ -248,7 +248,7 @@ for each(var contact in content.contact)
 }
 ```
 
-脚本执行后获得的结果：
+执行脚本后获得的结果：
 
 ```
 <mainContact lastName="Doe"/>
