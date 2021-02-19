@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: CRM Connector
-description: 进一步了解CRM连接器并配置数据同步
+description: 了解有关CRM连接器和配置数据同步的更多信息
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # CRM Connector{#crm-connector}
 
-**CRM连接器**&#x200B;活动允许您在Adobe Campaign和CRM系统之间配置数据同步。
+**CRM连接器**&#x200B;活动允许您配置Adobe Campaign与CRM系统之间的数据同步。
 
 有关Adobe Campaign中CRM连接器的详细信息，请参阅此[部分](../../platform/using/crm-connectors.md)。
 
