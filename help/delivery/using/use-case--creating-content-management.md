@@ -19,16 +19,16 @@ ht-degree: 2%
 
 要在Adobe Campaign中创建内容管理，必须执行以下步骤：
 
-* [第1步——分析要生成的内容](#step-1---analyzing-the-content-to-be-produced),
-* [第2步——创建数据模式](#step-2---creating-the-data-schema),
-* [第3步——创建输入表单](#step-3---creating-the-input-form),
-* [第4步——创建构建模板](#step-4---creating-the-construction-template),
-* [第5步——创建发布模板](#step-5---creating-the-publication-template),
-* [第6步——创建内容](#step-6---creating-contents)。
+* [第1步 — 分析要制作的内容](#step-1---analyzing-the-content-to-be-produced),
+* [第2步 — 创建数据模式](#step-2---creating-the-data-schema),
+* [第3步 — 创建输入表单](#step-3---creating-the-input-form),
+* [第4步 — 创建构造模板](#step-4---creating-the-construction-template),
+* [第5步 — 创建发布模板](#step-5---creating-the-publication-template),
+* [第6步 — 创建内容](#step-6---creating-contents)。
 
-## 第1步——分析要生成的内容{#step-1---analyzing-the-content-to-be-produced}
+## 第1步 — 分析要生成的内容{#step-1---analyzing-the-content-to-be-produced}
 
-在进行开始之前，您需要对要生成的内容进行精确分析:确定要显示的元素，研究与这些元素链接的约束，为每个元素定义类型等。 您还需要区分静态元素和可变客户。
+在开始之前，您需要对要制作的内容进行精确分析:确定要显示的元素，研究与这些元素链接的约束，为每个元素定义类型等。 您还需要区分静态元素和可变客户。
 
 例如，要在HTML中创建包含以下类型内容的新闻稿：
 
@@ -40,7 +40,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_content_define_element_types.png)
 
-1. 个性化字段符，根据保存在数据库中的信息动态输入(本例中为收件人的名和姓)。
+1. 个性化字段，根据保存在数据库中的信息(本例中为收件人的名和姓)动态输入。
 
    ![](assets/s_ncs_content_define_dynamics.png)
 
@@ -48,11 +48,11 @@ ht-degree: 2%
 
    ![](assets/s_ncs_content_define_statics.png)
 
-此Newsletter的各种元素根据JavaScript模板中定义的规则进行组合，该模板引用要插入的所有元素并将其布局概念化。
+此Newsletter的各种元素是根据JavaScript模板中定义的规则组合在一起的，该模板引用要插入的所有元素并概念化其布局。
 
-这些元素是通过专用模式创建的，它为每个内容指定以下元素：名称、标签、类型、大小，以及与Adobe Campaign处理相关的任何其他信息。
+这些元素是通过专用模式创建的，该专用程序为每个内容指定以下元素：名称、标签、类型、大小，以及与Adobe Campaign中处理相关的任何其他信息。
 
-## 第2步——创建模式{#step-2---creating-the-data-schema}
+## 第2步 — 创建数据模式{#step-2---creating-the-data-schema}
 
 数据模式是与内容关联的XML文档。 它描述此内容中数据的XML结构。
 
@@ -60,23 +60,23 @@ ht-degree: 2%
 >
 >有关在Adobe Campaign中创建和配置模式的详细信息，请参阅[本节](../../configuration/using/about-schema-edition.md)。
 >
->[数据内容管理](../../delivery/using/data-schemas.md)中详细介绍了特定于模式的配置元素。
+>[数据模式](../../delivery/using/data-schemas.md)中详细介绍了特定于内容管理的配置元素。
 
 要创建数据模式，请应用以下步骤：
 
 1. 打开Adobe Campaign资源管理器并选择&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点。
 
-   单击位于列表模式上方的&#x200B;**[!UICONTROL New]**&#x200B;图标。
+   单击位于数据列表上方的&#x200B;**[!UICONTROL New]**&#x200B;图标。
 
 1. 选择&#x200B;**[!UICONTROL Create a schema]**&#x200B;选项进行内容管理，然后单击&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/s_ncs_content_create_schema.png)
 
-1. 在相应的字段中输入模式的名称和标签。 如有必要，您可以添加描述并链接特定图像。
+1. 在相应的字段中输入模式的名称和标签。 您可以根据需要添加描述和链接特定图像。
 
    ![](assets/s_ncs_content_param_schema.png)
 
-   单击&#x200B;**[!UICONTROL Next]**&#x200B;验证。
+   单击&#x200B;**[!UICONTROL Next]**&#x200B;以验证。
 
 1. 在&#x200B;**[!UICONTROL Edit schema]**&#x200B;窗口中输入模式的内容。
 
@@ -86,7 +86,7 @@ ht-degree: 2%
 
    有关详细信息，请参阅[编辑模式](../../delivery/using/data-schemas.md#editing-schemas)。
 
-   对于内容中引用的每个元素，您需要选择一个匹配的类型。
+   对于内容中引用的每个元素，您需要选择匹配类型。
 
    在此示例中，标识的内容、其格式和类型为：
 
@@ -101,10 +101,10 @@ ht-degree: 2%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 标题<br /> </td> 
+   <td> Title<br /> </td> 
    <td> 属性<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> 标题<br /> </td> 
+   <td> Title<br /> </td> 
   </tr> 
   <tr> 
    <td> 子标题<br /> </td> 
@@ -133,7 +133,7 @@ ht-degree: 2%
   <tr> 
    <td> 作者<br /> </td> 
    <td> 元素<br /> </td> 
-   <td> 备忘录<br /> </td> 
+   <td> Memo<br /> </td> 
    <td> 作者<br /> </td> 
   </tr> 
   <tr> 
@@ -162,19 +162,19 @@ ht-degree: 2%
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建数据模式。
 
-## 步骤3 —— 创建输入表单{#step-3---creating-the-input-form}
+## 步骤3 — 创建输入表单{#step-3---creating-the-input-form}
 
-输入表单允许您通过Adobe Campaign客户端控制台中的输入界面编辑内容实例。
+通过输入表单，您可以通过Adobe Campaign客户端控制台中的输入界面编辑内容实例。
 
-表单的描述是一种结构化XML文档，它观察“xtk:form”表单模式的语法。
+表单的描述是一个结构化XML文档，它观察“xtk:form”表单模式的语法。
 
 >[!NOTE]
 >
 >有关在Adobe Campaign中创建和配置表单的详细信息，请参阅[本节](../../configuration/using/identifying-a-form.md)。
 >
->特定于内容管理的配置元素详见[输入表单](../../delivery/using/input-forms.md)。
+>[输入表单](../../delivery/using/input-forms.md)中详细介绍了特定于内容管理的配置元素。
 
-要创建输入表单以进行内容管理，请应用以下步骤：
+要创建用于内容管理的输入表单，请应用以下步骤：
 
 1. 打开Adobe Campaign资源管理器并选择&#x200B;**[!UICONTROL Administration > Configuration > Input forms]**&#x200B;节点。
 
@@ -186,7 +186,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >为了使这两个元素能够自动匹配，我们建议使用与链接数据模式相同的名称。 使用输入区域上方的&#x200B;**[!UICONTROL Insert]**&#x200B;按钮添加链接到表单的模式中的字段。
+   >要使这两个元素能够自动匹配，我们建议使用与链接数据模式相同的名称。 使用输入区域上方的&#x200B;**[!UICONTROL Insert]**&#x200B;按钮添加链接到表单的模式中的字段。
 
    ![](assets/s_ncs_content_param_form_edit_step2.png)
 
@@ -208,21 +208,21 @@ ht-degree: 2%
      </input>
    ```
 
-   使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡可以在编辑表单时检查表单的呈现：
+   使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡可以在编辑表单时检查其呈现：
 
    ![](assets/s_ncs_content_param_form_preview.png)
 
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建输入表单。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;创建输入表单。
 
-## 第4步——创建构造模板{#step-4---creating-the-construction-template}
+## 第4步 — 创建构造模板{#step-4---creating-the-construction-template}
 
-通过XSLT语言，可以将XML文档转换为其他输出文档。 此转换在称为样式表的文档的XML中进行说明。
+使用XSLT语言，可将XML文档转换为另一个输出文档。 此转换在称为样式表的文档的XML中进行说明。
 
 在此示例中，我们希望使用JavaScript模板在生成的文档中定义数据构建和布局模式。
 
 >[!NOTE]
 >
->链接到文档构建（JavaScript或XSL模板）的约束在[格式](../../delivery/using/formatting.md)中有详细说明。
+>[Formatting](../../delivery/using/formatting.md)中详细介绍了链接到文档构建（JavaScript或XSL模板）的约束。
 
 要在Adobe Campaign中使用JavaScript模板，请应用以下步骤：
 
@@ -233,7 +233,7 @@ ht-degree: 2%
 1. 输入模板名称，然后选择您为模式创建的内容管理。
 1. 导入要在消息中显示的集内容。
 
-   添加变量元素，同时遵守[JavaScript模板](../../delivery/using/formatting.md#javascript-templates)中详细介绍的语法。
+   根据[JavaScript模板](../../delivery/using/formatting.md#javascript-templates)中详细说明的语法添加变量元素。
 
    要显示示例中显示的内容，JavaScript模板必须包含以下元素：
 
@@ -326,7 +326,7 @@ ht-degree: 2%
    </html>
    ```
 
-   在模板开始调用函数可让您设置对从Adobe Campaign库获取的个性化数据的调用(在本例中：收件人.firstName和收件人.lastName)，以便在投放中使用时对其进行解释。 有关详细信息，请参阅[包括JavaScript模板](../../delivery/using/formatting.md#including-a-javascript-template)。
+   通过在模板开始调用函数，可以设置对从Adobe Campaign数据库获取的个性化数据的调用(在本例中：收件人.firstName和收件人.lastName)，以便在投放中使用时解释它。 有关详细信息，请参阅[包括JavaScript模板](../../delivery/using/formatting.md#including-a-javascript-template)。
 
    在此示例中，该函数将包含以下代码：
 
@@ -349,9 +349,9 @@ ht-degree: 2%
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## 第5步——创建发布模板{#step-5---creating-the-publication-template}
+## 第5步 — 创建发布模板{#step-5---creating-the-publication-template}
 
-下一步包括创建内容发布模板以链接模式、表单和内容构建模板。 此发布模板可以有多种输出格式。
+下一步包括创建内容发布模板，以链接模式、表单和内容构建模板。 此发布模板可以有多种输出格式。
 
 >[!NOTE]
 >
@@ -361,7 +361,7 @@ ht-degree: 2%
 
 1. 通过&#x200B;**[!UICONTROL Administration > Configuration > Publication templates]**&#x200B;节点创建新发布模板。
 1. 输入名称和标签，然后选择要使用的模式和表单。
-1. 然后输入模板的名称并选择要应用的渲染模式。 此处，我们根据上面创建的模板提供&#x200B;**[!UICONTROL JavaScript]**&#x200B;类型渲染。
+1. 然后输入模板的名称并选择要应用的渲染模式。 此处，我们根据上面创建的模板提供了&#x200B;**[!UICONTROL JavaScript]**&#x200B;类型渲染。
 
    ![](assets/s_ncs_content_param_form_publish.png)
 
@@ -375,7 +375,7 @@ ht-degree: 2%
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建发布模板。
 
-## 第6步——创建内容{#step-6---creating-contents}
+## 第6步 — 创建内容{#step-6---creating-contents}
 
 您现在可以基于此发布模板创建内容。
 
@@ -391,7 +391,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_content_in_delivery.png)
 
-   为了通过投放向导表单定义内容，还会向内容管理中添加其他选项卡。
+   为了通过投放向导表单定义内容，将向内容管理中添加其他选项卡。
 
 1. 输入新闻稿的变量信息。
 
