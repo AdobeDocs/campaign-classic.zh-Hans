@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: 数据加载 (RDBMS)
-description: 进一步了解数据加载(RDBMS)工作流活动
+description: 了解有关数据加载(RDBMS)工作流活动的更多信息
 audience: workflow
 content-type: reference
 topic-tags: action-activities
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 **[!UICONTROL Data loading (RDBMS)]**&#x200B;活动允许您直接访问此外部数据库，并仅收集定位所需的数据。
 
-为了提高性能，我们建议使用查询活动（在该中，可以使用外部数据库的数据）。 有关详细信息，请参阅[访问外部数据库(联合数据访问)](../../workflow/using/accessing-an-external-database--fda-.md)。
+为了提高性能，我们建议使用查询活动（可以使用外部数据库的数据）。 有关详细信息，请参阅[访问外部数据库(联合数据访问)](../../workflow/using/accessing-an-external-database--fda-.md)。
 
 操作如下：
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 
    ![](assets/s_advuser_wf_sgbd_sample_1.png)
 
-   在相应字段中输入的表的名称用作外部数据库中收集数据的模板。 由工作流处理的表的名称可以通过数据加载过渡的入站活动计算或传送。 要选择要使用的表，请单击&#x200B;**[!UICONTROL Advanced..]**。 链接并选择&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;或&#x200B;**[!UICONTROL Explicit]**&#x200B;选项。
+   在相应字段中输入的表的名称用作在外部数据库中收集数据的模板。 通过数据加载活动的入站过渡，可以计算或传送由工作流处理的表的名称。 要选择要使用的表，请单击&#x200B;**[!UICONTROL Advanced..]**。 链接并选择&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;或&#x200B;**[!UICONTROL Explicit]**&#x200B;选项。
 
    ![](assets/s_advuser_wf_sgbd_sample_5.png)
 
