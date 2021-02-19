@@ -17,9 +17,9 @@ ht-degree: 2%
 
 # 外部信号{#external-signal}
 
-使用&#x200B;**外部信号**&#x200B;活动，可以触发在工作流中执行任务集到计划。
+使用&#x200B;**外部信号**&#x200B;活动，可以触发对计划的工作流中一组任务的执行。
 
-激活“外部信号”任务时，它将无限期地暂停或直到指定时间段结束。 其过渡由SOAP调用&#x200B;**PostEvent(sessionToken, workflowId,活动,过渡，参数，complete)激活。** 该 **[!UICONTROL complete]** 参数允许任务完成，因此不会对后续调用做出响应。
+激活“外部信号”任务时，它将无限期暂停或直到指定时间段结束。 其过渡由SOAP调用&#x200B;**PostEvent(sessionToken， workflowId，活动,过渡，参数， complete)激活。** 该 **[!UICONTROL complete]** 参数允许任务完成，因此不会对后续调用做出响应。
 
 有关PostEvent函数的更多信息，请参阅有关SOAP调用的在线文档。
 
@@ -27,11 +27,11 @@ ht-degree: 2%
 
 ![](assets/edit_signal.png)
 
-过期配置详见[过期](../../workflow/using/defining-approvals.md)。
+过期的配置详见[过期](../../workflow/using/defining-approvals.md)。
 
-使用&#x200B;**延迟**&#x200B;字段，可以以所选单位指定到期延迟。 请参阅[等待](../../workflow/using/wait.md)。
+通过&#x200B;**延迟**&#x200B;字段，可以以所选单位指定过期延迟。 请参阅[等待](../../workflow/using/wait.md)。
 
-每行表示过期类型，并与过渡重合。
+每行表示过期类型，并与过渡一致。
 
 ![](assets/external_sign_diag.png)
 
