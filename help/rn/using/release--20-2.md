@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -25,23 +25,23 @@ _2020 年 12 月 22 日_
 
 >[!CAUTION]
 >
-> * 此版本附带新的连接协议：如果您通过活动标识服务(IMS)连接到Adobe，则活动服务器和客户端控制台都必须进行升级，才能在2021年3月31日&#x200B;**之后连接到活动。**
-> * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html):升级是强制性的，以增强环境安全性。
-> * 如果您通过身份验证使用Experience Cloud Triggers集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 旧版身份验证模式将于2021年4月30日&#x200B;****&#x200B;停用。
+> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须进行升级，才能在&#x200B;**2021 年 3 月 31 日**&#x200B;之后连接到 Campaign。
+> * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
+> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
 
 
 
 **改进**
 
 * 连接协议已经更新，以遵循新的 IMS 认证机制。
-* 触发最初基于oAUTH身份验证设置的集成身份验证以访问管道已更改并移至Adobe I/O。[了解更多信息](../../integrations/using/configuring-adobe-io.md)
-* 在iOS APNs旧二进制协议](https://developer.apple.com/news/?id=c88acm2b)的支持结束[后，使用此协议的所有实例在启动升级期间都更新为HTTP/2协议。
+* 触发最初基于oAUTH身份验证设置的集成身份验证已更改并移至Adobe I/O。[了解更多](../../integrations/using/configuring-adobe-io.md)
+* [终止支持 iOS APN 旧版二进制协议](https://developer.apple.com/news/?id=c88acm2b)之后，在升级后期间，所有使用此协议的实例都更新为 HTTP/2 协议。
 * 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
-* 修复了在连接错误后导致SMPP连接器取消激活的问题，从而阻止发送其他SMS投放并导致性能问题。 (NEO-28609)
+* 修复了在连接错误后导致SMPP连接器停用的问题，防止发送其他SMS投放并导致性能问题。 (NEO-28609)
 * 通过防止在清除表达式分析器时内存损坏，修复了服务器崩溃问题。(NEO-26856)
 * 修复了在显示工作流中&#x200B;**拆分**&#x200B;活动的其余目标数据时导致服务器 崩溃的问题。
 * 修复了在查询除&#x200B;**收件人** (nms:recipient) 以外的其他模式后尝试预览 SMS 消息时可能显示错误消息的问题。(NEO-27517)
-* 修复了在主机名中显式定义端口号的HTTPS连接请求时，调用失败并出现证书错误的问题。 (NEO-29146)
+* 修复了在发出具有主机名中明确定义的端口号的HTTPS连接请求时，调用失败并出现证书错误的问题。 (NEO-29146)
 * 修复了POSIX线程管理中在营销实例上生成大核心转储文件的问题。 (NEO-28117, NEO-29281)
 * 修复了在准备投放或重复投放预览时可能导致Web进程崩溃的问题。 (NEO-27790, NEO-27517)
 * 修复了由非管理员操作员触发时导致投放或验证发送失败的问题。 (NEO-28597)
