@@ -45,17 +45,17 @@ Adobe Campaign可让您设置各种工具来鼓励病毒式营销。
 
 ![](assets/s_ncs_user_viral_add_link_rendering.png)
 
-当收件人单击显示的某个社交网络的图标时，他们会自动重定向到其帐户，并可通过链接共享消息内容。 这允许其网络成员访问通信。
+当收件人单击显示的某个社交网络的图标时，他们会自动重定向到其帐户，并可以通过链接共享消息内容。 这允许其网络成员访问通信。
 
 >[!NOTE]
 >
->此个性化块包含所有链接（用于与所有社交网络发送和共享消息）。 可以根据您的需求进行更改。 但是，配置是为高级用户保留的。 要编辑匹配的个性化块，请转到Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Campaign management > Personalization blocks]**&#x200B;节点。
+>此个性化块包含所有链接（用于与所有社交网络发送和共享消息）。 可以根据您的需要更改。 但是，配置是为高级用户保留的。 要编辑匹配的个性化块，请转到Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Campaign management > Personalization blocks]**&#x200B;节点。
 
 ## 病毒式营销：转发给朋友{#viral-marketing--forward-to-a-friend}
 
-传播服务允许执行引用类型操作：这些操作使您能够将消息转发给朋友。 用户档案的被推荐人临时存储在数据库中（在专用表中）。 转发的消息包括被推荐人订阅的链接：如果他们这样做，他们将添加到Adobe Campaign库。
+传播服务允许执行引用类型操作：通过这些操作，您可以将消息转发给朋友。 被推荐人的用户档案临时存储在数据库中（在专用表中）。 转发的消息包括被推荐人订阅的链接：如果他们这样做，他们将添加到Adobe Campaign数据库。
 
-消息转发与社交网络链路的原理相同。
+消息转发与社交网络链路相同。
 
 应用以下阶段：
 
@@ -68,33 +68,33 @@ Adobe Campaign可让您设置各种工具来鼓励病毒式营销。
 
    ![](assets/s_ncs_user_viral_email_msg.png)
 
-   当主收件人单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮时，消息将发送给他们。
+   当主收件人单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮时，将向他们发送消息。
 
    >[!NOTE]
    >
-   >此消息的内容可以个性化以满足您的需求。 它基于存储在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;节点中的&#x200B;**[!UICONTROL Transfer of original message]**&#x200B;模板创建。
+   >可以个性化此消息的内容以满足您的需求。 它基于存储在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;节点中的&#x200B;**[!UICONTROL Transfer of original message]**&#x200B;模板创建。
    >
-   >还可以更改推荐人可用的消息转发表单。为此，您需要更改存储在&#x200B;**[!UICONTROL Resources > Online > Web applications]**&#x200B;节点中的&#x200B;**病毒表单** Web 应用程序。
+   >还可以更改向推荐人提供的消息转发表单。要执行此操作，您需要更改存储在&#x200B;**[!UICONTROL Resources > Online > Web applications]**&#x200B;节点中的&#x200B;**病毒表单** Web 应用程序。
 
-1. 在转发的消息中，有一个链接允许被推荐人将其用户档案保存在数据库中。 为此提供了条目表单。
+1. 在转发的消息中，链接允许被推荐人将其用户档案保存在数据库中。 为此提供了登入表单。
 
    ![](assets/s_ncs_user_viral_create_account_form.png)
 
    >[!NOTE]
    >
-   >此配置可以调整。 为此，您需要修改存储在&#x200B;**[!UICONTROL Resources > Online > Web applications]**&#x200B;节点中的&#x200B;**收件人订阅** Web 应用程序。
+   >这种结构可以调整。 为此，您需要修改存储在&#x200B;**[!UICONTROL Resources > Online > Web applications]**&#x200B;节点中的&#x200B;**收件人订阅** Web 应用程序。
    >
    >有关Web 应用程序的详细信息，请参阅[本节](../../web/using/about-web-applications.md)。
 
-   验证后，系统会向他们发送确认消息：只有在他们激活确认消息中的链接后，他们才会永久注册。 此消息基于存储在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;节点中的&#x200B;**[!UICONTROL Registration confirmation]**&#x200B;模板创建。
+   验证后，会向他们发送确认消息：只有在用户激活确认消息中的链接后，才会永久注册。 此消息基于&#x200B;**[!UICONTROL Registration confirmation]**&#x200B;模板创建，该模板存储在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;节点中。
 
-   该被推荐人被添加到收件人库的&#x200B;****&#x200B;文件夹，并且（默认）订阅&#x200B;**新闻稿**&#x200B;信息服务。
+   该被推荐人将添加到收件人库的&#x200B;****&#x200B;文件夹，并（默认）订阅&#x200B;**新闻稿**&#x200B;信息服务。
 
 ## 跟踪社交网络共享{#tracking-social-network-sharing}
 
-跟踪共享信息和对共享信息的访问。 由Adobe Campaign收集的此信息可在以下两个位置访问：
+跟踪共享和访问共享信息。 Adobe Campaign收集的此信息可在以下两个位置访问：
 
-* 在投放的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡中(或者对于每个收件人单独显示):
+* 在投放的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡中(或针对每个收件人单独设置):
 
    ![](assets/s_ncs_user_network_del_tracking_tab.png)
 
