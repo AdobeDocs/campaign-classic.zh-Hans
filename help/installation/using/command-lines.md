@@ -21,7 +21,7 @@ ht-degree: 4%
 
 ## 创建实例{#creating-an-instance}
 
-可以使用命令行执行实例创建，语法为：
+可以使用以下语法使用命令行执行实例创建：
 
 ```
 nlserver config -addinstance:instance/masques DNS[/lang]
@@ -33,20 +33,20 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 ## 声明数据库{#declaring-a-database}
 
-您可以使用以下语法从命令行将现有数据库与实例关联：
+您可以使用以下语法将现有数据库与命令行中的实例关联：
 
 ```
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-**`[rdbms]`**&#x200B;参数可以使用以下值：
+**`[rdbms]`**&#x200B;参数可使用以下值：
 
-* **postgresql**:对于PostgreSQL,
-* **oracle**:oracle,
-* **mssql**:对于Microsoft SQL Server,
+* **postgresql**:对于PostgreSQL，
+* **oracle**:对于Oracle,
+* **mssql**:对于Microsoft SQL Server，
 * **DB2**:DB2引擎。
 
-以下命令使用SQL类型服务器&#x200B;**base6**&#x200B;配置&#x200B;**demo**&#x200B;实例，该服务器链接到&#x200B;**活动**&#x200B;帐户及其&#x200B;**密码**（在&#x200B;**dbsrv**&#x200B;服务器上）:
+以下命令使用SQL类型服务器（称为&#x200B;**base6**）配置&#x200B;**demo**&#x200B;实例，该服务器链接到&#x200B;**活动**&#x200B;帐户及其&#x200B;**密码**&#x200B;在&#x200B;**dbsrv**&#x200B;服务器上：
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
