@@ -17,34 +17,34 @@ ht-degree: 0%
 
 # 常规配置{#general-configurations}
 
-如果您是从v5.11或v6.02迁移，则本节将详细介绍要在Adobe Campaignv7中执行的配置。
+如果您是从v5.11或v6.02迁移，则本节将详细介绍在Adobe Campaign v7中要执行的配置。
 
 此外：
 
-* 如果从v5.11迁移，则还必须完成v5.11](../../migration/using/specific-configurations-in-v5-11.md)中[的特定配置部分中的详细配置。
-* 如果从v6.02迁移，则还必须完成v6.02](../../migration/using/specific-configurations-in-v6-02.md)中[特定配置部分中的详细配置。
+* 如果从v5.11迁移，则还必须完成v5.11](../../migration/using/specific-configurations-in-v5-11.md)中[特定配置部分中详细介绍的配置。
+* 如果从v6.02迁移，则还必须完成v6.02](../../migration/using/specific-configurations-in-v6-02.md)中[特定配置部分中详细介绍的配置。
 
 ## 时区{#time-zones}
 
 ### 多时区模式{#multi-time-zone-mode}
 
-在v6.02中，“多时区”模式仅对PostgreSQL数据库引擎可用。 现在，无论使用哪种类型的数据库引擎，都可提供该引擎。 我们强烈建议您将您的基础转换为“多时区”基础。
+在v6.02中，“多时区”模式仅对PostgreSQL数据库引擎可用。 现在，无论使用哪种类型的数据库引擎，都可提供此功能。 我们强烈建议您将您的基础转换为“多时区”基础。
 
 要使用TIMESTAMP WITH TIMEZONE模式，您还需要将&#x200B;**-userTimestamptz:1**&#x200B;选项添加到postupgrade命令行。
 
 >[!IMPORTANT]
 >
->如果将&#x200B;**-usetimestamptz:1**&#x200B;参数与不兼容的数据库引擎一起使用，则您的数据库将已损坏，您必须恢复数据库的备份并重新执行上述命令。
+>如果将&#x200B;**-usetimestamptz:1**&#x200B;参数与不兼容的数据库引擎一起使用，则您的数据库将损坏，您必须恢复数据库的备份并重新执行上述命令。
 
 >[!NOTE]
 >
->迁移后，可以通过控制台（**[!UICONTROL Administration > Platform > Options > WdbcTimeZone]**&#x200B;节点）更改时区。
+>通过控制台（**[!UICONTROL Administration > Platform > Options > WdbcTimeZone]**&#x200B;节点）迁移后，可以更改时区。
 >
 >有关时区管理的详细信息，请参阅[此部分](../../installation/using/time-zone-management.md)。
 
 ### Oracle {#oracle}
 
-如果在播放过程中出现&#x200B;**ORA 01805**&#x200B;错误，这意味着应用程序服务器和数据库服务器之间的Oracle时区文件不同步。 要重新同步它们，请应用以下步骤：
+如果在配置过程中出现&#x200B;**ORA 01805**&#x200B;错误，这意味着应用程序服务器与数据库服务器之间的Oracle时区文件不同步。 要重新同步它们，请应用以下步骤：
 
 1. 要标识所使用的时区文件，请运行以下命令：
 
@@ -56,13 +56,13 @@ ht-degree: 0%
 
 1. 确保两台服务器上的时区文件相同。
 
-有关详细信息，请访问：[https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004)。
+有关更多信息，请访问：[https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004)。
 
-客户端和服务器之间的时区未对准也会导致一些滞后。 因此，我们建议在客户端和服务器端使用相同版本的Oracle库，这两个时区必须相同。
+客户端和服务器之间的时区不对齐也会导致一些滞后。 因此，我们建议在客户端和服务器端使用相同版本的Oracle库，这两个时区必须相同。
 
 要检查两侧是否位于同一时区：
 
-1. 运行以下命令检查客户端上时区文件的版本：
+1. 通过运行以下命令检查客户端上时区文件的版本：
 
    ```
    genezi -v
@@ -70,7 +70,7 @@ ht-degree: 0%
 
    genezi是在&#x200B;**$ORACLE_HOME/bin**&#x200B;存储库中找到的二进制文件。
 
-1. 运行以下命令检查服务器端时区文件的版本：
+1. 通过运行以下命令检查服务器端时区文件的版本：
 
    ```
    select * from v$timezone_file
@@ -84,19 +84,19 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->出于安全原因，Adobe Campaign平台在默认情况下不再可访问：您必须配置安全区域，并因此收集运营商IP地址。
+>出于安全原因，默认情况下不再可访问Adobe Campaign平台：您必须配置安全区域，并因此收集运营商IP地址。
 
-Adobe Campaignv7包含&#x200B;**安全区域**&#x200B;的概念。 每个用户必须与某个区域关联才能登录实例，并且用户的IP地址必须包含在安全区域中定义的地址或地址范围中。 配置安全区可在Adobe Campaign服务器配置文件中完成。 必须在控制台(**[!UICONTROL Administration > Access management > Operators]**)中定义与用户关联的安全区域。
+Adobe Campaign v7包含&#x200B;**安全区域**&#x200B;的概念。 每个用户必须与某个区域关联才能登录到实例，并且用户的IP地址必须包含在安全区域中定义的地址或地址范围中。 可以在Adobe Campaign服务器配置文件中配置安全区域。 必须在控制台(**[!UICONTROL Administration > Access management > Operators]**)中定义与用户关联的安全区域。
 
 **迁移前**，请要求网络管理员帮助您定义迁移后要激活的安全区域。
 
-**配置升级** （在服务器重新启动之前）后，必须配置安全区域。
+**配置升级后** （服务器重新启动之前），必须配置安全区域。
 
-安全区配置位于[此部分](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+安全区域配置位于[此部分](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
 
 ### 用户密码{#user-passwords}
 
-在v7中，**internal**&#x200B;和&#x200B;**admin**&#x200B;运算符连接必须由口令保护。 我们强烈建议在迁移&#x200B;**之前为这些帐户和所有运算符帐户分配密码。**&#x200B;如果尚未为&#x200B;**internal**&#x200B;指定口令，您将无法连接。 要将密码指定给&#x200B;**internal**，请输入以下命令：
+在v7中，**internal**&#x200B;和&#x200B;**admin**&#x200B;运算符连接必须由密码保护。 我们强烈建议在迁移&#x200B;**之前为这些帐户和所有运算符帐户分配密码。**&#x200B;如果尚未为&#x200B;**internal**&#x200B;指定口令，您将无法连接。 要将密码指定给&#x200B;**internal**，请输入以下命令：
 
 ```
 nlserver config -internalpassword
@@ -110,24 +110,24 @@ nlserver config -internalpassword
 
 * 没有权限的用户无法再连接到Adobe Campaign。 必须手动添加其权限，例如，创建名为&#x200B;**connect**&#x200B;的权限。
 
-   在播放过程中，将识别并列出受此修改影响的用户。
+   在配置过程中，将识别并列出受此修改影响的用户。
 
-* 如果密码为空，跟踪将不再有效。 如果出现这种情况，将显示一条错误消息，通知您并要求您重新配置它。
+* 如果密码为空，则跟踪不再有效。 如果出现这种情况，将显示一条错误消息，通知您并要求您重新配置它。
 * 用户密码不再存储在&#x200B;**xtk:sessionInfo**&#x200B;模式中。
 * 现在，使用&#x200B;**xtk:builder:EvaluateJavaScript**&#x200B;和&#x200B;**xtk:builder:EvaluateJavaScriptTemplate**&#x200B;函数时需要管理权限。
 
-某些现成模式已修改，默认情况下，现在只能通过具有&#x200B;**admin**&#x200B;权限的操作员的写访问访问访问：
+某些现成模式已修改，默认情况下，仅可通过具有&#x200B;**admin**&#x200B;权限的操作员的写访问访问访问：
 
 * ncm：发布
 * nl：监视
-* nms：日历
+* nms:calendar
 * xtk:builder
 * xtk：连接
 * xtk:dbInit
 * xtk:entityBackupNew
 * xtk:entityBackupOriginal
 * xtk:entityOriginal
-* xtk：表单
+* xtk:form
 * xtk:funcList
 * xtk:fusion
 * xtk：图像
@@ -146,12 +146,12 @@ nlserver config -internalpassword
 * xtk:sql
 * xtk:sqlSchema
 * xtk:srcSchema
-* xtk：字符串
+* xtk:strings
 * xtk:xslt
 
-### 会话令牌参数{#sessiontoken-parameter}
+### Sessiontoken参数{#sessiontoken-parameter}
 
-在v5中，**sessiontoken**&#x200B;参数在客户端都工作(概述类型屏幕、链接编辑器等的列表) 服务器端（web应用程序、报表、jsp、jssp等）。 在v7中，它仅在服务器端工作。 如果要恢复v5上的完整功能，则必须使用此参数修改链接并通过连接页传递：
+在v5中，**sessiontoken**&#x200B;参数在客户端都工作(概述类型屏幕、链接编辑器等的列表) 和服务器端（web应用程序、报表、jsp、jssp等）。 在v7中，它仅在服务器端工作。 如果要恢复到与v5相同的完整功能，则必须使用此参数修改链接并通过连接页面传递：
 
 链接示例：
 
@@ -167,21 +167,21 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->如果您使用与信任的IP掩码链接的运算符，请检查它是否具有最小权限，并且它是否处于&#x200B;**sessionTokenOnly**&#x200B;模式下的安全区域。
+>如果您使用与受信任的IP掩码链接的运算符，请检查该运算符是否具有最小权限，以及它是否处于&#x200B;**sessionTokenOnly**&#x200B;模式下的安全区中。
 
 ### SQL函数{#sql-functions}
 
-未知的SQL函数调用不再自然地发送到服务器。 当前，必须将所有SQL函数添加到&#x200B;**xtk:funcList**&#x200B;模式（有关详细信息，请参阅[此部分](../../configuration/using/adding-additional-sql-functions.md)）。 迁移时，在postupgrade中会添加一个选项，它允许您与旧的未声明的SQL函数保持兼容性。 如果要继续使用这些函数，请检查&#x200B;**XtkPassUnknownSQLFunctionsToRDBMS**&#x200B;选项是否确实在&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;节点级别定义。
+未知的SQL函数调用不再自然地发送到服务器。 目前，必须将所有SQL函数添加到&#x200B;**xtk:funcList**&#x200B;模式（有关详细信息，请参阅[此部分](../../configuration/using/adding-additional-sql-functions.md)）。 迁移时，在配置升级过程中会添加一个选项，该选项允许您保持与旧的未声明的SQL函数的兼容性。 如果要继续使用这些函数，请检查&#x200B;**XtkPassUnknownSQLFunctionsToRDBMS**&#x200B;选项是否确实在&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;节点级别定义。
 
 >[!IMPORTANT]
 >
->我们强烈建议不要使用此选项，因为它会带来安全风险。
+>由于该选项会带来安全风险，我们强烈建议不要使用此选项。
 
 ### JSSP {#jssp}
 
-如果要授权通过HTTP协议（而非HTTPS）访问某些页面，例如，在您的Web应用程序中，无论在安全区域中执行何种配置，都必须在相应的中继规则中指定&#x200B;**httpAllowed=&quot;true&quot;**&#x200B;参数。
+如果要授权通过HTTP协议（而非HTTPS）访问某些页面，例如，在您的Web应用程序中，无论在安全区域中执行何种配置，您必须在相应的中继规则中指定&#x200B;**httpAllowed=&quot;true&quot;**&#x200B;参数。
 
-如果使用匿名JSSP，则必须在JSSP的中继规则中添加&#x200B;**httpAllowed=&quot;true&quot;**&#x200B;参数（**[!UICONTROL serverConf.xml]**&#x200B;文件）:
+如果使用匿名JSSP，则必须在JSSP（**[!UICONTROL serverConf.xml]**&#x200B;文件）的中继规则中添加&#x200B;**httpAllowed=&quot;true&quot;**&#x200B;参数：
 
 例如：
 
@@ -194,9 +194,9 @@ nlserver config -internalpassword
 
 ### JavaScript {#javascript}
 
-Adobe Campaignv7集成了更新的JavaScript解释器。 但是，此更新可能导致某些脚本发生故障。 由于以前的引擎权限更大，因此某些语法会起作用，而新版本的引擎不再适用。
+Adobe Campaign v7集成了更新的JavaScript解释器。 但是，此更新可能导致某些脚本发生故障。 由于之前的引擎更容易使用，因此某些语法将起作用，而新版本的引擎不再适用。
 
-**[!UICONTROL myObject.@attribute]**&#x200B;语法现在仅对XML对象有效。 此语法可用于个性化投放和内容管理。 如果在非XML对象上使用此类语法，个性化功能将不再有效。
+**[!UICONTROL myObject.@attribute]**&#x200B;语法现在仅对XML对象有效。 此语法可用于个性化投放和内容管理。 如果您在非XML对象上使用了此类语法，个性化功能将不再有效。
 
 对于所有其他对象类型，语法现在为&#x200B;**[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**。 例如，使用以下语法的非XML对象：**[!UICONTROL employee.@sn]**，现在必须使用以下语法：**[!UICONTROL employee`[`&quot;sn&quot;`]`]**。
 
@@ -212,7 +212,7 @@ Adobe Campaignv7集成了更新的JavaScript解释器。 但是，此更新可�
    employee["sn"]
    ```
 
-要更改XML对象中的值，您现在需要先更新该值，然后再添加XML节点：
+要更改XML对象中的值，您现在需要在添加XML节点之前更新该值来进行开始:
 
 * 旧JavaScript代码：
 
@@ -230,7 +230,7 @@ Adobe Campaignv7集成了更新的JavaScript解释器。 但是，此更新可�
    this.styles.appendChild(cellStyle);
    ```
 
-不再能将XML属性用作表键。
+您不能再将XML属性用作表键。
 
 * 以前的语法：
 
@@ -246,23 +246,23 @@ Adobe Campaignv7集成了更新的JavaScript解释器。 但是，此更新可�
 
 ### SQLData {#sqldata}
 
-为了增强实例安全性，在v7Adobe Campaign中引入了新的语法来取代基于SQLData的语法。 如果将这些代码元素与此语法一起使用，则必须修改它们。 主要内容有：
+为了增强实例的安全性，在Adobe Campaign v7中引入了新的语法来替换基于SQLData的语法。 如果将这些代码元素与此语法一起使用，则必须修改它们。 有关的主要因素有：
 
 * 按子查询筛选：新语法基于`<subQuery>`元素来定义子查询
 * 聚合:新语法为“聚合函数（集合）”
 * 按连接过滤：新语法为`[schemaName:alias:xPath]`
 
-已修改queryDef(xtk:queryDef)模式:
+queryDef(xtk:queryDef)模式已修改：
 
-* 新的`<subQuery>`元素可用于替换SQLData中包含的SELECT
-* 为@setOperator属性引入了两个新值“IN”和“NOT IN”
+* 新`<subQuery>`元素可用于替换SQLData中包含的SELECT
+* 为@setOperator属性引入了两个新值，即“IN”和“NOT IN”
 * 新`<where>`元素，它是`<node>`元素的子元素：这使您能够在SELECT中进行“子选择”
 
-当使用“@expr”属性时，可能存在SQLData。 可以搜索以下术语：&quot;SQLData&quot;、&quot;aliasSqlTable&quot;、&quot;sql&quot;。
+当使用&quot;@expr&quot;属性时，可能存在SQLData。 可以执行以下搜索：&quot;SQLData&quot;、&quot;aliasSqlTable&quot;、&quot;sql&quot;。
 
-Adobe Campaignv7实例默认为安全。 安全性来自于&#x200B;**[!UICONTROL serverConf.xml]**&#x200B;文件中安全区域的定义：**allowSQLInjeption**&#x200B;属性管理SQL语法安全性。
+Adobe Campaign v7实例默认为安全。 安全性是指&#x200B;**[!UICONTROL serverConf.xml]**&#x200B;文件中安全区域的定义：**allowSQLInjeftence**&#x200B;属性管理SQL语法安全。
 
-如果在配置级执行期间发生SQLData错误，则必须修改此属性以暂时允许使用基于SQLData的语法，从而允许您重写代码。 为此，必须在&#x200B;**serverConf.xml**&#x200B;文件中更改以下选项：
+如果在配置级执行期间发生SQLData错误，则必须修改此属性以临时允许使用基于SQLData的语法，从而允许您重写代码。 为此，必须在&#x200B;**serverConf.xml**&#x200B;文件中更改以下选项：
 
 ```
 allowSQLInjection="true"
@@ -274,7 +274,7 @@ allowSQLInjection="true"
 nlserver config -postupgrade -instance:<instance_name> -force
 ```
 
-您必须配置安全区域（请参阅[安全](#security)），然后通过更改以下选项重新激活安全性：
+您必须配置安全区域（请参阅[Security](#security)），然后通过更改以下选项重新激活安全性：
 
 ```
 allowSQLInjection="false"
@@ -369,7 +369,7 @@ allowSQLInjection="false"
                      <where><condition expr="[validation/@sandboxMode]=0 AND @state>=45" /></where></node>
    ```
 
-**过滤器（按连接）**
+**过滤器**
 
 `[schemaName:alias:xPath]`
 
@@ -417,15 +417,15 @@ allowSQLInjection="false"
 
 ## 冲突{#conflicts}
 
-迁移是通过程序升级执行的，冲突可能会在报表、表单或Web应用程序中出现。 这些冲突可以通过控制台解决。
+迁移是通过程序执行的，冲突可能会在报表、表单或Web应用程序中显示。 这些冲突可以从控制台中解决。
 
-资源同步后，使用&#x200B;**postupgrade**&#x200B;命令可以检测同步是否生成错误或警告。
+资源同步后，**postupgrade**&#x200B;命令允许您检测同步是否生成错误或警告。
 
 ### 视图同步结果{#view-the-synchronization-result}
 
-同步结果可通过两种方式查看：
+可以通过两种方式查看同步结果：
 
-* 在命令行接口中，错误由三个V形标记&#x200B;**>>**&#x200B;实现，同步自动停止。 警告由多次V形标记&#x200B;**>**&#x200B;实现，并且必须在同步完成后解决。 在播放结束时，命令提示符下会显示一个摘要。 例如：
+* 在命令行接口中，错误由三个V形标记&#x200B;**>>**&#x200B;实现，并自动停止同步。 警告由多次V形标记&#x200B;**>>**&#x200B;实现，并且必须在同步完成后解决。 在配置的末尾，将在命令提示符下显示摘要。 例如：
 
    ```
    2013-04-09 07:48:39.749Z        00002E7A          1     info    log     =========Summary of the update==========
@@ -436,17 +436,17 @@ allowSQLInjection="false"
    2013-04-09 07:48:39.750Z        00002E7A          1     warning log     Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
    ```
 
-   如果警告涉及资源冲突，则需要操作员注意才能解决该问题。
+   如果警告涉及资源冲突，则需要操作员注意以解决。
 
-* postupgrade`>`.log **文件的** postupgrade_`<server version number>`_time包含同步结果。 默认情况下，它位于以下目录中：**安装目录/var/`<instance>`postupgrade**。 错误和警告由&#x200B;**error**&#x200B;和&#x200B;**warning**&#x200B;属性指示。
+* postupgrade`>`.log **文件的** postupgrade_`<server version number>`_time包含同步结果。 默认情况下，它位于以下目录中：**安装目录/var/`<instance>` postupgrade**。 错误和警告由&#x200B;**error**&#x200B;和&#x200B;**warning**&#x200B;属性指示。
 
 ### 解决冲突{#resolve-a-conflict}
 
-解决冲突必须仅由高级运算符和那些已被授予“管理员”权限的运算符来执行。
+解决冲突必须仅由高级运算符和那些被授予“管理员”权限的运算符执行。
 
-要解决冲突，请应用以下流程：
+要解决冲突，请应用以下过程：
 
-1. 在Adobe Campaign树结构中，将光标放在&#x200B;**[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**&#x200B;上。
+1. 在Adobe Campaign树结构中，将光标置于&#x200B;**[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**&#x200B;上。
 1. 在列表中选择要解决的冲突。
 
 解决冲突有三种可能的方法：
@@ -456,11 +456,11 @@ allowSQLInjection="false"
 * **[!UICONTROL Keep the current version]**:表示更新被拒绝。
 
    >[!IMPORTANT]
-   如果选择此解决模式，则可能丢失新版本中的修补程序。 因此，强烈建议不要仅为专家操作员使用或保留此选项。
+   如果选择此解决模式，您可能会丢失新版本中的修补程序。 因此，强烈建议不要仅为专家操作员使用或保留此选项。
 
 如果选择手动解决冲突，请按如下步骤继续：
 
-1. 在窗口的下半部分，搜索&#x200B;**`_conflict_ string`**&#x200B;以查找存在冲突的实体。 随新版本一起安装的实体包含&#x200B;**new**&#x200B;参数，与先前版本匹配的实体包含&#x200B;**cus**&#x200B;参数。
+1. 在窗口的下半部分，搜索&#x200B;**`_conflict_ string`**&#x200B;以查找存在冲突的实体。 随新版本安装的实体包含&#x200B;**new**&#x200B;参数，与先前版本匹配的实体包含&#x200B;**cus**&#x200B;参数。
 
    ![](assets/s_ncs_production_conflict002.png)
 
@@ -473,7 +473,7 @@ allowSQLInjection="false"
 
 ## Tomcat {#tomcat}
 
-Adobe Campaignv7中集成的Tomcat服务器已更改版本(Tomcat 7)。 因此，其安装文件夹(tomcat-6)也已更改(tomcat 7)。 配置升级后，请确保检查路径是否链接到更新的文件夹（在&#x200B;**[!UICONTROL serverConf.xml]**&#x200B;文件中）:
+Adobe Campaign v7中集成的Tomcat服务器已更改版本(Tomcat 7)。 因此，其安装文件夹(tomcat-6)也发生了更改(tomcat 7)。 配置升级后，请确保检查路径是否链接到更新的文件夹（在&#x200B;**[!UICONTROL serverConf.xml]**&#x200B;文件中）：
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar 
@@ -489,7 +489,7 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 
 ### 先决条件{#prerequisites}
 
-**在配置升级**&#x200B;之前，必须从6.02中删除v7中将不再存在的所有模式引用。
+**在配置升级之前**，您必须从6.02中删除所有在v7中不再存在的模式引用。
 
 * nms:emailOfferView
 * nms:webOfferView
@@ -499,12 +499,12 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 
 ### 优惠内容{#offer-content}
 
-在v7中，已移动优惠内容。 在v6.02中，内容位于每个表示模式中(**nms:emailOfferView**)。 在v7中，内容现在处于优惠模式。 配置升级后，内容将不会显示在界面中。 在播放后，您必须重新创建优惠内容，或开发一个脚本，该脚本将内容从表示模式自动移动到优惠模式。
+在v7中，已移动优惠内容。 在v6.02中，内容位于每个表示模式(**nms:emailOfferView**)。 在v7中，内容现在处于优惠模式。 配置升级后，内容将不会显示在界面中。 配置升级后，您必须重新创建优惠内容，或开发一个脚本，该脚本会自动将内容从表示模式移到优惠模式。
 
 >[!IMPORTANT]
-如果迁移后要发送使用已配置优惠的某些投放，则必须删除这些投放并在v7中重新创建这些。 如果您无法这样做，则提供“兼容性模式”。 不建议使用此模式，因为您不会从Interaction v7中的所有新增功能中受益。 这是一种过渡模式，允许您在实际6.1迁移之前完成正在进行的活动。 有关此模式的详细信息，请联系我们。
+如果迁移后要发送使用已配置优惠的某些投放，则必须删除这些投放并在v7中重新创建这些。 如果无法执行此操作，则会提供“兼容模式”。 不建议使用此模式，因为您不会从Interaction v7中的所有新功能中受益。 这是一种过渡模式，允许您在实际6.1迁移之前完成正在进行的活动。 有关此模式的详细信息，请联系我们。
 
-移动脚本(**interactionTo610_full_XX.js**)的示例在Adobe Campaignv7文件夹的&#x200B;**Migration**&#x200B;文件夹中提供。 此文件显示了一个客户端脚本示例，该脚本使用每个优惠（**[!UICONTROL htmlSource]**&#x200B;和&#x200B;**[!UICONTROL textSource]**&#x200B;字段）的单一电子邮件表示形式。 **NmsEmailOfferView**&#x200B;表中的内容已移至优惠表。
+移动脚本(**interactionTo610_full_XX.js**)的示例位于Adobe Campaign v7文件夹的&#x200B;**Migration**&#x200B;文件夹中。 此文件显示了一个使用每个优惠（**[!UICONTROL htmlSource]**&#x200B;和&#x200B;**[!UICONTROL textSource]**&#x200B;字段）的单一电子邮件表示形式的客户端脚本示例。 **NmsEmailOfferView**&#x200B;表中的内容已移到优惠表。
 
 >[!NOTE]
 使用此脚本不允许您从“内容管理”和“渲染函数”选项中受益。 要从这些功能中受益，您必须重新思考目录优惠，特别是优惠内容和配置空间。
@@ -579,7 +579,7 @@ logInfo("Done");
 
 ### 测试和配置{#tests-and-configuration}
 
-如果您只有一个优惠，则在移动了环境内容后，将遵循以下过程。 在此例中，我们以“ENV”为例。
+在移动优惠内容后，如果您只有一个环境，请遵循以下步骤。 在此例中，我们以“ENV”为例。
 
 1. 在所有“ENV”环境优惠空间中，更新所用字段的列表。 例如，对于仅使用&#x200B;**[!UICONTROL htmlSource]**&#x200B;的优惠空间，必须添加&#x200B;**[!UICONTROL view/htmlSource]**。
 
@@ -599,20 +599,20 @@ logInfo("Done");
 
 1. 对所有“ENV”环境优惠执行相同操作。
 1. 激活相关环境上的所有优惠“ENV_DESIGN”。
-1. 试制优惠上线。 如果您没有遇到任何问题，请在最新工作流任务&#x200B;**[!UICONTROL Offer notification]**(offerMgt)上执行挂起的任务，以使所有优惠都生效。
+1. 测试让优惠上线。 如果您没有遇到任何问题，请在最新的工作流任务&#x200B;**[!UICONTROL Offer notification]**(offerMgt)上执行挂起的任务，以使所有优惠都生效。
 
    ![](assets/migration_interaction_6.png)
 
-1. 执行全面的测试。
+1. 执行全面测试。
 
    >[!NOTE]
-   在线类别和优惠的名称在上线后进行修改。 在传入渠道上，更新对优惠和类别的所有引用。
+   上线类别和优惠的名称在上线后进行修改。 在传入渠道上，更新对优惠和类别的所有引用。
 
 ## 报告 {#reports}
 
 ### 标准报告{#standard-reports}
 
-所有标准报告当前都使用渲染引擎v6.x。如果已将JavaScript添加到这些报表中，某些元素可能不再有效。 事实上，旧版JavaScript与v6.x渲染引擎不兼容。 因此，您必须检查JavaScript代码，然后重新调整它。 应测试每个报告，特别是导出功能。
+所有标准报表当前都使用渲染引擎v6.x。如果已将JavaScript添加到这些报表中，则某些元素可能不再有效。 事实上，旧版JavaScript与v6.x渲染引擎不兼容。 因此，您必须检查JavaScript代码，然后稍后调整它。 应测试每个报告，尤其是导出函数。
 
 ### 个性化报告{#personalized-reports}
 
@@ -620,23 +620,23 @@ logInfo("Done");
 
 ![](assets/migration_reports_1.png)
 -->
-如果您希望从新报告功能中受益，则必须重新发布报告。 为此，请编辑报告&#x200B;**[!UICONTROL Properties]**，单击&#x200B;**[!UICONTROL Rendering]**&#x200B;并选择v.6.x渲染引擎。 在这种情况下，请检查所有脚本并在必要时更改它们。 在PDF导出方面，如果您为Open Office添加了特定脚本，则新的PDF导出引擎(PhantomJS)将不再适用。
+如果您希望从新报告功能中受益，则必须重新发布报告。 为此，请编辑报表&#x200B;**[!UICONTROL Properties]**，单击&#x200B;**[!UICONTROL Rendering]**&#x200B;并选择v.6.x渲染引擎。 在这种情况下，请检查所有脚本并根据需要更改它们。 在PDF导出方面，如果您为Open Office添加了特定脚本，则新的PDF导出引擎(PhantomJS)将不再适用。
 
 ## Web 应用程序 {#web-applications}
 
 有两个Web应用程序系列：
 
-* 确定的Web应用程序（综合查看，批准表单，外部网内部开发）,
+* 发现网络应用程序（综合来看，批准表格，外联网内部开发），
 * 匿名Web应用程序（Web或调查表表单）。
 
 ### 已识别的Web应用程序{#identified-web-applications}
 
-与报表一样（请参阅[报表](#reports)），如果您已添加JavaScript，则必须检查并调整。 如果您希望从v7蓝色横幅（包含宇宙）受益，则必须重新发布Web应用程序。 如果您的JavaScript代码正在工作，则可以选择v6.x渲染引擎。 如果不是这样，您可以在调整代码时使用v6.0渲染引擎，然后使用v6.x渲染引擎。
+与报表一样（请参阅[报表](#reports)），如果添加了JavaScript，则必须检查并调整。 如果您希望从v7蓝色横幅（包含宇宙）中受益，则必须重新发布Web应用程序。 如果您的JavaScript代码正在工作，则可以选择v6.x渲染引擎。 如果不是这样，您可以在调整代码时使用v6.0渲染引擎，然后使用v6.x渲染引擎。
 
 >[!NOTE]
-选择渲染引擎的步骤与选择报告的步骤相同。 请参阅[个性化报告](#personalized-reports)。
+选择渲染引擎的步骤与选择报表的步骤相同。 请参阅[个性化报告](#personalized-reports)。
 
-Web 应用程序连接方法在v7中已更改。 如果在已识别的Web应用程序中遇到任何连接问题，必须临时激活&#x200B;**serverConf.xml**&#x200B;文件中的&#x200B;**allowUserPassword**&#x200B;和&#x200B;**sessionTokenOnly**&#x200B;选项。 在配置升级后，修改以下选项值：
+Web 应用程序连接方法在v7中已更改。 如果在已识别的Web应用程序中遇到任何连接问题，必须临时激活&#x200B;**serverConf.xml**&#x200B;文件中的&#x200B;**allowUserPassword**&#x200B;和&#x200B;**sessionTokenOnly**&#x200B;选项。 配置升级后，修改以下选项值：
 
 ```
 allowUserPassword="true"
@@ -652,7 +652,7 @@ sessionTokenOnly="true"
 nlserver config -postupgrade -instance:<instance_name> -force
 ```
 
-在发布之前，在v6.x渲染引擎中测试Web应用程序。 然后取消激活这两个选项。
+在发布之前，在v6.x渲染引擎中测试您的Web应用程序。 然后取消激活这两个选项。
 
 ```
 allowUserPassword="false"
@@ -664,14 +664,14 @@ sessionTokenOnly="false"
 
 ### 匿名Web应用程序{#anonymous-web-applications}
 
-如果遇到任何问题，请重新发布Web应用程序。 如果问题仍然存在，您可以选择v6.0渲染引擎。 如果您尚未添加JavaScript，则可以选择v6.x渲染引擎并从其新增功能中受益。
+如果遇到任何问题，请重新发布Web应用程序。 如果问题仍然存在，您可以选择v6.0渲染引擎。 如果您尚未添加JavaScript，则可以选择v6.x渲染引擎并从其新功能中受益。
 
 >[!NOTE]
-选择渲染引擎的步骤与选择报告的步骤相同。 请参阅[个性化报告](#personalized-reports)。
+选择渲染引擎的步骤与选择报表的步骤相同。 请参阅[个性化报告](#personalized-reports)。
 
 ## Red-Hat {#red-hat}
 
-如果在v6.02或v5.11中删除了现成模式，则在播放后您可能无法再编辑模式。 如果发生这种情况，请执行以下命令：
+如果在v6.02或v5.11中删除了现成模式，则在播放后，您可能无法再编辑模式。 如果发生这种情况，请执行以下命令：
 
 ```
 su - neolane
