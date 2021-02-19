@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 安装Campaign Classic内置包
+title: 安装 Campaign Classic 内置软件包
 description: 了解如何安装活动内置包
 audience: installation
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 
-# 安装Campaign Classic内置包{#installing-campaign-standard-packages}
+# 安装 Campaign Classic 内置软件包{#installing-campaign-standard-packages}
 
 ## 关于内置包{#campaign-standard-packages}
 
@@ -25,25 +25,25 @@ ht-degree: 5%
 >
 >您只能安装与许可协议中所述选项对应的软件包。
 >
->安装新包可能会影响您的所有平台：它必须经过测试和验证，然后才能进行最终部署。
+>安装新包会影响您的所有平台：它必须经过测试和验证，然后才能进行最终部署。
 >
->安装包后，将无法卸载它。
+>安装包后，便无法卸载它。
 
-安装内置包：
+要安装内置包，请执行以下操作：
 
 1. 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;访问包导入向导。
 1. 选择 **[!UICONTROL Install a standard package]**。
 1. 在包列表中，检查要安装的包。
    >[!NOTE]
    >
-   >当包灰显时，表示它已安装或与实例不兼容。 兼容性详见下表。
-1. 单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Start]**&#x200B;开始软件包安装。
+   >当包灰显时，它表示已安装或与您的实例不兼容。 下表详细介绍了兼容性。
+1. 单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Start]**&#x200B;开始包安装。
 
-   安装包后，进度栏显示&#x200B;**100%**，安装日志中显示以下消息：**[!UICONTROL Installation of packages successful]**。
+   安装包后，进度栏显示&#x200B;**100%** ，您可以在安装日志中看到以下消息：**[!UICONTROL Installation of packages successful]**。
 
 1. **[!UICONTROL Close]** 安装窗口。
 
-软件包现在已安装。
+现在已安装软件包。
 
 ### 列表现成包{#list-of-standard-packages}
 
@@ -60,7 +60,7 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td> 投放<br /> </td> 
-   <td> 监视投放以及发送消息时遇到的最终问题。 <a href="../../delivery/using/about-delivery-monitoring.md">了解详情</a><br /> </td> 
+   <td> 监视发送消息时遇到的投放和最终问题。 <a href="../../delivery/using/about-delivery-monitoring.md">了解详情</a><br /> </td> 
    <td> 所有</td> 
   </tr> 
   <tr> 
@@ -74,18 +74,18 @@ ht-degree: 5%
    <td> 营销</td> 
   </tr> 
   <tr> 
-   <td> 优惠引擎（交互）<br /> </td> 
+   <td> 优惠引擎(interaction)<br /> </td> 
    <td> 在与给定联系人(客户或目标)的交互过程中，通过使其成为单个或多个调整的优惠进行实时响应。  可选。<a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
-   <td> 控制优惠引擎和执行实例。 可选。<br /> </td> 
-   <td> 要安装在控制实例上的优惠引擎（交互）的包。 <a href="../../interaction/using/distributed-architectures.md#packages-configuration">了解更多</a> </td> 
+   <td> 使用优惠控制执行实例引擎。 可选。<br /> </td> 
+   <td> 要安装在控制实例 for 优惠引擎（交互）上的包。 <a href="../../interaction/using/distributed-architectures.md#packages-configuration">了解更多</a> </td> 
    <td> 营销<br /> </td>  
   </tr> 
   <tr> 
-   <td> 优惠引擎，执行实例。 可选。<br /> </td> 
-   <td> 要安装在执行实例上的优惠引擎（交互）的包。 <a href="../../interaction/using/distributed-architectures.md">了解更多</a> </td> 
+   <td> 优惠引擎，用于执行实例。 可选。<br /> </td> 
+   <td> 要安装在执行实例上的包，用于优惠引擎（交互）。 <a href="../../interaction/using/distributed-architectures.md">了解更多</a> </td> 
    <td> Mid，执行<br /> </td>  
   </tr> 
   <!--tr> 
@@ -100,33 +100,33 @@ ht-degree: 5%
    <td> 所有</td> 
   </tr> 
   <tr> 
-   <td> 事务性消息控制（消息中心——控制）<br /> </td> 
+   <td> 事务性消息控制（消息中心 — 控制）<br /> </td> 
    <td> 管理从信息系统触发的事件生成的触发消息。 可选。<a href="../../message-center/using/about-transactional-messaging.md">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> 事务性消息执行（消息中心——执行）<br /> </td> 
+   <td> 事务性消息执行（消息中心 — 执行）<br /> </td> 
    <td> 确保更高的可用性和更好的负载管理。 可选。<a href="../../message-center/using/about-transactional-messaging.md">了解更多</a><br /> </td> 
    <td> 执行<br /> </td>
   </tr> 
   <tr> 
    <td> LINE 渠道<br /> </td> 
-   <td> 使用带投放的LINE渠道发送Adobe Campaign。 可选。必填事务消息（消息中心包）。 <a href="../../delivery/using/line-channel.md">了解更多</a> <br /> </td> 
+   <td> 使用带有Adobe Campaign的LINE渠道发送投放。 可选。必填事务消息（消息中心包）。 <a href="../../delivery/using/line-channel.md">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
    <td> 直邮渠道<br /> </td> 
-   <td> 使用带有投放的直接邮件渠道发送Adobe Campaign。 可选。<a href="../../delivery/using/about-direct-mail-channel.md">了解更多</a><br /> </td> 
+   <td> 使用带有Adobe Campaign的直接邮件渠道发送投放。 可选。<a href="../../delivery/using/about-direct-mail-channel.md">了解更多</a><br /> </td> 
    <td> 所有<br /> </td>
   </tr> 
   <tr> 
    <td> 移动渠道(SMS)<br /> </td> 
-   <td> 使用带Adobe Campaign的移动／短信渠道发送投放。 可选。<a href="../../delivery/using/sms-channel.md">了解更多</a> <br /> </td> 
+   <td> 使用带有Adobe Campaign的移动/短信渠道发送投放。 可选。<a href="../../delivery/using/sms-channel.md">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
    <tr> 
    <td> 电话渠道<br /> </td> 
-   <td> 使用电话投放发送Adobe Campaign。 用于呼叫中心。 可选。<a href="../../delivery/using/communication-channels.md">了解更多</a> <br /> </td> 
+   <td> 使用带有Adobe Campaign的电话渠道发送投放。 用于呼叫中心。 可选。<a href="../../delivery/using/communication-channels.md">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
@@ -136,22 +136,22 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td> 内容管理器<br /> </td> 
-   <td> 创建定期新闻稿或网站，然后验证和发布您的消息。 <a href="../../delivery/using/about-content-management.md">了解更多</a> <br /> </td> 
+   <td> 创建定期新闻稿或网站，然后验证并发布您的消息。 <a href="../../delivery/using/about-content-management.md">了解更多</a> <br /> </td> 
    <td> </td>
   </tr> 
   <tr> 
-   <td> 在线调查(调查管理器)<br /> </td> 
+   <td> 联机调查(调查管理器)<br /> </td> 
    <td> 创建并管理在线表单，以添加或修改用户档案信息、订阅、取消订阅或竞赛条目表单。 可选。<a href="../../web/using/about-surveys.md">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
    <td> 营销分析<br /> </td> 
-   <td> 使您能够分析和衡量数据、计算统计、简化和优化报表创建和计算。 此外，您还可以创建报告并构建目标群。 可选。<a href="../../reporting/using/about-cubes.md">了解更多</a><br /> </td> 
+   <td> 使您能够分析和测量数据、计算统计、简化和优化报表创建和计算。 此外，您还可以创建报告并构建目标群。 可选。<a href="../../reporting/using/about-cubes.md">了解更多</a><br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
    <td> 响应管理器<br /> </td> 
-   <td> 衡量营销活动或优惠建议对所有通信渠道的成功和盈利能力。  可选。<a href="../../campaign/using/about-response-manager.md">了解更多</a> <br /> </td> 
+   <td> 衡量营销活动或优惠建议在所有通信渠道的成功和盈利能力。  可选。<a href="../../campaign/using/about-response-manager.md">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -161,12 +161,12 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td> 活动优化<br /> </td> 
-   <td> 控制、过滤器和监控投放的发送，使发送的消息能够最好地满足客户的需求和期望，并符合公司通信策略。 可选。<a href="../../campaign/using/about-campaign-typologies.md">了解更多</a> <br /> </td> 
+   <td> 控制、过滤器和监控投放的发送，以使发送的消息最符合公司通信策略的需要和期望。 可选。<a href="../../campaign/using/about-campaign-typologies.md">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
    <td> 交付性监控（电子邮件交付性）<br /> </td> 
-   <td> 衡量活动到达收件人收件箱的成功程度，而不会弹跳或标记为垃圾邮件。 可选。<a href="../../delivery/using/about-deliverability.md">了解更多</a> <br /> </td> 
+   <td> 衡量您的活动到达收件人收件箱的成功程度，而不会弹跳或标记为垃圾邮件。 可选。<a href="../../delivery/using/about-deliverability.md">了解更多</a> <br /> </td> 
    <td> 所有 </td> 
   </tr> 
   <tr> 
@@ -176,52 +176,52 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td> 收件箱渲染(IR)<br /> </td> 
-   <td> 使您能够预览在不同上下文下发送的消息，并检查主要桌面和应用程序的兼容性。 可选。<a href="../../delivery/using/inbox-rendering.md">了解更多</a><br /> </td> 
+   <td> 使您能够预览在不同上下文发送的消息，并检查主要桌面和应用程序的兼容性。 可选。<a href="../../delivery/using/inbox-rendering.md">了解更多</a><br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> 中央／本地营销(分布式营销)<br /> </td> 
-   <td> 实施中央实体（总部、营销部门等）之间的合作活动 和本地实体（销售点、地区代理等）。 可选。<a href="../../campaign/using/about-distributed-marketing.md">了解更多</a><br /> </td> 
+   <td> 中央/本地营销(分布式营销)<br /> </td> 
+   <td> 在中央实体（总部、营销部门等）之间实施合作活动 和本地实体（销售点、区域代理等）。 可选。<a href="../../campaign/using/about-distributed-marketing.md">了解更多</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
    <td> CRM 连接器<br /> </td> 
-   <td> 提供各种CRM连接器，用于将Adobe Campaign平台关联到第三方系统。  <a href="../../platform/using/crm-connectors.md">了解更多</a> <br /> </td> 
+   <td> 提供各种CRM连接器，用于将您的Adobe Campaign平台链接到您的第三方系统。  <a href="../../platform/using/crm-connectors.md">了解更多</a> <br /> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
-   <td> Web分析连接器<br /> </td> 
+   <td> Web Analytics连接器<br /> </td> 
    <td> 允许Adobe Campaign和Adobe Analytics通过Web Analytics连接器包进行交互。 与事务消息（消息中心包）不兼容。 <a href="../../platform/using/adobe-analytics-data-connector.md">了解更多</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
    <td> AEM integration<br /> </td> 
-   <td> 允许您直接在Adobe Experience Manager管理电子邮件投放的内容和表单，以从AEM内容编辑功能和Adobe Campaign的投放能力中受益。 <a href="../../integrations/using/about-adobe-experience-manager.md">了解更多</a> <br /> </td> 
+   <td> 允许您直接在Adobe Experience Manager中管理电子邮件投放的内容和表单，以从AEM内容编辑功能和Adobe Campaign的投放能力中受益。 <a href="../../integrations/using/about-adobe-experience-manager.md">了解更多</a> <br /> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
    <td> Adobe Experience Cloud共享受众集成<br /> </td> 
-   <td> 允许您与Adobe Experience Cloud解决方案和核心服务交换和共享受众/细分。 需要IMS <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">了解更多</a> <br /> </td> 
+   <td> 允许您使用Adobe Experience Cloud解决方案和核心服务交换和共享受众/细分。 需要IMS <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> 与Adobe Experience Cloud集成<br /> </td> 
-   <td> 使您能够将受众/细分从不同的Adobe Experience Cloud解决方案导入和导出到Adobe Campaign。 可选。<a href="../../integrations/using/configuring-ims.md#installing-the-package">了解更多</a> </td> 
+   <td> 与Adobe Experience Cloud<br />集成 </td> 
+   <td> 使您能够将不同Adobe Experience Cloud解决方案中的受众/区段导入和导出到Adobe Campaign中。 可选。<a href="../../integrations/using/configuring-ims.md#installing-the-package">了解更多</a> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
    <td> 隐私数据保护规定<br /> </td> 
-   <td> 包含其他功能，可帮助您在Campaign Classic中遵守隐私。 <a href="https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html">了解更多</a> <br /> </td> 
+   <td> 包含其他功能，可帮助您在Campaign Classic中实现隐私合规性。 <a href="https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html">了解更多</a> <br /> </td> 
    <td> 所有</td> 
   </tr> 
   <tr> 
    <td> 传输到中间源<br /> </td> 
-   <td> 详细说明中间源服务器的安装和配置以及允许第三方以中间源模式发送消息的实例的部署。 可选。<a href="../../installation/using/mid-sourcing-server.md">了解更多</a> <br /> </td> 
+   <td> 详细说明中间源服务器的安装和配置，以及允许第三方以中间源模式发送消息的实例的部署。 可选。<a href="../../installation/using/mid-sourcing-server.md">了解更多</a> <br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
    <td> 中间源平台<br /> </td> 
-   <td> 此配置是托管(ASP)配置和内部化之间的最佳中间解决方案。 所述朝外执行组件在托管于Adobe Campaign的“中间源”服务器上执行。 可选。<a href="../../installation/using/mid-sourcing-server.md">了解更多</a> <br /> </td> 
+   <td> 此配置是托管(ASP)配置与内部化之间的最佳中间解决方案。 向外执行组件在托管于Adobe Campaign的“中间源”服务器上执行。 可选。<a href="../../installation/using/mid-sourcing-server.md">了解更多</a> <br /> </td> 
    <td> 中间源 </td> 
   </tr> 
   <tr> 
@@ -231,7 +231,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td> ACS Connector<br /> </td> 
-   <td> 桥梁Adobe Campaignv7和Adobe Campaign Standard。 它是v7活动中的一个集成功能，可自动将Campaign Standard复制到数据中，从而将两种应用程序的最佳结合起来。 可选。<a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">了解更多</a> <br /> </td> 
+   <td> 桥接Adobe Campaign v7和Adobe Campaign Standard。 它是活动 v7中的一个集成功能，可将数据自动复制到Campaign Standard，将两个应用程序的最佳功能结合在一起。 可选。<a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">了解更多</a> <br /> </td> 
    <td> 营销 </td> 
   </tr> 
  </tbody> 
@@ -239,7 +239,7 @@ ht-degree: 5%
 
 ### 消息中心包{#message-center-package}
 
-您必须安装投放渠道(电子邮件、移动渠道、移动应用渠道等) 在安装Transactional Messaging（消息中心包）之前。 如果您已启动仅电子邮件消息中心项目，并且需要在之后添加新渠道，则必须执行以下步骤：
+您必须安装投放渠道(电子邮件、移动渠道、移动应用渠道等) 在安装Transactional Messaging（Message Center包）之前。 如果您已启动仅电子邮件的消息中心项目，并且需要在之后添加新的渠道，则必须执行以下步骤：
 
 1. 使用包渠道(**[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安装新渠道，例如&#x200B;**移动导入向导**。
 1. 导入文件(**[!UICONTROL Tools > Advanced > Import package > File]**)，然后选择：
@@ -248,7 +248,7 @@ ht-degree: 5%
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. 在&#x200B;**[!UICONTROL XML data content to import]**&#x200B;中，仅保留与相关投放模板对应的消息中心渠道。 例如，如果已添加&#x200B;**移动渠道**，则只保留与&#x200B;**[!UICONTROL Mobile transactional message]**(smsTriggerMessage)模板对应的&#x200B;**entities**&#x200B;元素。 如果已添加&#x200B;**移动应用程序渠道**，则仅保留&#x200B;**iOS事务性消息**&#x200B;模板(iosTriggerMessage)和&#x200B;**Android事务性消息**(androidTriggerMessage)。
+1. 在&#x200B;**[!UICONTROL XML data content to import]**&#x200B;中，仅保留与相关投放模板对应的消息中心渠道。 例如，如果已添加&#x200B;**移动渠道**，则仅保留与&#x200B;**[!UICONTROL Mobile transactional message]**(smsTriggerMessage)模板对应的&#x200B;**entities**&#x200B;元素。 如果已添加&#x200B;**移动应用程序渠道**，则仅保留&#x200B;**iOS事务性消息**&#x200B;模板(iosTriggerMessage)和&#x200B;**Android事务性消息**(androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)
 
