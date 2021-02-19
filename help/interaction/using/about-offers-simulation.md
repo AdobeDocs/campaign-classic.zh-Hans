@@ -17,9 +17,9 @@ ht-degree: 5%
 
 # 关于优惠模拟{#about-offers-simulation}
 
-通过&#x200B;**模拟**&#x200B;模块，可测试属于类别或环境的优惠的分布情况，然后再将建议发送给收件人。
+通过&#x200B;**模拟**&#x200B;模块，可在将您的主张发送到收件人之前，测试属于类别或环境的优惠的分布。
 
-模拟考虑以前应用于优惠的上下文和合格规则(请参阅[优惠目录概述](../../interaction/using/offer-catalog-overview.md))及其推荐规则(请参阅[管理优惠演示文稿](../../interaction/using/managing-offer-presentation.md))。 这样，您无需实际使用优惠建议或过量／正在征求目标，即可测试和优化您的模拟的各个版本，因为优惠对目标收件人没有影响。
+模拟考虑以前应用于优惠的上下文和合格规则(请参阅[优惠目录概述](../../interaction/using/offer-catalog-overview.md))及其推荐规则(请参阅[管理优惠演示文稿](../../interaction/using/managing-offer-presentation.md))。 这样，您无需实际使用优惠或在征求优惠建议意见时，即可测试和优化各种目标版本，因为模拟对目标收件人没有影响。
 
 要了解如何模拟优惠，请阅读以下步骤。
 
@@ -42,7 +42,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >仅当您使用与活动交互时，执行设置才可用。
+   >仅当您使用与活动的交互时，执行设置才可用。
 
 1. 指定模拟范围。
 
@@ -50,14 +50,14 @@ ht-degree: 5%
 
    ![](assets/offer_simulation_004.png)
 
-1. 添加报告轴以增强&#x200B;**[!UICONTROL Offer distribution by rank]**&#x200B;报告（可选）。
+1. 添加报告轴以增强&#x200B;**[!UICONTROL Offer distribution by rank]**&#x200B;报表（可选）。
 
    有关详细信息，请参阅[添加报告轴](../../interaction/using/simulation-scope.md#adding-reporting-axes)。
 
    ![](assets/offer_simulation_005.png)
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以记录模拟设置。
-1. 通过开始模拟。
+1. 开始模拟。
 
    ![](assets/offer_simulation_006.png)
 
