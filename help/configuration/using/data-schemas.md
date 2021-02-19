@@ -9,8 +9,8 @@ topic-tags: editing-schemas
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '388'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->开箱即用模式只能由您的Adobe Campaign Classic控制台的管理员删除。
+>开箱即用的数据模式只能由Adobe Campaign Classic控制台的管理员删除。
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->通过“名称”编辑控件，您可以输入由名称和模式组成的命名空间键。 命名空间的根元素的“name”和“模式”属性在模式的XML编辑区域中自动更新。
+>通过“名称”编辑控件，可以输入由名称和模式组成的命名空间键。 模式的根元素的“name”和“命名空间”属性会在模式的XML编辑区域中自动更新。
 
 预览会自动生成扩展模式:
 
@@ -43,11 +43,11 @@ ht-degree: 0%
 >
 >保存源模式时，将自动启动扩展模式的生成。
 
-如果需要检查模式的完整结构，可以使用预览选项卡。 如果模式已扩展，您就能够可视化其所有扩展。 作为补充，“文档”选项卡显示所有模式属性和元素及其属性（SQL字段、类型／长度、标签、说明）。 “文档”选项卡仅适用于生成的模式。 有关详细信息，请参阅[重新生成模式](../../configuration/using/regenerating-schemas.md)部分。
+如果需要检查模式的完整结构，则可以使用“预览”选项卡。 如果模式已扩展，您随后将能够可视化其所有扩展。 作为补充，“文档”选项卡显示所有模式属性和元素及其属性（SQL字段、类型/长度、标签、说明）。 “文档”选项卡仅适用于生成的模式。 有关详细信息，请参阅[重新生成模式](../../configuration/using/regenerating-schemas.md)部分。
 
 ## 示例：创建合同表{#example--creating-a-contract-table}
 
-在以下示例中，我们要为Adobe Campaign库的数据库模型中的&#x200B;**contracts**&#x200B;创建新表。 此表允许您存储每个合同的持有人和共同持有人的姓名和姓氏以及电子邮件地址。
+在以下示例中，我们要为Adobe Campaign数据库的数据库模型中的&#x200B;**contracts**&#x200B;创建一个新表。 此表允许您存储每个合同的持有人和共同持有人的名和姓以及电子邮件地址。
 
 为此，您需要创建表的模式并更新数据库结构以生成相应的表。 应用以下阶段：
 
@@ -56,13 +56,13 @@ ht-degree: 0%
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
-1. 指定表和命名空间的名称。
+1. 指定表的名称和命名空间。
 
    ![](assets/s_ncs_configuration_create_new_param.png)
 
    >[!NOTE]
    >
-   >默认情况下，用户创建的模式存储在“自定义”命名空间中。 有关详细信息，请参阅[模式的标识](../../configuration/using/about-schema-reference.md#identification-of-a-schema)。
+   >默认情况下，用户创建的模式存储在“自定义”命名空间中。 有关详细信息，请参阅[模式标识](../../configuration/using/about-schema-reference.md#identification-of-a-schema)。
 
 1. 创建表的内容。 我们建议使用输入向导来确保没有缺少设置。 要执行此操作，请单击&#x200B;**[!UICONTROL Insert]**&#x200B;按钮并选择要添加的设置类型。
 
@@ -86,7 +86,7 @@ ht-degree: 0%
    </srcSchema>
    ```
 
-   添加合同类型，并在合同编号上添加索引。
+   添加合同类型，并在合同编号上放置一个索引。
 
    ```
    <srcSchema _cs="Contracts (cus)" desc="Active contracts" entitySchema="xtk:srcSchema" img="ncm:channels.png"
