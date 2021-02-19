@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # 使用分组管理进行查询 {#querying-using-grouping-management}
 
-在此示例中，我们要运行一个查询，以在以前的投放中查找目标超过30次的所有电子邮件域。
+在此示例中，我们希望运行一个查询，以在以前的投放中查找目标超过30次的所有电子邮件域。
 
 * 需要选择哪个表？
 
@@ -25,11 +25,11 @@ ht-degree: 4%
 
 * 要在输出列中选择的字段？
 
-   电子邮件域和主键（含计数）
+   电子邮件域和主密钥（含计数）
 
 * 数据分组？
 
-   基于主键数超过30的电子邮件域。 此操作使用&#x200B;**[!UICONTROL Group by + Having]**&#x200B;选项执行。 **[!UICONTROL Group by + Having]** 允许您对数据进行分组（“分组依据”），并选择已分组的内容（“有”）。
+   基于主键数超过30的电子邮件域。 此操作使用&#x200B;**[!UICONTROL Group by + Having]**&#x200B;选项执行。 **[!UICONTROL Group by + Having]** 允许您对数据（“分组依据”）进行分组，并选择分组的内容（“有”）。
 
 要创建此示例，请应用以下步骤：
 
@@ -37,9 +37,9 @@ ht-degree: 4%
 
    ![](assets/query_editor_02.png)
 
-1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Email domain]**&#x200B;和&#x200B;**[!UICONTROL Primary key]**&#x200B;字段。 运行&#x200B;**[!UICONTROL Primary key]**&#x200B;字段计数。
+1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Email domain]**&#x200B;和&#x200B;**[!UICONTROL Primary key]**&#x200B;字段。 对&#x200B;**[!UICONTROL Primary key]**&#x200B;字段运行计数。
 
-   有关主键计数的详细信息，请参阅[此部分](../../platform/using/defining-filter-conditions.md#building-expressions)。
+   有关主键计数的详细信息，请参阅[本节](../../platform/using/defining-filter-conditions.md#building-expressions)。
 
 1. 选中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING)]**&#x200B;框。
 
@@ -52,17 +52,17 @@ ht-degree: 4%
 1. 在 **[!UICONTROL Data filtering]** 中，选择 **[!UICONTROL Filtering conditions]**。转到&#x200B;**[!UICONTROL Target elements]**&#x200B;窗口并单击&#x200B;**[!UICONTROL Next]**。
 1. 在&#x200B;**[!UICONTROL Data grouping]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Add]**&#x200B;选择&#x200B;**[!UICONTROL Email domain]**。
 
-   仅当选中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING]**)框时，才显示此数据分组窗口。
+   此数据分组窗口仅在选中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING]**)框时才显示。
 
    ![](assets/query_editor_blocklist_04.png)
 
-1. 在&#x200B;**[!UICONTROL Grouping condition]**&#x200B;窗口中，指示主密钥计数大于30，因为我们只希望返回目标电子邮件域超过30次以上的结果。
+1. 在&#x200B;**[!UICONTROL Grouping condition]**&#x200B;窗口中，指示主键计数大于30，因为我们只希望返回超过30次的电子邮件域作为结果。
 
-   选中&#x200B;**[!UICONTROL Manage groupings (GROUP BY + HAVING)]**&#x200B;框时，将显示此窗口：这是筛选分组结果(HAVING)的地方。
+   选中&#x200B;**[!UICONTROL Manage groupings (GROUP BY + HAVING)]**&#x200B;框时，将显示此窗口：这是过滤分组结果(HAVING)的地方。
 
    ![](assets/query_editor_blocklist_05.png)
 
-1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Next]**:此处无需格式设置。
+1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Next]**:此处不需要格式设置。
 1. 在数据预览窗口中，单击&#x200B;**[!UICONTROL Launch data preview]**:此处，将返回三个目标超过30次的不同电子邮件域。
 
    ![](assets/query_editor_blocklist_06.png)
