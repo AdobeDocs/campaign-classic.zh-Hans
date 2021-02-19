@@ -21,13 +21,13 @@ ht-degree: 8%
 
 ## 将现有投放转换为模板{#converting-an-existing-delivery-to-a-template}
 
-投放可以转换为模板以执行新的重复投放操作。 要将投放转换为模板，请从投放列表中选择它，该可通过树的&#x200B;**[!UICONTROL Campaign management]**&#x200B;节点访问。
+投放可以转换为模板以执行新的重复投放操作。 要将投放转换为模板，请从投放列表中选择它，可通过树的&#x200B;**[!UICONTROL Campaign management]**&#x200B;节点访问该模板。
 
 右键单击并选择&#x200B;**[!UICONTROL Actions > Save as template...]**。
 
 ![](assets/s_ncs_user_campaign_save_as_scenario.png)
 
-此操作会根据所选投放模板创建投放。 必须输入保存该模板的文件夹（在&#x200B;**[!UICONTROL Folder]**&#x200B;字段中）以及创建基于此模板创建的投放的文件夹（在&#x200B;**[!UICONTROL Execution folder]**&#x200B;字段中）。
+此操作会根据所选投放模板创建投放。 您必须输入保存该模板的文件夹（在&#x200B;**[!UICONTROL Folder]**&#x200B;字段中）以及创建基于此模板创建的投放的文件夹（在&#x200B;**[!UICONTROL Execution folder]**&#x200B;字段中）。
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
@@ -47,7 +47,7 @@ ht-degree: 8%
    ![](assets/delivery_template_2.png)
 
 1. 修改文件夹的&#x200B;**标签**&#x200B;和&#x200B;**内部名称**。
-1. 保存模板并重新打开它。
+1. 保存您的模板并重新打开它。
 1. 单击&#x200B;**属性**&#x200B;按钮，然后根据您的要求修改值。
 
    ![](assets/delivery_template_3.png)
@@ -56,7 +56,7 @@ ht-degree: 8%
 
    ![](assets/delivery_template_4.png)
 
-1. 填写&#x200B;**电子邮件参数**&#x200B;类别，并填写电子邮件主题和目标人群。
+1. 完成&#x200B;**电子邮件参数**&#x200B;类别，了解您的电子邮件主题和目标人群。
 1. 添加&#x200B;**HTML内容**&#x200B;以个性化模板，您可以显示镜像页面链接和退订链接。
 1. 选择&#x200B;**预览**&#x200B;选项卡。 在&#x200B;**测试个性化**&#x200B;下拉菜单中，选择&#x200B;**收件人**&#x200B;将模板预览为所选用户档案。
 
@@ -66,7 +66,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->为避免出现配置错误，我们建议您重复本机模板并更改其属性，而不是创建新模板。
+>为避免配置错误，建议您重复本机模板并更改其属性，而不要创建新模板。
 
 ## 教程视频 {#delivery-template-video}
 
@@ -84,8 +84,8 @@ ht-degree: 8%
 
 ### 如何部署临时投放模板
 
-此视频介绍如何部署临时电子邮件投放模板，并解释电子邮件投放与投放工作流程的区别。
+此视频介绍了如何部署临时电子邮件投放模板，并解释了电子邮件投放与投放工作流之间的区别。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
-此处[提供其他Campaign Classic操作方法视频。](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
+其他Campaign Classic操作视频[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)可用。
