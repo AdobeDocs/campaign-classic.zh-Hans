@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 种子地址{#seed-addresses}
 
-如果收件人表是自定义表，则需要其他配置。 **[!UICONTROL nms:seedMember]**&#x200B;模式必须扩展。 在种子地址中会添加一个额外的选项卡，用于定义适当的字段，如下所示：
+如果收件人表是自定义表，则需要其他配置。 **[!UICONTROL nms:seedMember]**&#x200B;模式必须扩展。 “种子地址”中会添加一个附加选项卡，用于定义适当的字段，如下所示：
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 ## 实现{#implementation}
 
-**nms:seedMember**&#x200B;模式和现成的链接表单旨在扩展用于客户配置，以引用所有必要字段。 模式定义包含详细描述其配置模式的注释。
+**nms:seedMember**&#x200B;模式和附带的现成链接表单旨在扩展用于客户配置，以引用所有必要字段。 模式定义包含详细描述其配置模式的注释。
 
 收件人表扩展模式的定义：
 
@@ -45,7 +45,7 @@ ht-degree: 3%
 应用以下步骤：
 
 1. 创建&#x200B;**nms:seedMember**&#x200B;模式的扩展。 有关详细信息，请参阅[扩展模式](../../configuration/using/extending-a-schema.md)。
-1. 在此新扩展中，在&#x200B;**[!UICONTROL seedMember]**&#x200B;的根添加一个新元素，并使用以下参数：
+1. 在此新扩展中，使用以下参数在&#x200B;**[!UICONTROL seedMember]**&#x200B;的根添加一个新元素：
 
    ```
    name="custom_customNamespace_customSchema"
@@ -70,7 +70,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >**nms:seedMember**&#x200B;模式的扩展必须符合活动和Adobe Campaign中投放的结构。
+   >**nms:seedMember**&#x200B;模式的扩展必须符合Adobe Campaign中活动和投放的结构。
 
    >[!IMPORTANT]
    >
@@ -78,8 +78,8 @@ ht-degree: 3%
    >    
    >    
    >    * 在扩展期间，必须为“email”字段指定&#x200B;**SQL名称(@sqlname)**。 SQL名称必须与为收件人模式保留的&#39;sEmail&#39;不同。
-   >    * 必须使用扩展&#x200B;**nms:seedMember**&#x200B;时创建的模式更新数据库结构。
-   >    * 在&#x200B;**nms:seedMember**&#x200B;扩展中，包含电子邮件地址的字段必须具有&#x200B;**name=&quot;email&quot;**&#x200B;作为属性。 SQL名称必须与已用于收件人模式的&#39;sEmail&#39;不同。 此属性必须立即在&#x200B;**`<element name="custom_cus_person" />`**&#x200B;元素下声明。
+   >    * 必须使用在扩展&#x200B;**nms:seedMember**&#x200B;时创建的模式更新数据库结构。
+   >    * 在&#x200B;**nms:seedMember**&#x200B;扩展中，包含电子邮件地址的字段必须具有&#x200B;**name=&quot;email&quot;**&#x200B;作为属性。 SQL名称必须不同于已用于收件人模式的&#39;sEmail&#39;。 此属性必须立即在&#x200B;**`<element name="custom_cus_person" />`**&#x200B;元素下声明。
 
 
 1. 相应地修改&#x200B;**[!UICONTROL seedMember]**&#x200B;表单，以在&#x200B;**[!UICONTROL Seed addresses]**&#x200B;窗口中定义新的“内部收件人”选项卡。 有关详细信息，请参阅[表单结构](../../configuration/using/form-structure.md)。
@@ -97,4 +97,4 @@ ht-degree: 3%
      </container>
    ```
 
-如果未输入种子地址的所有属性，Adobe Campaign会自动替换用户档案:它们将在个性化过程中使用来自现有用户档案的数据自动输入。
+如果未输入种子地址的所有属性，Adobe Campaign会自动替换用户档案:它们将在个性化过程中使用现有用户档案中的数据自动输入。
