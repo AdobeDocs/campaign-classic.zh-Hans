@@ -17,11 +17,11 @@ ht-degree: 14%
 
 # 关于活动{#about-activities}
 
-本节介绍所有可用活动。 根据创建／编辑工作流的节点或上下文，可用活动可能会有所不同。 例如，在活动中创建的工作流具有特定于渠道的投放活动。
+本节介绍所有可用的活动。 根据创建/编辑工作流的节点或上下文，可用活动可能会有所不同。 例如，在活动中创建的工作流具有特定于渠道的投放活动。
 
 工作流活动按类别分组。 同时有四个可用选项卡。
 
-在活动工作流中，**[!UICONTROL Events]**&#x200B;选项卡由&#x200B;**[!UICONTROL Deliveries]**&#x200B;选项卡替换。 此选项卡中的活动在[操作活动](../../workflow/using/about-action-activities.md)部分中有详细说明。
+在活动工作流中，**[!UICONTROL Events]**&#x200B;选项卡由&#x200B;**[!UICONTROL Deliveries]**&#x200B;选项卡替换。 [操作活动](../../workflow/using/about-action-activities.md)部分详细介绍了此选项卡中的活动。
 
 ![](assets/wf-activity-tabs.png)
 
