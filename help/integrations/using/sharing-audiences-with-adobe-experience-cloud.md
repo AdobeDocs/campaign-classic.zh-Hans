@@ -19,20 +19,20 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->要与Adobe Experience Cloud解决方案共享受众，您需要实施AdobeIdentity Management系统。 [进一步了解IMS](../../integrations/using/about-adobe-id.md)。
+>要与Adobe Experience Cloud解决方案共享受众，您需要实施Adobe Identity Management系统。 [进一步了解IMS](../../integrations/using/about-adobe-id.md)。
 
-通过Adobe Campaign，您可以与Adobe Experience Cloud解决方案和核心服务共享受众和细分。 有两种选项可用：
+借助Adobe Campaign，您可以与Adobe Experience Cloud解决方案和核心服务共享受众和细分。 有两个选项可用：
 
-1. 将Adobe Experience Platform细分数据发送给Adobe Campaign。 要实施此集成，您需要将实时客户数据平台与活动(RTCDP)连接。 [在本节中了解更多信息](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html)。
+1. 将Adobe Experience Platform区段数据发送到Adobe Campaign。 要实施此集成，您需要将实时客户数据平台与活动(RTCDP)连接起来。 [在本节中了解更多信息](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html)。
 
 
-1. 将&#x200B;**Adobe Campaign**&#x200B;与&#x200B;**人员核心服务**(也称为&#x200B;**用户档案和受众核心服务**)或Adobe Audience Manager集成。 然后，您将能够：
+1. 将&#x200B;**Adobe Campaign**&#x200B;与&#x200B;**People核心服务**(也称为&#x200B;**用户档案和受众核心服务**)或Adobe Audience Manager集成。 然后，您将能够：
 
-   * 将共享受众/区段从不同的Adobe Experience Cloud解决方案导入Adobe Campaign。 受众可以通过Adobe Campaign中的列表导入。
+   * 将不同Adobe Experience Cloud解决方案中的共享受众/区段导入Adobe Campaign。 受众可以在Adobe Campaign中通过列表导入。
 
-   * 以Adobe Experience Cloud共享列表形式导出受众。 这些受众可用于您使用的不同Adobe Experience Cloud解决方案。 受众在工作流中定位后，可使用专用的&#x200B;**[!UICONTROL Update shared audience]**&#x200B;活动导出。
+   * 以Adobe Experience Cloud共享列表的形式导出受众。 这些受众可用于您使用的不同Adobe Experience Cloud解决方案。 受众在工作流中定位后可使用专用的&#x200B;**[!UICONTROL Update shared audience]**&#x200B;活动导出。
 
-此集成支持两种类型的Adobe Experience CloudID:
+此集成支持两种类型的Adobe Experience Cloud ID:
 
-* **访客ID**:此类标识符将Adobe Experience Cloud访客与Adobe Campaign收件人协调。
-* **声明的ID**:此类型的标识符将所有类型的数据与Adobe Campaign库中的元素进行协调。它以Adobe Campaign表示为预定义合并关键项。
+* **访客ID**:此类型的标识符将Adobe Experience Cloud访客与Adobe Campaign收件人协调。
+* **声明的ID**:此类型的标识符将所有类型的数据与Adobe Campaign数据库中的元素进行协调。它在Adobe Campaign中表示为预定义合并关键项。
