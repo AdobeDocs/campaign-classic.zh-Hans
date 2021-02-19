@@ -24,7 +24,7 @@ ht-degree: 1%
 * **amount**:表示交易金额，
 * **文章**:表示事务处理中的项数。
 
-这些参数在&#x200B;**nms:webTrackingLog**&#x200B;模式中定义，是报告中看到的一些指示符。
+这些参数在&#x200B;**nms:webTrackingLog**&#x200B;模式中定义，是在报告中看到的一些指示符。
 
 要定义其他参数，必须扩展此模式。
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ## 重定向服务器配置{#redirection-server-configuration}
 
-在服务器配置中，您可以定义要考虑到Web跟踪参数的最大字符数。
+在服务器配置中，您可以定义要考虑Web跟踪参数的最大字符数。
 
 >[!IMPORTANT]
 >
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 默认值为64个字符。 此值允许您考虑&#x200B;**amount**&#x200B;和&#x200B;**article**(&quot;amount=xxxxxxxxxxxx&amp;article=xxxxxxxx&quot;)标准参数。
 
-通过考虑上述扩展模式示例中指示的两个参数（名称大小+值大小），您可以修改配置以考虑100个字符(&quot;amount=xxxxxxxxxxxx&amp;article=xxxxxxxxx&amp;mode=xxxxxxxxxxxxx&amp;code=xxxxxx&quot;)。
+通过考虑上述扩展模式示例中指示的两个参数（名称大小+值大小），您可以修改配置以考虑100个字符(&quot;amount=xxxxxxxxxxxx&amp;article=xxxxxxxxxxxx&amp;mode=xxxxxxxxxxx&amp;code=xxxxx&quot;)。
 
 ```
 <trackinglogd args="" autoStart="false" initScript="" maxCreateFileRetry="5" maxLogsSizeOnDiskMb="500"
@@ -70,18 +70,18 @@ webTrackingParamSize="64"/>
 修改配置后，您必须：
 
 * 停止承载重定向模块（Apache、IIS等）的Web服务器，
-* 停止Adobe Campaign服务器：**net stop nlserver6**（在Windows中）,**/etc/init.d/nlserver6 stop**（在Linux中）,
+* 停止Adobe Campaign服务器：**net stop nlserver6**（在Windows中），**/etc/init.d/nlserver6 stop**（在Linux中），
 
    >[!NOTE]
    >
-   >从20.1开始，我们建议改用以下命令（对于Linux）:**systemctl停止nlserver**
+   >从20.1开始，建议改用以下命令（对于Linux）：**系统mctl停止nlserver**
 
 * 在Linux中，使用&#x200B;**ipcrm**&#x200B;命令删除共享内存段，
-* 重新启动Adobe Campaign服务器：**net开始nlserver6**（在Windows中）,**/etc/init.d/nlserver6开始**（在Linux中）,
+* 重新启动Adobe Campaign服务器：**net 开始 nlserver6**（Windows中），**/etc/init.d/nlserver6 开始**（Linux中），
 
    >[!NOTE]
    >
-   >从20.1开始，我们建议改用以下命令（对于Linux）:**systemctl开始nlserver**
+   >从20.1开始，建议改用以下命令（对于Linux）：**systemctl开始nlserver**
 
 * 重新启动Web服务器。
 
@@ -111,5 +111,5 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->对于Linux，如果您增加&#x200B;**webTrackingParamSize**&#x200B;或&#x200B;**maxSharedLogs**&#x200B;参数的大小，则可能需要增加共享内存(SHM)的大小。
+>对于Linux，如果您增加&#x200B;**webTrackingParamSize**&#x200B;或&#x200B;**maxSharedLogs**&#x200B;参数的大小，您可能需要增加共享内存(SHM)的大小。
 
