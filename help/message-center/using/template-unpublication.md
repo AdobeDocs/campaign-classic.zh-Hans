@@ -19,19 +19,19 @@ ht-degree: 3%
 
 在执行实例上发布消息模板后，即可取消发布该消息模板。 有关模板发布过程的详细信息，请参阅[此部分](../../message-center/using/template-publication.md)。
 
-* 事实上，如果触发相应的事件，仍可以调用已发布的模板：如果您不再使用消息模板，建议取消发布该模板。 这是为了避免误发送不需要的事务性消息。
+* 事实上，如果触发相应的事件，仍可以调用已发布的模板：如果您不再使用消息模板，建议取消发布该消息模板。 这是为了避免误发送不需要的事务性消息。
 
-   例如，您发布了仅用于圣诞节活动的消息模板。 在圣诞节结束后，您可能希望取消发布它，并在明年再次发布它。
+   例如，您发布了仅用于圣诞活动的消息模板。 在圣诞节结束后，您可能希望取消发布它，并在明年再次发布它。
 
-* 此外，无法删除状态为&#x200B;**[!UICONTROL Published]**&#x200B;的事务性消息模板。 必须先取消发布它。
+* 此外，无法删除状态为&#x200B;**[!UICONTROL Published]**&#x200B;的事务性消息模板。 必须先取消发布。
 
 >[!NOTE]
 >
->此功能可从活动20.2版开始使用。
+>此功能可从活动 20.2版开始提供。
 
-要取消发布事务性消息模板，请按照以下步骤操作。
+要取消发布事务性消息模板，请执行以下步骤。
 
-1. 在控制实例中，转到树的&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;文件夹。
+1. 在控制实例上，转到树的&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;文件夹。
 1. 选择要取消发布的模板。
 1. 单击 **[!UICONTROL Unpublish]**.
 
@@ -45,10 +45,10 @@ ht-degree: 3%
 
 取消发布完成后：
 
-* 两个消息模板(应用于批处理和实时类型事件)均从每个执行实例中删除。
+* 这两个消息模板(应用于批处理和实时类型事件)都将从每个执行实例中删除。
 
-   它们不再出现在&#x200B;**[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]**&#x200B;文件夹中（请参阅[此部分](../../message-center/using/template-publication.md)）。
+   它们不再出现在&#x200B;**[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]**&#x200B;文件夹中（请参阅[本节](../../message-center/using/template-publication.md)）。
 
 * 取消发布模板后，您可以从控制实例中删除它。
 
-   要这样做，请从列表中选择它，然后单击屏幕右上方的&#x200B;**[!UICONTROL Delete]**&#x200B;按钮。
+   要执行此操作，请从列表中选择它，然后单击屏幕右上方的&#x200B;**[!UICONTROL Delete]**&#x200B;按钮。
