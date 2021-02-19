@@ -21,15 +21,15 @@ ht-degree: 14%
 
 包含提取数据的文件的名称在&#x200B;**[!UICONTROL File]**&#x200B;字段中定义。 通过字段右侧的按钮，您可以使用个性化字段创建文件名。
 
-默认情况下，提取文件会创建并存储在服务器上。 可将其保存在计算机上。 为此，请检查&#x200B;**[!UICONTROL Download the generated file after the analysis of the delivery]**。 在这种情况下，您需要指示本地存储目录的访问路径以及文件名。
+默认情况下，提取文件会创建并存储在服务器上。 可将其保存在计算机上。 要执行此操作，请检查&#x200B;**[!UICONTROL Download the generated file after the analysis of the delivery]**。 在这种情况下，您需要指示到本地存储目录的访问路径以及文件名。
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-对于直接邮件投放,提取的内容在&#x200B;**[!UICONTROL Edit the extraction file format...]**&#x200B;链接中定义。
+对于直邮投放,提取的内容在&#x200B;**[!UICONTROL Edit the extraction file format...]**&#x200B;链接中定义。
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
-此链接允许您访问提取向导并定义要导出到输出文件的信息（列）。
+通过此链接，您可以访问提取向导并定义要导出到输出文件中的信息（列）。
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
