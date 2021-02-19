@@ -17,7 +17,7 @@ ht-degree: 50%
 
 # 启动 Adobe Campaign{#launching-adobe-campaign}
 
-活动客户端控制台是一个富客户端，它允许您连接到活动应用服务器。 了解如何在[此页](../../installation/using/installing-the-client-console.md)中下载和配置客户端控制台。
+活动 Client控制台是一个富客户端，通过它可以连接到活动应用程序服务器。 了解如何在[此页](../../installation/using/installing-the-client-console.md)中下载和配置客户端控制台。
 
 ## 打开 Adobe Campaign {#starting-adobe-campaign}
 
@@ -39,7 +39,7 @@ ht-degree: 50%
 
 1. 在 **[!UICONTROL Password]** 字段中输入您的密码。
 
-   首次访问数据库时，您的密码是由管理员为您提供的。连接后，您可以通过&#x200B;**[!UICONTROL Tools > Change password...]**&#x200B;菜单更改密码。 有关操作符和连接的详细信息，请参阅[访问管理](../../platform/using/access-management.md)。
+   首次访问数据库时，您的密码是由管理员为您提供的。连接后，您可以通过&#x200B;**[!UICONTROL Tools > Change password...]**&#x200B;菜单更改密码。 [访问管理](../../platform/using/access-management.md)中提供了有关操作符和连接的详细信息。
 
 1. 单击&#x200B;**[!UICONTROL LOG IN]**&#x200B;进行确认。
 
@@ -59,9 +59,9 @@ ht-degree: 50%
 
 1. 在 **[!UICONTROL URL]** 字段中，添加应用程序服务器的地址。如果您不知道连接 URL，请联系管理员。
 
-1. 检查&#x200B;**[!UICONTROL Connect with an Adobe ID]**，以确定运算符是否使用其Adobe ID连接到控制台。 有关详细信息，请参见[此页面](../../integrations/using/about-adobe-id.md)。
+1. 检查&#x200B;**[!UICONTROL Connect with an Adobe ID]**，以确定操作员是否使用其Adobe ID连接到控制台。 有关详细信息，请参见[此页面](../../integrations/using/about-adobe-id.md)。
 
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;验证。
+1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以验证。
 
 ## 操作员和权限 {#operators-and-permissions}
 
@@ -79,27 +79,27 @@ ht-degree: 50%
 >
 >您也可以关闭应用程序，无需先行注销。
 
-## 获取Adobe Campaign版本{#getting-your-campaign-version}
+## 获取您的Adobe Campaign版本{#getting-your-campaign-version}
 
-通过&#x200B;**[!UICONTROL Help > About...]**&#x200B;菜单可访问以下信息：
+**[!UICONTROL Help > About...]**&#x200B;菜单允许您访问以下信息：
 
-* **活动** 客户端控制台和应用程序服务器的版本号
-* **活动** 客户端控制台和应用程序服务器的构建号
-* 联系Adobe客户关怀的链接
-* adobe隐私政策、使用条款和Cookie政策的链接
+* **活动客** 户端控制台和应用程序服务器的版本号
+* **活动客** 户端控制台和应用程序服务器的内置号
+* 联系Adobe客户关怀
+* 指向Adobe隐私政策、使用条款和Cookie政策的链接
 
 ![](assets/about-acc.png)
 
 无论您何时联系Adobe客户关怀团队，您都需要提供Adobe Campaign客户控制台和应用程序服务器的版本号和内部版本号。
 
-如果您运行的是[活动金标准版](../../rn/using/gold-standard.md)，则还需要共享显示在&#x200B;**[!UICONTROL About]**&#x200B;框中的SHA/1字符。 例如，对于Gold **Standard 10 release**，内部版本号将显示&#x200B;**内部版本9032@efd8a94**，如下所示：
+如果您运行的是[活动 Gold Standard版本](../../rn/using/gold-standard.md)，则还需要共享显示在&#x200B;**[!UICONTROL About]**&#x200B;框中的SHA/1字符。 例如，对于Gold **Standard 10发行版**，内部版本号将显示&#x200B;**内部版本9032@efd8a94**，如下所示：
 
 ![](assets/about-acc-gs.png)
 
-在本文](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)中进一步了解金本位[。
+阅读本文](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)，进一步了解金本位[。
 
 **相关主题**：
 
 * [Adobe Campaign帮助和支持选项](https://helpx.adobe.com/cn/campaign/kb/ac-support.html#acc-support)
 * [Adobe软件分发](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)
-* [Adobe Experience Cloud支助和专家会议](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Experience Cloud支持和专家会议](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
