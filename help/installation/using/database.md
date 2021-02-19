@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 数据库{#database}
 
-只要数据库服务器之间有网络连接，它就可以在任何给定的操作系统上运行，而不管应用程序服务器或服务器使用的操作系统。
+数据库服务器可以在任何给定操作系统上运行，而不管应用程序服务器或服务器使用的操作系统是什么，只要它们之间有网络连接。
 
 只要能够与Adobe Campaign的不同组件建立连接，数据库服务器的操作系统就不重要。
 
@@ -35,17 +35,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->不支持从在Linux中运行的应用程序服务器访问Microsoft SQL Server。
+>不支持从运行于Linux中的应用程序服务器访问Microsoft SQL Server。
 
 ## Oracle {#oracle}
 
 >[!NOTE]
 >
->不支持具有多字节字符的列名称。
+>不支持具有多字节字符的列名。
 
-**NLS_NCHAR_CHARACTERSET**&#x200B;和&#x200B;**NLS_CHARACTERSET**&#x200B;参数需要正确配置，以使数据库能够在Unicode或ANSI中工作。
+需要正确配置&#x200B;**NLS_NCHAR_CHARACTERSET**&#x200B;和&#x200B;**NLS_CHARACTERSET**&#x200B;参数，以使数据库能够在Unicode或ANSI中工作。
 
-Adobe Campaign使用默认的Oracle编码。 使用其他编码可能会触发兼容性问题：在这种情况下，请与技术支持联系。
+Adobe Campaign使用默认Oracle编码。 使用其他编码可能会触发兼容性问题：在这种情况下，请联系技术支持。
 
 要了解您的编码，请使用以下&#x200B;**sqlplus**&#x200B;命令：
 
@@ -74,7 +74,7 @@ sqlplus
 [login] [password]
 ```
 
-您还可以引用Linux中的[Oracle客户端](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux)。
+您还可以引用Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux)中的[Oracle客户端。
 
 ## PostgresSQL {#postgressql}
 
@@ -82,4 +82,4 @@ sqlplus
 
 **相关主题**
 
-* [Adobe Campaign Classic表中未登录的选项](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Adobe Campaign Classic表中的未记录选项](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
