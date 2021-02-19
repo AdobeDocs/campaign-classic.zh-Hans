@@ -9,8 +9,8 @@ topic-tags: editing-schemas
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '387'
+ht-degree: 2%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-一些客户需要市场营销用户才能访问数据记录，但不希望他们查看个人身份信息(PII)，如名字、姓或电子邮件地址。 Adobe Campaign提出了一种保护隐私和防止活动运营商滥用数据的方法。
+某些客户需要市场营销用户才能访问数据记录，但不希望他们查看个人身份信息(PII)，如名字、姓氏或电子邮件地址。 Adobe Campaign提出了一种保护隐私和防止活动运营商滥用数据的方法。
 
 ## 实现{#implementation}
 
-可以应用于任何元素或属性的新属性已添加到模式中，它补充了现有属性&#x200B;**[!UICONTROL visibleIf]**。 此属性为：**[!UICONTROL accessibleIf]**。 当包含与当前用户上下文相关的XTK表达式时，它可以利用&#x200B;**[!UICONTROL HasNamedRight]**&#x200B;或&#x200B;**[!UICONTROL $(login)]**，例如。
+可以应用于任何元素或属性的新属性已添加到模式中，它补充了现有属性&#x200B;**[!UICONTROL visibleIf]**。 此属性为：**[!UICONTROL accessibleIf]**。 当包含与当前用户上下文相关的XTK表达式时，它可以利用&#x200B;**[!UICONTROL HasNamedRight]**&#x200B;或&#x200B;**[!UICONTROL $(login)]**。
 
-您可以找到收件人模式扩展的示例，它在下面显示了此用法：
+您可以找到一个显示以下用法的收件人模式扩展示例：
 
 ```
 <srcSchema desc="Recipient table (profiles" entitySchema="xtk:srcSchema" extendedSchema="nms:recipient"
@@ -42,23 +42,23 @@ ht-degree: 0%
 
 主要属性有：
 
-* **[!UICONTROL visibleIf]** :隐藏元数据中的字段，因此无法在模式视图、列选择或表达式生成器中访问这些字段。但这不会隐藏任何数据，如果字段名称是在表达式中手动输入的，则值将显示出来。
-* **[!UICONTROL accessibleIf]** :隐藏数据（用空值替换它），使其免受结果查询。如果visibleIf为空，则它获得与&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的表达式。
+* **[!UICONTROL visibleIf]** :从元数据中隐藏字段，因此无法在模式视图、列选择或表达式生成器中访问它们。但这不会隐藏任何数据，如果字段名称是在表达式中手动输入的，则值将显示。
+* **[!UICONTROL accessibleIf]** :隐藏数据（用空值替换它），以避免产生查询。如果visibleIf为空，则它获得与&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的表达式。
 
 以下是在活动中使用此属性的后果：
 
 * 控制台中不会使用通用查询编辑器显示数据，
-* 列表在概述列表和记录（控制台）中不可见。
+* 在概述列表和记录列表（控制台）中，数据将不可见。
 * 数据将在详细视图中变为只读。
 * 数据只能在过滤器中使用（这意味着使用某些二分法策略，您仍可以猜测值）。
-* 使用受限字段构建的任何表达式也会受到限制：lower(@email)与@email一样可访问。
-* 在工作流中，您可以将受限列作为过渡的额外列添加到目标人群，但Adobe Campaign用户仍无法访问该列。
+* 使用受限字段构建的任何表达式也会受到限制：lower(@email)与@email一样方便。
+* 在工作流中，您可以将受限列作为过渡的额外列添加到目标人群中，但Adobe Campaign用户仍无法访问该列。
 * 在组(列表)中存储目标群体时，存储字段的特性与数据源相同。
 * 默认情况下，JS代码无法访问数据。
 
 ## 建议{#recommendations}
 
-在每个投放中，电子邮件地址被复制到&#x200B;**[!UICONTROL broadLog]**&#x200B;和&#x200B;**[!UICONTROL forecastLog]**&#x200B;表中：因此，这些字段也需要得到保护。
+在每个投放中，电子邮件地址都会被复制到&#x200B;**[!UICONTROL broadLog]**&#x200B;和&#x200B;**[!UICONTROL forecastLog]**&#x200B;表中：因此，这些字段也需要得到保护。
 
 以下是用于实现此功能的日志表扩展示例：
 
@@ -91,5 +91,5 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此限制适用于非技术用户：拥有相关权限的技术用户将能够检索数据。 因此，此方法不是百分之百安全。
+>此限制适用于非技术用户：拥有相关权限的技术用户将能够检索数据。 因此，此方法不是100%安全。
 
