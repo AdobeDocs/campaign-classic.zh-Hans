@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 关于在Adobe Campaign Classic创建投放的步骤
-description: 了解Adobe Campaign Classic的主要投放创建步骤。
+title: 关于Adobe Campaign Classic中的投放创建步骤
+description: 了解Adobe Campaign Classic中的主要投放创建步骤。
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
@@ -28,7 +28,7 @@ ht-degree: 7%
    * [直邮渠道](../../delivery/using/defining-the-direct-mail-content.md)
    * [移动应用程序渠道](../../delivery/using/about-mobile-app-channel.md)
 
-1. **定义目标群**。[阅读更多](../../delivery/using/steps-defining-the-target-population.md)
+1. **定义目标人口**。[阅读更多](../../delivery/using/steps-defining-the-target-population.md)
 
 1. **发送投放**。[阅读更多](../../delivery/using/steps-sending-the-delivery.md)
 
