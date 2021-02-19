@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: 创建脚本
-description: 了解如何通过专用用例执行A/B测试。
+description: 了解如何通过专用的用例执行A/B测试。
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 脚本{#example-of-a-script}的示例
 
-以下脚本可以像在定位工作流中一样使用。 有关详细信息，请参阅[实施](#implementation)。
+以下脚本可以像在定位工作流程中一样使用。 有关详细信息，请参阅[实施](#implementation)。
 
 ```
  // query the database to find the winner (best open rate)
@@ -67,7 +67,7 @@ ht-degree: 0%
    vars.deliveryId = delivery.id
 ```
 
-有关脚本的详细说明，请参阅脚本的[详细信息](#details-of-the-script)。
+有关脚本的详细说明，请参阅[脚本的详细信息](#details-of-the-script)。
 
 ## 实现{#implementation}
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ## 脚本{#details-of-the-script}的详细信息
 
-本节详细介绍了脚本的各个部分及其操作模式。
+本部分详细介绍了脚本的各个部分及其操作模式。
 
 * 脚本的第一部分是查询。 使用&#x200B;**queryDef**&#x200B;命令，您可以从&#x200B;**NmsDelivery**&#x200B;表中恢复通过执行定位工作流创建的投放，并根据其估计的打开率对它们进行排序，然后恢复来自打开率最高的投放的信息。
 
@@ -111,7 +111,7 @@ ht-degree: 0%
         </queryDef>).ExecuteQuery()
    ```
 
-* 打开率最高的投放重复。
+* 打开率最高的投放是重复的。
 
    ```
     // create a new delivery object and initialize it by doing a copy of
@@ -120,14 +120,14 @@ ht-degree: 0%
    delivery.Duplicate("nms:delivery|" + winner.@id)
    ```
 
-* 修改复制投放的标签，并将单词&#x200B;**final**&#x200B;添加到该标签中。
+* 将修改复制投放的标签，并将单词&#x200B;**final**&#x200B;添加到该标签中。
 
    ```
    // append 'final' to the delivery label
    delivery.label = winner.@label + " final"
    ```
 
-* 投放被复制到活动仪表板。
+* 投放将复制到活动仪表板。
 
    ```
    // link the delivery to the operation to make sure it will be displayed in
@@ -158,14 +158,14 @@ ht-degree: 0%
    vars.deliveryId = delivery.id
    ```
 
-## 其他选择条件{#other-selection-criteria}
+## 其他选择标准{#other-selection-criteria}
 
-以上示例允许您根据电子邮件打开率选择投放的内容。 您可以根据其他投放特定指标调整它：
+通过上面的示例，您可以根据电子邮件的打开率选择投放的内容。 您可以根据其他特定投放的指标调整它：
 
 * 最佳点击吞吐量：`[indicators/@recipientClickRatio]`,
-* 最高反应率（打开电子邮件并在邮件中单击）:`[indicators/@reactivity]`,
-* 最低投诉率：`[indicators/@refusedRatio]`
+* 最高反应率（打开电子邮件并在邮件中单击）：`[indicators/@reactivity]`,
+* 最低投诉率：`[indicators/@refusedRatio]`（对sortDesc属性使用false值），
 * 最高转化率:`[indicators/@transactionRatio]`,
 * 接收消息后访问的页数：`[indicators/@totalWebPage]`,
 * 最低退订率：`[indicators/@optOutRatio]`,
-* 交易金额：`[indicators/@amount]`。
+* 事务处理金额：`[indicators/@amount]`。
