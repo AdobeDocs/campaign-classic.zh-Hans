@@ -60,7 +60,7 @@ ht-degree: 7%
    vi config-prod.xml
    ```
 
-   在与数据库标识符(**databaseId**)相关的值前面添加&#x200B;**u**&#x200B;字符：
+   将&#x200B;**u**&#x200B;字符添加到与数据库标识符(**databaseId**)相关的值前面：
 
    ```
    <web>
@@ -95,8 +95,8 @@ ht-degree: 7%
    /etc/init.d/apache start
    ```
 
-1. 确认交换机。 为此，请通过Adobe Campaign控制台进行连接，并：
+1. 确认交换机。 为此，请通过Adobe Campaign控制台连接，并：
 
-   * 检查数据是否正确显示，特别是突出显示的字符：
+   * 检查数据是否正确显示，尤其是突出显示的字符：
    * 启动投放并检查跟踪检索是否有效。
 
