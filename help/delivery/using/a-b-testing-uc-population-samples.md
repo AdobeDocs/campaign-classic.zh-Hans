@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: 配置填充示例
-description: 了解如何通过专用用例执行A/B测试。
+description: 了解如何通过专用的用例执行A/B测试。
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 配置查询活动{#configuring-the-query-activity}
 
-* 多次-单击&#x200B;**[!UICONTROL Query]**&#x200B;活动。
+* 多次 — 单击&#x200B;**[!UICONTROL Query]**&#x200B;活动。
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
@@ -33,11 +33,11 @@ ht-degree: 3%
 
 ## 配置拆分活动{#configuring-the-split-activity}
 
-此活动允许您创建多个人群：接收投放A的投放B，以及剩余人口。 使用随机选择，您只能目标每个投放的一部分人口。
+此活动允许您创建多个群体：接收投放A、接收投放B的人和剩余人口。 使用随机选择，您只能目标每个投放的一部分人口。
 
 1. 创建人口A:
 
-   * 多次-单击&#x200B;**[!UICONTROL Split]**&#x200B;活动。
+   * 多次 — 单击&#x200B;**[!UICONTROL Split]**&#x200B;活动。
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
