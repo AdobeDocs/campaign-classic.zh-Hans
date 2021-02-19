@@ -21,19 +21,19 @@ ht-degree: 0%
 
 您可以在一个工作流中调用多个子工作流。 子工作流同步执行。
 
-在以下示例中，主工作流使用跳转调用子工作流。 有关跳转类型图形对象的详细信息，请参阅[此部分](../../workflow/using/jump--start-point-and-end-point-.md)。
+在以下示例中，主工作流使用跳转调用子工作流。 有关跳转类型图形对象的详细信息，请参阅[本节](../../workflow/using/jump--start-point-and-end-point-.md)。
 
-1. 创建一个工作流，您将该工作流用作另一个工作流中的子工作流。
-1. 在工作流的开头插入优先级为1的&#x200B;**[!UICONTROL Jump (end point)]**&#x200B;活动。 如果您有多个“端点”类型跳转，Adobe Campaign将使用“端点”跳转的最小数。
-1. 在工作流结束时插入优先级为2的&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活动。 如果您有多个“开始点”类型跳转，Adobe Campaign将使用数字最高的“开始点”跳转。
+1. 创建一个工作流，您将在另一个工作流中用作子工作流。
+1. 在工作流的开头插入一个优先级为1的&#x200B;**[!UICONTROL Jump (end point)]**&#x200B;活动。 如果您有多个“端点”类型跳转，Adobe Campaign将使用数字最小的“端点”跳转。
+1. 在工作流结束时插入优先级为2的&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活动。 如果您有多个“开始点”类型跳转，Adobe Campaign将使用数字最多的“开始点”跳转。
 
    ![](assets/subworkflow_jumps.png)
 
    >[!NOTE]
    >
-   >如果子工作流活动引用具有多个&#x200B;**[!UICONTROL Jump]**&#x200B;活动的工作流，则子工作流将在“结束点”类型跳转（以最小数字）和“开始点”类型跳转（以最大数字）之间执行。
+   >如果子工作流活动引用了具有多个&#x200B;**[!UICONTROL Jump]**&#x200B;活动的工作流，则子工作流将在具有最低编号的“结束点”类型跳转和具有最高编号的“开始点”类型跳转之间执行。
    >
-   >要正确运行子工作流，您只有一个“结束点”类型跳转（编号最小），而只有一个“开始点”类型跳转（编号最大）。
+   >要正确运行子工作流，您只有一个“终点”类型跳转具有最低的数字，而只有一个“开始点”类型跳转具有最高的数字。
 
 1. 完成并保存此“子工作流”。
 1. 创建主工作流。
@@ -43,7 +43,7 @@ ht-degree: 0%
    ![](assets/subworkflow_selection.png)
 
 1. 您还可以添加配置脚本以更改引用的工作流。
-1. 单击 **[!UICONTROL Ok]**。它将自动创建出站过渡，其标签为所选工作流中的&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活动。
+1. 单击 **[!UICONTROL Ok]**。它将自动创建出站过渡，其标签为选定工作流的&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活动。
 
    ![](assets/subworkflow_outbound.png)
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 * tableName
 * 模式
 
-每个入站事件必须指定由这些参数定义的目标。
+每个入站事件都必须指定由这些参数定义的目标。
 
 ## 输出参数{#output-parameters}
 
@@ -74,6 +74,6 @@ ht-degree: 0%
 * 模式
 * recCount
 
-这三组值标识查询所针对的人群。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是人口的模式(通常是nms:收件人) **[!UICONTROL recCount]** ，是表中元素的数量。
+这三个值集标识查询所针对的人口。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是人口的模式(通常是nms: **[!UICONTROL recCount]** 收件人)，是表中元素的数量。
 
 * targetSchema:此值是工作表的模式。 此参数对于具有&#x200B;**[!UICONTROL tableName]**&#x200B;和&#x200B;**[!UICONTROL schema]**&#x200B;的所有过渡都有效。
