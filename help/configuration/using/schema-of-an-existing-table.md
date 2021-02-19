@@ -19,12 +19,12 @@ ht-degree: 9%
 
 ## 概述 {#overview}
 
-当应用程序需要访问现有表、SQL视图或来自远程数据库的数据时，请使用以下数据创建其Adobe Campaign:
+当应用程序需要访问现有表、SQL视图或远程数据库中的数据时，使用以下数据创建其Adobe Campaign:
 
-* 表的名称：在“sqltable”属性中输入表的名称（使用dblink时使用其别名）,
+* 表名：输入表的名称（使用dblink时使用其别名）和“sqltable”属性，
 * 模式键：引用对帐字段，
 * 索引：用于生成查询,
-* XML结构中的字段及其位置：仅填写应用程序中使用的字段，
+* XML结构中的字段及其位置：只填写应用程序中使用的字段，
 * 链接：是否与基的其他表存在连接。
 
 ## 实现{#implementation}
@@ -44,7 +44,7 @@ ht-degree: 9%
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   模式必须在`<srcSchema>`根元素上使用视图=&quot;true&quot;属性进行填充，才能生成表创建SQL脚本。
+   必须在`<srcSchema>`根元素上使用视图=&quot;true&quot;属性填充模式，才能不生成表创建SQL脚本。
 
 **示例** :
 
@@ -61,6 +61,6 @@ ht-degree: 9%
 
 ## 访问外部数据库 {#accessing-an-external-database}
 
-**联合数据访问-联合数据访问**&#x200B;选项允许您访问存储在外部数据库中的数据。
+**联合数据访问- 联合数据访问**&#x200B;选项允许您访问存储在外部数据库中的数据。
 
-要对访问外部模式库中数据的进行的配置在[本页](../../installation/using/creating-data-schema.md)中有详细说明。
+[本页](../../installation/using/creating-data-schema.md)中详细介绍了要对访问外部模式库中的数据进行的配置。
