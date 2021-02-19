@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 59%
 
 * **[通过IMS/Adobe ID连接？升级到最新版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS连接到活动，则必须升级才能在2021年3月31日**&#x200B;之后连接到活动。**
 
-* **[保护活动实](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> 例更新到最新版本以保护活动平台。
+* **[保护您的活动实](https://helpx.adobe.com/cn/campaign/kb/gold-standard-upgrade.html)**<br/> 例更新到最新版本以保护您的活动平台。
 
-* **[删除错误硬跳](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> 回了解如何在Gmail中断后更新错误硬跳回
+* **[删除不正确的硬](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> 弹回了解如何在Gmail中断后更新不正确的硬弹回
 
-* **[更新您的Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> 集成旧版身份验证服务已到期。了解如何迁移到Adobe I/O。
+* **[更新Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> 集成旧版身份验证服务已到期。了解如何迁移到Adobe I/O。
 
-* **[迁移到基于HTTP/2的APNs提](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)**<br/> 供程序API了解如何从传统二进制协议迁移到基于HTTP/2的APNs提供程序API
+* **[迁移到基于HTTP/2的APNs提供](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)**<br/> 程序APIL了解如何从传统二进制协议迁移到基于HTTP/2的APNs提供程序API
 
 * **[获取支持](https://helpx.adobe.com/cn/campaign/kb/ac-support.html)**<br/>&#x200B;访问常见问题解答、最佳实践、帮助资源和请求帮助
 
