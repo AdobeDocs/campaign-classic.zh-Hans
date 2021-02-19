@@ -35,15 +35,15 @@ compute-string:==EMPTY
 
 ## 说明{#description-1}
 
-`<compute-string>`元素允许您根据XTK表达式生成字符串，以根据多个值在接口中显示“内置”标签。
+`<compute-string>`元素允许您根据XTK表达式生成字符串，以根据多个值在接口中显示“built”标签。
 
-## 使用和使用上下文{#use-and-context-of-use-1}
+## 使用和上下文{#use-and-context-of-use-1}
 
-如果未定义`<compute-string>`，则默认情况下会输入`<compute-string>`元素，并在模式中输入主键的值。
+如果未定义`<compute-string>`，则默认情况下将输入`<compute-string>`元素，并在模式中输入主键值。
 
 ## 属性描述{#attribute-description-1}
 
-* **expr(string)**:XTK和／或Xpath表达式
+* **expr(字符串**):XTK和/或Xpath表达式
 
 ## 示例{#examples-1}
 
@@ -52,7 +52,7 @@ compute-string:==EMPTY
 <compute-string expr="ToString([@centralCatalog-id]) + ',' + ToString([@localOrgUnit-id])" />
 ```
 
-在收件人上计算的字符串结果：“John Doe(john.doe@aol.com)”:
+在收件人上计算的字符串结果：“John Doe(john.doe@aol.com)”：
 
 ```
 <element name="recipient">
