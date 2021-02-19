@@ -17,9 +17,9 @@ ht-degree: 5%
 
 # 适用于 Windows 的客户端控制台可用性{#client-console-availability-for-windows}
 
-为了Adobe Campaign用户能够登录您创建和配置的实例，他们需要使用客户端控制台。
+为了使Adobe Campaign用户能够登录您创建和配置的实例，他们需要使用客户端控制台。
 
-当用于开始Adobe Campaign应用服务器(**nlserver web**)的计算机从客户机控制台接收用户连接时，您可以配置它，使Adobe Campaign富客户端的设置项目通过HTML接口可用。
+当用于开始Adobe Campaign应用程序服务器(**nlserver web**)的计算机从客户端控制台接收用户连接时，您可以配置它，使Adobe Campaign富客户端的设置项目通过HTML界面可用。
 
 为此，您必须：
 
@@ -44,10 +44,10 @@ https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
 
 >[!NOTE]
 >
->在显示的提示符中，Adobe建议取消选择选项&#x200B;**[!UICONTROL No longer ask this question]**，以确保当有新版本的控制台可用时，所有用户都会收到警报。\
->如果您选择此选项并选择不下载最新版本，则不会通知任何其他用户有新的可用版本。
+>在显示的提示中，Adobe建议取消选择选项&#x200B;**[!UICONTROL No longer ask this question]**，以确保当新版本的控制台可用时，所有用户都会收到警告。\
+>如果您选择此选项并选择不下载最新版本，则不会向其他用户通知新的可用版本。
 
-要重置此提示，请按照以下步骤操作（只有熟悉编辑注册表的系统管理员才应进行这些更改）:
+要重置此提示，请按照以下步骤操作（只有能够编辑注册表的系统管理员才应进行这些更改）：
 
 1. 使用&#x200B;**[!UICONTROL Start > Run]**&#x200B;菜单中的&#x200B;**regedit**&#x200B;命令打开注册表编辑器。
 1. 搜索节点并展开它。
@@ -56,5 +56,5 @@ https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
    \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
    ```
 
-1. 删除&#x200B;**confUndessedUpgrade**&#x200B;条目并关闭注册表编辑器。
+1. 删除&#x200B;**confAdwerdedUpgrade**&#x200B;条目并关闭注册表编辑器。
 
