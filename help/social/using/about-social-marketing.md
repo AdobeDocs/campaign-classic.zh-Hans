@@ -17,18 +17,18 @@ ht-degree: 12%
 
 # 关于社交媒体营销{#about-social-marketing}
 
-用于管理社交网络的&#x200B;**管理社交网络**（社交营销）应用程序允许您通过Facebook和Twitter与客户和潜在客户进行交互。
+用于管理社交网络的&#x200B;**管理社交网络**（社交营销）应用程序可让您通过Facebook和Twitter与客户和潜在客户进行交互。
 
 1. **发送消息**
 
-   社交营销允许您在Facebook和Twitter上发送消息。
+   社交营销可让您在Facebook和Twitter上发送消息。
 
-   * Adobe Campaign允许您将消息直接发布到您的Facebook墙和twitter帐户。
+   * Adobe Campaign允许您将消息直接发布到Facebook墙和twitter帐户。
    * 您还可以向所有Twitter关注者发送直接消息。
 
 1. **获取新联系人**
 
-   Adobe Campaign社交营销还使您能通过Facebook轻松获取新联系人：联系用户并询问他们是否要共享其用户档案信息。 如果Adobe Campaign接受，则活动会自动恢复数据，使您能够进行定位，并尽可能实施跨渠道策略。
+   Adobe Campaign Social Marketing还使您能通过Facebook轻松获取新联系人：联系用户并询问他们是否要共享其用户档案信息。 如果他们接受，Adobe Campaign会自动恢复数据，这使您能够执行定位活动，并在可能时实施跨渠道策略。
 
 >[!IMPORTANT]
 >
