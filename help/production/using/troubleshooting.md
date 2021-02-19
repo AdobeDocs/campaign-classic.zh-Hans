@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 0f2986f88f72c191262248029ec620fad538c218
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 11%
+ht-degree: 19%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 11%
 
 本节包含与Adobe Campaign一般生产问题相关的疑难解答过程，如投放和工作流执行、监控、数据库维护、连接等。
 
-## 常见和一般问题{#common-and-general-issues}
+## 常见问题和一般问题{#common-and-general-issues}
 
-* 此[页面](../../production/using/modules-and-frequent-issues.md)显示列出的模块遇到的最频繁的问题。
-* 此[页面](../../production/using/workflow-execution.md)列表了在工作流执行过程中遇到问题时应遵循的常见疑难解答过程。
-* 此[页面](../../production/using/lost-password.md)详细说明如何更改或恢复丢失的密码。
-* 此[页面](../../production/using/console-update.md)详细说明了在取消激活相应选项时如何重新激活控制台更新请求。
+* 此[页面](../../production/using/modules-and-frequent-issues.md)显示列出的模块遇到的最频繁问题。
+* 此[页面](../../production/using/workflow-execution.md)列表了在工作流执行遇到问题时应遵循的常见疑难解答过程。
+* 此[页面](../../production/using/lost-password.md)详细说明了如何更改或恢复丢失的密码。
+* 此[页面](../../production/using/console-update.md)详细说明了在您取消激活相应选项时如何重新激活控制台更新请求。
 
 ## 传递疑难解答 {#delivery-troubleshooting}
 
-在出现投放问题时，可以执行特定操作：
+遇到投放问题时，可以执行特定操作：
 * [可交付性问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [图像显示问题](../../production/using/image-display-issues.md)
 * [图像缺失](../../production/using/images-missing.md)
@@ -40,7 +40,7 @@ ht-degree: 11%
 
 ## 使用日志{#working-with-logs}
 
-以下是一些提示，帮助您改善使用日志的体验：
+以下是一些提示，可帮助您改进使用日志的体验：
 
 * [日志精度](../../production/using/log-precision.md)
 * [跟踪日志问题](../../production/using/tracking-logs-issues.md)
@@ -52,7 +52,7 @@ ht-degree: 11%
 * [数据库性能](../../production/using/database-performances.md)
 * [Oracle 数据库的编码](../../production/using/encoding-of-the-oracle-database.md)
 
-## 连接改进{#connection-improvements}
+## 连接改进功能{#connection-improvements}
 
 如果您遇到连接问题，请通过以下一些方法来修复它们：
 
@@ -61,8 +61,8 @@ ht-degree: 11%
 
 ## 技术故障排除{#technical-troubleshooting}
 
-转到以下各节以了解更多具体问题：
+请转到以下部分，了解更多具体问题：
 
 * [Linux 中的堆栈跟踪](../../production/using/stack-trace-in-linux.md)
 * [JSP 行为](../../production/using/jsp-behavior.md)
-* [查找Tomcat版本](../../production/using/locate-tomcat-version.md)
+* [查找 Tomcat 版本](../../production/using/locate-tomcat-version.md)
