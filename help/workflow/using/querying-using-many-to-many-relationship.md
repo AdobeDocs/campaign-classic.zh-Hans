@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 使用多对多关系{#querying-using-a-many-to-many-relationship}进行查询
 
-在此示例中，我们要恢复过去7天内未联系的收件人。 此查询涉及所有投放。
+在此示例中，我们希望恢复过去7天内未联系的收件人。 此查询涉及所有投放。
 
 此示例还说明如何配置与选择集合元素（或橙色节点）相关的筛选器。 集合元素在&#x200B;**[!UICONTROL Field to select]**&#x200B;窗口中可用。
 
@@ -27,11 +27,11 @@ ht-degree: 1%
 
 * 要为输出列选择的字段
 
-   主键、姓、名和电子邮件
+   主键、姓氏、名字和电子邮件
 
-* 根据筛选信息时的条件
+* 根据筛选的信息所依据的标准
 
-   根据前七天前投放日志的收件人
+   根据今天前7天前的投放日志收件人
 
 应用以下步骤：
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Filtering conditions]**。
 1. 在&#x200B;**[!UICONTROL Target element]**&#x200B;窗口中，用于提取过去7天没有跟踪日志的用户档案的筛选条件涉及两个步骤。 您需要选择的元素是多对多链接。
 
-   * 开始，为第一个&#x200B;**[!UICONTROL Value]**&#x200B;列选择&#x200B;**[!UICONTROL Recipient delivery logs (broadlog)]**&#x200B;集合元素（橙色节点）。
+   * 开始：为第一个&#x200B;**[!UICONTROL Value]**&#x200B;列选择&#x200B;**[!UICONTROL Recipient delivery logs (broadlog)]**&#x200B;集合元素（橙色节点）。
 
       ![](assets/query_editor_nveau_67.png)
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
       ![](assets/query_editor_nveau_36.png)
 
-      使用&#x200B;**[!UICONTROL greater than or equal to]**&#x200B;运算符选择&#x200B;**[!UICONTROL Event date]**。 选择&#x200B;**[!UICONTROL DaysAgo (7)]**&#x200B;值。 要执行此操作，请单击&#x200B;**[!UICONTROL Value]**&#x200B;字段中的&#x200B;**[!UICONTROL Edit expression]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Process on dates]**&#x200B;和&#x200B;**[!UICONTROL Current date minus n days]**，将“7”作为值。
+      使用&#x200B;**[!UICONTROL greater than or equal to]**&#x200B;运算符选择&#x200B;**[!UICONTROL Event date]**。 选择&#x200B;**[!UICONTROL DaysAgo (7)]**&#x200B;值。 要执行此操作，请单击&#x200B;**[!UICONTROL Value]**&#x200B;字段中的&#x200B;**[!UICONTROL Edit expression]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Process on dates]**&#x200B;和&#x200B;**[!UICONTROL Current date minus n days]**，将&quot;7&quot;作为值。
 
       ![](assets/query_editor_nveau_37.png)
 
@@ -65,13 +65,13 @@ ht-degree: 1%
 
       ![](assets/query_editor_nveau_38.png)
 
-1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口中，将姓氏切换为大写。 单击&#x200B;**[!UICONTROL Transformation]**&#x200B;列中的&#x200B;**[!UICONTROL Last name]**&#x200B;行，然后在下拉菜单中选择&#x200B;**[!UICONTROL Switch to upper case]**。
+1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口中，将姓氏切换为大写。 单击&#x200B;**[!UICONTROL Transformation]**&#x200B;列中的&#x200B;**[!UICONTROL Last name]**&#x200B;行，并在下拉菜单中选择&#x200B;**[!UICONTROL Switch to upper case]**。
 
    ![](assets/query_editor_nveau_39.png)
 
 1. 使用&#x200B;**[!UICONTROL Add a calculated field]**&#x200B;函数将列插入数据预览窗口。
 
-   在此示例中，在单个列中添加一个计算字段，其中包含收件人的名和姓。 单击&#x200B;**[!UICONTROL Add a calculated field]**&#x200B;函数。 在&#x200B;**[!UICONTROL Export calculated field definition]**&#x200B;窗口中，输入标签和内部名称，然后选择&#x200B;**[!UICONTROL JavaScript Expression]**&#x200B;类型。 然后输入以下表达式:
+   在此示例中，在单列中添加一个计算字段，其中收件人的名和姓是。 单击&#x200B;**[!UICONTROL Add a calculated field]**&#x200B;函数。 在&#x200B;**[!UICONTROL Export calculated field definition]**&#x200B;窗口中，输入标签和内部名称并选择&#x200B;**[!UICONTROL JavaScript Expression]**&#x200B;类型。 然后输入以下表达式:
 
    ```
    var rep = source._firstName+" - "+source._lastName
