@@ -23,9 +23,9 @@ ht-degree: 4%
 
 ![](assets/sms_rec_edit.png)
 
-在&#x200B;**入站SMS**&#x200B;活动的第一个选项卡中，可以输入SMS消息的路由参数，并输入在接收每条消息时要执行的脚本。 第二个选项卡允许您为计划分配活动，第三个选项卡定义活动的到期条件。
+**入站SMS**&#x200B;活动的第一个选项卡允许您输入SMS消息的路由参数，并输入在接收每条消息时要执行的脚本。 第二个选项卡允许您为活动分配计划，第三个选项卡定义活动的过期条件。
 
-1. **[!UICONTROL SMS routing]**:选择用于SMS恢复的外部帐户。外部帐户通过树的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点进行配置。
+1. **[!UICONTROL SMS routing]**:选择要用于SMS恢复的外部帐户。外部帐户通过树的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点配置。
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 
