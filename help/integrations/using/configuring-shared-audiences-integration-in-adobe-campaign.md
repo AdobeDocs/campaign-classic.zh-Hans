@@ -26,17 +26,17 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->如果使用demdex域，并遵循&#x200B;**ftp-out.demdex.com**&#x200B;语法(用于导入外部帐户)和&#x200B;**ftp-in.demdex.com**&#x200B;语法(用于导出外部帐户)，则需要相应地调整实施，并移至AmazonSimple Simple存储服务(S3)连接器以导入或导出数据。 有关如何使用AmazonS3配置外部帐户的详细信息，请参阅此[部分](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)。
+>如果您使用demdex域，并且为导入外部帐户使用语法&#x200B;**ftp-out.demdex.com**&#x200B;和为导出外部帐户使用&#x200B;**ftp-in.demdex.com**，则需要相应地调整实现并移至Amazon Simple 存储 Service(S3)连接器以导入或导出数据。 有关如何使用Amazon S3配置外部帐户的详细信息，请参阅此[部分](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)。
 
-## 第1步：在Adobe Campaign{#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}中配置或检查外部帐户
+## 第1步：在Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}中配置或检查外部帐户
 
-首先，我们需要按如下方式配置或检查Adobe Campaign中的外部帐户:
+首先，我们需要在Adobe Campaign中配置或检查外部帐户，如下所示：
 
 1. 单击&#x200B;**[!UICONTROL Explorer]**&#x200B;图标。
-1. 转至&#x200B;**[!UICONTROL Administration > Platform > External accounts]**。 上述SFTP帐户应已按Adobe配置，并且必要的信息应已传达给您。
+1. 转到&#x200B;**[!UICONTROL Administration > Platform > External accounts]**。 上述SFTP帐户应已通过Adobe配置，并且必要的信息应已发送给您。
 
    * **[!UICONTROL importSharedAudience]**:专用于导入受众的帐户。
-   * **[!UICONTROL exportSharedAudience]**:专用于导出受众的帐户。
+   * **[!UICONTROL exportSharedAudience]**:专门用于导出受众的帐户。
 
    ![](assets/aam_config_1.png)
 
@@ -57,10 +57,10 @@ ht-degree: 2%
 要了解在何处找到您的AWS访问密钥ID，请参阅本 [页](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) 。
 
    * **[!UICONTROL Secret access key to AWS]**
-要了解在何处找到AWS的秘密访问密钥，请参阅本 [页](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
+要了解在何处找到您的AWS秘密访问密钥，请参阅本 [页](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
 
    * **[!UICONTROL AWS Region]**
-要了解有关AWS区域的更多信息，请参阅本 [页](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)。
+要了解有关AWS区域的更多信息，请参阅 [本页](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)。
    ![](assets/aam_config_2.png)
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;并配置&#x200B;**[!UICONTROL Import audiences from the Adobe Marketing Cloud]**&#x200B;外部帐户，如前面的步骤中所述。
@@ -69,7 +69,7 @@ ht-degree: 2%
 
 ## 第2步：配置数据源{#step-2--configure-the-data-source}
 
-**收件人-访客ID**&#x200B;在Audience Manager中创建。 这是默认为访客ID配置的现成数据源。 从活动创建的区段将是此数据源的一部分。
+**收件人-访客ID**&#x200B;在Audience Manager内创建。 这是默认为访客ID配置的现成数据源。 从活动创建的区段将是此数据源的一部分。
 
 配置&#x200B;**[!UICONTROL Recipient - Visitor ID]**&#x200B;数据源：
 
@@ -83,10 +83,10 @@ ht-degree: 2%
 
 要配置与People Core服务或受众管理器的集成，我们还需要配置活动跟踪服务器。
 
-您需要确保活动跟踪服务器已注册到域(CNAME)。 在[本文](https://helpx.adobe.com/cn/campaign/kb/domain-name-delegation.html)中可找到有关域名委派的更多信息。
+您需要确保活动跟踪服务器已在域(CNAME)上注册。 您可以在[本文](https://helpx.adobe.com/cn/campaign/kb/domain-name-delegation.html)中找到有关域名委派的更多信息。
 
 ## 第4步：配置访客ID服务{#step-4--configure-the-visitor-id-service}
 
-如果您的访客ID服务从未在您的Web属性或网站上配置过，请参阅以下[文档](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-aam-analytics.html)以了解如何配置服务或以下[视频](https://helpx.adobe.com/cn/marketing-cloud/how-to/email-marketing.html#step-two)。
+如果您的访客ID服务从未在您的Web属性或网站上配置过，请参阅以下[文档](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-aam-analytics.html)，了解如何配置您的服务或以下[视频](https://helpx.adobe.com/cn/marketing-cloud/how-to/email-marketing.html#step-two)。
 
-您的配置和配置已完成，集成现在可用于导入和导出受众或区段。
+您的配置和设置已完成，集成现在可用于导入和导出受众或区段。
