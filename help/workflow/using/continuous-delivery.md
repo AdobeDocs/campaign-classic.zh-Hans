@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # 连续投放{#continuous-delivery}
 
-**连续投放**&#x200B;类型操作允许您向现有投放添加新收件人。 此投放类型可避免您每次都必须创建新投放:此模式通常更有效，尤其是对于需要时发送的低容量警报或通知。
+**连续投放**&#x200B;类型操作允许您向现有投放添加新收件人。 此投放类型可避免每次创建新投放:此模式通常更高效，尤其是对于需要时发送的低容量警报或通知。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#continuous-delivery-video)
 
@@ -36,7 +36,7 @@ ht-degree: 6%
 * tableName
 * 模式
 
-每个入站事件必须指定由这些参数定义的目标。
+每个入站事件都必须指定由这些参数定义的目标。
 
 仅当选择&#x200B;**[!UICONTROL Specified by the inbound event]**&#x200B;选项时。
 
@@ -46,17 +46,17 @@ ht-degree: 6%
 * 模式
 * recCount
 
-这三个值集标识由动态目标产生的投放。 **[!UICONTROL tableName]** 是存储目标标识符的表的名称， **[!UICONTROL schema]** 是的模式(通常是nms:收件人), **[!UICONTROL recCount]** 是表中元素的数量。
+这三个值集标识由动态目标产生的投放。 **[!UICONTROL tableName]** 是存储目标标识符的表的名称，是 **[!UICONTROL schema]** 人口的模式(通常是nms: **[!UICONTROL recCount]** 收件人)，是表中的元素数。
 
-与补码关联的过渡具有相同的参数。
+与补码相关的过渡具有相同的参数。
 
 ## 如何设置连续投放
 
 本节介绍如何设置连续投放。
 
-**连续投放**&#x200B;允许您向现有投放添加新收件人，并避免每次添加新收件人时必须创建新投放。 您可以直接在活动工作流中更新创意，它将更新投放模板资源文件夹中的模板。
+**连续投放**&#x200B;允许您向现有投放添加新收件人，并避免您每次添加新收件人时都必须创建新投放。 您可以直接在活动工作流中更新创意，它将更新投放模板资源文件夹中的模板。
 
-连续投放将创建SINGLE投放和投放日志(broadLog)以及引用每次执行一个投放时都添加一个的跟踪日志。
+连续投放将创建SINGLE投放和投放日志(broadLog)以及引用每次执行一个投放时添加一个的跟踪日志。
 
 ![连续投放](assets/delivery_continuous.jpg)
 
@@ -66,4 +66,4 @@ ht-degree: 6%
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-此处[提供其他Campaign Classic操作方法视频。](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
+其他Campaign Classic操作视频[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)可用。
