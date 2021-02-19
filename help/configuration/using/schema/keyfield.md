@@ -15,7 +15,7 @@ ht-degree: 7%
 ---
 
 
-# 密钥字段元素{#keyfield--element}
+# keyfield元素{#keyfield--element}
 
 ## 内容模型{#content-model-9}
 
@@ -40,12 +40,12 @@ keyfield:==EMPTY
 
 ## 属性描述{#attribute-description-9}
 
-* **xlink(MNTOKEN)**:允许您自动引用在关系表（N-N链接）的连接中定义的外键。
-* **xpath(MNTOKEN)**:对元素的索引或键的定 `<attribute>`  义。此属性接收一个Xpath，它定义模式属性的路径，该属性定义键或索引。
+* **xlink(MNTOKEN)**:允许您自动引用在连接中为关系表（N-N链接）定义的外键。
+* **xpath(MNTOKEN)**:元素上索引或键的定 `<attribute>`  义。此属性接收一个Xpath，它定义用于定义键或索引的模式属性的路径。
 
 ## 示例{#examples-}
 
-在索引中选择“sName”字段，该索引的Xpath位于“@name”上：
+在索引中选择“sName”字段，并在“@name”上选择Xpath:
 
 ```
 <keyfield xpath="@name"/>
