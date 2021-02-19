@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 配置访问Sybase IQ
-description: 了解如何在联合数据访问配置访问Sybase IQ
+title: 配置对Sybase IQ的访问
+description: 了解如何在联合数据访问中配置对Sybase IQ的访问
 audience: platform
 content-type: reference
 topic-tags: connectors
@@ -15,16 +15,16 @@ ht-degree: 0%
 ---
 
 
-# 配置对Sybase IQ{#configure-access-to-sybase-iq}的访问
+# 配置对Sybase IQ {#configure-access-to-sybase-iq}的访问
 
-使用活动&#x200B;**联合数据访问**(联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置访问Sybase IQ。
+使用活动 **联合数据访问**(联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对Sybase IQ的访问。
 
 1. 配置[Sybase IQ数据库](#configuring-sybase)
-1. 将Sybase IQ[外部帐户](#sybase-external)配置为活动
+1. 在活动中配置Sybase IQ [外部帐户](#sybase-external)
 
 ## sybase IQ配置{#configuring-sybase}
 
-在联合数据访问下连接到Sybase IQ外部数据库需要在Adobe Campaign服务器下面进行其他配置。
+在联合数据访问中连接到Sybase IQ外部库需要在Adobe Campaign服务器上的以下其他配置。
 
 >[!NOTE]
 >
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 1. 安装&#x200B;**iq_odbc**。 安装结束时可能会出错。 可以忽略此错误。
 
-1. 安装&#x200B;**iq_client_common**。 安装结束时可能会发生Java错误。 可以忽略此错误。
+1. 安装&#x200B;**iq_client_common**。 安装结束时可能会出现Java错误。 可以忽略此错误。
 
 1. 配置ODBC驱动程序。 配置可以在标准文件中执行：/etc/odbc.ini用于常规参数，/etc/odbcinst.ini用于声明驱动程序：
 
-   * **/etc/odbc.ini** (将字符等 `<server_alias>` 值替换为您自己的):
+   * **/etc/odbc.ini(** 将字符等值 `<server_alias>` 替换为您自己的值):
 
       ```
       [ODBC Data Sources]
@@ -66,9 +66,9 @@ ht-degree: 0%
    * 如果您使用customer.sh文件声明您的路径：为LD_LIBRARY_PATH变量添加路径/opt/sybase/IQ-16_0/lib64。
    * 否则，请使用Unix命令。
 
-## sybase IQ外部帐户{#sybase-external}
+## sybase IQ 外部帐户 {#sybase-external}
 
-sybase IQ外部帐户允许您将活动实例连接到Sybase IQ外部数据库。
+Sybase IQ外部帐户允许您将活动实例连接到Sybase IQ外部数据库。
 
 1. 在活动&#x200B;**[!UICONTROL Explorer]**&#x200B;中，单击&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
@@ -76,7 +76,7 @@ sybase IQ外部帐户允许您将活动实例连接到Sybase IQ外部数据库�
 
 1. 要配置&#x200B;**[!UICONTROL Sybase IQ]**&#x200B;外部帐户，必须指定：
 
-   * **[!UICONTROL Type]**:ODBC(Sybase ASE,Sybase IQ)
+   * **[!UICONTROL Type]**:ODBC(Sybase ASE、Sybase IQ)
 
    * **[!UICONTROL Server]**:与第5步中定义的ODBC`<server_alias>`连接()相对应。不一定是服务器本身的名称。
 
@@ -88,5 +88,5 @@ sybase IQ外部帐户允许您将活动实例连接到Sybase IQ外部数据库�
 
 >[!NOTE]
 >
->对于Windows，必须在Adobe Campaign服务器上安装Sybase IQ客户端并创建ODBC连接。 确保在Windows中Adobe Campaign服务器(nlserver)作为服务运行时创建系统数据源。
+>对于Windows，必须在Adobe Campaign服务器上安装Sybase IQ客户端并创建ODBC连接。 确保在Windows中作为服务运行Adobe Campaign服务器(nlserver)时创建系统数据源。
 
