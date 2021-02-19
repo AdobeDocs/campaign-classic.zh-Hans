@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # 选择目标映射{#selecting-a-target-mapping}
 
-默认情况下，投放模板目标&#x200B;**[!UICONTROL Recipients]**。 因此，目标映射使用&#x200B;**nms:收件人**&#x200B;表的字段。 Adobe Campaign优惠其他目标映射以供投放根据您的需求使用。
+默认情况下，投放模板目标&#x200B;**[!UICONTROL Recipients]**。 因此，其目标映射使用&#x200B;**nms:收件人**&#x200B;表的字段。 Adobe Campaign优惠其他目标映射，以便根据您的需求使用。
 
 ![](assets/delivery_select_mapping.png)
 
@@ -27,11 +27,11 @@ ht-degree: 8%
 |---|---|---|
 | 收件人 | 交付到收件人Adobe Campaign库 | nms:收件人 |
 | 访客 | 向通过推荐（病毒式营销）或社交网络(Facebook、Twitter)收集用户档案的访客提供。 | mns:访客 |
-| 订阅 | 交付给订阅新闻稿等信息服务的收件人 | nms:订阅 |
-| 访客订阅 | 交付给订阅访客的信息服务 | nms:visitorSub |
-| 服务 | 发布到Twitter帐户或Facebook页面 | nms：服务 |
-| 运算符 | 交付给Adobe Campaign运营商 | nms：操作员 |
-| 外部文件 | 通过包含投放所需所有信息的文件传送 | 无链接模式，无目标输入 |
+| 订阅 | 向订阅新闻稿等信息服务的收件人传送 | nms:订阅 |
+| 访客订阅 | 交付给订阅信息服务的访客 | nms:visitorSub |
+| 服务 | 发布到Twitter帐户或Facebook页面 | nms:service |
+| 运算符 | 交付给Adobe Campaign运营商 | nms:operator |
+| 外部文件 | 通过包含投放所需所有信息的文件传送 | 无链接模式，无目标 |
 
 >[!NOTE]
 >
