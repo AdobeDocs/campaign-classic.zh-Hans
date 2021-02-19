@@ -33,7 +33,7 @@ ht-degree: 88%
 
 ### 大量更新 {#mass-update}
 
-要进行批量更新，请使用&#x200B;**[!UICONTROL Action > Mass update of selected lines...]**。 向导可帮助您配置并运行更新。
+对于批量更新，请使用&#x200B;**[!UICONTROL Action > Mass update of selected lines...]**。 向导可帮助您配置并运行更新。
 
 向导的第一步是指定要更新的字段。
 
@@ -111,14 +111,14 @@ ht-degree: 88%
    >
    >此编辑器允许您创建新的服务：单击 **[!UICONTROL Create]** 按钮。
 
-1. 您可以&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;收件人。 可在链接到所选服务的订阅场景中配置此消息的內容。
+1. 可以&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;到收件人。 可在链接到所选服务的订阅场景中配置此消息的內容。
 1. 单击 **[!UICONTROL Start]** 按钮执行订阅过程。
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
 
 可在窗口的上部监控该执行过程。可以通过 **[!UICONTROL Stop]** 按钮停止该过程。但是，已处理的收件人将被订阅。
 
-如果取消选中&#x200B;**[!UICONTROL Do not keep a trace of this job in the database]**&#x200B;选项，则可以选择（或创建）将存储该进程信息的执行文件夹。
+如果取消选中&#x200B;**[!UICONTROL Do not keep a trace of this job in the database]**&#x200B;选项，则可以选择（或创建）将存储此进程信息的执行文件夹。
 
 要检查该过程，请转到此操作所涉用户档案的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡，或转到通过&#x200B;**[!UICONTROL Profiles and Targets > Services and Subscriptions]**&#x200B;节点访问的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡。
 
