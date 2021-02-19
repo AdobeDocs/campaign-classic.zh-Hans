@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # 使用工作流创建用户档案列表{#creating-a-profile-list-with-a-workflow}
 
-要根据新的列表表创建&#x200B;**[!UICONTROL List]**&#x200B;类型收件人，您需要创建一个将生成列表的定位工作流。
+要基于新的列表表创建&#x200B;**[!UICONTROL List]**&#x200B;类型收件人，您需要创建一个将生成列表的定位工作流。
 
 有关活动中列表的详细信息，请参阅[本节](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign)。
 
@@ -31,11 +31,11 @@ ht-degree: 10%
 
    ![](assets/mapping_create_list_workflow01.png)
 
-1. 多次-单击&#x200B;**查询**&#x200B;活动，然后单击&#x200B;**[!UICONTROL Edit the query]**&#x200B;根据新收件人表的模式选择定位维度(在我们的示例中：**单个**)。 单击&#x200B;**[!UICONTROL Finish]**&#x200B;进行确认。
+1. 多次 — 单击&#x200B;**查询**&#x200B;活动，然后单击&#x200B;**[!UICONTROL Edit the query]**&#x200B;根据新收件人表的模式选择定位维度(在我们的示例中：**个人**)。 单击&#x200B;**[!UICONTROL Finish]**&#x200B;进行确认。
 
    ![](assets/mapping_create_list_workflow03.png)
 
-1. 多次-单击&#x200B;**列表更新**&#x200B;活动，然后选择&#x200B;**[!UICONTROL Create the list if necessary (Computed name)]**&#x200B;单选按钮。
+1. 多次 — 单击&#x200B;**列表更新**&#x200B;活动，然后选择&#x200B;**[!UICONTROL Create the list if necessary (Computed name)]**&#x200B;单选按钮。
 
    ![](assets/mapping_create_list_workflow02.png)
 
