@@ -17,10 +17,10 @@ ht-degree: 20%
 
 # 迁移过程{#migration-procedures}
 
-如果您从Adobe Campaignv6升级到v7，我们建议遵循以下准则。
+如果您从Adobe Campaign v6升级到v7，我们建议遵循以下准则。
 
-* 在Windows上，对于客户端和服务器升级，请先卸载v6Adobe Campaign，然后再安装v7。 不要忘记事先备份日志和配置文件。
-* 在Linux上，要进行服务器升级，请先删除Adobe Campaignv6包，然后再安装v7。
+* 在Windows上，对于客户端和服务器升级，请先卸载Adobe Campaign v6，然后再安装v7。 不要忘记事先备份日志和配置文件。
+* 在Linux上，要进行服务器升级，请先删除Adobe Campaign v6包，然后再安装v7。
 
 有关迁移过程和最佳实践的详细信息，请参阅：
 
