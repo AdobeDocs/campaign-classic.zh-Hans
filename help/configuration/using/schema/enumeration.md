@@ -23,11 +23,11 @@ ht-degree: 5%
 
 ## 属性{#attributes-5}
 
-* @basetype（字符串）
-* @default（字符串）
-* @desc（字符串）
+* @basetype(string)
+* @default(string)
+* @desc(string)
 * @label(string)
-* @name（字符串）
+* @name(string)
 * @template(string)
 
 ## 父项{#parents-5}
@@ -41,25 +41,25 @@ ht-degree: 5%
 
 ## 说明{#description-5}
 
-此元素使我们能够定义值明细列表。 明细列表属于在中定义的模式，但可通过其他模式访问。
+此元素使我们能够定义值明细列表。 明细列表属于其中定义的模式，但可通过其他模式访问。
 
-## 使用和使用上下文{#use-and-context-of-use-4}
+## 使用和上下文{#use-and-context-of-use-4}
 
-明细列表在模式的开始下定义（在定义主要元素之前）。
+明细列表在模式的开始（在定义主元素之前）定义。
 
 ## 属性描述{#attribute-description-5}
 
-* **basetype(string)**:存储在明细列表中的值的类型。
+* **basetype(string**):存储在明细列表中的值的类型。
 
    列表可用类型：
 
    * 任意
    * 宾
-   * 斑点
+   * blob
    * 布尔
    * 字节
    * CDATA
-   * datetime
+   * date
    * datetimetz
    * datetimenotz
    * 日期
@@ -83,8 +83,8 @@ ht-degree: 5%
    * uuid
 
 * **default(string)**:默认值。默认值也可以是明细列表中定义的值之一。
-* **desc(string)**:明细列表描述。
-* **label(string)**:明细列表标签。
+* **desc(string**):明细列表描述。
+* **label(string**):明细列表标签。
 * **name(string)**:明细列表的内部名称。
 * **模板(字符串**):此属性定义对由多个模式 `<enumeration>` 共享的元素的引用。定义会自动复制到当前模式。
 
