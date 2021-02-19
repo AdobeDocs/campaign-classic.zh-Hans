@@ -17,11 +17,11 @@ ht-degree: 10%
 
 # 优惠分析报告{#offer-analysis-report}
 
-**[!UICONTROL Offer analysis]**&#x200B;报告概述已接受或已拒绝的建议的数量。
+**[!UICONTROL Offer analysis]**&#x200B;报告概述了已接受或已拒绝的建议数。
 
 >[!NOTE]
 >
->此功能仅在线可见，且仅对投放管理器可见。
+>此功能仅在线显示，且仅对投放管理器可见。
 
 统计信息根据以下三个条件进行排序：
 
@@ -37,7 +37,7 @@ ht-degree: 10%
 
    ![](assets/offer_report_perdeliveries.png)
 
-数据可根据报表上半部分提供的各种标准进行筛选。 选择所需条件后，单击&#x200B;**[!UICONTROL Refresh]**&#x200B;链接，将其应用到报表。
+数据可根据报表上半部分提供的各种标准进行筛选。 选择所需的条件后，单击&#x200B;**[!UICONTROL Refresh]**&#x200B;链接，将其应用到报表。
 
 ![](assets/offer_report_criteria.png)
 
