@@ -9,39 +9,39 @@ topic-tags: api
 translation-type: tm+mt
 source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '658'
+ht-degree: 4%
 
 ---
 
 
 # 关于 Web 服务{#about-web-services}
 
-## Adobe CampaignAPI的定义{#definition-of-adobe-campaign-apis}
+## Adobe Campaign API的定义{#definition-of-adobe-campaign-apis}
 
-Adobe Campaign应用服务器设计为开放性，与日益多样化和复杂的公司信息系统轻松集成。
+Adobe Campaign应用服务器设计为可以与日益多样化和复杂的公司信息系统进行开放和轻松集成。
 
-Adobe CampaignAPI在应用程序内的JavaScript中以及应用程序外的SOAP中使用。 它们构成一个通用函数库，可以丰富这些函数。 有关详细信息，请参阅[实现SOAP方法](../../configuration/using/implementing-soap-methods.md)。
+Adobe Campaign API用于应用程序内的JavaScript和应用程序外的SOAP中。 它们组成了一个通用函数库，可以丰富这些函数。 有关详细信息，请参阅[实现SOAP方法](../../configuration/using/implementing-soap-methods.md)。
 
 >[!IMPORTANT]
 >
->每天的授权引擎呼叫次数因您的许可证合同而异。 有关详细信息，请参见[此页面](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
->[此专用文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)提供所有API（包括其完整说明）的列表。
+>每天授权的引擎呼叫次数因您的许可合同而异。 有关详细信息，请参见[此页面](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
+>[此专用文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)提供了所有API（包括其完整说明）的列表。
 
 ## 先决条件{#prerequisites}
 
-在使用Adobe CampaignAPI之前，您需要熟悉以下主题：
+在使用Adobe Campaign API之前，您需要熟悉以下主题：
 
 * Javascript
 * SOAP协议
 * Adobe Campaign数据模型
 
-## 使用Adobe CampaignAPI {#using-adobe-campaign-apis}
+## 使用Adobe Campaign API {#using-adobe-campaign-apis}
 
 Adobe Campaign使用两种类型的API:
 
 * 通用数据访问API以查询数据模型数据。 请参阅[面向数据的API](../../configuration/using/data-oriented-apis.md)。
-* 业务特定API，可让您对每个对象执行操作：投放、工作流、订阅等。 请参阅[面向业务的API](../../configuration/using/business-oriented-apis.md)。
+* 业务特定API，允许您对每个对象进行操作：投放、工作流、订阅等 请参阅[面向业务的API](../../configuration/using/business-oriented-apis.md)。
 
 为了开发API并与Adobe Campaign交互，您需要熟悉数据模型。 Adobe Campaign允许您生成基本的完整说明。 请参阅[型号说明](../../configuration/using/data-oriented-apis.md#description-of-the-model)。
 
@@ -51,22 +51,22 @@ SOAP协议允许您通过富客户端、使用web服务的第三方应用程序�
 
 ![](assets/s_ncs_configuration_architecture.png)
 
-SOAP消息的结构如下：
+SOAP消息的结构如下所示：
 
 * 一个封套，它定义了消息的结构，
-* 可选标题，
-* 一个包含呼叫和响应信息的机构，
+* 一个可选的标题，
+* 一个包含呼叫和响应信息的主体，
 * 定义错误条件的错误管理。
 
 ## 资源和交换{#resources-and-exchanges}
 
-以下模式显示了使用Adobe CampaignAPI时涉及的各种资源：
+以下模式显示了使用Adobe Campaign API时涉及的各种资源：
 
 ![](assets/s_ncs_integration_webservices_schema_pres.png)
 
-## “ExecuteQuery”方法{#example-of-a-soap-message-on-the--executequery--method--}上的SOAP消息示例
+## {#example-of-a-soap-message-on-the--executequery--method--}的“ExecuteQuery”方法上的SOAP消息示例
 
-在此示例中，SOAP查询调用“ExecuteQuery”方法，该方法将字符串作为身份验证（会话令牌）的参数，并将XML内容用于描述要执行的查询。
+在此示例中，SOAP查询调用“ExecuteQuery”方法，该方法将字符串作为身份验证（会话令牌）的参数以及要执行的查询描述的XML内容。
 
 有关详细信息，请参阅[ExecuteQuery(xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-)。
 
@@ -92,13 +92,13 @@ SOAP消息的结构如下：
 </SOAP-ENV:Envelope>
 ```
 
-`<soap-env:envelope>`元素是消息中表示SOAP封套的第一个元素。
+`<soap-env:envelope>`元素是表示SOAP封套的消息的第一个元素。
 
 `<soap-env:body>`元素是封套的第一个子元素。 它包含消息的描述，即查询或响应的内容。
 
 要调用的方法输入SOAP消息正文的`<executequery>`元素中。
 
-在SOAP中，参数是按外观顺序识别的。 第一个参数`<__sessiontoken>`采用身份验证链，第二个参数是`<querydef>`元素中查询的XML描述。
+在SOAP中，参数是按外观顺序识别的。 第一个参数`<__sessiontoken>`获取身份验证链，第二个参数是`<querydef>`元素中查询的XML描述。
 
 ### SOAP响应{#soap-response}
 
@@ -135,23 +135,23 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-SOAP消息正文中的`<soap-env:fault>`元素用于传输在Web服务处理过程中产生的错误信号。 它由以下子元素组成：
+SOAP消息正文中的`<soap-env:fault>`元素用于传送在Web服务处理期间产生的错误信号。 它由以下子元素组成：
 
-* `<faultcode>` :指示错误的类型。错误类型包括：
+* `<faultcode>` :指示错误的类型。错误类型有：
 
-   * 在与所使用的SOAP版本不兼容的事件下，
-   * “必须理解”在消息标头中出现问题的事件中，
-   * 事件中“客户端”缺少某些信息，
-   * 在服务器执行处理时出现问题的事件中为“服务器”。
+   * 在与所使用的SOAP版本不兼容的事件中，
+   * “必须理解”，事件消息标头中的问题，
+   * “客户端”事件中缺少某些信息，
+   * 服务器在执行处理时出现问题的事件中的“服务器”。
 
 * `<faultstring>` :描述错误的消息
 * `<detail>` :长错误消息
 
-验证`<faultcode>`元素时，将确定服务调用的成功或失败。
+验证`<faultcode>`元素时，识别服务调用的成功或失败。
 
 >[!IMPORTANT]
 >
->所有Adobe CampaignWeb服务都处理错误。 因此强烈建议测试每个调用以处理返回的错误。
+>所有Adobe Campaign Web服务都会处理错误。 因此强烈建议测试每个调用以处理返回的错误。
 
 C#中的错误处理示例：
 
@@ -177,4 +177,4 @@ catch (SoapException e)
 
 https://serverName/nl/jsp/soaprouter.jsp
 
-使用&#x200B;**`<server>`** Adobe Campaign应用服务器(**nlserver web**)。
+使用&#x200B;**`<server>`** Adobe Campaign应用程序服务器(**nlserver web**)。
