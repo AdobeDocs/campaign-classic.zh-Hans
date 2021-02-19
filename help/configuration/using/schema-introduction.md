@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '91'
-ht-degree: 9%
+ht-degree: 27%
 
 ---
 
 
 # 模式引用{#schema-reference}
 
-编辑模式时，可使用基于源模式(xtk:srcSchema)的审批系统。 在使用“数据库结构更新……”更新数据库时，也会发现一些错误。 向导。
+编辑模式时，可使用基于源模式(xtk:srcSchema)的审批系统。 使用“数据库结构更新……”更新数据库时，也会发现一些错误 。
 
 默认情况下，在Adobe Campaign模式中，所有布尔类型属性都为“false”。 要激活它们，您需要在模式中指定属性并将其值设置为“true”。
 
