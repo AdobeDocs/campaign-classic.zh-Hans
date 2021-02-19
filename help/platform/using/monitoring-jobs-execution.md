@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 49%
+ht-degree: 52%
 
 ---
 
 
-# 监视作业执行{#monitoring-job-execution}
+# 监视作业执行 {#monitoring-job-execution}
 
-您可以直接从导入／导出作业列表跟踪导入和导出作业的执行情况。
+您可以直接从导入/导出作业的列表跟踪导入和导出作业的执行。
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
@@ -40,7 +40,7 @@ ht-degree: 49%
 
 * **取消**
 
-   单击&#x200B;**[!UICONTROL Cancel]**&#x200B;按钮：正在进行的作业已取消。
+   单击&#x200B;**[!UICONTROL Cancel]**&#x200B;按钮：正在执行的作业已取消。
 
 * **正在取消**
 
@@ -48,11 +48,11 @@ ht-degree: 49%
 
 * **正在暂停**
 
-   单击&#x200B;**[!UICONTROL Pause]**:工作正被暂停。
+   单击&#x200B;**[!UICONTROL Pause]**:作业正在挂起。
 
 * **已暂停**
 
-   单击&#x200B;**[!UICONTROL Pause]**:作业被暂停。 单击&#x200B;**[!UICONTROL Start]**&#x200B;可重新启动它。
+   单击&#x200B;**[!UICONTROL Pause]**:作业已挂起。 单击&#x200B;**[!UICONTROL Start]**&#x200B;即可重新启动。
 
 * **已完成**
 
