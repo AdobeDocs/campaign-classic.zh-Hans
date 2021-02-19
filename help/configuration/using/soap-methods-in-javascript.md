@@ -9,8 +9,8 @@ topic-tags: api
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '136'
+ht-degree: 9%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 ## 静态方法{#static-methods}
 
-静态SOAP方法通过调用表示模式的对象上的方法来访问。 模式是“命名空间”对象的属性。 这些命名空间是全局变量，因此，例如xtk或nms变量表示相应的命名空间
+通过对表示模式的对象调用方法来访问静态SOAP方法。 模式是“命名空间”对象的属性。 这些命名空间是全局变量，因此，例如xtk或nms变量表示相应的命名空间
 
-以下示例调用xtk:workflow模式的静态PostEvent方法：
+下面的示例调用xtk:workflow模式的静态PostEvent方法：
 
 ```
 xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false) 
@@ -33,7 +33,7 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 要使用非静态SOAP方法，必须首先在相应模式上使用“get”或“create”方法检索实体。
 
-以下示例调用“xtk:queryDef”模式的ExecuteQuery方法：
+下面的示例调用“xtk:queryDef”模式的ExecuteQuery方法：
 
 ```
 var query = xtk.queryDef.create(
@@ -52,7 +52,7 @@ for each (var w in res.workflow)
 
 ## 示例{#examples}
 
-* 查询在收件人表上，具有“get”操作：
+* 查询在收件人表上，带有“get”操作：
 
    ```
    var query = xtk.queryDef.create(  
@@ -73,7 +73,7 @@ for each (var w in res.workflow)
    logInfo(recipient.@lastName)
    ```
 
-* 查询在收件人表上，具有“选择”操作：
+* 查询在收件人表上，具有“select”操作：
 
    ```
    var query = xtk.queryDef.create(  
