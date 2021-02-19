@@ -23,9 +23,9 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->Adobe Campaign Classic 有 v6.11 和 v7 两个版本。除非提及，[最新版本](../../rn/using/latest-release.md)中的帮助材料适用于这两个版本。 屏幕截图反映了Campaign Classic v7 用户界面。
+>Adobe Campaign Classic 有 v6.11 和 v7 两个版本。除非另有说明，否则帮助材料适用于[最新版本](../../rn/using/latest-release.md)中的两个版本。 屏幕截图反映了Campaign Classic v7 用户界面。
 
-![](assets/do-not-localize/how-to-video.png) [发现视频的主要功能和功能](#video)
+![](assets/do-not-localize/how-to-video.png) [发现视频的主要功能和特性](#video)
 
 ## 重点功能 {#key-capabilities}
 
@@ -93,4 +93,4 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供其他Campaign Classic操作方法视频。[
+其他Campaign Classic操作视频[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)可用。
