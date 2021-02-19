@@ -27,11 +27,11 @@ ht-degree: 68%
 
 Adobe Campaign 提供两类列表：
 
-* **[!UICONTROL Group]** 类型：类 **[!UICONTROL Group]** 型列表属于根据特 **** 定条件选择的人员列表。此列表就像一组用户档案的快照。请注意，将用户档案添加到数据库时，列表不会自动更新。
+* **[!UICONTROL Group]** 类型：类 **[!UICONTROL Group]** 型列表属于根据特 **** 定条件选择的人员的列表。此列表就像一组用户档案的快照。请注意，将用户档案添加到数据库时，列表不会自动更新。
 
    有关如何创建&#x200B;**[!UICONTROL Group]**&#x200B;类型列表的详细信息，请参阅此[页面](#creating-a-profile-list-from-a-group)。
 
-* **[!UICONTROL List]** 类型：类 **[!UICONTROL List]** 型列表允许您使用工作流创建和管理列表。这些列表将是数据导入所产生的特定活动，可通过专用的&#x200B;**[!UICONTROL List update]**&#x200B;工作流进行更新。
+* **[!UICONTROL List]** 类型：类 **[!UICONTROL List]** 型列表允许您使用工作流创建和管理列表。这些列表将是由数据导入生成的特定活动，可通过专用的&#x200B;**[!UICONTROL List update]**&#x200B;工作流进行更新。
 
    与&#x200B;**[!UICONTROL Group]**&#x200B;类型列表不同，此类型列表可以使用&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动自动更新。 请注意，有关如何创建&#x200B;**[!UICONTROL List]**&#x200B;类型列表的示例，请参阅[此页](../../workflow/using/list-update.md)。
 
@@ -92,7 +92,7 @@ Adobe Campaign 提供两类列表：
 
    ![](assets/s_ncs_user_add_selection_to_group_3.png)
 
-**[!UICONTROL Recreate the list]**&#x200B;选项将从列表中删除以前的内容。 此模式已进行了优化，因为无需通过查询来确认用户档案是否已链接到列表。
+**[!UICONTROL Recreate the list]**&#x200B;选项将从列表中删除早期内容。 此模式已进行了优化，因为无需通过查询来确认用户档案是否已链接到列表。
 
 如果取消选中&#x200B;**[!UICONTROL No trace of this job is saved in the database]**&#x200B;选项，则可以选择（或创建）将存储与此进程链接的信息的执行文件夹。
 
@@ -132,7 +132,7 @@ Adobe Campaign 提供两类列表：
 
 列表是一组静态收件人档案，用于在投放操作期间提供定位目标，或在导入操作或工作流执行期间进行更新。收件人列表也称为受众。
 
-了解如何通过从资源管理器配置受众列表来创建收件人。
+了解如何通过从资源管理器中配置列表受众来创建收件人。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
@@ -142,4 +142,4 @@ Adobe Campaign 提供两类列表：
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-此处[提供其他Campaign Classic操作方法视频。](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
+其他Campaign Classic操作视频[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)可用。
