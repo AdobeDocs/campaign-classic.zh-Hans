@@ -9,29 +9,29 @@ topic-tags: schema-reference
 translation-type: tm+mt
 source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '175'
+ht-degree: 6%
 
 ---
 
 
-# 参数元素{#param--element}
+# param元素{#param--element}
 
 ## 内容模型{#content-model-12}
 
-param:==帮助
+param:==help
 
 ## 属性{#attributes-12}
 
-* @_operation（字符串）
-* @desc（字符串）
-* @enum（字符串）
-* @inout（字符串）
+* @_operation(string)
+* @desc(string)
+* @enum(string)
+* @inout(string)
 * @label(string)
-* @localizable（字符串）
+* @localizable(string)
 * @name(MNTOKEN)
-* @命名空间(MNTOKEN)
-* @type（字符串）
+* @namespace(MNTOKEN)
+* @type(string)
 
 ## 父项{#parents-12}
 
@@ -43,14 +43,14 @@ param:==帮助
 
 ## 说明{#description-12}
 
-此元素允许您定义用于调用SOAP方法的参数。
+通过此元素，可以定义一个参数以调用SOAP方法。
 
 ## 属性描述{#attribute-description-12}
 
-* **desc(string)**:与元素相关的 `<param>` 说明。
-* **inout（字符串）**:此属性定义参数是否位于SOAP调用的输入（输入）或输出（输出）。如果未指定此属性，则输入默认参数(&quot;@inout=in&quot;)。
-* **label(string)**: `<param>` 标签
-* **localizable（字符串）**:如果激活了该属性，则此属性会告知集合工具恢复“@label”属性的值以进行转换（内部使用）。
+* **desc(string**):与元素相关的 `<param>` 描述。
+* **inout(字符串**):此属性定义参数是否位于SOAP调用的输入(in)或输出(out)。如果未指定此属性，则默认参数为输入(&quot;@inout=in&quot;)。
+* **label(string**): `<param>` 标签
+* **localizable(字符串**)如果激活了该属性，则此属性会告知收集工具恢复“@label”属性的值，以用于翻译（内部使用）。
 * **name(MNTOKEN)**:内部名称  `<param>`
 * **type(string)**:此属性定义元素的类 `<param>` 型
 
@@ -58,11 +58,11 @@ param:==帮助
 
    * 任意
    * 宾
-   * 斑点
+   * blob
    * 布尔
    * 字节
    * CDATA
-   * datetime
+   * date
    * datetimetz
    * datetimenotz
    * 日期
