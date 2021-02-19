@@ -17,38 +17,38 @@ ht-degree: 1%
 
 # 用例：Web 窗体{#use-cases-web-forms}
 
-## 创建具有订阅选择加入{#create-a-subscription--form-with-double-opt-in}的多次表单
+## 创建具有多次选择加入{#create-a-subscription--form-with-double-opt-in}的订阅表单
 
 当您优惠信息服务时，收件人需要订阅才能接收所有链接的通信。 为避免不当通信并确保收件人有意订阅，我们建议发送订阅确认请求以创建多次选择加入。 只有当用户单击确认消息中包含的链接时，订阅才会生效。
 
 此示例基于以下方案：
 
 1. 在包含用于订阅临时服务的复选框的网站上创建新闻稿订阅表单。 此服务将允许您发送订阅确认消息。
-1. 使用链接到Web表单的订阅创建投放确认投放模板。 它包含确认链接，用于调用表单进行Newsletter订阅并显示订阅批准消息。
+1. 使用链接到Web表单的订阅创建投放确认投放模板。 它包含确认链接，用于调用表单以订阅新闻稿，并显示订阅批准消息。
 
-### 步骤1 —— 创建信息服务{#step-1---creating-information-services}
+### 步骤1 — 创建信息服务{#step-1---creating-information-services}
 
-1. 创建要提供给您的订阅服务的Newsletter收件人。 有关如何创建Newsletter的详细信息，请参阅[此部分](../../delivery/using/about-services-and-subscriptions.md)。
+1. 创建要提供给收件人的新闻稿订阅服务。 有关如何创建Newsletter的详细信息，请参阅[此部分](../../delivery/using/about-services-and-subscriptions.md)。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
-1. 创建第二个信息服务，即链接到投放模板的临时服务，用于发送订阅确认消息。
+1. 创建第二个信息服务，即链接到用于发送订阅确认消息的投放模板的临时服务。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
 
-### 第2步——创建确认消息{#step-2---creating-confirmation-messages}
+### 步骤2 — 创建确认消息{#step-2---creating-confirmation-messages}
 
 确认消息通过在临时服务级别引用的专用投放模板发送。
 
 1. 在&#x200B;**[!UICONTROL Explorer]**&#x200B;中，选择&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**。
-1. 创建用于发送投放模板确认消息的订阅。
-1. 单击&#x200B;**[!UICONTROL Email parameters]**&#x200B;中的&#x200B;**[!UICONTROL To]**&#x200B;按钮，将投放模板与订阅目标映射而非收件人关联。
+1. 创建用于发送订阅确认消息的投放模板。
+1. 单击&#x200B;**[!UICONTROL Email parameters]**&#x200B;中的&#x200B;**[!UICONTROL To]**&#x200B;按钮，将投放模板与订阅目标映射而不是收件人关联。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. 由于此投放的收件人尚未确认其批准，因此他们仍在数据库阻止列表。 要让投放接收此通信，您需要根据此模板授权目标收件人。
+1. 由于此投放的收件人尚未确认其批准，因此他们仍在数据库阻止列表。 要让他们接收此通信，您需要授权基于此模板的投放，以目标收件人阻止列表。
 
-   为此，请单击&#x200B;**[!UICONTROL Exclusions]**&#x200B;选项卡。
+   要执行此操作，请单击&#x200B;**[!UICONTROL Exclusions]**&#x200B;选项卡。
 
 1. 单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接并取消选中&#x200B;**[!UICONTROL Exclude recipients who no longer want to be contacted]**&#x200B;选项。
 
@@ -62,7 +62,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1b.png)
 
-1. 通过该数字内容编辑器，将您的URL链接到Web表单。 由于尚未创建Web表单，请在创建该表单后立即替换它。
+1. 通过数字内容编辑器，将您的URL链接到Web表单。 由于尚未创建Web表单，请在创建该表单后立即替换它。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_3.png)
 
@@ -70,11 +70,11 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
-### 第3步——创建订阅表单{#step-3---creating-the-subscription-form}
+### 步骤3 — 创建订阅表单{#step-3---creating-the-subscription-form}
 
 Web表单支持收件人订阅和订阅确认。
 
-Web表单工作流将包括以下活动:
+Web表单工作流程将包含以下活动:
 
 ![](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
 
@@ -86,11 +86,11 @@ Web表单工作流将包括以下活动:
 
 1. 在&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，我们需要配置现有工作流，因为我们要向要订阅的收件人添加确认消息。
 
-   为此，请多次单击&#x200B;**[!UICONTROL Preloading]**&#x200B;框，然后按如下配置。
+   要执行此操作，请按住多次单击&#x200B;**[!UICONTROL Preloading]**&#x200B;框，然后按如下配置。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
 
-   这意味着，如果用户通过确认消息中的链接访问此表单，则将加载其用户档案信息。 如果他们通过网站的某个页面访问Web表单，则不会加载任何信息。
+   这意味着，如果用户通过确认消息中的链接访问此表单，则将加载其用户档案信息。 如果他们通过网站的页面访问Web表单，则不会加载任何信息。
 
 1. 将&#x200B;**[!UICONTROL Test]**&#x200B;活动添加到工作流。
 
@@ -100,11 +100,11 @@ Web表单工作流将包括以下活动:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
-1. 将两个&#x200B;**[!UICONTROL Script]**&#x200B;活动添加到您的工作流中。
+1. 将两个&#x200B;**[!UICONTROL Script]**&#x200B;活动添加到您的工作流。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   第一个&#x200B;**[!UICONTROL Script]**&#x200B;活动将添加收件人,阻止列表直到他们确认其订阅到新闻稿。 其内容必须如下：
+   第一个&#x200B;**[!UICONTROL Script]**&#x200B;活动将添加，阻止列表直到收件人确认其订阅到新闻稿。 其内容必须如下：
 
    ```
    ctx.recipient.@blackList=1
@@ -127,13 +127,13 @@ Web表单工作流将包括以下活动:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
-1. 多次-单击&#x200B;**[!UICONTROL Subscription]**&#x200B;活动，个性化订阅表单并将复选框与先前创建的临时服务链接。
+1. 多次单击&#x200B;**[!UICONTROL Subscription]**&#x200B;活动，个性化订阅表单并将复选框与先前创建的临时服务链接。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
 
 1. 配置&#x200B;**[!UICONTROL Storage]**&#x200B;活动以保存在表单页面中输入的信息。
 
-   此活动允许您在专用的临时文件夹中创建收件人用户档案，以将其与可向其发送通信的用户档案区分开。
+   此活动允许您在专用的临时文件夹中创建收件人用户档案，以将它们与可以向其发送通信的数据库中的用户档案分开。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
 
@@ -141,17 +141,17 @@ Web表单工作流将包括以下活动:
    >
    >您不得定义任何对帐选项。
 
-1. 添加两个&#x200B;**[!UICONTROL End]**&#x200B;活动以显示用户消息。
+1. 添加两个&#x200B;**[!UICONTROL End]**&#x200B;活动，为用户显示消息。
 
    完成订阅后，第二个&#x200B;**[!UICONTROL End]**&#x200B;框将显示确认消息。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
-1. 创建并配置Web表单后，您现在可以在投放模板中引用它以发送确认消息。
+1. 创建和配置Web表单后，您现在可以在投放模板中引用它以发送确认消息。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
 
-### 第4步——发布和测试表单{#step-4---publishing-and-testing-the-form}
+### 第4步 — 发布和测试表单{#step-4---publishing-and-testing-the-form}
 
 您现在可以发布表单，使用户能够访问它。
 
@@ -163,11 +163,11 @@ Web表单工作流将包括以下活动:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8c.png)
 
-   他们会通过浏览器中的消息收到通知，告知他们的请求已得到考虑。
+   他们会通过浏览器中的一条消息收到通知，告知他们的请求已得到考虑。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   用户将添加到&#x200B;**[!UICONTROL Temp]**&#x200B;文件夹中的Adobe Campaign用户档案库，并且其处于状态，直阻止列表到用电子邮件确认其订阅。
+   用户将添加到&#x200B;**[!UICONTROL Temp]**&#x200B;文件夹中的Adobe Campaign用户档案库，并且其处于状态，直阻止列表至用户确认其与电子邮件的订阅。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -175,13 +175,13 @@ Web表单工作流将包括以下活动:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8e.png)
 
-1. 当他们单击此链接时，其浏览器中将显示批准页面。
+1. 当用户单击此链接时，其浏览器中将显示批准页面。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8.png)
 
-   在Adobe Campaign中，用户用户档案会更新：
+   在Adobe Campaign中，将更新用户用户档案:
 
-   * 他们不再阻止列表,
+   * 他们不再，
    * 他们订阅了信息服务。
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
@@ -192,25 +192,25 @@ Web表单工作流将包括以下活动:
 
 ![](assets/s_ncs_admin_survey_condition_sample0.png)
 
-* 当用户选择“私家车”时，提供“紧凑型”和“微型车”之间的选择。
+* 当用户选择“私家车”时，提供“紧凑型”和“微型厢”之间的选择。
 
    ![](assets/s_ncs_admin_survey_condition_sample2.png)
 
-* 当用户选择“商用车”时，在下拉列表中显示选择：
+* 当用户选择“商用车”时，选择显示在下拉列表中：
 
    ![](assets/s_ncs_admin_survey_condition_sample1.png)
 
-在此示例中，车辆类型不存储在数据库中。 下拉列表配置如下：
+在此示例中，车辆类型不存储在数据库中。 下拉列表的配置如下：
 
 ![](assets/s_ncs_admin_survey_condition_config1.png)
 
 此信息存储在本地变量中。
 
-右列的条件显示在容器中配置：
+右侧列的条件显示在以下容器中配置：
 
 ![](assets/s_ncs_admin_survey_condition_config1bis.png)
 
-* 私人车辆的字段条件可见性：
+* 私有车辆的字段的条件可见性：
 
    ![](assets/s_ncs_admin_survey_condition_config2.png)
 
