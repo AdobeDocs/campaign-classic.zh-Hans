@@ -19,21 +19,21 @@ ht-degree: 3%
 
 ## 电子邮件优惠投放{#email-offer-delivery}
 
-在我们的类别库里，有一旅行优惠前往非洲。 已配置每个优惠的资格、上下文和表示。 现在，我们希望创建一个活动，通过电子邮件向优惠展示。
+在我们的数据库中，有一类别前往非洲的旅行优惠。 已配置每个优惠的资格、上下文和陈述。 现在，我们希望创建一个活动，通过电子邮件向我们的优惠演示。
 
 1. 创建营销活动和定位工作流。
 
    ![](assets/offer_delivery_example_001.png)
 
-1. 编辑电子邮件投放并单击&#x200B;**[!UICONTROL Offers]**&#x200B;图标。
+1. 编辑电子邮件投放，然后单击&#x200B;**[!UICONTROL Offers]**&#x200B;图标。
 
    ![](assets/offer_delivery_example_002.png)
 
-1. 为优惠环境选择与假期匹配的电子邮件空间。
+1. 为优惠环境选择与假日匹配的电子邮件空间。
 
    ![](assets/offer_delivery_example_003.png)
 
-1. 选择包含非洲旅行类别的优惠。
+1. 选择包含非洲旅行优惠的类别。
 
    ![](assets/offer_delivery_example_004.png)
 
@@ -53,12 +53,12 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_008.png)
 
-1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;预览投放中的优惠，然后选择一个收件人预览优惠，使其与接收的一致。
+1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;在投放中预览优惠，然后选择收件人预览优惠，使在接收时显示。
 
    ![](assets/offer_delivery_example_009.png)
 
 1. 保存投放并开始定位工作流。
-1. 打开投放并单击投放的&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡：您可以看到优惠引擎已选择要从目录中的各种优惠中提出的建议。
+1. 打开投放，然后单击投放的&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡：您可以看到，优惠引擎已从目录中的各种优惠中选择要提出的建议。
 
    ![](assets/offer_delivery_example_010.png)
 
@@ -89,7 +89,7 @@ ht-degree: 3%
    ![](assets/offer_simulation_example_006.png)
 
 1. 输入有效日期。 您必须至少输入开始日期。 这样，优惠引擎可以过滤优惠，并选择在给定日期有效的过滤器。
-1. 如有必要，请指定一个或多个主题，将优惠数限制为设置中包含此关键字的数。
+1. 如有必要，请指定一个或多个主题，以将优惠数限制为设置中包含此关键字的数。
 
    在我们的示例中，**Travel**&#x200B;类别包含两个子类别，它们有两个单独的主题。 我们希望为具有&#x200B;**Customers>1年**&#x200B;主题的优惠运行模拟。
 
@@ -99,7 +99,7 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_008.png)
 
-1. 配置要发送给每个优惠的收件人数。
+1. 配置要发送到每个优惠的收件人数。
 
    在我们的示例中，优惠引擎将为每个优惠选择权重最高的3个收件人。
 
@@ -109,9 +109,9 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_010.png)
 
-1. 模拟完成后，请查阅&#x200B;**[!UICONTROL Results]**，了解每个优惠的主张的详细细目。
+1. 模拟完成后，请查阅&#x200B;**[!UICONTROL Results]**&#x200B;以详细了解每个优惠的建议。
 
-   在本例中，优惠引擎根据3个命题进行优惠细分。
+   在我们的示例中，优惠引擎基于3个建议的优惠划分。
 
    ![](assets/offer_simulation_example_011.png)
 
