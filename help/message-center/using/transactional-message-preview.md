@@ -27,6 +27,6 @@ ht-degree: 16%
 
    ![](assets/messagecenter_preview_002.png)
 
-1. 选择之前创建的种子地址以显示个性化信息。
+1. 选择以前创建的种子地址以显示个性化消息。
 
    ![](assets/messagecenter_create_seedaddr_009.png)
