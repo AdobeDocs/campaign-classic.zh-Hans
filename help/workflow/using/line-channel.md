@@ -17,7 +17,7 @@ ht-degree: 11%
 
 # LINE 渠道{#line-channel}
 
-下面详细介绍的工作流默认安装在&#x200B;**LINE渠道**&#x200B;模块中。 有关此模块的详细信息，请参阅此[部分](../../delivery/using/line-channel.md)。
+默认情况下，下面详述的工作流随&#x200B;**LINE 渠道**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[部分](../../delivery/using/line-channel.md)。
 
 <table> 
  <tbody> 
@@ -27,7 +27,7 @@ ht-degree: 11%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">LINE V2访问令牌更新</span> <br /> </td> 
+   <td> <span class="uicontrol">第V2行访问令牌更新</span> <br /> </td> 
    <td> <span class="uicontrol">updateLineV2AccessToken</span> <br /> </td> 
    <td> 此工作流将访问令牌刷新为LINE V2。<br /> </td> 
   </tr> 
@@ -38,8 +38,8 @@ ht-degree: 11%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MID到LineUserID迁移</span> <br /> </td> 
-   <td> <span class="uicontrol">MIDToUserIDM集成</span> <br /> </td> 
-   <td> 此工作流生成LINE V2用户的ID，用于从LINE V1迁移到LINE V2。<br /> </td> 
+   <td> <span class="uicontrol">MIDToUserIDMigration</span> <br /> </td> 
+   <td> 此工作流生成LINE V2用户ID，用于从LINE V1迁移到LINE V2。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
