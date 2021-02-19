@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # 管理活动图像{#managing-activity-images}
 
-可以更改各种工作流的图中使用的图像。 但是，它们必须遵守某些限制。 以下是实施阶段：
+可以更改各种工作流的图中使用的图像。 然而，它们必须遵守某些限制。 以下是实施阶段：
 
 * 要更改背景图像，请选择所需的定位工作流，然后单击&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡。
 
@@ -31,15 +31,15 @@ ht-degree: 5%
 
    ![](assets/s_user_segmentation_background_select.png)
 
-   通过&#x200B;**[!UICONTROL Edit link]**&#x200B;图标可视图所选图像。
+   使用&#x200B;**[!UICONTROL Edit link]**&#x200B;图标可以视图所选图像。
 
-* 要更改与活动关联的图像，请多次单击对象，然后单击&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡。
+* 要更改与活动关联的图像，请按住多次单击对象，然后单击&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡。
 
    要选择要使用的图像，请单击&#x200B;**[!UICONTROL Image]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Select link]**&#x200B;图标。
 
    ![](assets/s_user_segmentation_activity_image.png)
 
-   通过&#x200B;**[!UICONTROL Edit link]**&#x200B;图标可视图所选图像。
+   使用&#x200B;**[!UICONTROL Edit link]**&#x200B;图标可以视图所选图像。
 
    ![](assets/s_user_segmentation_activity_image_select.png)
 
