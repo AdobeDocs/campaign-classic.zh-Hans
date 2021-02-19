@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: 关于工作流使用案例
-description: 进一步了解可使用Campaign Classic工作流执行的使用案例。
+description: 进一步了解可以使用Campaign Classic工作流执行的使用案例。
 audience: workflow
 content-type: reference
 topic-tags: about-workflows-and-data-management
@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 65%
+ht-degree: 68%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 65%
 
 在本节中，您将发现利用活动工作流功能的各种使用案例。
 
-它们将帮助您发现可以使用工作流的不同上下文，并响应您的需求。
+它们将帮助您发现可以使用工作流的不同上下文并响应您的需求。
 
 ## 投放 {#deliveries}
 
@@ -52,8 +52,8 @@ ht-degree: 65%
 * [创建摘要列表](../../workflow/using/creating-a-summary-list.md)
 * [丰富数据](../../workflow/using/enriching-data.md)
 * [使用聚合](../../workflow/using/using-aggregates.md)
-* [导入使用控制面板生成的密钥加密的数据](../../platform/using/unzip-decrypt.md)
-* [使用控制面板上安装的密钥加密和导出数据](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
+* [导入使用由控制面板生成的密钥加密的数据](../../platform/using/unzip-decrypt.md)
+* [使用安装在控制面板上的密钥加密和导出数据](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [使用增量查询每季度更新列表](../../workflow/using/quarterly-list-update.md)
 * [使用外部重复数据删除活动的合并功能](../../workflow/using/deduplication-merge.md)
 * [设置循环导入工作流](../../workflow/using/recurring-import-workflow.md)
