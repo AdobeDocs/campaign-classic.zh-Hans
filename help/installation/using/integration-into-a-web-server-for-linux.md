@@ -17,32 +17,32 @@ ht-degree: 5%
 
 # 集成到 Linux 版的 Web 服务器{#integration-into-a-web-server-for-linux}
 
-Adobe Campaign包括Apache Tomcat，它通过HTTP（和SOAP）充当应用程序服务器中的入口点。
+Adobe Campaign包括Apache Tomcat，它通过HTTP（和SOAP）作为应用程序服务器中的入口点。
 
 您可以使用此集成的Tomcat服务器来提供HTTP请求。
 
-在本例中：
+在这种情况下：
 
 * 默认监听端口为8080。 要更改它，请参阅[配置Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat)。
-* 然后，客户端控制台使用URL进行连接，如：
+* 然后，客户端控制台使用URL进行连接，例如：
 
    ```
    http://<computer>:8080
    ```
 
-但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开对网络外控制台的访问时，我们建议使用专用Web服务器作为HTTP通信的主入口点。
+但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开对网络外部控制台的访问时，我们建议使用专用Web服务器作为HTTP通信的主入口点。
 
-Web服务器还允许您使用HTTP协议保证数据的机密性。
+Web服务器还允许您使用HTTPs协议保证数据的机密性。
 
 同样，当您希望使用跟踪功能时，必须使用Web服务器，该功能仅作为Web服务器的扩展模块提供。
 
 >[!NOTE]
 >
->如果不使用跟踪功能，则可以通过重定向到活动来执行Apache或IIS的标准安装。 无需跟踪Web服务器扩展模块。
+>如果您不使用跟踪功能，则可以通过重定向到活动来执行Apache或IIS的标准安装。 不需要跟踪Web服务器扩展模块。
 
 ## 使用Debian {#configuring-the-apache-web-server-with-debian}配置Apache Web服务器
 
-如果已在基于APT的分发下安装Apache，则此过程适用。
+如果您已在基于APT的分发下安装Apache，则此过程适用。
 
 应用以下步骤：
 
@@ -52,7 +52,7 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   确保&#x200B;**别名**、**authz_host**&#x200B;和&#x200B;**mime**&#x200B;模块仍处于启用状态。 为此，请使用以下命令：
+   确保&#x200B;**alias**、**authz_host**&#x200B;和&#x200B;**mime**&#x200B;模块仍处于启用状态。 为此，请使用以下命令：
 
    ```
    a2enmod  alias authz_host mime
@@ -60,7 +60,7 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
 
 1. 在&#x200B;**/etc/apache2/mods-available**&#x200B;中创建文件&#x200B;**nlsrv.load**&#x200B;并插入以下内容：
 
-   在德比安8:
+   在德比8中：
 
    ```
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
@@ -78,7 +78,7 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
     a2enmod nlsrv
    ```
 
-   如果对Adobe Campaign页使用&#x200B;**mod_rewrite**&#x200B;模块，则需要将&#x200B;**nlsrv.load**&#x200B;和&#x200B;**nlsrv.conf**&#x200B;文件重命名为&#x200B;**zz-nlsrv.load**&#x200B;和&#x200B;**zz-nlsrv.conf**。 要激活模块，请运行以下命令：
+   如果对Adobe Campaign页使用&#x200B;**mod_rewrite**&#x200B;模块，则需要将&#x200B;**nlsrv.load**&#x200B;和&#x200B;**nlsrv.conf**&#x200B;文件重命名为&#x200B;**zz-nlsrv.load**&#x200B;和&#x200B;**zz-nlsrv.a9/>。**&#x200B;要激活模块，请运行以下命令：
 
    ```
    a2enmod zz-nlsrv
@@ -136,7 +136,7 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
    userdir
    ```
 
-   对链接到已取消激活模块的函数进行注释：
+   注释链接到已停用模块的函数：
 
    ```
    DirectoryIndex
@@ -178,7 +178,7 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
    systemctl daemon-reload
    ```
 
-1. 然后，通过运行以下命令，将Adobe Campaign运算符添加到Apache运算符组，反之亦然：
+1. 然后，通过运行以下命令将Adobe Campaign运算符添加到Apache运算符组中，反之亦然：
 
    ```
    usermod -a -G neolane apache
@@ -198,7 +198,7 @@ Web服务器还允许您使用HTTP协议保证数据的机密性。
 
 ## 启动Web服务器并测试配置{#launching-the-web-server-and-testing-the-configuration}
 
-您现在可以通过启动Apache来测试配置。 Adobe Campaign模块现在应在控制台上显示其横幅（某些操作系统上有两个横幅）:
+您现在可以通过启动Apache来测试配置。 Adobe Campaign模块现在应在控制台上显示其横幅（某些操作系统上有两个横幅）：
 
 ```
  /etc/init.d/apache start
