@@ -17,15 +17,15 @@ ht-degree: 5%
 
 # 在 Twitter 上发布{#publishing-on-twitter}
 
-## 发布到您的Twitter帐户{#publishing-on-your-twitter-accounts}
+## 在您的Twitter帐户{#publishing-on-your-twitter-accounts}上发布
 
-配置完成后，Social Marketing允许您将帖子发送到Twitter帐户。
+配置完成后，Social Marketing允许您将推文发送到您的Twitter帐户。
 
 ### 限制{#limitations}
 
 以下限制是Twitter固有的限制。
 
-* 邮件长度不得超过140个字符。
+* 消息不能超过140个字符。
 * 不支持HTML格式。
 
 ### 创建投放 {#creating-the-delivery}
@@ -56,23 +56,23 @@ ht-degree: 5%
 
 ### 选择验证{#selecting-the-target-of-the-proof}的目标
 
-在&#x200B;**[!UICONTROL Target of the proofs]**&#x200B;选项卡中，您可以定义要在最终投放之前用于测试投放的Twitter帐户。 因此，我们建议您创建专用于发送验证的Twitter帐户。 有关如何创建专用Twitter帐户的详细信息，请参阅[在Twitter上创建测试帐户](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)。 选择验证目标的步骤与选择主目标的步骤相同。 请参阅[在Twitter上创建测试帐户](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)。
+通过&#x200B;**[!UICONTROL Target of the proofs]**&#x200B;选项卡，可以定义要在最终投放之前用于测试投放的Twitter帐户。 因此，我们建议您创建专用于发送验证的私人Twitter帐户。 有关如何创建专用Twitter帐户的详细信息，请参阅[在Twitter上创建测试帐户](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)。 选择验证目标的步骤与选择主目标的步骤相同。 请参阅[在Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)上创建测试帐户。
 
 ![](assets/social_twitter_delivery_004.png)
 
 >[!NOTE]
 >
->如果对所有投放使用相同的Twitter测试帐户，则可以在&#x200B;**[!UICONTROL Tweet]**&#x200B;投放模板中保存验证目标，该通过&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点访问。 然后，默认情况下将为每个新验证输入目标。
+>如果对所有投放使用相同的Twitter测试帐户，则可以在&#x200B;**[!UICONTROL Tweet]**&#x200B;投放模板中保存验证目标，该通过&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点访问。 然后，将默认为每个新验证输入投放目标。
 
 ### 定义消息内容{#defining-the-message-content}
 
-在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中键入您的帖子内容。
+在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中键入您的推文内容。
 
 ![](assets/social_twitter_delivery_005.png)
 
 ### 查看预览{#viewing-the-preview}
 
-使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡可视图帖子的呈现。
+使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡可以视图推文的呈现。
 
 1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
 1. 单击&#x200B;**[!UICONTROL Test personalization]**&#x200B;下拉菜单并选择&#x200B;**[!UICONTROL Service]**。
@@ -83,11 +83,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->预览可能与最终的推文略有不同。 我们强烈建议在最终验证之前发送投放，以视图帖子的确切呈现。 请参阅[发送验证](#sending-the-proof)。
+>预览可能与最终推文略有不同。 我们强烈建议在最终投放之前发送验证，以视图推文的准确呈现。 请参阅[发送验证](#sending-the-proof)。
 
 ### 配置跟踪{#configuring-tracking}
 
-跟踪可在投放报告和投放和服务的&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;选项卡中查看。
+可以在投放报告和投放和服务的&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;选项卡中查看跟踪。
 
 跟踪配置与电子邮件投放相同。 如需详细信息，请参阅[此部分](../../delivery/using/about-delivery-monitoring.md)。
 
@@ -97,11 +97,11 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->我们无法分辨分析帖子的机器人和实际点击的用户之间的区别。
+>我们无法区分分析推文的机器人和实际点击的用户。
 
 ### 发送验证{#sending-the-proof}
 
-我们强烈建议在最终验证之前发送出版物的投放，以在专用Twitter测试页上获得出版物的精确呈现。 有关创建专用Twitter帐户的详细信息，请参阅[在Twitter上创建测试帐户](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)。 选择验证目标的步骤详见[选择验证的目标](#selecting-the-target-of-the-proof)。
+我们强烈建议在最终投放之前发送您的出版物的验证，以便在专用Twitter测试页上获得出版物的精确呈现。 有关创建专用Twitter帐户的详细信息，请参阅[在Twitter上创建测试帐户](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)。 选择验证目标的步骤详见[选择验证的目标](#selecting-the-target-of-the-proof)。
 
 验证投放与电子邮件投放相同。 请参阅[此章节](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) 。
 
@@ -112,7 +112,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >使用&#x200B;**[!UICONTROL Postpone the delivery]**&#x200B;选项可延后投放到以后的日期。
+   >**[!UICONTROL Postpone the delivery]**&#x200B;选项允许您延后投放到以后的日期。
 
    ![](assets/social_twitter_delivery_012.png)
 
@@ -125,15 +125,15 @@ ht-degree: 5%
 
 ### 工作原理 {#operating-principle}
 
-**[!UICONTROL Synchronize Twitter accounts]**&#x200B;工作流程（请参阅[同步Twitter帐户](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)）可恢复Twitter订阅者的列表，以便您能够向他们发送直接消息。 恢复的关注者存储在特定表中：访客表。 要显示Twitter关注者的列表，请转至&#x200B;**[!UICONTROL Profiles and Targets > Visitors]**&#x200B;节点。
+**[!UICONTROL Synchronize Twitter accounts]**&#x200B;工作流（请参阅[同步Twitter帐户](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)）可恢复Twitter订阅者的列表，以便您能够向他们发送直接消息。 恢复的关注者存储在特定表中：访客表。 要显示Twitter关注者的列表，请转到&#x200B;**[!UICONTROL Profiles and Targets > Visitors]**&#x200B;节点。
 
 ![](assets/social_twitter_visitors_001.png)
 
 >[!IMPORTANT]
 >
->要使工作流恢复Twitter关注者的列表，必须在链接到帐户的服务的“编辑”屏幕中选中&#x200B;**[!UICONTROL Synchronize Twitter accounts]**&#x200B;框。 有关此内容的详细信息，请参阅：[将写访问权委托给Adobe Campaign](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign)。
+>要使工作流恢复Twitter关注者的列表，必须在链接到帐户的服务的“编辑”屏幕中选中&#x200B;**[!UICONTROL Synchronize Twitter accounts]**&#x200B;框。 有关详细信息，请参阅：[委派对Adobe Campaign](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign)的写访问。
 
-对于每位关注者，Adobe Campaign会恢复以下信息：
+对于每位追随者，Adobe Campaign会恢复以下信息：
 
 * **[!UICONTROL Origin]**:社交网络的名称(**** 本例中为Twitter)
 * **[!UICONTROL External ID]**:用户标识符
@@ -148,9 +148,9 @@ ht-degree: 5%
 
 以下限制是Twitter固有的限制。
 
-* 邮件长度不得超过140个字符。
+* 消息不能超过140个字符。
 * 不支持HTML。
-* 每天不能发送超过250条直接邮件。 要避免超出此阈值，您可以在多个批次中交付。 批次中的投放配置为与电子邮件投放类似。 如需详细信息，请参阅[此部分](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)。
+* 每天不能发送超过250条直接邮件。 要避免超过此阈值，您可以在多个批次中交付。 投放中的批次配置类似于电子邮件投放。 如需详细信息，请参阅[此部分](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)。
 
 ### 创建投放 {#creating-the-delivery-}
 
@@ -178,7 +178,7 @@ ht-degree: 5%
 
       >[!IMPORTANT]
       >
-      >每天不能发送250条以上的邮件。 如果您的Twitter帐户拥有超过250个关注者，我们强烈建议提供批次。 这涉及与电子邮件投放相同的流程。 请参阅[此章节](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) 。
+      >每天不能发送超过250条消息。 如果您的Twitter帐户有250多个关注者，我们强烈建议提供批次。 这涉及与电子邮件投放相同的过程。 请参阅[此章节](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) 。
 
    * 选择&#x200B;**[!UICONTROL Filter conditions]**&#x200B;定义查询并视图其结果。 此选项与电子邮件投放相同。 有关详细信息，请参阅[本节](../../platform/using/defining-filter-conditions.md)。
 
@@ -186,17 +186,17 @@ ht-degree: 5%
 
 ### 选择验证{#selecting-the-target-of-the-proof-1}的目标
 
-在&#x200B;**[!UICONTROL Target of the proofs]**&#x200B;选项卡中，您可以选择接收您的直接消息验证的关注者。 选择过程与主目标相同。 请参阅[选择主目标](#selecting-the-main-target)。
+通过&#x200B;**[!UICONTROL Target of the proofs]**&#x200B;选项卡，您可以选择接收您的直接消息验证的关注者。 选择过程与主目标相同。 请参阅[选择主目标](#selecting-the-main-target)。
 
 ![](assets/social_twitter_delivery_020.png)
 
 >[!NOTE]
 >
->如果要将所有直接消息验证发送给同一Twitter关注者，可以在&#x200B;**[!UICONTROL Tweet (Direct Message)]**&#x200B;投放模板中保存验证目标，该通过&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点访问。 然后，默认情况下将为每个新验证输入目标。
+>如果要将所有直接消息验证发送给同一Twitter关注者，可以在&#x200B;**[!UICONTROL Tweet (Direct Message)]**&#x200B;投放模板中保存验证目标，该通过&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点访问。 然后，将默认为每个新验证输入投放目标。
 
 ### 定义消息内容{#defining-message-content-}
 
-在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中输入帖子内容。
+在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中输入推文的内容。
 
 ![](assets/social_twitter_delivery_015.png)
 
@@ -204,4 +204,4 @@ ht-degree: 5%
 
 ![](assets/social_twitter_delivery_021.png)
 
-以下步骤与向Twitter帐户发送帖子的步骤相同。 请参阅[在您的Twitter帐户上发布](#publishing-on-your-twitter-accounts)。
+以下步骤与向Twitter帐户发送推文的步骤相同。 请参阅[在您的Twitter帐户上发布](#publishing-on-your-twitter-accounts)。
