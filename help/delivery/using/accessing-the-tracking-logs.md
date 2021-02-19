@@ -17,9 +17,9 @@ ht-degree: 17%
 
 # 访问跟踪日志{#accessing-the-tracking-logs}
 
-发送投放并激活跟踪后，**[!UICONTROL Tracking]**&#x200B;技术工作流将负责检索跟踪数据。 默认情况下，每小时执行一次。
+发送投放并激活跟踪后，**[!UICONTROL Tracking]**&#x200B;技术工作流负责检索跟踪数据。 默认情况下，每小时执行一次。
 
-此信息显示在用户档案所针对的收件人的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡中，如以下示例所示：
+此信息显示在投放所针对的收件人用户档案的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡中，如下例所示：
 
 ![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
