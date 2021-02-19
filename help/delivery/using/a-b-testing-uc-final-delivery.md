@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: 定义最终投放
-description: 了解如何通过专用用例执行A/B测试。
+description: 了解如何通过专用的用例执行A/B测试。
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
@@ -22,8 +22,8 @@ ht-degree: 0%
 1. 将&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动连接到其余&#x200B;**[!UICONTROL Delivery]**&#x200B;活动。
 1. 打开&#x200B;**[!UICONTROL Delivery]**&#x200B;活动。
 1. 取消选中&#x200B;**[!UICONTROL Generate an outbound transition]**&#x200B;选项，以使用此活动完成工作流。
-1. 保留其他选项的默认值。
+1. 将其他选项保留为其默认值。
 
    ![](assets/ab_test_final_delivery.png)
 
-准备在过渡中指定的投放(通过&#x200B;**[!UICONTROL Javascript Code]**&#x200B;活动定义)后，您便可以批准该并开始发送，如下一步所述。
+通过准备在过渡中指定的投放(通过&#x200B;**[!UICONTROL Javascript Code]**&#x200B;活动定义)，您随后可以批准该并开始发送，如下一步所述。
