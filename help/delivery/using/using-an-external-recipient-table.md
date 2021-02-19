@@ -25,4 +25,4 @@ ht-degree: 18%
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-**nms:seedMember**&#x200B;模式扩展是[此部分](../../configuration/using/seed-addresses.md)。
+**nms:seedMember**&#x200B;模式扩展为[此部分](../../configuration/using/seed-addresses.md)。
