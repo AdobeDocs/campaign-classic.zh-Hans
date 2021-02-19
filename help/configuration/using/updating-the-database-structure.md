@@ -9,8 +9,8 @@ topic-tags: editing-schemas
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '137'
+ht-degree: 8%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_schema_update.png)
 
-数据库中的模块会自动填充并激活。
+数据库中的模块会自动填充和激活。
 
 ![](assets/d_ncs_integration_schema_update_select.png)
 
-**[!UICONTROL Add stored procedures]**&#x200B;和&#x200B;**[!UICONTROL Import initialization data]**&#x200B;选项用于启动初始SQL脚本以及创建数据包库时执行的脚本。
+**[!UICONTROL Add stored procedures]**&#x200B;和&#x200B;**[!UICONTROL Import initialization data]**&#x200B;选项用于启动初始SQL脚本以及创建数据库时执行的数据包。
 
-您可以从外部数据包导入一组数据。 为此，请选择&#x200B;**[!UICONTROL Import a package]**&#x200B;并输入包的XML文件。
+您可以从外部数据包导入一组数据。 要执行此操作，请选择&#x200B;**[!UICONTROL Import a package]**&#x200B;并输入包的XML文件。
 
-按照以下步骤和视图数据库更新SQL脚本：
+请按照以下步骤和视图数据库更新SQL脚本：
 
 ![](assets/d_ncs_integration_schema_update2.png)
 
