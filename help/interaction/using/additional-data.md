@@ -17,15 +17,15 @@ ht-degree: 0%
 
 # 其他数据{#additional-data}
 
-在调用交互引擎期间，您可以传输上下文附加信息。 此目标可以来自存储在工作流(出站渠道)的工作表中的数据，或来自网站在呼叫(入站渠道)期间发送的呼叫数据。 您可以在合格规则中、优惠个性化中使用此附加数据，还可以将其存储在建议表中。
+在调用交互引擎期间，您可以传输上下文附加信息。 此目标可以来自存储在工作流(出站渠道)的工作表中的数据，或来自网站在呼叫期间发送的呼叫数据(入站渠道)。 您可以在合格规则中、优惠个性化中使用此附加数据，还可以将其存储在命题表中。
 
-对于入站渠道，可能有用于恢复诸如咨询优惠的人员的浏览器语言或呼叫中心代理的名称等信息。 然后，您可以在合格规则中使用此呼叫数据，仅向那些以法语或英语查看网页的用户显示优惠。
+对于入站渠道，可能有用于恢复诸如咨询优惠的人员的浏览器语言或呼叫中心代理的名称等信息。 然后，您可以使用合格规则中的此调用数据，仅向那些以法语或英语查看网页的用户演示优惠。
 
-在定位工作流(出站渠道)中，您可以在调用引擎时使用目标数据。 例如，您可以通过目标从收件人链接的事务或外部数据库中获取数据来丰富联合数据访问。
+在定位工作流(出站渠道)中，您可以在调用引擎期间使用目标数据。 例如，您可以通过目标从收件人链接的事务或外部数据库中获取数据来丰富联合数据访问。
 
 ## 其他数据配置{#additional-data-configuration}
 
-您必须扩展链接到该环境的&#x200B;**nms:interaction**&#x200B;模式，并声明在调用交互引擎时将使用的其他字段的列表。 创建合格规则或个性化优惠时，这些字段将可从&#x200B;**Interaction**&#x200B;节点访问（请参阅[使用其他数据](#using-additional-data)）。
+您必须扩展链接到环境的&#x200B;**nms:interaction**&#x200B;模式，并声明将在调用交互引擎期间使用的其他字段的列表。 创建合格规则或个性化优惠时，这些字段将可从&#x200B;**Interaction**&#x200B;节点访问（请参阅[使用其他数据](#using-additional-data)）。
 
 对于入站渠道，必须将调用数据字段添加到&#x200B;**Interaction**&#x200B;节点中。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->入站渠道支持XML集合，但到其他模式的链接不支持。
+>入站渠道支持Xml集合，但指向其他模式的链接不支持。
 
 对于出站渠道，必须向&#x200B;**Interaction**&#x200B;节点中添加包含附加字段的&#x200B;**targetData**&#x200B;元素。
 
@@ -74,21 +74,21 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### 输出渠道{#output-channel}
 
-必须创建一个定位工作流，通过遵循与&#x200B;**nms:interaction**&#x200B;模式相同的xml结构和相同的内部名称在工作表中加载其他数据。 请参阅：[其他数据配置](#additional-data-configuration)。
+必须创建一个定位工作流，通过遵循与&#x200B;**nms:interaction**&#x200B;模式相同的xml结构和相同的内部名称加载工作表中的其他数据。 请参阅：[其他数据配置](#additional-data-configuration)。
 
 ## 使用其他数据{#using-additional-data}
 
 ### 合格规则{#eligibility-rules}
 
-您可以在合格规则中为优惠、类别和权重使用其他数据。
+您可以将合格规则中的其他数据用于优惠、类别和权重。
 
-例如，您可以选择仅向查看页面的人员显示优惠。
+例如，您可以选择仅向查看页面的人显示优惠（英语）。
 
 ![](assets/ita_calldata_query.png)
 
 >[!NOTE]
 >
->必须限制定义渠道的规则。 在我们的示例中，我们将限制入站Web渠道（**[!UICONTROL Taken into account if]**&#x200B;字段）上的规则。
+>您必须对定义渠道的规则进行限制。 在我们的示例中，我们将限制入站Web渠道（**[!UICONTROL Taken into account if]**&#x200B;字段）上的规则。
 
 ### 个性化{#personalization}
 
@@ -98,9 +98,9 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 >[!NOTE]
 >
->您必须对定义数据的渠道限制个性化。 在我们的示例中，我们将限制入站Web渠道上的规则。
+>您必须对定义数据的渠道限制个性化。 在我们的示例中，我们将限制入站Web渠道的规则。
 
-如果您已使用其他数据对优惠进行个性化，则此数据默认不会显示在预览中，因为数据库中不提供此数据。 在环境的&#x200B;**[!UICONTROL Example of call data]**&#x200B;选项卡中，必须添加值示例才能在预览中使用。 请遵循&#x200B;**nms:interaction**&#x200B;模式扩展中的相同xml结构。 有关详细信息，请参阅[其他数据配置](#additional-data-configuration)。
+如果您使用其他数据对优惠进行了个性化设置，则默认情况下，此数据不会显示在预览中，因为数据库中不提供此数据。 在环境的&#x200B;**[!UICONTROL Example of call data]**&#x200B;选项卡中，必须添加值示例才能在预览中使用。 请遵循&#x200B;**nms:interaction**&#x200B;模式扩展中的相同xml结构。 有关详细信息，请参阅[其他数据配置](#additional-data-configuration)。
 
 ![](assets/ita_calldata_preview.png)
 
@@ -110,11 +110,11 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### 存储{#storage}
 
-在调用引擎期间，您可以在命题表中存储其他数据以丰富数据库。 这些数据可用于报表、ROI计算或后续流程。
+在调用引擎期间，您可以在命题表中存储其他数据以丰富数据库。 此数据可用于报表、ROI计算或后续流程。
 
 >[!NOTE]
 >
->您必须已扩展&#x200B;**nms:postitionRcp**&#x200B;模式并声明将包含要存储的数据的字段。 有关此内容的更多信息：[其他数据配置](#additional-data-configuration)。
+>您必须已扩展&#x200B;**nms:compationRcp**&#x200B;模式并声明将包含要存储的数据的字段。 有关此内容的更多信息：[其他数据配置](#additional-data-configuration)。
 
 在优惠空间中，转到&#x200B;**[!UICONTROL Storage]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 
