@@ -19,33 +19,33 @@ ht-degree: 7%
 
 ## 事务性消息发送{#transactional-message-send}
 
-在执行实例上，一旦扩充阶段完成并且投放模板已链接到事件，就会发送投放。
+在执行实例上，一旦扩充阶段完成并且投放模板已链接到事件,投放即被发送。
 
 >[!NOTE]
 >
->MTA优先处理事务性消息，而不是任何其他投放。
+>MTA优先处理事务性消息，而非任何其他投放。
 
 所有投放都分组在&#x200B;**[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**&#x200B;文件夹中。
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
-默认情况下，它们按投放月份排序到子文件夹中。 可以在消息模板属性中更改此排序，如下所示。
+默认情况下，它们按投放月分类为子文件夹。 可在消息模板属性中更改此排序，如下所示。
 
 ![](assets/messagecenter_deliveries_properties_001.png)
 
 >[!NOTE]
 >
->对于托管或混合安装，如果已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则还可以使用Adobe Campaign增强的MTA发送所有事务性消息，以改进交付能力、吞吐量和弹回处理。 所有方面都与标准营销消息相同。
+>对于托管或混合安装，如果您已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则还可以随Adobe Campaign增强的MTA发送所有事务性消息，以改进交付能力、吞吐量和弹回处理。 所有方面都与标准营销消息相同。
 
 ## 事务性消息监视{#transactional-message-monitoring}
 
-要监视事务性消息，请检查投放日志。 访问投放日志显示在[此部分](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)中。
+要监视事务性消息，请检查投放日志。 访问投放日志显示在[本节](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)中。
 
-通过每小时运行的技术工作流(**[!UICONTROL Message Center execution instance]**)将从执行实例发送的事务投放同步回控制实例。
+从执行实例发送的事务投放通过每小时运行的技术工作流(**[!UICONTROL Message Center execution instance]**)同步回控制实例。
 
 >[!NOTE]
 >
->投放每周根据最新的事件更新(而非在事件创建日期)累计事件。 因此，当从控制实例提取事务消息投放日志时，与每个投放日志ID关联的投放ID可能随着日志的更新而随时间发生变化(例如，当收到事件的入站弹回时)。
+>投放每周根据最新的事件更新(而非在事件创建日期)累积事件。 因此，当从控制实例提取事务消息投放日志时，与每个投放日志ID关联的投放ID可能随着日志的更新而随时间而改变(例如，当收到事件的入站跳出时)。
 
 <!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
