@@ -19,15 +19,15 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->为了能够继续操作，请确保在您的系统上启用IMS。 请查阅有关[IMS](../../integrations/using/about-adobe-id.md)的部分。
+>为了能够继续操作，请确保在您的系统上启用了IMS。 请查阅有关[IMS](../../integrations/using/about-adobe-id.md)的部分。
 
-启用IMS后，您可以请求与活动的People核心服务/Audience Manager集成的供应。 为此，请向[Digital-Request@adobe.com](mailto:Digital-Request@adobe.com)发送电子邮件，其中包含以下信息：
+启用IMS后，您可以请求与活动的People核心服务/Audience Manager集成的供应。 为此，请向[Digital-Request@adobe.com](mailto:Digital-Request@adobe.com)发送电子邮件，并提供以下信息：
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>请求类型：</strong><br /> </td> 
-   <td> 配置AAM/People核心服务-活动集成 </td> 
+   <td> 配置AAM/People核心服务 — 活动集成 </td> 
   </tr> 
   <tr> 
    <td> <strong>组织名称：</strong><br /> </td> 
@@ -35,7 +35,7 @@ ht-degree: 10%
   </tr> 
   <tr> 
    <td> <strong>IMS 组织 ID</strong><br /> </td> 
-   <td> 您的IMS组织ID。 <br> 您可以在“管理”菜单的Experience Cloud中找到您的IMS组织ID。当您首次连接Adobe Experience Cloud时，也会提供此服务。 </td> 
+   <td> 您的IMS组织ID。 <br> 您可以在“管理”菜单的Experience Cloud上找到您的IMS组织ID。在您首次连接到Adobe Experience Cloud时也会提供此组件。 </td> 
   </tr> 
   <tr> 
    <td> <strong>环境:</strong><br /> </td> 
