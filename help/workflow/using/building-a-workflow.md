@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 构建工作流 {#building-a-workflow}
 
-本节详细介绍了构建活动工作流程的主要原则和最佳实践。
+本节详细介绍了构建活动工作流程的主要原则和最佳做法。
 
 * 创建工作流，请参阅[创建新工作流](#creating-a-new-workflow)
 * 设计工作流图，请参阅[添加和链接活动](#adding-and-linking-activities)
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 从&#x200B;**[!UICONTROL Explorer]**&#x200B;访问工作流文件夹。 默认情况下，您可以使用&#x200B;**[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**。
 
-单击位于列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
+单击位于工作流列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
 
 ![](assets/create_a_wf_icon.png)
 
@@ -47,42 +47,42 @@ ht-degree: 3%
 
 ## 添加和链接活动{#adding-and-linking-activities}
 
-您现在必须定义各种活动，并在图表中将它们链接到一起。在此配置阶段，我们可以看到图标签和工作流状态（正在编辑）。 窗口的下部仅用于编辑图。 它包含工具栏、活动面板（左侧）和图本身（右侧）。
+您现在必须定义各种活动，并在图表中将它们链接到一起。在此配置阶段，我们可以看到图标签和工作流状态（正在编辑）。 窗口的下部仅用于编辑图。 它包含一个工具栏、一个活动调板（左侧）和图本身（右侧）。
 
 ![](assets/new-workflow-2.png)
 
 >[!NOTE]
 >
->如果未显示调色板，请单击工具栏上的第一个按钮以显示它。
+>如果未显示调板，请单击工具栏上的第一个按钮以显示它。
 
-活动按类别在调色板的不同选项卡中进行分组。 可用的选项卡和活动可能因工作流类型(技术、定位或活动工作流)而异。
+活动按类别在调板的不同选项卡中进行分组。 可用的选项卡和活动可能因工作流类型(技术、定位或活动工作流)而异。
 
-* 第一个选项卡包含定位和数据处理活动。 这些活动详见[定位活动](../../workflow/using/about-targeting-activities.md)。
-* 第二个选项卡包含调度活动，这些活动主要用于协调其他。 这些活动详见[流量控制活动](../../workflow/using/about-flow-control-activities.md)。
+* 第一个选项卡包含定位和数据处理活动。 [定位活动](../../workflow/using/about-targeting-activities.md)中详细介绍了这些活动。
+* 第二个选项卡包含调度活动，这些调度活动主要用于协调其他。 这些活动详见[流量控制活动](../../workflow/using/about-flow-control-activities.md)。
 * 第三个选项卡包含可在工作流中使用的工具和操作。 这些活动详见[操作活动](../../workflow/using/about-action-activities.md)。
-* 第四个选项卡包含依赖于给定活动的事件，如收到电子邮件或到达服务器上的文件。 这些活动详见[事件活动](../../workflow/using/about-event-activities.md)。
+* 第四个选项卡包含依赖于给定事件的活动，如收到电子邮件或到达服务器上的文件。 这些活动详见[事件活动](../../workflow/using/about-event-activities.md)。
 
 创建图
 
-1. 通过在调色板中选择活动，然后使用拖放操作将其移到图中，来添加该数据。
+1. 通过在调色板中选择活动并使用拖放操作将其移动到图中，来添加该图。
 
-   在图上添加&#x200B;**开始**&#x200B;活动，然后添加&#x200B;**投放**&#x200B;活动。
+   在图中添加&#x200B;**开始**&#x200B;活动，然后添加&#x200B;**投放**&#x200B;活动。
 
    ![](assets/new-workflow-3.png)
 
-1. 将&#x200B;**活动**&#x200B;活动过渡拖放到&#x200B;**投放**&#x200B;活动，将开始链接到一起。
+1. 将&#x200B;**开始**&#x200B;活动过渡拖放到&#x200B;**投放**&#x200B;活动，将活动链接到一起。
 
    ![](assets/new-workflow-4.png)
 
-   通过将新活动放置在活动的末尾，可以自动将过渡链接到前一个。
+   通过将新活动放置在活动末尾，可以自动将过渡链接到上一个。
 
-1. 添加所需活动并将它们链接在一起，如下图所示。
+1. 添加所需的活动，并将它们链接在一起，如下图所示。
 
    ![](assets/new-workflow-5.png)
 
 >[!CAUTION]
 >
->您可以在同一工作流中复制和粘贴活动。 但是，我们不建议跨不同的活动复制粘贴工作流。 某些附加到活动(如投放和调度程序)的设置可能会导致在执行目标工作流时发生冲突和出错。 而是建议您&#x200B;**重复**&#x200B;工作流。 有关详细信息，请参阅[复制工作流](#duplicating-workflows)。
+>您可以在同一工作流中复制和粘贴活动。 但是，我们不建议跨不同的工作流复制粘贴活动。 某些附加到活动(如投放和调度程序)的设置可能会在执行目标工作流时导致冲突和错误。 我们建议您&#x200B;**重复**&#x200B;工作流。 有关详细信息，请参阅[复制工作流](#duplicating-workflows)。
 
 您可以使用以下元素更改图表的显示和布局：
 
@@ -92,7 +92,7 @@ ht-degree: 3%
 
    ![](assets/s_user_segmentation_wizard_10.png)
 
-   这样，您可以调整编辑工具的布局：调色板的显示以及图形对象的概述、大小和对齐方式。
+   这样，您就可以调整编辑工具的布局：调色板的显示以及图形对象的概述、大小和对齐方式。
 
    ![](assets/s_user_segmentation_toolbar.png)
 
@@ -100,31 +100,31 @@ ht-degree: 3%
 
 * **对象对齐**
 
-   要对齐图标，请选择这些图标，然后单击&#x200B;**[!UICONTROL Align vertically]**&#x200B;或&#x200B;**[!UICONTROL Align horizontally]**&#x200B;图标。
+   要对齐图标，请选择图标，然后单击&#x200B;**[!UICONTROL Align vertically]**&#x200B;或&#x200B;**[!UICONTROL Align horizontally]**&#x200B;图标。
 
    使用&#x200B;**CTRL**&#x200B;键可选择多个分散的活动或取消选择一个或多个活动。 单击图背景可取消选择所有内容。
 
 * **图像管理**
 
-   您可以自定义图的背景图像以及与各种活动相关的背景图像。 请参阅[管理活动图像](../../workflow/using/managing-activity-images.md)。
+   您可以自定义图的背景图像以及与各种活动相关的背景图像。 请参阅[管理活动映像](../../workflow/using/managing-activity-images.md)。
 
 ## 配置活动{#configuring-activities}
 
-多次单击某个活动进行配置，或右键单击并选择&#x200B;**[!UICONTROL Open...]**。
+多次单击某个活动以对其进行配置，或右键单击并选择&#x200B;**[!UICONTROL Open...]**。
 
 >[!NOTE]
 >
 >活动工作流活动详见[本节](../../workflow/using/about-activities.md)。
 
-第一个选项卡包含基本配置。 **[!UICONTROL Advanced]**&#x200B;选项卡包含附加参数，这些参数尤其用于在遇到错误时定义行为、指定活动的执行持续时间以及输入初始化脚本。
+第一个选项卡包含基本配置。 **[!UICONTROL Advanced]**&#x200B;选项卡包含附加参数，这些参数特别用于在遇到错误时定义行为、指定活动的执行持续时间以及输入初始化脚本。
 
-为了更好地了解活动并提高工作流的易读性，您可以在活动中输入注释：操作符滚动到活动上时，将自动显示这些值。
+为了更好地了解活动并提高工作流的可读性，您可以在活动中输入注释：当操作符滚动到活动上时，将自动显示这些值。
 
 ![](assets/example1-comment.png)
 
 ## 定位工作流{#targeting-workflows}
 
-定位工作流使您能够构建多个投放目标。 您可以创建查询、根据特定条件定义合并或排除、添加计划，这都归功于工作流活动。 此定位的结果可以自动传输到列表，作为投放操作的目标
+定位工作流使您能够构建多个投放目标。 您可以创建查询、根据特定条件定义合并或排除、添加计划，这都归功于工作流活动。 此定位的结果可自动传送到列表，该目标可用作投放操作的
 
 除了这些活动之外，数据管理选项还允许您处理数据并访问高级功能以满足复杂的定位问题。 有关详细信息，请参阅[数据管理](../../workflow/using/targeting-data.md#data-management)。
 
@@ -132,9 +132,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[此部分](../../workflow/using/about-activities.md)中详细介绍了定位活动。
+>定位活动详见[本节](../../workflow/using/about-activities.md)。
 
-定位工作流可以通过Adobe Campaign树的&#x200B;**[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]**&#x200B;节点或主页的&#x200B;**[!UICONTROL Profiles and Targets > Targeting workflows]**&#x200B;菜单创建和编辑。
+可以通过Adobe Campaign树的&#x200B;**[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]**&#x200B;节点或主页的&#x200B;**[!UICONTROL Profiles and Targets > Targeting workflows]**&#x200B;菜单创建和编辑定位工作流。
 
 ![](assets/target_wf.png)
 
@@ -142,23 +142,23 @@ ht-degree: 3%
 
 ### 创建定位工作流{#implementation-steps-}的关键步骤
 
-创建定位工作流的步骤在以下各节中详细介绍：
+创建定位工作流的步骤将在以下部分中详细介绍：
 
-1. **在数** 据库中标识数据——请参 [阅创建查询](../../workflow/using/targeting-data.md#creating-queries)
-1. **满足** 投放需求的准备数据——请 [参阅丰富和修改数据](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
-1. **使** 用投放执行更新或更新——请参 [阅更新数据库](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
+1. **识** 别数据库中的查询 — 请参 [阅创建](../../workflow/using/targeting-data.md#creating-queries)
+1. **满足** 投放需求的准备数据 — 请 [参阅丰富和修改数据](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
+1. **使** 用数据执行更新或在投放中 — 请参 [阅更新数据库](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
 
-所有扩充和在定位期间执行的所有处理的结果都在个性化字段中存储和可访问，特别是用于创建个性化消息。 有关详细信息，请参阅[目标数据](../../workflow/using/data-life-cycle.md#target-data)
+所有扩充和在定位期间执行的所有处理的结果都在个性化字段中存储和可访问，特别是在创建个性化消息时使用。 有关详细信息，请参阅[目标数据](../../workflow/using/data-life-cycle.md#target-data)
 
 ### 定位和过滤维度{#targeting-and-filtering-dimensions}
 
-在数据分段操作期间，定位密钥被映射到过滤维度。 定位维度允许您定义工序所针对的人口：收件人、合同受益人、运营商、订户等。 该过滤维度允许您根据特定条件选择人口：合同持有人、新闻稿订阅者等。
+在数据分段操作期间，定位键被映射到过滤维度。 定位维度允许您定义工序所针对的人口：收件人、合同受益人、运营商、订户等。 该过滤维度允许您根据特定条件选择人口：合同持有人、新闻稿订阅者等
 
-例如，要选择拥有5年以上人寿保险单的客户，请选择以下定位维度:**客户端**&#x200B;和以下过滤维度:**合同持有人**。 然后，您可以在查询活动中定义筛选条件
+例如，要选择拥有5年以上人寿保险单的客户，请选择以下定位维度:**客户端**&#x200B;和以下过滤维度:**合同持有人**。 然后，您可以在查询活动中定义过滤条件
 
-在定位维度选择阶段，接口中只提供兼容过滤维度。
+在定位维度选择阶段，只有兼容过滤维度在接口中提供。
 
-这两个维必须是相关的。 因此，**[!UICONTROL Filtering dimension]**&#x200B;列表的内容取决于在第一个字段中指定的定位维度。
+这两个维度必须相关。 因此，**[!UICONTROL Filtering dimension]**&#x200B;列表的内容取决于在第一个字段中指定的定位维度。
 
 例如，对于收件人(**收件人**)，将提供以下过滤维度:
 
@@ -176,7 +176,7 @@ ht-degree: 3%
 
 此选项卡包含与所有活动相同的工作流。 [了解详情](#implementation-steps-)
 
-除了定位活动之外，活动工作流还允许您为所有可用渠道创建和配置投放。 在工作流中创建后，这些投放可从活动的仪表板访问。 [了解详情](../../campaign/using/marketing-campaign-deliveries.md)
+除了定位活动,活动工作流还允许您为所有可用渠道创建和配置投放。 在工作流中创建后，可以从活动的仪表板访问这些投放。 [了解详情](../../campaign/using/marketing-campaign-deliveries.md)
 
 所有活动工作流都集中在&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]**&#x200B;节点下。
 
@@ -186,13 +186,13 @@ ht-degree: 3%
 
 ## 技术工作流 {#technical-workflows}
 
-技术工作流提供开箱即用的Adobe Campaign。 它们是计划在服务器上定期执行的操作或作业。 它们允许您对投放库进行维护，转发投放跟踪信息，并建立临时流程。 技术工作流通过&#x200B;**[!UICONTROL Administration > Production > Technical workflows]**&#x200B;节点进行配置。
+技术工作流现成提供Adobe Campaign。 它们是计划在服务器上定期执行的操作或作业。 它们允许您对投放库进行维护，转发关于投放的跟踪信息，并设置关于数据的临时进程。 技术工作流通过&#x200B;**[!UICONTROL Administration > Production > Technical workflows]**&#x200B;节点配置。
 
 ![](assets/navtree.png)
 
-原生模板可用于创建技术工作流。 可以配置它们以满足您的需求。
+原生模板可用于创建技术工作流。 可以根据您的需要配置这些组件。
 
-**[!UICONTROL Campaign process]**&#x200B;子文件夹集中执行活动中的进程所需的工作流:任务通知、库存管理、成本计算等。
+**[!UICONTROL Campaign process]**&#x200B;子文件夹集中执行活动中的进程所需的工作流:任务通知、库存管理、成本计算等
 
 >[!NOTE]
 >
@@ -204,9 +204,9 @@ ht-degree: 3%
 
 ## 工作流模板{#workflow-templates}
 
-工作流模板包含属性的总体配置，可能还包含在图中连接的一系列活动。 此配置可用于创建包含特定数量的预配置元素的新工作流
+工作流模板包含属性的整体配置，可能还包含在图中连接的一系列活动。 此配置可用于创建包含特定数量的预配置元素的新工作流
 
-您可以基于现有模板创建新的工作流模板，也可以直接将工作流更改为模板。
+您可以基于现有模板创建新的工作流模板，也可以将工作流直接更改为模板。
 
 工作流模板存储在Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Templates > Workflow templates]**&#x200B;节点中。
 
@@ -234,11 +234,11 @@ ht-degree: 3%
 
 重复功能不直接在活动的视图中可用。
 
-但是，您可以创建一个视图来显示实例上的所有工作流。 在此视图中，可以使用&#x200B;**重复重复工作流至**。
+但是，您可以创建一个视图来显示实例上的所有工作流。 在此视图中，您可以使用&#x200B;**重复重复工作流至**。
 
 **首先，让我们创建一个视图:**
 
-1. 在&#x200B;**资源管理器**&#x200B;中，转到需要在中创建视图的文件夹。
+1. 在&#x200B;**Explorer**&#x200B;中，转到在中创建视图所需的文件夹。
 1. 右键单击并转到&#x200B;**添加新文件夹** > **处理**，选择&#x200B;**工作流**。
 
    ![](assets/add-new-folder-workflows.png)
@@ -246,7 +246,7 @@ ht-degree: 3%
 将创建新文件夹&#x200B;**工作流**。
 
 1. 右键单击并选择&#x200B;**属性**。
-1. 在&#x200B;**限制**&#x200B;中，选中&#x200B;**文件夹是视图**&#x200B;并单击&#x200B;**保存**。
+1. 在&#x200B;**限制**&#x200B;中，选中&#x200B;**文件夹是视图**，然后单击&#x200B;**保存**。
 
    ![](assets/folder-is-a-view.png)
 
@@ -254,10 +254,10 @@ ht-degree: 3%
 
 **复制活动工作流**
 
-1. 在工作流活动中选择视图工作流。
+1. 在工作流视图中选择活动工作流。
 1. 右键单击&#x200B;**重复至**。
    ![](assets/duplicate-to-right-click.png)
 1. 更改其标签。
 1. 单击&#x200B;**保存**。
 
-您可以在工作流视图中看到重复的工作流。
+您可以在工作流视图中查看重复的工作流。
