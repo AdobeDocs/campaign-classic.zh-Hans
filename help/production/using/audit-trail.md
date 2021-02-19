@@ -19,28 +19,28 @@ ht-degree: 3%
 
 在Adobe Campaign中，**[!UICONTROL Audit trail]**&#x200B;允许您访问实例中所做更改的完整历史记录。
 
-**[!UICONTROL Audit trail]** 实时捕获在您的Adobe Campaign实例中发生的操作和事件的全面列表。它包括一种自助方式，用于访问数据历史，以帮助回答以下问题：您的工作流发生了什么，谁上次更新了它们，或者您的用户在实例中做了什么。
+**[!UICONTROL Audit trail]** 实时捕获在您的Adobe Campaign实例中发生的操作和事件的全面列表。它包括一种自助方式，可访问数据历史，以帮助回答以下问题：您的工作流发生了什么，以及谁上次更新了它们，或者您的用户在实例中做了什么。
 
 >[!NOTE]
 >
->Adobe Campaign不审核在用户权限、模板、个性化或活动中所做的更改。\
+>Adobe Campaign不是审核在用户权限、模板、个性化或活动中所做的更改。\
 >审核跟踪只能由实例的管理员管理。
 
 审核跟踪包括三个组件：
 
-* **模式审核跟踪**:检查活动和对模式所做的最后修改。
+* **模式审计跟踪**:检查活动和对模式所做的最后修改。
 
    有关模式的详细信息，请参阅此[页面](../../configuration/using/data-schemas.md)。
 
-* **工作流审核跟踪**:检查活动和对工作流所做的最后修改，以及工作流的状态，例如：
+* **工作流审核跟踪**:检查活动和对工作流所做的最后修改，此外还检查工作流的状态，例如：
 
    * 开始
    * 暂停
    * 停止
    * 重新启动
-   * 清除 它等于“清除”历史记录操作
-   * 在模拟模式下模拟与操作开始相等的内容
-   * 唤醒操作等于立即执行挂起任务
+   * 清除 它等于“清除”历史记录
+   * 在模拟模式下模拟与操作开始相等的
+   * 唤醒操作等同于立即执行挂起任务
    * 无条件停止
 
    有关工作流的详细信息，请参阅此[页面](../../workflow/using/about-workflows.md)。
@@ -49,7 +49,7 @@ ht-degree: 3%
 
 * **选项审核跟踪**:检查活动和对选项所做的最后修改。
 
-   有关选项的详细信息，请参阅此[页面](../../installation/using/configuring-campaign-options.md)。
+   有关选项的详细信息，请参阅此[页](../../installation/using/configuring-campaign-options.md)。
 
 ## 访问审核跟踪{#accessing-audit-trail}
 
@@ -62,29 +62,29 @@ ht-degree: 3%
 
 1. 将打开&#x200B;**[!UICONTROL Audit trail]**&#x200B;窗口，其中显示实体的列表。 Adobe Campaign将审核工作流、选项和模式的创建、编辑和删除操作。
 
-   选择其中一个实体以进一步了解上次修改。
+   选择其中一个实体可了解有关上次修改的更多信息。
 
    ![](assets/audit_trail_2.png)
 
-1. **[!UICONTROL Audit entity]**&#x200B;窗口会提供有关所选实体的更多详细信息，例如：
+1. **[!UICONTROL Audit entity]**&#x200B;窗口将提供有关所选实体的更多详细信息，例如：
 
    * **[!UICONTROL Type]** :工作流、选项或模式。
-   * **[!UICONTROL Entity]** :活动的内部名称。
-   * **[!UICONTROL Modified by]** :上次修改此实体的最后一个人的用户名。
+   * **[!UICONTROL Entity]** :您的活动的内部名称。
+   * **[!UICONTROL Modified by]** :上次修改此实体的最后一个人员的用户名。
    * **[!UICONTROL Action]** :对此实体执行的上次操作，创建、编辑或删除。
    * **[!UICONTROL Modification date]** :对此实体执行的上次操作的日期。
 
-   代码块会为您提供有关实体中确切更改的内容的更多信息。
+   代码块为您提供有关实体中确切更改的内容的更多信息。
 
    ![](assets/audit_trail_3.png)
 
 >[!NOTE]
 >
->默认情况下，**[!UICONTROL Audit logs]**&#x200B;的保留期设置为180天。 要进一步了解如何更改保留期，请参阅此[页面](../../production/using/database-cleanup-workflow.md#deployment-wizard)。
+>默认情况下，**[!UICONTROL Audit logs]**&#x200B;的保留期设置为180天。 要了解有关如何更改保留期的详细信息，请参阅此[页](../../production/using/database-cleanup-workflow.md#deployment-wizard)。
 
-## 启用／禁用审核跟踪{#enable-disable-audit-trail}
+## 启用/禁用审核跟踪{#enable-disable-audit-trail}
 
-例如，如果您希望在活动库上节省一些空间，则可以轻松激活或取消激活特定数据的审核跟踪。
+例如，如果您希望在活动库上保存一些空间，可以轻松激活或取消激活特定审核跟踪。
 
 为实现此操作，请执行以下步骤：
 
@@ -93,7 +93,7 @@ ht-degree: 3%
 
    ![](assets/audit_trail_4.png)
 
-1. 根据要激活／取消激活的实体，选择以下选项之一：
+1. 根据要激活/取消激活的实体，选择以下选项之一：
 
    * 对于工作流：**[!UICONTROL XtkAudit_Workflows]**
    * 对于模式:**[!UICONTROL XtkAudit_DataSchema]**
@@ -102,7 +102,7 @@ ht-degree: 3%
 
    ![](assets/audit_trail_5.png)
 
-1. 如果要启用实体，请将&#x200B;**[!UICONTROL Value]**&#x200B;更改为1；如果要禁用实体，将&lt;a0/>更改为0。
+1. 如果要启用实体，请将&#x200B;**[!UICONTROL Value]**&#x200B;更改为1；如果要禁用实体，则更改为0。
 
    ![](assets/audit_trail_6.png)
 
