@@ -19,13 +19,13 @@ ht-degree: 8%
 
 ## 内容模型{#content-model-2}
 
-条件：==EMPTY
+condition:==EMPTY
 
 ## 属性{#attributes-2}
 
-* @boolOperator（字符串）
-* @enabledIf（字符串）
-* @expr（字符串）
+* @boolOperator(string)
+* @enabledIf(string)
+* @expr(string)
 
 ## 父项{#parents-2}
 
@@ -39,15 +39,15 @@ ht-degree: 8%
 
 此元素允许您定义筛选条件。
 
-## 使用和使用上下文{#use-and-context-of-use-2}
+## 使用和上下文{#use-and-context-of-use-2}
 
-一个`<sysfiler>`元素可以包含多个过滤条件。
+一个`<sysfiler>`元素可包含多个过滤条件。
 
 ## 属性描述{#attribute-description-2}
 
-* **boolOperator(string)**:如果在 `<conditions>` 同一元素中定义了  `<sysfilter>` 多个元素，则此属性允许您合并它们。默认情况下，`<condition>`元素之间的逻辑链接为“AND”。 “@boolOperator”属性允许您组合“OR”和“AND”类型链接。
+* **boolOperator(string)**:如果在 `<conditions>` 同一元素中定义  `<sysfilter>` 了多个元素，则此属性允许您组合它们。默认情况下，`<condition>`元素之间的逻辑链接为“AND”。 “@boolOperator”属性允许您组合“OR”和“AND”类型链接。
 * **enabledIf（字符串）**:条件激活测试。
-* **expr(string)**:XTK表达式。
+* **expr(字符串**):XTK表达式。
 
 ## 示例{#examples-2}
 
