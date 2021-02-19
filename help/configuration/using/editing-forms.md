@@ -9,8 +9,8 @@ topic-tags: input-forms
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '46'
+ht-degree: 13%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
-通过编辑区域可输入输入表单的XML内容：
+编辑区域允许您输入输入表单的XML内容：
 
 ![](assets/d_ncs_integration_form_edit.png)
 
