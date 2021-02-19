@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 3105372bc020057727e28d26e7969c31ac290115
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -31,13 +31,13 @@ _2020 年 12 月 22 日_
 
 >[!CAUTION]
 >
-> * 此版本附带新的连接协议：如果您通过活动标识服务(IMS)连接到Adobe，则活动服务器和客户端控制台都必须进行升级，才能在2021年3月31日&#x200B;**之后连接到活动。**
-> * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html):升级是强制性的，以增强环境安全性。
-> * 如果您通过身份验证使用Experience Cloud Triggers集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 旧版身份验证模式将于2021年4月30日&#x200B;****&#x200B;停用。
+> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须进行升级，才能在&#x200B;**2021 年 3 月 31 日**&#x200B;之后连接到 Campaign。
+> * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
+> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
 
 >
 >
-在[Gold Standard 11升级常见问题解答](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)中了解更多信息。
+在 [Gold Standard 11 升级常见问题解答](https://helpx.adobe.com/cn/campaign/kb/gold-standard-upgrade.html)中了解更多信息。
 
 内部版本 9032@d3b452f 包括以下改进和修复：
 
@@ -45,7 +45,7 @@ _2020 年 12 月 22 日_
 
 * 最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成身份验证现已更改并移至 Adobe I/O。[了解详情](../../integrations/using/configuring-adobe-io.md)
 
-* 在iOS APNs旧二进制协议](https://developer.apple.com/news/?id=c88acm2b)的支持结束[后，使用此协议的所有实例在启动升级期间都更新为HTTP/2协议。
+* [终止支持 iOS APN 旧版二进制协议](https://developer.apple.com/news/?id=c88acm2b)之后，在升级后期间，所有使用此协议的实例都更新为 HTTP/2 协议。
 
 * 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
 
