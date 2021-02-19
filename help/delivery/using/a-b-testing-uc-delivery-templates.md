@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: 创建投放模板
-description: 了解如何通过专用用例执行A/B测试。
+description: 了解如何通过专用的用例执行A/B测试。
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
@@ -28,6 +28,6 @@ ht-degree: 10%
 
    ![](assets/use_case_abtesting_deliverymodel_002.png)
 
-1. 重复此过程以为投放B创建模板。
+1. 重复此过程，为投放B创建模板。
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
