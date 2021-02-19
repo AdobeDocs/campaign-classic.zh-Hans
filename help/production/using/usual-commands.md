@@ -9,25 +9,25 @@ topic-tags: production-procedures
 translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '408'
+ht-degree: 3%
 
 ---
 
 
 # 常用命令{#usual-commands}
 
-此部分列表Adobe Campaign中的常用命令。
+本节列表Adobe Campaign中的常用命令。
 
 命令&#x200B;**nlserver**&#x200B;是整个Adobe Campaign应用程序的输入命令。
 
 此命令的语法如下：**nlserver **`<command>`****`<arguments>`****
 
-参数&#x200B;**`<command>`**&#x200B;与模块对应。
+参数&#x200B;**`<command>`**&#x200B;对应于模块。
 
 >[!NOTE]
 >
->* 无论如何，您都可以添加&#x200B;**-noconsole**&#x200B;参数，以删除在启动模块后显示的注释。
+>* 无论如何，您都可以添加&#x200B;**-noconsole**&#x200B;参数，以删除在模块启动后显示的注释。
 >* 相反，您可以添加参数&#x200B;**-verbose**&#x200B;以显示详细信息。
 
 >
@@ -62,9 +62,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-另一个有用的命令是&#x200B;**nlserver monitor**。 它列表监视XML文件(在Adobe Campaign客户端或通过&#x200B;**monitor.jsp**&#x200B;网页获取)。
+另一个有用的命令是&#x200B;**nlserver monitor**。 它列表监视XML文件(通过Adobe Campaign客户端或&#x200B;**monitor.jsp**&#x200B;网页获取)。
 
-可以添加参数&#x200B;**-missing**&#x200B;来列表缺失的模块（模块中出错、模块关闭等）
+可以添加参数&#x200B;**-missing**&#x200B;来列表缺失的模块（模块错误、模块关闭等）
 
 ```
 nlserver monitor -missing
@@ -78,7 +78,7 @@ wfserver@test
 
 ## 模块启动命令{#module-launch-commands}
 
-用于启动模块的语法仍将具有以下格式：
+用于启动模块的语法仍具有以下格式：
 
 ```
 nlserver start <module>@<INSTANCE>
@@ -90,7 +90,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** 对应于在配置文件中输入的实例的名称，或单实例 **** 模块的默认名称。
+>**`<instance>`** 对应于在配置文件中输入的实例的名称，或单实 **** 例模块的默认值。
 
 ## 关闭服务{#shut-down-services}
 
@@ -106,7 +106,7 @@ nlserver stop <module>@<INSTANCE>
 
       >[!NOTE]
       >
-      >从20.1开始，我们建议改用以下命令（对于Linux）:**systemctl停止nlserver**
+      >从20.1开始，建议改用以下命令（对于Linux）：**系统mctl停止nlserver**
 
    * 在Windows中：
 
@@ -130,7 +130,7 @@ nlserver stop <module>@<INSTANCE>
 
       >[!NOTE]
       >
-      >从20.1开始，我们建议改用以下命令（对于Linux）:**systemctl开始nlserver**
+      >从20.1开始，建议改用以下命令（对于Linux）：**systemctl开始nlserver**
 
    * 在Windows中：网络开始nlserver6
 
@@ -140,7 +140,7 @@ nlserver stop <module>@<INSTANCE>
 
 使用&#x200B;**config**&#x200B;命令可以管理服务器配置，包括数据库连接的重新配置。
 
-将&#x200B;**nlserver**&#x200B;可执行文件的&#x200B;**config**&#x200B;命令与&#x200B;**-setdblogin**&#x200B;参数一起使用。
+使用&#x200B;**-setdblogin**&#x200B;参数的&#x200B;**nlserver**&#x200B;可执行文件的&#x200B;**config**&#x200B;命令。
 
 ```
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -152,16 +152,16 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 输入密码。
 
-要更改&#x200B;**internal**&#x200B;密码：**nlserver config -internalpassword**
+要更改&#x200B;**internal**&#x200B;密码：**nlserverconfig -internalpassword**
 
 >[!IMPORTANT]
 >
->要使用&#x200B;**Internal**&#x200B;标识符登录，您需要事先定义口令。 如需详细信息，请参阅[此部分](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+>要使用&#x200B;**Internal**&#x200B;标识符登录，您需要事先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/campaign-server-configuration.md#internal-identifier)。
 
 >[!NOTE]
 >
->* 通常，您可以使用&#x200B;**config**&#x200B;命令而不是手工修改配置文件
->* 要获取参数的列表，请使用&#x200B;**-?** 参数： **nlserver config -?**
+>* 通常，您可以使用&#x200B;**config**&#x200B;命令，而不是手动修改配置文件
+>* 要获取参数的列表，请使用&#x200B;**-?** 参数： **nlserverconfig -?**
 >* 对于Oracle数据库，您不能指定帐户。 语法如下：
 
 >
