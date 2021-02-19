@@ -22,13 +22,13 @@ ht-degree: 11%
 >[!NOTE]
 >
 >* **core**&#x200B;文件名为&#x200B;**core.`<num>`**。
->* **gdb —— 必须在** 计算机上安装GNU调试器。
+>* **gdb — 必须在** 计算机上安装GNU调试程序。
 
 >
 
 
 
-Adobe Campaign技术支持可以要求您提供此&#x200B;**堆栈跟踪**。 要获得它，请在Linux中输入以下命令：
+Adobe Campaign技术支持可以要求您提供此&#x200B;**堆栈跟踪**。 要获取它，请在Linux中输入以下命令：
 
 ```
 su - neolane
@@ -55,7 +55,7 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-Adobe Campaign技术支持可能会要求您使用特定可执行文件运行此命令（由我们提供）。
+Adobe Campaign技术支持可能会要求您使用特定的可执行文件（由我们提供）运行此命令。
 
 在这种情况下，只需使用Adobe Campaign提供的可执行文件替换&#x200B;**nlserver**&#x200B;来运行以下命令：
 
