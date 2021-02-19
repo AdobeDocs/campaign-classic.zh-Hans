@@ -29,7 +29,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 * [Web分析外部帐户](#web-analytics-external-account)
 * [Facebook连接外部帐户](#facebook-connect-external-account)
 * [执行实例外部帐户](#execution-instance-external-account)
-* [Adobe Experience Cloud外部帐户](#adobe-experience-cloud-external-account)
+* [Adobe Experience Cloud 外部帐户](#adobe-experience-cloud-external-account)
 * [SFTP 外部帐户](#sftp-external-account)
 * [Adobe Experience Manager 外部帐户](#adobe-experience-manager-external-account)
 * [Amazon简单存储服务(S3)外部帐户](#amazon-simple-storage-service--s3--external-account)
@@ -38,7 +38,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 ## 创建外部帐户{#creating-an-external-account}
 
-要创建新外部帐户，请按照以下步骤操作。 详细设置取决于外部帐户类型。
+要创建新外部帐户，请执行以下步骤。 详细设置取决于外部帐户类型。
 
 1. 从活动&#x200B;**[!UICONTROL Explorer]**&#x200B;中，选择&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
@@ -50,7 +50,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 1. 输入&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Internal Name]**。
 1. 选择要创建的外部帐户&#x200B;**[!UICONTROL Type]**。
-1. 根据所选的外部帐户类型指定凭据，以配置对帐户的访问。
+1. 根据所选外部帐户类型指定凭据，配置对帐户的访问。
 
    所连接服务器的提供者通常会提供必需的信息。
 
@@ -61,7 +61,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 ## 弹回邮件外部帐户{#bounce-mails-external-account}
 
-**弹回邮件**&#x200B;外部帐户指定用于连接电子邮件服务的外部POP3帐户。 有关此外部帐户的详细信息，请参阅此[页面](../../workflow/using/inbound-emails.md)。
+**弹回邮件**&#x200B;外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 有关此外部帐户的详细信息，请参阅此[页面](../../workflow/using/inbound-emails.md)。
 
 为POP3访问配置的所有服务器都可用于接收返回邮件。
 
@@ -87,7 +87,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 * **[!UICONTROL Encryption]**
 
-   在&#x200B;**[!UICONTROL By default]**、**[!UICONTROL POP3 + STARTTLS]**、**[!UICONTROL POP3]**&#x200B;或&#x200B;**[!UICONTROL POP3S]**&#x200B;之间选择的加密类型。
+   在&#x200B;**[!UICONTROL By default]**、**[!UICONTROL POP3 + STARTTLS]**、**[!UICONTROL POP3]**&#x200B;或&#x200B;**[!UICONTROL POP3S]**&#x200B;之间选择的加密的类型。
 
 ## 路由外部帐户{#routing-external-account}
 
@@ -109,7 +109,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 ## FTP外部帐户{#ftp-external-account}
 
-FTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问。 要与外部系统（如用于文件传输的FTP服务器898）建立连接，您可以创建自己的外部帐户。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
+FTP外部帐户允许您配置和测试对Adobe Campaign之外的服务器的访问。 要与外部系统（如用于文件传输的FTP服务器898）建立连接，您可以创建自己的外部帐户。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
 
 为此，请在此外部帐户中指定用于建立与FTP服务器连接的地址和凭据
 
@@ -133,15 +133,15 @@ FTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问。
 
 * **[!UICONTROL Encryption]**
 
-   在&#x200B;**[!UICONTROL None]**&#x200B;或&#x200B;**[!UICONTROL SSL]**&#x200B;之间选择的加密类型。
+   在&#x200B;**[!UICONTROL None]**&#x200B;或&#x200B;**[!UICONTROL SSL]**&#x200B;之间选择的加密的类型。
 
 要了解这些凭据的位置，请参阅此[页面](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials)。
 
 ## 外部数据库外部帐户{#external-database-external-account}
 
-使用&#x200B;**外部外部帐户库**&#x200B;类型连接到外部数据库。 了解有关[此部分](../../installation/using/about-fda.md)中的联合数据访问(联合数据访问)选项的更多信息。
+使用&#x200B;**外部数据库**&#x200B;类型外部帐户连接到外部数据库。 了解有关[本节](../../installation/using/about-fda.md)中的联合数据访问(联合数据访问)选项的更多信息。
 
-与活动兼容的外部数据库列在[兼容性矩阵](../../rn/using/compatibility-matrix.md)中
+[兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出了与活动兼容的外部数据库
 
 ![](assets/ext_account_11.png)
 
@@ -158,7 +158,7 @@ FTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问。
 
 ## Web分析外部帐户{#web-analytics-external-account}
 
-**[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]**&#x200B;外部帐户允许您以区段形式将数据从Adobe Analytics转发到Adobe Campaign。 相反，它会通过Adobe Campaign向Adobe Analytics-数据连接器发送电子邮件活动的指标和属性。
+**[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]**&#x200B;外部帐户允许您以区段形式将数据从Adobe Analytics转发到Adobe Campaign。 相反，它会通过Adobe Campaign将电子邮件活动的指示符和属性发送到Adobe Analytics — 数据连接器。
 
 ![](assets/ext_account_10.png)
 
@@ -184,13 +184,13 @@ FTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问。
 
    您的Facebook应用程序的应用程序机密。
 
-如果选择由此实例模式托管，则“安全Canvas URL”需要粘贴到Facebook上的&#x200B;**Facebook Web Games(https)**&#x200B;字段
+如果选择了由此实例模式托管的Canvas URL，则需要将“安全”粘贴到Facebook上的&#x200B;**Facebook Web Games(https)**&#x200B;字段
 
 要了解这些凭据的位置，请参阅此[页面](https://developers.facebook.com/docs/facebook-login/access-tokens)。
 
 ## 执行实例外部帐户{#execution-instance-external-account}
 
-如果您有分解的架构，则需要指定链接到执行实例的控制实例并连接它们。 事务性消息模板部署到执行实例
+如果您有一个分解的架构，您需要指定链接到该控制实例的执行实例并连接它们。 事务性消息模板部署到执行实例
 
 ![](assets/ext_account_13.png)
 
@@ -200,7 +200,7 @@ FTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问。
 
 * **[!UICONTROL Account]**
 
-   帐户的名称，必须与操作符文件夹中定义的消息中心代理匹配。
+   帐户名称必须与在运算符文件夹中定义的消息中心代理匹配。
 
 * **[!UICONTROL Password]**
 
@@ -208,7 +208,7 @@ FTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问。
 
 有关此配置的详细信息，请参阅此[页面](../../message-center/using/creating-a-shared-connection.md#control-instance)。
 
-## Adobe Experience Cloud外部帐户{#adobe-experience-cloud-external-account}
+## Adobe Experience Cloud 外部帐户 {#adobe-experience-cloud-external-account}
 
 要使用Adobe ID连接到Adobe Campaign控制台，必须配置&#x200B;**[!UICONTROL Adobe Experience Cloud (MAC)]**&#x200B;外部帐户。
 
@@ -236,25 +236,25 @@ FTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问。
 
 * **[!UICONTROL IMS organization ID]**
 
-   IMS组织的ID。 要查找您的组织ID，请参阅此[页面](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html)（**在哪里可以找到我的IMS组织ID?**）。
+   您的IMS组织的ID。 要查找您的组织ID，请参阅此[页](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html)（**在哪里可以找到我的IMS组织ID?**）。
 
 * **[!UICONTROL Association mask]**
 
-   允许在企业仪表板中与Adobe Campaign中的组同步的配置名称的语法。
+   允许Enterprise仪表板中的配置名称与Adobe Campaign中的组同步的语法。
 
 * **[!UICONTROL Server]**
 
-   您的Adobe Experience Cloud实例的URL。
+   Adobe Experience Cloud实例的URL。
 
 * **[!UICONTROL Tenant]**
 
-   你的Adobe Experience Cloud租户的名字。
+   您的Adobe Experience Cloud租户的名称。
 
 有关此配置的详细信息，请参阅此[页面](../../integrations/using/configuring-ims.md)。
 
 ## SFTP 外部帐户{#sftp-external-account}
 
-SFTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问。 要与外部系统（如用于文件传输的SFTP）建立连接，您可以创建自己的外部帐户。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
+SFTP外部帐户允许您配置和测试对Adobe Campaign之外的服务器的访问。 要设置与外部系统（如用于文件传输的SFTP）的连接，您可以创建自己的外部帐户。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
 
 ![](assets/ext_account_4.png)
 
@@ -268,7 +268,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问�
 
 * **[!UICONTROL Account]**
 
-   用于连接到SFTP服务器的帐户名称。
+   用于连接到SFTP服务器的帐户名。
 
 * **[!UICONTROL Password]**
 
@@ -276,7 +276,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问�
 
 ## Adobe Experience Manager 外部帐户{#adobe-experience-manager-external-account}
 
-**[!UICONTROL AEM (AEM instance)]**&#x200B;外部帐户允许您直接在Adobe Experience Manager管理电子邮件投放和表单的内容。
+**[!UICONTROL AEM (AEM instance)]**&#x200B;外部帐户允许您直接在Adobe Experience Manager中管理电子邮件投放以及表单的内容。
 
 ![](assets/ext_account_5.png)
 
@@ -286,7 +286,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问�
 
 * **[!UICONTROL Port]**
 
-   用于连接到Adobe Experience Manager创作实例的帐户名称。
+   用于连接到Adobe Experience Manager创作实例的帐户名。
 
 * **[!UICONTROL Password]**
 
@@ -296,7 +296,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外服务器的访问�
 
 ## Amazon简单存储服务(S3)外部帐户{#amazon-simple-storage-service--s3--external-account}
 
-Amazon简单存储服务(S3)连接器可用于将数据导入或导出到Adobe Campaign。 可以在工作流活动中设置。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
+Amazon Simple 存储 Service(S3)连接器可用于将数据导入或导出到Adobe Campaign。 可以在工作流活动中设置。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
 
 ![](assets/ext_account_3.png)
 
@@ -316,7 +316,7 @@ Amazon简单存储服务(S3)连接器可用于将数据导入或导出到Adobe C
 
 * **[!UICONTROL Secret access key to AWS]**
 
-   要了解在何处找到AWS的秘密访问密钥，请参阅此[页面](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
+   要了解在何处查找您的AWS秘密访问密钥，请参阅此[页面](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
 
 * **[!UICONTROL AWS Region]**
 
@@ -324,19 +324,19 @@ Amazon简单存储服务(S3)连接器可用于将数据导入或导出到Adobe C
 
 * **[!UICONTROL Use server side encryption]**&#x200B;复选框允许您以S3加密模式存储文件。
 
-要了解在何处查找访问密钥ID和秘密访问密钥，请参阅AmazonWeb服务[文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
+要了解在何处查找访问密钥ID和秘密访问密钥，请参阅Amazon Web服务[文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
 
 ## Microsoft Dynamics CRM外部帐户{#microsoft-dynamics-crm-external-account}
 
 **[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户允许您将Microsoft Dynamics数据导入并导出到Adobe Campaign。
 
-了解有关活动的更多信息——此[页面](../../platform/using/crm-ms-dynamics.md)中的Microsoft Dynamics CRM连接器。
+了解有关活动的更多信息 — 此[页面](../../platform/using/crm-ms-dynamics.md)中的Microsoft Dynamics CRM连接器。
 
 >[!NOTE]
 >
-> **[!UICONTROL On-premise]** 现在 **[!UICONTROL Office 365]** 已弃用部署类型。[了解详情](../../rn/using/deprecated-features.md)。
+> **[!UICONTROL On-premise]** 和部 **[!UICONTROL Office 365]** 署类型现已弃用。[了解详情](../../rn/using/deprecated-features.md)。
 
-使用&#x200B;**[!UICONTROL Web API]**&#x200B;部署类型和&#x200B;**[!UICONTROL Password credentials]**&#x200B;身份验证，您需要提供以下详细信息：
+对于&#x200B;**[!UICONTROL Web API]**&#x200B;部署类型和&#x200B;**[!UICONTROL Password credentials]**&#x200B;身份验证，您需要提供以下详细信息：
 
 ![](assets/ext_account_14.png)
 
@@ -350,13 +350,13 @@ Amazon简单存储服务(S3)连接器可用于将数据导入或导出到Adobe C
 
 * **[!UICONTROL Client identifier]**
 
-   客户端ID，可从&#x200B;**[!UICONTROL Update your code]**&#x200B;类别&#x200B;**[!UICONTROL Client ID]**&#x200B;字段的Microsoft Azure管理门户中找到。
+   可从&#x200B;**[!UICONTROL Update your code]**&#x200B;类别&#x200B;**[!UICONTROL Client ID]**&#x200B;字段的Microsoft Azure管理门户中找到的客户端ID。
 
 * **[!UICONTROL CRM version]**
 
    **[!UICONTROL Dynamics CRM 2007]**、**[!UICONTROL Dynamics CRM 2015]**&#x200B;或&#x200B;**[!UICONTROL Dynamics CRM 2016]**&#x200B;之间的CRM版本。
 
-使用&#x200B;**[!UICONTROL Web API]**&#x200B;部署类型和&#x200B;**[!UICONTROL Certificate]**&#x200B;身份验证，您需要提供以下详细信息：
+对于&#x200B;**[!UICONTROL Web API]**&#x200B;部署类型和&#x200B;**[!UICONTROL Certificate]**&#x200B;身份验证，您需要提供以下详细信息：
 
 ![](assets/ext_account_22.png)
 
@@ -366,7 +366,7 @@ Amazon简单存储服务(S3)连接器可用于将数据导入或导出到Adobe C
 
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
-   已编码为Base64的私钥
+   已编码到Base64的私钥
 
 * **[!UICONTROL Custom Key identifier]**
 
@@ -374,7 +374,7 @@ Amazon简单存储服务(S3)连接器可用于将数据导入或导出到Adobe C
 
 * **[!UICONTROL Client identifier]**
 
-   客户端ID，可从&#x200B;**[!UICONTROL Update your code]**&#x200B;类别&#x200B;**[!UICONTROL Client ID]**&#x200B;字段的Microsoft Azure管理门户中找到。
+   可从&#x200B;**[!UICONTROL Update your code]**&#x200B;类别&#x200B;**[!UICONTROL Client ID]**&#x200B;字段的Microsoft Azure管理门户中找到的客户端ID。
 
 * **[!UICONTROL CRM version]**
 
@@ -388,7 +388,7 @@ Amazon简单存储服务(S3)连接器可用于将数据导入或导出到Adobe C
 
 ![](assets/ext_account_17.png)
 
-要配置Salesforce CRM外部帐户以与Adobe Campaign配合使用，您需要提供以下详细信息：
+要配置Salesforce CRM外部帐户以与Adobe Campaign一起使用，您需要提供以下详细信息：
 
 * **[!UICONTROL Account]**
 
@@ -396,7 +396,7 @@ Amazon简单存储服务(S3)连接器可用于将数据导入或导出到Adobe C
 
 * **[!UICONTROL Password]**
 
-   用于登录Salesforce CRM的口令。
+   用于登录Salesforce CRM的密码。
 
 * **[!UICONTROL Client identifier]**
 
