@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # 过滤重复的收件人 {#filtering-duplicated-recipients}
 
-在此示例中，我们要过滤在投放中出现两次或两次以上的收件人，以恢复重复的用户档案。
+在此示例中，我们要过滤在投放中显示两次或两次以上的收件人，以恢复重复的用户档案。
 
 要创建此示例，请应用以下步骤：
 
@@ -26,11 +26,11 @@ ht-degree: 4%
 
    ![](assets/query_recipients_1.png)
 
-1. 为目标日志中存在的收件人定义以下筛选器条件。 在&#x200B;**收件人**&#x200B;列中选择&#x200B;**表达式投放日志(broadlog)**，在&#x200B;**运算符**&#x200B;列中选择&#x200B;**存在如**。
+1. 定义以下筛选器条件以目标收件人日志中存在的筛选器条件。 在&#x200B;**收件人**&#x200B;列中选择&#x200B;**表达式投放日志(broadlog)**，在&#x200B;**运算符**&#x200B;列中选择&#x200B;**存在，如**。
 
    ![](assets/query_recipients_2.png)
 
-1. 定义以下筛选条件以目标投放。 在“表达式”列中选择&#x200B;**[!UICONTROL Internal name]**，在“运算符”列中选择&#x200B;**[!UICONTROL equal to]**。
+1. 定义以下筛选器条件以目标投放。 在“表达式”列中选择&#x200B;**[!UICONTROL Internal name]**，在“运算符”列中选择&#x200B;**[!UICONTROL equal to]**。
 1. 在值列中，添加目标投放的内部名称。
 
    ![](assets/query_recipients_3.png)
