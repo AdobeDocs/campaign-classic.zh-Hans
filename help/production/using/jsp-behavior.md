@@ -28,4 +28,4 @@ rm -r work/
 nlserver start web
 ```
 
-下次连接时，将重新生成&#x200B;**jsp**&#x200B;作业。
+下次连接时将重新生成&#x200B;**jsp**&#x200B;作业。
