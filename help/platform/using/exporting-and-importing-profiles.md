@@ -23,7 +23,7 @@ ht-degree: 28%
 
 ## 使用工作流{#use-workflows}
 
-导出和导入在通过导入和导出工作流执行的专用模板中进行配置。 它们可以根据时间表自动重复，例如用于在多个信息系统之间自动交换数据。[了解详情](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
+导出和导入在通过导入和导出工作流执行的专用模板中配置。 它们可以根据时间表自动重复，例如用于在多个信息系统之间自动交换数据。[了解详情](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
 如有必要，可通过下面描述的&#x200B;**[!UICONTROL Generic imports and exports]**&#x200B;功能创建临时导入或导出作业。
 
@@ -36,8 +36,8 @@ ht-degree: 28%
 
 ## 教程视频{#import-profiles-video}
 
-此视频介绍如何以Adobe Campaign导入用户档案，以便偶尔导入。
+此视频介绍如何在Adobe Campaign中导入用户档案，以便偶尔导入。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供其他Campaign Classic操作方法视频。[
+其他Campaign Classic操作视频[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)可用。
