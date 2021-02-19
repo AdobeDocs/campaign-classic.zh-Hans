@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # 隐私数据保护规定{#general-data-protection-regulation-gdpr}
 
-下面详述的工作流默认情况下随&#x200B;**隐私数据保护规定**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[文章](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)。
+默认情况下，下面详述的工作流随&#x200B;**隐私数据保护规定**&#x200B;模块一起安装。 有关本模块的详细信息，请参阅本[文章](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)。
 
 <table> 
  <tbody> 
@@ -29,17 +29,17 @@ ht-degree: 10%
   <tr> 
    <td> <span class="uicontrol">收集隐私请求</span> <br /> </td> 
    <td> <span class="uicontrol">collectPrivacyRequests</span> <br /> </td> 
-   <td> 此工作流生成存储在Adobe Campaign中的收件人数据，并在隐私请求的屏幕中提供下载。<br /> </td> 
+   <td> 此工作流会生成存储在Adobe Campaign中的收件人数据，并使其可在隐私请求的屏幕中进行下载。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">删除隐私请求数据</span> <br /> </td> 
    <td> <span class="uicontrol">deletePrivacyRequestsData</span> <br /> </td> 
-   <td> 此工作流将删除收件人中存储的Adobe Campaign数据。<br /> </td> 
+   <td> 此工作流将删除存储在Adobe Campaign中的收件人数据。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">隐私请求清理</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPrivacyRequests</span> <br /> </td> 
-   <td> 此工作流会删除90天以前的访问请求文件。<br /> </td> 
+   <td> 此工作流会清除90天以前的访问请求文件。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
