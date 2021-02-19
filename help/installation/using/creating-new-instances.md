@@ -23,7 +23,7 @@ ht-degree: 10%
 
 1. 声明新实例
 
-   转到&#x200B;**[!UICONTROL Tools > Advanced > Declare a new instance...]**&#x200B;开始向导。
+   转到&#x200B;**[!UICONTROL Tools > Advanced > Declare a new instance...]**&#x200B;以开始向导。
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
