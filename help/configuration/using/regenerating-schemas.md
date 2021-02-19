@@ -17,13 +17,13 @@ ht-degree: 6%
 
 # 重新生成模式{#regenerating-schemas}
 
-修改模式并保存修改时，将自动生成扩展模式。 但是，您可能需要手动重新生成模式以应用修改。 操作步骤：
+当您修改模式并保存修改时，会自动生成扩展模式。 但是，您可能需要手动重新生成模式以应用修改。 操作步骤：
 
-1. 选择需要重新生成的模式。
+1. 选择要再生的模式。
 1. 右键单击并选择&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]**。
 1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以确认并启动进程。
 
-然后，您可以在“预览”和“文档”选项卡中检查生成模式的结构。 有关详细信息，请参阅[原则](../../configuration/using/data-schemas.md#principles)部分。
+然后，您可以在“预览”和“文档”选项卡中检查生成的模式的结构。 有关详细信息，请参阅[原则](../../configuration/using/data-schemas.md#principles)部分。
 
 >[!NOTE]
 >
@@ -31,4 +31,4 @@ ht-degree: 6%
 >
 >**nlserver config -postupgrade -instance:&#39;&lt;instance_name>&#39; -force**
 >
->然后，必须重新启动Adobe Campaign应用程序服务器，并断开／重新连接至客户端控制台。
+>然后，必须重新启动Adobe Campaign应用程序服务器，并断开/重新连接到客户端控制台。
