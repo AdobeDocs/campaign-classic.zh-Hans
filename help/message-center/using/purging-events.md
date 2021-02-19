@@ -17,9 +17,9 @@ ht-degree: 6%
 
 # 清除事件{#purging-events}
 
-您可以使用[部署向导](../../production/using/database-cleanup-workflow.md#deployment-wizard)配置数据在数据库中存储的时间。
+可以使用[部署向导](../../production/using/database-cleanup-workflow.md#deployment-wizard)配置数据在数据库中存储的时间。
 
-事件清除由[数据库清除工作流](../../production/using/database-cleanup-workflow.md)自动执行。 此工作流会清除在控制实例上归档的执行实例和事件上接收和存储的事件。
+事件清除由[数据库清理工作流](../../production/using/database-cleanup-workflow.md)自动执行。 此工作流会清除在控制实例上存档的执行实例和事件上接收和存储的事件。
 
 根据需要使用箭头更改清除设置。
 
@@ -31,4 +31,4 @@ ht-degree: 6%
 
 ![](assets/messagecenter_delete_events_002.png)
 
-有关数据库清理工作流程的详细信息，请参阅[此部分](../../production/using/database-cleanup-workflow.md)。
+有关数据库清理工作流的详细信息，请参阅[此部分](../../production/using/database-cleanup-workflow.md)。
