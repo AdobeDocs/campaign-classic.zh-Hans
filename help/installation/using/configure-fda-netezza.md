@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 配置访问Netezza
-description: 了解如何在联合数据访问配置访问Netezza
+title: 配置对Netezza的访问
+description: 了解如何在联合数据访问中配置对Netezza的访问
 audience: platform
 content-type: reference
 topic-tags: connectors
@@ -15,21 +15,21 @@ ht-degree: 0%
 ---
 
 
-# 配置对Netezza{#configure-access-to-netezza}的访问
+# 配置对Netezza {#configure-access-to-netezza}的访问
 
-使用活动[联合数据访问](../../installation/using/about-fda.md)(联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置访问Netezza。
+使用活动 [联合数据访问](../../installation/using/about-fda.md)(联合数据访问)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对Netezza的访问。
 
 1. 安装和配置[Netezza驱动程序](#netezza-config)
-1. 将Netezza[外部帐户](#netezza-external)配置为活动
+1. 在活动中配置Netezza [外部帐户](#netezza-external)
 
 ## Netezza配置{#netezza-config}
 
-在联合数据访问下连接到Netezza外部数据库需要在Adobe Campaign服务器下面进行其他配置：
+在联合数据访问中连接到Netezza外部库需要Adobe Campaign服务器上以下其他配置：
 
 1. 根据您使用的操作系统，为Netezza安装ODBC驱动程序：
 
-   * **nz-linuxclient-v7.2.0.0.tar.** gzfor Linux。选择与您的操作系统（linux或linux64）对应的文件夹，并开始unpack命令。 您可以保留默认建议在存储库中执行的安装：&quot;/usr/local/nz&quot;。
-   * **nz-winclient-v7.2.0.0.** zippfor Windows解压缩文件并开始与操作系统对应的可执行脚本：nzodbcsetup.exe或nzodbcsetup64.exe。 按照向导说明完成驱动程序的安装。
+   * **nz-linuxclient-v7.2.0.0.tar.** gzfor Linux。选择与您的操作系统（linux或linux64）对应的文件夹，并开始unpack命令。 您可以保留在默认情况下建议的存储库中执行的安装：&quot;/usr/local/nz&quot;。
+   * **nz-winclient-v7.2.0.0.** zipfor Windows解压缩文件并开始与您的操作系统对应的可执行脚本：nzodbcsetup.exe或nzodbcsetup64.exe。 按照向导说明完成驱动程序的安装。
 
 1. 配置ODBC驱动程序。 配置可以在标准文件中执行：**/etc/odbc.ini**&#x200B;用于常规参数，**/etc/odbcinst.ini**&#x200B;用于声明驱动程序。
 
@@ -65,11 +65,11 @@ ht-degree: 0%
 
 1. 指定环境服务器的Adobe Campaign变量：
 
-   * **LD_LIBRARY_PATH**:/usr/local/nz/lib和/usr/local/nz/lib64。“/usr/local/nz”与安装驱动程序时默认提供的安装存储库相对应。 您需要在此指定已为安装选择的存储库。
+   * **LD_LIBRARY_PATH**:/usr/local/nz/lib和/usr/local/nz/lib64。“/usr/local/nz”对应于安装驱动程序时默认提供的安装存储库。 您需要在此指定为安装选择的存储库。
    * **ODBCINI**:odbc.ini文件的位置(例如/etc/odbc.ini)。
-   * **NZ_ODBC_INI_PATH**:odbc.ini文件的位置。Netezza还要求使用odbc.ini文件的第二个变量。
+   * **NZ_ODBC_INI_PATH**:odbc.ini文件的位置。Netezza还要求使用odbc.ini文件使用第二个变量。
 
-## Netezza外部帐户{#netezza-external}
+## Netezza 外部帐户 {#netezza-external}
 
 netezza外部帐户允许您将活动实例连接到Netezza外部数据库。
 
@@ -93,4 +93,4 @@ netezza外部帐户允许您将活动实例连接到Netezza外部数据库。
 >
 >不考虑对包含自动生成的主键的模式执行的操作。
 >
->该表将在模式中定义的第一个索引上使用&#x200B;**Organize on**&#x200B;子句。 由于此子句限制为带有Netezza的1到4列，因此此索引不能包含4列以上。
+>该表将在模式中定义的第一个索引上使用&#x200B;**Organize on**&#x200B;子句。 由于此子句在Netezza中限制为1到4列，因此此索引不能包含4列以上。
