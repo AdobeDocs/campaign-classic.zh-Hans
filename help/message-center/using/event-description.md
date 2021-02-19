@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: 消息中心事件说明
-description: 进一步了解交易消息事件
+description: 了解有关交易消息传递事件的更多信息
 audience: message-center
 content-type: reference
 topic-tags: introduction
@@ -19,25 +19,25 @@ ht-degree: 0%
 
 ## 关于事务消息数据模型{#about-transactional-messaging-datamodel}
 
-事务消息传递依赖于Adobe Campaign数据模型，并使用两个额外的单独表。 这些[表](../../configuration/using/data-model-description.md#message-center-module)、**NmsRtEvent**&#x200B;和&#x200B;**NmsBatchEvent**&#x200B;包含相同的字段，使您能够管理实时事件和批次事件。
+事务消息传递依赖于Adobe Campaign数据模型，并使用两个额外的单独表。 这些[表](../../configuration/using/data-model-description.md#message-center-module)、**NmsRtEvent**&#x200B;和&#x200B;**NmsBatchEvent**&#x200B;包含相同的字段，并允许您管理实时事件和批次事件。
 
 ## SOAP方法{#soap-methods}
 
 本节详细介绍与事务性消息模块模式关联的SOAP方法。
 
-两个&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法链接到两个&#x200B;**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;数据化。 它是决定事件是“批”还是“实时”类型的信息系统。
+两个&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法链接到两个&#x200B;**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;数据表。 它是决定事件是“批”还是“实时”类型的信息系统。
 
-* **通** 过PushEvent，您可以在消息中插入单个事件,
+* **PushEvent** 允许您在消息中插入单个事件,
 * **PushEvent** 允许您在消息中插入一系列事件。
 
-访问这两种方法的WSDL路径为：
+用于访问这两种方法的WSDL路径为：
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** rtEvent访问实时类型模式。
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** batchEvent访问批处理类型模式。
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** rtEven访问实时类型模式。
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** batchEven用于访问批处理类型模式。
 
-这两种方法都包含一个用于登录事务消息模块的&#x200B;**`<urn:sessiontoken>`**&#x200B;元素。 我们建议通过可信IP地址使用标识方法。 要检索会话令牌，请执行登录SOAP调用，然后执行获取令牌和注销。 对多个RT调用使用相同的令牌。 本节中包括的示例使用的是建议的会话令牌方法。
+这两种方法都包含用于登录到事务消息模块的&#x200B;**`<urn:sessiontoken>`**&#x200B;元素。 我们建议通过可信IP地址使用标识方法。 要检索会话令牌，请执行登录SOAP调用，然后执行获取令牌和注销。 对多个RT调用使用相同的令牌。 本节包含的示例使用的是建议的会话令牌方法。
 
-如果您使用的是负载平衡服务器，则可以使用用户／密码身份验证（在RT消息级别）。 示例:
+如果您使用的是负载平衡服务器，则可以使用用户/密码身份验证（在RT消息级别）。 示例:
 
 ```
 <PushEvent xmlns="urn:nms:rtEvent">
@@ -51,7 +51,7 @@ ht-degree: 0%
 </PushEvent>
 ```
 
-**PushEvent**&#x200B;方法由包含事件的&#x200B;**`<urn:domevent>`**&#x200B;参数组成。
+**PushEvent**&#x200B;方法由包含该事件的&#x200B;**`<urn:domevent>`**&#x200B;参数组成。
 
 **PushEvents**&#x200B;方法由包含事件的&#x200B;**`<urn:domeventcollection>`**&#x200B;参数组成。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果调用&#x200B;**PushEvents**&#x200B;方法，我们需要添加父XML元素以符合标准XML。 此XML元素将框架事件中包含的各种&#x200B;**`<rtevent>`**&#x200B;元素。
+>如果调用&#x200B;**PushEvents**&#x200B;方法，则需要添加父XML元素以符合标准XML。 此XML元素将框架事件中包含的各种&#x200B;**`<rtevent>`**&#x200B;元素。
 
 使用PushEvents的示例：
 
@@ -103,13 +103,13 @@ ht-degree: 0%
 </urn:PushEvents>
 ```
 
-**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素具有一组属性以及一个必需的子元素：**`<ctx>`**，用于集成消息数据。
+**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素具有一组属性以及一个必需的子元素：**`<ctx>`**&#x200B;用于集成消息数据。
 
 >[!NOTE]
 >
->**`<batchevent>`**&#x200B;元素允许您将事件添加到“batch”队列。 **`<rtevent>`**&#x200B;将事件添加到“实时”队列。
+>**`<batchevent>`**&#x200B;元素允许您将事件添加到“batch”队列。 **`<rtevent>`**&#x200B;将事件添加到“real time”队列。
 
-**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素的必需属性为@type和@email。 @type的值必须与配置列表时定义的分项执行实例值相同。 此值允许您定义要在投放期间链接到事件内容的模板。
+**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素的必需属性为@type和@email。 值@type必须与配置列表时定义的分项执行实例值相同。 通过此值，您可以定义要在投放期间链接到事件内容的模板。
 
 `<rtevent> configuration example:`
 
@@ -117,11 +117,11 @@ ht-degree: 0%
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-在此示例中，提供了两个渠道:电子邮件地址和手机号码。 **whishedChannel**&#x200B;允许您选择将渠道转换为消息时要使用的事件。 “0”值对应于电子邮件渠道、“1”值对应于移动渠道等。
+在此示例中，提供了两个渠道:电子邮件地址和手机号码。 **whistChannel**&#x200B;允许您选择将渠道转换为消息时要使用的事件。 “0”值对应于电子邮件渠道，“1”值对应于移动渠道等。
 
-如果要推迟事件投放，请添加&#x200B;**[!UICONTROL scheduled]**&#x200B;字段，后跟首选日期。 事件将在此日期转换为消息。
+如果希望推迟事件投放，请添加&#x200B;**[!UICONTROL scheduled]**&#x200B;字段，后跟首选日期。 事件将在此日期转换为消息。
 
-我们建议用数字值填写@whishedChannel和@emailFormat属性。 链接数值和标签的函数表在数据模式说明中。
+我们建议用数值填@wishedChannel和@emailFormat属性。 链接数值和标签的函数表位于数据模式说明中。
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->优化消息中包含的XML节点数和大小，以避免在投放期间超载服务器。
+>必须优化消息中包含的XML节点的数量和大小，以避免在投放期间服务器过载。
 
 数据示例：
 
@@ -156,13 +156,13 @@ ht-degree: 0%
 
 ## SOAP调用{#information-returned-by-the-soap-call}返回的信息
 
-当Adobe Campaign收到事件时，其生成唯一返回ID。 这是事件的存档版本的ID。
+当它收到事件时，Adobe Campaign会生成唯一的返回ID。 这是事件的存档版本的ID。
 
 >[!IMPORTANT]
 >
->在接收SOAP调用时，Adobe Campaign验证电子邮件地址格式。 如果电子邮件地址格式不正确，则返回错误。
+>当接收SOAP调用时，Adobe Campaign验证电子邮件地址格式。 如果电子邮件地址格式不正确，则返回错误。
 
-* 事件处理成功时，方法返回的标识符示例：
+* 当事件处理成功时，方法返回的标识符示例：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -174,11 +174,11 @@ ht-degree: 0%
    </SOAP-ENV:Envelope>
    ```
 
-如果返回标识符的值严格大于零，则表示事件已以Adobe Campaign成功存档。
+如果返回标识符的值严格大于零，则表示事件已在Adobe Campaign中成功存档。
 
 但是，如果事件无法处理，该方法将返回错误消息或等于零的值。
 
-* 处理事件示例，当查询不包含登录名或指定的运算符没有所需权限时失败：
+* 处理事件示例，当查询不包含登录名或指定的运算符没有所需权限时，该失败：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -192,7 +192,7 @@ ht-degree: 0%
    </SOAP-ENV:Envelope>
    ```
 
-* 由于事件中的错误而失败的查询示例（XML分类未得到遵守）:
+* 由于查询中出错而失败的事件示例（XML分类未符合）：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -217,7 +217,7 @@ ht-degree: 0%
    </SOAP-ENV:Envelope>
    ```
 
-* 失败并返回零标识符的事件示例（方法名称错误）:
+* 失败并返回零标识符的事件示例（方法名称错误）：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
