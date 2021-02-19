@@ -37,9 +37,9 @@ ht-degree: 4%
 
 ### 执行延迟{#exec-delay}
 
-从20.2版本开始，在&#x200B;**[!UICONTROL JavaScript code]**&#x200B;和&#x200B;**[!UICONTROL Advanced JavaScript code]**&#x200B;活动中添加了执行延迟。 默认情况下，执行阶段不能超过1小时。 此延迟后，进程将中止，并显示错误消息，活动执行将失败。
+从20.2版本开始，已向&#x200B;**[!UICONTROL JavaScript code]**&#x200B;和&#x200B;**[!UICONTROL Advanced JavaScript code]**&#x200B;活动添加执行延迟。 默认情况下，执行阶段不能超过1小时。 在此延迟后，进程将中止，并显示错误消息，活动执行将失败。
 
-您可以在这些活动的&#x200B;**[!UICONTROL Stop execution after]**&#x200B;字段中更改此延迟。
+您可以在这些活动中可用的&#x200B;**[!UICONTROL Stop execution after]**&#x200B;字段中更改此延迟。
 
 要忽略此限制，您需要将值设置为&#x200B;**0**。
 
@@ -55,7 +55,7 @@ ht-degree: 4%
 
 ![](assets/advanced_javascript_code.png)
 
-* **[!UICONTROL First call]**:编辑器的第一个区域包含在第一次调用期间要执行的脚本。
+* **[!UICONTROL First call]**:编辑器的第一个区域包含要在第一次调用期间执行的脚本。
 * **[!UICONTROL Next calls]**:编辑器的第二个区域包含在下次调用期间执行的脚本。
 * **[!UICONTROL Transitions]**:您可以定义多个活动输出过渡。
-* **[!UICONTROL Schedule]**:通 **[!UICONTROL Schedule]** 过选项卡，您可以计划何时触发活动。
+* **[!UICONTROL Schedule]**:通 **[!UICONTROL Schedule]** 过选项卡可计划何时触发活动。
