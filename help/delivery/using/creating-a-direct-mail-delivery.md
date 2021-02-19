@@ -17,7 +17,7 @@ ht-degree: 17%
 
 # 创建直邮投放{#creating-a-direct-mail-delivery}
 
-要创建新的直邮投放，请按照以下步骤操作：
+要创建新的直邮投放，请执行以下步骤：
 
 >[!NOTE]
 >
@@ -28,5 +28,5 @@ ht-degree: 17%
 
    ![](assets/direct_mail.png)
 
-1. 用标签、代码和说明来识别投放。 有关详细信息，请参阅[此部分](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)
-1. 单击&#x200B;**继续**&#x200B;确认此信息并显示消息配置窗口。
+1. 用标签、代码和说明识别投放。 有关详细信息，请参阅[此部分](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)
+1. 单击&#x200B;**继续**&#x200B;以确认此信息并显示消息配置窗口。
