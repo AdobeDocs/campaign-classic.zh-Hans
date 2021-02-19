@@ -23,12 +23,12 @@ value:==帮助
 
 ## 属性{#attributes-16}
 
-* @applicableIf（字符串）
-* @desc（字符串）
-* @enabledIf（字符串）
-* @img（字符串）
+* @applicableIf(string)
+* @desc(string)
+* @enabledIf(string)
+* @img(string)
 * @label(string)
-* @name（字符串）
+* @name(string)
 * @value(string)
 
 ## 父项{#parents-16}
@@ -46,12 +46,12 @@ value:==帮助
 ## 属性描述{#attribute-description-16}
 
 * **applicableIf(string)**:此属性允许您使明细列表值成为可选值。它接收XTK表达式。
-* **desc(string)**:明细列表值的描述。
-* **enabledIf（字符串）**:激活明细列表值的条件。
-* **img(string)**:链接到“明细列表:image_name”表单中的命名空间的图像。映像必须导入到应用程序服务器上。
-* **label(string)**:明细列表值的标签。
+* **desc(string**):明细列表值的描述。
+* **enabledIf（字符串）**:用于激活明细列表值的条件。
+* **img(string)**:链接到“命名空间:image_name”表单中明细列表的图像。映像必须导入到应用程序服务器上。
+* **label(string**):明细列表值的标签。
 * **name(string)**:明细列表值的内部名称。
-* **value(string)**:明细列表值的值。值类型根据明细列表类型定义。 如果明细列表为字符串类型，则只能包含字符串类型值。
+* **value(string)**:明细列表值。值类型根据明细列表类型定义。 如果明细列表为字符串类型，则只能包含字符串类型值。
 
 ## 示例{#examples-13}
 
