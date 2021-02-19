@@ -17,19 +17,19 @@ ht-degree: 2%
 
 # Web 应用程序跟踪退出{#web-application-tracking-opt-out}
 
-Adobe Campaign允许您通过cookie或网络信标停止跟踪退出行为跟踪的最终用户的网络行为。 该功能包括显示横幅以向最终用户显示该选项的功能；您可以将这些横幅添加到web应用程序或登陆页。
+Adobe Campaign使您能够停止通过cookie或网络信标跟踪退出行为跟踪的最终用户的Web行为。 该功能包括显示横幅以向最终用户显示该选项的功能；您可以将这些横幅添加到web应用程序或登陆页中。
 
-如果最终用户通过cookie或网络信标退出行为跟踪，则该信息将通过JavaScript API传输到Adobe Campaign跟踪服务器。 请注意，有些地区可能要求客户在向最终用户提供选择退出服务之前（或有其他法律要求），客户有责任遵守适用法律。
+如果最终用户通过cookie或网络信标选择退出行为跟踪，则该信息会通过JavaScript API传输至Adobe Campaign跟踪服务器。 请注意，某些地区可能要求客户在提供选择退出服务（或有其他法律要求）之前向最终用户演示选择加入，客户有责任遵守适用法律。
 
 >[!NOTE]
 >
->当脚本始终遵循[安全和隐私清单](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中所述的准则时。
+>当脚本始终遵循[安全和隐私检查清单](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中描述的准则时。
 
 ## 配置横幅{#configuring-the-banner-}
 
-要在Web 应用程序或登陆页中显示横幅，需要进行配置。
+要在Web 应用程序或登陆页中显示横幅，需要配置。
 
-Adobe Campaign提供的横幅示例必须适应您的需求。 此横幅版本显示为位于内容模型文件夹中的个性化块。 请参见[此页面](../../delivery/using/personalization-blocks.md)。
+Adobe Campaign会随样本横幅提供，您必须根据自己的需求进行调整。 此横幅版本显示为位于内容模型文件夹中的个性化块。 请参见[此页面](../../delivery/using/personalization-blocks.md)。
 
 >[!IMPORTANT]
 >
@@ -40,11 +40,11 @@ Adobe Campaign提供的横幅示例必须适应您的需求。 此横幅版本�
 如果Web 跟踪已激活，您可以：
 
 * 没有横幅。
-* 在每个页面上手动配置横幅：选中此选项，并在页面属性的每个页面中选择横幅。
+* 在每个页面上手动配置横幅：选中此选项，然后在页面属性的每个页面中选择横幅。
 
    ![](assets/pageproperties.png)
 
-* 自动向所有页面添加横幅：直接在Web 应用程序属性中选择横幅。
+* 自动向所有页面添加横幅：直接在“Web 应用程序”属性中选择横幅。
 
    ![](assets/optoutconfig.png)
 
@@ -64,13 +64,13 @@ Adobe Campaign提供的横幅示例必须适应您的需求。 此横幅版本�
       
 ```
 
-您必须将&#x200B;**Please insert your message here**&#x200B;替换为包含跟踪信息的块。 此替换应在与退出横幅相关的新个性化块中执行。
+您必须将&#x200B;**Please insert your message here**&#x200B;替换为包含跟踪信息的块。 此替换应在与选择退出横幅相关的新个性化基块中执行。
 
-横幅是通过特定CSS交付的。 但是，在创建和配置网页时，可以覆盖样式。 请参见[此页面](../../web/using/content-editor-interface.md)。
+横幅是通过特定CSS交付的。 但是，您可以在创建和配置网页时覆盖样式。 请参见[此页面](../../web/using/content-editor-interface.md)。
 
 ## 使用API {#setting-the-opt-out-cookie-using-api}设置退出Cookie
 
-Adobe Campaign通过API提供，它允许您管理cookie值和检索用户首选项。
+Adobe Campaign是通过API提供的，这些API允许您管理Cookie值和检索用户首选项。
 
 Cookie名称为&#x200B;**acoptout**。 常见值有：
 
@@ -78,22 +78,22 @@ Cookie名称为&#x200B;**acoptout**。 常见值有：
 * 1:用户已禁止Web 跟踪
 * null:用户尚未选择，但允许Web 跟踪，因为它是默认值
 
-可用于自定义横幅的客户端API包括：
+用于自定义横幅的可用客户端API有：
 
-* **NL.ClientWebTracking.allow()**:设置退出Cookie值以允许Web 跟踪。Web 跟踪默认为允许。
+* **NL.ClientWebTracking.allow()**:设置退出Cookie值以允许Web 跟踪。默认情况下允许Web 跟踪。
 * **NL.ClientWebTracking.ordion()**:设置退出Cookie值以禁止Web 跟踪。Web 跟踪需要禁止用户输入。
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**:用户单击“接受”或“拒绝”按钮后，关闭退出Cookie横幅。(在单击事件冒泡阶段)
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**:在用户单击“接受”或“拒绝”按钮后关闭退出Cookie横幅。(在单击事件冒泡阶段)
 
-   bannerDomElt {DOMElement}需要删除的cookie横幅的根DOM元素
+   bannerDomElt {DOMElement}需要删除的Cookie横幅的根DOM元素
 
 * **NL.ClientWebTracking.hasUserPrefs()**:如果用户已选择其Web 跟踪首选项，则返回true。
 * **NL.ClientWebTracking.getUserPrefs()**:返回定义用户首选项的退出Cookie值。
 
 如果必须编写JSSP，则可以使用服务器端API:
 
-* **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**:为要插入JSSP页面的退出横幅生成标记
+* **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**:生成要插入JSSP页面的退出横幅的标记
 
-   **escapeJs {Boolean}**:当需要转义生成的标记以在JavaScript中使用时，为true。
+   **escapeJs {Boolean}**:当需要转义生成的标记以在JavaScript内使用时，为true。
 
    它返回需要在页面中打印的退出横幅标记的HTML。
 
@@ -103,13 +103,13 @@ Cookie名称为&#x200B;**acoptout**。 常见值有：
 
    管理员已选择使用Web 跟踪退出横幅时将调用此代码。
 
-   如果用户尚未选择是否要跟踪，则应显示横幅。
+   如果用户尚未选择是否要跟踪，应显示横幅。
 
 * **NL.ServerWebTracking.renderOptOutBanner(escapeJs)**
 
-   通过将退出横幅插入JSSP页面来呈现标记。 它在Jssp中按&lt;% %>的方式调用
+   通过将退出横幅插入JSSP页面来呈现标记。 在Jssp中，它按&lt;% %>之间的方式调用
 
-   **escapeJs {Boolean}**:当需要转义生成的标记以在JavaScript内使用时为true
+   **escapeJs {Boolean}**:当需要转义以在JavaScript内使用生成的标记时为true
 
 JSSP示例：
 
