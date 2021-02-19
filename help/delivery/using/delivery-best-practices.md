@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 活动投放最佳实践
+title: 活动 投放最佳做法
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
@@ -16,7 +16,7 @@ ht-degree: 24%
 
 # 投放最佳实践 {#delivery-best-practices}
 
-了解与投放设计和与Adobe Campaign一起发送相关的最佳实践。 使用以下链接浏览主题并查找指南。
+了解与投放设计和与Adobe Campaign一起发送相关的最佳实践。 使用以下链接浏览主题并查找指导。
 
 <table>
 <tr>
@@ -71,7 +71,7 @@ ht-degree: 24%
     </a>
     </div>
     <p>
-    <em>目标人群是</em>
+    <em>目标人群是关键</em>
     <p>
   </td>
    <td>
