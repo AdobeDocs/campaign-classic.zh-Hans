@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
 workflow-type: tm+mt
 source-wordcount: '1525'
 ht-degree: 11%
@@ -147,7 +147,7 @@ FTP外部帐户允许您配置和测试对Adobe Campaign之外的服务器的访
 
 外部帐户配置设置取决于数据库引擎。 请通过以下部分了解更多信息：
 
-* 配置对[Azure synapse](../../installation/using/configure-fda-synapse.md)的访问
+* 配置对[Azure Synapse](../../installation/using/configure-fda-synapse.md)的访问
 * 配置对[Hadoop](../../installation/using/configure-fda-hadoop.md)的访问
 * 配置对[Oracle](../../installation/using/configure-fda-oracle.md)的访问
 * 配置对[Netezza](../../installation/using/configure-fda-netezza.md)的访问
@@ -334,7 +334,7 @@ Amazon Simple 存储 Service(S3)连接器可用于将数据导入或导出到Ado
 
 >[!NOTE]
 >
-> **[!UICONTROL On-premise]** 和部 **[!UICONTROL Office 365]** 署类型现已弃用。[了解详情](../../rn/using/deprecated-features.md)。
+> **[!UICONTROL On-premise]** 和部 **[!UICONTROL Office 365]** 署类型现在已弃用。[了解详情](../../rn/using/deprecated-features.md)。
 
 对于&#x200B;**[!UICONTROL Web API]**&#x200B;部署类型和&#x200B;**[!UICONTROL Password credentials]**&#x200B;身份验证，您需要提供以下详细信息：
 
@@ -408,7 +408,7 @@ Amazon Simple 存储 Service(S3)连接器可用于将数据导入或导出到Ado
 
 * **[!UICONTROL API version]**
 
-   **[!UICONTROL Version 37]**、**[!UICONTROL Version 21]**&#x200B;或&#x200B;**[!UICONTROL Version 15]**&#x200B;之间的API版本。
+   **[!UICONTROL Version 49]**、**[!UICONTROL Version 37]**、**[!UICONTROL Version 21]**&#x200B;或&#x200B;**[!UICONTROL Version 15]**&#x200B;之间的API版本。
 
 对于此外部帐户，您需要使用配置向导配置Salesforce CRM。
 
