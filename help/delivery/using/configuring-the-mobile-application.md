@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: a1bd8dc2b5946b74cb880eff934e3b35cadfb2d2
+source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 7%
+source-wordcount: '789'
+ht-degree: 4%
 
 ---
 
@@ -32,10 +32,6 @@ ht-degree: 7%
 1. 转到&#x200B;**[!UICONTROL Administration > Platform > External accounts]**。
 1. 选择&#x200B;**[!UICONTROL iOS routing]**&#x200B;外部帐户。
 1. 在&#x200B;**[!UICONTROL Connector]**&#x200B;选项卡中，使用以下URL填写&#x200B;**[!UICONTROL Access URL of the connector]**&#x200B;字段：```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
-
-   >[!NOTE]
-   >
-   > 从 Campaign 20.3 版本开始，弃用 iOS 旧版二进制连接器。如果您使用的是此连接器，则需要相应地调整实施。[了解详情](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)
 
    ![](assets/nmac_connectors.png)
 
