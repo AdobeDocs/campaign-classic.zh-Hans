@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
+source-git-commit: 29801740c10dc182bdb5f00114298d04385a3e1b
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '617'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ ajouter screenshot -->
   </tr> 
   <tr> 
    <td> 由服务提供商<br />考虑 </td> 
-   <td> SMS服务提供商收到投放。<br /> </td> 
+   <td> SMS服务提供商收到投放。<br /> 对于托管或混合安装，如果您已升级到增强 <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">MTA</a>，则消息已从活动成功中继到增强MTA。</td> 
   </tr> 
   <tr> 
    <td> 在移动设备上接收<br /> </td> 
