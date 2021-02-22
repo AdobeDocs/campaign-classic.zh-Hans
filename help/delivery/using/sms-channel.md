@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
 workflow-type: tm+mt
-source-wordcount: '3149'
+source-wordcount: '3148'
 ht-degree: 20%
 
 ---
@@ -33,7 +33,7 @@ Adobe Campaign允许您对SMS消息执行大量个性化投放。 收件人用�
 
 1. 指定连接器和消息类型的外部帐户。
 
-   请注意，从20.2版开始，将弃用以下连接器：NetSize、通用SMPP（支持二进制模式的SMPP版本3.4）、Sybase365(SAP SMS 365)、CLX Communications、Tele2、O2和iOS。 已弃用的功能仍然可用，但是不会进一步增强，也不支持它们。 有关详细信息，请参见此 [ 页面](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html)。
+   请注意，从20.2版开始，将弃用以下连接器：通用SMPP（支持二进制模式的SMPP版本3.4）、Sybase365(SAP SMS 365)、CLX Communications、Tele2、O2和iOS。 已弃用的功能仍然可用，但是不会进一步增强，也不支持它们。 有关详细信息，请参见此 [ 页面](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html)。
 
 1. 引用此外部帐户的投放模板。
 
