@@ -9,10 +9,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 99%
+source-wordcount: '1717'
+ht-degree: 94%
 
 ---
 
@@ -45,6 +45,14 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <td><strong>功能</strong></td>
    <td><strong>替换</strong></td>
   </tr>
+    <tr>
+  <td>技术交付性监测报告<br></td>
+   <td><p>从活动 21.1版本开始，已弃用技术交付性监视报告。</p>
+   <p>如果需要，您可以通过电子邮件每天接收此报告，直到功能删除日期为止。 要请求它，请打开特定的<a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">支持案例</a>，并指定实例的名称和要将报告发送到的电子邮件地址。</p> 
+   <p>Adobe建议您与交付性团队合作，以定义最佳工具来监控实例交付性能。</p>
+  <p><em>目标删除日期：2021年底</em></p>
+  </td>
+ </tr>
   <tr>
   <td>CRM 连接器<br></td>
    <td><p>从活动 20.3版本开始，以下CRM连接器在活动中已弃用：</p>
@@ -82,7 +90,6 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   <td>SMS 连接器<br></td>
   <td><p> 从 Campaign 20.2 版本开始，弃用以下 SMS 连接器。<p>
    <ul>
-   <li>NetSize</li>
    <li>通用 SMPP（支持二进制模式的 SMPP 版本 3.4）</li>
    <li>Sybase365 (SAP SMS 365)</li>
    <li>CLX 通信</li>
