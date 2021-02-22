@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 12%
@@ -24,8 +24,9 @@ _2020 年 12 月 23 日_
 >[!CAUTION]
 >
 > * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须进行升级，才能在&#x200B;**2021 年 3 月 31 日**&#x200B;之后连接到 Campaign。
->
-> * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
+   >
+   > 
+* 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
 
 
 * 连接协议已经更新，以遵循新的 IMS 认证机制。
@@ -39,7 +40,7 @@ _2020年5月6日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.1.2 - 版本 9123{#release-20-1-2-build-9123}
 
-_2020年3月13日_
+_2020 年 3 月 13 日_
 
 * 修复了阻止在Red Hat 7服务器上部署版本的问题。 (NEO-23332)
 
@@ -137,7 +138,7 @@ _2020年2月17日_
 
 * 修复了负工作流ID时增量查询活动的问题。 (NEO-19779)
 
-* 修复了通过Netezza 查询连接器运行联合数据访问时的编码问题。 (NEO-19594)
+* 修复了通过查询联合数据访问连接器运行Netezza时的编码问题。 (NEO-19594)
 
 * 修复了在&#x200B;**Web下载**&#x200B;工作流POST活动中使用事件方法时导致错误的问题。
 
