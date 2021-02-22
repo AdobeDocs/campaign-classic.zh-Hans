@@ -7,11 +7,11 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 设计、规划、执行、管理和优化跨渠道营销活动，以实现较高的营销投资回报。
 solution: Campaign Classic
 sub-product: adobe campaign classic
-type: Documentation
+type: 文档
 translation-type: tm+mt
-source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
+source-git-commit: 4030eb1cf9aa78a10daffe9ea849aa205660e359
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2351'
 ht-degree: 97%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 97%
       + [Gold Standard 发行说明](rn/using/gold-standard.md)
       + [Gold Standard 兼容性矩阵](rn/using/compatibility-matrix-gs.md)
    + 之前版本 {#previous-releases}
+      + [版本 20.3](rn/using/release--20-3.md)
       + [版本 20.2](rn/using/release--20-2.md)
       + [版本 20.1](rn/using/release--20-1.md)
       + [版本 19.2](rn/using/release--19-2.md)
