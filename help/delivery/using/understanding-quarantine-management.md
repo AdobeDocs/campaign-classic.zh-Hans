@@ -70,9 +70,9 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 >隔离数的增加是正常的效果，与数据库的&quot;磨损&quot;有关。 例如，如果将电子邮件地址的使用期视为三年，而收件人表每年增加50%，则隔离的增加可以按以下方式计算：
 >
 >年底1:(1*0.33)/(1+0.5)=22%。
-第 2 年年末：((1.22*0.33)+0.33)/(1.5+0.75)=32.5%。
+>第 2 年年末：((1.22*0.33)+0.33)/(1.5+0.75)=32.5%。
 
-### 在投放报告{#identifying-quarantined-addresses-in-delivery-reports}中标识隔离地址
+### 在投放报告中标识隔离地址{#identifying-quarantined-addresses-in-delivery-reports}
 
 以下报告提供有关隔离中地址的信息：
 
@@ -86,7 +86,7 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 
 您可以查找平台的所有投放(**[!UICONTROL Home page > Reports]**)或特定投放的此信息。 您还可以创建自定义报告并选择要显示的信息。
 
-### 标识收件人{#identifying-quarantined-addresses-for-a-recipient}的隔离地址
+### 标识收件人的隔离地址{#identifying-quarantined-addresses-for-a-recipient}
 
 您可以查找任何收件人的电子邮件地址状态。 要执行此操作，请选择收件人用户档案并单击&#x200B;**[!UICONTROL Deliveries]**&#x200B;选项卡。 对于该收件人的所有投放，您可以了解该地址是否失败、是否在分析期间被隔离等。 对于每个文件夹，您只能显示其电子邮件地址处于隔离的收件人。 为此，请使用&#x200B;**[!UICONTROL Quarantined email address]**&#x200B;应用程序筛选器。
 
@@ -113,7 +113,8 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 然后，它们的状态将更改为&#x200B;**[!UICONTROL Valid]**。
 
 >[!IMPORTANT]
-地址为&#x200B;**[!UICONTROL Quarantine]**&#x200B;或&#x200B;**[!UICONTROL On denylist]**&#x200B;的收件人将永远不会被删除，即使他们收到了电子邮件。
+>
+>地址为&#x200B;**[!UICONTROL Quarantine]**&#x200B;或&#x200B;**[!UICONTROL On denylist]**&#x200B;的收件人将永远不会被删除，即使他们收到了电子邮件。
 
 您可以修改错误数以及两个错误之间的句点。 为此，请在部署向导(**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)中更改相应的设置。 有关部署向导的详细信息，请参阅[此部分](../../installation/using/deploying-an-instance.md)。
 
@@ -152,7 +153,8 @@ Adobe Campaign根据投放故障类型和在错误消息限定期间分配的原
 **对于iOS — 二进制连接器**
 
 >[!NOTE]
-从 Campaign 20.3 版本开始，弃用 iOS 旧版二进制连接器。如果您使用的是此连接器，则需要相应地调整实施。[了解详情](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)
+>
+>从 Campaign 20.3 版本开始，弃用 iOS 旧版二进制连接器。如果您使用的是此连接器，则需要相应地调整实施。[了解详情](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)
 
 对于每个通知，Adobe Campaign从APNs服务器接收同步和异步错误。 对于以下同步错误，Adobe Campaign会生成软错误：
 
@@ -269,10 +271,11 @@ HTTP/V2协议允许每个推送投放的直接反馈和状态。 如果使用HTT
 在投放分析期间，从目标中排除的所有设备将自动添加到&#x200B;**excludeLogAppSubRcp**&#x200B;表中。
 
 >[!NOTE]
-对于使用Baidu连接器的客户，以下是不同类型的错误：
-* 投放开头的连接问题：失败类型&#x200B;**[!UICONTROL Undefined]**，失败原因&#x200B;**[!UICONTROL Unreachable]**，重试。
-* 在投放期间连接丢失：软错误，失败原因&#x200B;**[!UICONTROL Refused]**，重试。
-* Baidu在发送过程中返回的同步错误：硬错误，失败原因&#x200B;**[!UICONTROL Refused]**，未执行重试。
+>
+>对于使用Baidu连接器的客户，以下是不同类型的错误：
+>* 投放开头的连接问题：失败类型&#x200B;**[!UICONTROL Undefined]**，失败原因&#x200B;**[!UICONTROL Unreachable]**，重试。
+>* 在投放期间连接丢失：软错误，失败原因&#x200B;**[!UICONTROL Refused]**，重试。
+>* Baidu在发送过程中返回的同步错误：硬错误，失败原因&#x200B;**[!UICONTROL Refused]**，未执行重试。
 
 Adobe Campaign每10分钟联系Baidu服务器，以检索已发送消息的状态并更新广播。 如果消息声明为已发送，则广播中消息的状态将设置为&#x200B;**[!UICONTROL Received]**。 如果Baidu声明了错误，则状态将设置为&#x200B;**[!UICONTROL Failed]**。
 
@@ -492,7 +495,8 @@ Android V2隔离机制与Android V1使用相同的进程，对于订阅和排除
 SMS消息的隔离机制与一般过程在全局上相同。 请参阅[关于隔离](#about-quarantines)。 SMS的特性列于下面。
 
 >[!NOTE]
-**[!UICONTROL Delivery log qualification]**&#x200B;表不适用于&#x200B;**扩展通用SMPP**&#x200B;连接器。
+>
+>**[!UICONTROL Delivery log qualification]**&#x200B;表不适用于&#x200B;**扩展通用SMPP**&#x200B;连接器。
 
 <table> 
  <tbody> 
@@ -550,8 +554,9 @@ SMPP连接器从SR（状态报告）消息中检索数据，该消息使用常�
 在限定新类型的错误之前，默认情况下，故障原因始终设置为&#x200B;**拒绝**。
 
 >[!NOTE]
-失败类型和失败原因与电子邮件相同。 请参阅[投放故障类型和原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
-在投放日志资格表中，要求提供商提供状态和错误代码列表，以设置正确的故障类型和故障原因。
+>
+>失败类型和失败原因与电子邮件相同。 请参阅[投放故障类型和原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
+>在投放日志资格表中，要求提供商提供状态和错误代码列表，以设置正确的故障类型和故障原因。
 
 生成的消息示例：
 

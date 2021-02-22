@@ -50,6 +50,7 @@ ht-degree: 0%
       **iisreset /stop**
 
    * Adobe Campaign服务：**net stop nlserver6**
+
    >[!IMPORTANT]
    >
    >您还需要确保重定向服务器(webmdl)已停止，以便IIS使用的&#x200B;**nlsrvmod.dll**&#x200B;文件可替换为新版本。
@@ -172,10 +173,8 @@ ht-degree: 0%
 >
 >* 您的脚本可能称为&#x200B;**httpd**，而不是&#x200B;**apache**。
 >* 您必须执行此命令，直到您获得以下回复：
-
-   >
-   >   
-   此操作是Apache应用新库所必需的。
+>
+>   此操作是Apache应用新库所必需的。
 
 
 然后重新启动Apache:

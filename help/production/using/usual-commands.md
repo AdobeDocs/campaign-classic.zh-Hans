@@ -29,7 +29,6 @@ ht-degree: 3%
 >
 >* 无论如何，您都可以添加&#x200B;**-noconsole**&#x200B;参数，以删除在模块启动后显示的注释。
 >* 相反，您可以添加参数&#x200B;**-verbose**&#x200B;以显示详细信息。
-
 >
 
 
@@ -163,8 +162,6 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 >* 通常，您可以使用&#x200B;**config**&#x200B;命令，而不是手动修改配置文件
 >* 要获取参数的列表，请使用&#x200B;**-?** 参数： **nlserverconfig -?**
 >* 对于Oracle数据库，您不能指定帐户。 语法如下：
-
 >
->  
-nlserver config -setdblogin:Oracle:test6@dbserver
+>  nlserver config -setdblogin:Oracle:test6@dbserver
 

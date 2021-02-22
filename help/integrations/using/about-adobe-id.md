@@ -37,7 +37,6 @@ Adobe Identity Management系统(IMS)帮助管理员创建和管理用户对应�
 > * [活动 20.1.4](../../rn/using/release--20-1.md)
 > * [活动 19.2.4](../../rn/using/release--19-2.md)
 > * [活动 19.1.8](../../rn/using/release--19-1.md)
-
 >
 
 

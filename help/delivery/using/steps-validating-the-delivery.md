@@ -135,7 +135,6 @@ ht-degree: 5%
 >
 >* [更改批准模式](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode)中详细介绍了可用校验模式。
 >* [定义特定验证目标](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)中介绍了验证目标的配置。
-
 >
 
 
@@ -179,7 +178,7 @@ ht-degree: 5%
 * 通过&#x200B;**[!UICONTROL Keep the delivery code for the proof]**&#x200B;选项，可以为验证提供与其相关的投放所定义的相同的投放代码。 此代码在投放向导的第一步中指定。
 * 默认情况下，验证主题以“验证#”为前缀，其中#是验证的编号。 可以在&#x200B;**[!UICONTROL Label prefix]**&#x200B;字段中更改此前缀。
 
-## 类型{#validation-process-with-typologies}的验证过程
+## 类型的验证过程{#validation-process-with-typologies}
 
 在发送任何消息之前，您应分析活动以批准其内容和配置。 在分析阶段应用的检查规则在&#x200B;**类型**&#x200B;中定义。 默认情况下，对于电子邮件，分析涵盖以下几点：
 

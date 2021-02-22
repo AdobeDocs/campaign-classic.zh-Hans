@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ## 编辑窗体 {#editing-forms}
 
-### 更改表单{#changing-the-data-properties-for-a-form}的数据属性
+### 更改表单的数据属性{#changing-the-data-properties-for-a-form}
 
 可以将数据库字段与输入区域、单选按钮或复选框类型块链接。
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 
    ![](assets/dce_toolbar_formblock_edition.png)
 
-## 向按钮{#adding-an-action-to-a-button}添加操作
+## 向按钮添加操作{#adding-an-action-to-a-button}
 
 当用户单击按钮时，您可以定义关联的操作。 要执行此操作，请从下拉列表中选择要执行的操作。
 
@@ -137,7 +137,6 @@ ht-degree: 1%
 >* 新窗口(_blank)
 >* 当前窗口(_self)
 >* 默认浏览器行为
-
 >
 
 
@@ -160,7 +159,7 @@ ht-degree: 1%
 
 建议Web 应用程序的列表与&#x200B;**[!UICONTROL Resources > Online > Web Applications]**&#x200B;节点中的可用应用程序相对应。
 
-### 指向操作{#link-to-an-action}的链接
+### 指向操作的链接{#link-to-an-action}
 
 通过定义操作&#x200B;**的**&#x200B;链接选项，可在单击源元素时配置操作。
 
@@ -203,9 +202,8 @@ ht-degree: 1%
 >[!NOTE]
 >
 >* **删** 除图标：删除块及其所有内容。
-   >
-   >
-* **复** 制图标：重复块以及与块相关的所有样式。
+>
+>* **复** 制图标：重复块以及与块相关的所有样式。
 
 
 ## 管理图像和动画{#managing-images-and-animations}

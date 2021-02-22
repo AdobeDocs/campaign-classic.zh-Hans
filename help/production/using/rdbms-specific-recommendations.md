@@ -95,7 +95,6 @@ vacuum full nmsdelivery;
 >* **真空**&#x200B;和&#x200B;**重新索引**&#x200B;命令将锁定表，在执行维护时会暂停某些进程。
 >* 对于超大表（通常高于5 Gb），**真空完全**&#x200B;可能会变得非常低效，并且需要很长时间。 Adobe不建议将其用于&#x200B;**YyyNmsBroadLogXxx**&#x200B;表。
 >* 此维护操作可通过Adobe Campaign工作流使用&#x200B;**[!UICONTROL SQL]**&#x200B;活动来实现（有关详细信息，请参阅[此部分](../../workflow/using/architecture.md)）。 确保计划维护时间较短，不会与备份窗口相冲突。
-
 >
 
 

@@ -56,10 +56,10 @@ Campaign Classic:
 
 
 >[!CAUTION]
+>
 > 将Adobe Campaign与Microsoft Dynamics连接时，您无法：
 > * 安装可以更改CRM行为并导致与Adobe Campaign兼容的插件
 > * 选择多个明细列表
-
 >
 
 

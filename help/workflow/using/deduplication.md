@@ -109,7 +109,7 @@ ht-degree: 10%
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## 示例：在投放{#example--identify-the-duplicates-before-a-delivery}之前识别重复
+## 示例：在投放之前识别重复{#example--identify-the-duplicates-before-a-delivery}
 
 在以下示例中，外部重复数据删除涉及三个查询的合并。
 

@@ -21,7 +21,6 @@ ht-degree: 2%
 >
 >* 对[消息中心技术工作流](../../message-center/using/technical-workflows.md)在控件或执行实例上使用的模式进行的模式扩展需要在Adobe Campaign事务消息模块使用的其他实例上进行复制。
 >* 控制实例和执行实例必须安装在不同的计算机上。 他们不能共享同一活动实例。
-
 >
 
 

@@ -176,7 +176,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_check_box_enum.png)
 
-## 示例：如果选中框{#example--assign-a-value-to-a-field-if-a-box-is-checked}，则为字段指定值
+## 示例：如果选中框，则为字段指定值{#example--assign-a-value-to-a-field-if-a-box-is-checked}
 
 我们希望在表单中插入一个复选框以发送维护请求，如下所示：
 
@@ -210,7 +210,7 @@ ht-degree: 1%
 
 单选按钮的配置方式与复选框类似（请参阅[添加复选框](#adding-checkboxes)）。 但是，如果未选择该选项，则不会分配任何值。 要使多个按钮相互依赖，即选择一个按钮自动取消选择其他按钮，它们必须存储在同一字段中。 如果它们未存储在数据库中，则必须使用相同的本地变量进行临时存储。 请参阅[响应存储字段](../../web/using/web-forms-answers.md#response-storage-fields)。
 
-### 添加按钮{#add-a-list-of-buttons}的列表
+### 添加按钮的列表{#add-a-list-of-buttons}
 
 要通过列表添加单选按钮，请转到页面编辑器工具栏中的&#x200B;**[!UICONTROL Selection controls>Multiple choice]**&#x200B;菜单。
 
@@ -381,7 +381,6 @@ Captcha将插入页面，并在可视下方放置一个输入字段。 这两个
 >* Adobe Campaign不控制上传的资源的大小或类型：因此，我们强烈建议仅对安全类型的内部网站站点使用上载字段。
 >* 如果多个服务器链接到该实例（负载平衡架构），您需要确保对Web表单的调用到达同一台服务器。
 >* 这些实施需要Adobe Campaign咨询团队的协助。
-
 >
 
 

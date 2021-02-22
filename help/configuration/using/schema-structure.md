@@ -168,7 +168,7 @@ ht-degree: 1%
 </srcSchema>
 ```
 
-### 映射Adobe Campaign/DBMS数据{#mapping-the-types-of-adobe-campaign-dbms-data}的类型
+### 映射Adobe Campaign/DBMS数据的类型{#mapping-the-types-of-adobe-campaign-dbms-data}
 
 下表列表了Adobe Campaign为不同数据库管理系统生成的数据类型的映射。
 
@@ -464,7 +464,7 @@ ht-degree: 1%
 <group label="Group2"/>
 ```
 
-## 使用XPath {#referencing-with-xpath}引用
+## 使用XPath引用 {#referencing-with-xpath}
 
 Adobe Campaign中使用XPath语言来引用属于数据模式的元素或属性。
 
@@ -486,7 +486,6 @@ XPath是一种语法，它允许您在XML文档的树中查找节点。
 >
 >* **location/@** city无效；请  **`[location/@city]`**
 >* **`[@email]`** 和 **@** emailare等效
-
 >
 
 
@@ -508,7 +507,7 @@ XPath是一种语法，它允许您在XML文档的树中查找节点。
 * **年(@created)**:返回“created”属性中包含的日期的年份。
 * **GetEmailDomain(@email)**:返回电子邮件地址的域。
 
-## 通过计算字符串{#building-a-string-via-the-compute-string}构建字符串
+## 通过计算字符串构建字符串{#building-a-string-via-the-compute-string}
 
 **计算字符串**&#x200B;是XPath表达式，用于在与该模式相关联的表中构造表示记录的字符串。 **计** 算字符串主要用于图形界面中显示所选记录的标签。
 

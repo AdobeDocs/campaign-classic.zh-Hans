@@ -342,7 +342,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 共享活动{#statistics-on-sharing-activities-1}的统计信息
+## 共享活动的统计信息{#statistics-on-sharing-activities-1}
 
 此报告基于&#x200B;**[!UICONTROL Delivery]**(nms:投放)、**[!UICONTROL Consolidated tracking]**(nms:trackingStats)和&#x200B;**[!UICONTROL Web tracking]**(nms:webTrackingLog)表。
 

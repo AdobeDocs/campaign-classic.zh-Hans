@@ -47,7 +47,6 @@ ht-degree: 9%
 >
 >* 它不得使用选项&#x200B;**[!UICONTROL Handle groupings (GROUP BY+HAVING)]**。
 >* 如果提取了元素集合，则这些字段的种子地址值将为空，除非选择了&#x200B;**[!UICONTROL Single row (expert user)]**&#x200B;选项。 如需详细信息，请参阅[此部分](../../platform/using/executing-export-jobs.md#step-7---data-formatting)。
-
 >
 
 
