@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 50%
+source-wordcount: '558'
+ht-degree: 47%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 50%
 
 您也可以使用专用的登录名/密码进行连接：
 
-1. 在 **[!UICONTROL login]** 字段中输入操作员帐户标识符。
+1. 在 **[!UICONTROL Login]** 字段中输入操作员帐户标识符。
 
    您的 Adobe Campaign 平台管理员会为您提供标识符。
 
@@ -41,9 +41,14 @@ ht-degree: 50%
 
    首次访问数据库时，您的密码是由管理员为您提供的。连接后，您可以通过&#x200B;**[!UICONTROL Tools > Change password...]**&#x200B;菜单更改密码。 [访问管理](../../platform/using/access-management.md)中提供了有关操作符和连接的详细信息。
 
-1. 单击&#x200B;**[!UICONTROL LOG IN]**&#x200B;进行确认。
+1. 单击&#x200B;**[!UICONTROL LOG IN]**&#x200B;进行确认。<!--You can also press the **Enter** key to launch connection.-->
 
 现在可以访问 [Adobe Campaign 工作区](../../platform/using/adobe-campaign-workspace.md)了。
+
+在&#x200B;**[!UICONTROL Sign in screen]**&#x200B;上提供了一些键盘快捷键：
+* 所有可操作项目都可通过&#x200B;**Tab**&#x200B;键（从上到下）或&#x200B;**Tab** + **Shift**&#x200B;键（从下到上）进行选择。
+* 要启动连接，还可以按&#x200B;**Enter**&#x200B;键。
+* 可以使用&#x200B;**Escape**&#x200B;键将&#x200B;**[!UICONTROL Login]**&#x200B;和&#x200B;**[!UICONTROL Password]**&#x200B;字段重置为上次成功的连接值。
 
 ## 设置连接 {#setting-up-connections}
 
@@ -101,5 +106,5 @@ ht-degree: 50%
 **相关主题**：
 
 * [Adobe Campaign帮助和支持选项](https://helpx.adobe.com/cn/campaign/kb/ac-support.html#acc-support)
-* [Adobe软件分发](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)
+* [Adobe Campaign软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Adobe Experience Cloud支持和专家会议](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
