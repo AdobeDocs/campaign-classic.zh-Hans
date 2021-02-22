@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 0%
+source-wordcount: '1166'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +50,6 @@ ht-degree: 0%
       **iisreset /stop**
 
    * Adobe Campaign服务：**net stop nlserver6**
-
    >[!IMPORTANT]
    >
    >您还需要确保重定向服务器(webmdl)已停止，以便IIS使用的&#x200B;**nlsrvmod.dll**&#x200B;文件可替换为新版本。
@@ -71,7 +70,7 @@ ht-degree: 0%
 
 1. 运行&#x200B;**setup.exe**。
 
-   要下载此文件，请使用您的用户凭据连接到[软件分发门户](https://experience.adobe.com/downloads)。 了解有关[本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中软件分发的更多信息。
+   要下载此文件，请使用您的用户凭据连接到[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 了解有关[本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中软件分发的更多信息。
 
 1. 选择安装模式：选择&#x200B;**[!UICONTROL Update or repair]**
 1. 单击 **[!UICONTROL Next]**。
@@ -125,7 +124,7 @@ ht-degree: 0%
 
 ### 获取更新的包{#obtain-updated-packages}
 
-开始:使用您的用户凭据连接到[软件分发门户](https://experience.adobe.com/downloads)。 了解有关[本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中软件分发的更多信息。
+开始:使用您的用户凭据连接到[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 了解有关[本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中软件分发的更多信息。
 
 文件为&#x200B;**nlserver6-v7-XXX.rpm**
 
@@ -173,8 +172,10 @@ ht-degree: 0%
 >
 >* 您的脚本可能称为&#x200B;**httpd**，而不是&#x200B;**apache**。
 >* 您必须执行此命令，直到您获得以下回复：
->
->   此操作是Apache应用新库所必需的。
+
+   >
+   >   
+   此操作是Apache应用新库所必需的。
 
 
 然后重新启动Apache:
