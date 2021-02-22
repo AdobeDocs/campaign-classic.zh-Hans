@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 51993e6f606132e425553da67687aca76e166dbd
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 100%
@@ -55,7 +55,7 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-作为 Gold Standard 用户，您无需采取任何操作，即可通过[最新 GA Gold Standard 内部版本](../../rn/using/gold-standard.md#gs-10)从 Gold Standard 升级中受益。[了解详情](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
+作为 Gold Standard 用户，您无需采取任何操作，即可通过[最新 GA Gold Standard 内部版本](../../rn/using/gold-standard.md#gs-11)从 Gold Standard 升级中受益。[了解详情](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
 
 >[!NOTE]
 >[GA 兼容性矩阵](../../rn/using/compatibility-matrix-gs.md)中提供了 Gold Standard 的兼容性矩阵。
