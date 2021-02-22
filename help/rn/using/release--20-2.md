@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
 workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ _2020 年 12 月 22 日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.2.3 - 版本 9182 {#release-20-2-3-build-9182}
 
-_2020 年 9 月 11 日_
+_2020年9月11日_
 
 * 修复了由于投放部分的单个错误函数造成内存过载而导致阻止投放准备的回归。(NEO-27346)
 * 修复了在重新发布 Web 应用程序之前关闭 Apache 和 Web 服务器的升级后问题。(NEO-27155)
@@ -61,7 +61,7 @@ _2020 年 9 月 11 日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.2.2 - 版本 9180 {#release-20-2-2-build-9180}
 
-_2020 年 7 月 22 日_
+_2020 年 22 月 7 日_
 
 * 修复了在禁用签名功能时跟踪无法正常工作的问题。(NEO-26411)
 * 修复了导致在应当允许个性化域中的未签名链接时将其阻止的问题。(NEO-25210)
