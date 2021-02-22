@@ -5,9 +5,8 @@ title: 配置管道
 description: 了解如何配置管道
 audience: integrations
 content-type: reference
-topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 531eb23ff8fe1b77c37a51e7f99921b0bc071f0f
+source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -43,13 +42,13 @@ ht-degree: 0%
 
 验证是必需的，因为管道托管在Adobe Experience Cloud中。
 它使用一对公钥和私钥。 此过程与用户/密码功能相同，但更安全。
-支持通过Adobe I/O Project对Marketing Cloud进行身份验证。
+支持通过Marketing Cloud项目进行身份验证。
 
 ## 第1步：创建/更新Adobe I/O项目{#creating-adobe-io-project}
 
-对于托管客户，您可以创建客户关怀票证，以便通过Adobe I/O技术帐户令牌为您的组织启用触发器集成。
+对于托管客户，您可以创建客户关怀票证，以便为您的组织启用Adobe I/O技术帐户令牌以进行触发器集成。
 
-对于内部部署客户，请参阅[为Adobe Experience Cloud Triggers配置Adobe I/O](../../integrations/using/configuring-adobe-io.md)页。 请注意，在将API添加到Adobe I/O凭据时，您需要选择&#x200B;**[!UICONTROL Adobe Analytics]**。
+对于内部部署客户，请参阅[为Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md)配置Adobe I/O页。 请注意，在向Adobe I/O凭据添加API时，您需要选择&#x200B;**[!UICONTROL Adobe Analytics]**。
 
 ## 第2步：配置NmsPipeline_Config管道选项{#configuring-nmspipeline}
 
