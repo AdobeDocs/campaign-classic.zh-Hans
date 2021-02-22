@@ -5,12 +5,11 @@ title: 为 Adobe Experience Cloud 触发器配置 Adobe I/O
 description: 了解如何为Adobe Experience Cloud Triggers配置Adobe I/O
 audience: integrations
 content-type: reference
-topic-tags: adobe-experience-manager
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c5c881d6919a8715e6588fb39793f562a16873bb
+source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 6%
@@ -22,7 +21,7 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->如果您使用的是通过身份验证进行触发器集成的旧版本，**您需要移至Adobe I/O，如下所述**。 旧版 oAuth 身份验证模式将于 2021 年 4 月 30 日停用。[了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>如果您使用的是通过身份验证进行触发器集成的旧版本，**您需要按如下所述移动到Adobe I/O。**&#x200B;旧版 oAuth 身份验证模式将于 2021 年 4 月 30 日停用。[了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
 >请注意，在移动到Adobe I/O期间，某些传入触发器可能会丢失。
 
@@ -35,7 +34,7 @@ ht-degree: 6%
 * 有效的&#x200B;**组织标识符**:Identity Management系统(IMS)组织标识符是Adobe Experience Cloud内的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
 * a **开发人员对您组织的访问**。  如果您需要请求IMS组织的系统管理员权限，请按照本页](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中详细的[过程为所有产品用户档案提供此访问权限。
 
-## 第1步：创建/更新Adobe I/O Project {#creating-adobe-io-project}
+## 第1步：创建/更新Adobe I/O项目{#creating-adobe-io-project}
 
 1. 访问Adobe I/O，并与IMS组织的系统管理员一起登录。
 
@@ -47,7 +46,7 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >如果您的客户端标识符为空，则可以直接在Adobe I/O中&#x200B;**[!UICONTROL Create a New project]**。
+   >如果您的客户端标识符为空，则可以直接&#x200B;**[!UICONTROL Create a New project]**&#x200B;使用Adobe I/O。
 
 1. 使用提取的客户端标识符标识现有项目。 查找具有与上一步提取的相同客户端标识符的现有项目。
 
@@ -103,7 +102,7 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 
 ## 第3步：更新流水线标记{#update-pipelined-tag}
 
-要更新[!DNL pipelined]标记，您需要将身份验证类型更新到配置文件&#x200B;**config-&lt; instance-name >.xml**&#x200B;中的Adobe I/O项目，如下所示：
+要更新[!DNL pipelined]标记，您需要将身份验证类型更新为配置文件&#x200B;**config-&lt; instance-name >.xml**&#x200B;中的Adobe I/O项目，如下所示：
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
