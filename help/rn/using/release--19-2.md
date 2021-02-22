@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 14%
@@ -24,8 +24,9 @@ _2020 年 12 月 23 日_
 >[!CAUTION]
 >
 > * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须进行升级，才能在&#x200B;**2021 年 3 月 31 日**&#x200B;之后连接到 Campaign。
->
-> * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
+   >
+   > 
+* 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
 
 
 
@@ -43,7 +44,7 @@ _2020年2月7日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.2 - 版本 9080 {#release-19-2-build-9080}
 
-_2019年12月2日_
+_2019 年 12 月 2 日_
 
 **新增功能**
 
@@ -118,7 +119,7 @@ _2019年12月2日_
 * 推送通知的内存消耗优化。
 * 为了优化性能和存储，对&#x200B;**logins.log**&#x200B;文件的处理已得到增强。 现在，该文件被拆分为多个文件，每天一个文件，最多保留365个文件。 [阅读更多](../../production/using/log-files.md)
 * Microsoft Dynamics CRM外部帐户现在可使用密码凭据（密码+用户名）或证书（私钥）进行配置。 [阅读更多](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
-* hadoop 联合数据访问连接器中增加了一些增强功能，以提高可靠性
+* hadoop联合数据访问连接器中增加了一些增强功能，以提高可靠性
 * 添加了一个特定的保护栏，以在允许在服务器上上传公共资源之前检查磁盘空间。
 * 已添加新的[活动选项](../../installation/using/configuring-campaign-options.md):
    * **WdbcKillSessionPolicy**&#x200B;配置选项可以影响所有工作流和PostgreSQL查询的&#x200B;**无条件停止**&#x200B;行为。
@@ -147,11 +148,11 @@ iOS SDK的内部版本1.0.26现已推出。 在此新版本中，我们添加了
 
 * 修复了&#x200B;**数据加载(RDBMS)**&#x200B;工作流活动中&#x200B;**添加链接表**&#x200B;字段为空时的崩溃问题。 (NEO-12213)
 * 修复了可能导致某些消息未被中间源服务器处理的问题。 (NEO-12395)
-* 修复了在Teradata中使用查询条带选项时数据库清理工作流中的问题。 (NEO-12399)
+* 修复了对Teradata使用查询条带选项时数据库清理工作流中的问题。 (NEO-12399)
 * 修复了影响投放分析（包括ne.jp域）的问题。 (NEO-12609)
 * 修复了与TLS更新上的SMS相关的问题，该问题暗示证书策略更具限制性。 这些更新可能导致在证书过期时市场营销和中间源服务器之间发生连接故障。 (NEO-17698)
 * 修复了在具有Vault身份验证的中间源环境中对外部帐户使用&#x200B;**测试连接**&#x200B;按钮时的问题。 (NEO-12722)
-* 修复了在查询使用日期函数时与联合数据访问 Hadoop连接的问题。 (NEO-12847)
+* 修复了在查询使用日期函数时与联合数据访问Hadoop连接的问题。 (NEO-12847)
 * 修复了在电子邮件编辑器中替换图像时出现的问题。 (NEO-13098)
 * 修复了可能导致已删除或移动到其他位置的文件夹出现升级后错误的问题。 (NEO-13118)
 * 修复了在LINE消息上使用&#x200B;**“按设备屏幕大小定义图像”**&#x200B;选项时图像显示的问题。 (NEO-13228)
