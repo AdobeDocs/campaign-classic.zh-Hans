@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: df7c27e763e7e0c02189ed972f33eb03ca2a915f
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '895'
 ht-degree: 2%
 
 ---
@@ -128,7 +128,7 @@ HTML源代码将插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
    >此块只能用于投放定位访客。
 
 * **[!UICONTROL Registration confirmation]** :插入一个链接，可启用该链接以确认订阅。
-* **[!UICONTROL Social network sharing links]** :插入一些按钮，使收件人能够与电子邮件客户端、Facebook、Twitter、Google +和LinkedIn共享指向镜像页面内容的链接(请参 [阅病毒式营销：转给朋友](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
+* **[!UICONTROL Social network sharing links]** :插入使收件人能够与电子邮件客户端、Facebook、Twitter和LinkedIn共享指向镜像页面内容的链接的按钮(请参 [阅病毒营销：转给朋友](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
 * **[!UICONTROL Style of content emails]** 和 **[!UICONTROL Notification style]** :生成使用预定义HTML样式设置电子邮件格式的代码。这些块必须插入投放的源代码（位于&#x200B;**[!UICONTROL ...]**&#x200B;部分）中的&#x200B;**`<style>...</style>`**&#x200B;标签中。
 * **[!UICONTROL Offer acceptance URL in unitary mode]** :插入一个URL，用于将“交互”优惠设 **[!UICONTROL Accepted]** 置为( [请参阅](../../interaction/using/offer-analysis-report.md)此部分)。
 
