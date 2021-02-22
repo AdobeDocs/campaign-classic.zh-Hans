@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: f39a84108c1f3327a469d5a230518652647ed63e
+source-git-commit: 2de8261feda6e64a84bd82e9fb71bc1fddf77113
 workflow-type: tm+mt
-source-wordcount: '7846'
+source-wordcount: '7929'
 ht-degree: 5%
 
 ---
@@ -32,6 +32,7 @@ Adobe Campaign的总体配置在安装目录&#x200B;**conf**&#x200B;目录的&#x
 * [dnsConfig](#dnsconfig)
 * [执行](#exec)
 * [htmlToPdf](#htmltopdf)
+* [ims](#ims)
 * [javaScript](#javascript)
 * [mailExchanger](#mailexchanger)
 * [模块](#module)
@@ -336,7 +337,7 @@ Adobe Campaign的总体配置在安装目录&#x200B;**conf**&#x200B;目录的&#x
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> 键入(明细列表)。 可能的值为“Oracle”、“MSSQL”(Microsoft SQL Server)、“PostgreSQL”(PostgreSQL， Greenplum)、“Teradata”、“DB2”、“MySQL”、“Netezza”、“AsterData”、“SAPHANA”(SAP HANA)、“RedShift”(AmazonRedshift), 'ODBC'(ODBC(Sybase ASE， Sybase IQ)), 'Relay'（HTTP中继到远程数据库）。<br /> </td> 
+   <td> 键入(明细列表)。 可能的值为“Oracle”、“MSSQL”(Microsoft SQL Server)、“PostgreSQL”(PostgreSQL， Greenplum)、“Teradata”、“DB2”、“MySQL”、“Netezza”、“AsterData”、“SAPHANA”(SAP HANA)、“RedShift”(Amazon)Redshift)、“ODBC”(ODBC(Sybase ASE，Sybase IQ))、“Relay”（HTTP中继到远程数据库）。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -637,6 +638,71 @@ Phantomjs的示例：
 ```
 phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:{outPdf}' '-post:{postFile}' '-url:{originUrl}' -sessiontoken:{sessiontoken} -format:{format} -orientation:{orientation} -marginTop:{marginTop} -marginLeft:{marginLeft} -marginRight:{marginRight} -marginBottom:{marginBottom}
 ```
+
+## ims {#ims}
+
+以下是&#x200B;**ims**&#x200B;节点的不同参数。 这是用于活动使用[IMS](../../integrations/using/about-adobe-id.md)连接到其他服务的配置。
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> 参数 </th> 
+   <th> 说明 </th> 
+   <th> 类型 </th> 
+   <th> 默认值 </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td> authIMSClientId<br /> </td> 
+   <td> 客户端ID<br /> </td> 
+   <td> 字符串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSClientSecret<br /> </td> 
+   <td> 密钥（在AES中加密）<br /> </td> 
+   <td> 字符串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSCode<br /> </td> 
+   <td> 授权码（在AES中加密）<br /> </td> 
+   <td> 字符串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSEndpoint<br /> </td> 
+   <td> IMS服务器URL<br /> </td> 
+   <td> 字符串<br /> </td> 
+   <td> 'https://ims-na1.adobelogin.com'<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAClientId<br /> </td> 
+   <td> 技术帐户客户端ID<br /> </td> 
+   <td> 字符串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAClientSecret<br /> </td> 
+   <td> 技术帐户密钥（在AES中加密）<br /> </td> 
+   <td> 字符串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAId<br /> </td> 
+   <td> 技术帐户ID<br /> </td> 
+   <td> 字符串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAPrivateKey<br /> </td> 
+   <td> 技术帐户私钥（在AES中加密）<br /> </td> 
+   <td> 字符串<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ## javaScript {#javascript}
 
