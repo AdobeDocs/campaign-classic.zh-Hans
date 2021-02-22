@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 1. 获取[服务器配置文件](../../installation/using/the-server-configuration-file.md)的最新版本。
 
-1. 下载最新版本。 [了解有关下载中心的更多信息](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)。
+1. [下载最新版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。[了解详情](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)。
 
 在开始生成升级之前，您还需要了解所有[有用的命令行](../../installation/using/command-lines.md):
 
@@ -163,7 +163,7 @@ ht-degree: 0%
 
 ### 升级Adobe Campaign Server应用程序
 
-1. 运行&#x200B;**Setup.exe**&#x200B;文件。 如果需要下载此文件，请访问[下载中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)。
+1. 运行&#x200B;**Setup.exe**&#x200B;文件。 如果需要下载此文件，请访问[下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。
 
 1. 选择安装模式：**更新**&#x200B;或&#x200B;**修复**。
 
@@ -365,8 +365,8 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 #### 在哪里找到代码？
 
 1. 内置代码存储在datakit文件夹的XML文件中。 查找与冲突对象匹配的XML文件。 示例：installationDirectory\datakit\nms\fra\form\recipient.xml
-1. 检索原始版本：通过[下载中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)或其他未升级的产品安装。
-1. 检索新版本：通过[下载中心](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)或客户安装的文件。
+1. 检索原始版本：通过[下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)或其他未升级的产品安装。
+1. 检索新版本：通过[下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)或客户安装的文件。
 1. 检索自定义版本：从活动客户端中检索对象的源代码。
 
 ### 如何进行差异比较？
