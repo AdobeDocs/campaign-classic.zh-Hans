@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 7%
@@ -158,6 +158,6 @@ ht-degree: 7%
 
 Adobe建议预览您的消息，以检查其个性化以及收件人如何看到您的投放。
 
-* 在“投放”向导中，**[!UICONTROL Preview]**&#x200B;子选项卡允许您视图收件人的每个内容的呈现。 个性化字段和内容的条件元素被替换为所选用户档案的相应信息。 [了解详情](../../delivery/using/defining-the-email-content.md#message-content)
+* 在投放向导中，**[!UICONTROL Preview]**&#x200B;子选项卡允许您视图收件人中每个内容的呈现。 个性化字段和内容的条件元素被替换为所选用户档案的相应信息。 [了解详情](../../delivery/using/defining-the-email-content.md#message-content)
 
 * 在每个预览期间执行自动防垃圾邮件检查。 在&#x200B;**[!UICONTROL Preview]**&#x200B;子选项卡中，检查[SpamAssassin](../../delivery/using/spamassassin.md)垃圾邮件评分。  单击&#x200B;**[!UICONTROL More...]**&#x200B;以进一步了解警告。  在执行此操作之前，请确保在Adobe Campaign应用程序服务器上正确安装和配置了SpamAssan。 [了解详情](../../installation/using/configuring-spamassassin.md)
