@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '3947'
-ht-degree: 98%
+source-wordcount: '4045'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,19 @@ ht-degree: 98%
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
-## 2021 年 2 月 {#feb-2021}
+## 2021 年 2 月 {#release-21.1}
+
+**21.1版本随附的文档更新**
+
+新的&#x200B;**电子邮件反馈服务**&#x200B;功能（私有测试版）在[此处](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)中有说明。
+
+**服务器配置文件**&#x200B;部分已更新为活动使用IMS连接到其他服务所需的配置参数。 [阅读更多](../../installation/using/the-server-configuration-file.md#ims)
+
+在投放状态列表下，**服务提供商**&#x200B;考虑的说明已更新：此状态现在也用于使用[电子邮件反馈服务](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)发送的电子邮件投放。 [阅读更多](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+
+新登录屏幕上可用于连接到Adobe Campaign的键盘快捷键现在有文档说明。 [阅读更多](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
+
+**其他更新**
 
 新增了一节，其中详细介绍了如何使用工作流执行A/B测试。 [阅读更多](../../delivery/using/get-started-a-b-testing.md)
 
@@ -100,7 +112,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 更新了已弃用和已删除的功能页面。[阅读更多](../../rn/using/deprecated-features.md)
 
 Gold Standard 版本的发行说明和兼容性矩阵现在可在专用部分中获取。
-[阅读更多](../../rn/using/gold-standard.md#gs-10)。
+[阅读更多](../../rn/using/gold-standard.md#gs-11)。
 
 最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成现已更改并移至 Adobe I/O。[阅读更多](../../integrations/using/configuring-adobe-io.md)
 
