@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 32db73de8308670dfd74d974072bd96b3a22fc31
+source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
 workflow-type: tm+mt
-source-wordcount: '8432'
+source-wordcount: '8458'
 ht-degree: 0%
 
 ---
@@ -477,7 +477,7 @@ Adobe Campaign Classic的KPI机制完全不同，因此此选项不可用。
 
 #### 短代码{#short-code}
 
-指示帐户的主短代码。 如果此帐户使用了多个短代码或短代码未知，请将此字段留空。
+指示帐户的主短代码。 如果此帐户使用了多个短代码，或者短代码未知，请将此字段留空。
 
 指定短代码对以下两个功能有帮助：
 
@@ -597,6 +597,12 @@ MTA将尝试使用列表中的第一个编码进行编码。 如果失败，它�
 如果选中此项，则连接不再安全，不应在生产中启用。
 
 它可用于调试或测试目的。
+
+您可以在三种不同的证书验证值之间进行选择：
+
+* 默认为完整认证检查（包括主机名）。
+* 跳过主机名验证。
+* 跳过证书验证。
 
 #### 绑定TON/NPI {#bind-ton-npi}
 
