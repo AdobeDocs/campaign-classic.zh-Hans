@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 151667637a12667f5eda1590e64e01de493be9ce
+source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 对象可以是：
 
-* *&quot;投放&quot;:当前投放（请参阅下文小节中的详细信息和限制）。
+* “投放”：当前投放（请参阅下文小节中的详细信息和限制）。
 * “提供者”：对于当前投放提供者/路由(nms:externalAccount)。
 * 额外的脚本对象：如果对象通过以下方式加载到上下文中：**属性** > **个性化** > **在执行上下文中添加对象**。
 * foreach循环的项：请参见下面的[Foreach](#<%@-foreach)部分。
