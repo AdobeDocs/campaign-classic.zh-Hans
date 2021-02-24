@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
+source-git-commit: 333d2221d4f86fe18232473385653ed8409adf54
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '526'
 ht-degree: 6%
 
 ---
@@ -96,9 +96,19 @@ ht-degree: 6%
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
->[!NOTE]
->
->应将私钥以base64 UTF-8格式进行编码。 在对新行进行编码之前，请记住从密钥中删除新行，但私钥除外。 私钥必须与用于创建集成的私钥相同。 要测试私钥的base64编码，可以使用[此网站](https://www.base64encode.org/)。
+私钥应以base64 UTF-8格式进行编码。 为实现此操作，请执行以下步骤：
+
+1. 使用在[步骤1中生成的私钥：创建/更新Adobe I/O项目部分](#creating-adobe-io-project)。 私钥必须与用于创建集成的私钥相同。
+
+1. 使用此[此网站](https://www.base64encode.org/)，将您的私钥复制粘贴到相应字段。
+
+   >[!NOTE]
+   >
+   >有时，在复制/粘贴私钥时，会自动添加额外的行。 请记住，在对私钥进行编码之前删除它。
+
+1. 单击 **[!UICONTROL Encode]**.
+
+1. 使用以base64 UTF-8格式编码的新生成的私钥运行上述详细命令。
 
 ## 第3步：更新流水线标记{#update-pipelined-tag}
 
