@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '88'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,5 @@ ht-degree: 0%
    在这种情况下，选择了模板B。
 
 1. 确定第三个投放的内容后，批准该目标和内容。
+
+您现在可以分析结果(请参阅[步骤8:分析结果](../../delivery/using/a-b-testing-uc-analyzing.md))。
