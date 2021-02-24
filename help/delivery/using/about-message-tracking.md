@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 8%
+source-wordcount: '685'
+ht-degree: 9%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 8%
 
 **跟踪链接个性化**
 
-Campaign Classic跟踪功能允许您在电子邮件中添加可进行个性化和支持跟踪的链接。 [了解详情](https://helpx.adobe.com/campaign/kb/tracking-personnalized-links.html)
+Campaign Classic跟踪功能允许您在电子邮件中添加可进行个性化和支持跟踪的链接。 [了解详情](../../delivery/using/tracking-personalized-links.md)
 
 **跟踪日志**
 
