@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '478'
 ht-degree: 11%
 
 ---
@@ -19,11 +19,14 @@ ht-degree: 11%
 
 对于每次投放，您可以跟踪邮件是否收到，以及邮件内容中插入的链接是否被点击。这样即可在目标投放行动实施后，跟踪收件人的行为。
 
+跟踪适用于消息，但Web跟踪允许您监视收件人浏览网站（访问的页面、购买）的方式。 Web跟踪的配置显示在[本节](../../configuration/using/about-web-tracking.md)中。
+
 >[!NOTE]
 >
->跟踪适用于消息，但Web跟踪允许您监视收件人浏览网站（访问的页面、购买）的方式。
->
->Web跟踪的配置显示在[本节](../../configuration/using/about-web-tracking.md)中。
+>电子邮件内容中包含个性化的链接需要跟踪特定的语法。 有关如何在可个性化的电子邮件中添加链接和支持跟踪的更多信息，请参阅[本节](../../delivery/using/tracking-personalized-links.md)。
+
+
+
 
 默认情况下，消息跟踪处于启用状态。 要对URL的跟踪方式进行个性化设置，请执行以下步骤：
 
