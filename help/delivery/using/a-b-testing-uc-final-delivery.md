@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
@@ -27,3 +27,5 @@ ht-degree: 0%
    ![](assets/ab_test_final_delivery.png)
 
 通过准备在过渡中指定的投放(通过&#x200B;**[!UICONTROL Javascript Code]**&#x200B;活动定义)，您随后可以批准该并开始发送，如下一步所述。
+
+您现在可以开始工作流(请参阅[步骤7:开始工作流](../../delivery/using/a-b-testing-uc-start-workflow.md))。
