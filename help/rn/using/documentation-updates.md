@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
+source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
 workflow-type: tm+mt
 source-wordcount: '4066'
 ht-degree: 95%
@@ -45,6 +45,8 @@ ht-degree: 95%
 
 **发送电子邮件**&#x200B;部分已重新组织，并用新子部分进行了澄清。 [阅读更多](../../delivery/using/sending-messages.md)
 
+添加了有关如何在电子邮件中添加可个性化链接和支持跟踪的信息。 [阅读更多](../../delivery/using/tracking-personalized-links.md)。
+
 ## 2021 年 1 月 {#jan-2021}
 
 **[!UICONTROL Fork]** 活动部分已使用最佳实践进行了扩充。[阅读更多](../../workflow/using/fork.md)
@@ -62,8 +64,6 @@ Oracle On Demand API 现在作为与 Campaign 连接的 CRM 已弃用。[阅读�
 **监视**&#x200B;指南的疑难解答部分已重组并使用登陆页进行了增强。[阅读更多](../../production/using/troubleshooting.md)。
 
 新增&#x200B;**导入和导出数据**&#x200B;部分，其中包含与工作流、数据压缩、加密和导入最佳实践相关的新页面。[阅读更多](../../platform/using/get-started-data-import-export.md)
-
-添加了有关如何在电子邮件中添加可个性化链接和支持跟踪的信息。 [阅读更多](../../delivery/using/tracking-personalized-links.md)。
 
 ## 2020 年 12 月 {#dec-2020}
 
