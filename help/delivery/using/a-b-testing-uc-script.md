@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -169,3 +169,5 @@ ht-degree: 0%
 * 接收消息后访问的页数：`[indicators/@totalWebPage]`,
 * 最低退订率：`[indicators/@optOutRatio]`,
 * 事务处理金额：`[indicators/@amount]`。
+
+您现在可以定义最终投放(请参阅[步骤6:定义最终投放](../../delivery/using/a-b-testing-uc-final-delivery.md))。
