@@ -19,14 +19,14 @@ ht-degree: 8%
 
 Adobe Campaign使您能够定义、优化、执行和分析通信和营销活动。 Adobe Campaign就像营销战略的统一订单和执行中心。 有关详细信息，请参阅[访问活动](../../campaign/using/accessing-campaigns.md)和[设置营销活动](../../campaign/using/setting-up-marketing-campaigns.md)。
 
-此外，**营销资源管理(MRM)**&#x200B;模块允许您通过提供对相关任务、预算和营销资源的全面管理和实时跟踪，以协作模式控制营销活动。 营销资源管理允许您优化和规范对内部和外部流程、资源和营销活动以及第三方关系（代理、打印机等）的管理。 如需详细信息，请参阅[此部分](../../campaign/using/about-marketing-resource-management.md)。
+此外，**营销资源管理(MRM)**&#x200B;模块允许您通过提供对相关任务、预算和营销资源的完整管理和实时跟踪，以协作模式控制营销活动。 营销资源管理允许您优化和规范对内部和外部流程、资源和营销活动以及第三方关系（代理、打印机等）的管理。 如需详细信息，请参阅[此部分](../../campaign/using/about-marketing-resource-management.md)。
 
 >[!NOTE]
 >
 >有关Adobe Campaign核心功能的详细信息，请参阅[入门](../../platform/using/about-adobe-campaign-classic.md)部分。\
->[本节](../../delivery/using/steps-about-delivery-creation-steps.md)详细介绍了与各种渠道上的人口定位、消息个性化和消息投放相关的功能。
+>[本节](../../delivery/using/steps-about-delivery-creation-steps.md)详细介绍了与各种渠道上的人群定位、消息个性化和消息投放相关的功能。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现营销活动的关键概念](#video)
+![](assets/do-not-localize/how-to-video.png) [了解活动在视频中的关键概念](#video)
 
 ## 核心概念{#core-concepts}
 
@@ -34,17 +34,17 @@ Adobe Campaign使您能够定义、优化、执行和分析通信和营销活动
 
 * **营销活动**
 
-   活动集中处理与营销活动相关的所有元素：投放、定位规则、成本、导出文件、相关文档等。 每个活动都与一个项目相连。
+   活动可集中处理与营销活动相关的所有元素：投放、定位规则、成本、导出文件、相关文档等。 每个活动都连接到项目。
 
    有关详细信息，请参阅[添加活动](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign)。
 
 * **项目**
 
-   项目允许您定义日历期间的营销活动：启动、调查、忠诚度等。 每个项目都包含链接到日历的活动，该日历提供整体视图。
+   项目允许您定义日历期间的营销活动：启动、画布、忠诚度等。 每个项目都包含链接到日历的活动，该日历提供了整体视图。
 
 * **计划**
 
-   营销计划可以包含多个项目。 它链接到日历期间、已分配预算，也可链接到文档和目标。
+   营销计划可以包含多个项目。 它链接到日历期间，有分配的预算，也可以链接到文档和目标。
 
    有关详细信息，请参阅[活动日历](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar)。
 
@@ -56,11 +56,11 @@ Adobe Campaign使您能够定义、优化、执行和分析通信和营销活动
 
 * **目标**
 
-   在活动、项目或计划中，您可以声明目标列表。 这些是要达到的量化值。 在活动、项目或计划结束时，MRM模块允许您在专用报告中比较目标和结果。
+   在活动、项目或计划中，您可以陈述目标列表。 这些是要达到的量化值。 在活动、项目或计划结束时，MRM模块允许您在专用报告中比较目标和结果。
 
 * **投放概要**
 
-   投放概要是投放的结构化描述。 每个投放都可以引用一个投放概要，它包含相关优惠、要附加的文档或指向商店的链接。 优惠可以根据所选的投放在该投放概要中引用。
+   投放概要是投放的结构化描述。 每个投放都可以引用一个投放概要，其中包含相关优惠、要附加的文档或指向商店的链接。 可以根据所选优惠在投放中引用投放概要。
 
    有关详细信息，请参阅[关联和构造通过投放概要](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)链接的资源。
 
@@ -70,4 +70,4 @@ Adobe Campaign使您能够定义、优化、执行和分析通信和营销活动
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-此处[提供其他Campaign Classic操作方法视频。](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
+其他Campaign Classic操作视频[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)可用。
