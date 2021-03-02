@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
+source-git-commit: add0efb4efd5a37129c649b942799622947f3143
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4092'
 ht-degree: 95%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 95%
 本页列出了每月所有新增功能和文档更新以及 Campaign 版本。
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
+
+## 2021 年 3 月 {#march-2021}
+
+在&#x200B;**[!UICONTROL Advanced JavaScript]**&#x200B;活动部分中添加了有关如何使用任务.setCompleted()方法终止任务和防止将来召回的信息。 [阅读更多](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
 ## 2021 年 2 月 {#release-21.1}
 
