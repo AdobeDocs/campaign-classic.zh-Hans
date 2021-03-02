@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 6e0741d13aa954e81fe6416663399ffd1a81012f
+source-git-commit: 04b8287dba00adbc391d611cbaf63b36a4bc3d10
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -297,7 +297,7 @@ XML文档包含具有&#x200B;**name**&#x200B;和&#x200B;**命名空间**&#x200B;
 数据模式中链接文件夹声明的示例：
 
 ```
-<element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
+<element default="DefaultFolder('nmsFolder', [@_folder-id])" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="define" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
 在名为“folder”的文件夹链接上的&#x200B;**`<nodemodel>`**&#x200B;配置如下：
