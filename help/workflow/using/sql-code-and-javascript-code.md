@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 8bcfc8826a66517e6a648dbc57b681778718c33c
+source-git-commit: add0efb4efd5a37129c649b942799622947f3143
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 4%
+source-wordcount: '261'
+ht-degree: 3%
 
 ---
 
@@ -59,3 +59,12 @@ ht-degree: 4%
 * **[!UICONTROL Next calls]**:编辑器的第二个区域包含在下次调用期间执行的脚本。
 * **[!UICONTROL Transitions]**:您可以定义多个活动输出过渡。
 * **[!UICONTROL Schedule]**:通 **[!UICONTROL Schedule]** 过选项卡可计划何时触发活动。
+
+高级JavaScript是一个持续性任务，如果尚未标记为已完成，将定期调用它。 要终止任务并防止将来的召回，必须使用&#x200B;**[!UICONTROL Next calls]**&#x200B;部分中的&#x200B;**任务.setCompleted()**&#x200B;方法：
+
+```
+task.postEvent(task.transitionByName("ok")); // to transition to Ok branch
+task.setCompleted();
+
+return 0;
+```
