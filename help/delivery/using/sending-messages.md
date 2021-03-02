@@ -7,17 +7,17 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: e2dfc34b35e6ce03715bd5723cff578a1aacd559
+source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
 
 
-# 确认电子邮件投放{#confirming-email-delivery}
+# 发送电子邮件{#confirming-email-delivery}的主要步骤
 
-创建和配置电子邮件后，您可以将其发送到主目标。 本节介绍确认电子邮件投放的主要步骤。
+创建和配置电子邮件后，您可以将其发送到主目标。 本节介绍检查并确认电子邮件投放的主要步骤。
 
 1. 确保您配置了特定于电子邮件投放的所有设置。 有关此的详细信息，请参阅[电子邮件参数](../../delivery/using/email-parameters.md)。
 1. 当电子邮件准备就绪时，建议在将其发送到主目标之前，通过发送验证来检测任何潜在错误。 有关详细信息，请参阅[发送验证](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
