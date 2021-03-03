@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: 1b02c3870ddc01705f01ea992e734cf0810e003a
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '494'
 ht-degree: 8%
 
 ---
@@ -47,7 +47,8 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->在Windows上，您可以直接从Windows服务器上的`[INSTALL]/bin`目录启动&#x200B;**nlclient.exe**&#x200B;文件，其中`[INSTALL]`是Adobe Campaign安装文件夹的访问路径。
+>您可以通过复制活动 Marketing服务器特定文件夹上的控制台可执行文件，将更新建议给所有活动客户端控制台用户， [了解详情](../../installation/using/client-console-availability-for-windows.md)。
+
 
 ## 创建连接{#create-the-connection}
 
