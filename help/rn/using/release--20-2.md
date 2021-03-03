@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 94%
@@ -21,13 +21,13 @@ ht-degree: 94%
 
 ## ![](assets/do-not-localize/green_2.png) 版本 20.2.4 - 版本 9187 {#release-20-2-4-build-9187}
 
-_2020 年 12 月 22 日_
+_2020年12月22日_
 
 >[!CAUTION]
 >
 > * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须进行升级，才能在&#x200B;**2021 年 3 月 31 日**&#x200B;之后连接到 Campaign。
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
+> * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
 
 
 
@@ -48,7 +48,7 @@ _2020 年 12 月 22 日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.2.3 - 版本 9182 {#release-20-2-3-build-9182}
 
-_2020年9月11日_
+_2020 年 9 月 11 日_
 
 * 修复了由于投放部分的单个错误函数造成内存过载而导致阻止投放准备的回归。(NEO-27346)
 * 修复了在重新发布 Web 应用程序之前关闭 Apache 和 Web 服务器的升级后问题。(NEO-27155)
@@ -61,7 +61,7 @@ _2020年9月11日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.2.2 - 版本 9180 {#release-20-2-2-build-9180}
 
-_2020 年 22 月 7 日_
+_2020 年 7 月 22 日_
 
 * 修复了在禁用签名功能时跟踪无法正常工作的问题。(NEO-26411)
 * 修复了导致在应当允许个性化域中的未签名链接时将其阻止的问题。(NEO-25210)
