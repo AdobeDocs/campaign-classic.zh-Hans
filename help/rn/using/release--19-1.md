@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '3127'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 23%
 
 ## ![](assets/do-not-localize/limited_2.png) 版本 19.1.8 - 版本 9039 {#release-19-1-8-build-9039}
 
-_2020 年 12 月 16 日_
+_2020年12月16日_
 
 >[!CAUTION]
 >
 > * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须进行升级，才能在&#x200B;**2021 年 3 月 31 日**&#x200B;之后连接到 Campaign。
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
+> * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
 
 
 
@@ -41,7 +41,7 @@ _2020 年 12 月 16 日_
 * 修复了在运行&#x200B;**扩充**&#x200B;活动时可能导致工作流失败的问题。(NEO-17338)
 * 修复了从外部数据库获取记录并在 Campaign 活动库中插入这些记录时工作流中的问题。(NEO-26359)
 * 通过防止在清除表达式分析器时内存损坏，修复了服务器崩溃问题。
-* 修复了升级到构建9032后，**NoNull**&#x200B;函数无法在Oracle数据库中工作的问题。 (NEO-26488)
+* 修复了在升级到构建9032后，**NoNull**&#x200B;函数无法在Oracle数据库中工作的问题。 (NEO-26488)
 * 修复了在编辑活动模板描述时的问题，该问题会在复制粘贴符号（例如日语字符）时阻止显示&#x200B;**保存**&#x200B;按钮。(NEO-27071)
 * 修复了在单击&#x200B;**保存**&#x200B;按钮之前单击窗口外部时阻止保存活动或活动模板的描述的问题。(NEO-27449)
 * 修复了代理配置级别上阻止您在最新的 Windows 10 更新后登录 Adobe Campaign 的问题。(NEO-27813)
@@ -55,7 +55,7 @@ Tomcat 已从版本 7 (7.0.103) 更新到版本 8 (8.5.57)。`tomcat-7` 目录�
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.1.7 - 版本 9036 {#release-19-1-7-build-9036}
 
-_2020年9月15日_
+_2020 年 9 月 15 日_
 
 **改进**
 
@@ -101,7 +101,7 @@ _2019年10月3日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.1.5 - 版本 9033{#release-19-1-5-build-9033}
 
-_2019 年 8 月 13 日_
+_2019年8月13日_
 
 **改进**
 
@@ -167,10 +167,10 @@ _2019年5月30日_
    <td> 兼容性矩阵更新<br /> </td> 
    <td> 使用此新版本，Adobe Campaign现在支持以下数据库系统。 请参阅<a href="https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html">兼容性矩阵</a>。<br /> 
     <ul> 
-     <li> <p>Oracle18c</p> </li> 
+     <li> <p>Oracle 18c</p> </li> 
      <li> <p>MySQL 5.7(联合数据访问)</p> </li> 
      <li> <p>SQL Server 2017</p> </li> 
-     <li> <p>Teradata 16(联合数据访问)</p> </li> 
+     <li> <p>Teradata16(联合数据访问)</p> </li> 
      <li> <p>PostgreSQL 11</p> </li> 
     </ul> </td> 
   </tr> 
