@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '1941'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -19,20 +19,20 @@ ht-degree: 99%
 
 ## ![](assets/do-not-localize/blue_2.png) 版本 20.3.3 - 版本 9234 {#release-20-3-3-build-9234}
 
-_2021 年 1 月 11 日_
+_2021年1月11日_
 
 * 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
 * 修复了与 broadlog 生成过程相关的回归问题，该问题可能导致 MTA 进程崩溃。
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.3.1 - 版本 9228 {#release-20-3-1-build-9228}
 
-_2020年10月27日_
+_2020 年 10 月 27 日_
 
 >[!CAUTION]
 >
 > * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须进行升级，才能在&#x200B;**2021 年 3 月 31 日**&#x200B;之后连接到 Campaign。
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
+> * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
 
 
 **新增功能**
