@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 14%
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 ## ![](assets/do-not-localize/limited_2.png) 版本 19.2.4 - 版本 9082 {#release-19-2-4-build-9082}
 
-_2020 年 12 月 23 日_
+_2020年12月23日_
 
 >[!CAUTION]
 >
@@ -44,7 +44,7 @@ _2020年2月7日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.2 - 版本 9080 {#release-19-2-build-9080}
 
-_2019 年 12 月 2 日_
+_2019年12月2日_
 
 **新增功能**
 
