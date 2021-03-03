@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 12%
@@ -19,7 +19,7 @@ ht-degree: 12%
 
 ## ![](assets/do-not-localize/limited_2.png) 版本 20.1.4 - 版本 9126 {#release-20-1-4-build-9126}
 
-_2020 年 12 月 23 日_
+_2020年12月23日_
 
 >[!CAUTION]
 >
@@ -40,7 +40,7 @@ _2020年5月6日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.1.2 - 版本 9123{#release-20-1-2-build-9123}
 
-_2020 年 3 月 13 日_
+_2020年3月13日_
 
 * 修复了阻止在Red Hat 7服务器上部署版本的问题。 (NEO-23332)
 
