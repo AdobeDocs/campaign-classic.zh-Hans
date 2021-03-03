@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 3105372bc020057727e28d26e7969c31ac290115
+source-git-commit: 23ba4091a1ffaa0245c58e8d346c60b54f79b4a2
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 100%
+source-wordcount: '1112'
+ht-degree: 91%
 
 ---
 
@@ -27,15 +27,30 @@ Gold Standard 是 Campaign Classic 长期支持版本。作为 Gold Standard 主
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard 11 版本{#gs-11}
 
-_2020 年 12 月 22 日_
+_2021年3月2日_
+
+内部版本 9032@10c2709 包含以下修复：
+
+* 修复了阻止使用控制台某些组件(如投放中的日期选择器和图像管理)的回归问题。 (NEO-31453, NEO-31454)
+
+**仅Console升级是强制的。不需要服务器升级。**
+
+>[!NOTE]
+>
+> 连接到[Adobe软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)以下载新版本。 了解如何在此页面](../../installation/using/client-console-availability-for-windows.md)中向所有最终用户[建议控制台更新。
+
+
+_2020年12月22日_
 
 >[!CAUTION]
 >
 > * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须进行升级，才能在&#x200B;**2021 年 3 月 31 日**&#x200B;之后连接到 Campaign。
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
+> * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
+
 >
->在 [Gold Standard 11 升级常见问题解答](https://helpx.adobe.com/cn/campaign/kb/gold-standard-upgrade.html)中了解更多信息。
+>
+在 [Gold Standard 11 升级常见问题解答](https://helpx.adobe.com/cn/campaign/kb/gold-standard-upgrade.html)中了解更多信息。
 
 内部版本 9032@d3b452f 包括以下改进和修复：
 
@@ -79,7 +94,7 @@ _2020 年 6 月 22 日_
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 8 版本{#gs-8}
 
-_2020 年 4 月 29 日_
+_2020年4月29日_
 
 内部版本 9032@3a9dc9c 包含以下修复：
 
@@ -104,7 +119,7 @@ _2020 年 4 月 29 日_
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 6 版本{#gs-6}
 
-_2020 年 3 月 9 日_
+_2020年3月9日_
 
 内部版本 9032@19f73c5 包含以下修复：
 
@@ -112,7 +127,7 @@ _2020 年 3 月 9 日_
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 5 版本{#gs-5}
 
-_2019 年 12 月 17 日_
+_2019年12月17日_
 
 内部版本 9032@d6b8062 包含以下修复：
 
@@ -120,7 +135,7 @@ _2019 年 12 月 17 日_
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 4 版本{#gs-4}
 
-_2019 年 12 月 11 日_
+_2019年12月11日_
 
 内部版本 9032@bc4a935 包含以下修复：
 
@@ -128,7 +143,7 @@ _2019 年 12 月 11 日_
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 3 版本{#gs-3}
 
-_2019 年 11 月 20 日_
+_2019年11月20日_
 
 内部版本 9032@3468c7b 包含以下修复：
 
@@ -138,7 +153,7 @@ _2019 年 11 月 20 日_
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 2 版本{#gs-2}
 
-_2019 年 12 月 19 日_
+_2019 年 9 月 19 日_
 
 内部版本 9032@cee805c 包含以下修复：
 
@@ -147,7 +162,7 @@ _2019 年 12 月 19 日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.1.4 - 版本 9032{#release-19-1-4-build-9032}
 
-_2019 年 8 月 13 日_
+_2019年8月13日_
 
 初始 19.1.4 内部版本包含以下修复：
 
