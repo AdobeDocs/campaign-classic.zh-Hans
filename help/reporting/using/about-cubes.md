@@ -7,15 +7,15 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '733'
 ht-degree: 10%
 
 ---
 
 
-# 关于多维数据集{#about-cubes}
+# 开始使用多维数据集{#about-cubes}
 
 通过&#x200B;**营销分析**&#x200B;模块提供对数据库中数据的探索。 它使您能够分析和测量数据、计算统计、简化和优化报表创建和计算。 除此之外，Marketing Analytics还允许您创建报告和构建目标群。 一旦识别出这些内容，它们就会存储在可用于Adobe Campaign（定位、分段等）的列表中。
 
