@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 管理权限
-description: 管理权限
+title: 管理工作流权限
+description: 了解如何管理工作流权限
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 1%
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
 
-# 管理权限{#managing-rights}
+# 管理工作流权限{#managing-rights}
 
 如果Adobe Campaign不是管理员，则工作流操作员需要访问权限才能创建、执行或修改应用程序。
 
