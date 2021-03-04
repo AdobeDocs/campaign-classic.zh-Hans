@@ -7,15 +7,15 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 8%
+source-wordcount: '475'
+ht-degree: 6%
 
 ---
 
 
-# 用例：显示在线调查的答案报告{#use-case-displaying-report-on-answers-to-an-online-survey}
+# 用例：显示有关在线调查答案的报告{#use-case-displaying-report-on-answers-to-an-online-survey}
 
 可使用专用报告收集和分析Adobe Campaign调查的答案。
 
