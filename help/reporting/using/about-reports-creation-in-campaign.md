@@ -7,15 +7,15 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 9%
+source-wordcount: '167'
+ht-degree: 5%
 
 ---
 
 
-# 关于在 Campaign 中创建报告{#about-reports-creation-in-campaign}
+# 创建报表{#about-reports-creation-in-campaign}的关键步骤
 
 要生成活动数据库中数据的统计信息，您可以创建报告并根据需要调整其内容和布局。 这些报告可以与其他运算符共享。
 
