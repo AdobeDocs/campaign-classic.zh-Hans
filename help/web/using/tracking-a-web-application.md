@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 2%
+source-wordcount: '411'
+ht-degree: 1%
 
 ---
 
 
-# 跟踪 Web 应用程序{#tracking-a-web-application}
+# 跟踪Web应用程序上的访问{#tracking-a-web-application}
 
 Adobe Campaign允许您通过插入跟踪标签来跟踪和衡量Web 应用程序页面上的访问。 此功能可用于所有Web 应用程序类型(表单、在线调查、使用数字内容编辑器创建的网页等)。
 
