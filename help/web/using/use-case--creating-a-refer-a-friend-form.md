@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 3%
+source-wordcount: '619'
+ht-degree: 2%
 
 ---
 
 
-# 用例：创建“推荐朋友”窗体{#use-case-creating-a-refer-a-friend-form}
+# 用例：创建引用表单{#use-case-creating-a-refer-a-friend-form}
 
 在此示例中，我们要将竞争优惠到数据库中的收件人。 Web表单将包含一个用于输入答案的部分，另一个用于通过输入朋友的电子邮件地址来引荐朋友。
 
