@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 1%
+source-wordcount: '948'
+ht-degree: 0%
 
 ---
 
 
-# 用例：创建概述{#use-cases-creating-overviews}
+# 用例：创建概述页{#use-cases-creating-overviews}
 
 在以下示例中，我们将创建概述类型Web 应用程序以显示数据库中的所有Web 应用程序。 配置以下元素：
 
