@@ -7,15 +7,15 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
 
 
-# 监督工作流{#supervising-workflows}
+# 用例：监督工作流{#supervising-workflows}
 
 此用例详细介绍了如何创建工作流，它允许您监视“已暂停”、“已停止”或“有错误”的一组工作流的状态。
 
