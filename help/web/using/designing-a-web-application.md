@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
 
-# 设计 Web 应用程序{#designing-a-web-application}
+# 设计Web应用程序{#designing-a-web-application}
 
 Web 应用程序是按照与[在线调查](../../web/using/about-surveys.md)相同的原则创建和管理的。
 
