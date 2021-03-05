@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '803'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 ![](assets/offer_delivery_009.png)
 
-有关投放和营销活动的详细信息，请参阅[投放](../../delivery/using/about-direct-mail-channel.md)和[活动](../../campaign/using/setting-up-marketing-campaigns.md)。
+了解有关直邮投放[的更多信息，请参阅本节](../../delivery/using/about-direct-mail-channel.md)。 了解有关营销活动[的更多信息，请参阅本节](../../campaign/using/setting-up-marketing-campaigns.md)。
 
 ### 将优惠插入投放{#main-steps-for-inserting-an-offer-into-a-delivery}的主要步骤
 
