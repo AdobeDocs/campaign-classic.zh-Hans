@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1578'
 ht-degree: 3%
 
 ---
@@ -205,8 +205,8 @@ AMP内容和备份准备就绪后，定义了兼容目标后，您可以像正�
 
 ## 教程视频{#amp-email-video}
 
-以下视频介绍如何在 Adobe Campaign Classic 中激活 AMP。
+以下视频介绍如何在 Adobe Campaign 中激活 AMP。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
-其他Campaign Classic操作视频[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)可用。
+其他活动操作视频[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)可用。
