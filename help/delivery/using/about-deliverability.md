@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,9 @@ Adobe Campaign优惠了特定数量的工具来跟踪平台的可交付性能。
 此功能可通过Adobe Campaign中的专用包获得。 要使用它，必须安装此包。 完成后，重新启动服务器以便将包考虑在内。
 * 对于托管和混合客户端，通过Adobe技术支持和顾问在您的实例上配置&#x200B;**可交付性监视**。 有关详细信息，请与Adobe客户经理联系。
 
-* 对于内部部署安装，必须通过&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜单安装&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;包。 有关详细信息，请参阅[安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md)。
+* 对于内部部署安装，必须通过&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜单安装&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;包。 有关详细信息，请参阅[安装活动内置软件包](../../installation/using/installing-campaign-standard-packages.md)。
 
-在Adobe Campaign Classic中，**可交付性监视**&#x200B;由&#x200B;**[!UICONTROL Refresh for deliverability]**&#x200B;工作流管理。 它默认安装在所有实例中，允许您初始化弹回邮件资格规则的列表、域的列表和MX的列表。 安装&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;包后，此工作流将在夜间运行，以定期更新规则的列表，并使您能够主动管理平台交付性。
+在Adobe Campaign中，**可交付性监视**&#x200B;由&#x200B;**[!UICONTROL Refresh for deliverability]**&#x200B;工作流管理。 它默认安装在所有实例中，允许您初始化弹回邮件资格规则的列表、域的列表和MX的列表。 安装&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;包后，此工作流将在夜间运行，以定期更新规则的列表，并使您能够主动管理平台交付性。
 
 ## 背景{#background}
 
