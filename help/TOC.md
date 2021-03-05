@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文档
 translation-type: tm+mt
-source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2391'
 ht-degree: 58%
 
 ---
@@ -237,10 +237,12 @@ ht-degree: 58%
       + [设计营销活动](campaign/using/designing-marketing-campaigns.md)
       + [访问营销活动](campaign/using/accessing-marketing-campaigns.md)
    + 编排活动 {#orchestrate-campaigns}
-      + [设置营销活动](campaign/using/setting-up-marketing-campaigns.md)
-      + [营销活动模板](campaign/using/marketing-campaign-templates.md)
-      + [营销活动投放](campaign/using/marketing-campaign-deliveries.md)
-      + [营销活动批准](campaign/using/marketing-campaign-approval.md)
+      + [营销活动](campaign/using/setting-up-marketing-campaigns.md)
+      + [创建和配置模板](campaign/using/marketing-campaign-templates.md)
+      + [添加投放](campaign/using/marketing-campaign-deliveries.md)
+      + [选择受众](campaign/using/marketing-campaign-target.md)
+      + [管理文档和资产](campaign/using/marketing-campaign-assets.md)
+      + [设置和管理批准](campaign/using/marketing-campaign-approval.md)
       + [监控活动](campaign/using/marketing-campaign-monitoring.md)
       + [供应商、库存和预算](campaign/using/providers--stocks-and-budgets.md)
    + 任务、资源和预算 {#tasks--resources-and-budgets}
