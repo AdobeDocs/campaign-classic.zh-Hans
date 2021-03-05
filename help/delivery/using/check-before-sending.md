@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
@@ -64,7 +64,7 @@ ht-degree: 4%
 
 ### 执行验证过程
 
-您可以定义一个包含Adobe Campaign运算符和组的完整验证过程，以验证目标和消息内容。 这将确保全面监测和控制该活动的各种进程：定位、内容、预算、提取和发送验证。 根据用户的权限，用户将收到通知、接收验证并能够验证或拒绝消息。 请阅读本节](../../campaign/using/marketing-campaign-approval.md#approval-process)了解更多信息。[
+您可以定义一个包含Adobe Campaign运算符和组的完整验证过程，以验证目标和消息内容。 这将确保全面监测和控制该活动的各种进程：定位、内容、预算、提取和发送验证。 根据用户的权限，用户将收到通知、接收验证并能够验证或拒绝消息。 请阅读本节](../../campaign/using/marketing-campaign-approval.md)了解更多信息。[
 
 ### 使用批次
 
