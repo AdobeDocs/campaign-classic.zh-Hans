@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: 4c3a2184ab09b1e1ed91d0127adc636a51808aec
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1004'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ Adobe Campaign使用数据模式来：
 * 定义 Campaign 应用程序中不同数据对象之间的链接。
 * 定义并描述每个对象中包含的个别字段。
 
-要更好地了解活动内置表及其交互，请参阅[Campaign Classic数据模型](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html)。
+要更好地了解活动内置表及其交互，请参阅[本节](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html)。
 
 ## 扩展或创建模式{#extending-or-creating-schemas}
 
