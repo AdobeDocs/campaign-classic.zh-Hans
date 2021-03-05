@@ -1,29 +1,29 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 设计营销活动
+title: 设计和执行营销活动
 description: 定义、优化、执行和分析营销活动。
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 8%
+source-wordcount: '443'
+ht-degree: 9%
 
 ---
 
 
-# 设计营销活动{#designing-marketing-campaigns}
+# 设计和执行营销活动{#designing-marketing-campaigns}
 
-Adobe Campaign使您能够定义、优化、执行和分析通信和营销活动。 Adobe Campaign就像营销战略的统一订单和执行中心。 有关详细信息，请参阅[访问活动](../../campaign/using/accessing-campaigns.md)和[设置营销活动](../../campaign/using/setting-up-marketing-campaigns.md)。
+Adobe Campaign使您能够定义、优化、执行和分析通信和营销活动。 Adobe Campaign就像营销战略的统一订单和执行中心。 有关详细信息，请参阅[访问活动](../../campaign/using/accessing-campaigns.md)和[创建营销活动](../../campaign/using/setting-up-marketing-campaigns.md)。
 
 此外，**营销资源管理(MRM)**&#x200B;模块允许您通过提供对相关任务、预算和营销资源的完整管理和实时跟踪，以协作模式控制营销活动。 营销资源管理允许您优化和规范对内部和外部流程、资源和营销活动以及第三方关系（代理、打印机等）的管理。 如需详细信息，请参阅[此部分](../../campaign/using/about-marketing-resource-management.md)。
 
 >[!NOTE]
 >
->有关Adobe Campaign核心功能的详细信息，请参阅[入门](../../platform/using/about-adobe-campaign-classic.md)部分。\
+>有关Adobe Campaign核心功能的详细信息，请参阅[本节](../../platform/using/about-adobe-campaign-classic.md)部分。\
 >[本节](../../delivery/using/steps-about-delivery-creation-steps.md)详细介绍了与各种渠道上的人群定位、消息个性化和消息投放相关的功能。
 
 ![](assets/do-not-localize/how-to-video.png) [了解活动在视频中的关键概念](#video)
@@ -62,7 +62,7 @@ Adobe Campaign使您能够定义、优化、执行和分析通信和营销活动
 
    投放概要是投放的结构化描述。 每个投放都可以引用一个投放概要，其中包含相关优惠、要附加的文档或指向商店的链接。 可以根据所选优惠在投放中引用投放概要。
 
-   有关详细信息，请参阅[关联和构造通过投放概要](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)链接的资源。
+   如需详细信息，请参阅[此部分](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
 ## 教程{#video}
 
