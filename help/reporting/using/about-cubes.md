@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 10%
@@ -89,7 +89,7 @@ ht-degree: 10%
 
 多维数据集的主要上下文如下：
 
-* 数据导出可以直接在Adobe Campaign平台&#x200B;**[!UICONTROL Reports]**&#x200B;范围内设计的报告中执行。
+* 数据导出可以直接在Adobe Campaign平台的&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡中设计的报告中执行。
 
    为此，请创建新报表并选择要使用的多维数据集。
 
