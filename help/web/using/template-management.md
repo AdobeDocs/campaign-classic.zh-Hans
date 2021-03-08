@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 5%
@@ -29,7 +29,7 @@ ht-degree: 5%
 
 配置投放后，您可以将其另存为模板，以便将其重新用于将来的投放。
 
-在&#x200B;**活动**&#x200B;宇宙中，打开所选投放。 单击&#x200B;**另存为模板**&#x200B;按钮，命名模板，然后保存。
+在&#x200B;**活动**&#x200B;选项卡中，打开所选投放。 单击&#x200B;**另存为模板**&#x200B;按钮，命名模板，然后保存。
 
 ![](assets/dce_save_model.png)
 
