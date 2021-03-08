@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Marketing Analytics可让您更轻松地创建报告，并通过多维数据集�
 
 ### 步骤1 — 创建基于多维数据集{#step-1---creating-a-report-based-on-a-cube}的报表
 
-要创建基于多维数据集的报表，请单击&#x200B;**[!UICONTROL Reports]**&#x200B;范围中的&#x200B;**[!UICONTROL Create]**&#x200B;按钮，然后选择要使用的多维数据集。
+要创建基于多维数据集的报表，请单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Create]**&#x200B;按钮，然后选择要使用的多维数据集。
 
 该过程在以下位置详细介绍：[创建基于多维数据集](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube)的报告。
 
@@ -152,7 +152,7 @@ Marketing Analytics可让您更轻松地创建报告，并通过多维数据集�
 
    您可以保存购物车的内容或将其清空。
 
-   通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;宇宙访问相关列表。
+   通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡访问相关列表。
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
