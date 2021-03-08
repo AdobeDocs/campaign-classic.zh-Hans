@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 94%
@@ -191,7 +191,7 @@ Campaign 现在支持以下系统：
 
 * 您不能再使用自己的 Litmus 帐户来配置和使用 Adobe Campaign 中的收件箱呈现。[了解详情](../../delivery/using/inbox-rendering.md)。
 
-* 为了更好地区分视图和文件夹，视图名称的颜色已从深蓝色更改为深青色。[阅读更多](../../platform/using/access-management.md#about-views)
+* 为了更好地区分视图和文件夹，视图名称的颜色已从深蓝色更改为深青色。[阅读更多](../../platform/using/access-management-folders.md)
 
 * Campaign Classic 现在可以连接到托管在英国、印度和加拿大地区的 Microsoft Dynamics CRM 帐户。这适用于 Office 365 和内部部署 (Dynamics 2015) 部署类型。
 
