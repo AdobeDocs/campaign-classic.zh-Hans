@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '2958'
+source-wordcount: '2960'
 ht-degree: 60%
 
 ---
@@ -291,7 +291,7 @@ Adobe Campaign允许您将数据从一个或多个文件（文本、CSV、TAB或
 
       >[!NOTE]
       >
-      >操作员的预设文件夹是操作员具有写访问权限的第一个文件夹。请参阅[文件夹访问管理](../../platform/using/access-management.md#folder-access-management)。
+      >操作员的预设文件夹是操作员具有写访问权限的第一个文件夹。有关详细信息，请参阅[文件夹访问管理](../../platform/using/access-management-folders.md)。
 
       要选择导入文件夹，请单击&#x200B;**[!UICONTROL Folder]**&#x200B;字段右侧的箭头，然后选择相关文件夹。 您还可以使用&#x200B;**[!UICONTROL Select link]**&#x200B;图标在新窗口中显示树或创建新文件夹。
 
