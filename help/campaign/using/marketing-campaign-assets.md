@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -98,7 +98,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* 资源是在通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;宇宙的&#x200B;**[!UICONTROL Resources]**&#x200B;链接访问的营销资源仪表板中生成的营销资源。
+* 资源是在通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Resources]**&#x200B;链接访问的营销资源仪表板中生成的营销资源。
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
