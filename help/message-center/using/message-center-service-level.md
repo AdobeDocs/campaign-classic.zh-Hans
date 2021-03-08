@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # 消息中心服务级别{#message-center-service-level}
 
-此报表显示与投放相关的事务性消息统计信息以及错误细分。 您可以单击某个错误类型来显示其详细信息。 此报告面向技术管理员，也可通过控制实例中的&#x200B;**[!UICONTROL Monitoring]**&#x200B;范围访问。
+此报表显示与投放相关的事务性消息统计信息以及错误细分。 您可以单击某个错误类型来显示其详细信息。 此报告面向技术管理员，也可通过控制实例中的&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡访问。
 
 ![](assets/mc_reports_1.png)
 
