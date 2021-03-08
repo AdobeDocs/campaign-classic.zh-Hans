@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 5%
@@ -120,7 +120,7 @@ Adobe 建议为工作流赋予正确的名称和标签，这样工作流没有�
 
 在开始构建工作流之前，请记住定义工作流监管器。 出错时，将通过电子邮件通知他们。 有关详细信息，请参阅[管理错误](../../workflow/using/monitoring-workflow-execution.md#managing-errors)。
 
-定期检查&#x200B;**[!UICONTROL Monitoring]**&#x200B;范围以视图活动工作流的整体状态。 有关详细信息，请参阅[实例监视](../../workflow/using/monitoring-workflow-execution.md#instance-supervision)。
+定期检查&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡以视图活动工作流的整体状态。 有关详细信息，请参阅[实例监视](../../workflow/using/monitoring-workflow-execution.md#instance-supervision)。
 
 Workflow HeatMap使Adobe Campaign平台管理员能够监控实例上的负载并相应地规划工作流。 有关详细信息，请参阅[工作流监视](../../workflow/using/heatmap.md)。
 
