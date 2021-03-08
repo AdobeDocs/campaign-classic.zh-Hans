@@ -7,9 +7,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 * **[!UICONTROL Single selection]** :仅当选择特定实体时，才可访问报告。
 * **[!UICONTROL Multiple selection]** :选择多个实体时，将访问报告。
-* **[!UICONTROL Global]** :通过“报表”(Reports)范围中可用报表的列表访问报表。
+* **[!UICONTROL Global]** :可通过列表选项卡中的可用报表来访问 **[!UICONTROL Reports]** 报告。
 
 ### 显示序列{#display-sequence}
 
@@ -63,7 +63,7 @@ ht-degree: 1%
 
 ### 定义筛选选项{#defining-the-filtering-options}
 
-**[!UICONTROL Reports]**&#x200B;范围显示平台中所有可用的报表，且连接的操作员对其具有访问权限。
+**[!UICONTROL Reports]**&#x200B;选项卡显示平台中所有可用的报告，并且所连接的操作员对这些报告具有访问权限。
 
 默认情况下，它们按相关性排序，但您可以应用其他类型的过滤器:按年龄等
 
