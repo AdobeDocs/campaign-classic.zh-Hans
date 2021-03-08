@@ -7,9 +7,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '440'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 * **[!UICONTROL Anonymous access]**:此选项允许不受限制地访问报表。但是，不可能操纵。
 
-   “webapp”技术运营商的权限用于显示报表元素。 请阅读本节](../../platform/using/access-management.md#default-operators)了解更多信息。[
+   “webapp”技术操作员的权限用于显示报表元素。 请阅读本节](../../platform/using/access-management-operators.md)了解更多信息。[
 
 * **[!UICONTROL Access control]**:此选项允许Adobe Campaign操作员在登录后访问它。
 * **[!UICONTROL Specific account]**:通过此选项，可以在字段中选择运算符的权限下执行 **[!UICONTROL Operator]** 报告。
