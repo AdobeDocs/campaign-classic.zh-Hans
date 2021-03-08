@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '229'
 ht-degree: 97%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->要显示数据库中所有收件人的列表，您必须创建一个视图。请参阅[文件夹和视图](../../platform/using/access-management.md#folders-and-views)。
+>要显示数据库中所有收件人的列表，您必须创建一个视图。在[文件夹和视图](../../platform/using/access-management-folders.md)中了解更多信息。
 
 ## 移动收件人 {#moving-recipients}
 
