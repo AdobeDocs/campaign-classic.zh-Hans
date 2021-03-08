@@ -7,7 +7,7 @@ audience: social
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 1%
@@ -109,7 +109,7 @@ ht-degree: 1%
 
 Adobe Campaign Facebook应用程序可让您在Facebook应用程序中显示个性化内容。 对于每个Facebook应用程序，您需要在Adobe Campaign中创建Web应用程序。 要创建Facebook Web应用程序，请按如下步骤继续：
 
-1. 转到&#x200B;**[!UICONTROL Social networks]**&#x200B;宇宙，单击&#x200B;**[!UICONTROL Applications]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
+1. 转到&#x200B;**[!UICONTROL Social networks]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL Applications]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
 
    ![](assets/social_webapp_001.png)
 
