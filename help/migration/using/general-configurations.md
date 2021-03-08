@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '2786'
 ht-degree: 0%
@@ -104,9 +104,9 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->对于所有跟踪服务器，**internal**&#x200B;密码必须相同。 有关详细信息，请参阅[此部分](../../installation/using/campaign-server-configuration.md#internal-identifier)和[此部分](../../platform/using/access-management.md#about-permissions)。
+>对于所有跟踪服务器，**internal**&#x200B;密码必须相同。 有关详细信息，请参阅[此部分](../../installation/using/campaign-server-configuration.md#internal-identifier)和[此部分](../../platform/using/access-management.md)。
 
-### v7中的新增功能 {#new-features-in-v7}
+### v7 {#new-features-in-v7}中的新增功能
 
 * 没有权限的用户无法再连接到Adobe Campaign。 必须手动添加其权限，例如，创建名为&#x200B;**connect**&#x200B;的权限。
 
@@ -456,8 +456,7 @@ allowSQLInjection="false"
 * **[!UICONTROL Keep the current version]**:表示更新被拒绝。
 
    >[!IMPORTANT]
-   >
-   >如果选择此解决模式，您可能会丢失新版本中的修补程序。 因此，强烈建议不要仅为专家操作员使用或保留此选项。
+   如果选择此解决模式，您可能会丢失新版本中的修补程序。 因此，强烈建议不要仅为专家操作员使用或保留此选项。
 
 如果选择手动解决冲突，请按如下步骤继续：
 
@@ -503,14 +502,12 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 在v7中，已移动优惠内容。 在v6.02中，内容位于每个表示模式(**nms:emailOfferView**)。 在v7中，内容现在处于优惠模式。 配置升级后，内容将不会显示在界面中。 配置升级后，您必须重新创建优惠内容，或开发一个脚本，该脚本会自动将内容从表示模式移到优惠模式。
 
 >[!IMPORTANT]
->
->如果迁移后要发送使用已配置优惠的某些投放，则必须删除这些投放并在v7中重新创建这些。 如果无法执行此操作，则会提供“兼容模式”。 不建议使用此模式，因为您不会从Interaction v7中的所有新功能中受益。 这是一种过渡模式，允许您在实际6.1迁移之前完成正在进行的活动。 有关此模式的详细信息，请联系我们。
+如果迁移后要发送使用已配置优惠的某些投放，则必须删除这些投放并在v7中重新创建这些。 如果无法执行此操作，则会提供“兼容模式”。 不建议使用此模式，因为您不会从Interaction v7中的所有新功能中受益。 这是一种过渡模式，允许您在实际6.1迁移之前完成正在进行的活动。 有关此模式的详细信息，请联系我们。
 
 移动脚本(**interactionTo610_full_XX.js**)的示例位于Adobe Campaign v7文件夹的&#x200B;**Migration**&#x200B;文件夹中。 此文件显示了一个使用每个优惠（**[!UICONTROL htmlSource]**&#x200B;和&#x200B;**[!UICONTROL textSource]**&#x200B;字段）的单一电子邮件表示形式的客户端脚本示例。 **NmsEmailOfferView**&#x200B;表中的内容已移到优惠表。
 
 >[!NOTE]
->
->使用此脚本不允许您从“内容管理”和“渲染函数”选项中受益。 要从这些功能中受益，您必须重新思考目录优惠，特别是优惠内容和配置空间。
+使用此脚本不允许您从“内容管理”和“渲染函数”选项中受益。 要从这些功能中受益，您必须重新思考目录优惠，特别是优惠内容和配置空间。
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -609,8 +606,7 @@ logInfo("Done");
 1. 执行全面测试。
 
    >[!NOTE]
-   >
-   >上线类别和优惠的名称在上线后进行修改。 在传入渠道上，更新对优惠和类别的所有引用。
+   上线类别和优惠的名称在上线后进行修改。 在传入渠道上，更新对优惠和类别的所有引用。
 
 ## 报告 {#reports}
 
@@ -638,8 +634,7 @@ logInfo("Done");
 与报表一样（请参阅[报表](#reports)），如果添加了JavaScript，则必须检查并调整。 如果您希望从v7蓝色横幅（包含宇宙）中受益，则必须重新发布Web应用程序。 如果您的JavaScript代码正在工作，则可以选择v6.x渲染引擎。 如果不是这样，您可以在调整代码时使用v6.0渲染引擎，然后使用v6.x渲染引擎。
 
 >[!NOTE]
->
->选择渲染引擎的步骤与选择报表的步骤相同。 请参阅[个性化报告](#personalized-reports)。
+选择渲染引擎的步骤与选择报表的步骤相同。 请参阅[个性化报告](#personalized-reports)。
 
 Web 应用程序连接方法在v7中已更改。 如果在已识别的Web应用程序中遇到任何连接问题，必须临时激活&#x200B;**serverConf.xml**&#x200B;文件中的&#x200B;**allowUserPassword**&#x200B;和&#x200B;**sessionTokenOnly**&#x200B;选项。 配置升级后，修改以下选项值：
 
@@ -672,8 +667,7 @@ sessionTokenOnly="false"
 如果遇到任何问题，请重新发布Web应用程序。 如果问题仍然存在，您可以选择v6.0渲染引擎。 如果您尚未添加JavaScript，则可以选择v6.x渲染引擎并从其新功能中受益。
 
 >[!NOTE]
->
->选择渲染引擎的步骤与选择报表的步骤相同。 请参阅[个性化报告](#personalized-reports)。
+选择渲染引擎的步骤与选择报表的步骤相同。 请参阅[个性化报告](#personalized-reports)。
 
 ## Red-Hat {#red-hat}
 
