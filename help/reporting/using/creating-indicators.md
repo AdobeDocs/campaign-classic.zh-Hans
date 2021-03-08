@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
@@ -121,7 +121,7 @@ Dimension与根据每个多维数据集的相关数值模式为其定义的分�
 
 操作步骤：
 
-1. 单击&#x200B;**[!UICONTROL Reports]**&#x200B;宇宙的&#x200B;**[!UICONTROL Create]**&#x200B;按钮，然后选择您刚刚创建的多维数据集。
+1. 单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡的&#x200B;**[!UICONTROL Create]**&#x200B;按钮，然后选择您刚刚创建的多维数据集。
 
    ![](assets/s_advuser_cube_wz_14.png)
 
