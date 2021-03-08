@@ -7,15 +7,15 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 
-# 筛选模式{#filtering-schemas}
+# 滤镜模式{#filtering-schemas}
 
 ## 系统过滤器{#system-filters}
 
@@ -63,7 +63,7 @@ ht-degree: 1%
 >
 >如果未指定任何过滤器，则所有运算符都将具有对模式的读写权限。
 
-## 保护内置模式{#protecting-built-in-schemas}
+## Protect内置模式{#protecting-built-in-schemas}
 
 默认情况下，内置模式只能通过具有“管理”权限的操作员的“写入”权限访问：
 
