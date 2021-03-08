@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 translation-type: tm+mt
-source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '999'
 ht-degree: 2%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 2%
 >
 >* 对[消息中心技术工作流](../../message-center/using/technical-workflows.md)在控件或执行实例上使用的模式进行的模式扩展需要在Adobe Campaign事务消息模块使用的其他实例上进行复制。
 >* 控制实例和执行实例必须安装在不同的计算机上。 他们不能共享同一活动实例。
+
 >
 
 
@@ -137,11 +138,11 @@ ht-degree: 2%
 
 要使用多个控制实例，必须对所有执行实例执行此配置。
 
-1. 在&#x200B;**[!UICONTROL Administration > Production > Message Center]**&#x200B;节点中，为每个运算符创建一个文件夹：**文件夹1**&#x200B;和&#x200B;**文件夹2**。 有关创建文件夹和视图的详细信息，请参阅[Platform](../../platform/using/access-management.md#folders-and-views)。
+1. 在&#x200B;**[!UICONTROL Administration > Production > Message Center]**&#x200B;节点中，为每个运算符创建一个文件夹：**文件夹1**&#x200B;和&#x200B;**文件夹2**。 有关创建文件夹和视图的详细信息，请参阅[此页](../../platform/using/access-management-folders.md)。
 
    ![](assets/messagecenter_multi_control_3.png)
 
-1. 通过复制默认提供的消息中心运算符(**mc**)，创建&#x200B;**mc1**&#x200B;和&#x200B;**mc2**&#x200B;运算符。 有关创建运算符的详细信息，请参阅[本节](../../platform/using/access-management.md#operators)。
+1. 通过复制默认提供的消息中心运算符(**mc**)，创建&#x200B;**mc1**&#x200B;和&#x200B;**mc2**&#x200B;运算符。 有关创建运算符的详细信息，请参阅[本节](../../platform/using/access-management-operators.md)。
 
    ![](assets/messagecenter_multi_control_4.png)
 
