@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: add0efb4efd5a37129c649b942799622947f3143
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '4092'
 ht-degree: 95%
@@ -287,7 +287,7 @@ Adobe Campaign 增强 MTA 文章已更新。现在只适用于 Campaign Classic�
 
 现在提供了详细介绍 Adobe Campaign 中不同语言的新部分。[阅读更多](../../platform/using/adobe-campaign-workspace.md#languages)
 
-访问管理指南已更新，其中包含有关已命名权限的更多信息。[阅读更多](../../platform/using/access-management.md#named-rights)
+访问管理指南已更新，其中包含有关已命名权限的更多信息。[阅读更多](../../platform/using/access-management-named-rights.md)
 
 ## 2020 年 2 月 {#february-2020}
 
@@ -405,7 +405,7 @@ Adobe Campaign 与 Adobe 实时客户数据平台之间的集成现在在&#x200B
 
 增加了新的部分，用于说明如何在发送电子邮件时强制使用字符编码。[阅读更多](../../delivery/using/sending-messages.md#character-encoding)
 
-“访问管理”部分已更新&#x200B;**隐私数据权限**。[阅读更多](../../platform/using/access-management.md#named-rights)
+“访问管理”部分已更新&#x200B;**隐私数据权限**。[阅读更多](../../platform/using/access-management-named-rights.md)
 
 添加了信息，以指定个性化字段内容不能超过 1024 个字符。[阅读更多](../../delivery/using/personalization-fields.md)
 
