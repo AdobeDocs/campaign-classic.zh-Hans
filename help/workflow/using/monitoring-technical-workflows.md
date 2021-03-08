@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 8%
@@ -23,7 +23,7 @@ ht-degree: 8%
 
 ## 实例监视仪表板{#instance-monitoring-dashboard}
 
-可以通过&#x200B;**[!UICONTROL Monitoring]**&#x200B;范围访问实例监视仪表板。
+可以通过&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡访问实例监视仪表板。
 
 ![](assets/monitoring_technical_workflows1.png)
 
