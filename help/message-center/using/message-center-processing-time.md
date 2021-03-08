@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # 消息中心处理时间{#message-center-processing-time}
 
-此报表显示与实时队列相关的主要指示符。 此报告面向技术管理员，也可通过控制实例中的&#x200B;**[!UICONTROL Monitoring]**&#x200B;范围访问。
+此报表显示与实时队列相关的主要指示符。 此报告面向技术管理员，也可通过控制实例中的&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡访问。
 
 ![](assets/mc_reports_2.png)
 
