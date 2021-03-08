@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '2786'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -616,7 +616,7 @@ logInfo("Done");
 
 ### 个性化报告{#personalized-reports}
 
-<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
+<!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
 -->
@@ -631,7 +631,7 @@ logInfo("Done");
 
 ### 已识别的Web应用程序{#identified-web-applications}
 
-与报表一样（请参阅[报表](#reports)），如果添加了JavaScript，则必须检查并调整。 如果您希望从v7蓝色横幅（包含宇宙）中受益，则必须重新发布Web应用程序。 如果您的JavaScript代码正在工作，则可以选择v6.x渲染引擎。 如果不是这样，您可以在调整代码时使用v6.0渲染引擎，然后使用v6.x渲染引擎。
+与报表（[了解更多](#reports)）一样，如果您添加了JavaScript，则必须检查并调整。 如果您希望从v7蓝色横幅（包含蓝色选项卡）受益，则必须重新发布Web应用程序。 如果您的JavaScript代码正在工作，则可以选择v6.x渲染引擎。 如果不是这样，您可以在调整代码时使用v6.0渲染引擎，然后使用v6.x渲染引擎。
 
 >[!NOTE]
 选择渲染引擎的步骤与选择报表的步骤相同。 请参阅[个性化报告](#personalized-reports)。
