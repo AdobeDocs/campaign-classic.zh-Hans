@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 您可以通过从投放概述访问的各种报表跟踪投放的执行。 要显示报表，请应用以下过程：
 
-1. 转到&#x200B;**[!UICONTROL Campaigns]**&#x200B;宇宙并单击&#x200B;**[!UICONTROL Delivery]**&#x200B;链接以显示投放列表。
+1. 转到&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Delivery]**&#x200B;链接以显示投放列表。
 1. 单击要显示的投放的名称以显示其详细信息。
 
    ![](assets/s_ncs_user_detailled_report.png)
