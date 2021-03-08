@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 63%
@@ -83,7 +83,7 @@ ht-degree: 63%
 >
 >也可以单击 **[!UICONTROL Profiles and targets > Recipients]** 链接，从 Adobe Campaign 树状结构中显示该列表的高级视图。可根据您的需求配置列表的显示。您可以添加或删除列、定义列顺序、对数据排序等。 [使用列表资源管理器](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)中介绍了Adobe Campaign显示配置。
 >
->您也可以定义收件人视图。有关此功能的详细信息，请参阅[文件夹和视图](../../platform/using/access-management.md#folders-and-views)。
+>您也可以定义收件人视图。有关此功能的详细信息，请参阅[文件夹和视图](../../platform/using/access-management-folders.md)。
 
 ## 使用中的用户档案 {#active-profiles}
 
