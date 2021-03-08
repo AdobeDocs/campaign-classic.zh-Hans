@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 ## 第1步：创建收件人列表{#step-1--creating-the-recipient-list}
 
-转到&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;宇宙，单击&#x200B;**[!UICONTROL Lists]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮。 选择&#x200B;**[!UICONTROL New list]**&#x200B;并为要发送到的报表创建新的收件人列表。
+转到&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL Lists]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮。 选择&#x200B;**[!UICONTROL New list]**&#x200B;并为要发送到的报表创建新的收件人列表。
 
 ![](assets/use_case_report_1.png)
 
