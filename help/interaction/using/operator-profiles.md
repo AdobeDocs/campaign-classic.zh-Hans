@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 5%
@@ -22,7 +22,7 @@ ht-degree: 5%
 * **[!UICONTROL Offer manager]** :创建和维护优惠。请注意，如果工作流中使用了优惠，则运算符需要位于&#x200B;**[!UICONTROL Administrator]**&#x200B;或&#x200B;**[!UICONTROL Offer managers]**&#x200B;运算符组中才能执行工作流。
 * **[!UICONTROL Delivery manager]** :批准和使用优惠
 
-创建特定于交互的运算符的步骤与创建平台上所有其他运算符的步骤完全相同。 如需详细信息，请参阅[此部分](../../platform/using/access-management.md#creating-an-operator)。权限在操作员创建过程中进行配置。
+创建特定于交互的运算符的步骤与创建平台上所有其他运算符的步骤完全相同。 如需详细信息，请参阅[此部分](../../platform/using/access-management.md)。权限在操作员创建过程中进行配置。
 
 ## 优惠管理器{#offer-manager}
 
