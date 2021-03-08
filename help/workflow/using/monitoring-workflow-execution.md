@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ ht-degree: 0%
 
 ## 管理错误{#managing-errors}
 
-发生错误时，工作流暂停，当发生错误时正在执行的活动闪烁红色。 在工作流概述（**[!UICONTROL Monitoring]**&#x200B;宇宙> **[!UICONTROL Workflows]**&#x200B;链接）中，您只能显示有错误的工作流，如下所示。
+发生错误时，工作流暂停，当发生错误时正在执行的活动闪烁红色。 在工作流概述的&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡 — **[!UICONTROL Workflows]**&#x200B;链接下，您只能显示有错误的工作流，如下所示。
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
@@ -169,7 +169,7 @@ ht-degree: 0%
 
 在&#x200B;**[!UICONTROL Instance supervision]**&#x200B;页面中，可以视图Adobe Campaign服务器活动，并显示出工作流和投放的列表，但有错误。
 
-要访问此页，请转到&#x200B;**[!UICONTROL Monitoring]**&#x200B;范围并单击&#x200B;**[!UICONTROL General view]**&#x200B;链接。
+要访问此页，请转到&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL General view]**&#x200B;链接。
 
 ![](assets/wf-monitoring_from-homepage.png)
 
