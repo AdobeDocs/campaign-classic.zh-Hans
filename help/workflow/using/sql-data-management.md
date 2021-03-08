@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 * 该活动仅适用于远程数据源。 因此，**[!UICONTROL FDA]**(联合数据访问)包必须安装在实例上。 [了解详情](../../installation/using/about-fda.md)。
 * 出站模式必须存在于数据库中，并且必须链接到联合数据访问数据库。 [了解详情](../../configuration/using/about-schema-reference.md)。
-* 执行工作流的运算符必须具有名为right的&#x200B;**[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**。 [了解详情](../../platform/using/access-management.md#named-rights)。
+* 执行工作流的运算符必须具有名为right的&#x200B;**[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**。 [了解详情](../../platform/using/access-management-named-rights.md)。
 
 ## 配置SQL数据管理活动{#configuring-the-sql-data-management-activity}
 
