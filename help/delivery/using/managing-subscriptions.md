@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1098'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 您可以创建和管理对信息服务的订阅，这些具有关联的确认消息或对订阅者自动投放。
 
-要访问信息服务映射，请转到&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;范围，然后单击&#x200B;**[!UICONTROL Services and Subscriptions]**&#x200B;链接。
+要访问信息服务映射，请打开&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Services and Subscriptions]**&#x200B;链接。
 
 ![](assets/s_ncs_user_services_new.png)
 
