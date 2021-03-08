@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: af2707c6d86215ff94911e670a1eb080572de23c
 workflow-type: tm+mt
-source-wordcount: '4092'
-ht-degree: 95%
+source-wordcount: '4151'
+ht-degree: 93%
 
 ---
 
@@ -22,6 +22,15 @@ ht-degree: 95%
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
 ## 2021 年 3 月 {#march-2021}
+
+[权限管理章](../../platform/using/access-management.md)已得到改进，并分为几节，包括有关[Operators](../../platform/using/access-management-operators.md)、[操作员组](../../platform/using/access-management-groups.md)、[已命名权限](../../platform/using/access-management-named-rights.md)和[文件夹管理](../../platform/using/access-management-folders.md)的详细信息。
+
+了解如何通过以下新页面创建和管理活动:
+* [创建和配置活动模板](../../campaign/using/marketing-campaign-templates.md)
+* [营销活动投放](../../campaign/using/marketing-campaign-deliveries.md)
+* [选择活动的受众](../../campaign/using/marketing-campaign-target.md)
+* [管理关联文档](../../campaign/using/marketing-campaign-assets.md)
+* [设置和管理审批流程](../../campaign/using/marketing-campaign-approval.md)
 
 在&#x200B;**[!UICONTROL Advanced JavaScript]**&#x200B;活动部分中添加了有关如何使用任务.setCompleted()方法终止任务和防止将来召回的信息。 [阅读更多](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
