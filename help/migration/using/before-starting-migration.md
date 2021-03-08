@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 1%
 
 ---
@@ -77,5 +77,5 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->对于所有跟踪服务器，**internal**&#x200B;密码必须相同。 有关详细信息，请参阅[内部标识符](../../installation/using/campaign-server-configuration.md#internal-identifier)和[关于权限](../../platform/using/access-management.md#about-permissions)部分。
+>对于所有跟踪服务器，**internal**&#x200B;密码必须相同。 有关详细信息，请参阅[内部标识符](../../installation/using/campaign-server-configuration.md#internal-identifier)和[权限](../../platform/using/access-management.md)部分。
 
