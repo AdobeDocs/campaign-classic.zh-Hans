@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 管理对文件夹的访问{#folder-access-management}
 
-树的每个文件夹都有附加到它的读取、写入和删除访问权限。 要访问文件，运算符或操作员组必须至少具有对文件的读访问权限。
+资源管理器导航树的每个文件夹都附加了读、写和删除访问权限。 要访问文件，运算符或操作员组必须至少具有对文件的读访问权限。
 
 ## 对文件夹的权限
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-您可以像在树的所有其他文件夹中一样，为这些文件夹授予权限。 请参阅[文件夹访问管理](#folder-access-management)。
+您可以自定义Explorer导航树。 请阅读本节](adobe-campaign-workspace.md)，了解配置步骤和最佳实践。[
 
 ### 关于视图{#about-views}
 
