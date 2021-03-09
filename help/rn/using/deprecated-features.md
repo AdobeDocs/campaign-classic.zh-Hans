@@ -9,9 +9,9 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
+source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1712'
 ht-degree: 94%
 
 ---
@@ -98,7 +98,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <li>iOS</li>
    </ul>
   <p>如果您使用其中一个连接器，您需要相应地调整实施。<a href="../../delivery/using/sms-channel.md">了解详情</a></p> 
-  <p>请阅读<a href="https://helpx.adobe.com/cn/campaign/kb/sms-connector.html">此技术说明</a>，了解如何迁移传统连接器。</p>
+  <p>请阅读<a href="../../delivery/using/unsupported-connector-migration.md">此技术说明</a>，了解如何迁移传统连接器。</p>
   <p><em>目标删除日期：2021 年 4 月</em></p>
   </td> 
  </tr>
