@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文档
 translation-type: tm+mt
-source-git-commit: 60b4565ec6dc3e7ffc4ffcff69fbcca9fa870614
+source-git-commit: f170f554935700161c457bb34bace8c403f4262b
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2458'
 ht-degree: 56%
 
 ---
@@ -38,6 +38,7 @@ ht-degree: 56%
       + [版本 18.4](rn/using/release--18-4.md)
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
+   + [技术说明](technotes/technote.md)
 + 入门 {#getting-started}
    + 开始与Adobe Campaign {#starting-with-adobe-campaign}
       + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
