@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
+source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
 workflow-type: tm+mt
-source-wordcount: '3148'
+source-wordcount: '3131'
 ht-degree: 20%
 
 ---
@@ -40,7 +40,7 @@ Adobe Campaign允许您对SMS消息执行大量个性化投放。 收件人用�
 ### 创建SMPP外部帐户{#creating-an-smpp-external-account}
 
 要将SMS发送到移动电话，您首先需要创建SMPP外部帐户。
-有关短信协议和设置的更多信息，请参阅此[技术说明](https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html)。
+有关SMS协议和设置的详细信息，请参阅此[页面](../../delivery/using/sms-protocol.md)。
 
 为此请执行以下操作步骤：
 
@@ -56,7 +56,7 @@ Adobe Campaign允许您对SMS消息执行大量个性化投放。 收件人用�
 
    >[!CAUTION]
    >
-   > 从20.2版开始，旧版连接器已弃用，不支持。 建议使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器。 有关如何迁移到推荐连接器的详细信息，请参阅此[页面](https://helpx.adobe.com/cn/campaign/kb/sms-connector.html)。
+   > 从20.2版开始，旧版连接器已弃用，不支持。 建议使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器。 有关如何迁移到推荐连接器的详细信息，请参阅此[页面](../../delivery/using/unsupported-connector-migration.md)。
 
 1. **[!UICONTROL Enable verbose SMPP traces in the log file]**&#x200B;选项允许您转储日志文件中的所有SMPP通信。 必须启用此选项才能对连接器进行故障诊断，并与提供商的通信记录进行对比。
 
@@ -94,7 +94,7 @@ Adobe Campaign允许您对SMS消息执行大量个性化投放。 收件人用�
 
    但是，鉴于某些提供者需要使用“+”前缀，建议您与提供者进行核对，他们将建议您在必要时启用此选项。
 
-   **[!UICONTROL Enable TLS over SMPP]**&#x200B;复选框允许您加密SMPP通信。 有关详细信息，请参阅此[技术说明](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)。
+   **[!UICONTROL Enable TLS over SMPP]**&#x200B;复选框允许您加密SMPP通信。 有关详细信息，请参见此 [ 页面](../../delivery/using/sms-protocol.md)。
 
 1. 如果要配置&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器，则可以设置自动回复。
 
