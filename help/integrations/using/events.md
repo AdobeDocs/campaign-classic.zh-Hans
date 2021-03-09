@@ -6,7 +6,7 @@ description: 了解如何为自定义实施配置事件
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
@@ -217,7 +217,7 @@ triggerType字段标识数据从中发起触发器。
 
 >[!NOTE]
 >
->管道事件节点未内置，需要添加，并且相关表单需要在活动中创建。 这些操作仅限专家用户。 有关此内容的详细信息，请参阅以下部分：[导航层次](../../configuration/using/about-navigation-hierarchy.md)和[编辑表单](../../configuration/using/editing-forms.md)。
+>管道事件节点未内置，需要添加，并且相关表单需要在活动中创建。 这些操作仅限专家用户。 有关此内容的详细信息，请参阅以下部分：[导航层次](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy)。 和[编辑表单](../../configuration/using/editing-forms.md)。
 
 ![](assets/triggers_7.png)
 
