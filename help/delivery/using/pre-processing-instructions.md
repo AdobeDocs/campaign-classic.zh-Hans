@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
+source-git-commit: 3454af2faffacd43fa1ad852529dad175340a237
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 可以直接从投放向导中测试。 它们会在内容预览中应用，当您单击跟踪按钮时，您会看到URL的列表。
 
-## &lt;>{#<%@-include}
+## &lt;>{#include}
 
 以下示例是最常用的示例：
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 使用投放向导中的个性化按钮获取正确的语法。
 
-## &lt;>{#<%@-value}
+## &lt;>{#value}
 
 此说明允许访问所有投放的常量参数。
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 * “投放”：当前投放（请参阅下文小节中的详细信息和限制）。
 * “提供者”：对于当前投放提供者/路由(nms:externalAccount)。
 * 额外的脚本对象：如果对象通过以下方式加载到上下文中：**属性** > **个性化** > **在执行上下文中添加对象**。
-* foreach循环的项：请参见下面的[Foreach](#<%@-foreach)部分。
+* foreach循环的项：请参见下面的[Foreach](#foreach)部分。
 
 ### &quot;投放&quot;对象{#delivery-object}
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 >
 >`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
 
-### &lt;>{#<%@-value-in-javascript}
+### &lt;>{#value-in-javascript}
 
 要允许在脚本部分中使用&lt;%@值，两个特殊对象将替换为&lt;%和%>:
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 `<%@ value object='endScript' %> is expanded in something like <% var iMode = 1 if(iMode == 1) { ... } else { ... } %>.
 ```
 
-## &lt;>{#<%@-foreach}
+## &lt;>{#foreach}
 
 此指令允许对加载到投放中的对象数组进行迭代，以跟踪与对象相关的各个链接。
 
