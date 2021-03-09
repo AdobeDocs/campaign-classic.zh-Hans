@@ -9,7 +9,7 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文档
 translation-type: tm+mt
-source-git-commit: c256899e9b04c42df1b5938b5b0513079319cd6b
+source-git-commit: 60b4565ec6dc3e7ffc4ffcff69fbcca9fa870614
 workflow-type: tm+mt
 source-wordcount: '2457'
 ht-degree: 56%
@@ -45,18 +45,18 @@ ht-degree: 56%
       + Adobe Campaign 工作区{#campaign-workspace}
          + [开始使用活动 UI](platform/using/adobe-campaign-workspace.md)
          + [浏览和自定义列表](platform/using/adobe-campaign-ui-lists.md)
-         + 常见问题解答 {#faq}
-            + [ 大问题](platform/using/common-questions.md)
-            + [全局概念](platform/using/faq-key-concepts.md)
-            + [内部版本升级](platform/using/faq-build-upgrade.md)
-            + [隐私](platform/using/privacy-faq.md)
-            + [受众](platform/using/faq-audiences.md)
-            + [设计各种邮件](platform/using/faq-designing.md)
-            + [发送邮件](platform/using/faq-messages.md)
-            + [工作流](platform/using/faq-workflows.md)
-            + [配置](platform/using/faq-campaign-config.md)
-            + [报告](platform/using/faq-reporting.md)
-            + [开发](platform/using/faq-developers.md)
+      + 常见问题解答 {#faq}
+         + [ 大问题](platform/using/common-questions.md)
+         + [全局概念](platform/using/faq-key-concepts.md)
+         + [内部版本升级](platform/using/faq-build-upgrade.md)
+         + [隐私](platform/using/privacy-faq.md)
+         + [受众](platform/using/faq-audiences.md)
+         + [设计各种邮件](platform/using/faq-designing.md)
+         + [发送邮件](platform/using/faq-messages.md)
+         + [工作流](platform/using/faq-workflows.md)
+         + [配置](platform/using/faq-campaign-config.md)
+         + [报告](platform/using/faq-reporting.md)
+         + [开发](platform/using/faq-developers.md)
          + [教程](platform/using/tutorials.md)
    + 隐私 {#privacy}
       + [隐私和同意](platform/using/privacy-and-recommendations.md)
