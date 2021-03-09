@@ -7,15 +7,19 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 04b8287dba00adbc391d611cbaf63b36a4bc3d10
+source-git-commit: 4a17b25516bd9cec409a16cff1e336c13f0df5a4
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1191'
 ht-degree: 1%
 
 ---
 
 
-# 配置{#configuration}
+# 配置活动 Explorer导航树{#configuration}
+
+作为专家用户，您可以在资源管理器树中添加文件夹并对其进行自定义。
+
+在本节](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy)中，进一步了解活动资源管理器和导航层次结构[。
 
 导航列表使用的文件夹类型在遵循&#x200B;**xtk:navtree**&#x200B;模式语法的XML文档中进行描述。
 
