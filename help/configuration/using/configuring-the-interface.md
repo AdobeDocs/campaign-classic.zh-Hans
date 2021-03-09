@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
@@ -70,7 +70,7 @@ Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数�
 
    >[!NOTE]
    >
-   >有关&#x200B;**navtree**&#x200B;类型文件的详细信息，请参阅[此页面](../../configuration/using/about-navigation-hierarchy.md)。
+   >有关&#x200B;**navtree**&#x200B;类型文件的详细信息，请参阅[此页面](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy)。
 
    在当前示例中，**navtree**&#x200B;文件必须基于&#x200B;**cus:individual**&#x200B;模式，因此具有以下格式：
 
