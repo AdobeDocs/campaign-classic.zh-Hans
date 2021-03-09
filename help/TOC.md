@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文档
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: c256899e9b04c42df1b5938b5b0513079319cd6b
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 57%
+source-wordcount: '2457'
+ht-degree: 56%
 
 ---
 
@@ -42,20 +42,22 @@ ht-degree: 57%
    + 开始与Adobe Campaign {#starting-with-adobe-campaign}
       + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
       + [启动Adobe Campaign](platform/using/launching-adobe-campaign.md)
-      + [Adobe Campaign 工作区](platform/using/adobe-campaign-workspace.md)
-      + 常见问题解答 {#faq}
-         + [ 大问题](platform/using/common-questions.md)
-         + [全局概念](platform/using/faq-key-concepts.md)
-         + [内部版本升级](platform/using/faq-build-upgrade.md)
-         + [隐私](platform/using/privacy-faq.md)
-         + [受众](platform/using/faq-audiences.md)
-         + [设计各种邮件](platform/using/faq-designing.md)
-         + [发送邮件](platform/using/faq-messages.md)
-         + [工作流](platform/using/faq-workflows.md)
-         + [配置](platform/using/faq-campaign-config.md)
-         + [报告](platform/using/faq-reporting.md)
-         + [开发](platform/using/faq-developers.md)
-      + [教程](platform/using/tutorials.md)
+      + Adobe Campaign 工作区{#campaign-workspace}
+         + [开始使用活动 UI](platform/using/adobe-campaign-workspace.md)
+         + [浏览和自定义列表](platform/using/adobe-campaign-ui-lists.md)
+         + 常见问题解答 {#faq}
+            + [ 大问题](platform/using/common-questions.md)
+            + [全局概念](platform/using/faq-key-concepts.md)
+            + [内部版本升级](platform/using/faq-build-upgrade.md)
+            + [隐私](platform/using/privacy-faq.md)
+            + [受众](platform/using/faq-audiences.md)
+            + [设计各种邮件](platform/using/faq-designing.md)
+            + [发送邮件](platform/using/faq-messages.md)
+            + [工作流](platform/using/faq-workflows.md)
+            + [配置](platform/using/faq-campaign-config.md)
+            + [报告](platform/using/faq-reporting.md)
+            + [开发](platform/using/faq-developers.md)
+         + [教程](platform/using/tutorials.md)
    + 隐私 {#privacy}
       + [隐私和同意](platform/using/privacy-and-recommendations.md)
       + [隐私管理](platform/using/privacy-management.md)
@@ -140,6 +142,7 @@ ht-degree: 57%
       + [SMS 渠道](delivery/using/sms-channel.md)
       + [SMS 连接器协议和设置](delivery/using/sms-protocol.md)
       + [SMS 疑难解答](delivery/using/troubleshooting-sms.md)
+      + [迁移到扩展通用SMPP连接器](delivery/using/unsupported-connector-migration.md)
    + [发送LINE消息](delivery/using/line-channel.md)
    + 发送推送通知 {#sending-push-notifications}
       + [关于移动应用程序渠道](delivery/using/about-mobile-app-channel.md)
@@ -674,6 +677,14 @@ ht-degree: 57%
       + [连接到数据库](installation/using/connecting-to-database.md)
       + [创建数据模式](installation/using/creating-data-schema.md)
       + [定义数据映射](installation/using/defining-data-mapping.md)
+   + 安全和隐私核对清单{#security-privacy}
+      + [安全性和隐私入门](installation/using/get-started-security-privacy.md)
+      + [隐私](installation/using/privacy.md)
+      + [访问管理](installation/using/access-management.md)
+      + [脚本和编码指南](installation/using/scripting-coding-guidelines.md)
+      + [网络、数据库和SSL/TLS](installation/using/network-database.md)
+      + [服务器配置](installation/using/server-configuration.md)
+      + [Web服务器配置](installation/using/web-server-configuration.md)
    + 附录 {#appendices}
       + [服务器配置文件](installation/using/the-server-configuration-file.md)
       + [Campaign 网络端点](installation/using/campaign-network-endpoints.md)
@@ -790,9 +801,8 @@ ht-degree: 57%
       + [JavaScript 中的 SOAP 方法](configuration/using/soap-methods-in-javascript.md)
       + [添加其他 SQL 函数](configuration/using/adding-additional-sql-functions.md)
    + 导航层次结构 {#navigation-hierarchy}
-      + [关于导航层次结构](configuration/using/about-navigation-hierarchy.md)
-      + [配置](configuration/using/configuration.md)
-      + [版本](configuration/using/edition.md)
+      + [配置资源管理器层次结构](configuration/using/configuration.md)
+      + [编辑资源管理器层次结构](configuration/using/edition.md)
    + 使用自定义收件人表 {#use-a-custom-recipient-table}
       + [关于自定义收件人表](configuration/using/about-custom-recipient-table.md)
       + [模式特性](configuration/using/schema-characteristics.md)
