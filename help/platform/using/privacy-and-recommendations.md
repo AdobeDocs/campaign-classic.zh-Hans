@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2038'
 ht-degree: 73%
 
 ---
@@ -25,7 +25,7 @@ Adobe Campaign 是一款用于收集和处理超大量数据（包括个人信�
 
 * 避免发送未经请求的电子邮件、推送通知和短信（“垃圾邮件”）。为了实现客户终生价值并提高客户忠诚度，Adobe 坚信许可营销原则，并因此严格禁止使用 Adobe Campaign 发送未经请求的消息。
 
-请查看[安全和隐私检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)，了解有关安全和隐私方面需要检查的核心元素。
+请查看[安全和隐私检查列表](../../installation/using/get-started-security-privacy.md)，了解有关安全和隐私方面需要检查的核心元素。
 
 ### 隐私法规 {#privacy-regulations}
 
