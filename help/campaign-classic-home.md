@@ -5,7 +5,7 @@ product: campaign
 title: Adobe Campaign Classic 产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 832d81c02c590afbe933f9ba63accbc0ba82f180
+source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 54%
@@ -21,7 +21,7 @@ ht-degree: 54%
 
 * **[更新您的APNs](technotes/ios-certificate-update.md)**<br/> 证书2021年3月29日，APNs更新将影响活动 iOS渠道。您需要更新配置以避免iOS推送渠道中断。
 
-* **[通过IMS/Adobe ID连接？升级到最新版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS连接到活动，则必须升级才能在2021年3月31日**&#x200B;之后连接到活动。**
+* **[通过IMS/Adobe ID连接？升级到最新版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS连接到活动，则必须升级才能在2021年6月30日**&#x200B;之后连接到活动&#x200B;**。
 
 * **[保护您的活动实](https://helpx.adobe.com/cn/campaign/kb/gold-standard-upgrade.html)**<br/> 例更新到最新版本以保护您的活动平台。
 
