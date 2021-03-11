@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
 workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -25,7 +25,7 @@ _2020年12月22日_
 
 >[!CAUTION]
 >
-> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须进行升级，才能在&#x200B;**2021 年 3 月 31 日**&#x200B;之后连接到 Campaign。
+> * 此版本附带新的连接协议：如果您通过Adobe Identity Service(IMS)连接到活动，则活动服务器和客户端控制台都必须进行升级，才能在2021年6月30日&#x200B;**之后连接到活动**。
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
 > * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
 
