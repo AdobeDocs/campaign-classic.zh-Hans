@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: e6f6cfe1c1aa0d896fb6400d63b6023a983c6192
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 100%
@@ -35,7 +35,7 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ![](assets/do-not-localize/blue3.png) **发布候选项** (RC) - 具有新功能的最新版本。
 
-**最后一个 RC 版本**[是 Campaign Classic 20.3 版本](../../rn/using/latest-release.md)
+**最后一个 RC 版本**[是 Campaign Classic 21.1 版本](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/red3.png) **已弃用** -无部署。必须升级现有实施。
 
