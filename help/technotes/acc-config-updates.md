@@ -6,10 +6,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 87844fae046dff69193d3462c802057499f406ef
+source-git-commit: 248c74485e8e5889ca630c8f60ac2fa085204c51
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 5%
+source-wordcount: '896'
+ht-degree: 4%
 
 ---
 
@@ -69,23 +69,33 @@ Adobe标识服务(IMS)将从2021年6月30日起停止支持旧版Internet Explor
 
 **您是否受影响？**
 
-如果您通过Adobe ID](../integrations/using/about-adobe-id.md)连接到活动 [，则必须通过Adobe Identity Service(IMS)升级到以上列出的某个新版本，活动服务器和客户端控制台才能在2021年6月30日&#x200B;**之后连接到活动。**
+如果您通过Adobe ID](../integrations/using/about-adobe-id.md)通过活动 Identity Service(IMS)连接到Adobe [，则必须升级到以上列出的某个新版本。 这些版本附带了新的连接协议：升级对于活动服务器和客户端控制台都是必需的，这样才能在2021年6月30日&#x200B;**之后连接到活动**。
 
 **如何更新？**
 
 作为托管客户，无需执行任何操作：Adobe已将您的实例升级到较新版本。
 
-作为内部部署/混合型客户，您需要升级到某个较新版本，以从新的客户端控制台中受益，并确保在2021年3月31日之前实现&#x200B;**的无缝过渡。**
+作为内部部署/混合型客户，您需要升级到某个较新版本，以从新的客户端控制台中受益，并确保在2021年6月30日之前实现&#x200B;**的无缝过渡。**
+
+升级所有实例后，客户端控制台也需要升级到此版本。
+
+* 了解如何访问[Adobe软件分发](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)。
+
+* [了解如何安装活动客户端控制台](../installation/using/installing-the-client-console.md)。
 
 ## 与Experience Cloud触发器集成
 
-旧版身份验证服务已到期，将于2021年6月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。
+旧版身份验证服务已到期。 触发集成身份验证（最初基于oAUTH身份验证设置以访问管道）已移至Adobe I/O。2021年6月30日退休。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。
 
 **您是否受影响？**
 
 如果您使用的是通过身份验证进行触发器集成的旧版本，**您需要移动到Adobe I/O**。
 
 **如何更新？**
+
+实例升级到较新版本后，所有客户都需要按照[过程移动到新的身份验证模式](../integrations/using/configuring-adobe-io.md)。 这需要生成新的Adobe I/O令牌并在实现中使用它。  
+
+此外，对于混合环境，客户需要确保在中间源实例上配置管道。 [了解详情](../integrations/using/configuring-pipeline.md)。
 
 [了解如何迁移到Adobe I/O](../integrations/using/configuring-adobe-io.md)。
 
@@ -119,4 +129,4 @@ Adobe标识服务(IMS)将从2021年6月30日起停止支持旧版Internet Explor
 
 作为内部部署/混合型客户，您需要更新配置以确保在2021年3月29日之前实现&#x200B;**的无缝过渡。**
 
-[了解如何合并新证书](ios-certificate-update.md)
+[了解如何合并新证书](ios-certificate-update.md)。
