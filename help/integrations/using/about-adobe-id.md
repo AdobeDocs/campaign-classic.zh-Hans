@@ -7,7 +7,7 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 24%
@@ -29,7 +29,7 @@ Adobe Identity Management系统(IMS)帮助管理员创建和管理用户对应�
 
 >[!IMPORTANT]
 >
->如果要通过Adobe Identity Service(IMS)连接到活动，则需要升级到最新版本，才能在2021年3月31日&#x200B;**之后连接到活动。**&#x200B;此升级对于活动服务器和客户端控制台都是必需的。 根据当前版本，您必须升级到以下版本之一：
+>如果要通过Adobe Identity Service(IMS)连接到活动，则需要升级到最新版本，才能在2021年6月30日&#x200B;**之后连接到活动**。 此升级对于活动服务器和客户端控制台都是必需的。 根据当前版本，您必须升级到以下版本之一：
 >
 > * [活动 Gold Standard 11](../../rn/using/gold-standard.md)
 > * [活动 20.3.3](../../rn/using/latest-release.md)
@@ -37,6 +37,7 @@ Adobe Identity Management系统(IMS)帮助管理员创建和管理用户对应�
 > * [活动 20.1.4](../../rn/using/release--20-1.md)
 > * [活动 19.2.4](../../rn/using/release--19-2.md)
 > * [活动 19.1.8](../../rn/using/release--19-1.md)
+
 >
 
 
