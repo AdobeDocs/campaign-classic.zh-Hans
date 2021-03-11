@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 93dc5a16ce4880c132f4f91c72794892b00e7259
+source-git-commit: 87844fae046dff69193d3462c802057499f406ef
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 5%
@@ -38,16 +38,17 @@ ht-degree: 5%
 
 最新的活动版本附带一个安全修复，可增强针对服务器端请求伪造(SSRF)问题的保护。 请阅读本页](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)了解更多信息。[
 
-### 您是否受影响？
+**您是否受影响？**
 
 如果您的环境的内部版本低于活动 21.1，则您会受到影响。
 
-## 如何更新？
+**如何更新？**
 
 您需要升级到上面列出的某个较新版本。
 
 * 作为混合型客户，Adobe会将中间源实例升级到新版本，并且强烈建议您也升级其营销实例。
-新版本至少与Campaign Classic 17.9版本兼容，但为防止任何安全漏洞，Adobe强烈建议将所有实例升级到新版本。 
+
+   新版本至少与Campaign Classic 17.9版本兼容，但为防止任何安全漏洞，Adobe强烈建议将所有实例升级到新版本。 
 
 * 作为预置型客户，系统会要求您将营销和中间源实例升级到新版本。
 
@@ -64,13 +65,13 @@ ht-degree: 5%
 
 ## 通过IMS连接到活动
 
-Adobe标识服务(IMS)将从2021年3月31日起停止支持旧版Internet Explorer。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。活动控制台已更新，以确保与IMS兼容。
+Adobe标识服务(IMS)将从2021年6月30日起停止支持旧版Internet Explorer。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。活动控制台已更新，以确保与IMS兼容。
 
-### 您是否受影响？
+**您是否受影响？**
 
-如果您通过Adobe ID](../integrations/using/about-adobe-id.md)连接到活动 [，则必须通过Adobe Identity Service(IMS)升级到以上列出的某个新版本，活动服务器和客户端控制台才能在2021年3月31日&#x200B;**之后连接到活动。**
+如果您通过Adobe ID](../integrations/using/about-adobe-id.md)连接到活动 [，则必须通过Adobe Identity Service(IMS)升级到以上列出的某个新版本，活动服务器和客户端控制台才能在2021年6月30日&#x200B;**之后连接到活动。**
 
-### 如何更新？
+**如何更新？**
 
 作为托管客户，无需执行任何操作：Adobe已将您的实例升级到较新版本。
 
@@ -78,13 +79,13 @@ Adobe标识服务(IMS)将从2021年3月31日起停止支持旧版Internet Explor
 
 ## 与Experience Cloud触发器集成
 
-旧版身份验证服务已到期，将于2021年4月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。
+旧版身份验证服务已到期，将于2021年6月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。
 
-### 您是否受影响？
+**您是否受影响？**
 
 如果您使用的是通过身份验证进行触发器集成的旧版本，**您需要移动到Adobe I/O**。
 
-### 如何更新？
+**如何更新？**
 
 [了解如何迁移到Adobe I/O](../integrations/using/configuring-adobe-io.md)。
 
@@ -92,11 +93,11 @@ Adobe标识服务(IMS)将从2021年3月31日起停止支持旧版Internet Explor
 
 自2021年3月31日起，Apple推送通知服务(APNs)将不再支持旧版二进制协议。 [阅读更多](https://developer.apple.com/news/?id=c88acm2b)。
 
-### 您是否受影响？
+**您是否受影响？**
 
 如果您的实例在比活动 21.1旧版本上运行，并使用旧版Apple二进制协议发送推送通知，则需要更新到基于HTTP/2的APNs提供程序API。
 
-### 如何更新？
+**如何更新？**
 
 作为托管客户，无需执行任何操作：Adobe已将您的实例更新为基于HTTP/2的API。
 
@@ -108,11 +109,11 @@ Adobe标识服务(IMS)将从2021年3月31日起停止支持旧版Internet Explor
 
 了解有关APNs更改[的更多信息，请参阅本页](https://developer.apple.com/news/?id=7gx0a2lp)。
 
-### 您是否受影响？
+**您是否受影响？**
 
 如果您使用活动在iOS设备上发送推送通知，则会受到影响。
 
-### 如何更新？
+**如何更新？**
 
 作为托管客户，无需执行任何操作：Adobe已将新根证书并入您的环境。
 
