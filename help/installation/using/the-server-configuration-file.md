@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 2de8261feda6e64a84bd82e9fb71bc1fddf77113
+source-git-commit: 1bd40c6acaceb1bb4839807ae89c6956bc2b8d69
 workflow-type: tm+mt
-source-wordcount: '7929'
+source-wordcount: '7970'
 ht-degree: 5%
 
 ---
@@ -1690,6 +1690,8 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*
 ### 中继{#relay}
 
 在&#x200B;**mta > relay**&#x200B;节点中，配置以下参数。 这是邮件服务器的邮件投放配置。
+
+列表的处理方式与MX DNS查询返回的MX列表相同，通常只要第一个MX可用，就使用下一个MX，依此类推。
 
 有关详细信息，请参阅[SMTP中继](../../installation/using/configuring-campaign-server.md#smtp-relay)。
 
