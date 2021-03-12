@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
+source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '918'
 ht-degree: 4%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 4%
 
 # Adobe Campaign配置更新 — 2021年3月{#acc-config-updates}
 
-您需要使用最新的构建和产品修复来更新基础架构和设置。 这些修复是确保服务连续性和安全性的必修程序。
+您必须使用最新的构建和产品修复来更新您的基础架构和设置。 这些修复是确保服务连续性和安全性的必修程序。
 
-活动用户需要升级到以下某个最新版本：
+活动用户必须升级到以下某个最新版本：
 
 * 金标11。 [了解详情](../rn/using/gold-standard.md)
 * 活动 21.1.1版。 [了解详情](../rn/using/latest-release.md)
@@ -32,7 +32,11 @@ ht-degree: 4%
 
 作为托管客户，Adobe将定期通知您所需的构建升级。 您需要根据建议进行升级，以确保合规性。
 
-作为内部部署/混合客户，您需要升级到以上列出的某个版本。 此外，还必须执行一些手动任务，以确保环境安全，并且准备好随时从Adobe或第三方系统进行更改。
+作为内部部署/混合客户，您必须升级到以上列出的某个版本。 此外，还必须执行一些手动任务，以确保您的环境是安全的，并且准备好随时从Adobe或第三方系统进行更改。
+
+>[!NOTE]
+>
+>有关这些更改的任何问题，请联系[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 ## 安全更新
 
@@ -69,7 +73,7 @@ Adobe标识服务(IMS)将从2021年6月30日起停止支持旧版Internet Explor
 
 **您是否受影响？**
 
-如果您通过Adobe ID](../integrations/using/about-adobe-id.md)通过活动 Identity Service(IMS)连接到Adobe [，则必须升级到以上列出的某个新版本。 这些版本附带了新的连接协议：升级对于活动服务器和客户端控制台都是必需的，这样才能在2021年6月30日&#x200B;**之后连接到活动**。
+如果您通过Adobe ID](../integrations/using/about-adobe-id.md)通过活动 Identity Service(IMS)连接到Adobe [，则必须升级到以上列出的某个新版本。 这些版本附带新的连接协议：升级对于活动服务器和客户端控制台都是必需的，这样才能在2021年6月30日&#x200B;**之后连接到活动**。
 
 **如何更新？**
 
