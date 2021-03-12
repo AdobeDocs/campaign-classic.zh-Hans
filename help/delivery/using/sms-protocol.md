@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
+source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
 workflow-type: tm+mt
 source-wordcount: '8458'
 ht-degree: 0%
@@ -718,7 +718,7 @@ SR格式未严格由SMPP协议规范执行。 它只是说明书[附录B](../../
 
 >[!IMPORTANT]
 >
->在Adobe Campaign Classic和混合架构中，对扩展SMPP连接器应用自动回复要求在&#x200B;**外部帐户**&#x200B;文件夹上为mid运算符添加写访问。
+>在Adobe Campaign Classic和混合架构中，对扩展SMPP连接器应用自动回复要求在&#x200B;**外部帐户**&#x200B;文件夹上为mid运算符添加写访问权。
 
 此功能允许快速将文本回复给MO并处理发送给的每短代码阻止列表。
 
