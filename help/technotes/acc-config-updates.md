@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: df04057716726a74196add3fbc400fffaca26fc9
+source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '905'
 ht-degree: 4%
 
 ---
@@ -30,9 +30,9 @@ ht-degree: 4%
 
 这些构建可确保某些活动服务的连续性：Experience Cloud触发集成、APNs身份验证和影响Adobe Identity Management Service(IMS)身份验证机制的新连接协议。
 
-作为托管客户，无需执行任何操作：Adobe为您提供了构建升级和配置更新。
+作为托管客户，Adobe将定期通知您所需的构建升级。 您需要根据建议进行升级，以确保合规性。
 
-作为内部部署/混合客户，您需要升级到以上列出的某个版本。 此外，您需要执行一些手动任务，以确保环境是安全的，并且准备好迎接即将从Adobe或第三方系统进行的更改。
+作为内部部署/混合客户，您需要升级到以上列出的某个版本。 此外，还必须执行一些手动任务，以确保环境安全，并且准备好随时从Adobe或第三方系统进行更改。
 
 ## 安全更新
 
