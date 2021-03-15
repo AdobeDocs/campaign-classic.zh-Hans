@@ -6,33 +6,21 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 1a7ec4899bc0fab3935c25918c586a20afb88d1a
+source-git-commit: 504a948daa60155b7c4970be24bd6d2049e5395b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '989'
+ht-degree: 6%
 
 ---
 
 
 # Adobe Campaign配置更新 — 2021年3月{#acc-config-updates}
 
-您必须使用最新的构建和产品修复来更新您的基础架构和设置。 这些修复是确保服务连续性和安全性的必修程序。
-
-活动用户必须升级到以下某个最新版本：
-
-* 金标11。 [了解详情](../rn/using/gold-standard.md)
-* 活动 21.1.1版。 [了解详情](../rn/using/latest-release.md)
-* 活动 20.3.3版。 [了解详情](../rn/using/release--20-3.md)
-* 活动 20.2.4版。 [了解详情](../rn/using/release--20-2.md)
-* 活动 20.1.4版。 [了解详情](../rn/using/release--20-1.md)
-* 活动 19.2.4版。 [了解详情](../rn/using/release--19-2.md)
-* 活动 19.1.8版。 [了解详情](../rn/using/release--19-1.md)
-
-这些构建可确保某些活动服务的连续性：Experience Cloud触发集成、APNs身份验证和影响Adobe Identity Management Service(IMS)身份验证机制的新连接协议。
+您必须使用最新的构建和产品修复来更新您的基础架构和设置。 这些修复是确保服务连续性和安全性的必修程序。 此外，您需要调整实施以与第三方更改保持一致。
 
 作为托管客户，Adobe将定期通知您所需的构建升级。 您需要根据建议进行升级，以确保合规性。
 
-作为内部部署/混合客户，您必须升级到以上列出的某个版本。 此外，还必须执行一些手动任务，以确保您的环境是安全的，并且准备好随时从Adobe或第三方系统进行更改。
+作为内部部署/混合客户，出于安全考虑，您必须升级到本页中列出的某个版本。 此外，还必须执行一些手动任务，以确保您的环境是安全的，并且准备好随时从Adobe或第三方系统进行更改。
 
 >[!NOTE]
 >
@@ -44,7 +32,15 @@ ht-degree: 0%
 
 **您是否受影响？**
 
-如果您的环境的内部版本低于活动 19.1.8、19.2.4、20.1.4、20.2.4、20.3.3或金标11，则您会受到影响。
+如果您的环境的内部版本低于下面列出的版本，则您会受到影响：
+
+* 金标11。 [了解详情](../rn/using/gold-standard.md)
+* 活动 21.1.1版。 [了解详情](../rn/using/latest-release.md)
+* 活动 20.3.3版。 [了解详情](../rn/using/release--20-3.md)
+* 活动 20.2.4版。 [了解详情](../rn/using/release--20-2.md)
+* 活动 20.1.4版。 [了解详情](../rn/using/release--20-1.md)
+* 活动 19.2.4版。 [了解详情](../rn/using/release--19-2.md)
+* 活动 19.1.8版。 [了解详情](../rn/using/release--19-1.md)
 
 **如何更新？**
 
@@ -71,13 +67,25 @@ ht-degree: 0%
 >
 >适用于其他版本的新客户端控制台即将推出。
 
-## 通过IMS连接到活动
+## Adobe Identity Management系统(IMS)更新
 
-Adobe标识服务(IMS)将停止支持从2021年6月30日&#x200B;**开始的旧版Internet Explorer**。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。活动客户端控制台已更新，以确保与Adobe IMS兼容。
+Adobe标识服务(IMS)将停止支持从2021年6月30日&#x200B;**开始的旧版Internet Explorer**。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+
+活动 Client Console已更新，以确保与以下活动版本中的Adobe IMS兼容：
 
 **您是否受影响？**
 
-如果您通过Adobe ID](../integrations/using/about-adobe-id.md)通过活动 Identity Service(IMS)连接到Adobe [，则必须升级到以上列出的某个新版本。 这些版本附带新的连接协议：升级是必需的，因为活动 server和Client Console都必须在2021年6月30日&#x200B;**之后才能连接到活动**。
+如果您通过Adobe ID](../integrations/using/about-adobe-id.md)通过活动 Identity Service(IMS)连接到Adobe [，则必须升级到以下列出的某个新版本：
+
+* 金标11。 [了解详情](../rn/using/gold-standard.md)
+* 活动 21.1.1版。 [了解详情](../rn/using/latest-release.md)
+* 活动 20.3.3版。 [了解详情](../rn/using/release--20-3.md)
+* 活动 20.2.4版。 [了解详情](../rn/using/release--20-2.md)
+* 活动 20.1.4版。 [了解详情](../rn/using/release--20-1.md)
+* 活动 19.2.4版。 [了解详情](../rn/using/release--19-2.md)
+* 活动 19.1.8版。 [了解详情](../rn/using/release--19-1.md)
+
+这些版本附带新的连接协议：升级是必需的，因为活动 server和Client Console都必须在2021年6月30日&#x200B;**之后才能连接到活动**。
 
 **如何更新？**
 
@@ -97,7 +105,7 @@ Adobe标识服务(IMS)将停止支持从2021年6月30日&#x200B;**开始的旧�
 
 **您是否受影响？**
 
-如果您的环境的内部版本低于活动 19.1.8、20.2.4和Gold Standard 11，则您使用的是通过身份验证进行触发器集成的旧版本：**您需要移动到Adobe I/O**。
+如果您的实例运行于&#x200B;**较早版本(活动 19.1.8、20.2.4、Gold Standard 11**)上，则您使用的是通过身份验证实现触发器集成的较早版本：**您需要移动到Adobe I/O**。
 
 **如何更新？**
 
@@ -107,13 +115,15 @@ Adobe标识服务(IMS)将停止支持从2021年6月30日&#x200B;**开始的旧�
 
 [了解如何迁移到Adobe I/O](../integrations/using/configuring-adobe-io.md)。
 
-## 基于HTTP/2的APNs提供程序API
+## APNs更新
+
+### 基于HTTP/2的APNs提供程序API
 
 自2021年3月31日&#x200B;****&#x200B;起，Apple推送通知服务(APNs)将不再支持旧版二进制协议。 [阅读更多](https://developer.apple.com/news/?id=c88acm2b)。
 
 **您是否受影响？**
 
-如果您的实例在比活动 21.1旧版本上运行，并使用旧版Apple二进制协议发送推送通知，则需要更新到基于HTTP/2的APNs提供程序API。
+如果您的实例运行于比活动 21.1、**更早的**&#x200B;版本上，并使用旧版Apple二进制协议发送推送通知，则需要更新到基于HTTP/2的APNs提供程序API。
 
 **如何更新？**
 
@@ -121,7 +131,7 @@ Adobe标识服务(IMS)将停止支持从2021年6月30日&#x200B;**开始的旧�
 
 作为内部部署/托管客户，您需要更新配置。 [了解如何迁移到HTTP/2](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)
 
-## APNs根证书更新
+### APNs根证书更新
 
 2021年3月29日，Apple推送通知服务(APNs)基础架构更新将影响Adobe Campaign Classic iOS渠道。 操作系统配置更改为&#x200B;**mandatory**&#x200B;以避免iOS推送渠道中断。
 
