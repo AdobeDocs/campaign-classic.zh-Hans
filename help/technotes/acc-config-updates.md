@@ -6,10 +6,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: c9e3d12f8975b2c87f6f4aaf306fae71803786ad
+source-git-commit: 1a7ec4899bc0fab3935c25918c586a20afb88d1a
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -63,22 +63,21 @@ ht-degree: 4%
 
 ## 活动客户端控制台更新
 
-最新的Gold Standard 11版本修复了一个回归问题，该问题会阻止使用控制台的某些组件，如投放中的日期选择器和图像管理。 Console升级是必需的。
+最新的Gold Standard 11版本修复了一个回归问题，该问题会阻止使用客户端控制台的某些组件，如投放中的日期选择器和图像管理。 Console升级是必需的。
 
 [了解详情](../rn/using/gold-standard.md)。
 
-
 >[!NOTE]
 >
->很快将提供其他版本的更新。
+>适用于其他版本的新客户端控制台即将推出。
 
 ## 通过IMS连接到活动
 
-Adobe标识服务(IMS)将从2021年6月30日起停止支持旧版Internet Explorer。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。活动控制台已更新，以确保与IMS兼容。
+Adobe标识服务(IMS)将停止支持从2021年6月30日&#x200B;**开始的旧版Internet Explorer**。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。活动客户端控制台已更新，以确保与Adobe IMS兼容。
 
 **您是否受影响？**
 
-如果您通过Adobe ID](../integrations/using/about-adobe-id.md)通过活动 Identity Service(IMS)连接到Adobe [，则必须升级到以上列出的某个新版本。 这些版本附带新的连接协议：升级对于活动服务器和客户端控制台都是必需的，这样才能在2021年6月30日&#x200B;**之后连接到活动**。
+如果您通过Adobe ID](../integrations/using/about-adobe-id.md)通过活动 Identity Service(IMS)连接到Adobe [，则必须升级到以上列出的某个新版本。 这些版本附带新的连接协议：升级是必需的，因为活动 server和Client Console都必须在2021年6月30日&#x200B;**之后才能连接到活动**。
 
 **如何更新？**
 
@@ -90,7 +89,7 @@ Adobe标识服务(IMS)将从2021年6月30日起停止支持旧版Internet Explor
 
 * 了解如何访问[Adobe软件分发](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)。
 
-* [了解如何安装活动客户端控制台](../installation/using/installing-the-client-console.md)。
+* [了解如何安装活动 Client Console](../installation/using/installing-the-client-console.md)。
 
 ## 与Experience Cloud触发器集成
 
@@ -110,7 +109,7 @@ Adobe标识服务(IMS)将从2021年6月30日起停止支持旧版Internet Explor
 
 ## 基于HTTP/2的APNs提供程序API
 
-自2021年3月31日起，Apple推送通知服务(APNs)将不再支持旧版二进制协议。 [阅读更多](https://developer.apple.com/news/?id=c88acm2b)。
+自2021年3月31日&#x200B;****&#x200B;起，Apple推送通知服务(APNs)将不再支持旧版二进制协议。 [阅读更多](https://developer.apple.com/news/?id=c88acm2b)。
 
 **您是否受影响？**
 
@@ -139,3 +138,11 @@ Adobe标识服务(IMS)将从2021年6月30日起停止支持旧版Internet Explor
 作为内部部署/混合型客户，您需要更新配置以确保在2021年3月29日之前实现&#x200B;**的无缝过渡。**
 
 [了解如何合并新证书](ios-certificate-update.md)。
+
+
+## 有用的链接
+
+* [升级您的环境](../production/using/build-upgrade.md)
+* [构建升级常见问题解答](../platform/using/faq-build-upgrade.md)
+* [下载Campaign Classic构建](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [使新客户端控制台可供用户使用](../installation/using/client-console-availability-for-windows.md)
