@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+source-git-commit: 6b81d0ea22bf9d8f33e486535b4ce02fbae7b9ae
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '219'
+ht-degree: 7%
 
 ---
 
@@ -24,9 +24,7 @@ ht-degree: 0%
 * 脚本无法直接访问数据库（SQL函数和API函数不可用），
 * Adobe Campaign必须能够检测URL，以便跟踪链接。 [了解详情](detecting-tracking-urls.md)
 
-您可以在这些URL中添加[特定的预处理指令](pre-processing-instructions.md)
-
-预处理指令。
+您可以添加特定的预处理说明来编写URL的脚本并跟踪它。 [了解详情](pre-processing-instructions.md)
 
 对于跟踪检测，Adobe Campaign嵌入[Tidy](http://www.html-tidy.org/)以分析HTML源并检测模式。 它会列表内容的所有URL，以便可以单独跟踪它们。 Adobe Campaign再次使用“整洁”将URL(`http://myurl.com`)替换为指向Adobe Campaign重定向服务器的URL。
 
