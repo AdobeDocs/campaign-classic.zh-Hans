@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
+source-git-commit: c9e3d12f8975b2c87f6f4aaf306fae71803786ad
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '941'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 4%
 
 **您是否受影响？**
 
-如果您的环境的内部版本低于活动 21.1，则您会受到影响。
+如果您的环境的内部版本低于活动 19.1.8、19.2.4、20.1.4、20.2.4、20.3.3或金标11，则您会受到影响。
 
 **如何更新？**
 
@@ -66,6 +66,11 @@ ht-degree: 4%
 最新的Gold Standard 11版本修复了一个回归问题，该问题会阻止使用控制台的某些组件，如投放中的日期选择器和图像管理。 Console升级是必需的。
 
 [了解详情](../rn/using/gold-standard.md)。
+
+
+>[!NOTE]
+>
+>很快将提供其他版本的更新。
 
 ## 通过IMS连接到活动
 
@@ -93,7 +98,7 @@ Adobe标识服务(IMS)将从2021年6月30日起停止支持旧版Internet Explor
 
 **您是否受影响？**
 
-如果您使用的是通过身份验证进行触发器集成的旧版本，**您需要移动到Adobe I/O**。
+如果您的环境的内部版本低于活动 19.1.8、20.2.4和Gold Standard 11，则您使用的是通过身份验证进行触发器集成的旧版本：**您需要移动到Adobe I/O**。
 
 **如何更新？**
 
