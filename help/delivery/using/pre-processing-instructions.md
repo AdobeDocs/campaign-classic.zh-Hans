@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 7a58da8fd20abbff9dcf8361536310de49a7905f
+source-git-commit: 8aab4bc23d688aa225cfc636936cf2835840e410
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -24,8 +24,8 @@ ht-degree: 1%
 有三种说明类型：
 
 * **[!DNL include]**:主要是将选项、个性化块、外部文件或页面中的某些代码分解。[了解详情](#include)
-* &quot;**[!DNL value]**&quot;:可访问投放、投放变量和加载到投放中的自定义对象的字段。 [了解详情](#value)
-* &quot;**[!DNL foreach]**&quot;:以循环作为自定义对象加载的数组。 [了解详情](#foreach)
+* **[!DNL value]**:可访问投放、投放变量和加载到投放中的自定义对象的字段。[了解详情](#value)
+* **[!DNL foreach]**:以循环作为自定义对象加载的数组。[了解详情](#foreach)
 
 可以直接从投放向导中测试。 它们会在内容预览中应用，当您单击跟踪按钮时，您会看到URL的列表。
 
@@ -74,8 +74,8 @@ ht-degree: 1%
 地点：
 
 * **[!DNL object]**:对象的名称(示例：投放、提供商等)。对象可以是：
-   * “投放”：当前投放（请参阅下文小节中的详细信息和限制）。
-   * “提供者”：对于当前投放提供者/路由(nms:externalAccount)。
+   * **[!DNL delivery]**:当前投放（请参阅下文小节中的详细信息和限制）。
+   * **[!DNL provider]**:对于当前投放提供者/路由(nms:externalAccount)。
    * 额外的脚本对象：如果对象通过以下方式加载到上下文中：**属性** > **个性化** > **在执行上下文中添加对象**。
    * foreach循环的项：请参见下面的[Foreach](#foreach)部分。
 * **[!DNL xpath]**:字段的xpath。
@@ -100,22 +100,28 @@ ht-degree: 1%
    ```
 
 
->[!NOTE]
->
->* 对于`<%@ value object="delivery" xpath="@myCustomField" %>`指令，对通过中间源发送的投放存在另一限制。 必须将自定义字段@myCustomField添加到营销和中间源平台上的nms:投放模式。
-   >
-   >
-* 对于投放参数/变量，请使用以下语法(使用投放对象):
->
->
-`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
+**警告**
+
+如果您正在对通过中间源发送的投放使用以下说明，则必须在营销和中间源平台的nms:投放模式中添加自定义字段&#x200B;**@myCustomField**:
+
+```
+<%@ value object="delivery" xpath="@myCustomField" %>
+```
+
+对于投放参数/变量，请使用以下语法(使用投放对象):
+
+```
+<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
+```
 
 ### [!DNL value] 在Javascript部分  {#value-in-javascript}
 
 要允许在Javascript部分中使用&lt;%@值，两个特殊对象将替换为&lt;%和%>:
 
-* `<%@ value object='startScript' %>`
-* `<%@ value object='endScript' %>`
+```
+<%@ value object='startScript' %>
+<%@ value object='endScript' %>
+```
 
 例如：
 
