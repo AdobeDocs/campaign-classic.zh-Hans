@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: e6f6cfe1c1aa0d896fb6400d63b6023a983c6192
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '436'
 ht-degree: 100%
 
 ---
@@ -62,7 +62,7 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ## 支持和其他有用链接{#support}
 
-* [帮助与支持](https://helpx.adobe.com/cn/campaign/kb/ac-support.html#acc-support)
+* [帮助与支持](https://helpx.adobe.com/cn/campaign/kb/ac-support.html)
 * [控制面板版本](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)
 * [最新文档更新](../../rn/using/documentation-updates.md)
 * [已弃用和已删除的功能](../../rn/using/deprecated-features.md)
