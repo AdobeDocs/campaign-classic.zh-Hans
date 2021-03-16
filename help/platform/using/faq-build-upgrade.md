@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '2017'
-ht-degree: 2%
+source-wordcount: '2015'
+ht-degree: 3%
 
 ---
 
@@ -168,7 +168,7 @@ Adobe在进行任何更改之前将备份您的系统。 但是，如果非生�
 
 如果在构建升级后遇到问题，请联系[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客户关怀计划构建日期并打开构建升级相关票证。
 
-有关Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)的[帮助和支持选项，请参阅
+有关Campaign Classic](https://helpx.adobe.com/cn/campaign/kb/ac-support.html)的[帮助和支持选项，请参阅
 
 ## 构建升级清单{#check-list}
 
@@ -208,5 +208,5 @@ Adobe在进行任何更改之前将备份您的系统。 但是，如果非生�
 
 * [执行内部版本升级](../../production/using/build-upgrade.md)
 * [Campaign Classic发行说明](../../rn/using/rn-overview.md)
-* [有关Campaign Classic的帮助和支持选项](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [有关Campaign Classic的帮助和支持选项](https://helpx.adobe.com/campaign/kb/ac-support.html)
 * [金本位项目](https://helpx.adobe.com/campaign/kb/gold-standard.html)
