@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: 63b2e6b95812f1649e636580984a1f0dcc9c5c53
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '135'
 ht-degree: 2%
 
 ---
@@ -28,9 +28,9 @@ ht-degree: 2%
 
 ## 数据库
 
-您必须遵循数据库引擎的安全性。
+您必须应用数据库引擎安全最佳实践。
 
-### SSL/TLS配置*
+## SSL/TLS配置
 
 要检查证书，可使用openssl。 要检查活动密码，您可以使用nmap:
 
