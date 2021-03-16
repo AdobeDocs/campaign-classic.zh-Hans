@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 1233eef1d7b454daea021e1e3077890284813d9a
+source-git-commit: 849a95c718f9dc58aeabc8a49d3bf8290ea79b86
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1031'
 ht-degree: 7%
 
 ---
@@ -101,7 +101,7 @@ Adobe标识服务(IMS)将停止支持从2021年6月30日&#x200B;**开始的旧�
 
 ## 与Experience Cloud触发器集成
 
-旧版身份验证服务已到期。 触发集成身份验证（最初基于oAUTH身份验证设置以访问管道）已移至Adobe I/O。它将于2021年4月30日&#x200B;****&#x200B;退休。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。
+旧版身份验证服务已到期。 触发集成身份验证（最初基于访问管道的oAuth身份验证设置）已移至Adobe I/O。它将于2021年4月30日&#x200B;****&#x200B;退休。 [了解详情](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email)。
 
 **您是否受影响？**
 
