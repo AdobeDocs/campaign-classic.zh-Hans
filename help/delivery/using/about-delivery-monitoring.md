@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 54ba9d2ee05b1bd7de7616142e8ad6bcbac5f8eb
+source-git-commit: bc35a95d7deed1f0fd432ef8639f307ecf4d8e1f
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 14%
@@ -38,8 +38,8 @@ ht-degree: 14%
 
 应遵循若干准则，以确保您的投放表现良好。 您也可以在发送投放时遇到的常见问题，帮助您高效发送投放。
 
-* [投放表现和最佳实践](../../delivery/using/list-of-deliveries.md)
-* [投放发送疑难解答](../../delivery/using/delivery-dashboard.md)
+* [投放表现和最佳实践](../../delivery/using/delivery-performances.md)
+* [投放发送疑难解答](../../delivery/using/delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
