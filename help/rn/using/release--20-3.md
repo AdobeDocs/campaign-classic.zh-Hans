@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 版本 20.3
-description: 版本 20.3
+title: 20.3 版
+description: 20.3 版
 audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
@@ -15,7 +15,7 @@ ht-degree: 95%
 ---
 
 
-# 版本 20.3{#release-20-3}
+# 20.3 版{#release-20-3}
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.3.3 - 版本 9234 {#release-20-3-3-build-9234}
 
@@ -24,7 +24,7 @@ _2021年1月11日_
 * 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
 * 修复了与 broadlog 生成过程相关的回归问题，该问题可能导致 MTA 进程崩溃。
 
-## ![](assets/do-not-localize/red_2.png) 版本 20.3.1 - 版本 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/red_2.png) 20.3.1 版 - 内部版本 9228 {#release-20-3-1-build-9228}
 
 _2020 年 10 月 27 日_
 
@@ -77,7 +77,7 @@ _2020 年 10 月 27 日_
 
 **安全性增强**
 
-* 库的安全加载：为了防止 DLL 预加载攻击，Campaign 现在在加载 Campaign 客户端 (nlclient) 时仅从 Windows 默认系统 DLL 路径加载 Windows DLL。[了解详情](https://support.microsoft.com/en-us/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
+* 库的安全加载：为了防止 DLL 预加载攻击，Campaign 现在在加载 Campaign 客户端 (nlclient) 时仅从 Windows 默认系统 DLL 路径加载 Windows DLL。[了解详情](https://support.microsoft.com/zh-cn/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
 * 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 攻击的防范。(NEO-25661)
 * 修复了处理 GDPR 隐私请求时发生的问题，该问题导致无法从与收件人表具有二级关系的自定义表中删除记录。(NEO-25967)
 * 修复了在尝试同步 Adobe Experience Manager 模板时使用非管理员用户发出的 API 调用的安全问题。(NEO-23487)
