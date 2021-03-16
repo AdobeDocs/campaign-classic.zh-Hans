@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 2a82c1f67d8bc6d8499383a600a003480e82510f
 workflow-type: tm+mt
 source-wordcount: '2464'
-ht-degree: 56%
+ht-degree: 57%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 56%
       + [Gold Standard发行说明](rn/using/gold-standard.md)
       + [Gold Standard兼容性表](rn/using/compatibility-matrix-gs.md)
    + 先前版本{#previous-releases}
-      + [版本 20.3](rn/using/release--20-3.md)
+      + [20.3 版](rn/using/release--20-3.md)
       + [版本 20.2](rn/using/release--20-2.md)
       + [版本 20.1](rn/using/release--20-1.md)
       + [版本 19.2](rn/using/release--19-2.md)
@@ -182,7 +182,7 @@ ht-degree: 56%
       + [用例：根据条件选择种子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
       + [用例：配置字段替换](delivery/using/use-case--configuring-the-field-substitution.md)
    + A/B 测试 {#a-b-testing}
-      + [A/B测试入门](delivery/using/get-started-a-b-testing.md)
+      + [A/B 测试入门](delivery/using/get-started-a-b-testing.md)
       + [配置A/B测试](delivery/using/configuring-a-b-testing.md)
       + 用例 {#use-case}
          + [关于此用例](delivery/using/a-b-testing-use-case.md)
@@ -229,7 +229,7 @@ ht-degree: 56%
       + [收件箱呈现](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [重新参与最佳实践](delivery/using/re-engagement-best-practices.md)
-      + [阻止列表数据库](delivery/using/block-list-databases.md)
+      + [列入阻止列表数据库](delivery/using/block-list-databases.md)
       + [故障排除](delivery/using/deliverability-faq.md)
    + 内容管理模块 {#content-management}
       + [关于内容管理](delivery/using/about-content-management.md)
