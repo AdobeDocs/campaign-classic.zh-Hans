@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '4170'
-ht-degree: 93%
+source-wordcount: '4193'
+ht-degree: 97%
 
 ---
 
@@ -22,6 +22,8 @@ ht-degree: 93%
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
 ## 2021 年 3 月 {#march-2021}
+
+新页面已添加指南和参考，以获得有关Campaign Classic的支持。 [了解详情](https://helpx.adobe.com/cn/campaign/kb/ac-support.html)
 
 新增了一节，其中包含有关安全性和隐私的最佳实践和检查。 [阅读更多](../../installation/using/get-started-security-privacy.md)
 
@@ -38,29 +40,29 @@ ht-degree: 93%
 
 ## 2021 年 2 月 {#release-21.1}
 
-**21.1版本随附的文档更新**
+**随 21.1 版提供的文档更新**
 
-新的&#x200B;**电子邮件反馈服务**&#x200B;功能（私有测试版）在[此处](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)中有说明。
+新的&#x200B;**电子邮件反馈服务**&#x200B;功能（私人测试版）在[此处](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)有文档说明。
 
-**服务器配置文件**&#x200B;部分已更新为活动使用IMS连接到其他服务所需的配置参数。 [阅读更多](../../installation/using/the-server-configuration-file.md#ims)
+**服务器配置文件**&#x200B;部分已更新了 Campaign 使用 IMS 连接到其他服务所需的配置参数。 [阅读更多](../../installation/using/the-server-configuration-file.md#ims)
 
-在投放状态列表下，**服务提供商**&#x200B;考虑的说明已更新：此状态现在也用于使用[电子邮件反馈服务](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)发送的电子邮件投放。 [阅读更多](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+在投放状态列表中，**Taken into account by the service provider（服务提供商已考虑）**&#x200B;的说明已更新：此状态现在也用于使用[电子邮件反馈服务](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)发送的电子邮件投放。[阅读更多](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
 
-新登录屏幕上可用于连接到Adobe Campaign的键盘快捷键现在有文档说明。 [阅读更多](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
+新登录屏幕上可用于连接到 Adobe Campaign 的键盘快捷键现在有文档说明。 [阅读更多](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
 
 **其他更新**
 
-新增了一节，其中详细介绍了如何使用工作流执行A/B测试。 [阅读更多](../../delivery/using/get-started-a-b-testing.md)
+新增了一个章节，详细介绍了如何使用工作流执行 A/B 测试。[阅读更多](../../delivery/using/get-started-a-b-testing.md)
 
-“Adobe Campaign增强的MTA”部分已移动[此处](../../delivery/using/sending-with-enhanced-mta.md)。
+“Adobe Campaign 增强 MTA”部分已移动至[此处](../../delivery/using/sending-with-enhanced-mta.md)。
 
-添加了一个新页面，以概述[!DNL Campaign Classic]中的跟踪功能。 [阅读更多](../../delivery/using/about-message-tracking.md)
+新增了一个页面，概述了 [!DNL Campaign Classic] 中的跟踪功能。[阅读更多](../../delivery/using/about-message-tracking.md)
 
-添加了疑难解答部分，以帮助您解决与跟踪相关的常见问题。 [阅读更多](../../delivery/using/tracking-troubleshooting.md)
+新增了疑难解答部分，以帮助您解决与跟踪相关的常见问题。[阅读更多](../../delivery/using/tracking-troubleshooting.md)
 
-**发送电子邮件**&#x200B;部分已重新组织，并用新子部分进行了澄清。 [阅读更多](../../delivery/using/sending-messages.md)
+**发送电子邮件**&#x200B;部分已重新组织，并增加了新的小节以提供进一步的说明。[阅读更多](../../delivery/using/sending-messages.md)
 
-添加了有关如何在电子邮件中添加可个性化链接和支持跟踪的信息。 [阅读更多](../../delivery/using/tracking-personalized-links.md)。
+新增了有关如何在电子邮件中添加可个性化并支持跟踪的链接的信息。[阅读更多](../../delivery/using/tracking-personalized-links.md)。
 
 ## 2021 年 1 月 {#jan-2021}
 
