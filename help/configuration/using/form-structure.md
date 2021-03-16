@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f82f71f4eed44f4f12ab7a65188d25ff6c552d35
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 窗体结构{#form-structure}
 
-表单的描述是一种结构化的XML文档，它观察表单模式&#x200B;**xtk:form**&#x200B;的语法。
+表单的描述是一种结构化XML文档，它观察表单模式&#x200B;**xtk:form**&#x200B;的语法。
 
 输入表单的XML文档必须包含`<form>`根元素，其中&#x200B;**name**&#x200B;和&#x200B;**命名空间**&#x200B;属性用于填充表单名称和命名空间。
 
@@ -235,7 +235,7 @@ ht-degree: 0%
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**:测试字符串类型数据的等式。比较值必须用引号括起来。
 * **visibleIf=&quot;@gender >= 1和@gender != 2&quot;**:条件。
-* **visibleIf=&quot;@boolean1==true或@boolean2==false&quot;**:测试布尔字段。
+* **visibleIf=&quot;@boolean1=true或@boolean2=false&quot;**:测试布尔字段。
 
 #### 启用容器{#enabling-container}
 
@@ -555,9 +555,9 @@ ht-degree: 0%
 
 ### 更新上下文{#updating-the-context}
 
-要修改表单的上下文，请使用&#x200B;**`<set expr="<value>" xpath="<field>"/>`**&#x200B;标签，其中&#x200B;**`<field>`**&#x200B;是目标字段，**`<value>`**&#x200B;是更新表达式或值。
+要修改表单的上下文，请使用`<set expr="<value>" xpath="<field>"/>`标签，其中`<field>`是目标字段，`<value>`是更新表达式或值。
 
-**`<set>`**&#x200B;标签的使用示例：
+`<set>`标签的使用示例：
 
 * **`<set expr="'Test'" xpath="/tmp/@test" />`**:将“Test”值定位在临时位置/tmp/@test1
 * **`<set expr="'Test'" xpath="@lastName" />`**:使用“Test”值更新“lastName”属性上的实体
