@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25673f33c626edd5b7f4c7ba240364b3ea8d616a
+source-git-commit: 42166334d361ffdac13842cd9d07ca7c9859bbb2
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '580'
 ht-degree: 6%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->如果您使用的是通过身份验证进行触发器集成的旧版本，**您需要按如下所述移动到Adobe I/O。**&#x200B;旧版 oAuth 身份验证模式将于 2021 年 4 月 30 日停用。[了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>如果您使用的是通过身份验证进行触发器集成的旧版本，**您需要按如下所述移动到Adobe I/O。**&#x200B;旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。[了解详情](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email)。
 >
->请注意，在移动到Adobe I/O期间，某些传入触发器可能会丢失。
+>请注意，在移动到[!DNL Adobe I/O]期间，某些传入触发器可能会丢失。
 
 ## 先决条件{#adobe-io-prerequisites}
 
@@ -36,7 +36,7 @@ ht-degree: 6%
 
 ## 第1步：创建/更新Adobe I/O项目{#creating-adobe-io-project}
 
-1. 访问Adobe I/O，并与IMS组织的系统管理员一起登录。
+1. 访问[!DNL Adobe I/O]并使用IMS组织的系统管理员权限登录。
 
    >[!NOTE]
    >
@@ -66,17 +66,22 @@ ht-degree: 6%
 
 1. 如果您的客户端ID为空，请选择&#x200B;**[!UICONTROL Generate a key pair]**&#x200B;以创建公钥和私钥对。
 
+   然后，将自动下载密钥，默认到期日期为365天。 到期后，您需要创建新密钥对并更新配置文件中的集成。 使用选项2，您可以选择手动创建并上传具有较长到期日期的&#x200B;**[!UICONTROL Public key]**。
+
    ![](assets/do-not-localize/adobe_io_4.png)
 
-1. 上传公钥，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 单击 **[!UICONTROL Next]**.
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. 选择名为&#x200B;**Analytics-&lt;组织名称>**&#x200B;的产品用户档案，然后单击&#x200B;**[!UICONTROL Save configured API]**。
+1. 选择任何现有的&#x200B;**[!UICONTROL Product profile]**，或根据需要创建新的。 然后，单击&#x200B;**[!UICONTROL Save configured API]**。
+
+   有关[!DNL Analytics] **[!UICONTROL Product Profiles]**&#x200B;的详细信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console)。
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
-1. 在您的项目中，选择&#x200B;**[!UICONTROL Service Account (JWT)]**&#x200B;并复制以下信息：
+1. 在您的项目中，选择&#x200B;**[!UICONTROL Adobe Analytics]**&#x200B;并复制&#x200B;**[!UICONTROL Service Account (JWT)]**&#x200B;下的以下信息：
+
    * **[!UICONTROL Client ID]**
    * **[!UICONTROL Client Secret]**
    * **[!UICONTROL Technical account ID]**
@@ -96,9 +101,17 @@ ht-degree: 6%
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
->[!NOTE]
->
->应将私钥以base64 UTF-8格式进行编码。 在对新行进行编码之前，请记住从密钥中删除新行，但私钥除外。 私钥必须与用于创建集成的私钥相同。 要测试私钥的base64编码，可以使用[此网站](https://www.base64encode.org/)。
+私钥应以base64 UTF-8格式进行编码。 为实现此操作，请执行以下步骤：
+
+1. 使用在[步骤1中生成的私钥：创建/更新Adobe I/O项目部分](#creating-adobe-io-project)。 私钥必须与用于创建集成的私钥相同。
+
+1. 使用以下命令对私钥进行编码：```base64 ./private.key```。
+
+   >[!NOTE]
+   >
+   >有时，在复制/粘贴私钥时可以自动添加其他行。 请记住，在对私钥进行编码之前删除它。
+
+1. 使用以base64 UTF-8格式编码的新生成的私钥运行上述详细命令。
 
 ## 第3步：更新流水线标记{#update-pipelined-tag}
 
