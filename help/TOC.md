@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文档
 translation-type: tm+mt
-source-git-commit: 2a82c1f67d8bc6d8499383a600a003480e82510f
+source-git-commit: 4552b8c73f0d547a9bb2dc7d8489927ea687f575
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2467'
 ht-degree: 57%
 
 ---
@@ -114,6 +114,7 @@ ht-degree: 57%
          + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
          + [与 CRM 同步数据](platform/using/crm-data-sync.md)
       + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector.md)
+   + [帮助和支持选项](support.md)
 + 创建和发送消息{#sending-messages}
    + [消息入门](delivery/using/communication-channels.md)
    + 创建投放时的关键步骤 {#key-steps-when-creating-a-delivery}
