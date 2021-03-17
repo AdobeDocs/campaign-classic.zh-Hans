@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文档
 translation-type: tm+mt
-source-git-commit: 4552b8c73f0d547a9bb2dc7d8489927ea687f575
+source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 57%
+source-wordcount: '2470'
+ht-degree: 55%
 
 ---
 
@@ -380,11 +380,6 @@ ht-degree: 57%
       + [与 [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [配置与 [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
-   + 通过Adobe ID {#connecting-via-an-adobe-id}连接
-      + [关于 [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [配置Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
-      + [实施Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
-      + [IMS 疑难解答](integrations/using/ims-troubleshooting.md)
    + ACS Connector {#acs-connector}
       + [[!DNL ACS Connector] 原则和数据周期](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [同步用户档案](integrations/using/synchronizing-profiles.md)
@@ -562,7 +557,7 @@ ht-degree: 57%
       + [创建测试环境](interaction/using/creating-a-test-environment.md)
       + [挂钩](interaction/using/hooks.md)
       + [分布式架构](interaction/using/distributed-architectures.md)
-      + [数据缓冲区](interaction/using/data-buffer-zone.md)
+      + [数据缓冲区配置](installation/using/interaction---data-buffer.md)
    + 用例 {#case-study}
       + [推荐规则](interaction/using/presentation-rules.md)
       + [入站渠道优惠](interaction/using/offers-on-an-inbound-channel.md)
@@ -620,16 +615,8 @@ ht-degree: 57%
    + 架构原理 {#architecture-and-hosting-models}
       + [一般架构](installation/using/general-architecture.md)
       + 托管模型{#hosting-models-lp}
-         + [关于托管模型](installation/using/hosting-models.md)
-         + [混合模型](installation/using/hybrid-model.md)
-         + [托管模型](installation/using/hosted-model.md)
+         + [活动托管模型](installation/using/hosting-models.md)
          + [功能矩阵](installation/using/capability-matrix.md)
-   + 部署准则 {#deployment-guidelines}
-      + [先决条件](installation/using/before-starting.md)
-      + [数据库服务器](installation/using/database.md)
-      + [应用程序服务器](installation/using/application-server.md)
-      + [消息服务器](installation/using/messaging-server.md)
-      + [网络配置](installation/using/network-configuration.md)
    + 部署类型 {#deployment-types-}
       + [关于部署类型](installation/using/about-deployment-types.md)
       + [独立部署](installation/using/standalone-deployment.md)
@@ -637,58 +624,70 @@ ht-degree: 57%
       + [企业部署](installation/using/enterprise-deployment.md)
       + [中间源部署](installation/using/mid-sourcing-deployment.md)
       + [Power Booster 和 Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Windows 上的 Campaign{#installing-campaign-in-windows-}
-      + [在 Windows 上安装 Campaign 之前](installation/using/prerequisites-of-campaign-installation-in-windows.md)
-      + [安装服务器](installation/using/installing-the-server.md)
-      + [集成到Web服务器(Windows)](installation/using/integration-into-a-web-server-for-windows.md)
-      + [适用于 Windows 的客户端控制台可用性](installation/using/client-console-availability-for-windows.md)
-      + [安装客户端控制台](installation/using/installing-the-client-console.md)
-   + Linux 上的 Campaign {#installing-campaign-in-linux-}
-      + [在 Linux 上安装 Campaign 之前](installation/using/prerequisites-of-campaign-installation-in-linux.md)
-      + [安装包](installation/using/installing-packages-with-linux.md)
-      + [集成到Web服务器(Linux)](installation/using/integration-into-a-web-server-for-linux.md)
-      + [适用于 Linux 的客户端控制台可用性](installation/using/client-console-availability-for-linux.md)
-   + 初始配置 {#initial-configuration}
+   + 安全和隐私核对清单{#security-privacy}
+      + [安全性和隐私入门](installation/using/get-started-security-privacy.md)
+      + [个性化和隐私](installation/using/privacy.md)
+      + [安全访问管理](installation/using/access-management.md)
+      + [脚本和编码指南](installation/using/scripting-coding-guidelines.md)
+      + [网络、数据库和SSL/TLS](installation/using/network-database.md)
+      + [服务器安全设置](installation/using/server-configuration.md)
+      + [Web服务器安全设置](installation/using/web-server-configuration.md)
+   + 安装活动（内部部署）{#install-campaign-on-prem}
+      + 部署准则 {#deployment-guidelines}
+         + [数据库服务器](installation/using/database.md)
+         + [应用程序服务器](installation/using/application-server.md)
+         + [消息服务器](installation/using/messaging-server.md)
+         + [网络配置](installation/using/network-configuration.md)
+      + Windows 上的 Campaign{#installing-campaign-in-windows-}
+         + [入门](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+         + [安装服务器](installation/using/installing-the-server.md)
+         + [集成到Web服务器(Windows)](installation/using/integration-into-a-web-server-for-windows.md)
+         + [适用于 Windows 的客户端控制台可用性](installation/using/client-console-availability-for-windows.md)
+      + Linux 上的 Campaign {#installing-campaign-in-linux-}
+         + [先决条件](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+         + [安装包](installation/using/installing-packages-with-linux.md)
+         + [集成到Web服务器](installation/using/integration-into-a-web-server-for-linux.md)
+      + [时区管理](installation/using/time-zone-management.md)
+      + [安装中间源服务器](installation/using/mid-sourcing-server.md)
+   + 部署活动（内部部署）{#initial-configuration}
       + [关于初始配置](installation/using/about-initial-configuration.md)
       + [创建实例并登录](installation/using/creating-an-instance-and-logging-on.md)
       + [创建和配置数据库](installation/using/creating-and-configuring-the-database.md)
-      + [Campaign 服务器配置](installation/using/campaign-server-configuration.md)
+      + [配置活动服务器](installation/using/campaign-server-configuration.md)
       + [部署实例](installation/using/deploying-an-instance.md)
-      + [安装Campaign Classic内置包](installation/using/installing-campaign-standard-packages.md)
-   + 其他配置 {#additional-configurations}
-      + [配置活动服务器](installation/using/configuring-campaign-server.md)
-      + [通过LDAP连接](installation/using/connecting-through-ldap.md)
+      + [安装内置包](installation/using/installing-campaign-standard-packages.md)
+   + 配置活动{#additional-configurations}
+      + [活动服务器设置](installation/using/configuring-campaign-server.md)
+      + [定义安全区域](installation/using/security-zones.md)
       + [技术电子邮件配置](installation/using/email-deliverability.md)
-      + [电子邮件存档](installation/using/email-archiving.md)
-      + [时区管理](installation/using/time-zone-management.md)
+      + [配置电子邮件密送](installation/using/email-archiving.md)
       + [配置SpamAssan](installation/using/configuring-spamassassin.md)
-      + [中间源服务器](installation/using/mid-sourcing-server.md)
-      + [互动 - 数据缓冲区](installation/using/interaction---data-buffer.md)
+   + 连接到活动{#connect-to-campaign}
+      + [安装客户端控制台](installation/using/installing-the-client-console.md)
+      + 通过Adobe ID {#connecting-via-an-adobe-id}连接
+         + [关于 [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [配置Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
+         + [实施Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
+         + [IMS 疑难解答](integrations/using/ims-troubleshooting.md)
+      + [通过LDAP连接](installation/using/connecting-through-ldap.md)
+   + 将活动连接到外部系统{#accessing-external-database}
       + [配置外部帐户](installation/using/external-accounts.md)
-   + 访问外部数据库{#accessing-external-database}
-      + [FDA 入门](installation/using/about-fda.md)
-      + 配置准则 {#config-databases}
-         + [配置步骤](installation/using/configure-fda.md)
-         + [配置 Snowflake](installation/using/configure-fda-snowflake.md)
-         + [配置 Azure Synapse](installation/using/configure-fda-synapse.md)
-         + [配置 Hadoop](installation/using/configure-fda-hadoop.md)
-         + [配置 Oracle](installation/using/configure-fda-oracle.md)
-         + [配置 Netezza](installation/using/configure-fda-netezza.md)
-         + [配置 Sybase IQ](installation/using/configure-fda-sybase.md)
-         + [配置 Teradata](installation/using/configure-fda-teradata.md)
-         + [配置 SAP HANA](installation/using/configure-fda-sap-hana.md)
-      + [远程访问权限](installation/using/remote-database-access-rights.md)
-      + [连接到数据库](installation/using/connecting-to-database.md)
-      + [创建数据模式](installation/using/creating-data-schema.md)
-      + [定义数据映射](installation/using/defining-data-mapping.md)
-   + 安全和隐私核对清单{#security-privacy}
-      + [安全性和隐私入门](installation/using/get-started-security-privacy.md)
-      + [隐私](installation/using/privacy.md)
-      + [访问管理](installation/using/access-management.md)
-      + [脚本和编码指南](installation/using/scripting-coding-guidelines.md)
-      + [网络、数据库和SSL/TLS](installation/using/network-database.md)
-      + [服务器配置](installation/using/server-configuration.md)
-      + [Web服务器配置](installation/using/web-server-configuration.md)
+      + 配置联合数据访问{#configure-fda}
+         + [开始使用联合数据访问](installation/using/about-fda.md)
+         + 配置准则 {#config-databases}
+            + [配置步骤](installation/using/configure-fda.md)
+            + [配置 Snowflake](installation/using/configure-fda-snowflake.md)
+            + [配置 Azure Synapse](installation/using/configure-fda-synapse.md)
+            + [配置 Hadoop](installation/using/configure-fda-hadoop.md)
+            + [配置 Oracle](installation/using/configure-fda-oracle.md)
+            + [配置 Netezza](installation/using/configure-fda-netezza.md)
+            + [配置 Sybase IQ](installation/using/configure-fda-sybase.md)
+            + [配置 Teradata](installation/using/configure-fda-teradata.md)
+            + [配置 SAP HANA](installation/using/configure-fda-sap-hana.md)
+         + [远程访问权限](installation/using/remote-database-access-rights.md)
+         + [连接到数据库](installation/using/connecting-to-database.md)
+         + [创建数据模式](installation/using/creating-data-schema.md)
+         + [定义数据映射](installation/using/defining-data-mapping.md)
    + 附录 {#appendices}
       + [服务器配置文件](installation/using/the-server-configuration-file.md)
       + [Campaign 网络端点](installation/using/campaign-network-endpoints.md)
