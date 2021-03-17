@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: 45a77d3fc143ab9c6f9f17ab6118f8816254f6fd
+source-git-commit: 922603492d2c98d751683d3aa481e9ab19bca70c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '450'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 安全性和隐私{#get-started-security-privacy}入门
 
-本节将向您介绍要检查的有关安全性和隐私的关键元素。
+本节将向您介绍要检查的有关安全性和隐私的关键元素。 某些配置只能由预置型客户执行。
 
 ## 隐私
 
@@ -92,9 +92,9 @@ ht-degree: 3%
 
 配置Web服务器(Apache/IIS)时，应遵循以下几种最佳实践：
 
-* 禁用旧SSL版本和密码：
-* 删除TRACE方法：
-* 删除横幅：
-* 限制查询大小以阻止上传重要文件：
+* 禁用旧SSL版本和密码
+* 删除TRACE方法
+* 删除横幅
+* 限制查询大小以阻止上传重要文件
 
 [阅读更多](../../installation/using/web-server-configuration.md)
