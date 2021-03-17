@@ -7,15 +7,15 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '305'
 ht-degree: 19%
 
 ---
 
 
-# 功能矩阵 {#capability-matrix-per-model}
+# 每个型号的能力矩阵{#capability-matrix-per-model}
 
 Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性及其使用情况取决于您的安装的部署类型。 本文分享了完全托管(Managed Services)和内部部署之间某些功能的主要区别。
 
