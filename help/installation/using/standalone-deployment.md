@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1090'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 1%
    * 首次公开，以跟踪并指向其公共IP上的计算机；
    * 向内部用户公开的第二个别名，用于控制台访问并指向同一台计算机。
 
-* 防火墙配置为打开SMTP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521 for Oracle,5432 for PostgreSQL等) 端口。 有关详细信息，请参阅[网络配置](../../installation/using/network-configuration.md)。
+* 防火墙配置为打开SMTP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521用于Oracle,5432用于PostgreSQL等) 端口。 有关详细信息，请参阅[网络配置](../../installation/using/network-configuration.md)。
 
 在以下示例中，实例的参数有：
 
@@ -164,12 +164,7 @@ ht-degree: 1%
 
    有关详细信息，请参阅[活动服务器配置](../../installation/using/campaign-server-configuration.md)。
 
-1. 将客户端控制台设置项目（v7或&#x200B;**setup-client-6.XX**、v6.1的&#x200B;**setup-client-7.XX**、v6.1的&#x200B;**/datakit）复制到**/datakit/nl/eng/jsp **文件夹。******
-
-   有关此方面的详细信息，请参阅以下部分：
-
-   * 对于Linux:[适用于Linux的客户端控制台可用性](../../installation/using/client-console-availability-for-linux.md)
-   * 对于Windows:[适用于Windows的客户端控制台可用性](../../installation/using/client-console-availability-for-windows.md)
+1. 将客户端控制台设置项目（v7或&#x200B;**setup-client-6.XX**、v6.1的&#x200B;**setup-client-7.XX**、v6.1的&#x200B;**/datakit）复制到**/datakit/nl/eng/jsp **文件夹。******[了解详情](../../installation/using/client-console-availability-for-windows.md)。
 
 1. 请按照以下部分中所述的Web服务器集成过程(IIS， Apache)操作：
 
@@ -212,14 +207,9 @@ ht-degree: 1%
 
    此URL允许您访问客户端设置项目的下载页。
 
-   在到达访问控制页面时，输入&#x200B;**internal**&#x200B;登录名和关联密码。
+   在到达访问控制页面时，输入&#x200B;**internal**&#x200B;登录名和关联密码。 [了解详情](../../installation/using/client-console-availability-for-windows.md)。
 
    ![](assets/s_ncs_install_access_client.png)
-
-   有关此方面的详细信息，请参阅以下部分：
-
-   * 对于Linux:[适用于Linux的客户端控制台可用性](../../installation/using/client-console-availability-for-linux.md)
-   * 对于Windows:[适用于Windows的客户端控制台可用性](../../installation/using/client-console-availability-for-windows.md)
 
 1. 开始Adobe Campaign客户端控制台（从上一个下载页或直接在服务器上启动Windows安装），将服务器连接URL设置为https://console.campaign.net并使用&#x200B;**internal**&#x200B;登录进行连接。
 
