@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '299'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,7 @@ ht-degree: 3%
 
 # 互动 - 数据缓冲区{#interaction-data-buffer}
 
->[!NOTE]
->
->某些配置只能由Adobe执行，以用于由Adobe托管的部署。 例如，访问服务器和实例配置文件。 要进一步了解不同的部署，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[本页](../../installation/using/capability-matrix.md)。
+您可以通过取消同步优惠建议计算来配置数据缓冲区以提高入站交互性能。 此配置将在实例自己的配置文件(config-Instance.xml)中执行。
 
 在Adobe Campaign中，**数据缓冲区**&#x200B;已在交互模块中引入。 这允许您通过取消同步库存和优惠计算来提高入站交互的&#x200B;**性能**。
 
@@ -27,12 +25,19 @@ ht-degree: 3%
 
 为避免在写入与收件人相关的建议书时出现队列，新进程生成&#x200B;**数据缓冲区**，该缓冲区允许异步写入建议书&#x200B;**。**&#x200B;定期读取并清空此数据缓冲区。 默认时段在大约一秒的空间内。因此，建议书编写是分组的。
 
+>[!NOTE]
+>
+>如果您使用分布式架构的交互，则此参数是必需的。
+
 可以在实例的配置文件(config-Instance.xml)中执行数据缓冲区&#x200B;**configuration**。
 
->[!NOTE]
+>[!CAUTION]
+>
+>某些配置只能由Adobe执行，以用于由Adobe托管的部署。 例如，访问服务器和实例配置文件。 要进一步了解不同的部署，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[本页](../../installation/using/capability-matrix.md)。
 >
 >对配置所做的任何更改都需要重新启动Web服务器(Apache:IIS)和Adobe Campaign进程。\
 >配置数据缓冲区后，请确保有适当的硬件配置可用。 （内存量）。
+
 
 配置数据缓冲区后，请确保有适当的硬件配置可用。 （内存量）。
 
