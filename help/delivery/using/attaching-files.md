@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '925'
 ht-degree: 1%
 
 ---
@@ -101,11 +101,6 @@ ht-degree: 1%
 对于此类附件，应用以下配置步骤：
 
 1. 选择要上载的文件。
-
-   >[!NOTE]
-   >
-   >必须在LibreOffice中创建源文件。 必须根据[本节](../../installation/using/before-starting.md)中详细说明的先决条件配置实例。
-
 1. 根据需要指定标签。
 1. 选择&#x200B;**[!UICONTROL Upload file on the server]**，然后单击&#x200B;**[!UICONTROL Update on server]**&#x200B;以开始传输。
 1. 您可以显示预览。 要执行此操作，请选择收件人。
