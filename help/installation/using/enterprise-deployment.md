@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1221'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 1%
    * 首先向公众公开，以便跟踪并指向虚拟IP地址(VIP)上的负载平衡器，然后分发给两个前端服务器，
    * 第二个暴露给内部用户，供通过控制台访问，并指向虚拟IP地址(VIP)上的负载平衡器，然后该负载平衡器分发给两个应用程序服务器。
 
-* 防火墙配置为打开STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521 for Oracle,5432 for PostgreSQL等) 端口。 有关详细信息，请参阅[数据库访问](../../installation/using/network-configuration.md#database-access)部分。
+* 防火墙配置为打开STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521用于Oracle,5432用于PostgreSQL等) 端口。 有关详细信息，请参阅[数据库访问](../../installation/using/network-configuration.md#database-access)部分。
 
 >[!CAUTION]
 >
@@ -165,12 +165,7 @@ ht-degree: 1%
 
    有关详细信息，请参阅[活动服务器配置](../../installation/using/campaign-server-configuration.md)。
 
-1. 将客户端控制台设置项目（v7或&#x200B;**setup-client-6.XX**、v6.1的&#x200B;**setup-client-7.XX**、v6.1的&#x200B;**/datakit）复制到**/datakit/nl/eng/jsp **文件夹。******
-
-   有关此方面的详细信息，请参阅以下部分：
-
-   * 对于Linux:[适用于Linux的客户端控制台可用性](../../installation/using/client-console-availability-for-linux.md)
-   * 对于Windows:[适用于Windows的客户端控制台可用性](../../installation/using/client-console-availability-for-windows.md)。
+1. 将客户端控制台设置项目（v7或&#x200B;**setup-client-6.XX**、v6.1的&#x200B;**setup-client-7.XX**、v6.1的&#x200B;**/datakit）复制到**/datakit/nl/eng/jsp **文件夹。******[了解详情](../../installation/using/client-console-availability-for-windows.md)。
 
 1. 开始Adobe Campaign服务器(Windows中的&#x200B;**net 开始 nlserver6**,Linux中的&#x200B;**/etc/init.d/nlserver6开始**)并再次运行命令&#x200B;**nlserver pdump**&#x200B;以检查是否存在所有已启用的模块。
 
@@ -194,16 +189,11 @@ ht-degree: 1%
 
 1. 使用URL测试&#x200B;**nlserver web**&#x200B;模块：[https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test)。
 
-   此URL允许您访问客户端设置项目的下载页。
+   此URL允许您访问客户端设置项目的下载页。 [了解详情](../../installation/using/client-console-availability-for-windows.md)。
 
    在到达访问控制页面时，输入&#x200B;**internal**&#x200B;登录名和关联密码。
 
    ![](assets/s_ncs_install_access_client.png)
-
-   有关此方面的详细信息，请参阅以下部分：
-
-   * 对于Linux:[适用于Linux的客户端控制台可用性](../../installation/using/client-console-availability-for-linux.md)
-   * 对于Windows:[适用于Windows的客户端控制台可用性](../../installation/using/client-console-availability-for-windows.md)
 
 ### 安装和配置应用程序服务器2 {#installing-and-configuring-the-application-server-2}
 
