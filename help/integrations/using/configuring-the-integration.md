@@ -6,7 +6,7 @@ description: 了解如何配置活动-AEM集成
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 2%
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->我们强烈建议创建专用于AEM的安全区，以避免任何安全问题。 有关详细信息，请参阅安装[指南](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+>我们强烈建议创建专用于AEM的安全区，以避免任何安全问题。 有关详细信息，请参阅安装[指南](../../installation/using/security-zones.md)。
 
 如果活动实例由Adobe托管，请联系[Adobe客户关怀团队](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 如果您使用的是内部部署活动，请执行以下步骤：
 
