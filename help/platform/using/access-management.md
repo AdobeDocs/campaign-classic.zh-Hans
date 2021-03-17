@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f7e4f129a96e80ec169428057f661165d8b967c9
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这�
 
 权限适用于操作员用户档案或操作员组。
 
-这些安全参数通过链接到操作员与Adobe Campaign的连接模式来完成。 有关[中安全区域的详细信息，请参阅此页](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+这些安全参数通过链接到操作员与Adobe Campaign的连接模式来完成。 有关[中安全区域的详细信息，请参阅此页](../../installation/using/security-zones.md)。
 
 有两种类型的权限可以授予用户：
 
