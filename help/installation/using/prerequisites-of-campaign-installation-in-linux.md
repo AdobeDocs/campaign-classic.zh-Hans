@@ -7,15 +7,15 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 
-# 在 Linux 中安装 Campaign 的先决条件{#prerequisites-of-campaign-installation-in-linux}
+# 在Linux{#prerequisites-of-campaign-installation-in-linux}上安装活动的先决条件
 
 ## 软件先决条件{#software-prerequisites}
 
@@ -184,7 +184,7 @@ Adobe Campaign支持7.2版中的所有版本的PostgreSQL客户端库：（**lib
 
 >[!NOTE]
 >
->如果您已经安装了Oracle客户端，但是安装了全局环境(例如：/etc/用户档案)未正确配置，您可以向&#x200B;**nl6/customer.sh**&#x200B;脚本添加缺失信息。有关详细信息，请参阅[环境变量](../../installation/using/installing-packages-with-linux.md#environment-variables)。
+>如果已安装Oracle客户端，但已安装全局环境(例如：/etc/用户档案)未正确配置，您可以向&#x200B;**nl6/customer.sh**&#x200B;脚本添加缺失信息。有关详细信息，请参阅[环境变量](../../installation/using/installing-packages-with-linux.md#environment-variables)。
 
 **疑难解答和最佳实践**
 
@@ -200,7 +200,7 @@ Adobe Campaign支持7.2版中的所有版本的PostgreSQL客户端库：（**lib
 
    尽管有Oracle的兼容性矩阵和调整客户端和服务器版本的建议，但混合版本仍然会导致问题。
 
-   另请检查ORACLE_HOME值，以确保它指向预期的客户端版本（如果计算机上安装了多个版本）。
+   同时检查ORACLE_HOME值，确保它指向预期的客户端版本（如果计算机上安装了多个版本）。
 
 1. 确保客户端和服务器使用相同的&#x200B;**时区文件**。
 
