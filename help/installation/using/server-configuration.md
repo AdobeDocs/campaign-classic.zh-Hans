@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1156'
 ht-degree: 3%
 
 ---
@@ -29,8 +29,6 @@ ht-degree: 3%
 >
 >
 要检查您的实例是否托管在 AWS 上，请按照[此部分](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)详述的步骤操作。
-
-要了解如何使用Security Zones Self Service UI管理VPN Security Zone配置中的条目，请参阅[此技术说明](https://helpx.adobe.com/cn/campaign/kb/configuring-security-zones-self-service.html)。
 
 * 请确保在subNetwork中不允许使用反向代理。 如果是，将检测到&#x200B;**所有**&#x200B;通信来自此本地IP，因此将受信任。
 
@@ -127,6 +125,6 @@ Adobe Campaign允许您在`<dbcnx .../>`元素中设置纯口令。 请勿使用
 
 默认情况下，Adobe Campaign不会将会话粘贴到特定IP，但您可以激活会话以防止会话被盗。 为此，请在[serverConf.xml文件](../../installation/using/the-server-configuration-file.md)中，将`<authentication>`节点中的checkIPConsistent属性设置为&#x200B;**true**。
 
-默认情况下，Adobe Campaign的MTA不使用安全连接将内容发送到SMTP服务器。 您必须启用此功能(可能会降低投放速度)。 为此，请在`<smtp ...>`节点中将enableTLS设置为tr**ue。
+默认情况下，Adobe Campaign的MTA不使用安全连接将内容发送到SMTP服务器。 您必须启用此功能(可能会降低投放速度)。 为此，请在`<smtp ...>`节点中将&#x200B;**enableTLS**&#x200B;设置为&#x200B;**true**。
 
 可以减少身份验证节点（sessionTimeOutSec属性）中会话的生存时间。
