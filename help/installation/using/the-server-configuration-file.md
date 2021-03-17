@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 1bd40c6acaceb1bb4839807ae89c6956bc2b8d69
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -21,7 +21,7 @@ Adobe Campaign的总体配置在安装目录&#x200B;**conf**&#x200B;目录的&#x
 
 >[!NOTE]
 >
->服务器端配置只能由Adobe执行，以用于由Adobe托管的部署。 要进一步了解不同的部署，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[本页](../../installation/using/capability-matrix.md)。 此[部分](../../installation/using/hosted-model.md)介绍了托管型号和混合型号的安装和配置步骤。
+>服务器端配置只能由Adobe执行，以用于由Adobe托管的部署。 要进一步了解不同的部署，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[本页](../../installation/using/capability-matrix.md)。 此[部分](../../installation/using/hosting-models.md)介绍了托管型号和混合型号的安装和配置步骤。
 
 第一个参数位于&#x200B;**shared**&#x200B;节点内。 这些与实例相关。 所有nlserver命令（nlserver web、nlserver wfserver等）都可能使用它们。 其他部分与特定的nlserver子命令相关。
 
@@ -2193,7 +2193,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*
 
 以下是&#x200B;**securityZone**&#x200B;节点的不同参数。
 
-有关其他信息，请参阅[定义安全区域](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+有关其他信息，请参阅[定义安全区域](../../installation/using/security-zones.md)。
 
 <table> 
  <thead> 
@@ -2291,7 +2291,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*
 
 以下是&#x200B;**securityZone > subNetwork**&#x200B;节点的不同参数。
 
-有关其他信息，请参阅[定义安全区域](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+有关其他信息，请参阅[定义安全区域](../../installation/using/security-zones.md)。
 
 <table> 
  <thead> 
