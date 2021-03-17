@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 1%
@@ -109,7 +109,7 @@ Adobe Campaign v7中的某些重大更改需要配置以确保其有效运行。
 
 * 安全区。
 
-   在启动服务器之前，必须配置安全区域。 有关详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#defining-security-zones)和[安全](../../migration/using/general-configurations.md#security)部分。
+   在启动服务器之前，必须配置安全区域。 有关详细信息，请参阅[此部分](../../installation/using/security-zones.md)和[安全](../../migration/using/general-configurations.md#security)部分。
 
 * 模式
 
