@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1159'
 ht-degree: 2%
 
 ---
@@ -116,7 +116,7 @@ ht-degree: 2%
 * [执行更新](#perform-an-update),
 * [重新启动Web服务器](#reboot-the-web-server)。
 
-要了解如何更新客户端控制台，请参阅[此部分](../../installation/using/client-console-availability-for-linux.md)。
+[了解有关客户端控制台可用性的更多信息](../../installation/using/client-console-availability-for-windows.md)。
 
 >[!NOTE]
 >
