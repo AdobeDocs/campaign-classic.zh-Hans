@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 2%
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->要登录到实例，操作符需要链接到安全区域。 有关Adobe Campaign中安全区域的详细信息，请参阅[此页](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+>要登录到实例，操作符需要链接到安全区域。 有关Adobe Campaign中安全区域的详细信息，请参阅[此页](../../installation/using/security-zones.md)。
 
 用户还可以使用其Adobe ID直接连接到Adobe Campaign。 有关详细信息，请参见此 [ 页面](../../integrations/using/about-adobe-id.md)。
 
@@ -106,7 +106,7 @@ ht-degree: 2%
    >即使禁用了该帐户，操作员仍可以接收来自活动的警报或通知。 要停止向此操作员发送活动通知，Adobe建议您从其用户档案中删除电子邮件地址。
 
 * 通过&#x200B;**[!UICONTROL Forbid access from the rich client]**&#x200B;选项，可将Adobe Campaign的使用限制为[Web访问](../../platform/using/adobe-campaign-workspace.md#console-and-web-access)或通过API:访问Adobe Campaign客户端控制台不再可用。
-* 可以将安全区与操作员链接。 有关详细信息，请参见[此页面](../../installation/using/configuring-campaign-server.md#defining-security-zones)。
+* 可以将安全区与操作员链接。 有关详细信息，请参见[此页面](../../installation/using/security-zones.md)。
 * 您还可以使用相应的链接定义可信IP掩码。
 
    如果Adobe Campaign的IP地址在此列表中，则操作员将能够连接到，而无需输入密码。
