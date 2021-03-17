@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: c366326f6a439dabaa42fdd799ec2e55c180a929
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -188,7 +188,7 @@ WSDL描述开始，通过定义用于形成消息的类型（与“端口”关�
 
 ## 连接{#connectivity}
 
-Adobe Campaign通过引入安全区（请参阅[本节](../../installation/using/configuring-campaign-server.md#defining-security-zones)中的&#x200B;**定义安全区**&#x200B;一章）以及会话管理设置，提高了身份验证机制的安全性。
+Adobe Campaign通过引入安全区（请参阅[本节](../../installation/using/security-zones.md)中的&#x200B;**定义安全区**&#x200B;一章）以及会话管理设置，提高了身份验证机制的安全性。
 
 有两种可用的身份验证模式：
 
