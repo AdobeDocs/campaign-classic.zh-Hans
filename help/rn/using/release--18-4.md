@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 版本 18.4
-description: 版本 18.4
-audience: rn
-content-type: reference
-topic-tags: latest-release-notes
+title: 活动 18.4发行说明
+description: 活动 18.4发行说明
+feature: null
+role: null
+level: null
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '2262'
+source-wordcount: '2267'
 ht-degree: 7%
 
 ---
 
 
-# 版本 18.4{#release-18-4}
+# 18.4 版{#release-18-4}
 
-## 版本 18.4.5 - 版本 8937{#release-18-4-5-build-8937}
+## 18.4.5 版 - 内部版本 8937{#release-18-4-5-build-8937}
 
 2018年11月21日
 
@@ -34,17 +34,17 @@ ht-degree: 7%
 * 修复了发送推送通知时的性能问题。 (NEO-11787)
 * 修复了阻止Web跟踪用于“com.au”域(NEO-4385)的问题。
 * 修复了在使用复杂工作流时可能发生的客户端冻结问题。 (NEO-11847)
-* 修复了在选择特定投放的元素后保存新模式时出现的Oracle错误(NEO-11682)。
-* 修复了查询包含重音字符(联合数据访问/Teradata)的字段时的问题。 该外部帐户现在允许您更改与Teradata驱动程序通信时使用的编码。 (NEO-11818).
+* 修复了在选择特定投放的元素后保存新模式时的Oracle错误(NEO-11682)。
+* 修复了查询包含重音字符(联合数据访问/Teradata)的字段时的问题。 现在，外部帐户允许您更改用于与Teradata驱动程序通信的编码。 (NEO-11818).
 * 修复了在推送通知中传递其他变量中的URL时的跟踪问题，该问题可能会导致移动应用程序收到的格式错误或数据不正确。 (NEO-11468, NEO-11960)
 * 修复了在使用1:N链接的值分布时导致显示问题的问题。 (NEO-11820)
-* 修复了阻止批量加载在Teradata 16上工作的问题。
+* 修复了阻止批量加载在Teradata16上工作的问题。
 * 增加了Teradata上时间戳的缓冲区大小，以避免与15.10驱动程序绑定问题。
 * 改进了长名称索引的管理，这可能会导致错误升级问题。
 * 改进了子级死区处理(MTA)期间的共享内存可用时间。
 * 修复了Apache（跟踪）中的潜在死锁。
 
-## 版本 18.4.4 - 版本 8936{#release-18-4-4-build-8936}
+## 18.4.4 版 - 内部版本 8936{#release-18-4-4-build-8936}
 
 2018年8月1日
 
@@ -59,9 +59,9 @@ ht-degree: 7%
 * 修复了在&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流活动中使用XML中存储的数据时的问题。 (NEO-10816)
 * 修复了使用内部版本8935执行服务器升级时的问题。
 * 修复了在未完全配置&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流活动时，在配置级别日志中显示无用错误的问题。
-* 联合数据访问 Teradata:修复了SQL表中自动递增的字段和索引的问题。
+* 联合数据访问Teradata:修复了SQL表中自动递增的字段和索引的问题。
 
-## 版本 18.4.3 - 版本 8935{#release-18-4-3-build-8935}
+## 18.4.3 版 - 内部版本 8935{#release-18-4-3-build-8935}
 
 2018年6月22日
 
@@ -75,7 +75,7 @@ ht-degree: 7%
 * 修复了将优惠空间从营销实例同步到交互实例时的问题。 (NEO-11162)
 * 改进了配置升级期间长名称索引的管理
 
-## 版本 18.4.2 - 版本 8932{#release-18-4-2-build-8932}
+## 18.4.2 版 - 内部版本 8932{#release-18-4-2-build-8932}
 
 2018年5月22日
 
@@ -86,7 +86,7 @@ ht-degree: 7%
 * 修复了使用弹回邮件服务器时，inMail进程可能发生的性能问题。 (NEO-10641)
 * 修复了在升级超过1000个模式时可能发生的数据库升级问题。
 
-## 版本 18.4 - 版本 8931{#release-18-4-build-8931}
+## 18.4 版 - 内部版本 8931{#release-18-4-build-8931}
 
 2018年4月24日
 
@@ -194,13 +194,13 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 **修补程序**
 
 * 修复了将投放和跟踪日志从Adobe Campaign Standard复制到Adobe Campaign Classic时的同步问题。 (NEO-10023)
-* 修复了在快速加载操作失败后恢复ETL工作流时，在Teradata中处理错误和日志表的问题。 现在，每次恢复工作流时，错误和日志表都正确删除。 (NEO-10672)
-* 修复了在安装了Hive包时自动安装Hive包(Hadoop需要)的配置升级问题。 (NEO-10592)
+* 修复了在快速加载操作失败后恢复ETL工作流时，Teradata中的错误和日志表处理问题。 现在，每次恢复工作流时，错误和日志表都正确删除。 (NEO-10672)
+* 修复了在安装了联合数据访问包时自动安装Hive包(Hadoop需要)的配置升级问题。 (NEO-10592)
 * 修复了将无效域视为&#x200B;**未定义**&#x200B;错误的错误。 (NEO-10248)
 * 修复了在发送android推送投放时，deliveryLogStats表中的日志重复的问题。 (NEO-10234)
 * 修复了可能导致某些条形码格式无法被条形码扫描程序读取的问题。 (NEO-10125)
 * 修复了使用非ASCII字符时“urlEncode”JavaScript函数的问题。 有关详细信息，请参阅“技术演变”部分。 (NEO-10123)
-* 修复了在Teradata数据库上执行包括sha256功能的查询时的问题。 (NEO-10119)
+* 修复了在查询库上执行包含sha256函数的Teradata时的问题。 (NEO-10119)
 * 修复了使用超大SalesForce表时SalesForce活动中可能发生的工作流内存错误。 (NEO-9900)
 * 修复了在使用联合数据访问时在定位工作流活动中生成补充项&#x200B;**选项的问题。**(NEO-9878)
 * 修复了在使用中间源时，可能导致营销实例上未更新&#x200B;**已处理**&#x200B;和&#x200B;**成功**&#x200B;量度的问题。 (NEO-9454)
