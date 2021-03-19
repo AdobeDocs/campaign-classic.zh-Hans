@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: 升级入门
 description: 详细了解 Campaign Classic 升级
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+feature: 概述
+role: 商业从业者
+level: 初学者
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '435'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,7 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-作为 Gold Standard 用户，您无需采取任何操作，即可通过[最新 GA Gold Standard 内部版本](../../rn/using/gold-standard.md#gs-11)从 Gold Standard 升级中受益。[了解详情](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
+作为 Gold Standard 用户，您无需采取任何操作，即可通过[最新 GA Gold Standard 内部版本](../../rn/using/gold-standard.md#gs-11)从 Gold Standard 升级中受益。[了解详情](../../rn/using/gs-overview.md)。
 
 >[!NOTE]
 >[GA 兼容性矩阵](../../rn/using/compatibility-matrix-gs.md)中提供了 Gold Standard 的兼容性矩阵。
