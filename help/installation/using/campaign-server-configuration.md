@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 2%
@@ -122,6 +122,6 @@ Confirmation: XXXX
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-此文件中的其他投放参数显示在[个性化投放参数](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)中。
+此文件中提供的其他投放参数显示在[个性化投放参数](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)中。
 
 另请参阅[电子邮件发送能力](../../installation/using/email-deliverability.md)。
