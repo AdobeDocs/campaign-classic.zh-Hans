@@ -7,15 +7,15 @@ feature: 概述
 role: 商业从业者
 level: 初学者
 translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+source-git-commit: 0ce968d8acdd0aea0211da248a085f05dfe70ae7
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 85%
+source-wordcount: '1056'
+ht-degree: 84%
 
 ---
 
 
-# Gold Standard 版本{#gold-standard}
+# 金标发行说明{#gold-standard}
 
 本页列出 Gold Standard 版本。在本页](gs-overview.md)中进一步了解活动 Gold Standard [。
 
