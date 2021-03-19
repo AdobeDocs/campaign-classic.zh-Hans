@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 版本 19.1
-description: 版本 19.1
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+title: 活动 19.1发行说明
+description: 活动 19.1发行说明
+feature: null
+role: null
+level: null
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt
-source-wordcount: '3127'
-ht-degree: 21%
+source-wordcount: '3134'
+ht-degree: 20%
 
 ---
 
 
-# 版本 19.1{#release-19-1}
+# 19.1 版{#release-19-1}
 
-## ![](assets/do-not-localize/limited_2.png) 版本 19.1.8 - 版本 9039 {#release-19-1-8-build-9039}
+## ![](assets/do-not-localize/limited_2.png) 19.1.8 版 - 内部版本 9039 {#release-19-1-8-build-9039}
 
 _2020年12月16日_
 
@@ -25,7 +25,7 @@ _2020年12月16日_
 >
 > * 此版本附带新的连接协议：如果您通过Adobe Identity Service(IMS)连接到活动，则活动服务器和客户端控制台都必须进行升级，才能在2021年6月30日&#x200B;**之后连接到活动**。
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
+> * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 具有活动的旧式身份验证模式将于2021年11月30日&#x200B;****&#x200B;停用。
 
 
 
@@ -53,7 +53,7 @@ Tomcat 已从版本 7 (7.0.103) 更新到版本 8 (8.5.57)。`tomcat-7` 目录�
 
 在Linux上，nlserver服务启动现在使用系统单元而不是/etc/init.d/nlserver6脚本。 在安装19.1.8包时，会自动执行到新启动方案的迁移。 /etc/init.d/nlserver6仍然提供，但是为了与nlserver服务(开始、重新启动、停止等)交互，我们建议您直接使用systemctl命令。
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.1.7 - 版本 9036 {#release-19-1-7-build-9036}
+## ![](assets/do-not-localize/red_2.png) 19.1.7 版 - 内部版本 9036 {#release-19-1-7-build-9036}
 
 _2020 年 9 月 15 日_
 
@@ -83,7 +83,7 @@ _2020 年 9 月 15 日_
 * 修复了在重新发布 Web 应用程序之前关闭 Apache 和 Web 服务器的升级后问题。(NEO-27155)
 * 修复了在&#x200B;**调度程序**&#x200B;工作流活动中设置时间时，导致选取错误时区的回归。
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.1.6 - 版本 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/red_2.png) 19.1.6 版 - 内部版本 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -99,7 +99,7 @@ _2019年10月3日_
 * 修复了可能导致某些消息未被中间源服务器处理的问题。 (NEO-12395)
 * 修复了阻止完全使用SQL数据管理活动(缺少名为right的“SQL数据管理”)的问题。
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.1.5 - 版本 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/red_2.png) 19.1.5 版 - 内部版本 9033{#release-19-1-5-build-9033}
 
 _2019年8月13日_
 
@@ -121,7 +121,7 @@ _2019年8月13日_
 >19.1.4金标发行版在此[页](../../rn/using/gold-standard.md)中列出。
 
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.1.2 - 版本 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/red_2.png) 19.1.2 版 - 内部版本 9029{#release-19-1-2-build-9029}
 
 _2019年6月21日_
 
@@ -137,7 +137,7 @@ _2019年6月21日_
 * 现在，我们允许在导入工作流期间删除在Microsoft Dynamics中创建的伪记录。
 * 改进了使用内部帐户时执行安全区包的权限。
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.1 - 版本 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/red_2.png) 19.1 版 - 内部版本 9026{#release-19-1-build-9026}
 
 _2019年5月30日_
 
