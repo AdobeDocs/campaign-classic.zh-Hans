@@ -1,23 +1,26 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 版本 18.6
-description: 版本 18.6
+title: 活动 18.6发行说明
+description: 活动 18.6发行说明
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
+feature: 概述
+role: 商业从业者
+level: 初学者
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '803'
 ht-degree: 6%
 
 ---
 
 
-# 版本 18.6{#release-18-6}
+# 18.6 版{#release-18-6}
 
-## 版本 18.6.2 - 版本 8949{#release-18-6-3-build-8949}
+## 18.6.2 版 - 内部版本 8949{#release-18-6-3-build-8949}
 
 2018年8月22日
 
@@ -37,7 +40,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> 查询条带<br /> </td> 
-   <td> <p>当多个活动用户连接到同一个联合数据访问 Teradata外部帐户时，您现在可以传递特定于每个用户的查询带（键/值对）。 每次活动用户对Teradata查询库执行时，Adobe Campaign现在能够发送与该用户相关联的元数据。 这些列表包含键和值，然后Teradata管理员可以将其用于审计目的或管理访问权限。</p><p>有关详细信息，请参阅<a href="../../installation/using/external-accounts.md">详细文档</a>。</p> </td>
+   <td> <p>当多个活动用户连接到同一联合数据访问Teradata外部帐户时，您现在可以传递特定于每个用户的查询带（键/值对）。 每次活动用户对Teradata库执行查询时，Adobe Campaign现在能够发送与用户相关联的元数据。 例如，这些包含在密钥和值列表中的Teradata管理员随后可以将其用于审计目的或管理访问权限。</p><p>有关详细信息，请参阅<a href="../../installation/using/external-accounts.md">详细文档</a>。</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -60,9 +63,9 @@ ht-degree: 6%
 
 查询条带
 
-特定密钥（PROXYUSER或PROXYROLE）用于将Teradata用户或角色与活动用户关联。 添加了新权限以使用此代理用户/角色。 您需要向数据库帐户(在TeradataCONNECT中定义的帐户)添加GRANT 外部帐户 THROUGH访问权限。
+特定密钥（PROXYUSER或PROXYROLE）用于将Teradata用户或角色与活动用户关联。 添加了新权限以使用此代理用户/角色。 您需要向CONNECT库帐户(Teradata外部帐户中定义的帐户)添加GRANT  THROUGH访问权限。
 
-在Teradata外部帐户中添加了新选项卡。 **[!UICONTROL Query banding]**&#x200B;选项卡包含以下选项：
+新选项卡已添加到Teradata外部帐户中。 **[!UICONTROL Query banding]**&#x200B;选项卡包含以下选项：
 
 * **[!UICONTROL Active]**:选中此框可激活特征。
 * **[!UICONTROL Default]**:输入默认查询条带，如果用户没有关联的查询条带，则将使用该条带。如果没有定义默认的查询条带，则没有关联的查询条带的用户将无法使用Teradata。
@@ -73,7 +76,7 @@ ht-degree: 6%
 * [https://docs.teradata.com/reader/cY5~BoeEUFWjgN2kBnH3Vw/a5G1~izve68yTMa24kVjVw](https://docs.teradata.com/reader/cY5B%7EoeEUFWjgN2kBnH3Vw/a5G1iz%7Eve68yTMa24kVjVw)
 * [https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ)
 
-## 版本 18.6 - 版本 8947{#release-18-6-build-8947}
+## 18.6 版 - 内部版本 8947{#release-18-6-build-8947}
 
 2018年6月25日
 
