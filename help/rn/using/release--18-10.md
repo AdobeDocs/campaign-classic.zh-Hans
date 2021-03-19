@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 版本 18.10
-description: 版本 18.10
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+title: 活动 18.10发行说明
+description: 活动 18.10发行说明
+feature: 概述
+role: 商业从业者
+level: 初学者
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2375'
 ht-degree: 7%
 
 ---
 
 
-# 版本 18.10{#release-18-10}
+# 18.10 版{#release-18-10}
 
-## 版本 18.10.6 - 版本 8985{#release-18-10-6-build-8985}
+## 18.10.6 版 - 内部版本 8985{#release-18-10-6-build-8985}
 
 2019年7月12日
 
@@ -29,7 +29,7 @@ ht-degree: 7%
 * 改进了使用内部帐户时执行安全区包的权限。
 * 修复了可能导致匹配字段日志中错误的问题。 (NEO-8978)
 
-## 版本 18.10.5 - 版本 8984{#release-18-10-5-build-8984}
+## 18.10.5 版 - 内部版本 8984{#release-18-10-5-build-8984}
 
 2019年4月23日
 
@@ -39,7 +39,7 @@ ht-degree: 7%
 * 已删除工作流热图中的10,000记录限制，以修复缺失数据问题。 (NEO-12329)
 * 修复了在扩充工作流活动中使用“保留主集的所有其他数据”选项时的问题。 (NEO-13291)
 
-## 版本 18.10.4 - 版本 8983{#release-18-10-4-build-8983}
+## 18.10.4 版 - 内部版本 8983{#release-18-10-4-build-8983}
 
 2019年4月15日
 
@@ -52,7 +52,7 @@ ht-degree: 7%
 * 在Analytics集成中，现在允许检索包含%字符的AAM区段数据。 (NEO-12025)
 * 修复了使用HTTP2发送推送通知时的Tomcat崩溃问题。 (NEO-12701)
 
-## 版本 18.10.3 - 版本 8981{#release-18-10-3-build-8981}
+## 18.10.3 版 - 内部版本 8981{#release-18-10-3-build-8981}
 
 2019年1月29日
 
@@ -70,13 +70,13 @@ ht-degree: 7%
 * 修复了数据库结构更新的问题，该问题导致NmsRecipient上丢失新索引。
 * 修复了在投放的主目标使用外部文件中定义选项时可能发生的控制台崩溃。 (NEO-12349)
 * 修复了多个InMail崩溃。
-* 修复了使用“更新”数据工作流活动删除存储在联合数据访问 Teradata数据库中的记录时的问题。
+* 修复了使用“更新”数据工作流活动删除存储在联合数据访问Teradata库中的记录时的问题。
 * 修复了密钥管理中的不一致问题。
 * 修复了将字段键入为以下内容时扩充活动的问题：xml=true and calculated=true
 * 修复了在移动应用程序上发送推送通知时的字符转义问题。
 * 修复了在中间源外部帐户中无法从联合数据访问切换到SOAP同步方法的问题。
 
-## 版本 18.10.2 - 版本 8978{#release-18-10-2-build-8978}
+## 18.10.2 版 - 内部版本 8978{#release-18-10-2-build-8978}
 
 2018年12月6日
 
@@ -91,14 +91,14 @@ ht-degree: 7%
 * 修复了在投放中使用种子地址时ID耗尽的问题。 (NEO-11842)
 * 修复了在使用复杂工作流时可能发生的客户端冻结问题。 (NEO-11847)
 * 修复了将值分布与1:N链接一起使用时的显示问题。 (NEO-11820)
-* 修复了Worflow热图中的Oracle错误。
+* 修复了工作流热图中的Oracle错误。
 * 修复了在扩充活动中添加优惠建议时的正确问题。
 * 修复了SQL数据管理连接问题。
 * 修复了负ID情况下生成临时工作流表名的问题。
 * 修复了在工作流热图中计算工作流持续时间的问题。
 
 
-## 版本 18.10 - 版本 8977{#release-18-10-build-8977}
+## 18.10 版 - 内部版本 8977{#release-18-10-build-8977}
 
 2018年11月5日
 
@@ -147,7 +147,7 @@ ht-degree: 7%
 **改进**
 
 * Campaign Classic API 现在可在[专用页面](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)中使用。如果您使用的是 jsapi.chm 文件，您现在应该参阅新的在线版本。
-* 现在支持PostgreSQL 10、Debian 9和Teradata 16.20。 请参阅[兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
+* 现在支持PostgreSQL 10、Debian 9和Teradata16.20。 请参阅[兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
 * 创建SFTP连接时，您现在可以使用代理身份验证。 有关详细信息，请参阅[详细文档](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)(NEO-9868)
 * 使用直邮投放创建单个投放时，**日期计算公式**&#x200B;选项现在在投放模板属性中可用。 (NEO-9792)
 * 对Cookie跟踪和Web应用程序的域名管理进行了改进。 有关更多信息，请参阅下面的“技术演变”部分。
@@ -220,7 +220,7 @@ NmsRecipient上的索引已重新处理。 这应会提高使用此表的查询�
 * 修复了在&#x200B;**用户档案和目标**&#x200B;屏幕中搜索收件人的问题。 (NEO-8228)
 * 修复了在访问事件历史记录文件夹时，如果记录数量较多，可能会导致超时错误的问题。 (NEO-11738)
 * 修复了可能导致LINE投放收件人错误地返回为“不可到达”的问题。 (NEO-10833)
-* 修复了在Oracle上执行包含其他列的工作流查询时的问题。 (NEO-11615)
+* 修复了在Oracle上执行附加列的工作流查询时的问题。 (NEO-11615)
 * 已进行了增强，以确保关闭的连接不会在连接池中保留太长时间。 (NEO-11392)
 * 修复了使用定位工作流活动(查询、数据加载(RDBMS)等)时的问题 通过联合数据访问连接到包含UTF8字符（在表名、字段名等中）的外部Oracle表 还包含一个主键约束，该约束具有系统生成的缺省约束名。 (NEO-10714)
 * 修复了可能无法删除投放的HTML内容的问题。 (NEO-11327)
@@ -233,7 +233,7 @@ NmsRecipient上的索引已重新处理。 这应会提高使用此表的查询�
 * 修复了使用数据加载活动导入数据类型为“time”的列时发生的问题：即使在删除时间分隔符后，时间分隔符也会重置。 (NEO-10743)
 * 修复了在编辑循环投放时，投放属性中的“执行”文件夹列表无法显示投放文件夹的问题。 (NEO-11094)
 * 修复了导致视图填充窗口无法在工作流中显示超过200条记录作为查询活动的结果目标的问题。 (NEO-11195)
-* 修复了Oracle中阻止在选择1000个以上元素时执行DELETE查询的问题。 (NEO-11171)
+* 修复了Oracle中的一个问题，该问题导致在选择1000个以上元素时无法执行DELETE查询。 (NEO-11171)
 * 修复了导致在Android推送通知投放的其他参数中将URL编码为跟踪URL的问题。 (NEO-11468)
 * 修复了将参数设置为“一天间隔”和“打开”时在“用户活动”报表中出现的脚本错误。 (NEO-11655)
 * 修复了通过经过身份验证的Web代理连接到中间源服务器或消息中心时出现的问题。 (NEO-11309)
