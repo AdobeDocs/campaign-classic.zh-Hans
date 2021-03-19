@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: 最新版本
 description: 最新 Campaign Classic 发行说明
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+feature: 概述
+role: 商业从业者
+level: 初学者
 translation-type: tm+mt
-source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
+source-git-commit: d1796224df95663c39fa5975e88c03a923c94878
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 99%
+source-wordcount: '908'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ Campaign 现在支持以下系统：
 IOB-090020 Error in SSL library: 'IOB-090013 error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed (code 336134278)'
 ```
 
-* 修复了无法发送带有目标数据个性化设置的新投放的问题。
+* 修复了无法发送具有目标数据个性化的新投放的问题(NEO-30323)。
 * 修复了营销实例中发生多次崩溃时导致核心文件出现的问题。
 * 修复了会导致&#x200B;**跟踪**&#x200B;工作流失败并出现以下错误 (NEO-25206) 的问题：
 
