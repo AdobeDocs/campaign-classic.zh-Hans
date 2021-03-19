@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 版本 20.1
-description: 版本 20.1
-audience: rns
-content-type: reference
-topic-tags: campaign-release-notes, latest-release-notes
+title: 20.1 版
+description: 20.1 版
+feature: 概述
+role: 商业从业者
+level: 初学者
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1439'
 ht-degree: 10%
 
 ---
 
 
-# 版本 20.1{#release-20-1}
+# 20.1 版{#release-20-1}
 
-## ![](assets/do-not-localize/limited_2.png) 版本 20.1.4 - 版本 9126 {#release-20-1-4-build-9126}
+## ![](assets/do-not-localize/limited_2.png) 20.1.4 版 - 内部版本 9126 {#release-20-1-4-build-9126}
 
 _2020年12月23日_
 
@@ -32,19 +32,19 @@ _2020年12月23日_
 * 连接协议已经更新，以遵循新的 IMS 认证机制。
 * 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) 版本 20.1.3 - 版本 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png) 20.1.3 版 - 内部版本 9124{#release-20-1-3-build-9124}
 
 _2020年5月6日_
 
 * 修复了&#x200B;**文件传输**&#x200B;活动的问题，该问题导致基于 SFTP 密钥的身份验证无法在 Debian 9 上工作。(NEO-23183)
 
-## ![](assets/do-not-localize/red_2.png) 版本 20.1.2 - 版本 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png) 20.1.2 版 - 内部版本 9123{#release-20-1-2-build-9123}
 
 _2020年3月13日_
 
 * 修复了阻止在Red Hat 7服务器上部署版本的问题。 (NEO-23332)
 
-## ![](assets/do-not-localize/red_2.png) 版本 20.1 - 版本 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png) 20.1 版 - 内部版本 9122{#release-20-1-build-9122}
 
 _2020年2月17日_
 
