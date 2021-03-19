@@ -7,15 +7,15 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 5%
+source-wordcount: '167'
+ht-degree: 3%
 
 ---
 
 
-# 关于初始配置{#about-initial-configuration}
+# 配置和部署实例{#about-initial-configuration}的关键步骤
 
 Adobe Campaign安装完成后，您需要对其进行配置，以确保其在满足您的限制和技术架构的情况下高效运行。 配置Adobe Campaign实例的步骤将按照以下顺序在本章中详细介绍：
 
