@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文档
 translation-type: tm+mt
-source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2474'
 ht-degree: 55%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 55%
    + [升级入门](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
    + Gold Standard 发行 {#gs-release}
+      + [什么是金本位](rn/using/gs-overview.md)
       + [Gold Standard发行说明](rn/using/gold-standard.md)
       + [Gold Standard兼容性表](rn/using/compatibility-matrix-gs.md)
    + 先前版本{#previous-releases}
