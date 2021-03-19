@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 42166334d361ffdac13842cd9d07ca7c9859bbb2
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 6%
+source-wordcount: '579'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->如果您使用的是通过身份验证进行触发器集成的旧版本，**您需要按如下所述移动到Adobe I/O。**&#x200B;旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。[了解详情](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email)。
+>如果您使用的是通过身份验证进行触发器集成的旧版本，**您需要按如下所述移动到Adobe I/O。**&#x200B;带有活动和活动的传统身份验证模式将于2021年11月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
 >请注意，在移动到[!DNL Adobe I/O]期间，某些传入触发器可能会丢失。
 
