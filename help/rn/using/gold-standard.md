@@ -1,29 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Gold Standard 发行
-description: Campaign Classic Gold Standard 发行说明
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+title: Gold Standard发行说明
+description: Campaign Classic Gold Standard发行说明
+feature: 概述
+role: 商业从业者
+level: 初学者
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 88%
+source-wordcount: '1055'
+ht-degree: 85%
 
 ---
 
 
 # Gold Standard 版本{#gold-standard}
 
-Gold Standard 是 Campaign Classic 长期支持版本。作为 Gold Standard 主机用户，您无需采取任何操作，即可通过最新稳定版本自动从 Gold Standard 升级中受益。本地和混合型客户还可以从 Gold Standard 版本中受益。
-
-如果您从旧内部版本进行迁移，我们建议您先升级到此版本。
-
-本页列出 Gold Standard 版本。
-
-有关 Campaign Gold Standard 程序的详细信息，请参阅[本文](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
+本页列出 Gold Standard 版本。在本页](gs-overview.md)中进一步了解活动 Gold Standard [。
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard 11 版本{#gs-11}
 
@@ -46,7 +40,7 @@ _2020年12月22日_
 >
 > * 此版本附带新的连接协议：如果您通过Adobe Identity Service(IMS)连接到活动，则活动服务器和客户端控制台都必须进行升级，才能在2021年6月30日&#x200B;**之后连接到活动**。
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
+> * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 具有活动的旧式身份验证模式将于2021年11月30日&#x200B;****&#x200B;停用。
 
 >
 >
