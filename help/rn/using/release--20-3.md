@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 20.3 版
-description: 20.3 版
-audience: rns
-content-type: reference
-topic-tags: campaign-release-notes, latest-release-notes
+title: 活动 20.3发行说明
+description: 活动 20.3发行说明
+feature: 概述
+role: 商业从业者
+level: 初学者
 translation-type: tm+mt
-source-git-commit: 1bd40c6acaceb1bb4839807ae89c6956bc2b8d69
+source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1952'
 ht-degree: 95%
 
 ---
@@ -32,7 +32,7 @@ _2020 年 10 月 27 日_
 >
 > * 此版本附带新的连接协议：如果您通过Adobe Identity Service(IMS)连接到活动，则活动服务器和客户端控制台都必须进行升级，才能在2021年6月30日&#x200B;**之后连接到活动**。
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 旧版 oAuth 身份验证模式将于 **2021 年 4 月 30 日**&#x200B;停用。
+> * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 具有活动的旧式身份验证模式将于2021年11月30日&#x200B;****&#x200B;停用。
 
 
 **新增功能**
