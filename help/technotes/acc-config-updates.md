@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 587daebd8a779bb9d0917fd2dfab4144494809e3
+source-git-commit: cac3e22dd9aa8220f6980bef0d57c11d47c91163
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 7%
@@ -47,7 +47,7 @@ ht-degree: 7%
 
 您需要升级到上面列出的某个较新版本。
 
-* 作为混合型客户，Adobe会将中间源实例升级到新版本，并且强烈建议您也升级其营销实例。
+* 作为混合型客户，Adobe会将营销实例升级到新版本，并且强烈建议您也升级其营销实例。
 
    新版本至少与Campaign Classic 17.9版本兼容，但为防止任何安全漏洞，Adobe强烈建议将所有实例升级到新版本。 
 
