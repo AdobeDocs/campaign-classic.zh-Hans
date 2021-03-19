@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 版本 19.2
-description: 版本 19.2
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+title: 19.2 版
+description: 活动 19.2发行说明
+feature: null
+role: null
+level: null
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1418'
 ht-degree: 11%
 
 ---
 
 
-# 版本 19.2{#release-19-2}
+# 19.2 版{#release-19-2}
 
-## ![](assets/do-not-localize/limited_2.png) 版本 19.2.4 - 版本 9082 {#release-19-2-4-build-9082}
+## ![](assets/do-not-localize/limited_2.png) 19.2.4 版 - 内部版本 9082 {#release-19-2-4-build-9082}
 
 _2020年12月23日_
 
@@ -33,7 +33,7 @@ _2020年12月23日_
 * 连接协议已经更新，以遵循新的 IMS 认证机制。
 * 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.2.3 - 版本 9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/red_2.png) 19.2.3 版 - 内部版本 9081 {#release-19-2-3-build-9081}
 
 _2020年2月7日_
 
@@ -42,7 +42,7 @@ _2020年2月7日_
 * 修复了由于实施SSL认证而导致Windows服务器上用户连接失败的回归问题。 (NEO-20629)
 * 修复了在&#x200B;**“关于**”菜单中显示错误版本标签号的问题。
 
-## ![](assets/do-not-localize/red_2.png) 版本 19.2 - 版本 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/red_2.png) 19.2 版 - 内部版本 9080 {#release-19-2-build-9080}
 
 _2019年12月2日_
 
