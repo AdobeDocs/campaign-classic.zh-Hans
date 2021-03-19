@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: 587daebd8a779bb9d0917fd2dfab4144494809e3
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1027'
 ht-degree: 7%
 
 ---
@@ -72,11 +72,11 @@ ht-degree: 7%
 
 Adobe标识服务(IMS)将停止支持从2021年6月30日&#x200B;**开始的旧版Internet Explorer**。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
-活动 Client Console已更新，以确保与以下活动版本中的Adobe IMS兼容：
+活动客户端控制台已更新，以确保与Adobe IMS兼容。
 
 **您是否受影响？**
 
-如果您通过Adobe ID](../integrations/using/about-adobe-id.md)通过活动 Identity Service(IMS)连接到Adobe [，则必须升级到以下列出的某个新版本：
+如果您通过Adobe ID](../integrations/using/about-adobe-id.md)通过活动 Identity Management服务(IMS)连接到Adobe [，则必须升级到以下列出的某个新版本：
 
 * 金标11。 [了解详情](../rn/using/gold-standard.md)
 * 活动 21.1.1版。 [了解详情](../rn/using/latest-release.md)
