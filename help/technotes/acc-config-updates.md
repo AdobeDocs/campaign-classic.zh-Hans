@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: cac3e22dd9aa8220f6980bef0d57c11d47c91163
+source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1035'
 ht-degree: 7%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->适用于其他版本的新客户端控制台即将推出。
+>此修复也位于最新的[19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039)、[19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082)和[20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126)中。 适用于其他版本的新客户端控制台即将推出。
 
 ## Adobe Identity Management系统(IMS)更新
 
