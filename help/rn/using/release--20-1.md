@@ -7,9 +7,9 @@ feature: 概述
 role: 商业从业者
 level: 初学者
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1505'
 ht-degree: 10%
 
 ---
@@ -18,6 +18,16 @@ ht-degree: 10%
 # 20.1 版{#release-20-1}
 
 ## ![](assets/do-not-localize/limited_2.png) 20.1.4 版 - 内部版本 9126 {#release-20-1-4-build-9126}
+
+_2021年3月22日_
+
+* 修复了阻止使用控制台某些组件(如投放中的日期选择器和图像管理)的回归问题。 (NEO-31453, NEO-31454)
+
+**仅Console升级是强制的。不需要服务器升级。**
+
+>[!NOTE]
+>
+> 连接到[Adobe软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)以下载新版本。 了解如何在此页面](../../installation/using/client-console-availability-for-windows.md)中向所有最终用户[建议控制台更新。
 
 _2020年12月23日_
 
