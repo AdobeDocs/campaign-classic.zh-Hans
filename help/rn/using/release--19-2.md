@@ -7,9 +7,9 @@ feature: null
 role: null
 level: null
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1484'
 ht-degree: 11%
 
 ---
@@ -18,6 +18,16 @@ ht-degree: 11%
 # 19.2 版{#release-19-2}
 
 ## ![](assets/do-not-localize/limited_2.png) 19.2.4 版 - 内部版本 9082 {#release-19-2-4-build-9082}
+
+_2021年3月22日_
+
+* 修复了阻止使用控制台某些组件(如投放中的日期选择器和图像管理)的回归问题。 (NEO-31453, NEO-31454)
+
+**仅Console升级是强制的。不需要服务器升级。**
+
+>[!NOTE]
+>
+> 连接到[Adobe软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)以下载新版本。 了解如何在此页面](../../installation/using/client-console-availability-for-windows.md)中向所有最终用户[建议控制台更新。
 
 _2020年12月23日_
 
