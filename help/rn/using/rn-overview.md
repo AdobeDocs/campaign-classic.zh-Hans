@@ -7,10 +7,10 @@ feature: 概述
 role: 商业从业者
 level: 初学者
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '423'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 已在生产中验证并受到 Adobe 推荐。
 
-最后 **一个 GA 版本** : [Gold Standard 11 版本](../../rn/using/gold-standard.md#gs-11) 和 [Campaign 20.2.4 版本](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+最后 **一个 GA 版本** : [[!DNL Gold Standard]  11 版本](../../rn/using/gold-standard.md#gs-11) 和 [Campaign 20.2.4 版本](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 仅限按需部署。
 
@@ -53,12 +53,12 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 作为本地用户，您可以执行升级。为此，您需要[下载最新的稳定内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)并升级所有环境。了解有关[升级过程](../../production/using/build-upgrade.md)的更多信息，并查阅[内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)。
 
-### Gold Standard{#upgrade-for-gold-standard-users}
+### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-作为 Gold Standard 用户，您无需采取任何操作，即可通过[最新 GA Gold Standard 内部版本](../../rn/using/gold-standard.md#gs-11)从 Gold Standard 升级中受益。[了解详情](../../rn/using/gs-overview.md)。
+作为托管的[!DNL Gold Standard]用户，您将自动从[最新GA [!DNL Gold Standard] 内部版本](../../rn/using/gold-standard.md#gs-11)的[!DNL Gold Standard]升级中受益，而无需执行任何操作。 [了解详情](../../rn/using/gs-overview.md)。
 
 >[!NOTE]
->[GA 兼容性矩阵](../../rn/using/compatibility-matrix-gs.md)中提供了 Gold Standard 的兼容性矩阵。
+>[!DNL Gold Standard]的兼容性矩阵在[GA兼容性矩阵](../../rn/using/compatibility-matrix-gs.md)中可用。
 
 ## 支持和其他有用链接{#support}
 
