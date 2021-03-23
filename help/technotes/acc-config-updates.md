@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: b036dccc012b1948837549492d9a1b0726af459d
+source-git-commit: 01f4e4ee841a797f4be61ffc01096b7f651ce963
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1114'
 ht-degree: 7%
 
 ---
@@ -16,11 +16,13 @@ ht-degree: 7%
 
 # Adobe Campaign配置更新 — 2021年3月{#acc-config-updates}
 
-您必须使用最新的构建和产品修复来更新您的基础架构和设置。 这些修复是确保服务连续性和安全性的必修程序。 此外，您需要调整实施以与第三方更改保持一致。
+应定期更新基础架构和设置，以更新最新的构建和产品修复。 这些修复是确保服务和安全的连续性所必需的。 此外，需要升级才能与第三方更改保持一致。
 
-作为托管客户，Adobe将定期通知您所需的构建升级。 您需要根据建议进行升级，以确保合规性。
+作为&#x200B;**托管或Managed Services客户**,Adobe将定期通知您构建升级。 您将需要根据建议进行升级，以确保合规性。
 
-作为内部部署/混合客户，出于安全考虑，您必须升级到本页中列出的某个版本。 此外，还必须执行一些手动任务，以确保您的环境是安全的，并且准备好随时从Adobe或第三方系统进行更改。
+作为&#x200B;**内部部署或Hybrid客户**，您应定期升级实施，以符合最新发布的内部版本。
+
+出于安全原因，您现在必须升级到以下列出的某个版本。 除了标准的升级步骤之外，还必须执行一些手动任务，以确保您的环境是安全的，并且准备好迎接即将从Adobe或第三方系统进行的更改。
 
 >[!NOTE]
 >
@@ -29,7 +31,7 @@ ht-degree: 7%
 
 ## 安全更新
 
-最新的活动版本附带一个安全修复，可增强针对服务器端请求伪造(SSRF)问题的保护。 请阅读本页](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)了解更多信息。[
+最新的活动版本附带安全修复，它增强了针对服务器端请求伪造(SSRF)问题的保护。 请阅读本页](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)了解更多信息。[
 
 **您是否受影响？**
 
@@ -49,20 +51,20 @@ ht-degree: 7%
 
 您需要升级到上面列出的某个较新版本。
 
-* 作为混合型客户，Adobe会将营销实例升级到新版本，并且强烈建议您也升级其营销实例。
+* 作为混合型客户，Adobe将通知您中间源实例的预定升级日期。 Adobe强烈建议您也升级营销实例。
 
-   新版本至少与Campaign Classic 17.9版本兼容，但为防止任何安全漏洞，Adobe强烈建议将所有实例升级到新版本。 
+   新版本向后兼容Campaign Classic 17.9版本，但Adobe强烈建议在所有实例上进行升级以解决安全漏洞
 
-* 作为内部部署客户，系统会要求您将营销和中间源实例升级到较新的版本。
+* 作为预置型客户，系统会要求您将营销和中间源实例升级到最新版本。
 
 >[!CAUTION]
 >
->如果暂时无法升级，则&#x200B;**必须联系Adobe客户关怀团队以手动对实例**&#x200B;应用安全修复。
+>如果无法在建议的时间范围内进行升级，**应与Adobe客户关怀团队联系，对实例**&#x200B;应用短期手动安全修复。
 
 
-## 活动客户端控制台更新
+## Campaign Classic客户端控制台更新
 
-以下版本修复了一个回归，该回归阻止使用客户端控制台的某些组件，如投放中的日期选择器和图像管理。 **必须** 升级控制台。
+**现在可用**&#x200B;控制台版本应安装在下面，以解决最近识别的回归问题。 此回归阻止使用客户端控制台的某些组件，如投放中的日期选择器和图像管理。 **必须** 升级控制台。
 
 * 最新的Gold Standard 11版本9032@10c2709。 [了解详情](../rn/using/gold-standard.md)
 * 活动 20.1.4版。 [了解详情](../rn/using/release--20-1.md)
@@ -71,9 +73,9 @@ ht-degree: 7%
 
 ## Adobe Identity Management系统(IMS)更新
 
-Adobe标识服务(IMS)将停止支持从2021年6月30日&#x200B;**开始的旧版Internet Explorer**。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧版Internet Explorer。**[了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
-活动客户端控制台已更新，以确保与Adobe IMS兼容。
+需要升级活动客户端控制台，以确保与Adobe IMS兼容。
 
 **您是否受影响？**
 
@@ -93,7 +95,7 @@ Adobe标识服务(IMS)将停止支持从2021年6月30日&#x200B;**开始的旧�
 
 **如何更新？**
 
-作为托管客户，无需执行任何操作：Adobe已将您的实例升级到较新版本。
+作为托管客户，Adobe将与您合作，不久后将您的实例升级到较新版本。
 
 作为内部部署/混合型客户，您需要升级到某个较新版本，以从新的客户端控制台中受益，并确保在2021年6月30日之前实现&#x200B;**的无缝过渡。**
 
@@ -123,7 +125,7 @@ Adobe标识服务(IMS)将停止支持从2021年6月30日&#x200B;**开始的旧�
 
 **如何更新？**
 
-实例升级到较新版本后，所有客户都需要按照[过程移动到新的身份验证模式](../integrations/using/configuring-adobe-io.md)。 这需要生成新的Adobe I/O令牌并在实现中使用它。  
+实例升级到较新版本后，所有客户都需要按照[过程移动到新的身份验证模式](../integrations/using/configuring-adobe-io.md)。 这要求您生成新的Adobe I/O令牌并在实现中使用它。  
 
 此外，对于混合环境，客户需要确保在中间源实例上配置管道。 [了解详情](../integrations/using/configuring-pipeline.md)。
 
@@ -137,13 +139,13 @@ Adobe标识服务(IMS)将停止支持从2021年6月30日&#x200B;**开始的旧�
 
 **您是否受影响？**
 
-如果您的实例运行于比活动 21.1、**更早的**&#x200B;版本上，并使用旧版Apple二进制协议发送推送通知，则需要更新到基于HTTP/2的APNs提供程序API。
+如果您的实例在比活动 21.1、**更早的**&#x200B;版本上运行，并且您使用旧版Apple二进制协议发送推送通知，则需要更新到基于HTTP/2的APNs提供程序API。
 
 了解如何在本节](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本[。
 
 **如何更新？**
 
-作为托管客户，无需执行任何操作：Adobe已将您的实例更新为基于HTTP/2的API。
+作为托管客户，如果您已升级到新版本，Adobe已将您的实例更新到基于HTTP/2的API。
 
 作为内部部署/托管客户，您需要更新配置。 [了解如何迁移到HTTP/2](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)
 
