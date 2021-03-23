@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 5b43412286762977c416665d296908a9bfc9b20a
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '458'
 ht-degree: 5%
 
 ---
@@ -53,6 +53,6 @@ ht-degree: 5%
 
 * **投放的大小**:大型投放可能需要更长时间才能完成。MTA子项配置为处理默认的批处理大小，该大小适用于大多数实例，但在投放速度持续较慢时，需要检查。
 * **投放的目标**:投放性能禁止受软跳出错误影响，这些错误根据重试配置进行处理。错误数越多，需要的重试就越多。
-* **平台总负载**:发送多个大型投放时，整个平台可能会受到影响。您还可以检查IP信誉和可交付性问题。 有关详细信息，请参阅Adobe Campaign[可交付性最佳实践指南](../../delivery/using/deliverability-key-points.md)和本页](../../delivery/using/about-deliverability.md)。[
+* **平台总负载**:发送多个大型投放时，整个平台可能会受到影响。您还可以检查IP信誉和可交付性问题。 有关详细信息，请参阅[本节](../../delivery/using/about-deliverability.md)和[Adobe交付能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
 
 平台和投放库维护也会影响数据发送性能。 有关详细信息，请参见[此页面](../../production/using/database-performances.md)。
