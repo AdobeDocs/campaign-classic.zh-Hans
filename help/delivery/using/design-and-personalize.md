@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 7%
+source-wordcount: '1278'
+ht-degree: 6%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 7%
 
 * 在电子邮件中使用&#x200B;**授权字符**:电子邮件地址的有效字符列表在“XtkEmail_Characters”选项中定义。 了解如何访问本节](../../installation/using/configuring-campaign-options.md)中的活动选项[。 要正确处理特殊字符，需要在Unicode中安装Adobe Campaign。
 
-* **电子邮件身份验证**&#x200B;的配置：确保电子邮件标头包含DKIM签名。 DKIM（域密钥标识邮件）身份验证允许接收电子邮件服务器验证消息确实是由其声称其发送消息的个人或实体发送的，以及消息内容在最初发送（和DKIM“签名”）和接收时间之间是否发生了更改。 此标准通常使用“发件人”或“发件人”标题中的域。 如需详细信息，请参阅[此部分](../../delivery/using/technical-recommendations.md#dkim)。
+* **电子邮件身份验证**&#x200B;的配置：确保电子邮件标头包含DKIM签名。 DKIM（域密钥标识邮件）身份验证允许接收电子邮件服务器验证消息确实是由其声称其发送消息的个人或实体发送的，以及消息内容在最初发送（和DKIM“签名”）和接收时间之间是否发生了更改。 此标准通常使用“发件人”或“发件人”标题中的域。 有关详细信息，请参阅[《Adobe交付能力最佳实践指南》](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ### 响应式电子邮件设计
 
