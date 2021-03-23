@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+source-git-commit: cb24bc78b5cc09307ca470470464f204d9f41278
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1149'
 ht-degree: 2%
 
 ---
@@ -21,19 +21,20 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->我们强烈建议在更新之前对每个实例进行数据库备份。 有关详细信息，请参阅[备份](../../production/using/backup.md)。\
->要执行升级，请确保您具有访问实例和日志的能力和权限。
+>* Adobe强烈建议在更新之前对每个实例进行数据库备份。 有关更多信息，请参见[此章节](../../production/using/backup.md)。
+>* 要执行升级，请确保您具有访问实例和日志的能力和权限。
+>* 在开始之前，请阅读[本节](../../installation/using/general-architecture.md)和[内部升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)章节。
 
->[!NOTE]
 >
->另请参阅[安装指南](../../installation/using/general-architecture.md)和[内部升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)快速入门。
+
+
 
 ## Windows {#in-windows}
 
-要在交付新版本时更新新版本中的Adobe Campaign，应在Windows中应用以下过程：
+在Windows环境中，请按照以下步骤将Adobe Campaign更新到新版本：
 
 * [关闭服务](#shut-down-services),
-* [升级Adobe Campaign服务器应用程序](#upgrade-the-adobe-campaign-server-application),
+* [升级应用程序服务器](#upgrade-the-adobe-campaign-server-application),
 * [同步资源](#synchronize-resources),
 * [重新启动服务](#restart-services)。
 
@@ -88,9 +89,9 @@ ht-degree: 2%
 
 这将允许您执行以下操作：
 
-* 同步资源、
-* 更新模式,
-* 更新数据库。
+* 同步资源
+* 更新模式
+* 更新数据库
 
 >[!NOTE]
 >
@@ -110,9 +111,9 @@ ht-degree: 2%
 
 ## Linux {#in-linux}
 
-要在交付新版本时更新新版本中的Adobe Campaign,Linux的过程如下：
+在Linux环境中，请按照以下步骤将Adobe Campaign更新到新版本：
 
-* [获取更新的包](#obtain-updated-packages),
+* [下载更新的包](#obtain-updated-packages),
 * [执行更新](#perform-an-update),
 * [重新启动Web服务器](#reboot-the-web-server)。
 
@@ -138,7 +139,7 @@ ht-degree: 2%
    $rpm -Uvh nlserver6-v7-XXXX.rpm
    ```
 
-   其中XXX是文件的版本。
+   其中，XXX是文件的版本。
 
    rpm文件依赖于CentOS/Red Hat分发上可找到的包。 如果您不想使用其中的某些依赖关系，则可能必须使用rpm的“nodeps”选项：
 
@@ -247,11 +248,7 @@ ht-degree: 2%
 
 ### Windows {#in-windows-1}
 
-在安装(**nlserver web**)Adobe Campaign应用程序服务器的计算机上，下载并复制文件
-
-**setup-client-6.XXXX.exe**
-
-**[应用程序路径]**datakitlengjsp
+在安装Adobe Campaign应用程序服务器的计算机上(**nlserver web**)，下载并复制文件&#x200B;**setup-client-6.XXXX.exe**&#x200B;在应用程序&#x200B;**[路径中的]/datakit/nl/eng/jsp**。
 
 下次连接客户端控制台时，将出现一个窗口，告知用户更新的可用性，并优惠用户下载和安装更新的可能性。
 
@@ -261,11 +258,7 @@ ht-degree: 2%
 
 ### Linux {#in-linux-1}
 
-在安装了Adobe Campaign应用程序服务器(**nlserver web**)的计算机上，检索以下包：
-
-**setup-client-6.XXXX.exe**
-
-并复制，另存为&#x200B;**/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
+在安装了Adobe Campaign应用服务器(**nlserver web**)的计算机上，检索&#x200B;**setup-client-6.XXXX.exe**&#x200B;包并复制它，另存为&#x200B;**/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
 ```
  cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
