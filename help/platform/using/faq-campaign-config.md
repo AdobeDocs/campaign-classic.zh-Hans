@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 100%
+source-wordcount: '758'
+ht-degree: 95%
 
 ---
 
@@ -41,9 +41,9 @@ Adobe Campaign 目前提供英语、法语、德语和日语共 4 种语言的�
 
 ## 如何配置电子邮件投放能力? {#how-to-configure-email-deliverability-}
 
-除了[投放能力配置](../../delivery/using/about-deliverability.md#configuration)部分外，请阅读投放能力技术建议，了解如何配置实例以最大可能地提升 Campaign 投放能力。
+除[Adobe交付能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)外，请阅读交付能力技术建议，了解如何配置实例以最大限度地提高活动交付能力。
 
-[单击此处了解更多信息](../../delivery/using/technical-recommendations.md)。
+[单击此处了解更多信息](../../delivery/using/about-deliverability.md)。
 
 ## 如何实施内容批准？{#how-can-i-implement-content-approval-}
 
