@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '2605'
+source-wordcount: '2613'
 ht-degree: 14%
 
 ---
@@ -125,7 +125,7 @@ Adobe Campaign根据投放故障类型和在错误消息限定期间分配的原
 * **硬错误**：相应的电子邮件地址会立即添加到隔离。
 * **软错误**：软错误不会立即将地址添加到隔离，但会增加错误计数。有关详细信息，请参阅[软错误管理](#soft-error-management)。
 
-如果用户将电子邮件归为垃圾邮件（[反馈循环](../../delivery/using/technical-recommendations.md#feedback-loop)），则该消息将自动重定向到由Adobe管理的技术邮箱。 随后，用户的电子邮件地址会自动发送到隔离。
+如果用户将电子邮件归为垃圾邮件（[反馈循环](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)），则该消息将自动重定向到由Adobe管理的技术邮箱。 随后，用户的电子邮件地址会自动发送到隔离。
 
 在隔离地址的列表中，**[!UICONTROL Error reason]**&#x200B;字段指示将选定地址置于隔离的原因。 Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式导入电子邮件地址，这样以后就不会重新定向这些地址。
 
