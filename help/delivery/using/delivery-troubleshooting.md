@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: f3ba836bbb5a5f82d6a7868dcb15edc8e61b9a5b
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 * 在Adobe CampaignMTA中可能已发生限制。 这是由以下原因造成的：
 
-   * 已挂起的消息（**[!UICONTROL quotas met]**&#x200B;消息）：已满足在活动中定义的声明性MX规则声明的配额。 有关此消息的详细信息，请参阅[此页](../../delivery/using/deliverability-faq.md)。 要进一步了解MX规则，请参阅[此页](../../delivery/using/technical-recommendations.md#mx-rules)。
+   * 已挂起的消息（**[!UICONTROL quotas met]**&#x200B;消息）：已满足在活动中定义的声明性MX规则声明的配额。 有关此消息的详细信息，请参阅[此页](../../delivery/using/deliverability-faq.md)。 要进一步了解MX规则，请参阅[本节](../../installation/using/email-deliverability.md#about-mx-rules)。
 
    * 已挂起的消息（**[!UICONTROL dynamic flow control]**&#x200B;消息）：活动 MTA在尝试为给定ISP发送消息时遇到错误，这会导致延迟以避免错误密度过大，从而面临潜在阻止列表。
 
