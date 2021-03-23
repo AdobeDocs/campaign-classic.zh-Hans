@@ -7,9 +7,9 @@ feature: 概述
 role: 架构师
 level: 初学者
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 09bd634142f643206c38ac5f881302a5d489ecaf
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '626'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Adobe Campaign可以部署为托管服务：Adobe Campaign的所有组件(包括
 
 * 根据品牌配置跟踪和镜像页面URL。 有关事务性消息，请参阅[以了解本节](../../message-center/using/configuring-multibranding.md)。
 * 安装客户端控制台：请参阅本节](../../installation/using/installing-the-client-console.md)。[
-* 阅读[快速入门指南](../../delivery/using/deliverability-key-points.md)和[详细文档](../../delivery/using/about-deliverability.md)，进一步了解交付工具和最佳实践。
+* 阅读详细文档[](../../delivery/using/about-deliverability.md)，进一步了解可交付性工具和最佳实践。
 * 配置活动选项：请参阅本节](../../installation/using/configuring-campaign-options.md)。[
 * 配置CRM连接器：请参阅本节](../../platform/using/crm-connectors.md)。[
 
@@ -65,7 +65,7 @@ Adobe Campaign可以内部部署：Adobe Campaign的所有组件（包括用户�
 * 根据品牌配置跟踪和镜像页面URL。 有关事务性消息，请参阅[以了解本节](../../message-center/using/configuring-multibranding.md)。
 * 安装客户端控制台：请参阅本节](../../installation/using/installing-the-client-console.md)。[
 * 安装内置包：请参阅本节](../../installation/using/installing-campaign-standard-packages.md)。[
-* 可交付性：配置[MX规则](../../installation/using/email-deliverability.md#mx-configuration)和[电子邮件格式](../../installation/using/email-deliverability.md#managing-email-formats)。 阅读[快速入门指南](../../delivery/using/deliverability-key-points.md)和[详细文档](../../delivery/using/about-deliverability.md)，进一步了解交付工具和最佳实践。
+* 可交付性：配置[MX规则](../../installation/using/email-deliverability.md#mx-configuration)和[电子邮件格式](../../installation/using/email-deliverability.md#managing-email-formats)。 阅读详细文档[](../../delivery/using/about-deliverability.md)，进一步了解可交付性工具和最佳实践。
 * 配置活动选项：请参阅本节](../../installation/using/configuring-campaign-options.md)。[
 * 配置外部数据库(联合数据访问):请参阅本节](../../installation/using/about-fda.md)。[
 * 配置CRM连接器：请参阅本节](../../platform/using/crm-connectors.md)。[
