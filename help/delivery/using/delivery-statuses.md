@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 29801740c10dc182bdb5f00114298d04385a3e1b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '629'
 ht-degree: 4%
 
 ---
@@ -87,7 +87,7 @@ ajouter screenshot -->
  </tbody> 
 </table>
 
-要了解如何优化Adobe Campaign电子邮件的可交付性，请参阅Adobe Campaign[可交付性最佳实践指南](../../delivery/using/deliverability-key-points.md)和[本页](../../delivery/using/about-deliverability.md)。
+要了解如何优化Adobe Campaign电子邮件的可发送性，请参阅[本节](../../delivery/using/about-deliverability.md)。 有关可交付性的更深入了解，请参阅[《Adobe可交付性最佳实践指南》](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
 
 ## 挂起状态{#pending-status}
 
