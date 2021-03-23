@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 100%
+source-wordcount: '517'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 Adobe Campaign Classic 特别使用一系列技术来提供价值。这一技术组合要求您定期升级 Campaign Classic 实例，以确保使用最新版本提供出众的安全性、稳定性和性能。
 
-如果您使用的是 Adobe Managed Services，则可以通过升级 Campaign Gold Standard 受益。如需详细信息，请参阅[本文](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)。
+如果您使用的是Adobe Managed Services，则可以从活动[!DNL Gold Standard]升级中受益。 如需详细信息，请参阅[本文](../../rn/using/gs-overview.md)。
 
 [阅读此部分](../../production/using/build-upgrade.md)以了解如何更新环境，并阅读有关此特定主题的[常见问题](../../platform/using/faq-build-upgrade.md)。
 
