@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 活动 Gold Standard的兼容性矩阵
-description: Gold Standard 版本的 Campaign Classic 兼容性矩阵
+title: 活动 [!DNL Gold Standard]的兼容性矩阵
+description: Campaign Classic [!DNL Gold Standard] 发行版的兼容性矩阵
 feature: 概述
 role: 商业从业者
 level: 初学者
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '512'
 ht-degree: 98%
 
 ---
 
 
-# Gold Standard 兼容性矩阵{#compatibility-matrix-gs}
+# [!DNL Gold Standard] 兼容性矩阵{#compatibility-matrix-gs}
 
-本文档列出针对 **Adobe Campaign Classic Gold Standard** 19.1 内部版本支持的所有系统和组件。此列表中未包含的产品和版本与此版本的 Adobe Campaign 不兼容。
+本文档列出针对 **Adobe Campaign Classic[!DNL Gold Standard]** 19.1 内部版本支持的所有系统和组件。此列表中未包含的产品和版本与此版本的 Adobe Campaign 不兼容。
 
 ## 重要说明{#important-notes-gs}
 
