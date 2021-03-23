@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1204'
 ht-degree: 12%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->Adobe Campaign优惠一组工具，用于监控您的交付能力并优化电子邮件发送。 有关详细信息，请参阅[可交付性入门](../../delivery/using/deliverability-key-points.md)和[可交付性管理](../../delivery/using/about-deliverability.md)。
+>Adobe Campaign优惠一组工具，用于监控您的交付能力并优化电子邮件发送。 请阅读[本节](../../delivery/using/about-deliverability.md)了解更多信息。
 
 投放发送可以通过准备投放和/或在工作流过程中发送它来实现自动化。 有关工作流中投放类型活动的详细信息，请参阅[本节](../../workflow/using/about-action-activities.md)。
 
