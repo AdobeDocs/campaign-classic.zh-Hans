@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '2572'
+source-wordcount: '2580'
 ht-degree: 14%
 
 ---
@@ -205,7 +205,7 @@ ht-degree: 14%
    >
    >弹回邮箱的配置详见[本节](../../installation/using/deploying-an-instance.md#managing-bounced-emails)。
 
-   [反馈循环](../../delivery/using/technical-recommendations.md#feedback-loop)的操作类似于弹回电子邮件。 当用户将电子邮件归为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止对此用户的所有投放。 发送给已将电子邮件限定为垃圾邮件的用户的邮件会自动重定向到专门为此目的创建的电子邮件框。 这些用户的地址处于状阻止列表态，即使他们未单击退订链接。 地址在阻止列表(**NmsAddress**)隔离表中，而不在(**NmsRecipient**)收件人表中。
+   [反馈循环](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)的操作类似于弹回电子邮件。 当用户将电子邮件归为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止对此用户的所有投放。 发送给已将电子邮件限定为垃圾邮件的用户的邮件会自动重定向到专门为此目的创建的电子邮件框。 这些用户的地址处于状阻止列表态，即使他们未单击退订链接。 地址在阻止列表(**NmsAddress**)隔离表中，而不在(**NmsRecipient**)收件人表中。
 
    >[!NOTE]
    >
