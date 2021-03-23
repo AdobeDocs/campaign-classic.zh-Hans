@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2993'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 0%
 >
 >某些配置只能通过Adobe来执行由Adobe托管的部署，例如，访问服务器和实例配置文件。 要进一步了解不同的部署，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[本页](../../installation/using/capability-matrix.md)。
 
-有关与可交付性相关的概念和最佳实践的详细信息，请参阅此[部分](../../delivery/using/about-deliverability.md)。
+有关与Adobe Campaign可交付性相关的概念和最佳实践的详细信息，请参阅此[部分](../../delivery/using/about-deliverability.md)。
 
-[部分](../../delivery/using/technical-recommendations.md)提供有关Adobe Campaign平台有效发送和接收电子邮件的所有技术建议。
+要更深入地了解哪些是可交付性，包括有关Adobe平台有效发送和接收电子邮件的所有技术建议，请参阅[Adobe可交付性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
 
 ## 工作原理 {#operating-principle}
 
