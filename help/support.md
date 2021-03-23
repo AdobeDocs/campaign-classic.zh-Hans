@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: latest-release-notes
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 3a65bc08fd3b6cedfd7ef05a51fd8378f19daa85
+source-git-commit: 1d9c96d1cd8ba2a8099271165a1671d5589230fb
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 9%
+source-wordcount: '686'
+ht-degree: 10%
 
 ---
 
@@ -38,50 +38,58 @@ ht-degree: 9%
 
 如何升级到新版本？ 如何监控工作流执行？ 什么是数据库清理工作流？... [读出前10个问题](platform/using/common-questions.md)。
 
-### 主题Q&amp;A
-
-阅读一组特定问题与答案（按主题）：
-
-* [重要概念](platform/using/faq-key-concepts.md)
-* [活动设置](platform/using/faq-campaign-config.md)
-* [报告](platform/using/faq-reporting.md)
-* [内部版本升级](platform/using/faq-build-upgrade.md)
-* [测试、发送和跟踪消息](platform/using/faq-messages.md)
-* [工作流](platform/using/faq-workflows.md)
-* [开发人员](platform/using/faq-developers.md)
-* [可投放性](delivery/using/monitoring-deliverability.md)
-
-### 常见问题
-
-* [性能和吞吐量问题](production/using/performance-and-throughput-issues.md)
-* [投放表演](delivery/using/delivery-performances.md)
-* [优化工作流性能](workflow/using/workflow-best-practices.md)
-* [工作流执行疑难解答](workflow/using/monitoring-workflow-execution.md)
-* [SFTP 服务器使用情况](platform/using/sftp-server-usage.md)
-* [了解投放故障](delivery/using/understanding-delivery-failures.md)
-
-### 最佳做法
-
-* [工作流最佳实践](workflow/using/workflow-best-practices.md)
-* [技术工作流监控](workflow/using/monitoring-technical-workflows.md)
-* [了解跟踪管理](delivery/using/about-message-tracking.md)
-* [发现监视工具](production/using/monitoring-guidelines.md)
-* [导入包含工作流的数据](platform/using/import-export-workflows.md)
-* [以多个批次发送消息  ](delivery/using/steps-sending-the-delivery.md)
-* [设计电子邮件内容](delivery/using/defining-the-email-content.md)
-* [投放最佳实践](delivery/using/delivery-best-practices.md)
-
-### 操作说明
-
-* [升级到最新版本](production/using/build-upgrade.md)
-* [构建升级常见问题解答](platform/using/faq-build-upgrade.md)
-* [监视投放](delivery/using/about-delivery-monitoring.md)
-* [了解隔离管理](delivery/using/understanding-quarantine-management.md)
-* [安全性和隐私核对清单](installation/using/get-started-security-privacy.md)
-* [隐私和同意管理](platform/using/privacy-management.md)
-* [设计查询](platform/using/steps-to-create-a-query.md)
-* [查询样例](workflow/using/querying-recipient-table.md)
-* [构建工作流](workflow/using/building-a-workflow.md)
+<table>
+    <tr><td><strong>主题Q&amp;A</strong></td><td><strong>常见问题</strong></td><td><strong>最佳做法</strong></td><td><strong>操作说明</strong></td></tr>
+    <tr>
+    <td valign="top">
+        <ul>
+        <li><a href="platform/using/faq-key-concepts.md">重要概念</a></li>
+        <li><a href="platform/using/faq-campaign-config.md">活动设置</a></li>
+        <li><a href="platform/using/faq-reporting.md">报告</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">内部版本升级</a></li>
+        <li><a href="platform/using/faq-messages.md">测试、发送和跟踪消息</a></li>
+        <li><a href="platform/using/faq-workflows.md">工作流</a></li>
+        <li><a href="platform/using/faq-developers.md">开发人员</a></li>
+        <li><a href="delivery/using/monitoring-deliverability.md">可投放性</a></li>
+        </ul>
+    </td>
+    <td valign="top">
+        <ul>
+        <li><a href="production/using/performance-and-throughput-issues.md">性能和吞吐量问题</a></li>
+        <li><a href="delivery/using/delivery-performances.md">投放表演</a></li>
+        <li><a href="workflow/using/workflow-best-practices.md">优化工作流性能</a></li>
+        <li><a href="workflow/using/monitoring-workflow-execution.md">工作流执行疑难解答</a></li>
+        <li><a href="platform/using/sftp-server-usage.md">SFTP 服务器使用情况</a></li>
+        <li><a href="delivery/using/understanding-delivery-failures.md">了解投放故障</a></li>
+        </ul>
+    </td>
+   <td valign="top">
+        <ul>
+        <li><a href="workflow/using/workflow-best-practices.md">工作流最佳实践</a></li>
+        <li><a href="workflow/using/monitoring-technical-workflows.md">技术工作流监控</a></li>
+        <li><a href="delivery/using/about-message-tracking.md">了解跟踪管理</a></li>
+        <li><a href="production/using/monitoring-guidelines.md">发现监视工具</a></li>
+        <li><a href="platform/using/import-export-workflows.md">导入包含工作流的数据</a></li>
+        <li><a href="delivery/using/steps-sending-the-delivery.md">以多个批次发送消息</a></li>
+        <li><a href="delivery/using/defining-the-email-content.md">设计电子邮件内容</a></li>
+        <li><a href="delivery/using/delivery-best-practices.md">投放最佳实践</a></li>
+        </ul>
+    </td>
+    <td valign="top">
+        <ul>
+        <li><a href="production/using/build-upgrade.md">升级到最新版本</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">构建升级常见问题解答</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">监视投放</a></li>
+        <li><a href="delivery/using/understanding-quarantine-management.md">了解隔离管理</a></li>
+        <li><a href="installation/using/get-started-security-privacy.md">安全性和隐私核对清单</a></li>
+        <li><a href="platform/using/privacy-management.md">隐私和同意管理</a></li>
+        <li><a href="platform/using/steps-to-create-a-query.md">设计查询</a></li>
+        <li><a href="workflow/using/querying-recipient-table.md">查询样例</a></li>
+        <li><a href="workflow/using/building-a-workflow.md">构建工作流</a></li>
+        </ul>
+    </td>
+    </tr>
+</table>
 
 ## Campaign 控制面板 {#control-panel}
 
@@ -130,16 +138,10 @@ ht-degree: 9%
 
 ### 访问活动下载中心
 
-从2020年6月起，Experience Cloud解决方案软件分发取代了旧版Neolane下载中心，并为查找和下载您的软件、包和工具提供了更高效的体验。
-
-[单](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) 击此处访问Experience Cloud软件分发。了解有关此页面](https://docs.adobe.com/content/heexperience-cloud/software-distribution/home.html)中新增的下载中心[的更多信息。
+从2020年6月起，Experience Cloud解决方案软件分发取代了旧版Neolane下载中心，并为查找和下载您的软件、包和工具提供了更高效的体验。 [单](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) 击此处访问Experience Cloud软件分发。了解有关此页面](https://docs.adobe.com/content/heexperience-cloud/software-distribution/home.html)中新增的下载中心[的更多信息。
 
 ### 创建票证或开始聊天
 
-通过创建案例，您可以就您在Adobe产品中遇到的任何问题与Adobe客户支持团队联系。
+通过创建案例，您可以就您在Adobe产品中遇到的任何问题与Adobe客户支持团队联系。 为帮助您解决问题或解决问题，Adobe Admin Console将允许您与Adobe客户支持部门进行聊天。
 
-为帮助您解决问题或解决问题，Adobe Admin Console将允许您与[Adobe客户支持](https://adminconsole.adobe.com/overview)进行聊天。
-
-要在该新系统中记录问题或开始聊天会话，请连接到[Adobe Admin Console](https://adminconsole.adobe.com/overview)。
-
-按照[本页](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)中描述的详细过程操作。
+要在该新系统中记录问题或开始聊天会话，请连接到[Adobe Admin Console](https://adminconsole.adobe.com/overview)。 按照[本页](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)中描述的详细过程操作。
