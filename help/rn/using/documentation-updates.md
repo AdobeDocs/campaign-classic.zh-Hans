@@ -7,10 +7,10 @@ feature: 概述
 role: 商业从业者
 level: 初学者
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
 workflow-type: tm+mt
-source-wordcount: '4194'
-ht-degree: 96%
+source-wordcount: '4250'
+ht-degree: 94%
 
 ---
 
@@ -37,6 +37,8 @@ ht-degree: 96%
 * [设置和管理审批流程](../../campaign/using/marketing-campaign-approval.md)
 
 在&#x200B;**[!UICONTROL Advanced JavaScript]**&#x200B;活动部分中添加了有关如何使用任务.setCompleted()方法终止任务和防止将来召回的信息。 [阅读更多](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+
+[Deliverability](../../delivery/using/about-deliverability.md)部分已更新，现在包括指向新[Adobe可交付性最佳实践指南](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)的链接。 所有与可应用于各种Adobe解决方案的可交付性相关的通用信息都已移至[最佳做法指南附录](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources)。
 
 ## 2021 年 2 月 {#release-21.1}
 
@@ -130,7 +132,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 更新了已弃用和已删除的功能页面。[阅读更多](../../rn/using/deprecated-features.md)
 
-Gold Standard 版本的发行说明和兼容性矩阵现在可在专用部分中获取。
+[!DNL Gold Standard]版本的发行说明和兼容性列表现在可在专用部分中找到。
 [阅读更多](../../rn/using/gold-standard.md#gs-11)。
 
 最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成现已更改并移至 Adobe I/O。[阅读更多](../../integrations/using/configuring-adobe-io.md)
@@ -167,7 +169,7 @@ Gold Standard 版本的发行说明和兼容性矩阵现在可在专用部分中
 
 通过专用部分了解与使用 Campaign 进行投放设计和发送相关的最佳实践。[阅读更多](../../delivery/using/delivery-best-practices.md)
 
-改进了“投放能力”最佳实践登陆页，以促进访问各个子部分。[阅读更多](../../delivery/using/deliverability-key-points.md)
+改进了“投放能力”最佳实践登陆页，以促进访问各个子部分。[阅读更多](../../delivery/using/about-deliverability.md)
 
 现在，可在以下主题中获取操作方法视频：
 
@@ -206,7 +208,7 @@ Gold Standard 版本的发行说明和兼容性矩阵现在可在专用部分中
 
 已向工作流用例中添加了有关如何使用增量查询自动更新列表的用例。[阅读更多](../../workflow/using/about-workflow-use-cases.md)
 
-[发行说明](../../rn/using/latest-release.md)已重组：添加了[概述页面](../../rn/using/latest-release.md)，其中包含有关生成状态、升级过程、建议和重要链接的信息。此外，还添加了 [Gold Standard 版本](../../rn/using/gold-standard.md)的专用页面，并集成了[兼容性矩阵](../../rn/using/compatibility-matrix.md)。
+[发行说明](../../rn/using/latest-release.md)已重组：添加了[概述页面](../../rn/using/latest-release.md)，其中包含有关生成状态、升级过程、建议和重要链接的信息。此外，还添加了 [[!DNL Gold Standard]  版本](../../rn/using/gold-standard.md)的专用页面，并集成了[兼容性矩阵](../../rn/using/compatibility-matrix.md)。
 
 已添加新部分，其中包含与 Campaign Classic 监控相关的准则。[阅读更多](../../production/using/monitoring-guidelines.md)
 
@@ -266,7 +268,7 @@ Spam Assassin 安装部分已更新为新的安装文件名。[了解详情](../
 
 “投放能力”疑难解答部分已移动和改进。[阅读更多](../../delivery/using/deliverability-faq.md)
 
-启动新平台时的投放能力部分指南已得到改进。[阅读更多](../../delivery/using/starting-new-platform.md)
+在启动新平台时的可交付性指南已得到增强。 [阅读更多](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html#transition-process)
 
 已移动并更新“发送带有附件的事务电子邮件”部分。[阅读更多](../../message-center/using/transactional-email-with-attachments.md)
 
@@ -476,7 +478,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 添加了描述 Campaign 服务器卸载步骤的部分。[阅读更多](../../installation/using/uninstalling-campaign.md)
 
-[安全性](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)、 [投放能力](../../delivery/using/deliverability-key-points.md)和 [隐私](../../platform/using/privacy-management.md)入门指南已更新。
+[安全性](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)、 [投放能力](../../delivery/using/about-deliverability.md)和 [隐私](../../platform/using/privacy-management.md)入门指南已更新。
 
 预处理工作流选项的描述已更新，以反映产品更改。[阅读更多](../../workflow/using/data-loading--file-.md)
 
