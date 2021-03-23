@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 53e239c04f9c4239a5c32e4f25549cbc5f6ece50
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 # 跟踪和监视 {#track-and-monitor}
 
-您单击了“发送”按钮？ 让我们看看会发生什么。 发送投放后，Adobe Campaign使您能够跟踪已发送的消息并了解收件人对您的投放的反应。 这将帮助您改进未来发送并优化您的下一个活动。
+您单击了&#x200B;**发送**&#x200B;按钮？ 让我们看看会发生什么。 发送投放后，Adobe Campaign使您能够跟踪已发送的消息并了解收件人对您的投放的反应。 这将帮助您改进未来发送并优化您的下一个活动。
 
 ## 监控投放 {#monitoring-deliveries}
 
