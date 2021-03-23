@@ -6,9 +6,9 @@ description: 了解如何配置管道
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 在启动此配置之前，请检查您使用的是：
 
-* Adobe Campaign20.3、20.2.4、19.1.8或金标11
+* Adobe Campaign20.3、20.2.4、19.1.8或[!DNL Gold Standard] 11
 * Adobe Analytics Standard版本
 
 您还需要：
