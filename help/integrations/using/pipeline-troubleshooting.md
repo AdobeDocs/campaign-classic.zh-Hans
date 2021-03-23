@@ -6,9 +6,9 @@ description: 配置集成
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '580'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 您的Adobe Campaign Classic版本不支持该管道。
 
 1. 检查配置文件中是否存在[!DNL pipelined]元素。 否则，表示不支持它。
-1. 升级到活动 20.3或Gold Standard 11。
+1. 升级到活动 20.3或[!DNL Gold Standard] 11。
 
 **Pipelined fails with &quot; aurait dcommencer par  `[` ou( `{` iRc=16384)&quot;**
 
