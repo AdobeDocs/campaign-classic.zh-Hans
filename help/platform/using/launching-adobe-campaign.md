@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 47%
+source-wordcount: '548'
+ht-degree: 46%
 
 ---
 
@@ -97,11 +97,11 @@ ht-degree: 47%
 
 无论您何时联系Adobe客户关怀团队，您都需要提供Adobe Campaign客户控制台和应用程序服务器的版本号和内部版本号。
 
-如果您运行的是[活动 Gold Standard版本](../../rn/using/gold-standard.md)，则还需要共享显示在&#x200B;**[!UICONTROL About]**&#x200B;框中的SHA/1字符。 例如，对于Gold **Standard 10发行版**，内部版本号将显示&#x200B;**内部版本9032@efd8a94**，如下所示：
+如果您运行的是[活动 [!DNL Gold Standard] version](../../rn/using/gold-standard.md)，则还需要共享显示在&#x200B;**[!UICONTROL About]**&#x200B;框中的SHA/1字符。 例如，对于Gold **Standard 10发行版**，内部版本号将显示&#x200B;**内部版本9032@efd8a94**，如下所示：
 
 ![](assets/about-acc-gs.png)
 
-阅读本文](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)，进一步了解金本位[。
+请阅读本文](../../rn/using/gs-overview.md)，进一步了解[!DNL Gold Standard] [。
 
 **相关主题**：
 
