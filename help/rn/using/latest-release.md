@@ -7,10 +7,10 @@ feature: 概述
 role: 商业从业者
 level: 初学者
 translation-type: tm+mt
-source-git-commit: d1796224df95663c39fa5975e88c03a923c94878
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 98%
+source-wordcount: '906'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 此页面列出了&#x200B;**最新 Campaign Classic 发行候选版本**&#x200B;随附的新功能、改进和修复。
 
-对于 Campaign Classic Gold Standard 版本（最新 GA 内部版本），[请参阅此页面](../../rn/using/gold-standard.md)。
+对于Campaign Classic[!DNL Gold Standard]版本（最新的GA内部版本），[请参阅此页面](../../rn/using/gold-standard.md)。
 
 ## ![](assets/do-not-localize/blue_2.png) 21.1.1 版 - 内部版本 9277 {#release-21-1-1-build-9277}
 
