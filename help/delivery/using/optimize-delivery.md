@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 6%
@@ -50,7 +50,7 @@ ht-degree: 6%
 
    * 在检查电子邮件的可交付性时，您希望重点关注四个主要类别:数据质量、消息和内容、发送基础架构和声誉。 有关此主题的更深入的介绍，请参阅[本节](../../delivery/using/about-deliverability.md)。
 
-* 应用此文档](../../delivery/using/deliverability-key-points.md)中详细的[建议。
+* 应用此文档](../../delivery/using/about-deliverability.md)中详细的[建议。
 
 * 请联系您的Adobe代表以获得帮助。
 
