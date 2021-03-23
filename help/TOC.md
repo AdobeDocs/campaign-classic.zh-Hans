@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文档
 translation-type: tm+mt
-source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
+source-git-commit: 0b3bc9547d756352f4af5dac713f85666c96c425
 workflow-type: tm+mt
-source-wordcount: '2473'
-ht-degree: 55%
+source-wordcount: '2448'
+ht-degree: 54%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 55%
 + 发行说明 {#release-notes}
    + [升级入门](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
-   + Gold Standard 发行 {#gs-release}
-      + [什么是金本位](rn/using/gs-overview.md)
-      + [Gold Standard发行说明](rn/using/gold-standard.md)
-      + [Gold Standard兼容性表](rn/using/compatibility-matrix-gs.md)
+   + [!DNL Gold Standard] 发行  {#gs-release}
+      + [什么是 [!DNL Gold Standard]](rn/using/gs-overview.md)
+      + [[!DNL Gold Standard] 发行说明](rn/using/gold-standard.md)
+      + [[!DNL Gold Standard] 兼容性矩阵](rn/using/compatibility-matrix-gs.md)
    + 先前版本{#previous-releases}
       + [20.3 版](rn/using/release--20-3.md)
       + [版本 20.2](rn/using/release--20-2.md)
@@ -221,17 +221,11 @@ ht-degree: 55%
       + [测试跟踪](delivery/using/testing-tracking.md)
       + [跟踪疑难解答](delivery/using/tracking-troubleshooting.md)
    + 可交付性管理 {#deliverability-management}
-      + [关于投放能力](delivery/using/about-deliverability.md)
-      + [要检查的要点](delivery/using/deliverability-key-points.md)
-      + [启动新平台](delivery/using/starting-new-platform.md)
+      + [什么是可交付性](delivery/using/about-deliverability.md)
       + [控制消息内容](delivery/using/control-message-content.md)
-      + [提高声誉](delivery/using/improve-reputation.md)
-      + [技术建议](delivery/using/technical-recommendations.md)
       + [监控投放能力](delivery/using/monitoring-deliverability.md)
       + [收件箱呈现](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
-      + [重新参与最佳实践](delivery/using/re-engagement-best-practices.md)
-      + [列入阻止列表数据库](delivery/using/block-list-databases.md)
       + [故障排除](delivery/using/deliverability-faq.md)
    + 内容管理模块 {#content-management}
       + [关于内容管理](delivery/using/about-content-management.md)
