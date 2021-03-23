@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '2015'
+source-wordcount: '2034'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Adobe Campaign 会定期更新。如果您熟悉我们发布的[发行说明](..
 
 客户运行最新版Adobe Campaign至关重要。 它还允许Adobe在您遇到问题时更有效地提供帮助 — 在旧版本上识别、重现和修复问题通常需要更多时间，更不用说您可能遇到的某些问题在最近版本中可能已经完全修复了。
 
-因此，我们启动了[金标](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)项目，与我们的客户合作，以主动、定期地升级他们的环境。
+[!DNL Gold Standard] 是Campaign Classic长期支持版本。作为托管的[!DNL Gold Standard]用户，您无需执行任何操作即可自动从使用最新稳定版本的[!DNL Gold Standard]升级中受益。 内部部署和混合型客户还可从[!DNL Gold Standard]版本中受益。 如果您从旧内部版本进行迁移，我们建议您先升级到此版本。[了解详情](../../rn/using/gs-overview.md)。
 
 ## 什么是内部版本升级？
 
@@ -209,4 +209,4 @@ Adobe在进行任何更改之前将备份您的系统。 但是，如果非生�
 * [执行内部版本升级](../../production/using/build-upgrade.md)
 * [Campaign Classic发行说明](../../rn/using/rn-overview.md)
 * [有关Campaign Classic的帮助和支持选项](https://helpx.adobe.com/campaign/kb/ac-support.html)
-* [金本位项目](https://helpx.adobe.com/campaign/kb/gold-standard.html)
+* [[!DNL Gold Standard] 项目](../../rn/using/gs-overview.md)
