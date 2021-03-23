@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: c64b6eccd0ad45ebcf4ecc18150f4409f5c66bc2
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '1880'
-ht-degree: 2%
+source-wordcount: '1892'
+ht-degree: 3%
 
 ---
 
 
-# 使用增强的MTA {#sending-with-enhanced-mta}发送
+# 使用增强 MTA 发送 {#sending-with-enhanced-mta}
 
 **Adobe Campaign增强MTA**（邮件传输代理）提供了升级的发送基础架构，允许改进的发送能力、信誉、吞吐量、报告、跳出处理、IP加速和连接设置管理。
 
@@ -152,7 +152,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 ### DKIM签名
 
 DKIM(DomainKeys Indifed Mail)电子邮件身份验证签名由增强的MTA完成。 作为增强MTA升级的一部分，本机活动 MTA的DKIM签名将在域管理表中关闭。
-有关DKIM的详细信息，请参阅[此部分](../../delivery/using/technical-recommendations.md#dkim)。
+有关DKIM的详细信息，请参阅[《Adobe交付能力最佳实践指南》](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ### 投放成功报告
 
