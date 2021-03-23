@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 3%
+source-wordcount: '711'
+ht-degree: 2%
 
 ---
 
@@ -52,7 +52,7 @@ Adobe Campaign还提供了一个[工具](../../production/using/monitoring-proce
 
 * MTA和MTAChild进程和内存：**mta**&#x200B;模块向其&#x200B;**mtachild**&#x200B;子模块分发消息。 每个&#x200B;**mtachild**&#x200B;在从统计服务器请求授权并发送消息之前准备消息。 有关详细信息，请参阅此[页](../../installation/using/email-deliverability.md)。
 * TLS配置：不建议全局启用TLS，因为它可以降低吞吐量。 相反，应根据需要调整由可交付性团队管理的每域TLS设置。 有关详细信息，请参阅此[页](../../installation/using/email-deliverability.md#mx-configuration)。
-* DKIM:为确保DKIM的安全级别，建议使用1024b的最佳实践加密大小。 大多数访问提供者将不认为低DKIM密钥有效。 请参阅此[页](../../delivery/using/technical-recommendations.md#dkim)和此[技术说明](https://helpx.adobe.com/cn/campaign/kb/domain-name-delegation.html)。
+* DKIM:为确保DKIM的安全级别，建议使用1024b作为最佳实践。 大多数访问提供者将不认为低DKIM密钥有效。 请参见[此页面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ## 可交付性问题{#deliverability-issues}
 
@@ -67,4 +67,4 @@ Adobe Campaign还提供了一个[工具](../../production/using/monitoring-proce
 
 >[!NOTE]
 >
->另请参阅[可交付性关键点](../../delivery/using/deliverability-key-points.md)部分。
+>另请参阅[Deliverability](../../delivery/using/about-deliverability.md)部分。 有关可交付性的更深入了解，请参阅[《Adobe可交付性最佳实践指南》](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
