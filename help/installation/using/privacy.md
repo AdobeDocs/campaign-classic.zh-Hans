@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '768'
+ht-degree: 4%
 
 ---
 
@@ -57,7 +57,7 @@ Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数�
 >
 >单击格式错误的签名URL时，将返回以下错误：&quot;未找到请求的URL&quot;。..&quot;。&quot;
 
-此外，从活动 20.2和Gold Standard版本开始，托管和混合客户可以使用增强功能禁用从先前构建生成的URL。 此选项在默认情况下处于禁用状态。 您可以联系[客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)来启用此功能。
+此外，从活动 20.2和[!DNL Gold Standard]版本开始，托管和混合客户可以使用增强功能来禁用从先前构建生成的URL。 此选项在默认情况下处于禁用状态。 您可以联系[客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)来启用此功能。
 
 要激活此新机制，预置型客户需要在所有活动服务器上执行以下步骤：
 
@@ -65,7 +65,7 @@ Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数�
 1. 重新启动&#x200B;**nlserver**&#x200B;服务。
 1. 在跟踪服务器上，重新启动Web服务器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
-在Gold Standard 19.1.4上运行的客户可能会使用跟踪链接遇到推送通知投放问题，或使用锚记标签的投放。 如果是，Adobe建议禁用用于跟踪链接的新签名机制：
+在[!DNL Gold Standard] 19.1.4上运行的客户可能会遇到使用跟踪链接的推送通知投放或使用锚记标签的投放的问题。 如果是，Adobe建议禁用用于跟踪链接的新签名机制：
 
 **托管和混合** 客户必须联系 [Customer ](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) Careto禁用此机制。
 
