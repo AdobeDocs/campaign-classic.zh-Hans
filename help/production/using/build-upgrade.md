@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2360'
 ht-degree: 2%
 
 ---
@@ -415,4 +415,4 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 * [构建升级常见问题解答](../../platform/using/faq-build-upgrade.md)
 * [Campaign Classic发行说明](../../rn/using/rn-overview.md)
 * [有关Campaign Classic的帮助和支持选项](https://helpx.adobe.com/cn/campaign/kb/ac-support.html)
-* [金本位项目](https://helpx.adobe.com/cn/campaign/kb/gold-standard.html)
+* [[!DNL Gold Standard] 项目](../../rn/using/gs-overview.md)
