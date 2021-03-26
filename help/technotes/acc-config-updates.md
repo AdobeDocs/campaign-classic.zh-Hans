@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 01f4e4ee841a797f4be61ffc01096b7f651ce963
+source-git-commit: bdd746120f2162cf48eeb9d519513656bd4e75aa
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 7%
@@ -29,7 +29,7 @@ ht-degree: 7%
 >有关这些更改的任何问题，请联系[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 
-## 安全更新
+## 安全更新{#acc-security-updates}
 
 最新的活动版本附带安全修复，它增强了针对服务器端请求伪造(SSRF)问题的保护。 请阅读本页](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)了解更多信息。[
 
@@ -62,7 +62,7 @@ ht-degree: 7%
 >如果无法在建议的时间范围内进行升级，**应与Adobe客户关怀团队联系，对实例**&#x200B;应用短期手动安全修复。
 
 
-## Campaign Classic客户端控制台更新
+## Campaign Classic客户端控制台更新{#acc-cc-updates}
 
 **现在可用**&#x200B;控制台版本应安装在下面，以解决最近识别的回归问题。 此回归阻止使用客户端控制台的某些组件，如投放中的日期选择器和图像管理。 **必须** 升级控制台。
 
@@ -105,7 +105,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧版In
 
 * [了解如何安装活动 Client Console](../installation/using/installing-the-client-console.md)。
 
-## 与Experience Cloud触发器集成
+## 与Experience Cloud触发器{#acc-triggers-updates}集成
 
 旧版身份验证服务已到期。 触发集成身份验证（最初基于oAUTH身份验证设置以访问管道）已移至Adobe I/O。它将于2021年11月30日&#x200B;****&#x200B;退休。 [了解详情](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email)。
 
@@ -131,7 +131,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧版In
 
 [了解如何迁移到Adobe I/O](../integrations/using/configuring-adobe-io.md)。
 
-## APNs更新
+## APNs更新{#acc-apns-updates}
 
 ### 基于HTTP/2的APNs提供程序API
 
