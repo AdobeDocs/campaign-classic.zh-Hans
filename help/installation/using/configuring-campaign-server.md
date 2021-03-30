@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 6d0ae3d597f9ee30515437d94901cb034d0ca3d5
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '3600'
-ht-degree: 3%
+source-wordcount: '3765'
+ht-degree: 4%
 
 ---
 
@@ -19,11 +19,15 @@ ht-degree: 3%
 
 以下部分详细介绍了可以执行以匹配您的需求和您的环境特性的服务器端配置。
 
->[!IMPORTANT]
+这些配置必须由管理员执行，并且仅适用于&#x200B;**内部部署**&#x200B;托管模型。
+
+对于&#x200B;**托管**&#x200B;部署，只能通过Adobe配置服务器端设置。 但是，可以在控制面板中设置某些设置(例如，IP管允许列表理或URL权限)。
+
+>[!NOTE]
 >
->这些配置必须由管理员执行，并且仅适用于&#x200B;**内部部署**&#x200B;托管模型。
+>控制面板可供所有管理员用户访问。 [此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
 >
->对于&#x200B;**托管**&#x200B;部署，只能通过Adobe配置服务器端设置。 但是，可以在控制面板中设置某些设置(例如，IP管允许列表理或URL权限)。
+>请注意，您的实例必须托管在AWS上，并使用最新的[Gold Standard](../../rn/using/gs-overview.md)版本或最新的[ GA版本(21.1)](../../rn/using/latest-release.md)进行升级。 了解如何在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本。 要检查您的实例是否托管在AWS上，请按照[本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详细介绍的步骤操作。
 
 有关详细信息，请参阅以下部分：
 
@@ -345,6 +349,12 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 
 * **** Hybridor **内部部署**:将允许的URL添加 **到serverConf.xml文件中**。详细信息请参阅以下部分。
 * **托管**:添加允许通过控制面板的 **URL**。有关详细信息，请参阅[专用文档](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)。
+
+   >[!NOTE]
+   >
+   >控制面板可供所有管理员用户访问。 [此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
+   >
+   >请注意，您的实例必须托管在AWS上，并使用最新的[Gold Standard](../../rn/using/gs-overview.md)版本进行升级。 了解如何在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本。 要检查您的实例是否托管在AWS上，请按照[本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详细介绍的步骤操作。
 
 对于&#x200B;**Hybrid**&#x200B;和&#x200B;**On-premise**&#x200B;托管模型，管理员需要在&#x200B;**serverConf.xml**&#x200B;文件中引用新的&#x200B;**urlPermission**。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
 
