@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 9aa0ecd423bfbf1082e9ce5bdb36aaf1611dea54
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 8%
+source-wordcount: '771'
+ht-degree: 7%
 
 ---
 
@@ -56,7 +56,9 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->请注意，该控制面板仅供管理员用户访问，并且适用于所有使用Adobe Managed Services的客户。
+>控制面板可供所有管理员用户访问。 授予用户管理员访问权限的步骤详见[此页](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)。
+>
+>请注意，您的实例必须托管在AWS上，并使用最新的[Gold Standard](../../rn/using/gs-overview.md)版本或最新的[ GA版本(21.1)](../../rn/using/latest-release.md)进行升级。 了解如何在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本。 要检查您的实例是否托管在AWS上，请按照[本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详细介绍的步骤操作。
 
 ### 监控工作流 {#monitoring-workflows}
 
