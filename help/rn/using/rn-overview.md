@@ -7,9 +7,9 @@ feature: 概述
 role: 商业从业者
 level: 初学者
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '418'
 ht-degree: 93%
 
 ---
@@ -62,7 +62,7 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ## 支持和其他有用链接{#support}
 
-* [帮助与支持](https://helpx.adobe.com/cn/campaign/kb/ac-support.html)
+* [帮助与支持](../../support.md)
 * [控制面板版本](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)
 * [最新文档更新](../../rn/using/documentation-updates.md)
 * [已弃用和已删除的功能](../../rn/using/deprecated-features.md)
