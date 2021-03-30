@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 11%
@@ -52,7 +52,7 @@ ht-degree: 11%
 投放内容已准备好进行配置。 投放内容定义特定于每个渠道。 有关此方面的详细信息，请参阅专门的部分：
 
 * [定义电子邮件内容](../../delivery/using/defining-the-email-content.md)
-* [定义SMS内容](../../delivery/using/sms-channel.md#defining-the-sms-content)
+* [定义SMS内容](../../delivery/using/sms-create.md#defining-the-sms-content)
 * [定义直邮内容](../../delivery/using/defining-the-direct-mail-content.md)
 * [推送通知](../../delivery/using/about-mobile-app-channel.md)
 
