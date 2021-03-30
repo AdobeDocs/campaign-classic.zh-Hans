@@ -5,10 +5,10 @@ product: campaign
 title: Adobe Campaign Classic 产品文档
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 9ce945af1ed1cabd5041a28812e540f814211071
+source-git-commit: 9f1c4110ef49c87719f1cc84ad08f687865561d1
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 52%
+source-wordcount: '295'
+ht-degree: 51%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 52%
 
 * **[迁移到基于HTTP/2的APNs提供](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)**<br/> 程序APIL了解如何从传统二进制协议迁移到基于HTTP/2的APNs提供程序API
 
-* **[获取支持](https://helpx.adobe.com/cn/campaign/kb/ac-support.html)**<br/>&#x200B;访问常见问题解答、最佳实践、帮助资源和请求帮助
+* **[获取支持](support.md)**<br/>访问常见问题解答、最佳实践、帮助资源和请求帮助
 
 [更多更新](/help/rn/using/documentation-updates.md)
 
