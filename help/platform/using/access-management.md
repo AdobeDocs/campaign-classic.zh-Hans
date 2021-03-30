@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: 权限入门
 description: 了解如何授予对活动功能的访问权限
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: 访问管理
+role: 业务从业者，管理员
+level: 初学者
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 1%
+source-wordcount: '259'
+ht-degree: 2%
 
 ---
 
