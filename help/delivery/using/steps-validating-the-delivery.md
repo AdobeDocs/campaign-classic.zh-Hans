@@ -7,29 +7,29 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: ba50892f7b9578cface142184a287d95c0e11370
 workflow-type: tm+mt
-source-wordcount: '1667'
+source-wordcount: '1663'
 ht-degree: 5%
 
 ---
 
 
-# 验证投放 {#validating-the-delivery}
+# 验证投放{#validating-the-delivery}
 
 创建和配置投放后，您必须先验证该目标，然后再将其发送到主。
 
 操作步骤：
 
-1. **分析投放**:通过此步骤，您可以准备要传送的消息。请参阅[分析投放](#analyzing-the-delivery)。
+1. **分析投放**:通过此步骤，您可以准备要传送的消息。[了解详情](#analyzing-the-delivery)。
 
    在分析期间应用的规则显示在[本节](#validation-process-with-typologies)中。 [更改批准模式](#changing-the-approval-mode)部分详细介绍了可用校验模式。
 
-1. **发送验证**:通过此步骤，您可以批准内容、URL、个性化字段等。请参阅[发送验证](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)和[定义特定验证目标](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)。
+1. **发送验证**:通过此步骤，您可以控制内容、URL、个性化等。请阅读[发送验证](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)和[定义特定验证目标](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)，了解更多信息。
 
 >[!IMPORTANT]
 >
->必须在对消息内容进行每次修改后执行这两个步骤。
+>上述两个步骤必须在对消息内容进行每次修改后执行。
 
 ## 分析投放{#analyzing-the-delivery}
 
@@ -83,7 +83,7 @@ ht-degree: 5%
 >
 >如果要发送的消息数与您的配置不匹配，请单击&#x200B;**[!UICONTROL Change the main delivery target]**&#x200B;链接。 这样，您可以更改目标群的定义并重新开始分析。
 
-### 分析参数{#analysis-parameters}
+### 分析设置{#analysis-parameters}
 
 通过投放属性的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡，可以定义一组在分析阶段准备消息的相关信息。
 
@@ -127,7 +127,7 @@ ht-degree: 5%
 >
 >要确保较大的投放分析不会减慢工作流的进度，您可以通过&#x200B;**[!UICONTROL Schedule execution for a time of low activity]**&#x200B;键入计划其执行。
 
-## 发送校样{#sending-a-proof}
+## 发送验证{#sending-a-proof}
 
 为了检测邮件配置中可能出现的错误，Adobe 强烈建议您设置投放验证周期。尽可能频繁地向测试收件人发送验证内容，确保内容已获得批准。每次进行变更时都应发送验证内容，以批准内容。
 
@@ -135,6 +135,7 @@ ht-degree: 5%
 >
 >* [更改批准模式](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode)中详细介绍了可用校验模式。
 >* [定义特定验证目标](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)中介绍了验证目标的配置。
+
 >
 
 
@@ -174,11 +175,11 @@ ht-degree: 5%
 可以使用以下选项：
 
 * 第一个选项可让您保留验证多次。
-* 以下两个选项都允许保持收件人和地阻止列表址处于隔离。 有关[自定义排除设置](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings)中主目标的这些选项的说明。 与投放的目标不同，默认情况下，这些地址被排除，但默认情况下，它们会保留在验证的目标中。
+* 以下两个选项都允许保持收件人和地阻止列表址处于隔离。 请参阅[自定义排除设置](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings)中主目标的这些选项说明。 与投放的目标不同，默认情况下，这些地址被排除，但默认情况下，它们会保留在验证的目标中。
 * 通过&#x200B;**[!UICONTROL Keep the delivery code for the proof]**&#x200B;选项，可以为验证提供与其相关的投放所定义的相同的投放代码。 此代码在投放向导的第一步中指定。
 * 默认情况下，验证主题以“验证#”为前缀，其中#是验证的编号。 可以在&#x200B;**[!UICONTROL Label prefix]**&#x200B;字段中更改此前缀。
 
-## 类型的验证过程{#validation-process-with-typologies}
+## 类型{#validation-process-with-typologies}的验证过程
 
 在发送任何消息之前，您应分析活动以批准其内容和配置。 在分析阶段应用的检查规则在&#x200B;**类型**&#x200B;中定义。 默认情况下，对于电子邮件，分析涵盖以下几点：
 
@@ -196,7 +197,7 @@ ht-degree: 5%
 
 您可以从此节点创建新规则和定义新类型。 但是，这些任务是为了解JavaScript的专家用户保留的。
 
-有关类型规则的详细信息，请参阅[关于活动类型](../../campaign/using/about-campaign-typologies.md)。
+有关类型规则的详细信息，请参阅[此页](../../campaign/using/about-campaign-typologies.md)。
 
 要编辑当前类型，请单击&#x200B;**[!UICONTROL Typology]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Edit link]**&#x200B;图标。
 
