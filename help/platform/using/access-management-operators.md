@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: 开始使用活动运算符
 description: 了解如何创建和管理活动用户
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: 访问管理
+role: 业务从业者，管理员
+level: 初学者
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1152'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_user_rights_operators.png)
 
-   选择要分配的组和/或已命名权限，然后单击&#x200B;**[!UICONTROL OK]**&#x200B;进行验证。
+   选择要分配的组和/或已命名权限，然后单击&#x200B;**[!UICONTROL OK]**&#x200B;以验证。
 
 1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;以创建运算符：用户档案将添加到现有运算符的列表中。
 
