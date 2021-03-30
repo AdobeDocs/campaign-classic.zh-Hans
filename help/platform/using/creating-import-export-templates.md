@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 22%
+ht-degree: 18%
 
 ---
 
 
-# 创建导入和导出模板 {#creating-import-export-templates}
+# 创建导入和导出模板{#creating-import-export-templates}
 
 导入和导出模板存储在Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Templates > Job templates]**&#x200B;目录中。
 
