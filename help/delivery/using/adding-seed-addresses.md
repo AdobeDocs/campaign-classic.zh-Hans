@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 5%
+source-wordcount: '335'
+ht-degree: 6%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 5%
 
 1. 导入地址模板并调整它们以满足您的需求。
 
-   要执行此操作，请单击&#x200B;**[!UICONTROL Import seed templates...]**&#x200B;链接，然后选择包含地址模板的文件夹。 有关详细信息，请参阅[创建种子地址模板](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates)。
+   要执行此操作，请单击&#x200B;**[!UICONTROL Import seed templates...]**&#x200B;链接，然后选择包含地址模板的文件夹。 如需详细信息，请参阅[此部分](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates)。
 
    如有必要，添加这些地址后，您可以按住多次单击它们，或单击&#x200B;**[!UICONTROL Detail...]**&#x200B;按钮以调整每个地址的内容。
 
