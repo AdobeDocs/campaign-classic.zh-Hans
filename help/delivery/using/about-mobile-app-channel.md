@@ -7,25 +7,23 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 1%
+source-wordcount: '659'
+ht-degree: 0%
 
 ---
 
 
-# 关于移动应用程序渠道{#about-mobile-app-channel}
+# 开始使用移动应用渠道{#about-mobile-app-channel}
+
+通过&#x200B;**移动应用程序渠道**，您可以使用Adobe Campaign平台通过应用程序向iOS和Android终端发送个性化的推送通知。
 
 >[!CAUTION]
 >
 >本文档详细介绍了将您的移动应用程序与Adobe Campaign平台集成的过程。 它不提供有关如何创建移动应用程序或如何配置它以管理通知的信息。 如果您想进一步了解此信息，请参阅官方的Apple [文档](https://developer.apple.com/)和Android [文档](https://developer.android.com/index.html)。
 
-以下部分提供特定于移动应用程序渠道的信息。
-
-有关如何创建投放的全局信息，请参阅[本节](../../delivery/using/steps-about-delivery-creation-steps.md)。
-
-通过&#x200B;**移动应用程序渠道**，您可以使用Adobe Campaign平台通过应用程序向iOS和Android终端发送个性化通知。 有两种投放渠道:
+有两种投放渠道:
 
 * 一种iOS渠道，可让您向Apple移动设备发送通知。
 
@@ -38,6 +36,7 @@ ht-degree: 1%
 与这两个渠道相对应，活动工作流中有两个投放活动:
 
 ![](assets/nmac_intro_3.png)
+
 
 >[!NOTE]
 >
@@ -56,7 +55,9 @@ ht-degree: 1%
 
 **[!UICONTROL NMAC opt-out management]**(mobileAppOptOutMgt)工作流更新移动设备上的通知退订。 有关此工作流的详细信息，请参阅技术工作流](../../workflow/using/about-technical-workflows.md)的[列表。
 
-Adobe Campaign与HTTP/2 APN兼容。 有关配置步骤的详细信息，请参阅[在Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)中配置移动应用程序一节。
+Adobe Campaign与HTTP/2 APN兼容。 有关配置步骤的详细信息，请参阅[此部分](../../delivery/using/configuring-the-mobile-application.md)部分。
+
+有关如何创建投放的全局信息，请参阅[本节](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
 ## 数据路径{#data-path}
 
