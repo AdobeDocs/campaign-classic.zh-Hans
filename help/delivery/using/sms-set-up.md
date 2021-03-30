@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 64f5b108173806aff53f7240e8c9d499cc332d72
+source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1677'
 ht-degree: 34%
 
 ---
 
 
-# 设置SMS渠道{#setting-up-sms-channel}
+# 配置SMS渠道{#setting-up-sms-channel}
 
 要发送到移动电话，您需要：
 
@@ -286,7 +286,7 @@ CR：回车
 
 ^ { } `[ ~ ]` | €
 
-## 关于文本编码{#about-text-encodings}
+## 文本编码{#about-text-encodings}
 
 发送短信消息时，Adobe Campaign 可以使用一个或多个文本编码。每个编码都有属于自己的特定字符集，可确定其适合短信消息的字符数。
 
