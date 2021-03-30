@@ -7,7 +7,7 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 translation-type: tm+mt
-source-git-commit: a2a99135bdd74d87c04262b53e074b6aa05e7915
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 2%
@@ -67,7 +67,7 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 完全导入应仅用于初始加载。
 
-## 保持一致性{#maintaining-consistency}
+## 维护一致性{#maintaining-consistency}
 
 要保持Adobe Campaign数据库中的数据一致性，请遵循以下原则：
 
