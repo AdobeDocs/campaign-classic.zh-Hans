@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 88%
+ht-degree: 86%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 88%
 
 可以手动或自动更新已链接至收件人用户档案的数据。
 
-## 设置自动更新 {#setting-up-an-automatic-update}
+## 设置自动更新{#setting-up-an-automatic-update}
 
 可通过工作流配置自动更新。如需详细信息，请参阅[此部分](../../workflow/using/update-data.md)。
 
-## 执行大量更新 {#performing-a-mass-update}
+## 执行成批更新{#performing-a-mass-update}
 
 要执行手动更新，请在所选的收件人上单击鼠标右键并使用 **[!UICONTROL Actions]** 快捷菜单，或使用 **[!UICONTROL Actions]** 图标。
 
@@ -79,7 +79,7 @@ ht-degree: 88%
 
 检查窗口两个部分中的 **[!UICONTROL Result]** 列，然后单击 **[!UICONTROL Finish]** 执行合并。
 
-## 导出数据 {#exporting-data}
+## 导出数据{#exporting-data}
 
 可以导出列表的內容。要配置并执行导出：
 
@@ -94,7 +94,7 @@ ht-degree: 88%
 
    有关如何配置导出向导的详细信息，请参阅[本节](../../platform/using/executing-export-jobs.md)。
 
-## 订阅服务 {#subscribing-to-a-service}
+## 订阅服务{#subscribing-to-a-service}
 
 在大多数情況下，收件人可通过专用的登陆页来订阅新闻稿，如[本节所述](../../delivery/using/managing-subscriptions.md)。但是，过滤后的收件人用户档案可以手动订阅某个服务（新闻稿或传播服务）。操作步骤：
 
