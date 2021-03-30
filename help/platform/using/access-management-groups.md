@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: 创建和管理操作员组
 description: 了解如何授予操作员组访问权限
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: 访问管理
+role: 业务从业者，管理员
+level: 初学者
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,6 @@ ht-degree: 0%
 
    * **[!UICONTROL INSERT FOLDERS]**:将文件夹插入Adobe Campaign树的权利（前提是您对相关分支拥有编辑权限），
    * **[!UICONTROL WORKFLOW]**:使用工作流。
-
    >[!NOTE]
    >
    >此组不允许运算符开始投放。
@@ -100,6 +99,3 @@ ht-degree: 0%
 
    * **[!UICONTROL INSERT FOLDERS]**:将文件夹插入Adobe Campaign树的权利（前提是您对相关分支具有编辑权限），
    * **[!UICONTROL EDIT FOLDERS]**:有权更改文件夹属性，如内部名称、标签、关联图像、子文件夹顺序等。
-
-
-
