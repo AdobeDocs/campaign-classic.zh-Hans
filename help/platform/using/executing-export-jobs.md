@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 47%
+ht-degree: 45%
 
 ---
 
 
-# 配置导出作业 {#executing-export-jobs}
+# 配置导出作业{#executing-export-jobs}
 
 导出作业允许您访问和提取数据库中的数据：联系人、客户、列表、细分等
 
@@ -25,7 +25,7 @@ ht-degree: 47%
 
 创建新的导出作业后将显示导出向导（请参阅[创建导入和导出作业](../../platform/using/creating-import-export-jobs.md)）。
 
-## 第 1 步 - 选择导出模板 {#step-1---choosing-the-export-template}
+## 步骤1 — 选择导出模板{#step-1---choosing-the-export-template}
 
 启动导出向导时，首先必须选择模板。例如，要配置最近注册的收件人的导出，请按照以下步骤操作：
 
@@ -63,7 +63,7 @@ ht-degree: 47%
 
    您必须输入上次修改的日期。它可以从字段中检索或计算。
 
-## 第 3 步 - 定义输出格式 {#step-3---defining-the-output-format}
+## 第3步 — 定义输出格式{#step-3---defining-the-output-format}
 
 选择导出文件的输出格式。可以使用以下格式：文本、固定列文本、CSV 和 XML。
 
@@ -85,7 +85,7 @@ ht-degree: 47%
 
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮调用函数。 有关详细信息，请参阅[函数列表](../../platform/using/defining-filter-conditions.md#list-of-functions)。
 
-## 第 5 步 - 对列进行排序 {#step-5---sorting-columns}
+## 步骤5 — 对列{#step-5---sorting-columns}排序
 
 选择列的排序顺序。
 
@@ -125,10 +125,10 @@ ht-degree: 47%
 
 点击向导底部的选项卡，从列中结果的预览切换到 XML 中的结果。您还可以查看生成的 SQL 查询。
 
-## 第 9 步 - 启动导出 {#step-9---launching-the-export}
+## 第9步 — 启动导出{#step-9---launching-the-export}
 
 单击&#x200B;**[!UICONTROL Start]**&#x200B;启动数据导出。
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-然后，可以监视导入作业的执行情况（请参阅[监视作业执行](../../platform/using/monitoring-jobs-execution.md)）。
+然后，可以监视导入作业的执行情况(请参阅[监视作业执行](../../platform/using/monitoring-jobs-execution.md)。
