@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
+source-git-commit: bfe2e29ed904b6a04bab28455301437c63ab8118
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1612'
 ht-degree: 11%
 
 ---
@@ -35,6 +35,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 * [Amazon简单存储服务(S3)外部帐户](#amazon-simple-storage-service--s3--external-account)
 * [Microsoft Dynamics CRM外部帐户](#microsoft-dynamics-crm-external-account)
 * [Salesforce CRM外部帐户](#salesforce-crm-external-account)
+* [ Azure Blob Storage 外部帐户](#azure-blob-external-account)
 
 ## 创建外部帐户{#creating-an-external-account}
 
@@ -98,7 +99,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 可以配置以下渠道:
 
 * [电子邮件](../../installation/using/deploying-an-instance.md#email-channel-parameters)
-* [手机（短信）](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
+* [手机（短信）](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [电话](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [直邮](../../delivery/using/about-direct-mail-channel.md)
 * [代理](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
@@ -147,7 +148,7 @@ FTP外部帐户允许您配置和测试对Adobe Campaign之外的服务器的访
 
 外部帐户配置设置取决于数据库引擎。 请通过以下部分了解更多信息：
 
-* 配置对[Azure Synapse](../../installation/using/configure-fda-synapse.md)的访问
+* 配置对[Azure synapse](../../installation/using/configure-fda-synapse.md)的访问
 * 配置对[Hadoop](../../installation/using/configure-fda-hadoop.md)的访问
 * 配置对[Oracle](../../installation/using/configure-fda-oracle.md)的访问
 * 配置对[Netezza](../../installation/using/configure-fda-netezza.md)的访问
@@ -334,7 +335,7 @@ Amazon Simple 存储 Service(S3)连接器可用于将数据导入或导出到Ado
 
 >[!NOTE]
 >
-> **[!UICONTROL On-premise]** 和部 **[!UICONTROL Office 365]** 署类型现在已弃用。[了解详情](../../rn/using/deprecated-features.md)。
+> **[!UICONTROL On-premise]** 和部 **[!UICONTROL Office 365]** 署类型现已弃用。[了解详情](../../rn/using/deprecated-features.md)。
 
 对于&#x200B;**[!UICONTROL Web API]**&#x200B;部署类型和&#x200B;**[!UICONTROL Password credentials]**&#x200B;身份验证，您需要提供以下详细信息：
 
@@ -413,3 +414,23 @@ Amazon Simple 存储 Service(S3)连接器可用于将数据导入或导出到Ado
 对于此外部帐户，您需要使用配置向导配置Salesforce CRM。
 
 有关此配置的详细信息，请参阅此[页面](../../platform/using/crm-connectors.md)。
+
+## Azure Blob存储外部帐户(#azure-blob-external-account)
+
+**Azure Blob存储**&#x200B;外部帐户可用于使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 有关更多信息，请参阅此](../../workflow/using/file-transfer.md)章节[。
+
+![](assets/ext_account_23.png)
+
+要配置&#x200B;**[!UICONTROL Azure external account]**&#x200B;以使用Adobe Campaign，您需要提供以下详细信息：
+
+* **[!UICONTROL Server]**
+
+   您的Azure Blob存储服务器的URL。
+
+* **[!UICONTROL Encryption]**
+
+   在&#x200B;**[!UICONTROL None]**&#x200B;或&#x200B;**[!UICONTROL SSL]**&#x200B;之间选择的加密的类型。
+
+* **[!UICONTROL Access key]**
+
+   要了解在何处找到您的&#x200B;**[!UICONTROL Access key]**，请参阅此[页面](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)。
