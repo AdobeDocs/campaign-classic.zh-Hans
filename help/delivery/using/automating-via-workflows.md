@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 1%
+source-wordcount: '1185'
+ht-degree: 0%
 
 ---
 
 
-# 通过工作流实现自动化{#automating-via-workflows}
+# 使用工作流{#automating-via-workflows}实现自动化
 
 ## 内容管理活动{#content-management-activity}
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 
 ## 示例{#examples}
 
-### 内容创建和投放自动化{#automating-content-creation-and-delivery}
+### 自动创建内容并投放{#automating-content-creation-and-delivery}
 
 下面的示例自动创建和投放内容块。
 
@@ -160,7 +160,7 @@ ht-degree: 1%
 
 完成活动的最后一步是准备并启动投放。
 
-### 创建内容并稍后发布{#creating-content-and-publishing-it-later}
+### 创建内容以供以后发布{#creating-content-and-publishing-it-later}
 
 此示例创建一个内容块，并在特定时间延迟后启动文件发布。
 
