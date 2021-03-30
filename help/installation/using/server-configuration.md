@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 3%
+source-wordcount: '1206'
+ht-degree: 2%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 3%
 
 ## 配置安全区域
 
->[!IMPORTANT]
->
->从构建8977开始，安全区自助服务用户界面不再可用。
->
->* 如果您托管在AWS上，则必须在控制面板中执行向允许列表添加IP。 有关详细信息，请参阅[专用文档](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)。
->* 如果您未托管在AWS上，请联系Adobe支持团队，将IP添加到允许列表。
+从构建8977开始，安全区自助服务用户界面不再可用。 如果您未托管在AWS上，请联系Adobe支持团队，将IP添加到允许列表。 否则，必须在[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)中执行向允许列表添加IP。
 
+要检查您的实例是否托管在AWS上，请按照[本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详细介绍的步骤操作。
+
+>[!NOTE]
+> 
+>控制面板可供所有管理员用户访问。 [此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
 >
->
-要检查您的实例是否托管在 AWS 上，请按照[此部分](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)详述的步骤操作。
+>请注意，您的实例必须托管在AWS上，并使用最新的[Gold Standard](../../rn/using/gs-overview.md)版本或最新的[ GA版本(21.1)](../../rn/using/latest-release.md)进行升级。 了解如何在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本。
+
 
 * 请确保在subNetwork中不允许使用反向代理。 如果是，将检测到&#x200B;**所有**&#x200B;通信来自此本地IP，因此将受信任。
 
