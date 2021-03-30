@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 34%
+ht-degree: 31%
 
 ---
 
 
-# 使用工作流导入和导出数据 {#import-export-workflows}
+# 使用工作流{#import-export-workflows}导入和导出数据
 
 ## 收集数据{#collecting-data-workflows}
 
@@ -47,7 +47,7 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 收集数据后，您可以在工作流中使用它，例如丰富投放或更新数据库。 有关详细信息，请参见[此页面](../../workflow/using/how-to-use-workflow-data.md)。
 
-## 导出数据 {#exporting-data-via-a-workflow}
+## 导出数据{#exporting-data-via-a-workflow}
 
 在使用可用于转换数据的一些可用数据管理活动之后，可以使用工作流程来自动执行某些导出过程或导出精确数据集。
 
