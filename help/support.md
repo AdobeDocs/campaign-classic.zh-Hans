@@ -3,14 +3,11 @@ solution: Campaign Classic
 product: campaign
 title: 'Campaign Classic的帮助和支持选项 '
 description: 需要Campaign Classic支持？ 你在正确的地方！
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 1d9c96d1cd8ba2a8099271165a1671d5589230fb
+source-git-commit: 108f6cf912bb855fd34263d9e069260769a3ef6a
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '771'
 ht-degree: 10%
 
 ---
@@ -97,8 +94,14 @@ ht-degree: 10%
 
 ### 什么是控制面板?
 
-该控制面板允许您管理每个实例的设置和跟踪使用情况，从而帮助您以Campaign Classic产品管理员的身份提高工作效率。
+活动控制面板允许您管理每个实例的设置和跟踪实例，从而帮助您以Campaign Classic产品管理员的身份提高工作效率。
 [请单](https://docs.adobe.com/content/hecontrol-panel/using/discover-control-panel/key-features.html) 击此处了解详细信息。
+
+>[!NOTE]
+>
+>控制面板可供所有管理员用户访问。 [此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
+>
+>请注意，您的实例必须托管在AWS上，并使用最新的[Gold Standard](rn/using/gs-overview.md)版本或最新的[ GA版本(21.1)](rn/using/latest-release.md)进行升级。 了解如何在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本。 要检查您的实例是否托管在AWS上，请按照[本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详细介绍的步骤操作。
 
 ### 如何访问控制面板？
 
