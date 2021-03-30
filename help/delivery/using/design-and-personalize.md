@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: 40edacce1812a1722e5a23e5db7da11687c44ac8
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 6%
@@ -96,7 +96,7 @@ ht-degree: 6%
 默认情况下，短信的字符数应符合 GSM（全球移动通信系统）标准。使用 GSM 编码的短信消息长度上限为 160 个字符，而对于分段发送的消息，每段短信的长度上限为 153 个字符。
 
 音译指的是，如果 GSM 标准无法识别某个短信字符，则会用另一个字符替换该字符。请注意，在SMS消息的内容中插入个性化字段可能会引入GSM编码未考虑的字符。 您可以通过选中相应&#x200B;**[!UICONTROL External account]**的SMPP渠道设置选项卡中的相应框来授权字符音译。
-请阅读本节](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)了解更多信息。[
+请阅读本节](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)了解更多信息。[
 
 **提示**:
 
@@ -104,7 +104,7 @@ ht-degree: 6%
 
 * 但是，如果您的SMS消息包含许多GSM标准未考虑的字符，则允许音译以限制发送消息的成本。
 
-请阅读本节](../../delivery/using/sms-channel.md#about-character-transliteration)了解更多信息。[
+请阅读本节](../../delivery/using/sms-set-up.md#about-character-transliteration)了解更多信息。[
 
 ## 处理格式设置{#formatting}
 
