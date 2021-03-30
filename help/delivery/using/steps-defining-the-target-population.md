@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 8e0c6951be9d2f9fb0e58af213cb8db4079f2225
 workflow-type: tm+mt
-source-wordcount: '1579'
-ht-degree: 2%
+source-wordcount: '1599'
+ht-degree: 3%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 2%
 
 ## 关于目标群{#about-target-populations}
 
-对于每个投放，您可以定义几种类型的目标群。 以下部分提供了有关如何选择的详细信息：
+对于每个投放，您可以定义几种类型的目标群：
 
-* 投放的主要收件人。 [阅读更多](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* 收件人验证消息，以设置验证周期。 [阅读更多](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
-
-此外，如果营销活动中包含该投放，您还可以定义[种子地址](../../delivery/using/about-seed-addresses.md)和[对照组](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。
+* **主受众**:将接收消息的用户档案。[了解详情](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* **验证**:收件人个验证消息，涉及验证周期。[了解详情](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* **种子地址**:未进入投放目标但将收到投放的收件人(仅在营销活动的上下文中)。[了解详情](../../delivery/using/about-seed-addresses.md)
+* **对照组**:不会接收投放的人群，用于跟踪行为和活动影响(仅在营销活动的上下文中)。[了解详情](../../campaign/using/marketing-campaign-target.md#defining-a-control-group)。
 
 ## 选择投放{#selecting-the-main-target}的主收件人
 
