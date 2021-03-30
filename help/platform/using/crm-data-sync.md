@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1530'
 ht-degree: 0%
 
 ---
 
 
-# 活动与CRM {#data-synchronization}之间的数据同步
+# 在活动和CRM {#data-synchronization}之间同步数据
 
 Adobe Campaign与CRM之间的数据同步是通过专用工作流活动实现的：[CRM连接器](../../workflow/using/crm-connector.md)。
 
@@ -82,7 +82,7 @@ Adobe Campaign与CRM之间的数据同步是通过专用工作流活动实现的
 
    有关详细信息，请参阅[变量管理](#variable-management)。
 
-### 变量管理{#variable-management}
+### 管理变量{#variable-management}
 
 启用&#x200B;**[!UICONTROL Automatic index]**&#x200B;选项可仅收集自上次导入以来修改的对象。
 
@@ -115,7 +115,7 @@ Adobe Campaign与CRM之间的数据同步是通过专用工作流活动实现的
    >
    >这些日期采用以下格式显示：**yyyy/MM/dd hh:mm:ss**。
 
-### 筛选数据 {#filtering-data}
+### 筛选数据{#filtering-data}
 
 要确保对各种CRM进行高效操作，需要使用以下规则创建过滤器:
 
@@ -226,7 +226,7 @@ Adobe Campaign与CRM之间的数据同步是通过专用工作流活动实现的
 
 **[!UICONTROL Reject]**&#x200B;输出过渡允许您访问包含与错误消息和代码相关的特定列的输出模式。 对于Salesforce.com，此列为&#x200B;**errorSymbol**（错误符号，与错误代码不同），**errorMessage**（错误上下文的说明）。
 
-## 正在导入CRM {#importing-objects-deleted-in-the-crm}中删除的对象
+## 导入CRM {#importing-objects-deleted-in-the-crm}中删除的对象
 
 要启用扩展数据同步过程的设置，您可以将CRM中删除的对象导入Adobe Campaign。
 
