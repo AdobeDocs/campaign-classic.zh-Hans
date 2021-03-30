@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 9%
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 使用它们的主要原因之一是&#x200B;**您的邮寄列表保护**。 将种子地址插入邮件列表后，第三方使用时会注意到您的注意力，因为其包含的种子地址将收到发送给您的邮件列表的投放。
 
-此外，种子地址还允许您在发送投放之前通过向其发送验证(请参阅[将种子地址用作验证](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof))，对其进行&#x200B;**预览和测试个性化和渲染**。
+此外，种子地址还允许您在发送投放之前通过向其发送验证(请参阅[使用种子地址作为验证](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof))，对进行预览和测试个性化和渲染。****
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
 
@@ -37,7 +37,7 @@ ht-degree: 9%
 >
 >种子地址不属于收件人表，它们是在单独的表中创建的。 如果用新数据扩展收件人表，则必须同时扩展种子地址表和使用相同数据。 否则，扩展字段将不会被考虑在种子地址中。
 >
->本节介绍如何扩展种子地址表的示例：[用例：选择标准](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)上的种子地址
+>本节介绍如何扩展种子地址表的示例：[用例：选择标准种子地址](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
 
 对于直邮投放,种子地址在提取期间添加并混合在输出文档中。
 
@@ -47,6 +47,7 @@ ht-degree: 9%
 >
 >* 它不得使用选项&#x200B;**[!UICONTROL Handle groupings (GROUP BY+HAVING)]**。
 >* 如果提取了元素集合，则这些字段的种子地址值将为空，除非选择了&#x200B;**[!UICONTROL Single row (expert user)]**&#x200B;选项。 如需详细信息，请参阅[此部分](../../platform/using/executing-export-jobs.md#step-7---data-formatting)。
+
 >
 
 
