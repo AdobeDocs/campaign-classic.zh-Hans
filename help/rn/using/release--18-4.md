@@ -7,7 +7,7 @@ feature: null
 role: null
 level: null
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 7%
@@ -144,7 +144,7 @@ ht-degree: 7%
 * 管理员设置或重置任何操作员的口令的功能已恢复。 要执行此操作，请右键单击运算符，选择&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**&#x200B;并设置运算符的新密码。 我们建议运营商在首次重新连接时更改其密码。 有关详细信息，请参阅[详细文档](../../production/using/lost-password.md)。
 * 为支持Adobe Target中新增的多租功能，现在在配置选项和外部帐户以与目标集成时，可以向URL添加一个新的“at_property”参数。 可在Adobe Target中找到用于此参数的值，活动在执行对目标的调用时将使用该值。 有关详细信息，请参阅[详细文档](../../integrations/using/inserting-a-dynamic-image.md)。
 * 现在，您可以指定在单击Adobe Target提供的图像时打开的默认登陆页。 以前，单击该图像会导致在创建电子邮件时出现默认图像集。 有关详细信息，请参阅[详细文档](../../integrations/using/inserting-a-dynamic-image.md)。
-* 在外部帐户中添加了“启用SMPP跟踪&#x200B;**”复选框以强制跟踪输出。**&#x200B;有关详细信息，请参阅[详细文档](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
+* 在外部帐户中添加了“启用SMPP跟踪&#x200B;**”复选框以强制跟踪输出。**&#x200B;有关详细信息，请参阅[详细文档](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
 
 **技术演进**
 
