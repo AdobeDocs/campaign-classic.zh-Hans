@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '3229'
-ht-degree: 37%
+ht-degree: 36%
 
 ---
 
 
-# 定义筛选条件{#defining-filter-conditions}
+# 定义筛选器条件{#defining-filter-conditions}
 
 ## 选择运算符{#choosing-the-operator}
 
@@ -117,7 +117,7 @@ ht-degree: 37%
  </tbody> 
 </table>
 
-## 使用AND或OR，但{#using-and--or--except}除外
+## 使用和或，除{#using-and--or--except}外
 
 对于使用多个筛选条件的查询，您需要定义这些条件之间的链接。 可能有三个链接：
 
@@ -146,7 +146,7 @@ ht-degree: 37%
 
 ![](assets/query_editor_nveau_31.png)
 
-## 确定条件的优先级{#prioritizing-conditions}
+## 排定条件的优先级{#prioritizing-conditions}
 
 本节介绍如何利用工具栏中的蓝色箭头对条件进行优先排序。
 
@@ -259,7 +259,7 @@ ht-degree: 37%
 
 >[!NOTE]
 >
->* 使用&#x200B;**[!UICONTROL Add]**&#x200B;按钮（侧图标栏上方）可添加要在其中编辑表达式的输出列。 有关编辑表达式的详细信息，请参阅[构建表达式](#building-expressions)。
+>* 使用&#x200B;**[!UICONTROL Add]**&#x200B;按钮（侧图标栏上方）可添加要在其中编辑表达式的输出列。 有关编辑表达式的详细信息，请参阅[本节](#building-expressions)。
 >* 单击红色的“x”（**删除**），删除输出列。
 >* 使用箭头更改输出列的顺序。
 >* **[!UICONTROL Distribution of values]**&#x200B;用作视图所选字段值分布(例如，链接到收件人镇、收件人语言等的分布)的方法。
@@ -306,7 +306,7 @@ ht-degree: 37%
 
 ![](assets/query_editor_nveau_58.png)
 
-## 构建表达式{#building-expressions}
+## 生成表达式{#building-expressions}
 
 表达式编辑工具允许您使用表达式计算聚合、生成函数或编辑公式。
 
