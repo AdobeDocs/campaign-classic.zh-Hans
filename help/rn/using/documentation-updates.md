@@ -7,9 +7,9 @@ feature: 概述
 role: 商业从业者
 level: 初学者
 translation-type: tm+mt
-source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
+source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
 workflow-type: tm+mt
-source-wordcount: '4250'
+source-wordcount: '4275'
 ht-degree: 94%
 
 ---
@@ -23,7 +23,9 @@ ht-degree: 94%
 
 ## 2021 年 3 月 {#march-2021}
 
-新页面已添加指南和参考，以获得有关Campaign Classic的支持。 [了解详情](https://helpx.adobe.com/cn/campaign/kb/ac-support.html)
+[开始使用SMS部分](../../delivery/using/sms-channel.md)已重新组织和改进。 您现在可以学习如何[配置SMS渠道](../../delivery/using/sms-set-up.md)、[创建SMS](../../delivery/using/sms-create.md)、[发送和跟踪专用部分中的SMS](../../delivery/using/sms-send.md)。
+
+Campaign Classic的“帮助和支持选项”页面已集成到核心文档中。 [阅读更多](../../support.md)
 
 新增了一节，其中包含有关安全性和隐私的最佳实践和检查。 [阅读更多](../../installation/using/get-started-security-privacy.md)
 
@@ -440,7 +442,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 投放最佳实践快速入门指南已移动并更新。[阅读更多](../../delivery/using/delivery-best-practices.md)
 
-已向 SMS 渠道文档添加了建议，以避免在使用具有相同提供者帐户的扩展通用 SMPP 连接器的多个外部帐户时出现问题。[阅读更多](../../delivery/using/sms-channel.md#automatic-reply)
+已向 SMS 渠道文档添加了建议，以避免在使用具有相同提供者帐户的扩展通用 SMPP 连接器的多个外部帐户时出现问题。[阅读更多](../../delivery/using/sms-set-up.md#automatic-reply)
 
 在调度程序活动文档中添加了有关如何防止同时执行工作流的信息。[阅读更多](../../workflow/using/scheduler.md)
 
