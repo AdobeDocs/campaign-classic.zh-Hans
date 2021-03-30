@@ -7,17 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
 
 
 # 管理明细列表{#managing-enumerations}
-
-## 关于明细列表{#about-enumerations}
 
 明细列表(也称为“分项列表”)是系统建议用于填充某些字段的值的列表。 明细列表允许您标准化这些字段的值，并帮助进行数据输入或在查询中使用。
 
@@ -112,13 +110,13 @@ ht-degree: 0%
 
 ![](assets/s_ncs_user_itemized_list_alias_detail2.png)
 
-#### 正在检索别名点击{#retrieving-alias-hits}
+#### 检索别名点击{#retrieving-alias-hits}
 
 用户输入的值可以转换为别名。 实际上，当用户输入一个未包含在分项列表中的值时，该值存储在&#x200B;**[!UICONTROL Alias]**&#x200B;选项卡中。
 
 **别名清理**&#x200B;技术工作流每晚恢复这些值以更新逐项列表。 请参阅[运行清理](#running-data-cleansing)
 
-如有必要，**[!UICONTROL Hits]**&#x200B;列可显示输入此值的次数。 计算此值既耗时又耗内存。 有关详细信息，请参阅[计算条目出现次数](#calculating-entry-occurrences)。
+如有必要，**[!UICONTROL Hits]**&#x200B;列可显示输入此值的次数。 计算此值既耗时又耗内存。 有关详细信息，请参阅[计算条目发生次数](#calculating-entry-occurrences)。
 
 ### 运行清理{#running-data-cleansing}
 
