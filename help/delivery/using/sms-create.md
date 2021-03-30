@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 64f5b108173806aff53f7240e8c9d499cc332d72
+source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 1%
+source-wordcount: '432'
+ht-degree: 2%
 
 ---
 
 
-# 创建并发送SMS投放{#creating-a-sms-delivery}
+# 创建短信投放 {#creating-a-sms-delivery}
 
 ## 选择投放渠道{#selecting-the-delivery-channel}
 
