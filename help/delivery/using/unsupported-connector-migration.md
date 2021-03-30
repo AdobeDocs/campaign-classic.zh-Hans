@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 584c11cc46d3a0cea3dcbbaef2700200fbdb8201
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 1%
@@ -47,7 +47,7 @@ ht-degree: 1%
 >
 >即使您可以转换参数，配置&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;连接器也需要与提供者交谈，后者将为您提供填充其余参数所需的信息。 有关详细信息，请参见此 [ 页面](../../delivery/using/sms-protocol.md)。
 
-首先，您需要创建一个新的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;外部帐户，然后您可能可以转换某些参数。 您可以在此[页面](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)中找到详细步骤。
+首先，您需要创建一个新的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;外部帐户，然后您可能可以转换某些参数。 您可以在此[页面](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)中找到详细步骤。
 
 现在，您需要根据您之前的连接器，从新创建的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;外部帐户的&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中填充参数。
 
