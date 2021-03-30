@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '1102'
-ht-degree: 37%
+source-wordcount: '1158'
+ht-degree: 33%
 
 ---
 
@@ -43,9 +43,11 @@ SFTP服务器设计为临时存储空间，您可以控制文件的保留和删�
 
 >[!NOTE]
 >
->如果您的实例托管在 AWS 上，则可以使用 Campaign Classic [控制面板](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html)监控 SFTP 服务器存储。
+>如果您的实例托管在 AWS 上，则可以使用 Campaign Classic [控制面板](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html)监控 SFTP 服务器存储。要检查您的实例是否托管在AWS上，请按照[本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详细介绍的步骤操作。
 >
->要检查您的实例是否托管在 AWS 上，请按照[此部分](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/faq.html#ims-org-id)详述的步骤操作。
+>控制面板可供所有管理员用户访问。 授予用户管理员访问权限的步骤详见[此页](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)。
+>
+>请注意，您的实例必须使用最新的[金标](../../rn/using/gs-overview.md)版本或最新的[ GA内部版本(21.1)](../../rn/using/latest-release.md)进行升级。 了解如何在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本。
 
 * 服务器大小容量因许可证而异。在任何情况下，尽量保持最小数据，并且只在需要的时间内保留数据（15 天是最长时间限制）。
 
