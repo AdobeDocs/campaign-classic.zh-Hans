@@ -7,17 +7,18 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: 1b02c3870ddc01705f01ea992e734cf0810e003a
+source-git-commit: c96a7faf5c65848a3f383a5721bfa45048ecea57
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 8%
+source-wordcount: '934'
+ht-degree: 5%
 
 ---
 
 
-# 安装活动客户端控制台{#installing-the-client-console}
+# 安装和更新活动客户端控制台{#installing-the-client-console}
 
-活动 Client控制台是一个富客户端，通过它可以连接到活动应用程序服务器。
+
+活动 Client Console是一个富客户端，通过它可以连接到您的活动应用程序服务器。
 
 在启动之前，您需要检查活动[兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)，获取活动服务器URL和用户凭据。
 
@@ -27,9 +28,70 @@ ht-degree: 8%
 
 ![](assets/do-not-localize/how-to-video.png) 了解如何在视频中安装和设置Adobe Campaign客 [户端](#video)
 
-## 下载控制台{#download-the-client-console}
+安装或更新客户端控制台的过程会因您对Adobe Campaign Classic的实施而异。
+请查看以下详细信息，了解实施所需的内容。
 
-要下载并安装Adobe Campaign客户端控制台，请按照以下步骤操作：
+
+## Adobe托管实现{#hosted-customers}
+
+要安装或更新您的客户端控制台，请执行以下操作：
+
+1. Adobe可以直接部署。 更新控制台后，将在弹出窗口中提示用户下载最新的客户端控制台版本。
+
+1. 您可以从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)下载到客户端控制台
+
+   **用户需要管理员访问权限才能完成更新。如果用户没有管理员权限，则系统管理员需要部署到所有客户端控制台**
+
+
+
+## 混合和完全内部部署实现{#hybrid-onprem-customers}
+
+为了使Adobe Campaign用户能够登录您创建和配置的实例，他们需要使用客户端控制台。
+
+### 使控制台对用户{#make-console-available}可用
+
+当用于开始Adobe Campaign应用程序服务器(nlserver web)的计算机从客户端控制台接收用户连接时，您可以将其配置为通过HTML界面使Adobe Campaign富客户端的设置项目可用。 只要有新版本的客户端控制台可用，用户就会在启动其客户端控制台时被邀请下载它。
+
+为此，您必须：
+
+1. 选择包含控制台安装项目的包。
+
+   对于v7，此文件称为setup-client-7.X.XXXX.exe；对于v6.1，此文件称为setup-client-6.X.XXXX.exe，其中X是Adobe Campaign的子版本，XXXX是内部版本   数字。
+
+1. 将此包复制并粘贴到/datakit/nl/eng/jsp下的Adobe Campaign安装文件夹（在混合安装的营销服务器上）中。
+
+1. 开始Adobe Campaign服务器。
+
+>[!CAUTION]
+>
+>  Adobe建议取消选择选项&#x200B;**[!UICONTROL No longer ask this question]**，以确保当新版本的控制台可用时，所有用户都会收到警告。  如果选择此选项，则用户将不会收到有关新可用版本的通知。
+
+如果已选择&#x200B;**[!UICONTROL No longer ask this question]**，则可重置此提示。 只有能够编辑Windows注册表的系统管理员才应进行以下更改：
+
+1. 使用&#x200B;**[!UICONTROL Start > Run]**&#x200B;菜单中的&#x200B;**regedit**&#x200B;命令打开注册表编辑器。
+
+1. 搜索节点并展开它。
+
+   ```
+   \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
+   ```
+
+1. 删除&#x200B;**confAdwerdedUpgrade**&#x200B;条目并关闭注册表编辑器。
+
+>[!NOTE]
+>
+>如果您将更新的控制台应用于现有实施，用户将自动收到更新其客户端控制台的提示。 如果您是第一次实施活动，则用户需要下载控制台。 有关这两个选项的详细信息，请参见下文
+
+### 更新控制台 — 现有实施{#update-the-client-console}
+
+控制台在活动服务器文件夹中可用后，将在弹出窗口中提示用户下载最新的客户端控制台版本。
+
+**用户需要管理员访问权限才能完成更新。如果用户没有管理员权限，则系统管理员需要部署到所有客户端控制台**
+
+
+### 下载控制台 — new implementation{#download-the-client-console}
+
+用户现在应按照以下步骤下载并安装控制台：
 
 1. 打开Web浏览器，然后从以下地址下载控制台：
 
@@ -45,12 +107,7 @@ ht-degree: 8%
 1. 下载并保存客户端安装文件。
 1. 在Windows的计算机上执行下载的文件：安装开始。 根据您的Adobe Campaign版本，客户端控制台的默认安装路径为&#x200B;**$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX客户端**，其中“X”为“6”或“7”。
 
->[!NOTE]
->
->您可以通过复制活动 Marketing服务器特定文件夹上的控制台可执行文件，将更新建议给所有活动客户端控制台用户， [了解详情](../../installation/using/client-console-availability-for-windows.md)。
-
-
-## 创建连接{#create-the-connection}
+### 创建连接 — 首次仅用户{#create-the-connection}
 
 安装客户端控制台后，请按照以下步骤创建与应用程序服务器的连接：
 
@@ -78,7 +135,7 @@ ht-degree: 8%
 >
 >通过&#x200B;**[!UICONTROL Add]**&#x200B;按钮可创建&#x200B;**[!UICONTROL folders]**&#x200B;来组织所有连接。 只需将每个连接拖放到某个文件夹中。
 
-## 登录到Adobe Campaign
+### 登录到Adobe Campaign
 
 要登录到现有实例，请执行以下步骤：
 
@@ -91,6 +148,8 @@ ht-degree: 8%
 1. 单击 **[!UICONTROL Ok]**
 
 1. 输入用户登录凭据，然后单击&#x200B;**[!UICONTROL Log in]**
+
+
 
 **相关主题**
 
