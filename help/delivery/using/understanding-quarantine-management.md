@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 14%
@@ -527,7 +527,7 @@ SMS消息的隔离机制与一般过程在全局上相同。 请参阅[关于隔
 
 **对于扩展通用SMPP连接器**
 
-当使用SMPP协议发送SMS消息时，错误管理的处理方式不同。 有关扩展通用SMPP连接器的详细信息，请参阅[此页](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
+当使用SMPP协议发送SMS消息时，错误管理的处理方式不同。 有关扩展通用SMPP连接器的详细信息，请参阅[此页](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
 
 SMPP连接器从SR（状态报告）消息中检索数据，该消息使用常规表达式(regex)返回以过滤其内容。 然后，此数据将与&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;表（可通过&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**&#x200B;菜单获取）中的信息匹配。
 
@@ -544,13 +544,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * 所有错误消息以&#x200B;**SR**&#x200B;开头，以区分SMS错误代码和电子邮件错误代码。
-* 错误消息的第二部分（本例中的&#x200B;**Generic**）引用SMSC实现的名称，如SMS外部帐户的&#x200B;**[!UICONTROL SMSC implementation name]**&#x200B;字段中定义的名称。 请参阅[此页](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
+* 错误消息的第二部分（本例中的&#x200B;**Generic**）引用SMSC实现的名称，如SMS外部帐户的&#x200B;**[!UICONTROL SMSC implementation name]**&#x200B;字段中定义的名称。 请参阅[此页](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
 
    由于同一错误代码可能对每个提供程序具有不同的含义，因此此字段允许您了解生成错误代码的提供程序。 然后，您可以在相关提供商的文档中找到该错误。
 
 * 错误消息的第三部分（本例中的&#x200B;**DELIVRD**）与使用SMS外部帐户中定义的状态提取正则表达式从SR检索到的状态代码相对应。
 
-   此正则表达式在外部帐户的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;选项卡中指定。 请参阅[此页](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
+   此正则表达式在外部帐户的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;选项卡中指定。 请参阅[此页](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -558,7 +558,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * 错误消息的第四部分（本例中的&#x200B;**000**）与使用SMS外部帐户中定义的错误代码提取正则表达式从SR提取的错误代码相对应。
 
-   此正则表达式在外部帐户的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;选项卡中指定。 请参阅[此页](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)。
+   此正则表达式在外部帐户的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;选项卡中指定。 请参阅[此页](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
 
    默认情况下，正则表达式会提取&#x200B;**err:**&#x200B;字段，该字段由&#x200B;**SMPP 3.4规范**&#x200B;的&#x200B;**附录B**&#x200B;部分定义。
 
