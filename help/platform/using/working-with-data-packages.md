@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '2458'
-ht-degree: 3%
+source-wordcount: '2442'
+ht-degree: 2%
 
 ---
 
@@ -83,7 +83,7 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开头和结尾。 随后
 
 数据包可以从任何文本编辑器手动构建。 只需确保XML文档的结构符合“xtk:navtree”模式。 Adobe Campaign控制台具有数据包导出和导入模块。
 
-## 导出资源包 {#exporting-packages}
+## 导出包{#exporting-packages}
 
 ### 关于包导出{#about-package-export}
 
@@ -224,8 +224,6 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ## 管理包定义{#managing-package-definitions}
 
-### 关于包定义{#about-package-definitions}
-
 包定义允许您创建包结构，在其中可添加稍后将在单个包中导出的实体。 然后，您将能够将此包和所有添加的实体导入到另一个活动实例中。
 
 **相关主题：**
@@ -253,7 +251,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ### 将实体添加到包定义{#adding-entities-to-a-package-definition}
 
-在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以选择要与包一起导出的实体。 在[导出包](#exporting-a-set-of-objects-in-a-package)中的一组对象部分中介绍了选择实体时的最佳实践。
+在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以选择要与包一起导出的实体。 选择实体时的最佳实践在[本节](#exporting-a-set-of-objects-in-a-package)部分中介绍。
 
 ![](assets/packagedefinition_addentities.png)
 
@@ -267,7 +265,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
    ![](assets/packagedefinition_packageselection.png)
 
-1. 实体将添加到包定义中，它将随包一起导出（请参阅[从包定义导出包](#exporting-packages-from-a-package-definition)）。
+1. 实体将添加到包定义中，它将随包一起导出（请参阅[此部分](#exporting-packages-from-a-package-definition)）。
 
    ![](assets/packagedefinition_entityadded.png)
 
@@ -302,8 +300,6 @@ template="xtk:folder" pkgAdmin="@id != 0">
    ![](assets/packagedefinition_packageexport.png)
 
 ## 导入包{#importing-packages}
-
-### 关于包导入{#about-package-import}
 
 包导入向导可通过Adobe Campaign客户端控制台的主菜单&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;访问。
 
