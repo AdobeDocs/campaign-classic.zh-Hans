@@ -7,19 +7,19 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 46%
+source-wordcount: '543'
+ht-degree: 43%
 
 ---
 
 
-# 启动 Adobe Campaign{#launching-adobe-campaign}
+# 启动Adobe Campaign{#launching-adobe-campaign}
 
 活动 Client控制台是一个富客户端，通过它可以连接到活动应用程序服务器。 了解如何在[此页](../../installation/using/installing-the-client-console.md)中下载和配置客户端控制台。
 
-## 打开 Adobe Campaign {#starting-adobe-campaign}
+## 开始Adobe Campaign{#starting-adobe-campaign}
 
 您可以通过选择&#x200B;**[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**&#x200B;来开始Adobe Campaign。
 
@@ -27,7 +27,7 @@ ht-degree: 46%
 
 ![](assets/acc-logon.png)
 
-## 连接 Adobe Campaign {#connecting-to-adobe-campaign}
+## 连接到Adobe Campaign {#connecting-to-adobe-campaign}
 
 您可以使用 Adobe ID 连接到 Adobe Campaign。有关详细信息，请参见[此页面](../../integrations/using/about-adobe-id.md)。
 
@@ -50,7 +50,7 @@ ht-degree: 46%
 * 要启动连接，还可以按&#x200B;**Enter**&#x200B;键。
 * 可以使用&#x200B;**Escape**&#x200B;键将&#x200B;**[!UICONTROL Login]**&#x200B;和&#x200B;**[!UICONTROL Password]**&#x200B;字段重置为上次成功的连接值。
 
-## 设置连接 {#setting-up-connections}
+## 设置连接{#setting-up-connections}
 
 您可以通过输入区上方的链接来访问服务器连接设置。
 
@@ -74,7 +74,7 @@ ht-degree: 46%
 
 此功能在[访问管理](../../platform/using/access-management.md)部分有详细介绍。
 
-## 中断 Adobe Campaign 连接 {#disconnecting-from-adobe-campaign}
+## 断开与Adobe Campaign {#disconnecting-from-adobe-campaign}的连接
 
 要中断 Adobe Campaign 的连接，请使用图标栏中的第一个图标。
 
@@ -105,6 +105,6 @@ ht-degree: 46%
 
 **相关主题**：
 
-* [Adobe Campaign帮助和支持选项](https://helpx.adobe.com/cn/campaign/kb/ac-support.html)
+* [Adobe Campaign帮助和支持选项](../../support.md)
 * [Adobe Campaign软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Adobe Experience Cloud支持和专家会议](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
