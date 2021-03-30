@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '726'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,9 @@ Adobe Campaign允许您导入压缩或加密文件。 在[数据加载（文件�
 
    >[!NOTE]
    >
-   >控制面板适用于在AWS上托管的所有客户（预先托管其营销实例的客户除外）。
+   >控制面板可供所有管理员用户访问。 授予用户管理员访问权限的步骤详见[此页](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)。
+   >
+   >请注意，您的实例必须托管在AWS上，并使用最新的[Gold Standard](../../rn/using/gs-overview.md)版本或最新的[ GA版本(21.1)](../../rn/using/latest-release.md)进行升级。 了解如何在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本。 要检查您的实例是否托管在AWS上，请按照[本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详细介绍的步骤操作。
 
 1. 如果Adobe Campaign安装由Adobe托管，请联系[Adobe客户服务中心](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)，以在服务器上安装必要的实用程序。
 1. 如果您的Adobe Campaign安装是预置的，请安装您要使用的实用程序(例如：GPG、GZIP)以及应用程序服务器上必需的密钥（加密密钥）。
@@ -46,7 +48,7 @@ Adobe Campaign允许您导入压缩或加密文件。 在[数据加载（文件�
 * [数据加载（文件）活动](../../workflow/using/data-loading--file-.md)。
 * [压缩或加密文件](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
 
-## 用例：导入使用控制面板 {#use-case-gpg-decrypt}生成的密钥加密的数据
+## 用例：导入使用由控制面板{#use-case-gpg-decrypt}生成的密钥加密的数据
 
 在此用例中，我们将构建一个工作流，以便使用在控制面板中生成的密钥导入已在外部系统中加密的数据。
 
