@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: 添加用户档案
 description: 添加用户档案
-audience: platform
-content-type: reference
-topic-tags: profile-management
+feature: 用户档案
+role: 商业从业者
+level: 初学者
 translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 82%
+source-wordcount: '78'
+ht-degree: 80%
 
 ---
 
