@@ -7,22 +7,22 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 52%
+source-wordcount: '184'
+ht-degree: 53%
 
 ---
 
 
-# 监视作业执行 {#monitoring-job-execution}
+# 监视作业执行{#monitoring-job-execution}
 
 您可以直接从导入/导出作业的列表跟踪导入和导出作业的执行。
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * 使用&#x200B;**[!UICONTROL Journal]**&#x200B;选项卡可以查看有关执行的日志消息。
-* **[!UICONTROL Rejects]**&#x200B;选项卡包含被拒绝的记录。 请参阅错误](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)事件中的[行为。
+* **[!UICONTROL Rejects]**&#x200B;选项卡包含被拒绝的记录。 请参阅[此章节](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
 
 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，**[!UICONTROL Status]**&#x200B;字段指示作业的当前状态。
 
