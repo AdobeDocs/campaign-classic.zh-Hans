@@ -3,19 +3,19 @@ solution: Campaign Classic
 product: campaign
 title: 关于 Campaign 中的查询
 description: 关于 Campaign 中的查询
-audience: platform
-content-type: reference
-topic-tags: creating-queries
+feature: 查询编辑器
+role: 业务从业者，数据架构师
+level: 初学者
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 86%
+source-wordcount: '184'
+ht-degree: 81%
 
 ---
 
 
-# 关于 Campaign 中的查询{#about-queries-in-campaign}
+# 开始使用查询{#about-queries-in-campaign}
 
 您可在软件的多个级别上找到 Adobe Campaign 查询工具：创建目标群体、细分客户、提取和过滤跟踪日志、构建过滤器等。
 
