@@ -3,23 +3,23 @@ solution: Campaign Classic
 product: campaign
 title: 关于连接器
 description: 关于连接器
-audience: platform
-content-type: reference
-topic-tags: connectors
+feature: 概述
+role: 业务从业者，数据架构师
+level: 初学者
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 9%
+source-wordcount: '203'
+ht-degree: 8%
 
 ---
 
 
-# 关于连接器{#about-connectors}
+# 开始使用连接器{#about-connectors}
 
 Adobe Campaign提供了多个连接器，允许您与外部应用程序通信、连接到数据库引擎并与Adobe Analytics集成以共享数据。
 
-这些连接器包括：
+以下列出了可用的连接器：
 
 * 联合数据访问连接器(**联合数据访问**)使您能够将活动连接到一个或多个外部数据库并处理存储在这些数据库中的信息，而不会影响活动数据。 [了解详情](../../installation/using/about-fda.md)。
 * CRM连接器使您能够使用专用的工作流活动在Adobe Campaign和您的CRM解决方案之间交换数据。 [了解详情](../../platform/using/crm-connectors.md)。
