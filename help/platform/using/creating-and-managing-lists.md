@@ -3,21 +3,21 @@ solution: Campaign Classic
 product: campaign
 title: 创建和管理列表
 description: 了解如何创建和管理列表
-audience: platform
-content-type: reference
-topic-tags: profile-management
+feature: 用户档案
+role: 商业从业者
+level: 初学者
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 68%
+source-wordcount: '808'
+ht-degree: 64%
 
 ---
 
 
 # 创建和管理列表{#creating-and-managing-lists}
 
-## 关于 Adobe Campaign 中的列表 {#about-lists-in-adobe-campaign}
+## 什么是列表?{#about-lists-in-adobe-campaign}
 
 列表是一组静态用户档案，用于在投放操作期间提供定位目标，或在导入操作或工作流执行期间进行更新。例如，通过查询从数据库中提取出的一组数据即可形成一个列表。
 
@@ -37,7 +37,7 @@ Adobe Campaign 提供两类列表：
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#create-list-video)
 
-## 通过组创建用户档案列表 {#creating-a-profile-list-from-a-group}
+## 从组{#creating-a-profile-list-from-a-group}创建用户档案列表
 
 **[!UICONTROL Group]** 通过链接创建 **[!UICONTROL Profiles and targets]** 的类型列表必须基于默认Adobe Campaign用户档案表(nms:收件人)。
 
@@ -69,9 +69,9 @@ Adobe Campaign 提供两类列表：
 
 ![](assets/s_ncs_user_new_recipient_from_group.png)
 
-与其他列表一样，也可以配置该用户档案列表。请参阅[配置列表](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
+与其他列表一样，也可以配置该用户档案列表。请参阅[此章节](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
 
-## 将数据链接到列表 {#linking-data-to-a-list}
+## 将数据链接到列表{#linking-data-to-a-list}
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Adobe Campaign 提供两类列表：
 
 ![](assets/s_ncs_user_add_selection_to_group_5.png)
 
-## 从列表中删除用户档案 {#removing-a-profile-from-a-list}
+## 从列表{#removing-a-profile-from-a-list}中删除用户档案
 
 要从列表中删除用户档案，您可以：
 
@@ -118,7 +118,7 @@ Adobe Campaign 提供两类列表：
 
    ![](assets/recipient_remove_a_list.png)
 
-## 删除用户档案列表 {#deleting-a-list-of-profiles}
+## 删除列表用户档案{#deleting-a-list-of-profiles}
 
 您可以从 Adobe Campaign 树状结构的组列表中删除一个或多个列表。为此可通过 Adobe Campaign 主页中的 **[!UICONTROL Advanced > Explorer]** 链接编辑树状结构。选择相关的组，然后单击鼠标右键。选择 **[!UICONTROL Delete]**。警告消息会要求您确认此删除操作。
 
@@ -136,7 +136,7 @@ Adobe Campaign 提供两类列表：
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-### 如何使用工作流{#create-list-in-a-wf-video}创建列表收件人
+### 如何使用工作流创建收件人{#create-list-in-a-wf-video}的列表
 
 了解如何创建工作流以目标收件人，以及如何在电子邮件目标中使用列表之前使其重复。
 
