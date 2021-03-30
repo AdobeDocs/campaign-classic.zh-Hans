@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: 管理对活动文件夹的访问
 description: 了解如何授予对活动文件夹的访问权限和创建视图
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: 应用程序设置
+role: 业务从业者，管理员
+level: 初学者
 translation-type: tm+mt
-source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -19,53 +19,9 @@ ht-degree: 0%
 
 资源管理器导航树的每个文件夹都附加了读、写和删除访问权限。 要访问文件，运算符或操作员组必须至少具有对文件的读访问权限。
 
-## 对文件夹的权限
-
-### 编辑文件夹{#edit-permissions-on-a-folder}上的权限
-
-要编辑树中特定文件夹的权限，请执行以下步骤：
-
-1. 右键单击文件夹，然后选择&#x200B;**[!UICONTROL Properties...]**。
-
-   ![](assets/s_ncs_user_folder_properties.png)
-
-1. 单击&#x200B;**[!UICONTROL Security]**&#x200B;选项卡，以视图此文件夹中的授权。
-
-   ![](assets/s_ncs_user_folder_properties_security.png)
-
-### 修改权限{#modify-permissions}
-
-要修改权限，您可以：
-
-* **替换组或运算符**。要执行此操作，请单击对文件夹具有权限的组（或运算符）之一，然后从下拉列表中选择新组（或新运算符）：
-
-   ![](assets/s_ncs_user_folder_properties_security02.png)
-
-* **授权组或运营商**。要执行此操作，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择要为此文件夹分配授权的组或运算符。
-* **禁止组或运营商**。要执行此操作，请单击&#x200B;**[!UICONTROL Delete]**&#x200B;并选择要从中删除此文件夹授权的组或运算符。
-* **选择分配给组或运算符的权限**。要执行此操作，请单击相关组或运算符，然后选择要授予的访问权限并取消选择其他访问权限。
-
-   ![](assets/s_ncs_user_folder_properties_security03.png)
-
-### 传播权限{#propagate-permissions}
-
-您可以传播授权和访问权限。 为此，请在文件夹属性中选择&#x200B;**[!UICONTROL Propagate]**&#x200B;选项。
-
-然后，此窗口中定义的授权将应用于当前节点的所有子文件夹。 然后，您可以为每个子文件夹重载这些授权。
-
->[!NOTE]
->
->清除文件夹的此选项不会自动清除子文件夹的此选项。 必须为每个子文件夹显式清除它。
-
-### 授予对所有运算符{#grant-access-to-all-operators}的访问权限
-
-在&#x200B;**[!UICONTROL Security]**&#x200B;选项卡中，如果选择&#x200B;**[!UICONTROL System folder]**&#x200B;选项，则所有运算符都将有权访问此数据，而不管其权限如何。 如果清除此选项，则必须将运算符（或其组）显式添加到授权列表中，以便它们能够访问。
-
-![](assets/s_ncs_user_folder_properties_security03b.png)
-
 ## 文件夹和视图{#folders-and-views}
 
-### 关于文件夹{#about-folders}
+### 什么是文件夹{#about-folders}
 
 文件夹是Adobe Campaign树中的节点。 通过右键单击树，通过&#x200B;**[!UICONTROL Add new folder]**&#x200B;菜单创建这些节点。 默认情况下，第一个菜单允许您添加与当前上下文对应的文件夹。
 
@@ -73,7 +29,7 @@ ht-degree: 0%
 
 您可以自定义Explorer导航树。 请阅读本节](adobe-campaign-workspace.md)，了解配置步骤和最佳实践。[
 
-### 关于视图{#about-views}
+### 什么是视图{#about-views}
 
 此外，您还可以创建视图，以限制对数据的访问，并组织树的内容以满足您的要求。 然后，您可以为视图分配权限。
 
@@ -121,3 +77,49 @@ ht-degree: 0%
 >[!NOTE]
 >
 >在管理[事务消息](../../message-center/using/about-transactional-messaging.md)事件时，不能将&#x200B;**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹设置为执行实例上的视图，因为这可能导致访问权限问题。 有关事件集合的详细信息，请参阅[此部分](../../message-center/using/event-collection.md)。
+
+
+
+## 对文件夹的权限
+
+### 编辑文件夹{#edit-permissions-on-a-folder}上的权限
+
+要编辑树中特定文件夹的权限，请执行以下步骤：
+
+1. 右键单击文件夹，然后选择&#x200B;**[!UICONTROL Properties...]**。
+
+   ![](assets/s_ncs_user_folder_properties.png)
+
+1. 单击&#x200B;**[!UICONTROL Security]**&#x200B;选项卡，以视图此文件夹中的授权。
+
+   ![](assets/s_ncs_user_folder_properties_security.png)
+
+### 修改权限{#modify-permissions}
+
+要修改权限，您可以：
+
+* **替换组或运算符**。要执行此操作，请单击对文件夹具有权限的组（或运算符）之一，然后从下拉列表中选择新组（或新运算符）：
+
+   ![](assets/s_ncs_user_folder_properties_security02.png)
+
+* **授权组或运营商**。要执行此操作，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择要为此文件夹分配授权的组或运算符。
+* **禁止组或运营商**。要执行此操作，请单击&#x200B;**[!UICONTROL Delete]**&#x200B;并选择要从中删除此文件夹授权的组或运算符。
+* **选择分配给组或运算符的权限**。要执行此操作，请单击相关组或运算符，然后选择要授予的访问权限并取消选择其他访问权限。
+
+   ![](assets/s_ncs_user_folder_properties_security03.png)
+
+### 传播权限{#propagate-permissions}
+
+您可以传播授权和访问权限。 为此，请在文件夹属性中选择&#x200B;**[!UICONTROL Propagate]**&#x200B;选项。
+
+然后，此窗口中定义的授权将应用于当前节点的所有子文件夹。 然后，您可以为每个子文件夹重载这些授权。
+
+>[!NOTE]
+>
+>清除文件夹的此选项不会自动清除子文件夹的此选项。 必须为每个子文件夹显式清除它。
+
+### 授予对所有运算符{#grant-access-to-all-operators}的访问权限
+
+在&#x200B;**[!UICONTROL Security]**&#x200B;选项卡中，如果选择&#x200B;**[!UICONTROL System folder]**&#x200B;选项，则所有运算符都将有权访问此数据，而不管其权限如何。 如果清除此选项，则必须将运算符（或其组）显式添加到授权列表中，以便它们能够访问。
+
+![](assets/s_ncs_user_folder_properties_security03b.png)
