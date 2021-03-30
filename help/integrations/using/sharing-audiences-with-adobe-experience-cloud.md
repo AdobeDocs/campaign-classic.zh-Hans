@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 40abbf1f981331b8a19d3607c57624aac22c91f2
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -36,3 +36,9 @@ ht-degree: 0%
 
 * **访客ID**:此类型的标识符将Adobe Experience Cloud访客与Adobe Campaign收件人协调。
 * **声明的ID**:此类型的标识符将所有类型的数据与Adobe Campaign数据库中的元素进行协调。它在Adobe Campaign中表示为预定义合并关键项。
+
+   >[!NOTE]
+   >
+   > 声明的ID数据源现在还可以与People核心服务集成一起使用。
+   >
+   >如果您使用People核心服务集成并想添加Audience Manager集成，则需要Adobe Audience Manager顾问的帮助，以避免在Adobe Audience Manager上下文中转换到使用此Declared ID数据源时收集的所有ID同步丢失。
