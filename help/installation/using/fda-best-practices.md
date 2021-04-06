@@ -6,14 +6,14 @@ description: 了解使用外部数据库时的最佳实践和限制(联合数据
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
 translation-type: tm+mt
-source-git-commit: 0a92ebd6c9400f8caf43da8f633c7755a3fb77ce
+source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 4%
 
 ---
-
 
 # 最佳实践和限制
 
@@ -60,4 +60,3 @@ ht-degree: 4%
 如果您希望使用外部投放库中的数据在您的应用程序中进行个性化，请收集要在工作流中使用的数据，以便在临时表中提供。 然后使用临时表中的数据个性化您的投放。
 
 “联合数据访问”选项受您使用的外部数据库系统的限制。
-
