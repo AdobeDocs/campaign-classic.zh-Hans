@@ -6,14 +6,14 @@ description: 了解如何理解投放故障
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
+exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: b7a3046600845781a7393a9d1e9659550d9bfcdd
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2614'
 ht-degree: 14%
 
 ---
-
 
 # 了解投放失败{#understanding-delivery-failures}
 
@@ -264,6 +264,10 @@ Adobe Campaign过滤器此消息以删除变量内容（如ID、日期、电子�
 
 ![](assets/deliverability_qualif_status.png)
 
+>[!NOTE]
+>
+>如果ISP发生停机，通过活动发送的电子邮件将被错误地标记为退回。 要更正此问题，您需要更新退回资格。 有关更多信息，请参阅[此页面](../../delivery/using/update-bounce-qualification.md)。
+
 ### 电子邮件管理规则{#email-management-rules}
 
 >[!IMPORTANT]
@@ -315,7 +319,7 @@ Adobe Campaign过滤器此消息以删除变量内容（如ID、日期、电子�
 * 可以选择是否激活某些标识标准和加密密钥以检查域名，如&#x200B;**发件人ID**、**域密钥**、**DKIM**&#x200B;和&#x200B;**S/MIME**。
 * 通过&#x200B;**SMTP relay**&#x200B;参数，可以配置特定域的中继服务器的IP地址和端口。 有关更多信息，请参阅[此章节](../../installation/using/configuring-campaign-server.md#smtp-relay)。
 
-如果您的邮件在Outlook中以&#x200B;**[!UICONTROL on behalf of]**&#x200B;的发件人地址显示，请确保您没有使用&#x200B;**发件人ID**（来自Microsoft的过时的专有电子邮件身份验证标准）对电子邮件进行签名。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;选项处于启用状态，请取消选中相应的框，并与[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。 您的可交付性不会受到影响。
+如果您的邮件在Outlook中以&#x200B;**[!UICONTROL on behalf of]**&#x200B;的发件人地址显示，请确保您没有使用&#x200B;**发件人ID**（来自Microsoft的过时的专有电子邮件身份验证标准）对电子邮件进行签名。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;选项处于启用状态，请取消选中相应的框，并与[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。 您的可交付性不会受到影响。
 
 #### MX管理{#mx-management}
 
