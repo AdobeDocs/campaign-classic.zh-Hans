@@ -6,14 +6,14 @@ description: 最新 Campaign Classic 发行说明
 feature: 概述
 role: 商业从业者
 level: 初学者
+exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+source-git-commit: 3db426580ba72668cd9fa274b57f925600eda27b
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 97%
+source-wordcount: '905'
+ht-degree: 96%
 
 ---
-
 
 # 最新版本{#latest-release}
 
@@ -21,12 +21,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->活动&#x200B;**GA内部版本**&#x200B;为：
->* [[!DNL Gold Standard] 11版](../../rn/using/gold-standard.md#gs-11)
->* [活动 20.2.4版](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
-
->
-
+>活动&#x200B;**一般可用性(GA)内部版本**&#x200B;为：[[!DNL Gold Standard] 11发行版](../../rn/using/gold-standard.md#gs-11)和[活动 20.2.5发行版](../../rn/using/release--20-2.md)。
 
 
 ## ![](assets/do-not-localize/blue_2.png) 21.1.1 版 - 内部版本 9277 {#release-21-1-1-build-9277}
