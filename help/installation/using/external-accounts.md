@@ -6,36 +6,20 @@ description: 了解如何创建外部帐户
 audience: platform
 content-type: reference
 topic-tags: administration-basics
+exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
 translation-type: tm+mt
-source-git-commit: bfe2e29ed904b6a04bab28455301437c63ab8118
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 11%
+source-wordcount: '1543'
+ht-degree: 8%
 
 ---
-
 
 # 外部帐户{#external-accounts}
 
 Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系统的连接，您可以创建新外部帐户。
 
-技术工作流或营销策划工作流等技术流程，会使用外部帐户。在工作流中设置文件传输或与任何其他应用程序（Adobe Target、Experience Manager 等）进行数据交换时，您需要选择外部帐户。
-
-您可以设置以下类型的外部帐户：
-
-* [路由外部帐户](#routing-external-account)
-* [FTP外部帐户](#ftp-external-account)
-* [外部数据库外部帐户](#external-database-external-account)
-* [Web分析外部帐户](#web-analytics-external-account)
-* [Facebook连接外部帐户](#facebook-connect-external-account)
-* [执行实例外部帐户](#execution-instance-external-account)
-* [Adobe Experience Cloud 外部帐户](#adobe-experience-cloud-external-account)
-* [SFTP 外部帐户](#sftp-external-account)
-* [Adobe Experience Manager 外部帐户](#adobe-experience-manager-external-account)
-* [Amazon简单存储服务(S3)外部帐户](#amazon-simple-storage-service--s3--external-account)
-* [Microsoft Dynamics CRM外部帐户](#microsoft-dynamics-crm-external-account)
-* [Salesforce CRM外部帐户](#salesforce-crm-external-account)
-* [ Azure Blob Storage 外部帐户](#azure-blob-external-account)
+技术工作流或营销策划工作流等技术流程，会使用外部帐户。例如，在工作流中设置文件传输或与任何其他应用程序(Adobe Target、Experience Manager等)进行数据交换时，您需要选择外部帐户。
 
 ## 创建外部帐户{#creating-an-external-account}
 
@@ -60,7 +44,9 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 将创建外部帐户并将其添加到外部帐户列表。
 
-## 弹回邮件外部帐户{#bounce-mails-external-account}
+## 活动特定外部帐户
+
+### 退回邮件{#bounce-mails-external-account}
 
 **弹回邮件**&#x200B;外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 有关此外部帐户的详细信息，请参阅此[页面](../../workflow/using/inbound-emails.md)。
 
@@ -90,7 +76,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
    在&#x200B;**[!UICONTROL By default]**、**[!UICONTROL POP3 + STARTTLS]**、**[!UICONTROL POP3]**&#x200B;或&#x200B;**[!UICONTROL POP3S]**&#x200B;之间选择的加密的类型。
 
-## 路由外部帐户{#routing-external-account}
+### 路由{#routing-external-account}
 
 **[!UICONTROL Routing]**&#x200B;外部帐户允许您根据所安装的包配置Adobe Campaign中可用的每个渠道。
 
@@ -108,7 +94,31 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 * [iOS渠道](../../delivery/using/configuring-the-mobile-application.md)
 * [Android渠道](../../delivery/using/configuring-the-mobile-application-android.md)
 
-## FTP外部帐户{#ftp-external-account}
+
+### 执行实例{#execution-instance-external-account}
+
+如果您有一个分解的架构，您需要指定链接到该控制实例的执行实例并连接它们。 事务性消息模板部署到执行实例
+
+![](assets/ext_account_13.png)
+
+* **[!UICONTROL URL]**
+
+   安装执行实例的服务器的URL。
+
+* **[!UICONTROL Account]**
+
+   帐户名称必须与在运算符文件夹中定义的消息中心代理匹配。
+
+* **[!UICONTROL Password]**
+
+   操作符文件夹中定义的帐户密码。
+
+有关此配置的详细信息，请参阅此[页面](../../message-center/using/creating-a-shared-connection.md#control-instance)。
+
+
+## 访问外部系统外部帐户
+
+### FTP {#ftp-external-account}
 
 FTP外部帐户允许您配置和测试对Adobe Campaign之外的服务器的访问。 要与外部系统（如用于文件传输的FTP服务器898）建立连接，您可以创建自己的外部帐户。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
 
@@ -138,7 +148,29 @@ FTP外部帐户允许您配置和测试对Adobe Campaign之外的服务器的访
 
 要了解这些凭据的位置，请参阅此[页面](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials)。
 
-## 外部数据库外部帐户{#external-database-external-account}
+### SFTP {#sftp-external-account}
+
+SFTP外部帐户允许您配置和测试对Adobe Campaign之外的服务器的访问。 要设置与外部系统（如用于文件传输的SFTP）的连接，您可以创建自己的外部帐户。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
+
+![](assets/ext_account_4.png)
+
+* **[!UICONTROL Server]**
+
+   SFTP服务器的URL。
+
+* **[!UICONTROL Port]**
+
+   FTP连接端口号。 默认端口为22。
+
+* **[!UICONTROL Account]**
+
+   用于连接到SFTP服务器的帐户名。
+
+* **[!UICONTROL Password]**
+
+   用于连接到SFTP服务器的口令。
+
+### 外部数据库(联合数据访问){#external-database-external-account}
 
 使用&#x200B;**外部数据库**&#x200B;类型外部帐户连接到外部数据库。 了解有关[本节](../../installation/using/about-fda.md)中的联合数据访问(联合数据访问)选项的更多信息。
 
@@ -157,15 +189,7 @@ FTP外部帐户允许您配置和测试对Adobe Campaign之外的服务器的访
 * 配置对[Sybase IQ](../../installation/using/configure-fda-sybase.md)的访问
 * 配置对[Teradata](../../installation/using/configure-fda-teradata.md)的访问
 
-## Web分析外部帐户{#web-analytics-external-account}
-
-**[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]**&#x200B;外部帐户允许您以区段形式将数据从Adobe Analytics转发到Adobe Campaign。 相反，它会通过Adobe Campaign将电子邮件活动的指示符和属性发送到Adobe Analytics — 数据连接器。
-
-![](assets/ext_account_10.png)
-
-对于此外部帐户，必须丰富跟踪URL的计算公式，并批准两个解决方案之间的连接。 有关详细信息，请参见此 [ 页面](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign)。
-
-## Facebook连接外部帐户{#facebook-connect-external-account}
+### Facebook connect {#facebook-connect-external-account}
 
 **[!UICONTROL Facebook Connect]**&#x200B;外部帐户允许您在Facebook应用程序中显示个性化内容，从而更轻松地通过此社交网络获取潜在客户。
 
@@ -189,27 +213,9 @@ FTP外部帐户允许您配置和测试对Adobe Campaign之外的服务器的访
 
 要了解这些凭据的位置，请参阅此[页面](https://developers.facebook.com/docs/facebook-login/access-tokens)。
 
-## 执行实例外部帐户{#execution-instance-external-account}
+## Adobe解决方案集成外部帐户
 
-如果您有一个分解的架构，您需要指定链接到该控制实例的执行实例并连接它们。 事务性消息模板部署到执行实例
-
-![](assets/ext_account_13.png)
-
-* **[!UICONTROL URL]**
-
-   安装执行实例的服务器的URL。
-
-* **[!UICONTROL Account]**
-
-   帐户名称必须与在运算符文件夹中定义的消息中心代理匹配。
-
-* **[!UICONTROL Password]**
-
-   操作符文件夹中定义的帐户密码。
-
-有关此配置的详细信息，请参阅此[页面](../../message-center/using/creating-a-shared-connection.md#control-instance)。
-
-## Adobe Experience Cloud 外部帐户 {#adobe-experience-cloud-external-account}
+### Adobe Experience Cloud {#adobe-experience-cloud-external-account}
 
 要使用Adobe ID连接到Adobe Campaign控制台，必须配置&#x200B;**[!UICONTROL Adobe Experience Cloud (MAC)]**&#x200B;外部帐户。
 
@@ -253,29 +259,15 @@ FTP外部帐户允许您配置和测试对Adobe Campaign之外的服务器的访
 
 有关此配置的详细信息，请参阅此[页面](../../integrations/using/configuring-ims.md)。
 
-## SFTP 外部帐户{#sftp-external-account}
+## 网络分析 {#web-analytics-external-account}
 
-SFTP外部帐户允许您配置和测试对Adobe Campaign之外的服务器的访问。 要设置与外部系统（如用于文件传输的SFTP）的连接，您可以创建自己的外部帐户。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
+**[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]**&#x200B;外部帐户允许您以区段形式将数据从Adobe Analytics转发到Adobe Campaign。 相反，它会通过Adobe Campaign将电子邮件活动的指示符和属性发送到Adobe Analytics — 数据连接器。
 
-![](assets/ext_account_4.png)
+![](assets/ext_account_10.png)
 
-* **[!UICONTROL Server]**
+对于此外部帐户，必须丰富跟踪URL的计算公式，并批准两个解决方案之间的连接。 有关详细信息，请参见此 [ 页面](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign)。
 
-   SFTP服务器的URL。
-
-* **[!UICONTROL Port]**
-
-   FTP连接端口号。 默认端口为22。
-
-* **[!UICONTROL Account]**
-
-   用于连接到SFTP服务器的帐户名。
-
-* **[!UICONTROL Password]**
-
-   用于连接到SFTP服务器的口令。
-
-## Adobe Experience Manager 外部帐户{#adobe-experience-manager-external-account}
+### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
 **[!UICONTROL AEM (AEM instance)]**&#x200B;外部帐户允许您直接在Adobe Experience Manager中管理电子邮件投放以及表单的内容。
 
@@ -295,39 +287,11 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign之外的服务器的�
 
 有关更多信息，请参阅此](../../integrations/using/about-adobe-experience-manager.md)章节[。
 
-## Amazon简单存储服务(S3)外部帐户{#amazon-simple-storage-service--s3--external-account}
 
-Amazon Simple 存储 Service(S3)连接器可用于将数据导入或导出到Adobe Campaign。 可以在工作流活动中设置。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
 
-![](assets/ext_account_3.png)
+## CRM连接器外部帐户
 
-在设置此新外部帐户时，您需要提供以下详细信息：
-
-* **[!UICONTROL AWS S3 Account Server]**
-
-   服务器的URL，应按如下方式填写：
-
-   ```
-   <S3bucket name>.s3.amazonaws.com/<s3object path>
-   ```
-
-* **[!UICONTROL AWS access key ID]**
-
-   要了解在何处找到您的AWS访问密钥ID，请参阅此[页面](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
-
-* **[!UICONTROL Secret access key to AWS]**
-
-   要了解在何处查找您的AWS秘密访问密钥，请参阅此[页面](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
-
-* **[!UICONTROL AWS Region]**
-
-   要了解有关AWS区域的更多信息，请参阅此[页面](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)。
-
-* **[!UICONTROL Use server side encryption]**&#x200B;复选框允许您以S3加密模式存储文件。
-
-要了解在何处查找访问密钥ID和秘密访问密钥，请参阅Amazon Web服务[文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
-
-## Microsoft Dynamics CRM外部帐户{#microsoft-dynamics-crm-external-account}
+### Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
 
 **[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户允许您将Microsoft Dynamics数据导入并导出到Adobe Campaign。
 
@@ -383,7 +347,7 @@ Amazon Simple 存储 Service(S3)连接器可用于将数据导入或导出到Ado
 
 有关此配置的详细信息，请参阅此[页面](../../platform/using/crm-connectors.md)。
 
-## Salesforce CRM外部帐户{#salesforce-crm-external-account}
+### Salesforce.com CRM {#salesforce-crm-external-account}
 
 **[!UICONTROL Salesforce CRM]**&#x200B;外部帐户允许您将Salesforce数据导入并导出到Adobe Campaign。
 
@@ -409,13 +373,47 @@ Amazon Simple 存储 Service(S3)连接器可用于将数据导入或导出到Ado
 
 * **[!UICONTROL API version]**
 
-   **[!UICONTROL Version 49]**、**[!UICONTROL Version 37]**、**[!UICONTROL Version 21]**&#x200B;或&#x200B;**[!UICONTROL Version 15]**&#x200B;之间的API版本。
+   选择API的版本。
 
 对于此外部帐户，您需要使用配置向导配置Salesforce CRM。
 
 有关此配置的详细信息，请参阅此[页面](../../platform/using/crm-connectors.md)。
 
-## Azure Blob存储外部帐户(#azure-blob-external-account)
+## 传输数据外部帐户
+
+### Amazon Simple 存储 Service(S3){#amazon-simple-storage-service--s3--external-account}
+
+Amazon Simple 存储 Service(S3)连接器可用于将数据导入或导出到Adobe Campaign。 可以在工作流活动中设置。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
+
+![](assets/ext_account_3.png)
+
+在设置此新外部帐户时，您需要提供以下详细信息：
+
+* **[!UICONTROL AWS S3 Account Server]**
+
+   服务器的URL，应按如下方式填写：
+
+   ```
+   <S3bucket name>.s3.amazonaws.com/<s3object path>
+   ```
+
+* **[!UICONTROL AWS access key ID]**
+
+   要了解在何处找到您的AWS访问密钥ID，请参阅此[页面](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
+
+* **[!UICONTROL Secret access key to AWS]**
+
+   要了解在何处查找您的AWS秘密访问密钥，请参阅此[页面](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
+
+* **[!UICONTROL AWS Region]**
+
+   要了解有关AWS区域的更多信息，请参阅此[页面](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)。
+
+* **[!UICONTROL Use server side encryption]**&#x200B;复选框允许您以S3加密模式存储文件。
+
+要了解在何处查找访问密钥ID和秘密访问密钥，请参阅Amazon Web服务[文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
+
+### Azure Blob存储(#azure-blob-external-account)
 
 **Azure Blob存储**&#x200B;外部帐户可用于使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 有关更多信息，请参阅此](../../workflow/using/file-transfer.md)章节[。
 
