@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: 文档
 translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2481'
 ht-degree: 54%
 
 ---
@@ -113,6 +113,7 @@ ht-degree: 54%
       + CRM 连接器{#crm-connectors}
          + [CRM 连接器入门](platform/using/crm-connectors.md)
          + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
+         + [与Salesforce.com连接](platform/using/crm-sfdc.md)
          + [与 CRM 同步数据](platform/using/crm-data-sync.md)
       + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector.md)
    + [帮助和支持选项](support.md)
@@ -211,6 +212,7 @@ ht-degree: 54%
       + [传递疑难解答](delivery/using/delivery-troubleshooting.md)
       + [传递状态](delivery/using/delivery-statuses.md)
       + [了解投放故障](delivery/using/understanding-delivery-failures.md)
+      + [在ISP中断后更新退出资格](delivery/using/update-bounce-qualification.md)
       + [了解隔离管理](delivery/using/understanding-quarantine-management.md)
    + 跟踪消息{#tracking-messages}
       + [关于邮件跟踪](delivery/using/about-message-tracking.md)
@@ -658,6 +660,7 @@ ht-degree: 54%
       + [活动服务器设置](installation/using/configuring-campaign-server.md)
       + [定义安全区域](installation/using/security-zones.md)
       + [技术电子邮件配置](installation/using/email-deliverability.md)
+      + [将MX服务器与活动](installation/using/using-mx-servers.md)
       + [配置电子邮件密送](installation/using/email-archiving.md)
       + [配置SpamAssan](installation/using/configuring-spamassassin.md)
    + 连接到活动{#connect-to-campaign}
@@ -672,6 +675,7 @@ ht-degree: 54%
       + [配置外部帐户](installation/using/external-accounts.md)
       + 配置联合数据访问{#configure-fda}
          + [开始使用联合数据访问](installation/using/about-fda.md)
+         + [最佳实践和限制](installation/using/fda-best-practices.md)
          + 配置准则 {#config-databases}
             + [配置步骤](installation/using/configure-fda.md)
             + [配置 Snowflake](installation/using/configure-fda-snowflake.md)
