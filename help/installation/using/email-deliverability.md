@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 电子邮件发送
-description: 电子邮件发送
+title: 技术电子邮件配置
+description: 了解如何配置活动以在发送电子邮件时控制实例的输出。
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: c62caeacd374b31f597f3c4b23318b8705fbda61
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '3022'
 ht-degree: 0%
 
 ---
-
 
 # 技术电子邮件配置{#email-deliverability}
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 有关与Adobe Campaign可交付性相关的概念和最佳实践的详细信息，请参阅此[部分](../../delivery/using/about-deliverability.md)。
 
-要更深入地了解哪些是可交付性，包括有关Adobe平台有效发送和接收电子邮件的所有技术建议，请参阅[Adobe可交付性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
+要更深入地了解哪些是可交付性，包括有关Adobe平台有效发送和接收电子邮件的所有技术建议，请参阅[Adobe可交付性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
 
 ## 工作原理 {#operating-principle}
 
@@ -135,9 +135,11 @@ ht-degree: 0%
 >
 >对于托管或混合安装，如果已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则不再使用&#x200B;**[!UICONTROL MX management]**&#x200B;投放吞吐量规则。 增强的MTA使用其自己的MX规则，允许它根据您自己的历史电子邮件信誉以及来自您发送电子邮件的域的实时反馈，按域自定义您的吞吐量。
 
-以下部分仅适用于使用旧版活动 MTA的内部部署安装和托管/混合安装。
-
 ### 关于MX规则{#about-mx-rules}
+
+>[!NOTE]
+>
+>本部分和以下部分仅适用于使用旧版活动 MTA的内部部署安装和托管/混合安装。
 
 MX规则（邮件eXchanger）是管理发送服务器与接收服务器之间的通信的规则。
 
@@ -172,7 +174,7 @@ user:~ user$ host -t a mta5.am0.yahoodns.net
                 mta5.am0.yahoodns.net has address 98.138.112.35
 ```
 
-对于此记录，用户可以联系8个对等IP地址。 由于他有2个公共IP地址，因此他有8 * 2 = 16个组合可连接到yahoo.com邮件服务器。 每种组合都称为路径。
+对于此记录，用户可以联系8个对等IP地址。 由于他有2个公共IP地址，因此他有8 * 2 = 16个组合可连接到yahoo.com邮件服务器。 这些组合中的每一种都称为路径。
 
 第二个MX记录显示为：
 
@@ -301,6 +303,10 @@ MX要遵循的规则在树&#x200B;**[!UICONTROL Administration > Campaign Manage
 配置示例：
 
 ![](assets/s_ncs_install_mx_mgt_rule_details.png)
+
+>[!NOTE]
+>
+>有关将MX服务器与Adobe Campaign结合使用的详细信息，请参阅[本节](../../installation/using/using-mx-servers.md)。
 
 ### 管理电子邮件格式{#managing-email-formats}
 
