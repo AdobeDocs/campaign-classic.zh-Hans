@@ -6,14 +6,14 @@ description: 了解有关联合数据访问的配置步骤
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 7ce5a01b57092043b8d9b52761b243f771cf74f2
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 6%
+source-wordcount: '322'
+ht-degree: 5%
 
 ---
-
 
 # 配置 FDA 连接器 {#specific-configurations-by-database-type}
 
@@ -30,31 +30,31 @@ ht-degree: 6%
 
 要使用联合数据访问设置对外部数据库的访问，配置步骤如下：
 
-1. 在Adobe Campaign服务器上安装与数据库对应的驱动程序。 驱动程序列在数据库特定页[中，该页列在下面](#fda-specific-configuration)。
-1. [创建和配置一个外](../../installation/using/connecting-to-database.md) 部帐户，它允许您在Adobe Campaign和外部数据库之间建立连接。有关活动中外部帐户的详细信息，请参阅[此页](../../installation/using/external-accounts.md)。
-1. [在Adobe Campaign中](../../installation/using/creating-data-schema.md) 创建外部数据库的架构。这允许您识别外部数据库的数据结构。
-1. 如果需要，[从先前创建的目标映射创建新模式](../../installation/using/defining-data-mapping.md)。 如果投放的收件人来自外部数据库，则这是必需的。 此实施存在与消息个性化相关的限制。
+1. 安装驱动程序并设置与Adobe Campaign服务器上的数据库对应的外部帐户。 请参阅下面列出的特定于数据库的页面[](#fda-specific-configuration)
+1. 测试外部帐户或在Adobe Campaign与外部数据库之间创建临时连接。 [了解详情](../../installation/using/connecting-to-database.md)
+1. 在Adobe Campaign中创建外部数据库的模式。 这允许您标识外部数据库的数据结构。 [了解详情](../../installation/using/creating-data-schema.md)
+1. 如果需要，从之前创建的目标映射创建新模式。 如果投放的收件人来自外部数据库，则这是必需的。 此实施存在与消息个性化相关的限制。 [了解详情](../../installation/using/defining-data-mapping.md)
 
 创建模式后，可以在Adobe Campaign工作流中处理数据。 如需详细信息，请参阅[此部分](../../workflow/using/accessing-an-external-database--fda-.md)。
 
 ## 数据库特定配置{#fda-specific-configuration}
 
-根据您希望能够从Adobe Campaign访问的外部数据库，您需要执行特定配置。 这些配置实质上涉及安装驱动程序并声明属于Adobe Campaign服务器上每个RDBMS的环境变量。
+根据您希望能够从Adobe Campaign访问的外部数据库，您需要执行特定配置。 这些配置实质上涉及在Adobe Campaign服务器上安装驱动程序并声明属于每个RDBMS的环境变量，以及配置外部帐户。
 
 请访问以下链接了解更多信息：
 
-* [azure synapse](../../installation/using/configure-fda-synapse.md)
+* 连接活动和[Azure synapse](../../installation/using/configure-fda-synapse.md)
 
-* [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* 连接活动和[Snowflake](../../installation/using/configure-fda-snowflake.md)
 
-* [Hadoop](../../installation/using/configure-fda-hadoop.md)
+* 连接活动和[Hadoop](../../installation/using/configure-fda-hadoop.md)
 
-* [Oracle](../../installation/using/configure-fda-oracle.md)
+* 连接活动和[Oracle](../../installation/using/configure-fda-oracle.md)
 
-* [Netezza](../../installation/using/configure-fda-netezza.md)
+* 连接活动和[Netezza](../../installation/using/configure-fda-netezza.md)
 
-* [sybase IQ](../../installation/using/configure-fda-sybase.md)
+* 连接活动和[Sybase IQ](../../installation/using/configure-fda-sybase.md)
 
-* [Teradata](../../installation/using/configure-fda-teradata.md)
+* 连接活动和[Teradata](../../installation/using/configure-fda-teradata.md)
 
-* [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
+* 连接活动和[SAP HANA](../../installation/using/configure-fda-sap-hana.md)
