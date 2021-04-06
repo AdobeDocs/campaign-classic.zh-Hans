@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Microsoft Dynamics CRM连接器
+title: 活动- Microsoft Dynamics CRM连接器
 description: Connect 活动和Microsoft Dynamics
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 translation-type: tm+mt
-source-git-commit: 521bc3bf9b2507947007d7f458679275d407f910
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
-
 
 # Connect 活动和Microsoft Dynamics 365{#connect-to-msdyn}
 
@@ -26,12 +26,6 @@ ht-degree: 0%
 * 对于&#x200B;**内部部署**&#x200B;部署，请应用Office 365关键步骤。
 
 通过专用工作流活动进行数据同步。 [了解详情](../../platform/using/crm-data-sync.md)。
-
-
->[!NOTE]
->
-> 与活动兼容的CRM系统版本列在[兼容性矩阵](../../rn/using/compatibility-matrix.md#CRMconnectors)中。
-
 
 ## 实施步骤{#microsoft-dynamics-implementation-steps}
 
@@ -56,10 +50,10 @@ Campaign Classic:
 
 
 >[!CAUTION]
->
 > 将Adobe Campaign与Microsoft Dynamics连接时，您无法：
 > * 安装可以更改CRM行为并导致与Adobe Campaign兼容的插件
 > * 选择多个明细列表
+
 >
 
 
