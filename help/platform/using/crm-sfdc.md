@@ -6,14 +6,14 @@ description: 连接活动和Salesforce.com
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 translation-type: tm+mt
-source-git-commit: 236e8d355b8cd89a0ebe88d5fca7ff78ca62db8e
+source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
 
 ---
-
 
 # Connect 活动和Microsoft Dynamics 365{#connect-to-msdyn}
 
@@ -91,4 +91,3 @@ ht-degree: 0%
 ![](assets/crm_connectors_sfdc_wf.png)
 
 了解有关此页](../../platform/using/crm-data-sync.md)中数据同步[的更多信息。
-
