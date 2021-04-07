@@ -1,6 +1,6 @@
 ---
 cloud: Experience Cloud
-description: Campaign Classic文档
+description: Campaign Classic 文档
 solution-title: 学习和支持
 solution-hub-url: https://helpx.adobe.com/cn/support/campaign/classic.html
 solution-image: assets/campaign-icon-24.png
@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: fa576fba1b6b2834d70242268ad0a5b04108cc76
 workflow-type: tm+mt
 source-wordcount: '38'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
