@@ -2,18 +2,18 @@
 solution: Campaign Classic
 product: campaign
 title: Adobe Campaign经典文档更新
-description: 本页列表了Adobe Campaign Classic文档中的所有新增功能和更新
+description: 本页列出了 Adobe Campaign Classic 文档中的所有新增功能和更新
 feature: 概述
-role: 商业从业者
-level: 初学者
+role: Business Practitioner
+level: Beginner
+exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '4275'
-ht-degree: 94%
+source-wordcount: '4272'
+ht-degree: 96%
 
 ---
-
 
 # 文档更新{#documentation-updates}
 
@@ -27,18 +27,18 @@ ht-degree: 94%
 
 Campaign Classic的“帮助和支持选项”页面已集成到核心文档中。 [阅读更多](../../support.md)
 
-新增了一节，其中包含有关安全性和隐私的最佳实践和检查。 [阅读更多](../../installation/using/get-started-security-privacy.md)
+已新增一个章节，介绍了有关安全性和隐私的最佳实践和检查。[阅读更多](../../installation/using/get-started-security-privacy.md)
 
-[权限管理章](../../platform/using/access-management.md)已得到改进，并分为几节，包括有关[Operators](../../platform/using/access-management-operators.md)、[操作员组](../../platform/using/access-management-groups.md)、[已命名权限](../../platform/using/access-management-named-rights.md)和[文件夹管理](../../platform/using/access-management-folders.md)的详细信息。
+[有关许可管理的一章](../../platform/using/access-management.md)已经过了改进并分为数节，包括有关[操作员](../../platform/using/access-management-operators.md)、[操作员组](../../platform/using/access-management-groups.md)、[已命名权限](../../platform/using/access-management-named-rights.md)和[文件夹管理](../../platform/using/access-management-folders.md)的详细信息。
 
-了解如何通过以下新页面创建和管理活动:
+通过以下新页面了解如何创建和管理活动：
 * [创建和配置活动模板](../../campaign/using/marketing-campaign-templates.md)
 * [营销活动投放](../../campaign/using/marketing-campaign-deliveries.md)
-* [选择活动的受众](../../campaign/using/marketing-campaign-target.md)
+* [选择活动受众](../../campaign/using/marketing-campaign-target.md)
 * [管理关联文档](../../campaign/using/marketing-campaign-assets.md)
-* [设置和管理审批流程](../../campaign/using/marketing-campaign-approval.md)
+* [建立和管理审批流程](../../campaign/using/marketing-campaign-approval.md)
 
-在&#x200B;**[!UICONTROL Advanced JavaScript]**&#x200B;活动部分中添加了有关如何使用任务.setCompleted()方法终止任务和防止将来召回的信息。 [阅读更多](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+在&#x200B;**[!UICONTROL Advanced JavaScript]**&#x200B;活动部分中添加了有关如何使用 task.setCompleted() 方法终止任务和防止将来出现撤回的信息。[阅读更多](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
 [Deliverability](../../delivery/using/about-deliverability.md)部分已更新，现在包括指向新[Adobe可交付性最佳实践指南](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)的链接。 所有与可应用于各种Adobe解决方案的可交付性相关的通用信息都已移至[最佳做法指南附录](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources)。
 
