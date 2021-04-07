@@ -4,16 +4,16 @@ product: campaign
 title: '[!DNL Gold Standard] 发行说明'
 description: Campaign Classic [!DNL Gold Standard]发行说明
 feature: 概述
-role: 商业从业者
-level: 初学者
+role: Business Practitioner
+level: Beginner
+exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 83%
+source-wordcount: '1023'
+ht-degree: 96%
 
 ---
-
 
 # [!DNL Gold Standard] 发行说明{#gold-standard}
 
@@ -21,26 +21,26 @@ ht-degree: 83%
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 11版{#gs-11}
 
-_2021年3月2日_
+_2021 年 3 月 2 日_
 
 内部版本 9032@10c2709 包含以下修复：
 
-* 修复了阻止使用控制台某些组件(如投放中的日期选择器和图像管理)的回归问题。 (NEO-31453, NEO-31454)
+* 修复了导致无法使用某些控制台组件（如投放中的日期选择器和图像管理）的回退问题。(NEO-31453, NEO-31454)
 
-**仅Console升级是强制的。不需要服务器升级。**
+**必须执行仅控制台升级。无需升级服务器。**
 
 >[!NOTE]
 >
-> 连接到[Adobe软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)以下载新版本。 了解如何在此页面](../../installation/using/client-console-availability-for-windows.md)中向所有最终用户[建议控制台更新。
+> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
 
 
-_2020年12月22日_
+_2020 年 12 月 22 日_
 
 >[!CAUTION]
 >
-> * 此版本附带新的连接协议：如果您通过Adobe Identity Service(IMS)连接到活动，则活动服务器和客户端控制台都必须进行升级，才能在2021年6月30日&#x200B;**之后连接到活动**。
+> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 具有活动的旧式身份验证模式将于2021年11月30日&#x200B;****&#x200B;停用。
+> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign 的旧式 oAuth 身份验证模式将于 **2021 年 11 月 30 日**&#x200B;停用。
 
 >
 >
@@ -88,7 +88,7 @@ _2020 年 6 月 22 日_
 
 ## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 8版{#gs-8}
 
-_2020年4月29日_
+_2020 年 4 月 29 日_
 
 内部版本 9032@3a9dc9c 包含以下修复：
 
@@ -113,7 +113,7 @@ _2020年4月29日_
 
 ## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 6版{#gs-6}
 
-_2020年3月9日_
+_2020 年 3 月 9 日_
 
 内部版本 9032@19f73c5 包含以下修复：
 
@@ -121,7 +121,7 @@ _2020年3月9日_
 
 ## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 5版{#gs-5}
 
-_2019年12月17日_
+_2019 年 12 月 17 日_
 
 内部版本 9032@d6b8062 包含以下修复：
 
@@ -129,7 +129,7 @@ _2019年12月17日_
 
 ## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 4版{#gs-4}
 
-_2019年12月11日_
+_2019 年 12 月 11 日_
 
 内部版本 9032@bc4a935 包含以下修复：
 
@@ -137,7 +137,7 @@ _2019年12月11日_
 
 ## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 3版{#gs-3}
 
-_2019年11月20日_
+_2019 年 11 月 20 日_
 
 内部版本 9032@3468c7b 包含以下修复：
 
@@ -156,7 +156,7 @@ _2019 年 9 月 19 日_
 
 ## ![](assets/do-not-localize/red_2.png) 版本 19.1.4 - 版本 9032{#release-19-1-4-build-9032}
 
-_2019年8月13日_
+_2019 年 8 月 13 日_
 
 初始 19.1.4 内部版本包含以下修复：
 
