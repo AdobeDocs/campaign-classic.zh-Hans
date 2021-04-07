@@ -4,16 +4,16 @@ product: campaign
 title: 升级入门
 description: 详细了解 Campaign Classic 升级
 feature: 概述
-role: 商业从业者
-level: 初学者
+role: Business Practitioner
+level: Beginner
+exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '415'
 ht-degree: 93%
 
 ---
-
 
 # 升级入门{#rn-overview}
 
@@ -35,7 +35,7 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ![](assets/do-not-localize/blue3.png) **发布候选项** (RC) - 具有新功能的最新版本。
 
-**最后一个 RC 版本**[是 Campaign Classic 21.1 版本](../../rn/using/latest-release.md)
+**最新的 RC 版本**&#x200B;是 [Campaign Classic 21.1 版本](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/red3.png) **已弃用** -无部署。必须升级现有实施。
 
@@ -51,7 +51,7 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 作为托管客户（托管服务或混合），您需要联系客户关怀团队以升级环境。
 
-作为本地用户，您可以执行升级。为此，您需要[下载最新的稳定内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)并升级所有环境。了解有关[升级过程](../../production/using/build-upgrade.md)的更多信息，并查阅[内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)。
+作为本地用户，您可以执行升级。为此，您需要[下载最新的稳定内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)并升级所有环境。了解有关[升级过程](../../production/using/build-upgrade.md)的更多信息，并查阅[内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)。
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
