@@ -4,14 +4,14 @@ product: campaign
 title: 最新版本
 description: 最新 Campaign Classic 发行说明
 feature: 概述
-role: 商业从业者
-level: 初学者
+role: Business Practitioner
+level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 translation-type: tm+mt
 source-git-commit: 3db426580ba72668cd9fa274b57f925600eda27b
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 96%
+source-wordcount: '902'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 96%
 
 ## ![](assets/do-not-localize/blue_2.png) 21.1.1 版 - 内部版本 9277 {#release-21-1-1-build-9277}
 
-_2021年2月22日_
+_2021 年 2 月 22 日_
 
 **安全性增强**
 
@@ -85,7 +85,7 @@ Campaign 现在支持以下系统：
 IOB-090020 Error in SSL library: 'IOB-090013 error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed (code 336134278)'
 ```
 
-* 修复了无法发送具有目标数据个性化的新投放的问题(NEO-30323)。
+* 修复了导致无法发送带有目标数据个性化设置的新投放的问题 (NEO-30323)。
 * 修复了营销实例中发生多次崩溃时导致核心文件出现的问题。
 * 修复了会导致&#x200B;**跟踪**&#x200B;工作流失败并出现以下错误 (NEO-25206) 的问题：
 
