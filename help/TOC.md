@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2483'
 ht-degree: 98%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 98%
       + [启动 Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + Adobe Campaign 工作区{#campaign-workspace}
          + [Campaign UI 入门](platform/using/adobe-campaign-workspace.md)
+         + [使用活动 Explorer](platform/using/adobe-campaign-explorer.md)
          + [浏览和自定义列表](platform/using/adobe-campaign-ui-lists.md)
       + 常见问题解答 {#faq}
          + [首要问题](platform/using/common-questions.md)
