@@ -8,15 +8,15 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: 830ec0ed80fdc6e27a8cc782b0e4b79abf033450
+source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1462'
 ht-degree: 0%
 
 ---
 
 
-# 定义安全区域 {#defining-security-zones}
+# 定义安全区域（内部部署）{#defining-security-zones}
 
 每个操作员需要链接到一个区域才能登录到实例，并且操作员IP必须包含在安全区域中定义的地址或地址集中。 安全区配置在Adobe Campaign服务器的配置文件中执行。
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 >
 >作为&#x200B;**托管的**&#x200B;客户，如果您可以访问[活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)，则可以使用安全区自助服务接口。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
 >
->其他&#x200B;**混合/托管**&#x200B;客户需要联系Adobe为其实例设置安全区。
+>其他&#x200B;**混合/托管**&#x200B;客户需要联系Adobe支持团队以向允许列表添加IP。
 
 
 ## 创建安全区域{#creating-security-zones}
@@ -36,7 +36,7 @@ ht-degree: 0%
 区域由以下对象定义：
 
 * 一个或多个IP地址范围（IPv4和IPv6）
-* 链接到各种IP地址的技术名称
+* 与每个IP地址范围关联的技术名称
 
 安全区域是互锁的，这意味着在另一个区域内定义新区域会减少可以登录到它的运算符数量，同时增加分配给每个运算符的权限。
 
@@ -218,3 +218,36 @@ ht-degree: 0%
    ![](assets/zone_operator_selection.png)
 
 1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;并保存修改以应用这些更改。
+
+
+
+## 建议
+
+* 请确保在subNetwork中不允许使用反向代理。 如果是，将检测到&#x200B;**所有**&#x200B;通信来自此本地IP，因此将受信任。
+
+* 将sessionTokenOnly=&quot;true&quot;的使用降至最低：
+
+   * 警告：如果此属性设置为true，则操作符可以暴露给&#x200B;**CRSF攻击**。
+   * 此外，sessionToken cookie未使用httpOnly标志进行设置，因此某些客户端javascript代码可以读取它。
+   * 但是，多个执行单元格上的消息中心需要sessionTokenOnly:新建一个安全区域，将sessionTokenOnly设置为“true”，并在此区域中仅添加所需的IP **。**
+
+* 如果可能，将alllowHTTP、showErrors设置为false（而非localhost）并检查它们。
+
+   * allowHTTP = &quot;false&quot;:强制操作符使用HTTPS
+   * showErrors = &quot;false&quot;:隐藏技术错误（包括SQL错误）。 它可以防止显示过多信息，但会减少营销人员解决错误的能力（无需向管理员请求更多信息）
+
+* 仅在需要创建(事实上是预览)调查、WebApps和报表的营销用户/管理员使用的IP上，将allowDebug设置为true。 此标志允许这些IP显示中继规则并调试它们。
+
+* 请勿将allowEmptyPassword、allowUserPassword、allowSQLIncompention设置为true。 这些属性仅用于从v5和v6.0顺利迁移：
+
+   * **allowEmptyPasswordlets** 运算符的密码为空。如果是这种情况，请通知您的所有操作员要求他们在最后期限前设置密码。 在此截止日期过后，将此属性更改为false。
+
+   * **allowUserPasswordlets** 操作符将其凭据作为参数发送（因此将由apache/IIS/proxy记录）。此功能过去曾用于简化API使用。 您可以查看说明书（或说明书），以确定某些第三方应用程序是否使用此说明书。 如果是，您必须通知他们更改他们使用我们API的方式并尽快删除此功能。
+
+   * **allowSQLInjection** 允许用户使用旧语法执行SQL注入。尽快执行[此页面](../../migration/using/general-configurations.md)中所述的更正，以便能够将此属性设置为false。 您可以使用/nl/jsp/ping.jsp?zones=true检查您的安全区域配置。 此页显示当前IP的安全措施的活动状态（使用这些安全标志计算）。
+
+* HttpOnly cookie/useSecurityToken:请参阅&#x200B;**sessionTokenOnly**&#x200B;标志。
+
+* 将添加到允许列表的IP降至最低：开箱即用，在安全区中，我们为专用网络添加了3个范围。 您不太可能使用所有这些IP地址。 所以只保留您需要的。
+
+* 将webApp/internal运算符更新为仅可在localhost中访问。
