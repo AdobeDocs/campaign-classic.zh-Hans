@@ -6,14 +6,14 @@ description: 使用Workflow HeatMap监控活动工作流
 audience: workflow
 content-type: reference
 topic-tags: use-cases
+exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
 translation-type: tm+mt
-source-git-commit: d34435b0b8714a87add6a5e3f82e4f94376f205b
+source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1128'
 ht-degree: 4%
 
 ---
-
 
 # 工作流热图 {#workflow-heatmap}
 
@@ -40,7 +40,7 @@ Adobe Campaign工作流热图包含当前运行的所有工作流的颜色编码
 
 使用Workflow HeatMap需要充分了解以下概念：[工作流](../../workflow/using/about-workflows.md)、[活动](../../workflow/using/about-activities.md)和[工作流最佳实践](../../workflow/using/workflow-best-practices.md)。
 
-默认情况下，从18.10版开始的Adobe Campaign中提供工作流热图。 如果您的内部版本介于8700和8977(18.10)之间，您还可以从此功能中受益。 要请求相应的包，请与[Adobe客户服务中心](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系，并按照[本页](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html)中的说明了解如何安装它。
+<!--The Workflow HeatMap is available by default in Adobe Campaign starting 18.10 release. If you have a build between 8700 and 8977 (18.10), you can also benefit from this capability. To request the corresponding package, contact the [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) and follow the instructions from [this page](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) to understand how to install it.-->
 
 ## 使用热图{#using-the-heatmap}
 
