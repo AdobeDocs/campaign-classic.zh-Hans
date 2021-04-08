@@ -6,14 +6,14 @@ description: 了解如何管理隐私请求
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
+exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2415'
 ht-degree: 21%
 
 ---
-
 
 # 管理隐私请求{#privacy-requests}
 
@@ -23,9 +23,7 @@ ht-degree: 21%
 
 [此部分](#sale-of-personal-information-ccpa)中说明了特定于 CCPA 的个人信息销售的选择退出。
 
->[!IMPORTANT]
->
->本文档中描述的安装过程从Campaign Classic18.4（内部版本8931+）开始适用。 如果您运行的版本是以前的版本，请参阅此[技术说明](https://helpx.adobe.com/cn/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html)。
+<!--Installation procedures described in this document are applicable starting Campaign Classic 18.4 (build 8931+). If you are running on a previous version, refer to this [technote](https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html).-->
 
 ## 关于隐私请求{#about-privacy-requests}
 
