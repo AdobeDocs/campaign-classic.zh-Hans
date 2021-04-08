@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1107'
 ht-degree: 8%
 
 ---
@@ -117,7 +117,6 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧版In
 
 * 金标11。 [了解详情](../rn/using/gold-standard.md)
 * 活动 21.1.1版。 [了解详情](../rn/using/latest-release.md)
-* 活动 20.3.3版。 [了解详情](../rn/using/release--20-3.md)
 * 活动 20.2.5版。 [了解详情](../rn/using/release--20-2.md)
 * 活动 19.1.8版。 [了解详情](../rn/using/release--19-1.md)
 
@@ -135,7 +134,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧版In
 
 ### 基于HTTP/2的APNs提供程序API
 
-自2021年3月31日&#x200B;****&#x200B;起，Apple推送通知服务(APNs)将不再支持旧版二进制协议。 [阅读更多](https://developer.apple.com/news/?id=c88acm2b)。
+自2021年3月31日&#x200B;**以来，Apple推送通知服务(APNs)不再支持旧版二进制协议。**[阅读更多](https://developer.apple.com/news/?id=c88acm2b)。
 
 **您是否受影响？**
 
@@ -151,7 +150,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧版In
 
 ### APNs根证书更新
 
-2021年3月29日，Apple推送通知服务(APNs)基础架构更新将影响Adobe Campaign Classic iOS渠道。 操作系统配置更改为&#x200B;**mandatory**&#x200B;以避免iOS推送渠道中断。
+2021年3月29日，Apple推送通知服务(APNs)基础架构更新影响了Adobe Campaign Classic iOS渠道。 操作系统配置更改为&#x200B;**mandatory**&#x200B;以避免iOS推送渠道中断。
 
 了解有关APNs更改[的更多信息，请参阅本页](https://developer.apple.com/news/?id=7gx0a2lp)。
 
