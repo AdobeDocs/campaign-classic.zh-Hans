@@ -6,14 +6,14 @@ description: Web 服务调用
 audience: configuration
 content-type: reference
 topic-tags: api
+exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '939'
 ht-degree: 1%
 
 ---
-
 
 # Web 服务调用{#web-service-calls}
 
@@ -188,7 +188,7 @@ WSDL描述开始，通过定义用于形成消息的类型（与“端口”关�
 
 ## 连接{#connectivity}
 
-Adobe Campaign通过引入安全区（请参阅[本节](../../installation/using/security-zones.md)中的&#x200B;**定义安全区**&#x200B;一章）以及会话管理设置，提高了身份验证机制的安全性。
+Adobe Campaign通过引入[安全区域](../../installation/using/security-zones.md)和会话管理设置提高了身份验证机制的安全性。
 
 有两种可用的身份验证模式：
 
