@@ -6,14 +6,14 @@ description: 了解如何使用Campaign Classic数据模型
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
+exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 6768e9ac518ab0c5642241d1fd2086de5b1e6892
 workflow-type: tm+mt
 source-wordcount: '4010'
 ht-degree: 1%
 
 ---
-
 
 # 数据模型最佳实践{#data-model-best-practices}
 
@@ -104,7 +104,7 @@ Adobe Campaign资源具有三个标识符，并且可以添加附加标识符。
 
 下表说明了这些标识符及其用途。
 
-| 标识符 | 说明 | 最佳做法 |
+| 标识符 | 说明 | 最佳实践 |
 |--- |--- |--- |
 | ID | <ul><li>id是Adobe Campaign表的物理主键。 对于现成表，它是从序列中生成的32位数</li><li>此标识符通常对特定Adobe Campaign实例唯一。 </li><li>自动生成的ID可在模式定义中显示。 搜索&#x200B;*autopk=&quot;true&quot;*&#x200B;属性。</li></ul> | <ul><li>自动生成的标识符不应用作工作流或包定义中的引用。</li><li>不应假设id将始终为递增数。</li><li>现成表中的id是32位数，不应更改此类型。 此编号取自同名部分中所涵盖的“序列”。</li></ul> |
 | 名称（或内部名称） | <ul><li>此信息是表中记录的唯一标识符。 此值可以手动更新，通常使用生成的名称。</li><li>此标识符在部署到其他Adobe Campaign实例时会保留其值，它不应为空。</li></ul> | <ul><li>如果要将对象从Adobe Campaign部署到另一个环境，请重命名由生成的记录名称。</li><li>当对象具有命名空间属性(例如&#x200B;*模式*)时，将在所有创建的自定义对象中利用此常用命名空间。 不应使用某些保留命名空间:*nms*、*xtk*。</li><li>当对象没有任何命名空间(例如&#x200B;*workflow*&#x200B;或&#x200B;*投放*)时，将添加此命名空间概念作为内部名称对象的前缀：*namespaceMyObjectName*。</li><li>请勿使用空格&quot; &quot;、半列&quot;:&quot;或连字符&quot;-&quot;等特殊字符。 所有这些字符将替换为下划线&quot;_&quot;（允许的字符）。 例如，“abc-def”和“abc:def”将存储为“abc_def”并互相覆盖。</li></ul> |
