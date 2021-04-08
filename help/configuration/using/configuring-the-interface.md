@@ -6,14 +6,14 @@ description: 配置接口
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
+exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
 translation-type: tm+mt
-source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
 
 ---
-
 
 # 配置接口{#configuring-the-interface}
 
@@ -70,7 +70,7 @@ Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数�
 
    >[!NOTE]
    >
-   >有关&#x200B;**navtree**&#x200B;类型文件的详细信息，请参阅[此页面](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy)。
+   >有关&#x200B;**navtree**&#x200B;类型文件的详细信息，请参阅[此页面](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)。
 
    在当前示例中，**navtree**&#x200B;文件必须基于&#x200B;**cus:individual**&#x200B;模式，因此具有以下格式：
 
@@ -91,4 +91,3 @@ Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数�
    ```
 
 1. 保存创建。
-
