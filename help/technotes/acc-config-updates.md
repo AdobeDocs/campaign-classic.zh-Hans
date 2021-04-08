@@ -5,14 +5,14 @@ title: Technote
 description: Technote
 hide: true
 hidefromtoc: true
+exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: bdd746120f2162cf48eeb9d519513656bd4e75aa
+source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
-
 
 # Adobe Campaign配置更新 — 2021年3月{#acc-config-updates}
 
@@ -26,7 +26,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->有关这些更改的任何问题，请联系[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>有关这些更改的任何问题，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 
 ## 安全更新{#acc-security-updates}
@@ -118,7 +118,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧版In
 * 金标11。 [了解详情](../rn/using/gold-standard.md)
 * 活动 21.1.1版。 [了解详情](../rn/using/latest-release.md)
 * 活动 20.3.3版。 [了解详情](../rn/using/release--20-3.md)
-* 活动 20.2.4版。 [了解详情](../rn/using/release--20-2.md)
+* 活动 20.2.5版。 [了解详情](../rn/using/release--20-2.md)
 * 活动 19.1.8版。 [了解详情](../rn/using/release--19-1.md)
 
 了解如何在本节](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本[。
@@ -147,7 +147,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧版In
 
 作为托管客户，如果您已升级到新版本，Adobe已将您的实例更新到基于HTTP/2的API。
 
-作为内部部署/托管客户，您需要更新配置。 [了解如何迁移到HTTP/2](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)
+作为内部部署/混合客户，您需要更新配置。 [了解如何迁移到HTTP/2](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)
 
 ### APNs根证书更新
 
@@ -170,6 +170,6 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧版In
 ## 有用的链接
 
 * [升级您的环境](../production/using/build-upgrade.md)
-* [构建升级常见问题解答](../platform/using/faq-build-upgrade.md)
-* [下载Campaign Classic构建](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [内部版本升级常见问题解答](../platform/using/faq-build-upgrade.md)
+* [下载Campaign Classic构建](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)
 * [使新客户端控制台可供用户使用](../installation/using/client-console-availability-for-windows.md)
