@@ -4,16 +4,16 @@ product: campaign
 title: 关于用户档案
 description: 关于用户档案
 feature: 用户档案、受众
-role: 业务从业者，数据架构师
-level: 初学者
+role: Business Practitioner, Data Architect
+level: Beginner
+exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 55%
+source-wordcount: '994'
+ht-degree: 57%
 
 ---
-
 
 # 开始使用用户档案{#about-profiles}
 
@@ -79,11 +79,11 @@ ht-degree: 55%
 
 ![](assets/d_ncs_user_interface01.png)
 
-[此部分](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)中显示Adobe Campaign浏览器的常规布局。
+此页面](../../platform/using/adobe-campaign-explorer.md)中显示Adobe Campaign浏览器的常规布局。[
 
 >[!NOTE]
 >
->也可以单击 **[!UICONTROL Profiles and targets > Recipients]** 链接，从 Adobe Campaign 树状结构中显示该列表的高级视图。可根据您的需求配置列表的显示。您可以添加或删除列、定义列顺序、对数据排序等。 [本节](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)介绍了列表显示配置。
+>也可以单击 **[!UICONTROL Profiles and targets > Recipients]** 链接，从 Adobe Campaign 树状结构中显示该列表的高级视图。可根据您的需求配置列表的显示。您可以添加或删除列、定义列顺序、对数据排序等。 列表显示配置在[此页](../../platform/using/adobe-campaign-ui-lists.md)中有介绍。
 >
 >您也可以定义收件人视图。有关此功能的详细信息，请参阅[本节](../../platform/using/access-management-folders.md)。
 
@@ -97,7 +97,7 @@ ht-degree: 55%
 
 >[!NOTE]
 >
->控制面板可供所有管理员用户访问。 [此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
+>所有管理员用户都可访问控制面板。[此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
 >
 >请注意，您的实例必须托管在AWS上，并使用最新的[Gold Standard](../../rn/using/gs-overview.md)版本或最新的[ GA版本(21.1)](../../rn/using/latest-release.md)进行升级。 了解如何在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本。 要检查您的实例是否托管在AWS上，请按照[本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详细介绍的步骤操作。
 
