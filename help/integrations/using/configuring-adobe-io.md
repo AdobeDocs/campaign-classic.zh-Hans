@@ -8,14 +8,14 @@ content-type: reference
 index: y
 internal: n
 snippet: y
+exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: f3ca92325f70cb3b9cca1ec5f6b7ddb5a02f9159
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '583'
 ht-degree: 4%
 
 ---
-
 
 # 为 Adobe Experience Cloud 触发器配置 Adobe I/O {#configuring-adobe-io}
 
@@ -74,9 +74,9 @@ ht-degree: 4%
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. 选择任何现有的&#x200B;**[!UICONTROL Product profile]**，或根据需要创建新的。 然后，单击&#x200B;**[!UICONTROL Save configured API]**。
+1. 选择任何现有的&#x200B;**[!UICONTROL Product profile]**，或根据需要创建新的。 此&#x200B;**[!UICONTROL Product profile]**&#x200B;不需要权限。 有关[!DNL Analytics] **[!UICONTROL Product Profiles]**&#x200B;的详细信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console)。
 
-   有关[!DNL Analytics] **[!UICONTROL Product Profiles]**&#x200B;的详细信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console)。
+   然后，单击&#x200B;**[!UICONTROL Save configured API]**。
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
