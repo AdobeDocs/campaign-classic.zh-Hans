@@ -4,24 +4,22 @@ product: campaign
 title: 版本 20.2
 description: 版本 20.2
 feature: 概述
-role: 商业从业者
-level: 初学者
+role: Business Practitioner
+level: Beginner
+exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: a25f9464a762defa5d9a3b45bb60a387c65b7c97
+source-git-commit: 65662a49aefdd6b5f85b39677908696f093779e8
 workflow-type: tm+mt
-source-wordcount: '2833'
-ht-degree: 84%
+source-wordcount: '2830'
+ht-degree: 88%
 
 ---
 
-
 # 版本 20.2{#release-20-2}
-
-![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月版**，其中使用 CNAME 进行域配置并新增数据库监视功能。[了解详情](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/green_2.png) 20.2.5 版 - 内部版本 9188 {#release-20-2-5-build-9188}
 
-_2020年3月31日_
+_2021 年 3 月 31 日_
 
 **改进**
 
@@ -36,17 +34,17 @@ _2020年3月31日_
 * 修复了Tomcat 8.5发送无效答案导致事务消息日志中出现错误的问题。 (NEO-30858)
 * 修复了导致外部线程管理中内存损坏并影响性能的回归问题。
 * 修复了在使用自定义目标映射时可能导致付费工作流失败的问题。 自定义模式的主键存储在“sourceId”列中，该列仅允许整数值。 它现在允许整数和字符串值。 (NEO-25914, NEO-28146)
-* 修复了阻止使用控制台某些组件(如投放中的日期选择器和图像管理)的回归问题。 (NEO-31453)
+* 修复了导致无法使用某些控制台组件（如投放中的日期选择器和图像管理）的回退问题。(NEO-31453)
 
 ## ![](assets/do-not-localize/red_2.png) 20.2.4 版 - 内部版本 9187 {#release-20-2-4-build-9187}
 
-_2020年12月22日_
+_2020 年 12 月 22 日_
 
 >[!CAUTION]
 >
-> * 此版本附带新的连接协议：如果您通过Adobe Identity Service(IMS)连接到活动，则活动服务器和客户端控制台都必须进行升级，才能在2021年6月30日&#x200B;**之后连接到活动**。
+> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 具有活动的旧式身份验证模式将于2021年11月30日&#x200B;****&#x200B;停用。
+> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign 的旧式 oAuth 身份验证模式将于 **2021 年 11 月 30 日**&#x200B;停用。
 
 
 **改进**
@@ -63,6 +61,8 @@ _2020年12月22日_
 * 修复了POSIX线程管理中在营销实例上生成大核心转储文件的问题。 (NEO-28117, NEO-29281)
 * 修复了在准备投放或重复投放预览时可能导致Web进程崩溃的问题。 (NEO-27790, NEO-27517)
 * 修复了由非管理员操作员触发时导致投放或验证发送失败的问题。 (NEO-28597)
+
+![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月版**，其中使用 CNAME 进行域配置并新增数据库监视功能。[了解详情](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/red_2.png) 版本 20.2.3 - 版本 9182 {#release-20-2-3-build-9182}
 
