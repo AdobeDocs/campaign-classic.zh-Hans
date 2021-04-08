@@ -6,20 +6,30 @@ description: 了解如何配置安全区域
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 830ec0ed80fdc6e27a8cc782b0e4b79abf033450
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
 
 
-# 定义安全区域{#defining-security-zones}
+# 定义安全区域 {#defining-security-zones}
 
 每个操作员需要链接到一个区域才能登录到实例，并且操作员IP必须包含在安全区域中定义的地址或地址集中。 安全区配置在Adobe Campaign服务器的配置文件中执行。
 
-操作符从控制台（**[!UICONTROL Administration > Access management > Operators]**&#x200B;节点）中的用户档案链接到安全区域。 了解如何将区域链接到[本节](#linking-a-security-zone-to-an-operator)中的活动运算符。
+操作符从控制台中的用户档案链接到安全区，可从&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;节点访问。 [了解详情](#linking-a-security-zone-to-an-operator)。
+
+>[!NOTE]
+>
+>此过程仅限于&#x200B;**内部部署**&#x200B;部署。
+>
+>作为&#x200B;**托管的**&#x200B;客户，如果您可以访问[活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)，则可以使用安全区自助服务接口。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
+>
+>其他&#x200B;**混合/托管**&#x200B;客户需要联系Adobe为其实例设置安全区。
+
 
 ## 创建安全区域{#creating-security-zones}
 
