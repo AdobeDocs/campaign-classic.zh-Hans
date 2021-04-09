@@ -6,34 +6,34 @@ description: 活动 19.2发行说明
 feature: null
 role: null
 level: null
+exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 11%
+ht-degree: 18%
 
 ---
-
 
 # 19.2 版{#release-19-2}
 
 ## ![](assets/do-not-localize/limited_2.png) 19.2.4 版 - 内部版本 9082 {#release-19-2-4-build-9082}
 
-_2021年3月22日_
+_2021 年 3 月 22 日_
 
-* 修复了阻止使用控制台某些组件(如投放中的日期选择器和图像管理)的回归问题。 (NEO-31453, NEO-31454)
+* 修复了导致无法使用某些控制台组件（如投放中的日期选择器和图像管理）的回退问题。(NEO-31453, NEO-31454)
 
-**仅Console升级是强制的。不需要服务器升级。**
+**必须执行仅控制台升级。无需升级服务器。**
 
 >[!NOTE]
 >
-> 连接到[Adobe软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)以下载新版本。 了解如何在此页面](../../installation/using/client-console-availability-for-windows.md)中向所有最终用户[建议控制台更新。
+> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
 
-_2020年12月23日_
+_2020 年 12 月 23 日_
 
 >[!CAUTION]
 >
-> * 此版本附带新的连接协议：如果您通过Adobe Identity Service(IMS)连接到活动，则活动服务器和客户端控制台都必须进行升级，才能在2021年6月30日&#x200B;**之后连接到活动**。
+> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。
    >
    > 
 * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
@@ -54,7 +54,7 @@ _2020年2月7日_
 
 ## ![](assets/do-not-localize/red_2.png) 19.2 版 - 内部版本 9080 {#release-19-2-build-9080}
 
-_2019年12月2日_
+_2019 年 12 月 2 日_
 
 **新增功能**
 
@@ -138,7 +138,7 @@ _2019年12月2日_
    * 对PostgreSQL增强了&#x200B;**XtkCleanup_NoStats**&#x200B;选项，以更好地控制存储库清理工作流的优化步骤的行为。 [阅读更多](../../production/using/database-cleanup-workflow.md#statistics-update)
 * 已向&#x200B;**logon()** API添加帐户锁定机制。 它可防止在指定时间范围内连续多次登录尝试失败后再进行任何登录尝试。
 * 投放属性中新增的&#x200B;**最大个性化运行时间**&#x200B;选项允许您为个性化运行时间定义超时期，以防止个性化阶段运行过长。 [阅读更多](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* 已添加&#x200B;**ftp协议**&#x200B;选项，以允许您对SFTP连接使用代理配置。 [阅读更多](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
+* 已添加&#x200B;**ftp协议**&#x200B;选项，以允许您对SFTP连接使用代理配置。 [阅读更多](../../installation/using/file-res-management.md)
 * 新增支持对SFTP外部服务器的代理访问，以实现内部部署环境。
 * 已添加特定的护栏，以防止安装与活动实例不兼容的包。 [阅读更多](../../installation/using/installing-campaign-standard-packages.md)
 
@@ -152,7 +152,7 @@ _已弃用的系统_
 
 _活动 Mobile SDK_
 
-iOS SDK的内部版本1.0.26现已推出。 在此新版本中，我们添加了iOS 13支持。 此新版本现在支持iOS 13推送通知的通知优先级和新的注册令牌管理过程。 如果您在旧版SDK上运行应用程序，则需要使用新的SDK重新编译应用程序。 要获取SDK，请联系[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+iOS SDK的内部版本1.0.26现已推出。 在此新版本中，我们添加了iOS 13支持。 此新版本现在支持iOS 13推送通知的通知优先级和新的注册令牌管理过程。 如果您在旧版SDK上运行应用程序，则需要使用新的SDK重新编译应用程序。 要获取SDK，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 **修补程序**
 
@@ -185,5 +185,3 @@ iOS SDK的内部版本1.0.26现已推出。 在此新版本中，我们添加了
 * 修复了访问预测模型时的问题。 (NEO-19713)
 * 修复了影响&#x200B;**Split**&#x200B;工作流活动与Hadoop联合数据访问库的随机采样的问题。 (NEO-16636)
 * 修复了Oracle上的回归，该回归导致某些函数在放置后被视为无效。 (NEO-12759)
-
-
