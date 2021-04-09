@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 translation-type: tm+mt
-source-git-commit: e165af411d2580d69694f1730116cb198418bfe2
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -201,7 +201,7 @@ Adobe Campaign的总体配置在安装目录&#x200B;**conf**&#x200B;目录的&#x
   </tr> 
   <tr> 
    <td> uploadAllowlist<br /> </td> 
-   <td> 授权文件以“，”分隔。 该字符串必须是有效的常规java表达式。 请参阅<a href="../../installation/using/configuring-campaign-server.md#limiting-uploadable-files" target="_blank">限制可上载文件</a>。<br /> </td> 
+   <td> 授权文件以“，”分隔。 该字符串必须是有效的常规java表达式。 请参阅<a href="file-res-management.md" target="_blank">限制可上载文件</a>。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '.+' <br /> </td> 
   </tr> 
@@ -425,7 +425,7 @@ Adobe Campaign的总体配置在安装目录&#x200B;**conf**&#x200B;目录的&#x
 
 以下是&#x200B;**dataStore > virtualDir**&#x200B;节点的不同参数。 这是虚拟目录到实际目录映射的配置。
 
-有关其他信息，请参阅[管理公共资源](../../installation/using/configuring-campaign-server.md#managing-public-resources)。
+有关其他信息，请参阅[管理公共资源](file-res-management.md)。
 
 <table> 
  <thead> 
@@ -867,7 +867,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 以下是&#x200B;**proxyConfig**&#x200B;节点的不同参数。 这是代理参数的配置。
 
-有关其他信息，请参阅[代理连接配置](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)。
+有关其他信息，请参阅[代理连接配置](file-res-management.md)。
 
 <table> 
  <thead> 
@@ -904,7 +904,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 在&#x200B;**proxyConfig > HTTP Proxy / Secure proxy**&#x200B;节点中，配置以下参数。
 
-有关其他信息，请参阅[代理连接配置](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)。
+有关其他信息，请参阅[代理连接配置](file-res-management.md)。
 
 <table> 
  <thead> 
