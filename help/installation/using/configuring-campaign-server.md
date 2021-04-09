@@ -8,73 +8,153 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 translation-type: tm+mt
-source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '2810'
-ht-degree: 6%
+source-wordcount: '2575'
+ht-degree: 1%
 
 ---
 
-# 配置 Campaign 服务器{#configuring-campaign-server}
+# 开始使用活动服务器配置{#gs-campaign-server-config}
 
-以下部分详细介绍了可以执行以匹配您的需求和您的环境特性的服务器端配置。
+本章详细介绍了可以执行以匹配您的需求和您的环境特性的服务器端配置。
 
-这些配置必须由管理员执行，并且仅适用于&#x200B;**内部部署**&#x200B;托管模型。
+## 限制
 
-对于&#x200B;**托管**&#x200B;部署，只能通过Adobe配置服务器端设置。 但是，可以在控制面板中设置某些设置(例如，IP管允许列表理或URL权限)。
+这些过程仅限于&#x200B;**内部部署**/**混合**&#x200B;部署，并需要管理权限。
 
->[!NOTE]
->
->所有管理员用户都可访问控制面板。[此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
->
->请注意，您的实例必须托管在AWS上，并使用最新的[Gold Standard](../../rn/using/gs-overview.md)版本或最新的[ GA版本(21.1)](../../rn/using/latest-release.md)进行升级。 了解如何在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本。 要检查您的实例是否托管在AWS上，请按照[本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详细介绍的步骤操作。
+对于&#x200B;**托管**&#x200B;部署，只能通过Adobe配置服务器端设置。 但是，可以在[活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)中设置某些设置，如IP管允许列表理或URL权限。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)。
 
 有关详细信息，请参阅以下部分：
 
 * [控制面板文档](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
 * [托管模型](../../installation/using/hosting-models.md)
 * [Campaign Classic本地和托管功能矩阵](../../installation/using/capability-matrix.md)
-* [混合和托管模型配置步骤](../../installation/using/hosting-models.md)
+
+## 配置文件
 
 Campaign Classic配置文件存储在Adobe Campaign安装文件夹的&#x200B;**conf**&#x200B;文件夹中。 配置分布在两个文件上：
 
 * **serverConf.xml**:所有实例的常规配置。此文件结合了Adobe Campaign服务器的技术参数：这些属性由所有实例共享。 以下对这些参数的描述详尽。 此[节](../../installation/using/the-server-configuration-file.md)中列出的不同节点和参数。
 * **config-`<instance>`.xml** (其中 **** instance是实例的名称):实例的特定配置。如果您在多个实例之间共享服务器，请在其相关文件中输入每个实例的特定参数。
 
-## 配置Tomcat {#configuring-tomcat}
+[活动服务器配置](../../installation/using/configuring-campaign-server.md)中详细介绍了一般服务器配置准则。
 
-### Tomcat {#default-port-for-tomcat}的默认端口
 
-当Tomcat服务器的8080侦听端口已忙于配置所需的其他应用程序时，您需要将8080端口替换为免费端口（例如8090）。 要更改它，请编辑保存在Adobe Campaign安装文件夹&#x200B;**/tomcat-8/conf**&#x200B;目录中的&#x200B;**server.xml**&#x200B;文件。
+## 配置范围
 
-然后修改JSP中继页的端口。 为此，请更改保存在Adobe Campaign安装目录&#x200B;**/conf**&#x200B;目录中的&#x200B;**serverConf.xml**&#x200B;文件。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
+根据您的需要和配置，配置或调整活动服务器。 您可以：
+
+* 保护[内部标识符](#internal-identifier)
+* 启用[活动进程](#enabling-processes)
+* 配置[URL权限](url-permissions.md)
+* 定义[安全区域](security-zones.md)
+* 配置[Tomcat设置](configure-tomcat.md)
+* 自定义[投放参数](#delivery-settings)
+* 定义[动态页面安全性和中继](#dynamic-page-security-and-relays)
+* 限制[允许的外部命令](#restricting-authorized-external-commands)的列表
+* 设置[冗余跟踪](#redundant-tracking)
+* 管理[高可用性和工作流关联](#high-availability-workflows-and-affinities)
+* 配置文件管理 — [了解更多](#file-and-resmanagement)
+   * 限制上载文件格式
+   * 启用对公共资源的访问
+   * 配置代理连接
+* [自动进程重启](#automatic-process-restart)
+
+
+## 内部标识符{#internal-identifier}
+
+**internal**&#x200B;标识符是用于安装、管理和维护目的的技术登录名。 此登录与实例不关联。
+
+使用此登录名连接的操作员将拥有所有实例的所有权限。 在安装新的情况下，此登录名将没有密码。 必须手动定义此密码。
+
+使用以下命令：
 
 ```
-<serverConf>
-   ...
-   <web controlPort="8005" httpPort="8090"...
-   <url ... targetUrl="http://localhost:8090"...
+nlserver config -internalpassword
 ```
 
-### 在Tomcat {#mapping-a-folder-in-tomcat}中映射文件夹
-
-要定义客户特定设置，可在&#x200B;**/tomcat-8/conf**&#x200B;文件夹中创建&#x200B;**user_上下文s.xml**&#x200B;文件，该文件中还包含&#x200B;**上下文.xml**&#x200B;文件。
-
-此文件将包含以下类型的信息：
+随后将显示以下信息。 输入并确认密码：
 
 ```
- <Context path='/foo' docBase='../customers/foo'   crossContext='true' debug='0' reloadable='true' trusted='false'/>
+17:33:57 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
+Enter the current password.
+Password:
+Enter the new password.
+Password: XXXX
+Confirmation: XXXX
+17:34:02 >   Password successfully changed for account 'internal' (authentication mode 'nl')
 ```
 
-如有必要，可以在服务器端重现此操作。
+## 启用进程{#enabling-processes}
 
-## 个性化投放参数{#personalizing-delivery-parameters}
+服务器上的Adobe Campaign进程通过&#x200B;**config-default.xml**&#x200B;和&#x200B;**`config-<instance>.xml`**&#x200B;文件启用（并禁用）。
 
-投放参数在&#x200B;**serverConf.xml**&#x200B;配置文件中定义。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
+要将更改应用到这些文件，如果Adobe Campaign服务已启动，则必须运行&#x200B;**nlserver config -reload**&#x200B;命令。
 
-[活动服务器配置](../../installation/using/campaign-server-configuration.md)中详细介绍了常规服务器配置和命令。
+有两种进程：多实例和单实例。
 
-您还可以根据您的需要和设置执行以下配置。
+* **多实例**:为所有实例启动一个进程。**web**、**syslogd**&#x200B;和&#x200B;**trackinglogd**&#x200B;进程就是这种情况。
+
+   可以从&#x200B;**config-default.xml**&#x200B;文件配置Enablement。
+
+   声明Adobe Campaign服务器访问客户端控制台和重定向（跟踪）：
+
+   ```
+   vi nl6/conf/config-default.xml
+   <web args="-tomcat" autoStart="true"/>  
+   <!-- to start if the machine is also a redirection server -->  
+   <trackinglogd autoStart="true"/>
+   ```
+
+   在此示例中，使用Linux中的&#x200B;**vi**&#x200B;命令编辑文件。 可以使用任何&#x200B;**.txt**&#x200B;或&#x200B;**.xml**&#x200B;编辑器进行编辑。
+
+* **单实例**:每个实例(模块： **mta**、wfserver **、** inMail **、** **** sm **和** stat )。
+
+   可以使用实例的配置文件配置启用：
+
+   ```
+   config-<instance>.xml
+   ```
+
+   声明服务器用于投放、执行工作流实例和恢复弹回邮件：
+
+   ```
+   <mta autoStart="true" statServerAddress="localhost"/>
+   <wfserver autoStart="true"/>  
+   <inMail autoStart="true"/>
+   <stat autoStart="true"/>
+   ```
+
+**活动存储**
+
+您可以配置存储数据（日志、下载、重定向等）的Adobe Campaign目录（**var**&#x200B;目录）。 为此，请使用&#x200B;**XTK_VAR_DIR**&#x200B;系统变量：
+
+* 在Windows中，在&#x200B;**XTK_VAR_DIR**&#x200B;系统变量中指示以下值
+
+   ```
+   D:\log\AdobeCampaign
+   ```
+
+* 在Linux中，转到&#x200B;**customer.sh**&#x200B;文件并指示：**导出XTK_VAR_DIR=/app/log/AdobeCampaign**。
+
+   有关详细信息，请参阅[个性化参数](../../installation/using/installing-packages-with-linux.md#personalizing-parameters)。
+
+## 配置投放设置{#delivery-settings}
+
+必须在&#x200B;**serverConf.xml**&#x200B;文件夹中配置投放参数。
+
+* **DNS配置**:指定投放域和DNS服务器的IP地址（或主机），这些DNS服务器用于响应MTA模块从此开始创建的MX类型DNS **`<dnsconfig>`** 查询。
+
+   >[!NOTE]
+   >
+   >**nameServers**&#x200B;参数对于在Windows中进行安装是必不可少的。 对于Linux中的安装，它必须留空。
+
+   ```
+   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
+   ```
+
+您还可以根据您的需要和设置执行以下配置：配置[SMTP中继](#smtp-relay)，调整[MTA子进程](#mta-child-processes)的数量，[管理出站SMTP通信](#managing-outbound-smtp-traffic-with-affinities)。
 
 ### SMTP中继{#smtp-relay}
 
@@ -94,7 +174,7 @@ MTA模块充当SMTP广播（端口25）的本机邮件传输代理。
 
 ### MTA子进程{#mta-child-processes}
 
-可以根据服务器的CPU功率和可用网络资源控制子进程（默认为2）的数量，以优化广播性能。 此配置将在每台计算机的MTA配置的&#x200B;**`<master>`**&#x200B;部分中进行。
+可以根据服务器的CPU功率和可用网络资源控制子进程数（默认为2），以优化广播性能。 此配置将在每台计算机的MTA配置的&#x200B;**`<master>`**&#x200B;部分中进行。
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
@@ -106,7 +186,7 @@ MTA模块充当SMTP广播（端口25）的本机邮件传输代理。
 
 >[!IMPORTANT]
 >
->关联配置需要从一台服务器到另一台服务器一致。 我们建议您与Adobe联系以进行关联配置，因为应在运行MTA的所有应用程序服务器上复制配置更改。
+>关联配置需要从一台服务器到另一台服务器保持一致。 我们建议您与Adobe联系以进行关联配置，因为应在运行MTA的所有应用程序服务器上复制配置更改。
 
 您可以通过具有IP地址的关联改善出站SMTP通信。
 
@@ -141,52 +221,13 @@ MTA模块充当SMTP广播（端口25）的本机邮件传输代理。
    >
    >您还可以引用[投放服务器配置](../../installation/using/email-deliverability.md#delivery-server-configuration)。
 
-## URL 权限 {#url-permissions}
 
-Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的 URL 默认列表是有限的。这些 URL 允许实例正常运行。
-
-默认情况下，实例不允许连接到外部 URL。但是，可以向授权URL的列表添加一些外部URL，以便您的实例可以连接到它们。 这允许您将 Campaign 实例连接到外部系统，例如 SFTP 服务器或网站，以启用文件和/或数据传输。
-
-添加 URL 后，该 URL 将在实例的配置文件 (serverConf.xml) 中引用。
-
-它们取决于您的托管模型：
-
-* **** Hybridor **内部部署**:将允许的URL添加 **到serverConf.xml文件中**。详细信息请参阅以下部分。
-* **托管**:添加允许通过控制面板的 **URL**。有关详细信息，请参阅[专用文档](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)。
-
-   >[!NOTE]
-   >
-   >所有管理员用户都可访问控制面板。[此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
-   >
-   >请注意，您的实例必须托管在AWS上，并使用最新的[Gold Standard](../../rn/using/gs-overview.md)版本进行升级。 了解如何在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本。 要检查您的实例是否托管在AWS上，请按照[本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详细介绍的步骤操作。
-
-对于&#x200B;**Hybrid**&#x200B;和&#x200B;**On-premise**&#x200B;托管模型，管理员需要在&#x200B;**serverConf.xml**&#x200B;文件中引用新的&#x200B;**urlPermission**。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
-
-存在三种连接保护模式：
-
-* **阻止**:将阻止所有不属于该允许列表程序的URL，并显示错误消息。这是配置升级后的默认模式。
-* **允许**:允许所有不属于该允许列表的URL。
-* **警告**:允许所有不属于该程序允许列表的URL，但JS解释程序会发出警告，以便管理员可以收集这些URL。此模式添加JST-310027警告消息。
-
-```
-<urlPermission action="warn" debugTrace="true">
-  <url dnsSuffix="abc.company1.com" urlRegEx=".*" />
-  <url dnsSuffix="def.partnerA_company1.com" urlRegEx=".*" />
-  <url dnsSuffix="xyz.partnerB_company1.com" urlRegEx=".*" />
-</urlPermission>
-```
-
->[!IMPORTANT]
->
->默认情况下，新客户的客户端使用&#x200B;**阻止模式**。 如果需要允许新URL，则应联系管理员以将其添加到允许列表。
->
->迁移中的现有客户可以使用&#x200B;**警告模式**&#x200B;一段时间。 同时，在对URL授权之前，他们需要分析出站流量。 定义授权URL的列表后，应联系其管理员，将URL添加允许列表到并激活&#x200B;**阻止模式**。
 
 ## 动态页安全和中继{#dynamic-page-security-and-relays}
 
-默认情况下，所有动态页都自动与启动Web模块的计算机的&#x200B;**local** Tomcat服务器相关。 此配置在&#x200B;**ServerConf.xml**&#x200B;文件的查询中继配置的&#x200B;**`<url>`**&#x200B;部分中输入。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
+默认情况下，所有动态页都自动与启动Web模块的计算机的&#x200B;**local** Tomcat服务器相关。 此配置在&#x200B;**ServerConf.xml**&#x200B;文件的查询中继配置的&#x200B;**`<url>`**&#x200B;部分中输入。
 
-在&#x200B;**remote**&#x200B;服务器上中继动态页的执行；如果计算机上未激活Web模块。 为此，必须将&#x200B;**localhost**&#x200B;替换为JSP和JSSP、Web 应用程序、报表和字符串的远程计算机名称。
+您可以在&#x200B;**remote**&#x200B;服务器上中继动态页的执行；如果计算机上未激活Web模块。 为此，必须将&#x200B;**localhost**&#x200B;替换为JSP和JSSP、Web 应用程序、报表和字符串的远程计算机名称。
 
 有关各种可用参数的详细信息，请参阅&#x200B;**serverConf.xml**&#x200B;配置文件。
 
@@ -234,11 +275,24 @@ Adobe Campaign使用以下JSP页：
 >
 >值应根据您的配置和网络限制进行调整，尤其是在为您的安装开发了特定配置时。
 
-## 限制已授权的外部命令{#restricting-authorized-external-commands}
+### 管理HTTP头{#managing-http-headers}
 
->[!NOTE]
->
->仅内部部署安装需要以下配置。
+默认情况下，不会中继所有HTTP头。 您可以在中继发送的回复中添加特定标头。 操作步骤：
+
+1. 转到&#x200B;**serverConf.xml**&#x200B;文件。
+1. 在&#x200B;**`<relay>`**&#x200B;节点中，转到中继HTTP头的列表。
+1. 添加具有以下属性的&#x200B;**`<responseheader>`**&#x200B;元素：
+
+   * **name**:标题名称
+   * **值**:值名称。
+
+   例如：
+
+   ```
+   <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
+   ```
+
+## 限制已授权的外部命令{#restricting-authorized-external-commands}
 
 从内部版本8780起，技术管理员可以限制列表可在Adobe Campaign中使用的授权外部命令。
 
@@ -283,22 +337,6 @@ sh
 >
 >您不应使用自定义sudo。 系统上需要安装标准sudo。
 
-## 管理HTTP头{#managing-http-headers}
-
-默认情况下，不会中继所有HTTP头。 您可以在中继发送的回复中添加特定标头。 操作步骤：
-
-1. 转到&#x200B;**serverConf.xml**&#x200B;文件。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
-1. 在&#x200B;**`<relay>`**&#x200B;节点中，转到中继HTTP头的列表。
-1. 添加具有以下属性的&#x200B;**`<responseheader>`**&#x200B;元素：
-
-   * **name**:标题名称
-   * **值**:值名称。
-
-   例如：
-
-   ```
-   <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
-   ```
 
 ## 冗余跟踪{#redundant-tracking}
 
@@ -308,7 +346,7 @@ sh
 >
 >使用标准或企业架构时，必须授权主应用程序服务器在每台计算机上上传跟踪信息。
 
-必须通过&#x200B;**serverConf.xml**&#x200B;文件在重定向配置中指定冗余服务器的URL。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
+必须通过&#x200B;**serverConf.xml**&#x200B;文件在重定向配置中指定冗余服务器的URL。
 
 **示例:**
 
@@ -317,105 +355,31 @@ sh
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-**enableIf**&#x200B;属性是可选的（默认为空），并且仅在结果为true时允许您启用连接；这样，您就可以在所有重定向服务器上获得相同的配置。
+**enableIf**&#x200B;属性是可选的（默认为空），并且仅在结果为true时允许您启用连接。 这样，您就可以在所有重定向服务器上获得相同的配置。
 
 要获取计算机的主机名，请运行以下命令：**hostname -s**。
 
-## 管理公共资源{#managing-public-resources}
+## 文件和资源管理{#file-and-resmanagement}
 
-公共资源显示在[管理公共资源](../../installation/using/deploying-an-instance.md#managing-public-resources)中。
+### 限制上载文件格式{#limiting-uploadable-files}
 
-它们存储在Adobe Campaign安装目录的&#x200B;**/var/res/instance**&#x200B;目录中。
-
-匹配的URL为：**http://server/res/instance**&#x200B;其中&#x200B;**instance**&#x200B;是跟踪实例的名称。
-
-可以通过向&#x200B;**conf-`<instance>`.xml**&#x200B;文件添加节点来指定另一个目录，以在服务器上配置存储。 这意味着添加以下行：
-
-```
-<serverconf>
-  <shared>
-    <dataStore hosts="media*" lang="fra">
-      <virtualDir name="images" path="/var/www/images"/>
-     <virtualDir name="publicFileRes" path="$(XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)/"/>
-    </dataStore>
-  </shared>
-</serverconf>
-```
-
-在这种情况下，部署向导窗口上半部分中提供的公共资源的新URL应指向此文件夹。
-
-## 高可用性工作流和关联{#high-availability-workflows-and-affinities}
-
-您可以配置多个工作流服务器(wfserver)，并将它们分发到两台或多台计算机上。 如果选择此类型的架构，请根据Adobe Campaign访问配置负载平衡器的连接模式。
-
-要从Web访问，请选择&#x200B;**负载平衡器**&#x200B;模式以限制连接时间。
-
-如果通过Adobe Campaign控制台访问，请选择&#x200B;**哈希**&#x200B;或&#x200B;**粘性ip**&#x200B;模式。 这样，您就可以保持富客户端与服务器之间的连接，并防止用户会话在导入或导出操作期间中断。
-
-您可以选择强制在特定计算机上执行工作流或工作流活动。 为此，您必须为相关工作流或活动定义一个或多个关联。
-
-1. 通过在&#x200B;**[!UICONTROL Affinity]**&#x200B;字段中输入工作流或活动的关联，创建这些。
-
-   您可以自由选择关联名称。 但是，请确保不使用空格或标点符号。 如果使用不同的服务器，请指定不同的名称。
-
-   ![](assets/s_ncs_install_server_wf_affinity01.png)
-
-   ![](assets/s_ncs_install_server_wf_affinity02.png)
-
-   下拉列表包含以前使用的关联。 它会随着时间的推移使用不同的输入值完成。
-
-1. 打开&#x200B;**nl6/conf/config-`<instance>.xml`**&#x200B;文件。
-1. 修改与&#x200B;**[!UICONTROL wfserver]**&#x200B;模块匹配的行，如下所示：
-
-   ```
-   <wfserver autoStart="true" affinity="XXX,"/>
-   ```
-
-   如果定义了多个关联，则必须用逗号分隔，不带任何空格：
-
-   ```
-   <wfserver autoStart="true" affinity="XXX,YYY,"/>
-   ```
-
-   执行未定义关联的工作流时，必须使用关联名称后面的逗号。
-
-   如果您希望仅执行定义了关联的工作流，请不要在关联的列表末尾添加逗号。 例如，修改行，如下所示：
-
-   ```
-   <wfserver autoStart="true" affinity="XXX"/>
-   ```
-
-## 自动进程重启{#automatic-process-restart}
-
-默认情况下，不同的Adobe Campaign进程每天在早上6点（服务器时间）自动重新启动。
-
-但是，您可以更改此配置。
-
-要执行此操作，请转至安装的&#x200B;**conf**&#x200B;存储库中的&#x200B;**serverConf.xml**&#x200B;文件。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
-
-在此文件中配置的每个进程都具有&#x200B;**processRestartTime**&#x200B;属性。 您可以修改此属性的值，以根据您的需要调整每个进程的重新启动时间。
-
->[!IMPORTANT]
->
->请勿删除此属性。 必须每天重新启动所有进程。
-
-## 限制可上载文件{#limiting-uploadable-files}
-
-新属性&#x200B;**uploadWhiteList**&#x200B;允许您限制可在Adobe Campaign服务器上上传的文件类型。
+使用&#x200B;**uploadWhiteList**&#x200B;属性可限制可在Adobe Campaign服务器上上载的文件类型。
 
 此属性在&#x200B;**serverConf.xml**&#x200B;文件的&#x200B;**dataStore**&#x200B;元素中可用。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
 
-此属性的默认值为&#x200B;**。+**，它允许您上传任何文件类型。
+此属性的默认值为&#x200B;**。+**&#x200B;并允许您上传任何文件类型。
 
-要限制可能的格式，必须用有效的java常规表达式替换属性值。 可以通过用逗号分隔多个值。
+要限制可能的格式，请用有效的java常规表达式替换属性值。 可以通过用逗号分隔多个值。
 
 例如：**uploadWhiteList=&quot;。*.png，.*.jpg&quot;**&#x200B;允许您在服务器上上传PNG和JPG格式。 不接受其他格式。
 
->[!IMPORTANT]
+>[!NOTE]
 >
 >在Internet Explorer中，完整的文件路径必须由常规表达式验证。
 
-## 代理连接配置{#proxy-connection-configuration}
+您还可以通过配置Web服务器来阻止上传重要文件。 [了解详情](web-server-configuration.md)
+
+### 代理连接配置{#proxy-connection-configuration}
 
 例如，可以使用&#x200B;**文件传输**&#x200B;工作流活动，将活动服务器通过代理连接到外部系统。 为此，您需要通过特定命令配置&#x200B;**serverConf.xml**&#x200B;文件的&#x200B;**proxyConfig**&#x200B;部分。 **serverConf.xml**&#x200B;中可用的所有参数均列在此[部分](../../installation/using/the-server-configuration-file.md)中。
 
@@ -484,3 +448,81 @@ FTP/FTPS连接在proxyFTP参数中定义：
 如果您有应通过代理的内部连接，请在override参数中添加这些连接。
 
 如果要临时禁用代理连接，请将enabled参数设置为“false”或“0”。
+
+### 管理公共资源{#managing-public-resources}
+
+要公开提供，链接到活动的电子邮件和公共资源中使用的图像必须存在于可从外部访问的服务器上。 然后，它们便可用于外部收件人或运算符。 [了解详情](../../installation/using/deploying-an-instance.md#managing-public-resources)。
+
+公共资源存储在Adobe Campaign安装目录的&#x200B;**/var/res/instance**&#x200B;目录中。
+
+匹配的URL为：**http://server/res/instance**&#x200B;其中&#x200B;**instance**&#x200B;是跟踪实例的名称。
+
+可以通过向&#x200B;**conf-`<instance>`.xml**&#x200B;文件添加节点来指定另一个目录，以在服务器上配置存储。 这意味着添加以下行：
+
+```
+<serverconf>
+  <shared>
+    <dataStore hosts="media*" lang="fra">
+      <virtualDir name="images" path="/var/www/images"/>
+     <virtualDir name="publicFileRes" path="$(XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)/"/>
+    </dataStore>
+  </shared>
+</serverconf>
+```
+
+在这种情况下，部署向导窗口上半部分中提供的公共资源的新URL应指向此文件夹。
+
+## 高可用性工作流和关联{#high-availability-workflows-and-affinities}
+
+您可以配置多个工作流服务器(wfserver)，并将它们分发到两台或多台计算机上。 如果选择此类型的架构，请根据Adobe Campaign访问配置负载平衡器的连接模式。
+
+要从Web访问，请选择&#x200B;**负载平衡器**&#x200B;模式以限制连接时间。
+
+如果通过Adobe Campaign控制台访问，请选择&#x200B;**哈希**&#x200B;或&#x200B;**粘性ip**&#x200B;模式。 这样，您就可以保持富客户端与服务器之间的连接，并防止用户会话在导入或导出操作期间中断。
+
+您可以选择强制在特定计算机上执行工作流或工作流活动。 为此，您必须为相关工作流或活动定义一个或多个关联。
+
+1. 通过在&#x200B;**[!UICONTROL Affinity]**&#x200B;字段中输入工作流或活动的关联，创建这些。
+
+   您可以选择任何关联名称，但请确保不使用空格或标点符号。 如果使用不同的服务器，请指定不同的名称。
+
+   ![](assets/s_ncs_install_server_wf_affinity01.png)
+
+   ![](assets/s_ncs_install_server_wf_affinity02.png)
+
+   下拉列表包含以前使用的关联。 它会随着时间的推移使用不同的输入值完成。
+
+1. 打开&#x200B;**nl6/conf/config-`<instance>.xml`**&#x200B;文件。
+1. 修改与&#x200B;**[!UICONTROL wfserver]**&#x200B;模块匹配的行，如下所示：
+
+   ```
+   <wfserver autoStart="true" affinity="XXX,"/>
+   ```
+
+   如果定义了多个关联，则必须用逗号分隔，不带任何空格：
+
+   ```
+   <wfserver autoStart="true" affinity="XXX,YYY,"/>
+   ```
+
+   执行未定义关联的工作流时，必须使用关联名称后面的逗号。
+
+   如果您希望仅执行定义了关联的工作流，请不要在关联的列表末尾添加逗号。 例如，修改行，如下所示：
+
+   ```
+   <wfserver autoStart="true" affinity="XXX"/>
+   ```
+
+## 自动重新启动{#automatic-process-restart}
+
+默认情况下，不同的Adobe Campaign进程每天在早上6点（服务器时间）自动重新启动。
+
+但是，您可以更改此配置。
+
+要执行此操作，请转至安装的&#x200B;**conf**&#x200B;存储库中的&#x200B;**serverConf.xml**&#x200B;文件。
+
+在此文件中配置的每个进程都具有&#x200B;**processRestartTime**&#x200B;属性。 您可以修改此属性的值，以根据您的需要调整每个进程的重新启动时间。
+
+>[!IMPORTANT]
+>
+>请勿删除此属性。 必须每天重新启动所有进程。
