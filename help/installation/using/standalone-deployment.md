@@ -6,14 +6,14 @@ description: 独立部署
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 1%
+source-wordcount: '1086'
+ht-degree: 3%
 
 ---
-
 
 # 独立部署{#standalone-deployment}
 
@@ -112,7 +112,7 @@ ht-degree: 1%
    nlserver config -internalpassword
    ```
 
-   有关详细信息，请参阅[内部标识符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 1. 使用DNS掩码创建&#x200B;**demo**&#x200B;实例以进行跟踪(在本例中为&#x200B;**tracking.活动.net**)并访问客户端控制台(在本例中为&#x200B;**console.活动.net**)。 有两种方法可以实现：
 
@@ -150,7 +150,7 @@ ht-degree: 1%
    </serverconf>
    ```
 
-   有关详细信息，请参阅[启用进程](../../installation/using/campaign-server-configuration.md#enabling-processes)。
+   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 1. 编辑&#x200B;**serverConf.xml**&#x200B;文件并指定投放域，然后指定MTA模块用来应答MX类型DNS查询的DNS服务器的IP（或主机）地址。
 
@@ -162,7 +162,7 @@ ht-degree: 1%
    >
    >**nameServers**&#x200B;参数仅在Windows中使用。
 
-   有关详细信息，请参阅[活动服务器配置](../../installation/using/campaign-server-configuration.md)。
+   有关详细信息，请参阅[活动服务器配置](../../installation/using/configuring-campaign-server.md)。
 
 1. 将客户端控制台设置项目（v7或&#x200B;**setup-client-6.XX**、v6.1的&#x200B;**setup-client-7.XX**、v6.1的&#x200B;**/datakit）复制到**/datakit/nl/eng/jsp **文件夹。******[了解详情](../../installation/using/client-console-availability-for-windows.md)。
 
@@ -213,7 +213,7 @@ ht-degree: 1%
 
 1. 开始Adobe Campaign客户端控制台（从上一个下载页或直接在服务器上启动Windows安装），将服务器连接URL设置为https://console.campaign.net并使用&#x200B;**internal**&#x200B;登录进行连接。
 
-   请参阅[创建实例并登录](../../installation/using/creating-an-instance-and-logging-on.md)和[内部标识符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+   请参阅[本页](../../installation/using/creating-an-instance-and-logging-on.md)和[本节](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
    首次登录时，数据库创建向导将显示：
 
@@ -244,4 +244,3 @@ ht-degree: 1%
    * 访问：为报表、Web 窗体和镜像页面提供两个URL。
 
       ![](assets/d_ncs_install_web_url.png)
-
