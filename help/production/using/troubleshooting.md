@@ -6,14 +6,14 @@ description: 发现与Adobe Campaign配置、监控、升级过程、数据处�
 audience: production
 content-type: reference
 topic-tags: troubleshooting
+exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
 translation-type: tm+mt
-source-git-commit: 0f2986f88f72c191262248029ec620fad538c218
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 19%
+ht-degree: 18%
 
 ---
-
 
 # 生产疑难解答{#troubleshooting}
 
@@ -65,4 +65,4 @@ ht-degree: 19%
 
 * [Linux 中的堆栈跟踪](../../production/using/stack-trace-in-linux.md)
 * [JSP 行为](../../production/using/jsp-behavior.md)
-* [查找 Tomcat 版本](../../production/using/locate-tomcat-version.md)
+* [找到Tomcat版本](../../production/using/locate-tomcat-version.md)
