@@ -6,14 +6,14 @@ description: 了解如何将活动集成到Web服务器(Linux)
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
+exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 5%
 
 ---
-
 
 # 集成到 Linux 版的 Web 服务器{#integration-into-a-web-server-for-linux}
 
@@ -23,7 +23,7 @@ Adobe Campaign包括Apache Tomcat，它通过HTTP（和SOAP）作为应用程序
 
 在这种情况下：
 
-* 默认监听端口为8080。 要更改它，请参阅[配置Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat)。
+* 默认监听端口为8080。 要更改它，请参阅[此部分](configure-tomcat.md)。
 * 然后，客户端控制台使用URL进行连接，例如：
 
    ```
