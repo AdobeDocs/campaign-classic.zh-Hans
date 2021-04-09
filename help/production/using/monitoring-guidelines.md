@@ -6,14 +6,14 @@ description: 了解监控 Campaign 实例和流程的准则和最佳实践。
 audience: production
 content-type: reference
 topic-tags: introduction
+exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 7%
+source-wordcount: '770'
+ht-degree: 17%
 
 ---
-
 
 # 监控准则 {#monitoring-guidelines}
 
@@ -31,8 +31,8 @@ ht-degree: 7%
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">监视您的实例</a></p></td>
-<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">监视工作流</a></p></td>
-<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">监视投放</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">监测工作流</a></p></td>
+<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">监测投放</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">监视数据库</a></p></td></tr>
 </table>
 
@@ -44,19 +44,19 @@ ht-degree: 7%
 
 **自动监控工具**
 
-有几种自动方法可用。 来监控您的实例。 例如，您可以设置检测到异常的电子邮件报告，检索XML格式的列表指示符等。 [请单](../../production/using/monitoring-processes.md#automatic-monitoring) 击此处了解详细信息。
+有几种自动方法可用。 来监控您的实例。 例如，您可以设置检测到异常的电子邮件报告，检索XML格式的列表指示符等。 [单击此处](../../production/using/monitoring-processes.md#automatic-monitoring)以了解更多信息。
 
 **审核跟踪**
 
-审计跟踪允许您直观地显示与实例中的选项、工作流和模式相关更改的完整历史记录。 [请单](../../production/using/audit-trail.md) 击此处了解详细信息。
+审计跟踪允许您直观地显示与实例中的选项、工作流和模式相关更改的完整历史记录。 [单击此处](../../production/using/audit-trail.md)以了解更多信息。
 
 **控制面板**
 
-该控制面板允许您管理实例的多个设置：管理URL权限，检查您的实例详细信息，如服务器的构建版本等。 它还允许您监视连接到实例的SFTP服务器上的可用空间。 [请单](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html) 击此处了解详细信息。
+该控制面板允许您管理实例的多个设置：管理URL权限，检查您的实例详细信息，如服务器的构建版本等。 它还允许您监视连接到实例的SFTP服务器上的可用空间。 [单击此处](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)以了解更多信息。
 
 >[!NOTE]
 >
->控制面板可供所有管理员用户访问。 授予用户管理员访问权限的步骤详见[此页](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)。
+>所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
 >
 >请注意，您的实例必须托管在AWS上，并使用最新的[Gold Standard](../../rn/using/gs-overview.md)版本或最新的[ GA版本(21.1)](../../rn/using/latest-release.md)进行升级。 了解如何在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本。 要检查您的实例是否托管在AWS上，请按照[本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详细介绍的步骤操作。
 
@@ -66,7 +66,7 @@ ht-degree: 7%
 
 **工作流热图**
 
-Workflow HeatMap以可视方式呈现了实例上运行的所有工作流。 它允许您轻松监视实例上的负载并相应地规划工作流。 [请单](../../workflow/using/heatmap.md) 击此处了解详细信息。
+Workflow HeatMap以可视方式呈现了实例上运行的所有工作流。 它允许您轻松监视实例上的负载并相应地规划工作流。 [单击此处](../../workflow/using/heatmap.md)以了解更多信息。
 
 **审核跟踪**
 
@@ -78,7 +78,7 @@ Workflow HeatMap以可视方式呈现了实例上运行的所有工作流。 它
 
 **工作流状态监视**
 
-除了热图之外，您还可以创建一个工作流，它允许您监视一组工作流的状态并向主管发送循环消息。 [请单](../../workflow/using/supervising-workflows.md) 击此处了解详细信息。
+除了热图之外，您还可以创建一个工作流，它允许您监视一组工作流的状态并向主管发送循环消息。 [单击此处](../../workflow/using/supervising-workflows.md)以了解更多信息。
 
 **一般准则**
 
@@ -111,23 +111,23 @@ SMTP报告按域显示投放统计和SMTP错误。 [了解详情](../../producti
 
 **数据库清理工作流**
 
-数据库清理工作流允许您从数据库中删除过时的数据。 建议避免数据库呈指数级增长。 [请单](../../production/using/database-cleanup-workflow.md) 击此处了解详细信息。
+数据库清理工作流允许您从数据库中删除过时的数据。 建议避免数据库呈指数级增长。 [单击此处](../../production/using/database-cleanup-workflow.md)以了解更多信息。
 
 **数据库性能疑难解答**
 
-在遇到数据库性能问题时，可以执行特定操作。 [请单](../../production/using/database-performances.md) 击此处了解详细信息。
+在遇到数据库性能问题时，可以执行特定操作。 [单击此处](../../production/using/database-performances.md)以了解更多信息。
 
 **数据库维护**
 
 *仅内部部署和混合托管模型*
 
-我们建议您定期执行数据库维护，以避免磁盘空间的过度消耗，从而影响数据库访问。 [请单](../../production/using/recommendations.md) 击此处了解详细信息。
+我们建议您定期执行数据库维护，以避免磁盘空间的过度消耗，从而影响数据库访问。 [单击此处](../../production/using/recommendations.md)以了解更多信息。
 
 **备份和恢复**
 
 *仅内部部署和混合托管模型*
 
-备份是避免在计算机上出现问题（无论是物理问题还是与系统相关）的事件中丢失数据的关键。 [请单](../../production/using/backup.md) 击此处了解详细信息。在[本节](../../production/using/restoration.md)中介绍了恢复过程。
+备份是避免在计算机上出现问题（无论是物理问题还是与系统相关）的事件中丢失数据的关键。 [单击此处](../../production/using/backup.md)以了解更多信息。在[本节](../../production/using/restoration.md)中介绍了恢复过程。
 
 ## Campaign Classic技术原则{#campaign-classic-technical-principles}
 
@@ -142,7 +142,7 @@ SMTP报告按域显示投放统计和SMTP错误。 [了解详情](../../producti
 
 *仅内部部署和混合托管模型*
 
-* [强制性服务器配置](../../installation/using/campaign-server-configuration.md)
+* [服务器配置](../../installation/using/configuring-campaign-server.md)
 * [Serverconf.xml文件配置](../../installation/using/the-server-configuration-file.md)
 * [可交付的服务器配置](../../installation/using/email-deliverability.md)
 * [用于创建实例并声明数据库的命令行](../../installation/using/command-lines.md)
