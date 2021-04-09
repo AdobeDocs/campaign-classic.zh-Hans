@@ -6,14 +6,14 @@ description: 在 Linux 中安装包
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
+exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
-
 
 # 在 Linux 中安装包{#installing-packages-with-linux}
 
@@ -254,7 +254,7 @@ systemctl start nlserver
 
 ### Oracle Client in Linux {#oracle-client-in-linux}
 
-将Oracle与Adobe Campaign一起使用时，您需要在Linux中配置Oracle客户端层。
+将Oracle与Adobe Campaign结合使用时，您需要在Linux中配置Oracle客户端层。
 
 * 使用完整客户端
 * TNS定义
@@ -359,4 +359,4 @@ nlserver stop web
 
 Adobe Campaign服务器定义名为&#x200B;**internal**&#x200B;的技术登录，该登录对所有实例具有所有权限。 安装后，登录名没有密码。 必须定义一个。
 
-请参阅[内部标识符](../../installation/using/campaign-server-configuration.md#internal-identifier)部分。
+请阅读[本节](../../installation/using/configuring-campaign-server.md#internal-identifier)了解更多信息。
