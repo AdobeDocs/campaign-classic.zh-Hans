@@ -6,14 +6,14 @@ description: 本节详细介绍在活动中安装和配置中间源服务器
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # 中间源服务器{#mid-sourcing-server}
 
@@ -61,7 +61,7 @@ ht-degree: 0%
    </serverconf>
    ```
 
-   有关详细信息，请参阅[启用进程](../../installation/using/campaign-server-configuration.md#enabling-processes)。
+   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 * 不需要步骤&#x200B;**6**、**9**&#x200B;和&#x200B;**10**。
 * 在步骤&#x200B;**12**&#x200B;和&#x200B;**13**&#x200B;期间，需要在连接URL中指示8080端口（因为控制台直接与Tomcat通信，而不是通过Web服务器通信）。 URL将变为[http://console.campaign.net:8080](http://console.campaign.net)。 在步骤&#x200B;**13**&#x200B;中，选择&#x200B;**[!UICONTROL Issue towards Mid-sourcing]**&#x200B;包以及要安装的包。
@@ -180,4 +180,3 @@ ht-degree: 0%
 如果消息投放将由多个中间源服务器管理，请选择选项&#x200B;**[!UICONTROL Routing with alternating mid-sourcing accounts]**&#x200B;并指定不同的服务器。
 
 ![](assets/s_ncs_install_midsourcing_tracking04.png)
-
