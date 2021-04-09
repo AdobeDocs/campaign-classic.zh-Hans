@@ -6,14 +6,14 @@ description: 创建实例并登陆
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
+exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
-
 
 # 创建实例并登陆{#creating-an-instance-and-logging-on}
 
@@ -21,11 +21,11 @@ ht-degree: 3%
 
 1. 创建连接。
 1. 登录以创建相关实例。
-1. 创建并配置数据库。
+1. 创建和配置数据库.
 
 >[!NOTE]
 >
->只有&#x200B;**internal**&#x200B;标识符可以执行这些操作。 有关详细信息，请参阅[内部标识符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+>只有&#x200B;**internal**&#x200B;标识符可以执行这些操作。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 启动Adobe Campaign控制台后，您可以访问登录页面。
 
@@ -82,4 +82,3 @@ ht-degree: 3%
    >[!NOTE]
    >
    >可以从命令行创建实例。 有关详细信息，请参阅[命令行](../../installation/using/command-lines.md)。
-
