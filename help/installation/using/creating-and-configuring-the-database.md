@@ -6,14 +6,14 @@ description: 创建和配置数据库
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
+exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
 
 ---
-
 
 # 创建和配置数据库{#creating-and-configuring-the-database}
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 >
 >开始库、用户和模式的名称不得以数字或包含特殊字符。
 >
->只有&#x200B;**internal**&#x200B;标识符可以执行这些操作。 有关详细信息，请参阅[内部标识符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+>只有&#x200B;**internal**&#x200B;标识符可以执行这些操作。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 ## 案例1:创建/循环使用数据库{#case-1--creating-recycling-a-database}
 
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 要执行此操作，请输入&#x200B;**管理系统帐户**&#x200B;的名称和密码，该帐户具有访问数据库的权限，例如：
 
-* **oracle** 数据库的系统，
+* **系统** 用于Oracle数据库，
 * **对** 于Microsoft SQL Server数据库，
 * **** PostgreSQL数据库，
 * **db2inst1** 用于DB2数据库。
@@ -103,7 +103,7 @@ ht-degree: 1%
    >
    >对于Oracle数据库，**[!UICONTROL Unicode storage]**&#x200B;选项允许您使用&#x200B;**NCLOB**&#x200B;和&#x200B;**NVARCHAR**&#x200B;类型字段。
    > 
-   >如果不选择此选项，则Oracle数据库的字符集（字符集）必须启用所有语言的数据存储（建议使用AL32UTF8）。
+   >如果不选择此选项，Oracle库的字符集（字符集）必须启用所有语言的存储（建议使用AL32UTF8）。
 
 * 为数据库选择时区，并指定是否希望它以UTC（如果可用）显示。
 
@@ -132,7 +132,7 @@ ht-degree: 1%
    * **WdbcOptions_TableSpaceWork**:无模式的工作表
    * **WdbcOptions_TableSpaceWorkIndex**:没有模式的工作表索引
 
-* 对于OracleAdobe Campaign库，用户必须具有对Oracle库的访问权限，通常作为&#x200B;**oinstall**&#x200B;组的成员。
+* 对于Oracle库，Adobe Campaign用户必须有权访问Oracle库，通常作为&#x200B;**oinstall**&#x200B;组的成员。
 * 通过&#x200B;**[!UICONTROL Set or change the administrator password]**&#x200B;选项，您可以输入链接到具有管理员权限的Adobe Campaign操作员的口令。
 
    为了安全起见，我们建议定义Adobe Campaign帐户管理员密码。
@@ -223,7 +223,7 @@ ht-degree: 1%
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
 * 对于Oracle、Microsoft SQL Server或PostgreSQL数据库，管理员可以定义创建存储库对象时使用的&#x200B;**数据参数**。
-* 对于OracleAdobe Campaign库，用户必须具有对Oracle库的访问权限，通常作为&#x200B;**oinstall**&#x200B;组的成员。
+* 对于Oracle库，Adobe Campaign用户必须有权访问Oracle库，通常作为&#x200B;**oinstall**&#x200B;组的成员。
 * 通过&#x200B;**[!UICONTROL Set or change the administrator password]**&#x200B;选项，您可以输入链接到具有管理员权限的Adobe Campaign操作员的口令。
 
    为了安全起见，我们建议定义Adobe Campaign帐户管理员密码。
@@ -245,4 +245,3 @@ ht-degree: 1%
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
-
