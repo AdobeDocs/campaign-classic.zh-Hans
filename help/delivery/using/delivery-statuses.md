@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 5%
@@ -127,7 +127,7 @@ ajouter screenshot -->
 
 * 投放可能使用在发送服务器上未配置的关联。
 
-   在这种情况下，请检查流量管理(IP关联)的配置，并使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;字段将投放链接到管理关联的MTA。 有关关联的详细信息，请参阅[本节](../../installation/using/configuring-campaign-server.md#delivery-settings)。
+   在这种情况下，请检查流量管理(IP关联)的配置，并使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;字段将投放链接到管理关联的MTA。 有关关联的详细信息，请参阅[本节](../../installation/using/configure-delivery-settings.md)。
 
 * 当运行的活动过多时，投放状态仍为“待定”状态。
 
