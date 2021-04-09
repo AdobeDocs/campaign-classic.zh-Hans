@@ -6,14 +6,14 @@ description: 开始迁移前
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
+exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 1%
 
 ---
-
 
 # 开始迁移前{#before-starting-migration}
 
@@ -77,5 +77,4 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->对于所有跟踪服务器，**internal**&#x200B;密码必须相同。 有关详细信息，请参阅[内部标识符](../../installation/using/campaign-server-configuration.md#internal-identifier)和[权限](../../platform/using/access-management.md)部分。
-
+>对于所有跟踪服务器，**internal**&#x200B;密码必须相同。 有关详细信息，请参阅[内部标识符](../../installation/using/configuring-campaign-server.md#internal-identifier)和[权限](../../platform/using/access-management.md)部分。
