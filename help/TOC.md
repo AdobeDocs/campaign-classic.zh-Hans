@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '2483'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -509,7 +509,6 @@ ht-degree: 98%
       + [访问外部数据库](workflow/using/accessing-an-external-database--fda-.md)
       + [管理权限](workflow/using/managing-rights.md)
       + [管理活动图像](workflow/using/managing-activity-images.md)
-      + [管理倾向](workflow/using/managing-propensity.md)
       + [管理时区](workflow/using/managing-time-zones.md)
       + [技术工作流](workflow/using/about-technical-workflows.md)
 + 管理优惠{#managing-offers}
@@ -625,7 +624,7 @@ ht-degree: 98%
       + [企业部署](installation/using/enterprise-deployment.md)
       + [中间源部署](installation/using/mid-sourcing-deployment.md)
       + [Power Booster 和 Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + 安全和隐私检查清单{#security-privacy}
+   + 安全性和隐私设置{#security-privacy}
       + [安全和隐私入门](installation/using/get-started-security-privacy.md)
       + [个性化和隐私](installation/using/privacy.md)
       + [安全访问管理](installation/using/access-management.md)
@@ -654,12 +653,13 @@ ht-degree: 98%
       + [关键步骤](installation/using/about-initial-configuration.md)
       + [创建实例并登录](installation/using/creating-an-instance-and-logging-on.md)
       + [创建和配置数据库](installation/using/creating-and-configuring-the-database.md)
-      + [配置 Campaign 服务器](installation/using/campaign-server-configuration.md)
       + [部署实例](installation/using/deploying-an-instance.md)
       + [安装内置包](installation/using/installing-campaign-standard-packages.md)
    + 配置 Campaign{#additional-configurations}
-      + [Campaign 服务器设置](installation/using/configuring-campaign-server.md)
+      + [Campaign 服务器配置](installation/using/configuring-campaign-server.md)
       + [定义安全区域](installation/using/security-zones.md)
+      + [设置URL权限](installation/using/url-permissions.md)
+      + [配置Tomcat](installation/using/configure-tomcat.md)
       + [技术电子邮件配置](installation/using/email-deliverability.md)
       + [将MX服务器与活动](installation/using/using-mx-servers.md)
       + [配置电子邮件密送](installation/using/email-archiving.md)
