@@ -6,14 +6,14 @@ description: 进一步了解您的投放仪表板中可用的状态。
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
+exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
-
 
 # 传递状态 {#delivery-statuses}
 
@@ -87,7 +87,7 @@ ajouter screenshot -->
  </tbody> 
 </table>
 
-要了解如何优化Adobe Campaign电子邮件的可发送性，请参阅[本节](../../delivery/using/about-deliverability.md)。 有关可交付性的更深入了解，请参阅[《Adobe可交付性最佳实践指南》](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
+要了解如何优化Adobe Campaign电子邮件的可发送性，请参阅[本节](../../delivery/using/about-deliverability.md)。 有关可交付性的更深入了解，请参阅[《Adobe可交付性最佳实践指南》](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
 
 ## 挂起状态{#pending-status}
 
@@ -127,7 +127,7 @@ ajouter screenshot -->
 
 * 投放可能使用在发送服务器上未配置的关联。
 
-   在这种情况下，请检查流量管理(IP关联)的配置，并使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;字段将投放链接到管理关联的MTA。 有关关联的详细信息，请参阅[本节](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)。
+   在这种情况下，请检查流量管理(IP关联)的配置，并使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;字段将投放链接到管理关联的MTA。 有关关联的详细信息，请参阅[本节](../../installation/using/configuring-campaign-server.md#delivery-settings)。
 
 * 当运行的活动过多时，投放状态仍为“待定”状态。
 
