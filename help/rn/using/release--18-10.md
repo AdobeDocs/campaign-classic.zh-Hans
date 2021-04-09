@@ -4,16 +4,16 @@ product: campaign
 title: 活动 18.10发行说明
 description: 活动 18.10发行说明
 feature: 概述
-role: 商业从业者
-level: 初学者
+role: Business Practitioner
+level: Beginner
+exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2372'
 ht-degree: 7%
 
 ---
-
 
 # 18.10 版{#release-18-10}
 
@@ -58,7 +58,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->这栋建筑已被召回。 请[升级到最新版本](../../production/using/build-upgrade.md)或与[Adobe客户服务部门](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。
+>这栋建筑已被召回。 请[升级到最新版本](../../production/using/build-upgrade.md)或与[Adobe客户服务部门](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)联系。
 
 **改进**
 
@@ -130,7 +130,7 @@ ht-degree: 7%
    <td> <p>已添加新的数据管理工作流活动。 <strong>SQL数据管理</strong>活动允许您编写或复制粘贴自己的SQL脚本以创建和填充工作表(仅限联合数据访问)。 </p> <p>有关详细信息，请参阅<a href="../../workflow/using/sql-data-management.md">详细文档</a>。</p></td> 
   </tr> 
   <tr> 
-   <td> 工作流监视<br /> </td> 
+   <td> 工作流监测<br /> </td> 
    <td> <p>借助新的Adobe Campaign工作流热图，平台管理员可以快速以图形形式呈现所有并发工作流，这使他们能够相应地监视实例负载和计划工作流。</p> <p>有关详细信息，请参阅<a href="../../workflow/using/heatmap.md">详细文档</a>。</p> <p>Workflow HeatMap包也可按需提供8977之前（从8700开始）的构建。 有关请求和安装它的详细信息，请参阅<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">此页</a>。</p> </td> 
   </tr> 
  </tbody> 
@@ -148,7 +148,7 @@ ht-degree: 7%
 
 * Campaign Classic API 现在可在[专用页面](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)中使用。如果您使用的是 jsapi.chm 文件，您现在应该参阅新的在线版本。
 * 现在支持PostgreSQL 10、Debian 9和Teradata16.20。 请参阅[兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
-* 创建SFTP连接时，您现在可以使用代理身份验证。 有关详细信息，请参阅[详细文档](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)(NEO-9868)
+* 创建SFTP连接时，您现在可以使用代理身份验证。 有关详细信息，请参阅[详细文档](../../installation/using/file-res-management.md)(NEO-9868)
 * 使用直邮投放创建单个投放时，**日期计算公式**&#x200B;选项现在在投放模板属性中可用。 (NEO-9792)
 * 对Cookie跟踪和Web应用程序的域名管理进行了改进。 有关更多信息，请参阅下面的“技术演变”部分。
 * 在投放或登陆页中导入Adobe Marketing Cloud共享资源在安全性和性能方面都得到了改进。
@@ -240,4 +240,3 @@ NmsRecipient上的索引已重新处理。 这应会提高使用此表的查询�
 * 修复了在根据SQL视图&#x200B;**选择特定模式**&#x200B;的元素后保存新投放合成时发生的Oracle错误。 (NEO-11682)
 * 修复了在使用解压缩选项通过加载文件活动处理包含.csv的zip文件时，导致生成包含误报的拒绝文件的问题。
 * xtkjoblog现在已通过清理清除。
-
