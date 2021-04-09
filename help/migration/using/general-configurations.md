@@ -6,14 +6,14 @@ description: 常规配置
 audience: migration
 content-type: reference
 topic-tags: configuration
+exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2786'
 ht-degree: 0%
 
 ---
-
 
 # 常规配置{#general-configurations}
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 1. 要更改客户端上的时区文件，请使用&#x200B;**ORA_TZFILE**&#x200B;环境变量。
 
-## 安全性{#security}
+## 安全性 {#security}
 
 ### 安全区域{#security-zones}
 
@@ -104,7 +104,7 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->对于所有跟踪服务器，**internal**&#x200B;密码必须相同。 有关详细信息，请参阅[此部分](../../installation/using/campaign-server-configuration.md#internal-identifier)和[此部分](../../platform/using/access-management.md)。
+>对于所有跟踪服务器，**internal**&#x200B;密码必须相同。 有关详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)和[此部分](../../platform/using/access-management.md)。
 
 ### v7 {#new-features-in-v7}中的新增功能
 
@@ -473,7 +473,7 @@ allowSQLInjection="false"
 
 ## Tomcat {#tomcat}
 
-Adobe Campaign v7中集成的Tomcat服务器已更改版本(Tomcat 7)。 因此，其安装文件夹(tomcat-6)也发生了更改(tomcat 7)。 配置升级后，请确保检查路径是否链接到更新的文件夹（在&#x200B;**[!UICONTROL serverConf.xml]**&#x200B;文件中）：
+Adobe Campaign v7中集成的Tomcat服务器已更改版本。 因此，其安装文件夹(tomcat-6)也发生了更改(tomcat 7)。 配置升级后，请确保检查路径是否链接到更新的文件夹（在&#x200B;**[!UICONTROL serverConf.xml]**&#x200B;文件中）：
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar 
