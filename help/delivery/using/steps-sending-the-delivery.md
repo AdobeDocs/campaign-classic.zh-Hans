@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -41,7 +41,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >在安装时，不建议使用此选项，而是使用中间源来调用mta。 有关配置SMTP服务器的详细信息，请参阅[本节](../../installation/using/configuring-campaign-server.md#delivery-settings)。
+   >在安装时，不建议使用此选项，而是使用中间源来调用mta。 有关配置SMTP服务器的详细信息，请参阅[本节](../../installation/using/configure-delivery-settings.md)。
 
 * **[!UICONTROL Email BCC]**:通过此选项，您只需向邮件目标中添加密送电子邮件地址，即可通过密送方式在外部系统上存储电子邮件。如需详细信息，请参阅[此部分](../../delivery/using/sending-messages.md#archiving-emails)。
 
