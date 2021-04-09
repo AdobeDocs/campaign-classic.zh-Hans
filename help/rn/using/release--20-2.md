@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: 65662a49aefdd6b5f85b39677908696f093779e8
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '2830'
 ht-degree: 88%
@@ -199,7 +199,7 @@ Campaign 现在支持以下系统：
 
 * 使用 iOS HTTP2 连接器的 iOS 移动应用程序的证书现在将在发送推送通知之前经过验证，从而防止投放因证书过期而失败。
 
-* HTTP 代理连接的管理已得到改进。[了解详情](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)。
+* HTTP 代理连接的管理已得到改进。[了解详情](../../installation/using/file-res-management.md)。
 
 * **[!UICONTROL Javascript Code]**&#x200B;和&#x200B;**[!UICONTROL Advanced Javascript Code]**&#x200B;工作流活动中新增可在达到限制后停止执行的选项。默认值为 1 小时。[了解详情](../../workflow/using/sql-code-and-javascript-code.md#javascript-code)。
 
