@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2489'
 ht-degree: 97%
 
 ---
@@ -659,7 +659,9 @@ ht-degree: 97%
       + [Campaign 服务器配置](installation/using/configuring-campaign-server.md)
       + [定义安全区域](installation/using/security-zones.md)
       + [设置URL权限](installation/using/url-permissions.md)
+      + [文件和资源](installation/using/file-res-management.md)
       + [配置Tomcat](installation/using/configure-tomcat.md)
+      + [配置投放设置](installation/using/configure-delivery-settings.md)
       + [技术电子邮件配置](installation/using/email-deliverability.md)
       + [将MX服务器与活动](installation/using/using-mx-servers.md)
       + [配置电子邮件密送](installation/using/email-archiving.md)
