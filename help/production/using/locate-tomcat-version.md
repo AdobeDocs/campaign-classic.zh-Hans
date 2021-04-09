@@ -6,16 +6,16 @@ description: 了解如何找出用于Adobe Campaign实例的嵌入式Tomcat web 
 audience: production
 content-type: reference
 topic-tags: troubleshooting
+exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
 translation-type: tm+mt
-source-git-commit: 49e49d5e35d14a31236cc4f78188cdf77353fbbf
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-
-# 查找 Tomcat 版本{#locate-tomcat-version}
+# 找到Tomcat版本{#locate-tomcat-version}
 
 Adobe Campaign使用名为Apache Tomcat **的**&#x200B;嵌入式Web Servlet处理应用程序与任何外部接口（包括客户端控制台、跟踪的URL链接、SOAP调用等）之间的HTTP/HTTPS请求。 对于任何面向外部的Adobe Campaign实例，通常在此之前有一个外部Web服务器（通常是IIS或Apache）。
 
