@@ -8,21 +8,31 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 8ab0aab42accbd1253d53e8133f5af0a38c724ea
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 27%
+source-wordcount: '338'
+ht-degree: 23%
 
 ---
 
 
-# 配置URL权限{#url-permissions}
+# 配置URL权限（内部部署）{#url-permissions}
 
 Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的 URL 默认列表是有限的。这些 URL 允许实例正常运行。
 
 默认情况下，实例不允许连接到外部 URL。但是，可以向授权URL的列表添加一些外部URL，以便您的实例可以连接到它们。 这允许您将 Campaign 实例连接到外部系统，例如 SFTP 服务器或网站，以启用文件和/或数据传输。
 
+>[!NOTE]
+>
+>此过程仅限于&#x200B;**内部部署**&#x200B;部署。
+>
+>作为&#x200B;**托管的**&#x200B;客户，如果您可以访问[活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)，则可以使用URL权限自助服务界面。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
+>
+>其他&#x200B;**混合/托管**&#x200B;客户需要联系Adobe支持团队以向允许列表添加IP。
+
+
 对于&#x200B;**Hybrid**&#x200B;和&#x200B;**内部部署**&#x200B;部署，管理员需要在&#x200B;**serverConf.xml**&#x200B;文件中引用新的&#x200B;**urlPermission**。
+
 
 有三种连接保护模式可用：
 
