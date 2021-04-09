@@ -6,14 +6,14 @@ description: 配置原理
 audience: production
 content-type: reference
 topic-tags: production-procedures
+exl-id: 03d7e579-8678-44b8-bbe7-cf4204bffb25
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 4%
 
 ---
-
 
 # 配置原理{#configuration-principle}
 
@@ -25,7 +25,7 @@ Adobe Campaign平台基于实例的概念，类似于Apache使用的虚拟主机
 
    >[!IMPORTANT]
    >
-   >要使用&#x200B;**Internal**&#x200B;标识符登录，您需要事先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+   >要使用&#x200B;**Internal**&#x200B;标识符登录，您需要事先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 * 多种技术服务器配置：这些配置都可以在实例的特定配置中过载。
 
