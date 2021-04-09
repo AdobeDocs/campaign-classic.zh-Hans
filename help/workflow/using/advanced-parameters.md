@@ -6,14 +6,14 @@ description: 高级参数
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
+exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '488'
 ht-degree: 2%
 
 ---
-
 
 # 高级参数{#advanced-parameters}
 
@@ -49,7 +49,10 @@ ht-degree: 2%
 
 ## 关联{#affinity}
 
-此字段允许您强制在特定计算机上执行活动。 有关详细信息，请参阅：[管理倾向](../../workflow/using/managing-propensity.md)。
+您可以选择强制在特定计算机上执行工作流或工作流活动。 为此，您必须在工作流或相关活动层定义一个或多个倾向性。
+
+此[部分](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)详细介绍了高可用性工作流配置。
+
 
 ## Max。 执行期{#max--execution-period}
 
