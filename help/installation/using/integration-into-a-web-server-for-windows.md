@@ -6,14 +6,14 @@ description: 集成到 Windows 版 Web 服务器
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
+exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 2%
 
 ---
-
 
 # 集成到 Windows 版 Web 服务器{#integration-into-a-web-server-for-windows}
 
@@ -23,7 +23,7 @@ Adobe Campaign包括Apache Tomcat，它通过HTTP（和SOAP）作为应用程序
 
 在这种情况下：
 
-* 默认监听端口为8080。 要更改它，请参阅[配置Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat)。
+* 默认监听端口为8080。 要更改它，请参阅[此部分](../../installation/using/configure-tomcat.md)。
 * 然后，客户端控制台使用URL进行连接，如[https:// `<computer>`:8080](https://myserver.adobe.com:8080)。
 
 但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开对网络外部控制台的访问时，我们建议使用专用Web服务器作为HTTP通信的主入口点。
@@ -178,4 +178,3 @@ webmdl@default (1644) - 18.2 Mo
 1. 在&#x200B;**existingResponse**&#x200B;行选择&#x200B;**PassThrough**&#x200B;值。
 
 ![](assets/ins_iis_httperrors.png)
-
