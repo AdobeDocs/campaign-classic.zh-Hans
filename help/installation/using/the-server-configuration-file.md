@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 translation-type: tm+mt
-source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
+source-git-commit: e165af411d2580d69694f1730116cb198418bfe2
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -2814,7 +2814,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*
 
 以下是&#x200B;**web**&#x200B;节点的不同参数。 这是Web模块的配置。
 
-有关详细信息，请参阅此[部分](../../installation/using/configuring-campaign-server.md#default-port-for-tomcat)。
+有关详细信息，请参阅此[部分](configuring-campaign-server.md#default-port-for-tomcat)。
 
 <table> 
  <thead> 
@@ -2858,13 +2858,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
-   <td> Tomcat监听控制端口：请参阅<a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">配置Tomcat</a>。<br /> </td> 
+   <td> Tomcat监听控制端口：请参阅<a href="configure-tomcat.md" target="_blank">配置Tomcat</a>。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
-   <td> Tomcat HTTP侦听端口：请参阅<a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">配置Tomcat</a>。<br /> </td> 
+   <td> Tomcat HTTP侦听端口：请参阅<a href="configure-tomcat.md" target="_blank">配置Tomcat</a>。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
@@ -3149,7 +3149,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
-   <td> 目标页面的URL:请参阅<a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">配置Tomcat</a>。<br /> </td> 
+   <td> 目标页面的URL:请参阅<a href="configure-tomcat.md" target="_blank">配置Tomcat</a>。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
