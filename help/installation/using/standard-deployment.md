@@ -6,14 +6,14 @@ description: 标准部署
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # 标准部署{#standard-deployment}
 
@@ -54,7 +54,7 @@ LAN中的应用程序服务器为最终用户提供服务，并执行所有重�
    * 首先向公众公开，以便跟踪并指向虚拟IP地址(VIP)上的负载平衡器，然后分发给两个前端服务器，
    * 第二个控制台向内部用户公开，供他们通过控制台访问，并指向同一应用程序服务器。
 
-* 防火墙配置为打开STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521 for Oracle,5432 for PostgreSQL等) 端口。 有关详细信息，请参阅[数据库访问](../../installation/using/network-configuration.md#database-access)部分。
+* 防火墙配置为打开STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521用于Oracle,5432用于PostgreSQL等) 端口。 有关详细信息，请参阅[数据库访问](../../installation/using/network-configuration.md#database-access)部分。
 
 ### 安装应用程序服务器{#installing-the-application-server}
 
@@ -107,7 +107,7 @@ LAN中的应用程序服务器为最终用户提供服务，并执行所有重�
 
 1. 将&#x200B;**internal**&#x200B;更改为与应用程序服务器相同。
 
-   有关详细信息，请参阅[内部标识符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 1. 将数据库链接到实例：
 
@@ -117,7 +117,7 @@ LAN中的应用程序服务器为最终用户提供服务，并执行所有重�
 
 1. 在&#x200B;**config-default.xml**&#x200B;和&#x200B;**config-demo.xml**&#x200B;文件中，启用&#x200B;**web**、**trackinglogd**&#x200B;和&#x200B;**mta**&#x200B;模块。
 
-   有关详细信息，请参阅[启用进程](../../installation/using/campaign-server-configuration.md#enabling-processes)。
+   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 1. 编辑&#x200B;**serverConf.xml**&#x200B;文件并填充：
 
@@ -131,7 +131,7 @@ LAN中的应用程序服务器为最终用户提供服务，并执行所有重�
       >
       >**nameServers**&#x200B;参数仅在Windows中使用。
 
-      有关详细信息，请参阅[投放设置](../../installation/using/campaign-server-configuration.md#delivery-settings)。
+      有关详细信息，请参阅[投放设置](configuring-campaign-server.md#delivery-settings)。
 
    * 重定向参数中的冗余跟踪服务器：
 
@@ -177,4 +177,3 @@ LAN中的应用程序服务器为最终用户提供服务，并执行所有重�
    >[!NOTE]
    >
    >我们使用之前创建的两个跟踪服务器的现有实例，并使用&#x200B;**internal**&#x200B;登录名。
-
