@@ -6,14 +6,14 @@ description: 了解有关Web服务器配置的主要最佳实践的更多信息�
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
+exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
-
 
 # Web服务器配置{#web-server-configuration}
 
@@ -58,7 +58,7 @@ ht-degree: 0%
    * ServerSignature **Off**
    * ServerTokens **Prod**
 
-   **在IIS上** (请参阅 [文档](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs))，执行以下配置：
+   **在IIS上**，执行以下配置：
 
    * 安装&#x200B;**URLScan**。
    * 编辑&#x200B;**Urlscan.ini**&#x200B;文件，使其具有&#x200B;**RemoveServerHeader=1**
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 * 限制查询大小以阻止上传重要文件：
 
-   **在Apache** (请参 [阅文档](http://httpd.apache.org/docs/2.2/mod/core.html#limitrequestbody))上，将LimitRequestBody指令(以字 **** 节为单位)添加到/目录中。
+   **在Apache上**，在/ **** 目录中添加LimitRequestBodydirective（以字节为单位）。
 
    ```
    <Directory />
