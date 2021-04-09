@@ -6,14 +6,14 @@ description: 企业部署
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
 translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1221'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # 企业部署{#enterprise-deployment}
 
@@ -113,7 +113,7 @@ ht-degree: 1%
    nlserver config -internalpassword
    ```
 
-   有关详细信息，请参阅[内部标识符](../../installation/using/campaign-server-configuration.md#internal-identifier)。
+   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 1. 使用DNS掩码创建&#x200B;**demo**&#x200B;实例以进行跟踪(在本例中为&#x200B;**tracking.活动.net**)并访问客户端控制台(在本例中为&#x200B;**console.活动.net**)。 有两种方法可以实现：
 
@@ -151,7 +151,7 @@ ht-degree: 1%
    </serverconf>
    ```
 
-   有关详细信息，请参阅[启用进程](../../installation/using/campaign-server-configuration.md#enabling-processes)。
+   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 1. 编辑&#x200B;**serverConf.xml**&#x200B;文件并指定投放域，然后指定MTA模块用来应答MX类型DNS查询的DNS服务器的IP（或主机）地址。
 
@@ -163,7 +163,7 @@ ht-degree: 1%
    >
    >**nameServers**&#x200B;参数仅在Windows中使用。
 
-   有关详细信息，请参阅[活动服务器配置](../../installation/using/campaign-server-configuration.md)。
+   有关详细信息，请参阅[活动服务器配置](../../installation/using/configuring-campaign-server.md)。
 
 1. 将客户端控制台设置项目（v7或&#x200B;**setup-client-6.XX**、v6.1的&#x200B;**setup-client-7.XX**、v6.1的&#x200B;**/datakit）复制到**/datakit/nl/eng/jsp **文件夹。******[了解详情](../../installation/using/client-console-availability-for-windows.md)。
 
@@ -229,7 +229,7 @@ ht-degree: 1%
    </serverconf>
    ```
 
-   有关详细信息，请参阅[启用进程](../../installation/using/campaign-server-configuration.md#enabling-processes)。
+   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 1. 编辑&#x200B;**serverConf.xml**&#x200B;文件并填充MTA模块的DNS配置：
 
@@ -241,7 +241,7 @@ ht-degree: 1%
    >
    >**nameServers**&#x200B;参数仅在Windows中使用。
 
-   有关详细信息，请参阅[活动服务器配置](../../installation/using/campaign-server-configuration.md)。
+   有关详细信息，请参阅[活动服务器配置](../../installation/using/configuring-campaign-server.md)。
 
 1. 开始Adobe Campaign服务器。
 
@@ -290,4 +290,3 @@ ht-degree: 1%
    * 对于Windows:[启动Web服务器并测试配置](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)。
 
 1. 开始Adobe Campaign服务器。
-
