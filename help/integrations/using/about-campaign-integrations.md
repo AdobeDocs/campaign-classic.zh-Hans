@@ -6,14 +6,14 @@ description: 使用其他 Adobe 解决方案，并将其不同的功能与 Campa
 audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
+exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 326ccbad77f3bd03a8eba22d7714084d52d2f02b
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '772'
 ht-degree: 9%
 
 ---
-
 
 # 开始使用Adobe Campaign集成{#about-campaign-integrations}
 
@@ -60,7 +60,7 @@ Adobe Experience Cloud Identity Service（ID服务）提供通用的永久ID，�
  <tbody> 
   <tr> 
    <td> <strong>Adobe实时客户数据平台(RTCDP)</strong><br /> </td> 
-   <td> Adobe Campaign与Adobe实时客户数据平台(RTCDP)之间的集成使您能够共享区段数据并将受众导入Adobe Campaign。<br /> <p><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html">进</a> 一步了解活动 -Adobe实时客户数据平台集成。</p><br /> </td> 
+   <td> Adobe Campaign与Adobe实时客户数据平台(RTCDP)之间的集成使您能够共享区段数据并将受众导入Adobe Campaign。<br /> <p><a href="../../integrations/using/get-started-sources-destinations.md">进</a> 一步了解活动 -Adobe实时客户数据平台集成。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Identity Management系统(IMS)- Adobe ID</strong><br /> </td> 
@@ -96,4 +96,3 @@ Adobe Experience Cloud Identity Service（ID服务）提供通用的永久ID，�
   </tr> 
  </tbody> 
 </table>
-
