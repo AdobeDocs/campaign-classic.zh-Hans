@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: 815648f97d2f5e15c1d5ddc340d384d440d0d6b2
+source-git-commit: 69630f1450241e15d385dc03a3a2b02f6f7c850b
 workflow-type: tm+mt
 source-wordcount: '4304'
 ht-degree: 97%
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
-## 4月2日°21 {#april-2021}
+## 2021 年 4 月 {#april-2021}
 
 新部分介绍了如何使用Adobe Experience Platform源和目标在Campaign Classic和Adobe实时客户数据平台(RTCDP)之间共享数据。 [阅读更多](../../integrations/using/get-started-sources-destinations.md)
 
