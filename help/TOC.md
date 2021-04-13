@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 97%
+source-wordcount: '2516'
+ht-degree: 96%
 
 ---
 
@@ -213,7 +213,7 @@ ht-degree: 97%
       + [传递疑难解答](delivery/using/delivery-troubleshooting.md)
       + [传递状态](delivery/using/delivery-statuses.md)
       + [了解投放失败](delivery/using/understanding-delivery-failures.md)
-      + [在ISP中断后更新退出资格](delivery/using/update-bounce-qualification.md)
+      + [在 ISP 中断后更新退回限定条件](delivery/using/update-bounce-qualification.md)
       + [了解隔离管理](delivery/using/understanding-quarantine-management.md)
    + 跟踪消息{#tracking-messages}
       + [关于邮件跟踪](delivery/using/about-message-tracking.md)
@@ -394,6 +394,10 @@ ht-degree: 97%
       + [为自定义实施配置事件](integrations/using/events.md)
       + [管道监控](integrations/using/pipeline-monitoring.md)
       + [管道故障排除](integrations/using/pipeline-troubleshooting.md)
+   + Adobe Experience Platform源和目标{#aep-sources-destinations}
+      + [源和目标入门](integrations/using/get-started-sources-destinations.md)
+      + [将Adobe Experience Platform受众引入活动](integrations/using/ingest-aep-data.md)
+      + [将数据从活动导出到Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + 使用工作流{#automating-with-workflows}实现自动化
    + 工作流入门 {#introduction}
       + [关于工作流](workflow/using/about-workflows.md)
