@@ -8,16 +8,26 @@ role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
 workflow-type: tm+mt
-source-wordcount: '2830'
-ht-degree: 88%
+source-wordcount: '2970'
+ht-degree: 87%
 
 ---
 
 # 版本 20.2{#release-20-2}
 
 ## ![](assets/do-not-localize/green_2.png) 20.2.5 版 - 内部版本 9188 {#release-20-2-5-build-9188}
+
+_2021年4月15日_
+
+* 修复了导致IMS连接屏幕上出现持续错误消息的客户端控制台回归。 (NEO-34821)
+
+**必须执行仅控制台升级。无需升级服务器。**
+
+>[!NOTE]
+>
+> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
 
 _2021 年 3 月 31 日_
 
@@ -37,6 +47,17 @@ _2021 年 3 月 31 日_
 * 修复了导致无法使用某些控制台组件（如投放中的日期选择器和图像管理）的回退问题。(NEO-31453)
 
 ## ![](assets/do-not-localize/red_2.png) 20.2.4 版 - 内部版本 9187 {#release-20-2-4-build-9187}
+
+_2021年4月15日_
+
+* 修复了导致IMS连接屏幕上出现持续错误消息的客户端控制台回归。 (NEO-34821)
+* 修复了导致无法使用某些控制台组件（如投放中的日期选择器和图像管理）的回退问题。(NEO-31453, NEO-31454)
+
+**必须执行仅控制台升级。无需升级服务器。**
+
+>[!NOTE]
+>
+> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
 
 _2020 年 12 月 22 日_
 
