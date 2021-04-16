@@ -3,12 +3,11 @@ keywords: Campaign Classic；主页；热门主题
 solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic 产品文档
-topic: Premium
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: bd6f77606517a0d3ceaa3c2b398733521af3ae43
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '293'
 ht-degree: 51%
 
 ---
