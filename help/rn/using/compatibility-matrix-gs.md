@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Campaign 的兼容性矩阵 [!DNL Gold Standard]
 description: Campaign Classic [!DNL Gold Standard] 发行版的兼容性矩阵
-feature: 概述
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c

@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: 升级入门
 description: 详细了解 Campaign Classic 升级
-feature: 概述
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499

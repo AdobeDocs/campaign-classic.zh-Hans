@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 关于 Campaign 中的查询
 description: 关于 Campaign 中的查询
-feature: 查询编辑器
-role: 业务从业者，数据架构师
-level: 初学者
+feature: Query Editor
+role: Business Practitioner, Data Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

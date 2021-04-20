@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 关于通用导入和导出
 description: 了解有关通用进口和出口的更多信息。
-feature: 概述
-role: 业务从业者，数据架构师
-level: 初学者
+feature: Overview
+role: Business Practitioner, Data Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: 最新版本
 description: 最新 Campaign Classic 发行说明
-feature: 概述
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c

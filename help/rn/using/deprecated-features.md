@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Campaign Classic 已弃用和已移除的功能
 description: 本页列出了 Adobe Campaign Classic 中已弃用并移除的功能
-feature: 概述
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645

@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: '[!DNL Gold Standard] 升级'
 description: '了解什么是Campaign Classic [!DNL Gold Standard] '
-feature: 概述
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd

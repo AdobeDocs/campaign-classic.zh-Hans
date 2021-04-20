@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 活动 20.3发行说明
 description: 活动 20.3发行说明
-feature: 概述
-role: 商业从业者
-level: 初学者
+feature: Overview
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt

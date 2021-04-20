@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 创建和管理列表
 description: 了解如何创建和管理列表
-feature: 用户档案
-role: 商业从业者
-level: 初学者
+feature: Profiles
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt

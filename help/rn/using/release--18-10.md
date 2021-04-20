@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: 活动 18.10发行说明
 description: 活动 18.10发行说明
-feature: 概述
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb

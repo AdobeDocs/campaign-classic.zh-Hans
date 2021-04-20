@@ -6,9 +6,9 @@ description: 活动 18.6发行说明
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-feature: 概述
-role: 商业从业者
-level: 初学者
+feature: Overview
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt

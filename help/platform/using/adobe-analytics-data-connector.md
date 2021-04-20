@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Adobe Analytics 数据连接器
 description: Adobe Analytics 数据连接器
-feature: 概述
-role: 业务从业者，管理员
-level: 初学者
+feature: Overview
+role: Business Practitioner, Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

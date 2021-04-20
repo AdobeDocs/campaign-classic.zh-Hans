@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 添加用户档案
 description: 添加用户档案
-feature: 用户档案
-role: 商业从业者
-level: 初学者
+feature: Profiles
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

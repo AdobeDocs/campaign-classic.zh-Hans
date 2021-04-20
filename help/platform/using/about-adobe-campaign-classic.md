@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 关于 Adobe Campaign Classic
 description: 发现关键功能、用户界面和全局指南。
-feature: 概述
-role: 商业从业者
-level: 初学者
+feature: Overview
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

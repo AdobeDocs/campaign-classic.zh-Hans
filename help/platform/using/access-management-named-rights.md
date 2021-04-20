@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 使用已命名权限设置权限
 description: 了解如何使用已命名权限设置权限
-feature: 访问管理
-role: 业务从业者，管理员
-level: 初学者
+feature: Access Management
+role: Business Practitioner, Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

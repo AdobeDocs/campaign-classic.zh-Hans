@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 管理对活动文件夹的访问
 description: 了解如何授予对活动文件夹的访问权限和创建视图
-feature: 应用程序设置
-role: 业务从业者，管理员
-level: 初学者
+feature: Application Settings
+role: Business Practitioner, Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt

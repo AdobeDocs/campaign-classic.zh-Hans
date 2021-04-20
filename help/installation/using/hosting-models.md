@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: 托管模型
 description: 发现活动托管模型
-feature: 概述
-role: 架构师
-level: 初学者
+feature: Overview
+role: Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: 09bd634142f643206c38ac5f881302a5d489ecaf
 workflow-type: tm+mt
