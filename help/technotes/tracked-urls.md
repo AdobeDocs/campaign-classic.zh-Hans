@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: f47b0ecfd3e35d15a78779fd9f38cc93c798d5d2
+source-git-commit: 65ff09dd8ded029178c4c85489bf01ef80d16e8d
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '343'
 ht-degree: 6%
 
 ---
@@ -27,13 +27,13 @@ ht-degree: 6%
 
 如果您的环境运行在以下列出的某个版本上，您可能会受到影响：
 
-* 金标7 - 11。 [了解详情](../rn/using/gold-standard.md)
-* 活动 21.1.1 - 21.1.2版。 [了解详情](../rn/using/latest-release.md)
-* 活动 20.3.1 - 20.3.3版。 [了解详情](../rn/using/release--20-3.md)
-* 活动 20.2.1 - 20.2.3版。 [了解详情](../rn/using/release--20-2.md)
-* 活动 20.1.1 - 21.1.3版。 [了解详情](../rn/using/release--20-1.md)
-* 活动 19.2.2 - 19.2.3版。 [了解详情](../rn/using/release--19-2.md)
-* 活动 19.1.5 - 19.1.7版。 [了解详情](../rn/using/release--19-1.md)
+* 金标7至11。 [了解详情](../rn/using/gold-standard.md)
+* 活动 21.1.1到21.1.2版本。 [了解详情](../rn/using/latest-release.md)
+* 活动 20.3.1到20.3.3版本。 [了解详情](../rn/using/release--20-3.md)
+* 活动 20.2.1到20.2.3版本。 [了解详情](../rn/using/release--20-2.md)
+* 活动 20.1.1到21.1.3版本。 [了解详情](../rn/using/release--20-1.md)
+* 活动 19.2.2到19.2.3版本。 [了解详情](../rn/using/release--19-2.md)
+* 活动 19.1.5到19.1.7版本。 [了解详情](../rn/using/release--19-1.md)
 
 了解如何在本节](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本[。
 
