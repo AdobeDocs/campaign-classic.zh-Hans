@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
+source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
 workflow-type: tm+mt
-source-wordcount: '2516'
-ht-degree: 96%
+source-wordcount: '2519'
+ht-degree: 97%
 
 ---
 
@@ -42,6 +42,7 @@ ht-degree: 96%
    + [技术说明](technotes/technote.md)
    + [iOS 证书更新](technotes/ios-certificate-update.md)
    + [Campaign 配置更新](technotes/acc-config-updates.md)
+   + [跟踪的URL更新](technotes/tracked-urls.md)
 + 入门 {#getting-started}
    + 开始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
@@ -394,10 +395,10 @@ ht-degree: 96%
       + [为自定义实施配置事件](integrations/using/events.md)
       + [管道监控](integrations/using/pipeline-monitoring.md)
       + [管道故障排除](integrations/using/pipeline-troubleshooting.md)
-   + Adobe Experience Platform源和目标{#aep-sources-destinations}
-      + [源和目标入门](integrations/using/get-started-sources-destinations.md)
-      + [将Adobe Experience Platform受众引入活动](integrations/using/ingest-aep-data.md)
-      + [将数据从活动导出到Adobe Experience Platform](integrations/using/export-campaign-data.md)
+   + Adobe Experience Platform Sources 与 Destinations{#aep-sources-destinations}
+      + [Sources 与 Destinations 入门](integrations/using/get-started-sources-destinations.md)
+      + [将 Adobe Experience Platform 受众引入 Campaign](integrations/using/ingest-aep-data.md)
+      + [将数据从 Campaign 导出到 Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + 使用工作流{#automating-with-workflows}实现自动化
    + 工作流入门 {#introduction}
       + [关于工作流](workflow/using/about-workflows.md)
