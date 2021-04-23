@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
 workflow-type: tm+mt
 source-wordcount: '2519'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 97%
 + 发行说明 {#release-notes}
    + [升级入门](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
-   + [!DNL Gold Standard] 发行  {#gs-release}
-      + [什么是 [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [[!DNL Gold Standard] 发行说明](rn/using/gold-standard.md)
-      + [[!DNL Gold Standard] 兼容性矩阵](rn/using/compatibility-matrix-gs.md)
+   + [!DNL Gold Standard] 版本{#gs-release}
+      + [什么是  [!DNL Gold Standard]](rn/using/gs-overview.md)
+      + [[!DNL Gold Standard]  发行说明](rn/using/gold-standard.md)
+      + [[!DNL Gold Standard]  兼容性矩阵](rn/using/compatibility-matrix-gs.md)
    + 之前版本 {#previous-releases}
       + [20.3 版](rn/using/release--20-3.md)
       + [版本 20.2](rn/using/release--20-2.md)
@@ -49,7 +49,7 @@ ht-degree: 97%
       + [启动 Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + Adobe Campaign 工作区{#campaign-workspace}
          + [Campaign UI 入门](platform/using/adobe-campaign-workspace.md)
-         + [使用活动 Explorer](platform/using/adobe-campaign-explorer.md)
+         + [使用 Campaign Explorer](platform/using/adobe-campaign-explorer.md)
          + [浏览和自定义列表](platform/using/adobe-campaign-ui-lists.md)
       + 常见问题解答 {#faq}
          + [首要问题](platform/using/common-questions.md)
@@ -115,7 +115,7 @@ ht-degree: 97%
       + CRM 连接器{#crm-connectors}
          + [CRM 连接器入门](platform/using/crm-connectors.md)
          + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
-         + [与Salesforce.com连接](platform/using/crm-sfdc.md)
+         + [与 Salesforce.com 连接](platform/using/crm-sfdc.md)
          + [与 CRM 同步数据](platform/using/crm-data-sync.md)
       + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector.md)
    + [帮助和支持选项](support.md)
@@ -147,16 +147,16 @@ ht-degree: 97%
          + [使用日本手机发送](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [附加文件](delivery/using/attaching-files.md)
    + 发送短信 {#sending-messages-on-mobiles}
-      + [SMS入门](delivery/using/sms-channel.md)
-      + [配置SMS渠道](delivery/using/sms-set-up.md)
-      + [创建SMS](delivery/using/sms-create.md)
+      + [开始使用短信](delivery/using/sms-channel.md)
+      + [配置短信渠道](delivery/using/sms-set-up.md)
+      + [创建短信](delivery/using/sms-create.md)
       + [发送和跟踪短信](delivery/using/sms-send.md)
       + [SMS 连接器协议和设置](delivery/using/sms-protocol.md)
       + [SMS 疑难解答](delivery/using/troubleshooting-sms.md)
       + [迁移到扩展通用 SMPP 连接器](delivery/using/unsupported-connector-migration.md)
    + [发送 LINE 消息](delivery/using/line-channel.md)
    + 发送推送通知 {#sending-push-notifications}
-      + [移动应用程序渠道](delivery/using/about-mobile-app-channel.md)
+      + [开始使用移动应用程序渠道](delivery/using/about-mobile-app-channel.md)
       + [将 Campaign SDK 集成到移动应用程序](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + 配置移动应用程序{#configure-the-mobile-app}
          + [应用程序配置入门](delivery/using/get-started-app-config.md)
@@ -214,7 +214,7 @@ ht-degree: 97%
       + [传递疑难解答](delivery/using/delivery-troubleshooting.md)
       + [传递状态](delivery/using/delivery-statuses.md)
       + [了解投放失败](delivery/using/understanding-delivery-failures.md)
-      + [在 ISP 中断后更新退回限定条件](delivery/using/update-bounce-qualification.md)
+      + [在 ISP 中断后更新退回限制条件](delivery/using/update-bounce-qualification.md)
       + [了解隔离管理](delivery/using/understanding-quarantine-management.md)
    + 跟踪消息{#tracking-messages}
       + [关于邮件跟踪](delivery/using/about-message-tracking.md)
@@ -227,10 +227,10 @@ ht-degree: 97%
       + [访问跟踪日志](delivery/using/accessing-the-tracking-logs.md)
       + [测试跟踪](delivery/using/testing-tracking.md)
       + [跟踪疑难解答](delivery/using/tracking-troubleshooting.md)
-   + 可交付性管理 {#deliverability-management}
-      + [什么是可交付性](delivery/using/about-deliverability.md)
+   + 可投放性管理 {#deliverability-management}
+      + [什么是可投放性](delivery/using/about-deliverability.md)
       + [控制消息内容](delivery/using/control-message-content.md)
-      + [监控投放能力](delivery/using/monitoring-deliverability.md)
+      + [监测可投放性](delivery/using/monitoring-deliverability.md)
       + [收件箱呈现](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [故障排除](delivery/using/deliverability-faq.md)
@@ -629,7 +629,7 @@ ht-degree: 97%
       + [企业部署](installation/using/enterprise-deployment.md)
       + [中间源部署](installation/using/mid-sourcing-deployment.md)
       + [Power Booster 和 Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + 安全性和隐私设置{#security-privacy}
+   + 安全和隐私设置{#security-privacy}
       + [安全和隐私入门](installation/using/get-started-security-privacy.md)
       + [个性化和隐私](installation/using/privacy.md)
       + [安全访问管理](installation/using/access-management.md)
@@ -663,12 +663,12 @@ ht-degree: 97%
    + 配置 Campaign{#additional-configurations}
       + [Campaign 服务器配置](installation/using/configuring-campaign-server.md)
       + [定义安全区域](installation/using/security-zones.md)
-      + [设置URL权限](installation/using/url-permissions.md)
+      + [设置 URL 权限](installation/using/url-permissions.md)
       + [文件和资源](installation/using/file-res-management.md)
-      + [配置Tomcat](installation/using/configure-tomcat.md)
+      + [配置 Tomcat](installation/using/configure-tomcat.md)
       + [配置投放设置](installation/using/configure-delivery-settings.md)
       + [技术电子邮件配置](installation/using/email-deliverability.md)
-      + [将MX服务器与活动](installation/using/using-mx-servers.md)
+      + [在 Campaign 中使用 MX 服务器](installation/using/using-mx-servers.md)
       + [配置电子邮件密送](installation/using/email-archiving.md)
       + [配置 SpamAssassin](installation/using/configuring-spamassassin.md)
    + 连接到 Campaign{#connect-to-campaign}
