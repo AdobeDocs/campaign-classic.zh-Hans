@@ -2,8 +2,8 @@
 solution: Campaign Classic
 product: campaign
 title: '[!DNL Gold Standard] 发行说明'
-description: Campaign Classic [!DNL Gold Standard]发行说明
-feature: Overview
+description: Campaign Classic  [!DNL Gold Standard] 的发行说明
+feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
@@ -11,15 +11,15 @@ translation-type: tm+mt
 source-git-commit: 113a3535cd197f9b654fc1e50e20886e76ee886a
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
 # [!DNL Gold Standard] 发行说明{#gold-standard}
 
-本页列表[!DNL Gold Standard]版本。 了解有关活动[!DNL Gold Standard] [的更多信息，请参阅此页](gs-overview.md)。
+本页列出了 [!DNL Gold Standard] 版本。有关 Campaign [!DNL Gold Standard] [的详情可在此页面中找到](gs-overview.md)。
 
-## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 11版{#gs-11}
+## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 11 版{#gs-11}
 
 _2021年4月14日_
 
@@ -39,7 +39,7 @@ _2021 年 3 月 2 日_
 
 >[!NOTE]
 >
-> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
+> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
 
 _2020 年 12 月 22 日_
 
@@ -51,7 +51,7 @@ _2020 年 12 月 22 日_
 
 >
 >
-在[[!DNL Gold Standard] 11升级常见问题解答](https://helpx.adobe.com/cn/campaign/kb/gold-standard-upgrade.html)中了解更多信息。
+在 [[!DNL Gold Standard]  11 升级常见问题解答](https://helpx.adobe.com/cn/campaign/kb/gold-standard-upgrade.html)中了解更多信息。
 
 内部版本 9032@d3b452f 包括以下改进和修复：
 
@@ -65,7 +65,7 @@ _2020 年 12 月 22 日_
 
 * 修复了在运行&#x200B;**扩充**&#x200B;活动时可能导致工作流失败的问题。(NEO-17338)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 10版{#gs-10}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 10 版{#gs-10}
 
 _2020 年 7 月 7 日_
 
@@ -77,7 +77,7 @@ _2020 年 7 月 7 日_
 >
 >我们建议您使用此版本中提供的客户端控制台进行升级。请参见[此页面](../../installation/using/installing-the-client-console.md)。
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 9版{#gs-9}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 9 版{#gs-9}
 
 _2020 年 6 月 22 日_
 
@@ -93,7 +93,7 @@ _2020 年 6 月 22 日_
 * 修复了反网络钓鱼服务的问题。(NEO-25283)
 * 修复了使用特定自定义跟踪公式时的跟踪问题。(NEO-25277)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 8版{#gs-8}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 8 版{#gs-8}
 
 _2020 年 4 月 29 日_
 
@@ -118,7 +118,7 @@ _2020 年 4 月 29 日_
 * 修复了导致清理工作流崩溃的回归。
 * 修复了清理工作流日志中的次要回归。
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 6版{#gs-6}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 6 版{#gs-6}
 
 _2020 年 3 月 9 日_
 
@@ -126,7 +126,7 @@ _2020 年 3 月 9 日_
 
 * 修复了外部帐户使用 FTP over SSL 时的问题。(NEO-20498)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 5版{#gs-5}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 5 版{#gs-5}
 
 _2019 年 12 月 17 日_
 
@@ -134,7 +134,7 @@ _2019 年 12 月 17 日_
 
 * 修复了以下通信渠道上的跟踪问题：移动（SMS 或 MMS）、推送（iOS 或 Android）和社交网络（Facebook 或 Twitter）。(NEO-19595)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 4版{#gs-4}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 4 版{#gs-4}
 
 _2019 年 12 月 11 日_
 
@@ -142,7 +142,7 @@ _2019 年 12 月 11 日_
 
 * 修复了使用 MSSQL 数据库发送消息时的性能问题。(NEO-17558)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 3版{#gs-3}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 3 版{#gs-3}
 
 _2019 年 11 月 20 日_
 
@@ -152,7 +152,7 @@ _2019 年 11 月 20 日_
 * 修复了在多个投放中显示累积报告时的问题。(NEO-18165)
 * 修复了可能出现拦截或导致 Web 服务器崩溃的问题。
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 2版{#gs-2}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 2 版{#gs-2}
 
 _2019 年 9 月 19 日_
 
