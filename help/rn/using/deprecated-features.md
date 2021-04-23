@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Campaign Classic 已弃用和已移除的功能
 description: 本页列出了 Adobe Campaign Classic 中已弃用并移除的功能
-feature: Overview
+feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 01daff5d95f4635182041b949a21c80cae5e4473
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1713'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,28 +61,28 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <li>Web API - Microsoft Dynamics CRM 联机版：2016 或 2016 Update 1</li>
    <li>Oracle On Demand API</li>
    </ul>
-  <p><em>目标删除日期：2021年5月</em></p>
+  <p><em>目标删除日期：2021 年 5 月</em></p>
   </td>
  </tr>
   <tr>
   <td>iOS 旧版二进制<br></td>
   <td><p>从 Campaign 20.3 版本开始，弃用 iOS 旧版二进制连接器。<p>
   <p> 如果您使用的是此连接器，则需要相应地调整实施。<a href="https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html">了解详情</a></p>
-  <p><em>目标删除日期：2021年5月</em></p>
+  <p><em>目标删除日期：2021 年 5 月</em></p>
   </td>
  </tr>
    <tr>
   <td>Demdex 域<br></td>
   <td><p> 从 Campaign 20.3 版本开始，弃用用于将受众导入和导出到 Adobe Experience Cloud 的 demdex 域。<p>
   <p>如果您是将 demdex 域用于导入/导出外部帐户，则需要相应地调整实施。<a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">了解详情</a></p> 
-  <p><em>目标删除日期：2021年5月</em></p>
+  <p><em>目标删除日期：2021 年 5 月</em></p>
   </td>
   <tr>
   <td>Oauth 身份验证（OAuth 和 JWT）<br></td>
   <td><p> 从 Campaign 20.3 版本开始，最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成身份验证现已更改并移至 Adobe I/O。 <p>
   <p>如果您使用的是 Triggers 集成，则需要相应地调整实施。<a href="../../integrations/using/configuring-adobe-io.md">了解详情</a></p> 
   <p>有关 Oauth 身份验证折旧的详细信息，请参阅此<a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">页面</a></p> 
-  <p><em>目标删除日期：2021年11月</em></p>
+  <p><em>目标删除日期：2021 年 11 月</em></p>
   </td>
   </tr>
   <td>SMS 连接器<br></td>
@@ -97,14 +97,14 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    </ul>
   <p>如果您使用其中一个连接器，您需要相应地调整实施。<a href="../../delivery/using/sms-channel.md">了解详情</a></p> 
   <p>请阅读<a href="../../delivery/using/unsupported-connector-migration.md">此技术说明</a>，了解如何迁移旧版连接器。</p>
-  <p><em>目标删除日期：2021年5月</em></p>
+  <p><em>目标删除日期：2021 年 5 月</em></p>
   </td> 
  </tr>
   <tr>  
    <td>传真渠道<br></td>
    <td><p>从 Campaign 20.2 版本开始，弃用传真渠道。</p> 
    <p>如果您使用此渠道，则需要相应地调整实施。<a href="../../delivery/using/steps-about-delivery-creation-steps.md">进一步了解</a> Campaign 渠道。</p>
-   <p><em>目标删除日期：2021年5月</em></p></td>
+   <p><em>目标删除日期：2021 年 5 月</em></p></td>
   </tr>
  </tbody> 
 </table>
