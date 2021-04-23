@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: 升级入门
 description: 详细了解 Campaign Classic 升级
-feature: Overview
+feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8294b522efb51cb1b961c9284675c7966132e957
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 已在生产中验证并受到 Adobe 推荐。
 
-最后 **一个 GA 版本** : [[!DNL Gold Standard]  11 版本](../../rn/using/gold-standard.md) 和 [Campaign 20.2.5 版本](../../rn/using/release--20-2.md)
+**上一个 GA 版本**&#x200B;为：[[!DNL Gold Standard]  11 版](../../rn/using/gold-standard.md)和 [Campaign 20.2.5 版](../../rn/using/release--20-2.md)
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 仅限按需部署。
 
@@ -51,14 +51,14 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 作为托管客户（托管服务或混合），您需要联系客户关怀团队以升级环境。
 
-作为本地用户，您可以执行升级。为此，您需要[下载最新的稳定内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)并升级所有环境。了解有关[升级过程](../../production/using/build-upgrade.md)的更多信息，并查阅[内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)。
+作为本地用户，您可以执行升级。为此，您需要[下载最新的稳定内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)并升级所有环境。了解有关[升级过程](../../production/using/build-upgrade.md)的更多信息，并查阅[内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)。
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-作为托管的[!DNL Gold Standard]用户，您将自动从[最新GA [!DNL Gold Standard] 内部版本](../../rn/using/gold-standard.md#gs-11)的[!DNL Gold Standard]升级中受益，而无需执行任何操作。 [了解详情](../../rn/using/gs-overview.md)。
+作为 [!DNL Gold Standard] 托管用户，您无需采取任何操作，即可通过[最新 GA  [!DNL Gold Standard] 内部版本](../../rn/using/gold-standard.md#gs-11)从 [!DNL Gold Standard] 升级中受益。[了解详情](../../rn/using/gs-overview.md)。
 
 >[!NOTE]
->[!DNL Gold Standard]的兼容性矩阵在[GA兼容性矩阵](../../rn/using/compatibility-matrix-gs.md)中可用。
+>[GA 兼容性矩阵](../../rn/using/compatibility-matrix-gs.md)中提供了 [!DNL Gold Standard] 的兼容性矩阵。
 
 ## 支持和其他有用链接{#support}
 
