@@ -6,16 +6,16 @@ description: 了解有关隐私管理的更多信息
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: c86b2d377c66e79cf4f10053f588796b95e6877e
-workflow-type: tm+mt
+exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-
-# 隐私管理 {#privacy-management}
+# 隐私管理{#privacy-management}
 
 Adobe Campaign 提供一套工具来帮助您遵守[隐私法规](#privacy-management-regulations)（包括 GDPR、CCPA、PDPA、LGPD）。
 
@@ -28,7 +28,7 @@ Adobe Campaign 提供一套工具来帮助您遵守[隐私法规](#privacy-manag
 
 ![](assets/privacy-gdpr-use-cases.png)
 
-有关详细信息，请参阅[访问权和被遗忘权](#right-access-forgotten)和[同意权、保留权和角色](#consent-retention-roles)。
+有关此内容的更多信息，请参阅[访问权与要消除的权限](#right-access-forgotten)和[同意权、保留权和角色](#consent-retention-roles)。
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
@@ -80,9 +80,9 @@ Adobe Campaign 的核心自始至终便是用于帮助管理同意的某些方�
 
 ![](assets/privacy-consent-management.png)
 
-有关同意管理的详细信息，请参阅[详细文档](../../delivery/using/managing-subscriptions.md)。
+有关同意管理的更多信息，请参阅[有详细说明的文档](../../delivery/using/managing-subscriptions.md)。
 
-除了 Adobe Campaign 提供的同意管理工具外，您还可能会跟踪消费者是否已选择退出个人信息销售。请参阅[此章节](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa) 。
+除了 Adobe Campaign 提供的同意管理工具外，您还可以跟踪消费者是否已选择退出个人信息销售。请参阅[此小节](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa)。
 
 ### 数据保留 {#data-retention}
 
@@ -90,17 +90,17 @@ Adobe Campaign 的核心自始至终便是用于帮助管理同意的某些方�
 
 以下是内置表的默认保留时间值。请注意，保留时间配置由 Adobe 技术管理员在实施期间设置，每项实施的值可能因客户要求而异。
 
-* **整合跟踪**:1年
+* **整合跟踪**：1 年
 * **投放日志**：6 个月
-* **跟踪日志**:1年
-* **已删除投放**:1周
-* **导入拒绝**:6个月
-* **访客用户档案**:1个月
-* **优惠建议**:1年
+* **跟踪日志**：1 年
+* **已删除的投放**：1 周
+* **被拒绝的导入内容**：6 个月
+* **访客用户档案**：1 个月
+* **优惠建议**：1 年
 * **事件**：1 个月
-* **事件处理统计**:1年
-* **存档事件**:1年
-* **管线事件被忽略**:1个月
+* **事件处理统计信息**：1 年
+* **存档事件**：1 年
+* **已忽略的渠道事件**：1 个月
 
 与删除类似，使用标准工作流功能，可以为任何自定义表设置保留期。
 
@@ -116,4 +116,4 @@ Adobe Campaign 使您能够通过不同的预建或自定义角色来管理分�
 
 ![](assets/privacy-user-management.png)
 
-有关访问管理的详细信息，请参阅[详细文档](../../platform/using/access-management.md)。
+有关访问管理的更多信息，请参阅[有详细说明的文档](../../platform/using/access-management.md)。
