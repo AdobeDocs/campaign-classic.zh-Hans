@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Campaign 的兼容性矩阵 [!DNL Gold Standard]
-description: Campaign Classic [!DNL Gold Standard] 发行版的兼容性矩阵
-feature: Overview
+title: Campaign  [!DNL Gold Standard] 的兼容性矩阵
+description: ' [!DNL Gold Standard]  版本的 Campaign Classic 兼容性矩阵'
+feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # [!DNL Gold Standard] 兼容性矩阵{#compatibility-matrix-gs}
 
-本文档列出针对 **Adobe Campaign Classic[!DNL Gold Standard]** 19.1 内部版本支持的所有系统和组件。此列表中未包含的产品和版本与此版本的 Adobe Campaign 不兼容。
+本文档列出了 **Adobe Campaign Classic[!DNL Gold Standard]** 19.1 内部版本支持的所有系统和组件。此列表中未包含的产品和版本与此版本的 Adobe Campaign 不兼容。
 
 ## 重要说明{#important-notes-gs}
 
