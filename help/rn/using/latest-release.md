@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: 最新版本
 description: 最新 Campaign Classic 发行说明
-feature: Overview
+feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: abd5c7430c3f7a1a056a014ad46a0b94157e259f
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->活动&#x200B;**一般可用性(GA)内部版本**&#x200B;为：[[!DNL Gold Standard] 11发行版](../../rn/using/gold-standard.md#gs-11)和[活动 20.2.5发行版](../../rn/using/release--20-2.md)。
+>Campaign **正式发布 (GA) 内部版本**&#x200B;为：[[!DNL Gold Standard]  11 版](../../rn/using/gold-standard.md#gs-11)和 [Campaign 20.2.5 版](../../rn/using/release--20-2.md)。
 
 ## ![](assets/do-not-localize/blue_2.png) 21.1.2 版 - 内部版本 9282 {#release-21-1-2-build-9282}
 
