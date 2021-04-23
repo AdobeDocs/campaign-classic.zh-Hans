@@ -6,14 +6,14 @@ description: 进一步了解隐私和同意
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '797'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
-
 
 # 隐私常见问题解答 {#privacy-faq}
 
@@ -68,13 +68,13 @@ Adobe 不提供法律建议。您应与您自己的法律顾问合作，以确�
 
 ## 保持用户参与度 {#preserve-user-engagement}
 
-### 数据控制者如何在获得同意的同时对用户参与度影响最小？
+### 数据控制者如何在对用户参与度影响最小的情况下获取同意？
 
 在需要针对特定营销活动获得同意的情况下，消费者同意需要有效（即，无“沉默即同意”框或预选框）、未捆绑，并且不能有条件地提供服务。
 
 甚至可能存在需要刷新某些同意才能继续使用数据的情况。
 
-营销人员应将这些增强的同意要求作为品牌参与度和忠诚度以及客户满意度和信任度的真实指标。
+营销人员应该接受这些加强的同意要求，作为品牌互动和忠诚度以及客户满意度和信任度的真实指标。
 
 ## 管理同意 {#manage-consent}
 
@@ -110,7 +110,7 @@ Adobe Campaign 中的报告基于根据投放和跟踪日志中的汇总数据�
 
 ## 再次选择加入 {#opt-in-again}
 
-### 数据主体(其数据已从Adobe Campaign中擦除)是否可选择加入以稍后再次？
+### 其数据已从 Adobe Campaign 中清除的数据主体是否可以稍后再次选择加入？
 
 数据主体可能再次选择加入，或者在从 Adobe Campaign 中删除其数据后添加为新收件人。
 
