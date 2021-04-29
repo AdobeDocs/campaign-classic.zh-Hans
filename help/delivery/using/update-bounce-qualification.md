@@ -9,9 +9,9 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: ad7f0725a5ce1dea9b5b3ab236c839a816b29382
+source-git-commit: 98f55ee27a1172ce4a0590f46affe8947fd58d0f
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '417'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,14 @@ ht-degree: 4%
 
 如果ISP中断，则无法将通过活动发送的电子邮件成功发送给其收件人:这些电子邮件会被错误地标为弹回。
 
-2021年4月26日，Apple的一个全局问题导致发送给有效Apple电子邮件地址的一些电子邮件被错误地硬弹回为无效电子邮件地址，Apple服务器会弹出以下响应：*&quot;550 5.1.1 <email address>:用户查找成功，但未找到用户记录。”*此问题在2016年4月26日发生，持续时间为美国东部时间早7点至晚1点。
+2021年4月26日，Apple的一个全局问题导致发送给有效Apple电子邮件地址的一些电子邮件被错误地硬弹回为无效电子邮件地址，Apple服务器会弹出以下响应：
+
+
+```
+“550 5.1.1 <email address>: user lookup success but no user record found.”
+```
+
+此问题在2016年4月26日发生，持续时间为美国东部时间早7点至晚1点。
 
 >[!NOTE]
 >
@@ -44,7 +51,7 @@ ht-degree: 4%
 
 * 对于活动实例，在隔离列表的&#x200B;**[!UICONTROL Error text]**&#x200B;字段中显示SMTP弹回响应信息：
 
-   * **错误文本(隔离文本)** 包含“用户查找成功但找不到用户记录”，而 **错误文本(隔离文本)** 包含“support.apple.com” **
+   * **错误文本(隔离文本)** 包含“用户查找成功但找不到用户记录”，而 **错误文本(隔离文本)** 包含“support.apple.com”
    * **更新状态(@lastModified)** 在上午4/26/2021点或之后07:00:00点
    * **更新状态(@lastModified)** 在下午4/26/2021点或之前01:00:00点
 
