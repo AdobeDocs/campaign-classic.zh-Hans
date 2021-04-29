@@ -5,7 +5,7 @@ product: campaign
 title: Adobe Campaign Classic 产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 translation-type: tm+mt
-source-git-commit: bd6f77606517a0d3ceaa3c2b398733521af3ae43
+source-git-commit: 52341396fd85e470257e37a1d9404eae775acda8
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 51%
@@ -18,13 +18,13 @@ ht-degree: 51%
 
 ## 新增功能
 
+* **[删除不正确的硬](https://helpx.adobe.com/cn/campaign/kb/update-bounce-qualification.html)**<br/> 弹回了解如何在Apple中断后更新不正确的硬弹回
+
 * **[更新您的APNs](technotes/ios-certificate-update.md)**<br/> 证书2021年3月29日，APNs更新影响了活动 iOS渠道。您需要更新配置以避免iOS推送渠道中断。
 
 * **[通过IMS/Adobe ID连接？升级到最新版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS连接到活动，则必须升级才能在2021年6月30日**&#x200B;之后连接到活动&#x200B;**。
 
 * **[保护您的活动实](technotes/acc-config-updates.md)**<br/> 例更新到最新版本以保护您的活动平台。
-
-* **[删除不正确的硬](https://helpx.adobe.com/cn/campaign/kb/update-bounce-qualification.html)**<br/> 弹回了解如何在Gmail中断后更新不正确的硬弹回
 
 * **[更新Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> 集成旧版身份验证服务已到期。了解如何迁移到Adobe I/O。
 
