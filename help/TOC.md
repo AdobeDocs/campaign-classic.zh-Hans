@@ -365,33 +365,33 @@ ht-degree: 100%
 + 与 Adobe Experience Cloud 集成 {#integrating-with-adobe-experience-cloud}
    + [关于 Campaign 集成](integrations/using/about-campaign-integrations.md)
    + 受众共享 {#audience-sharing}
-      + [与 [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)共享受众
+      + [与 [!DNL Adobe Experience Cloud]共享受众](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [向 Adobe 提交请求](integrations/using/submitting-request-to-adobe.md)
-      + [在 [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)中配置共享受众集成
+      + [在 [!DNL Adobe Campaign]中配置共享受众集成](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [故障排除](integrations/using/troubleshooting.md)
       + [导入和导出受众](integrations/using/importing-and-exporting-audiences.md)
    + 资源共享 {#asset-sharing}
-      + [与 [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)共享资源
-      + [配置对 [!DNL Assets]](integrations/using/configuring-access-to-assets.md)的访问
+      + [与 [!DNL Adobe Experience Cloud]共享资源](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [配置对 [!DNL Assets]的访问](integrations/using/configuring-access-to-assets.md)
       + [插入共享资源](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
       + [关于 [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [配置集成](integrations/using/configuring-the-integration.md)
       + [创建 [!DNL Experience Manager] 新闻稿](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [与 [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)集成
-      + [配置与 [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)的集成
+      + [与 [!DNL Adobe Target]集成](integrations/using/integrating-with-adobe-target.md)
+      + [配置与 [!DNL Adobe Target]的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
    + ACS Connector {#acs-connector}
       + [[!DNL ACS Connector] 原则和数据周期](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [同步用户档案](integrations/using/synchronizing-profiles.md)
       + [同步受众](integrations/using/synchronizing-audiences.md)
       + [同步 Web 应用程序](integrations/using/synchronizing-web-applications.md)
-      + [对 [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)进行故障排除
+      + [对 [!DNL ACS Connector]进行故障排除](integrations/using/troubleshooting-the-acs-connector.md)
    + Adobe Experience Cloud Triggers {#experience-triggers}
       + [开始使用 [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [配置管道](integrations/using/configuring-pipeline.md)
-      + [为 [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)配置 Adobe I/O
+      + [为 [!DNL Experience Cloud Triggers]配置 Adobe I/O](integrations/using/configuring-adobe-io.md)
       + [为自定义实施配置事件](integrations/using/events.md)
       + [管道监控](integrations/using/pipeline-monitoring.md)
       + [管道故障排除](integrations/using/pipeline-troubleshooting.md)
@@ -399,7 +399,7 @@ ht-degree: 100%
       + [Sources 与 Destinations 入门](integrations/using/get-started-sources-destinations.md)
       + [将 Adobe Experience Platform 受众引入 Campaign](integrations/using/ingest-aep-data.md)
       + [将数据从 Campaign 导出到 Adobe Experience Platform](integrations/using/export-campaign-data.md)
-+ 使用工作流{#automating-with-workflows}实现自动化
++ 使用工作流{#automating-with-workflows}
    + 工作流入门 {#introduction}
       + [关于工作流](workflow/using/about-workflows.md)
       + [关于活动](workflow/using/about-activities.md)
