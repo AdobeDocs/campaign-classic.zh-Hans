@@ -9,7 +9,7 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 378be6d4ef4ff69818d45c608a61b9a3506398be
+source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -24,11 +24,11 @@ ht-degree: 3%
 
 此问题在2016年4月26日发生，持续时间为美国东部时间早7点至晚1点。
 
-如果ISP中断，则无法将通过活动发送的电子邮件成功发送给其收件人:这些电子邮件会被错误地标为弹回。
-
 >[!NOTE]
 >
 >可以在[此页](https://www.apple.com/support/systemstatus/)上检查Apple系统状态仪表板。
+
+如果ISP中断，则无法将通过活动发送的电子邮件成功发送给其收件人:这些电子邮件会被错误地标为弹回。
 
 根据标准弹出处理逻辑，Adobe Campaign将这些收件人自动添加到隔离列表，其设置为&#x200B;**[!UICONTROL Status]** **[!UICONTROL Quarantine]**。 要更正此问题，您需要通过查找和删除这些收件人或将其&#x200B;**[!UICONTROL Status]**&#x200B;更改为&#x200B;**[!UICONTROL Valid]**&#x200B;来更新活动中的隔离表，以便晚间清理工作流将删除它们。
 
