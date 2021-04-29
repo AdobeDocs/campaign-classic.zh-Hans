@@ -9,9 +9,9 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 7c161862a4ce2e86e7968fd61af6b8ca28d6623f
+source-git-commit: 378be6d4ef4ff69818d45c608a61b9a3506398be
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## 上下文
 
-2021年4月26日，Apple的一个全局问题导致发送给有效Apple电子邮件地址的一些电子邮件被错误地硬弹回为无效电子邮件地址，Apple服务器会弹出以下响应： 《550 5.1.1》 <email address>:用户查找成功，但未找到用户记录。”
+2021年4月26日，Apple的一个全局问题导致发送给有效Apple电子邮件地址的一些电子邮件被错误地硬弹回为无效电子邮件地址，Apple服务器会弹出以下响应： “550 5.1.1 &#39;电子邮件地址&#39;:用户查找成功，但未找到用户记录。”
 
 此问题在2016年4月26日发生，持续时间为美国东部时间早7点至晚1点。
 
