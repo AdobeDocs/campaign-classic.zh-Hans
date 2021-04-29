@@ -9,7 +9,7 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
+source-git-commit: 718b490d48c6cfabdb24ab18dffb6db664f2a46c
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -53,7 +53,7 @@ ht-degree: 3%
 * 对于活动实例，在隔离列表的&#x200B;**[!UICONTROL Error text]**&#x200B;字段中包含入站电子邮件规则信息：
 
    * **错误文本(隔离文** 本)包含“Momen_Code10_InvalidRecipient”
-   * **Email domain(@domain)** equal to icloud.com&quot; OR Email domain(@domain)equal to me.com&quot; OR Email domain(@domain)equal to mac.com&quot;
+   * **电子邮件域(@domain)** 等于icloud.com或电 **子邮件域(@domain** )等于me.com或电子邮 **件域(@domain)** 等于mac.com
    * **更新状态(@lastModified)** 在上午4/26/2021点或之后07:00:00点
    * **更新状态(@lastModified)** 在下午4/26/2021点或之前01:00:00点
 
