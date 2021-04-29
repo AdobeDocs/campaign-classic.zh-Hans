@@ -7,11 +7,11 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: abd5c7430c3f7a1a056a014ad46a0b94157e259f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '921'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,10 +25,10 @@ ht-degree: 98%
 
 ## ![](assets/do-not-localize/blue_2.png) 21.1.2 版 - 内部版本 9282 {#release-21-1-2-build-9282}
 
-_2021年4月15日_
+_2021 年 4 月 15 日_
 
-* 密码管理已得到改进，以优化安全性。
-* 修复了可能导致MTA崩溃的问题。
+* 为优化安全性，改进了密码管理。
+* 修复了可能导致 MTA 崩溃的问题。
 
 ## ![](assets/do-not-localize/red_2.png) 21.1.1 版 - 内部版本 9277 {#release-21-1-1-build-9277}
 
