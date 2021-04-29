@@ -9,27 +9,22 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 98f55ee27a1172ce4a0590f46affe8947fd58d0f
+source-git-commit: 7c161862a4ce2e86e7968fd61af6b8ca28d6623f
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 4%
+source-wordcount: '425'
+ht-degree: 3%
 
 ---
 
-# 在 ISP 中断后更新退回限制条件 {#update-bounce-qualification.md}
+# 在Apple中断{#update-bounce-qualification.md}后更新错误的硬弹回
 
 ## 上下文
 
-如果ISP中断，则无法将通过活动发送的电子邮件成功发送给其收件人:这些电子邮件会被错误地标为弹回。
-
-2021年4月26日，Apple的一个全局问题导致发送给有效Apple电子邮件地址的一些电子邮件被错误地硬弹回为无效电子邮件地址，Apple服务器会弹出以下响应：
-
-
-```
-“550 5.1.1 <email address>: user lookup success but no user record found.”
-```
+2021年4月26日，Apple的一个全局问题导致发送给有效Apple电子邮件地址的一些电子邮件被错误地硬弹回为无效电子邮件地址，Apple服务器会弹出以下响应： 《550 5.1.1》 <email address>:用户查找成功，但未找到用户记录。”
 
 此问题在2016年4月26日发生，持续时间为美国东部时间早7点至晚1点。
+
+如果ISP中断，则无法将通过活动发送的电子邮件成功发送给其收件人:这些电子邮件会被错误地标为弹回。
 
 >[!NOTE]
 >
