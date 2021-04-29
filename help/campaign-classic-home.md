@@ -5,9 +5,9 @@ product: campaign
 title: Adobe Campaign Classic 产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 translation-type: tm+mt
-source-git-commit: 52341396fd85e470257e37a1d9404eae775acda8
+source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '288'
 ht-degree: 51%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 51%
 
 ## 新增功能
 
-* **[删除不正确的硬](https://helpx.adobe.com/cn/campaign/kb/update-bounce-qualification.html)**<br/> 弹回了解如何在Apple中断后更新不正确的硬弹回
+* **[删除不正确的硬](delivery/using/update-bounce-qualification.md)**<br/> 弹回了解如何在Apple中断后更新不正确的硬弹回
 
 * **[更新您的APNs](technotes/ios-certificate-update.md)**<br/> 证书2021年3月29日，APNs更新影响了活动 iOS渠道。您需要更新配置以避免iOS推送渠道中断。
 
