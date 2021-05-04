@@ -5,14 +5,14 @@ title: 跟踪和监视消息
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
+exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
 translation-type: tm+mt
-source-git-commit: 53e239c04f9c4239a5c32e4f25549cbc5f6ece50
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '430'
 ht-degree: 3%
 
 ---
-
 
 # 跟踪和监视 {#track-and-monitor}
 
@@ -39,7 +39,7 @@ ht-degree: 3%
 
 ## 跟踪 {#tracking-deliveries}
 
-要更好地了解收件人的行为，您可以跟踪他们对投放的反应：接收、打开、点击链接、退订等。 在Campaign Classic中，此信息显示在投放所针对的收件人的“跟踪”选项卡和投放的“跟踪”选项卡中。 在Campaign Standard中，它显示在投放的“跟踪日志”选项卡中。
+要更好地了解收件人的行为，您可以跟踪他们对投放的反应：接收、打开、点击链接、退订等。 在Campaign Classic中，此信息显示在投放所针对的收件人的“跟踪”选项卡和投放的“跟踪”选项卡中。
 
 **提示**:默认情况下，消息跟踪处于启用状态。要配置URL，请选择投放向导下半部分的“显示URL”选项。 对于邮件的每个URL，您可以选择是否激活跟踪。
 
