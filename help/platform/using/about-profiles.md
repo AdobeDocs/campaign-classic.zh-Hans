@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: 关于用户档案
 description: 关于用户档案
-feature: Profiles, Audiences
+feature: 用户档案、受众
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: c733b68a06fba9bb24cd1c1995ffc99a1277be87
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 57%
+source-wordcount: '906'
+ht-degree: 59%
 
 ---
 
@@ -93,13 +93,7 @@ ht-degree: 57%
 
 活动用户档案计数仅适用于&#x200B;**营销实例**。 它不适用于执行实例，即MID（中间采购）和RT（消息中心/实时消息）实例。
 
-如果您托管在AWS上，您还可以直接从控制面板监视实例上使用的活动用户档案数。 有关详细信息，请参阅[控制面板文档](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
-
->[!NOTE]
->
->所有管理员用户都可访问控制面板。[此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
->
->请注意，您的实例必须托管在AWS上，并使用最新的[Gold Standard](../../rn/using/gs-overview.md)版本或最新的[ GA版本(21.1)](../../rn/using/latest-release.md)进行升级。 了解如何在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本。 要检查您的实例是否托管在AWS上，请按照[本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详细介绍的步骤操作。
+如果您托管在AWS上，您还可以直接从控制面板监视实例上使用的活动用户档案数。 有关详细信息，请参阅[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
 
 计费账单的开立仅会考虑&#x200B;**使用中**&#x200B;的用户档案。如果用户档案在过去 12 个月通过任何渠道被定位或进行了传输，则该用户档案被视为使用中。
 
@@ -109,7 +103,7 @@ ht-degree: 57%
 >
 >Facebook 和 Twitter 渠道不包含在內。
 
-您可以从“Campaign Standard”**[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;菜单查看&#x200B;**[!UICONTROL Number of active profiles]**&#x200B;的概述。 实际计数由&#x200B;**[!UICONTROL Number of active billing profiles]**(**[!UICONTROL billingActiveContactCount]**)[技术工作流](../../workflow/using/about-technical-workflows.md)执行，该工作流每天运行，并将新数据添加到&#x200B;**[!UICONTROL Customer metrics]**&#x200B;菜单中当前时段的现有报表中。 每个时段的时长均为 12 个月。
+您可以从“活动”**[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;菜单查看&#x200B;**[!UICONTROL Number of active profiles]**&#x200B;的概述。 实际计数由&#x200B;**[!UICONTROL Number of active billing profiles]**(**[!UICONTROL billingActiveContactCount]**)[技术工作流](../../workflow/using/about-technical-workflows.md)执行，该工作流每天运行，并将新数据添加到&#x200B;**[!UICONTROL Customer metrics]**&#x200B;菜单中当前时段的现有报表中。 每个时段的时长均为 12 个月。
 
 ## 教程视频{#create-profiles-video}
 
