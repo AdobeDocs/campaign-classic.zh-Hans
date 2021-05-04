@@ -6,14 +6,14 @@ description: 个性化优惠券
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
+exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
 
 ---
-
 
 # 个性化优惠券{#personalized-coupons}
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 在以下示例中，投放是从主页创建的。 有关如何创建投放的详细说明，请参阅[本节](../../delivery/using/about-email-channel.md)。 您还可以在工作流中向投放添加优惠券。
 
 1. 转到&#x200B;**[!UICONTROL Campaigns]**&#x200B;并选择&#x200B;**[!UICONTROL Deliveries]**。
-1. 单击 **[!UICONTROL Create]**.
+1. 单击 **[!UICONTROL Create]**。
 
    ![](assets/deliv_coup_04.png)
 
@@ -115,7 +115,7 @@ ht-degree: 1%
 
       ![](assets/deliv_coup_11.png)
 
-      优惠券将作为代码而非您指定的名称插入到消息中。 该代码在活动标准数据模型内使用。
+      优惠券将作为代码而非您指定的名称插入到消息中。 该代码在活动otb数据模型内使用。
    ![](assets/deliv_coup_12.png)
 
 1. 运行测试以确认您分配给优惠券的名称。 转到&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Test personalization]**。 选择测试收件人。
@@ -156,7 +156,7 @@ ht-degree: 1%
 如果优惠券数少于消息数，投放分析将停止。 在这种情况下，您可以导入更多优惠券或限制消息数。 如果要限制消息数，请按照以下说明操作。
 
 1. 转到电子邮件投放窗口。
-1. 单击 **[!UICONTROL To]**.
+1. 单击 **[!UICONTROL To]**。
 1. 在&#x200B;**[!UICONTROL Select target]**&#x200B;中，转到&#x200B;**[!UICONTROL Exclusions]**&#x200B;选项卡。
 
    ![](assets/deliv_coup_18.png)
