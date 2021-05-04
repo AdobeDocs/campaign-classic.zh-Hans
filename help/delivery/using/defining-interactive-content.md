@@ -6,14 +6,14 @@ description: 了解如何使用Adobe Campaign Classic中的AMP定义交互式和
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
+exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
 
 ---
-
 
 # 定义互动内容{#defining-interactive-content}
 
@@ -49,7 +49,7 @@ AMP for Email与现有电子邮件兼容。 除HTML和/或纯文本外，邮件�
 ## 将AMP用于电子邮件且Adobe Campaign{#key-steps-to-use-amp}的关键步骤
 
 要成功测试和发送包含Adobe Campaign的AMP电子邮件，请执行以下步骤：
-1. 安装&#x200B;**[!UICONTROL AMP support]**&#x200B;包。 请参阅[安装活动标准包](../../installation/using/installing-campaign-standard-packages.md)。
+1. 安装&#x200B;**[!UICONTROL AMP support]**&#x200B;包。 请参阅[安装活动内置包](../../installation/using/installing-campaign-standard-packages.md)。
 1. 在Adobe Campaign中创建电子邮件并构建AMP内容。 请参阅[使用Adobe Campaign](#build-amp-email-content)构建AMP电子邮件内容。
 1. 确保遵循支持AMP格式的电子邮件提供商的所有投放要求。 请参阅[AMP以了解电子邮件投放要求](#amp-for-email-delivery-requirements)。
 1. 定义目标时，请确保选择能够显示AMP格式的收件人。 请参阅[定位AMP电子邮件](#targeting-amp-email)。
