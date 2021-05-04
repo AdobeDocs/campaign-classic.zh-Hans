@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: e1b09767a8eed3a7dc90e4db0429238d86d39570
+source-git-commit: 51773f48bac90febe44c6796b8cc08fce072bab3
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 5%
@@ -30,7 +30,7 @@ ht-degree: 5%
 * 金标8至11。 [了解详情](../rn/using/gold-standard.md#gs-8)
 * 活动 21.1.1（内部版本9277）到21.1.2（内部版本9282）版本。 [了解详情](../rn/using/latest-release.md)
 * 活动 20.3.1（内部版本9228）到20.3.3（内部版本9234）版本。 [了解详情](../rn/using/release--20-3.md)
-* 活动 20.2.1（内部版本9178）到20.2.3（内部版本9182）版本。 [了解详情](../rn/using/release--20-2.md)
+* 活动 20.2.1（内部版本9178）到20.2.4（内部版本9187）版本。 [了解详情](../rn/using/release--20-2.md)
 * 活动 20.1.1（内部版本9122）到21.1.3（内部版本9124）版本。 [了解详情](../rn/using/release--20-1.md)
 * 活动 19.2.2（内部版本9080）到19.2.3（内部版本9081）版本。 [了解详情](../rn/using/release--19-2.md)
 * 活动 19.1.5（内部版本9033）到19.1.7（内部版本9036）版本。 [了解详情](../rn/using/release--19-1.md)
