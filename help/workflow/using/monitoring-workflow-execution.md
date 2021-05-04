@@ -6,14 +6,14 @@ description: 监控工作流执行
 audience: workflow
 content-type: reference
 topic-tags: use-cases
+exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '2000'
 ht-degree: 0%
 
 ---
-
 
 # 监控工作流执行 {#monitoring-workflow-execution}
 
@@ -261,7 +261,7 @@ Campaign Classic接口允许您使用预定义的&#x200B;**视图**&#x200B;监�
 * **[!UICONTROL Running]**:列表所有正在运行的工作流。
 * **[!UICONTROL Paused]**:列表所有已暂停的工作流。
 * **[!UICONTROL Failed]**:列表所有失败的工作流。
-* **[!UICONTROL Start Pending]**:列表等待operationMgt进程启动的所有工作流。此视图仅适用于&#x200B;**营销活动**&#x200B;包(请参阅[安装活动标准包](../../installation/using/installing-campaign-standard-packages.md))。
+* **[!UICONTROL Start Pending]**:列表等待operationMgt进程启动的所有工作流。此视图仅适用于&#x200B;**营销活动**&#x200B;包(请参阅[安装活动内置包](../../installation/using/installing-campaign-standard-packages.md))。
 
 ![](assets/workflow-monitoring-views.png)
 
