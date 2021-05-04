@@ -6,14 +6,14 @@ description: 了解如何配置活动选项
 audience: installation
 content-type: reference
 topic-tags: appendices
+exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 0%
 
 ---
-
 
 # Campaign Classic 选项列表{#configuring-campaign-options}
 
@@ -53,7 +53,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> 允许负责投放的运算符确认发送(如果指定了特定运算符或操作员组以在投放的属性中启动投放)。</p><p> 为此，请输入“1”作为值来激活选项。 要取消激活此选项，请输入“0”。</p><p> 然后，发送确认过程将作为默认过程运行：只有在“投放”属性（或管理员）中为发送指定的运算符或操作员组才能确认并执行发送。 请参阅<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">此章节</a>。</p> </td> 
+   <td><p> 允许负责投放的运算符确认发送(如果指定了特定运算符或操作员组以在投放的属性中启动投放)。</p><p> 为此，请输入“1”作为值来激活选项。 要取消激活此选项，请输入“0”。</p><p> 然后，发送确认过程将作为默认过程运行：只有在“投放”属性（或管理员）中为发送指定的运算符或操作员组才能确认并执行发送。 请参阅<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">此小节</a>。</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数据库(nms:收件人)对话。<br /> 选项值必须与与外部模式表匹配的收件人的名称相对应。<br /> </td> 
@@ -283,11 +283,11 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDir</span> <br /> </td> 
-   <td> 要在Adobe Campaign客户端控制台中发布的资源位置。 请参阅<a href="../../delivery/using/formatting.md#image-referencing">此章节</a>。<br /> </td> 
+   <td> 要在Adobe Campaign客户端控制台中发布的资源位置。 请参阅<a href="../../delivery/using/formatting.md#image-referencing">此小节</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDirPreview</span> <br /> </td> 
-   <td> 在Adobe Campaign客户端控制台中预览的资源位置。 请参阅<a href="../../delivery/using/formatting.md#image-referencing">此章节</a>。<br /> </td> 
+   <td> 在Adobe Campaign客户端控制台中预览的资源位置。 请参阅<a href="../../delivery/using/formatting.md#image-referencing">此小节</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
@@ -389,7 +389,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-## 安全性{#security}
+## 安全性 {#security}
 
 <table> 
  <thead> 
@@ -627,11 +627,11 @@ ht-degree: 0%
   </tr>  
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> 要包含Adobe Campaign标准表数据的表空间的名称。<br />请参 <a href="../../installation/using/creating-and-configuring-the-database.md">阅创建和配置数据库</a>。</td> 
+   <td> 要包含Adobe Campaign表数据的表空间的名称。<br />请参 <a href="../../installation/using/creating-and-configuring-the-database.md">阅创建和配置数据库</a>。</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> 要包含Adobe Campaign标准表索引的表空间的名称。<br />请参 <a href="../../installation/using/creating-and-configuring-the-database.md">阅创建和配置数据库</a>。</td> 
+   <td> 要包含Adobe Campaign表索引的表空间的名称。<br />请参 <a href="../../installation/using/creating-and-configuring-the-database.md">阅创建和配置数据库</a>。</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
@@ -1042,4 +1042,3 @@ ht-degree: 0%
   </tr> 
  </tbody> 
 </table>
-
