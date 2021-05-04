@@ -5,14 +5,14 @@ title: 使用投放模板
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
+exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
-
 
 # 使用模板 {#use-templates}
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 在Adobe Campaign中管理多个品牌时，Adobe建议每个品牌有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每个子域有一个投放模板使您始终可以为每个品牌使用正确的预配置参数，从而避免错误并节省您的时间。
 
-**提示**:为避免在Campaign Standard中出现配置错误，建议您重复本机模板并更改其属性，而不要创建新模板。
+**提示**:为避免配置错误，建议您重复本机模板并更改其属性，而不要创建新模板。
 
 ## 配置地址
 
