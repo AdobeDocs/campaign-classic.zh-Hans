@@ -6,18 +6,23 @@ description: 启动 Adobe Campaign
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
+exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 2c275751ab86e98652820bf461c617442480c725
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '558'
 ht-degree: 43%
 
 ---
 
-
-# 启动Adobe Campaign{#launching-adobe-campaign}
+# 启动 Adobe Campaign{#launching-adobe-campaign}
 
 活动 Client控制台是一个富客户端，通过它可以连接到活动应用程序服务器。 了解如何在[此页](../../installation/using/installing-the-client-console.md)中下载和配置客户端控制台。
+
+
+>[!CAUTION]
+>
+>在[兼容性矩阵](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中检查您的系统和工具与Adobe Campaign Client Console的兼容性
 
 ## 开始Adobe Campaign{#starting-adobe-campaign}
 
@@ -107,4 +112,4 @@ ht-degree: 43%
 
 * [Adobe Campaign帮助和支持选项](../../support.md)
 * [Adobe Campaign软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Adobe Experience Cloud支持和专家会议](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Experience Cloud支持和专家会议](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
