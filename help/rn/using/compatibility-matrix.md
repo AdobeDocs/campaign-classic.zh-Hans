@@ -7,11 +7,11 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '524'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 91%
 
 ---
 
@@ -275,19 +275,25 @@ ht-degree: 100%
 </tbody>
 </table>
 
-## 客户端控制台操作系统{#ClientConsoleoperatingsystems}
+## 客户端控制台{#ClientConsoleoperatingsystems}
+
+使用活动 Client Console需要以下操作系统和浏览器。
+
+### 操作系统
 
 <table>
 <tbody>
 <tr>
-<td>Windows Server</td>
+<td>Microsoft Windows Server</td>
 <td>
 <p>2016</p>
 <p>2012</p>
 </td>
+<td>
+</td>
 </tr>
 <tr>
-<td>Windows</td>
+<td>Microsoft Windows</td>
 <td>
 <p>8</p>
 <p>10（建议用于日语实例）</p>
@@ -295,6 +301,30 @@ ht-degree: 100%
 </tr>
 </tbody>
 </table>
+
+### 浏览器
+
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ## 移动 SDK{#MobileSDK}
 
@@ -319,9 +349,53 @@ ht-degree: 100%
 
 ## 浏览器{#Browsers}
 
-对于以下浏览器，支持最新版本：Microsoft Edge、Mozilla Firefox、Google Chrome、Safari。
+以下浏览器与Web访问活动兼容。
 
-支持 Internet Explorer 11。
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mozilla Firefox</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Google Chrome</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Safari</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ## 诸如此类{#Morelikethis}
 
