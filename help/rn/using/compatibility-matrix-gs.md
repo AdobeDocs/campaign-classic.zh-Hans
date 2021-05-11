@@ -7,11 +7,11 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 90%
 
 ---
 
@@ -270,21 +270,27 @@ Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。随
 </tbody>
 </table>
 
-## 客户端控制台操作系统{#ClientConsoleoperatingsystems-gs}
+
+## 客户端控制台{#ClientConsoleoperatingsystems}
+
+使用活动 Client Console需要以下操作系统和浏览器。
+
+### 操作系统
 
 <table>
 <tbody>
 <tr>
-<td>Windows Server</td>
+<td>Microsoft Windows Server</td>
 <td>
 <p>2016</p>
 <p>2012</p>
 </td>
+<td>
+</td>
 </tr>
 <tr>
-<td>Windows</td>
+<td>Microsoft Windows</td>
 <td>
-<p>7</p>
 <p>8</p>
 <p>10（建议用于日语实例）</p>
 </td>
@@ -292,7 +298,31 @@ Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。随
 </tbody>
 </table>
 
-## 移动 SDK{#MobileSDK-gs}
+### 浏览器
+
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+## 移动 SDK{#MobileSDK}
 
 <table>
 <tbody>
@@ -313,11 +343,54 @@ Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。随
 </tbody>
 </table>
 
-## 浏览器{#Browsers-gs}
+## 浏览器{#Browsers}
 
-对于以下浏览器，支持最新版本：Microsoft Edge、Mozilla Firefox、Google Chrome、Safari。
+以下浏览器与Web访问活动兼容。
 
-支持 Internet Explorer 11。
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mozilla Firefox</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Google Chrome</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Safari</p>
+</td>
+<td>
+<p>最新版本</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## 诸如此类{#Morelikethis-gs}
 
