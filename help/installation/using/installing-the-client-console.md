@@ -6,35 +6,37 @@ description: 了解如何安装客户端控制台
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
+exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 translation-type: tm+mt
-source-git-commit: c96a7faf5c65848a3f383a5721bfa45048ecea57
+source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 5%
+source-wordcount: '973'
+ht-degree: 4%
 
 ---
 
-
-# 安装和更新活动客户端控制台{#installing-the-client-console}
-
+# 安装并更新活动客户端控制台{#installing-the-client-console}
 
 活动 Client Console是一个富客户端，通过它可以连接到您的活动应用程序服务器。
 
-在启动之前，您需要检查活动[兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)，获取活动服务器URL和用户凭据。
+在开始安装客户端控制台之前，您需要：
 
->[!CAUTION]
->
->活动 Client控制台和活动应用程序服务器必须在同一产品版本上运行。 Adobe还建议使用相同的产品版本。
-
-![](assets/do-not-localize/how-to-video.png) 了解如何在视频中安装和设置Adobe Campaign客 [户端](#video)
+* 在[兼容性矩阵](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中检查系统和工具与Adobe Campaign的兼容性
+* 获取活动服务器URL
+* 获取您的用户凭据
 
 安装或更新客户端控制台的过程会因您对Adobe Campaign Classic的实施而异。
 请查看以下详细信息，了解实施所需的内容。
 
+![](assets/do-not-localize/how-to-video.png) 了解如何在视频中安装和设置Adobe Campaign客 [户端](#video)
 
-## Adobe托管实现{#hosted-customers}
+>[!CAUTION]
+>
+>活动 Client控制台和活动应用程序服务器必须在同一产品版本&#x200B;**上运行**。 Adobe还强烈建议使用&#x200B;**同一产品版本**。 了解如何在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的活动客户端和服务器版本。
 
-要安装或更新您的客户端控制台，请执行以下操作：
+## Adobe Hosted实现{#hosted-customers}
+
+作为托管客户，您有两个选项可用于安装或更新客户端控制台：
 
 1. Adobe可以直接部署。 更新控制台后，将在弹出窗口中提示用户下载最新的客户端控制台版本。
 
@@ -42,9 +44,7 @@ ht-degree: 5%
 
    **用户需要管理员访问权限才能完成更新。如果用户没有管理员权限，则系统管理员需要部署到所有客户端控制台**
 
-
-
-## 混合和完全内部部署实现{#hybrid-onprem-customers}
+## 混合和内部部署实现{#hybrid-onprem-customers}
 
 为了使Adobe Campaign用户能够登录您创建和配置的实例，他们需要使用客户端控制台。
 
@@ -62,9 +62,10 @@ ht-degree: 5%
 
 1. 开始Adobe Campaign服务器。
 
->[!CAUTION]
->
->  Adobe建议取消选择选项&#x200B;**[!UICONTROL No longer ask this question]**，以确保当新版本的控制台可用时，所有用户都会收到警告。  如果选择此选项，则用户将不会收到有关新可用版本的通知。
+
+### 不再询问此问题选项
+
+Adobe建议取消选择选项&#x200B;**[!UICONTROL No longer ask this question]**，以确保当新版本的控制台可用时，所有用户都会收到警告。  如果选择此选项，则用户将不会收到有关新可用版本的通知。
 
 如果已选择&#x200B;**[!UICONTROL No longer ask this question]**，则可重置此提示。 只有能够编辑Windows注册表的系统管理员才应进行以下更改：
 
@@ -82,14 +83,14 @@ ht-degree: 5%
 >
 >如果您将更新的控制台应用于现有实施，用户将自动收到更新其客户端控制台的提示。 如果您是第一次实施活动，则用户需要下载控制台。 有关这两个选项的详细信息，请参见下文
 
-### 更新控制台 — 现有实施{#update-the-client-console}
+### 更新控制台以了解现有实施{#update-the-client-console}
 
 控制台在活动服务器文件夹中可用后，将在弹出窗口中提示用户下载最新的客户端控制台版本。
 
 **用户需要管理员访问权限才能完成更新。如果用户没有管理员权限，则系统管理员需要部署到所有客户端控制台**
 
 
-### 下载控制台 — new implementation{#download-the-client-console}
+### 下载新实施的控制台{#download-the-client-console}
 
 用户现在应按照以下步骤下载并安装控制台：
 
@@ -150,11 +151,10 @@ ht-degree: 5%
 1. 输入用户登录凭据，然后单击&#x200B;**[!UICONTROL Log in]**
 
 
-
 **相关主题**
 
 * [创建实例并登陆](../../installation/using/creating-an-instance-and-logging-on.md).
-* [兼容性矩阵](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+* [兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 
 ## 教程视频
 
