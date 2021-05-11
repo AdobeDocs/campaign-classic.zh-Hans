@@ -6,14 +6,14 @@ description: 了解有关用于编写电子邮件URL脚本的预处理说明的�
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
+exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 translation-type: tm+mt
-source-git-commit: 8aab4bc23d688aa225cfc636936cf2835840e410
+source-git-commit: fdcb96c3c4afed1f36529e658eda26766226c44f
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
 
 ---
-
 
 # 预处理指令{#pre-processing-instructions}
 
@@ -184,6 +184,7 @@ ht-degree: 1%
    }
    <%@ value object='endScript' %>
    ```
+
 1. 通过调用函数显示文章。
 
    ```
@@ -194,4 +195,3 @@ ht-degree: 1%
    }
    %>
    ```
-
