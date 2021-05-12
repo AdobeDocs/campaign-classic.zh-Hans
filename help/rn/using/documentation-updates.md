@@ -436,7 +436,7 @@ Adobe Campaign 与 Adobe 实时客户数据平台之间的集成现在在&#x200B
 
 ## 2019 年 10 月 {#october-2019}
 
- Campaign 的错误消息列表已更新。[阅读更多](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+Campaign 的错误消息列表已更新。[阅读更多](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
 
 GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在内的隐私管理文档。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy.html)
 
@@ -496,7 +496,7 @@ Marketing Cloud 触发器技术说明已更新。[阅读更多](../../integratio
 
 Apache 配置步骤已更新。[阅读更多](../../installation/using/integration-into-a-web-server-for-linux.md)
 
-已添加新页面，包括经典端点的列表。 [阅读更多](../../installation/using/campaign-network-endpoints.md)
+添加了包含 Classic 的端点列表的新页面。[阅读更多](../../installation/using/campaign-network-endpoints.md)
 
 数据包最佳实践文章已更新。[阅读更多](../../configuration/using/data-model-best-practices.md)
 
