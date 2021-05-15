@@ -6,16 +6,21 @@ description: 关于活动类型
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
+source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 12%
 
 ---
 
-
 # 关于活动类型{#about-campaign-typologies}
+
+<!--
+>[!AVAILABILITY]
+>
+>:warning: This capability is not available in Campaign v8. [Learn more](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html)
+-->
 
 活动优化是Adobe Campaign模块，可让您控制、过滤和监控投放的发送。 为了避免营销活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这保证所发送的消息满足客户的需要和期望以及公司通信策略。
 
