@@ -1,27 +1,26 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 工作流热图
-description: 使用Workflow HeatMap监控活动工作流
+title: 活动工作流热图
+description: 使用Workflow HeatMap监控工作流
 audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-translation-type: tm+mt
-source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
+source-git-commit: 53d8e2ff56481497c7805b92a7885a662a1924cf
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
 # 工作流热图 {#workflow-heatmap}
 
-Adobe Campaign工作流热图包含当前运行的所有工作流的颜色编码图形表示。 仅对实例管理员可用。
+活动工作流热图包含当前运行的所有工作流的颜色编码图形表示。 它仅对&#x200B;**活动管理员**&#x200B;可用。
 
-[本页](../../production/using/monitoring-guidelines.md)中提供了监控不同活动过程的其他方法。
+在[本页](../../production/using/monitoring-guidelines.md)中探索监视活动进程的其他方法。
 
-## 关于工作流热图{#about-the-workflow-heatmap}
+## 开始使用Workflow HeatMap {#about-the-workflow-heatmap}
 
 通过提供并发工作流数的快速概述，Workflow HeatMap使Adobe Campaign平台管理员能够相应地监视实例负载和计划工作流。
 
@@ -31,7 +30,7 @@ Adobe Campaign工作流热图包含当前运行的所有工作流的颜色编码
 * 按持续时间筛选工作流，以查看哪些工作流可能遇到问题
 * 按持续时间筛选活动，以查看哪些活动可能遇到问题
 * 轻松查找个别工作流和所有相关活动（及持续时间）
-* 按工作流类型进行搜索（[技术工作流](../../workflow/using/building-a-workflow.md#technical-workflows)或[活动工作流](../../workflow/using/building-a-workflow.md#campaign-workflows)）
+* 按工作流类型过滤：[技术工作流](../../workflow/using/building-a-workflow.md#technical-workflows)或[活动工作流](../../workflow/using/building-a-workflow.md#campaign-workflows)
 * 查找要分析的特定工作流
 
 >[!NOTE]
@@ -40,13 +39,11 @@ Adobe Campaign工作流热图包含当前运行的所有工作流的颜色编码
 
 使用Workflow HeatMap需要充分了解以下概念：[工作流](../../workflow/using/about-workflows.md)、[活动](../../workflow/using/about-activities.md)和[工作流最佳实践](../../workflow/using/workflow-best-practices.md)。
 
-<!--The Workflow HeatMap is available by default in Adobe Campaign starting 18.10 release. If you have a build between 8700 and 8977 (18.10), you can also benefit from this capability. To request the corresponding package, contact the [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) and follow the instructions from [this page](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) to understand how to install it.-->
-
-## 使用热图{#using-the-heatmap}
+## 自定义工作流热图{#using-the-heatmap}
 
 >[!NOTE]
 >
->只有具有管理权限的用户才能访问活动 Workflow HeatMap。
+>如果Workflow HeatMap中未显示任何数据，请单击&#x200B;**[!UICONTROL Load data]**&#x200B;按钮。
 
 1. 转到&#x200B;**[!UICONTROL Monitoring]**&#x200B;并单击&#x200B;**[!UICONTROL Workflow HeatMap]**&#x200B;链接以显示&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;页。
 
@@ -69,7 +66,7 @@ Adobe Campaign工作流热图包含当前运行的所有工作流的颜色编码
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
-1. 您还可以从&#x200B;**[!UICONTROL Workflows]**&#x200B;列表中选择特定工作流。
+1. 您还可以从&#x200B;**[!UICONTROL Workflows]**&#x200B;下拉列表中选择特定工作流。
 
    ![](assets/wkf_monitoring_filters_workflows.png)
 
@@ -84,11 +81,9 @@ Adobe Campaign工作流热图包含当前运行的所有工作流的颜色编码
 
 1. 要按名称搜索特定工作流，您还可以使用&#x200B;**[!UICONTROL Workflow name filter]**&#x200B;字段。
 
-   ![](assets/wkf_monitoring_filters_name.png)
-
 1. 如果您在中间时间编辑了一些工作流，请单击&#x200B;**[!UICONTROL Reload data]**&#x200B;按钮刷新网格中显示的数据。
 
-## 阅读热图{#reading-the-heatmap}
+## 解释工作流热图{#reading-the-heatmap}
 
 活动 Workflow HeatMap是一个自然可读的网格，从左上角到右下角，它允许查找具有绿色到红色编码范围的“热点区域”。
 
@@ -151,7 +146,7 @@ Adobe Campaign工作流热图包含当前运行的所有工作流的颜色编码
    * 建议营销用户拆分最长的工作流，以缩短处理时间。
    * 开始对特定工作流和特定活动（如JavaScript、导入、导出等）进行更深入的分析，以隔离问题并更轻松地解决它们。
 
-## 示例：使用HeatMap改进工作流规划{#example--using-the-heatmap-to-improve-workflow-planning}
+## 使用HeatMap改进工作流规划{#example--using-the-heatmap-to-improve-workflow-planning}
 
 以下示例显示了在使用Adobe Campaign Workflow HeatMap时如何提高规划效率以及如何改进性能。
 
