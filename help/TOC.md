@@ -8,16 +8,15 @@ user-guide-description: 设计、规划、执行、管理和优化跨渠道营�
 solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
-translation-type: ht
-source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
-workflow-type: ht
-source-wordcount: '2519'
-ht-degree: 100%
+source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
+workflow-type: tm+mt
+source-wordcount: '2521'
+ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic 指南 {#using}
+# Adobe Campaign Classic v7指南 {#using}
 
 + [产品文档](campaign-classic-home.md)
 + [最近更新](rn/using/documentation-updates.md)
@@ -26,17 +25,17 @@ ht-degree: 100%
    + [最新版本](rn/using/latest-release.md)
    + [!DNL Gold Standard] 版本{#gs-release}
       + [什么是  [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [[!DNL Gold Standard]  发行说明](rn/using/gold-standard.md)
-      + [[!DNL Gold Standard]  兼容性矩阵](rn/using/compatibility-matrix-gs.md)
+      + [[!DNL Gold Standard] 发行说明](rn/using/gold-standard.md)
+      + [[!DNL Gold Standard] 兼容性矩阵](rn/using/compatibility-matrix-gs.md)
    + 之前版本 {#previous-releases}
       + [20.3 版](rn/using/release--20-3.md)
       + [版本 20.2](rn/using/release--20-2.md)
-      + [版本 20.1](rn/using/release--20-1.md)
-      + [版本 19.2](rn/using/release--19-2.md)
-      + [版本 19.1](rn/using/release--19-1.md)
-      + [版本 18.10](rn/using/release--18-10.md)
-      + [版本 18.6](rn/using/release--18-6.md)
-      + [版本 18.4](rn/using/release--18-4.md)
+      + [版本20.1](rn/using/release--20-1.md)
+      + [版本19.2](rn/using/release--19-2.md)
+      + [版本19.1](rn/using/release--19-1.md)
+      + [版本18.10](rn/using/release--18-10.md)
+      + [版本18.6](rn/using/release--18-6.md)
+      + [版本18.4](rn/using/release--18-4.md)
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
    + [技术说明](technotes/technote.md)
@@ -399,7 +398,7 @@ ht-degree: 100%
       + [Sources 与 Destinations 入门](integrations/using/get-started-sources-destinations.md)
       + [将 Adobe Experience Platform 受众引入 Campaign](integrations/using/ingest-aep-data.md)
       + [将数据从 Campaign 导出到 Adobe Experience Platform](integrations/using/export-campaign-data.md)
-+ 使用工作流{#automating-with-workflows}
++ 使用工作流实现自动化 {#automating-with-workflows}
    + 工作流入门 {#introduction}
       + [关于工作流](workflow/using/about-workflows.md)
       + [关于活动](workflow/using/about-activities.md)
@@ -569,7 +568,7 @@ ht-degree: 100%
       + [出站渠道优惠](interaction/using/offers-on-an-outbound-channel.md)
 + 事务性消息传递 {#transactional-messaging}
    + 事务性消息传递入门 {#introduction}
-      + [关于交易消息传递](message-center/using/about-transactional-messaging.md)
+      + [关于事务型消息传递](message-center/using/about-transactional-messaging.md)
       + [交易消息架构](message-center/using/transactional-messaging-architecture.md)
       + [事件描述](message-center/using/event-description.md)
    + 配置实例 {#instance-configuration}
@@ -765,7 +764,7 @@ ht-degree: 100%
    + 数据模型 {#data-model}
       + [关于数据模型](configuration/using/about-data-model.md)
       + [数据模型描述](configuration/using/data-model-description.md)
-      + [最佳做法](configuration/using/data-model-best-practices.md)
+      + [最佳实践](configuration/using/data-model-best-practices.md)
    + 模式参考 {#schema-reference}
       + [关于模式参考](configuration/using/about-schema-reference.md)
       + [模式结构](configuration/using/schema-structure.md)
