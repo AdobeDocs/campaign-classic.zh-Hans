@@ -7,11 +7,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-translation-type: tm+mt
 source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -180,7 +179,7 @@ ht-degree: 91%
 <tr>
 <td>Microsoft Dynamics 连接器</td>
 <td>
-<p>Web API：Dynamics 365 本地版和联机版</p>
+<p>Web API：Dynamics 365 内部部署和联机版</p>
 </td>
 </tr>
 </tbody>
@@ -275,9 +274,9 @@ ht-degree: 91%
 </tbody>
 </table>
 
-## 客户端控制台{#ClientConsoleoperatingsystems}
+## 客户端控制台 {#ClientConsoleoperatingsystems}
 
-：警告：使用活动 Client Console需要以下操作系统和浏览器。
+警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
 
 ### 操作系统
 
@@ -339,7 +338,7 @@ ht-degree: 91%
 
 ## 浏览器{#Browsers}
 
-以下浏览器与Web访问活动兼容。
+以下浏览器与 Campaign 兼容，可用于进行 Web 访问。
 
 <table>
 <tbody>
@@ -387,7 +386,7 @@ ht-degree: 91%
 </table>
 
 
-## 诸如此类{#Morelikethis}
+## 更多此类内容{#Morelikethis}
 
 * [Campaign Classic 发行说明](../../rn/using/latest-release.md)
 * [安装指南](../../installation/using/general-architecture.md)
