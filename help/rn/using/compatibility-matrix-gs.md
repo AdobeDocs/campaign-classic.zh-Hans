@@ -7,11 +7,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-translation-type: tm+mt
 source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -271,9 +270,9 @@ Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。随
 </table>
 
 
-## 客户端控制台{#ClientConsoleoperatingsystems}
+## 客户端控制台 {#ClientConsoleoperatingsystems}
 
-：警告：使用活动 Client Console需要以下操作系统和浏览器。
+警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
 
 ### 操作系统
 
@@ -334,7 +333,7 @@ Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。随
 
 ## 浏览器{#Browsers}
 
-以下浏览器与Web访问活动兼容。
+以下浏览器与 Campaign 兼容，可用于进行 Web 访问。
 
 <table>
 <tbody>
@@ -381,7 +380,7 @@ Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。随
 </tbody>
 </table>
 
-## 诸如此类{#Morelikethis-gs}
+## 更多此类内容{#Morelikethis-gs}
 
 * [Campaign Classic 发行说明](../../rn/using/latest-release.md)
 * [安装指南](../../installation/using/general-architecture.md)
