@@ -7,11 +7,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-translation-type: tm+mt
 source-git-commit: 9781e313e03489d203e14ab0c426aa1001c7a257
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4297'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,15 +35,15 @@ Campaign Classic 的“帮助和支持选项”页面已集成到核心文档中
 [有关许可管理的一章](../../platform/using/access-management.md)已经过了改进并分为数节，包括有关[操作员](../../platform/using/access-management-operators.md)、[操作员组](../../platform/using/access-management-groups.md)、[已命名权限](../../platform/using/access-management-named-rights.md)和[文件夹管理](../../platform/using/access-management-folders.md)的详细信息。
 
 通过以下新页面了解如何创建和管理活动：
-* [创建和配置活动模板](../../campaign/using/marketing-campaign-templates.md)
+* [创建和配置营销活动模板](../../campaign/using/marketing-campaign-templates.md)
 * [营销活动投放](../../campaign/using/marketing-campaign-deliveries.md)
-* [选择活动受众](../../campaign/using/marketing-campaign-target.md)
+* [选择营销活动受众](../../campaign/using/marketing-campaign-target.md)
 * [管理关联文档](../../campaign/using/marketing-campaign-assets.md)
 * [建立和管理审批流程](../../campaign/using/marketing-campaign-approval.md)
 
 在&#x200B;**[!UICONTROL Advanced JavaScript]**&#x200B;活动部分中添加了有关如何使用 task.setCompleted() 方法终止任务和防止将来出现撤回的信息。[阅读更多](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
-[可投放性](../../delivery/using/about-deliverability.md)部分已更新，现包括指向新的 [Adobe 可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)的链接。所有与适用于各种 Adobe 解决方案的可投放性相关的一般信息均已移至[最佳实践指南附录](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources)。
+[可投放性](../../delivery/using/about-deliverability.md)部分已更新，现包括指向新的 [Adobe 可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)的链接。所有与适用于各种 Adobe 解决方案的可投放性相关的一般信息均已移至[最佳实践指南附录](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans#additional-resources)。
 
 ## 2021 年 2 月 {#release-21.1}
 
@@ -179,9 +178,9 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 现在，可在以下主题中获取操作方法视频：
 
-* [如何使用类型学规则和预定义过滤器设置疲劳管理](../../campaign/using/about-campaign-typologies.md)
+* [如何使用类型规则和预定义过滤器建立疲劳管理](../../campaign/using/about-campaign-typologies.md)
 
-* [如何在活动中创建电子邮件](../../campaign/using/marketing-campaign-deliveries.md)
+* [如何在营销活动中创建电子邮件](../../campaign/using/marketing-campaign-deliveries.md)
 
 * [如何创建包含条件内容的多语言新闻稿](../../delivery/using/conditional-content.md)
 
@@ -193,7 +192,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 * [如何使用个性化字段个性化电子邮件](../../delivery/using/personalization-fields.md)
 
-* [如何通过电子邮件管理种子和验证](../../delivery/using/steps-defining-the-target-population.md)
+* [如何在电子邮件中管理种子和验证](../../delivery/using/steps-defining-the-target-population.md)
 
 * [如何设置循环投放](../../workflow/using/recurring-delivery.md)
 
@@ -336,7 +335,7 @@ Hadoop FDA 连接器增强 - [阅读更多](../../installation/using/configure-f
 
 安装指南已更新并与最新版本的兼容性矩阵同步。新增了支持的系统。已删除已弃用和不支持的系统的实例。[阅读更多](../../installation/using/general-architecture.md)
 
-更新了兼容性矩阵，纳入 Hadoop 3.0 和 Snowflake FDA 连接器。[阅读更多](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+更新了兼容性矩阵，纳入 Hadoop 3.0 和 Snowflake FDA 连接器。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 
 安装指南中添加了有关 IP 关联的最佳实践。[阅读更多](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -354,7 +353,7 @@ Hadoop FDA 连接器增强 - [阅读更多](../../installation/using/configure-f
 
 **Campaign Classic 本地和托管功能矩阵**&#x200B;页面已更新新的 FDA 连接器。[阅读更多](../../installation/using/capability-matrix.md)。
 
-**Campaign Classic 功能矩阵**&#x200B;页面已更新。[阅读更多](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+**Campaign Classic 功能矩阵**&#x200B;页面已更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 
 新的&#x200B;**[!UICONTROL Cleanup of Nmsaddress]**&#x200B;工作流记录在[此处](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)。
 
@@ -404,7 +403,7 @@ FDA 矩阵页面已移到[此处](../../installation/using/remote-database-acces
 
 **随版本提供的其他文档更新**
 
-Adobe Campaign 增强 MTA 文档现已可用。[阅读更多](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+Adobe Campaign 增强 MTA 文档现已可用。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)
 
 增加了新的部分，介绍如何对活动中保持“尽快启动”状态的工作流进行故障排除。[阅读更多](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -466,7 +465,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 **19.1 版本中包含的新功能**
 
-控制面板 - [阅读更多](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+控制面板 - [阅读更多](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
 
 审核跟踪 - [阅读更多](../../production/using/audit-trail.md)
 
@@ -474,7 +473,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 已创建新的版本升级常见问题解答。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/build-upgrade-faq.html)
 
-[兼容性矩阵](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)已更新。更新了支持的列表库系统，以及 Android/iOS 版本和相关 SDK。已存档 [19.0 兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix-19-0.html)。
+[兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)已更新。更新了支持的列表库系统，以及 Android/iOS 版本和相关 SDK。已存档 [19.0 兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix-19-0.html)。
 
 “Campaign Classic 中已弃用和已删除的功能”页面已更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html)
 
@@ -529,7 +528,7 @@ Apache 配置步骤已更新。[阅读更多](../../installation/using/integrati
 更新了有关共享受众集成的文档。
 [阅读更多](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-以下技术已更新：[SMS 连接器协议和设置](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)以及[序列自动生成](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+以下技术已更新：[SMS 连接器协议和设置](https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html)以及[序列自动生成](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
 技术工作流部分已更新。[阅读更多](../../workflow/using/about-technical-workflows.md)
 
