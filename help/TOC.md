@@ -8,17 +8,17 @@ user-guide-description: 设计、规划、执行、管理和优化跨渠道营�
 solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0bb3e853299c3ce0dc1bcbc2fd8a0bd4ef110bee
+source-git-commit: a9a32b383d4709d9f0adf1e886d2ec3a9d601652
 workflow-type: tm+mt
-source-wordcount: '2521'
+source-wordcount: '2522'
 ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic v7指南 {#using}
+# Adobe Campaign Classic v7文档 {#using}
 
-+ [产品文档](campaign-classic-home.md)
++ [Campaign v7文档](campaign-classic-home.md)
 + [最近更新](rn/using/documentation-updates.md)
 + 发行说明 {#release-notes}
    + [升级入门](rn/using/rn-overview.md)
