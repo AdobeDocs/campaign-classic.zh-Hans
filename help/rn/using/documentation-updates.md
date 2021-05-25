@@ -7,10 +7,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 9781e313e03489d203e14ab0c426aa1001c7a257
-workflow-type: ht
-source-wordcount: '4297'
-ht-degree: 100%
+source-git-commit: 3413a54b1f45d23dcec9bf363bcf714a94642245
+workflow-type: tm+mt
+source-wordcount: '4369'
+ht-degree: 98%
 
 ---
 
@@ -20,9 +20,21 @@ ht-degree: 100%
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
+## 2021 年 5 月 {#may-2021}
+
+工作流热图报表文档已更新和改进。 [阅读更多](../../workflow/using/heatmap.md)
+
+兼容性矩阵中更新了Campaign客户端控制台要求。 [阅读更多](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+
+已改进并阐明Campaign客户端控制台的步骤安装。 [阅读更多](../../installation/using/installing-the-client-console.md)
+
+已创建有关跟踪的URL签名问题的新技术说明。 [阅读更多](../../technotes/tracked-urls.md)
+
 ## 2021 年 4 月 {#april-2021}
 
 新增的一个小节介绍了如何使用 Adobe Experience Platform Sources 与 Destinations 在 Campaign Classic 和 Adobe 实时客户数据平台 (RTCDP) 之间共享数据。[阅读更多](../../integrations/using/get-started-sources-destinations.md)
+
+已创建一项新技术说明，以了解如何在ISP中断后更新退回资格。 [阅读更多](../../delivery/using/update-bounce-qualification.md)
 
 ## 2021 年 3 月 {#march-2021}
 
@@ -335,7 +347,7 @@ Hadoop FDA 连接器增强 - [阅读更多](../../installation/using/configure-f
 
 安装指南已更新并与最新版本的兼容性矩阵同步。新增了支持的系统。已删除已弃用和不支持的系统的实例。[阅读更多](../../installation/using/general-architecture.md)
 
-更新了兼容性矩阵，纳入 Hadoop 3.0 和 Snowflake FDA 连接器。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
+更新了兼容性矩阵，纳入 Hadoop 3.0 和 Snowflake FDA 连接器。[阅读更多](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 安装指南中添加了有关 IP 关联的最佳实践。[阅读更多](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -353,7 +365,7 @@ Hadoop FDA 连接器增强 - [阅读更多](../../installation/using/configure-f
 
 **Campaign Classic 本地和托管功能矩阵**&#x200B;页面已更新新的 FDA 连接器。[阅读更多](../../installation/using/capability-matrix.md)。
 
-**Campaign Classic 功能矩阵**&#x200B;页面已更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
+**Campaign Classic 功能矩阵**&#x200B;页面已更新。[阅读更多](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 新的&#x200B;**[!UICONTROL Cleanup of Nmsaddress]**&#x200B;工作流记录在[此处](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)。
 
@@ -403,7 +415,7 @@ FDA 矩阵页面已移到[此处](../../installation/using/remote-database-acces
 
 **随版本提供的其他文档更新**
 
-Adobe Campaign 增强 MTA 文档现已可用。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)
+Adobe Campaign 增强 MTA 文档现已可用。[阅读更多](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 增加了新的部分，介绍如何对活动中保持“尽快启动”状态的工作流进行故障排除。[阅读更多](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -465,7 +477,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 **19.1 版本中包含的新功能**
 
-控制面板 - [阅读更多](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
+控制面板 - [阅读更多](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
 
 审核跟踪 - [阅读更多](../../production/using/audit-trail.md)
 
@@ -473,7 +485,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 已创建新的版本升级常见问题解答。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/build-upgrade-faq.html)
 
-[兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)已更新。更新了支持的列表库系统，以及 Android/iOS 版本和相关 SDK。已存档 [19.0 兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix-19-0.html)。
+[兼容性矩阵](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)已更新。更新了支持的列表库系统，以及 Android/iOS 版本和相关 SDK。已存档 [19.0 兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix-19-0.html)。
 
 “Campaign Classic 中已弃用和已删除的功能”页面已更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html)
 
@@ -528,7 +540,7 @@ Apache 配置步骤已更新。[阅读更多](../../installation/using/integrati
 更新了有关共享受众集成的文档。
 [阅读更多](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-以下技术已更新：[SMS 连接器协议和设置](https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html)以及[序列自动生成](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+以下技术已更新：[SMS 连接器协议和设置](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)以及[序列自动生成](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
 技术工作流部分已更新。[阅读更多](../../workflow/using/about-technical-workflows.md)
 
