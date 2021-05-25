@@ -1,24 +1,24 @@
 ---
-audience: end-user
-breadcrumb-title: 帮助中心
+solution: Campaign Classic
 product: campaign
-title: Campaign Classic 指南
+sub-product: adobe campaign classic
+title: Adobe Campaign Classic v7帮助中心
+breadcrumb-title: Campaign Classicv7
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 设计、规划、执行、管理和优化跨渠道营销活动，以实现较高的营销投资回报。
-solution: Campaign Classic
-sub-product: adobe campaign classic
+audience: end-user
 type: Documentation
-source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
+source-git-commit: 43f49ecb651e37a7e166f8823c75d938338b952c
 workflow-type: tm+mt
-source-wordcount: '2521'
+source-wordcount: '2522'
 ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic v7指南 {#using}
+# Adobe Campaign Classic v7文档{#campaign-v7}
 
-+ [产品文档](campaign-classic-home.md)
++ [Campaign Classicv7文档](campaign-classic-home.md)
 + [最近更新](rn/using/documentation-updates.md)
 + 发行说明 {#release-notes}
    + [升级入门](rn/using/rn-overview.md)
