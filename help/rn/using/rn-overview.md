@@ -7,11 +7,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-translation-type: ht
-source-git-commit: 8294b522efb51cb1b961c9284675c7966132e957
-workflow-type: ht
-source-wordcount: '415'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +62,7 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 ## 支持和其他有用链接{#support}
 
 * [帮助与支持](../../support.md)
-* [控制面板版本](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)
+* [控制面板版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)
 * [最新文档更新](../../rn/using/documentation-updates.md)
 * [已弃用和已删除的功能](../../rn/using/deprecated-features.md)
 
