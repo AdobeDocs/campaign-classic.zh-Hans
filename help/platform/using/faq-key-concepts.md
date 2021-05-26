@@ -6,14 +6,13 @@ description: Campaign Classic 常见问题解答
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 100%
+source-wordcount: '885'
+ht-degree: 99%
 
 ---
-
 
 # 重要概念 {#key-concepts}
 
@@ -84,7 +83,7 @@ Adobe Campaign 包括在不同的应用程序服务器模块之间编排所有�
 
 [单击此处了解更多信息](../../delivery/using/about-email-channel.md)。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此内容](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此内容](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## 如何发送 SMS 消息？{#how-to-send-sms-messages-}
 
