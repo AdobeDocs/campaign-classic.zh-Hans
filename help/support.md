@@ -1,47 +1,46 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 'Campaign Classic的帮助和支持选项 '
-description: 需要Campaign Classic支持？ 你在正确的地方！
+title: '帮助和支持选项，用于Campaign Classic '
+description: 需要Campaign Classic支持？ 您找到了正确的地方！
 hidefromtoc: true
-translation-type: tm+mt
-source-git-commit: 108f6cf912bb855fd34263d9e069260769a3ef6a
+exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 10%
+source-wordcount: '799'
+ht-degree: 57%
 
 ---
 
+# {#help-support-options}Campaign Classic的帮助和支持选项
 
-# Campaign Classic {#help-support-options}的帮助和支持选项
+需要Campaign Classic支持？ 您找到了正确的地方！
 
-需要Campaign Classic支持？ 你在正确的地方！
-
-使用我们的常见问题解答、最佳实践、在线资源和支持门户获取支持。 您还可以加入活动社区、询问专家或记录问题。
+使用我们的常见问题解答、最佳实践、在线资源和支持门户获取支持。您还可以加入 Campaign 社区、询问专家或登记问题。
 
 <table>
     <tr>
-        <td><img src="platform/using/assets/do-not-localize/icon-faq.svg" width="60px"><p><a href="#faq">常见问题和最佳做法</a></p></td>
+        <td><img src="platform/using/assets/do-not-localize/icon-faq.svg" width="60px"><p><a href="#faq">常见问题和最佳实践</a></p></td>
         <td><img src="platform/using/assets/do-not-localize/icon-control-panel.svg" width="60px"><p><a href="#control-panel">Campaign 控制面板</a></p></td>
         <td><img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px"><p><a href="#support">寻求帮助</a></p></td>
     </tr>
 </table>
 
-## 常见问题和最佳实践{#faq}
+## 常见问题和最佳实践 {#faq}
 
 <img src="platform/using/assets/do-not-localize/icon-faq.svg" width="60px">
 
 ### 常见问题解答
 
-如何升级到新版本？ 如何监控工作流执行？ 什么是数据库清理工作流？... [读出前10个问题](platform/using/common-questions.md)。
+如何升级到新内部版本？ 如何监控工作流的执行？ 什么是数据库清理工作流？... [读出前10个问题](platform/using/common-questions.md)。
 
 <table>
-    <tr><td><strong>主题Q&amp;A</strong></td><td><strong>常见问题</strong></td><td><strong>最佳做法</strong></td><td><strong>操作说明</strong></td></tr>
+    <tr><td><strong>主题问答</strong></td><td><strong>常见问题</strong></td><td><strong>最佳实践</strong></td><td><strong>操作说明</strong></td></tr>
     <tr>
     <td valign="top">
         <ul>
         <li><a href="platform/using/faq-key-concepts.md">重要概念</a></li>
-        <li><a href="platform/using/faq-campaign-config.md">活动设置</a></li>
+        <li><a href="platform/using/faq-campaign-config.md">营销活动设置</a></li>
         <li><a href="platform/using/faq-reporting.md">报告</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">内部版本升级</a></li>
         <li><a href="platform/using/faq-messages.md">测试、发送和跟踪消息</a></li>
@@ -53,11 +52,11 @@ ht-degree: 10%
     <td valign="top">
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">性能和吞吐量问题</a></li>
-        <li><a href="delivery/using/delivery-performances.md">投放表演</a></li>
+        <li><a href="delivery/using/delivery-performances.md">投放性能</a></li>
         <li><a href="workflow/using/workflow-best-practices.md">优化工作流性能</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">工作流执行疑难解答</a></li>
         <li><a href="platform/using/sftp-server-usage.md">SFTP 服务器使用情况</a></li>
-        <li><a href="delivery/using/understanding-delivery-failures.md">了解投放故障</a></li>
+        <li><a href="delivery/using/understanding-delivery-failures.md">了解投放失败</a></li>
         </ul>
     </td>
    <td valign="top">
@@ -65,9 +64,9 @@ ht-degree: 10%
         <li><a href="workflow/using/workflow-best-practices.md">工作流最佳实践</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">技术工作流监控</a></li>
         <li><a href="delivery/using/about-message-tracking.md">了解跟踪管理</a></li>
-        <li><a href="production/using/monitoring-guidelines.md">发现监视工具</a></li>
-        <li><a href="platform/using/import-export-workflows.md">导入包含工作流的数据</a></li>
-        <li><a href="delivery/using/steps-sending-the-delivery.md">以多个批次发送消息</a></li>
+        <li><a href="production/using/monitoring-guidelines.md">发现监控工具</a></li>
+        <li><a href="platform/using/import-export-workflows.md">使用工作流导入数据</a></li>
+        <li><a href="delivery/using/steps-sending-the-delivery.md">分批发送消息</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">设计电子邮件内容</a></li>
         <li><a href="delivery/using/delivery-best-practices.md">投放最佳实践</a></li>
         </ul>
@@ -75,10 +74,10 @@ ht-degree: 10%
     <td valign="top">
         <ul>
         <li><a href="production/using/build-upgrade.md">升级到最新版本</a></li>
-        <li><a href="platform/using/faq-build-upgrade.md">构建升级常见问题解答</a></li>
-        <li><a href="delivery/using/about-delivery-monitoring.md">监视投放</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">内部版本升级常见问题解答</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">监测投放</a></li>
         <li><a href="delivery/using/understanding-quarantine-management.md">了解隔离管理</a></li>
-        <li><a href="installation/using/get-started-security-privacy.md">安全性和隐私核对清单</a></li>
+        <li><a href="installation/using/get-started-security-privacy.md">安全和隐私检查清单</a></li>
         <li><a href="platform/using/privacy-management.md">隐私和同意管理</a></li>
         <li><a href="platform/using/steps-to-create-a-query.md">设计查询</a></li>
         <li><a href="workflow/using/querying-recipient-table.md">查询样例</a></li>
@@ -92,59 +91,60 @@ ht-degree: 10%
 
 <img src="platform/using/assets/do-not-localize/icon-control-panel.svg" width="60px">
 
-### 什么是控制面板?
+### 什么是控制面板？
 
-活动控制面板允许您管理每个实例的设置和跟踪实例，从而帮助您以Campaign Classic产品管理员的身份提高工作效率。
-[请单](https://docs.adobe.com/content/hecontrol-panel/using/discover-control-panel/key-features.html) 击此处了解详细信息。
+Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用情况，从而帮助您作为Campaign Classic的产品管理员提高工作效率。
+[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)以了解更多信息。
 
 >[!NOTE]
 >
->控制面板可供所有管理员用户访问。 [此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
+>所有管理员用户都可访问控制面板。[此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
 >
->请注意，您的实例必须托管在AWS上，并使用最新的[Gold Standard](rn/using/gs-overview.md)版本或最新的[ GA版本(21.1)](rn/using/latest-release.md)进行升级。 了解如何在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查您的版本。 要检查您的实例是否托管在AWS上，请按照[本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详细介绍的步骤操作。
+>请注意，您的实例必须托管在AWS上，并升级为最新的[Gold Standard](rn/using/gs-overview.md)内部版本或[最新的GA内部版本(21.1)](rn/using/latest-release.md)。 在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
 
 ### 如何访问控制面板？
 
-控制面板可直接从Adobe Experience Cloud获得。 仅供管理员用户访问。 [请单](https://docs.adobe.com/content/hecontrol-panel/using/discover-control-panel/accessing-control-panel.html) 击此处了解详细信息。
+可直接从 Adobe Experience Cloud 访问控制面板。仅管理员用户可以访问。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html)以了解更多信息。
 
 ### 控制面板常见问题解答
 
-[单击](https://docs.adobe.com/content/hecontrol-panel/using/faq.html) 此处访问活动控制面板常见问题解答。
+[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)以访问 Campaign 控制面板常见问题解答。
 
 ### SFTP 管理
 
-在控制面板中，您可以与连接到您有权访问的活动实例的所有SFTP服务器进行交互。 您可以监控存储容量、管理允许列表上的IP地址和公共SSH密钥。 [请单](https://docs.adobe.com/content/hecontrol-panel/using/sftp-management/about-sftp-management.html) 击此处了解详细信息。
+在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监测它们的存储容量、管理允许列表上的 IP 地址和公共 SSH 密钥。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以了解更多信息。
 
 ### 子域和证书
 
-您可以监视子域及其证书。 了解详情:
-* [子域品牌](https://docs.adobe.com/content/hecontrol-panel/using/subdomains-and-certificates/subdomains-branding.html)
-* [设置新子域](https://docs.adobe.com/content/hecontrol-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
-* [监视SSL证书](https://docs.adobe.com/content/hecontrol-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html)
+您可以监测您的子域及其证书。在以下页面中了解详情：
+* [子域品牌化](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
+* [设置新子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
+* [监测 SSL 证书](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
 
 ### 实例设置
 
-了解如何在控制面板中管理Campaign Classic实例设置。 了解详情:
-* [允许列表上的IP](https://docs.adobe.com/content/hecontrol-panel/using/instances-settings/ip-whitelisting-instance-access.html)
-* [URL 权限](https://docs.adobe.com/content/hecontrol-panel/using/instances-settings/url-permissions.html)
-* [实例详细信息](https://docs.adobe.com/content/hecontrol-panel/using/instances-settings/instance-details.html)
+了解如何在控制面板中管理Campaign Classic实例设置。 在以下页面中了解详情：
+* [在允许列表上添](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) 加IP以访问您的Campaign实例
+* [管理URL权限](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
+* [访问实例详细信息](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
+* [管理用于数据加密的GPG密钥](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
 
-## 请求帮助{#support}
+## 寻求帮助 {#support}
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-已通过[Adobe Admin Console](https://adminconsole.adobe.com/overview)启动新的票务系统。 新系统要求每个用户都有新的个人帐户，并且具有正确的权限。 如果您发现无法使用Adobe ID登录，请通过Experience League请求访问，客户关怀团队将尽快设置您。 [了解详情](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)
+新的票务系统已通过[Adobe Admin Console](https://adminconsole.adobe.com/overview)启动。 新系统要求每个用户都有新的个人帐户，并具有正确的权限。如果您发现无法使用 Adobe ID 登录，请通过 Experience League 请求访问，客户关怀团队将尽快为您进行设置。[了解详情](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)
 
-### 问问专家！
+### 询问专家！
 
-加入Campaign Classic社区：在现有问题中搜索答案，或向社区提问。 [加入对话](https://experienceleaguecommunities.adobe.cadobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+加入 Campaign Classic 社区：在现有问题中搜索答案，或向社区提问。[加入对话](https://experienceleaguecommunities.adobe.cadobe-campaign-classic/ct-p/adobe-campaign-classic-community)
 
-### 访问活动下载中心
+### 访问Campaign下载中心
 
-从2020年6月起，Experience Cloud解决方案软件分发取代了旧版Neolane下载中心，并为查找和下载您的软件、包和工具提供了更高效的体验。 [单](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) 击此处访问Experience Cloud软件分发。了解有关此页面](https://docs.adobe.com/content/heexperience-cloud/software-distribution/home.html)中新增的下载中心[的更多信息。
+自2020年6月起，Experience Cloud解决方案Software Distribution将取代旧版Neolane下载中心，并提供更高效的软件、包和工具查找和下载体验。 [单击](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) 此处访问Experience CloudSoftware Distribution。在此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)中了解有关新的下载中心[的更多信息。
 
 ### 创建票证或开始聊天
 
-通过创建案例，您可以就您在Adobe产品中遇到的任何问题与Adobe客户支持团队联系。 为帮助您解决问题或解决问题，Adobe Admin Console将允许您与Adobe客户支持部门进行聊天。
+通过创建案例，您可以就您在使用 Adobe 产品的过程中遇到的任何问题联系 Adobe 客户支持团队。为帮助您解决问题或排除疑难，Adobe Admin Console 将支持您与 Adobe 客户支持团队聊天。
 
-要在该新系统中记录问题或开始聊天会话，请连接到[Adobe Admin Console](https://adminconsole.adobe.com/overview)。 按照[本页](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)中描述的详细过程操作。
+如需在新系统中登记问题或开始聊天会话，请连接到 [Adobe Admin Console](https://adminconsole.adobe.com/overview)。按照[此页面](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)中描述的详细过程操作。
