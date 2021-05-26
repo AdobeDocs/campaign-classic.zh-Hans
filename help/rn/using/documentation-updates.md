@@ -7,9 +7,9 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 3413a54b1f45d23dcec9bf363bcf714a94642245
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '4369'
+source-wordcount: '4367'
 ht-degree: 98%
 
 ---
@@ -441,7 +441,7 @@ Adobe Campaign 与 Adobe 实时客户数据平台之间的集成现在在&#x200B
 
 添加了信息，以指定个性化字段内容不能超过 1024 个字符。[阅读更多](../../delivery/using/personalization-fields.md)
 
-控制面板文档已集成到新的协作文档集中。[阅读更多](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
+控制面板文档已集成到新的协作文档集中。[阅读更多](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 投放最佳实践快速入门指南已更新。[阅读更多](../../delivery/using/delivery-best-practices.md)
 
@@ -477,7 +477,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 **19.1 版本中包含的新功能**
 
-控制面板 - [阅读更多](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+控制面板 - [阅读更多](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
 
 审核跟踪 - [阅读更多](../../production/using/audit-trail.md)
 
