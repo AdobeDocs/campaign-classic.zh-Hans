@@ -18,7 +18,7 @@ ht-degree: 99%
 
 # Adobe Campaign Classic v7文档 {#using}
 
-+ [Campaign v7文档](campaign-classic-home.md)
++ [Campaign v7 文档](campaign-classic-home.md)
 + [最近更新](rn/using/documentation-updates.md)
 + 发行说明 {#release-notes}
    + [升级入门](rn/using/rn-overview.md)
@@ -29,13 +29,13 @@ ht-degree: 99%
       + [[!DNL Gold Standard] 兼容性矩阵](rn/using/compatibility-matrix-gs.md)
    + 之前版本 {#previous-releases}
       + [20.3 版](rn/using/release--20-3.md)
-      + [版本 20.2](rn/using/release--20-2.md)
-      + [版本20.1](rn/using/release--20-1.md)
-      + [版本19.2](rn/using/release--19-2.md)
-      + [版本19.1](rn/using/release--19-1.md)
-      + [版本18.10](rn/using/release--18-10.md)
-      + [版本18.6](rn/using/release--18-6.md)
-      + [版本18.4](rn/using/release--18-4.md)
+      + [20.2 版](rn/using/release--20-2.md)
+      + [20.1 版](rn/using/release--20-1.md)
+      + [19.2 版](rn/using/release--19-2.md)
+      + [19.1 版](rn/using/release--19-1.md)
+      + [18.10 版](rn/using/release--18-10.md)
+      + [18.6 版](rn/using/release--18-6.md)
+      + [18.4 版](rn/using/release--18-4.md)
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
    + [技术说明](technotes/technote.md)
@@ -51,7 +51,7 @@ ht-degree: 99%
          + [使用 Campaign Explorer](platform/using/adobe-campaign-explorer.md)
          + [浏览和自定义列表](platform/using/adobe-campaign-ui-lists.md)
       + 常见问题解答 {#faq}
-         + [首要问题](platform/using/common-questions.md)
+         + [最常见问题](platform/using/common-questions.md)
          + [全局概念](platform/using/faq-key-concepts.md)
          + [内部版本升级](platform/using/faq-build-upgrade.md)
          + [隐私](platform/using/privacy-faq.md)
@@ -89,9 +89,9 @@ ht-degree: 99%
       + 管理数据加密和压缩{#managing-data-encryption-compression}
          + [在处理之前解压缩或解密文件](platform/using/unzip-decrypt.md)
          + [在处理之前压缩或加密文件](platform/using/zip-encrypt.md)
-      + 最佳实践和疑难解答{#best-practices}
+      + 最佳实践和故障排除{#best-practices}
          + [导入和导出最佳实践](platform/using/import-export-best-practices.md)
-         + [SFTP 服务器最佳实践和疑难解答](platform/using/sftp-server-usage.md)
+         + [SFTP 服务器最佳实践和故障排除](platform/using/sftp-server-usage.md)
    + 筛选数据{#filtering-data}
       + [筛选选项](platform/using/filtering-options.md)
       + [创建过滤器](platform/using/creating-filters.md)
@@ -133,7 +133,7 @@ ht-degree: 99%
          + [生成个性化内容](delivery/using/design-and-personalize.md)
          + [定义正确的受众](delivery/using/define-the-right-audience.md)
          + [发送前检查](delivery/using/check-before-sending.md)
-         + [跟踪和监视](delivery/using/track-and-monitor.md)
+         + [跟踪和监测](delivery/using/track-and-monitor.md)
    + 发送电子邮件{#sending-emails}
       + [关于电子邮件渠道](delivery/using/about-email-channel.md)
       + [创建电子邮件投放](delivery/using/creating-an-email-delivery.md)
@@ -146,16 +146,16 @@ ht-degree: 99%
          + [使用日本手机发送](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [附加文件](delivery/using/attaching-files.md)
    + 发送短信 {#sending-messages-on-mobiles}
-      + [开始使用短信](delivery/using/sms-channel.md)
+      + [短信入门](delivery/using/sms-channel.md)
       + [配置短信渠道](delivery/using/sms-set-up.md)
       + [创建短信](delivery/using/sms-create.md)
       + [发送和跟踪短信](delivery/using/sms-send.md)
       + [SMS 连接器协议和设置](delivery/using/sms-protocol.md)
-      + [SMS 疑难解答](delivery/using/troubleshooting-sms.md)
+      + [短信故障排除](delivery/using/troubleshooting-sms.md)
       + [迁移到扩展通用 SMPP 连接器](delivery/using/unsupported-connector-migration.md)
    + [发送 LINE 消息](delivery/using/line-channel.md)
    + 发送推送通知 {#sending-push-notifications}
-      + [开始使用移动应用程序渠道](delivery/using/about-mobile-app-channel.md)
+      + [移动应用程序渠道入门](delivery/using/about-mobile-app-channel.md)
       + [将 Campaign SDK 集成到移动应用程序](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + 配置移动应用程序{#configure-the-mobile-app}
          + [应用程序配置入门](delivery/using/get-started-app-config.md)
@@ -204,14 +204,14 @@ ht-degree: 99%
    + 服务和订阅 {#subscriptions-and-referrals}
       + [关于服务和订阅](delivery/using/about-services-and-subscriptions.md)
       + [管理订阅](delivery/using/managing-subscriptions.md)
-      + [病毒式和社交媒体营销](delivery/using/viral-and-social-marketing.md)
+      + [病毒式营销和社交媒体营销](delivery/using/viral-and-social-marketing.md)
    + 监测投放 {#monitoring-deliveries}
       + [投放监测入门](delivery/using/about-delivery-monitoring.md)
       + [访问投放列表](delivery/using/list-of-deliveries.md)
-      + [传递仪表板](delivery/using/delivery-dashboard.md)
-      + [传递性能最佳实践](delivery/using/delivery-performances.md)
-      + [传递疑难解答](delivery/using/delivery-troubleshooting.md)
-      + [传递状态](delivery/using/delivery-statuses.md)
+      + [投放仪表板](delivery/using/delivery-dashboard.md)
+      + [投放性能最佳实践](delivery/using/delivery-performances.md)
+      + [投放疑难解答](delivery/using/delivery-troubleshooting.md)
+      + [投放状态](delivery/using/delivery-statuses.md)
       + [了解投放失败](delivery/using/understanding-delivery-failures.md)
       + [在 ISP 中断后更新退回限制条件](delivery/using/update-bounce-qualification.md)
       + [了解隔离管理](delivery/using/understanding-quarantine-management.md)
@@ -225,7 +225,7 @@ ht-degree: 99%
       + [配置 URL 跟踪选项](delivery/using/personalizing-url-tracking.md)
       + [访问跟踪日志](delivery/using/accessing-the-tracking-logs.md)
       + [测试跟踪](delivery/using/testing-tracking.md)
-      + [跟踪疑难解答](delivery/using/tracking-troubleshooting.md)
+      + [跟踪故障排除](delivery/using/tracking-troubleshooting.md)
    + 可投放性管理 {#deliverability-management}
       + [什么是可投放性](delivery/using/about-deliverability.md)
       + [控制消息内容](delivery/using/control-message-content.md)
@@ -237,7 +237,7 @@ ht-degree: 99%
       + [关于内容管理](delivery/using/about-content-management.md)
       + [内容管理者资源和原则](delivery/using/content-manager-resources-and-principles.md)
       + [用例：创建内容管理](delivery/using/use-case--creating-content-management.md)
-      + [数据模式](delivery/using/data-schemas.md)
+      + [数据架构](delivery/using/data-schemas.md)
       + [输入窗体](delivery/using/input-forms.md)
       + [格式化](delivery/using/formatting.md)
       + [发布模板](delivery/using/publication-templates.md)
@@ -351,7 +351,7 @@ ht-degree: 99%
       + [保存 Web 窗体答案](web/using/web-forms-answers.md)
       + [发布 Web 窗体](web/using/publishing-a-web-form.md)
       + [定义 Web 窗体属性](web/using/defining-web-forms-properties.md)
-      + [翻译 Web 窗体](web/using/translating-a-web-form.md)
+      + [解释 Web 窗体](web/using/translating-a-web-form.md)
       + [用例：Web 窗体](web/using/use-cases--web-forms.md)
    + 在线调查 {#online-surveys}
       + [调查入门](web/using/about-surveys.md)
@@ -364,35 +364,35 @@ ht-degree: 99%
 + 与 Adobe Experience Cloud 集成 {#integrating-with-adobe-experience-cloud}
    + [关于 Campaign 集成](integrations/using/about-campaign-integrations.md)
    + 受众共享 {#audience-sharing}
-      + [与 [!DNL Adobe Experience Cloud]共享受众](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [与  [!DNL Adobe Experience Cloud] 共享受众](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [向 Adobe 提交请求](integrations/using/submitting-request-to-adobe.md)
-      + [在 [!DNL Adobe Campaign]中配置共享受众集成](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [在  [!DNL Adobe Campaign] 中配置共享受众集成](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [故障排除](integrations/using/troubleshooting.md)
       + [导入和导出受众](integrations/using/importing-and-exporting-audiences.md)
    + 资源共享 {#asset-sharing}
-      + [与 [!DNL Adobe Experience Cloud]共享资源](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [配置对 [!DNL Assets]的访问](integrations/using/configuring-access-to-assets.md)
+      + [与  [!DNL Adobe Experience Cloud] 共享资源](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [配置对  [!DNL Assets] 的访问](integrations/using/configuring-access-to-assets.md)
       + [插入共享资源](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [关于 [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [关于  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [配置集成](integrations/using/configuring-the-integration.md)
-      + [创建 [!DNL Experience Manager] 新闻稿](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [创建  [!DNL Experience Manager]  新闻稿](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [与 [!DNL Adobe Target]集成](integrations/using/integrating-with-adobe-target.md)
-      + [配置与 [!DNL Adobe Target]的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [与  [!DNL Adobe Target] 集成](integrations/using/integrating-with-adobe-target.md)
+      + [配置与  [!DNL Adobe Target] 的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
-   + ACS Connector {#acs-connector}
+   + ACS 连接器 {#acs-connector}
       + [[!DNL ACS Connector] 原则和数据周期](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [同步用户档案](integrations/using/synchronizing-profiles.md)
       + [同步受众](integrations/using/synchronizing-audiences.md)
       + [同步 Web 应用程序](integrations/using/synchronizing-web-applications.md)
-      + [对 [!DNL ACS Connector]进行故障排除](integrations/using/troubleshooting-the-acs-connector.md)
-   + Adobe Experience Cloud Triggers {#experience-triggers}
-      + [开始使用 [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [对  [!DNL ACS Connector] 进行故障排除](integrations/using/troubleshooting-the-acs-connector.md)
+   + Adobe Experience Cloud 触发器 {#experience-triggers}
+      + [ [!DNL Experience Cloud Triggers] 入门](integrations/using/about-triggers.md)
       + [配置管道](integrations/using/configuring-pipeline.md)
-      + [为 [!DNL Experience Cloud Triggers]配置 Adobe I/O](integrations/using/configuring-adobe-io.md)
+      + [为  [!DNL Experience Cloud Triggers] 配置 Adobe I/O](integrations/using/configuring-adobe-io.md)
       + [为自定义实施配置事件](integrations/using/events.md)
-      + [管道监控](integrations/using/pipeline-monitoring.md)
+      + [管道监测](integrations/using/pipeline-monitoring.md)
       + [管道故障排除](integrations/using/pipeline-troubleshooting.md)
    + Adobe Experience Platform Sources 与 Destinations{#aep-sources-destinations}
       + [Sources 与 Destinations 入门](integrations/using/get-started-sources-destinations.md)
@@ -403,7 +403,7 @@ ht-degree: 99%
       + [关于工作流](workflow/using/about-workflows.md)
       + [关于活动](workflow/using/about-activities.md)
       + [构建工作流](workflow/using/building-a-workflow.md)
-      + [目标数据](workflow/using/targeting-data.md)
+      + [Target 数据](workflow/using/targeting-data.md)
       + [使用工作流数据](workflow/using/how-to-use-workflow-data.md)
       + [工作流最佳实践](workflow/using/workflow-best-practices.md)
    + 执行工作流{#executing-a-workflow}
@@ -425,14 +425,14 @@ ht-degree: 99%
       + [单元格优惠](workflow/using/offers-by-cell.md)
       + [投放概要](workflow/using/delivery-outline.md)
       + [扩充](workflow/using/enrichment.md)
-      + [编辑模式](workflow/using/edit-schema.md)
+      + [编辑架构](workflow/using/edit-schema.md)
       + [优惠引擎](workflow/using/offer-engine.md)
       + [重复数据删除](workflow/using/deduplication.md)
       + [更改维度](workflow/using/change-dimension.md)
       + [列表更新](workflow/using/list-update.md)
       + [订阅服务](workflow/using/subscription-services.md)
       + [更新数据](workflow/using/update-data.md)
-      + [CRM Connector](workflow/using/crm-connector.md)
+      + [CRM 连接器](workflow/using/crm-connector.md)
    + 流量控制活动 {#flow-control-activities}
       + [关于流量控制活动](workflow/using/about-flow-control-activities.md)
       + [开始和结束](workflow/using/start-and-end.md)
@@ -445,7 +445,7 @@ ht-degree: 99%
       + [子工作流](workflow/using/sub-workflow.md)
       + [跳转（开始点和结束点）](workflow/using/jump--start-point-and-end-point-.md)
       + [外部信号](workflow/using/external-signal.md)
-      + [批准](workflow/using/approval.md)
+      + [审批](workflow/using/approval.md)
       + [警报](workflow/using/alert.md)
       + [任务](workflow/using/task.md)
    + 操作活动 {#action-activities}
@@ -455,7 +455,7 @@ ht-degree: 99%
       + [连续投放](workflow/using/continuous-delivery.md)
       + [循环投放](workflow/using/recurring-delivery.md)
       + [跨渠道投放](workflow/using/cross-channel-deliveries.md)
-      + [本地批准](workflow/using/local-approval.md)
+      + [本地审批](workflow/using/local-approval.md)
       + [数据加载 (RDBMS)](workflow/using/data-loading--rdbms-.md)
       + [加载 (SOAP)](workflow/using/loading--soap-.md)
       + [数据加载（文件）](workflow/using/data-loading--file-.md)
@@ -471,16 +471,16 @@ ht-degree: 99%
       + [文件传输](workflow/using/file-transfer.md)
       + [Web 下载](workflow/using/web-download.md)
       + [入站电子邮件](workflow/using/inbound-emails.md)
-      + [入站 SMS](workflow/using/inbound-sms.md)
+      + [入站短信](workflow/using/inbound-sms.md)
    + 用例 {#use-cases}
-      + [关于工作流使用案例](workflow/using/about-workflow-use-cases.md)
+      + [关于工作流用例](workflow/using/about-workflow-use-cases.md)
       + 投放 {#deliveries}
          + [使用本地审批活动](workflow/using/using-the-local-approval-activity.md)
          + [发送生日电子邮件](workflow/using/sending-a-birthday-email.md)
          + [加载投放内容](workflow/using/loading-delivery-content.md)
          + [跨渠道投放工作流](workflow/using/cross-channel-delivery-workflow.md)
          + [具有自定义日期字段的电子邮件扩充](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + 监控 {#monitoring}
+      + 监测 {#monitoring}
          + [向列表发送报告](workflow/using/sending-a-report-to-a-list.md)
          + [监督工作流](workflow/using/supervising-workflows.md)
          + [向操作员发送个性化提醒](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -489,7 +489,7 @@ ht-degree: 99%
          + [创建摘要列表](workflow/using/creating-a-summary-list.md)
          + [丰富数据](workflow/using/enriching-data.md)
          + [使用聚合](workflow/using/using-aggregates.md)
-         + [使用外部重复数据删除活动的合并功能](workflow/using/deduplication-merge.md)
+         + [使用重复数据删除活动的合并功能](workflow/using/deduplication-merge.md)
          + [设置循环导入工作流](workflow/using/recurring-import-workflow.md)
       + 设计查询 {#designing-queries}
          + [使用增量查询每季度更新列表](workflow/using/quarterly-list-update.md)
@@ -563,13 +563,13 @@ ht-degree: 99%
       + [分布式架构](interaction/using/distributed-architectures.md)
       + [数据缓冲区配置](installation/using/interaction---data-buffer.md)
    + 用例 {#case-study}
-      + [推荐规则](interaction/using/presentation-rules.md)
+      + [呈现规则](interaction/using/presentation-rules.md)
       + [入站渠道优惠](interaction/using/offers-on-an-inbound-channel.md)
       + [出站渠道优惠](interaction/using/offers-on-an-outbound-channel.md)
 + 事务性消息传递 {#transactional-messaging}
    + 事务性消息传递入门 {#introduction}
-      + [关于事务型消息传递](message-center/using/about-transactional-messaging.md)
-      + [交易消息架构](message-center/using/transactional-messaging-architecture.md)
+      + [关于事务性消息传递](message-center/using/about-transactional-messaging.md)
+      + [事务性消息传递架构](message-center/using/transactional-messaging-architecture.md)
       + [事件描述](message-center/using/event-description.md)
    + 配置实例 {#instance-configuration}
       + [创建共享连接](message-center/using/creating-a-shared-connection.md)
@@ -585,7 +585,7 @@ ht-degree: 99%
       + [创建消息内容](message-center/using/creating-message-content.md)
       + [管理事务性消息中的种子地址](message-center/using/managing-seed-addresses-in-transactional-messages.md)
       + [个性化数据](message-center/using/personalization-data.md)
-      + [交易消息预览](message-center/using/transactional-message-preview.md)
+      + [事务性消息预览](message-center/using/transactional-message-preview.md)
       + [发送验证](message-center/using/sending-a-proof.md)
       + [模板发布](message-center/using/template-publication.md)
       + [模板取消发布](message-center/using/template-unpublication.md)
@@ -595,7 +595,7 @@ ht-degree: 99%
       + [模板路由](message-center/using/routing-towards-a-template.md)
       + [投放执行](message-center/using/delivery-execution.md)
    + 报告 {#reports}
-      + [关于交易消息报告](message-center/using/about-transactional-messaging-reports.md)
+      + [关于事务性消息报告](message-center/using/about-transactional-messaging-reports.md)
       + [消息中心事件的历史](message-center/using/history-of-message-center-events.md)
       + [消息中心服务级别](message-center/using/message-center-service-level.md)
       + [消息中心处理时间](message-center/using/message-center-processing-time.md)
@@ -673,9 +673,9 @@ ht-degree: 99%
    + 连接到 Campaign{#connect-to-campaign}
       + [安装客户端控制台](installation/using/installing-the-client-console.md)
       + 通过 Adobe ID 连接 {#connecting-via-an-adobe-id}
-         + [关于 [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-         + [配置 Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
-         + [实施 Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
+         + [关于  [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [配置 Adobe  [!DNL IMS]](integrations/using/configuring-ims.md)
+         + [实施 Adobe  [!DNL IMS]](integrations/using/implementing-ims.md)
          + [IMS 故障排除](integrations/using/ims-troubleshooting.md)
       + [通过 LDAP 连接](installation/using/connecting-through-ldap.md)
    + 将 Campaign 连接到外部系统{#accessing-external-database}
@@ -708,10 +708,10 @@ ht-degree: 99%
    + 简介 {#introduction}
       + [前言](production/using/foreword.md)
       + [一般架构](production/using/general-architecture.md)
-      + [监控准则](production/using/monitoring-guidelines.md)
+      + [监测准则](production/using/monitoring-guidelines.md)
    + 生产流程 {#production-procedures}
-      + [配置原理](production/using/configuration-principle.md)
-      + [工作原理](production/using/operating-principle.md)
+      + [配置原则](production/using/configuration-principle.md)
+      + [操作原则](production/using/operating-principle.md)
       + [管理](production/using/administration.md)
       + [配置](production/using/configuration.md)
       + [日志文件](production/using/log-files.md)
@@ -742,7 +742,7 @@ ht-degree: 99%
          + [工作流执行](production/using/workflow-execution.md)
          + [密码丢失](production/using/lost-password.md)
          + [控制台更新](production/using/console-update.md)
-      + 传递疑难解答 {#delivery-troubleshooting-toc}
+      + 投放故障排除 {#delivery-troubleshooting-toc}
          + [性能和吞吐量问题](production/using/performance-and-throughput-issues.md)
          + [图像显示问题](production/using/image-display-issues.md)
          + [缺少图像](production/using/images-missing.md)
@@ -753,7 +753,7 @@ ht-degree: 99%
       + 数据库问题{#database-issues-toc}
          + [数据库性能](production/using/database-performances.md)
          + [Oracle 数据库的编码](production/using/encoding-of-the-oracle-database.md)
-      + 连接改进功能{#connection-improvements-toc}
+      + 连接改进{#connection-improvements-toc}
          + [连接失败](production/using/failure-to-connect.md)
          + [连接阈值](production/using/connection-thresholds.md)
       + 技术故障排除{#technical-troubleshooting-toc}
@@ -809,10 +809,10 @@ ht-degree: 99%
       + [Web 服务调用](configuration/using/web-service-calls.md)
       + [面向数据的 API](configuration/using/data-oriented-apis.md)
       + [面向业务的 API](configuration/using/business-oriented-apis.md)
-      + [实现 SOAP 方法](configuration/using/implementing-soap-methods.md)
+      + [实施 SOAP 方法](configuration/using/implementing-soap-methods.md)
       + [JavaScript 中的 SOAP 方法](configuration/using/soap-methods-in-javascript.md)
       + [添加其他 SQL 函数](configuration/using/adding-additional-sql-functions.md)
-   + 导航层次结构 {#navigation-hierarchy}
+   + 导航层级 {#navigation-hierarchy}
       + [配置资源管理器层级](configuration/using/configuration.md)
       + [编辑资源管理器层级](configuration/using/edition.md)
    + 使用自定义收件人表 {#use-a-custom-recipient-table}
