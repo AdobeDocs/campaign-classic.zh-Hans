@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ## 创建消息内容{#creating-message-content}
 
-事务型消息内容的定义与Adobe Campaign中常规投放的定义相同。 例如，对于电子邮件投放，您可以创建HTML或文本格式的内容、添加附件或个性化投放对象。 有关更多信息，请参阅[电子邮件投放](../../delivery/using/about-email-channel.md)的章节。
+事务型消息内容的定义与Adobe Campaign中常规投放的定义相同。 例如，对于电子邮件投放，您可以创建HTML或文本格式的内容、添加附件或个性化投放对象。 有关更多信息，请参阅[电子邮件投放](../../delivery/using/about-email-channel.md)一章。
 
 >[!IMPORTANT]
 >
