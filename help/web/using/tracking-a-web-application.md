@@ -1,30 +1,28 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 跟踪 Web 应用程序
 description: 跟踪 Web 应用程序
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
+# 跟踪 Web 应用程序访问{#tracking-a-web-application}
 
-# 跟踪Web应用程序上的访问{#tracking-a-web-application}
+Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序页面上的访问量。 此功能可用于所有Web应用程序类型（表单、在线调查、使用DCE创建的网页等）。
 
-Adobe Campaign允许您通过插入跟踪标签来跟踪和衡量Web 应用程序页面上的访问。 此功能可用于所有Web 应用程序类型(表单、在线调查、使用数字内容编辑器创建的网页等)。
+因此，您可以定义多个导航路径并评估其成功与否。 然后，恢复的数据将在每个应用程序的报告中提供。
 
-因此，您可以定义多个导航路径并评估其成功程度。 然后，恢复的数据可在每个应用程序的报告中使用。
+此版本的主要改进如下：
 
-此版本中的主要改进如下：
-
-* 可以在同一页面上插入多个跟踪标签，以便轻松定义导航路径(例如购买、订阅、退货等)。
-* 在Web 应用程序仪表板中查看不同页面的导航路径和跟踪标签。
+* 可以在同一页面上插入多个跟踪标记，以简化导航路径定义（例如，购买、订阅、回访等）。
+* 在Web应用程序功能板中查看不同页面的导航路径和跟踪标记。
 
    ![](assets/trackers_1.png)
 
@@ -36,42 +34,41 @@ Adobe Campaign允许您通过插入跟踪标签来跟踪和衡量Web 应用程�
 
    * **转化率**:显示导航路径所有步骤的人数。
    * **跳出率**:仅显示第一步的人数
-   * **转换漏斗**:每个步骤之间的损失率。
+   * **转化漏斗**:每个步骤之间的丢失率。
 
-   此外，**Sector**&#x200B;类型图表根据人口来源显示人口。
+   此外，**Sector**&#x200B;类型图表根据群体的来源显示群体。
 
-## 标识流量源{#identifying-the-traffic-source}
+## 识别流量源{#identifying-the-traffic-source}
 
-可以使用两种不同的模式来识别访问访客时Web 应用程序的来源：
+可使用两种不同的模式来识别访客访问Web应用程序时来自何处：
 
-1. 发送特定投放以授予对Web 应用程序页面的访问权限：在这种情况下，流量源是这个投放,
-1. 将Web 应用程序关联到专用流量源：在这种情况下，它必须是外部“流量源”类型的投放。 它可以从Web 应用程序属性或目标映射中选择。
+1. 发送特定投放以授予对Web应用程序页面的访问权限：在这种情况下，流量源是此投放，
+1. 将Web应用程序关联到专用流量源：在这种情况下，它必须是外部“流量源”类型的投放。 可以从Web应用程序属性或目标映射中选择该属性。
 
    ![](assets/trackers_6.png)
 
-为了在Web 应用程序中识别流量源，Adobe Campaign会连续查找以下信息：
+为了识别Web应用程序中的流量源，Adobe Campaign先后查找以下信息：
 
-1. 源投放标识符(如果它存在(nlId cookie)),
-1. 在外部投放属性中定义的Web 应用程序的标识符（如果存在），
+1. 源交付标识符(如果存在(nlId cookie)),
+1. Web应用程序属性中定义的外部投放的标识符（如果存在），
 1. 目标映射中定义的外部投放的标识符（如果存在）。
 
 >[!NOTE]
 >
->请记住，只有在部署向导中激活了相应的选项，才能进行匿名跟踪。
+>请记住，仅当部署向导中激活了相应的选项时，才能进行匿名跟踪。
 >
->有关详细信息，请参阅[安装指南](../../installation/using/deploying-an-instance.md)。
+>有关更多信息，请参阅[安装指南](../../installation/using/deploying-an-instance.md)。
 
-## Web 应用程序使用数字内容编辑器(数字内容编辑器){#web-applications-designed-with-digital-content-editor--dce-}设计
+## 使用数字内容编辑器(DCE){#web-applications-designed-with-digital-content-editor--dce-}设计的Web应用程序
 
-当使用HTML内容编辑器创建Web 应用程序时 — **数字内容编辑器(数字内容编辑器)** — 从编辑器的&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡插入跟踪标签。 有关数字内容编辑器(数字内容编辑器)的详细信息，请参阅[本节](../../web/using/about-campaign-html-editor.md)。
+使用HTML内容编辑器创建Web应用程序时 — **数字内容编辑器(DCE)** — 将从编辑器的&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡中插入跟踪标记。 有关数字内容编辑器(DCE)的更多信息，请参阅[此部分](../../web/using/about-campaign-html-editor.md)。
 
 ![](assets/trackers_2.png)
 
-使用Web界面时，必须从页面属性中插入跟踪标签。
+使用Web界面时，必须从页面属性中插入跟踪标记。
 
 ![](assets/trackers_3.png)
 
-通过&#x200B;**[!UICONTROL Display blocks]**&#x200B;图标，可以视图为页面定义的跟踪标签数。
+使用&#x200B;**[!UICONTROL Display blocks]**&#x200B;图标可以查看为页面定义的跟踪标记数。
 
 ![](assets/trackers_4.png)
-
