@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Campaign  [!DNL Gold Standard] 的兼容性矩阵
 description: ' [!DNL Gold Standard]  版本的 Campaign Classic 兼容性矩阵'
@@ -7,7 +6,7 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 100%
