@@ -1,14 +1,13 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '帮助和支持选项，用于Campaign Classic '
 description: 需要Campaign Classic支持？ 您找到了正确的地方！
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 57%
+ht-degree: 70%
 
 ---
 
@@ -32,7 +31,7 @@ ht-degree: 57%
 
 ### 常见问题解答
 
-如何升级到新内部版本？ 如何监控工作流的执行？ 什么是数据库清理工作流？... [读出前10个问题](platform/using/common-questions.md)。
+如何升级到新版本？如何监测工作流执行？什么是数据库清理工作流？... [读出前10个问题](platform/using/common-questions.md)。
 
 <table>
     <tr><td><strong>主题问答</strong></td><td><strong>常见问题</strong></td><td><strong>最佳实践</strong></td><td><strong>操作说明</strong></td></tr>
@@ -94,7 +93,7 @@ ht-degree: 57%
 ### 什么是控制面板？
 
 Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用情况，从而帮助您作为Campaign Classic的产品管理员提高工作效率。
-[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)以了解更多信息。
+[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)以了解更多信息。
 
 >[!NOTE]
 >
@@ -104,7 +103,7 @@ Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用
 
 ### 如何访问控制面板？
 
-可直接从 Adobe Experience Cloud 访问控制面板。仅管理员用户可以访问。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html)以了解更多信息。
+可直接从 Adobe Experience Cloud 访问控制面板。仅管理员用户可以访问。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=zh-Hans)以了解更多信息。
 
 ### 控制面板常见问题解答
 
@@ -117,17 +116,17 @@ Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用
 ### 子域和证书
 
 您可以监测您的子域及其证书。在以下页面中了解详情：
-* [子域品牌化](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
-* [设置新子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
-* [监测 SSL 证书](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
+* [子域品牌化](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=zh-Hans)
+* [设置新子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans)
+* [监测 SSL 证书](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=zh-Hans)
 
 ### 实例设置
 
 了解如何在控制面板中管理Campaign Classic实例设置。 在以下页面中了解详情：
-* [在允许列表上添](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) 加IP以访问您的Campaign实例
-* [管理URL权限](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
-* [访问实例详细信息](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
-* [管理用于数据加密的GPG密钥](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
+* [在允许列表上添](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans) 加IP以访问您的Campaign实例
+* [管理URL权限](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hans)
+* [访问实例详细信息](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hans)
+* [管理用于数据加密的GPG密钥](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans)
 
 ## 寻求帮助 {#support}
 
@@ -139,12 +138,13 @@ Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用
 
 加入 Campaign Classic 社区：在现有问题中搜索答案，或向社区提问。[加入对话](https://experienceleaguecommunities.adobe.cadobe-campaign-classic/ct-p/adobe-campaign-classic-community)
 
-### 访问Campaign下载中心
+### 访问 Campaign 下载中心
 
-自2020年6月起，Experience Cloud解决方案Software Distribution将取代旧版Neolane下载中心，并提供更高效的软件、包和工具查找和下载体验。 [单击](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) 此处访问Experience CloudSoftware Distribution。在此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)中了解有关新的下载中心[的更多信息。
+自2020年6月起，Experience Cloud解决方案Software Distribution将取代旧版Neolane下载中心，并提供更高效的软件、包和工具查找和下载体验。 [点击此处](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)访问 Experience Cloud Software Distribution。
+在此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)中了解有关新的下载中心[的更多信息。
 
-### 创建票证或开始聊天
+### 创建工单或开始聊天
 
 通过创建案例，您可以就您在使用 Adobe 产品的过程中遇到的任何问题联系 Adobe 客户支持团队。为帮助您解决问题或排除疑难，Adobe Admin Console 将支持您与 Adobe 客户支持团队聊天。
 
-如需在新系统中登记问题或开始聊天会话，请连接到 [Adobe Admin Console](https://adminconsole.adobe.com/overview)。按照[此页面](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)中描述的详细过程操作。
+如需在新系统中登记问题或开始聊天会话，请连接到 [Adobe Admin Console](https://adminconsole.adobe.com/overview)。请按照[本页面](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)中所述的详细步骤进行操作。
