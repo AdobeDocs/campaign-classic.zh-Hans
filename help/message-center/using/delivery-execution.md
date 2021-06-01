@@ -2,50 +2,49 @@
 solution: Campaign Classic
 product: campaign
 title: 投放执行
-description: 投放执行
+description: 了解有关事务型消息投放执行和监控的更多信息。
 audience: message-center
 content-type: reference
 topic-tags: event-processing
-translation-type: tm+mt
-source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
+exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 7%
+source-wordcount: '233'
+ht-degree: 6%
 
 ---
 
+# 投放执行 {#delivery-execution}
 
-# 投放执行{#delivery-execution}
+## 事务型消息发送{#transactional-message-send}
 
-## 事务性消息发送{#transactional-message-send}
-
-在执行实例上，一旦扩充阶段完成并且投放模板已链接到事件,投放即被发送。
+在执行实例中，一旦扩充阶段完成并且投放模板已链接到事件，将发送投放。
 
 >[!NOTE]
 >
->MTA优先处理事务性消息，而非任何其他投放。
+>MTA优先处理事务型消息，而不是任何其他投放。
 
-所有投放都分组在&#x200B;**[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**&#x200B;文件夹中。
+所有投放都分组到&#x200B;**[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**&#x200B;文件夹中。
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
-默认情况下，它们按投放月分类为子文件夹。 可在消息模板属性中更改此排序，如下所示。
+默认情况下，这些文件夹会按提交月分类为子文件夹。 可以在消息模板属性中更改此排序，如下所示。
 
 ![](assets/messagecenter_deliveries_properties_001.png)
 
 >[!NOTE]
 >
->对于托管或混合安装，如果您已升级到[增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则还可以随Adobe Campaign增强的MTA发送所有事务性消息，以改进交付能力、吞吐量和弹回处理。 所有方面都与标准营销消息相同。
+>对于托管或混合安装，如果您已升级到[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)，则所有事务型消息也可以随Adobe Campaign Enhanced MTA一起发送，以改进投放能力、吞吐量和退件处理。 所有方面都与标准营销消息相同。
 
-## 事务性消息监视{#transactional-message-monitoring}
+## 事务型消息监控{#transactional-message-monitoring}
 
-要监视事务性消息，请检查投放日志。 访问投放日志显示在[本节](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)中。
+要监视事务型消息，请检查[投放日志](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)。
 
-从执行实例发送的事务投放通过每小时运行的技术工作流(**[!UICONTROL Message Center execution instance]**)同步回控制实例。
+从执行实例发送的事务性投放通过每小时运行的技术工作流(**[!UICONTROL Message Center execution instance]**)同步回控制实例。
 
 >[!NOTE]
 >
->投放每周根据最新的事件更新(而非在事件创建日期)累积事件。 因此，当从控制实例提取事务消息投放日志时，与每个投放日志ID关联的投放ID可能随着日志的更新而随时间而改变(例如，当收到事件的入站跳出时)。
+>投放每周会根据最新事件更新而不是事件创建日期来累计事件。 因此，在从控制实例提取事务性消息传递投放日志时，与每个投放日志ID关联的投放ID可能会随着日志更新而随时间而改变（例如，当收到事件的入站退件时）。
 
 <!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
@@ -73,3 +72,5 @@ Let's take a [delivery template](../../message-center/using/introduction.md) lab
 To summarize, the deliveries weekly accumulate the events based on the latest event update, and not on the event creation date.
 
 Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
+
+要监视执行实例的活动和运行，请参阅[事务性消息报告](../../message-center/using/about-transactional-messaging-reports.md)。
