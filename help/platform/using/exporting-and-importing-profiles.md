@@ -1,31 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 导出和导入用户档案
 description: 导出和导入用户档案
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 28%
+ht-degree: 31%
 
 ---
 
-
 # 导入和导出用户档案{#exporting-and-importing-profiles}
 
-您可以[使用工作流](#use-workflows)将收件人用户档案导入或导出到Adobe Campaign数据库，或设置[通用导入或导出作业](#create-jobs)。
+您可以[使用工作流](#use-workflows)将收件人配置文件导入或导出到Adobe Campaign数据库，或设置[常规导入或导出作业](#create-jobs)。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#import-profiles-video)
 
 ## 使用工作流{#use-workflows}
 
-导出和导入在通过导入和导出工作流执行的专用模板中配置。 它们可以根据时间表自动重复，例如用于在多个信息系统之间自动交换数据。[了解详情](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
+导出和导入在通过导入和导出活动工作流执行的专用模板中进行配置。 它们可以根据计划自动重复，例如用于在多个信息系统之间自动交换数据。[了解详情](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
-如有必要，可通过下面描述的&#x200B;**[!UICONTROL Generic imports and exports]**&#x200B;功能创建临时导入或导出作业。
+如有必要，您可以通过下面描述的&#x200B;**[!UICONTROL Generic imports and exports]**&#x200B;功能创建临时导入或导出作业。
 
 ## 创建作业{#create-jobs}
 
@@ -36,8 +34,8 @@ ht-degree: 28%
 
 ## 教程视频{#import-profiles-video}
 
-此视频介绍如何在Adobe Campaign中导入用户档案，以便偶尔导入。
+此视频介绍如何在Adobe Campaign中导入用户档案，以便偶尔进行导入。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-其他Campaign Classic操作视频[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)可用。
+其他Campaign Classic操作方法视频可在[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)获取。
