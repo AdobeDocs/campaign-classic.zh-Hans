@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 管理对Campaign文件夹的访问权限
 description: 了解如何授予对Campaign文件夹的访问权限和创建视图
@@ -7,7 +6,7 @@ feature: 应用程序设置
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 1%
