@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 卸载 Campaign
-description: 了解如何卸载活动
+description: 了解如何卸载Campaign
 audience: installation
 content-type: reference
 topic-tags: appendices
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e2b026ba-aaf3-443d-8c36-c908288a14fd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 19%
 
 ---
-
 
 # 卸载 Campaign{#uninstalling-campaign}
 
@@ -41,4 +39,4 @@ rm -rf /user/local/neolane
 
 **Windows：**
 
-请参阅此[页](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version)。 不要忘记删除活动安装文件夹。
+请参见此[页面](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version)。 不要忘记删除Campaign安装文件夹。
