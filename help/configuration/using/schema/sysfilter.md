@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和属性
 description: 元素和属性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: a0069688-fd05-42e9-91dd-adc10bea3461
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 18%
 
 ---
 
-
 # sysfilter元素{#sysfilter--element}
 
 ## 内容模型{#content-model-15}
 
-sysFilter:==condition
+sysFilter:==条件
 
 ## 属性{#attributes-15}
 
@@ -35,7 +33,7 @@ sysFilter:==condition
 
 ## 说明{#description-15}
 
-此元素允许您定义筛选器。
+利用此元素，可定义过滤器。
 
 ## 属性描述{#attribute-description-15}
 
@@ -43,7 +41,7 @@ sysFilter:==condition
 
 ## 示例{#examples-12}
 
-具有@name属性条件的过滤器的定义：
+具有属性条件的过滤器的@name义：
 
 ```
 <sysFilter>
