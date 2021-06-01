@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 常见问题
 description: Adobe Campaign Classic 常见问题解答
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 97%
 
 ---
-
 
 # 常见问题{#common-questions}
 
@@ -29,7 +27,7 @@ ht-degree: 97%
 
 Adobe Campaign Classic 特别使用一系列技术来提供价值。这一技术组合要求您定期升级 Campaign Classic 实例，以确保使用最新版本提供出众的安全性、稳定性和性能。
 
-如果您使用的是Adobe Managed Services，则可以从活动[!DNL Gold Standard]升级中受益。 如需详细信息，请参阅[本文](../../rn/using/gs-overview.md)。
+如果您使用的是Adobe Managed Services，则可以从Campaign [!DNL Gold Standard]升级中受益。 如需详细信息，请参阅[本文](../../rn/using/gs-overview.md)。
 
 [阅读此部分](../../production/using/build-upgrade.md)以了解如何更新环境，并阅读有关此特定主题的[常见问题](../../platform/using/faq-build-upgrade.md)。
 
@@ -74,4 +72,3 @@ Adobe Campaign 提供了一组仪表板和工具来监视电子邮件投放。
 子域是域的一个分支，可用于隔离您的品牌或各种类型的流量（交易消息、营销信息等）。Adobe 使用域名系统 (DNS) 的帐户进行电子邮件投放，让客户端使用带有其域名的 DNS 别名维护品牌形象，Adobe 将自主实施所有技术最佳实践，在发送电子邮件期间优化投放效果。
 
 [单击此处了解更多信息](https://helpx.adobe.com/cn/campaign/kb/domain-name-delegation.html)。
-
