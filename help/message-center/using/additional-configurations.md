@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '747'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ## 监测阈值 {#monitoring-thresholds}
 
-您可以配置&#x200B;**消息中心服务级别**&#x200B;和&#x200B;**消息中心处理时间**&#x200B;报表中显示的指标的警告阈值（橙色）和警告阈值（红色）（请参阅[关于事务性消息报告](../../message-center/using/about-transactional-messaging-reports.md)）。
+您可以配置&#x200B;**消息中心服务级别**&#x200B;和&#x200B;**消息中心处理时间**&#x200B;报表中显示的指标的警告阈值（橙色）和警报阈值（红色）（请参阅[访问事务性消息报告](../../message-center/using/about-transactional-messaging-reports.md)）。
 
 为此请执行以下操作步骤：
 
@@ -109,7 +109,7 @@ Once the control and execution modules are installed on the same instance, you m
 
    >[!NOTE]
    >
-   >在[Control instance](../../message-center/using/configuring-instances.md#control-instance)部分中了解如何创建执行实例类型外部帐户。
+   >了解如何在[此部分](../../message-center/using/configuring-instances.md#control-instance)中创建执行实例类型外部帐户。
 
 1. 扩展nms:extAccount模式以添加跟踪URL:
 
