@@ -7,7 +7,7 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '4367'
 ht-degree: 98%
@@ -113,7 +113,7 @@ Oracle On Demand API 现在作为与 Campaign 连接的 CRM 已弃用。[阅读�
 
 现在，[此处](../../delivery/using/sms-protocol.md)提供 SMS 连接器协议和设置页面的完整说明。
 
-向&#x200B;**事务性消息传递**&#x200B;部分中添加了注释，用于警告不得将事件文件夹设置为执行实例上的视图，以避免出现访问权限问题。[阅读更多](../../message-center/using/event-collection.md)
+向&#x200B;**事务性消息传递**&#x200B;部分中添加了注释，用于警告不得将事件文件夹设置为执行实例上的视图，以避免出现访问权限问题。[阅读更多](../../message-center/using/about-event-processing.md#event-collection)
 
 ## 2020 年 11 月{#nov-2020}
 
@@ -259,7 +259,7 @@ Azure Synapse FDA 连接器 - [阅读更多](../../installation/using/configure-
 
 **随版本提供的其他文档更新**
 
-[此部分](../../message-center/using/template-unpublication.md)介绍了用于取消发布事务性消息模板的新选项。
+[此部分](../../message-center/using/publishing-message-templates.md#template-unpublication)介绍了用于取消发布事务性消息模板的新选项。
 
 在 Campaign Classic 选项列表中添加了新选项，允许在发送包含从个性化 URL 下载的图像和附件的电子邮件时设置限制。[阅读更多](../../installation/using/configuring-campaign-options.md#delivery)
 
@@ -441,7 +441,7 @@ Adobe Campaign 与 Adobe 实时客户数据平台之间的集成现在在&#x200B
 
 添加了信息，以指定个性化字段内容不能超过 1024 个字符。[阅读更多](../../delivery/using/personalization-fields.md)
 
-控制面板文档已集成到新的协作文档集中。[阅读更多](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+控制面板文档已集成到新的协作文档集中。[阅读更多](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
 
 投放最佳实践快速入门指南已更新。[阅读更多](../../delivery/using/delivery-best-practices.md)
 
@@ -519,7 +519,7 @@ Apache 配置步骤已更新。[阅读更多](../../installation/using/integrati
 
 [Campaign Classic 本地和托管功能矩阵](../../installation/using/capability-matrix.md)页面已更新，其中包含与电子邮件密件抄送相关的信息。
 
-事务性消息文档已更新，包含有关模板发布的说明。[阅读更多](../../message-center/using/template-publication.md)
+事务性消息文档已更新，包含有关模板发布的说明。[阅读更多](../../message-center/using/publishing-message-templates.md#template-publication)
 
 “未处理的弹回邮件”部分已更新，其中包含有关“转发地址”和“错误地址”字段的更多详细信息。[阅读更多](../../installation/using/deploying-an-instance.md)
 
