@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和属性
 description: 元素和属性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: f45e32ce-6534-4df2-ac7c-ba1134f0ffc8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 20%
 
 ---
-
 
 # 方法元素{#methods--element}
 
@@ -35,7 +33,7 @@ ht-degree: 20%
 
 ## 说明{#description-11}
 
-此元素允许您定义`<method>`元素。 声明方法是必填项。
+此元素允许您定义`<method>`元素。 声明方法时必须使用此参数。
 
 ## 属性描述{#attribute-description-11}
 
