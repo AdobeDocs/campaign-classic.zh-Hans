@@ -1,14 +1,12 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Adobe Campaign 工作区
-description: 了解如何使用和自定义活动工作区
-feature: Overview
+description: 了解如何使用和自定义Campaign工作区
+feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 79%
@@ -31,7 +29,7 @@ ht-degree: 79%
 >
 >在您的实例上有哪些 Adobe Campaign 功能可用取决于已安装的模块和附加组件。根据您的权限及具体配置，部分功能可能无法使用。
 >
->在安装任何模块或加载项之前，您需要检查您的许可协议或与您的Adobe帐户主管联系。
+>在安装任何模块或附加组件之前，您需要检查您的许可协议或与Adobe帐户管理员联系。
 
 ### 控制台和 Web 访问 {#console-and-web-access}
 
@@ -47,13 +45,13 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 ![](assets/operation_from_web.png)
 
-### 语言{#languages}
+### 语言 {#languages}
 
-安装Adobe Campaign Classic实例时，会选择该语言。
+安装Adobe Campaign Classic实例时，将选择语言。
 
 ![](assets/language.png)
 
-您可以在五种不同语言之间进行选择：
+您可以选择五种不同的语言：
 
 * 英语（英国）
 * 美式英语
@@ -63,11 +61,11 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关更多信息，请参阅此](../../platform/using/adobe-campaign-workspace.md#date-and-time)章节[。
 
-有关如何创建实例的详细信息，请参阅此[页面](../../installation/using/creating-an-instance-and-logging-on.md)。
+有关如何创建实例的更多信息，请参阅此[page](../../installation/using/creating-an-instance-and-logging-on.md)。
 
 >[!CAUTION]
 >
->创建实例后无法更改语言。
+>创建实例后，无法更改语言。
 
 ## 导览基本功能 {#navigation-basics}
 
@@ -81,7 +79,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 每项功能都包含一套基于工作任务相关需求及使用情境的功能。例如，**[!UICONTROL Profiles and targets]** 链接可用于访问收件人列表、订阅服务、现有的定位工作流，以及创建这些元素的快捷方式。
 
-这些列表可通过&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;接口左侧部分的&#x200B;**[!UICONTROL Lists]**&#x200B;链接访问。
+可通过&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;界面左侧的&#x200B;**[!UICONTROL Lists]**&#x200B;链接访问这些列表。
 
 ![](assets/recipient_list_overview.png)
 
@@ -99,7 +97,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 通过每个核心功能部分可以浏览各种可用的元素。要执行此操作，可使用 **[!UICONTROL Browsing]** 部分中的快捷方式。**[!UICONTROL Other choices]** 链接可用于访问其他所有页面，无论工作环境如何。
 
-您可以创建新元素(投放、Web 应用程序、工作流等) 使用屏幕左侧&#x200B;**[!UICONTROL Create]**&#x200B;部分中的快捷键。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
+您可以创建新元素（投放、Web应用程序、工作流等） 使用屏幕左侧&#x200B;**[!UICONTROL Create]**&#x200B;部分中的快捷键。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
 
 例如，在投放页面上，使用 **[!UICONTROL Create]** 按钮创建新的投放。
 
@@ -153,23 +151,23 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
 
 >[!NOTE]
 >
->管理员通过 **[!UICONTROL Administration > Platform > Enumerations]** 部分管理枚举（也称为“分项列表”）。有关详细信息，请参阅[管理明细列表](../../platform/using/managing-enumerations.md)。
+>管理员通过 **[!UICONTROL Administration > Platform > Enumerations]** 部分管理枚举（也称为“分项列表”）。有关更多信息，请参见[管理枚举](../../platform/using/managing-enumerations.md)。
 
 ### 默认单位 {#default-units}
 
 在表示一段时间的字段中（例如，某次投放的资源的有效期、已批准的任务期限等），可采用以下&#x200B;**单位**&#x200B;表示该值：
 
-* **[!UICONTROL s]** 几秒钟，
+* **[!UICONTROL s]** 若为秒，
 * **[!UICONTROL mn]** 几分钟，
-* **[!UICONTROL h]** 几个小时，
+* **[!UICONTROL h]** 数小时，
 * **[!UICONTROL d]** 几天。
 
 ![](assets/enter_unit_sample.png)
 
-## 教程视频{#video}
+## 教程视频 {#video}
 
-此视频显示Campaign Classic工作区。
+此视频介绍Campaign Classic工作区。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-其他Campaign Classic操作视频[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)可用。
+其他Campaign Classic操作方法视频可在[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)获取。
