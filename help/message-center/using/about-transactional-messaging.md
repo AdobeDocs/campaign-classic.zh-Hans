@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 5%
@@ -40,7 +40,7 @@ ht-degree: 5%
 
 Adobe Campaign事务型消息传递模块集成到信息系统中，该信息系统可返回要更改为个性化事务型消息的事件。 这些消息可以单独发送，也可以通过电子邮件、短信或推送通知批量发送。
 
-此功能依赖于特定的架构，其中&#x200B;**执行实例**&#x200B;与&#x200B;**控制实例**&#x200B;分开。 此分发可确保更高的可用性和更好的负载管理。 有关更多信息，请参阅[事务型消息传递实例](../../message-center/using/transactional-messaging-architecture.md)。
+此功能依赖于特定的架构，其中&#x200B;**执行实例**&#x200B;与&#x200B;**控制实例**&#x200B;分开。 此分发可确保更高的可用性和更好的负载管理。 有关更多信息，请参阅[事务型消息架构](../../message-center/using/transactional-messaging-architecture.md)。
 
 >[!NOTE]
 >
@@ -81,8 +81,8 @@ Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子
 
 设计并发布事务型消息模板后，如果触发了相应的事件，则对&#x200B;**执行实例**&#x200B;执行以下主要步骤：
 
-1. 当事件由外部信息系统生成时，相关数据会通过&#x200B;**PushEvent**&#x200B;和&#x200B;**PushEvents**&#x200B;方法发送到Campaign。 请参阅[事件集合](#event-collection)。
-1. 该事件已链接到相应的消息模板。 请参阅[模板路由](#routing-towards-a-template)。
+1. 当事件由外部信息系统生成时，相关数据会通过&#x200B;**PushEvent**&#x200B;和&#x200B;**PushEvents**&#x200B;方法发送到Campaign。 请参阅[事件集合](../../message-center/using/about-event-processing.md#event-collection)。
+1. 该事件已链接到相应的消息模板。 请参阅[模板路由](../../message-center/using/about-event-processing.md#routing-towards-a-template)。
 1. 扩充阶段完成后，将发送投放。 请参阅[投放执行](../../message-center/using/delivery-execution.md)。 每个目标收件人都会收到一个个性化的消息。
 
 ## 相关主题 {#related-topics}
@@ -90,4 +90,4 @@ Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子
 * [通信渠道入门](../../delivery/using/communication-channels.md)
 * [投放创建关键步骤](../../delivery/using/steps-about-delivery-creation-steps.md)
 * [事务性消息传递架构](../../message-center/using/transactional-messaging-architecture.md)
-* [关于事务性消息报告](../../message-center/using/about-transactional-messaging-reports.md)
+* [访问事务型消息报表](../../message-center/using/about-transactional-messaging-reports.md)
