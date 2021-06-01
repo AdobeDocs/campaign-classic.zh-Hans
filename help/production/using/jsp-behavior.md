@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: JSP 行为
 description: JSP 行为
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 858d00d0-7c65-43be-8bae-f0f945f71f1a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 16%
 
 ---
 
-
 # JSP 行为{#jsp-behavior}
 
 如果某些&#x200B;**jsp**&#x200B;作业未成功执行，则必须强制它们重新编译。
 
-对于此，输入以下命令：
+为此，请输入以下命令：
 
 ```
 nlserver stop web
@@ -28,4 +26,4 @@ rm -r work/
 nlserver start web
 ```
 
-下次连接时将重新生成&#x200B;**jsp**&#x200B;作业。
+下次连接时，将重新生成&#x200B;**jsp**&#x200B;作业。
