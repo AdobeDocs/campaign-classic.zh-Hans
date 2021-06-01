@@ -1,38 +1,36 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 推荐规则
-description: 推荐规则
+title: 呈现规则
+description: 呈现规则
 audience: interaction
 content-type: reference
 topic-tags: case-study
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: f9dd9ad6-48da-4a80-9405-109a433a1ed5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
 
 ---
 
+# 呈现规则{#presentation-rules}
 
-# 推荐规则{#presentation-rules}
+## 创建表示规则{#creating-a-presentation-rule}
 
-## 创建推荐规则{#creating-a-presentation-rule}
+在我们的数据库中，有几份前往欧洲、非洲、美国和加拿大的旅行优惠。 我们希望发送前往加拿大的优惠，但如果接受者拒绝此类优惠，我们不希望再将其发送给他们
 
-在我们的数据库中，有几个前往欧洲、非洲、美国和加拿大的旅行优惠。 我们想发送优惠前往加拿大，但如果收件人拒绝这种优惠，我们不想再发送给他们
-
-我们将配置规则，以便每位收件人只提供一次加拿大之旅，如果拒绝，则不再提供。
+我们将配置我们的规则，以便每个收件人仅提供一次加拿大之旅，如果被拒绝，则不再提供。
 
 1. 在Adobe Campaign树中，转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**&#x200B;节点。
-1. 新建一个&#x200B;**[!UICONTROL Offer presentation]**&#x200B;类型规则。
+1. 创建新的&#x200B;**[!UICONTROL Offer presentation]**&#x200B;类型规则。
 
    ![](assets/offer_typology_example_001.png)
 
-1. 如有必要，更改其标签和说明。
+1. 如有必要，请更改其标签和说明。
 
    ![](assets/offer_typology_example_002.png)
 
-1. 选择&#x200B;**[!UICONTROL All channels]**&#x200B;选项将规则扩展到所有渠道。
+1. 选择&#x200B;**[!UICONTROL All channels]**&#x200B;选项以将规则扩展到所有渠道。
 
    ![](assets/offer_typology_example_003.png)
 
@@ -40,77 +38,77 @@ ht-degree: 1%
 
    ![](assets/offer_typology_example_004.png)
 
-1. 选择与您前往加拿大的旅行优惠匹配的类别，然后单击&#x200B;**[!UICONTROL OK]**&#x200B;关闭查询窗口。
+1. 选择与您的加拿大差旅选件匹配的类别，然后单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭查询窗口。
 
    ![](assets/offer_typology_example_005.png)
 
-1. 在&#x200B;**[!UICONTROL Offer presentation]**&#x200B;选项卡中，选择与环境中配置的相同尺寸。
+1. 在&#x200B;**[!UICONTROL Offer presentation]**&#x200B;选项卡中，选择与环境中配置的维度相同的维度。
 
    ![](assets/offer_typology_example_006.png)
 
-1. 指定应用规则的期间。
+1. 指定应用规则的时段。
 
    ![](assets/offer_typology_example_007.png)
 
-1. 将提议限制在一个，这样已经拒绝前往加拿大的收件人就不会再收到类似的优惠。
+1. 将建议限制为一个，以便已经拒绝前往加拿大的收件人不会再收到类似的建议。
 
    ![](assets/offer_typology_example_008.png)
 
-1. 选择&#x200B;**[!UICONTROL Offers for the same category]**&#x200B;过滤器以从&#x200B;**Canada**&#x200B;优惠中排除所有类别。
+1. 选择&#x200B;**[!UICONTROL Offers for the same category]**&#x200B;筛选器可从&#x200B;**Canada**&#x200B;类别中排除所有选件。
 
    ![](assets/offer_typology_example_020.png)
 
-1. 选择&#x200B;**[!UICONTROL Rejected propositions]**&#x200B;筛选器以仅考虑被收件人拒绝的建议。
+1. 选择&#x200B;**[!UICONTROL Rejected propositions]**&#x200B;过滤器，以便仅考虑收件人拒绝的主张。
 
    ![](assets/offer_typology_example_021.png)
 
 1. 选择将应用此规则的收件人。
 
-   在示例中，我们将选择&#x200B;**常客**&#x200B;收件人。
+   在本例中，我们将选择&#x200B;**频繁出差者**&#x200B;收件人。
 
    ![](assets/offer_typology_example_009.png)
 
-1. 在优惠类型中引用规则。
+1. 在选件分类中引用规则。
 
    ![](assets/offer_typology_example_013.png)
 
-1. 转到优惠环境(在本例中为&#x200B;**环境 - 收件人**)，并引用刚使用&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中的下拉列表创建的新字体。
+1. 转到选件环境（在本例中为&#x200B;**Environment - Recipient**），并引用使用&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中的下拉列表刚刚创建的新分类。
 
    ![](assets/offer_typology_example_014.png)
 
-## 应用推荐规则{#applying-the-presentation-rule}
+## 应用表示规则{#applying-the-presentation-rule}
 
-以下是先前创建的类型规则的应用程序示例。
+以下是之前创建的分类规则的应用程序示例。
 
-我们要发送属于加拿大类别的第一个优惠建议。 如果优惠被任何收件人拒绝一次，则不再向他们提供。
+我们想发送属于加拿大类别的第一个优惠建议。 如果任何收件人拒绝该选件一次，则不会再向他们提供该选件。
 
-1. 在&#x200B;**“经常出差者**&#x200B;收件人”文件夹中，选择一个用户档案以检查其符合条件的优惠:单击&#x200B;**[!UICONTROL Propositions]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
+1. 在&#x200B;**Frevent travers**&#x200B;收件人文件夹中，选择其中一个用户档案，以检查他们有资格使用的选件：单击&#x200B;**[!UICONTROL Propositions]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
 
-   在我们的示例中，**Tim Ramsey**&#x200B;符合优惠资格，该类别是&#x200B;**Americas**&#x200B;的一部分。
+   在我们的示例中，**Tim Ramsey**&#x200B;符合&#x200B;**Americas**&#x200B;类别中的选件条件。
 
    ![](assets/offer_typology_example_015.png)
 
-1. 开始方式是创建一个电子邮件投放，该目标将用优惠您的&#x200B;**常客**&#x200B;收件人。
-1. 选择优惠引擎调用参数。
+1. 首先，创建一封电子邮件投放，该邮件投放的目标是提供优惠的&#x200B;**常客**&#x200B;收件人。
+1. 选择选件引擎调用参数。
 
-   在我们的示例中，选择&#x200B;**Travel in America**&#x200B;类别，其中包含&#x200B;**Canada**&#x200B;和&#x200B;**United States**&#x200B;子类别。
+   在我们的示例中，选择了&#x200B;**Travel in America**&#x200B;类别，该类别包含&#x200B;**Canada**&#x200B;和&#x200B;**United States**&#x200B;子类别。
 
    ![](assets/offer_typology_example_016.png)
 
-1. 将优惠插入邮件正文并发送投放。 有关详细信息，请参阅[关于出站渠道](../../interaction/using/about-outbound-channels.md)。
+1. 将选件插入消息正文并发送投放。 有关更多信息，请参阅[关于出站渠道](../../interaction/using/about-outbound-channels.md)。
 
-   收件人收到了他们有资格获得的优惠。
+   收件人收到了他们有资格获得的选件。
 
-1. 收件人拒绝了加拿大优惠，如提案历史所示。
+1. 收件人拒绝了加拿大选件，如建议历史中所示。
 
    ![](assets/offer_typology_example_018.png)
 
-1. 检查他们现在有资格的优惠。
+1. 检查他们现在符合条件的选件。
 
-   我们可以看出，加拿大没有选择任何优惠。
+   我们可以看到没有选择加拿大的优惠。
 
    ![](assets/offer_typology_example_019.png)
 
 **相关主题**
 
-* [跨优惠管理和控制冗余](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Manageoffersandcontrolredundancyacrosschannels)
+* [跨渠道管理优惠并控制冗余](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Manageoffersandcontrolredundancyacrosschannels)
