@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 管理用户档案
 description: 管理用户档案
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
-
 
 # 管理用户档案{#managing-profiles}
 
@@ -48,4 +46,3 @@ ht-degree: 93%
 单击 **[!UICONTROL Start]** 执行该操作。窗口的中间会显示进度状态，如下所示：
 
 ![](assets/s_ncs_user_purge_folder_start.png)
-
