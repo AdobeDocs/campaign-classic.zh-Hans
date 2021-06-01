@@ -1,49 +1,47 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 操作员用户档案
 description: 操作员用户档案
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 5%
 
 ---
 
-
 # 操作员用户档案{#operator-profiles}
 
-使用交互的运算符有两种类型：优惠经理和投放经理。 他们每个人都拥有特定的权限，这些权限仅允许他们访问树和平台的某些部分。
+使用交互的运算符有两种类型：选件经理和投放经理。 它们各自具有特定权限，仅允许它们访问树和平台的某些部分。
 
-* **[!UICONTROL Offer manager]** :创建和维护优惠。请注意，如果工作流中使用了优惠，则运算符需要位于&#x200B;**[!UICONTROL Administrator]**&#x200B;或&#x200B;**[!UICONTROL Offer managers]**&#x200B;运算符组中才能执行工作流。
-* **[!UICONTROL Delivery manager]** :批准和使用优惠
+* **[!UICONTROL Offer manager]** :创建和维护选件。请注意，如果在工作流中使用选件，则运算符需要位于&#x200B;**[!UICONTROL Administrator]**&#x200B;或&#x200B;**[!UICONTROL Offer managers]**&#x200B;运算符组中才能执行工作流。
+* **[!UICONTROL Delivery manager]** :批准和使用选件
 
-创建特定于交互的运算符的步骤与创建平台上所有其他运算符的步骤完全相同。 如需详细信息，请参阅[此部分](../../platform/using/access-management.md)。权限在操作员创建过程中进行配置。
+创建特定于交互的运算符的步骤与创建平台上所有其他运算符的步骤相同。 如需详细信息，请参阅[此部分](../../platform/using/access-management.md)。权限在操作员创建期间进行配置。
 
-## 优惠管理器{#offer-manager}
+## 选件管理器{#offer-manager}
 
 1. 创建新运算符。
 1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Offer manager]**&#x200B;组。
 
    ![](assets/offer_operators_create_001.png)
 
-分配给优惠经理的权限使他们能够执行以下任务:
+分配给选件管理器的权限允许他们执行以下任务：
 
 * 修改&#x200B;**[!UICONTROL Design]**&#x200B;环境。
-* 视图&#x200B;**[!UICONTROL Live]**&#x200B;环境。
-* 配置管理功能(预定义的空格和过滤器)。
+* 查看&#x200B;**[!UICONTROL Live]**&#x200B;环境。
+* 配置管理功能（预定义空格和过滤器）。
 * 创建和更改类别。
-* 创建优惠。
-* 配置优惠资格。
-* 批准优惠。
+* 创建选件。
+* 配置选件资格。
+* 批准选件。
 
    >[!NOTE]
    >
-   >优惠经理只能在两种情况下批准优惠。 第一个是，如果没有人特别指定为审阅者，第二个是，如果负责创建模板（有权分配审阅者）的操作员在优惠所基于的优惠模板中指定他/她为审阅者。
+   >在两种情况下，选件管理器只能批准选件。 第一个是，如果没有人特别指定为审阅者，第二个是，如果负责创建模板（具有指定审阅者的权限）的操作员在选件所依据的选件模板中将其指定为审阅者。
 
 ## 投放管理器{#delivery-manager}
 
@@ -52,24 +50,24 @@ ht-degree: 5%
 
    ![](assets/offer_operators_create_002.png)
 
-分配给投放经理的权限可以/允许他们执行以下任务:
+分配给投放管理器的权限可用于/使他们能够执行以下任务：
 
 * 显示&#x200B;**[!UICONTROL Live]**&#x200B;环境。
-* 显示和修改优惠类别。
-* 如果指定优惠为审核者之一，则批准审核。
+* 显示和修改选件类别。
+* 如果指定为审阅者之一，则批准选件。
 
    >[!NOTE]
    >
-   >只有在投放配置期间将优惠定义为审阅者，优惠管理器才能批准该。
+   >只有在选件配置期间被定义为审阅者时，投放管理器才能批准选件。
 
-## 根据运算符{#recap-of-rights-according-to-operator}的权利回顾
+## 根据运算符{#recap-of-rights-according-to-operator}重新查看权限
 
 <table> 
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>优惠管理器（编辑）</strong><br /> </td> 
-   <td> <strong>优惠管理器（实时）</strong><br /> </td> 
+   <td> <strong>选件管理器（编辑）</strong><br /> </td> 
+   <td> <strong>选件管理器（正式启用）</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>树结构级别</strong><br /> </td> 
@@ -77,12 +75,12 @@ ht-degree: 5%
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 正在编辑的优惠/实时优惠<br /> </td> 
+   <td> 正在编辑的选件/ Live选件<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 收件人 - 环境<br /> </td> 
+   <td> Recipient - Environment<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -97,12 +95,12 @@ ht-degree: 5%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 预定义的优惠过滤器<br /> </td> 
+   <td> 预定义选件过滤器<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 类型学<br /> </td> 
+   <td> 分类<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -112,12 +110,12 @@ ht-degree: 5%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 优惠目录<br /> </td> 
+   <td> 选件目录<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 优惠类别<br /> </td> 
+   <td> 选件类别<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -137,12 +135,12 @@ ht-degree: 5%
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 正在编辑的优惠/实时优惠<br /> </td> 
+   <td> 正在编辑的选件/ Live选件<br /> </td> 
    <td> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 收件人 - 环境<br /> </td> 
+   <td> Recipient - Environment<br /> </td> 
    <td> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -157,12 +155,12 @@ ht-degree: 5%
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 预定义的优惠过滤器<br /> </td> 
+   <td> 预定义选件过滤器<br /> </td> 
    <td> 读取<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 类型学<br /> </td> 
+   <td> 分类<br /> </td> 
    <td> 读取<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -172,15 +170,14 @@ ht-degree: 5%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 优惠目录<br /> </td> 
+   <td> 选件目录<br /> </td> 
    <td> 读取<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 优惠类别<br /> </td> 
+   <td> 选件类别<br /> </td> 
    <td> </td> 
    <td> 读取<br /> </td> 
   </tr> 
  </tbody> 
 </table>
-
