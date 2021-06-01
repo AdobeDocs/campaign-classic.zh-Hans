@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 使用工作流导入和导出数据
-description: 了解如何使用Campaign Classic中的工作流导入和导出数据。
+description: 了解如何在Campaign Classic中使用工作流导入和导出数据。
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 31%
 
 ---
-
 
 # 使用工作流{#import-export-workflows}导入和导出数据
 
@@ -23,17 +21,17 @@ ht-degree: 31%
 
 ### 使用列表中的数据：读取列表{#using-data-from-a-list--read-list}
 
-在工作流中发送的数据可以来自列表，据此数据已预先准备和结构化。
+在工作流中发送的数据可以来自列表，其中数据是预先准备和构建的。
 
-此列表可能是在Adobe Campaign中直接创建的，或是通过&#x200B;**[!UICONTROL Import a list]**&#x200B;选项导入的。 有关此选项的详细信息，请参阅此[页面](../../platform/using/about-generic-imports-exports.md)。
+此列表可能是在Adobe Campaign中直接创建的，或是由&#x200B;**[!UICONTROL Import a list]**&#x200B;选项导入的。 有关此选项的更多信息，请参阅此[页面](../../platform/using/about-generic-imports-exports.md)。
 
-有关在工作流中使用读取列表活动的详细信息，请参阅[此页面](../../workflow/using/read-list.md)。
+有关在工作流中使用读取列表活动的更多信息，请参阅[此页面](../../workflow/using/read-list.md)。
 
 ### 从文件{#loading-data-from-a-file}加载数据
 
-可以从结构化文件中提取工作流中处理的数据，以便将其导入Adobe Campaign。
+可以在工作流中处理的数据可以从结构化文件中提取，以便将其导入Adobe Campaign。
 
-在[数据加载（文件）](../../workflow/using/data-loading--file-.md)部分可找到加载数据活动的说明。
+有关加载数据活动的说明，请参见[数据加载（文件）](../../workflow/using/data-loading--file-.md)一节。
 
 要导入的结构化文件示例：
 
@@ -45,10 +43,10 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-收集数据后，您可以在工作流中使用它，例如丰富投放或更新数据库。 有关详细信息，请参见[此页面](../../workflow/using/how-to-use-workflow-data.md)。
+收集数据后，您可以在工作流中使用它，例如扩充投放或更新数据库。 有关详细信息，请参见[此页面](../../workflow/using/how-to-use-workflow-data.md)。
 
 ## 导出数据{#exporting-data-via-a-workflow}
 
 在使用可用于转换数据的一些可用数据管理活动之后，可以使用工作流程来自动执行某些导出过程或导出精确数据集。
 
-使用&#x200B;**[!UICONTROL Data extraction (file) activity]**&#x200B;执行导出操作。 有关如何配置和使用活动的详细信息，请参阅[此页面](../../workflow/using/extraction--file-.md)。
+使用&#x200B;**[!UICONTROL Data extraction (file) activity]**&#x200B;执行导出操作。 有关如何配置和使用活动的更多信息，请参阅[此页面](../../workflow/using/extraction--file-.md)。
