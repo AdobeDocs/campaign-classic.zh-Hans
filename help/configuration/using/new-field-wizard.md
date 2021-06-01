@@ -1,33 +1,31 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 新建字段向导
 description: 新建字段向导
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 4%
 
 ---
 
-
 # 新建字段向导{#new-field-wizard}
 
 可通过&#x200B;**[!UICONTROL Tools > Advanced > Add new fields]**&#x200B;访问的向导允许您向数据库中的表添加一个或多个字段。
 
-验证向导将更新要扩展的表的扩展模式，并启动SQL脚本以修改数据库的物理结构。
+验证向导会更新要扩展的表的扩展模式，并启动SQL脚本以修改数据库的物理结构。
 
-该助手具有快速添加字段的优点，而无需了解数据模式的结构。
+该助手具有快速添加字段而无需了解数据模式的结构的优点。
 
 主要缺点是数据和属性的限制。
 
 向导屏幕包含以下步骤：
 
-1. 在第一页中，您可以输入要扩展的模式的名称以及保存修改的扩展模式的命名空间:
+1. 在第一页中，您可以输入要扩展的架构的名称以及将在其中保存修改的扩展架构的命名空间：
 
    ![](assets/d_ncs_integration_schema_addfield.png)
 
@@ -37,7 +35,7 @@ ht-degree: 4%
 
 1. 要确认更改，请单击&#x200B;**[!UICONTROL Finish]**&#x200B;按钮。
 
-我们的示例中名为“cus:收件人”的扩展文件将自动创建并执行相应的SQL脚本：
+将自动创建名为“cus:recipient”的扩展文件，并执行相应的SQL脚本：
 
 ```
 <srcSchema extendedSchema="nms:recipient" label="Recipients" name="recipient"  namespace="cus">  
@@ -49,5 +47,4 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->默认情况下，添加的字段使用属性&#x200B;**user**（值为“true”）声明。 这样，您就可以使用“treeEdit”类型控件（请参阅“输入表单”）在扩展模式的输入表单中显示和编辑字段。
-
+>默认情况下，添加的字段将使用属性&#x200B;**user**&#x200B;声明（值为“true”）。 这允许您使用“treeEdit”类型控件（请参阅输入表单）在扩展架构的输入表单中显示和编辑字段。
