@@ -1,47 +1,45 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 增量查询
-description: 进一步了解增量查询工作流活动
+description: 了解有关增量查询工作流活动的更多信息
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 3%
 
 ---
 
-
 # 增量查询{#incremental-query}
 
-增量查询允许您根据某个标准定期选择目标，同时排除已针对该标准定位的人员。
+通过增量查询，您可以根据条件定期选择目标，同时排除已针对此条件定向的人员。
 
-已定位的填充按工作流实例和活动存储在内存中，即从同一模板启动的两个工作流不共享同一日志。 另一方面，基于同一工作流实例的相同增量查询的两个任务将使用相同的日志。
+已定向的群体按工作流实例和活动存储在内存中，即从同一模板启动的两个工作流不共享同一日志。 另一方面，基于同一工作流实例的相同增量查询的两个任务将使用相同的日志。
 
-该查询的定义方式与标准查询的定义方式相同，但会计划其执行。
+查询的定义方式与标准查询的定义方式相同，但其执行是计划的。
 
 **相关主题：**
 
-* [用例：每季度列表更新(使用增量查询)](../../workflow/using/quarterly-list-update.md)
+* [用例：使用增量查询每季度更新列表](../../workflow/using/quarterly-list-update.md)
 * [创建查询](../../workflow/using/query.md#creating-a-query)
 
 >[!CAUTION]
 >
->如果增量查询的结果在其执行之一期间等于&#x200B;**0**，则暂停工作流，直到查询的下次编程执行。 因此，在执行以下操作之前，不会处理增量查询后面的过渡和活动。
+>如果在增量查询执行一次期间其结果等于&#x200B;**0**，则会暂停工作流，直到查询的下次编程执行为止。 因此，在执行后续操作之前，不会处理增量查询后的过渡和活动。
 
 操作步骤：
 
-1. 在&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Schedule execution]**&#x200B;选项。 创建任务后，该查询将保持活动状态，并且仅在计划指定的时间触发该。 但是，如果禁用了该选项，则立即执行查询&#x200B;**，并执行一次操作**。
+1. 在&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Schedule execution]**&#x200B;选项。 创建任务后，该任务将保持活动状态，并且只会在计划指定的时间执行查询时触发。 但是，如果禁用了选项，则将立即执行&#x200B;**，并一次执行**。
 1. 单击 **[!UICONTROL Change]** 按钮。
 
    在&#x200B;**[!UICONTROL Schedule editing wizard]**&#x200B;窗口中，可以配置频率类型、事件循环和事件有效期。
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;保存计划。
+1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;以保存计划。
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
@@ -51,7 +49,7 @@ ht-degree: 3%
 
    * **[!UICONTROL History in days]**
 
-      已定位的收件人可以从其定位之日起记录最大天数。 如果此值为零，则不会从日志中清除收件人。
+      已定向的收件人可在自定向之日起的最大天数内被记录。 如果此值为零，则从不会从日志中清除收件人。
 
    * **[!UICONTROL Keep history when starting]**
 
@@ -59,7 +57,7 @@ ht-degree: 3%
 
    * **[!UICONTROL SQL table name]**
 
-      通过此参数，可以使包含历史记录数据的默认SQL表过载。
+      此参数允许您使包含历史数据的默认SQL表过载。
 
 ## 输出参数{#output-parameters}
 
@@ -67,4 +65,4 @@ ht-degree: 3%
 * 模式
 * recCount
 
-这三个值集标识查询所针对的人口。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是人口的模式(通常是nms: **[!UICONTROL recCount]** 收件人)，是表中元素的数量。
+这组值由三个值组成，用于标识查询所定向的群体。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms:recipient）， **[!UICONTROL recCount]** 是表中元素的数量。
