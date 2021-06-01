@@ -1,51 +1,48 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 投放概要
-description: 进一步了解投放概要工作流活动
+description: 了解有关投放大纲工作流活动的更多信息
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 1%
 
 ---
 
-
 # 投放概要{#delivery-outline}
 
-**投放概要**&#x200B;允许您在活动工作流中使用大纲。 大纲必须事先在活动中创建。
+**投放大纲**&#x200B;允许您在营销活动工作流中使用大纲。 必须事先在营销活动中创建大纲。
 
-有关Adobe Campaign中投放概要的详细信息，请参阅此[部分](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
+有关Adobe Campaign中投放大纲的更多信息，请参阅此[部分](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
-要配置活动，您只需选择您喜欢的大纲以及计划的联系日期。 您可以通过添加类型或类型规则来添加筛选规则。
+要配置活动，您只需选择所需的大纲以及计划的联系日期即可。 您可以通过添加分类或分类规则来添加筛选规则。
 
-## 示例：通过投放概要{#example--inserting-an-offer-via-a-delivery-outline}插入优惠
+## 示例：通过投放大纲{#example--inserting-an-offer-via-a-delivery-outline}插入选件
 
-活动工作流中提供的&#x200B;**投放概要**&#x200B;活动允许您显示当前活动中引用的投放概要。
+**投放大纲**&#x200B;活动在营销活动工作流中可用，它允许您显示当前正在进行的营销活动在投放大纲中引用的选件。
 
 >[!NOTE]
 >
 >必须安装&#x200B;**Interaction**&#x200B;包。
 
-1. 在工作流中，添加投放概要活动后再添加投放活动。
-1. 在“投放概要”活动中，指定要使用的轮廓。
+1. 在工作流中，添加投放大纲活动后再添加投放活动。
+1. 在投放大纲活动中，指定要使用的大纲。
 
-   有关指定投放概要的详细信息，请参阅此[部分](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
+   有关指定投放大纲的更多信息，请参阅此[部分](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
 1. 根据您的投放填写可用字段。
-1. 有两种可能的情况：
+1. 可能有两种情况：
 
-   * 如果要调用优惠引擎，请选中&#x200B;**[!UICONTROL Restrict the number of propositions selected]**&#x200B;框。 指定优惠空间和将在投放中显示的建议数。
+   * 如果要调用选件引擎，请勾选&#x200B;**[!UICONTROL Restrict the number of propositions selected]**&#x200B;框。 指定优惠空间以及将在投放中呈现的建议数。
 
-      优惠权重和合格规则将由优惠引擎考虑。
+      选件引擎将考虑选件权重和资格规则。
 
-   * 如果不选中此框，将在不调用优惠引擎的情况下显示投放概要中的所有优惠。
+   * 如果不勾选方框，则无需调用选件引擎即会显示投放大纲中的所有选件。
 
-   预览会考虑在投放中指定的优惠数。 执行工作流时，它是在投放概要中指定的数字。
+   预览会考虑投放中指定的选件数量。 执行工作流时，它是在投放大纲中指定的要考虑的编号。
 
    ![](assets/int_compo_offre_wf1.png)
-
