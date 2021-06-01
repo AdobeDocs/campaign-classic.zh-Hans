@@ -8,10 +8,10 @@ user-guide-description: 设计、规划、执行、管理和优化跨渠道营�
 solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a9a32b383d4709d9f0adf1e886d2ec3a9d601652
+source-git-commit: a9054fb8e10bef37675922b2f81c7615cd04c1bb
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 99%
+source-wordcount: '2477'
+ht-degree: 98%
 
 ---
 
@@ -566,41 +566,27 @@ ht-degree: 99%
       + [呈现规则](interaction/using/presentation-rules.md)
       + [入站渠道优惠](interaction/using/offers-on-an-inbound-channel.md)
       + [出站渠道优惠](interaction/using/offers-on-an-outbound-channel.md)
-+ 事务性消息传递 {#transactional-messaging}
-   + 事务性消息传递入门 {#introduction}
-      + [关于事务性消息传递](message-center/using/about-transactional-messaging.md)
++ 交易消息传递 {#transactional-messaging}
+   + [事务性消息传递入门](message-center/using/about-transactional-messaging.md)
+   + 配置事务型消息传递{#configure-transactional-messaging}
       + [事务性消息传递架构](message-center/using/transactional-messaging-architecture.md)
-      + [事件描述](message-center/using/event-description.md)
-   + 配置实例 {#instance-configuration}
-      + [创建共享连接](message-center/using/creating-a-shared-connection.md)
-      + [确定执行实例](message-center/using/identifying-execution-instances.md)
-      + [监测阈值](message-center/using/monitoring-thresholds.md)
-      + [清除事件](message-center/using/purging-events.md)
-      + [技术工作流](message-center/using/technical-workflows.md)
-      + [创建事件类型](message-center/using/creating-event-types.md)
-      + [配置多品牌策略](message-center/using/configuring-multibranding.md)
+      + [配置实例](message-center/using/configuring-instances.md)
+      + [其他配置](message-center/using/additional-configurations.md)
    + 消息模板 {#message-templates}
-      + [关于事务性消息模板](message-center/using/introduction.md)
-      + [创建消息模板](message-center/using/creating-the-message-template.md)
-      + [创建消息内容](message-center/using/creating-message-content.md)
-      + [管理事务性消息中的种子地址](message-center/using/managing-seed-addresses-in-transactional-messages.md)
-      + [个性化数据](message-center/using/personalization-data.md)
-      + [事务性消息预览](message-center/using/transactional-message-preview.md)
-      + [发送验证](message-center/using/sending-a-proof.md)
-      + [模板发布](message-center/using/template-publication.md)
-      + [模板取消发布](message-center/using/template-unpublication.md)
-   + 事件处理 {#event-processing}
-      + [关于事件处理](message-center/using/about-event-processing.md)
-      + [事件集合](message-center/using/event-collection.md)
-      + [模板路由](message-center/using/routing-towards-a-template.md)
+      + [创建事件类型](message-center/using/creating-event-types.md)
+      + [设计消息模板](message-center/using/creating-the-message-template.md)
+      + [测试消息模板](message-center/using/testing-message-templates.md)
+      + [发布消息模板](message-center/using/publishing-message-templates.md)
+   + 事务性事件处理{#processing}
+      + [事件描述](message-center/using/event-description.md)
+      + [事件处理](message-center/using/about-event-processing.md)
       + [投放执行](message-center/using/delivery-execution.md)
    + 报告 {#reports}
-      + [关于事务性消息报告](message-center/using/about-transactional-messaging-reports.md)
+      + [访问事务型消息报表](message-center/using/about-transactional-messaging-reports.md)
       + [消息中心事件的历史](message-center/using/history-of-message-center-events.md)
       + [消息中心服务级别](message-center/using/message-center-service-level.md)
       + [消息中心处理时间](message-center/using/message-center-processing-time.md)
-   + 用例 {#use-case}
-      + [发送带有附件的事务性电子邮件](message-center/using/transactional-email-with-attachments.md)
+   + [用例](message-center/using/transactional-email-with-attachments.md)
 + 与社交媒体集成 {#integrating-with-social-media}
    + [关于社交媒体营销](social/using/about-social-marketing.md)
    + 配置{#configuration}
