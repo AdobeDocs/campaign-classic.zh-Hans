@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 备份
 description: 备份
 audience: production
 content-type: reference
 topic-tags: data-processing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 2%
 
 ---
 
-
 # 备份{#backup}
 
-备份是避免在计算机上出现问题（无论是物理问题还是与系统相关）的事件中丢失数据的关键。
+备份对于避免在计算机上出现问题（无论是物理问题还是系统问题）时丢失数据至关重要。
 
 数据存储在两个不同的位置：
 
@@ -28,21 +26,21 @@ ht-degree: 2%
 
 ## 物理文件{#physical-files}
 
-文件分为几个类别:
+文件分为几类：
 
 * 配置文件，位于&#x200B;**nl6/conf**&#x200B;中
 
-   这使您能够快速地重新配置Adobe Campaign。
+   这些功能可以让您快速重新配置Adobe Campaign。
 
 * 重定向文件** nl6/var/`<instancename>`/redir**
 
-   这些服务器位于跟踪（通常称为“额面”）服务器上，并包含所有以前的活动重定向。 它们仍被以前的活动使用。
+   这些活动位于跟踪（通常称为“额面”）服务器上，并包含之前所有的促销活动重定向。 以前的营销活动仍使用这些量度。
 
 * 日志文件：**nl6/var/`<instancename>`/log**
 
-   这些可用于跟踪问题。
+   这些值可用于跟踪问题。
 
-因此，要备份的目录有：
+因此，要备份的目录如下：
 
 * nl6/conf
 
@@ -54,10 +52,10 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->备份数据库至关重要。
+>必须备份数据库。
 
 ## 数据库 {#database}
 
-Adobe Campaign库包含在Adobe Rich客户端控制台中显示的所有信息以及所有业务线数据。
+数据库包含Adobe Campaign富客户端控制台中显示的所有信息以及所有业务线数据。
 
 您的托管公司，特别是其数据库管理员，负责此操作。
