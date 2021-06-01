@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: b46a483594f210c4530a934194c6d2b73deaeaf9
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 2%
@@ -85,7 +85,7 @@ ht-degree: 2%
    * 刚刚收集但尚未处理的事件。 **[!UICONTROL Number of errors]**&#x200B;列显示值0。 电子邮件模板尚未关联。
    * 已处理但确认错误的事件。 **[!UICONTROL Number of errors]**&#x200B;列显示的值不是0。 要知道此事件何时将再次处理，请查阅&#x200B;**[!UICONTROL Process requested on]**&#x200B;列。
 
-* **待处理投放**:已处理事件并关联投放模板。电子邮件处于待投放状态，且已应用经典投放流程。 有关更多信息，可以打开[投放](../../delivery/using/about-message-tracking.md)。
+* **待处理投放**:已处理事件并关联投放模板。电子邮件处于待投放状态，且已应用经典投放流程。 有关更多信息，您可以打开投放。
 * **已发送**、 **** 忽略 **和投放错误**:这些提交状态可通过updateEventsStatusworkflow **** 恢复。有关更多信息，您可以打开相关投放。
 * **未涵盖的事件**:事务型消息传递路由阶段失败。例如，Adobe Campaign未找到充当事件模板的电子邮件。
 * **事件过期**:已达到最大发送尝试次数。该事件被视为null。
