@@ -1,37 +1,34 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 优惠建议历史
 description: 优惠建议历史
 audience: interaction
 content-type: reference
 topic-tags: tracking-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 480d49e7-0237-4c87-abe8-445b7bf91a30
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 15%
 
 ---
 
-
 # 优惠建议历史{#offer-proposition-history}
 
-创建优惠建议后，即可视图演示文稿历史记录。
+在您提出您的建议后，您便可以查看演示历史。
 
 >[!NOTE]
 >
->此功能仅在线显示，且仅对投放管理器可见。
+>此功能仅在线可见，且仅对投放管理器可见。
 
-* 在优惠级别的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Propositions]**。
+* 在选件级别的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Propositions]**。
 
    ![](assets/offer_followup_006.png)
 
-* 在收件人的用户档案中，单击&#x200B;**[!UICONTROL Propositions]**&#x200B;选项卡。
+* 在收件人的资料中，单击&#x200B;**[!UICONTROL Propositions]**&#x200B;选项卡。
 
    ![](assets/offer_followup_002.png)
 
-* 在优惠空间级别，单击&#x200B;**[!UICONTROL Propositions]**&#x200B;选项卡。
+* 在选件空间级别，单击&#x200B;**[!UICONTROL Propositions]**&#x200B;选项卡。
 
    ![](assets/offer_space_prop_001_b.png)
-
