@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 关于活动
 description: 关于活动
 audience: workflow
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+exl-id: 900dd30e-d4fb-452a-af3f-ae00758b0077
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 14%
 
 ---
 
-
 # 关于活动{#about-activities}
 
-本节介绍所有可用的活动。 根据创建/编辑工作流的节点或上下文，可用活动可能会有所不同。 例如，在活动中创建的工作流具有特定于渠道的投放活动。
+本节介绍所有可用的活动。 根据创建/编辑工作流的节点或上下文，可用活动可能会有所不同。 例如，在营销活动中创建的工作流具有特定于渠道的投放活动。
 
-工作流活动按类别分组。 同时有四个可用选项卡。
+工作流活动按类别进行分组。 同时有四个选项卡。
 
-在活动工作流中，**[!UICONTROL Events]**&#x200B;选项卡由&#x200B;**[!UICONTROL Deliveries]**&#x200B;选项卡替换。 [操作活动](../../workflow/using/about-action-activities.md)部分详细介绍了此选项卡中的活动。
+在营销活动工作流中，**[!UICONTROL Events]**&#x200B;选项卡被替换为&#x200B;**[!UICONTROL Deliveries]**&#x200B;选项卡。 [操作活动](../../workflow/using/about-action-activities.md)部分中详细介绍了此选项卡中的活动。
 
 ![](assets/wf-activity-tabs.png)
 
