@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 配置 Campaign 服务器
 description: 配置 Campaign 服务器
@@ -7,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1578'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -22,11 +21,11 @@ ht-degree: 1%
 
 这些过程仅限于&#x200B;**on-premise**/**hybrid**&#x200B;部署，并需要管理权限。
 
-对于托管的&#x200B;****&#x200B;部署，服务器端设置只能通过Adobe进行配置。 但是，某些设置可以在[促销活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)中设置，例如IP允许列表管理或URL权限。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)。
+对于托管的&#x200B;****&#x200B;部署，服务器端设置只能通过Adobe进行配置。 但是，某些设置可以在[促销活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)中设置，例如IP允许列表管理或URL权限。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans)。
 
 有关更多信息，请参阅以下章节：
 
-* [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+* [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
 * [托管模型](../../installation/using/hosting-models.md)
 * [Campaign Classic本地和托管功能矩阵](../../installation/using/capability-matrix.md)
 
