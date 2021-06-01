@@ -1,24 +1,22 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 识别窗体
 description: 识别窗体
 audience: configuration
 content-type: reference
 topic-tags: input-forms
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0d22b0bc-8fbc-4269-af9e-cee27e29bb27
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 14%
 
 ---
 
-
 # 识别窗体{#identifying-a-form}
 
-通过输入表单，您可以从Adobe Campaign客户端控制台编辑与模式关联的实例。
+通过输入表单，您可以从Adobe Campaign客户端控制台编辑与数据架构关联的实例。
 
-表单由其名称和命名空间标识。
+表单通过其名称和命名空间进行标识。
 
-表单的标识键是由命名空间和用冒号(“：”)分隔的名称组成的字符串(例如：“cus:contact”)。
+表单的标识键是由命名空间和名称之间用冒号(“：”)分隔的字符串组成(例如：“cus:contact”)。
