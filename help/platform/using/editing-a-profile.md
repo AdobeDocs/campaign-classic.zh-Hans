@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 编辑用户档案
 description: 编辑用户档案
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
-
 
 # 编辑用户档案{#editing-a-profile}
 
@@ -41,7 +39,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->选择&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;选项后，这表示用户档案处于状态阻止列表，即用户档案表示希望不要联系(例如，单击新闻稿中的退订链接)。 通过任何渠道（电子邮件、直邮广告等）投放时都不会定位这些顾客。有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
+>选择&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;选项后，这表示用户档案处于状阻止列表态，即该用户档案表示不希望与其联系（例如，单击新闻稿中的退订链接）。 通过任何渠道（电子邮件、直邮广告等）投放时都不会定位这些顾客。有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
 
 ## “联系人信息”选项卡{#contact-information-tab}
 
@@ -67,7 +65,7 @@ ht-degree: 86%
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-有关详细信息，请参阅[创建和管理列表](../../platform/using/creating-and-managing-lists.md)。
+有关更多信息，请参阅[创建和管理列表](../../platform/using/creating-and-managing-lists.md)。
 
 ## “订阅”选项卡{#subscriptions-tab}
 
@@ -98,4 +96,3 @@ ht-degree: 86%
 >[!NOTE]
 >
 >如需有关跟踪功能的详细信息，请参阅[此页面](../../delivery/using/delivery-dashboard.md)。
-
