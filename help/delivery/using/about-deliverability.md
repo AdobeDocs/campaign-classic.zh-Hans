@@ -1,101 +1,99 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 关于活动中的可交付性
-description: 了解交付能力最佳实践
+title: 关于Campaign中的投放能力
+description: 了解投放能力最佳实践
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
-source-git-commit: 0420de856d1506ab92d8f0e0824bf439e0ac7dc7
+exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
+# 什么是可投放性{#about-deliverability}
 
-# 什么是可交付性{#about-deliverability}
+投放能力允许您测量活动到达收件人收件箱的成功情况，而不会出现弹回或标记为垃圾邮件。 [了解投放能力为何重要](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters)。
 
-可交付性允许您衡量活动到达收件人收件箱时的成功程度，而不会出现弹跳或标记为垃圾邮件。 [了解为何交付能力很重要](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters)。
+更准确地说，电子邮件投放能力是指一组特征，这些特征决定了邮件在短时间内通过个人电子邮件地址到达其目的地的能力，并在内容和格式方面具有预期质量。
 
-更准确地说，电子邮件可发送性是指一系列特征，这些特征决定了邮件在短时间内通过个人电子邮件地址到达其目的地的能力，并在内容和格式方面达到预期的质量。
+要更深入地了解什么是可投放性，并了解有关关键可投放性术语、概念和方法的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
 
-要更深入地了解哪些是可交付性，并了解关键可交付性术语、概念和方法的更多信息，请参阅[Adobe可交付性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
+## 如何提高投放能力{#deliverability-key-points}
 
-## 如何提高交付能力{#deliverability-key-points}
+投放能力问题通常与互联网服务提供商和邮件服务器管理员实施的针对垃圾邮件的保护措施有关。
 
-传送能力问题通常与互联网服务提供商和邮件服务器管理员实施的防垃圾邮件措施有关。
+* 有关如何设计成功的电子邮件营销活动的一般建议，请参阅[可投放性策略和定义](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html)。
 
-* 有关如何设计成功的电子邮件营销活动的一般建议，请参阅[可交付性战略和定义](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html)。
-
-* 有关如何优化Adobe Campaign电子邮件的可交付性的更多具体建议，Adobe建议使用本节中列出的最佳实践。
+* 有关如何优化Adobe Campaign电子邮件的投放能力的更多具体建议，Adobe建议使用此部分中列出的最佳实践。
 
 >[!NOTE]
 >
->由于ISP必须不断开发新的复杂过滤技术以保护其客户免受垃圾邮件发送者的攻击，因此电子邮件的发送能力的特点是不断变化的标准和规则。 请确保参阅定期更新的[Adobe交付能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
+>由于ISP必须不断开发新的复杂过滤技术来保护其客户免受垃圾邮件发送者的攻击，因此电子邮件投放能力的特点是标准和规则不断变化。 请确保参阅定期更新的[Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
 
-### 可交付率
+### 投放能力率
 
-交付能力率是点击收件人收件箱的邮件数与已传递的邮件数相比。 要提高交付能力，您可能会努力提高此比率。
+投放能力率是指点击收件人收件箱的消息数量与投放的消息数量之比。 要提高投放能力，您可能会努力提高此投放率。
 
-对于Adobe Campaign，可交付率取决于许多因素，特别是：
+对于Adobe Campaign，投放能力率取决于多种因素，特别是：
 
-* 正确配置实例：请联系您的Adobe代表以获得帮助。
-* 合法网络配置：请参阅[本节](../../delivery/using/optimize-delivery.md#network-config)和[域设置和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy)。
-* 您的IP地址信誉：请参阅[ IP战略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy)。
+* 正确配置实例：请联系您的Adobe代表以获取帮助。
+* 合法的网络配置：请参阅[此部分](../../delivery/using/optimize-delivery.md#network-config)和[域设置和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy)。
+* 您的IP地址信誉：请参阅[IP策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy)。
 * 目标地址的质量：请参阅[隔离管理](../../delivery/using/optimize-delivery.md#quarantine-management)。
-* 低[投诉](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html)和[硬跳出率](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces)。
+* 低[投诉](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html)和[硬退回率](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces)。
 * 您的消息内容：请参阅[控制电子邮件内容](../../delivery/using/control-message-content.md)。
-* 邮件身份验证(SPF、DKIM、DMARC):请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
-* 发件人声誉：要了解主ISP如何评估发送方的信誉，请参阅[本节](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html)。
+* 报文验证(SPF、DKIM、DMARC):请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
+* 发件人声誉：要了解主ISP如何评估发件人的信誉，请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html)。
 
-## 活动交付工具{#deliverability-tools}
+## 营销活动投放能力工具{#deliverability-tools}
 
 <!--Adobe Campaign provides a number of tools designed to ensure optimal deliverability.-->
-Adobe Campaign提供多种工具来跟踪和改进您的平台的交付性能。 本页还强调了在使用活动时优化交付能力时应牢记的主要原则。
+Adobe Campaign提供了多种工具来跟踪和改进平台的投放能力性能。 本页还重点介绍了在使用Campaign时，您应当牢记的主要原则，以优化投放能力。
 
-### 仔细构建您的信息
+### 仔细构建消息
 
-在配置、设计和测试消息时，请确保遵循以下部分中提到的最佳实践。 利用Adobe Campaign提供的所有功能可帮助您提高交付能力。
+配置、设计和测试消息时，请确保遵循下面所列部分中提到的最佳实践。 利用Adobe Campaign提供的所有功能，可帮助您提高投放能力。
 
 * [投放最佳实践](../../delivery/using/delivery-best-practices.md)
 * [控制电子邮件内容](../../delivery/using/control-message-content.md)
 * [收件箱呈现](../../delivery/using/inbox-rendering.md)
 * [发送验证](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
 
-### 通过多次选择加入{#double-opt-in}验证同意
+### 通过双重选择加入{#double-opt-in}验证同意
 
-为了避免向无效地址发送消息、限制不当通信并改善发送者信誉，Adobe建议实施多次选择加入机制。 通过此方法，您可以确保收件人有意订阅。
+为避免向无效地址发送消息、限制不当通信并提高发件人信誉，Adobe建议实施双重选择加入机制。 通过此方法，您可以确保收件人有意订阅。
 
-有关详细信息，请参阅[使用多次 opt-in](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)创建订阅表单。
+有关此内容的更多信息，请参阅[使用双重选择加入创建订阅表单](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)。
 
-有关从客户收集数据时的最佳实践的更多信息，请参阅[《Adobe交付性最佳实践指南》](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene)。
+有关从客户收集数据时的最佳实践的更多信息，请参阅[Adobe可交付性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene)。
 
 ### 利用隔离管理
 
-Adobe Campaign管理一个列表，可以收集一致发生的垃圾邮件投诉、硬弹回和软弹回。
+Adobe Campaign会管理一个列表，以收集持续发生的垃圾邮件投诉、硬退回和软退回。
 
-为保护您的可交付性，默认情况下，其地址位于该列表上的收件人将被排除在将来所有投放之外，因为发送到这些联系人可能会损害您的发送信誉。
+为了保护您的投放能力，默认情况下，该列表中包含地址的收件人将被排除在所有未来投放之外，因为发送给这些联系人可能会损害您的发送声誉。
 
-如果无效地址率过高，某些互联网访问提供商会自动将电子邮件判断为垃圾邮件。因此，隔离可以使您避免被这阻止列表些提供商添加到。
+如果无效地址率过高，某些互联网访问提供商会自动将电子邮件判断为垃圾邮件。因此，隔离可让您避免被这些提阻止列表供商添加到。
 
-有关此方面的详细信息，请参阅以下部分：
+有关更多信息，请参阅以下章节：
 
 * [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
 * [了解隔离管理](../../delivery/using/understanding-quarantine-management.md)
 * [隔离与阻止列表](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
 
-### 使用监视和报告工具
+### 使用监控和报告工具
 
-使用Adobe Campaign提供的功能监控您的交付能力。
+使用Adobe Campaign提供的功能监控您的投放能力。
 
-Adobe Campaign允许您通过一套内置实时指标和报告检查投放的表现，以便更好地了解投放。
+Adobe Campaign允许您通过一组内置的实时指示器和报表来检查投放的执行情况，以便更好地分析投放。
 
-有关此方面的详细信息，请参阅以下部分：
+有关更多信息，请参阅以下章节：
 
-* [监控投放能力](../../delivery/using/monitoring-deliverability.md)
-* [关于投放监视](../../delivery/using/about-delivery-monitoring.md)
+* [监测可投放性](../../delivery/using/monitoring-deliverability.md)
+* [关于投放监控](../../delivery/using/about-delivery-monitoring.md)
 * [关于 Campaign 内置报告](../../reporting/using/about-campaign-built-in-reports.md)
 
 <!--TO REMOVE
