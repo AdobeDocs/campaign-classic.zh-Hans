@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -44,7 +44,8 @@ ht-degree: 0%
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Pending events queued]** :特定于消息中 **心的指示器**。有关详细信息，请参阅[此部分](../../message-center/using/monitoring-thresholds.md)。
+* **[!UICONTROL Pending events queued]** :特定于消息中 **心的指示器**。有关详细信息，请参阅[此部分](../../message-center/using/additional-configurations.md#monitoring-thresholds)。
+
 * **[!UICONTROL Memory]** :有关物理内存(RAM)的信息。
 
    **[!UICONTROL Current value]** :实际内存消耗。
@@ -101,7 +102,8 @@ ht-degree: 0%
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Pending events queued]** :特定于消息中 **心的指示器**。有关详细信息，请参阅[此部分](../../message-center/using/monitoring-thresholds.md)。
+* **[!UICONTROL Pending events queued]** :特定于消息中 **心的指示器**。有关详细信息，请参阅[此部分](../../message-center/using/additional-configurations.md#monitoring-thresholds)。
+
 * **[!UICONTROL Load average (1/5/15 minutes)]** :与负载有关的信息，即在机器上运行的进程在最后一分钟、五分钟或十五分钟内的使用率
 
    **[!UICONTROL Current value]** :机器的实际负载。
@@ -435,7 +437,7 @@ Adobe Campaign支持各种部署配置（有关更多信息，请参阅[此部�
  <thead> 
   <tr> 
    <th> 部署类型 </th> 
-   <th> 监控 </th> 
+   <th> 监测 </th> 
   </tr> 
  </thead> 
  <tbody> 
