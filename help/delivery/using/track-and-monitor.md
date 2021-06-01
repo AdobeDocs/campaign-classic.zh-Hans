@@ -1,37 +1,35 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 跟踪和监视消息
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-translation-type: tm+mt
-source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
 
 ---
 
-# 跟踪和监视 {#track-and-monitor}
+# 跟踪和监测 {#track-and-monitor}
 
-您单击了&#x200B;**发送**&#x200B;按钮？ 让我们看看会发生什么。 发送投放后，Adobe Campaign使您能够跟踪已发送的消息并了解收件人对您的投放的反应。 这将帮助您改进未来发送并优化您的下一个活动。
+您是否单击了&#x200B;**Send**&#x200B;按钮？ 让我们看看会发生什么。 发送投放后，Adobe Campaign允许您跟踪已发送的消息，并了解收件人对您的投放有何反应。 这将帮助您改进将来的发送并优化后续促销活动。
 
 ## 监控投放 {#monitoring-deliveries}
 
-要控制您的活动，您必须确保消息确实已送达您的收件人。
+要控制您的营销活动，您必须确保已将消息发送给收件人。
 
-从活动投放仪表板中，您可以检查已处理的消息和投放审核日志。
+在Campaign投放仪表板中，您可以检查已处理的消息和投放审核日志。
 您还可以控制投放日志中消息的状态。 [了解详情](../../delivery/using/about-delivery-monitoring.md)。
 
-如果投放未发送，且其状态仍为&#x200B;**待定**，该怎么办？
+如果未发送投放，且其状态保持&#x200B;**Pending**，该怎么办？
 
 * 执行过程正在等待某些资源的可用性。 MTA可能尚未启动。
-检查您的mta@instance模块是否已在您的MTA服务器上启动，并根据需要开始MTA模块。 [了解详情](../../production/using/administration.md)。
+检查您的mta@instance模块是否已在MTA服务器上启动，并在必要时启动MTA模块。 [了解详情](../../production/using/administration.md)。
 
-* 投放可能使用的是尚未在发送实例上配置的关联。
-提示：检查流量管理(IP关联)的配置。 有关详细信息，请参阅控制传出SMTP通信。
+* 投放可能使用的亲和度尚未在发送实例上配置。
+提示：检查流量管理（IP亲和度）的配置。 有关更多信息，请参阅控制传出SMTP流量。
 
 >[!NOTE]
 >
@@ -39,32 +37,32 @@ ht-degree: 3%
 
 ## 跟踪 {#tracking-deliveries}
 
-要更好地了解收件人的行为，您可以跟踪他们对投放的反应：接收、打开、点击链接、退订等。 在Campaign Classic中，此信息显示在投放所针对的收件人的“跟踪”选项卡和投放的“跟踪”选项卡中。
+为了更好地了解收件人的行为，您可以跟踪收件人对投放的反应：接收、打开、链接点击、退订等。 在Campaign Classic中，此信息显示在投放所定向收件人的跟踪选项卡和投放的跟踪选项卡中。
 
-**提示**:默认情况下，消息跟踪处于启用状态。要配置URL，请选择投放向导下半部分的“显示URL”选项。 对于邮件的每个URL，您可以选择是否激活跟踪。
+**提示**:默认启用消息跟踪。要配置URL，请在投放向导的下半部分选择显示URL选项。 对于消息的每个URL，您可以选择是否激活跟踪。
 
-有关详细信息，请参阅[配置跟踪](../../delivery/using/how-to-configure-tracked-links.md)部分和[跟踪指示器](../../reporting/using/delivery-reports.md#tracking-indicators)说明。
+有关更多信息，请参阅[配置跟踪](../../delivery/using/how-to-configure-tracked-links.md)一节和[跟踪指示器](../../reporting/using/delivery-reports.md#tracking-indicators)说明。
 
 ## 投放性能{#delivery-performances}
 
-要测量消息的传送速度，您可以控制投放吞吐量。 标准是每小时发送的消息数和消息的大小（以位/秒为单位）。 有关详细信息，请参阅[投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)。
+要测量消息的传送速度，您可以控制传送吞吐量。 标准是每小时发送的消息数量和消息的大小（以位/秒为单位）。 有关更多信息，请参阅[投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)。
 
 **提示**:
 
-* 请勿在实例上将投放保留为失败状态，因为这会保留临时表并影响性能。
+* 请勿在实例上将投放保持为失败状态，因为这会维护临时表并影响性能。
 
-* 删除不再需要的投放，并从数据库中删除非活动收件人以保持地址质量。
+* 从数据库中删除不再需要的投放和不活动的收件人，以保持地址质量。
 
-* 切勿尝试将大投放计划在一起。 请注意，可能需要5到10分钟才能将负载均匀地分布到系统上。
+* 请勿尝试同时计划大型投放。 请注意，可能需要5到10分钟才能将负载均匀地分布到系统上。
 
-## 传递疑难解答 {#delivery-troubleshooting}
+## 投放故障排除 {#delivery-troubleshooting}
 
-遇到投放问题时，可以执行特定操作：
+当遇到投放问题时，可以执行特定操作：
 
-* [可交付性问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
+* [投放能力问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 
 * [图像显示问题](../../production/using/image-display-issues.md)
 
-* [投放性能问题](../../delivery/using/delivery-performances.md)
+* [交付性能问题](../../delivery/using/delivery-performances.md)
 
-* [临时文件问题](../../production/using/temporary-files.md) - *仅限预置型客户*
+* [临时文件问题](../../production/using/temporary-files.md)  — 仅 *限内部部署客户*
