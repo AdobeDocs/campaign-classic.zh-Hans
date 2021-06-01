@@ -1,69 +1,67 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 活动- Salesforce CRM连接器
-description: 连接活动和Salesforce.com
+title: Campaign - Salesforce CRM连接器
+description: 连接Campaign和Salesforce.com
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-translation-type: tm+mt
-source-git-commit: 3e3a5250f165677026557a4e2249fc683aa23d57
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
-# 连接活动和Salesforce.com{#connect-to-sfdc}
+# 连接Campaign和Salesforce.com{#connect-to-sfdc}
 
 在本页中，您将学习如何将Campaign Classic连接到&#x200B;**Salesforce**。
 
-通过专用工作流活动进行数据同步。 [了解详情](../../platform/using/crm-data-sync.md)。
+数据同步是通过专用的工作流活动执行的。 [了解详情](../../platform/using/crm-data-sync.md)。
 
 
-该外部帐户允许您将Salesforce数据导入并导出到Adobe Campaign。
-要为Salesforce配置CRM连接器，请执行以下步骤：
+利用外部帐户，可将Salesforce数据导入和导出到Adobe Campaign。
+要配置CRM Connector for Salesforce，请执行以下步骤：
 
-1. 通过Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点创建新外部帐户。
+1. 通过Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点创建新的外部帐户。
 1. 选择 **[!UICONTROL Salesforce.com]**。
 1. 输入设置以启用连接。
 
    ![](assets/ext_account_17.png)
 
-   要配置Salesforce CRM外部帐户以与Adobe Campaign一起使用，您需要提供以下详细信息：
+   要配置Salesforce CRM外部帐户以与Adobe Campaign配合使用，您需要提供以下详细信息：
 
    * **[!UICONTROL Account]**
-用于登录Salesforce CRM的帐户。
+用于登录到Salesforce CRM的帐户。
 
    * **[!UICONTROL Password]**
-用于登录Salesforce CRM的密码。
+用于登录到Salesforce CRM的密码。
 
    * **[!UICONTROL Client identifier]**
-要了解在何处查找客户端标识符，请参阅 [此页](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+要了解在何处查找客户端标识符，请参阅此 [页面](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
 
    * **[!UICONTROL Security token]**
-要了解在何处查找您的安全令牌，请参阅此 [页](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+要了解在何处查找安全令牌，请参阅此 [页面](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
 
    * **[!UICONTROL API version]**
 选择API的版本。
-1. 运行配置向导以生成可用的CRM表：通过配置向导，可以收集表并创建匹配模式。
+1. 运行配置向导以生成可用的CRM表：通过配置向导，您可以收集表并创建匹配的架构。
 
    ![](assets/crm_connectors_sfdc_launch.png)
 
    >[!NOTE]
    >
-   >要批准设置，您需要注销并返回Adobe Campaign控制台。
+   >要批准该设置，您需要注销并重新启动Adobe Campaign控制台。
 
-1. 检查在&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点的Adobe Campaign中生成的模式。
+1. 检查在&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点的Adobe Campaign中生成的架构。
 
-   **Salesforce**&#x200B;模式示例：
+   **Salesforce**&#x200B;架构的示例：
 
    ![](assets/crm_connectors_sfdc_table.png)
 
-1. 创建模式后，您可以将明细列表从Salesforce自动同步到Adobe Campaign。
+1. 创建架构后，您可以自动将枚举从Salesforce同步到Adobe Campaign。
 
-   要执行此操作，请单击&#x200B;**[!UICONTROL Synchronizing enumerations...]**&#x200B;链接，然后选择与SalesforceAdobe Campaign匹配的明细列表明细列表。
+   要执行此操作，请单击&#x200B;**[!UICONTROL Synchronizing enumerations...]**&#x200B;链接，然后选择与Salesforce枚举匹配的Adobe Campaign枚举。
 
 
 
@@ -71,7 +69,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >您可以将Adobe Campaign明细列表的所有值替换为CRM的值：要执行此操作，请在&#x200B;**[!UICONTROL Replace]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。
+   >您可以将Adobe Campaign枚举的所有值替换为CRM的值：要执行此操作，请在&#x200B;**[!UICONTROL Replace]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。
 
 
    单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Start]**&#x200B;以开始导入列表。
@@ -82,12 +80,12 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   > 不支持多个选择明细列表。
+   > 不支持多个选择枚举。
 
-活动和Salesforce.com现已连接。 可以在两个系统之间设置数据同步。
+Campaign和Salesforce.com现已连接。 您可以在两个系统之间设置数据同步。
 
-要在Adobe Campaign数据和SFDC之间同步活动，您需要创建一个工作流并使用&#x200B;**[!UICONTROL CRM connector]**&#x200B;数据。
+要在Adobe Campaign数据和SFDC之间同步数据，您需要创建工作流并使用&#x200B;**[!UICONTROL CRM connector]**&#x200B;活动。
 
 ![](assets/crm_connectors_sfdc_wf.png)
 
-了解有关此页](../../platform/using/crm-data-sync.md)中数据同步[的更多信息。
+在本页](../../platform/using/crm-data-sync.md)中了解有关数据同步[的更多信息。
