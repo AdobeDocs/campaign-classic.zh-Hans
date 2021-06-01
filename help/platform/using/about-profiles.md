@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 关于用户档案
 description: 关于用户档案
@@ -7,14 +6,14 @@ feature: 用户档案和受众
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '899'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
-# 用户档案{#about-profiles}快速入门
+# 开始使用用户档案{#about-profiles}
 
 用户档案将集中在Adobe Campaign数据库中。 有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助Adobe Campaign，您可以整合营销历史、购买信息、偏好、CRM数据以及整合视图中任何相关的PI数据，以便进行分析并采取行动。
 
