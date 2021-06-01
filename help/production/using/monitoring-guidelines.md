@@ -1,20 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 监控准则
+title: 监测准则
 description: 了解监控 Campaign 实例和流程的准则和最佳实践。
 audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 20%
 
 ---
 
-# 监控准则 {#monitoring-guidelines}
+# 监测准则 {#monitoring-guidelines}
 
 ## 实例监控仪表板{#instance-monitoring-dashboard}
 
@@ -51,7 +50,7 @@ ht-degree: 20%
 
 **控制面板**
 
-利用控制面板，可管理实例的多个设置：管理URL权限，检查实例详细信息，如服务器的内部版本等。 它还允许您监视连接到实例的SFTP服务器上的可用空间。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)以了解更多信息。
+利用控制面板，可管理实例的多个设置：管理URL权限，检查实例详细信息，如服务器的内部版本等。 它还允许您监视连接到实例的SFTP服务器上的可用空间。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)以了解更多信息。
 
 >[!NOTE]
 >
