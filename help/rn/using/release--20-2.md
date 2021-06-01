@@ -3,15 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: 版本 20.2
 description: 版本 20.2
-feature: Overview
+feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-translation-type: tm+mt
-source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '2970'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -19,38 +18,38 @@ ht-degree: 87%
 
 ## ![](assets/do-not-localize/green_2.png) 20.2.5 版 - 内部版本 9188 {#release-20-2-5-build-9188}
 
-_2021年4月15日_
+_2021 年 4 月 15 日_
 
-* 修复了导致IMS连接屏幕上出现持续错误消息的客户端控制台回归。 (NEO-34821)
+* 修复了导致 IMS 连接屏幕上出现持续错误消息的客户端控制台回退问题。 (NEO-34821)
 
 **必须执行仅控制台升级。无需升级服务器。**
 
 >[!NOTE]
 >
-> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
+> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
 
 _2021 年 3 月 31 日_
 
 **改进**
 
-* 已作出改进，以防止无效soap调用发生崩溃。 这可能导致实例在尝试运行特定的复杂查询时停止工作。 (NEO-28796, NEO-30553)
-* 修复了由于主机名验证而无法发送带有TLS的SMS投放的回归。 (NEO-29581)
-* 修复了签名跟踪链接无法在某些电子邮件客户端上工作的问题。 (NEO-28414, NEO-29615)
-* 修复了在使用webApp跟踪标签时可能导致与重复ID冲突的跟踪ID序列。 (NEO-27931)
-* 修复了导致每天wfserver重新启动时运行工作流停止的问题。 (NEO-30047)
+* 已进行改进，以防止无效soap调用发生崩溃。 这可能导致实例在尝试运行特定的复杂查询时停止工作。 (NEO-28796, NEO-30553)
+* 修复了由于主机名验证而阻止发送具有TLS的短信投放的回归。 (NEO-29581)
+* 修复了导致已签名跟踪链接无法在某些电子邮件客户端上工作的问题。 (NEO-28414, NEO-29615)
+* 修复了在使用webApp跟踪标记时可能导致与重复ID冲突的跟踪ID序列。 (NEO-27931)
+* 修复了导致每天wfserver重新启动时运行的工作流停止的问题。 (NEO-30047)
 * 修复了在尝试同步 Adobe Experience Manager 模板时使用非管理员用户发出的 API 调用的安全问题。(NEO-32389, NEO-23487)
-* 修复了在从模板创建的投放上关闭投放对话框时导致控制台崩溃的问题。 (NEO-31547)
-* 修复了在投放的&#x200B;**定位和工作流**&#x200B;选项卡中创建和保存活动时发生的问题：预览将失败，出现以下错误。(NEO-29440)
-* 修复了Tomcat 8.5发送无效答案导致事务消息日志中出现错误的问题。 (NEO-30858)
+* 修复了在使用模板创建的投放上关闭投放对话框时导致控制台崩溃的问题。 (NEO-31547)
+* 修复了在营销活动的&#x200B;**定位和工作流**&#x200B;选项卡中创建和保存投放时发生的问题：预览会失败，并出现以下错误。(NEO-29440)
+* 修复了Tomcat 8.5发送无效答案的问题，该问题导致事务性消息日志中出现错误。 (NEO-30858)
 * 修复了导致外部线程管理中内存损坏并影响性能的回归问题。
-* 修复了在使用自定义目标映射时可能导致付费工作流失败的问题。 自定义模式的主键存储在“sourceId”列中，该列仅允许整数值。 它现在允许整数和字符串值。 (NEO-25914, NEO-28146)
+* 修复了在使用自定义目标映射时可能导致计费工作流失败的问题。 自定义架构的主键存储在“sourceId”列中，该列仅允许整数值。 现在，它允许使用整数和字符串值。 (NEO-25914, NEO-28146)
 * 修复了导致无法使用某些控制台组件（如投放中的日期选择器和图像管理）的回退问题。(NEO-31453)
 
 ## ![](assets/do-not-localize/red_2.png) 20.2.4 版 - 内部版本 9187 {#release-20-2-4-build-9187}
 
-_2021年4月15日_
+_2021 年 4 月 15 日_
 
-* 修复了导致IMS连接屏幕上出现持续错误消息的客户端控制台回归。 (NEO-34821)
+* 修复了导致 IMS 连接屏幕上出现持续错误消息的客户端控制台回退问题。 (NEO-34821)
 * 修复了导致无法使用某些控制台组件（如投放中的日期选择器和图像管理）的回退问题。(NEO-31453, NEO-31454)
 
 **必须执行仅控制台升级。无需升级服务器。**
@@ -71,17 +70,17 @@ _2020 年 12 月 22 日_
 **改进**
 
 * 连接协议已经更新，以遵循新的 IMS 认证机制。
-* 触发最初基于oAUTH身份验证设置的集成身份验证已更改并移至Adobe I/O。[了解更多](../../integrations/using/configuring-adobe-io.md)
+* 最初基于oAUTH身份验证设置来访问管道的Triggers集成身份验证已更改并移至Adobe I/O。 [了解详情](../../integrations/using/configuring-adobe-io.md)
 * [终止支持 iOS APN 旧版二进制协议](https://developer.apple.com/news/?id=c88acm2b)之后，在升级后期间，所有使用此协议的实例都更新为 HTTP/2 协议。
 * 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
-* 修复了在连接错误后导致SMPP连接器停用的问题，防止发送其他SMS投放并导致性能问题。 (NEO-28609)
+* 修复了在发生连接错误后导致SMPP连接器停用、阻止发送其他短信投放并导致性能问题的问题。 (NEO-28609)
 * 通过防止在清除表达式分析器时内存损坏，修复了服务器崩溃问题。(NEO-26856)
 * 修复了在显示工作流中&#x200B;**拆分**&#x200B;活动的其余目标数据时导致服务器 崩溃的问题。
 * 修复了在查询除&#x200B;**收件人** (nms:recipient) 以外的其他模式后尝试预览 SMS 消息时可能显示错误消息的问题。(NEO-27517)
 * 修复了在发出具有主机名中明确定义的端口号的HTTPS连接请求时，调用失败并出现证书错误的问题。 (NEO-29146)
-* 修复了POSIX线程管理中在营销实例上生成大核心转储文件的问题。 (NEO-28117, NEO-29281)
-* 修复了在准备投放或重复投放预览时可能导致Web进程崩溃的问题。 (NEO-27790, NEO-27517)
-* 修复了由非管理员操作员触发时导致投放或验证发送失败的问题。 (NEO-28597)
+* 修复了POSIX线程管理中在营销实例上生成大型核心转储文件的问题。 (NEO-28117, NEO-29281)
+* 修复了在准备投放或定期投放预览时可能导致Web进程崩溃的问题。 (NEO-27790, NEO-27517)
+* 修复了由非管理员操作员触发时，导致投放或校样发送失败的问题。 (NEO-28597)
 
 ![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月版**，其中使用 CNAME 进行域配置并新增数据库监视功能。[了解详情](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)。
 
@@ -202,7 +201,7 @@ Campaign 现在支持以下系统：
 
 **改进**
 
-* 事务性消息已得到改进，可提供更好的用户体验。您现在可以取消发布事务性消息模板，这将从执行实例中删除它。[了解详情](../../message-center/using/template-unpublication.md)。
+* 事务性消息已得到改进，可提供更好的用户体验。您现在可以取消发布事务性消息模板，这将从执行实例中删除它。[了解详情](../../message-center/using/publishing-message-templates.md#template-unpublication)。
 
 * 新选项可用于设置发送包含图像或附件的电子邮件时的限制。这些限制可以避免性能问题，这对于事务性消息尤为有用。[阅读更多](../../installation/using/configuring-campaign-options.md#delivery)
 
