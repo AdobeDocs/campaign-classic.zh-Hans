@@ -1,31 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 丰富内容
 description: 丰富内容
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
 
 ---
 
-
 # 丰富内容{#enriching-content}
 
-聚合器允许您使用外部数据丰富内容。 此数据来自通用查询或链接表。
+聚合器允许您使用外部数据扩充内容。 此数据来自通用查询或链接的表。
 
-## 通用查询{#generic-queries}
+## 一般查询{#generic-queries}
 
-查询通过&#x200B;**[!UICONTROL Aggregator]**&#x200B;选项卡中的发布模板进行配置。
+通过&#x200B;**[!UICONTROL Aggregator]**&#x200B;选项卡中的发布模板配置查询。
 
-检索到的数据将通过其主元素丰富XML输出文档。
+检索到的数据将通过其主元素扩充XML输出文档。
 
-从收件人模式上的查询返回的示例(**nms:收件人**):
+从收件人模式查询返回的示例(**nms:recipient**):
 
 ```
 <book name="Content Management">
@@ -37,13 +35,13 @@ ht-degree: 0%
 </book>
 ```
 
-**`<collection-recipient>`**&#x200B;元素表示由文档产生的查询的输入元素。 检索到的数据在此元素下返回；在我们的示例中，收件人列表。
+**`<collection-recipient>`**&#x200B;元素表示由查询生成的文档的输入元素。 检索到的数据将在此元素下返回；在本例中，为收件人列表。
 
 ### 添加查询{#adding-a-query}
 
-查询参数是使用向导编辑的。
+可使用向导编辑查询参数。
 
-1. 在第一页中，指定包含要检索的数据的标签和模式。
+1. 在第一页中，指定标签和包含要检索数据的架构。
 
    ![](assets/d_ncs_content_query1.png)
 
@@ -51,38 +49,38 @@ ht-degree: 0%
    >
    >编辑字段&#x200B;**Path**&#x200B;用于重命名查询输出元素。
 
-1. 在下一页中，您可以选择要检索的数据。
+1. 下一页允许您选择要检索的数据。
 
    ![](assets/d_ncs_content_query2.png)
 
-1. 下一页定义筛选条件。
+1. 下一页定义过滤条件。
 
    ![](assets/d_ncs_content_query3.png)
 
-1. 最后一页启动预览查询返回的数据。
+1. 最后一页将启动查询返回的数据预览。
 
    ![](assets/d_ncs_content_query4.png)
 
 ## 链接的表{#linked-tables}
 
-链接允许您检索链接到内容的外部数据。
+利用链接，可检索链接到内容的外部数据。
 
 链接数据有两种类型：
 
 * 内容链接：这是本机内容管理模式。 链接的内容会自动集成到XML输出文档中。
-* 指向外部表的链接允许访问数据库中的所有其他表，但约束是检索带有聚合器的所选链接的数据。
+* 指向外部表的链接允许访问数据库中的所有其他表，但约束是使用聚合器检索所选链接的数据。
 
-### 链接到内容模式{#link-to-a-content-schema}
+### 链接到内容架构{#link-to-a-content-schema}
 
-内容链接在数据模式中声明如下：
+在数据架构中声明内容链接，如下所示：
 
 ```
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-链接的定义填充在&#x200B;**string**-type **`<element>`**&#x200B;上，**expandSchemaTarget**&#x200B;属性引用目标模式（我们的示例中为“cus:chapter”）。 引用的模式必须是内容模式。
+链接的定义填充在&#x200B;**string**-type **`<element>`**&#x200B;上，并且&#x200B;**expandSchemaTarget**&#x200B;属性引用目标架构（在我们的示例中为“cus:chapter”）。 引用的架构必须是内容架构。
 
-目标元素的内容丰富了链接元素，即示例模式中的&#x200B;**`<chapter>`**&#x200B;元素：
+目标元素的内容丰富了链接元素，即我们示例架构中的&#x200B;**`<chapter>`**&#x200B;元素：
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -92,7 +90,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->链接的&#x200B;**计算字符串**&#x200B;由&#x200B;**computeString**&#x200B;属性显示。
+>链接的&#x200B;**计算字符串**&#x200B;是从&#x200B;**computeString**&#x200B;属性中显示的。
 
 在输入表单中，链接的编辑控件声明如下：
 
@@ -106,13 +104,13 @@ ht-degree: 0%
 
 #### 链接集合{#link-collection}
 
-要填充链接集合，请在数据模式中将&#x200B;**unboind=&quot;true&quot;**&#x200B;属性添加到链接元素的定义中：
+要填充链接集合，请将&#x200B;**unbound=&quot;true&quot;**&#x200B;属性添加到数据架构中链接元素的定义中：
 
 ```
 <element expandSchemaTarget="cus:chapter" label="List of chapters" name="chapter"  ordered="true" unbound="true"/>
 ```
 
-目标元素的内容丰富了每个集合元素：
+目标元素的内容丰富了每个收集元素：
 
 ```
 <chapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -128,23 +126,23 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link2.png)
 
-将显示默认列，以便视图目标元素的&#x200B;**计算字符串**。
+显示默认列，以查看目标元素的&#x200B;**计算字符串**。
 
 ### 外部表{#links-to-external-tables}的链接
 
-在数据模式中将声明指向外部表的链接，如下所示：
+在数据架构中声明指向外部表的链接，如下所示：
 
 ```
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-链接的定义填充在&#x200B;**link**-type **`<element>`**&#x200B;上，**目标**&#x200B;属性引用目标模式(我们的示例中为“nms:收件人”)。
+链接的定义填充在&#x200B;**link**-type **`<element>`**&#x200B;上，并且&#x200B;**target**&#x200B;属性引用目标模式（在我们的示例中为“nms:recipient”）。
 
-根据惯例，必须从数据模式的主要元素中声明链接。
+按照惯例，必须从数据架构的主要元素中声明链接。
 
-**计算字符串**&#x200B;和目标元素的键丰富主元素上的&#x200B;**`<name>-id`**&#x200B;和&#x200B;**`<name>-cs`**&#x200B;属性。
+**计算字符串**&#x200B;和目标元素的键将丰富主元素上的&#x200B;**`<name>-id`**&#x200B;和&#x200B;**`<name>-cs`**&#x200B;属性。
 
-在我们的示例中，链接会填充到“cus:book”模式中，链接数据的内容包含在“mainContact-id”和“mainContact-cs”属性中：
+在我们的示例中，链接以“cus:book”模式填充，链接数据的内容包含在“mainContact-id”和“mainContact-cs”属性中：
 
 ```
 <book computeString="Content management" date="2006/06/08" id="6106" language="en" mainContact-cs="John Doe (john.doe@adobe.com)" mainContact-id="3012" name="Content management" xtkschema="cus:book">
@@ -158,7 +156,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link3.png)
 
-您可以通过在输入表单中的链接定义添加&#x200B;**`<sysfilter>`**&#x200B;元素来限制目标元素的选择：
+您可以通过输入表单中的链接定义添加&#x200B;**`<sysfilter>`**&#x200B;元素，从而限制目标元素的选择：
 
 ```
 <input xpath="mainContact">
@@ -197,7 +195,7 @@ ht-degree: 0%
 >
 >该列表是可编辑的，允许您从上面显示的“链接”类型控件中选择链接。
 
-目标元素的内容丰富了输出文档中的每个集合元素：
+目标元素的内容丰富了输出文档中的每个收集元素：
 
 ```
 <contact id="11504978621" recipient-cs="Doe John (john.doe@adobe.com)" recipient-id="3012"/>
@@ -208,7 +206,7 @@ ht-degree: 0%
 
 引用的每个链接的内容仅限于目标元素的内部键和&#x200B;**计算字符串**。
 
-JavaScript脚本用于通过SOAP查询丰富链接的内容。
+JavaScript脚本用于通过SOAP查询扩充链接的内容。
 
 **示例**:将收件人名称添加到“mainContact”链接和“contact”集合链接：
 
@@ -260,4 +258,3 @@ for each(var contact in content.contact)
 JavaScript代码的内容通过&#x200B;**[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]**&#x200B;文件夹添加，并且必须在每个转换的发布模板中填充。
 
 ![](assets/d_ncs_content_link5.png)
-
