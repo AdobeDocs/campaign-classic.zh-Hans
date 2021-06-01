@@ -1,29 +1,27 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 管理和自定义列表
 description: 了解如何浏览和配置列表
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
+exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 84%
 
 ---
 
-
 # 管理和自定义列表{#manage-and-customize-lists}
 
-您可以使用Explorer访问活动数据库中的列表条记录。 您可以过滤这些列表、运行搜索、添加信息、过滤和排序数据。
+您可以使用资源管理器访问Campaign数据库中的记录列表。 您可以过滤这些列表、运行搜索、添加信息、过滤和排序数据。
 
 ## 计数记录{#counting-records}
 
 默认情况下，Adobe Campaign 会加载列表的前 200 条记录。这意味着不一定会显示您所查看的数据库表的所有记录。您可以统计列表中的记录数量并加载更多记录。
 
-在列表屏幕的右下部，**[!UICONTROL counter]**&#x200B;显示已加载的记录数和库中的记录总数(应用任何过滤器后):
+在列表屏幕右下方， **[!UICONTROL counter]**&#x200B;显示已加载的记录数以及数据库中的记录总数（应用任何过滤器后）：
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
@@ -47,7 +45,7 @@ ht-degree: 84%
 
 ![](assets/s_ncs_user_configure_list.png)
 
-在列表配置窗口中，单击&#x200B;**[!UICONTROL Advanced parameters]**（左下）并更改要检索的行数。
+在列表配置窗口中，单击&#x200B;**[!UICONTROL Advanced parameters]**（左下方）并更改要检索的行数。
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
@@ -57,7 +55,7 @@ ht-degree: 84%
 
 在列表中添加列有两种方法。
 
-您可以从记录的详细信息快速向列表添加列。 操作步骤：
+您可以从记录详细信息快速将列添加到列表。 操作步骤：
 
 1. 在详细信息屏幕中，右键单击要在列中显示的字段。
 1. 选择 **[!UICONTROL Add in the list]**。
@@ -82,11 +80,11 @@ ht-degree: 84%
    >
    >会按照数据库表，然后按字母顺序显示各个标签。
    >
-   >使用 **Search** 字段在可用字段中执行搜索。有关详细信息，请参阅[本节](#sorting-a-list)。
+   >使用 **Search** 字段在可用字段中执行搜索。有关详细信息，请参见[此部分](#sorting-a-list)。
    >
    >通过具体图标标识各字段：SQL 字段、链接的表、已计算字段等。针对选中的每个字段，在可用字段的列表下会显示其说明。[了解详情](#configuring-lists)。
    >
-   >您也可以排序和过滤数据。请参阅[此章节](../../platform/using/filtering-options.md)。
+   >您也可以排序和过滤数据。请参阅[此小节](../../platform/using/filtering-options.md)。
 
 1. 对要显示的每个列重复此步骤。
 1. 使用箭头修改&#x200B;**显示顺序**。值最高的列将显示在记录列表的左侧。
@@ -167,7 +165,7 @@ ht-degree: 84%
 
 要从列表中导出数据，必须使用导出向导。要启动此向导，可从列表中选择要导出的元素，右键单击它后选择 **[!UICONTROL Export...]**。
 
-[通用导入和导出](../../platform/using/about-generic-imports-exports.md)中说明了导入和导出功能的使用。
+[一般导入和导出](../../platform/using/about-generic-imports-exports.md)中说明了导入和导出函数的使用。
 
 >[!CAUTION]
 >
@@ -181,7 +179,7 @@ ht-degree: 84%
 
 此外也可以配置排序或组合排序标准。为此请执行以下操作步骤：
 
-1. **[!UICONTROL Configure list]** 和列表右侧。
+1. **[!UICONTROL Configure list]** 列表右侧。
 
    ![](assets/s_ncs_user_configure_list.png)
 
