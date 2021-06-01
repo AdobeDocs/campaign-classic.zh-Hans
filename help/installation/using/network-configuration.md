@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 网络配置
 description: 学习系统通信指南
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
 
 ---
 
-
 # 网络配置{#network-configuration}
 
 ## 进程之间的通信{#communication-between-processes}
 
-应用程序的某些进程需要与他人通信或访问LAN和Internet。 这意味着需要为这些进程打开某些TCP端口。
+应用程序的某些进程需要与他人通信或访问局域网和互联网。 这意味着需要为这些进程打开一些TCP端口。
 
-将嵌入式Apache Tomcat端口用作Adobe Campaign平台不同应用程序服务器之间内部通信的优先级（默认为8080）。
+将嵌入式Apache Tomcat端口用作优先级（默认为8080），用于Adobe Campaign平台各种应用程序服务器之间的内部通信。
 
 ### 投放服务器{#delivery-server}
 
@@ -37,29 +35,29 @@ ht-degree: 3%
   <tr> 
    <td> 25/tcp(smtp)<br /> </td> 
    <td> Anywhere<br /> </td> 
-   <td> 电子邮件广播的SMTP通信。<br /> </td> 
+   <td> 用于电子邮件广播的SMTP流量。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 53/udp(domain)<br /> </td> 
+   <td> 53/udp（域）<br /> </td> 
    <td> DNS服务器<br /> </td> 
    <td> DNS查询。<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp（默认端口）<br /> </td> 
    <td> SMS网关<br /> </td> 
-   <td> 用于将SMS通信发送到NetSize SMS路由器[option]。<br /> </td> 
+   <td> 用于向NetSize SMS路由器[option]发送短信流量。<br /> </td> 
   </tr> 
   <tr> 
    <td> 7777/udp<br /> </td> 
    <td> 统计服务器<br /> </td> 
-   <td> 访问统计服务器。<br /> </td> 
+   <td> 访问统计信息服务器。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 入站邮件{#inbound-mail}
 
-对于入站邮件恢复进程(**nlserver inMail**)，必须打开以下端口：
+对于入站邮件恢复过程(**nlserver inMail**)，必须打开以下端口：
 
 <table> 
  <tbody> 
@@ -71,12 +69,12 @@ ht-degree: 3%
   <tr> 
    <td> 110/tcp(pop3)<br /> </td> 
    <td> 内部邮件服务器<br /> </td> 
-   <td> POP3流量以接收跳出消息。<br /> </td> 
+   <td> 用于提取退回邮件的POP3流量。<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp(smtp)<br /> </td> 
    <td> 内部邮件服务器<br /> </td> 
-   <td> SMTP流量，用于发送未由预定义规则自动处理的剩余弹回邮件。<br /> </td> 
+   <td> 用于发送未由预定义规则自动处理的剩余退回邮件的SMTP流量。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -95,16 +93,16 @@ ht-degree: 3%
   <tr> 
    <td> 80/tcp(http)<br /> 443/tcp(https)<br /> </td> 
    <td> Anywhere<br /> </td> 
-   <td> HTTP或HTTPS通信(包括用于可交付性优惠)。<br /> </td> 
+   <td> HTTP或HTTPS流量（包括可交付性选件的流量）。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-当某个Adobe Campaign平台的多个应用程序服务器需要相互通信时，我们建议使用Apache Tomcat服务器的端口(默认情况下：8080)，而不是与进行重定向模块集成的Web服务器的HTTP端口。 这意味着需要在这些服务器之间打开端口。
+当Adobe Campaign平台的多个应用程序服务器需要相互通信时，我们建议使用Apache Tomcat服务器的端口(默认情况下：8080)，而不是Web服务器的HTTP端口，该HTTP端口与重定向模块集成。 这意味着需要在这些服务器之间打开端口。
 
-### SMS投放状态{#sms-delivery-status}
+### 短信投放状态{#sms-delivery-status}
 
-要跟踪SMS投放(**nlserver sms**)，必须打开以下端口：
+要跟踪短信投放(**nlserver sms**)，必须打开以下端口：
 
 <table> 
  <tbody> 
@@ -116,7 +114,7 @@ ht-degree: 3%
   <tr> 
    <td> 38000/tcp（默认端口）<br /> </td> 
    <td> SMS网关<br /> </td> 
-   <td> 查询由NetSize SMS网关[选项]管理的投放队列状态。<br /> </td> 
+   <td> 查询由NetSize SMS网关[option]管理的投放队列状态。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -135,14 +133,14 @@ ht-degree: 3%
   <tr> 
    <td><p> 80/tcp(http)</p><p>443/tcp(https)</p><br /> </td> 
    <td> 应用程序服务器<br /> </td> 
-   <td> SOAP通信(HTTP)。<br /> </td> 
+   <td> SOAP流量(HTTP)。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 数据库访问{#database-access}
 
-使用数据库的所有组件都必须能够连接到它。 大多数组件都是如此，除了可以单独工作的重定向服务器和仅使用HTTP（或HTTPS）与应用程序服务器通信的瘦Win32客户端。
+使用数据库的所有组件都必须能够连接到该数据库。 大多数组件都属于这种情况，但重定向服务器（可单独使用）和瘦Win32客户端(仅使用HTTP（或HTTPS）与应用程序服务器通信)除外。
 
 默认端口如下：
 
@@ -175,36 +173,36 @@ ht-degree: 3%
 
 ## 外部访问{#external-access}
 
-此外，某些组件必须可从公共Internet访问，以便直接从Adobe Campaign执行的电子邮件活动可以查看。 这意味着某些端口需要为组件打开。
+此外，某些组件必须可从公共Internet访问，以便能够查看直接从Adobe Campaign执行的电子邮件促销活动。 这意味着需要为组件打开某些端口。
 
 ### 重定向服务器{#redirection-server}
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 侦听端口<br /> </td> 
+   <td> 监听端口<br /> </td> 
    <td> 位置<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp(http)</p><p> 443/tcp(https)</p><br /> </td> 
-   <td> 随时随地。 每次点击跟踪的链接都会在服务器上生成一个HTTP请求。<br /> </td> 
+   <td> 随处可得。 对跟踪链接的每次点击都会在服务器上生成一个HTTP请求。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 外部Web服务器{#external-web-server}
 
-此服务器托管Web 窗体、镜像页面等。 需要打开以下端口：
+此服务器托管Web窗体、镜像页面等。 需要打开以下端口：
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 侦听端口<br /> </td> 
+   <td> 监听端口<br /> </td> 
    <td> 位置<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp(http)</p><p> 443/tcp(https)</p><br /> </td> 
-   <td> 随时随地。 从Web 窗体平台直接管理Adobe Campaign或使用镜像页面时必需。<br /> </td> 
+   <td> 随处可得。 直接从Adobe Campaign平台管理Web窗体或使用镜像页面时需要。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -214,29 +212,29 @@ ht-degree: 3%
 <table> 
  <tbody> 
   <tr> 
-   <td> 侦听端口<br /> </td> 
+   <td> 监听端口<br /> </td> 
    <td> 位置<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp(http)</p><p> 443/tcp(https)</p><br /> </td> 
-   <td> 执行瘦客户端或富客户端的所有计算机。<br /> </td> 
+   <td> 执行瘦客户机或富客户机的所有计算机。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 与Adobe Experience Manager {#integration-with-adobe-experience-manager}集成
+## 与Adobe Experience Manager的集成{#integration-with-adobe-experience-manager}
 
-如果安装是“内部部署”，则Adobe Campaign与Adobe Experience Manager之间的集成需要打开多个端口。 有关配置此集成的详细信息，请参阅[详细文档](../../integrations/using/about-adobe-experience-manager.md)。
+如果安装是“内部部署”的，则Adobe Campaign与Adobe Experience Manager之间的集成需要打开多个端口。 有关配置此集成的更多信息，请参阅[详细文档](../../integrations/using/about-adobe-experience-manager.md)。
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 侦听端口<br /> </td> 
+   <td> 监听端口<br /> </td> 
    <td> 说明<br /> </td> 
   </tr> 
   <tr> 
    <td> 80<br /> </td> 
-   <td> AEM连接到Adobe Campaign<br /> </td> 
+   <td> AEM与Adobe Campaign的连接<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
@@ -245,11 +243,11 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-## 带宽{#bandwidth}
+## 带宽 {#bandwidth}
 
-要考虑的网络配置的另一个关键参数。 在电子邮件广播期间，它几乎总是对外发布，需求很大。 以下是一些基于我们经验的配置示例：
+要考虑的网络配置的另一个关键参数。 在电子邮件广播期间，它几乎总是叫客，而且需求很大。 以下是一些基于我们经验的配置示例：
 
-* 每小时10,000封电子邮件需要1 Mb/s（平均大小为30 Kb）
-* 每小时100,000封电子邮件需要8到10 Mb/s（平均大小为30 Kb）
+* 每小时10,000封电子邮件为1 Mb/s（平均大小为30 Kb）
+* 每小时10万封电子邮件为8到10 Mb/s（平均大小为30 Kb）
 
-如果您在带宽方面有限制，则可以在需求较低的夜晚计划活动运行。
+如果您在带宽方面存在限制，则可以安排营销活动在需求较低的夜晚运行。
