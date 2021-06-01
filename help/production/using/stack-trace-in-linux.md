@@ -1,33 +1,32 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Linux 中的堆栈跟踪
 description: Linux 中的堆栈跟踪
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
 
 ---
 
-
 # Linux 中的堆栈跟踪{#stack-trace-in-linux}
 
-**堆栈跟踪**&#x200B;表示包含在&#x200B;**核心**&#x200B;类型文件中的跟踪。 此文件在计算机错误事件中生成。 它可以识别错误的来源。
+**堆栈跟踪**&#x200B;表示包含在&#x200B;**核心**&#x200B;类型文件中的跟踪。 此文件在发生计算机错误时生成。 它可以识别错误的来源。
 
 >[!NOTE]
 >
 >* **core**&#x200B;文件名为&#x200B;**core.`<num>`**。
->* **gdb — 必须在** 计算机上安装GNU调试程序。
+>* **gdb — 必须在** 计算机上安装GNU调试器。
+
 >
 
 
 
-Adobe Campaign技术支持可以要求您提供此&#x200B;**堆栈跟踪**。 要获取它，请在Linux中输入以下命令：
+Adobe Campaign技术支持人员可以要求您提供此&#x200B;**堆栈跟踪**。 要获取它，请在Linux中输入以下命令：
 
 ```
 su - neolane
@@ -54,9 +53,9 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-Adobe Campaign技术支持可能会要求您使用特定的可执行文件（由我们提供）运行此命令。
+Adobe Campaign技术支持可能会要求您使用特定的可执行文件（由我们提供）来运行此命令。
 
-在这种情况下，只需使用Adobe Campaign提供的可执行文件替换&#x200B;**nlserver**&#x200B;来运行以下命令：
+在这种情况下，只需将&#x200B;**nlserver**&#x200B;替换为Adobe Campaign提供的可执行文件即可运行以下命令：
 
 ```
 gdb nlserver <coreFile>
@@ -67,4 +66,3 @@ gdb nlserver <coreFile>
 ```
 gdb nlserver.1823 <coreFile>
 ```
-
