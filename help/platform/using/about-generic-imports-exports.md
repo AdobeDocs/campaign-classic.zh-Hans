@@ -1,33 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 关于通用导入和导出
-description: 了解有关通用进口和出口的更多信息。
-feature: Overview
+title: 关于一般导入和导出
+description: 了解有关通用导入和导出的更多信息。
+feature: 概述
 role: Business Practitioner, Data Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '118'
 ht-degree: 5%
 
 ---
 
+# 导入和导出作业{#about-generic-imports-exports}入门
 
-# 开始导入和导出作业{#about-generic-imports-exports}
-
-Adobe Campaign Classic提供通用进出口。 例如，它们允许您提取客户或潜在客户的列表，这些客户或随后将成为目标的一部分，或向数据库提供来自外部文件的数据。
+Adobe Campaign Classic提供通用导入和导出。 例如，它们允许您提取随后将成为目标群体一部分的客户或潜在客户列表，或向数据库提供来自外部文件的数据。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
 
 从Adobe Campaign树的&#x200B;**[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]**&#x200B;节点管理通用导入和导出。
 
-执行通用导入和导出操作的步骤如下：
+执行一般导入和导出操作的步骤如下：
 
 1. [创建导入或导出模板](../../platform/using/creating-import-export-templates.md) （可选）。
 1. [创建导入或导出作业](../../platform/using/creating-import-export-jobs.md)。
 1. 配置并执行[import](../../platform/using/executing-import-jobs.md)或[export](../../platform/using/executing-export-jobs.md)作业。
-1. [监](../../platform/using/monitoring-jobs-execution.md) 视作业的执行。
-
-
+1. [](../../platform/using/monitoring-jobs-execution.md) 监控作业的执行情况。
