@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 迁移到 Adobe Campaign 7 的先决条件
 description: 迁移到 Adobe Campaign 7 的先决条件
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 747d8a2c-b13a-4852-a9b5-0d37b236a36f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 22%
 
 ---
 
-
 # 迁移到 Adobe Campaign 7 的先决条件{#prerequisites-for-migration-to-adobe-campaign}
 
 在运行任何迁移之前，请参阅[开始迁移之前](../../migration/using/before-starting-migration.md)和[配置平台](../../migration/using/configuring-your-platform.md)部分。
 
-从v6.02迁移到Adobe Campaign v7时，某些预先交付的文件将无法交付。
+从v6.02迁移到Adobe Campaign v7时，某些事先交付的文件将不会交付。
 
-如果出现客户端错误，您必须使用新的Adobe Campaign v7代码更新仪表板，或者手动将以下文件从v6.02实例复制到v7实例：
+如果出现客户端错误，您必须使用新的Adobe Campaign v7代码更新功能板，或手动将以下文件从v6.02实例复制到v7实例：
 
 ```
 v6.02 files and spaces:
