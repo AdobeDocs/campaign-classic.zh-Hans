@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 电子邮件发送
-description: 进一步了解电子邮件发送功能包
+title: 电子邮件投放能力
+description: 进一步了解电子邮件可投放性包
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 2%
@@ -15,9 +13,9 @@ ht-degree: 2%
 ---
 
 
-# 交付性监控（电子邮件交付性）{#email-deliverability}
+# 投放能力监控（电子邮件投放能力）{#email-deliverability}
 
-默认情况下，所有实例都会安装以下详细的工作流，它允许您初始化跳出邮件资格规则的列表、域的列表和MX的列表。 安装&#x200B;**可交付性监视（电子邮件可交付性）**&#x200B;包后，此工作流将在夜间运行。 有关“可交付性”监控的详细信息，请参阅此[部分](../../delivery/using/about-deliverability.md)。
+下面详述的工作流默认安装在所有实例上，允许您初始化退回邮件鉴别规则列表、域列表和MX列表。 安装&#x200B;**可投放性监控（电子邮件可投放性）**&#x200B;包后，此工作流将在夜间运行。 有关投放能力监控的更多信息，请参阅此[部分](../../delivery/using/about-deliverability.md)。
 
 <table> 
  <tbody> 
@@ -27,9 +25,9 @@ ht-degree: 2%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>可交付性刷新</strong><br /> </td> 
+   <td> <strong>可投放性刷新</strong><br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td>  安装<strong>可交付性监控（电子邮件可交付性）</strong>包后，此工作流将在夜间运行，以定期更新规则列表并允许主动管理平台可交付性。<br /> </td> 
+   <td>  安装<strong>可投放性监控（电子邮件可投放性）</strong>包后，此工作流会在夜间运行以定期更新规则列表，并允许主动管理平台可投放性。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
