@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 活动 20.3发行说明
-description: 活动 20.3发行说明
-feature: Overview
+title: Campaign 20.3发行说明
+description: Campaign 20.3发行说明
+feature: 概述
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 95%
+source-wordcount: '1949'
+ht-degree: 98%
 
 ---
-
 
 # 20.3 版{#release-20-3}
 
@@ -30,9 +28,9 @@ _2020 年 10 月 27 日_
 
 >[!CAUTION]
 >
-> * 此版本附带新的连接协议：如果您通过Adobe Identity Service(IMS)连接到活动，则活动服务器和客户端控制台都必须进行升级，才能在2021年6月30日&#x200B;**之后连接到活动**。
+> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您正通过身份验证使用Experience Cloud触发器集成，则需要按照本页](../../integrations/using/configuring-adobe-io.md)中的[说明移至Adobe I/O。 具有活动的旧式身份验证模式将于2021年11月30日&#x200B;****&#x200B;停用。
+> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign 的旧式 oAuth 身份验证模式将于 **2021 年 11 月 30 日**&#x200B;停用。
 
 
 **新增功能**
@@ -104,7 +102,7 @@ Campaign 现在支持以下系统：
 **改进**
 
 * 已对&#x200B;**客户端控制台**&#x200B;进行多项改进。
-   * 连接协议已经更新，以遵循新的 IMS 认证机制。服务器和客户端控制台升级是必需的，它们必须在2021年6月30日之后才能连接。
+   * 连接协议已经更新，以遵循新的 IMS 认证机制。必须升级服务器和客户端控制台，才能在2021年6月30日之后连接。
    * 为防止与某些互联网安全 GPO 规则限制不兼容，Campaign 客户端控制台登录屏幕已替换为内置标准 Windows 表单。
    * 修复了使用 64 位客户端控制台在工作流中复制/粘贴活动时的问题。(NEO-27635)
    * 在&#x200B;**关于**&#x200B;菜单中，已添加信息来区分 64 位和 32 位控制台。
