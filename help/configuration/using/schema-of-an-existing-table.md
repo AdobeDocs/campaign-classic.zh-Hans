@@ -1,50 +1,48 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 现有表的模式
 description: 现有表的模式
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 9%
 
 ---
 
-
 # 现有表的模式{#schema-of-an-existing-table}
 
 ## 概述 {#overview}
 
-当应用程序需要访问现有表、SQL视图或远程数据库中的数据时，使用以下数据创建其Adobe Campaign:
+当应用程序需要访问现有表、SQL视图或远程数据库中的数据时，请使用以下数据在Adobe Campaign中创建其模式：
 
-* 表名：输入表的名称（使用dblink时使用其别名）和“sqltable”属性，
-* 模式键：引用对帐字段，
-* 索引：用于生成查询,
-* XML结构中的字段及其位置：只填写应用程序中使用的字段，
+* 表名称：使用&quot;sqltable&quot;属性输入表的名称（使用dblink时的别名），
+* 架构键：引用协调字段，
+* 索引：用于生成查询，
+* XML结构中的字段及其位置：仅填写应用程序中使用的字段，
 * 链接：是否与基的其他表存在连接。
 
-## 实现{#implementation}
+## 实施 {#implementation}
 
-要创建相应的模式，请应用以下阶段：
+要创建相应的架构，请应用以下阶段：
 
-1. 编辑Adobe Campaign树的&#x200B;**[!UICONTROL Administration>Configuration>Data schemas]**&#x200B;节点，然后单击&#x200B;**[!UICONTROL New]**。
-1. 选择&#x200B;**[!UICONTROL Access data from an existing table or an SQL view]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 编辑Adobe Campaign树的&#x200B;**[!UICONTROL Administration>Configuration>Data schemas]**&#x200B;节点，然后单击&#x200B;**[!UICONTROL New]** 。
+1. 选择&#x200B;**[!UICONTROL Access data from an existing table or an SQL view]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Next]** 。
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
-1. 选择表或现有视图:
+1. 选择表或现有视图：
 
    ![](assets/s_ncs_configuration_select_table.png)
 
-1. 调整模式内容以满足您的需求。
+1. 根据您的需求调整架构内容。
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   必须在`<srcSchema>`根元素上使用视图=&quot;true&quot;属性填充模式，才能不生成表创建SQL脚本。
+   必须在`<srcSchema>`根元素上使用view=&quot;true&quot;属性填充架构，才能不生成表创建SQL脚本。
 
 **示例** :
 
@@ -61,6 +59,6 @@ ht-degree: 9%
 
 ## 访问外部数据库 {#accessing-an-external-database}
 
-**联合数据访问- 联合数据访问**&#x200B;选项允许您访问存储在外部数据库中的数据。
+**联合数据访问 — FDA**&#x200B;选项允许您访问存储在外部数据库中的数据。
 
-[本页](../../installation/using/creating-data-schema.md)中详细介绍了要对访问外部模式库中的数据进行的配置。
+[本页](../../installation/using/creating-data-schema.md)中详细描述了在架构上执行以访问外部数据库中的数据的配置。
