@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 模式版本示例
 description: 模式版本示例
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 2%
 
 ---
 
-
 # 模式版本示例{#examples-of-schemas-edition}
 
 ## 扩展表{#extending-a-table}
 
-要扩展&#x200B;**nms:收件人**&#x200B;模式收件人表，请应用以下过程：
+要扩展&#x200B;**nms:recipient**&#x200B;模式收件人表，请应用以下过程：
 
-1. 使用以下数据创建扩展模式(**cus:extension**):
+1. 使用以下数据创建扩展架构(**cus:extension**):
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -42,13 +40,13 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   在本例中，添加索引字段(**fidelity**)，并且&#x200B;**location**&#x200B;元素(在&#x200B;**nms:收件人**&#x200B;模式中已存在)用枚举字段(**area**)补充。
+   在本例中，添加了索引字段(**fidelity**)，并且&#x200B;**location**&#x200B;元素（已存在于&#x200B;**nms:recipient**&#x200B;模式中）以枚举字段(**area**)进行补充。
 
    >[!IMPORTANT]
    >
    >请记住添加&#x200B;**extendedSchema**&#x200B;属性以引用扩展模式。
 
-1. 检查扩展模式是&#x200B;**nms:收件人**&#x200B;模式，并检查是否存在其他数据：
+1. 检查扩展模式是否为&#x200B;**nms:recipient**&#x200B;模式，以及是否存在附加数据：
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -86,9 +84,9 @@ ht-degree: 2%
 
 ## 链接的集合表{#linked-collection-table}
 
-本节介绍如何创建链接到基数为1-N的收件人表的订单表。
+本节介绍如何使用基数1-N创建链接到收件人表的订单表。
 
-排序表源模式:
+订单表来源架构：
 
 ```
 <srcSchema label="Order" name="order" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -103,9 +101,9 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-表类型为&#x200B;**autopk**，以便创建自动生成的主键，以便链接连接到收件人表时使用。
+表类型为&#x200B;**autopk**，以便创建自动生成的主键值，以供链接到收件人表时使用。
 
-模式生成：
+生成的架构：
 
 ```
 <schema label="Order" mappingType="sql" name="order" namespace="cus" xtkschema="xtk:schema">  
@@ -147,13 +145,13 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 >[!NOTE]
 >
->在脚本末尾的SQL命令INSERT INTO允许您插入设置为0的标识符记录以模拟外部连接。
+>在脚本末尾的SQL命令INSERT INTO允许您插入标识符记录集为0以模拟外连接。
 
 ## 扩展表{#extension-table}
 
 扩展表允许您扩展基数1-1链接表中现有表的内容。
 
-扩展表的目的是避免对表中支持的字段数的限制，或优化数据所占用的空间（按需消耗）。
+扩展表的用途是避免对表中支持的字段数设置限制，或优化数据所占用的空间（按需使用）。
 
 创建扩展表模式(**cus:feature**):
 
@@ -179,7 +177,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 >[!NOTE]
 >
->必须从包含外键的模式填充收件人表和扩展表之间链接的定义。
+>收件人表和扩展表之间链接的定义必须使用包含外键的架构进行填充。
 
 用于创建扩展表的SQL脚本如下所示：
 
@@ -201,7 +199,7 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 ## 溢出表{#overflow-table}
 
-溢出表是扩展表（基数1-1），但在溢出表的模式中填充指向要扩展表的链接声明。
+溢出表是扩展表（基数1-1），但在溢出表的模式中填充了指向要扩展表的链接声明。
 
 溢出表包含要扩展的表的外键。 因此，不会修改要扩展的表。 两个表之间的关系是要扩展的表的主键的值。
 
@@ -224,7 +222,7 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 >[!NOTE]
 >
->溢出表的主键是指向要扩展的表的链接(示例中的“nms:收件人”模式)。
+>溢出表的主键是指向要扩展的表的链接（示例中为“nms:recipient”模式）。
 
 表创建SQL脚本如下所示：
 
@@ -235,11 +233,11 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 ## 关系表{#relationship-table}
 
-关系表允许您将两个表与基数N-N链接。此表仅包含要链接的表的外键。
+使用关系表可以将两个表与基数N-N链接起来。此表仅包含要链接的表的外键。
 
-组(**nms:group**)和收件人(**nms:收件人**)之间关系表的示例。
+组(**nms:group**)与收件人(**nms:recipient**)之间关系表的示例。
 
-关系表的源模式:
+关系表的源架构：
 
 ```
 <srcSchema name="rcpGrpRel" namespace="cus">
@@ -255,7 +253,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 </srcSchema>
 ```
 
-生成的模式如下：
+生成的架构如下所示：
 
 ```
 <schema mappingType="sql" name="rcpGrpRel" namespace="cus" xtkschema="xtk:schema">  
@@ -301,11 +299,11 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 ## 用例：将字段链接到现有引用表{#uc-link}
 
-此用例演示了如何使用现有引用表作为内置Adobe Campaign明细列表机制（enum、userEnum或dbEnum）的替代。
+此用例演示了如何使用现有引用表作为内置Adobe Campaign枚举机制（enum、userEnum或dbEnum）的替代方法。
 
-您还可以在模式中将现有引用表用作明细列表。 可通过在表和引用表之间创建链接并添加属性&#x200B;**displayAsField=&quot;true&quot;**&#x200B;来实现这一点。
+您还可以将现有引用表用作架构中的枚举。 这可以通过在表和引用表之间创建链接并添加属性&#x200B;**displayAsField=&quot;true&quot;**&#x200B;来实现。
 
-在此示例中，引用表包含银行名称和标识符的列表:
+在本例中，参考表包含银行名称和标识符列表：
 
 ```
 <srcSchema entitySchema="xtk:srcSchema" img="cus:bank16x16.png" label="Bank" mappingType="sql" name="bank" namespace="cus"
@@ -321,24 +319,24 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-在使用此引用表的任何表中，定义链接并添加&#x200B;**displayAsField=&quot;true&quot;**&#x200B;属性。
+在使用此参考表的任何表中，定义链接并添加&#x200B;**displayAsField=&quot;true&quot;**&#x200B;属性。
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
 ```
 
-用户界面将不显示链接，而显示字段。 当用户选取该字段时，他可以从参考表中选择一个值或使用自动完成功能。
+用户界面不会显示链接，而会显示字段。 当用户选取该字段时，他可以从参考表中选择一个值或使用自动完成功能。
 
 ![](assets/schema-edition-ex.png)
 
 * 要使其自动完成，必须在引用表中定义计算字符串。
 
-* 在链接定义中添加&#x200B;**noDbIndex=&quot;true&quot;**&#x200B;属性，以防止Adobe Campaign在链接的源表中存储的值上创建索引。
+* 在链接定义中添加&#x200B;**noDbIndex=&quot;true&quot;**&#x200B;属性，以阻止Adobe Campaign对链接源表中存储的值创建索引。
 
 ## 相关主题
 
-* [使用明细列表](../../platform/using/managing-enumerations.md)
+* [使用枚举](../../platform/using/managing-enumerations.md)
 
-* [开始使用活动模式](../../configuration/using/about-schema-edition.md)
+* [Campaign模式快速入门](../../configuration/using/about-schema-edition.md)
 
 * [更新数据库结构](../../configuration/using/updating-the-database-structure.md)
