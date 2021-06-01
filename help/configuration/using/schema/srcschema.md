@@ -1,29 +1,27 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和属性
 description: 元素和属性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
 
 ---
 
-
-# srcschema元素{#srcschema--element}
+# srschema元素{#srcschema--element}
 
 ## 内容模型{#content-model-14}
 
-srcSchema:==(attribute |创建者 |数据 |元素 |明细列表 |帮助 |界面 |方法 | modifiedBy)
+srcSchema:==(attribute) | createdBy |数据 |元素 |枚举 |帮助 |界面 |方法 | modifiedBy)
 
 ## 属性{#attributes-14}
 
-created(datetime)、createdBy-id(long)、desc(string)、entitySchema(string)、extendedSchema(string)、img(string)、implements(string)、labelSingular(string)、lastModified(datetime)、库(string)、mappingType(string)、modifiedBy-id(l、name(string)、string(string)、name(string)、string、string、命名空间(string)、)、useRecycleBin（布尔）、视图（布尔）、xtkschema（字符串）
+已创建(datetime)、createdBy-id(long)、desc(string)、entitySchema(string)、extendedSchema(string)、img(string)、实施(string)、标签(string)、labelSingular(string)、lastModified(datetime)、库(boolean)、mappingType(string)、modifiedBy-id(long)、名称(string)、namespace(syRecyBoling)、view(boooolean)、xtkschema(string)、xtkstring)
 
 ## 父项{#parents-14}
 
@@ -43,41 +41,41 @@ created(datetime)、createdBy-id(long)、desc(string)、entitySchema(string)、e
 
 ## 说明{#description-14}
 
-`<srcschema>`是模式的根元素。 它是定义模式的输入点。
+`<srcschema>`是架构的根元素。 它是定义架构的输入点。
 
-## 使用和上下文{#use-and-context-of-use-9}
+## {#use-and-context-of-use-9}的使用和使用上下文
 
-模式演示在[关于模式引用](../../../configuration/using/about-schema-reference.md)和[模式结构](../../../configuration/using/schema-structure.md)中可用。
+[关于架构引用](../../../configuration/using/about-schema-reference.md)和[架构结构](../../../configuration/using/schema-structure.md)中提供了架构演示。
 
 ## 属性描述{#attribute-description-14}
 
-* **created(datetime)**:此属性提供有关创建模式的日期和时间的信息。它有一个“日期时间”表单。 显示的值取自服务器。 时间以UTC格式显示。
-* **createdBy-id(long)**:是创建模式的运算符的标识符。
-* **desc(string**):模式描述
-* **entitySchema(string)**:基本模式(默认情况下，Adobe Campaign:xtk:srcSchema)。保存当前模式时，Adobe Campaign将使用在@xtkschema属性中声明的模式批准其语法。
-* **extendedSchema(string)**:接收当前模式扩展所基于的现成模式的名称。表单为“命名空间：名称”。
-* **img(string)**:链接到模式的图标(可在模式创建向导中定义)。
-* **label(string**):模式标签。
-* **labelSingular(string)**:标签（单数），用于在界面中显示。
-* **lastModified(datetime)**:此属性提供有关上次修改的日期和时间的信息。它有一个“日期时间”表单。 显示的值取自服务器。 时间以UTC格式显示。
-* **库（布尔值）**:将模式用作库而非实体。因此，由于“@ref”和“@template”属性，其他模式可能会引用此模式。
-* **mappingType(string)**:
+* **已创建(datetime)**:此属性提供有关架构创建日期和时间的信息。它有一个“日期时间”窗体。 显示的值取自服务器。 时间以UTC格式显示。
+* **createdBy-id(long)**:是创建架构的运算符的标识符。
+* **desc（字符串）**:架构描述
+* **entitySchema（字符串）**:语法和批准所基于的基本架构(对于Adobe Campaign，默认为：xtk:srcSchema)。保存当前架构时，Adobe Campaign将批准其语法，并在@xtkschema属性中声明该架构。
+* **extendedSchema（字符串）**:接收当前模式扩展所基于的现成模式的名称。表单为“namespace:name”。
+* **img（字符串）**:链接到架构的图标（可在架构创建向导中定义）。
+* **标签（字符串）**:架构标签。
+* **labelSingular（字符串）**:标签（单数），用于在界面中显示。
+* **lastModified(datetime)**:此属性提供有关上次修改的日期和时间的信息。它有一个“日期时间”窗体。 显示的值取自服务器。 时间以UTC格式显示。
+* **库（布尔）**:将架构用作库，而不是实体。因此，由于“@ref”和“@template”属性，其他架构可能会引用此架构。
+* **mappingType（字符串）**:
 
    * &quot;sql&quot;:数据库映射
    * &quot;textFile&quot;:文本文件映射
    * &quot;xmlFile&quot;:XML格式文本文件映射
    * &quot;binaryFile&quot;:二进制文件映射
 
-* **modifiedBy-id(long)**:匹配更改模式的运算符的标识符。
-* **name(string)**:唯一模式名称。
-* **命名空间（字符串）**:命名空间模式(默认：nms， xtk， nl)。为项目创建新模式时，建议您使用专用命名空间。
-* **useRecycleBin（布尔值）**:在应用程序中激活垃圾桶功能。删除的记录将放在垃圾桶中，最后删除。 此函数仅在“投放”模式下可用。
-* **视图（布尔值）**:如果激活了该模式(@view=&quot;true&quot;)，则该视图将用作模式库结构更新向导将不考虑数据。 此选项主要用于引用外部表。
-* **xtkschema(字符串**:定义模式语法的模式的名称（默认情况下为xtk:srcSchema）。
+* **modifiedBy-id(long)**:匹配更改架构的运算符的标识符。
+* **name(string)**:唯一架构名称。
+* **namespace（字符串）**:架构的命名空间(默认：nms， xtk， nl)。在为项目创建新架构时，我们建议您使用专用命名空间。
+* **useRecycleBin（布尔）**:在应用程序中激活垃圾桶功能。在最终删除之前，已删除的记录将被放入垃圾桶中。 此函数仅在“交付”模式下可用。
+* **视图（布尔）**:如果激活了该模式(@view=&quot;true&quot;)，则将该模式用作视图。数据库结构更新向导将不考虑架构。 此选项主要用于引用外部表。
+* **xtkschema（字符串）**:定义模式语法的模式的名称（默认情况下为xtk:srcSchema）。
 
 ## 示例{#examples-11}
 
-`<srcschema>` “nms:投放”的元素开箱即用模式
+`<srcschema>` “nms:delivery”模式的元素
 
 ```
 <srcSchema desc="Defines all the settings of a delivery (or delivery template)."  
