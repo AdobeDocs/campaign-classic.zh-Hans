@@ -1,37 +1,34 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 关于连接器
 description: 关于连接器
-feature: Overview
+feature: 概述
 role: Business Practitioner, Data Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '198'
 ht-degree: 8%
 
 ---
 
+# 连接器入门{#about-connectors}
 
-# 开始使用连接器{#about-connectors}
-
-Adobe Campaign提供了多个连接器，允许您与外部应用程序通信、连接到数据库引擎并与Adobe Analytics集成以共享数据。
+Adobe Campaign提供了多个连接器，允许您与外部应用程序通信、连接到数据库引擎，以及与Adobe Analytics集成以共享数据。
 
 以下列出了可用的连接器：
 
-* 联合数据访问连接器(**联合数据访问**)使您能够将活动连接到一个或多个外部数据库并处理存储在这些数据库中的信息，而不会影响活动数据。 [了解详情](../../installation/using/about-fda.md)。
-* CRM连接器使您能够使用专用的工作流活动在Adobe Campaign和您的CRM解决方案之间交换数据。 [了解详情](../../platform/using/crm-connectors.md)。
-* Analytics Data Connectors(**Adobe Genesis**)使您能够在Adobe Campaign和Adobe Analytics之间共享数据。 [了解详情](../../platform/using/adobe-analytics-data-connector.md)。
+* FDA连接器（**联合数据访问**）允许您将Campaign连接到一个或多个外部数据库，并处理存储到这些数据库中的信息，而不会影响您的Campaign数据。 [了解详情](../../installation/using/about-fda.md)。
+* CRM连接器允许使用专用的工作流活动在Adobe Campaign与CRM解决方案之间交换数据。 [了解详情](../../platform/using/crm-connectors.md)。
+* Analytics Data Connectors(以前为&#x200B;**Adobe Genesis**)允许您在Adobe Campaign和Adobe Analytics之间共享数据。 [了解详情](../../platform/using/adobe-analytics-data-connector.md)。
 
-您还可以将活动与多个其他系统集成，例如：
+您还可以将Campaign与多个其他系统集成，例如：
 
 * Adobe Experience Cloud解决方案：Adobe Experience Manager、Adobe Target、Adobe Audience Manager、Experience Cloud触发器等。 [了解详情](../../integrations/using/about-campaign-integrations.md)
-* Adobe IMS/SSO，以保护对您的活动实例的访问，并使用与其他Adobe Experience Cloud解决方案相同的Adobe ID连接到Adobe Campaign。 [了解详情](../../integrations/using/about-adobe-id.md)。
+* AdobeIMS/SSO，以确保对Campaign实例的访问安全，并使用与其他Adobe Experience Cloud解决方案相同的Adobe ID连接到Adobe Campaign。 [了解详情](../../integrations/using/about-adobe-id.md)。
 * LDAP目录，以统一访问管理。 [了解详情](../../installation/using/connecting-through-ldap.md)。
 
 >[!NOTE]
 >
->这些模块的可用性及其使用情况取决于您的安装的部署类型。 请参阅[活动本地 — 托管功能矩阵](../../installation/using/capability-matrix.md)。
-
+>这些模块的可用性及其用法取决于安装的部署类型。 请参阅[Campaign on-premise — 托管功能矩阵](../../installation/using/capability-matrix.md)。
