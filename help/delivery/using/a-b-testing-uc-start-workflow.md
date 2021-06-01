@@ -1,29 +1,27 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 启动工作流
-description: 了解如何通过专用的用例执行A/B测试。
+description: 了解如何通过专用用例执行A/B测试。
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+exl-id: 9528b67a-8ba7-45d6-a2c0-06ac117d5324
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '88'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
+# 启动工作流 {#step-7--starting-the-workflow}
 
-# 启动工作流{#step-7--starting-the-workflow}
-
-1. 单击工作流。**[!UICONTROL Start]**
+1. 单击&#x200B;**[!UICONTROL Start]**&#x200B;工作流。
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 
-1. 通过目标仪表板批准投放A和B的活动和内容。
+1. 通过营销活动仪表板批准投放A和B的目标和内容。
 1. 确认投放。
-1. 等到5天期间结束，查看在投放打开结果后计算的内容。
+1. 等到5天时段结束，以了解在投放开始结果后计算了哪些内容。
 
    ![](assets/use_case_abtesting_startwkfl_002.png)
 
