@@ -1,43 +1,41 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 设置阶段
 description: 设置阶段
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+exl-id: a5ae0b61-3377-46d9-a327-6c897eeda770
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 2%
 
 ---
 
-
 # 设置阶段{#setup-stages}
 
-基本原则是在网站的某些页面中插入Web跟踪标签。
+基本原则是在网站的某些页面中插入Web跟踪标记。
 
-有两种类型的标记：
+标记有两种类型：
 
-* **WEB**:此标记会告知您是否已访问页面，
-* **交易**:操作方式与web标签类似，但可能添加有关生成的业务量的信息，例如（交易量、购买的物品数量等）。
+* **WEB**:此标记可告知您是否已访问页面，
+* **交易**:操作类似于web标记，但可能会添加有关所生成业务量的信息，例如（交易金额、购买的项目数等）。
 
-应用以下步骤设置这些标记：
+应用以下步骤以设置这些标记：
 
 1. 确定要跟踪的页面并确定其类型（WEB或TRANSACTION）。
-1. 确定要收集的其他信息，并使用此信息的说明扩展&#x200B;**nms:webTrackingLog**&#x200B;模式。 默认情况下，此模式可以存储每个事务处理的事务处理金额和项目数。
-1. 创建Web跟踪标签。 有两种方法可以实现：
+1. 确定您要收集的其他信息，并扩展&#x200B;**nms:webTrackingLog**&#x200B;模式，其中包含此信息的描述。 默认情况下，此架构可以存储每个交易的交易金额和项目数。
+1. 创建Web跟踪标记。 可以通过两种方式来执行此操作：
 
-   * 在您的Adobe Campaign平台中插入与这些页面对应的URL，然后生成并提取关联的Web跟踪标签（从客户端控制台的&#x200B;**[!UICONTROL Campaign execution>Resources>Web tracking tags]**&#x200B;节点）。
-   * 以“即时创建”模式自己创建Web跟踪标签:与这些页面对应的URL将自动插入您的Adobe Campaign平台。
+   * 在Adobe Campaign平台中插入与这些页面对应的URL，然后生成并提取关联的Web跟踪标记（从客户端控制台的&#x200B;**[!UICONTROL Campaign execution>Resources>Web tracking tags]**&#x200B;节点）。
+   * 自行在“即时创建”模式下创建Web跟踪标记：与这些页面对应的URL将自动插入到您的Adobe Campaign平台中。
 
 1. 在要跟踪的页面中静态或动态添加这些标记。
 
    >[!NOTE]
    >
-   >所有WEB类型的标记都可以添加到站点的页面中。 必须动态修改或添加TRANSACTION标记，以包含附加信息（金额、项目等）。
+   >所有WEB类型标记均可按原样添加到您网站的页面。 必须动态修改或添加交易标记，以包含附加信息（金额、项目等）。
 
 **示例**:
 
@@ -50,4 +48,3 @@ window.location.protocol + "//tsupport/r/" +
 Math.random().toString() + "?tagid=" + escape(_t) + "'/>")
 </script>
 ```
-
