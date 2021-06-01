@@ -1,79 +1,77 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 创建优惠空间
 description: 创建优惠空间
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 1%
 
 ---
 
-
 # 创建优惠空间{#creating-offer-spaces}
 
-优惠空间创建只能由具有访问优惠空间子文件夹权限的&#x200B;**技术管理员**&#x200B;执行。 优惠空间只能在设计环境中创建，并在优惠批准过程中自动复制到实时环境中。
+只有具有选件空间子文件夹访问权限的&#x200B;**技术管理员**&#x200B;才能创建选件空间。 选件空间只能在设计环境中创建，并在选件批准期间自动复制到实时环境中。
 
-目录优惠的内容在优惠空间中配置。 默认情况下，内容可以包括以下字段：**[!UICONTROL Title]**、**[!UICONTROL Destination URL]**、**[!UICONTROL Image URL]**、**[!UICONTROL HTML content]**&#x200B;和&#x200B;**[!UICONTROL Text content]**。 字段序列在优惠空间中配置。
+目录选件的内容在选件空间中进行配置。 默认情况下，内容可以包含以下字段：**[!UICONTROL Title]**、**[!UICONTROL Destination URL]**、**[!UICONTROL Image URL]**、**[!UICONTROL HTML content]**&#x200B;和&#x200B;**[!UICONTROL Text content]**。 字段序列在选件空间中进行配置。
 
-高级参数允许您指定联系人标识键（例如，可以由各种元素组成，名称和电子邮件字段等）。 有关详细信息，请参阅[演示已识别的优惠](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer)部分。
+高级参数允许您指定联系人标识键（例如，联系人标识键可由各种元素组成，例如名称和电子邮件字段）。 有关更多信息，请参阅[呈现已标识的选件](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer)一节。
 
-HTML或XML渲染是通过渲染函数创建的。 渲染函数中定义的字段序列必须与内容中配置的序列相同。
+HTML或XML渲染是通过渲染函数创建的。 呈现函数中定义的字段序列必须与内容中配置的序列相同。
 
 ![](assets/offer_space_create_009.png)
 
-要创建新优惠空间，请应用以下流程：
+要创建新选件空间，请应用以下流程：
 
-1. 转到优惠空间列表并单击&#x200B;**[!UICONTROL New]**。
+1. 转到选件空间列表，然后单击&#x200B;**[!UICONTROL New]**。
 
    ![](assets/offer_space_create_001.png)
 
-1. 选择要使用的渠道并更改优惠空间的标签。
+1. 选择要使用的渠道，并更改选件空间的标签。
 
    ![](assets/offer_space_create_002.png)
 
-1. 如果以下情况之一适用于您，请选中&#x200B;**[!UICONTROL Enable unitary mode]**&#x200B;框：
+1. 如果以下任一情况适用于您，请勾选&#x200B;**[!UICONTROL Enable unitary mode]**&#x200B;框：
 
    * 您正在使用与消息中心的交互
-   * 您使用的是交互的统一模式（入站交互）
+   * 您使用的是交互的单一模式（集客交互）
 
-1. 转到&#x200B;**[!UICONTROL Content field]**&#x200B;窗口并单击&#x200B;**[!UICONTROL Add]**。
+1. 转到&#x200B;**[!UICONTROL Content field]**&#x200B;窗口，然后单击&#x200B;**[!UICONTROL Add]**。
 
    ![](assets/offer_space_create_003.png)
 
-1. 转至&#x200B;**[!UICONTROL Content]**&#x200B;节点，按以下顺序选择字段：**[!UICONTROL Title]**、**[!UICONTROL Image URL]**、**[!UICONTROL HTML content]**、**[!UICONTROL Destination URL]**。
+1. 转到&#x200B;**[!UICONTROL Content]**&#x200B;节点并按以下顺序选择字段：**[!UICONTROL Title]**、**[!UICONTROL Image URL]**、**[!UICONTROL HTML content]**、**[!UICONTROL Destination URL]**。
 
    ![](assets/offer_space_create_004.png)
 
-1. 选中&#x200B;**[!UICONTROL Required]**&#x200B;框，将每个字段设为必填。
+1. 选中&#x200B;**[!UICONTROL Required]**&#x200B;框，使每个字段成为必填字段。
 
    >[!NOTE]
    >
-   >此配置在预览中使用，如果相关优惠中缺少某个必需元素，则发布时使优惠空间无效。 但是，如果优惠已在某个优惠空间上生存，则不会考虑这些标准。
+   >此配置用于预览，如果相关选件中缺少一个必需元素，则会使选件空间在发布时无效。 但是，如果选件已在选件空间上处于实时状态，则不会考虑这些标准。
 
    ![](assets/offer_space_create_005.png)
 
-1. 单击&#x200B;**[!UICONTROL Edit functions]**&#x200B;可创建渲染函数。
+1. 单击&#x200B;**[!UICONTROL Edit functions]**&#x200B;以创建渲染函数。
 
-   这些函数用于在优惠空间上生成优惠呈现。 有多种可能的格式：用于出站交互的HTML或文本，用于入站交互的XML。
+   这些函数用于在选件空间上生成选件表示形式。 有多种可能的格式：出站交互的HTML或文本，入站交互的XML。
 
    ![](assets/offer_space_create_006.png)
 
-1. 转到&#x200B;**[!UICONTROL HTML rendering]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Overload the HTML rendering function]**。
-1. 插入您的渲染功能。
+1. 转到&#x200B;**[!UICONTROL HTML rendering]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL Overload the HTML rendering function]**。
+1. 插入您的渲染函数。
 
    ![](assets/offer_space_create_007.png)
 
-如有必要，您可以使入站交互的XML渲染功能过载。 您还可以使出站交互的HTML和文本渲染功能过载。 有关详细信息，请参阅[关于入站渠道](../../interaction/using/about-inbound-channels.md)。
+如有必要，您可以使集客交互的XML渲染函数过载。 您还可以为出站交互使HTML和文本渲染函数过载。 有关更多信息，请参阅[关于入站渠道](../../interaction/using/about-inbound-channels.md)。
 
-## 优惠建议状态{#offer-proposition-statuses}
+## 选件建议状态{#offer-proposition-statuses}
 
-优惠建议可以具有各种状态，具体取决于与目标群体的交互。 交互附带一组值，可在优惠建议的整个生命周期中应用这些值。 但是，您需要配置平台，以便在创建并接受优惠建议时，状态会发生更改。
+根据与目标群体的交互，选件建议可以具有各种状态。 交互附带一组值，这些值可在选件的整个生命周期中应用于该选件建议。 但是，您需要配置平台，以便在创建并接受选件建议时状态发生更改。
 
 >[!NOTE]
 >
@@ -81,7 +79,7 @@ HTML或XML渲染是通过渲染函数创建的。 渲染函数中定义的字段
 
 ### 状态列表{#status-list}
 
-交互附带以下值，这些值可用于限定优惠建议的状态：
+交互附带以下值，可用于确定优惠建议的状态：
 
 * **[!UICONTROL Accepted]**.
 * **[!UICONTROL Scheduled]**.
@@ -90,74 +88,74 @@ HTML或XML渲染是通过渲染函数创建的。 渲染函数中定义的字段
 * **[!UICONTROL Presented]**.
 * **[!UICONTROL Rejected]**.
 
-默认情况下不应用这些值：它们必须配置。
+默认情况下，不会应用以下值：必须配置它们。
 
 >[!NOTE]
 >
->如果优惠建议链接到状态为“已发送”的投放，则优惠的状态将自动更改为“已显示”。
+>如果选件链接到状态为“已发送”的投放，则选件建议的状态将自动更改为“已显示”。
 
 ### 在创建命题{#configuring-the-status-when-the-proposition-is-created}时配置状态
 
-当优惠建议由交互引擎创建时，其状态会更改，无论是入站交互还是出站交互。 这两个值之间的选择取决于在&#x200B;**[!UICONTROL Design]**&#x200B;环境中配置优惠空间的方式
+当交互引擎创建优惠建议时，无论它是集客交互还是出站交互，其状态都会发生更改。 这两个值之间的选择取决于在&#x200B;**[!UICONTROL Design]**&#x200B;环境中配置选件空间的方式
 
-对于每个空间，您可以根据要在优惠报表中显示的信息配置创建命题时要应用的状态。
+对于每个空间，您可以根据要在选件报表中显示的信息配置在创建建议时要应用的状态。
 
-要执行此操作，请使用以下过程：
+为此，请使用以下过程：
 
 1. 转到所需空间的&#x200B;**[!UICONTROL Storage]**&#x200B;选项卡。
-1. 选择要在创建时应用于建议的状态。
+1. 选择创建建议时要应用于该建议的状态。
 
    ![](assets/offer_update_status_001.png)
 
-### 在接受命题{#configuring-the-status-when-the-proposition-is-accepted}时配置状态
+### 在{#configuring-the-status-when-the-proposition-is-accepted}接受建议时配置状态
 
-接受优惠建议后，您可以使用默认提供的值之一配置命题的新状态。 当收件人单击优惠中的链接（调用交互引擎）时，更新会生效。
+接受优惠建议后，您可以使用默认提供的值之一配置建议的新状态。 当收件人单击选件中的链接（该链接调用交互引擎）时，更新将生效。
 
-要执行此操作，请使用以下过程：
+为此，请使用以下过程：
 
 1. 转到所需空间的&#x200B;**[!UICONTROL Storage]**&#x200B;选项卡。
-1. 选择要在被接受时应用于建议的状态。
+1. 选择要在建议被接受时应用于该建议的状态。
 
    ![](assets/offer_update_status_002.png)
 
-**入站交互**
+**入站互动**
 
-**[!UICONTROL Storage]**&#x200B;选项卡仅允许您定义&#x200B;**建议的**&#x200B;和&#x200B;**接受的**&#x200B;优惠建议的状态。 对于入站交互，应直接在URL中指定优惠建议状态以调用优惠引擎，而不是通过接口。 这样，您就可以指定在其他情况下(例如，当优惠建议被拒绝时)应用的状态。
+通过&#x200B;**[!UICONTROL Storage]**&#x200B;选项卡，您只能定义&#x200B;**建议的**&#x200B;和&#x200B;**接受的**&#x200B;选件建议的状态。 对于集客交互，应直接在用于调用选件引擎的URL中指定选件主张的状态，而不是通过界面指定。 这样，您就可以指定在其他情况下应用的状态，例如，如果选件建议被拒绝。
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-例如，与&#x200B;**Neobank**&#x200B;站点上显示的&#x200B;**家庭保险**&#x200B;优惠匹配的命题(标识符&#x200B;**40004**)包含以下URL:
+例如，与&#x200B;**Neobank**&#x200B;网站上显示的&#x200B;**家庭保险**&#x200B;选件匹配的建议(标识符&#x200B;**40004**)包含以下URL:
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">
 ```
 
-一旦访客单击优惠，从而将该URL应用到该提议，访客将被重定向到&#x200B;**Neobank**&#x200B;网站的新页面以履行保险合同。**[!UICONTROL Accepted]******
+一旦访客点击了该选件，进而点击了该URL，**[!UICONTROL Accepted]**&#x200B;状态（值&#x200B;**3**）就会应用于该建议，并且访客会被重定向到&#x200B;**Neobank**&#x200B;网站的新页面以签订保险合同。
 
 >[!NOTE]
 >
->如果要在url中指定其他状态(例如，如果优惠建议被拒绝)，请使用与所需状态对应的值。 示例：**[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot;等。
+>如果您想要在URL中指定其他状态（例如，如果选件建议被拒绝），请使用与所需状态对应的值。 示例：**[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot;等。
 >
->状态及其值可以在&#x200B;**[!UICONTROL Offer propositions (nms)]**&#x200B;数据模式中检索。 有关详细信息，请参见[此页面](../../configuration/using/data-schemas.md)。
+>可以在&#x200B;**[!UICONTROL Offer propositions (nms)]**&#x200B;数据架构中检索状态及其值。 有关详细信息，请参见[此页面](../../configuration/using/data-schemas.md)。
 
-**出站交互**
+**叫客互动**
 
-如果发生出站交互，则当优惠建议包含链接时，您可以自动将&#x200B;**[!UICONTROL Interested]**&#x200B;状态应用于投放。 只需将&#x200B;**_urlType=&quot;11&quot;**&#x200B;值添加到链接：
+对于叫客交互，当投放包含链接时，您可以自动将&#x200B;**[!UICONTROL Interested]**&#x200B;状态应用于选件建议。 只需将&#x200B;**_urlType=&quot;11&quot;**&#x200B;值添加到链接：
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
 ```
 
-## 优惠预览/空间{#offer-preview-per-space}
+## 每个空间的选件预览{#offer-preview-per-space}
 
-在此选项卡中，您可以通过选择的方法视图收件人符合条件的优惠。 在以下示例中，收件人有资格通过邮件获得三个优惠建议。
+在此选项卡中，您可以通过所选方法查看收件人有资格查看的选件。 在以下示例中，收件人有资格通过邮件获得三个选件建议。
 
 ![](assets/offer_space_overview_002.png)
 
-如果收件人没有资格获得任何优惠，则预览中会显示此信息。
+如果收件人不符合任何选件的条件，则会在预览中显示该选件。
 
 ![](assets/offer_space_overview_001.png)
 
-预览可以忽略限制在空间中的上下文。 当交互模式已扩展到使用入站渠道添加空间中引用的字段时（有关详细信息，请参阅[扩展示例](../../interaction/using/extension-example.md)）。
+当上下文被限制为空格时，预览可以忽略这些上下文。 当交互架构已扩展为使用集客渠道添加空间中引用的字段时，即会出现这种情况（有关更多信息，请参阅[扩展示例](../../interaction/using/extension-example.md)）。
