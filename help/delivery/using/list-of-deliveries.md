@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 访问传递的列表
-description: 了解如何访问创建的投放的列表。
+description: 了解如何访问已创建投放的列表。
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: f2a126d0aa471831f84d4c8457cfd6f0fae7b14f
+exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 10%
 
 ---
-
 
 # 访问传递的列表 {#list-of-deliveries}
 
@@ -21,17 +19,17 @@ ht-degree: 10%
 
 ![](assets/deliveries-list.png)
 
-默认情况下，投放列表包含在选定节点中创建的投放的名称和状态。 还显示成功发送、处理和发送的消息数。
+默认情况下，投放列表包含在选定节点中创建的投放的名称和状态。 它还显示成功发送、处理和发送的消息数。
 
-* **[!UICONTROL Messages to send]**&#x200B;的数量与分析之后和投放之前的目标收件人数相对应。
-* **[!UICONTROL Success]**&#x200B;列中的消息数与服务器发送和收件人接收的消息数相对应。
-* **[!UICONTROL Processed]**&#x200B;消息数与收到的消息数以及有错误的消息数相对应。
+* **[!UICONTROL Messages to send]**&#x200B;的数量对应于分析后和投放前的目标收件人数量。
+* **[!UICONTROL Success]**&#x200B;列中的消息数与服务器发送的收件人接收的消息数相对应。
+* **[!UICONTROL Processed]**&#x200B;消息数与收到的消息数以及出错的消息数相对应。
 
 >[!NOTE]
 >
->对于大投放，您可能希望更新这些值。 要执行此操作，请选择相关投放，然后右键单击它。 选择&#x200B;**[!UICONTROL Action > Recompute delivery and tracking indicators...]**，然后使用向导更新此信息。
+>对于大型投放，您可能希望更新这些值。 要执行此操作，请选择相关投放，然后右键单击该投放。 选择&#x200B;**[!UICONTROL Action > Recompute delivery and tracking indicators...]**，然后使用向导更新此信息。
 
 **相关主题：**
 
-* [传递仪表板](../../delivery/using/delivery-dashboard.md)
-* [传递状态](../../delivery/using/delivery-statuses.md)
+* [投放仪表板](../../delivery/using/delivery-dashboard.md)
+* [投放状态](../../delivery/using/delivery-statuses.md)
