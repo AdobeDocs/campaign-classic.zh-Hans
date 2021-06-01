@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 关于 Campaign 集成
 description: 使用其他 Adobe 解决方案，并将其不同的功能与 Campaign 相结合。
@@ -7,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 9%
@@ -26,7 +25,7 @@ Adobe Experience Cloud是一套业内最佳的综合性集成解决方案，它�
 
 >[!CAUTION]
 >
->这些集成中的大多数内容都需要实施AdobeIdentity Management系统(IMS)，才能通过Adobe ID登录。 [在本页中了解更多信息](../../integrations/using/about-adobe-id.md)。
+>这些集成中的大多数内容都需要实施AdobeIdentity Management系统(IMS)，才能通过Adobe ID登录。 [请参阅此页面](../../integrations/using/about-adobe-id.md)以了解详情。
 
 
 ## 链接您的解决方案{#working-with-experience-cloud-solutions}
