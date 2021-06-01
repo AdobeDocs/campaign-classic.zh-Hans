@@ -1,22 +1,20 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 活动 投放最佳做法
+title: 营销活动投放最佳实践
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 24%
 
 ---
 
-
 # 投放最佳实践 {#delivery-best-practices}
 
-了解与投放设计和与Adobe Campaign一起发送相关的最佳实践。 使用以下链接浏览主题并查找指导。
+了解与使用Adobe Campaign进行投放设计和发送相关的最佳实践。 使用以下链接浏览主题并查找指南。
 
 <table>
 <tr>
@@ -30,7 +28,7 @@ ht-degree: 24%
     </a>
     </div>
     <p>
-    <em>保护和优化发送过程</em>
+    <em>安全并优化发送过程</em>
     <p>
   </td>
    <td>
@@ -43,7 +41,7 @@ ht-degree: 24%
     </a>
     </div>
     <p>
-    <em>促进和加快新投放</em>
+    <em>方便和加快新投放</em>
     <p>
   </td>
   <td>
@@ -71,7 +69,7 @@ ht-degree: 24%
     </a>
     </div>
     <p>
-    <em>目标人群是关键</em>
+    <em>目标群体是关键</em>
     <p>
   </td>
    <td>
@@ -93,11 +91,11 @@ ht-degree: 24%
     </a>
     <div>
       <a href="track-and-monitor.md">
-    <strong>跟踪和监视</strong>
+    <strong>跟踪和监测</strong>
     </a>
     </div>
     <p>
-    <em>控制发送和疑难解答</em>
+    <em>控制发送和故障诊断</em>
     <p>
   </td>
 </tr>
@@ -105,8 +103,8 @@ ht-degree: 24%
 
 另请参阅：
 
-* [开始使用Deliverability](../../delivery/using/about-deliverability.md)
+* [投放能力入门](../../delivery/using/about-deliverability.md)
 
 * [投放创建步骤](../../delivery/using/steps-about-delivery-creation-steps.md)
 
-* [安全性和隐私核对清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)
+* [安全和隐私检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)
