@@ -1,31 +1,28 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 创建新实例
 description: 创建新实例
 audience: installation
 content-type: reference
 topic-tags: appendices
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3b87eb3c-3b50-4ed4-80b1-4333261ffe0b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 10%
 
 ---
 
-
 # 创建新实例{#creating-new-instances}
 
-安装Adobe Campaign并创建实例后，您可以从控制台中添加新实例。 通过此创建模式，您无需访问控制台即可创建跟踪实例。
+安装Adobe Campaign并创建实例后，您可以从控制台添加新实例。 此创建模式允许您创建跟踪实例，而无需访问控制台。
 
 为此，请登录到现有数据库并应用以下步骤：
 
 1. 声明新实例
 
-   转到&#x200B;**[!UICONTROL Tools > Advanced > Declare a new instance...]**&#x200B;以开始向导。
+   转到&#x200B;**[!UICONTROL Tools > Advanced > Declare a new instance...]**&#x200B;以启动向导。
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
-   指定新实例的参数。 有关详细信息，请参阅[创建实例并登录](../../installation/using/creating-an-instance-and-logging-on.md)。
-
+   指定新实例的参数。 有关更多信息，请参阅[创建实例并登录](../../installation/using/creating-an-instance-and-logging-on.md)。
