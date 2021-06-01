@@ -1,48 +1,45 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 关于内容管理
 description: 关于内容管理
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 3%
 
 ---
 
-
 # 关于内容管理{#about-content-management}
 
-Adobe Campaign Content Manager模块是一个特定Campaign Classic[标准包](../../installation/using/installing-campaign-standard-packages.md)，您可以安装它以创建经常性新闻稿或网站。 它可以帮助您创建、验证和发布消息。
+Adobe Campaign内容管理器模块是一个特定的Campaign Classic[标准包](../../installation/using/installing-campaign-standard-packages.md)，您可以安装该模块以创建经常性新闻稿或网站。 它可以帮助您创建、验证和发布消息。
 
 >[!NOTE]
 >
->本节介绍内容管理模块。 有关如何设计电子邮件投放内容的详细信息，请参阅[本节](../../delivery/using/defining-the-email-content.md)。
+>本节将介绍内容管理模块。 有关如何设计电子邮件投放内容的更多信息，请参阅[此部分](../../delivery/using/defining-the-email-content.md)。
 
 内容管理模块整合了工作组、工作流和内容聚合功能。 这允许自动设置消息的格式：电子邮件、邮件、短信、Web等
 
-在投放中使用内容管理器可让您将输入或选择字段优惠给负责内容创建的运算符。 此内容的布局和显示以及所做的任何更改都使用样式表自动管理。
+通过在投放中使用内容管理器，您可以为负责内容创建的操作员提供输入或选择字段。 此内容的布局和显示以及所做的任何更改均使用样式表自动进行管理。
 
 ![](assets/s_ncs_content_create_content_sample.png)
 
 >[!CAUTION]
 >
->对样式表所做的所有更改均基于所使用的内容模板在投放级别实现。
+>对样式表所做的所有更改均基于所用的内容模板在交付级别实施。
 
 内容管理具有以下优势：
 
 * 通过输入接口进行结构化消息编辑，
-* 分离数据内容及其呈现方式（以XML格式生成），
-* 文档生成采用多种格式（html、txt、XML等） 基于样式表，以确保符合图形包，
+* 数据内容及其呈现方式的分离（以XML格式生成），
+* 以多种格式（html、txt、XML等）生成文档 基于样式表，以确保符合图形包，
 * 恢复和自动汇总外部内容流，
 * 与工作流协作以进行数据验证和检查。
 
-然而，这种内容创建模式确实涉及一些限制；特别包括：
+但是，这种内容创建模式确实涉及一些限制；特别包括：
 
-* 关于最终文档设计的自由受到限制，
-* 要求的分析必须严格，这样最终用户就不会因缺少功能而不方便。
-
+* 对最终文件设计的自由有限，
+* 对要求的分析必须严格，这样最终用户就不会因为功能缺失而不便。
