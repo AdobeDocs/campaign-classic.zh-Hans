@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 开始使用活动 HTML编辑器
-description: 开始使用活动数字内容编辑器
+title: Campaign HTML编辑器入门
+description: Campaign DCE快速入门
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
-source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
+exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
 
 ---
 
+# Campaign HTML编辑器入门{#about-campaign-html-editor}
 
-# 开始使用活动 HTML编辑器{#about-campaign-html-editor}
+**数字内容编辑器(DCE)**&#x200B;是一个HTML内容编辑器，通过该编辑器，您可以在Adobe Campaign中轻松创建HTML格式的内容和模板。
 
-**数字内容编辑器(数字内容编辑器)**&#x200B;是一个HTML内容编辑器，可让您在Adobe Campaign中轻松创建HTML格式的内容和模板。
-
-利用此数字内容编辑器，您可以插入页面元素并设置其格式，以及将数据库字段与HTML页面的元素映射。 在为Web应用程序创建页面或基于投放模板创建数字内容编辑器时，此编辑器可用。
+使用数字内容编辑器，您可以插入页面元素并设置其格式，以及将数据库字段映射到HTML页面的元素。 在为Web应用程序创建页面时，或在基于DCE模板创建投放时，此编辑器可用。
 
 >[!NOTE]
 >
@@ -27,11 +25,11 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->所有外部资源都需要使用HTTPS URL进行引用。
+>需要使用HTTPS URL引用所有外部资源。
 
 ## 使用数字内容编辑器{#content-editor-general-operation}的关键步骤
 
-本节介绍在Web应用程序和投放设计的上下文中编辑和上传使用数字内容编辑器编辑的内容的关键步骤。
+本节介绍在Web应用程序和交付设计中编辑和上传使用DCE编辑的内容的关键步骤。
 
 一般操作如下：
 
@@ -39,22 +37,22 @@ ht-degree: 0%
 
 要创建简单的&#x200B;**Web应用程序**，您需要：
 
-1. 创建Web应用程序 — [了解更多](../../web/using/creating-a-landing-page.md)
-1. 选择现有内容或从标准模板创建内容 — [了解更多](../../web/using/template-management.md)
-1. 编辑和配置内容 — [了解更多](../../web/using/editing-content.md)
-1. 发布Web 应用程序- [了解更多](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
+1. 创建Web应用程序 — [了解详情](../../web/using/creating-a-landing-page.md)
+1. 选择现有内容或从标准模板创建内容 — [了解详情](../../web/using/template-management.md)
+1. 编辑和配置内容 — [了解详情](../../web/using/editing-content.md)
+1. 发布Web应用程序 — [了解详情](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
->[本节](../../web/using/creating-a-landing-page.md)提供了Web应用程序上下文中的完整实现示例。
+>[此部分](../../web/using/creating-a-landing-page.md)提供了Web应用程序上下文中的完整实施示例。
 
 要创建&#x200B;**电子邮件投放**，您需要：
 
-1. 从数字内容编辑器模板创建投放- [了解更多](../../web/using/use-case--creating-an-email-delivery.md)
+1. 从DCE模板创建投放 — [了解详情](../../web/using/use-case--creating-an-email-delivery.md)
 1. 选择现有内容或从[标准模板](../../web/using/template-management.md)创建内容
-1. 编辑和配置联机内容
-1. 发送投放- [了解更多信息](../../delivery/using/steps-about-delivery-creation-steps.md)
+1. 编辑和配置在线内容
+1. 发送投放 — [了解详情](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->[此用例](../../web/using/use-case--creating-an-email-delivery.md)中提供了电子邮件投放上下文中的完整实现示例。
+>[此用例](../../web/using/use-case--creating-an-email-delivery.md)中提供了电子邮件投放上下文中的完整实施示例。
