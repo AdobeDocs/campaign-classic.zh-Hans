@@ -1,35 +1,33 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和属性
 description: 元素和属性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 5%
 
 ---
 
-
 # 值元素{#value--element}
 
 ## 内容模型{#content-model-16}
 
-value:==帮助
+value:==help
 
 ## 属性{#attributes-16}
 
-* @applicableIf(string)
-* @desc(string)
-* @enabledIf(string)
-* @img(string)
-* @label(string)
-* @name(string)
-* @value(string)
+* @applicableIf（字符串）
+* @desc（字符串）
+* @enabledIf（字符串）
+* @img（字符串）
+* @label（字符串）
+* @name（字符串）
+* @value（字符串）
 
 ## 父项{#parents-16}
 
@@ -41,17 +39,17 @@ value:==帮助
 
 ## 说明{#description-16}
 
-此元素允许您定义存储在明细列表中的值。
+利用此元素，可定义枚举中存储的值。
 
 ## 属性描述{#attribute-description-16}
 
-* **applicableIf(string)**:此属性允许您使明细列表值成为可选值。它接收XTK表达式。
-* **desc(string**):明细列表值的描述。
-* **enabledIf（字符串）**:用于激活明细列表值的条件。
-* **img(string)**:链接到“命名空间:image_name”表单中明细列表的图像。映像必须导入到应用程序服务器上。
-* **label(string**):明细列表值的标签。
-* **name(string)**:明细列表值的内部名称。
-* **value(string)**:明细列表值。值类型根据明细列表类型定义。 如果明细列表为字符串类型，则只能包含字符串类型值。
+* **appliableIf（字符串）**:此属性允许您使枚举值为可选值。它接收XTK表达式。
+* **desc（字符串）**:枚举值的描述。
+* **enabledIf（字符串）**:用于激活枚举值的条件。
+* **img（字符串）**:链接到“namespace:image_name”表单中枚举的图像。必须将映像导入到应用程序服务器。
+* **标签（字符串）**:枚举值的标签。
+* **name(string)**:枚举值的内部名称。
+* **值（字符串）**:枚举值的值。根据枚举类型定义值类型。 如果枚举为字符串类型，则可能只包含字符串类型值。
 
 ## 示例{#examples-13}
 
