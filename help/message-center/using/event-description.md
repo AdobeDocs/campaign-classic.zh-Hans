@@ -1,41 +1,40 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 消息中心事件说明
-description: 了解有关交易消息传递事件的更多信息
+title: 事件描述
+description: 了解如何使用SOAP方法在Adobe Campaign Classic中管理事务型消息传递事件。
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 3a9c435a6469f291c4ecdb30eceb83c4f000f5e0
+exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
 
+# 事件描述 {#event-description}
 
-# 事件描述{#event-description}
+## 事务型消息传递数据模型{#about-transactional-messaging-datamodel}
 
-## 关于事务消息数据模型{#about-transactional-messaging-datamodel}
-
-事务消息传递依赖于Adobe Campaign数据模型，并使用两个额外的单独表。 这些[表](../../configuration/using/data-model-description.md#message-center-module)、**NmsRtEvent**&#x200B;和&#x200B;**NmsBatchEvent**&#x200B;包含相同的字段，并允许您管理实时事件和批次事件。
+事务型消息传递依赖于Adobe Campaign数据模型，并且使用另外两个单独的表。 这些[表](../../configuration/using/data-model-description.md#message-center-module)、**NmsRtEvent**&#x200B;和&#x200B;**NmsBatchEvent**&#x200B;包含相同的字段，让您一方面管理实时事件，另一方面管理批处理事件。
 
 ## SOAP方法{#soap-methods}
 
-本节详细介绍与事务性消息模块模式关联的SOAP方法。
+本节详细介绍与事务型消息模块架构关联的SOAP方法。
 
-两个&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法链接到两个&#x200B;**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;数据表。 它是决定事件是“批”还是“实时”类型的信息系统。
+两个&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法链接到两个&#x200B;**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;数据表。 确定事件是“批处理”还是“实时”类型的信息系统。
 
-* **PushEvent** 允许您在消息中插入单个事件,
-* **PushEvent** 允许您在消息中插入一系列事件。
+* **** PushEvent允许您在消息中插入单个事件，
+* **** PushEvents允许您在消息中插入一系列事件。
 
-用于访问这两种方法的WSDL路径为：
+用于访问这两种方法的WSDL路径是：
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** rtEven访问实时类型模式。
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** batchEven用于访问批处理类型模式。
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** rtEven以访问实时类型架构。
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** batchEven以访问批处理类型架构。
 
-这两种方法都包含用于登录到事务消息模块的&#x200B;**`<urn:sessiontoken>`**&#x200B;元素。 我们建议通过可信IP地址使用标识方法。 要检索会话令牌，请执行登录SOAP调用，然后执行获取令牌和注销。 对多个RT调用使用相同的令牌。 本节包含的示例使用的是建议的会话令牌方法。
+这两种方法都包含用于登录到事务型消息传递模块的&#x200B;**`<urn:sessiontoken>`**&#x200B;元素。 我们建议通过受信任的IP地址来使用识别方法。 要检索会话令牌，请执行登录SOAP调用，然后执行get令牌，然后再执行注销。 对多个RT调用使用相同的令牌。 此部分中包含的示例使用的是会话令牌方法（推荐使用）。
 
 如果您使用的是负载平衡服务器，则可以使用用户/密码身份验证（在RT消息级别）。 示例:
 
@@ -51,7 +50,7 @@ ht-degree: 0%
 </PushEvent>
 ```
 
-**PushEvent**&#x200B;方法由包含该事件的&#x200B;**`<urn:domevent>`**&#x200B;参数组成。
+**PushEvent**&#x200B;方法由包含事件的&#x200B;**`<urn:domevent>`**&#x200B;参数组成。
 
 **PushEvents**&#x200B;方法由包含事件的&#x200B;**`<urn:domeventcollection>`**&#x200B;参数组成。
 
@@ -77,7 +76,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果调用&#x200B;**PushEvents**&#x200B;方法，则需要添加父XML元素以符合标准XML。 此XML元素将框架事件中包含的各种&#x200B;**`<rtevent>`**&#x200B;元素。
+>如果调用&#x200B;**PushEvents**&#x200B;方法，我们需要添加父XML元素以符合标准XML。 此XML元素将对事件中包含的各种&#x200B;**`<rtevent>`**&#x200B;元素进行框架设置。
 
 使用PushEvents的示例：
 
@@ -107,9 +106,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**`<batchevent>`**&#x200B;元素允许您将事件添加到“batch”队列。 **`<rtevent>`**&#x200B;将事件添加到“real time”队列。
+>使用&#x200B;**`<batchevent>`**&#x200B;元素可将事件添加到“batch”队列。 **`<rtevent>`**&#x200B;将事件添加到“实时”队列。
 
-**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素的必需属性为@type和@email。 值@type必须与配置列表时定义的分项执行实例值相同。 通过此值，您可以定义要在投放期间链接到事件内容的模板。
+**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素的必需属性是@type和@email。 值@type必须与配置执行实例时定义的明细列表值相同。 利用此值，可定义要在投放期间链接到事件内容的模板。
 
 `<rtevent> configuration example:`
 
@@ -117,21 +116,21 @@ ht-degree: 0%
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-在此示例中，提供了两个渠道:电子邮件地址和手机号码。 **whistChannel**&#x200B;允许您选择将渠道转换为消息时要使用的事件。 “0”值对应于电子邮件渠道，“1”值对应于移动渠道等。
+在此示例中，提供了两个渠道：电子邮件地址和手机号码。 **wishedChannel**&#x200B;允许您选择要将事件转换为消息时要使用的渠道。 “0”值对应于电子邮件渠道，“1”值对应于移动渠道等。
 
-如果希望推迟事件投放，请添加&#x200B;**[!UICONTROL scheduled]**&#x200B;字段，后跟首选日期。 事件将在此日期转换为消息。
+如果要延后事件投放，请添加&#x200B;**[!UICONTROL scheduled]**&#x200B;字段，后跟首选日期。 该事件将在此日期转换为消息。
 
-我们建议用数值填@wishedChannel和@emailFormat属性。 链接数值和标签的函数表位于数据模式说明中。
-
->[!NOTE]
->
->**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;数据架构的描述中提供了所有授权属性及其值的详细说明。
-
-**`<ctx>`**&#x200B;元素包含消息数据。 其XML内容是打开的，这意味着可以根据要传送的内容对其进行配置。
+我们建议使用数@wishedChannel值填@emailFormat和属性。 数据架构描述中提供了链接数值和标签的函数表。
 
 >[!NOTE]
 >
->必须优化消息中包含的XML节点的数量和大小，以避免在投放期间服务器过载。
+>**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;数据架构的描述中提供了所有授权属性及其值的详细描述。
+
+**`<ctx>`**&#x200B;元素包含消息数据。 其XML内容处于打开状态，这意味着可以根据要交付的内容对其进行配置。
+
+>[!NOTE]
+>
+>优化消息中包含的XML节点的数量和大小，以避免在交付过程中使服务器过载，这一点很重要。
 
 数据示例：
 
@@ -156,13 +155,13 @@ ht-degree: 0%
 
 ## SOAP调用{#information-returned-by-the-soap-call}返回的信息
 
-当它收到事件时，Adobe Campaign会生成唯一的返回ID。 这是事件的存档版本的ID。
+Adobe Campaign收到事件时，会生成一个唯一的返回ID。 这是事件的存档版本的ID。
 
 >[!IMPORTANT]
 >
->当接收SOAP调用时，Adobe Campaign验证电子邮件地址格式。 如果电子邮件地址格式不正确，则返回错误。
+>当Adobe Campaign收到SOAP调用时，会验证电子邮件地址格式。 如果电子邮件地址格式不正确，则会返回错误。
 
-* 当事件处理成功时，方法返回的标识符示例：
+* 事件处理成功时由方法返回的标识符示例：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -174,11 +173,11 @@ ht-degree: 0%
    </SOAP-ENV:Envelope>
    ```
 
-如果返回标识符的值严格大于零，则表示事件已在Adobe Campaign中成功存档。
+如果返回标识符的值严格大于零，则表示该事件已在Adobe Campaign中成功存档。
 
-但是，如果事件无法处理，该方法将返回错误消息或等于零的值。
+但是，如果事件无法处理，此方法将返回错误消息或等于零的值。
 
-* 处理事件示例，当查询不包含登录名或指定的运算符没有所需权限时，该失败：
+* 查询不包含登录名或指定的运算符没有所需权限时失败的事件处理示例：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -192,7 +191,7 @@ ht-degree: 0%
    </SOAP-ENV:Envelope>
    ```
 
-* 由于查询中出错而失败的事件示例（XML分类未符合）：
+* 由于查询中的错误而失败的事件示例（XML分类未遵循）：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -228,4 +227,3 @@ ht-degree: 0%
       </SOAP-ENV:Body>
    </SOAP-ENV:Envelope>
    ```
-
