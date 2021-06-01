@@ -1,14 +1,12 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 集成到 Linux 版的 Web 服务器
-description: 了解如何将活动集成到Web服务器(Linux)
+description: 了解如何将Campaign集成到Web服务器(Linux)中
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 5%
@@ -17,20 +15,20 @@ ht-degree: 5%
 
 # 集成到 Linux 版的 Web 服务器{#integration-into-a-web-server-for-linux}
 
-Adobe Campaign包括Apache Tomcat，它通过HTTP（和SOAP）作为应用程序服务器中的入口点。
+Adobe Campaign包含Apache Tomcat，它通过HTTP（和SOAP）作为应用程序服务器中的入口点。
 
 您可以使用此集成的Tomcat服务器来提供HTTP请求。
 
 在这种情况下：
 
-* 默认监听端口为8080。 要更改它，请参阅[此部分](configure-tomcat.md)。
+* 默认监听端口为8080。 要更改，请参阅[此部分](configure-tomcat.md)。
 * 然后，客户端控制台使用URL进行连接，例如：
 
    ```
    http://<computer>:8080
    ```
 
-但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开对网络外部控制台的访问时，我们建议使用专用Web服务器作为HTTP通信的主入口点。
+但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开对网络外部控制台的访问时，我们建议使用专用Web服务器作为HTTP流量的主入口点。
 
 Web服务器还允许您使用HTTPs协议保证数据的机密性。
 
@@ -38,11 +36,11 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
 
 >[!NOTE]
 >
->如果您不使用跟踪功能，则可以通过重定向到活动来执行Apache或IIS的标准安装。 不需要跟踪Web服务器扩展模块。
+>如果不使用跟踪功能，则可以通过重定向到Campaign来执行Apache或IIS的标准安装。 不需要跟踪Web服务器扩展模块。
 
 ## 使用Debian {#configuring-the-apache-web-server-with-debian}配置Apache Web服务器
 
-如果您已在基于APT的分发下安装Apache，则此过程适用。
+如果您在基于APT的分发下安装了Apache，则此过程适用。
 
 应用以下步骤：
 
@@ -52,7 +50,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   确保&#x200B;**alias**、**authz_host**&#x200B;和&#x200B;**mime**&#x200B;模块仍处于启用状态。 为此，请使用以下命令：
+   确保仍启用&#x200B;**alias**、**authz_host**&#x200B;和&#x200B;**mime**&#x200B;模块。 为此，请使用以下命令：
 
    ```
    a2enmod  alias authz_host mime
@@ -60,7 +58,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
 
 1. 在&#x200B;**/etc/apache2/mods-available**&#x200B;中创建文件&#x200B;**nlsrv.load**&#x200B;并插入以下内容：
 
-   在德比8中：
+   在Debian 8中：
 
    ```
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
@@ -78,7 +76,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
     a2enmod nlsrv
    ```
 
-   如果对Adobe Campaign页使用&#x200B;**mod_rewrite**&#x200B;模块，则需要将&#x200B;**nlsrv.load**&#x200B;和&#x200B;**nlsrv.conf**&#x200B;文件重命名为&#x200B;**zz-nlsrv.load**&#x200B;和&#x200B;**zz-nlsrv.a9/>。**&#x200B;要激活模块，请运行以下命令：
+   如果为Adobe Campaign页面使用&#x200B;**mod_rewrite**&#x200B;模块，则需要将&#x200B;**nlsrv.load**&#x200B;和&#x200B;**nlsrv.conf**&#x200B;文件重命名为&#x200B;**zz-nlsrv.load**&#x200B;和&#x200B;**zz-nlsrv.conf**。 要激活模块，请运行以下命令：
 
    ```
    a2enmod zz-nlsrv
@@ -109,7 +107,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
 
 ## 在RHEL {#configuring-apache-web-server-in-rhel}中配置Apache Web服务器
 
-如果您已在基于RPM（RHEL、CentOS和Suse）的包下安装并保护Apache，则此过程适用。
+如果您已在基于RPM（RHEL、CentOS和Suse）的包下安装并保护了Apache，则此过程适用。
 
 应用以下步骤：
 
@@ -121,7 +119,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
    mime
    ```
 
-1. 取消激活以下模块：
+1. 停用以下模块：
 
    ```
    auth_basic
@@ -136,7 +134,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
    userdir
    ```
 
-   注释链接到已停用模块的函数：
+   对链接到已停用模块的功能进行注释：
 
    ```
    DirectoryIndex
@@ -163,7 +161,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
 
 1. 对于&#x200B;**RHEL7**:
 
-   添加包含以下内容的`/etc/systemd/system/httpd.service`文件：
+   添加具有以下内容的`/etc/systemd/system/httpd.service`文件：
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -178,7 +176,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
    systemctl daemon-reload
    ```
 
-1. 然后，通过运行以下命令将Adobe Campaign运算符添加到Apache运算符组中，反之亦然：
+1. 然后，通过运行以下命令，将Adobe Campaign运算符添加到Apache运算符组，反之亦然：
 
    ```
    usermod -a -G neolane apache
@@ -198,7 +196,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
 
 ## 启动Web服务器并测试配置{#launching-the-web-server-and-testing-the-configuration}
 
-您现在可以通过启动Apache来测试配置。 Adobe Campaign模块现在应在控制台上显示其横幅（某些操作系统上有两个横幅）：
+现在，您可以通过启动Apache来测试配置。 现在，Adobe Campaign模块应在控制台上显示其横幅（某些操作系统上显示两个横幅）：
 
 ```
  /etc/init.d/apache start
@@ -215,15 +213,15 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
 12:26:28 >   Server started
 ```
 
-接下来检查它是否通过提交测试URL做出响应。
+接下来，检查它是否通过提交测试URL做出响应。
 
-您可以通过执行以下操作，从命令行测试此功能：
+您可以通过执行以下操作，从命令行中测试此代码：
 
 ```
  telnet localhost 80  
 ```
 
-您应获得：
+您应该获得：
 
 ```
 Trying 127.0.0.1...
