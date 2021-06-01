@@ -1,29 +1,27 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 配置填充示例
-description: 了解如何通过专用的用例执行A/B测试。
+title: 配置群体示例
+description: 了解如何通过专用用例执行A/B测试。
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
-
-# 配置填充示例{#step-2--configuring-population-samples}
+# 配置群体示例 {#step-2--configuring-population-samples}
 
 ## 配置查询活动{#configuring-the-query-activity}
 
-* 多次 — 单击&#x200B;**[!UICONTROL Query]**&#x200B;活动。
+* 双击&#x200B;**[!UICONTROL Query]**&#x200B;活动。
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* 单击&#x200B;**[!UICONTROL Edit query]**&#x200B;链接，然后选择要目标的收件人。
+* 单击&#x200B;**[!UICONTROL Edit query]**&#x200B;链接，然后选择要定位的收件人。
 
    ![](assets/use_case_abtesting_createrecipients_002.png)
 
@@ -33,15 +31,15 @@ ht-degree: 2%
 
 ## 配置拆分活动{#configuring-the-split-activity}
 
-此活动允许您创建多个群体：接收投放A、接收投放B的人和剩余人口。 使用随机选择，您只能目标每个投放的一部分人口。
+此活动允许您创建多个群体：接收投放A的，接收投放B的，以及剩余的群体。 通过使用随机选择，您只能定位每个投放的一部分群体。
 
-1. 创建人口A:
+1. 创建群体A:
 
-   * 多次 — 单击&#x200B;**[!UICONTROL Split]**&#x200B;活动。
+   * 双击&#x200B;**[!UICONTROL Split]**&#x200B;活动。
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
-   * 在现有选项卡中，将标签更改为填充A。
+   * 在现有选项卡中，将标签更改为群体A。
 
       ![](assets/use_case_abtesting_createrecipients_005.png)
 
@@ -57,17 +55,17 @@ ht-degree: 2%
 
       ![](assets/use_case_abtesting_createrecipients_008.png)
 
-1. 创建人口B:
+1. 创建群体B:
 
-   * 单击&#x200B;**[!UICONTROL Add]**&#x200B;为人口B创建新选项卡。
+   * 单击&#x200B;**[!UICONTROL Add]**&#x200B;为群体B创建新选项卡。
 
       ![](assets/use_case_abtesting_createrecipients_009.png)
 
-   * 将人口限制为以前的10%。
+   * 将群体限制为以前的10%。
 
       ![](assets/use_case_abtesting_createrecipients_010.png)
 
-1. 创建剩余人口：
+1. 创建剩余群体：
 
    * 转到 **[!UICONTROL General]** 选项卡。
 
@@ -77,7 +75,7 @@ ht-degree: 2%
 
       ![](assets/use_case_abtesting_createrecipients_012.png)
 
-   * 更改标签以指定此填充不包括A和B，然后单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭活动。
+   * 更改标签以指定此群体既不包含A也不包含B，然后单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭活动。
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
