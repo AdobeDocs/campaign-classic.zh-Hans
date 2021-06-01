@@ -1,80 +1,78 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 通信渠道
 description: 创建投放内容，在不同渠道上发送不同的个性化消息。
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
+exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1204'
-ht-degree: 12%
+ht-degree: 19%
 
 ---
 
-
 # 通信渠道{#communication-channels}
 
-借助Adobe Campaign，您可以发送跨渠道活动，包括电子邮件、短信、LINE消息、推送通知和直接邮件，并使用各种专用[报告](../../reporting/using/delivery-reports.md)衡量其有效性。 这些消息是通过投放设计和发送的，并且可以针对每个收件人进行个性化。
+借助Adobe Campaign，您可以发送跨渠道营销活动，包括电子邮件、短信、LINE消息、推送通知和直邮，并使用各种专用[报告](../../reporting/using/delivery-reports.md)衡量其有效性。 这些消息通过投放设计和发送，并且可以针对每个收件人进行个性化。
 
-核心功能包括定位、消息的定义和个性化、通信的执行和相关的运营报告。 主要功能接入点是投放向导。 此接入点可实现Adobe Campaign覆盖的多种功能。
+核心功能包括定位、消息定义和个性化、通信执行和相关的运营报告。主要功能接入点是投放向导。 此接入点可导向 Adobe Campaign 涵盖的多种功能。
 
 >[!NOTE]
 >
->Adobe Campaign优惠一组工具，用于监控您的交付能力并优化电子邮件发送。 请阅读[本节](../../delivery/using/about-deliverability.md)了解更多信息。
+>Adobe Campaign提供一组工具来监控您的投放能力并优化电子邮件发送。 在[此部分](../../delivery/using/about-deliverability.md)中了解详情。
 
-投放发送可以通过准备投放和/或在工作流过程中发送它来实现自动化。 有关工作流中投放类型活动的详细信息，请参阅[本节](../../workflow/using/about-action-activities.md)。
+通过准备投放和/或在工作流过程中发送投放，可自动发送投放。 有关工作流中投放类型活动的更多信息，请参阅[此部分](../../workflow/using/about-action-activities.md)。
 
-Adobe Campaign优惠以下投放渠道:
+Adobe Campaign提供以下交付渠道：
 
-1. **电子邮件渠道**:电子邮件投放可让您向目标群发送个性化电子邮件。请参阅[关于电子邮件渠道](../../delivery/using/about-email-channel.md)。
-1. **直邮渠道**:直接邮件投放允许您生成包含目标填充数据的提取文件。请参阅[关于直邮渠道](../../delivery/using/about-direct-mail-channel.md)。
-1. **移动渠道**:移动渠道上的投放可让您向目标群发送个性化的SMS或LINE消息。请参阅[SMS渠道](../../delivery/using/sms-channel.md)。
-1. **移动应用程序渠道**:移动应用程序投放可让您向iOS和Android系统发送通知。请参阅[移动应用程序渠道](../../delivery/using/about-mobile-app-channel.md)一章。
+1. **电子邮件渠道**：电子邮件投放可让您向目标群体发送个性化电子邮件。请参阅[关于电子邮件渠道](../../delivery/using/about-email-channel.md)。
+1. **直邮渠道**：直邮投放允许您生成包含目标群体数据的提取文件。请参阅[关于直邮渠道](../../delivery/using/about-direct-mail-channel.md)。
+1. **移动渠道**:通过移动渠道投放，您可以向目标群体发送个性化的短信或LINE消息。请参阅[SMS渠道](../../delivery/using/sms-channel.md)。
+1. **移动应用程序渠道**：移动应用程序投放可让您向 iOS 和 Android 系统发送通知。请参阅[移动设备应用程序渠道](../../delivery/using/about-mobile-app-channel.md)一章。
 
-   其他渠道在[此页](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)中有介绍。
+   有关其他渠道的说明，请参见[此页面](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)。
 
    >[!NOTE]
    >
    >可用渠道的数量取决于您的合同。 请核实您的许可协议。
 
-投放可以执行&#x200B;**联机**(通过电子邮件，移动渠道和推送通知之一)和&#x200B;**脱机**(直接邮件渠道)。
+投放可以执行&#x200B;**online**（通过电子邮件，其中一个移动渠道和推送通知）和&#x200B;**offline**（直邮渠道）。
 
-根据渠道,投放模式可以是：
+根据渠道，投放模式可以是：
 
-* 通过Adobe Campaign直接成批投放(电子邮件渠道的默认模式)。
-* 外部投放通过专家操作员进行，该操作员获得由投放向导生成的输出文件(直接邮件渠道的默认模式)。
+* 通过Adobe Campaign直接批量交付（电子邮件渠道的默认模式）。
+* 通过专家操作员进行外部投放，该操作员获得了投放向导生成的输出文件（直邮渠道的默认模式）。
 
-外部帐户通过&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点配置。 此配置应仅由专家用户执行。
+外部帐户通过&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点进行配置。 此配置只应由专家用户执行。
 
 ## 电子邮件投放 {#email-deliveries}
 
-[电子邮件渠道](../../delivery/using/about-email-channel.md)是Adobe Campaign的核心渠道之一，允许您计划个性化电子邮件并将其发送给特定目标。
+[电子邮件渠道](../../delivery/using/about-email-channel.md)是Adobe Campaign中的核心渠道之一，允许您计划个性化电子邮件并将其发送给特定目标。
 
 您可以发送不同类型的电子邮件：
 
-* 单一发送电子邮件：可发送一次到定义目标的电子邮件。 它们通常用于推广将仅准备和发送一次的特定内容（新闻稿、促销电子邮件等）。
-* 循环电子邮件：在活动中，定期发送相同的电子邮件，并定期聚合每次发送及其报告。 同一电子邮件会根据发送当天的合格目标发送，但通常会发送到其他目标。 一个常见的示例是生日电子邮件。 有关详细信息，请参阅[循环投放](../../workflow/using/recurring-delivery.md)。
-* 交易电子邮件：基于客户行为触发的统一电子邮件。 请参阅[Transactional messaging](../../message-center/using/about-transactional-messaging.md)。
+* 单次发送电子邮件：您可以向定义的目标发送一次的电子邮件。 它们通常用于推广只准备和发送一次的特定内容（新闻稿、促销电子邮件等）。
+* 定期电子邮件：在营销活动中，定期发送相同的电子邮件，并定期汇总每个发送及其报告。 会根据发送日期的合格目标，发送同一封电子邮件，但通常会发送到其他目标。 一个常见的示例是生日电子邮件。 有关更多信息，请参阅[定期投放](../../workflow/using/recurring-delivery.md)。
+* 事务型电子邮件：基于客户行为触发的统一电子邮件。 请参阅[事务型消息传递](../../message-center/using/about-transactional-messaging.md)。
 
-要了解投放使用情况和建议，请查阅活动 [投放最佳做法](../../delivery/using/delivery-best-practices.md)。
+要了解投放使用情况和建议，请参阅Campaign [投放最佳实践](../../delivery/using/delivery-best-practices.md)。
 
-有关不同投放类型的详细信息，请参阅[本节](#types-of-deliveries)。
+有关不同类型投放的更多信息，请参阅[此部分](#types-of-deliveries)。
 
 ## 移动投放{#mobile-deliveries}
 
-Adobe Campaign允许您在移动设备上传送[SMS](../../delivery/using/sms-channel.md)和[LINE](../../delivery/using/line-channel.md)消息。
+Adobe Campaign允许您在手机上发送[SMS](../../delivery/using/sms-channel.md)和[LINE](../../delivery/using/line-channel.md)消息。
 
-对于SMS消息，您只能以文本格式创建、修改和个性化消息。 您还可以在发送SMS消息之前预览这些消息。
+对于短信消息，您只能以文本格式创建、修改和个性化消息。 您还可以在发送短信消息之前对其进行预览。
 
-对于LINE消息，您可以发送文本或图像和链接。
+对于LINE消息，您可以发送文本或图像及链接。
 
-要将SMS或LINE消息传送到移动电话，您需要：
+要将短信或LINE消息投放到移动电话，您需要：
 
 * 在&#x200B;**[!UICONTROL Mobile (SMS)]**&#x200B;渠道或&#x200B;**[!UICONTROL LINE]**&#x200B;渠道上配置的外部帐户。
-* 正确链接到此投放模板的SMS或LINE外部帐户。
+* 正确链接到此外部帐户的短信或行投放模板。
 
 ## 推送通知 {#push-notifications}
 
@@ -88,44 +86,44 @@ Adobe Campaign允许您通过专用应用程序在iOS和Android移动设备上�
 
 ## 其他渠道 {#other-channels}
 
-Adobe Campaign优惠电话投放模板，用于创建外部投放。 使用此渠道意味着您设置了处理输出文件的专用方法。 配置步骤与[直接邮件渠道](../../delivery/using/about-direct-mail-channel.md)相同。
+Adobe Campaign提供电话投放模板，用于创建外部投放。 使用此渠道意味着您设置专用方法来处理输出文件。 配置步骤与[直邮渠道](../../delivery/using/about-direct-mail-channel.md)的步骤相同。
 
 >[!NOTE]
 >
 >电话渠道不是现成可用的。 其实施需要Adobe咨询或Adobe合作伙伴参与。 请联系您的Adobe代表以了解更多信息。
 
-此外，“其他”类型投放使用不执行进程的特定技术模板：这使他们能够管理在Adobe Campaign平台之外执行的营销活动。
+此外，“其他”类型的投放使用不执行进程的特定技术模板：这允许他们管理在Adobe Campaign平台之外执行的营销操作。
 
-此渠道没有具体机制。 它是一个通用渠道，具有自己的外部帐户路由选项、投放模板类型和活动工作流活动，就像Adobe Campaign中提供的任何其他通信渠道一样。
+此渠道没有特定机制。 它是一个通用渠道，具有自己的外部帐户路由选项、投放模板类型和促销活动工作流活动，就像Adobe Campaign中提供的任何其他通信渠道一样。
 
-此渠道仅用于描述性目的，例如，用于定义要跟踪在非Adobe Campaign工具中执行的活动目标的投放。
+此渠道仅用于描述性目的，例如，定义要跟踪在非Adobe Campaign工具中执行的营销活动目标的投放。
 
 ## 投放类型{#types-of-deliveries}
 
-活动中有三种类型的投放对象：
+Campaign中有三种类型的投放对象：
 
-### 单个投放{#single-delivery}
+### 单次投放{#single-delivery}
 
-**投放**&#x200B;是执行一次的独立投放对象。 它可以重复、重新准备，但只要它处于最终状态（取消、停止、完成），它就不能再使用。
+**投放**&#x200B;是执行一次的独立投放对象。 它可以重复、重新准备，但只要它处于最终状态（已取消、停止、完成），就不能重复使用。
 
-投放可以从投放的列表创建，也可以通过[投放](../../workflow/using/delivery.md)活动在工作流中创建。
+可以从投放列表创建投放，也可以通过[Delivery](../../workflow/using/delivery.md)活动在工作流中创建投放。
 
-工作流还根据您要使用的渠道类型提供特定的投放活动。 有关这些活动的详细信息，请参阅[此部分](../../workflow/using/cross-channel-deliveries.md)。
+工作流还根据您要使用的渠道类型提供特定投放活动。 有关这些活动的更多信息，请参阅[此部分](../../workflow/using/cross-channel-deliveries.md)。
 
 ### 循环投放 {#recurring-delivery}
 
-通过&#x200B;**循环投放**，您可以在每次执行活动时创建新投放。 这样可避免为重复投放创建新任务。
+通过&#x200B;**定期投放**，您可以在每次执行活动时创建新投放。 这样可避免为定期任务创建新投放。
 
-例如，如果每月运行一次此类活动，则一年后将有12个投放。
+例如，如果您每月运行一次此类活动，则一年后将有12次投放结束。
 
-循环投放通过[循环投放活动](../../workflow/using/recurring-delivery.md)在工作流内创建。 本节介绍了此活动的示例：[在定位工作流](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)中创建重复投放。
+在工作流中通过[定期投放活动](../../workflow/using/recurring-delivery.md)创建定期投放。 本节将介绍此活动的示例：[在定向工作流中创建定期投放](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)。
 
 ### 连续投放 {#continuous-delivery}
 
-**连续投放**&#x200B;允许您向现有投放添加新收件人，这样就不必在每次执行新投放时创建新。
+**连续投放**&#x200B;允许您向现有投放添加新收件人，这样就无需在每次执行新投放时都创建新投放。
 
-如果投放中的信息（内容、名称等）发生更改，则在投放执行时将创建新的投放对象。 如果未更改任何信息，则重复使用同一投放对象，并将投放和跟踪日志添加到同一对象中。
+如果投放中的信息（内容、名称等）发生更改，则会在投放执行时创建新的投放对象。 如果没有更改任何信息，则重复使用同一投放对象，并将投放和跟踪日志添加到同一对象中。
 
-例如，如果您每月运行一次此类活动，则一年后将只运行一次投放(前提是您未对投放进行任何更改)。
+例如，如果您每月运行一次此类活动，则一年后最终将会有一个投放（前提是您未对投放进行任何更改）。
 
-通过[连续投放活动](../../workflow/using/continuous-delivery.md)在工作流内创建连续投放。
+通过[连续投放活动](../../workflow/using/continuous-delivery.md)在工作流中创建连续投放。
