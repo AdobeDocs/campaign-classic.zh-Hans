@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 工作流常见问题解答
 description: Campaign Classic 常见问题解答
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 97%
 
 ---
-
 
 # 工作流常见问题解答 {#workflows-faq}
 
@@ -25,7 +23,7 @@ ht-degree: 97%
 
 ## 如何在 Campaign 中导入数据？{#how-can-i-import-data-in-campaign-}
 
-了解在[本节](../../platform/using/import-export-best-practices.md)中导入数据的最佳实践。
+了解在[此部分](../../platform/using/import-export-best-practices.md)中导入数据的最佳实践。
 
 ## 是否能监视工作流的执行？{#can-i-monitor-workflow-execution-}
 
