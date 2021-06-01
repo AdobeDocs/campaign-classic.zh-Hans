@@ -1,13 +1,12 @@
 ---
-keywords: Campaign Classic；主页；热门主题
-solution: Campaign Classic
+keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '289'
-ht-degree: 49%
+ht-degree: 52%
 
 ---
 
@@ -17,17 +16,17 @@ ht-degree: 49%
 
 ## 新增功能
 
-* **[删除不正确的硬](delivery/using/update-bounce-qualification.md)**<br/> 弹回了解如何在Apple中断后更新不正确的硬弹回
+* **[删除错误硬退回](delivery/using/update-bounce-qualification.md)**<br/> 了解如何在Apple中断后更新错误硬退回
 
-* **[更新您的APNs](technotes/ios-certificate-update.md)**<br/> 证书2021年3月29日，APNs更新影响了活动 iOS渠道。您需要更新配置以避免iOS推送渠道中断。
+* **[更新APNs证](technotes/ios-certificate-update.md)**<br/> 书2021年3月29日，APNs更新影响了Campaign iOS渠道。您需要更新配置以避免iOS推送渠道中断。
 
-* **[通过IMS/Adobe ID连接？升级到最新版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS连接到活动，则必须升级才能在2021年6月30日**&#x200B;之后连接到活动&#x200B;**。
+* **[通过IMS/Adobe ID连接？升级到最新内部版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS连接到Campaign，则必须升级才能在2021年6月30日**&#x200B;之后连接到Campaign。**
 
-* **[保护您的活动实](technotes/acc-config-updates.md)**<br/> 例更新到最新版本以保护您的活动平台。
+* **[保护Campaign实例](technotes/acc-config-updates.md)**<br/> 更新到最新内部版本以保护Campaign平台。
 
-* **[更新Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> 集成旧版身份验证服务已到期。了解如何迁移到Adobe I/O。
+* **[更新Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> 集成旧版oAuth身份验证服务已终止。了解如何迁移到Adobe I/O。
 
-* **[迁移到基于HTTP/2的APNs提供](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)**<br/> 程序APIL了解如何从传统二进制协议迁移到基于HTTP/2的APNs提供程序API
+* **[迁移到基于HTTP/2的APNs提供程](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)**<br/> 序APIL了解如何从旧版二进制协议迁移到基于HTTP/2的APNs提供程序API
 
 * **[获取支持](support.md)**<br/>访问常见问题解答、最佳实践、帮助资源和请求帮助
 
@@ -88,4 +87,4 @@ ht-degree: 49%
 | [兼容性矩阵](rn/using/compatibility-matrix.md) | [Campaign JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [[!DNL Gold Standard] 升级](rn/using/gs-overview.md) | [跟踪指南](https://helpx.adobe.com/cn/campaign/kb/acc-tracking.html) |
 | [已弃用的功能](rn/using/deprecated-features.md) | [安全性和隐私检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html) |
-| [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) | [监控准则](production/using/monitoring-guidelines.md) |
+| [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans) | [监控准则](production/using/monitoring-guidelines.md) |
