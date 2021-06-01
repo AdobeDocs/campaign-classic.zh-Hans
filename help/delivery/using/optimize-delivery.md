@@ -1,15 +1,14 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 优化消息投放
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -31,7 +30,7 @@ ht-degree: 7%
 
 * 工作流执行：监控工作流对于避免平台性能问题至关重要。 遵循本文档](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准则。[
 
-* 如果您符合条件，可以使用[营销活动控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)使用[性能监控](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html)功能监控您的平台。
+* 如果您符合条件，可以使用[营销活动控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)使用[性能监控](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html)功能监控您的平台。
 
 ## 正在检查网络配置{#network-config}
 
