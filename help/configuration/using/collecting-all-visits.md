@@ -1,35 +1,33 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 收集所有访问
 description: 收集所有访问
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
 
 ---
 
-
 # 收集所有访问{#collecting-all-visits}
 
-通过Adobe Campaign提供的Web跟踪模块，您可以在消息中单击后的网站跟踪上下文中收集收件人对网站特定页面的访问。
+通过Adobe Campaign提供的Web跟踪模块，您可以收集收件人在消息中单击后进行网站跟踪的上下文中对网站特定页面的访问。
 
-但是，您可以配置您的平台，以便该平台通过Web跟踪标签收集平台已知用户对页面的所有访问。
+但是，您可以配置您的平台，以便该平台收集具有Web跟踪标记的页面所有访问次数，该标记由平台已知用户执行。
 
-该平台所知的用户是已被投放定位并且至少点击了一次所接收消息的收件人。 永久Cookie用于标识此收件人。
+平台已知的用户是已被投放定向且已至少单击一次接收消息的收件人。 永久Cookie用于标识此收件人。
 
 >[!IMPORTANT]
 >
->该Adobe Campaign平台不适用于在消息中点击后访问网站的上下文之外用作网站跟踪工具。 启用此选项后，可能会在承载服务器（重定向、应用程序和数据库）的计算机上导致资源的高使用率。 建议您确保硬件架构能够支持此负载，并避免将Web跟踪标签放置到最频繁访问的页面(如主页)中。
+>Adobe Campaign平台不适用于消息中单击后访问网站的上下文之外的网站跟踪工具。 启用此选项后，可能会导致在托管服务器的计算机上（重定向、应用程序和数据库）大量使用资源。 建议您确保硬件架构能够支持此负载，并避免在最常访问的页面（如主页）中放置Web跟踪标记。
 
 ## 服务器配置{#server-configuration}
 
-通过使&#x200B;**serverConf.xml**&#x200B;文件的某些元素过载来配置服务器。 这些文件保存在Adobe Campaign安装目录的&#x200B;**conf**&#x200B;子目录中。
+通过过载&#x200B;**serverConf.xml**&#x200B;文件的某些元素来配置服务器。 这些文件保存在Adobe Campaign安装目录的&#x200B;**conf**&#x200B;子目录中。
 
 ### 重定向服务器{#redirection-server}
 
@@ -42,11 +40,11 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="true"
 trackingPassword=""
 ```
 
-## 配置默认匹配活动{#configuring-a-default-matching-campaign}
+## 配置默认匹配的营销活动{#configuring-a-default-matching-campaign}
 
-要通过客户端控制台视图跟踪信息，您必须：
+要通过客户端控制台查看跟踪信息，您必须：
 
-* 创建&#x200B;**伪投放**(投放映射必须与目标模式的映射相同),
+* 创建&#x200B;**虚拟投放**（投放映射必须与目标架构的映射相同），
 * 在&#x200B;**NmsTracking_WebTrackingDelivery**&#x200B;选项中输入此投放的&#x200B;**内部名称**。
 
-并非直接在电子邮件中单击之后查看的所有网站跟踪信息都可以在创建的虚拟投放中查看。
+在创建的虚拟投放中，可以查看并非直接在电子邮件中单击之后显示的所有网站跟踪信息。
