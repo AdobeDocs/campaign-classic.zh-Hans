@@ -1,29 +1,27 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 数据模式
 description: 数据模式
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 2%
 
 ---
 
-
 # 数据模式{#data-schemas}
 
 以下是关于在Adobe Campaign中使用数据模式的一些一般原则。
 
-有关在Adobe Campaign中创建和配置模式的详细信息，请参阅[本节](../../configuration/using/about-schema-edition.md)。
+有关在Adobe Campaign中创建和配置数据架构的更多信息，请参阅[此部分](../../configuration/using/about-schema-edition.md)。
 
 ## 模式结构 {#schema-structure}
 
-数据模式的XML文档必须包含&#x200B;**`<srcschema>`**&#x200B;根元素，其中&#x200B;**name**&#x200B;和&#x200B;**命名空间**&#x200B;属性用于填充模式名称及其命名空间。
+数据架构的XML文档必须包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;属性的&#x200B;**`<srcschema>`**&#x200B;根元素，以填充架构名称及其命名空间。
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -31,17 +29,17 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-模式的入口点是其主要元素。 由于它的名称与模式相同，并且它应该是根元素的子元素，因此易于识别。 内容的描述以此元素开头。
+架构的入口点是其主要元素。 很容易识别，因为它与架构同名，并且应该是根元素的子元素。 内容的描述以此元素开头。
 
-在内容管理模式中，主元素由以下行表示：
+在内容管理架构中，主元素由以下行表示：
 
 ```
 <element name="book" template="ncm:content" xmlChildren="true">
 ```
 
-在主元素中输入的&#x200B;**template**&#x200B;属性允许您将具有通用属性的模式扩展到所有内容定义，如名称、创建日期、作者、关联字符串等。
+通过在主元素中输入的&#x200B;**template**&#x200B;属性，可以将具有通用属性的架构扩展到所有内容定义，如名称、创建日期、作者、关联字符串等。
 
-这些属性在&#x200B;**ncm:content**&#x200B;模式中有介绍。
+**ncm:content**&#x200B;架构中对这些属性进行了描述。
 
 >[!NOTE]
 >
@@ -49,11 +47,11 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->在创建新模式或在模式扩展期间，您需要为整个模式保留相同的主键序列值(@pkSequence)。
+>创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
 ## 数据类型 {#data-types}
 
-以下是已填写类型的内容管理模式示例：
+以下是内容管理架构的示例，其中填充了以下类型：
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -73,17 +71,17 @@ ht-degree: 2%
 
 ## 属性 {#properties}
 
-各种属性可用于丰富数据模式的&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;元素。
+可以使用各种属性来扩充数据架构的&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;元素。
 
-在内容管理中使用的主要属性如下：
+内容管理中使用的主要属性如下：
 
-* **label**:简短描述，
+* **标签**:简短描述，
 * **desc**:长描述，
 * **默认**:表达式在内容创建时返回默认值，
-* **userEnum**:免费明细列表存储和显示通过此字段输入的值，
-* **枚举**:修复了在预先知道可能值的列表时使用的明细列表。
+* **userEnum**:用于存储和显示通过此字段输入的值的自由枚举，
+* **枚举**:修复了在预先知道可能值列表时使用的枚举。
 
-下面是我们的示例模式，其中填写了属性：
+以下是我们的示例架构，其中填充了以下属性：
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -108,9 +106,9 @@ ht-degree: 2%
 
 ## 集合元素{#collection-elements}
 
-集合是具有相同名称和相同层次的元素的列表。
+集合是具有相同名称和相同层次结构级别的元素列表。
 
-在我们的示例中，**`<chapter>`**&#x200B;和&#x200B;**`<page>`**&#x200B;元素是集合元素。 因此，必须将&#x200B;**unboind**&#x200B;属性添加到以下元素的定义中：
+在本例中，**`<chapter>`**&#x200B;和&#x200B;**`<page>`**&#x200B;元素是集合元素。 因此，必须将&#x200B;**unbound**&#x200B;属性添加到这些元素的定义中：
 
 ```
 <element name="chapter" label="Chapter" unbound="true" ordered="true">
@@ -126,11 +124,11 @@ ht-degree: 2%
 
 ## 引用{#element-referencing}的元素
 
-元素引用在内容模式中使用得很多。 它允许您对&#x200B;**`<element>`**&#x200B;元素的定义进行分解，以便在具有相同结构的其他元素上引用它。
+元素引用在内容架构中非常常用。 它允许您对&#x200B;**`<element>`**&#x200B;元素的定义进行分解，以便可以在具有相同结构的其他元素上引用该元素。
 
 要引用的元素上的&#x200B;**ref**&#x200B;属性必须使用引用元素的路径(XPath)完成。
 
-**示例**:添加与示 **** 例模式的元素具有 **`<chapter>`** 相同结构的Appendixsection。
+**示例**:添加与示 **** 例模式元素结构相 **`<chapter>`** 同的Appendixsection。
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -150,13 +148,13 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-章结构将移至主元素外部名为“section”的元素。 本章和章节引用了“章节”元素。
+章节结构将移至主元素外部名为“section”的元素。 章节和节引用“section”元素。
 
 ## 计算字符串 {#compute-string}
 
-**计算字符串**&#x200B;是用于构造表示内容实例的字符串的XPath表达式。
+**计算字符串**&#x200B;是XPath表达式，用于构造表示内容实例的字符串。
 
-以下是我们的示例模式，其&#x200B;**Compute string**:
+以下是我们使用其&#x200B;**计算字符串**&#x200B;的示例架构：
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -169,12 +167,12 @@ ht-degree: 2%
 
 ## 编辑模式 {#editing-schemas}
 
-通过编辑字段，可以输入源模式的XML内容：
+编辑字段允许您输入源架构的XML内容：
 
 ![](assets/d_ncs_integration_schema_edition.png)
 
-保存源模式时，将自动启动扩展模式生成。
+保存源架构后，将自动启动扩展架构生成。
 
 >[!NOTE]
 >
->通过&#x200B;**名称**&#x200B;编辑控件，可以输入模式的键，包括名称和命名空间。 模式根元素的&#x200B;**name**&#x200B;和&#x200B;**命名空间**&#x200B;属性在模式的XML编辑字段中自动更新。
+>**Name**&#x200B;编辑控件允许您输入架构的键，包括名称和命名空间。 架构根元素的&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;属性会在架构的XML编辑字段中自动更新。
