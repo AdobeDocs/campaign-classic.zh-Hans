@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和属性
 description: 元素和属性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 8%
 
 ---
-
 
 # compute-string元素{#compute-string--element}
 
@@ -35,15 +33,15 @@ compute-string:==EMPTY
 
 ## 说明{#description-1}
 
-`<compute-string>`元素允许您根据XTK表达式生成字符串，以根据多个值在接口中显示“built”标签。
+`<compute-string>`元素允许您根据XTK表达式生成字符串，以根据多个值在界面中显示“已构建”标签。
 
-## 使用和上下文{#use-and-context-of-use-1}
+## {#use-and-context-of-use-1}的使用和使用上下文
 
-如果未定义`<compute-string>`，则默认情况下将输入`<compute-string>`元素，并在模式中输入主键值。
+未定义`<compute-string>`时，默认情况下会输入`<compute-string>`元素，并在其中输入主键的值。
 
 ## 属性描述{#attribute-description-1}
 
-* **expr(字符串**):XTK和/或Xpath表达式
+* **expr（字符串）**:XTK和/或Xpath表达式
 
 ## 示例{#examples-1}
 
@@ -52,7 +50,7 @@ compute-string:==EMPTY
 <compute-string expr="ToString([@centralCatalog-id]) + ',' + ToString([@localOrgUnit-id])" />
 ```
 
-在收件人上计算的字符串结果：“John Doe(john.doe@aol.com)”：
+对收件人计算的字符串的结果：“John Doe(john.doe@aol.com)”：
 
 ```
 <element name="recipient">
