@@ -1,29 +1,26 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 执行设置
 description: 执行设置
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e2dea4a0-9ed8-47b6-a16b-eeee653d2290
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 4%
 
 ---
 
-
 # 执行设置{#execution-settings}
 
-创建模拟时，您可以根据需要指定执行设置。 这些设置允许您在低活动时执行模拟，具体取决于其优先级，或在日志中记录SQL查询。 此阶段是可选的。
+在创建模拟时，您可以根据需要指定执行设置。 通过这些设置，您可以根据模拟的优先级在活动不足时执行模拟，或在日志中记录SQL查询。 此阶段是可选的。
 
-以后可以在模拟窗口的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中更改这些设置。
+这些设置稍后可在模拟窗口的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中进行更改。
 
 ![](assets/offer_simulation_008.png)
 
 * **[!UICONTROL Schedule execution for a time of low activity]** :允许您根据所选的优先级（低、平均或高）计划模拟，以优化Adobe Campaign性能。
-* **[!UICONTROL Priority]** :这是应用于模拟的级别，用于计划它。选中&#x200B;**[!UICONTROL Schedule execution for a time of low activity]**&#x200B;选项后，活动处理工作流将选择活动低的时间来开始活动。
-* **[!UICONTROL Log SQL queries in the journal]** :此功能仅供专家用户使用。它允许您向显示SQL查询的日志添加一个选项卡，以检测在模拟完成错误时可能出现的故障。
-
+* **[!UICONTROL Priority]** :这是用于模拟以计划该事件的级别。选中&#x200B;**[!UICONTROL Schedule execution for a time of low activity]**&#x200B;选项后，营销活动处理工作流会选择活动时间较短的时间来启动营销活动。
+* **[!UICONTROL Log SQL queries in the journal]** :此功能仅适用于专家用户。它允许您在显示SQL查询的日志中添加一个选项卡，以在模拟结束时出现错误时检测可能的故障。
