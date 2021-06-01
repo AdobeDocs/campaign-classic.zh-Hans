@@ -1,44 +1,42 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 模式特性
 description: 模式特性
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 099161b4-b4cb-433c-aed6-71157269a536
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
 
 ---
 
-
 # 模式特性{#schema-characteristics}
 
-引用现有表的模式的特点如下：
+引用现有表的模式的特征如下：
 
 * Adobe Campaign不得修改相对于现有表的SQL对象，
-* 必须显式指定表和列的名称，
+* 必须明确指定表和列的名称，
 * 必须声明索引。
 
 >[!IMPORTANT]
 >
->请勿删除标准收件人表中的字段，即使这些字段没有用。 这可能导致Adobe Campaign数据库中的行为错误。
+>请勿删除标准收件人表中的字段，即使这些字段无用也是如此。 这可能会导致Adobe Campaign数据库中的行为错误。
 
 ## 视图属性{#the-view-attribute}
 
-源模式接受&#x200B;**srcSchema**&#x200B;根元素的&#x200B;**视图**&#x200B;属性。 在自定义表中处理Adobe Campaign时，必须使用它。 **视图=&quot;true&quot;**&#x200B;属性告知数据库结构更新向导忽略此模式。 因此，禁止应用程序使表、其列及其索引与相应模式同步。
+源架构接受&#x200B;**srcSchema**&#x200B;根元素的&#x200B;**view**&#x200B;属性。 在自定义表中处理Adobe Campaign时，必须使用该函数。 **view=&quot;true&quot;**&#x200B;属性告知数据库结构更新向导忽略此模式。 因此，禁止应用程序将表、其列及其索引与相应模式同步。
 
-当此属性设置为&#x200B;**true**&#x200B;时，该模式仅用于生成SQL查询以访问此表的数据。
+当此属性设置为&#x200B;**true**&#x200B;时，架构仅用于生成SQL查询以访问此表的数据。
 
-## {#names-of-tables-and-columns}表和列的名称
+## 表和列的名称{#names-of-tables-and-columns}
 
-当由表更新向导创建表时，将根据各个模式和属性的名称自动生成表和列的名称。 但是，可以通过输入以下属性强制使用SQL名称：
+当通过表更新向导创建表时，表和列的名称会根据各个架构和属性的名称自动生成。 但是，可以通过输入以下属性来强制使用SQL名称：
 
-* **要** 指定表，请在模式的主元素中
-* **在** 每个属性中指定列。
+* **** 模式主元素内的sqltable，用于指定表，
+* **** sqlname，以指定列。
 
 **示例**:
 
@@ -55,17 +53,17 @@ ht-degree: 2%
 </element>
 ```
 
-在此示例中，如果未显式指定表和列的名称，则应用程序将使用&#x200B;**CusIndividual**&#x200B;作为表，使用&#x200B;**lastName**&#x200B;和&#x200B;**firstName**&#x200B;作为列。
+在此示例中，如果未明确指定表和列的名称，则应用程序将使用&#x200B;**CusIndivial**&#x200B;表， **lastName**&#x200B;和&#x200B;**firstName**&#x200B;列。
 
-在模式中，只能填充现有表的部分列。 未填充的列将不可供用户访问。
+在架构中，只能填充现有表列的一部分。 未填充的列将不允许用户访问。
 
 ## 索引字段{#indexed-fields}
 
-在从客户端控制台中对列表的记录排序时，通过对索引字段排序可以获得更好的性能。 在模式中声明索引使控制台在列标签左侧的排序顺序箭头下方显示索引字段，其中带有红线，如下所示：
+在客户端控制台中对列表记录进行排序时，对索引字段进行排序可获得更好的性能。 在架构中声明索引时，控制台会在列标签左侧的排序箭头下，以红线显示索引字段，如下所示：
 
 ![](assets/s_ncs_integration_mapping_index.png)
 
-在模式中，索引定义如下：
+在架构中，索引的定义如下：
 
 ```
 <dbindex name="name_of_index" unique="true/false"
@@ -75,7 +73,7 @@ ht-degree: 2%
 </dbindex
 ```
 
-因此，在匹配模式中声明自定义表的现有索引很重要。
+因此，在匹配架构中声明自定义表的现有索引很重要。
 
 为源模式的每个键和链接声明隐式声明索引。 通过指定&#x200B;**noDbIndex=&quot;true&quot;**&#x200B;属性，可以阻止索引声明：
 
@@ -86,4 +84,3 @@ ht-degree: 2%
   <keyfield xpath="@customerId"/>
 </key>
 ```
-
