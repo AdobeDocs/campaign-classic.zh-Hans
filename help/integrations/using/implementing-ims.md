@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 实施IMS
-description: 实施IMS
+title: 实现IMS
+description: 实现IMS
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 58552d6e-fbed-4944-85c4-9c14bf60d823
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 0%
 
 ---
-
 
 # 实现IMS{#implementing-ims}
 
@@ -23,7 +21,7 @@ ht-degree: 0%
 
    ![](assets/ims_1.png)
 
-1. 输入您的Adobe ID和密码。 随后将显示“Adobe Campaign主页”屏幕。
+1. 输入Adobe ID和密码。 随后将显示Adobe Campaign主屏幕。
 
    ![](assets/ims_2.png)
 
@@ -32,4 +30,3 @@ ht-degree: 0%
 要禁用通过Adobe ID进行连接，请断开连接，单击&#x200B;**[!UICONTROL File > Connections]**&#x200B;并取消选中&#x200B;**[!UICONTROL Connect with an Adobe ID]**。
 
 ![](assets/ims_4.png)
-
