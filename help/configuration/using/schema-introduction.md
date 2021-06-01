@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 元素和属性
 description: 元素和属性
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 27%
 
 ---
 
+# 架构引用{#schema-reference}
 
-# 模式引用{#schema-reference}
+在编辑模式时，可使用基于源模式(xtk:srcSchema)的审批系统。 在使用“数据库结构更新……”更新数据库时，也会发现一些错误 向导。
 
-编辑模式时，可使用基于源模式(xtk:srcSchema)的审批系统。 使用“数据库结构更新……”更新数据库时，也会发现一些错误 。
+默认情况下，在Adobe Campaign架构中，所有布尔类型属性都为“false”。 要激活它们，您需要在架构中指定属性并将其值设置为“true”。
 
-默认情况下，在Adobe Campaign模式中，所有布尔类型属性都为“false”。 要激活它们，您需要在模式中指定属性并将其值设置为“true”。
-
-参考列表:
+引用列表：
 
 * [属性](schema/attribute.md)
 * [计算字符串](schema/compute-string.md)
