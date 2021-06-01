@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 在站点中插入标记
 description: 在站点中插入标记
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 5%
 
 ---
-
 
 # 在站点中插入标记{#inserting-tags-in-your-site}
 
@@ -23,7 +21,7 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->此方法使用Web浏览器发送的Cookie来标识收件人，并且不是100%可靠。
+>此方法使用Web浏览器发送的Cookie来标识收件人，不是100%可靠。
 
 **示例**:
 
@@ -31,19 +29,19 @@ ht-degree: 5%
 <img height='0' width='0' alt='' src='https://localhost/r/12343?tagid=home'
 ```
 
-插入的标签与重定向服务器联系。
+插入的标记与重定向服务器联系。
 
 ![](assets/d_ncs_integration_webtracking_structure2.png)
 
-在控制台中定义要跟踪的页面时，可以生成一个示例Web跟踪标签，以将其复制并粘贴到网页的源代码中。
+在控制台中定义要跟踪的页面时，可以生成一个示例Web跟踪标记，以将其复制并粘贴到网页的源代码中。
 
-但是，在使用TRANSACTION-type标签时，必须使用JavaScript修改示例标签，以插入事务信息（数量、项数）和扩展模式定义的任何信息。
+但是，在使用TRANSACTION类型标记时，必须使用JavaScript修改示例标记，以插入事务信息（金额、项目数）和扩展架构定义的任何信息。
 
-### 静态插入标签{#static-insertion-of-tags}
+### 标记{#static-insertion-of-tags}的静态插入
 
-要执行静态标签插入，只需将控制台生成或手动构建的标签复制并粘贴到网页源中。
+要执行静态标签插入，只需将控制台生成或手动构建的标签复制并粘贴到网页源中即可。
 
-**示例**:在显示表单的页面上插入Web跟踪标签。
+**示例**:在显示表单的页面上插入web跟踪标记。
 
 ```
 <html>
@@ -65,7 +63,7 @@ ht-degree: 5%
 </html>
 ```
 
-在确认页面(“amount.md”)中插入TRANSACTION类型的Web跟踪标签。
+在确认页面(“amount.md”)中插入TRANSACTION类型的Web跟踪标记。
 
 ```
 <html>
@@ -87,11 +85,11 @@ ht-degree: 5%
 </html>
 ```
 
-### 动态生成Web跟踪标签{#dynamic-generation-of-web-tracking-tags}
+### 动态生成Web跟踪标记{#dynamic-generation-of-web-tracking-tags}
 
-动态生成网页时，您可以在页面生成时添加网页跟踪标签。
+当网页是动态生成的时，您可以在页面生成时添加Web跟踪标记。
 
-**示例**:Web 跟踪添加到JSP。
+**示例**:Web跟踪已添加到JSP。
 
 ```
 <%@page import="java.util.Random" %>
@@ -126,17 +124,17 @@ ht-degree: 5%
 
 ## 最佳方法{#optimum-method-}
 
-如果您希望控制发送到重定向服务器的信息，最可靠的方法是使用页面生成语言自行同步执行HTTP查询。
+如果您希望控制发送到重定向服务器的信息，最可靠的方法是使用页面生成语言同步地执行HTTP查询。
 
-您构造的URL必须遵守[Web 跟踪标记中定义的语法规则：definition](../../configuration/using/web-tracking-tag--definition.md)。
+您构建的URL必须遵循[Web跟踪标记中定义的语法规则：定义](../../configuration/using/web-tracking-tag--definition.md)。
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
 >[!NOTE]
 >
->重定向和Web跟踪使用Cookie，执行同步HTTP调用的Web服务器与重定向服务器位于同一域中非常重要。 各种HTTP交换必须传递“id”、“uuid”和“uuid230”cookie。
+>重定向和Web跟踪使用Cookie，执行同步HTTP调用的Web服务器必须与重定向服务器位于同一域中，这一点很重要。 各种HTTP交换必须传达“id”、“uuid”和“uuid230”Cookie。
 
-**示例**:在Java中动态生成，使用收件人的帐号进行身份验证。
+**示例**:在Java中动态生成，并使用收件人的帐号进行身份验证。
 
 ```
 [...]
@@ -185,4 +183,3 @@ ht-degree: 5%
   }
   [...]
 ```
-
