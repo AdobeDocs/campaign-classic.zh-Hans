@@ -2,25 +2,48 @@
 solution: Campaign Classic
 product: campaign
 title: 创建事件类型
-description: 创建事件类型
+description: 了解如何创建与要在Adobe Campaign Classic中发送的事务型消息相匹配的事件类型。
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 98b7c827-f31d-46a6-a28d-40a78a4b4248
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 10%
+source-wordcount: '169'
+ht-degree: 3%
 
 ---
 
+# 创建事件类型 {#creating-event-types}
 
-# 创建事件类型{#creating-event-types}
+为确保每个事件都可以更改为个性化消息，您首先需要创建&#x200B;**事件类型**。
 
-事件类型中必须创建Adobe Campaign要处理的控制实例。 可通过树的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;文件夹执行此操作。 每个事件类型与&#x200B;**[!UICONTROL eventType]**&#x200B;明细列表中的值相匹配。 这可以是订单确认、密码或订单投放更改等。
+在[创建消息模板](../../message-center/using/creating-the-message-template.md)时，您将选择与要发送的消息匹配的事件类型。
 
-![](assets/messagecenter_eventtype_enum_001.png)
+>[!IMPORTANT]
+>
+>您必须先创建事件类型，然后才能在消息模板中使用它们。
 
-有关详细列表的详细信息，请参阅[明细列表管理](../../platform/using/managing-enumerations.md)。
+要创建将由Adobe Campaign处理的事件类型，请执行以下步骤：
 
-创建分项列表值后，注销并重新登录实例，以便创建生效。
+1. 登录到&#x200B;**控制实例**。
+
+1. 转到树的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;文件夹。
+
+1. 从列表中选择&#x200B;**[!UICONTROL Event type]**。
+
+1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建枚举值。 这可以是订单确认、密码更改、订单交付更改等。
+
+   ![](assets/messagecenter_eventtype_enum_001.png)
+
+   >[!IMPORTANT]
+   >
+   >每个事件类型必须匹配&#x200B;**[!UICONTROL Event type]**&#x200B;枚举中的值。
+
+1. 创建分项列表值后，请注销并重新登录到您的实例，以便创建生效。
+
+>[!NOTE]
+>
+>了解有关[枚举管理](../../platform/using/managing-enumerations.md)中分项列表的更多信息。
+
+
