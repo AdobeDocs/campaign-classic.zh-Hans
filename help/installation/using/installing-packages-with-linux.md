@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 在 Linux 中安装包
 description: 在 Linux 中安装包
@@ -7,8 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 1%
@@ -19,75 +17,75 @@ ht-degree: 1%
 
 对于Linux 32位平台，请安装Adobe Campaign 32位。 对于Linux 64位平台，请安装Adobe Campaign 64位。
 
-对于每个版本，Adobe Campaign都附带一个包：**nlserver**。 此包包含给定版本的二进制文件和配置文件。
+对于其中每个版本，Adobe Campaign都提供一个包：**nlserver**。 此包包含给定版本的二进制文件和配置文件。
 
-使用安装命令可以：
+使用安装命令，您可以：
 
 * 将文件复制到&#x200B;**/usr/local/neolane**
-* 创建一个Adobe Campaign Linux帐户（和关联组），它以&#x200B;**/usr/local/neolane**&#x200B;作为其主目录创建
-* 创建供启动时使用的自动脚本&#x200B;**/etc/init.d/nlserver6**，或创建系统单元（从20.1开始）。
+* 创建Adobe Campaign Linux帐户（及关联的组），该帐户以&#x200B;**/usr/local/neolane**&#x200B;作为其主目录创建
+* 创建自动脚本&#x200B;**/etc/init.d/nlserver6**&#x200B;以在启动时使用，或创建系统单元（从20.1开始）。
 
 >[!NOTE]
 >
->**neolane**&#x200B;系统用户必须在运行命令之前尚未创建。 在安装过程中会自动创建&#x200B;**neolane**&#x200B;用户。
+>在运行命令之前，不得创建&#x200B;**neolane**&#x200B;系统用户。 在安装过程中，会自动创建&#x200B;**neolane**&#x200B;用户。
 >
->还在&#x200B;**[!UICONTROL /usr/local/neolane]**&#x200B;中自动创建链接到&#x200B;**neolane**&#x200B;用户的&#x200B;**home**&#x200B;目录。 请确保&#x200B;**[!UICONTROL /usr/local]**&#x200B;磁盘上有足够的空间（几GB）。
+>**home**&#x200B;链接到&#x200B;**neolane**&#x200B;用户的目录也会在&#x200B;**[!UICONTROL /usr/local/neolane]**&#x200B;中自动创建。 请确保&#x200B;**[!UICONTROL /usr/local]**&#x200B;磁盘上有足够的空间（多GB）。
 
-可以运行&#x200B;**ping`hostname`**&#x200B;命令，以确保服务器可以连接到自己。
+您可以运行&#x200B;**ping`hostname`**&#x200B;命令，以确保服务器可以访问自己。
 
 ## 基于RPM包{#distribution-based-on-rpm--packages}的分发
 
 要将Adobe Campaign安装到RPM（RHEL、CentOS和SUSE）操作系统上，请应用以下步骤：
 
-1. 必须首先获得Adobe Campaign包。
+1. 您必须先获取Adobe Campaign包。
 
-   文件名如下，其中&#x200B;**XXXX**&#x200B;是Adobe Campaign生成号：
+   该文件名如下，其中&#x200B;**XXXX**&#x200B;是Adobe Campaign内部版本号：
 
    * **nlserver6-v7-XXXX-0.x86_64.** rpmfor v7。
    * **nlserver6-XXXX-0.x86_64.** rpmfor v6.1。
 
    >[!CAUTION]
    >
-   >请确保在本节的命令示例中为您的Adobe Campaign版本使用正确的文件名。
+   >在此部分的命令示例中，确保为您的Adobe Campaign版本使用正确的文件名。
 
-1. 要安装它，请以&#x200B;**root**&#x200B;连接并执行以下命令(其中&#x200B;**XXXX**&#x200B;是Adobe Campaign生成号):
+1. 要安装此程序，请作为&#x200B;**root**&#x200B;连接并执行以下命令(其中&#x200B;**XXXX**&#x200B;是Adobe Campaign内部版本号):
 
    ```
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
-   rpm文件依赖于CentOS/Red Hat分发上可找到的包。 如果您不想使用其中的某些依赖关系(例如，如果您想使用Oracle JDK而不是OpenJDK)，则可能必须使用rpm的“nodeps”选项：
+   rpm文件依赖于CentOS/Red Hat分发包。 如果您不想使用其中的某些依赖项(例如，如果您想要使用OracleJDK而不是OpenJDK)，则可能必须使用rpm的“nodeps”选项：
 
    ```
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
-执行netreport所必需的“bc”命令（有关详细信息，请参阅[此部分](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)）并非在所有Linux分发版中都可用。 要检查该命令是否可用，请运行“which bc”命令。 否则，必须安装它。
+执行Netreport所必需的“bc”命令（有关详细信息，请参阅[此部分](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)）在所有Linux分发版上默认不可用。 要检查命令是否可用，请运行“which bc”命令。 如果没有，则必须安装它。
 
-对于CentOS，必须安装bc.x86_64包：以&#x200B;**root**&#x200B;身份连接并运行以下命令：
+使用CentOS，必须安装bc.x86_64包：作为&#x200B;**root**&#x200B;连接并运行以下命令：
 
 ```
 yum install bc.x86_64
 ```
 
-## 基于APT(Debian){#distribution-based-on-apt--debian-}的分布
+## 基于APT(Debian){#distribution-based-on-apt--debian-}的分配
 
 ### 在Debian中，64位{#in-debian-64-bits}
 
-要在Debian 64位操作系统上安装Adobe Campaign 64位，请应用以下步骤：
+要在Debian 64位操作系统上安装Adobe Campaign 64位，请执行以下步骤：
 
-1. 必须首先获得Adobe Campaign包。
+1. 您必须先获取Adobe Campaign包。
 
    * **nlserver6-v7-XXXX-linux-2.6-amd64.** debfor v7。
    * **nlserver6-XXXX-linux-2.6-amd64.** debfor v6.1。
 
-   **** XXXX是Adobe Campaign生成号。
+   **** XXXX是Adobe Campaign内部版本号。
 
    >[!CAUTION]
    >
-   >请确保在本节的命令示例中为您的Adobe Campaign版本使用正确的文件名。
+   >在此部分的命令示例中，确保为您的Adobe Campaign版本使用正确的文件名。
 
-1. 要安装它，请以&#x200B;**root**&#x200B;连接并执行以下命令(其中&#x200B;**XXXX**&#x200B;是Adobe Campaign生成号):
+1. 要安装此程序，请作为&#x200B;**root**&#x200B;连接并执行以下命令(其中&#x200B;**XXXX**&#x200B;是Adobe Campaign内部版本号):
 
    ```
    dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
@@ -99,12 +97,12 @@ yum install bc.x86_64
    apt-get install -f
    ```
 
-**德比安8/9特点**
+**Debian 8/9详情**
 
 在Debian 8/9操作系统上安装Adobe Campaign时，请考虑以下事项：
 
 * 必须事先安装OpenSSL。
-* 使用以下命令安装libicu52(Debian 8)或libicu57(Debian 9)、libprotobuf9(Debian8)和libc-ares2:
+* 通过以下命令安装libicu52(Debian 8)或libicu57(Debian 9)、libprotobuf9(Debian8)和libc-ares2:
 
    ```
    aptitude install libicu52 (Debian 8) libicu57 (Debian 9)
@@ -132,7 +130,7 @@ yum install bc.x86_64
 
 某些参数可以通过&#x200B;**customer.sh**&#x200B;文件进行个性化
 
-如果您是第一次执行安装，则服务器上可能尚不存在&#x200B;**customer.sh**&#x200B;文件。 创建它并确保它具有执行权限。 如果不是这样，请输入以下命令：
+如果您是首次执行安装，则服务器上可能尚不存在&#x200B;**customer.sh**&#x200B;文件。 创建并确保具有执行权限。 如果不是这种情况，请输入以下命令：
 
 ```
 chmod +x /usr/local/neolane/nl6/customer.sh
@@ -140,11 +138,11 @@ chmod +x /usr/local/neolane/nl6/customer.sh
 
 ### 服务器编码{#server-encoding}
 
-默认情况下，服务器在iso8859-15环境中启动。 但是，服务器可以以UTF-8环境启动。
+默认情况下，服务器在iso8859-15环境中启动。 但是，可以在UTF-8环境中启动服务器。
 
 >[!CAUTION]
 >
->此更改影响与文件系统（通过工作流或JavaScript脚本加载的文件）的交互以及文件编码。 因此，我们建议使用默认环境。
+>此更改会影响与文件系统（通过工作流或JavaScript脚本加载的文件）的交互以及对文件编码的交互。 因此，我们建议使用默认环境。
 
 但是，要创建&#x200B;**日语实例**，必须使用UTF-8环境。
 
@@ -157,7 +155,7 @@ touch /usr/local/neolane/nl6/unicodeenv
 
 ### 服务器{#default-language-for-the-server}的默认语言
 
-安装支持英语和法语。 默认情况下使用英语。
+安装支持英语和法语。 默认使用英语。
 
 要切换到法语，请输入以下命令：
 
@@ -172,7 +170,7 @@ vi nl6/customer.sh
 export neolane_LANG=fra
 ```
 
-要确保正确读取系统消息，控制台必须位于与语言对应的代码页中（法语为ISO-8859-1或–15）。
+为确保系统消息能够正确读取，控制台必须位于与语言对应的代码页中（法语为ISO-8859-1或–15）。
 
 ### 环境变量{#environment-variables}
 
@@ -180,7 +178,7 @@ export neolane_LANG=fra
 
 某些组合需要更改用于执行Adobe Campaign的环境。 可以创建和编辑特定文件(`/usr/local/neolane/nl6/customer.sh`)，以添加特定于Adobe Campaign环境的修改。
 
-如有必要，使用&#x200B;**vi customer.sh**&#x200B;命令编辑&#x200B;**customer.sh**&#x200B;文件并调整配置或添加缺少的行：
+如有必要，请使用&#x200B;**vi customer.sh**&#x200B;命令编辑&#x200B;**customer.sh**&#x200B;文件，并调整配置或添加缺少的行：
 
 * 对于Oracle客户端：
 
@@ -192,15 +190,15 @@ export neolane_LANG=fra
 
    oracle_HOME环境变量的内容与Oracle安装目录匹配。
 
-   TNS_ADMIN变量的内容必须与&#x200B;**tnsnames.ora**&#x200B;文件的位置匹配。
+   TNS_ADMIN变量的内容必须匹配&#x200B;**tnsnames.ora**&#x200B;文件的位置。
 
 * 对于LibreOffice:
 
-   要在现有版本的LibreOffice上运行Adobe Campaign，需要其他配置：您需要指定到安装目录的访问路径。 例如：
+   要在LibreOffice的现有版本上运行Adobe Campaign，需要额外配置：您需要指定安装目录的访问路径。 例如：
 
    * Debian
 
-      提供了OOO_INSTALL_DIR、OO_BASIS_INSTALL_DIR、OOO_URE_INSTALL_DIR的默认值。 如果LibreOffice安装的布局不同，则可以在&#x200B;**customer.sh**&#x200B;中覆盖它们：
+      提供了OOO_INSTALL_DIR、OOO_BASIS_INSTALL_DIR、OOO_URE_INSTALL_DIR的默认值。 如果LibreOffice安装的布局不同，您可以在&#x200B;**customer.sh**&#x200B;中覆盖它们：
 
       ```
       export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
@@ -220,7 +218,7 @@ export neolane_LANG=fra
 
 * 对于Java开发工具包(JDK):
 
-   默认情况下，Adobe Campaign环境(`~/nl6/env.sh`)的配置脚本会搜索JDK安装目录。 由于此行为不是100%可靠，您需要指定需要使用的JDK。 为此，可以使用以下命令强制&#x200B;**JDK_HOME**&#x200B;环境变量：
+   默认情况下，Adobe Campaign环境的配置脚本(`~/nl6/env.sh`)会搜索JDK安装目录。 由于此行为不是100%可靠，因此您需要指定需要使用的JDK。 要实现此目的，可以使用以下命令强制&#x200B;**JDK_HOME**&#x200B;环境变量：
 
    ```
    export JDK_HOME=/usr/java/jdk1.6.0_07
@@ -228,7 +226,7 @@ export neolane_LANG=fra
 
    >[!NOTE]
    >
-   >这是一个例子。 确保使用的JDK版本与目录名称匹配。
+   >这是一个示例。 确保使用的JDK版本与目录名称匹配。
 
    要测试JDK配置，请使用以下命令以Adobe Campaign系统用户身份登录：
 
@@ -238,7 +236,7 @@ export neolane_LANG=fra
 
 必须重新启动Adobe Campaign服务，才能将更改考虑在内。
 
-命令如下所示：
+这些命令如下所示：
 
 ```
 /etc/init.d/nlserver6 stop
@@ -252,7 +250,7 @@ systemctl stop nlserver
 systemctl start nlserver
 ```
 
-### Oracle Client in Linux {#oracle-client-in-linux}
+### OracleLinux {#oracle-client-in-linux}中的客户端
 
 将Oracle与Adobe Campaign结合使用时，您需要在Linux中配置Oracle客户端层。
 
@@ -274,7 +272,7 @@ systemctl start nlserver
 
 * Adobe Campaign配置
 
-   要完成Oracle客户端的Adobe Campaign安装，您需要为Adobe Campaign使用的&#x200B;**.so**&#x200B;文件创建一个符号链接。
+   要完成Adobe CampaignOracle客户端的安装，您需要为Adobe Campaign使用的&#x200B;**.so**&#x200B;文件创建一个符号链接。
 
    为此，请使用以下命令：
 
@@ -300,7 +298,7 @@ nlserver pdump
 no task
 ```
 
-## 服务器{#first-start-up-of-the-server}的首次开始
+## 服务器的首次启动{#first-start-up-of-the-server}
 
 安装测试完成后，输入以下命令：
 
@@ -320,9 +318,9 @@ nlserver web
 17:11:08 >   Web server stop(pid=17546, tid=-151316352)...
 ```
 
-这些命令允许您创建&#x200B;**config-default.xml**&#x200B;和&#x200B;**serverConf.xml**&#x200B;配置文件。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
+通过这些命令，可以创建&#x200B;**config-default.xml**&#x200B;和&#x200B;**serverConf.xml**&#x200B;配置文件。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
 
-按&#x200B;**Ctrl+C**&#x200B;可停止进程，然后输入以下命令：
+按&#x200B;**Ctrl+C**&#x200B;以停止进程，然后输入以下命令：
 
 ```
 nlserver start web
@@ -340,7 +338,7 @@ nlserver start web
 12:17:22 >   Server started
 ```
 
-要停止，请输入：
+要停止该活动，请输入：
 
 ```
 nlserver stop web
@@ -355,8 +353,8 @@ nlserver stop web
 12:18:31 >   Web server stopped (pid=29188, tid=-1224824320)...
 ```
 
-## 内部标识符{#password-for-the-internal-identifier}的口令
+## 内部标识符{#password-for-the-internal-identifier}的密码
 
 Adobe Campaign服务器定义名为&#x200B;**internal**&#x200B;的技术登录，该登录对所有实例具有所有权限。 安装后，登录名没有密码。 必须定义一个。
 
-请阅读[本节](../../installation/using/configuring-campaign-server.md#internal-identifier)了解更多信息。
+在[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)中了解详情。
