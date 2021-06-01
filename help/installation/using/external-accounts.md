@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 8%
@@ -112,7 +112,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
    在操作员文件夹中定义的帐户密码。
 
-有关此配置的详细信息，请参阅此[页面](../../message-center/using/creating-a-shared-connection.md#control-instance)。
+有关此配置的详细信息，请参阅此[页面](../../message-center/using/configuring-instances.md#control-instance)。
 
 
 ## 访问外部系统外部帐户
