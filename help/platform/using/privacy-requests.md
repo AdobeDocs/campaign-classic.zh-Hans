@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 隐私请求
 description: 了解如何管理隐私请求
@@ -7,9 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-translation-type: ht
-source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 100%
 
@@ -31,7 +29,7 @@ ht-degree: 100%
 
 我们来了解如何创建访问和删除请求，以及 Adobe Campaign 如何处理这些请求。
 
-### 原则{#principles}
+### 原则 {#principles}
 
 Adobe Campaign 为数据控制者提供两种执行隐私访问和删除请求的方法：
 
@@ -42,7 +40,7 @@ Adobe Campaign 为数据控制者提供两种执行隐私访问和删除请求�
 >
 >有关个人数据以及管理数据的不同实体（数据控制者、数据处理方和数据主体）的更多信息，请参阅[个人数据和角色](../../platform/using/privacy-and-recommendations.md#personal-data)。
 
-### 先决条件{#prerequesites}
+### 先决条件 {#prerequesites}
 
 Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中存储的数据的隐私请求的工具。但是，数据控制者负责处理与数据主体（电子邮件、客户关怀或 Web 门户）的关系。
 
