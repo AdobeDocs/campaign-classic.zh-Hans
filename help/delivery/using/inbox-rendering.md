@@ -1,46 +1,44 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 收件箱呈现在活动
-description: 了解如何捕获电子邮件呈现并在专用报告中提供
+title: Campaign中的收件箱呈现
+description: 了解如何捕获电子邮件渲染并在专用报告中提供
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a3294e70-ac96-4e51-865f-b969624528ce
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
 
 ---
 
-
 # 收件箱呈现{#inbox-rendering}
 
 ## 关于收件箱呈现{#about-inbox-rendering}
 
-在点击&#x200B;**发送**&#x200B;按钮之前，请确保您的消息将以最佳方式在各种Web客户端、Web邮件和设备上显示给收件人。
+在点击&#x200B;**发送**&#x200B;按钮之前，确保以最佳方式在各种Web客户端、Web邮件和设备上向收件人显示您的消息。
 
-为此，Adobe Campaign利用[Litmus](https://litmus.com/email-testing)基于Web的电子邮件测试解决方案来捕获呈现内容并在专用报告中提供。 这使您能够在接收消息的不同上下文预览发送的消息，并检查主要桌面和应用程序的兼容性。
+为实现此目的，Adobe Campaign利用[Litmus](https://litmus.com/email-testing)基于Web的电子邮件测试解决方案来捕获渲染并在专用报告中提供。 这样，您就可以预览不同上下文中可能收到的已发送消息，并检查主要桌面和应用程序的兼容性。
 
-Litmus是一个功能丰富的电子邮件验证和预览应用程序。 它允许电子邮件内容创建者在70多个电子邮件呈示器（如Gmail收件箱或Apple Mail客户端）中预览其邮件内容。
+Litmus是一种功能丰富的电子邮件验证和预览应用程序。 它允许电子邮件内容创建者在70多个电子邮件渲染器（如Gmail收件箱或Apple Mail客户端）中预览其消息内容。
 
-[Litmus网站](https://litmus.com/email-testing)上列出了可用于Adobe Campaign中&#x200B;**收件箱呈现**&#x200B;的移动设备、消息和Web邮件客户端(单击&#x200B;**视图所有电子邮件客户端**)。
+可用于Adobe Campaign中&#x200B;**收件箱呈现**&#x200B;的移动设备、消息传送和Web邮件客户端列在[Litmus网站](https://litmus.com/email-testing)（单击&#x200B;**查看所有电子邮件客户端**）上。
 
 >[!NOTE]
 >
->在测试投放中的个性化时，不必呈现收件箱。 可以使用Adobe Campaign工具(如&#x200B;**[!UICONTROL Preview]**&#x200B;和[验证](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof))来检查个性化。
+>在投放中测试个性化无需进行收件箱呈现。 可以使用Adobe Campaign工具（如&#x200B;**[!UICONTROL Preview]**&#x200B;和[校样](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)）检查个性化。
 
 ## 激活收件箱呈现{#activating-inbox-rendering}
 
-对于托管和混合客户端，Adobe技术支持和顾问会在您的实例上配置收件箱呈现。 有关详细信息，请与Adobe客户经理联系。
+对于托管和混合客户端，Adobe技术支持和顾问会在您的实例上配置收件箱呈现。 有关更多信息，请联系您的Adobe客户经理。
 
-对于内部部署安装，请按照以下步骤配置收件箱渲染。
+对于内部部署安装，请按照以下步骤配置收件箱呈现。
 
-1. 通过&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜单安装&#x200B;**[!UICONTROL Inbox rendering (IR)]**&#x200B;包。 有关详细信息，请参阅[安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md)。
-1. 通过&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**&#x200B;节点配置HTTP类型的外部帐户。 有关详细信息，请参阅[创建外部帐户](../../installation/using/external-accounts.md#creating-an-external-account)。
+1. 通过&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜单安装&#x200B;**[!UICONTROL Inbox rendering (IR)]**&#x200B;包。 有关更多信息，请参阅[安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md)。
+1. 通过&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**&#x200B;节点配置HTTP类型的外部帐户。 有关更多信息，请参阅[创建外部帐户](../../installation/using/external-accounts.md#creating-an-external-account)。
 1. 按如下方式设置外部帐户参数：
-   * **[!UICONTROL Label]**:可交付性服务器信息
+   * **[!UICONTROL Label]**:可投放性服务器信息
    * **[!UICONTROL Internal name]**:deliverabilityInstance
    * **[!UICONTROL Type]**: HTTP
    * **[!UICONTROL Server]**:https://deliverability-app.neolane.net/deliverability
@@ -49,7 +47,7 @@ Litmus是一个功能丰富的电子邮件验证和预览应用程序。 它允�
 
    ![](assets/s_tn_inbox_rendering_external-account.png)
 
-1. 转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**&#x200B;节点。 搜索&#x200B;**[!UICONTROL DmRendering_cuid]**&#x200B;选项并与支持部门联系，以获取需要复制到&#x200B;**[!UICONTROL Value (text)]**&#x200B;字段的投放报告标识符。
+1. 转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**&#x200B;节点。 搜索&#x200B;**[!UICONTROL DmRendering_cuid]**&#x200B;选项并联系支持人员，以获取需要复制到&#x200B;**[!UICONTROL Value (text)]**&#x200B;字段的投放报告标识符。
 1. 编辑&#x200B;**serverConf.xml**&#x200B;文件，以允许调用Litmus服务器。 在`<urlPermission>`部分添加以下行：
 
    ```
@@ -64,64 +62,65 @@ Litmus是一个功能丰富的电子邮件验证和预览应用程序。 它允�
 
 >[!NOTE]
 >
->您可能需要从控制台注销并重新登录才能使用收件箱渲染。
+>您可能需要从控制台注销并重新登录才能使用收件箱呈现功能。
 
 ## 关于Litmus令牌{#about-litmus-tokens}
 
-由于利特谟是第三方服务，它采用按使用计费的模式。 每次用户调用Litmus功能时，都会扣除信用。
+由于利特摩是第三方服务，因此它采用的是按使用计费的模式。 每次用户调用Litmus功能时，都会扣除点数。
 
-在Adobe Campaign中，信用对应于可用呈现次数（称为令牌）。
+在Adobe Campaign中，点数对应于可用渲染（称为令牌）的数量。
 
 >[!NOTE]
 >
->可用的Litmus令牌数量取决于您购买的活动许可。 检查您的许可协议。
+>可用的Litmus令牌数量取决于您购买的Campaign许可证。 检查您的许可协议。
 
-每次在投放中使用&#x200B;**[!UICONTROL Inbox rendering]**&#x200B;功能时，生成的每个呈现都会将可用令牌减少一个。
+每次在投放中使用&#x200B;**[!UICONTROL Inbox rendering]**&#x200B;功能时，生成的每个渲染都会将可用令牌数量减一。
 
 >[!IMPORTANT]
 >
->令牌帐户用于每个呈现，而非整个收件箱呈现报表，这意味着：
+>令牌用于每个人的渲染，而不用于整个收件箱渲染报表，这意味着：
 >
->* 每次生成收件箱呈现报告时，都会扣除每个消息客户端的一个令牌：一个用于Outlook 2000渲染的令牌，一个用于Outlook 2010渲染，一个用于Apple Mail 9渲染，依此类推。
->* 对于同一投放，如果您再次生成收件箱渲染，则可用令牌的数量会再次减少生成的渲染。
+>* 每次生成收件箱呈现报告时，都会为每个消息传送客户端扣除一个令牌：一个用于Outlook 2000渲染的令牌，一个用于Outlook 2010渲染的令牌，一个用于Apple Mail 9渲染，等等。
+>* 对于同一投放，如果您再次生成收件箱呈现，则可用令牌的数量会再次减少所生成渲染的数量。
+
 >
 
 
 
-剩余可用令牌的数量显示在[收件箱呈现报告](#inbox-rendering-report)的&#x200B;**[!UICONTROL General summary]**&#x200B;中。
+剩余的可用令牌数显示在[收件箱呈现报表](#inbox-rendering-report)的&#x200B;**[!UICONTROL General summary]**&#x200B;中。
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
-通常，收件箱渲染功能用于测试新设计的电子邮件的HTML框架。 每个渲染需要最多70个令牌(具体取决于通常测试的环境数量)。 但是，在某些情况下，您可能需要多个收件箱呈现报告才能完全测试投放。 因此，可能需要更多令牌才能完成多项检查。
+通常，收件箱呈现功能用于测试新设计电子邮件的HTML框架。 每个渲染最多需要70个令牌（具体取决于通常测试的环境数量）。 但是，在某些情况下，您可能需要多个收件箱呈现报告才能完全测试您的投放。 因此，可能需要更多令牌才能完成多项检查。
 
 ## 访问收件箱呈现报告{#accessing-the-inbox-rendering-report}
 
 创建电子邮件投放并定义其内容及定向群体后，请执行以下步骤。
 
-有关创建、设计和定位投放的详细信息，请参阅[本节](../../delivery/using/about-email-channel.md)。
+有关创建、设计和定位投放的更多信息，请参阅[此部分](../../delivery/using/about-email-channel.md)。
 
-1. 在投放顶栏上，单击&#x200B;**[!UICONTROL Inbox rendering]**&#x200B;按钮。
-1. 选择&#x200B;**[!UICONTROL Analyze]**&#x200B;以开始捕获进程。
+1. 单击投放顶部栏的&#x200B;**[!UICONTROL Inbox rendering]**&#x200B;按钮。
+1. 选择&#x200B;**[!UICONTROL Analyze]**&#x200B;以启动捕获进程。
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   将发送验证。 在发送电子邮件后的几分钟内即可在该验证中访问呈现缩略图。 有关发送验证的详细信息，请参阅[本节](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
+   发送校样。 在发送电子邮件后几分钟，可以在校样中访问渲染缩略图。 有关发送校样的更多信息，请参阅[此部分](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
-1. 发送后，验证将显示在投放列表中。 多次单击它。
+1. 发送校样后，该校样会显示在投放列表中。 双击它。
 
    ![](assets/s_tn_inbox_rendering_delivery_list.png)
 
-1. 转到验证的&#x200B;**收件箱渲染**&#x200B;选项卡。
+1. 转到校样的&#x200B;**Inbox Rendering**&#x200B;选项卡。
 
    ![](assets/s_tn_inbox_rendering_tab.png)
 
-   此时将显示收件箱呈现报告。
+   将显示收件箱呈现报告。
 
 ## 收件箱呈现报告{#inbox-rendering-report}
 
-此报表显示收件箱呈现的收件人。 呈现方式可能因收件人打开电子邮件投放的方式而异：或通过电子邮件应用程序。
+此报表显示收件人看到的收件箱呈现。 呈现方式可能因收件人打开电子邮件投放的方式而异：浏览器、移动设备或电子邮件应用程序中。
 
-**[!UICONTROL General summary]**&#x200B;以列表和图形颜色编码表示形式显示接收、不想要（垃圾邮件）、未接收或待处理接收的消息数。
+**[!UICONTROL General summary]**&#x200B;以列表形式和图形颜色编码表示接收的消息数、无用的（垃圾邮件）消息数、未接收的消息数或待接收的消息数。
 
 ![](assets/s_tn_inbox_rendering_summary.png)
 
