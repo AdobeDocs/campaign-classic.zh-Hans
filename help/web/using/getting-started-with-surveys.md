@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 创建调查的关键步骤
-description: 使用活动创建您的第一个调查
+description: 使用Campaign创建您的第一个调查
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 1%
 
 ---
-
 
 # 创建调查的关键步骤{#getting-started-with-surveys}
 
@@ -21,15 +19,15 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_result.png)
 
-这些步骤是：
+这些步骤包括：
 
-1. [第1步 — 创建调查](#step-1---creating-a-survey),
-1. [第2步 — 选择模板](#step-2---selecting-the-template),
-1. [第3步 — 构建调查](#step-3---building-the-survey),
-1. [第4步 — 创建页面内容](#step-4---creating-the-page-content),
-1. [第5步 — 存储调查数据](#step-5---storing-the-survey-data-),
-1. [第6步 — 发布页面](#step-6---publishing-the-pages),
-1. [第7步 — 共享您的在线调查](#step-7---sharing-your-online-survey)。
+1. [步骤1 — 创建调查](#step-1---creating-a-survey),
+1. [第2步 — 选择模板](#step-2---selecting-the-template)、
+1. [步骤3 — 构建调查](#step-3---building-the-survey),
+1. [第4步 — 创建页面内容](#step-4---creating-the-page-content)、
+1. [步骤5 — 存储调查数据](#step-5---storing-the-survey-data-),
+1. [第6步 — 发布页面](#step-6---publishing-the-pages)、
+1. [步骤7 — 共享在线调查](#step-7---sharing-your-online-survey)。
 
 ## 步骤1 — 创建调查{#step-1---creating-a-survey}
 
@@ -37,64 +35,64 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_create.png)
 
-## 步骤2 — 选择模板{#step-2---selecting-the-template}
+## 第2步 — 选择模板{#step-2---selecting-the-template}
 
-选择一个调查模板，然后为调查指定一个名称。 此名称不会被最终用户看到，但允许在Adobe Campaign中识别调查。 单击&#x200B;**[!UICONTROL Save]**&#x200B;将调查添加到Web 应用程序列表。
+选择调查模板，然后为调查提供一个名称。 最终用户将看不到此名称，但它允许在Adobe Campaign中识别调查。 单击&#x200B;**[!UICONTROL Save]**&#x200B;将调查添加到Web应用程序列表。
 
 ![](assets/s_ncs_admin_survey_wz_00.png)
 
 ## 步骤3 — 构建调查{#step-3---building-the-survey}
 
-调查构建在放置以下元素的图中：创建内容的页面、数据预加载和保存步骤以及测试阶段。 脚本和查询也可以插入。
+在图表中构建调查，其中放置了以下元素：将创建内容的页面、数据预加载和保存步骤以及测试阶段。 脚本和查询也可以插入。
 
 要构建图表，请单击调查的&#x200B;**[!UICONTROL Edit]**&#x200B;表单。
 
-调查必须包含以下三个组件：页面、存储框和结束页面。****
+调查必须至少包含以下三个组件：****:页面、存储框和结束页面。
 
 * 要创建页面，请在编辑器的左侧部分选择&#x200B;**[!UICONTROL Page]**&#x200B;对象，并将其放入中间部分，如下所示：
 
    ![](assets/s_ncs_admin_survey_new_page.png)
 
-* 接下来，选择&#x200B;**[!UICONTROL Storage]**&#x200B;对象，并将其放置到页面的输出过渡。
-* 最后，选择&#x200B;**[!UICONTROL End]**&#x200B;对象并将其放置在存储框的输出过渡的末尾，以获得以下图：
+* 接下来，选择&#x200B;**[!UICONTROL Storage]**&#x200B;对象，并将其置于页面的输出过渡中。
+* 最后，选择&#x200B;**[!UICONTROL End]**&#x200B;对象，并将其放在存储盒的输出过渡的末尾，以获得下图：
 
    ![](assets/s_ncs_admin_survey_end.png)
 
 ## 第4步 — 创建页面内容{#step-4---creating-the-page-content}
 
-在以下示例中，我们使用&#x200B;**[!UICONTROL Page (v5 compatibility)]**&#x200B;类型页面。 可通过&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡的高级菜单访问此类页面。
+在以下示例中，我们使用的是&#x200B;**[!UICONTROL Page (v5 compatibility)]**&#x200B;类型的页面。 可通过&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡的高级菜单访问此类页面。
 
 ![](assets/s_ncs_admin_survey_pagev5.png)
 
 * 添加输入字段
 
-   要创建页面内容，您必须编辑该内容：为此，请多次单击&#x200B;**[!UICONTROL Page]**&#x200B;对象。 单击工具栏中的第一个图标以打开字段创建向导。 要为要存储在收件人用户档案的匹配字段中的用户名创建条目字段，请选择&#x200B;**[!UICONTROL Edit a recipient]**。
+   要创建页面内容，必须对其进行编辑：为此，请双击&#x200B;**[!UICONTROL Page]**&#x200B;对象。 单击工具栏中的第一个图标以打开字段创建向导。 要为要存储在收件人用户档案匹配字段中的用户名创建条目字段，请选择&#x200B;**[!UICONTROL Edit a recipient]**。
 
    ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
-   单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮，选择数据库中数据存储的字段。 在这种情况下，为“姓”字段。
+   单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮以选择数据库中数据存储的字段。 在本例中，为“姓氏”字段。
 
    ![](assets/s_ncs_admin_survey_choose_field.png)
 
    单击&#x200B;**[!UICONTROL Finish]**&#x200B;以确认字段创建。
 
-   默认情况下，当信息存储在数据库中已存在的字段中时，该字段会使用所选字段的名称，即此示例中的“姓”。 您可以修改此标签，如下所示：
+   默认情况下，当信息存储在数据库中已存在的字段中时，该字段会使用选定字段的名称，即此示例中的“姓氏”。 您可以修改此标签，如下所示：
 
    ![](assets/s_ncs_admin_survey_change_label.png)
 
-   现在，为用户帐户号创建一个输入字段。 重复该操作，然后选择“帐户否”。 。
+   现在，为用户帐号创建一个条目字段。 重复该操作并选择“帐户否”。 字段。
 
-   应用相同的过程，为用户添加一个字段以输入电子邮件地址。
+   应用相同的过程，以添加一个字段供用户输入电子邮件地址。
 
-* 要创建问题，请右键单击树中的最后一个元素，然后选择&#x200B;**[!UICONTROL Containers > Question]**，或单击&#x200B;**[!UICONTROL Containers]**&#x200B;图标并选择&#x200B;**[!UICONTROL Question]**。
+* 要创建问题，请右键单击树中的最后一个元素，然后选择&#x200B;**[!UICONTROL Containers > Question]** ，或单击&#x200B;**[!UICONTROL Containers]**&#x200B;图标并选择&#x200B;**[!UICONTROL Question]**。
 
    ![](assets/s_ncs_admin_survey_add_qu.png)
 
-   输入问题的标签并插入答案字段作为问题的子分支。 为此，在创建答案字段时，必须选择与问题链接的节点。 使用&#x200B;**[!UICONTROL Selection controls]**&#x200B;图标或右键单击添加&#x200B;**[!UICONTROL drop-down listx]**，如下所示：
+   输入问题的标签并插入答案字段作为问题的子分支。 为此，在创建答案字段时必须选择链接到问题的节点。 使用&#x200B;**[!UICONTROL Selection controls]**&#x200B;图标或通过右键单击添加&#x200B;**[!UICONTROL drop-down listx]**，如下所示：
 
    ![](assets/s_ncs_admin_survey_add_list.png)
 
-   选择存储空间：选择一个明细列表字段以自动检索值(本例中为电子邮件格式)。
+   选择存储空间：选择枚举字段以自动检索值（本例中为电子邮件格式）。
 
    ![](assets/s_ncs_admin_survey_add_itz_list.png)
 
@@ -102,34 +100,34 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_add_value.png)
 
-   单击&#x200B;**[!UICONTROL OK]**&#x200B;关闭编辑器，单击&#x200B;**[!UICONTROL Save]**&#x200B;保存更改。
+   单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭编辑器，单击&#x200B;**[!UICONTROL Save]**&#x200B;以保存更改。
 
    >[!NOTE]
    >
-   >由于&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中的选项，您可以针对每个字段或问题调整页面布局以满足您的需要。 [本节](../../web/using/about-web-forms.md)中详细介绍了调查屏幕的布局。
+   >由于&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中的选项，您可以针对每个字段或问题调整页面布局以满足您的需求。 [此部分](../../web/using/about-web-forms.md)中详细描述了调查屏幕的布局。
 
-   在详细信息屏幕中，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以视图您刚刚创建的调查的呈现。
+   在详细信息屏幕中，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以查看刚刚创建的调查的呈现。
 
    ![](assets/s_ncs_admin_survey_preview.png)
 
 ## 步骤5 — 存储调查数据{#step-5---storing-the-survey-data-}
 
-存储框允许您将用户响应保存在数据库中。 必须选择一个合并关键项来标识数据库中已有的用户档案。
+利用存储框，可在数据库中保存用户响应。 必须选择协调键值以标识数据库中已存在的用户档案。
 
-为此，请编辑该框，并选择存储合并关键项时将用作数据的字段。
+要实现此目的，请编辑方框并选择在存储数据时用作协调键值的字段。
 
-在以下示例中，在进行保存（确认）时，如果用户档案与表单中的一个输入具有相同的帐号保存在用户档案库中，则将会更新。 如果用户档案不存在，则将创建它。
+在以下示例中，在进行保存（确认）时，如果某个用户档案保存在与表单中输入的一个帐号相同的数据库中，则该用户档案将会更新。 如果用户档案不存在，则将创建该用户档案。
 
 ![](assets/s_ncs_admin_survey_save_edit.png)
 
 单击&#x200B;**[!UICONTROL OK]**&#x200B;进行确认，然后单击&#x200B;**[!UICONTROL Save]**&#x200B;保存调查
 
-## 第6步 — 发布页面{#step-6---publishing-the-pages}
+## 步骤6 — 发布页面{#step-6---publishing-the-pages}
 
-要使用户能够访问HTML页，必须使应用程序可用。 它必须不再处于编辑阶段，而是处于生产阶段。 要将调查放入生产中，您必须发布它。 操作步骤：
+要使用户能够访问HTML页面，必须使应用程序可用。 它必须不再处于编辑阶段，而是在生产阶段。 要在生产中放置调查，必须发布该调查。 操作步骤：
 
 * 单击位于调查仪表板上方的&#x200B;**[!UICONTROL Publish]**&#x200B;按钮。
-* 单击&#x200B;**[!UICONTROL Start]**&#x200B;启动发布并关闭向导。
+* 单击&#x200B;**[!UICONTROL Start]**&#x200B;以启动发布并关闭向导。
 
    ![](assets/s_ncs_admin_survey_start_publ.png)
 
@@ -137,19 +135,18 @@ ht-degree: 1%
 
    ![](assets/survey_published.png)
 
-## 第7步 — 共享您的在线调查{#step-7---sharing-your-online-survey}
+## 步骤7 — 共享在线调查{#step-7---sharing-your-online-survey}
 
-调查投入生产后，即可在服务器上访问它，并且您可以交付它。 用于访问调查的URL显示在仪表板上。
+调查投放到生产环境后，即可在服务器上访问并提交该调查。 用于访问调查的URL显示在功能板上。
 
 ![](assets/survey_url_from_dashboard.png)
 
-要传送调查，您可以发送包含指向目标群的访问链接的消息，或将调查访问URL放在网页上。
+要传送调查，您可以发送包含目标群体访问链接的消息，或将调查访问URL放在网页上。
 
-然后，您可以通过报告和日志监视用户响应。 请参阅[响应跟踪](../../web/using/publish--track-and-use-collected-data.md#response-tracking)。
+然后，您可以通过报告和日志监控用户响应。 请参阅[响应跟踪](../../web/using/publish--track-and-use-collected-data.md#response-tracking)。
 
 >[!CAUTION]
 >
->公共URL包含调查的内部名称。 修改内部名称时，URL会自动更新：还必须更新指向该调查的所有链接。
+>公共URL包含调查的内部名称。 修改内部名称后，URL会自动更新：还必须更新指向调查的所有链接。
 >
->如果已发送包含指向表单的链接的投放，则此链接将不再有效。
-
+>如果已发送包含表单链接的投放，则此链接将不再有效。
