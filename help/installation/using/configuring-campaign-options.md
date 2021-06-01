@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 配置Campaign选项
 description: 了解如何配置Campaign选项
@@ -7,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3413a54b1f45d23dcec9bf363bcf714a94642245
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '3941'
 ht-degree: 0%
