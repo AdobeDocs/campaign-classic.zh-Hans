@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 从模板创建投放
 description: 从模板创建投放
 audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 10%
 
 ---
 
-
 # 从模板创建投放{#creating-a-delivery-from-a-template}
 
 ## 将模板链接到投放{#linking-the-template-to-a-delivery}
 
-要基于现有模板创建投放，请从可用投放模板的列表中选择模板。
+要基于现有模板创建投放，请从可用投放模板列表中选择该模板。
 
 ![](assets/s_ncs_user_wizard_select_template.png)
 
@@ -41,8 +39,8 @@ ht-degree: 10%
 
 输入投放参数，然后单击&#x200B;**[!UICONTROL Send]**。
 
-此操作会在附加到模板的文件夹中生成投放。 此投放的名称是创建此投放模板的名称。
+此操作会在附加到模板的文件夹中生成投放。 此投放的名称是从中创建该投放模板的名称。
 
 >[!NOTE]
 >
->有关配置投放的详细信息，请参阅[定义电子邮件内容](../../delivery/using/defining-the-email-content.md)。
+>有关配置投放的更多信息，请参阅[定义电子邮件内容](../../delivery/using/defining-the-email-content.md)。
