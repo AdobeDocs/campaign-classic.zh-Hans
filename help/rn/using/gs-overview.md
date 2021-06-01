@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '[!DNL Gold Standard] 升级'
 description: '了解什么是 Campaign Classic [!DNL Gold Standard] '
@@ -7,9 +6,8 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 100%
 
@@ -100,6 +98,6 @@ Adobe 团队将引导和指导您的组织完成此旅程。
 
 ## 其他资源
 
-* [[!DNL Gold Standard]  发行说明](gold-standard.md)
+* [[!DNL Gold Standard] 发行说明](gold-standard.md)
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)
-* [[!DNL Gold Standard]  兼容性矩阵](compatibility-matrix-gs.md)
+* [[!DNL Gold Standard] 兼容性矩阵](compatibility-matrix-gs.md)
