@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 为 Adobe Experience Cloud 触发器配置 Adobe I/O
 description: 了解如何为Adobe Experience Cloud Triggers配置Adobe I/O
@@ -9,8 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-translation-type: tm+mt
-source-git-commit: f3ca92325f70cb3b9cca1ec5f6b7ddb5a02f9159
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 4%
@@ -21,38 +19,38 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->如果您使用的是通过身份验证进行触发器集成的旧版本，**您需要按如下所述移动到Adobe I/O。**&#x200B;带有活动和活动的传统身份验证模式将于2021年11月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>如果您通过oAuth身份验证使用旧版Triggers集成，则&#x200B;**您需要按照以下**&#x200B;所述移至Adobe I/O。 包含Campaign的旧版oAuth身份验证模式将于2021年11月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
->请注意，在移动到[!DNL Adobe I/O]期间，某些传入触发器可能会丢失。
+>请注意，在迁移到[!DNL Adobe I/O]期间，某些传入触发器可能会丢失。
 
 ## 先决条件{#adobe-io-prerequisites}
 
-此集成仅适用于从&#x200B;**Campaign Classic 20.3、20.2.4、19.1.8和[!DNL Gold Standard] 11版**&#x200B;开始。
+此集成仅适用于从&#x200B;**Campaign Classic20.3、20.2.4、19.1.8和[!DNL Gold Standard] 11版本**&#x200B;开始的版本。
 
-在启动此实施之前，请检查您拥有：
+在启动此实施之前，请检查您具有：
 
-* 有效的&#x200B;**组织标识符**:Identity Management系统(IMS)组织标识符是Adobe Experience Cloud内的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **开发人员对您组织的访问**。  如果您需要请求IMS组织的系统管理员权限，请按照本页](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中详细的[过程为所有产品用户档案提供此访问权限。
+* 有效的&#x200B;**组织标识符**:Identity Management系统(IMS)组织标识符是Adobe Experience Cloud中的唯一标识符，例如用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
+* a **开发人员对贵组织的访问**。  如果您需要请求IMS组织的系统管理员权限，请按照此页面](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中详细的[过程为所有产品配置文件提供此访问权限。
 
-## 第1步：创建/更新Adobe I/O项目{#creating-adobe-io-project}
+## 步骤1:创建/更新Adobe I/O项目{#creating-adobe-io-project}
 
-1. 访问[!DNL Adobe I/O]并使用IMS组织的系统管理员权限登录。
+1. 访问[!DNL Adobe I/O]，然后使用IMS组织的系统管理员权限登录。
 
    >[!NOTE]
    >
    > 确保您已登录到正确的组织门户。
 
-1. 从实例配置文件ims/authIMSTAClientId提取现有集成客户端标识符（客户端ID）。 非现有或空属性表示未配置客户端标识符。
+1. 从实例配置文件ims/authIMSTAClientId中提取现有集成客户端标识符（客户端ID）。 非现有或空属性表示未配置客户端标识符。
 
    >[!NOTE]
    >
-   >如果您的客户端标识符为空，则可以直接&#x200B;**[!UICONTROL Create a New project]**&#x200B;使用Adobe I/O。
+   >如果您的客户端标识符为空，则可以直接&#x200B;**[!UICONTROL Create a New project]** Adobe I/O。
 
-1. 使用提取的客户端标识符标识现有项目。 查找具有与上一步提取的相同客户端标识符的现有项目。
+1. 使用提取的客户端标识符标识现有项目。 查找具有与上一步中提取的客户端标识符相同的现有项目。
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
-1. 选择&#x200B;**[!UICONTROL + Add to Project]**&#x200B;并选择&#x200B;**[!UICONTROL API]**。
+1. 选择&#x200B;**[!UICONTROL + Add to Project]**，然后选择&#x200B;**[!UICONTROL API]**。
 
    ![](assets/do-not-localize/adobe_io_1.png)
 
@@ -66,15 +64,15 @@ ht-degree: 4%
 
 1. 如果您的客户端ID为空，请选择&#x200B;**[!UICONTROL Generate a key pair]**&#x200B;以创建公钥和私钥对。
 
-   然后，将自动下载密钥，默认到期日期为365天。 到期后，您需要创建新密钥对并更新配置文件中的集成。 使用选项2，您可以选择手动创建并上传具有较长到期日期的&#x200B;**[!UICONTROL Public key]**。
+   然后，将自动下载密钥，默认到期日期为365天。 过期后，您将需要创建新密钥对并更新配置文件中的集成。 使用选项2，您可以选择手动创建并上传具有较长过期日期的&#x200B;**[!UICONTROL Public key]**。
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
-1. 单击 **[!UICONTROL Next]**.
+1. 单击 **[!UICONTROL Next]**。
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. 选择任何现有的&#x200B;**[!UICONTROL Product profile]**，或根据需要创建新的。 此&#x200B;**[!UICONTROL Product profile]**&#x200B;不需要权限。 有关[!DNL Analytics] **[!UICONTROL Product Profiles]**&#x200B;的详细信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console)。
+1. 选择任意现有的&#x200B;**[!UICONTROL Product profile]**，或根据需要创建新的。 此&#x200B;**[!UICONTROL Product profile]**&#x200B;不需要权限。 有关[!DNL Analytics] **[!UICONTROL Product Profiles]**&#x200B;的更多信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console)。
 
    然后，单击&#x200B;**[!UICONTROL Save configured API]**。
 
@@ -91,11 +89,11 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Adobe I/O证书将在12个月后过期。 您需要每年生成新的密钥对。
+>Adobe I/O证书将在12个月后过期。 您每年需要生成一个新的密钥对。
 
-## 第2步：在Adobe Campaign{#add-credentials-campaign}中添加项目凭据
+## 步骤2:在Adobe Campaign中添加项目凭据{#add-credentials-campaign}
 
-要在Adobe Campaign中添加项目凭据，请在Adobe Campaign实例的所有容器上以“neolane”用户身份运行以下命令，以将&#x200B;**[!UICONTROL Technical Account]**&#x200B;凭据插入实例配置文件。
+要在Adobe Campaign中添加项目凭据，请在Adobe Campaign实例的所有容器上以“neolane”用户身份运行以下命令，以在实例配置文件中插入&#x200B;**[!UICONTROL Technical Account]**&#x200B;凭据。
 
 ```
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
@@ -109,13 +107,13 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 
    >[!NOTE]
    >
-   >有时，在复制/粘贴私钥时可以自动添加其他行。 请记住，在对私钥进行编码之前删除它。
+   >有时，在复制/粘贴私钥时，会自动添加额外的行。 在对私钥进行编码之前，请记得将其删除。
 
-1. 使用以base64 UTF-8格式编码的新生成的私钥运行上述详细命令。
+1. 使用新生成的以base64 UTF-8格式编码的私钥运行上述命令。
 
-## 第3步：更新流水线标记{#update-pipelined-tag}
+## 步骤3:更新管道标记{#update-pipelined-tag}
 
-要更新[!DNL pipelined]标记，您需要将身份验证类型更新为配置文件&#x200B;**config-&lt; instance-name >.xml**&#x200B;中的Adobe I/O项目，如下所示：
+要更新[!DNL pipelined]标记，您需要更新身份验证类型以Adobe I/O配置文件&#x200B;**config-&lt; instance-name >.xml**&#x200B;中的项目，如下所示：
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
