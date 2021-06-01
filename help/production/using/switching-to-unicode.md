@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 切换到 Unicode
 description: 切换到 Unicode
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4cfecf2f-cf98-42c1-b979-cdd26d5de48b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 7%
 
 ---
 
-
 # 切换到 Unicode{#switching-to-unicode}
 
-对于Linux/PostgreSQL中现有的&#x200B;**prod**&#x200B;实例，切换到unicode的步骤如下：
+对于Linux/PostgreSQL中的现有&#x200B;**prod**&#x200B;实例，切换到unicode的步骤如下：
 
-1. 停止写入数据库的进程：
+1. 停止将进程写入数据库：
 
    ```
    su - neolane
@@ -97,6 +95,5 @@ ht-degree: 7%
 
 1. 确认交换机。 为此，请通过Adobe Campaign控制台连接，并：
 
-   * 检查数据是否正确显示，尤其是突出显示的字符：
-   * 启动投放并检查跟踪检索是否有效。
-
+   * 检查数据是否正确显示，特别是强调的字符：
+   * 启动投放并检查跟踪检索是否可正常工作。
