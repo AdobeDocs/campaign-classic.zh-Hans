@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 命令行
 description: 命令行
 audience: installation
 content-type: reference
 topic-tags: appendices
-translation-type: tm+mt
-source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
+exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 4%
 
 ---
-
 
 # 命令行{#command-lines}
 
@@ -21,7 +19,7 @@ ht-degree: 4%
 
 ## 创建实例{#creating-an-instance}
 
-可以使用以下语法使用命令行执行实例创建：
+可以使用命令行使用语法执行实例创建：
 
 ```
 nlserver config -addinstance:instance/masques DNS[/lang]
@@ -29,11 +27,11 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 （其中&#x200B;**eng**&#x200B;和&#x200B;**fra**&#x200B;是`[lang]`参数的可能值）
 
-使用命令&#x200B;**nlserver config -addinstance:instance1/demo*/eng**，您可以使用DNS掩码demo*创建一个名为&#x200B;**instance1**&#x200B;的英语实例。
+使用命令&#x200B;**nlserver config -addinstance:instance1/demo*/eng**，您可以使用DNS掩码demo*创建一个名为&#x200B;**instance1**&#x200B;的英文实例。
 
 ## 声明数据库{#declaring-a-database}
 
-您可以使用以下语法将现有数据库与命令行中的实例关联：
+您可以使用以下语法从命令行将现有数据库与实例关联：
 
 ```
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
@@ -44,11 +42,10 @@ nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 * **postgresql**:对于PostgreSQL，
 * **oracle**:对于Oracle,
 * **mssql**:对于Microsoft SQL Server，
-* **DB2**:DB2引擎。
+* **DB2**:对于DB2引擎。
 
-以下命令使用SQL类型服务器（称为&#x200B;**base6**）配置&#x200B;**demo**&#x200B;实例，该服务器链接到&#x200B;**活动**&#x200B;帐户及其&#x200B;**密码**&#x200B;在&#x200B;**dbsrv**&#x200B;服务器上：
+以下命令使用SQL类型服务器&#x200B;**base6**&#x200B;配置&#x200B;**demo**&#x200B;实例，该服务器链接到&#x200B;**campaign**&#x200B;帐户及其&#x200B;**password**（位于&#x200B;**dbsrv**&#x200B;服务器上）：
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
 ```
-
