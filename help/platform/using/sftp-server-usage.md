@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: SFTP 服务器使用情况
 description: 了解有关SFTP服务器最佳实践和疑难解答的更多信息。
@@ -7,14 +6,14 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1156'
 ht-degree: 41%
 
 ---
 
-# SFTP 服务器最佳实践和疑难解答 {#sftp-server-usage}
+# SFTP 服务器最佳实践和故障排除 {#sftp-server-usage}
 
 ## SFTP服务器全局推荐{#global-recommendations}
 
