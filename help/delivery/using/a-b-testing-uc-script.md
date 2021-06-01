@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 创建脚本
-description: 了解如何通过专用的用例执行A/B测试。
+description: 了解如何通过专用用例执行A/B测试。
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
+# 创建脚本 {#step-5--creating-the-script}
 
-# 创建脚本{#step-5--creating-the-script}
-
-投放内容的选择将由脚本计算。 此脚本以最高打开率恢复有关投放的信息，并将内容复制到最终投放。
+脚本会计算用于剩余群体的投放内容的选择。 此脚本以最高打开率恢复有关投放的信息，并将内容复制到最终投放。
 
 ## 脚本{#example-of-a-script}的示例
 
-以下脚本可以像在定位工作流程中一样使用。 有关详细信息，请参阅[实施](#implementation)。
+以下脚本可以像在定位工作流中一样使用。 有关更多信息，请参阅[实施](#implementation)。
 
 ```
  // query the database to find the winner (best open rate)
@@ -69,7 +67,7 @@ ht-degree: 0%
 
 有关脚本的详细说明，请参阅[脚本的详细信息](#details-of-the-script)。
 
-## 实现{#implementation}
+## 实施 {#implementation}
 
 1. 打开&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动。
 1. 将[脚本示例](#example-of-a-script)中提供的脚本复制到&#x200B;**[!UICONTROL JavaScript code]**&#x200B;窗口中。
@@ -85,13 +83,13 @@ ht-degree: 0%
    ![](assets/use_case_abtesting_configscript_003.png)
 
 1. 关闭&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动。
-1. 保存您的工作流。
+1. 保存工作流。
 
 ## 脚本{#details-of-the-script}的详细信息
 
-本部分详细介绍了脚本的各个部分及其操作模式。
+本节详细介绍脚本的各个部分及其操作模式。
 
-* 脚本的第一部分是查询。 使用&#x200B;**queryDef**&#x200B;命令，您可以从&#x200B;**NmsDelivery**&#x200B;表中恢复通过执行定位工作流创建的投放，并根据其估计的打开率对它们进行排序，然后恢复来自打开率最高的投放的信息。
+* 脚本的第一部分是查询。 通过&#x200B;**queryDef**&#x200B;命令，您可以从&#x200B;**NmsDelivery**&#x200B;表中恢复通过执行定向工作流创建的投放，并根据其估计的打开率对其进行排序，然后恢复来自具有最高打开率的投放的信息。
 
    ```
    // query the database to find the winner (best open rate)
@@ -111,7 +109,7 @@ ht-degree: 0%
         </queryDef>).ExecuteQuery()
    ```
 
-* 打开率最高的投放是重复的。
+* 具有最高打开率的投放会重复显示。
 
    ```
     // create a new delivery object and initialize it by doing a copy of
@@ -120,14 +118,14 @@ ht-degree: 0%
    delivery.Duplicate("nms:delivery|" + winner.@id)
    ```
 
-* 将修改复制投放的标签，并将单词&#x200B;**final**&#x200B;添加到该标签中。
+* 修改了复制投放的标签，并将单词&#x200B;**final**&#x200B;添加到该标签中。
 
    ```
    // append 'final' to the delivery label
    delivery.label = winner.@label + " final"
    ```
 
-* 投放将复制到活动仪表板。
+* 投放会复制到营销活动仪表板中。
 
    ```
    // link the delivery to the operation to make sure it will be displayed in
@@ -160,14 +158,14 @@ ht-degree: 0%
 
 ## 其他选择标准{#other-selection-criteria}
 
-通过上面的示例，您可以根据电子邮件的打开率选择投放的内容。 您可以根据其他特定投放的指标调整它：
+通过以上示例，您可以根据电子邮件的打开率选择投放的内容。 您可以根据其他特定于投放的指标来调整它：
 
 * 最佳点击吞吐量：`[indicators/@recipientClickRatio]`,
-* 最高反应率（打开电子邮件并在邮件中单击）：`[indicators/@reactivity]`,
-* 最低投诉率：`[indicators/@refusedRatio]`（对sortDesc属性使用false值），
-* 最高转化率:`[indicators/@transactionRatio]`,
-* 接收消息后访问的页数：`[indicators/@totalWebPage]`,
-* 最低退订率：`[indicators/@optOutRatio]`,
-* 事务处理金额：`[indicators/@amount]`。
+* 最高反应率（电子邮件打开和在消息中点击）：`[indicators/@reactivity]`,
+* 最低投诉率：`[indicators/@refusedRatio]`（对sortDesc属性使用false值）、
+* 最高转化率：`[indicators/@transactionRatio]`,
+* 收到消息后访问的页数：`[indicators/@totalWebPage]`,
+* 退订率最低：`[indicators/@optOutRatio]`,
+* 交易金额：`[indicators/@amount]`。
 
 您现在可以定义最终投放(请参阅[步骤6:定义最终投放](../../delivery/using/a-b-testing-uc-final-delivery.md))。
