@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1092'
 ht-degree: 1%
 
 ---
@@ -181,7 +181,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 * 在两个实例上安装&#x200B;**[!UICONTROL LINE Connect]**&#x200B;包。
 * 在营销实例上安装&#x200B;**[!UICONTROL Transactional message control]**&#x200B;包，在执行实例上安装&#x200B;**[!UICONTROL Transactional message execution]**&#x200B;包。
-* 在两个实例上创建LINE **外部帐户**&#x200B;和&#x200B;**服务**，其命名与要同步的实例相同。 有关如何创建LINE外部帐户和服务的详细信息，请参阅此[page](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-)。
+* 在两个实例上创建LINE **外部帐户**&#x200B;和&#x200B;**服务**，其命名与要同步的实例相同。 有关如何创建LINE外部帐户和服务的详细信息，请参阅[此部分](../../delivery/using/line-channel.md#setting-up-line-channel)。
 
 然后，从&#x200B;**[!UICONTROL Explorer]**&#x200B;的&#x200B;**[!UICONTROL Platform]** > **[!UICONTROL External account]**&#x200B;中，您需要在两个实例上配置不同的外部帐户：
 
@@ -248,4 +248,4 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 
 
-1. 您现在可以开始创建事务型消息。 有关详细信息，请参见此 [ 页面](../../message-center/using/creating-the-message-template.md)。
+1. 您现在可以开始创建事务型消息](../../message-center/using/creating-the-message-template.md)。[
