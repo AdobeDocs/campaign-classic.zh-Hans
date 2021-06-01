@@ -1,33 +1,31 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 重新生成模式
 description: 重新生成模式
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 6%
 
 ---
 
-
 # 重新生成模式{#regenerating-schemas}
 
-当您修改模式并保存修改时，会自动生成扩展模式。 但是，您可能需要手动重新生成模式以应用修改。 操作步骤：
+修改架构并保存修改时，将自动生成扩展架构。 但是，您可能需要手动重新生成架构以应用修改。 操作步骤：
 
-1. 选择要再生的模式。
-1. 右键单击并选择&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]**。
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以确认并启动进程。
+1. 选择需要重新生成的架构。
+1. 右键单击并选择&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]** 。
+1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以确认并启动该进程。
 
-然后，您可以在“预览”和“文档”选项卡中检查生成的模式的结构。 有关详细信息，请参阅[原则](../../configuration/using/data-schemas.md#principles)部分。
+然后，您可以在“预览”和“文档”选项卡中检查生成的架构的结构。 有关更多信息，请参阅[原则](../../configuration/using/data-schemas.md#principles)一节。
 
 >[!NOTE]
 >
->如果需要强制重新生成所有模式（例如，要解决反向链接中的某些依赖关系问题），可以从Adobe Campaign应用程序服务器启动以下命令：
+>如果需要强制重新生成所有模式（例如，为了解决反向链接中的某些依赖关系问题），可以从Adobe Campaign应用程序服务器中启动以下命令：
 >
 >**nlserver config -postupgrade -instance:&#39;&lt;instance_name>&#39; -force**
 >
