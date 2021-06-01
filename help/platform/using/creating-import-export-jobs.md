@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 创建导入和导出作业
 description: 了解如何在Campaign Classic中创建导入和导出作业。
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 85c48712-3704-41db-a255-a07ca8d02ec4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
-
-# 创建导入和导出作业{#creating-import-export-jobs}
+# 创建导入和导出作业 {#creating-import-export-jobs}
 
 配置模板后，可以在Adobe Campaign的多个上下文中启动导入和导出操作。
 
-* 在Adobe Campaign工作区的&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;部分，单击&#x200B;**[!UICONTROL Jobs]**&#x200B;链接：这将带您列表现有进出口。
+* 在Adobe Campaign工作区的&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;部分，单击&#x200B;**[!UICONTROL Jobs]**&#x200B;链接：这会将您转到现有进出口的列表。
 
    单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮并选择要执行的作业类型。
 
@@ -29,12 +27,12 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_import_from_production.png)
 
-* 最后，可从Adobe Campaign浏览器启动进口和导出。
+* 最后，可从Adobe Campaign资源管理器启动导入和导出。
 
    ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
 
 
-所有这些开放数据导入或导出向导。 这些部分详细介绍了这些功能：
+所有这些打开的数据导入或导出向导。 以下各节详细介绍了这些功能：
 
 * [配置导入作业](../../platform/using/executing-import-jobs.md)
 * [配置导出作业](../../platform/using/executing-export-jobs.md)
