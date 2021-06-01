@@ -1,32 +1,30 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 配置调查
 description: 配置调查
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 387bc362-4064-4181-9385-8e0c3423ba3e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 5%
 
 ---
 
-
 # 配置调查{#configuring-surveys}
 
 ## 调查属性{#survey-properties}
 
-在线调查可完全配置和自定义，以满足您的需求。 必须在属性窗口中输入参数。
+在线调查是完全可配置和可自定义的，以满足您的要求。 必须在属性窗口中输入参数。
 
-[本节](../../web/using/defining-web-forms-properties.md)中详细介绍了可用参数。
+[此部分](../../web/using/defining-web-forms-properties.md)中详细介绍了可用参数。
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
-## 调查存储{#survey-data-storage}
+## 调查数据存储{#survey-data-storage}
 
-默认情况下，Web表单字段存储在收件人表中。 要使用其他表，请在&#x200B;**[!UICONTROL Document type]**&#x200B;字段中选择它。 通过&#x200B;**[!UICONTROL Zoom]**&#x200B;图标可视图选定表的内容。
+默认情况下，Web表单字段存储在收件人表中。 要使用其他表，请在&#x200B;**[!UICONTROL Document type]**&#x200B;字段中选择该表。 使用&#x200B;**[!UICONTROL Zoom]**&#x200B;图标可以查看所选表的内容。
 
-未存储在字段（但局部变量中）的用户提供的调查的答案存储在&#x200B;**调查的答案**&#x200B;表中。 您可以根据&#x200B;**[!UICONTROL Library]**&#x200B;字段更改所使用的模式。 此字段仅适用于&#x200B;**调查**。
+未存储在字段（但位于本地变量中）中的用户提供的调查答案存储在&#x200B;**调查答案**&#x200B;表中。 您可以根据&#x200B;**[!UICONTROL Library]**&#x200B;字段更改所使用的架构。 此字段仅适用于&#x200B;**调查**。
