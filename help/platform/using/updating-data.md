@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 更新数据
 description: 更新数据
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 86%
 
 ---
-
 
 # 更新数据{#updating-data}
 
@@ -23,7 +21,7 @@ ht-degree: 86%
 
 可通过工作流配置自动更新。如需详细信息，请参阅[此部分](../../workflow/using/update-data.md)。
 
-## 执行成批更新{#performing-a-mass-update}
+## 执行批量更新{#performing-a-mass-update}
 
 要执行手动更新，请在所选的收件人上单击鼠标右键并使用 **[!UICONTROL Actions]** 快捷菜单，或使用 **[!UICONTROL Actions]** 图标。
 
@@ -33,7 +31,7 @@ ht-degree: 86%
 
 ### 大量更新 {#mass-update}
 
-对于批量更新，请使用&#x200B;**[!UICONTROL Action > Mass update of selected lines...]**。 向导可帮助您配置并运行更新。
+要进行批量更新，请使用&#x200B;**[!UICONTROL Action > Mass update of selected lines...]**。 向导可帮助您配置并运行更新。
 
 向导的第一步是指定要更新的字段。
 
@@ -92,7 +90,7 @@ ht-degree: 86%
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   有关如何配置导出向导的详细信息，请参阅[本节](../../platform/using/executing-export-jobs.md)。
+   有关如何配置导出向导的更多信息，请参阅[此部分](../../platform/using/executing-export-jobs.md)。
 
 ## 订阅服务{#subscribing-to-a-service}
 
@@ -111,20 +109,19 @@ ht-degree: 86%
    >
    >此编辑器允许您创建新的服务：单击 **[!UICONTROL Create]** 按钮。
 
-1. 可以&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;到收件人。 可在链接到所选服务的订阅场景中配置此消息的內容。
+1. 您可以&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;发送给收件人。 可在链接到所选服务的订阅场景中配置此消息的內容。
 1. 单击 **[!UICONTROL Start]** 按钮执行订阅过程。
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
 
 可在窗口的上部监控该执行过程。可以通过 **[!UICONTROL Stop]** 按钮停止该过程。但是，已处理的收件人将被订阅。
 
-如果取消选中&#x200B;**[!UICONTROL Do not keep a trace of this job in the database]**&#x200B;选项，则可以选择（或创建）将存储此进程信息的执行文件夹。
+如果取消选中&#x200B;**[!UICONTROL Do not keep a trace of this job in the database]**&#x200B;选项，则可以选择（或创建）将存储此过程信息的执行文件夹。
 
-要检查该过程，请转到此操作所涉用户档案的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡，或转到通过&#x200B;**[!UICONTROL Profiles and Targets > Services and Subscriptions]**&#x200B;节点访问的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡。
+要检查该过程，请转到此操作所涉及收件人用户档案的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡，或转到通过&#x200B;**[!UICONTROL Profiles and Targets > Services and Subscriptions]**&#x200B;节点访问的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡。
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 
 >[!NOTE]
 >
 >如需有关创建和配置信息服务的详细信息，请参阅[此页面](../../delivery/using/managing-subscriptions.md)。
-
