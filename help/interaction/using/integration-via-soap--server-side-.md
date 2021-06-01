@@ -1,53 +1,51 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 通过 SOAP（服务器端）进行集成
 description: 通过 SOAP（服务器端）进行集成
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 3%
 
 ---
 
+# 通过SOAP（服务器端）{#integration-via-soap-server-side}进行集成
 
-# 通过SOAP（服务器端）{#integration-via-soap-server-side}集成
-
-为优惠管理提供的SOAP Web服务与Adobe Campaign中通常使用的服务不同。 您可以通过上一节中介绍的交互URL访问它们，并允许您演示或更新给定联系人的优惠。
+为选件管理提供的SOAP Web服务与Adobe Campaign中常用的服务不同。 您可以通过上一节中描述的交互URL访问这些选件，并让您展示或更新给定联系人的选件。
 
 ## 优惠建议{#offer-proposition}
 
-对于通过SOAP进行的优惠建议，添加&#x200B;**nms:pomposition#Phoned**&#x200B;命令，后跟以下参数：
+有关通过SOAP提供的建议，请添加&#x200B;**nms:compestation#Propose**&#x200B;命令，后跟以下参数：
 
 * **targetId**:收件人的主键（可以是复合键）。
-* **maxCount**:指定联系人的优惠建议数。
-* **上下文**:允许您在空间模式中添加上下文信息。如果使用的模式为&#x200B;**nms:interaction**，则应添加&#x200B;**`<empty>`**。
-* **类别**:指定优惠必须属于的类别。
-* **主题**:指定优惠必须属于的主题。
-* **uuid**:Adobe Campaign永久Cookie的值(&quot;uuid230&quot;)。
+* **maxCount**:指定联系人的选件建议数。
+* **上下文**:允许您在空间架构中添加上下文信息。如果使用的模式是&#x200B;**nms:interaction**，则应添加&#x200B;**`<empty>`**。
+* **类别**:指定选件必须属于的类别。
+* **主题**:指定选件必须属于的主题。
+* **uuid**:Adobe Campaign永久cookie的值(“uuid230”)。
 * **nli**:Adobe Campaign会话Cookie(“nlid”)的值。
-* **noProp**:使用“true”值取消激活建议插入。
+* **noProp**:使用“true”值停用建议书插入。
 
 >[!NOTE]
 >
->**targetId**&#x200B;和&#x200B;**maxCount**&#x200B;设置是强制设置。 其他则是可选的。
+>**targetId**&#x200B;和&#x200B;**maxCount**&#x200B;设置是强制设置的。 其他选项是可选的。
 
-响应查询,SOAP服务将返回以下参数：
+响应查询，SOAP服务将返回以下参数：
 
 * **interactionId**:交互的ID。
-* **陈述**:XML元素，包含命题的列表，每个命题都有自己的ID和HTML表示形式。
+* **建议**:XML元素，包含命题列表，每个命题都有自己的ID和HTML表示形式。
 
-## 优惠更新{#offer-update}
+## 选件更新{#offer-update}
 
-将&#x200B;**nms:interaction#UpdateStatus**&#x200B;命令添加到URL，后跟以下参数：
+将&#x200B;**nms:interaction#UpdateStatus**&#x200B;命令添加到URL中，然后添加以下参数：
 
-* **主张**:字符串，它包含在优惠建议期间作为输出给定的主题ID。请参阅[优惠建议](#offer-proposition)。
-* **状态**:字符串类型，它指定优惠的新状态。在&#x200B;**nms:common**&#x200B;明细列表的&#x200B;**命题状态**&#x200B;模式中列出可能的值。 例如，现成数字3与&#x200B;**Accepted**&#x200B;状态相对应。
-* **上下文**:XML元素，允许您在空间模式中添加上下文信息。如果使用的模式为&#x200B;**nms:interaction**，则应添加&#x200B;**`<empty>`**。
+* **建议**:字符串，它包含在选件建议期间作为输出给出的建议ID。请参阅[优惠建议](#offer-proposition)。
+* **状态**:字符串类型，它会指定选件的新状态。在&#x200B;**nms:common**&#x200B;模式的&#x200B;**命题状态**&#x200B;枚举中列出了可能的值。 例如，现成的数字3对应于&#x200B;**Accepted**&#x200B;状态。
+* **上下文**:XML元素，用于在空间架构中添加上下文信息。如果使用的模式是&#x200B;**nms:interaction**，则应添加&#x200B;**`<empty>`**。
 
 ## 使用SOAP调用{#example-using-a-soap-call}的示例
 
