@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 关于工作流使用案例
-description: 进一步了解可以使用Campaign Classic工作流执行的使用案例。
+title: 关于工作流用例
+description: 进一步了解使用Campaign Classic工作流可执行的用例。
 audience: workflow
 content-type: reference
 topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
-translation-type: tm+mt
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 68%
 
 ---
 
+# 关于工作流用例 {#about-workflow-use-cases}
 
-# 关于工作流使用案例 {#about-workflow-use-cases}
-
-在本节中，您将发现利用活动工作流功能的各种使用案例。
+在此部分中，您将发现利用Campaign工作流功能的各种用例。
 
 它们将帮助您发现可以使用工作流的不同上下文并响应您的需求。
 
@@ -35,7 +33,7 @@ ht-degree: 68%
 * [具有自定义日期字段的电子邮件扩充](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 * [自动完成内容创建、编辑和发布](../../delivery/using/automating-via-workflows.md#examples)
 
-## 监控 {#monitoring}
+## 监测 {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
