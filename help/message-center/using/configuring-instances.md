@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1222'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 1%
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   有关联合数据访问(FDA)的更多信息，请参阅[访问外部数据库](../../installation/using/about-fda.md)。
+   有关联合数据访问(FDA)的更多信息，请参阅[此部分](../../installation/using/about-fda.md)。
 
 1. 单击&#x200B;**[!UICONTROL Test the connection]**&#x200B;以确保控制实例和执行实例已关联。
 
@@ -162,11 +162,11 @@ ht-degree: 1%
 >
 >必须对控制实例&#x200B;**执行以下步骤**。
 
-1. 在&#x200B;**Control 1**&#x200B;控制实例中，为每个执行实例创建一个外部帐户，并在每个外部帐户中输入&#x200B;**mc1**&#x200B;运算符。 之后，将在所有执行实例上创建&#x200B;**mc1**&#x200B;运算符（请参阅[配置执行实例](#configuring-execution-instances)）。
+1. 在&#x200B;**Control 1**&#x200B;控制实例上，为每个执行实例创建一个外部帐户，并在每个外部帐户中输入&#x200B;**mc1**&#x200B;运算符。 之后，将在所有执行实例上创建&#x200B;**mc1**&#x200B;运算符（请参阅[配置执行实例](#configuring-execution-instances)）。
 
    ![](assets/messagecenter_multi_control_1.png)
 
-1. 在&#x200B;**Control 2**&#x200B;控制实例中，为每个执行实例创建一个外部帐户，并在每个外部帐户中输入&#x200B;**mc2**&#x200B;运算符。 之后，将在所有执行实例上创建&#x200B;**mc2**&#x200B;运算符（请参阅[配置执行实例](#configuring-execution-instances)）。
+1. 在&#x200B;**Control 2**&#x200B;控制实例上，为每个执行实例创建一个外部帐户，并在每个外部帐户中输入&#x200B;**mc2**&#x200B;运算符。 之后，将在所有执行实例上创建&#x200B;**mc2**&#x200B;运算符（请参阅[配置执行实例](#configuring-execution-instances)）。
 
    ![](assets/messagecenter_multi_control_2.png)
 
