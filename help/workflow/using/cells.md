@@ -1,31 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 单元格
 description: 单元格
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 8%
 
 ---
 
-
 # 单元格{#cells}
 
-**[!UICONTROL Cells]**&#x200B;活动以数据列的形式提供各种子集的视图。 它便于进行子集操作，还旨在鼓励个性化可能性。
+**[!UICONTROL Cells]**&#x200B;活动以数据列的形式提供了各种子集的视图。 它有助于处理子集，还可鼓励实现个性化。
 
 ![](assets/wf_split_cells.png)
 
-可以配置此活动，以根据用户需求输入特定参数。 默认情况下，每个子集的详细信息都会通过&#x200B;**[!UICONTROL Selection]**&#x200B;和&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡在专用窗口中详细显示。 在以下示例中，表单已被修改：已添加&#x200B;**[!UICONTROL Data]**&#x200B;选项卡，以启用优惠与每个子集的优先级的关联。
+此活动可配置为根据用户需求输入特定参数。 默认情况下，每个子集的详细信息会通过&#x200B;**[!UICONTROL Selection]**&#x200B;和&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡在专用窗口中详细列出。 在以下示例中，表单已被修改：添加了&#x200B;**[!UICONTROL Data]**&#x200B;选项卡，以启用选件的关联和每个子集的优先级。
 
 ![](assets/wf_split_cells_with_customization.png)
 
-对于此配置，以下信息已添加到工作流表单(在Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Configurations > Input forms]**&#x200B;节点中):
+对于此配置，向工作流表单中添加了以下信息(位于Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Configurations > Input forms]**&#x200B;节点中):
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
@@ -50,4 +48,4 @@ ht-degree: 8%
                 </container>
 ```
 
-Adobe Campaign中的入门级表单个性化是专家用户专用的。 有关更多信息，请参阅此](../../configuration/using/identifying-a-form.md)章节[。
+Adobe Campaign中的登录表单个性化是专家用户保留的内容。 有关更多信息，请参阅此](../../configuration/using/identifying-a-form.md)章节[。
