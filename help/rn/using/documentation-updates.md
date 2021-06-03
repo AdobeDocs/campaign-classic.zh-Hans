@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
 workflow-type: tm+mt
 source-wordcount: '4396'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -25,19 +25,19 @@ ht-degree: 98%
 
 ## 2021 年 5 月 {#may-2021}
 
-工作流热图报表文档已更新和改进。 [阅读更多](../../workflow/using/heatmap.md)
+已更新和改进工作流热图报表文档。[阅读更多](../../workflow/using/heatmap.md)
 
-兼容性矩阵中更新了Campaign客户端控制台要求。 [阅读更多](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+兼容性矩阵中更新了 Campaign 客户端控制台要求。[阅读更多](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
-已改进并阐明Campaign客户端控制台的步骤安装。 [阅读更多](../../installation/using/installing-the-client-console.md)
+已改进并阐明 Campaign 客户端控制台的安装步骤。[阅读更多](../../installation/using/installing-the-client-console.md)
 
-已创建有关跟踪的URL签名问题的新技术说明。 [阅读更多](../../technotes/tracked-urls.md)
+已创建有关跟踪 URL 签名问题的新技术说明。[阅读更多](../../technotes/tracked-urls.md)
 
 ## 2021 年 4 月 {#april-2021}
 
 新增的一个小节介绍了如何使用 Adobe Experience Platform Sources 与 Destinations 在 Campaign Classic 和 Adobe 实时客户数据平台 (RTCDP) 之间共享数据。[阅读更多](../../integrations/using/get-started-sources-destinations.md)
 
-已创建一项新技术说明，以了解如何在ISP中断后更新退回资格。 [阅读更多](../../delivery/using/update-bounce-qualification.md)
+已创建一条新的技术说明，以说明如何在 ISP 中断后更新弹回限定条件。[阅读更多](../../delivery/using/update-bounce-qualification.md)
 
 ## 2021 年 3 月 {#march-2021}
 
