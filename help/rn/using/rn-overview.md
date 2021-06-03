@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,9 +37,9 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ![](assets/do-not-localize/red3.png) **已弃用** -无部署。必须升级现有实施。
 
-## 建议{#recommendations}
+## 推荐{#recommendations}
 
-为确保配置稳定，建议您在同一客户端配置上运行的所有服务器上安装相同的稳定内部版本。
+为确保配置稳定，建议您在同一客户端配置上运行的所有服务器上安装相同的稳定版本。
 
 此外，客户端控制台应与服务器实例位于同一版本。
 
@@ -58,11 +58,11 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 >[!NOTE]
 >[GA 兼容性矩阵](../../rn/using/compatibility-matrix-gs.md)中提供了 [!DNL Gold Standard] 的兼容性矩阵。
 
-## 支持和其他有用链接{#support}
+## 支持以及其他有用链接{#support}
 
 * [帮助与支持](../../support.md)
-* [控制面板版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)
+* [控制面板版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hans)
 * [最新文档更新](../../rn/using/documentation-updates.md)
 * [已弃用和已删除的功能](../../rn/using/deprecated-features.md)
 
-要获悉新的 Experience Cloud 解决方案版本，请订阅 [Adobe 优先产品更新](https://www.adobe.com/subscription/priority-product-update.html)。
+要获悉新的 Experience Cloud 解决方案版本，请订阅 [Adobe 优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html)。
