@@ -6,9 +6,9 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
 workflow-type: tm+mt
-source-wordcount: '4367'
+source-wordcount: '4396'
 ht-degree: 98%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 98%
 本页列出了每月所有新增功能和文档更新以及 Campaign 版本。
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
+
+## 2021 年 6 月 {#june-2021}
+
+**事务型消息传递**&#x200B;部分已重组并阐明了新的入门部分，包括[增强的架构](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更好地了解该过程。 [阅读更多](../../message-center/using/about-transactional-messaging.md)
 
 ## 2021 年 5 月 {#may-2021}
 
