@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: b99de2a47bac08578d6e660595eb14c0858bf9fd
+source-git-commit: c095d7ddde4b4ac23467ebd0fa8ee2fb613aacdc
 workflow-type: tm+mt
-source-wordcount: '3961'
+source-wordcount: '3941'
 ht-degree: 0%
 
 ---
@@ -51,10 +51,6 @@ ht-degree: 0%
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
    <td> 要将测试地址用于收件箱呈现的架构列表。 （元素名称之间用逗号分隔）例如：custom_nms_recipient.<br /> </td> 
   </tr> 
-  <tr> 
-   <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
-   <td> Enhanced MTA将向其发送已发送电子邮件原始副本的密件抄送电子邮件地址。<br /> </td> 
-  </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
    <td><p> 如果指定了特定的运算符或一组运算符以在投放的属性中开始投放，则允许负责投放的运算符确认发送。</p><p> 为此，请输入“1”作为值以激活选项。 要取消激活此选项，请输入“0”。</p><p> 然后，发送确认流程将起默认作用：只有在投放属性（或管理员）中为发送指定的操作员或操作员组才能确认和执行发送。 请参阅<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">此小节</a>。</p> </td> 
