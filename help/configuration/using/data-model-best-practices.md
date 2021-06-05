@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '4009'
+source-wordcount: '4013'
 ht-degree: 1%
 
 ---
@@ -105,7 +105,7 @@ Adobe Campaign资源具有三个标识符，并且可以添加其他标识符。
 | 标识符 | 说明 | 最佳实践 |
 |--- |--- |--- |
 | Id | <ul><li>ID是Adobe Campaign表的物理主键。 对于现成表，它是从序列中生成的32位数</li><li>此标识符通常对特定Adobe Campaign实例是唯一的。 </li><li>自动生成的ID可在架构定义中可见。 搜索&#x200B;*autopk=&quot;true&quot;*&#x200B;属性。</li></ul> | <ul><li>自动生成的标识符不应用作工作流或包定义中的引用。</li><li>不应假定ID将始终为递增数。</li><li>现成表中的id是32位数字，不应更改此类型。 此编号取自同名部分中涵盖的“序列”。</li></ul> |
-| 名称（或内部名称） | <ul><li>此信息是表中记录的唯一标识符。 此值可手动更新，通常使用生成的名称。</li><li>此标识符在部署到其他Adobe Campaign实例时会保留其值，它不应为空。</li></ul> | <ul><li>如果要将Adobe Campaign生成的对象从环境部署到另一个环境，请重命名该记录名称。</li><li>当对象具有命名空间属性（例如&#x200B;*schema*）时，此通用命名空间将用于所有创建的自定义对象。 不应使用某些保留的命名空间：*nms*、*xtk*。</li><li>当对象没有任何命名空间（例如&#x200B;*workflow*&#x200B;或&#x200B;*delivery*）时，将添加此命名空间概念作为内部名称对象的前缀：*namespaceMyObjectName*。</li><li>请勿使用特殊字符，如空格“”、半列“：”或连字符“ — ”。 所有这些字符都将替换为下划线“_”（允许的字符）。 例如，“abc-def”和“abc:def”将存储为“abc_def”并相互覆盖。</li></ul> |
+| 名称（或内部名称） | <ul><li>此信息是表中记录的唯一标识符。 此值可手动更新，通常使用生成的名称。</li><li>此标识符在部署到其他Adobe Campaign实例时会保留其值，它不应为空。</li></ul> | <ul><li>如果要将Adobe Campaign生成的对象从环境部署到另一个环境，请重命名该记录名称。</li><li>当对象具有命名空间属性（例如&#x200B;*schema*）时，此通用命名空间将用于所有创建的自定义对象。 不应使用某些保留的命名空间：*nms*、*xtk*、*nl*、*ncl*、*crm*、*xxl*。</li><li>当对象没有任何命名空间（例如&#x200B;*workflow*&#x200B;或&#x200B;*delivery*）时，将添加此命名空间概念作为内部名称对象的前缀：*namespaceMyObjectName*。</li><li>请勿使用特殊字符，如空格“”、半列“：”或连字符“ — ”。 所有这些字符都将替换为下划线“_”（允许的字符）。 例如，“abc-def”和“abc:def”将存储为“abc_def”并相互覆盖。</li></ul> |
 | 标签 | <ul><li>标签是Adobe Campaign中对象或记录的业务标识符。</li><li>此对象允许使用空格和特殊字符。</li><li>它不保证记录的唯一性。</li></ul> | <ul><li>建议确定对象标签的结构。</li><li>这是用于为Adobe Campaign用户标识记录或对象的最易用的解决方案。</li></ul> |
 
 ## 自定义内部键{#custom-internal-keys}
