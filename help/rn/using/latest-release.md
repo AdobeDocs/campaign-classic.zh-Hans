@@ -6,10 +6,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 52%
 
 ---
 
@@ -21,7 +21,144 @@ ht-degree: 100%
 >
 >Campaign **正式发布 (GA) 内部版本**&#x200B;为：[[!DNL Gold Standard]  11 版](../../rn/using/gold-standard.md#gs-11)和 [Campaign 20.2.5 版](../../rn/using/release--20-2.md)。
 
-## ![](assets/do-not-localize/blue_2.png) 21.1.2 版 - 内部版本 9282 {#release-21-1-2-build-9282}
+## ![](assets/do-not-localize/blue_2.png) 21.1.3 版 - 内部版本 9330 {#release-21-1-3-build-9330}
+
+_2021年6月4日_
+
+**新增功能**
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Orchestration集成</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Orchestration与Adobe Campaign Classic之间的集成现已正式启用。 它允许Journey Orchestration使用Adobe Campaign Classic事务型消息传送功能发送电子邮件、推送通知和短信。</p>
+<p>Journey Orchestration实例和Campaign Classic实例之间的连接是在预配时通过Adobe来设置的。</p>
+<p>有关更多信息，请参阅<a href="https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html">Journey Orchestration文档</a>。 此<a href="https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html">部分</a>中提供了分步使用案例</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>LINE渠道增强</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>已向LINE渠道添加以下改进：
+</p>
+<ul> 
+<li><p>支持LINE视频消息类型</p></li>
+<li><p>支持LINE合作伙伴注册API</p></li>
+<li><p>支持在出现LINE服务器端错误或网络超时时重试发送消息</p></li>
+</ul>
+<p>有关更多信息，请参阅<a href="../../delivery/using/line-channel.md">详细文档</a>。</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Vertica FDA连接器</strong><br/> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>您现在可以将Adobe Campaign Classic实例连接到Vertica外部数据库。 此连接通过新的外部帐户管理。</p>
+<p>有关更多信息，请参阅<a href="../../installation/using/configure-fda-vertica.md">详细文档</a>。</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Google Big Query FDA连接器</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>您现在可以将Adobe Campaign Classic实例连接到Google Big Query外部数据库。 此连接通过新的外部帐户管理。
+</p>
+<p>有关更多信息，请参阅<a href="../../installation/using/configure-fda-google-big-query.md">详细文档</a>。</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**安全性增强**
+
+* 现在，对&#x200B;**xtk:session#GetCnxInfo**&#x200B;返回完整数据库连接详细信息的API方法的访问权限仅限于管理员用户。 (NEO-27779)
+* 已弃用的decryptString函数在与CRM相关的JavaScript文件中替换为decryptPassword函数。
+* 跟踪签名功能已得到改进，以在第三方工具（电子邮件客户端、Internet浏览器、安全链接安全工具）修改跟踪链接时降低跟踪重定向错误的风险。
+* 修复了在包含大写字符时，可能会阻止跟踪的URL正常工作的问题。 跟踪的URL签名机制现在区分大小写。 (NEO-28414)
+
+**兼容性更新**
+
+Campaign 现在支持以下系统：
+* Google Big Query FDA连接器
+* Vertica FDA连接器
+* PostgreSQL 13
+
+在 [Campaign 兼容性矩阵](../../rn/using/compatibility-matrix.md)中了解详情。
+
+**已弃用的功能**
+
+* 从Campaign 21.1版本开始，弃用Adobe Analytics Data Connector。 如果您使用的是此连接器，则需要使用新连接器Adobe Analytics连接器相应地调整实施。
+有关更多信息，请参阅[详细文档](../../platform/using/adobe-analytics-connector.md)。
+* 现已弃用对Debian 8的支持。
+* 在20.3中弃用OracleCRM后，已从界面中删除相关的外部帐户。
+
+在[已弃用和已删除的功能页面](../../rn/using/deprecated-features.md)中了解详情。
+
+**改进**
+
+* 在保存工作流时，已添加额外的检查，以确保活动名称是唯一的，且过渡后始终有活动。
+* **账单（帐单）**&#x200B;技术工作流现在包括最初由&#x200B;**活动账单用户档案数**(billingActiveContactCount)工作流执行的任务，该工作流已被删除。 工作流每月发送的电子邮件报表现在将提供有关实例上活动用户档案数的信息。 [阅读更多](../../workflow/using/about-technical-workflows.md)。
+* 添加了新的&#x200B;**_keyOnMData**&#x200B;属性，以便能够对Memo数据使用键。
+
+**其他变更**
+
+* 适用于Windows的openssl第三方已更新至版本1.1.1h。
+* 在Debian包描述中，nlserver已更改为Adobe Campaign Classic服务器。
+
+**修补程序**
+
+* 修复了在编辑会话超时时的问题，即使用户在设定的时间后仍保持登录状态，也会在特定时间段后注销用户。
+* 修复了投放显示为只读，但仍可以在投放属性中进行编辑的问题。
+* 修复了在设计Web应用程序时导致编辑工具栏消失的错误。
+* 修复了在添加指向电子邮件的链接时显示带有Adobe Campaign Classic标题的电子邮件文本版本的错误。 (NEO-29211
+* 使用HTTP上的FDA连接时， **中间源（投放日志）**(defaultMidSourcingLog)工作流在&#x200B;**NmsMidSourcing_LogsPeriodHour**&#x200B;选项设置的时间范围内卡住。 这将阻止记录使用此设置的时间范围后发生的数据进行更新。 (NEO-30833)
+* 修复了执行消息中心同步工作流后发生的问题。 每次将投放对象文件夹移动到自定义文件夹时，工作流都会将投放移回通用的&#x200B;**Transactional message history**&#x200B;文件夹。 (NEO-27445)
+* 修复了在尝试显示&#x200B;**广播统计信息**、**跟踪指示器**&#x200B;和&#x200B;**共享活动统计信息**&#x200B;报表时显示错误消息的问题。
+* **Oracle按需**&#x200B;工作流活动已在弃用OracleCRM连接器后从界面中删除。
+* 修复了在每日重新启动工作流服务器(wfserver)模块后停止执行处理工作流的问题。 (NEO-30047)
+* 修复了MX管理文档无法更新的问题，该问题可能会对IP声誉造成负面影响。 (NEO-29897)
+* 修复了在收到SOAP调用时导致Web进程崩溃的问题。 (NEO-28796)(NEO-29600)
+* 修复了导致SAP HANAFDA索引创建失败的问题。 (NEO-29664)
+* 修复了在执行包含标头的SOAP调用时，可能会将事务型消息保留为&#x200B;**Waiting**&#x200B;状态的问题。 (NEO-28737)
+* 修复了使用TeradataFDA连接器时出现的问题：所有临时表都只在群集的一个节点上创建，这最终会消耗整个短管空间并导致Teradata崩溃。 现在，临时表在许多节点上生成。 (NEO-28230)
+* 修复了在使用Web应用程序时导致跟踪标记在&#x200B;**nms:trackingURL**&#x200B;模式中生成不正确的主键的问题。 (NEO-27931)
+* 与ODBC 3.x的兼容性已得到增强，可确保错误消息的准确性。
+* 修复了在电子邮件投放中使用自定义内容模板时可能导致控制台崩溃的问题。 (NEO-31547)
+* 修复了由于连接缓慢或响应大小过大，Tomcat无法发送有效响应的问题。
+* 修复了从PostgreSQL数据库读取UUID时可能发生的问题。
+* 修复了在搜索与选件关联的建议数据时可能导致性能问题的问题。 (NEO-27554)
+* 修复了在激活IMS服务但未响应时导致Web进程未响应的问题。
+* 修复了由于投放个性化失败的特定加入机制，阻止您发送包含一组校样的投放的问题。 (NEO-14391)
+* 修复了在查询和扩充活动定向投放表时，无法通过警报活动发送警报的问题。 (NEO-25157)
+
+## ![](assets/do-not-localize/red_2.png) 21.1.2 版 - 内部版本 9282 {#release-21-1-2-build-9282}
 
 _2021 年 4 月 15 日_
 
