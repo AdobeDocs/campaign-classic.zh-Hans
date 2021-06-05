@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Adobe Campaign依赖于一组可协同工作的服务器端进程。
 
 * 跟踪：恢复和整合跟踪日志。 它允许您从重定向服务器中检索日志，并创建报告模块使用的聚合指示器。
 * 清理：数据库清理。 用于清除旧记录并避免数据库呈指数级增长。
-* 账单：自动发送平台的活动报表（数据库大小、营销操作数量等）。
+* 账单：自动发送平台的活动报表（数据库大小、营销操作数、活动用户档案数等）。
 
 **投放服务器** (nlserver mta)
 
