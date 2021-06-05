@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '381'
 ht-degree: 7%
 
 ---
@@ -74,18 +74,13 @@ ht-degree: 7%
 
 命名空间允许您按关注区域对一组架构进行分组。 例如， **cus**&#x200B;命名空间用于特定于客户的配置(**customers**)。
 
+架构的标识键是使用命名空间和名称以冒号分隔的字符串；例如：**cus:recipient**。
+
 >[!IMPORTANT]
 >
->作为标准，命名空间的名称必须简洁明了，并且必须只包含根据XML命名规则授权的字符。
+>命名空间的名称必须简洁明了，且必须仅包含符合XML命名规则的授权字符。
 >
 >标识符不得以数字字符开头。
+>
+>以下命名空间是保留的，用于描述操作Adobe Campaign应用程序所需的系统实体，但不得使用：**xtk**、**nl**、**nms**、**ncm**、**temp**、**ncl**、**crm**、**xl**。
 
-某些命名空间保留用于对Adobe Campaign应用程序操作所需的系统实体的描述：
-
-* **xtk**:关于平台系统数据，
-* **nl**:关于申请的整体使用，
-* **nms**:投放（收件人、投放、跟踪等），
-* **ncm**:内容管理方面，
-* **临时**:为临时架构保留。
-
-架构的标识键是使用命名空间和名称以冒号分隔的字符串；例如：**cus:recipient**。
