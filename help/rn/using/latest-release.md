@@ -6,9 +6,9 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 28083eb0271c8c148955fa33978479dc3683eaed
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1953'
 ht-degree: 52%
 
 ---
@@ -23,14 +23,14 @@ ht-degree: 52%
 
 ## ![](assets/do-not-localize/blue_2.png) 21.1.3 版 - 内部版本 9330 {#release-21-1-3-build-9330}
 
-_2021年6月4日_
+_2021年6月5日_
 
 **新增功能**
 
 <table>
 <thead>
 <tr>
-<th><strong>Journey Orchestration集成</strong><br/></th>
+<th><strong>与Adobe集成Journey Orchestration</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -47,7 +47,7 @@ _2021年6月4日_
 <table> 
 <thead>
 <tr> 
-<th> <strong>LINE渠道增强</strong><br /> </th> 
+<th> <strong>LINE渠道增强功能</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
