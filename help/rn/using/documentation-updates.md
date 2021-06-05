@@ -6,10 +6,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: fc40dae282c045dd73547e34ea307297f64c66fa
 workflow-type: tm+mt
-source-wordcount: '4421'
-ht-degree: 98%
+source-wordcount: '4470'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +23,18 @@ ht-degree: 98%
 
 **事务型消息传递**&#x200B;部分已重组并阐明了新的入门部分，包括[增强的架构](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更好地了解该过程。 [阅读更多](../../message-center/using/about-transactional-messaging.md)
 
+**随 21.1.3 版提供的文档更新**
+
+与AdobeJourney Orchestration集成 — [了解详情](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html)。 [此页面](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html)中提供了分步使用案例
+
+LINE渠道增强 — [了解详情](../../delivery/using/line-channel.md)
+
+新的Vertica FDA连接器 — [了解详情](../../installation/using/configure-fda-vertica.md)
+
+新的Google Big Query FDA连接器 — [了解详情](../../installation/using/configure-fda-google-big-query.md)
+
+“帐单（帐单）”技术工作流描述现在包括最初由“有效帐单配置文件数(billingActiveContactCount)”执行的任务。 [阅读更多](../../workflow/using/about-technical-workflows.md)
+
 ## 2021 年 5 月 {#may-2021}
 
 已更新和改进工作流热图报表文档。[阅读更多](../../workflow/using/heatmap.md)
@@ -32,10 +44,6 @@ ht-degree: 98%
 已改进并阐明 Campaign 客户端控制台的安装步骤。[阅读更多](../../installation/using/installing-the-client-console.md)
 
 已创建有关跟踪 URL 签名问题的新技术说明。[阅读更多](../../technotes/tracked-urls.md)
-
-**随 21.1.3 版提供的文档更新**
-
-“帐单（帐单）”技术工作流描述现在包括最初由“有效帐单配置文件数(billingActiveContactCount)”执行的任务。 [阅读更多](../../workflow/using/about-technical-workflows.md)
 
 ## 2021 年 4 月 {#april-2021}
 
