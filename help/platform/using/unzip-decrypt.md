@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6f5e91a719553fbeb97811d30ce6318f857bec80
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '722'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,7 @@ Adobe Campaign允许您导入压缩或加密的文件。 在[数据加载（文�
 
 要实现此目的，请执行以下操作：
 
-1. 使用[控制面板](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)生成公钥/私钥对。
+1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)生成公钥/私钥对。
 
    >[!NOTE]
    >
@@ -54,7 +54,7 @@ Adobe Campaign允许您导入压缩或加密的文件。 在[数据加载（文�
 
 执行此用例的步骤如下：
 
-1. 使用控制面板生成密钥对（公共/专用）。 [控制面板文档](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)中提供了详细步骤。
+1. 使用控制面板生成密钥对（公共/专用）。 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)中提供了详细步骤。
 
    * 公钥将与外部系统共享，外部系统将使用公钥加密要发送到Campaign的数据。
    * Campaign Classic将使用私钥解密传入的加密数据。
