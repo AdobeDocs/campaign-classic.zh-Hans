@@ -6,10 +6,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: da699fbba527a44a048d5562a8311e70c00f74fd
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 100%
+source-wordcount: '1629'
+ht-degree: 95%
 
 ---
 
@@ -42,6 +42,13 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <td><strong>替换</strong></td>
   </tr>
     <tr>
+  <td>Adobe Analytics 数据连接器<br></td>
+   <td><p>从Campaign 21.1版本开始，弃用Adobe Analytics Data Connector。</p>
+   <p>如果您使用的是此连接器，则需要相应地调整实施。<a href="../../platform/using/adobe-analytics-connector.md">了解详情</a></p>
+  <p><em>目标移除日期：2022 年</em></p>
+  </td>
+ </tr>
+    <tr>
   <td>技术可投放性监视报告<br></td>
    <td><p>从 Campaign 21.1 版本开始，弃用了“技术可投放性监视报告”功能。</p>
    <p>如果需要，您仍可以每天通过电子邮件接收此报告，直到功能被移除的那天。如需申请，请打开一个具体的<a href="https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">支持案例</a>，并指明实例的名称和用于接收报告的电子邮件地址。</p> 
@@ -50,59 +57,12 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </td>
  </tr>
   <tr>
-  <td>CRM 连接器<br></td>
-   <td><p>从 Campaign 20.3 版本开始，Campaign 弃用以下 CRM 连接器：</p>
-   <ul>
-   <li>Soap API - 本地：2007、2015、2016</li>
-   <li>Soap API - 在线：2015、2016</li>
-   <li>Web API - Microsoft Dynamics CRM 本地版：2016 或 2016 Update 1</li>
-   <li>Web API - Microsoft Dynamics CRM 联机版：2016 或 2016 Update 1</li>
-   <li>Oracle On Demand API</li>
-   </ul>
-  <p><em>目标删除日期：2021 年 5 月</em></p>
-  </td>
- </tr>
-  <tr>
-  <td>iOS 旧版二进制<br></td>
-  <td><p>从 Campaign 20.3 版本开始，弃用 iOS 旧版二进制连接器。<p>
-  <p> 如果您使用的是此连接器，则需要相应地调整实施。<a href="https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html">了解详情</a></p>
-  <p><em>目标删除日期：2021 年 5 月</em></p>
-  </td>
- </tr>
-   <tr>
-  <td>Demdex 域<br></td>
-  <td><p> 从 Campaign 20.3 版本开始，弃用用于将受众导入和导出到 Adobe Experience Cloud 的 demdex 域。<p>
-  <p>如果您是将 demdex 域用于导入/导出外部帐户，则需要相应地调整实施。<a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">了解详情</a></p> 
-  <p><em>目标删除日期：2021 年 5 月</em></p>
-  </td>
-  <tr>
   <td>Oauth 身份验证（OAuth 和 JWT）<br></td>
   <td><p> 从 Campaign 20.3 版本开始，最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成身份验证现已更改并移至 Adobe I/O。 <p>
   <p>如果您使用的是 Triggers 集成，则需要相应地调整实施。<a href="../../integrations/using/configuring-adobe-io.md">了解详情</a></p> 
   <p>有关 Oauth 身份验证折旧的详细信息，请参阅此<a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">页面</a></p> 
   <p><em>目标删除日期：2021 年 11 月</em></p>
   </td>
-  </tr>
-  <td>SMS 连接器<br></td>
-  <td><p> 从 Campaign 20.2 版本开始，弃用以下 SMS 连接器。<p>
-   <ul>
-   <li>通用 SMPP（支持二进制模式的 SMPP 版本 3.4）</li>
-   <li>Sybase365 (SAP SMS 365)</li>
-   <li>CLX 通信</li>
-   <li>Tele2</li>
-   <li>O2</li>
-   <li>iOS</li>
-   </ul>
-  <p>如果您使用其中一个连接器，您需要相应地调整实施。<a href="../../delivery/using/sms-channel.md">了解详情</a></p> 
-  <p>请阅读<a href="../../delivery/using/unsupported-connector-migration.md">此技术说明</a>，了解如何迁移旧版连接器。</p>
-  <p><em>目标删除日期：2021 年 5 月</em></p>
-  </td> 
- </tr>
-  <tr>  
-   <td>传真渠道<br></td>
-   <td><p>从 Campaign 20.2 版本开始，弃用传真渠道。</p> 
-   <p>如果您使用此渠道，则需要相应地调整实施。<a href="../../delivery/using/steps-about-delivery-creation-steps.md">进一步了解</a> Campaign 渠道。</p>
-   <p><em>目标删除日期：2021 年 5 月</em></p></td>
   </tr>
  </tbody> 
 </table>
@@ -112,11 +72,20 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
 本部分列出从 Campaign Classic 中移除的特性和功能。
 
 <table> 
- <tbody> 
+ <tbody>
   <tr> 
    <td><strong>区域 - 功能</strong></td>
    <td><strong>替换</strong></td> 
-  </tr> 
+  </tr>
+  <tr>  
+   <td>传真渠道<br></td>
+   <td><p>从Campaign 21.1.3版本开始，传真渠道不再可用。 <a href="../../delivery/using/steps-about-delivery-creation-steps.md">了解详情</a></p>
+  <tr>
+  <td>Demdex 域<br></td>
+  <td><p> 从Campaign 21.1.3版本开始，用于将受众导入和导出到Adobe Experience Cloud的demdex域不再可用。 <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">了解详情</a></p> 
+  </td>
+  </td>
+  </tr>
    <tr> 
    <td>Windows NT 身份验证<br></td>
    <td><p>从 Campaign 20.3 版本开始，在使用 Microsoft SQL Server 配置新数据库时，已从可用的身份验证方法中删除 Windows NT 身份验证。<a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">了解详情</a></p></td>
@@ -157,7 +126,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <tr> 
    <td>移动手机渠道 - LINE v1</td>
    <td>从 Campaign 18.4 版本开始，LINE Connect 包不再可用。Adobe 建议使用新的 LINE 渠道包作为替换。<a href="../../delivery/using/line-channel.md">了解详情</a></td>
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -185,8 +154,9 @@ Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因
 >[!NOTE]
 >从 Campaign 20.1版本开始，Campaign Classic 客户端控制台 32 位不再与 Campaign 最新版本兼容。您需要使用 64 位客户端控制台。
 
-
 ### 操作系统 {#o-s-eol}
+
+从21.1.3版本开始，弃用对Debian 8的支持。
 
 从 19.1 版本开始，Adobe Campaign 不再与以下操作系统兼容。
 
@@ -208,7 +178,7 @@ Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因
 从 19.1 Spring Release 开始，Adobe Campaign 不再与以下工具兼容。
 
 * Java JDK 7。[了解详情](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Libre Office 3.5 / 4.3 / 5.x，嵌入到其他工具中时除外。[了解详情](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Libre Office 3.5 / 4.3 / 5.x，嵌入到其他工具中时除外。 [了解详情](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### 数据库引擎 {#dbe-eol}
 
@@ -242,6 +212,11 @@ Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。
 * AsterData 5.0。AsterData 的生命周期已终止。[了解详情](https://en.wikipedia.org/wiki/Aster_Data_Systems)
 * Sybase IQ 15.2、15.4、15.5 和 Sybase ASE 15.0。通过联合数据访问 (FDA) 支持更新版本的 Sybase。[了解详情](https://sites.google.com/site/dbatipsandtricks/time-tracker)
 * Hadoop via HiveSQL：Hadoop 2.7.3、HiveSQL 1.2.1。Adobe Campaign Classic 仍通过联合数据访问 (FDA) 支持列出的 Hadoop via HiveSQL 版本，但这些版本与以下版本合并：HortonWorks (HDP 2.4.X、2.5.x、2.6.x）和 HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6)
+* Soap API - 本地：2007、2015、2016
+* Soap API - 在线：2015、2016
+* Web API - Microsoft Dynamics CRM 本地版：2016 或 2016 Update 1
+* Web API - Microsoft Dynamics CRM 联机版：2016 或 2016 Update 1
+* Oracle On Demand API&lt;
 
 **RDBMS 服务器**
 
@@ -251,3 +226,14 @@ Adobe Campaign 与以下 RDBMS 服务器不兼容：
 * SQL Server 2005
 * MySQL 5.1
 * DB2 UDB 9.7
+
+### SMS 连接器 {#sms-eol}
+
+Adobe Campaign与以下SMS连接器不兼容：
+
+* 通用 SMPP（支持二进制模式的 SMPP 版本 3.4）
+* Sybase365 (SAP SMS 365)
+* CLX 通信
+* Tele2
+* O2
+* iOS
