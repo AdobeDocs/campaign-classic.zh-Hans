@@ -7,15 +7,15 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 设计、规划、执行、管理和优化跨渠道营销活动，以实现较高的营销投资回报。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '2477'
+source-wordcount: '2485'
 ht-degree: 98%
 
 ---
 
 
-# Adobe Campaign Classic v7文档 {#using}
+# Adobe Campaign Classic v7 文档 {#using}
 
 + [Campaign v7 文档](campaign-classic-home.md)
 + [最近更新](rn/using/documentation-updates.md)
@@ -115,7 +115,8 @@ ht-degree: 98%
          + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
          + [与 Salesforce.com 连接](platform/using/crm-sfdc.md)
          + [与 CRM 同步数据](platform/using/crm-data-sync.md)
-      + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector.md)
+      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+      + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector-legacy.md)
    + [帮助和支持选项](support.md)
 + 创建和发送消息{#sending-messages}
    + [消息入门](delivery/using/communication-channels.md)
@@ -670,7 +671,9 @@ ht-degree: 98%
          + [最佳实践和限制](installation/using/fda-best-practices.md)
          + 配置准则 {#config-databases}
             + [配置步骤](installation/using/configure-fda.md)
+            + [配置Vertica](installation/using/configure-fda-vertica.md)
             + [配置 Snowflake](installation/using/configure-fda-snowflake.md)
+            + [配置Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [配置 Azure Synapse](installation/using/configure-fda-synapse.md)
             + [配置 Hadoop](installation/using/configure-fda-hadoop.md)
             + [配置 Oracle](installation/using/configure-fda-oracle.md)
