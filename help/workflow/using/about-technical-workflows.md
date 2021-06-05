@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 6%
+source-wordcount: '1700'
+ht-degree: 3%
 
 ---
 
@@ -60,7 +60,6 @@ ht-degree: 6%
 | **中间源（投放计数器）** (defaultMidSourcingDlv) | 传输到中间源 | 此工作流会收集中间源服务器上投放的计数信息。 计数信息包括常规投放指示器，如发送的投放数量等。 不包括打开等跟踪信息。 默认情况下，每10分钟触发一次。 |
 | **中间源（投放日志）** (defaultMidSourcingLog) | 传输到中间源 | 此工作流在中间源服务器上收集投放日志。 默认情况下，每小时触发一次。 |
 | **NMAC选择退出管理** (mobileAppOptOutMgt) | 移动应用程序渠道 | 此工作流可更新移动设备上的取消订阅通知。 从凌晨1点到午夜之间，每6小时触发一次。 有关更多详细信息，请参见[此部分](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)。 |
-| **有效计费用户档案的数量** (billingActiveContactCount) | 投放 | 此工作流计算活动用户档案的数量。 默认情况下，此工作流于每日凌晨1点触发。 “用户档案”是指代表最终客户或潜在客户的信息记录（例如 nmsRecipient 表或外部表中的记录，包含 cookie ID、客户 ID、移动标识符或与特定渠道相关的其他信息）。计费仅涉及“活动”的用户档案。 如果在过去12个月内通过任何渠道定向或传达了用户档案，则该用户档案会被视为“活动”。 Facebook 和 Twitter 渠道不包含在內。您可从 Administration > Campaign Management > Customer metrics 菜单中获得 Number of active profiles 的概要。 |
 | **选件通知** (offerMgt) | 投放 | 此工作流会将已批准的选件部署到在线环境，以及选件目录中包含的每个类别。 |
 | **暂停的工作流清理** (cleanupPausedWorkflows) | 投放 | 此工作流会分析严重性设置为正常的暂停工作流，并在暂停过长时触发警告和通知。 一个月后，将无条件停止暂停的技术工作流。 默认情况下，此工作流于每周一早上5点触发。 有关更多信息，请参阅[处理暂停的工作流](../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows)。 |
 | **隐私请求清理** (cleanupPrivacyRequests) | 隐私数据保护规定 | 此工作流会清除90天以前的访问请求文件。 |
@@ -69,7 +68,7 @@ ht-degree: 6%
 | **命题同步** （命题同步） | 具有执行实例的优惠引擎控制 | 此工作流可在用于交互的营销实例和执行实例之间同步建议。 |
 | **Web事件的恢复** (webAnalyticsGetWebEvents) | Web Analytics连接器 | 此工作流每小时会下载给定网站上Internet用户行为的区段，并将其放入Adobe Campaign数据库并启动再营销工作流。 |
 | **报表聚合** (reportingAggregates) | 投放 | 此工作流可更新报表中使用的聚合。 默认情况下，此工作流于每日凌晨2点触发。 |
-| **发送指标和促销活动属性** (webAnalyticsSendMetrics) | Web Analytics连接器 | 利用此工作流，可通过Adobe®Genesis连接器，从Adobe Campaign向Adobe Experience Cloud Suite发送电子邮件促销活动指示器。 相关指标如下：已发送(iSent)、打开总数(iTotalRecipientOpen)、已单击的收件人总数(iTotalRecipientClick)、错误(iError)、选择退出（选择退出）(iOptOut)。 |
+| **发送指标和促销活动属性** (webAnalyticsSendMetrics) | Web Analytics连接器 | 此工作流允许您通过Analytics®连接器将电子邮件促销活动指示器从Adobe Campaign发送到Adobe Experience Cloud Suite。 相关指标如下：已发送(iSent)、打开总数(iTotalRecipientOpen)、已单击的收件人总数(iTotalRecipientClick)、错误(iError)、选择退出（选择退出）(iOptOut)。 |
 | **股票：订单和警报** (stockMgt) | 营销活动（营销活动） | 此工作流会启动订单行上的库存计算并管理警告警报阈值。 |
 | **同步Facebook粉丝** (syncFacebookFans) | 社交网络（社交营销） | 此工作流会在每天早上7点将Facebook粉丝导入Adobe Campaign。 |
 | **同步Facebook页面** (syncFacebook) | 社交网络（社交营销） | 此工作流于每天早上7点将Facebook页面与Adobe Campaign同步。 |
