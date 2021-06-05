@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -189,7 +189,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> Web Analytics连接器<br /> </td> 
-   <td> 允许Adobe Campaign和Adobe Analytics通过Web Analytics连接器包进行交互。 与事务型消息（消息中心包）不兼容。 <a href="../../platform/using/adobe-analytics-data-connector.md">了解更多</a><br /> </td> 
+   <td> 允许Adobe Campaign和Adobe Analytics通过Web Analytics连接器包进行交互。 与事务型消息（消息中心包）不兼容。 <a href="../../platform/using/adobe-analytics-connector.md">了解更多</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
