@@ -6,9 +6,9 @@ feature: 概述
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '194'
 ht-degree: 8%
 
 ---
@@ -21,7 +21,7 @@ Adobe Campaign提供了多个连接器，允许您与外部应用程序通信、
 
 * FDA连接器（**联合数据访问**）允许您将Campaign连接到一个或多个外部数据库，并处理存储到这些数据库中的信息，而不会影响您的Campaign数据。 [了解详情](../../installation/using/about-fda.md)。
 * CRM连接器允许使用专用的工作流活动在Adobe Campaign与CRM解决方案之间交换数据。 [了解详情](../../platform/using/crm-connectors.md)。
-* Analytics Data Connectors(以前为&#x200B;**Adobe Genesis**)允许您在Adobe Campaign和Adobe Analytics之间共享数据。 [了解详情](../../platform/using/adobe-analytics-data-connector.md)。
+* Analytics连接器允许您在Adobe Campaign和Adobe Analytics之间共享数据。 [了解详情](../../platform/using/adobe-analytics-connector.md)。
 
 您还可以将Campaign与多个其他系统集成，例如：
 
