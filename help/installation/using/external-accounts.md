@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1540'
 ht-degree: 8%
 
 ---
@@ -259,11 +259,11 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 ## 网络分析 {#web-analytics-external-account}
 
-**[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]**&#x200B;外部帐户允许您以区段形式将数据从Adobe Analytics转发到Adobe Campaign。 相反，它会将Adobe Campaign提供的电子邮件促销活动的指标和属性发送到Adobe Analytics - Data connector。
+**[!UICONTROL Web Analytics]**&#x200B;外部帐户允许您以区段形式将数据从Adobe Analytics转发到Adobe Campaign。 相反，它会将Adobe Campaign提供的电子邮件促销活动的指标和属性发送到Adobe Analytics连接器。
 
 ![](assets/ext_account_10.png)
 
-对于此外部帐户，必须扩充跟踪URL的计算公式，并批准两个解决方案之间的连接。 有关详细信息，请参见此 [ 页面](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign)。
+对于此外部帐户，必须扩充跟踪URL的计算公式，并批准两个解决方案之间的连接。 有关详细信息，请参见此 [ 页面](../../platform/using/adobe-analytics-connector.md#external-account-classic)。
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
