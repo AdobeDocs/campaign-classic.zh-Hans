@@ -6,10 +6,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '4396'
-ht-degree: 99%
+source-wordcount: '4421'
+ht-degree: 98%
 
 ---
 
@@ -32,6 +32,10 @@ ht-degree: 99%
 已改进并阐明 Campaign 客户端控制台的安装步骤。[阅读更多](../../installation/using/installing-the-client-console.md)
 
 已创建有关跟踪 URL 签名问题的新技术说明。[阅读更多](../../technotes/tracked-urls.md)
+
+**随 21.1.3 版提供的文档更新**
+
+“帐单（帐单）”技术工作流描述现在包括最初由“有效帐单配置文件数(billingActiveContactCount)”执行的任务。 [阅读更多](../../workflow/using/about-technical-workflows.md)
 
 ## 2021 年 4 月 {#april-2021}
 
@@ -456,7 +460,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 在 Campaign Classic 中新增了用户跟踪的故障排除页面。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/classic-tracking-troubleshooting.html)。
 
-新增了 Adobe Analytics 数据连接器的最佳实践页面。[阅读有关 Adobe Analytics 数据连接器的更多信息](../../platform/using/adobe-analytics-data-connector.md)
+添加了Adobe Analytics Connector最佳实践的新页面。 [阅读有关Adobe Analytics Connector的更多信息](../../platform/using/adobe-analytics-connector.md)
 
 投放最佳实践快速入门指南已移动并更新。[阅读更多](../../delivery/using/delivery-best-practices.md)
 
@@ -534,8 +538,8 @@ Apache 配置步骤已更新。[阅读更多](../../installation/using/integrati
 添加了有关 Campaign Classic 中可用的不同外部帐户以及如何配置这些帐户的信息。
 [阅读更多](../../installation/using/external-accounts.md)
 
-更新了 Analytics 数据连接器部分以反映接口更改。
-[阅读更多](../../platform/using/adobe-analytics-data-connector.md)
+更新了“Analytics连接器”部分以反映界面更改。
+[阅读更多](../../platform/using/adobe-analytics-connector.md)
 
 添加了有关计费报告的信息。
 [阅读更多](../../production/using/monitoring-processes.md)
