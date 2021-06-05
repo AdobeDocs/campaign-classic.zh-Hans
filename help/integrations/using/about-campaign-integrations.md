@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '757'
 ht-degree: 9%
 
 ---
@@ -89,8 +89,8 @@ Adobe Experience Cloud Identity服务（ID服务）提供了一个通用的永�
    <td> <strong>Triggers核心服务</strong>与Adobe Campaign之间的集成允许您向客户发送个性化电子邮件，以对Adobe Analytics在您的网站上跟踪的特定行为作出反应。<br /> <p><a href="https://helpx.adobe.com/cn/campaign/kb/triggers-and-campaign.html">了解</a> Adobe Campaign -Experience Cloud触发器集成的更多信息。</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Adobe Analytics - Data Connectors</strong><br /> </td> 
-   <td> <strong>Data Connectors</strong> (以前称为Adobe Genesis)允许Adobe Campaign和Adobe Analytics通过与电子邮件促销活动后用户行为相关的区段进行交互。相反，它会将Adobe Campaign投放的电子邮件促销活动的指标和属性发送到Adobe Analytics - Data connector。<br /> <p><a href="../../platform/using/adobe-analytics-data-connector.md">了解</a> 有关Campaign - Data Connectors集成的更多信息。</p><br /> </td> 
+   <td> <strong>Adobe Analytics Connector</strong><br /> </td> 
+   <td> <strong>Adobe Analytics </strong> Connector允许Adobe Campaign和Adobe Analytics通过与电子邮件促销活动后用户行为相关的区段进行交互。相反，它会将Adobe Campaign投放的电子邮件促销活动的指标和属性发送到Adobe Analytics。<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">了解</a> 有关Campaign - Analytics连接器集成的更多信息。</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>
