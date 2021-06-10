@@ -6,24 +6,14 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 6%
+source-wordcount: '409'
+ht-degree: 7%
 
 ---
 
 # 最佳实践和限制
-
-## 创建临时架构{#create-temporary-schemas}
-
-您可以通过高FDA管理对Greenplum外部数据库的多次访问。 利用专用选项，可在配置外部帐户时直接创建工作模式。
-
-![](assets/fda_work_table.png)
-
->[!NOTE]
->
->此选项仅在PostgreSQL Greenplum中可用。
 
 ## 使用外部数据{#optimizing-email-personalization-with-external-data}优化电子邮件个性化
 
