@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '331'
 ht-degree: 5%
 
 ---
@@ -40,6 +40,10 @@ ht-degree: 5%
 根据您希望能够从Adobe Campaign访问的外部数据库，您需要执行特定配置。 这些配置实质上涉及在Adobe Campaign服务器上安装驱动程序并声明属于每个RDBMS的环境变量，以及配置外部帐户。
 
 请访问以下链接以了解更多信息：
+
+* 连接Campaign和[Vertica](../../installation/using/configure-fda-vertica.md)
+
+* 连接Campaign和[Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 
 * 连接Campaign和[Azure synapse](../../installation/using/configure-fda-synapse.md)
 
