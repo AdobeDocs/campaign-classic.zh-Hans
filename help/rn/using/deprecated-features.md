@@ -6,10 +6,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: da699fbba527a44a048d5562a8311e70c00f74fd
+source-git-commit: 778f0a9436f26c10b266019f761b499ab7547be1
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 95%
+source-wordcount: '1633'
+ht-degree: 94%
 
 ---
 
@@ -220,7 +220,8 @@ Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。
 
 **RDBMS 服务器**
 
-Adobe Campaign 与以下 RDBMS 服务器不兼容：
+从19.1 Spring Release开始，Adobe Campaign不再与以下RDBMS服务器兼容：
+
 * Oracle 10GR2
 * PostgreSQL 9.0 至 9.3
 * SQL Server 2005
