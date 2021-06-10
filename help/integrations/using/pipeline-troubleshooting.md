@@ -5,9 +5,9 @@ description: 配置集成
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 45a84e1bf43678bbc31d8bac15a7e6520204fdc2
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -82,3 +82,9 @@ ht-degree: 1%
 1. 在pipelined.log中查找可能导致重试的错误。 修复错误（如果适用）。
 1. 检查[!DNL pipelined]状态页以了解队列大小。 如果队列大小较大，请提高JS的性能。
 1. 由于延迟似乎随卷而增加，因此在Analytics上使用较少的消息配置触发器。
+
+**将阶段实例从旧版身份验证升级到AdobeIO身份验证**
+
+更改暂存实例上的集成身份验证不会影响生产实例的配置。 您可以选择升级您的Stage实例，然后更新身份验证以AdobeIO，并在Stage实例上测试触发器。
+
+您的生产实例将继续使用旧版身份验证，且不会受此更改的影响。
