@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1539'
 ht-degree: 8%
 
 ---
@@ -411,7 +411,7 @@ Amazon Simple Storage Service(S3)连接器可用于将数据导入或导出到Ad
 
 要了解在何处查找访问密钥ID和密钥访问密钥，请参阅Amazon Web服务[文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
 
-### Azure Blob存储(#azure-blob-external-account)
+### Azure Blob存储{#azure-blob-external-account}
 
 **Azure Blob Storage**&#x200B;外部帐户可用于使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 有关更多信息，请参阅此](../../workflow/using/file-transfer.md)章节[。
 
