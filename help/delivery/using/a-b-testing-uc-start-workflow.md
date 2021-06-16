@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 9528b67a-8ba7-45d6-a2c0-06ac117d5324
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 6%
+source-wordcount: '85'
+ht-degree: 9%
 
 ---
 
@@ -29,4 +29,4 @@ ht-degree: 6%
 
 1. 确定第三个投放的内容后，批准该目标和内容。
 
-您现在可以分析结果(请参阅[步骤8:分析结果](../../delivery/using/a-b-testing-uc-analyzing.md))。
+您现在可以分析结果。 [了解详情](a-b-testing-uc-analyzing.md)。
