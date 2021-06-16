@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 99%
@@ -90,7 +90,7 @@ Adobe Campaign 包括在不同的应用程序服务器模块之间编排所有�
 
 ## 如何发送推送通知？{#how-to-send-push-notifications-}
 
-了解如何使用 Adobe Campaign 通过应用程序向 iOS 和 Android 设备[发送个性化的推送通知](../../delivery/using/creating-notifications.md)。
+了解如何使用 Adobe Campaign 通过应用程序向 iOS 和 Android 设备[发送个性化的推送通知](../../delivery/using/create-notifications-ios.md)。
 
 ## 如何设计和分享在线调查？{#how-to-design-and-share-an-online-survey-}
 
