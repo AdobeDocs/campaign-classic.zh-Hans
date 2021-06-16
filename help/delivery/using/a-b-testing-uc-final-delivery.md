@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 7%
+source-wordcount: '108'
+ht-degree: 9%
 
 ---
 
@@ -26,4 +26,4 @@ ht-degree: 7%
 
 通过准备过渡中指定的投放（通过&#x200B;**[!UICONTROL Javascript Code]**&#x200B;活动定义），您随后将能够批准该投放并开始发送，如下一步中所述。
 
-您现在可以启动工作流(请参阅[步骤7:启动工作流](../../delivery/using/a-b-testing-uc-start-workflow.md))。
+您现在可以启动工作流。 [了解详情](a-b-testing-uc-start-workflow.md)。
