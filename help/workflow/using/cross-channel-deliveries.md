@@ -6,18 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 7%
+source-wordcount: '284'
+ht-degree: 8%
 
 ---
 
 # 跨渠道投放{#cross-channel-deliveries}
 
 营销活动工作流活动的&#x200B;**[!UICONTROL Deliveries]**&#x200B;选项卡中提供了跨渠道投放。
-
-利用渠道，可创建特定于特定渠道的投放。 您可以按照与经典投放向导相同的方式指定投放所基于的模板及其内容。
 
 可用的各种渠道包括：
 
@@ -26,12 +24,14 @@ ht-degree: 7%
 * [手机](../../delivery/using/sms-channel.md)
 * [Twitter](../../social/using/publishing-on-twitter.md)
 * [Facebook](../../social/using/publishing-on-facebook.md)
-* [iOS](../../delivery/using/creating-notifications.md#sending-notifications-on-ios)
-* [Android](../../delivery/using/creating-notifications.md#sending-notifications-on-android)
+* [iOS](../../delivery/using/create-notifications-ios.md)
+* [Android](../../delivery/using/create-notifications-android.md)
+
+选择要作为投放基础的模板并定义其内容。
 
 您可以使用不同的定位活动为工作流上游的投放指定定位。
 
-例如，我们将在此创建一个工作流，用于在一周后为推送通知订阅者发送电子邮件或短信，然后发送推送通知。 操作步骤：
+在以下示例中，我们将创建一个工作流，在一周后为推送通知订阅者发送电子邮件或短信，然后发送推送通知。 操作步骤：
 
 1. 创建营销策划.
 1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，将&#x200B;**[!UICONTROL Query]**&#x200B;添加到工作流。
@@ -39,7 +39,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >对于推送通知，请记住使用&#x200B;**订阅者应用程序**&#x200B;目标维度。
+   >对于推送通知，请使用&#x200B;**订阅者应用程序**&#x200B;目标维度。
 
    ![](assets/cross_channel_delivery_1.png)
 
