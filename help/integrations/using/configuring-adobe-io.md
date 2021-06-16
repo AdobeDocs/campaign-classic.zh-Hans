@@ -8,9 +8,9 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 934964b31c4f8f869253759eaf49961fa5589bff
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '673'
 ht-degree: 4%
 
 ---
@@ -30,11 +30,12 @@ ht-degree: 4%
 在启动此实施之前，请检查您具有：
 
 * 有效的&#x200B;**组织标识符**:Identity Management系统(IMS)组织标识符是Adobe Experience Cloud中的唯一标识符，例如用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **开发人员对贵组织的访问**。  如果您需要请求IMS组织的系统管理员权限，请按照此页面](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中详细的[过程为所有产品配置文件提供此访问权限。
+* a **开发人员对贵组织的访问**。 IMS组织的系统管理员需要遵循&#x200B;**将开发人员添加到单个产品配置文件**
+本页](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中详细的[过程，以提供与触发器关联的Adobe Analytics产品`Analytics - {tenantID}`产品配置文件的开发人员访问权限。
 
 ## 步骤1:创建/更新Adobe I/O项目{#creating-adobe-io-project}
 
-1. 访问[!DNL Adobe I/O]，然后使用IMS组织的系统管理员权限登录。
+1. 访问[!DNL Adobe I/O] ，然后使用IMS组织的开发人员访问权限登录。
 
    >[!NOTE]
    >
@@ -46,7 +47,7 @@ ht-degree: 4%
    >
    >如果您的客户端标识符为空，则可以直接&#x200B;**[!UICONTROL Create a New project]** Adobe I/O。
 
-1. 使用提取的客户端标识符标识现有项目。 查找具有与上一步中提取的客户端标识符相同的现有项目。
+1. 使用提取的客户端标识符标识现有项目。 查找具有与上一步中提取的相同客户端标识符的现有项目。
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
@@ -65,6 +66,10 @@ ht-degree: 4%
 1. 如果您的客户端ID为空，请选择&#x200B;**[!UICONTROL Generate a key pair]**&#x200B;以创建公钥和私钥对。
 
    然后，将自动下载密钥，默认到期日期为365天。 过期后，您将需要创建新密钥对并更新配置文件中的集成。 使用选项2，您可以选择手动创建并上传具有较长过期日期的&#x200B;**[!UICONTROL Public key]**。
+
+   >[!CAUTION]
+   >
+   >当出现下载提示时，您应保存config.zip文件，因为您将无法再次下载它。
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
@@ -93,28 +98,38 @@ ht-degree: 4%
 
 ## 步骤2:在Adobe Campaign中添加项目凭据{#add-credentials-campaign}
 
-要在Adobe Campaign中添加项目凭据，请在Adobe Campaign实例的所有容器上以“neolane”用户身份运行以下命令，以在实例配置文件中插入&#x200B;**[!UICONTROL Technical Account]**&#x200B;凭据。
-
-```
-nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
-```
+>[!NOTE]
+>
+>如果您的客户端标识符在[步骤1中不为空，则不需要此步骤：创建/更新Adobe I/O项目](#creating-adobe-io-project)。
 
 私钥应以base64 UTF-8格式进行编码。 为实现此操作，请执行以下步骤：
 
 1. 使用在[步骤1中生成的私钥：创建/更新Adobe I/O项目部分](#creating-adobe-io-project)。 私钥必须与用于创建集成的私钥相同。
 
-1. 使用以下命令对私钥进行编码：```base64 ./private.key```。
+1. 使用以下命令对私钥进行编码：`base64 ./private.key > private.key.base64`。 这会将base64内容保存到新文件`private.key.base64`中。
 
    >[!NOTE]
    >
    >有时，在复制/粘贴私钥时，会自动添加额外的行。 在对私钥进行编码之前，请记得将其删除。
 
-1. 使用新生成的以base64 UTF-8格式编码的私钥运行上述命令。
+1. 从文件`private.key.base64`复制内容。
+
+1. 通过SSH登录到安装了Adobe Campaign实例的每个容器，并通过以`neolane`用户身份运行以下命令在Adobe Campaign中添加项目凭据。 这将在实例配置文件中插入&#x200B;**[!UICONTROL Technical Account]**&#x200B;凭据。
+
+   ```
+   nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
+   ```
 
 ## 步骤3:更新管道标记{#update-pipelined-tag}
+
+>[!NOTE]
+>
+>如果您的客户端标识符在[步骤1中不为空，则不需要此步骤：创建/更新Adobe I/O项目](#creating-adobe-io-project)。
 
 要更新[!DNL pipelined]标记，您需要更新身份验证类型以Adobe I/O配置文件&#x200B;**config-&lt; instance-name >.xml**&#x200B;中的项目，如下所示：
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
 ```
+
+然后，运行`config -reload`并重新启动[!DNL pipelined]以便考虑所做的更改。
