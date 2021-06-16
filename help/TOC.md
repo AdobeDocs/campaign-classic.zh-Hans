@@ -1,16 +1,16 @@
 ---
 audience: end-user
-breadcrumb-title: 帮助中心
+breadcrumb-title: Campaign Classicv7文档
 product: campaign
-title: Campaign Classic 指南
+title: Campaign Classic v7 指南
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: 设计、规划、执行、管理和优化跨渠道营销活动，以实现较高的营销投资回报。
+user-guide-description: 借助Adobe Campaign，您可以通过电子邮件、移动设备、线下渠道等方式，使用丰富的客户数据创建、协调和提供客户真正想要的动态促销活动。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 98%
+source-wordcount: '2498'
+ht-degree: 97%
 
 ---
 
