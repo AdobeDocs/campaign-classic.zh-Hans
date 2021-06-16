@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 借助Adobe Campaign，您可以通过电子邮件、移动设备、线下渠道等方式，使用丰富的客户数据创建、协调和提供客户真正想要的动态促销活动。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
+source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2512'
 ht-degree: 97%
 
 ---
@@ -161,7 +161,9 @@ ht-degree: 97%
          + [应用程序配置入门](delivery/using/get-started-app-config.md)
          + [iOS 配置步骤](delivery/using/configuring-the-mobile-application.md)
          + [Android 配置步骤](delivery/using/configuring-the-mobile-application-android.md)
-      + [创建通知](delivery/using/creating-notifications.md)
+      + 创建推送通知{#create-a-push-msg}
+         + [为iOS创建推送消息](delivery/using/create-notifications-ios.md)
+         + [为Android创建推送消息](delivery/using/create-notifications-android.md)
       + [故障排除](delivery/using/troubleshooting.md)
    + 发送直邮{#sending-direct-mail}
       + [关于直邮渠道](delivery/using/about-direct-mail-channel.md)
