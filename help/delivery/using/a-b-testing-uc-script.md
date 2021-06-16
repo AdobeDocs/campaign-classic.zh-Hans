@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 1%
+source-wordcount: '330'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 脚本{#example-of-a-script}的示例
 
-以下脚本可以像在定位工作流中一样使用。 有关更多信息，请参阅[实施](#implementation)。
+以下脚本可以像在定位工作流中一样使用。 如需详细信息，请参阅[此部分](#implementation)。
 
 ```
  // query the database to find the winner (best open rate)
@@ -65,7 +65,7 @@ ht-degree: 1%
    vars.deliveryId = delivery.id
 ```
 
-有关脚本的详细说明，请参阅[脚本的详细信息](#details-of-the-script)。
+有关脚本的详细说明，请参阅[此部分](#details-of-the-script)。
 
 ## 实施 {#implementation}
 
@@ -168,4 +168,4 @@ ht-degree: 1%
 * 退订率最低：`[indicators/@optOutRatio]`,
 * 交易金额：`[indicators/@amount]`。
 
-您现在可以定义最终投放(请参阅[步骤6:定义最终投放](../../delivery/using/a-b-testing-uc-final-delivery.md))。
+您现在可以定义最终投放。 [了解详情](a-b-testing-uc-final-delivery.md)。
