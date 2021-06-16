@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 8%
+source-wordcount: '133'
+ht-degree: 10%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 您需要在营销活动的&#x200B;**[!UICONTROL Targeting and Workflows]**&#x200B;选项卡中创建工作流。 它由&#x200B;**[!UICONTROL Query]**&#x200B;活动、链接到两个&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动的&#x200B;**[!UICONTROL Split]**&#x200B;活动、**[!UICONTROL Wait]**&#x200B;活动、**[!UICONTROL JavaScript code]**&#x200B;活动和&#x200B;**[!UICONTROL Delivery]**&#x200B;活动组成。
 
-1. 如果您尚未创建营销活动，请创建营销活动（有关更多信息，请参阅此[部分](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)）。
+1. 如果您尚未创建营销活动，请创建营销活动（有关更多信息，请参阅[此部分](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)）。
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
@@ -25,7 +25,7 @@ ht-degree: 8%
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. 更改现有工作流的标签或单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建新工作流（有关更多信息，请参阅此[部分](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)）。
+1. 更改现有工作流的标签或单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建新工作流（有关更多信息，请参阅[此部分](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)）。
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
@@ -33,4 +33,4 @@ ht-degree: 8%
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 
-现在，您可以配置群体样本(请参阅[步骤2:配置群体示例](../../delivery/using/a-b-testing-uc-population-samples.md))。
+您现在可以配置群体样本。 [了解详情](a-b-testing-uc-population-samples.md)。
