@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 6%
+source-wordcount: '170'
+ht-degree: 7%
 
 ---
 
-# 配置群体示例 {#step-2--configuring-population-samples}
+# 配置人群样本 {#step-2--configuring-population-samples}
 
 ## 配置查询活动{#configuring-the-query-activity}
 
@@ -79,4 +79,4 @@ ht-degree: 6%
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-您现在可以创建两个投放模板(请参阅[步骤3:创建两个投放模板](../../delivery/using/a-b-testing-uc-delivery-templates.md))。
+您现在可以创建两个投放模板。 [了解详情](a-b-testing-uc-delivery-templates.md)).
