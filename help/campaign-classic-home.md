@@ -3,14 +3,14 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 28083eb0271c8c148955fa33978479dc3683eaed
+source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 58%
+source-wordcount: '252'
+ht-degree: 57%
 
 ---
 
-# 帮助中心 {#campaign-classic-documentation}
+# Campaign Classicv7文档{#campaign-classic-documentation}
 
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
