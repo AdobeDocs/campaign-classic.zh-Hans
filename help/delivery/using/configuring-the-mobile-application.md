@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 4%
+source-wordcount: '656'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,16 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->要了解如何配置Android应用程序以及如何创建Android投放，请参阅此[部分](../../delivery/using/configuring-the-mobile-application-android.md)。
+>要了解如何配置Android应用程序以及如何创建Android投放，请参阅此[部分](configuring-the-mobile-application-android.md)。
+
+关键步骤包括：
+
+1. [配置iOS外部帐户](#configuring-external-account-ios)
+1. [配置iOS服务](#configuring-ios-service)
+1. [在Campaign中集成iOS移动应用程序](#creating-ios-app)
+
+然后，您将能够[为iOS设备](create-notifications-ios.md)创建推送通知。
+
 
 ## 配置iOS外部帐户{#configuring-external-account-ios}
 
@@ -64,9 +73,9 @@ ht-degree: 4%
 
 1. 创建iOS开发和生产应用程序。 有关更多信息，请参阅此](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app)章节[。
 
-## 创建iOS移动应用程序{#creating-ios-app}
+## 创建iOS移动设备应用程序{#creating-ios-app}
 
-创建服务后，您现在需要创建iOS应用程序：
+创建服务后，在Campaign中创建iOS应用程序。 按照下面的步骤进行操作：
 
 1. 在您新创建的服务中，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以选择应用程序类型。
 
@@ -118,40 +127,3 @@ ht-degree: 4%
 1. 单击 **[!UICONTROL Finish]**。
 
 您的iOS应用程序现已准备就绪，可在Campaign Classic中使用。
-
-## 创建iOS富通知{#creating-ios-delivery}
-
-在iOS 10或更高版本中，可以生成富通知。 Adobe Campaign可以使用允许设备显示丰富通知的变量发送通知。
-
-现在，您需要创建新投放并将其链接到您创建的移动应用程序。
-
-1. 转到&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
-
-1. 单击 **[!UICONTROL New]**。
-
-   ![](assets/nmac_android_3.png)
-
-1. 在&#x200B;**[!UICONTROL Delivery template]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Deliver on iOS (ios)]**。 向投放中添加&#x200B;**[!UICONTROL Label]**。
-
-1. 单击&#x200B;**[!UICONTROL To]**&#x200B;以定义要定位的群体。 默认情况下，将应用&#x200B;**[!UICONTROL Subscriber application]**&#x200B;目标映射。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择我们之前创建的服务。
-
-   ![](assets/nmac_ios_9.png)
-
-1. 在&#x200B;**[!UICONTROL Target type]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
-
-1. 在&#x200B;**[!UICONTROL Service]**&#x200B;下拉列表中，选择您之前创建的服务，然后选择要定位的应用程序，然后单击&#x200B;**[!UICONTROL Finish]**。
-根据配置步骤中添加的内容，会自动添加**[!UICONTROL Application variables]**。
-
-   ![](assets/nmac_ios_6.png)
-
-1. 编辑您的富通知。
-
-   ![](assets/nmac_ios_7.png)
-
-1. 选中编辑通知窗口中的&#x200B;**[!UICONTROL Mutable content]**&#x200B;框，以允许移动应用程序下载媒体内容。
-
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;并发送投放。
-
-当在订阅者的移动iOS设备上收到图像和网页时，应在推送通知中显示。
-
-![](assets/nmac_ios_8.png)
