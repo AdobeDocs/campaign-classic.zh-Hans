@@ -6,16 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 3%
 
 ---
 
-# 创建iOS{#create-notifications-ios}通知
+# 创建iOS通知{#create-notifications-ios}
 
-本节详细介绍iOS通知交付的特定元素。 有关投放创建的全局概念，请参见[此部分](../../delivery/using/steps-about-delivery-creation-steps.md)。
+本节详细介绍iOS通知交付的特定元素。 有关投放创建的全局概念，请参见[此部分](steps-about-delivery-creation-steps.md)。
 
 首先创建新投放。
 
@@ -37,7 +37,7 @@ ht-degree: 3%
    >
    >有关个性化字段使用的更多信息，请参阅[此部分](about-personalization.md)。
    >
-   >有关包含种子列表的更多信息，请参阅[关于种子地址](../../delivery/using/about-seed-addresses.md)。
+   >有关包含种子列表的更多信息，请参阅[关于种子地址](about-seed-addresses.md)。
 
 1. 选择&#x200B;**[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**，选择与移动应用程序相关的服务（在本例中为Neotrips），然后选择应用程序的iOS版本。
 
@@ -63,7 +63,7 @@ ht-degree: 3%
    >
    >**[!UICONTROL Badge]** 和 **[!UICONTROL Alert and badge]** 类型通知允许您修改徽章的值（移动应用程序徽标上方的数字）。要刷新标记，您只需输入0作为值。 如果字段为空，则标记值不会更改。
 
-1. 单击&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;图标以将表情符号插入推送通知。 要自定义表情符号列表，请参阅[此部分](../../delivery/using/customizing-emoticon-list.md)
+1. 单击&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;图标以将表情符号插入推送通知。 要自定义表情符号列表，请参阅[此部分](customizing-emoticon-list.md)
 
 1. **[!UICONTROL Action button]**&#x200B;允许您为出现在警报通知（有效负载的&#x200B;**action_loc_key**&#x200B;字段）中的操作按钮定义标签。 如果您的iOS应用程序管理可本地化的字符串(**Localizable.strings**)，请在此字段中输入相应的键。 如果您的应用程序不管理可本地化的文本，请输入要在操作按钮上显示的标签。 有关可本地化字符串的更多信息，请参阅[Apple文档](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) 。
 1. 在&#x200B;**[!UICONTROL Play a sound]**&#x200B;字段中，选择要在收到通知时由移动终端播放的声音。
@@ -92,12 +92,12 @@ ht-degree: 3%
 
 发送消息后，您可以监控和跟踪投放内容。 有关更多信息，请参阅一下章节。
 
-* [推送通知隔离](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [监测投放](../../delivery/using/about-delivery-monitoring.md)
-* [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
+* [推送通知隔离](understanding-quarantine-management.md#push-notification-quarantines)
+* [监测投放](about-delivery-monitoring.md)
+* [了解投放失败](understanding-delivery-failures.md)
 
 
-## 创建iOS富通知{#creating-ios-delivery}
+## 创建iOS富通知 {#creating-ios-delivery}
 
 在iOS 10或更高版本中，可以生成富通知。 Adobe Campaign可以使用允许设备显示丰富通知的变量发送通知。
 
