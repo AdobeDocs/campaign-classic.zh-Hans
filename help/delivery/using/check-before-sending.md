@@ -5,26 +5,26 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
 
 ---
 
-# 在发送{#perform-all-checks}之前执行所有检查
+# 发送前执行所有检查 {#perform-all-checks}
 
 消息准备就绪后，请确保其内容在所有设备上均正确显示，并且不包含任何错误，如错误的个性化或链接损坏。
 
 在发送消息之前，还应确保参数和配置与投放一致。
 
-## 为什么验证是键{#validation-is-key}
+## 验证为何是关键 {#validation-is-key}
 
 在发送投放之前，您需要确保收件人将收到您确实希望发送的消息。 为此，您需要验证消息内容和投放参数。
 
 通过此步骤，您可以在将错误传送到主目标之前，检测并修复可能的错误。
 
-此部分](../../delivery/using/steps-validating-the-delivery.md)中介绍了验证投放的步骤。[
+此部分](steps-validating-the-delivery.md)中介绍了验证投放的步骤。[
 
 ## 收件箱呈现 {#inbox-and-email-rendering}
 
@@ -36,15 +36,15 @@ ht-degree: 4%
 
 * 收件箱呈现功能对于确定您的电子邮件促销活动是否成功超过主要ISP（互联网服务提供商）和Web邮件服务的过滤器至关重要。 此类工具会向测试收件箱网络发送电子邮件的预检副本，以便您能够查看这些服务中消息的显示或呈现方式。 它们还可能包括报表和代码更正选项，可帮助您快速识别并进行可改进投放能力的修复。
 
-在此部分](../../delivery/using/inbox-rendering.md)中了解更多[信息。
+在此部分](inbox-rendering.md)中了解更多[信息。
 
-## 校样消息{#proof-messages}
+## 校样消息 {#proof-messages}
 
 通过发送校样，您可以检查选择退订链接、镜像页面和任何其他链接、验证消息、验证图像是否显示、检测可能的错误等。 您可能还希望检查在不同设备上的设计和渲染。
 
-在此部分](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)中了解更多[信息。
+在此部分](steps-validating-the-delivery.md#sending-a-proof)中了解更多[信息。
 
-## 设置A/B测试投放{#a-b-testing-deliveries}
+## 设置A/B测试投放 {#a-b-testing-deliveries}
 
 如果您有多个用于电子邮件投放的内容，则可以使用A/B测试来确定哪个版本对目标群体的影响最大。
 
@@ -54,9 +54,9 @@ ht-degree: 4%
 
 * 选择成功率最高的，并将其发送到目标的其余部分
 
-在此部分](../../delivery/using/get-started-a-b-testing.md)中了解更多[信息。
+在此部分](get-started-a-b-testing.md)中了解更多[信息。
 
-## 确保{#make-sure-your-message-is-delivered}已传递您的消息
+## 确保消息已送达 {#make-sure-your-message-is-delivered}
 
 最后一步是，最大可能地利用Adobe Campaign Classic的力量，确保您的信息确实会传递给相关收件人。
 
@@ -66,7 +66,7 @@ ht-degree: 4%
 
 ### 使用批次
 
-您可以使用批次逐步增加发送的音量。 这样可避免将消息标记为垃圾邮件，或者希望限制每天的消息数。 使用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 在此部分](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)中了解更多[信息。
+您可以使用批次逐步增加发送的音量。 这样可避免将消息标记为垃圾邮件，或者希望限制每天的消息数。 使用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 在此部分](steps-sending-the-delivery.md#sending-using-multiple-waves)中了解更多[信息。
 
 ### 优先处理消息
 
