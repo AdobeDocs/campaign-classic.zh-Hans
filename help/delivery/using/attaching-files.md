@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 将文件附加到电子邮件{#attaching-files}
 
-## 关于电子邮件附件{#about-email-attachments}
+## 关于电子邮件附件 {#about-email-attachments}
 
 您可以将一个或多个文件附加到电子邮件投放。
 
@@ -30,9 +30,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->此类配置通常在投放模板中执行。 有关更多信息，请参阅[关于模板](../../delivery/using/about-templates.md)。
+>此类配置通常在投放模板中执行。 有关更多信息，请参阅[关于模板](about-templates.md)。
 
-## 附加本地文件{#attaching-a-local-file}
+## 附加本地文件 {#attaching-a-local-file}
 
 要将本地文件附加到投放，请执行以下步骤。
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
-## 创建计算附件{#creating-a-calculated-attachment}
+## 创建计算附件 {#creating-a-calculated-attachment}
 
 在创建计算附件时，可以在分析或传递每个消息时计算附件的名称，这取决于收件人。 也可以进行个性化并转换为PDF。
 
@@ -75,7 +75,7 @@ ht-degree: 1%
 * **文件名称在投放分析期间计算（它不能取决于收件人用户档案）**
 * **在每个收件人（取决于收件人）的投放时计算文件名**
 
-### 附加本地文件{#attach-a-local-file}
+### 附加本地文件 {#attach-a-local-file}
 
 如果附件是本地文件，请选择选项：**[!UICONTROL File name is specified when creating the delivery template]**。 将在本地选择该文件并将其上传到服务器上。 按照下面的步骤进行操作：
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 然后，该文件将在服务器上提供，用于附加到从此模板创建的不同投放。
 
-### 附加个性化消息{#attach-a-personalized-message}
+### 附加个性化消息 {#attach-a-personalized-message}
 
 选项&#x200B;**[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]**&#x200B;允许您选择具有个性化字段的文件，如目标收件人的姓氏和名字。
 
@@ -115,7 +115,7 @@ ht-degree: 1%
 >
 >为避免出现性能问题，如果您将从个性化URL动态下载的图像作为附件包含在内，则默认情况下每个图像大小不应超过100,000字节。 此建议的阈值可从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置。
 
-### 附加计算文件{#attach-a-calculated-file}
+### 附加计算文件 {#attach-a-calculated-file}
 
 您可以在投放准备期间计算附件名称。 要执行此操作，请选择选项&#x200B;**[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**。
 
@@ -138,7 +138,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
 
-### 附加个性化文件{#attach-a-personalized-file}
+### 附加个性化文件 {#attach-a-personalized-file}
 
 选择附件时，可以选择选项&#x200B;**[!UICONTROL The file name is calculated during delivery for each recipient (it can depend on the recipient)]**。 然后，您可以将收件人个性化数据与要发送的文件名称进行映射。
 
@@ -161,7 +161,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_011.png)
 
-### 附件设置{#attachment-settings}
+### 附件设置 {#attachment-settings}
 
 对于前两个选项，您可以通过选择相应的选项来选择&#x200B;**[!UICONTROL Upload file on the server]**。 **[!UICONTROL Update the file on the server]**&#x200B;链接允许您开始上传。
 
