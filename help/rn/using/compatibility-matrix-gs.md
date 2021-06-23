@@ -6,10 +6,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 9703e9d5cf0dba91d3f38d265756bdae69267c28
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '514'
+ht-degree: 97%
 
 ---
 
@@ -176,11 +176,6 @@ Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。随
 <p>API V15</p>
 </td>
 </tr>
-<tr><td>Oracle On Demand API</td>
-<td>
-<p>Web Services v1.0 API</p>
-</td>
-</tr>
 <tr>
 <td>Microsoft Dynamics</td>
 <td>
@@ -271,7 +266,7 @@ Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。随
 
 ## 客户端控制台 {#ClientConsoleoperatingsystems}
 
-警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
+:warning: 使用Campaign客户端控制台需要以下操作系统和浏览器。
 
 ### 操作系统
 
