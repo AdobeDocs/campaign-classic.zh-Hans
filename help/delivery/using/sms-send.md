@@ -6,23 +6,23 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 3%
 
 ---
 
-# 发送、监视和跟踪短信投放{#sms-properties}
+# 发送、监控和跟踪短信投放{#sms-properties}
 
-## 发送短信消息{#sending-sms-messages}
+## 发送短信消息 {#sending-sms-messages}
 
 要批准消息并将其发送给所创建投放的收件人，请单击&#x200B;**[!UICONTROL Send]**。
 
 有关验证和发送投放的详细过程，请参阅以下章节：
 
-* [验证投放](../../delivery/using/steps-validating-the-delivery.md)
-* [发送投放](../../delivery/using/steps-sending-the-delivery.md)
+* [验证投放](steps-validating-the-delivery.md)
+* [发送投放](steps-sending-the-delivery.md)
 
 ## 高级参数 {#advanced-parameters}
 
@@ -56,15 +56,15 @@ ht-degree: 3%
 
 * **每条消息的最大短信数**:利用此选项，可设置用于发送消息的短信数量。如果数字设置为0，则可以使用短信来传递消息。 例如，如果短信的数量设置为1或2，并且消息超过此阈值，则不会发送该消息。
 
-## 监控和跟踪短信{#monitoring-and-tracking-sms-deliveries}
+## 监控和跟踪短信 {#monitoring-and-tracking-sms-deliveries}
 
 发送消息后，您可以监控和跟踪投放内容。 有关更多信息，请参阅一下章节。
 
-* [监测投放](../../delivery/using/about-delivery-monitoring.md)
-* [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
-* [关于邮件跟踪](../../delivery/using/about-message-tracking.md)
+* [监测投放](about-delivery-monitoring.md)
+* [了解投放失败](understanding-delivery-failures.md)
+* [关于邮件跟踪](about-message-tracking.md)
 
-## 处理入站消息{#processing-inbound-messages}
+## 处理入站消息 {#processing-inbound-messages}
 
 **nlserver sms**&#x200B;模块定期查询SMS路由器。 这允许Adobe Campaign跟踪投放进度并处理状态报告和收件人退订请求。
 
@@ -82,7 +82,7 @@ ht-degree: 3%
 
    请参阅[工作流](../../workflow/using/architecture.md)指南。
 
-## InSMS架构{#insms-schema}
+## InSMS模式 {#insms-schema}
 
 InSMS架构包含与传入短信相关的信息。 可通过desc属性描述这些字段。
 
@@ -108,7 +108,7 @@ InSMS架构包含与传入短信相关的信息。 可通过desc属性描述这�
 * **operatorCode**:操作员网络代码。
 * **linkedSmsId**:Adobe Campaign标识符(broadlogId)，链接到传出短信，其中此短信是响应。
 
-## 管理自动回复（美国法规）{#managing-automatic-replies--american-regulation-}
+## 管理自动回复（美国法规） {#managing-automatic-replies--american-regulation-}
 
 当订阅者回复通过Adobe Campaign发送给他们的短信消息，并且使用STOP、HELP或YES等关键字时，美国市场上有必要配置自动返回的消息。
 
@@ -165,6 +165,6 @@ InSMS架构包含与传入短信相关的信息。 可通过desc属性描述这�
 
 >[!IMPORTANT]
 >
->这类自动报文不会保留历史记录。 因此，它们不会显示在投放仪表板中。 [了解详情](../../delivery/using/delivery-dashboard.md)。
+>这类自动报文不会保留历史记录。 因此，它们不会显示在投放仪表板中。 [了解详情](delivery-dashboard.md)。
 >
 >商业压力规则未考虑这些报文。 [了解详情](../../campaign/using/pressure-rules.md)。
