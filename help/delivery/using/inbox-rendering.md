@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 # 收件箱呈现{#inbox-rendering}
 
-## 关于收件箱呈现{#about-inbox-rendering}
+## 关于收件箱呈现 {#about-inbox-rendering}
 
 在点击&#x200B;**发送**&#x200B;按钮之前，确保以最佳方式在各种Web客户端、Web邮件和设备上向收件人显示您的消息。
 
@@ -27,9 +27,9 @@ Litmus是一种功能丰富的电子邮件验证和预览应用程序。 它允�
 
 >[!NOTE]
 >
->在投放中测试个性化无需进行收件箱呈现。 可以使用Adobe Campaign工具（如&#x200B;**[!UICONTROL Preview]**&#x200B;和[校样](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)）检查个性化。
+>在投放中测试个性化无需进行收件箱呈现。 可以使用Adobe Campaign工具（如&#x200B;**[!UICONTROL Preview]**&#x200B;和[校样](steps-validating-the-delivery.md#sending-a-proof)）检查个性化。
 
-## 激活收件箱呈现{#activating-inbox-rendering}
+## 激活收件箱呈现 {#activating-inbox-rendering}
 
 对于托管和混合客户端，Adobe技术支持和顾问会在您的实例上配置收件箱呈现。 有关更多信息，请联系您的Adobe客户经理。
 
@@ -64,7 +64,7 @@ Litmus是一种功能丰富的电子邮件验证和预览应用程序。 它允�
 >
 >您可能需要从控制台注销并重新登录才能使用收件箱呈现功能。
 
-## 关于Litmus令牌{#about-litmus-tokens}
+## 关于Litmus令牌 {#about-litmus-tokens}
 
 由于利特摩是第三方服务，因此它采用的是按使用计费的模式。 每次用户调用Litmus功能时，都会扣除点数。
 
@@ -93,18 +93,18 @@ Litmus是一种功能丰富的电子邮件验证和预览应用程序。 它允�
 
 通常，收件箱呈现功能用于测试新设计电子邮件的HTML框架。 每个渲染最多需要70个令牌（具体取决于通常测试的环境数量）。 但是，在某些情况下，您可能需要多个收件箱呈现报告才能完全测试您的投放。 因此，可能需要更多令牌才能完成多项检查。
 
-## 访问收件箱呈现报告{#accessing-the-inbox-rendering-report}
+## 访问收件箱呈现报告 {#accessing-the-inbox-rendering-report}
 
 创建电子邮件投放并定义其内容及定向群体后，请执行以下步骤。
 
-有关创建、设计和定位投放的更多信息，请参阅[此部分](../../delivery/using/about-email-channel.md)。
+有关创建、设计和定位投放的更多信息，请参阅[此部分](about-email-channel.md)。
 
 1. 单击投放顶部栏的&#x200B;**[!UICONTROL Inbox rendering]**&#x200B;按钮。
 1. 选择&#x200B;**[!UICONTROL Analyze]**&#x200B;以启动捕获进程。
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   发送校样。 在发送电子邮件后几分钟，可以在校样中访问渲染缩略图。 有关发送校样的更多信息，请参阅[此部分](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
+   发送校样。 在发送电子邮件后几分钟，可以在校样中访问渲染缩略图。 有关发送校样的更多信息，请参阅[此部分](steps-validating-the-delivery.md#sending-a-proof)。
 
 1. 发送校样后，该校样会显示在投放列表中。 双击它。
 
@@ -116,7 +116,7 @@ Litmus是一种功能丰富的电子邮件验证和预览应用程序。 它允�
 
    将显示收件箱呈现报告。
 
-## 收件箱呈现报告{#inbox-rendering-report}
+## 收件箱呈现报告 {#inbox-rendering-report}
 
 此报表显示收件人看到的收件箱呈现。 呈现方式可能因收件人打开电子邮件投放的方式而异：浏览器、移动设备或电子邮件应用程序中。
 
