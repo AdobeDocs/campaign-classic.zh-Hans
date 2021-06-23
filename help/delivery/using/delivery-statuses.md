@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 5%
@@ -23,15 +23,15 @@ ajouter screenshot -->
 
 ![](assets/delivery-status.png)
 
-有关您可能遇到的不同投放失败以及如何解决这些失败的详细信息，请参阅[此页面](../../delivery/using/understanding-delivery-failures.md)。
+有关您可能遇到的不同投放失败以及如何解决这些失败的详细信息，请参阅[此页面](understanding-delivery-failures.md)。
 
 **相关主题：**
 
-* [投放仪表板](../../delivery/using/delivery-dashboard.md)
-* [投放疑难解答](../../delivery/using/delivery-troubleshooting.md)
-* [关于投放能力](../../delivery/using/about-deliverability.md)
+* [投放仪表板](delivery-dashboard.md)
+* [投放疑难解答](delivery-troubleshooting.md)
+* [关于可投放性](about-deliverability.md)
 
-## 投放状态列表{#list-delivery-statuses}
+## 投放状态列表 {#list-delivery-statuses}
 
 <table> 
  <thead> 
@@ -51,7 +51,7 @@ ajouter screenshot -->
   </tr> 
   <tr> 
    <td> 失败<br /> </td> 
-   <td> 由于地址无效或收件箱已满等原因，投放无法到达收件人。 它还可以链接到个性化块的问题，因为当架构与投放映射不匹配时，这些块可能会生成错误。 请参阅<a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">了解投放失败</a><br /> </td> 
+   <td> 由于地址无效或收件箱已满等原因，投放无法到达收件人。 它还可以链接到个性化块的问题，因为当架构与投放映射不匹配时，这些块可能会生成错误。 请参阅<a href="understanding-delivery-failures.md" target="_blank">了解投放失败</a><br /> </td> 
   </tr>
   <tr> 
    <td> 待定<br /> </td> 
@@ -67,7 +67,7 @@ ajouter screenshot -->
   </tr> 
   <tr> 
    <td> 服务提供商<br />已考虑 </td> 
-   <td> 短信服务提供商收到了投放。<br /> 对于托管或混合安装，如果您已升级到 <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Enhanced MTA</a>，则消息会从Campaign成功中继到Enhanced MTA。</td> 
+   <td> 短信服务提供商收到了投放。<br /> 对于托管或混合安装，如果您已升级到 <a href="sending-with-enhanced-mta.md" target="_blank">Enhanced MTA</a>，则消息会从Campaign成功中继到Enhanced MTA。</td> 
   </tr> 
   <tr> 
    <td> 在移动设备上收到<br /> </td> 
@@ -85,13 +85,13 @@ ajouter screenshot -->
  </tbody> 
 </table>
 
-要了解如何优化Adobe Campaign电子邮件的投放能力，请参阅[此部分](../../delivery/using/about-deliverability.md)。 有关投放能力的更深入分析，请参阅[Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
+要了解如何优化Adobe Campaign电子邮件的投放能力，请参阅[此部分](about-deliverability.md)。 有关投放能力的更深入分析，请参阅[Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
 
-## 挂起状态{#pending-status}
+## 待定状态 {#pending-status}
 
 确认投放后，您可以看到投放的状态为&#x200B;**[!UICONTROL Pending]**。 此状态表示执行进程正在等待某些资源的可用性。
 
-**[!UICONTROL Pending]**&#x200B;状态首先表示您的投放已计划，并且在给定日期之前处于待处理状态。 有关更多信息，请参阅[投放计划](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending)一节。
+**[!UICONTROL Pending]**&#x200B;状态首先表示您的投放已计划，并且在给定日期之前处于待处理状态。 有关更多信息，请参阅[投放计划](steps-sending-the-delivery.md#scheduling-the-delivery-sending)一节。
 
 如果未发送投放，且其状态保持&#x200B;**[!UICONTROL Pending]**，则可能是以下结果：
 
@@ -137,5 +137,5 @@ ajouter screenshot -->
 **相关主题：**
 
 * [投放日志和历史记录](#delivery-logs-and-history)
-* [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
-* [投放失败类型和原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
+* [了解投放失败](understanding-delivery-failures.md)
+* [投放失败类型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons)
