@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 6%
@@ -14,18 +14,18 @@ ht-degree: 6%
 
 # 生成个性化内容 {#build-personalized-content}
 
-在设计消息内容时，请尽量避免可能阻止您执行投放的常见问题。 大多数情况下，可能的错误与[个性化](../../delivery/using/about-personalization.md)、[格式化](../../delivery/using/defining-the-email-content.md#message-content)和[图像](../../delivery/using/defining-the-email-content.md#adding-images)有关。
+在设计消息内容时，请尽量避免可能阻止您执行投放的常见问题。 大多数情况下，可能的错误与[个性化](about-personalization.md)、[格式化](defining-the-email-content.md#message-content)和[图像](defining-the-email-content.md#adding-images)有关。
 
-## 优化个性化{#optimize-personalization}
+## 优化个性化 {#optimize-personalization}
 
 为避免可能阻止您执行投放并改善收件人体验的常见问题，Adobe Campaign允许您个性化邮件。
 
 您可以使用存储在Adobe Campaign数据库中的收件人数据，或通过跟踪、登陆页、订阅等方式收集的数据。
-[此部分](../../delivery/using/personalization-fields.md)中介绍了个性化基础知识。
+[此部分](personalization-fields.md)中介绍了个性化基础知识。
 
 确保您的消息内容设计正确，以避免任何与个性化通常相关的错误。
 
-**提示**:在来自第三方供应商提供的外部文件的个性化字段中，外部HTML内容可能会出错。要避免出现这种情况，请检查语法、标记的使用、字符等。 例如，Adobe Campaign个性化标记始终具有以下表单：&lt;%=table.field%>。 有关更多信息，请参阅[此章节](../../delivery/using/about-personalization.md)。
+**提示**:在来自第三方供应商提供的外部文件的个性化字段中，外部HTML内容可能会出错。要避免出现这种情况，请检查语法、标记的使用、字符等。 例如，Adobe Campaign个性化标记始终具有以下表单：&lt;%=table.field%>。 有关更多信息，请参阅[此章节](about-personalization.md)。
 
 个性化块中参数的使用不正确可能是一个问题。 例如，JavaScript中的变量应按如下方式使用：
 
@@ -35,11 +35,11 @@ ht-degree: 6%
 
     
     
-有关个性化块的更多信息，请参阅[此部分](../../delivery/using/personalization-blocks.md)。
+有关个性化块的更多信息，请参阅[此部分](personalization-blocks.md)。
 
-您可以在工作流中准备个性化数据，以改进投放准备分析。 如果个性化数据通过联合数据访问(FDA)从外部表中获取，则应特别使用此功能。 此[此部分](../../delivery/using/personalization-fields.md#optimizing-personalization)中介绍了此选项
+您可以在工作流中准备个性化数据，以改进投放准备分析。 如果个性化数据通过联合数据访问(FDA)从外部表中获取，则应特别使用此功能。 此[此部分](personalization-fields.md#optimizing-personalization)中介绍了此选项
 
-## 构建优化内容{#optimize-content}
+## 构建优化内容 {#optimize-content}
 
 在构建电子邮件时，请牢记以下一般最佳实践。
 
@@ -55,7 +55,7 @@ ht-degree: 6%
 
 ### 主题行
 
-使用[主题行](../../delivery/using/defining-the-email-content.md#message-content)提高打开率：
+使用[主题行](defining-the-email-content.md#message-content)提高打开率：
 
 * 避免话题太长。 最多使用50个字符
 
@@ -65,15 +65,15 @@ ht-degree: 6%
 
 ### 镜像页面
 
-始终包含镜像页面链接。 首选位置是电子邮件的顶部。 [了解详情](../../delivery/using/sending-messages.md#generating-the-mirror-page)
+始终包含镜像页面链接。 首选位置是电子邮件的顶部。 [了解详情](sending-messages.md#generating-the-mirror-page)
 
 ### 退订链接
 
-退订链接至关重要。 它必须可见且有效，并且表单必须有效。 默认情况下，分析消息时， [分类规则](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies)会检查是否包含选择退订链接，并在缺少该链接时生成警告。
+退订链接至关重要。 它必须可见且有效，并且表单必须有效。 默认情况下，分析消息时， [分类规则](steps-validating-the-delivery.md#validation-process-with-typologies)会检查是否包含选择退订链接，并在缺少该链接时生成警告。
 
 **提示**:由于始终可能出现人为错误，因此请在每次发送之前检查选择退出链接是否正常工作。例如，在发送校样时，请确保链接有效、表单已联机且“No lent contact this recipient（不再与此收件人联系）”字段已更改为“Yes（是）”。
 
-了解如何在此部分](../../delivery/using/personalization-blocks.md#personalization-blocks-example)中插入选择退出链接[。
+了解如何在此部分](personalization-blocks.md#personalization-blocks-example)中插入选择退出链接[。
 
 ### 电子邮件大小
 
@@ -94,7 +94,7 @@ ht-degree: 6%
 默认情况下，短信的字符数应符合 GSM（全球移动通信系统）标准。使用 GSM 编码的短信消息长度上限为 160 个字符，而对于分段发送的消息，每段短信的长度上限为 153 个字符。
 
 音译指的是，如果 GSM 标准无法识别某个短信字符，则会用另一个字符替换该字符。请注意，在短信消息内容中插入个性化字段可能会引入GSM编码无法识别的字符。 您可以通过选中相应&#x200B;**[!UICONTROL External account]**的SMPP渠道设置选项卡中的相应框来授权字符音译。
-在此部分](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)中了解更多[信息。
+在此部分](sms-set-up.md#creating-an-smpp-external-account)中了解更多[信息。
 
 **提示**:
 
@@ -102,13 +102,13 @@ ht-degree: 6%
 
 * 但是，如果短信消息包含大量GSM标准未考虑的字符，则启用音译可限制发送消息的成本。
 
-在此部分](../../delivery/using/sms-set-up.md#about-character-transliteration)中了解更多[信息。
+在此部分](sms-set-up.md#about-character-transliteration)中了解更多[信息。
 
 ## 处理格式 {#formatting}
 
 要避免出现常见的格式错误，请检查以下元素：
 
-* 更正&#x200B;**日期格式**:Adobe Campaign为JavaScript模板和XSL样式表提供日期格式设置函数。 [了解详情](../../delivery/using/formatting.md#date-display)
+* 更正&#x200B;**日期格式**:Adobe Campaign为JavaScript模板和XSL样式表提供日期格式设置函数。 [了解详情](formatting.md#date-display)
 
 * 电子邮件中&#x200B;**授权字符**&#x200B;的用法：电子邮件地址的有效字符列表在“XtkEmail_Characters”选项中定义。 了解如何访问此部分](../../installation/using/configuring-campaign-options.md)中的Campaign选项[。 要正确处理特殊字符，需要以Unicode安装Adobe Campaign。
 
@@ -124,7 +124,7 @@ ht-degree: 6%
 
 * Adobe Campaign Classic数字内容编辑器(DCE)模块包含一些响应式设计格式化的模板，可用于通过&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**&#x200B;获取的移动设备。 在本文](https://theblog.adobe.com/responsive-email-design-101/)中了解更多[信息
 
-## 管理映像{#manage-images}
+## 管理图像 {#manage-images}
 
 在使用图像时，请遵循以下准则。
 
@@ -148,14 +148,14 @@ ht-degree: 6%
 
 * 您可以检查实例配置是否启用公共资源管理。 [了解详情](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* 在投放向导中，您可以导入包含图像的HTML页面，或通过&#x200B;**[!UICONTROL Image]**&#x200B;图标使用HTML编辑器直接插入图像。 [了解详情](../../delivery/using/defining-the-email-content.md#adding-images)
+* 在投放向导中，您可以导入包含图像的HTML页面，或通过&#x200B;**[!UICONTROL Image]**&#x200B;图标使用HTML编辑器直接插入图像。 [了解详情](defining-the-email-content.md#adding-images)
 
 * 如果未显示图像，请检查这些图像是否在服务器上可用。 要实现此目的，请单击投放中的源选项卡。 在Web浏览器中查找您的图像并复制粘贴每个图像的URL。 如果未显示图像，请与IT管理员或提供投放内容的第三方供应商联系。
 
-## 预览消息{#preview-msg}
+## 预览消息 {#preview-msg}
 
 Adobe建议预览消息以检查其个性化以及收件人将如何看到您的投放。
 
-* 在投放向导中，使用&#x200B;**[!UICONTROL Preview]**&#x200B;子选项卡可以查看收件人的每个内容的渲染。 个性化字段和内容的条件元素将替换为选定用户档案的相应信息。 [了解详情](../../delivery/using/defining-the-email-content.md#message-content)
+* 在投放向导中，使用&#x200B;**[!UICONTROL Preview]**&#x200B;子选项卡可以查看收件人的每个内容的渲染。 个性化字段和内容的条件元素将替换为选定用户档案的相应信息。 [了解详情](defining-the-email-content.md#message-content)
 
-* 在每次预览期间执行自动防垃圾邮件检查。 在&#x200B;**[!UICONTROL Preview]**&#x200B;子选项卡中，检查[SpamAssassin](../../delivery/using/spamassassin.md)垃圾信息评分。  单击&#x200B;**[!UICONTROL More...]**&#x200B;以详细了解警告。  在执行此操作之前，请确保在Adobe Campaign应用程序服务器上正确安装和配置了SpamAssassin。 [了解详情](../../installation/using/configuring-spamassassin.md)
+* 在每次预览期间执行自动防垃圾邮件检查。 在&#x200B;**[!UICONTROL Preview]**&#x200B;子选项卡中，检查[SpamAssassin](spamassassin.md)垃圾信息评分。  单击&#x200B;**[!UICONTROL More...]**&#x200B;以详细了解警告。  在执行此操作之前，请确保在Adobe Campaign应用程序服务器上正确安装和配置了SpamAssassin。 [了解详情](../../installation/using/configuring-spamassassin.md)
