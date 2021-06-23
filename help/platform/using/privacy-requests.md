@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0a80912aae4cab58b6f06918a673aaca3883fbdf
 workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 100%
@@ -46,7 +46,7 @@ Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中�
 
 因此，作为数据控制者，您的职责是确认发出请求的数据主体的身份，并确认返回给请求者的数据与数据主体有关。
 
-### 安装隐私包{#install-privacy-package}
+### 安装隐私包 {#install-privacy-package}
 
 要使用此功能，您需要通过 **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** > **[!UICONTROL Adobe Campaign Package]**&#x200B;菜单安装 **[!UICONTROL Privacy Data Protection Regulation]** 包。有关如何安装隐私包的更多信息，请参阅[有详细说明的文档](../../installation/using/installing-campaign-standard-packages.md)。
 
@@ -137,7 +137,7 @@ Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中�
 * **[!UICONTROL Complete]**：请求的处理已完成，并且没有错误。
 * **[!UICONTROL Error]**：工作流遇到错误。原因显示在 **[!UICONTROL Request status]** 列的隐私请求列表中。例如，**[!UICONTROL Error data not found]** 表示在数据库中找不到与数据主体的 **[!UICONTROL Reconciliation value]** 匹配的收件人数据。
 
-### 两步流程{#two-step-process}
+### 两步流程 {#two-step-process}
 
 默认情况下，将激活&#x200B;**两步流程**。使用此模式创建新的删除请求时，Adobe Campaign 始终会先执行访问请求。这样您可以在确认删除之前确认数据。
 
@@ -165,7 +165,7 @@ Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中�
 
 以下是数据主体的数据文件示例：
 
-![](assets/privacy-access-file.png)
+![](assets/do-not-localize/privacy-access-file.png)
 
 数据控制者可以轻松创建包含相应 JSSP URL 的 Web 应用程序，以便让数据主体的数据文件可以从网页中访问。
 
@@ -209,7 +209,7 @@ Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中�
 
 由于访问数据主体的数据文件受到限制，因此必须禁用网页匿名访问。只有拥有 **[!UICONTROL Privacy Data Right]** 指明权限的操作员才能登录页面并下载数据。
 
-## 自动隐私请求流程{#automatic-privacy-request-api}
+## 自动隐私请求流程 {#automatic-privacy-request-api}
 
 Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私请求流程。
 
@@ -247,7 +247,7 @@ Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私
 >
 >如果您要迁移到 20.2，并且您已经在使用这个 API，则必须添加如上所示的“regulation”字段。如果您使用的是以前的版本，则可以继续使用这个 API，而无须添加“regulation”字段。
 
-### 从外部调用 API{#invoking-api-externally}
+### 从外部调用 API {#invoking-api-externally}
 
 下方是一个示例，说明如何从外部调用 API（通过 API 进行身份验证，并具体说明隐私 API 的详细信息）。有关隐私 API 的更多信息，请查阅 [API 文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/s-nms-privacyRequest.html)。您还可以查阅 [Web 服务调用文档](../../configuration/using/web-service-calls.md)。
 
@@ -257,7 +257,7 @@ Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私
 
 1. 使用“登录”方法，将用户名和密码作为请求中的参数传递。您会获得一个包含会话令牌的响应。以下是使用 SoapUI 的示例。
 
-   ![](assets/privacy-api.png)
+   ![](assets/do-not-localize/privacy-api.png)
 
 1. 使用返回的会话令牌作为所有子序列 API 调用的身份验证。令牌会在 24 小时后失效。
 
@@ -269,7 +269,7 @@ Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私
 
    以下是使用 **[!UICONTROL CreateRequestByName]** 的示例。请注意，我们使用上述会话令牌作为身份验证的方式。响应是已创建请求的 ID。
 
-   ![](assets/privacy-api-2.png)
+   ![](assets/do-not-localize/privacy-api-2.png)
 
    为了帮助您执行上述步骤，请考虑以下事项：
 
@@ -277,7 +277,7 @@ Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私
    * 您可以使用 **nms:gdprRequestData** 模式上的 **queryDef** 来获取访问请求的结果。
    * 为了能够从 **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;** 下载 XML 文件，您必须登录并从已列入允许列表的 IP 访问它。为此，请创建一个允许您访问 JSSP 生成的文件的 Web 应用程序。
 
-### 从 JS 调用 API{#invoking-api-from-js}
+### 从 JS 调用 API {#invoking-api-from-js}
 
 下面是在 Campaign Classic 中从 JS 调用 API 的示例。
 
@@ -390,7 +390,7 @@ Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私
 >
 >作为数据控制者，您负责接收数据主体的请求并跟踪 CCPA 的请求日期。作为技术提供商，我们仅提供选择退出的方式。有关您作为数据控制者的角色的更多信息，请参阅[个人数据和角色](../../platform/using/privacy-and-recommendations.md#personal-data)。
 
-### 先决条件{#ccpa-prerequisite}
+### 先决条件 {#ccpa-prerequisite}
 
 要利用此信息，您需要在 Adobe Campaign Classic 中创建此字段。为此，您将向 **[!UICONTROL Recipient]** 表添加一个布尔字段。创建新字段后，Campaign API 会自动支持该字段。
 
