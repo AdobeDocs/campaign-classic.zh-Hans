@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: f31591949bb033ff250cf4b33eddcc2c1d31cc6c
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 5%
+source-wordcount: '889'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数�
 
 有关隐私管理概念及Adobe Campaign中实施步骤的一般信息，请参阅[此页面](../../platform/using/privacy-management.md)。 您还可以找到最佳实践以及用户流程和角色的概述。
 
-## URL个性化{#url-personalization}
+## URL个性化 {#url-personalization}
 
 在向内容添加个性化链接时，应始终避免在URL的主机名部分进行任何个性化，以避免潜在的安全漏洞。 以下示例绝不应用于所有URL属性`a href="">`或`<img src="">`:
 
@@ -47,27 +47,35 @@ Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数�
 
 <img src="assets/privacy-query-dynamic-url.png">
 
-### 签名机制
+### URL签名
 
-为了提高安全性，内部版本19.1.4(9032@3a9dc9c)中引入了用于跟踪电子邮件中链接的新签名机制，该机制在内部版本19.1.4(9032@3a9dc9c)和Campaign 20.2中可用。默认情况下，所有客户都会启用此选项。
+为了提高安全性，引入了用于跟踪电子邮件中链接的签名机制。 该功能在版本19.1.4(9032@3a9dc9c)和Campaign 20.2中可用。默认情况下启用此功能。
 
 >[!NOTE]
 >
->单击格式错误的签名URL后，将返回以下错误：&quot;未找到请求的URL &#39;.. &#39;。&quot;
+>单击格式错误的签名URL时，会返回以下错误：&quot;未找到请求的URL &#39;...&#39;。&quot;
 
-此外，从Campaign 20.2和[!DNL Gold Standard]版本开始，托管和混合客户可以使用增强功能来禁用从以前的内部版本生成的URL。 默认情况下，此选项处于禁用状态。 您可以联系[客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以启用此功能。
+此外，自Campaign 20.2和[!DNL Gold Standard]版本以来，您可以使用增强功能禁用在以前的内部版本中生成的URL。 此功能默认处于禁用状态。 您可以联系[客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以启用此功能。
 
-要激活此新机制，内部部署客户需要在所有Campaign服务器上执行以下步骤：
+如果您运行的是[!DNL Gold Standard] 19.1.4，则可能会遇到使用跟踪链接的推送通知投放问题，或使用锚点标记的投放问题。 如果是，我们建议您禁用URL签名。
+
+无论您是在本地运行Campaign还是在混合架构中运行Campaign，都必须联系[客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)才能禁用URL签名。
+
+如果您在混合架构中运行Campaign，则在启用URL签名之前，请确保已按如下方式升级托管的中间源实例：
+* 在本地营销实例之前
+* 更改为与内部部署营销实例相同的版本，或更高版本
+
+否则，可能会出现以下问题：
+* 在升级中间源实例之前，将通过此实例发送不带签名的URL。
+* 升级中间源实例并在这两个实例上启用URL签名后，之前未经签名而发送的URL将被拒绝。 原因是营销实例提供的跟踪文件请求了签名。
+
+要禁用在以前的内部版本中生成的URL，请同时在所有Campaign服务器上执行以下步骤：
 
 1. 在服务器配置文件(serverConf.xml)中，将&#x200B;**blockRedirectForUnsignedTrackingLink**&#x200B;更改为&#x200B;**true**。
 1. 重新启动&#x200B;**nlserver**&#x200B;服务。
 1. 在跟踪服务器上，重新启动Web服务器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
-在[!DNL Gold Standard] 19.1.4上运行的客户可能会遇到使用跟踪链接发送推送通知投放的问题，或者遇到使用锚点标记的投放问题。 如果存在，Adobe建议禁用跟踪链接的新签名机制：
-
-**托管客户和混** 合客户必须联系客 [户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) 关怀团队，以禁用此机制。
-
-**内部部署客** 户按照以下步骤操作：
+要启用URL签名，请同时在所有Campaign服务器上执行以下步骤：
 
 1. 在服务器配置文件(serverConf.xml)中，将&#x200B;**signEmailLinks**&#x200B;更改为&#x200B;**false**。
 1. 重新启动&#x200B;**nlserver**&#x200B;服务。
