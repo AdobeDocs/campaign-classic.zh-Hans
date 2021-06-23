@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 12%
@@ -19,7 +19,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->此窗口中还配置了电子邮件中图像的管理。 请参阅[添加图像](../../delivery/using/defining-the-email-content.md#adding-images)。
+>此窗口中还配置了电子邮件中图像的管理。 请参阅[添加图像](defining-the-email-content.md#adding-images)。
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
@@ -37,7 +37,7 @@ ht-degree: 12%
 
 跟踪的URL以树形形式列在中心窗口中。
 
-您可以为消息的每个URL单独激活或取消激活跟踪。 如需详细信息，请参阅[此部分](../../delivery/using/how-to-configure-tracked-links.md)。
+您可以为消息的每个URL单独激活或取消激活跟踪。 如需详细信息，请参阅[此部分](how-to-configure-tracked-links.md)。
 
 通过&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡，您可以个性化跟踪的URL和开始URL的计算公式。
 
