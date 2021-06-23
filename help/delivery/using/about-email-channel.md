@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 12%
@@ -25,10 +25,10 @@ Adobe Campaign允许您向目标群体批量交付个性化的电子消息。
 
 发送电子邮件的关键步骤如下：
 
-* [创建电子邮件投放](../../delivery/using/creating-an-email-delivery.md)
-* [定义目标群体](../../delivery/using/steps-defining-the-target-population.md)
-* [定义电子邮件的内容](../../delivery/using/defining-the-email-content.md)
-* [发送电子邮件](../../delivery/using/sending-messages.md)
-* [监控投放](../../delivery/using/about-delivery-monitoring.md)
+* [创建电子邮件投放](creating-an-email-delivery.md)
+* [定义目标群体](steps-defining-the-target-population.md)
+* [定义电子邮件的内容](defining-the-email-content.md)
+* [发送电子邮件](sending-messages.md)
+* [监控投放](about-delivery-monitoring.md)
 
 以下部分提供了特定于电子邮件渠道的信息。 有关如何创建投放的全局信息，请参阅[此部分](steps-about-delivery-creation-steps.md)。
