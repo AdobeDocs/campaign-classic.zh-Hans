@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 6%
@@ -37,7 +37,7 @@ SpamAssassin利用各种垃圾邮件检测技术，包括：
 
 创建电子邮件投放并定义其内容后，请按照以下步骤评估风险。
 
-有关创建和设计投放的更多信息，请参阅[此部分](../../delivery/using/about-email-channel.md)。
+有关创建和设计投放的更多信息，请参阅[此部分](about-email-channel.md)。
 
 1. 转到 **[!UICONTROL Preview]** 选项卡。
 1. 选择收件人以预览投放。
