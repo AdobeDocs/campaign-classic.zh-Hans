@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 3%
@@ -37,4 +37,4 @@ ht-degree: 3%
 
 您现在可以启动工作流。 发送投放后，您将能够跟踪投放日志中三个子集的行为，以查看哪个主题最成功。
 
-工作流还允许您通过自动识别性能更佳的投放变体，然后将其发送给其余群体，来自动执行您的流程。 有关更多信息，请参阅此专用[用例](../../delivery/using/a-b-testing-use-case.md)。
+工作流还允许您通过自动识别性能更佳的投放变体，然后将其发送给其余群体，来自动执行您的流程。 有关更多信息，请参阅此专用[用例](a-b-testing-use-case.md)。
