@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 # 从模板创建投放{#creating-a-delivery-from-a-template}
 
-## 将模板链接到投放{#linking-the-template-to-a-delivery}
+## 将模板链接到投放 {#linking-the-template-to-a-delivery}
 
 要基于现有模板创建投放，请从可用投放模板列表中选择该模板。
 
@@ -29,7 +29,7 @@ ht-degree: 10%
 
 选择要使用的投放模板，然后单击&#x200B;**[!UICONTROL Ok]**。
 
-## 执行模板{#executing-the-template}
+## 执行模板 {#executing-the-template}
 
 您可以直接从模板列表启动模板的执行，而无需先创建投放。 要执行此操作，请选择要执行的模板并右键单击。 选择 **[!UICONTROL Actions>Execute the delivery template...]**。
 
@@ -43,4 +43,4 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->有关配置投放的更多信息，请参阅[定义电子邮件内容](../../delivery/using/defining-the-email-content.md)。
+>有关配置投放的更多信息，请参阅[定义电子邮件内容](defining-the-email-content.md)。
