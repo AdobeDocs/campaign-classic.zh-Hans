@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 6%
@@ -27,16 +27,16 @@ ht-degree: 6%
 
 执行此用例的主要步骤包括：
 
-* [步骤1:创建定位工作流](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
-* [步骤2:配置群体样本](../../delivery/using/a-b-testing-uc-population-samples.md)
-* [步骤3:创建两个投放模板](../../delivery/using/a-b-testing-uc-delivery-templates.md)
-* [步骤4:在工作流中配置投放](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
-* [步骤5:创建脚本](../../delivery/using/a-b-testing-uc-script.md)
-* [步骤6:定义最终投放](../../delivery/using/a-b-testing-uc-final-delivery.md)
-* [步骤7:启动工作流](../../delivery/using/a-b-testing-uc-start-workflow.md)
-* [步骤8:分析结果](../../delivery/using/a-b-testing-uc-analyzing.md)
+* [步骤1:创建定位工作流](a-b-testing-uc-targeting-workflow.md)
+* [步骤2:配置群体样本](a-b-testing-uc-population-samples.md)
+* [步骤3:创建两个投放模板](a-b-testing-uc-delivery-templates.md)
+* [步骤4:在工作流中配置投放](a-b-testing-uc-configuring-deliveries.md)
+* [步骤5:创建脚本](a-b-testing-uc-script.md)
+* [步骤6:定义最终投放](a-b-testing-uc-final-delivery.md)
+* [步骤7:启动工作流](a-b-testing-uc-start-workflow.md)
+* [步骤8:分析结果](a-b-testing-uc-analyzing.md)
 
 **相关主题：**
 
-* [A/B 测试入门](../../delivery/using/get-started-a-b-testing.md)
-* [配置 A/B 测试](../../delivery/using/configuring-a-b-testing.md)
+* [A/B 测试入门](get-started-a-b-testing.md)
+* [配置 A/B 测试](configuring-a-b-testing.md)
