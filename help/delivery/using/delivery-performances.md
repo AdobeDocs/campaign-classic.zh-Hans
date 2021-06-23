@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 6%
@@ -19,11 +19,11 @@ ht-degree: 6%
 
 **相关主题：**
 
-* [投放仪表板](../../delivery/using/delivery-dashboard.md)
-* [投放疑难解答](../../delivery/using/delivery-troubleshooting.md)
-* [关于投放能力](../../delivery/using/about-deliverability.md)
+* [投放仪表板](delivery-dashboard.md)
+* [投放疑难解答](delivery-troubleshooting.md)
+* [关于可投放性](about-deliverability.md)
 
-## 性能最佳实践{#best-practices-performance}
+## 性能最佳实践 {#best-practices-performance}
 
 * 请勿在实例上将投放保持为失败状态，因为这会维护临时表并影响性能。
 
@@ -45,12 +45,12 @@ ht-degree: 6%
 >
 >ISP会在地址处于不活动状态一段时间后停用地址。 退回邮件将发送给发件人，以告知他们此新状态。
 
-## 性能问题检查列表{#performance-issues}
+## 性能问题检查列表 {#performance-issues}
 
 如果投放性能不佳，您可以检查：
 
 * **投放的大小**:完成大型投放可能需要较长时间。MTA子项配置为处理默认的批处理大小，该大小适用于大多数情况，但在投放速度持续缓慢时需要选中该大小。
 * **投放的目标**:投放性能禁止受软退件错误的影响，软退件错误将根据重试配置进行处理。错误数越多，重试的次数就越多。
-* **平台总负载**:发送多个大型投放时，整体平台可能会受到影响。您还可以检查IP信誉和可投放性问题。 有关更多信息，请参阅[此部分](../../delivery/using/about-deliverability.md)和[Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
+* **平台总负载**:发送多个大型投放时，整体平台可能会受到影响。您还可以检查IP信誉和可投放性问题。 有关更多信息，请参阅[此部分](about-deliverability.md)和[Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
 
 平台和数据库维护也会影响投放发送性能。 有关详细信息，请参见[此页面](../../production/using/database-performances.md)。
