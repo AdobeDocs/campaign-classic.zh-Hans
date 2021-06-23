@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 8%
 >
 >个性化字段内容不能超过1024个字符。
 
-## 数据源{#data-sources}
+## 数据源 {#data-sources}
 
 根据所选的提交模式，个性化字段可以来自两种类型的数据源：
 
@@ -44,7 +44,7 @@ ht-degree: 8%
 
 在选择数据源（收件人字段或文件字段）后，此插入采用命令的形式，该命令将由Adobe Campaign解释并替换为给定收件人的字段值。 然后，可以在&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡中查看物理替换。
 
-## 个性化字段示例{#personalization-fields-example}
+## 个性化字段示例 {#personalization-fields-example}
 
 我们会创建一封电子邮件，我们将首先在其中插入收件人的姓名，然后在邮件正文中添加用户档案创建日期。 操作步骤：
 
@@ -73,9 +73,9 @@ ht-degree: 8%
    >
    >当投放是工作流的一部分时，您可以使用临时工作流表中的数据。 此数据分组到&#x200B;**[!UICONTROL Target extension]**&#x200B;菜单中。 如需详细信息，请参阅[此部分](../../workflow/using/data-life-cycle.md#target-data)。
 
-## 优化个性化{#optimizing-personalization}
+## 优化个性化 {#optimizing-personalization}
 
-您可以使用专用选项优化个性化：**[!UICONTROL Prepare the personalization data with a workflow]**，位于投放属性的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡中。 有关分析投放的更多信息，请参阅[此部分](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。
+您可以使用专用选项优化个性化：**[!UICONTROL Prepare the personalization data with a workflow]**，位于投放属性的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡中。 有关分析投放的更多信息，请参阅[此部分](steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 在投放分析期间，此选项会自动创建并执行一个工作流，该工作流将链接到目标的所有数据存储在临时表格中，包括来自FDA中链接表格的数据。
 
@@ -102,7 +102,7 @@ ht-degree: 8%
 
 ![](assets/perso_optimization_temp_table.png)
 
-## 个性化阶段{#timing-out-personalization}超时
+## 个性化阶段超时 {#timing-out-personalization}
 
 要改进投放保护，您可以为个性化阶段设置超时期限。
 
@@ -116,9 +116,9 @@ ht-degree: 8%
 
 如果将此选项设置为0，则个性化阶段将没有时间限制。
 
-## 教程视频{#personalization-fields-video}
+## 教程视频 {#personalization-fields-video}
 
-了解如何向电子邮件投放的主题行和内容添加个性化字段。
+了解如何在主题行中添加个性化字段，以及如何添加电子邮件投放的内容。
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
