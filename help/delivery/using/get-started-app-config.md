@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 10%
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 要在Adobe Campaign中发送推送通知，您需要：
 
-* 为Neotrips移动应用程序创建&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型的信息服务。 有关iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service)，请参阅[此部分。 和[此部分适用于Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service)。
+* 为Neotrips移动应用程序创建&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型的信息服务。 有关iOS](configuring-the-mobile-application.md#configuring-ios-service)，请参阅[此部分。 和[此部分适用于Android](configuring-the-mobile-application-android.md#configuring-android-service)。
 * 将应用程序的iOS和Android版本添加到此服务。
 * 为[iOS](create-notifications-ios.md)和[Android](create-notifications-android.md)创建投放。
 
@@ -29,7 +29,7 @@ ht-degree: 10%
 >
 >转到服务的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡，查看服务的订阅者列表，即在其移动设备上安装了应用程序并同意接收通知的所有用户。
 
-## 安装软件包{#installing-package-ios}
+## 安装包 {#installing-package-ios}
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何在视频中安装移动应用程序包](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
@@ -64,6 +64,6 @@ ht-degree: 10%
 完成此步骤后，您可以配置Android和iOS应用程序。
 请参阅以下章节：
 
-* [iOS 配置步骤](../../delivery/using/configuring-the-mobile-application.md)
+* [iOS 配置步骤](configuring-the-mobile-application.md)
 
-* [Android 配置步骤](../../delivery/using/configuring-the-mobile-application-android.md)
+* [Android 配置步骤](configuring-the-mobile-application-android.md)
