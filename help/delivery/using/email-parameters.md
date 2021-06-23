@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 本节介绍特定于电子邮件投放的选项和参数。
 
-## 电子邮件密送{#email-bcc}
+## 电子邮件密送 {#email-bcc}
 
 Adobe Campaign允许您通过密件抄送方式在外部系统上存储电子邮件，方法是只需向消息目标添加密件抄送电子邮件地址。
 
@@ -45,7 +45,7 @@ Adobe Campaign允许您通过密件抄送方式在外部系统上存储电子邮
 >
 >如果打开并点进发送到密件抄送地址的电子邮件，则在发送分析的&#x200B;**[!UICONTROL Total opens]**&#x200B;和&#x200B;**[!UICONTROL Clicks]**&#x200B;中会考虑这一点，这可能会导致某些错误计算。
 
-## 选择消息格式{#selecting-message-formats}
+## 选择消息格式 {#selecting-message-formats}
 
 您可以更改发送的电子邮件的格式。 要实现此目的，请编辑投放属性，然后单击&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡。
 
@@ -71,13 +71,13 @@ Adobe Campaign允许您通过密件抄送方式在外部系统上存储电子邮
 
 >[!NOTE]
 >
->有关定义电子邮件内容的更多信息，请参阅[此部分](../../delivery/using/defining-the-email-content.md)。
+>有关定义电子邮件内容的更多信息，请参阅[此部分](defining-the-email-content.md)。
 
-## 生成镜像页面{#generating-mirror-page}
+## 生成镜像页面 {#generating-mirror-page}
 
 镜像页面是可通过Web浏览器在线访问的HTML页面。 其内容与电子邮件相同。
 
-默认情况下，如果将链接插入到邮件内容中，则会生成镜像页面。 有关个性化块插入的更多信息，请参阅[个性化块](../../delivery/using/personalization-blocks.md)。
+默认情况下，如果将链接插入到邮件内容中，则会生成镜像页面。 有关个性化块插入的更多信息，请参阅[个性化块](personalization-blocks.md)。
 
 在投放属性中，使用&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡的&#x200B;**[!UICONTROL Mode]**&#x200B;字段可修改此页面的生成模式。
 
@@ -95,7 +95,7 @@ Adobe Campaign允许您通过密件抄送方式在外部系统上存储电子邮
 
    ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
-## 字符编码{#character-encoding}
+## 字符编码 {#character-encoding}
 
 在投放参数的&#x200B;**[!UICONTROL SMTP]**&#x200B;选项卡中，使用&#x200B;**[!UICONTROL Character encoding]**&#x200B;部分可设置特定编码。
 
@@ -107,7 +107,7 @@ Adobe Campaign允许您通过密件抄送方式在外部系统上存储电子邮
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
 
-## 管理退回电子邮件{#managing-bounce-emails}
+## 管理退回电子邮件 {#managing-bounce-emails}
 
 利用投放参数的&#x200B;**[!UICONTROL SMTP]**&#x200B;选项卡，可配置对退回邮件的管理。
 
@@ -117,9 +117,9 @@ Adobe Campaign允许您通过密件抄送方式在外部系统上存储电子邮
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
-有关退回邮件管理的更多信息，请参阅[此部分](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)。
+有关退回邮件管理的更多信息，请参阅[此部分](understanding-delivery-failures.md#bounce-mail-management)。
 
-## 添加SMTP标头{#adding-smtp-headers}
+## 添加SMTP标头 {#adding-smtp-headers}
 
 可以向投放添加SMTP标头。 为此，请使用投放中&#x200B;**[!UICONTROL SMTP]**&#x200B;选项卡的相关部分。
 
