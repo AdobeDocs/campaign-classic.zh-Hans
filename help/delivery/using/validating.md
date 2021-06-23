@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 1%
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 # 验证{#validating}
 
-验证投放时的全局概念，请参见[此部分](../../delivery/using/steps-validating-the-delivery.md)。
+验证投放时的全局概念，请参见[此部分](steps-validating-the-delivery.md)。
 
-在投放分析期间生成直邮投放的输出文件。 文件的内容取决于所选的输出列（请参阅[提取文件](../../delivery/using/defining-the-direct-mail-content.md#extraction-file)）。
+在投放分析期间生成直邮投放的输出文件。 文件的内容取决于所选的输出列（请参阅[提取文件](defining-the-direct-mail-content.md#extraction-file)）。
 
 >[!NOTE]
 >
->[分析投放](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)中详细描述了分析阶段。
+>[分析投放](steps-validating-the-delivery.md#analyzing-the-delivery)中详细描述了分析阶段。
 
 在分析阶段，会生成文件，但不会更新与收件人相关的信息（即投放日志）。 因此，您可以取消此作业，而不会产生任何风险。
 
