@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 3958fff140cc9bf6c371f0c4207cafc9a27bb725
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '971'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
 >
 >如果不使用跟踪功能，则可以通过重定向到Campaign来执行Apache或IIS的标准安装。 不需要跟踪Web服务器扩展模块。
 
-## 配置IIS Web服务器{#configuring-the-iis-web-server}
+## 配置IIS Web服务器 {#configuring-the-iis-web-server}
 
 IIS Web服务器的配置过程主要是图形化的。 它涉及使用网站（已创建或待创建）访问Adobe Campaign服务器的资源：Java(.jsp)文件、样式表(.css、.xsl)、图像(.png)、用于重定向的ISAPI DLL等。
 
@@ -101,13 +101,16 @@ IIS Web服务器的配置过程主要是图形化的。 它涉及使用网站（
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
-### 启动Web服务器并测试配置{#launching-the-web-server-and-testing-the-configuration}
+### 启动Web服务器并测试配置 {#launching-the-web-server-and-testing-the-configuration}
 
 您现在必须测试配置是否正确。
 
 要执行此操作，请应用以下过程：
 
 1. 使用&#x200B;**iisreset**&#x200B;命令行重新启动IIS服务器。
+
+1. 启动Adobe Campaign服务，然后确保该服务正在运行。
+
 1. 通过将以下URL插入Web浏览器来测试跟踪模块：
 
    ```
@@ -144,7 +147,7 @@ webmdl@default (1644) - 18.2 Mo
 
 ## 其他配置 {#additional-configurations}
 
-### 更改上传文件大小限制{#changing-the-upload-file-size-limit}
+### 更改上传文件大小限制 {#changing-the-upload-file-size-limit}
 
 在配置IIS Web服务器时，对于上传到服务器的设置文件，自动限制大约为28 MB。
 
@@ -164,7 +167,7 @@ webmdl@default (1644) - 18.2 Mo
 >
 >有关此IIS选项的更多信息，请参阅[官方文档](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)的“操作方法”部分。
 
-### 配置http错误消息显示{#configuring-http-error-message-display}
+### 配置http错误消息显示 {#configuring-http-error-message-display}
 
 如果您使用6.1版本的IIS服务器，则可能由于消息中显示了不需要的HTML代码而难以读取生成的错误消息。
 
