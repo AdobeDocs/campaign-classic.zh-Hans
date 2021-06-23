@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 34%
@@ -23,10 +23,10 @@ ht-degree: 34%
 
 1. 在其中引用此外部帐户的投放模板。
 
-## 创建SMPP外部帐户{#creating-an-smpp-external-account}
+## 创建SMPP外部帐户 {#creating-an-smpp-external-account}
 
 要向手机发送短信，您首先需要创建SMPP外部帐户。
-有关短信协议和设置的更多信息，请参阅此[页面](../../delivery/using/sms-protocol.md)。
+有关短信协议和设置的更多信息，请参阅此[页面](sms-protocol.md)。
 
 为此请执行以下操作步骤：
 
@@ -42,7 +42,7 @@ ht-degree: 34%
 
    >[!CAUTION]
    >
-   > 自20.2版起，已弃用旧版连接器，不支持该连接器。 我们建议使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器。 有关如何迁移到推荐连接器的更多信息，请参阅此[page](../../delivery/using/unsupported-connector-migration.md)。
+   > 自20.2版起，已弃用旧版连接器，不支持该连接器。 我们建议使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器。 有关如何迁移到推荐连接器的更多信息，请参阅此[page](unsupported-connector-migration.md)。
 
 1. 利用&#x200B;**[!UICONTROL Enable verbose SMPP traces in the log file]**&#x200B;选项，可将所有SMPP流量转储到日志文件中。 必须启用此选项才能对连接器进行故障诊断，并与提供商的通信记录进行对比。
 
@@ -80,13 +80,13 @@ ht-degree: 34%
 
    但是，鉴于某些提供商需要使用“+”前缀，建议您与提供商进行核实，他们将在必要时建议您启用此选项。
 
-   利用&#x200B;**[!UICONTROL Enable TLS over SMPP]**&#x200B;复选框，可加密SMPP通信。 有关详细信息，请参见此 [ 页面](../../delivery/using/sms-protocol.md)。
+   利用&#x200B;**[!UICONTROL Enable TLS over SMPP]**&#x200B;复选框，可加密SMPP通信。 有关详细信息，请参见此 [ 页面](sms-protocol.md)。
 
 1. 如果要配置&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器，则可以设置自动回复。
 
    如需详细信息，请参阅[此部分](#automatic-reply)。
 
-## 短信字符音译{#about-character-transliteration}
+## 短信字符音译 {#about-character-transliteration}
 
 可以在SMPP移动投放外部帐户的&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡下设置字符音译。
 
@@ -284,7 +284,7 @@ CR：回车
 
 ^ { } `[ ~ ]` | €
 
-## 文本编码{#about-text-encodings}
+## 文本编码 {#about-text-encodings}
 
 发送短信消息时，Adobe Campaign 可以使用一个或多个文本编码。每个编码都有属于自己的特定字符集，可确定其适合短信消息的字符数。
 
@@ -309,7 +309,7 @@ CR：回车
 >
 >仅声明您要使用的编码。如果SMSC提供的某些编码与您的使用目的不对应，请勿在列表中声明这些编码。
 
-## 自动回复{#automatic-reply}
+## 自动回复 {#automatic-reply}
 
 在设置扩展的通用SMPP连接器时，您可以配置自动回复。
 
@@ -343,9 +343,9 @@ CR：回车
 
 [创建SMPP外部帐户](#creating-an-smpp-external-account)一节中详细描述了使用扩展通用SMPP连接器设置外部帐户的步骤。
 
-## 更改投放模板{#changing-the-delivery-template}
+## 更改投放模板 {#changing-the-delivery-template}
 
-Adobe Campaign为您提供了用于投放到手机的模板。 此模板在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中可用。 有关更多信息，请参阅[关于模板](../../delivery/using/about-templates.md)一节。
+Adobe Campaign为您提供了用于投放到手机的模板。 此模板在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中可用。 有关更多信息，请参阅[关于模板](about-templates.md)一节。
 
 要通过SMS渠道进行投放，您必须创建引用渠道连接器的模板。
 
