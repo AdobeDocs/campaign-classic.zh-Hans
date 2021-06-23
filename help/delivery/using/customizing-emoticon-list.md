@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 3%
@@ -17,9 +17,9 @@ ht-degree: 3%
 
 弹出窗口中显示的表情符号列表由枚举来规定，该枚举允许您在列表中显示值，以限制用户对给定字段所做的选择。
 可以自定义表情符号列表顺序，还可以向列表中添加其他表情符号。
-表情符号可用于电子邮件和推送，如需详细信息，请参阅此[页面](../../delivery/using/defining-the-email-content.md#inserting-emoticons)。
+表情符号可用于电子邮件和推送，如需详细信息，请参阅此[页面](defining-the-email-content.md#inserting-emoticons)。
 
-## 添加新表情符号{#add-new-emoticon}
+## 添加新表情符号 {#add-new-emoticon}
 
 >[!CAUTION]
 >
@@ -61,7 +61,7 @@ ht-degree: 3%
 
 1. 要考虑您所做的更改，请断开连接，然后重新连接到Adobe Campaign Classic。 如果新表情符号仍未显示在&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中，则可能需要清除缓存。 有关更多信息，请参阅此](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)章节[。
 
-1. 现在，您可以在投放中找到新表情符号，该表情符号位于前面步骤中配置的第61位&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中。 有关如何在投放中使用表情符号的更多信息，请参阅此[页面](../../delivery/using/defining-the-email-content.md#inserting-emoticons)。
+1. 现在，您可以在投放中找到新表情符号，该表情符号位于前面步骤中配置的第61位&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中。 有关如何在投放中使用表情符号的更多信息，请参阅此[页面](defining-the-email-content.md#inserting-emoticons)。
 
    ![](assets/emoticon_4.png)
 
