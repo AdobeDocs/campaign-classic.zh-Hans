@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 8%
@@ -15,9 +15,9 @@ ht-degree: 8%
 
 # 关于服务和订阅{#about-services-and-subscriptions}
 
-Adobe Campaign让您能够创建和管理信息服务（如新闻稿），并管理这些服务的订阅。 可以并行定义多项服务，例如：针对某些产品类别、主题或网站区域的专业通讯、订阅各种类型的警报消息和实时通知。 请参阅[管理订阅](../../delivery/using/managing-subscriptions.md)。
+Adobe Campaign让您能够创建和管理信息服务（如新闻稿），并管理这些服务的订阅。 可以并行定义多项服务，例如：针对某些产品类别、主题或网站区域的专业通讯、订阅各种类型的警报消息和实时通知。 请参阅[管理订阅](managing-subscriptions.md)。
 
-您还可以允许投放收件人与其社交或专业网络成员共享这些内容。 为此，请将相关链接插入到投放中。 然后，您可以跟踪此共享过程以及相关页面的访问次数。 有关更多信息，请参阅[病毒式和社交营销](../../delivery/using/viral-and-social-marketing.md)。
+您还可以允许投放收件人与其社交或专业网络成员共享这些内容。 为此，请将相关链接插入到投放中。 然后，您可以跟踪此共享过程以及相关页面的访问次数。 有关更多信息，请参阅[病毒式和社交营销](viral-and-social-marketing.md)。
 
 >[!NOTE]
 >
