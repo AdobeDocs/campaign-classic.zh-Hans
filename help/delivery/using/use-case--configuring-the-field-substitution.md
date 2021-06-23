@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
@@ -30,15 +30,15 @@ ht-degree: 4%
 * 包含一个或多个个性化字段的投放，
 * 根据投放中使用的个性化字段修改&#x200B;**数据架构**&#x200B;的种子地址。
 
-## 创建投放{#step-1---creating-a-delivery}
+## 创建投放 {#step-1---creating-a-delivery}
 
-有关创建投放的详细步骤，请参见[创建电子邮件投放](../../delivery/using/creating-an-email-delivery.md)一节。
+有关创建投放的详细步骤，请参见[创建电子邮件投放](creating-an-email-delivery.md)一节。
 
 在此示例中，投放管理器已创建新闻稿。
 
 ![](assets/dlv_seeds_usecase_24.png)
 
-## 编辑种子地址数据架构{#editing-the-seed-addresses-data-schema}
+## 编辑种子地址数据模式 {#editing-the-seed-addresses-data-schema}
 
 有关如何修改数据架构的说明，请参阅一节。
 
@@ -51,9 +51,9 @@ ht-degree: 4%
 
 此枚举允许用户指定其客户最喜爱的文学类型。
 
-若要在种子地址&#x200B;**输入表单**&#x200B;中查看此数据架构修改，必须更新它。 请参阅[更新输入表单](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form)一节。
+若要在种子地址&#x200B;**输入表单**&#x200B;中查看此数据架构修改，必须更新它。 请参阅[更新输入表单](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form)一节。
 
-## 配置个性化{#configuring-personalization}
+## 配置个性化 {#configuring-personalization}
 
 1. 打开投放。
 
@@ -61,7 +61,7 @@ ht-degree: 4%
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. 配置投放列表和种子地址。 请参阅[识别目标群体](../../delivery/using/steps-defining-the-target-population.md)。
+1. 配置投放列表和种子地址。 请参阅[识别目标群体](steps-defining-the-target-population.md)。
 
    在本例中，用户选择&#x200B;**最喜爱的文学流派**&#x200B;为Sci-Fi的用户作为主要目标群体。
 
@@ -73,7 +73,7 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >有关&#x200B;**[!UICONTROL Edit the dynamic condition...]**&#x200B;链接的更多信息，请参阅[用例：根据条件](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)选择种子地址。
+   >有关&#x200B;**[!UICONTROL Edit the dynamic condition...]**&#x200B;链接的更多信息，请参阅[用例：根据条件](use-case--selecting-seed-addresses-on-criteria.md)选择种子地址。
 
 1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡，然后选择种子地址以测试个性化。
 
