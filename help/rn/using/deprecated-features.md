@@ -6,14 +6,14 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 778f0a9436f26c10b266019f761b499ab7547be1
+source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1634'
 ht-degree: 94%
 
 ---
 
-# 已弃用和已移除的功能 {#deprecated-and-removed-features}
+# 已弃用和已删除的功能 {#deprecated-and-removed-features}
 
 Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧功能，从而提高客户获得的整体价值，并且我们始终不断仔细考量向后兼容性。由于 Adobe Campaign Classic 可与第三方工具配合使用，所以会定期更新产品兼容性，以仅实施所支持的版本。下面和[兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出了不再与 Adobe Campaign Classic 兼容的版本。
 
@@ -27,7 +27,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
 >[!NOTE]
 >Adobe Campaign 版本和新功能列在[发行说明中](../../rn/using/latest-release.md)。
 
-## 已弃用的功能{#deprecated-features}
+## 已弃用的功能 {#deprecated-features}
 
 本部分列出最新 Campaign Classic 版本中标记为已弃用的特性和功能。
 
@@ -43,9 +43,9 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </tr>
     <tr>
   <td>Adobe Analytics 数据连接器<br></td>
-   <td><p>从Campaign 21.1版本开始，弃用Adobe Analytics Data Connector。</p>
+   <td><p>从Campaign 21.1.3版本开始，弃用Adobe Analytics Data Connector。</p>
    <p>如果您使用的是此连接器，则需要相应地调整实施。<a href="../../platform/using/adobe-analytics-connector.md">了解详情</a></p>
-  <p><em>目标移除日期：2022 年</em></p>
+  <p><em>目标移除日期：2022年3月1日</em></p>
   </td>
  </tr>
     <tr>
@@ -134,7 +134,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
 
 Campaign Classic 不再支持以下操作系统。请参阅[兼容性矩阵](../../rn/using/compatibility-matrix.md)，以在兼容性终止之前升级到新版本或迁移到新系统。
 
-### Adobe Campaign 20.2 版 {#compat-20-2-release}
+### Adobe Campaign 20.2 版  {#compat-20-2-release}
 
 从 20.2 版本开始，弃用旧版 SMS 连接器。请参阅[已弃用的功能](#deprecated-features)部分
 
