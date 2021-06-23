@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 13%
+source-wordcount: '582'
+ht-degree: 10%
 
 ---
 
@@ -21,10 +21,17 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->包含个性化的电子邮件内容中的链接需要跟踪特定的语法。 有关如何在电子邮件中添加可个性化且支持跟踪的链接的更多信息，请参阅[此部分](../../delivery/using/tracking-personalized-links.md)。
+>包含个性化的电子邮件内容中的链接需要跟踪特定的语法。 有关如何在电子邮件中添加可个性化且支持跟踪的链接的更多信息，请参阅[此部分](tracking-personalized-links.md)。
 
+我们强烈建议您在应用跟踪公式之前，在&#x200B;**[!UICONTROL Text content]**&#x200B;选项卡的分隔符中引住URL。 您在此选项卡中输入的URL分隔符将由Adobe Campaign用于标识字符串内的URL。 您可以使用以下分隔符对：
+* 括号()
+* 括号[ ]
+* 大括号{ }
 
-
+在此示例中，URL https://www.adobe.com后面跟有一个分号(;)。 收件人电子邮件客户端可以将分号解释为URL的一部分。 因此，链接可能会断开。 要避免出现此问题，您可以使用以下方式之一将URL括在分隔符中：
+* (https://www.adobe.com);
+* [https://www.adobe.com];
+* {https://www.adobe.com};
 
 默认启用消息跟踪。 要个性化URL的跟踪方式，请执行以下步骤：
 
