@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 * [第5步 — 创建发布模板](#step-5---creating-the-publication-template)、
 * [步骤6 — 创建内容](#step-6---creating-contents)。
 
-## 步骤1 — 分析要生成的内容{#step-1---analyzing-the-content-to-be-produced}
+## 步骤1 — 分析要生成的内容 {#step-1---analyzing-the-content-to-be-produced}
 
 在开始之前，您需要对要生成的内容进行精确分析：识别要显示的元素、研究与这些元素链接的约束、为每个元素定义类型等。 您还需要区分静态元素和变量元素。
 
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 这些元素是通过专用架构创建的，该架构为每个内容指定以下元素：名称、标签、类型、大小，以及与其在Adobe Campaign中的处理相关的任何其他信息。
 
-## 步骤2 — 创建数据架构{#step-2---creating-the-data-schema}
+## 步骤2 — 创建数据架构 {#step-2---creating-the-data-schema}
 
 数据模式是与内容关联的XML文档。 它描述此内容中数据的XML结构。
 
@@ -58,7 +58,7 @@ ht-degree: 2%
 >
 >有关在Adobe Campaign中创建和配置数据架构的更多信息，请参阅[此部分](../../configuration/using/about-schema-edition.md)。
 >
->[数据架构](../../delivery/using/data-schemas.md)中详细描述了特定于内容管理的配置元素。
+>[数据架构](data-schemas.md)中详细描述了特定于内容管理的配置元素。
 
 要创建数据架构，请应用以下步骤：
 
@@ -82,7 +82,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   有关更多信息，请参阅[编辑架构](../../delivery/using/data-schemas.md#editing-schemas)。
+   有关更多信息，请参阅[编辑架构](data-schemas.md#editing-schemas)。
 
    对于内容中引用的每个元素，您需要选择一个匹配的类型。
 
@@ -160,7 +160,7 @@ ht-degree: 2%
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建数据架构。
 
-## 步骤3 — 创建输入表单{#step-3---creating-the-input-form}
+## 步骤3 — 创建输入表单 {#step-3---creating-the-input-form}
 
 利用输入表单，可通过Adobe Campaign客户端控制台中的输入界面编辑内容实例。
 
@@ -170,7 +170,7 @@ ht-degree: 2%
 >
 >有关在Adobe Campaign中创建和配置表单的更多信息，请参阅[此部分](../../configuration/using/identifying-a-form.md)。
 >
->[输入表单](../../delivery/using/input-forms.md)中详细描述了特定于内容管理的配置元素。
+>[输入表单](input-forms.md)中详细描述了特定于内容管理的配置元素。
 
 要创建用于内容管理的输入表单，请应用以下步骤：
 
@@ -212,7 +212,7 @@ ht-degree: 2%
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建输入表单。
 
-## 步骤4 — 创建构建模板{#step-4---creating-the-construction-template}
+## 第4步 — 创建构建模板 {#step-4---creating-the-construction-template}
 
 使用XSLT语言可将XML文档转换为另一输出文档。 此转换在称为样式表的文档中以XML形式描述。
 
@@ -220,7 +220,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[Formatting](../../delivery/using/formatting.md)中详细描述了链接到文档构建（JavaScript或XSL模板）的限制。
+>[Formatting](formatting.md)中详细描述了链接到文档构建（JavaScript或XSL模板）的限制。
 
 要在Adobe Campaign中使用JavaScript模板，请应用以下步骤：
 
@@ -231,7 +231,7 @@ ht-degree: 2%
 1. 输入模板名称，然后选择您为内容管理创建的架构。
 1. 导入要在消息中显示的设置内容。
 
-   添加变量元素，同时遵循[JavaScript模板](../../delivery/using/formatting.md#javascript-templates)中详述的语法。
+   添加变量元素，同时遵循[JavaScript模板](formatting.md#javascript-templates)中详述的语法。
 
    要显示我们的示例中显示的内容，JavaScript模板必须包含以下元素：
 
@@ -324,7 +324,7 @@ ht-degree: 2%
    </html>
    ```
 
-   通过在模板开始时调用函数，您可以设置对从Adobe Campaign数据库获取的个性化数据的调用(在本例中为：recipient.firstName和recipient.lastName)，以便在投放中使用时可以对其进行解释。 有关更多信息，请参阅[包括JavaScript模板](../../delivery/using/formatting.md#including-a-javascript-template)。
+   通过在模板开始时调用函数，您可以设置对从Adobe Campaign数据库获取的个性化数据的调用(在本例中为：recipient.firstName和recipient.lastName)，以便在投放中使用时可以对其进行解释。 有关更多信息，请参阅[包括JavaScript模板](formatting.md#including-a-javascript-template)。
 
    在此示例中，函数将包含以下代码：
 
@@ -347,13 +347,13 @@ ht-degree: 2%
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## 步骤5 — 创建发布模板{#step-5---creating-the-publication-template}
+## 步骤5 — 创建发布模板 {#step-5---creating-the-publication-template}
 
 下一步包括创建内容发布模板，以链接架构、表单和内容构建模板。 此发布模板可以具有多种输出格式。
 
 >[!NOTE]
 >
->有关内容发布模板的更多信息，请参阅[发布模板](../../delivery/using/publication-templates.md)。
+>有关内容发布模板的更多信息，请参阅[发布模板](publication-templates.md)。
 
 在本例中，步骤如下：
 
@@ -373,15 +373,15 @@ ht-degree: 2%
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建发布模板。
 
-## 步骤6 — 创建内容{#step-6---creating-contents}
+## 步骤6 — 创建内容 {#step-6---creating-contents}
 
 您现在可以基于此发布模板创建内容。
 
 >[!NOTE]
 >
->有关创建内容的更多信息，请参阅[使用内容模板](../../delivery/using/using-a-content-template.md)。
+>有关创建内容的更多信息，请参阅[使用内容模板](using-a-content-template.md)。
 
-### 在投放向导{#creating-content-in-the-delivery-wizard}中创建内容
+### 在投放向导中创建内容 {#creating-content-in-the-delivery-wizard}
 
 要直接在投放中创建内容，请应用以下步骤：
 
