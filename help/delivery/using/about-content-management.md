@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 3%
@@ -19,7 +19,7 @@ Adobe Campaign内容管理器模块是特定Campaign Classic[内置包](../../in
 
 >[!NOTE]
 >
->本节将介绍内容管理模块。 有关如何设计电子邮件投放内容的更多信息，请参阅[此部分](../../delivery/using/defining-the-email-content.md)。
+>本节将介绍内容管理模块。 有关如何设计电子邮件投放内容的更多信息，请参阅[此部分](defining-the-email-content.md)。
 
 内容管理模块整合了工作组、工作流和内容聚合功能。 这允许自动设置消息的格式：电子邮件、邮件、短信、Web等
 
