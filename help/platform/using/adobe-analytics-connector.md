@@ -7,22 +7,26 @@ feature: 概述
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: 46e5cac1df419de933d96a3f35f7ac491a1defa5
+source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1551'
 ht-degree: 0%
 
 ---
 
 # Adobe Analytics Connector{#adobe-analytics-connector}
 
-## 关于Adobe Analytics Connector集成{#about-analytics-connector-integration}
+## 关于Adobe Analytics Connector集成 {#about-analytics-connector-integration}
+
+Adobe Analytics Connector允许Adobe Campaign和Adobe Analytics通过&#x200B;**[!UICONTROL Web Analytics connectors]**&#x200B;包进行交互。 它会以区段形式将数据转发到Adobe Campaign，其中涉及电子邮件促销活动后用户行为。 相反，它会将Adobe Campaign投放的电子邮件促销活动的指标和属性发送到Adobe Analytics。
 
 >[!CAUTION]
 >
->Adobe Analytics Connector与事务型消息传递（消息中心）不兼容。
+>* Adobe Analytics Connector与事务型消息传递（消息中心）不兼容。
+   >
+   >
+* 在开始之前，请确保在Campaign中实施AdobeIdentity Management系统(IMS)。 [请参阅此页面](../../integrations/using/about-adobe-id.md)以了解详情。
 
-Adobe Analytics Connector允许Adobe Campaign和Adobe Analytics通过&#x200B;**[!UICONTROL Web Analytics connectors]**&#x200B;包进行交互。 它会以区段形式将数据转发到Adobe Campaign，其中涉及电子邮件促销活动后用户行为。 相反，它会将Adobe Campaign投放的电子邮件促销活动的指标和属性发送到Adobe Analytics。
 
 使用Adobe Analytics Connector，Adobe Campaign可以测量Internet受众(Web Analytics)。 借助这些集成，Adobe Campaign可以在营销活动后恢复一个或多个网站的访客行为数据，并（经过分析）运行再营销活动，以便将他们转化为购买者。 相反，Web分析工具使Adobe Campaign能够将指标和促销活动属性转发到其平台。
 
@@ -39,7 +43,7 @@ Adobe Analytics Connector允许Adobe Campaign和Adobe Analytics通过&#x200B;**[
    1. 恢复和分析区段，
    1. 触发再营销活动。
 
-## 设置集成{#setting-up-the-integration}
+## 设置集成 {#setting-up-the-integration}
 
 要设置Data Connector，您必须连接到Adobe Campaign实例并执行以下操作：
 
@@ -47,7 +51,7 @@ Adobe Analytics Connector允许Adobe Campaign和Adobe Analytics通过&#x200B;**[
 1. [配置转化变量和成功事件](#configure-conversion-success)
 1. [在Adobe Campaign Classic中配置外部帐户](#external-account-classic)
 
-### 在Adobe Analytics中创建报表包{#report-suite-analytics}
+### 在Adobe Analytics中创建报表包 {#report-suite-analytics}
 
 要设置Adobe Analytics/Adobe Campaign Classic集成，必须连接到[!DNL Adobe Analytics]实例并执行以下操作：
 
@@ -79,7 +83,7 @@ Adobe Analytics Connector允许Adobe Campaign和Adobe Analytics通过&#x200B;**[
 
 1. 配置后，单击&#x200B;**[!UICONTROL Create report suite]**。
 
-### 配置转化变量和成功事件{#configure-conversion-success}
+### 配置转化变量和成功事件 {#configure-conversion-success}
 
 创建&#x200B;**[!UICONTROL Report suite]**&#x200B;后，需要按如下方式配置&#x200B;**[!UICONTROL Conversion variables]**&#x200B;和&#x200B;**[!UICONTROL Success events]**:
 
@@ -122,7 +126,7 @@ Adobe Analytics Connector允许Adobe Campaign和Adobe Analytics通过&#x200B;**[
 
 配置报表包后，您需要在Adobe Campaign Classic中配置&#x200B;**[!UICONTROL External accounts]**。
 
-### 在Adobe Campaign Classic中配置外部帐户{#external-account-classic}
+### 在Adobe Campaign Classic中配置外部帐户 {#external-account-classic}
 
 >[!IMPORTANT]
 >
@@ -198,7 +202,7 @@ Adobe Analytics Connector允许Adobe Campaign和Adobe Analytics通过&#x200B;**[
 >
 >如果您使用多个受众测量工具，则在创建外部帐户时，可以在&#x200B;**[!UICONTROL Partners]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Other]**。 您只能在投放属性中引用一个外部帐户：因此，您需要通过添加Adobe预期的参数以及使用的所有其他测量工具来调整跟踪URL的公式。
 
-### Web分析流程的技术工作流{#technical-workflows-of-web-analytics-processes}
+### Web分析流程的技术工作流 {#technical-workflows-of-web-analytics-processes}
 
 Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行的四个技术工作流处理。
 
@@ -243,7 +247,7 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
 
 
 
-## 在Adobe Campaign中跟踪投放{#tracking-deliveries-in-adobe-campaign}
+## 在Adobe Campaign中跟踪投放 {#tracking-deliveries-in-adobe-campaign}
 
 为了让Adobe Experience Cloud能够在Adobe Campaign发送投放后跟踪站点上的活动，您需要在投放属性中引用匹配的连接器。 要执行此操作，请应用以下步骤：
 
@@ -258,7 +262,7 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
 
 1. 您现在可以发送投放内容，并在Adobe Analytics中访问其报表。
 
-## 创建再营销活动{#creating-a-re-marketing-campaign}
+## 创建再营销活动 {#creating-a-re-marketing-campaign}
 
 要准备再营销活动，只需创建用于再营销类型营销活动的投放模板即可。 然后，配置再营销活动并将其链接到区段。 每个区段必须具有不同的再营销活动。
 
