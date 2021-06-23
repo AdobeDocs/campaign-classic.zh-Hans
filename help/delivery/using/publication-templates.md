@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 发布模板{#publication-templates}
 
-## 关于发布模板{#about-publication-templates}
+## 关于发布模板 {#about-publication-templates}
 
 发布模板是要发布的内容的标识卡。 它引用了发布过程中使用的资源，即：
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 * 输入表，
 * 每个输出文档的转换模板。
 
-## 发布模板{#identification-of-a-publication-template}的标识
+## 发布模板的标识 {#identification-of-a-publication-template}
 
 发布模板通过其名称和命名空间进行标识。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 >
 >实际上，建议对架构、表单和发布模板使用相同的键。
 
-## 创建并配置模板{#creating-and-configuring-the-template}
+## 创建和配置模板 {#creating-and-configuring-the-template}
 
 默认情况下，发布模板存储在&#x200B;**[!UICONTROL Administration > Configuration > Publication templates]**&#x200B;节点中。 要创建新模板，请单击模板列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关内容生成的更多信息，请参阅[创建内容实例](../../delivery/using/using-a-content-template.md#creating-a-content-instance)。
+   >有关内容生成的更多信息，请参阅[创建内容实例](using-a-content-template.md#creating-a-content-instance)。
 
 ### 投放 {#delivery}
 
@@ -95,13 +95,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关基于内容创建投放的示例，请参阅[投放内容实例](../../delivery/using/using-a-content-template.md#delivering-a-content-instance)。
+>有关基于内容创建投放的示例，请参阅[投放内容实例](using-a-content-template.md#delivering-a-content-instance)。
 
 ### 聚合器 {#aggregator}
 
 通过从脚本或查询列表聚合数据，可以使用内容数据扩充XML文档。 其目的是补充链接所引用的某些信息或从数据库中添加元素。
 
-### 多文件生成{#multi-file-generation}
+### 多文件生成 {#multi-file-generation}
 
 要激活多个文件生成，请在发布模型中选择&#x200B;**[!UICONTROL Multi-file generation]**&#x200B;选项。 此选项允许您在样式表中为输出文档的每个页面的开头指定分区标记。 内容的生成将针对遇到的每个分区标记生成一个文件。
 
