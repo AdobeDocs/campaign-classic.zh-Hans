@@ -6,20 +6,20 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
 
 ---
 
-# 配置和发送投放{#configuring-and-sending-the-delivery}
+# 配置和发送投放 {#configuring-and-sending-the-delivery}
 
 >[!NOTE]
 >
 >只有投放所有者才能启动投放。 为了使其他运算符（或运算符组）能够开始投放，您必须在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;字段中将它们添加为审阅者。 有关详细信息，请参见[此部分](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
 
-## 传递其他参数{#delivery-additiona-parameters}
+## 传递其他参数 {#delivery-additiona-parameters}
 
 在发送投放之前，您可以通过&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡在投放属性中定义发送参数。
 
@@ -41,13 +41,13 @@ ht-degree: 5%
    >
    >安装使用中间源作为时，不建议使用此选项，否则不调用mta。 有关配置SMTP服务器的更多信息，请参阅此部分](../../installation/using/configure-delivery-settings.md)。[
 
-* **[!UICONTROL Email BCC]**:此选项允许您通过密送方式在外部系统上存储电子邮件，方法是只需向消息目标添加密送电子邮件地址。如需详细信息，请参阅[此部分](../../delivery/using/sending-messages.md#archiving-emails)。
+* **[!UICONTROL Email BCC]**:此选项允许您通过密送方式在外部系统上存储电子邮件，方法是只需向消息目标添加密送电子邮件地址。如需详细信息，请参阅[此部分](sending-messages.md#archiving-emails)。
 
-## 确认投放{#confirming-delivery}
+## 确认投放 {#confirming-delivery}
 
 配置投放并准备好发送后，请确保已运行投放分析。
 
-要执行此操作，请单击&#x200B;**[!UICONTROL Send]**，选择所需的操作，然后单击&#x200B;**[!UICONTROL Analyze]**。 有关更多信息，请参阅[启动分析](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。
+要执行此操作，请单击&#x200B;**[!UICONTROL Send]**，选择所需的操作，然后单击&#x200B;**[!UICONTROL Analyze]**。 有关更多信息，请参阅[启动分析](steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -57,11 +57,11 @@ ht-degree: 5%
 
 发送消息后，您可以监控和跟踪投放内容。 有关更多信息，请参阅一下章节。
 
-* [监控投放](../../delivery/using/about-delivery-monitoring.md)
-* [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
-* [关于邮件跟踪](../../delivery/using/about-message-tracking.md)
+* [监测投放](about-delivery-monitoring.md)
+* [了解投放失败](understanding-delivery-failures.md)
+* [关于邮件跟踪](about-message-tracking.md)
 
-## 计划发送投放{#scheduling-the-delivery-sending}
+## 计划投放发送 {#scheduling-the-delivery-sending}
 
 您可以推迟邮件的投放，以便计划内容的投放或管理销售压力并避免过度营销。
 
@@ -103,7 +103,7 @@ ht-degree: 5%
 
 ![](assets/s_ncs_user_email_del_plan_calendar_timezone.png)
 
-## 使用多个波{#sending-using-multiple-waves}发送
+## 使用多个批次发送 {#sending-using-multiple-waves}
 
 要平衡负载，您可以将投放分为多个批次。 配置批数及其相对于整个交货的比例。
 
@@ -131,15 +131,15 @@ ht-degree: 5%
       在以下示例中，第一波表示投放中包含的消息总数的25%，且将立即开始。 接下来的两个批次将完成投放，并设置为以6小时为间隔开始。
 
       ![](assets/s_ncs_user_wizard_waves_create.png)
-   特定的分类规则&#x200B;**[!UICONTROL Wave scheduling check]**&#x200B;可确保在投放有效性限制之前计划好最后一次投放。 在投放属性的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中配置的促销活动分类及其规则，在[使用分类的验证过程](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies)中提供。
+   特定的分类规则&#x200B;**[!UICONTROL Wave scheduling check]**&#x200B;可确保在投放有效性限制之前计划好最后一次投放。 在投放属性的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中配置的促销活动分类及其规则，在[使用分类的验证过程](steps-validating-the-delivery.md#validation-process-with-typologies)中提供。
 
    >[!IMPORTANT]
    >
    >确保最后一批次不超过&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡中定义的投放截止时间。 否则，可能无法发送某些消息。
    >
-   >配置最后一批时，还必须允许足够的时间进行重试。 请参阅[此小节](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)。
+   >配置最后一批时，还必须允许足够的时间进行重试。 请参阅[此小节](steps-sending-the-delivery.md#configuring-retries)。
 
-1. 要监控您的发送，请转到投放日志。 请参阅[此页](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)。
+1. 要监控您的发送，请转到投放日志。 请参阅[此页](delivery-dashboard.md#delivery-logs-and-history)。
 
    您可以看到已在处理的批次中发送的投放（**[!UICONTROL Sent]**&#x200B;状态），以及将在剩余批次中发送的投放（**[!UICONTROL Pending]**&#x200B;状态）。
 
@@ -165,13 +165,13 @@ ht-degree: 5%
 
    ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
-## 配置重试{#configuring-retries}
+## 配置重试 {#configuring-retries}
 
-由于出现&#x200B;**Soft**&#x200B;或&#x200B;**Ignored**&#x200B;错误而临时未投放的消息将自动重试。 投放失败类型和原因详见[部分](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
+由于出现&#x200B;**Soft**&#x200B;或&#x200B;**Ignored**&#x200B;错误而临时未投放的消息将自动重试。 投放失败类型和原因详见[部分](understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
 
 >[!IMPORTANT]
 >
->对于托管安装或混合安装，如果已升级到[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)，则Campaign不再使用投放中的重试设置。 软退件重试次数及其间隔时间，由Enhanced MTA根据从消息电子邮件域返回的退回响应的类型和严重性确定。
+>对于托管安装或混合安装，如果已升级到[Enhanced MTA](sending-with-enhanced-mta.md)，则Campaign不再使用投放中的重试设置。 软退件重试次数及其间隔时间，由Enhanced MTA根据从消息电子邮件域返回的退回响应的类型和严重性确定。
 
 对于使用旧版Campaign MTA的内部部署安装和托管/混合安装，投放参数&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡的中心部分会指示在投放后一天应执行多少次重试，以及重试之间的最短延迟。
 
@@ -179,7 +179,7 @@ ht-degree: 5%
 
 默认情况下，会为投放的第一天安排五次重试，最短间隔为一小时，分布在一天的24小时内。 在此之后，每天对一次重试进行编程，直到投放截止时间（在&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡中定义）为止（请参阅[定义有效期](#defining-validity-period)）。
 
-## 定义有效期{#defining-validity-period}
+## 定义有效期 {#defining-validity-period}
 
 启动投放后，可在投放截止时间之前发送消息（以及任何重试）。 通过&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡在投放属性中指示此情况。
 
@@ -191,7 +191,7 @@ ht-degree: 5%
 
    >[!IMPORTANT]
    >
-   >对于托管或混合安装，如果已升级到[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)，则仅当设置为&#x200B;**3.5天或更短的**&#x200B;时，才会使用Campaign电子邮件投放中的&#x200B;**[!UICONTROL Delivery duration]**&#x200B;设置。 如果定义的值超过 3.5 天，则不会将其考虑在内。
+   >对于托管或混合安装，如果已升级到[Enhanced MTA](sending-with-enhanced-mta.md)，则仅当设置为&#x200B;**3.5天或更短的**&#x200B;时，才会使用Campaign电子邮件投放中的&#x200B;**[!UICONTROL Delivery duration]**&#x200B;设置。 如果定义的值超过 3.5 天，则不会将其考虑在内。
 
 * **资源的有效性限制**:字段 **[!UICONTROL Validity limit]** 用于已上传的资源，主要用于镜像页面和图像。本页上的资源仅在限制时间内有效（以节省磁盘空间）。
 
