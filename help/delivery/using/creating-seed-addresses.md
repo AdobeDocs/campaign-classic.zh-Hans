@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Adobe Campaign还允许您创建种子地址模板，这些模板可导入投放或营销策划中，并根据相关投放和营销策划的特定需求进行修改。 请参阅[创建种子地址模板](#creating-seed-address-templates)。
 
-## 定义地址{#defining-addresses}
+## 定义地址 {#defining-addresses}
 
 要创建种子地址，请执行以下步骤：
 
@@ -44,7 +44,7 @@ Adobe Campaign还允许您创建种子地址模板，这些模板可导入投放
    >
    >确保在&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动中已使用以“@”开头的别名定义了其他目标数据。 否则，您将无法在投放活动中将它们与种子地址一起正确使用。
 
-## 创建种子地址模板{#creating-seed-address-templates}
+## 创建种子地址模板 {#creating-seed-address-templates}
 
 要创建要导入的地址模板，并且可针对每次投放进行修改，该过程与定义新种子地址时的过程相同。 唯一的区别是种子地址模板地址必须存储在“Template”类型文件夹中。
 
@@ -58,4 +58,4 @@ Adobe Campaign还允许您创建种子地址模板，这些模板可导入投放
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 
-   现在，存储在此文件夹中的地址可用作地址模板。 您可以将种子地址导入投放或营销策划中，并根据相关投放和营销策划的特定需求对其进行调整（请参阅[添加种子地址](../../delivery/using/adding-seed-addresses.md)）。
+   现在，存储在此文件夹中的地址可用作地址模板。 您可以将种子地址导入投放或营销策划中，并根据相关投放和营销策划的特定需求对其进行调整（请参阅[添加种子地址](adding-seed-addresses.md)）。
