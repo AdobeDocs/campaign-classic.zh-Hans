@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 24%
@@ -103,8 +103,8 @@ ht-degree: 24%
 
 另请参阅：
 
-* [投放能力入门](../../delivery/using/about-deliverability.md)
+* [投放能力入门](about-deliverability.md)
 
-* [投放创建步骤](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [投放创建步骤](steps-about-delivery-creation-steps.md)
 
 * [安全和隐私检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)
