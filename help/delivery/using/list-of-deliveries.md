@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 10%
@@ -31,5 +31,5 @@ ht-degree: 10%
 
 **相关主题：**
 
-* [投放仪表板](../../delivery/using/delivery-dashboard.md)
-* [投放状态](../../delivery/using/delivery-statuses.md)
+* [投放仪表板](delivery-dashboard.md)
+* [投放状态](delivery-statuses.md)
