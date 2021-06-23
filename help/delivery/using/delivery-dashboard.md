@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 4%
@@ -32,10 +32,10 @@ ht-degree: 4%
 
 **相关主题：**
 
-* [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
-* [了解隔离管理](../../delivery/using/understanding-quarantine-management.md)
-* [投放最佳实践](../../delivery/using/delivery-best-practices.md)
-* [管理投放能力](../../delivery/using/about-deliverability.md)
+* [了解投放失败](understanding-delivery-failures.md)
+* [了解隔离管理](understanding-quarantine-management.md)
+* [投放最佳实践](delivery-best-practices.md)
+* [管理可投放性](about-deliverability.md)
 
 ## 投放摘要 {#delivery-summary}
 
@@ -49,11 +49,11 @@ ht-degree: 4%
 
 ![](assets/delivery-report.png)
 
-## 投放日志、历史记录和排除项{#delivery-logs-and-history}
+## 投放日志、历史记录和排除项 {#delivery-logs-and-history}
 
 **[!UICONTROL Delivery]**&#x200B;选项卡提供此投放中发生次数的历史记录。 它包含投放日志，即已发送消息的列表及其状态和关联的消息。
 
-对于投放，您只能在隔离中显示（例如）投放失败或地址为收件人的收件人。 为此，请单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮并选择&#x200B;**[!UICONTROL By state]**。 然后，在下拉列表中选择状态。 [此页面](../../delivery/using/delivery-statuses.md)中列出了各种状态。
+对于投放，您只能在隔离中显示（例如）投放失败或地址为收件人的收件人。 为此，请单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮并选择&#x200B;**[!UICONTROL By state]**。 然后，在下拉列表中选择状态。 [此页面](delivery-statuses.md)中列出了各种状态。
 
 >[!NOTE]
 >
@@ -63,11 +63,11 @@ ht-degree: 4%
 
 **[!UICONTROL Display the mirror page for this message...]**&#x200B;链接允许您在新窗口中查看从列表中选择的投放内容的镜像页面。
 
-镜像页面仅适用于已定义HTML内容的投放。 有关更多信息，请参阅[生成镜像页面](../../delivery/using/sending-messages.md#generating-the-mirror-page)。
+镜像页面仅适用于已定义HTML内容的投放。 有关更多信息，请参阅[生成镜像页面](sending-messages.md#generating-the-mirror-page)。
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
-## 投放跟踪日志和历史记录{#tracking-logs}
+## 投放跟踪日志和历史记录 {#tracking-logs}
 
 **[!UICONTROL Tracking]**&#x200B;选项卡列出了此投放的跟踪历史记录。 此选项卡显示已发送消息的跟踪数据，即所有受Adobe Campaign跟踪的URL。 跟踪数据每小时更新一次。
 
@@ -75,7 +75,7 @@ ht-degree: 4%
 >
 >如果未为投放启用跟踪，则不会显示此选项卡。
 
-跟踪配置在投放向导的相应阶段执行。 请参阅[如何配置跟踪的链接](../../delivery/using/how-to-configure-tracked-links.md)。
+跟踪配置在投放向导的相应阶段执行。 请参阅[如何配置跟踪的链接](how-to-configure-tracked-links.md)。
 
 **[!UICONTROL Tracking]** 数据会在投放报告中进行解释。请参阅[此小节](../../reporting/using/delivery-reports.md)。
 
@@ -87,17 +87,17 @@ ht-degree: 4%
 
 这样，您就可以确保以最佳方式在各种Web客户端、Web邮件和设备上向收件人显示您的消息。
 
-有关收件箱呈现的更多信息，请参阅[此页面](../../delivery/using/inbox-rendering.md)
+有关收件箱呈现的更多信息，请参阅[此页面](inbox-rendering.md)
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
-## 投放审核{#delivery-audit-}
+## 投放审核 {#delivery-audit-}
 
 **[!UICONTROL Audit]**&#x200B;选项卡包含投放日志以及与校样有关的所有消息。
 
 使用&#x200B;**[!UICONTROL Refresh]**&#x200B;按钮可更新数据。 使用&#x200B;**[!UICONTROL Filters]**&#x200B;按钮定义数据过滤器。
 
-通过特殊图标，可识别错误或警告。 请参阅[分析投放](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)。
+通过特殊图标，可识别错误或警告。 请参阅[分析投放](steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 使用&#x200B;**[!UICONTROL Proofs]**&#x200B;子选项卡可以查看已发送的校样列表。
 
@@ -105,7 +105,7 @@ ht-degree: 4%
 
 通过选择要显示的列，可以修改此窗口中显示的信息（以及&#x200B;**[!UICONTROL Delivery]**&#x200B;和&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡的信息）。 为此，请单击右下角的&#x200B;**[!UICONTROL Configure list]**&#x200B;图标。 有关配置列表显示的更多信息，请参阅[此部分](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
 
-## 投放仪表板同步{#delivery-dashboard-synchronization}
+## 投放仪表板同步 {#delivery-dashboard-synchronization}
 
 在投放仪表板中，您需要检查已处理的消息和投放日志，以确保已成功发送投放。
 
@@ -121,7 +121,7 @@ ht-degree: 4%
 
 您还可以通过投放仪表板通过不同的报表跟踪投放。 有关更多信息，请参阅此](../../reporting/using/delivery-reports.md)章节[。
 
-## 用例：将发件人的IP地址添加到日志{#use-case}
+## 用例：向日志添加发件人的IP地址 {#use-case}
 
 在此部分中，您将了解如何向投放日志添加有关投放中发送每封电子邮件的IP地址的信息。
 
