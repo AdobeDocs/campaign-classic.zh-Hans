@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 1%
@@ -53,11 +53,11 @@ ht-degree: 1%
 
 **[!UICONTROL NMAC opt-out management]**(mobileAppOptOutMgt)工作流可更新移动设备上的取消订阅通知。 有关此工作流的更多信息，请参阅技术工作流](../../workflow/using/about-technical-workflows.md)列表。[
 
-Adobe Campaign与HTTP/2 APNs兼容。 有关配置步骤的更多详细信息，请参阅[此部分](../../delivery/using/configuring-the-mobile-application.md)一节。
+Adobe Campaign与HTTP/2 APNs兼容。 有关配置步骤的更多详细信息，请参阅[此部分](configuring-the-mobile-application.md)一节。
 
-有关如何创建投放的全局信息，请参阅[此部分](../../delivery/using/steps-about-delivery-creation-steps.md)。
+有关如何创建投放的全局信息，请参阅[此部分](steps-about-delivery-creation-steps.md)。
 
-## 数据路径{#data-path}
+## 数据路径 {#data-path}
 
 以下架构详细介绍了使移动应用程序能够与Adobe Campaign交换数据的步骤。 此过程涉及三个实体：
 
@@ -67,13 +67,13 @@ Adobe Campaign与HTTP/2 APNs兼容。 有关配置步骤的更多详细信息，
 
 通知流程的三个主要步骤是：在Adobe Campaign中注册应用程序（订阅收集）、投放和跟踪。
 
-### 步骤1:订阅集合{#step-1--subscription-collection}
+### 步骤1:订阅集合 {#step-1--subscription-collection}
 
 用户从应用商店或Google Play下载移动应用程序。 此应用程序包含连接设置（适用于Android的iOS证书和项目密钥）和集成密钥。 首次打开应用程序时（取决于配置），系统会要求用户输入注册信息(@userKey:电子邮件或帐号)。 同时，应用程序向通知服务提出问题以收集通知ID（推送ID）。 所有这些信息（连接设置、集成密钥、通知标识符、userKey）都将发送到Adobe Campaign。
 
 ![](assets/nmac_register_view.png)
 
-### 步骤2:投放{#step-2--delivery}
+### 步骤2:投放 {#step-2--delivery}
 
 营销人员定位应用程序订阅者。 投放过程会将连接设置发送到通知服务（适用于Android的iOS证书和项目密钥）、通知ID（推送ID）和通知内容。 通知服务向目标终端发送通知。
 
