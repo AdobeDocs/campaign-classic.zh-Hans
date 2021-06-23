@@ -6,20 +6,20 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1179'
 ht-degree: 1%
 
 ---
 
 # RDBMS 特定建议{#rdbms-specific-recommendations}
 
-为了帮助您设置维护计划，本节列出了一些与Adobe Campaign支持的各种RDBMS引擎相适应的建议/最佳实践。 但是，这些只是建议。 根据您的内部流程和限制，由您自行调整以适应您的需求。 您的数据库管理员负责构建和执行这些计划。
+为了帮助您设置维护计划，本节列出了一些与Adobe Campaign支持的各种RDBMS引擎相适应的建议和最佳实践。 但是，这些只是建议。 根据您的内部流程和限制，由您自行调整以适应您的需求。 数据库管理员有责任构建和执行这些计划。
 
 ## PostgreSQL {#postgresql}
 
-### 检测大表{#detecting-large-tables}
+### 检测大表 {#detecting-large-tables}
 
 1. 您可以将以下视图添加到数据库：
 
@@ -36,71 +36,129 @@ ht-degree: 1%
     ORDER BY 3 DESC, 1, 2 DESC;
    ```
 
-1. 运行以下命令可发现大型表和索引：
+1. 您可以运行此查询以发现大型表和索引：
 
    ```
-   select * from uvSpace;
+   SELECT * FROM uvSpace;
    ```
 
-### 简单维护{#simple-maintenance}
+   或者，您也可以运行此查询，例如，以统一查看所有索引大小：
 
-在PostgreSQL下，您可以使用的典型命令是&#x200B;**真空完全**&#x200B;和&#x200B;**重新索引**。
+   ```
+   SELECT
+      tablename,
+      sum(size_mbytes) AS "sizeMB_all",
+      (
+         SELECT sum(size_mbytes)
+         FROM uvspace
+         AS uv2
+         WHERE
+            INDEXNAME IS NULL
+            AND uv1.tablename = uv2.tablename
+      ) AS "sizeMB_data",
+      (
+         SELECT sum(size_mbytes)
+         FROM uvspace 
+         AS uv2 
+         WHERE
+            INDEXNAME IS NOT NULL
+            AND uv1.tablename = uv2.tablename
+      ) AS "sizeMB_index",
+      (
+         SELECT ROW_COUNT
+         FROM uvspace
+         AS uv2
+         WHERE
+            INDEXNAME IS NULL
+            AND uv1.tablename = uv2.tablename
+      ) AS ROWS FROM uvspace AS uv1
+      GROUP BY tablename
+      ORDER BY 2 DESC
+   ```
 
-以下是使用以下两个命令定期执行的SQL维护计划的典型示例：
+### 简单的维护 {#simple-maintenance}
+
+在PostgreSQL中，您可以使用以下典型关键字：
+
+* 真空（完整、分析、详细）
+* 重新索引
+
+要运行DAVUM操作，并对其进行分析和计时，可以使用以下语法：
 
 ```
-vacuum full nmsdelivery;
- reindex table nmsdelivery;
- 
- vacuum full nmsdeliverystat;
- reindex table nmsdeliverystat;
- 
- vacuum full xtkworkflow;
- reindex table xtkworkflow;
- 
- vacuum full xtkworkflowevent;
- reindex table xtkworkflowevent;
- 
- vacuum full xtkworkflowjob;
- reindex table xtkworkflowjob;
- 
- vacuum full xtkworkflowlog;
- reindex table xtkworkflowlog;
- 
- vacuum full xtkworkflowtask;
- reindex table xtkworkflowtask;
- 
- vacuum full xtkjoblog;
- reindex table xtkjoblog;
- 
- vacuum full xtkjob;
- reindex table xtkjob;
- 
- vacuum full nmsaddress;
- reindex table nmsaddress;
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) <table>;
+```
 
- vacuum full nmsdeliverypart;
- reindex table nmsdeliverypart;
- 
- vacuum full nmsmirrorpageinfo;
- reindex table nmsmirrorpageinfo;
+我们强烈建议您不要忽略ANALYZE语句。 否则，抽真空表将保留没有统计数据。 原因是生成了新表，然后删除了旧表。 因此，表的对象ID(OID)会发生更改，但不会计算任何统计信息。 因此，您会立即遇到性能问题。
+
+以下是定期执行SQL维护计划的典型示例：
+
+```
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsdelivery;
+REINDEX TABLE nmsdelivery;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverystat;
+REINDEX TABLE nmsdeliverystat;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflow;
+REINDEX TABLE xtkworkflow;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowevent;
+REINDEX TABLE xtkworkflowevent;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowjob;
+REINDEX TABLE xtkworkflowjob;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowlog;
+REINDEX TABLE xtkworkflowlog;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowtask;
+REINDEX TABLE xtkworkflowtask;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkjoblog;
+REINDEX TABLE xtkjoblog;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkjob;
+REINDEX TABLE xtkjob;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsaddress;
+REINDEX TABLE nmsaddress;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverypart;
+REINDEX TABLE nmsdeliverypart;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
+REINDEX TABLE nmsmirrorpageinfo;
 ```
 
 >[!NOTE]
 >
 >* Adobe建议从较小的表开始：这样，如果流程在大型表（故障风险最高）上失败，则至少部分维护已完成。
->* Adobe会重新命令添加特定于数据模型的表，这些表可能会进行重大更新。 如果您的每日数据复制流量较大，则&#x200B;**NmsRecipient**&#x200B;可能会出现这种情况。
->* **真空**&#x200B;和&#x200B;**re-index**&#x200B;命令将锁定表，在执行维护时会暂停某些进程。
->* 对于超大的表（通常高于5 Gb），**真空完全**&#x200B;可能会非常低效，并且需要很长时间。 Adobe不建议将其用于&#x200B;**YyyNmsBroadLogXxx**&#x200B;表。
->* 此维护操作可通过Adobe Campaign工作流使用&#x200B;**[!UICONTROL SQL]**&#x200B;活动来实施（有关更多信息，请参阅[此部分](../../workflow/using/architecture.md)）。 确保将维护安排在活动时间较短的时间内，该时间不会与备份窗口发生冲突。
+>* Adobe建议您添加特定于数据模型的表，这些表可能会进行重大更新。 如果您的每日数据复制流量较大，则&#x200B;**NmsRecipient**&#x200B;可能会出现这种情况。
+>* VAFU和REINDEX语句将锁定表，在执行维护时会暂停某些进程。
+>* 对于非常大的表（通常高于5 Gb），真空FULL语句可能会非常低效，并且需要很长时间。 Adobe不建议将其用于&#x200B;**YyyNmsBroadLogXxx**&#x200B;表。
+>* 此维护操作可通过Adobe Campaign工作流使用&#x200B;**[!UICONTROL SQL]**&#x200B;活动来实施。 如需详细信息，请参阅[此部分](../../workflow/using/architecture.md)。确保将维护安排在活动时间较短的时间内，该时间不会与备份窗口发生冲突。
 
 >
 
 
 
-### 重建数据库{#rebuilding-a-database}
+### 重建数据库 {#rebuilding-a-database}
 
-由于&#x200B;**真空完全**&#x200B;锁定表，因此PostgreSQL不提供执行联机表重建的简单方法，因此无法进行常规生产。 这意味着，在未使用表时必须执行维护。 您可以：
+PostgreSQL不提供执行联机表重建的简单方法，因为VAFUM FULL语句锁定表，从而防止了常规生产。 这意味着，在未使用表时必须执行维护。 您可以：
 
 * 在Adobe Campaign平台停止时执行维护，
 * 停止可能写入正在重建的表的各种Adobe Campaign子服务（**nlserver停止wfserver instance_name**&#x200B;以停止工作流进程）。
@@ -367,19 +425,19 @@ function sqlGetMemo(strSql)
 以下示例涉及Microsoft SQL Server 2005。 如果您使用的是其他版本，请与数据库管理员联系以了解有关维护过程的信息。
 
 1. 首先，使用具有管理员权限的登录名连接到Microsoft SQL Server Management Studio。
-1. 转到&#x200B;**[!UICONTROL Management > Maintenance Plans]**&#x200B;文件夹，右键单击该文件夹并选择&#x200B;**[!UICONTROL Maintenance Plan Wizard]**
+1. 转到&#x200B;**[!UICONTROL Management > Maintenance Plans]**&#x200B;文件夹，右键单击该文件夹并选择&#x200B;**[!UICONTROL Maintenance Plan Wizard]**。
 1. 当第一页出现时，单击&#x200B;**[!UICONTROL Next]**。
 1. 选择要创建的维护计划类型（为每个任务单独计划或为整个计划单独计划），然后单击&#x200B;**[!UICONTROL Change...]**&#x200B;按钮。
-1. 在&#x200B;**[!UICONTROL Job schedule properties]**&#x200B;窗口中，选择所需的执行设置，然后单击&#x200B;**[!UICONTROL OK]** ，然后单击&#x200B;**[!UICONTROL Next]** 。
-1. 选择要执行的维护任务，然后单击&#x200B;**[!UICONTROL Next]** 。
+1. 在&#x200B;**[!UICONTROL Job schedule properties]**&#x200B;窗口中，选择所需的执行设置并单击&#x200B;**[!UICONTROL OK]**，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 选择要执行的维护任务，然后单击&#x200B;**[!UICONTROL Next]**。
 
    >[!NOTE]
    >
    >我们建议至少执行下面显示的维护任务。 您也可以选择统计信息更新任务，尽管该任务已经由数据库清理工作流执行。
 
 1. 在下拉列表中，选择要运行&#x200B;**[!UICONTROL Database Check Integrity]**&#x200B;任务的数据库。
-1. 选择数据库并单击&#x200B;**[!UICONTROL OK]** ，然后单击&#x200B;**[!UICONTROL Next]** 。
-1. 配置分配给数据库的最大大小，然后单击&#x200B;**[!UICONTROL Next]** 。
+1. 选择数据库并单击&#x200B;**[!UICONTROL OK]**，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 配置分配给数据库的最大大小，然后单击&#x200B;**[!UICONTROL Next]**。
 
    >[!NOTE]
    >
@@ -389,7 +447,7 @@ function sqlGetMemo(strSql)
 
    * 如果指数碎片化率在10%到40%之间，建议进行重组。
 
-      选择要重新组织的数据库和对象（表或视图），然后单击&#x200B;**[!UICONTROL Next]** 。
+      选择要重新组织的数据库和对象（表或视图），然后单击&#x200B;**[!UICONTROL Next]**。
 
       >[!NOTE]
       >
@@ -397,18 +455,18 @@ function sqlGetMemo(strSql)
 
    * 如果指数碎片率高于40%，则建议重建。
 
-      选择要应用于索引重建任务的选项，然后单击&#x200B;**[!UICONTROL Next]** 。
+      选择要应用于索引重建任务的选项，然后单击&#x200B;**[!UICONTROL Next]**。
 
       >[!NOTE]
       >
-      >重建索引过程在处理器使用方面更加受限，它锁定数据库资源。 如果希望索引在重建期间可用，请勾选&#x200B;**[!UICONTROL Keep index online while reindexing]**&#x200B;选项。
+      >重建索引过程在处理器使用方面更加受限，它锁定数据库资源。 如果希望索引在重建期间可用，请选择&#x200B;**[!UICONTROL Keep index online while reindexing]**&#x200B;选项。
 
-1. 选择要在活动报表中显示的选项，然后单击&#x200B;**[!UICONTROL Next]** 。
-1. 检查为维护计划配置的任务列表，然后单击&#x200B;**[!UICONTROL Finish]** 。
+1. 选择要在活动报表中显示的选项，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 检查为维护计划配置的任务列表，然后单击&#x200B;**[!UICONTROL Finish]**。
 
    此时将显示维护计划及其各个步骤的状态摘要。
 
-1. 维护计划完成后，单击&#x200B;**[!UICONTROL Close]** 。
+1. 维护计划完成后，单击&#x200B;**[!UICONTROL Close]**。
 1. 在Microsoft SQL Server资源管理器中，双击&#x200B;**[!UICONTROL Management > Maintenance Plans]**&#x200B;文件夹。
 1. 选择Adobe Campaign维护计划：工作流中详细介绍了各个步骤。
 
@@ -430,4 +488,4 @@ function sqlGetMemo(strSql)
 
 将选项设置为“tempdb.dbo.”时，将在Microsoft SQL Server的默认临时数据库上创建工作表。 数据库管理员需要允许对tempdb数据库进行写访问。
 
-如果设置了选项，它将用于在Adobe Campaign中配置的所有Microsoft SQL Server数据库（主数据库和外部帐户）。 请注意，如果两个外部帐户共享同一服务器，则可能会发生冲突（因为tempdb将是唯一的）。 同样，如果两个Campaign实例使用相同的MSSQL服务器，则使用相同的tempdb时可能会发生冲突。
+如果设置了选项，则它将用于在Adobe Campaign中配置的所有Microsoft SQL Server数据库（主数据库和外部帐户）。 请注意，如果两个外部帐户共享同一服务器，则可能会发生冲突（因为tempdb是唯一的）。 同样，如果两个Campaign实例使用相同的MSSQL服务器，则使用相同的tempdb时可能会发生冲突。
