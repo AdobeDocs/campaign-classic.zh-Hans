@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 管理订阅{#managing-subscriptions}
 
-## 关于信息服务{#about-information-services}
+## 关于信息服务 {#about-information-services}
 
 一种信息服务包括：
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 >
 >[此部分](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)中详细介绍了创建具有双重选择加入的订阅表单的示例。
 
-## 创建信息服务{#creating-an-information-service}
+## 创建信息服务 {#creating-an-information-service}
 
 您可以使用关联的确认消息或向订阅者自动投放信息服务，创建和管理信息服务订阅。
 
@@ -54,10 +54,10 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >[此部分](../../social/using/about-social-marketing.md)中详细介绍了facebook和Twitter订阅。 [关于移动应用程序渠道](../../delivery/using/about-mobile-app-channel.md)中详细介绍了移动应用程序订阅。
+   >[此部分](../../social/using/about-social-marketing.md)中详细介绍了facebook和Twitter订阅。 [关于移动应用程序渠道](about-mobile-app-channel.md)中详细介绍了移动应用程序订阅。
 
 * 对于电子邮件类型服务，选择&#x200B;**投放模式**。 可能的模式包括：**[!UICONTROL Newsletter]**&#x200B;或&#x200B;**[!UICONTROL Viral]**。
-* 您可以发送&#x200B;**确认消息**，用于订阅或退订。 为此，请从&#x200B;**[!UICONTROL Subscription]**&#x200B;和&#x200B;**[!UICONTROL Unsubscription]**&#x200B;字段中选择要用于创建相应投放的投放模板。 这些模板必须配置为&#x200B;**[!UICONTROL Subscription]**&#x200B;类型的目标映射，而没有定义的目标。 请参阅[关于电子邮件渠道](../../delivery/using/about-email-channel.md)一节。
+* 您可以发送&#x200B;**确认消息**，用于订阅或退订。 为此，请从&#x200B;**[!UICONTROL Subscription]**&#x200B;和&#x200B;**[!UICONTROL Unsubscription]**&#x200B;字段中选择要用于创建相应投放的投放模板。 这些模板必须配置为&#x200B;**[!UICONTROL Subscription]**&#x200B;类型的目标映射，而没有定义的目标。 请参阅[关于电子邮件渠道](about-email-channel.md)一节。
 * 默认情况下，订阅是无限的。 您可以取消选择&#x200B;**[!UICONTROL Unlimited]**&#x200B;选项以定义服务的有效期。 持续时间可以以天(**[!UICONTROL d]**)或月(**[!UICONTROL m]**)指定。
 
 保存服务后，该服务会添加到“服务和订阅”列表：单击其名称以对其进行编辑。 提供了多个选项卡。 使用&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡可查看信息服务订阅者列表（**[!UICONTROL Active subscriptions]**&#x200B;选项卡）或订阅/退订历史记录（**[!UICONTROL History]**&#x200B;选项卡）。 您还可以在此选项卡中添加和删除订阅者。 请参阅[添加和删除订阅者](#adding-and-deleting-subscribers)。
@@ -72,7 +72,7 @@ ht-degree: 2%
 
 在功能板上，单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡以跟踪订阅：订阅级别、订阅者总数等的更改。 您可以在此选项卡中存档报表并查看历史记录。
 
-## 添加和删除订阅者{#adding-and-deleting-subscribers}
+## 添加和删除订阅者 {#adding-and-deleting-subscribers}
 
 在信息服务的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**&#x200B;以添加订阅者。 您还可以右键单击订阅者列表并选择&#x200B;**[!UICONTROL Add]**。 选择要订阅的用户档案存储在其中的文件夹，然后选择要订阅的用户档案并单击&#x200B;**[!UICONTROL OK]**&#x200B;进行验证。
 
@@ -84,7 +84,7 @@ ht-degree: 2%
 
 请参阅[订阅和退订机制](#subscription-and-unsubscription-mechanisms)。
 
-## 向{#delivering-to-the-subscribers-of-a-service}服务的订阅者传送
+## 向服务的订阅者发送 {#delivering-to-the-subscribers-of-a-service}
 
 要向信息服务的订阅者提供信息服务，您可以将订阅者定位到相关信息服务，如以下示例所示：
 
@@ -104,7 +104,7 @@ ht-degree: 2%
 
 使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡可以查看选定信息服务的订阅者列表。
 
-## 订阅和退订机制{#subscription-and-unsubscription-mechanisms}
+## 订阅和退订机制 {#subscription-and-unsubscription-mechanisms}
 
 您可以设置订阅和退订机制，以自动执行流程和订阅者管理。
 
@@ -117,7 +117,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_subscribe_confirmation.png)
 
-### 为收件人订阅服务{#subscribing-a-recipient-to-a-service}
+### 为收件人订阅服务 {#subscribing-a-recipient-to-a-service}
 
 要注册信息服务的收件人，您可以：
 
@@ -140,21 +140,21 @@ ht-degree: 2%
 
    [此部分](../../workflow/using/about-workflows.md)中详细介绍了工作流及其使用方法。
 
-### 从服务{#unsubscribing-a-recipient-from-a-service}中取消收件人订阅
+### 从服务取消订阅收件人 {#unsubscribing-a-recipient-from-a-service}
 
-#### 手动取消订阅{#manual-unsubscribing}
+#### 手动取消订阅 {#manual-unsubscribing}
 
 依法，电子邮件投放必须包含退订链接。 收件人可单击此链接以更新其用户档案，并被排除在将来投放的目标之外。
 
-默认的退订链接通过投放向导中提供的内容编辑器工具栏中的最后一个按钮插入（请参阅[关于个性化](../../delivery/using/about-personalization.md)）。 当收件人单击此链接时，用户档案将添加到阻止列表（选择退出），这意味着任何投放操作将不再定向此收件人。
+默认的退订链接通过投放向导中提供的内容编辑器工具栏中的最后一个按钮插入（请参阅[关于个性化](about-personalization.md)）。 当收件人单击此链接时，用户档案将添加到阻止列表（选择退出），这意味着任何投放操作将不再定向此收件人。
 
-但是，收件人可以选择从服务取消订阅，而不取消订阅所有服务。 要实现此目的，您可以使用Web窗体（请参阅[此部分](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)）或插入个性化退订链接（请参阅[个性化块](../../delivery/using/personalization-blocks.md)）。
+但是，收件人可以选择从服务取消订阅，而不取消订阅所有服务。 要实现此目的，您可以使用Web窗体（请参阅[此部分](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)）或插入个性化退订链接（请参阅[个性化块](personalization-blocks.md)）。
 
 您还可以手动从收件人用户档案取消收件人订阅。 要执行此操作，请单击相关收件人的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡，选择相关信息服务，然后单击&#x200B;**[!UICONTROL Delete]**。
 
 您最终可以通过相关的信息服务取消一个或多个收件人的订阅。 要执行此操作，请单击服务的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡，选择相关收件人，然后单击&#x200B;**[!UICONTROL Delete]**。
 
-#### 自动退订{#automatic-unsubscription}
+#### 自动退订 {#automatic-unsubscription}
 
 信息服务的持续时间可以有限。 有效期届满后，收件人将自动取消订阅。 此时段在服务属性的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中指定。 以天表示。
 
@@ -162,7 +162,7 @@ ht-degree: 2%
 
 您还可以为群体设置退订工作流。 要实现此目的，请按照与订阅工作流相同的步骤操作，但选择&#x200B;**[!UICONTROL Unsubscription]**&#x200B;选项。 请参阅[为收件人订阅服务](#subscribing-a-recipient-to-a-service)。
 
-### 订阅者跟踪{#subscriber-tracking}
+### 订阅者跟踪 {#subscriber-tracking}
 
 您可以使用功能板上的&#x200B;**[!UICONTROL Reports]**&#x200B;链接跟踪订阅信息服务的更改。
 
