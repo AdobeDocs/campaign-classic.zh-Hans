@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 借助Adobe Campaign，您可以通过电子邮件、移动设备、线下渠道等方式，使用丰富的客户数据创建、协调和提供客户真正想要的动态促销活动。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: 9febe6bc68c8bc31714a74455fa70ef83920ded9
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 97%
+source-wordcount: '2518'
+ht-degree: 96%
 
 ---
 
@@ -38,9 +38,11 @@ ht-degree: 97%
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
    + [技术说明](technotes/technote.md)
+   + [Adobe Analytics Connector常见问题解答](technotes/aa-connector-migration.md)
    + [iOS 证书更新](technotes/ios-certificate-update.md)
    + [Campaign 配置更新](technotes/acc-config-updates.md)
    + [跟踪的 URL 更新](technotes/tracked-urls.md)
+   + [IMS更新](technotes/ims-updates.md)
 + 入门 {#getting-started}
    + 开始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
