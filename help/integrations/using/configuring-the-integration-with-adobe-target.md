@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 94e609f3df94c553e2ec84ee427887a767b9af21
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,9 @@ ht-degree: 0%
 
    * **[!UICONTROL TNT_EdgeServer]** :用于集成的Adobe Target服务器。默认情况下，此选项已被选中。 此值对应于Adobe Target **[!UICONTROL Domain Server]**，后跟值&#x200B;**/m2**。 例如：**tt.omtrdc.net/m2**。
    * **[!UICONTROL TNT_TenantName]** :Adobe Target组织名称。此值对应于Adobe Target **[!UICONTROL Client]**&#x200B;的名称。
+
    ![](assets/tar_options.png)
+
+>[!CAUTION]
+>
+>对于混合和托管架构，必须在所有服务器上设置这些选项，包括[中间源服务器](../../installation/using/mid-sourcing-server.md)和[执行实例](../../message-center/using/configuring-instances.md#execution-instance)。
