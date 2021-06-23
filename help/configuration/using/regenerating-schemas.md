@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 6%
+source-wordcount: '128'
+ht-degree: 7%
 
 ---
 
@@ -27,6 +27,6 @@ ht-degree: 6%
 >
 >如果需要强制重新生成所有模式（例如，为了解决反向链接中的某些依赖关系问题），可以从Adobe Campaign应用程序服务器中启动以下命令：
 >
->**nlserver config -postupgrade -instance:&#39;&lt;instance_name>&#39; -force**
+> `nlserver config -postupgrade -instance:`&lt;instance_name>` -force`
 >
 >然后，必须重新启动Adobe Campaign应用程序服务器，并断开/重新连接到客户端控制台。
