@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 11%
@@ -30,9 +30,9 @@ ht-degree: 11%
 >
 >列表中提供的渠道取决于您的许可协议。
 
-您可以创建新投放模板，以便根据需要预配置特定参数。 有关模板的更多信息，请参阅[此部分](../../delivery/using/about-templates.md)。
+您可以创建新投放模板，以便根据需要预配置特定参数。 有关模板的更多信息，请参阅[此部分](about-templates.md)。
 
-## 识别投放{#identifying-the-delivery}
+## 识别投放 {#identifying-the-delivery}
 
 您需要完成参数以标识投放。 操作步骤：
 
@@ -49,7 +49,7 @@ ht-degree: 11%
 
 投放内容已准备就绪，可供配置。 投放内容定义特定于每个渠道。 有关更多信息，请参阅专述章节：
 
-* [定义电子邮件内容](../../delivery/using/defining-the-email-content.md)
-* [定义短信内容](../../delivery/using/sms-create.md#defining-the-sms-content)
-* [定义直邮内容](../../delivery/using/defining-the-direct-mail-content.md)
-* [推送通知](../../delivery/using/about-mobile-app-channel.md)
+* [定义电子邮件内容](defining-the-email-content.md)
+* [定义短信内容](sms-create.md#defining-the-sms-content)
+* [定义直邮内容](defining-the-direct-mail-content.md)
+* [推送通知](about-mobile-app-channel.md)
