@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
@@ -40,7 +40,7 @@ ht-degree: 10%
 | 05/19/2020 | 罗伯特 | 蒂斯纳 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 07/22/2020 | 鲍比 | 蒂斯纳 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
-## 最佳做法 {#best-practices}
+## 最佳实践 {#best-practices}
 
 在重复数据删除期间，将单独处理入站流量。 例如，如果在查询1的结果和查询2的结果中都找到收件人A，则不会删除重复项。
 
@@ -107,7 +107,7 @@ ht-degree: 10%
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## 示例：在投放{#example--identify-the-duplicates-before-a-delivery}之前标识重复项
+## 示例：在投放之前识别重复项 {#example--identify-the-duplicates-before-a-delivery}
 
 在以下示例中，重复数据删除涉及三个查询的并集。
 
@@ -133,7 +133,7 @@ ht-degree: 10%
 
 运行工作流时，所有标识为重复项的收件人都将从结果中排除（从而排除投放），并添加到重复项列表。 此列表可能会再次使用，而不必重新标识重复项。
 
-## 将字段合并到单个数据记录{#merging-fields-into-single-record}中
+## 将字段合并到单个数据记录中 {#merging-fields-into-single-record}
 
 利用&#x200B;**[!UICONTROL Merge]**&#x200B;功能，可为重复数据删除配置一组规则，以定义要合并到单个生成数据记录中的字段或字段组。
 
@@ -159,14 +159,14 @@ ht-degree: 10%
 
    ![](assets/dedup3.png)
 
-## 输入参数{#input-parameters}
+## 输入参数 {#input-parameters}
 
 * tableName
 * 模式
 
 每个集客事件必须指定由这些参数定义的目标。
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * tableName
 * 模式
