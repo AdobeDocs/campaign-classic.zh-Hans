@@ -6,48 +6,48 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
 
 ---
 
-# 投放发送疑难解答{#delivery-troubleshooting}
+# 投放发送疑难解答 {#delivery-troubleshooting}
 
 本节列出了您在发送投放时可能遇到的常见问题，以及如何对其进行故障诊断。
 
-此外，请确保遵循[本页](../../delivery/using/delivery-performances.md)中详述的最佳实践和检查表，以确保投放运行良好。
+此外，请确保遵循[本页](delivery-performances.md)中详述的最佳实践和检查表，以确保投放运行良好。
 
 **相关主题：**
 
-* [投放状态](../../delivery/using/delivery-statuses.md)
-* [投放仪表板](../../delivery/using/delivery-dashboard.md)
-* [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
+* [投放状态](delivery-statuses.md)
+* [投放仪表板](delivery-dashboard.md)
+* [了解投放失败](understanding-delivery-failures.md)
 
-## 投放速度慢{#slow-deliveries}
+## 投放速度缓慢 {#slow-deliveries}
 
 单击&#x200B;**[!UICONTROL Send]**&#x200B;按钮后，您的投放似乎比往常花费的时间长。 这可能是由不同元素造成的：
 
-* 某些电子邮件提供商可能已将您的IP地址添加到阻止列表。 在这种情况下，请检查您的广播，并查阅[此部分](../../delivery/using/about-deliverability.md)。
+* 某些电子邮件提供商可能已将您的IP地址添加到阻止列表。 在这种情况下，请检查您的广播，并查阅[此部分](about-deliverability.md)。
 
-* 您的投放可能太大，无法快速处理，在高度个性化的JavaScript中，或者如果投放的重量超过60k字节，可能会发生这种情况。 请参阅Adobe Campaign [投放最佳实践](../../delivery/using/delivery-best-practices.md)，以了解内容准则。
+* 您的投放可能太大，无法快速处理，在高度个性化的JavaScript中，或者如果投放的重量超过60k字节，可能会发生这种情况。 请参阅Adobe Campaign [投放最佳实践](delivery-best-practices.md)，以了解内容准则。
 
 * 在Adobe Campaign MTA中可能已发生限制。 这是由以下原因造成的：
 
-   * 已添加的消息（**[!UICONTROL quotas met]**&#x200B;消息）：已满足在Campaign中定义的声明性MX规则声明的配额。 有关此消息的更多信息，请参阅[此页面](../../delivery/using/deliverability-faq.md)。 要了解有关MX规则的更多信息，请参阅[此部分](../../installation/using/email-deliverability.md#about-mx-rules)。
+   * 已添加的消息（**[!UICONTROL quotas met]**&#x200B;消息）：已满足在Campaign中定义的声明性MX规则声明的配额。 有关此消息的更多信息，请参阅[此页面](deliverability-faq.md)。 要了解有关MX规则的更多信息，请参阅[此部分](../../installation/using/email-deliverability.md#about-mx-rules)。
 
    * 已添加的消息（**[!UICONTROL dynamic flow control]**&#x200B;消息）：Campaign MTA在尝试为给定ISP发送消息时遇到错误，这会导致速度减慢，以避免错误密度过大，从而面临潜在阻止列表。
 
 * 系统问题可能会阻止服务器一起交互：这会减慢整个发送过程。 例如，检查服务器以确保在获取个性化数据过程中不存在可能影响Campaign的内存或资源问题。
 
-## 计划投放{#scheduled-deliveries-}
+## 计划投放 {#scheduled-deliveries-}
 
 如果不在确切的计划日期执行投放，则它可能与服务器时区之间的差异相关。 中间源实例和生产实例可以位于不同的时区。
 
 例如，如果中间源实例位于布里斯班时区，生产实例位于达尔文时区，则两个时区彼此相距半小时，那么在审核日志中，您会清楚地看到，如果计划在11:56生产交付，则计划在中间交付的相同交付时间为12:26，其差异为半小时。
 
-## 失败状态{#failed-status}
+## 失败状态 {#failed-status}
 
 如果电子邮件投放的状态为&#x200B;**[!UICONTROL Failed]**，则可以将其链接到个性化块的问题。 例如，当架构与投放映射不匹配时，投放中的个性化块可能会生成错误。
 
