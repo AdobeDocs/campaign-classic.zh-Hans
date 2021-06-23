@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#delivery-template-video)
 
-## 将现有投放转换为模板{#converting-an-existing-delivery-to-a-template}
+## 将现有投放转换为模板 {#converting-an-existing-delivery-to-a-template}
 
 可以将投放转换为模板，以便执行新的重复投放操作。 要将投放转换为模板，请从投放列表中选择该模板，可通过树的&#x200B;**[!UICONTROL Campaign management]**&#x200B;节点访问该模板。
 
@@ -29,9 +29,9 @@ ht-degree: 8%
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
-有关配置模式的更多信息，请参阅[将模板链接到投放](../../delivery/using/creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery)。
+有关配置模式的更多信息，请参阅[将模板链接到投放](creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery)。
 
-## 创建新模板{#creating-a-new-template}
+## 创建新模板 {#creating-a-new-template}
 
 要配置投放模板，请执行以下步骤：
 
