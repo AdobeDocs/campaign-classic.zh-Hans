@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 2%
 >
 >**[!UICONTROL Digital Content Editor (DCE)]**&#x200B;中也提供了个性化块。 有关详细信息，请参见[此页面](../../web/using/editing-content.md#inserting-a-personalization-block)。
 
-## 插入个性化块{#inserting-personalization-blocks}
+## 插入个性化块 {#inserting-personalization-blocks}
 
 要在消息中插入个性化块，请执行以下步骤：
 
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_personalized_block06.png)
 
-## 个性化块示例{#personalization-blocks-example}
+## 个性化块示例 {#personalization-blocks-example}
 
 在此示例中，我们创建了一封电子邮件，在其中，我们使用个性化块使收件人能够查看镜像页面、在社交网络上共享新闻稿，以及取消订阅将来的投放。
 
@@ -68,7 +68,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关镜像页面生成的详细信息，请参阅[生成镜像页面](../../delivery/using/sending-messages.md#generating-the-mirror-page)。
+>有关镜像页面生成的详细信息，请参阅[生成镜像页面](sending-messages.md#generating-the-mirror-page)。
 
 1. 创建新投放或打开现有电子邮件类型投放。
 1. 在投放向导中，单击&#x200B;**[!UICONTROL Subject]**&#x200B;以编辑消息的主题并输入主题。
@@ -83,7 +83,7 @@ ht-degree: 2%
 
 1. 确认块内容显示正确。
 
-## 现成个性化块{#out-of-the-box-personalization-blocks}
+## 开箱即用的个性化块 {#out-of-the-box-personalization-blocks}
 
 默认情况下，会提供个性化块列表，以帮助您个性化消息的内容。
 
@@ -100,24 +100,12 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >有关镜像页面生成的详细信息，请参阅[生成镜像页面](../../delivery/using/sending-messages.md#generating-the-mirror-page)。
+   >有关镜像页面生成的详细信息，请参阅[生成镜像页面](sending-messages.md#generating-the-mirror-page)。
 
 * **[!UICONTROL Link to mirror page]** :插入指向镜像页面的链接：“如果您无法正确查看此消息，请单击此处”。
 * **[!UICONTROL Unsubscription link]** :插入一个链接，以取消所有投放的订阻止列表阅()。
-* **[!UICONTROL Formatting function for proper nouns]** :会生成 **[!UICONTROL toSmartCase]** Javascript函数，该函数会将每个单词的第一个字母更改为大写。此块必须插入投放源代码中的&#x200B;**`<script>...</script>`**&#x200B;标记中。
-
-   在以下示例中，函数用于将元素“My header”替换为每个单词处的大写字母“My new header”：
-
-   ```
-   <h1 id="sample">My header</h1>
-   <script><%@ include view='toSmartCase'%>;
-   document.getElementById("sample").innerHTML = toSmartCase("My new header");
-   </script>
-   ```
-
-   ![](assets/s_ncs_user_personalized_block_uppercasefunction.png)
-
-* **[!UICONTROL Registration page URL]** :插入订阅URL(请参阅 [关于服务和订阅](../../delivery/using/about-services-and-subscriptions.md))。
+* **[!UICONTROL Formatting function for proper nouns]** :会生成 **[!UICONTROL toSmartCase]** Javascript函数，该函数会将每个单词的第一个字母更改为大写。
+* **[!UICONTROL Registration page URL]** :插入订阅URL(请参阅 [关于服务和订阅](about-services-and-subscriptions.md))。
 * **[!UICONTROL Registration link]** :插入订阅链接。在配置实例时定义的规则集。
 * **[!UICONTROL Registration link (with referrer)]** :插入订阅链接，以识别访客和投放。配置实例时已定义链接。
 
@@ -126,11 +114,11 @@ ht-degree: 2%
    >此块可用于仅定位访客的投放。
 
 * **[!UICONTROL Registration confirmation]** :插入用于确认订阅的链接。
-* **[!UICONTROL Social network sharing links]** :插入使收件人能够与电子邮件客户端、Facebook、Twitter和LinkedIn共享指向镜像页面内容的链接的按钮(请参阅传 [播营销：转发给朋友](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
+* **[!UICONTROL Social network sharing links]** :插入使收件人能够与电子邮件客户端、Facebook、Twitter和LinkedIn共享指向镜像页面内容的链接的按钮(请参阅传 [播营销：转发给朋友](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
 * **[!UICONTROL Style of content emails]** 和 **[!UICONTROL Notification style]** :生成代码，以使用预定义的HTML样式来设置电子邮件的格式。这些块必须插入投放源代码&#x200B;**[!UICONTROL ...]**&#x200B;部分的&#x200B;**`<style>...</style>`**&#x200B;标记中。
 * **[!UICONTROL Offer acceptance URL in unitary mode]** :插入一个URL，以便将交互选件设置 **[!UICONTROL Accepted]** 为(请 [参阅此章节](../../interaction/using/offer-analysis-report.md))。
 
-## 定义自定义个性化块{#defining-custom-personalization-blocks}
+## 定义自定义个性化块 {#defining-custom-personalization-blocks}
 
 您可以通过&#x200B;**[!UICONTROL Include...]**&#x200B;菜单从个性化字段图标定义要插入的新个性化字段。 这些字段在个性化块中定义。
 
@@ -152,7 +140,7 @@ ht-degree: 2%
 
    * 输入内容（HTML、文本、JavaScript等） 单击&#x200B;**[!UICONTROL Save]**。
 
-## 教程视频{#personalization-blocks-video}
+## 教程视频 {#personalization-blocks-video}
 
 了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放的内容个性化。
 
