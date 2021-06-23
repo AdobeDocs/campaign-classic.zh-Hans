@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 >
 >优惠券数据可以使用CSV和XML格式导入和导出。 有关导入和导出的详细信息，请参阅[此部分](../../platform/using/get-started-data-import-export.md)。
 
-## 创建优惠券{#creating-a-coupon}
+## 创建优惠券 {#creating-a-coupon}
 
 在创建优惠券时，优惠券模块为您提供两个选项：
 
@@ -58,7 +58,7 @@ ht-degree: 1%
    >
    >可以批量导入单个优惠券。 有关导入和导出的详细信息，请参阅[此部分](../../platform/using/get-started-data-import-export.md)。
 
-### 配置单个优惠券{#configuring-individual-coupons}
+### 配置单个优惠券 {#configuring-individual-coupons}
 
 ![](assets/deliv_coup_03.png)
 
@@ -71,9 +71,9 @@ ht-degree: 1%
 
 **[!UICONTROL status]**、**[!UICONTROL channel]**&#x200B;和&#x200B;**[!UICONTROL address]**&#x200B;的值会自动完成。 但是，Campaign无法恢复&#x200B;**[!UICONTROL redeemed on]**&#x200B;的值。 可通过导入包含优惠券兑换详细信息的文件来完成这些操作。
 
-## 将优惠券插入电子邮件投放{#inserting-a-coupon-into-an-email-delivery}
+## 在电子邮件投放中插入优惠券 {#inserting-a-coupon-into-an-email-delivery}
 
-在以下示例中，从主页创建投放。 有关如何创建投放的详细说明，请参阅[此部分](../../delivery/using/about-email-channel.md)。 您还可以在工作流中向投放添加优惠券。
+在以下示例中，从主页创建投放。 有关如何创建投放的详细说明，请参阅[此部分](about-email-channel.md)。 您还可以在工作流中向投放添加优惠券。
 
 1. 转到&#x200B;**[!UICONTROL Campaigns]**&#x200B;并选择&#x200B;**[!UICONTROL Deliveries]**。
 1. 单击 **[!UICONTROL Create]**。
@@ -149,7 +149,7 @@ ht-degree: 1%
 >
 >默认情况下，优惠券管理模块使用&#x200B;**nms:recipient**&#x200B;表。 有关如何使用其他表的说明，请参阅[编辑架构](../../configuration/using/data-schemas.md)。
 
-## 管理优惠券不足{#managing-insufficient-coupons}
+## 管理优惠券不足 {#managing-insufficient-coupons}
 
 如果优惠券数少于消息数，投放分析会停止。 在这种情况下，您可以导入更多优惠券或限制消息数量。 如果要限制消息数量，请按照以下说明操作。
 
