@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 利用此窗口，可输入创建电子邮件标题所需的所有信息。 此信息可以个性化。要实现此目的，请使用输入字段右侧的按钮插入个性化字段。
 
-要了解如何插入和使用个性化字段，请参阅[关于个性化](../../delivery/using/about-personalization.md)一节。
+要了解如何插入和使用个性化字段，请参阅[关于个性化](about-personalization.md)一节。
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ ht-degree: 1%
 >
 >在由互联网访问提供商(ISP)为打击未经请求的电子邮件（垃圾邮件）而实施的检查的上下文中，Adobe建议创建与为投放和回复指定的地址对应的电子邮件帐户。 请咨询消息系统管理员。
 
-## 消息主题{#message-subject}
+## 消息主题 {#message-subject}
 
 消息的主题在相应的字段中配置。 您可以直接在字段中输入该脚本，也可以单击&#x200B;**[!UICONTROL Subject]**&#x200B;链接以输入脚本。 个性化链接允许您在主题中插入数据库字段。
 
@@ -53,11 +53,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[关于个性化](../../delivery/using/about-personalization.md)中介绍了个性化字段的使用情况。
+>[关于个性化](about-personalization.md)中介绍了个性化字段的使用情况。
 
 您还可以使用&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口将表情符号插入主题行。
 
-## 消息内容{#message-content}
+## 消息内容 {#message-content}
 
 >[!IMPORTANT]
 >
@@ -91,7 +91,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >[关于个性化](../../delivery/using/about-personalization.md)中介绍了个性化字段的使用情况。
+   >[关于个性化](about-personalization.md)中介绍了个性化字段的使用情况。
 
    通过页面底部的选项卡，可显示所创建页面的HTML代码，并查看消息的个性化呈现。 要启动此显示屏，请单击&#x200B;**[!UICONTROL Preview]** ，然后使用工具栏中的&#x200B;**[!UICONTROL Test personalization]**&#x200B;按钮选择收件人。 您可以从定义的目标中选择收件人或选择其他收件人。
 
@@ -137,9 +137,9 @@ Select the format of the email in the lower section of the window:
 
 Adobe Campaign允许您尝试新的交互式[AMP for Email](https://amp.dev/about/email/)格式，该格式允许在特定条件下发送动态电子邮件。
 
-有关更多信息，请参阅[此章节](../../delivery/using/defining-interactive-content.md)。
+有关更多信息，请参阅[此章节](defining-interactive-content.md)。
 
-## 使用内容管理{#using-content-management}
+## 使用内容管理 {#using-content-management}
 
 您可以直接在投放向导中使用内容管理表单定义投放的内容。 要实现此目的，必须在投放属性的&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中引用要使用的内容管理的发布模板。
 
@@ -151,9 +151,9 @@ Adobe Campaign允许您尝试新的交互式[AMP for Email](https://amp.dev/abou
 
 >[!NOTE]
 >
->有关Adobe Campaign中内容管理的更多信息，请参阅[此部分](../../delivery/using/about-content-management.md)。
+>有关Adobe Campaign中内容管理的更多信息，请参阅[此部分](about-content-management.md)。
 
-## 插入表情符号{#inserting-emoticons}
+## 插入表情符号 {#inserting-emoticons}
 
 您可以在电子邮件内容中插入表情符号。
 
@@ -164,9 +164,9 @@ Adobe Campaign允许您尝试新的交互式[AMP for Email](https://amp.dev/abou
 
 1. 完成后单击&#x200B;**[!UICONTROL Close]**&#x200B;按钮。
 
-要自定义表情符号列表，请参阅此[页面](../../delivery/using/customizing-emoticon-list.md)。
+要自定义表情符号列表，请参阅此[页面](customizing-emoticon-list.md)。
 
-## 添加图像{#adding-images}
+## 添加图像 {#adding-images}
 
 HTML格式的电子邮件投放可以包含图像。 在投放向导中，您可以导入包含图像的HTML页面，或通过&#x200B;**[!UICONTROL Image]**&#x200B;图标使用HTML编辑器直接插入图像。
 
@@ -211,11 +211,11 @@ HTML格式的电子邮件投放可以包含图像。 在投放向导中，您可
 >
 >在手动上传或发送消息期间，会修改图像访问路径。
 
-### 发送包含图像{#sending-a-message-with-images}的消息
+### 发送包含图像的消息 {#sending-a-message-with-images}
 
 >[!NOTE]
 >
->为避免出现性能问题，如果您包含从个性化URL中以[attachment](../../delivery/using/attaching-files.md)形式动态下载的图像，则默认情况下，每个图像大小不应超过100,000字节。 此建议的阈值可从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置。
+>为避免出现性能问题，如果您包含从个性化URL中以[attachment](attaching-files.md)形式动态下载的图像，则默认情况下，每个图像大小不应超过100,000字节。 此建议的阈值可从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置。
 
 以下是包含四张图像的投放示例：
 
