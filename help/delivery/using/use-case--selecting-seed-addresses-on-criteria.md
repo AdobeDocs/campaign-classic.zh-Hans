@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -28,19 +28,19 @@ ht-degree: 3%
 * 准备发送的投放，
 * 具有相同值的种子地址。 此值可以是Adobe Campaign中已存在的字段。 在本例中，种子地址共享“部门”字段中的“采购”值，默认情况下，该值不存在于应用程序中。
 
-## 步骤1 — 创建投放{#step-1---creating-a-delivery}
+## 步骤1 — 创建投放 {#step-1---creating-a-delivery}
 
-有关创建投放的详细步骤，请参见[创建电子邮件投放](../../delivery/using/creating-an-email-delivery.md)一节。
+有关创建投放的详细步骤，请参见[创建电子邮件投放](creating-an-email-delivery.md)一节。
 
 在此示例中，投放管理器创建了新闻稿并选择了收件人。
 
 ![](assets/dlv_seeds_usecase_01.png)
 
-## 步骤2 — 创建公用值{#step-2---creating-a-common-value}
+## 步骤2 — 创建公共值 {#step-2---creating-a-common-value}
 
 要创建与示例（采购部门）中相同的公用值，您必须首先扩展种子地址的&#x200B;**数据架构**&#x200B;并编辑关联的输入表单。
 
-### 扩展数据架构{#extending-the-data-schema}
+### 扩展数据模式 {#extending-the-data-schema}
 
 有关模式扩展的更多详细信息，请参阅[配置指南](../../configuration/using/data-schemas.md)。
 
@@ -95,7 +95,7 @@ ht-degree: 3%
 
 1. 断开连接，然后重新连接到Adobe Campaign。 现在，对种子地址数据模式所做的更改已生效。 为了从种子地址屏幕中显示它们，必须更新关联的&#x200B;**[!UICONTROL Input form]**。 请参阅[更新输入表单](#updating-the-input-form)一节。
 
-#### 从链接的表{#extending-the-data-schema-from-a-linked-table}扩展数据模式
+#### 从链接的表扩展数据模式 {#extending-the-data-schema-from-a-linked-table}
 
 种子地址数据模式可以使用来自链接到收件人数据模式 — 收件人(nms)的表的值。
 
@@ -131,7 +131,7 @@ ht-degree: 3%
 
 请参阅[更新输入表单](#updating-the-input-form)一节。
 
-#### 更新输入表单{#updating-the-input-form}
+#### 更新输入表单 {#updating-the-input-form}
 
 1. 在&#x200B;**[!UICONTROL Administration > Configuration > Input forms]**&#x200B;节点中，找到输入表单中的种子地址。
 
@@ -152,7 +152,7 @@ ht-degree: 3%
 
 1. 编辑要用于交货的种子地址，并输入&#x200B;**Purchasing**&#x200B;作为&#x200B;**[!UICONTROL Department]**&#x200B;字段中的值。
 
-## 步骤3 — 定义条件{#step-3---defining-the-condition}
+## 步骤3 — 定义条件 {#step-3---defining-the-condition}
 
 您现在可以为投放指定种子地址的动态条件。 操作步骤：
 
