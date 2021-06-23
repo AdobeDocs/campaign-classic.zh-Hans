@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 3%
@@ -92,7 +92,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 对于使用Adobe Campaign事务型消息传递功能的客户，任何用于触发电子邮件的API调用都将在很短的升级停机时间内排队等候，并将在升级完成后尝试执行。
 
-## 增强的MTA特性{#enhanced-mta-impacts}
+## 增强的MTA特性 {#enhanced-mta-impacts}
 
 ### 增强的MTA标头
 
@@ -129,7 +129,7 @@ Campaign **[!UICONTROL Delivery log qualification]**&#x200B;表中的退回鉴�
 >
 >Enhanced MTA符合SMTP退回的条件，并以映射到促销活动退回原因和鉴别的退回代码的形式，将该鉴别发送回Campaign。
 
-有关退回鉴别的更多信息，请参阅[此部分](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)。
+有关退回鉴别的更多信息，请参阅[此部分](understanding-delivery-failures.md#bounce-mail-qualification)。
 
 ### 投放吞吐量
 
@@ -145,7 +145,7 @@ Campaign **[!UICONTROL Delivery log qualification]**&#x200B;表中的退回鉴�
 
 消息在 Enhanced MTA 队列中停留 3.5 天且投放失败后，该消息将超时，在投放日志中的状态将从 **[!UICONTROL Sent]** 更新为 **[!UICONTROL Failed]**。
 
-有关有效期的更多信息，请参阅[此部分](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)。
+有关有效期的更多信息，请参阅[此部分](steps-sending-the-delivery.md#defining-validity-period)。
 
 ### DKIM签名
 
@@ -154,13 +154,13 @@ DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成�
 
 ### 交付成功报告
 
-在电子邮件投放[功能板](../../delivery/using/delivery-dashboard.md)的&#x200B;**[!UICONTROL Summary]**&#x200B;视图中，**[!UICONTROL Success]**&#x200B;百分比从100%开始，然后在投放[有效期](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)期间逐步下降，因为软退回和硬退回从Enhanced MTA报告回Campaign。
+在电子邮件投放[功能板](delivery-dashboard.md)的&#x200B;**[!UICONTROL Summary]**&#x200B;视图中，**[!UICONTROL Success]**&#x200B;百分比从100%开始，然后在投放[有效期](steps-sending-the-delivery.md#defining-validity-period)期间逐步下降，因为软退回和硬退回从Enhanced MTA报告回Campaign。
 
-事实上，一旦成功从Campaign将所有消息转发到增强型MTA，则所有消息在[发送日志](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)中都会显示为&#x200B;**[!UICONTROL Sent]**。 除非或直到该消息的[退回](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)从Enhanced MTA传回至Campaign，否则它们将保持该状态。
+事实上，一旦成功从Campaign将所有消息转发到增强型MTA，则所有消息在[发送日志](delivery-dashboard.md#delivery-logs-and-history)中都会显示为&#x200B;**[!UICONTROL Sent]**。 除非或直到该消息的[退回](understanding-delivery-failures.md#delivery-failure-types-and-reasons)从Enhanced MTA传回至Campaign，否则它们将保持该状态。
 
 当硬弹回消息从增强型MTA返回报告时，其状态从&#x200B;**[!UICONTROL Sent]**&#x200B;更改为&#x200B;**[!UICONTROL Failed]**，并相应地降低&#x200B;**[!UICONTROL Success]**&#x200B;百分比。
 
-当从Enhanced MTA报告软弹跳消息时，它们仍显示为&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然后，在整个投放有效期内，软弹回消息将重试](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure):[
+当从Enhanced MTA报告软弹跳消息时，它们仍显示为&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然后，在整个投放有效期内，软弹回消息将重试](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure):[
 
 * 如果在有效期结束前成功重试，则消息状态将保持为&#x200B;**[!UICONTROL Sent]**，而&#x200B;**[!UICONTROL Success]**&#x200B;百分比将保持不变。
 
@@ -170,7 +170,7 @@ DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成�
 
 <!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
 
-### 电子邮件反馈服务（测试版）{#email-feedback-service}
+### 电子邮件反馈服务（测试版） {#email-feedback-service}
 
 利用电子邮件反馈服务(EFS)功能，可以准确报告每封电子邮件的状态，因为反馈是直接从增强型MTA（邮件传输代理）中捕获的。
 
@@ -192,7 +192,7 @@ DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成�
 
 当硬弹回消息从增强型MTA返回报告时，其日志状态将从&#x200B;**[!UICONTROL Taken into account by the service provider]**&#x200B;更改为&#x200B;**[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。
 
-当从Enhanced MTA报告软弹回消息时，其日志状态保持不变(**[!UICONTROL Taken into account by the service provider]**):只更新了[错误原因](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。 **[!UICONTROL Success]**&#x200B;百分比保持不变。 然后，在投放[有效期](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)期间重试软弹回消息：
+当从Enhanced MTA报告软弹回消息时，其日志状态保持不变(**[!UICONTROL Taken into account by the service provider]**):只更新了[错误原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons)<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。 **[!UICONTROL Success]**&#x200B;百分比保持不变。 然后，在投放[有效期](steps-sending-the-delivery.md#defining-validity-period)期间重试软弹回消息：
 
 * 如果在有效期结束前成功重试，则消息状态将变为&#x200B;**[!UICONTROL Sent]**，并相应地提高&#x200B;**[!UICONTROL Success]**&#x200B;百分比。
 
@@ -200,9 +200,9 @@ DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成�
 
 >[!NOTE]
 >
->有关硬退回和软退回的更多信息，请参阅[此部分](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
+>有关硬退回和软退回的更多信息，请参阅[此部分](understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
 >
->有关投放临时失败后重试的更多信息，请参阅[此部分](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
+>有关投放临时失败后重试的更多信息，请参阅[此部分](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
 
 
 下表显示了EFS功能引入的KPI变化以及发送日志状态。
