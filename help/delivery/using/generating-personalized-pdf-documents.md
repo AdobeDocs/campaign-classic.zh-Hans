@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 生成个性化 PDF 文档{#generating-personalized-pdf-documents}
 
-## 关于变量PDF文档{#about-variable-pdf-documents}
+## 关于可变PDF文档 {#about-variable-pdf-documents}
 
 Adobe Campaign允许您从LibreOffice或Microsoft Word文档中生成变量PDF文档（用于电子邮件附件、直邮投放）。
 
@@ -23,7 +23,7 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档中生成变量PDF�
 
 要个性化您的文档，可使用与电子邮件个性化相同的JavaScript功能。
 
-您需要激活&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;选项。 将文件附加到投放电子邮件后，即可访问此选项。 有关附加计算文件的更多信息，请参阅[附加文件](../../delivery/using/attaching-files.md)一节。
+您需要激活&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;选项。 将文件附加到投放电子邮件后，即可访问此选项。 有关附加计算文件的更多信息，请参阅[附加文件](attaching-files.md)一节。
 
 发票题头个性化示例：
 
@@ -31,7 +31,7 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档中生成变量PDF�
 
 要通过URL生成动态表或包含图像，您需要遵循特定流程。
 
-## 生成动态表{#generating-dynamic-tables}
+## 生成动态表 {#generating-dynamic-tables}
 
 生成动态表的步骤如下：
 
@@ -45,7 +45,7 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档中生成变量PDF�
 
    ![](assets/s_ncs_pdf_table.png)
 
-## 插入外部图像{#inserting-external-images}
+## 插入外部图像 {#inserting-external-images}
 
 例如，如果您希望使用URL在收件人的字段中输入的图像来个性化文档，则插入外部图像会非常有用。
 
