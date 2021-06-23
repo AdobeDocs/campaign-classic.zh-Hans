@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 6%
@@ -25,11 +25,11 @@ ht-degree: 6%
 
 内容配置需要以下资源：
 
-* 数据架构：XML内容结构的描述。 有关更多信息，请参阅[数据架构](../../delivery/using/data-schemas.md)。
-* 数据输入表单：数据输入屏幕的构建。 有关更多信息，请参阅[输入表单](../../delivery/using/input-forms.md)。
-* 图像：数据输入表单中使用的图像。 有关更多信息，请参阅[图像管理](../../delivery/using/formatting.md#image-management)。
-* 样式表：使用XSLT语言设置输出文档的格式。 有关更多信息，请参阅[格式化](../../delivery/using/formatting.md)。
-* JavaScript模板：使用JavaScript语言设置输出文档的格式。 有关更多信息，请参阅[发布模板](../../delivery/using/publication-templates.md)。
-* JavaScript代码：用于数据聚合的JavaScript代码。 有关更多信息，请参阅[聚合器](../../delivery/using/publication-templates.md#aggregator)。
-* 发布模板：发布模板的定义。 有关更多信息，请参阅[发布模板](../../delivery/using/publication-templates.md)。
-* 内容：要创建和发布的内容实例。 有关更多信息，请参阅[使用内容模板](../../delivery/using/using-a-content-template.md)。
+* 数据架构：XML内容结构的描述。 有关更多信息，请参阅[数据架构](data-schemas.md)。
+* 数据输入表单：数据输入屏幕的构建。 有关更多信息，请参阅[输入表单](input-forms.md)。
+* 图像：数据输入表单中使用的图像。 有关更多信息，请参阅[图像管理](formatting.md#image-management)。
+* 样式表：使用XSLT语言设置输出文档的格式。 有关更多信息，请参阅[格式化](formatting.md)。
+* JavaScript模板：使用JavaScript语言设置输出文档的格式。 有关更多信息，请参阅[发布模板](publication-templates.md)。
+* JavaScript代码：用于数据聚合的JavaScript代码。 有关更多信息，请参阅[聚合器](publication-templates.md#aggregator)。
+* 发布模板：发布模板的定义。 有关更多信息，请参阅[发布模板](publication-templates.md)。
+* 内容：要创建和发布的内容实例。 有关更多信息，请参阅[使用内容模板](using-a-content-template.md)。
