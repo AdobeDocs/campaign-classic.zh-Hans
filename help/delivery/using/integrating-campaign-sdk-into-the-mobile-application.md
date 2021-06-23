@@ -7,14 +7,14 @@ content-type: reference
 topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
 
-# 将Campaign SDK与您的应用程序集成{#integrating-campaign-sdk-into-the-mobile-application}
+# 将Campaign SDK与您的应用程序集成 {#integrating-campaign-sdk-into-the-mobile-application}
 
 适用于iOS和Android的Campaign SDK是移动设备应用程序渠道模块的组件之一。
 
@@ -54,7 +54,7 @@ SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
    >
    >对于SDK版本1.0.25,**Neolane_SDK.h**&#x200B;文件中提供了这四个架构。
 
-## 声明集成设置{#declaring-integration-settings}
+## 声明集成设置 {#declaring-integration-settings}
 
 要将Campaign SDK集成到移动应用程序中，功能管理员必须向开发人员提供以下信息：
 
@@ -62,7 +62,7 @@ SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
 
    >[!NOTE]
    >
-   >此集成密钥在Adobe Campaign控制台中的专用于移动设备应用程序的服务的&#x200B;**[!UICONTROL Information]**&#x200B;选项卡中输入。 请参阅[在Adobe Campaign中配置移动应用程序](../../delivery/using/configuring-the-mobile-application.md)。
+   >此集成密钥在Adobe Campaign控制台中的专用于移动设备应用程序的服务的&#x200B;**[!UICONTROL Information]**&#x200B;选项卡中输入。 请参阅[在Adobe Campaign中配置移动应用程序](configuring-the-mobile-application.md)。
 
 * **跟踪URL**:与Adobe Campaign跟踪服务器的地址匹配。
 * **营销URL**:以启用订阅的收集。
@@ -84,7 +84,7 @@ SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
    [nl setIntegrationKey:strIntegrationKey];
    ```
 
-## 注册函数{#registration-function}
+## 注册功能 {#registration-function}
 
 注册功能允许您：
 
@@ -140,7 +140,7 @@ SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
    }
    ```
 
-## 跟踪函数{#tracking-function}
+## 跟踪函数 {#tracking-function}
 
 * **在Android中**:
 
@@ -292,7 +292,7 @@ SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
    >
    >从版本7.0开始，在&#x200B;**application:didReceiveRemoteNotification:fetchCompletionHandler**&#x200B;函数实现后，操作系统将只调用此函数。 因此，不会调用&#x200B;**application:didReceiveRemoteNotification**&#x200B;函数。
 
-## 静默通知跟踪{#silent-notification-tracking}
+## 无提示通知跟踪 {#silent-notification-tracking}
 
 iOS允许您发送静默通知、通知或数据，这些通知或数据将直接发送到移动应用程序，而不显示。 Adobe Campaign允许您跟踪它们。
 
@@ -332,7 +332,7 @@ iOS允许您发送静默通知、通知或数据，这些通知或数据将直�
 }
 ```
 
-### RegisterDeviceStatus委托{#registerdevicestatus-delegate}
+### RegisterDeviceStatus委托 {#registerdevicestatus-delegate}
 
 >[!NOTE]
 >
@@ -530,7 +530,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 ## 变量 {#variables}
 
-利用变量，可在收到通知后定义移动应用程序行为。 这些变量必须在移动应用程序代码和Adobe Campaign控制台的专用移动应用程序服务的&#x200B;**[!UICONTROL Variables]**&#x200B;选项卡中定义(请参阅[在Adobe Campaign中配置移动应用程序](../../delivery/using/configuring-the-mobile-application.md))。 以下代码示例允许移动设备应用程序收集通知中任何添加的变量。 在我们的示例中，我们使用“VAR”变量。
+利用变量，可在收到通知后定义移动应用程序行为。 这些变量必须在移动应用程序代码和Adobe Campaign控制台的专用移动应用程序服务的&#x200B;**[!UICONTROL Variables]**&#x200B;选项卡中定义(请参阅[在Adobe Campaign中配置移动应用程序](configuring-the-mobile-application.md))。 以下代码示例允许移动设备应用程序收集通知中任何添加的变量。 在我们的示例中，我们使用“VAR”变量。
 
 * **在Android中**:
 
@@ -576,7 +576,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 >
 >Adobe建议选择短变量名称，因为对于iOS和Android，通知大小限制为4kB。
 
-## 通知服务扩展{#notification-service-extension}
+## 通知服务扩展 {#notification-service-extension}
 
 **对于iOS**
 
@@ -610,7 +610,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
     // Perform the download to local storage
 ```
 
-## 通知内容扩展{#notification-content-extension}
+## 通知内容扩展 {#notification-content-extension}
 
 **对于iOS**
 
