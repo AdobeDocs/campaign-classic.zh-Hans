@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 4%
 
 ---
 
-# 短信渠道{#sms-channel}快速入门
+# 短信渠道快速入门{#sms-channel}
 
 
 使用Adobe Campaign发送个性化的短信消息。
@@ -21,7 +21,7 @@ ht-degree: 4%
 开始发送短信之前：
 
 * 确保收件人的用户档案至少包含其用户档案中的移动电话。
-* 进一步了解Adobe Campaign [投放最佳实践](../../delivery/using/delivery-best-practices.md)。
+* 进一步了解Adobe Campaign [投放最佳实践](delivery-best-practices.md)。
 
 发送短信的关键步骤如下：
 
@@ -34,10 +34,10 @@ ht-degree: 4%
 
 此外，您还需要熟悉短信协议和设置。 浏览[本文档](sms-protocol.md)中Adobe Campaign与SMPP提供程序之间设置的连接
 
-有关如何创建投放的全局信息，请参阅[此部分](../../delivery/using/steps-about-delivery-creation-steps.md)。
+有关如何创建投放的全局信息，请参阅[此部分](steps-about-delivery-creation-steps.md)。
 
 >[!NOTE]
 >
 >Adobe Campaign还允许您通过其&#x200B;**Adobe Campaign移动应用程序渠道(NMAC)**&#x200B;选项在移动终端上提交通知。
 > 
->有关更多信息，请参阅[移动应用程序渠道快速入门](../../delivery/using/about-mobile-app-channel.md)一节。
+>有关更多信息，请参阅[移动应用程序渠道快速入门](about-mobile-app-channel.md)一节。
