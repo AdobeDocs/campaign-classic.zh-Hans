@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 要控制您的营销活动，您必须确保已将消息发送给收件人。
 
 在Campaign投放仪表板中，您可以检查已处理的消息和投放审核日志。
-您还可以控制投放日志中消息的状态。 [了解详情](../../delivery/using/about-delivery-monitoring.md)。
+您还可以控制投放日志中消息的状态。 [了解详情](about-delivery-monitoring.md)。
 
 如果未发送投放，且其状态保持&#x200B;**Pending**，该怎么办？
 
@@ -41,9 +41,9 @@ ht-degree: 3%
 
 **提示**:默认启用消息跟踪。要配置URL，请在投放向导的下半部分选择显示URL选项。 对于消息的每个URL，您可以选择是否激活跟踪。
 
-有关更多信息，请参阅[配置跟踪](../../delivery/using/how-to-configure-tracked-links.md)一节和[跟踪指示器](../../reporting/using/delivery-reports.md#tracking-indicators)说明。
+有关更多信息，请参阅[配置跟踪](how-to-configure-tracked-links.md)一节和[跟踪指示器](../../reporting/using/delivery-reports.md#tracking-indicators)说明。
 
-## 投放性能{#delivery-performances}
+## 投放性能 {#delivery-performances}
 
 要测量消息的传送速度，您可以控制传送吞吐量。 标准是每小时发送的消息数量和消息的大小（以位/秒为单位）。 有关更多信息，请参阅[投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)。
 
@@ -55,7 +55,7 @@ ht-degree: 3%
 
 * 请勿尝试同时计划大型投放。 请注意，可能需要5到10分钟才能将负载均匀地分布到系统上。
 
-## 投放故障排除 {#delivery-troubleshooting}
+## 投放疑难解答 {#delivery-troubleshooting}
 
 当遇到投放问题时，可以执行特定操作：
 
@@ -63,6 +63,6 @@ ht-degree: 3%
 
 * [图像显示问题](../../production/using/image-display-issues.md)
 
-* [交付性能问题](../../delivery/using/delivery-performances.md)
+* [交付性能问题](delivery-performances.md)
 
 * [临时文件问题](../../production/using/temporary-files.md)  — 仅 *限内部部署客户*
