@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 3%
@@ -23,7 +23,7 @@ A/B测试允许您比较一个投放的多个版本彼此的对比，以便确�
 
 ![](assets/a-b-testing-schema.png)
 
-通过Campaign Classic,A/B测试通过工作流来实施，在工作流中，您可以指定要定向的群体以及接收每个变体的组（请参阅[配置a/b测试](../../delivery/using/configuring-a-b-testing.md)）。
+通过Campaign Classic,A/B测试通过工作流来实施，在工作流中，您可以指定要定向的群体以及接收每个变体的组（请参阅[配置a/b测试](configuring-a-b-testing.md)）。
 
 主要步骤包括：
 
@@ -37,4 +37,4 @@ A/B测试允许您比较一个投放的多个版本彼此的对比，以便确�
 
 >[!NOTE]
 >
->工作流还允许您通过自动识别性能更佳的投放变体，然后将其发送给其余群体，来自动执行您的流程。 有关更多信息，请参阅此专用[用例](../../delivery/using/a-b-testing-use-case.md)。
+>工作流还允许您通过自动识别性能更佳的投放变体，然后将其发送给其余群体，来自动执行您的流程。 有关更多信息，请参阅此专用[用例](a-b-testing-use-case.md)。
