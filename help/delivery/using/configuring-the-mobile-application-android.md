@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 3%
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 然后，您将能够[创建Android富通知](create-notifications-android.md)。
 
-## 配置Android外部帐户{#configuring-external-account-android}
+## 配置Android外部帐户 {#configuring-external-account-android}
 
 对于Android，提供了两个连接器：
 
@@ -58,7 +58,7 @@ ht-degree: 3%
 
    * **maxGCMConnectPerChild**:每个子服务器启动的对FCM的并行HTTP请求的最大限制（默认为8）。
 
-## 配置Android服务{#configuring-android-service}
+## 配置Android服务 {#configuring-android-service}
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何在视频中配置Android服务](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=en#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
 
@@ -79,9 +79,9 @@ ht-degree: 3%
 
    ![](assets/nmac_service_2.png)
 
-1. 创建Android应用程序。 如需详细信息，请参阅[此部分](../../delivery/using/configuring-the-mobile-application-android.md#creating-android-app)。
+1. 创建Android应用程序。 如需详细信息，请参阅[此部分](configuring-the-mobile-application-android.md#creating-android-app)。
 
-## 创建Android移动应用程序{#creating-android-app}
+## 创建Android移动应用程序 {#creating-android-app}
 
 创建服务后，您现在需要创建Android应用程序：
 
@@ -93,7 +93,7 @@ ht-degree: 3%
 
    ![](assets/nmac_android.png)
 
-1. 确保通过SDK在Adobe Campaign和应用程序代码中定义相同的&#x200B;**[!UICONTROL Integration key]**。 如需详细信息，请参阅[此部分](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
+1. 确保通过SDK在Adobe Campaign和应用程序代码中定义相同的&#x200B;**[!UICONTROL Integration key]**。 如需详细信息，请参阅[此部分](integrating-campaign-sdk-into-the-mobile-application.md)。
 
    >[!NOTE]
    >
@@ -111,8 +111,8 @@ ht-degree: 3%
 
 创建服务和新的移动应用程序后，您需要根据所选的API版本配置移动应用程序。
 
-* **HTTP v1** 配置在此部分 [中详述](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1)。
-* **此部分** 中详细介绍了HTTP(旧 [版)](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http)配置。
+* **HTTP v1** 配置在此部分 [中详述](configuring-the-mobile-application-android.md#android-service-httpv1)。
+* **此部分** 中详细介绍了HTTP(旧 [版)](configuring-the-mobile-application-android.md#android-service-http)配置。
 
 #### 配置HTTP v1 API{#android-service-httpv1}
 
@@ -176,7 +176,7 @@ ht-degree: 3%
 
 <br>
 
-## 扩展appsubscriptionRcp架构{#extend-subscription-schema}
+## 扩展appsubscriptionRcp模式 {#extend-subscription-schema}
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何在视频中扩展appsubscriptionRcp模式](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=en#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
@@ -188,4 +188,4 @@ ht-degree: 3%
 
    >[!CAUTION]
    >
-   >确保&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡中的配置名称与移动应用程序代码中的配置名称相同。 请参阅[此小节](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
+   >确保&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡中的配置名称与移动应用程序代码中的配置名称相同。 请参阅[此小节](integrating-campaign-sdk-into-the-mobile-application.md)。
