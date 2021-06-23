@@ -6,16 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 1%
 
 ---
 
-# 为Android{#create-notificaations-android}创建通知
+# 创建Android通知{#create-notificaations-android}
 
-使用Adobe Campaign在Android设备上发送推送通知。 有关投放创建的全局概念，请参见[此部分](../../delivery/using/steps-about-delivery-creation-steps.md)。
+使用Adobe Campaign在Android设备上发送推送通知。 有关投放创建的全局概念，请参见[此部分](steps-about-delivery-creation-steps.md)。
 
 首先创建新投放。
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 有关Firebase Cloud Messaging消息类型的更多信息，请参阅[FCM文档](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages)。
 
-## 创建数据消息{#creating-data-message}
+## 创建数据消息 {#creating-data-message}
 
 1. 转到&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
 
@@ -66,11 +66,11 @@ ht-degree: 1%
 
 ![](assets/nmac_android_4.png)
 
-## 创建通知消息{#creating-notification-message}
+## 创建通知消息 {#creating-notification-message}
 
 >[!NOTE]
 >
->通知消息的其他选项仅在HTTP v1 API配置中可用。 有关更多信息，请参阅此](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1)章节[。
+>通知消息的其他选项仅在HTTP v1 API配置中可用。 有关更多信息，请参阅此](configuring-the-mobile-application-android.md#android-service-httpv1)章节[。
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何在视频中创建Android推送通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=en#additional-resources)
 
