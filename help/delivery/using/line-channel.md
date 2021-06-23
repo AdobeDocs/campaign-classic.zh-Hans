@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 1. [配置内容类型](#defining-the-content)
 1. [监控投放（跟踪、隔离、报告等）](#accessing-reports)
 
-## 设置LINE通道{#setting-up-line-channel}
+## 设置LINE渠道 {#setting-up-line-channel}
 
 在创建[!DNL LINE]帐户和外部帐户之前，您首先需要在实例上安装LINE包。 有关此内容的详细信息，请参阅《安装指南》中的[LINE](../../installation/using/installing-campaign-standard-packages.md#line-package)部分。
 
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 要创建和配置[!DNL LINE]帐户，请参阅[LINE开发人员文档](https://developers.line.me/)。
 
-### 创建和配置LINE服务{#configure-line-service}
+### 创建和配置LINE服务 {#configure-line-service}
 
 要创建[!DNL LINE]服务，请执行以下操作：
 
@@ -58,9 +58,9 @@ ht-degree: 2%
 
 1. 单击 **[!UICONTROL Save]**。
 
-有关订阅和服务的更多信息，请参阅[管理订阅](../../delivery/using/managing-subscriptions.md)。
+有关订阅和服务的更多信息，请参阅[管理订阅](managing-subscriptions.md)。
 
-### 配置LINE外部帐户{#configure-line-external}
+### 配置LINE外部帐户 {#configure-line-external}
 
 创建[!DNL LINE]服务后，您需要在Adobe Campaign上配置[!DNL LINE]外部帐户：
 
@@ -87,7 +87,7 @@ ht-degree: 2%
 
 [!DNL LINE]现在在Adobe Campaign中配置，您可以开始创建LINE投放并将其发送给订阅者。
 
-## 创建LINE投放{#creating-the-delivery}
+## 创建LINE交付 {#creating-the-delivery}
 
 >[!NOTE]
 >
@@ -103,13 +103,13 @@ ht-degree: 2%
 
    ![](assets/line_message_01.png)
 
-1. 使用&#x200B;**[!UICONTROL Label]**、**[!UICONTROL Delivery code]**&#x200B;和&#x200B;**[!UICONTROL Description]**&#x200B;标识投放。 如需详细信息，请参阅[此部分](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
+1. 使用&#x200B;**[!UICONTROL Label]**、**[!UICONTROL Delivery code]**&#x200B;和&#x200B;**[!UICONTROL Description]**&#x200B;标识投放。 如需详细信息，请参阅[此部分](steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
 
 1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;以创建投放。
 
 1. 在投放编辑器中，选择&#x200B;**[!UICONTROL To]**&#x200B;以定位[!DNL LINE]投放的收件人。 对&#x200B;**[!UICONTROL Visitor subscriptions (nms:visitorSub)]**&#x200B;进行定位。
 
-   有关更多信息，请参阅[识别目标群体](../../delivery/using/steps-defining-the-target-population.md)。
+   有关更多信息，请参阅[识别目标群体](steps-defining-the-target-population.md)。
 
    ![](assets/line_message_08.png)
 
@@ -131,13 +131,13 @@ ht-degree: 2%
 
 1. 正确创建和配置投放后，您可以将其发送到之前定义的目标。
 
-   有关发送投放的更多信息，请参阅[发送消息](../../delivery/using/sending-messages.md)。
+   有关发送投放的更多信息，请参阅[发送消息](sending-messages.md)。
 
 1. 发送消息后，访问报表以衡量投放的有效性。
 
    有关[!DNL LINE]报表的更多信息，请参阅[访问报表](#accessing-reports)。
 
-## 定义内容类型{#defining-the-content}
+## 定义内容类型 {#defining-the-content}
 
 要定义[!DNL LINE]投放的内容，您首先必须向投放添加消息类型。 每个[!DNL LINE]投放最多可包含5条消息。
 
@@ -147,7 +147,7 @@ ht-degree: 2%
 * [图像和链接](#configuring-an-image-and-link-delivery)
 * [视频消息](#configuring-a-video-message-delivery)
 
-### 配置文本消息投放{#configuring-a-text-message-delivery}
+### 配置文本消息投放 {#configuring-a-text-message-delivery}
 
 >[!NOTE]
 >
@@ -157,9 +157,9 @@ ht-degree: 2%
 
 ![](assets/line_message_02.png)
 
-此类型消息的配置与电子邮件中&#x200B;**[!UICONTROL Text]**&#x200B;的配置类似。 有关详细信息，请参见此[页面](../../delivery/using/defining-the-email-content.md#message-content)。
+此类型消息的配置与电子邮件中&#x200B;**[!UICONTROL Text]**&#x200B;的配置类似。 有关详细信息，请参见此[页面](defining-the-email-content.md#message-content)。
 
-### 配置图像和链接投放{#configuring-an-image-and-link-delivery}
+### 配置图像和链接交付 {#configuring-an-image-and-link-delivery}
 
 **[!UICONTROL Image and link]** [!DNL LINE]投放是以包含一个或多个URL的图像形式发送给收件人的消息。
 
@@ -193,13 +193,13 @@ ht-degree: 2%
 
    然后，您必须添加将在收件人移动设备上弹出的替换文本。
 
-* 和&#x200B;**[!UICONTROL Links]**。
+* 和 **[!UICONTROL Links]**.
 
    **[!UICONTROL Links]**&#x200B;部分允许您在不同的布局之间进行选择，这些布局会将图像划分到多个可单击区域。 然后，您可以为每个用户分配一个专用的&#x200B;**[!UICONTROL Link URL]**。
 
    ![](assets/line_message_05.png)
 
-### 配置视频消息投放{#configuring-a-video-message-delivery}
+### 配置视频消息投放 {#configuring-a-video-message-delivery}
 
 **[!UICONTROL Video message]** [!DNL LINE]投放是以包含URL的视频形式发送给收件人的消息。
 
@@ -211,7 +211,7 @@ ht-degree: 2%
 
 ![](assets/line_message_06.png)
 
-## 访问报告{#accessing-reports}
+## 访问报告 {#accessing-reports}
 
 发送投放后，您可以通过&#x200B;**[!UICONTROL Explorer]**&#x200B;中的&#x200B;**[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]**&#x200B;菜单查看[!DNL LINE]报表。
 
@@ -225,7 +225,7 @@ ht-degree: 2%
 
 ![](assets/line_reports.png)
 
-## 示例：创建并发送个性化的LINE消息{#example--create-and-send-a-personalized-line-message}
+## 示例：创建和发送个性化的LINE消息 {#example--create-and-send-a-personalized-line-message}
 
 在此示例中，我们将创建并配置文本消息和包含将根据收件人进行个性化数据的图像。
 
@@ -239,7 +239,7 @@ ht-degree: 2%
 
 1. 在投放的配置窗口中，选择目标群体。
 
-   有关更多信息，请参阅[识别目标群体](../../delivery/using/steps-defining-the-target-population.md)。
+   有关更多信息，请参阅[识别目标群体](steps-defining-the-target-population.md)。
 
    ![](assets/line_usecase_02.png)
 
