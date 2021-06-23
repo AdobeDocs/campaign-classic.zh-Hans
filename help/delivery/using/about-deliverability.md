@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 9%
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 要更深入地了解什么是可投放性，并了解有关关键可投放性术语、概念和方法的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
 
-## 如何提高投放能力{#deliverability-key-points}
+## 如何提高投放能力 {#deliverability-key-points}
 
 投放能力问题通常与互联网服务提供商和邮件服务器管理员实施的针对垃圾邮件的保护措施有关。
 
@@ -40,15 +40,15 @@ ht-degree: 9%
 对于Adobe Campaign，投放能力率取决于多种因素，特别是：
 
 * 正确配置实例：请联系您的Adobe代表以获取帮助。
-* 合法的网络配置：请参阅[此部分](../../delivery/using/optimize-delivery.md#network-config)和[域设置和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy)。
+* 合法的网络配置：请参阅[此部分](optimize-delivery.md#network-config)和[域设置和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy)。
 * 您的IP地址信誉：请参阅[IP策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy)。
-* 目标地址的质量：请参阅[隔离管理](../../delivery/using/optimize-delivery.md#quarantine-management)。
+* 目标地址的质量：请参阅[隔离管理](optimize-delivery.md#quarantine-management)。
 * 低[投诉](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html)和[硬退回率](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces)。
-* 您的消息内容：请参阅[控制电子邮件内容](../../delivery/using/control-message-content.md)。
+* 您的消息内容：请参阅[控制电子邮件内容](control-message-content.md)。
 * 报文验证(SPF、DKIM、DMARC):请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 * 发件人声誉：要了解主ISP如何评估发件人的信誉，请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html)。
 
-## 营销活动投放能力工具{#deliverability-tools}
+## Campaign投放能力工具 {#deliverability-tools}
 
 <!--Adobe Campaign provides a number of tools designed to ensure optimal deliverability.-->
 Adobe Campaign提供了多种工具来跟踪和改进平台的投放能力性能。 本页还重点介绍了在使用Campaign时，您应当牢记的主要原则，以优化投放能力。
@@ -57,12 +57,12 @@ Adobe Campaign提供了多种工具来跟踪和改进平台的投放能力性能
 
 配置、设计和测试消息时，请确保遵循下面所列部分中提到的最佳实践。 利用Adobe Campaign提供的所有功能，可帮助您提高投放能力。
 
-* [投放最佳实践](../../delivery/using/delivery-best-practices.md)
-* [控制电子邮件内容](../../delivery/using/control-message-content.md)
-* [收件箱呈现](../../delivery/using/inbox-rendering.md)
-* [发送验证](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
+* [投放最佳实践](delivery-best-practices.md)
+* [控制电子邮件内容](control-message-content.md)
+* [收件箱呈现](inbox-rendering.md)
+* [发送验证](steps-validating-the-delivery.md#sending-a-proof)
 
-### 通过双重选择加入{#double-opt-in}验证同意
+### 通过双重选择加入验证同意 {#double-opt-in}
 
 为避免向无效地址发送消息、限制不当通信并提高发件人信誉，Adobe建议实施双重选择加入机制。 通过此方法，您可以确保收件人有意订阅。
 
@@ -80,9 +80,9 @@ Adobe Campaign会管理一个列表，以收集持续发生的垃圾邮件投诉
 
 有关更多信息，请参阅以下章节：
 
-* [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
-* [了解隔离管理](../../delivery/using/understanding-quarantine-management.md)
-* [隔离与阻止列表](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
+* [了解投放失败](understanding-delivery-failures.md)
+* [了解隔离管理](understanding-quarantine-management.md)
+* [隔离与阻止列表](understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### 使用监控和报告工具
 
@@ -92,8 +92,8 @@ Adobe Campaign允许您通过一组内置的实时指示器和报表来检查投
 
 有关更多信息，请参阅以下章节：
 
-* [监测可投放性](../../delivery/using/monitoring-deliverability.md)
-* [关于投放监控](../../delivery/using/about-delivery-monitoring.md)
+* [监测可投放性](monitoring-deliverability.md)
+* [关于投放监控](about-delivery-monitoring.md)
 * [关于 Campaign 内置报告](../../reporting/using/about-campaign-built-in-reports.md)
 
 <!--TO REMOVE
