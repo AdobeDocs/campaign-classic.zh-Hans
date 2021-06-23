@@ -3,20 +3,22 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a9120e2db43fcb035e9760819e9c53148979da4f
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 57%
+source-wordcount: '262'
+ht-degree: 50%
 
 ---
 
-# Campaign Classicv7文档{#campaign-classic-documentation}
+# Campaign Classicv7文档 {#campaign-classic-documentation}
 
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
 ## 新增功能
 
 * **[六月版将正式上线！](rn/using/latest-release.md)**<br/> 在发行说明中了解新功能、改进和修复
+
+* **[Apple邮件隐私保护常](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html)**<br/> 见问题解答查找针对Apple关于iOS 15的公告的初始指导
 
 * **[删除错误硬退回](delivery/using/update-bounce-qualification.md)**<br/> 了解如何在Apple中断后更新错误硬退回
 
@@ -25,8 +27,6 @@ ht-degree: 57%
 * **[保护Campaign实例](technotes/acc-config-updates.md)**<br/> 更新到最新内部版本以保护Campaign平台
 
 * **[更新Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> 集成旧版oAuth身份验证服务已终止。了解如何迁移到Adobe I/O。
-
-* **[获取支持](support.md)**<br/>访问常见问题解答、最佳实践、帮助资源和请求帮助
 
 [更多更新](/help/rn/using/documentation-updates.md)
 
