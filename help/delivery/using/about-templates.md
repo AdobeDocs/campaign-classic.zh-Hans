@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 2%
@@ -33,4 +33,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->可用的模板取决于您的访问权限、实例配置和上下文。 例如，在创建信息服务时，您可以链接确认消息的投放模板：然后，您只能访问其目标映射为订阅映射的模板。 有关更多信息，请参阅[选择目标映射](../../delivery/using/selecting-a-target-mapping.md)和[关于服务和订阅](../../delivery/using/about-services-and-subscriptions.md)。
+>可用的模板取决于您的访问权限、实例配置和上下文。 例如，在创建信息服务时，您可以链接确认消息的投放模板：然后，您只能访问其目标映射为订阅映射的模板。 有关更多信息，请参阅[选择目标映射](selecting-a-target-mapping.md)和[关于服务和订阅](about-services-and-subscriptions.md)。
