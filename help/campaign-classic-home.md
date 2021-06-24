@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: a9120e2db43fcb035e9760819e9c53148979da4f
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 50%
@@ -20,9 +20,9 @@ ht-degree: 50%
 
 * **[Apple邮件隐私保护常](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html)**<br/> 见问题解答查找针对Apple关于iOS 15的公告的初始指导
 
-* **[删除错误硬退回](delivery/using/update-bounce-qualification.md)**<br/> 了解如何在Apple中断后更新错误硬退回
+* **[通过IMS/Adobe ID连接？升级到最新内部版本](technotes/ims-updates.md)**<br/>如果您使用IMS连接到Campaign，则必须升级才能在2021年6月30日**&#x200B;之后连接到Campaign **
 
-* **[通过IMS/Adobe ID连接？升级到最新内部版本](integrations/using/about-adobe-id.md)**<br/>如果您使用IMS连接到Campaign，则必须升级才能在2021年6月30日**&#x200B;之后连接到Campaign **
+* **[删除错误硬退回](delivery/using/update-bounce-qualification.md)**<br/> 了解如何在Apple中断后更新错误硬退回
 
 * **[保护Campaign实例](technotes/acc-config-updates.md)**<br/> 更新到最新内部版本以保护Campaign平台
 
