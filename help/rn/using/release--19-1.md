@@ -6,9 +6,9 @@ feature: null
 role: null
 level: null
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
-source-wordcount: '3256'
+source-wordcount: '3258'
 ht-degree: 26%
 
 ---
@@ -41,7 +41,7 @@ _2020 年 12 月 16 日_
 
 >[!CAUTION]
 >
-> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。
+> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。[了解详情](../../technotes/ims-updates.md)
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
 > * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign 的旧式 oAuth 身份验证模式将于 **2021 年 11 月 30 日**&#x200B;停用。
 
@@ -132,7 +132,7 @@ _2019 年 8 月 13 日_
 * 修复了Oracle上导致某些函数在升级后被视为无效的回归。 (NEO-12759)
 * 修复了在调度程序工作流活动中设置时间时导致选取错误时区的回归。
 
-## ![](assets/do-not-localize/green_2.png) 版本 19.1.4 - 版本 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/green_2.png) 19.1.4 版 - 内部版本 9032{#release-19-1-4-build-9032}
 
 >[!NOTE]
 >
