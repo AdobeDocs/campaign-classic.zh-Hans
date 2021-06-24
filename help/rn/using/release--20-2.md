@@ -6,14 +6,14 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
-source-wordcount: '2970'
+source-wordcount: '2972'
 ht-degree: 88%
 
 ---
 
-# 版本 20.2{#release-20-2}
+# 20.2 版{#release-20-2}
 
 ## ![](assets/do-not-localize/green_2.png) 20.2.5 版 - 内部版本 9188 {#release-20-2-5-build-9188}
 
@@ -61,7 +61,7 @@ _2020 年 12 月 22 日_
 
 >[!CAUTION]
 >
-> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。
+> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。[了解详情](../../technotes/ims-updates.md)
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
 > * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign 的旧式 oAuth 身份验证模式将于 **2021 年 11 月 30 日**&#x200B;停用。
 
@@ -83,7 +83,7 @@ _2020 年 12 月 22 日_
 
 ![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月版**，其中使用 CNAME 进行域配置并新增数据库监视功能。[了解详情](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/red_2.png) 版本 20.2.3 - 版本 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/red_2.png) 20.2.3 版 - 内部版本 9182 {#release-20-2-3-build-9182}
 
 _2020 年 9 月 11 日_
 
@@ -96,7 +96,7 @@ _2020 年 9 月 11 日_
 * 修复了在升级后期导致 nlserver 启动错误的回归（错误日志）。
 * 改进了共享内存的更新管理。不再需要 20.2 中必需的其他步骤。
 
-## ![](assets/do-not-localize/red_2.png) 版本 20.2.2 - 版本 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/red_2.png) 20.2.2 版 - 内部版本 9180 {#release-20-2-2-build-9180}
 
 _2020 年 7 月 22 日_
 
@@ -121,7 +121,7 @@ _2020 年 7 月 22 日_
 
 ![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含活动用户档案监测、子域投放能力审核和 GPG 密钥管理。[了解详情](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
 
-## ![](assets/do-not-localize/red_2.png) 版本 20.2.1 - 版本 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/red_2.png) 20.2.1 版 - 内部版本 9178 {#release-20-2-1-build-9178}
 
 _2020 年 6 月 8 日_
 
