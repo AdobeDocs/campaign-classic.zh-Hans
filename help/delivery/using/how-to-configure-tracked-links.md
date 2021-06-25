@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
+source-git-commit: 98bbbb36c9f8156cc34e826a024ff6e6e3f3fee3
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 10%
@@ -28,7 +28,7 @@ ht-degree: 10%
 * 括号[ ]
 * 大括号{ }
 
-在此示例中，URL https://www.adobe.com后面跟有一个分号(;)。 收件人电子邮件客户端可以将分号解释为URL的一部分。 因此，链接可能会断开。 要避免出现此问题，您可以使用以下方式之一将URL括在分隔符中：
+在此示例中，URL https://www.adobe.com后面跟有一个分号。 收件人电子邮件客户端可以将分号解释为URL的一部分。 因此，链接可能会断开。 要避免出现此问题，您可以使用以下方式之一将URL括在分隔符中：
 * (https://www.adobe.com);
 * [https://www.adobe.com];
 * {https://www.adobe.com};
