@@ -131,7 +131,7 @@ ht-degree: 1%
 
 “@name”属性必须遵循以下规则：
 
-**&#39;marketing_account_operator_name&#39;。&#39;affinity_name&#39;。&#39;affinity_group`**
+**&#39;marketing_account_operator_name&#39;。&#39;affinity_name&#39;。&#39;affinity_group&grave;**
 
 “marketing_account_operator_name”与在中间源实例中声明的中间源帐户的内部名称相关。
 
