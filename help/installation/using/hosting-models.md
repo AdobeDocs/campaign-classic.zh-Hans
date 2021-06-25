@@ -6,7 +6,7 @@ feature: 概述
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 2%
@@ -41,7 +41,7 @@ Adobe Campaign可以内部部署：Adobe Campaign的所有组件（包括用户�
 
 ![](assets/deployment_onpremise.png)
 
-作为内部部署客户，在开始部署Campaign Classic之前，请考虑以下先决条件和建议：
+作为内部部署客户，在开始部署Campaign Classic之前，请注意以下先决条件和建议：
 
 * 阅读[兼容性矩阵](../../rn/using/compatibility-matrix.md)，其中列出了支持Adobe Campaign的所有系统和组件版本。
 * 根据您的环境，请阅读Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)的先决条件和Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)的[先决条件。[
