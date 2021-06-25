@@ -6,9 +6,9 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: fc40dae282c045dd73547e34ea307297f64c66fa
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '4470'
+source-wordcount: '4466'
 ht-degree: 97%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
-## 2021 年 6 月 {#june-2021}
+## 2021年6月 {#june-2021}
 
 **事务型消息传递**&#x200B;部分已重组并阐明了新的入门部分，包括[增强的架构](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更好地了解该过程。 [阅读更多](../../message-center/using/about-transactional-messaging.md)
 
@@ -130,7 +130,7 @@ Oracle On Demand API 现在作为与 Campaign 连接的 CRM 已弃用。[阅读�
 
 向&#x200B;**事务性消息传递**&#x200B;部分中添加了注释，用于警告不得将事件文件夹设置为执行实例上的视图，以避免出现访问权限问题。[阅读更多](../../message-center/using/about-event-processing.md#event-collection)
 
-## 2020 年 11 月{#nov-2020}
+## 2020 年 11 月 {#nov-2020}
 
 Campaign 数据模型概述已得到改进并重组。[阅读更多](../../configuration/using/about-data-model.md)。
 
@@ -408,7 +408,7 @@ Adobe Campaign 增强 MTA 文章已更新，其中包含有关在未向每封邮
 
 已添加如何在工作流中使用实例变量的示例。[阅读更多](../../workflow/using/javascript-scripts-and-templates.md)
 
-## 2019 年 12 月 {#december-2019}
+## 2019年12月 {#december-2019}
 
 “WdbcOptions_TempDbName”选项已添加到 Campaign 选项的列表。[阅读更多](../../installation/using/configuring-campaign-options.md)
 
@@ -446,7 +446,7 @@ Adobe Campaign 增强 MTA 文档现已可用。[阅读更多](https://helpx.adob
 
 Adobe Campaign 与 Adobe 实时客户数据平台之间的集成现在在&#x200B;**“与 Adobe Experience Cloud 集成”**&#x200B;指南中提到。[阅读更多](../../integrations/using/about-campaign-integrations.md)。
 
-## 2019 年 11 月{#november-2019}
+## 2019 年 11 月 {#november-2019}
 
 在[多路复用中间源服务器](../../installation/using/mid-sourcing-server.md#multiplexing-the-mid-sourcing-server)和[和支持多个控制实例](../../message-center/using/transactional-messaging-architecture.md#supporting-several-control-instances)部分中添加了一个警告，提到完全托管和混合客户端不支持这些部署。
 
@@ -492,7 +492,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 **19.1 版本中包含的新功能**
 
-控制面板 - [阅读更多](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html)
+控制面板 - [阅读更多](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 审核跟踪 - [阅读更多](../../production/using/audit-trail.md)
 
@@ -599,4 +599,4 @@ Marketing Cloud 触发器技术说明已更新。[阅读更多](../../integratio
 
 添加了一个用例，说明如何使用工作流中的扩充活动发送包含自定义数据字段的电子邮件。[阅读更多](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 
-功能视频已移到[此处](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/overview.html)。
+功能视频已移到[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)。
