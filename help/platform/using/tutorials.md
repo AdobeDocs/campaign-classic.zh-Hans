@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '394'
 ht-degree: 70%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 70%
 
 * [使用 Adobe Experience Manager 编辑电子邮件内容](https://helpx.adobe.com/campaign/kb/acc-aem.html)：了解 Adobe Campaign 和 Experience Manager 集成的基本知识。
 * [隐私管理](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html):了解Adobe Campaign Classic在使用我们的服务时为帮助您遵守隐私规定提供的服务。
-* [在电子邮件中集成动态内容](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)：了解 Campaign Classic 和 Target Standard 集成的基本知识。
+* [在电子邮件中集成动态内容](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)：了解 Campaign Classic 和 Target Standard 集成的基本知识。
 * [管理可投放性](../../delivery/using/about-deliverability.md)：了解与可投放性相关的概念和最佳实践，以及 Adobe Campaign Classic 提供的工具，从而最佳地发送您的投放内容。
 * [投放最佳实践](../../delivery/using/delivery-best-practices.md)：了解有关使用 Adobe Campaign Classic 设计投放内容并发送内容的最佳实践。
 * [执行构建版升级](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)：本指南会显示执行 Campaign Classic 构建版升级的重要步骤和最佳实践。
@@ -35,13 +35,13 @@ ht-degree: 70%
 * [创建概要](../../web/using/use-cases--creating-overviews.md)：创建概要类型的 Web 应用程序，以显示数据库中的所有 Web 应用程序。
 * [工作流用例](../../workflow/using/about-workflow-use-cases.md)：通过这些用例了解工作流的不同使用方法。
 
-## 自助{#how-to-videos}
+## 自助 {#how-to-videos}
 
 除了产品文档外，您还可以访问下面列出的Campaign自助资源。
 
 ### 教程视频
 
-了解Adobe Campaign在视频中的主要功能。 [了解详情](https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/tutorials/overview.html)
+了解Adobe Campaign在视频中的主要功能。 [了解详情](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
 
 ### 培训课程和视频
 
