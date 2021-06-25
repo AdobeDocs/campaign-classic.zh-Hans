@@ -6,9 +6,9 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
-source-wordcount: '2972'
+source-wordcount: '2968'
 ht-degree: 88%
 
 ---
@@ -81,7 +81,7 @@ _2020 年 12 月 22 日_
 * 修复了在准备投放或定期投放预览时可能导致Web进程崩溃的问题。 (NEO-27790, NEO-27517)
 * 修复了由非管理员操作员触发时，导致投放或校样发送失败的问题。 (NEO-28597)
 
-![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月版**，其中使用 CNAME 进行域配置并新增数据库监视功能。[了解详情](https://docs.adobe.com/content/help/zh-Hans/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新控制面板 10 月版**，其中使用 CNAME 进行域配置并新增数据库监视功能。[了解详情](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hans)。
 
 ## ![](assets/do-not-localize/red_2.png) 20.2.3 版 - 内部版本 9182 {#release-20-2-3-build-9182}
 
@@ -119,7 +119,7 @@ _2020 年 7 月 22 日_
 * 在切换到[新序列 ID 机制](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)后，所有更新收件人表的 Web 应用程序都会在升级后期间重新发布。
 * 修复了投放内容中的潜在 XSS 漏洞。(NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含活动用户档案监测、子域投放能力审核和 GPG 密钥管理。[了解详情](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)。
+![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含活动用户档案监测、子域投放能力审核和 GPG 密钥管理。[了解详情](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)。
 
 ## ![](assets/do-not-localize/red_2.png) 20.2.1 版 - 内部版本 9178 {#release-20-2-1-build-9178}
 
