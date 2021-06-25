@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1195'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
 * 在Campaign v7和Campaign Standard中执行工作流的用户权限。
 * 在Campaign Standard中创建和执行投放的用户权限。
 
-## 更改退订链接{#changing-the-unsubscription-link}
+## 更改退订链接 {#changing-the-unsubscription-link}
 
 当收件人单击由Campaign Standard发送的电子邮件中的退订链接时，Campaign Standard中的相应用户档案会更新。 要确保复制的用户档案包含用户选择的取消订阅服务，必须将该信息发送到Campaign v7，而不是Campaign Standard。 要执行更改，退订服务链接到Campaign v7 Web应用程序，而不是Campaign Standard。
 
@@ -39,19 +39,19 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
 >
 >在执行以下步骤之前，请咨询您的顾问为退订服务配置Web应用程序。
 
-## 创建新收件人{#creating-a-new-recipient}
+## 创建新收件人 {#creating-a-new-recipient}
 
 1. 在Campaign v7中创建新收件人以复制到Campaign Standard。 输入尽可能多的信息，包括收件人的姓氏、名字、电子邮件地址和邮政地址。 但是，请勿选择&#x200B;**[!UICONTROL Salutation]**，因为它将添加在下一节[编辑收件人](#editing-a-recipient)中。 有关更多信息，请参阅[添加收件人](../../platform/using/adding-profiles.md)。
 
    ![](assets/acs_connect_profile_sync_01.png)
 
-1. 确认已将新收件人添加到Campaign Standard。 查看用户档案时，请确保您在Campaign v7中输入的数据也可在Campaign Standard中使用。 要了解在Campaign Standard中的何处查找配置文件，请参阅[导航基础知识](https://docs.adobe.com/content/help/zh-Hans/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
+1. 确认已将新收件人添加到Campaign Standard。 查看用户档案时，请确保您在Campaign v7中输入的数据也可在Campaign Standard中使用。 要了解在Campaign Standard中的何处查找配置文件，请参阅[导航基础知识](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=zh-Hans)。
 
    ![](assets/acs_connect_profile_sync_02.png)
 
    默认情况下，ACS Connector的定期复制每15分钟一次。 有关更多信息，请参阅[数据复制](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication)。
 
-## 编辑收件人{#editing-a-recipient}
+## 编辑收件人 {#editing-a-recipient}
 
 以下更改单一数据点的步骤提供了一个简单示例，用于说明在使用数据复制时，Campaign v7如何成为Campaign Standard的主数据库。 修改或删除Campaign v7中的复制数据对Campaign Standard中的相应数据具有相同的效果。
 
@@ -59,13 +59,13 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. 确认收件人的姓名已在Campaign Standard中更新。 要了解在Campaign Standard中的何处查找配置文件，请参阅[导航基础知识](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
+1. 确认收件人的姓名已在Campaign Standard中更新。 要了解在Campaign Standard中的何处查找配置文件，请参阅[导航基础知识](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
 
    ![](assets/acs_connect_profile_sync_04.png)
 
    默认情况下，ACS Connector的定期复制每15分钟一次。 有关更多信息，请参阅[数据复制](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication)。
 
-## 创建工作流{#creating-a-workflow}
+## 创建工作流 {#creating-a-workflow}
 
 数字营销人员可以使用从Campaign v7复制的用户档案和服务来利用Campaign Standard中的丰富数据。 以下说明演示了如何将查询添加到Campaign Standard工作流，然后将其与复制的数据库一起使用。
 
@@ -85,7 +85,7 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
    * 将&#x200B;**[!UICONTROL Profiles]**&#x200B;拖到工作区。 使用字段下拉菜单选择&#x200B;**[!UICONTROL Is external resource]**&#x200B;以查找从Campaign v7复制的用户档案。
    * 拖动其他查询参数以进一步定向已复制的用户档案。
 
-## 创建投放{#creating-a-delivery}
+## 创建投放 {#creating-a-delivery}
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
 
    ![](assets/acs_connect_profile_sync_19.png)
 
-## 验证退订服务{#verifying-the-unsubscription-service}
+## 验证退订服务 {#verifying-the-unsubscription-service}
 
 按照[创建工作流](#creating-a-workflow)和[创建投放](#creating-a-delivery)中的说明，再转到以下步骤。
 
@@ -172,6 +172,6 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. 转到Campaign Standard，然后打开收件人的用户档案详细信息。 确认&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;旁边出现了复选框。 要了解在Campaign Standard中的何处查找配置文件，请参阅[导航基础知识](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
+1. 转到Campaign Standard，然后打开收件人的用户档案详细信息。 确认&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;旁边出现了复选框。 要了解在Campaign Standard中的何处查找配置文件，请参阅[导航基础知识](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)。
 
    ![](assets/acs_connect_profile_sync_23.png)
