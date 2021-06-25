@@ -4,7 +4,7 @@ title: 更新您的环境以使用IMS连接到Adobe Campaign。
 description: 营销活动 — IMS更新
 hide: true
 hidefromtoc: true
-source-git-commit: b8f3ba60e34f6c5429c63ed934083ebae180cf43
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 9%
@@ -38,13 +38,13 @@ Adobe希望在2021年6月30日之前为所有客户保留IMS功能。 IMS是安�
    必须升级到下面列出的某个新版本：
 
    * Gold Standard 11。 [了解详情](../rn/using/gold-standard.md)
-   * Campaign 20.3.3版本。 [了解详情](../rn/using/release--20-3.md)
+   * Campaign 21.1.3版本。 [了解详情](../rn/using/latest-release.md)
    * Campaign 20.2.4版本。 [了解详情](../rn/using/release--20-2.md)
    * Campaign 20.1.4版本。 [了解详情](../rn/using/release--20-1.md)
    * Campaign 19.2.4版本。 [了解详情](../rn/using/release--19-2.md)
    * Campaign 19.1.8版本。 [了解详情](../rn/using/release--19-1.md)
 
-这些版本随附了新的连接协议。 Campaign服务器和客户端控制台都必须进行升级：升级所有实例后，需要将客户端控制台升级到此版本，并能够在2021年6月30日&#x200B;****&#x200B;之后连接到Campaign。
+   这些版本随附了新的连接协议。 Campaign服务器和客户端控制台都必须进行升级：升级所有实例后，需要将客户端控制台升级到此版本，并能够在2021年6月30日&#x200B;****&#x200B;之后连接到Campaign。
 
 此外，请确保在每台用户的计算机上安装了内置&#x200B;**Internet Explorer 11**&#x200B;的[Windows版本](../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)的最新更新。
 
