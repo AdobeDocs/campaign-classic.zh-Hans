@@ -6,10 +6,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
-source-wordcount: '1562'
-ht-degree: 19%
+source-wordcount: '1560'
+ht-degree: 20%
 
 ---
 
@@ -77,7 +77,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>Snowflake是一个完全托管的云data warehouse，旨在在存储和计算级别进行扩展。 借助这款新连接器，Adobe Campaign现在可以利用Snowflake的强大功能执行大数据分段。 此连接器可供所有客户使用，包括由Adobe托管。</p>
-    <p>有关更多信息，请参阅<a href="../../installation/using/configure-fda-snowflake.md">详细文档</a>和<a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">教程视频</a>。</p>
+    <p>有关更多信息，请参阅<a href="../../installation/using/configure-fda-snowflake.md">详细文档</a>和<a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">教程视频</a>。</p>
    </td> 
   </tr> 
  </tbody> 
