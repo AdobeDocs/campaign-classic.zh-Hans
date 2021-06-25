@@ -6,16 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '626'
 ht-degree: 2%
 
 ---
 
 # 导入和导出受众{#importing-and-exporting-audiences}
 
-## 导入受众{#importing-an-audience}
+## 导入受众 {#importing-an-audience}
 
 您可以通过收件人列表将受众/区段从Audience Manager或People核心服务导入Adobe Campaign。
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 每次同步受众数据时，受众数据都会被完全替换。 只能导入区段。 不支持粒度数据，包括键值对、特征和规则。
 
-## 导出受众{#exporting-an-audience}
+## 导出受众 {#exporting-an-audience}
 
 您可以使用工作流将受众从Adobe Campaign导出到Audience Manager或People核心服务。 [本文档](../../workflow/using/building-a-workflow.md)中详细介绍了创建和使用工作流的流程。 导出的受众将另存为People核心服务中的区段：
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 
 随后将导出受众。 保存受众活动具有两个叫客过渡。 主过渡包含已成功导出的收件人。 其他过渡包含无法映射访客ID或声明ID的收件人。
 
-Adobe Campaign与People核心服务之间的同步需要24-36小时。 在此期间后，您将能够在“人员”核心服务中找到新受众，并在其他Adobe Experience Cloud解决方案中重复使用该受众。 有关在“Adobe人员”核心服务中使用Adobe Campaign共享受众的更多信息，请参阅此[文档](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-audience-create.html)。
+Adobe Campaign与People核心服务之间的同步需要24-36小时。 在此期间后，您将能够在“人员”核心服务中找到新受众，并在其他Adobe Experience Cloud解决方案中重复使用该受众。 有关在“Adobe人员”核心服务中使用Adobe Campaign共享受众的更多信息，请参阅此[文档](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-audience-create.html)。
 
 >[!NOTE]
 >
