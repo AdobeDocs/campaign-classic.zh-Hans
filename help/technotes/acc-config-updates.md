@@ -5,14 +5,14 @@ description: 技术说明
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1099'
 ht-degree: 11%
 
 ---
 
-# Adobe Campaign配置更新 — 2021年3月{#acc-config-updates}
+# Adobe Campaign配置更新 — 2021年3月 {#acc-config-updates}
 
 基础架构和设置应定期更新以包含最新内部版本和产品修复。 这些修复是确保服务和安全的连续性所必需的。 此外，需要升级才能与第三方更改保持一致。
 
@@ -27,7 +27,7 @@ ht-degree: 11%
 >有关这些更改的任何问题，请联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 
-## 安全更新{#acc-security-updates}
+## 安全更新 {#acc-security-updates}
 
 最新的Campaign版本随附了安全修复，该修复增强了针对服务器端请求伪造(SSRF)问题的保护。 在本页](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)中了解更多[信息。
 
@@ -37,7 +37,6 @@ ht-degree: 11%
 
 * Gold Standard 11。 [了解详情](../rn/using/gold-standard.md)
 * Campaign 21.1.1版本。 [了解详情](../rn/using/latest-release.md)
-* Campaign 20.3.3版本。 [了解详情](../rn/using/release--20-3.md)
 * Campaign 20.2.4版本。 [了解详情](../rn/using/release--20-2.md)
 * Campaign 20.1.4版本。 [了解详情](../rn/using/release--20-1.md)
 * Campaign 19.2.4版本。 [了解详情](../rn/using/release--19-2.md)
@@ -60,7 +59,7 @@ ht-degree: 11%
 >如果无法在建议的时间范围内升级，**您应联系Adobe客户关怀团队，以对实例**&#x200B;应用短期手动安全修复。
 
 
-## Campaign Classic客户端控制台更新{#acc-cc-updates}
+## Campaign Classic客户端控制台更新  {#acc-cc-updates}
 
 **现在可用的**&#x200B;控制台版本应该安装在下面，以解析最近识别的回归。 此回归会阻止在投放中使用客户端控制台的某些组件，例如日期选取器和图像管理。 **必须** 升级控制台。
 
@@ -81,7 +80,6 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧的In
 
 * Gold Standard 11。 [了解详情](../rn/using/gold-standard.md)
 * Campaign 21.1.1版本。 [了解详情](../rn/using/latest-release.md)
-* Campaign 20.3.3版本。 [了解详情](../rn/using/release--20-3.md)
 * Campaign 20.2.4版本。 [了解详情](../rn/using/release--20-2.md)
 * Campaign 20.1.4版本。 [了解详情](../rn/using/release--20-1.md)
 * Campaign 19.2.4版本。 [了解详情](../rn/using/release--19-2.md)
@@ -103,7 +101,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧的In
 
 * [了解如何安装Campaign客户端控制台](../installation/using/installing-the-client-console.md)。
 
-## 与Experience Cloud触发器集成{#acc-triggers-updates}
+## 与Experience Cloud触发器集成 {#acc-triggers-updates}
 
 旧版oAuth身份验证服务已终止。 Triggers集成身份验证（最初基于用于访问管道的oAUTH身份验证设置）已移至Adobe I/O。它将于2021年11月30日&#x200B;****&#x200B;停用。 [了解详情](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email)。
 
@@ -128,7 +126,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧的In
 
 [了解如何迁移到Adobe I/O](../integrations/using/configuring-adobe-io.md)。
 
-## APNs更新{#acc-apns-updates}
+## APNs更新 {#acc-apns-updates}
 
 ### 基于HTTP/2的APNs提供程序API
 
