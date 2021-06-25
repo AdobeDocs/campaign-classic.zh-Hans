@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1129'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 1%
 * 有权在Campaign v7和Campaign Standard中执行工作流。
 * 有权在Campaign Standard中创建和执行投放。
 
-## 在Campaign v7 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}中使用附加数据创建定位工作流
+## 在Campaign v7中使用附加数据创建定位工作流 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}
 
 复杂的定位涉及Campaign Standard中未复制的附加数据，只能使用Campaign v7实现。
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 1. 保存工作流。下一部分将演示如何与ACS共享群体。
 
-## 使用Campaign Standard{#share-the-target-with-campaign-standard}共享目标
+## 与Campaign Standard共享目标 {#share-the-target-with-campaign-standard}
 
 定义目标群体后，您可以通过&#x200B;**[!UICONTROL List update]**&#x200B;活动与ACS共享该群体。
 
@@ -108,7 +108,7 @@ ht-degree: 1%
 
 如果&#x200B;**[!UICONTROL List update]**&#x200B;活动发生错误，则表示与Campaign Standard的同步可能失败。 要查看有关问题的更多详细信息，请转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**。 此文件夹包含由&#x200B;**[!UICONTROL List update]**&#x200B;活动执行触发的同步工作流。 请参阅[ACS Connector](../../integrations/using/troubleshooting-the-acs-connector.md)疑难解答一节。
 
-## 在Campaign Standard中检索数据，并将其用在投放{#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}中
+## 在Campaign Standard中检索数据，并将其用在投放中 {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
 
 在Campaign v7中执行定位工作流后，您便能够从&#x200B;**[!UICONTROL Audiences]** Campaign Standard菜单中以只读模式找到列表受众。
 
@@ -121,7 +121,7 @@ ht-degree: 1%
 
    此活动用于检索选定受众的数据。 如果需要，您还可以使用此活动的相应选项卡，应用额外的&#x200B;**[!UICONTROL Source Filtering]**。
 
-1. 添加&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动，并将其配置为任何其他[电子邮件投放活动](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html)。
+1. 添加&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动，并将其配置为任何其他[电子邮件投放活动](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html)。
 1. 打开投放内容。
 1. 添加个性化字段。从弹出窗口中，找到&#x200B;**[!UICONTROL Additional data (targetData)]**&#x200B;节点。 此节点包含在初始定位工作流中计算的受众附加数据。 您可以将它们用作任何其他个性化字段。
 
@@ -135,7 +135,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_deliveryworkflow_ready.png)
 
-## 发送并监视投放{#send-and-monitor-your-delivery}
+## 发送并监控投放 {#send-and-monitor-your-delivery}
 
 投放及其内容准备就绪后，发送投放：
 
