@@ -6,10 +6,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1d25bdaf0d118ec5788d467c48c3c40c5891e46d
+source-git-commit: 1caacff8b10c8593945b872d045fdaab3f26190c
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 99%
+source-wordcount: '549'
+ht-degree: 95%
 
 ---
 
@@ -155,7 +155,7 @@ ht-degree: 99%
 <p>2016年</p>
 <p>2014</p>
 <p>2012 - SP1 和 SP2</p>
-<p>警告：当 Campaign 服务器在 Linux 上运行时，不支持将 Microsoft SQL Server 作为主数据库。<a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">了解详情</a>。</p>
+<p>警告：当 Campaign 服务器在 Linux 上运行时，不支持将 Microsoft SQL Server 作为主数据库。[了解更多](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。</p>
 </td>
 </tr>
 </tbody>
@@ -284,7 +284,7 @@ ht-degree: 99%
 
 ## 客户端控制台 {#ClientConsoleoperatingsystems}
 
-警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
+:warning: 使用Campaign客户端控制台需要以下操作系统和浏览器。
 
 ### 操作系统
 
