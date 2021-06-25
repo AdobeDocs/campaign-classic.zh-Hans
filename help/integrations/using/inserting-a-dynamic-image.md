@@ -6,14 +6,14 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '846'
 ht-degree: 2%
 
 ---
 
-# 插入Target动态内容{#inserting-a-dynamic-image}
+# 插入Target动态内容 {#inserting-a-dynamic-image}
 
 在本指南中，我们将介绍如何将动态选件从Target集成到Adobe Campaign中的电子邮件中。
 
@@ -35,7 +35,7 @@ ht-degree: 2%
 1. [创建体验定位活动](../../integrations/using/inserting-a-dynamic-image.md#creating-targeting-activity)
 1. [预览和发送电子邮件](../../integrations/using/inserting-a-dynamic-image.md#preview-send-email)
 
-## 在电子邮件{#inserting-dynamic-offer}中插入动态选件
+## 在电子邮件中插入动态选件 {#inserting-dynamic-offer}
 
 在Adobe Campaign中，完成定义电子邮件的目标和内容后，即可从Target插入动态图像。
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
    ![](assets/target_12.png)
 
-### 定义图像参数{#defining-image-parameters}
+### 定义图像参数 {#defining-image-parameters}
 
 * **[!UICONTROL Default image]**&#x200B;的URL:未满足任何条件时将显示的图像。 您还可以从资产库中选择图像。
 * **[!UICONTROL Target location]**:输入动态选件位置的名称。 您必须在Target活动中选择此位置。
@@ -62,7 +62,7 @@ ht-degree: 2%
 
 ![](assets/target_13.png)
 
-## 创建重定向选件{#create-redirect-offers}
+## 创建重定向选件 {#create-redirect-offers}
 
 在Target中，您可以创建选件的不同版本。 根据每个用户体验，可以创建重定向选件，您可以指定将显示的图像。
 
@@ -78,7 +78,7 @@ ht-degree: 2%
 
    ![](assets/target_6.png)
 
-1. 对于剩余的重定向选件，请按照相同的步骤操作。 有关详细信息，请参见此 [ 页面](https://docs.adobe.com/help/en/target/using/experiences/offers/offer-redirect.html)。
+1. 对于剩余的重定向选件，请按照相同的步骤操作。 有关详细信息，请参见此 [ 页面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html)。
 
 ## 创建受众 {#audiences-target}
 
@@ -96,11 +96,11 @@ ht-degree: 2%
 
 1. 对其余受众执行相同的操作步骤。
 
-## 创建体验定位活动{#creating-targeting-activity}
+## 创建体验定位活动 {#creating-targeting-activity}
 
 在Target中，我们需要创建体验定位活动，定义不同的体验，并将它们与相应的选件相关联。
 
-### 定义受众{#defining-the-audience}
+### 定义受众 {#defining-the-audience}
 
 1. 要创建体验定位活动，请在&#x200B;**[!UICONTROL Activities]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Create Activity]**，然后单击&#x200B;**[!UICONTROL Experience Targeting]**。
 
@@ -118,7 +118,7 @@ ht-degree: 2%
 
 1. 通过单击&#x200B;**[!UICONTROL Add Experience Targeting]**&#x200B;创建其他体验。
 
-### 定义位置和内容{#defining-location-content}
+### 定义位置和内容 {#defining-location-content}
 
 为每个受众添加一个内容：
 
@@ -136,7 +136,7 @@ ht-degree: 2%
 
 1. 对第二个体验执行相同的步骤。
 
-### 定义活动{#defining-activity}
+### 定义活动 {#defining-activity}
 
 **[!UICONTROL Target]**&#x200B;窗口将汇总您的活动。 如有必要，您可以添加其他体验。
 
@@ -148,7 +148,7 @@ ht-degree: 2%
 
 ![](assets/target_experience_2.png)
 
-## 在{#preview-send-email}Campaign Classic中预览和发送电子邮件
+## 在Campaign Classic中预览和发送电子邮件 {#preview-send-email}
 
 在Adobe Campaign中，您现在可以预览电子邮件并在不同的收件人上测试其呈现效果。 您会注意到图像会根据创建的不同体验而发生更改。 要了解有关创建电子邮件的更多信息，请参阅此[页面](../../delivery/using/defining-the-email-content.md)。
 
