@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 4%
+source-wordcount: '203'
+ht-degree: 0%
 
 ---
 
@@ -32,4 +32,4 @@ Adobe Target可以使用多种类型的数据：
 
 >[!NOTE]
 >
->您还可以在[Adobe Target帮助页面](https://docs.adobe.com/content/help/zh-Hans/target/using/integrate/campaign-and-target.html)上找到有关Adobe Campaign与Adobe Target之间集成的信息。
+>您还可以在[Adobe Target帮助页面](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html)上找到有关Adobe Campaign与Adobe Target之间集成的信息。
