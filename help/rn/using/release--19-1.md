@@ -6,9 +6,9 @@ feature: null
 role: null
 level: null
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
-source-wordcount: '3258'
+source-wordcount: '3252'
 ht-degree: 26%
 
 ---
@@ -171,11 +171,11 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>要提高管理员用户的工作效率，请通过监控存储、添加要的IP地址并为每个实例安装SSH密钥来管理SFTP服务允许列表器的设置。 请注意，控制面板仅适用于自今天起托管在AWS上的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">通过今天的Experience Cloud登录</a>)。</p> <p>有关更多信息，请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/control-panel/using/control-panel-home.html">详细文档</a>和<a href="https://docs.adobe.com/content/help/zh-Hans/campaign-classic-learn/control-panel/control-panel-overview.html">操作方法视频</a>。 </p><p>注意：要访问控制面板，无需升级到最新的Campaign内部版本。</p> </td> 
+   <td> <p>要提高管理员用户的工作效率，请通过监控存储、添加要的IP地址并为每个实例安装SSH密钥来管理SFTP服务允许列表器的设置。 请注意，控制面板仅适用于自今天起托管在AWS上的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">通过今天的Experience Cloud登录</a>)。</p> <p>有关更多信息，请参阅<a href="https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans">详细文档</a>和<a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/control-panel-overview.html?lang=zh-Hans">操作方法视频</a>。 </p><p>注意：要访问控制面板，无需升级到最新的Campaign内部版本。</p> </td> 
   </tr> 
     <tr> 
    <td> 审核跟踪<br /> </td> 
-   <td> <p>作为管理员，可通过监控和管理Adobe Campaign Classic实例中所做的更改来提高生产效率。 审核跟踪将记录对源架构、工作流和选项所执行的操作。 您可以快速查看是否已创建、修改或删除某个元素。</p><p>有关更多信息，请参阅<a href="../../production/using/audit-trail.md">详细文档</a>和<a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">操作方法视频</a>。</p></td> 
+   <td> <p>作为管理员，可通过监控和管理Adobe Campaign Classic实例中所做的更改来提高生产效率。 审核跟踪将记录对源架构、工作流和选项所执行的操作。 您可以快速查看是否已创建、修改或删除某个元素。</p><p>有关更多信息，请参阅<a href="../../production/using/audit-trail.md">详细文档</a>和<a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/monitoring/audit-trail.html">操作方法视频</a>。</p></td> 
   </tr> 
   <tr> 
    <td> 护栏、稳健性和可扩展性<br /> </td> 
