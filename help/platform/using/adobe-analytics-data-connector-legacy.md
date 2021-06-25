@@ -8,9 +8,9 @@ level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 6059693522850c13569b2c8f33137531276a3bd0
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1682'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 >
 >Adobe Analytics Data Connector现已弃用。 已弃用的功能仍然可用，但将不会进一步增强或支持这些功能。 在本页](../../rn/using/deprecated-features.md)中了解更多[信息。
 
-## 关于Data Connector集成{#about-data-connector-integration}
+## 关于Data Connector集成 {#about-data-connector-integration}
 
 >[!IMPORTANT]
 >
@@ -46,7 +46,7 @@ Data Connector(以前称为Adobe Genesis)允许Adobe Campaign和Adobe Analytics�
    1. 恢复和分析区段，
    1. 触发再营销活动。
 
-## 设置集成{#setting-up-the-integration}
+## 设置集成 {#setting-up-the-integration}
 
 要设置Data Connector，您必须连接到Adobe Campaign实例并执行以下操作：
 
@@ -54,7 +54,7 @@ Data Connector(以前称为Adobe Genesis)允许Adobe Campaign和Adobe Analytics�
 * [步骤2:在Campaign中创建外部帐户](#step-2--create-the-external-account-in-campaign)
 * [步骤3:同步Adobe Campaign和Adobe Analytics](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
 
-### 步骤1:在Analytics中配置集成{#step-1--configure-integration-in-analytics}
+### 步骤1:在Analytics中配置集成 {#step-1--configure-integration-in-analytics}
 
 以下步骤使用向导详细说明Data Connector的配置。
 
@@ -68,7 +68,7 @@ Data Connector(以前称为Adobe Genesis)允许Adobe Campaign和Adobe Analytics�
 
 1. 从&#x200B;**[!UICONTROL Admin]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Data Connectors]**。
 
-   您需要具有以下Analytics工具权限才能访问&#x200B;**[!UICONTROL Data Connectors]**&#x200B;菜单。 有关更多信息，请参阅此[页面](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
+   您需要具有以下Analytics工具权限才能访问&#x200B;**[!UICONTROL Data Connectors]**&#x200B;菜单。 有关更多信息，请参阅此[页面](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html)
    * 集成（创建）
    * 集成（更新）
    * 集成（删除）
@@ -117,7 +117,7 @@ Data Connector(以前称为Adobe Genesis)允许Adobe Campaign和Adobe Analytics�
 
    数据连接器现已配置完成。
 
-### 步骤2:在Campaign {#step-2--create-the-external-account-in-campaign}中创建外部帐户
+### 步骤2:在Campaign中创建外部帐户 {#step-2--create-the-external-account-in-campaign}
 
 将Adobe Campaign集成到Analytics平台是使用连接器执行的。 要同步应用程序，请应用以下流程：
 
@@ -190,7 +190,7 @@ Data Connector(以前称为Adobe Genesis)允许Adobe Campaign和Adobe Analytics�
 
 ![](assets/webanalytics_segments_update.png)
 
-### Web分析流程的技术工作流{#technical-workflows-of-web-analytics-processes}
+### Web分析流程的技术工作流 {#technical-workflows-of-web-analytics-processes}
 
 Adobe Campaign与Adobe Analytics之间的数据交换 — Data Connector由四个作为后台任务运行的技术工作流处理。
 
@@ -235,7 +235,7 @@ Adobe Campaign与Adobe Analytics之间的数据交换 — Data Connector由四�
 
 
 
-## 在Adobe Campaign中跟踪投放{#tracking-deliveries-in-adobe-campaign}
+## 在Adobe Campaign中跟踪投放 {#tracking-deliveries-in-adobe-campaign}
 
 为了让Adobe Experience Cloud能够在Adobe Campaign发送投放后跟踪站点上的活动，您需要在投放属性中引用匹配的连接器。 要执行此操作，请应用以下步骤：
 
@@ -250,7 +250,7 @@ Adobe Campaign与Adobe Analytics之间的数据交换 — Data Connector由四�
 
 1. 您现在可以发送投放内容，并在Adobe Analytics中访问其报表。
 
-## 创建再营销活动{#creating-a-re-marketing-campaign}
+## 创建再营销活动 {#creating-a-re-marketing-campaign}
 
 要准备再营销活动，只需创建用于再营销类型营销活动的投放模板即可。 然后，配置再营销活动并将其链接到区段。 每个区段必须具有不同的再营销活动。
 
