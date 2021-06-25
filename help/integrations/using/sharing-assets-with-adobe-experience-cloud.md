@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '171'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Experience Cloud资产提供了一个集中的营销就绪型资产存储库，�
 
 在Adobe Campaign中编辑电子邮件投放或登陆页面时，您可以从Adobe Experience Cloud库中放置资产。 根据您使用的解决方案，这些资产可以存储在Assets核心服务或Adobe Experience Manager Assets中。
 
-[本文档](https://docs.adobe.com/content/help/en/core-services/interface/assets/experience-cloud-assets.html)中详细介绍了各种可用库。
+[本文档](https://experienceleague.adobe.com/docs/core-services/interface/assets/experience-cloud-assets.html)中详细介绍了各种可用库。
 
 请参阅[配置对资产的访问](../../integrations/using/configuring-access-to-assets.md)一节，了解有关链接到每个库的具体信息的更多信息。
 
