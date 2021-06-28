@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 6%
 
 ---
@@ -29,6 +29,6 @@ Adobe Campaign允许您在收集的Web跟踪信息以匿名方式浏览您网站
 
    ![](assets/webtracking_anonymous_set.png)
 
-* 必须在跟踪服务器上发布和执行Web窗体和调查。 必须在部署向导中选择匹配选项。
+* 必须在跟踪服务器上发布和执行Web窗体。 必须在部署向导中选择匹配选项。
 
    ![](assets/webtracking_publication_set_for_webapps.png)
