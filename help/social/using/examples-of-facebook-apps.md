@@ -6,9 +6,9 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '2222'
 ht-degree: 1%
 
 ---
@@ -41,14 +41,14 @@ ht-degree: 1%
 >
 >以这些简单用例为例，说明了Facebook类型Web应用程序的功能。
 
-## 建议 {#recommendations}
+## 推荐 {#recommendations}
 
 以下限制直接关联到Facebook:
 
 * 您必须使用HTTPS构建所有Web应用程序。
 * 通过选项卡显示的Facebook应用程序的宽度为810像素。
 
-## 快速入门：通过7个步骤创建Facebook应用程序{#quick-start--creating-a-facebook-application-in-7-steps}
+## 快速入门：通过7步创建Facebook应用程序 {#quick-start--creating-a-facebook-application-in-7-steps}
 
 此示例提供了如何在Facebook中显示Adobe Campaign构建的应用程序的分步流程。 在这种情况下，我们希望创建一个应用程序，该应用程序允许您在用户单击应用程序选项卡(**App01**)时显示&#x200B;**Welcome**&#x200B;消息。
 
@@ -88,7 +88,7 @@ ht-degree: 1%
 
 ![](assets/social_webapp_042.png)
 
-## 如何将设置转发到Facebook应用程序？{#how-to-forward-settings-to-a-facebook-application-}
+## 如何将设置转发到Facebook应用程序？ {#how-to-forward-settings-to-a-facebook-application-}
 
 >[!IMPORTANT]
 >
@@ -120,7 +120,7 @@ ht-degree: 1%
 
 ![](assets/social_webapp_018.png)
 
-## 如何获取粉丝数据？{#how-to-acquire-fan-data-}
+## 如何获取粉丝数据？ {#how-to-acquire-fan-data-}
 
 >[!IMPORTANT]
 >
@@ -151,7 +151,7 @@ ht-degree: 1%
 
 ![](assets/social_webapp_019.png)
 
-### 测试活动{#test-activity}
+### 测试活动 {#test-activity}
 
 **[!UICONTROL Test]**&#x200B;活动基于&#x200B;**[!UICONTROL ID]**&#x200B;和&#x200B;**[!UICONTROL Application parameters]**&#x200B;字段。
 
@@ -163,13 +163,13 @@ ht-degree: 1%
 * **[!UICONTROL application parameter equals 'thanks']** :要避免链接到Facebook的显示错误，Web应用程序结束页面会指向使用值添加到的 **[!UICONTROL app_data]** Facebook应用程序的URL( **[!UICONTROL thanks]** 有关更多信息，请参阅： [结束活动](#end-activity))。第二个分支可让您了解用户是否来自第一个分支的&#x200B;**[!UICONTROL End]**&#x200B;活动（并且刚刚进入竞争对手），以显示感谢信。 有关使用其他URL参数的更多信息，请参阅：[如何将设置转发到Facebook应用程序？](#how-to-forward-settings-to-a-facebook-application-)。
 * **[!UICONTROL Default branch]** :如果用户在上一日期(应用程序参数与 **[!UICONTROL thanks]**&#x200B;不同)已输入竞争对手（ID已输入），我们将显示一个页面，表示他们已经输入。
 
-### 竞争页面{#competition-page}
+### 竞争页面 {#competition-page}
 
 要避免链接到Facebook的显示错误，您还需要在竞争页面的&#x200B;**[!UICONTROL Window]**&#x200B;字段中选择&#x200B;**[!UICONTROL Parent window]**&#x200B;或&#x200B;**[!UICONTROL In the top window]**。
 
 ![](assets/social_webapp_028.png)
 
-### 访问控制活动{#access-control-activity}
+### 访问控制活动 {#access-control-activity}
 
 通过&#x200B;**[!UICONTROL Access control]**&#x200B;活动，可在用户进入竞争对手时显示Facebook权限请求页面。 如果用户同意共享其信息，则在预加载期间会恢复该信息。 有关更多信息，请参阅：[预加载活动](#pre-loading-activity)。
 
@@ -177,7 +177,7 @@ ht-degree: 1%
 
 ![](assets/social_webapp_024.png)
 
-### 预加载活动{#pre-loading-activity}
+### 预加载活动 {#pre-loading-activity}
 
 选择要用于预加载的数据源：
 
@@ -224,7 +224,7 @@ ht-degree: 1%
 >
 >如果要同时使用这两种预加载方式(通过Adobe Campaign和通过Facebook)，请依次添加两个预加载框。
 
-### 保存活动{#save-activity}
+### 保存活动 {#save-activity}
 
 **[!UICONTROL Save]**&#x200B;活动允许您将在访客表中存储在先前阶段收集的信息。
 
@@ -257,7 +257,7 @@ ht-degree: 1%
 
 ![](assets/social_webapp_027.png)
 
-### 访客{#details-screen-of-a-visitor}的详细信息屏幕
+### 访客的详细信息屏幕 {#details-screen-of-a-visitor}
 
 与Twitter关注者类似(请参阅：[工作原理](../../social/using/publishing-on-twitter.md#operating-principle))，恢复的Facebook配置文件会存储在访客表中。 要显示访客列表，请转到&#x200B;**[!UICONTROL Profiles and Targets > Visitors]**&#x200B;节点。
 
@@ -297,7 +297,7 @@ ht-degree: 1%
    >
    >为了让Adobe Campaign收集风扇的签入，您需要单击服务配置屏幕上的&#x200B;**[!UICONTROL Subscribe]**&#x200B;按钮。 有关更多信息，请参阅[配置外部帐户](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
 
-## 如何使用Facebook配置文件数据{#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}预加载表单的字段
+## 如何使用Facebook用户档案数据预载表单 {#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}
 
 **[!UICONTROL Social Marketing]**&#x200B;应用程序还允许您向表单添加按钮，以使用Facebook用户档案信息预加载字段。 [此部分](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)中详细描述了此选项，该选项可在所有Web应用程序模板（**[!UICONTROL Page]**&#x200B;类型活动）中使用。
 
@@ -306,3 +306,55 @@ ht-degree: 1%
 >[!NOTE]
 >
 >在开始使用此函数之前，您需要创建一个Facebook应用程序并键入&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;外部帐户。 有关更多信息，请参阅[配置外部帐户](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
+
+**预载表单的字段，其中包含从Facebook配置文件获取的数据**
+
+可创建Web窗体，并在窗体页面中包含用户没有交互的元素；这些是静态元素，如图像、HTML内容、水平条或超文本链接。 详细了解[本页](../../web/using/static-elements-in-a-web-form.md)中Web窗体中的静态元素。
+
+在插入静态元素时，**[!UICONTROL Preload with Facebook]**&#x200B;选项允许您在表单中插入按钮，以使用Facebook配置文件信息预载字段。
+
+![](assets/web_social_webapp_037.png)
+
+当用户单击&#x200B;**[!UICONTROL Fill in automatically]**&#x200B;按钮时，将打开Facebook的权限请求窗口。
+
+![](assets/web_social_webapp_029.png)
+
+>[!NOTE]
+>
+>您可以在配置外部帐户时更改扩展权限列表。 如果未配置扩展权限，则默认情况下，Facebook会转发基本配置文件信息。\
+>要查看扩展权限列表及其语法，请[参阅Facebook文档](https://developers.facebook.com/docs/reference/api/permissions)。
+
+如果用户同意共享其信息，则会预加载表单的字段。
+
+![](assets/web_social_webapp_030.png)
+
+对于此用例，我们创建了由以下元素组成的Web应用程序：
+
+* 包含表单的页面
+* **[!UICONTROL Record]** 活动
+* **[!UICONTROL End]**&#x200B;活动
+
+![](assets/social_webapp_031.png)
+
+要添加预加载按钮，请应用以下步骤：
+
+1. 创建表单。
+
+   ![](assets/social_webapp_032.png)
+
+1. 转到表单中字段的相同级别并添加链接。
+
+   ![](assets/social_webapp_033.png)
+
+1. 输入标签并选择&#x200B;**[!UICONTROL Button]**&#x200B;类型。
+
+   ![](assets/social_webapp_034.png)
+
+1. 转到&#x200B;**[!UICONTROL Action]**&#x200B;字段并选择&#x200B;**[!UICONTROL Preload with Facebook]**。
+
+   ![](assets/social_webapp_035.png)
+
+1. 转到&#x200B;**[!UICONTROL Application]**&#x200B;字段，然后选择&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;类型之前创建的外部帐户。 有关详细信息，请参见[此页面](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
+
+   ![](assets/social_webapp_036.png)
+
