@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 1%
@@ -25,9 +25,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果您使用Campaign营销资源管理模块，则还可以管理可供多个用户协作工作的营销资源库。 [了解详情](../../campaign/using/managing-marketing-resources.md)。
+>如果您使用Campaign营销资源管理模块，则还可以管理可供多个用户协作工作的营销资源库。 [了解详情](../../mrm/using/managing-marketing-resources.md)。
 
-## 添加文档{#adding-documents}
+## 添加文档 {#adding-documents}
 
 文档可以在营销策划级别（上下文文档）或项目级别（常规文档）进行关联。
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 也可以从此视图编辑和修改它们。
 
-## 通过投放大纲{#associating-and-structuring-resources-linked-via-a-delivery-outline}关联和构建链接的资源
+## 关联和构建通过投放大纲链接的资源 {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 对于营销活动，投放大纲允许您根据特定条件构建要与投放关联的外部元素：相关分支、已授予的促销优惠、参加当地活动的邀请等。
 
-### 创建大纲{#creating-an-outline}
+### 创建大纲 {#creating-an-outline}
 
 要创建大纲，请单击相关营销活动&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子选项卡。
 
@@ -102,9 +102,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >有关营销资源的更多信息，请参阅[此部分](../../campaign/using/managing-marketing-resources.md)。
+   >有关营销资源的更多信息，请参阅[此部分](../../mrm/using/managing-marketing-resources.md)。
 
-### 选择大纲{#selecting-an-outline}
+### 选择大纲 {#selecting-an-outline}
 
 对于每个投放，您可以从为提取大纲保留的部分中选择要关联的大纲，如以下示例中所示：
 
@@ -118,7 +118,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_op_select_composition_c.png)
 
-### 提取结果{#extraction-result}
+### 提取结果 {#extraction-result}
 
 在提取并发送给服务提供商的文件中，大纲的名称，并在适当情况下，其特征（成本、描述等） 根据与服务提供商关联的导出模板中的信息，被添加到内容中。
 
