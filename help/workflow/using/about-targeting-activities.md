@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 4%
@@ -26,7 +26,7 @@ ht-degree: 4%
 * **拆分**:允许您将目标分割成多个子集。请参阅[Split](../../workflow/using/split.md)一节。
 * **单元格**:以数据列的形式提供各种子集的视图，并且当有许多子集时便于对这些子集的操作。有关更多信息，请参阅[Cells](../../workflow/using/cells.md)一节。
 * **按单元格划分的选件**:允许您将不同的选件关联到群体的每个子集。请参阅[按单元格划分的选件](../../workflow/using/offers-by-cell.md)一节。
-* **调查答案**:允许您恢复在调查期间收集的信息。有关更多信息，请参阅此](../../web/using/getting-started-with-surveys.md)章节[。
+* **调查答案**:允许您恢复在调查期间收集的信息。有关更多信息，请参阅此](../../surveys/using/getting-started-with-surveys.md)章节[。
 * **投放概要**:允许您添加投放大纲。请参阅[投放大纲](../../workflow/using/delivery-outline.md)一节。
 * **扩充**:用于向工作表或工作流添加列。请参阅[扩充](../../workflow/using/enrichment.md)一节。
 * **编辑架构**:允许您进行转换、标准化，并在必要时扩充数据。有关更多信息，请参阅[编辑架构](../../workflow/using/edit-schema.md)一节。
