@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 5%
@@ -207,7 +207,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** 类型分类在销售压力管理框架内使用。如需详细信息，请参阅[此部分](../../campaign/using/about-marketing-resource-management.md)。
+>**[!UICONTROL Arbitration]** 类型分类在销售压力管理框架内使用。如需详细信息，请参阅[此部分](../../mrm/using/about-marketing-resource-management.md)。
 
 ## 更改批准模式 {#changing-the-approval-mode}
 
