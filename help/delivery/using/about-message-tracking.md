@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 9%
@@ -71,7 +71,7 @@ Campaign Classic跟踪功能允许您在电子邮件中添加可进行个性化�
 
 **跟踪 Web 应用程序**
 
-您还可以使用跟踪标记来跟踪和测量Web应用程序页面上的访问量。 此功能可用于所有Web应用程序类型，如表单和在线调查。 [了解详情](../../web/using/tracking-a-web-application.md)
+您还可以使用跟踪标记来跟踪和测量Web应用程序页面上的访问量。 此功能可用于所有Web应用程序类型，如表单和登陆页面。 [了解详情](../../web/using/tracking-a-web-application.md)
 
 **选择退出 Web 应用程序跟踪**
 
