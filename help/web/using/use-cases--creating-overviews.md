@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_configuration_webapp_overview.png)
 
-## 创建单页Web应用程序{#creating-a-single-page-web-application}
+## 创建单页Web应用程序 {#creating-a-single-page-web-application}
 
 1. 创建一个&#x200B;**[!UICONTROL Page]** Web应用程序，并禁用叫客过渡和过渡到下一页。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_configuration_webapp_preview.png)
 
-## 在文件夹{#adding-a-filter-on-a-folder}上添加过滤器
+## 在文件夹中添加过滤器 {#adding-a-filter-on-a-folder}
 
 在概述中，您可以根据数据在Adobe Campaign树中的位置来选择访问数据。 这是文件夹上的过滤器。 应用以下流程将其添加到概述中。
 
@@ -80,7 +80,7 @@ ht-degree: 0%
    >
    >此时，Web应用程序不在其应用程序上下文中，因此无法在文件夹上测试过滤器。
 
-## 添加按钮以配置新的Web应用程序{#adding-a-button-to-configure-a-new-web-application}
+## 添加按钮以配置新的Web应用程序 {#adding-a-button-to-configure-a-new-web-application}
 
 1. 将光标放在&#x200B;**[!UICONTROL Page]**&#x200B;元素上并添加链接(**[!UICONTROL Static elements > Link]**)。
 1. 修改链接标签，因为它将显示在概述的按钮上。
@@ -106,7 +106,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_configuration_webapp_link.png)
 
-## 向列表{#adding-detail-to-a-list}添加详细信息
+## 向列表添加详细信息 {#adding-detail-to-a-list}
 
 在概述中配置列表时，您可以选择显示列表中每个条目的其他详细信息。
 
@@ -158,7 +158,7 @@ ht-degree: 0%
 >
 >在服务器上刷新JavaScript库需要五分钟。 您可以重新启动服务器以避免等待此延迟。
 
-## 筛选和更新列表{#filtering-and-updating-the-list}
+## 筛选和更新列表 {#filtering-and-updating-the-list}
 
 在此部分中，您将创建一个过滤器，用于显示由特定运算符创建的Web应用程序的概述。 此过滤器使用链接编辑器创建。 选择运算符后，刷新列表以应用过滤器；这需要创建刷新链接。
 
@@ -169,7 +169,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   有关元素布局的信息，请参阅[此部分](../../web/using/about-web-forms.md)。
+   有关元素布局的信息，请参阅[此部分](about-web-forms.md)。
 
 1. 应用&#x200B;**dottedFilter**。
 
@@ -177,7 +177,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_configuration_webapp_container002.png)
 
-### 使用链接编辑器{#creating-a-filter-using-a-link-editor}创建过滤器
+### 使用链接编辑器创建过滤器 {#creating-a-filter-using-a-link-editor}
 
 1. 将光标放在上一阶段创建的容器上，并通过&#x200B;**[!UICONTROL Advanced controls]**&#x200B;菜单插入链接编辑器。
 1. 在自动打开的存储窗口中，选择&#x200B;**[!UICONTROL Variables]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Edit variables]**&#x200B;链接并创建用于筛选数据的XML变量。
@@ -205,7 +205,7 @@ ht-degree: 0%
 >
 >Web应用程序用户必须是具有相应Adobe Campaign权限的已识别操作员，才能访问信息。 此类配置不适用于匿名Web应用程序。
 
-### 创建刷新链接{#creating-a-refresh-link}
+### 创建刷新链接 {#creating-a-refresh-link}
 
 1. 将光标放在容器上，并通过&#x200B;**[!UICONTROL Static elements]**&#x200B;菜单插入&#x200B;**[!UICONTROL Link]**。
 1. 修改标签。
