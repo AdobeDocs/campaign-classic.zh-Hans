@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 1%
@@ -21,21 +21,21 @@ Web窗体可完全配置和个性化，以满足您的要求。 必须在属性�
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
-## 表单属性总数{#overall-form-properties}
+## 表单的整体属性 {#overall-form-properties}
 
 在属性窗口的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，您可以修改表单的&#x200B;**标签**。 强烈建议不要更改&#x200B;**内部名称**。
 
 ![](assets/s_ncs_admin_survey_properties_general_tab.png)
 
-在表单创建过程中会选择表单模板。 以后无法更改。 有关创建和管理表单模板的更多信息，请参阅[使用Web表单模板](../../web/using/using-a-web-form-template.md)。
+在表单创建过程中会选择表单模板。 以后无法更改。 有关创建和管理表单模板的更多信息，请参阅[使用Web表单模板](using-a-web-form-template.md)。
 
-## 表单数据存储{#form-data-storage}
+## 表单数据存储 {#form-data-storage}
 
 默认情况下，Web窗体的字段会存储在收件人表中。 可以通过从&#x200B;**[!UICONTROL Document type]**&#x200B;字段中选择新表来更改所使用的表。 使用&#x200B;**[!UICONTROL Zoom]**&#x200B;图标可以查看所选表的内容。
 
 默认情况下，答案存储在&#x200B;**对收件人表单**&#x200B;的回答表中。
 
-## 设置错误页面{#setting-up-an-error-page}
+## 设置错误页面 {#setting-up-an-error-page}
 
 您可以配置错误页面：在表单执行过程中出错时，将显示此页面。
 
@@ -49,13 +49,13 @@ Web窗体可完全配置和个性化，以满足您的要求。 必须在属性�
 
 ![](assets/s_ncs_admin_survey_error_page.png)
 
-## 表单本地化{#form-localization}
+## 表单本地化 {#form-localization}
 
 **[!UICONTROL Localization]**&#x200B;选项卡允许您选择Web窗体的设计和显示语言。
 
-请参阅[翻译Web窗体](../../web/using/translating-a-web-form.md)。
+请参阅[翻译Web窗体](translating-a-web-form.md)。
 
-## 表单浏览和渲染{#form-browsing-and-rendering}
+## 表单浏览和渲染 {#form-browsing-and-rendering}
 
 通过&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡，可定义Web窗体页面与所用渲染模板之间的浏览类型。
 
@@ -77,21 +77,21 @@ Web窗体可完全配置和个性化，以满足您的要求。 必须在属性�
 
 通过&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡的&#x200B;**[!UICONTROL Template]**&#x200B;字段，您可以从可用主题中选择主题。
 
-主题保存在树的&#x200B;**[!UICONTROL Administration>Configuration>Form rendering]**&#x200B;节点中。 请参阅[选择表单渲染模板](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
+主题保存在树的&#x200B;**[!UICONTROL Administration>Configuration>Form rendering]**&#x200B;节点中。 请参阅[选择表单渲染模板](form-rendering.md#selecting-the-form-rendering-template)
 
 属性窗口的下半部分将显示示例渲染。 使用&#x200B;**[!UICONTROL Edit link]**&#x200B;图标可以查看所选主题的配置。
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
 
-## 格式为{#texts-in-the-form}的文本
+## 格式文本 {#texts-in-the-form}
 
-使用&#x200B;**[!UICONTROL Page]**&#x200B;选项卡可定义表单页眉和页脚的内容。 请参阅[定义页眉和页脚](../../web/using/form-rendering.md#defining-headers-and-footers)。
+使用&#x200B;**[!UICONTROL Page]**&#x200B;选项卡可定义表单页眉和页脚的内容。 请参阅[定义页眉和页脚](form-rendering.md#defining-headers-and-footers)。
 
-它还允许您管理翻译。 请参阅[翻译Web窗体](../../web/using/translating-a-web-form.md)。
+它还允许您管理翻译。 请参阅[翻译Web窗体](translating-a-web-form.md)。
 
-## 表单{#accessibility-of-the-form}的辅助功能
+## 表单的辅助功能 {#accessibility-of-the-form}
 
-如果Web窗体&#x200B;**[!UICONTROL Online]**&#x200B;且当前日期在其有效期内，则用户可以访问该窗体。 在发布阶段会修改表单的状态（请参阅[发布表单](../../web/using/publishing-a-web-form.md#publishing-a-form)）。 状态显示在属性窗口&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**Project**&#x200B;部分中。
+如果Web窗体&#x200B;**[!UICONTROL Online]**&#x200B;且当前日期在其有效期内，则用户可以访问该窗体。 在发布阶段会修改表单的状态（请参阅[发布表单](publishing-a-web-form.md#publishing-a-form)）。 状态显示在属性窗口&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**Project**&#x200B;部分中。
 
 有效期从&#x200B;**[!UICONTROL Start]**&#x200B;日期到&#x200B;**[!UICONTROL End date]**。 如果这些字段中未指定日期，则表单具有永久有效性。
 
@@ -101,7 +101,7 @@ Web窗体可完全配置和个性化，以满足您的要求。 必须在属性�
 >
 >如果表单已关闭，因此其有效期未达到或过期，或者如果表单已由Adobe Campaign运算符关闭，则当用户尝试访问该表单时，会显示一条消息。 您可以单击&#x200B;**[!UICONTROL Personalize the message displayed if the form is closed...]**&#x200B;以个性化此消息。
 
-## 表单访问控制{#form-access-control}
+## 表单访问控制 {#form-access-control}
 
 默认情况下，以匿名模式访问Web窗体：所有访问表单的运算符均分配有WebApp操作员权限。
 
@@ -119,13 +119,13 @@ Web窗体可完全配置和个性化，以满足您的要求。 必须在属性�
 
 ![](assets/s_ncs_admin_survey_access_op_select.png)
 
-## 表单URL参数{#form-url-parameters}
+## 表单URL参数 {#form-url-parameters}
 
 您可以在表单的URL中添加其他参数，以个性化其内容并初始化上下文（语言、加密的收件人ID、公司、存储在变量中的计算公式等）。 这样，您就可以通过多个不同的URL访问一个表单，并根据URL中指示的参数值对页面内容进行个性化。
 
 默认情况下，Adobe Campaign会提供用于预览表单和检查错误的参数。 您可以创建链接到表单的新设置，该设置可以使用数据库中某个字段或本地变量的值。
 
-## 标准参数{#standard-parameters}
+## 标准参数 {#standard-parameters}
 
 默认情况下，以下参数可用：
 
@@ -144,13 +144,13 @@ Web窗体可完全配置和个性化，以满足您的要求。 必须在属性�
    >
    >当通过具有&#x200B;**_uuid**&#x200B;参数的URL显示表单时，**[!UICONTROL origin]**&#x200B;参数的值会强制设置为&#x200B;**Adobe Campaign**。
 
-## 添加参数{#adding-parameters}
+## 添加参数 {#adding-parameters}
 
 可以通过表单“属性”窗口中的&#x200B;**[!UICONTROL Parameters...]**&#x200B;选项卡添加参数。 这些参数可设为必填项，如下所示：
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-您必须指定一个存储位置，参数值将从中检索。 要执行此操作，请选择一个存储选项，然后单击&#x200B;**[!UICONTROL Storage]**&#x200B;选项卡以选择相关字段或变量。 [响应存储字段](../../web/using/web-forms-answers.md#response-storage-fields)中详细介绍了存储选项。
+您必须指定一个存储位置，参数值将从中检索。 要执行此操作，请选择一个存储选项，然后单击&#x200B;**[!UICONTROL Storage]**&#x200B;选项卡以选择相关字段或变量。 [响应存储字段](web-forms-answers.md#response-storage-fields)中详细介绍了存储选项。
 
 然后，可将答复者状态（0、1或任何其他值）添加到URL中以访问表单。 此信息可在表单的页面或测试框中重复使用。 显示的页面可以根据上下文的值进行条件设置，如下所示：
 
