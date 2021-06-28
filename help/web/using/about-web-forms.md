@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -23,7 +23,7 @@ Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体以创
 >
 >出于隐私原因，我们建议对所有外部资源使用HTTPS。
 
-## 创建Web窗体{#steps-for-creating-a-web-form}的步骤
+## 创建Web窗体的步骤 {#steps-for-creating-a-web-form}
 
 本章详细介绍在Adobe Campaign中设计&#x200B;**webForm**&#x200B;类型表单所需的步骤，以及可用的选项和配置。 Adobe Campaign允许您将此Web窗体提供给用户，以及在数据库中收集和存档答案。
 
@@ -57,22 +57,22 @@ Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体以创
 
 * 定义页面排序和显示条件。
 
-   [定义Web窗体页面排序](../../web/using/defining-web-forms-page-sequencing.md)中详细介绍了此步骤。
+   [定义Web窗体页面排序](defining-web-forms-page-sequencing.md)中详细介绍了此步骤。
 
 * 如有必要，翻译内容。
 
-   [翻译Web窗体](../../web/using/translating-a-web-form.md)中详细介绍了此步骤。
+   [翻译Web窗体](translating-a-web-form.md)中详细介绍了此步骤。
 
-## 关于Web窗体设计{#about-web-forms-designing}
+## 关于Web窗体设计 {#about-web-forms-designing}
 
-表单的页面通过特定编辑器创建，通过该编辑器可定义和配置输入区域（文本）、选择字段（列表、复选框等） 和静态元素（图像、HTLM内容等）。 可以将它们分组到容器中，并根据您的需要更改其布局（有关更多信息，请参阅[创建容器](../../web/using/defining-web-forms-layout.md#creating-containers)）。
+表单的页面通过特定编辑器创建，通过该编辑器可定义和配置输入区域（文本）、选择字段（列表、复选框等） 和静态元素（图像、HTLM内容等）。 可以将它们分组到容器中，并根据您的需要更改其布局（有关更多信息，请参阅[创建容器](defining-web-forms-layout.md#creating-containers)）。
 
 以下部分详细说明了如何为表单屏幕定义内容和布局：
 
-* [向 Web 窗体添加字段](../../web/using/adding-fields-to-a-web-form.md),
-* [插入HTML内容](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)、
-* [Web 窗体中的静态元素](../../web/using/static-elements-in-a-web-form.md),
-* [定义 Web 窗体布局](../../web/using/defining-web-forms-layout.md).
+* [向 Web 窗体添加字段](adding-fields-to-a-web-form.md),
+* [插入HTML内容](static-elements-in-a-web-form.md#inserting-html-content)、
+* [Web 窗体中的静态元素](static-elements-in-a-web-form.md),
+* [定义 Web 窗体布局](defining-web-forms-layout.md).
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体以创
 
 
 
-### 使用工具栏{#using-the-icons-in-the-toolbar}中的图标
+### 使用工具栏中的图标 {#using-the-icons-in-the-toolbar}
 
 您还可以使用工具栏中的图标或右键单击以插入输入区域。
 
