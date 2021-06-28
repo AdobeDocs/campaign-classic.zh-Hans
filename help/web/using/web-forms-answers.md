@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Web 窗体答案{#web-forms-answers}
 
-## 响应存储字段{#response-storage-fields}
+## 响应存储字段 {#response-storage-fields}
 
 表单答案可以保存在数据库的字段中，也可以临时保存在本地变量中。 在字段创建期间，将选择答案的存储模式。 可通过&#x200B;**[!UICONTROL Edit storage...]**&#x200B;链接进行编辑。
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
    如果不想在数据库中存储信息，则可以使用变量。 可以在上游声明局部变量。 请参阅[将数据存储在本地变量](#storing-data-in-a-local-variable)中。
 
-### 在数据库{#storing-data-in-the-database}中存储数据
+### 在数据库中存储数据 {#storing-data-in-the-database}
 
 要在数据库的现有字段中保存数据，请单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;图标，然后从可用字段列表中选择该数据。
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 >
 >默认参考文档为&#x200B;**nms:recipient**&#x200B;模式。 要查看表单或选择新表单，请从列表中选择表单，然后单击&#x200B;**[!UICONTROL Properties]**&#x200B;按钮。
 
-### 将数据存储在本地变量{#storing-data-in-a-local-variable}中
+### 将数据存储在本地变量中 {#storing-data-in-a-local-variable}
 
 您可以使用本地变量，以便即使数据未存储在数据库中，也可以在页面或其他页面上重复使用，例如在字段显示上放置条件或个性化消息。
 
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_no_storage_condb.png)
 
-## 使用收集的信息{#using-collected-information}
+## 使用收集的信息 {#using-collected-information}
 
 对于每个表单，提供的答案可以在字段或标签中重复使用。 必须使用以下语法：
 
@@ -107,7 +107,7 @@ ht-degree: 1%
    >
    >与将`<%=`字符替换为转义字符的其他字段不同，HTML内容会使用`<%==`语法按原样进行保存。
 
-## 保存Web窗体答案{#saving-web-forms-answers}
+## 保存Web窗体答案 {#saving-web-forms-answers}
 
 要保存在表单页面中收集的信息，您需要在图表中放置一个存储框。
 
@@ -115,9 +115,9 @@ ht-degree: 1%
 
 可使用此框的方法有两种：
 
-* 如果通过电子邮件中发送的链接访问Web窗体，并且访问该应用程序的用户已在数据库中，则可以检查&#x200B;**[!UICONTROL Update the preloaded record]**&#x200B;选项。 有关更多信息，请参阅[通过电子邮件传送表单](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email)。
+* 如果通过电子邮件中发送的链接访问Web窗体，并且访问该应用程序的用户已在数据库中，则可以检查&#x200B;**[!UICONTROL Update the preloaded record]**&#x200B;选项。 有关更多信息，请参阅[通过电子邮件传送表单](publishing-a-web-form.md#delivering-a-form-via-email)。
 
-   在这种情况下，Adobe Campaign会使用用户配置文件的已加密主密钥，该密钥是Adobe Campaign分配给每个配置文件的唯一标识符。 您需要配置信息以通过预加载框预加载。 有关更多信息，请参阅[预加载表单数据](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data)。
+   在这种情况下，Adobe Campaign会使用用户配置文件的已加密主密钥，该密钥是Adobe Campaign分配给每个配置文件的唯一标识符。 您需要配置信息以通过预加载框预加载。 有关更多信息，请参阅[预加载表单数据](publishing-a-web-form.md#pre-loading-the-form-data)。
 
    >[!CAUTION]
    >
