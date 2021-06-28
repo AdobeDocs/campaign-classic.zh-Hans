@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 窗体渲染{#form-rendering}
 
-## 选择表单渲染模板{#selecting-the-form-rendering-template}
+## 选择表单渲染模板 {#selecting-the-form-rendering-template}
 
 通过表单设置，您可以选择用于生成页面的模板。 要访问它们，请单击表单详细信息工具栏中的&#x200B;**[!UICONTROL Settings]**&#x200B;按钮，然后选择&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡。 默认情况下，有许多模板（样式表）可用。
 
@@ -57,9 +57,9 @@ ht-degree: 2%
 >呈现模板存储在&#x200B;**[!UICONTROL Administration > Configuration > Form rendering]**&#x200B;节点中。\
 >有关更多信息，请参阅[自定义表单渲染](#customizing-form-rendering)
 
-## 自定义表单渲染{#customizing-form-rendering}
+## 自定义表单渲染 {#customizing-form-rendering}
 
-### 更改元素{#changing-the-layout-of-elements}的布局
+### 更改元素布局 {#changing-the-layout-of-elements}
 
 您可以使表单中每个元素（输入字段、图像、单选按钮等）的样式表过载。
 
@@ -69,9 +69,9 @@ ht-degree: 2%
 
 它允许您定义以下属性：
 
-* **[!UICONTROL Label position]**:请参 [阅定义标签的位置](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels),
+* **[!UICONTROL Label position]**:请参 [阅定义标签的位置](defining-web-forms-layout.md#defining-the-position-of-labels),
 * **[!UICONTROL Label format]**:自动换行或无自动换行，
-* **[!UICONTROL Number of cells]** :请参 [阅定位页面上的字段](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
+* **[!UICONTROL Number of cells]** :请参 [阅定位页面上的字段](defining-web-forms-layout.md#positioning-the-fields-on-the-page),
 * **[!UICONTROL Horizontal alignment]** （左、右、居中） **[!UICONTROL Vertical alignment]** 和（高、低、中），
 * **[!UICONTROL Width]** 区域：可以以百分比或em、点或像素（默认值）表示，
 * 最大&#x200B;**[!UICONTROL Length]**:允许的最大字符数（对于文本、数字和密码类型控件）；
@@ -80,7 +80,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
-### 定义页眉和页脚{#defining-headers-and-footers}
+### 定义页眉和页脚 {#defining-headers-and-footers}
 
 字段在树结构中排列，树结构的根与页面名称相同。 选择它以修改名称。
 
@@ -88,7 +88,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_titles_config.png)
 
-### 向HTML标头{#adding-elements-to-html-header}添加元素
+### 向HTML标头添加元素 {#adding-elements-to-html-header}
 
 您可以输入要插入表单页面HTML标题的其他元素。 要实现此目的，请在相关页面的&#x200B;**[!UICONTROL Header]**&#x200B;选项卡中输入元素。
 
@@ -96,11 +96,11 @@ ht-degree: 2%
 
 ![](assets/webform_header_page_tab.png)
 
-## 定义控制设置{#defining-control-settings}
+## 定义控制设置 {#defining-control-settings}
 
 用户填写表单时，会根据特定字段的格式或配置对其自动执行检查。 这允许您将某些字段设为必填字段（请参阅[定义必填字段](#defining-mandatory-fields)）或检查输入数据的格式（请参阅[检查数据格式](#checking-data-format)）。 在页面批准期间执行检查（通过单击启用输出过渡的链接或按钮）。
 
-### 定义必填字段{#defining-mandatory-fields}
+### 定义必填字段 {#defining-mandatory-fields}
 
 要将某些字段设为必填字段，请在创建字段时选择此选项。
 
@@ -118,7 +118,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_required_custom_msg2.png)
 
-### 正在检查数据格式{#checking-data-format}
+### 检查数据格式 {#checking-data-format}
 
 对于值存储在数据库现有字段中的表单检查，将应用存储字段的规则。
 
@@ -130,7 +130,7 @@ ht-degree: 2%
 
 用户必须在表单字段中输入整数。
 
-## 定义字段条件显示{#defining-fields-conditional-display}
+## 定义字段条件显示 {#defining-fields-conditional-display}
 
 您可以根据用户选择的值配置页面上要显示的字段的显示。 这可以应用于一个字段或一组字段（当它们被分组到容器中时）。
 
@@ -146,19 +146,19 @@ ht-degree: 2%
 
 * 主树包含表单上下文的参数。 默认参数为Identifier（与收件人的加密标识符匹配）、Language和Origin。
 
-   有关详细信息，请参见此 [ 页面](../../web/using/defining-web-forms-properties.md#form-url-parameters)。
+   有关详细信息，请参见此 [ 页面](defining-web-forms-properties.md#form-url-parameters)。
 
 * **[!UICONTROL Recipients]**&#x200B;子树包含插入到表单中并存储在数据库中的输入字段。
 
-   有关更多信息，请参见[在数据库中存储数据](../../web/using/web-forms-answers.md#storing-data-in-the-database)。
+   有关更多信息，请参见[在数据库中存储数据](web-forms-answers.md#storing-data-in-the-database)。
 
-* **[!UICONTROL Variables]**&#x200B;子树包含此表单的可用变量。 有关更多信息，请参阅[将数据存储在本地变量](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable)中。
+* **[!UICONTROL Variables]**&#x200B;子树包含此表单的可用变量。 有关更多信息，请参阅[将数据存储在本地变量](web-forms-answers.md#storing-data-in-a-local-variable)中。
 
-有关更多信息，请参阅此处提供的用例：[根据所选值显示不同的选项](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values)。
+有关更多信息，请参阅此处提供的用例：[根据所选值显示不同的选项](use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values)。
 
-您还可以使用&#x200B;**[!UICONTROL Test]**&#x200B;对象对表单页面的显示进行条件设置。 有关详细信息，请参见此 [ 页面](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display)。
+您还可以使用&#x200B;**[!UICONTROL Test]**&#x200B;对象对表单页面的显示进行条件设置。 有关详细信息，请参见此 [ 页面](defining-web-forms-page-sequencing.md#conditional-page-display)。
 
-## 从现有表单{#importing-elements-from-an-existing-form}导入元素
+## 从现有表单导入元素 {#importing-elements-from-an-existing-form}
 
 可以从其他Web窗体导入字段或容器。 这样，您就可以创建一个可重用块库，这些块将插入到表单中，如地址块、新闻稿订阅区域等。
 
