@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 6%
@@ -31,11 +31,11 @@ ht-degree: 6%
 >
 >仅当您获得了&#x200B;**调查管理器**&#x200B;选项时，才可实施此用例。 请核实您的许可协议。
 
-## 第1步 — 创建数据收集和存储工作流{#step-1---creating-the-data-collection-and-storage-workflow}
+## 步骤1 — 创建数据收集和存储工作流 {#step-1---creating-the-data-collection-and-storage-workflow}
 
 要收集调查的答案，请应用以下步骤：
 
-1. 创建工作流并放置&#x200B;**[!UICONTROL Answers to a survey]**&#x200B;活动。 有关使用此活动的更多信息，请参阅[此部分](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data)。
+1. 创建工作流并放置&#x200B;**[!UICONTROL Answers to a survey]**&#x200B;活动。 有关使用此活动的更多信息，请参阅[此部分](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data)。
 1. 编辑活动并选择要分析其答案的调查。
 1. 启用&#x200B;**[!UICONTROL Select all the answer data]**&#x200B;选项以收集所有信息。
 
@@ -63,7 +63,7 @@ ht-degree: 6%
 
    有关&#x200B;**[!UICONTROL List update]**&#x200B;和&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动的详细信息，请参见。
 
-## 第2步 — 创建多维数据集、其度量及其指示器{#step-2---creating-the-cube--its-measures-and-its-indicators}
+## 第2步 — 创建多维数据集、其度量及其指标 {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
 然后，可以创建多维数据集并配置其度量：这些指标将用于创建将在报告中显示的指标。 有关创建和配置多维数据集的更多信息，请参阅[关于多维数据集](../../reporting/using/about-cubes.md)。
 
@@ -77,7 +77,7 @@ ht-degree: 6%
 
 使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡可以控制报告的呈现。
 
-## 第3步 — 创建报告并配置表{#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}中的数据布局
+## 第3步 — 创建报表并在表中配置数据布局 {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
 
 然后，您可以基于此多维数据集创建报告并处理数据和信息。
 
