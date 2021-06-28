@@ -6,7 +6,7 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 95%
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 ![](assets/do-not-localize/how-to-video.png) [了解视频中的主要特性和功能](#video)
 
-## 重点功能 {#key-capabilities}
+## 重要功能 {#key-capabilities}
 
 Adobe Campaign 提供了跨渠道客户体验设计平台，并为可视化的活动编排、实时互动管理和跨渠道执行提供了环境。
 
@@ -33,7 +33,7 @@ Adobe Campaign 中的营销活动周期体现了产品功能的主要方面：
 
 ![](assets/d_ncs_user_emarketing.png)
 
-### 整合的客户档案 {#integrated-customer-profile}
+### Integrated Customer Profile {#integrated-customer-profile}
 
 用户档案（客户、潜在客户、新闻稿订阅者等）将集中存储在 Adobe Campaign 数据库中。有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助 Adobe Campaign，您可以整合营销历史、购买信息、偏好、CRM 数据，以及整合视图中任何相关的 PII 数据，从而进行分析并采取行动。
 
@@ -47,13 +47,13 @@ Adobe Campaign 具有功能强大且易于使用的市场细分和定位功能�
 
 高级数据管理功能可进一步扩充数据处理能力。通过包含未在数据集市中建模的数据，该功能可简化并优化定位流程。[此页面](../../workflow/using/targeting-data.md#data-management)中详细介绍了该功能。
 
-### 跨渠道活动编排 {#cross-channel-campaign-orchestration}
+### 跨渠道营销活动编排 {#cross-channel-campaign-orchestration}
 
 您可以利用 Adobe Campaign 在多个渠道上设计和编排有针对性的个性化活动：电子邮件、直邮、SMS、推送通知等。通过单个界面为您提供计划、编排、配置、个性化、自动化、执行和衡量所有活动和通信所需的全部功能。如需有关活动计划和执行活动的详细信息，请参阅[此页面](../../campaign/using/setting-up-marketing-campaigns.md)。
 
 ### 个性化和实时互动 {#personalization-and-real-time-interaction}
 
-根据客户的用户档案和偏好进一步个性化邮件内容和标头，从而吸引客户的目光并提高响应率。如需有关邮件内容管理及个性化的详细信息，请参阅[此页面](../../delivery/using/about-personalization.md)。[此部分](../../campaign/using/about-marketing-resource-management.md)详细说明了如何协作管理内容、通知和批准循环。
+根据客户的用户档案和偏好进一步个性化邮件内容和标头，从而吸引客户的目光并提高响应率。如需有关邮件内容管理及个性化的详细信息，请参阅[此页面](../../delivery/using/about-personalization.md)。[此部分](../../mrm/using/about-marketing-resource-management.md)详细说明了如何协作管理内容、通知和批准循环。
 
 ### 分析和报告 {#analysis-and-reporting}
 
@@ -71,13 +71,13 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 
 * [渠道](../../delivery/using/steps-about-delivery-creation-steps.md) - 在不同渠道上设计并投放内容：电子邮件、SMS、Line、移动应用程序、直邮，
 * [活动](../../campaign/using/designing-marketing-campaigns.md) - 跨渠道编排各种活动，
-* [MRM](../../campaign/using/about-marketing-resource-management.md) - 管理营销资源和预算，
+* [MRM](../../mrm/using/about-marketing-resource-management.md) - 管理营销资源和预算，
 * [互动](../../interaction/using/interaction-and-offer-management.md) - 通过 Campaign 管理优惠方案，
 * [消息中心](../../message-center/using/about-transactional-messaging.md) - 通过电子邮件、SMS 或在移动应用程序上发送事务性消息，
 * [社交营销](../../social/using/about-social-marketing.md) - 在 Facebook、Twitter 等社交媒体上交流，
 * [工作流](../../workflow/using/about-workflows.md) / 数据管理 - 通过工作流自动化各个流程并管理数据，
 * [Web 应用程序](../../web/using/about-web-applications.md) - 创建网页和窗体，
-* [调查管理器](../../web/using/about-surveys.md) - 创建在线调查和投票，
+* [调查管理器](../../surveys/using/about-surveys.md) - 创建在线调查和投票，
 * [内容管理器](../../delivery/using/about-content-management.md) - 管理电子邮件内容，
 * [分布式营销](../../campaign/using/about-distributed-marketing.md) - 协调中央/地方机关的营销活动，
 * [响应管理器](../../campaign/using/about-response-manager.md) - 管理客户响应，
