@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Adobe Campaign允许您停止跟踪通过cookie或网络信标选择退出行为
 >
 >脚本编写时始终遵循[安全和隐私检查列表](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中描述的准则。
 
-## 配置横幅{#configuring-the-banner-}
+## 配置横幅 {#configuring-the-banner-}
 
 要在Web应用程序或登陆页面中显示横幅，需要配置横幅。
 
@@ -33,7 +33,7 @@ Adobe Campaign提供了一个示例横幅，您必须根据自己的需求进行
 >
 >要创建您自己的横幅，必须个性化现成的横幅。
 
-要激活横幅，必须配置Web应用程序属性。 请参阅[设计Web应用程序](../../web/using/designing-a-web-application.md)一节。
+要激活横幅，必须配置Web应用程序属性。 请参阅[设计Web应用程序](designing-a-web-application.md)一节。
 
 如果激活了Web跟踪，您可以：
 
@@ -64,9 +64,9 @@ Adobe Campaign提供了一个示例横幅，您必须根据自己的需求进行
 
 您必须将&#x200B;**Please insert your message here**&#x200B;替换为包含跟踪信息的块。 此替换操作应在与选择退出横幅相关的新个性化块中执行。
 
-横幅将使用特定CSS进行传递。 但是，在创建和配置网页时，您可以覆盖样式。 请参见[此页面](../../web/using/content-editor-interface.md)。
+横幅将使用特定CSS进行传递。 但是，在创建和配置网页时，您可以覆盖样式。 请参见[此页面](content-editor-interface.md)。
 
-## 使用API {#setting-the-opt-out-cookie-using-api}设置选择退出Cookie
+## 使用API设置选择退出Cookie {#setting-the-opt-out-cookie-using-api}
 
 Adobe Campaign随API一起提供，允许您管理Cookie值并检索用户首选项。
 
