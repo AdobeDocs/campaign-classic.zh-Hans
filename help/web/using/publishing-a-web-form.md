@@ -6,16 +6,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 2%
+source-wordcount: '965'
+ht-degree: 1%
 
 ---
 
 # 发布 Web 窗体{#publishing-a-web-form}
 
-## 预加载表单数据{#pre-loading-the-form-data}
+## 预加载表单数据 {#pre-loading-the-form-data}
 
 如果希望通过Web窗体更新存储在数据库中的用户档案，则可以使用预加载框。 利用预加载框，可指示如何在数据库中查找要更新的记录。
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_admin_survey_preload_methods_002.png)
 
-   可以通过&#x200B;**[!UICONTROL Parameters]**&#x200B;选项卡将字段添加到表单属性（请参阅[添加参数](../../web/using/defining-web-forms-properties.md#adding-parameters)）。 它们以URL或输入区域的形式放置。
+   可以通过&#x200B;**[!UICONTROL Parameters]**&#x200B;选项卡将字段添加到表单属性（请参阅[添加参数](defining-web-forms-properties.md#adding-parameters)）。 它们以URL或输入区域的形式放置。
 
    >[!CAUTION]
    >
@@ -71,17 +71,17 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_preload_ex.png)
 
-## 管理Web窗体投放和跟踪{#managing-web-forms-delivery-and-tracking}
+## 管理Web窗体交付和跟踪 {#managing-web-forms-delivery-and-tracking}
 
 创建、配置和发布表单后，您可以交付该表单并跟踪用户响应。
 
-### 表单{#life-cycle-of-a-form}的生命周期
+### 表单的生命周期 {#life-cycle-of-a-form}
 
 表单生命周期有三个阶段：
 
 1. **正在编辑的表单**
 
-   这是最初的设计阶段。 创建新表单后，该表单将处于编辑阶段。 出于测试目的，访问表单时，需要在其URL中使用参数&#x200B;**[!UICONTROL __uuid]**。 此URL可在&#x200B;**[!UICONTROL Preview]**&#x200B;子选项卡中访问。 请参阅[表单URL参数](../../web/using/defining-web-forms-properties.md#form-url-parameters)。
+   这是最初的设计阶段。 创建新表单后，该表单将处于编辑阶段。 出于测试目的，访问表单时，需要在其URL中使用参数&#x200B;**[!UICONTROL __uuid]**。 此URL可在&#x200B;**[!UICONTROL Preview]**&#x200B;子选项卡中访问。 请参阅[表单URL参数](defining-web-forms-properties.md#form-url-parameters)。
 
    >[!CAUTION]
    >
@@ -107,13 +107,13 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_status.png)
 
-### 发布表单{#publishing-a-form}
+### 发布表单 {#publishing-a-form}
 
 要更改表单的状态，您需要发布它。 为此，请单击Web窗体列表上方的&#x200B;**[!UICONTROL Publication]**&#x200B;按钮，然后在下拉框中选择状态。
 
 ![](assets/webapp_publish_webform.png)
 
-### 联机提供表单{#making-a-form-available-online}
+### 联机提供表单 {#making-a-form-available-online}
 
 要供用户访问，表单必须在生产中并启动，即在其有效期内。 有效日期通过表单的&#x200B;**[!UICONTROL Properties]**&#x200B;链接输入。
 
@@ -123,9 +123,9 @@ ht-degree: 2%
 
 * 单击&#x200B;**[!UICONTROL Personalize the message displayed if the form is closed...]**&#x200B;链接，以定义用户在表单无效时尝试访问该表单时要显示的错误消息。
 
-   请参阅[表单](../../web/using/defining-web-forms-properties.md#accessibility-of-the-form)的辅助功能。
+   请参阅[表单](defining-web-forms-properties.md#accessibility-of-the-form)的辅助功能。
 
-### 通过电子邮件{#delivering-a-form-via-email}传送表单
+### 通过电子邮件投放表单 {#delivering-a-form-via-email}
 
 通过电子邮件发送邀请时，可以使用&#x200B;**[!UICONTROL Adobe Campaign Encryption]**&#x200B;选项进行数据协调。 为此，请转到投放向导，并通过添加以下参数来调整表单的链接：
 
@@ -135,11 +135,11 @@ ht-degree: 2%
 
 在这种情况下，数据存储的协调密钥必须是收件人的加密标识符。 有关更多信息，请参阅[预加载表单数据](#pre-loading-the-form-data)。
 
-在这种情况下，您需要选中记录框中的&#x200B;**[!UICONTROL Update the preloaded record]**&#x200B;选项。 有关更多信息，请参阅[保存Web窗体答案](../../web/using/web-forms-answers.md#saving-web-forms-answers)。
+在这种情况下，您需要选中记录框中的&#x200B;**[!UICONTROL Update the preloaded record]**&#x200B;选项。 有关更多信息，请参阅[保存Web窗体答案](web-forms-answers.md#saving-web-forms-answers)。
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
-### 日志响应{#log-responses}
+### 日志响应 {#log-responses}
 
 可以在专用选项卡中激活响应跟踪，以监控Web表单的影响。 要执行此操作，请单击表单属性窗口中的&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;链接，然后选择&#x200B;**[!UICONTROL Log responses]**&#x200B;选项。
 
@@ -154,7 +154,3 @@ ht-degree: 2%
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 
 您可以处理查询中提供的响应日志，例如，在发送提醒时仅定向非应答者，或仅向应答者提供特定通信。
-
->[!NOTE]
->
->要完整跟踪提供的响应，请导出响应并查看或创建专用报告，请使用可选的&#x200B;**Survey**&#x200B;模块。 如需详细信息，请参阅[此部分](../../web/using/about-surveys.md)。
