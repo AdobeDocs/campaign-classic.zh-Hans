@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # 创建登陆页面{#creating-a-landing-page}
 
-## 关于创建登陆页面{#about-landing-pages-creation}
+## 关于创建登陆页面 {#about-landing-pages-creation}
 
 此用例展示了如何使用数字编辑器从Adobe Campaign控制台创建登陆页面。
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 此用例的主要目的是使用DCE中的函数，使登陆页面表单字段与Adobe Campaign中的内部字段相对应。
 
-## 创建登陆页面{#creating-the-landing-page}
+## 创建登陆页面 {#creating-the-landing-page}
 
 要创建新的登陆页面类型Web应用程序，请执行以下步骤：
 
@@ -47,9 +47,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->有关创建Web应用程序的更多信息，请参阅[此部分](../../web/using/creating-a-new-web-application.md)。
+>有关创建Web应用程序的更多信息，请参阅[此部分](creating-a-new-web-application.md)。
 
-## 步骤1 — 选择并加载模板{#step-1---selecting-and-loading-templates}
+## 步骤1 — 选择和加载模板 {#step-1---selecting-and-loading-templates}
 
 在本节中，我们将介绍如何&#x200B;**导入Web应用程序每个页面的HTML内容**。
 
@@ -90,13 +90,13 @@ ht-degree: 3%
 >
 >**DCE为加载的HTML页面执行JavaScript代码。** HTML模板中可能显示在Adobe Campaign界面中的JavaScript错误。这些错误与编辑器无关。 要检查导入的文件中是否没有错误，建议先在浏览器(Internet Explorer / Firefox / Chrome)中测试这些文件，然后再将文件导入DCE。
 
-## 步骤2 — 配置内容{#step-2---configuring-the-content}
+## 步骤2 — 配置内容 {#step-2---configuring-the-content}
 
 在本节中，我们将调整导入的内容，并将数据库的字段链接到网页的形式。 以前创建的Web应用程序是：
 
 ![](assets/dce_uc1_lp_enchainement.png)
 
-### 修改内容{#modifying-content}
+### 修改内容 {#modifying-content}
 
 让我们从更改页面的颜色开始。 操作步骤：
 
@@ -112,7 +112,7 @@ ht-degree: 3%
 
    ![](assets/dce_uc1_finalcolor.png)
 
-### 链接表单字段{#linking-form-fields}
+### 链接表单字段 {#linking-form-fields}
 
 为了保存提供的信息，我们将将页面中的字段链接到数据库中的字段。
 
@@ -128,7 +128,7 @@ ht-degree: 3%
 
 ![](assets/dce_uc1_fieldmandatory.png)
 
-### 创建指向下一页的链接{#creating-a-link-to-the-next-page}
+### 创建指向下一页的链接 {#creating-a-link-to-the-next-page}
 
 此步骤是强制性的，因为它将允许Web应用程序确定后续步骤的顺序：将收集的数据保存到数据库中，然后显示下一页（**谢谢**&#x200B;页）。
 
@@ -153,7 +153,7 @@ ht-degree: 3%
 
 ![](assets/dce_uc1_edit_champperso.png)
 
-## 步骤3 — 发布内容{#step-3---publishing-content}
+## 步骤3 — 发布内容 {#step-3---publishing-content}
 
 内容从Web应用程序功能板发布。 单击&#x200B;**[!UICONTROL Publish]**&#x200B;按钮以运行它。
 
