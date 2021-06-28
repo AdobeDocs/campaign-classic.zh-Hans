@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 4%
+source-wordcount: '1034'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 4%
    >
    >在服务器端，脚本可以使用[Campaign JSAPI文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)中定义的函数。
 
-## 插入HTML内容{#inserting-html-content}
+## 插入HTML内容 {#inserting-html-content}
 
 您可以在表单页面中包含HTML内容：超文本链接、图像、带格式的段落、视频等。
 
@@ -46,9 +46,9 @@ HTML编辑器允许您输入要插入表单页面的内容。 要打开编辑器
 
 >[!NOTE]
 >
->只有在&#x200B;**[!UICONTROL Texts]**&#x200B;子选项卡中定义了在HTML编辑器中输入的字符串时，才会进行翻译。 否则，将不会收集这些量度。 有关更多信息，请参阅[翻译Web窗体](../../web/using/translating-a-web-form.md)。
+>只有在&#x200B;**[!UICONTROL Texts]**&#x200B;子选项卡中定义了在HTML编辑器中输入的字符串时，才会进行翻译。 否则，将不会收集这些量度。 有关更多信息，请参阅[翻译Web窗体](translating-a-web-form.md)。
 
-### 插入链接{#inserting-a-link}
+### 插入链接 {#inserting-a-link}
 
 按照以下示例所示，填写编辑窗口中的字段：
 
@@ -65,7 +65,7 @@ HTML编辑器允许您输入要插入表单页面的内容。 要打开编辑器
 
 * 您可以选择将链接显示为按钮或图像。 为此，请在&#x200B;**[!UICONTROL Type]**&#x200B;字段中选择显示类型。
 
-### 链接类型{#types-of-links}
+### 链接类型 {#types-of-links}
 
 默认情况下，这些链接与URL类型操作相关联，因此可以在URL字段中输入链接目标地址。
 
@@ -85,7 +85,7 @@ HTML编辑器允许您输入要插入表单页面的内容。 要打开编辑器
 
    ![](assets/s_ncs_admin_survey_link_next.png)
 
-   如果&#x200B;**[!UICONTROL Next]**&#x200B;和/或&#x200B;**[!UICONTROL Back]**&#x200B;按钮要替换为链接，则可以隐藏它们。 请参见此[页面](../../web/using/defining-web-forms-page-sequencing.md)。
+   如果&#x200B;**[!UICONTROL Next]**&#x200B;和/或&#x200B;**[!UICONTROL Back]**&#x200B;按钮要替换为链接，则可以隐藏它们。 请参见此[页面](defining-web-forms-page-sequencing.md)。
 
    该链接将替换默认使用的&#x200B;**[!UICONTROL Next]**&#x200B;按钮。
 
@@ -107,68 +107,15 @@ HTML编辑器允许您输入要插入表单页面的内容。 要打开编辑器
 
    >[!NOTE]
    >
-   >有关Web窗体中页面排序的更多信息，请参阅[定义Web窗体页面排序](../../web/using/defining-web-forms-page-sequencing.md)。
+   >有关Web窗体中页面排序的更多信息，请参阅[定义Web窗体页面排序](defining-web-forms-page-sequencing.md)。
 
-* 预载表单的字段，其中包含从Facebook配置文件获取的数据
-
-   >[!CAUTION]
-   >
-   >此函数仅在安装了&#x200B;**[!UICONTROL Social Marketing]**&#x200B;应用程序时才可用。 要使用此选项，您需要创建Facebook应用程序以及&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;类型的外部帐户。 有关详细信息，请参见[此页面](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
-
-   **[!UICONTROL Preload with Facebook]**&#x200B;选项允许您在表单中插入按钮，以使用Facebook配置文件信息预载字段。
-
-   ![](assets/web_social_webapp_037.png)
-
-   当用户单击&#x200B;**[!UICONTROL Fill in automatically]**&#x200B;按钮时，将打开Facebook的权限请求窗口。
-
-   ![](assets/web_social_webapp_029.png)
-
-   >[!NOTE]
-   >
-   >配置外部帐户时，可以更改扩展权限列表。 如果未输入任何扩展权限，则默认情况下，Facebook会转发基本的用户档案信息。\
-   >要查看扩展权限列表及其语法，请单击此处：[https://developers.facebook.com/docs/reference/api/permissions/](https://developers.facebook.com/docs/reference/api/permissions/)
-
-   如果用户同意共享其信息，则会预加载表单的字段。
-
-   ![](assets/web_social_webapp_030.png)
-
-对于此用例，我们创建了由以下元素组成的Web应用程序：
-
-* 包含表单的页面
-* **[!UICONTROL Record]** 活动
-* **[!UICONTROL End]**&#x200B;活动
-
-![](assets/social_webapp_031.png)
-
-要添加预加载按钮，请应用以下步骤：
-
-1. 创建表单。
-
-   ![](assets/social_webapp_032.png)
-
-1. 转到表单中字段的相同级别并添加链接。
-
-   ![](assets/social_webapp_033.png)
-
-1. 输入标签并选择&#x200B;**[!UICONTROL Button]**&#x200B;类型。
-
-   ![](assets/social_webapp_034.png)
-
-1. 转到&#x200B;**[!UICONTROL Action]**&#x200B;字段并选择&#x200B;**[!UICONTROL Preload with Facebook]**。
-
-   ![](assets/social_webapp_035.png)
-
-1. 转到&#x200B;**[!UICONTROL Application]**&#x200B;字段，然后选择&#x200B;**[!UICONTROL Facebook Connect]**&#x200B;类型之前创建的外部帐户。 有关详细信息，请参见[此页面](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)。
-
-   ![](assets/social_webapp_036.png)
-
-### 个性化HTML内容{#personalizing-html-content}
+### 个性化HTML内容 {#personalizing-html-content}
 
 您可以使用上一页记录的数据，将表单页面的HTML内容个性化。 例如，您可以创建一个汽车保险Web窗体，其首页允许您提供联系信息和汽车品牌。
 
 ![](assets/s_ncs_admin_survey_tag_ctx_1.png)
 
-使用个性化字段将用户名和密码重新注入到下一页。 要使用的语法取决于信息存储模式。 有关更多信息，请参阅[使用收集的信息](../../web/using/web-forms-answers.md#using-collected-information)。
+使用个性化字段将用户名和密码重新注入到下一页。 要使用的语法取决于信息存储模式。 有关更多信息，请参阅[使用收集的信息](web-forms-answers.md#using-collected-information)。
 
 >[!NOTE]
 >
@@ -187,11 +134,11 @@ HTML编辑器允许您输入要插入表单页面的内容。 要打开编辑器
 
 ![](assets/s_ncs_admin_survey_tag_ctx_2.png)
 
-### 使用文本变量{#using-text-variables}
+### 使用文本变量 {#using-text-variables}
 
 通过&#x200B;**[!UICONTROL Text]**&#x200B;选项卡，可以创建变量字段，这些字段可在HTML中使用以下语法：**$(IDENTIFIER)**。
 
-使用此方法可轻松将字符串本地化。 请参阅[翻译Web窗体](../../web/using/translating-a-web-form.md)
+使用此方法可轻松将字符串本地化。 请参阅[翻译Web窗体](translating-a-web-form.md)
 
 例如，您可以创建一个&#x200B;**Contact**&#x200B;字段，以便在HTML内容中显示“上次联系日期：”字符串。 为此请执行以下操作步骤：
 
@@ -214,9 +161,9 @@ HTML编辑器允许您输入要插入表单页面的内容。 要打开编辑器
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-此操作模式允许您仅定义Web窗体文本一次，并使用集成的翻译工具管理翻译。 有关更多信息，请参阅[翻译Web窗体](../../web/using/translating-a-web-form.md)。
+此操作模式允许您仅定义Web窗体文本一次，并使用集成的翻译工具管理翻译。 有关更多信息，请参阅[翻译Web窗体](translating-a-web-form.md)。
 
-## 插入图像{#inserting-images}
+## 插入图像 {#inserting-images}
 
 对于要包含在表单中的图像，必须将其保存在可从外部访问的服务器上。
 
