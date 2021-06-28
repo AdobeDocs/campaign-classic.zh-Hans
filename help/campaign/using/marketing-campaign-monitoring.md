@@ -6,14 +6,14 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%
 
 ---
 
-# 监控营销活动{#monitoring-marketing-campaigns}
+# 监控营销活动 {#monitoring-marketing-campaigns}
 
 ## 跟踪活动 {#tracking-a-campaign}
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* **[!UICONTROL Tasks]**&#x200B;子选项卡将链接到该营销活动的所有任务分组。 利用此视图，可编辑或删除这些组件。 MRM应用程序中提供了任务。 [此部分](../../campaign/using/creating-and-managing-tasks.md)中详细介绍了这些参数。
+* **[!UICONTROL Tasks]**&#x200B;子选项卡将链接到该营销活动的所有任务分组。 利用此视图，可编辑或删除这些组件。 MRM应用程序中提供了任务。 [此部分](../../mrm/using/creating-and-managing-tasks.md)中详细介绍了这些参数。
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
@@ -35,7 +35,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
-## 投放跟踪{#delivery-tracking}
+## 投放跟踪 {#delivery-tracking}
 
 投放列表可通过Campaign节点的&#x200B;**[!UICONTROL Deliveries]**&#x200B;链接获取。
 
