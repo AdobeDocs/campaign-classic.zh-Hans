@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1046'
 ht-degree: 2%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 2%
 
 Adobe Campaign允许您创建、配置、执行和分析营销活动。 所有营销活动都可从统一的控制中心进行管理。
 
-## 工作区基础知识{#workspace-basics}
+## 工作区基础知识 {#workspace-basics}
 
-### 主页{#home-page}
+### 主页 {#home-page}
 
 连接到Adobe Campaign后，您将看到主页。
 
@@ -34,7 +34,7 @@ Adobe Campaign允许您创建、配置、执行和分析营销活动。 所有�
 * **营销活动日历**:计划、营销计划、投放和营销策划的日历。请参阅[营销活动日历](#campaign-calendar)。
 * **营销活动**:访问所有营销项目中包含的营销活动。
 * **投放**:对链接到营销策划的投放的访问权限。
-* **Web应用程序**:访问web应用程序（表单、调查等）。
+* **Web应用程序**:访问web应用程序（表单、登陆页面等）。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Adobe Campaign允许您创建、配置、执行和分析营销活动。 所有�
 >
 >[此部分](../../delivery/using/steps-about-delivery-creation-steps.md)中详细描述了与渠道和投放相关的所有功能。
 
-### 营销活动日历{#campaign-calendar}
+### 营销活动日历 {#campaign-calendar}
 
 每个营销活动都属于一个项目，而该项目又属于一个计划。 可通过&#x200B;**营销活动**&#x200B;选项卡的&#x200B;**[!UICONTROL Campaign calendar]**&#x200B;菜单访问计划、项目和营销活动。
 
@@ -62,11 +62,11 @@ Adobe Campaign允许您创建、配置、执行和分析营销活动。 所有�
 
 链接到每个项目的图标允许您查看其状态：已完成、正在进行、正在编辑等。
 
-### 浏览营销计划{#browsing-in-a-marketing-program}
+### 在营销计划中浏览 {#browsing-in-a-marketing-program}
 
 Campaign允许您管理由各种营销活动组成的一组项目。 每个营销活动都包含投放以及关联的流程和资源。
 
-#### 浏览程序{#browsing-a-program}
+#### 浏览程序 {#browsing-a-program}
 
 编辑程序时，请使用下面描述的选项卡浏览并配置该程序。
 
@@ -80,7 +80,7 @@ Campaign允许您管理由各种营销活动组成的一组项目。 每个营�
 
    ![](assets/s_ncs_user_interface_campaign05.png)
 
-#### 浏览营销活动{#browsing-campaigns}
+#### 浏览营销活动 {#browsing-campaigns}
 
 营销活动可通过营销活动日历、项目的&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡或营销活动列表访问。
 
@@ -97,7 +97,7 @@ Campaign允许您管理由各种营销活动组成的一组项目。 每个营�
 
    ![](assets/campaign_edit_from_list.png)
 
-### 控制营销活动{#controlling-a-campaign}
+### 控制活动 {#controlling-a-campaign}
 
 #### 功能板 {#dashboard}
 
@@ -125,7 +125,7 @@ Campaign允许您管理由各种营销活动组成的一组项目。 每个营�
 
 对于每个营销活动，运营商都可以通过专用论坛交换消息。
 
-有关更多信息，请参阅[讨论论坛](../../campaign/using/discussion-forums.md)。
+有关更多信息，请参阅[讨论论坛](../../mrm/using/discussion-forums.md)。
 
 #### 报告 {#reports}
 
@@ -151,7 +151,7 @@ Campaign允许您管理由各种营销活动组成的一组项目。 每个营�
 >
 >要访问营销活动配置并对其进行更改，请单击&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Advanced campaign parameters...]**&#x200B;链接。 有关在营销活动级别设置参数以便投放自动继承值的更多信息，请参阅[我们的技术说明](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically)。
 
-## 使用Web界面{#using-the-web-interface-}
+## 使用Web界面 {#using-the-web-interface-}
 
 您可以通过Internet浏览器访问Adobe Campaign控制台屏幕，以查看所有营销活动和投放，以及有关数据库中用户档案的报告和信息。 此访问不启用记录创建。 根据操作员权限，您可以查看和/或对数据库中的数据执行操作。 例如，您可以批准营销活动内容和定位、重新启动或停止投放等。
 
