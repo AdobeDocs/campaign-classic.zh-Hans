@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # 安装 Campaign Classic 内置软件包{#installing-campaign-standard-packages}
 
-## 关于内置软件包{#campaign-standard-packages}
+## 关于内置包 {#campaign-standard-packages}
 
 内置软件包包含一组功能，这些功能可以根据您的需要并根据您的合同进行安装。 Campaign内置资源包的完整列表如下所示。
 
@@ -43,7 +43,7 @@ ht-degree: 6%
 
 现在已安装包。
 
-### 现成包列表{#list-of-standard-packages}
+### 现成包列表 {#list-of-standard-packages}
 
 下表列出了所有Campaign内置资源包。
 
@@ -58,7 +58,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> 投放<br /> </td> 
-   <td> 监控投放情况以及发送消息时遇到的最终问题。 <a href="../../delivery/using/about-delivery-monitoring.md">了解详情</a><br /> </td> 
+   <td> 监控投放以及发送消息时遇到的最终问题。 <a href="../../delivery/using/about-delivery-monitoring.md">了解详情</a><br /> </td> 
    <td> 所有</td> 
   </tr> 
   <tr> 
@@ -68,7 +68,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> 营销资源(MRM)<br /> </td> 
-   <td> 通过提供任务、预算和营销资源的管理和跟踪，以协作模式控制营销操作。 <a href="../../campaign/using/about-marketing-resource-management.md">了解更多</a> <br /> </td> 
+   <td> 通过提供任务、预算和营销资源的管理和跟踪，以协作模式控制营销操作。 <a href="../../mrm/using/about-marketing-resource-management.md">了解更多</a> <br /> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
@@ -139,12 +139,12 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> 联机调查（调查管理器）<br /> </td> 
-   <td> 创建并管理在线表单以添加或修改用户档案信息、订阅、退订或竞争条目表单。 可选。<a href="../../web/using/about-surveys.md">了解更多</a> <br /> </td> 
+   <td> 创建并管理在线表单以添加或修改用户档案信息、订阅、退订或竞争条目表单。 可选。<a href="../../surveys/using/about-surveys.md">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
    <td> Marketing Analytics<br /> </td> 
-   <td> 使您能够分析和测量数据、计算统计数据、简化和优化报表的创建和计算。 此外，您还可以创建报表并构建目标群体。 可选。<a href="../../reporting/using/about-cubes.md">了解更多</a><br /> </td> 
+   <td> 使您能够分析和测量数据、计算统计信息、简化和优化报表的创建和计算。 此外，您还可以创建报表并构建目标群体。 可选。<a href="../../reporting/using/about-cubes.md">了解更多</a><br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -235,7 +235,7 @@ ht-degree: 6%
  </tbody> 
 </table>
 
-### 消息中心包{#message-center-package}
+### 消息中心包 {#message-center-package}
 
 您必须安装投放渠道（电子邮件、移动设备渠道、移动设备应用程序渠道等） 安装事务性消息（消息中心包）之前。 如果您已启动仅限电子邮件的消息中心项目，并且随后需要添加新渠道，则必须执行以下步骤：
 
