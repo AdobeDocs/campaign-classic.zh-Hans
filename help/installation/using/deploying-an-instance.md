@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3048'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >只能通过Adobe对由Adobe托管的部署执行服务器端配置。 要了解有关不同部署的更多信息，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[此页面](../../installation/using/capability-matrix.md)。
 
-## 部署向导{#deployment-wizard}
+## 部署向导 {#deployment-wizard}
 
 图形向导(在Adobe Campaign客户端控制台中提供)允许您定义要连接到的实例的参数。
 
@@ -39,13 +39,13 @@ ht-degree: 1%
 1. [管理公共资源](#managing-public-resources)
 1. [清除数据](#purging-data)
 
-## 常规参数{#general-parameters}
+## 常规参数 {#general-parameters}
 
 在部署向导的第一步中，您可以输入有关实例的常规信息。
 
 ![](assets/s_ncs_install_deployment_wiz_02.png)
 
-### 一般信息{#general-information}
+### 一般信息 {#general-information}
 
 利用窗口的下部，可选择要激活的选项。
 
@@ -53,7 +53,7 @@ ht-degree: 1%
 * **[!UICONTROL Common name of the customer]** :输入包含公司名称的字符串。此信息可在退订链接中使用。
 * **[!UICONTROL Namespace]** :以小写形式输入短标识符。目的是在升级时区分您的特定配置和工厂配置。 对于客户，默认的命名空间为&#x200B;**cus** -。
 
-### 技术选项{#technical-options}
+### 技术选项 {#technical-options}
 
 利用窗口的下部，可选择要激活的选项。
 
@@ -64,13 +64,13 @@ ht-degree: 1%
 * **[!UICONTROL Managing bounced emails]** :定义用于接收传入电子邮件的POP帐户。请参阅[管理退回的电子邮件](#managing-bounced-emails)。
 * **[!UICONTROL LDAP integration]** :通过LDAP目录配置用户身份验证。请参阅[通过LDAP](../../installation/using/connecting-through-ldap.md)连接。
 
-## 电子邮件渠道参数{#email-channel-parameters}
+## 电子邮件渠道参数 {#email-channel-parameters}
 
 通过以下步骤，您可以定义要在消息标题中显示的信息。
 
 这些参数可能会在投放模板中过载，并且会针对每个投放单独执行（如果用户具有所需的权限）。
 
-### 已送达电子邮件的参数{#parameters-for-delivered-emails}
+### 已投放电子邮件的参数 {#parameters-for-delivered-emails}
 
 ![](assets/s_ncs_install_deployment_wiz_04.png)
 
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 除此之外，您还可以指定为发送者地址和错误地址授权的&#x200B;**掩码**。 如有必要，可以使用逗号分隔这些掩码。 此配置是可选的。 输入字段后，Adobe Campaign会在投放时（在分析期间，如果地址不包含任何变量）检查地址是否有效。 此操作模式可确保不使用可能触发投放问题的地址。 必须在投放服务器上配置投放地址。
 
-### 地址{#characters-authorized-in-addresses}中授权的字符
+### 地址中授权的字符 {#characters-authorized-in-addresses}
 
 <!--This window enables you to define, for all email campaigns, the delivery and address-quality management options.-->
 
@@ -109,18 +109,18 @@ ht-degree: 1%
 * **[!UICONTROL Exclude recipients who no longer wish to be contacted]** :选择此选项后，将不阻止列表会联系收件人，
 * **[!UICONTROL Automatically ignore doubles]** :选择此选项后，将不会将投放到重复的地址。
 
-### 重试参数{#retry-parameters}
+### 重试参数 {#retry-parameters}
 
 有关恢复的信息，请参见&#x200B;**恢复期**&#x200B;和&#x200B;**恢复数**&#x200B;字段：当收件人不可访问时，例如，如果收件人的收件箱已满，则默认情况下程序将尝试与他们联系5次，每次尝试之间的间隔为1小时（在最长投放时间）。 这些值可以根据您的需要进行更改。
 
-### 隔离参数{#quarantine-parameters}
+### 隔离参数 {#quarantine-parameters}
 
 隔离的配置选项如下：
 
 * **[!UICONTROL Duration between two significant errors]** :默认情况下，输入值(“1d”):1天)来定义应用程序在失败时需要等待多久才增加错误计数，
 * **[!UICONTROL Maximum number of errors before quarantine]** :达到此值后，会隔离电子邮件地址（默认为“5”个）：第6次出错时，该地址将被隔离)。这意味着后续投放中将自动排除改联系人。
 
-## 管理退回的电子邮件{#managing-bounced-emails}
+## 管理退回的电子邮件 {#managing-bounced-emails}
 
 退回邮件对于确定投放错误非常重要。 规则确定其原因后，这些错误将在NP@I中进行分类。
 
@@ -130,7 +130,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_install_deployment_wiz_06.png)
 
-### 用于检索传入邮件的POP帐户{#pop-account-used-to-retrieve-incoming-mails}
+### 用于检索传入邮件的POP帐户 {#pop-account-used-to-retrieve-incoming-mails}
 
 指示连接到帐户以检索传入电子邮件的参数。
 
@@ -143,7 +143,7 @@ ht-degree: 1%
 
 指定POP设置后，单击&#x200B;**测试**&#x200B;以确保它们正确无误。
 
-### 未处理的退回邮件{#unprocessed-bounce-mails}
+### 未处理的退回邮件 {#unprocessed-bounce-mails}
 
 退回由Adobe Campaign自动处理，并应用&#x200B;**管理>促销活动管理>不可交付项管理>投放日志资格**&#x200B;节点中列出的规则。 有关更多信息，请参阅[退回邮件管理](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)。
 
@@ -157,7 +157,7 @@ ht-degree: 1%
 >
 >要转发未处理的退回电子邮件，Adobe建议仅填写&#x200B;**[!UICONTROL Address for errors]**&#x200B;字段。 但是，请确保定期检查使用的地址，因为这可能会给邮件服务器带来沉重的负载。 有关更多信息，请联系您的客户经理。
 
-## 跟踪配置{#tracking-configuration}
+## 跟踪配置 {#tracking-configuration}
 
 通过下一步，您可以为实例配置跟踪。 必须向跟踪服务器声明并注册实例。
 
@@ -181,7 +181,7 @@ ht-degree: 1%
 
    有关更多信息，请参阅[保存跟踪](#saving-tracking)。
 
-### 跟踪服务器{#tracking-server}
+### 跟踪服务器 {#tracking-server}
 
 ![](assets/s_ncs_install_deployment_wiz_08.png)
 
@@ -204,7 +204,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_install_deployment_wiz_18.png)
 
-### 保存跟踪{#saving-tracking}
+### 保存跟踪 {#saving-tracking}
 
 填充URL后，必须注册跟踪服务器。
 
@@ -258,7 +258,7 @@ ht-degree: 1%
 
 对于标准安装，不得修改链接到URL搜索&#x200B;**的参数。**&#x200B;有关所有其他参数，请联系Adobe。
 
-## 移动渠道参数{#mobile-channel-parameters}
+## 移动渠道参数 {#mobile-channel-parameters}
 
 通过下一步，您可以为投放到手机（短信和WAP推送）的默认设置。
 
@@ -268,14 +268,14 @@ ht-degree: 1%
 
 ![](assets/s_ncs_install_deployment_wiz_12.png)
 
-### 短信投放的默认帐户{#default-account-for-sms-delivery}
+### 短信投放的默认帐户 {#default-account-for-sms-delivery}
 
 输入以下信息：
 
 * **[!UICONTROL Label]** :输入此短信/Wap推送帐户的名称。例如，您可能希望使用路由器的名称。
 * 对于&#x200B;**[!UICONTROL Server]**、**[!UICONTROL Port]**、**[!UICONTROL Account]**、**[!UICONTROL Password]**、**[!UICONTROL Connector]**、**[!UICONTROL Send Endpoint]**、**[!UICONTROL Reception Endpoint]**、**[!UICONTROL Notification Endpoint]**&#x200B;字段：有关所需的设置，请联系您的服务提供商。
 
-### 发送的短信的参数{#parameters-of-sms-sent}
+### 发送短信的参数 {#parameters-of-sms-sent}
 
 在&#x200B;**优先级**&#x200B;下拉列表中：选择“正常”、“高”或“紧急”以将其应用于要发送的消息。
 
@@ -292,7 +292,7 @@ ht-degree: 1%
 * **[!UICONTROL Time between two significant errors]** :输入默认值（默认为“1d”）：天)，以定义应用程序在增加错误计数之前等待的时间。
 * **[!UICONTROL Maximum number of errors before quarantine]** :达到此值后，将隔离该移动设备号码（默认为“5”个）：该号码将在出现第六次错误时被隔离)。这意味着联系人将自动从将来的投放中排除。
 
-## 区域设置{#regional-settings}
+## 区域设置 {#regional-settings}
 
 此阶段允许您包含数据策略首选项。
 
@@ -301,7 +301,7 @@ ht-degree: 1%
 * **[!UICONTROL Consider all phone numbers as international ones]** :如果选择此选项，则应用程序会将国际格式应用于电话号码（国家/地区前缀是必填的，因为在应用格式之前不会检查位数）。如果未选择此选项，则必须自行为国际电话号码添加“+”或“00”前缀。
 * **[!UICONTROL Store all phone numbers using the international format]** :此选项仅涉及 **** 导入或编辑的国内电话号码。定义您是希望使用国内格式（如425 555 0150）还是国际格式(如+1 425 555 0150)
 
-## 从Internet {#access-from-the-internet}访问
+## 从Internet访问 {#access-from-the-internet}
 
 >[!IMPORTANT]
 >
@@ -313,7 +313,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_install_deployment_wiz_15.png)
 
-### Web上公开的服务器{#servers-exposed-on-the-web}
+### Web上公开的服务器 {#servers-exposed-on-the-web}
 
 使用此页可填充服务器URL以：
 
@@ -325,7 +325,7 @@ ht-degree: 1%
 
 Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台。
 
-## 管理公共资源{#managing-public-resources}
+## 管理公共资源 {#managing-public-resources}
 
 >[!IMPORTANT]
 >
@@ -357,7 +357,7 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台。
 
 * 对于公共资源，URL **https://** server **/res/** instance ****，其中&#x200B;**instance**是跟踪实例的名称。
 
-### 投放图像检测{#delivery-image-detection}
+### 投放图像检测 {#delivery-image-detection}
 
 在投放中，您可以使用公共资源库中存储的图像，或服务器上存储的任何其他本地图像或图像。
 
@@ -370,9 +370,9 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台。
 * 有关在电子邮件中使用和管理图像的信息，请参阅[此部分](../../delivery/using/defining-the-email-content.md#adding-images)。
 * 在投放向导中，从这些URL调用的图像将状态为“已忽略”。
 
-### 发布模式{#publication-modes}
+### 发布模式 {#publication-modes}
 
-在向导的下半部分，您可以选择公共资源和图像的发布选项。 这些选项还可用于Web窗体和调查。
+在向导的下半部分，您可以选择公共资源和图像的发布选项。
 
 提供了以下发布模式：
 
@@ -423,7 +423,7 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台。
 >
 >可以更改公共资源存储目录。 有关更多信息，请参阅[管理公共资源](#managing-public-resources)。
 
-### 同步公共资源{#synchronizing-public-resources}
+### 同步公共资源 {#synchronizing-public-resources}
 
 此功能允许您在多个备用服务器上同步公共资源&#x200B;**。**
 
@@ -485,7 +485,7 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="false"
  </relay>
 ```
 
-## 清除数据{#purging-data}
+## 清除数据 {#purging-data}
 
 在部署向导的最后一步中，您可以配置自动清除过时的数据。 值以天表示。
 
