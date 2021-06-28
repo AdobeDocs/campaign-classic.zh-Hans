@@ -4,9 +4,9 @@ title: 迁移到Adobe Analytics Connector
 description: Campaign - Analytics连接器常见问题解答
 hide: true
 hidefromtoc: true
-source-git-commit: cde4ed65abb2458fc40639b92314f8d56b18b78c
+source-git-commit: 41478c656ffd4e113788149e6cca9ed00602789e
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '836'
 ht-degree: 5%
 
 ---
@@ -73,7 +73,7 @@ Campaign Classicv7与Adobe Analytics之间的新集成现已可用。 下面列�
 
 **“集成所有者不是管理员”错误意味着什么？**
 
-详细了解[此页面](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error)中的Data Connectors“集成所有者不是管理员”错误。
+详细了解[此页面](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error)中的Data Connectors `Integration Owner Not Admin`错误。
 
 **迁移到新连接器后，旧数据和报表包会发生什么情况？**
 
