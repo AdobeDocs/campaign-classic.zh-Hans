@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 97%
@@ -94,7 +94,7 @@ Adobe Campaign 包括在不同的应用程序服务器模块之间编排所有�
 
 ## 如何设计和分享在线调查？ {#how-to-design-and-share-an-online-survey-}
 
-了解如何[创建在线调查](../../web/using/getting-started-with-surveys.md)，包括使用 Campaign Classic 设计和发布调查的关键步骤。
+了解如何[创建在线调查](../../surveys/using/getting-started-with-surveys.md)，包括使用 Campaign Classic 设计和发布调查的关键步骤。
 
 ## 如何创建登陆页？ {#how-to-create-landing-page-}
 
