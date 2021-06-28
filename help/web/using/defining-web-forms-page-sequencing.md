@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 2%
@@ -17,15 +17,15 @@ ht-degree: 2%
 
 表单可以包含一个或多个页面。 它是通过图表构建的，图表允许您对页面进行排序、测试、脚本执行、页面跳转和记录步骤。 全局图设计模式与Campaign工作流的模式相同。
 
-## 关于上一页和下一页{#about-previous-page-and-next-page}
+## 关于上一页和下一页 {#about-previous-page-and-next-page}
 
 对于每个页面，您可以删除&#x200B;**[!UICONTROL Next]**&#x200B;或&#x200B;**[!UICONTROL Previous]**&#x200B;按钮。 为此，请选择相关页面，然后选择选项&#x200B;**[!UICONTROL Disable next page]**&#x200B;或&#x200B;**[!UICONTROL Disallow returning to the previous page]** 。
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
-您可以将这些按钮替换为链接。 请参阅[插入HTML内容](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)。
+您可以将这些按钮替换为链接。 请参阅[插入HTML内容](static-elements-in-a-web-form.md#inserting-html-content)。
 
-## 插入跳转{#inserting-a-jump}
+## 插入跳转 {#inserting-a-jump}
 
 当用户单击&#x200B;**[!UICONTROL Next]**&#x200B;时，**[!UICONTROL Jump]**&#x200B;对象将允许访问其他页面或其他表单。
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_admin_survey_jump_comment.png)
 
-## 示例：根据URL {#example--accessing-another-form-according-to-a-parameter-of-the-url}的参数访问其他表单
+## 示例：根据URL的参数访问其他表单 {#example--accessing-another-form-according-to-a-parameter-of-the-url}
 
 在以下示例中，我们要配置一个Web窗体，在获得批准后，该窗体将显示由URL参数指定的其他窗体。 要执行此操作，请应用以下步骤：
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. 在表单属性中，添加一个参数(**next**)，该参数存储在本地变量(**next**)中。 [将数据存储在局部变量](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable)中详细介绍了局部变量。
+1. 在表单属性中，添加一个参数(**next**)，该参数存储在本地变量(**next**)中。 [将数据存储在局部变量](web-forms-answers.md#storing-data-in-a-local-variable)中详细介绍了局部变量。
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
@@ -71,13 +71,13 @@ ht-degree: 2%
 
    当用户单击&#x200B;**[!UICONTROL Approve]**&#x200B;按钮时，将显示表单&#x200B;**APP22**。
 
-## 插入指向表单{#inserting-a-link-to-another-page-of-the-form}的另一页的链接
+## 插入指向表单其他页面的链接 {#inserting-a-link-to-another-page-of-the-form}
 
-您可以插入指向表单其他页面的链接。 要实现此目的，请在页面中添加&#x200B;**[!UICONTROL Link]**&#x200B;类型的静态元素。 有关更多信息，请参阅[插入链接](../../web/using/static-elements-in-a-web-form.md#inserting-a-link)。
+您可以插入指向表单其他页面的链接。 要实现此目的，请在页面中添加&#x200B;**[!UICONTROL Link]**&#x200B;类型的静态元素。 有关更多信息，请参阅[插入链接](static-elements-in-a-web-form.md#inserting-a-link)。
 
-## 条件页面显示{#conditional-page-display}
+## 条件页面显示 {#conditional-page-display}
 
-### 根据响应显示{#display-based-on-responses}
+### 根据响应显示 {#display-based-on-responses}
 
 使用&#x200B;**[!UICONTROL Test]**&#x200B;框可以设置表单中页面排序的条件。 它允许您根据测试结果定义各种分支行。 这样，您就可以根据用户提供的答案显示不同的页面。
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[响应存储字段](../../web/using/web-forms-answers.md#response-storage-fields)中详细介绍了存储模式。
+>[响应存储字段](web-forms-answers.md#response-storage-fields)中详细介绍了存储模式。
 
 在本例中，我们要使用一个变量：
 
@@ -105,15 +105,15 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_test_ex3.png)
 
-### 根据参数{#display-based-on-parameters}显示
+### 根据参数显示 {#display-based-on-parameters}
 
-您还可以根据Web窗体的初始化参数或数据库中存储的值，对页面排序进行个性化。 请参阅[表单URL参数](../../web/using/defining-web-forms-properties.md#form-url-parameters)。
+您还可以根据Web窗体的初始化参数或数据库中存储的值，对页面排序进行个性化。 请参阅[表单URL参数](defining-web-forms-properties.md#form-url-parameters)。
 
-## 添加脚本{#adding-scripts}
+## 添加脚本 {#adding-scripts}
 
 通过&#x200B;**[!UICONTROL Script]**&#x200B;对象，您可以直接输入JavaScript脚本，例如修改字段值、从数据库检索数据或调用Adobe Campaign API。
 
-## 个性化结束页面{#personalizing-the-end-page}
+## 个性化结束页面 {#personalizing-the-end-page}
 
 必须在图的末尾放置一个结束页面。 当用户单击Web窗体中的&#x200B;**[!UICONTROL Approve]**&#x200B;按钮时，会显示结束页面。
 
