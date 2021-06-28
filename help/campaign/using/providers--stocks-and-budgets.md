@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提供商。 有关服务提供者和相关成本结构的信息由Adobe Campaign管理员从主视图定义。 服务提供者从交货中引用，其成本结构允许计算与该交货相关的成本以及有关库存的管理。
 
-## 创建服务提供商及其成本结构{#creating-service-providers-and-their-cost-structures}
+## 创建服务提供商及其成本结构 {#creating-service-providers-and-their-cost-structures}
 
 每个服务提供商都保存在包含联系详细信息、服务模板和相关作业的文件中。
 
@@ -41,9 +41,9 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
    请参阅[将服务与促销活动关联](#associating-a-service-with-a-campaign)。
 
-### 创建服务提供商及其成本类别{#creating-a-service-provider-and-its-cost-categories}
+### 创建服务提供商及其成本类别 {#creating-a-service-provider-and-its-cost-categories}
 
-#### 添加服务提供程序{#adding-a-service-provider}
+#### 添加服务提供商 {#adding-a-service-provider}
 
 您可以根据需要为投放创建任意数量的服务提供商。 添加服务提供商的过程如下：
 
@@ -54,7 +54,7 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮将服务提供商添加到列表。
 
-#### 定义成本类别{#defining-cost-categories}
+#### 定义成本类别 {#defining-cost-categories}
 
 必须将服务模板与每个服务提供商关联。 在这些模板中，您必须首先确定成本类别，并在必要时确定相关库存。 然后，您必须通过成本结构为每个类别创建成本计算规则。
 
@@ -91,7 +91,7 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
    ![](assets/s_ncs_user_supplier_default_cost.png)
 
-### 定义成本结构{#defining-the-cost-structure}
+### 定义成本结构 {#defining-the-cost-structure}
 
 对于每种成本类型，成本结构都指定要应用的计算规则。
 
@@ -111,7 +111,7 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
    当取决于消息数量时，成本计算结构可以是&#x200B;**[!UICONTROL Linear]**、**[!UICONTROL Linear by threshold]**&#x200B;或&#x200B;**[!UICONTROL Constant by threshold]**。
 
-#### 线性结构{#linear-structure}
+#### 线性结构 {#linear-structure}
 
 如果与消息总数无关的消息（或一批消息）金额始终相同，请选择&#x200B;**[!UICONTROL Linear]**&#x200B;并输入每个消息的成本。
 
@@ -121,7 +121,7 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_02.png)
 
-#### 按阈值划分的线性结构{#linear-structure-by-threshold}
+#### 基于阈值的线性结构 {#linear-structure-by-threshold}
 
 如果金额按每条消息的阈值应用，则必须定义&#x200B;**[!UICONTROL Linear by threshold]**&#x200B;计算结构。 在此类成本结构中，每条消息的成本为0.13，例如，如果消息总数介于1到100之间，则成本为0.12，从100到1000条消息，或者从1000条消息的成本为0.11。
 
@@ -131,13 +131,13 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
 要添加阈值，请单击列表右侧的&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 
-#### 按阈值划分的常量结构{#constant-structure-by-threshold}
+#### 按阈值的常量结构 {#constant-structure-by-threshold}
 
 最后，您可以根据消息总数配置成本计算。 为此，请选择&#x200B;**[!UICONTROL Constant by threshold]**&#x200B;计算结构。 例如，对于1到100条报文，成本将设置为固定金额12.00；对于101到1000条报文，成本将设置为100.00；对于1000条以上报文的任何投放，无论总数是多少，成本都将设置为500.00。
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_04.png)
 
-### 配置与服务{#configuring-processes-associated-with-a-service}关联的进程
+### 配置与服务关联的进程 {#configuring-processes-associated-with-a-service}
 
 您可以通过&#x200B;**[!UICONTROL Processes]**&#x200B;选项卡关联与服务关联的进程的信息。
 
@@ -155,7 +155,7 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
 * 利用&#x200B;**[!UICONTROL Post-processing]**&#x200B;部分，可选择要在投放获得批准后启动的工作流。 如果输入了工作流模板，则会自动创建工作流实例，然后在批准生效后立即启动该实例。 例如，此工作流可以将提取文件发送到外部服务提供商进行处理。
 
-### 将服务与促销活动{#associating-a-service-with-a-campaign}关联
+### 将服务与促销活动关联 {#associating-a-service-with-a-campaign}
 
 服务通过投放或任务与营销活动关联。 服务提供商链接到投放模板，以在通过此模板创建的投放中提供其服务。
 
@@ -180,7 +180,7 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
 ![](assets/s_ncs_user_supplier_cost_structure_select.png)
 
-## 库存和订单管理{#stock-and-order-management}
+## 库存和订单管理 {#stock-and-order-management}
 
 成本类型可以与库存行关联，以处理预警、跟踪供应和启动订单。
 
@@ -202,13 +202,13 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
    请参阅[Orders](#orders)。
 
-### 股票管理{#stock-management}
+### 库存管理 {#stock-management}
 
 如果库存不足或达到最低阈值，Adobe Campaign可以提醒一组运算符。 库存级别可通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Stocks]**&#x200B;链接通过导航区域的&#x200B;**[!UICONTROL Other choices]**&#x200B;链接访问。
 
 ![](assets/s_ncs_user_stocks_view.png)
 
-#### 创建库存{#creating-a-stock}
+#### 创建股票 {#creating-a-stock}
 
 应用以下步骤以创建新库存：
 
@@ -221,7 +221,7 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
    >
    >有关更多信息，请参阅[创建服务提供商及其成本结构](#creating-service-providers-and-their-cost-structures)。
 
-#### 添加库存行{#adding-stock-lines}
+#### 添加库存行 {#adding-stock-lines}
 
 一种库存包括各种库存线。 库存行包含投放将使用的初始资源量。 每个库存行均指示已冲减的数量、库存数量和已订购数量。
 
@@ -241,15 +241,15 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
 * 在&#x200B;**[!UICONTROL Alert level]**&#x200B;字段中指示应提醒操作员订单库存的阈值。 达到警报级别时，使用此库的投放审批窗口中会显示一条警告消息。
 
-#### 将库存与成本类别{#associating-a-stock-with-cost-categories}关联
+#### 将库存与成本类别关联 {#associating-a-stock-with-cost-categories}
 
 对于给定的服务提供商，在服务中，库存行可以被下列成本类别之一引用：
 
 ![](assets/s_ncs_user_stocks_select_from_supplier.png)
 
-### 库存跟踪{#stock-tracking}
+### 库存跟踪 {#stock-tracking}
 
-#### 警报运算符{#alerting-operators}
+#### 警报运算符 {#alerting-operators}
 
 当投放中引用的库存不足时，会显示警报。 例如，提取文件获得批准后，将显示以下警报：
 
@@ -275,7 +275,7 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
 ![](assets/s_ncs_user_stocks_edit_from_board_consumed.png)
 
-## 计算预算{#calculating-budgets}
+## 计算预算 {#calculating-budgets}
 
 ### 原则 {#principle}
 
@@ -285,8 +285,8 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
 ### 实施 {#implementation}
 
-在营销活动中，选择预算时必须输入初始金额。 计算成本将根据所输入金额（支出、预期、保留、承诺）的承付水平自动更新。 请参阅[计算金额](../../campaign/using/controlling-costs.md#calculating-amounts)。
+在营销活动中，选择预算时必须输入初始金额。 计算成本将根据所输入金额（支出、预期、保留、承诺）的承付水平自动更新。 请参阅[计算金额](../../mrm/using/controlling-costs.md#calculating-amounts)。
 
 >[!NOTE]
 >
->创建预算的过程请参见[创建预算](../../campaign/using/controlling-costs.md#creating-a-budget)。
+>创建预算的过程请参见[创建预算](../../mrm/using/controlling-costs.md#creating-a-budget)。
