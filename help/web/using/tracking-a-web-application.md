@@ -6,16 +6,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '397'
 ht-degree: 3%
 
 ---
 
 # 跟踪 Web 应用程序访问{#tracking-a-web-application}
 
-Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序页面上的访问量。 此功能可用于所有Web应用程序类型（表单、在线调查、使用DCE创建的网页等）。
+Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序页面上的访问量。 此功能可用于所有Web应用程序类型（表单、网页等）。
 
 因此，您可以定义多个导航路径并评估其成功与否。 然后，恢复的数据将在每个应用程序的报告中提供。
 
@@ -38,7 +38,7 @@ Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序
 
    此外，**Sector**&#x200B;类型图表根据群体的来源显示群体。
 
-## 识别流量源{#identifying-the-traffic-source}
+## 识别流量源 {#identifying-the-traffic-source}
 
 可使用两种不同的模式来识别访客访问Web应用程序时来自何处：
 
@@ -55,13 +55,11 @@ Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序
 
 >[!NOTE]
 >
->请记住，仅当部署向导中激活了相应的选项时，才能进行匿名跟踪。
->
->有关更多信息，请参阅[安装指南](../../installation/using/deploying-an-instance.md)。
+>仅当安装Campaign时部署向导中激活了选项时，才可使用匿名跟踪。
 
-## 使用数字内容编辑器(DCE){#web-applications-designed-with-digital-content-editor--dce-}设计的Web应用程序
+## 使用数字内容编辑器(DCE)设计的Web应用程序 {#web-applications-designed-with-digital-content-editor--dce-}
 
-使用HTML内容编辑器创建Web应用程序时 — **数字内容编辑器(DCE)** — 将从编辑器的&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡中插入跟踪标记。 有关数字内容编辑器(DCE)的更多信息，请参阅[此部分](../../web/using/about-campaign-html-editor.md)。
+使用HTML内容编辑器创建Web应用程序时 — **数字内容编辑器(DCE)** — 将从编辑器的&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡中插入跟踪标记。 有关数字内容编辑器(DCE)的更多信息，请参阅[此部分](about-campaign-html-editor.md)。
 
 ![](assets/trackers_2.png)
 
