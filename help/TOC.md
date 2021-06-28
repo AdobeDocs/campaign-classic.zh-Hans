@@ -7,7 +7,7 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 借助Adobe Campaign，您可以通过电子邮件、移动设备、线下渠道等方式，使用丰富的客户数据创建、协调和提供客户真正想要的动态促销活动。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 9febe6bc68c8bc31714a74455fa70ef83920ded9
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '2518'
 ht-degree: 96%
@@ -261,12 +261,6 @@ ht-degree: 96%
       + [设置和管理审批](campaign/using/marketing-campaign-approval.md)
       + [监测活动](campaign/using/marketing-campaign-monitoring.md)
       + [供应商、库存和预算](campaign/using/providers--stocks-and-budgets.md)
-   + 任务、资源和预算 {#tasks--resources-and-budgets}
-      + [关于营销资源管理](campaign/using/about-marketing-resource-management.md)
-      + [创建和管理任务](campaign/using/creating-and-managing-tasks.md)
-      + [控制成本](campaign/using/controlling-costs.md)
-      + [管理营销资源](campaign/using/managing-marketing-resources.md)
-      + [论坛](campaign/using/discussion-forums.md)
    + 活动优化 {#campaign-optimization}
       + [关于活动类型](campaign/using/about-campaign-typologies.md)
       + [压力规则](campaign/using/pressure-rules.md)
@@ -275,20 +269,26 @@ ht-degree: 96%
       + [筛选规则](campaign/using/filtering-rules.md)
       + [应用规则](campaign/using/applying-rules.md)
       + [活动模拟](campaign/using/campaign-simulations.md)
-   + 分布式营销 {#distributed-marketing}
-      + [关于分布式营销](campaign/using/about-distributed-marketing.md)
-      + [创建本地活动](campaign/using/creating-a-local-campaign.md)
-      + [创建协作活动](campaign/using/creating-a-collaborative-campaign.md)
-      + [发布活动包](campaign/using/publishing-the-campaign-package.md)
-      + [访问活动](campaign/using/accessing-campaigns.md)
-      + [跟踪活动](campaign/using/tracking-a-campaign.md)
-      + [用例](campaign/using/examples.md)
-   + 响应管理器 {#response-manager}
-      + [响应管理器入门](campaign/using/about-response-manager.md)
-      + [配置](campaign/using/configuration.md)
-      + [假设验证模板](campaign/using/hypothesis-templates.md)
-      + [创建假设验证](campaign/using/creating-hypotheses.md)
-      + [假设验证跟踪](campaign/using/hypothesis-tracking.md)
++ 营销资源管理 {#mrm}
+   + [关于营销资源管理](mrm/using/about-marketing-resource-management.md)
+   + [创建和管理任务](mrm/using/creating-and-managing-tasks.md)
+   + [控制成本](mrm/using/controlling-costs.md)
+   + [管理营销资源](mrm/using/managing-marketing-resources.md)
+   + [论坛](mrm/using/discussion-forums.md)
++ 分布式营销 {#distributed-marketing}
+   + [关于分布式营销](campaign/using/about-distributed-marketing.md)
+   + [创建本地活动](campaign/using/creating-a-local-campaign.md)
+   + [创建协作活动](campaign/using/creating-a-collaborative-campaign.md)
+   + [发布活动包](campaign/using/publishing-the-campaign-package.md)
+   + [访问活动](campaign/using/accessing-campaigns.md)
+   + [跟踪活动](campaign/using/tracking-a-campaign.md)
+   + [用例](campaign/using/examples.md)
++ 响应管理器 {#response-manager}
+   + [响应管理器入门](campaign/using/about-response-manager.md)
+   + [配置](campaign/using/configuration.md)
+   + [假设验证模板](campaign/using/hypothesis-templates.md)
+   + [创建假设验证](campaign/using/creating-hypotheses.md)
+   + [假设验证跟踪](campaign/using/hypothesis-tracking.md)
 + 设计和共享报告{#reporting}
    + 开始使用报告 {#reporting-in-adobe-campaign}
       + [报告工具](reporting/using/about-adobe-campaign-reporting-tools.md)
@@ -326,7 +326,6 @@ ht-degree: 96%
       + [创建指标](reporting/using/creating-indicators.md)
       + [使用多维数据集浏览数据](reporting/using/using-cubes-to-explore-data.md)
       + [概念和方法](reporting/using/concepts-and-methodology.md)
-      + [用例：显示在线调查的答案报告](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + 设计 Web 内容{#designing-content}
    + Web 应用程序 {#web-applications}
       + [Web 应用程序入门](web/using/about-web-applications.md)
@@ -357,14 +356,15 @@ ht-degree: 96%
       + [定义 Web 窗体属性](web/using/defining-web-forms-properties.md)
       + [解释 Web 窗体](web/using/translating-a-web-form.md)
       + [用例：Web 窗体](web/using/use-cases--web-forms.md)
-   + 在线调查 {#online-surveys}
-      + [调查入门](web/using/about-surveys.md)
-      + [创建调查的关键步骤](web/using/getting-started-with-surveys.md)
-      + [设计调查](web/using/building-a-survey.md)
-      + [管理答案](web/using/managing-answers.md)
-      + [发布、跟踪和使用收集的数据](web/using/publish--track-and-use-collected-data.md)
-      + [配置调查](web/using/configuring-surveys.md)
-      + [用例：创建引用窗体](web/using/use-case--creating-a-refer-a-friend-form.md)
++ 创建在线调查{#online-surveys}
+   + [调查入门](surveys/using/about-surveys.md)
+   + [创建调查的关键步骤](surveys/using/getting-started-with-surveys.md)
+   + [设计调查](surveys/using/building-a-survey.md)
+   + [管理答案](surveys/using/managing-answers.md)
+   + [发布、跟踪和使用收集的数据](surveys/using/publish--track-and-use-collected-data.md)
+   + [配置调查](surveys/using/configuring-surveys.md)
+   + [用例：创建引用窗体](surveys/using/use-case--creating-a-refer-a-friend-form.md)
+   + [用例：显示在线调查的答案报告](surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + 与 Adobe Experience Cloud 集成 {#integrating-with-adobe-experience-cloud}
    + [关于 Campaign 集成](integrations/using/about-campaign-integrations.md)
    + 受众共享 {#audience-sharing}
