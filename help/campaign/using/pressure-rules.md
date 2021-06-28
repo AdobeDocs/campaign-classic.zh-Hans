@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '3253'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # 压力规则{#pressure-rules}
 
-## 关于营销疲劳{#about-marketing-fatigue}
+## 关于营销疲劳度 {#about-marketing-fatigue}
 
 通过实施销售压力管理，您可以避免在数据库中过度招徕客户，这也称为营销疲劳。 为此，您可以定义每个收件人的消息数上限。 它还允许您在营销活动之间实施仲裁规则，以便向目标受众发送最佳消息。
 
@@ -37,7 +37,7 @@ ht-degree: 4%
 
 否则，收件人将为&#x200B;**[!UICONTROL Excluded by arbitration]**。 有关更多信息，请参阅[仲裁后排除](#exclusion-after-arbitration)。
 
-## 创建压力规则{#creating-a-pressure-rule}
+## 创建压力规则 {#creating-a-pressure-rule}
 
 要使用Adobe Campaign在促销活动之间设置仲裁，请首先创建促销活动分类并定义链接的分类规则（**Pressure**&#x200B;规则）。
 
@@ -91,9 +91,9 @@ ht-degree: 4%
 
 1. **[!UICONTROL Typologies]**&#x200B;选项卡允许您查看营销活动分类，这些分类应用此规则或将规则链接到一个或多个现有分类。 有关更多信息，请参阅[应用分类](../../campaign/using/about-campaign-typologies.md#applying-typologies)。
 
-## 定义阈值和权重{#defining-thresholds-and-weights}
+## 定义阈值和权重 {#defining-thresholds-and-weights}
 
-### 消息数上限{#maximum-number-of-messages}
+### 最大消息数 {#maximum-number-of-messages}
 
 每个压力规则都定义一个阈值，即在给定时间段内可发送给一个收件人的消息数上限。 达到此阈值后，只有在所考虑的时段结束后，才会再进行投放。通过此流程，您可以在消息超过设置的阈值时自动将收件人从投放中排除，从而避免过度通信。
 
@@ -111,11 +111,11 @@ ht-degree: 4%
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-要定义阈值，您可以使用链接到定向维度的维度：例如，要将投放到收件人用户档案的消息包含在访客表中（有关访客表的更多信息，请参阅[此部分](../../web/using/use-case--creating-a-refer-a-friend-form.md)），或避免在与收件人用户档案关联的维度中标识的每周向同一家庭发送多条消息（可能指多个电子邮件地址）。
+要定义阈值，您可以使用链接到定向维度的维度：例如，要将投放到收件人用户档案的消息包含在访客表中（有关访客表的更多信息，请参阅[此部分](../../surveys/using/use-case--creating-a-refer-a-friend-form.md)），或避免在与收件人用户档案关联的维度中标识的每周向同一家庭发送多条消息（可能指多个电子邮件地址）。
 
 要执行此操作，请选择&#x200B;**[!UICONTROL Count messages on a linked dimension]**&#x200B;选项，然后选择访客或联系人表。
 
-### 消息权重{#message-weight}
+### 消息权重 {#message-weight}
 
 每个投放都有一个权重，该权重表示其优先级级别。 默认情况下，投放的权重设置为5。 压力规则允许您定义要应用于的投放的权重。
 
@@ -137,7 +137,7 @@ ht-degree: 4%
 
 1. 将此规则应用于具有以下主题的消息：时事通讯、特惠等。 这些投放的权重以及其优先级取决于每个收件人的倾向得分。
 
-## 设置句点{#setting-the-period}
+## 设置期间 {#setting-the-period}
 
 压力规则在&#x200B;**n**&#x200B;天滚动周期中定义。
 
@@ -198,7 +198,7 @@ ht-degree: 4%
 >
 >更改分类规则的定义时，可以创建&#x200B;**Simulation**&#x200B;以控制其对应投放的影响，并监控投放对彼此的影响。 有关更多信息，请参阅[促销活动模拟](../../campaign/using/campaign-simulations.md)。
 
-## 仲裁后排除{#exclusion-after-arbitration}
+## 仲裁后排除 {#exclusion-after-arbitration}
 
 每晚通过&#x200B;**[!UICONTROL Forecasting]**&#x200B;技术工作流和&#x200B;**[!UICONTROL Campaign jobs]**&#x200B;工作流重新应用仲裁。
 
@@ -214,9 +214,9 @@ ht-degree: 4%
 >
 >如果多个投放的得分相等，则将发送计划为最早日期的营销活动。
 
-## 压力规则{#use-cases-on-pressure-rules}的用例
+## 压力规则的用例 {#use-cases-on-pressure-rules}
 
-### 根据条件{#adapting-the-threshold-based-on-criterion}调整阈值
+### 根据条件调整阈值 {#adapting-the-threshold-based-on-criterion}
 
 我们希望创建一个分类规则，以阻止每周向客户交付4条以上的消息，以及每周向潜在客户交付2条消息。
 
@@ -286,7 +286,7 @@ ht-degree: 4%
 
    ![](assets/campaign_opt_pressure_sample_1_10.png)
 
-### 根据行为{#calculating-the-delivery-weight-based-on-behavior}计算投放权重
+### 根据行为计算投放权重 {#calculating-the-delivery-weight-based-on-behavior}
 
 您可以根据收件人行为定义压力规则：因此，递送的重量可以适应于不同收件人的标准。 例如，您可以根据收件人是否访问了您的互联网网站、点击了上次新闻稿的特定部分、订阅了信息服务，甚至根据调查的回答、在线游戏等，决定发送消息。
 
@@ -312,7 +312,7 @@ ht-degree: 4%
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;以保存此规则。
 1. 将规则链接到营销活动分类，并在投放中引用此分类以批准该分类。
 
-### 仅发送加权最高的消息{#sending-only-the-highest-weighted-messages}
+### 仅发送加权最高的消息 {#sending-only-the-highest-weighted-messages}
 
 您希望在同一周内向每个收件人发送不超过2条的消息（每天最多2条消息），并且您只希望传递权重较高的消息。
 
