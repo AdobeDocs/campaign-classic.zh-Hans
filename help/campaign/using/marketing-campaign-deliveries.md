@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ![](assets/do-not-localize/how-to-video.png)[ 在视频中发现此功能](#create-email-video)
 
-## 创建投放{#creating-deliveries}
+## 创建投放 {#creating-deliveries}
 
 要创建链接到营销活动的投放，请单击营销活动仪表板中的&#x200B;**[!UICONTROL Add a delivery]**&#x200B;链接。
 
@@ -29,11 +29,11 @@ ht-degree: 2%
 
 建议的配置适用于不同类型的投放：直邮、电子邮件、移动渠道。 [了解详情](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
-## 启动投放{#starting-a-delivery}
+## 启动投放 {#starting-a-delivery}
 
 在批准所有批准后，即可开始投放。 然后，投放过程取决于投放类型。 有关电子邮件或移动渠道投放，请参阅[启动在线投放](#starting-an-online-delivery)和直邮投放，请参阅[启动离线投放](#starting-an-offline-delivery)。
 
-### 启动在线投放{#starting-an-online-delivery}
+### 开始在线投放 {#starting-an-online-delivery}
 
 在授予所有批准请求后，投放状态将变为&#x200B;**[!UICONTROL Pending confirmation]**，并且可由操作员启动。 在适当情况下，指定为审阅人以开始投放的Adobe Campaign操作员（或一组操作员）会收到通知，表明投放已准备就绪，可以启动。
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 通过确认消息，您可以确保此操作的安全。
 
-### 启动离线投放{#starting-an-offline-delivery}
+### 启动离线投放 {#starting-an-offline-delivery}
 
 在获得所有批准后，投放状态将变为&#x200B;**[!UICONTROL Pending extraction]**。 提取文件通过特殊的工作流创建，在默认配置中，当直邮投放处于待提取状态时，该工作流会自动启动。 进程进行中时，该进程会显示在功能板中，并可通过其链接进行编辑。
 
@@ -98,7 +98,7 @@ ht-degree: 2%
 
 * 提取文件将发送到路由器，并完成交付。
 
-### 费用和库存的计算{#calculation-of-costs-and-stocks}
+### 费用和库存计算 {#calculation-of-costs-and-stocks}
 
 文件提取会启动两个操作：预算计算和库存计算。 预算条目会更新。
 
@@ -114,9 +114,9 @@ ht-degree: 2%
 >
 >有关成本计算和库存管理的详细信息，请参阅[提供商、库存和预算](../../campaign/using/providers--stocks-and-budgets.md)。
 
-## 管理关联文档{#managing-associated-documents}
+## 管理关联文档 {#managing-associated-documents}
 
-您可以将各种文档与活动关联：报表、照片、网页、图表等。这些文档可以采用任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。 在此部分](../../campaign/using/marketing-campaign-assets.md)中了解如何将文档与促销活动[链接。
+您可以将各种文档与活动关联起来：报表、照片、网页、图表等。这些文档可以采用任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。 在此部分](../../campaign/using/marketing-campaign-assets.md)中了解如何将文档与促销活动[链接。
 
 >[!IMPORTANT]
 >
@@ -126,9 +126,9 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如果您使用的是MRM，则还可以管理可供多个参与者协作工作的营销资源库。 请参阅[管理营销资源](../../campaign/using/managing-marketing-resources.md)。
+>如果您使用的是MRM，则还可以管理可供多个参与者协作工作的营销资源库。 请参阅[管理营销资源](../../mrm/using/managing-marketing-resources.md)。
 
-### 添加文档{#adding-documents}
+### 添加文档 {#adding-documents}
 
 文档可以在营销策划级别（上下文文档）或项目级别（常规文档）进行关联。
 
@@ -155,7 +155,7 @@ ht-degree: 2%
 
 也可以从此视图编辑和修改它们。
 
-### 通过投放大纲{#associating-and-structuring-resources-linked-via-a-delivery-outline}关联和构建链接的资源
+### 通过投放大纲关联和构建链接的资源 {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ ht-degree: 2%
 
 对于营销活动，投放大纲允许您根据特定条件构建要与投放关联的外部元素：相关分支、已授予的促销优惠、参加当地活动的邀请等。
 
-#### 创建大纲{#creating-an-outline}
+#### 创建大纲 {#creating-an-outline}
 
 要创建大纲，请单击相关营销活动&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子选项卡。
 
@@ -203,9 +203,9 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >有关营销资源的更多信息，请参阅[管理营销资源](../../campaign/using/managing-marketing-resources.md)。
+   >有关营销资源的更多信息，请参阅[管理营销资源](../../mrm/using/managing-marketing-resources.md)。
 
-#### 选择大纲{#selecting-an-outline}
+#### 选择大纲 {#selecting-an-outline}
 
 对于每个投放，您可以从为提取大纲保留的部分中选择要关联的大纲，如以下示例中所示：
 
@@ -219,7 +219,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_op_select_composition_c.png)
 
-#### 提取结果{#extraction-result}
+#### 提取结果 {#extraction-result}
 
 在提取并发送给服务提供商的文件中，大纲的名称，并在适当情况下，其特征（成本、描述等） 根据与服务提供商关联的导出模板中的信息，被添加到内容中。
 
@@ -233,7 +233,7 @@ ht-degree: 2%
 >
 >有关导出的更多信息，请参阅[快速入门](../../platform/using/get-started-data-import-export.md)一节。
 
-#### 教程视频{#create-email-video}
+#### 教程视频 {#create-email-video}
 
 此视频介绍如何在Adobe Campaign中创建营销活动和电子邮件。
 
