@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 69805e60-8fc6-45d1-9087-5f7d949cc76a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 5%
@@ -21,9 +21,9 @@ ht-degree: 5%
 
 ![](assets/dce_popup_templatechoice.png)
 
-要添加模板，请参阅[全局选项](../../web/using/content-editor-interface.md#global-options)。
+要添加模板，请参阅[全局选项](content-editor-interface.md#global-options)。
 
-## 将投放另存为模板{#saving-a-delivery-as-a-template}
+## 将投放另存为模板 {#saving-a-delivery-as-a-template}
 
 配置投放后，可将其另存为模板，以便将其用于将来的投放。
 
