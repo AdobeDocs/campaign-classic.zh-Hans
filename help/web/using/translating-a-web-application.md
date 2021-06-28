@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 5%
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 利用此选项可指示块内容是否必须翻译。
 
-要翻译的字符串与Web应用程序的其他字符串的收集方式相同，通过应用程序的&#x200B;**[!UICONTROL Translations]**&#x200B;选项卡。 有关详细信息，请参见[此页面](../../web/using/translating-a-web-form.md)。
+要翻译的字符串与Web应用程序的其他字符串的收集方式相同，通过应用程序的&#x200B;**[!UICONTROL Translations]**&#x200B;选项卡。 有关详细信息，请参见[此页面](translating-a-web-form.md)。
 
 要标记要翻译的字符串，请执行以下操作：
 
