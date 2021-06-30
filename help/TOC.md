@@ -10,7 +10,7 @@ type: Documentation
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '2518'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -570,9 +570,9 @@ ht-degree: 96%
       + [呈现规则](interaction/using/presentation-rules.md)
       + [入站渠道优惠](interaction/using/offers-on-an-inbound-channel.md)
       + [出站渠道优惠](interaction/using/offers-on-an-outbound-channel.md)
-+ 交易消息传递 {#transactional-messaging}
++ 事务性消息传递 {#transactional-messaging}
    + [事务性消息传递入门](message-center/using/about-transactional-messaging.md)
-   + 配置事务型消息传递{#configure-transactional-messaging}
+   + 配置事务性消息传递{#configure-transactional-messaging}
       + [事务性消息传递架构](message-center/using/transactional-messaging-architecture.md)
       + [配置实例](message-center/using/configuring-instances.md)
       + [其他配置](message-center/using/additional-configurations.md)
@@ -586,7 +586,7 @@ ht-degree: 96%
       + [事件处理](message-center/using/about-event-processing.md)
       + [投放执行](message-center/using/delivery-execution.md)
    + 报告 {#reports}
-      + [访问事务型消息报表](message-center/using/about-transactional-messaging-reports.md)
+      + [访问事务性消息传递报告](message-center/using/about-transactional-messaging-reports.md)
       + [消息中心事件的历史](message-center/using/history-of-message-center-events.md)
       + [消息中心服务级别](message-center/using/message-center-service-level.md)
       + [消息中心处理时间](message-center/using/message-center-processing-time.md)
@@ -675,9 +675,9 @@ ht-degree: 96%
          + [最佳实践和限制](installation/using/fda-best-practices.md)
          + 配置准则 {#config-databases}
             + [配置步骤](installation/using/configure-fda.md)
-            + [配置Vertica](installation/using/configure-fda-vertica.md)
+            + [配置 Vertica](installation/using/configure-fda-vertica.md)
             + [配置 Snowflake](installation/using/configure-fda-snowflake.md)
-            + [配置Google BigQuery](installation/using/configure-fda-google-big-query.md)
+            + [配置 Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [配置 Azure Synapse](installation/using/configure-fda-synapse.md)
             + [配置 Hadoop](installation/using/configure-fda-hadoop.md)
             + [配置 Oracle](installation/using/configure-fda-oracle.md)
