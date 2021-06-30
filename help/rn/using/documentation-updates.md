@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
 source-wordcount: '4466'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -19,21 +19,21 @@ ht-degree: 97%
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
-## 2021年6月 {#june-2021}
+## 2021 年 6 月 {#june-2021}
 
-**事务型消息传递**&#x200B;部分已重组并阐明了新的入门部分，包括[增强的架构](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更好地了解该过程。 [阅读更多](../../message-center/using/about-transactional-messaging.md)
+**事务性消息传递**&#x200B;部分经过了重新组织，并通过新的“入门”部分进行了说明，包括[增强模式](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，从而帮助更好地了解该流程。[阅读更多](../../message-center/using/about-transactional-messaging.md)
 
 **随 21.1.3 版提供的文档更新**
 
-与AdobeJourney Orchestration集成 — [了解详情](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html)。 [此页面](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html)中提供了分步使用案例
+与 Adobe Journey Orchestration 集成 - [了解详情](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=zh-Hans)。[此页面](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=zh-Hans)中介绍了分步用例
 
-LINE渠道增强 — [了解详情](../../delivery/using/line-channel.md)
+LINE 渠道增强 - [了解详情](../../delivery/using/line-channel.md)
 
-新的Vertica FDA连接器 — [了解详情](../../installation/using/configure-fda-vertica.md)
+新的 Vertica FDA 连接器 - [了解详情](../../installation/using/configure-fda-vertica.md)
 
-新的Google Big Query FDA连接器 — [了解详情](../../installation/using/configure-fda-google-big-query.md)
+新的 Google Big Query FDA 连接器 - [了解详情](../../installation/using/configure-fda-google-big-query.md)
 
-“帐单（帐单）”技术工作流描述现在包括最初由“有效帐单配置文件数(billingActiveContactCount)”执行的任务。 [阅读更多](../../workflow/using/about-technical-workflows.md)
+“计费 (billing)”技术工作流描述现在包括原来由“活跃计费用户档案数 (billingActiveContactCount)”执行的任务。[阅读更多](../../workflow/using/about-technical-workflows.md)
 
 ## 2021 年 5 月 {#may-2021}
 
@@ -468,7 +468,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 在 Campaign Classic 中新增了用户跟踪的故障排除页面。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/classic-tracking-troubleshooting.html)。
 
-添加了Adobe Analytics Connector最佳实践的新页面。 [阅读有关Adobe Analytics Connector的更多信息](../../platform/using/adobe-analytics-connector.md)
+新增了 Adobe Analytics Connector 的最佳实践页面。[阅读有关 Adobe Analytics Connector 的更多信息](../../platform/using/adobe-analytics-connector.md)
 
 投放最佳实践快速入门指南已移动并更新。[阅读更多](../../delivery/using/delivery-best-practices.md)
 
@@ -546,7 +546,7 @@ Apache 配置步骤已更新。[阅读更多](../../installation/using/integrati
 添加了有关 Campaign Classic 中可用的不同外部帐户以及如何配置这些帐户的信息。
 [阅读更多](../../installation/using/external-accounts.md)
 
-更新了“Analytics连接器”部分以反映界面更改。
+更新了 Analytics Connector 部分以反映接口更改。
 [阅读更多](../../platform/using/adobe-analytics-connector.md)
 
 添加了有关计费报告的信息。
