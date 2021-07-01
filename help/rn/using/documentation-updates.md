@@ -6,9 +6,9 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
 workflow-type: tm+mt
-source-wordcount: '4466'
+source-wordcount: '4456'
 ht-degree: 99%
 
 ---
@@ -462,7 +462,7 @@ Adobe Campaign 与 Adobe 实时客户数据平台之间的集成现在在&#x200B
 
 ## 2019 年 10 月 {#october-2019}
 
-Campaign 的错误消息列表已更新。[阅读更多](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+Campaign 的错误消息列表已更新。[阅读更多](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在内的隐私管理文档。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy.html)
 
@@ -516,7 +516,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 Marketing Cloud 触发器技术说明已更新。[阅读更多](../../integrations/using/about-triggers.md)
 
-错误消息的列表已更新。[阅读更多](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+错误消息的列表已更新。[阅读更多](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 添加了有关事务消息的 SOAP 身份验证方法的更多信息。[阅读更多](../../message-center/using/event-description.md)
 
