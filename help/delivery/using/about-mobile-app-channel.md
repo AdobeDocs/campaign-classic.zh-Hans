@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 1da8b954f1ed8b3e1433b920149e968cb89a97c5
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '673'
 ht-degree: 1%
 
 ---
@@ -91,13 +91,15 @@ Adobe Campaign服务器必须能够在iOS HTTP/2连接器的443端口上与APNs�
 * 对于测试：
 
    ```
-   telnet gateway.sandbox.push.apple.com
+   api.development.push.apple.com:443
    ```
 
 * 在生产中：
 
    ```
-   telnet gateway.push.apple.com
+   api.push.apple.com:443
    ```
 
-使用iOS HTTP/2连接器，MTA、Web服务器和工作流服务器必须能够在端口443上与APN联系。
+使用iOS HTTP/2连接器，MTA和Web服务器必须能够在端口443上与APN联系。
+
+如果需要通过代理使用iOS HTTP/2连接器，请参阅此[page](../../installation/using/file-res-management.md#proxy-connection-configuration)。
