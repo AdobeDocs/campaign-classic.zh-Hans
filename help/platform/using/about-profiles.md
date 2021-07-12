@@ -3,10 +3,10 @@ product: campaign
 title: 关于用户档案
 description: 关于用户档案
 feature: 用户档案和受众
-role: Business Practitioner, Data Architect
+role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 60%
@@ -105,9 +105,9 @@ ht-degree: 60%
 >
 >您还可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关更多信息，请参阅[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
 
-## 教程视频{#create-profiles-video}
+## 教程视频 {#create-profiles-video}
 
-了解如何访问个人资料数据、对个人资料进行排序和筛选以及手动创建和管理个人资料。
+了解如何访问用户档案数据、对用户档案进行排序和筛选以及手动创建和管理用户档案。
 
 此视频还介绍了Adobe Campaign Classic是否遵守了《通用数据保护法规》。
 
