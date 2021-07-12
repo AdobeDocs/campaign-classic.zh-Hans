@@ -3,10 +3,10 @@ product: campaign
 title: Campaign操作员入门
 description: 了解如何创建和管理Campaign用户
 feature: 访问管理
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 创建和管理操作员 {#operators}
 
-## Campaign运算符{#about-operators}快速入门
+## Campaign操作员入门  {#about-operators}
 
 操作员是具有登录和执行操作权限的Adobe Campaign用户。
 
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 用户还可以使用其Adobe ID直接连接到Adobe Campaign。 有关详细信息，请参见此 [ 页面](../../integrations/using/about-adobe-id.md)。
 
-## 创建运算符{#creating-an-operator}
+## 创建运算符 {#creating-an-operator}
 
 要创建新运算符并授予权限，请执行以下步骤：
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 >
 >利用&#x200B;**[!UICONTROL Session timeout]**&#x200B;字段，可调整FDA会话超时前的延迟。 有关更多信息，请参阅[关于联合数据访问](../../installation/using/about-fda.md)。
 
-## 定义运算符的时区{#time-zone-of-the-operator}
+## 定义运算符的时区 {#time-zone-of-the-operator}
 
 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，您可以选择运算符的时区。 默认情况下，运算符在服务器时区中工作。 但是，可以使用下拉列表选择其他时区。
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 
 此外，**[!UICONTROL Regional settings]**&#x200B;下拉列表允许您选择显示日期和数字的格式。
 
-## 添加权限{#access-rights-options}
+## 添加权限 {#access-rights-options}
 
 使用&#x200B;**[!UICONTROL Access rights]**&#x200B;选项卡更新链接到运算符的组和命名权限。
 
@@ -125,7 +125,7 @@ ht-degree: 2%
    >
    >这是非常严格的限制，必须谨慎使用。 使用此类权限登录的操作员只能查看指定文件夹的内容，并且无法通过资源管理器访问树的任何其他节点。 但是，根据他有权访问的功能(例如：工作流)时，他可以显示通常存储在他看不到的节点中的数据。
 
-### 检查设置{#check-settings}
+### 检查设置 {#check-settings}
 
 **[!UICONTROL Audit]**&#x200B;选项卡允许您查看与运算符相关的信息。 根据操作员干预区域中定义的设置，将各种选项卡自动添加到中。
 
@@ -147,7 +147,7 @@ ht-degree: 2%
 * 活动。
 * 分配给它们的任务列表。
 
-## 默认运算符{#default-operators}
+## 默认运算符 {#default-operators}
 
 Adobe Campaign使用默认配置了用户档案的技术运算符：管理员（“管理员”）、账单（“账单”）、监控、Web应用程序代理(“webapp”)等。 其中某些选项取决于平台上安装的应用程序和选项：例如，“中心”和“本地”运算符仅在安装“分布式营销”选项时才可见。
 
