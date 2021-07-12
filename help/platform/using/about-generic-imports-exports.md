@@ -3,17 +3,17 @@ product: campaign
 title: 关于一般导入和导出
 description: 了解有关通用导入和导出的更多信息。
 feature: 概述
-role: Business Practitioner, Data Architect
+role: User, Data Architect
 level: Beginner
 exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 5%
 
 ---
 
-# 导入和导出作业{#about-generic-imports-exports}入门
+# 导入和导出作业入门 {#about-generic-imports-exports}
 
 Adobe Campaign Classic提供通用导入和导出。 例如，它们允许您提取随后将成为目标群体一部分的客户或潜在客户列表，或向数据库提供来自外部文件的数据。
 
