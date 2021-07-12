@@ -3,10 +3,10 @@ product: campaign
 title: 管理对Campaign文件夹的访问权限
 description: 了解如何授予对Campaign文件夹的访问权限和创建视图
 feature: 应用程序设置
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 1%
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 Explorer导航树的每个文件夹都具有附加到其的读、写和删除访问权限。 要访问文件，操作员或一组操作员必须至少具有对该文件的读取访问权限。
 
-## 文件夹和视图{#folders-and-views}
+## 文件夹和视图 {#folders-and-views}
 
-### 什么是文件夹{#about-folders}
+### 文件夹是什么 {#about-folders}
 
 文件夹是Adobe Campaign树中的节点。 通过右键单击树，通过&#x200B;**[!UICONTROL Add new folder]**&#x200B;菜单创建这些节点。 默认情况下，第一个菜单允许您添加与当前上下文对应的文件夹。
 
@@ -27,7 +27,7 @@ Explorer导航树的每个文件夹都具有附加到其的读、写和删除访
 
 可以自定义Explorer导航树。 在此部分](adobe-campaign-workspace.md)中了解配置步骤和最佳实践。[
 
-### 什么是视图{#about-views}
+### 什么是视图 {#about-views}
 
 此外，您还可以创建视图以限制对数据的访问，并组织树的内容以符合您的要求。 然后，您可以为视图分配权限。
 
@@ -45,7 +45,7 @@ Explorer导航树的每个文件夹都具有附加到其的读、写和删除访
 
 ![](assets/s_ncs_user_view_name_color.png)
 
-### 添加文件夹并创建视图{#adding-folders-and-creating-views}
+### 添加文件夹和创建视图 {#adding-folders-and-creating-views}
 
 在以下示例中，我们将创建新文件夹以显示特定数据：
 
@@ -78,7 +78,7 @@ Explorer导航树的每个文件夹都具有附加到其的读、写和删除访
 
 ## 文件夹的权限
 
-### 编辑对文件夹{#edit-permissions-on-a-folder}的权限
+### 编辑文件夹的权限 {#edit-permissions-on-a-folder}
 
 要编辑对树中特定文件夹的权限，请执行以下步骤：
 
@@ -90,7 +90,7 @@ Explorer导航树的每个文件夹都具有附加到其的读、写和删除访
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
-### 修改权限{#modify-permissions}
+### 修改权限 {#modify-permissions}
 
 要修改权限，您可以：
 
@@ -104,7 +104,7 @@ Explorer导航树的每个文件夹都具有附加到其的读、写和删除访
 
    ![](assets/s_ncs_user_folder_properties_security03.png)
 
-### 传播权限{#propagate-permissions}
+### 传播权限 {#propagate-permissions}
 
 您可以传播授权和访问权限。 为此，请在文件夹属性中选择&#x200B;**[!UICONTROL Propagate]**&#x200B;选项。
 
@@ -114,7 +114,7 @@ Explorer导航树的每个文件夹都具有附加到其的读、写和删除访
 >
 >清除文件夹的此选项不会自动清除子文件夹的选项。 必须为每个子文件夹明确清除它。
 
-### 授予对所有运算符的访问权限{#grant-access-to-all-operators}
+### 授予对所有运算符的访问权限 {#grant-access-to-all-operators}
 
 在&#x200B;**[!UICONTROL Security]**&#x200B;选项卡中，如果选择&#x200B;**[!UICONTROL System folder]**&#x200B;选项，则所有运算符都将有权访问此数据，而无论其权限如何。 如果清除此选项，则必须将运算符（或其组）明确添加到授权列表中，以便它们具有访问权限。
 
