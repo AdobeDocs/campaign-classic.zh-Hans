@@ -3,21 +3,21 @@ product: campaign
 title: 创建和管理操作员组
 description: 了解如何授予对操作员组的访问权限
 feature: 访问管理
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%
 
 ---
 
-# 创建和管理运算符组{#operator-groups}
+# 创建和管理操作员组 {#operator-groups}
 
 通过树中的&#x200B;**[!UICONTROL Administration > Access management > Operator groups]**&#x200B;节点创建运算符组。
 
-## 创建新的运算符组{#creating-a-new-operator-group}
+## 创建新运算符组 {#creating-a-new-operator-group}
 
 要创建新的运算符组，请应用以下步骤：
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮将组添加到列表。
 
-## 默认组{#default-groups}
+## 默认组 {#default-groups}
 
 默认的运算符组为：
 
