@@ -3,10 +3,10 @@ product: campaign
 title: 使用已命名权限设置权限
 description: 了解如何使用命名权限设置权限
 feature: 访问管理
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 7%
@@ -65,7 +65,7 @@ ht-degree: 7%
 >
 >此列表可能因平台上安装的加载项而异。
 
-## 访问权限矩阵{#access-rights-matrix}
+## 访问权限矩阵 {#access-rights-matrix}
 
 默认组和命名权限允许操作员访问导航层次结构中的某些文件夹，并授予读取、写入和删除权限。
 
