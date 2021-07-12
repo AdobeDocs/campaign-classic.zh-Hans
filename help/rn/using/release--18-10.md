@@ -3,19 +3,19 @@ product: campaign
 title: Campaign 18.10发行说明
 description: Campaign 18.10发行说明
 feature: 概述
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2370'
 ht-degree: 7%
 
 ---
 
 # 18.10 版{#release-18-10}
 
-## 18.10.6 版 - 内部版本 8985{#release-18-10-6-build-8985}
+## 版本18.10.6 — 版本8985{#release-18-10-6-build-8985}
 
 2019年7月12日
 
@@ -27,7 +27,7 @@ ht-degree: 7%
 * 改进了在使用内部帐户时执行安全区域包的权限。
 * 修复了可能导致匹配字段日志中出现错误的问题。 (NEO-8978)
 
-## 18.10.5 版 - 内部版本 8984{#release-18-10-5-build-8984}
+## 版本18.10.5 — 版本8984{#release-18-10-5-build-8984}
 
 2019年4月23日
 
@@ -37,7 +37,7 @@ ht-degree: 7%
 * 删除了工作流热图中的10,000条记录限制，以修复缺失的数据问题。 (NEO-12329)
 * 修复了在扩充工作流活动中使用“从主集中保留所有其他数据”选项时的问题。 (NEO-13291)
 
-## 18.10.4 版 - 内部版本 8983{#release-18-10-4-build-8983}
+## 版本18.10.4 — 版本8983{#release-18-10-4-build-8983}
 
 2019年4月15日
 
@@ -50,7 +50,7 @@ ht-degree: 7%
 * 在Analytics集成中，现在允许检索包含%字符的AAM区段数据。 (NEO-12025)
 * 修复了使用HTTP2发送推送通知时的Tomcat崩溃问题。 (NEO-12701)
 
-## 18.10.3 版 - 内部版本 8981{#release-18-10-3-build-8981}
+## 版本18.10.3 — 版本8981{#release-18-10-3-build-8981}
 
 2019年1月29日
 
@@ -74,7 +74,7 @@ ht-degree: 7%
 * 修复了在移动应用程序上发送推送通知时的字符转义问题。
 * 修复了中间源外部帐户中无法从FDA切换到SOAP同步方法的问题。
 
-## 18.10.2 版 - 内部版本 8978{#release-18-10-2-build-8978}
+## 版本18.10.2 — 版本8978{#release-18-10-2-build-8978}
 
 2018年12月6日
 
@@ -96,7 +96,7 @@ ht-degree: 7%
 * 修复了工作流热图中计算工作流持续时间的问题。
 
 
-## 18.10 版 - 内部版本 8977{#release-18-10-build-8977}
+## 版本18.10 — 版本8977{#release-18-10-build-8977}
 
 2018年11月5日
 
@@ -138,7 +138,7 @@ ht-degree: 7%
 
 * 修复了可能导致服务器端请求伪造(SSRF)攻击和拒绝服务(DoS)攻击漏洞的安全问题。 (NEO-11453)
 * 内容（跟踪重定向、镜像页面、调查等） 现在，Campaign将使用X-Robots-Tag提供：无缓存标头。 这会阻止通过Internet搜索引擎索引此内容。 (NEO-11101)
-* 修复了订阅API中的XTK注入问题（nms:subscription:Unsbrice和nms:subscription:Subscribe）。
+* 修复了订阅API中的XTK注入问题（nms:subscription:取消订阅和nms:subscription:订阅）。
 * 修复了退订Web应用程序中的XTK注入问题。
 * 删除了某些短信日志中不安全显示的密码。
 
