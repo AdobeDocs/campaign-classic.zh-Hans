@@ -6,10 +6,10 @@ feature: 概述
 role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 6a2440224f9c7c7dad5d979c6c75ef429209d252
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 99%
+source-wordcount: '1056'
+ht-degree: 95%
 
 ---
 
@@ -27,6 +27,17 @@ _2021 年 4 月 14 日_
 
 **必须执行仅控制台升级。无需升级服务器。**
 
+>[!CAUTION]
+>
+> * 如果您通过Adobe ID连接到Campaign，则通过Adobe标识服务(IMS)，必须升级Campaign服务器和客户端控制台才能在2021年6月30日&#x200B;**后连接到Campaign。** [了解详情](../../technotes/ims-updates.md)
+> * 此版本附带[安全修复](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
+> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign 的旧式 oAuth 身份验证模式将于 **2021 年 11 月 30 日**&#x200B;停用。
+
+>
+>
+在[[!DNL Gold Standard] 11升级常见问题解答](https://helpx.adobe.com/cn/campaign/kb/gold-standard-upgrade.html)中了解更多信息
+
+
 _2021 年 3 月 2 日_
 
 内部版本 9032@10c2709 包含以下修复：
@@ -41,16 +52,15 @@ _2021 年 3 月 2 日_
 
 _2020 年 12 月 22 日_
 
+<!--
 >[!CAUTION]
 >
-> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。[了解详情](../../technotes/ims-updates.md)
-> * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign 的旧式 oAuth 身份验证模式将于 **2021 年 11 月 30 日**&#x200B;停用。
-
+> * This release comes with a new connection protocol: if you are connecting to Campaign through Adobe Identity Service (IMS), upgrade is mandatory for both Campaign server and client console to be able to connect to Campaign after **June 30, 2021**. [Learn more](../../technotes/ims-updates.md)
+> * This release comes with a [security fix](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): upgrade is mandatory to reinforce your environment security. 
+> * If you are using the Experience Cloud Triggers integration through oAuth authentication, you need to move to Adobe I/O as described [in this page](../../integrations/using/configuring-adobe-io.md). Legacy oAuth authentication mode with Campaign will be retired on **November 30, 2021**.
 >
->
-在 [[!DNL Gold Standard]  11 升级常见问题解答](https://helpx.adobe.com/cn/campaign/kb/gold-standard-upgrade.html)中了解更多信息。
-
+>Learn more in the [[!DNL Gold Standard] 11 upgrade FAQ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
+-->
 内部版本 9032@d3b452f 包括以下改进和修复：
 
 * 连接协议已经更新，以遵循新的 IMS 认证机制。
