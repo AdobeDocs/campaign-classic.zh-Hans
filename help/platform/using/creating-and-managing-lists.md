@@ -3,10 +3,10 @@ product: campaign
 title: 创建和管理列表
 description: 了解如何创建和管理列表
 feature: 用户档案
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 65%
@@ -15,7 +15,7 @@ ht-degree: 65%
 
 # 创建和管理列表{#creating-and-managing-lists}
 
-## 什么是列表？{#about-lists-in-adobe-campaign}
+## 什么是列表？ {#about-lists-in-adobe-campaign}
 
 列表是一组静态用户档案，用于在投放操作期间提供定位目标，或在导入操作或工作流执行期间进行更新。例如，通过查询从数据库中提取出的一组数据即可形成一个列表。
 
@@ -35,7 +35,7 @@ Adobe Campaign 提供两类列表：
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#create-list-video)
 
-## 从组{#creating-a-profile-list-from-a-group}创建配置文件列表
+## 从群组创建用户档案列表 {#creating-a-profile-list-from-a-group}
 
 **[!UICONTROL Group]** 通过链接创建的 **[!UICONTROL Profiles and targets]** 类型列表必须基于默认的Adobe Campaign用户档案表(nms:recipient)。
 
@@ -69,7 +69,7 @@ Adobe Campaign 提供两类列表：
 
 与其他列表一样，也可以配置该用户档案列表。请参阅[此小节](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
 
-## 将数据链接到列表{#linking-data-to-a-list}
+## 将数据链接到列表 {#linking-data-to-a-list}
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Adobe Campaign 提供两类列表：
 
 ![](assets/s_ncs_user_add_selection_to_group_5.png)
 
-## 从列表{#removing-a-profile-from-a-list}中删除配置文件
+## 从列表中删除用户档案 {#removing-a-profile-from-a-list}
 
 要从列表中删除用户档案，您可以：
 
@@ -116,7 +116,7 @@ Adobe Campaign 提供两类列表：
 
    ![](assets/recipient_remove_a_list.png)
 
-## 删除用户档案列表{#deleting-a-list-of-profiles}
+## 删除用户档案列表 {#deleting-a-list-of-profiles}
 
 您可以从 Adobe Campaign 树状结构的组列表中删除一个或多个列表。为此可通过 Adobe Campaign 主页中的 **[!UICONTROL Advanced > Explorer]** 链接编辑树状结构。选择相关的组，然后单击鼠标右键。选择 **[!UICONTROL Delete]**。警告消息会要求您确认此删除操作。
 
@@ -124,7 +124,7 @@ Adobe Campaign 提供两类列表：
 >
 >删除列表时，该列表上的用户档案不受影响，但会更新其用户档案中的数据。
 
-## 教程视频{#create-list-video}
+## 教程视频 {#create-list-video}
 
 ### 如何创建收件人列表
 
@@ -134,7 +134,7 @@ Adobe Campaign 提供两类列表：
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-### 如何使用工作流创建收件人列表{#create-list-in-a-wf-video}
+### 如何使用工作流创建收件人列表 {#create-list-in-a-wf-video}
 
 了解如何创建工作流以定位收件人，以及如何在电子邮件目标中使用列表之前使其循环。
 
