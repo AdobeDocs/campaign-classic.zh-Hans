@@ -3,13 +3,13 @@ product: campaign
 title: Campaign  [!DNL Gold Standard] 的兼容性矩阵
 description: ' [!DNL Gold Standard]  版本的 Campaign Classic 兼容性矩阵'
 feature: 概述
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-source-git-commit: 9703e9d5cf0dba91d3f38d265756bdae69267c28
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -266,7 +266,7 @@ Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。随
 
 ## 客户端控制台 {#ClientConsoleoperatingsystems}
 
-:warning: 使用Campaign客户端控制台需要以下操作系统和浏览器。
+:warning:警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
 
 ### 操作系统
 
