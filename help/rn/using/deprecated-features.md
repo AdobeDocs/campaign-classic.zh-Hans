@@ -3,13 +3,13 @@ product: campaign
 title: Campaign Classic 已弃用和已移除的功能
 description: 本页列出了 Adobe Campaign Classic 中已弃用并移除的功能
 feature: 概述
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: c612b47463427751eff27d6092e371c918c87d93
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1634'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -42,8 +42,8 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <td><strong>替换</strong></td>
   </tr>
     <tr>
-  <td>Adobe Analytics 数据连接器<br></td>
-   <td><p>从Campaign 21.1.3版本开始，弃用Adobe Analytics Data Connector。</p>
+  <td>Adobe Analytics Data Connector<br></td>
+   <td><p>从 Campaign 21.1.3 版本开始，弃用 Adobe Analytics Data Connector。</p>
    <p>如果您使用的是此连接器，则需要相应地调整实施。<a href="../../platform/using/adobe-analytics-connector.md">了解详情</a></p>
   <p><em>目标移除日期：2022年3月1日</em></p>
   </td>
@@ -79,10 +79,10 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </tr>
   <tr>  
    <td>传真渠道<br></td>
-   <td><p>从Campaign 21.1.3版本开始，传真渠道不再可用。 <a href="../../delivery/using/steps-about-delivery-creation-steps.md">了解详情</a></p>
+   <td><p>从 Campaign 21.1.3 版本开始，不再使用传真渠道。<a href="../../delivery/using/steps-about-delivery-creation-steps.md">了解详情</a></p>
   <tr>
   <td>Demdex 域<br></td>
-  <td><p> 从Campaign 21.1.3版本开始，用于将受众导入和导出到Adobe Experience Cloud的demdex域不再可用。 <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">了解详情</a></p> 
+  <td><p> 从 Campaign 21.1.3 版本开始，不再使用用于将受众导入和导出到 Adobe Experience Cloud 的 demdex 域。<a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">了解详情</a></p> 
   </td>
   </td>
   </tr>
@@ -156,7 +156,7 @@ Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因
 
 ### 操作系统 {#o-s-eol}
 
-从21.1.3版本开始，弃用对Debian 8的支持。
+从 21.1.3 版本开始，弃用对 Debian 8 的支持。
 
 从 19.1 版本开始，Adobe Campaign 不再与以下操作系统兼容。
 
@@ -178,7 +178,7 @@ Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因
 从 19.1 Spring Release 开始，Adobe Campaign 不再与以下工具兼容。
 
 * Java JDK 7。[了解详情](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Libre Office 3.5 / 4.3 / 5.x，嵌入到其他工具中时除外。 [了解详情](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Libre Office 3.5 / 4.3 / 5.x，嵌入到其他工具中时除外。[了解详情](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### 数据库引擎 {#dbe-eol}
 
@@ -220,7 +220,7 @@ Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。
 
 **RDBMS 服务器**
 
-从19.1 Spring Release开始，Adobe Campaign不再与以下RDBMS服务器兼容：
+从 19.1 Spring 版本开始，Adobe Campaign 不再与以下 RDBMS 服务器兼容：
 
 * Oracle 10GR2
 * PostgreSQL 9.0 至 9.3
@@ -230,7 +230,7 @@ Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。
 
 ### SMS 连接器 {#sms-eol}
 
-Adobe Campaign与以下SMS连接器不兼容：
+Adobe Campaign 与以下 SMS 连接器不兼容：
 
 * 通用 SMPP（支持二进制模式的 SMPP 版本 3.4）
 * Sybase365 (SAP SMS 365)
