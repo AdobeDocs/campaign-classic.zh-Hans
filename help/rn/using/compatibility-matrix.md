@@ -3,13 +3,13 @@ product: campaign
 title: Campaign Classic 的兼容性矩阵
 description: Campaign Classic 兼容性矩阵
 feature: 概述
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1caacff8b10c8593945b872d045fdaab3f26190c
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -189,7 +189,7 @@ ht-degree: 95%
 <table>
 <tbody>
 <tr>
-<td>韦尔蒂察</td>
+<td>Vertica</td>
 <td> </td>
 </tr>
 <tr>
@@ -284,7 +284,7 @@ ht-degree: 95%
 
 ## 客户端控制台 {#ClientConsoleoperatingsystems}
 
-:warning: 使用Campaign客户端控制台需要以下操作系统和浏览器。
+:warning:警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
 
 ### 操作系统
 
