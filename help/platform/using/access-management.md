@@ -3,13 +3,13 @@ product: campaign
 title: 权限入门
 description: 了解如何授予对Campaign功能的访问权限
 feature: 访问管理
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -48,7 +48,7 @@ Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这�
 * [访问权限矩阵](access-management-named-rights.md#access-rights-matrix)
 
 
-另请参阅：
+另请参阅:
 
 * [管理工作流的权限](../../workflow/using/managing-rights.md)
 * [管理分布式营销的权限](../../campaign/using/about-distributed-marketing.md#operators-and-entities)
