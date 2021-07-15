@@ -11,7 +11,7 @@ hide: true
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1682'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Data Connector（此前称为 Adobe Genesis）允许 Adobe Campaign 和 Adobe An
 
 1. 在 **[!UICONTROL Admin]** 选项卡中，选择 **[!UICONTROL Data Connectors]**。
 
-   您需要具有以下 Analytics 工具权限才能访问 **[!UICONTROL Data Connectors]** 菜单。有关更多信息，请参阅此[页面](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html)
+   您需要具有以下 Analytics 工具权限才能访问 **[!UICONTROL Data Connectors]** 菜单。有关更多信息，请参阅此[页面](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=zh-Hans)
    * 集成（创建）
    * 集成（更新）
    * 集成（删除）
