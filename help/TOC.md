@@ -1,16 +1,16 @@
 ---
 audience: end-user
-breadcrumb-title: Campaign Classicv7文档
+breadcrumb-title: Campaign Classic v7 文档
 product: campaign
 title: Campaign Classic v7 指南
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: 借助Adobe Campaign，您可以通过电子邮件、移动设备、线下渠道等方式，使用丰富的客户数据创建、协调和提供客户真正想要的动态促销活动。
-sub-product: adobe campaign classic
+user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
+sub-product: Adobe Campaign Classic
 type: Documentation
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2518'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,11 +38,11 @@ ht-degree: 97%
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
    + [技术说明](technotes/technote.md)
-   + [Adobe Analytics Connector常见问题解答](technotes/aa-connector-migration.md)
+   + [Adobe Analytics Connector 常见问题解答](technotes/aa-connector-migration.md)
    + [iOS 证书更新](technotes/ios-certificate-update.md)
    + [Campaign 配置更新](technotes/acc-config-updates.md)
    + [跟踪的 URL 更新](technotes/tracked-urls.md)
-   + [IMS更新](technotes/ims-updates.md)
+   + [IMS 更新](technotes/ims-updates.md)
 + 入门 {#getting-started}
    + 开始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
@@ -164,8 +164,8 @@ ht-degree: 97%
          + [iOS 配置步骤](delivery/using/configuring-the-mobile-application.md)
          + [Android 配置步骤](delivery/using/configuring-the-mobile-application-android.md)
       + 创建推送通知{#create-a-push-msg}
-         + [为iOS创建推送消息](delivery/using/create-notifications-ios.md)
-         + [为Android创建推送消息](delivery/using/create-notifications-android.md)
+         + [创建 iOS 推送消息](delivery/using/create-notifications-ios.md)
+         + [创建 Android 推送消息](delivery/using/create-notifications-android.md)
       + [故障排除](delivery/using/troubleshooting.md)
    + 发送直邮{#sending-direct-mail}
       + [关于直邮渠道](delivery/using/about-direct-mail-channel.md)
@@ -269,7 +269,7 @@ ht-degree: 97%
       + [筛选规则](campaign/using/filtering-rules.md)
       + [应用规则](campaign/using/applying-rules.md)
       + [活动模拟](campaign/using/campaign-simulations.md)
-+ 营销资源管理 {#mrm}
++ 营销资源管理{#mrm}
    + [关于营销资源管理](mrm/using/about-marketing-resource-management.md)
    + [创建和管理任务](mrm/using/creating-and-managing-tasks.md)
    + [控制成本](mrm/using/controlling-costs.md)
