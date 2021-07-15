@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 0a80912aae4cab58b6f06918a673aaca3883fbdf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2415'
 ht-degree: 100%
 
@@ -98,7 +98,7 @@ Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中�
 
 ![](assets/privacy-request-download.png)
 
-### 表列表 {#list-of-tables}
+### 表格列表 {#list-of-tables}
 
 执行删除或访问隐私请求时，Adobe Campaign 会根据所有具有指向收件人表（自有类型）链接的表中的 **[!UICONTROL Reconciliation value]** 搜索所有数据主体数据。
 
@@ -374,7 +374,7 @@ Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私
    // User can use a simple queryDef with requestID as a parameter to check request status.
    ```
 
-## 选择退出个人信息销售 (CCPA) {#sale-of-personal-information-ccpa}
+## 个人数据销售的选择退出 (CCPA) {#sale-of-personal-information-ccpa}
 
 **加州消费者隐私法案** (CCPA) 为加利福尼亚州居民提供了与其个人信息有关的新权利，并要求在加利福尼亚开展业务的特定实体承担数据保护责任。
 
