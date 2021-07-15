@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ---
 
-# [!DNL Gold Standard] 兼容性矩阵{#compatibility-matrix-gs}
+# [!DNL Gold Standard]兼容性矩阵{#compatibility-matrix-gs}
 
 本文档列出了 **Adobe Campaign Classic[!DNL Gold Standard]** 19.1 内部版本支持的所有系统和组件。此列表中未包含的产品和版本与此版本的 Adobe Campaign 不兼容。
 
