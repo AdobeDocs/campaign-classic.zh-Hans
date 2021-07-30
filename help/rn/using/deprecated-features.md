@@ -6,9 +6,9 @@ feature: 概述
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 23d22283df418bb32eb7d2cb226bb7926e73bd0c
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1647'
 ht-degree: 100%
 
 ---
@@ -212,11 +212,6 @@ Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。
 * AsterData 5.0。AsterData 的生命周期已终止。[了解详情](https://en.wikipedia.org/wiki/Aster_Data_Systems)
 * Sybase IQ 15.2、15.4、15.5 和 Sybase ASE 15.0。通过联合数据访问 (FDA) 支持更新版本的 Sybase。[了解详情](https://sites.google.com/site/dbatipsandtricks/time-tracker)
 * Hadoop via HiveSQL：Hadoop 2.7.3、HiveSQL 1.2.1。Adobe Campaign Classic 仍通过联合数据访问 (FDA) 支持列出的 Hadoop via HiveSQL 版本，但这些版本与以下版本合并：HortonWorks (HDP 2.4.X、2.5.x、2.6.x）和 HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6)
-* Soap API - 本地：2007、2015、2016
-* Soap API - 在线：2015、2016
-* Web API - Microsoft Dynamics CRM 本地版：2016 或 2016 Update 1
-* Web API - Microsoft Dynamics CRM 联机版：2016 或 2016 Update 1
-* Oracle On Demand API&lt;
 
 **RDBMS 服务器**
 
@@ -238,3 +233,13 @@ Adobe Campaign 与以下 SMS 连接器不兼容：
 * Tele2
 * O2
 * iOS
+
+### CRM 连接器 {#crm-connectors}
+
+从 Campaign 21.1 版本开始，Campaign 弃用以下 CRM 连接器：
+
+* Soap API - 本地：2007、2015、2016
+* Soap API - 在线：2015、2016
+* Web API - Microsoft Dynamics CRM 本地版：2016 或 2016 Update 1
+* Web API - Microsoft Dynamics CRM 联机版：2016 或 2016 Update 1
+* Oracle On Demand API
