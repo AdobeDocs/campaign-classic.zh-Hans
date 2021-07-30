@@ -6,14 +6,14 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 6f5e91a719553fbeb97811d30ce6318f857bec80
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 11%
 
 ---
 
-# 解压缩或解密文件{#unzipping-or-decrypting-a-file-before-processing}
+# 解压缩或解密文件 {#unzipping-or-decrypting-a-file-before-processing}
 
 Adobe Campaign允许您导入压缩或加密的文件。 在[数据加载（文件）](../../workflow/using/data-loading--file-.md)活动中读取它们之前，您可以定义一个预处理来解压缩或解密文件。
 
@@ -25,7 +25,7 @@ Adobe Campaign允许您导入压缩或加密的文件。 在[数据加载（文�
    >
    >所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
    >
-   >请注意，您的实例必须托管在AWS上，并升级为最新的[Gold Standard](../../rn/using/gs-overview.md)内部版本或[最新的GA内部版本(21.1)](../../rn/using/latest-release.md)。 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
+   >请注意，您的实例必须托管在AWS上，并升级为最新的[Gold Standard](../../rn/using/gs-overview.md)内部版本或[最新的GA内部版本(21.1.3)](../../rn/using/latest-release.md)。 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
 
 1. 如果Adobe Campaign的安装由Adobe托管，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)，以在服务器上安装必要的实用程序。
 1. 如果您在内部部署安装Adobe Campaign，请安装您要使用的实用程序(例如：GPG、GZIP)以及应用程序服务器上必需的密钥（加密密钥）。
@@ -46,7 +46,7 @@ Adobe Campaign允许您导入压缩或加密的文件。 在[数据加载（文�
 * [数据加载（文件）活动](../../workflow/using/data-loading--file-.md)。
 * [Zip或加密文件](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
 
-## 用例：导入使用{#use-case-gpg-decrypt}控制面板生成的密钥加密的数据
+## 用例：导入使用由控制面板生成的密钥加密的数据 {#use-case-gpg-decrypt}
 
 在此用例中，我们将构建一个工作流，以便使用控制面板中生成的密钥，导入已在外部系统中加密的数据。
 
