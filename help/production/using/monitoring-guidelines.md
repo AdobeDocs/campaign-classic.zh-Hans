@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 20%
@@ -15,7 +15,7 @@ ht-degree: 20%
 
 # 监测准则 {#monitoring-guidelines}
 
-## 实例监控仪表板{#instance-monitoring-dashboard}
+## 实例监控仪表板 {#instance-monitoring-dashboard}
 
 **[!UICONTROL Monitoring]**&#x200B;选项卡可从Campaign Classic主页访问，它是帮助您监视实例的主要入口点。
 
@@ -25,7 +25,7 @@ ht-degree: 20%
 
 ![](assets/monitoring_tab.png)
 
-## 监控Campaign Classic进程{#monitoring-campaign-classic-processes}
+## 监控Campaign Classic流程 {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">监控实例</a></p></td>
@@ -36,7 +36,7 @@ ht-degree: 20%
 
 还提供了其他监控不同营销活动流程的方法。 它们提供了多种监视实例的方法，以确保您的系统运行正常，并最终解决在设置工作流、发送投放等操作时可能出现的问题。
 
-### 监控实例{#monitoring-instance}
+### 监控实例 {#monitoring-instance}
 
 <img src="assets/do-not-localize/icon_system.svg" width="60px">
 
@@ -56,7 +56,7 @@ ht-degree: 20%
 >
 >所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
 >
->请注意，您的实例必须托管在AWS上，并升级为最新的[Gold Standard](../../rn/using/gs-overview.md)内部版本或[最新的GA内部版本(21.1)](../../rn/using/latest-release.md)。 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
+>请注意，您的实例必须托管在AWS上，并升级为最新的[Gold Standard](../../rn/using/gs-overview.md)内部版本或[最新的GA内部版本(21.1.3)](../../rn/using/latest-release.md)。 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
 
 ### 监控工作流 {#monitoring-workflows}
 
@@ -103,7 +103,7 @@ SMTP报表按域显示投放统计信息和SMTP错误。 [了解详情](../../pr
 * [交付性能问题](../../delivery/using/delivery-performances.md)
 * [临时文件问题](../../production/using/temporary-files.md)  — 仅限 *内部部署托管模型*
 
-### 监视数据库{#monitoring-database}
+### 监控数据库 {#monitoring-database}
 
 <img src="assets/do-not-localize/icon_database.svg" width="60px">
 
@@ -127,7 +127,7 @@ SMTP报表按域显示投放统计信息和SMTP错误。 [了解详情](../../pr
 
 备份对于避免在计算机上出现问题（无论是物理问题还是系统问题）时丢失数据至关重要。 [单击此处](../../production/using/backup.md)以了解更多信息。[此部分](../../production/using/restoration.md)中介绍了恢复过程。
 
-## Campaign Classic技术原则{#campaign-classic-technical-principles}
+## Campaign Classic技术原则 {#campaign-classic-technical-principles}
 
 技术资源可在Campaign Classic文档中找到。 我们建议您在对实例执行任何技术操作之前先熟悉这些主题。
 
