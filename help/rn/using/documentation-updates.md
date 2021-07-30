@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Adobe Campaign经典文档更新
+title: Adobe Campaign Classic 文档更新
 description: 本页列出了 Adobe Campaign Classic 文档中的所有新增功能和更新
 feature: 概述
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
-source-wordcount: '4456'
-ht-degree: 99%
+source-wordcount: '4465'
+ht-degree: 100%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 99%
 本页列出了每月所有新增功能和文档更新以及 Campaign 版本。
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
+
+## 2021 年 7 月 {#july-2021}
+
+[Campaign 21.1.3 版本](../../rn/using/latest-release.md#release-21-1-3-build-9330)已转为“一般可用性 (GA)”。
+
 
 ## 2021 年 6 月 {#june-2021}
 
@@ -408,7 +413,7 @@ Adobe Campaign 增强 MTA 文章已更新，其中包含有关在未向每封邮
 
 已添加如何在工作流中使用实例变量的示例。[阅读更多](../../workflow/using/javascript-scripts-and-templates.md)
 
-## 2019年12月 {#december-2019}
+## 2019 年 12 月 {#december-2019}
 
 “WdbcOptions_TempDbName”选项已添加到 Campaign 选项的列表。[阅读更多](../../installation/using/configuring-campaign-options.md)
 
@@ -462,7 +467,7 @@ Adobe Campaign 与 Adobe 实时客户数据平台之间的集成现在在&#x200B
 
 ## 2019 年 10 月 {#october-2019}
 
-Campaign 的错误消息列表已更新。[阅读更多](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+Campaign 的错误消息列表已更新。[阅读更多](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans)
 
 GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在内的隐私管理文档。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy.html)
 
