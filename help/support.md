@@ -4,14 +4,14 @@ title: '帮助和支持选项，用于Campaign Classic '
 description: 需要Campaign Classic支持？ 您找到了正确的地方！
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 70%
+ht-degree: 71%
 
 ---
 
-# {#help-support-options}Campaign Classic的帮助和支持选项
+# 帮助和支持选项，用于Campaign Classic {#help-support-options}
 
 需要Campaign Classic支持？ 您找到了正确的地方！
 
@@ -99,7 +99,7 @@ Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用
 >
 >所有管理员用户都可访问控制面板。[此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
 >
->请注意，您的实例必须托管在AWS上，并升级为最新的[Gold Standard](rn/using/gs-overview.md)内部版本或[最新的GA内部版本(21.1)](rn/using/latest-release.md)。 在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
+>请注意，您的实例必须托管在AWS上，并升级为最新的[Gold Standard](rn/using/gs-overview.md)内部版本或[最新的GA内部版本(21.1.3)](rn/using/latest-release.md)。 在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
 
 ### 如何访问控制面板？
 
@@ -141,7 +141,7 @@ Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用
 ### 访问 Campaign 下载中心
 
 自2020年6月起，Experience Cloud解决方案Software Distribution将取代旧版Neolane下载中心，并提供更高效的软件、包和工具查找和下载体验。 [点击此处](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)访问 Experience Cloud Software Distribution。
-在此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)中了解有关新的下载中心[的更多信息。
+在此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)中了解有关新的下载中心[的更多信息。
 
 ### 创建工单或开始聊天
 
