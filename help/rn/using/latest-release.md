@@ -6,22 +6,22 @@ feature: 概述
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: f2fae5954fbbab4b8a4f9444404316ff1576d5e4
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 99%
 
 ---
 
 # 最新版本{#latest-release}
 
-此页面列出了&#x200B;**最新 Campaign Classic 发行候选版本**&#x200B;随附的新功能、改进和修复。
+本页列出了&#x200B;**最新Campaign Classic版本**&#x200B;随附的新功能、改进和修复。
 
 >[!NOTE]
 >
->Campaign **正式发布 (GA) 内部版本**&#x200B;为：[[!DNL Gold Standard]  11 版](../../rn/using/gold-standard.md#gs-11)和 [Campaign 20.2.5 版](../../rn/using/release--20-2.md)。
+>Campaign **正式发布 (GA) 内部版本**&#x200B;为：[[!DNL Gold Standard]  11 版](../../rn/using/gold-standard.md#gs-11)和 [Campaign 21.1.3 版](../../rn/using/latest-release.md#release-21-1-3-build-9330)。
 
-## ![](assets/do-not-localize/blue_2.png) 21.1.3 版 - 内部版本 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/green_2.png) 21.1.3 版 - 内部版本 9330 {#release-21-1-3-build-9330}
 
 _2021 年 6 月 5 日_
 
