@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '1156'
 ht-degree: 41%
@@ -15,7 +15,7 @@ ht-degree: 41%
 
 # SFTP 服务器最佳实践和故障排除 {#sftp-server-usage}
 
-## SFTP服务器全局推荐{#global-recommendations}
+## SFTP服务器全局建议 {#global-recommendations}
 
 管理用于 ETL 的文件和数据时，这些文件存储在 Adobe 提供的托管 SFTP 服务器上。使用SFTP服务器时，请确保遵循以下建议。
 
@@ -31,7 +31,7 @@ ht-degree: 41%
 
 * 您尝试启动SFTP连接的公共IP必须添加到Campaign实允许列表例上的。 可以通过[允许列表Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)请求向添加IP地址。
 
-## 数据库使用最佳实践{#sftp-server-best-practices}
+## 数据库使用最佳实践 {#sftp-server-best-practices}
 
 SFTP服务器设计为临时存储空间，您可以在其上控制文件的保留和删除。
 
@@ -45,7 +45,7 @@ SFTP服务器设计为临时存储空间，您可以在其上控制文件的保�
 >
 >所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
 >
->请注意，您的实例必须升级为最新的[Gold Standard](../../rn/using/gs-overview.md)内部版本或[最新的GA内部版本(21.1)](../../rn/using/latest-release.md)。 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。
+>请注意，您的实例必须升级为最新的[Gold Standard](../../rn/using/gs-overview.md)内部版本或[最新的GA内部版本(21.1.3)](../../rn/using/latest-release.md)。 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。
 
 * 服务器大小容量因许可证而异。在任何情况下，尽量保持最小数据，并且只在需要的时间内保留数据（15 天是最长时间限制）。
 
@@ -55,7 +55,7 @@ SFTP服务器设计为临时存储空间，您可以在其上控制文件的保�
 
 * 请记住，SFTP 硬盘的管理主要由您负责。
 
-## 外部SFTP服务器使用情况{#external-SFTP-server}
+## 外部SFTP服务器使用情况 {#external-SFTP-server}
 
 如果您使用自己的SFTP服务器，请确保尽可能遵循上述建议。
 
@@ -64,7 +64,7 @@ SFTP服务器设计为临时存储空间，您可以在其上控制文件的保�
 * 如果您的SFTP服务器位于&#x200B;**Windows**&#x200B;上，请始终使用相对路径。
 * 如果您的STP服务器位于&#x200B;**Linux**&#x200B;上，请始终使用相对于主页的路径（以“~/”开头），或绝对路径（以“/”开头）。
 
-## 与Adobe托管的SFTP服务器{#sftp-server-troubleshooting}的连接问题
+## Adobe托管的SFTP服务器存在连接问题 {#sftp-server-troubleshooting}
 
 以下部分列出了在遇到Adobe托管的SFTP服务器的连接问题时，要通过[Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)检查并提供给Adobe支持团队的信息。
 
