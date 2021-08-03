@@ -6,10 +6,10 @@ feature: 概述
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f2fae5954fbbab4b8a4f9444404316ff1576d5e4
+source-git-commit: 8a14afd25b03cea38cbfc2277fc9e51cf08658db
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 99%
+source-wordcount: '1959'
+ht-degree: 98%
 
 ---
 
@@ -115,7 +115,7 @@ Campaign 现在支持以下系统：
 **已弃用的功能**
 
 * 从 Campaign 21.1 版本开始，弃用 Adobe Analytics Data Connector。如果您使用的是此连接器，则需要使用新连接器 Adobe Analytics Connector 相应地调整实施。
-有关更多信息，请参阅[有详细说明的文档](../../platform/using/adobe-analytics-connector.md)。
+有关更多信息，请参阅[有详细说明的文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/adobe-analytics-connector.html)。
 * 现已弃用对 Debian 8 的支持。
 * 随着在 20.3 版中弃用 OracleCRM，已从界面中删除相关的外部帐户。
 
