@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
+source-git-commit: 94664ec56d269afef926663c52b84ccaaab02480
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 8%
+source-wordcount: '1636'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 技术工作流或营销策划工作流等技术流程，会使用外部帐户。例如，在工作流中设置文件传输或与任何其他应用程序(Adobe Target、Experience Manager等)进行数据交换时，您需要选择外部帐户。
 
-## 创建外部帐户{#creating-an-external-account}
+## 创建外部帐户 {#creating-an-external-account}
 
 要创建新的外部帐户，请执行以下步骤。 详细设置取决于外部帐户的类型。
 
@@ -44,7 +44,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 ## 特定于促销活动的外部帐户
 
-### 退回邮件{#bounce-mails-external-account}
+### 退回邮件 {#bounce-mails-external-account}
 
 **退回邮件**&#x200B;外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 有关此外部帐户的更多信息，请参阅此[页面](../../workflow/using/inbound-emails.md)。
 
@@ -93,7 +93,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 * [Android渠道](../../delivery/using/configuring-the-mobile-application-android.md)
 
 
-### 执行实例{#execution-instance-external-account}
+### 执行实例  {#execution-instance-external-account}
 
 如果您具有划分的架构，则需要指定链接到控制实例的执行实例并连接它们。 事务型消息模板将部署到执行实例
 
@@ -168,7 +168,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
    用于连接到SFTP服务器的密码。
 
-### 外部数据库(FDA){#external-database-external-account}
+### 外部数据库（联合数据访问） {#external-database-external-account}
 
 使用&#x200B;**External database**&#x200B;键入外部帐户以连接到外部数据库。 在[此部分](../../installation/using/about-fda.md)中了解有关联合数据访问(FDA)选项的更多信息。
 
@@ -288,19 +288,17 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 有关更多信息，请参阅此](../../integrations/using/about-adobe-experience-manager.md)章节[。
 
-
-
 ## CRM连接器外部帐户
 
 ### Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
 
-**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户允许您将Microsoft Dynamics数据导入和导出到Adobe Campaign。
-
-在此[页面](../../platform/using/crm-ms-dynamics.md)中了解有关Campaign - Microsoft Dynamics CRM连接器的更多信息。
-
 >[!NOTE]
 >
 > **[!UICONTROL On-premise]** 和部 **[!UICONTROL Office 365]** 署类型现已弃用。[了解详情](../../rn/using/deprecated-features.md)。
+
+**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户允许您将Microsoft Dynamics数据导入和导出到Adobe Campaign。
+
+在此[页面](../../platform/using/crm-ms-dynamics.md)中了解有关Campaign - Microsoft Dynamics CRM连接器的更多信息。
 
 通过&#x200B;**[!UICONTROL Web API]**&#x200B;部署类型和&#x200B;**[!UICONTROL Password credentials]**&#x200B;身份验证，您需要提供以下详细信息：
 
@@ -314,13 +312,15 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
    Microsoft CRM服务器的URL。
 
+   要查找您的Microsoft CRM **[!UICONTROL Server URL]**，请访问您的Microsoft Dynamics CRM帐户，然后单击&#x200B;**Dynamics 365**&#x200B;并选择您的应用程序。 然后，您可以在浏览器的地址栏中找到&#x200B;**[!UICONTROL Server URL]**，例如`https://myserver.crm.dynamics.com/`。
+
 * **[!UICONTROL Client identifier]**
 
    可从&#x200B;**[!UICONTROL Update your code]**&#x200B;类别&#x200B;**[!UICONTROL Client ID]**&#x200B;字段的Microsoft Azure管理门户中找到的客户端ID。
 
 * **[!UICONTROL CRM version]**
 
-   **[!UICONTROL Dynamics CRM 2007]**、**[!UICONTROL Dynamics CRM 2015]**&#x200B;或&#x200B;**[!UICONTROL Dynamics CRM 2016]**&#x200B;之间的CRM版本。
+   选择&#x200B;**[!UICONTROL Dynamics CRM 365]** CRM版本。
 
 通过&#x200B;**[!UICONTROL Web API]**&#x200B;部署类型和&#x200B;**[!UICONTROL Certificate]**&#x200B;身份验证，您需要提供以下详细信息：
 
@@ -330,9 +330,13 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
    Microsoft CRM服务器的URL。
 
+   要查找您的Microsoft CRM **[!UICONTROL Server URL]**，请访问您的Microsoft Dynamics CRM帐户，然后单击&#x200B;**Dynamics 365**&#x200B;并选择您的应用程序。 然后，您可以在浏览器的地址栏中找到&#x200B;**[!UICONTROL Server URL]**，例如`https://myserver.crm.dynamics.com/`。
+
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
-   已编码为Base64的私钥
+   请注意，私钥需要编码为Base64。
+
+   要实现此目的，您可以使用Base64编码器的帮助，或使用命令行`base64 -w0 private.key`在Linux中。
 
 * **[!UICONTROL Custom Key identifier]**
 
@@ -348,7 +352,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 有关此配置的详细信息，请参阅此[页面](../../platform/using/crm-connectors.md)。
 
-### Salesforce.com CRM {#salesforce-crm-external-account}
+### Salesforce.com CRM  {#salesforce-crm-external-account}
 
 利用&#x200B;**[!UICONTROL Salesforce CRM]**&#x200B;外部帐户，可将Salesforce数据导入和导出到Adobe Campaign。
 
@@ -382,7 +386,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 ## 传输数据外部帐户
 
-### Amazon Simple Storage Service(S3){#amazon-simple-storage-service--s3--external-account}
+### Amazon Simple Storage Service(S3) {#amazon-simple-storage-service--s3--external-account}
 
 Amazon Simple Storage Service(S3)连接器可用于将数据导入或导出到Adobe Campaign。 可以在工作流活动中进行设置。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
 
@@ -414,7 +418,7 @@ Amazon Simple Storage Service(S3)连接器可用于将数据导入或导出到Ad
 
 要了解在何处查找访问密钥ID和密钥访问密钥，请参阅Amazon Web服务[文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
 
-### Azure Blob存储{#azure-blob-external-account}
+### Azure Blob存储 {#azure-blob-external-account}
 
 **Azure Blob Storage**&#x200B;外部帐户可用于使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 有关更多信息，请参阅此](../../workflow/using/file-transfer.md)章节[。
 
