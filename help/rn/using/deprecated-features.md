@@ -6,10 +6,10 @@ feature: 概述
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 4420aab0067048d1fb47b184ede579235dcd9819
+source-git-commit: 9c73d13fe3d062ce69c948dba7d57dad573f6856
 workflow-type: tm+mt
-source-wordcount: '1649'
-ht-degree: 99%
+source-wordcount: '1646'
+ht-degree: 98%
 
 ---
 
@@ -240,6 +240,6 @@ Adobe Campaign 与以下 SMS 连接器不兼容：
 
 * Soap API - 本地：2007、2015、2016
 * Soap API - 在线：2015、2016
-* Web API - Microsoft Dynamics CRM 本地版：2016 或 2016 Update 1
-* Web API - Microsoft Dynamics CRM 联机版：2016 或 2016 Update 1
+* Web API - Microsoft Dynamics CRM 2016
+* Web API - Microsoft Dynamics CRM 2016 Update 1
 * Oracle On Demand API
