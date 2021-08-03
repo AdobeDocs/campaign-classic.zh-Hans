@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 9fb5b1a256a7c77e64a449aea9a4489de1f9123a
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 1%
+source-wordcount: '1049'
+ht-degree: 3%
 
 ---
 
@@ -17,11 +17,7 @@ ht-degree: 1%
 
 在本页中，您将学习如何将Campaign Classic连接到&#x200B;**Microsoft Dynamics CRM 365**。
 
-可能的部署包括：
-
-* （推荐）。 ****&#x200B;请参阅[下面的部分](#microsoft-dynamics-implementation-step)以了解设置与Microsoft Dynamics连接的步骤。
-* **Office 365**。 请参阅[此视频](#microsoft-dynamics-office-365)以了解设置此集成的关键步骤。
-* 对于&#x200B;**内部部署**，应用Office 365关键步骤。
+可能的部署是通过&#x200B;**Web API**&#x200B;进行的（推荐）。 请参阅[下面的部分](#microsoft-dynamics-implementation-step)以了解设置与Microsoft Dynamics连接的步骤。
 
 数据同步是通过专用的工作流活动执行的。 [了解详情](../../platform/using/crm-data-sync.md)。
 
@@ -36,7 +32,7 @@ ht-degree: 1%
 1. 创建应用程序用户
 1. 对私钥进行编码
 
-[在此部分中了解更多信息](#config-crm-microsoft)
+[在本节中了解详情](#config-crm-microsoft)
 
 在Campaign Classic中：
 1. 创建新的外部帐户
@@ -44,16 +40,13 @@ ht-degree: 1%
 1. 使用配置向导映射表并同步枚举
 1. 创建同步工作流
 
-[在此部分中了解更多信息](#configure-acc-for-microsoft)
+[在本节中了解详情](#configure-acc-for-microsoft)
 
 
 >[!CAUTION]
 > 将Adobe Campaign与Microsoft Dynamics连接时，您无法：
 > * 安装插件，这些插件可能会更改CRM的行为，并导致与Adobe Campaign的兼容性问题
 > * 选择多个枚举
-
->
-
 
 
 ## 配置Microsoft Dynamics CRM {#config-crm-microsoft}
@@ -73,7 +66,7 @@ ht-degree: 1%
 
 请参阅[此页面](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory)以了解详情。
 
-### 生成Microsoft Dynamics客户端密钥{#config-client-secret-microsoft}
+### 生成Microsoft Dynamics客户端密钥 {#config-client-secret-microsoft}
 
 客户端密钥是客户端ID特有的密钥。 要获取证书密钥标识符，请执行以下步骤：
 
@@ -88,18 +81,43 @@ ht-degree: 1%
    - openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout '<'private key name'>' -out '<'public certificate name'>
    ```
 
-1. 单击&#x200B;**manifest**&#x200B;链接以获取&#x200B;**证书密钥标识符**&#x200B;和&#x200B;**密钥ID**。
+   >[!NOTE]
+   >
+   >您可以在此处`-days 365`更改较长证书有效期的代码示例中的天数。
 
-### 配置权限{#config-permissions-microsoft}
+1. 然后，您需要将其编码为base64。 要实现此目的，您可以使用Base64编码器的帮助，或使用命令行`base64 -w0 private.key`在Linux中。
 
-您需要为已创建的应用程序配置&#x200B;**所需权限**。
+1. 单击&#x200B;**Manifest**&#x200B;链接以获取&#x200B;**Certificate密钥标识符(customKeyIdentifier)**&#x200B;和&#x200B;**密钥ID(keyId)**。
+
+### 配置权限 {#config-permissions-microsoft}
+
+**步骤1**:为已创 **建** 的应用程序配置所需的权限。
 
 1. 导航至&#x200B;**Azure Active Directory >应用程序注册**，然后选择之前创建的应用程序。
 1. 单击左上角的&#x200B;**设置**。
 1. 在&#x200B;**所需权限**&#x200B;上，单击&#x200B;**添加**&#x200B;和&#x200B;**选择API > Dynamics CRM联机**。
-1. 然后，单击&#x200B;**选择**，启用&#x200B;**作为组织用户访问Dynamics 365复选框，然后单击**&#x200B;选择&#x200B;**。**
+1. 单击&#x200B;**选择**，启用&#x200B;**作为组织用户访问Dynamics 365复选框，然后单击**&#x200B;选择&#x200B;**。**
+1. 然后，在您的应用程序中，选择&#x200B;**管理**&#x200B;菜单下的&#x200B;**清单**。
 
-### 创建应用程序用户{#create-app-user-microsoft}
+1. 在&#x200B;**清单**&#x200B;编辑器中，将`allowPublicClient`属性从`null`设置为`true`，然后单击&#x200B;**保存**。
+
+**步骤2**:授予管理员同意
+
+1. 导航到&#x200B;**Azure Active Directory > Enterprise应用程序**。
+
+1. 选择要向其授予租户范围管理员同意的应用程序。
+
+1. 从左窗格菜单中，选择&#x200B;**Security**&#x200B;下的&#x200B;**权限**。
+
+1. 单击&#x200B;**授予管理员同意**。
+
+有关此内容的更多信息，请参阅[Azure文档](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal)。
+
+### 创建应用程序用户 {#create-app-user-microsoft}
+
+>[!NOTE]
+>
+> 此步骤在进行&#x200B;**[!UICONTROL Password credentials]**&#x200B;身份验证时是可选的。
 
 应用程序用户是上述注册的应用程序将使用的用户。 使用上述注册的应用程序对Microsoft Dynamics所做的任何更改都将通过此用户完成。
 
@@ -129,27 +147,27 @@ ht-degree: 1%
 1. 为[您之前创建的应用程序](#get-client-id-microsoft)分配&#x200B;**应用程序ID**。
 1. 单击&#x200B;**管理角色** ，然后为用户选择&#x200B;**系统管理员**&#x200B;角色。
 
-## 配置 Campaign{#configure-acc-for-microsoft}
+## 配置 Campaign {#configure-acc-for-microsoft}
 
-要连接Microsoft Dynamics 365和Campaign，您需要在Campaign中创建并配置专用外部帐户。
+>[!NOTE]
+>
+> 在Microsoft](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/dn281891(v=crm.8)?redirectedfrom=MSDN#microsoft-dynamics-crm-2011-endpoint)中停用[RDS后，内部部署和Office 365类型的CRM部署将不再与Campaign兼容。 Adobe Campaign现在仅支持对CRM版本&#x200B;**Dynamic CRM 365**&#x200B;进行Web API部署。 [了解详情](../../rn/using/deprecated-features.md#crm-connectors)。
+
+要连接Microsoft Dynamics 365和Campaign，您需要在Campaign中创建并配置专用的&#x200B;**[!UICONTROL External Account]**。
 
 1. 导航到&#x200B;**[!UICONTROL Administration > Platform > External accounts]**。
 
-1. 创建新的外部帐户，选择类型&#x200B;**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;和&#x200B;**[!UICONTROL Enable]**&#x200B;选项。
+1. 选择&#x200B;**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户。 勾选 **[!UICONTROL Enabled]** 选项。
 
-1. 选择&#x200B;**[!UICONTROL Web API]**&#x200B;部署类型：
-
-   Adobe Campaign Classic支持使用OAuth协议的Dynamics 365 REST接口，以通过&#x200B;**[!UICONTROL Certificate]**&#x200B;或&#x200B;**[!UICONTROL Password Credentials]**&#x200B;进行身份验证。
-
-   使用Azure Directory中先前定义的[设置](#get-client-id-microsoft)配置外部帐户。
-
-   ![](assets/crm-ms-dynamics-ext-account.png)
+1. 填写连接Microsoft Dynamics 365和Campaign所需的信息。
 
    >[!NOTE]
    >
-   >此部分](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)中详细介绍了Microsoft Dynamics CRM外部帐户配置。[
+   >此部分](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)中详细描述了每个&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;的Microsoft Dynamics CRM外部帐户配置。[
 
-1. 单击&#x200B;**[!UICONTROL Microsoft CRM configuration wizard...]**&#x200B;链接：Adobe Campaign会自动检测Microsoft Dynamics数据模板中的表。
+   ![](assets/crm-ms-dynamics-ext-account.png)
+
+1. 单击 **[!UICONTROL Microsoft CRM configuration wizard...]** 链接。Adobe Campaign会自动检测Microsoft Dynamics数据模板中的表。
 
    ![](assets/crm_connectors_msdynamics_02.png)
 
@@ -175,14 +193,7 @@ ht-degree: 1%
 
 Campaign和Microsoft Dynamics现已连接。 您可以在两个系统之间设置数据同步。 在[数据同步](../../platform/using/crm-data-sync.md)部分了解详情。
 
-## 配置Microsoft Dynamics CRM Office 365集成{#microsoft-dynamics-office-365}
-
-观看此视频，了解如何在Office 365部署的上下文中将Dynamics 365与Adobe Campaign Classic集成。
-
->[!VIDEO](https://video.tv.adobe.com/v/23837?quality=12)
-
-
-## 支持的字段数据类型{#ms-dyn-supported-types}
+## 支持的字段数据类型 {#ms-dyn-supported-types}
 
 对于Microsoft Dynamics 365，下面列出了支持/不支持的属性类型：
 
