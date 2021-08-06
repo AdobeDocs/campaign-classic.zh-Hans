@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: ht
-source-wordcount: '2518'
-ht-degree: 100%
+source-git-commit: a54a6f9b8afedf8a200b80b027f908163faebeaa
+workflow-type: tm+mt
+source-wordcount: '2525'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,6 @@ ht-degree: 100%
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
    + [技术说明](technotes/technote.md)
-   + [Adobe Analytics Connector 常见问题解答](technotes/aa-connector-migration.md)
    + [iOS 证书更新](technotes/ios-certificate-update.md)
    + [Campaign 配置更新](technotes/acc-config-updates.md)
    + [跟踪的 URL 更新](technotes/tracked-urls.md)
@@ -117,8 +116,10 @@ ht-degree: 100%
          + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
          + [与 Salesforce.com 连接](platform/using/crm-sfdc.md)
          + [与 CRM 同步数据](platform/using/crm-data-sync.md)
-      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
-      + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector-legacy.md)
+      + Adobe Analytics Connector{#analytics-connector}
+         + [Adobe Analytics Connector集成](platform/using/adobe-analytics-connector.md)
+         + [如何迁移到Adobe Analytics Connector](technotes/aa-connector-migration.md)
+         + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector-legacy.md)
    + [帮助和支持选项](support.md)
 + 创建和发送消息{#sending-messages}
    + [消息入门](delivery/using/communication-channels.md)
