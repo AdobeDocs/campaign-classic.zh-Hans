@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 9fb5b1a256a7c77e64a449aea9a4489de1f9123a
+source-git-commit: 7adde72f615e7c697fa2284235e180c29bc6d470
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1097'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 在Microsoft Dynamics CRM中：
 1. 获取Microsoft Dynamics客户端ID
-1. 生成Microsoft Dynamics客户端密钥
+1. 生成Microsoft Dynamics证书密钥标识符和密钥ID
 1. 配置权限
 1. 创建应用程序用户
 1. 对私钥进行编码
@@ -66,9 +66,9 @@ ht-degree: 3%
 
 请参阅[此页面](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory)以了解详情。
 
-### 生成Microsoft Dynamics客户端密钥 {#config-client-secret-microsoft}
+### 生成Microsoft Dynamics证书密钥标识符和密钥ID {#config-certificate-key-id}
 
-客户端密钥是客户端ID特有的密钥。 要获取证书密钥标识符，请执行以下步骤：
+要获取&#x200B;**证书密钥标识符(customKeyIdentifier)**&#x200B;和&#x200B;**密钥ID(keyId)**，请执行以下步骤：
 
 1. 导航至&#x200B;**Azure Active Directory >应用程序注册**，然后选择之前创建的应用程序。
 1. 单击&#x200B;**证书和密钥**。
@@ -88,6 +88,8 @@ ht-degree: 3%
 1. 然后，您需要将其编码为base64。 要实现此目的，您可以使用Base64编码器的帮助，或使用命令行`base64 -w0 private.key`在Linux中。
 
 1. 单击&#x200B;**Manifest**&#x200B;链接以获取&#x200B;**Certificate密钥标识符(customKeyIdentifier)**&#x200B;和&#x200B;**密钥ID(keyId)**。
+
+稍后将需要&#x200B;**证书密钥标识符(customKeyIdentifier)**&#x200B;和&#x200B;**密钥ID(keyId)**，才能使用证书&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;配置Microsoft Dynamics CRM外部帐户。
 
 ### 配置权限 {#config-permissions-microsoft}
 
@@ -192,6 +194,10 @@ ht-degree: 3%
    ![](assets/crm_connectors_msdynamics_06.png)
 
 Campaign和Microsoft Dynamics现已连接。 您可以在两个系统之间设置数据同步。 在[数据同步](../../platform/using/crm-data-sync.md)部分了解详情。
+
+>[!NOTE]
+>
+> 您需要确保向允许列表添加两个URL:服务器配置中的服务器URL和`login.microsoftonline.com`。
 
 ## 支持的字段数据类型 {#ms-dyn-supported-types}
 
