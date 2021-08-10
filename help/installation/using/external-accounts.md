@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 94664ec56d269afef926663c52b84ccaaab02480
+source-git-commit: 7adde72f615e7c697fa2284235e180c29bc6d470
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 7%
@@ -92,7 +92,6 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 * [iOS渠道](../../delivery/using/configuring-the-mobile-application.md)
 * [Android渠道](../../delivery/using/configuring-the-mobile-application-android.md)
 
-
 ### 执行实例  {#execution-instance-external-account}
 
 如果您具有划分的架构，则需要指定链接到控制实例的执行实例并连接它们。 事务型消息模板将部署到执行实例
@@ -112,7 +111,6 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
    在操作员文件夹中定义的帐户密码。
 
 有关此配置的详细信息，请参阅此[页面](../../message-center/using/configuring-instances.md#control-instance)。
-
 
 ## 访问外部系统外部帐户
 
