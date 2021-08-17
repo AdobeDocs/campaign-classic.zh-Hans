@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 934964b31c4f8f869253759eaf49961fa5589bff
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 4%
@@ -23,9 +23,9 @@ ht-degree: 4%
 >
 >请注意，在迁移到[!DNL Adobe I/O]期间，某些传入触发器可能会丢失。
 
-## 先决条件{#adobe-io-prerequisites}
+## 先决条件 {#adobe-io-prerequisites}
 
-此集成仅适用于从&#x200B;**Campaign Classic20.3、20.2.4、19.1.8和[!DNL Gold Standard] 11版本**&#x200B;开始的版本。
+此集成仅适用于从&#x200B;**Campaign Classic20.3、19.1.8和[!DNL Gold Standard] 11版本**&#x200B;开始的版本。
 
 在启动此实施之前，请检查您具有：
 
@@ -33,7 +33,7 @@ ht-degree: 4%
 * a **开发人员对贵组织的访问**。 IMS组织的系统管理员需要遵循&#x200B;**将开发人员添加到单个产品配置文件**
 本页](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中详细的[过程，以提供与触发器关联的Adobe Analytics产品`Analytics - {tenantID}`产品配置文件的开发人员访问权限。
 
-## 步骤1:创建/更新Adobe I/O项目{#creating-adobe-io-project}
+## 步骤1:创建/更新Adobe I/O项目 {#creating-adobe-io-project}
 
 1. 访问[!DNL Adobe I/O] ，然后使用IMS组织的开发人员访问权限登录。
 
@@ -96,7 +96,7 @@ ht-degree: 4%
 >
 >Adobe I/O证书将在12个月后过期。 您每年需要生成一个新的密钥对。
 
-## 步骤2:在Adobe Campaign中添加项目凭据{#add-credentials-campaign}
+## 步骤2:在Adobe Campaign中添加项目凭据 {#add-credentials-campaign}
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ ht-degree: 4%
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
-## 步骤3:更新管道标记{#update-pipelined-tag}
+## 步骤3:更新流水线标记 {#update-pipelined-tag}
 
 >[!NOTE]
 >
