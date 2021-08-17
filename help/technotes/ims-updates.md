@@ -4,7 +4,7 @@ title: 更新您的环境以使用IMS连接到Adobe Campaign。
 description: 营销活动 — IMS更新
 hide: true
 hidefromtoc: true
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 9%
@@ -39,7 +39,7 @@ Adobe希望在2021年6月30日之前为所有客户保留IMS功能。 IMS是安�
 
    * Gold Standard 11。 [了解详情](../rn/using/gold-standard.md)
    * Campaign 21.1.3版本。 [了解详情](../rn/using/latest-release.md)
-   * Campaign 20.2.4版本。 [了解详情](../rn/using/release--20-2.md)
+   * Campaign 20.2.5版本。 [了解详情](../rn/using/release--20-2.md)
    * Campaign 20.1.4版本。 [了解详情](../rn/using/release--20-1.md)
    * Campaign 19.2.4版本。 [了解详情](../rn/using/release--19-2.md)
    * Campaign 19.1.8版本。 [了解详情](../rn/using/release--19-1.md)
@@ -93,4 +93,4 @@ Adobe希望在2021年6月30日之前为所有客户保留IMS功能。 IMS是安�
 * [使新客户端控制台可供用户使用](../installation/using/client-console-availability-for-windows.md)
 * [安装 Campaign Client Console](../installation/using/installing-the-client-console.md)
 * [访问AdobeSoftware Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)
-* [下载Campaign Classic内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [下载Campaign Classic内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)
