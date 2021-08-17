@@ -5,10 +5,10 @@ description: 了解如何配置管道
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: cf102a5e669ffe136e6ec2429343725ec6c3722e
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 0%
+source-wordcount: '915'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 * 至少，以下Adobe Campaign内部版本之一：
    * 19.1.8.9039
-   * 19.1.4.9032.GS.11
+   * 19.1.4.9032 - Gold Standard 11
    * 20.2.4.9187
    * 20.3.1
 * Adobe Analytics Standard版本
@@ -40,19 +40,19 @@ ht-degree: 0%
 * 开发人员访问IMS组织
 * 触发器配置在Adobe Analytics中完成
 
-## 身份验证和配置文件{#authentication-configuration}
+## 身份验证和配置文件 {#authentication-configuration}
 
 由于管道托管在Adobe Experience Cloud中，因此需要进行身份验证。
 它使用一对公钥和私钥。 此过程与用户/密码具有相同的功能，但更加安全。
 Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 
-## 步骤1:创建/更新Adobe I/O项目{#creating-adobe-io-project}
+## 步骤1:创建/更新Adobe I/O项目 {#creating-adobe-io-project}
 
 对于托管客户，您可以创建客户关怀票证，以便为您的组织启用Adobe I/O技术帐户令牌以用于触发器集成。
 
 对于On Premise客户，请参阅[为Adobe Experience Cloud Triggers配置Adobe I/O](../../integrations/using/configuring-adobe-io.md)页面。 请注意，在将API添加到Adobe I/O凭据时，您需要选择&#x200B;**[!UICONTROL Adobe Analytics]**。
 
-## 步骤2:配置NmsPipeline_Config管线选项{#configuring-nmspipeline}
+## 步骤2:配置NmsPipeline_Config管道选项 {#configuring-nmspipeline}
 
 设置身份验证后，管道将检索事件。 它将仅处理在Adobe Campaign中配置的触发器。 触发器必须是从Adobe Analytics生成，并推送到管道，该管道将仅处理在Adobe Campaign中配置的触发器。
 也可以使用通配符配置选项，以便无论名称如何都捕获所有触发器。
@@ -102,7 +102,7 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
    }
    ```
 
-### Consumer参数{#consumer-parameter}
+### Consumer参数 {#consumer-parameter}
 
 管道的工作方式类似于供应商和消费者模型。 消息仅供个人消费者使用：每个消费者都有自己的报文副本。
 
@@ -110,7 +110,7 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 
 管道服务会跟踪每个消费者检索到的消息。 通过对不同实例使用不同的使用者，您可以确保将每条消息发送到每个实例。
 
-### 管道选项建议{#pipeline-option-recommendation}
+### 管道选项建议 {#pipeline-option-recommendation}
 
 要配置管道选项，您应遵循以下建议：
 
@@ -121,7 +121,7 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 * 管道化还支持“别名”主题。
 * 进行更改后，应始终重新启动管道。
 
-## 步骤3:可选配置{#step-optional}
+## 步骤3:可选配置 {#step-optional}
 
 您可以根据负载要求更改一些内部参数，但请确保在将其投入生产之前对其进行测试。
 
@@ -144,7 +144,7 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 | retryPeriodSec | 在发生处理错误时，重试之间会延迟。 <br>默认值为30（秒） |
 | retryValiditySec | 如果在此时间段后未成功处理消息（重试过多），请放弃该消息。 <br>默认值为300（秒） |
 
-### 流水线处理自动启动{#pipelined-process-autostart}
+### 流水线处理自动启动 {#pipelined-process-autostart}
 
 需要自动启动流水线处理。
 
@@ -154,7 +154,7 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
  <pipelined autoStart="true" ... "/>
 ```
 
-### 流水线进程重新启动{#pipelined-process-restart}
+### 流水线流程重启 {#pipelined-process-restart}
 
 更改需要重新启动才能生效：
 
@@ -162,7 +162,7 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 nlserver restart pipelined@instance
 ```
 
-## 步骤4:验证{#step-validation}
+## 步骤4:验证 {#step-validation}
 
 要验证管道设置以进行预配，请执行以下步骤：
 
