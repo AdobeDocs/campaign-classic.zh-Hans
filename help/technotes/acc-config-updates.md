@@ -5,7 +5,7 @@ description: 技术说明
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 11%
@@ -29,7 +29,7 @@ ht-degree: 11%
 
 ## 安全更新 {#acc-security-updates}
 
-最新的Campaign版本随附了安全修复，该修复增强了针对服务器端请求伪造(SSRF)问题的保护。 在本页](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)中了解更多[信息。
+最新的Campaign版本随附了安全修复，该修复增强了针对服务器端请求伪造(SSRF)问题的保护。 请参阅[此页面](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)以了解详情。
 
 **您是否受影响？**
 
@@ -80,7 +80,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧的In
 
 * Gold Standard 11。 [了解详情](../rn/using/gold-standard.md)
 * Campaign 21.1.1版本。 [了解详情](../rn/using/latest-release.md)
-* Campaign 20.2.4版本。 [了解详情](../rn/using/release--20-2.md)
+* Campaign 20.2.5版本。 [了解详情](../rn/using/release--20-2.md)
 * Campaign 20.1.4版本。 [了解详情](../rn/using/release--20-1.md)
 * Campaign 19.2.4版本。 [了解详情](../rn/using/release--19-2.md)
 * Campaign 19.1.8版本。 [了解详情](../rn/using/release--19-1.md)
@@ -166,5 +166,5 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧的In
 
 * [升级环境](../production/using/build-upgrade.md)
 * [内部版本升级常见问题解答](../platform/using/faq-build-upgrade.md)
-* [下载Campaign Classic内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [下载Campaign Classic内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)
 * [使新客户端控制台可供用户使用](../installation/using/client-console-availability-for-windows.md)
