@@ -8,10 +8,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 24030d15ec57fd10fa5c2606e6f8544a8c15f179
+source-git-commit: f4c6e416353d6b921cefced830b3380996f10751
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 4%
+source-wordcount: '682'
+ht-degree: 3%
 
 ---
 
@@ -19,9 +19,11 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->如果您通过oAuth身份验证使用旧版Triggers集成，则&#x200B;**您需要按照以下**&#x200B;所述移至Adobe I/O。 包含Campaign的旧版oAuth身份验证模式将于2021年11月30日停用。 [了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
->
+>如果您通过oAuth身份验证使用旧版Triggers集成，则&#x200B;**您需要按照以下**所述移至Adobe I/O。
 >请注意，在迁移到[!DNL Adobe I/O]期间，某些传入触发器可能会丢失。
+>
+>对于混合和内部部署环境，Campaign的旧版oAuth身份验证模式将于2021年8月18日&#x200B;**停用，对于托管环境，则将于2021年11月30日**&#x200B;停用。 ****[了解详情](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+
 
 ## 先决条件 {#adobe-io-prerequisites}
 
