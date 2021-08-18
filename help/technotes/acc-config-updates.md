@@ -5,9 +5,9 @@ description: 技术说明
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
+source-git-commit: f4c6e416353d6b921cefced830b3380996f10751
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1110'
 ht-degree: 11%
 
 ---
@@ -103,7 +103,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧的In
 
 ## 与Experience Cloud触发器集成 {#acc-triggers-updates}
 
-旧版oAuth身份验证服务已终止。 Triggers集成身份验证（最初基于用于访问管道的oAUTH身份验证设置）已移至Adobe I/O。它将于2021年11月30日&#x200B;****&#x200B;停用。 [了解详情](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email)。
+旧版oAuth身份验证服务已终止。 Triggers集成身份验证（最初基于用于访问管道的oAUTH身份验证设置）已移至Adobe I/O。它将在2021年8月18日&#x200B;**为混合和内部部署环境停用，在2021年11月30日**&#x200B;为托管环境停用。 ****[了解详情](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email)。
 
 **您是否受影响？**
 
