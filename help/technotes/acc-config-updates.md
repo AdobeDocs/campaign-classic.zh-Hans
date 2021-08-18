@@ -5,9 +5,9 @@ description: 技术说明
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 601cc3883d7fa8abaa86161365c4230cbe30765c
+source-git-commit: 550c4afc5cc77867b56d17565bef3f18b1df12a2
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1131'
 ht-degree: 11%
 
 ---
@@ -103,7 +103,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧的In
 
 ## 与Experience Cloud触发器集成 {#acc-triggers-updates}
 
-旧版oAuth身份验证服务已终止。 Triggers集成身份验证（最初基于用于访问管道的oAUTH身份验证设置）已移至Adobe I/O。它将在2021年8月18日&#x200B;**为混合和内部部署环境停用，在2021年11月30日**&#x200B;为托管环境停用。 ****[了解详情](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email)。
+旧版oAuth身份验证服务已终止。 Triggers集成身份验证（最初基于用于访问管道的oAUTH身份验证设置）已移至Adobe I/O。Campaign [的旧版oAuth身份验证模式已在&#x200B;**2021年8月18日**&#x200B;停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管环境将从扩展中受益，直到2021年11月30日&#x200B;**。**&#x200B;作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2021年11月30日。 您必须提供[OAuth应用程序](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID才能Adobe。
 
 **您是否受影响？**
 
