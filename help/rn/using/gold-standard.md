@@ -6,10 +6,10 @@ feature: 概述
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: c5e1b10b82c8ea1cf8bcb617ee48fe13e16fbfd9
+source-git-commit: f4c6e416353d6b921cefced830b3380996f10751
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 95%
+source-wordcount: '1077'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ _2021 年 4 月 14 日_
 >
 > * 如果您要通过Adobe ID连接到Campaign，则通过AdobeIdentity Management服务(IMS)，必须升级Campaign服务器和客户端控制台才能在2021年6月30日&#x200B;**后连接到Campaign。** [了解详情](../../technotes/ims-updates.md)
 > * 此版本附带[安全修复](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign 的旧式 oAuth 身份验证模式将于 **2021 年 11 月 30 日**&#x200B;停用。
+> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。对于混合和内部部署环境，Campaign的旧版oAuth身份验证模式将于2021年8月18日&#x200B;**停用，对于托管环境，则将于2021年11月30日**&#x200B;停用。****
 
 >
 >
@@ -48,7 +48,7 @@ _2021 年 3 月 2 日_
 
 >[!NOTE]
 >
-> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
+> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
 
 _2020 年 12 月 22 日_
 
