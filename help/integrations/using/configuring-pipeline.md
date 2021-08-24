@@ -5,9 +5,9 @@ description: 了解如何配置管道
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
+source-git-commit: b6aa797133e6f916bf085794aeb99d61a8f7bc40
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '902'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,6 @@ ht-degree: 1%
 在实例配置文件中配置了身份验证参数，如客户ID、私钥和身份验证端点。
 要处理的触发器列表是以JSON格式的选项配置的。
 触发器用于通过发送电子邮件的营销活动工作流进行定位。 营销活动已设置，以便同时具有触发器事件的客户会收到电子邮件。
-
->[!CAUTION]
->
->对于混合部署，请确保在中间实例上配置了管道。
 
 ## 先决条件 {#prerequisites}
 
