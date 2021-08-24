@@ -2,11 +2,8 @@
 product: campaign
 title: 19.2 版
 description: Campaign 19.2发行说明
-feature: null
-role: null
-level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 21%
@@ -25,7 +22,7 @@ _2021 年 4 月 15 日_
 
 >[!NOTE]
 >
-> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
+> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
 
 _2021 年 3 月 22 日_
 
@@ -44,7 +41,7 @@ _2020 年 12 月 23 日_
 > * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。[了解详情](../../technotes/ims-updates.md)
    >
    > 
-* 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
+* 此版本附带[安全修复](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
 
 
 
@@ -92,7 +89,7 @@ _2019 年 12 月 2 日_
  <tbody> 
   <tr> 
    <td> <p>您现在可以使用预定义视图监控实例上所有工作流的执行状态。</p>
-   <p>有关详细信息，请参阅<a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">详细文档</a>。</p></td> 
+   <p>有关详细信息，请参阅<a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">有详细说明的文档</a>。</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -122,7 +119,7 @@ _2019 年 12 月 2 日_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>现在，通过扩展通用SMPP连接器支持安全短信。 这允许与提供商的加密连接。</p> <p><strong></strong> 警告此功能要求在所有服务器上安装最新的证书。无效、已吊销或过期的证书将生成影响整体短信发送功能的错误。</p><p>有关详细信息，请参阅<a href="https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html">详细文档</a>。 </p> </td> 
+<td> <p>现在，通过扩展通用SMPP连接器支持安全短信。 这允许与提供商的加密连接。</p> <p><strong></strong> 警告此功能要求在所有服务器上安装最新的证书。无效、已吊销或过期的证书将生成影响整体短信发送功能的错误。</p><p>有关详细信息，请参阅<a href="https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html">有详细说明的文档</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
