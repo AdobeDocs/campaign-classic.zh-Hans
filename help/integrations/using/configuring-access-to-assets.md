@@ -6,29 +6,29 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: eb630b29dba8cc34046e2f14e9ed6ba8c017ea5d
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '524'
 ht-degree: 1%
 
 ---
 
-# 配置对Assets的访问{#configuring-access-to-assets}
+# 配置对资产的访问权限{#configuring-access-to-assets}
 
-本节详细介绍Adobe Campaign中使用Assets核心服务或Adobe Experience Manager Assets库集成功能所需的配置步骤。
+本节详细介绍Adobe Campaign中使用Assets核心服务或Adobe Experience Manager Assets(AEM Assets)库的集成功能所需的配置步骤。
 
 >[!CAUTION]
 >
 >这些集成是并发的。 在进行任何配置之前，请仔细阅读以下信息。
 
-* 与&#x200B;**Experience Cloud资产**&#x200B;集成：此集成允许您从Adobe Experience Cloud库插入图像。 根据您的配置和许可模式，此库可以是Assets核心服务或Assets on Demand。 必须通过在Adobe Campaign中安装&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;内置包来设置此集成。
-* 与&#x200B;**AEM Assets**&#x200B;集成：此集成允许您从Adobe Experience Manager资产库插入图像。 必须通过在Adobe Campaign中安装&#x200B;**[!UICONTROL AEM Integration]**&#x200B;内置包来设置此集成。
+* 与&#x200B;**Experience Cloud资产**&#x200B;集成：此集成允许您从Adobe Experience Cloud库插入图像。 必须通过在Adobe Campaign中安装&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;内置包来设置此集成。
+* 与&#x200B;**AEM Assets**&#x200B;集成：此集成允许您从Adobe Experience Manager Assets库插入图像。 必须通过在Adobe Campaign中安装&#x200B;**[!UICONTROL AEM Integration]**&#x200B;内置包来设置此集成。 请注意，此集成在Adobe Experience Manager 6.5中不再可用。
 
 >[!NOTE]
 >
 >如果安装了两个包（**[!UICONTROL AEM Integration]**&#x200B;和&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**），则只能使用Adobe Experience Cloud库中的可用资产。
 
-## 与Experience Cloud资产集成{#integrating-with-experience-cloud-assets}
+## 与Experience Cloud资产集成 {#integrating-with-experience-cloud-assets}
 
 要使用Adobe Campaign与Experience Cloud资产之间的集成，您必须：
 
@@ -44,7 +44,12 @@ ht-degree: 1%
 >
 >与此集成关联的功能仅适用于通过IMS与其Adobe ID关联的用户。
 
-## 与AEM Assets集成{#integrating-with-aem-assets}
+## 与AEM Assets集成 {#integrating-with-aem-assets}
+
+
+>[!CAUTION]
+>
+>从Adobe Experience Manager 6.5开始，已对此功能进行解压缩。 [了解详情](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html?lang=en#removed-features)
 
 要将AEM Assets与Adobe Campaign集成，您必须先配置Adobe Experience Manager与Adobe Campaign之间的集成。 此配置主要要求：
 
