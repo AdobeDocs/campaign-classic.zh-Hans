@@ -2,18 +2,20 @@
 product: campaign
 title: Campaign 20.3发行说明
 description: Campaign 20.3发行说明
-feature: 概述
+feature: Overview
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: 550c4afc5cc77867b56d17565bef3f18b1df12a2
+source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 96%
+source-wordcount: '2006'
+ht-degree: 95%
 
 ---
 
 # 20.3 版{#release-20-3}
+
+![](../../assets/v7-only.svg)
 
 ## ![](assets/do-not-localize/red_2.png) 20.3.3 版 - 内部版本 9234 {#release-20-3-3-build-9234}
 
@@ -28,7 +30,7 @@ _2020 年 10 月 27 日_
 
 >[!CAUTION]
 >
-> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。[了解详情](../../technotes/ims-updates.md)
+> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。[了解详情](../../technotes/using/ims-updates.md)
 > * 此版本附带[安全修复](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
 > * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign [的旧版oAuth身份验证模式已在&#x200B;**2021年8月18日**&#x200B;停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管环境将从扩展中受益，直到2021年11月30日&#x200B;**。**&#x200B;作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2021年11月30日。 您必须提供[OAuth应用程序](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID才能Adobe。
 
@@ -167,3 +169,4 @@ Tomcat 已从版本 7 (7.0.103) 更新到版本 8 (8.5.57)。
 * 修复了在显示工作流中&#x200B;**拆分**&#x200B;活动的其余目标数据时导致服务器 崩溃的问题。
 * 通过防止在清除表达式分析器时内存损坏，修复了服务器崩溃问题。(NEO-26856)
 * 修复了非管理员用户定义实例变量的扩充活动中的问题。(NEO-25653)
+* 修复了可能阻止将工作流数据导出到FDA数据库的回归(Teradate、Snowflake)。
