@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: eb630b29dba8cc34046e2f14e9ed6ba8c017ea5d
+source-git-commit: 7bcd80a9b89982542ae6944ae0c96c02d83cd198
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 >这些集成是并发的。 在进行任何配置之前，请仔细阅读以下信息。
 
 * 与&#x200B;**Experience Cloud资产**&#x200B;集成：此集成允许您从Adobe Experience Cloud库插入图像。 必须通过在Adobe Campaign中安装&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;内置包来设置此集成。
-* 与&#x200B;**AEM Assets**&#x200B;集成：此集成允许您从Adobe Experience Manager Assets库插入图像。 必须通过在Adobe Campaign中安装&#x200B;**[!UICONTROL AEM Integration]**&#x200B;内置包来设置此集成。 请注意，此集成在Adobe Experience Manager 6.5中不再可用。
+* 与&#x200B;**AEM Assets**&#x200B;集成：此集成允许您从Adobe Experience Manager Assets库插入图像。 必须通过在Adobe Campaign中安装&#x200B;**[!UICONTROL AEM Integration]**&#x200B;内置包来设置此集成。 请注意，从Adobe Experience Manager 6.4开始，此集成不再可用。
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->从Adobe Experience Manager 6.5开始，已对此功能进行解压缩。 [了解详情](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html?lang=en#removed-features)
+>从Adobe Experience Manager 6.4开始，已对此功能进行解压缩。 [了解详情](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=en#removed-features)
 
 要将AEM Assets与Adobe Campaign集成，您必须先配置Adobe Experience Manager与Adobe Campaign之间的集成。 此配置主要要求：
 
@@ -71,4 +71,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果您的Adobe Campaign实例上也安装了&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;包，则您将只能使用Adobe Experience Cloud库中可用的资产。 要同时访问AEM Assets库中的资产，您必须同步AEM Assets和Adobe Experience Cloud。 随后，AEM Assets中的资产也将在Adobe Experience Cloud库中提供。 在这种情况下，您无需创建特定的投放模板。 有关在AEM Assets和Adobe Experience Cloud之间同步的更多信息，请参阅[详细文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/configure-assets-cc-integration.html#integration)。
+>如果您的Adobe Campaign实例上也安装了&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;包，则您将只能使用Adobe Experience Cloud库中可用的资产。 要同时访问AEM Assets库中的资产，您必须同步AEM Assets和Adobe Experience Cloud。 随后，AEM Assets中的资产也将在Adobe Experience Cloud库中提供。 在这种情况下，您无需创建特定的投放模板。
