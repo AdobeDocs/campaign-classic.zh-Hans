@@ -3,7 +3,7 @@ product: campaign
 title: Campaign 19.1发行说明
 description: Campaign 19.1发行说明
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
+source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
 workflow-type: tm+mt
 source-wordcount: '3308'
 ht-degree: 25%
@@ -19,7 +19,7 @@ ht-degree: 25%
 _2021 年 4 月 15 日_
 
 * 修复了导致 IMS 连接屏幕上出现持续错误消息的客户端控制台回退问题。 (NEO-34821)
-* 修复了可能阻止将工作流数据导出到FDA数据库的回归(Teradate、Snowflake)。
+* 修复了可能阻止将工作流数据导出到FDA数据库的回归(Teradata、Snowflake)。
 
 **必须执行仅控制台升级。无需升级服务器。**
 

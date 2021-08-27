@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
+source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 95%
@@ -169,4 +169,4 @@ Tomcat 已从版本 7 (7.0.103) 更新到版本 8 (8.5.57)。
 * 修复了在显示工作流中&#x200B;**拆分**&#x200B;活动的其余目标数据时导致服务器 崩溃的问题。
 * 通过防止在清除表达式分析器时内存损坏，修复了服务器崩溃问题。(NEO-26856)
 * 修复了非管理员用户定义实例变量的扩充活动中的问题。(NEO-25653)
-* 修复了可能阻止将工作流数据导出到FDA数据库的回归(Teradate、Snowflake)。
+* 修复了可能阻止将工作流数据导出到FDA数据库的回归(Teradata、Snowflake)。
