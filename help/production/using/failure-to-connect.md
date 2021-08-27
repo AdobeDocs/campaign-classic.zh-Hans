@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '376'
 ht-degree: 4%
 
 ---
 
 # 连接失败{#failure-to-connect}
+
+![](../../assets/v7-only.svg)
 
 出现连接问题的原因可能有多种，具体取决于不同的上下文。
 
@@ -25,7 +27,7 @@ ht-degree: 4%
 <thead> 
 <tr> 
 <th>检查<br /> </th> 
-<th>解决方案<br /> </th> 
+<th>解决方法<br /> </th> 
 </tr> 
 </thead> 
 <tbody> 

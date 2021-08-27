@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '905'
 ht-degree: 8%
 
 ---
 
 # 电子邮件参数 {#email-parameters}
+
+![](../../assets/common.svg)
 
 本节介绍特定于电子邮件投放的选项和参数。
 
@@ -30,6 +32,10 @@ Adobe Campaign允许您通过密件抄送方式在外部系统上存储电子邮
 >电子邮件密件抄送是一项可选功能。 请核实您的许可协议并联系您的帐户管理员以将其激活。
 
 创建新投放或投放模板时，默认情况下不启用电子邮件密送。 您需要在电子邮件投放或投放模板级别手动启用它。
+
+>[!NOTE]
+>
+>如果您使用包含增强型MTA的电子邮件密送，则会为所有投放自动启用此选项。
 
 要为电子邮件投放模板启用电子邮件密送，请执行以下步骤：
 
@@ -91,7 +97,7 @@ Adobe Campaign允许您通过密件抄送方式在外部系统上存储电子邮
 
 * **[!UICONTROL Force the generation of the mirror page]**:即使投放中未插入指向镜像页面的链接，也会创建镜像页面。
 * **[!UICONTROL Do not generate the mirror page]**:即使投放中存在链接，也不会生成镜像页面。
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**:此选项允许您在投放日志窗口中访问包含个性化信息的镜像页面的内容。为此，在投放结束后，单击&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡，并选择要查看其镜像页面的收件人行。 单击&#x200B;**[!UICONTROL Display the mirror page for this message...]**&#x200B;链接。
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**:此选项允许您在投放日志窗口中访问包含个性化信息的镜像页面的内容。为此，在投放结束后，单击&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡，并选择要查看其镜像页面的收件人行。 单击 **[!UICONTROL Display the mirror page for this message...]** 链接。
 
    ![](assets/s_ncs_user_wizard_miror_page_link.png)
 

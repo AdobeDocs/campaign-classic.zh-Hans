@@ -6,21 +6,23 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
 
 ---
 
-# 配置对Sybase IQ{#configure-access-to-sybase-iq}的访问
+# 配置对Sybase IQ的访问 {#configure-access-to-sybase-iq}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign **联合数据访问**(FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对Sybase IQ的访问。
 
 1. 配置[Sybase IQ数据库](#configuring-sybase)
 1. 在Campaign中配置Sybase IQ[外部帐户](#sybase-external)
 
-## sybase IQ配置{#configuring-sybase}
+## sybase IQ配置 {#configuring-sybase}
 
 在FDA中连接到Sybase IQ外部数据库需要在Adobe Campaign服务器上的下面进行其他配置。
 
@@ -64,7 +66,7 @@ ht-degree: 0%
    * 如果您使用customer.sh文件来声明路径：为LD_LIBRARY_PATH变量添加路径/opt/sybase/IQ-16_0/lib64 。
    * 否则，请使用Unix命令。
 
-## sybase IQ外部帐户{#sybase-external}
+## sybase IQ外部帐户 {#sybase-external}
 
 利用Sybase IQ外部帐户，可将Campaign实例连接到Sybase IQ外部数据库。
 

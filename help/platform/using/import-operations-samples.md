@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 64%
@@ -14,6 +14,8 @@ ht-degree: 64%
 ---
 
 # 通用导入范例 {#import-operations-samples}
+
+![](../../assets/common.svg)
 
 ## 从收件人清单导入 {#example--import-from-a-list-of-recipients}
 
@@ -42,7 +44,7 @@ ht-degree: 64%
 
    ![](assets/s_ncs_user_import_example00_03.png)
 
-## 从文本文件{#example--import-new-records-from-a-text-file-}导入新记录
+## 从文本文件导入新记录 {#example--import-new-records-from-a-text-file-}
 
 要将存储在文本文件中的新收件人配置文件导入 Adobe Campaign 数据库，请使用以下步骤：
 

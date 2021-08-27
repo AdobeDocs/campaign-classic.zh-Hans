@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 创建查询的步骤{#steps-to-create-a-query}
+
+![](../../assets/common.svg)
 
 在Adobe Campaign中构建查询的步骤如下：
 
@@ -29,13 +31,13 @@ ht-degree: 2%
 >所有这些步骤在通用查询编辑器中均可用。 在其他上下文中创建查询时，可以忽略某些步骤。\
 >查询活动显示在[此部分](../../workflow/using/query.md)中。
 
-## 步骤1 — 选择表{#step-1---choose-a-table}
+## 步骤1 — 选择表 {#step-1---choose-a-table}
 
 选择包含要在&#x200B;**[!UICONTROL Document type]**&#x200B;窗口中查询的数据的表。 如有必要，请使用filter字段或&#x200B;**[!UICONTROL Filters]**&#x200B;按钮过滤数据。
 
 ![](assets/query_editor_nveau_21.png)
 
-## 步骤2 — 选择要提取{#step-2---choose-data-to-extract}的数据
+## 步骤2 — 选择要提取的数据 {#step-2---choose-data-to-extract}
 
 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中，选择要显示的数据：这些字段将构成输出列。
 
@@ -57,7 +59,7 @@ ht-degree: 2%
 
 * 使用&#x200B;**[!UICONTROL Remove duplicate rows (DISTINCT)]**&#x200B;函数可删除在输出列中获得的相同结果的重复项。 例如，如果通过选择输出列中的姓氏、名字和电子邮件字段进行普查，则将删除具有相同数据的字段，因为这意味着在数据库中已多次输入相同联系人：只考虑一个结果。
 
-## 步骤3 — 对数据{#step-3---sort-data}排序
+## 步骤3 — 对数据排序 {#step-3---sort-data}
 
 使用&#x200B;**[!UICONTROL Sorting]**&#x200B;窗口可以对列内容进行排序。 使用箭头更改列顺序：
 
@@ -68,7 +70,7 @@ ht-degree: 2%
 
 ![](assets/query_editor_nveau_57.png)
 
-## 步骤4 — 筛选数据{#step-4---filter-data}
+## 步骤4 — 过滤数据 {#step-4---filter-data}
 
 通过查询编辑器，您可以过滤数据以优化搜索。
 
@@ -105,7 +107,7 @@ ht-degree: 2%
 
 ![](assets/query_editor_nveau_99.png)
 
-## 步骤5 — 设置数据格式{#step-5---format-data}
+## 步骤5 — 设置数据格式 {#step-5---format-data}
 
 配置限制过滤器后，您将访问&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口。 利用此窗口，可重新排列输出列、转换数据，并更改列标签的大小写。 它还允许您使用计算字段将公式应用到最终结果。
 
@@ -125,7 +127,7 @@ ht-degree: 2%
 
 ![](assets/query_editor_nveau_42.png)
 
-## 步骤6 — 预览数据{#step-6---preview-data}
+## 步骤6 — 预览数据 {#step-6---preview-data}
 
 **[!UICONTROL Data preview]**&#x200B;窗口是最后一步。 单击&#x200B;**[!UICONTROL Start the preview of the data]**&#x200B;获取查询结果。 它以列或XML格式提供。 单击&#x200B;**[!UICONTROL Generated SQL queries]**&#x200B;选项卡以查看SQL格式的查询。
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # iOS 配置步骤 {#configuring-the-mobile-application-in-adobe-campaign-ios}
+
+![](../../assets/common.svg)
 
 安装包后，您可以在Adobe Campaign Classic中定义iOS应用程序设置。
 

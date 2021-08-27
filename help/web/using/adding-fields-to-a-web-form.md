@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2371'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 向 Web 窗体添加字段{#adding-fields-to-a-web-form}
+
+![](../../assets/common.svg)
 
 在Web窗体中，字段允许用户输入信息并选择选项。 Web窗体可以提供输入字段、选择字段、静态和高级内容（捕获、订阅等）。
 
@@ -377,7 +379,6 @@ ht-degree: 1%
 >* 这些实施需要Adobe Campaign咨询团队的帮助。
 
 >
-
 
 
 ## 插入隐藏常量 {#inserting-a-hidden-constant}

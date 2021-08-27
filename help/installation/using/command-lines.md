@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 4%
@@ -15,9 +15,11 @@ ht-degree: 4%
 
 # 命令行{#command-lines}
 
+![](../../assets/v7-only.svg)
+
 以下命令行需要能够访问应用程序服务器。 对于由Adobe托管的部署，这些命令只能由Adobe执行。
 
-## 创建实例{#creating-an-instance}
+## 创建实例 {#creating-an-instance}
 
 可以使用命令行使用语法执行实例创建：
 
@@ -29,7 +31,7 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 使用命令&#x200B;**nlserver config -addinstance:instance1/demo*/eng**，您可以使用DNS掩码demo*创建一个名为&#x200B;**instance1**&#x200B;的英文实例。
 
-## 声明数据库{#declaring-a-database}
+## 声明数据库 {#declaring-a-database}
 
 您可以使用以下语法从命令行将现有数据库与实例关联：
 

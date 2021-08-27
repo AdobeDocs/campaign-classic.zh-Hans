@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 创建和配置营销活动模板 {#campaign-templates}
+
+![](../../assets/common.svg)
 
 所有营销活动都基于存储主要特征和功能的模板。 营销活动模板集中在&#x200B;**[!UICONTROL Resources > Templates > Campaign templates]**&#x200B;节点中。 默认模板将作为标准模板提供。 它允许您使用所有可用模块（文档、任务、种子地址等）创建新营销活动，但提供的模块取决于您的权限和Adobe Campaign平台的配置。
 
@@ -27,7 +29,7 @@ ht-degree: 3%
 
 ![](assets/do-not-localize/how-to-video.png) 有关营销活动创建的更多信息，请参 [阅此视频](../../campaign/using/marketing-campaign-deliveries.md#create-email-video)。
 
-## 创建营销活动模板{#creating-or-duplicating-a-campaign-template}
+## 创建营销活动模板 {#creating-or-duplicating-a-campaign-template}
 
 要创建营销活动模板，请执行以下步骤：
 
@@ -61,7 +63,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_user_new_op_template_duplicate.png)
 
-## 选择模块{#select-modules}
+## 选择模块 {#select-modules}
 
 通过&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;链接，您可以基于此模板启用和禁用营销活动的作业。 选择要在基于此模板创建的营销活动中启用的功能。
 
@@ -91,7 +93,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_user_op_template_tab2.3ex.png)
 
-## 模块{#typology-of-enabled-modules}的分类
+## 模块类型 {#typology-of-enabled-modules}
 
 * **控制组**
 
@@ -143,9 +145,9 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_op_template_activate_7.png)
 
-## 属性和执行{#general-configuration}
+## 属性和执行 {#general-configuration}
 
-### 模板属性{#template-properties}
+### 模板属性 {#template-properties}
 
 ![](assets/s_ncs_user_op_new_template.png)
 
@@ -165,7 +167,7 @@ ht-degree: 3%
 
 * 指定模板的&#x200B;**相关程序**:基于此模板的营销活动将链接到所选项目。
 
-### 模板执行参数{#template-execution-parameters}
+### 模板执行参数 {#template-execution-parameters}
 
 **[!UICONTROL Advanced campaign settings...]**&#x200B;链接允许您配置模板的高级选项以处理投放目标（控制组、种子地址等） 以及营销活动测量和工作流执行的配置。
 

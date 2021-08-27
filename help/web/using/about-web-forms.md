@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Web 窗体入门{#about-web-forms}
+
+![](../../assets/common.svg)
 
 Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体以创建包含输入和选择字段的页面，这些页面可能包含数据库中的数据。 这样，您就可以设计和发布网页，以供用户访问以查看或输入信息。
 
@@ -80,7 +82,6 @@ Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体以创
 >* 要确保页面按适当的顺序显示和信息存储，请在Web窗体中启用调试模式。 为此，请转到&#x200B;**[!UICONTROL Preview]**&#x200B;子选项卡并选中&#x200B;**[!UICONTROL Enable debug mode]**&#x200B;框：所有收集的信息和可能的执行错误都将显示在每个页面的底部。
 
 >
-
 
 
 ### 使用工具栏中的图标 {#using-the-icons-in-the-toolbar}

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 具有自定义日期字段的电子邮件扩充{#email-enrichment-with-custom-date-fields}
+
+![](../../assets/common.svg)
 
 在此示例中，我们希望向本月将庆祝生日的收件人发送一封包含自定义数据字段的电子邮件。 电子邮件将包含一个优惠券，在他们生日前后一周有效。
 

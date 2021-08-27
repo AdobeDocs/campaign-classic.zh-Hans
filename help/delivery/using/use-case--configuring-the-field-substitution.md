@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 用例：配置字段替换{#use-case-configuring-the-field-substitution}
+
+![](../../assets/common.svg)
 
 随机字段替换允许您将收件人列表中的某个值归因于用户在投放中使用此值时的种子地址为空(例如：名称、城市等)。
 

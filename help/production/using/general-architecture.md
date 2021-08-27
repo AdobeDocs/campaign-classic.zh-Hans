@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # 一般架构{#general-architecture}
 
-## 最小架构{#minimum-architecture}
+![](../../assets/v7-only.svg)
+
+## 最低架构 {#minimum-architecture}
 
 在最低配置中，Adobe Campaign使用：
 
@@ -29,7 +31,7 @@ ht-degree: 3%
 1. 通过Internet到Adobe Campaign服务器的HTTP协议流量，
 1. 从Adobe Campaign服务器到Internet的SMTP协议流量。
 
-## 分布式架构{#distributed-architecture}
+## 分布式架构 {#distributed-architecture}
 
 Adobe Campaign由多个模块组成，这些模块可以在多台计算机上划分。 此操作模式具有以下几个优点：
 
@@ -45,7 +47,7 @@ Adobe Campaign由多个模块组成，这些模块可以在多台计算机上划
 >
 >有关各种体系结构的更多信息，请参见[此部分](../../installation/using/general-architecture.md)。
 
-## 打开的端口列表{#list-of-open-ports}
+## 打开端口列表 {#list-of-open-ports}
 
 | 端口号 | 相关的Adobe Campaign模块或应用程序 | 可配置 |
 |---|---|---|

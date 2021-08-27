@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1234'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # JavaScript 脚本和模板{#javascript-scripts-and-templates}
+
+![](../../assets/common.svg)
 
 脚本使得可以计算值、在进程中的不同任务之间交换数据，以及使用SOAP调用执行特定操作。
 
@@ -26,7 +28,7 @@ ht-degree: 2%
 
    ![](assets/script-button.png)
 
-## 公开的对象{#objects-exposed}
+## 公开的对象 {#objects-exposed}
 
 在工作流上下文中执行的JavaScript访问一系列其他全局对象。
 
@@ -65,31 +67,31 @@ logInfo("Start date: " + task.creationDate)
 
 变量是&#x200B;**[!UICONTROL instance]**、**[!UICONTROL task]**&#x200B;和&#x200B;**[!UICONTROL event]**&#x200B;对象的自由属性。 为这些变量授权的JavaScript类型包括&#x200B;**[!UICONTROL string]**、**[!UICONTROL number]**&#x200B;和&#x200B;**[!UICONTROL Date]**。
 
-### 实例变量{#instance-variables}
+### 实例变量 {#instance-variables}
 
 实例变量(**[!UICONTROL instance.vars.xxx]**)可与全局变量比较。 所有活动均共享这些资源。
 
-### 任务变量{#task-variables}
+### 任务变量 {#task-variables}
 
 任务变量(**[!UICONTROL task.vars.xxx]**)与本地变量类似。 它们仅用于当前任务。 这些变量由永久性活动用来保留数据，有时用于在同一活动的不同脚本之间交换数据。
 
-### 事件变量{#event-variables}
+### 事件变量 {#event-variables}
 
 事件变量(**[!UICONTROL vars.xxx]**)允许在工作流进程的基本任务之间交换数据。 这些变量由激活正在进行的任务的任务传递。 可以修改它们并定义新的。 然后，这些活动会被传递到以下活动。
 
 >[!CAUTION]
 >
->对于[AND-join](../../workflow/using/and-join.md)类型活动，将合并变量，但如果同一变量被定义两次，则会发生冲突，值仍不确定。
+>对于[AND-join](and-join.md)类型活动，将合并变量，但如果同一变量被定义两次，则会发生冲突，值仍不确定。
 
 事件是最常用的变量，应首选使用它们来替换实例变量。
 
-某些事件变量会被各种活动修改或读取。 这些都是字符串类型的变量。 例如，导出会使用刚刚导出的文件的全名设置&#x200B;**[!UICONTROL vars.filename]**&#x200B;变量。 所有这些读取或修改的变量都记录在[About activities](../../workflow/using/about-activities.md)活动&#x200B;**Input parameters**&#x200B;和&#x200B;**活动的Output parameters**&#x200B;部分中。
+某些事件变量会被各种活动修改或读取。 这些都是字符串类型的变量。 例如，导出会使用刚刚导出的文件的全名设置&#x200B;**[!UICONTROL vars.filename]**&#x200B;变量。 所有这些读取或修改的变量都记录在[About activities](about-activities.md)活动&#x200B;**Input parameters**&#x200B;和&#x200B;**活动的Output parameters**&#x200B;部分中。
 
 ### 用例 {#example}
 
 >[!NOTE]
 >
->[此部分](../../workflow/using/about-workflow-use-cases.md)中提供了其他工作流用例。
+>[此部分](about-workflow-use-cases.md)中提供了其他工作流用例。
 
 **示例1**
 
@@ -187,7 +189,7 @@ logInfo("Start date: " + task.creationDate)
 
 **[!UICONTROL logError(message)]** 向日志中添加错误消息。脚本会中断其执行，并且工作流会更改为错误状态（默认情况下，实例将暂停）。
 
-## 初始化脚本{#initialization-script}
+## 初始化脚本 {#initialization-script}
 
 在某些情况下，您可以在执行时修改活动的属性。
 

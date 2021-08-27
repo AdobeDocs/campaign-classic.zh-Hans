@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '928'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 将文件附加到电子邮件{#attaching-files}
+
+![](../../assets/common.svg)
 
 ## 关于电子邮件附件 {#about-email-attachments}
 
@@ -40,7 +42,7 @@ ht-degree: 1%
 >
 >您可以将多个文件附加到投放。 附件可以采用任何格式（包括压缩格式）。
 
-1. 单击&#x200B;**[!UICONTROL Attachments]**&#x200B;链接。
+1. 单击 **[!UICONTROL Attachments]** 链接。
 1. 单击 **[!UICONTROL Add]** 按钮。
 1. 单击&#x200B;**[!UICONTROL File...]**&#x200B;选择要附加到投放的文件。
 
@@ -62,7 +64,7 @@ ht-degree: 1%
 
 要创建个性化附件，请执行以下步骤：
 
-1. 单击&#x200B;**[!UICONTROL Attachments]**&#x200B;链接。
+1. 单击 **[!UICONTROL Attachments]** 链接。
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后选择&#x200B;**[!UICONTROL Calculated attachment]**。
 1. 从&#x200B;**[!UICONTROL Type]**&#x200B;下拉列表中选择计算类型：
 

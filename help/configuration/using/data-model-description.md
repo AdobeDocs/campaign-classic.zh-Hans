@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Campaign数据模型描述{#data-model-description}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign 提供了预定义的数据模型。本节详细介绍Adobe Campaign数据模型的内置表及其交互。
 
@@ -25,7 +27,7 @@ Adobe Campaign 提供了预定义的数据模型。本节详细介绍Adobe Campa
 >
 >应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循 Adobe Campaign 特有的语法，称为模式。有关Adobe Campaign模式的更多信息，请阅读[此部分](../../configuration/using/about-schema-reference.md)。
 
-## 主表{#description-main-tables}的说明
+## 主表的描述 {#description-main-tables}
 
 Adobe Campaign依赖于包含已链接在一起的表的关系数据库。
 
@@ -103,7 +105,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 
 树由iParentId和iChildCount字段管理。 sFullName字段提供树中文件夹的完整路径。 最后，字段上有一个唯一索引，表示sName文件夹的内部名称。
 
-## 投放和跟踪{#delivery-and-tracking}
+## 投放和跟踪 {#delivery-and-tracking}
 
 这组表链接到&#x200B;**Delivery**&#x200B;模块，用于监视投放情况以及发送消息时遇到的最终问题。 有关更多信息，请参阅[监控投放](../../delivery/using/about-delivery-monitoring.md)。 有关跟踪的更多信息，请参阅[跟踪消息](../../delivery/using/about-message-tracking.md)。
 
@@ -111,7 +113,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 
 **NmsBroadLogMsg**:此表与nms: **** broadLogMsgschema匹配。它是投放日志表的扩展。
 
-## 营销活动管理{#campaign-management}
+## 营销活动管理 {#campaign-management}
 
 此组表链接到&#x200B;**营销活动**&#x200B;模块，该模块可定义、优化、执行和分析通信和营销活动。 有关更多信息，请参阅[关于营销活动](../../campaign/using/designing-marketing-campaigns.md)。
 
@@ -127,9 +129,9 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 * **NmsTask**:此表与nms: **** taskschema匹配。它包含营销任务的定义。
 * **NmsAsset**:此表与nms: **** assetschema匹配。它包含营销资源的定义。
 
-## 通信一致性{#communication-consistency}
+## 通信一致性 {#communication-consistency}
 
-此组表链接到&#x200B;**Campaign Optimization**&#x200B;模块，该模块允许控制、过滤和监视投放的发送。 有关更多信息，请参阅[关于营销活动分类](../../campaign/using/about-campaign-typologies.md)。
+此组表链接到&#x200B;**Campaign Optimization**&#x200B;模块，该模块允许控制、过滤和监视投放的发送。 有关更多信息，请参阅[关于营销活动分类](../../campaign-opt/using/about-campaign-typologies.md)。
 
 ![](assets/data-model_typology.png)
 
@@ -139,9 +141,9 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 * **NmsVolumeLine**:此表与nms: **** volumeLineschema匹配。它包含容量规则的可用性行集。
 * **NmsVolumeInsed**:此表与nms: **** volumeConsumedschema匹配。它包含能力规则的所有冲减行。
 
-## 响应管理{#response-management}
+## 响应管理 {#response-management}
 
-这组表链接到&#x200B;**响应管理器**&#x200B;模块，用于衡量营销活动或为所有通信渠道提供建议的成功和盈利能力。 有关更多信息，请参阅[关于响应管理器](../../campaign/using/about-response-manager.md)。
+这组表链接到&#x200B;**响应管理器**&#x200B;模块，用于衡量营销活动或为所有通信渠道提供建议的成功和盈利能力。 有关更多信息，请参阅[关于响应管理器](../../response/using/about-response-manager.md)。
 
 ![](assets/data-model_response.png)
 
@@ -199,7 +201,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 
 它包含一个记录，表示个人对给定假设的反应。 这些记录是在假设验证执行期间创建的。
 
-## 模拟和投放{#simulation-and-delivery}
+## 模拟和交付 {#simulation-and-delivery}
 
 这组表链接到&#x200B;**Simulation**&#x200B;模块，该模块允许在将您的建议发送给收件人之前，测试属于某个类别或环境的选件的分布。 有关更多信息，请参阅[关于选件模拟](../../interaction/using/about-offers-simulation.md)。
 
@@ -209,7 +211,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 * **NmsDlvSimulationRel**:此表与nms: **** dlvSimulationRelschema匹配。其中包含模拟中考虑的投放列表。 模拟的范围以XML形式存储。
 * **NmsOfferSimulationRel**:此表与nms: **** offerSimulationRelschema匹配。它允许您将模拟与选件关联。
 
-## 交互模块{#interaction-module}
+## 交互模块 {#interaction-module}
 
 这组表链接到&#x200B;**交互**&#x200B;模块，该模块允许在与给定联系人的交互期间，通过使其成为单个或多个自适应选件进行实时响应。 有关更多信息，请参阅[交互和选件管理](../../interaction/using/interaction-and-offer-management.md)。
 
@@ -221,7 +223,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 * **NmsOfferCategory**:此表与nms: **offerCategory**&#x200B;匹配。它包含选件类别。
 * **NmsOfferEnv**:此表与nms: **offerEnv**&#x200B;匹配。它包含选件环境。
 
-## 消息中心模块{#message-center-module}
+## 消息中心模块 {#message-center-module}
 
 以下一组表链接到&#x200B;**事务性消息传递**（消息中心）模块，该模块允许管理发送给用户的、由信息系统触发的事件生成的单独和唯一通信。 有关更多信息，请参阅[关于事务型消息传递](../../message-center/using/about-transactional-messaging.md)。
 
@@ -247,7 +249,7 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 * **NmsPurl**: This table matches the **nms:purl** schema.-->
 
-## NMAC模块{#nmac-module}
+## NMAC模块 {#nmac-module}
 
 这组表链接到&#x200B;**移动设备应用程序渠道**，该渠道允许通过应用程序向iOS和Android终端发送个性化通知。 有关更多信息，请参阅[关于移动应用程序渠道](../../delivery/using/about-mobile-app-channel.md)。
 
@@ -258,7 +260,7 @@ This set of tables is linked to the **Web applications** functionality, which al
 * **NmsTrackingLogAppSubRcp**:此表与nms: **** trackingLogAppSubRcpschema匹配。
 * **NmsBroadLogAppSubRcp**:此表与nms: **** broadLogAppSubRcpschema匹配。
 
-## 社交营销模块{#social-marketing-module}
+## 社交营销模块 {#social-marketing-module}
 
 这组表链接到&#x200B;**管理社交网络**&#x200B;模块，该模块允许通过Facebook和Twitter与客户和潜在客户进行交互。 有关更多信息，请参阅[关于社交营销](../../social/using/about-social-marketing.md)。
 

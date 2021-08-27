@@ -2,18 +2,20 @@
 product: campaign
 title: Campaign操作员入门
 description: 了解如何创建和管理Campaign用户
-feature: 访问管理
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1146'
 ht-degree: 2%
 
 ---
 
 # 创建和管理操作员 {#operators}
+
+![](../../assets/common.svg)
 
 ## Campaign操作员入门  {#about-operators}
 
@@ -45,7 +47,7 @@ ht-degree: 2%
 
 1. 指定用户的&#x200B;**[!UICONTROL Identification parameters]**:其登录名、密码和名称。 操作员将使用登录名和密码登录到Adobe Campaign。 用户登录后，可通过&#x200B;**[!UICONTROL Tools > Change password]**&#x200B;菜单更改其密码。 操作员的电子邮件至关重要，因为它使操作员能够接收通知，例如在处理批准时。
 
-   此部分还允许您将运算符链接到组织实体。 有关更多信息，请参阅[此页面](../../campaign/using/about-distributed-marketing.md)。
+   此部分还允许您将运算符链接到组织实体。 有关更多信息，请参阅[此页面](../../distributed/using/about-distributed-marketing.md)。
 
 1. 在&#x200B;**[!UICONTROL Operator access rights]**&#x200B;部分中，选择授予操作员的权限。
 

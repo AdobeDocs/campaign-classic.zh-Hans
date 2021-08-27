@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # 收件箱呈现{#inbox-rendering}
+
+![](../../assets/common.svg)
 
 ## 关于收件箱呈现 {#about-inbox-rendering}
 
@@ -84,7 +86,6 @@ Litmus是一种功能丰富的电子邮件验证和预览应用程序。 它允�
 >* 对于同一投放，如果您再次生成收件箱呈现，则可用令牌的数量会再次减少所生成渲染的数量。
 
 >
-
 
 
 剩余的可用令牌数显示在[收件箱呈现报表](#inbox-rendering-report)的&#x200B;**[!UICONTROL General summary]**&#x200B;中。

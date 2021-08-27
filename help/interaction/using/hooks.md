@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 挂钩{#hooks}
+
+![](../../assets/v7-only.svg)
 
 通过交互中的挂接，可以修改&#x200B;**标准引擎行为**。
 
@@ -25,7 +27,7 @@ ht-degree: 1%
 
 ![](assets/interaction_hooks_2.png)
 
-## 目标正在加载{#target-loading}
+## Target加载 {#target-loading}
 
 此挂接允许您使用来自外部系统的附加数据扩充联系人（由即装即用查询加载）的用户档案。
 
@@ -55,7 +57,7 @@ ht-degree: 1%
   interaction.@additionalData = additionalData;
 ```
 
-## 命题后处理{#proposition-post-processing-}
+## 建议后处理 {#proposition-post-processing-}
 
 此挂接允许您检查给定交互中合格命题的一致性和兼容性。 它还允许您定义新的评分或概率计算功能。
 
@@ -113,7 +115,7 @@ if( aProposition.length > 0 )
 return aReturnedProps;
 ```
 
-## 动态选件{#dynamic-offer}
+## 动态选件 {#dynamic-offer}
 
 此挂接允许您调用外部引擎以选择链接到选件的产品列表。 该选件在资格规则之后和分类规则应用程序之前的选件中进行配置。
 

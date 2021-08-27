@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 2%
@@ -15,9 +15,11 @@ ht-degree: 2%
 
 # 更新数据{#update-data}
 
+![](../../assets/common.svg)
+
 **更新数据**&#x200B;类型活动执行对数据库中字段的批量更新。
 
-## 操作类型{#operation-type}
+## 操作类型 {#operation-type}
 
 通过&#x200B;**[!UICONTROL Operation type]**&#x200B;字段，可选择要对数据库中的数据执行的进程：
 
@@ -31,7 +33,7 @@ ht-degree: 2%
 
 利用&#x200B;**[!UICONTROL Batch size]**&#x200B;字段，可选择要更新的集客过渡元素数量。 例如，如果您声明500，则处理的前500条记录将会更新。
 
-## 记录标识{#record-identification}
+## 记录标识 {#record-identification}
 
 指定如何识别数据库中的记录：
 
@@ -43,7 +45,7 @@ ht-degree: 2%
 
 ![](assets/s_advuser_update_data_2.png)
 
-## 选择要更新的字段{#selecting-the-fields-to-be-updated}
+## 选择要更新的字段 {#selecting-the-fields-to-be-updated}
 
 使用&#x200B;**[!UICONTROL Automatically associate fields with the same name]**&#x200B;选项，以便Adobe Campaign自动识别要更新的字段。
 
@@ -82,7 +84,7 @@ ht-degree: 2%
 
 创建叫客过渡，其中包含更新后未正确处理的记录（例如，如果存在重复项）。 更新通常会标记定向工作流的结尾，因此默认情况下不会激活选项。
 
-## 更新和合并集合{#updating-and-merging-collections}
+## 更新和合并收藏集 {#updating-and-merging-collections}
 
 通过更新数据和合并集合，您可以使用一个或多个辅助记录中的数据来更新记录中包含的数据，以便在需要时仅保留一个。 这些更新由一组规则管理。
 
@@ -114,11 +116,11 @@ ht-degree: 2%
 
 如果定义的规则适用，则辅助记录的数据将与主记录关联。 根据所选的更新类型，可删除次记录。
 
-## 示例：扩充{#example--update-data-following-an-enrichment}后更新数据
+## 示例：扩充后更新数据 {#example--update-data-following-an-enrichment}
 
-[步骤2:将扩充数据写入用例的“购买”表](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table)部分，其中详细说明了如何创建重新链接列表，以便提供扩充活动后数据更新的示例。
+[步骤2:将扩充数据写入用例的“购买”表](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table)部分，其中详细说明了如何创建重新链接列表，以便提供扩充活动后数据更新的示例。
 
-## 输入参数{#input-parameters}
+## 输入参数 {#input-parameters}
 
 * tableName
 * 模式

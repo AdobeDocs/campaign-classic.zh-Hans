@@ -5,19 +5,25 @@ description: 消息中心（执行）
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 6%
+source-wordcount: '229'
+ht-degree: 9%
 
 ---
 
 
 # 消息中心（执行）{#message-center-execution}
 
-默认情况下，下面详述的工作流与&#x200B;**消息中心 — 执行**&#x200B;模块一起安装。 有关此模块的更多信息，请参阅此[部分](../../message-center/using/about-transactional-messaging.md)。
+![](../../assets/common.svg)
 
-要详细了解如何配置与消息中心模块相关的技术工作流，请参阅[此页面](../../message-center/using/technical-workflows.md)。
+默认情况下，下面详述的工作流随&#x200B;**Message Center - Execution**&#x200B;加载项一起安装。
+
+有关更多信息，请根据您的Campaign版本，参阅以下章节：
+
+![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文档](../../message-center/using/about-transactional-messaging.md)
+
+![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 <table> 
  <tbody> 

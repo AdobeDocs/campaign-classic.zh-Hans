@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 管理报告{#managing-reports}
+
+![](../../assets/v7-only.svg)
 
 必须重新开发基于特定于默认Adobe Campaign收件人（nm:recipient或已链接的架构）的架构的报表，以便考虑自定义表及其通过目标映射链接的表中的数据（请参阅[Target映射](../../configuration/using/target-mapping.md)部分）。
 

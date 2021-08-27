@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 高级参数{#advanced-parameters}
+
+![](../../assets/common.svg)
 
 活动的属性屏幕中有一个&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡，利用该选项卡，可定义出错时的行为，即活动的执行期；和允许您输入初始化脚本。 此选项卡有两个版本：
 
@@ -33,7 +35,7 @@ ht-degree: 2%
 
 ## 图像 {#image}
 
-利用此字段，可更改链接到活动的图像。 有关更多信息，请参阅：[管理活动图像](../../workflow/using/managing-activity-images.md)。
+利用此字段，可更改链接到活动的图像。 有关更多信息，请参阅：[管理活动图像](managing-activity-images.md)。
 
 ## 执行 {#execution}
 
@@ -52,7 +54,7 @@ ht-degree: 2%
 此[部分](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)中详细描述了高可用性工作流配置。
 
 
-## Max。 执行期{#max--execution-period}
+## Max。 执行期 {#max--execution-period}
 
 利用此字段，可在任务过长时设置警告。 它不会影响工作流操作。 如果任务在&#x200B;**[!UICONTROL Max. execution period]**&#x200B;结束时尚未完成，则&#x200B;**[!UICONTROL Instance monitoring]**&#x200B;页面将显示此工作流的警告。 可通过主页的&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡访问此页面。
 
@@ -65,18 +67,18 @@ ht-degree: 2%
 
 ## 时区 {#time-zone}
 
-利用此字段，可选择活动的时区。 有关此内容的更多信息：[管理时区](../../workflow/using/managing-time-zones.md)。
+利用此字段，可选择活动的时区。 有关此内容的更多信息：[管理时区](managing-time-zones.md)。
 
-## 出现错误{#in-case-of-errors}时
+## 出错时 {#in-case-of-errors}
 
 利用此字段，可定义在活动出错时要执行的操作。 有两种可能的选项：
 
 * **[!UICONTROL Stop the process]**:工作流将自动停止。其状态将变为&#x200B;**[!UICONTROL Failed]**。 解决问题后，重新启动工作流。
 * **[!UICONTROL Ignore]**:不会执行此任务和以下所有任务（在同一分支中）。这对于定期任务很有用。 如果分支具有上游调度程序，则该调度程序将像往常一样在下一个执行日期开始。
 
-## 初始化脚本{#initialization-script}
+## 初始化脚本 {#initialization-script}
 
-利用此字段，可初始化变量或修改活动属性。 有关更多信息，请参阅：[JavaScript脚本和模板](../../workflow/using/javascript-scripts-and-templates.md)。
+利用此字段，可初始化变量或修改活动属性。 有关更多信息，请参阅：[JavaScript脚本和模板](javascript-scripts-and-templates.md)。
 
 ## 注释 {#comment}
 

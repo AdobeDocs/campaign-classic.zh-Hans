@@ -6,7 +6,7 @@ description: 了解如何在FDA中配置对Vertica的访问
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: a7c080fe4db72f659659c7cac8f2c02031822e04
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 2%
@@ -14,7 +14,9 @@ ht-degree: 2%
 ---
 
 
-# 配置对Vertica {#configure-fda-vertica}的访问权限
+# 配置对Vertica的访问权限 {#configure-fda-vertica}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign **联合数据访问**(FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对[!DNL Vertica]的访问。
 
@@ -90,7 +92,7 @@ ht-degree: 2%
 
 1. 然后，在Adobe Campaign中，您可以配置[!DNL Vertica]外部帐户。 有关如何配置外部帐户的更多信息，请参阅[此部分](#vertical-external)。
 
-## Debian上的Vertica {#vertica-debian}
+## 德比语上的维蒂卡 {#vertica-debian}
 
 1. 下载[!DNL Vertica]的ODBC驱动程序。 [单击此](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) 处开始下载。
 
@@ -144,7 +146,7 @@ ht-degree: 2%
 
 1. 然后，在Adobe Campaign中，您可以配置[!DNL Vertica]外部帐户。 有关如何配置外部帐户的更多信息，请参阅[此部分](#vertica-external)。
 
-## Vertica外部帐户{#vertica-external}
+## Vertica外部帐户 {#vertica-external}
 
 您需要创建一个[!DNL Vertica]外部帐户，以将Campaign实例连接到[!DNL Vertica]外部数据库。
 

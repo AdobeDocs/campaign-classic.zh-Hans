@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 企业部署{#enterprise-deployment}
+
+![](../../assets/v7-only.svg)
 
 这是最完整的配置。 它以标准配置为基础，以提高安全性和可用性：
 
@@ -37,7 +39,7 @@ ht-degree: 3%
 
 硬件和管理成本更高。
 
-### 推荐设备{#recommended-equipment}
+### 推荐设备 {#recommended-equipment}
 
 * 应用程序服务器：2 Ghz四核CPU，4 GB RAM，软件RAID 1 80 GB SATA硬盘。
 * 重定向服务器：2 Ghz四核CPU，4 GB RAM，软件RAID 1 80 GB SATA硬盘。
@@ -46,7 +48,7 @@ ht-degree: 3%
 >
 >可以重复使用现有的负载平衡器，以便将流量重定向到重定向服务器。
 
-## 安装和配置步骤{#installation-and-configuration-steps}
+## 安装和配置步骤 {#installation-and-configuration-steps}
 
 ### 先决条件 {#prerequisites}
 
@@ -248,7 +250,7 @@ ht-degree: 3%
    * 对于Linux:[服务器的首次启动](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
    * 对于Windows:[服务器的首次启动](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
-### 安装和配置前端服务器{#installing-and-configuring-the-frontal-servers}
+### 安装和配置前端服务器 {#installing-and-configuring-the-frontal-servers}
 
 在两台计算机上的安装和配置过程是相同的。
 

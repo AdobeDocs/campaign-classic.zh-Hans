@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 实时/设计环境{#live-design-environments}
+
+![](../../assets/v7-only.svg)
 
 ## 操作原则 {#operating-principle}
 
@@ -36,7 +38,7 @@ ht-degree: 2%
 
 选件管理器和交付管理器可以访问环境的不同视图。 投放管理器只能查看&#x200B;**[!UICONTROL Live]**&#x200B;选件环境并使用选件进行投放。 选件管理器可以查看和更改&#x200B;**[!UICONTROL Design]**&#x200B;环境，并查看&#x200B;**[!UICONTROL Live]**&#x200B;环境。 有关更多信息，请参阅[运算符配置文件](../../interaction/using/operator-profiles.md)。
 
-## 创建选件环境{#creating-an-offer-environment}
+## 创建优惠环境 {#creating-an-offer-environment}
 
 默认情况下，交互会附带一个预配置的环境，以定位收件人表（已识别的选件）。 如果您希望定位其他表（匿名选件的访客表或特定收件人表），则需要应用以下配置：
 

@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 人员和收件人 {#person-people-and-recipients}
+
+![](../../assets/common.svg)
 
 此示例将帮助您了解Adobe Campaign中的人员和收件人之间的区别。 我们将向多人发送投放内容，以突出显示人员与收件人之间的差异，同时详细说明以下指标的计算方法：
 
@@ -42,7 +44,7 @@ ht-degree: 6%
 
 为了更清晰地了解人员和收件人的计数方式，我们将分析每个用户档案的日志。
 
-## 步骤1:John {#step-1--john}
+## 步骤1:约翰 {#step-1--john}
 
 **[!UICONTROL John Davis]** 不会打开电子邮件（因此不会单击任何链接）。
 
@@ -57,7 +59,7 @@ ht-degree: 6%
 | 约翰 | - | - | - |
 | 中间总计 | 0 | 0 | 0 |
 
-## 步骤2:玛丽{#step-2--marie}
+## 步骤2:玛丽 {#step-2--marie}
 
 **[!UICONTROL Marie Stuart]** 打开电子邮件，但不会单击任何链接。
 
@@ -77,7 +79,7 @@ Marie的打开显示在以下日志中：
 | 玛丽 | - | - | +1 |
 | 中间总计 | 0 | 0 | 1 |
 
-## 步骤3:弗洛里安{#step-3--florian}
+## 步骤3:弗洛里安 {#step-3--florian}
 
 **[!UICONTROL Florian David]** 打开电子邮件并单击链接9次。他还会将电子邮件转发给打开后单击两次的人。
 
@@ -122,7 +124,7 @@ Florian的操作（一次打开和9次单击）显示在以下日志中：
 | 未知人员 | - | +1 | - |
 | 中间总计 | 1 | 2 | 2 |
 
-## 步骤4:亨利{#step-4--henry}
+## 步骤4:亨利 {#step-4--henry}
 
 **[!UICONTROL Henry Macdonald]** 已将其internet浏览器配置为拒绝cookie。他打开电子邮件并点击链接4次。
 

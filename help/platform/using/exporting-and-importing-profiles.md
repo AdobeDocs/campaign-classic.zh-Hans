@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 31%
@@ -14,6 +14,8 @@ ht-degree: 31%
 ---
 
 # 导入和导出用户档案{#exporting-and-importing-profiles}
+
+![](../../assets/common.svg)
 
 您可以[使用工作流](#use-workflows)将收件人配置文件导入或导出到Adobe Campaign数据库，或设置[常规导入或导出作业](#create-jobs)。
 
@@ -32,7 +34,7 @@ ht-degree: 31%
 ![](assets/s_ncs_user_interface_import_link.png)
 
 
-## 教程视频{#import-profiles-video}
+## 教程视频 {#import-profiles-video}
 
 此视频介绍如何在Adobe Campaign中导入用户档案，以便偶尔进行导入。
 

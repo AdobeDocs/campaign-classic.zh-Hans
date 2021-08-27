@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 备份{#backup}
+
+![](../../assets/v7-only.svg)
 
 备份对于避免在计算机上出现问题（无论是物理问题还是系统问题）时丢失数据至关重要。
 
@@ -24,7 +26,7 @@ ht-degree: 2%
 
 大多数数据都在数据库中。 这表示要备份的信息的99%。
 
-## 物理文件{#physical-files}
+## 物理文件 {#physical-files}
 
 文件分为几类：
 

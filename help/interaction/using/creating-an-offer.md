@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 创建优惠{#creating-an-offer}
 
-## 创建选件{#creating-the-offer}
+![](../../assets/v7-only.svg)
+
+## 创建选件 {#creating-the-offer}
 
 要创建选件，请应用以下步骤：
 
@@ -39,11 +41,11 @@ ht-degree: 2%
 
    ![](assets/offer_create_004.png)
 
-## 配置优惠资格{#configuring-offer-eligibility}
+## 配置优惠资格 {#configuring-offer-eligibility}
 
 在&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中，定义选件有效的期限，并可显示该期限、要应用于目标的过滤器以及选件权重。
 
-### 定义优惠的资格期限{#defining-the-eligibility-period-of-an-offer}
+### 定义优惠的资格期限 {#defining-the-eligibility-period-of-an-offer}
 
 要定义选件的资格期，请使用下拉列表并在日历中选择开始日期和结束日期。
 
@@ -51,7 +53,7 @@ ht-degree: 2%
 
 在这些日期之外，交互引擎将不会选择选件。 如果您还为选件类别配置了资格日期，则将适用最严格的期限。
 
-### 目标{#filters-on-the-target}上的过滤器
+### 目标上的过滤器 {#filters-on-the-target}
 
 您可以将过滤器应用到选件目标。
 
@@ -63,7 +65,7 @@ ht-degree: 2%
 
 ![](assets/offer_eligibility_create_004.png)
 
-### 选件权重{#offer-weight}
+### 选件权重 {#offer-weight}
 
 要使引擎能够在目标符合条件的多个选件之间做出决定，您需要为选件分配一个或多个权重。 您还可以根据需要将过滤器应用到目标，或限制权重要应用到的选件空间。 与重量较轻的选件相比，将更喜欢权重较大的选件。
 
@@ -109,7 +111,7 @@ ht-degree: 2%
    >
    >如果目标符合为选定选件赋予多个权重的条件，则引擎会保持最佳（最高）权重。 在调用选件引擎时，每个联系人最多选择一个选件。
 
-### 选件资格规则摘要{#a-summary-of-offer-eligibility-rules}
+### 优惠资格规则摘要 {#a-summary-of-offer-eligibility-rules}
 
 配置完成后，资格规则的摘要将显示在选件仪表板中。
 
@@ -117,7 +119,7 @@ ht-degree: 2%
 
 ![](assets/offer_eligibility_create_005.png)
 
-## 创建选件内容{#creating-the-offer-content}
+## 创建选件内容 {#creating-the-offer-content}
 
 1. 单击&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Content]**&#x200B;选项卡。
 
@@ -155,7 +157,7 @@ ht-degree: 2%
 
    在此示例中，选件必须包含标题、图像、HTML内容和目标URL。
 
-## 预览选件{#previewing-the-offer}
+## 预览选件 {#previewing-the-offer}
 
 配置选件内容后，您便可以立即预览该选件，该选件将显示给其收件人。 操作步骤：
 
@@ -171,7 +173,7 @@ ht-degree: 2%
 
    ![](assets/offer_preview_create_003.png)
 
-## 创建选件{#creating-a-hypothesis-on-an-offer}的假设验证
+## 为优惠创建假设 {#creating-a-hypothesis-on-an-offer}
 
 您可以针对您的选件建议创建假设。 这可让您确定选件对相关产品执行的购买的影响。
 
@@ -181,6 +183,6 @@ ht-degree: 2%
 
 对选件建议执行的假设将在其&#x200B;**[!UICONTROL Measure]**&#x200B;选项卡中引用。
 
-有关创建假设的详细信息，请参见[此页](../../campaign/using/about-response-manager.md)。
+有关创建假设的详细信息，请参见[此页](../../response/using/about-response-manager.md)。
 
 ![](assets/offer_hypothesis_001.png)

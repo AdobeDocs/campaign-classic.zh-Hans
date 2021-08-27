@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 5%
 
 ---
 
-# 值元素{#value--element}
+# 值元素 {#value--element}
 
-## 内容模型{#content-model-16}
+![](../../../assets/v7-only.svg)
+
+## 内容模型 {#content-model-16}
 
 value:==help
 
-## 属性{#attributes-16}
+## 属性 {#attributes-16}
 
 * @applicableIf（字符串）
 * @desc（字符串）
@@ -29,19 +31,19 @@ value:==help
 * @name（字符串）
 * @value（字符串）
 
-## 父项{#parents-16}
+## 父母 {#parents-16}
 
 `<enumeration>`
 
-## 子项{#children-16}
+## 子项 {#children-16}
 
 `<help>`
 
-## 说明{#description-16}
+## 说明 {#description-16}
 
 利用此元素，可定义枚举中存储的值。
 
-## 属性描述{#attribute-description-16}
+## 属性描述 {#attribute-description-16}
 
 * **appliableIf（字符串）**:此属性允许您使枚举值为可选值。它接收XTK表达式。
 * **desc（字符串）**:枚举值的描述。
@@ -51,7 +53,7 @@ value:==help
 * **name(string)**:枚举值的内部名称。
 * **值（字符串）**:枚举值的值。根据枚举类型定义值类型。 如果枚举为字符串类型，则可能只包含字符串类型值。
 
-## 示例{#examples-13}
+## 示例 {#examples-13}
 
 ```
 <enumeration name="myEnum">

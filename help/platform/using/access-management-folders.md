@@ -2,18 +2,20 @@
 product: campaign
 title: 管理对Campaign文件夹的访问权限
 description: 了解如何授予对Campaign文件夹的访问权限和创建视图
-feature: 应用程序设置
+feature: Application Settings
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '751'
 ht-degree: 1%
 
 ---
 
 # 管理对文件夹的访问{#folder-access-management}
+
+![](../../assets/common.svg)
 
 Explorer导航树的每个文件夹都具有附加到其的读、写和删除访问权限。 要访问文件，操作员或一组操作员必须至少具有对该文件的读取访问权限。
 

@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: efee50f7-d917-4c71-add2-116c4b8f7013
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 8%
@@ -15,13 +15,15 @@ ht-degree: 8%
 
 # 定义条件性内容{#defining-a-conditional-content}
 
+![](../../assets/common.svg)
+
 您可以对特定报表项目或页面的显示进行条件设置。
 
 要使特定项目成为条件项目，请调整其可见性设置。 有关更多信息，请参阅[Conditioning item display](#conditioning-item-display)。
 
 要视条件显示一个或多个页面，请使用&#x200B;**[!UICONTROL Test]**&#x200B;类型活动。 有关更多信息，请参阅[Conditioning page display](#conditioning-page-display)。
 
-## 调节项目显示{#conditioning-item-display}
+## 调节项显示器 {#conditioning-item-display}
 
 要以条件方式显示部分报表，您需要定义其可见性条件：如果不满足这些条件，则不会显示项目。
 
@@ -33,7 +35,7 @@ ht-degree: 8%
 
 ![](assets/reporting_display_condition.png)
 
-## 正在调整页面显示{#conditioning-page-display}
+## 调整页面显示 {#conditioning-page-display}
 
 在报表图表中，**[!UICONTROL Test]**&#x200B;活动允许您根据一个或多个条件更改页面顺序。
 

@@ -6,19 +6,21 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1629'
 ht-degree: 0%
 
 ---
 
 # 查询{#query}
 
-## 创建查询{#creating-a-query}
+![](../../assets/common.svg)
+
+## 创建查询 {#creating-a-query}
 
 通过查询，您可以根据条件选择目标。 您可以将段代码与查询结果关联，并向其中插入附加数据。
-有关查询示例的更多信息，请参阅此[此部分](../../workflow/using/querying-recipient-table.md)。
+有关查询示例的更多信息，请参阅此[此部分](querying-recipient-table.md)。
 
 >[!NOTE]
 >
@@ -36,7 +38,7 @@ ht-degree: 0%
 
    过滤维度允许收集这些元素，例如与目标人员（合同、完全和最终结算等）相关的信息。
 
-   有关更多信息，请参阅[定位和筛选维度](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions)。
+   有关更多信息，请参阅[定位和筛选维度](building-a-workflow.md#targeting-and-filtering-dimensions)。
 
    ![](assets/s_user_segmentation_query_edit.png)
 
@@ -52,7 +54,7 @@ ht-degree: 0%
 
 1. 如果您在步骤1中选择了&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;或使用&#x200B;**[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]**&#x200B;选项，则以后必须手动添加筛选条件。
 
-   您还可以通过选中相应的框来添加数据分组条件。 要实现此目的，筛选维度必须与查询的定向维度不同。 有关分组的详细信息，请参阅此[部分](../../workflow/using/querying-using-grouping-management.md)。
+   您还可以通过选中相应的框来添加数据分组条件。 要实现此目的，筛选维度必须与查询的定向维度不同。 有关分组的详细信息，请参阅此[部分](querying-using-grouping-management.md)。
 
    您还可以使用表达式生成器并将其与逻辑选项AND、OR和EXCEPT组合来添加更多标准。 然后，您可以预览标准组合的&#x200B;**[!UICONTROL Corresponding SQL query...]**。 有关更多信息，请参阅此[部分](../../platform/using/defining-filter-conditions.md#building-expressions)。
 
@@ -60,7 +62,7 @@ ht-degree: 0%
 
    ![](assets/s_user_segmentation_query_advanced.png)
 
-## 添加数据{#adding-data}
+## 添加数据 {#adding-data}
 
 利用额外的列，可收集有关目标群体的其他信息，例如合同编号、新闻稿订阅或来源。 此数据可存储在Adobe Campaign数据库或外部数据库中。
 
@@ -73,7 +75,7 @@ ht-degree: 0%
 ![](assets/wf_add_data_1st_option.png)
 
 * 选择&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;以选择Adobe Campaign数据库中的数据。
-* 选择&#x200B;**[!UICONTROL External data]**&#x200B;以从外部数据库添加数据。 仅当您购买了&#x200B;**Federated Data Access**&#x200B;选项时，此选项才可用。 有关更多信息，请参阅[访问外部数据库(FDA)](../../workflow/using/accessing-an-external-database--fda-.md)。
+* 选择&#x200B;**[!UICONTROL External data]**&#x200B;以从外部数据库添加数据。 仅当您购买了&#x200B;**Federated Data Access**&#x200B;选项时，此选项才可用。 有关更多信息，请参阅[访问外部数据库(FDA)](accessing-an-external-database--fda-.md)。
 * 选择&#x200B;**[!UICONTROL An offer proposition]**&#x200B;选项可添加一组列，用于存储优惠引擎生成的最佳建议。 仅当您购买了&#x200B;**Interaction**&#x200B;模块时，此选项才可用。
 
 如果平台上未安装可选模块，则不会显示此阶段。 你会被带到下一个阶段。
@@ -90,10 +92,10 @@ ht-degree: 0%
 
    您可以添加：
 
-   * 根据从目标群体或聚合中获取的数据（上个月的待定购买数、接收的平均金额等）计算的字段。 例如，转到[Selecting data](../../workflow/using/targeting-data.md#selecting-data)。
+   * 根据从目标群体或聚合中获取的数据（上个月的待定购买数、接收的平均金额等）计算的字段。 例如，转到[Selecting data](targeting-data.md#selecting-data)。
    * 使用输出列列表右侧的&#x200B;**[!UICONTROL Add]**&#x200B;按钮创建的新字段。
 
-      您还可以添加信息集合，例如合同列表、最近5次投放等。 收藏集与可以具有同一用户档案多个值（1-N关系）的字段一致。 有关更多信息，请参阅[编辑其他数据](../../workflow/using/targeting-data.md#editing-additional-data)。
+      您还可以添加信息集合，例如合同列表、最近5次投放等。 收藏集与可以具有同一用户档案多个值（1-N关系）的字段一致。 有关更多信息，请参阅[编辑其他数据](targeting-data.md#editing-additional-data)。
 
 要添加链接到目标群体的信息集合，请执行以下操作：
 
@@ -123,13 +125,13 @@ ht-degree: 0%
 
 1. 如果已选择&#x200B;**[!UICONTROL Limit the line count]**&#x200B;选项，请定义收集数据的过滤顺序。 如果收集的行数大于您指定要保留的行数，则可使用筛选顺序指定要保留的行。
 
-## 示例：基于简单收件人属性{#example--targeting-on-simple-recipient-attributes}进行定位
+## 示例：基于简单的收件人属性定位 {#example--targeting-on-simple-recipient-attributes}
 
 在下例中，该查询试图查明18至30岁在法国居住的男子。 此查询将用在旨在使其成为例如专用选件的工作流中。
 
 >[!NOTE]
 >
->[此部分](../../workflow/using/querying-recipient-table.md)中提供了其他查询示例。
+>[此部分](querying-recipient-table.md)中提供了其他查询示例。
 
 1. 命名查询，然后选择&#x200B;**[!UICONTROL Edit query...]**&#x200B;链接。
 1. 在可用筛选器类型列表中选择&#x200B;**[!UICONTROL Filtering conditions]**。
@@ -155,7 +157,7 @@ ht-degree: 0%
 
    ![](assets/query_example_result.png)
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * tableName
 * 模式
@@ -165,11 +167,11 @@ ht-degree: 0%
 
 此值是工作表的架构。 此参数适用于具有&#x200B;**[!UICONTROL tableName]**&#x200B;和&#x200B;**[!UICONTROL schema]**&#x200B;的所有过渡。
 
-## 优化查询{#optimizing-queries}
+## 优化查询 {#optimizing-queries}
 
 以下部分提供了优化在Adobe Campaign上运行的查询以限制数据库工作量并改善用户体验的最佳实践。
 
-### 连接和索引{#joins-and-indexes}
+### 连接和索引 {#joins-and-indexes}
 
 * 有效的查询依赖于索引。
 * 对所有连接使用索引。
@@ -184,7 +186,11 @@ ht-degree: 0%
 
    确保知道查询的执行计划。 避免进行全表扫描，尤其是实时查询或几乎每分钟运行的实时查询。
 
-有关更多信息，请参阅[数据模型最佳实践](https://helpx.adobe.com/cn/campaign/kb/acc-data-model-best-practices.html)和[数据库映射](../../configuration/using/database-mapping.md)部分。
+   有关更多信息，请根据您的Campaign版本，参阅以下章节：
+
+   ![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文档](../../configuration/using/database-mapping.md)
+
+   ![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### 函数 {#functions}
 
@@ -193,7 +199,7 @@ ht-degree: 0%
 
    有关函数的更多信息，请参阅[此部分](../../platform/using/defining-filter-conditions.md#list-of-functions)。
 
-### 筛选维度{#filtering-dimensions}
+### 筛选维度 {#filtering-dimensions}
 
 使用查询的过滤维度，而不是使用“存在，如”运算符。
 
@@ -211,7 +217,7 @@ SQL中筛选维的等效项是内部连接：
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-有关筛选维度的更多信息，请参阅[此部分](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions)。
+有关筛选维度的更多信息，请参阅[此部分](building-a-workflow.md#targeting-and-filtering-dimensions)。
 
 ### 架构 {#architecture}
 

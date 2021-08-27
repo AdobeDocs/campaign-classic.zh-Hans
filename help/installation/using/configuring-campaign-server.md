@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
 
 ---
 
-# Campaign服务器配置{#gs-campaign-server-config}快速入门
+# Campaign服务器配置入门{#gs-campaign-server-config}
+
+![](../../assets/v7-only.svg)
 
 本章详细介绍可以执行以匹配您的需求和环境特性的服务器端配置。
 
@@ -57,7 +59,7 @@ Campaign Classic配置文件存储在Adobe Campaign安装文件夹的&#x200B;**c
 * [自动进程重新启动](#automatic-process-restart)
 
 
-## 内部标识符{#internal-identifier}
+## 内部标识符 {#internal-identifier}
 
 **internal**&#x200B;标识符是用于安装、管理和维护的技术登录名。 此登录与实例不关联。
 
@@ -81,7 +83,7 @@ Confirmation: XXXX
 17:34:02 >   Password successfully changed for account 'internal' (authentication mode 'nl')
 ```
 
-## 启用进程{#enabling-processes}
+## 启用进程 {#enabling-processes}
 
 通过&#x200B;**config-default.xml**&#x200B;和&#x200B;**`config-<instance>.xml`**&#x200B;文件，可启用（并禁用）服务器上的Adobe Campaign进程。
 
@@ -136,7 +138,7 @@ Confirmation: XXXX
    有关更多信息，请参阅[个性化参数](../../installation/using/installing-packages-with-linux.md#personalizing-parameters)。
 
 
-## 动态页面安全和中继{#dynamic-page-security-and-relays}
+## 动态页面安全和中继 {#dynamic-page-security-and-relays}
 
 默认情况下，所有动态页面都自动与启动Web模块的计算机的&#x200B;**本地** Tomcat服务器相关联。 此配置在&#x200B;**ServerConf.xml**&#x200B;文件的查询中继配置的&#x200B;**`<url>`**&#x200B;部分中输入。
 
@@ -188,7 +190,7 @@ Adobe Campaign使用以下JSP页：
 >
 >值应根据您的配置和网络限制进行调整，特别是当已为您的安装开发了特定配置时。
 
-### 管理HTTP标头{#managing-http-headers}
+### 管理HTTP头 {#managing-http-headers}
 
 默认情况下，不会中继所有HTTP标头。 您可以在中继发送的回复中添加特定的标头。 操作步骤：
 
@@ -205,7 +207,7 @@ Adobe Campaign使用以下JSP页：
    <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
    ```
 
-## 限制授权的外部命令{#restricting-authorized-external-commands}
+## 限制授权的外部命令 {#restricting-authorized-external-commands}
 
 从版本8780开始，技术管理员可以限制可在Adobe Campaign中使用的授权外部命令列表。
 
@@ -251,7 +253,7 @@ sh
 >您不应使用自定义sudo。 系统上需要安装标准sudo。
 
 
-## 冗余跟踪{#redundant-tracking}
+## 冗余跟踪 {#redundant-tracking}
 
 当使用多个服务器进行重定向时，它们必须能够通过SOAP调用彼此通信，以便共享要重定向的URL中的信息。 在投放启动时，并非所有重定向服务器都可用；因此，他们可能没有相同级别的信息。
 
@@ -274,7 +276,7 @@ sh
 
 
 
-## 高可用性工作流和相关性{#high-availability-workflows-and-affinities}
+## 高可用性工作流和相关性 {#high-availability-workflows-and-affinities}
 
 您可以配置多个工作流服务器(wfserver)，并在两台或多台计算机上分发它们。 如果选择此类型的架构，请根据Adobe Campaign访问配置负载平衡器的连接模式。
 
@@ -315,7 +317,7 @@ sh
    <wfserver autoStart="true" affinity="XXX"/>
    ```
 
-## 自动重新启动{#automatic-process-restart}
+## 自动重新启动 {#automatic-process-restart}
 
 默认情况下，不同的Adobe Campaign进程每天早上6点（服务器时间）自动重新启动。
 

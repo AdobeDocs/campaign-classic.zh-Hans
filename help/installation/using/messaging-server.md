@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: d9ffa58d-81e3-4291-8502-3cb7c326b666
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 消息服务器{#messaging-server}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign本地处理出站电子邮件，但是，需要传统的电子邮件服务器才能接收链接到返回电子邮件（从邮件守护程序）的传入消息。 应用程序将自动处理在此服务器上配置的邮箱。
 

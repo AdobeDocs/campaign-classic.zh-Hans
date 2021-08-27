@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 12%
@@ -14,6 +14,8 @@ ht-degree: 12%
 ---
 
 # 数据导入和导出入门 {#get-started-data-import-export}
+
+![](../../assets/common.svg)
 
 Adobe Campaign Classic提供数据管理功能，允许您导入和导出数据。 可以使用工作流或通用导入和导出来执行这些操作。
 
@@ -44,7 +46,7 @@ Adobe Campaign Classic提供数据管理功能，允许您导入和导出数据�
 >[!IMPORTANT]
 >一般导入和导出仅应用于临时操作。 为确保数据一致性并提高效率，建议使用工作流执行导入和导出操作。
 
-## 数据加密和压缩{#data-encryption-compression}
+## 数据加密和压缩 {#data-encryption-compression}
 
 <img src="assets/do-not-localize/icon_encrypt.svg" width="60px">
 
@@ -57,7 +59,7 @@ Campaign Classic允许您导入压缩或加密文件，以及导出压缩或加�
 * [解压缩或解密文件](../../platform/using/unzip-decrypt.md)
 * [Zip或加密文件](../../platform/using/zip-encrypt.md)
 
-## 最佳实践和故障排除{#best-practices-troubleshooting}
+## 最佳实践和故障排除 {#best-practices-troubleshooting}
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 

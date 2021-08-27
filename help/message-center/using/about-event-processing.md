@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 事件处理 {#about-event-processing}
+
+![](../../assets/v7-only.svg)
 
 在事务型消息传递的上下文中，事件由外部信息系统生成，并通过&#x200B;**[!UICONTROL PushEvent]**&#x200B;和&#x200B;**[!UICONTROL PushEvents]**&#x200B;方法发送到Adobe Campaign（请参阅[事件描述](../../message-center/using/event-description.md)）。
 
@@ -23,7 +25,7 @@ ht-degree: 2%
 
 ![](assets/messagecenter_events_request_001.png)
 
-## 事件处理步骤{#event-processing}
+## 事件处理步骤 {#event-processing}
 
 要处理事务型消息传递事件，请对执行实例应用以下步骤：
 
@@ -76,7 +78,7 @@ ht-degree: 2%
 * 要使用的渠道(默认情况下：email)
 * 基于发布日期的最近投放模板
 
-## 事件状态{#event-statuses}
+## 事件状态 {#event-statuses}
 
 **事件历史记录**&#x200B;在&#x200B;**[!UICONTROL Message Center]** > **[!UICONTROL Event history]**&#x200B;下，将所有已处理的事件分组到一个视图中。 它们可以按事件类型或&#x200B;**status**&#x200B;进行分类。 这些状态包括：
 
@@ -90,7 +92,7 @@ ht-degree: 2%
 * **未涵盖的事件**:事务型消息传递路由阶段失败。例如，Adobe Campaign未找到充当事件模板的电子邮件。
 * **事件过期**:已达到最大发送尝试次数。该事件被视为null。
 
-## 事件循环{#event-recycling}
+## 事件回收 {#event-recycling}
 
 如果在特定渠道上投放消息失败，Adobe Campaign可以使用其他渠道重新发送消息。 例如，如果短信渠道上的投放失败，则会使用电子邮件渠道重新发送消息。
 

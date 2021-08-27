@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 7%
@@ -15,7 +15,9 @@ ht-degree: 7%
 
 # 配置人群样本 {#step-2--configuring-population-samples}
 
-## 配置查询活动{#configuring-the-query-activity}
+![](../../assets/common.svg)
+
+## 配置查询活动 {#configuring-the-query-activity}
 
 * 双击&#x200B;**[!UICONTROL Query]**&#x200B;活动。
 
@@ -29,7 +31,7 @@ ht-degree: 7%
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
-## 配置拆分活动{#configuring-the-split-activity}
+## 配置拆分活动 {#configuring-the-split-activity}
 
 此活动允许您创建多个群体：接收投放A的，接收投放B的，以及剩余的群体。 通过使用随机选择，您只能定位每个投放的一部分群体。
 

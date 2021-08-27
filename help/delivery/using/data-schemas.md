@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 数据模式{#data-schemas}
+
+![](../../assets/common.svg)
 
 以下是关于在Adobe Campaign中使用数据模式的一些一般原则。
 
@@ -104,7 +106,7 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-## 集合元素{#collection-elements}
+## 收藏集元素 {#collection-elements}
 
 集合是具有相同名称和相同层次结构级别的元素列表。
 
@@ -122,7 +124,7 @@ ht-degree: 2%
 >
 >存在&#x200B;**ordered=&quot;true&quot;**&#x200B;属性允许您对插入的集合元素进行排序。
 
-## 引用{#element-referencing}的元素
+## 元素引用 {#element-referencing}
 
 元素引用在内容架构中非常常用。 它允许您对&#x200B;**`<element>`**&#x200B;元素的定义进行分解，以便可以在具有相同结构的其他元素上引用该元素。
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 关于模板{#about-templates}
+
+![](../../assets/common.svg)
 
 投放配置可保存在投放模板中以便重复使用。 模板可以包含投放的完整或部分配置。
 

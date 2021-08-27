@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 2%
@@ -15,13 +15,15 @@ ht-degree: 2%
 
 # 更改维度{#change-dimension}
 
+![](../../assets/common.svg)
+
 通过更改维度活动，您可以在目标构建周期中更改定向维度。 轴移动取决于数据模板和输入维度。 例如，您可以从“合同”维度切换到“客户”维度。
 
 您还可以使用此活动来定义新目标的其他列。
 
 可以定义重复数据删除标准。
 
-## 配置模式{#configuration-mode}
+## 配置模式 {#configuration-mode}
 
 要配置更改维度活动，请应用以下步骤：
 
@@ -55,7 +57,7 @@ ht-degree: 2%
 
       >[!NOTE]
       >
-      >有关创建和管理其他列的信息，请参阅[添加数据](../../workflow/using/query.md#adding-data)。
+      >有关创建和管理其他列的信息，请参阅[添加数据](query.md#adding-data)。
 
    * 选择前一个定向维度（在轴切换之前），在收件人的&#x200B;**[!UICONTROL Location]**&#x200B;子树中选择&#x200B;**[!UICONTROL Zip Code]**，然后单击&#x200B;**[!UICONTROL Edit expression]**。
 

@@ -5,20 +5,22 @@ description: Campaign 18.6发行说明
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-feature: 概述
+feature: Overview
 role: User
 level: Beginner
 exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '799'
 ht-degree: 7%
 
 ---
 
 # 18.6 版{#release-18-6}
 
-## 版本18.6.2 — 版本8949{#release-18-6-3-build-8949}
+![](../../assets/v7-only.svg)
+
+## 18.6.2 版 - 内部版本 8949{#release-18-6-3-build-8949}
 
 2018年8月22日
 
@@ -38,7 +40,7 @@ ht-degree: 7%
  <tbody> 
   <tr> 
    <td> 查询分段<br /> </td> 
-   <td> <p>当多个Campaign用户连接到同一FDATeradata外部帐户时，您现在可以传递特定于每个用户的查询频带（键/值对）。 每次Campaign用户对Teradata数据库执行查询时，Adobe Campaign现在都能够发送与用户关联的元数据。 这些Teradata（包含在键和值列表中）随后可由数据管理员用于审核目的或管理访问权限，例如。</p><p>有关详细信息，请参阅<a href="../../installation/using/external-accounts.md">详细文档</a>。</p> </td>
+   <td> <p>当多个Campaign用户连接到同一FDATeradata外部帐户时，您现在可以传递特定于每个用户的查询频带（键/值对）。 每次Campaign用户对Teradata数据库执行查询时，Adobe Campaign现在都能够发送与用户关联的元数据。 这些Teradata（包含在键和值列表中）随后可由数据管理员用于审核目的或管理访问权限，例如。</p><p>有关详细信息，请参阅<a href="../../installation/using/external-accounts.md">有详细说明的文档</a>。</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -74,7 +76,7 @@ ht-degree: 7%
 * [https://docs.teradata.com/reader/cY5~BoeEUFWjgN2kBnH3Vw/a5G1~izve68yTMa24kVjVw](https://docs.teradata.com/reader/cY5B%7EoeEUFWjgN2kBnH3Vw/a5G1iz%7Eve68yTMa24kVjVw)
 * [https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ)
 
-## 版本18.6 — 版本8947{#release-18-6-build-8947}
+## 18.6 版 - 内部版本 8947{#release-18-6-build-8947}
 
 2018年6月25日
 

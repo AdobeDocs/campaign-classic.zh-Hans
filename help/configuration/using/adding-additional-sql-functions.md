@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 添加其他 SQL 函数{#adding-additional-sql-functions}
+
+![](../../assets/v7-only.svg)
 
 ## 简介 {#introduction}
 
@@ -37,7 +39,7 @@ Adobe Campaign允许用户定义其自己的函数&#x200B;**，以访问SQL函�
 >
 >警告：即使导入的函数列表直接显示在函数编辑器中，但在重新启动Adobe Campaign之前，它们将不可用。
 
-## 要导入{#general-structure-of-package-to-import}的包的一般结构
+## 要导入的包的一般结构 {#general-structure-of-package-to-import}
 
 要添加的函数可在XML格式的&#x200B;**&quot;package&quot; file**&#x200B;中找到。 示例如下：
 
@@ -131,7 +133,7 @@ Adobe Campaign允许用户定义其自己的函数&#x200B;**，以访问SQL函�
    >
    >如果定义的函数可能只查询一个或两个数据库，则我们始终只能提供与这些数据库对应的定义。
 
-## “传递”函数描述符{#pass-through--function-descriptor}
+## “传递”函数描述符 {#pass-through--function-descriptor}
 
 特殊函数描述符是&#x200B;**&quot;pass-through&quot;**&#x200B;块，带有未指定的&quot;provider&quot;数据库系统。 在这种情况下，“body”实施只能包含单个函数调用，其语法与所使用的数据库无关。 同时，“ProviderPart”块是唯一的。
 

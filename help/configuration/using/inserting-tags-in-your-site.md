@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 5%
@@ -15,7 +15,9 @@ ht-degree: 5%
 
 # 在站点中插入标记{#inserting-tags-in-your-site}
 
-## 简单方法{#simple-method}
+![](../../assets/v7-only.svg)
+
+## 简单方法 {#simple-method}
 
 此方法包括通过在要跟踪的网页的HTML源代码中插入&#x200B;**`<img>`** HTML标记，向重定向服务器发送HTTP调用。
 
@@ -37,7 +39,7 @@ ht-degree: 5%
 
 但是，在使用TRANSACTION类型标记时，必须使用JavaScript修改示例标记，以插入事务信息（金额、项目数）和扩展架构定义的任何信息。
 
-### 标记{#static-insertion-of-tags}的静态插入
+### 标记的静态插入 {#static-insertion-of-tags}
 
 要执行静态标签插入，只需将控制台生成或手动构建的标签复制并粘贴到网页源中即可。
 
@@ -85,7 +87,7 @@ ht-degree: 5%
 </html>
 ```
 
-### 动态生成Web跟踪标记{#dynamic-generation-of-web-tracking-tags}
+### 动态生成Web跟踪标记 {#dynamic-generation-of-web-tracking-tags}
 
 当网页是动态生成的时，您可以在页面生成时添加Web跟踪标记。
 
@@ -122,7 +124,7 @@ ht-degree: 5%
 </html>
 ```
 
-## 最佳方法{#optimum-method-}
+## 最佳方法 {#optimum-method-}
 
 如果您希望控制发送到重定向服务器的信息，最可靠的方法是使用页面生成语言同步地执行HTTP查询。
 

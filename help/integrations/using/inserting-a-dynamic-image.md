@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 插入Target动态内容 {#inserting-a-dynamic-image}
+
+![](../../assets/common.svg)
 
 在本指南中，我们将介绍如何将动态选件从Target集成到Adobe Campaign中的电子邮件中。
 

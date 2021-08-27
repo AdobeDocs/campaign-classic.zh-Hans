@@ -5,11 +5,11 @@ product: campaign
 title: Campaign Classic v7 指南
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
-sub-product: Adobe Campaign Classic
+sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a54a6f9b8afedf8a200b80b027f908163faebeaa
+source-git-commit: a066eedd2ba7848f6dcefcb1476a0b834cb1d49a
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2522'
 ht-degree: 99%
 
 ---
@@ -37,11 +37,11 @@ ht-degree: 99%
       + [18.4 版](rn/using/release--18-4.md)
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
-   + [技术说明](technotes/technote.md)
-   + [iOS 证书更新](technotes/ios-certificate-update.md)
-   + [Campaign 配置更新](technotes/acc-config-updates.md)
-   + [跟踪的 URL 更新](technotes/tracked-urls.md)
-   + [IMS 更新](technotes/ims-updates.md)
+   + [技术说明](technotes/using/technote.md)
+   + [iOS 证书更新](technotes/using/ios-certificate-update.md)
+   + [Campaign 配置更新](technotes/using/acc-config-updates.md)
+   + [跟踪的 URL 更新](technotes/using/tracked-urls.md)
+   + [IMS 更新](technotes/using/ims-updates.md)
 + 入门 {#getting-started}
    + 开始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
@@ -118,7 +118,7 @@ ht-degree: 99%
          + [与 CRM 同步数据](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
          + [Adobe Analytics Connector集成](platform/using/adobe-analytics-connector.md)
-         + [如何迁移到Adobe Analytics Connector](technotes/aa-connector-migration.md)
+         + [如何迁移到Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector-legacy.md)
    + [帮助和支持选项](support.md)
 + 创建和发送消息{#sending-messages}
@@ -263,13 +263,13 @@ ht-degree: 99%
       + [监测活动](campaign/using/marketing-campaign-monitoring.md)
       + [供应商、库存和预算](campaign/using/providers--stocks-and-budgets.md)
    + 活动优化 {#campaign-optimization}
-      + [关于活动类型](campaign/using/about-campaign-typologies.md)
-      + [压力规则](campaign/using/pressure-rules.md)
-      + [一致性规则](campaign/using/consistency-rules.md)
-      + [控制规则](campaign/using/control-rules.md)
-      + [筛选规则](campaign/using/filtering-rules.md)
-      + [应用规则](campaign/using/applying-rules.md)
-      + [活动模拟](campaign/using/campaign-simulations.md)
+      + [关于活动类型](campaign-opt/using/about-campaign-typologies.md)
+      + [压力规则](campaign-opt/using/pressure-rules.md)
+      + [一致性规则](campaign-opt/using/consistency-rules.md)
+      + [控制规则](campaign-opt/using/control-rules.md)
+      + [筛选规则](campaign-opt/using/filtering-rules.md)
+      + [应用规则](campaign-opt/using/applying-rules.md)
+      + [活动模拟](campaign-opt/using/campaign-simulations.md)
 + 营销资源管理{#mrm}
    + [关于营销资源管理](mrm/using/about-marketing-resource-management.md)
    + [创建和管理任务](mrm/using/creating-and-managing-tasks.md)
@@ -277,19 +277,19 @@ ht-degree: 99%
    + [管理营销资源](mrm/using/managing-marketing-resources.md)
    + [论坛](mrm/using/discussion-forums.md)
 + 分布式营销 {#distributed-marketing}
-   + [关于分布式营销](campaign/using/about-distributed-marketing.md)
-   + [创建本地活动](campaign/using/creating-a-local-campaign.md)
-   + [创建协作活动](campaign/using/creating-a-collaborative-campaign.md)
-   + [发布活动包](campaign/using/publishing-the-campaign-package.md)
-   + [访问活动](campaign/using/accessing-campaigns.md)
-   + [跟踪活动](campaign/using/tracking-a-campaign.md)
-   + [用例](campaign/using/examples.md)
+   + [关于分布式营销](distributed/using/about-distributed-marketing.md)
+   + [创建本地活动](distributed/using/creating-a-local-campaign.md)
+   + [创建协作活动](distributed/using/creating-a-collaborative-campaign.md)
+   + [发布活动包](distributed/using/publishing-the-campaign-package.md)
+   + [访问活动](distributed/using/accessing-campaigns.md)
+   + [跟踪活动](distributed/using/tracking-a-campaign.md)
+   + [用例](distributed/using/examples.md)
 + 响应管理器 {#response-manager}
-   + [响应管理器入门](campaign/using/about-response-manager.md)
-   + [配置](campaign/using/configuration.md)
-   + [假设验证模板](campaign/using/hypothesis-templates.md)
-   + [创建假设验证](campaign/using/creating-hypotheses.md)
-   + [假设验证跟踪](campaign/using/hypothesis-tracking.md)
+   + [响应管理器入门](response/using/about-response-manager.md)
+   + [配置](response/using/configuration.md)
+   + [假设验证模板](response/using/hypothesis-templates.md)
+   + [创建假设验证](response/using/creating-hypotheses.md)
+   + [假设验证跟踪](response/using/hypothesis-tracking.md)
 + 设计和共享报告{#reporting}
    + 开始使用报告 {#reporting-in-adobe-campaign}
       + [报告工具](reporting/using/about-adobe-campaign-reporting-tools.md)

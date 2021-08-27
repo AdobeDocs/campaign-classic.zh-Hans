@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # Web 服务调用{#web-service-calls}
 
-## 一般信息{#general-information}
+![](../../assets/v7-only.svg)
+
+## 一般信息 {#general-information}
 
 所有API方法都以Web服务的形式呈现。 这样，您就可以通过SOAP调用(即Adobe Campaign应用程序服务器的本机入口点)管理所有Adobe Campaign函数。 Adobe Campaign控制台本身仅使用SOAP调用。
 
@@ -25,7 +27,7 @@ Web服务允许您从第三方系统创建许多应用程序：
 * 开发具有简化功能（Web界面等）的特殊界面，
 * 在遵守贸易规则并与基础物理模型保持隔离的同时，在数据库中提供和查找数据。
 
-## Web服务的定义{#definition-of-web-services}
+## Web服务的定义 {#definition-of-web-services}
 
 在Adobe Campaign应用程序服务器上实施的Web服务的定义可从数据模式中获取。
 
@@ -71,7 +73,7 @@ Web服务允许您从第三方系统创建许多应用程序：
 
 每个服务都有一个WSDL（Web服务描述库）文件。 此XML文件使用元语言来描述服务，并指定可用的方法、参数和与执行服务的服务器联系。
 
-### WSDL文件生成{#wsdl-file-generation}
+### WSDL文件生成 {#wsdl-file-generation}
 
 要生成WSDL文件，必须从Web浏览器中输入以下URL:
 
@@ -82,7 +84,7 @@ https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
 * **`<server>`**:Adobe Campaign应用程序服务器(nlserver web)
 * **`<schema>`**:架构标识键(namespace:schema_name)
 
-### 模式“xtk:queryDef” {#example-on-the--executequery--method-of-schema--xtk-querydef-}的“ExecuteQuery”方法示例
+### 模式“xtk:queryDef”的“ExecuteQuery”方法示例 {#example-on-the--executequery--method-of-schema--xtk-querydef-}
 
 WSDL文件是从URL生成的：
 
@@ -196,7 +198,7 @@ Adobe Campaign通过引入[安全区域](../../installation/using/security-zones
 
 * **通过创建会话令** 牌的Adobe Campaign登录+密码。会话令牌在设置的时间段后自动过期。 不建议使用此模式，因此需要减少某些区域设置的应用程序安全设置（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）。
 
-### 会话令牌特性{#session-token-characteristics}
+### 会话令牌特性 {#session-token-characteristics}
 
 会话令牌具有以下特征：
 
@@ -207,7 +209,7 @@ Adobe Campaign通过引入[安全区域](../../installation/using/security-zones
    * 会话令牌将成为永久令牌，在浏览器关闭后不会销毁此令牌
    * 它位于仅HTTP Cookie中（必须为运算符激活Cookie）
 
-### 安全令牌特性{#security-token-characteristics}
+### 安全令牌特性 {#security-token-characteristics}
 
 安全令牌具有以下特征：
 
@@ -220,7 +222,7 @@ Adobe Campaign通过引入[安全区域](../../installation/using/security-zones
    * 页面URL已更新以更新安全令牌
    * 表单还通过包含令牌的隐藏字段进行更新
 
-#### 安全令牌移动{#security-token-movement}
+#### 安全令牌移动 {#security-token-movement}
 
 通过控制台访问时，它是：
 
@@ -236,7 +238,7 @@ Adobe Campaign通过引入[安全区域](../../installation/using/security-zones
 
 * 它会添加到调用头
 
-### 调用示例{#call-examples}
+### 调用示例 {#call-examples}
 
 * 使用&#x200B;**HttpSoapConnection/SoapService**:
 

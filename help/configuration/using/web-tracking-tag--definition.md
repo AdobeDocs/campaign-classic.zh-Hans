@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 4%
@@ -15,9 +15,11 @@ ht-degree: 4%
 
 # Web 跟踪标记：定义{#web-tracking-tag-definition}
 
+![](../../assets/v7-only.svg)
+
 Web跟踪标记只是使用相应参数构建的URL，通过HTTP查询发送到重定向服务器。
 
-## 要发送的数据的格式{#format-of-the-data-to-be-sent}
+## 要发送的数据的格式 {#format-of-the-data-to-be-sent}
 
 Web跟踪URL的格式如下：**https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
 
@@ -125,7 +127,7 @@ Web跟踪URL的格式如下：**https://`<name_of_redirection_server>`:`<port>`/
 >
 >通过URL参数发送到重定向服务器的所有值都必须进行URL编码。 在给定的示例中，请注意字符“=”和“|”分别编码为“%3D”和“%7C”。
 
-## 数据传输方法{#data-transmission-methods}
+## 数据传输方法 {#data-transmission-methods}
 
 可以使用以下方法：
 

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 45%
@@ -14,6 +14,8 @@ ht-degree: 45%
 ---
 
 # 配置导出作业 {#executing-export-jobs}
+
+![](../../assets/common.svg)
 
 利用导出作业，可访问和提取数据库中的数据：联系人、客户、列表、区段等
 
@@ -23,7 +25,7 @@ ht-degree: 45%
 
 创建新导出作业后，将显示导出向导（请参阅[创建导入和导出作业](../../platform/using/creating-import-export-jobs.md)）。
 
-## 步骤1 — 选择导出模板{#step-1---choosing-the-export-template}
+## 第1步 — 选择导出模板 {#step-1---choosing-the-export-template}
 
 启动导出向导时，首先必须选择模板。例如，要配置最近注册的收件人的导出，请按照以下步骤操作：
 
@@ -61,7 +63,7 @@ ht-degree: 45%
 
    您必须输入上次修改的日期。它可以从字段中检索或计算。
 
-## 步骤3 — 定义输出格式{#step-3---defining-the-output-format}
+## 第3步 — 定义输出格式 {#step-3---defining-the-output-format}
 
 选择导出文件的输出格式。可以使用以下格式：文本、固定列文本、CSV 和 XML。
 
@@ -83,7 +85,7 @@ ht-degree: 45%
 
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以调用函数。 有关更多信息，请参阅[函数列表](../../platform/using/defining-filter-conditions.md#list-of-functions)。
 
-## 步骤5 — 对列{#step-5---sorting-columns}排序
+## 步骤5 — 对列排序 {#step-5---sorting-columns}
 
 选择列的排序顺序。
 
@@ -123,7 +125,7 @@ ht-degree: 45%
 
 点击向导底部的选项卡，从列中结果的预览切换到 XML 中的结果。您还可以查看生成的 SQL 查询。
 
-## 第9步 — 启动导出{#step-9---launching-the-export}
+## 第9步 — 启动导出 {#step-9---launching-the-export}
 
 单击&#x200B;**[!UICONTROL Start]**&#x200B;以启动数据导出。
 

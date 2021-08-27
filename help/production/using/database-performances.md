@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 33dcfd4b-51fd-44f4-98e0-23eafb79d7da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # 数据库性能{#database-performances}
+
+![](../../assets/v7-only.svg)
 
 大多数性能问题都与数据库维护相关。 以下四个主要线索可帮助您找到性能缓慢的原因：
 
@@ -30,7 +32,7 @@ ht-degree: 8%
 >
 >有关分析，请参阅[Adobe Campaign硬件大小调整指南](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)。
 
-## 平台配置{#platform-configuration}
+## 平台配置 {#platform-configuration}
 
 不适当的配置可能会影响平台性能。 我们建议您检查&#x200B;**serverConf.xml**&#x200B;文件中的网络配置、平台可交付性选项以及MTA配置。
 

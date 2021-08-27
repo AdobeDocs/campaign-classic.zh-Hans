@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f,f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: bdc19e80744643097463e4e721b05a2ac8e51a2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 34%
@@ -14,6 +14,8 @@ ht-degree: 34%
 ---
 
 # 使用Adobe Campaign Explorer {#using-adobe-campaign-explorer}
+
+![](../../assets/common.svg)
 
 可通过工具栏图标访问 Adobe Campaign Explorer。它可用于访问 Adobe Campaign、所有 Adobe Campaign 功能、配置屏幕以及部分平台元素的更详细视图。
 

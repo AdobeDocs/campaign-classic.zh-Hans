@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 创建筛选 {#creating-a-filter}
+
+![](../../assets/common.svg)
 
 Adobe Campaign中可用的过滤器是通过过滤条件定义的，这些条件是使用与查询相同的操作模式创建的。
 

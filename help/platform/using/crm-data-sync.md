@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1528'
 ht-degree: 0%
 
 ---
 
-# 在Campaign和CRM之间同步数据{#data-synchronization}
+# 在Campaign和CRM之间同步数据 {#data-synchronization}
+
+![](../../assets/common.svg)
 
 Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行的：[CRM连接器](../../workflow/using/crm-connector.md)。
 
@@ -42,7 +44,7 @@ Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行
 
 此活动的配置取决于要执行的流程。 下面详细介绍了各种配置。
 
-## 从CRM {#importing-from-the-crm}导入
+## 从CRM导入 {#importing-from-the-crm}
 
 要在Adobe Campaign中通过CRM导入数据，您需要创建以下类型的工作流：
 
@@ -80,7 +82,7 @@ Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行
 
    有关更多信息，请参阅[变量管理](#variable-management)。
 
-### 管理变量{#variable-management}
+### 管理变量 {#variable-management}
 
 启用&#x200B;**[!UICONTROL Automatic index]**&#x200B;选项，以仅收集自上次导入以来修改的对象。
 
@@ -113,7 +115,7 @@ Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行
    >
    >这些日期采用以下格式显示：**yyyy/MM/dd hh:mm:ss**。
 
-### 筛选数据{#filtering-data}
+### 筛选数据 {#filtering-data}
 
 为确保对各种CRM进行高效操作，需要使用以下规则创建过滤器：
 
@@ -131,7 +133,7 @@ Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行
 
 ![](assets/crm_import_wrong_filter.png)
 
-### 按{#order-by}排序
+### 订购依据 {#order-by}
 
 在Microsoft Dynamics和Salesforce.com中，您可以对要导入的远程字段进行升序或降序排序。
 
@@ -141,7 +143,7 @@ Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行
 
 ![](assets/crm_import_order.png)
 
-### 记录标识{#record-identification}
+### 记录标识 {#record-identification}
 
 您可以使用在工作流中预先计算的群体，而不是导入CRM中包含的（可能已过滤的）元素。
 
@@ -186,7 +188,7 @@ Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行
 
 ## 其他配置 {#additional-configurations}
 
-### 数据格式{#data-format}
+### 数据格式 {#data-format}
 
 在将数据格式导入CRM或从CRM导入数据格式时，您可以即时转换这些格式。
 
@@ -202,7 +204,7 @@ Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行
 * **[!UICONTROL Without time offset]**:此模式会取消在默认模式下应用的时区管理。
 * **[!UICONTROL Copy/Paste]**:此模式使用原始数据，如字符串（无转化）。
 
-### 处理{#error-processing}时出错
+### 错误处理 {#error-processing}
 
 在数据导入或导出的框架内，您可以对错误和拒绝应用特定流程。 要执行此操作，请在&#x200B;**[!UICONTROL Behavior]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Process rejects]**&#x200B;和&#x200B;**[!UICONTROL Process errors]**&#x200B;选项。
 
@@ -224,7 +226,7 @@ Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行
 
 **[!UICONTROL Reject]**&#x200B;输出过渡允许您访问包含与错误消息和代码相关的特定列的输出架构。 对于Salesforce.com，此列为&#x200B;**errorSymbol**（错误符号，与错误代码不同）、 **errorMessage**（错误上下文的描述）。
 
-## 导入在CRM {#importing-objects-deleted-in-the-crm}中删除的对象
+## 导入在CRM中删除的对象 {#importing-objects-deleted-in-the-crm}
 
 要启用广泛数据同步过程的设置，您可以将CRM中删除的对象导入Adobe Campaign。
 
@@ -240,7 +242,7 @@ Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行
    >
    >元素删除期间必须与CRM特定的限制相一致。 这意味着，例如，对于Salesforce.com，无法恢复在30天前删除的元素。
 
-## 删除CRM {#deleting-objects-in-the-crm}中的对象
+## 删除CRM中的对象 {#deleting-objects-in-the-crm}
 
 要删除CRM端的对象，您需要指定要删除的远程元素的主键。
 
@@ -251,4 +253,3 @@ Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行
 >[!NOTE]
 >
 >即使&#x200B;**[!UICONTROL Process rejects]**&#x200B;选项处于禁用状态，也会为每个被拒绝列生成警告。
-

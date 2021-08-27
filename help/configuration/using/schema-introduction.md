@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 27%
 
 ---
 
-# 架构引用{#schema-reference}
+# 模式参考 {#schema-reference}
+
+![](../../assets/v7-only.svg)
 
 在编辑模式时，可使用基于源模式(xtk:srcSchema)的审批系统。 在使用“数据库结构更新……”更新数据库时，也会发现一些错误 向导。
 

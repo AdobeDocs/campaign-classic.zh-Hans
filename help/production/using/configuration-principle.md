@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 03d7e579-8678-44b8-bbe7-cf4204bffb25
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 配置原则{#configuration-principle}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign平台基于实例的概念，与Apache使用的虚拟主机的概念类似。 此操作模式允许您通过为服务器分配多个实例来共享服务器。 实例彼此完全分离，并使用它们自己的数据库和配置文件运行。
 

@@ -2,18 +2,20 @@
 product: campaign
 title: 添加用户档案
 description: 添加用户档案
-feature: 用户档案
+feature: Profiles
 role: User
 level: Beginner
 exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '74'
 ht-degree: 82%
 
 ---
 
 # 添加用户档案{#adding-profiles}
+
+![](../../assets/common.svg)
 
 在大多数情況下，可[通过工作流将用户档案导入 Campaign](../../platform/using/import-export-workflows.md)。不过，您可以单击 **[!UICONTROL Create]** 按钮，直接从界面上添加一个或多个用户档案。然后系统会将它们添加到数据库中。
 

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 4%
@@ -15,9 +15,11 @@ ht-degree: 4%
 
 # 应用程序对象{#application-objects}
 
+![](../../assets/v7-only.svg)
+
 应监控内置对象，并防止其增长过多非常重要。
 
-## ID序列{#sequence-of-ids}
+## ID序列 {#sequence-of-ids}
 
 Adobe Campaign使用的ID序列必须相应地使用：**xtkNewId**。 如果该序列使用非常快（即每天10万封），则必须验证它是否符合您的业务要求，例如每天发送数百万封电子邮件。 可以为特定表定义专用序列。 您可以设置一个工作流来监视ID使用情况。
 
@@ -49,7 +51,7 @@ Adobe Campaign使用的ID序列必须相应地使用：**xtkNewId**。 如果该
 
 如果工作流导入文件而未使用标准功能，则需要清除该文件，以将磁盘空间保持在最小。
 
-## 事务型数据和日志{#transactional-data-and-logs}
+## 事务型数据和日志 {#transactional-data-and-logs}
 
 将数据导入Adobe Campaign的每个[工作流](../../workflow/using/data-life-cycle.md#work-table)都会导致数据库的大小增加。
 

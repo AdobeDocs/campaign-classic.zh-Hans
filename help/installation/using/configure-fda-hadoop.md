@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
 
 ---
 
-# 配置对Hadoop{#configure-access-to-hadoop}的访问
+# 配置对Hadoop的访问 {#configure-access-to-hadoop}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign **联合数据访问**(FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对Hadoop的访问。
 
@@ -37,7 +39,7 @@ ht-degree: 1%
 
 1. 在Campaign Classic中，您可以配置[!DNL Hadoop]外部帐户。 有关如何配置外部帐户的更多信息，请参阅[此部分](#hadoop-external)。
 
-## Hadoop外部帐户{#hadoop-external}
+## Hadoop外部帐户 {#hadoop-external}
 
 [!DNL Hadoop]外部帐户允许您将Campaign实例连接到Hadoop外部数据库。
 

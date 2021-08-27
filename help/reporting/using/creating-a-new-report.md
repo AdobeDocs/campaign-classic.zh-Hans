@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 创建新报告{#creating-a-new-report}
+
+![](../../assets/common.svg)
 
 要创建报表，请应用以下步骤：
 
@@ -37,7 +39,7 @@ ht-degree: 1%
 
 1. 保存此报表。
 
-## 对图表{#modelizing-the-chart}建模
+## 建模图表 {#modelizing-the-chart}
 
 保存报表后，应显示此内容。 您现在可以构建报表图表。
 
@@ -87,7 +89,7 @@ ht-degree: 1%
 
 ![](assets/reporting_graph_sample_ok.png)
 
-## 创建页面{#creating-a-page}
+## 创建页面 {#creating-a-page}
 
 内容通过置于图表中的活动进行配置。 有关更多信息，请参阅[对图表](#modelizing-the-chart)建模。
 
@@ -125,13 +127,13 @@ ht-degree: 1%
 
 ![](assets/s_ncs_advuser_report_wizard_08.png)
 
-### 静态元素{#static-elements}
+### 静态元素 {#static-elements}
 
 静态元素允许您在报表中显示用户不会与之交互的信息，如图形元素或脚本。 有关详细信息，请参阅[此部分](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)。
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
-### 筛选报表{#filtering-information-in-a-report}中的信息
+### 过滤报表中的信息 {#filtering-information-in-a-report}
 
 通过输入和选择控件，您可以过滤报表中显示的信息。 有关实施此类筛选的更多信息，请参阅查询](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries)中的[筛选选项。
 

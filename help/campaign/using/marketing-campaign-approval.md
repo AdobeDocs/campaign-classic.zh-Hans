@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 建立和管理审批流程 {#approving-marketing-campaigns}
+
+![](../../assets/common.svg)
 
 投放的每个步骤都可获得批准，以确保对营销活动的各个流程进行全面监控和控制：定位、内容、预算、提取和发送校样。
 
@@ -56,7 +58,7 @@ ht-degree: 0%
 
 ![](assets/s_user_validation_select_process_from_del.png)
 
-## 选择审阅人{#selecting-reviewers}
+## 选择审阅人 {#selecting-reviewers}
 
 对于每种类型的批准，从投放的下拉列表中选择负责批准的操作员或操作员组。 使用&#x200B;**[!UICONTROL Edit...]**&#x200B;链接可以添加更多运算符。 此窗口还允许您编辑审批截止时间。
 
@@ -71,9 +73,9 @@ ht-degree: 0%
 >所有具有&#x200B;**[!UICONTROL Administrator]**&#x200B;权限的其他Adobe Campaign运算符也可以批准作业，但它们不会收到通知。\
 >默认情况下，如果定义了批准运算符，则营销活动管理器无法执行批准或开始投放。 您可以修改此行为并授权营销活动管理器批准/启动投放，方法是创建&#x200B;**NmsCampaign_Activate_OwnerConfirmation**&#x200B;选项，并将&#x200B;**1**&#x200B;作为值。
 
-## 批准模式{#approval-modes}
+## 审批模式 {#approval-modes}
 
-### 通过功能板{#approval-via-the-dashboard}进行批准
+### 通过功能板进行批准 {#approval-via-the-dashboard}
 
 要通过控制台或Web界面批准作业，请单击营销活动仪表板上的相应链接。 也可以通过投放跟踪或投放仪表板批准作业。
 
@@ -85,7 +87,7 @@ ht-degree: 0%
 >
 >如果某个流程已经由其他操作员批准，则该批准链接不可用。
 
-### 通过通知消息{#approval-via-notification-messages}进行批准
+### 通过通知消息批准 {#approval-via-notification-messages}
 
 单击通知消息中可用的链接（请参阅[Notifications](#notifications)）。 您需要登录，如下所示：
 
@@ -101,7 +103,7 @@ ht-degree: 0%
 >
 >如果在该过程中引发警告，则通知中会显示警告。
 
-### 批准跟踪{#approval-tracking}
+### 批准跟踪 {#approval-tracking}
 
 该信息可在以下几处获得：
 
@@ -125,7 +127,7 @@ ht-degree: 0%
 >
 >一旦操作员批准或拒绝了工作，其他审核操作员就无法再对批准执行操作。
 
-### 自动和手动批准{#automatic-and-manual-approval}
+### 自动和手动审批 {#automatic-and-manual-approval}
 
 在创建定位工作流程时，如果批准是自动的（默认模式），则Adobe Campaign会显示批准链接或在需要批准时立即发送通知。
 
@@ -151,7 +153,7 @@ ht-degree: 0%
 
 通知电子邮件的内容可以个性化。 请参阅[通知内容](#notification-content)。
 
-### 启用/禁用通知{#enabling-disabling-notification}
+### 启用/禁用通知 {#enabling-disabling-notification}
 
 默认情况下，如果在营销活动模板、营销活动或投放中启用了相关作业的批准，则会发送通知消息。 但是，可以禁用通知，以便仅从控制台授权批准。
 
@@ -159,11 +161,11 @@ ht-degree: 0%
 
 ![](assets/s_user_validation_notif_desactivate.png)
 
-### 通知内容{#notification-content}
+### 通知内容 {#notification-content}
 
 通知内容在特定模板中定义：**[!UICONTROL Notification of validations for the marketing campaign]**。 此模板保存在Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;文件夹中。
 
-## 审核和批准投放{#checking-and-approving-deliveries}
+## 审核和批准投放 {#checking-and-approving-deliveries}
 
 Adobe Campaign允许您以协作模式为营销活动的主要阶段设置审批流程。
 
@@ -173,7 +175,7 @@ Adobe Campaign允许您以协作模式为营销活动的主要阶段设置审批
 
 完成这些验证阶段后，即可启动投放。 [了解详情](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)。
 
-### 批准投放的步骤{#approving-processes}
+### 批准投放的步骤 {#approving-processes}
 
 需要批准的阶段显示在营销活动仪表板（通过Web界面的控制台）上。 它们还会显示在投放跟踪表和投放仪表板中。
 
@@ -182,7 +184,6 @@ Adobe Campaign允许您以协作模式为营销活动的主要阶段设置审批
 >[!NOTE]
 >
 >要选择需要批准的流程，请修改营销活动模板。 有关更多信息，请参阅[营销活动模板](../../campaign/using/marketing-campaign-templates.md#campaign-templates)。
-
 
 ![](assets/s_ncs_user_edit_del_to_validate.png)
 
@@ -228,7 +229,7 @@ Adobe Campaign允许您以协作模式为营销活动的主要阶段设置审批
 
    ![](assets/s_ncs_user_task_valid_associate.png)
 
-### 选择批准{#choosing-the-processes-to-be-approved}的进程
+### 选择流程批准 {#choosing-the-processes-to-be-approved}
 
 使用与营销活动关联的模板来定义批准阶段。 您必须从模板中选择要批准的元素，并指定负责这些批准的Adobe Campaign运算符。 有关营销活动模板的更多信息，请参阅[此部分](../../campaign/using/marketing-campaign-templates.md#campaign-templates)。
 
@@ -255,7 +256,6 @@ Adobe Campaign允许您以协作模式为营销活动的主要阶段设置审批
 >
 
 
-
 ![](assets/s_ncs_user_edit_op_valid_calendar.png)
 
 对于每个投放，单击&#x200B;**[!UICONTROL Audit]**&#x200B;按钮和&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡，以查看和编辑批准日期和自动提醒。
@@ -266,7 +266,7 @@ Adobe Campaign允许您以协作模式为营销活动的主要阶段设置审批
 >
 >内容批准流程启动后，此选项卡即可用。
 
-### 批准内容{#approving-content}
+### 批准内容 {#approving-content}
 
 >[!CAUTION]
 >
@@ -312,7 +312,7 @@ Adobe Campaign允许您以协作模式为营销活动的主要阶段设置审批
 
    ![](assets/s_user_validation_relaunch_content_validation.png)
 
-#### 分配内容编辑{#assign-content-editing}
+#### 分配内容编辑 {#assign-content-editing}
 
 利用此选项，可定义负责内容编辑的人员，如网站管理员。 如果在批准设置窗口中选择了&#x200B;**[!UICONTROL Assign content editing]**&#x200B;选项，则在创建投放和将通知电子邮件发送给内容负责人之间，将添加多个批准步骤：
 
@@ -352,7 +352,7 @@ Adobe Campaign允许您以协作模式为营销活动的主要阶段设置审批
 
       ![](assets/s_ncs_user_validation_submit_content_available4.png)
 
-#### 外部内容批准{#external-content-approval}
+#### 外部内容批准 {#external-content-approval}
 
 利用此选项，可定义负责批准投放渲染的外部操作员，如品牌通信一致性、费率等。 在批准设置窗口中选择&#x200B;**[!UICONTROL External content approval]**&#x200B;选项后，在内容批准和向营销活动负责人发送通知之间，会添加多个批准步骤：
 
@@ -365,7 +365,7 @@ Adobe Campaign允许您以协作模式为营销活动的主要阶段设置审批
 
    ![](assets/s_user_validation_external_content.png)
 
-### 批准提取文件{#approving-an-extraction-file}
+### 批准提取文件 {#approving-an-extraction-file}
 
 对于脱机投放，Adobe Campaign会生成一个提取文件，根据其设置，该文件将发送到路由器。 其内容取决于所使用的导出模板。
 

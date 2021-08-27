@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 模拟范围{#simulation-scope}
 
-## 范围{#definition-of-the-scope}的定义
+![](../../assets/v7-only.svg)
+
+## 范围的定义 {#definition-of-the-scope}
 
 打开&#x200B;**[!UICONTROL Scope]**&#x200B;选项卡以选择您的设置。
 
@@ -42,7 +44,7 @@ ht-degree: 2%
 >
 >您必须指定联系日期。 这允许交互引擎对选定环境或类别中的选件进行排序。 如果未配置任何日期，则模拟将引发错误。
 
-## 添加报告轴{#adding-reporting-axes}
+## 添加报表轴 {#adding-reporting-axes}
 
 您可以通过&#x200B;**[!UICONTROL Calculations]**&#x200B;选项卡在目标或选件本身上添加报表轴来增强模拟分析。
 

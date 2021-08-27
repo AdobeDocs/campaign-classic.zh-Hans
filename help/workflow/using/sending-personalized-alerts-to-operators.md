@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 向运营商发送个性化提醒{#sending-personalized-alerts-to-operators}
+
+![](../../assets/common.svg)
 
 在此示例中，我们希望向运算符发送警报，该运算符将包含已打开新闻稿但未单击其所包含链接的用户档案名称。
 
@@ -28,7 +30,7 @@ ht-degree: 2%
 
 ![](assets/uc_operator_1.png)
 
-## 将群体保存到实例变量{#saving-the-population-to-the-instance-variable}
+## 将群体保存到实例变量 {#saving-the-population-to-the-instance-variable}
 
 将以下代码添加到&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动中。
 
@@ -65,7 +67,7 @@ var query = xtk.queryDef.create(
 
    ![](assets/uc_operator_6.png)
 
-## 测试群体计数{#testing-the-population-count}
+## 测试群体计数 {#testing-the-population-count}
 
 将以下代码添加到&#x200B;**[!UICONTROL Test]**&#x200B;活动中，以检查目标群体是否至少包含1个用户档案。
 
@@ -75,7 +77,7 @@ var.recCount>0
 
 ![](assets/uc_operator_7.png)
 
-## 设置警报{#setting-up-the-alert}
+## 设置警报 {#setting-up-the-alert}
 
 现在，已将群体添加到包含所需字段的实例变量中，接下来可以将这些信息添加到&#x200B;**[!UICONTROL Alert]**&#x200B;活动中。
 

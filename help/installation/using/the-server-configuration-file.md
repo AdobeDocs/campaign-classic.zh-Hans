@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '7969'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 服务器配置文件{#the-server-configuration-file}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign的整体配置在安装目录的&#x200B;**conf**&#x200B;目录的&#x200B;**serverConf.xml**&#x200B;文件中定义。 本部分列出&#x200B;**serverConf.xml**&#x200B;文件的所有不同节点和参数。
 
@@ -474,7 +476,7 @@ Adobe Campaign的整体配置在安装目录的&#x200B;**conf**&#x200B;目录的
    <td> 字符串<br /> </td> 
   </tr> 
   <tr> 
-   <td> 标签<br /> </td> 
+   <td> label<br /> </td> 
    <td> 命令行标签<br /> </td> 
    <td> 字符串<br /> </td> 
   </tr> 
@@ -898,7 +900,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
  </tbody> 
 </table>
 
-### HTTP代理/安全代理{#http-proxy---secure-proxy-}
+### HTTP代理/安全代理 {#http-proxy---secure-proxy-}
 
 在&#x200B;**proxyConfig > HTTP代理/安全代理**&#x200B;节点中，配置以下参数。
 
@@ -1986,7 +1988,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*”
  </tbody> 
 </table>
 
-### 中继{#relay-1}
+### 中继 {#relay-1}
 
 以下是&#x200B;**nmac > relay**&#x200B;节点的不同参数。 这会配置对消息传递的中继的使用(ios http2 connector)。
 
@@ -3028,7 +3030,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*”
 
 **web > jsp > classpath**&#x200B;节点包含启动JVM时要使用的所有类路径的列表。
 
-### 中继{#relay-2}
+### 中继 {#relay-2}
 
 以下是&#x200B;**web > relay**&#x200B;节点的不同参数。 这是两个区域之间HTTP请求的中继配置。
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 向列表发送报告{#sending-a-report-to-a-list}
+
+![](../../assets/common.svg)
 
 此用例详细说明了如何以PDF格式生成每月开箱即用的&#x200B;**[!UICONTROL Tracking indicators]**&#x200B;报告，以及如何将其发送到收件人列表。
 
@@ -25,7 +27,7 @@ ht-degree: 1%
 * 创建投放模板，以便您在每次执行工作流时都生成新投放(请参阅：[步骤2:创建投放模板](#step-2--creating-the-delivery-template))。
 * 创建工作流，以便您生成PDF格式的报表，并将其发送到收件人列表(请参阅：[步骤3:创建工作流](#step-3--creating-the-workflow))。
 
-## 步骤1:创建收件人列表{#step-1--creating-the-recipient-list}
+## 步骤1:创建收件人列表 {#step-1--creating-the-recipient-list}
 
 转到&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL Lists]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮。 选择&#x200B;**[!UICONTROL New list]**&#x200B;并为要发送到的报表创建新收件人列表。
 
@@ -33,7 +35,7 @@ ht-degree: 1%
 
 有关创建列表的更多信息，请参阅此[部分](../../platform/using/creating-and-managing-lists.md)。
 
-## 步骤2:创建投放模板{#step-2--creating-the-delivery-template}
+## 步骤2:创建投放模板 {#step-2--creating-the-delivery-template}
 
 1. 转到Adobe Campaign资源管理器的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点，并复制现成的&#x200B;**[!UICONTROL Email delivery]**&#x200B;模板。
 
@@ -71,7 +73,7 @@ ht-degree: 1%
 
       ![](assets/use_case_report_6bis.png)
 
-## 步骤3:创建工作流{#step-3--creating-the-workflow}
+## 步骤3:创建工作流 {#step-3--creating-the-workflow}
 
 为此用例创建了以下工作流。 它有三项活动：
 
@@ -89,7 +91,7 @@ ht-degree: 1%
 
    ![](assets/use_case_report_9.png)
 
-   有关配置调度程序的更多信息，请参阅[调度程序](../../workflow/using/scheduler.md)。
+   有关配置调度程序的更多信息，请参阅[调度程序](scheduler.md)。
 
 1. 然后添加&#x200B;**[!UICONTROL JavaScript code]**&#x200B;类型活动。
 

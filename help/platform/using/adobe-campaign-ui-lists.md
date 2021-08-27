@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 84%
@@ -15,9 +15,11 @@ ht-degree: 84%
 
 # 管理和自定义列表{#manage-and-customize-lists}
 
+![](../../assets/common.svg)
+
 您可以使用资源管理器访问Campaign数据库中的记录列表。 您可以过滤这些列表、运行搜索、添加信息、过滤和排序数据。
 
-## 计数记录{#counting-records}
+## 计数记录 {#counting-records}
 
 默认情况下，Adobe Campaign 会加载列表的前 200 条记录。这意味着不一定会显示您所查看的数据库表的所有记录。您可以统计列表中的记录数量并加载更多记录。
 
@@ -27,7 +29,7 @@ ht-degree: 84%
 
 如果右侧出现 **?** 而非数字，可单击计数器启动计算过程。
 
-### 加载更多记录{#loading-more-records}
+### 加载更多记录 {#loading-more-records}
 
 要加载（以及显示）其他记录（默认为 200 行），可单击 **[!UICONTROL Continue loading]**。
 
@@ -49,7 +51,7 @@ ht-degree: 84%
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-## 配置列表{#configuring-lists}
+## 配置列表 {#configuring-lists}
 
 ### 添加列 {#add-columns}
 
@@ -120,7 +122,7 @@ ht-degree: 84%
 
 列表处于活动状态时，即至少选中了一行时，您可以使用 F9 调整列宽，以便在屏幕上显示所有的列。
 
-### 在子文件夹{#display-sub-folders-records}中显示数据
+### 在子文件夹中显示数据 {#display-sub-folders-records}
 
 列表可显示：
 
@@ -131,7 +133,7 @@ ht-degree: 84%
 
 ![](assets/s_ncs_user_display_children_icon.png)
 
-## 保存列表配置{#saving-a-list-configuration}
+## 保存列表配置 {#saving-a-list-configuration}
 
 列表配置是在工作站级别本地定义的。清空本地缓存时，本地配置被禁用。
 
@@ -161,7 +163,7 @@ ht-degree: 84%
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-## 导出列表{#exporting-a-list}
+## 导出列表 {#exporting-a-list}
 
 要从列表中导出数据，必须使用导出向导。要启动此向导，可从列表中选择要导出的元素，右键单击它后选择 **[!UICONTROL Export...]**。
 
@@ -171,7 +173,7 @@ ht-degree: 84%
 >
 >不得使用“复制/粘贴”功能从列表中导出元素。
 
-## 对列表{#sorting-a-list}排序
+## 对列表排序 {#sorting-a-list}
 
 列表中可包含大量的数据。您可以排序这些数据，或者应用简单或高级过滤器。利用排序，您可以按升序或降序顺序显示数据。您可以利用过滤器来定义并组合各种标准，从而仅显示所选的数据。
 
@@ -196,7 +198,7 @@ ht-degree: 84%
 
 1. 单击 **[!UICONTROL Ok]** 确认此配置，并在列表中显示结果。
 
-### 搜索元素{#running-a-search}
+### 搜索元素 {#running-a-search}
 
 您可使用字段列表上方的 **[!UICONTROL Search]** 字段对编辑器中的可用字段进行搜索。按下键盘上的 **Enter** 键或浏览列表。符合搜索内容的字段将以粗体标签显示。
 

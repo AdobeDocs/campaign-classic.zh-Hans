@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 87%
@@ -14,6 +14,8 @@ ht-degree: 87%
 ---
 
 # 编辑用户档案{#editing-a-profile}
+
+![](../../assets/common.svg)
 
 要查看与用户档案相关的信息，请在用户档案列表中单击其名称。
 
@@ -31,7 +33,7 @@ ht-degree: 87%
 >
 >如需详细信息，请参阅[此页面](../../configuration/using/about-schema-edition.md)。
 
-## “一般”选项卡{#general-tab}
+## “一般”选项卡 {#general-tab}
 
 此界面中包含有关所选用户档案的全部一般数据。特別是其中包含姓氏、名字、电子邮件地址、电子邮件接收格式等。它看起来如下所示：
 
@@ -41,7 +43,7 @@ ht-degree: 87%
 >
 >选择&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;选项后，这表示用户档案处于状阻止列表态，即该用户档案表示不希望与其联系（例如，单击新闻稿中的退订链接）。 通过任何渠道（电子邮件、直邮广告等）投放时都不会定位这些顾客。有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
 
-## “联系人信息”选项卡{#contact-information-tab}
+## “联系人信息”选项卡 {#contact-information-tab}
 
 此界面包含所选用户档案的直邮地址。它看起来如下所示：
 
@@ -49,7 +51,7 @@ ht-degree: 87%
 
 此界面显示地址的质量指标，以及地址中包含的错误数目。邮递方根据先前投放过程中所找到的错误数量直接使用此信息，且无法手动修改。
 
-## “其他”选项卡{#other-tab}
+## “其他”选项卡 {#other-tab}
 
 此界面包含用户定义字段，可根据需求对其进行个性化设置。您还可以通过&#x200B;**[!UICONTROL Field properties...]**&#x200B;更改字段名称并定义其格式，如下所示：
 
@@ -59,7 +61,7 @@ ht-degree: 87%
 >
 >如需有关字段属性和添加字段的详细信息，请参阅[此页面](../../configuration/using/new-field-wizard.md)。
 
-## “列表”选项卡{#lists-tab}
+## “列表”选项卡 {#lists-tab}
 
 此界面显示所选的用户档案属于哪个组。单击 **[!UICONTROL Add]** 将用户档案订阅添加到列表中。单击 **[!UICONTROL Detail]** 显示所选列表中的描述和用户档案列表。
 
@@ -67,7 +69,7 @@ ht-degree: 87%
 
 有关更多信息，请参阅[创建和管理列表](../../platform/using/creating-and-managing-lists.md)。
 
-## “订阅”选项卡{#subscriptions-tab}
+## “订阅”选项卡 {#subscriptions-tab}
 
 此界面包含用户档案所订阅的信息服务。
 
@@ -77,13 +79,13 @@ ht-degree: 87%
 
 有关详细信息，请参见[此页面](../../delivery/using/managing-subscriptions.md)。
 
-## “投放”选项卡{#deliveries-tab}
+## “投放”选项卡 {#deliveries-tab}
 
 此界面显示所选用户档案的投放日志。您也可以显示通过所有渠道投放至用户档案的投放动作的标签、日期和状态。
 
 ![](assets/s_ncs_user_profile_delivery_tab.png)
 
-## “跟踪”选项卡{#tracking-tab}
+## “跟踪”选项卡 {#tracking-tab}
 
 您可以使用此界面查看所选用户档案的跟踪日志。此信息用于跟踪投放后用户档案的行为。
 

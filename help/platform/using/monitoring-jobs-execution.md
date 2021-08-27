@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 55%
@@ -14,6 +14,8 @@ ht-degree: 55%
 ---
 
 # 监测作业执行 {#monitoring-job-execution}
+
+![](../../assets/common.svg)
 
 您可以直接从导入/导出作业列表跟踪导入和导出作业的执行情况。
 

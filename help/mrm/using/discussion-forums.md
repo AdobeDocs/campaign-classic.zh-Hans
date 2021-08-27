@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 论坛{#discussion-forums}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign运营商可以使用论坛来共享信息。 以下元素各自具有自己的论坛：计划、项目、活动、资源、模拟、库存。 每位运营商还设有个人论坛。 所有讨论都是公开的，甚至在个人论坛上。
 

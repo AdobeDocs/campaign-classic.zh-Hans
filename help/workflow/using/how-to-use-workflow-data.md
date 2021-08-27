@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -15,11 +15,13 @@ ht-degree: 2%
 
 # 如何使用工作流数据{#how-to-use-workflow-data}
 
-## 更新数据库{#updating-the-database}
+![](../../assets/common.svg)
+
+## 更新数据库 {#updating-the-database}
 
 所有收集的数据都可用于更新数据库或投放。 例如，您可以扩充邮件内容的个性化可能性（包括邮件中的合同数、指定去年的平均购物车数等） 或详细定位群体（向合同合同持有者发送消息，定位在线服务的1,000位最佳订阅者，等等）。 此数据也可以在列表中导出或存档。
 
-### 列表和直接更新{#lists-and-direct-updates}
+### 列表和直接更新 {#lists-and-direct-updates}
 
 Adobe Campaign数据库和现有列表的数据可以使用两个专用活动进行更新：
 
@@ -29,23 +31,23 @@ Adobe Campaign数据库和现有列表的数据可以使用两个专用活动进
 
    ![](assets/s_user_create_list.png)
 
-   请参阅[列表更新](../../workflow/using/list-update.md)。
+   请参阅[列表更新](list-update.md)。
 
 * **[!UICONTROL Update data]**&#x200B;活动对数据库中的字段执行批量更新。
 
-   有关更多信息，请参阅[更新数据](../../workflow/using/update-data.md)。
+   有关更多信息，请参阅[更新数据](update-data.md)。
 
-### 订阅/退订管理{#subscription-unsubscription-management}
+### 订阅/退订管理 {#subscription-unsubscription-management}
 
-要了解如何通过工作流为信息服务的收件人订阅和取消订阅，请参阅[订阅服务](../../workflow/using/subscription-services.md)。
+要了解如何通过工作流为信息服务的收件人订阅和取消订阅，请参阅[订阅服务](subscription-services.md)。
 
-## 通过工作流{#sending-via-a-workflow}发送
+## 通过工作流发送 {#sending-via-a-workflow}
 
-### 投放活动{#delivery-activity}
+### 投放活动 {#delivery-activity}
 
-[Delivery](../../workflow/using/delivery.md)中详细介绍了投放活动。
+[Delivery](delivery.md)中详细介绍了投放活动。
 
-### 扩充和定位投放{#enriching-and-targeting-deliveries}
+### 丰富和定位投放 {#enriching-and-targeting-deliveries}
 
 投放可以处理来自工作流的数据，以便自定义内容或在目标群体选择的框架内。
 
@@ -57,7 +59,7 @@ Adobe Campaign数据库和现有列表的数据可以使用两个专用活动进
 
 ![](assets/s_advuser_using_additional_data.png)
 
-工作流表中包含的数据由其名称标识：它始终由&#x200B;**targetData**&#x200B;链接组成。 有关更多信息，请参阅[Target数据](../../workflow/using/data-life-cycle.md#target-data)。
+工作流表中包含的数据由其名称标识：它始终由&#x200B;**targetData**&#x200B;链接组成。 有关更多信息，请参阅[Target数据](data-life-cycle.md#target-data)。
 
 在电子邮件投放的框架中，个性化字段还可以使用在定位工作流阶段中执行的定位扩展中的数据，如以下示例所示：
 

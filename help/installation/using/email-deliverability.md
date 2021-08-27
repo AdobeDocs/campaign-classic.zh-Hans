@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3022'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 技术电子邮件配置{#email-deliverability}
+
+![](../../assets/v7-only.svg)
 
 ## 概述 {#overview}
 
@@ -40,7 +42,7 @@ ht-degree: 0%
 * 统计信息服务器(**stat**)已链接到Adobe Campaign基以加载其配置。
 * 投放服务器(**mta**)使用UDP联系不总是属于其自身实例的统计服务器。
 
-### 投放服务器{#delivery-servers}
+### 投放服务器 {#delivery-servers}
 
 **mta**&#x200B;模块将消息分发到其&#x200B;**mtachild**&#x200B;子模块。 每个&#x200B;**mtachild**&#x200B;在从统计服务器请求授权并发送之前准备消息。
 
@@ -52,7 +54,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_install_email_traffic_shaper.png)
 
-### 电子邮件服务器统计信息和限制{#email-server-statistics-and-limitations}
+### 电子邮件服务器统计信息和限制 {#email-server-statistics-and-limitations}
 
 统计信息服务器维护接收消息的每个电子邮件服务器的以下统计信息：
 
@@ -67,7 +69,7 @@ ht-degree: 0%
 * 每小时最大消息数，
 * 每个连接的消息数上限。
 
-### 管理IP地址{#managing-ip-addresses}
+### 管理IP地址 {#managing-ip-addresses}
 
 统计信息服务器可以合并具有相同公共IP地址的多个实例或多台计算机。 因此，它未链接到特定实例，但是它必须联系实例才能恢复每个域的限制。
 
@@ -75,7 +77,7 @@ ht-degree: 0%
 
 源IP地址与公共IP地址匹配，即远程电子邮件服务器看到的地址。 如果提供了NAT路由器，则此IP地址可能与承载&#x200B;**mta**&#x200B;的计算机的地址不同。 这就是为什么统计服务器使用与公共IP(**publicId**)匹配的标识符。 本地地址与此标识符之间的关联在&#x200B;**serverConf.xml**&#x200B;配置文件中声明。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
 
-## 传递输出控制{#delivery-output-controlling}
+## 投放输出控制 {#delivery-output-controlling}
 
 要向电子邮件服务器发送消息，**电子邮件流量Shaper**&#x200B;组件会从统计服务器请求连接。 请求被接受后，连接即会打开。
 
@@ -85,7 +87,7 @@ ht-degree: 0%
 
 以下各节介绍了&#x200B;**电子邮件流量Shaper**&#x200B;组件对消息的处理。
 
-### 消息投放{#message-delivery}
+### 消息投放 {#message-delivery}
 
 发送消息后，可能会得到3个结果：
 
@@ -97,29 +99,29 @@ ht-degree: 0%
    >
    >**路径**&#x200B;是Adobe Campaign **mta**&#x200B;与目标&#x200B;**mta**&#x200B;之间的连接。 Adobe Campaign **mta**&#x200B;可以从多个起始IP和多个目标域IP中进行选择。
 
-### 消息放弃{#message-abandonment}
+### 消息放弃 {#message-abandonment}
 
 放弃的消息将返回到&#x200B;**mta**，并且不再由&#x200B;**mtachild**&#x200B;管理。
 
 **mta**&#x200B;决定此消息的处理过程（恢复、放弃、隔离等） 取决于响应代码和规则。
 
-### 消息挂起{#message-pending}
+### 消息挂起 {#message-pending}
 
 当消息到达活动队列且没有可用路径时，消息将被挂起。
 
 在发生连接错误后，路径通常被标记为不可用于变量时间量。 不可用期取决于错误的频率和年龄。
 
-## 统计服务器配置{#statistics-server-configuration}
+## 统计服务器配置 {#statistics-server-configuration}
 
 统计信息服务器可供多个实例使用：它必须独立于将使用它的实例进行配置。
 
 首先，定义将托管配置的Adobe Campaign数据库。
 
-### 开始配置{#start-configuration}
+### 开始配置 {#start-configuration}
 
 默认情况下，将为每个实例启动&#x200B;**stat**&#x200B;模块。 当实例在同一台计算机上共享时，或当实例共享相同的IP地址时，将使用单个统计服务器：其他人必须残疾。
 
-### 服务器端口{#definition-of-the-server-port}的定义
+### 服务器端口的定义 {#definition-of-the-server-port}
 
 默认情况下，统计服务器监听端口7777。 可在&#x200B;**serverConf.xml**&#x200B;文件中修改此端口。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
 
@@ -127,13 +129,13 @@ ht-degree: 0%
 <stat port="1234"/>
 ```
 
-## MX配置{#mx-configuration}
+## MX配置 {#mx-configuration}
 
 >[!IMPORTANT]
 >
 >对于托管或混合安装，如果已升级到[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)，则不再使用&#x200B;**[!UICONTROL MX management]**&#x200B;投放吞吐量规则。 Enhanced MTA使用其自己的MX规则，根据您自己的历史电子邮件信誉以及来自您发送电子邮件的域的实时反馈，根据域自定义您的吞吐量。
 
-### 关于MX规则{#about-mx-rules}
+### 关于MX规则 {#about-mx-rules}
 
 >[!NOTE]
 >
@@ -208,7 +210,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 ![](assets/s_ncs_traffic_shaping.png)
 
-### 配置MX管理{#configuring-mx-management}
+### 配置MX管理 {#configuring-mx-management}
 
 MX要遵循的规则在树&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**&#x200B;节点的&#x200B;**[!UICONTROL MX management]**&#x200B;文档中定义。
 
@@ -229,7 +231,7 @@ MX要遵循的规则在树&#x200B;**[!UICONTROL Administration > Campaign Manage
 >
 >此命令行比&#x200B;**nlserver restart**&#x200B;更可取。 它可防止在重新启动丢失之前收集的统计信息，并避免使用高峰时可能与MX规则中定义的配额相冲突。
 
-### 配置MX规则{#configuring-mx-rules}
+### 配置MX规则 {#configuring-mx-rules}
 
 **[!UICONTROL MX management]**&#x200B;文档列出了链接到MX规则的所有域。
 
@@ -306,7 +308,7 @@ MX要遵循的规则在树&#x200B;**[!UICONTROL Administration > Campaign Manage
 >
 >有关将MX服务器与Adobe Campaign结合使用的更多信息，请参阅[此部分](../../installation/using/using-mx-servers.md)。
 
-### 管理电子邮件格式{#managing-email-formats}
+### 管理电子邮件格式 {#managing-email-formats}
 
 您可以定义已发送消息的格式，以便显示的内容会根据每个收件人地址的域自动进行调整。
 
@@ -333,13 +335,13 @@ MX要遵循的规则在树&#x200B;**[!UICONTROL Administration > Campaign Manage
 >
 >在电子邮件中插入图像会显着增加图像大小。
 
-## 投放服务器配置{#delivery-server-configuration}
+## 投放服务器配置 {#delivery-server-configuration}
 
-### 时钟同步{#clock-synchronization}
+### 时钟同步 {#clock-synchronization}
 
 构成Adobe Campaign平台（包括数据库）的所有服务器的时钟必须同步，并且其系统设置为同一时区。
 
-### 统计服务器{#coordinates-of-the-statistics-server}的坐标
+### 统计服务器的坐标 {#coordinates-of-the-statistics-server}
 
 必须在&#x200B;**mta**&#x200B;中提供统计服务器的地址。
 
@@ -361,7 +363,7 @@ MX要遵循的规则在树&#x200B;**[!UICONTROL Administration > Campaign Manage
 >
 >如果未填充此字段，则&#x200B;**mta**&#x200B;将不会启动。
 
-### 要使用{#list-of-ip-addresses-to-use}的IP地址列表
+### 要使用的IP地址列表 {#list-of-ip-addresses-to-use}
 
 有关流量管理的配置位于配置文件的&#x200B;**mta/child/smtp**&#x200B;元素中。
 
@@ -408,11 +410,11 @@ MX要遵循的规则在树&#x200B;**[!UICONTROL Administration > Campaign Manage
 
    ![](assets/s_ncs_install_mta_ips.png)
 
-## 电子邮件发送优化{#email-sending-optimization}
+## 电子邮件发送优化 {#email-sending-optimization}
 
 Adobe Campaign的内部架构&#x200B;**mta**&#x200B;对优化电子邮件投放的配置产生了影响。 以下是有关改进投放的一些提示。
 
-### 调整maxWaitingMessages参数{#adjust-the-maxwaitingmessages-parameter}
+### 调整maxWaitingMessages参数 {#adjust-the-maxwaitingmessages-parameter}
 
 **maxWaitingMessages**&#x200B;参数指示&#x200B;**mtachild**&#x200B;预先准备的消息数量上限。 只有在消息被发送或放弃后，才会从此列表中删除它们。
 
@@ -422,6 +424,6 @@ Adobe Campaign的内部架构&#x200B;**mta**&#x200B;对优化电子邮件投放�
 
 **maxWorkingSetMb**&#x200B;参数是通过将最大消息数乘以平均消息大小并乘以2.5来经验计算的。例如，如果消息的平均大小为50 kB，而&#x200B;**maxWaitingMessages**&#x200B;参数等于1,000，则所用内存将平均为125 MB。
 
-### 调整匹配字段{#adjust-the-number-of-mtachild}的数量
+### 调整匹配字段的数量 {#adjust-the-number-of-mtachild}
 
 子代数不应超过计算机中的处理器数(约 1000场会议)。 我们建议您不要超过8 **mtachild**。 然后，您可以增加每个&#x200B;**子**(**maxMsgPerChild**)的消息数，以达到足够的生命周期。

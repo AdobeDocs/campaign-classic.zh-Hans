@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814,6fe8da3b-57b9-4a69-8602-a03993630b27
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 28%
@@ -14,6 +14,8 @@ ht-degree: 28%
 ---
 
 # 配置URL权限（内部部署）{#url-permissions}
+
+![](../../assets/v7-only.svg)
 
 Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的 URL 默认列表是有限的。这些 URL 允许实例正常运行。
 
@@ -26,7 +28,6 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 >作为&#x200B;**托管的**&#x200B;客户，如果您可以访问[促销活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，则可以使用URL权限自助服务界面。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hans)
 >
 >其他&#x200B;**混合/托管**&#x200B;客户需要联系Adobe支持团队以将IP添加到允许列表。
-
 
 对于&#x200B;**Hybrid**&#x200B;和&#x200B;**本地**&#x200B;部署，管理员需要在&#x200B;**serverConf.xml**&#x200B;文件中引用新的&#x200B;**urlPermission**。
 

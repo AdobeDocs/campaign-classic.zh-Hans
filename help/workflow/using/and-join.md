@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # AND-连接{#and-join}
+
+![](../../assets/common.svg)
 
 仅当激活所有集客过渡（即，完成所有先前的活动）时，连接才会触发其叫客过渡。 这样，您就可以确保某些活动在继续执行工作流之前已完成。
 
@@ -31,4 +33,4 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->对于&#x200B;**AND-join**&#x200B;类型活动，将合并事件变量，但如果同一变量被定义两次，则会发生冲突，值仍不确定。 如需详细信息，请参阅[此部分](../../workflow/using/javascript-scripts-and-templates.md#event-variables)。
+>对于&#x200B;**AND-join**&#x200B;类型活动，将合并事件变量，但如果同一变量被定义两次，则会发生冲突，值仍不确定。 如需详细信息，请参阅[此部分](javascript-scripts-and-templates.md#event-variables)。

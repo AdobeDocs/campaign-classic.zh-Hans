@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 7f4bbf3e79d6cdaf17987b9307ebf12801abad22
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
 
 ---
 
-# 用例：发送带有附件{#transactional-email-with-attachments}的事务电子邮件
+# 用例：发送带有附件的交易电子邮件 {#transactional-email-with-attachments}
+
+![](../../assets/v7-only.svg)
 
 此用例的用途是将电子邮件附件快速添加到出站调度。
 
@@ -41,7 +43,7 @@ ht-degree: 2%
 >
 >为避免出现性能问题，如果您将从个性化URL动态下载的图像作为附件包含在内，则默认情况下每个图像大小不应超过100,000字节。 此建议的阈值可从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置。
 
-## 建议{#important-notes}
+## 推荐 {#important-notes}
 
 在实施此方案之前，请仔细阅读以下准则：
 
@@ -75,7 +77,7 @@ ht-degree: 2%
 1. 在&#x200B;**[!UICONTROL Attachment definition]**&#x200B;屏幕中，输入SOAP附件参数：
 
    ```
-   <%= rtEvent.ctx.attachementUrl %>
+   <%= rtEvent.ctx.attachmentUrl %>
    ```
 
 1. 处理消息后，系统将从远程位置（第三方服务器）获取文件，并将其附加到单个消息。

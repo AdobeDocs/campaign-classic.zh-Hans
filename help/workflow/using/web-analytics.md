@@ -5,7 +5,7 @@ description: 进一步了解Web分析包
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 
 
 # 网络分析{#web-analytics}
+
+![](../../assets/common.svg)
 
 默认情况下，下面详述的工作流与&#x200B;**Web Analytics连接器**&#x200B;模块一起安装。 有关此模块的更多信息，请参阅此[部分](../../platform/using/adobe-analytics-connector.md)。
 

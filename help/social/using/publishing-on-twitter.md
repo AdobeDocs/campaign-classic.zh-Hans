@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 5%
@@ -15,7 +15,9 @@ ht-degree: 5%
 
 # 在 Twitter 上发布{#publishing-on-twitter}
 
-## 在Twitter帐户上发布{#publishing-on-your-twitter-accounts}
+![](../../assets/v7-only.svg)
+
+## 在Twitter帐户上发布 {#publishing-on-your-twitter-accounts}
 
 配置完成后， Social Marketing允许您将推文发送到Twitter帐户。
 
@@ -32,11 +34,11 @@ ht-degree: 5%
 
 ![](assets/social_twitter_delivery_001.png)
 
-### 选择主目标{#selecting-the-main-target}
+### 选择主目标 {#selecting-the-main-target}
 
 选择要将推文发送到的帐户。
 
-1. 单击&#x200B;**[!UICONTROL To]**&#x200B;链接。
+1. 单击 **[!UICONTROL To]** 链接。
 
    ![](assets/social_twitter_delivery_002.png)
 
@@ -52,7 +54,7 @@ ht-degree: 5%
 
    ![](assets/social_twitter_delivery_011.png)
 
-### 选择校样{#selecting-the-target-of-the-proof}的目标
+### 选择校样的目标 {#selecting-the-target-of-the-proof}
 
 利用&#x200B;**[!UICONTROL Target of the proofs]**&#x200B;选项卡，可定义在最终投放之前用于测试投放的Twitter帐户。 因此，我们建议您创建一个专用于发送校样的Twitter帐户。 有关如何创建专用Twitter帐户的更多信息，请参阅[在Twitter上创建测试帐户](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)。 选择校样目标的步骤与选择主目标的步骤相同。 请参阅[在Twitter上创建测试帐户](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)。
 
@@ -62,13 +64,13 @@ ht-degree: 5%
 >
 >如果您对所有投放使用相同的Twitter测试帐户，则可以在&#x200B;**[!UICONTROL Tweet]**&#x200B;投放模板中保存校样目标，该模板可通过&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点访问。 然后，将默认为每个新投放输入校样目标。
 
-### 定义消息内容{#defining-the-message-content}
+### 定义消息内容 {#defining-the-message-content}
 
 在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中键入推文内容。
 
 ![](assets/social_twitter_delivery_005.png)
 
-### 查看预览{#viewing-the-preview}
+### 查看预览 {#viewing-the-preview}
 
 使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡可以查看推文的呈现。
 
@@ -83,7 +85,7 @@ ht-degree: 5%
 >
 >预览可能与最终推文略有不同。 我们强烈建议在最终投放之前发送校样，以查看推文的确切呈现。 请参阅[发送校样](#sending-the-proof)。
 
-### 配置跟踪{#configuring-tracking}
+### 配置跟踪 {#configuring-tracking}
 
 可以在投放报告和投放和服务的&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;选项卡中查看跟踪。
 
@@ -97,13 +99,13 @@ ht-degree: 5%
 >
 >我们无法区分分析推文的机器人和实际点击的用户。
 
-### 发送校样{#sending-the-proof}
+### 发送校样 {#sending-the-proof}
 
 我们强烈建议在最终交付之前发送发布校样，以在专用Twitter测试页面上获取发布的确切呈现。 有关创建专用Twitter帐户的更多信息，请参阅[在Twitter上创建测试帐户](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)。 [选择校样的目标](#selecting-the-target-of-the-proof)中详细介绍了选择校样目标的步骤。
 
 校样投放与电子邮件投放相同。 请参阅[此小节](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
-### 发送消息{#sending-the-message}
+### 发送消息 {#sending-the-message}
 
 1. 批准内容后，单击&#x200B;**[!UICONTROL Send]**&#x200B;按钮。
 1. 选择&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;并单击&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。
@@ -119,7 +121,7 @@ ht-degree: 5%
 
 ![](assets/social_facebook_delivery_016.png)
 
-## 向订阅者发送私信{#sending-direct-messages-to-subscribers}
+## 向订阅者发送私信 {#sending-direct-messages-to-subscribers}
 
 ### 操作原则 {#operating-principle}
 
@@ -142,7 +144,7 @@ ht-degree: 5%
 * **[!UICONTROL Time zone]**:用户时区
 * **[!UICONTROL Verified]**:此字段指示用户是否具有已验证的Twitter帐户
 
-### 限制{#limitations-1}
+### 限制 {#limitations-1}
 
 以下限制是Twitter固有的限制。
 
@@ -156,11 +158,11 @@ ht-degree: 5%
 
 ![](assets/social_twitter_delivery_010.png)
 
-### 选择主目标{#selecting-the-main-target-1}
+### 选择主目标 {#selecting-the-main-target-1}
 
 选择要将私信发送给的关注者。
 
-1. 单击&#x200B;**[!UICONTROL To]**&#x200B;链接。
+1. 单击 **[!UICONTROL To]** 链接。
 
    ![](assets/social_twitter_delivery_016.png)
 
@@ -182,7 +184,7 @@ ht-degree: 5%
 
       ![](assets/social_twitter_delivery_018.png)
 
-### 选择校样{#selecting-the-target-of-the-proof-1}的目标
+### 选择校样的目标 {#selecting-the-target-of-the-proof-1}
 
 **[!UICONTROL Target of the proofs]**&#x200B;选项卡允许您选择接收您私信校样的关注者。 选择过程与主目标的选择过程相同。 请参阅[选择主目标](#selecting-the-main-target)。
 
@@ -192,7 +194,7 @@ ht-degree: 5%
 >
 >如果要将所有直接消息校样发送到同一Twitter关注者，可以在&#x200B;**[!UICONTROL Tweet (Direct Message)]**&#x200B;投放模板中保存校样目标，该模板可通过&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点访问。 然后，将默认为每个新投放输入校样目标。
 
-### 定义消息内容{#defining-message-content-}
+### 定义消息内容 {#defining-message-content-}
 
 在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中输入推文的内容。
 

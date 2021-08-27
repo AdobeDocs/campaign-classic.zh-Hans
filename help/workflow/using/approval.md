@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # 审批{#approval}
 
+![](../../assets/common.svg)
+
 **Approval**&#x200B;任务需要操作员的参与。 操作员被分配了一项任务，可以通过电子邮件、使用电子邮件中链接的网页或通过控制台做出响应。
 
-## 任务分配{#task-assignment}
+## 任务分配 {#task-assignment}
 
 默认情况下，会为一组运算符分配批准。 此组表示角色，例如“新闻稿内容组”或“新闻稿定位组”。 组中的每个运算符都可以回答，但只考虑第一个回复（多次批准时除外）。
 
@@ -63,9 +65,9 @@ ht-degree: 0%
 
 可以修改此模板以个性化消息布局，但最好复制。 不得修改定向机制（外部文件、目标映射），因为通知需要该机制才能正确运行。
 
-[Defining approvals](../../workflow/using/defining-approvals.md)中显示了批准示例。
+[Defining approvals](defining-approvals.md)中显示了批准示例。
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * **[!UICONTROL response]**
 

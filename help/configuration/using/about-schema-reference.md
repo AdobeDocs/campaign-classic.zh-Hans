@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 ---
 
 # 关于模式参考{#about-schema-reference}
+
+![](../../assets/v7-only.svg)
 
 本章介绍如何配置扩展模式以扩展Adobe Campaign数据库的概念数据模型。
 
@@ -42,7 +44,7 @@ ht-degree: 7%
 
 ![](assets/reference_schema_intro.png)
 
-## 架构{#syntax-of-schemas}的语法
+## 架构的语法 {#syntax-of-schemas}
 
 架构的根元素为&#x200B;**`<srcschema>`**。 它包含&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;子元素。
 
@@ -68,7 +70,7 @@ ht-degree: 7%
 
 **`<element>`**&#x200B;标记定义实体元素的名称。 **`<attribute>`** 架构的标记定义它们所链接的标 **`<element>`** 记中属性的名称。
 
-## 架构{#identification-of-a-schema}的标识
+## 模式的标识 {#identification-of-a-schema}
 
 数据架构通过其名称及其命名空间进行标识。
 

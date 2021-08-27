@@ -6,24 +6,26 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
 
 # 监控工作流执行 {#monitoring-workflow-execution}
 
+![](../../assets/common.svg)
+
 本节介绍有关如何监控工作流执行情况的信息。
 
-[此部分](../../workflow/using/supervising-workflows.md#supervising-workflows)中还提供了有关如何创建工作流以监视一组“已暂停”、“已停止”或“有错误”的工作流的状态的用例。
+[此部分](supervising-workflows.md#supervising-workflows)中还提供了有关如何创建工作流以监视一组“已暂停”、“已停止”或“有错误”的工作流的状态的用例。
 
-此外，实例的管理员还可以使用&#x200B;**审核跟踪**&#x200B;来检查活动和对工作流所做的最后修改以及工作流的状态。 有关更多信息，请参阅[专用部分](../../production/using/audit-trail.md)。
+此外，实例的管理员还可以使用&#x200B;**审核跟踪**&#x200B;来检查活动和对工作流所做的最后修改以及工作流的状态。 有关更多信息，请参阅[Campaign Classicv7生产指南](../../production/using/audit-trail.md)。
 
-[本页](../../production/using/monitoring-guidelines.md)中提供了监控不同Campaign流程的其他方法。
+[《Campaign Classicv7生产指南》](../../production/using/monitoring-guidelines.md)中提供了监控不同Campaign流程的其他方法。
 
-## 显示进度{#displaying-progress}
+## 显示进度 {#displaying-progress}
 
 您可以使用工具栏上的相应图标显示进度，以监控执行情况。
 
@@ -35,7 +37,7 @@ ht-degree: 0%
 
 ![](assets/s_user_segmentation_results.png)
 
-## 显示日志{#displaying-logs}
+## 显示日志 {#displaying-logs}
 
 日志包含工作流的历史记录或审核跟踪。 它记录所有用户操作、执行的所有操作和遇到的错误。 您可以：
 
@@ -93,21 +95,21 @@ ht-degree: 0%
 
       日志显示在单独的窗口中。
 
-## 清除日志{#purging-the-logs}
+## 清除日志 {#purging-the-logs}
 
-工作流历史记录不会自动清除：默认情况下，会保留所有消息。 可以通过&#x200B;**[!UICONTROL File > Actions]**&#x200B;菜单或单击列表上方工具栏中的&#x200B;**[!UICONTROL Actions]**&#x200B;按钮清除历史记录。 选择 **[!UICONTROL Purge history]**。**[!UICONTROL Actions]**&#x200B;菜单中可用的选项详见[操作工具栏](../../workflow/using/starting-a-workflow.md)部分。
+工作流历史记录不会自动清除：默认情况下，会保留所有消息。 可以通过&#x200B;**[!UICONTROL File > Actions]**&#x200B;菜单或单击列表上方工具栏中的&#x200B;**[!UICONTROL Actions]**&#x200B;按钮清除历史记录。 选择 **[!UICONTROL Purge history]**。**[!UICONTROL Actions]**&#x200B;菜单中可用的选项详见[操作工具栏](starting-a-workflow.md)部分。
 
 ![](assets/purge_historique.png)
 
-## 工作表和工作流架构{#worktables-and-workflow-schema}
+## 工作表和工作流架构 {#worktables-and-workflow-schema}
 
 该工作流传达了可通过特定活动处理的工作表。 Adobe Campaign允许您通过数据管理活动修改、重命名和扩充工作流工作表的列，例如，根据客户的需求使其与术语保持一致，以收集有关合同共同受益人的其他信息等。
 
 也可以在各种工作维度之间创建链接并定义维度更改。 例如，对于数据库中记录的每个合同，寻址主持人并在附加信息中使用共同持有人数据。
 
-当工作流被钝化时，工作流的工作表会被自动删除。 如果希望保留工作表，请通过&#x200B;**[!UICONTROL List update]**&#x200B;活动将其保存在列表中（请参阅[列表更新](../../workflow/using/list-update.md)）。
+当工作流被钝化时，工作流的工作表会被自动删除。 如果希望保留工作表，请通过&#x200B;**[!UICONTROL List update]**&#x200B;活动将其保存在列表中（请参阅[列表更新](list-update.md)）。
 
-## 管理错误{#managing-errors}
+## 管理错误 {#managing-errors}
 
 发生错误时，工作流暂停，发生错误时执行的活动闪烁红色。 在工作流概述的&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡 — **[!UICONTROL Workflows]**&#x200B;链接下，您只能显示出错的工作流，如下所示。
 
@@ -141,9 +143,9 @@ ht-degree: 0%
 >
 >您可以为每个活动单独应用此配置。 为此，请编辑活动属性，并在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中选择错误管理模式。
 
-有关工作流执行疑难解答的更多信息，请参阅[专述章节](../../production/using/workflow-execution.md)。
+有关工作流执行疑难解答的更多信息，请参阅[Campaign Classicv7生产指南](../../production/using/workflow-execution.md)。
 
-## 处理错误{#processing-errors}
+## 处理错误 {#processing-errors}
 
 关于活动，**[!UICONTROL Process errors]**&#x200B;选项显示一个特定过渡，如果生成错误，该过渡将被启用。 在这种情况下，工作流不会进入错误模式，并且会继续执行。
 
@@ -163,7 +165,7 @@ ht-degree: 0%
 
 如果可能，我们建议在进行修改后完全重新启动工作流。
 
-## 实例监督{#instance-supervision}
+## 实例监督 {#instance-supervision}
 
 在&#x200B;**[!UICONTROL Instance supervision]**&#x200B;页面中，您可以查看Adobe Campaign服务器活动，并显示有错误的工作流和投放列表。
 
@@ -179,7 +181,7 @@ ht-degree: 0%
 
 ![](assets/wf-monitoring_edit-task-wf.png)
 
-## 防止同时执行多次{#preventing-simultaneous-multiple-executions}
+## 防止同时执行多次 {#preventing-simultaneous-multiple-executions}
 
 单个工作流可以同时运行多个执行。 在某些情况下，您应该阻止这种情况发生。
 
@@ -228,29 +230,29 @@ instance.vars.isRunning = false
    logInfo("Workflow already running, parallel execution not allowed.");
    ```
 
-本节将介绍一个用例：[协调数据更新](../../workflow/using/coordinating-data-updates.md)。
+本节将介绍一个用例：[协调数据更新](coordinating-data-updates.md)。
 
 ## 数据库维护 {#database-maintenance}
 
 工作流使用大量工作表，这些工作表会占用空间，如果不进行维护，最终会减慢整个平台的速度。 有关数据库维护的更多信息，请参阅此[部分](../../production/using/tables-to-maintain.md) 。
 
-通过&#x200B;**管理>生产>技术工作流**&#x200B;节点可访问&#x200B;**数据库清理**&#x200B;工作流，可删除过时的数据以避免数据库呈指数级增长。 工作流会自动触发，无需用户干预。 请参阅此[部分](../../production/using/database-cleanup-workflow.md)。
+通过&#x200B;**管理>生产>技术工作流**&#x200B;节点可访问&#x200B;**数据库清理**&#x200B;工作流，可删除过时的数据以避免数据库呈指数级增长。 工作流会自动触发，无需用户干预。 请参阅[Campaign Classicv7生产指南](../../production/using/database-cleanup-workflow.md)。
 
-您还可以创建特定的技术工作流，以清除不必要的数据占用空间。 请参阅此[部分](../../production/using/application-objects.md)和此[页面](#purging-the-logs)。
+您还可以创建特定的技术工作流，以清除不必要的数据占用空间。 请参阅[Campaign Classicv7生产指南](../../production/using/application-objects.md)和此[部分](#purging-the-logs)。
 
-## 处理暂停的工作流{#handling-of-paused-workflows}
+## 处理暂停的工作流 {#handling-of-paused-workflows}
 
 默认情况下，如果工作流暂停，则永远不会清除其工作表。 从版本8880开始，处于暂停状态太长的工作流将自动停止并清除其工作表。 此行为的触发方式如下：
 
 * 自超过7天以来已暂停的工作流在监控功能板（和监控API）中显示为警告，并且会向监控组发送通知。
-* 每周触发&#x200B;**[!UICONTROL cleanupPausedWorkflows]**&#x200B;技术工作流时都会发生同样的情况。 有关工作流的更多详细信息，请参阅[此部分](../../workflow/using/delivery.md)。
+* 每周触发&#x200B;**[!UICONTROL cleanupPausedWorkflows]**&#x200B;技术工作流时都会发生同样的情况。 有关工作流的更多详细信息，请参阅[此部分](delivery.md)。
 * 在4个通知（即默认处于暂停状态一个月）之后，将无条件停止工作流。 日志停止后，工作流中会显示该日志。 下次执行&#x200B;**[!UICONTROL cleanup]**&#x200B;工作流时会清除这些表
 
 可通过NmsServer_PausedWorkflowPeriod选项配置这些时段。
 
 工作流监管者会收到通知。 此外，还会通知创建者和修改工作流的最后一个用户。 管理员不会收到通知。
 
-## 根据工作流的状态{#filtering-workflows-status}筛选工作流
+## 根据工作流的状态筛选工作流 {#filtering-workflows-status}
 
 Campaign Classic界面允许您使用预定义的&#x200B;**视图**&#x200B;监控实例上所有工作流的执行状态。 要访问这些视图，请打开&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]**&#x200B;节点。
 
@@ -259,7 +261,7 @@ Campaign Classic界面允许您使用预定义的&#x200B;**视图**&#x200B;监�
 * **[!UICONTROL Running]**：列出所有正在运行的工作流。
 * **[!UICONTROL Paused]**：列出所有暂停的工作流。
 * **[!UICONTROL Failed]**：列出所有失败的工作流。
-* **[!UICONTROL Start Pending]**：列出operationMgt进程正在等待启动的所有工作流。此视图仅适用于&#x200B;**营销活动**&#x200B;包（请参阅[安装Campaign内置包](../../installation/using/installing-campaign-standard-packages.md)）。
+* **[!UICONTROL Start Pending]**：列出operationMgt进程正在等待启动的所有工作流。此视图仅适用于&#x200B;**营销活动**&#x200B;包。 在[Campaign Classicv7安装指南](../../installation/using/installing-campaign-standard-packages.md)中了解详情。
 
 ![](assets/workflow-monitoring-views.png)
 

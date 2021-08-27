@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 6c1e061b-8636-4285-8d83-97474544d252
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # 更新数据库结构{#updating-the-database-structure}
+
+![](../../assets/v7-only.svg)
 
 要应用对架构所做的修改，请启动数据库更新向导。 可通过&#x200B;**[!UICONTROL Tools > Advanced > Update database structure]**&#x200B;访问此向导。 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。
 

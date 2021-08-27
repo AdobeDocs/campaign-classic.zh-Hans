@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 用例：根据条件选择种子地址{#use-case-selecting-seed-addresses-on-criteria}
+
+![](../../assets/common.svg)
 
 在投放或营销策划的框架中，**[!UICONTROL Edit the dynamic condition...]**&#x200B;链接允许您根据特定选择标准选择种子地址。
 

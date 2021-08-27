@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 3%
@@ -15,9 +15,11 @@ ht-degree: 3%
 
 # 数据加载 (RDBMS){#data-loading-rdbms}
 
+![](../../assets/common.svg)
+
 通过&#x200B;**[!UICONTROL Data loading (RDBMS)]**&#x200B;活动，您可以直接访问此外部数据库，并仅收集定位所需的数据。
 
-为了提高性能，我们建议使用查询活动（可在其中使用外部数据库的数据）。 有关更多信息，请参阅[访问外部数据库(FDA)](../../workflow/using/accessing-an-external-database--fda-.md)。
+为了提高性能，我们建议使用查询活动（可在其中使用外部数据库的数据）。 有关更多信息，请参阅[访问外部数据库(FDA)](accessing-an-external-database--fda-.md)。
 
 操作如下：
 

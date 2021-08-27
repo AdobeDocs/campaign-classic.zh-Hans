@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 1%
+source-wordcount: '1291'
+ht-degree: 2%
 
 ---
 
 # 扩充{#enrichment}
+
+![](../../assets/common.svg)
 
 **[!UICONTROL Enrichment]**&#x200B;活动允许您向用户档案列表添加信息并链接到现有表（创建新连接）。 还可以定义数据库中包含用户档案的协调条件。
 
@@ -50,15 +52,15 @@ ht-degree: 1%
 
 以下章节还提供了详细说明扩充活动在其上下文中运行的用例：
 
-* [具有自定义日期字段的电子邮件扩充](../../workflow/using/email-enrichment-with-custom-date-fields.md).
-* [丰富数据](../../workflow/using/enriching-data.md)
-* [创建摘要列表](../../workflow/using/creating-a-summary-list.md)
+* [具有自定义日期字段的电子邮件扩充](email-enrichment-with-custom-date-fields.md).
+* [丰富数据](enriching-data.md)
+* [创建摘要列表](creating-a-summary-list.md)
 
-## 添加信息{#adding-information}
+## 添加信息 {#adding-information}
 
 使用&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动向工作表添加列：此活动可用作查询活动的补充。
 
-有关附加列的配置详情，请参见[Adding data](../../workflow/using/query.md#adding-data)。
+有关附加列的配置详情，请参见[Adding data](query.md#adding-data)。
 
 利用&#x200B;**[!UICONTROL Primary set]**&#x200B;字段，可选择集客过渡：将扩充此活动工作台的数据。
 
@@ -88,7 +90,7 @@ ht-degree: 1%
 
 匹配模式也已进行扩充。
 
-## 管理其他数据{#managing-additional-data}
+## 管理其他数据 {#managing-additional-data}
 
 如果不想保留以前定义的附加数据，请取消选择&#x200B;**[!UICONTROL Keep all additional data from the main set]**&#x200B;选项。 在这种情况下，只有扩充活动中选择的附加列才会添加到传出工作表中。 不会保存添加到上游活动的其他信息。
 
@@ -98,7 +100,7 @@ ht-degree: 1%
 
 ![](assets/enrichment_content_after_without_additional.png)
 
-## 创建链接{#creating-a-link}
+## 创建链接 {#creating-a-link}
 
 您可以使用扩充活动在工作数据与Adobe Campaign数据库之间创建链接：这将是指向集客数据之间工作流的本地链接。
 
@@ -135,7 +137,7 @@ ht-degree: 1%
 
 ![](assets/enrichment_external_link_schema.png)
 
-## 数据协调{#data-reconciliation}
+## 数据协调 {#data-reconciliation}
 
 扩充活动可用于配置数据协调，包括在数据加载到数据库后进行协调。 在这种情况下，使用&#x200B;**[!UICONTROL Reconciliation]**&#x200B;选项卡可定义Adobe Campaign数据库中的数据与工作表中数据之间的链接。
 
@@ -147,17 +149,17 @@ ht-degree: 1%
 
 如果指定了多个连接条件，则必须对它们进行ALL验证，以便数据可以链接在一起。
 
-## 插入优惠建议{#inserting-an-offer-proposition}
+## 插入优惠建议 {#inserting-an-offer-proposition}
 
 利用扩充活动，可向投放收件人的选件添加选件或链接。
 
-有关扩充活动的更多信息，请参阅此[部分](../../workflow/using/enrichment.md)。
+有关扩充活动的更多信息，请参阅此[部分](enrichment.md)。
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
 ![](assets/int_enrichment_offer1.png)
 
-配置查询后（请参阅此[部分](../../workflow/using/query.md)）：
+配置查询后（请参阅此[部分](query.md)）：
 
 1. 添加并打开扩充活动。
 1. 在 **[!UICONTROL Enrichment]** 选项卡中，选择 **[!UICONTROL Add data]**。
@@ -176,13 +178,13 @@ ht-degree: 1%
 
       ![](assets/int_enrichment_offer4.png)
 
-1. 然后，配置与您选择的渠道对应的投放活动。 请参阅[跨渠道投放](../../workflow/using/cross-channel-deliveries.md)。
+1. 然后，配置与您选择的渠道对应的投放活动。 请参阅[跨渠道投放](cross-channel-deliveries.md)。
 
    可用于预览的建议数取决于扩充活动中执行的配置，而不是直接在投放中执行的任何可能的配置。
 
 要指定优惠建议，您还可以选择引用指向优惠的链接。 有关更多信息，请参阅以下章节[引用指向选件的链接](#referencing-a-link-to-an-offer)。
 
-## 引用指向选件{#referencing-a-link-to-an-offer}的链接
+## 引用指向选件的链接 {#referencing-a-link-to-an-offer}
 
 您还可以引用扩充活动中选件的链接。
 
@@ -198,13 +200,13 @@ ht-degree: 1%
 
    ![](assets/int_enrichment_link2.png)
 
-1. 然后，配置与您选择的渠道对应的投放活动。 请参阅[跨渠道投放](../../workflow/using/cross-channel-deliveries.md)。
+1. 然后，配置与您选择的渠道对应的投放活动。 请参阅[跨渠道投放](cross-channel-deliveries.md)。
 
    >[!NOTE]
    >
    >可用于预览的建议数取决于投放中执行的配置。
 
-## 存储优惠排名和权重{#storing-offer-rankings-and-weights}
+## 存储优惠排名和权重 {#storing-offer-rankings-and-weights}
 
 默认情况下，当使用&#x200B;**扩充**&#x200B;活动来提供选件时，其排名和权重不会存储在建议表中。
 
@@ -212,7 +214,7 @@ ht-degree: 1%
 
 但是，您可以按如下方式存储此信息：
 
-1. 在扩充活动中创建对选件引擎的调用，该活动放在查询之后和投放活动之前。 请参阅此[部分](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine)。
+1. 在扩充活动中创建对选件引擎的调用，该活动放在查询之后和投放活动之前。
 1. 在活动的主窗口中，选择&#x200B;**[!UICONTROL Edit additional data...]**。
 
    ![](assets/ita_enrichment_rankweight_1.png)

@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: dd4d068b-f414-448f-8d9a-eedf44e7b6e6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 迁移方法{#migration-method}
 
-## 使您的环境现代化{#modernizing-your-environment}
+![](../../assets/v7-only.svg)
+
+## 实现环境现代化 {#modernizing-your-environment}
 
 执行迁移是更新环境（数据库引擎、操作系统）的机会。 Adobe Campaign强烈建议将生产环境升级到最新版本。
 
@@ -29,7 +31,7 @@ v7仍支持32位版本的数据库和操作系统，但将来版本的Adobe Camp
 >
 >有关Adobe Campaign支持的版本的更多信息，请参阅[兼容性矩阵](../../rn/using/compatibility-matrix.md)。
 
-## 关键迁移步骤{#key-migration-steps}
+## 关键迁移步骤 {#key-migration-steps}
 
 [开始迁移之前](../../migration/using/before-starting-migration.md)部分中详细说明了迁移到Adobe Campaign v7的一般过程。
 
@@ -37,7 +39,7 @@ v7仍支持32位版本的数据库和操作系统，但将来版本的Adobe Camp
 
 所需的配置取决于您的现有配置和平台的初始版本。 [常规配置](../../migration/using/general-configurations.md)部分中概述了这些配置。
 
-## 特定配置{#specific-configurations}
+## 特定配置 {#specific-configurations}
 
 Adobe Campaign v7带来的更改也意味着您必须调整在早期版本中开发的特定配置。 因此，在迁移之前，可能需要对您的所有配置执行审核：请联系Adobe Campaign以获取任何帮助。
 

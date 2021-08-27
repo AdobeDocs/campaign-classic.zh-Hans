@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 标准部署{#standard-deployment}
+
+![](../../assets/v7-only.svg)
 
 对于此配置，需要三台计算机：
 
@@ -39,7 +41,7 @@ DMZ中的两台服务器处理跟踪、镜像页面和交付，并且因高可�
 * 故障转移功能：在另一台计算机上出现硬件问题时能够将进程切换到一台计算机。
 * 总体性能更好，因为MTA和重定向功能可以在负载平衡器后面的两台计算机上部署。 有了两个活动MTA和足够的带宽，在每小时100,000封邮件的区域内实现广播速率是可能的。
 
-## 安装和配置步骤{#installation-and-configuration-steps}
+## 安装和配置步骤 {#installation-and-configuration-steps}
 
 ### 先决条件 {#prerequisites}
 
@@ -54,7 +56,7 @@ DMZ中的两台服务器处理跟踪、镜像页面和交付，并且因高可�
 
 * 防火墙配置为打开STMP(25)、DNS(53)、HTTP(80)、HTTPS(443)、SQL(1521 for Oracle、5432 for PostgreSQL等) 端口。 有关详细信息，请参阅[数据库访问](../../installation/using/network-configuration.md#database-access)一节。
 
-### 安装应用程序服务器{#installing-the-application-server}
+### 安装应用程序服务器 {#installing-the-application-server}
 
 按照步骤从Adobe Campaign应用程序服务器安装独立实例以创建数据库（步骤12）。 请参阅[安装和配置（单台计算机）](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-)。
 
@@ -67,7 +69,7 @@ DMZ中的两台服务器处理跟踪、镜像页面和交付，并且因高可�
 * 语言：英语
 * 数据库：**campaign:demo@dbsrv**
 
-### 安装两个前端服务器{#installing-the-two-frontal-servers}
+### 安装两个前端服务器 {#installing-the-two-frontal-servers}
 
 在两台计算机上的安装和配置过程是相同的。
 

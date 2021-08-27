@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 投放报告 {#delivery-reports}
+
+![](../../assets/common.svg)
 
 您可以通过从投放概述访问的各种报表来跟踪投放的执行情况。 要显示报表，请应用以下过程：
 
@@ -182,7 +184,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_clic_report.png)
 
-## 跟踪统计数据{#tracking-statistics}
+## 跟踪统计信息 {#tracking-statistics}
 
 此报表提供有关打开数、点击数和交易的统计资料。
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 关于优惠模拟{#about-offers-simulation}
+
+![](../../assets/v7-only.svg)
 
 通过&#x200B;**Simulation**&#x200B;模块，您可以测试属于某个类别或环境的选件的分布情况，然后再将建议发送给收件人。
 
@@ -23,7 +25,7 @@ ht-degree: 5%
 
 ![](assets/do-not-localize/how-to-video.png)[您也可以观看此视频](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com)。
 
-## 创建模拟的主要步骤{#main-steps-for-creating-a-simulation}
+## 创建模拟的主要步骤 {#main-steps-for-creating-a-simulation}
 
 要运行选件模拟，请应用以下步骤：
 

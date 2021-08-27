@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 97%
@@ -14,6 +14,8 @@ ht-degree: 97%
 ---
 
 # 常见问题{#common-questions}
+
+![](../../assets/common.svg)
 
 在使用 Campaign Classic 时需要帮助？请阅读下列 10 大问题，以及该页面中的其他常见问题。您还可以：
 

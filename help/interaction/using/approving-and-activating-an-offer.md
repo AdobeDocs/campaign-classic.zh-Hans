@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 2%
@@ -15,13 +15,15 @@ ht-degree: 2%
 
 # 批准和激活优惠{#approving-and-activating-an-offer}
 
+![](../../assets/v7-only.svg)
+
 选件内容完成后，您需要批准该内容以将其复制到实时环境中并进行交付。 批准涉及选件内容及其资格。
 
 选件仪表板上的横幅可告知您选件是否需要经过批准周期。
 
 ![](assets/offer_validate_001.png)
 
-## 批准优惠内容{#approving-offer-content}
+## 批准优惠内容 {#approving-offer-content}
 
 批准选件内容意味着选择要在实时环境中提供的表示形式。
 
@@ -51,7 +53,7 @@ ht-degree: 2%
    >
    >**[!UICONTROL Content approved]**&#x200B;提及并不意味着已启用并批准所有选件表示形式。 它表示内容批准流程已完成，无论是否已启用/批准所有选件。
 
-## 批准优惠资格{#approving-offer-eligibility}
+## 批准优惠资格 {#approving-offer-eligibility}
 
 批准选件资格是指接受或拒绝选件权重以及在选件中配置或从父类别中创建的规则继承的资格规则。
 
@@ -83,7 +85,7 @@ ht-degree: 2%
 
    ![](assets/offer_validate_010.png)
 
-## 批准跟踪{#approval-tracking}
+## 批准跟踪 {#approval-tracking}
 
 批准跟踪可在选件功能板中使用。 单击&#x200B;**[!UICONTROL Hide/display logs]**&#x200B;以访问。
 
@@ -93,7 +95,7 @@ ht-degree: 2%
 >
 >选件的&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡中也提供了跟踪功能，其中包含审阅人评论的详细信息。
 
-## 重新启动批准{#restart-the-approval}
+## 重新启动批准 {#restart-the-approval}
 
 启动批准后，即可重新启动该批准。 为此，请按照以下说明操作：
 
@@ -103,7 +105,7 @@ ht-degree: 2%
 
 ![](assets/offer_validate_013.png)
 
-## 发布选件{#publishing-the-offer}
+## 发布选件 {#publishing-the-offer}
 
 选件的内容和资格均获得批准后，该选件将通过一个工作流程发布，该工作流程会为其批准周期已完成的每个选件自动运行。 **[!UICONTROL Offer notification]**&#x200B;工作流还每小时运行一次，以便将选件目录中包含的空间和类别（如有必要）从设计环境同步到实时环境。
 
@@ -115,7 +117,7 @@ ht-degree: 2%
 
 ![](assets/offer_golive_002.png)
 
-## 禁用选件{#disabling-an-offer}
+## 禁用选件 {#disabling-an-offer}
 
 选件获得批准后，即可将其禁用。
 

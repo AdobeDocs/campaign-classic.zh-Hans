@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2442'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 使用数据包{#working-with-data-packages}
 
-## 关于数据包{#about-data-packages}
+![](../../assets/common.svg)
+
+## 关于数据包 {#about-data-packages}
 
 使用 Adobe Campaign，您可以通过数据包系统导出或导入平台配置和数据。包可以包含不同类型的配置、元素、过滤或不过滤。
 
@@ -23,7 +25,7 @@ ht-degree: 2%
 
 **数据包**&#x200B;的原理是导出数据配置并将其集成到另一个Adobe Campaign系统中。 了解如何在此[部分](#data-package-best-practices)中维护一组一致的数据包。
 
-### 包类型{#types-of-packages}
+### 包类型 {#types-of-packages}
 
 可导出的包有三种类型：用户包、平台包和管理包。
 
@@ -40,7 +42,7 @@ ht-degree: 2%
 >
 >**platform**&#x200B;和&#x200B;**admin**&#x200B;类型包含要导出的预定义实体列表。 每个实体都链接到过滤条件，这些条件允许您删除已创建资源包的现成资源。
 
-## 数据结构{#data-structure}
+## 数据结构 {#data-structure}
 
 数据包的描述是符合&#x200B;**xrk:navtree**&#x200B;数据架构语法的结构化XML文档。
 
@@ -81,9 +83,9 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开头和结尾。 随后
 
 可以从任何文本编辑器手动构建数据包。 只需确保XML文档的结构符合“xtk:navtree”数据架构即可。 Adobe Campaign控制台具有一个数据包导出和导入模块。
 
-## 导出包{#exporting-packages}
+## 导出包 {#exporting-packages}
 
-### 关于包导出{#about-package-export}
+### 关于包导出 {#about-package-export}
 
 可以通过三种不同方式导出资源包：
 
@@ -93,7 +95,7 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开头和结尾。 随后
 
 导出资源包后，您将能够将其和所有添加的实体导入另一个Campaign实例。
 
-### 导出包{#exporting-a-set-of-objects-in-a-package}中的一组对象
+### 导出包中的一组对象 {#exporting-a-set-of-objects-in-a-package}
 
 可通过Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Export package...]**&#x200B;菜单访问包导出向导。
 
@@ -139,7 +141,7 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开头和结尾。 随后
 
    ![](assets/ncs_datapackage_export7.png)
 
-### 管理依赖项{#managing-dependencies}
+### 管理依赖项 {#managing-dependencies}
 
 导出机制使Adobe Campaign能够跟踪各种导出元素之间的链接。
 
@@ -152,7 +154,7 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开头和结尾。 随后
 >
 >[此部分](../../configuration/using/database-mapping.md#links--relation-between-tables)中定义了链接到架构元素的完整性类型。
 
-#### 导出营销活动{#exporting-a-campaign}
+#### 导出营销活动 {#exporting-a-campaign}
 
 以下是如何导出营销活动的示例。 要导出的营销活动包含一个任务(标签：“MyTask”)和工作流(标签：“MyWorkflow”文件夹(节点：管理/生产/技术工作流/营销活动流程/ MyWorkflow)。
 
@@ -220,7 +222,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 >
 >**preCreate**&#x200B;值仅允许用于链接类型事件。 它授权您创建或指向尚未加载到导出包中的实体。
 
-## 管理包定义{#managing-package-definitions}
+## 管理资源包定义 {#managing-package-definitions}
 
 包定义允许您创建包结构，在该结构中添加稍后将在单个包中导出的实体。 然后，您将能够将此包和所有添加的实体导入另一个Campaign实例。
 
@@ -231,7 +233,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 * [配置包定义生成](#configuring-package-definitions-generation)
 * [从包定义导出包](#exporting-packages-from-a-package-definition)
 
-### 创建包定义{#creating-a-package-definition}
+### 创建包定义 {#creating-a-package-definition}
 
 可以从&#x200B;**[!UICONTROL Administration > Configuration > Package management > Package definitions]**&#x200B;菜单访问包定义。
 
@@ -247,7 +249,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 * [配置包定义生成](#configuring-package-definitions-generation)
 * [从包定义导出包](#exporting-packages-from-a-package-definition)
 
-### 将实体添加到包定义{#adding-entities-to-a-package-definition}
+### 将实体添加到包定义 {#adding-entities-to-a-package-definition}
 
 在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以选择要与包一起导出的实体。 [此部分](#exporting-a-set-of-objects-in-a-package)部分介绍了选择实体时的最佳实践。
 
@@ -267,7 +269,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
    ![](assets/packagedefinition_entityadded.png)
 
-### 配置包定义生成{#configuring-package-definitions-generation}
+### 配置包定义生成 {#configuring-package-definitions-generation}
 
 可以从包定义&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中配置包生成。 为此，请单击&#x200B;**[!UICONTROL Generation parameters]**&#x200B;链接。
 
@@ -287,7 +289,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
    >
    >在这种情况下，选择&#x200B;**[!UICONTROL Include default values]**&#x200B;选项将阻止版本合并，因为前实例的所有属性都将与包一起导出。
 
-### 从包定义{#exporting-packages-from-a-package-definition}导出包
+### 从包定义导出包 {#exporting-packages-from-a-package-definition}
 
 要从包定义导出包，请执行以下步骤：
 
@@ -297,7 +299,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
    ![](assets/packagedefinition_packageexport.png)
 
-## 导入包{#importing-packages}
+## 导入资源包 {#importing-packages}
 
 可通过Adobe Campaign客户端控制台的主菜单&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;访问包导入向导。
 
@@ -305,7 +307,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ![](assets/ncs_datapackage_import.png)
 
-### 从文件{#installing-a-package-from-a-file}安装包
+### 从文件安装包 {#installing-a-package-from-a-file}
 
 要导入现有数据包，请选择XML文件，然后单击&#x200B;**[!UICONTROL Open]**。
 
@@ -317,7 +319,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ![](assets/ncs_datapackage_import_2.png)
 
-### 安装内置软件包{#installing-a-standard-package}
+### 安装内置软件包 {#installing-a-standard-package}
 
 标准包是内置包，在配置Adobe Campaign时进行安装。 根据您的权限和部署模型，如果您获取了新选项或加载项，或者升级到新选件，则可以导入新的标准包。
 
@@ -325,7 +327,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 有关内置软件包的更多信息，请参阅[此页](../../installation/using/installing-campaign-standard-packages.md)。
 
-## 数据包最佳实践{#data-package-best-practices}
+## 数据包最佳实践 {#data-package-best-practices}
 
 本节将介绍如何在项目的整个生命周期中以一致的方式组织数据包。
 
@@ -343,7 +345,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 >
 >有关设置自动导出资源包的工作流的更多信息，请参阅[此页](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html)。
 
-### 建议{#data-package-recommendations}
+### 推荐 {#data-package-recommendations}
 
 始终在平台的同一版本内导入。 您必须检查是否在具有相同内部版本的两个实例之间部署包。 切勿强制导入，并始终先更新平台（如果内部版本不同）。
 
@@ -356,7 +358,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ### 解决方案 {#data-package-solution}
 
-#### 包类型{#package-types}
+#### 包类型 {#package-types}
 
 首先，定义不同类型的包。 仅使用四种类型：
 
@@ -390,7 +392,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 更新不仅可以是修复，还可以是实体/功能/营销活动包的新元素。 要避免部署整个包，可导出更新包。
 
-### 命名约定{#data-package-naming}
+### 命名约定 {#data-package-naming}
 
 现在，已定义类型，我们应该指定命名约定。 Adobe Campaign不允许根据包规范创建子文件夹，这意味着数字是保持有条不紊的最佳解决方案。 前缀为包名称的数字。 您可以使用以下约定：
 
@@ -399,13 +401,13 @@ template="xtk:folder" pkgAdmin="@id != 0">
 * 营销活动：从200到299
 * 更新：从5000到5999
 
-### 包{#data-packages}
+### 包 {#data-packages}
 
 >[!NOTE]
 >
 >最好设置规则以定义正确的包数量。
 
-#### 实体包顺序{#entity-packages-order}
+#### 实体包顺序 {#entity-packages-order}
 
 为帮助导入，实体包应按导入时的顺序进行排序。 例如：
 * 001 — 模式
@@ -417,11 +419,11 @@ template="xtk:folder" pkgAdmin="@id != 0">
 >
 >只应在更新架构后导入Forms。
 
-#### 软件包200 {#package-200}
+#### 包200 {#package-200}
 
 包号“200”不应用于特定营销活动：此数字将用于更新与所有营销活动相关的内容。
 
-#### 更新包{#update-package}
+#### 更新包 {#update-package}
 
 最后一点涉及更新包的编号。 它是以“5”作为前缀的包号（实体、功能或营销活动）。 例如：
 * 5001更新一个模式
@@ -440,7 +442,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
    * 与此同时，101包将更新以添加到外部帐户，但不会进行部署。
       ![](assets/ncs_datapackage_best-practices-1.png)
 
-#### 包文档{#package-documentation}
+#### 包文档 {#package-documentation}
 
 更新资源包时，应始终在描述字段中放置注释，以详细说明任何修改和原因（例如，“添加新架构”或“修复缺陷”）。
 

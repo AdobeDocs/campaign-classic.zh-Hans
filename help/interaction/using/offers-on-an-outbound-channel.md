@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # 出站渠道优惠{#offers-on-an-outbound-channel}
 
-## 电子邮件选件投放{#email-offer-delivery}
+![](../../assets/v7-only.svg)
+
+## 电子邮件选件投放 {#email-offer-delivery}
 
 在我们的数据库中，有一类前往非洲的旅行优惠。 已配置每个选件的资格、上下文和表示形式。 现在，我们希望创建一个营销活动，通过电子邮件提供我们的优惠。
 
@@ -60,7 +62,7 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_010.png)
 
-## 执行选件模拟{#perform-an-offer-simulation}
+## 执行优惠模拟 {#perform-an-offer-simulation}
 
 1. 在&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Simulations]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
 

@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: 46b46fc9-c7c9-4c74-b5f3-7935d5368520
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 迁移警告{#migration-warnings}
+
+![](../../assets/v7-only.svg)
 
 * 迁移过程为专家用户保留。 您必须至少得到来自Adobe Campaign的数据库专家、系统管理员和应用程序开发人员的协助。
 * 在开始迁移之前，请检查您使用的系统和系统组件是否实际与v7兼容。 请参阅[兼容性矩阵](../../rn/using/compatibility-matrix.md)。

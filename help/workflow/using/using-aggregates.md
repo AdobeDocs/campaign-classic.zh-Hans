@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%
@@ -15,20 +15,22 @@ ht-degree: 2%
 
 # 使用聚合{#using-aggregates}
 
+![](../../assets/common.svg)
+
 此用例详细说明了如何自动识别添加到数据库的最后一个收件人。
 
 使用以下过程，将数据库中收件人的创建日期与使用聚合创建收件人的最后一个已知日期进行比较。 同日创建的所有收件人也将被选中。
 
 要对收件人执行&#x200B;**创建日期= max（创建日期）**&#x200B;类型筛选器，必须运行工作流以执行以下步骤：
 
-1. 使用基本查询检索数据库收件人。 有关此步骤的更多信息，请参阅[创建查询](../../workflow/using/query.md#creating-a-query)。
+1. 使用基本查询检索数据库收件人。 有关此步骤的更多信息，请参阅[创建查询](query.md#creating-a-query)。
 1. 使用从&#x200B;**max（创建日期）**&#x200B;聚合函数生成的结果计算创建收件人的最后一个已知日期。
 1. 将每个收件人链接到聚合函数会生成相同的架构。
 1. 通过编辑的架构使用聚合过滤收件人。
 
 ![](assets/datamanagement_usecase_1.png)
 
-## 步骤1:计算聚合结果{#step-1--calculating-the-aggregate-result}
+## 步骤1:计算聚合结果 {#step-1--calculating-the-aggregate-result}
 
 1. 创建查询。 在此，目标是在数据库中所有收件人中计算上次已知创建日期。 因此，查询不包含过滤器。
 1. 选择 **[!UICONTROL Add data]**。
@@ -43,7 +45,7 @@ ht-degree: 2%
 
    保持选中 **[!UICONTROL Remove duplicate rows (DISTINCT)]** 选项。
 
-## 步骤2:链接收件人和聚合函数结果{#step-2--linking-the-recipients-and-the-aggregation-function-result}
+## 步骤2:链接收件人和聚合函数结果 {#step-2--linking-the-recipients-and-the-aggregation-function-result}
 
 要将处理收件人的查询链接到执行聚合函数计算的查询，您必须使用架构编辑活动。
 
@@ -58,7 +60,7 @@ ht-degree: 2%
 
 因此，聚合结果链接到每个收件人。
 
-## 步骤3:使用聚合过滤收件人。{#step-3--filtering-recipients-using-the-aggregate-}
+## 步骤3:使用聚合过滤收件人。 {#step-3--filtering-recipients-using-the-aggregate-}
 
 建立链接后，聚合结果和收件人构成同一临时架构的一部分。 因此，可以在架构上创建过滤器，以比较收件人的创建日期和由聚合函数表示的最后一个已知创建日期。 此过滤器使用拆分活动执行。
 

@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
@@ -13,6 +13,8 @@ ht-degree: 4%
 ---
 
 # 发送前执行所有检查 {#perform-all-checks}
+
+![](../../assets/common.svg)
 
 消息准备就绪后，请确保其内容在所有设备上均正确显示，并且不包含任何错误，如错误的个性化或链接损坏。
 
@@ -66,7 +68,7 @@ ht-degree: 4%
 
 ### 使用批次
 
-您可以使用批次逐步增加发送的音量。 这样可避免将消息标记为垃圾邮件，或者希望限制每天的消息数。 使用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 在此部分](steps-sending-the-delivery.md#sending-using-multiple-waves)中了解更多[信息。
+您可以使用批次逐步增加发送的音量。 这将避免您的邮件被标记为垃圾邮件，或者您希望限制每天的邮件数量。 使用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 在此部分](steps-sending-the-delivery.md#sending-using-multiple-waves)中了解更多[信息。
 
 ### 优先处理消息
 
@@ -90,7 +92,7 @@ ht-degree: 4%
 
 * 对于每个IPAfinity元素，声明可使用的IP地址。 [了解详情](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* 在您选择的[分类](../../campaign/using/about-campaign-typologies.md)中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;字段将投放链接到管理该亲和度的投放服务器(MTA)。 [了解详情](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic)。
+* 在您选择的[分类](../../campaign-opt/using/about-campaign-typologies.md)中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;字段将投放链接到管理该亲和度的投放服务器(MTA)。 [了解详情](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic)。
 
 * 发送电子邮件后，检查标题以验证发送投放的IP地址。 电子邮件管理员应帮助您获取标题信息。
 
@@ -100,7 +102,7 @@ ht-degree: 4%
 
 ### 使用分类
 
-您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。例如，您可以过滤未达到新闻稿目标的收件人。 在此示例中了解更多[。](../../campaign/using/filtering-rules.md)
+您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。例如，您可以过滤未达到新闻稿目标的收件人。 在此示例中了解更多[。](../../campaign-opt/using/filtering-rules.md)
 
 ### 避免附件
 

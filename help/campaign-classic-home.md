@@ -3,14 +3,14 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '258'
 ht-degree: 56%
 
 ---
 
-# Campaign Classicv7文档 {#campaign-classic-documentation}
+# Campaign Classic v7 文档 {#campaign-classic-documentation}
 
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
@@ -18,13 +18,13 @@ ht-degree: 56%
 
 * **[六月版将正式上线！](rn/using/latest-release.md)**<br/> 在发行说明中了解新功能、改进和修复
 
-* **[Apple 邮件隐私保护常见问题解答](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html?lang=zh-Hans)**<br/>&#x200B;查找 Apple 有关 iOS 15 公告的初步指导
+* **[Apple 邮件隐私保护常见问题解答](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/using/apple-mail-privacy-faq.html)**<br/>&#x200B;查找 Apple 有关 iOS 15 公告的初步指导
 
-* **[通过IMS/Adobe ID连接？升级到最新内部版本](technotes/ims-updates.md)**<br/>如果您使用IMS连接到Campaign，则必须升级才能在2021年6月30日**&#x200B;之后连接到Campaign **
+* **[通过IMS/Adobe ID连接？升级到最新内部版本](technotes/using/ims-updates.md)**<br/>如果您使用IMS连接到Campaign，则必须升级才能在2021年6月30日**&#x200B;之后连接到Campaign **
 
 * **[删除错误硬退回](delivery/using/update-bounce-qualification.md)**<br/> 了解如何在Apple中断后更新错误硬退回
 
-* **[保护Campaign实例](technotes/acc-config-updates.md)**<br/> 更新到最新内部版本以保护Campaign平台
+* **[保护Campaign实例](technotes/using/acc-config-updates.md)**<br/> 更新到最新内部版本以保护Campaign平台
 
 * **[更新Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> 集成旧版oAuth身份验证服务已终止。了解如何迁移到Adobe I/O。
 
@@ -80,7 +80,7 @@ ht-degree: 56%
 
 | 有用页面 | 面向开发人员的资源 |
 |---|---|
-| [发行说明](/help/rn/using/latest-release.md) | [错误消息列表](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html) |
+| [发行说明](/help/rn/using/latest-release.md) | [错误消息列表](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans) |
 | [操作说明视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans) | [Campaign 数据模型](configuration/using/about-data-model.md) |
 | [兼容性矩阵](rn/using/compatibility-matrix.md) | [Campaign JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [[!DNL Gold Standard] 升级](rn/using/gs-overview.md) | [跟踪指南](https://helpx.adobe.com/cn/campaign/kb/acc-tracking.html) |

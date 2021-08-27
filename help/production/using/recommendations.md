@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: 建议
-description: 建议
+title: 推荐
+description: 推荐
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: e458f6cb-f6d1-4688-9f6d-2a27a2f90829
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 2%
 
 ---
 
-# 建议{#recommendations}
+# 推荐{#recommendations}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign是一个高事务性系统（OLTP数据库）。 这意味着基础数据库将经常更新，导致性能随时间的推移而下降。 为避免出现此类问题，需要定期维护数据库。
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 增量查询{#incremental-query}
+
+![](../../assets/common.svg)
 
 通过增量查询，您可以根据条件定期选择目标，同时排除已针对此条件定向的人员。
 
@@ -23,8 +25,8 @@ ht-degree: 3%
 
 **相关主题：**
 
-* [用例：使用增量查询每季度更新列表](../../workflow/using/quarterly-list-update.md)
-* [创建查询](../../workflow/using/query.md#creating-a-query)
+* [用例：使用增量查询每季度更新列表](quarterly-list-update.md)
+* [创建查询](query.md#creating-a-query)
 
 >[!CAUTION]
 >
@@ -59,7 +61,7 @@ ht-degree: 3%
 
       此参数允许您使包含历史数据的默认SQL表过载。
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * tableName
 * 模式

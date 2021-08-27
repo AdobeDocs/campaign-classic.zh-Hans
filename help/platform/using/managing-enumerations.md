@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -15,13 +15,15 @@ ht-degree: 0%
 
 # 管理枚举{#managing-enumerations}
 
+![](../../assets/common.svg)
+
 明细列表（也称为“明细列表”）是系统建议用于填充某些字段的值列表。 枚举可让您标准化这些字段的值，并有助于数据输入或在查询中使用。
 
 值列表将显示为一个下拉列表，您可以从中选择要在字段中输入的值。 下拉列表还支持预测输入，在该输入中，运算符会输入前几个字母，应用程序会填入其余字母。
 
 已使用此类枚举定义了一些控制台字段。 如果可以通过在相应字段中直接输入来添加值，则枚举称为“open”。
 
-## 对值{#access-to-values}的访问
+## 访问值 {#access-to-values}
 
 已定义此类型字段的值，并通过树的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;节点对这些字段（添加/删除值）进行整体管理。
 
@@ -42,9 +44,9 @@ ht-degree: 0%
 
 * 如果选择&#x200B;**[!UICONTROL Closed]**&#x200B;选项，用户将无法创建新值，而只是从可用值中进行选择。
 
-## 标准化数据{#standardizing-data}
+## 标准化数据 {#standardizing-data}
 
-### 关于别名清理{#about-alias-cleansing}
+### 关于别名清理 {#about-alias-cleansing}
 
 在明细列表字段中，可以输入除枚举值以外的值。 这些文件可以按原样存储，也可以清洗。
 
@@ -62,13 +64,13 @@ ht-degree: 0%
    >
    >如果需要使用数据清理功能，请在明细列表中选择&#x200B;**[!UICONTROL Alias cleansing]**&#x200B;选项。
 
-### 使用别名{#using-aliases}
+### 使用别名 {#using-aliases}
 
 选项&#x200B;**[!UICONTROL Alias cleansing]**&#x200B;允许为选定的分项列表使用别名。 选择此选项后，**[!UICONTROL Alias]**&#x200B;选项卡将显示在窗口底部。
 
 ![](assets/s_ncs_user_itemized_list_alias_option.png)
 
-#### 创建别名{#creating-an-alias}
+#### 创建别名 {#creating-an-alias}
 
 要创建别名，请单击&#x200B;**[!UICONTROL Add]**。
 
@@ -90,7 +92,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
-#### 将值转换为别名{#converting-values-into-aliases}
+#### 将值转换为别名 {#converting-values-into-aliases}
 
 要将枚举值转换为别名，请右键单击值列表，然后选择&#x200B;**[!UICONTROL Convert values into aliases...]**。
 
@@ -108,7 +110,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_user_itemized_list_alias_detail2.png)
 
-#### 检索别名点击量{#retrieving-alias-hits}
+#### 检索别名点击量 {#retrieving-alias-hits}
 
 用户输入的值可以转换为别名。 实际上，当用户输入的值未包含在明细列表中时，该值会存储在&#x200B;**[!UICONTROL Alias]**&#x200B;选项卡中。
 
@@ -116,7 +118,7 @@ ht-degree: 0%
 
 如有必要，**[!UICONTROL Hits]**&#x200B;列可显示输入此值的次数。 计算此值既会耗时又会耗时内存。 有关更多信息，请参阅[计算条目发生次数](#calculating-entry-occurrences)。
 
-### 运行数据清理{#running-data-cleansing}
+### 运行数据清理 {#running-data-cleansing}
 
 数据清理由&#x200B;**[!UICONTROL Alias cleansing]**&#x200B;技术工作流执行。 为枚举定义的配置在执行期间应用。 请参阅[别名清理工作流](#alias-cleansing-workflow)。
 
@@ -130,7 +132,7 @@ ht-degree: 0%
 
 单击&#x200B;**[!UICONTROL Start]**&#x200B;按钮以运行数据清理。
 
-#### 计算条目发生次数{#calculating-entry-occurrences}
+#### 计算登入发生次数 {#calculating-entry-occurrences}
 
 明细列表的&#x200B;**[!UICONTROL Alias]**&#x200B;子选项卡可显示所有输入值中别名的出现次数。 此信息是估计值，将显示在&#x200B;**[!UICONTROL Hits]**&#x200B;列中。
 
@@ -152,7 +154,7 @@ ht-degree: 0%
 * **-** updateHits以更新别名点击数，
 * **-updateHits:** full，重新计算所有别名点击。
 
-#### 别名清理工作流{#alias-cleansing-workflow}
+#### 别名清理工作流 {#alias-cleansing-workflow}
 
 **别名清理**&#x200B;工作流运行枚举值清理。 默认情况下，每天执行一次。
 

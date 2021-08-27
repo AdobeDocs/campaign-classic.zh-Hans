@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 2%
@@ -15,13 +15,15 @@ ht-degree: 2%
 
 # 报告的属性{#properties-of-the-report}
 
+![](../../assets/common.svg)
+
 您可以完全个性化并配置报表，以满足您的需求。 为此，请编辑其属性。 通过活动序列图表上方的&#x200B;**[!UICONTROL Properties]**&#x200B;按钮访问报表属性。
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
 常规属性描述如下。 在&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;选项卡中配置的高级功能在此部分](../../reporting/using/advanced-functionalities.md)中有介绍。[
 
-## 常规属性{#overall-properties}
+## 常规属性 {#overall-properties}
 
 在报表属性的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，您可以编辑下面列出的设置：
 
@@ -35,7 +37,7 @@ ht-degree: 2%
 
 * **访问控制**&#x200B;参数。 以下介绍了这些设置。
 
-## 控制对报告{#report-accessibility}的访问
+## 控制对报告的访问 {#report-accessibility}
 
 可以在Adobe Campaign控制台中或通过Web浏览器访问报表。 在这种情况下，可能需要配置如下所示的报表访问控制。
 
@@ -50,7 +52,7 @@ ht-degree: 2%
 * **[!UICONTROL Access control]**:此选项允许Adobe Campaign运算符在登录后访问它。
 * **[!UICONTROL Specific account]**:利用此选项，可使用在字段中选择的运算符的权限执行 **[!UICONTROL Operator]** 报告。
 
-## 管理报表本地化{#managing-report-localization}
+## 管理报表本地化 {#managing-report-localization}
 
 您可以配置希望将报表翻译成的语言。 要执行此操作，请单击&#x200B;**[!UICONTROL Localization]**&#x200B;选项卡。
 
@@ -64,7 +66,7 @@ ht-degree: 2%
 >
 >有关Campaign中网页本地化的更多信息，请参阅[此部分](../../web/using/translating-a-web-form.md)。
 
-## 个性化HTML渲染{#personalizing-html-rendering}
+## 个性化HTML渲染 {#personalizing-html-rendering}
 
 在&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡中，您可以个性化页面的数据显示模式。 您可以选择：
 
@@ -75,7 +77,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_advuser_report_properties_08.png)
 
-## 个性化错误页面{#personalizing-the-error-page}
+## 个性化错误页面 {#personalizing-the-error-page}
 
 通过&#x200B;**[!UICONTROL Error page]**&#x200B;选项卡，可配置在报表显示出错时显示的消息。
 

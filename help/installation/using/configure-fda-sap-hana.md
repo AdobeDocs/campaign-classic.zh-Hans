@@ -6,21 +6,23 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
-# 配置对SAP HANA{#configure-access-to-sap-hana}的访问
+# 配置对SAP HANA的访问 {#configure-access-to-sap-hana}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign [联合数据访问](../../installation/using/about-fda.md)(FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对SAP HANA的访问。
 
 1. 配置[SAP HANA数据库](#sap-config)
 1. 在Campaign中配置SAP HANA[外部帐户](#sap-external)
 
-## SAP HANA驱动程序{#sap-config}
+## SAP HANA驱动程序 {#sap-config}
 
 在FDA中连接到SAP HANA外部数据库需要在Adobe Campaign服务器上进行某些其他配置：
 

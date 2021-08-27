@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 7%
@@ -15,13 +15,15 @@ ht-degree: 7%
 
 # 密码丢失{#lost-password}
 
+![](../../assets/v7-only.svg)
+
 您可以更改或恢复丢失的密码。
 有两种可能的情况：
 
 * [Adobe Campaign运算符丢失密码](#password-lost-by-campaign-operator)
 * [内部密码丢失](#internal-password-lost) （仅限内部部署客户）
 
-## Campaign运算符{#password-lost-by-campaign-operator}丢失密码
+## Campaign操作员丢失密码 {#password-lost-by-campaign-operator}
 
 如果Adobe Campaign运算符丢失其密码，您可以更改它。
 为此请执行以下操作步骤：
@@ -34,7 +36,7 @@ ht-degree: 7%
 
 1. 设置操作员的新密码。 我们建议操作员在首次重新连接时更改其密码。
 
-## 内部密码丢失{#internal-password-lost}
+## 内部密码丢失 {#internal-password-lost}
 
 >[!NOTE]
 >

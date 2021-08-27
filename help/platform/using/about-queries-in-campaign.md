@@ -2,18 +2,20 @@
 product: campaign
 title: 关于 Campaign 中的查询
 description: 关于 Campaign 中的查询
-feature: 查询编辑器
+feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 83%
+source-wordcount: '177'
+ht-degree: 84%
 
 ---
 
 # 查询入门{#about-queries-in-campaign}
+
+![](../../assets/common.svg)
 
 您可在软件的多个级别上找到 Adobe Campaign 查询工具：创建目标群体、细分客户、提取和过滤跟踪日志、构建过滤器等。
 

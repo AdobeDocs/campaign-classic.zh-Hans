@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 # 筛选架构{#filtering-schemas}
 
-## 系统筛选器{#system-filters}
+![](../../assets/v7-only.svg)
+
+## 系统过滤器 {#system-filters}
 
 您可以根据特定用户的权限筛选对架构的访问权限。 系统筛选器允许您使用&#x200B;**readAccess**&#x200B;和&#x200B;**writeAccess**&#x200B;参数来管理架构中详细实体的读和写权限。
 
@@ -61,7 +63,7 @@ ht-degree: 0%
 >
 >如果未指定过滤器，则所有运算符都将具有架构的读写权限。
 
-## Protect内置架构{#protecting-built-in-schemas}
+## Protect内置模式 {#protecting-built-in-schemas}
 
 默认情况下，内置架构仅可通过具有ADMINISTRATION权限的操作员的WRITE权限访问：
 
@@ -100,7 +102,7 @@ ht-degree: 0%
 >
 >**xtk:sessionInfo**&#x200B;架构的读取和写入权限只能由Adobe Campaign实例的内部帐户访问。
 
-## 修改内置架构{#modifying-system-filters-of-built-in-schemas}的系统筛选器
+## 修改内置架构的系统筛选器 {#modifying-system-filters-of-built-in-schemas}
 
 您仍然可以修改现成架构的系统筛选器，由于与旧版本存在兼容性问题，这些架构默认受到保护。
 

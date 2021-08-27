@@ -2,26 +2,31 @@
 product: campaign
 title: 关于 Adobe Campaign Classic
 description: 发现关键功能、用户界面和全局指南。
-feature: 概述
+feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 95%
+source-wordcount: '923'
+ht-degree: 92%
 
 ---
 
 # 开始使用Campaign Classic{#about-adobe-campaign-classic}
 
+![](../../assets/v7-only.svg)
+
 为了实现高水准的客户交互和优秀的客户体验，企业必须确保客户在所有接触点上的历程是一致且连续的。现在，营销人员能够高效的设计、计划、执行、管理，并且优化跨渠道营销活动，从而创造更高的市场营销投资回报，并且提高客户忠诚度。
 
 您能够利用 Adobe Campaign 制作对话式的营销活动。Adobe Campaign 提供了大量创新功能，帮助企业实现营销活动和客户交互流程的模式化、流程化和自动化。
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->Adobe Campaign Classic 有 v6.11 和 v7 两个版本。除非另有提及，否则帮助材料适用于[最新版本](../../rn/using/latest-release.md)中的两个版本。 屏幕截图反映了Campaign Classic v7 用户界面。
+>* 此集合中的帮助资料适用于其[最新版本](../../rn/using/latest-release.md)中的Campaign Classicv7。 当某个部分也适用于Campaign v8时，会提供特定徽章。
+>
+>* Adobe Campaign v8文档可在[此处](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html)获取。
+
 
 ![](assets/do-not-localize/how-to-video.png) [了解视频中的主要特性和功能](#video)
 
@@ -79,8 +84,8 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 * [Web 应用程序](../../web/using/about-web-applications.md) - 创建网页和窗体，
 * [调查管理器](../../surveys/using/about-surveys.md) - 创建在线调查和投票，
 * [内容管理器](../../delivery/using/about-content-management.md) - 管理电子邮件内容，
-* [分布式营销](../../campaign/using/about-distributed-marketing.md) - 协调中央/地方机关的营销活动，
-* [响应管理器](../../campaign/using/about-response-manager.md) - 管理客户响应，
+* [分布式营销](../../distributed/using/about-distributed-marketing.md) - 协调中央/地方机关的营销活动，
+* [响应管理器](../../response/using/about-response-manager.md) - 管理客户响应，
 * [连接器](../../platform/using/about-connectors.md) - 使用连接器与外部解决方案和数据库引擎通信，
 * [Web 服务](../../configuration/using/about-web-services.md) - 通过 API/Web 服务使用 Campaign，
 * [报告](../../reporting/using/about-adobe-campaign-reporting-tools.md) - 访问内置的报告、分析数据并设计您自己的报告。

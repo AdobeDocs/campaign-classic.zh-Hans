@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 中间源服务器{#mid-sourcing-server}
+
+![](../../assets/v7-only.svg)
 
 本节详细介绍中间源服务器的安装和配置，以及使第三方能够在&#x200B;**中间源**&#x200B;模式下发送消息的实例的部署。
 
@@ -25,9 +27,9 @@ ht-degree: 1%
 >
 >设置中间源服务器并首次运行[同步工作流](../../workflow/using/about-technical-workflows.md)后，请确保不更新中间源外部帐户的内部名称。
 
-## 安装和配置实例{#steps-for-installing-and-configuring-an-instance}的步骤
+## 安装和配置实例的步骤 {#steps-for-installing-and-configuring-an-instance}
 
-### 安装和配置实例{#prerequisites-for-installing-and-configuring-an-instance}的先决条件
+### 安装和配置实例的先决条件 {#prerequisites-for-installing-and-configuring-an-instance}
 
 * 应用程序服务器上的JDK。
 * 访问应用程序服务器上的数据库服务器。
@@ -35,7 +37,7 @@ ht-degree: 1%
 
 以下步骤使用单个中间源服务器详细描述配置。 也可以使用多个服务器。 同样，也可以从内部配置发送某些消息（例如，工作流通知）。
 
-### 安装和配置应用程序服务器以进行中间源部署{#installing-and-configuring-the-application-server-for-mid-sourcing-deployment}
+### 安装和配置应用程序服务器以进行中间源部署 {#installing-and-configuring-the-application-server-for-mid-sourcing-deployment}
 
 安装过程与独立实例的安装过程相同。 请参阅[安装和配置（单台计算机）](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-)。
 
@@ -70,7 +72,7 @@ ht-degree: 1%
    >
    >技术投放的默认路由会自动替换为通过中间源的电子邮件路由。
 
-### 安装和配置中间源服务器{#installing-and-configuring-the-mid-sourcing-server}
+### 安装和配置中间源服务器 {#installing-and-configuring-the-mid-sourcing-server}
 
 在客户端控制台中，找到使用中间源&#x200B;**中间源帐户的**&#x200B;电子邮件路由（在&#x200B;**/Administration/External accounts/**&#x200B;文件夹中）。 使用托管中间源服务器的服务器提供商提供的信息填充服务器&#x200B;**、**&#x200B;帐户&#x200B;**、** password **和**&#x200B;镜像页面URL **的**&#x200B;设置。 测试连接。
 
@@ -78,7 +80,7 @@ ht-degree: 1%
 >
 >**mid-sourcingEmitter**&#x200B;选项创建两个&#x200B;**中间源**&#x200B;工作流。 默认情况下，每1小时20分钟运行一次该进程，并在中间源服务器上收集投放信息。
 
-## 部署中间源服务器{#deploying-a-mid-sourcing-server}
+## 部署中间源服务器 {#deploying-a-mid-sourcing-server}
 
 1. 安装应用程序服务器：
 
@@ -96,7 +98,7 @@ ht-degree: 1%
 
    **中间源平台**&#x200B;选项会创建用于存储已提交投放的默认文件夹，以及执行提交的默认运算符。
 
-## 多路复用中间源服务器{#multiplexing-the-mid-sourcing-server}
+## 多路复用中间源服务器 {#multiplexing-the-mid-sourcing-server}
 
 >[!CAUTION]
 >
@@ -131,7 +133,7 @@ ht-degree: 1%
 
 “@name”属性必须遵循以下规则：
 
-**&#39;marketing_account_operator_name&#39;。&#39;affinity_name&#39;。&#39;affinity_group&grave;**
+**&#39;marketing_account_operator_name&#39;。&#39;affinity_name&#39;。&#39;affinity_group`**
 
 “marketing_account_operator_name”与在中间源实例中声明的中间源帐户的内部名称相关。
 
@@ -141,7 +143,7 @@ ht-degree: 1%
 
 您必须停止并重新启动服务器才能考虑修改。
 
-## 在中间源服务器{#configuring-tracking-on-a-mid-sourcing-server}上配置跟踪
+## 在中间源服务器上配置跟踪 {#configuring-tracking-on-a-mid-sourcing-server}
 
 **配置中间源服务器**
 

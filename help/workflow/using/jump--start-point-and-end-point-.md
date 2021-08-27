@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 15%
@@ -14,6 +14,8 @@ ht-degree: 15%
 ---
 
 # 跳转（开始点和结束点）{#jump-start-point-and-end-point}
+
+![](../../assets/common.svg)
 
 **[!UICONTROL Jump]**  — 类型图形对象用于提高复杂图表的可读性，特别是具有交叉过渡的图形对象。
 
@@ -29,4 +31,4 @@ ht-degree: 15%
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-为了提高图表的可读性，您可以更改与跳转关联的图像以显示相关数字。 请参阅[管理活动图像](../../workflow/using/managing-activity-images.md)。
+为了提高图表的可读性，您可以更改与跳转关联的图像以显示相关数字。 请参阅[管理活动图像](managing-activity-images.md)。

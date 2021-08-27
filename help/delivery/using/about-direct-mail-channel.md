@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 9%
@@ -14,6 +14,8 @@ ht-degree: 9%
 ---
 
 # 关于直邮渠道{#about-direct-mail-channel}
+
+![](../../assets/common.svg)
 
 Adobe Campaign允许您生成文件以批量发送个性化信件。 收件人用户档案必须至少包含其名称和邮政地址。
 

@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
 
 # 找到Tomcat版本{#locate-tomcat-version}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign使用名为Apache Tomcat **的**&#x200B;嵌入式Web Servlet来处理应用程序与任何外部接口（包括客户端控制台、跟踪的URL链接、SOAP调用等）之间的HTTP/HTTPS请求。 对于任何面向外部的Adobe Campaign实例，通常会在其前面显示外部Web服务器（通常是IIS或Apache）。
 
@@ -53,7 +55,7 @@ Tomcat嵌入版本的新版本或升级版本仅随Adobe Campaign本身的新内
 
 *server.number=8.5.X.Y*
 
-*server.built=MM DD YYY HH:MM:SS*
+*server.built=MM DD YYY HHSS :MM:YY*
 
 在您能够确定特定实例中使用的Tomcat的确切版本后，它可能有助于您对与Tomcat相关的问题进行故障诊断。
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 1da8b954f1ed8b3e1433b920149e968cb89a97c5
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 移动应用程序渠道入门{#about-mobile-app-channel}
+
+![](../../assets/common.svg)
 
 通过&#x200B;**移动设备应用程序渠道**，您可以使用Adobe Campaign平台通过应用程序向iOS和Android终端发送个性化的推送通知。
 

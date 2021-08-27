@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 8%
 
 ---
 
-# 压缩或加密文件{#zipping-or-encrypting-a-file}
+# Zip或加密文件 {#zipping-or-encrypting-a-file}
+
+![](../../assets/common.svg)
 
 Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动定义导出时，您可以定义后处理以压缩文件或加密文件。
 
@@ -35,7 +37,7 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 * [在处理之前解压缩或解密文件](../../platform/using/unzip-decrypt.md)
 * [数据提取（文件）活动](../../workflow/using/extraction--file-.md)。
 
-## 用例：使用安装在{#use-case-gpg-encrypt}控制面板上的密钥加密和导出数据
+## 用例：使用安装在控制面板上的密钥加密和导出数据 {#use-case-gpg-encrypt}
 
 在此用例中，我们将构建一个工作流，以便使用安装在控制面板上的密钥加密和导出数据。
 

@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 选择营销活动受众 {#marketing-campaign-deliveries}
+
+![](../../assets/common.svg)
 
 在营销活动中，您可以为每个投放定义：
 
@@ -39,7 +41,7 @@ ht-degree: 2%
 
 ![](assets/s_user_target_group_next.png)
 
-## 在营销活动工作流{#building-the-main-target-in-a-workflow}中构建受众
+## 在营销活动工作流中构建受众 {#building-the-main-target-in-a-workflow}
 
 投放的主要目标也可以在营销活动工作流中定义：此图形环境允许您使用查询、测试和运算符来构建目标：并集、重复数据删除、共享等。
 
@@ -47,7 +49,7 @@ ht-degree: 2%
 >
 >在营销活动中添加的工作流不得超过28个。 超出此限制后，其他工作流在界面中不可见，并且可能会生成错误。
 
-### 创建工作流{#creating-a-targeting-workflow}
+### 创建工作流 {#creating-a-targeting-workflow}
 
 可以通过工作流中图形序列中的筛选条件组合来创建定位。 您可以创建群体和子群体，这些群体和子群体将根据您的要求进行定位。 要显示工作流编辑器，请单击营销活动仪表板中的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡。
 
@@ -86,7 +88,7 @@ ht-degree: 2%
 1. 选择&#x200B;**[!UICONTROL New workflow]**&#x200B;模板并命名此工作流。
 1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以确认创建工作流，然后创建此工作流的图表。
 
-### 执行工作流{#executing-a-workflow}
+### 执行工作流 {#executing-a-workflow}
 
 如果您拥有相应的权限，则可以通过工具栏中的&#x200B;**[!UICONTROL Start]**&#x200B;按钮手动启动定位工作流。
 
@@ -167,13 +169,13 @@ ht-degree: 2%
 
    ![](assets/s_user_segmentation_stop_unconditional.png)
 
-## 添加控制组{#defining-a-control-group}
+## 添加控制组 {#defining-a-control-group}
 
 控制组是未收到交货的群体；它通过与已收到投放的目标群体的行为进行比较，用于跟踪投放后行为和促销活动影响。
 
 控制组可以从主目标中提取和/或来自特定组或查询。
 
-### 激活营销活动{#activating-the-control-group-for-a-campaign}的控制组
+### 激活营销活动的控制组 {#activating-the-control-group-for-a-campaign}
 
 您可以在营销活动级别定义控制组，在这种情况下，控制组将应用于相关营销活动的每个投放。
 
@@ -189,7 +191,7 @@ ht-degree: 2%
 
 [从主目标提取控制组](#extracting-the-control-group-from-the-main-target)和[添加控制组](#adding-a-population)中介绍了配置过程。
 
-### 为{#activating-the-control-group-for-a-delivery}投放激活控制组
+### 为传递激活控制组 {#activating-the-control-group-for-a-delivery}
 
 您可以在投放级别定义控制组，在这种情况下，控制组将应用于相关营销活动的每个投放。
 
@@ -208,7 +210,7 @@ ht-degree: 2%
 
 [从主目标提取控制组](#extracting-the-control-group-from-the-main-target)和[添加控制组](#adding-a-population)中介绍了配置过程。
 
-### 从主目标{#extracting-the-control-group-from-the-main-target}提取控制组
+### 从主目标提取控制组 {#extracting-the-control-group-from-the-main-target}
 
 您可以从投放的主目标提取收件人。 在这种情况下，将从受此配置影响的投放操作目标中获取收件人。 此提取可以是随机的，也可以是对收件人进行排序的结果。
 
@@ -225,7 +227,7 @@ ht-degree: 2%
 
 此配置等同于工作流中的共享活动，允许您将目标划分为子集。 控制组是这些子集之一。 有关更多信息，请参阅[此部分](../../workflow/using/architecture.md)。
 
-### 将新群体用作控制组{#adding-a-population}
+### 将新群体用作控制组 {#adding-a-population}
 
 您可以定义新群体以用作控制组。 此群体可以来自一组收件人，也可以通过特定查询创建。
 
@@ -236,7 +238,7 @@ ht-degree: 2%
 >Adobe Campaign查询编辑器显示在[此部分](../../workflow/using/query.md)中。
 
 
-#### 教程视频{#create-email-video}
+#### 教程视频 {#create-email-video}
 
 此视频介绍如何在Adobe Campaign中创建营销活动和电子邮件。
 

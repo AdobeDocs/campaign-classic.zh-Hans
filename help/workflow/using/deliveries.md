@@ -5,7 +5,7 @@ description: 了解有关默认投放工作流的更多信息
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 15%
@@ -14,6 +14,8 @@ ht-degree: 15%
 
 
 # 投放{#deliveries}
+
+![](../../assets/common.svg)
 
 默认情况下，下面详述的工作流与&#x200B;**Deliveries**&#x200B;模块一起安装。
 
@@ -57,7 +59,7 @@ ht-degree: 15%
   <tr> 
    <td> <span class="uicontrol">暂停的工作流清理</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>此工作流会分析严重性设置为正常的暂停工作流，并在暂停过长时触发警告和通知。 一个月后，将无条件停止暂停的技术工作流。 默认情况下，此工作流于每周一早上5点触发。</p> <p>有关更多信息，请参阅<a href="../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">处理暂停的工作流</a>。</p></td> 
+   <td> <p>此工作流会分析严重性设置为正常的暂停工作流，并在暂停过长时触发警告和通知。 一个月后，将无条件停止暂停的技术工作流。 默认情况下，此工作流于每周一早上5点触发。</p> <p>有关更多信息，请参阅<a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">处理暂停的工作流</a>。</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">优惠通知</span> <br /> </td> 

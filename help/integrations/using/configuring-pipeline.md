@@ -5,7 +5,7 @@ description: 了解如何配置管道
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b6aa797133e6f916bf085794aeb99d61a8f7bc40
+source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # 配置管道 {#configuring-pipeline}
+
+![](../../assets/common.svg)
 
 在实例配置文件中配置了身份验证参数，如客户ID、私钥和身份验证端点。
 要处理的触发器列表是以JSON格式的选项配置的。

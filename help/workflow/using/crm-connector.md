@@ -5,7 +5,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
-source-git-commit: 544658ad2dada8ca7199d5b62d09a02e2d7c28cc
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 3%
@@ -13,6 +13,8 @@ ht-degree: 3%
 ---
 
 # CRM 连接器{#crm-connector}
+
+![](../../assets/common.svg)
 
 通过&#x200B;**CRM连接器**&#x200B;活动，您可以配置Adobe Campaign与CRM系统之间的数据同步。
 

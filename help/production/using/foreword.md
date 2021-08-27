@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: c9e92fec-383e-46ba-bce1-183ac8f637de
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 前言{#foreword}
+
+![](../../assets/v7-only.svg)
 
 本文档详细介绍了Adobe Campaign的生产流程：配置、监控、升级过程、数据处理、数据库维护过程和建议。 本文档末尾提供了疑难解答章节。
 

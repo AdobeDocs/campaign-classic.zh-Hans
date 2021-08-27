@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 3%
+source-wordcount: '418'
+ht-degree: 4%
 
 ---
 
 # SQL 数据管理{#sql-data-management}
+
+![](../../assets/common.svg)
 
 **SQL数据管理**&#x200B;活动允许您编写自己的SQL脚本以创建和填充工作表。
 
@@ -22,10 +24,17 @@ ht-degree: 3%
 在配置活动之前，请确保满足以下先决条件：
 
 * 活动仅可用于远程数据源。 因此，必须在实例上安装&#x200B;**[!UICONTROL FDA]**（联合数据访问）包。 [了解详情](../../installation/using/about-fda.md)。
-* 叫客模式必须存在于数据库中，并且必须链接到FDA数据库。 [了解详情](../../configuration/using/about-schema-reference.md)。
+
+   有关更多信息，请根据您的Campaign版本，参阅以下章节：
+
+   ![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文档](../../installation/using/about-fda.md)
+
+   ![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+
+* 叫客模式必须存在于数据库中，并且必须链接到FDA数据库。
 * 执行工作流的操作员必须具有&#x200B;**[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**&#x200B;命名权限。 [了解详情](../../platform/using/access-management-named-rights.md)。
 
-## 配置SQL数据管理活动{#configuring-the-sql-data-management-activity}
+## 配置SQL数据管理活动 {#configuring-the-sql-data-management-activity}
 
 1. 指定活动&#x200B;**[!UICONTROL Label]**。
 1. 选择要使用的&#x200B;**[!UICONTROL External account]**，然后选择链接到此外部帐户的&#x200B;**[!UICONTROL Outbound schema]**。
@@ -66,7 +75,7 @@ ht-degree: 3%
 >  
 >如果活动重新启动，则无论其执行状态如何，整个脚本都会从其开头执行。
 
-## SQL脚本示例{#sql-script-samples}
+## SQL脚本示例 {#sql-script-samples}
 
 >[!NOTE]
 >

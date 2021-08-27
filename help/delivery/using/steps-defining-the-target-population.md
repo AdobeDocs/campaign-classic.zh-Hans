@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 定义目标群体 {#defining-the-target-population}
+
+![](../../assets/common.svg)
 
 ## 关于目标群体 {#about-target-populations}
 
@@ -169,7 +171,7 @@ ht-degree: 3%
 
 要选择校样的目标，请执行以下步骤：
 
-1. 单击&#x200B;**[!UICONTROL To]**&#x200B;链接。
+1. 单击 **[!UICONTROL To]** 链接。
 1. 单击&#x200B;**[!UICONTROL Target of the proofs]**&#x200B;选项卡。
 1. 单击&#x200B;**[!UICONTROL Targeting mode]**&#x200B;字段以选择要应用的方法：**[!UICONTROL Definition of a specific proof target]** 、 **[!UICONTROL Substitution of the address]** 、 **[!UICONTROL Seed addresses]**&#x200B;或&#x200B;**[!UICONTROL Specific target and seed addresses]**。
 
@@ -223,7 +225,7 @@ ht-degree: 3%
 
 您可以结合使用&#x200B;**[!UICONTROL Specific target and Seed addresses]**&#x200B;选项来定义特定校样目标和使用种子地址。 相关配置随后在两个单独的子选项卡中定义。
 
-另请参阅：
+另请参阅:
 
 * [选择校样目标](#selecting-the-proof-target)
 * [关于种子地址](about-seed-addresses.md)

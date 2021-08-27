@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 投放{#delivery}
+
+![](../../assets/common.svg)
 
 **Delivery**&#x200B;类型活动允许您创建投放操作。 它可以使用输入元素来构建。
 
@@ -81,7 +83,7 @@ ht-degree: 0%
    * **[!UICONTROL Send a proof]**:利用此选项，可发送投放的校样。此操作等同于单击&#x200B;**Delivery**&#x200B;投放工具栏中的&#x200B;**[!UICONTROL Send a proof]**&#x200B;按钮
    * **[!UICONTROL Prepare and start]**:此选项会启动完整的分析流程（目标计算和内容准备）并发送投放。此操作等同于使用&#x200B;**Delivery**&#x200B;向主目标发送投放时单击&#x200B;**[!UICONTROL Deliver as soon as possible]**、**[!UICONTROL Analyze]**&#x200B;和&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;选项。
 
-   通过工作流中进一步使用的&#x200B;**[!UICONTROL Act on a delivery]**&#x200B;活动，您可以启动开始投放所需的所有其余步骤（目标计算、内容准备、投放）。 有关更多信息，请参阅[投放控制](../../workflow/using/delivery-control.md)。
+   通过工作流中进一步使用的&#x200B;**[!UICONTROL Act on a delivery]**&#x200B;活动，您可以启动开始投放所需的所有其余步骤（目标计算、内容准备、投放）。 有关更多信息，请参阅[投放控制](delivery-control.md)。
 
    还提供以下选项：
 
@@ -95,12 +97,12 @@ ht-degree: 0%
 
    * **[!UICONTROL Processing errors]**
 
-      请参阅[传递控件](../../workflow/using/delivery-control.md)。
+      请参阅[传递控件](delivery-control.md)。
    使用&#x200B;**Script**&#x200B;选项卡可修改投放参数。
 
    ![](assets/edit_diffusion_fil_script.png)
 
-## 示例：投放工作流{#example--delivery-workflow}
+## 示例：投放工作流 {#example--delivery-workflow}
 
 创建新工作流并添加活动，如下图所示：
 
@@ -125,13 +127,13 @@ ht-degree: 0%
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   此消息包括使用JavaScript编写的表达式：**[!UICONTROL vars.recCount]**&#x200B;表示上一任务投放所定向的收件人数。 有关JavaScript表达式的更多信息，请参阅[JavaScript脚本和模板](../../workflow/using/javascript-scripts-and-templates.md)。
+   此消息包括使用JavaScript编写的表达式：**[!UICONTROL vars.recCount]**&#x200B;表示上一任务投放所定向的收件人数。 有关JavaScript表达式的更多信息，请参阅[JavaScript脚本和模板](javascript-scripts-and-templates.md)。
 
    ![](assets/new-workflow-param-validation.png)
 
-   [Approval](../../workflow/using/approval.md)中详细说明了“批准”任务。
+   [Approval](approval.md)中详细说明了“批准”任务。
 
-## 输入参数{#input-parameters}
+## 输入参数 {#input-parameters}
 
 投放标识符（如果在&#x200B;**[!UICONTROL Delivery]**&#x200B;部分中选择了&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;选项）。
 
@@ -153,7 +155,7 @@ ht-degree: 0%
 
    在&#x200B;**[!UICONTROL Content]**&#x200B;部分中选择了&#x200B;**[!UICONTROL Specified by inbound events]**&#x200B;选项时的内容标识符。
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * tableName
 * 模式

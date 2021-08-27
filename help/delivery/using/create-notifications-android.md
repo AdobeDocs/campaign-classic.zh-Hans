@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 创建Android通知{#create-notificaations-android}
+
+![](../../assets/common.svg)
 
 使用Adobe Campaign在Android设备上发送推送通知。 有关投放创建的全局概念，请参见[此部分](steps-about-delivery-creation-steps.md)。
 

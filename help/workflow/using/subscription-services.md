@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 订阅服务{#subscription-services}
+
+![](../../assets/common.svg)
 
 **订阅服务**&#x200B;类型活动允许您为过渡中指定的群体创建或删除信息服务订阅。
 
@@ -31,7 +33,7 @@ ht-degree: 2%
 
    该消息的内容在与信息服务相关的投放模板中指定。 有关更多信息，请参阅此](../../delivery/using/managing-subscriptions.md)章节[。
 
-## 示例：订阅新闻稿{#example--subscribe-a-list-of-recipients-to-a-newsletter}的收件人列表
+## 示例：订阅新闻稿的收件人列表 {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
 在单个操作中，以下工作流旨在为符合新闻通讯条件的收件人列表，这些收件人面向居住在巴黎的工作人员，以便让他们订阅。
 
@@ -63,7 +65,7 @@ ht-degree: 2%
 
 您可以转到&#x200B;**[!UICONTROL Subscription]**&#x200B;选项卡，查看收件人的订阅是否成功。
 
-## 输入参数{#input-parameters}
+## 输入参数 {#input-parameters}
 
 * tableName
 * 模式

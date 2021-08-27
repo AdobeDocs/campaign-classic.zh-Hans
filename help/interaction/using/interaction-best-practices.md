@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 互动最佳实践{#interaction-best-practices}
+
+![](../../assets/v7-only.svg)
 
 ## 一般建议 {#general-recommendations}
 
@@ -30,7 +32,7 @@ Adobe Campaign的互动需要谨慎管理，才能高效运行。 您必须在�
 * 选件目录设计对Adobe Campaign Classic性能有巨大影响。
 * 当有多个选件时，将它们拆分为多个选件目录。
 
-### 资格规则{#eligibility-rules}
+### 资格规则 {#eligibility-rules}
 
 下面列出了有关资格规则的一些最佳实践。
 
@@ -44,7 +46,7 @@ Adobe Campaign的互动需要谨慎管理，才能高效运行。 您必须在�
 * 建议每个选件空间具有有限数量的选件。 这可确保在任何给定空间中更快地检索选件。
 * 使用索引，尤其是常用的查找列。
 
-### 命题表{#proposition-table}
+### 命题表 {#proposition-table}
 
 下面列出了有关建议表的一些最佳实践。
 
@@ -54,11 +56,11 @@ Adobe Campaign的互动需要谨慎管理，才能高效运行。 您必须在�
 * 限制每个目标要求的建议数。 请勿设置超出您实际要使用的设置。
 * 尽量避免在规则条件中加入连接。
 
-## 有关管理优惠的提示和技巧{#tips-managing-offers}
+## 有关管理优惠的提示和技巧 {#tips-managing-offers}
 
 本节包含有关管理优惠和使用Adobe Campaign Classic中的交互模块的更多详细信息。
 
-### 在电子邮件投放中使用多个选件空间{#multiple-offer-spaces}
+### 在电子邮件投放中使用多个选件空间 {#multiple-offer-spaces}
 
 在投放中包含选件时，通常会通过扩充活动（或其他类似活动）在营销活动工作流的上游位置选择选件。
 
@@ -84,7 +86,7 @@ Adobe Campaign的互动需要谨慎管理，才能高效运行。 您必须在�
 
 因此，为避免出现任何问题，建议所有选件空间都定义HTML渲染函数，即使您的选件空间仅需要HTML内容也是如此。
 
-### 在命题日志表{#rank-proposition-log-table}中设置排名
+### 在命题日志表中设置排名 {#rank-proposition-log-table}
 
 在生成或接受建议时，选件空间能够将数据存储在建议表中：
 
@@ -118,7 +120,7 @@ Adobe Campaign的互动需要谨慎管理，才能高效运行。 您必须在�
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
-### 扩展nms:offer模式{#extending-nms-offer-schema}
+### 扩展nms:offer模式 {#extending-nms-offer-schema}
 
 扩展nms:offer模式时，请确保遵循已设置的现成结构：
 * 在`<element name="view">`下为内容存储定义任何新字段。

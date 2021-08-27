@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 94%
@@ -14,6 +14,8 @@ ht-degree: 94%
 ---
 
 # 管理用户档案{#managing-profiles}
+
+![](../../assets/common.svg)
 
 ## 收件人树状结构 {#recipient-tree}
 
@@ -27,15 +29,15 @@ ht-degree: 94%
 >
 >要显示数据库中所有收件人的列表，您必须创建一个视图。在[文件夹和视图](../../platform/using/access-management-folders.md)中了解更多信息。
 
-## 移动收件人{#moving-recipients}
+## 移动收件人 {#moving-recipients}
 
 您可以选择一个或多个收件人、从收件人列表拖动收件人，并将它们放在想要的文件夹中。警告消息会要求您确认此操作。
 
-## 复制收件人{#copying-a-recipient}
+## 复制收件人 {#copying-a-recipient}
 
 您可以在所需的收件人上单击鼠标右键，然后选择 **[!UICONTROL Copy]**，复制同一文件夹中的收件人。
 
-## 删除收件人{#deleting-recipients}
+## 删除收件人 {#deleting-recipients}
 
 要删除收件人，请将它们移到指定的文件夹中，然后清空此文件夹的內容。在此情况下，**強烈建议您不要使用** **[!UICONTROL Delete]** 选项。
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '8433'
 ht-degree: 0%
@@ -15,10 +15,11 @@ ht-degree: 0%
 
 # SMS 连接器协议和设置 {#sms-connector-protocol}
 
+![](../../assets/common.svg)
+
 >[!NOTE]
 >
 >通过本文档，对协议、字段名称和值的详细信息的所有引用均引用[SMPP 3.4规范](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)。
-
 
 ## 概述 {#overview}
 
@@ -104,7 +105,7 @@ SMPP传输单元（“数据包”）称为PDU。 **PDU**&#x200B;包含命令、
 
 在Adobe Campaign Classic中，要将SR与其相应的MT链接，SMSC会通过`SUBMIT_SM_RESP`和`DELIVER_SM`步骤返回ID。 标识符存储在`nms::providerMsgId`表的`providerId`字段中，并链接到`broadLogId`和`deliveryId`。 此匹配操作由短信进程在写入数据库时完成。
 
-成功的`SUBMIT_SM_RESP PDU`会在发送日志中触发“已发送”消息状态，成功的`DELIVER_SM (SR) PDU`触发“已接收”消息状态。
+成功的`SUBMIT_SM_RESP PDU`会在发送日志中触发“已发送”消息状态，而成功的`DELIVER_SM (SR) PDU`触发“已接收”消息状态。
 
 ### 安全方面 {#security-aspects}
 

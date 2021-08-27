@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 创建优惠空间{#creating-offer-spaces}
+
+![](../../assets/v7-only.svg)
 
 只有具有选件空间子文件夹访问权限的&#x200B;**技术管理员**&#x200B;才能创建选件空间。 选件空间只能在设计环境中创建，并在选件批准期间自动复制到实时环境中。
 
@@ -69,7 +71,7 @@ HTML或XML渲染是通过渲染函数创建的。 呈现函数中定义的字段
 
 如有必要，您可以使集客交互的XML渲染函数过载。 您还可以为出站交互使HTML和文本渲染函数过载。 有关更多信息，请参阅[关于入站渠道](../../interaction/using/about-inbound-channels.md)。
 
-## 选件建议状态{#offer-proposition-statuses}
+## 优惠建议状态 {#offer-proposition-statuses}
 
 根据与目标群体的交互，选件建议可以具有各种状态。 交互附带一组值，这些值可在选件的整个生命周期中应用于该选件建议。 但是，您需要配置平台，以便在创建并接受选件建议时状态发生更改。
 
@@ -77,7 +79,7 @@ HTML或XML渲染是通过渲染函数创建的。 呈现函数中定义的字段
 >
 >优惠建议的状态不会立即更新。 它由每小时触发的跟踪工作流执行。
 
-### 状态列表{#status-list}
+### 状态列表 {#status-list}
 
 交互附带以下值，可用于确定优惠建议的状态：
 
@@ -94,7 +96,7 @@ HTML或XML渲染是通过渲染函数创建的。 呈现函数中定义的字段
 >
 >如果选件链接到状态为“已发送”的投放，则选件建议的状态将自动更改为“已显示”。
 
-### 在创建命题{#configuring-the-status-when-the-proposition-is-created}时配置状态
+### 在创建建议时配置状态 {#configuring-the-status-when-the-proposition-is-created}
 
 当交互引擎创建优惠建议时，无论它是集客交互还是出站交互，其状态都会发生更改。 这两个值之间的选择取决于在&#x200B;**[!UICONTROL Design]**&#x200B;环境中配置选件空间的方式
 
@@ -107,7 +109,7 @@ HTML或XML渲染是通过渲染函数创建的。 呈现函数中定义的字段
 
    ![](assets/offer_update_status_001.png)
 
-### 在{#configuring-the-status-when-the-proposition-is-accepted}接受建议时配置状态
+### 在建议被接受时配置状态 {#configuring-the-status-when-the-proposition-is-accepted}
 
 接受优惠建议后，您可以使用默认提供的值之一配置建议的新状态。 当收件人单击选件中的链接（该链接调用交互引擎）时，更新将生效。
 
@@ -148,7 +150,7 @@ HTML或XML渲染是通过渲染函数创建的。 呈现函数中定义的字段
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
 ```
 
-## 每个空间的选件预览{#offer-preview-per-space}
+## 每个空间的选件预览 {#offer-preview-per-space}
 
 在此选项卡中，您可以通过所选方法查看收件人有资格查看的选件。 在以下示例中，收件人有资格通过邮件获得三个选件建议。
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 安装 Campaign Classic 内置软件包{#installing-campaign-standard-packages}
+
+![](../../assets/v7-only.svg)
 
 ## 关于内置包 {#campaign-standard-packages}
 
@@ -58,7 +60,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> 投放<br /> </td> 
-   <td> 监控投放以及发送消息时遇到的最终问题。 <a href="../../delivery/using/about-delivery-monitoring.md">了解详情</a><br /> </td> 
+   <td> 监控投放情况以及发送消息时遇到的最终问题。 <a href="../../delivery/using/about-delivery-monitoring.md">了解详情</a><br /> </td> 
    <td> 所有</td> 
   </tr> 
   <tr> 
@@ -149,7 +151,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> 响应管理器<br /> </td> 
-   <td> 衡量营销活动的成功和盈利能力，或为所有沟通渠道提供建议。  可选。<a href="../../campaign/using/about-response-manager.md">了解更多</a> <br /> </td> 
+   <td> 衡量营销活动的成功和盈利能力，或为所有沟通渠道提供建议。  可选。<a href="../../response/using/about-response-manager.md">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -159,7 +161,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> 活动优化<br /> </td> 
-   <td> 控制、过滤和监控投放的发送，以便按照公司通信策略，最好地满足客户的需求和期望。 可选。<a href="../../campaign/using/about-campaign-typologies.md">了解更多</a> <br /> </td> 
+   <td> 控制、过滤和监控投放的发送，以便按照公司通信策略，最好地满足客户的需求和期望。 可选。<a href="../../campaign-opt/using/about-campaign-typologies.md">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -179,7 +181,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> 中央/本地营销（分布式营销）<br /> </td> 
-   <td> 在中央实体（总部、营销部门等）之间实施合作活动 和地方实体（销售点、地区机构等）。 可选。<a href="../../campaign/using/about-distributed-marketing.md">了解更多</a><br /> </td> 
+   <td> 在中央实体（总部、营销部门等）之间实施合作活动 和地方实体（销售点、地区机构等）。 可选。<a href="../../distributed/using/about-distributed-marketing.md">了解更多</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 

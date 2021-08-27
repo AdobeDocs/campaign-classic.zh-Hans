@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 9500a7ba-263d-425b-8cc3-b111c6b9108f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 53%
 
 ---
 
-# 访问外部数据库 (FDA){#accessing-an-external-database-fda}
+# 访问外部数据库（联合数据访问） {#accessing-an-external-database-fda}
+
+![](../../assets/common.svg)
 
 Adobe Campaign 提供了联合数据访问 (FDA) 选项，以处理存储在一个或多个外部数据库中的信息：无需改变 Adobe Campaign 数据的结构就可以访问外部数据。
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 464a6548-1b91-4e09-b620-3b820ef69653
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 优惠目录概述{#offer-catalog-overview}
+
+![](../../assets/v7-only.svg)
 
 选件目录始终由具有子类别的类别组成，或直接由选件组成。
 

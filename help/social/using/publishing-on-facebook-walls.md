@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2135a836-245f-406e-b351-c27d38e0f9fd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 在 Facebook 好友墙上发布{#publishing-on-facebook-walls}
+
+![](../../assets/v7-only.svg)
 
 为了使Adobe Campaign能够将出版物发送到Facebook墙，您需要将这些页面的写入权限委派给Adobe Campaign。 这涉及以下配置步骤：
 
@@ -33,7 +35,7 @@ ht-degree: 2%
 
    ![](assets/social_diagram_fb_external_account.png)
 
-## 创建测试Facebook页面{#creating-a-test-facebook-page}
+## 创建测试Facebook页面 {#creating-a-test-facebook-page}
 
 我们建议创建用于传送发布校样的专用Facebook页面(有关更多信息，请参阅[发送校样](../../social/using/publishing-on-facebook.md#sending-the-proof)。
 
@@ -74,7 +76,7 @@ ht-degree: 2%
 
    ![](assets/social_create_facebook_app_004.png)
 
-## 委派对Adobe Campaign的写入权限{#delegating-write-access-to-adobe-campaign}
+## 委派对Adobe Campaign的写入权限 {#delegating-write-access-to-adobe-campaign}
 
 要委派对Adobe Campaign的写入权限以在页面的涂鸦墙上发布，您需要输入之前创建的Facebook应用程序的参数。
 
@@ -143,7 +145,7 @@ ht-degree: 2%
 
 **[!UICONTROL Synchronization of Facebook pages]**&#x200B;工作流可同步由Facebook帐户管理的所有页面，以便您直接通过Adobe Campaign在其涂鸦墙上发布内容。 有关更多信息，请参阅[同步Facebook页面](#synchronizing-facebook-pages)。
 
-## 同步Facebook页面{#synchronizing-facebook-pages}
+## 同步Facebook页面 {#synchronizing-facebook-pages}
 
 通过&#x200B;**[!UICONTROL Administration > Production > Technical workflows > Managing social networks]**&#x200B;节点访问的&#x200B;**[!UICONTROL Synchronization of Facebook pages]**&#x200B;工作流允许您(在Adobe Campaign中)同步之前配置的Facebook帐户页面。 默认情况下，此工作流配置为每天或当管理员单击服务配置屏幕中的&#x200B;**[!UICONTROL Request an authorization from the application]**&#x200B;链接时运行一次(请参阅[将写权限委派给Adobe Campaign](#delegating-write-access-to-adobe-campaign))。
 

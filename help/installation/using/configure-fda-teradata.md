@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
 
 ---
 
-# 配置对Teradata{#configure-access-to-teradata}的访问
+# 配置对Teradata的访问 {#configure-access-to-teradata}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign [联合数据访问](../../installation/using/about-fda.md)(FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对Teradata的访问。
 
@@ -21,7 +23,7 @@ ht-degree: 0%
 1. 在Campaign中配置Teradata[外部帐户](#teradata-external)
 1. 为Teradata和Campaign服务器设置[其他配置](#teradata-additional-configurations)
 
-## Teradata配置{#teradata-config}
+## Teradata配置 {#teradata-config}
 
 您需要安装Teradata驱动程序才能与Campaign实施连接。
 
@@ -67,7 +69,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >在FDA中连接到Teradata外部数据库需要在Adobe Campaign服务器上执行其他配置步骤。 [了解详情](#teradata-additional-configurations)。
-
 
 ## Teradata外部帐户{#teradata-external}
 
@@ -115,7 +116,7 @@ ht-degree: 0%
 
 1. 选中&#x200B;**[!UICONTROL Active]**&#x200B;框以激活此功能
 
-#### 外部帐户疑难解答{#external-account-troubleshooting}
+#### 外部帐户疑难解答 {#external-account-troubleshooting}
 
 如果在测试连接&#x200B;**TIM-030008日期“2”时出现以下错误：缺少字符(iRc=-53)**&#x200B;确保ODBC驱动程序安装正确，并为Campaign服务器设置LD_LIBRARY_PATH(Linux)/ PATH(Windows)。
 
@@ -148,7 +149,7 @@ Starting from Adobe Campaign Classic 17.9, we now support by default Teradata da
 Customers with a Latin-1 Teradata database migrating to a recent Campaign Classic release will have to add the parameter APICharSize=1 in the options of the external account.
 -->
 
-### 用户配置{#user-configuration}
+### 用户配置 {#user-configuration}
 
 外部数据库需要以下权限：创建/拖放/执行自定义过程，创建/拖放/插入/选择表。 如果要在Adobe Campaign实例上使用md5和sha2函数，则可能还必须创建用户模式函数。
 
@@ -160,7 +161,7 @@ Adobe Campaign不会对它将在数据库中创建的对象设置保护模式（
 | :-: |
 | ```MODIFY USER $login$ AS NO FALLBACK;``` |
 
-### MD5安装{#md5-installation}
+### MD5安装 {#md5-installation}
 
 如果要在Adobe Campaign实例中使用md5函数，则必须从此[page](https://downloads.teradata.com/download/extensibility/md5-message-digest-udf)(md5_20080530.zip)在Teradata数据库上安装用户模式函数。
 
@@ -180,7 +181,7 @@ Adobe Campaign不会对它将在数据库中创建的对象设置保护模式（
    .run file = hash_md5.btq
    ```
 
-### SHA2安装{#sha2-installation}
+### SHA2安装 {#sha2-installation}
 
 如果要在Adobe Campaign实例中使用sha2函数，则必须从此[page](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip)(teradata-udf-sha2-1.0.zip)在Teradata数据库上安装用户模式函数。
 
@@ -201,7 +202,7 @@ Adobe Campaign不会对它将在数据库中创建的对象设置保护模式（
    .run file = hash_sha512.sql
    ```
 
-### UDF_UTF16TO8安装{#UDF-UTF16TO8-installation}
+### UDF_UTF16TO8安装 {#UDF-UTF16TO8-installation}
 
 如果要在Adobe Campaign实例中使用udf_utf16to8函数，则必须从此[页](https://downloads.teradata.com/download/tools/unicode-tool-kit)(utk_release1.7.0.0.zip)的&#x200B;**Teradataunicode工具包**(utk_release1.7.0.0.zip)在Teradata数据库上安装用户模式函数。
 
@@ -230,7 +231,7 @@ Adobe Campaign不会对它将在数据库中创建的对象设置保护模式（
    SELECT CAST(Char2HexInt(UDF_UTF16to8(_UNICODE'004100000042'XC)) AS VARCHAR(100));
    ```
 
-## Linux {#campaign-server-linux}的Campaign服务器配置
+## Linux的Campaign服务器配置 {#campaign-server-linux}
 
 安装驱动程序时需要满足以下条件：
 
@@ -246,7 +247,7 @@ Adobe Campaign不会对它将在数据库中创建的对象设置保护模式（
 
 如果您的Linux分发没有包，您可以按照CentOS 7中的说明（例如使用docker）进行安装，然后在Adobe Campaign服务器上复制/opt/teradata的内容。
 
-### ODBC驱动程序安装{#odbc-installation}
+### ODBC驱动程序安装 {#odbc-installation}
 
 要安装ODBC驱动程序，请执行以下操作：
 
@@ -262,7 +263,7 @@ Adobe Campaign不会对它将在数据库中创建的对象设置保护模式（
 
 1. 运行setup_wrapper.sh。
 
-### Teradata工具和实用程序安装{#teradata-tools-installation}
+### Teradata工具和实用程序安装 {#teradata-tools-installation}
 
 要安装工具，请执行以下操作：
 
@@ -282,7 +283,7 @@ Adobe Campaign不会对它将在数据库中创建的对象设置保护模式（
 
 1. libtelapi.so文件应在/opt/teradata/client/16.20/lib64中可用。
 
-## Windows {#campaign-server-windows}的Campaign服务器配置
+## Windows的Campaign服务器配置 {#campaign-server-windows}
 
 您首先需要下载适用于Windows的Teradata工具和实用程序。 可以从此[page](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package)下载它
 

@@ -6,26 +6,28 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1924'
 ht-degree: 3%
 
 ---
 
 # 定位数据{#targeting-data}
 
+![](../../assets/common.svg)
+
 ## 创建查询 {#creating-queries}
 
-### 选择数据{#selecting-data}
+### 选择数据 {#selecting-data}
 
-**[!UICONTROL Query]**&#x200B;活动允许您选择基本数据以构建目标群体。 有关更多信息，请参阅[创建查询](../../workflow/using/query.md#creating-a-query)。
+**[!UICONTROL Query]**&#x200B;活动允许您选择基本数据以构建目标群体。 有关更多信息，请参阅[创建查询](query.md#creating-a-query)。
 
-您还可以使用以下活动来查询和优化来自数据库的数据：[增量查询](../../workflow/using/incremental-query.md), [读取列表](../../workflow/using/read-list.md)。
+您还可以使用以下活动来查询和优化来自数据库的数据：[增量查询](incremental-query.md), [读取列表](read-list.md)。
 
-可以收集要在整个工作流生命周期中转发和处理的其他数据。 有关更多信息，请参阅[添加数据](../../workflow/using/query.md#adding-data)和[编辑其他数据](#editing-additional-data)。
+可以收集要在整个工作流生命周期中转发和处理的其他数据。 有关更多信息，请参阅[添加数据](query.md#adding-data)和[编辑其他数据](#editing-additional-data)。
 
-### 编辑其他数据{#editing-additional-data}
+### 编辑其他数据 {#editing-additional-data}
 
 添加附加数据后，您可以对其进行编辑或使用它来优化查询活动中定义的目标。
 
@@ -51,25 +53,25 @@ ht-degree: 3%
 
 ![](assets/query_add_columns_collection.png)
 
-### 使用附加数据{#refining-the-target-using-additional-data}优化目标
+### 使用附加数据优化目标 {#refining-the-target-using-additional-data}
 
 通过收集的附加数据，可以优化数据库中的数据过滤。 为此，请单击&#x200B;**[!UICONTROL Refine the target using additional data...]**&#x200B;链接：这样，您就可以对添加的数据进行过滤。
 
 ![](assets/wf_add_data_use_additional_data.png)
 
-### 均匀化数据{#homogenizing-data}
+### 均质化数据 {#homogenizing-data}
 
 在&#x200B;**[!UICONTROL Union]**&#x200B;或&#x200B;**[!UICONTROL Intersection]**&#x200B;类型活动中，您可以选择仅保留共享的附加数据以保持数据一致。 在这种情况下，此活动的临时输出工作表将仅包含所有集客集中找到的附加数据。
 
 ![](assets/option-common_additionnal_col_only.png)
 
-### 与附加数据{#reconciliation-with-additional-data}协调
+### 与其他数据协调 {#reconciliation-with-additional-data}
 
 在数据协调阶段（**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等） 活动)，则可以从其他列中选择要用于数据协调的列。 为此，请针对所选列配置协调并指定主集。 然后，选择窗口下列中的列，如以下示例所示：
 
 ![](assets/select-column-and-join.png)
 
-### 创建子集{#creating-subsets}
+### 创建子集 {#creating-subsets}
 
 **[!UICONTROL Split]**&#x200B;活动允许您根据通过提取查询定义的条件创建子集。 对于每个子集，在编辑群体的筛选条件时，您将访问标准查询活动，该活动允许您定义目标分段条件。
 
@@ -77,9 +79,9 @@ ht-degree: 3%
 
 有关更多信息，请参阅[使用Split活动创建子集](#creating-subsets-using-the-split-activity) 。
 
-## 对数据{#segmenting-data}进行分段
+## 对数据分段 {#segmenting-data}
 
-### 组合多个目标（并集）{#combining-several-targets--union-}
+### 合并多个目标（合并） {#combining-several-targets--union-}
 
 利用并集活动，可在一个过渡中合并多个活动的结果。 集不一定必须是同质的。
 
@@ -117,7 +119,7 @@ ht-degree: 3%
 
    ![](assets/join_limit_nb_priority.png)
 
-### 提取联合数据（交集）{#extracting-joint-data--intersection-}
+### 提取关节数据（交集） {#extracting-joint-data--intersection-}
 
 ![](assets/traitements.png)
 
@@ -125,9 +127,9 @@ ht-degree: 3%
 
 此外，可以仅保留一些列选项，或仅保留集客群体共享的列。
 
-[Intersect](../../workflow/using/intersection.md)部分中详细描述了交集活动。
+[Intersect](intersection.md)部分中详细描述了交集活动。
 
-### 排除群体（排除）{#excluding-a-population--exclusion-}
+### 排除群体（排除） {#excluding-a-population--exclusion-}
 
 利用排除活动，可从其他目标群体中排除目标的元素。 此活动的输出定向维度将为主集的维度。
 
@@ -137,7 +139,7 @@ ht-degree: 3%
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
-### 使用拆分活动{#creating-subsets-using-the-split-activity}创建子集
+### 使用拆分活动创建子集 {#creating-subsets-using-the-split-activity}
 
 **[!UICONTROL Split]**&#x200B;活动是标准活动，通过该活动，您可以通过一个或多个筛选维度创建所需数量的集，以及为每个子集生成一个输出过渡或唯一过渡。
 
@@ -157,7 +159,7 @@ ht-degree: 3%
 
    ![](assets/split-subset-config-all-data.png)
 
-   [此部分](../../workflow/using/cross-channel-delivery-workflow.md)中介绍了如何在&#x200B;**[!UICONTROL Split]**&#x200B;活动中使用筛选条件将目标分段为不同群体的示例。
+   [此部分](cross-channel-delivery-workflow.md)中介绍了如何在&#x200B;**[!UICONTROL Split]**&#x200B;活动中使用筛选条件将目标分段为不同群体的示例。
 
    **[!UICONTROL Label]**&#x200B;字段允许您为新创建的子集指定一个名称，该名称将匹配叫客过渡。
 
@@ -175,7 +177,11 @@ ht-degree: 3%
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   有关更多信息，请参阅此](../../installation/using/about-fda.md)章节[。
+   有关更多信息，请根据您的Campaign版本，参阅以下章节：
+
+   ![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文档](../../installation/using/about-fda.md)
+
+   ![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=en)
 
 然后，我们需要添加新子集：
 
@@ -193,7 +199,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >如果已获得&#x200B;**Federated Data Access**&#x200B;选项，则可以根据外部基中的信息创建子集。 为此，请在&#x200B;**[!UICONTROL Targeting dimension]**&#x200B;字段中选择外部表的架构。 有关更多信息，请参阅[访问外部数据库(FDA)](../../workflow/using/accessing-an-external-database--fda-.md)。
+   >如果已获得&#x200B;**Federated Data Access**&#x200B;选项，则可以根据外部基中的信息创建子集。 为此，请在&#x200B;**[!UICONTROL Targeting dimension]**&#x200B;字段中选择外部表的架构。 有关更多信息，请参阅[访问外部数据库(FDA)](accessing-an-external-database--fda-.md)。
 
 创建子集后，默认情况下，拆分活动会显示与有子集一样多的输出过渡：
 
@@ -207,25 +213,25 @@ ht-degree: 3%
 
 ![](assets/wf_split_single_output.png)
 
-也可以使用&#x200B;**[!UICONTROL Cells]**&#x200B;活动创建子集。 有关更多信息，请参阅[Cells](../../workflow/using/cells.md)一节。
+也可以使用&#x200B;**[!UICONTROL Cells]**&#x200B;活动创建子集。 有关更多信息，请参阅[Cells](cells.md)一节。
 
-### 使用目标数据{#using-targeted-data}
+### 使用目标数据 {#using-targeted-data}
 
 识别和准备数据后，即可在以下上下文中使用该数据：
 
 * 您可以根据各种工作流阶段中的数据操作来更新数据库中的数据。
 
-   有关更多信息，请[更新数据](../../workflow/using/update-data.md)。
+   有关更多信息，请[更新数据](update-data.md)。
 
 * 您还可以刷新现有列表的内容。
 
-   有关更多信息，请参阅[列表更新](../../workflow/using/list-update.md)。
+   有关更多信息，请参阅[列表更新](list-update.md)。
 
 * 您可以在工作流中直接准备或开始投放。
 
-   有关更多信息，请参阅[投放](../../workflow/using/delivery.md)、[投放控制](../../workflow/using/delivery-control.md)和[连续投放](../../workflow/using/continuous-delivery.md)。
+   有关更多信息，请参阅[投放](delivery.md)、[投放控制](delivery-control.md)和[连续投放](continuous-delivery.md)。
 
-## 数据管理{#data-management}
+## 数据管理 {#data-management}
 
 在Adobe Campaign中，数据管理通过提供更高效、更灵活的工具，将一组活动整合在一起，用于解决复杂的定位问题。 这样，您就可以使用与合同、订阅、对投放的反应等相关的信息，对与联系人的所有通信实施一致的管理。 通过数据管理，您可以在分段操作期间跟踪数据生命周期，特别是：
 
@@ -235,9 +241,9 @@ ht-degree: 3%
 
 为实施这些操作，Adobe Campaign提供：
 
-* 数据收集活动：[文件传输](../../workflow/using/file-transfer.md)、[数据加载（文件）](../../workflow/using/data-loading--file-.md)、[数据加载(RDBMS)](../../workflow/using/data-loading--rdbms-.md)、[更新数据](../../workflow/using/update-data.md)。 收集数据的第一步是准备数据，以便在其他活动中对其进行处理。 需要监控多个参数，以确保工作流正确执行并提供预期结果。 例如，在导入数据时，此数据的主键(Pkey)对于每个记录必须是唯一的。
-* 使用数据管理选项丰富了定位活动：[Query](../../workflow/using/query.md)、[Union](../../workflow/using/union.md)、[Intersect](../../workflow/using/intersection.md)、[Split](../../workflow/using/split.md)。 这允许您在多个不同定向维度的数据之间配置并集或交集，但前提是可以进行数据协调。
-* 数据转换活动：[扩充](../../workflow/using/enrichment.md)、[更改维度](../../workflow/using/change-dimension.md)。
+* 数据收集活动：[文件传输](file-transfer.md)、[数据加载（文件）](data-loading--file-.md)、[数据加载(RDBMS)](data-loading--rdbms-.md)、[更新数据](update-data.md)。 收集数据的第一步是准备数据，以便在其他活动中对其进行处理。 需要监控多个参数，以确保工作流正确执行并提供预期结果。 例如，在导入数据时，此数据的主键(Pkey)对于每个记录必须是唯一的。
+* 使用数据管理选项丰富了定位活动：[Query](query.md)、[Union](union.md)、[Intersect](intersection.md)、[Split](split.md)。 这允许您在多个不同定向维度的数据之间配置并集或交集，但前提是可以进行数据协调。
+* 数据转换活动：[扩充](enrichment.md)、[更改维度](change-dimension.md)。
 
 >[!CAUTION]
 >
@@ -245,12 +251,12 @@ ht-degree: 3%
 >  
 >例如，通过工作流删除收件人不会导致删除该收件人的所有投放历史记录。 但是，直接在“收件人”文件夹中删除收件人确实会导致删除此收件人关联的所有数据。
 
-### 扩充和修改数据{#enriching-and-modifying-data}
+### 扩充和修改数据 {#enriching-and-modifying-data}
 
-除了定向维度之外，您还可以通过筛选维度指定收集数据的性质。 请参阅[定位和筛选维度](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions)。
+除了定向维度之外，您还可以通过筛选维度指定收集数据的性质。 请参阅[定位和筛选维度](building-a-workflow.md#targeting-and-filtering-dimensions)。
 
 可以扩充、聚合和操作所识别和收集的数据以优化目标结构。 为此，除了[划分数据](#segmenting-data)部分中详细介绍的数据操作活动外，还应使用以下内容：
 
-* 通过&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动，您可以随时向架构添加列，以及向特定元素添加信息。 活动存储库的[扩充](../../workflow/using/enrichment.md)部分中详细介绍了该内容。
-* 利用&#x200B;**[!UICONTROL Edit schema]**&#x200B;活动，可修改架构的结构。 活动存储库的[编辑架构](../../workflow/using/edit-schema.md)部分中详细介绍了该内容。
-* **[!UICONTROL Change dimension]**&#x200B;活动允许您在目标构建周期中更改目标维度。 有关[Change dimension](../../workflow/using/change-dimension.md)部分的详细信息。
+* 通过&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动，您可以随时向架构添加列，以及向特定元素添加信息。 活动存储库的[扩充](enrichment.md)部分中详细介绍了该内容。
+* 利用&#x200B;**[!UICONTROL Edit schema]**&#x200B;活动，可修改架构的结构。 活动存储库的[编辑架构](edit-schema.md)部分中详细介绍了该内容。
+* **[!UICONTROL Change dimension]**&#x200B;活动允许您在目标构建周期中更改目标维度。 有关[Change dimension](change-dimension.md)部分的详细信息。

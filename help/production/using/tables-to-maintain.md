@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 0%
@@ -15,6 +15,8 @@ ht-degree: 0%
 
 # 要维护的表{#tables-to-maintain}
 
+![](../../assets/v7-only.svg)
+
 要维护的表列表取决于您的Adobe Campaign版本、使用方式和数据模型配置。
 
 以下列表仅包含最易碎的表。 影响如下：
@@ -22,7 +24,7 @@ ht-degree: 0%
 * 磁盘空间过度消耗，从而影响数据库访问，
 * 未定期更新的索引，这会降低查询性能。
 
-## Adobe Campaign表{#adobe-campaign-tables}
+## Adobe Campaign表 {#adobe-campaign-tables}
 
 <table> 
  <thead> 
@@ -199,6 +201,6 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-## 客户表{#customer-tables}
+## 客户表 {#customer-tables}
 
 除上面的列表外，客户在平台设置期间创建的(在Adobe Campaign数据模型中不存在)包含的表也可能会被分割，尤其是当这些表在数据加载或同步过程中经常更新时。 这些表可以是默认Adobe Campaign数据模型的一部分（例如&#x200B;**NmsRecipient**）。 在这种情况下，由Adobe Campaign平台的管理员对其特定数据库模型进行审核，以查找这些自定义表。 这些表不一定在我们的维护过程中明确提及。

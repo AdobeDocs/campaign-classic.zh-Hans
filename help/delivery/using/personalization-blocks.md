@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 个性化块{#personalization-blocks}
+
+![](../../assets/common.svg)
 
 个性化块是动态的、个性化的，并包含可插入投放中的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。 请参阅[插入个性化块](#inserting-personalization-blocks)。
 

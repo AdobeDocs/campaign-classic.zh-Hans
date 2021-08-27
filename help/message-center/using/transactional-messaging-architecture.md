@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 事务性消息传递架构 {#transactional-messaging-architecture}
+
+![](../../assets/v7-only.svg)
 
 事务型消息传递依赖于由多个实例组成的特定架构：
 
@@ -27,7 +29,7 @@ ht-degree: 1%
 |--- |--- |
 | Adobe Campaign用户登录到控制实例以： <ul><li>创建事务型消息模板</li><li>使用种子列表生成消息预览</li><li>显示报表</li><li>监控执行实例</li></ul> | 执行实例位于： <ul><li>接收事件</li><li>将它们链接到事务型消息模板</li><li>向每个收件人发送个性化消息</li></ul> |
 
-## 安装实例{#installing-instances}
+## 安装实例 {#installing-instances}
 
 安装事务型消息包时，需要采取多项预防措施。 Adobe建议您先在测试环境中工作，然后再投入生产。 您还需要拥有兼容的Adobe Campaign许可证。 有关更多信息，请联系您的Adobe客户经理。
 
@@ -37,7 +39,7 @@ ht-degree: 1%
 
 如果需要使用多个渠道，则必须先安装和配置相关包，然后再安装事务型消息包。 有关更多信息，请参阅[添加投放渠道](#adding-a-delivery-channel)。
 
-## 控制实例{#control-instance}
+## 控制实例 {#control-instance}
 
 要在计算机上安装控制实例，请通过&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜单选择&#x200B;**[!UICONTROL Transactional message control]**&#x200B;包。 有关更多信息，请参阅[安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md)。
 
@@ -45,7 +47,7 @@ ht-degree: 1%
 
 有关配置控制实例的详细步骤，请参见[此部分](../../message-center/using/configuring-instances.md#control-instance)。
 
-### 支持多个控制实例{#supporting-several-control-instances}
+### 支持多个控制实例 {#supporting-several-control-instances}
 
 >[!IMPORTANT]
 >
@@ -59,7 +61,7 @@ ht-degree: 1%
 >
 >有关必要配置的更多信息，请参阅[使用多个控制实例](../../message-center/using/configuring-instances.md#using-several-control-instances)。
 
-## 执行实例{#execution-instance}
+## 执行实例 {#execution-instance}
 
 要在计算机上安装执行实例，请通过&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜单选择&#x200B;**[!UICONTROL Transactional message execution]**&#x200B;包。 有关更多信息，请参阅[安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md)。
 
@@ -75,7 +77,7 @@ ht-degree: 1%
 >
 >添加投放渠道（移动渠道、移动应用程序渠道等） 必须先执行，然后再安装事务型消息包。
 
-### 添加投放渠道{#adding-a-delivery-channel}
+### 添加投放渠道 {#adding-a-delivery-channel}
 
 Adobe建议您在安装事务型消息包&#x200B;**之前，始终添加投放渠道包。**
 
@@ -126,7 +128,7 @@ Create your delivery templates the way you would for an email campaign:
 
 You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
 
-### 事务型推送通知 {#transactional-messaging-and-push-notifications}
+### 事务性推送通知 {#transactional-messaging-and-push-notifications}
 
 与移动设备应用程序渠道模块结合使用时，事务型消息传递允许您通过移动设备上的通知推送事务型消息。
 

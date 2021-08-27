@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 安装和更新Campaign客户端控制台{#installing-the-client-console}
+
+![](../../assets/v7-only.svg)
 
 Campaign客户端控制台是一个富客户端，可让您连接到Campaign应用程序服务器。
 
@@ -32,21 +34,21 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 >
 >Campaign客户端控制台和Campaign应用程序服务器必须在同一产品版本&#x200B;**上运行**。 Adobe还强烈建议使用&#x200B;**相同的产品版本**。 了解如何在[此部分](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中检查Campaign客户端和服务器版本。
 
-## Adobe托管的实施{#hosted-customers}
+## Adobe托管的实施 {#hosted-customers}
 
 作为托管客户的广告，您有两个选项可用于安装或更新客户端控制台：
 
 1. Adobe可以直接部署。 更新控制台后，系统将在弹出窗口中提示用户下载最新的客户端控制台版本。
 
-1. 您可以从[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)下载到客户端控制台
+1. 您可以从[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)下载到客户端控制台
 
    **用户需要管理员访问权限才能完成更新。如果用户没有管理员权限，则系统管理员需要部署到所有客户端控制台**
 
-## 混合和内部部署实施{#hybrid-onprem-customers}
+## 混合和内部部署实施 {#hybrid-onprem-customers}
 
 要使Adobe Campaign用户能够登录到您创建和配置的实例，他们需要使用客户端控制台。
 
-### 使控制台可供用户使用{#make-console-available}
+### 使控制台可供用户使用 {#make-console-available}
 
 当用于启动Adobe Campaign应用程序服务器(nlserver web)的计算机从客户端控制台接收用户连接时，您可以将其配置为通过HTML界面使Adobe Campaign富客户端的设置程序可用。 当客户端控制台有新版本可用时，系统会邀请用户在启动其客户端控制台时下载它。
 
@@ -81,7 +83,7 @@ Adobe建议取消选中选项&#x200B;**[!UICONTROL No longer ask this question]*
 >
 >如果您将更新的控制台应用于现有实施，用户将自动收到更新其客户端控制台的提示。 如果您是首次实施Campaign，则用户将需要下载控制台。 有关这两个选项的详细信息，请参阅下文
 
-### 更新现有实施的控制台{#update-the-client-console}
+### 为现有实施更新控制台{#update-the-client-console}
 
 控制台在Campaign服务器文件夹中可用后，系统会在弹出窗口中提示用户下载最新的客户端控制台版本。
 
@@ -106,7 +108,7 @@ Adobe建议取消选中选项&#x200B;**[!UICONTROL No longer ask this question]*
 1. 下载并保存客户端设置文件。
 1. 在Windows的计算机上执行下载的文件：安装开始。 客户端控制台的默认安装路径为&#x200B;**$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX客户端**，根据您的Adobe Campaign版本，其中“X”为“6”或“7”。
 
-### 创建连接 — 首次用户仅{#create-the-connection}
+### 创建连接 — 仅首次用户{#create-the-connection}
 
 安装客户端控制台后，请按照以下步骤创建与应用程序服务器的连接：
 
@@ -124,7 +126,7 @@ Adobe建议取消选中选项&#x200B;**[!UICONTROL No longer ask this question]*
 
    例如，您可以使用[`https://<machine>.<domain>.com`](https://myserver.adobe.com)类型URL。
 
-1. 如果为您的组织配置了AdobeIMS，请选中选项&#x200B;**[!UICONTROL Connect with an Adobe ID]**
+1. 如果为贵组织配置了Adobe IMS，请选中选项&#x200B;**[!UICONTROL Connect with an Adobe ID]**
 
 1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;以保存设置。
 

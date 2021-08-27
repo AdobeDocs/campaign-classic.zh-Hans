@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 维护类型{#types-of-maintenance}
 
-## 应用程序维护{#application-maintenance}
+![](../../assets/v7-only.svg)
+
+## 应用程序维护 {#application-maintenance}
 
 Adobe Campaign提供了一个内置工作流，可让您计划特定数据库维护任务：**数据库清理工作流**。 此工作流会执行以下任务：
 
@@ -27,7 +29,7 @@ Adobe Campaign提供了一个内置工作流，可让您计划特定数据库维
 >
 >请注意，清理任务主要涉及应用程序级别维护，而不涉及RDBMS级别维护（统计更新除外）。 但是，需要对数据库执行维护操作。 即使数据库清理工作流成功运行，这并不意味着数据库已得到最佳调整。
 
-## 技术维护{#technical-maintenance}
+## 技术维护 {#technical-maintenance}
 
 数据库清理工作流不包含任何数据库维护工具：由您组织维护。 为此，您可以：
 
@@ -39,7 +41,7 @@ Adobe Campaign提供了一个内置工作流，可让您计划特定数据库维
 * 重新索引频繁更新的表，
 * 压缩/重建表以避免碎片化。
 
-### 维护计划{#maintenance-schedule}
+### 维护计划 {#maintenance-schedule}
 
 您需要找到执行这些维护活动的适当插槽。 它们在运行时会严重影响数据库性能，甚至会阻止应用程序（由于锁定）。
 
@@ -47,7 +49,7 @@ Adobe Campaign提供了一个内置工作流，可让您计划特定数据库维
 
 更深入的维护（如完整表重建）可每月执行一次，最好是在应用程序完全停止时执行，因为系统仍然不可用。
 
-### 重建表{#rebuilding-a-table}
+### 重建表 {#rebuilding-a-table}
 
 提供了以下几种策略：
 

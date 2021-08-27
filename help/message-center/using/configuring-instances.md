@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 1%
@@ -14,7 +14,9 @@ ht-degree: 1%
 ---
 
 
-# 配置实例{#creating-a-shared-connection}
+# 配置实例 {#creating-a-shared-connection}
+
+![](../../assets/v7-only.svg)
 
 要使用事务型消息传递功能，您需要配置控制和执行实例。 您可以使用以下任一方法：
 * [一个与一](#control-instance) 个或多个执行实例关联的控制实例
@@ -32,7 +34,7 @@ ht-degree: 1%
 >
 >控制实例和执行实例必须安装在不同的计算机上。 他们无法共享同一Campaign实例。
 
-## 配置控制实例{#control-instance}
+## 配置控制实例 {#control-instance}
 
 要连接控制实例和执行实例，您首先需要在控制实例&#x200B;**上创建并配置&#x200B;**[!UICONTROL Execution instance]**类型的外部帐户**。 因此，在[发布](../../message-center/using/publishing-message-templates.md#template-publication)后，事务型消息模板便可以部署到执行实例。
 
@@ -117,7 +119,7 @@ ht-degree: 1%
 
 ![](assets/messagecenter_create_extaccount_006bis.png)
 
-## 配置执行实例{#execution-instance}
+## 配置执行实例 {#execution-instance}
 
 >[!NOTE]
 >
@@ -148,7 +150,7 @@ ht-degree: 1%
 
 使用多个执行实例时，对每个执行实例重复这些步骤。
 
-## 使用多个控制实例{#using-several-control-instances}
+## 使用多个控制实例 {#using-several-control-instances}
 
 您可以与各种控制实例共享执行群集。 此类架构需要以下配置。
 
@@ -156,7 +158,7 @@ ht-degree: 1%
 
 在所有执行实例的树中，为每个运算符创建一个文件夹（**文件夹1**&#x200B;和&#x200B;**文件夹2**），并限制每个运算符对其文件夹的数据访问。
 
-### 配置控制实例{#configuring-control-instances}
+### 配置控制实例 {#configuring-control-instances}
 
 >[!NOTE]
 >
@@ -174,7 +176,7 @@ ht-degree: 1%
    >
    >有关配置控制实例的更多信息，请参阅[此部分](#control-instance)。
 
-### 配置执行实例{#configuring-execution-instances}
+### 配置执行实例 {#configuring-execution-instances}
 
 >[!NOTE]
 >

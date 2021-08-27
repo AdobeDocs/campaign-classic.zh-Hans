@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 5%
 
 ---
 
-# 枚举元素{#enumeration--element}
+# 明细元素 {#enumeration--element}
 
-## 内容模型{#content-model-5}
+![](../../../assets/v7-only.svg)
+
+## 内容模型 {#content-model-5}
 
 枚举：==（help|值）
 
-## 属性{#attributes-5}
+## 属性 {#attributes-5}
 
 * @basetype（字符串）
 * @default（字符串）
@@ -28,24 +30,24 @@ ht-degree: 5%
 * @name（字符串）
 * @template（字符串）
 
-## 父项{#parents-5}
+## 父母 {#parents-5}
 
 `<srcschema>`
 
-## 子项{#children-5}
+## 子项 {#children-5}
 
 * `<help>`
 * `<value>`
 
-## 说明{#description-5}
+## 说明 {#description-5}
 
 利用此元素，可定义值枚举。 枚举属于其中定义的架构，但可通过其他架构访问。
 
-## {#use-and-context-of-use-4}的使用和使用上下文
+## 使用和使用上下文 {#use-and-context-of-use-4}
 
 枚举在架构开始时定义（在定义主元素之前）。
 
-## 属性描述{#attribute-description-5}
+## 属性描述 {#attribute-description-5}
 
 * **basetype（字符串）**:枚举中存储的值的类型。
 
@@ -86,7 +88,7 @@ ht-degree: 5%
 * **name(string)**:枚举的内部名称。
 * **模板（字符串）**:此属性定义对由多个架 `<enumeration>` 构共享的元素的引用。定义会自动复制到当前架构中。
 
-## 示例{#examples-4}
+## 示例 {#examples-4}
 
 其值存储在数据库中的枚举值示例：
 

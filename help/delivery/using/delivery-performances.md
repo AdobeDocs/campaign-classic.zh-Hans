@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 投放性能最佳实践 {#delivery-performances}
+
+![](../../assets/common.svg)
 
 我们建议遵循以下准则，以确保投放性能良好，并检查在遇到投放问题时执行的操作。
 

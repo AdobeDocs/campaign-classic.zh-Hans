@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 远程数据库访问权限 {#remote-database-access-rights}
+
+![](../../assets/v7-only.svg)
 
 首先，为了使用户能够通过FDA对外部数据库执行操作，后者必须在Adobe Campaign中具有特定的命名权限。
 
@@ -45,7 +47,7 @@ ht-degree: 1%
 
 数据库管理员需要使这些权限与每个数据库引擎的特定权限相匹配。 有关更多信息，请参阅以下章节。
 
-## FDA权限{#fda-rights}
+## FDA权限 {#fda-rights}
 
 |   | Snowflake | 红移 | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|

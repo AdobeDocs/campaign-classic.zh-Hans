@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 服务器安全设置 {#server-configuration}
+
+![](../../assets/v7-only.svg)
 
 ## 文件上传保护
 

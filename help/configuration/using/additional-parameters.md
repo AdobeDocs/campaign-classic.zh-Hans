@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 其他参数{#additional-parameters}
 
-## 参数{#definition-of-parameters}的定义
+![](../../assets/v7-only.svg)
+
+## 参数的定义 {#definition-of-parameters}
 
 您的Adobe Campaign平台提供两个TRANSACTION类型的Web跟踪参数作为标准：
 
@@ -42,7 +44,7 @@ ht-degree: 1%
 
 您可以通过配置（投放或收件人）的跟踪日志列表来显示这些参数的值。
 
-## 重定向服务器配置{#redirection-server-configuration}
+## 重定向服务器配置 {#redirection-server-configuration}
 
 在服务器配置中，您可以定义Web跟踪参数要考虑的最大字符数。
 

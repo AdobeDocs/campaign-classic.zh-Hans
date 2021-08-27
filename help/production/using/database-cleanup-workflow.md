@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 数据库清理工作流{#database-cleanup-workflow}
+
+![](../../assets/v7-only.svg)
 
 ## 简介 {#introduction}
 
@@ -25,7 +27,7 @@ ht-degree: 0%
 
 数据库清理在两个级别上配置：在工作流计划程序和部署向导中。
 
-### 工作流调度程序{#the-scheduler}
+### 工作流调度程序 {#the-scheduler}
 
 >[!NOTE]
 >
@@ -44,7 +46,7 @@ ht-degree: 0%
 >
 >要使&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流在计划程序中定义的日期和时间启动，必须启动工作流引擎(wfserver)。 如果情况并非如此，则在下次启动工作流引擎之前不会进行数据库清理。
 
-### 部署向导{#deployment-wizard}
+### 部署向导 {#deployment-wizard}
 
 通过&#x200B;**[!UICONTROL Tools > Advanced]**&#x200B;菜单访问&#x200B;**[!UICONTROL Deployment wizard]**，可配置保存数据的时长。 值以天表示。 如果没有更改这些值，工作流将使用默认值。
 
@@ -75,7 +77,7 @@ ht-degree: 0%
 
 以下部分介绍了&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流执行的所有任务。
 
-## 数据库清理工作流{#tasks-carried-out-by-the-database-cleanup-workflow}执行的任务
+## 由数据库清理工作流执行的任务 {#tasks-carried-out-by-the-database-cleanup-workflow}
 
 在工作流调度程序中定义的日期和时间（请参见[调度程序](#the-scheduler)），工作流引擎将启动数据库清理进程。 数据库清理连接到数据库，并按照如下所示的顺序执行任务。
 
@@ -88,7 +90,7 @@ ht-degree: 0%
 >
 >以下描述数据库清理工作流所执行任务的部分保留给数据库管理员或熟悉SQL语言的用户。
 
-### 要删除清理的列表{#lists-to-delete-cleanup}
+### 要删除清理的列表 {#lists-to-delete-cleanup}
 
 **[!UICONTROL Database cleanup]**&#x200B;工作流执行的第一个任务将删除具有&#x200B;**deleteStatus !=** NmsGroup **中的0**&#x200B;属性。 链接到这些组的记录以及存在于其他表中的记录也会被删除。
 
@@ -120,7 +122,7 @@ ht-degree: 0%
 
    其中&#x200B;**$(l)**&#x200B;是列表标识符
 
-### 清理要删除或回收的{#cleanup-of-deliveries-to-be-deleted-or-recycled}投放
+### 清理要删除或回收的投放 {#cleanup-of-deliveries-to-be-deleted-or-recycled}
 
 此任务会清除所有要删除或回收的投放。
 
@@ -170,7 +172,7 @@ ht-degree: 0%
 
    其中&#x200B;**$(l)**&#x200B;是投放的标识符。
 
-#### 使用中间源{#deliveries-using-mid-sourcing}的投放
+#### 使用中间源的投放 {#deliveries-using-mid-sourcing}
 
 **[!UICONTROL Database cleanup]**&#x200B;工作流还会删除中间源服务器上的投放。
 
@@ -184,7 +186,7 @@ ht-degree: 0%
 
 1. 如果状态的值为&#x200B;**[!UICONTROL Start pending]** 、 **[!UICONTROL In progress]** 、 **[!UICONTROL Recovery pending]** 、 **[!UICONTROL Recovery in progress]** 、 **[!UICONTROL Pause requested]** 、 **[!UICONTROL Pause in progress]**&#x200B;或&#x200B;**[!UICONTROL Paused]**（值51、55、61、62、71、72、75），则停止投放并清除链接的信息。
 
-### 清理过期的投放{#cleanup-of-expired-deliveries}
+### 清理过期的投放 {#cleanup-of-expired-deliveries}
 
 此任务会停止有效期已过期的投放。
 
@@ -240,7 +242,7 @@ ht-degree: 0%
 
    其中，**传递状态95**&#x200B;与&#x200B;**[!UICONTROL Finished]**&#x200B;状态匹配，**传递状态85**&#x200B;与&#x200B;**[!UICONTROL Stopped]**&#x200B;状态匹配，而&#x200B;**$(curDate)**&#x200B;是当前服务器日期。
 
-### 清理镜像页面{#cleanup-of-mirror-pages}
+### 清理镜像页面 {#cleanup-of-mirror-pages}
 
 此任务会删除投放使用的Web资源（镜像页面）。
 
@@ -273,7 +275,7 @@ ht-degree: 0%
 
    其中&#x200B;**$(strIn)**&#x200B;是投放标识符的列表。
 
-### 清理工作表{#cleanup-of-work-tables}
+### 清理工作表 {#cleanup-of-work-tables}
 
 此任务将从数据库中删除与状态为&#x200B;**[!UICONTROL Being edited]** 、 **[!UICONTROL Stopped]**&#x200B;或&#x200B;**[!UICONTROL Deleted]**&#x200B;的投放匹配的所有工作表。
 
@@ -297,7 +299,7 @@ ht-degree: 0%
    DROP TABLE wkDlv_15487_1;
    ```
 
-### 清除导入{#cleanup-of-rejects-generated-by-imports-}生成的拒绝
+### 清除导入生成的拒绝 {#cleanup-of-rejects-generated-by-imports-}
 
 通过此步骤，您可以删除在导入过程中未处理所有数据的记录。
 
@@ -315,7 +317,7 @@ ht-degree: 0%
    DELETE FROM XtkReject WHERE iJobId NOT IN (SELECT iJobId FROM XtkJob)
    ```
 
-### 清理工作流实例{#cleanup-of-workflow-instances}
+### 清理工作流实例 {#cleanup-of-workflow-instances}
 
 此任务使用其标识符(**lWorkflowId**)和历史记录(**lHistory**)清除每个工作流实例。 它通过再次运行工作表清理任务来删除非活动表。 清理还会删除已删除工作流的所有孤立工作表（wkf%和wkfhisto%）。
 
@@ -376,7 +378,7 @@ ht-degree: 0%
    DROP TABLE wkf15487_12;
    ```
 
-### 清理工作流登录{#cleanup-of-workflow-logins}
+### 清理工作流登录 {#cleanup-of-workflow-logins}
 
 此任务使用以下查询删除工作流登录：
 
@@ -384,7 +386,7 @@ ht-degree: 0%
 DELETE FROM XtkWorkflowLogin WHERE iWorkflowId NOT IN (SELECT iWorkflowId FROM XtkWorkflow)
 ```
 
-### 清理孤立工作表{#cleanup-of-orphan-work-tables}
+### 清理孤立工作表 {#cleanup-of-orphan-work-tables}
 
 此任务将删除链接到组的孤立工作表。 **NmsGroup**&#x200B;表存储要清除的组（类型不同于0）。 表名称的前缀为&#x200B;**grp**。 要确定要清理的组，可使用以下查询：
 
@@ -392,7 +394,7 @@ DELETE FROM XtkWorkflowLogin WHERE iWorkflowId NOT IN (SELECT iWorkflowId FROM X
 SELECT iGroupId FROM NmsGroup WHERE iType>0"
 ```
 
-### 清理访客{#cleanup-of-visitors}
+### 清理访客 {#cleanup-of-visitors}
 
 此任务使用批量删除功能从访客表中删除过时的记录。 过时记录是指上次修改时间早于部署向导中定义的保护期的记录（请参阅[部署向导](#deployment-wizard)）。 使用以下查询：
 
@@ -402,7 +404,7 @@ DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WH
 
 其中&#x200B;**$(tsDate)**&#x200B;是当前服务器日期，从中我们减去为&#x200B;**NmsCleanup_VisitorPurgeDelay**&#x200B;选项定义的时段。
 
-### 清除NPAI {#cleanup-of-npai}
+### NPAI的清理 {#cleanup-of-npai}
 
 此任务允许您从&#x200B;**NmsAddress**&#x200B;表中删除与有效地址匹配的记录。 以下查询用于执行批量删除：
 
@@ -412,7 +414,7 @@ DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WH
 
 其中， **状态2**&#x200B;与&#x200B;**[!UICONTROL Valid]**&#x200B;状态匹配， **$(tsDate1)**&#x200B;是当前服务器日期，而&#x200B;**$(tsDate2)**&#x200B;与&#x200B;**NmsCleanup_LastCleanup**&#x200B;选项匹配。
 
-### 清理订阅{#cleanup-of-subscriptions-}
+### 清理订阅 {#cleanup-of-subscriptions-}
 
 此任务使用批量删除操作从&#x200B;**NmsSubscription**&#x200B;表中清除用户删除的所有订阅。 使用以下查询：
 
@@ -420,7 +422,7 @@ DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WH
 DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 ```
 
-### 清理跟踪日志{#cleanup-of-tracking-logs}
+### 清理跟踪日志 {#cleanup-of-tracking-logs}
 
 此任务从跟踪和Web跟踪日志表中删除过时的记录。 过时记录是指早于部署向导中定义的保护期的记录（请参阅[部署向导](#deployment-wizard)）。
 
@@ -446,7 +448,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
    其中&#x200B;**$(tsDate)**&#x200B;是当前服务器日期，从中我们减去为&#x200B;**NmsCleanup_TrackingStatPurgeDelay**&#x200B;选项定义的时段。
 
-### 清理投放日志{#cleanup-of-delivery-logs}
+### 清理投放日志 {#cleanup-of-delivery-logs}
 
 此任务允许您清除存储在各种表中的投放日志。
 
@@ -473,7 +475,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
    其中&#x200B;**$(option)**&#x200B;与为&#x200B;**NmsCleanup_BroadLogPurgeDelay**&#x200B;选项定义的日期匹配（请参阅[部署向导](#deployment-wizard)）。
 
-### 清理NmsEmailErrorStat表{#cleanup-of-the-nmsemailerrorstat-table-}
+### 清理NmsEmailErrorStat表 {#cleanup-of-the-nmsemailerrorstat-table-}
 
 此任务可清除&#x200B;**NmsEmailErrorStat**&#x200B;表。 主程序(**coalesceErrors**)定义了两个日期：
 
@@ -521,7 +523,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 清理在&#x200B;**NmsEmailError**&#x200B;和&#x200B;**cleanupNmsMxDomain**&#x200B;表上执行。
 
-### 清理NmsEmailError表{#cleanup-of-the-nmsemailerror-table-}
+### 清除NmsEmailError表 {#cleanup-of-the-nmsemailerror-table-}
 
 使用以下查询：
 
@@ -531,7 +533,7 @@ DELETE FROM NmsEmailError WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmai
 
 此查询会从&#x200B;**NmsEmailError**&#x200B;表中删除&#x200B;**NmsEmailErrorStat**&#x200B;中没有链接记录的所有行。
 
-### 清理NmsMxDomain表{#cleanup-of-the-nmsmxdomain-table-}
+### 清理NmsMxDomain表 {#cleanup-of-the-nmsmxdomain-table-}
 
 使用以下查询：
 
@@ -541,7 +543,7 @@ DELETE FROM NmsMxDomain WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailE
 
 此查询会从&#x200B;**NmsMxDomain**&#x200B;表中删除&#x200B;**NmsEmailErrorStat**&#x200B;表中没有链接记录的所有行。
 
-### 清理命题{#cleanup-of-propositions}
+### 清理命题 {#cleanup-of-propositions}
 
 如果安装了&#x200B;**Interaction**&#x200B;模块，则执行此任务以清除&#x200B;**NmsCompationXxx**&#x200B;表。
 
@@ -553,7 +555,7 @@ DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FRO
 
 其中&#x200B;**$(option)**&#x200B;是为&#x200B;**NmsCleanup_CompationPurgeDelay**&#x200B;选项定义的日期（请参阅[部署向导](#deployment-wizard)）。
 
-### 清理模拟表{#cleanup-of-simulation-tables}
+### 清理模拟表 {#cleanup-of-simulation-tables}
 
 此任务可清除孤立项模拟表（不再链接到选件模拟或投放模拟）。
 
@@ -569,7 +571,7 @@ DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FRO
    DROP TABLE wkSimu_456831_aggr
    ```
 
-### 清理审核跟踪{#cleanup-of-audit-trail}
+### 清理审核跟踪 {#cleanup-of-audit-trail}
 
 使用以下查询：
 
@@ -589,7 +591,7 @@ DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WH
 
 此查询会删除与iOS和Android相关的所有条目。
 
-### 统计更新和存储优化{#statistics-update}
+### 统计更新和存储优化 {#statistics-update}
 
 **XtkCleanup_NoStats**&#x200B;选项允许您控制清理工作流中存储优化步骤的行为。
 
@@ -599,7 +601,7 @@ DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WH
 
 如果选项的值为2，则将在PostgreSQL上以详细模式(ANALYZE VERBOSE)执行存储分析，并更新所有其他数据库的统计信息。 要确保执行此命令，请检查PostgreSQL日志。 分析将输出以下格式的行：`INFO: analyzing "public.nmsactivecontact"`。
 
-### 订阅清理(NMAC){#subscription-cleanup--nmac-}
+### 订阅清理(NMAC) {#subscription-cleanup--nmac-}
 
 此任务会删除与已删除的服务或移动设备应用程序相关的所有订阅。
 
@@ -613,7 +615,7 @@ SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema I
 
 此清理工作流还会删除自&#x200B;**NmsCleanup_AppSubscriptionRcpPurgeDelay**&#x200B;选项中设置的时间以来未更新的idisabled = 1的所有条目。
 
-### 清理会话信息{#cleansing-session-information}
+### 清理会话信息 {#cleansing-session-information}
 
 此任务清除&#x200B;**sessionInfo**&#x200B;表中的信息，使用以下查询：
 
@@ -621,10 +623,10 @@ SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema I
  DELETE FROM XtkSessionInfo WHERE tsexpiration < $(curdate) 
 ```
 
-### 清除过期事件{#cleansing-expired-events}
+### 清理过期事件 {#cleansing-expired-events}
 
 此任务可清除在执行实例上接收和存储的事件以及在控制实例上存档的事件。
 
-### 清理反应{#cleansing-reactions}
+### 清理反应 {#cleansing-reactions}
 
 此任务可清除已删除假设的反应（表&#x200B;**NmsRemaMatchRcp**）。

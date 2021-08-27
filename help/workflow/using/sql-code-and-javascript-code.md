@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # SQL 代码和 JavaScript 代码{#sql-code-and-javascript-code}
 
-## SQL代码{#sql-code}
+![](../../assets/common.svg)
+
+## SQL代码 {#sql-code}
 
 **[!UICONTROL SQL code]**&#x200B;活动执行SQL脚本。 脚本是JST模板。
 
@@ -27,13 +29,13 @@ ht-degree: 3%
 
 * **[!UICONTROL Processing errors]**
 
-   请参阅[处理错误](../../workflow/using/monitoring-workflow-execution.md#processing-errors)。
+   请参阅[处理错误](monitoring-workflow-execution.md#processing-errors)。
 
-## JavaScript代码和高级JavaScript代码{#javascript-code}
+## JavaScript代码和高级JavaScript代码 {#javascript-code}
 
-**[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动会在工作流的上下文中执行JavaScript脚本。有关脚本的更多信息，请参阅[JavaScript脚本和模板](../../workflow/using/javascript-scripts-and-templates.md)一节。
+**[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动会在工作流的上下文中执行JavaScript脚本。有关脚本的更多信息，请参阅[JavaScript脚本和模板](javascript-scripts-and-templates.md)一节。
 
-### 执行延迟{#exec-delay}
+### 执行延迟 {#exec-delay}
 
 从20.2版本开始，向&#x200B;**[!UICONTROL JavaScript code]**&#x200B;和&#x200B;**[!UICONTROL Advanced JavaScript code]**&#x200B;活动添加了执行延迟。 默认情况下，执行阶段不能超过1小时。 在此延迟后，进程将中止，并显示错误消息，活动执行将失败。
 
@@ -41,15 +43,15 @@ ht-degree: 3%
 
 要忽略此限制，您需要将值设置为&#x200B;**0**。
 
-### JavaScript代码{#js-code-desc}
+### JavaScript代码 {#js-code-desc}
 
 ![](assets/javascript_code.png)
 
 * **[!UICONTROL Script]**:编辑器的中心区域包含要执行的脚本。
 
-* **[!UICONTROL Process errors]**:请参阅处 [理错误](../../workflow/using/monitoring-workflow-execution.md#processing-errors)。
+* **[!UICONTROL Process errors]**:请参阅处 [理错误](monitoring-workflow-execution.md#processing-errors)。
 
-### 高级JavaScript代码{#adv-js-code-desc}
+### 高级JavaScript代码 {#adv-js-code-desc}
 
 ![](assets/advanced_javascript_code.png)
 

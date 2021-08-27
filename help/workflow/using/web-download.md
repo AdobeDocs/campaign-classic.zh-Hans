@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Web 下载{#web-download}
+
+![](../../assets/common.svg)
 
 **Web下载**&#x200B;活动会启动下载显式URL、外部帐户或Adobe Campaign实例上的文件。 使用HTTP协议。 这可以是GET或POST下载。
 
@@ -61,8 +63,8 @@ ht-degree: 2%
 
    ![](assets/download_web_edit_advanced.png)
 
-   **[!UICONTROL Process errors]**&#x200B;选项在[处理错误](../../workflow/using/monitoring-workflow-execution.md#processing-errors)中有详细说明。
+   **[!UICONTROL Process errors]**&#x200B;选项在[处理错误](monitoring-workflow-execution.md#processing-errors)中有详细说明。
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * 文件名：已下载文件的完整名称。

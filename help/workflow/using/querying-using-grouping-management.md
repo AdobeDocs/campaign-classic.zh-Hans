@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 使用分组管理进行查询 {#querying-using-grouping-management}
+
+![](../../assets/common.svg)
 
 在本例中，我们要运行查询以查找在先前投放期间定向超过30次的所有电子邮件域。
 

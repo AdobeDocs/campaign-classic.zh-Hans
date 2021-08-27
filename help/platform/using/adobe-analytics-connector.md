@@ -3,18 +3,20 @@ solution: Campaign Classic
 product: campaign
 title: Adobe Analytics Connector
 description: 了解有关 Adobe Analytics Connector 的更多信息
-feature: 概述
+feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 99%
+source-wordcount: '1550'
+ht-degree: 100%
 
 ---
 
 # Adobe Analytics Connector{#adobe-analytics-connector}
+
+![](../../assets/common.svg)
 
 ## 关于 Adobe Analytics Connector 集成 {#about-analytics-connector-integration}
 
@@ -23,9 +25,8 @@ Adobe Analytics Connector 允许 Adobe Campaign 和 Adobe Analytics 通过 **[!U
 >[!CAUTION]
 >
 >* Adobe Analytics Connector 与事务性消息传递（消息中心）不兼容。
-   >
-   >
-* 在开始之前，请确保在Campaign中实施AdobeIdentity Management系统(IMS)。 [请参阅此页面](../../integrations/using/about-adobe-id.md)以了解详情。
+>
+>* 开始前，请确保在 Campaign 中实施 Adobe Identity Management System (IMS) 。 [请参阅此页面](../../integrations/using/about-adobe-id.md)以了解详情。
 
 
 使用 Adobe Analytics Connector，Adobe Campaign 可以对互联网受众进行评测（网站分析）。借助这些集成，Adobe Campaign 可以在投放营销活动后回收一个或多个网站的访客行为数据，并（在分析之后）开展再营销活动，以期将访客转化为购买者。反过来，网站分析工具让 Adobe Campaign 能够将指标和营销活动属性转发到其平台。
@@ -244,7 +245,6 @@ Adobe Campaign 和 Adobe Analytics 之间的数据交换由作为后台任务运
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
    * **[!UICONTROL Contact date]** (scheduling/@contactDate)
-
 
 
 ## 在 Adobe Campaign 中跟踪投放 {#tracking-deliveries-in-adobe-campaign}

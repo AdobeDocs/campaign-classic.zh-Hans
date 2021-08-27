@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # 重复数据删除{#deduplication}
+
+![](../../assets/common.svg)
 
 重复数据删除会从集客活动结果中删除重复项。 可以对电子邮件地址、电话号码或其他字段执行重复数据删除。
 
@@ -139,7 +141,7 @@ ht-degree: 10%
 
 例如，使用一组重复的记录，您可以选择保留最早的电话号码或最近的名称。
 
-[此部分](../../workflow/using/deduplication-merge.md)中提供了利用此功能的用例。
+[此部分](deduplication-merge.md)中提供了利用此功能的用例。
 
 为此，请执行以下步骤：
 
@@ -155,7 +157,7 @@ ht-degree: 10%
 
 1. 激活功能后，会向&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动添加&#x200B;**[!UICONTROL Merge]**&#x200B;选项卡。 它允许您定义要合并的字段组及其关联的规则。
 
-   有关更多信息，请参阅[此部分](../../workflow/using/deduplication-merge.md)中提供的专用用例。
+   有关更多信息，请参阅[此部分](deduplication-merge.md)中提供的专用用例。
 
    ![](assets/dedup3.png)
 

@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 7%
@@ -15,11 +15,13 @@ ht-degree: 7%
 
 # 使用 Web 窗体模板{#using-a-web-form-template}
 
+![](../../assets/common.svg)
+
 表单模板是可重复使用的配置，通过该配置可创建新表单。 默认情况下，表单模板与Web应用程序模板一起存储在&#x200B;**[!UICONTROL Resources > Templates > Web application templates]**&#x200B;节点中。
 
 在此，您可以创建新模板或将现有表单转换为模板。
 
-## 将现有表单转换为模板{#convert-an-existing-form-into-a-template}
+## 将现有表单转换为模板 {#convert-an-existing-form-into-a-template}
 
 表单可以更改为模板并重新使用其配置。 要执行此操作，请选择表单，右键单击并选择&#x200B;**[!UICONTROL Actions > Save as template...]**。
 
@@ -27,7 +29,7 @@ ht-degree: 7%
 
 此操作将打开用于创建Web应用程序的窗口。 您可以输入模板的名称和描述，并选择保存该模板的文件夹。
 
-## 创建新表单模板{#create-a-new-form-template}
+## 创建新表单模板 {#create-a-new-form-template}
 
 要创建Web窗体模板，请右键单击Web应用程序模板列表，然后选择&#x200B;**[!UICONTROL New]**。 您还可以使用模板列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
 

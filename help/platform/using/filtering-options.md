@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: cf75a435-97e2-4d4f-8b9b-c30a57390deb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 筛选选项{#filtering-options}
 
-## 关于筛选{#about-filtering}
+![](../../assets/common.svg)
+
+## 关于筛选 {#about-filtering}
 
 默认情况下，Adobe Campaign会显示数据库中有关操作员具有读取权限的所有数据。
 
@@ -30,7 +32,7 @@ ht-degree: 2%
 * 数据排序，请参见[按](#order-by)排序，
 * 搜索，请参阅[快速搜索](#quick-search)。
 
-## 按文件夹{#filter-by-folder}筛选
+## 按文件夹过滤 {#filter-by-folder}
 
 单击&#x200B;**[!UICONTROL Folder]**&#x200B;图标以选择包含要显示的数据的文件夹。
 
@@ -42,13 +44,13 @@ ht-degree: 2%
 
 使用文件夹选择字段右侧的十字可返回到默认显示模式。
 
-## 按状态{#filter-by-status}筛选
+## 按状态筛选 {#filter-by-status}
 
 根据显示的信息类型，您可以按状态或按状态应用过滤器。 例如，对于投放，您可以选择仅显示已完成的投放，如下所示：
 
 ![](assets/d_ncs_user_interface_filter_delivery.png)
 
-## 按{#order-by}排序
+## 订购依据 {#order-by}
 
 您可以通过“每个文件夹”筛选字段右侧的下拉列表选择页面上提供数据的排序顺序。 此字段的内容取决于页面上的数据类型。
 
@@ -56,7 +58,7 @@ ht-degree: 2%
 
 ![](assets/order_data_sample.png)
 
-## 快速搜索{#quick-search}
+## 快速搜索 {#quick-search}
 
 使用搜索字段可快速访问要查找的项目：输入要显示的项目的标签或内部名称中包含的字符，然后确认对页面上的数据应用自动过滤器。
 

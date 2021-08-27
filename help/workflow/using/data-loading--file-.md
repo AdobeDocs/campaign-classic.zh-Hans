@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 15%
@@ -14,6 +14,8 @@ ht-degree: 15%
 ---
 
 # 数据加载（文件）{#data-loading-file}
+
+![](../../assets/common.svg)
 
 ## 使用 {#use}
 
@@ -35,7 +37,7 @@ ht-degree: 15%
 
 有关更多信息，请参阅此章节：[在处理文件之前解压或解密文件](../../platform/using/unzip-decrypt.md)。
 
-## 定义文件格式{#defining-the-file-format}
+## 定义文件格式 {#defining-the-file-format}
 
 加载文件时，将自动检测列格式以及每种数据类型的默认参数。 您可以修改这些默认参数，以指定要应用于数据的特定进程，尤其是当存在错误或空值时。
 
@@ -78,7 +80,7 @@ ht-degree: 15%
 * **[!UICONTROL Default value]**：根据所选的错误处理指定默认值。
 * **[!UICONTROL Mapping]**:此字段仅在列详细信息配置中可用（通过双击或通过列列表右侧的选项访问）。这会在导入某些值时对其进行转换。 例如，您可以将“three”转换为“3”。
 
-## 示例：收集数据并将其加载到数据库{#example--collecting-data-and-loading-it-in-the-database}中
+## 示例：收集数据并将其加载到数据库中 {#example--collecting-data-and-loading-it-in-the-database}
 
 以下示例允许您每天在服务器上收集文件，加载其内容并根据其包含的信息更新数据库中的数据。 要收集的文件中包含客户可能已购买（超过3,000欧元）、要求退款或未购买任何商品就访问商店的信息。 根据此信息，将对数据库中的用户档案应用各种进程。
 
@@ -88,7 +90,7 @@ ht-degree: 15%
 
    **[!UICONTROL Directory]**&#x200B;选项卡包含有关要恢复的文件的信息。 在本例中，将恢复名称中包含单词“customers”且存储在服务器tmp/Data/files目录中的所有文本格式的文件。
 
-   [文件收集器](../../workflow/using/file-collector.md)部分中详细介绍了&#x200B;**[!UICONTROL File collector]**&#x200B;的使用方法。
+   [文件收集器](file-collector.md)部分中详细介绍了&#x200B;**[!UICONTROL File collector]**&#x200B;的使用方法。
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
@@ -100,7 +102,7 @@ ht-degree: 15%
 
    为此，请单击编辑工具右下方的&#x200B;**[!UICONTROL Change...]**&#x200B;按钮并配置计划。
 
-   有关更多信息，请参阅[调度程序](../../workflow/using/scheduler.md)。
+   有关更多信息，请参阅[调度程序](scheduler.md)。
 
 1. 然后，配置数据加载（文件）活动，以指示应如何读取收集的文件。 为此，请选择与要加载的文件具有相同结构的样例文件。
 
@@ -129,4 +131,4 @@ ht-degree: 15%
 
 1. 然后，指定要针对每种类型的群体执行的进程。 在本例中，我们将转到数据库中的&#x200B;**[!UICONTROL Update the data]**。 要实现此目的，请在拆分活动中每个叫客过渡的末尾放置&#x200B;**[!UICONTROL Update data]**&#x200B;活动。
 
-   **[!UICONTROL Update data]**&#x200B;活动详见[更新数据](../../workflow/using/update-data.md)一节。
+   **[!UICONTROL Update data]**&#x200B;活动详见[更新数据](update-data.md)一节。

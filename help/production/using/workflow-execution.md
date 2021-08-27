@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 工作流执行{#workflow-execution}
+
+![](../../assets/v7-only.svg)
 
 以下部分介绍与工作流执行相关的常见问题以及如何对其进行故障诊断的信息。
 
@@ -24,7 +26,7 @@ ht-degree: 3%
 * [工作流生命周期](../../workflow/using/workflow-life-cycle.md)
 * [使用工作流时的最佳实践](../../workflow/using/workflow-best-practices.md)
 
-## 在营销活动{#start-as-soon-as-possible-in-campaigns}中尽快开始
+## 在营销活动中尽快开始 {#start-as-soon-as-possible-in-campaigns}
 
 在某些情况下，单击&#x200B;**[!UICONTROL Start]**&#x200B;按钮时，从营销活动执行的工作流不会启动。 它不会开始，而是会进入“尽快开始”状态。
 
@@ -77,7 +79,7 @@ ht-degree: 3%
 
 有关如何监控工作流的更多信息，请参阅[此部分](../../workflow/using/monitoring-workflow-execution.md)。
 
-## 正在启动{#start-in-progress}
+## 开始进行 {#start-in-progress}
 
 如果工作流未执行，且其状态为&#x200B;**开始**，这可能意味着工作流模块未启动。
 
@@ -110,7 +112,7 @@ ht-degree: 3%
 
    有关如何重新启动模块的更多信息，请参阅[此部分](../../production/using/usual-commands.md#module-launch-commands)。
 
-## 工作流{#failed-workflow}失败
+## 失败的工作流 {#failed-workflow}
 
 如果工作流失败，请执行以下步骤：
 

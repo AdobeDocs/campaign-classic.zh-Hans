@@ -5,7 +5,7 @@ description: 进一步了解隐私数据保护条例工作流程
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 
 
 # 隐私数据保护规定{#general-data-protection-regulation-gdpr}
+
+![](../../assets/common.svg)
 
 默认情况下，下面详述的工作流与&#x200B;**隐私数据保护条例**&#x200B;模块一起安装。 有关此模块的更多信息，请参阅此[文章](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)。
 

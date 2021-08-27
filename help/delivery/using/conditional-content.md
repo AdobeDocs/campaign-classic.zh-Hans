@@ -6,21 +6,23 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 # 条件内容{#conditional-content}
+
+![](../../assets/common.svg)
 
 通过配置条件内容字段，您可以创建基于收件人用户档案的动态个性化。 当满足特定条件时替换文本块和/或图像。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#conditionnal-content-video)
 
 
-## 在电子邮件{#using-conditions-in-an-email}中使用条件
+## 在电子邮件中使用条件 {#using-conditions-in-an-email}
 
 在以下示例中，您将学习如何创建根据收件人的性别和兴趣动态个性化的消息。
 
@@ -75,7 +77,7 @@ ht-degree: 4%
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
-## 创建多语言电子邮件{#creating-multilingual-email}
+## 创建多语言电子邮件 {#creating-multilingual-email}
 
 在以下示例中，您将学习如何创建多语言电子邮件。 内容将以一种或另一种语言显示，具体取决于收件人的首选语言。
 
@@ -107,7 +109,7 @@ ht-degree: 4%
    >
    >由于电子邮件内容中未定义任何替代版本，因此请确保在发送电子邮件之前过滤目标群体。
 
-## 教程视频{#conditionnal-content-video}
+## 教程视频 {#conditionnal-content-video}
 
 了解如何在多语言新闻稿的示例中向投放添加条件内容。
 

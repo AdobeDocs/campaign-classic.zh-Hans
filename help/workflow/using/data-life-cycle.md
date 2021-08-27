@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 5%
@@ -15,7 +15,9 @@ ht-degree: 5%
 
 # 数据生命周期 {#data-life-cycle}
 
-## 工作表{#work-table}
+![](../../assets/common.svg)
+
+## 工作表 {#work-table}
 
 在工作流中，从一个活动传输到另一个活动的数据存储在临时工作表中。
 
@@ -31,7 +33,7 @@ ht-degree: 5%
 
    ![](assets/wf-right-click-display.png)
 
-   有关更多信息，请参阅[工作表和工作流架构](../../workflow/using/monitoring-workflow-execution.md#worktables-and-workflow-schema)。
+   有关更多信息，请参阅[工作表和工作流架构](monitoring-workflow-execution.md#worktables-and-workflow-schema)。
 
 * 分析目标
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 数据模式{#data-schemas}
+
+![](../../assets/v7-only.svg)
 
 ## 原则 {#principles}
 
@@ -43,7 +45,7 @@ ht-degree: 1%
 
 如果需要检查架构的完整结构，可以使用预览选项卡。 如果架构已扩展，则将能够显示其所有扩展。 作为补充，“文档”选项卡显示所有架构属性和元素及其属性（SQL字段、类型/长度、标签、说明）。 “文档”选项卡仅适用于生成的架构。 有关更多信息，请参阅[重新生成模式](../../configuration/using/regenerating-schemas.md)一节。
 
-## 示例：创建合同表{#example--creating-a-contract-table}
+## 示例：创建合同表 {#example--creating-a-contract-table}
 
 在以下示例中，我们要在Adobe Campaign数据库的数据库模型中为&#x200B;**contracts**&#x200B;创建新表。 此表允许您存储每个合同的持有人和共同持有人的名字和姓氏以及电子邮件地址。
 

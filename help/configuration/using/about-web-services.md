@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 4%
@@ -15,7 +15,9 @@ ht-degree: 4%
 
 # 关于 Web 服务{#about-web-services}
 
-## Adobe Campaign API的定义{#definition-of-adobe-campaign-apis}
+![](../../assets/v7-only.svg)
+
+## Adobe Campaign API的定义 {#definition-of-adobe-campaign-apis}
 
 Adobe Campaign应用程序服务器旨在实现与日益多样化和复杂的公司信息系统的开放和轻松集成。
 
@@ -43,7 +45,7 @@ Adobe Campaign使用两种类型的API:
 
 要开发API并与Adobe Campaign进行交互，您需要熟悉数据模型。 Adobe Campaign允许您生成基础的完整说明。 请参阅[模型的描述](../../configuration/using/data-oriented-apis.md#description-of-the-model)。
 
-## SOAP调用{#soap-calls}
+## SOAP调用 {#soap-calls}
 
 SOAP协议允许您通过富客户端、使用Web服务的第三方应用程序或本地使用这些方法的JSP来调用API方法。
 
@@ -56,13 +58,13 @@ SOAP消息的结构如下：
 * 包含呼叫和响应信息的主体，
 * 定义错误条件的错误管理。
 
-## 资源和交换{#resources-and-exchanges}
+## 资源和交流 {#resources-and-exchanges}
 
 以下架构显示了使用Adobe Campaign API时涉及的各种资源：
 
 ![](assets/s_ncs_integration_webservices_schema_pres.png)
 
-## “ExecuteQuery”方法{#example-of-a-soap-message-on-the--executequery--method--}上的SOAP消息示例
+## 关于“ExecuteQuery”方法的SOAP消息示例 {#example-of-a-soap-message-on-the--executequery--method--}
 
 在此示例中，SOAP查询调用“ExecuteQuery”方法，该方法将字符串作为身份验证（会话令牌）的参数，以及要执行的查询描述的XML内容。
 
@@ -72,7 +74,7 @@ SOAP消息的结构如下：
 >
 >此服务的WSDL描述已完成，如下所示：[Web服务描述：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl)。
 
-### SOAP查询{#soap-query}
+### SOAP查询 {#soap-query}
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -98,7 +100,7 @@ SOAP消息的结构如下：
 
 在SOAP中，参数是按外观顺序识别的。 第一个参数`<__sessiontoken>`采用身份验证链，第二个参数是`<querydef>`元素中查询的XML描述。
 
-### SOAP响应{#soap-response}
+### SOAP响应 {#soap-response}
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -115,7 +117,7 @@ SOAP消息的结构如下：
 
 查询结果从`<pdomoutput>`元素中输入。
 
-## 错误管理{#error-management}
+## 错误管理 {#error-management}
 
 SOAP错误响应示例：
 
@@ -167,7 +169,7 @@ catch (SoapException e)
 }
 ```
 
-## Web服务服务器（或EndPoint）{#url-of-web-service-server--or-endpoint-}的URL
+## Web服务服务器（或EndPoint）的URL {#url-of-web-service-server--or-endpoint-}
 
 要提交Web服务，必须联系实现相应服务方法的Adobe Campaign服务器。
 

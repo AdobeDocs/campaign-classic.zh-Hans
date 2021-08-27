@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 1d55f42b-64bf-4b1f-a317-c1f7456aa5b3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 发布消息模板{#publishing-template-messages}
+# 发布消息模板 {#publishing-template-messages}
+
+![](../../assets/v7-only.svg)
 
 ## 模板发布 {#template-publication}
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: 91c31703-75e6-47a4-a877-35682dd687a9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 关于 Web 跟踪{#about-web-tracking}
+
+![](../../assets/v7-only.svg)
 
 除了显示Internet用户单击电子邮件中链接的行为的标准跟踪之外，Adobe Campaign平台还允许您收集有关Internet用户如何浏览您网站的信息。 此数据收集由Web跟踪模块执行。
 

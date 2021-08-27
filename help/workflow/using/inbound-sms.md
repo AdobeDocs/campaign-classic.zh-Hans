@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 94a9d50b-4ead-4815-8d12-942fa78b4e8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 入站短信{#inbound-sms}
+
+![](../../assets/common.svg)
 
 通过&#x200B;**入站SMS**&#x200B;活动，您可以从外部帐户下载和处理文本消息。
 
@@ -31,4 +33,4 @@ ht-degree: 4%
 
 1. **[!UICONTROL Expiration]**
 
-**[!UICONTROL Script]**、**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;选项卡在[入站电子邮件](../../workflow/using/inbound-emails.md)中有详细说明。
+**[!UICONTROL Script]**、**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;选项卡在[入站电子邮件](inbound-emails.md)中有详细说明。

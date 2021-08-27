@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 中间源部署{#mid-sourcing-deployment}
+
+![](../../assets/v7-only.svg)
 
 此配置是托管(ASP)配置与内部化之间的最佳中间解决方案。 面向外的执行组件在托管在Adobe Campaign的“中间源”服务器上执行。
 
@@ -43,7 +45,7 @@ ht-degree: 1%
 * 由于从中间源服务器获取信息所花费的时间，因此查看消息执行信息和报告功能时出现了轻微延迟。
 * 调查和Web窗体仍保留在客户端平台上。
 
-### 推荐设备{#recommended-equipment}
+### 推荐设备 {#recommended-equipment}
 
 * 应用程序服务器：2 Ghz四核CPU，4 GB RAM，软件RAID 1 80 GB SATA硬盘。
 * 数据库服务器：3 GHz双四核CPU，最小4 GB RAM，硬件RAID 10 15000RPM SAS硬盘，数字取决于数据库的大小和预期性能。
@@ -52,7 +54,7 @@ ht-degree: 1%
 >
 >重定向和中间源是单独的元素，但通常将与中间源服务器共享跟踪服务器。
 
-## 安装和配置步骤{#installation-and-configuration-steps-}
+## 安装和配置步骤 {#installation-and-configuration-steps-}
 
 ### 先决条件 {#prerequisites}
 
@@ -60,6 +62,6 @@ ht-degree: 1%
 * 访问应用程序服务器上的数据库服务器。
 * 防火墙配置为打开HTTP(80)或HTTPS(443)端口到中间源服务器。
 
-### 安装和配置（中间源部署）{#installing-and-configuring--mid-sourcing-deployment-}
+### 安装和配置（中间源部署） {#installing-and-configuring--mid-sourcing-deployment-}
 
 请参阅[中间源服务器](../../installation/using/mid-sourcing-server.md)。

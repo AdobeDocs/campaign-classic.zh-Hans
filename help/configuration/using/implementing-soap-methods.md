@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 4%
@@ -15,13 +15,15 @@ ht-degree: 4%
 
 # 实施 SOAP 方法{#implementing-soap-methods}
 
+![](../../assets/v7-only.svg)
+
 ## 简介 {#introduction}
 
 可以在JavaScript中创建SOAP方法。 该函数仅支持应用进程，避免了JSP的开发及其在表单中的调用。
 
 这些SOAP方法的行为方式与应用程序中本地定义的方法相同。 支持相同的属性：静态、仅键和常量。
 
-## 定义方法库{#defining-a-method-library}
+## 定义方法库 {#defining-a-method-library}
 
 创建方法库涉及两个阶段：
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 # 子工作流{#sub-workflow}
 
+![](../../assets/common.svg)
+
 **[!UICONTROL Sub-workflow]**&#x200B;活动允许您触发另一个工作流的执行并恢复结果。 此活动可让您在使用简化界面时使用复杂的工作流。
 
 您可以在一个工作流中调用多个子工作流。 子工作流同步执行。
 
-在以下示例中，主工作流使用跳转调用子工作流。 有关跳转类型图形对象的更多信息，请参阅[此部分](../../workflow/using/jump--start-point-and-end-point-.md)。
+在以下示例中，主工作流使用跳转调用子工作流。 有关跳转类型图形对象的更多信息，请参阅[此部分](jump--start-point-and-end-point-.md)。
 
 1. 创建一个工作流，以将其用作另一个工作流中的子工作流。
 1. 在工作流的开头插入优先级为1的&#x200B;**[!UICONTROL Jump (end point)]**&#x200B;活动。 如果您有多个“端点”类型跳转，则Adobe Campaign将使用数字最少的“端点”跳转。
@@ -59,14 +61,14 @@ ht-degree: 0%
 >
 >如果子工作流中发生任何错误，则主工作流将暂停，并创建子工作流的副本。
 
-## 输入参数（可选）{#input-parameters--optional-}
+## 输入参数（可选） {#input-parameters--optional-}
 
 * tableName
 * 模式
 
 每个集客事件必须指定由这些参数定义的目标。
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * tableName
 * 模式

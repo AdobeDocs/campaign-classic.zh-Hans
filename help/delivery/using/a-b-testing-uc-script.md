@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 4%
@@ -15,9 +15,11 @@ ht-degree: 4%
 
 # 创建脚本 {#step-5--creating-the-script}
 
+![](../../assets/common.svg)
+
 脚本会计算用于剩余群体的投放内容的选择。 此脚本以最高打开率恢复有关投放的信息，并将内容复制到最终投放。
 
-## 脚本{#example-of-a-script}的示例
+## 脚本示例 {#example-of-a-script}
 
 以下脚本可以像在定位工作流中一样使用。 如需详细信息，请参阅[此部分](#implementation)。
 
@@ -85,7 +87,7 @@ ht-degree: 4%
 1. 关闭&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动。
 1. 保存工作流。
 
-## 脚本{#details-of-the-script}的详细信息
+## 脚本的详细信息 {#details-of-the-script}
 
 本节详细介绍脚本的各个部分及其操作模式。
 
@@ -156,7 +158,7 @@ ht-degree: 4%
    vars.deliveryId = delivery.id
    ```
 
-## 其他选择标准{#other-selection-criteria}
+## 其他选择标准 {#other-selection-criteria}
 
 通过以上示例，您可以根据电子邮件的打开率选择投放的内容。 您可以根据其他特定于投放的指标来调整它：
 

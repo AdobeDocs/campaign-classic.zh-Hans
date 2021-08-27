@@ -5,7 +5,7 @@ description: 了解如何为自定义实施配置事件
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # 为自定义实施配置事件 {#events}
+
+![](../../assets/common.svg)
 
 此配置的部分内容是自定义开发，需要满足以下条件：
 
@@ -22,9 +24,9 @@ ht-degree: 0%
 
 由于编辑Javascript代码需要技术技能，因此在没有适当了解的情况下，请勿尝试编辑代码。
 
-## 在JavaScript中处理事件{#events-javascript}
+## 在JavaScript中处理事件 {#events-javascript}
 
-### JavaScript文件{#file-js}
+### JavaScript文件 {#file-js}
 
 管道使用JavaScript函数处理每条消息。 此函数是用户定义的。
 
@@ -32,7 +34,7 @@ ht-degree: 0%
 
 示例Javascript文件为cus:triggers.js。
 
-### JavaScript函数{#function-js}
+### JavaScript函数 {#function-js}
 
 [!DNL pipelined] Javascript必须以特定函数开头。
 
@@ -50,7 +52,7 @@ function processPipelineMessage(xmlTrigger) {}
 
 应在编辑Javascript后重新启动[!DNL pipelined]。
 
-### 触发数据格式{#trigger-format}
+### 触发数据格式 {#trigger-format}
 
 [!DNL trigger]数据以XML格式传递到JS函数。
 
@@ -68,7 +70,7 @@ function processPipelineMessage(xmlTrigger) {}
  </trigger>
 ```
 
-### 数据格式扩充{#enrichment-format}
+### 数据格式扩充 {#enrichment-format}
 
 >[!NOTE]
 >
@@ -117,14 +119,14 @@ function processPipelineMessage(xmlTrigger) {}
 
 目前，无法为不同的环境（如“暂存”或“开发”）设置不同的队列。
 
-### 日志记录和错误处理{#logging-error-handling}
+### 日志记录和错误处理 {#logging-error-handling}
 
 日志(如logInfo())会定向到[!DNL pipelined]日志。 将logError()等错误写入[!DNL pipelined]日志，并导致该事件被置于重试队列中。 在这种情况下，应检查管道日志。
 错误消息在[!DNL pipelined]选项中设置的持续时间内重试多次。
 
 出于调试和监控目的，完整的触发器数据将以XML格式写入触发器表的“data”字段中。 或者，包含触发器数据的logInfo()也具有相同的用途。
 
-### 解析数据{#data-parsing}
+### 解析数据 {#data-parsing}
 
 此示例Javascript代码解析扩充中的eVar01。
 
@@ -148,7 +150,7 @@ function processPipelineMessage(xmlTrigger)
 在解析时要谨慎，以避免出现错误。
 由于此代码用于所有触发器，因此大多数数据都不是必需的。 因此，当不存在时，可将其留空。
 
-### 存储触发器{#storing-triggers-js}
+### 存储触发器 {#storing-triggers-js}
 
 >[!NOTE]
 >
@@ -184,13 +186,13 @@ function processPipelineMessage(xmlTrigger)
 
 为了加快处理速度，将同时执行此脚本的多个线程。 代码必须是线程安全的。
 
-## 存储事件{#store-events}
+## 存储事件 {#store-events}
 
 >[!NOTE]
 >
 >它是各种可能实施中的一个特定示例。
 
-### 管道事件架构{#pipeline-event-schema}
+### 管道事件架构 {#pipeline-event-schema}
 
 事件存储在数据库表中。 营销活动使用它来定位客户，并使用触发器扩充电子邮件。
 尽管每个触发器可以具有不同的数据结构，但所有触发器都可以放在一个表格中。
@@ -209,7 +211,7 @@ triggerType字段标识数据源自哪个触发器。
 | lastModified | 日期时间 | 上次修改时间 | 上次在Adobe中修改事件的时间。 |
 | timeGMT | 日期时间 | 时间戳 | 在Analytics中生成事件的时间。 |
 
-### 显示事件{#display-events}
+### 显示事件 {#display-events}
 
 事件可以基于事件架构以简单的形式显示。
 
@@ -219,26 +221,26 @@ triggerType字段标识数据源自哪个触发器。
 
 ![](assets/triggers_7.png)
 
-## 处理事件{#processing-the-events}
+## 处理事件 {#processing-the-events}
 
-### 协调工作流{#reconciliation-workflow}
+### 协调工作流 {#reconciliation-workflow}
 
 协调是将客户从Adobe Analytics匹配到Adobe Campaign数据库的过程。 例如，匹配的标准可以是shopper_id。
 
 出于性能原因，匹配必须由工作流在批处理模式下完成。
 必须将频率设置为15分钟才能优化工作负载。 因此，Adobe Campaign中的事件接收与营销工作流处理事件之间的延迟最长为15分钟。
 
-### JavaScript中用于单元协调的选项{#options-unit-reconciliation}
+### JavaScript中用于单元协调的选项 {#options-unit-reconciliation}
 
 可以在JavaScript中为每个触发器运行协调查询。 它对性能的影响更大，并且提供更快的结果。 当需要反应性时，可要求对特定用例进行反应。
 
 如果未对shopper_id设置索引，则可能很难实施。 如果标准位于与营销服务器不同的单独数据库服务器上，则它使用数据库链接，因为该链接的性能不佳。
 
-### 清除工作流{#purge-workflow}
+### 清除工作流 {#purge-workflow}
 
 触发器将在一小时内得到处理。 该卷的触发次数可以是每小时100万次。 它解释了为什么必须实施清除工作流。 清除每天运行一次，并删除所有超过三天的触发器。
 
-### 营销活动工作流{#campaign-workflow}
+### 营销活动工作流 {#campaign-workflow}
 
 触发器促销活动工作流程通常与已使用的其他定期促销活动类似。
 例如，它可以从触发器上的查询开始，查找最后一天的特定事件。 该目标用于发送电子邮件。 扩充或数据可能来自触发器。 由于无需任何配置，因此营销人员可以安全地使用它。

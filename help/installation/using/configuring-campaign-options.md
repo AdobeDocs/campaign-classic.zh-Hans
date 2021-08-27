@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '3972'
+source-wordcount: '3991'
 ht-degree: 0%
 
 ---
 
 # Campaign Classic 选项列表{#configuring-campaign-options}
+
+![](../../assets/v7-only.svg)
 
 **[!UICONTROL Administration / Platform / Options]**&#x200B;节点允许您配置Adobe Campaign选项。 其中一些是安装Campaign时内置的，而另一些则可在需要时手动添加。 可用选项因随实例一起安装的包而异。
 
@@ -21,9 +23,8 @@ ht-degree: 0%
 >[!CAUTION]
 >
 >* 此页面中未列出的选项仅限内部，且&#x200B;**不得修改**。
-   >
-   >
-* 修改或更新Adobe Campaign选项只能由专家用户执行。
+>
+>* 修改或更新Adobe Campaign选项只能由专家用户执行。
 
 
 ## 投放 {#delivery}
@@ -52,6 +53,10 @@ ht-degree: 0%
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
    <td> 要将测试地址用于收件箱呈现的架构列表。 （元素名称之间用逗号分隔）例如：custom_nms_recipient.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
+   <td> Enhanced MTA将向其发送已发送电子邮件原始副本的密件抄送电子邮件地址。<br /> </td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
    <td><p> 如果指定了特定的运算符或一组运算符以在投放的属性中开始投放，则允许负责投放的运算符确认发送。</p><p> 为此，请输入“1”作为值以激活选项。 要取消激活此选项，请输入“0”。</p><p> 然后，发送确认流程将起默认作用：只有在投放属性（或管理员）中为发送指定的操作员或操作员组才能确认和执行发送。 请参阅<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">此小节</a>。</p> </td> 
@@ -337,7 +342,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-## 营销活动和工作流管理{#campaign-e-workflow-management}
+## 营销活动和工作流管理 {#campaign-e-workflow-management}
 
 <table> 
  <thead> 
@@ -443,7 +448,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-## 消息中心{#message-center}
+## 消息中心 {#message-center}
 
 <table> 
  <thead> 
@@ -732,7 +737,7 @@ ht-degree: 0%
    <td> 通过CRM连接器从第三方系统导入数据时，会使用此选项。 启用选项后，您只能收集自上次导入以来修改的对象。 必须手动创建并填充此选项，如下所示： 
     <ul> 
      <li> <p> <span class="uicontrol">内部名称</span> :LASTIMPORT_&lt;&gt;_&lt;&gt;</p> </li> 
-     <li> <p> <span class="uicontrol">值（字段）</span> :上次导入的日期，格式为yyyy/MM/dd hh:mm:ss。 </p> </li> 
+     <li> <p> <span class="uicontrol">值（字段）</span> :上次导入的日期，采用yyyy/MM/dd hhss:mm:格式。 </p> </li> 
     </ul><br /> </td> 
   </tr> 
   <tr> 

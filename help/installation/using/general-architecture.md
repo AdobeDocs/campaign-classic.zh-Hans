@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 一般架构{#general-architecture}
+
+![](../../assets/v7-only.svg)
 
 典型的Adobe Campaign解决方案部署包含以下组件：
 
@@ -41,7 +43,7 @@ Adobe Campaign基于面向服务的体系结构(SOA)，包括若干功能模块�
 >
 >如果没有明确说明，则托管这些组件的计算机管理员负责在Adobe Campaign平台的所有组件上安装、更新和维护。 这包括实施Adobe Campaign应用程序的先决条件，以及遵循组件之间的Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md)。
 
-## 表示层{#presentation-layer}
+## 表示图层 {#presentation-layer}
 
 根据用户的需求，可以通过不同方式访问应用程序：富客户端、瘦客户端或API集成。
 
@@ -49,7 +51,7 @@ Adobe Campaign基于面向服务的体系结构(SOA)，包括若干功能模块�
 * **瘦客户端**:使用HTML用户界面，通过简单的Web浏览器可以访问应用程序的某些部分，包括报告模块、投放批准阶段、分布式营销模块（中央/本地）的功能、实例监控等。这种模式可将Adobe Campaign功能纳入内联网或外联网。
 * **通过API集成**:在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。
 
-## 逻辑应用程序层{#logical-application-layer}
+## 逻辑应用层 {#logical-application-layer}
 
 Adobe Campaign是一个具有不同应用程序的单一平台，这些应用程序结合在一起可创建一个开放且可扩展的架构。 Adobe Campaign平台在灵活的应用程序层上编写，并可轻松配置以满足公司的业务需求。 这从功能和技术角度满足了企业日益增长的需求。 分布式架构确保了线性系统可扩展性，从数千条报文扩展到数百万条报文。
 
@@ -119,7 +121,7 @@ Adobe Campaign具有本机电子邮件广播功能。 此进程可用作SMTP邮�
 >
 >[本文档](../../production/using/operating-principle.md)提供了Adobe Campaign模块的完整列表。
 
-## 持久层{#persistence-layer}
+## 持久层 {#persistence-layer}
 
 数据库用作持久层，包含几乎所有由Adobe Campaign管理的信息。 这包括功能数据（用户档案、订阅、内容等）、技术数据（投放作业和日志、跟踪日志等） 和工作数据（购买、商机）。
 

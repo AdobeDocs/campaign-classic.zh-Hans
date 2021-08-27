@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 56dfbaf3-93de-4ade-b4ad-9b54d239c7a5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 开始和结束{#start-and-end}
+
+![](../../assets/common.svg)
 
 通过&#x200B;**[!UICONTROL Start]**&#x200B;和&#x200B;**[!UICONTROL End]**&#x200B;活动，可以以图形方式标记工作流的开始和结束。 这些活动对功能没有影响，因此是可选的。
 

@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 3%
 
 ---
 
-# 方法元素{#method--element}
+# 方法元件 {#method--element}
 
-## 内容模型{#content-model-10}
+![](../../../assets/v7-only.svg)
+
+## 内容模型 {#content-model-10}
 
 方法：==（帮助） |参数)
 
-## 属性{#attributes-10}
+## 属性 {#attributes-10}
 
 * @_operation（字符串）
 * @access（字符串）
@@ -31,26 +33,26 @@ ht-degree: 3%
 * @pkonly（布尔）
 * @static（布尔）
 
-## 父项{#parents-10}
+## 父母 {#parents-10}
 
 `<methods>`  ,  `<interface />`
 
-## 子项{#children-10}
+## 子项 {#children-10}
 
 * `<help>`
 * `<parameters>`
 
-## 说明{#description-10}
+## 说明 {#description-10}
 
 此元素允许您定义SOAP方法。
 
-## {#use-and-context-of-use-7}的使用和使用上下文
+## 使用和使用上下文 {#use-and-context-of-use-7}
 
 SOAP方法可启用应用程序进程。
 
 声明新方法（非本机）时，需要使用“@library”：命名空间和用于库的名称与声明所在架构的命名空间和名称无关。
 
-## 属性描述{#attribute-description-10}
+## 属性描述 {#attribute-description-10}
 
 * **访问（字符串）**:此属性定义使用方法的访问控制。如果缺少此属性，则必须进行标识。 可用值包括：“anonymous”、“admin”和“sql”。
 * **常量（布尔）**:如果激活了该属性，则此属性意味着声明的方法将更改实体
@@ -59,7 +61,7 @@ SOAP方法可启用应用程序进程。
 * **name(MNTOKEN)**:唯一方法名称。
 * **静态（布尔）**:如果激活此属性，则该方法被视为自主方法，则在调用该属性时必须为方法指定所有参数。
 
-## 示例{#examples-7}
+## 示例 {#examples-7}
 
 “订阅”的现成方法定义：
 

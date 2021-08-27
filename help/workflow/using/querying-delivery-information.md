@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 查询投放信息 {#querying-delivery-information}
 
-## 特定投放的点击次数{#number-of-clicks-for-a-specific-delivery}
+![](../../assets/common.svg)
+
+## 特定投放的点击次数 {#number-of-clicks-for-a-specific-delivery}
 
 在本例中，我们希望恢复特定投放的点击次数。 由于收件人在给定时间段内获取的跟踪日志，因此会记录这些点击。 收件人通过其电子邮件地址进行标识。 此查询使用&#x200B;**[!UICONTROL Recipient tracking logs]**&#x200B;表。
 
@@ -114,7 +116,7 @@ ht-degree: 1%
 
    此投放的用户最多日志数为6。 5个不同的用户打开了投放电子邮件，或单击了电子邮件中的一个链接。
 
-## 未打开任何投放的收件人{#recipients-who-did-not-open-any-delivery}
+## 未打开任何投放的收件人 {#recipients-who-did-not-open-any-delivery}
 
 在本例中，我们希望过滤过去7天内未打开电子邮件的收件人。
 
@@ -151,7 +153,7 @@ ht-degree: 1%
 
 ![](assets/query_open_5.png)
 
-## 已打开投放的收件人{#recipients-who-have-opened-a-delivery}
+## 已打开投放的收件人 {#recipients-who-have-opened-a-delivery}
 
 以下示例显示如何定位在过去2周内打开了投放的用户档案：
 
@@ -177,7 +179,7 @@ ht-degree: 1%
 
    ![](assets/s_advuser_query_sample1.6.png)
 
-## 筛选投放后收件人的行为{#filtering-recipients--behavior-folllowing-a-delivery}
+## 过滤投放后收件人的行为 {#filtering-recipients--behavior-folllowing-a-delivery}
 
 在工作流中，通过&#x200B;**[!UICONTROL Query]**&#x200B;和&#x200B;**[!UICONTROL Split]**&#x200B;框，您可以选择上次投放后的行为。 此选择通过&#x200B;**[!UICONTROL Delivery recipient]**&#x200B;筛选器执行。
 

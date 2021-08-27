@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # 设置循环导入工作流 {#setting-up-a-recurring-import}
 
+![](../../assets/common.svg)
+
 如果您需要定期导入具有相同结构的文件，则使用工作流模板是最佳做法。
 
-此示例说明如何预设可重复使用的工作流，以导入来自Adobe Campaign数据库中CRM的用户档案。 有关每个活动的所有可能设置的更多信息，请参阅此[部分](../../workflow/using/about-activities.md)。
+此示例说明如何预设可重复使用的工作流，以导入来自Adobe Campaign数据库中CRM的用户档案。 有关每个活动的所有可能设置的更多信息，请参阅此[部分](about-activities.md)。
 
 1. 从&#x200B;**[!UICONTROL Resources > Templates > Workflow templates]**&#x200B;创建新的工作流模板。
 1. 添加以下活动：

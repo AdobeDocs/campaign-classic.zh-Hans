@@ -6,16 +6,18 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2972'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 指标计算 {#indicator-calculation}
 
-## 用户活动{#user-activities-1}
+![](../../assets/common.svg)
+
+## 用户活动 {#user-activities-1}
 
 <table> 
  <thead> 
@@ -203,7 +205,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 共享到社交网络{#sharing-to-social-networks-1}
+## 共享到社交网络 {#sharing-to-social-networks-1}
 
 此报告基于&#x200B;**[!UICONTROL Delivery]**(nms:delivery)、**[!UICONTROL Consolidated tracking]**(nms:trackingStats)和&#x200B;**[!UICONTROL Web tracking]**(nms:webTrackingLog)表。
 
@@ -340,7 +342,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 共享活动的统计资料{#statistics-on-sharing-activities-1}
+## 关于共享活动的统计资料 {#statistics-on-sharing-activities-1}
 
 此报告基于&#x200B;**[!UICONTROL Delivery]**(nms:delivery)、**[!UICONTROL Consolidated tracking]**(nms:trackingStats)和&#x200B;**[!UICONTROL Web tracking]**(nms:webTrackingLog)表。
 
@@ -445,7 +447,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 订阅跟踪{#subscription-tracking-1}
+## 订阅跟踪 {#subscription-tracking-1}
 
 此报告基于&#x200B;**[!UICONTROL Services]**&#x200B;表(nms:service)。
 
@@ -795,7 +797,7 @@ ht-degree: 1%
 
 此报表显示每个链接上消息内容（HTML和/或文本）的点击百分比。 个性化块退订链接和镜像页面链接在累计的总点击量中会得到考虑，但不会显示在报表中。
 
-## 跟踪统计数据{#tracking-statistics-1}
+## 跟踪统计信息 {#tracking-statistics-1}
 
 此报告基于&#x200B;**[!UICONTROL Delivery]**&#x200B;表(nms:delivery)。
 
@@ -830,7 +832,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 投放统计数据{#delivery-statistics-1}
+## 投放统计 {#delivery-statistics-1}
 
 此报告基于&#x200B;**[!UICONTROL Delivery and tracking statistics]**&#x200B;表(nms:deliveryLogStats)。
 
@@ -889,7 +891,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 打开次数{#breakdown-of-opens-1}的划分
+## 打开次数的划分 {#breakdown-of-opens-1}
 
 此报告基于&#x200B;**Deliverision**(nms:delivery)和&#x200B;**跟踪日志**(nms:trackingLogRcp)表。
 
@@ -912,21 +914,21 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 其他指标{#other-indicators}
+## 其他指标 {#other-indicators}
 
 通过&#x200B;**投放(nms:delivery)>指示器**&#x200B;节点访问的&#x200B;**发送**&#x200B;指示器(@sent)对应于发送给服务提供商的短信总数。 此指示器仅用于短信投放，不得用于其他类型的投放(不要与&#x200B;**@success**&#x200B;和&#x200B;**@processed**&#x200B;指示器混淆)。
 
-## 指示器同步{#indicator-synchronization}
+## 指示器同步 {#indicator-synchronization}
 
 如果某些指标出现取消同步或不一致的情况，请在Adobe Campaign资源管理器中选择相关投放，右键单击并选择&#x200B;**[!UICONTROL Action>Recompute delivery and tracking indicators]**。 单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Finish]**。
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 
-## 跟踪打开数{#tracking-opens-}
+## 跟踪打开次数 {#tracking-opens-}
 
 为了使Adobe Campaign检测到消息打开，收件人必须下载电子邮件中的图像。 HTML和多部分/替代电子邮件包含0像素图像，可让您检测已打开的消息。 由于文本格式的消息不包含任何图像，因此无法检测是否已打开它们。 根据消息打开次数计算的值始终是估计值，因为与图像显示关联的误差范围。
 
-## 目标人员/收件人{#targeted-persons---recipients}
+## 目标人员/收件人 {#targeted-persons---recipients}
 
 在某些报表中，Adobe Campaign会区分目标人员和目标收件人。
 

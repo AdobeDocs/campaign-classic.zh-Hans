@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 个性化优惠券{#personalized-coupons}
+
+![](../../assets/v7-only.svg)
 
 向投放添加优惠券可为收件人提供更高的产品和服务价值。 您可以使用促销活动优惠券模块创建一组要添加到即将推出的营销选件的优惠券。 准备好创建投放时，分配适用的优惠券。 由于优惠券在选定时段内有效，因此分配的优惠券将唯一地链接到其投放消息。 此外，Campaign会确认在发送投放之前有足够的优惠券接收消息数量。
 

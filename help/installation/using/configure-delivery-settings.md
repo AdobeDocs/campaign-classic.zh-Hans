@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 # 配置投放设置 {#delivery-settings}
+
+![](../../assets/v7-only.svg)
 
 必须在&#x200B;**serverConf.xml**&#x200B;文件夹中配置投放参数。
 
@@ -29,7 +31,7 @@ ht-degree: 3%
 
 您还可以根据自己的需求和设置执行以下配置：配置[SMTP中继](#smtp-relay)，调整[MTA子进程](#mta-child-processes)、[管理出站SMTP流量](#managing-outbound-smtp-traffic-with-affinities)的数量。
 
-## SMTP中继{#smtp-relay}
+## SMTP中继 {#smtp-relay}
 
 MTA模块充当SMTP广播（端口25）的本机邮件传输代理。
 
@@ -45,7 +47,7 @@ MTA模块充当SMTP广播（端口25）的本机邮件传输代理。
 >
 >此操作模式对投放造成严重限制，因为由于中继服务器的固有性能（延迟、带宽……），它会大大降低吞吐量。 此外，鉴别同步投放错误（通过分析SMTP流量检测到）的容量将受到限制，如果中继服务器不可用，则将无法发送。
 
-## MTA子进程{#mta-child-processes}
+## MTA子进程 {#mta-child-processes}
 
 可以根据服务器的CPU功率和可用网络资源来优化广播性能，从而控制子进程（默认为2）的数量。 此配置将在每个单台计算机上MTA配置的&#x200B;**`<master>`**&#x200B;部分中进行。
 
@@ -55,7 +57,7 @@ MTA模块充当SMTP广播（端口25）的本机邮件传输代理。
 
 另请参阅[电子邮件发送优化](../../installation/using/email-deliverability.md#email-sending-optimization)。
 
-## 管理具有相关性{#managing-outbound-smtp-traffic-with-affinities}的出站SMTP流量
+## 管理具有相关性的出站SMTP流量 {#managing-outbound-smtp-traffic-with-affinities}
 
 >[!IMPORTANT]
 >

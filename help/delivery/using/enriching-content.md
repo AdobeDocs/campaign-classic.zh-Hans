@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # 丰富内容{#enriching-content}
 
+![](../../assets/common.svg)
+
 聚合器允许您使用外部数据扩充内容。 此数据来自通用查询或链接的表。
 
-## 一般查询{#generic-queries}
+## 一般查询 {#generic-queries}
 
 通过&#x200B;**[!UICONTROL Aggregator]**&#x200B;选项卡中的发布模板配置查询。
 
@@ -37,7 +39,7 @@ ht-degree: 0%
 
 **`<collection-recipient>`**&#x200B;元素表示由查询生成的文档的输入元素。 检索到的数据将在此元素下返回；在本例中，为收件人列表。
 
-### 添加查询{#adding-a-query}
+### 添加查询 {#adding-a-query}
 
 可使用向导编辑查询参数。
 
@@ -61,7 +63,7 @@ ht-degree: 0%
 
    ![](assets/d_ncs_content_query4.png)
 
-## 链接的表{#linked-tables}
+## 链接的表 {#linked-tables}
 
 利用链接，可检索链接到内容的外部数据。
 
@@ -70,7 +72,7 @@ ht-degree: 0%
 * 内容链接：这是本机内容管理模式。 链接的内容会自动集成到XML输出文档中。
 * 指向外部表的链接允许访问数据库中的所有其他表，但约束是使用聚合器检索所选链接的数据。
 
-### 链接到内容架构{#link-to-a-content-schema}
+### 链接到内容架构 {#link-to-a-content-schema}
 
 在数据架构中声明内容链接，如下所示：
 
@@ -102,7 +104,7 @@ ht-degree: 0%
 
 使用&#x200B;**[!UICONTROL Magnifier]**&#x200B;图标可打开链接元素的编辑表单。
 
-#### 链接集合{#link-collection}
+#### 链接集合 {#link-collection}
 
 要填充链接集合，请将&#x200B;**unbound=&quot;true&quot;**&#x200B;属性添加到数据架构中链接元素的定义中：
 
@@ -128,7 +130,7 @@ ht-degree: 0%
 
 显示默认列，以查看目标元素的&#x200B;**计算字符串**。
 
-### 外部表{#links-to-external-tables}的链接
+### 指向外部表的链接 {#links-to-external-tables}
 
 在数据架构中声明指向外部表的链接，如下所示：
 
@@ -171,7 +173,7 @@ ht-degree: 0%
 >
 >此限制也适用于内容链接。
 
-#### 链接集合{#link-collection-1}
+#### 链接集合 {#link-collection-1}
 
 集合的定义与集合元素上列表的定义相同：
 
@@ -202,7 +204,7 @@ ht-degree: 0%
 <contact id="11504982510" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/>
 ```
 
-#### 链路聚合{#link-aggregation}
+#### 链接聚合 {#link-aggregation}
 
 引用的每个链接的内容仅限于目标元素的内部键和&#x200B;**计算字符串**。
 

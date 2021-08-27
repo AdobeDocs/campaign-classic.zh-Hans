@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -15,19 +15,21 @@ ht-degree: 0%
 
 # 交集{#intersection}
 
+![](../../assets/common.svg)
+
 **交集**&#x200B;类型活动从接收目标的交集创建目标。
 
 利用交集，可仅提取所有集客活动结果共有的群体。 将创建目标，并收到所有结果：因此，在执行交集之前，必须先完成所有之前的活动。 要配置此活动，您需要为其输入标签以及与结果相关的选项。
 
 ![](assets/s_user_segmentation_inter.png)
 
-有关配置和使用交集活动的更多信息，请参阅[提取联合数据（交集）](../../workflow/using/targeting-data.md#extracting-joint-data--intersection-)。
+有关配置和使用交集活动的更多信息，请参阅[提取联合数据（交集）](targeting-data.md#extracting-joint-data--intersection-)。
 
 如果要处理剩余群体，请勾选&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补码将包含所有集客活动结果的并数减去交集。 随后，将向活动添加其他叫客过渡，如下所示：
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
-## 交集示例{#intersection-example}
+## 交集示例 {#intersection-example}
 
 在以下示例中，交集的目的是计算三个简单查询共有的收件人，以便创建列表。
 
@@ -45,14 +47,14 @@ ht-degree: 0%
 
    ![](assets/intersection_example.png)
 
-## 输入参数{#input-parameters}
+## 输入参数 {#input-parameters}
 
 * tableName
 * 模式
 
 每个集客事件必须指定由这些参数定义的目标。
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * tableName
 * 模式

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 12%
@@ -14,6 +14,8 @@ ht-degree: 12%
 ---
 
 # 关于电子邮件渠道{#about-email-channel}
+
+![](../../assets/common.svg)
 
 Adobe Campaign允许您向目标群体批量交付个性化的电子消息。
 

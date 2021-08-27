@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 文件传输{#file-transfer}
+
+![](../../assets/common.svg)
 
 通过&#x200B;**文件传输**活动，您可以接收或发送文件、测试文件存在情况或列出服务器上的文件。 使用的协议为Azure Blob Storage、Amazon Simple Storage Service(S3)、FTP或SFTP。
 通过S3、Azure Blob Storage或SFTP连接，您还可以通过Adobe实时客户数据平台将区段数据导入Adobe Campaign。 有关更多信息，请参阅此[文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
@@ -71,7 +73,7 @@ ht-degree: 1%
 所有文件传输选项有两个可能的选项：
 
 * **[!UICONTROL Process missing file]**&#x200B;选项会添加一个过渡，如果在指定的目录中未找到文件，则会激活该过渡。
-* **[!UICONTROL Process errors]**&#x200B;选项在[处理错误](../../workflow/using/monitoring-workflow-execution.md#processing-errors)中有详细说明。
+* **[!UICONTROL Process errors]**&#x200B;选项在[处理错误](monitoring-workflow-execution.md#processing-errors)中有详细说明。
 
 **[!UICONTROL Advanced parameters...]**&#x200B;链接允许您访问以下选项：
 
@@ -93,15 +95,15 @@ ht-degree: 1%
 
    用于指定用于数据传输的连接端口。
 
-通过&#x200B;**[!UICONTROL File historization settings...]**&#x200B;链接，可以访问[Web下载](../../workflow/using/web-download.md)（**[!UICONTROL File historization]**&#x200B;步骤）中详细介绍的选项。
+通过&#x200B;**[!UICONTROL File historization settings...]**&#x200B;链接，可以访问[Web下载](web-download.md)（**[!UICONTROL File historization]**&#x200B;步骤）中详细介绍的选项。
 
-## 输入参数{#input-parameters}
+## 输入参数 {#input-parameters}
 
 * 文件名
 
    已发送文件的完整名称。
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * 文件名
 

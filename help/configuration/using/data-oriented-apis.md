@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # 面向数据的 API{#data-oriented-apis}
 
+![](../../assets/v7-only.svg)
+
 面向数据的API允许您处理整个数据模型。
 
-## 数据模型{#overview-of-the-datamodel}概述
+## 数据模型概述 {#overview-of-the-datamodel}
 
 Adobe Campaign不为每个实体提供专用的读取API（没有getRecipient或getDelivery函数等）。 使用QUERY &amp; WRITER数据读取和修改方法访问模型的数据。
 
@@ -27,7 +29,7 @@ Adobe Campaign允许您管理收藏集：通过查询，您可以恢复整个数
 
 XML文档存储在数据库的MEMO类型字段中。
 
-## 模型{#description-of-the-model}的描述
+## 模型描述 {#description-of-the-model}
 
 您必须熟悉Adobe Campaign数据模型，才能在脚本中处理数据库的字段。
 
@@ -35,7 +37,7 @@ XML文档存储在数据库的MEMO类型字段中。
 
 要生成其结构，请参阅本文：[如何生成数据模型或数据字典](https://helpx.adobe.com/campaign/kb/generate-data-model.html)。
 
-## 查询和写入程序{#query-and-writer}
+## 查询和编写器 {#query-and-writer}
 
 下面的介绍模式详细介绍了数据库和客户(网页或Adobe Campaign客户端控制台)之间用于读取(ExecuteQuery)和写入(Writer)的低级交换。
 
@@ -61,7 +63,7 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 
 Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollection--xtk-session-)。
 
-## ExecuteQuery(xtk:queryDef){#executequery--xtk-querydef-}
+## ExecuteQuery(xtk:queryDef) {#executequery--xtk-querydef-}
 
 此方法允许您根据与架构关联的数据执行查询。 它采用身份验证字符串（必须登录）和XML文档，以描述要作为参数提交的查询。 返回参数是一个XML文档，其中包含查询结果，其格式为查询引用的架构。
 
@@ -79,7 +81,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 >
 >这是一种“const”方法。 输入参数以&quot;xtk:queryDef&quot;模式的格式包含在XML文档中。
 
-### 输入查询{#format-of-the-xml-document-of-the-input-query}的XML文档格式
+### 输入查询的XML文档的格式 {#format-of-the-xml-document-of-the-input-query}
 
 查询的XML文档的结构在“xtk:queryDef ”架构中进行了描述。 本文档介绍SQL查询的子句：&quot;select&quot;、&quot;where&quot;、&quot;order by&quot;、&quot;group by&quot;、&quot;having&quot;。
 
@@ -142,7 +144,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 
 **XPath**&#x200B;语法用于根据输入架构查找数据。 有关XPath的更多信息，请参见[数据架构](../../configuration/using/data-schemas.md)。
 
-#### {#example-with-the--get--operation}的“get”操作示例
+#### “get”操作的示例 {#example-with-the--get--operation}
 
 在电子邮件上检索带有过滤器的收件人（“nms:recipient”模式）的姓氏和名字。
 
@@ -161,7 +163,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 </queryDef>
 ```
 
-#### {#example-with-the--select--operation}的“select”操作示例
+#### “select”操作的示例 {#example-with-the--select--operation}
 
 返回在文件夹和电子邮件域上过滤的收件人列表（按出生日期的降序排序）。
 
@@ -204,7 +206,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 ...
 ```
 
-#### “count”运算{#example-with-the--count--operation}的示例
+#### “count”运算的示例 {#example-with-the--count--operation}
 
 要计算查询中的记录数，请执行以下操作：
 
@@ -221,7 +223,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 >
 >我们再次使用上一个示例中的条件。 不使用`<select>`和子句。`</select>`
 
-#### 数据分组{#data-grouping}
+#### 数据分组 {#data-grouping}
 
 要检索引用多次的电子邮件地址，请执行以下操作：
 
@@ -257,7 +259,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 >
 >不再需要填充`<groupby>`元素。
 
-#### 在条件{#bracketing-in-conditions}中括号
+#### 在条件中括号 {#bracketing-in-conditions}
 
 以下是两个在同一条件下括号的示例。
 
@@ -297,7 +299,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 
 当条件中使用了两个以上的数据时，此语法会简化查询。
 
-#### 链接{#examples-on-links}的示例
+#### 链接示例 {#examples-on-links}
 
 * 链接1-1或N1:当表具有外键（链接从表开始）时，可以直接过滤或检索链接表的字段。
 
@@ -368,7 +370,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
    </queryDef>
    ```
 
-#### 绑定“where”和“select”子句{#binding-the-parameters-of-the--where--and--select--clause}的参数
+#### 绑定“where”和“select”子句的参数 {#binding-the-parameters-of-the--where--and--select--clause}
 
 参数的绑定允许引擎设置查询中使用的参数的值。 这非常有用，因为引擎负责值的转义，并且对于要检索的参数，缓存还有额外的好处。
 
@@ -389,7 +391,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 >
 >如果查询包含“订单依据”或“组依据”说明，则数据库引擎将无法“绑定”值。 必须将@noSqlBind=&quot;true&quot;属性放在查询的&quot;select&quot;和/或&quot;where&quot;说明中。
 
-#### 查询构建提示：{#query-building-tip-}
+#### 查询构建提示： {#query-building-tip-}
 
 要帮助处理查询的语法，您可以使用Adobe Campaign客户端控制台（**[!UICONTROL Tools/ Generic query editor...]**&#x200B;菜单）中的通用查询编辑器来编写查询。 操作步骤：
 
@@ -405,7 +407,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
-### 输出文档格式{#output-document-format}
+### 输出文档格式 {#output-document-format}
 
 返回参数是与查询关联的架构格式的XML文档。
 
@@ -460,7 +462,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 </recipient>
 ```
 
-### SOAP消息{#example-of-soap-messages}的示例
+### SOAP消息示例 {#example-of-soap-messages}
 
 * 查询:
 
@@ -502,7 +504,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
    </SOAP-ENV:Envelope>
    ```
 
-## Write/WriteCollection(xtk:session){#write---writecollection--xtk-session-}
+## Write/WriteCollection(xtk:session) {#write---writecollection--xtk-session-}
 
 这些服务用于插入、更新或删除实体（“写入”方法）或实体集合（“写入收集”方法）。
 
@@ -547,7 +549,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 * **删除**:删除记录，
 * **无**:仅用于链接协调，而不进行更新或插入。
 
-### “Write”方法{#example-with-the--write--method}的示例
+### “Write”方法的示例 {#example-with-the--write--method}
 
 使用电子邮件地址、出生日期和城镇更新或插入收件人（隐含的“insertOrUpdate”操作）：
 
@@ -567,7 +569,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 >
 >对于删除操作，输入文档必须只包含构成协调键值的字段。
 
-### “WriteCollection”方法{#example-with-the--writecollection--method}的示例
+### “WriteCollection”方法的示例 {#example-with-the--writecollection--method}
 
 更新或插入多个收件人：
 
@@ -579,9 +581,9 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 </recipient-collection>
 ```
 
-### 链接{#example-on-links}的示例
+### 链接示例 {#example-on-links}
 
-#### 示例1 {#example-1}
+#### 示例 1 {#example-1}
 
 根据文件夹的内部名称(@name)将文件夹与收件人关联。
 
@@ -609,7 +611,7 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 </recipient>
 ```
 
-#### 示例3 {#example-3}
+#### 示例 3 {#example-3}
 
 使用组关系表(“nms:rcpGrpRel”)向组添加收件人：
 
@@ -625,11 +627,11 @@ Write方法请参见[Write / WriteCollection(xtk:session)](#write---writecollect
 >
 >键的定义未在`<rcpgroup>`元素中输入，因为基于组名称的隐式键在“nms:group”模式中定义。
 
-### XML集合元素{#xml-collection-elements}
+### XML收集元素 {#xml-collection-elements}
 
 默认情况下，必须填充所有集合元素，才能更新XML集合元素。 来自数据库的数据将替换为来自输入文档的数据。 如果文档仅包含要更新的元素，则必须对所有要更新的集合元素填充“_operation”属性，以便强制与数据库的XML数据合并。
 
-### SOAP消息{#example-of-soap-messages-1}的示例
+### SOAP消息示例 {#example-of-soap-messages-1}
 
 * 查询:
 

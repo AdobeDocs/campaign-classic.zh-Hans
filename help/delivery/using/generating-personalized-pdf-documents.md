@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 生成个性化 PDF 文档{#generating-personalized-pdf-documents}
+
+![](../../assets/common.svg)
 
 ## 关于可变PDF文档 {#about-variable-pdf-documents}
 

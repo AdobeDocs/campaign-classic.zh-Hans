@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 协调数据更新{#coordinating-data-updates}
+
+![](../../assets/common.svg)
 
 此用例详细介绍了如何创建工作流，该工作流允许您在使用工作流的多次执行时管理伴随更新。
 
@@ -53,5 +55,5 @@ ht-degree: 3%
 
 **相关主题：**
 
-* [防止同时执行多次](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)
-* [更新数据活动](../../workflow/using/update-data.md)
+* [防止同时执行多次](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)
+* [更新数据活动](update-data.md)

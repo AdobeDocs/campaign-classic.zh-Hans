@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 窗体渲染{#form-rendering}
+
+![](../../assets/common.svg)
 
 ## 选择表单渲染模板 {#selecting-the-form-rendering-template}
 
@@ -106,7 +108,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_required_field.png)
 
-如果用户在未输入字段的情况下批准此页面，则将显示以下消息：
+如果用户未输入字段就批准了此页面，则将显示以下消息：
 
 ![](assets/s_ncs_admin_survey_required_default_msg.png)
 
@@ -114,7 +116,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_required_custom_msg.png)
 
-如果用户在未输入字段的情况下批准此页面，则将显示以下消息：
+如果用户未输入字段就批准了此页面，则将显示以下消息：
 
 ![](assets/s_ncs_admin_survey_required_custom_msg2.png)
 

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 96%
@@ -15,9 +15,11 @@ ht-degree: 96%
 
 # Campaign 设置常见问题解答 {#settings-faq}
 
+![](../../assets/common.svg)
+
 了解根据您的需求设置 Campaign 实例的主要配置工作。
 
-## 我能改变 Campaign 界面的语言吗？{#can-i-change-the-language-of-campaign-interface-}
+## 我能改变 Campaign 界面的语言吗？ {#can-i-change-the-language-of-campaign-interface-}
 
 创建实例时可选择 Campaign 语言。之后将无法改变语言设置。如需详细信息，请参阅[此部分](../../installation/using/creating-an-instance-and-logging-on.md)。
 
@@ -25,13 +27,13 @@ Adobe Campaign 目前提供英语、法语、德语和日语共 4 种语言的�
 
 如果是英语，在安装 Campaign 时可以选择美式英语还是英式英语：二者的日期和时间格式有所不同。如需有关这些差别的详细信息，请参阅[此部分](../../platform/using/adobe-campaign-workspace.md#date-and-time)。
 
-## 我可以将 Campaign Classic 与其他 Adobe 解决方案结合使用吗？{#can-i-use-campaign-classic-with-other-adobe-solutions-}
+## 我可以将 Campaign Classic 与其他 Adobe 解决方案结合使用吗？ {#can-i-use-campaign-classic-with-other-adobe-solutions-}
 
 您可以将 Adobe Campaign 的投放功能和高级活动管理功能与帮助您个性化用户体验的解决方案结合起来。
 
 单击此处了解[如何使用其他 Adobe 解决方案](../../integrations/using/about-campaign-integrations.md)和[如何在 Campaign 中设置 IMS](../../integrations/using/about-adobe-id.md)。
 
-## 如何在 Campaign 实例上设置跟踪功能？{#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
+## 如何在 Campaign 实例上设置跟踪功能？ {#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
 
 作为专家级用户，您可以在 Campaign 实例上配置跟踪功能。
 
@@ -43,29 +45,29 @@ Adobe Campaign 目前提供英语、法语、德语和日语共 4 种语言的�
 
 [单击此处了解更多信息](../../delivery/using/about-deliverability.md)。
 
-## 如何实施内容批准？{#how-can-i-implement-content-approval-}
+## 如何实施内容批准？ {#how-can-i-implement-content-approval-}
 
 借助 Campaign，您能够以协作模式为营销活动的主要步骤设置审批流程。对于每个活动，您可以批准投放目标、内容和成本。负责批准工作的 Adobe Campaign 操作员收到电子邮件通知后，可通过控制台或 Web 连接批准或拒绝批准相关请求。
 
 [单击此处了解更多信息](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)，并了解如何在 Campaign 中实施投放内容的批准工作。
 
-## 如何访问存储在外部数据库中的数据？{#how-can-i-access-data-stored-in-an-external-database-}
+## 如何访问存储在外部数据库中的数据？ {#how-can-i-access-data-stored-in-an-external-database-}
 
 Adobe Campaign 提供了联合数据访问 (FDA) 选项，以处理存储在一个或多个外部数据库中的信息：无需改变 Adobe Campaign 数据的结构就可以访问外部数据。
 
 [单击此处了解更多信息](../../installation/using/connecting-to-database.md)。
 
-## 我能将 Campaign 连接到哪些外部数据库？{#which-external-databases-can-i-connect-campaign-to-}
+## 我能将 Campaign 连接到哪些外部数据库？ {#which-external-databases-can-i-connect-campaign-to-}
 
 [兼容性表](../../rn/using/compatibility-matrix.md)中列出了通过联合数据访问 (FDA) 与 Campaign 兼容的外部数据库。
 
-## Adobe Campaign 可与轻型目录访问协议 (LDAP) 相集成吗？{#can-adobe-campaign-integrate-with-ldap-}
+## Adobe Campaign 可与轻型目录访问协议 (LDAP) 相集成吗？ {#can-adobe-campaign-integrate-with-ldap-}
 
 作为内部部署/混合部署客户，您可以将 Campaign Classic 与 LDAP 目录相集成。
 
 [单击此处了解如何操作](../../installation/using/connecting-through-ldap.md)。
 
-## 如何在 Campaign 中设置 CRM 连接器？{#how-can-i-set-up-crm-connectors-in-campaign-}
+## 如何在 Campaign 中设置 CRM 连接器？ {#how-can-i-set-up-crm-connectors-in-campaign-}
 
 Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台链接到第三方系统。通过这些 CRM 连接器，您可以同步处理联系人、帐户、购买等。您可以使用这些 CRM 连接器轻松地将您的应用程序与各第三方和商务应用程序相集成。
 
@@ -75,7 +77,7 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 ![](assets/do-not-localize/how-to-video.png)观看有关[Adobe Campaign 与 Microsoft Dynamics 365 集成](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)的用例视频。
 
-## 对于特定于计算机或用户的问题，如何执行软缓存清除？ {#perform-soft-cache-clear}
+## 对于特定于计算机或用户的问题，如何执行软缓存清除？  {#perform-soft-cache-clear}
 
 如果您遇到无法正确反映新徽标的问题，或者不能成功导出特定于计算机/用户的数据的问题，则可能需要在 Windows（Windows 7、Windows XP、Windows 10）上执行软缓存清除。
 
@@ -85,7 +87,7 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 如果仍然无效，请尝试通过执行以下步骤清除硬缓存。
 
-## 对于特定于计算机或用户的问题，如何执行硬缓存清除？ {#perform-hard-cache-clear}
+## 对于特定于计算机或用户的问题，如何执行硬缓存清除？  {#perform-hard-cache-clear}
 
 如果您遇到无法正确反映新徽标的问题，或者不能成功导出特定于计算机/用户的数据的问题，则可能需要在 Windows（Windows 7、Windows XP、Windows 10）上执行硬缓存清除。
 

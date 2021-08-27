@@ -6,28 +6,30 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
 
 ---
 
-# srschema元素{#srcschema--element}
+# srschema元素 {#srcschema--element}
 
-## 内容模型{#content-model-14}
+![](../../../assets/v7-only.svg)
+
+## 内容模型 {#content-model-14}
 
 srcSchema:==(attribute) | createdBy |数据 |元素 |枚举 |帮助 |界面 |方法 | modifiedBy)
 
-## 属性{#attributes-14}
+## 属性 {#attributes-14}
 
 已创建(datetime)、createdBy-id(long)、desc(string)、entitySchema(string)、extendedSchema(string)、img(string)、实施(string)、标签(string)、labelSingular(string)、lastModified(datetime)、库(boolean)、mappingType(string)、modifiedBy-id(long)、名称(string)、namespace(syRecyBoling)、view(boooolean)、xtkschema(string)、xtkstring)
 
-## 父项{#parents-14}
+## 父母 {#parents-14}
 
 无
 
-## 子项{#children-14}
+## 子项 {#children-14}
 
 * `<attribute>`
 * `<createdby>`
@@ -39,15 +41,15 @@ srcSchema:==(attribute) | createdBy |数据 |元素 |枚举 |帮助 |界面 |方
 * `<methods>`
 * `<modifiedby>`
 
-## 说明{#description-14}
+## 说明 {#description-14}
 
 `<srcschema>`是架构的根元素。 它是定义架构的输入点。
 
-## {#use-and-context-of-use-9}的使用和使用上下文
+## 使用和使用上下文 {#use-and-context-of-use-9}
 
 [关于架构引用](../../../configuration/using/about-schema-reference.md)和[架构结构](../../../configuration/using/schema-structure.md)中提供了架构演示。
 
-## 属性描述{#attribute-description-14}
+## 属性描述 {#attribute-description-14}
 
 * **已创建(datetime)**:此属性提供有关架构创建日期和时间的信息。它有一个“日期时间”窗体。 显示的值取自服务器。 时间以UTC格式显示。
 * **createdBy-id(long)**:是创建架构的运算符的标识符。
@@ -73,7 +75,7 @@ srcSchema:==(attribute) | createdBy |数据 |元素 |枚举 |帮助 |界面 |方
 * **视图（布尔）**:如果激活了该模式(@view=&quot;true&quot;)，则将该模式用作视图。数据库结构更新向导将不考虑架构。 此选项主要用于引用外部表。
 * **xtkschema（字符串）**:定义模式语法的模式的名称（默认情况下为xtk:srcSchema）。
 
-## 示例{#examples-11}
+## 示例 {#examples-11}
 
 `<srcschema>` “nms:delivery”模式的元素
 

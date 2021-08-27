@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 应用程序服务器{#application-server}
+
+![](../../assets/v7-only.svg)
 
 必须在服务器上安装所需的数据库访问层，并可从Adobe Campaign帐户访问。
 
@@ -61,7 +63,7 @@ yum install java-1.8.0-openjdk
 
 在Linux中，必须安装OpenSSL。 Adobe Campaign支持的版本包括&#x200B;**OpenSSL 1.0.1**&#x200B;和&#x200B;**OpenSSL 0.9.8**。 接受子版本0.9.8g到0.9.8o。
 
-## 导出报告{#exporting-reports}
+## 导出报表 {#exporting-reports}
 
 Adobe Campaign允许您以Microsoft Excel和Adobe PDF格式导出平台报表。 对于Microsoft Excel格式，Adobe Campaign使用&#x200B;**LibreOffice**。 对于Adobe PDF格式，Adobe Campaign使用&#x200B;**PhantomJS**&#x200B;转换器。 PhantomJs包含在工厂包中，并且LibreOffice必须安装在运行Adobe Campaign应用程序服务器的计算机（**nlserver web**&#x200B;进程）上。
 

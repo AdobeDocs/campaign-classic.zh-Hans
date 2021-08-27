@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 0%
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 # 事件描述 {#event-description}
 
-## 事务型消息传递数据模型{#about-transactional-messaging-datamodel}
+![](../../assets/v7-only.svg)
+
+## 事务型消息传递数据模型 {#about-transactional-messaging-datamodel}
 
 事务型消息传递依赖于Adobe Campaign数据模型，并且使用另外两个单独的表。 这些[表](../../configuration/using/data-model-description.md#message-center-module)、**NmsRtEvent**&#x200B;和&#x200B;**NmsBatchEvent**&#x200B;包含相同的字段，让您一方面管理实时事件，另一方面管理批处理事件。
 
-## SOAP方法{#soap-methods}
+## SOAP方法 {#soap-methods}
 
 本节详细介绍与事务型消息模块架构关联的SOAP方法。
 
@@ -152,7 +154,7 @@ ht-degree: 0%
     </ctx>
 ```
 
-## SOAP调用{#information-returned-by-the-soap-call}返回的信息
+## SOAP调用返回的信息 {#information-returned-by-the-soap-call}
 
 Adobe Campaign收到事件时，会生成一个唯一的返回ID。 这是事件的存档版本的ID。
 

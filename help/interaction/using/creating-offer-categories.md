@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 创建优惠类别{#creating-offer-categories}
+
+![](../../assets/v7-only.svg)
 
 选件类别的创建只能在&#x200B;**[!UICONTROL Design]**&#x200B;环境中进行。 当包含的已创建/修改选件获得批准时，这些选件会在&#x200B;**[!UICONTROL Live]**&#x200B;环境中自动部署（即可用）。 默认情况下，**[!UICONTROL Design]**&#x200B;环境包含用于接收所有选件的类别。 可以创建子类别以将层次结构添加到目录选件中。
 

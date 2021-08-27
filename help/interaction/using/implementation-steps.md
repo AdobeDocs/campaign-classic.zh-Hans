@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 实施步骤{#implementation-steps}
 
-## 配置交互{#configuring-interaction}
+![](../../assets/v7-only.svg)
+
+## 配置交互 {#configuring-interaction}
 
 >[!NOTE]
 >
@@ -38,7 +40,7 @@ ht-degree: 2%
    >
    >在集客Web渠道上创建空间后，还需要在要显示选件的网站上进行配置。
 
-## 管理优惠目录{#managing-the-offer-catalog-}
+## 管理优惠目录 {#managing-the-offer-catalog-}
 
 >[!NOTE]
 >
@@ -48,7 +50,7 @@ ht-degree: 2%
 1. 在设计环境中创建选件。 有关更多信息，请参阅[创建选件](../../interaction/using/creating-an-offer.md)。
 1. 在一个或多个空间上批准和发布选件，以便它们在实时环境中可供投放管理器使用。 有关更多信息，请参阅[批准和激活选件](../../interaction/using/approving-and-activating-an-offer.md)。
 
-## 使用优惠目录{#using-the-offer-catalog-}
+## 使用优惠目录 {#using-the-offer-catalog-}
 
 >[!NOTE]
 >

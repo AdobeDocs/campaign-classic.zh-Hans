@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # 跨渠道投放工作流{#cross-channel-delivery-workflow}
 
-此用例展示了涉及跨渠道投放工作流的示例。 [此部分](../../workflow/using/cross-channel-deliveries.md)介绍了跨渠道投放的一般概念。
+![](../../assets/common.svg)
+
+此用例展示了涉及跨渠道投放工作流的示例。 [此部分](cross-channel-deliveries.md)介绍了跨渠道投放的一般概念。
 
 目标是将受众从数据库的收件人划分为不同的组，以便向某个组发送电子邮件，向另一个组发送短信消息。
 
@@ -31,12 +33,12 @@ ht-degree: 3%
 
 ![](assets/wkf_cross-channel_7.png)
 
-## 步骤1:定位受众{#step-1--targeting-the-audience}
+## 步骤1:定位受众 {#step-1--targeting-the-audience}
 
 要定义目标，请创建查询以标识收件人。
 
 1. 创建营销策划. 如需详细信息，请参阅[此部分](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
-1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，向工作流中添加&#x200B;**查询**&#x200B;活动。 有关使用此活动的更多信息，请参阅[此部分](../../workflow/using/query.md)。
+1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，向工作流中添加&#x200B;**查询**&#x200B;活动。 有关使用此活动的更多信息，请参阅[此部分](query.md)。
 1. 定义接收投放的收件人。 例如，选择“Gold”成员作为目标维度。
 1. 向查询添加筛选条件。 在此示例中，选择具有电子邮件地址和移动号码的收件人。
 
@@ -44,7 +46,7 @@ ht-degree: 3%
 
 1. 保存更改。
 
-## 步骤2:创建包含选件{#step-2--creating-an-email-including-an-offer}的电子邮件
+## 步骤2:创建包含选件的电子邮件 {#step-2--creating-an-email-including-an-offer}
 
 1. 创建&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动，然后在工作流中双击该活动以对其进行编辑。 有关创建电子邮件的更多信息，请参阅[此部分](../../delivery/using/about-email-channel.md)。
 1. 设计消息并在内容中插入包含选件的链接。
@@ -65,11 +67,11 @@ ht-degree: 3%
 
    ![](assets/wkf_cross-channel_4.png)
 
-## 步骤3:对生成的受众{#step-3--segmenting-the-resulting-audience}进行分段
+## 步骤3:对生成的受众进行分段 {#step-3--segmenting-the-resulting-audience}
 
 确定目标并创建首次投放后，您需要使用筛选条件将目标细分为不同的群体。
 
-1. 将&#x200B;**Split**&#x200B;活动添加到工作流并将其打开。 有关使用此活动的更多信息，请参阅[此部分](../../workflow/using/split.md)。
+1. 将&#x200B;**Split**&#x200B;活动添加到工作流并将其打开。 有关使用此活动的更多信息，请参阅[此部分](split.md)。
 1. 从查询上游计算的群体创建三个区段。
 
    ![](assets/wkf_cross-channel_6.png)
@@ -101,7 +103,7 @@ ht-degree: 3%
 
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;以保存更改。
 
-## 步骤4:最终完成工作流{#step-4--finalizing-the-workflow}
+## 步骤4:最终完成工作流 {#step-4--finalizing-the-workflow}
 
 1. 在&#x200B;**[!UICONTROL Split]**&#x200B;活动生成的三个子集之后，将相关活动添加到您的工作流中：
 

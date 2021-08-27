@@ -5,7 +5,7 @@ description: 创建Experience Manager新闻稿
 audience: integrations
 content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # 创建Experience Manager新闻稿{#creating-an-experience-manager-newsletter}
+
+![](../../assets/common.svg)
 
 此集成可用于例如在Adobe Experience Manager中创建新闻稿，然后在Adobe Campaign中作为电子邮件促销活动的一部分使用。
 

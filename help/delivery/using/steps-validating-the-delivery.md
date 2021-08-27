@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 验证投放 {#validating-the-delivery}
+
+![](../../assets/common.svg)
 
 创建并配置投放后，您必须先验证投放，然后再将其发送到主目标。
 
@@ -137,7 +139,6 @@ ht-degree: 5%
 >
 
 
-
 要发送校样，请执行以下步骤：
 
 1. 确保已按照[定义特定校样目标](steps-defining-the-target-population.md#defining-a-specific-proof-target)中所述配置了校样目标。
@@ -195,7 +196,7 @@ ht-degree: 5%
 
 您可以从此节点创建新规则并定义新分类。 但是，这些任务是专家用户（了解JavaScript）所保留的。
 
-有关分类规则的更多信息，请参阅[此页面](../../campaign/using/about-campaign-typologies.md)。
+有关分类规则的更多信息，请参阅[此页面](../../campaign-opt/using/about-campaign-typologies.md)。
 
 要编辑当前分类，请单击&#x200B;**[!UICONTROL Typology]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Edit link]**&#x200B;图标。
 

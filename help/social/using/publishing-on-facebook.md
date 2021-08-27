@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1148'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 在 Facebook 上发布{#publishing-on-facebook}
+
+![](../../assets/v7-only.svg)
 
 配置完成后， Social Marketing允许您在Facebook页面的涂鸦墙上发布发布内容。
 
@@ -30,11 +32,11 @@ facebook固有以下限制。
 
 ![](assets/social_facebook_delivery_001.png)
 
-## 选择主目标{#selecting-the-main-target}
+## 选择主目标 {#selecting-the-main-target}
 
 您需要选择要将发布发布发布到的页面。
 
-1. 单击&#x200B;**[!UICONTROL To]**&#x200B;链接。
+1. 单击 **[!UICONTROL To]** 链接。
 
    ![](assets/social_facebook_delivery_010.png)
 
@@ -50,7 +52,7 @@ facebook固有以下限制。
 
    ![](assets/social_facebook_delivery_013.png)
 
-## 选择校样目标{#selecting-the-proof-target}
+## 选择校样目标 {#selecting-the-proof-target}
 
 利用&#x200B;**[!UICONTROL Target of the proofs]**&#x200B;选项卡，可定义要在发送投放之前用于测试投放的Facebook页面。 为此，我们建议创建专用的Facebook专用页面。 有关创建专用Facebook页面的更多信息，请参阅[创建测试Facebook页面](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page)。 要选择校样目标，请应用与主目标相同的步骤：[选择主目标](#selecting-the-main-target)。
 
@@ -60,7 +62,7 @@ facebook固有以下限制。
 >
 >如果对所有投放使用相同的Facebook测试页面，则可以在&#x200B;**[!UICONTROL Publish to a brand page]**&#x200B;投放模板中保存校样目标，该模板可通过&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点访问。 默认情况下，将为每个新投放输入校样目标。
 
-## 定义受众{#defining-the-audience}
+## 定义受众 {#defining-the-audience}
 
 如果要使用本地区段来优化有权查看发布的公共类型，我们建议您为每个区段创建一个Facebook页面(例如：Adobe Campaign巴黎、Adobe Campaign伦敦等)。
 
@@ -77,7 +79,7 @@ facebook固有以下限制。
 >
 >Facebook可能会更改受众筛选器的列表及其值。
 
-## 定义消息内容{#defining-message-content}
+## 定义消息内容 {#defining-message-content}
 
 使用&#x200B;**[!UICONTROL Content type]**&#x200B;下拉菜单选择发布类型。
 
@@ -90,7 +92,7 @@ facebook固有以下限制。
 * a **[!UICONTROL Status with a YouTube link]**
 * a **[!UICONTROL Photo album]**
 
-### 发布状态{#publishing-a-status}
+### 发布状态 {#publishing-a-status}
 
 状态类型投放只能包含文本，如以下示例所示：
 
@@ -100,7 +102,7 @@ facebook固有以下限制。
 
 ![](assets/social_facebook_delivery_015.png)
 
-### 使用链接{#publishing-a-status-with-a-link}发布状态
+### 使用链接发布状态 {#publishing-a-status-with-a-link}
 
 带有链接的状态类型投放可以包含文本、图像和链接。 以下部分详细介绍投放编辑屏幕的字段与Facebook上的最终发布之间的对称性：
 
@@ -138,7 +140,7 @@ facebook固有以下限制。
 
 ![](assets/social_facebook_delivery_005.png)
 
-### 使用YouTube链接{#publishing-a-status-with-a-youtube-link}发布状态
+### 使用YouTube链接发布状态 {#publishing-a-status-with-a-youtube-link}
 
 此类内容允许您发布指向YouTube视频的链接。 与具有常规链接的状态一样，您可以定义状态、名称、标题、描述和其他链接。 图像由Facebook自动添加。 投放编辑屏幕的字段与Facebook上最终出版物之间的对称性详述如下：
 
@@ -158,7 +160,7 @@ facebook固有以下限制。
 
 ![](assets/social_facebook_delivery_youtube.png)
 
-### 发布相册{#publishing-a-photo-album}
+### 发布相册 {#publishing-a-photo-album}
 
 此类内容允许您发布相册。 您可以为相册添加名称和描述以及每个照片的标题。 投放编辑屏幕的字段与Facebook上最终出版物之间的对称性详述如下：
 
@@ -188,7 +190,7 @@ facebook固有以下限制。
 >
 >预览内容可能与最终的Facebook发布内容略有不同。 我们强烈建议在最终交付之前发送校样，以精确呈现发布。 请参阅[发送校样](#sending-the-proof)。
 
-## 配置跟踪{#configuring-tracking}
+## 配置跟踪 {#configuring-tracking}
 
 可以在投放报告和投放和服务的&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;选项卡中查看跟踪。
 
@@ -200,13 +202,13 @@ facebook固有以下限制。
 >
 >在&#x200B;**[!UICONTROL Publish to a brand page]**&#x200B;投放模板中，默认启用跟踪。
 
-## 发送校样{#sending-the-proof}
+## 发送校样 {#sending-the-proof}
 
 我们强烈建议在最终交付之前发送发布校样，以在专用Facebook测试页面上查看发布的确切呈现。 有关创建专用Facebook测试页的更多信息，请参阅[创建测试Facebook页](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page)。 [选择校样目标](#selecting-the-proof-target)中详细介绍了选择目标校样的步骤。
 
 校样投放与电子邮件投放相同。 请参阅[此小节](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
-## 发送消息{#sending-the-message}
+## 发送消息 {#sending-the-message}
 
 1. 批准内容后，单击&#x200B;**[!UICONTROL Send]**&#x200B;按钮。
 1. 选择&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;并单击&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。

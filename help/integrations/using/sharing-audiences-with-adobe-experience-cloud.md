@@ -6,14 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
 # 与Adobe Experience Cloud共享受众{#sharing-audiences-with-adobe-experience-cloud}
+
+![](../../assets/common.svg)
 
 >[!CAUTION]
 >
@@ -21,7 +23,7 @@ ht-degree: 4%
 
 通过Adobe Campaign，您可以与Adobe Experience Cloud解决方案和核心服务共享受众和区段。 有两个选项可用：
 
-1. 将Adobe Experience Platform区段数据发送到Adobe Campaign。 要实施此集成，您需要将实时客户数据平台与Campaign(RTCDP)连接起来。 [在此部分中了解更多信息](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
+1. 将Adobe Experience Platform区段数据发送到Adobe Campaign。 要实施此集成，您需要将实时客户数据平台与Campaign(RTCDP)连接起来。 [在本节中了解详情](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
 
 1. 将&#x200B;**Adobe Campaign**&#x200B;与&#x200B;**People核心服务**（也称为&#x200B;**Profiles &amp; Audiences核心服务**）或Adobe Audience Manager集成。 然后，您将能够：

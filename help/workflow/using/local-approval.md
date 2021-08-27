@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 本地审批{#local-approval}
+
+![](../../assets/common.svg)
 
 将&#x200B;**[!UICONTROL Local approval]**&#x200B;活动集成到定位工作流后，您可以在发送投放之前设置收件人批准流程。
 
@@ -23,7 +25,7 @@ ht-degree: 1%
 >
 >要使用此活动，您需要购买“分布式营销”模块（即营销活动选项）。 请核实您的许可协议。
 
-有关具有分发模板的&#x200B;**[!UICONTROL Local approval]**&#x200B;活动的示例，请参阅[使用本地批准活动](../../workflow/using/using-the-local-approval-activity.md)。
+有关具有分发模板的&#x200B;**[!UICONTROL Local approval]**&#x200B;活动的示例，请参阅[使用本地批准活动](using-the-local-approval-activity.md)。
 
 首先，输入活动的标签和&#x200B;**[!UICONTROL Action to execute]**&#x200B;字段：
 
@@ -33,11 +35,11 @@ ht-degree: 1%
 
    ![](assets/local_validation_intro_2.png)
 
-* **增量查询**:允许您执行查询并规划其执行。请参阅[增量查询](../../workflow/using/incremental-query.md)一节。
+* **增量查询**:允许您执行查询并规划其执行。请参阅[增量查询](incremental-query.md)一节。
 
    ![](assets/local_validation_intro_3.png)
 
-## 目标批准通知{#target-approval-notification}
+## Target批准通知 {#target-approval-notification}
 
 在这种情况下，**[!UICONTROL Local approval]**&#x200B;活动位于上游定位和投放之间：
 
@@ -49,7 +51,7 @@ ht-degree: 1%
 
 * **[!UICONTROL Distribution context]**:如果您 **[!UICONTROL Specified in the transition]** 使用类型活动来限 **[!UICONTROL Split]** 制目标群体，请选择选项。在这种情况下，分发模板会在拆分活动中输入。 如果不限制目标群体，请在此处选择&#x200B;**[!UICONTROL Explicit]**&#x200B;选项，然后在&#x200B;**[!UICONTROL Data distribution]**&#x200B;字段中输入分发模板。
 
-   有关创建数据分发模板的更多信息，请参阅[限制每个数据分发的子集记录数](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution)。
+   有关创建数据分发模板的更多信息，请参阅[限制每个数据分发的子集记录数](split.md#limiting-the-number-of-subset-records-per-data-distribution)。
 
 * **[!UICONTROL Approval management]**
 
@@ -68,7 +70,7 @@ ht-degree: 1%
    >
    >默认情况下，此选项处于禁用状态。
 
-## 投放反馈报告{#delivery-feedback-report}
+## 投放反馈报告 {#delivery-feedback-report}
 
 在这种情况下，**[!UICONTROL Local approval]**&#x200B;活动会放在投放之后：
 
@@ -81,9 +83,9 @@ ht-degree: 1%
 * 如果在上一活动期间输入了投放，请选择&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;选项。 选择&#x200B;**[!UICONTROL Explicit]**&#x200B;以指定本地批准活动中的投放。
 * 选择投放模板和通知电子邮件的对象。 有一个默认模板：**[!UICONTROL Local approval notification]**。
 
-## 示例：批准工作流投放{#example--approving-a-workflow-delivery}
+## 示例：批准工作流投放 {#example--approving-a-workflow-delivery}
 
-此示例展示了如何为工作流投放设置批准流程。 有关创建投放工作流的更多信息，请参阅[示例：投放工作流](../../workflow/using/delivery.md#example--delivery-workflow)部分。
+此示例展示了如何为工作流投放设置批准流程。 有关创建投放工作流的更多信息，请参阅[示例：投放工作流](delivery.md#example--delivery-workflow)部分。
 
 操作员可以通过以下两种方式之一批准投放：使用电子邮件中链接的网页，或通过控制台进行访问。
 

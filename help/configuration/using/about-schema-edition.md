@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 ---
 
 # 关于模式版本{#about-schema-edition}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign采用数据模式：
 
@@ -23,7 +25,7 @@ Adobe Campaign采用数据模式：
 
 要更好地了解Campaign内置表及其交互，请参阅[此部分](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html)。
 
-## 扩展或创建架构{#extending-or-creating-schemas}
+## 扩展或创建模式 {#extending-or-creating-schemas}
 
 要向Campaign中的一个核心数据模式(例如收件人表(nms:recipient))添加字段、索引或其他元素，您必须扩展该模式。 有关更多信息，请参阅[扩展架构](../../configuration/using/extending-a-schema.md)一节。
 
@@ -111,7 +113,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 有关键的更多信息，请参阅[键的管理](../../configuration/using/database-mapping.md#management-of-keys)一节。
 
-## 属性（字段）{#attributes--fields-}
+## 属性（字段） {#attributes--fields-}
 
 利用属性，可定义构成数据对象的字段。 可以使用架构版工具栏中的&#x200B;**[!UICONTROL Insert]**&#x200B;按钮将空属性模板拖放到光标所在的XML中。 有关更多信息，请参阅[数据架构](../../configuration/using/data-schemas.md)一节。
 
@@ -178,7 +180,7 @@ XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolic
 
 基数有三种类型：1-1、1-N和N-N默认使用的是1-N类型。
 
-### 示例{#examples-1}
+### 示例 {#examples-1}
 
 收件人表（即装即用模式）和自定义事务表之间的1-N链接示例：
 

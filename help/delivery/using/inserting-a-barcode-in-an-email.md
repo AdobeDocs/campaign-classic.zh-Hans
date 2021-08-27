@@ -5,7 +5,7 @@ description: 在电子邮件中插入条形码
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 
 
 # 在电子邮件中插入条形码{#inserting-a-barcode-in-an-email}
+
+![](../../assets/common.svg)
 
 条形码生成模块允许您创建符合许多常见标准（包括2D条形码）的几种条形码。
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 自定义表情符号列表 {#customize-emoticons}
+
+![](../../assets/common.svg)
 
 弹出窗口中显示的表情符号列表由枚举来规定，该枚举允许您在列表中显示值，以限制用户对给定字段所做的选择。
 可以自定义表情符号列表顺序，还可以向列表中添加其他表情符号。

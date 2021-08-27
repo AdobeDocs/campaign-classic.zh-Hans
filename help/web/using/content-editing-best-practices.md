@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 内容编辑最佳实践{#content-editing-best-practices}
+
+![](../../assets/common.svg)
 
 为确保编辑的最佳操作，我们建议遵循以下准则：
 
@@ -40,7 +42,7 @@ ht-degree: 6%
 * 确保页面中只有一个`<body> </body>`。
 * 上传CSS或JS文件后，将不会上传.zip文件中包含的图像。 因此，对CSS中存在的这些图像的引用不会更新。
 
-## 内容编辑器支持的格式{#content-editor-supported-formats}
+## 内容编辑器支持的格式 {#content-editor-supported-formats}
 
 数字内容编辑器支持HTML格式：您可以随时切换到&#x200B;**source**&#x200B;模式。
 
@@ -69,7 +71,7 @@ ht-degree: 6%
 >
 >HTML代码页必须在元标记（HTML 4或HTML 5）或物料清单中定义。 如果没有可用的代码页，请在latin1中打开文件。
 
-## HTML内容状态{#html-content-statuses}
+## HTML内容状态 {#html-content-statuses}
 
 编辑器的上半部分显示与内容状态相关的消息。 消息的颜色代码如下所示：
 
@@ -77,7 +79,7 @@ ht-degree: 6%
 * **蓝色消息**:与正在编辑的内容相关的信息消息。
 * **黄色消息**:警告或错误消息，需要代表用户执行操作。
 
-### 编辑Web应用程序{#list-of-messages-when-editing-a-web-application}时的消息列表
+### 编辑Web应用程序时的消息列表 {#list-of-messages-when-editing-a-web-application}
 
 * HTML内容可正常工作。
 * Web应用程序尚未发布，无法联机访问。
@@ -86,7 +88,7 @@ ht-degree: 6%
 * 没有要配置的输入区域或按钮。
 * 要启用到下一页的过渡，您需要将“下一页”操作链接到当前页面上的按钮或链接。
 
-### 编辑投放时的消息列表{#list-of-messages-when-editing-a-delivery}
+### 编辑投放时的消息列表 {#list-of-messages-when-editing-a-delivery}
 
 * 投放内容可正常使用
 * 没有要配置的字段或个性化块。

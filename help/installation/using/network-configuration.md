@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -15,13 +15,15 @@ ht-degree: 3%
 
 # 网络配置{#network-configuration}
 
-## 进程之间的通信{#communication-between-processes}
+![](../../assets/v7-only.svg)
+
+## 进程之间的通信 {#communication-between-processes}
 
 应用程序的某些进程需要与他人通信或访问局域网和互联网。 这意味着需要为这些进程打开一些TCP端口。
 
 将嵌入式Apache Tomcat端口用作优先级（默认为8080），用于Adobe Campaign平台各种应用程序服务器之间的内部通信。
 
-### 投放服务器{#delivery-server}
+### 投放服务器 {#delivery-server}
 
 对于投放服务器(**nlserver mta**)，必须打开以下端口：
 
@@ -55,7 +57,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-### 入站邮件{#inbound-mail}
+### 入站邮件 {#inbound-mail}
 
 对于入站邮件恢复过程(**nlserver inMail**)，必须打开以下端口：
 
@@ -100,7 +102,7 @@ ht-degree: 3%
 
 当Adobe Campaign平台的多个应用程序服务器需要相互通信时，我们建议使用Apache Tomcat服务器的端口(默认情况下：8080)，而不是Web服务器的HTTP端口，该HTTP端口与重定向模块集成。 这意味着需要在这些服务器之间打开端口。
 
-### 短信投放状态{#sms-delivery-status}
+### 短信投放状态 {#sms-delivery-status}
 
 要跟踪短信投放(**nlserver sms**)，必须打开以下端口：
 
@@ -119,7 +121,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-### 富客户端{#rich-client}
+### 富客户端 {#rich-client}
 
 对于Adobe Campaign富客户端(**nlclient**)，必须打开以下端口：
 
@@ -138,7 +140,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-## 数据库访问{#database-access}
+## 数据库访问 {#database-access}
 
 使用数据库的所有组件都必须能够连接到该数据库。 大多数组件都属于这种情况，但重定向服务器（可单独使用）和瘦Win32客户端(仅使用HTTP（或HTTPS）与应用程序服务器通信)除外。
 
@@ -171,11 +173,11 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-## 外部访问{#external-access}
+## 外部访问 {#external-access}
 
 此外，某些组件必须可从公共Internet访问，以便能够查看直接从Adobe Campaign执行的电子邮件促销活动。 这意味着需要为组件打开某些端口。
 
-### 重定向服务器{#redirection-server}
+### 重定向服务器 {#redirection-server}
 
 <table> 
  <tbody> 
@@ -190,7 +192,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-### 外部Web服务器{#external-web-server}
+### 外部Web服务器 {#external-web-server}
 
 此服务器托管Web窗体、镜像页面等。 需要打开以下端口：
 
@@ -207,7 +209,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-### 内部应用程序服务器(Web){#internal-application-server--web-}
+### 内部应用程序服务器(Web) {#internal-application-server--web-}
 
 <table> 
  <tbody> 
@@ -222,7 +224,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-## 与Adobe Experience Manager的集成{#integration-with-adobe-experience-manager}
+## 与Adobe Experience Manager集成 {#integration-with-adobe-experience-manager}
 
 如果安装是“内部部署”的，则Adobe Campaign与Adobe Experience Manager之间的集成需要打开多个端口。 有关配置此集成的更多信息，请参阅[详细文档](../../integrations/using/about-adobe-experience-manager.md)。
 

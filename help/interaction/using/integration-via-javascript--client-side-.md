@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 通过 JavaScript 集成（客户端）{#integration-via-javascript-client-side}
+
+![](../../assets/v7-only.svg)
 
 要在网页中调用交互引擎，请将对JavaScript代码的调用直接插入到页面中。 此调用会返回目标中的选件内容
 
@@ -33,9 +35,9 @@ Adobe建议使用JavaScript集成方法。
 
 以下用例详细介绍了通过JavaScript集成选件的可能选项。
 
-## HTML模式{#html-mode}
+## HTML模式 {#html-mode}
 
-### 呈现匿名选件{#presenting-an-anonymous-offer}
+### 呈现匿名优惠 {#presenting-an-anonymous-offer}
 
 1. **准备交互引擎**
 
@@ -98,7 +100,7 @@ Adobe建议使用JavaScript集成方法。
    </div>
    ```
 
-### 呈现已识别的选件{#presenting-an-identified-offer}
+### 呈现已识别的优惠 {#presenting-an-identified-offer}
 
 要向已识别的联系人展示选件，该过程与下面详述的过程类似：[呈现匿名选件](#presenting-an-anonymous-offer)。 在网页内容中，您需要添加以下脚本，以在调用引擎期间识别联系人：
 
@@ -124,7 +126,7 @@ Adobe建议使用JavaScript集成方法。
    </script>
    ```
 
-### 使用HTML渲染函数{#using-an-html-rendering-function}
+### 使用HTML渲染函数 {#using-an-html-rendering-function}
 
 要自动生成HTML选件表示形式，您可以使用渲染函数。
 
@@ -136,9 +138,9 @@ Adobe建议使用JavaScript集成方法。
 
    在此示例中，选件以网页横幅的形式显示，由可单击图像和与选件内容中定义的字段相匹配的标题组成。
 
-## XML模式{#xml-mode}
+## XML模式 {#xml-mode}
 
-### 呈现优惠{#presenting-an-offer}
+### 呈现优惠 {#presenting-an-offer}
 
 交互允许您将XML节点返回到HTML页面，该页面会调用优惠引擎。 此XML节点可以由客户端开发的函数进行处理。
 
@@ -307,7 +309,7 @@ Adobe建议使用JavaScript集成方法。
    </propositions>
    ```
 
-### 使用渲染函数{#using-a-rendering-function-}
+### 使用渲染函数 {#using-a-rendering-function-}
 
 可以使用XML渲染函数创建选件演示文稿。 此函数将修改在调用引擎期间返回到HTML页面的XML节点。
 

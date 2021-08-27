@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1149'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 升级到新内部版本（内部部署）{#upgrading}
+
+![](../../assets/v7-only.svg)
 
 在开始升级过程之前，请确定并确认要升级到的Adobe Campaign版本，并查阅[发行说明](../../rn/using/latest-release.md) 。
 
@@ -24,7 +26,6 @@ ht-degree: 2%
 >* 在开始之前，请阅读[此部分](../../installation/using/general-architecture.md)和[内部版本升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)章节。
 
 >
-
 
 
 ## Windows {#in-windows}
@@ -38,7 +39,7 @@ ht-degree: 2%
 
 要了解如何更新客户端控制台，请参阅[此部分](../../installation/using/client-console-availability-for-windows.md)。
 
-### 关闭服务{#shut-down-services}
+### 关闭服务 {#shut-down-services}
 
 若要使用新版本替换所有文件，您需要关闭nlserver服务的所有实例。
 
@@ -63,13 +64,13 @@ ht-degree: 2%
 
    您可以使用Windows任务管理器来确保所有进程都已停止。
 
-### 升级Adobe Campaign服务器应用程序{#upgrade-the-adobe-campaign-server-application}
+### 升级Adobe Campaign服务器应用程序 {#upgrade-the-adobe-campaign-server-application}
 
 要运行升级文件，请应用以下步骤：
 
 1. 运行&#x200B;**setup.exe**。
 
-   要下载此文件，请使用您的用户凭据连接到[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 详细了解[本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中的软件分发。
+   要下载此文件，请使用您的用户凭据连接到[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)。 详细了解[本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans?lang=en)中的软件分发。
 
 1. 选择安装模式：选择&#x200B;**[!UICONTROL Update or repair]**
 1. 单击 **[!UICONTROL Next]**。
@@ -79,7 +80,7 @@ ht-degree: 2%
 
 1. 操作完成后，单击&#x200B;**[!UICONTROL Finish]** 。
 
-### 同步资源{#synchronize-resources}
+### 同步资源 {#synchronize-resources}
 
 使用以下命令行：
 
@@ -97,7 +98,7 @@ ht-degree: 2%
 
 然后，检查同步是否生成了错误或警告。 有关更多信息，请参阅[解决升级冲突](#resolving-upgrade-conflicts)。
 
-### 重新启动服务{#restart-services}
+### 重新启动服务 {#restart-services}
 
 要重新启动的服务包括：
 
@@ -121,13 +122,13 @@ ht-degree: 2%
 >
 >从版本8757开始，不再需要第三方库。
 
-### 获取更新的包{#obtain-updated-packages}
+### 获取更新的包 {#obtain-updated-packages}
 
 首先，恢复两个更新的Adobe Campaign包：使用您的用户凭据连接到[Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 详细了解[本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中的软件分发。
 
 文件为&#x200B;**nlserver6-v7-XXX.rpm**
 
-### 执行更新{#perform-an-update}
+### 执行更新 {#perform-an-update}
 
 * 基于RPM的分发(RedHat、SuSe)
 
@@ -157,7 +158,7 @@ ht-degree: 2%
 >
 >[此部分](../../installation/using/installing-campaign-standard-packages.md)中详细描述了完整的安装过程。 资源会自动同步，但您需要确保未发生错误。 有关更多信息，请参阅[解决升级冲突](#resolving-upgrade-conflicts)。
 
-### 重新启动Web服务器{#reboot-the-web-server}
+### 重新启动Web服务器 {#reboot-the-web-server}
 
 必须关闭Apache才能使新库适用。
 
@@ -173,8 +174,7 @@ ht-degree: 2%
 >* 必须执行此命令，直到您获得以下答复：
 
    >
-   >   
-   要使Apache应用新库，需要执行此操作。
+   >   要使Apache应用新库，需要执行此操作。
 
 
 然后重新启动Apache:
@@ -183,11 +183,11 @@ ht-degree: 2%
 /etc/init.d/apache start
 ```
 
-## 解决升级冲突{#resolving-upgrade-conflicts}
+## 解决升级冲突 {#resolving-upgrade-conflicts}
 
 在资源同步期间，使用&#x200B;**postupgrade**&#x200B;命令可以检测同步是否生成了错误或警告。
 
-### 查看同步结果{#view-the-synchronization-result}
+### 查看同步结果 {#view-the-synchronization-result}
 
 有两种查看同步结果的方法：
 
@@ -206,7 +206,7 @@ ht-degree: 2%
 
 * **postupgrade_`<server version number>_<time of postupgrade>`.log**&#x200B;日志文件包含同步结果。 默认情况下，该插件可在以下目录中使用：**`<installation directory>/var/<instance/postupgrade`**。 错误和警告属性会指示错误和警告。
 
-### 解决冲突{#resolving-conflicts}
+### 解决冲突 {#resolving-conflicts}
 
 要解决冲突，请应用以下流程：
 
@@ -236,13 +236,13 @@ ht-degree: 2%
 1. 转到已解决的冲突。 单击&#x200B;**[!UICONTROL Actions]**&#x200B;图标，然后选择&#x200B;**[!UICONTROL Declare as resolved]** 。
 1. 保存更改：冲突现已解决。
 
-### 最佳做法 {#best-practices}
+### 最佳实践 {#best-practices}
 
 更新失败可能已链接到数据库配置。 确保技术管理员和数据库管理员执行的配置兼容。
 
 例如，Unicode数据库不仅必须授权存储LATIN1数据等。
 
-## 警告客户端控制台可用更新{#warn-the-client-consoles-of-the-available-update}
+## 警告客户端控制台可用更新 {#warn-the-client-consoles-of-the-available-update}
 
 ### Windows {#in-windows-1}
 

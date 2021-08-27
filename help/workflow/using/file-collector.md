@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 文件收集器{#file-collector}
+
+![](../../assets/common.svg)
 
 **文件收集器**&#x200B;监视一个或多个文件在目录中的到达情况，并为收到的每个文件激活其过渡。 对于每个事件， **[!UICONTROL filename]**&#x200B;变量都包含收到的文件的全名。 收集的文件将移至其他目录以进行存档，并确保只计数一次。
 
@@ -23,7 +25,7 @@ ht-degree: 0%
 
 ## 属性 {#properties}
 
-通过&#x200B;**[!UICONTROL File collector]**&#x200B;活动的第一个选项卡，您可以选择源目录，并在必要时筛选收集的文件。 其他选项卡详见[入站电子邮件](../../workflow/using/inbound-emails.md)（**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;选项卡）。
+通过&#x200B;**[!UICONTROL File collector]**&#x200B;活动的第一个选项卡，您可以选择源目录，并在必要时筛选收集的文件。 其他选项卡详见[入站电子邮件](inbound-emails.md)（**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;选项卡）。
 
 ![](assets/file_collect_edit.png)
 
@@ -67,12 +69,12 @@ ht-degree: 0%
 
 1. **历史化**
 
-   请参阅此处的&#x200B;**[!UICONTROL File historization]**&#x200B;步骤：[Web下载](../../workflow/using/web-download.md)。
+   请参阅此处的&#x200B;**[!UICONTROL File historization]**&#x200B;步骤：[Web下载](web-download.md)。
 
 无法确定文件处理顺序。 要按顺序处理一组文件，请使用&#x200B;**[!UICONTROL Stop as soon as a file has been processed]**&#x200B;选项并创建循环。 在这种情况下，将按字母顺序处理文件。 使用&#x200B;**[!UICONTROL Process file nonexistence]**&#x200B;选项可完成小版本。
 
 ![](assets/file_collect_loop.png)
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * 文件名：完整文件名。 这是文件被移动到历史化目录后的文件名。 因此，路径不同，但如果目录中已存在同名的其他文件，则名称也不同。 保留扩展。

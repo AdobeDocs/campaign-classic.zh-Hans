@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 用例：监控工作流{#supervising-workflows}
+
+![](../../assets/common.svg)
 
 此用例详细介绍了如何创建工作流，以便您监视“已暂停”、“已停止”或“有错误”的一组工作流的状态。
 
@@ -31,11 +33,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->除了工作流之外，Campaign **工作流热图**&#x200B;还允许您详细分析当前运行的工作流。 有关更多信息，请参阅[专用部分](../../workflow/using/heatmap.md)。
+>除了工作流之外，Campaign **工作流热图**&#x200B;还允许您详细分析当前运行的工作流。 有关更多信息，请参阅[专用部分](heatmap.md)。
 >
->有关如何&#x200B;**监控工作流执行的更多信息**，请参阅[此部分](../../workflow/using/monitoring-workflow-execution.md)。
+>有关如何&#x200B;**监控工作流执行的更多信息**，请参阅[此部分](monitoring-workflow-execution.md)。
 
-## 步骤1:创建监控工作流{#step-1--creating-the-monitoring-workflow}
+## 步骤1:创建监控工作流 {#step-1--creating-the-monitoring-workflow}
 
 我们要监视的工作流文件夹是存储在&#x200B;**管理>生产>技术工作流**&#x200B;节点中的&#x200B;**&quot;CustomWorkflows&quot;**&#x200B;文件夹。 此文件夹包含一组业务工作流。
 
@@ -115,7 +117,7 @@ vars.strWorkflowPaused = strPaused;
 vars.strWorkflowStop = strStop;
 ```
 
-## 步骤3:创建“测试”活动{#step-3--creating-the--test--activity}
+## 步骤3:创建“测试”活动 {#step-3--creating-the--test--activity}
 
 通过“测试”活动，您可以确定是否需要发送投放，或监控工作流是否需要基于“等待”活动运行另一个周期。
 
@@ -127,7 +129,7 @@ vars.strWorkflowStop = strStop;
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
-## 步骤4:准备投放{#step-4--preparing-the-delivery}
+## 步骤4:准备投放 {#step-4--preparing-the-delivery}
 
 “投放”活动基于存储在&#x200B;**资源>模板>投放模板**&#x200B;节点中的&#x200B;**投放模板**。
 

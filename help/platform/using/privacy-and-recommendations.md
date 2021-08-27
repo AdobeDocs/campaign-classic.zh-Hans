@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 100%
 
 ---
 
 # 隐私和同意{#privacy-and-recommendations}
+
+![](../../assets/common.svg)
 
 ## 一般建议 {#general-recommendations}
 
@@ -170,13 +172,13 @@ Adobe Campaign 提供其他功能来促使您作为数据控制者为特定隐�
 * 您必须通过授权请求（有时出现在页面上方）告知用户，您的网站配备了 Web 跟踪工具并要求用户选中复选框来授权使用 Cookie，或者在用户登陆的第一个页面顶端添加横幅等。
 * 应避免使用弹出窗口，因为浏览器通常会拦截此类窗口。
 
-### 消息跟踪{#message-tracking}
+### 消息跟踪 {#message-tracking}
 
 Adobe Campaign 允许您跟踪已发送的电子邮件和投放对象的行为：打开、点击链接、取消订阅等。有关此内容的更多信息，请参阅[关于消息跟踪](../../delivery/using/about-message-tracking.md)。
 
 为此，请在您的消息中添加[跟踪链接](../../delivery/using/how-to-configure-tracked-links.md)以便在投放仪表板的 [Tracking](../../delivery/using/delivery-dashboard.md#tracking-logs) 选项卡中衡量您的投放产生的影响以及投放对象的行为。跟踪数据会在[跟踪指标](../../reporting/using/delivery-reports.md#tracking-indicators)报告中得到说明。
 
-### Web 跟踪{#web-tracking}
+### Web 跟踪 {#web-tracking}
 
 使用 Adobe Campaign，您还可以监控收件人浏览网站的方式：插入跟踪标签，以收集信息并衡量 Web 应用程序页面的访问量。有关此内容的更多信息，请参阅[跟踪 Web 应用程序](../../web/using/tracking-a-web-application.md)。
 

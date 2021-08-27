@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 报告列表{#list-of-reports}
+
+![](../../assets/common.svg)
 
 ## 投放报告 {#reports-on-deliveries}
 
@@ -69,7 +71,7 @@ Adobe Campaign提供的内置报告可在下表中找到。
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 假设验证报告(deliveryHexishopion)<br /> </td> 
+   <td> 假设验证报告(deliveryHexishout)<br /> </td> 
    <td> 显示有关投放假设的测量摘要。<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
@@ -116,7 +118,7 @@ Adobe Campaign提供的内置报告可在下表中找到。
  </tbody> 
 </table>
 
-## 营销活动报告{#reports-on-campaigns}
+## 营销活动报告 {#reports-on-campaigns}
 
 营销活动报告涉及&#x200B;**nms:operation**&#x200B;表中的数据。
 
@@ -177,7 +179,7 @@ Adobe Campaign提供的内置报告可在下表中找到。
  </tbody> 
 </table>
 
-## 服务报告{#reports-on-services}
+## 服务报告 {#reports-on-services}
 
 有关服务的报告涉及&#x200B;**nms:service**&#x200B;表中的数据。
 
@@ -214,7 +216,7 @@ Adobe Campaign提供的内置报告可在下表中找到。
  </tbody> 
 </table>
 
-## 预算报告{#budget-reports}
+## 预算报表 {#budget-reports}
 
 Adobe Campaign提供的内置报告可在下表中找到。
 
@@ -270,7 +272,7 @@ Adobe Campaign提供的内置报告可在下表中找到。
  </tbody> 
 </table>
 
-## 模拟报告{#reports-on-simulations}
+## 模拟报告 {#reports-on-simulations}
 
 模拟报告涉及&#x200B;**nms:simulation**&#x200B;表中的数据。
 
@@ -307,7 +309,7 @@ Adobe Campaign提供的内置报告可在下表中找到。
  </tbody> 
 </table>
 
-## Web应用程序报告{#reports-on-web-applications}
+## Web应用程序报告 {#reports-on-web-applications}
 
 Web应用程序报告涉及&#x200B;**nms:WebApp**&#x200B;表中的数据。
 
@@ -336,7 +338,7 @@ Adobe Campaign提供的内置报告可在下表中找到。
  </tbody> 
 </table>
 
-## 其他ootb报告{#other-ootb-reports}
+## 其他ootb报告 {#other-ootb-reports}
 
 还提供了以下内置报告。 有关更多信息，请参阅相关功能文档。
 

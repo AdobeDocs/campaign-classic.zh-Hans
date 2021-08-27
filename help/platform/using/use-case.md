@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # 用例{#use-case}
 
-## 根据订阅者的电子邮件格式创建过滤器{#creating-a-filter-on-the-email-format-of-subscribers}
+![](../../assets/common.svg)
+
+## 根据订阅者的电子邮件格式创建过滤器 {#creating-a-filter-on-the-email-format-of-subscribers}
 
 此用例将向您展示如何创建过滤器，以根据收件人电子邮件格式对新闻稿订阅进行排序。
 

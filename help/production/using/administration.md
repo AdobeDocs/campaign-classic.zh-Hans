@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 管理{#administration}
+
+![](../../assets/v7-only.svg)
 
 自动启动Adobe Campaign模块（**web**、**mta**、**wfserver**&#x200B;等） 由&#x200B;**nlserver**&#x200B;服务器提供。
 
@@ -80,17 +82,13 @@ ht-degree: 1%
    >* 使用&#x200B;**-verbose**&#x200B;选项可显示有关进程操作的其他信息。
 
       >
-      >   
-      示例:
+      >   示例:
       >
-      >   
-      **nlserver重新启动web -verbose**
+      >   **nlserver重新启动web -verbose**
       >
-      >   
-      **nlserver start mta@myinstance -verbose**
+      >   **nlserver start mta@myinstance -verbose**
       >
-      >   
-      此选项会添加其他日志。 我们建议您在找到所需信息后，再次启动不使用&#x200B;**-verbose**&#x200B;选项的进程，以避免日志过载。
+      >   此选项会添加其他日志。 我们建议您在找到所需信息后，再次启动不使用&#x200B;**-verbose**&#x200B;选项的进程，以避免日志过载。
 
 
 * 启动所有Adobe Campaign进程（等同于启动&#x200B;**nlserver6**&#x200B;服务）：

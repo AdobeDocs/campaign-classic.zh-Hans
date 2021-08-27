@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -15,13 +15,15 @@ ht-degree: 0%
 
 # 其他数据{#additional-data}
 
+![](../../assets/v7-only.svg)
+
 在调用交互引擎期间，您可以传输上下文附加信息。 此数据可以来自存储在工作流（出站渠道）工作表中的目标数据，或来自网站在调用（入站渠道）期间发送的调用数据。 您可以在资格规则中和选件个性化中使用此附加数据，还可以将其存储在建议表格中。
 
 对于集客渠道，例如恢复咨询选件的人员的浏览器语言或呼叫中心代理的名称等信息可能非常有用。 然后，您可以在资格规则中使用此调用数据，以便仅向那些使用法语或英语查看网页的用户展示选件。
 
 在定位工作流（出站渠道）中，您可以在调用引擎期间使用定位数据。 例如，您可以通过FDA使用收件人链接的交易或外部数据库中的数据扩充目标。
 
-## 其他数据配置{#additional-data-configuration}
+## 其他数据配置 {#additional-data-configuration}
 
 您必须扩展链接到环境的&#x200B;**nms:interaction**&#x200B;模式，并声明将在调用交互引擎期间使用的附加字段列表。 创建资格规则或个性化选件时，这些字段将可从&#x200B;**Interaction**&#x200B;节点访问（请参阅[Using adtical data](#using-additional-data)）。
 
@@ -60,9 +62,9 @@ ht-degree: 0%
 </element>
 ```
 
-## 其他数据实施{#additional-data-implementation}
+## 其他数据实施 {#additional-data-implementation}
 
-### 输入渠道（网页）{#input-channel--web-page-}
+### 输入渠道（网页） {#input-channel--web-page-}
 
 要在调用引擎时传输其他数据，必须将&#x200B;**interactionGlobalCtx**&#x200B;变量添加到网页的JavaScript代码中。 将包含调用数据的&#x200B;**Interaction**&#x200B;节点插入此变量。 您必须遵循&#x200B;**nms:interaction**&#x200B;模式中的相同xml结构。 请参阅：[其他数据配置](#additional-data-configuration)。
 
@@ -70,13 +72,13 @@ ht-degree: 0%
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 ```
 
-### 输出通道{#output-channel}
+### 输出通道 {#output-channel}
 
 您必须创建一个定向工作流，通过遵循与&#x200B;**nms:interaction**&#x200B;架构中相同的xml结构和相同的内部名称来加载工作表中的附加数据。 请参阅：[其他数据配置](#additional-data-configuration)。
 
-## 使用附加数据{#using-additional-data}
+## 使用其他数据 {#using-additional-data}
 
-### 资格规则{#eligibility-rules}
+### 资格规则 {#eligibility-rules}
 
 您可以在资格规则中对选件、类别和权重使用附加数据。
 

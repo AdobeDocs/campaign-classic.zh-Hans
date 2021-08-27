@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3229'
 ht-degree: 37%
@@ -15,7 +15,9 @@ ht-degree: 37%
 
 # 定义过滤器条件{#defining-filter-conditions}
 
-## 选择运算符{#choosing-the-operator}
+![](../../assets/common.svg)
+
+## 选择运算符 {#choosing-the-operator}
 
 在筛选条件中，您需要使用运算符将两个值链接在一起。
 
@@ -115,7 +117,7 @@ ht-degree: 37%
  </tbody> 
 </table>
 
-## 使用和或，但{#using-and--or--except}除外
+## 使用和或，但 {#using-and--or--except}
 
 对于使用多个筛选条件的查询，您需要定义这些条件之间的链接。 有三个可能的链接：
 
@@ -144,7 +146,7 @@ ht-degree: 37%
 
 ![](assets/query_editor_nveau_31.png)
 
-## 确定条件的优先级{#prioritizing-conditions}
+## 确定条件优先级 {#prioritizing-conditions}
 
 此部分介绍如何利用工具栏中的蓝色箭头来排列条件的优先级。
 
@@ -163,7 +165,7 @@ ht-degree: 37%
 
 **[!UICONTROL Gender (@gender) equal to Male]**&#x200B;条件已在其圆括号中。 它已变为与“伦敦金融城等于伦敦”条件相同的级别。 这些条件链接在一起(**[!UICONTROL And]**)。
 
-## 选择要提取{#selecting-data-to-extract}的数据
+## 选择要提取的数据 {#selecting-data-to-extract}
 
 可用字段因表而异。 所有字段都存储在称为&#x200B;**[!UICONTROL Main element]**&#x200B;的主节点中。 在以下示例中，可用字段位于收件人表中。 字段始终按字母顺序显示。
 
@@ -263,7 +265,7 @@ ht-degree: 37%
 >* **[!UICONTROL Distribution of values]**&#x200B;用于查看所选字段值的分布（例如，链接到收件人镇、收件人语言等的分布）。
 
 
-## 创建计算字段{#creating-calculated-fields}
+## 创建计算字段 {#creating-calculated-fields}
 
 如有必要，请在数据格式设置期间添加列。 计算字段会向数据预览部分添加一列。 单击 **[!UICONTROL Add a calculated field]**。
 
@@ -304,7 +306,7 @@ ht-degree: 37%
 
 ![](assets/query_editor_nveau_58.png)
 
-## 生成表达式{#building-expressions}
+## 生成表达式 {#building-expressions}
 
 利用表达式编辑工具，可使用表达式计算聚合、生成函数或编辑公式。
 
@@ -316,7 +318,7 @@ ht-degree: 37%
 
    可用的公式类型有以下几种：**[!UICONTROL Field only]**、**[!UICONTROL Aggregate]**、**[!UICONTROL Expression]**。
 
-   选择&#x200B;**[!UICONTROL Process on an aggregate function]**&#x200B;和&#x200B;**[!UICONTROL Count]**。单击&#x200B;**[!UICONTROL Next]**。
+   选择&#x200B;**[!UICONTROL Process on an aggregate function]**&#x200B;和&#x200B;**[!UICONTROL Count]**。 单击 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_nveau_54.png)
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 4%
@@ -15,12 +15,14 @@ ht-degree: 4%
 
 # 创建 Web 跟踪标记{#creating-web-tracking-tags}
 
+![](../../assets/v7-only.svg)
+
 您要跟踪的网站的每个页面都必须在Adobe Campaign平台中引用。 可通过两种方式执行此引用：
 
 1. 要跟踪的URL的手动定义，
 1. 即时创建要跟踪的URL。
 
-## 定义要在应用程序{#defining-the-urls-to-be-tracked-in-the-application}中跟踪的URL
+## 定义要在应用程序中跟踪的URL {#defining-the-urls-to-be-tracked-in-the-application}
 
 此方法允许您手动定义要跟踪的页面，然后生成关联的Web跟踪标记示例。 此操作在客户端控制台的&#x200B;**[!UICONTROL Campaign execution>Resources>Web tracking tags]**&#x200B;节点中定义。
 
@@ -35,7 +37,7 @@ ht-degree: 4%
 
 然后，复制生成的代码并将其粘贴到要跟踪的页面中。
 
-## 要跟踪的URL的动态创建{#on-the-fly-creation-of-urls-to-be-tracked}
+## 要跟踪的URL的即时创建 {#on-the-fly-creation-of-urls-to-be-tracked}
 
 您可以通过向&#x200B;**tagid**&#x200B;参数的值添加信息来快速创建Web跟踪URL:
 

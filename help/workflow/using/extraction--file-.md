@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 数据提取（文件）{#extraction-file}
+
+![](../../assets/common.svg)
 
 您可以使用&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动从外部文件的工作流表中提取数据。
 
@@ -48,11 +50,11 @@ ht-degree: 1%
 
 您可以定义在数据提取期间要执行的后处理，从而允许您压缩或加密文件。 要实现此目的，必须在活动的&#x200B;**[!UICONTROL Script]**&#x200B;选项卡中添加所需的命令。
 
-有关更多信息，请参阅此章节：[压缩或加密文件](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
+有关更多信息，请参阅此章节：[压缩或加密文件](how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
 
 ![](assets/postprocessing_dataextraction.png)
 
-## 聚合函数列表{#list-of-aggregate-functions}
+## 聚合函数列表 {#list-of-aggregate-functions}
 
 以下是可用聚合函数的列表：
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: f9dd9ad6-48da-4a80-9405-109a433a1ed5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 呈现规则{#presentation-rules}
 
-## 创建表示规则{#creating-a-presentation-rule}
+![](../../assets/v7-only.svg)
+
+## 创建演示规则 {#creating-a-presentation-rule}
 
 在我们的数据库中，有几份前往欧洲、非洲、美国和加拿大的旅行优惠。 我们希望发送前往加拿大的优惠，但如果接受者拒绝此类优惠，我们不希望再将其发送给他们
 
@@ -76,7 +78,7 @@ ht-degree: 1%
 
    ![](assets/offer_typology_example_014.png)
 
-## 应用表示规则{#applying-the-presentation-rule}
+## 应用演示规则 {#applying-the-presentation-rule}
 
 以下是之前创建的分类规则的应用程序示例。
 

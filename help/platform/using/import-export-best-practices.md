@@ -6,18 +6,20 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
 
 # 导入和导出最佳实践 {#import-export-best-practices}
 
+![](../../assets/common.svg)
+
 谨慎并遵循下面详述的几个简单规则，将有助于确保数据库内的数据一致性，并避免在数据库更新或数据导出期间出现常见错误。
 
-## 使用工作流模板{#using-import-templates}
+## 使用工作流模板 {#using-import-templates}
 
 大多数旨在导入数据的工作流应包含以下活动：**[!UICONTROL Load file]**、**[!UICONTROL Reconciliation]**、**[!UICONTROL Segmentation]**、**[!UICONTROL Deduplication]**、**[!UICONTROL Update data]**。
 
@@ -29,7 +31,7 @@ ht-degree: 2%
 
 [示例中提供了为导入数据而设计的通用工作流模板的示例：用于导入数据](../../platform/using/creating-import-export-templates.md)部分的工作流模板。
 
-## 使用平面文件格式{#using-flat-file-formats}
+## 使用平面文件格式 {#using-flat-file-formats}
 
 导入的最有效格式是平面文件。 平面文件可以在数据库级别以批量模式导入。
 
@@ -50,7 +52,7 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-## 使用压缩{#using-compression}
+## 使用压缩 {#using-compression}
 
 尽可能使用压缩文件进行导入和导出。 默认支持GZIP。 您可以分别在&#x200B;**[!UICONTROL Load file]**&#x200B;和&#x200B;**[!UICONTROL Extract file]**&#x200B;工作流活动中，在导入文件时添加预处理，或在提取数据时添加后处理。
 
@@ -59,13 +61,13 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 * [数据加载（文件）活动](../../workflow/using/data-loading--file-.md)
 * [数据提取（文件）活动](../../workflow/using/extraction--file-.md)
 
-## 在增量模式下导入{#importing-in-delta-mode}
+## 在增量模式下导入 {#importing-in-delta-mode}
 
 必须在增量模式下进行常规导入。 这意味着每次只会向Adobe Campaign发送已修改或新数据，而不是整个表。
 
 完全导入仅应用于初始加载。
 
-## 维护一致性{#maintaining-consistency}
+## 保持一致性 {#maintaining-consistency}
 
 要保持Adobe Campaign数据库中的数据一致性，请遵循以下原则：
 

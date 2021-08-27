@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2353'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 执行内部版本升级{#performing-a-build-upgrade}
+
+![](../../assets/v7-only.svg)
 
 本节将为您提供有关升级过程以及识别和解决冲突的步骤的深入演练。
 
@@ -82,7 +84,7 @@ ht-degree: 2%
 
 1. 获取[服务器配置文件](../../installation/using/the-server-configuration-file.md)的最新版本。
 
-1. [下载最新内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。[了解详情](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
+1. [下载最新内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)。[了解详情](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)。
 
 在开始内部版本升级之前，您还需要了解所有[有用的命令行](../../installation/using/command-lines.md):
 
@@ -255,7 +257,6 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 >
 >中间源服务器必须始终运行与营销服务器相同（或更新）的版本。
 
-
 ## 在发生冲突时
 
 ### 识别冲突
@@ -343,7 +344,6 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 >[!IMPORTANT]
 >强烈建议解决冲突。
 
-
 ### 执行合并{#perform-a-merge}
 
 合并的类型不同：
@@ -406,7 +406,6 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 >[!IMPORTANT]
 >执行复杂合并需要具备开发技能。
-
 
 **相关主题**
 

@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
-source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 5%
@@ -22,11 +22,13 @@ ht-degree: 5%
 
 # 使用重复数据删除活动的合并功能 {#deduplication-merge}
 
+![](../../assets/common.svg)
+
 ## 关于此用例 {#about-this-use-case}
 
 此用例介绍如何在&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动中使用&#x200B;**[!UICONTROL Merge]**&#x200B;功能。
 
-有关此字符的更多信息，请参阅[此部分](../../workflow/using/deduplication.md#merging-fields-into-single-record)。
+有关此字符的更多信息，请参阅[此部分](deduplication.md#merging-fields-into-single-record)。
 
 **[!UICONTROL Deduplication]**&#x200B;活动用于从数据集中删除重复行。 在此用例中，下面显示的数据会根据“电子邮件”字段进行复制。
 

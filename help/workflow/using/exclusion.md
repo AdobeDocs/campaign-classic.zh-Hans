@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: f4fe97d9-6571-4aa5-8022-b0af9d5a6a13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 排除{#exclusion}
+
+![](../../assets/common.svg)
 
 **排除**&#x200B;类型的活动基于从中提取一个或多个其他目标的主目标创建目标。
 
@@ -23,13 +25,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关配置和使用排除活动的更多信息，请参阅[排除群体（排除）](../../workflow/using/targeting-data.md#excluding-a-population--exclusion-)。
+>有关配置和使用排除活动的更多信息，请参阅[排除群体（排除）](targeting-data.md#excluding-a-population--exclusion-)。
 
 如果要利用剩余群体，请勾选&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补码将包含主传入群体减去传出群体。 随后，将向活动添加额外的输出过渡，如下所示：
 
 ![](assets/s_user_segmentation_exclu_compl.png)
 
-## 排除示例{#exclusion-examples}
+## 排除示例 {#exclusion-examples}
 
 以下示例试图汇编一份18至30岁的收件人名单，但不包括巴黎居民。
 
@@ -41,14 +43,14 @@ ht-degree: 0%
 
    ![](assets/exclusion_example.png)
 
-## 输入参数{#input-parameters}
+## 输入参数 {#input-parameters}
 
 * tableName
 * 模式
 
 每个集客事件必须指定由这些参数定义的目标。
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * tableName
 * 模式

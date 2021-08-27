@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 1%
 
 ---
 
-# 配置对Azure synapse{#configure-access-to-azure-synapse}的访问
+# 配置对Azure synapse的访问 {#configure-access-to-azure-synapse}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign [联合数据访问](../../installation/using/about-fda.md)(FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对MicrosoftAzure synapse分析的访问权限。
 
@@ -190,7 +192,7 @@ ht-degree: 1%
    >要允许从Azure synapse分析端进行通信，您可能需要将公共IP添加到允许列表中。 为此，请参阅[Azure文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
 
-## azure synapse外部帐户{#azure-external}
+## azure synapse外部帐户 {#azure-external}
 
 [!DNL Azure Synapse]外部帐户允许您将Campaign实例连接到Azure synapse外部数据库。
 

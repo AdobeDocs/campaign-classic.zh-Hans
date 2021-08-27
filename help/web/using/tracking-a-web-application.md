@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 跟踪 Web 应用程序访问{#tracking-a-web-application}
+
+![](../../assets/common.svg)
 
 Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序页面上的访问量。 此功能可用于所有Web应用程序类型（表单、网页等）。
 

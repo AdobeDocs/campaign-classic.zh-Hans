@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -14,6 +14,8 @@ ht-degree: 14%
 ---
 
 # 了解投放失败{#understanding-delivery-failures}
+
+![](../../assets/common.svg)
 
 ## 关于投放失败 {#about-delivery-failures}
 
@@ -228,12 +230,10 @@ ht-degree: 14%
 >对于托管安装或混合安装，如果已升级到[Enhanced MTA](sending-with-enhanced-mta.md):
 >
 >* **[!UICONTROL Delivery log qualification]**&#x200B;表中的退回鉴别不再用于&#x200B;**synchronous**&#x200B;投放失败错误消息。 Enhanced MTA可确定退件类型和资格条件，并将该信息发回至Campaign。
-   >
-   >
-* ****&#x200B;异步退回仍然由 inMail 流程通过 **[!UICONTROL Inbound email]** 规则进行鉴别。有关更多信息，请参阅[电子邮件管理规则](#email-management-rules)。
-   >
-   >
-* 对于使用Enhanced MTA **且不使用Webhooks/EFS**&#x200B;的实例，**[!UICONTROL Inbound email]**&#x200B;规则还将用于处理来自Enhanced MTA的同步退回电子邮件，使用与异步退回电子邮件相同的电子邮件地址。
+>
+>* ****&#x200B;异步退回仍然由 inMail 流程通过 **[!UICONTROL Inbound email]** 规则进行鉴别。有关更多信息，请参阅[电子邮件管理规则](#email-management-rules)。
+>
+>* 对于使用Enhanced MTA **且不使用Webhooks/EFS**&#x200B;的实例，**[!UICONTROL Inbound email]**&#x200B;规则还将用于处理来自Enhanced MTA的同步退回电子邮件，使用与异步退回电子邮件相同的电子邮件地址。
 
 
 对于使用旧版Campaign MTA的本地安装和托管/混合安装，当电子邮件投放失败时，Adobe Campaign投放服务器会从消息服务器或远程DNS服务器收到错误消息。 错误列表由远程服务器返回的消息中包含的字符串组成。 故障类型和原因会分配给每个错误消息。

@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 用例：创建概述页面{#use-cases-creating-overviews}
+
+![](../../assets/common.svg)
 
 在以下示例中，我们将创建概述类型的Web应用程序，以显示数据库中的所有Web应用程序。 配置以下元素：
 

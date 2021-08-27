@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 4%
@@ -15,20 +15,21 @@ ht-degree: 4%
 
 # 调查入门{#about-surveys}
 
+![](../../assets/v7-only.svg)
+
 Adobe Campaign包含一个用于定义和发布Web应用程序的图形模块。 它用于创建页面，如外联网上的编辑表单，或通知表单，包括来自数据库的数据，包括表、图表、输入表单等。 使用此功能可设计和发布网页，用户可在其中查找或输入信息。
 
 可选的&#x200B;**Survey**&#x200B;附加组件允许您创建新类型的Web应用程序以创建和管理在线调查表，例如用于添加或修改用户档案信息、订阅或退订信息服务或竞争条目表单的表单。 收集了答案后，它们会存储在数据库或本地变量中。 该数据模型可通过对问卷的回答进行动态扩展。 您可以实时查看结果，过滤响应，并使用专用图表分析结果。
 
 本章详细介绍如何创建和管理&#x200B;**调查**、字段和页面管理、存储模式和记录。
 
-[!DNL :bulb:] 在此页面中了解如何创建您的第 [一个调查](getting-started-with-surveys.md)。
+了解如何在[本页](getting-started-with-surveys.md)中创建您的第一个调查。
 
 >[!NOTE]
 >
 >* [本文档](../../web/using/about-web-forms.md)中提供了创建标准Web窗体的详细步骤。
-   >
-   >
-* [本文档](../../web/using/about-web-applications.md)中详细介绍了Web应用程序管理。 有关更多信息，请参阅本章。
+>
+>* [本文档](../../web/using/about-web-applications.md)中详细介绍了Web应用程序管理。 有关更多信息，请参阅本章。
 
 
 ## 功能范围 {#campaign-surveys-scope}

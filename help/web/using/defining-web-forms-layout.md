@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 定义 Web 窗体布局{#defining-web-forms-layout}
 
-## 创建容器{#creating-containers}
+![](../../assets/common.svg)
+
+## 创建容器 {#creating-containers}
 
 容器允许您组合页面的字段并配置其布局；来组织页面中的元素。
 
@@ -35,7 +37,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_containers_std_ex.png)
 
-## 在页面{#positioning-the-fields-on-the-page}上放置字段
+## 在页面上定位字段 {#positioning-the-fields-on-the-page}
 
 Web窗体的布局是在每个容器中按页面定义的，并且可以根据需要过载。
 
@@ -71,7 +73,7 @@ Web窗体的布局是在每个容器中按页面定义的，并且可以根据�
 
 ![](assets/s_ncs_admin_survey_container_ex2.png)
 
-## 定义标签{#defining-the-position-of-labels}的位置
+## 定义标签的位置 {#defining-the-position-of-labels}
 
 您可以在表单中定义字段和标签的对齐方式。
 

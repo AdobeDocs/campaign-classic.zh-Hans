@@ -6,14 +6,16 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2786'
+source-wordcount: '2784'
 ht-degree: 0%
 
 ---
 
 # 常规配置{#general-configurations}
+
+![](../../assets/v7-only.svg)
 
 如果您从v5.11或v6.02迁移，本节将详细介绍在Adobe Campaign v7中执行的配置。
 
@@ -22,9 +24,9 @@ ht-degree: 0%
 * 如果从v5.11进行迁移，则还必须完成[v5.11](../../migration/using/specific-configurations-in-v5-11.md)中的特定配置部分中详述的配置。
 * 如果从v6.02进行迁移，则还必须完成[v6.02](../../migration/using/specific-configurations-in-v6-02.md)中的特定配置部分中详述的配置。
 
-## 时区{#time-zones}
+## 时区 {#time-zones}
 
-### 多时区模式{#multi-time-zone-mode}
+### 多时区模式 {#multi-time-zone-mode}
 
 在v6.02中，“多时区”模式仅适用于PostgreSQL数据库引擎。 现在，无论使用哪种类型的数据库引擎，都会提供该引擎。 我们强烈建议您将您的基础转换为“多时区”基础。
 
@@ -78,7 +80,7 @@ ht-degree: 0%
 
 ## 安全性 {#security}
 
-### 安全区{#security-zones}
+### 安全区 {#security-zones}
 
 >[!IMPORTANT]
 >
@@ -92,7 +94,7 @@ Adobe Campaign v7包含&#x200B;**安全区**&#x200B;的概念。 每个用户必
 
 在[此部分](../../installation/using/security-zones.md)中找到安全区域配置。
 
-### 用户密码{#user-passwords}
+### 用户密码 {#user-passwords}
 
 在v7中，**internal**&#x200B;和&#x200B;**admin**&#x200B;运算符连接必须使用密码进行保护。 我们强烈建议在迁移&#x200B;**之前，为这些帐户和所有操作员帐户分配密码。**&#x200B;如果您没有为&#x200B;**internal**&#x200B;指定密码，则将无法连接。 要为&#x200B;**internal**&#x200B;分配密码，请输入以下命令：
 
@@ -104,7 +106,7 @@ nlserver config -internalpassword
 >
 >对于所有跟踪服务器，**internal**&#x200B;密码必须相同。 有关更多信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)和[此部分](../../platform/using/access-management.md)。
 
-### v7 {#new-features-in-v7}中的新增功能
+### v7的新增功能 {#new-features-in-v7}
 
 * 无权限的用户无法再连接到Adobe Campaign。 必须手动添加其权限，例如，通过创建名为&#x200B;**connect**&#x200B;的权限。
 
@@ -147,7 +149,7 @@ nlserver config -internalpassword
 * xtk:strings
 * xtk:xslt
 
-### Sessiontoken参数{#sessiontoken-parameter}
+### Sessiontoken参数 {#sessiontoken-parameter}
 
 在v5中，**sessiontoken**&#x200B;参数在客户端两端工作（概述类型屏幕、链接编辑器等的列表） 和服务器端（web应用程序、报表、jsp、jssp等）。 在v7中，它仅在服务器端工作。 如果要恢复v5上的完整功能，则必须使用此参数修改链接，并通过连接页面传递：
 
@@ -167,7 +169,7 @@ nlserver config -internalpassword
 >
 >如果您使用与受信任的IP掩码链接的运算符，请检查它是否具有最小权限，并且它是否处于&#x200B;**sessionTokenOnly**&#x200B;模式的安全区域中。
 
-### SQL函数{#sql-functions}
+### SQL函数 {#sql-functions}
 
 未知的SQL函数调用不再自然地发送到服务器。 目前，必须将所有SQL函数添加到&#x200B;**xtk:funcList**&#x200B;架构中（有关更多信息，请参见[此部分](../../configuration/using/adding-additional-sql-functions.md)）。 迁移时，在升级后期间会添加一个选项，该选项允许您与未声明的旧SQL函数保持兼容。 如果要继续使用这些函数，请检查&#x200B;**XtkPassUnknownSQLFunctionsToRDBMS**&#x200B;选项是否确实在&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;节点级别定义。
 
@@ -419,7 +421,7 @@ allowSQLInjection="false"
 
 资源同步后，使用&#x200B;**postupgrade**&#x200B;命令可以检测同步是否生成错误或警告。
 
-### 查看同步结果{#view-the-synchronization-result}
+### 查看同步结果 {#view-the-synchronization-result}
 
 可以通过两种方式查看同步结果：
 
@@ -438,7 +440,7 @@ allowSQLInjection="false"
 
 * postupgrade`>`.log **文件的** postupgrade_`<server version number>`_time包含同步结果。 默认情况下，该插件可在以下目录中使用：**安装目录/var/`<instance>`postupgrade**。 **error**&#x200B;和&#x200B;**warning**&#x200B;属性会指示错误和警告。
 
-### 解决冲突{#resolve-a-conflict}
+### 解决冲突 {#resolve-a-conflict}
 
 解决冲突必须仅由高级运算符和那些已获得“管理员”权限的运算符执行。
 
@@ -495,7 +497,7 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 * nms:mobileOfferView
 * nms:paperOfferView
 
-### 选件内容{#offer-content}
+### 选件内容 {#offer-content}
 
 在v7中，选件内容已移动。 在v6.02中，内容位于每个表示模式(**nms:emailOfferView**)中。 在v7中，内容现在位于选件架构中。 升级后，该内容将不会显示在界面中。 升级后，您必须重新创建选件内容，或开发一个脚本，该脚本会自动将内容从表示架构移动到选件架构。
 
@@ -575,7 +577,7 @@ xtk.session.Write(<srcSchema xtkschema="xtk:srcSchema" name="emailOfferView" nam
 logInfo("Done");
 ```
 
-### 测试和配置{#tests-and-configuration}
+### 测试和配置 {#tests-and-configuration}
 
 在移动了选件内容后，如果您只有一个环境，请按照以下步骤操作。 在本例中，让我们以“ENV”为例。
 
@@ -608,11 +610,11 @@ logInfo("Done");
 
 ## 报告 {#reports}
 
-### 标准报表{#standard-reports}
+### 标准报表 {#standard-reports}
 
 当前所有标准报表都使用渲染引擎v6.x。如果您已将JavaScript添加到这些报表中，则某些元素可能无法再正常使用。 事实上，旧版JavaScript与v6.x渲染引擎不兼容。 因此，您必须检查JavaScript代码，稍后再对其进行调整。 您应该测试每个报表，特别是导出函数。
 
-### 个性化报表{#personalized-reports}
+### 个性化报表 {#personalized-reports}
 
 <!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
@@ -627,7 +629,7 @@ logInfo("Done");
 * 已识别的Web应用程序（一起查看、批准表、外联网内部开发），
 * 匿名Web应用程序（web或调查表表单）。
 
-### 已识别的Web应用程序{#identified-web-applications}
+### 已识别的Web应用程序 {#identified-web-applications}
 
 与报表（[了解更多](#reports)）一样，如果您已添加JavaScript，则必须检查并调整（如果需要）。 如果您希望从v7蓝色横幅（包含蓝色选项卡）中受益，则必须重新发布Web应用程序。 如果您的JavaScript代码正在工作，则可以选择v6.x渲染引擎。 如果不是这种情况，您可以在调整代码时使用v6.0渲染引擎，然后使用v6.x渲染引擎。
 
@@ -660,14 +662,14 @@ allowUserPassword="false"
 sessionTokenOnly="false"
 ```
 
-### 匿名Web应用程序{#anonymous-web-applications}
+### 匿名Web应用程序 {#anonymous-web-applications}
 
 如果遇到任何问题，请重新发布Web应用程序。 如果问题仍然存在，您可以选择v6.0渲染引擎。 如果您尚未添加JavaScript，则可以选择v6.x渲染引擎并从其新功能中受益。
 
 >[!NOTE]
 选择渲染引擎的步骤与选择报告的步骤相同。 请参阅[个性化报表](#personalized-reports)。
 
-## Red-Hat {#red-hat}
+## 红帽 {#red-hat}
 
 如果在v6.02或v5.11中删除了现成的架构，则在升级后可能无法再编辑您的架构。 如果发生这种情况，请执行以下命令：
 

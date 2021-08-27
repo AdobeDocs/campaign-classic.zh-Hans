@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: a7cf59cc-9260-4109-af4c-b2e2a9c999da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 8%
 
 ---
 
-# 开始在Windows上安装Campaign {#prerequisites-of-campaign-installation-in-windows}
+# 在Windows上安装Campaign入门 {#prerequisites-of-campaign-installation-in-windows}
+
+![](../../assets/v7-only.svg)
 
 [兼容性矩阵](../../rn/using/compatibility-matrix.md)中介绍了安装Adobe Campaign所需的技术配置和软件。
 

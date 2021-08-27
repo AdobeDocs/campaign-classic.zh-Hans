@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 安装服务器{#installing-the-server}
 
-## 执行安装程序{#executing-the-installation-program}
+![](../../assets/v7-only.svg)
+
+## 执行安装程序 {#executing-the-installation-program}
 
 对于Windows 32位平台，请安装Adobe Campaign 32位。 对于Windows 64位平台，请安装Adobe Campaign 64位。
 
@@ -62,7 +64,7 @@ Adobe Campaign服务器的安装步骤如下：
 
    安装完成后，启动Adobe Campaign以创建配置文件。 请参阅[服务器的首次启动](#first-start-up-of-the-server)。
 
-## 安装测试摘要{#summary-installation-testing}
+## 安装测试摘要 {#summary-installation-testing}
 
 您可以使用以下命令测试初始安装：
 
@@ -76,7 +78,7 @@ nlserver pdump
 No task
 ```
 
-## 服务器的首次启动{#first-start-up-of-the-server}
+## 服务器的首次启动 {#first-start-up-of-the-server}
 
 安装测试完成后，通过&#x200B;**[!UICONTROL Start > Programs > Adobe Campaign]**&#x200B;菜单打开命令提示符，然后输入以下命令：
 
@@ -133,13 +135,13 @@ nlserver stop web
 12:18:31 >   Web server stopped (pid=29188, tid=-1224824320)...
 ```
 
-## 内部标识符{#password-for-the-internal-identifier}的密码
+## 内部标识符的密码 {#password-for-the-internal-identifier}
 
 Adobe Campaign服务器定义名为&#x200B;**internal**&#x200B;的技术登录，该登录对所有实例具有所有权限。 安装后，登录名没有密码。 必须定义一个。
 
 在[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)中了解详情。
 
-## 启动Adobe Campaign服务{#starting-adobe-campaign-services}
+## 启动Adobe Campaign服务 {#starting-adobe-campaign-services}
 
 要启动Adobe Campaign服务，您可以使用服务管理器，或在命令行中输入以下内容（具有相应的权限）：
 

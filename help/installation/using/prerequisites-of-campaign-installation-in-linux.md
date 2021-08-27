@@ -6,16 +6,18 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 1%
 
 ---
 
-# 在Linux{#prerequisites-of-campaign-installation-in-linux}上安装Campaign的先决条件
+# 在Linux上安装Campaign的先决条件{#prerequisites-of-campaign-installation-in-linux}
 
-## 软件先决条件{#software-prerequisites}
+![](../../assets/v7-only.svg)
+
+## 软件先决条件 {#software-prerequisites}
 
 本节详细介绍安装Adobe Campaign之前所需的初步配置步骤。
 
@@ -96,7 +98,7 @@ echo 0 >/selinux/enforce
 SELINUX=disabled
 ```
 
-### MTA统计数据{#fonts-for-mta-statistics}的字体
+### MTA统计信息的字体 {#fonts-for-mta-statistics}
 
 为了正确显示MTA统计信息(nms/fra/jsp/stat.jsp)报表，请添加字体。
 
@@ -112,7 +114,7 @@ aptitude install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
 yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
 ```
 
-### 日语实例的字体{#fonts-for-japanese-instances}
+### 日语实例的字体 {#fonts-for-japanese-instances}
 
 要将报表导出为PDF格式，日语实例需要特定字符的字体。
 
@@ -128,7 +130,7 @@ aptitude install fonts-ipafont
 yum install ipa-gothic-fonts ipa-mincho-fonts
 ```
 
-### 安装用于Debian的LibreOffice {#installing-libreoffice-for-debian}
+### 安装LibreOffice for Debian {#installing-libreoffice-for-debian}
 
 对于Debian，需要以下配置：
 
@@ -160,7 +162,7 @@ CentOS需要以下配置：
    yum install ipa-gothic-fonts ipa-mincho-fonts
    ```
 
-## 数据库访问层{#database-access-layers}
+## 数据库访问层 {#database-access-layers}
 
 您所使用的数据库引擎的访问层必须安装在您的服务器上，并且可以通过Adobe Campaign帐户访问。 版本和安装模式可能因所使用的数据库引擎而异。
 

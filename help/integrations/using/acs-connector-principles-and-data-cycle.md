@@ -6,14 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 0%
 
 ---
 
-# ACS连接器原则和数据周期{#acs-connector-principles-and-data-cycle}
+# ACS Connector原则和数据周期{#acs-connector-principles-and-data-cycle}
+
+![](../../assets/v7-only.svg)
 
 ## 简介 {#introduction}
 
@@ -77,7 +79,7 @@ ACS Connector会定期将以下项目从Campaign Standard复制到Campaign v7:
 >
 >只有电子邮件广告和跟踪日志才会从Campaign Standard复制到Campaign v7。
 
-### 数据同步{#data-synchronization}
+### 数据同步 {#data-synchronization}
 
 ![](assets/acs_connect_flows_02.png)
 
@@ -85,7 +87,7 @@ ACS Connector在Campaign v7和Campaign Standard之间同步隔离。
 
 例如，已从Campaign v7复制到Campaign Standard的用户档案包含电子邮件地址。 如果Campaign Standard隔离了电子邮件地址，则在下次同步期间会将数据传递到Campaign v7。 有关隔离的更多信息，请参阅[隔离管理](../../delivery/using/understanding-quarantine-management.md)和[Campaign Standard隔离](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html)。
 
-### 使用复制的配置文件{#using-replicated-profiles}
+### 使用复制的用户档案 {#using-replicated-profiles}
 
 Campaign Standard和Campaign v7可使用复制的用户档案来定位营销活动中的工作流。
 
@@ -120,13 +122,13 @@ ACS Connector有两种实施类型。 这两项操作始终由Adobe Campaign咨�
 
 **高级实施**&#x200B;将允许您执行更复杂的用例，例如，如果您有其他收件人字段或自定义收件人表（例如事务表）。 请参阅[高级实施](#advanced-implementation)。
 
-### 安装软件包{#installing-the-package}
+### 安装包 {#installing-the-package}
 
 要使用该功能，需要安装&#x200B;**[!UICONTROL ACS Connector]**&#x200B;包。 这始终由Adobe技术管理员或顾问执行。
 
 与ACS Connector相关的所有技术元素都可在资源管理器的&#x200B;**[!UICONTROL Administration > ACS Connector]**&#x200B;节点中使用。
 
-### 技术和复制工作流{#technical-and-replication-workflows}
+### 技术和复制工作流 {#technical-and-replication-workflows}
 
 安装包后，**[!UICONTROL Administration > ACS Connector > Process]**&#x200B;下提供了两个技术工作流。
 
@@ -151,7 +153,7 @@ ACS Connector有两种实施类型。 这两项操作始终由Adobe Campaign咨�
 * **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication):此增量工作流将投放ID、电子邮件广泛日志和电子邮件跟踪日志从Campaign Standard复制到Campaign v7。它仅考虑从Campaign Standard向Campaign v7的nms:recipients表所包含的用户档案发送的投放。
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication):此增量工作流将投放ID、电子邮件广泛日志和电子邮件跟踪日志从Campaign Standard复制到Campaign v7。它仅考虑从Campaign Standard向Campaign v7特定表（定义nms:recipients除外）所包含用户档案发送的投放。
 
-### 默认收件人字段{#default-recipient-fields}
+### 默认收件人字段 {#default-recipient-fields}
 
 如果您有任何其他字段或自定义表（例如，事务表），则默认情况下不会复制这些字段或自定义表。 需要执行高级配置。 请参阅[高级实施](#advanced-implementation)。
 
@@ -262,7 +264,7 @@ ACS Connector有两种实施类型。 这两项操作始终由Adobe Campaign咨�
  </tbody> 
 </table>
 
-### 权限转换{#rights-conversion}
+### 权限转换 {#rights-conversion}
 
 权限在Campaign v7和Campaign Standard中的处理方式不同。 在Campaign v7中，权限管理基于文件夹，而在Campaign Standard中，权限管理基于单位访问（组织/地理单位）。 Campaign Standard用户属于包含限制上下文的安全组。 因此，需要转换Campaign v7权限系统以匹配Campaign Standard系统。 可通过多种方法执行权限转换。 下方提供了实施示例。
 
@@ -276,7 +278,7 @@ ACS Connector有两种实施类型。 这两项操作始终由Adobe Campaign咨�
 
 1. 然后，复制工作流将使用此信息并将相应的组织/地理单位添加到要复制的每个对象。
 
-### 高级实施{#advanced-implementation}
+### 高级实施 {#advanced-implementation}
 
 本节将介绍在高级实施方面的一些可能性。
 

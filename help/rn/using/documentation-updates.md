@@ -2,18 +2,20 @@
 product: campaign
 title: Adobe Campaign Classic 文档更新
 description: 本页列出了 Adobe Campaign Classic 文档中的所有新增功能和更新
-feature: 概述
+feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '4465'
+source-wordcount: '4464'
 ht-degree: 100%
 
 ---
 
 # 文档更新{#documentation-updates}
+
+![](../../assets/v7-only.svg)
 
 本页列出了每月所有新增功能和文档更新以及 Campaign 版本。
 
@@ -48,7 +50,7 @@ LINE 渠道增强 - [了解详情](../../delivery/using/line-channel.md)
 
 已改进并阐明 Campaign 客户端控制台的安装步骤。[阅读更多](../../installation/using/installing-the-client-console.md)
 
-已创建有关跟踪 URL 签名问题的新技术说明。[阅读更多](../../technotes/tracked-urls.md)
+已创建有关跟踪 URL 签名问题的新技术说明。[阅读更多](../../technotes/using/tracked-urls.md)
 
 ## 2021 年 4 月 {#april-2021}
 
@@ -210,7 +212,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 现在，可在以下主题中获取操作方法视频：
 
-* [如何使用类型规则和预定义过滤器建立疲劳管理](../../campaign/using/about-campaign-typologies.md)
+* [如何使用类型规则和预定义过滤器建立疲劳管理](../../campaign-opt/using/about-campaign-typologies.md)
 
 * [如何在营销活动中创建电子邮件](../../campaign/using/marketing-campaign-deliveries.md)
 

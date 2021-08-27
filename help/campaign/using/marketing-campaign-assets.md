@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 管理关联文档 {#managing-associated-documents}
+
+![](../../assets/common.svg)
 
 您可以将各种文档与营销活动关联：报表、照片、网页、图表等。 这些文档可以采用任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。
 

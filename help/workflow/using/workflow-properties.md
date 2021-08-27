@@ -6,16 +6,18 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '551'
 ht-degree: 1%
 
 ---
 
 # 工作流属性{#workflow-properties}
 
-## “执行”选项卡{#execution-tab}
+![](../../assets/common.svg)
+
+## “执行”选项卡 {#execution-tab}
 
 工作流中&#x200B;**[!UICONTROL Properties]**&#x200B;窗口的&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡分为3个部分：
 
@@ -39,7 +41,7 @@ ht-degree: 1%
 
    如果您的安装包含多个工作流服务器，请使用此字段选择要执行工作流的计算机。 如果此字段中定义的值在任何服务器上都不存在，则工作流将保持挂起状态。
 
-   请参阅此[部分](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)。
+   请参阅本[Campaign Classicv7安装指南](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)。
 
 * **[!UICONTROL History in days]**
 
@@ -57,7 +59,7 @@ ht-degree: 1%
 
    此选项只能用于调试，而不能用于生产。 启用该工作流后，将优先考虑该工作流，并停止所有其他工作流，直到该工作流完成。
 
-### 错误管理{#error-management}
+### 错误管理 {#error-management}
 
 * **[!UICONTROL Troubleshooting]**
 

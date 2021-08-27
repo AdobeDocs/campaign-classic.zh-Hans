@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 外部信号{#external-signal}
+
+![](../../assets/common.svg)
 
 通过&#x200B;**外部信号**&#x200B;活动，您可以触发对某个计划的工作流中一组任务的执行。
 
@@ -25,9 +27,9 @@ ht-degree: 2%
 
 ![](assets/edit_signal.png)
 
-[过期日期](../../workflow/using/defining-approvals.md)中详细描述了过期日期的配置。
+[过期日期](defining-approvals.md)中详细描述了过期日期的配置。
 
-通过&#x200B;**Delay**&#x200B;字段，可以指定以所选单位表示的过期延迟。 请参阅[Wait](../../workflow/using/wait.md)。
+通过&#x200B;**Delay**&#x200B;字段，可以指定以所选单位表示的过期延迟。 请参阅[Wait](wait.md)。
 
 每行表示过期类型，并与过渡一致。
 

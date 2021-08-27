@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -15,13 +15,15 @@ ht-degree: 0%
 
 # 用例{#use-cases}
 
-## 分析群体{#analyzing-a-population}
+![](../../assets/common.svg)
+
+## 分析群体 {#analyzing-a-population}
 
 以下示例允许您使用描述性分析向导来探索一组新闻稿所定向的群体。
 
 下面详细介绍了实施步骤，本章的其他部分提供了详尽的选项和说明列表。
 
-### 识别要分析的群体{#identifying-the-population-to-analyze}
+### 确定要分析的群体 {#identifying-the-population-to-analyze}
 
 在此示例中，我们要探索&#x200B;**Newsletters**&#x200B;文件夹中包含的投放的目标群体。
 
@@ -29,7 +31,7 @@ ht-degree: 0%
 
 ![](assets/reporting_quick_start_1.png)
 
-### 选择分析类型{#selecting-a-type-of-analysis}
+### 选择分析类型 {#selecting-a-type-of-analysis}
 
 在助手的第一步中，您可以选择要使用的描述性分析模板。 默认情况下，Adobe Campaign提供了两个模板：**[!UICONTROL Qualitative distribution]**&#x200B;和&#x200B;**[!UICONTROL Quantitative distribution]**。 有关更多信息，请参阅[配置定性分发模板](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template)一节。 [关于描述性分析](../../reporting/using/about-descriptive-analysis.md)一节中介绍了各种渲染。
 
@@ -37,7 +39,7 @@ ht-degree: 0%
 
 ![](assets/reporting_descriptive_quickstart_step_1.png)
 
-### 选择要显示{#selecting-the-variables-to-display}的变量
+### 选择要显示的变量 {#selecting-the-variables-to-display}
 
 下一步允许您选择要在表格中显示的数据。
 
@@ -57,7 +59,7 @@ ht-degree: 0%
 
 ![](assets/reporting_descriptive_quickstart_step_2b.png)
 
-### 定义显示格式{#defining-the-display-format}
+### 定义显示格式 {#defining-the-display-format}
 
 在向导的下一步中，您可以选择要生成的图表类型。
 
@@ -67,7 +69,7 @@ ht-degree: 0%
 
 [分析报表图表选项](../../reporting/using/processing-a-report.md#analysis-report-chart-options)部分详细介绍了不同图形的可能配置。
 
-### 配置统计量以计算{#configuring-the-statistic-to-calculate}
+### 配置统计量以计算 {#configuring-the-statistic-to-calculate}
 
 然后，指定要应用于收集数据的计算。 默认情况下，描述性分析向导会执行简单的值计数。
 
@@ -77,7 +79,7 @@ ht-degree: 0%
 
 要创建新统计信息，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。 有关更多信息，请参阅[统计计算](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation)。
 
-### 查看和使用报表{#viewing-and-using-the-report}
+### 查看和使用报表 {#viewing-and-using-the-report}
 
 向导的最后一步是显示表格和图表。
 
@@ -85,9 +87,9 @@ ht-degree: 0%
 
 ![](assets/reporting_descriptive_quickstart_step_5.png)
 
-## 定性数据分析{#qualitative-data-analysis}
+## 定性数据分析 {#qualitative-data-analysis}
 
-### 图表显示示例{#example-of-a-chart-display}
+### 图表显示示例 {#example-of-a-chart-display}
 
 **目标**:生成潜在客户或客户位置的分析报告。
 
@@ -113,7 +115,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_report_wizard_06png.png)
 
-### 表显示示例{#example-of-a-table-display}
+### 表格显示示例 {#example-of-a-table-display}
 
 **目标**:分析公司电子邮件域。
 
@@ -150,7 +152,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_report_wizard_07a.png)
 
-## 定量数据分析{#quantitative-data-analysis}
+## 定量数据分析 {#quantitative-data-analysis}
 
 **目标**:生成关于收件人年龄的定量分析报告
 
@@ -172,7 +174,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_user_report_wizard_013.png)
 
-## 分析工作流{#analyzing-a-transition-target-in-a-workflow}中的过渡目标
+## 分析工作流中的过渡目标 {#analyzing-a-transition-target-in-a-workflow}
 
 **目标**:生成有关定位工作流群体的报告
 
@@ -186,7 +188,7 @@ ht-degree: 0%
 
    配置的其余部分与所有描述性分析的配置相同。
 
-### Target分析推荐{#target-analyze-recommendations}
+### Target分析推荐 {#target-analyze-recommendations}
 
 在工作流中分析群体时，需要该群体仍然存在于过渡中。 如果启动工作流，则可能会从过渡中清除与群体有关的结果。 要运行分析，您可以：
 
@@ -207,7 +209,7 @@ ht-degree: 0%
 >**[!UICONTROL Keep the result of interim populations between two executions]**&#x200B;选项只能在开发阶段使用，但决不能用于生产中的环境。\
 >在达到保留期限后，会自动清除临时群体。 工作流属性&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡中指定了此截止日期。
 
-## 分析收件人跟踪日志{#analyzing-recipient-tracking-logs}
+## 分析收件人跟踪日志 {#analyzing-recipient-tracking-logs}
 
 描述性分析向导可以生成其他工作表的报告。 这意味着您可以通过创建专用报告来分析投放日志。
 
@@ -269,7 +271,7 @@ ht-degree: 0%
 
    ![](assets/reporting_descriptive_sample_tracking_9.png)
 
-## 分析投放排除日志{#analyzing-delivery-exclusion-logs}
+## 分析投放排除日志 {#analyzing-delivery-exclusion-logs}
 
 如果分析涉及投放，则可以分析排除的群体。 为此，请选择要分析的投放，然后右键单击以访问&#x200B;**[!UICONTROL Action > Explore exclusions]**&#x200B;菜单。
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 分叉{#fork}
+
+![](../../assets/common.svg)
 
 **[!UICONTROL Fork]**&#x200B;活动允许您创建多个叫客过渡，以便在同一工作流中独立地执行多个活动。
 
@@ -32,4 +34,4 @@ ht-degree: 1%
 
 ![](assets/s_user_segmentation_fork.png)
 
-然后，您可以配置每个叫客过渡，并根据需要使用[AND-join](../../workflow/using/and-join.md)活动将它们连接在一起。 这样，只有在&#x200B;**[!UICONTROL Fork]**&#x200B;活动的叫客过渡完成后，才会执行工作流的其余部分。
+然后，您可以配置每个叫客过渡，并根据需要使用[AND-join](and-join.md)活动将它们连接在一起。 这样，只有在&#x200B;**[!UICONTROL Fork]**&#x200B;活动的叫客过渡完成后，才会执行工作流的其余部分。

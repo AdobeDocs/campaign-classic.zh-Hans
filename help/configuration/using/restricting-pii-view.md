@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 限制 PI 视图{#restricting-pii-view}
+
+![](../../assets/v7-only.svg)
 
 ## 概述 {#overview}
 
@@ -54,7 +56,7 @@ ht-degree: 2%
 * 在组（列表）中存储目标群体时，所存储字段的特征与数据源相同。
 * 默认情况下，JS代码无法访问数据。
 
-## 建议 {#recommendations}
+## 推荐 {#recommendations}
 
 在每个投放中，电子邮件地址都会复制到&#x200B;**[!UICONTROL broadLog]**&#x200B;和&#x200B;**[!UICONTROL forecastLog]**&#x200B;表中：因此，这些字段也需要保护。
 

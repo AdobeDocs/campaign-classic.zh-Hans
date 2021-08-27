@@ -6,20 +6,22 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
 
 # 管理优惠演示{#managing-offer-presentation}
 
-## 演示规则概述{#presentation-rules-overview}
+![](../../assets/v7-only.svg)
+
+## 演示规则概述 {#presentation-rules-overview}
 
 通过交互，您可以使用演示规则控制优惠建议的流程。 这些特定于交互的规则是分类规则。 它们允许您根据已向收件人提出的建议的历史记录排除优惠。 环境中会引用这些参数
 
-## 创建和引用选件演示规则{#creating-and-referencing-an-offer-presentation-rule}
+## 创建和引用优惠演示规则 {#creating-and-referencing-an-offer-presentation-rule}
 
 1. 转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**&#x200B;节点。
 1. 创建分类规则并选择&#x200B;**[!UICONTROL Offer presentation]**&#x200B;类型。
@@ -43,9 +45,9 @@ ht-degree: 0%
 
    ![](assets/offer_typology_005.png)
 
-## 演示规则设置{#presentation-rule-settings}
+## 演示规则设置 {#presentation-rule-settings}
 
-### 应用程序标准{#application-criteria-}
+### 应用程序标准 {#application-criteria-}
 
 **[!UICONTROL General]**&#x200B;选项卡中可用的应用程序标准允许您指定将应用演示规则的选件。 为此，您需要创建一个查询并选择相关的选件，如下所述。
 
@@ -59,11 +61,11 @@ ht-degree: 0%
 
    ![](assets/offer_typology_008.png)
 
-### 选件维度{#offer-dimensions}
+### 选件维度 {#offer-dimensions}
 
 在&#x200B;**[!UICONTROL Offer presentation]**&#x200B;选项卡中，必须为表示规则指定与环境中配置的维度相同的维度。
 
-**[!UICONTROL Targeting dimension]**&#x200B;与收件人表一致(默认情况下为：nms:recipients)，将接收优惠建议。 **[!UICONTROL Storage dimension]**&#x200B;与包含与定向维度链接的命题历史记录的表（默认情况下：nms:campationRcp）一致。
+**[!UICONTROL Targeting dimension]**&#x200B;与收件人表一致(默认情况下为：nms:recipients)，将接收优惠建议。 **[!UICONTROL Storage dimension]**&#x200B;与包含链接到定向维度的命题历史记录的表（默认情况下为:nms:命题Rcp）一致。
 
 ![](assets/offer_typology_009.png)
 
@@ -84,7 +86,7 @@ ht-degree: 0%
 
 ![](assets/offer_typology_010.png)
 
-### 命题数{#number-of-propositions}
+### 建议数 {#number-of-propositions}
 
 可以设置在排除相关选件之前可以提出的建议的最大数量。
 
@@ -92,11 +94,11 @@ ht-degree: 0%
 
 ![](assets/offer_typology_011.png)
 
-## 定义主张和收件人{#defining-propositions-and-recipients}
+## 定义主张和收件人 {#defining-propositions-and-recipients}
 
 通过&#x200B;**[!UICONTROL Propositions to count]**&#x200B;部分，您可以指定收件人和建议，如果建议历史记录中出现特定次数的建议，则这些建议会导致排除在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义的选件。
 
-### 筛选建议{#filtering-propositions}
+### 筛选建议 {#filtering-propositions}
 
 您可以根据渠道、相关选件或先前已分配命题的状态来选择筛选标准以排除命题。
 
@@ -142,13 +144,13 @@ ht-degree: 0%
 
    **[!UICONTROL Rejected propositions]** :允许您排除之前呈现且已被拒绝的选件。
 
-### 定义收件人{#defining-recipients}
+### 定义收件人 {#defining-recipients}
 
 要指定收件人，请单击&#x200B;**[!UICONTROL Edit the query from the targeting dimension...]**&#x200B;链接，然后选择规则所关注的收件人。
 
 ![](assets/offer_typology_012.png)
 
-### 创建关于命题{#creating-a-query-on-propositions}的查询
+### 创建关于命题的查询 {#creating-a-query-on-propositions}
 
 要指定要通过查询计数的命题，请单击&#x200B;**[!UICONTROL Limit propositions...]**&#x200B;链接并指定要考虑的标准。
 

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 审核跟踪{#audit-trail}
+
+![](../../assets/v7-only.svg)
 
 在Adobe Campaign中，通过&#x200B;**[!UICONTROL Audit trail]**&#x200B;可访问实例中所做更改的完整历史记录。
 
@@ -49,7 +51,7 @@ ht-degree: 3%
 
    有关选项的更多信息，请参阅此[页面](../../installation/using/configuring-campaign-options.md)。
 
-## 访问审核跟踪{#accessing-audit-trail}
+## 访问审核跟踪 {#accessing-audit-trail}
 
 访问实例的&#x200B;**[!UICONTROL Audit trail]** :
 
@@ -80,7 +82,7 @@ ht-degree: 3%
 >
 >默认情况下，**[!UICONTROL Audit logs]**&#x200B;的保留期设置为180天。 要详细了解如何更改保留期，请参阅此[页面](../../production/using/database-cleanup-workflow.md#deployment-wizard)。
 
-## 启用/禁用审核跟踪{#enable-disable-audit-trail}
+## 启用/禁用审核跟踪 {#enable-disable-audit-trail}
 
 例如，如果您想在数据库上节省一些空间，则可以轻松激活或停用特定活动的审核跟踪。
 

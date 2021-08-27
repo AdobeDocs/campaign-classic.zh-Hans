@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 分布式架构{#distributed-architectures}
+
+![](../../assets/v7-only.svg)
 
 ## 原则 {#principle}
 
@@ -28,7 +30,7 @@ ht-degree: 1%
 >
 >控制实例专用于集客渠道并包含目录的在线版本。 每个执行实例都是独立的，并且专用于一个联系人区段（例如，每个国家/地区一个执行实例）。 必须在执行时直接执行选件引擎调用（每个执行实例一个特定URL）。 由于实例之间的同步不是自动的，因此来自同一联系人的交互必须通过同一实例发送。
 
-## 命题同步{#proposition-synchronization}
+## 命题同步 {#proposition-synchronization}
 
 选件同步是通过包执行的。 在执行实例中，所有目录对象都以外部帐户名称为前缀。 这意味着同一执行实例上可以支持多个控制实例（例如，开发和生产实例）。
 
@@ -52,7 +54,7 @@ ht-degree: 1%
 * 命题同步完全由FDA连接执行。
 * 如果您在同一实例上使用交互和消息中心，则在这两种情况下都将通过FDA协议进行同步。
 
-## 包配置{#packages-configuration}
+## 包配置 {#packages-configuration}
 
 直接链接到&#x200B;**Interaction**&#x200B;的任何架构扩展（选件、建议、收件人等） 必须在执行实例上部署。
 
@@ -101,7 +103,7 @@ ht-degree: 1%
 
 ![](assets/ita_filtering.png)
 
-## 维护选项{#maintenance-options}
+## 维护选项 {#maintenance-options}
 
 以下是控制实例上可用的维护选项列表：
 
@@ -117,7 +119,7 @@ ht-degree: 1%
 
 **NmsExecutionInstanceId**:包含实例ID的选项。
 
-## 软件包安装{#packages-installation}
+## 软件包安装 {#packages-installation}
 
 如果您的实例之前没有交互包，则无需迁移。 默认情况下，建议表将在安装包后以64位为单位显示。
 

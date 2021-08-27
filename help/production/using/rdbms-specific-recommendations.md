@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # RDBMS 特定建议{#rdbms-specific-recommendations}
+
+![](../../assets/v7-only.svg)
 
 为了帮助您设置维护计划，本节列出了一些与Adobe Campaign支持的各种RDBMS引擎相适应的建议和最佳实践。 但是，这些只是建议。 根据您的内部流程和限制，由您自行调整以适应您的需求。 数据库管理员有责任构建和执行这些计划。
 
@@ -153,7 +155,6 @@ REINDEX TABLE nmsmirrorpageinfo;
 >* 此维护操作可通过Adobe Campaign工作流使用&#x200B;**[!UICONTROL SQL]**&#x200B;活动来实施。 如需详细信息，请参阅[此部分](../../workflow/using/architecture.md)。确保将维护安排在活动时间较短的时间内，该时间不会与备份窗口发生冲突。
 
 >
-
 
 
 ### 重建数据库 {#rebuilding-a-database}

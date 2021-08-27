@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 11%
+ht-degree: 21%
 
 ---
 
 # 循环投放{#recurring-delivery}
+
+![](../../assets/common.svg)
 
 **[!UICONTROL Recurring delivery]**&#x200B;活动允许您配置特定于营销活动的投放模板实例。
 
@@ -31,13 +33,13 @@ ht-degree: 11%
 
 就可用选项而言，此活动的配置过程与创建投放模板的过程类似。 有关更多信息，请参阅此](../../delivery/using/about-templates.md)章节[。
 
-有关此活动的示例，请参阅此[部分](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)。
+有关此活动的示例，请参阅此[部分](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)。
 
 ## 如何设置循环投放
 
-每次执行&#x200B;**循环投放**&#x200B;时，都会创建一个新投放实例。 例如，如果工作流计划每周运行一次，则一年后将产生52次投放。 这也意味着广泛的日志和跟踪日志将由每个投放实例分隔。
+每次执行&#x200B;**循环投放**&#x200B;时，都会创建一个新投放实例。 例如，如果工作流计划每周运行一次，那么一年后将产生 52 次投放。这也意味着广泛的日志和跟踪日志将由每个投放实例分隔。
 
-![定期投放](assets/delivery_recurring.jpg)
+![循环投放](assets/delivery_recurring.jpg)
 
 >[!NOTE]
 >

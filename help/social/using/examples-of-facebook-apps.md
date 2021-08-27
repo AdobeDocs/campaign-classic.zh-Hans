@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Facebook 应用程序示例{#examples-of-facebook-apps}
+
+![](../../assets/v7-only.svg)
 
 当用户单击Facebook应用程序的选项卡时，该选项卡将以810像素宽的空间显示。 Adobe Campaign使用Facebook类型的web应用程序来定义和个性化Facebook应用程序中显示的内容，从而更轻松地获取用户档案。
 

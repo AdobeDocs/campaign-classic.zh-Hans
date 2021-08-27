@@ -6,16 +6,18 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # 定义审批 {#defining-approvals}
 
-通过审批，操作员能够做出管理工作流的决策或确认其继续执行。
+![](../../assets/common.svg)
+
+通过批准，操作员能够做出管理工作流的决策或确认工作流的继续执行情况。
 
 系统会向一组运算符发送消息，工作流会等待响应后再恢复。 工作流未停止，并且可以执行其他操作。 例如，可能有多个同时等待批准。
 
@@ -45,7 +47,7 @@ ht-degree: 0%
 
 通过此模板创建的投放存储在&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**&#x200B;文件夹中。
 
-## 通过控制台{#approval-via-the-console}进行批准
+## 通过控制台进行批准 {#approval-via-the-console}
 
 在操作中，要批准的元素显示在营销活动仪表板上。
 
@@ -98,13 +100,13 @@ ht-degree: 0%
    return expiration
    ```
 
-## 多次批准{#multiple-approval}
+## 多次批准 {#multiple-approval}
 
 多个批准是一种机制，允许所有批准操作员做出响应。 为每个响应激活一个过渡。
 
 多项批准对投票或调查机制非常有用。 您可以通过添加截止时间来计算答案并在给定时间段后处理其结果。
 
-## 所需权限{#required-rights}
+## 所需权限 {#required-rights}
 
 群组中的操作员必须至少具有以下权限才能响应批准请求：
 

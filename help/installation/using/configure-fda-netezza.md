@@ -6,21 +6,23 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%
 
 ---
 
-# 配置对Netezza{#configure-access-to-netezza}的访问
+# 配置对Netezza的访问 {#configure-access-to-netezza}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign [联合数据访问](../../installation/using/about-fda.md)(FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对Netezza的访问。
 
 1. 安装和配置[Netezza驱动程序](#netezza-config)
 1. 在Campaign中配置Netezza[外部帐户](#netezza-external)
 
-## Netezza配置{#netezza-config}
+## Netezza配置 {#netezza-config}
 
 在FDA中连接到Netezza外部数据库需要在Adobe Campaign服务器上进行以下其他配置：
 
@@ -67,7 +69,7 @@ ht-degree: 0%
    * **奥德布奇尼**:odbc.ini文件的位置(例如/etc/odbc.ini)。
    * **NZ_ODBC_INI_PATH**:odbc.ini文件的位置。Netezza还需要此第二个变量才能使用odbc.ini文件。
 
-## Netezza外部帐户{#netezza-external}
+## Netezza外部帐户 {#netezza-external}
 
 netezza外部帐户允许您将Campaign实例连接到Netezza外部数据库。
 

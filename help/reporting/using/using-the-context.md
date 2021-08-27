@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 3%
@@ -15,9 +15,11 @@ ht-degree: 3%
 
 # 使用上下文{#using-the-context}
 
+![](../../assets/common.svg)
+
 当您希望以&#x200B;**[!UICONTROL tables]**&#x200B;或&#x200B;**[!UICONTROL charts]**&#x200B;的形式表示数据时，可以从以下两个来源获取该数据：新查询（请参阅[定义数据的直接过滤器](#defining-a-direct-filter-on-data)）或报表上下文（请参阅[使用上下文数据](#using-context-data)）。
 
-## 定义数据{#defining-a-direct-filter-on-data}的直接过滤器
+## 定义数据的直接过滤器 {#defining-a-direct-filter-on-data}
 
 ### 筛选数据 {#filtering-data}
 
@@ -29,7 +31,7 @@ ht-degree: 3%
 
 ![](assets/reporting_filter_data_from_page.png)
 
-### 示例：在图表{#example--use-a-filter-in-a-chart}中使用过滤器
+### 示例：在图表中使用过滤器 {#example--use-a-filter-in-a-chart}
 
 在以下示例中，我们希望图表仅显示在法国居住的收件人用户档案以及当年购买过的收件人用户档案。
 
@@ -45,7 +47,7 @@ ht-degree: 3%
 
 ![](assets/reporting_graph_with_2vars_preview.png)
 
-### 示例：在数据透视表{#example--use-a-filter-in-a-pivot-table}中使用过滤器
+### 示例：在数据透视表中使用过滤器 {#example--use-a-filter-in-a-pivot-table}
 
 在此示例中，过滤器允许您在数据透视表中仅显示非巴黎客户，而无需事先使用其他查询。
 
@@ -62,7 +64,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_advuser_report_display_04.png)
 
-## 使用上下文数据{#using-context-data}
+## 使用上下文数据 {#using-context-data}
 
 要以&#x200B;**[!UICONTROL table]**&#x200B;或&#x200B;**[!UICONTROL chart]**&#x200B;的形式表示数据，数据可以来自报表上下文。
 

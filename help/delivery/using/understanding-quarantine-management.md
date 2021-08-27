@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 14%
@@ -14,6 +14,8 @@ ht-degree: 14%
 ---
 
 # 了解隔离管理{#understanding-quarantine-management}
+
+![](../../assets/common.svg)
 
 ## 关于隔离 {#about-quarantines}
 
@@ -255,7 +257,6 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
 * 投放开始时出现连接问题：失败类型&#x200B;**[!UICONTROL Undefined]**，失败原因&#x200B;**[!UICONTROL Unreachable]**，重试。
 * 投放期间连接丢失：软错误，失败原因&#x200B;**[!UICONTROL Refused]**，请执行重试。
 * 百度在发送过程中返回的同步错误：硬错误，失败原因&#x200B;**[!UICONTROL Refused]**，未执行重试。
-
 Adobe Campaign每10分钟联系百度服务器以检索已发送消息的状态并更新广告。 如果消息声明为已发送，则广播中消息的状态将设置为&#x200B;**[!UICONTROL Received]**。 如果百度声明错误，则状态将设置为&#x200B;**[!UICONTROL Failed]**。
 
 **对于Android V2**

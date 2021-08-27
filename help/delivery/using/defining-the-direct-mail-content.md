@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 14%
@@ -15,7 +15,9 @@ ht-degree: 14%
 
 # 定义直邮内容{#defining-the-direct-mail-content}
 
-## 提取文件{#extraction-file}
+![](../../assets/common.svg)
+
+## 提取文件 {#extraction-file}
 
 包含提取数据的文件的名称在&#x200B;**[!UICONTROL File]**&#x200B;字段中定义。 利用字段右侧的按钮，可使用个性化字段创建文件名。
 

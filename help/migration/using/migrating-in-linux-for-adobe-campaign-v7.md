@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 在 Linux 中迁移到 Adobe Campaign v7{#migrating-in-linux-for-adobe-campaign-v}
 
-## 一般过程{#general-procedure}
+![](../../assets/v7-only.svg)
+
+## 一般程序 {#general-procedure}
 
 Linux中的迁移步骤如下：
 
@@ -25,7 +27,7 @@ Linux中的迁移步骤如下：
 1. 迁移平台：请参阅[部署Adobe Campaign v7](#deploying-adobe-campaign-v7)。
 1. 重新启动服务：请参阅[重新启动服务](#re-starting-services)。
 
-## 服务停止{#service-stop}
+## 服务停止 {#service-stop}
 
 首先，在所有相关计算机上停止所有具有数据库访问权限的进程。
 
@@ -69,11 +71,11 @@ Linux中的迁移步骤如下：
    killall -9 nlserver
    ```
 
-## 备份数据库和现有安装{#back-up-the-database-and-the-existing-installation}
+## 备份数据库和现有安装 {#back-up-the-database-and-the-existing-installation}
 
 此过程取决于您之前的Adobe Campaign版本。
 
-### 从Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}迁移
+### 从Adobe Campaign v5.11迁移 {#migrating-from-adobe-campaign-v5-11}
 
 1. 备份Adobe Campaign数据库。
 1. 以&#x200B;**neolane**&#x200B;身份登录，然后使用以下命令备份&#x200B;**nl5**&#x200B;目录：
@@ -108,7 +110,7 @@ Linux中的迁移步骤如下：
    </serverconf>
    ```
 
-### 从Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}迁移
+### 从Adobe Campaign v6.02迁移 {#migrating-from-adobe-campaign-v6-02}
 
 1. 备份Adobe Campaign数据库。
 1. 以&#x200B;**neolane**&#x200B;身份登录，然后使用以下命令备份&#x200B;**nl6**&#x200B;目录：
@@ -143,7 +145,7 @@ Linux中的迁移步骤如下：
    </serverconf>
    ```
 
-### 从Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}迁移
+### 从Adobe Campaign v6.1迁移 {#migrating-from-adobe-campaign-v6-1}
 
 1. 备份Adobe Campaign数据库。
 1. 以&#x200B;**neolane**&#x200B;身份登录，然后使用以下命令备份&#x200B;**nl6**&#x200B;目录：
@@ -157,11 +159,11 @@ Linux中的迁移步骤如下：
    >
    >为防患未然，我们建议您压缩&#x200B;**nl6.back**&#x200B;文件夹，并将其保存到服务器以外的安全位置。
 
-## 卸载Adobe Campaign以前的版本包{#uninstalling-adobe-campaign-previous-version-packages}
+## 卸载Adobe Campaign以前的版本包 {#uninstalling-adobe-campaign-previous-version-packages}
 
 此过程取决于您之前的Adobe Campaign版本。
 
-### 卸载Adobe Campaign v5包{#uninstalling-adobe-campaign-v5-packages}
+### 卸载Adobe Campaign v5包 {#uninstalling-adobe-campaign-v5-packages}
 
 1. 以&#x200B;**root**&#x200B;身份登录。
 1. 使用以下命令标识已安装的Adobe Campaign包。
@@ -199,7 +201,7 @@ Linux中的迁移步骤如下：
       rprm -ev nlserver5 nlthirdparty5
       ```
 
-### 卸载Adobe Campaign v6包{#uninstalling-adobe-campaign-v6-packages}
+### 卸载Adobe Campaign v6包 {#uninstalling-adobe-campaign-v6-packages}
 
 本节将介绍如何卸载Adobe Campaign v6.02或v6.1包。
 
@@ -243,7 +245,7 @@ Linux中的迁移步骤如下：
 
 此过程取决于您之前的Adobe Campaign版本。
 
-### 从Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-1}迁移
+### 从Adobe Campaign v5.11迁移 {#migrating-from-adobe-campaign-v5_11-1}
 
 部署Adobe Campaign包含两个阶段：
 
@@ -370,7 +372,7 @@ Linux中的迁移步骤如下：
 >
 >尚未启动Adobe Campaign服务：仍需在Apache中进行更改。
 
-### 从Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-1}迁移
+### 从Adobe Campaign v6.02迁移 {#migrating-from-adobe-campaign-v6_02-1}
 
 部署Adobe Campaign包含两个阶段：
 
@@ -448,7 +450,7 @@ Linux中的迁移步骤如下：
    >
    >“多时区”模式仅在v6.02中适用于PostgreSQL数据库引擎。 现在，无论使用的是哪个版本的数据库引擎，它都可用。 我们强烈建议将您的用户群升级为“多时区”。 有关时区选项的更多信息，请参阅[时区](../../migration/using/general-configurations.md#time-zones)一节。
 
-### 从Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-1}迁移
+### 从Adobe Campaign v6.1迁移 {#migrating-from-adobe-campaign-v6_1-1}
 
 部署Adobe Campaign包含两个阶段：
 
@@ -512,7 +514,7 @@ Linux中的迁移步骤如下：
    nlserver config -postupgrade -instance:<instance name>
    ```
 
-## 迁移重定向服务器(Apache){#migrating-the-redirection-server--apache-}
+## 迁移重定向服务器(Apache) {#migrating-the-redirection-server--apache-}
 
 >[!NOTE]
 >
@@ -570,15 +572,15 @@ Linux中的迁移步骤如下：
    vi /etc/apache2/mods-available/alias.conf
    ```
 
-## 安全区{#security-zones}
+## 安全区 {#security-zones}
 
 如果您是从v6.02或更低版本迁移，则必须先配置安全区，然后才能启动服务。 有关更多信息，请参阅[Security](../../migration/using/general-configurations.md#security)。
 
-## 重新启动服务{#re-starting-services}
+## 重新启动服务 {#re-starting-services}
 
 此过程取决于您之前的Adobe Campaign版本。
 
-### 从Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-2}迁移
+### 从Adobe Campaign v5.11迁移 {#migrating-from-adobe-campaign-v5_11-2}
 
 在&#x200B;**config-`<instance name>`.xml**&#x200B;文件中，重新激活&#x200B;**mta**、**wfserver**、**stat**&#x200B;等的自动启动。 服务。
 
@@ -609,7 +611,7 @@ Linux中的迁移步骤如下：
 
 在执行下一步之前，请对新安装运行完整测试，确保没有回归，并且所有操作都可以遵循[常规配置](../../migration/using/general-configurations.md)部分中的所有建议。
 
-### 从Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-2}迁移
+### 从Adobe Campaign v6.02迁移 {#migrating-from-adobe-campaign-v6_02-2}
 
 在&#x200B;**config-`<instance name>`.xml**&#x200B;文件中，重新激活&#x200B;**mta**、**wfserver**、**stat**&#x200B;等的自动启动。 服务。
 
@@ -640,7 +642,7 @@ Linux中的迁移步骤如下：
 
 完全测试新安装，检查它是否没有回退，并通过遵循[常规配置](../../migration/using/general-configurations.md)部分中的所有建议确保一切正常。
 
-### 从Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-2}迁移
+### 从Adobe Campaign v6.1迁移 {#migrating-from-adobe-campaign-v6_1-2}
 
 在以下每台服务器上启动Apache和Adobe Campaign服务：
 

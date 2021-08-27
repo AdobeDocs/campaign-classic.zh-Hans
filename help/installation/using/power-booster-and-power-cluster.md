@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Power Booster 和 Power Cluster{#power-booster-and-power-cluster}
+
+![](../../assets/v7-only.svg)
 
 ## 概述 {#overview}
 
@@ -29,7 +31,7 @@ Adobe Campaign为您提供了两套预包装的体系结构选项，用于确定
 
 ![](assets/architectural_options_diagram.png)
 
-## 符合条件的应用程序{#eligible-applications}
+## 合格申请 {#eligible-applications}
 
 Power Booster和Power Cluster选项可供以下应用程序使用：
 
@@ -37,7 +39,7 @@ Power Booster和Power Cluster选项可供以下应用程序使用：
 * 投放
 * 消息中心
 
-## 体系结构建议矩阵{#matrix-of-architectural-recommendations}
+## 建筑建议矩阵 {#matrix-of-architectural-recommendations}
 
 <table> 
  <tbody> 
@@ -80,7 +82,7 @@ Power Booster和Power Cluster选项可供以下应用程序使用：
  </tbody> 
 </table>
 
-## 建议 {#recommendations}
+## 推荐 {#recommendations}
 
 * 执行实例必须专用于服务。 您无法为尚未订阅的服务安装包。 例如，如果订阅了&#x200B;**消息中心**&#x200B;服务的&#x200B;**Power Booster**&#x200B;选项，则只能在专用执行实例上安装&#x200B;**[!UICONTROL Execution of transactional messages]**&#x200B;包。 请核实您的许可协议。
 * 由于专用实例（或群集）是Adobe Campaign实例，因此推荐与主实例相同。 有关更多信息，请参见[本文档](../../production/using/foreword.md)。

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 模式结构{#schema-structure}
+
+![](../../assets/v7-only.svg)
 
 `<srcschema>`的基本结构如下：
 
@@ -166,7 +168,7 @@ ht-degree: 1%
 </srcSchema>
 ```
 
-### 映射Adobe Campaign/DBMS数据{#mapping-the-types-of-adobe-campaign-dbms-data}的类型
+### 映射Adobe Campaign/DBMS数据类型 {#mapping-the-types-of-adobe-campaign-dbms-data}
 
 下表列出了Adobe Campaign为不同数据库管理系统生成的数据类型的映射。
 
@@ -299,7 +301,7 @@ ht-degree: 1%
 
 数据架构的&#x200B;**`<elements>`**&#x200B;和&#x200B;**`<attributes>`**&#x200B;元素可以使用各种属性进行扩充。 您可以填充标签以描述当前元素。
 
-### 标签和描述{#labels-and-descriptions}
+### 标签和描述 {#labels-and-descriptions}
 
 * **label**&#x200B;属性允许您输入简短描述。
 
@@ -331,7 +333,7 @@ ht-degree: 1%
    <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
    ```
 
-### 默认值{#default-values}
+### 默认值 {#default-values}
 
 使用&#x200B;**default**&#x200B;属性可定义在内容创建时返回默认值的表达式。
 
@@ -356,7 +358,7 @@ ht-degree: 1%
 
 ### 明细列表 {#enumerations}
 
-#### 自由枚举{#free-enumeration}
+#### 自由枚举 {#free-enumeration}
 
 通过&#x200B;**userEnum**&#x200B;属性，您可以定义自由枚举来记忆和显示通过此字段输入的值。 语法如下所示：
 
@@ -372,7 +374,7 @@ ht-degree: 1%
 >
 >在Adobe Campaign客户端控制台中， **[!UICONTROL Administration > Enumerations]**&#x200B;节点用于管理枚举。
 
-#### 设置枚举{#set-enumeration}
+#### 设置枚举 {#set-enumeration}
 
 通过&#x200B;**enum**&#x200B;属性，您可以定义在事先已知可能值列表时使用的固定枚举。
 
@@ -406,7 +408,7 @@ ht-degree: 1%
 * **名称**:内部存储的值的名称，
 * **标签**:标签。
 
-#### dbenum枚举{#dbenum-enumeration}
+#### dbenum枚举 {#dbenum-enumeration}
 
 * 通过&#x200B;**dbenum**&#x200B;属性，可定义属性与&#x200B;**enum**&#x200B;属性类似的枚举。
 
@@ -462,7 +464,7 @@ ht-degree: 1%
 <group label="Group2"/>
 ```
 
-## 使用XPath {#referencing-with-xpath}进行引用
+## 使用XPath引用 {#referencing-with-xpath}
 
 Adobe Campaign中使用XPath语言来引用属于数据模式的元素或属性。
 
@@ -488,7 +490,6 @@ XPath是一种语法，用于在XML文档的树中查找节点。
 >
 
 
-
 也可以定义复杂的表达式，例如以下算术运算：
 
 * **@gender+1**:向genderattribute的内容中添加 **** 1,
@@ -506,7 +507,7 @@ XPath是一种语法，用于在XML文档的树中查找节点。
 * **Year(@created)**:返回“已创建”属性中包含的日期年份。
 * **GetEmailDomain(@email)**:返回电子邮件地址的域。
 
-## 通过计算字符串{#building-a-string-via-the-compute-string}构建字符串
+## 通过计算字符串生成字符串 {#building-a-string-via-the-compute-string}
 
 **计算字符串**&#x200B;是XPath表达式，用于构建表示与架构关联的表中的记录的字符串。 **计算** 字符串主要用于图形界面以显示所选记录的标签。
 

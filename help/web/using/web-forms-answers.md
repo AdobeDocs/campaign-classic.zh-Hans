@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Web 窗体答案{#web-forms-answers}
+
+![](../../assets/common.svg)
 
 ## 响应存储字段 {#response-storage-fields}
 

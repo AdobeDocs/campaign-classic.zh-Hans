@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -15,11 +15,13 @@ ht-degree: 3%
 
 # 工作流热图 {#workflow-heatmap}
 
+![](../../assets/common.svg)
+
 Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所有工作流。 它仅适用于&#x200B;**Campaign Administrators**。
 
 在[本页](../../production/using/monitoring-guidelines.md)中了解监控Campaign进程的其他方法。
 
-## 工作流热图{#about-the-workflow-heatmap}入门
+## 工作流热图入门 {#about-the-workflow-heatmap}
 
 通过提供并发工作流数的快速概述，Workflow HeatMap使Adobe Campaign平台管理员能够监控实例的负载并相应地规划工作流。
 
@@ -29,16 +31,16 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
 * 按持续时间筛选工作流，以查看哪些工作流可能遇到问题
 * 按持续时间筛选活动，以查看哪些活动可能遇到问题
 * 轻松查找个别工作流和所有相关活动（及持续时间）
-* 按工作流类型过滤：[技术工作流](../../workflow/using/building-a-workflow.md#technical-workflows)或[营销活动工作流](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* 按工作流类型过滤：[技术工作流](building-a-workflow.md#technical-workflows)或[营销活动工作流](building-a-workflow.md#campaign-workflows)
 * 查找要分析的特定工作流
 
 >[!NOTE]
 >
->除了&#x200B;**工作流热图**&#x200B;之外，您还可以创建一个工作流，该工作流将允许您监视一组工作流的状态并向主管发送定期消息。 有关更多信息，请参阅[专用部分](../../workflow/using/supervising-workflows.md)。
+>除了&#x200B;**工作流热图**&#x200B;之外，您还可以创建一个工作流，该工作流将允许您监视一组工作流的状态并向主管发送定期消息。 有关更多信息，请参阅[专用部分](supervising-workflows.md)。
 
-使用工作流热图需要对以下概念有很好的了解：[工作流](../../workflow/using/about-workflows.md)、[活动](../../workflow/using/about-activities.md)和[工作流最佳实践](../../workflow/using/workflow-best-practices.md)。
+使用工作流热图需要对以下概念有很好的了解：[工作流](about-workflows.md)、[活动](about-activities.md)和[工作流最佳实践](workflow-best-practices.md)。
 
-## 自定义工作流热图{#using-the-heatmap}
+## 自定义工作流热图 {#using-the-heatmap}
 
 >[!NOTE]
 >
@@ -75,14 +77,14 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
 
 1. 您还可以对&#x200B;**[!UICONTROL Workflow type]**&#x200B;进行筛选：
 
-   * **[!UICONTROL Technical]** :仅 [显示现成的技术工](../../workflow/using/building-a-workflow.md#technical-workflows) 作流 [和数据](../../workflow/using/targeting-data.md#data-management) 管理工作流。
-   * **[!UICONTROL Marketing]** :仅显示与营销活动链接的工作流(称为 [营销活动工作流](../../workflow/using/building-a-workflow.md#campaign-workflows))。
+   * **[!UICONTROL Technical]** :仅 [显示现成的技术工](building-a-workflow.md#technical-workflows) 作流 [和数据](targeting-data.md#data-management) 管理工作流。
+   * **[!UICONTROL Marketing]** :仅显示与营销活动链接的工作流(称为 [营销活动工作流](building-a-workflow.md#campaign-workflows))。
 
 1. 要按名称搜索特定工作流，您还可以使用&#x200B;**[!UICONTROL Workflow name filter]**&#x200B;字段。
 
 1. 如果在这两个时间之间编辑了一些工作流，请单击&#x200B;**[!UICONTROL Reload data]**&#x200B;按钮以刷新网格中显示的数据。
 
-## 解释工作流热图{#reading-the-heatmap}
+## 解释工作流热图 {#reading-the-heatmap}
 
 营销活动工作流热图是一个自然可读的网格，从左上角到右下角，允许查找具有绿色到红色编码范围的“热区”。
 
@@ -110,11 +112,11 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
 1. 单击工作流ID或名称，以直接打开工作流。
 1. 要返回到&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;视图，请单击&#x200B;**[!UICONTROL Home]**&#x200B;按钮。
 
-## 用例：使用热图执行{#use-cases--using-the-heatmap-to-take-actions}操作
+## 用例：使用热图执行操作 {#use-cases--using-the-heatmap-to-take-actions}
 
 在以下两种主要情况下，营销活动工作流热图非常有用。
 
-### 减少并发工作流数{#reducing-the-number-of-concurrent-workflows}
+### 减少并发工作流的数量 {#reducing-the-number-of-concurrent-workflows}
 
 作为Campaign管理员，Workflow HeatMap可以帮助您了解实例的负载情况，并在适当时规划现有或新的工作流。
 
@@ -129,7 +131,7 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
    * 如果您遇到性能问题，并且网格中显示了一个或多个红色单元格，请考虑更改多个工作流的开始时间。 要求营销用户将工作流从繁忙（“热”）时段手动移至更多可用时段。 这应该能够保持当天的活动稳定级别。
    * 要避免出现峰值并防止实例过载，请在规划新工作流之前查看HeatMap并选择最佳时间。 考虑网格中与灰色或绿色单元格对应的时隙，以启动新工作流。
 
-### 查找影响性能的长时间运行的工作流{#finding-long-running-workflows-that-impact-performance}
+### 查找影响性能的长时间运行的工作流 {#finding-long-running-workflows-that-impact-performance}
 
 作为Campaign管理员，工作流热图可帮助您查找可能会减慢活动速度的最长工作流。
 
@@ -145,7 +147,7 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
    * 建议营销用户拆分最长的工作流，以缩短处理时间。
    * 开始对特定工作流和特定活动（例如JavaScript、导入、导出等）进行更深入的分析，以隔离问题并更轻松地解决问题。
 
-## 使用HeatMap改进工作流规划{#example--using-the-heatmap-to-improve-workflow-planning}
+## 使用HeatMap改进工作流规划 {#example--using-the-heatmap-to-improve-workflow-planning}
 
 以下示例显示了在使用Adobe Campaign Workflow HeatMap时，如何更高效地进行规划以及如何提高性能。
 

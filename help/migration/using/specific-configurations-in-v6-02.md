@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7e8f8488-f3ef-4b64-9981-335d67caf372
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # v6.02 中的特定配置{#specific-configurations-in-v6-02}
+
+![](../../assets/v7-only.svg)
 
 以下部分详细介绍从v6.02迁移时需要的其他配置。您还应该配置[常规配置](../../migration/using/general-configurations.md)部分中详述的设置。
 
@@ -37,7 +39,7 @@ Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/
 
 如果您已修改这些Web应用程序并希望继续在v7中使用它们，则必须在不同的安全区中激活&#x200B;**allowSQLIncompent**&#x200B;选项，然后重新启动后期升级。 有关更多信息，请参阅[SQLData](../../migration/using/general-configurations.md#sqldata)一节。
 
-## 用户友好：主页和导航{#user-friendliness--home-page-and-navigation}
+## 用户友好：主页和导航 {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
@@ -73,7 +75,7 @@ sessionTokenOnly="true"
 >
 >请记住断开连接，然后重新连接控制台以注册修改。
 
-## 消息中心{#message-center}
+## 消息中心 {#message-center}
 
 迁移消息中心控制实例后，必须重新发布事务型消息模板才能使用。
 

@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 配置 SpamAssassin{#configuring-spamassassin}
+
+![](../../assets/v7-only.svg)
 
 >[!NOTE]
 >
@@ -37,7 +39,7 @@ SpamAssassin是一款用于过滤不良电子邮件的软件。 与此软件结�
 
 在Perl中部署SpamAssassin及其模块要求Adobe Campaign应用程序服务器配备通过HTTP连接（TCP/80流）进行Internet访问的功能。
 
-## 在Windows计算机上安装{#installing-on-a-windows-machine}
+## 在Windows计算机上安装 {#installing-on-a-windows-machine}
 
 要在Windows上安装和配置SpamAssassin以启用与Adobe Campaign的集成，请应用以下步骤：
 
@@ -46,7 +48,7 @@ SpamAssassin是一款用于过滤不良电子邮件的软件。 与此软件结�
 
 ### 安装SpamAssassin {#installing-spamassassin}
 
-1. 使用您的用户凭据连接到[Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 详细了解[本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)中的软件分发。
+1. 使用您的用户凭据连接到[Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)。 详细了解[本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans?lang=en)中的软件分发。
 1. 下载&#x200B;**Neolane Spam Assassin（Windows安装）(2.0)**&#x200B;文件(neolane_spamassassin.2.0.zip)。
 1. 将此文件复制到Adobe Campaign服务器，然后解压缩。
 
@@ -134,9 +136,9 @@ SpamAssassin是一款用于过滤不良电子邮件的软件。 与此软件结�
    sa-update --no-gpg
    ```
 
-## 在Linux计算机上安装{#installing-on-a-linux-machine}
+## 在Linux计算机上安装 {#installing-on-a-linux-machine}
 
-### Debian {#installation-steps-in-debian}中的安装步骤
+### Debian中的安装步骤 {#installation-steps-in-debian}
 
 * 如有必要，请使用以下命令安装Perl和SpamAssassin:
 
@@ -151,7 +153,7 @@ SpamAssassin是一款用于过滤不良电子邮件的软件。 与此软件结�
    /usr/local/[NSTALL]/nl6/bin/spamcheck.pl"/>
    ```
 
-### RHEL/CentOS {#installation-steps-in-rhel-centos}中的安装步骤
+### RHEL/CentOS中的安装步骤 {#installation-steps-in-rhel-centos}
 
 如有必要，请安装Perl并使用CPAN恢复包：
 
@@ -165,7 +167,7 @@ cpan XML::Writer
 cpan Mail::SpamAssassin
 ```
 
-### 更新筛选规则{#updating-filter-rules}
+### 更新过滤器规则 {#updating-filter-rules}
 
 可以使用&#x200B;**sa-update**&#x200B;工具自动更新过滤器规则。 有关更多信息，请参阅官方的SpamAssassin网站[http://spamassassin.apache.org/](http://spamassassin.apache.org/)。
 
@@ -185,7 +187,7 @@ test -x /usr/bin/sa-update || exit 0
 crontab-e
 ```
 
-### 性能优化{#performance-optimization}
+### 性能优化 {#performance-optimization}
 
 要提高Linux中的性能，请编辑&#x200B;**/etc/spamassassin/local.cf**&#x200B;文件，并在文件末尾添加以下行：
 

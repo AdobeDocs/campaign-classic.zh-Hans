@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 使用本地批准活动{#using-the-local-approval-activity}
+
+![](../../assets/common.svg)
 
 通过将&#x200B;**[!UICONTROL Local approval]**&#x200B;活动集成到定位工作流中，您可以在发送投放之前设置收件人批准流程。
 
@@ -47,11 +49,11 @@ ht-degree: 2%
 
    ![](assets/local_validation_intro_5.png)
 
-## 步骤1:创建数据分发模板{#step-1--creating-the-data-distribution-template-}
+## 步骤1:创建数据分发模板 {#step-1--creating-the-data-distribution-template-}
 
 利用数据分发模板，可限制根据数据分组进行定位所产生的群体，同时允许您将每个值分配给本地主管。 在本例中，我们将&#x200B;**[!UICONTROL Email address domain]**&#x200B;字段定义为分发字段，并为每个本地主管分配了一个域
 
-有关创建数据分发模板的更多信息，请参阅[限制每个数据分发的子集记录数](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution)。
+有关创建数据分发模板的更多信息，请参阅[限制每个数据分发的子集记录数](split.md#limiting-the-number-of-subset-records-per-data-distribution)。
 
 1. 要创建数据分发模板，请转到&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;节点，然后单击&#x200B;**[!UICONTROL New]**。
 
@@ -85,7 +87,7 @@ ht-degree: 2%
       >
       >确保为运算符分配了相应的权限。
 
-## 步骤2:创建定位工作流{#step-2--creating-the-targeting-workflow}
+## 步骤2:创建定位工作流 {#step-2--creating-the-targeting-workflow}
 
 要设置此用例，我们创建了以下定位工作流：
 
@@ -102,11 +104,11 @@ ht-degree: 2%
 * 第二个&#x200B;**[!UICONTROL Local approval]**&#x200B;活动，
 * 一个&#x200B;**[!UICONTROL End]**&#x200B;活动。
 
-### 查询、交集和拆分{#queries--intersection-and-split}
+### 查询、交集和拆分 {#queries--intersection-and-split}
 
 上游定位由两个查询组成，一个交集，一个拆分。 使用使用数据分发模板的&#x200B;**[!UICONTROL Split]**&#x200B;活动，可以限制定位后产生的群体。
 
-有关配置拆分活动的更多信息，请参阅[Split](../../workflow/using/split.md)。 [限制每个数据分发的子集记录数](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution)中详细介绍了数据分发模板的创建。
+有关配置拆分活动的更多信息，请参阅[Split](split.md)。 [限制每个数据分发的子集记录数](split.md#limiting-the-number-of-subset-records-per-data-distribution)中详细介绍了数据分发模板的创建。
 
 如果不想限制查询中的群体，则不必使用&#x200B;**[!UICONTROL Query]**、**[!UICONTROL Intersection]**&#x200B;和&#x200B;**[!UICONTROL Split]**&#x200B;活动。 在这种情况下，请完成第一个&#x200B;**[!UICONTROL Local approval]**&#x200B;活动中的数据分发模板。
 
@@ -130,11 +132,11 @@ ht-degree: 2%
 
 ![](assets/local_validation_intro_1.png)
 
-### 批准通知{#approval-notification}
+### 批准通知 {#approval-notification}
 
 **[!UICONTROL Local approval]**&#x200B;活动允许您向每个本地主管发送通知。
 
-有关配置&#x200B;**[!UICONTROL Local approval]**&#x200B;活动的更多信息，请参阅[本地批准](../../workflow/using/local-approval.md)。
+有关配置&#x200B;**[!UICONTROL Local approval]**&#x200B;活动的更多信息，请参阅[本地批准](local-approval.md)。
 
 ![](assets/local_validation_workflow_2.png)
 
@@ -158,7 +160,7 @@ ht-degree: 2%
 
 ![](assets/local_validation_workflow_3.png)
 
-### 反馈通知{#feedback-notification}
+### 反馈通知 {#feedback-notification}
 
 第二个&#x200B;**[!UICONTROL Local approval]**&#x200B;活动允许您向每个本地主管发送投放反馈通知。
 
@@ -174,7 +176,7 @@ ht-degree: 2%
 
 ![](assets/local_validation_intro_3.png)
 
-### 管理员{#approval-tracking-by-the-administrator}的批准跟踪
+### 管理员的批准跟踪 {#approval-tracking-by-the-administrator}
 
 每次本地批准活动启动时，都会创建一个批准任务。 管理员可以控制这些批准任务中的每项。
 

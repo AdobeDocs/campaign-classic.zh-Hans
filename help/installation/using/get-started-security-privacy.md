@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # 安全和隐私入门 {#get-started-security-privacy}
+
+![](../../assets/v7-only.svg)
 
 本节将介绍有关安全和隐私方面需要检查的关键元素。 某些配置只能由内部部署客户执行。
 
@@ -88,7 +90,7 @@ ht-degree: 8%
 
 <img src="assets/do-not-localize/icon_web.svg" width="60px">
 
-配置Web服务器(Apache/IIS)时，应遵循以下几个最佳实践：
+配置Web服务器(Apache/IIS)时，应遵循以下几项最佳实践：
 
 * 禁用旧SSL版本和密码
 * 删除TRACE方法

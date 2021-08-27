@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 创建报表的关键步骤{#about-reports-creation-in-campaign}
+
+![](../../assets/common.svg)
 
 要生成Campaign数据库中数据的统计信息，您可以创建报告并根据需要调整其内容和布局。 这些报表可以与其他运算符共享。
 

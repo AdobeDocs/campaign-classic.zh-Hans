@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 全局报告 {#global-reports}
+
+![](../../assets/common.svg)
 
 这些报告涉及整个数据库中数据的活动。 要查看报表功能板，请转到&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。
 
@@ -49,7 +51,7 @@ ht-degree: 2%
 
 您可以通过更改时间刻度来配置显示的值：1小时查看、3小时查看、24小时查看等。 单击 **[!UICONTROL Refresh]** 以确认您的选择。
 
-## 用户活动{#user-activities}
+## 用户活动 {#user-activities}
 
 此报表以图表形式显示每半小时、每小时或每天的打开数、点击数和交易记录的细分。
 
@@ -156,7 +158,7 @@ ht-degree: 2%
 * **[!UICONTROL Global rate]** :此比率表示与所有浏览器上的访客总数相比，每个版本的访客的细分情况。
 * **[!UICONTROL Relative rate]** :此比率表示与访客总数（在此浏览器上）相比，每个版本的访客的细分情况。
 
-### 共享到社交网络{#sharing-to-social-networks}
+### 共享到社交网络 {#sharing-to-social-networks}
 
 病毒式营销让投放收件人与其联系网络共享信息：他们可以添加指向其配置文件(Facebook、Twitter等)的链接 或者给朋友发个信息。 在投放中跟踪每次共享和每次访问共享信息。 有关病毒式营销的更多信息，请参阅[此部分](../../delivery/using/viral-and-social-marketing.md)。
 
@@ -191,7 +193,7 @@ ht-degree: 2%
 
 本节包括两个图表，它们表示共享活动的细分，并按社交网络打开。
 
-## 共享活动的统计资料{#statistics-on-sharing-activities}
+## 关于共享活动的统计资料 {#statistics-on-sharing-activities}
 
 此报表显示了共享到社交网络(Facebook、Twitter、电子邮件等)的演变 及时。
 
@@ -244,7 +246,7 @@ ht-degree: 2%
 * **[!UICONTROL Global rate]** :此比率表示访客（每个版本）与整个操作系统中的访客总数之间的细分。
 * **[!UICONTROL Relative rate]** :此比率表示访客（每个版本）与此操作系统的访客总数之间的关系。
 
-## 订阅跟踪{#subscription-tracking}
+## 订阅跟踪 {#subscription-tracking}
 
 此报告可让您监控信息服务订阅情况。 它显示订阅和退订。
 
@@ -270,7 +272,7 @@ ht-degree: 2%
 
 此图表显示了相关期间订阅和退订的演变情况。
 
-## 投放统计数据{#delivery-statistics}
+## 投放统计 {#delivery-statistics}
 
 此报表显示按互联网域、处理和发送的所有消息、硬退回和软退回、打开、点击和退订的细分。
 
@@ -291,7 +293,7 @@ ht-degree: 2%
 * **[!UICONTROL Clicks]** :与成功处理的消息数量相比，点击投放至少一次的人数百分比。
 * **[!UICONTROL Unsubscription]** :退订链接的点击次数与成功处理消息数的百分比。
 
-## 打开次数{#breakdown-of-opens}的划分
+## 打开次数的划分 {#breakdown-of-opens}
 
 此报表显示了在相关时段内，操作系统、设备和浏览器的打开次数的细分情况。 对于每个类别，使用两个图表。 第一个报表显示有关计算机和移动设备上打开次数的统计信息。 第二个显示仅与移动设备上的打开次数相关的统计信息。
 

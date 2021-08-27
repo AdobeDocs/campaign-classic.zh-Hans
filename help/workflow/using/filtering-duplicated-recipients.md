@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 7cbabbae-375f-4336-9afa-6356f37a79d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 过滤重复的收件人 {#filtering-duplicated-recipients}
+
+![](../../assets/common.svg)
 
 在此示例中，我们希望过滤在投放中显示两次或更多次的收件人，以恢复重复的用户档案。
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 测试{#test}
+
+![](../../assets/common.svg)
 
 **Test**&#x200B;类型活动激活满足其相关条件的第一过渡。 如果未满足任何条件，并且激活了&#x200B;**[!UICONTROL Use the default fork]**&#x200B;选项，则将激活默认过渡。
 
@@ -23,7 +25,7 @@ ht-degree: 5%
 
 有关可通过工作流JavaScript访问的应用程序服务器的所有其他JavaScript函数和SOAP方法的更多信息，请参阅[JSAPI文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)。
 
-您还可以直接从此编辑器插入变量。 有关如何使用变量的更多信息，请参阅[此部分](../../workflow/using/javascript-scripts-and-templates.md#variables)。
+您还可以直接从此编辑器插入变量。 有关如何使用变量的更多信息，请参阅[此部分](javascript-scripts-and-templates.md#variables)。
 
 可以从活动属性编辑窗口添加、删除或排序条件，也可以从过渡中修改条件。
 

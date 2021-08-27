@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 19%
@@ -14,6 +14,8 @@ ht-degree: 19%
 ---
 
 # 通信渠道{#communication-channels}
+
+![](../../assets/common.svg)
 
 借助Adobe Campaign，您可以发送跨渠道营销活动，包括电子邮件、短信、LINE消息、推送通知和直邮，并使用各种专用[报告](../../reporting/using/delivery-reports.md)衡量其有效性。 这些消息通过投放设计和发送，并且可以针对每个收件人进行个性化。
 

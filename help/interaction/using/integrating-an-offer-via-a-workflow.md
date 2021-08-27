@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 3%
@@ -15,6 +15,8 @@ ht-degree: 3%
 
 # 通过工作流集成优惠{#integrating-an-offer-via-a-workflow}
 
+![](../../assets/v7-only.svg)
+
 在投放活动本身之外，通过多个工作流活动可定义选件的呈现方式：
 
 * 投放概要
@@ -22,7 +24,7 @@ ht-degree: 3%
 * 优惠引擎
 * 单元格优惠
 
-## 投放概要  {#delivery-outline}
+## 投放概要 {#delivery-outline}
 
 利用营销活动工作流中提供的投放概要活动，可显示在当前正在进行的营销活动的投放概要中引用的选件。
 
@@ -62,7 +64,7 @@ ht-degree: 3%
 * 指定选件或选件引擎调用。
 * 引用指向选件的链接。
 
-### 指定选件或对选件引擎的调用{#specifying-an-offer-or-a-call-to-the-offer-engine}
+### 指定选件或对选件引擎的调用 {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
 配置查询后（请参阅[工作流指南](../../workflow/using/query.md)）：
 
@@ -89,7 +91,7 @@ ht-degree: 3%
    >
    >可用于预览的建议数取决于扩充活动中执行的配置，而不是直接在投放中执行的任何可能的配置。
 
-### 引用指向选件{#referencing-a-link-to-an-offer}的链接
+### 引用指向选件的链接 {#referencing-a-link-to-an-offer}
 
 您还可以引用扩充活动中选件的链接。
 
@@ -111,7 +113,7 @@ ht-degree: 3%
    >
    >可用于预览的建议数取决于投放中执行的配置。
 
-### 存储优惠排名和权重{#storing-offer-rankings-and-weights}
+### 存储优惠排名和权重 {#storing-offer-rankings-and-weights}
 
 默认情况下，当使用&#x200B;**扩充**&#x200B;活动来提供选件时，其排名和权重不会存储在建议表中。
 

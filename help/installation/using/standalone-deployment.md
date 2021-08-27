@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 独立部署{#standalone-deployment}
+
+![](../../assets/v7-only.svg)
 
 此配置包含同一计算机上的所有组件：
 
@@ -55,7 +57,7 @@ ht-degree: 3%
 * 在广播时应用程序可能会减慢。
 * 应用程序服务器必须从外部可用（例如，当它位于DMZ中时），因为它承载着重定向服务器。
 
-## 安装和配置步骤{#installation-and-configuration-steps}
+## 安装和配置步骤 {#installation-and-configuration-steps}
 
 ### 先决条件 {#prerequisites}
 
@@ -76,7 +78,7 @@ ht-degree: 3%
 * DNS掩码：**console.campaign.net***（仅用于客户端控制台连接和报表）
 * 数据库：**campaign:demo@dbsrv**
 
-### 安装和配置（单台计算机）{#installing-and-configuring--single-machine-}
+### 安装和配置（单台计算机） {#installing-and-configuring--single-machine-}
 
 应用以下步骤：
 

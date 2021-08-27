@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 使用多维数据集浏览数据{#using-cubes-to-explore-data}
+
+![](../../assets/common.svg)
 
 Marketing Analytics可以更轻松地创建报表，以及通过多维数据集识别和选择数据库中的数据。 这样，您就可以：
 
@@ -25,15 +27,15 @@ Marketing Analytics可以更轻松地创建报表，以及通过多维数据集�
 >
 >创建或修改多维数据集时，需要使用Marketing Analytics。 有关更多信息，请参阅[关于多维数据集](../../reporting/using/about-cubes.md)。
 
-## 浏览报告{#exploring-the-data-in-a-report}中的数据
+## 浏览报表中的数据 {#exploring-the-data-in-a-report}
 
-### 第1步 — 基于多维数据集{#step-1---creating-a-report-based-on-a-cube}创建报告
+### 第1步 — 基于多维数据集创建报告 {#step-1---creating-a-report-based-on-a-cube}
 
 要创建基于多维数据集的报告，请单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Create]**&#x200B;按钮，然后选择要使用的多维数据集。
 
 此处详细介绍了该过程：[基于多维数据集](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube)创建报告。
 
-### 步骤2 — 选择行和列{#step-2---selecting-lines-and-columns}
+### 步骤2 — 选择行和列 {#step-2---selecting-lines-and-columns}
 
 默认显示显示立方的前两个维度（在本例中为年龄和城市）。
 
@@ -72,7 +74,7 @@ Marketing Analytics可以更轻松地创建报表，以及通过多维数据集�
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
-### 第3步 — 将测量配置为显示{#step-3---configuring-the-measures-to-display}
+### 步骤3 — 配置要显示的测量 {#step-3---configuring-the-measures-to-display}
 
 行和列一旦到位，请指明要显示的度量及其显示模式。
 
@@ -118,7 +120,7 @@ Marketing Analytics可以更轻松地创建报表，以及通过多维数据集�
 
    然后单击&#x200B;**[!UICONTROL Edit the dynamic measure]**&#x200B;以访问设置菜单。
 
-## 构建目标群体{#building-a-target-population}
+## 建立目标人口 {#building-a-target-population}
 
 使用多维数据集构建报表允许您从表中收集数据并将其保存在列表中。
 
@@ -154,7 +156,7 @@ Marketing Analytics可以更轻松地创建报表，以及通过多维数据集�
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
-## 在报表{#inserting-a-pivot-table-into-a-report}中插入数据透视表
+## 在报表中插入引导表 {#inserting-a-pivot-table-into-a-report}
 
 要创建表并浏览多维数据集中的数据，请应用以下步骤：
 

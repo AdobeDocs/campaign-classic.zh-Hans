@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 配置接口{#configuring-the-interface}
+
+![](../../assets/v7-only.svg)
 
 要在Adobe Campaign界面中查看新收件人表并与之对话，请应用以下步骤：
 
@@ -27,7 +29,7 @@ Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数�
 1. 使用与外部收件人表匹配的架构名称更改&#x200B;**Nms_DefaultRcpSchema**&#x200B;变量的值(在本例中为：cus:indival)。
 1. 保存更改。
 
-## 创建新表单{#creating-a-new-form-}
+## 创建新表单 {#creating-a-new-form-}
 
 创建新表单后，您可以查看和编辑外部收件人表的数据。
 
@@ -60,7 +62,7 @@ Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数�
 
 1. 保存创建。
 
-## 在导航层次结构{#creating-a-new-type-of-folder-in-the-navigation-hierarchy}中创建新类型的文件夹
+## 在导航层次结构中创建新类型的文件夹 {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
 1. 转到&#x200B;**[!UICONTROL Administration>Configuration>Navigation hierarchies]**&#x200B;节点。
 1. 创建新的&#x200B;**xtk:navtree**&#x200B;类型&#x200B;**navtree**&#x200B;文档。

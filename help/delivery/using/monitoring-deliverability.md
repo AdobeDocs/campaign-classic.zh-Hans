@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 监测可投放性{#monitoring-deliverability}
+
+![](../../assets/common.svg)
 
 在下面，您将找到有关Adobe Campaign提供的不同监控工具的详细信息，以及有关利用Adobe Campaign提供的功能监控平台投放能力的其他一些准则。
 

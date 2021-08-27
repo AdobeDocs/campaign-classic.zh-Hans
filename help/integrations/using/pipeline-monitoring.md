@@ -5,7 +5,7 @@ description: 配置集成
 audience: integrations
 content-type: reference
 exl-id: 84399496-33fd-4936-85e7-32de8503740f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # 管道监测 {#pipeline-monitoring}
+
+![](../../assets/common.svg)
 
 [!DNL pipelined]状态Web服务提供有关[!DNL pipelined]进程状态的信息。
 
@@ -69,7 +71,7 @@ ht-degree: 1%
    * retry-validity-duration-ms:从时间处理开始的持续时间重试，直到消息被丢弃。
    * 管道消息报表
 
-## 管道消息报告{#pipeline-report}
+## 管道消息报告 {#pipeline-report}
 
 此报表显示过去五天内每小时的消息数。
 

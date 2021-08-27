@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 用例：创建电子邮件投放{#use-case-creating-an-email-delivery}
+
+![](../../assets/common.svg)
 
 在此用例中，您将学习使用Adobe Campaign数字内容编辑器(DCE)设计电子邮件投放的步骤。
 

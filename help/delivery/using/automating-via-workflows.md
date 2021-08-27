@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 使用工作流实现自动化{#automating-via-workflows}
 
-## 内容管理活动{#content-management-activity}
+![](../../assets/common.svg)
+
+## 内容管理活动 {#content-management-activity}
 
 使用通过Adobe Campaign客户端界面配置的工作流程，可以自动创建、编辑和发布内容。
 
@@ -48,7 +50,7 @@ ht-degree: 1%
 
    通过发布模板创建新内容。 内容实例将保存在填充的“String”文件夹中。
 
-### 更新内容{#update-the-content}
+### 更新内容 {#update-the-content}
 
 * **主题**
 
@@ -60,7 +62,7 @@ ht-degree: 1%
 
    XSL样式表可用于转换传入的XML数据。
 
-### 执行{#action-to-execute}的操作
+### 要执行的操作 {#action-to-execute}
 
 * **保存**
 
@@ -76,7 +78,7 @@ ht-degree: 1%
 
 ## 示例 {#examples}
 
-### 自动创建和交付内容{#automating-content-creation-and-delivery}
+### 自动创建和交付内容 {#automating-content-creation-and-delivery}
 
 以下示例可自动创建和交付内容块。
 
@@ -158,7 +160,7 @@ ht-degree: 1%
 
 完成活动的最后一步是准备并启动投放。
 
-### 创建内容供稍后发布{#creating-content-and-publishing-it-later}
+### 创建内容以供稍后发布 {#creating-content-and-publishing-it-later}
 
 此示例会创建一个内容块，并在特定时间延迟后启动文件发布。
 
@@ -190,7 +192,7 @@ ht-degree: 1%
 
 ![](assets/d_ncs_content_workflow9.png)
 
-### 创建投放及其内容{#creating-the-delivery-and-its-content}
+### 创建投放及其内容 {#creating-the-delivery-and-its-content}
 
 此示例使用与第一个示例相同的概念，但只有它在第一步中创建投放操作。
 
@@ -212,15 +214,15 @@ ht-degree: 1%
 
 活动的最终操作是准备并启动投放。
 
-### 从FTP {#importing-content-from-ftp}导入内容
+### 从FTP导入内容 {#importing-content-from-ftp}
 
 如果您的交付内容位于FTP或SFTP服务器上的HTML文件中，则可以轻松地将此内容加载到Adobe Campaign交付中。 请参见[此示例](../../workflow/using/loading-delivery-content.md)。
 
-### 从Amazon Simple Storage Service(S3)连接器{#importing-content-from-amazon-simple-storage-service--s3--connector}导入内容
+### 从Amazon Simple Storage Service(S3)连接器导入内容 {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
 如果您的投放内容位于Amazon简单存储服务(S3)存储段中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参见[此示例](../../workflow/using/loading-delivery-content.md)。
 
-## 半自动更新{#semi-automatic-update}
+## 半自动更新 {#semi-automatic-update}
 
 可以在“半自动”模式下更新内容数据。 通过URL从XML馈送中恢复数据。
 

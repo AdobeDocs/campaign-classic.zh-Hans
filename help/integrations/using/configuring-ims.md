@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 2%
@@ -15,9 +15,11 @@ ht-degree: 2%
 
 # 配置IMS{#configuring-ims}
 
+![](../../assets/common.svg)
+
 >[!IMPORTANT]
 >
->AdobeIMS实施严格保留给Adobe技术管理员。 请联系您的Adobe主管以开始实施过程。
+>Adobe IMS实施严格由Adobe技术管理员负责。 请联系您的Adobe主管以开始实施过程。
 
 ## 先决条件 {#prerequisites}
 
@@ -30,17 +32,17 @@ ht-degree: 2%
 >
 >确保用户已链接到将与Adobe Campaign同步的Adobe Experience Cloud组。 请参阅[配置外部帐户](#configuring-the-external-account)。
 
-## 更新控制台{#updating-the-console}
+## 更新控制台 {#updating-the-console}
 
 要使用此功能，您必须安装最新版本的控制台。
 
-## 安装软件包{#installing-the-package}
+## 安装包 {#installing-the-package}
 
 必须安装&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;包。 安装集成包与安装标准包相同，有关详细信息，请参阅[本页](../../installation/using/installing-campaign-standard-packages.md)。
 
 ![](assets/ims_6.png)
 
-## 配置外部帐户{#configuring-the-external-account}
+## 配置外部帐户 {#configuring-the-external-account}
 
 在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中配置&#x200B;**Adobe Experience Cloud**&#x200B;外部帐户。
 

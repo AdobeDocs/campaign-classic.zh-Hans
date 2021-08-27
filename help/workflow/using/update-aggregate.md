@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 更新聚合{#update-aggregate}
+
+![](../../assets/common.svg)
 
 聚合在多维数据集级别定义，用于报告。 配置聚合时， **[!UICONTROL Workflow]**&#x200B;选项卡可用。
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 收集所有访问{#collecting-all-visits}
+
+![](../../assets/v7-only.svg)
 
 通过Adobe Campaign提供的Web跟踪模块，您可以收集收件人在消息中单击后进行网站跟踪的上下文中对网站特定页面的访问。
 
@@ -25,11 +27,11 @@ ht-degree: 3%
 >
 >Adobe Campaign平台不适用于消息中单击后访问网站的上下文之外的网站跟踪工具。 启用此选项后，可能会导致在托管服务器的计算机上（重定向、应用程序和数据库）大量使用资源。 建议您确保硬件架构能够支持此负载，并避免在最常访问的页面（如主页）中放置Web跟踪标记。
 
-## 服务器配置{#server-configuration}
+## 服务器配置 {#server-configuration}
 
 通过过载&#x200B;**serverConf.xml**&#x200B;文件的某些元素来配置服务器。 这些文件保存在Adobe Campaign安装目录的&#x200B;**conf**&#x200B;子目录中。
 
-### 重定向服务器{#redirection-server}
+### 重定向服务器 {#redirection-server}
 
 对于重定向服务器，将&#x200B;**redirection**&#x200B;元素的&#x200B;**trackWebVisitors**&#x200B;属性设置为&#x200B;**true**。
 
@@ -40,7 +42,7 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="true"
 trackingPassword=""
 ```
 
-## 配置默认匹配的营销活动{#configuring-a-default-matching-campaign}
+## 配置默认匹配的营销活动 {#configuring-a-default-matching-campaign}
 
 要通过客户端控制台查看跟踪信息，您必须：
 

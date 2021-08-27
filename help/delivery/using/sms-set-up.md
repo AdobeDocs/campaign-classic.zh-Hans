@@ -6,20 +6,22 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1677'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
 # 配置短信渠道 {#setting-up-sms-channel}
 
+![](../../assets/common.svg)
+
 要发送到移动电话，您需要：
 
 1. 指定连接器和消息类型的外部帐户。
 
-   请注意，现已弃用旧版连接器。 已弃用的功能仍然可用，但将不会进一步增强或支持这些功能。 在本页](../../rn/using/deprecated-features.md)中了解更多[信息。
+   请注意，现已弃用旧版连接器。 已弃用的功能仍然可用，但不会进一步增强或支持这些功能。请参阅[此页面](../../rn/using/deprecated-features.md)以了解详情。
 
 1. 在其中引用此外部帐户的投放模板。
 

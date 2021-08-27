@@ -6,7 +6,7 @@ description: 了解如何在FDA中配置对Google BigQuery的访问
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: 911302475b5ece96d527575148ee611fdb839753
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 2%
@@ -14,7 +14,9 @@ ht-degree: 2%
 ---
 
 
-# 配置对Google BigQuery的访问权限{#configure-fda-google-big-query}
+# 配置对Google BigQuery的访问权限 {#configure-fda-google-big-query}
+
+![](../../assets/v7-only.svg)
 
 使用Adobe Campaign Classic **联合数据访问**(FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对[!DNL Google BigQuery]的访问。
 
@@ -30,7 +32,7 @@ ht-degree: 2%
 
 ## Windows上的Google BigQuery {#google-windows}
 
-### 在Windows {#driver-window}上设置的驱动程序
+### 在Windows上设置的驱动程序 {#driver-window}
 
 1. 下载适用于Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)的[ODBC驱动程序。
 
@@ -56,7 +58,7 @@ ht-degree: 2%
 
 1. 然后，在Adobe Campaign Classic中，您可以配置[!DNL Google BigQuery]外部帐户。 有关如何配置外部帐户的更多信息，请参阅[此部分](#google-external)。
 
-### 在Windows {#bulk-load-window}上设置批量加载
+### 在Windows上设置批量加载 {#bulk-load-window}
 
 >[!NOTE]
 >
@@ -82,7 +84,7 @@ ht-degree: 2%
 
 ## Linux上的Google BigQuery {#google-linux}
 
-### 在Linux {#driver-linux}上设置的驱动程序
+### 在Linux上设置的驱动程序 {#driver-linux}
 
 1. 在安装ODBC驱动程序之前，您需要更新系统。 在Linux或CentOS上，运行以下命令：
 
@@ -204,7 +206,7 @@ ht-degree: 2%
 
 1. 然后，在Adobe Campaign Classic中，您可以配置[!DNL Google BigQuery]外部帐户。 有关如何配置外部帐户的更多信息，请参阅[此部分](#google-external)。
 
-### 在Linux {#bulk-load-linux}上设置批量加载
+### 在Linux上设置批量加载 {#bulk-load-linux}
 
 >[!NOTE]
 >
@@ -224,7 +226,7 @@ ht-degree: 2%
 
 1. 重新启动Adobe Campaign Classic以考虑所做的更改。
 
-## Google BigQuery外部帐户{#google-external}
+## Google BigQuery外部帐户 {#google-external}
 
 您需要创建一个[!DNL Google BigQuery]外部帐户，以将Adobe Campaign Classic实例连接到[!DNL Google BigQuery]外部数据库。
 

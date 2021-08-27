@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 1%
@@ -15,13 +15,15 @@ ht-degree: 1%
 
 # 投放概要{#delivery-outline}
 
+![](../../assets/common.svg)
+
 **投放大纲**&#x200B;允许您在营销活动工作流中使用大纲。 必须事先在营销活动中创建大纲。
 
 有关Adobe Campaign中投放大纲的更多信息，请参阅此[部分](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
 要配置活动，您只需选择所需的大纲以及计划的联系日期即可。 您可以通过添加分类或分类规则来添加筛选规则。
 
-## 示例：通过投放大纲{#example--inserting-an-offer-via-a-delivery-outline}插入选件
+## 示例：通过投放大纲插入选件 {#example--inserting-an-offer-via-a-delivery-outline}
 
 **投放大纲**&#x200B;活动在营销活动工作流中可用，它允许您显示当前正在进行的营销活动在投放大纲中引用的选件。
 

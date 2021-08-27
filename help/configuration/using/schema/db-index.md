@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
 
 ---
 
-# dbindex元素{#dbindex--element}
+# dbindex元素 {#dbindex--element}
 
-## 内容模型{#content-model-3}
+![](../../../assets/v7-only.svg)
+
+## 内容模型 {#content-model-3}
 
 dbindex:==keyfield
 
-## 属性{#attributes-3}
+## 属性 {#attributes-3}
 
 * @_operation（字符串）
 * @applicableIf（字符串）
@@ -27,19 +29,19 @@ dbindex:==keyfield
 * @name(MNTOKEN)
 * @unique（布尔）
 
-## 父项{#parents-3}
+## 父母 {#parents-3}
 
 `<element>`
 
-## 子项{#children-3}
+## 子项 {#children-3}
 
 `<keyfield>`
 
-## 说明{#description-3}
+## 说明 {#description-3}
 
 利用此元素，可定义链接到表的索引。
 
-## {#use-and-context-of-use-3}的使用和使用上下文
+## 使用和使用上下文 {#use-and-context-of-use-3}
 
 可以定义多个索引。 一个索引可以引用表的一个或多个字段。 索引声明通常遵循主架构元素的定义。
 
@@ -47,7 +49,7 @@ dbindex:==keyfield
 
 数据库中索引的名称是通过连接表的名称和索引的名称来计算的。 例如：在索引创建查询期间索引字段的表名“示例”、命名空间“自定义”、索引名“MyIndex” — >名称：&quot;CusSample_myIndex&quot;。
 
-## 属性描述{#attribute-description-3}
+## 属性描述 {#attribute-description-3}
 
 * **_operation（字符串）**:定义在数据库中写入的类型。
 
@@ -66,7 +68,7 @@ dbindex:==keyfield
 * **name(MNTOKEN)**:唯一索引名称。
 * **唯一（布尔）**:如果激活了此选项(@unique=&quot;true&quot;)，则属性可保证索引在其整个字段中的唯一性。
 
-## 示例{#examples-3}
+## 示例 {#examples-3}
 
 在“id”字段上创建索引。 (在数据库（查询）中创建索引时，`<dbindex>`元素上的“@unique”属性会触发添加“UNIQUE” SQL关键字。)
 

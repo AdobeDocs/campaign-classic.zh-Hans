@@ -6,20 +6,22 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1612'
 ht-degree: 6%
 
 ---
 
 # 工作流最佳实践{#workflow-best-practices}
 
-## 执行和性能{#execution-and-performance}
+![](../../assets/common.svg)
+
+## 执行和性能 {#execution-and-performance}
 
 下面列出了有关优化Campaign效果的一般准则，包括应用于工作流的最佳实践。
 
-[此部分](../../production/using/workflow-execution.md)中还提供了与工作流执行相关的故障诊断准则。
+[《Campaign Classicv7生产指南》](../../production/using/workflow-execution.md)中还提供了与工作流执行相关的疑难解答指南。
 
 ### 日志 {#logs}
 
@@ -42,9 +44,9 @@ JavaScript方法&#x200B;**[!UICONTROL logInfo()]**&#x200B;是调试工作流的�
    在工作流属性的&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡中，此选项将记录该工具从不同活动中生成的所有SQL查询。 这是查看平台实际执行的操作的好方法。 但是，此选项只应在开发期间临时使用，而不应在生产时激活。
 
 当日志不再需要时清除日志。 工作流历史记录不会自动清除：默认情况下，会保留所有消息。 可以通过&#x200B;**[!UICONTROL File > Actions]**菜单或单击列表上方工具栏中的“操作”按钮清除历史记录。 选择清除历史记录。
-要了解如何清除日志，请参阅此[文档](../../workflow/using/starting-a-workflow.md)。
+要了解如何清除日志，请参阅此[文档](starting-a-workflow.md)。
 
-### 工作流规划{#workflow-planning}
+### 工作流计划 {#workflow-planning}
 
 * 尝试在一天中保持活动的稳定级别，并避免出现峰值以防止实例过载。 要实现此目的，请在一天中平均分配工作流的开始时间。
 * 安排隔夜数据加载以减少资源争用。
@@ -68,7 +70,7 @@ JavaScript方法&#x200B;**[!UICONTROL logInfo()]**&#x200B;是调试工作流的�
 
 在最少情况下，只使用无条件停止。 请勿定期使用此操作。 对工作流生成的与数据库的连接不执行干净关闭会影响性能。
 
-### 在引擎选项{#execute-in-the-engine-option}中执行
+### 在引擎选项中执行 {#execute-in-the-engine-option}
 
 在&#x200B;**[!UICONTROL Workflow properties]**&#x200B;窗口中，切勿选中&#x200B;**[!UICONTROL Execute in the engine]**&#x200B;选项。 启用此选项后，工作流将具有优先级，所有其他工作流将由工作流引擎停止，直到此工作流完成为止。
 
@@ -76,13 +78,13 @@ JavaScript方法&#x200B;**[!UICONTROL logInfo()]**&#x200B;是调试工作流的�
 
 ## 工作流属性 {#workflow-properties}
 
-### 工作流文件夹{#workflow-folders}
+### 工作流文件夹 {#workflow-folders}
 
 Adobe建议您在专用文件夹中创建工作流。
 
 如果工作流影响整个平台（例如清理流程），则可以考虑在内置&#x200B;**[!UICONTROL Technical Workflows]**&#x200B;文件夹中添加子文件夹。
 
-### 工作流命名{#workflow-naming}
+### 工作流命名 {#workflow-naming}
 
 Adobe 建议为工作流赋予正确的名称和标签，这样工作流没有按照预期的方式执行，可轻松地找到并排除故障：填写工作流的描述字段，在其中加入执行流程的摘要，以便操作员能够轻松理解。
 
@@ -96,12 +98,12 @@ Adobe 建议为工作流赋予正确的名称和标签，这样工作流没有�
 * 010 — 导出 — 导出投放日志
 * 011 — 导出 — 导出跟踪日志
 
-### 工作流严重性{#workflow-severity}
+### 工作流严重性 {#workflow-severity}
 
 您可以在工作流属性的&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡中配置工作流的严重性：
 
 * 正常
-* 制作
+* 作品
 * 关键
 
 在创建工作流时提供此信息将帮助您了解配置流程的严重性。
@@ -116,34 +118,34 @@ Adobe 建议为工作流赋予正确的名称和标签，这样工作流没有�
 
 在工作流属性中，选择默认的&#x200B;**[!UICONTROL Workflow supervisors]**&#x200B;或自定义组作为监管员组。 确保至少有一个运算符属于此组，并设置了电子邮件。
 
-在开始构建工作流之前，请记住定义工作流监管者。 如果出现错误，系统会通过电子邮件通知他们。 有关更多信息，请参阅[管理错误](../../workflow/using/monitoring-workflow-execution.md#managing-errors)。
+在开始构建工作流之前，请记住定义工作流监管者。 如果出现错误，系统会通过电子邮件通知他们。 有关更多信息，请参阅[管理错误](monitoring-workflow-execution.md#managing-errors)。
 
-定期查看&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡，以查看活动工作流的整体状态。 有关更多信息，请参阅[实例监督](../../workflow/using/monitoring-workflow-execution.md#instance-supervision)。
+定期查看&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡，以查看活动工作流的整体状态。 有关更多信息，请参阅[实例监督](monitoring-workflow-execution.md#instance-supervision)。
 
-Workflow HeatMap使Adobe Campaign平台管理员能够监控实例的负载并相应地规划工作流。 有关更多信息，请参阅[工作流监控](../../workflow/using/heatmap.md)。
+Workflow HeatMap使Adobe Campaign平台管理员能够监控实例的负载并相应地规划工作流。 有关更多信息，请参阅[工作流监控](heatmap.md)。
 
-## 使用活动{#using-activities}
+## 使用活动 {#using-activities}
 
 >[!CAUTION]
 >
->您可以在同一工作流中复制并粘贴活动。 但是，我们不建议跨不同的工作流复制粘贴活动。 执行目标工作流时，附加到活动（如“投放”和“调度程序”）的某些设置可能会导致冲突和错误。 我们建议您改为&#x200B;**复制**&#x200B;工作流。 有关更多信息，请参阅[复制工作流](../../workflow/using/building-a-workflow.md#duplicating-workflows)。
+>您可以在同一工作流中复制并粘贴活动。 但是，我们不建议跨不同的工作流复制粘贴活动。 执行目标工作流时，附加到活动（如“投放”和“调度程序”）的某些设置可能会导致冲突和错误。 我们建议您改为&#x200B;**复制**&#x200B;工作流。 有关更多信息，请参阅[复制工作流](building-a-workflow.md#duplicating-workflows)。
 
-### 活动的名称{#name-of-the-activity}
+### 活动的名称 {#name-of-the-activity}
 
 在开发工作流时，所有活动都将具有名称，所有Adobe Campaign对象也将具有名称。 虽然该名称由工具生成，但我们建议您在配置时使用显式名称对其重命名。 以后执行该操作的风险在于，它可能会使用另一个先前活动的名称中断使用活动的工作流。 因此，更新姓名将是一项困难的工作。
 
 活动名称可在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中找到。 请勿将它们保留为&#x200B;**[!UICONTROL query]**、**[!UICONTROL query1]**、**[!UICONTROL query11]**，但应为它们指定明确的名称，如&#x200B;**[!UICONTROL querySubscribedRecipients]**。 此名称将显示在日志中，如果适用于SQL日志，这将有助于在配置工作流时调试该工作流。
 
-### 第一个和最后一个活动{#first-and-last-activities}
+### 第一个和最后一个活动 {#first-and-last-activities}
 
 * 始终以&#x200B;**[!UICONTROL Start]**&#x200B;活动或&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动启动工作流。 相关时，您还可以使用&#x200B;**[!UICONTROL External signal]**&#x200B;活动。
-* 在构建工作流时，每个分支只能使用一个&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动。 如果工作流的同一分支具有多个调度程序（相互链接），则要执行的任务数量将呈指数级增长，这将使数据库严重过载。此规则还适用于具有&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;选项卡的所有活动。 了解有关[计划](../../workflow/using/scheduler.md)的更多信息。
+* 在构建工作流时，每个分支只能使用一个&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动。 如果工作流的同一分支具有多个调度程序（相互链接），则要执行的任务数量将呈指数级增长，这将使数据库严重过载。此规则还适用于具有&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;选项卡的所有活动。 了解有关[计划](scheduler.md)的更多信息。
 
    ![](assets/wf-scheduler.png)
 
-* 对每个工作流使用&#x200B;**[!UICONTROL End]**&#x200B;活动。 这允许Adobe Campaign释放用于工作流中计算的临时空间。 有关更多信息，请参阅：[开始和结束](../../workflow/using/start-and-end.md)。
+* 对每个工作流使用&#x200B;**[!UICONTROL End]**&#x200B;活动。 这允许Adobe Campaign释放用于工作流中计算的临时空间。 有关更多信息，请参阅：[开始和结束](start-and-end.md)。
 
-### 活动{#javascript-within-an-activity}中的Javascript
+### 活动中的Javascript {#javascript-within-an-activity}
 
 初始化工作流活动时，您可能需要添加JavaScript。 这可以在活动的&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中完成。
 
@@ -155,7 +157,7 @@ Workflow HeatMap使Adobe Campaign平台管理员能够监控实例的负载并�
 
 ![](assets/workflow-signal-bp.png)
 
-## 工作流更新{#workflow-update}
+## 工作流更新 {#workflow-update}
 
 不应直接更新生产工作流。 除非该流程包含使用模板工作流创建营销活动，否则应首先在开发环境中对流程进行测试。 验证后，可以在生产环境中部署和启动工作流。
 

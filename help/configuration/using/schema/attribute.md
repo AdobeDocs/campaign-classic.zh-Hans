@@ -6,16 +6,18 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 0%
 
 ---
 
-# 属性元素{#attribute--element}
+# 属性元素 {#attribute--element}
 
-## 内容模型{#content-model}
+![](../../../assets/v7-only.svg)
+
+## 内容模型 {#content-model}
 
 属性：==帮助
 
@@ -35,13 +37,13 @@ _operation（字符串）、高级（布尔）、appliableIf（字符串）、au
 
 `<attribute>` 元素允许您在数据库中定义字段。
 
-## {#use-and-context-of-use}的使用和使用上下文
+## 使用和使用上下文 {#use-and-context-of-use}
 
 `<attribute>` 元素必须在元素中声 `<element>` 明。
 
 在`<srcschema>`中定义`<attribute>`元素的顺序不会影响数据库中的字段创建顺序。 创建顺序将按字母顺序排列。
 
-## 属性描述{#attribute-description}
+## 属性描述 {#attribute-description}
 
 * **_operation（字符串）**:定义在数据库中写入的类型。
 

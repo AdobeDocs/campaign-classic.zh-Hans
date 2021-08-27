@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 营销活动入门{#setting-up-marketing-campaigns}
+
+![](../../assets/common.svg)
 
 活动包括操作（投放）和流程（导入或提取文件）以及资源（营销文档、投放概要）。 它们用于营销活动。活动是项目的一部分，项目包含在活动计划中。
 
@@ -35,7 +37,7 @@ ht-degree: 6%
 
 完成这些步骤后，您可以开始投放（请参阅[此部分](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)），检查与投放相关的数据、流程和信息，并在必要时管理相关文档（请参阅[此部分](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)）。 您还可以跟踪营销活动和投放处理阶段的执行情况（请参阅[此部分](../../campaign/using/marketing-campaign-monitoring.md)）。
 
-## 创建计划和方案层次结构{#creating-plan-and-program-hierarchy}
+## 创建计划和方案层次结构 {#creating-plan-and-program-hierarchy}
 
 要为营销计划和项目配置文件夹层次结构，请执行以下操作：
 
@@ -57,7 +59,7 @@ ht-degree: 6%
 
 ## 创建营销策划 {#creating-a-campaign}
 
-### 添加营销活动{#adding-a-campaign}
+### 添加营销活动 {#adding-a-campaign}
 
 您可以通过营销活动列表创建营销活动。 要显示此视图，请选择&#x200B;**[!UICONTROL Campaigns]**&#x200B;功能板中的&#x200B;**[!UICONTROL Campaigns]**&#x200B;菜单。
 
@@ -85,7 +87,7 @@ ht-degree: 6%
 
 ![](assets/s_ncs_user_program_planning_filter.png)
 
-### 编辑和配置营销活动{#editing-and-configuring-a-campaign}
+### 编辑和配置营销活动 {#editing-and-configuring-a-campaign}
 
 然后，您可以编辑刚刚创建的营销活动并定义其参数。
 
@@ -95,17 +97,17 @@ ht-degree: 6%
 
 这会将您转到营销活动仪表板。
 
-## 定期和定期的营销活动{#recurring-and-periodic-campaigns}
+## 定期和定期促销活动 {#recurring-and-periodic-campaigns}
 
 定期营销活动是基于特定模板的营销活动，其工作流配置为根据关联的计划执行。 因此，工作流将在营销活动中循环使用。 每次执行时都会重复定位，并跟踪各种进程和目标群体。 还可以在自动工作流创建期间通过覆盖期提前执行未来目标，以便使用目标估计启动模拟。
 
 定期营销活动是根据模板的执行计划自动创建的营销活动。
 
-### 创建定期促销活动{#creating-a-recurring-campaign}
+### 创建定期营销活动 {#creating-a-recurring-campaign}
 
 定期营销活动是根据定义要执行的工作流模板和执行计划的特定模板创建的。
 
-#### 为定期促销活动{#creating-the-campaign-template}创建模板
+#### 为定期促销活动创建模板 {#creating-the-campaign-template}
 
 1. 创建&#x200B;**[!UICONTROL Recurring]**&#x200B;营销活动模板。
 
@@ -140,7 +142,7 @@ ht-degree: 6%
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
-#### 创建定期促销活动{#create-the-recurring-campaign}
+#### 创建定期营销活动 {#create-the-recurring-campaign}
 
 要创建定期营销活动并根据模板中定义的计划执行其工作流，请应用以下过程：
 
@@ -179,11 +181,11 @@ ht-degree: 6%
    >与工作流关联的计划行的开始日期可从工作流变量中使用以下语法：\
    >`$date(instance/vars/@startPlanningDate)`
 
-### 创建定期营销活动{#creating-a-periodic-campaign}
+### 创建定期营销活动 {#creating-a-periodic-campaign}
 
 定期营销活动是基于特定模板的营销活动，允许您根据执行计划创建营销活动实例。 根据模板计划中定义的频率，根据定期促销活动模板自动创建促销活动实例。
 
-#### 创建营销活动模板{#creating-the-campaign-template-1}
+#### 创建营销活动模板 {#creating-the-campaign-template-1}
 
 1. 创建&#x200B;**[!UICONTROL Periodic]**&#x200B;营销活动模板，最好复制现有的营销活动模板。
 

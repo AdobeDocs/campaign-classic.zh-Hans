@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 病毒式营销和社交媒体营销{#viral-and-social-marketing}
 
-## 关于病毒式营销{#about-viral-marketing}
+![](../../assets/common.svg)
+
+## 关于病毒式营销 {#about-viral-marketing}
 
 Adobe Campaign允许您设置工具以鼓励病毒式营销。
 
@@ -27,7 +29,7 @@ Adobe Campaign允许您设置工具以鼓励病毒式营销。
 >
 >为了使添加的链接正常运行，必须提供匹配的镜像页面。 要实现此目的，请在投放中包含指向镜像页面的链接。
 
-## 社交网络：共享链接{#social-networks--sharing-a-link}
+## 社交网络：共享链接 {#social-networks--sharing-a-link}
 
 要使投放收件人能够与其网络成员共享消息内容，您需要包含匹配的个性化块。
 
@@ -49,7 +51,7 @@ Adobe Campaign允许您设置工具以鼓励病毒式营销。
 >
 >此个性化块包含所有链接（用于与所有社交网络发送和共享消息）。 可以根据您的需求进行更改。 但是，配置是为高级用户保留的。 要编辑匹配的个性化块，请转到Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Campaign management > Personalization blocks]**&#x200B;节点。
 
-## 病毒式营销：转发给朋友{#viral-marketing--forward-to-a-friend}
+## 病毒式营销：转向朋友 {#viral-marketing--forward-to-a-friend}
 
 病毒服务允许执行反向链接类型的操作：这些操作可让您将消息转发给朋友。 推荐人的简介暂时存储在数据库中（在专用表中）。 转发的报文包括供裁判订阅的链接：如果是这样，则会将其添加到Adobe Campaign数据库。
 
@@ -88,7 +90,7 @@ Adobe Campaign允许您设置工具以鼓励病毒式营销。
 
    推荐人被添加到数据库的&#x200B;**收件人**&#x200B;文件夹，并订阅（默认情况下）**新闻通讯**&#x200B;信息服务。
 
-## 跟踪社交网络共享{#tracking-social-network-sharing}
+## 跟踪社交网络共享 {#tracking-social-network-sharing}
 
 会跟踪共享和访问共享信息的情况。 Adobe Campaign收集的此信息可在以下两个位置访问：
 

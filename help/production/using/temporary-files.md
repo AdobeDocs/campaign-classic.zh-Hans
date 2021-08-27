@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: e77800f5-c0ae-446d-8ff3-bc8a18c97dbd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 临时文件{#temporary-files}
+
+![](../../assets/v7-only.svg)
 
 在系统投入生产时，可能会显示以下错误消息（尤其是在投放日志中）：
 

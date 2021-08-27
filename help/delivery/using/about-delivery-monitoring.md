@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 25%
@@ -14,6 +14,8 @@ ht-degree: 25%
 ---
 
 # 投放监测入门 {#about-delivery-monitoring}
+
+![](../../assets/common.svg)
 
 在发送后监测投放是确保营销活动有效并接触到客户的重要步骤。
 

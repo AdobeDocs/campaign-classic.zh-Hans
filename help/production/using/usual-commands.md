@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '407'
 ht-degree: 3%
 
 ---
 
 # 常用命令{#usual-commands}
+
+![](../../assets/v7-only.svg)
 
 本节列出了Adobe Campaign中的常用命令。
 
@@ -31,8 +33,7 @@ ht-degree: 3%
 >
 
 
-
-## 监视命令{#monitoring-commands-}
+## 监视命令 {#monitoring-commands-}
 
 >[!NOTE]
 >
@@ -62,7 +63,7 @@ default xxxxx myserver myprovider test400
 
 另一个有用的命令是&#x200B;**nlserver monitor**。 它列出了监控XML文件(在Adobe Campaign客户端中或通过&#x200B;**monitor.jsp**&#x200B;网页获取)。
 
-您可以添加参数&#x200B;**-missing**&#x200B;以列出缺失的模块（模块中的错误、模块关闭等）
+可以添加参数&#x200B;**-missing**&#x200B;以列出缺失的模块（模块中的错误、模块关闭等）
 
 ```
 nlserver monitor -missing
@@ -74,7 +75,7 @@ wfserver@test
 
 这对应于具有自动启动功能但尚未启动的模块。
 
-## 模块启动命令{#module-launch-commands}
+## 模块启动命令 {#module-launch-commands}
 
 启动模块的语法仍将具有以下格式：
 
@@ -90,7 +91,7 @@ nlserver stop <module>@<INSTANCE>
 >
 >**`<instance>`** 对应于在配置文件中输入的实例名称，或者对于单实 **** 例模块，默认值。
 
-## 关闭服务{#shut-down-services}
+## 关闭服务 {#shut-down-services}
 
 要停止Adobe Campaign服务，请使用以下命令之一：
 
@@ -118,7 +119,7 @@ nlserver stop <module>@<INSTANCE>
    nlserver shutdown 
    ```
 
-## 重新启动服务{#restart-services}
+## 重新启动服务 {#restart-services}
 
 同样，要重新启动Adobe Campaign，您可以使用以下命令之一：
 
@@ -134,7 +135,7 @@ nlserver stop <module>@<INSTANCE>
 
 * 否则，在Adobe Campaign帐户中：**nlserver watchdog -svc -noconsole**
 
-## 配置命令{#the-config-command}
+## 配置命令 {#the-config-command}
 
 使用&#x200B;**config**&#x200B;命令可以管理服务器配置，包括重新配置数据库连接。
 
@@ -161,8 +162,5 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 >* 通常，您可以使用&#x200B;**config**&#x200B;命令，而不是手动修改配置文件
 >* 要获取参数列表，请使用&#x200B;**-?** 参数： **nlserver配置 — ?**
 >* 对于Oracle数据库，不能指定帐户。 语法如下所示：
-
 >
->  
-nlserver config -setdblogin:Oracle:test6@dbserver
-
+>  nlserver config -setdblogin&lt;a0/test6@dbserver:Oracle:

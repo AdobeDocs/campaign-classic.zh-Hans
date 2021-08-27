@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 与Adobe Target集成{#integrating-with-adobe-target}
+
+![](../../assets/common.svg)
 
 Adobe Campaign与Adobe Experience Cloud中的Adobe Target（经典与标准）集成，允许您在Adobe Campaign电子邮件投放中包含来自Adobe Target的选件。
 

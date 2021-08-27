@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: eb92a7c7-edfa-4062-b473-6d8b50d35e5f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 内容管理{#content-management}
+
+![](../../assets/common.svg)
 
 通过&#x200B;**内容管理**&#x200B;活动，您可以创建和操作内容，并基于此内容生成文件。 然后，可以通过“交付”活动交付此内容。
 
@@ -83,13 +85,13 @@ ht-degree: 2%
 
       对于以&#x200B;**[!UICONTROL contentId]**&#x200B;变量中保存的内容的标识符作为参数和&#x200B;**[!UICONTROL filename]**&#x200B;变量中的文件名生成的每个文件，都会激活叫客过渡。
 
-## 输入参数{#input-parameters}
+## 输入参数 {#input-parameters}
 
 * contentId
 
 启用&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;选项时要使用的内容的标识符。
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * contentId
 

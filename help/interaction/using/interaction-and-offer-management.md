@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # 互动和优惠管理{#interaction-and-offer-management}
+
+![](../../assets/v7-only.svg)
 
 互动让您能够在与给定联系人（客户或目标）的交互过程中，通过使其成为单个或多个自适应选件进行实时响应。 例如，这些可以是简单的通信消息、针对一个或多个产品或服务的特惠。
 

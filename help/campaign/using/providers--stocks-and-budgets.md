@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 供应商、库存和预算{#providers-stocks-and-budgets}
+
+![](../../assets/common.svg)
 
 Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提供商。 有关服务提供者和相关成本结构的信息由Adobe Campaign管理员从主视图定义。 服务提供者从交货中引用，其成本结构允许计算与该交货相关的成本以及有关库存的管理。
 

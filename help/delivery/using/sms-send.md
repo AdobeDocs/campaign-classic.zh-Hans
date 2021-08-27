@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 发送、监控和跟踪短信投放{#sms-properties}
+
+![](../../assets/common.svg)
 
 ## 发送短信消息 {#sending-sms-messages}
 
@@ -167,4 +169,4 @@ InSMS架构包含与传入短信相关的信息。 可通过desc属性描述这�
 >
 >这类自动报文不会保留历史记录。 因此，它们不会显示在投放仪表板中。 [了解详情](delivery-dashboard.md)。
 >
->商业压力规则未考虑这些报文。 [了解详情](../../campaign/using/pressure-rules.md)。
+>商业压力规则未考虑这些报文。 [了解详情](../../campaign-opt/using/pressure-rules.md)。

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 连接到数据库 {#connecting-to-the-database}
+
+![](../../assets/v7-only.svg)
 
 要启用与外部数据库的连接，必须指示连接参数，即目标数据源和需要加载数据的表的名称。
 
@@ -44,7 +46,7 @@ ht-degree: 2%
 
 您可以在&#x200B;**[!UICONTROL Parameters]**&#x200B;选项卡中为表和索引定义特定的工作表空间。
 
-## 创建临时连接{#creating-a-temporary-connection}
+## 创建临时连接 {#creating-a-temporary-connection}
 
 您可以直接从工作流活动定义与外部数据库的连接。 在这种情况下，它将位于本地外部数据库上，保留用于当前工作流：它不会保存在外部帐户上。 可以在工作流的不同活动（特别是&#x200B;**[!UICONTROL Query]**、**[!UICONTROL Data loading (RDBMS)]**、**[!UICONTROL Enrichment]**&#x200B;活动或&#x200B;**[!UICONTROL Split]**&#x200B;活动）上创建此类准时连接。
 
@@ -84,7 +86,7 @@ ht-degree: 2%
 
    单击&#x200B;**[!UICONTROL Finish]**&#x200B;以确认此配置。
 
-## 安全连接{#secure-connection}
+## 安全连接 {#secure-connection}
 
 >[!NOTE]
 >

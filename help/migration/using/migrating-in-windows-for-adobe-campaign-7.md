@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 在 Windows 中迁移到 Adobe Campaign 7{#migrating-in-windows-for-adobe-campaign}
 
-## 一般过程{#general-procedure}
+![](../../assets/v7-only.svg)
+
+## 一般程序 {#general-procedure}
 
 对于Windows，迁移步骤如下：
 
@@ -26,7 +28,7 @@ ht-degree: 1%
 1. 重新启动服务：请参阅[重新启动服务](#re-starting-the-services)。
 1. 删除和清除以前的Adobe Campaign版本：请参阅[删除和清理Adobe Campaign以前版本](#deleting-and-cleansing-adobe-campaign-previous-version)。
 
-## 服务停止{#service-stop}
+## 服务停止 {#service-stop}
 
 首先，在所有相关计算机上停止所有具有数据库访问权限的进程。
 
@@ -81,11 +83,11 @@ ht-degree: 1%
    taskkill /F /IM nlserver* /T
    ```
 
-## 备份数据库和当前安装{#back-up-the-database-and-the-current-installation}
+## 备份数据库和当前安装 {#back-up-the-database-and-the-current-installation}
 
 此过程取决于您之前的Adobe Campaign版本。
 
-### 从Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}迁移
+### 从Adobe Campaign v5.11迁移 {#migrating-from-adobe-campaign-v5-11}
 
 1. 备份Adobe Campaign数据库。
 1. 使用以下命令备份&#x200B;**Neolane v5**&#x200B;目录：
@@ -125,7 +127,7 @@ ht-degree: 1%
    </serverconf>
    ```
 
-### 从Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}迁移
+### 从Adobe Campaign v6.02迁移 {#migrating-from-adobe-campaign-v6-02}
 
 1. 备份Adobe Campaign数据库。
 1. 使用以下命令备份&#x200B;**Neolane v6**&#x200B;目录：
@@ -165,7 +167,7 @@ ht-degree: 1%
    </serverconf>
    ```
 
-### 从Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}迁移
+### 从Adobe Campaign v6.1迁移 {#migrating-from-adobe-campaign-v6-1}
 
 1. 备份Adobe Campaign数据库。
 1. 使用以下命令备份&#x200B;**Adobe Campaign v6**&#x200B;目录：
@@ -265,7 +267,7 @@ ht-degree: 1%
 >
 >尚未启动Adobe Campaign服务：需要对IIS进行一些更改。
 
-## 迁移重定向服务器(IIS){#migrating-the-redirection-server--iis-}
+## 迁移重定向服务器(IIS) {#migrating-the-redirection-server--iis-}
 
 此时，必须停止IIS服务器。 请参阅[服务停止](#service-stop)。
 
@@ -327,11 +329,11 @@ ht-degree: 1%
       >
       >[此部分](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server)中详细介绍了以下IIS配置步骤。
 
-## 安全区{#security-zones}
+## 安全区 {#security-zones}
 
 如果您是从v6.02或更低版本迁移，则必须先配置安全区，然后才能启动服务。 有关更多信息，请参阅[Security](../../migration/using/general-configurations.md#security)。
 
-## 重新启动服务{#re-starting-the-services}
+## 重新启动服务 {#re-starting-the-services}
 
 在以下每个服务器上启动IIS和Adobe Campaign服务：
 
@@ -341,7 +343,7 @@ ht-degree: 1%
 
 在执行下一步之前，请对新安装运行完整测试，确保没有回归，并且所有操作都可以遵循[常规配置](../../migration/using/general-configurations.md)部分中的所有建议。
 
-## 删除和清理Adobe Campaign早期版本{#deleting-and-cleansing-adobe-campaign-previous-version}
+## 删除和清理Adobe Campaign以前的版本 {#deleting-and-cleansing-adobe-campaign-previous-version}
 
 此过程取决于您之前的Adobe Campaign版本。
 

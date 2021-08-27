@@ -5,9 +5,9 @@ description: 了解有关传输到中间源工作流的更多信息
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '107'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 7%
 
 # 传输到中间源{#transfer-to-mid-sourcing}
 
-默认情况下，下面详述的工作流随&#x200B;**传输到中间源**&#x200B;模块一起安装。 有关此模块的更多信息，请参阅此[部分](../../installation/using/mid-sourcing-deployment.md)。
+![](../../assets/common.svg)
+
+默认情况下，下面详述的工作流随&#x200B;**传输到中间源**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅[Campaign Classicv7安装指南](../../installation/using/mid-sourcing-deployment.md)。
 
 <table> 
  <tbody> 

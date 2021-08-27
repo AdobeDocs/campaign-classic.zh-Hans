@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 978e1249-f79b-4f5f-9a94-3bb2510785de
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # v5.11 中的特定配置{#specific-configurations-in-v5-11}
+
+![](../../assets/v7-only.svg)
 
 本节详细介绍从v5.11迁移时需要的其他配置。您还应当配置[常规配置](../../migration/using/general-configurations.md)部分中详细的设置。
 
@@ -44,7 +46,7 @@ FROM XtkWorkflow
 WHERE mData LIKE '%nl5%';
 ```
 
-## 用户友好性{#user-friendliness}
+## 用户友好 {#user-friendliness}
 
 Adobe Campaign v5.11主页不再可用。
 
@@ -104,7 +106,7 @@ Web跟踪管理也已修改。 迁移到v7后，必须启动部署向导才能�
 >
 >有关这三种模式的详细信息，请参阅[此部分](../../configuration/using/about-web-tracking.md)。
 
-## Adobe Campaign v7树结构{#campaign-vseven-tree-structure}
+## Adobe Campaign v7树结构 {#campaign-vseven-tree-structure}
 
 在迁移过程中，将根据v7标准自动重组树结构。 将添加新文件夹，删除过时的文件夹，并将其内容放在“要移动”文件夹中。 迁移后，必须检查此文件夹中的所有项目，顾问必须决定保留或删除每个项目。 然后，要保留的项目必须移动到正确的位置。
 
@@ -128,11 +130,11 @@ Web跟踪管理也已修改。 迁移到v7后，必须启动部署向导才能�
 | nmsCampaignRes | 营销活动管理 | - |
 | nmsModels | 模板 | - |
 | nmsOnlineRes | 在线 | - |
-| nmsProduction | 制作 | - |
+| nmsProduction | 作品 | - |
 | nmsProfilProcess | 流程 | - |
 | xtkDashboard | 功能板 | - |
 | xtkPlatformAdmin | 平台 | - |
-| nmsLocalOrgUnit | 组织单位 | - |
+| nmsLocalOrgUnit | 组织实体 | - |
 | nmsMRM | MRM | 已安装MRM |
 | nmsOperations | 活动 | 已安装Campaign |
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 9%
@@ -14,6 +14,8 @@ ht-degree: 9%
 ---
 
 # 关于种子地址{#about-seed-addresses}
+
+![](../../assets/common.svg)
 
 种子地址用于定位不符合既定目标标准的收件人。这样，超出投放范围的收件人就可以像任何其他目标收件人一样接收投放。
 
@@ -45,7 +47,5 @@ ht-degree: 9%
 >
 >* 它不得使用选项&#x200B;**[!UICONTROL Handle groupings (GROUP BY+HAVING)]**。
 >* 如果提取了元素集合，则这些字段的种子地址值将为空，除非选择&#x200B;**[!UICONTROL Single row (expert user)]**&#x200B;选项。 如需详细信息，请参阅[此部分](../../platform/using/executing-export-jobs.md#step-7---data-formatting)。
-
 >
-
 

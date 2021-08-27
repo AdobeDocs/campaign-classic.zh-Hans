@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 4%
@@ -15,13 +15,15 @@ ht-degree: 4%
 
 # 性能和吞吐量问题{#performance-and-throughput-issues}
 
+![](../../assets/v7-only.svg)
+
 首先，您应该检查是否已安装最新内部版本。 这可确保您具有最新功能和错误修复。
 
 有关每个版本内容的更多信息，请参阅[发行说明](../../rn/using/latest-release.md)。
 
-## 硬件和基础架构{#hardware-and-infrastructure}
+## 硬件和基础架构 {#hardware-and-infrastructure}
 
-本[page](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)中详细描述了内部部署Campaign Classic硬件要求的一般准则。
+此[page](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)中详细描述了内部部署Campaign Classic硬件要求的一般准则。
 
 咨询团队可以为托管客户提供一个工具，让您能够轻松查看数据库中各种类型的表使用了多少空间以及SFTP站点上使用的空间。 此外，它还提供了一些工具，用于清理不必要的数据。 如果您需要实施此工具，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 以下是使用此工具需要检查的一些重要事项：
 
@@ -31,7 +33,7 @@ ht-degree: 4%
 
 Adobe Campaign还提供了[工具](../../production/using/monitoring-processes.md#manual-monitoring)来检查CPU和RAM的使用情况。 使用此工具并查看特定指标，例如：**Memory**、**Swap Memory**、**Disk**、**Active Processes**。 如果值过高，您可以尝试减少工作流的数量或安排工作流在不同时间启动。
 
-## 数据库检查{#database-performances}
+## 数据库检查 {#database-performances}
 
 大多数时候，性能问题都与数据库维护相关。 以下是要检查的主要项目：
 
@@ -44,7 +46,7 @@ Adobe Campaign还提供了[工具](../../production/using/monitoring-processes.m
 >
 >有关更多信息，请参阅此章节：[数据库性能](../../production/using/database-performances.md)。
 
-## 应用程序配置{#application-configuration}
+## 应用程序配置 {#application-configuration}
 
 以下是与应用程序配置最佳实践相关的文章列表：
 
@@ -52,7 +54,7 @@ Adobe Campaign还提供了[工具](../../production/using/monitoring-processes.m
 * TLS配置：不建议全局启用TLS，因为它可以减少吞吐量。 相反，应根据需要对由可交付性团队管理的每域TLS设置进行调整。 有关更多信息，请参阅此[页面](../../installation/using/email-deliverability.md#mx-configuration)。
 * DKIM:为确保DKIM的安全级别，建议采用1024b加密大小。 大多数访问提供商不会认为DKIM密钥较低有效。 请参见[此页面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
-## 投放能力问题{#deliverability-issues}
+## 投放能力问题 {#deliverability-issues}
 
 以下是与投放能力相关的最佳实践和文章列表：
 

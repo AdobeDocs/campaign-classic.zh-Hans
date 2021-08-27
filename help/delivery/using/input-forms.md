@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: 输入窗体
-description: 输入窗体
+title: 输入表单
+description: 输入表单
 audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 2%
 
 ---
 
-# 输入窗体{#input-forms}
+# 输入表单{#input-forms}
+
+![](../../assets/common.svg)
 
 以下是关于在Adobe Campaign使用输入表的一些一般原则。
 
@@ -77,11 +79,11 @@ XPath是一种语法，用于在XML文档的树中查找节点。
 
 如需详细信息，请参阅[此部分](../../configuration/using/form-structure.md#formatting)。
 
-## 列表类型控件{#list-type-controls}
+## 列表类型控件 {#list-type-controls}
 
 要编辑收藏集元素，必须使用列表类型控件。
 
-### 列列表{#column-list}
+### 列列表 {#column-list}
 
 此控件显示可编辑的列列表，其中的工具栏包含“添加”和“删除”按钮。
 
@@ -119,7 +121,7 @@ XPath是一种语法，用于在XML文档的树中查找节点。
 >
 >对于集合元素标签不显示在控件左侧，请添加&#x200B;**nolabel=&quot;true&quot;**&#x200B;属性。
 
-#### 放大列表{#zoom-in-a-list}
+#### 放大列表 {#zoom-in-a-list}
 
 列表数据的插入和编辑可以以单独的编辑表单执行。
 
@@ -152,7 +154,7 @@ XPath是一种语法，用于在XML文档的树中查找节点。
 >
 >添加&#x200B;**zoomOnAdd=&quot;true&quot;**&#x200B;属性会强制在插入列表元素时调用编辑表单。
 
-### 选项卡列表{#tab-list}
+### 选项卡列表 {#tab-list}
 
 此列表以选项卡的形式显示对收藏集元素的编辑。
 

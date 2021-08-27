@@ -6,20 +6,22 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 1%
 
 ---
 
-# 扩充数据{#enriching-data}
+# 丰富数据{#enriching-data}
 
-## 关于扩充数据{#about-enriching-data}
+![](../../assets/common.svg)
 
-此用例详细说明了&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动在定位工作流中可能的用途。 有关使用&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动的更多信息，请参阅：[扩充](../../workflow/using/enrichment.md)。
+## 关于扩充数据 {#about-enriching-data}
 
-[此部分](../../workflow/using/email-enrichment-with-custom-date-fields.md)中还提供了有关如何使用自定义日期扩充电子邮件投放的用例。
+此用例详细说明了&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动在定位工作流中可能的用途。 有关使用&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动的更多信息，请参阅：[扩充](enrichment.md)。
+
+[此部分](email-enrichment-with-custom-date-fields.md)中还提供了有关如何使用自定义日期扩充电子邮件投放的用例。
 
 通过Web应用程序向营销数据库中的联系人发送参加比赛的邀请。 竞争结果在&#x200B;**[!UICONTROL Competition results]**&#x200B;表中恢复。 此表链接到联系人表(**[!UICONTROL Recipients]**)。 **[!UICONTROL Competition results]**&#x200B;表包含以下字段：
 
@@ -46,7 +48,7 @@ ht-degree: 1%
 1. 通过&#x200B;**[!UICONTROL Split]**&#x200B;类型活动，我们可以根据得分创建收件人子集。
 1. 对于每个子集，将添加&#x200B;**[!UICONTROL Delivery]**&#x200B;类型活动。
 
-## 步骤1:定位{#step-1--targeting}
+## 步骤1:定位 {#step-1--targeting}
 
 通过第一个查询，我们可以定位过去六个月内添加到数据库的收件人。
 
@@ -58,7 +60,7 @@ ht-degree: 1%
 
 然后，会添加&#x200B;**[!UICONTROL Intersection]**&#x200B;类型活动，以定位在过去六个月内添加到数据库的收件人以及参加上次竞争的收件人。
 
-## 步骤2:扩充{#step-2--enrichment}
+## 步骤2:扩充 {#step-2--enrichment}
 
 在此示例中，我们希望根据存储在&#x200B;**[!UICONTROL Competition results]**&#x200B;表中的&#x200B;**[!UICONTROL Score]**&#x200B;字段对投放进行个性化。 此表与收件人表具有1-n类型关系。 通过&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动，我们可以将链接到过滤维度的表中的数据添加到工作流的工作表。
 
@@ -102,7 +104,7 @@ ht-degree: 1%
 
 ![](assets/uc1_enrich_14.png)
 
-## 步骤3:拆分和投放{#step-3--split-and-delivery}
+## 步骤3:拆分和交付 {#step-3--split-and-delivery}
 
 要根据收件人的得分对收件人进行排序，将在扩充后添加&#x200B;**[!UICONTROL Split]**&#x200B;活动。
 

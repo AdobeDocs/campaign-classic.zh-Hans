@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 5%
@@ -15,6 +15,8 @@ ht-degree: 5%
 
 
 # 事务性消息传递入门 {#about-transactional-messaging}
+
+![](../../assets/v7-only.svg)
 
 ## 概述 {#overview}
 
@@ -36,7 +38,7 @@ ht-degree: 5%
 
 <!--Before starting with transactional messaging, make sure you read the corresponding [best practices and limitations]().-->
 
-## 事务型消息传递工作原理{#transactional-messaging-operating-principle}
+## 事务型消息传递工作原理 {#transactional-messaging-operating-principle}
 
 Adobe Campaign事务型消息传递模块集成到信息系统中，该信息系统可返回要更改为个性化事务型消息的事件。 这些消息可以单独发送，也可以通过电子邮件、短信或推送通知批量发送。
 
@@ -90,4 +92,4 @@ Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子
 * [通信渠道入门](../../delivery/using/communication-channels.md)
 * [投放创建关键步骤](../../delivery/using/steps-about-delivery-creation-steps.md)
 * [事务性消息传递架构](../../message-center/using/transactional-messaging-architecture.md)
-* [访问事务型消息报表](../../message-center/using/about-transactional-messaging-reports.md)
+* [访问事务性消息传递报告](../../message-center/using/about-transactional-messaging-reports.md)

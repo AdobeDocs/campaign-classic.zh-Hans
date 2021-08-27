@@ -2,20 +2,22 @@
 product: campaign
 title: Adobe Analytics Data Connector
 description: Adobe Analytics Data Connector
-feature: 概述
+feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1681'
 ht-degree: 100%
 
 ---
 
 # Adobe Analytics Data Connector{#adobe-analytics-data-connector-legacy}
+
+![](../../assets/common.svg)
 
 >[!IMPORTANT]
 >
@@ -232,7 +234,6 @@ Adobe Campaign 与 Adobe Analytics - Data Connector 之间的数据交换由四�
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
    * **[!UICONTROL Contact date]** (scheduling/@contactDate)
-
 
 
 ## 在 Adobe Campaign 中跟踪投放 {#tracking-deliveries-in-adobe-campaign}

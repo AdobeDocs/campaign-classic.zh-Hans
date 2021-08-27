@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
 
 ---
 
-# 使用自定义收件人表{#about-custom-recipient-table}
+# 使用自定义收件人表格{#about-custom-recipient-table}
+
+![](../../assets/v7-only.svg)
 
 本节详细介绍使用非标准收件人表的原则。
 
@@ -34,7 +36,7 @@ ht-degree: 2%
 
 本节介绍用于映射Adobe Campaign中现有表的关键点以及用于根据任何表执行投放的配置。 最后，介绍了如何向用户提供与标准收件人表一样实用的查询界面。 要了解本节介绍的材料，需要充分了解屏幕和模式设计的原则。
 
-## Recommendations和限制{#recommendations-and-limitations}
+## Recommendations和限制 {#recommendations-and-limitations}
 
 使用外部收件人表具有以下限制：
 

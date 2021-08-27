@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 6%
@@ -13,6 +13,8 @@ ht-degree: 6%
 ---
 
 # 生成个性化内容 {#build-personalized-content}
+
+![](../../assets/common.svg)
 
 在设计消息内容时，请尽量避免可能阻止您执行投放的常见问题。 大多数情况下，可能的错误与[个性化](about-personalization.md)、[格式化](defining-the-email-content.md#message-content)和[图像](defining-the-email-content.md#adding-images)有关。
 

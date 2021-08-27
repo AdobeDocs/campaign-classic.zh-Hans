@@ -5,17 +5,26 @@ description: 互动
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 3%
+source-wordcount: '171'
+ht-degree: 6%
 
 ---
 
 
 # 互动{#interaction}
 
-默认情况下，下面详述的工作流与&#x200B;**选件引擎（交互）**&#x200B;模块一起安装。 有关此模块的更多信息，请参阅此[部分](../../interaction/using/interaction-and-offer-management.md)。
+![](../../assets/common.svg)
+
+默认情况下，下面详述的工作流随&#x200B;**选件引擎（交互）**&#x200B;加载项一起安装。
+
+有关更多信息，请根据您的Campaign版本，参阅以下章节：
+
+![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文档](../../interaction/using/interaction-and-offer-management.md)
+
+![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+
 
 <table> 
  <tbody> 

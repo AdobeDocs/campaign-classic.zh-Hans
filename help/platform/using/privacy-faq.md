@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 100%
 
 ---
 
 # 隐私常见问题解答 {#privacy-faq}
+
+![](../../assets/common.svg)
 
 以下是使用 Adobe Campaign 时有关隐私和同意的一些常见问题解答。
 

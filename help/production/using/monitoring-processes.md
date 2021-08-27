@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # 监控流程{#monitoring-processes}
 
+![](../../assets/v7-only.svg)
+
 可以手动或自动监控应用程序服务器和重定向服务器(**tracking**)。
 
-## 手动监控{#manual-monitoring}
+## 手动监控 {#manual-monitoring}
 
 转到&#x200B;**[!UICONTROL Monitoring]**&#x200B;并单击&#x200B;**[!UICONTROL Overview]**&#x200B;链接以显示Adobe Campaign进程监视页面。
 
@@ -31,13 +33,13 @@ ht-degree: 0%
 
 [本页](../../production/using/monitoring-guidelines.md)中提供了监控不同Campaign流程的其他方法。
 
-### 日志日志{#log-journal}
+### 日志日志 {#log-journal}
 
 可以显示与流程相关的日志日志。 为此，请单击该过程，例如&#x200B;**mta** ，然后单击&#x200B;**[!UICONTROL Open the log journal]** 。
 
 ![](assets/d_ncs_monitoring2.png)
 
-### 系统指示器{#system-indicators}
+### 系统指标 {#system-indicators}
 
 系统指示器列表允许您显示有关计算机的信息，如其物理和虚拟内存、活动进程和可用磁盘空间。 Linux和Windows操作系统的指示器不同。 转到&#x200B;**[!UICONTROL Instance Monitoring]**&#x200B;页面，然后单击&#x200B;**[!UICONTROL Display]**&#x200B;链接以打开指示器列表
 
@@ -207,7 +209,7 @@ ht-degree: 0%
 
    **[!UICONTROL Alert]** 当僵尸进程数达到2时，将显示此指示器。
 
-#### 自定义指示器{#customized-indicators}
+#### 自定义指标 {#customized-indicators}
 
 Adobe Campaign允许您自定义指示器。 操作步骤：
 
@@ -239,7 +241,7 @@ Adobe Campaign允许您自定义指示器。 操作步骤：
 
 此文件将由Adobe Campaign调用。
 
-## SMTP报表{#smtp-reports}
+## SMTP报表 {#smtp-reports}
 
 SMTP投放监控报表已集成到Adobe Campaign平台中。 可以通过控制台或使用Web访问来访问它们。
 
@@ -259,8 +261,7 @@ SMTP投放监控报表已集成到Adobe Campaign平台中。 可以通过控制�
 >
 
 
-
-### SMTP发送统计信息{#smtp-sending-statistics}
+### SMTP发送统计信息 {#smtp-sending-statistics}
 
 **[!UICONTROL SMTP sending statistics]**&#x200B;报表允许您控制服务器活动。 它显示每个匹配项的合成。
 
@@ -292,7 +293,7 @@ SMTP投放监控报表已集成到Adobe Campaign平台中。 可以通过控制�
 >
 >此报表与电子邮件流量整形器组件的状态相关。
 
-### 每个域{#smtp-errors-per-domain}的SMTP错误
+### 每个域的SMTP错误 {#smtp-errors-per-domain}
 
 此报表允许您查看在设定的时间段内按域划分的投放错误。
 
@@ -336,7 +337,7 @@ SMTP投放监控报表已集成到Adobe Campaign平台中。 可以通过控制�
 >
 >有关在Adobe Campaign中管理SMTP错误的详细信息，请参阅[此部分](../../installation/using/email-deliverability.md)。
 
-## 账单报表{#billing-report}
+## 账单报表 {#billing-report}
 
 **[!UICONTROL Billing]**&#x200B;技术工作流通过电子邮件将系统活动报告发送给“billing”操作员。 默认情况下，每月25日在营销实例上触发。
 
@@ -358,11 +359,11 @@ SMTP投放监控报表已集成到Adobe Campaign平台中。 可以通过控制�
 * **[!UICONTROL Multiplier (x)]** :从消息的平均体积推导乘数值。
 * **[!UICONTROL Count]** :消息和乘数的乘法结果。
 
-## 自动监控{#automatic-monitoring}
+## 自动监控 {#automatic-monitoring}
 
 Adobe Campaign提供了多种自动监控方法，如下所示。
 
-### 命令行{#command-line}
+### 命令行 {#command-line}
 
 命令
 
@@ -382,9 +383,9 @@ stat@prod
 wfserver@prod
 ```
 
-### 服务器{#information-published-by-the-server}发布的信息
+### 服务器发布的信息 {#information-published-by-the-server}
 
-#### /r测试{#r-test}
+#### /r/test {#r-test}
 
 使用&#x200B;**http(s)://`<application>`/r/test**&#x200B;页面来测试重定向服务器。 我们建议使用相同的方法来测试用于跟踪的前端服务器。 此页面还可用于测试加载调度程序。
 
@@ -428,7 +429,7 @@ wfserver@prod
 
 此&#x200B;**jsp**&#x200B;表示Adobe Campaign应用程序API的入口点。 因此，它可以提供对应用程序的详细监控。 它还可用于监控Adobe Campaign Web服务。 它用在我们的监视脚本中，但请注意，它仅供高级用户使用。
 
-### 基于部署类型{#monitoring-based-on-deployment-types}进行监控
+### 基于部署类型进行监控 {#monitoring-based-on-deployment-types}
 
 Adobe Campaign支持各种部署配置（有关更多信息，请参阅[此部分](../../installation/using/hosting-models.md)）。 本节详细介绍根据您的安装类型而应用的各种自动监控技术。
 
@@ -473,7 +474,7 @@ Adobe Campaign支持各种部署配置（有关更多信息，请参阅[此部�
  </tbody> 
 </table>
 
-## 通过Adobe Campaign脚本{#automatic-monitoring-via-adobe-campaign-scripts}进行自动监控
+## 通过Adobe Campaign脚本自动监控 {#automatic-monitoring-via-adobe-campaign-scripts}
 
 Adobe Campaign可以提供实例监控工具(netreport)，让您通过电子邮件发送有关检测到的异常的报表。
 
@@ -483,7 +484,7 @@ Adobe Campaign可以提供实例监控工具(netreport)，让您通过电子邮�
 >
 >此工具可用于监视实例，但Adobe Campaign不支持。 有关详细信息，请与Campaign管理员联系。
 
-### 所需元素{#required-elements}
+### 必需元素 {#required-elements}
 
 自动监控需要以下安装前注意事项：
 
@@ -492,7 +493,7 @@ Adobe Campaign可以提供实例监控工具(netreport)，让您通过电子邮�
 * 它必须安装在带有JRE或JDK的计算机上，
 * 在Linux中，要监视的计算机必须具有&#x200B;**bc**&#x200B;包。 如需详细信息，请参阅[此部分](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages)。
 
-### 安装过程{#installation-procedure}
+### 安装过程 {#installation-procedure}
 
 安装步骤如下：
 
@@ -502,7 +503,7 @@ Adobe Campaign可以提供实例监控工具(netreport)，让您通过电子邮�
 1. 更新&#x200B;**netconf.xml**&#x200B;配置文件。
 1. 更新&#x200B;**netreport.bat**(Windows)或&#x200B;**netreport.sh**(Linux)文件。
 
-### 配置netconf.xml文件{#configuring-the-netconf-xml-file}
+### 配置netconf.xml文件 {#configuring-the-netconf-xml-file}
 
 XML配置文件包含以下元素：
 
@@ -547,7 +548,7 @@ XML配置文件包含以下元素：
 >
 >要使&#x200B;**monitoring**&#x200B;运算符正常工作，执行Netreport的计算机必须位于处于&#x200B;**sessionTokenOnly**&#x200B;模式的安全区域中。 如果尚未为此运算符指定可信的IP掩码，则安全区域还必须处于&#x200B;**allowEmptyPassword**&#x200B;和&#x200B;**allowUserPassword**&#x200B;模式。
 
-#### “Properties”元素{#properties--element}
+#### “属性”元素 {#properties--element}
 
 此元素用于填充电子邮件的配置，即
 
@@ -567,7 +568,7 @@ XML配置文件包含以下元素：
 >
 >**persistHtmlFile**&#x200B;属性在&#x200B;**`<property>`**&#x200B;元素中的值为“true”，用于在文件&#x200B;**netreport.md**&#x200B;中记录最新的监视状态。 此文件保存在安装目录中。
 
-#### “Instance”元素{#instance--element}
+#### “Instance”元素 {#instance--element}
 
 利用此元素，可将多台计算机（主机）重组到同一实例中。 实例名称显示在监视电子邮件的第一部分中。 您可以单击实例的名称以访问有关每台计算机的详细信息。
 
@@ -585,7 +586,7 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 * **名称**:将在电子邮件第一部分中显示的实例名称。
 * **recipientList** （可选）：允许您通过电子邮件发送有关特定实例的监控报告。
 
-#### “Host”元素{#host--element}
+#### “Host”元素 {#host--element}
 
 此元素配置主机上给定服务器的监控，即
 
@@ -600,7 +601,7 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 * **criticalLevel** （可选）：允许您按严重性级别对要显示的错误进行排序。可能的值为“0”（显示所有级别）、“1”（仅显示高错误和严重错误）和“2”（仅显示严重错误）。 如果未提供此属性，则会显示所有错误级别。
 * **筛选器** （可选）：允许您排除某些工作流错误， **例如filter=&quot;wkf;wkf1&quot;**。工作流标签必须以分号分隔。
 
-#### 子元素{#sub-elements}
+#### 子元素 {#sub-elements}
 
 * **tcp**:检查服务器是处于开启状态还是关闭状态。必须输入端口号。
 * **http**:检查Web服务器是否存在（应用程序服务器可运行）。
@@ -617,15 +618,15 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 
 在&#x200B;**ncs**、**redir**&#x200B;和&#x200B;**http**&#x200B;子元素中，可添加&#x200B;**isSecure**&#x200B;属性（可选）以选择是否使用https协议（“true”或“false”值）。 如果未提供此属性，则使用http协议。
 
-### 配置netreport.bat或netreport.sh文件{#configuring-the-netreport-bat-or-netreport-sh--file}
+### 配置netreport.bat或netreport.sh文件 {#configuring-the-netreport-bat-or-netreport-sh--file}
 
 要配置它，请编辑此文件并指示JRE或JDK安装在哪个目录中。
 
-### 启动监视{#launching-monitoring}
+### 启动监控 {#launching-monitoring}
 
 要启动监控，请通过脚本定期执行&#x200B;**netreport.bat**&#x200B;或&#x200B;**netreport.sh**&#x200B;文件。 报表在首次执行后发送，然后仅在状态发生更改时发送。
 
-### 测试监视{#testing-monitoring}
+### 测试监控 {#testing-monitoring}
 
 要测试监控，请执行&#x200B;**netreport.bat**&#x200B;或&#x200B;**netreport.sh**&#x200B;文件。
 

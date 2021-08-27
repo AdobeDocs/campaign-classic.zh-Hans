@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 19%
@@ -15,7 +15,9 @@ ht-degree: 19%
 
 # 设计和执行营销活动{#designing-marketing-campaigns}
 
-Adobe Campaign让您能够定义、优化、执行和分析通信和营销活动。 Adobe Campaign的作用类似于营销策略的统一订单和执行中心。 有关更多信息，请参阅[访问营销活动](../../campaign/using/accessing-campaigns.md)和[创建营销活动](../../campaign/using/setting-up-marketing-campaigns.md)。
+![](../../assets/common.svg)
+
+Adobe Campaign让您能够定义、优化、执行和分析通信和营销活动。 Adobe Campaign的作用类似于营销策略的统一订单和执行中心。 有关更多信息，请参阅[访问营销活动](../../distributed/using/accessing-campaigns.md)和[创建营销活动](../../campaign/using/setting-up-marketing-campaigns.md)。
 
 此外，**营销资源管理(MRM)**&#x200B;模块允许您通过提供所涉任务、预算和营销资源的完整管理和实时跟踪，以协作模式控制营销活动。 “营销资源管理”允许您优化和规范对内部和外部流程、资源和营销活动以及第三方关系（代理、打印机等）的管理。 如需详细信息，请参阅[此部分](../../mrm/using/about-marketing-resource-management.md)。
 

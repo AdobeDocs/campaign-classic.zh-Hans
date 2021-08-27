@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1191'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 配置Campaign Explorer导航树{#configuration}
+
+![](../../assets/v7-only.svg)
 
 作为专家用户，您可以在资源管理器树中添加文件夹并对其进行自定义。
 
@@ -49,7 +51,7 @@ XML文档包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;属
 
 在文档中，文件类型声明的结构具有以下元素：**`<model>`**&#x200B;和&#x200B;**`<nodemodel>`**。
 
-## 全局命令{#global-commands}
+## 全局命令 {#global-commands}
 
 全局命令允许您启动操作。 此操作可以是输入表单或SOAP调用。
 
@@ -131,7 +133,7 @@ XML文档包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;属
    </command>
    ```
 
-## 文件夹类型{#folder-type}
+## 文件夹类型 {#folder-type}
 
 利用文件夹类型，可访问架构的数据。 与文件夹关联的视图由列表和输入表单组成。
 
@@ -224,7 +226,7 @@ XML文档包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;属
 </view>  
 ```
 
-### 快捷键命令{#shortcut-commands}
+### 快捷键命令 {#shortcut-commands}
 
 快捷键命令允许您在选择列表时启动一项操作。 操作可以是输入表单或SOAP调用。
 
@@ -287,7 +289,7 @@ XML文档包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;属
 </command>
 ```
 
-### 链接的文件夹{#linked-folder}
+### 链接的文件夹 {#linked-folder}
 
 文件夹管理操作有两种类型：
 

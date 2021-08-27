@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 1%
@@ -15,13 +15,15 @@ ht-degree: 1%
 
 # 创建过滤器{#creating-filters}
 
+![](../../assets/common.svg)
+
 在Adobe Campaign树中导航（从主页的&#x200B;**[!UICONTROL Explorer]**&#x200B;菜单中）时，数据库中包含的数据将显示在列表中。 这些列表可配置为仅显示操作员所需的数据。 然后，可以对过滤的数据启动操作。 过滤器配置允许您从列表&#x200B;**[!UICONTROL dynamically]**&#x200B;中选择数据。 如果数据被修改，则会更新过滤的数据。
 
 >[!NOTE]
 >
 >用户界面配置设置在设备级别本地定义。 有时可能需要清理此数据，尤其是在刷新数据时出现问题时。 要实现此目的，请使用&#x200B;**[!UICONTROL File > Clear the local cache]**&#x200B;菜单。
 
-## 可用过滤器{#typology-of-available-filters}的分类
+## 可用过滤器的分类 {#typology-of-available-filters}
 
 Adobe Campaign允许您将过滤器应用到数据列表。
 
@@ -69,7 +71,7 @@ Adobe Campaign中提供了以下过滤器类型：
 
    位于列表上方的&#x200B;**[!UICONTROL Filters]**&#x200B;按钮提供一组可组合以优化过滤的应用程序过滤器。 创建这些过滤器的方法请参见[保存过滤器](#saving-a-filter)。
 
-## 更改默认筛选器{#altering-the-default-filter}
+## 更改默认过滤器 {#altering-the-default-filter}
 
 要更改收件人列表的默认筛选器，请单击树的&#x200B;**[!UICONTROL Profiles and Targets > Pre-defined filters]**&#x200B;节点。
 
@@ -92,7 +94,7 @@ Adobe Campaign中提供了以下过滤器类型：
    >
    >[创建高级过滤器](#creating-an-advanced-filter)和[保存过滤器](#saving-a-filter)中详细介绍了过滤器定义窗口。
 
-## 创建简单过滤器{#creating-a-simple-filter}
+## 创建简单过滤器 {#creating-a-simple-filter}
 
 要创建&#x200B;**简单过滤器**，请应用以下步骤：
 
@@ -126,7 +128,7 @@ Adobe Campaign中提供了以下过滤器类型：
 
    ![](assets/s_ncs_user_delete_filter.png)
 
-## 创建高级过滤器{#creating-an-advanced-filter}
+## 创建高级过滤器 {#creating-an-advanced-filter}
 
 要创建&#x200B;**高级过滤器**，请应用以下步骤：
 
@@ -168,7 +170,7 @@ Adobe Campaign中提供了以下过滤器类型：
 
 您可以保存高级过滤器，以备将来使用。 有关此类型过滤器的更多信息，请参阅[保存过滤器](#saving-a-filter)。
 
-### 使用函数{#creating-an-advanced-filter-with-functions}创建高级过滤器
+### 创建包含函数的高级过滤器 {#creating-an-advanced-filter-with-functions}
 
 高级过滤器可以使用函数；**具有函数**&#x200B;的过滤器通过表达式编辑器创建，该编辑器允许您使用数据库数据和高级函数创建公式。 要创建具有函数的过滤器，请重复高级过滤器创建步骤1、2和3，然后按照以下步骤继续操作：
 
@@ -194,7 +196,7 @@ Adobe Campaign中提供了以下过滤器类型：
       >
       >有关基于表达式创建过滤器的示例，请参阅[此部分](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is)。
 
-## 保存过滤器{#saving-a-filter}
+## 保存过滤器 {#saving-a-filter}
 
 过滤器特定于每个运算符，并在每次运算符清除其客户端控制台的缓存时重新初始化。
 
@@ -218,7 +220,7 @@ Adobe Campaign中提供了以下过滤器类型：
 
 ![](assets/s_ncs_user_filter_combination.png)
 
-## 筛选收件人{#filtering-recipients}
+## 筛选收件人 {#filtering-recipients}
 
 预定义过滤器（请参阅[保存过滤器](#saving-a-filter)）允许您过滤数据库中包含的收件人的用户档案。 可以从树的&#x200B;**[!UICONTROL Profiles and Targets > Predefined filters]**&#x200B;节点编辑过滤器。 这些过滤器通过&#x200B;**[!UICONTROL Filters]**&#x200B;按钮列在工作区的上部。
 
@@ -355,7 +357,7 @@ Adobe Campaign中提供了以下过滤器类型：
 
    ![](assets/predefined_filters_02.png)
 
-## 数据过滤器{#advanced-settings-for-data-filters}的高级设置
+## 数据过滤器的高级设置 {#advanced-settings-for-data-filters}
 
 单击&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡以访问以下选项：
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 617b0050-6b04-4c68-9f63-511baae99f41
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 11%
@@ -14,6 +14,8 @@ ht-degree: 11%
 ---
 
 # 管理工作流{#managing-workflows}
+
+![](../../assets/v7-only.svg)
 
 默认情况下，您的新工作流基于预配置的工作流模板，并基于收件人表(nms:recipient)。 为了根据&#x200B;**Nms_DefaultRcpSchema**&#x200B;选项中引用的收件人自定义表自动进行配置（请参阅[配置接口](../../configuration/using/configuring-the-interface.md)部分），必须创建新的工作流模板。
 

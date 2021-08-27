@@ -2,20 +2,22 @@
 product: campaign
 title: Campaign Classic 的兼容性矩阵
 description: Campaign Classic 兼容性矩阵
-feature: 概述
+feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 571dd96d1f3bff5c3dab05dce5319f913f29a670
+source-git-commit: 987434c2b6b92fbb6f24924f92795cb282b61cd4
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 99%
+ht-degree: 96%
 
 ---
 
 # 兼容性矩阵{#compatibility-matrix}
 
-本文档列出针对[最新内部版本](../../rn/using/latest-release.md)的 **Adobe Campaign Classic** 支持的所有系统和组件。此列表中未包含的产品和版本与 Adobe Campaign 不兼容。
+![](../../assets/v7-only.svg)
+
+本文档列出了[**Adobe Campaign Classic v7**&#x200B;的最新版本](../../rn/using/latest-release.md)支持的所有系统和组件。 此列表中未包含的产品和版本与 Adobe Campaign 不兼容。
 
 如果您是 [!DNL Gold Standard] 用户，请参阅 [[!DNL Gold Standard]  兼容性矩阵](../../rn/using/compatibility-matrix-gs.md)。
 

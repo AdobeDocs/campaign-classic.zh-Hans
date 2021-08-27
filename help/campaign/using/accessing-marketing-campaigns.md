@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 访问营销活动{#accessing-marketing-campaigns}
+
+![](../../assets/common.svg)
 
 Adobe Campaign允许您创建、配置、执行和分析营销活动。 所有营销活动都可从统一的控制中心进行管理。
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 1%
 
 ---
 
-# 添加枚举类型计算字段{#adding-an-enumeration-type-calculated-field}
+# 添加枚举类型计算字段 {#adding-an-enumeration-type-calculated-field}
+
+![](../../assets/common.svg)
 
 在此，我们要创建一个具有&#x200B;**[!UICONTROL Enumerations]**&#x200B;类型计算字段的查询。 此字段将在数据预览窗口中生成额外的列。 此列将为每个收件人（0、1和2）指定作为结果返回的数值。 新列中的每个值将分配一个性别：“Male”表示“1”，“Female”表示“2”，或“Not issided”（如果值等于“0”）。
 

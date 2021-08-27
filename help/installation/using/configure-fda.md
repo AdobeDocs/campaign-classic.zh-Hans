@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 5%
@@ -15,6 +15,8 @@ ht-degree: 5%
 
 # 配置 FDA 连接器 {#specific-configurations-by-database-type}
 
+![](../../assets/v7-only.svg)
+
 根据您希望能够从Adobe Campaign访问的外部数据库，您需要执行特定配置。 这些配置实质上涉及在Adobe Campaign服务器上安装驱动程序并声明属于每个RDBMS的环境变量。
 
 通常，您需要在Adobe Campaign服务器上的外部数据库上安装相应的客户端层。
@@ -22,7 +24,6 @@ ht-degree: 5%
 >[!NOTE]
 >
 >兼容版本列在[Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA)中。
-
 
 ## 配置步骤 {#fda-configuration-steps}
 
@@ -35,7 +36,7 @@ ht-degree: 5%
 
 创建数据架构后，即可在Adobe Campaign工作流中处理数据。 如需详细信息，请参阅[此部分](../../workflow/using/accessing-an-external-database--fda-.md)。
 
-## 数据库特定配置{#fda-specific-configuration}
+## 数据库特定配置 {#fda-specific-configuration}
 
 根据您希望能够从Adobe Campaign访问的外部数据库，您需要执行特定配置。 这些配置实质上涉及在Adobe Campaign服务器上安装驱动程序并声明属于每个RDBMS的环境变量，以及配置外部帐户。
 

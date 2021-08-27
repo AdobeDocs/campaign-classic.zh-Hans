@@ -6,30 +6,32 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '2012'
 ht-degree: 0%
 
 ---
 
-# 元素元素{#element--element}
+# 元素 {#element--element}
 
-## 内容模型{#content-model-4}
+![](../../../assets/v7-only.svg)
+
+## 内容模型 {#content-model-4}
 
 element:==(attribute) | compute-string | dbindex |默认 |元素 |帮助 |加入 |键 | sysFilter | translatedDefault)
 
-## 属性{#attributes-4}
+## 属性 {#attributes-4}
 
-_operation（字符串）、高级（布尔）、聚合（字符串）、autopk（布尔）、convTo（字符串）、convDate（字符串）、dataPolicy（字符串）、dataSource（字符串）、dbEnum（字符串）、defOnDuplicate（布尔）、desc（字符串）、displayAsField（布尔）、doesNotSupportBoolean（布尔）、编辑（字符串）、emptyKeyValue（枚举字符串）、enumpon（图像）SchemaTarget（字符串）、expr（字符串）、externalJoin（布尔）、功能（字符串）、featureDate（布尔）、filterPath（字符串）、filterLink（字符串）、folderModel（字符串）、folderProcess（字符串）、fullLoad（布尔）、层次结构（布尔）、hiercaricalPath（字符串）、inout（字符串）、完整性（字符串）、标签（字符串）、长度（字符串）、可本地化（布尔值）、MNNONoIndex(NoNo)键（布尔）、有序（布尔）、溢流表（布尔）、pkSequence（字符串）、pkgStatus（字符串）、ref（字符串）、必需（布尔）、revAdvanced（布尔）、revCardinal（字符串）、revExternalJoin（布尔）、revIntegrity（字符串）、revLink（字符串）、revTarget（字符串）、revIsibleIf（字符串）、布尔（字符串）、名（字符串）、sql表名、sql表SpaceIndex（字符串）、Target(MNTOKEN)、模板（字符串）、临时表（布尔）、TranslatedDefault（字符串）、TranslatedExpr（字符串）、类型(MNTOKEN)、未绑定（布尔）、用户（布尔）、用户枚举（字符串）、visibleIf（字符串）、xml（布尔）、xmlChildren（布尔）
+_operation（字符串）、高级（布尔）、聚合（字符串）、autopk（布尔）、convTo（字符串）、convDate（字符串）、dataPolicy（字符串）、dataSource（字符串）、dbEnum（字符串）、defOnDuplicate（布尔）、desc（字符串）、displayAsField（布尔）、doesNotSupportBoolean（布尔）、编辑（字符串）、emptyKeyValue（枚举字符串）、enumpon（图像）SchemaTarget（字符串）、expr（字符串）、externalJoin（布尔）、功能（字符串）、featureDate（布尔）、filterPath（字符串）、filterLink（字符串）、folderModel（字符串）、folderProcess（字符串）、fullLoad（布尔）、层次结构（布尔）、hiercaricalPath（字符串）、inout（字符串）、完整性（字符串）、labelString（字符串）、可本地化（布尔值）、MNON（无索引）、无键（布尔）、有序（布尔）、溢流表（布尔）、pkSequence（字符串）、pkgStatus（字符串）、ref（字符串）、必需（布尔）、revAdvanced（布尔）、revCardinal（字符串）、revExternalJoin（布尔）、revIntegrity（字符串）、revLink（字符串）、revTarget（字符串）、revIsibleIf（字符串）、布尔（字符串）、名（字符串）、sql表名、sql表SpaceIndex（字符串）、Target(MNTOKEN)、模板（字符串）、临时表（布尔）、TranslatedDefault（字符串）、TranslatedExpr（字符串）、类型(MNTOKEN)、未绑定（布尔）、用户（布尔）、用户枚举（字符串）、visibleIf（字符串）、xml（布尔）、xmlChildren（布尔）
 
-## 父项{#parents-4}
+## 父母 {#parents-4}
 
 `<srcschema>`
 
 `<element>`
 
-## 子项{#children-4}
+## 子项 {#children-4}
 
 * `<attribute>`
 * `<compute-string>`
@@ -42,7 +44,7 @@ _operation（字符串）、高级（布尔）、聚合（字符串）、autopk�
 * `<sysfilter>`
 * `<translateddefault>`
 
-## 说明{#description-4}
+## 说明 {#description-4}
 
 Adobe Campaign中有四种类型的`<element>`元素：
 
@@ -51,7 +53,7 @@ Adobe Campaign中有四种类型的`<element>`元素：
 * 链接`<element>` :定义链接。 此元素必须包含“@type=link”属性。
 * XML `<element>` :定义文本类型“mData”字段。 此元素必须包含“@type=xml”属性。
 
-## 属性描述{#attribute-description-4}
+## 属性描述 {#attribute-description-4}
 
 * **_operation（字符串）**:定义在数据库中写入的类型。
 

@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 6%
 
 ---
 
-# 参数元素{#param--element}
+# 参数元素 {#param--element}
 
-## 内容模型{#content-model-12}
+![](../../../assets/v7-only.svg)
+
+## 内容模型 {#content-model-12}
 
 参数：==帮助
 
-## 属性{#attributes-12}
+## 属性 {#attributes-12}
 
 * @_operation（字符串）
 * @desc（字符串）
@@ -31,19 +33,19 @@ ht-degree: 6%
 * @namespace(MNTOKEN)
 * @type（字符串）
 
-## 父项{#parents-12}
+## 父母 {#parents-12}
 
 `<parameters>`
 
-## 子项{#children-12}
+## 子项 {#children-12}
 
 `<help>`
 
-## 说明{#description-12}
+## 说明 {#description-12}
 
 利用此元素，可定义用于调用SOAP方法的参数。
 
-## 属性描述{#attribute-description-12}
+## 属性描述 {#attribute-description-12}
 
 * **desc（字符串）**:与元素相关的 `<param>` 描述。
 * **输入（字符串）**:此属性定义参数是否位于SOAP调用的输入（输入）或输出（输出）。如果未指定此属性，则输入默认参数(&quot;@inout=in&quot;)。
@@ -83,7 +85,7 @@ ht-degree: 6%
    * 时间跨平台
    * uuid
 
-## 示例{#examples-9}
+## 示例 {#examples-9}
 
 字符串类型的“serviceName”集客设置的定义：
 

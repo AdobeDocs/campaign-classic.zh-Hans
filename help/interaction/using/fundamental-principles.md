@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 基本原则{#fundamental-principles}
 
-## 部署环境{#deploying-environments}
+![](../../assets/v7-only.svg)
+
+## 部署环境 {#deploying-environments}
 
 管理选件时，每个定向维度都使用两个环境：
 
@@ -31,7 +33,7 @@ ht-degree: 1%
 
 ![](assets/architecture_interaction1.png)
 
-## 交互类型和联系方法{#interaction-types-and-contact-methods}
+## 交互类型和联系方法 {#interaction-types-and-contact-methods}
 
 交互有两种可能类型：集客交互（由联系人发起）和出站交互（由选件制作者发起）。
 

@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # 用例：Web 窗体{#use-cases-web-forms}
 
-## 创建具有双重选择加入的订阅表单{#create-a-subscription--form-with-double-opt-in}
+![](../../assets/common.svg)
+
+## 通过双重选择加入创建订阅表单 {#create-a-subscription--form-with-double-opt-in}
 
 当您提供信息服务时，收件人需要订阅才能接收所有链接的通信。 为避免通信不当并确保收件人有意订阅，我们建议发送订阅确认请求以创建双重选择加入。 仅当用户单击确认消息中包含的链接时，订阅才会生效。
 
@@ -24,7 +26,7 @@ ht-degree: 1%
 1. 在网站上创建新闻稿订阅表单，该表单中包含用于订阅临时服务的复选框。 此服务将允许您发送订阅确认消息。
 1. 使用链接到Web表单的投放模板创建订阅确认投放。 它包含确认链接，用于调用新闻稿订阅表单并显示订阅批准消息。
 
-### 步骤1 — 创建信息服务{#step-1---creating-information-services}
+### 步骤1 — 创建信息服务 {#step-1---creating-information-services}
 
 1. 创建要提供给收件人的新闻稿订阅服务。 有关如何创建新闻稿的更多信息，请参阅[此部分](../../delivery/using/about-services-and-subscriptions.md)。
 
@@ -34,7 +36,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
 
-### 步骤2 — 创建确认消息{#step-2---creating-confirmation-messages}
+### 步骤2 — 创建确认消息 {#step-2---creating-confirmation-messages}
 
 确认消息通过在临时服务级别引用的专用投放模板发送。
 
@@ -68,7 +70,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
-### 步骤3 — 创建订阅表单{#step-3---creating-the-subscription-form}
+### 步骤3 — 创建订阅表单 {#step-3---creating-the-subscription-form}
 
 Web窗体支持收件人订阅和订阅确认。
 
@@ -149,7 +151,7 @@ Web窗体工作流将包括以下活动：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
 
-### 步骤4 — 发布和测试表单{#step-4---publishing-and-testing-the-form}
+### 第4步 — 发布和测试表单 {#step-4---publishing-and-testing-the-form}
 
 您现在可以发布表单，以便用户访问。
 
@@ -184,7 +186,7 @@ Web窗体工作流将包括以下活动：
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
 
-## 根据所选值{#displaying-different-options-depending-on-the-selected-values}显示不同的选项
+## 根据所选值显示不同的选项 {#displaying-different-options-depending-on-the-selected-values}
 
 在以下示例中，要求用户选择一种车辆类型。 您可以根据所选类型显示可用的车辆类别。 这意味着右列中显示的项目取决于用户的选择：
 

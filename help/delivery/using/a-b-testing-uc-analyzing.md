@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: e6f39180-d161-4226-810a-10bb1c3682ca
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # 分析结果 {#step-8--analyzing-the-result}
+
+![](../../assets/common.svg)
 
 发送测试投放后，您可以检查已将其发送到的收件人以及是否已打开这些投放。
 

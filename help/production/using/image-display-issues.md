@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 62fa491e-3e83-422b-bcde-2bae2c1b676e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 图像显示问题{#image-display-issues}
+
+![](../../assets/v7-only.svg)
 
 如果您在已发送的消息中遇到图像显示问题，原因可能与错误位置相关：
 

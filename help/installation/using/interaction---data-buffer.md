@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 7250b885-0606-466a-bfc2-6dd3cc5a012d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 互动 - 数据缓冲区{#interaction-data-buffer}
+
+![](../../assets/v7-only.svg)
 
 您可以通过取消同步优惠建议计算来配置数据缓冲区，以提高入站交互性能。 此配置将在实例自己的配置文件(config-Instance.xml)中执行。
 

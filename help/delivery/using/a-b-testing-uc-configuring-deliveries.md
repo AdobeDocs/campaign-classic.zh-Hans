@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
-# 在工作流{#step-4--configuring-the-deliveries-in-the-workflow}中配置投放
+# 在工作流中配置投放 {#step-4--configuring-the-deliveries-in-the-workflow}
+
+![](../../assets/common.svg)
 
 创建[群体后，即可配置投放。 ](a-b-testing-uc-population-samples.md)在此用例中，前两个投放允许您向群体A和B发送不同的内容。第三个投放是回退投放：它将发送给不属于A或B的收件人。其内容将由脚本计算，并且与A或B相同，具体取决于打开率最高的收件人。 我们需要为第三个投放配置一个等待期，以了解投放A和B的结果。这就是第三个投放包含&#x200B;**[!UICONTROL Wait]**&#x200B;活动的原因。
 

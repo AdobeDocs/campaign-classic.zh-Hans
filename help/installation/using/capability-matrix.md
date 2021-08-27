@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
 # 每个模型的功能矩阵{#capability-matrix-per-model}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性及其用法取决于安装的部署类型。 本文将详细介绍完全托管(Managed Services)部署与内部部署之间某些功能的主要区别。
 
@@ -21,7 +23,7 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 
 此部分](../../installation/using/hosting-models.md)引入了不同的托管模型。[
 
-## 每个部署型号{#capability-matrix}的可用性
+## 每个部署模型的可用性 {#capability-matrix}
 
 | 功能 | 托管 | 混合 | 内部部署 | 详细信息 |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,6 +55,6 @@ Adobe Campaign提供了&#x200B;**联合数据访问**(FDA)选项，以便处理�
 * [兼容性矩阵](../../rn/using/compatibility-matrix.md)
 * [发行说明](../../rn/using/latest-release.md)
 * [Campaign Classic升级](../../rn/using/rn-overview.md)
-* [已弃用和已删除的功能](../../rn/using/deprecated-features.md)
+* [已弃用和已移除的功能](../../rn/using/deprecated-features.md)
 * [[!DNL Gold Standard] 发行版本](../../rn/using/gold-standard.md)
 * [[!DNL Gold Standard] 项目](../../rn/using/gs-overview.md)

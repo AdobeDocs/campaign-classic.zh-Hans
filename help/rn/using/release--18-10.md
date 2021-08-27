@@ -2,20 +2,22 @@
 product: campaign
 title: Campaign 18.10发行说明
 description: Campaign 18.10发行说明
-feature: 概述
+feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2369'
 ht-degree: 7%
 
 ---
 
 # 18.10 版{#release-18-10}
 
-## 版本18.10.6 — 版本8985{#release-18-10-6-build-8985}
+![](../../assets/v7-only.svg)
+
+## 18.10.6 版 - 内部版本 8985{#release-18-10-6-build-8985}
 
 2019年7月12日
 
@@ -27,7 +29,7 @@ ht-degree: 7%
 * 改进了在使用内部帐户时执行安全区域包的权限。
 * 修复了可能导致匹配字段日志中出现错误的问题。 (NEO-8978)
 
-## 版本18.10.5 — 版本8984{#release-18-10-5-build-8984}
+## 18.10.5 版 - 内部版本 8984{#release-18-10-5-build-8984}
 
 2019年4月23日
 
@@ -37,7 +39,7 @@ ht-degree: 7%
 * 删除了工作流热图中的10,000条记录限制，以修复缺失的数据问题。 (NEO-12329)
 * 修复了在扩充工作流活动中使用“从主集中保留所有其他数据”选项时的问题。 (NEO-13291)
 
-## 版本18.10.4 — 版本8983{#release-18-10-4-build-8983}
+## 18.10.4 版 - 内部版本 8983{#release-18-10-4-build-8983}
 
 2019年4月15日
 
@@ -50,7 +52,7 @@ ht-degree: 7%
 * 在Analytics集成中，现在允许检索包含%字符的AAM区段数据。 (NEO-12025)
 * 修复了使用HTTP2发送推送通知时的Tomcat崩溃问题。 (NEO-12701)
 
-## 版本18.10.3 — 版本8981{#release-18-10-3-build-8981}
+## 18.10.3 版 - 内部版本 8981{#release-18-10-3-build-8981}
 
 2019年1月29日
 
@@ -74,7 +76,7 @@ ht-degree: 7%
 * 修复了在移动应用程序上发送推送通知时的字符转义问题。
 * 修复了中间源外部帐户中无法从FDA切换到SOAP同步方法的问题。
 
-## 版本18.10.2 — 版本8978{#release-18-10-2-build-8978}
+## 18.10.2 版 - 内部版本 8978{#release-18-10-2-build-8978}
 
 2018年12月6日
 
@@ -96,7 +98,7 @@ ht-degree: 7%
 * 修复了工作流热图中计算工作流持续时间的问题。
 
 
-## 版本18.10 — 版本8977{#release-18-10-build-8977}
+## 18.10 版 - 内部版本 8977{#release-18-10-build-8977}
 
 2018年11月5日
 
@@ -121,15 +123,15 @@ ht-degree: 7%
      <li> <p>在iOS中跟踪静默通知 </p> </li> 
      <li> <p>在iOS中实施对注册调用的反馈</p> </li> 
      <li> <p>提高iOS交付准备速度</p> </li> 
-    </ul> <p>作为Google弃用GCM的一部分，Android V2连接器现在只能连接到FCM服务器。</p><p>有关详细信息，请参阅<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">详细文档</a>。本文<a href="https://helpx.adobe.com/cn/campaign/kb/migrate-to-fcm.html">文章</a>中详细介绍了向FCM的手动升级。 </p> </td> 
+    </ul> <p>作为Google弃用GCM的一部分，Android V2连接器现在只能连接到FCM服务器。</p><p>有关详细信息，请参阅<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">有详细说明的文档</a>。本文<a href="https://helpx.adobe.com/cn/campaign/kb/migrate-to-fcm.html">文章</a>中详细介绍了向FCM的手动升级。 </p> </td> 
   </tr> 
   <tr> 
    <td> SQL数据管理活动<br /> </td> 
-   <td> <p>添加了新的数据管理工作流活动。 <strong>SQL数据管理</strong>活动允许您编写或复制粘贴您自己的SQL脚本以创建和填充工作表（仅限FDA）。 </p> <p>有关详细信息，请参阅<a href="../../workflow/using/sql-data-management.md">详细文档</a>。</p></td> 
+   <td> <p>添加了新的数据管理工作流活动。 <strong>SQL数据管理</strong>活动允许您编写或复制粘贴您自己的SQL脚本以创建和填充工作表（仅限FDA）。 </p> <p>有关详细信息，请参阅<a href="../../workflow/using/sql-data-management.md">有详细说明的文档</a>。</p></td> 
   </tr> 
   <tr> 
    <td> 工作流监测<br /> </td> 
-   <td> <p>借助新的Adobe Campaign Workflow HeatMap，平台管理员能够快速以图形形式表示所有并发工作流，从而监控实例的负载并相应地规划工作流。</p> <p>有关详细信息，请参阅<a href="../../workflow/using/heatmap.md">详细文档</a>。</p> <p>对于8977之前的版本（从8700开始），也可以根据需要使用Workflow HeatMap包。 有关请求和安装它的更多信息，请参阅<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">此页面</a>。</p> </td> 
+   <td> <p>借助新的Adobe Campaign Workflow HeatMap，平台管理员能够快速以图形形式表示所有并发工作流，从而监控实例的负载并相应地规划工作流。</p> <p>有关详细信息，请参阅<a href="../../workflow/using/heatmap.md">有详细说明的文档</a>。</p> <p>对于8977之前的版本（从8700开始），也可以根据需要使用Workflow HeatMap包。 有关请求和安装它的更多信息，请参阅<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">此页面</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>

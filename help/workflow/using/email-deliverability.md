@@ -5,7 +5,7 @@ description: 进一步了解电子邮件可投放性包
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 
 
 # 投放能力监控（电子邮件投放能力）{#email-deliverability}
+
+![](../../assets/common.svg)
 
 下面详述的工作流默认安装在所有实例上，允许您初始化退回邮件鉴别规则列表、域列表和MX列表。 安装&#x200B;**可投放性监控（电子邮件可投放性）**&#x200B;包后，此工作流将在夜间运行。 有关投放能力监控的更多信息，请参阅此[部分](../../delivery/using/about-deliverability.md)。
 

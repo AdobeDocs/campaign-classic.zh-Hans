@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Web 窗体中的静态元素{#static-elements-in-a-web-form}
+
+![](../../assets/common.svg)
 
 您可以在表单的页面中包含用户没有交互的元素；这些是静态元素，如图像、HTML内容、水平条或超文本链接。 通过选择&#x200B;**[!UICONTROL Static elements]**，可通过工具栏中的第一个按钮创建这些元素。
 

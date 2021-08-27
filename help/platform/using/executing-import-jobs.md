@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 60%
@@ -14,6 +14,8 @@ ht-degree: 60%
 ---
 
 # 配置导入作业 {#executing-import-jobs}
+
+![](../../assets/common.svg)
 
 Adobe Campaign允许您以文本、CSV、TAB或XML格式从一个或多个文件将数据导入数据库。 这些文件与表（主表或链接的表）相关联，并且源文件的每个字段与数据库的字段相关联。
 
@@ -29,11 +31,11 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式从一个或多个文件
 >
 >如果使用 IIS Web 服务器，则可能需要通过配置授权上传大文件 (> 28 MB)。有关更多信息，请参见[此章节](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit)。
 
-## 源文件{#source-file}
+## 源文件 {#source-file}
 
 在源文件中，每行与一条记录重合。记录中的数据由分隔符（空格、制表符、字符等）分隔。这意味着以列的形式检索数据，并且每列与数据库的字段相关联。
 
-## 步骤1 — 选择导入模板{#step-1---choosing-the-import-template}
+## 第1步 — 选择导入模板 {#step-1---choosing-the-import-template}
 
 启动导入向导时，首先必须选择模板。例如，要配置导入收到简报的收件人，请按照以下步骤操作：
 
@@ -113,7 +115,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式从一个或多个文件
 * **[!UICONTROL Auto-detect format]** 用于重新初始化数据源的格式。此选项允许您将原始格式重新应用于已通过&#x200B;**[!UICONTROL Click here to change the file format...]**&#x200B;选项格式化的数据。
 * **[!UICONTROL Advanced parameters]**&#x200B;链接允许您过滤源数据并访问高级选项。 在此屏幕中，您可以选择仅导入部分文件。您还可以定义筛选器，例如，根据相应行的值仅导入“潜在客户”或“客户”类型的用户。这些选项仅供专业 JavaScript 用户使用。
 
-### 更改文件格式{#changing-the-file-format}
+### 更改文件格式 {#changing-the-file-format}
 
 使用&#x200B;**[!UICONTROL Click here to change the file format...]**&#x200B;选项可以格式化源文件的数据，特别是指定列分隔符和每个字段的数据类型。 此配置通过以下窗口执行：
 
@@ -242,7 +244,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式从一个或多个文件
 
 选项&#x200B;**[!UICONTROL Reject]**&#x200B;和&#x200B;**[!UICONTROL Ignore]**&#x200B;将按如上所述运行。
 
-### 出现错误{#behavior-in-the-event-of-an-error}时
+### 出错 {#behavior-in-the-event-of-an-error}
 
 大多数数据传输操作会产生各种类型的错误（不一致的行格式，无效的电子邮件地址等）。导入引擎生成的所有错误和所有警告都将存储并链接到导入实例。
 
@@ -327,7 +329,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式从一个或多个文件
 
 单击&#x200B;**[!UICONTROL Next]**&#x200B;以验证此步骤并显示以下步骤。
 
-## 第6步 — 启动导入{#step-6---launching-the-import}
+## 第6步 — 启动导入 {#step-6---launching-the-import}
 
 向导的最后一步允许您启动数据导入。为此，请单击&#x200B;**[!UICONTROL Start]**&#x200B;按钮。
 

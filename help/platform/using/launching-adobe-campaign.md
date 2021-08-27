@@ -6,17 +6,18 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 47%
+source-wordcount: '532'
+ht-degree: 49%
 
 ---
 
 # 启动 Adobe Campaign{#launching-adobe-campaign}
 
-Campaign客户端控制台是一个富客户端，可让您连接到Campaign应用程序服务器。 了解如何在[此页面](../../installation/using/installing-the-client-console.md)中下载和配置客户端控制台。
+![](../../assets/v7-only.svg)
 
+Campaign客户端控制台为
 
 >[!CAUTION]
 >
@@ -53,7 +54,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 * 要启动连接，还可以按&#x200B;**Enter**&#x200B;键。
 * 您可以使用&#x200B;**Escape**&#x200B;键将&#x200B;**[!UICONTROL Login]**&#x200B;和&#x200B;**[!UICONTROL Password]**&#x200B;字段重置为最后一个成功的连接值。
 
-## 设置连接{#setting-up-connections}
+## 设置连接 {#setting-up-connections}
 
 您可以通过输入区上方的链接来访问服务器连接设置。
 
@@ -77,7 +78,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 [访问管理](../../platform/using/access-management.md)部分详细介绍了此功能。
 
-## 断开与Adobe Campaign的连接{#disconnecting-from-adobe-campaign}
+## 断开与Adobe Campaign的连接 {#disconnecting-from-adobe-campaign}
 
 要中断 Adobe Campaign 的连接，请使用图标栏中的第一个图标。
 
@@ -87,7 +88,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 >
 >您也可以关闭应用程序，无需先行注销。
 
-## 获取Adobe Campaign版本{#getting-your-campaign-version}
+## 获取Adobe Campaign版本 {#getting-your-campaign-version}
 
 **[!UICONTROL Help > About...]**&#x200B;菜单允许您访问以下信息：
 
@@ -109,5 +110,5 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 **相关主题**：
 
 * [Adobe Campaign帮助和支持选项](../../support.md)
-* [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)
 * [Adobe Experience Cloud支持和专家会议](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)

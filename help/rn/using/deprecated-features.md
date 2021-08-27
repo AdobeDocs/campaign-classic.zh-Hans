@@ -2,18 +2,20 @@
 product: campaign
 title: Campaign Classic 已弃用和已移除的功能
 description: 本页列出了 Adobe Campaign Classic 中已弃用并移除的功能
-feature: 概述
+feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 9c73d13fe3d062ce69c948dba7d57dad573f6856
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1645'
 ht-degree: 98%
 
 ---
 
 # 已弃用和已移除的功能 {#deprecated-and-removed-features}
+
+![](../../assets/v7-only.svg)
 
 Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧功能，从而提高客户获得的整体价值，并且我们始终不断仔细考量向后兼容性。由于 Adobe Campaign Classic 可与第三方工具配合使用，所以会定期更新产品兼容性，以仅实施所支持的版本。下面和[兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出了不再与 Adobe Campaign Classic 兼容的版本。
 

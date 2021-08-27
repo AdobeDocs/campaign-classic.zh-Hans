@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 6%
+ht-degree: 10%
 
 ---
 
 # 连续投放{#continuous-delivery}
+
+![](../../assets/common.svg)
 
 **连续投放**&#x200B;类型操作允许您向现有投放添加新收件人。 此投放类型可避免您每次都必须创建新投放：此模式通常更有效，尤其是对于需要时发送的低容量警报或通知。
 
@@ -29,7 +31,7 @@ ht-degree: 6%
 
 此选项不处理与活动配置相关的错误，即无效值。
 
-## 输入参数{#input-parameters}
+## 输入参数 {#input-parameters}
 
 * tableName
 * 模式
@@ -38,7 +40,7 @@ ht-degree: 6%
 
 仅当选择&#x200B;**[!UICONTROL Specified by the inbound event]**&#x200B;选项时。
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * tableName
 * 模式
@@ -58,9 +60,9 @@ ht-degree: 6%
 
 ![连续投放](assets/delivery_continuous.jpg)
 
-## 教程视频{#continuous-delivery-video}
+## 教程视频 {#continuous-delivery-video}
 
-以下视频演示了如何使用增量查询配置连续投放。
+本视频演示了如何使用增量查询配置连续投放。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 

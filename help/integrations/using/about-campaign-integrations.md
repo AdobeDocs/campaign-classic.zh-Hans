@@ -6,14 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 9%
+ht-degree: 12%
 
 ---
 
-# 开始使用Adobe Campaign集成{#about-campaign-integrations}
+# 开始使用Adobe Campaign集成 {#about-campaign-integrations}
+
+![](../../assets/common.svg)
 
 Adobe Experience Cloud是一套业内最佳的综合性集成解决方案，它基于通用数据平台而构建，提供了一组功能强大的通用核心服务。
 
@@ -27,14 +29,13 @@ Adobe Experience Cloud是一套业内最佳的综合性集成解决方案，它�
 >
 >这些集成中的大多数内容都需要实施AdobeIdentity Management系统(IMS)，才能通过Adobe ID登录。 [请参阅此页面](../../integrations/using/about-adobe-id.md)以了解详情。
 
-
-## 链接您的解决方案{#working-with-experience-cloud-solutions}
+## 关联您的解决方案 {#working-with-experience-cloud-solutions}
 
 多个解决方案可以关联到Adobe Experience Cloud。 **organization**&#x200B;是客户实体，它允许管理员配置组和用户，并控制Adobe Experience Cloud中的单点登录(SSO)。 组织的作用类似于一个衔接所有Experience Cloud产品和解决方案的登录公司。 大多数情况下，组织是您的公司名称。但是，公司可以有许多组织。
 
 [Adobe Experience Cloud帮助门户](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)中详细介绍了组织管理和关联Adobe Experience Cloud帐户。
 
-## 身份和Cookie管理{#id-and-cookies}
+## 身份和Cookie管理 {#id-and-cookies}
 
 安装Adobe Campaign或将现有安装与Adobe Experience Cloud集成时，将启用[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。 此服务取代了Adobe Campaign首先为其跟踪功能使用的永久Cookie。
 
@@ -90,7 +91,7 @@ Adobe Experience Cloud Identity服务（ID服务）提供了一个通用的永�
   </tr> 
   <tr> 
    <td> <strong>Adobe Analytics Connector</strong><br /> </td> 
-   <td> <strong>Adobe Analytics </strong> Connector允许Adobe Campaign和Adobe Analytics通过与电子邮件促销活动后用户行为相关的区段进行交互。相反，它会将Adobe Campaign投放的电子邮件促销活动的指标和属性发送到Adobe Analytics。<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">了解</a> 有关Campaign - Analytics连接器集成的更多信息。</p><br /> </td> 
+   <td> <strong>Adobe Analytics </strong> Connector允许Adobe Campaign和Adobe Analytics通过与电子邮件促销活动后用户行为相关的区段进行交互。反过来，它会将 Adobe Campaign 投放的电子邮件营销活动的指标和属性发送到 Adobe Analytics。<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">了解</a> 有关Campaign - Analytics连接器集成的更多信息。</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>

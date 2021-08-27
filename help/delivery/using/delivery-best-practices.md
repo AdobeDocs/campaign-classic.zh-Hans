@@ -5,14 +5,16 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
 # 投放最佳实践 {#delivery-best-practices}
+
+![](../../assets/common.svg)
 
 了解与使用Adobe Campaign进行投放设计和发送相关的最佳实践。 使用以下链接浏览主题并查找指南。
 
@@ -101,7 +103,7 @@ ht-degree: 24%
 </tr>
 </table>
 
-另请参阅：
+另请参阅:
 
 * [投放能力入门](about-deliverability.md)
 

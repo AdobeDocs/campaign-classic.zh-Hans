@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
 
 ---
 
-# 预处理指令{#pre-processing-instructions}
+# 预处理指令 {#pre-processing-instructions}
+
+![](../../assets/common.svg)
 
 您可以在投放内容中使用特定语法来添加说明并编写跟踪电子邮件的URL脚本。 &lt;%@说明不是JavaScript:此语法专用于Adobe Campaign。
 
@@ -112,7 +114,7 @@ ht-degree: 1%
 <%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
 ```
 
-### [!DNL value] 在Javascript部分中  {#value-in-javascript}
+### [!DNL value] 在Javascript部分中 {#value-in-javascript}
 
 要允许在Javascript部分中使用&lt;%@值，两个特殊对象将被替换为&lt;%和%>:
 

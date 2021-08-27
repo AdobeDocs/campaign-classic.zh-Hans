@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
@@ -15,13 +15,15 @@ ht-degree: 1%
 
 # 元素布局{#element-layout}
 
+![](../../assets/common.svg)
+
 除了此处详述的各种图表外：[图表类型和变体](../../reporting/using/creating-a-chart.md#chart-types-and-variants)，您可以调整显示并向报表页面添加元素。
 
 您可以使用容器：这些选项允许您链接页面的多个元素，并在列和/或单元格中配置其布局。 [此部分](../../web/using/defining-web-forms-layout.md#creating-containers)中详细说明了如何使用它们。
 
 您可以在树的根位置配置报表布局，并为每个容器过载报表布局。 页面按列进行排序。 容器也按列进行排序。 只有静态项目和图形项目会按单元格进行排序。
 
-## 为每个页面{#defining-the-options-for-each-page}定义选项
+## 为每个页面定义选项 {#defining-the-options-for-each-page}
 
 您可以使用报表每个页面上的选项。
 
@@ -35,7 +37,7 @@ ht-degree: 1%
 
 选择&#x200B;**[!UICONTROL Browse]**&#x200B;部分中的各种选项，以授权从一个报表页面浏览到另一个报表页面。 如果选择&#x200B;**[!UICONTROL Disable next page]**&#x200B;或&#x200B;**[!UICONTROL Disable previous page]**&#x200B;选项，则&#x200B;**[!UICONTROL Next]**&#x200B;和&#x200B;**[!UICONTROL Previous]**&#x200B;按钮将从报表页面中消失。
 
-## 添加页眉和页脚{#adding-a-header-and-a-footer}
+## 添加页眉和页脚 {#adding-a-header-and-a-footer}
 
 利用报表属性窗口还可定义布局元素，例如：窗口的标题、页眉和页脚的HTML内容。
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: d26966a8-b5db-4fa4-85ec-7ebd770c4ef3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 编辑架构{#edit-schema}
+
+![](../../assets/common.svg)
 
 可以使用&#x200B;**[!UICONTROL Edit schema]**&#x200B;活动在工作流中转换、标准化数据，并在必要时进行扩充。 它通常用于标准化数据结构：例如，您可以通过计算字段或聚合的平均值来重命名输出列或修改其内容。
 

@@ -2,18 +2,20 @@
 product: campaign
 title: Campaign  [!DNL Gold Standard] 的兼容性矩阵
 description: ' [!DNL Gold Standard]  版本的 Campaign Classic 兼容性矩阵'
-feature: 概述
+feature: Overview
 role: User
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '513'
 ht-degree: 100%
 
 ---
 
 # [!DNL Gold Standard]兼容性矩阵{#compatibility-matrix-gs}
+
+![](../../assets/v7-only.svg)
 
 本文档列出了 **Adobe Campaign Classic[!DNL Gold Standard]** 19.1 内部版本支持的所有系统和组件。此列表中未包含的产品和版本与此版本的 Adobe Campaign 不兼容。
 

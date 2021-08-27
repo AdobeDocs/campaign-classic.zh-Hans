@@ -5,19 +5,27 @@ description: 消息中心（控制）
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 7%
+source-wordcount: '155'
+ht-degree: 10%
 
 ---
 
 
 # 消息中心（控制）{#message-center-control}
 
-下面详述的工作流计划每小时运行一次。 默认情况下，它随&#x200B;**消息中心 — 控制**&#x200B;模块一起安装。 有关此模块的更多信息，请参阅此[部分](../../message-center/using/about-transactional-messaging.md)。
+![](../../assets/common.svg)
 
-要详细了解如何配置与消息中心模块相关的技术工作流，请参阅[此页面](../../message-center/using/technical-workflows.md)。
+下面详述的工作流计划每小时运行一次。 默认情况下，它随&#x200B;**消息中心 — 控制**&#x200B;模块一起安装。
+
+
+有关更多信息，请根据您的Campaign版本，参阅以下章节：
+
+![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文档](../../message-center/using/about-transactional-messaging.md)
+
+![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+
 
 <table> 
  <tbody> 

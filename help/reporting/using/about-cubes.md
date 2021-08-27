@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # 多维数据集入门{#about-cubes}
+
+![](../../assets/common.svg)
 
 通过&#x200B;**Marketing Analytics**&#x200B;模块，可探索数据库中的数据。 它使您能够分析和测量数据、计算统计数据、简化和优化报表的创建和计算。 除此之外，营销分析还允许您创建报表和构建目标群体。 识别后，这些区段会存储在可在Adobe Campaign中使用的列表（定位、分段等）中。
 
@@ -79,7 +81,7 @@ ht-degree: 10%
 
    可以计算度量：例如，要约的接受率是其被呈现的次数与被接受次数的比率。
 
-## 多维数据集工作区{#cube-workspace}
+## 立方工作区 {#cube-workspace}
 
 多维数据集存储在&#x200B;**[!UICONTROL Administration > Configuration > Cubes]**&#x200B;节点中。
 

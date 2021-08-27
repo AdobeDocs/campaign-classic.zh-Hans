@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: tracking-offers
 exl-id: 44c57b0c-3561-4943-812f-945f5fcbb142
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # 优惠分析报告{#offer-analysis-report}
+
+![](../../assets/v7-only.svg)
 
 **[!UICONTROL Offer analysis]**&#x200B;报告概述了已接受或已拒绝的建议的数量。
 
@@ -35,6 +37,6 @@ ht-degree: 10%
 
    ![](assets/offer_report_perdeliveries.png)
 
-可以根据报表上半部分提供的各种标准过滤数据。 选择所需的标准后，单击&#x200B;**[!UICONTROL Refresh]**&#x200B;链接以将其应用到报表。
+数据可以根据报表上半部分提供的各种条件进行过滤。 选择所需的标准后，单击&#x200B;**[!UICONTROL Refresh]**&#x200B;链接以将其应用到报表。
 
 ![](assets/offer_report_criteria.png)

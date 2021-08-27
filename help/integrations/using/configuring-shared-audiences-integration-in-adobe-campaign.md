@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 在Adobe Campaign中配置共享受众集成{#configuring-shared-audiences-integration-in-adobe-campaign}
+
+![](../../assets/common.svg)
 
 提交此请求后，Adobe将继续为您配置集成，并与您联系以提供完成配置所需的详细信息和信息：
 
@@ -26,7 +28,7 @@ ht-degree: 2%
 >
 >如果您使用demdex域并遵循语法&#x200B;**ftp-out.demdex.com**（导入外部帐户）和&#x200B;**ftp-in.demdex.com**（导出外部帐户），则需要相应地调整实施，并移至Amazon Simple Storage Service(S3)连接器以导入或导出数据。 有关如何使用Amazon S3配置外部帐户的更多信息，请参阅此[部分](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)。
 
-## 步骤1:在Adobe Campaign中配置或检查外部帐户{#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
+## 步骤1:在Adobe Campaign中配置或检查外部帐户 {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
 首先，我们需要在Adobe Campaign中配置或检查外部帐户，如下所示：
 
@@ -65,7 +67,7 @@ ht-degree: 2%
 
 外部帐户现已配置完成。
 
-## 步骤2:配置数据源{#step-2--configure-the-data-source}
+## 步骤2:配置数据源 {#step-2--configure-the-data-source}
 
 **Recipient - Visitor ID**&#x200B;在Audience Manager中创建。 这是默认为访客ID配置的现成数据源。 从Campaign创建的区段将包含在此数据源中。
 
@@ -77,13 +79,13 @@ ht-degree: 2%
 
    ![](assets/aam_config_3.png)
 
-## 步骤3:配置促销活动跟踪服务器{#step-3--configure-campaign-tracking-server}
+## 步骤3:配置促销活动跟踪服务器 {#step-3--configure-campaign-tracking-server}
 
 要配置与People Core服务或Audience Manager的集成，我们还需要配置促销活动跟踪服务器。
 
 您需要确保已在域(CNAME)上注册促销活动跟踪服务器。 您可以在[本文](https://helpx.adobe.com/cn/campaign/kb/domain-name-delegation.html)中找到有关域名委派的更多信息。
 
-## 步骤4:配置访客ID服务{#step-4--configure-the-visitor-id-service}
+## 步骤4:配置访客ID服务 {#step-4--configure-the-visitor-id-service}
 
 如果您的访客ID服务从未在您的Web属性或网站上配置，请参阅以下[文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html)以了解如何配置服务或以下[视频](https://helpx.adobe.com/cn/marketing-cloud/how-to/email-marketing.html#step-two) 。
 

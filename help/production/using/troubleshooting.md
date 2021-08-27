@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 18%
@@ -15,16 +15,18 @@ ht-degree: 18%
 
 # 生产疑难解答{#troubleshooting}
 
+![](../../assets/v7-only.svg)
+
 本节包含与Adobe Campaign一般生产问题相关的故障诊断过程，例如投放和工作流执行、监控、数据库维护、连接等。
 
-## 常见问题和一般问题{#common-and-general-issues}
+## 常见问题和一般问题 {#common-and-general-issues}
 
 * 此[page](../../production/using/modules-and-frequent-issues.md)显示列出的模块遇到的最常见问题。
 * 此[页面](../../production/using/workflow-execution.md)列出了在遇到工作流执行问题时应遵循的常见疑难解答过程。
 * 此[页](../../production/using/lost-password.md)详细说明了如何更改或恢复丢失的密码。
 * 此[页面](../../production/using/console-update.md)将详细介绍在您停用相应选项时如何重新激活控制台更新请求。
 
-## 投放故障排除 {#delivery-troubleshooting}
+## 投放疑难解答 {#delivery-troubleshooting}
 
 在投放遇到问题时，可以执行特定操作：
 * [投放能力问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
@@ -36,28 +38,28 @@ ht-degree: 18%
 
 [交付性能问题](../../delivery/using/delivery-performances.md)
 
-## 使用日志{#working-with-logs}
+## 使用日志 {#working-with-logs}
 
 以下是一些有助于改善日志体验的提示：
 
 * [日志精度](../../production/using/log-precision.md)
 * [跟踪日志问题](../../production/using/tracking-logs-issues.md)
 
-## 数据库问题{#database-issues}
+## 数据库问题 {#database-issues}
 
 了解如何通过阅读以下章节来解决性能问题：
 
 * [数据库性能](../../production/using/database-performances.md)
 * [Oracle 数据库的编码](../../production/using/encoding-of-the-oracle-database.md)
 
-## 连接改进{#connection-improvements}
+## 连接改进 {#connection-improvements}
 
 如果您遇到连接问题，请通过以下一些方法来修复这些问题：
 
 * [连接失败](../../production/using/failure-to-connect.md)
 * [连接阈值](../../production/using/connection-thresholds.md)
 
-## 技术故障排除{#technical-troubleshooting}
+## 技术故障排除 {#technical-troubleshooting}
 
 请转到以下部分，以了解更多具体问题：
 

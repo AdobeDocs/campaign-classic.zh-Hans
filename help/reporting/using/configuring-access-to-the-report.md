@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 1%
@@ -15,11 +15,13 @@ ht-degree: 1%
 
 # 配置对报告的访问权限{#configuring-access-to-the-report}
 
-## 报表显示上下文{#report-display-context}
+![](../../assets/common.svg)
+
+## 报表显示上下文 {#report-display-context}
 
 使用&#x200B;**[!UICONTROL Display]**&#x200B;选项卡定义Adobe Campaign平台中报表的显示上下文。 报表的访问权限取决于其选择类型、显示条件和访问权限。
 
-### 选择类型{#selection-type}
+### 选择类型 {#selection-type}
 
 对报表的访问权限可以限制为特定的上下文或选件空间，例如投放、收件人、选择的收件人等。 此访问在&#x200B;**[!UICONTROL Display]**&#x200B;选项卡的&#x200B;**[!UICONTROL Selection type]**&#x200B;部分中配置。
 
@@ -29,7 +31,7 @@ ht-degree: 1%
 * **[!UICONTROL Multiple selection]** :选择多个实体后，将访问报告。
 * **[!UICONTROL Global]** :可通过选项卡中的可用报表列表访问该 **[!UICONTROL Reports]** 报表。
 
-### 显示序列{#display-sequence}
+### 显示序列 {#display-sequence}
 
 **[!UICONTROL Sequence]**&#x200B;字段允许您输入一个数值，用于指定报表在列表中的显示顺序。
 
@@ -37,7 +39,7 @@ ht-degree: 1%
 
 您可以根据需要选择要使用的比例尺：1到10、0到100、-10到10等
 
-### 显示条件{#display-conditions}
+### 显示条件 {#display-conditions}
 
 您还可以通过查询对报表的显示设置条件。
 
@@ -49,7 +51,7 @@ ht-degree: 1%
 
 这意味着，如果营销活动的主渠道是直邮，则营销活动报表中将不提供该报表。
 
-### 访问授权{#access-authorization}
+### 访问授权 {#access-authorization}
 
 可以与其他运算符共享该报表。
 
@@ -59,7 +61,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_advuser_report_visibility_8.png)
 
-### 定义筛选选项{#defining-the-filtering-options}
+### 定义筛选选项 {#defining-the-filtering-options}
 
 **[!UICONTROL Reports]**&#x200B;选项卡显示平台中所有可用的报表，连接的操作员对这些报表具有访问权限。
 
@@ -75,7 +77,7 @@ ht-degree: 1%
 
 您可以在此处输入新类别，并将其添加到可用类别列表。 匹配的枚举会自动更新。
 
-## 创建指向报表{#creating-a-link-to-a-report-}的链接
+## 创建指向报表的链接 {#creating-a-link-to-a-report-}
 
 可以通过树的特定节点（如列表、收件人、投放等）访问报表。 要实现此目的，只需创建一个指向相关报告的链接，并指定要将其提供到的实体即可。
 
@@ -105,7 +107,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_advuser_report_wizard_link_05.png)
 
-## 预览报表{#preview-of-the-report}
+## 报表预览 {#preview-of-the-report}
 
 在发布报表之前，请确保该报表正确显示在&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡中。
 
@@ -121,7 +123,7 @@ ht-degree: 1%
 
 要了解有关这些设置的更多信息，请参阅[Web窗体](../../web/using/about-web-forms.md)章节的&#x200B;**定义Web窗体属性**&#x200B;部分。
 
-## 发布报表{#publishing-the-report}
+## 发布报表 {#publishing-the-report}
 
 必须发布报表，才能与其他运算符共享并在可用报表列表中显示它们（另请参阅[报表显示上下文](#report-display-context)）。 每次更改报表时，必须再次执行此操作。
 

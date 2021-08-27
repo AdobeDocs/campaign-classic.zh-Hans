@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 加载投放内容{#loading-delivery-content}
+
+![](../../assets/common.svg)
 
 如果您的交付内容位于Amazon S3、FTP或SFTP服务器上的HTML文件中，则可以轻松将此内容加载到Adobe Campaign交付中。
 

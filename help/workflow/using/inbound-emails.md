@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 入站电子邮件{#inbound-emails}
+
+![](../../assets/common.svg)
 
 通过&#x200B;**入站电子邮件**&#x200B;活动，您可以从POP3邮件服务器下载和处理电子邮件。
 
@@ -68,7 +70,7 @@ ht-degree: 1%
 
    要定义活动计划，请单击&#x200B;**[!UICONTROL Scheduling]**&#x200B;选项卡，然后选中&#x200B;**[!UICONTROL Plan execution]**。 单击&#x200B;**[!UICONTROL Change]**&#x200B;按钮以配置计划。
 
-   计划配置与计划活动的计划配置相同。 请参阅[调度程序](../../workflow/using/scheduler.md)。
+   计划配置与计划活动的计划配置相同。 请参阅[调度程序](scheduler.md)。
 
 1. **[!UICONTROL Expiration]**
 
@@ -76,4 +78,4 @@ ht-degree: 1%
 
    ![](assets/email_rec_edit_3.png)
 
-   与计划活动的配置相同。 请参阅[过期](../../workflow/using/defining-approvals.md)。
+   与计划活动的配置相同。 请参阅[过期](defining-approvals.md)。

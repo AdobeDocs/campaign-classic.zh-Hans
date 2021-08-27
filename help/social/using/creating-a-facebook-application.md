@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 创建 Facebook 应用程序{#creating-a-facebook-application}
+
+![](../../assets/v7-only.svg)
 
 借助Web应用程序， Social Marketing可让您在Facebook应用程序中显示个性化内容，从而更轻松地通过此社交网络获取潜在客户。 有关Facebook类型Web应用程序的更多示例，请参阅[Facebook应用程序示例](../../social/using/examples-of-facebook-apps.md)。
 
@@ -90,7 +92,7 @@ ht-degree: 1%
 
    ![](assets/social_webapp_fb_013.png)
 
-## 输入服务条款和隐私策略链接{#entering-the-terms-of-service-and-privacy-policy-links}
+## 输入服务条款和隐私政策链接 {#entering-the-terms-of-service-and-privacy-policy-links}
 
 我们强烈建议添加&#x200B;**[!UICONTROL Terms of service]**&#x200B;和&#x200B;**[!UICONTROL Privacy policy]**&#x200B;链接，以在Facebook权限请求屏幕中显示。
 
@@ -103,7 +105,7 @@ ht-degree: 1%
 
    ![](assets/social_fb_terms_of_services.png)
 
-## 创建Facebook类型的Web应用程序{#creating-a-facebook-type-web-application}
+## 创建Facebook类型Web应用程序 {#creating-a-facebook-type-web-application}
 
 利用Adobe Campaign Facebook应用程序，可在Facebook应用程序中显示个性化内容。 对于每个Facebook应用程序，您需要在Adobe Campaign中创建一个Web应用程序。 要创建Facebook Web应用程序，请按如下步骤操作：
 
@@ -137,7 +139,7 @@ ht-degree: 1%
 
    ![](assets/social_webapp_004.png)
 
-## 配置Facebook选项卡{#configuring-facebook-tabs}
+## 配置Facebook选项卡 {#configuring-facebook-tabs}
 
 您可以将Facebook应用程序配置为在Facebook页面上显示为选项卡。 要执行此操作，请应用以下步骤：
 

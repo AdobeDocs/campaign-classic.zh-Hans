@@ -2,18 +2,20 @@
 product: campaign
 title: 权限入门
 description: 了解如何授予对Campaign功能的访问权限
-feature: 访问管理
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '253'
 ht-degree: 6%
 
 ---
 
 # 权限入门{#access-management}
+
+![](../../assets/common.svg)
 
 Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这些权限和限制是授权或拒绝的一组权限和限制：
 
@@ -51,7 +53,7 @@ Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这�
 另请参阅:
 
 * [管理工作流的权限](../../workflow/using/managing-rights.md)
-* [管理分布式营销的权限](../../campaign/using/about-distributed-marketing.md#operators-and-entities)
+* [管理分布式营销的权限](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
 * [管理交互模块的权限](../../interaction/using/operator-profiles.md)
 * [筛选对架构的访问](../../configuration/using/filtering-schemas.md)
 * [限制PI视图](../../configuration/using/restricting-pii-view.md)

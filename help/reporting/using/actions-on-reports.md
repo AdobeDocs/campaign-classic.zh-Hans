@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 对报告执行操作{#actions-on-reports}
+
+![](../../assets/common.svg)
 
 在查看报表时，您可以通过工具栏执行一定数量的操作。 下文详述了这些内容。
 
@@ -23,7 +25,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_advuser_report_wizard_04.png)
 
-## 导出报表{#exporting-a-report}
+## 导出报表 {#exporting-a-report}
 
 从下拉列表中选择要将报表导出到的格式。 (.xls、.pdf或.ods)。
 
@@ -56,7 +58,7 @@ ht-degree: 1%
 * 如果报表包含多个表、图表等 类型元素，它们将导出一个，而另一个将导出。
 * 可以在单元格中强制返回回车符：此配置将保留在Excel中。 有关更多信息，请参阅此[定义单元格格式](../../reporting/using/creating-a-table.md#defining-cell-format)。
 
-### 推迟导出{#postpone-the-export}
+### 推迟出口 {#postpone-the-export}
 
 例如，您可以推迟导出报表，以等待异步调用。 要实现此目的，请在页面的初始化脚本中输入以下参数：
 
@@ -66,7 +68,7 @@ document.nl_waitBeforeRender = true;
 
 要激活导出并开始转换为PDF，请使用&#x200B;**document.nl_renderToPdf()**&#x200B;函数，而不使用任何参数。
 
-### 内存分配{#memory-allocation}
+### 内存分配 {#memory-allocation}
 
 在导出某些大型报告时，可能会出现内存分配错误。
 
@@ -82,7 +84,7 @@ document.nl_waitBeforeRender = true;
 
 要详细了解&#x200B;**nlserver**&#x200B;服务，请参阅[此部分](../../production/using/administration.md)。
 
-## 打印报告{#printing-a-report}
+## 打印报表 {#printing-a-report}
 
 您可以打印报表：要执行此操作，请单击打印机图标：这将打开对话框。
 
@@ -90,7 +92,7 @@ document.nl_waitBeforeRender = true;
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
-## 创建报告存档{#creating-report-archives}
+## 创建报告存档 {#creating-report-archives}
 
 通过存档报表，您可以创建报表在不同时段的视图，例如显示给定时间段的统计信息。
 

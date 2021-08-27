@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: f2300b265fa97e5b208519ab2446927d14f5f91c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 定义电子邮件内容 {#defining-the-email-content}
+
+![](../../assets/common.svg)
 
 ## 发件人 {#sender}
 
@@ -187,9 +189,8 @@ HTML格式的电子邮件投放可以包含图像。 在投放向导中，您可
 >[!IMPORTANT]
 >
 >* 在手动上传或发送消息期间，会修改图像访问路径。
-   > 
-   >
-* 为避免出现性能问题，如果您包含从个性化URL中以[attachment](attaching-files.md)形式动态下载的图像，则默认情况下，每个图像大小不应超过100,000字节。 此建议的阈值可从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置。
+> 
+>* 为避免出现性能问题，如果您包含从个性化URL中以[attachment](attaching-files.md)形式动态下载的图像，则默认情况下，每个图像大小不应超过100,000字节。 此建议的阈值可从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置。
 
 
 **用例：发送包含图像的消息**

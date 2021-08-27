@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # 用例：显示在线调查的答案报告{#use-case-displaying-report-on-answers-to-an-online-survey}
+
+![](../../assets/common.svg)
 
 可使用专门报告收集和分析Adobe Campaign调查的答案。
 

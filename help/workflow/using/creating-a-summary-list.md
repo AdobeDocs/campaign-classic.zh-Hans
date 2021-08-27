@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 创建摘要列表{#creating-a-summary-list}
+
+![](../../assets/common.svg)
 
 此用例详细介绍了如何创建工作流，在收集文件并进行多项扩充后，您可以创建摘要列表。 此示例基于在商店中购物的联系人列表。
 
@@ -37,7 +39,7 @@ ht-degree: 2%
 1. 从“购买”表中用聚合计算扩充“联系人”数据
 1. 创建摘要列表
 
-## 步骤1:加载文件并协调导入的数据{#step-1--loading-the-file-and-reconciling-the-imported-data}
+## 步骤1:加载文件并协调导入的数据 {#step-1--loading-the-file-and-reconciling-the-imported-data}
 
 要加载的数据是与“Purchase”相关的数据，其格式如下：
 
@@ -92,7 +94,7 @@ Phone;500;London 5
 
    ![](assets/uc2_enrich_enrich3.png)
 
-有关各种类型链接的更多信息，请参阅[扩充和修改数据](../../workflow/using/targeting-data.md#enriching-and-modifying-data)。
+有关各种类型链接的更多信息，请参阅[扩充和修改数据](targeting-data.md#enriching-and-modifying-data)。
 
 在以下窗口中，您需要通过选择源字段（在主集中）和目标字段（属于“存储”架构）来创建连接条件，以配置数据协调。
 
@@ -110,7 +112,7 @@ Phone;500;London 5
 
 ![](assets/uc2_enrich_population1.png)
 
-## 步骤2:将扩充数据写入“购买”表{#step-2--writing-enriched-data-to-the--purchases--table}
+## 步骤2:将扩充数据写入“购买”表 {#step-2--writing-enriched-data-to-the--purchases--table}
 
 此步骤详细介绍如何将导入和扩充的数据写入“购买”表。 为此，我们需要使用&#x200B;**更新数据**&#x200B;活动。
 
@@ -134,7 +136,7 @@ Phone;500;London 5
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## 步骤3:扩充“联系人”数据{#step-3--enriching--contact--data-}
+## 步骤3:扩充“联系人”数据 {#step-3--enriching--contact--data-}
 
 “联系人”架构实际上已链接到“购买”架构。 这意味着您可以使用“扩充”选项的其他选项：添加链接到过滤维度的数据。
 
@@ -170,7 +172,7 @@ Phone;500;London 5
 
    ![](assets/uc2_enrich_enrich8.png)
 
-## 步骤4:创建摘要列表并将其添加到{#step-4--creating-and-adding-to-a-summary-list}
+## 步骤4:创建并添加到摘要列表 {#step-4--creating-and-adding-to-a-summary-list}
 
 最后一步是将所有扩充数据写入列表。
 

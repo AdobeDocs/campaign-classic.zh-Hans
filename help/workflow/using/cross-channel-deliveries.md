@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '292'
 ht-degree: 8%
 
 ---
 
 # 跨渠道投放{#cross-channel-deliveries}
+
+![](../../assets/common.svg)
 
 营销活动工作流活动的&#x200B;**[!UICONTROL Deliveries]**&#x200B;选项卡中提供了跨渠道投放。
 
@@ -22,8 +24,8 @@ ht-degree: 8%
 * [电子邮件](../../delivery/using/about-email-channel.md)
 * [直邮](../../delivery/using/about-direct-mail-channel.md)
 * [手机](../../delivery/using/sms-channel.md)
-* [Twitter](../../social/using/publishing-on-twitter.md)
-* [Facebook](../../social/using/publishing-on-facebook.md)
+* [Twitter](../../social/using/publishing-on-twitter.md) (仅限Campaign Classicv7)
+* [Facebook](../../social/using/publishing-on-facebook.md) (仅限Campaign Classicv7)
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [Android](../../delivery/using/create-notifications-android.md)
 

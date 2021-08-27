@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 ---
 
 # 其他配置 {#mc-additional-configurations}
+
+![](../../assets/v7-only.svg)
 
 ## 监测阈值 {#monitoring-thresholds}
 
@@ -58,7 +60,7 @@ ht-degree: 7%
 
 在控制实例和执行实例之间，将划分与事务性消息传递（消息中心）相关的各种技术工作流。
 
-### 控制实例工作流{#control-instance-workflows}
+### 控制实例工作流 {#control-instance-workflows}
 
 在控制实例上，无论您注册了一个还是多个执行实例，都必须为每个&#x200B;**[!UICONTROL Message Center execution instance]**&#x200B;外部帐户创建一个存档工作流。 单击&#x200B;**[!UICONTROL Create the archiving workflow]**&#x200B;按钮以创建并启动工作流。
 
@@ -72,7 +74,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 ![](assets/messagecenter_archiving_001.png)-->
 
-### 执行实例工作流{#execution-instance-workflows}
+### 执行实例工作流 {#execution-instance-workflows}
 
 在执行实例上，事务性消息传递的技术工作流可从&#x200B;**Administration > Production > Message Center**&#x200B;文件夹访问。 你只需要启动他们。 列表中的工作流包括：
 
@@ -101,7 +103,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 要配置多品牌策略，您需要配置执行实例和控制实例。
 
-### 执行实例{#execution-instance}
+### 执行实例 {#execution-instance}
 
 在执行实例上，执行以下步骤：
 
@@ -152,7 +154,7 @@ Once the control and execution modules are installed on the same instance, you m
    >
    >升级时，这些更改可能会导致冲突。 您可能需要手动将这些公式与其新版本合并。
 
-### 控制实例{#control-instance}
+### 控制实例 {#control-instance}
 
 在控制实例上，您需要关联投放模板和外部帐户。
 

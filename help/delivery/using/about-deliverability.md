@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 9%
@@ -14,6 +14,8 @@ ht-degree: 9%
 ---
 
 # 什么是可投放性{#about-deliverability}
+
+![](../../assets/common.svg)
 
 投放能力允许您测量活动到达收件人收件箱的成功情况，而不会出现弹回或标记为垃圾邮件。 [了解投放能力为何重要](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters)。
 

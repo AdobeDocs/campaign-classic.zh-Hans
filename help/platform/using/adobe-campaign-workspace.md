@@ -2,20 +2,22 @@
 product: campaign
 title: Adobe Campaign 工作区
 description: 了解如何使用和自定义Campaign工作区
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 79%
+source-wordcount: '825'
+ht-degree: 80%
 
 ---
 
 # Adobe Campaign 工作区{#adobe-campaign-workspace}
 
-## 浏览Adobe Campaign接口{#about-adobe-campaign-interface}
+![](../../assets/common.svg)
+
+## 浏览Adobe Campaign界面 {#about-adobe-campaign-interface}
 
 连接到数据库后，即可访问 Adobe Campaign 主页，这是一个仪表板：其中包含允许您访问各种功能的链接和快捷方式，具体显示哪些取决于您的安装以及常规平台配置。
 
@@ -54,7 +56,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 您可以选择五种不同的语言：
 
 * 英语（英国）
-* 美式英语
+* 英语（美国）
 * 法语
 * 德语
 * 日语
@@ -69,7 +71,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 ## 导览基本功能 {#navigation-basics}
 
-### 浏览页面{#browsing-pages}
+### 浏览页面 {#browsing-pages}
 
 该平台的各种功能可分为几大核心功能：可使用界面上方的链接来访问这些功能。
 
@@ -83,7 +85,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 ![](assets/recipient_list_overview.png)
 
-### 使用选项卡{#using-tabs}
+### 使用选项卡 {#using-tabs}
 
 * 单击某个核心功能或链接时，相关页面会取代当前的页面。要回到上一页，可单击工具栏上的 **[!UICONTROL Back]** 按钮。要返回主页，可单击 **[!UICONTROL Home]** 按钮。
 
@@ -93,7 +95,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
    ![](assets/d_ncs_user_interface_tabs.png)
 
-### 创建元素{#creating-an-element}
+### 创建元素 {#creating-an-element}
 
 通过每个核心功能部分可以浏览各种可用的元素。要执行此操作，可使用 **[!UICONTROL Browsing]** 部分中的快捷方式。**[!UICONTROL Other choices]** 链接可用于访问其他所有页面，无论工作环境如何。
 
@@ -118,7 +120,7 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
  <thead> 
   <tr> 
    <th> 格式<br /> </th> 
-   <th> 美式英语<br /> </th> 
+   <th> 英语（美国）<br /> </th> 
    <th> 英式英语<br /> </th> 
   </tr> 
  </thead> 
@@ -135,8 +137,8 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
   </tr> 
   <tr> 
    <td> 带时间的短日期<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>示例：09/25/2018 10:47:25 PM</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>示例：25/09/2018 22:47:25</strong></p> </td> 
+   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>例如：09/25/2018 10:47:25 PM</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>例如：25/09/2018 22:47:25</strong></p> </td> 
   </tr> 
  </tbody> 
 </table>

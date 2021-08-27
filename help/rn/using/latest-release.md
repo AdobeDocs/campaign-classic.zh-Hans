@@ -2,18 +2,20 @@
 product: campaign
 title: 最新版本
 description: 最新 Campaign Classic 发行说明
-feature: 概述
+feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: c59529a0a4d72ecb795569591d62a68f030a0ac7
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1950'
 ht-degree: 99%
 
 ---
 
 # 最新版本{#latest-release}
+
+![](../../assets/v7-only.svg)
 
 本页列出了&#x200B;**最新Campaign Classic版本**&#x200B;随附的新功能、改进和修复。
 
@@ -115,7 +117,7 @@ Campaign 现在支持以下系统：
 **已弃用的功能**
 
 * 从 Campaign 21.1 版本开始，弃用 Adobe Analytics Data Connector。如果您使用的是此连接器，则需要使用新连接器 Adobe Analytics Connector 相应地调整实施。
-有关更多信息，请参阅[有详细说明的文档](../../technotes/aa-connector-migration.md)。
+有关更多信息，请参阅[有详细说明的文档](../../technotes/using/aa-connector-migration.md)。
 * 现已弃用对 Debian 8 的支持。
 * 随着在 20.3 版中弃用 OracleCRM，已从界面中删除相关的外部帐户。
 

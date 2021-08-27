@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -14,13 +14,15 @@ ht-degree: 0%
 
 # 使用模板 {#use-templates}
 
+![](../../assets/common.svg)
+
 交付模板为大多数常见类型的活动提供现成方案，从而提高效率。 借助模板，营销人员可以在较短的时间内以最少的自定义时间部署新营销活动。
 
 在[此部分](creating-a-delivery-template.md)中了解有关投放模板的更多信息。
 
 ## 投放模板快速入门 {#gs-templates}
 
-[投放模板](creating-a-delivery-template.md)允许您定义一组技术和功能属性，这些属性可以满足您的需求，并可重复用于将来的投放。 然后，您可以节省时间并在需要时标准化投放。
+使用[投放模板](creating-a-delivery-template.md)，您只需定义一组符合您需求且可重复用于将来投放的技术和功能属性即可。 然后，您可以节省时间并在需要时标准化投放。
 
 在Adobe Campaign中管理多个品牌时，Adobe建议每个品牌具有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，则其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每个子域有一个投放模板可让您始终为每个品牌使用正确的预配置参数，从而避免出现错误并节省您的时间。
 
@@ -66,4 +68,4 @@ ht-degree: 0%
 
 例如，为了更好地控制出站流量，您可以通过定义每个子域的一个亲和度并为每个亲和度创建一个分类来定义可以使用的IP地址。 相关性在实例的配置文件中定义。 联系您的Adobe Campaign管理员。
 
-有关分类的更多信息，请参阅[此部分](../../campaign/using/about-campaign-typologies.md)。
+有关分类的更多信息，请参阅[此部分](../../campaign-opt/using/about-campaign-typologies.md)。

@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
 
-# 设计事务型消息模板{#creating-the-message-template}
+# 设计事务型消息模板 {#creating-the-message-template}
+
+![](../../assets/v7-only.svg)
 
 要确保每个事件都可以更改为个性化消息，您需要创建一个消息模板以匹配每个事件类型。
 
@@ -51,7 +53,7 @@ ht-degree: 0%
 
    ![](assets/messagecenter_create_model_004.png)
 
-## 创建消息内容{#creating-message-content}
+## 创建消息内容 {#creating-message-content}
 
 事务型消息内容的定义与Adobe Campaign中常规投放的定义相同。 例如，对于电子邮件投放，您可以创建HTML或文本格式的内容、添加附件或个性化投放对象。 有关更多信息，请参阅[电子邮件投放](../../delivery/using/about-email-channel.md)一章。
 

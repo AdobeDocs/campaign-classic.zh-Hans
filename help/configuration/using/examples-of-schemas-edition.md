@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 模式版本示例{#examples-of-schemas-edition}
 
-## 扩展表{#extending-a-table}
+![](../../assets/v7-only.svg)
+
+## 扩展表 {#extending-a-table}
 
 要扩展&#x200B;**nms:recipient**&#x200B;模式收件人表，请应用以下过程：
 
@@ -82,7 +84,7 @@ ht-degree: 2%
    CREATE INDEX NmsRecipient_area ON NmsRecipient(sArea);
    ```
 
-## 链接的集合表{#linked-collection-table}
+## 链接的收藏集表 {#linked-collection-table}
 
 本节介绍如何使用基数1-N创建链接到收件人表的订单表。
 
@@ -147,7 +149,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 >
 >在脚本末尾的SQL命令INSERT INTO允许您插入标识符记录集为0以模拟外连接。
 
-## 扩展表{#extension-table}
+## 扩展表 {#extension-table}
 
 扩展表允许您扩展基数1-1链接表中现有表的内容。
 
@@ -197,7 +199,7 @@ ALTER TABLE NmsRecipient ALTER COLUMN iFeatureId SET Default 0;
 CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 ```
 
-## 溢出表{#overflow-table}
+## 溢出表 {#overflow-table}
 
 溢出表是扩展表（基数1-1），但在溢出表的模式中填充了指向要扩展表的链接声明。
 
@@ -231,7 +233,7 @@ CREATE TABLE CusOverflow(iChildren NUMERIC(3) NOT NULL Default 0, iRecipientId I
 CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);  
 ```
 
-## 关系表{#relationship-table}
+## 关系表 {#relationship-table}
 
 使用关系表可以将两个表与基数N-N链接起来。此表仅包含要链接的表的外键。
 
@@ -297,7 +299,7 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
-## 用例：将字段链接到现有引用表{#uc-link}
+## 用例：将字段链接到现有引用表 {#uc-link}
 
 此用例演示了如何使用现有引用表作为内置Adobe Campaign枚举机制（enum、userEnum或dbEnum）的替代方法。
 

@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 同步用户档案{#synchronizing-profiles}
+
+![](../../assets/v7-only.svg)
 
 ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7收到的数据可用于Campaign Standard创建投放。 您可以通过执行下面列出的操作来查看配置文件的同步方式。
 

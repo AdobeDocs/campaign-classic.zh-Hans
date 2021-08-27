@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 创建和配置数据库{#creating-and-configuring-the-database}
+
+![](../../assets/v7-only.svg)
 
 创建数据库时，Adobe Campaign提供了两个不同的选项：
 
@@ -28,7 +30,7 @@ ht-degree: 1%
 >
 >只有&#x200B;**internal**&#x200B;标识符可以执行这些操作。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
-## 用例1:创建/循环使用数据库{#case-1--creating-recycling-a-database}
+## 用例1:创建/循环使用数据库 {#case-1--creating-recycling-a-database}
 
 创建数据库或回收现有数据库的步骤如下所述。 某些配置取决于所使用的数据库引擎：
 
@@ -41,7 +43,7 @@ ht-degree: 1%
 * [步骤5 — 创建步骤](#step-5---creation-steps),
 * [步骤6 — 创建数据库](#step-6---creating-the-database)。
 
-### 步骤1 — 选择数据库引擎{#step-1---selecting-the-database-engine}
+### 步骤1 — 选择数据库引擎 {#step-1---selecting-the-database-engine}
 
 从下拉列表的引擎中选择数据库引擎。
 
@@ -65,7 +67,7 @@ Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出了�
 
    ![](assets/s_ncs_install_db_mssql_creation01.png)
 
-### 步骤2 — 连接到服务器{#step-2---connecting-to-the-server}
+### 步骤2 — 连接到服务器 {#step-2---connecting-to-the-server}
 
 在&#x200B;**[!UICONTROL Server access]**&#x200B;窗口中，定义数据库服务器访问权限。
 
@@ -78,7 +80,7 @@ Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出了�
 * **** PostgreSQL数据库的postgress，
 * **db2inst1** （用于DB2数据库）。
 
-### 步骤3 — 数据库{#step-3---connection-and-characteristics-of-the-database}的连接和特性
+### 步骤3 — 数据库的连接和特性 {#step-3---connection-and-characteristics-of-the-database}
 
 通过以下步骤，您可以配置登录数据库的设置。
 
@@ -107,7 +109,7 @@ Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出了�
 
    有关更多信息，请参阅[时区管理](../../installation/using/time-zone-management.md)。
 
-### 步骤4 — 安装{#step-4---packages-to-install}的软件包
+### 步骤4 — 要安装的包 {#step-4---packages-to-install}
 
 选择要安装的包。
 
@@ -115,7 +117,7 @@ Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出了�
 
 ![](assets/s_ncs_install_modules.png)
 
-### 步骤5 — 创建步骤{#step-5---creation-steps}
+### 步骤5 — 创建步骤 {#step-5---creation-steps}
 
 通过&#x200B;**[!UICONTROL Creation steps]**&#x200B;窗口，可显示和编辑用于创建表的SQL脚本。
 
@@ -135,7 +137,7 @@ Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出了�
 
    出于安全考虑，我们建议定义Adobe Campaign帐户管理员密码。
 
-### 步骤6 — 创建数据库{#step-6---creating-the-database}
+### 步骤6 — 创建数据库 {#step-6---creating-the-database}
 
 在向导的最后一步中，您可以创建数据库。 单击&#x200B;**[!UICONTROL Start]**&#x200B;确认。
 
@@ -153,7 +155,7 @@ Base61数据库上的Microsoft SQL Server配置示例，该数据库链接到带
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
 
-## 用例2:使用现有数据库{#case-2--using-an-existing-database}
+## 用例2:使用现有数据库 {#case-2--using-an-existing-database}
 
 数据库以及用户必须由数据库管理员创建，并且访问权限配置正确。
 
@@ -167,7 +169,7 @@ Base61数据库上的Microsoft SQL Server配置示例，该数据库链接到带
 * [步骤4 — 创建步骤](#step-4---creation-steps),
 * [第5步 — 创建数据库](#step-5---creating-the-database)。
 
-### 步骤1 — 选择数据库引擎{#step-1---choosing-the-database-engine}
+### 步骤1 — 选择数据库引擎 {#step-1---choosing-the-database-engine}
 
 从下拉列表中选择数据库引擎。
 
@@ -188,7 +190,7 @@ Base61数据库上的Microsoft SQL Server配置示例，该数据库链接到带
 
       ![](assets/s_ncs_install_db_mssql_exists_01.png)
 
-### 步骤2 — 数据库连接设置{#step-2---database-connection-settings}
+### 第2步 — 数据库连接设置 {#step-2---database-connection-settings}
 
 在&#x200B;**[!UICONTROL Database]**&#x200B;窗口中，定义数据库连接设置。
 
@@ -206,7 +208,7 @@ Base61数据库上的Microsoft SQL Server配置示例，该数据库链接到带
 
 * 指示数据库是否应为Unicode。
 
-### 步骤3 — 安装{#step-3---packages-to-install}的软件包
+### 步骤3 — 要安装的包 {#step-3---packages-to-install}
 
 选择要安装的包。
 
@@ -214,7 +216,7 @@ Base61数据库上的Microsoft SQL Server配置示例，该数据库链接到带
 
 ![](assets/s_ncs_install_modules.png)
 
-### 步骤4 — 创建步骤{#step-4---creation-steps}
+### 步骤4 — 创建步骤 {#step-4---creation-steps}
 
 通过&#x200B;**[!UICONTROL Creation steps]**&#x200B;窗口，可显示和编辑用于创建表的SQL脚本。
 
@@ -226,7 +228,7 @@ Base61数据库上的Microsoft SQL Server配置示例，该数据库链接到带
 
    出于安全考虑，我们建议定义Adobe Campaign帐户管理员密码。
 
-### 步骤5 — 创建数据库{#step-5---creating-the-database}
+### 步骤5 — 创建数据库 {#step-5---creating-the-database}
 
 在向导的最后一步中，您可以创建数据库。 单击&#x200B;**[!UICONTROL Start]**&#x200B;确认。
 

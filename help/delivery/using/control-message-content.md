@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # 控制消息内容{#control-message-content}
+
+![](../../assets/common.svg)
 
 为确保您的电子邮件能够到达收件人并提高电子邮件的投放率，收件人必须遵守许多规则。 否则，某些消息的内容可能会被检测为垃圾邮件。 Adobe Campaign为您提供了多种工具，可让您的内容符合这些规则。
 

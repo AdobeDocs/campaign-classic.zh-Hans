@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 10%
@@ -15,23 +15,25 @@ ht-degree: 10%
 
 # 调度程序 {#scheduler}
 
+![](../../assets/common.svg)
+
 **调度程序**&#x200B;是一项持久性任务，在其调度指定的时间激活其过渡。
 
 **[!UICONTROL Scheduler]** 活动应视为排程开始的时间。图表中的活动定向规则与 **[!UICONTROL Start]** 活动相同。此活动不得包含集客过渡。
 
-## 最佳做法 {#best-practices}
+## 最佳实践 {#best-practices}
 
 * 请勿将工作流安排为每15分钟运行一次以上，因为它可能会妨碍系统的整体性能并在数据库中创建块。
 
-* 在工作流中，每个分支请勿使用多个&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动。 请参阅[使用活动](../../workflow/using/workflow-best-practices.md#using-activities)。
+* 在工作流中，每个分支请勿使用多个&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动。 请参阅[使用活动](workflow-best-practices.md#using-activities)。
 
 * 使用调度程序活动可能会导致同时运行多个工作流的执行。 例如，您可以让调度程序每小时触发一次工作流执行，但有时整个工作流的执行需要超过一小时。
 
-   如果工作流已经运行，您可能需要跳过执行。 有关如何防止同时执行工作流的更多信息，请参阅[此页面](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)。
+   如果工作流已经运行，您可能需要跳过执行。 有关如何防止同时执行工作流的更多信息，请参阅[此页面](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)。
 
 * 请注意，如果工作流正在执行长期任务（如导入），或wfserver模块已停止一段时间，则可在数小时后激活该过渡。 在这种情况下，可能需要将调度程序激活的任务的执行限制到特定的时间范围。
 
-## 配置调度程序活动{#configuring-scheduler-activity}
+## 配置调度程序活动 {#configuring-scheduler-activity}
 
 调度程序定义过渡的激活调度。 要配置该对象，请双击图形对象，然后单击&#x200B;**[!UICONTROL Change...]**
 

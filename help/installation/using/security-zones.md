@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 1%
@@ -15,6 +15,8 @@ ht-degree: 1%
 
 
 # 定义安全区（内部部署）{#defining-security-zones}
+
+![](../../assets/v7-only.svg)
 
 每个操作员需要链接到区域才能登录到实例，并且操作员IP必须包含在安全区域中定义的地址或地址集中。 安全区域配置在Adobe Campaign服务器的配置文件中执行。
 
@@ -28,8 +30,7 @@ ht-degree: 1%
 >
 >其他&#x200B;**混合/托管**&#x200B;客户需要联系Adobe支持团队以将IP添加到允许列表。
 
-
-## 创建安全区{#creating-security-zones}
+## 创建安全区 {#creating-security-zones}
 
 区域由以下项定义：
 
@@ -98,7 +99,7 @@ ht-degree: 1%
 
 在使用消息中心时，如果存在多个执行实例，则需要使用定义为&#x200B;**true**&#x200B;的&#x200B;**sessionTokenOnly**&#x200B;属性创建一个额外的安全区域，其中只需添加必要的IP地址。 有关配置实例的更多信息，请参阅[本文档](../../message-center/using/configuring-instances.md)。
 
-## 安全区域{#best-practices-for-security-zones}的最佳实践
+## 安全区的最佳实践 {#best-practices-for-security-zones}
 
 在&#x200B;**lan**&#x200B;安全区的定义中，可以添加定义技术访问的IP地址掩码。 此添加将允许访问服务器上托管的所有实例。
 
@@ -130,7 +131,7 @@ ht-degree: 1%
       <subNetwork id="cus1" mask="a.b.c.d/xx"/>
 ```
 
-## 安全区域{#sub-networks-and-proxies-in-a-security-zone}中的子网络和代理
+## 安全区域中的子网络和代理 {#sub-networks-and-proxies-in-a-security-zone}
 
 **proxy**&#x200B;参数可在&#x200B;**subNetwork**&#x200B;元素中使用，以指定安全区中的代理使用。
 
@@ -181,7 +182,7 @@ ht-degree: 1%
 </securityZone>
 ```
 
-## 将安全区域链接到运算符{#linking-a-security-zone-to-an-operator}
+## 将安全区域链接到操作员 {#linking-a-security-zone-to-an-operator}
 
 定义区域后，每个操作员必须链接到其中一个操作员才能登录到实例，并且该操作员的IP地址必须包含在区域中引用的地址或地址范围中。
 
@@ -219,7 +220,7 @@ ht-degree: 1%
 
 
 
-## 建议
+## 推荐
 
 * 确保在subNetwork中不允许使用反向代理。 如果是，将检测到&#x200B;**所有**&#x200B;流量来自此本地IP，因此将受信任。
 

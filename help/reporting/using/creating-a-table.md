@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
@@ -15,11 +15,13 @@ ht-degree: 1%
 
 # 创建表{#creating-a-table}
 
+![](../../assets/common.svg)
+
 您可以向报表中添加表格以显示数据。 这可以是基于多维数据集测量创建的数据透视表、具有组的列表或包含值划分的表。
 
 ![](assets/s_advuser_report_page_activity_05.png)
 
-## 创建组{#creating-a-list-with-group}的列表
+## 创建组列表 {#creating-a-list-with-group}
 
 **[!UICONTROL List with group]**&#x200B;类型表允许您对表中的数据进行分组，并生成有关该表的统计信息。 例如，您可以创建数据的总计和子总计。 每个组都有其自己的页眉、详细信息和页脚行。
 
@@ -54,7 +56,7 @@ ht-degree: 1%
 1. 创建表及其内容。
 1. 在&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡中显示已完成的报告。 然后，您可以发布报表并将其导出为其他格式（如有必要）。 有关更多信息，请参阅[导出报表](../../reporting/using/actions-on-reports.md#exporting-a-report)。
 
-### 添加行和列{#adding-lines-and-columns}
+### 添加行和列 {#adding-lines-and-columns}
 
 默认情况下，**[!UICONTROL List with group]**&#x200B;类型表包括页眉、明细行和页脚行。
 
@@ -92,7 +94,7 @@ ht-degree: 1%
 
 ![](assets/s_advuser_ergo_listgroup_007.png)
 
-### 定义单元格内容{#defining-cell-content}
+### 定义单元格内容 {#defining-cell-content}
 
 要编辑表格的单元格并定义其内容和格式，请转到该单元格并使用右键单击菜单。
 
@@ -116,7 +118,7 @@ ht-degree: 1%
 
    ![](assets/s_advuser_ergo_listgroup_008.png)
 
-### 定义单元格格式{#defining-cell-format}
+### 定义单元格格式 {#defining-cell-format}
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
@@ -195,13 +197,13 @@ ht-degree: 1%
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
-## 用例：创建组列表{#use-case--create-a-report-with-a-group-list}的报表
+## 用例：创建包含群组列表的报表 {#use-case--create-a-report-with-a-group-list}
 
 在本例中，我们将创建一个两页的报表：第一页将包含列表、每个营销活动的总投放以及已发送的消息数。 投放名称将是可单击的链接，您将转到报告的第二页，以查看包含表格和图表的选定投放的每个电子邮件域的投放细分。 在第二页上，表格将用作图表的图例。
 
 ![](assets/reporting_quick_start_report-final.png)
 
-### 步骤1 — 创建报表{#step-1---create-a-report}
+### 第1步 — 创建报表 {#step-1---create-a-report}
 
 创建与促销活动架构相关的新报告&#x200B;**[!UICONTROL Campaigns (nms)]**。
 
@@ -213,7 +215,7 @@ ht-degree: 1%
 
 ![](assets/reporting_quick_start_diagram.png)
 
-### 第2步 — 创建第一个查询{#step-2---create-the-first-query}
+### 第2步 — 创建第一个查询 {#step-2---create-the-first-query}
 
 利用第一个查询，可收集链接到每个营销策划的投放。 目标是显示与每个营销活动链接的Adobe Campaign数据库各种投放情况的报告。
 
@@ -257,7 +259,7 @@ ht-degree: 1%
 
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;保存这些条件，然后单击&#x200B;**[!UICONTROL Ok]**&#x200B;关闭查询编辑器。
 
-### 步骤3:创建第一页{#step-3--create-the-first-page}
+### 步骤3:创建第一页 {#step-3--create-the-first-page}
 
 在此步骤中，我们将配置报表的第一页。 要配置它，请应用以下步骤：
 
@@ -357,7 +359,7 @@ ht-degree: 1%
    >
    >我们建议在生成报表之前等待合并单元格，因为合并是不可逆的。
 
-### 第4步 — 创建第二个查询{#step-4---create-the-second-query}
+### 第4步 — 创建第二个查询 {#step-4---create-the-second-query}
 
 我们希望添加第二个查询和第二个页面，以在报表用户单击某个投放时显示投放的详细信息。 添加查询之前，请编辑您创建的页面并启用传出过渡，以便将其链接到查询。
 
@@ -393,7 +395,7 @@ ht-degree: 1%
 
 1. 紧跟第二个查询后，关闭查询配置窗口并向图表中添加一个页面。
 
-### 第5步 — 创建第2页{#step-5---create-the-second-page}
+### 第5步 — 创建第二页 {#step-5---create-the-second-page}
 
 1. 编辑页面并输入其标签：**电子邮件域**。
 1. 取消选中&#x200B;**[!UICONTROL Enable output transitions]**&#x200B;选项：这是报表的最后一页，之后不会有其他活动。
@@ -446,7 +448,7 @@ ht-degree: 1%
 
    您的页面现已配置完成。
 
-### 步骤6 — 查看报表{#step-6---viewing-the-report}
+### 第6步 — 查看报表 {#step-6---viewing-the-report}
 
 要查看此配置的结果，请单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL Global]**&#x200B;选项。
 
@@ -458,7 +460,7 @@ ht-degree: 1%
 
 ![](assets/s_advuser_report_listgroup_022.png)
 
-## 创建划分或数据透视表{#creating-a-breakdown-or-pivot-table}
+## 创建划分表或数据透视表 {#creating-a-breakdown-or-pivot-table}
 
 利用此类型的表，可显示对数据库中数据计算的统计信息。
 

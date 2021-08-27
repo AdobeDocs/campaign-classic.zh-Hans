@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: df494786-5950-4646-aa9c-4dde45845057
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 17%
@@ -14,6 +14,8 @@ ht-degree: 17%
 ---
 
 # 访问跟踪日志{#accessing-the-tracking-logs}
+
+![](../../assets/common.svg)
 
 发送投放并激活跟踪后，**[!UICONTROL Tracking]**&#x200B;技术工作流负责检索跟踪数据。 默认情况下，每小时执行一次。
 

@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # 同步 Web 应用程序{#synchronizing-web-applications}
+
+![](../../assets/v7-only.svg)
 
 在此用例中，我们将使用Campaign Standard发送通信，该通信中包括指向Campaign v7 Web应用程序的链接。 当收件人单击电子邮件中的链接时，Web应用程序会显示一个表单，其中包含预先加载了收件人数据的多个字段以及指向新闻稿的订阅链接。 收件人可以更新其数据并订阅服务。 他的个人资料将在Campaign v7中更新，信息将在Campaign Standard中复制。
 
@@ -27,7 +29,7 @@ ht-degree: 1%
 * 在Campaign v7中创建并发布的服务和web应用程序。
 * web应用程序必须包含使用&#x200B;**[!UICONTROL Adobe Campaign encryption]**&#x200B;标识方法的&#x200B;**[!UICONTROL Pre-loading]**&#x200B;活动。
 
-## 创建Web应用程序和服务{#creating-the-web-application-and-service}
+## 创建Web应用程序和服务 {#creating-the-web-application-and-service}
 
 在Campaign v7中，您可以创建允许收件人订阅服务的Web应用程序。 Web应用程序和服务在Campaign v7中设计并存储，您可以通过Campaign Standard通信更新此服务。 要了解有关Campaign v7中Web应用程序的更多信息，请参阅[此部分](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)。
 
@@ -56,7 +58,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_6.png)
 
-## 复制数据{#replicating-the-data}
+## 复制数据 {#replicating-the-data}
 
 为了在Campaign v7和Campaign Standard之间复制所需的数据，可使用多个复制工作流模板。 **[!UICONTROL Profiles replication]**&#x200B;工作流会自动复制所有Campaign v7收件人以进行Campaign Standard。 请参阅[技术和复制工作流](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows)。 **[!UICONTROL Landing pages replication]**&#x200B;工作流允许复制我们要在Campaign Standard中使用的Web应用程序。
 
@@ -80,7 +82,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_10.png)
 
-## 设计和发送电子邮件{#designing-and-sending-the-email}
+## 设计和发送电子邮件 {#designing-and-sending-the-email}
 
 在本部分中，我们将了解如何在Campaign Standard电子邮件中包含从Campaign v7 Web应用程序复制的登陆页面的链接。
 
@@ -104,7 +106,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_15.png)
 
-## 检索更新的信息{#retrieving-the-updated-information}
+## 检索更新的信息 {#retrieving-the-updated-information}
 
 当收件人通过Web应用程序从更新其数据时，Adobe Campaign v7会同步检索更新的信息。 然后，它会从Campaign v7复制到Campaign Standard。
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # 列表更新{#list-update}
+
+![](../../assets/common.svg)
 
 **列表更新**&#x200B;活动将过渡中指定的群体存储在收件人列表中。
 
@@ -35,13 +37,13 @@ ht-degree: 2%
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何在视频中从资源管理器创建收件人列表](#video)
 
-## 示例：列表更新{#example--list-update}
+## 示例：列表更新 {#example--list-update}
 
 在以下示例中，列表更新活动遵循一个查询，该查询定向在法国居住的30岁以上的男性。 最初将根据查询结果创建列表。 然后，每次从工作流中启动该工作流时，都会更新该工作流。 例如，它可以定期用于针对促销活动的定向促销选件。
 
 1. 在查询后直接添加&#x200B;**[!UICONTROL list update activity]**，然后将其打开以对其进行编辑。
 
-   有关在工作流中创建查询的更多信息，请参阅[Query](../../workflow/using/query.md)。
+   有关在工作流中创建查询的更多信息，请参阅[Query](query.md)。
 
 1. 您可以为活动选择标签。
 1. 选择&#x200B;**[!UICONTROL Create the list if necessary (Calculated name)]**&#x200B;选项，显示在执行第一个工作流后将创建列表，然后使用以下执行对列表进行更新。
@@ -56,14 +58,14 @@ ht-degree: 2%
 
    然后，创建或更新匹配收件人的列表。
 
-## 输入参数{#input-parameters}
+## 输入参数 {#input-parameters}
 
 * tableName
 * 模式
 
 标识要保存在群组中的群体。
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * groupId:组标识符。
 

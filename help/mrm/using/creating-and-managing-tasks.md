@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3730'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 创建和管理任务{#creating-and-managing-tasks}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign允许您直接在应用程序中创建任务并管理其完整生命周期。 可以将项目和营销策划实施划分为分配给Adobe Campaign运营商或外部服务提供商的任务。 通过此操作模式，您可以创建包括所有计划参与者和外部参与者的开放协作环境。
 
@@ -434,7 +436,6 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整生
 >* 即使有效期已结束，尚未关闭的任务仍会显示在正在进行的任务列表中。 警告会通知操作员任务已延迟。
 
 >
-
 
 
 ### 任务的进度状态 {#progress-status-of-a-task}

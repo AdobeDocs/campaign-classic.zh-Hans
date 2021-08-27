@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 构建工作流 {#building-a-workflow}
+
+![](../../assets/common.svg)
 
 本节详细介绍在Campaign中构建工作流的主要原则和最佳实践。
 
@@ -25,7 +27,7 @@ ht-degree: 3%
 * 访问和创建技术工作流，请参阅[技术工作流](#technical-workflows)
 * 使用模板创建工作流，请参阅[工作流模板](#workflow-templates)
 
-## 创建新工作流{#creating-a-new-workflow}
+## 创建新工作流 {#creating-a-new-workflow}
 
 从&#x200B;**[!UICONTROL Explorer]**&#x200B;访问工作流文件夹。 默认情况下，您可以使用&#x200B;**[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**。
 
@@ -43,7 +45,7 @@ ht-degree: 3%
 >
 >修改工作流活动的内部名称或工作流本身时，请确保在关闭工作流之前保存该工作流，以便正确考虑新的内部名称。
 
-## 添加和链接活动{#adding-and-linking-activities}
+## 添加和链接活动 {#adding-and-linking-activities}
 
 您现在必须定义各种活动，并在图表中将它们链接到一起。在此配置阶段，我们可以看到图表标签和工作流状态（正在编辑）。 窗口的下部仅用于编辑图表。 它包含工具栏、活动面板（左侧）和图表本身（右侧）。
 
@@ -55,10 +57,10 @@ ht-degree: 3%
 
 在面板的不同选项卡中，按类别对活动进行分组。 可用的选项卡和活动可能因工作流类型（技术、定位或营销活动工作流）而异。
 
-* 第一个选项卡包含定位和数据处理活动。 [定位活动](../../workflow/using/about-targeting-activities.md)中详细介绍了这些活动。
-* 第二个选项卡包含计划活动，主要用于协调其他活动。 [流量控制活动](../../workflow/using/about-flow-control-activities.md)中详细介绍了这些活动。
-* 第三个选项卡包含可在工作流中使用的工具和操作。 [操作活动](../../workflow/using/about-action-activities.md)中详细介绍了这些活动。
-* 第四个选项卡包含依赖于给定事件的活动，例如收到电子邮件或文件到达服务器。 [事件活动](../../workflow/using/about-event-activities.md)中详细介绍了这些活动。
+* 第一个选项卡包含定位和数据处理活动。 [定位活动](about-targeting-activities.md)中详细介绍了这些活动。
+* 第二个选项卡包含计划活动，主要用于协调其他活动。 [流量控制活动](about-flow-control-activities.md)中详细介绍了这些活动。
+* 第三个选项卡包含可在工作流中使用的工具和操作。 [操作活动](about-action-activities.md)中详细介绍了这些活动。
+* 第四个选项卡包含依赖于给定事件的活动，例如收到电子邮件或文件到达服务器。 [事件活动](about-event-activities.md)中详细介绍了这些活动。
 
 创建图表
 
@@ -104,15 +106,15 @@ ht-degree: 3%
 
 * **映像管理**
 
-   您可以自定义图表的背景图像以及与各种活动相关的背景图像。 请参阅[管理活动图像](../../workflow/using/managing-activity-images.md)。
+   您可以自定义图表的背景图像以及与各种活动相关的背景图像。 请参阅[管理活动图像](managing-activity-images.md)。
 
-## 配置活动{#configuring-activities}
+## 配置活动 {#configuring-activities}
 
 双击某个活动以对其进行配置，或右键单击并选择&#x200B;**[!UICONTROL Open...]**。
 
 >[!NOTE]
 >
->[此部分](../../workflow/using/about-activities.md)中详细介绍了营销活动工作流活动。
+>[此部分](about-activities.md)中详细介绍了营销活动工作流活动。
 
 第一个选项卡包含基本配置。 **[!UICONTROL Advanced]**&#x200B;选项卡包含附加参数，这些参数专门用于定义遇到错误时的行为、指定活动的执行持续时间以及输入初始化脚本。
 
@@ -120,17 +122,17 @@ ht-degree: 3%
 
 ![](assets/example1-comment.png)
 
-## 定位工作流{#targeting-workflows}
+## 定位工作流 {#targeting-workflows}
 
 定位工作流允许您构建多个投放目标。 借助工作流活动，您可以创建查询、根据特定条件定义联合或排除、添加计划。 此定位的结果可自动转移到列表中，该列表可用作投放操作的目标
 
-除了这些活动之外，数据管理选项还允许您处理数据并访问高级功能以满足复杂的定位问题。 有关更多信息，请参阅[数据管理](../../workflow/using/targeting-data.md#data-management)。
+除了这些活动之外，数据管理选项还允许您处理数据并访问高级功能以满足复杂的定位问题。 有关更多信息，请参阅[数据管理](targeting-data.md#data-management)。
 
 所有这些活动都可以在第一个工作流选项卡中找到。
 
 >[!NOTE]
 >
->[此部分](../../workflow/using/about-activities.md)中详细介绍了定位活动。
+>[此部分](about-activities.md)中详细介绍了定位活动。
 
 可以通过Adobe Campaign树的&#x200B;**[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]**&#x200B;节点或通过主页的&#x200B;**[!UICONTROL Profiles and Targets > Targeting workflows]**&#x200B;菜单创建和编辑定位工作流。
 
@@ -138,17 +140,17 @@ ht-degree: 3%
 
 营销活动框架内的定位工作流与所有营销活动工作流一起存储。
 
-### 创建定位工作流{#implementation-steps-}的关键步骤
+### 创建定位工作流的关键步骤 {#implementation-steps-}
 
 有关创建定位工作流的详细步骤，请参阅以下章节：
 
-1. **** 数据库中的标识数据 — 请参阅 [创建查询](../../workflow/using/targeting-data.md#creating-queries)
-1. **** 为满足投放需求而准备数据 — 请参阅 [扩充和修改数据](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
-1. **** 使用数据执行更新或在投放中 — 请参阅 [更新数据库](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
+1. **** 数据库中的标识数据 — 请参阅 [创建查询](targeting-data.md#creating-queries)
+1. **** 为满足投放需求而准备数据 — 请参阅 [扩充和修改数据](targeting-data.md#enriching-and-modifying-data)
+1. **** 使用数据执行更新或在投放中 — 请参阅 [更新数据库](how-to-use-workflow-data.md#updating-the-database)
 
-定位期间执行的所有扩充和所有处理的结果都存储在个性化字段中并可访问，特别是在创建个性化消息时使用。 有关更多信息，请参阅[Target数据](../../workflow/using/data-life-cycle.md#target-data)
+定位期间执行的所有扩充和所有处理的结果都存储在个性化字段中并可访问，特别是在创建个性化消息时使用。 有关更多信息，请参阅[Target数据](data-life-cycle.md#target-data)
 
-### 定向和筛选维度{#targeting-and-filtering-dimensions}
+### 定位和筛选维度 {#targeting-and-filtering-dimensions}
 
 在数据分段操作期间，定向键值会映射到过滤维度。 利用定向维度，可定义操作所定向的群体：收件人、合同受益人、操作员、订阅者等 通过筛选维度，您可以根据特定条件选择群体：合同持有者、新闻稿订阅者等
 
@@ -166,7 +168,7 @@ ht-degree: 3%
 
 ![](assets/query_filter_target_dimensions_2.png)
 
-## 营销活动工作流{#campaign-workflows}
+## 活动工作流 {#campaign-workflows}
 
 对于每个营销活动，您可以从&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡创建要执行的工作流。 这些工作流专门用于营销活动。
 
@@ -194,13 +196,13 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[专用部分](../../workflow/using/about-technical-workflows.md)中提供了随每个模块一起安装的技术工作流的列表。
+>[专用部分](about-technical-workflows.md)中提供了随每个模块一起安装的技术工作流的列表。
 
 您可以在树结构的&#x200B;**[!UICONTROL Administration > Production > Technical workflows]**&#x200B;节点中创建其他技术工作流。 但是，此过程仅供专家用户使用。
 
 提供的活动与定位工作流相同。 [了解详情](#implementation-steps-)
 
-## 工作流模板{#workflow-templates}
+## 工作流模板 {#workflow-templates}
 
 工作流模板包含属性的整体配置，以及可能在图中连接的一系列活动。 此配置可重复用于创建包含特定数量的预配置元素的新工作流
 

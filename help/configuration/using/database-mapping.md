@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # 数据库映射{#database-mapping}
+
+![](../../assets/v7-only.svg)
 
 我们示例架构的SQL映射提供了以下XML文档：
 
@@ -81,7 +83,7 @@ SQL字段约束如下：
 * 数字和日期字段中没有空值，
 * 数字字段已初始化为0。
 
-## XML字段{#xml-fields}
+## XML字段 {#xml-fields}
 
 默认情况下，任何键入的&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;元素都会映射到数据架构表的SQL字段。 但是，您可以在XML中引用此字段，而不是SQL ，这意味着数据存储在包含所有XML字段值的表的Memo字段(&quot;mData&quot;)中。 这些数据的存储是一个XML文档，用于观察架构结构。
 
@@ -107,7 +109,7 @@ SQL字段约束如下：
 
 主要缺点是无法索引或过滤XML字段。
 
-## 索引字段{#indexed-fields}
+## 索引字段 {#indexed-fields}
 
 通过索引，可以优化应用程序中使用的SQL查询的性能。
 
@@ -174,7 +176,7 @@ SQL字段约束如下：
    </srcSchema>
    ```
 
-## 密钥管理{#management-of-keys}
+## 密钥管理 {#management-of-keys}
 
 表必须至少具有一个用于标识表中记录的键。
 
@@ -287,7 +289,7 @@ SQL字段约束如下：
    </schema>
    ```
 
-### 自动增量键{#auto-incremental-key}
+### 自动增量密钥 {#auto-incremental-key}
 
 大多数Adobe Campaign表的主键是由数据库引擎自动生成的32位长整数。 键值的计算取决于生成整个数据库中唯一数字的序列（默认情况下为&#x200B;**XtkNewId** SQL函数）。 在插入记录时自动输入键的内容。
 
@@ -343,7 +345,7 @@ SQL字段约束如下：
 >
 >在创建表时，主键设置为0的记录会自动插入。 此记录用于避免外连接，这对卷表无效。 默认情况下，所有外键都将初始化为值0，以便在未填充数据项时始终在连接时返回结果。
 
-## 链接：表{#links--relation-between-tables}的关系
+## 链接：表之间的关系 {#links--relation-between-tables}
 
 链接描述一个表与另一个表之间的关联。
 
@@ -408,7 +410,7 @@ SQL字段约束如下：
 >
 >作为标准，链接是在架构末尾声明的元素。
 
-### 示例1 {#example-1}
+### 示例 1 {#example-1}
 
 1-N与“cus:company”架构表相关：
 
@@ -486,7 +488,7 @@ SQL字段约束如下：
 </srcSchema>
 ```
 
-### 示例3 {#example-3}
+### 示例 3 {#example-3}
 
 与“cus:extension”架构表的1-1关系：
 
@@ -494,7 +496,7 @@ SQL字段约束如下：
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### 示例5 {#example-4}
+### 示例 4 {#example-4}
 
 链接到文件夹（“xtk:folder”架构）：
 
@@ -504,7 +506,7 @@ SQL字段约束如下：
 
 默认值会返回在“DefaultFolder(&#39;nmsFolder&#39;)”函数中输入的第一个符合条件的参数类型文件的标识符。
 
-### 示例5 {#example-5}
+### 示例 5 {#example-5}
 
 在此示例中，我们希望在链接（“company”到“cus:company”架构）上创建一个键，该键具有&#x200B;**xlink**&#x200B;属性，并且包含(“email”)表的字段：
 

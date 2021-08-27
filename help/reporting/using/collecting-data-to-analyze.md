@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # 收集数据进行分析{#collecting-data-to-analyze}
+
+![](../../assets/common.svg)
 
 要用于构建报表的数据可以直接在报表页面中选择（有关更多信息，请参阅[使用上下文](../../reporting/using/using-the-context.md)），或通过一个或多个查询收集。
 
@@ -31,7 +33,7 @@ ht-degree: 3%
 
 当需要使用数据库中的数据收集或构建报表中的数据时，此数据选择模式是相关的。 在某些情况下，您还可以直接从报表中使用的元素中选择数据。 例如，在插入图表时，您可以直接选择源数据。 有关更多信息，请参阅[使用上下文](../../reporting/using/using-the-context.md)。
 
-## 使用架构{#using-the-data-from-a-schema}中的数据
+## 使用架构中的数据 {#using-the-data-from-a-schema}
 
 要使用链接到数据库模式的数据，请在查询编辑器中选择相应的选项，然后配置要应用的查询。
 
@@ -39,7 +41,7 @@ ht-degree: 3%
 
 ![](assets/reporting_query_from_schema.png)
 
-## 使用导入的列表{#using-an-imported-list}
+## 使用导入的列表 {#using-an-imported-list}
 
 要创建报表，您可以使用导入数据列表中的数据。
 
@@ -49,7 +51,7 @@ ht-degree: 3%
 
 单击&#x200B;**[!UICONTROL Edit query...]**&#x200B;链接，以定义要在此列表中收集的数据，以生成报告。
 
-## 使用多维数据集{#using-a-cube}
+## 使用多维数据集 {#using-a-cube}
 
 可以选择用于定义查询的多维数据集。
 
@@ -61,11 +63,11 @@ ht-degree: 3%
 
 ![](assets/reporting_query_from_cube_edit_query.png)
 
-## 查询{#filtering-options-in-the-queries}中的筛选选项
+## 查询中的筛选选项 {#filtering-options-in-the-queries}
 
 为了避免对整个数据库运行查询，需要过滤数据。
 
-### 简化的过滤器{#simplified-filter}
+### 简化的过滤器 {#simplified-filter}
 
 您可以选择&#x200B;**[!UICONTROL Filter automatically with the context]**&#x200B;选项，以使报表可通过树中的特定节点（如列表、收件人或投放）访问。
 
@@ -73,7 +75,7 @@ ht-degree: 3%
 
 ![](assets/reporting_control_folder.png)
 
-### 限制收集的数据量{#limiting-the-amount-of-data-collected}
+### 限制收集的数据量 {#limiting-the-amount-of-data-collected}
 
 使用结果限制选项配置要通过查询提取的记录数：
 

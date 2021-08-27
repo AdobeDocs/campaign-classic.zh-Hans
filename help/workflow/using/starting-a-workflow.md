@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # 启动工作流 {#starting-a-workflow}
 
-工作流始终手动启动。 但是，启动时，它可以保持不活动状态，具体取决于通过调度程序指定的信息（请参阅[调度程序](../../workflow/using/scheduler.md)）或活动调度。
+![](../../assets/common.svg)
+
+工作流始终手动启动。 但是，启动时，它可以保持不活动状态，具体取决于通过调度程序指定的信息（请参阅[调度程序](scheduler.md)）或活动调度。
 
 与定位工作流执行（启动、停止、暂停等）相关的操作 是&#x200B;**异步**&#x200B;进程：订单将被记录，并在服务器可用以应用时生效。
 
@@ -25,9 +27,9 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->请记住，当操作员对工作流执行操作（开始、停止、暂停等）时，该操作不会立即执行，而是置于队列中，以便由[工作流模块](../../workflow/using/architecture.md)处理。
+>请记住，当操作员对工作流执行操作（开始、停止、暂停等）时，该操作不会立即执行，而是置于队列中，以便由[工作流模块](architecture.md)处理。
 
-## 操作工具栏{#actions-toolbar}
+## “操作”工具栏 {#actions-toolbar}
 
 此[部分](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)中详细介绍了工具栏按钮。 通过&#x200B;**[!UICONTROL Actions]**&#x200B;按钮，您可以访问用于对所选工作流执行操作的其他执行选项。 您还可以使用&#x200B;**[!UICONTROL File > Actions]**&#x200B;菜单，或右键单击某个工作流并选择&#x200B;**[!UICONTROL Actions]**。
 
@@ -57,7 +59,7 @@ ht-degree: 2%
 
 * **[!UICONTROL Purge history]**
 
-   此操作允许您清除工作流历史记录。 有关更多信息，请参阅[清除日志](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs)。
+   此操作允许您清除工作流历史记录。 有关更多信息，请参阅[清除日志](monitoring-workflow-execution.md#purging-the-logs)。
 
 * **[!UICONTROL Start in simulation mode]**
 
@@ -81,7 +83,7 @@ ht-degree: 2%
 
    **[!UICONTROL Mass update of selected lines]**&#x200B;和&#x200B;**[!UICONTROL Merge selected lines]**&#x200B;选项是所有&#x200B;**[!UICONTROL Actions]**&#x200B;菜单中可用的通用平台选项。 有关更多信息，请参阅此](../../platform/using/updating-data.md)章节[。
 
-## 右键单击菜单{#right-click-menu}
+## 右键单击菜单 {#right-click-menu}
 
 选择一个或多个工作流活动后，您可以右键单击以根据您的选择执行操作。
 
@@ -91,7 +93,7 @@ ht-degree: 2%
 
 **[!UICONTROL Open]**:利用此选项，可访问活动属性。
 
-**[!UICONTROL Display logs:]** 此选项允许您查看所选活动的任务执行日志。请参阅[显示日志](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)。
+**[!UICONTROL Display logs:]** 此选项允许您查看所选活动的任务执行日志。请参阅[显示日志](monitoring-workflow-execution.md#displaying-logs)。
 
 **[!UICONTROL Execute pending task(s) now:]** 此操作允许您尽快启动待决任务。
 
@@ -101,7 +103,7 @@ ht-degree: 2%
 
 **[!UICONTROL Copy as bitmap:]** 利用此选项，可拍摄所有活动的屏幕截图。
 
-**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** 活动属性的选项卡中 **[!UICONTROL Advanced]** 也提供了这些选项。[Execution](../../workflow/using/advanced-parameters.md#execution)中详细介绍了这些参数。
+**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** 活动属性的选项卡中 **[!UICONTROL Advanced]** 也提供了这些选项。[Execution](advanced-parameters.md#execution)中详细介绍了这些参数。
 
 **[!UICONTROL Save / Cancel:]** 允许您保存或取消对工作流所做的更改。
 

@@ -2,18 +2,20 @@
 product: campaign
 title: 20.1 版
 description: 20.1 版
-feature: 概述
+feature: Overview
 role: User
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 20%
+source-wordcount: '1559'
+ht-degree: 19%
 
 ---
 
 # 20.1 版{#release-20-1}
+
+![](../../assets/v7-only.svg)
 
 ## ![](assets/do-not-localize/limited_2.png) 20.1.4 版 - 内部版本 9126 {#release-20-1-4-build-9126}
 
@@ -25,7 +27,7 @@ _2021 年 4 月 15 日_
 
 >[!NOTE]
 >
-> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
+> 连接到 [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 以下载新版本。 [在此页面中](../../installation/using/client-console-availability-for-windows.md)了解如何向所有最终用户建议更新控制台。
 
 _2021 年 3 月 22 日_
 
@@ -41,10 +43,9 @@ _2020 年 12 月 23 日_
 
 >[!CAUTION]
 >
-> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。[了解详情](../../technotes/ims-updates.md)
-   >
-   > 
-* 此版本附带[安全修复](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
+> * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。[了解详情](../../technotes/using/ims-updates.md)
+>
+> * 此版本附带[安全修复](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
 
 
 * 连接协议已经更新，以遵循新的 IMS 认证机制。
@@ -92,7 +93,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>hadoopFDA连接器已得到改进，可支持Hadoop3.0和Cloudera。</p>
-    <p>有关详细信息，请参阅<a href="../../installation/using/configure-fda-hadoop.md">详细文档</a>。</p>
+    <p>有关详细信息，请参阅<a href="../../installation/using/configure-fda-hadoop.md">有详细说明的文档</a>。</p>
    </td> 
   </tr> 
  </tbody> 

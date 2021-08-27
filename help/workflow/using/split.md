@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 0%
@@ -15,19 +15,21 @@ ht-degree: 0%
 
 # 拆分{#split}
 
+![](../../assets/common.svg)
+
 通过&#x200B;**Split**&#x200B;类型的活动，您可以将目标分割成多个子集。 该目标由所有接收结果构建：因此，之前的所有活动都必须已完成，才能执行此活动。
 
 此活动不会触发集客群体的并集。 如果多个过渡在一个拆分活动中落地，我们建议在该活动前面插入&#x200B;**[!UICONTROL Union]**&#x200B;活动。
 
-有关所使用的拆分活动的示例，请参阅[使用拆分活动创建子集](../../workflow/using/targeting-data.md#creating-subsets-using-the-split-activity)。
+有关所使用的拆分活动的示例，请参阅[使用拆分活动创建子集](targeting-data.md#creating-subsets-using-the-split-activity)。
 
-[此部分](../../workflow/using/cross-channel-delivery-workflow.md)中介绍了如何使用拆分活动将目标使用筛选条件细分为不同群体的示例。
+[此部分](cross-channel-delivery-workflow.md)中介绍了如何使用拆分活动将目标使用筛选条件细分为不同群体的示例。
 
-[此部分](../../workflow/using/javascript-scripts-and-templates.md)中提供了显示如何在拆分活动中使用实例变量的示例。
+[此部分](javascript-scripts-and-templates.md)中提供了显示如何在拆分活动中使用实例变量的示例。
 
 要配置此活动，请在&#x200B;**[!UICONTROL Subsets]**&#x200B;选项卡中定义子集内容和标签，然后在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中选择目标维度。
 
-## 创建子集{#creating-subsets}
+## 创建子集 {#creating-subsets}
 
 要创建子集，请执行以下操作：
 
@@ -64,7 +66,7 @@ ht-degree: 0%
 
    如果完成，则每个子集的段码会自动存储在附加列中。 此列可在投放级别的个性化字段中访问。
 
-## 限制子集记录数{#limiting-the-number-of-subset-records}
+## 限制子集记录的数量 {#limiting-the-number-of-subset-records}
 
 如果您不希望使用子集中包含的整个群体，则可以限制将包含的记录数。
 
@@ -100,7 +102,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;以批准记录选择条件。 然后，定义的配置将显示在编辑器的中间窗口中。
 
-## 通过数据分组{#limiting-the-number-of-subset-records-by-data-grouping}限制子集记录数
+## 按数据分组限制子集记录数 {#limiting-the-number-of-subset-records-by-data-grouping}
 
 您可以按数据分组限制记录数。 此限制可以使用固定值或百分比执行。
 
@@ -120,11 +122,11 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;以批准限制并返回编辑拆分活动。
 
-## 限制每个数据分发的子集记录数{#limiting-the-number-of-subset-records-per-data-distribution}
+## 限制每个数据分发的子集记录数 {#limiting-the-number-of-subset-records-per-data-distribution}
 
 如果分组字段包含的值过多，或者您希望避免重置每个新拆分活动的值，则Adobe Campaign允许您为每个数据分发创建限制。 选择数据限制值（有关此主题的更多信息，请参见[创建子集](#creating-subsets)部分）时，选择&#x200B;**[!UICONTROL By data distribution]**&#x200B;选项，然后从下拉菜单中选择模板。 创建数据分发模板的演示如下所示。
 
-有关具有分发模板的&#x200B;**[!UICONTROL Local approval]**&#x200B;活动的示例，请参阅[使用本地批准活动](../../workflow/using/using-the-local-approval-activity.md)。
+有关具有分发模板的&#x200B;**[!UICONTROL Local approval]**&#x200B;活动的示例，请参阅[使用本地批准活动](using-the-local-approval-activity.md)。
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
@@ -148,12 +150,12 @@ ht-degree: 0%
    * **[!UICONTROL Targeting dimension]**:例如，输入要应用数据分发的定向 **[!UICONTROL Recipient]** 维度。此模式必须始终与定位工作流中使用的数据兼容。
    * **[!UICONTROL Distribution field]**:通过定向维度选择字段。例如，如果选择&#x200B;**[!UICONTROL Email domain]**&#x200B;字段，则收件人列表将按域划分。
    * **[!UICONTROL Distribution type]**:在选项卡中选择目标限制值的划分方 **[!UICONTROL Distribution]** 式： **[!UICONTROL Percentage]** 或 **[!UICONTROL Set]**。
-   * **[!UICONTROL Assignment type]**:选择数据分发分配类型。您可以选择按组或运算符进行分配或按本地实体进行分配。 **分布式营销**&#x200B;中使用由本地实体分配的内容。 有关更多信息，请参阅此[部分](../../campaign/using/about-distributed-marketing.md)。
-   * **[!UICONTROL Approval storage]**:如果您在定 **[!UICONTROL Local approval]** 位工作流中使用活动(请参 [阅本地批准](../../workflow/using/local-approval.md))，请输入将存储批准结果的架构。必须为每个定位模式指定一个存储模式。 如果使用&#x200B;**[!UICONTROL Recipients]**&#x200B;定位架构，请输入默认的&#x200B;**[!UICONTROL Local approval of recipients]**&#x200B;存储架构。
+   * **[!UICONTROL Assignment type]**:选择数据分发分配类型。您可以选择按组或运算符进行分配或按本地实体进行分配。 **分布式营销**&#x200B;中使用由本地实体分配的内容。 有关更多信息，请参阅此[部分](../../distributed/using/about-distributed-marketing.md)。
+   * **[!UICONTROL Approval storage]**:如果您在定 **[!UICONTROL Local approval]** 位工作流中使用活动(请参 [阅本地批准](local-approval.md))，请输入将存储批准结果的架构。必须为每个定位模式指定一个存储模式。 如果使用&#x200B;**[!UICONTROL Recipients]**&#x200B;定位架构，请输入默认的&#x200B;**[!UICONTROL Local approval of recipients]**&#x200B;存储架构。
 
       如果通过数据分组进行简单限制而未获得本地批准，则无需输入&#x200B;**[!UICONTROL Approvals storage]**&#x200B;字段。
 
-1. 如果您使用&#x200B;**[!UICONTROL Local approval]**&#x200B;活动（请参阅[本地批准](../../workflow/using/local-approval.md)），请为分发模板输入&#x200B;**[!UICONTROL Advanced settings]**:
+1. 如果您使用&#x200B;**[!UICONTROL Local approval]**&#x200B;活动（请参阅[本地批准](local-approval.md)），请为分发模板输入&#x200B;**[!UICONTROL Advanced settings]**:
 
    ![](assets/local_validation_data_distribution_3.png)
 
@@ -189,7 +191,7 @@ ht-degree: 0%
       此列由&#x200B;**[!UICONTROL General]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Distribution type]**&#x200B;字段定义。
 
    * **[!UICONTROL Label]**:输入链接到每个值的标签。
-   * **[!UICONTROL Group or operator]**:如果您使用的是 **[!UICONTROL Local approval]** 活动(请参阅 [本地批准](../../workflow/using/local-approval.md))，请选择分配给每个分配值的运算符或运算符组。
+   * **[!UICONTROL Group or operator]**:如果您使用的是 **[!UICONTROL Local approval]** 活动(请参阅 [本地批准](local-approval.md))，请选择分配给每个分配值的运算符或运算符组。
 
       如果通过数据分组进行简单限制而未获得本地批准，则无需输入&#x200B;**[!UICONTROL Group or operator]**&#x200B;字段。
 
@@ -197,9 +199,9 @@ ht-degree: 0%
       >
       >确保为运算符分配了相应的权限。
 
-   * **[!UICONTROL Local entity]**:选择分配给每个分配值的本地实体。本地实体用在&#x200B;**分布式营销**&#x200B;中。 有关更多信息，请参阅此[部分](../../campaign/using/about-distributed-marketing.md)。
+   * **[!UICONTROL Local entity]**:选择分配给每个分配值的本地实体。本地实体用在&#x200B;**分布式营销**&#x200B;中。 有关更多信息，请参阅此[部分](../../distributed/using/about-distributed-marketing.md)。
 
-## 筛选参数{#filtering-parameters}
+## 筛选参数 {#filtering-parameters}
 
 单击&#x200B;**[!UICONTROL General]**&#x200B;选项卡以输入活动标签。 为此拆分选择目标和筛选维度。 如有必要，您可以更改给定子集的这些维度。
 
@@ -220,14 +222,14 @@ ht-degree: 0%
 * 未勾选框时，拆分活动可确保收件人不能出现在多个输出过渡中，即使它符合多个子集的条件也是如此。 它们将位于第一个选项卡的目标中，且标准匹配。
 * 选中该框后，如果收件人符合其筛选条件，则可以在多个子集中找到该收件人。 Adobe Campaign建议使用排他性标准。
 
-## 输入参数{#input-parameters}
+## 输入参数 {#input-parameters}
 
 * tableName
 * 模式
 
 每个集客事件必须指定由这些参数定义的目标。
 
-## 输出参数{#output-parameters}
+## 输出参数 {#output-parameters}
 
 * tableName
 * 模式

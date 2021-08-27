@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 6%
 
 ---
 
-# 配置对Snowflake{#configure-access-to-snowflake}的访问
+# 配置对Snowflake的访问 {#configure-access-to-snowflake}
+
+![](../../assets/v7-only.svg)
 
 使用Campaign **联合数据访问**(FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对[!DNL Snowflake]的访问。
 
@@ -76,7 +78,7 @@ ht-degree: 6%
 
 1. 然后，在Campaign中，您可以配置[!DNL Snowflake]外部帐户。 有关如何配置外部帐户的更多信息，请参阅[此部分](#snowflake-external)。
 
-## Snowflake外部帐户{#snowflake-external}
+## Snowflake外部帐户 {#snowflake-external}
 
 您需要创建一个[!DNL Snowflake]外部帐户，以将Campaign实例连接到[!DNL Snowflake]外部数据库。
 
@@ -110,6 +112,6 @@ ht-degree: 6%
 |---|---|
 | 工作模式 | 用于工作表的数据库模式 |
 | 仓库 | 要使用的默认仓库的名称。 它将覆盖用户的默认设置。 |
-| 时区名称 | 默认为空，这表示使用Campaign Classic应用程序服务器的系统时区。 可以使用选项强制使用TIMEZONE会话参数。 <br>有关详细信息，请参见[此页面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
-| WeekStart | WEEK_START会话参数。 默认情况下，设置为0。 <br>有关详细信息，请参见[此页面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)。 |
-| UseCachedResult | USE_CACHED_RESULTS会话参数。 默认情况下，设置为TRUE。 此选项可用于禁用Snowflake缓存结果。 <br>有关详细信息，请参见[此页面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
+| 时区名称 | 默认为空，这表示使用Campaign Classic应用程序服务器的系统时区。 可以使用选项强制使用TIMEZONE会话参数。 <br>[有关更多信息，请参阅此页面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
+| WeekStart | WEEK_START会话参数。 默认情况下，设置为0。 <br>[有关更多信息，请参阅此页面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
+| UseCachedResult | USE_CACHED_RESULTS会话参数。 默认情况下，设置为TRUE。 此选项可用于禁用Snowflake缓存结果。 <br>[有关更多信息，请参阅此页面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 72b17b48-093a-4eb9-a848-3c1570e49b61
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # 单元格优惠{#offers-by-cell}
+
+![](../../assets/common.svg)
 
 **[!UICONTROL Offers by cell]**&#x200B;活动允许您将集客群体（例如，从查询中）分发到多个区段，并指定要为其中每个区段显示的选件。
 
@@ -30,4 +32,4 @@ ht-degree: 8%
 
       ![](assets/int_offer_per_cell1.png)
 
-1. 然后，配置与您选择的渠道对应的投放活动。 请参阅[跨渠道投放](../../workflow/using/cross-channel-deliveries.md)。
+1. 然后，配置与您选择的渠道对应的投放活动。 请参阅[跨渠道投放](cross-channel-deliveries.md)。

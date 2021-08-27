@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -15,9 +15,11 @@ ht-degree: 1%
 
 # 跟踪故障排除 {#tracking-troubleshooting}
 
+![](../../assets/common.svg)
+
 在此部分中，您将在Adobe Campaign Classic中找到与跟踪配置和实施相关的常见问题。
 
-## 跟踪工作流失败{#tracking-workflow-failing}
+## 跟踪工作流失败 {#tracking-workflow-failing}
 
 我的跟踪工作流失败，如何检测跟踪文件中的损坏行？
 
@@ -79,7 +81,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 然后，您可以停止跟踪工作流，删除损坏的行并重新启动工作流。
 
-## 跟踪链接间歇性地{#tracking-links-fail-intermittently}失败
+## 跟踪链接间歇性失败 {#tracking-links-fail-intermittently}
 
 尝试访问跟踪链接时，会显示以下消息：
 
@@ -112,7 +114,7 @@ $ grep -Rn 50x000000000FD7EC86
 
    他们应至少拥有644个权限，以便Apache可以读取跟踪url以重定向请求的链接。
 
-## 是否更新NmsTracking_Pointer选项？{#updating-option}
+## 是否更新NmsTracking_Pointer选项？ {#updating-option}
 
 在更新NmsTracking_Pointer选项时，请按照以下步骤操作：
 
@@ -203,7 +205,7 @@ STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 ```
 
-## 跟踪日志检索速度太慢{#slow-retrieval}
+## 跟踪日志检索过慢 {#slow-retrieval}
 
 当实例不直接检索跟踪日志，而是从远程Adobe Campaign Classic服务器中检索时，将通过GetTrackingLogs SOAP调用（在remoteTracking架构中定义）来检索日志。
 
@@ -211,7 +213,7 @@ serverConf.xml文件中的一个选项允许您通过此方法设置一次检索
 
 logCountPerRequest的默认值为1000，在某些情况下可能证明它太小。 接受的值必须介于0和10.000之间。
 
-## 无法将跟踪日志链接到收件人{#link-recipients}
+## 跟踪日志无法链接到收件人 {#link-recipients}
 
 在Adobe Campaign Classic中，就收件人架构与broadlog/trackinglog架构而言，目标映射应该是唯一的。
 
