@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 2c548465a73bcd817c6d2b18853f4f074ed6adfa
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 90%
+source-wordcount: '1160'
+ht-degree: 86%
 
 ---
 
@@ -18,6 +18,15 @@ ht-degree: 90%
 ![](../../assets/v7-only.svg)
 
 本页列出了 [!DNL Gold Standard] 版本。有关 Campaign [!DNL Gold Standard] [的详情可在此页面中找到](gs-overview.md)。
+
+## ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] 12 版{#gs-12}
+
+_2021年8月27日_
+
+内部版本9032@99a3894包含以下修复：
+
+* 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、Internet浏览器等）的方式相关的错误 处理特殊字符。 URL参数现已进行编码。
+* 修复了日期选取器的问题，该问题可能导致控制台显示阻止程序错误消息。 (NEO-36345)
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 11 版{#gs-11}
 
