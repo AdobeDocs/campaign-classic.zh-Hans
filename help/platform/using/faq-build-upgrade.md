@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
 workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 5%
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 # 内部版本升级常见问题解答 {#build-upgrade-faq}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Adobe Campaign 会定期更新。如果您熟悉我们发布的[发行说明](../../rn/using/rn-overview.md)，那么您可能已经意识到，平均每年发布2/3个包含新功能、改进和修复的次要版本。 此外，我们还定期发布仅包含累积修复的内部版本。这种定期更新旨在让您掌握最新、最充分的信息，保持环境的完全安全，并显然改善您对我们产品的体验。
 
