@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 98%
+source-wordcount: '1664'
+ht-degree: 97%
 
 ---
 
@@ -80,12 +80,16 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <td><strong>替换</strong></td> 
   </tr>
   <tr>  
+   <td>报告<br></td>
+   <td><p>在AdobeFlash Player生命周期终止后，量规报表和图表渲染引擎不再可用。 <a href="../../reporting/using/creating-a-new-report.md">了解详情</a></p>
+  </tr>
+  <tr>  
    <td>传真渠道<br></td>
    <td><p>从 Campaign 21.1.3 版本开始，不再使用传真渠道。<a href="../../delivery/using/steps-about-delivery-creation-steps.md">了解详情</a></p>
+  </tr>
   <tr>
   <td>Demdex 域<br></td>
   <td><p> 从 Campaign 21.1.3 版本开始，不再使用用于将受众导入和导出到 Adobe Experience Cloud 的 demdex 域。<a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">了解详情</a></p> 
-  </td>
   </td>
   </tr>
    <tr> 

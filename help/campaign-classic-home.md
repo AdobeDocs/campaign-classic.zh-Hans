@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 661a53b19e0fd8c6038c0957dbe2656152b0814c
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 56%
@@ -16,7 +16,7 @@ ht-degree: 56%
 
 ## 新增功能
 
-* **[六月版将正式上线！](rn/using/latest-release.md)**<br/> 在发行说明中了解新功能、改进和修复
+* **[9月版已正式发布！](rn/using/latest-release.md)**<br/> 在发行说明中了解新功能、改进和修复
 
 * **[Apple 邮件隐私保护常见问题解答](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/using/apple-mail-privacy-faq.html)**<br/>&#x200B;查找 Apple 有关 iOS 15 公告的初步指导
 

@@ -6,9 +6,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '429'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,6 @@ ht-degree: 2%
 
 在&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡中，您可以个性化页面的数据显示模式。 您可以选择：
 
-* 图表渲染引擎：默认情况下，渲染引擎为HTML 5。
 * 报表中的导航类型：按钮或链接。
 * 报表元素的标签的默认位置。 此位置可为每个元素进行重载。
 * 用于生成报表页面的模板或主题。

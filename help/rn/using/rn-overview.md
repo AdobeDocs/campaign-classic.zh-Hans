@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5b1c59c450aaedbd8dbf6df8685817e4a7e02056
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 100%
@@ -29,7 +29,7 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 已在生产中验证并受到 Adobe 推荐。
 
-**上一个 GA 版本**&#x200B;为：[[!DNL Gold Standard]  11 版](../../rn/using/gold-standard.md)和 [Campaign 21.1.3 版](../../rn/using/latest-release.md#release-21-1-3-build-9330).
+**上一个 GA 版本**&#x200B;为：[[!DNL Gold Standard]  12 版](../../rn/using/gold-standard.md)和 [Campaign 21.1.4 版](../../rn/using/latest-release.md#release-21-1-4-build-9340).
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 仅限按需部署。
 
@@ -55,7 +55,7 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-作为 [!DNL Gold Standard] 托管用户，您无需采取任何操作，即可通过[最新 GA  [!DNL Gold Standard] 内部版本](../../rn/using/gold-standard.md#gs-11)从 [!DNL Gold Standard] 升级中受益。[了解详情](../../rn/using/gs-overview.md)。
+作为 [!DNL Gold Standard] 托管用户，您无需采取任何操作，即可通过[最新 GA  [!DNL Gold Standard] 内部版本](../../rn/using/gold-standard.md#gs-12)从 [!DNL Gold Standard] 升级中受益。[了解详情](../../rn/using/gs-overview.md)。
 
 >[!NOTE]
 >[GA 兼容性矩阵](../../rn/using/compatibility-matrix-gs.md)中提供了 [!DNL Gold Standard] 的兼容性矩阵。

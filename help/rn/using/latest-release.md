@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 66533711a67950626c1e6681f88f2aaaea1ebd95
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 99%
+source-wordcount: '2403'
+ht-degree: 83%
 
 ---
 
@@ -19,15 +19,65 @@ ht-degree: 99%
 
 本页列出了&#x200B;**最新Campaign Classic版本**&#x200B;随附的新功能、改进和修复。
 
->[!NOTE]
->
->Campaign **正式发布 (GA) 内部版本**&#x200B;为：[[!DNL Gold Standard]  11 版](../../rn/using/gold-standard.md#gs-11)和 [Campaign 21.1.3 版](../../rn/using/latest-release.md#release-21-1-3-build-9330)。
+了解[此页面](rn-overview.md)中的Campaign生成状态。
 
-## ![](assets/do-not-localize/green_2.png) 21.1.3 版 - 内部版本 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/green_2.png) 21.1.4 版 - 内部版本 9342 {#release-21-1-4-build-9342}
+
+_2021年9月7日_
+
+**安全性增强**
+
+* 修复了一个安全问题，以加强针对目录遍历攻击的保护。 (NEO-28547)
+
+**改进**
+
+* Flash生命周期结束后，已从所有相关的Campaign功能和组件中删除，并替换为HTML5。 已删除图表的&#x200B;**量规**&#x200B;类型。 (NEO-30330)[阅读更多](../../reporting/using/creating-a-chart.md)
+* 现在，在Windows上安装客户端控制台时，安装程序会检查是否存在父注册表节点，如果缺少该节点，则创建一个。 这可防止在启动控制台时出现潜在问题。 (NEO-34854)
+* 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、Internet浏览器等）的方式相关的错误 处理特殊字符。 URL参数现已进行编码。
+
+**其他变更**
+
+* 以前已弃用的Microsoft CRM连接器（Office 365和内部部署）已从界面中删除。 [阅读更多](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* 迁移到Tomcat 8后，已更新IIS设置脚本，以修复IIS集成问题。 (NEO-31019)
+* 添加了护栏，以仅允许[计费技术工作流](../../production/using/monitoring-processes.md#billing-report)在营销实例上运行。
+* 在工作流过渡的“ **查看群体**”窗口的“数据”和“架构”选项卡中，数据源标识已得到改进。
+* 缺少的数据库索引已添加到以下模式以防止数据库更新问题：xtk:rights、nms:dlvExclusion、nms:seedMember、nms:trackingUrl
+
+**修补程序**
+
+* 修复了将选件链接到投放时，导致热门点击报表无法工作的问题。 (NEO-26295)
+* 修复了&#x200B;**Sub-worklow**&#x200B;活动在执行时未生成输出表的问题。 (NEO-36242)
+* 修复了将&#x200B;**描述性分析**&#x200B;报表导出为PDF时出现的各种问题。 (NEO-25847)
+* 修复了在使用外部邮件投放时可能导致投放失败的问题。 (NEO-37435)
+* 修复了使用Web API连接到Microsoft CRM时的错误。 由于功能未受到影响，因此错误消息已被删除。
+* 修复了将mid服务器设置为跟踪服务器和营销服务器之间的中继时的跟踪日志重复数据删除问题。 (NEO-36285)
+* 修复了阻止将Vault用作特定代码存储的回归。
+* 修复了当来自FDA数据源的传入过渡时，阻止您在&#x200B;**扩充**&#x200B;工作流活动中使用变量的问题。
+* 修复了可能导致电子邮件中的URL损坏的问题。
+
+## ![](assets/do-not-localize/red_2.png) 21.1.3 版 - 内部版本 9330 {#release-21-1-3-build-9330}
 
 _2021 年 6 月 5 日_
 
 **新增功能**
+
+
+<table>
+<thead>
+<tr>
+<th><strong>全新工作流活动：更改数据源</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>全新的<b>更改数据源</b>工作流活动允许您更改工作流工作表的数据源。这提高了跨不同数据源（FDA和本地数据库）管理数据的灵活性。</p>
+<p>在 Adobe Campaign 工作流中，使用工作（或临时）表管理数据。工作流执行时，工作表会在工作流活动之间共享数据。默认情况下，工作表会在与我们查询的数据源相同的数据库中创建。</p>
+<p>有关详细信息，请参阅<a href="../../workflow/using/change-data-source.md">有详细说明的文档</a>。</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>

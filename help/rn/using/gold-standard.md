@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 2c548465a73bcd817c6d2b18853f4f074ed6adfa
+source-git-commit: a64cf63916c4e4f220ac00f3d44d0e5e747815f4
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 86%
+source-wordcount: '1191'
+ht-degree: 84%
 
 ---
 
@@ -20,6 +20,12 @@ ht-degree: 86%
 本页列出了 [!DNL Gold Standard] 版本。有关 Campaign [!DNL Gold Standard] [的详情可在此页面中找到](gs-overview.md)。
 
 ## ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] 12 版{#gs-12}
+
+_2021年9月7日_
+
+内部版本9032@554dbcd包含以下修复：
+
+* 修复了在启用了跟踪的Line投放中打开指向Web应用程序的链接时导致出现500错误的问题。
 
 _2021年8月27日_
 

@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 877ac37102a09a40ea59ef073afa00b9d9bd7dde
 workflow-type: tm+mt
-source-wordcount: '4464'
-ht-degree: 100%
+source-wordcount: '4542'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,19 @@ ht-degree: 100%
 本页列出了每月所有新增功能和文档更新以及 Campaign 版本。
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
+
+## 2021 年 8 月{#aug-2021}
+
+添加了新的工作流活动：更改数据源 — [了解详情](../../workflow/using/change-data-source.md)
+
+已在文档页面中添加了适用性徽章：**仅适用于v7**&#x200B;的Campaign Classicv7功能，而&#x200B;**适用于v7和v8**&#x200B;的常见功能。
+
+添加了有关Campaign与AEM Assets之间集成的注释，该集成已从Adobe Experience Manager 6.4开始解压缩。 [了解详情](../../integrations/using/configuring-access-to-assets.md)
+
+删除AdobeFlash后，报表和Web应用程序屏幕截图和参数已更新。
+
+**量规**&#x200B;图表类型已被删除。
+
 
 ## 2021 年 7 月 {#july-2021}
 

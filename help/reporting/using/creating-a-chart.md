@@ -6,10 +6,10 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 2%
+source-wordcount: '522'
+ht-degree: 3%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 2%
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * 要使用上下文数据，请选择此选项并单击&#x200B;**[!UICONTROL Advanced settings...]**&#x200B;链接。 然后，选择统计信息将涉及的数据。
+   * 要使用上下文数据，请从&#x200B;**[!UICONTROL Source]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL Context data]**，然后单击&#x200B;**[!UICONTROL Advanced settings...]**&#x200B;链接。 然后，选择统计信息将涉及的数据。
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -118,32 +118,6 @@ Adobe Campaign提供各种类型的图形表示形式。 下文详述了这些�
 ### 转化：漏斗 {#conversion--funnel}
 
 此类型的图表允许您跟踪测量元素的对话率。
-
-### 进度：仪表 {#progress--gauge}
-
-此类型的图表允许您显示与定义目标相比的值的进度。 在以下示例中，黑色拨号显示成功发送(76)的投放数量，超出100次投放的目标。 量规分为三个与特定状态对应的范围。
-
-![](assets/reporting_graph_type_gauge.png)
-
-在配置图表时可定义这些元素。
-
-![](assets/reporting_graph_type_gauge1.png)
-
-* **[!UICONTROL Value]**&#x200B;字段在图表中由黑色拨号表示。 它表示要计算其进度的元素。 要表示的值必须已保存以供使用。
-* **[!UICONTROL Goal]**&#x200B;字段表示要实现的最大值。
-* 使用&#x200B;**[!UICONTROL Other mark]**&#x200B;字段，可向图表添加第二个指示器。
-* 利用&#x200B;**[!UICONTROL Display range]**&#x200B;字段，可指定计算报表的值。
-* **[!UICONTROL Value ranges]**&#x200B;字段允许您将状态（无、错误、可接受、良好）归因到一组值，以更好地说明进度。
-
-在&#x200B;**[!UICONTROL Display settings]**&#x200B;部分中，使用&#x200B;**[!UICONTROL Change appearance...]**&#x200B;可配置图表的显示方式。
-
-![](assets/reporting_graph_type_gauge2.png)
-
-**[!UICONTROL Display the value below the gauge]**&#x200B;选项允许您在图表下方显示值进度。
-
-**[!UICONTROL Aperture ratio]**&#x200B;字段必须介于0和1之间，它允许您以更完整或更少的圆编辑报表的孔径。 在以上示例中，值0.50对应一个半圆。
-
-**[!UICONTROL Width]**&#x200B;字段允许您编辑图表大小。
 
 ## 与图表交互 {#interaction-with-the-chart}
 

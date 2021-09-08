@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '439'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## 关于可变PDF文档 {#about-variable-pdf-documents}
 
-Adobe Campaign允许您从LibreOffice或Microsoft Word文档中生成变量PDF文档（用于电子邮件附件、直邮投放）。
+Adobe Campaign允许您为来自LibreOffice或Microsoft Word文档的电子邮件附件生成变量PDF文档。
 
 支持以下扩展：&quot;。docx&quot;、&quot;。doc&quot;和&quot;。odt&quot;。
 
