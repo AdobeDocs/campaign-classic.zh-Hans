@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 66533711a67950626c1e6681f88f2aaaea1ebd95
+source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
 workflow-type: tm+mt
 source-wordcount: '2403'
 ht-degree: 83%
@@ -55,7 +55,7 @@ _2021年9月7日_
 * 修复了当来自FDA数据源的传入过渡时，阻止您在&#x200B;**扩充**&#x200B;工作流活动中使用变量的问题。
 * 修复了可能导致电子邮件中的URL损坏的问题。
 
-## ![](assets/do-not-localize/red_2.png) 21.1.3 版 - 内部版本 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/orange_2.png) 21.1.3 版 - 内部版本 9330 {#release-21-1-3-build-9330}
 
 _2021 年 6 月 5 日_
 

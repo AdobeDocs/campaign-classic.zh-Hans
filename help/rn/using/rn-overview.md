@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 5b1c59c450aaedbd8dbf6df8685817e4a7e02056
+source-git-commit: 21c985d628f672f3c3864fff1a14ab71a24ccfc7
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 100%
+source-wordcount: '422'
+ht-degree: 95%
 
 ---
 
@@ -35,9 +35,9 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ![](assets/do-not-localize/blue3.png) **发布候选项** (RC) - 具有新功能的最新版本。
 
-**最新的 RC 版本**&#x200B;是 [Campaign Classic 21.1 版本](../../rn/using/latest-release.md)
+![](assets/do-not-localize/orange3.png) **不再可用**  — 不部署。没有错误修复。 建议更新到较新的内部版本。
 
-![](assets/do-not-localize/red3.png) **已弃用** -无部署。必须升级现有实施。
+![](assets/do-not-localize/red3.png) **已弃用** -无部署。没有错误修复。 必须升级现有实施。
 
 ## 推荐{#recommendations}
 
