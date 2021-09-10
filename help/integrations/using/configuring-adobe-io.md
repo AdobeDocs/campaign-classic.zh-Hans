@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0399bca5b452533f171076aa87be8d1e8d9ad1ed
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 >如果您通过oAuth身份验证使用旧版Triggers集成，则&#x200B;**您需要按照以下**所述移至Adobe I/O。
 >请注意，在迁移到[!DNL Adobe I/O]期间，某些传入触发器可能会丢失。
 >
->Campaign [的旧版oAuth身份验证模式已在&#x200B;**2021年8月18日**&#x200B;停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管环境将从扩展中受益，直到2021年11月30日&#x200B;**。**&#x200B;作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2021年11月30日。 您必须提供[OAuth应用程序](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID才能Adobe。
+>Campaign [的旧版oAuth身份验证模式已在&#x200B;**2021年8月18日**&#x200B;停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管环境将从扩展中受益，直到2021年11月30日&#x200B;**。**&#x200B;作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2021年11月30日。 您必须[提供OAuth应用程序](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID才能Adobe。
 
 ## 先决条件 {#adobe-io-prerequisites}
 
@@ -33,8 +33,7 @@ ht-degree: 3%
 在启动此实施之前，请检查您具有：
 
 * 有效的&#x200B;**组织标识符**:Identity Management系统(IMS)组织标识符是Adobe Experience Cloud中的唯一标识符，例如用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **开发人员对贵组织的访问**。 IMS组织的系统管理员需要遵循&#x200B;**将开发人员添加到单个产品配置文件**
-本页](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中详细的[过程，以提供与触发器关联的Adobe Analytics产品`Analytics - {tenantID}`产品配置文件的开发人员访问权限。
+* a **开发人员对贵组织的访问**。 IMS组织的系统管理员需要按照本页](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)中详细介绍的&#x200B;**将开发人员添加到单个产品配置文件**&#x200B;过程，为与触发器关联的Adobe Analytics产品的`Analytics - {tenantID}`产品配置文件提供开发人员访问权限。[
 
 ## 步骤1:创建/更新Adobe I/O项目 {#creating-adobe-io-project}
 
