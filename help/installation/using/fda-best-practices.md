@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
+source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 7%
@@ -15,7 +15,9 @@ ht-degree: 7%
 
 # 最佳实践和限制
 
-## 使用外部数据{#optimizing-email-personalization-with-external-data}优化电子邮件个性化
+![](../../assets/v7-only.svg)
+
+## 使用外部数据优化电子邮件个性化 {#optimizing-email-personalization-with-external-data}
 
 您可以在专用工作流中预处理消息个性化。 要执行此操作，请使用投放属性的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡中提供的&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项。
 
@@ -23,7 +25,7 @@ ht-degree: 7%
 
 此选项可显着提高执行个性化步骤时的性能。
 
-## 在工作流{#using-data-from-an-external-database-in-a-workflow}中使用来自外部数据库的数据
+## 在工作流中使用来自外部数据库的数据 {#using-data-from-an-external-database-in-a-workflow}
 
 在多个Adobe Campaign工作流活动中，您可以使用存储在外部数据库中的数据。
 

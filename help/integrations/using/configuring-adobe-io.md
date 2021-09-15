@@ -8,9 +8,9 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 0399bca5b452533f171076aa87be8d1e8d9ad1ed
+source-git-commit: 5eea976f86b62987c38c0fcd893bf3532a2cf301
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '707'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 ## 先决条件 {#adobe-io-prerequisites}
 
-此集成仅适用于从&#x200B;**Campaign Classic20.3、20.2.4、19.1.8和[!DNL Gold Standard] 11版本**&#x200B;开始的版本。
+此集成仅适用于从&#x200B;**Campaign Classic20.2.4及更高版本、 19.1.8和Gold Standard 11版本**&#x200B;开始。
 
 在启动此实施之前，请检查您具有：
 
