@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 0c6e328087135fd9b35ca6cf0669090be0c93957
+source-git-commit: b3a3ec871bca9132f10b319ba1f93aeda80d6747
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 95%
@@ -29,7 +29,7 @@ Adobe Campaign 会定期更新。平均每年发布两或三个包含新功能�
 
 ![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 已在生产中验证并受到 Adobe 推荐。
 
-**上一个 GA 版本**&#x200B;为：[[!DNL Gold Standard]  12 版](../../rn/using/gold-standard.md)和 [Campaign 21.1.4 版](../../rn/using/latest-release.md#release-21-1-4-build-9340).
+**上一个 GA 版本**&#x200B;为：[[!DNL Gold Standard]  11 版](../../rn/using/gold-standard.md#gs-11)和 [Campaign 21.1.4 版](../../rn/using/latest-release.md#release-21-1-4-build-9340).
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 仅限按需部署。
 
