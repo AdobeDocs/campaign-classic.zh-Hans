@@ -1,18 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 配置对Vertica的访问权限
 description: 了解如何在FDA中配置对Vertica的访问
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
+source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 2%
 
 ---
-
 
 # 配置对Vertica的访问权限 {#configure-fda-vertica}
 
