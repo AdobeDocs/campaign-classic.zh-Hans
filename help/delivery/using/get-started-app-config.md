@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 10%
@@ -43,7 +43,7 @@ ht-degree: 10%
 
 安装步骤包括：
 
-1. 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;访问包导入向导。
+1. 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;访问包导入向导。
 
    ![](assets/package_ios.png)
 

@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2531'
 ht-degree: 99%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 99%
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
    + [技术说明](technotes/using/technote.md)
    + [iOS 证书更新](technotes/using/ios-certificate-update.md)
+   + [Apple iOS上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
    + [Campaign 配置更新](technotes/using/acc-config-updates.md)
    + [跟踪的 URL 更新](technotes/using/tracked-urls.md)
    + [IMS 更新](technotes/using/ims-updates.md)

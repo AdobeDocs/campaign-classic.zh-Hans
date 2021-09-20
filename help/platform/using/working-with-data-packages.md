@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
 workflow-type: tm+mt
 source-wordcount: '2442'
 ht-degree: 2%
@@ -301,7 +301,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ## 导入资源包 {#importing-packages}
 
-可通过Adobe Campaign客户端控制台的主菜单&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;访问包导入向导。
+可通过Adobe Campaign客户端控制台的主菜单&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;访问包导入向导。
 
 您可以从以前执行的导出中导入包，例如从其他Adobe Campaign实例或[内置包](../../installation/using/installing-campaign-standard-packages.md)，具体取决于您的许可证条款。
 

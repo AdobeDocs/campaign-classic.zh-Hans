@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -31,7 +31,7 @@ ht-degree: 6%
 
 要安装内置包，请执行以下操作：
 
-1. 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Package import...]**&#x200B;访问包导入向导。
+1. 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;访问包导入向导。
 1. 选择 **[!UICONTROL Install a standard package]**。
 1. 在包列表中，检查要安装的包。
    >[!NOTE]
