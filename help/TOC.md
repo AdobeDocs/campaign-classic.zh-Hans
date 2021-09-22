@@ -7,13 +7,12 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
+source-git-commit: aac596caf559b25ba3fff94aca410a66ecc08b27
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 99%
+source-wordcount: '2546'
+ht-degree: 98%
 
 ---
-
 
 # Adobe Campaign Classic v7 文档 {#using}
 
@@ -850,3 +849,7 @@ ht-degree: 99%
       + [v6.02 中的特定配置](migration/using/specific-configurations-in-v6-02.md)
       + [v6.10 中的特定配置](migration/using/specific-configurations-in-v6-10.md)
    + [回滚过程](migration/using/about-rollback.md)
++ 技术说明 {#technotes}
+   + 迁移到Adobe Managed Services{#dc-migration}
+      + [迁移到公共云](technotes/using/dc-migration.md)
+      + [常见问题解答](technotes/using/dc-migration-faq.md)
