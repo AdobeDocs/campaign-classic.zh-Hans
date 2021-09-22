@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 2%
@@ -169,7 +169,7 @@ cpan Mail::SpamAssassin
 
 ### 更新过滤器规则 {#updating-filter-rules}
 
-可以使用&#x200B;**sa-update**&#x200B;工具自动更新过滤器规则。 有关更多信息，请参阅官方的SpamAssassin网站[http://spamassassin.apache.org/](http://spamassassin.apache.org/)。
+可以使用&#x200B;**sa-update**&#x200B;工具自动更新过滤器规则。 有关更多信息，请参阅官方的SpamAssassin网站[https://spamassassin.apache.org/](https://spamassassin.apache.org/)。
 
 在Debian中，每天会自动进行更新。
 

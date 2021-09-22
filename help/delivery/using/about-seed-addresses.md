@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1113afb573bad958ec7cc2cf008f71c8e751e8f9
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '377'
 ht-degree: 9%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 9%
 >
 >种子地址不属于收件人表，它们将在单独的表中创建。 如果使用新数据扩展收件人表，则还必须使用相同的数据扩展种子地址表。 否则，种子地址将不考虑这些扩展字段。
 >
->本节介绍了如何扩展种子地址表的示例：[用例：选择标准](use-case--selecting-seed-addresses-on-criteria.md)中的种子地址
+>本节介绍了如何扩展种子地址表的示例：[用例：根据条件](use-case--selecting-seed-addresses-on-criteria.md)选择种子地址。
 
 对于直邮投放，种子地址会在提取期间添加，并混合在输出文档中。
 

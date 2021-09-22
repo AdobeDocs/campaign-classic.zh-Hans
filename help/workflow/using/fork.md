@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1113afb573bad958ec7cc2cf008f71c8e751e8f9
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -17,21 +17,69 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-**[!UICONTROL Fork]**&#x200B;活动允许您创建多个叫客过渡，以便在同一工作流中独立地执行多个活动。
-
-例如，您可以在查询后使用活动，以同时执行两个操作：
-
-* 将查询结果保存到受众中，
-* 对结果执行分段，以发送多个投放。
-
-您还可以在内容创建和投放发送自动化的上下文中使用活动，以便同时启动目标计算和内容创建。 [此部分](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)中提供了专用用例。
+您可以使用&#x200B;**[!UICONTROL Fork]**&#x200B;活动创建多个叫客过渡，并在同一工作流中独立运行多个活动。
 
 >[!IMPORTANT]
 >
->在&#x200B;**[!UICONTROL Fork]**&#x200B;活动&#x200B;**之后添加的叫客过渡不会同时执行**。 此行为可能会影响工作流的性能。 如果您需要独立执行多个活动，并最终在执行其余工作流之前将它们连接在一起，则可以使用此活动。
+>您在&#x200B;**[!UICONTROL Fork]**&#x200B;活动后添加的叫客过渡不会同时运行。 此行为可能会影响工作流的性能。 如果需要单独运行多个活动，请使用&#x200B;**[!UICONTROL Fork]**&#x200B;活动。 或者，您也可以在工作流后续部分之前加入叫客活动。
 
-要配置&#x200B;**[!UICONTROL Fork]**&#x200B;活动，请打开该活动以定义叫客过渡的编号和标签。
+要配置&#x200B;**[!UICONTROL Fork]**&#x200B;活动及其相关活动，请执行以下步骤：
 
-![](assets/s_user_segmentation_fork.png)
+1. 打开&#x200B;**[!UICONTROL Fork]**&#x200B;活动，并定义叫客过渡的名称和标签。
+
+   ![](assets/s_user_segmentation_fork.png)
+
+1. 打开每个叫客过渡并对其进行配置。
+1. （可选）要加入叫客过渡，请添加“与”加入活动。 [了解详情](and-join.md)。
+
+   工作流的后续部分仅在连接的叫客过渡完成后才运行。
+
+## 示例：分段
+
+在此示例中，会向不同的群体组发送不同的电子邮件。 在查询后使用&#x200B;**[!UICONTROL Fork]**&#x200B;活动，以并行执行两个操作：
+
+* 保存查询结果
+* 对结果进行分段以发送多个投放
+
+   ![分支活动遵循两个查询的交集，并在列表更新活动和拆分活动之前。](assets/wkf_fork_example.png)
+
+工作流包含以下活动：
+
+1. **[!UICONTROL Query]** 活动
+
+   选择了两个群体组：女人和巴黎人。
+
+1. **[!UICONTROL Intersection]** 活动
+
+   选择查询结果的交集，即巴黎女人。
+
+1. **[!UICONTROL Fork]** 活动
+
+   计算的群体将被保存，并且会并行划分为两个组：
+
+   1. 18至40岁的巴黎女性
+   1. 40岁以上巴黎女性
+
+1. **[!UICONTROL Delivery]** 活动
+
+   会向每个群体组发送不同的电子邮件。
+
+## 用例：发送生日电子邮件
+
+会在收件人的生日当天向其列表发送定期电子邮件。 **[!UICONTROL Fork]**&#x200B;活动用于包含2月29日出生于闰年的收件人。 [了解](sending-a-birthday-email.md) 有关此用例的更多信息。
+
+![分支活动遵循测试活动，并位于两个查询活动之前。](assets/birthday-workflow_usecase_1.png)
+
+## 用例：使用工作流自动化内容
+
+内容块的创建和交付是自动的。 **[!UICONTROL Fork]**&#x200B;活动用于计算目标并行创建内容。 [了解](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) 有关此用例的更多信息。
+
+![分支活动跟在投放活动之后，位于查询活动和内容管理活动之前，二者均通过AND连接活动进行连接。](../../delivery/using/assets/d_ncs_content_workflow10.png)
 
 然后，您可以配置每个叫客过渡，并根据需要使用[AND-join](and-join.md)活动将它们连接在一起。 这样，只有在&#x200B;**[!UICONTROL Fork]**&#x200B;活动的叫客过渡完成后，才会执行工作流的其余部分。
+
+## 相关主题
+
+* [AND — 连接活动](and-join.md)
+* [用例：生日电子邮件](sending-a-birthday-email.md)
+* [用例：内容创建和交付](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)

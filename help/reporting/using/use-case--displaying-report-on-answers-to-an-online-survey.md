@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 6%
@@ -41,23 +41,23 @@ ht-degree: 6%
 1. 编辑活动并选择要分析其答案的调查。
 1. 启用&#x200B;**[!UICONTROL Select all the answer data]**&#x200B;选项以收集所有信息。
 
-   ![](assets/reporting_usecase_1_01.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_01.png)
 
 1. 选择要提取的列(在本例中为：选择：所有存档字段。 这些字段包含答案。
 
-   ![](assets/reporting_usecase_1_02.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_02.png)
 
 1. 配置了答案收集框后，请定位&#x200B;**[!UICONTROL List update]**&#x200B;类型的活动以保存数据。
 
-   ![](assets/reporting_usecase_1_04.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_04.png)
 
    在此活动中，指定要更新的列表，并取消选中&#x200B;**[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**&#x200B;选项：答案将添加到现有表中。 此选项将允许您引用多维数据集中的列表。 链接到列表的架构将不会针对每次更新重新生成，这将确保使用此列表的多维数据集的完整性。
 
-   ![](assets/reporting_usecase_1_03.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_03.png)
 
 1. 启动工作流以确认其配置。
 
-   ![](assets/reporting_usecase_1_05.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_05.png)
 
    将创建指定的列表，并包含调查答案的模式。
 
@@ -71,11 +71,11 @@ ht-degree: 6%
 
 在此示例中，多维数据集基于由之前创建的工作流馈送的列表中的数据。
 
-![](assets/reporting_usecase_2_01.png)
+![](../../surveys/using/assets/reporting_usecase_2_01.png)
 
 定义要在报表中显示的维度和度量。 在此，我们希望显示被申请人的合同日期和国家/地区。
 
-![](assets/reporting_usecase_2_02.png)
+![](../../surveys/using/assets/reporting_usecase_2_02.png)
 
 使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡可以控制报告的呈现。
 
@@ -83,8 +83,8 @@ ht-degree: 6%
 
 然后，您可以基于此多维数据集创建报告并处理数据和信息。
 
-![](assets/reporting_usecase_3_01.png)
+![](../../surveys/using/assets/reporting_usecase_3_01.png)
 
 根据您的需求调整信息以显示。
 
-![](assets/reporting_usecase_3_02.png)
+![](../../surveys/using/assets/reporting_usecase_3_02.png)

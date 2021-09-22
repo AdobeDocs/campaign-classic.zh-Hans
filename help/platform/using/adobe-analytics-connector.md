@@ -5,11 +5,11 @@ description: 了解有关 Adobe Analytics Connector 的更多信息
 feature: Overview
 role: User, Admin
 level: Beginner
-exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
+exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
+source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 100%
+source-wordcount: '1515'
+ht-degree: 93%
 
 ---
 
@@ -45,33 +45,37 @@ Adobe Analytics Connector 允许 Adobe Campaign 和 Adobe Analytics 通过 **[!U
 
 ## 设置集成 {#setting-up-the-integration}
 
+>[!IMPORTANT]
+>
+> 对于混合和内部部署实施，请确保遵循此[page](../../platform/using/adobe-analytics-provisioning.md)中详述的配置步骤。
+
 要设置 Data Connector，您必须连接到 Adobe Campaign 实例并执行以下操作：
 
-1. [在 Adobe Analytics 中创建报表包](#report-suite-analytics)
 1. [配置转化变量和成功事件](#configure-conversion-success)
 1. [在 Adobe Campaign Classic 中配置外部帐户](#external-account-classic)
 
-### 在 Adobe Analytics 中创建报表包 {#report-suite-analytics}
+<!--
+### Create your Report suite in Adobe Analytics {#report-suite-analytics}
 
-要设置 Adobe Analytics/Adobe Campaign Classic 集成，您必须连接到 [!DNL Adobe Analytics] 实例并执行以下操作：
+To set up the Adobe Analytics/Adobe Campaign Classic integration, you must connect to your [!DNL Adobe Analytics] instance and perform the following operations:
 
-1. 在 [!DNL Adobe Analytics] 中，选择 **[!UICONTROL Admin tab]**，然后单击 **[!UICONTROL All admin]**。
+1. From [!DNL Adobe Analytics], select the **[!UICONTROL Admin tab]** then click **[!UICONTROL All admin]**.
 
    ![](assets/analytics_connnector_1.png)
 
-1. 单击 **[!UICONTROL Report suites]**。
+1. Click **[!UICONTROL Report suites]**.
 
    ![](assets/analytics_connnector_2.png)
 
-1. 在 **[!UICONTROL Report suite manager]** 页面中，依次单击 **[!UICONTROL Create new]** 和 **[!UICONTROL Report suite]**。
+1. From the **[!UICONTROL Report suite manager]** page, click **[!UICONTROL Create new]** then **[!UICONTROL Report suite]**.
 
-   有关创建 **[!UICONTROL Report suite]** 的详细过程，请参阅此[部分](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=zh-Hans#prerequisites)。
+   For the detailed procedure on **[!UICONTROL Report suite]** creation, refer to this [section](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#prerequisites).
 
    ![](assets/analytics_connnector_3.png)
 
-1. 选择模板。
+1. Select a template. 
 
-1. 使用以下信息配置新报表包：
+1. Configure your new report suite with the following information:
 
    * **[!UICONTROL Report Suite ID]**
    * **[!UICONTROL Site Title]**
@@ -81,13 +85,14 @@ Adobe Analytics Connector 允许 Adobe Campaign 和 Adobe Analytics 通过 **[!U
 
    ![](assets/analytics_connnector_4.png)
 
-1. 配置后，单击 **[!UICONTROL Create report suite]**。
+1. When configured, click **[!UICONTROL Create report suite]**.
+-->
 
 ### 配置转化变量和成功事件 {#configure-conversion-success}
 
-创建 **[!UICONTROL Report suite]** 后，您需要按如下方式配置 **[!UICONTROL Conversion variables]** 和 **[!UICONTROL Success events]**：
+您需要按如下方式配置&#x200B;**[!UICONTROL Conversion variables]**&#x200B;和&#x200B;**[!UICONTROL Success events]**:
 
-1. 选择您之前配置的 **[!UICONTROL Report suite]**。
+1. 选择要与Adobe Campaign链接的&#x200B;**[!UICONTROL Report suite]**。
 
 1. 在 **[!UICONTROL Edit settings]** 按钮中，选择 **[!UICONTROL Conversion]** > **[!UICONTROL Conversion variables]**。
 
@@ -118,13 +123,19 @@ Adobe Analytics Connector 允许 Adobe Campaign 和 Adobe Analytics 通过 **[!U
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   要了解如何配置 **[!UICONTROL Success events]**，请参阅此[部分](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=zh-Hans#admin-tools)
+   要了解如何配置 **[!UICONTROL Success events]**，请参阅此[部分](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=zh-Hans#admin-tools)。
+
+   >[!NOTE]
+   >
+   > 仅支持数字类型的&#x200B;**[!UICONTROL Success events]**。
 
    ![](assets/analytics_connnector_8.png)
 
 1. 完成后单击 **[!UICONTROL Save]**。
 
-配置报表包后，您需要在 Adobe Campaign Classic 中配置 **[!UICONTROL External accounts]**。
+配置&#x200B;**[!UICONTROL Conversion variables]**&#x200B;和&#x200B;**[!UICONTROL Success events]**&#x200B;后，确保为Analytics Connector创建的&#x200B;**[!UICONTROL Product Profile]**&#x200B;中包含这些变量。 有关更多信息，请参阅[创建Adobe Analytics产品配置文件](../../platform/using/adobe-analytics-provisioning.md#analytics-product-profile)。
+
+然后，您需要在Adobe Campaign Classic中配置&#x200B;**[!UICONTROL External accounts]**。
 
 ### 在 Adobe Campaign Classic 中配置外部帐户 {#external-account-classic}
 
@@ -150,7 +161,7 @@ Adobe Analytics Connector 允许 Adobe Campaign 和 Adobe Analytics 通过 **[!U
 
 1. 单击 **[!UICONTROL Integration]** 下拉列表旁边的 **[!UICONTROL Configure]**。
 
-1. 从 **[!UICONTROL Configure Analytics integration]** 窗口中，将外部帐户映射到之前创建的报表包，并提供以下信息：
+1. 从&#x200B;**[!UICONTROL Configure Analytics integration]**&#x200B;窗口中，将外部帐户映射到提供以下信息的报表包：
 
    * **[!UICONTROL E-Mail]**
    * **[!UICONTROL IMS Org]**

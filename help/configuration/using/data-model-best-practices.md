@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '4013'
+source-wordcount: '4007'
 ht-degree: 1%
 
 ---
@@ -251,7 +251,7 @@ Adobe Campaign既不是data warehouse，也不是报告工具。 因此，为确
 * 如果要延长日志保留时间，应根据数据库大小和发送的消息量仔细做出此决定。 请注意，Adobe Campaign序列是一个32位整数。
 * 建议在这些表中一次不要有超过10亿条记录（在21.4亿个可用ID中约占50%），以限制使用所有可用ID的风险。 这要求某些客户将保留期限缩短到180天以下。
 
-在[Campaign隐私和安全准则](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy-overview.html#consent)中了解有关数据保留的更多信息。
+在[Campaign隐私和安全准则](../../platform/using/privacy-and-recommendations.md)中了解有关数据保留的更多信息。
 
 在此部分](../../production/using/database-cleanup-workflow.md)中了解有关Campaign数据库清理工作流[的更多信息。
 

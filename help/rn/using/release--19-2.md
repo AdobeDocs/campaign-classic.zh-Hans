@@ -3,9 +3,9 @@ product: campaign
 title: 19.2 版
 description: Campaign 19.2发行说明
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1537'
 ht-degree: 21%
 
 ---
@@ -90,7 +90,7 @@ _2019 年 12 月 2 日_
  <tbody> 
   <tr> 
    <td> <p>您现在可以使用预定义视图监控实例上所有工作流的执行状态。</p>
-   <p>有关详细信息，请参阅<a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">有详细说明的文档</a>。</p></td> 
+   <p>有关更多信息，请参阅<a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">详细文档</a>。</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -120,7 +120,7 @@ _2019 年 12 月 2 日_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>现在，通过扩展通用SMPP连接器支持安全短信。 这允许与提供商的加密连接。</p> <p><strong></strong> 警告此功能要求在所有服务器上安装最新的证书。无效、已吊销或过期的证书将生成影响整体短信发送功能的错误。</p><p>有关详细信息，请参阅<a href="https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html">有详细说明的文档</a>。 </p> </td> 
+<td> <p>现在，通过扩展通用SMPP连接器支持安全短信。 这允许与提供商的加密连接。</p> <p><strong></strong> 警告此功能要求在所有服务器上安装最新的证书。无效、已吊销或过期的证书将生成影响整体短信发送功能的错误。</p><p>有关更多信息，请参阅<a href="https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html">详细文档</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -150,7 +150,7 @@ _2019 年 12 月 2 日_
 
 _已弃用的系统_
 
-以下系统现在已[弃用](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html)用于Campaign Classic实施：
+以下系统现在已[弃用](deprecated-features.md)用于Campaign Classic实施：
 * Apache 2.2
 * Centos 6
 

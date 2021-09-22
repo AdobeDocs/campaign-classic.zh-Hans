@@ -5,10 +5,10 @@ description: 了解有关默认投放工作流的更多信息
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 794be3d196ea8292699bbf29c8a7038177763e31
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 15%
+source-wordcount: '323'
+ht-degree: 5%
 
 ---
 
@@ -35,11 +35,6 @@ ht-degree: 15%
    <td> <span class="uicontrol">付费</span> <br /> </td> 
    <td> <span class="uicontrol">billing</span> <br /> </td> 
    <td> 此工作流会通过电子邮件将系统活动报告发送给“billing”操作员。 默认情况下，每月25日触发该事件。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">计费（活动用户档案）</span> <br /> </td> 
-   <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
-   <td> <p>此工作流计算活动用户档案的数量。 默认情况下，此工作流于每日凌晨1点触发。</p> <p>“<strong>用户档案</strong>”是指代表最终客户或潜在客户的信息记录（例如 nmsRecipient 表或外部表中的记录，包含 cookie ID、客户 ID、移动标识符或与特定渠道相关的其他信息）。计费仅涉及“活动”的用户档案。 如果在过去12个月内通过任何渠道定向或传达了用户档案，则该用户档案会被视为“活动”。</p> <p>Facebook 和 Twitter 渠道不包含在內。</p> <p>您可以从<span class="uicontrol">Administration</span> &gt; <span class="uicontrol">Campaign Management</span> &gt; <span class="uicontrol">Customer metrics</span>菜单查看<span class="uicontrol">活动用户档案数</span>。</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">别名清理</span> <br /> </td> 

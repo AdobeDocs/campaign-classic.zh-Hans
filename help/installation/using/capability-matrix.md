@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 19%
+source-wordcount: '298'
+ht-degree: 20%
 
 ---
 
@@ -35,7 +35,7 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 | 与IMS集成(Adobe ID) | 按需 | 按需 | 按需 | [了解详情](../../integrations/using/about-adobe-id.md) |
 | 加密/解密用于文件传输的数据 | 按需 | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
 | 压缩/解压缩文件 | 按需 | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
-| 域名委派 | 按需 | 按需 | 不可用 | [了解详情](https://helpx.adobe.com/cn/campaign/kb/domain-name-delegation.html) |
+| 域名委派 | 按需 | 按需 | 不可用 | [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans) |
 | 安装SpamAssassin | 按需 | 可用 | 可用 | [了解详情](../../delivery/using/spamassassin.md) |
 | 访问投放能力报告 | 可用 | 按需 | 可用 | [了解详情](../../delivery/using/monitoring-deliverability.md) |
 | 配置LDAP身份验证 | 不可用 | 可用 | 可用 | [了解详情](../../installation/using/connecting-through-ldap.md) |

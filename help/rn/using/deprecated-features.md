@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 97%
+source-wordcount: '1657'
+ht-degree: 95%
 
 ---
 
@@ -114,7 +114,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </tr> 
   <tr> 
    <td>Web 应用程序 - 微型站点</td>
-   <td>从 Campaign 18.10 版本开始，不再提供微型站点。您可以通过限制仅访问 Adobe Campaign 配置文件上的专用域来提高安全性，并通过使用 DNS 别名在 Campaign 中使用个性化 URL。<a href="https://helpx.adobe.com/cn/campaign/kb/domain-name-delegation.html">了解详情</a></td>
+   <td>从 Campaign 18.10 版本开始，不再提供微型站点。您可以通过限制仅访问 Adobe Campaign 配置文件上的专用域来提高安全性，并通过使用 DNS 别名在 Campaign 中使用个性化 URL。</td>
   </tr> 
   <tr> 
    <td>推送通知 - iOS 二进制连接器</td>
@@ -183,7 +183,7 @@ Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因
 
 从 19.1 Spring Release 开始，Adobe Campaign 不再与以下工具兼容。
 
-* Java JDK 7。[了解详情](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
+* Java JDK 7。[了解详情](https://www.oracle.com/technetwork/java/javase/eol-135779.html)
 * Libre Office 3.5 / 4.3 / 5.x，嵌入到其他工具中时除外。[了解详情](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### 数据库引擎 {#dbe-eol}
@@ -201,14 +201,14 @@ Adobe 不支持以下数据库引擎，因为其编辑者已弃用它们。运�
 从 19.1 Spring 版本开始，Adobe Campaign 不再与以下 FDA 服务器兼容：
 
 * PostgreSQL 9.3。[了解详情](https://www.postgresql.org/support/versioning)
-* MySQL 5.5。[了解详情](http://www.fromdual.com/support-for-mysql-from-oracle)
-* DB2 9.5。[了解详情](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* MySQL 5.5。[了解详情](https://www.fromdual.com/support-for-mysql-from-oracle)
+* DB2 9.5。[了解详情](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Teradata 14 – 14.1。[了解详情](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
 
 Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。
 
-* DB2 UDB 9.5、9.7。通过联合数据访问 (FDA) 支持更新版本的 DB2。[了解详情](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Oracle 9i、10G R2。通过联合数据访问 (FDA) 支持更新版本的 Oracle。[了解详情](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
+* DB2 UDB 9.5、9.7。通过联合数据访问 (FDA) 支持更新版本的 DB2。[了解详情](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* Oracle 9i、10G R2。通过联合数据访问 (FDA) 支持更新版本的 Oracle。[了解详情](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
 * PostgreSQL 8.3、8.4、9.0、9.1、9.2。通过联合数据访问 (FDA) 支持更新版本的 PostgreSQL。[了解详情](https://www.postgresql.org/support/versioning)
 * MSSQL 2000、2005、2008 R2。通过联合数据访问 (FDA) 支持更新版本的 SQL Server。[了解详情](https://support.microsoft.com/en-us/lifecycle/search/1044)
 * MySQL 5.1。通过联合数据访问 (FDA) 支持更新版本的 MySQL。[了解详情](https://en.wikipedia.org/wiki/InfiniDB)

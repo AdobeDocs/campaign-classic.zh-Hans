@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '866'
 ht-degree: 97%
 
 ---
@@ -56,7 +56,7 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块及其配置
 
 Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数据保护条例》(GDPR) 和《加州消费者隐私法案》(CCPA) 的隐私政策。
 
-请参阅[此文档](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy-overview.html)，了解 Adobe Campaign 提供的工具、功能以及最佳实践，帮助您在使用我们的服务时遵循 GDPR 规定。[本文](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)介绍了 Campaign Classic 的实施步骤。
+请参阅[此文档](privacy-and-recommendations.md)，了解 Adobe Campaign 提供的工具、功能以及最佳实践，帮助您在使用我们的服务时遵循 GDPR 规定。[本文](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)介绍了 Campaign Classic 的实施步骤。
 
 ## 我应该了解哪些 Campaign 用户界面概念? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
@@ -126,7 +126,7 @@ Adobe Campaign 包括在不同的应用程序服务器模块之间编排所有�
 
 Adobe 会持续评估产品功能，不断使用更强大的版本替换旧功能，也可能决定重新推出部分组件，更好地满足未来的期望或扩展要求。由于 Campaign 可与第三方工具配合使用，所以会定期更新产品兼容性，以仅实施所支持的版本。
 
-[单击此处了解更多信息](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html)。
+[单击此处了解更多信息](../../rn/using/deprecated-features.md)。
 
 ## 是否发布了新的文档更新和帮助材料？ {#are-there-new-documentation-updates-and-help-materials-released-}
 

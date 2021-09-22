@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 2%
@@ -96,7 +96,9 @@ ht-degree: 2%
 
    单击&#x200B;**[!UICONTROL Define new additional fields]**&#x200B;以选择要在投放中定向的维度。
 
-   默认情况下，排除管理会存储在与消息相同的表中。 如果要为链接到目标映射的跟踪配置存储，请选中&#x200B;**生成用于跟踪的存储架构**&#x200B;框。
+   默认情况下，排除管理会存储在与消息相同的表中。
+
+   如果要为链接到目标映射的跟踪配置存储，请选中&#x200B;**生成用于跟踪的存储架构**&#x200B;框。
 
    ![](assets/mapping_diffusion_wizard_3.png)
 

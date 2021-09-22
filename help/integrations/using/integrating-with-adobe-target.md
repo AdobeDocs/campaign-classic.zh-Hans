@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
-source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Adobe Campaign与Adobe Experience Cloud中的Adobe Target（经典与标准）�
 
 其工作原理为：当收件人打开通过Adobe Campaign发送的电子邮件时，通过调用Adobe Target可显示内容的动态版本。 此动态版本根据创建电子邮件时预先指定的规则计算。
 
-进一步了解Adobe Campaign和Adobe Target与[这四个提示和技巧的集成](https://www.adobe.com/content/dam/www/us/en/marketing/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf)。
+进一步了解Adobe Campaign和Adobe Target与[这四个提示和技巧的集成](https://business.adobe.com/content/dam/dx/us/en/products/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf)。
 >[!NOTE]
 >
 >集成仅支持静态图像。 其余内容无法进行个性化。

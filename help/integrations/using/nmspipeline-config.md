@@ -4,9 +4,9 @@ title: 配置集成
 description: 配置集成
 audience: integrations
 content-type: reference
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c6d5e597a02a1210507b0c6d84ab7d170e877eb1
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 2%
 ## 如何配置管道选项 {#configure-pipeline-option}
 
 在“触发器”数组下添加或编辑Experience Cloud触发器；请勿编辑其余内容。
-确保JSON在此[website](http://jsonlint.com/)的帮助下有效。
+确保JSON在此[website](https://jsonlint.com/)的帮助下有效。
 
 * “name”是触发器ID。 通配符“*”捕获所有触发器。
 * “消费者”是唯一标识nlserver实例的任何唯一字符串。 它通常可以是实例名称本身。 对于多个环境（开发/暂存/生产），请确保每个环境具有唯一性，以便每个实例都获得消息的副本。

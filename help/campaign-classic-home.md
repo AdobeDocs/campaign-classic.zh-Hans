@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 1d662f2f6d4b664e1cc2977cd3207d1b71983b04
+source-git-commit: acb2c4e90c4ce349ea9c1ad53d703c13195872e1
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 50%
@@ -28,7 +28,7 @@ ht-degree: 50%
 
 * **[更新Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> 集成旧版oAuth身份验证服务已终止：您需要迁移到Adobe I/O。
 
-[更多更新](/help/rn/using/documentation-updates.md)
+[更多更新](rn/using/documentation-updates.md)
 
 ## 热门页面
 
@@ -80,7 +80,7 @@ ht-degree: 50%
 
 | 有用页面 | 面向开发人员的资源 |
 |---|---|
-| [发行说明](/help/rn/using/latest-release.md) | [错误消息列表](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans) |
+| [发行说明](rn/using/latest-release.md) | [错误消息列表](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans) |
 | [操作说明视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans) | [Campaign 数据模型](configuration/using/about-data-model.md) |
 | [兼容性矩阵](rn/using/compatibility-matrix.md) | [Campaign JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [[!DNL Gold Standard] 升级](rn/using/gs-overview.md) | [跟踪指南](https://helpx.adobe.com/cn/campaign/kb/acc-tracking.html) |

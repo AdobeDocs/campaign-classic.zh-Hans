@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1092'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 3%
 
 保存后，您会获得&#x200B;**应用程序ID**，该ID是Campaign的客户端标识符。
 
-请参阅[此页面](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory)以了解详情。
+请参阅[此页面](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory)以了解详情。
 
 ### 生成Microsoft Dynamics证书密钥标识符和密钥ID {#config-certificate-key-id}
 
@@ -115,7 +115,7 @@ ht-degree: 3%
 
 1. 单击&#x200B;**授予管理员同意**。
 
-有关此内容的更多信息，请参阅[Azure文档](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal)。
+有关此内容的更多信息，请参阅[Azure文档](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal)。
 
 ### 创建应用程序用户 {#create-app-user-microsoft}
 
@@ -155,7 +155,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 在Microsoft](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/dn281891(v=crm.8)?redirectedfrom=MSDN#microsoft-dynamics-crm-2011-endpoint)中停用[RDS后，内部部署和Office 365类型的CRM部署将不再与Campaign兼容。 Adobe Campaign现在仅支持对CRM版本&#x200B;**Dynamic CRM 365**&#x200B;进行Web API部署。 [了解详情](../../rn/using/deprecated-features.md#crm-connectors)。
+> 在Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)中停用[RDS后，内部部署和Office 365类型的CRM部署将不再与Campaign兼容。 Adobe Campaign现在仅支持对CRM版本&#x200B;**Dynamic CRM 365**&#x200B;进行Web API部署。 [了解详情](../../rn/using/deprecated-features.md#crm-connectors)。
 
 要连接Microsoft Dynamics 365和Campaign，您需要在Campaign中创建并配置专用的&#x200B;**[!UICONTROL External Account]**。
 

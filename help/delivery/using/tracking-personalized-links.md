@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 7%
@@ -26,7 +26,7 @@ ht-degree: 7%
 
 您可以添加特定的预处理说明来编写URL脚本并跟踪它。 [了解详情](pre-processing-instructions.md)
 
-为了进行跟踪检测，Adobe Campaign嵌入了[Tidy](http://www.html-tidy.org/)以解析HTML源并检测模式。 其中列出了内容的所有URL，以便能够单独跟踪这些URL。 Adobe Campaign再次使用Tidy将URL(`http://myurl.com`)替换为指向Adobe Campaign重定向服务器的URL。
+为了进行跟踪检测，Adobe Campaign嵌入了[Tidy](https://www.html-tidy.org/)以解析HTML源并检测模式。 其中列出了内容的所有URL，以便能够单独跟踪这些URL。 Adobe Campaign再次使用Tidy将URL(`http://myurl.com`)替换为指向Adobe Campaign重定向服务器的URL。
 
 例如，在初始内容中：`http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>`对于一个特定收件人替换为：`http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
 

@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 830c4146d72cd5a744d026a499cfe8613a255da7
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '484'
 ht-degree: 2%
 
 ---
@@ -83,10 +83,10 @@ ht-degree: 2%
 
 要配置与People Core服务或Audience Manager的集成，我们还需要配置促销活动跟踪服务器。
 
-您需要确保已在域(CNAME)上注册促销活动跟踪服务器。 您可以在[本文](https://helpx.adobe.com/cn/campaign/kb/domain-name-delegation.html)中找到有关域名委派的更多信息。
+您需要确保已在域(CNAME)上注册促销活动跟踪服务器。 您可以在[本文](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans)中找到有关域名委派的更多信息。
 
 ## 步骤4:配置访客ID服务 {#step-4--configure-the-visitor-id-service}
 
-如果您的访客ID服务从未在您的Web属性或网站上配置，请参阅以下[文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html)以了解如何配置服务或以下[视频](https://helpx.adobe.com/cn/marketing-cloud/how-to/email-marketing.html#step-two) 。
+如果您的访客ID服务从未在您的Web属性或网站上配置，请参阅以下[文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html)以了解如何配置服务或以下[视频](https://helpx.adobe.com/cn/marketing-cloud/how-to/email-marketing.html#step-two)。
 
 您的配置和配置已完成，现在，该集成可用于导入和导出受众或区段。

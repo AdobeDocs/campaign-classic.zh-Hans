@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 60%
+source-wordcount: '836'
+ht-degree: 61%
 
 ---
 
@@ -93,13 +93,11 @@ ht-degree: 60%
 
 计费账单的开立仅会考虑&#x200B;**使用中**&#x200B;的用户档案。如果用户档案在过去 12 个月通过任何渠道被定位或进行了传输，则该用户档案被视为使用中。
 
-在投放准备期间（类型规则，隔离）被排除在外的用户档案不包含在內。被多个投放项目定位的用户档案只被计算一次。
+已被多个投放定向的用户档案将仅计数一次。
 
 >[!NOTE]
 >
 >Facebook 和 Twitter 渠道不包含在內。
-
-从Campaign资源管理器中，浏览&#x200B;**[!UICONTROL Administration > Campaign Management > Customer metrics]**&#x200B;以查看活动用户档案的数量。 实际计数由&#x200B;**[!UICONTROL Number of active billing profiles]**([!UICONTROL billingActiveContactCount])[技术工作流](../../workflow/using/about-technical-workflows.md)执行。 此工作流每天运行，并将新数据添加到&#x200B;**[!UICONTROL Customer metrics]**&#x200B;文件夹中当前时段的现有报表。
 
 活动配置文件计数仅可用于&#x200B;**营销实例**。 它不适用于执行实例，即MID（中间采购）和RT（消息中心/实时消息）实例。
 

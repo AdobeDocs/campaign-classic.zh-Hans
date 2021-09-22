@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '512'
 ht-degree: 97%
 
 ---
@@ -73,4 +73,4 @@ Adobe Campaign 提供了一组仪表板和工具来监视电子邮件投放。
 
 子域是域的一个分支，可用于隔离您的品牌或各种类型的流量（交易消息、营销信息等）。Adobe 使用域名系统 (DNS) 的帐户进行电子邮件投放，让客户端使用带有其域名的 DNS 别名维护品牌形象，Adobe 将自主实施所有技术最佳实践，在发送电子邮件期间优化投放效果。
 
-[单击此处了解更多信息](https://helpx.adobe.com/cn/campaign/kb/domain-name-delegation.html)。
+[单击此处了解更多信息](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans)。

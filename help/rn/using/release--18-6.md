@@ -9,9 +9,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '794'
 ht-degree: 7%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 7%
  <tbody> 
   <tr> 
    <td> 查询分段<br /> </td> 
-   <td> <p>当多个Campaign用户连接到同一FDATeradata外部帐户时，您现在可以传递特定于每个用户的查询频带（键/值对）。 每次Campaign用户对Teradata数据库执行查询时，Adobe Campaign现在都能够发送与用户关联的元数据。 这些Teradata（包含在键和值列表中）随后可由数据管理员用于审核目的或管理访问权限，例如。</p><p>有关详细信息，请参阅<a href="../../installation/using/external-accounts.md">有详细说明的文档</a>。</p> </td>
+   <td> <p>当多个Campaign用户连接到同一FDATeradata外部帐户时，您现在可以传递特定于每个用户的查询频带（键/值对）。 每次Campaign用户对Teradata数据库执行查询时，Adobe Campaign现在都能够发送与用户关联的元数据。 这些Teradata（包含在键和值列表中）随后可由数据管理员用于审核目的或管理访问权限，例如。</p><p>有关更多信息，请参阅<a href="../../installation/using/external-accounts.md">详细文档</a>。</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -95,7 +95,7 @@ ht-degree: 7%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 安全改进<br /> </td> 
+   <td> 安全性改进<br /> </td> 
    <td> 向Campaign Classic添加了一系列安全改进功能。 下面列出了改进和修复。<br /> </td> 
   </tr> 
   <tr> 
@@ -109,7 +109,7 @@ ht-degree: 7%
 
 decryptString
 
-**decryptString**&#x200B;函数已弃用。 请参阅[已弃用和已删除的功能](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html)一文。
+**decryptString**&#x200B;函数已弃用。 请参阅[已弃用和已删除的功能](deprecated-features.md)一文。
 
 对于新客户，此函数现在仅用于解密登陆页面中收件人的加密ID。 要解密存储在外部帐户中的密码，请使用新的&#x200B;**decryptPassword**&#x200B;函数。
 

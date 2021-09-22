@@ -8,9 +8,9 @@ level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1658'
 ht-degree: 100%
 
 ---
@@ -32,8 +32,6 @@ ht-degree: 100%
 Data Connector（此前称为 Adobe Genesis）允许 Adobe Campaign 和 Adobe Analytics 通过&#x200B;**网站分析连接器**&#x200B;包进行交互。它会以区段形式将数据转发到 Adobe Campaign，它们涉及到投放电子邮件营销活动后的用户行为。反过来，它会将 Adobe Campaign 提供的电子邮件营销活动的指标和属性发送到 Adobe Analytics - Data Connector。
 
 使用 Data Connector，Adobe Campaign 提供了一种衡量互联网受众（网站分析）的方法。借助这些集成，Adobe Campaign 可以在投放营销活动后回收一个或多个网站的访客行为数据，并（在分析之后）开展再营销活动，以期将访客转化为购买者。反过来，网站分析工具让 Adobe Campaign 能够将指标和营销活动属性转发到其平台。
-
-有关 Adobe Analytics 与 Adobe Campaign 集成实施的更多信息，请参阅此[文档](https://helpx.adobe.com/cn/marketing-cloud/how-to/analytics-ac.html)。
 
 每个工具的操作字段如下所示：
 

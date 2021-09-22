@@ -2,14 +2,15 @@
 product: campaign
 title: 迁移到Adobe Analytics Connector
 description: Campaign - Analytics连接器常见问题解答
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
+source-git-commit: 4b6fc31aefd12b3667501503fc5e10d5f1f0738f
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '850'
 ht-degree: 5%
 
 ---
 
-# 如何迁移到Adobe Analytics Connector {#acc-aa-faq}
+# 如何将现有Genesis集成迁移到Adobe Analytics Connector {#acc-aa-faq}
 
 ![](../../assets/v7-only.svg)
 
@@ -49,12 +50,10 @@ Campaign Classicv7与Adobe Analytics之间的新集成现已可用。 下面列�
 
 您需要在2022年3月1日之前升级到Campaign 21.1.3（或更高版本）****。
 
-作为托管客户，Adobe将与您合作，将您的实例升级到较新版本。
+作为托管客户，Adobe将与您合作，将您的实例升级到较新版本。 然后，您将能够使用[Adobe Analytics连接器](../../platform/using/adobe-analytics-connector.md)。
 
 作为内部部署/混合客户，您需要升级到某个较新版本，以便从新集成中受益。
-
-升级所有实例后，您将能够[实施到Adobe Analytics Connector的新集成](../../platform/using/adobe-analytics-connector.md)，并确保无缝过渡。
-
+升级所有实例后，您将能够[实施到Adobe Analytics Connector的新集成](../../platform/using/adobe-analytics-provisioning.md)，并确保无缝过渡。
 
 ## 常见问题解答{#faq-aa}
 

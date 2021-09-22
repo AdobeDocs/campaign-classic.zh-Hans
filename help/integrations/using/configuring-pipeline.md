@@ -5,7 +5,7 @@ description: 了解如何配置管道
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -113,7 +113,7 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 要配置管道选项，您应遵循以下建议：
 
 * 在&#x200B;**[!UICONTROL Triggers]**&#x200B;下添加或编辑触发器，则不应编辑其余触发器。
-* 确保JSON有效。 您可以使用JSON验证器，例如，请参阅此[website](http://jsonlint.com/)。
+* 确保JSON有效。 您可以使用JSON验证器，例如，请参阅此[website](https://jsonlint.com/)。
 * “name”对应于触发器ID。 通配符“*”将捕获所有触发器。
 * “消费者”对应于调用实例或应用程序的名称。
 * 管道化还支持“别名”主题。

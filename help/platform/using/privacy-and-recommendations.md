@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2033'
 ht-degree: 100%
 
 ---
@@ -124,7 +124,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解决方案的一部分。Campaign �
 
 ## 隐私管理 {#privacy-management}
 
-隐私管理是指可帮助您遵守隐私法规（GDPR 和 CCPA 等）的所有流程和工具。在[此页面](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy-overview.html)上获取隐私管理概念的概述。
+隐私管理是指可帮助您遵守隐私法规（GDPR 和 CCPA 等）的所有流程和工具。在[此页面](privacy-and-recommendations.md)上获取隐私管理概念的概述。
 
 Adobe Campaign 为您提供专门用于隐私管理的各种功能集：
 * 同意管理、数据保留和用户角色。请参阅[此章节](#consent)。

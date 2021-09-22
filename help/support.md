@@ -4,9 +4,9 @@ title: '帮助和支持选项，用于Campaign Classic '
 description: 需要Campaign Classic支持？ 您找到了正确的地方！
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 5b1c59c450aaedbd8dbf6df8685817e4a7e02056
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '801'
 ht-degree: 71%
 
 ---
@@ -136,7 +136,7 @@ Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用
 
 ### 询问专家！
 
-加入 Campaign Classic 社区：在现有问题中搜索答案，或向社区提问。[加入对话](https://experienceleaguecommunities.adobe.cadobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+加入 Campaign Classic 社区：在现有问题中搜索答案，或向社区提问。[加入对话](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
 
 ### 访问 Campaign 下载中心
 

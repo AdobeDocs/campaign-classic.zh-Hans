@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 877ac37102a09a40ea59ef073afa00b9d9bd7dde
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '4542'
+source-wordcount: '4513'
 ht-degree: 98%
 
 ---
@@ -268,7 +268,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 “Campaign Classic 中的隐私管理”页面已更新，其中包含有关“规定”字段的信息，现在在使用允许设置自动隐私请求流程的 API 时，该字段可用。[阅读更多](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-“隐私管理概述”页面已更新，包含有关泰国的个人数据保护法 (PDPA) 和巴西的 Lei Geral de Proteção de Dados(LGPD) 的信息。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+“隐私管理概述”页面已更新，包含有关泰国的个人数据保护法 (PDPA) 和巴西的 Lei Geral de Proteção de Dados(LGPD) 的信息。[阅读更多](../../platform/using/privacy-and-recommendations.md)
 
 已添加有关子工作流日志和行为的信息，以防出错。[阅读更多](../../workflow/using/sub-workflow.md)
 
@@ -520,9 +520,9 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 已创建新的版本升级常见问题解答。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/build-upgrade-faq.html)
 
-[兼容性矩阵](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)已更新。更新了支持的列表库系统，以及 Android/iOS 版本和相关 SDK。已存档 [19.0 兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix-19-0.html)。
+[兼容性矩阵](compatibility-matrix.md)已更新。更新了支持的列表库系统，以及 Android/iOS 版本和相关 SDK。已存档 19.0 兼容性矩阵。
 
-“Campaign Classic 中已弃用和已删除的功能”页面已更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/deprecated-and-removed-features.html)
+“Campaign Classic 中已弃用和已删除的功能”页面已更新。[阅读更多](deprecated-features.md)
 
 《安装指南》中添加了服务器配置文件的说明。[阅读更多](../../installation/using/the-server-configuration-file.md)
 
@@ -579,7 +579,7 @@ Apache 配置步骤已更新。[阅读更多](../../installation/using/integrati
 
 技术工作流部分已更新。[阅读更多](../../workflow/using/about-technical-workflows.md)
 
-Campaign 域名设置程序已得到改进和更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/domain-name-delegation.html)
+Campaign 域名设置程序已得到改进和更新。
 
 Android 应用程序从 Google Cloud Messaging (GCM) 到 Firebase Cloud Messaging (FCM) 的迁移过程已更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/migrate-to-fcm.html)
 

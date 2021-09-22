@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
 workflow-type: tm+mt
-source-wordcount: '2531'
+source-wordcount: '2535'
 ht-degree: 99%
 
 ---
@@ -118,6 +118,7 @@ ht-degree: 99%
          + [与 Salesforce.com 连接](platform/using/crm-sfdc.md)
          + [与 CRM 同步数据](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
+         + [Adobe Analytics Connector配置](platform/using/adobe-analytics-provisioning.md)
          + [Adobe Analytics Connector集成](platform/using/adobe-analytics-connector.md)
          + [如何迁移到Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector-legacy.md)
