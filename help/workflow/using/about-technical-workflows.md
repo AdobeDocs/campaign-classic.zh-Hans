@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56470602e3acf777d5b00c293060c644c1fbbc37
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1712'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 3%
 此部分中详细描述的工作流将随不同的Adobe Campaign内置包一起安装。 这些包及相关的技术工作流取决于您的许可协议。 [此部分](../../installation/using/installing-campaign-standard-packages.md)中详细介绍了内置软件包。
 
 默认情况下，以下节点的子文件夹中提供了技术工作流：**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**。
+
+请注意，只有具有管理权限的运算符才能启动和修改技术工作流。 有关权限的更多信息，请参阅此[部分](../../platform/using/access-management-groups.md#default-groups)。
 
 >[!NOTE]
 >
