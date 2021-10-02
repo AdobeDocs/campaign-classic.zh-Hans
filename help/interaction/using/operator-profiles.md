@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 5%
 
 ---
@@ -52,11 +52,11 @@ ht-degree: 5%
 
    ![](assets/offer_operators_create_002.png)
 
-分配给投放管理器的权限可用于/使他们能够执行以下任务：
+分配给投放管理器的权限，使他们能够执行以下任务：
 
 * 显示&#x200B;**[!UICONTROL Live]**&#x200B;环境。
 * 显示和修改选件类别。
-* 如果指定为审阅者之一，则批准选件。
+* 如果将此投放管理器指定为其审阅者之一，则批准选件。
 
    >[!NOTE]
    >

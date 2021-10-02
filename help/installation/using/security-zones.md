@@ -5,14 +5,12 @@ description: 了解如何配置安全区
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: dab18d24f5471034a2169dd674e6f7000de30cac
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 1%
 
 ---
-
 
 # 定义安全区（内部部署）{#defining-security-zones}
 

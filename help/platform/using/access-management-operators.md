@@ -6,9 +6,9 @@ feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1149'
 ht-degree: 2%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 2%
 
 **[!UICONTROL Edit the access parameters...]**&#x200B;链接允许您访问以下选项：
 
-* **[!UICONTROL Disable account]**&#x200B;选项允许您禁用操作员的帐户：他将不再访问Adobe Campaign。
+* **[!UICONTROL Disable account]**&#x200B;选项允许您禁用操作员的帐户：此用户将不再访问Adobe Campaign。
 
    >[!NOTE]
    >
@@ -125,7 +125,7 @@ ht-degree: 2%
 
    >[!IMPORTANT]
    >
-   >这是非常严格的限制，必须谨慎使用。 使用此类权限登录的操作员只能查看指定文件夹的内容，并且无法通过资源管理器访问树的任何其他节点。 但是，根据他有权访问的功能(例如：工作流)时，他可以显示通常存储在他看不到的节点中的数据。
+   >这是非常严格的限制，必须谨慎使用。 使用此类权限登录的操作员只能查看指定文件夹的内容，并且无法通过资源管理器访问树的任何其他节点。 但是，根据此操作员有权访问的功能(例如：工作流)，则用户可以显示通常存储在无法访问的节点中的数据。
 
 ### 检查设置 {#check-settings}
 

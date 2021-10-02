@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -60,7 +60,7 @@ ht-degree: 2%
 
    利用此选项，可激活特定于匿名交互的函数，尤其是在配置环境选件空间时。 您还可以配置选项，以便从“已识别”环境切换到“匿名”环境。
 
-   例如，您可以将收件人环境选件空间（已识别的联系人）与与访客环境（未识别的联系人）匹配的选件空间链接起来。 这样，联系人就可以获得不同的选件，具体取决于他们是否被识别。 有关更多信息，请参阅[创建选件空间](../../interaction/using/creating-offer-spaces.md)。
+   例如，您可以将收件人环境选件空间（已识别的联系人）与与访客环境（未识别的联系人）匹配的选件空间链接起来。 这样，联系人就可以获得不同的选件，具体取决于此联系人是否被识别。 有关更多信息，请参阅[创建选件空间](../../interaction/using/creating-offer-spaces.md)。
 
    ![](assets/offer_env_anonymous_003.png)
 

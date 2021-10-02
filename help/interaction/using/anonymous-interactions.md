@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 匿名访客在连接时可能会被提交到Cookie识别流程。 这种隐式识别基于访客的浏览器历史记录。
 
-在此步骤中，将比较由Cookie恢复的数据与数据库中的数据。 在某些情况下，访客会被识别（然后被隐式识别），而在其他情况下，访客不会被识别（因此保持匿名）。
+在此步骤中，将比较由Cookie恢复的数据与数据库中的数据。 在某些情况下，会识别访客（随后会隐式识别访客），而在其他情况下，则不会识别访客（因此会保持匿名状态）。
 
 要运行此分析，请在选件空间中选中&#x200B;**[!UICONTROL Implicitly identify the individual based on their browser history]**&#x200B;选项。
 

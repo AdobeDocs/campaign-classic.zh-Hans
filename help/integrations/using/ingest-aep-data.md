@@ -5,9 +5,9 @@ description: 了解如何将Adobe Experience Platform受众摄取到Campaign Cla
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-要将Adobe Experience Platform摄取到Campaign中并在工作流中使用它们，您首先需要将Adobe Campaign作为Adobe Experience Platform **目标**&#x200B;连接，然后使用要导出的区段对其进行配置。
+要将Adobe Experience Platform受众摄取到Campaign中并在工作流中使用，您首先需要将Adobe Campaign作为Adobe Experience Platform **目标**&#x200B;连接，然后使用要导出的区段对其进行配置。
 
 配置目标后，数据将导出到您的存储位置，您需要在Campaign Classic中构建专用工作流以摄取数据。
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 在此用例中，网站&#x200B;**My online library**&#x200B;希望根据客户喜爱的文学流派向客户发放折扣。
 
-投放管理器已将与收藏流派关联的个性化字段集成到其电子邮件中。 他想用一些种子地址。 这些种子地址的表中包含个性化字段，但那里没有保存任何值。
+投放管理器已将与收藏流派关联的个性化字段集成到其电子邮件中。 目的是使用一些种子地址：这些种子地址的表中包含个性化字段，但此处未保存任何值。
 
 要使用随机字段替换，您必须具有：
 

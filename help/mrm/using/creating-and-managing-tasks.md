@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '3730'
+source-wordcount: '3729'
 ht-degree: 0%
 
 ---
@@ -247,7 +247,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整生
 
 ### 操作员可用性 {#operator-availability}
 
-在任务仪表板中，操作员名称旁边的图标表示他们在任务涵盖的时段内已经在处理其他任务或事件。 (操作员负责或涉及的任务：它出现在&#x200B;**[!UICONTROL Assigned to]**&#x200B;字段或任务&#x200B;**[!UICONTROL Resources]**&#x200B;框中)。
+在任务仪表板中，操作员名称旁边的图标表示他们在任务涵盖的时段内已经在处理其他任务或事件。 **[!UICONTROL Assigned to]**&#x200B;字段或任务&#x200B;**[!UICONTROL Resources]**&#x200B;框中将显示操作员负责或涉及的任务。
 
 ![](assets/mrm_task_alert_operator_busy.png)
 

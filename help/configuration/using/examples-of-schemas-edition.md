@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '663'
 ht-degree: 2%
 
 ---
@@ -327,7 +327,7 @@ xtkschema="xtk:srcSchema">
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
 ```
 
-用户界面不会显示链接，而会显示字段。 当用户选取该字段时，他可以从参考表中选择一个值或使用自动完成功能。
+用户界面不会显示链接，而会显示字段。 当用户选择该字段时，他们可以从参考表中选择一个值或使用自动完成功能。
 
 ![](assets/schema-edition-ex.png)
 
