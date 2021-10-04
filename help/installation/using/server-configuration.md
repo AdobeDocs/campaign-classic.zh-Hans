@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '621'
 ht-degree: 4%
 
 ---
@@ -48,9 +48,9 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）限制。
 
 存在三种连接保护模式：
 
-* **阻止** :所有不属于该允许列表的URL都将被阻止，并显示一条错误消息。这是升级后的默认模式。
+* **阻止** :所有不属于该的URL都允许列表将被阻止，并显示一则错误消息。这是升级后的默认模式。
 * **许可** :允许所有不属于该允许列表的URL。
-* **警告** :允许允许列表上未包含的所有URL，但JS解释器会发出警告，以便管理员可以收集这些URL。此模式会添加JST-310027警告消息。
+* **警告** :允许不在允许列表上的所有URL，但JS解释器会发出警告，以便管理员可以收集这些URL。此模式会添加JST-310027警告消息。
 
 ```
 <urlPermission action="warn" debugTrace="true">

@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '376'
 ht-degree: 8%
 
 ---
@@ -47,6 +47,6 @@ Adobe Campaign通过[命名权限](../../platform/using/access-management.md#nam
 
 * **程序执行** (createProcess):允许执行外部程序（在服务器上）
 
-* **SQL**:允许在数据库上运行SQL脚本（以便绕过安全模型）。注意：如果需要执行复杂的计算（例如过滤），可以请求数据库管理员创建SQL函数并将其添加到允许列表。 请参阅[此页面](../../installation/using/scripting-coding-guidelines.md)以了解详情。
+* **SQL**:允许在数据库上运行SQL脚本（以便绕过安全模型）。注意：如果需要执行复杂的计算（例如过滤），可以请求数据库管理员创建SQL函数并将其添加到该允许列表。 请参阅[此页面](../../installation/using/scripting-coding-guidelines.md)以了解详情。
 
 * **授予极少（且受信任）的运算符**

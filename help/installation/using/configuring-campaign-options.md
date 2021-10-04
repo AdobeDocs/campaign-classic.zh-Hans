@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '3991'
 ht-degree: 0%
@@ -411,7 +411,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">RestrictEditingOOTBJavascript</span> <br /> </td> 
-   <td> （从21.1.3版本开始）如果选择1（默认值），此选项将禁用内置javascript代码的版本。<br /> </td> 
+   <td> （从21.1.3版本开始）如果选择1（默认值），此选项将禁用内置JavaScript代码的版本。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPasswords</span> <br /> </td> 
@@ -423,7 +423,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Allow_PrivilegeEscalation</span> <br /> </td> 
-   <td> 如果选择1，则此选项将允许Javascript中的特权升级。<br /> </td> 
+   <td> 如果选择1，则此选项允许在JavaScript中进行权限提升。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Disable_ControlsOnFileDownload</span> <br /> </td> 

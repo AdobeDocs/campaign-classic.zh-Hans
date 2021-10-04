@@ -5,9 +5,9 @@ description: 了解如何配置安全区
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: dab18d24f5471034a2169dd674e6f7000de30cac
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1460'
 ht-degree: 1%
 
 ---
@@ -225,7 +225,7 @@ ht-degree: 1%
 * 最大限度地减少sessionTokenOnly=&quot;true&quot;的使用：
 
    * 警告：如果此属性设置为true，则运算符可能会受到&#x200B;**CRSF攻击**。
-   * 此外，sessionToken Cookie未使用httpOnly标记进行设置，因此某些客户端Javascript代码可以读取它。
+   * 此外，sessionToken Cookie未使用httpOnly标记进行设置，因此某些客户端JavaScript代码可以读取它。
    * 但是，多个执行单元格上的消息中心需要sessionTokenOnly:创建新的安全区域，并将sessionTokenOnly设置为“true”，并在此区域中仅添加所需的IP **。**
 
 * 如果可能，将所有allowHTTP、showErrors设置为false（不适用于localhost）并检查它们。

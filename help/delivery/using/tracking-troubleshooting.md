@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -132,7 +132,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 您可以自定义点击跟踪公式并指定自定义Adobe Analytics跟踪公式。
 
-这种自定义操作需要谨慎进行，以避免添加额外的换行字符。 最终公式中将显示Javascript表达式外部存在的所有换行字符。
+这种自定义操作需要谨慎进行，以避免添加额外的换行字符。 JavaScript表达式外存在的所有换行字符都将出现在最终公式中。
 
 跟踪URL中的这种额外换行字符将导致在某些WebMail（AOL、GMail等）中出现问题。
 
@@ -159,7 +159,7 @@ $ grep -Rn 50x000000000FD7EC86
    %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
    ```
 
-要了解额外换行的位置，可以使用固定字符串STRING替换javascript表达式。
+要了解额外换行的位置，可以使用固定字符串STRING替换JavaScript表达式。
 
 ```
 // Incorrect
@@ -195,7 +195,7 @@ STRING1&cid=STRING2&bid=STRING3
    %>
    ```
 
-要了解额外换行的位置，可以使用固定字符串STRING替换javascript表达式。
+要了解额外换行的位置，可以使用固定字符串STRING替换JavaScript表达式。
 
 ```
 // Incorrect

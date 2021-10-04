@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1572'
 ht-degree: 3%
 
 ---
@@ -150,7 +150,7 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，A
 
 1. Adobe Campaign允许您测试向已正确配置的选定电子邮件地址发送AMP支持的动态电子邮件，以验证其内容和行为。 请参阅[测试选定地址的AMP电子邮件投放](#testing-amp-delivery-for-selected-addresses)。
 
-1. 测试后，您可以向相关电子邮件提供商注册，将发件人域名添加到允许列表，以便在AMP for Email计划中发送投放或营销活动。 请参阅[通过向电子邮件提供商注册来发送AMP电子邮件](#delivering-amp-emails-by-registering)。
+1. 测试后，您可以向相关电子邮件提供商注册，将发件人域名添加到，以便在AMP for Email计划中发送投放或营销活动，作为该计划的一部允许列表分。 请参阅[通过向电子邮件提供商注册来发送AMP电子邮件](#delivering-amp-emails-by-registering)。
 
 ### 测试选定地址的AMP电子邮件投放 {#testing-amp-delivery-for-selected-addresses}
 
@@ -206,7 +206,7 @@ AMP内容和回退准备就绪后，如果您定义了兼容的目标，那么�
 
 ## 教程视频 {#amp-email-video}
 
-以下视频介绍如何在 Adobe Campaign 中激活 AMP。
+以下视频介绍如何在 Adobe Campaign 中激活 AMP 并展示其用法。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 

@@ -4,10 +4,10 @@ title: '帮助和支持选项，用于Campaign Classic '
 description: 需要Campaign Classic支持？ 您找到了正确的地方！
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 71%
+source-wordcount: '799'
+ht-degree: 69%
 
 ---
 
@@ -111,7 +111,7 @@ Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用
 
 ### SFTP 管理
 
-在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监测它们的存储容量、管理允许列表上的 IP 地址和公共 SSH 密钥。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以了解更多信息。
+在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监控其存储容量、管理上的IP允许列表地址和公共SSH密钥。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以了解更多信息。
 
 ### 子域和证书
 
@@ -123,7 +123,7 @@ Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用
 ### 实例设置
 
 了解如何在控制面板中管理Campaign Classic实例设置。 在以下页面中了解详情：
-* [在允许列表上添](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans) 加IP以访问您的Campaign实例
+* [在允许列](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans) 表中添加IP以访问Campaign实例
 * [管理URL权限](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hans)
 * [访问实例详细信息](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hans)
 * [管理用于数据加密的GPG密钥](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans)

@@ -5,7 +5,7 @@ description: 了解如何为自定义实施配置事件
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 管道使用JavaScript函数处理每条消息。 此函数是用户定义的。
 
-它在&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;选项中“JSConnector”属性下进行配置。 每次收到事件时都会调用此javascript。 它由[!DNL pipelined]进程运行。
+它在&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;选项中“JSConnector”属性下进行配置。 每次收到事件时都会调用此JavaScript。 它由[!DNL pipelined]进程运行。
 
 示例Javascript文件为cus:triggers.js。
 

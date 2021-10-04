@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: 安全和隐私入门
+title: 安全和隐私检查清单
 description: 了解有关安全和隐私方面需要检查的关键元素的更多信息。
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 8%
+source-wordcount: '487'
+ht-degree: 6%
 
 ---
 
-# 安全和隐私入门 {#get-started-security-privacy}
+# 安全和隐私检查清单{#get-started-security-privacy}
 
 ![](../../assets/v7-only.svg)
 
@@ -50,7 +50,7 @@ ht-degree: 8%
 
 在Adobe Campaign中进行开发（工作流、Javascript、JSSP等）时，请始终遵循以下准则：
 
-* **脚本**:请尝试避免使用SQL语句，使用参数化函数而不是字符串连接，通过添加要用于允许列表的SQL函数来避免SQL注入。
+* **脚本**:请尝试避免使用SQL语句，使用参数化函数而不是字符串连接，通过将要使用的SQL函数添加到来避免SQL允许列表注入。
 
 * **保护数据模型**:使用命名权限限制运算符操作，添加系统过滤器(sysFilter)
 
@@ -67,6 +67,10 @@ ht-degree: 8%
 您还必须遵循数据库引擎安全性。
 
 [阅读更多](../../installation/using/network-database.md)
+
+>[!CAUTION]
+>
+>自2021年7月14日起，任何不支持TLS 1.2协议的客户端系统都将失去对所有Adobe产品和服务的访问权限。 在此日期之前，请确保所有用户和客户端系统均符合TLS 1.2。 [了解详情](https://helpx.adobe.com/in/x-productkb/multi/eol-tls-support.html)
 
 ## 服务器配置
 

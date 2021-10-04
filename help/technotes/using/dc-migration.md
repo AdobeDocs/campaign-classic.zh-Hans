@@ -2,11 +2,11 @@
 product: campaign
 title: 迁移到公共云
 description: 进一步了解Campaign Classic迁移到公共云
-hidefromtoc: true
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: a4e7fb474d83be821343babacc493fd43c02857d
+exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
+source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 2%
@@ -218,4 +218,3 @@ Adobe将在新数据中心配置相同数量的IP。
 * [迁移到Adobe Managed Services(Public Cloud)常见问题解答](dc-migration-faq.md)
 * [Gold Standard升级](../../rn/using/gs-overview.md)
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)
-

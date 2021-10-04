@@ -7,12 +7,13 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: aac596caf559b25ba3fff94aca410a66ecc08b27
+source-git-commit: 77c7f1edc531509580c76f55dcb2809c18a04133
 workflow-type: tm+mt
-source-wordcount: '2546'
-ht-degree: 99%
+source-wordcount: '2569'
+ht-degree: 98%
 
 ---
+
 
 # Adobe Campaign Classic v7 文档 {#using}
 
@@ -36,12 +37,6 @@ ht-degree: 99%
       + [18.4 版](rn/using/release--18-4.md)
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
-   + [技术说明](technotes/using/technote.md)
-   + [iOS 证书更新](technotes/using/ios-certificate-update.md)
-   + [Apple iOS上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
-   + [Campaign 配置更新](technotes/using/acc-config-updates.md)
-   + [跟踪的 URL 更新](technotes/using/tracked-urls.md)
-   + [IMS 更新](technotes/using/ims-updates.md)
 + 入门 {#getting-started}
    + 开始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
@@ -850,6 +845,16 @@ ht-degree: 99%
       + [v6.10 中的特定配置](migration/using/specific-configurations-in-v6-10.md)
    + [回滚过程](migration/using/about-rollback.md)
 + 技术说明 {#technotes}
+   + [硬件大小调整建议](technotes/using/hardware-sizing.md)
+   + 升级和迁移{#technote-migration}
+      + [技术说明](technotes/using/technote.md)
+      + [Campaign 配置更新](technotes/using/acc-config-updates.md)
+      + [IMS 更新](technotes/using/ims-updates.md)
+   + 电子邮件和推送通知{#technotes-email}
+      + [Apple iOS上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
+      + [Apple Mail隐私保护常见问题解答](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
+      + [iOS 证书更新](technotes/using/ios-certificate-update.md)
+      + [跟踪的 URL 更新](technotes/using/tracked-urls.md)
    + 迁移到Adobe Managed Services{#dc-migration}
       + [迁移到公共云](technotes/using/dc-migration.md)
       + [常见问题解答](technotes/using/dc-migration-faq.md)

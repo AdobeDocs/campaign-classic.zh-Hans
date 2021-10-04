@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 19%
@@ -17,7 +17,7 @@ ht-degree: 19%
 
 ![](../../assets/v7-only.svg)
 
-## ![](assets/do-not-localize/limited_2.png) 20.1.4 版 - 内部版本 9126 {#release-20-1-4-build-9126}
+## ![](assets/do-not-localize/limited_2.png) 20.1.4 版 - 版本 9126 {#release-20-1-4-build-9126}
 
 _2021 年 4 月 15 日_
 
@@ -51,19 +51,19 @@ _2020 年 12 月 23 日_
 * 连接协议已经更新，以遵循新的 IMS 认证机制。
 * 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) 20.1.3 版 - 内部版本 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png) 20.1.3 版 - 版本 9124{#release-20-1-3-build-9124}
 
 _2020年5月6日_
 
 * 修复了&#x200B;**文件传输**&#x200B;活动的问题，该问题导致基于 SFTP 密钥的身份验证无法在 Debian 9 上工作。(NEO-23183)
 
-## ![](assets/do-not-localize/red_2.png) 20.1.2 版 - 内部版本 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png) 20.1.2 版 - 版本 9123{#release-20-1-2-build-9123}
 
 _2020 年 3 月 13 日_
 
 * 修复了阻止在Red Hat 7服务器上部署版本的问题。 (NEO-23332)
 
-## ![](assets/do-not-localize/red_2.png) 20.1 版 - 内部版本 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png) 20.1 版 - 版本 9122{#release-20-1-build-9122}
 
 _2020年2月17日_
 
@@ -119,7 +119,7 @@ _2020年2月17日_
 
 * 改进了推送通知功能（nms:address和nms:appSubscriptionRcp）所使用的表的隔离管理和清理。 对于iOS（仅限HTTP2连接器），禁用的令牌现在处理方式与Android相同。 现在，在NmsAppSubscriptionRcp表中设置了禁用标志。 [阅读更多](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* 在&#x200B;**JavaScript代码**&#x200B;和&#x200B;**高级JavaScript代码**&#x200B;工作流活动中添加了新选项，以定义超时期限。 这可防止Javascript执行阶段运行过长。 如果超时期间已过，工作流将停止。 默认超时为1小时。 [阅读更多](../../workflow/using/sql-code-and-javascript-code.md)
+* 在&#x200B;**JavaScript代码**&#x200B;和&#x200B;**高级JavaScript代码**&#x200B;工作流活动中添加了新选项，以定义超时期限。 这可防止JavaScript执行阶段运行过长。 如果超时期间已过，工作流将停止。 默认超时为1小时。 [阅读更多](../../workflow/using/sql-code-and-javascript-code.md)
 
 * 现在，在中间源服务器上找不到匹配的亲和度时，将停止投放分析，并显示相应的错误消息。
 
@@ -149,7 +149,7 @@ _2020年2月17日_
 
 * 在打开连接以加载富图像时，已向LINE servlet添加超时。 如果图像加载时间过长，则Servlet会停止连接以避免瓶颈。
 
-**修补程序**
+**补丁程序**
 
 * 修复了使用Hadoop连接器时的帐户密钥加密问题。
 

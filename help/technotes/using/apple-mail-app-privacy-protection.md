@@ -2,9 +2,8 @@
 product: campaign
 title: Apple邮件应用中的邮件隐私保护
 description: 了解Apple的邮件隐私保护功能可能会对您的促销活动有何影响
-hide: true
-hidefromtoc: true
-source-git-commit: f73cda08183e27a222e0aa8e179ef013777435e8
+exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
+source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '2100'
 ht-degree: 0%

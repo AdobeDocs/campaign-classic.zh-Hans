@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '754'
 ht-degree: 5%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 5%
    cnx.dispose()
    ```
 
-要避免SQL注入，必须将SQL函数添加到要在Adobe Campaign中使用的允许列表中。 将它们添加到允许列表后，表达式编辑器中的运算符便可见。 请参见[此页面](../../configuration/using/adding-additional-sql-functions.md)。
+要避免SQL注入，必须将SQL函数添加到要允许列表在Adobe Campaign中使用的。 将它们添加到后，它们允许列表便会在表达式编辑器中对运算符可见。 请参见[此页面](../../configuration/using/adding-additional-sql-functions.md)。
 
 >[!IMPORTANT]
 >
@@ -228,6 +228,6 @@ if( ctx.vars.captchaValid == false ) {
 
 ![](assets/scripting-captcha6.png)
 
-自版本8797起，要使用验证API URL，您必须通过在urlPermission节点中添加，将其添加到serverConf文件的允许列表中：
+自版本8797起，要使用验证API URL，您必须通过在urlPermission节点中添加，将其允许列表添加到serverConf文件的中：
 
 `<url dnsSuffix="www.google.com" urlRegEx="https://www.google.com/recaptcha/api/siteverify"/>`
