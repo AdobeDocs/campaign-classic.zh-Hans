@@ -10,7 +10,7 @@ type: Documentation
 source-git-commit: aac596caf559b25ba3fff94aca410a66ecc08b27
 workflow-type: tm+mt
 source-wordcount: '2546'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -118,8 +118,8 @@ ht-degree: 98%
          + [与 CRM 同步数据](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
          + [Adobe Analytics Connector配置](platform/using/adobe-analytics-provisioning.md)
-         + [Adobe Analytics Connector集成](platform/using/adobe-analytics-connector.md)
-         + [如何迁移到Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
+         + [Adobe Analytics Connector 集成](platform/using/adobe-analytics-connector.md)
+         + [如何迁移到 Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector-legacy.md)
    + [帮助和支持选项](support.md)
 + 创建和发送消息{#sending-messages}

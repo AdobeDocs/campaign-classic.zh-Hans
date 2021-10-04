@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,15 +23,15 @@ ht-degree: 98%
 
 ## 2021 年 8 月{#aug-2021}
 
-添加了新的工作流活动：更改数据源 — [了解详情](../../workflow/using/change-data-source.md)
+添加了新的工作流活动：更改数据源 - [了解详情](../../workflow/using/change-data-source.md)
 
-已在文档页面中添加了适用性徽章：**仅适用于v7**&#x200B;的Campaign Classicv7功能，而&#x200B;**适用于v7和v8**&#x200B;的常见功能。
+已在文档页面中添加了适用性徽章：对于 Campaign Classic v7 功能，**仅适用于 v7**，而对于常见功能，**适用于 v7 和 v8**。
 
-添加了有关Campaign与AEM Assets之间集成的注释，该集成已从Adobe Experience Manager 6.4开始解压缩。 [了解详情](../../integrations/using/configuring-access-to-assets.md)
+添加了有关 Campaign 与 AEM Assets 之间集成的注释，该集成已从 Adobe Experience Manager 6.4 开始停用。 [了解详情](../../integrations/using/configuring-access-to-assets.md)
 
-删除AdobeFlash后，报表和Web应用程序屏幕截图和参数已更新。
+移除 Adobe Flash 后，报表和 Web 应用程序屏幕截图和参数已更新。
 
-**量规**&#x200B;图表类型已被删除。
+**量规**&#x200B;图表类型已移除。
 
 
 ## 2021 年 7 月 {#july-2021}

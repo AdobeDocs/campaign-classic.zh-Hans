@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: a64cf63916c4e4f220ac00f3d44d0e5e747815f4
+source-git-commit: 86eb9814fae42992b5ca0ce233f88ad90086007d
 workflow-type: tm+mt
 source-wordcount: '1191'
-ht-degree: 84%
+ht-degree: 97%
 
 ---
 
@@ -21,18 +21,18 @@ ht-degree: 84%
 
 ## ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] 12 版{#gs-12}
 
-_2021年9月7日_
+_2021 年 9 月 7 日_
 
-内部版本9032@554dbcd包含以下修复：
+版本 9032@554dbcd 包含以下修复：
 
-* 修复了在启用了跟踪的Line投放中打开指向Web应用程序的链接时导致出现500错误的问题。
+* 修复了在启用跟踪的 Line 投放中打开指向 Web 应用程序的链接时导致出现 500 错误的问题。
 
-_2021年8月27日_
+_2021 年 8 月 27 日_
 
-内部版本9032@99a3894包含以下修复：
+版本 9032@99a3894 包含以下修复：
 
-* 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、Internet浏览器等）的方式相关的错误 处理特殊字符。 URL参数现已进行编码。
-* 修复了日期选取器的问题，该问题可能导致控制台显示阻止程序错误消息。 (NEO-36345)
+* 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、互联网浏览器等）链接的方式出现错误处理特殊字符。URL 参数现已经过编码。
+* 修复了日期选取器的问题，该问题可能导致控制台显示阻止程序错误消息。(NEO-36345)
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 11 版{#gs-11}
 
@@ -41,18 +41,18 @@ _2021 年 4 月 14 日_
 内部版本 9032@d030c36 包含以下修复：
 
 * 修复了导致 IMS 连接屏幕上出现持续错误消息的客户端控制台回退问题。 (NEO-34821)
-* 维护[IMS访问](../../technotes/using/ims-updates.md)需要此控制台内部版本。
+* 需要安装此控制台版本来保持 [IMS 访问](../../technotes/using/ims-updates.md)。
 
 **必须执行仅控制台升级。无需升级服务器。**
 
 >[!CAUTION]
 >
-> * 如果您要通过Adobe ID连接到Campaign，则通过AdobeIdentity Management服务(IMS)，必须升级Campaign服务器和客户端控制台才能在2021年6月30日&#x200B;**后连接到Campaign。** [了解详情](../../technotes/using/ims-updates.md)
+> * 如果您要通过 Adobe Identity Management Service (IMS) 使用 Adobe ID 连接到 Campaign，则必须升级 Campaign 服务器和客户端控制台才能在 **2021 年 6 月 30 日**&#x200B;后连接到 Campaign。[了解详情](../../technotes/using/ims-updates.md)
 > * 此版本附带[安全修复](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign [的旧版oAuth身份验证模式已在&#x200B;**2021年8月18日**&#x200B;停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管环境将从扩展中受益，直到2021年11月30日&#x200B;**。**&#x200B;作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2021年11月30日。 您必须提供[OAuth应用程序](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID才能Adobe。
+> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign [的旧版oAuth身份验证模式已于2021年9月&#x200B;**停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。**&#x200B;托管环境从扩展中受益，直到2022年2月23日&#x200B;****。 作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 >
->在[[!DNL Gold Standard] 11升级常见问题解答](https://helpx.adobe.com/cn/campaign/kb/gold-standard-upgrade.html)中了解更多信息
+>在 [[!DNL Gold Standard] 11 版升级常见问题解答](https://helpx.adobe.com/cn/campaign/kb/gold-standard-upgrade.html)中了解更多信息
 
 _2021 年 3 月 2 日_
 
@@ -68,15 +68,6 @@ _2021 年 3 月 2 日_
 
 _2020 年 12 月 22 日_
 
-<!--
->[!CAUTION]
->
-> * This release comes with a new connection protocol: if you are connecting to Campaign through Adobe Identity Service (IMS), upgrade is mandatory for both Campaign server and client console to be able to connect to Campaign after **June 30, 2021**. [Learn more](../../technotes/using/ims-updates.md)
-> * This release comes with a [security fix](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): upgrade is mandatory to reinforce your environment security. 
-> * If you are using the Experience Cloud Triggers integration through oAuth authentication, you need to move to Adobe I/O as described [in this page](../../integrations/using/configuring-adobe-io.md). Legacy oAuth authentication mode with Campaign will be retired on **November 30, 2021**.
->
->Learn more in the [[!DNL Gold Standard] 11 upgrade FAQ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
--->
 内部版本 9032@d3b452f 包括以下改进和修复：
 
 * 连接协议已经更新，以遵循新的 IMS 认证机制。
