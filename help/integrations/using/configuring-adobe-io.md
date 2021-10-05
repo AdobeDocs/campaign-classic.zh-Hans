@@ -8,10 +8,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: ca2349abce07c890e9d87d07e26dbca4f13d2fb6
+source-git-commit: bf063ec8f06c3e8e70011a5b5101f17e163a383c
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 4%
+source-wordcount: '701'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 4%
 >如果您通过oAuth身份验证使用旧版Triggers集成，则&#x200B;**您需要按照以下**所述移至Adobe I/O。
 >请注意，在迁移到[!DNL Adobe I/O]期间，某些传入触发器可能会丢失。
 >
->Campaign [的旧版oAuth身份验证模式已在&#x200B;**2021年10月20日**&#x200B;停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管环境从扩展中受益，直到2022年2月23日&#x200B;****。 作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须[提供OAuth应用程序](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID才能Adobe。
+>**2021年10月20日**&#x200B;将停用具有Campaign的旧版oAuth身份验证模式。 托管环境从扩展中受益，直到2022年2月23日&#x200B;****。 作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须[提供OAuth应用程序](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID才能Adobe。
 
 ## 先决条件 {#adobe-io-prerequisites}
 
