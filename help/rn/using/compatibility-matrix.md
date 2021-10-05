@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 987434c2b6b92fbb6f24924f92795cb282b61cd4
-workflow-type: ht
-source-wordcount: '545'
-ht-degree: 100%
+source-git-commit: 134f248fbcd456573365d5b32831b75dac4b73de
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 86%
 
 ---
 
@@ -154,7 +154,7 @@ ht-degree: 100%
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016</p>
+<p>2016年</p>
 <p>2014</p>
 <p>2012 - SP1 和 SP2</p>
 <p>警告：当 Campaign 服务器在 Linux 上运行时，不支持将 Microsoft SQL Server 作为主数据库。[了解更多](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。</p>
@@ -168,6 +168,8 @@ ht-degree: 100%
 >PostgreSQL 是托管环境的默认数据库服务器。
 
 ## CRM 连接器{#CRMconnectors}
+
+下面列出了与Adobe Campaign兼容的客户关系管理(CRM)系统。 [了解](../../platform/using/crm-connectors.md) 有关Campaign CRM连接器的更多信息。
 
 <table>
 <tbody>
@@ -187,6 +189,8 @@ ht-degree: 100%
 </table>
 
 ## 联合数据访问 (FDA){#FederatedDataAccessFDA}
+
+下面列出了与Adobe Campaign [联合数据访问模块](../../installation/using/about-fda.md)兼容的外部数据库。
 
 <table>
 <tbody>
@@ -230,10 +234,10 @@ ht-degree: 100%
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019</p>
-<p>2017</p>
-<p>2016</p>
-<p>2014</p>
+<p>2019年</p>
+<p>2017年</p>
+<p>2016年</p>
+<p>2014年</p>
 <p>2012 SP1 和 SP2</p>
 </td>
 </tr>
@@ -286,7 +290,7 @@ ht-degree: 100%
 
 ## 客户端控制台 {#ClientConsoleoperatingsystems}
 
-:warning:警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
+以下操作系统和浏览器是使用[Campaign客户端控制台](../../installation/using/installing-the-client-console.md)所必需的&#x200B;**。**
 
 ### 操作系统
 
@@ -295,8 +299,8 @@ ht-degree: 100%
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2016</p>
-<p>2012</p>
+<p>2016年</p>
+<p>2012年</p>
 </td>
 </tr>
 <tr>
@@ -311,6 +315,7 @@ ht-degree: 100%
 
 ### 浏览器
 
+[]
 <table>
 <tbody>
 <tr>
@@ -326,6 +331,8 @@ ht-degree: 100%
 
 
 ## 移动 SDK{#MobileSDK}
+
+您可以使用Campaign在下面列出的操作系统上使用关联的[Mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)发送推送通知](../../delivery/using/about-mobile-app-channel.md)。[
 
 <table>
 <tbody>
@@ -348,7 +355,7 @@ ht-degree: 100%
 
 ## 浏览器{#Browsers}
 
-以下浏览器与 Campaign 兼容，可用于进行 Web 访问。
+以下浏览器与Campaign for [Web Access](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-)兼容。
 
 <table>
 <tbody>
@@ -399,6 +406,7 @@ ht-degree: 100%
 ## 更多此类内容{#Morelikethis}
 
 * [Campaign Classic 发行说明](../../rn/using/latest-release.md)
-* [安装指南](../../installation/using/general-architecture.md)
+* [Campaign一般架构](../../installation/using/general-architecture.md)
+* [硬件大小调整建议](../../technotes/using/hardware-sizing.md)
 * [已弃用的功能和系统](../../rn/using/deprecated-features.md)
 * [内部版本升级过程](../../production/using/build-upgrade.md)

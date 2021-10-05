@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 3%
@@ -120,7 +120,7 @@ ht-degree: 3%
 
 1. 在&#x200B;**[!UICONTROL Mobile application creation wizard]**&#x200B;窗口的&#x200B;**[!UICONTROL API version]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL HTTPV1]**。
 
-1. 单击&#x200B;**[!UICONTROL Load project json file to extract projet details...]**&#x200B;直接加载您的JSON密钥文件。 有关如何提取JSON文件的更多信息，请参阅[此页面](https://firebase.google.com/docs/admin/setup#initialize-sdk)。
+1. 单击&#x200B;**[!UICONTROL Load project json file to extract project details...]**&#x200B;直接加载您的JSON密钥文件。 有关如何提取JSON文件的更多信息，请参阅[此页面](https://firebase.google.com/docs/admin/setup#initialize-sdk)。
 
    您还可以手动输入以下详细信息：
    * **[!UICONTROL Project Id]**

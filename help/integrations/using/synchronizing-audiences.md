@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 1%
@@ -98,7 +98,7 @@ ht-degree: 1%
 
 1. 在之前创建的工作流中，添加&#x200B;**[!UICONTROL List update]**&#x200B;活动，并指定要更新或创建的列表。
 
-   指定要在Campaign v7中保存列表的文件夹。 列表受实施期间定义的文件夹映射的约束，在Campaign Standard中共享后，该映射会对其可见性产生影响。 请参阅[权限转换](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion)一节。
+   指定要在Campaign v7中保存列表的文件夹。 列表受实施期间定义的文件夹映射的约束，在Campaign Standard中共享后，该映射会对列表的可见性产生影响。 请参阅[权限转换](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion)一节。
 
 1. 确保选中&#x200B;**[!UICONTROL Share with ACS]**&#x200B;选项。 默认勾选。
 

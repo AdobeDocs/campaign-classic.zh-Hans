@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 5%
 
 ---
@@ -97,7 +97,7 @@ ajouter screenshot -->
 
 如果未发送投放，且其状态保持&#x200B;**[!UICONTROL Pending]**，则可能是以下结果：
 
-* 在投放服务器上运行模块和进程并管理电子邮件发送的MTA（邮件传输代理）可能尚未启动，或需要重新启动。
+* MTA（邮件传输代理）在投放服务器上运行模块和进程并管理电子邮件发送，它可能尚未启动，或可能需要重新启动。
 
    要选中此复选框并在必要时启动模块，请应用以下步骤：
 

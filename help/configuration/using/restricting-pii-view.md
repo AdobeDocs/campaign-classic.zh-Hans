@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 2%
@@ -43,7 +43,7 @@ ht-degree: 2%
 主要属性包括：
 
 * **[!UICONTROL visibleIf]** :会隐藏元数据中的字段，因此无法在架构视图、列选择或表达式生成器中访问这些字段。但这不会隐藏任何数据，如果在表达式中手动输入字段名称，则会显示值。
-* **[!UICONTROL accessibleIf]** :隐藏生成查询中的数据（用空值替换它）。如果visibleIf为空，则获得与&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的表达式。
+* **[!UICONTROL accessibleIf]** :隐藏生成查询中的数据（用空值替换它）。如果visibleIf为空，则获取的表达式与&#x200B;**[!UICONTROL accessibleIf]**&#x200B;的表达式相同。
 
 以下是在Campaign中使用此属性的后果：
 

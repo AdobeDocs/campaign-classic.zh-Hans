@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: dccf72b200cad9ba160a496cdd13ba39c5599008
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1305'
 ht-degree: 3%
@@ -140,7 +140,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 ## 电子邮件密送最佳实践 {#best-practices}
 
 * **密送地址邮箱**:确保具有足够的接收容量，以存档MTA发送的所有电子邮件。
-* **MTA共同化**:密送归档功能在MTA级别起作用。它允许您复制MTA发送的每封电子邮件。 由于MTA可以跨多个实例（例如开发、测试或生产）或甚至跨多个客户端（在中间源环境中）进行共同化，因此设置此功能会影响安全性：
+* **MTA池**:密送归档功能在MTA级别起作用。它允许您复制MTA发送的每封电子邮件。 由于MTA可以跨多个实例（例如，开发、测试或生产）或甚至跨多个客户端（在中间源环境中）池化，因此设置此功能会影响安全性：
 
    * 如果您与多个客户共享MTA，并且其中一个客户已激活此选项，则此客户将访问共享相同MTA的其他客户的所有电子邮件。 要避免出现这种情况，请为每个客户端使用不同的MTA。
    * 如果在单个客户端的多个实例（开发、测试和生产）中使用相同的MTA，则从所有三个实例发送的消息将被dataLogPath选项复制。

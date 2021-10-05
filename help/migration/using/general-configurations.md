@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: eef2a12738ce299686857720c3dc8456ffdd0c80
 workflow-type: tm+mt
-source-wordcount: '2784'
+source-wordcount: '2664'
 ht-degree: 0%
 
 ---
@@ -620,7 +620,7 @@ logInfo("Done");
 
 ![](assets/migration_reports_1.png)
 -->
-如果您希望从新报表功能中受益，则必须重新发布报表。 为此，请编辑报告&#x200B;**[!UICONTROL Properties]**，单击&#x200B;**[!UICONTROL Rendering]**&#x200B;并选择v.6.x渲染引擎。 在这种情况下，请检查您的所有脚本，并根据需要更改它们。 关于PDF导出，如果您为Open Office添加了特定脚本，则新的PDF导出引擎(PhantomJS)将不再适用此脚本。
+如果您希望从新报表功能中受益，则必须重新发布报表。 在这种情况下，请检查您的所有脚本，并根据需要更改它们。 关于PDF导出，如果您为Open Office添加了特定脚本，则新的PDF导出引擎(PhantomJS)将不再适用此脚本。
 
 ## Web 应用程序 {#web-applications}
 
@@ -631,10 +631,7 @@ logInfo("Done");
 
 ### 已识别的Web应用程序 {#identified-web-applications}
 
-与报表（[了解更多](#reports)）一样，如果您已添加JavaScript，则必须检查并调整（如果需要）。 如果您希望从v7蓝色横幅（包含蓝色选项卡）中受益，则必须重新发布Web应用程序。 如果您的JavaScript代码正在工作，则可以选择v6.x渲染引擎。 如果不是这种情况，您可以在调整代码时使用v6.0渲染引擎，然后使用v6.x渲染引擎。
-
->[!NOTE]
-选择渲染引擎的步骤与选择报告的步骤相同。 请参阅[个性化报表](#personalized-reports)。
+与报表（[了解更多](#reports)）一样，如果您已添加JavaScript，则必须检查并调整（如果需要）。 如果您希望从v7蓝色横幅（包含蓝色选项卡）中受益，则必须重新发布Web应用程序。
 
 v7中的Web应用程序连接方法已发生更改。 如果在已识别的Web应用程序中遇到任何连接问题，必须临时激活&#x200B;**serverConf.xml**&#x200B;文件中的&#x200B;**allowUserPassword**&#x200B;和&#x200B;**sessionTokenOnly**&#x200B;选项。 在升级后，修改以下选项值：
 
@@ -664,10 +661,7 @@ sessionTokenOnly="false"
 
 ### 匿名Web应用程序 {#anonymous-web-applications}
 
-如果遇到任何问题，请重新发布Web应用程序。 如果问题仍然存在，您可以选择v6.0渲染引擎。 如果您尚未添加JavaScript，则可以选择v6.x渲染引擎并从其新功能中受益。
-
->[!NOTE]
-选择渲染引擎的步骤与选择报告的步骤相同。 请参阅[个性化报表](#personalized-reports)。
+如果遇到任何问题，请重新发布Web应用程序。
 
 ## 红帽 {#red-hat}
 

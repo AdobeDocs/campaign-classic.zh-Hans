@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 7%
@@ -23,7 +23,7 @@ ht-degree: 7%
 1. 右键单击并选择&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]** 。
 1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以确认并启动该进程。
 
-然后，您可以在“预览”和“文档”选项卡中检查生成的架构的结构。 有关更多信息，请参阅[原则](../../configuration/using/data-schemas.md#principles)一节。
+然后，您可以在预览和文档选项卡中检查生成的架构的结构。 有关更多信息，请参阅[原则](../../configuration/using/data-schemas.md#principles)一节。
 
 >[!NOTE]
 >

@@ -1,14 +1,12 @@
 ---
 product: campaign
-title: 技术说明
-description: 技术说明
-hide: true
-hidefromtoc: true
+title: 技术说明 — Adobe Campaign配置更新
+description: Adobe Campaign配置更新
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 11%
+source-wordcount: '1137'
+ht-degree: 12%
 
 ---
 
@@ -72,7 +70,7 @@ ht-degree: 11%
 
 Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧的Internet Explorer版本。**[了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
-需要升级Campaign客户端控制台，以确保与AdobeIMS兼容。
+需要升级Campaign客户端控制台，以确保与Adobe IMS兼容。
 
 **您是否受影响？**
 
@@ -103,7 +101,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧的In
 
 ## 与Experience Cloud触发器集成 {#acc-triggers-updates}
 
-旧版oAuth身份验证服务已终止。 Triggers集成身份验证（最初基于用于访问管道的oAUTH身份验证设置）已移至Adobe I/O。Campaign [的旧版oAuth身份验证模式已在&#x200B;**2021年8月18日**&#x200B;停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管环境将从扩展中受益，直到2021年11月30日&#x200B;**。**&#x200B;作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2021年11月30日。 您必须提供[OAuth应用程序](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)的AppID才能Adobe。
+旧版oAuth身份验证服务已终止。 Triggers集成身份验证（最初基于用于访问管道的oAUTH身份验证设置）已移至Adobe I/O。Campaign [的旧版oAuth身份验证模式已于2021年9月&#x200B;**停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。**&#x200B;托管环境从扩展中受益，直到2022年2月23日&#x200B;****。 作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 **您是否受影响？**
 

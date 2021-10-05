@@ -3,7 +3,7 @@ product: campaign
 title: 迁移到Adobe Analytics Connector
 description: Campaign - Analytics连接器常见问题解答
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 6d3e21fa00771a47d846d502e2d4d5971aa39b29
+source-git-commit: e82bcef34ba8a9d5a7e6c4a59552d8cb7c800ca5
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 5%
@@ -28,7 +28,7 @@ ht-degree: 5%
 
 Campaign Classicv7与Adobe Analytics之间的新集成现已可用。 下面列出了主要更改。
 
-* Adobe Campaign Classic与Adobe Analytics身份验证之间的集成已从用户/密码移至AdobeIdentity Management服务(IMS)。 因此，您必须实施AdobeIMS，并通过Adobe ID](../../integrations/using/about-adobe-id.md)连接到Campaign [，然后才能开始实施Analytics连接器。
+* Adobe Campaign Classic与Adobe Analytics身份验证之间的集成已从用户/密码移至AdobeIdentity Management服务(IMS)。 因此，您必须实施Adobe IMS，并通过Adobe ID](../../integrations/using/about-adobe-id.md)连接到Campaign [，然后才能开始实施Analytics连接器。
 
 * **联系日期**&#x200B;分类（使用的类型为日期）已被Adobe Analytics弃用。 对于迁移的集成，它仍将保持相同类型。 对于Campaign创建的任何&#x200B;**联系日期**，类型将为&#x200B;**String**。
 

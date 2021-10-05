@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 [此部分](supervising-workflows.md#supervising-workflows)中还提供了有关如何创建工作流以监视一组“已暂停”、“已停止”或“有错误”的工作流的状态的用例。
 
-此外，实例的管理员还可以使用&#x200B;**审核跟踪**&#x200B;来检查活动和对工作流所做的最后修改以及工作流的状态。 有关更多信息，请参阅[Campaign Classicv7生产指南](../../production/using/audit-trail.md)。
+此外，实例的管理员还可以使用&#x200B;**审核跟踪**&#x200B;来检查活动和对工作流所做的最后修改，以及工作流的状态。 有关更多信息，请参阅[Campaign Classicv7生产指南](../../production/using/audit-trail.md)。
 
 [《Campaign Classicv7生产指南》](../../production/using/monitoring-guidelines.md)中提供了监控不同Campaign流程的其他方法。
 
@@ -246,7 +246,7 @@ instance.vars.isRunning = false
 
 * 自超过7天以来已暂停的工作流在监控功能板（和监控API）中显示为警告，并且会向监控组发送通知。
 * 每周触发&#x200B;**[!UICONTROL cleanupPausedWorkflows]**&#x200B;技术工作流时都会发生同样的情况。 有关工作流的更多详细信息，请参阅[此部分](delivery.md)。
-* 在4个通知（即默认处于暂停状态一个月）之后，将无条件停止工作流。 日志停止后，工作流中会显示该日志。 下次执行&#x200B;**[!UICONTROL cleanup]**&#x200B;工作流时会清除这些表
+* 在4个通知（即默认处于暂停状态一个月）之后，工作流将无条件停止。 日志停止后，工作流中会显示该日志。 下次执行&#x200B;**[!UICONTROL cleanup]**&#x200B;工作流时会清除这些表
 
 可通过NmsServer_PausedWorkflowPeriod选项配置这些时段。
 

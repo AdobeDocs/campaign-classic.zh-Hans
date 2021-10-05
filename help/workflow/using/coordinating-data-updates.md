@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-此用例详细介绍了如何创建工作流，该工作流允许您在使用工作流的多次执行时管理伴随更新。
+此用例详细介绍了如何创建工作流，利用该工作流，您可以在使用工作流的多次执行时管理伴随的更新。
 
 目的是在执行另一更新操作之前检查更新过程是否已结束。 为此，我们将设置一个实例变量，并让工作流测试实例是否正在运行，以确定是否继续执行工作流并执行更新。
 

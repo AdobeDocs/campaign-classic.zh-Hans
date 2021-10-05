@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%
@@ -149,7 +149,7 @@ ht-degree: 1%
 
 您的叫客过渡将包含过去7天内未打开电子邮件的收件人。
 
-相反，如果要筛选至少打开了一封电子邮件的收件人，则查询应如下所示。 请注意，在这种情况下，应将&#x200B;**[!UICONTROL Filtering dimension]**&#x200B;设置为&#x200B;**[!UICONTROL Tracking logs (Recipients)]**。
+相反，如果要筛选至少打开了一封电子邮件的收件人，则查询应如下所示。 请注意，在这种情况下，**[!UICONTROL Filtering dimension]**&#x200B;应设置为&#x200B;**[!UICONTROL Tracking logs (Recipients)]**。
 
 ![](assets/query_open_5.png)
 

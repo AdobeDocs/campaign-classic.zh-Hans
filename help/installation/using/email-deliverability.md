@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
 workflow-type: tm+mt
 source-wordcount: '3023'
 ht-degree: 0%
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 ### 开始配置 {#start-configuration}
 
-默认情况下，将为每个实例启动&#x200B;**stat**&#x200B;模块。 当实例在同一台计算机上共享时，或当实例共享相同的IP地址时，将使用单个统计服务器：其他人必须残疾。
+默认情况下，将为每个实例启动&#x200B;**stat**&#x200B;模块。 当实例在同一台计算机上池化，或当实例共享相同的IP地址时，会使用单个统计信息服务器：其他人必须残疾。
 
 ### 服务器端口的定义 {#definition-of-the-server-port}
 

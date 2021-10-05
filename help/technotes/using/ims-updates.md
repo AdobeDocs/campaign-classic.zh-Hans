@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: 更新您的环境以使用IMS连接到Adobe Campaign。
+title: 技术说明 — 更新您的环境以使用IMS连接到Adobe Campaign。
 description: 营销活动 — IMS更新
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '591'
 ht-degree: 9%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 9%
 
 ![](../../assets/v7-only.svg)
 
-2021年6月30日，将对[AdobeIdentity Management系统](https://helpx.adobe.com/enterprise/using/identity.html)(IMS)登录功能进行更改，这可能会影响您继续使用Adobe Campaign的能力。 了解如何确保您继续使用Adobe Campaign Classic v7而不中断。
+2021年6月30日，对[AdobeIdentity Management系统](https://helpx.adobe.com/enterprise/using/identity.html)(IMS)登录功能进行了更改，这可能会影响您继续使用Adobe Campaign的能力。 了解如何确保您继续使用Adobe Campaign Classic v7而不中断。
 
 ## 更改了哪些内容？
 
-AdobeIdentity Management服务(IMS)将从2021年6月30日&#x200B;**开始停止支持旧的Internet Explorer版本**。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+AdobeIdentity Management服务(IMS)于2021年6月30日&#x200B;****&#x200B;停止支持旧的Internet Explorer版本。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
 Adobe希望在2021年6月30日之前为所有客户保留IMS功能。 IMS是安全框架的一部分，该框架允许用户登录客户端控制台，从而登录Adobe Campaign。
 
@@ -28,7 +28,7 @@ Adobe希望在2021年6月30日之前为所有客户保留IMS功能。 IMS是安�
 
 如果您通过Adobe ID](../../integrations/using/about-adobe-id.md)、AdobeIdentity Management服务(IMS)连接到Campaign [，并运行比下面所列版本旧的Campaign版本，则会受到影响。
 
-如果您已升级，但使用的是旧版Microsoft Internet Explorer，则必须升级到Internet Explorer 11。
+如果已升级但使用旧版Microsoft Internet Explorer，则必须升级到Internet Explorer 11。
 
 ## 如何更新？
 
@@ -78,7 +78,7 @@ Adobe希望在2021年6月30日之前为所有客户保留IMS功能。 IMS是安�
 
 如果您看到此类警告，请确保安装所使用操作系统的最新更新。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
-**在2021年6月30日之后**，您将看到以下消息，并且将无法再连接到Adobe Campaign:
+如果您未更新Internet Explorer版本，则会看到以下消息，并且无法再连接到Adobe Campaign:
 
 ![](../../integrations/using/assets/do-not-localize/errorUpdateReq.png)
 

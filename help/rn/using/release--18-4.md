@@ -3,7 +3,7 @@ product: campaign
 title: Campaign 18.4发行说明
 description: Campaign 18.4发行说明
 exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 7%
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 ![](../../assets/v7-only.svg)
 
-## 18.4.5 版 - 内部版本 8937{#release-18-4-5-build-8937}
+## 18.4.5 版 - 版本 8937{#release-18-4-5-build-8937}
 
 2018年11月21日
 
@@ -41,7 +41,7 @@ ht-degree: 7%
 * 改进了子代死机处理(MTA)期间的共享内存可用时间。
 * 修复了Apache（跟踪）中的潜在死锁。
 
-## 18.4.4 版 - 内部版本 8936{#release-18-4-4-build-8936}
+## 18.4.4 版 - 版本 8936{#release-18-4-4-build-8936}
 
 2018年8月1日
 
@@ -58,7 +58,7 @@ ht-degree: 7%
 * 修复了在&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流活动未完全配置时，在升级后日志中显示无用错误的问题。
 * FDATeradata:修复了SQL表中自动递增的字段和索引的问题。
 
-## 18.4.3 版 - 内部版本 8935{#release-18-4-3-build-8935}
+## 18.4.3 版 - 版本 8935{#release-18-4-3-build-8935}
 
 2018年6月22日
 
@@ -72,7 +72,7 @@ ht-degree: 7%
 * 修复了将选件空间从营销实例同步到交互实例时的问题。 (NEO-11162)
 * 改进了升级后期间长名称索引的管理
 
-## 18.4.2 版 - 内部版本 8932{#release-18-4-2-build-8932}
+## 18.4.2 版 - 版本 8932{#release-18-4-2-build-8932}
 
 2018年5月22日
 
@@ -83,7 +83,7 @@ ht-degree: 7%
 * 修复了使用退回邮件服务器时inMail进程可能发生的性能问题。 (NEO-10641)
 * 修复了在升级1000个以上架构时可能发生的数据库升级问题。
 
-## 18.4 版 - 内部版本 8931{#release-18-4-build-8931}
+## 18.4 版 - 版本 8931{#release-18-4-build-8931}
 
 2018年4月24日
 
@@ -171,7 +171,7 @@ queryDef
    </select>
    <orderBy>
       <node expr="@logDate"/>
-      <node expr="@id"/> <!-- implicitely added before 18.4, you can add it manually on your query, if you relied on this implicit order clauses --!>
+      <node expr="@id"/> <!-- implicitly added before 18.4, you can add it manually on your query, if you relied on this implicit order clauses --!>
    </orderBy>
 </queryDef>
 ```
@@ -188,7 +188,7 @@ urlEncode函数
 nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 ```
 
-**修补程序**
+**补丁程序**
 
 * 修复了从Adobe Campaign Standard复制投放和跟踪日志到Adobe Campaign Classic时的同步问题。 (NEO-10023)
 * 修复了在快速加载操作失败后恢复ETL工作流时，处理Teradata中的错误和日志表时出现的问题。 现在，每次工作流继续时，错误和日志表都会被正确删除。 (NEO-10672)

@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -96,7 +96,7 @@ Adobe 强烈建议您先创建验证邮件，在将邮件发送到主目标前�
 
 ### 我在哪里可以访问投放内容和跟踪日志？ {#where-can-i-access-delivery-and-tracking-logs-}
 
-[通过此页面](../../delivery/using/delivery-dashboard.md)了解如何跟踪投放内容，并理解收件人的行为。
+通过此页面](../../delivery/using/delivery-dashboard.md)了解如何跟踪投放内容并了解收件人的行为[。
 
 ### 从何处获得投放报告？ {#where-can-i-get-delivery-reports-}
 

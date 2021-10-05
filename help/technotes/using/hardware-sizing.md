@@ -2,14 +2,14 @@
 product: campaign
 title: Campaign Classicv7的硬件大小调整建议
 description: Campaign Classicv7的硬件大小调整建议
-source-git-commit: 3912874210ab16a132e51d9bb71508c8d244fe22
+source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2512'
 ht-degree: 1%
 
 ---
 
-# Campaign Classicv7的硬件大小调整建议 {#hardware-sizing-reco}
+# 硬件大小调整建议{#hardware-sizing-reco}
 
 ![](../../assets/v7-only.svg)
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->本指南仅作为一般示例指南提供。 在启动Campaign项目之前，您必须联系Adobe Campaign客户成功经理来测量部署的确切大小。 **在完** 成此操作之前，不要获取或部署任何基础架构或硬件。
+>本文仅作为一般示例指南提供。 在启动Campaign项目之前，您必须联系Adobe Campaign客户成功经理来测量部署的确切大小。 **在完** 成此操作之前，不要获取或部署任何基础架构或硬件。
 
-本文档提供了在内部部署数据中心或虚拟化云环境中部署Adobe Campaign Classic v7的一般准则。 这种类型的部署（称为&#x200B;**混合**&#x200B;或&#x200B;**中间源**）将Campaign营销实例和营销数据库置于您的操作控制之下，同时使用Campaign Cloud消息服务发送电子邮件、SMS或SMPP消息，并收集电子邮件打开、弹回和点击跟踪数据。
+本文档为您的内部部署数据中心或虚拟化云环境中的Adobe Campaign Classic v7部署提供了一般建议。 这种类型的部署（称为&#x200B;**混合**&#x200B;或&#x200B;**中间源**）将Campaign营销实例和营销数据库置于您的操作控制之下，同时使用Campaign Cloud消息服务发送电子邮件、SMS或SMPP消息，并收集电子邮件打开、弹回和点击跟踪数据。
 
 营销实例是Adobe Campaign架构的一部分，用于驱动所有营销活动，并存储由营销活动返回的所有收件人数据和分析数据。 营销实例是一组运行Adobe Campaign服务的内部部署服务器和一个关系数据库。
 
@@ -258,5 +258,6 @@ Adobe建议在将系统投入生产之前，对Adobe Campaign的任何虚拟化�
 ## 相关主题
 
 * [营销活动监控流程](../../production/using/monitoring-processes.md)
+* [Campaign一般架构](../../installation/using/general-architecture.md)
 * [性能和吞吐量问题](../../production/using/performance-and-throughput-issues.md)
 * [安全和隐私检查清单](../../installation/using/get-started-security-privacy.md)

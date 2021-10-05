@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Adobe Campaign Classic 文档更新
+title: Adobe Campaign Classic v7文档更新
 description: 本页列出了 Adobe Campaign Classic 文档中的所有新增功能和更新
 feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: cee019432c64eaaefac86a27b731355242fd1555
 workflow-type: tm+mt
-source-wordcount: '4513'
-ht-degree: 100%
+source-wordcount: '4560'
+ht-degree: 98%
 
 ---
 
@@ -21,6 +21,22 @@ ht-degree: 100%
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
+## 2021 年 10 月{#oct-2021}
+
+现有技术说明已分组到新的&#x200B;**技术说明**&#x200B;部分。
+
+**硬件大小调整推荐**&#x200B;页面已更新并添加到&#x200B;**技术说明**&#x200B;部分。 [阅读更多](../../technotes/using/hardware-sizing.md)
+
+## 2021 年 9 月{#sept-2021}
+
+**随 21.1.4 版提供的文档更新**
+
+**量规**&#x200B;图表类型已移除。
+
+移除 Adobe Flash 后，报表和 Web 应用程序屏幕截图和参数已更新。
+
+[计费技术工作流](../../production/using/monitoring-processes.md#billing-report)描述已更新，并带有新的护栏。
+
 ## 2021 年 8 月{#aug-2021}
 
 添加了新的工作流活动：更改数据源 - [了解详情](../../workflow/using/change-data-source.md)
@@ -28,10 +44,6 @@ ht-degree: 100%
 已在文档页面中添加了适用性徽章：对于 Campaign Classic v7 功能，**仅适用于 v7**，而对于常见功能，**适用于 v7 和 v8**。
 
 添加了有关 Campaign 与 AEM Assets 之间集成的注释，该集成已从 Adobe Experience Manager 6.4 开始停用。 [了解详情](../../integrations/using/configuring-access-to-assets.md)
-
-移除 Adobe Flash 后，报表和 Web 应用程序屏幕截图和参数已更新。
-
-**量规**&#x200B;图表类型已移除。
 
 
 ## 2021 年 7 月 {#july-2021}
@@ -270,7 +282,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 “隐私管理概述”页面已更新，包含有关泰国的个人数据保护法 (PDPA) 和巴西的 Lei Geral de Proteção de Dados(LGPD) 的信息。[阅读更多](../../platform/using/privacy-and-recommendations.md)
 
-已添加有关子工作流日志和行为的信息，以防出错。[阅读更多](../../workflow/using/sub-workflow.md)
+添加了关于子工作流日志和行为的信息，以防出错。 [阅读更多](../../workflow/using/sub-workflow.md)
 
 已在 **[!UICONTROL Scheduler]** 活动部分中添加最佳实践。[阅读更多](../../workflow/using/scheduler.md)
 
@@ -380,7 +392,7 @@ Hadoop FDA 连接器增强 - [阅读更多](../../installation/using/configure-f
 
 [安装、](../../installation/using/general-architecture.md) [生产](../../production/using/foreword.md)[和配置](../../configuration/using/additional-parameters.md)指南已更新，包含 nlserver 服务启动使用的新系统单元。您仍可以使用 /etc/init.d/nlserver6，但 Adobe 建议您现在使用 systemctl 命令与 nlserver 服务进行交互。
 
-安装指南已更新并与最新版本的兼容性矩阵同步。新增了支持的系统。已删除已弃用和不支持的系统的实例。[阅读更多](../../installation/using/general-architecture.md)
+安装指南已更新并与最新版本的兼容性矩阵同步。 新增了支持的系统。已删除已弃用和不支持的系统的发生次数。 [阅读更多](../../installation/using/general-architecture.md)
 
 更新了兼容性矩阵，纳入 Hadoop 3.0 和 Snowflake FDA 连接器。[阅读更多](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 

@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d2d0ff575edbee18febb5ec895fcec1e0ae34de7
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 9%
+source-wordcount: '180'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,13 @@ ht-degree: 9%
 
    ![](assets/wf_new_schema_fda.png)
 
-1. 输入架构的名称和说明，然后选择将启用与数据库连接的外部帐户。 这允许访问外部库中可用的表列表。 选择包含要收集的数据的表。
+1. 为架构输入&#x200B;**[!UICONTROL Namespace]**&#x200B;和&#x200B;**[!UICONTROL Name]**，然后选择将启用与数据库的连接的&#x200B;**[!UICONTROL External account]**。 这允许访问外部库中可用的表列表。
+
+   ![](assets/wf_new_schema_select_table_fda.png)
+
+1. 从&#x200B;**[!UICONTROL Table name]**&#x200B;字段中，选择包含要收集的数据的表。
+
+   通过Snowflake，如果已为数据库用户授予了正确的权限，则可以在此处选择您的视图。 请注意，使用视图时，Adobe Campaign将无法自动生成XML架构，您必须自己创建它。 有关视图的更多信息，请参阅[Snowflake文档](https://docs.snowflake.com/en/user-guide/views-introduction.html)。
 
    ![](assets/wf_new_schema_select_table_fda.png)
 

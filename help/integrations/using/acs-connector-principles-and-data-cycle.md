@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 0%
@@ -149,7 +149,7 @@ ACS Connector有两种实施类型。 这两项操作始终由Adobe Campaign咨�
 * **[!UICONTROL `[ACS] Service replication`]** (newServiceReplication):此增量工作流将复制所选服务以进行Campaign Standard。请参阅用例[同步Web应用程序](../../integrations/using/synchronizing-web-applications.md)。
 * **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication):此增量工作流会复制所选的web应用程序以进行Campaign Standard。Campaign v7 Web应用程序将在Campaign Standard中显示为登陆页。 请参阅用例[同步Web应用程序](../../integrations/using/synchronizing-web-applications.md)。
 * **[!UICONTROL `[ACS] New replication`]** （新复制）：此增量工作流是可用于复制自定义表的示例。请参阅[高级实施](#advanced-implementation)。
-* **[!UICONTROL `[ACS] Delivery-mesage replication`]** (newDlvMsgQualification):此增量工作流将投放消息从Campaign Standard复制到Campaign v7。
+* **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification):此增量工作流将投放消息从Campaign Standard复制到Campaign v7。
 * **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication):此增量工作流将投放ID、电子邮件广泛日志和电子邮件跟踪日志从Campaign Standard复制到Campaign v7。它仅考虑从Campaign Standard向Campaign v7的nms:recipients表所包含的用户档案发送的投放。
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication):此增量工作流将投放ID、电子邮件广泛日志和电子邮件跟踪日志从Campaign Standard复制到Campaign v7。它仅考虑从Campaign Standard向Campaign v7特定表（定义nms:recipients除外）所包含用户档案发送的投放。
 

@@ -6,9 +6,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Web窗体可完全配置和个性化，以满足您的要求。 必须在属性窗口中输入参数。
+您可以完全配置和个性化Web窗体，以满足您的要求。 必须在属性窗口中输入参数。
 
 可通过Web窗体工具栏中的&#x200B;**[!UICONTROL Properties]**&#x200B;按钮访问属性窗口。 利用此窗口，可访问特定于Web窗体的一系列设置。 某些设置可能源自模板配置。
 

@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '890'
 ht-degree: 4%
 
 ---
@@ -152,7 +152,7 @@ Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数�
 
    >[!NOTE]
    >
-   >您可以将`$(loginId) = 0 or $(login) = 'admin'`替换为`hasNamedRight('admin')` ，以便所有具有管理员权限的用户都可以看到这些密码。
+   >您可以将`$(loginId) = 0 or $(login) = 'admin'`替换为`hasNamedRight('admin')`，以允许具有管理员权限的所有用户查看这些密码。
 
 ## 保护包含PII的页面
 

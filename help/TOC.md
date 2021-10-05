@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 089ade04a7324f8052738f18b34c09b429275c00
+source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 98%
+source-wordcount: '2566'
+ht-degree: 97%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 98%
          + [CRM 连接器入门](platform/using/crm-connectors.md)
          + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
          + [与 Salesforce.com 连接](platform/using/crm-sfdc.md)
-         + [与 CRM 同步数据](platform/using/crm-data-sync.md)
+         + [将数据与CRM同步](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
          + [Adobe Analytics Connector配置](platform/using/adobe-analytics-provisioning.md)
          + [Adobe Analytics Connector 集成](platform/using/adobe-analytics-connector.md)
@@ -213,7 +213,6 @@ ht-degree: 98%
       + [投放疑难解答](delivery/using/delivery-troubleshooting.md)
       + [投放状态](delivery/using/delivery-statuses.md)
       + [了解投放失败](delivery/using/understanding-delivery-failures.md)
-      + [在 ISP 中断后更新退回限制条件](delivery/using/update-bounce-qualification.md)
       + [了解隔离管理](delivery/using/understanding-quarantine-management.md)
    + 跟踪消息{#tracking-messages}
       + [关于邮件跟踪](delivery/using/about-message-tracking.md)
@@ -852,6 +851,7 @@ ht-degree: 98%
    + 电子邮件和推送通知{#technotes-email}
       + [Apple iOS上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
       + [Apple Mail隐私保护常见问题解答](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
+      + [如何更新错误硬退回](delivery/using/update-bounce-qualification.md)
       + [iOS 证书更新](technotes/using/ios-certificate-update.md)
       + [跟踪的 URL 更新](technotes/using/tracked-urls.md)
    + 迁移到Adobe Managed Services{#dc-migration}

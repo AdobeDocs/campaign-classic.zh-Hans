@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 5%
@@ -45,7 +45,7 @@ MTA模块充当SMTP广播（端口25）的本机邮件传输代理。
 
 >[!IMPORTANT]
 >
->此操作模式对投放造成严重限制，因为由于中继服务器的固有性能（延迟、带宽……），它会大大降低吞吐量。 此外，鉴别同步投放错误（通过分析SMTP流量检测到）的容量将受到限制，如果中继服务器不可用，则将无法发送。
+>此操作模式对投放造成严重限制，因为它会因为中继服务器的固有性能（延迟、带宽……）而大大降低吞吐量。 此外，鉴别同步投放错误（通过分析SMTP流量检测到）的容量将受到限制，如果中继服务器不可用，则将无法发送。
 
 ## MTA子进程 {#mta-child-processes}
 

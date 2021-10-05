@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 * **[!UICONTROL Pending events queued]** :特定于消息中 **心的指示器**。有关详细信息，请参阅[此部分](../../message-center/using/additional-configurations.md#monitoring-thresholds)。
 
-* **[!UICONTROL Load average (1/5/15 minutes)]** :与负载有关的信息，即在机器上运行的进程在最后一分钟、五分钟或十五分钟内的使用率
+* **[!UICONTROL Load average (1/5/15 minutes)]** :与负载有关的信息，即处理器在机器上运行的进程在最后一分钟、五分钟或十五分钟内的使用率
 
    **[!UICONTROL Current value]** :机器的实际负载。
 
@@ -345,7 +345,7 @@ SMTP投放监控报表已集成到Adobe Campaign平台中。 可以通过控制�
 
 ![](assets/billing.png)
 
-每月25日启动该工作流后，您的账单运营商将在其收件箱中收到以下报表。
+工作流每月25日启动一次后，您的账单运营商将在其收件箱中收到以下报表。
 
 ![](assets/billing_2.png)
 
@@ -605,7 +605,7 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 
 * **tcp**:检查服务器是处于开启状态还是关闭状态。必须输入端口号。
 * **http**:检查Web服务器是否存在（应用程序服务器可运行）。
-* **ncs**:检查在“实例”属性中输入的实例上的进程（工作流错误、内存使用情况等）。**include**（必需）属性允许您选择显示无效进程（“true”或“false”值）。
+* **ncs**:检查在“实例”属性中输入的实例上的进程（工作流错误、内存使用情况等）。**included**（必需）属性允许您选择显示无效进程（“true”或“false”值）。
 * **redir**:检查跟踪。
 
 在大多数情况下，只能保留&#x200B;**ncs**&#x200B;和&#x200B;**redir**&#x200B;子元素。

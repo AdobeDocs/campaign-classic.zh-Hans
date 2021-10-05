@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 1. 保存此报表。
 
-## 建模图表 {#modelizing-the-chart}
+## 对图表建模 {#modelizing-the-chart}
 
 保存报表后，应显示此内容。 您现在可以构建报表图表。
 

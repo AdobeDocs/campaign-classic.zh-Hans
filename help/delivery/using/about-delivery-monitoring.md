@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 25%
+ht-degree: 16%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 25%
 
 ![](../../assets/common.svg)
 
-在发送后监测投放是确保营销活动有效并接触到客户的重要步骤。
+监控投放发送后的投放是确保营销活动高效且能够与客户联系的关键步骤。
 
 在本节中，您将了解有关发送投放后可监控的信息的更多信息，并了解投放失败和隔离的管理方式。
 

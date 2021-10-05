@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9b914099f6755d6ae83f98697a3a38f8cfa625e1
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## 选择表单渲染模板 {#selecting-the-form-rendering-template}
 
-通过表单设置，您可以选择用于生成页面的模板。 要访问它们，请单击表单详细信息工具栏中的&#x200B;**[!UICONTROL Settings]**&#x200B;按钮，然后选择&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡。 默认情况下，有许多模板（样式表）可用。
+通过表单设置，您可以选择用于生成页面的模板。 要访问它们，请单击表单详细信息工具栏中的&#x200B;**[!UICONTROL Properties]**&#x200B;按钮，然后选择&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡。 默认情况下，有许多模板（样式表）可用。
 
 ![](assets/s_ncs_admin_survey_rendering_select.png)
 
@@ -108,7 +108,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_required_field.png)
 
-如果用户未输入字段就批准了此页面，则将显示以下消息：
+如果用户在未输入字段的情况下批准此页面，则将显示以下消息：
 
 ![](assets/s_ncs_admin_survey_required_default_msg.png)
 
@@ -116,7 +116,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_required_custom_msg.png)
 
-如果用户未输入字段就批准了此页面，则将显示以下消息：
+如果用户在未输入字段的情况下批准此页面，则将显示以下消息：
 
 ![](assets/s_ncs_admin_survey_required_custom_msg2.png)
 

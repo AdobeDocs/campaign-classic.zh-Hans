@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
@@ -84,12 +84,12 @@ ht-degree: 1%
 
 ## 配置Hadoop2.1 {#configure-access-hadoop-2}
 
-如果需要连接到Hadoop2.1，请按照下面描述的[Windows](#for-windows)或[Linux](#for-linux)的步骤操作。
+如果需要连接到Hadoop2.1，请按照下面描述的[Windows](#for-windows)或[Linux](#for-linux)步骤操作。
 
 ### Hadoop2.1 for Windows {#for-windows}
 
 1. 安装ODBC和[Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) Windows驱动程序。
-1. 通过运行ODBC数据源管理员工具创建DSN（数据源名称）。 为配置单元提供系统DSN示例供您修改。
+1. 通过运行ODBC数据源管理器工具创建DSN（数据源名称）。 为配置单元提供系统DSN示例供您修改。
 
    ```
    Description: vorac (or any name you like)

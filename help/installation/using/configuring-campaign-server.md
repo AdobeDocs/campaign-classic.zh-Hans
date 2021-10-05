@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
@@ -232,7 +232,7 @@ sh
 
 在服务器配置文件的&#x200B;**exec**&#x200B;节点中，您需要引用之前在&#x200B;**blacklistFile**&#x200B;属性中创建的文件。
 
-**仅适用于Linux**:在服务器配置文件中，我们重新命令您指定一个专门执行外部命令的用户，以增强您的安全配置。此用户在配置文件的&#x200B;**exec**&#x200B;节点中设置。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
+**仅适用于Linux**:在服务器配置文件中，我们建议您指定一个专门执行外部命令的用户来增强您的安全配置。此用户在配置文件的&#x200B;**exec**&#x200B;节点中设置。 **serverConf.xml**&#x200B;中可用的所有参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
 
 >[!NOTE]
 >

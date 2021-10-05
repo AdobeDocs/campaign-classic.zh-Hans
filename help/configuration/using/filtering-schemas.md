@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
    </sysFilter>
    ```
 
-* 限制读取和写入权限：
+* 限制读和写权限：
 
    在此，过滤器用于禁止所有运算符对架构的读取和写入权限。 仅&#x200B;**internal**&#x200B;帐户，由表达式“$(loginId)!=0”，具有这些权限。
 

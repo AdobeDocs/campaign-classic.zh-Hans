@@ -1,13 +1,11 @@
 ---
 product: campaign
-title: 技术说明
-description: 技术说明
-hide: false
-hidefromtoc: true
+title: 技术说明 — Apple推送通知服务服务器证书更新
+description: Apple推送通知服务服务器证书更新
 exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -16,7 +14,7 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-2021年3月29日，Apple推送通知服务(APNs)基础架构更新将影响Adobe Campaign Classic iOS渠道。 要避免iOS推送渠道中断，操作系统配置更改为&#x200B;**必需**。
+2021年3月29日，Apple推送通知服务(APNs)基础架构更新影响了Adobe Campaign Classic iOS渠道。 要避免iOS推送渠道中断，操作系统配置更改为&#x200B;**必需**。
 
 在本页](https://developer.apple.com/news/?id=7gx0a2lp)中了解有关APNs更改[的更多信息。
 

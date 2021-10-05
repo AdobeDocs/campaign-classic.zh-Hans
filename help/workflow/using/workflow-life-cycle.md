@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: fceb5752-dc73-4386-8c18-c4f3e6110ca5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 2%
@@ -31,7 +31,7 @@ ht-degree: 2%
 
    当不再有任何正在进行的任务，或者当运算符明确停止实例时，工作流即为“已完成”。
 
-例如，列出了&#x200B;**Start**&#x200B;和&#x200B;**Delivery**&#x200B;活动，而&#x200B;**Approval**&#x200B;活动在下面的工作流中闪烁。
+例如，将列出&#x200B;**Start**&#x200B;和&#x200B;**Delivery**&#x200B;活动，而&#x200B;**Approval**&#x200B;活动在以下工作流中闪烁。
 
 ![](assets/new-workflow-6.png)
 

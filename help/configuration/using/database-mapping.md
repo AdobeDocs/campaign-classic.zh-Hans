@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -305,7 +305,7 @@ SQL字段约束如下：
 
 >[!NOTE]
 >
->在Adobe Campaign模式（例如&#x200B;**NmsTrackingLogId**）中引用的序列必须与返回参数中ID数的SQL函数关联，SQL函数中ID数用逗号分隔。 此函数必须名为&#x200B;**GetNew** XXX **Ids**，其中&#x200B;**XXX**&#x200B;是序列的名称（例如&#x200B;**GetNewNmsTrackingLogIds**）。 查看随&#x200B;**datakit/nms/eng/sql/**&#x200B;目录中的应用程序一起提供的&#x200B;**postgres-nmssql**、**mssql-nmssql**&#x200B;或&#x200B;**oracle-nmssql**&#x200B;文件，以恢复每个数据库引擎的“NmsTrackingLogId”序列创建示例。
+>在Adobe Campaign模式（例如&#x200B;**NmsTrackingLogId**）中引用的序列必须与返回参数中ID数的SQL函数关联，该函数中ID数以逗号分隔。 此函数必须名为&#x200B;**GetNew** XXX **Ids**，其中&#x200B;**XXX**&#x200B;是序列的名称（例如&#x200B;**GetNewNmsTrackingLogIds**）。 查看&#x200B;**postgres-nms.sql**、**mssql-nmssql**&#x200B;或&#x200B;**oracle-nms.sql**&#x200B;目录中随应用程序提供的文件，以恢复每个数据库引擎的“NmsTrackingLogId”序列创建示例。****
 
 要声明唯一键，请在数据架构的主元素中填充&#x200B;**autopk**&#x200B;属性（具有值“true”）。
 
@@ -361,7 +361,7 @@ SQL字段约束如下：
 
 * ![](assets/join_with_campaign11.png) :基数1-1。例如，在收件人和当前订单之间。 收件人一次只能与当前订单表的一个实例相关。
 * ![](assets/externaljoin11.png) :基数1-1，外部连接。例如，在收件人与其国家/地区之间。 收件人只能与表国家/地区的一个事件相关。 将不会保存国家/地区表的内容。
-* ![](assets/join_with_campaign1n.png) :基数1-N。例如，在收件人和订阅表之间。收件人可以与订阅表上的多个事件相关。
+* ![](assets/join_with_campaign1n.png) :基数1-N。例如，在收件人和订阅表之间。收件人可以与订阅表格上的多次事件相关。
 
 对于使用联合数据库访问的连接关系：
 

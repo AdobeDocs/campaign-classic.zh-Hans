@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 10%
@@ -49,7 +49,7 @@ ht-degree: 10%
 
    >[!IMPORTANT]
    >
-   >当链接的URL用作标签时，建议取消跟踪以避免因网络钓鱼而被拒绝的风险。
+   >当链接的URL用作标签时，建议停用跟踪以避免因网络钓鱼而被拒绝的风险。
    >
    >例如，如果将www.adobe.com URL插入消息中并激活该消息的跟踪，则超文本链接的内容将被修改为https://nlt.adobe.net/r/?id=xxxxxx。 这意味着收件人消息客户端可能会将其视为欺诈。
 

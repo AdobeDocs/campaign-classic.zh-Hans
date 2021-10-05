@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 0%
@@ -123,7 +123,7 @@ _operation（字符串）、高级（布尔）、appliableIf（字符串）、au
 * **sqlname（字符串）**:的子域。如果@sqlname未指定，则默认使用“@name”属性的值。 当架构写入数据库时，将根据字段类型自动添加前缀。
 * **模板（字符串）**:此属性定义对由多个架 `<attribute>` 构共享的元素的引用。定义会自动复制到当前架构中。
 * **translatedDefault（字符串）**:如果找到“@default”属性，则“@translatedDefault”将允许您重新定义表达式以匹配@default中定义的表达式，该表达式将由翻译工具收集（内部使用）。
-* **translatedExpr（字符串）**:如果存在“@expr”属性，则“@translatedExpr”属性允许您重新定义表达式以匹配@expr中定义的表达式，该表达式将由翻译工具收集（内部使用）。
+* **translatedExpr（字符串）**:如果存在“@expr”属性，则“@translatedExpr”属性允许您重新定义表达式以匹配在中定义的表达式，该表达式将由翻译工具收集（内部使用）。
 * **类型(MNTOKEN)**:字段。
 
    字段类型是通用的。 根据所安装数据库的类型，Adobe Campaign会将定义的类型更改为在结构更新期间所安装数据库的特定值。
