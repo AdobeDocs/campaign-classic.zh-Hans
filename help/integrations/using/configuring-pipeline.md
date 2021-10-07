@@ -5,7 +5,7 @@ description: 了解如何配置管道
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: b8f74c290106d57630c5d486c04b8424132e3297
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -127,7 +127,7 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 
 | 选项 | 说明 |
 |:-:|:-:|
-| appName（旧版） | 在上传公钥的旧版Oath应用程序中注册的OAuth应用程序的应用程序ID。 有关更多信息，请参阅此[页面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.) |
+| appName（旧版） | 在上传公钥的旧版Oath应用程序中注册的OAuth应用程序的应用程序ID。 有关更多信息，请参阅此[页面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
 | authGatewayEndpoint（旧版） | 用于获取网关令牌的URL。 默认：```https://api.omniture.com``` |
 | authPrivateKey（旧版） | 私钥是Legacy Oath应用程序中上传的公共部分，AES使用XtkKey选项进行加密：```cryptString("PRIVATE_KEY")``` |
 | disableAuth（旧版） | 禁用身份验证时，仅某些开发管道端点会接受在不使用网关令牌的情况下进行连接。 |
