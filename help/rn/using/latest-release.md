@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 31ff1863623c088d28d9e4d15337bbc7a9843171
+source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
 workflow-type: tm+mt
-source-wordcount: '2457'
-ht-degree: 98%
+source-wordcount: '2459'
+ht-degree: 97%
 
 ---
 
@@ -28,9 +28,9 @@ _2021年10月8日_
 
 **补丁程序**
 
-* 修复了在将&#x200B;**Interaction**&#x200B;模块与[Power Booster](../../installation/using/power-booster-and-power-cluster.md)选项结合使用时可能阻止保存优惠建议的问题。 (NEO-39263)
+* 修复了在将&#x200B;**Interaction**&#x200B;模块与[Power Booster](../../installation/using/power-booster-and-power-cluster.md)选项结合使用时可能阻止正确管理选件的问题。 (NEO-39263)
 
-* 修复了在中间源实例上使用多个IP亲和度时，可能发生的“在中间服务器xxx上找不到ipaffinity xxx”错误。 (NEO-37514)
+* 修复了在多中间源实例上使用多个IP亲和度时，在投放发送时，“在mid server xxx上未找到ipaffinity xxx”错误。 (NEO-37514)
 
 
 ## ![](assets/do-not-localize/orange_2.png) 21.1.4 版 - 版本 9342 {#release-21-1-4-build-9342}
