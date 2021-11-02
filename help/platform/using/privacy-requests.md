@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2413'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -384,7 +384,7 @@ Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私
 
 除了 Adobe Campaign 提供的[同意管理](../../platform/using/privacy-management.md#consent-management)工具外，您还可以跟踪消费者是否已选择退出个人信息销售。
 
-联系人可以通过您的系统决定他们不允许将个人信息出售给第三方。 在 Adobe Campaign 中，您将能够存储和跟踪此信息。
+联系人可以决定不允许通过您的系统将其个人信息出售给第三方。在 Adobe Campaign 中，您将能够存储和跟踪此信息。
 
 为使此功能正常工作，您需要扩展用户档案表并添加 **[!UICONTROL Opt-Out for CCPA]** 字段。
 
