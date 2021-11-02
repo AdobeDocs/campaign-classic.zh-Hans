@@ -7,9 +7,9 @@ user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2566'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -109,9 +109,9 @@ ht-degree: 97%
          + [CRM 连接器入门](platform/using/crm-connectors.md)
          + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
          + [与 Salesforce.com 连接](platform/using/crm-sfdc.md)
-         + [将数据与CRM同步](platform/using/crm-data-sync.md)
+         + [与 CRM 同步数据](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
-         + [Adobe Analytics Connector配置](platform/using/adobe-analytics-provisioning.md)
+         + [Adobe Analytics Connector 配置](platform/using/adobe-analytics-provisioning.md)
          + [Adobe Analytics Connector 集成](platform/using/adobe-analytics-connector.md)
          + [如何迁移到 Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector-legacy.md)
@@ -849,11 +849,11 @@ ht-degree: 97%
       + [Campaign 配置更新](technotes/using/acc-config-updates.md)
       + [IMS 更新](technotes/using/ims-updates.md)
    + 电子邮件和推送通知{#technotes-email}
-      + [Apple iOS上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Apple Mail隐私保护常见问题解答](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
-      + [如何更新错误硬退回](delivery/using/update-bounce-qualification.md)
+      + [Apple iOS 上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
+      + [Apple 邮件隐私保护常见问题解答](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hans)
+      + [如何更新错误的硬退回](delivery/using/update-bounce-qualification.md)
       + [iOS 证书更新](technotes/using/ios-certificate-update.md)
       + [跟踪的 URL 更新](technotes/using/tracked-urls.md)
-   + 迁移到Adobe Managed Services{#dc-migration}
+   + 迁移到 Adobe Managed Services{#dc-migration}
       + [迁移到公共云](technotes/using/dc-migration.md)
       + [常见问题解答](technotes/using/dc-migration-faq.md)
