@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1657'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -114,7 +114,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </tr> 
   <tr> 
    <td>Web 应用程序 - 微型站点</td>
-   <td>从 Campaign 18.10 版本开始，不再提供微型站点。您可以通过限制仅访问 Adobe Campaign 配置文件上的专用域来提高安全性，并通过使用 DNS 别名在 Campaign 中使用个性化 URL。</td>
+   <td>从 Campaign 18.10 版本开始，不再提供微型网站。您可以通过限制仅访问 Adobe Campaign 配置文件上的专用域来提高安全性，并通过使用 DNS 别名在 Campaign 中使用个性化 URL。</td>
   </tr> 
   <tr> 
    <td>推送通知 - iOS 二进制连接器</td>
@@ -177,7 +177,7 @@ Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因
 从 19.1 Spring Release 开始，Adobe Campaign 不再与以下 Web 服务器兼容。
 
 * Apache 2.2。[了解详情](https://httpd.apache.org/)
-* Microsoft IIS 7。[了解详情](https://support.microsoft.com/en-us/lifecycle/search/810)
+* Microsoft IIS 7。[了解详情](https://support.microsoft.com/zh-cn/lifecycle/search/810)
 
 ### 工具 {#tools-eol}
 
