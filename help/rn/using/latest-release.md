@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2459'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 97%
 
 ## ![](assets/do-not-localize/green_2.png) 21.1.4 版 - 版本 9343 {#release-21-1-4-build-9343}
 
-_2021年10月8日_
+_2021 年 10 月 8 日_
 
 **补丁程序**
 
-* 修复了在将&#x200B;**Interaction**&#x200B;模块与[Power Booster](../../installation/using/power-booster-and-power-cluster.md)选项结合使用时可能阻止正确管理选件的问题。 (NEO-39263)
+* 修复了在将 **Interaction** 模块与 [Power Booster](../../installation/using/power-booster-and-power-cluster.md) 选项结合使用时可能导致无法正确管理优惠的问题。(NEO-39263)
 
-* 修复了在多中间源实例上使用多个IP亲和度时，在投放发送时，“在mid server xxx上未找到ipaffinity xxx”错误。 (NEO-37514)
+* 修复了在多中间源实例上使用多个 IP 关联时，在发送投放时出现的“在中间服务器 xxx 上未找到 IP 关联 xxx”错误。(NEO-37514)
 
 
 ## ![](assets/do-not-localize/orange_2.png) 21.1.4 版 - 版本 9342 {#release-21-1-4-build-9342}
