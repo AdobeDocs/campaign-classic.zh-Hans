@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '600'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ ht-degree: 79%
 </tbody>
 </table>
 
-## 关系数据库管理系统(RDBMS){#RDBMSservers}
+## 关系数据库管理系统 (RDBMS){#RDBMSservers}
 
 <table>
 <tbody>
@@ -142,7 +142,7 @@ ht-degree: 79%
 <p>9.6.x</p>
 <p>9.5.x</p>
 <p>9.4.x</p>
-<p><strong>注意：</strong> 您还可以将Amazon RDS for PostgreSQL与上述指定的版本结合使用。</p>
+<p><strong>注意：</strong>您还可以将 Amazon RDS for PostgreSQL 与以上指定的版本配合使用。</p>
 </td>
 </tr>
 <tr>
@@ -150,10 +150,10 @@ ht-degree: 79%
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016年</p>
+<p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 和 SP2</p>
-<p><strong>重要信息：</strong> 当Campaign服务器在Linux上运行时，不支持将Microsoft SQL Server作为主数据库。[了解更多](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。</p>
+<p><strong>重要提示：</strong>当 Campaign 服务器在 Linux 上运行时，不支持将 Microsoft SQL Server 作为主数据库。[了解更多](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。</p>
 </td>
 </tr>
 </tbody>
@@ -163,12 +163,12 @@ ht-degree: 79%
 >
 >* RDBMS 驱动程序必须与 RDBMS 服务器版本匹配。
 >
->* PostgreSQL是托管环境的RDBMS。
+>* PostgreSQL 是用于托管环境的 RDBMS。
 
 
 ## CRM 连接器{#CRMconnectors}
 
-下面列出了与Adobe Campaign兼容的客户关系管理(CRM)系统。 [了解](../../platform/using/crm-connectors.md) 有关Campaign CRM连接器的更多信息。
+下面列出了与 Adobe Campaign 兼容的客户关系管理 (CRM) 系统。[了解](../../platform/using/crm-connectors.md)有关 Campaign CRM 连接器的更多信息。
 
 <table>
 <tbody>
@@ -189,7 +189,7 @@ ht-degree: 79%
 
 ## 联合数据访问 (FDA){#FederatedDataAccessFDA}
 
-下面列出了与Adobe Campaign [联合数据访问模块](../../installation/using/about-fda.md)兼容的外部数据库。
+下面列出了与 Adobe Campaign [联合数据访问模块](../../installation/using/about-fda.md)兼容的外部数据库。
 
 <table>
 <tbody>
@@ -233,10 +233,10 @@ ht-degree: 79%
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019年</p>
-<p>2017年</p>
-<p>2016年</p>
-<p>2014年</p>
+<p>2019</p>
+<p>2017</p>
+<p>2016</p>
+<p>2014</p>
 <p>2012 SP1 和 SP2</p>
 </td>
 </tr>
@@ -289,7 +289,7 @@ ht-degree: 79%
 
 ## 客户端控制台 {#ClientConsoleoperatingsystems}
 
-以下操作系统和浏览器是使用[Campaign客户端控制台](../../installation/using/installing-the-client-console.md)所必需的&#x200B;**。**
+**必须**&#x200B;配备以下操作系统和浏览器，才能使用 [Campaign 客户端控制台](../../installation/using/installing-the-client-console.md)。
 
 ### 操作系统
 
@@ -298,8 +298,8 @@ ht-degree: 79%
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2016年</p>
-<p>2012年</p>
+<p>2016</p>
+<p>2012</p>
 </td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ ht-degree: 79%
 
 ## 移动 SDK{#MobileSDK}
 
-您可以使用Campaign在下面列出的操作系统上使用关联的[Mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)发送推送通知](../../delivery/using/about-mobile-app-channel.md)。[
+您可以在下列操作系统上使用 Campaign [发送推送通知](../../delivery/using/about-mobile-app-channel.md)，通过利用关联的 [Mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
 
 <table>
 <tbody>
@@ -353,7 +353,7 @@ ht-degree: 79%
 
 ## 浏览器{#Browsers}
 
-以下浏览器与Campaign for [Web Access](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-)兼容。
+以下浏览器与 Campaign 兼容，可用于进行 [Web 访问](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-)。
 
 <table>
 <tbody>
@@ -404,7 +404,7 @@ ht-degree: 79%
 ## 更多此类内容{#Morelikethis}
 
 * [Campaign Classic 发行说明](../../rn/using/latest-release.md)
-* [Campaign一般架构](../../installation/using/general-architecture.md)
+* [Campaign 一般架构](../../installation/using/general-architecture.md)
 * [硬件大小调整建议](../../technotes/using/hardware-sizing.md)
 * [已弃用的功能和系统](../../rn/using/deprecated-features.md)
 * [内部版本升级过程](../../production/using/build-upgrade.md)
