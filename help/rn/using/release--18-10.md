@@ -58,7 +58,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->这栋建筑已被召回。 请[升级到最新内部版本](../../production/using/build-upgrade.md)或联系[Adobe客户关怀团队](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>这栋建筑已被召回。 请 [升级到最新内部版本](../../production/using/build-upgrade.md)  或联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **改进**
 
@@ -82,7 +82,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->这栋建筑已被召回。 请[升级到最新内部版本](../../production/using/build-upgrade.md)或联系[Adobe客户关怀团队](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>这栋建筑已被召回。 请 [升级到最新内部版本](../../production/using/build-upgrade.md) 或联系 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **改进**
 
@@ -104,7 +104,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->这栋建筑已被召回。 请[升级到最新内部版本](../../production/using/build-upgrade.md)或联系[Adobe客户关怀团队](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>这栋建筑已被召回。 请 [升级到最新内部版本](../../production/using/build-upgrade.md) 或联系 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **新增功能**
 
@@ -121,17 +121,17 @@ ht-degree: 7%
    <td> 在Adobe Campaign中为推送通知实施了多项增强功能：<br /> 
     <ul> 
      <li> <p>在iOS中跟踪静默通知 </p> </li> 
-     <li> <p>在iOS中实施对注册调用的反馈</p> </li> 
+     <li> <p>在iOS中实施有关注册调用的反馈</p> </li> 
      <li> <p>提高iOS交付准备速度</p> </li> 
-    </ul> <p>作为Google弃用GCM的一部分，Android V2连接器现在只能连接到FCM服务器。</p><p>有关详细信息，请参阅<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">有详细说明的文档</a>。本文<a href="https://helpx.adobe.com/cn/campaign/kb/migrate-to-fcm.html">文章</a>中详细介绍了向FCM的手动升级。 </p> </td> 
+    </ul> <p>作为遭Google弃用的GCM的一部分，Android V2连接器现在只能连接到FCM服务器。</p><p>有关详细信息，请参阅<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">有详细说明的文档</a>。本文详细介绍了向FCM升级的手动 <a href="https://helpx.adobe.com/cn/campaign/kb/migrate-to-fcm.html">文章</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> SQL数据管理活动<br /> </td> 
-   <td> <p>添加了新的数据管理工作流活动。 <strong>SQL数据管理</strong>活动允许您编写或复制粘贴您自己的SQL脚本以创建和填充工作表（仅限FDA）。 </p> <p>有关详细信息，请参阅<a href="../../workflow/using/sql-data-management.md">有详细说明的文档</a>。</p></td> 
+   <td> <p>添加了新的数据管理工作流活动。 的 <strong>SQL数据管理</strong> 活动允许您编写或复制粘贴您自己的SQL脚本，以创建和填充工作表（仅限FDA）。 </p> <p>有关详细信息，请参阅<a href="../../workflow/using/sql-data-management.md">有详细说明的文档</a>。</p></td> 
   </tr> 
   <tr> 
    <td> 工作流监测<br /> </td> 
-   <td> <p>借助新的Adobe Campaign Workflow HeatMap，平台管理员能够快速以图形形式表示所有并发工作流，从而监控实例的负载并相应地规划工作流。</p> <p>有关详细信息，请参阅<a href="../../workflow/using/heatmap.md">有详细说明的文档</a>。</p> <p>对于8977之前的版本（从8700开始），也可以根据需要使用Workflow HeatMap包。 有关请求和安装它的更多信息，请参阅<a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">此页面</a>。</p> </td> 
+   <td> <p>借助新的Adobe Campaign Workflow HeatMap，平台管理员能够快速以图形形式表示所有并发工作流，从而监控实例的负载并相应地规划工作流。</p> <p>有关详细信息，请参阅<a href="../../workflow/using/heatmap.md">有详细说明的文档</a>。</p> <p>对于8977之前的版本（从8700开始），也可以根据需要使用Workflow HeatMap包。 有关请求和安装它的更多信息，请参阅 <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">本页</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -140,7 +140,7 @@ ht-degree: 7%
 
 * 修复了可能导致服务器端请求伪造(SSRF)攻击和拒绝服务(DoS)攻击漏洞的安全问题。 (NEO-11453)
 * 内容（跟踪重定向、镜像页面、调查等） 现在，Campaign将使用X-Robots-Tag提供：无缓存标头。 这会阻止通过Internet搜索引擎索引此内容。 (NEO-11101)
-* 修复了订阅API中的XTK注入问题（nms:subscription:取消订阅和nms:subscription:订阅）。
+* 修复了订阅API(nms)中的XTK注入问题:subscription:取消订阅和nms:subscription:订阅)。
 * 修复了退订Web应用程序中的XTK注入问题。
 * 删除了某些短信日志中不安全显示的密码。
 
@@ -148,8 +148,8 @@ ht-degree: 7%
 
 * Campaign Classic API 现在可在[专用页面](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)中使用。如果您使用的是 jsapi.chm 文件，您现在应该参阅新的在线版本。
 * 现在支持PostgreSQL 10、Debian 9和Teradata16.20。 请参阅[兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
-* 现在，在创建SFTP连接时，您可以使用代理身份验证。 有关详细信息，请参阅[详细文档](../../installation/using/file-res-management.md)(NEO-9868)
-* 现在，使用直邮投放模板创建单次投放时，投放属性中提供了&#x200B;**日期计算公式**&#x200B;选项。 (NEO-9792)
+* 现在，在创建SFTP连接时，您可以使用代理身份验证。 有关更多信息，请参阅 [详细文档](../../installation/using/file-res-management.md) (NEO-9868)
+* 的 **日期计算公式** 现在，使用直邮投放模板创建单个投放时，投放属性中的选项可用。 (NEO-9792)
 * 对Cookie跟踪和Web应用程序的域名管理进行了改进。 有关更多信息，请参阅下面的“技术演变”部分。
 * 在安全性和性能方面，已改进Adobe Marketing Cloud在投放或登陆页面中共享资产的导入。
 * 移动渠道外部帐户中新增了一个复选框，用于在日志文件中启用详细的SMPP跟踪，以便从Adobe Campaign界面直接访问此输出。
@@ -170,7 +170,7 @@ ht-degree: 7%
 
 对Cookie跟踪和Web应用程序的域名管理进行了改进。
 
-现在，默认支持所有双字母二级域名（例如.aa.com）。 对于更复杂的域名（例如三个字母的二级域，如.com.au），您需要将它们添加到serverConf的&#x200B;**cookieDomains**&#x200B;选项（位于重定向标记下）中。 示例如下：
+现在，默认支持所有双字母二级域名（例如.aa.com）。 对于更复杂的域名（例如，三个字母的二级域，如.com.au），您需要将它们添加到 **cookieDomains** 选项serverConf（位于重定向标记下）。 示例如下：
 
 ```
 <redirection cookiedomain="http://toureiffel.paris">
@@ -197,8 +197,8 @@ NmsRecipient上的索引已重新工作。 这应会提高使用此表的查询�
 
 **补丁程序**
 
-* 修复了阻止下载&#x200B;**Web下载**&#x200B;工作流活动中的文件的错误。 (NEO-11105)
-* 修复了偶尔将&#x200B;**发送指示器和促销活动属性**&#x200B;工作流保留为“失败”状态的错误(NEO-10820)。
+* 修复了阻止 **Web下载** 工作流活动。 (NEO-11105)
+* 修复了有时会在 **发送指标和营销活动属性** 工作流处于失败状态(NEO-10820)。
 * 修复了删除在工作流中运行列表更新活动后创建的收件人列表的问题。 (NEO-11696)
 * 修复了在促销活动日历（日语实例）中提前一个月错误地显示促销活动的问题。 (NEO-11445)
 * 修复了导致Analytics配置无法在投放属性的Web分析选项卡中显示的问题。 (NEO-11619)
@@ -217,7 +217,7 @@ NmsRecipient上的索引已重新工作。 这应会提高使用此表的查询�
 * 修复了使用扩展通用SMPP连接器设置移动渠道外部帐户时发生的问题：如果您为接收机指定了不同的参数，则发射机将错误地使用这些参数而不是自己的参数。
 * 修复了在为压力规则设置频率时导致计划投放失败的问题，因为在首次仲裁后会不断重新计算投放。 (NEO-10016)
 * 修复了在应用程序池回收过程（在nlsrvmod.dll库中）期间导致IIS Web服务器崩溃的问题。 (NEO-10862)
-* 修复了可能阻止在&#x200B;**Profiles &amp; Target**&#x200B;屏幕中搜索收件人的问题。 (NEO-8228)
+* 修复了可能阻止在 **配置文件和Target** 屏幕。 (NEO-8228)
 * 修复了在记录数较多的情况下访问事件历史记录文件夹时可能导致超时错误的问题。 (NEO-11738)
 * 修复了可能导致LINE投放收件人错误地返回为“不可到达”的问题。 (NEO-10833)
 * 修复了在执行工作流查询时对Oracle添加附加列的问题。 (NEO-11615)
@@ -237,6 +237,6 @@ NmsRecipient上的索引已重新工作。 这应会提高使用此表的查询�
 * 修复了导致在Android推送通知投放的其他参数中将URL编码为跟踪URL的问题。 (NEO-11468)
 * 修复了将参数设置为“间隔一天”和“打开次数”时，用户活动报表中发生的脚本错误。 (NEO-11655)
 * 修复了通过经过身份验证的Web代理连接到中间源服务器或消息中心时发生的问题。 (NEO-11309)
-* 修复了在基于SQL视图&#x200B;**选择特定架构**&#x200B;的元素后保存新投放组合时发生的Oracle错误。 (NEO-11682)
+* 修复了在选择特定架构的元素后保存新投放组合时发生的Oracle错误 **基于SQL视图**. (NEO-11682)
 * 修复了在使用解压缩选项通过加载文件活动处理包含.csv的zip文件时，导致生成包含误报的拒绝文件的问题。
 * xtkjoblog现已被清除。

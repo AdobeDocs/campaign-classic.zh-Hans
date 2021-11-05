@@ -40,7 +40,7 @@ _2021 年 3 月 31 日_
 * 修复了导致每天wfserver重新启动时运行的工作流停止的问题。 (NEO-30047)
 * 修复了在尝试同步 Adobe Experience Manager 模板时使用非管理员用户发出的 API 调用的安全问题。(NEO-32389, NEO-23487)
 * 修复了在使用模板创建的投放上关闭投放对话框时导致控制台崩溃的问题。 (NEO-31547)
-* 修复了在营销活动的&#x200B;**定位和工作流**&#x200B;选项卡中创建和保存投放时发生的问题：预览会失败，并出现以下错误。(NEO-29440)
+* 修复了在 **定位和工作流** 营销活动的选项卡：预览会失败，并出现以下错误。(NEO-29440)
 * 修复了Tomcat 8.5发送无效答案的问题，该问题导致事务性消息日志中出现错误。 (NEO-30858)
 * 修复了导致外部线程管理中内存损坏并影响性能的回归问题。
 * 修复了在使用自定义目标映射时可能导致计费工作流失败的问题。 自定义架构的主键存储在“sourceId”列中，该列仅允许整数值。 现在，它允许使用整数和字符串值。 (NEO-25914, NEO-28146)
@@ -65,13 +65,13 @@ _2020 年 12 月 22 日_
 >
 > * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。[了解详情](../../technotes/using/ims-updates.md)
 > * 此版本附带[安全修复](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign [的旧版oAuth身份验证模式已于2021年9月&#x200B;**停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。**&#x200B;托管环境从扩展中受益，直到2022年2月23日&#x200B;****。 作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
+> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign的旧版oAuth身份验证模式 [已经退休了](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) on **2021年9月**. 在扩展之前，托管环境将从扩展中受益  **2022年2月23日**. 作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 
 **改进**
 
 * 连接协议已经更新，以遵循新的 IMS 认证机制。
-* 最初基于oAUTH身份验证设置来访问管道的Triggers集成身份验证已更改并移至Adobe I/O。 [了解详情](../../integrations/using/configuring-adobe-io.md)
+* 最初基于oAUTH身份验证设置来访问管道的Triggers集成身份验证已更改并移至Adobe I/O。 [了解更多](../../integrations/using/configuring-adobe-io.md)
 * [终止支持 iOS APN 旧版二进制协议](https://developer.apple.com/news/?id=c88acm2b)之后，在升级后期间，所有使用此协议的实例都更新为 HTTP/2 协议。
 * 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
 * 修复了在发生连接错误后导致SMPP连接器停用、阻止发送其他短信投放并导致性能问题的问题。 (NEO-28609)
@@ -91,7 +91,7 @@ _2020 年 9 月 11 日_
 
 * 修复了由于投放部分的单个错误函数造成内存过载而导致阻止投放准备的回归。(NEO-27346)
 * 修复了在重新发布 Web 应用程序之前关闭 Apache 和 Web 服务器的升级后问题。(NEO-27155)
-* 修复了HTML模板管理中导致跟踪URL由于制表符解释错误而变得可见的回归。 (NEO-25909)
+* 修复了由于选项卡的解释错误，导致跟踪URL变为可见的HTML模板管理回归。 (NEO-25909)
 * 修复了由于非托管数据源而导致数据库清理工作流可能失败的问题。(NEO-23160, NEO-23364)
 * 清理工作流现在按 100 批而不是逐批清除过期列表。
 * 修复了阻止修改外部帐户的内部名称的回归。(NEO-27323)

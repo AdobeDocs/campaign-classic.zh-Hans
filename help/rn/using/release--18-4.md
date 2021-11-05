@@ -50,12 +50,12 @@ ht-degree: 7%
 * 电子邮件存档日志已得到增强，这使得检查哪些电子邮件已成功发送或通过密送存档失败变得更加容易和清晰。 (NEO-10675)
 * 修复了导致在跟踪广播中显示负载平衡器IP而不是客户IP的问题。 (NEO-11295)
 * 修复了使用FDA连接到PostgreSQL数据库时LATIN1编码错误。 (NEO-11299)
-* 修复了使用&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;提交选项时发生的问题。 (NEO-11047, NEO-11301)
+* 修复了在使用 **[!UICONTROL Prepare the personalization data with a workflow]** 投放选项。 (NEO-11047, NEO-11301)
 * 修复了导致投放属性被错误覆盖的随机问题。 (NEO-11015)
-* 修复了在&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流活动中使用计算字段时的问题。 (NEO-11382)
-* 修复了在&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流活动中使用XML中存储的数据时的问题。 (NEO-10816)
+* 修复了在 **[!UICONTROL Survey answers]** 工作流活动。 (NEO-11382)
+* 修复了在 **[!UICONTROL Survey answers]** 工作流活动。 (NEO-10816)
 * 修复了在版本8935中执行服务器升级时的问题。
-* 修复了在&#x200B;**[!UICONTROL Survey answers]**&#x200B;工作流活动未完全配置时，在升级后日志中显示无用错误的问题。
+* 修复了在升级后日志中显示无用错误的问题 **[!UICONTROL Survey answers]** 工作流活动未完全配置。
 * FDATeradata:修复了SQL表中自动递增的字段和索引的问题。
 
 ## 18.4.3 版 - 版本 8935{#release-18-4-3-build-8935}
@@ -68,7 +68,7 @@ ht-degree: 7%
 * 修复了LINE投放中图像链接个性化的问题。 (NEO-11077)
 * 修复了ID序列生成机制无法正常工作的问题。 (NEO-11115)
 * 修复了在使用具有整数类型协调键值的自定义命名空间时隐私(GDPR)请求无法工作的问题。 (NEO-11123)
-* 修复了在&#x200B;**[!UICONTROL Query]**&#x200B;工作流活动中使用&#x200B;**[!UICONTROL Distribution of values]**&#x200B;选项时可能发生的错误。 (NEO-10958)
+* 修复了在使用 **[!UICONTROL Distribution of values]** 选项 **[!UICONTROL Query]** 工作流活动。 (NEO-10958)
 * 修复了将选件空间从营销实例同步到交互实例时的问题。 (NEO-11162)
 * 改进了升级后期间长名称索引的管理
 
@@ -79,7 +79,7 @@ ht-degree: 7%
 **改进**
 
 * 修复了Windows Server更新无法正常工作的问题。
-* 修复了使用XML中存储的数据时&#x200B;**[!UICONTROL Survey Result]**&#x200B;活动中的问题。 报表显示不正确。 (NEO-10816)
+* 修复了 **[!UICONTROL Survey Result]** 活动。 报表显示不正确。 (NEO-10816)
 * 修复了使用退回邮件服务器时inMail进程可能发生的性能问题。 (NEO-10641)
 * 修复了在升级1000个以上架构时可能发生的数据库升级问题。
 
@@ -110,7 +110,7 @@ ht-degree: 7%
    <td> <p>Adobe Campaign现在提供活动用户档案的列表，通过专用工作流每月更新。</p> <p>有关详细信息，请参阅<a href="../../platform/using/about-profiles.md#active-profiles">有详细说明的文档</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td> Android推送连接器增强<br /> </td> 
+   <td> Android推送连接器增强功能<br /> </td> 
    <td> <p>Android连接器已得到增强，可支持更高的吞吐量。 </p> <p>有关详细信息，请参阅<a href="../../delivery/using/configuring-the-mobile-application.md">有详细说明的文档</a>。</p> </td> 
   </tr> 
  </tbody> 
@@ -126,22 +126,22 @@ ht-degree: 7%
 **改进**
 
 * **LINE渠道 — 架构增强**:与Adobe Campaign中的所有其他渠道一样，现在所有部署类型都支持LINE渠道：托管、混合和内部部署。
-* **序列自动生成**:ID生成机制已得到增强，可增加具有大量对象的Campaign实例的有效期。有关更多信息，请参阅此[技术说明](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html)。
+* **序列自动生成**:ID生成机制已得到增强，可增加具有大量对象的Campaign实例的有效期。 有关更多信息，请参阅 [技术说明](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html).
 
 **其他变更**
 
 * 新模式可用于使用命令行导入包，允许循环依赖项（对于大型包，不建议使用）。 有关更多信息，请参阅“技术演变”部分。 (NEO-8979)
 * 改进了Teradata中大量数据加载的性能，并修复了阻止显示日志中处理数据的正确值的问题。 (NEO-10429)
 * 现在，从Audience Manager导入受众可以处理拆分文件。 以前，只有区段的最后一个文件是由importSharedAudience技术工作流导入的。 (NEO-10156)
-* 在Windows上，Campaign服务器默认安装路径已更改。 启动64位版本设置时，默认安装路径现在为：**C:\Program Files\Adobe\Adobe Campaign Classic v7**，而不是&#x200B;**C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
+* 在Windows上，Campaign服务器默认安装路径已更改。 启动64位版本设置时，默认安装路径现在为： **C:\Program Files\Adobe\Adobe Campaign Classic v7** 而不是 **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * 默认MX规则已得到增强，可包含更多域并优化吞吐量。
 * 对部署向导SOAP调用(xtk:serverOptions#SaveOptions)强制实施访问限制。
 * 已删除weka.jar过时库，并更新OpenSSL库以进行安全优化。
 * 改进了计费技术工作流以保护实例性能。
-* 恢复了管理员设置或重置任何操作员密码的功能。 要执行此操作，请右键单击某个运算符，选择&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**&#x200B;并设置该运算符的新密码。 我们建议操作员在首次重新连接时更改其密码。 有关详细信息，请参阅[有详细说明的文档](../../production/using/lost-password.md)。
+* 恢复了管理员设置或重置任何操作员密码的功能。 要执行此操作，请右键单击运算符，选择 **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** 并设置操作员的新密码。 我们建议操作员在首次重新连接时更改其密码。 有关详细信息，请参阅[有详细说明的文档](../../production/using/lost-password.md)。
 * 为了支持Adobe Target中新增的多租户功能，现在在配置与Target集成的选项和外部帐户时，可以向URL中添加新的“at_property”参数。 可在Adobe Target中找到用于此参数的值，该值将在调用Target时由Campaign使用。 有关详细信息，请参阅[有详细说明的文档](../../integrations/using/inserting-a-dynamic-image.md)。
 * 现在，您可以指定在单击Adobe Target提供的图像时要打开的默认登录页面。 以前，单击该图像会导致在创建电子邮件时设置默认图像。 有关详细信息，请参阅[有详细说明的文档](../../integrations/using/inserting-a-dynamic-image.md)。
-* 在外部帐户中添加了&#x200B;**启用SMPP跟踪**&#x200B;复选框以强制执行跟踪输出。 有关详细信息，请参阅[有详细说明的文档](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
+* 添加了 **启用SMPP跟踪** 复选框以强制跟踪输出。 有关详细信息，请参阅[有详细说明的文档](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
 
 **技术演进**
 
@@ -182,7 +182,7 @@ urlEncode函数
 
 包导入新模式
 
-新模式可用于使用命令行导入包，允许循环依赖项（对于大型包，不建议使用）。 现有功能会保留。 对于具有循环依赖关系的此类包，已在命令行包导入中添加了新标记&#x200B;**-usejs**。 执行时，将像从界面执行包导入时一样使用JSEngine。
+新模式可用于使用命令行导入包，允许循环依赖项（对于大型包，不建议使用）。 现有功能会保留。 对于具有循环依赖关系的此类包，将添加一个新标记 **-usejs** 已添加到命令行包导入中。 执行时，将像从界面执行包导入时一样使用JSEngine。
 
 ```
 nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
@@ -193,14 +193,14 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * 修复了从Adobe Campaign Standard复制投放和跟踪日志到Adobe Campaign Classic时的同步问题。 (NEO-10023)
 * 修复了在快速加载操作失败后恢复ETL工作流时，处理Teradata中的错误和日志表时出现的问题。 现在，每次工作流继续时，错误和日志表都会被正确删除。 (NEO-10672)
 * 修复了在安装FDA包时自动安装Hive包(Hadoop需要)的升级后问题。 (NEO-10592)
-* 修复了将无效域视为&#x200B;**未定义**&#x200B;错误的错误。 (NEO-10248)
+* 修复了将无效域视为 **未定义** 错误。 (NEO-10248)
 * 修复了发送Android推送投放时，deliveryLogStats表中的日志重复的问题。 (NEO-10234)
 * 修复了可能导致条形码扫描仪无法读取某些条形码格式的问题。 (NEO-10125)
 * 修复了使用非ASCII字符时“urlEncode” JavaScript函数的问题。 有关更多信息，请参阅“技术演变”部分。 (NEO-10123)
 * 修复了在Teradata库上执行包含sha256函数的查询时的问题。 (NEO-10119)
 * 修复了在使用非常大的SalesForce表时，SalesForce活动中可能发生的工作流内存错误。 (NEO-9900)
-* 修复了使用FDA定位工作流活动时&#x200B;**生成补码**&#x200B;选项的问题。 (NEO-9878)
-* 修复了在使用中间源时可能导致营销实例上未更新&#x200B;**已处理**&#x200B;和&#x200B;**成功**&#x200B;量度的问题。 (NEO-9454)
+* 修复了 **生成补码** 选项来定位工作流活动。 (NEO-9878)
+* 修复了可能导致 **已处理** 和 **成功** 使用中间源时，量度不会在营销实例上更新。 (NEO-9454)
 * 修复了在平台中总选件超过10k时的交互非重命题规则(NEO-9352)
 * 修复了在使用XML外部文件时可能无法指定投放目标的问题。 (NEO-9312)
 * 修复了在选件上运行假设并更新建议状态时可能导致工作流错误的问题。 (NEO-9304)

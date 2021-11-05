@@ -6,7 +6,7 @@ exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: acb2c4e90c4ce349ea9c1ad53d703c13195872e1
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 50%
+ht-degree: 53%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 50%
 
 * **[9月版已正式发布！](rn/using/latest-release.md)**<br/> 在发行说明中了解新功能、改进和修复
 
-* **[Apple邮件隐私保护常](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)** 见问题解 **[](technotes/using/apple-mail-app-privacy-protection.md)**<br/> 答和技术说明查找针对Apple关于iOS 15的公告的初始指导
+* **[Apple邮件隐私保护常见问题解答](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hans)** 和 **[技术说明](technotes/using/apple-mail-app-privacy-protection.md)**<br/> 查找针对Apple关于iOS 15的公告的初始指南
 
-* **[通过IMS/Adobe ID连接？升级到最新内部版本](technotes/using/ims-updates.md)**<br/>如果您使用IMS连接到Campaign，则必须升级才能在2021年6月30日**&#x200B;之后连接到Campaign **
+* **[通过IMS/Adobe ID连接？ 升级到最新内部版本](technotes/using/ims-updates.md)**<br/> 如果您使用IMS连接到Campaign，则必须升级才能在** 2021年6月30日&#x200B;**
 
-* **[删除错误硬退回](delivery/using/update-bounce-qualification.md)**<br/> 了解如何在Apple中断后更新错误硬退回
+* **[删除错误的硬退回](delivery/using/update-bounce-qualification.md)**<br/> 了解如何在Apple中断后更新错误硬退回
 
-* **[保护Campaign实例](technotes/using/acc-config-updates.md)**<br/> 更新到最新内部版本以保护Campaign平台
+* **[保护Campaign实例](technotes/using/acc-config-updates.md)**<br/> 更新最新内部版本以保护您的Campaign平台
 
-* **[更新Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> 集成旧版oAuth身份验证服务已终止：您需要迁移到Adobe I/O。
+* **[更新Adobe Experience Cloud Triggers集成](integrations/using/configuring-adobe-io.md)**<br/> 旧版oAuth身份验证服务已终止：您需要迁移到Adobe I/O。
 
 [更多更新](rn/using/documentation-updates.md)
 
