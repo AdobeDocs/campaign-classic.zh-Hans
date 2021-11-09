@@ -3,7 +3,7 @@ product: campaign
 title: 迁移到Adobe Analytics Connector
 description: Campaign - Analytics连接器常见问题解答
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 89494165a59c0ba6119f37d41893fd0e8733f47d
+source-git-commit: 18b31ae504e1f1d13980bdf38925b38279b3be8c
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 5%
@@ -48,7 +48,7 @@ Campaign Classicv7与Adobe Analytics之间的新集成现已可用。 下面列�
 
 ## 如何更新？
 
-您需要升级到Campaign 21.1.3（或更高版本） **2022年3月1日之前**.
+您需要升级到Campaign 21.1.3（或更高版本） **2022年8月之前**.
 
 作为托管客户，Adobe将与您合作，将您的实例升级到较新版本。 然后，您便能够使用 [Adobe Analytics连接器](../../platform/using/adobe-analytics-connector.md).
 
