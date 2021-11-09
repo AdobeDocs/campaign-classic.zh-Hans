@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 活动模拟{#campaign-simulations}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## 关于模拟 {#about-simulations}
 
@@ -26,8 +26,8 @@ ht-degree: 2%
 >[!NOTE]
 >
 >在测试模式下准备的投放相互之间没有影响，例如在分布式营销中评估营销活动时，或在临时日历中未计划投放时。\
->这意味着压力和容量规则仅应用于&#x200B;**[!UICONTROL Target estimation and message personalization]**&#x200B;模式下的投放。 在&#x200B;**[!UICONTROL Estimation and approval of the provisional target]**&#x200B;和&#x200B;**[!UICONTROL Target evaluation]**&#x200B;模式下的投放未被考虑在内。\
->在投放属性的&#x200B;**[!UICONTROL Typology]**&#x200B;子选项卡中选择投放模式。
+>这意味着压力和容量规则仅应用于 **[!UICONTROL Target estimation and message personalization]** 模式。 中的投放 **[!UICONTROL Estimation and approval of the provisional target]** 和 **[!UICONTROL Target evaluation]** 模式。\
+>在 **[!UICONTROL Typology]** 的子选项卡。
 
 ![](assets/simu_campaign_select_delivery_mode.png)
 
@@ -37,19 +37,19 @@ ht-degree: 2%
 
 要创建模拟，请应用以下步骤：
 
-1. 打开&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL Create]**&#x200B;部分中的&#x200B;**[!UICONTROL More]**&#x200B;链接，然后选择&#x200B;**[!UICONTROL Simulation]**&#x200B;选项。
+1. 打开 **[!UICONTROL Campaigns]** ，单击 **[!UICONTROL More]** 链接 **[!UICONTROL Create]** ，然后选择 **[!UICONTROL Simulation]** 选项。
 
    ![](assets/simu_campaign_opti_01.png)
 
-1. 输入模板和模拟的名称。 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建模拟。
+1. 输入模板和模拟的名称。 单击 **[!UICONTROL Save]** 来创建模拟。
 
    ![](assets/simu_campaign_opti_02.png)
 
-1. 单击&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡以对其进行配置。
+1. 单击 **[!UICONTROL Edit]** 选项卡进行配置。
 
    ![](assets/simu_campaign_opti_edit.png)
 
-1. 在&#x200B;**[!UICONTROL Scope]**&#x200B;选项卡中，指定要为此模拟考虑的投放。 要执行此操作，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并指定要考虑的投放选择模式。
+1. 在 **[!UICONTROL Scope]** 选项卡，指定要为此模拟考虑的投放。 为此，请单击 **[!UICONTROL Add]** 按钮，并指定要考虑的投放选择模式。
 
    ![](assets/simu_campaign_opti_edit_scope.png)
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >如果您通过计划、项目或营销策划选择投放，则每当启动模拟时，Adobe Campaign都可以自动刷新投放列表以考虑这些内容。 要执行此操作，请选中&#x200B;**[!UICONTROL Refresh the selection of deliveries each time the simulation is started]**&#x200B;选项。
+   >如果您通过计划、项目或营销策划选择投放，则每当启动模拟时，Adobe Campaign都可以自动刷新投放列表以考虑这些内容。 为此，请检查 **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** 选项。
    >  
    >如果不这样做，则在创建模拟时，计划、项目群或营销策划中不可用的任何投放都将不被考虑在内：稍后添加的投放将被忽略。
 
@@ -67,21 +67,21 @@ ht-degree: 2%
 
    ![](assets/simu_campaign_opti_edit_scope_select.png)
 
-   单击&#x200B;**[!UICONTROL Finish]**&#x200B;以批准选择。
+   单击 **[!UICONTROL Finish]** 以批准选择。
 
    您可以手动组合属于计划、项目或营销策划的选定投放和投放。
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   如有必要，您可以通过&#x200B;**[!UICONTROL Edit the dynamic condition...]**&#x200B;链接使用动态条件。
+   如有必要，您可以通过 **[!UICONTROL Edit the dynamic condition...]** 链接。
 
-   单击&#x200B;**[!UICONTROL Save]**&#x200B;以批准此配置。
+   单击 **[!UICONTROL Save]** 以批准此配置。
 
    >[!NOTE]
    >
-   >在计算模拟时，只考虑已计算目标的投放(状态：**目标就绪**&#x200B;或&#x200B;**准备投放**)。
+   >在计算模拟时，只考虑已计算目标的投放(状态： **Target就绪** 或 **准备投放**)。
 
-1. 在&#x200B;**[!UICONTROL Calculations]**&#x200B;选项卡中，选择分析维度，例如收件人架构。
+1. 在 **[!UICONTROL Calculations]** 选项卡，例如选择分析维度，如收件人架构。
 
    ![](assets/simu_campaign_opti_dimension.png)
 
@@ -91,11 +91,11 @@ ht-degree: 2%
 
 ### 执行设置 {#execution-settings}
 
-模拟的&#x200B;**[!UICONTROL General]**&#x200B;选项卡允许您输入执行设置：
+的 **[!UICONTROL General]** 在模拟的选项卡中，您可以输入执行设置：
 
-* **[!UICONTROL Schedule execution for down-time]**&#x200B;选项根据所选的优先级将模拟启动定义为较短的忙时间段。 模拟使用大量数据库资源，这就是为什么非紧急模拟计划在夜间运行的原因。
-* **[!UICONTROL Priority]**&#x200B;是应用于模拟以延迟其触发的级别。
-* **[!UICONTROL Save SQL queries in the log]**.SQL日志允许您在模拟以错误结束时进行诊断。 它们还可以帮助您了解模拟过慢的原因。 模拟后，这些消息将显示在&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡的&#x200B;**[!UICONTROL SQL logs]**&#x200B;子选项卡中。
+* 的 **[!UICONTROL Schedule execution for down-time]** 选项会根据所选的优先级级别，将模拟启动定义为较短的忙时段。 模拟使用大量数据库资源，这就是为什么非紧急模拟计划在夜间运行的原因。
+* 的 **[!UICONTROL Priority]** 是应用于模拟以延迟其触发的级别。
+* **[!UICONTROL Save SQL queries in the log]**. SQL日志允许您在模拟以错误结束时进行诊断。 它们还可以帮助您了解模拟过慢的原因。 这些消息在 **[!UICONTROL SQL logs]** 的子选项卡 **[!UICONTROL Audit]** 选项卡。
 
 ## 执行模拟 {#executing-a-simulation}
 
@@ -103,49 +103,49 @@ ht-degree: 2%
 
 定义模拟范围后，即可执行它。
 
-要执行此操作，请打开模拟仪表板并单击&#x200B;**[!UICONTROL Start simulation]**。
+要执行此操作，请打开模拟仪表板并单击 **[!UICONTROL Start simulation]**.
 
 ![](assets/simu_campaign_opti_start.png)
 
-执行完成后，打开模拟并单击&#x200B;**[!UICONTROL Results]**&#x200B;选项卡，以查看为每个投放计算的目标。
+执行完成后，打开模拟并单击 **[!UICONTROL Results]** 选项卡，以查看为每个投放计算的目标。
 
 ![](assets/simu_campaign_opti_results.png)
 
-1. **[!UICONTROL Deliveries]**&#x200B;子选项卡列出了模拟考虑的所有投放。 它显示了两个计数：
+1. 的 **[!UICONTROL Deliveries]** 子选项卡列出了模拟考虑的所有投放。 它显示了两个计数：
 
-   * **[!UICONTROL Initial count]**&#x200B;是投放中估计目标时计算的目标。
-   * **[!UICONTROL Final count]**&#x200B;是模拟后计数的收件人数。
+   * 的 **[!UICONTROL Initial count]** 是在投放中估计时计算的目标。
+   * 的 **[!UICONTROL Final count]** 是模拟后计数的收件人数。
 
       初始计数和最终计数之间的差异反映了在模拟之前配置的各种规则或过滤器的应用。
 
-      要了解有关此计算的更多信息，请编辑&#x200B;**[!UICONTROL Exclusions]**&#x200B;子选项卡。
+      要进一步了解此计算，请编辑 **[!UICONTROL Exclusions]** 子选项卡。
 
-1. 使用&#x200B;**[!UICONTROL Exclusions]**&#x200B;子选项卡可以查看排除项划分。
+1. 的 **[!UICONTROL Exclusions]** 使用子选项卡可以查看排除项划分。
 
    ![](assets/simu_campaign_opti_14.png)
 
-1. **[!UICONTROL Alerts]**&#x200B;子选项卡将模拟期间生成的所有警报消息分组。 在容量过载时（例如，如果目标收件人数量超过设置的容量），可以发送警报消息。
-1. 使用&#x200B;**[!UICONTROL Exploration of the exclusions]**&#x200B;子选项卡可创建结果分析表。 用户需要在横坐标/纵坐标轴中指示变量。
+1. 的 **[!UICONTROL Alerts]** 子选项卡将模拟期间生成的所有警报消息分组。 在容量过载时（例如，如果目标收件人数量超过设置的容量），可以发送警报消息。
+1. 的 **[!UICONTROL Exploration of the exclusions]** 使用子选项卡可创建结果分析表。 用户需要在横坐标/纵坐标轴中指示变量。
 
-   有关创建分析表的示例，请参阅[浏览结果](#exploring-results)的结尾。
+   有关创建分析表的示例，请参阅 [浏览结果](#exploring-results).
 
 ### 查看结果 {#viewing-results}
 
 #### 审核 {#audit}
 
-使用&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡可以监视模拟执行。 **[!UICONTROL SQL Logs]**&#x200B;子选项卡对专家用户非常有用。 它以SQL格式列出执行日志。 只有在模拟执行之前在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中选择了&#x200B;**[!UICONTROL Save SQL queries in the log]**&#x200B;选项时，才会显示这些日志。
+的 **[!UICONTROL Audit]** 选项卡，监视模拟执行。 的 **[!UICONTROL SQL Logs]** 子选项卡对专家用户非常有用。 它以SQL格式列出执行日志。 这些日志仅在 **[!UICONTROL Save SQL queries in the log]** 选项 **[!UICONTROL General]** 选项卡。
 
 ![](assets/simu_campaign_opti_11.png)
 
 #### 浏览结果 {#exploring-results}
 
-通过&#x200B;**[!UICONTROL Exploration of the exclusions]**&#x200B;子选项卡可分析模拟结果的数据。
+的 **[!UICONTROL Exploration of the exclusions]** 使用子选项卡可分析模拟生成的数据。
 
-[此部分](../../reporting/using/about-adobe-campaign-reporting-tools.md)中详细描述性分析。
+描述性分析详见 [此部分](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 
 ## 模拟结果 {#results-of-a-simulation}
 
-**[!UICONTROL Log]**&#x200B;和&#x200B;**[!UICONTROL Results]**&#x200B;选项卡中的指标提供了模拟结果的第一个概述。 有关结果的更多详细信息，请打开&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。
+中的指标 **[!UICONTROL Log]** 和 **[!UICONTROL Results]** 选项卡提供模拟结果的首个概述。 有关结果的更多详细信息，请打开 **[!UICONTROL Reports]** 选项卡。
 
 ### 报告 {#reports}
 
@@ -161,11 +161,11 @@ ht-degree: 2%
 >
 >您可以创建新报告，并将其添加到提供的报告中。 如需详细信息，请参阅[此部分](../../reporting/using/about-adobe-campaign-reporting-tools.md)。
 
-要访问报告，请通过其仪表板单击目标模拟的&#x200B;**[!UICONTROL Reports]**&#x200B;链接。
+要访问报表，请单击 **[!UICONTROL Reports]** 目标模拟的链接。
 
 ![](assets/campaign_opt_reporting_edit_from_board.png)
 
-您还可以使用可从模拟仪表板访问的&#x200B;**[!UICONTROL Reports]**&#x200B;链接来编辑报告。
+您还可以使用 **[!UICONTROL Reports]** 可从模拟仪表板访问链接。
 
 ### 比较模拟 {#comparing-simulations-}
 
@@ -175,13 +175,13 @@ ht-degree: 2%
 
 **示例:**
 
-1. 对应用分类&#x200B;**A**&#x200B;的投放创建模拟。
-1. 在&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡中，编辑其中一个可用报表，例如&#x200B;**[!UICONTROL Detail of simulation exclusions]**。
+1. 在分类的投放上创建模拟 **A** 中，将应用于。
+1. 在 **[!UICONTROL Reports]** ，可编辑其中一个可用报表，例如 **[!UICONTROL Detail of simulation exclusions]** 例如。
 1. 在报表的右上方部分，单击图标以创建新历史记录。
 
    ![](assets/campaign_opt_reporting_create_hist.png)
 
-1. 关闭模拟并更改分类&#x200B;**A**&#x200B;的配置。
+1. 关闭模拟并更改分类配置 **A**.
 1. 再次执行模拟，并将结果与报告中显示的结果进行比较，报告中为其创建了历史记录。
 
    ![](assets/campaign_opt_reporting_edit_hist.png)
@@ -190,25 +190,25 @@ ht-degree: 2%
 
 ### 报表轴 {#reporting-axes}
 
-使用&#x200B;**[!UICONTROL Calculations]**&#x200B;选项卡可定义目标上的报告轴。 这些轴将在结果分析期间使用（请参阅[浏览结果](#exploring-results)）。
+的 **[!UICONTROL Calculations]** 选项卡，可在目标上定义报表轴。 这些轴将在结果分析期间使用(请参阅 [浏览结果](#exploring-results))。
 
 >[!NOTE]
 >
 >我们建议在模拟模板中定义计算轴，而不是针对每个模拟分别定义计算轴。\
->模拟模板保存在Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Templates > Simulation templates]**&#x200B;节点中。
+>模拟模板保存在 **[!UICONTROL Resources > Templates > Simulation templates]** Adobe Campaign树的节点。
 
 **示例:**
 
 在以下示例中，我们希望根据收件人的状态（“客户”、“潜在客户”或“无”）创建一个额外的报表轴。
 
-1. 要定义报告轴，请在&#x200B;**[!UICONTROL Analysis dimension]**&#x200B;字段中选择包含要处理的信息的表。 此信息是强制性的。
+1. 要定义报告轴，请选择包含要在 **[!UICONTROL Analysis dimension]** 字段。 此信息是强制性的。
 1. 在此，我们要选择收件人表的Segment字段。
 
    ![](assets/simu_campaign_opti_09.png)
 
 1. 可以使用以下选项：
 
-   * **[!UICONTROL Generate target overlap statistics]** 允许您恢复模拟报告中的所有重叠统计信息。重叠是在一个模拟内至少两次投放中定向的收件人。
+   * **[!UICONTROL Generate target overlap statistics]** 允许您恢复模拟报告中的所有重叠统计信息。 重叠是在一个模拟内至少两次投放中定向的收件人。
 
       >[!IMPORTANT]
       >
@@ -220,7 +220,7 @@ ht-degree: 2%
       >
       >自动保存这些表需要大量存储容量：确保数据库足够大。
 
-显示模拟结果时，所选表达式的信息将显示在&#x200B;**[!UICONTROL Overlaps]**&#x200B;子选项卡中。
+当显示模拟结果时，有关所选表达式的信息将显示在 **[!UICONTROL Overlaps]** 子选项卡。
 
 投放目标重叠表示模拟至少两次投放中的目标收件人。
 
@@ -228,6 +228,6 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->仅当&#x200B;**[!UICONTROL Generate target recovery statistics]**&#x200B;选项已启用时，才会显示此子选项卡。
+>此子选项卡仅在 **[!UICONTROL Generate target recovery statistics]** 选项。
 
-可以在&#x200B;**[!UICONTROL Exploring exclusions]**&#x200B;子选项卡中创建的排除分析报表中处理有关报告轴的信息。 有关更多信息，请参阅[浏览结果](#exploring-results)。
+在 **[!UICONTROL Exploring exclusions]** 子选项卡。 有关更多信息，请参阅 [浏览结果](#exploring-results).

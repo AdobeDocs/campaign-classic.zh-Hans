@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 89494165a59c0ba6119f37d41893fd0e8733f47d
 workflow-type: tm+mt
 source-wordcount: '1657'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -47,7 +47,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   <td>Adobe Analytics Data Connector<br></td>
    <td><p>从 Campaign 21.1.3 版本开始，弃用 Adobe Analytics Data Connector。</p>
    <p>如果您使用的是此连接器，则需要相应地调整实施。<a href="../../platform/using/adobe-analytics-connector.md">了解详情</a></p>
-  <p><em>目标移除日期：2022 年 3 月 1 日</em></p>
+  <p><em>目标移除日期：2022年8月</em></p>
   </td>
  </tr>
     <tr>

@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 2%
@@ -15,11 +15,11 @@ ht-degree: 2%
 
 # 筛选规则{#filtering-rules}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 通过筛选规则，您可以根据查询中定义的条件定义要排除的消息。 这些规则已链接到定向维度。
 
-筛选规则可以链接到其他类型的规则（控制、压力等） ，或分组到专用&#x200B;**筛选**&#x200B;分类中。 有关更多信息，请参阅[创建和使用过滤分类](#creating-and-using-a-filtering-typology)。
+筛选规则可以链接到其他类型的规则（控制、压力等） 分类，或分组到 **筛选** 分类。 有关更多信息，请参阅 [创建和使用过滤分类](#creating-and-using-a-filtering-typology).
 
 ## 创建过滤规则 {#creating-a-filtering-rule}
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 要定义此过滤器，请应用以下步骤：
 
-1. 创建适用于所有通信渠道的&#x200B;**[!UICONTROL Filtering]**&#x200B;分类规则。
+1. 创建 **[!UICONTROL Filtering]** 分类规则。
 
    ![](assets/campaign_opt_create_filter_01.png)
 
@@ -35,7 +35,7 @@ ht-degree: 2%
 
    ![](assets/campaign_opt_create_filter_02.png)
 
-1. 使用&#x200B;**[!UICONTROL Edit the query from the targeting dimension...]**&#x200B;链接创建过滤器。
+1. 使用创建过滤器 **[!UICONTROL Edit the query from the targeting dimension...]** 链接。
 
    ![](assets/campaign_opt_create_filter_03.png)
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 您可以根据链接的投放大纲或投放大纲限制筛选规则的应用程序字段。
 
-要实现此目的，请转到分类规则的&#x200B;**[!UICONTROL General]**&#x200B;选项卡，选择要应用的限制类型并创建过滤器，如下所示：
+要执行此操作，请转到 **[!UICONTROL General]** ，选择要应用的限制类型并创建过滤器，如下所示：
 
 ![](assets/campaign_opt_create_filter_06.png)
 
@@ -59,19 +59,19 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->分类和筛选规则可在工作流的&#x200B;**[!UICONTROL Delivery outline]**&#x200B;活动中使用。 如需详细信息，请参阅[此部分](../../workflow/using/delivery-outline.md)。
+>分类和过滤规则可在工作流中的 **[!UICONTROL Delivery outline]** 活动。 如需详细信息，请参阅[此部分](../../workflow/using/delivery-outline.md)。
 
 ## 创建和使用过滤分类 {#creating-and-using-a-filtering-typology}
 
-您可以创建&#x200B;**[!UICONTROL Filtering]**&#x200B;分类：它们只包含过滤规则。
+您可以创建 **[!UICONTROL Filtering]** 分类：它们只包含过滤规则。
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-选择目标后，这些特定分类可以链接到投放：在投放向导中，单击&#x200B;**[!UICONTROL To]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Exclusions]**&#x200B;选项卡。
+选择目标后，这些特定分类可以链接到投放：在投放向导中，单击 **[!UICONTROL To]** 链接，然后单击 **[!UICONTROL Exclusions]** 选项卡。
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
-然后，选择要应用于投放的筛选分类。 为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择要应用的分类。
+然后，选择要应用于投放的筛选分类。 为此，请单击 **[!UICONTROL Add]** 按钮，然后选择要应用的分类。
 
 您还可以通过此选项卡直接链接过滤规则，而无需将规则分组到分类中。 要实现此目的，请使用窗口的下部。
 
@@ -85,7 +85,7 @@ ht-degree: 2%
 
 ## 默认的投放能力排除规则 {#default-deliverability-exclusion-rules}
 
-默认情况下，可使用两个筛选规则：**[!UICONTROL Exclude addresses]**(**[!UICONTROL addressExclusions]**)和&#x200B;**[!UICONTROL Exclude domains]**(**[!UICONTROL domainExclusions]**)。 在电子邮件分析期间，这些规则将收件人电子邮件地址与可投放性实例中管理的加密全局抑制列表中包含的禁止地址或域名进行比较。 如果存在匹配项，则不会向该收件人发送消息。
+默认情况下，可使用两个筛选规则： **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** )和 **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** )。 在电子邮件分析期间，这些规则将收件人电子邮件地址与可投放性实例中管理的加密全局抑制列表中包含的禁止地址或域名进行比较。 如果存在匹配项，则不会向该收件人发送消息。
 
 这是为了避免由于恶意活动(阻止列表尤其是使用Spamtrap)而被添加到中。 例如，如果使用Spamtrap通过您的一个Web窗体订阅，则会自动向该Spamtrap发送确认电子邮件，这会导致您的地址被自动添加到该阻止列表页面。
 

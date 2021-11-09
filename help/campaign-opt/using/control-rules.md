@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # 控制规则{#control-rules}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## 分析和仲裁控制规则 {#analysis-and-arbitration-control-rules}
 
@@ -30,11 +30,11 @@ ht-degree: 3%
 * **[!UICONTROL Validity period check]** （电子邮件）：检查投放的有效期是否足够长以发送所有消息。
 * **[!UICONTROL Proof size check]** （所有渠道）：如果校样目标群体超过100个收件人，则会生成错误消息。
 * **[!UICONTROL Wave scheduling check]** （电子邮件）：检查如果投放被划分为多个批次，则最后一波投放是否计划在有效期结束前开始。
-* **[!UICONTROL Unsubscription link approval]** （电子邮件）：检查每个内容（HTML和文本）中是否至少有一个退订（选择退订）URL。
+* **[!UICONTROL Unsubscription link approval]** （电子邮件）：检查每个内容(HTML和文本)中是否存在至少一个退订（选择退出）URL。
 
 ## 创建控制规则 {#creating-a-control-rule}
 
-可以创建新的控制规则以满足您的需求。 为此，请创建&#x200B;**[!UICONTROL Control]**&#x200B;分类规则，并在&#x200B;**[!UICONTROL Code]**&#x200B;选项卡的SQL中输入控制公式。
+可以创建新的控制规则以满足您的需求。 为此，请创建 **[!UICONTROL Control]** 分类规则，并在SQL的 **[!UICONTROL Code]** 选项卡。
 
 **示例:**
 
@@ -42,11 +42,11 @@ ht-degree: 3%
 
 应用以下步骤：
 
-1. 创建&#x200B;**[!UICONTROL Control]**&#x200B;分类规则。 选择&#x200B;**[!UICONTROL Warning]**&#x200B;警报级别。
+1. 创建 **[!UICONTROL Control]** 分类规则。 选择 **[!UICONTROL Warning]** 警报级别。
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. 在&#x200B;**[!UICONTROL Code]**&#x200B;选项卡中，输入要应用所需阈值的脚本，如下所示：
+1. 在 **[!UICONTROL Code]** 选项卡，输入要应用所需阈值的脚本，如下所示：
 
    ![](assets/campaign_opt_create_control_02.png)
 
@@ -70,6 +70,6 @@ ht-degree: 3%
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   分析结束时，**[!UICONTROL Confirm delivery]**&#x200B;按钮将不可用。
+   分析结束时， **[!UICONTROL Confirm delivery]** 按钮将不可用。
 
    ![](assets/campaign_opt_create_control_06.png)
