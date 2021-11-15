@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 14%
+ht-degree: 4%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 14%
 
 ## 提取文件 {#extraction-file}
 
-包含提取数据的文件的名称在&#x200B;**[!UICONTROL File]**&#x200B;字段中定义。 利用字段右侧的按钮，可使用个性化字段创建文件名。
+包含提取数据的文件的名称在 **[!UICONTROL File]** 字段。 利用字段右侧的按钮，可使用个性化字段创建文件名。
 
-默认情况下，会创建提取文件并将其存储在服务器上。 您可以将其保存在计算机上。 为此，请检查&#x200B;**[!UICONTROL Download the generated file after the analysis of the delivery]**。 在这种情况下，您需要指示本地存储目录的访问路径以及文件名。
+默认情况下，会创建提取文件并将其存储在服务器上。 您可以将其保存在计算机上。 为此，请检查 **[!UICONTROL Download the generated file after the analysis of the delivery]**. 在这种情况下，您需要指示本地存储目录的访问路径以及文件名。
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-对于直邮投放，提取内容在&#x200B;**[!UICONTROL Edit the extraction file format...]**&#x200B;链接中定义。
+对于直邮投放，提取的内容在 **[!UICONTROL Edit the extraction file format...]** 链接。
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
@@ -37,4 +37,4 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->此向导包括导出向导的步骤，详见[快速入门](../../platform/using/executing-export-jobs.md)一节。
+>此向导包括导出向导的步骤，详见 [快速入门](../../platform/using/executing-export-jobs.md) 中。

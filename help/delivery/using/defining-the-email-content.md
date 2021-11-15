@@ -6,31 +6,31 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1990'
 ht-degree: 1%
 
 ---
 
-# 定义电子邮件内容 {#defining-the-email-content}
+# 定义电子邮件的内容 {#defining-the-email-content}
 
 ![](../../assets/common.svg)
 
 ## 发件人 {#sender}
 
-要定义将显示在发送邮件标题中的发件人的名称和地址，请单击&#x200B;**[!UICONTROL From]**&#x200B;链接。
+要定义将显示在发送邮件标题中的发件人的名称和地址，请单击 **[!UICONTROL From]** 链接。
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
 利用此窗口，可输入创建电子邮件标题所需的所有信息。 此信息可以个性化。要实现此目的，请使用输入字段右侧的按钮插入个性化字段。
 
-要了解如何插入和使用个性化字段，请参阅[关于个性化](about-personalization.md)一节。
+要了解如何插入和使用个性化字段，请参阅 [关于个性化](about-personalization.md) 中。
 
 >[!NOTE]
 >
 >* 默认情况下，发件人的地址将用于回复。
->* 标头参数不得为空。 默认情况下，它们包含配置部署向导时输入的值。 有关详细信息，请参阅[安装指南](../../installation/using/deploying-an-instance.md)。
+>* 标头参数不得为空。 默认情况下，它们包含配置部署向导时输入的值。 有关详细信息，请参阅 [安装指南](../../installation/using/deploying-an-instance.md).
 >* 发送者的地址是允许发送电子邮件的强制地址（RFC标准）。
 >* Adobe Campaign检查输入的电子邮件地址的语法。
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 ## 消息主题 {#message-subject}
 
-消息的主题在相应的字段中配置。 您可以直接在字段中输入该脚本，也可以单击&#x200B;**[!UICONTROL Subject]**&#x200B;链接以输入脚本。 个性化链接允许您在主题中插入数据库字段。
+消息的主题在相应的字段中配置。 您可以直接在字段中输入，也可以单击 **[!UICONTROL Subject]** 链接以输入脚本。 个性化链接允许您在主题中插入数据库字段。
 
 >[!IMPORTANT]
 >
@@ -55,9 +55,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[关于个性化](about-personalization.md)中介绍了个性化字段的使用情况。
+>个性化字段的使用情况请参见 [关于个性化](about-personalization.md).
 
-您还可以使用&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口将表情符号插入主题行。
+您还可以在主题行中插入表情符号 **[!UICONTROL Insert emoticon]** 弹出窗口。
 
 ## 消息内容 {#message-content}
 
@@ -67,35 +67,35 @@ ht-degree: 1%
 
 消息的内容在投放配置窗口的下半部分中定义。
 
-默认情况下，根据收件人首选项，消息以HTML或文本格式发送。 我们建议以这两种格式创建内容，以确保消息能够在任何邮件系统中正确显示。 有关更多信息，请参阅[选择消息格式](#selecting-message-formats)。
+默认情况下，根据收件人首选项以HTML或文本格式发送消息。 我们建议以这两种格式创建内容，以确保消息能够在任何邮件系统中正确显示。 有关更多信息，请参阅 [选择消息格式](#selecting-message-formats).
 
-* 要导入HTML内容，请使用&#x200B;**[!UICONTROL Open]**&#x200B;按钮。 您还可以将源代码直接粘贴到&#x200B;**[!UICONTROL Source]**&#x200B;子选项卡中。
+* 要导入HTML内容，请使用 **[!UICONTROL Open]** 按钮。 您还可以将源代码直接粘贴到 **[!UICONTROL Source]** 子选项卡。
 
-   如果您使用的是[数字内容编辑器](../../web/using/about-campaign-html-editor.md)(DCE)，请参阅[选择内容模板](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content)。
+   如果您使用 [数字内容编辑器](../../web/using/about-campaign-html-editor.md) (DCE)，请参见 [选择内容模板](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
    >[!IMPORTANT]
    >
    >必须事先创建HTML内容，然后将其导入Adobe Campaign。 HTML编辑器不适用于内容创建。
 
-   **[!UICONTROL Preview]**&#x200B;子选项卡允许您查看收件人的每个内容的呈现。 个性化字段和内容的条件元素将替换为选定用户档案的相应信息。
+   的 **[!UICONTROL Preview]** 使用子选项卡可以查看收件人的每个内容的呈现。 个性化字段和内容的条件元素将替换为选定用户档案的相应信息。
 
    利用工具栏按钮，可访问HTML页面的标准操作和格式参数。
 
    ![](assets/s_ncs_user_wizard_email01_138.png)
 
-   您可以在Adobe Campaign的本地文件或图像库的消息中插入图像。 要执行此操作，请单击&#x200B;**[!UICONTROL Image]**&#x200B;图标，然后选择相应的选项。
+   您可以在Adobe Campaign的本地文件或图像库的消息中插入图像。 为此，请单击 **[!UICONTROL Image]** 图标，然后选择相应的选项。
 
    ![](assets/s_ncs_user_wizard_email01_18.png)
 
-   可以通过文件夹树中的&#x200B;**[!UICONTROL Resources>Online>Public resources]**&#x200B;文件夹访问库图像。 另请参阅[添加图像](#adding-images)。
+   库图像可以通过 **[!UICONTROL Resources>Online>Public resources]** 文件夹。 另请参阅 [添加图像](#adding-images).
 
    利用工具栏中的最后一个按钮可插入个性化字段。
 
    >[!NOTE]
    >
-   >[关于个性化](about-personalization.md)中介绍了个性化字段的使用情况。
+   >个性化字段的使用情况请参见 [关于个性化](about-personalization.md).
 
-   通过页面底部的选项卡，可显示所创建页面的HTML代码，并查看消息的个性化呈现。 要启动此显示屏，请单击&#x200B;**[!UICONTROL Preview]** ，然后使用工具栏中的&#x200B;**[!UICONTROL Test personalization]**&#x200B;按钮选择收件人。 您可以从定义的目标中选择收件人或选择其他收件人。
+   通过页面底部的选项卡，可显示所创建页面的HTML代码，并查看消息的个性化呈现。 要启动此显示，请单击 **[!UICONTROL Preview]** 并使用 **[!UICONTROL Test personalization]** 按钮。 您可以从定义的目标中选择收件人或选择其他收件人。
 
    ![](assets/s_ncs_user_wizard_email01_139.png)
 
@@ -103,24 +103,24 @@ ht-degree: 1%
 
    ![](assets/s_ncs_user_wizard_email01_140.png)
 
-* 要导入文本内容，请使用&#x200B;**[!UICONTROL Open]**&#x200B;按钮或&#x200B;**[!UICONTROL Text Content]**&#x200B;选项卡输入以文本格式显示的消息内容。 使用工具栏按钮访问对内容的操作。 使用最后一个按钮可插入个性化字段。
+* 要导入文本内容，请使用 **[!UICONTROL Open]** 按钮，或 **[!UICONTROL Text Content]** 选项卡来输入以文本格式显示的消息内容。 使用工具栏按钮访问对内容的操作。 使用最后一个按钮可插入个性化字段。
 
    ![](assets/s_ncs_user_wizard_email01_141.png)
 
-   对于HTML格式，单击页面底部的&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡可查看消息的个性化呈现。
+   对于HTML格式，请单击 **[!UICONTROL Preview]** 选项卡，以查看消息的呈现及其个性化设置。
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
-## 定义互动内容 {#amp-for-email-format}
+## 定义交互式内容 {#amp-for-email-format}
 
-Adobe Campaign允许您尝试新的交互式[AMP for Email](https://amp.dev/about/email/)格式，该格式允许在特定条件下发送动态电子邮件。
+Adobe Campaign允许您尝试使用新的交互式 [用于电子邮件的AMP](https://amp.dev/about/email/) 格式，它允许在特定条件下发送动态电子邮件。
 
 有关更多信息，请参阅[此章节](defining-interactive-content.md)。
 
 ## 使用内容管理 {#using-content-management}
 
-您可以直接在投放向导中使用内容管理表单定义投放的内容。 要实现此目的，必须在投放属性的&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中引用要使用的内容管理的发布模板。
+您可以直接在投放向导中使用内容管理表单定义投放的内容。 要实现此目的，您必须引用要在 **[!UICONTROL Advanced]** 选项卡。
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -130,39 +130,39 @@ Adobe Campaign允许您尝试新的交互式[AMP for Email](https://amp.dev/abou
 
 >[!NOTE]
 >
->有关Adobe Campaign中内容管理的更多信息，请参阅[此部分](about-content-management.md)。
+>有关Adobe Campaign中内容管理的更多信息，请参阅 [此部分](about-content-management.md).
 
 ## 插入表情符号 {#inserting-emoticons}
 
 您可以在电子邮件内容中插入表情符号。
 
-1. 单击&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;图标。
+1. 单击 **[!UICONTROL Insert emoticon]** 图标。
 1. 从弹出窗口中选择一个表情符号。
 
    ![](assets/emoticon_4.png)
 
-1. 完成后单击&#x200B;**[!UICONTROL Close]**&#x200B;按钮。
+1. 单击 **[!UICONTROL Close]** 按钮。
 
-要自定义表情符号列表，请参阅此[页面](customizing-emoticon-list.md)。
+要自定义表情符号列表，请参阅 [页面](customizing-emoticon-list.md).
 
 ## 添加图像 {#adding-images}
 
-HTML格式的电子邮件投放可以包含图像。 在投放向导中，您可以导入包含图像的HTML页面，或通过&#x200B;**[!UICONTROL Image]**&#x200B;图标使用HTML编辑器直接插入图像。
+HTML格式电子邮件投放可以包含图像。 在投放向导中，您可以导入包含图像的HTML页面，或使用HTML编辑器直接通过 **[!UICONTROL Image]** 图标。
 
 图像可以是：
 
 * 本地图像或从服务器调用的图像
 * 存储在Adobe Campaign公共资源库中的图像
 
-   可通过Adobe Campaign层级的&#x200B;**[!UICONTROL Resources > Online]**&#x200B;节点访问公共资源。 它们分组到库中，并可包含在电子邮件中，但也可用于营销活动或任务，或内容管理。
+   公共资源可通过 **[!UICONTROL Resources > Online]** Adobe Campaign层次结构的节点。 它们分组到库中，并可包含在电子邮件中，但也可用于营销活动或任务，或内容管理。
 
 * 与Adobe Experience Cloud共享的资产。 请参阅[此小节](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md)。
 
 >[!IMPORTANT]
 >
->要使用投放向导在电子邮件中包含图像，必须将Adobe Campaign实例配置为启用公共资源管理。 可以从部署向导中执行此过程。 有关配置的详细信息，请参阅[此部分](../../installation/using/deploying-an-instance.md)。
+>要使用投放向导在电子邮件中包含图像，必须将Adobe Campaign实例配置为启用公共资源管理。 可以从部署向导中执行此过程。 请参阅 [此部分](../../installation/using/deploying-an-instance.md) 以了解有关配置的详细信息。
 
-利用投放向导，可向消息内容中添加本地图像或库中存储的图像。 要实现此目的，请单击HTML内容工具栏中的&#x200B;**[!UICONTROL Image]**&#x200B;按钮。
+利用投放向导，可向消息内容中添加本地图像或库中存储的图像。 为此，请单击 **[!UICONTROL Image]** 按钮。
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -172,15 +172,15 @@ HTML格式的电子邮件投放可以包含图像。 在投放向导中，您可
 
 要通过投放向导管理图像，请执行以下操作：
 
-1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**图标。
+1. 单击 **[!UICONTROL Tracking & Images]** 图标。
    ![](assets/s_ncs_user_email_del_img_param.png)
 
-1. 在&#x200B;**[!UICONTROL Images]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Upload images]**。
+1. 选择 **[!UICONTROL Upload images]** 在 **[!UICONTROL Images]** 选项卡。
 1. 然后，您可以选择是否要在电子邮件中包含图像。
    ![](assets/s_ncs_user_email_del_img_upload.png)
 
-* 您可以手动上传图像，而无需等待投放分析阶段。 为此，请单击&#x200B;**[!UICONTROL Upload the images straightaway...]**&#x200B;链接。
-* 您可以指定其他路径以访问跟踪服务器上的图像。 要实现此目的，请在&#x200B;**[!UICONTROL Images URL]**&#x200B;字段中输入。 此值将覆盖安装向导参数中定义的值。
+* 您可以手动上传图像，而无需等待投放分析阶段。 为此，请单击 **[!UICONTROL Upload the images straightaway...]** 链接。
+* 您可以指定其他路径以访问跟踪服务器上的图像。 要执行此操作，请在 **[!UICONTROL Images URL]** 字段。 此值将覆盖安装向导参数中定义的值。
 
 在投放向导中打开包含图像的HTML内容时，系统会显示一条消息，提示您可以根据投放参数立即上传图像。
 
@@ -190,7 +190,7 @@ HTML格式的电子邮件投放可以包含图像。 在投放向导中，您可
 >
 >* 在手动上传或发送消息期间，会修改图像访问路径。
 > 
->* 为避免出现性能问题，如果您包含从个性化URL中以[attachment](attaching-files.md)形式动态下载的图像，则默认情况下，每个图像大小不应超过100,000字节。 此建议的阈值可从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置。
+>* 为避免出现性能问题，如果您将从个性化URL动态下载的图像包含为 [附件](attaching-files.md)，则默认情况下每个图像大小不应超过100,000字节。 建议的阈值可从 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
 
 
 **用例：发送包含图像的消息**
@@ -199,25 +199,25 @@ HTML格式的电子邮件投放可以包含图像。 在投放向导中，您可
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
-这些图像来自本地目录或网站，您可以通过&#x200B;**[!UICONTROL Source]**&#x200B;选项卡进行验证。
+这些图像来自本地目录或网站，您可以从 **[!UICONTROL Source]** 选项卡。
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_2.png)
 
-单击&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;图标，然后单击&#x200B;**[!UICONTROL Images]**&#x200B;选项卡以开始检测消息中的图像。
+单击 **[!UICONTROL Tracking & Images]** 图标，然后 **[!UICONTROL Images]** 选项卡，以开始检测消息中的图像。
 
 对于检测到的每个图像，您可以查看其状态：
 
-* 如果图像存储在本地或位于另一台服务器上，即使此服务器从外部（例如在互联网网站上）可见，也会被检测为&#x200B;**[!UICONTROL Not yet online]**。
-* 如果在创建其他投放时之前上传了图像，则会将其检测为&#x200B;**[!UICONTROL Already online]**。
-* 在部署向导中，您可以定义未启用图像检测的URL:上传这些图像将为&#x200B;**[!UICONTROL Skipped]**。
+* 如果图像存储在本地或位于另一台服务器上，即使此服务器从外部（例如在互联网网站上）可见，也会检测到 **[!UICONTROL Not yet online]**.
+* 图像被检测为 **[!UICONTROL Already online]** 如果在创建其他投放时之前上传了这些内容。
+* 在部署向导中，您可以定义未启用图像检测的URL:上传这些图像时 **[!UICONTROL Skipped]**.
 
 >[!NOTE]
 >
->图像是通过其内容而不是访问路径来标识的。 这意味着先前以不同名称或不同目录中上传的图像将被检测为&#x200B;**[!UICONTROL Already online]**。
+>图像是通过其内容而不是访问路径来标识的。 这意味着先前以其他名称或其他目录中上传的图像将检测为 **[!UICONTROL Already online]**.
 
 在分析阶段，图像会自动上传到服务器，以便从外部访问它们，但本地图像必须预先上传。
 
-您可以继续工作并上传图像，以便其他Adobe Campaign操作员能够查看它们。 如果您能够协作，您可能会发现此功能非常有用。 为此，请单击&#x200B;**[!UICONTROL Upload the images straightaway...]**&#x200B;将图像上传到服务器。
+您可以继续工作并上传图像，以便其他Adobe Campaign操作员能够查看它们。 如果您能够协作，您可能会发现此功能非常有用。 为此，请单击 **[!UICONTROL Upload the images straightaway...]** 将图像上传到服务器。
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
@@ -225,11 +225,11 @@ HTML格式的电子邮件投放可以包含图像。 在投放向导中，您可
 >
 >然后，会修改电子邮件中图像的URL，特别是其名称。
 
-图像联机后，您可以从消息的&#x200B;**[!UICONTROL Source]**&#x200B;选项卡查看对其名称和路径的更改。
+图像联机后，您可以从 **[!UICONTROL Source]** 选项卡。
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_4.png)
 
-如果选择&#x200B;**[!UICONTROL Include the images in the email]**，则可以选择要包含在相应列中的图像。
+如果您选择 **[!UICONTROL Include the images in the email]**，则可以选择要包含在相应列中的图像。
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_5.png)
 
@@ -237,7 +237,7 @@ HTML格式的电子邮件投放可以包含图像。 在投放向导中，您可
 >
 >如果消息中包含本地图像，则必须确认对消息源代码的更改。
 
-## 在电子邮件中插入条形码{#inserting-a-barcode-in-an-email}
+## 插入个性化条形码{#insert-a-barcode}
 
 条形码生成模块允许您创建符合许多常见标准（包括2D条形码）的几种条形码。
 
@@ -257,7 +257,7 @@ HTML格式的电子邮件投放可以包含图像。 在投放向导中，您可
 
       ![](assets/barcode_insert_08.png)
 
-   * 数据矩阵和PDF417类型涉及2D格式。
+   * DataMatrix和PDF417类型涉及2D格式。
 
       2D条形码示例：
 
@@ -272,25 +272,25 @@ HTML格式的电子邮件投放可以包含图像。 在投放向导中，您可
       ![](assets/barcode_insert_12.png)
 
 1. 输入要插入到电子邮件中的条形码的大小：通过配置比例，您可以增加或减小条形码的大小，从x1到x10。
-1. **[!UICONTROL Value]**&#x200B;字段允许您定义条形码的值。 值可以匹配特殊选件，也可以是标准的函数，也可以是链接到客户的数据库字段的值。
+1. 的 **[!UICONTROL Value]** 字段，可定义条形码的值。 值可以匹配特殊选件，也可以是标准的函数，也可以是链接到客户的数据库字段的值。
 
-   此示例显示EAN-8类型的条形码，该条形码已添加到收件人的帐户号。 要添加此帐号，请单击&#x200B;**[!UICONTROL Value]**&#x200B;字段右侧的个性化按钮，然后选择&#x200B;**[!UICONTROL Recipient > Account number]**。
+   此示例显示EAN-8类型的条形码，该条形码已添加到收件人的帐户号。 要添加此帐号，请单击 **[!UICONTROL Value]** 字段和选择 **[!UICONTROL Recipient > Account number]**.
 
    ![](assets/barcode_insert_15.png)
 
-1. **[!UICONTROL Height]**&#x200B;字段允许您通过更改每个条形之间的间距量，在不更改其宽度的情况下配置条形码的高度。
+1. 的 **[!UICONTROL Height]** 字段，您可以通过更改条形码之间的间距量，在不更改其宽度的情况下配置条形码的高度。
 
-   没有基于条形码类型的限制性输入控件。 如果条形码值不正确，它将仅在&#x200B;**预览**&#x200B;模式下显示，在该模式下，条形码将以红色划出。
+   没有基于条形码类型的限制性输入控件。 如果条形码值不正确，则它将仅在 **预览** 用红色划出条形码的模式。
 
    >[!NOTE]
    >
    >分配给条形码的值取决于其类型。 例如，EAN-8类型的数字应恰好为8。
    >
-   >通过&#x200B;**[!UICONTROL Value]**&#x200B;字段右侧的个性化按钮，除了值本身之外，您还可以添加数据。 这丰富了条形码，只要条形码标准接受它。
+   >右侧的个性化按钮 **[!UICONTROL Value]** 字段，除了值本身之外，您还可以添加数据。 这丰富了条形码，只要条形码标准接受它。
    >
-   >例如，如果您使用GS1-128类型条形码，并且希望输入收件人的帐号以及值，请单击个性化按钮并选择&#x200B;**[!UICONTROL Recipient > Account number]**。 如果所选收件人的帐号输入正确，则条形码会将其考虑在内。
+   >例如，如果您使用GS1-128类型条形码，并且想要输入收件人的帐号以及值，请单击个性化按钮并选择 **[!UICONTROL Recipient > Account number]**. 如果所选收件人的帐号输入正确，则条形码会将其考虑在内。
 
-配置这些元素后，您可以完成电子邮件并发送它。 要避免出现错误，请始终在通过单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡执行投放之前确保内容显示正确。
+配置这些元素后，您可以完成电子邮件并发送它。 要避免出现错误，请始终在通过单击 **[!UICONTROL Preview]** 选项卡。
 
 ![](assets/barcode_insert_10.png)
 

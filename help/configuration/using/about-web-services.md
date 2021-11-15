@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 4%
+source-wordcount: '655'
+ht-degree: 3%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 4%
 
 Adobe Campaign应用程序服务器旨在实现与日益多样化和复杂的公司信息系统的开放和轻松集成。
 
-Adobe Campaign API用在应用程序内的JavaScript中以及该应用程序外的SOAP中。 它们构成了可扩充的通用函数库。 有关更多信息，请参见[Implementing SOAP methods](../../configuration/using/implementing-soap-methods.md)。
+Adobe Campaign API用在应用程序内的JavaScript中以及该应用程序外的SOAP中。 它们构成了可扩充的通用函数库。 有关详细信息，请参阅 [实现SOAP方法](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
 >每天授权的引擎呼叫次数因您的许可协议而异。 有关详细信息，请参见[此页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
->[本专用文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)中提供了所有API（包括其完整说明）的列表。
+>所有API的列表（包括其完整说明），请参见 [本专述文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)。
 
 ## 先决条件 {#prerequisites}
 
@@ -40,10 +40,10 @@ Adobe Campaign API用在应用程序内的JavaScript中以及该应用程序外�
 
 Adobe Campaign使用两种类型的API:
 
-* 用于查询数据模型数据的通用数据访问API。 请参阅[面向数据的API](../../configuration/using/data-oriented-apis.md)。
-* 允许您对每个对象执行操作的特定于业务的API:投放、工作流、订阅等。 请参阅[面向业务的API](../../configuration/using/business-oriented-apis.md)。
+* 用于查询数据模型数据的通用数据访问API。 请参阅 [面向数据的API](../../configuration/using/data-oriented-apis.md).
+* 允许您对每个对象执行操作的特定于业务的API:投放、工作流、订阅等。 请参阅 [面向业务的API](../../configuration/using/business-oriented-apis.md).
 
-要开发API并与Adobe Campaign进行交互，您需要熟悉数据模型。 Adobe Campaign允许您生成基础的完整说明。 请参阅[模型的描述](../../configuration/using/data-oriented-apis.md#description-of-the-model)。
+要开发API并与Adobe Campaign进行交互，您需要熟悉数据模型。 Adobe Campaign允许您生成基础的完整说明。 请参阅 [模型描述](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
 ## SOAP调用 {#soap-calls}
 
@@ -68,11 +68,11 @@ SOAP消息的结构如下：
 
 在此示例中，SOAP查询调用“ExecuteQuery”方法，该方法将字符串作为身份验证（会话令牌）的参数，以及要执行的查询描述的XML内容。
 
-有关更多信息，请参阅[ExecuteQuery(xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-)。
+有关详细信息，请参阅 [ExecuteQuery(xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
 
 >[!NOTE]
 >
->此服务的WSDL描述已完成，如下所示：[Web服务描述：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl)。
+>此服务的WSDL描述已完成，如下所示： [Web服务描述：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 ### SOAP查询 {#soap-query}
 
@@ -92,13 +92,13 @@ SOAP消息的结构如下：
 </SOAP-ENV:Envelope>
 ```
 
-`<soap-env:envelope>`元素是表示SOAP信封的消息的第一个元素。
+的 `<soap-env:envelope>` 元素是表示SOAP封套的消息的第一个元素。
 
-`<soap-env:body>`元素是信封的第一个子元素。 它包含消息的描述，即查询或响应的内容。
+的 `<soap-env:body>` 元素是封套的第一个子元素。 它包含消息的描述，即查询或响应的内容。
 
-将在SOAP消息正文的`<executequery>`元素中输入要调用的方法。
+将在 `<executequery>` 元素。
 
-在SOAP中，参数是按外观顺序识别的。 第一个参数`<__sessiontoken>`采用身份验证链，第二个参数是`<querydef>`元素中查询的XML描述。
+在SOAP中，参数是按外观顺序识别的。 第一个参数， `<__sessiontoken>`，获取身份验证链，第二个参数是 `<querydef>` 元素。
 
 ### SOAP响应 {#soap-response}
 
@@ -115,7 +115,7 @@ SOAP消息的结构如下：
 </SOAP-ENV:Envelope>
 ```
 
-查询结果从`<pdomoutput>`元素中输入。
+查询的结果从 `<pdomoutput>` 元素。
 
 ## 错误管理 {#error-management}
 
@@ -135,9 +135,9 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-SOAP消息正文中的`<soap-env:fault>`元素用于传送在Web服务处理期间产生的错误信号。 这由以下子元素组成：
+的 `<soap-env:fault>` SOAP消息正文中的元素用于传送在web服务处理期间产生的错误信号。 这由以下子元素组成：
 
-* `<faultcode>` :指示错误类型。错误类型包括：
+* `<faultcode>` :指示错误类型。 错误类型包括：
 
    * 如果与使用的SOAP版本不兼容，则为“版本不匹配”；
    * 如果消息标头中出现问题，则为“必须了解”，
@@ -147,7 +147,7 @@ SOAP消息正文中的`<soap-env:fault>`元素用于传送在Web服务处理期�
 * `<faultstring>` :描述错误的消息
 * `<detail>` :长错误消息
 
-验证`<faultcode>`元素后，将确定服务调用的成功或失败。
+服务调用的成功或失败在 `<faultcode>` 元素已验证。
 
 >[!IMPORTANT]
 >
@@ -177,4 +177,4 @@ catch (SoapException e)
 
 https://serverName/nl/jsp/soaprouter.jsp
 
-使用&#x200B;**`<server>`** Adobe Campaign应用程序服务器(**nlserver web**)。
+使用 **`<server>`** Adobe Campaign应用程序服务器(**nlserver web**)。

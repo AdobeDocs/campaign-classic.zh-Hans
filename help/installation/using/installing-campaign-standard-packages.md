@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 6c23dadb5b6523e17e242de43a908ca86ed7cc23
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1188'
 ht-degree: 6%
 
 ---
@@ -28,18 +28,20 @@ ht-degree: 6%
 >安装新包可能会影响您的所有平台：在最终部署之前，必须对它进行测试和验证。
 >
 >安装包后，将无法卸载该包。
+>
+>作为托管客户或混合客户，请联系Adobe以部署新的内置资源包。
 
 要安装内置包，请执行以下操作：
 
-1. 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;访问包导入向导。
+1. 从访问资源包导入向导 **[!UICONTROL Tools > Advanced > Import package]** 在Adobe Campaign客户端控制台中。
 1. 选择 **[!UICONTROL Install a standard package]**。
 1. 在包列表中，检查要安装的包。
    >[!NOTE]
    >
    >当包灰显时，这表示该包已安装或与您的实例不兼容。 下表详细介绍了兼容性。
-1. 单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Start]**&#x200B;以开始安装软件包。
+1. 单击 **[!UICONTROL Next]**，则 **[!UICONTROL Start]** 以启动包安装。
 
-   安装包后，进度栏显示&#x200B;**100%**，您可以在安装日志中看到以下消息：**[!UICONTROL Installation of packages successful]**。
+   安装包后，进度栏会显示 **100%** 并且您可以在安装日志中看到以下消息： **[!UICONTROL Installation of packages successful]**.
 
 1. **[!UICONTROL Close]** 安装窗口。
 
@@ -86,7 +88,7 @@ ht-degree: 6%
   <tr> 
    <td> 用于执行实例的选件引擎。 可选。<br /> </td> 
    <td> 要在选件引擎的执行实例上安装的包（交互）。 <a href="../../interaction/using/distributed-architectures.md">了解更多</a> </td> 
-   <td> Mid，执行<br /> </td>  
+   <td> Mid，执行 <br /> </td>  
   </tr> 
   <!--tr> 
    <td> Lead Management (Leads) (deprecated)<br /> </td> 
@@ -95,7 +97,7 @@ ht-degree: 6%
    <td> Optional, <a href="https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html">Learn More</a> </td> 
   </tr--> 
   <tr> 
-   <td> 社交网络（社交营销）<br /> </td> 
+   <td> 社交网络（社交营销） <br /> </td> 
    <td> 将Adobe Campaign与Twitter和Facebook同步。 <a href="../../social/using/about-social-marketing.md">了解更多</a> <br /> </td> 
    <td> 所有</td> 
   </tr> 
@@ -105,7 +107,7 @@ ht-degree: 6%
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> 事务型消息执行（消息中心 — 执行）<br /> </td> 
+   <td> 事务型消息执行（消息中心 — 执行） <br /> </td> 
    <td> 确保更高的可用性和更好的负载管理。 可选。<a href="../../message-center/using/about-transactional-messaging.md">了解更多</a><br /> </td> 
    <td> 执行<br /> </td>
   </tr> 
@@ -120,12 +122,12 @@ ht-degree: 6%
    <td> 所有<br /> </td>
   </tr> 
   <tr> 
-   <td> 移动渠道（短信）<br /> </td> 
+   <td> 移动渠道（短信） <br /> </td> 
    <td> 通过Adobe Campaign使用移动/短信渠道发送投放。 可选。<a href="../../delivery/using/sms-channel.md">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
    <tr> 
-   <td> 电话频道<br /> </td> 
+   <td> 电话渠道<br /> </td> 
    <td> 使用带有Adobe Campaign的电话渠道发送投放。 用于呼叫中心。 可选。<a href="../../delivery/using/communication-channels.md">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
@@ -140,13 +142,13 @@ ht-degree: 6%
    <td> </td>
   </tr> 
   <tr> 
-   <td> 联机调查（调查管理器）<br /> </td> 
+   <td> 在线调查（调查管理器）<br /> </td> 
    <td> 创建并管理在线表单以添加或修改用户档案信息、订阅、退订或竞争条目表单。 可选。<a href="../../surveys/using/about-surveys.md">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> Marketing Analytics<br /> </td> 
-   <td> 使您能够分析和测量数据、计算统计信息、简化和优化报表的创建和计算。 此外，您还可以创建报表并构建目标群体。 可选。<a href="../../reporting/using/about-cubes.md">了解更多</a><br /> </td> 
+   <td> 营销分析<br /> </td> 
+   <td> 使您能够分析和测量数据、计算统计数据、简化和优化报表的创建和计算。 此外，您还可以创建报表并构建目标群体。 可选。<a href="../../reporting/using/about-cubes.md">了解更多</a><br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -180,7 +182,7 @@ ht-degree: 6%
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> 中央/本地营销（分布式营销）<br /> </td> 
+   <td> 中央/地方营销（分布式营销）<br /> </td> 
    <td> 在中央实体（总部、营销部门等）之间实施合作活动 和地方实体（销售点、地区机构等）。 可选。<a href="../../distributed/using/about-distributed-marketing.md">了解更多</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
@@ -215,7 +217,7 @@ ht-degree: 6%
    <td> 所有</td> 
   </tr> 
   <tr> 
-   <td> 传输到中间源<br /> </td> 
+   <td> 传输到中间源 <br /> </td> 
    <td> 详细介绍中间源服务器的安装和配置，以及使第三方能够在中间源模式下发送消息的实例的部署。 可选。<a href="../../installation/using/mid-sourcing-server.md">了解更多</a> <br /> </td> 
    <td> 营销 </td> 
   </tr> 
@@ -241,14 +243,14 @@ ht-degree: 6%
 
 您必须安装投放渠道（电子邮件、移动设备渠道、移动设备应用程序渠道等） 安装事务性消息（消息中心包）之前。 如果您已启动仅限电子邮件的消息中心项目，并且随后需要添加新渠道，则必须执行以下步骤：
 
-1. 使用包导入向导(**[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安装新通道，例如&#x200B;**移动通道**。
-1. 导入文件(**[!UICONTROL Tools > Advanced > Import package > File]**)，然后选择：
+1. 安装新渠道，例如 **移动渠道**，使用资源包导入向导( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)。
+1. 导入文件( **[!UICONTROL Tools > Advanced > Import package > File]**)，然后选择：
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. 在&#x200B;**[!UICONTROL XML data content to import]**&#x200B;中，仅保留与相关渠道对应的消息中心投放模板。 例如，如果已添加&#x200B;**Mobile channel**，则仅保留与&#x200B;**[!UICONTROL Mobile transactional message]**(smsTriggerMessage)模板对应的&#x200B;**entities**&#x200B;元素。 如果已添加&#x200B;**移动设备应用程序渠道**，则仅保留&#x200B;**iOS事务型消息**&#x200B;模板(iosTriggerMessage)和&#x200B;**Android事务型消息**(androidTriggerMessage)。
+1. 在 **[!UICONTROL XML data content to import]**，则仅保留与相关渠道对应的消息中心投放模板。 例如，如果您已将 **移动渠道**，则仅保留 **实体** 对应于 **[!UICONTROL Mobile transactional message]** (smsTriggerMessage)模板。 如果您已将 **移动设备应用程序渠道**，则仅保留 **iOS事务型消息** 模板(iosTriggerMessage)和 **Android事务型消息** (androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)
 

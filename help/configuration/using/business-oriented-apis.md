@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 3%
+source-wordcount: '632'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 * 投放:
 
-   * 创建投放操作，请参阅[SubmitDelivery(nms:delivery)](#submitdelivery--nms-delivery-),
+   * 创建投放操作，请参阅 [SubmitDelivery(nms:delivery)](#submitdelivery--nms-delivery-),
    * 发送营销活动（开始、暂停、停止、发送校样），
    * 恢复投放日志。
 
@@ -30,17 +30,17 @@ ht-degree: 3%
    * 启动工作流，
    * 验证流程等。
 
-      请参阅JavaScript](../../configuration/using/soap-methods-in-javascript.md)中的[SOAP方法。
+      请参阅 [JavaScript中的SOAP方法](../../configuration/using/soap-methods-in-javascript.md).
 
 * 内容管理
-* 订阅管理，请参阅[订阅(nms:subscription)](#subscribe--nms-subscription-)和[退订(nms:subscription)](#unsubscribe--nms-subscription-)。
+* 订阅管理，请参阅 [订阅(nms:subscription)](#subscribe--nms-subscription-) 和 [取消订阅(nms:subscription)](#unsubscribe--nms-subscription-).
 * 数据流程：进口、出口。
 
 本节详细介绍“订阅”、“取消订阅”和“提交交付”服务的使用。
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI文](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) 档包含有关Adobe Campaign中SOAP调用和使用Javascript的其他信息，以及对应用程序中使用的所有方法和函数的完整引用。
+>[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) 包含有关Adobe Campaign中SOAP调用和使用Javascript的其他信息，以及对应用程序中使用的所有方法和函数的完整引用。
 
 ## 订阅(nms:subscription) {#subscribe--nms-subscription-}
 
@@ -65,7 +65,7 @@ ht-degree: 3%
 </method>
 ```
 
-协调键值的定义必须通过XML文档`<recipient>`元素上的_**key**&#x200B;属性输入。 此属性的内容是以逗号分隔的XPath列表。
+对帐密钥的定义必须通过_输入&#x200B;**key** 属性 `<recipient>` 元素。 此属性的内容是以逗号分隔的XPath列表。
 
 除错误外，此调用不返回任何数据。
 
@@ -136,7 +136,7 @@ ht-degree: 3%
 </method>
 ```
 
-协调键值的定义必须通过XML文档`<recipient>`元素上的_key属性输入。 此属性的内容是以逗号分隔的XPath列表。
+协调键值的定义必须通过 `<recipient>` 元素。 此属性的内容是以逗号分隔的XPath列表。
 
 如果收件人不在数据库中或者没有订阅相关信息服务，则该服务不执行任何操作并且不产生错误。
 
@@ -207,7 +207,7 @@ ht-degree: 3%
 
 ### XML文档示例 {#xml-document-example}
 
-此示例基于来自外部数据源（本例中为文件）的自定义投放模板。 投放模板中对配置进行了完整描述，因此在调用发生时，所有仍要发送的内容都是`<externalsource>`元素中的文件内容。
+此示例基于来自外部数据源（本例中为文件）的自定义投放模板。 投放模板中对配置进行了完整描述，因此在调用发生时，所有仍要发送的内容都是 `<externalsource>` 元素。
 
 ```
 <delivery>

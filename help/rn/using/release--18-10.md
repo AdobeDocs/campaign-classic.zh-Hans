@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '2369'
+source-wordcount: '2366'
 ht-degree: 7%
 
 ---
@@ -123,15 +123,15 @@ ht-degree: 7%
      <li> <p>在iOS中跟踪静默通知 </p> </li> 
      <li> <p>在iOS中实施有关注册调用的反馈</p> </li> 
      <li> <p>提高iOS交付准备速度</p> </li> 
-    </ul> <p>作为遭Google弃用的GCM的一部分，Android V2连接器现在只能连接到FCM服务器。</p><p>有关详细信息，请参阅<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">有详细说明的文档</a>。本文详细介绍了向FCM升级的手动 <a href="https://helpx.adobe.com/cn/campaign/kb/migrate-to-fcm.html">文章</a>. </p> </td> 
+    </ul> <p>作为遭Google弃用的GCM的一部分，Android V2连接器现在只能连接到FCM服务器。</p><p>有关更多信息，请参阅<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">详细文档</a>。本文详细介绍了向FCM升级的手动 <a href="https://helpx.adobe.com/cn/campaign/kb/migrate-to-fcm.html">文章</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> SQL数据管理活动<br /> </td> 
-   <td> <p>添加了新的数据管理工作流活动。 的 <strong>SQL数据管理</strong> 活动允许您编写或复制粘贴您自己的SQL脚本，以创建和填充工作表（仅限FDA）。 </p> <p>有关详细信息，请参阅<a href="../../workflow/using/sql-data-management.md">有详细说明的文档</a>。</p></td> 
+   <td> <p>添加了新的数据管理工作流活动。 的 <strong>SQL数据管理</strong> 活动允许您编写或复制粘贴您自己的SQL脚本，以创建和填充工作表（仅限FDA）。 </p> <p>有关更多信息，请参阅<a href="../../workflow/using/sql-data-management.md">详细文档</a>。</p></td> 
   </tr> 
   <tr> 
    <td> 工作流监测<br /> </td> 
-   <td> <p>借助新的Adobe Campaign Workflow HeatMap，平台管理员能够快速以图形形式表示所有并发工作流，从而监控实例的负载并相应地规划工作流。</p> <p>有关详细信息，请参阅<a href="../../workflow/using/heatmap.md">有详细说明的文档</a>。</p> <p>对于8977之前的版本（从8700开始），也可以根据需要使用Workflow HeatMap包。 有关请求和安装它的更多信息，请参阅 <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">本页</a>.</p> </td> 
+   <td> <p>借助新的Adobe Campaign Workflow HeatMap，平台管理员能够快速以图形形式表示所有并发工作流，从而监控实例的负载并相应地规划工作流。</p> <p>有关更多信息，请参阅<a href="../../workflow/using/heatmap.md">详细文档</a>。</p> <p>对于8977之前的版本（从8700开始），也可以根据需要使用Workflow HeatMap包。 有关请求和安装它的更多信息，请参阅 <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">本页</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -146,7 +146,7 @@ ht-degree: 7%
 
 **改进**
 
-* Campaign Classic API 现在可在[专用页面](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)中使用。如果您使用的是 jsapi.chm 文件，您现在应该参阅新的在线版本。
+* Campaign Classic API 现在可在[专用页面](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)中使用。如果您使用的是 jsapi.chm 文件，您现在应该参阅新的在线版本。
 * 现在支持PostgreSQL 10、Debian 9和Teradata16.20。 请参阅[兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)。
 * 现在，在创建SFTP连接时，您可以使用代理身份验证。 有关更多信息，请参阅 [详细文档](../../installation/using/file-res-management.md) (NEO-9868)
 * 的 **日期计算公式** 现在，使用直邮投放模板创建单个投放时，投放属性中的选项可用。 (NEO-9792)
@@ -195,7 +195,7 @@ NmsRecipient上的索引已重新工作。 这应会提高使用此表的查询�
 
 这些索引更改可能会增加执行升级后所需的时间。
 
-**补丁程序**
+**修补程序**
 
 * 修复了阻止 **Web下载** 工作流活动。 (NEO-11105)
 * 修复了有时会在 **发送指标和营销活动属性** 工作流处于失败状态(NEO-10820)。

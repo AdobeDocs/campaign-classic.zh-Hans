@@ -5,7 +5,7 @@ description: 在电子邮件中插入条形码
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# 在电子邮件中插入条形码{#inserting-a-barcode-in-an-email}
+# 在电子邮件中插入条形码{#insert-a-barcode-in-an-email}
 
 ![](../../assets/common.svg)
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
       ![](assets/barcode_insert_08.png)
 
-   * 数据矩阵和PDF417类型涉及2D格式。
+   * DataMatrix和PDF417类型涉及2D格式。
 
       2D条形码示例：
 
@@ -50,25 +50,25 @@ ht-degree: 0%
       ![](assets/barcode_insert_12.png)
 
 1. 输入要插入到电子邮件中的条形码的大小：通过配置比例，您可以增加或减小条形码的大小，从x1到x10。
-1. **[!UICONTROL Value]**&#x200B;字段允许您定义条形码的值。 值可以匹配特殊选件，也可以是标准的函数，也可以是链接到客户的数据库字段的值。
+1. 的 **[!UICONTROL Value]** 字段，可定义条形码的值。 值可以匹配特殊选件，也可以是标准的函数，也可以是链接到客户的数据库字段的值。
 
-   此示例显示EAN-8类型的条形码，该条形码已添加到收件人的帐户号。 要添加此帐号，请单击&#x200B;**[!UICONTROL Value]**&#x200B;字段右侧的个性化按钮，然后选择&#x200B;**[!UICONTROL Recipient > Account number]**。
+   此示例显示EAN-8类型的条形码，该条形码已添加到收件人的帐户号。 要添加此帐号，请单击 **[!UICONTROL Value]** 字段和选择 **[!UICONTROL Recipient > Account number]**.
 
    ![](assets/barcode_insert_15.png)
 
-1. **[!UICONTROL Height]**&#x200B;字段允许您通过更改每个条形之间的间距量，在不更改其宽度的情况下配置条形码的高度。
+1. 的 **[!UICONTROL Height]** 字段，您可以通过更改条形码之间的间距量，在不更改其宽度的情况下配置条形码的高度。
 
-   没有基于条形码类型的限制性输入控件。 如果条形码值不正确，它将仅在&#x200B;**预览**&#x200B;模式下显示，在该模式下，条形码将以红色划出。
+   没有基于条形码类型的限制性输入控件。 如果条形码值不正确，则它将仅在 **预览** 用红色划出条形码的模式。
 
    >[!NOTE]
    >
    >分配给条形码的值取决于其类型。 例如，EAN-8类型的数字应恰好为8。
    >
-   >通过&#x200B;**[!UICONTROL Value]**&#x200B;字段右侧的个性化按钮，除了值本身之外，您还可以添加数据。 这丰富了条形码，只要条形码标准接受它。
+   >右侧的个性化按钮 **[!UICONTROL Value]** 字段，除了值本身之外，您还可以添加数据。 这丰富了条形码，只要条形码标准接受它。
    >
-   >例如，如果您使用GS1-128类型条形码，并且希望输入收件人的帐号以及值，请单击个性化按钮并选择&#x200B;**[!UICONTROL Recipient > Account number]**。 如果所选收件人的帐号输入正确，则条形码会将其考虑在内。
+   >例如，如果您使用GS1-128类型条形码，并且想要输入收件人的帐号以及值，请单击个性化按钮并选择 **[!UICONTROL Recipient > Account number]**. 如果所选收件人的帐号输入正确，则条形码会将其考虑在内。
 
-配置这些元素后，您可以完成电子邮件并发送它。 要避免出现错误，请始终在通过单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡执行投放之前确保内容显示正确。
+配置这些元素后，您可以完成电子邮件并发送它。 要避免出现错误，请始终在通过单击 **[!UICONTROL Preview]** 选项卡。
 
 ![](assets/barcode_insert_10.png)
 
