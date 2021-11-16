@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: 与Adobe Target集成
-description: 与Adobe Target集成
+title: 与Adobe Campaign和Adobe Target合作
+description: 了解如何将Adobe Campaign与Adobe Target集成
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
-source-git-commit: b6e24c63ece12f25b7dafe3fede9e38b3aab2427
+source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
-# 与Adobe Target集成{#integrating-with-adobe-target}
+# 使用Campaign和Target{#integrating-with-adobe-target}
 
 ![](../../assets/common.svg)
 
