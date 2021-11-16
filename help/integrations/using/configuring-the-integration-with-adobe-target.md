@@ -6,16 +6,21 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6e24c63ece12f25b7dafe3fede9e38b3aab2427
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 0%
+source-wordcount: '201'
+ht-degree: 2%
 
 ---
 
 # 配置与Adobe Target的集成{#configuring-the-integration-with-adobe-target}
 
 ![](../../assets/common.svg)
+
+
+>[!CAUTION]
+>
+> 作为托管客户或混合客户，请联系您的Adobe代表以配置此集成。 以下步骤仅适用于内部部署客户。
 
 ## 先决条件 {#prerequisites}
 
@@ -28,15 +33,19 @@ ht-degree: 0%
 
 要配置Adobe Campaign，请执行以下操作：
 
-1. 安装&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;标准包。 安装集成包与安装标准包相同，有关详细信息，请参阅[包导入](../../platform/using/working-with-data-packages.md#importing-packages)一节。 这允许您通过数字资产管理器访问共享的资产。
-1. 启用通过IMS(Adobe ID连接服务)的连接，以在电子邮件中使用通过Adobe Experience Cloud共享的图像。 请参阅关于[IMS](../../integrations/using/about-adobe-id.md)的章节。
-1. 在&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;中，为Adobe Target配置服务器和组织（租户）选项：
+1. 安装 **[!UICONTROL Integration with the Adobe Experience Cloud]** 内置包。 [了解详情](../../platform/using/working-with-data-packages.md#importing-packages)
 
-   * **[!UICONTROL TNT_EdgeServer]** :用于集成的Adobe Target服务器。默认情况下，此选项已被选中。 此值对应于Adobe Target **[!UICONTROL Domain Server]**，后跟值&#x200B;**/m2**。 例如：**tt.omtrdc.net/m2**。
-   * **[!UICONTROL TNT_TenantName]** :Adobe Target组织名称。此值对应于Adobe Target **[!UICONTROL Client]**&#x200B;的名称。
+   利用此资源包，可通过Digital Asset Manager访问共享资产。
+
+1. 启用通过IMS(Adobe ID连接服务)的连接，以在电子邮件中使用通过Adobe Experience Cloud共享的图像。 [了解详情](../../integrations/using/about-adobe-id.md)
+1. 浏览到 **[!UICONTROL Administration > Platform > Options]** 要为Adobe Target配置服务器和组织（租户）选项，请执行以下操作：
 
    ![](assets/tar_options.png)
 
+   * **[!UICONTROL TNT_EdgeServer]** :用于集成的Adobe Target服务器。 默认情况下，此选项已被选中。 此值对应于Adobe Target **[!UICONTROL Domain Server]**，后跟值 **/m2**. 例如： **tt.omtrdc.net/m2**.
+   * **[!UICONTROL TNT_TenantName]** :Adobe Target组织名称。 此值对应于Adobe Target的名称 **[!UICONTROL Client]**.
+
+
 >[!CAUTION]
 >
->对于混合和托管架构，必须在所有服务器上设置这些选项，包括[中间源服务器](../../installation/using/mid-sourcing-server.md)和[执行实例](../../message-center/using/configuring-instances.md#execution-instance)。
+>对于混合和托管架构，必须在所有服务器(包括 [中间源服务器](../../installation/using/mid-sourcing-server.md) 和 [执行实例](../../message-center/using/configuring-instances.md#execution-instance).
