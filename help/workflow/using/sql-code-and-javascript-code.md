@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8e6ebec9af0b7865616cf3904c8d400094567bdb
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## SQL代码 {#sql-code}
 
-**[!UICONTROL SQL code]**&#x200B;活动执行SQL脚本。 脚本是JST模板。
+安 **[!UICONTROL SQL code]** 活动执行SQL脚本。 脚本是JST模板。
 
 ![](assets/sql_code.png)
 
@@ -29,19 +29,22 @@ ht-degree: 3%
 
 * **[!UICONTROL Processing errors]**
 
-   请参阅[处理错误](monitoring-workflow-execution.md#processing-errors)。
+   请参阅 [处理错误](monitoring-workflow-execution.md#processing-errors).
 
 ## JavaScript代码和高级JavaScript代码 {#javascript-code}
 
-**[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动会在工作流的上下文中执行JavaScript脚本。有关脚本的更多信息，请参阅[JavaScript脚本和模板](javascript-scripts-and-templates.md)一节。
+**[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动会在工作流的上下文中执行JavaScript脚本。 有关脚本的更多信息，请参阅以下章节：
+
+* [JavaScript 脚本和模板](javascript-scripts-and-templates.md)
+* [工作流中的JavaScript代码示例](javascript-in-workflows.md)
 
 ### 执行延迟 {#exec-delay}
 
-从20.2版本开始，向&#x200B;**[!UICONTROL JavaScript code]**&#x200B;和&#x200B;**[!UICONTROL Advanced JavaScript code]**&#x200B;活动添加了执行延迟。 默认情况下，执行阶段不能超过1小时。 在此延迟后，进程将中止，并显示错误消息，活动执行将失败。
+从20.2版本开始，向 **[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动。 默认情况下，执行阶段不能超过1小时。 在此延迟后，进程将中止，并显示错误消息，并且活动执行将失败。
 
-您可以在这些活动中可用的&#x200B;**[!UICONTROL Stop execution after]**&#x200B;字段中更改此延迟。
+您可以在 **[!UICONTROL Stop execution after]** 字段。
 
-要忽略此限制，您需要将值设置为&#x200B;**0**。
+要忽略此限制，您需要将值设置为 **0**.
 
 ### JavaScript代码 {#js-code-desc}
 
@@ -49,7 +52,7 @@ ht-degree: 3%
 
 * **[!UICONTROL Script]**:编辑器的中心区域包含要执行的脚本。
 
-* **[!UICONTROL Process errors]**:请参阅处 [理错误](monitoring-workflow-execution.md#processing-errors)。
+* **[!UICONTROL Process errors]**:请参阅 [处理错误](monitoring-workflow-execution.md#processing-errors).
 
 ### 高级JavaScript代码 {#adv-js-code-desc}
 
@@ -58,9 +61,9 @@ ht-degree: 3%
 * **[!UICONTROL First call]**:编辑器的第一个区域包含要在首次调用期间执行的脚本。
 * **[!UICONTROL Next calls]**:编辑器的第二个区域包含要在下次调用期间执行的脚本。
 * **[!UICONTROL Transitions]**:您可以定义多个活动输出过渡。
-* **[!UICONTROL Schedule]**:利用 **[!UICONTROL Schedule]** 选项卡，可安排何时触发活动。
+* **[!UICONTROL Schedule]**:的 **[!UICONTROL Schedule]** 选项卡，您可以安排何时触发活动。
 
-高级JavaScript是一项持久性任务，如果尚未标记为已完成，则会定期召回该任务。 要终止任务并防止将来的召回，您必须使用&#x200B;**[!UICONTROL Next calls]**&#x200B;部分中的&#x200B;**task.setCompleted()**&#x200B;方法：
+高级JavaScript是一项持久性任务，如果尚未标记为已完成，则会定期召回该任务。 要终止任务并防止将来的召回，您必须使用 **task.setCompleted()** 方法 **[!UICONTROL Next calls]** 部分：
 
 ```
 task.postEvent(task.transitionByName("ok")); // to transition to Ok branch

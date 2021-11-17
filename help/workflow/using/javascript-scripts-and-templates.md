@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 8e6ebec9af0b7865616cf3904c8d400094567bdb
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1242'
 ht-degree: 2%
 
 ---
@@ -32,11 +32,11 @@ ht-degree: 2%
 
 在工作流上下文中执行的JavaScript访问一系列其他全局对象。
 
-* **实例**:表示正在执行的工作流。此对象的模式为&#x200B;**xtk:workflow**。
-* **任务**:表示正在执行的任务。此对象的架构为&#x200B;**xtk:workflowTask**。
-* **事件**:表示激活正在执行的任务的事件。此对象的架构为&#x200B;**xtk:workflowEvent**。 未针对从多个过渡激活的&#x200B;**AND-join**&#x200B;类型活动初始化此对象。
-* **事件**:表示激活当前任务的事件列表。此对象的架构为&#x200B;**xtk:workflowEvent**。 此表通常包含一个元素，但可能包含已基于多个过渡激活的&#x200B;**AND-join**&#x200B;类型活动的多个元素。
-* **活动**:表示正在执行的任务的模型。此对象的架构取决于活动类型。 此对象可由初始化脚本修改，在其他脚本中，具有不可确定效果的修改。
+* **实例**:表示正在执行的工作流。 此对象的模式为 **xtk:workflow**.
+* **任务**:表示正在执行的任务。 此对象的模式为 **xtk:workflowTask**.
+* **事件**:表示激活正在执行的任务的事件。 此对象的模式为 **xtk:workflowEvent**. 此对象未初始化 **AND — 连接** 键入已从多个过渡激活的活动。
+* **事件**:表示激活当前任务的事件列表。 此对象的模式为 **xtk:workflowEvent**. 此表通常包含一个元素，但可能包含 **AND — 连接** 键入已根据多个过渡激活的活动。
+* **活动**:表示正在执行的任务的模型。 此对象的架构取决于活动类型。 此对象可由初始化脚本修改，在其他脚本中，具有不可确定效果的修改。
 
 单击脚本工具栏右侧的按钮，即可在下拉列表中查看这些对象的可用属性。
 
@@ -48,24 +48,24 @@ ht-degree: 2%
 
 **示例**
 
-在本示例和以下示例中，创建一个包含&#x200B;**JavaScript代码**&#x200B;活动和&#x200B;**End**&#x200B;活动的工作流，如下图所示。
+在本例和以下示例中，创建一个包含 **JavaScript代码** 活动和 **结束** 活动，如下图所示。
 
 ![](assets/script-1.png)
 
-双击&#x200B;**JavaScript代码**&#x200B;活动并插入以下脚本：
+双击 **JavaScript代码** 活动并插入以下脚本：
 
 ```
 logInfo("Label: " + instance.label)
 logInfo("Start date: " + task.creationDate)
 ```
 
-**[!UICONTROL logInfo(message)]**&#x200B;函数在日志中插入消息。
+的 **[!UICONTROL logInfo(message)]** 函数，将消息插入到日志中。
 
-单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭创建向导，然后使用工作流列表右上角的操作按钮启动工作流。 在执行结束时，请查阅日志。 您应会看到与脚本对应的两条消息：一个显示工作流的标签，另一个显示脚本的激活日期。
+单击 **[!UICONTROL OK]** 要关闭创建向导，请使用工作流列表右上角的操作按钮启动工作流。 在执行结束时，请查阅日志。 您应会看到与脚本对应的两条消息：一个显示工作流的标签，另一个显示脚本的激活日期。
 
 ## 变量 {#variables}
 
-变量是&#x200B;**[!UICONTROL instance]**、**[!UICONTROL task]**&#x200B;和&#x200B;**[!UICONTROL event]**&#x200B;对象的自由属性。 为这些变量授权的JavaScript类型包括&#x200B;**[!UICONTROL string]**、**[!UICONTROL number]**&#x200B;和&#x200B;**[!UICONTROL Date]**。
+变量是 **[!UICONTROL instance]**, **[!UICONTROL task]** 和 **[!UICONTROL event]** 对象。 为这些变量授权的JavaScript类型包括 **[!UICONTROL string]**, **[!UICONTROL number]** 和 **[!UICONTROL Date]**.
 
 ### 实例变量 {#instance-variables}
 
@@ -81,17 +81,17 @@ logInfo("Start date: " + task.creationDate)
 
 >[!CAUTION]
 >
->对于[AND-join](and-join.md)类型活动，将合并变量，但如果同一变量被定义两次，则会发生冲突，值仍不确定。
+>对于 [AND — 连接](and-join.md) 类型活动时，会合并变量，但如果同一变量被定义两次，则会发生冲突，值仍不确定。
 
 事件是最常用的变量，应首选使用它们来替换实例变量。
 
-某些事件变量会被各种活动修改或读取。 这些都是字符串类型的变量。 例如，导出会使用刚刚导出的文件的全名设置&#x200B;**[!UICONTROL vars.filename]**&#x200B;变量。 所有这些读取或修改的变量都记录在[About activities](about-activities.md)活动&#x200B;**Input parameters**&#x200B;和&#x200B;**活动的Output parameters**&#x200B;部分中。
+某些事件变量会被各种活动修改或读取。 这些都是字符串类型的变量。 例如，导出会设置 **[!UICONTROL vars.filename]** 变量，其中包含刚刚导出的文件的全名。 所有这些读取或修改的变量都记录在 [关于活动](about-activities.md)，在部分中 **输入参数** 和 **输出参数** 活动。
 
 ### 用例 {#example}
 
 >[!NOTE]
 >
->[此部分](about-workflow-use-cases.md)中提供了其他工作流用例。
+>在 [此部分](about-workflow-use-cases.md).
 
 **示例1**
 
@@ -129,7 +129,7 @@ logInfo("Start date: " + task.creationDate)
 
 **示例 2**
 
-1. 请采用上例中的工作流，将&#x200B;**JavaScript代码**&#x200B;活动的脚本替换为以下脚本：
+1. 从上一个示例中获取工作流，并替换 **JavaScript代码** 活动：
 
    ```
    instance.vars.foo = "bar1"
@@ -137,7 +137,7 @@ logInfo("Start date: " + task.creationDate)
    task.vars.foo = "bar3"
    ```
 
-1. 将以下脚本添加到&#x200B;**End**&#x200B;活动的初始化脚本中：
+1. 将以下脚本添加到的初始化脚本中 **结束** 活动：
 
    ```
    logInfo("instance.vars.foo = " + instance.vars.foo)
@@ -155,17 +155,17 @@ logInfo("Start date: " + task.creationDate)
    Starting workflow (operator 'admin')
    ```
 
-此示例显示&#x200B;**JavaScript代码**&#x200B;后面的活动访问实例变量和事件变量，但任务变量无法从外部访问（“未定义”）。
+此示例展示了以下活动 **JavaScript代码** 访问实例变量和事件变量，但无法从外部访问任务变量（“未定义”）。
 
 ### 在查询中调用实例变量 {#calling-an-instance-variable-in-a-query}
 
 在活动中指定实例变量后，即可在工作流查询中重复使用该变量。
 
-因此，要在过滤器中调用变量&#x200B;**instance.vars.xxx = &quot;yyy&quot;**，请输入&#x200B;**$(instance/vars/xxx)**。
+因此，调用变量 **instance.vars.xxx = &quot;yyyy&quot;** 在筛选器中，输入 **$(instance/vars/xxx)**.
 
 例如：
 
-1. 通过&#x200B;**[!UICONTROL JavaScript code]**&#x200B;创建一个实例变量，以定义投放的内部名称：**instance.vars.deliveryIN = &quot;DM42&quot;**。
+1. 创建一个实例变量，该变量通过 **[!UICONTROL JavaScript code]**: **instance.vars.deliveryIN = &quot;DM42&quot;**.
 
    ![](assets/wkf_js_activity_1.png)
 
@@ -173,7 +173,7 @@ logInfo("Start date: " + task.creationDate)
 
    提醒一下，此信息存储在投放日志中。
 
-   要在&#x200B;**[!UICONTROL Value]**&#x200B;列中引用实例变量，请输入&#x200B;**$(instance/vars/@deliveryIN)**。
+   在 **[!UICONTROL Value]** 列，输入 **$(instance/vars/@deliveryIN)**.
 
    工作流将返回DM42投放的收件人。
 
@@ -185,9 +185,9 @@ logInfo("Start date: " + task.creationDate)
 
 ### 日志 {#journal}
 
-**[!UICONTROL logInfo(message)]** 详见上述示例。此函数向日志中添加信息消息。
+**[!UICONTROL logInfo(message)]** 详见上述示例。 此函数向日志中添加信息消息。
 
-**[!UICONTROL logError(message)]** 向日志中添加错误消息。脚本会中断其执行，并且工作流会更改为错误状态（默认情况下，实例将暂停）。
+**[!UICONTROL logError(message)]** 向日志中添加错误消息。 脚本会中断其执行，并且工作流会更改为错误状态（默认情况下，实例将暂停）。
 
 ## 初始化脚本 {#initialization-script}
 
@@ -195,4 +195,7 @@ logInfo("Start date: " + task.creationDate)
 
 活动的大多数属性都可以动态计算，这既可以使用JavaScript模板，也可以因为工作流属性明确允许由脚本计算值。
 
-但是，对于其他属性，必须使用初始化脚本。 在执行任务之前会评估此脚本。 **[!UICONTROL activity]**&#x200B;变量引用与任务对应的活动。 此活动的属性可以修改，且仅会影响此任务。
+但是，对于其他属性，必须使用初始化脚本。 在执行任务之前会评估此脚本。 的 **[!UICONTROL activity]** 变量引用与任务对应的活动。 此活动的属性可以修改，且仅会影响此任务。
+
+**相关主题**
+[工作流中的JavaScript代码示例](javascript-in-workflows.md)
