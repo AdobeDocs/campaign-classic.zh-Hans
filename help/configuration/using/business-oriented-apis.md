@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 2%
@@ -71,7 +71,7 @@ ht-degree: 2%
 
 ### 示例 {#examples}
 
-在电子邮件地址上订阅收件人协调密钥：输入XML文档必须引用此字段中的电子邮件地址和键的定义。
+电子邮件地址上收件人协调键值的订阅：输入XML文档必须引用此字段中的电子邮件地址和键的定义。
 
 ```
 <recipient _key="email" email= "john.doe@adobe.com"/>

@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 0%
@@ -29,33 +29,33 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 1. 定义预算
 
-   有关更多信息，请参阅[创建预算](#creating-a-budget)。
+   有关更多信息，请参阅 [创建预算](#creating-a-budget).
 
 1. 定义成本计算方法
 
-   为服务提供商定义成本结构。 请参阅[创建服务提供商及其成本类别](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)。
+   为服务提供商定义成本结构。 请参阅 [创建服务提供商及其成本类别](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 1. 定义营销活动成本（投放/任务）
 
-   投放和任务产生的成本将单独或全局输入到营销活动模板。 请参阅[成本和库存计算](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks)。
+   投放和任务产生的成本将单独或全局输入到营销活动模板。 请参阅 [费用和库存计算](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
 
 1. 整合
 
    根据任务、投放和营销活动的进度状态，将计算成本并将其传递到相应的预算。
 
-   当营销活动的创建足够深入时，营销活动预算的进度状态可更改为&#x200B;**[!UICONTROL Specified]**。 然后，将自动输入项目的计算成本以及营销活动中计算的成本。 请参阅[成本承诺、计算和收费](#cost-commitment--calculation-and-charging)。
+   当营销活动的创建足够深入时，营销活动预算的进度状态可更改为 **[!UICONTROL Specified]**. 然后，将自动输入项目的计算成本以及营销活动中计算的成本。 请参阅 [成本承担、计算及收费](#cost-commitment--calculation-and-charging).
 
 ## 创建预算 {#creating-a-budget}
 
-通过&#x200B;**[!UICONTROL Campaign management > Budgets]**&#x200B;节点在映射中创建预算。 通过工具栏中的&#x200B;**[!UICONTROL New]**&#x200B;按钮，您可以创建预算。
+通过 **[!UICONTROL Campaign management > Budgets]** 节点。 的 **[!UICONTROL New]** 按钮来创建预算。
 
 * 添加新预算
 
-   单击&#x200B;**[!UICONTROL New]**&#x200B;图标、名称并保存预算。
+   单击 **[!UICONTROL New]** 图标，命名并保存预算。
 
 * 输入初始金额
 
-   在相关字段中指示已分配的金额。 其他金额会自动输入。 请参阅[计算金额](#calculating-amounts)。
+   在相关字段中指示已分配的金额。 其他金额会自动输入。 请参阅 [计算金额](#calculating-amounts).
 
 * 定义有效期
 
@@ -63,7 +63,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 * 费用
 
-   为促销活动、任务等创建将成本分配给此预算的费用类别。 链接。 请参阅[费用类别](#expense-categories)。
+   为促销活动、任务等创建将成本分配给此预算的费用类别。 链接。 请参阅 [支出类别](#expense-categories).
 
    ![](assets/s_ncs_user_budget_create_and_save.png)
 
@@ -71,7 +71,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 >
 >您可以选择相关预算。
 >
->有关更多信息，请参阅[将预算链接到另一个](#linking-a-budget-to-another)。
+>有关更多信息，请参阅 [将预算关联到其他预算](#linking-a-budget-to-another).
 
 ### 计算金额 {#calculating-amounts}
 
@@ -79,7 +79,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 >[!NOTE]
 >
->为类别输入的金额必须与&#x200B;**[!UICONTROL Allocated]**&#x200B;字段中定义的预算信封匹配。
+>为类别输入的金额必须与 **[!UICONTROL Allocated]** 字段。
 
 对于营销活动，根据承诺的级别，可以计划、承诺或预留成本，以供将来的行动使用。
 
@@ -87,28 +87,28 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 >[!CAUTION]
 >
->创建营销活动后，必须将&#x200B;**[!UICONTROL Budget]**&#x200B;中的进度状态设置为&#x200B;**[!UICONTROL Defined]**，以便执行时考虑成本。 如果状态为&#x200B;**[!UICONTROL Being edited]**，则不会合并成本。
+>创建营销活动后， **[!UICONTROL Budget]** 必须设置为 **[!UICONTROL Defined]** 执行费用。 如果状态为 **[!UICONTROL Being edited]**，则不会合并成本。
 >   
->选项&#x200B;**[!UICONTROL Commitment level]**&#x200B;表示在将费用计入预算之前对未来费用的预测。 根据营销活动、任务或投放的进度，您可以决定分配更高或更低的承诺级别(1)。 计划，2. 保留，3。 提交)。
+>选项 **[!UICONTROL Commitment level]** 表示在将成本计入预算之前对未来的成本预测。 根据营销活动、任务或投放的进度，您可以决定分配更高或更低的承诺级别(1)。 计划，2. 保留，3。 提交)。
 
 例如，Web促销活动的预计计划成本为45,000欧元。
 
 ![](assets/s_user_edit_budget_node_impact_0.png)
 
-对于营销活动，当预算创建状态设置为&#x200B;**[!UICONTROL Defined]**&#x200B;时，营销活动的实际成本（或者，如果没有，计算成本）将转入预算总额中。
+对于营销活动，当预算创建状态设置为 **[!UICONTROL Defined]**，营销活动的实际成本（或者，如果没有，计算成本）将被计入预算总额。
 
 ![](assets/s_user_budget_in_op_a.png)
 
-根据促销活动预算的承付款级别，金额将在&#x200B;**[!UICONTROL Planned]**、**[!UICONTROL Reserved]**&#x200B;或&#x200B;**[!UICONTROL Committed]**&#x200B;字段中输入。
+根据促销活动预算的承付金额，金额将在 **[!UICONTROL Planned]**, **[!UICONTROL Reserved]** 或 **[!UICONTROL Committed]** 字段。
 
 承诺级别可以修改：
 
-* 在&#x200B;**campaign**&#x200B;级别的&#x200B;**[!UICONTROL Budget]**&#x200B;窗口中，可在&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中找到。 这是配置预算、成本和费用的地方。
-* 在&#x200B;**任务**&#x200B;级别的&#x200B;**[!UICONTROL Expenses and revenues]**&#x200B;窗口中。
+* 在 **营销活动** 级别，在 **[!UICONTROL Budget]** 窗口，在 **[!UICONTROL Edit]** 选项卡。 这是配置预算、成本和费用的地方。
+* 在 **任务** 级别，在 **[!UICONTROL Expenses and revenues]** 窗口。
 
 ![](assets/s_user_op_engagement_level_costs.png)
 
-当预算为&#x200B;**[!UICONTROL Reserved]**&#x200B;时，将自动为已计费预算执行更新。
+预算为 **[!UICONTROL Reserved]**，则会自动为已计费预算执行更新。
 
 ![](assets/s_user_edit_budget_node_impact_2.png)
 
@@ -116,13 +116,13 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 ![](assets/s_user_edit_budget_node_impact_task.png)
 
-当支出产生发票并支付发票时，将在&#x200B;**[!UICONTROL Invoiced]**&#x200B;字段中输入其金额。
+当支出产生发票并支付发票时，其金额随后在 **[!UICONTROL Invoiced]** 字段。
 
 ### 支出类别 {#expense-categories}
 
-这些金额可以分为多个费用类别，以便更好地阅读数据并更详细地报告营销投资。 在预算创建期间，通过树的&#x200B;**[!UICONTROL Budgets]**&#x200B;节点定义支出类别。
+这些金额可以分为多个费用类别，以便更好地阅读数据并更详细地报告营销投资。 在预算创建期间，通过 **[!UICONTROL Budgets]** 树的节点。
 
-要添加类别，请单击窗口下部的&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
+要添加类别，请单击 **[!UICONTROL Add]** 按钮。
 
 ![](assets/s_user_budget_category.png)
 
@@ -130,7 +130,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 ### 将预算链接到其他预算 {#linking-a-budget-to-another}
 
-您可以将预算与主预算关联。 为此，请在辅助预算的&#x200B;**[!UICONTROL related budget]**&#x200B;字段中选择主预算。
+您可以将预算与主预算关联。 为此，请在 **[!UICONTROL related budget]** 字段。
 
 ![](assets/budget_link.png)
 
@@ -156,7 +156,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 * 相应的发票行（仅限MRM）
 * 按成本类别计算的成本列表（如果存在成本结构）
 
-在以上示例中，编辑的费用行包含为&#x200B;**忠诚度春季包**&#x200B;促销活动的&#x200B;**New cards**&#x200B;交付计算的成本。 编辑投放时，**[!UICONTROL Direct Mail]**&#x200B;选项卡允许您查看费用行的计算方式。
+在上例中，编辑的费用行包含 **新信息卡** 投放 **忠诚春季包** 营销活动。 编辑投放时， **[!UICONTROL Direct Mail]** 选项卡，您可以查看费用行的计算方式。
 
 此交付的成本计算基于为相关服务提供商选择的成本类别：
 
@@ -168,7 +168,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 >[!NOTE]
 >
->[创建服务提供商及其成本类别](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)中列出了成本类别和结构。
+>成本类别及结构于 [创建服务提供商及其成本类别](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 ## 成本承担、计算及收费 {#cost-commitment--calculation-and-charging}
 
@@ -180,9 +180,9 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 1. 估计临时费用
 
-   预计临时费用是对活动过程费用的估计。 只要正在编辑，输入的金额就不会合并。 它必须具有&#x200B;**[!UICONTROL Specified]**&#x200B;状态，才能在计算中考虑输入的金额。
+   预计临时费用是对活动过程费用的估计。 只要正在编辑，输入的金额就不会合并。 它肯定 **[!UICONTROL Specified]** 在计算中要考虑的金额输入的状态。
 
-   此金额是手动输入的，可划分为多个费用类别。 要降低成本，请单击&#x200B;**[!UICONTROL Breakdown...]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以定义新金额。
+   此金额是手动输入的，可划分为多个费用类别。 要降低成本，请单击 **[!UICONTROL Breakdown...]** 链接，然后 **[!UICONTROL Add]** 按钮以定义新金额。
 
    ![](assets/s_user_edit_budget_tab_ventil.png)
 
@@ -201,7 +201,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
    >[!NOTE]
    >
-   >**[!UICONTROL Breakdown]**&#x200B;链接允许您查看计算的详细信息以及上次成本计算日期。
+   >的 **[!UICONTROL Breakdown]** 链接允许您查看计算和上次成本计算日期的详细信息。
 
 1. 实际成本
 
@@ -211,7 +211,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 成本通过成本结构计算，并计入相关营销活动、投放或任务中选定的预算。
 
-可通过预算审批对提交到促销活动的金额执行检查。 可在营销活动中创建其他检查点样式的任务，以设置其他批准。 请参阅[任务类型](../../mrm/using/creating-and-managing-tasks.md#types-of-task)。
+可通过预算审批对提交到促销活动的金额执行检查。 可在营销活动中创建其他检查点样式的任务，以设置其他批准。 请参阅 [任务类型](../../mrm/using/creating-and-managing-tasks.md#types-of-task).
 
 ### 示例 {#example}
 
@@ -223,17 +223,17 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 #### 步骤1 — 创建预算 {#step-1---creating-the-budget}
 
-1. 通过&#x200B;**[!UICONTROL Campaign management > Budgets]**&#x200B;节点创建新预算。
+1. 通过 **[!UICONTROL Campaign management > Budgets]** 节点。
 
-1. 在&#x200B;**[!UICONTROL Amounts]**&#x200B;节的&#x200B;**[!UICONTROL Allocated]**&#x200B;字段中定义10,000欧元的预算。 在窗口的下部添加两个费用类别：
+1. 在 **[!UICONTROL Allocated]** 字段 **[!UICONTROL Amounts]** 中。 在窗口的下部添加两个费用类别：
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 
 #### 步骤2 — 配置服务提供商并定义成本结构 {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. 从&#x200B;**[!UICONTROL Administration > Campaigns]**&#x200B;节点创建服务提供商和服务模板及其成本结构。 有关更多信息，请参阅[创建服务提供商及其成本类别](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)。
+1. 使用 **[!UICONTROL Administration > Campaigns]** 节点。 有关更多信息，请参阅 [创建服务提供商及其成本类别](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
-   对于直邮投放，请创建成本类别&#x200B;**[!UICONTROL Envelopes]**（类型114x229和162x229）、**[!UICONTROL Postage]**&#x200B;和&#x200B;**[!UICONTROL Print]**（类型A3和A4）。 然后创建以下成本结构：
+   对于直邮投放，请创建成本类别 **[!UICONTROL Envelopes]** （类型114x229和162x229）， **[!UICONTROL Postage]** 和 **[!UICONTROL Print]** （类型A3和A4）。 然后创建以下成本结构：
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 
@@ -243,11 +243,11 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
    对于任务，请创建以下两个成本类别：
 
-   * **[!UICONTROL Room reservation]** （小房间和大房间）， **** 固定费用结构为300和500欧元：
+   * **[!UICONTROL Room reservation]** （小房间和大房间），带 **固定** 费用结构，数额为300和500欧元：
 
    ![](assets/s_user_cost_mgmt_sample_6.png)
 
-   * **[!UICONTROL Creation]** (内&#x200B;**容** 模板类型)，每日 **** 成本结构为300欧元：
+   * **[!UICONTROL Creation]** (**内容模板** 类型)，带 **每日** 300欧元的成本结构：
 
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
@@ -265,7 +265,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
    ![](assets/s_user_cost_mgmt_sample_9.png)
 
-1. 单击&#x200B;**[!UICONTROL Ok]**，然后单击&#x200B;**[!UICONTROL Save]**&#x200B;以确认此信息。 然后，营销活动的计算成本将更新为估计的临时成本。
+1. 单击 **[!UICONTROL Ok]** 然后 **[!UICONTROL Save]** 以确认此信息。 然后，营销活动的计算成本将更新为估计的临时成本。
 
 #### 步骤4 — 创建直邮投放 {#step-4---creating-the-direct-mail-delivery}
 
@@ -289,7 +289,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
    ![](assets/s_user_cost_mgmt_sample_10b.png)
 
-有关投放的费用行将添加到营销活动的&#x200B;**[!UICONTROL Edit > Budget]**&#x200B;选项卡中。 编辑它以查看计算的详细信息。
+与交货有关的费用行将添加在 **[!UICONTROL Edit > Budget]** 选项卡。 编辑它以查看计算的详细信息。
 
 ![](assets/s_user_cost_mgmt_sample_11.png)
 
@@ -301,21 +301,21 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 #### 步骤5 — 创建任务 {#step-5---creating-tasks}
 
-在此营销活动中，我们将添加之前为其创建成本结构的两个任务（请参阅[步骤2 — 配置服务提供商并定义成本结构](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)）。 为此，请在营销活动仪表板中，单击&#x200B;**[!UICONTROL Add a task]**&#x200B;按钮。 命名任务并单击&#x200B;**[!UICONTROL Save]**。
+在此营销活动中，我们将添加之前为其创建成本结构的两个任务(请参阅 [步骤2 — 配置服务提供商并定义成本结构](#step-2---configuring-the-service-provider-and-defining-the-cost-structures))。 为此，请在营销活动仪表板中，单击 **[!UICONTROL Add a task]** 按钮。 命名任务并单击 **[!UICONTROL Save]**.
 
 1. 然后，该任务将添加到任务列表。 您必须对其进行编辑才能对其进行配置。
 
-1. 在&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡中，选择服务和相应的成本类别：
+1. 在 **[!UICONTROL Properties]** 选项卡，选择服务和相应的成本类别：
 
    ![](assets/s_user_cost_mgmt_sample_14.png)
 
-1. 接下来，单击任务的&#x200B;**[!UICONTROL Expenses and revenue]**&#x200B;图标，并指定预计临时成本。
+1. 接下来，单击 **[!UICONTROL Expenses and revenue]** 图标，并指定预计临时成本。
 
    ![](assets/s_user_cost_mgmt_sample_15.png)
 
    保存任务后，将指定计算成本，并输入估计临时成本的值。
 
-   任务完成（状态&#x200B;**[!UICONTROL Finished]**）后，计算的成本将自动更新为在其成本结构中输入的“大房间”的成本。 此成本也会显示在划分的此类别中。
+   任务完成时（状态） **[!UICONTROL Finished]** )，则计算成本会自动更新为在其成本结构中输入的大房间成本。 此成本也会显示在划分的此类别中。
 
 1. 接下来，根据同一过程创建第二个任务；计划超过五天，并且与之前创建的成本结构相关。
 
@@ -327,7 +327,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 #### 步骤6 — 更新促销活动预算状态 {#step-6---update-the-campaign-budget-status}
 
-配置营销活动后，可将其设置为&#x200B;**[!UICONTROL Specified]**&#x200B;以更新其状态。 然后，营销活动的计算成本将指示投放的计算成本和营销活动任务的总和：
+配置营销活动后，可将其设置为 **[!UICONTROL Specified]**. 然后，营销活动的计算成本将指示投放的计算成本和营销活动任务的总和：
 
 ![](assets/s_user_cost_mgmt_sample_18.png)
 
@@ -337,7 +337,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 ![](assets/s_user_cost_mgmt_sample_19.png)
 
-然后，您可以单击该链接以授予或拒绝批准，或者在为此营销活动激活通知时使用通知电子邮件中的链接。
+然后，您可以单击链接以授予或拒绝批准，或者在为此营销活动激活通知时使用通知电子邮件中的链接。
 
 预算获得批准并交付完成后，成本将通过特殊的技术工作流自动上传。
 
@@ -347,7 +347,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 ### 订单创建 {#order-creation}
 
-要与服务提供商保存新订单，请单击树的&#x200B;**[!UICONTROL MRM > Orders]**&#x200B;节点，然后单击&#x200B;**[!UICONTROL New]**&#x200B;按钮。
+要与服务提供商保存新订单，请单击 **[!UICONTROL MRM > Orders]** 树的节点，然后单击 **[!UICONTROL New]** 按钮。
 
 指定订单编号、相关服务提供商以及订单总金额。
 
@@ -357,18 +357,18 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 对于每个服务提供商，您可以保存发票并定义其状态和预算费用。
 
-发票会创建并存储在Adobe Campaign树的&#x200B;**[!UICONTROL MRM > Invoices]**&#x200B;节点中。
+发票会在 **[!UICONTROL MRM > Invoices]** Adobe Campaign树的节点。
 
 ![](assets/s_user_cost_create_invoice.png)
 
-发票由发票行组成，发票行的总额允许自动计算金额。 这些行是从&#x200B;**[!UICONTROL Invoice lines]**&#x200B;选项卡中手动创建的。 它们可以与订单关联，以便将信息上传到订单。
+发票由发票行组成，发票行的总额允许自动计算金额。 这些行是通过 **[!UICONTROL Invoice lines]** 选项卡。 它们可以与订单关联，以便将信息上传到订单。
 
 ![](assets/s_user_cost_invoice_add_line.png)
 
-每个服务提供商的发票显示在用户档案的&#x200B;**[!UICONTROL Invoices]**&#x200B;选项卡中：
+每个服务提供商的发票显示在 **[!UICONTROL Invoices]** 选项卡：
 
 ![](assets/s_ncs_user_invoice_from_supplier.png)
 
-使用&#x200B;**[!UICONTROL Details]**&#x200B;选项卡可显示发票的内容。
+的 **[!UICONTROL Details]** 选项卡可显示发票的内容。
 
-单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建新发票。
+单击 **[!UICONTROL Add]** 创建新发票。

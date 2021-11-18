@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 9%
@@ -17,23 +17,23 @@ ht-degree: 9%
 
 ![](../../assets/common.svg)
 
-投放能力允许您测量活动到达收件人收件箱的成功情况，而不会出现弹回或标记为垃圾邮件。 [了解投放能力为何重要](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters)。
+投放能力允许您衡量活动是否成功到达收件人的收件箱，而不会出现弹回或标记为垃圾邮件。 [了解投放能力为何重要](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters).
 
-更准确地说，电子邮件投放能力是指一组特征，这些特征决定了邮件在短时间内通过个人电子邮件地址到达其目的地的能力，并在内容和格式方面具有预期质量。
+更准确地说，电子邮件投放能力是指一组特征，这些特征决定了消息在短时间内通过个人电子邮件地址到达其目标的能力，并在内容和格式方面具有预期质量。
 
-要更深入地了解什么是可投放性，并了解有关关键可投放性术语、概念和方法的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
+要更深入地了解什么是可投放性，并了解有关关键可投放性术语、概念和方法的更多信息，请参阅 [Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans).
 
 ## 如何提高投放能力 {#deliverability-key-points}
 
 投放能力问题通常与互联网服务提供商和邮件服务器管理员实施的针对垃圾邮件的保护措施有关。
 
-* 有关如何设计成功的电子邮件营销活动的一般建议，请参阅[可投放性策略和定义](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html)。
+* 有关如何设计成功的电子邮件营销活动的一般建议，请参阅 [投放能力策略和定义](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html).
 
 * 有关如何优化Adobe Campaign电子邮件的投放能力的更多具体建议，Adobe建议使用此部分中列出的最佳实践。
 
 >[!NOTE]
 >
->由于ISP必须不断开发新的复杂过滤技术来保护其客户免受垃圾邮件发送者的攻击，因此电子邮件投放能力的特点是标准和规则不断变化。 请确保参阅定期更新的[Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)。
+>由于ISP必须不断开发新的复杂过滤技术来保护其客户免受垃圾邮件发送者的攻击，因此电子邮件投放能力的特点是标准和规则不断变化。 请确保您参考 [Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) 定期更新。
 
 ### 投放能力率
 
@@ -42,13 +42,13 @@ ht-degree: 9%
 对于Adobe Campaign，投放能力率取决于多种因素，特别是：
 
 * 正确配置实例：请联系您的Adobe代表以获取帮助。
-* 合法的网络配置：请参阅[此部分](optimize-delivery.md#network-config)和[域设置和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy)。
-* 您的IP地址信誉：请参阅[IP策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy)。
-* 目标地址的质量：请参阅[隔离管理](optimize-delivery.md#quarantine-management)。
-* 低[投诉](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html)和[硬退回率](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces)。
-* 您的消息内容：请参阅[控制电子邮件内容](control-message-content.md)。
-* 报文验证(SPF、DKIM、DMARC):请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
-* 发件人声誉：要了解主ISP如何评估发件人的信誉，请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html)。
+* 合法的网络配置：请参阅 [此部分](optimize-delivery.md#network-config) 和 [域设置和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
+* 您的IP地址信誉：请参阅 [IP策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy).
+* 目标地址的质量：请参阅 [隔离管理](optimize-delivery.md#quarantine-management).
+* 低 [投诉](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html) 和 [硬退回](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces) 比率。
+* 您的消息内容：请参阅 [控制电子邮件内容](control-message-content.md).
+* 报文验证(SPF、DKIM、DMARC):请参阅 [此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+* 发件人声誉：要了解主ISP如何评估发件人的信誉，请参阅 [此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html).
 
 ## Campaign投放能力工具 {#deliverability-tools}
 
@@ -70,7 +70,7 @@ Adobe Campaign提供了多种工具来跟踪和改进平台的投放能力性能
 
 有关此内容的更多信息，请参阅[使用双重选择加入创建订阅表单](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)。
 
-有关从客户收集数据时的最佳实践的更多信息，请参阅[Adobe可交付性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene)。
+有关从客户收集数据时的最佳实践的更多信息，请参阅 [Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene).
 
 ### 利用隔离管理
 
@@ -113,6 +113,6 @@ By settling for average (80%) deliverability, marketers are leaving significant 
 
 What exactly is email deliverability? And how can marketers improve deliverability rates to widen the mouth of the funnel and squeeze more results from their email campaigns?
 
-Email deliverability refers to the set of characteristics that determine a message's ability to reach its destination, via a personal e-mail address, within a short time, and with the expected quality in terms of content and format. These characteristics fall into four main categories: data quality, message and content, sending infrastructure, and reputation. Together, they form the foundation of a successful email deliverability program. This overview outlines the four fundamentals of email deliverability success and offers best practices for reaching the inbox and driving greater revenues from email marketing programs.
+Email deliverability refers to the set of characteristics that determine a message's ability to reach its destination, via a personal email address, within a short time, and with the expected quality in terms of content and format. These characteristics fall into four main categories: data quality, message and content, sending infrastructure, and reputation. Together, they form the foundation of a successful email deliverability program. This overview outlines the four fundamentals of email deliverability success and offers best practices for reaching the inbox and driving greater revenues from email marketing programs.
 
 ![](assets/deliverability_overview_2.png)-->

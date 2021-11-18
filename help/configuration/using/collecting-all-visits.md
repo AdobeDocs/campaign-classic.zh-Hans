@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -29,11 +29,11 @@ ht-degree: 3%
 
 ## 服务器配置 {#server-configuration}
 
-通过过载&#x200B;**serverConf.xml**&#x200B;文件的某些元素来配置服务器。 这些文件保存在Adobe Campaign安装目录的&#x200B;**conf**&#x200B;子目录中。
+服务器的配置方式是使 **serverConf.xml** 文件。 这些文件保存在 **conf** Adobe Campaign安装目录的子目录。
 
 ### 重定向服务器 {#redirection-server}
 
-对于重定向服务器，将&#x200B;**redirection**&#x200B;元素的&#x200B;**trackWebVisitors**&#x200B;属性设置为&#x200B;**true**。
+对于重定向服务器，请将 **trackWebVisitors** 属性 **重定向** 元素 **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -46,7 +46,7 @@ trackingPassword=""
 
 要通过客户端控制台查看跟踪信息，您必须：
 
-* 创建&#x200B;**虚拟投放**（投放映射必须与目标架构的映射相同），
-* 在&#x200B;**NmsTracking_WebTrackingDelivery**&#x200B;选项中输入此投放的&#x200B;**内部名称**。
+* 创建 **虚拟投放** （投放映射必须与目标架构的映射相同），
+* 输入 **内部名称** 的 **NmsTracking_WebTrackingDelivery** 选项。
 
 在创建的虚拟投放中，可以查看并非直接在电子邮件中单击之后显示的所有网站跟踪信息。

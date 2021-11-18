@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 20%
@@ -29,7 +29,7 @@ Adobe Campaign允许您使用来自数据库的数据和适合连接用户权限
 
 >[!NOTE]
 >
->请参阅[安全和隐私检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html) ，了解如何优化Web应用程序的安全性。
+>请参阅 [安全和隐私检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html) 了解如何优化web应用程序的安全性。
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ Adobe Campaign中的Web应用程序提供对以下功能的访问：
 * 使用图像、视频、超文本链接、验证码等。 有关详细信息，请参见此 [ 页面](editing-content.md)。
 * 实时监控响应。 有关详细信息，请参见此 [ 页面](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking)。
 
-可选的&#x200B;**Survey**&#x200B;创建模块提供以下附加功能：
+可选 **调查** 创建模块提供了以下附加功能：
 
 * 数据库的动态扩展：创建初始数据模板中未包含的响应。 有关详细信息，请参见此 [ 页面](../../surveys/using/managing-answers.md#storing-collected-answers)。
 * 生成专用报告。 有关详细信息，请参见此 [ 页面](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys)。
@@ -61,9 +61,9 @@ Adobe Campaign中的Web应用程序提供对以下功能的访问：
 
 >[!NOTE]
 >
->有关调查的详情，请参见[此部分](../../surveys/using/about-surveys.md)。
+>有关调查的详细信息，请参阅 [此部分](../../surveys/using/about-surveys.md).
 >
->[此部分](about-web-forms.md)中详细介绍了Adobe Campaign中Web表单的总体功能。
+>Adobe Campaign中Web窗体的总体功能详见 [此部分](about-web-forms.md).
 
 ## Web应用程序实施 {#web-application-implementation}
 
@@ -71,19 +71,19 @@ Adobe Campaign中的Web应用程序提供对以下功能的访问：
 
 1. 创建内容（字段、列表、表、图形等）。
 
-   您还可以查看详细介绍表单可用字段的部分：所有这些字段也可用于Web应用程序。 此信息可在[此页](adding-fields-to-a-web-form.md)中找到。
+   您还可以查看详细介绍表单可用字段的部分：所有这些字段也可用于Web应用程序。 此信息可在 [本页](adding-fields-to-a-web-form.md).
 
 1. 根据需要，您可以添加预加载、测试和保存步骤，以及配置访问控制系统（主要是在外联网发布的框架内）。
 1. 发布Web应用程序，以在外联网或Adobe Campaign中提供。
 
 ## Web应用程序初始配置 {#web-application-initial-configuration}
 
-通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;和&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Web Applications]**&#x200B;链接创建Web应用程序。
+Web应用程序通过 **[!UICONTROL Web Applications]** 链接 **[!UICONTROL Campaigns]** 和 **[!UICONTROL Profiles and targets]** 选项卡。
 
-Web应用程序存储在Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Online > Web Applications]**&#x200B;节点中。 配置在以下文件夹中进行划分：
+Web应用程序存储在 **[!UICONTROL Resources > Online > Web Applications]** Adobe Campaign树的节点。 配置在以下文件夹中进行划分：
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**:包含Web窗体演示文稿（应用程序和调查）的渲染模板。利用模板可生成表单。 它还使用CSS样式表。 此样式表可能会在模板级别过载。 有关详细信息，请参见[此页面](form-rendering.md#selecting-the-form-rendering-template)。
-* **[!UICONTROL Resources > Templates > Web application templates]**:包含表单模板。要创建表单或Web应用程序，必须从模板开始。
+* **[!UICONTROL Administration > Configuration > Form renderings]**:包含Web窗体演示文稿（应用程序和调查）的渲染模板。 利用模板可生成表单。 它还使用CSS样式表。 此样式表可能会在模板级别过载。 有关详细信息，请参见[此页面](form-rendering.md#selecting-the-form-rendering-template)。
+* **[!UICONTROL Resources > Templates > Web application templates]**:包含表单模板。 要创建表单或Web应用程序，必须从模板开始。
 
 ## Web应用程序模板 {#web-application-templates}
 
@@ -93,7 +93,7 @@ Web应用程序存储在Adobe Campaign树的&#x200B;**[!UICONTROL Resources > On
 >
 >您可以将现有Web应用程序转换为模板。 要执行此操作，请选择表单并右键单击。 选择 **[!UICONTROL Actions > Save as template...]**。
 
-您可以通过Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Templates > Web Application templates]**&#x200B;节点创建新模板。
+您可以通过 **[!UICONTROL Resources > Templates > Web Application templates]** Adobe Campaign树的节点。
 
 创建向导允许您选择要启用的选项，如下所示。
 

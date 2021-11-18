@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '3229'
 ht-degree: 37%
@@ -42,7 +42,7 @@ ht-degree: 37%
   <tr> 
    <td> <span class="uicontrol">大于</span> <br /> </td> 
    <td> 返回大于输入值的值。<br /> </td> 
-   <td> <strong>年龄(@age)大于50</strong>时，将返回所有大于“50”的值，即“51”、“52”等。<br /> </td> 
+   <td> <strong>年龄(@age)大于50岁</strong>，将返回大于“50”的所有值，即“51”、“52”等。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">小于</span> <br /> </td> 
@@ -52,67 +52,67 @@ ht-degree: 37%
   <tr> 
    <td> <span class="uicontrol">大于或等于</span> <br /> </td> 
    <td> 返回等于或大于输入值的所有值。<br /> </td> 
-   <td> <strong>年龄(@age)大于或等于“30”时，将返回</strong>所有年龄为30岁或以上的收件人。<br /> </td> 
+   <td> <strong>年龄(@age)大于或等于“30”</strong>，将返回30岁或更久的所有收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">小于或等于</span> <br /> </td> 
    <td> 返回等于或小于输入值的所有值。<br /> </td> 
-   <td> <strong>年龄(@age)小于或等于“60”时，将返回</strong>所有年龄在60岁或以下的收件人。<br /> </td> 
+   <td> <strong>年龄(@age)小于或等于“60”</strong>，将返回60岁或以下的所有收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不等于</span> <br /> </td> 
    <td> 返回与输入值不相同的所有值。<br /> </td> 
-   <td> <strong>语言(@language)等于“英语”</strong>。<br /> </td> 
+   <td> <strong>语言(@language)等于“英语”</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">开始于</span> <br /> </td> 
-   <td> 返回以输入值开头的结果。<br /> </td> 
+   <td> 返回以输入值开始的结果。<br /> </td> 
    <td> <strong>帐号(@account)以“32010”开头。</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">开头不为</span> <br /> </td> 
-   <td> 返回不以输入的值<br />开头的结果 </td> 
-   <td> <strong>帐户号(@account)不以'20'开头</strong>。<br /> </td> 
+   <td> 返回不以输入值开头的结果<br /> </td> 
+   <td> <strong>帐户号(@account)不以“20”开头</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">包含</span> <br /> </td> 
    <td> 返回至少包含输入值的结果。<br /> </td> 
-   <td> <strong>电子邮件域(@domain)包含“mail”</strong>，将返回包含“mail”的所有域名。因此，也将返回“gmail.com”域。<br /> </td> 
+   <td> <strong>电子邮件域(@domain)包含“mail”</strong>，将返回包含“mail”的所有域名。 因此，“gmail.com”域也将被返回。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不包含</span> <br /> </td> 
    <td> 返回不包含输入值的结果。<br /> </td> 
-   <td> <strong>电子邮件域(@domain)不包含“vo”</strong>。在这种情况下，将不会返回包含“vo”的域名。 “voila.fr”域名将不会显示在结果中。<br /> </td> 
+   <td> <strong>电子邮件域(@domain)不包含“vo”</strong>. 在这种情况下，将不会返回包含“vo”的域名。 “voila.fr”域名将不会显示在结果中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">相似</span> <br /> </td> 
-   <td> <span class="uicontrol">相似</span>与<span class="uicontrol">包含</span>运算符非常相似。它允许您在值中插入<span class="uicontrol">%</span>通配符。<br /> </td> 
-   <td> <strong>姓氏(@lastName)，如“Jon%s”</strong>。在此，通配符用作“小丑”以查找名称“Jones”，前提是操作员忘记了“n”和“s”之间缺少的字母。<br /> </td> 
+   <td> <span class="uicontrol">相似</span>与<span class="uicontrol">包含</span>运算符非常相似。它允许您插入 <span class="uicontrol">%</span> 值中的通配符。<br /> </td> 
+   <td> <strong>姓氏(@lastName)，如“Jon%s”</strong>. 在本例中，通配符用作“小丑”来查找名称“Jones”，前提是操作员忘记了“n”和“s”之间缺少的字母。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不相似</span> <br /> </td> 
    <td> 与 <span class="uicontrol">相似</span>相同。不允许您取回输入的值。 在本例中，输入的值也必须包含 <span class="uicontrol">%</span> 个通配符字段。<br /> </td> 
-   <td> <strong>姓氏(@lastName)与“Smi%h”不同</strong>。在此，将不返回姓氏为“Smi%h”的收件人。<br /> </td> 
+   <td> <strong>姓氏(@lastName)与“Smi%h”不同</strong>. 在此，将不返回姓氏为“Smi%h”的收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">为空</span> <br /> </td> 
    <td> 在这种情况下，我们要查找的结果与第二个值列中的空值匹配。<br /> </td> 
-   <td> <strong>移动设备(@mobilePhone)</strong> 为空，将返回所有没有移动设备号码的收件人。<br /> </td> 
+   <td> <strong>移动设备(@mobilePhone)为空</strong> 返回没有移动号码的所有收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不为空</span> <br /> </td> 
-   <td> 与<span class="uicontrol">Is empty</span>运算符相反。 无需在第二个值列中输入数据。<br /> </td> 
-   <td> <strong>电子邮件(@email)不为空</strong>。<br /> </td> 
+   <td> 与 <span class="uicontrol">为空</span> 运算符。 无需在第二个值列中输入数据。<br /> </td> 
+   <td> <strong>电子邮件(@email)不为空</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">包含在</span> <br /> </td> 
    <td> 返回所指示值中包含的结果。 这些值必须用逗号分隔。<br /> </td> 
-   <td> <strong>出生日期(@birthDate)包含在“12/10/1979,12/10/1984”中</strong>，将返回在这些日期之间出生的收件人。  <br /> </td> 
+   <td> <strong>出生日期(@birthDate)列在“12/10/1979,12/10/1984”中</strong>，将返回这些日期之间出生的收件人。 <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">未包含在</span> <br /> </td> 
-   <td> 与<span class="uicontrol">Is included in</span>运算符类似的工作。 在此，我们要根据输入的值排除收件人。<br /> </td> 
-   <td> <strong>出生日期(@birthDate)不包括在“12/10/1979,12/10/1984”中</strong>。与上一个示例不同，不会返回在这些日期内出生的收件人。<br /> </td> 
+   <td> 与 <span class="uicontrol">包含在</span> 运算符。 在此，我们要根据输入的值排除收件人。<br /> </td> 
+   <td> <strong>出生日期(@birthDate)不包括在“12/10/1979,12/10/1984”中</strong>. 与上一个示例不同，不会返回在这些日期内出生的收件人。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -125,7 +125,7 @@ ht-degree: 37%
 * **[!UICONTROL Or]** 允许您提供替代方法，
 * **[!UICONTROL Except]** 允许您定义例外。
 
-单击&#x200B;**[!UICONTROL And]**（默认提供），然后从下拉列表中选择。
+单击 **[!UICONTROL And]** （默认提供），然后从下拉列表中选择。
 
 ![](assets/query_condition_modif_01.png)
 
@@ -157,33 +157,33 @@ ht-degree: 37%
 
 * 垂直箭头允许您移动条件，从而更改其执行顺序。
 
-此示例说明如何使用箭头删除圆括号级别。 从以下筛选条件开始：**[!UICONTROL City equal to London OR gender equal to male and mobile not indicated OR account # starts with "95" and company name starts with "A"]**。
+此示例说明如何使用箭头删除圆括号级别。 从以下筛选条件开始： **[!UICONTROL City equal to London OR gender equal to male and mobile not indicated OR account # starts with "95" and company name starts with "A"]**.
 
-将光标放在&#x200B;**[!UICONTROL Gender (@gender) equal to Male]**&#x200B;筛选条件上并单击&#x200B;**[!UICONTROL Remove a parenthesis level]**&#x200B;箭头。
+将光标放在 **[!UICONTROL Gender (@gender) equal to Male]** 过滤条件并单击 **[!UICONTROL Remove a parenthesis level]** 箭头。
 
 ![](assets/query_editor_nveau_32.png)
 
-**[!UICONTROL Gender (@gender) equal to Male]**&#x200B;条件已在其圆括号中。 它已变为与“伦敦金融城等于伦敦”条件相同的级别。 这些条件链接在一起(**[!UICONTROL And]**)。
+的 **[!UICONTROL Gender (@gender) equal to Male]** 条件已从其括号中取出。 它已变为与“伦敦金融城等于伦敦”条件相同的级别。 这些条件链接在一起(**[!UICONTROL And]**)。
 
 ## 选择要提取的数据 {#selecting-data-to-extract}
 
-可用字段因表而异。 所有字段都存储在称为&#x200B;**[!UICONTROL Main element]**&#x200B;的主节点中。 在以下示例中，可用字段位于收件人表中。 字段始终按字母顺序显示。
+可用字段因表而异。 所有字段都存储在称为 **[!UICONTROL Main element]**. 在以下示例中，可用字段位于收件人表中。 字段始终按字母顺序显示。
 
-选定字段的详细信息显示在窗口底部。 例如，**[!UICONTROL Email domain]**&#x200B;字段是&#x200B;**[!UICONTROL Calculated SQL field]**，其扩展名为&#x200B;**[!UICONTROL (@domain)]**。
+选定字段的详细信息显示在窗口底部。 例如， **[!UICONTROL Email domain]** 字段是 **[!UICONTROL Calculated SQL field]** 而它的扩展是 **[!UICONTROL (@domain)]**.
 
 ![](assets/query_editor_nveau_59.png)
 
 >[!NOTE]
 >
->使用&#x200B;**[!UICONTROL Search]**&#x200B;工具查找可用字段。
+>使用 **[!UICONTROL Search]** 工具来查找可用字段。
 
-双击可用字段以将其添加到输出列。 在查询结束时，每个选定字段都会在&#x200B;**[!UICONTROL Data preview]**&#x200B;窗口中创建一列。
+双击可用字段以将其添加到输出列。 在查询结束时，每个选定的字段都会在 **[!UICONTROL Data preview]** 窗口。
 
 ![](assets/query_editor_nveau_01.png)
 
-默认情况下，不显示高级字段。 单击可用字段右下角的&#x200B;**[!UICONTROL Display advanced fields]**&#x200B;可显示所有内容。 再次单击可返回到前一个视图。
+默认情况下，不显示高级字段。 单击 **[!UICONTROL Display advanced fields]** 显示所有内容。 再次单击可返回到前一个视图。
 
-例如，在收件人表中，高级字段为&#x200B;**Boolean 1**、**[!UICONTROL Boolean 2]**、**[!UICONTROL Boolean 3]**、**[!UICONTROL Foreign key of "Folder" link]**&#x200B;等。
+例如，在收件人表中，高级字段为 **布尔值1**, **[!UICONTROL Boolean 2]**, **[!UICONTROL Boolean 3]**, **[!UICONTROL Foreign key of "Folder" link]**&#x200B;等。
 
 以下示例显示了收件人表的高级字段。
 
@@ -208,27 +208,27 @@ ht-degree: 37%
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_48.png" /> </td> 
    <td> 主键。 此SQL字段是标识表中记录的一种方式。<br /> </td> 
-   <td> 标识符收件人是主键，标识符按定义是唯一的。<br /> </td> 
+   <td> 标识符收件人是主键，标识符在定义中是唯一的。<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_02.png" /> </td> 
-   <td> 外键。 用作指向另一个表的链接。<br /> </td> 
-   <td> 收件人外键、服务外键等<br /> </td> 
+   <td> 外键。 用作指向其他表的链接。<br /> </td> 
+   <td> 接收方外键、服务外键等。<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_46.png" /> </td> 
-   <td> 计算字段。 此类型的字段是使用数据库中的值在请求时计算的。<br /> </td> 
+   <td> 计算字段。 此类型的字段是根据请求使用数据库中的值计算的。<br /> </td> 
    <td> 年龄、电子邮件域等<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_49.png" /> </td> 
    <td> 包含长文本的字段。<br /> </td> 
-   <td> 注释、完整地址等<br /> </td> 
+   <td> 评论、完整地址等<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_50.png" /> </td> 
-   <td> 索引的SQL字段。<br /> </td> 
-   <td> 全名、ISO代码等<br /> </td> 
+   <td> 索引的SQL字段。 <br /> </td> 
+   <td> 全名、ISO代码等 <br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -247,22 +247,22 @@ ht-degree: 37%
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_51.png" /> </td> 
    <td> 特别是指向表的链接。 这些类型与1-1类型关联一致。 源表格的存在只能与目标表格的一个存在一致。 例如，只能将一个收件人链接到国家/地区。<br /> </td> 
-   <td> 文件夹、状态、国家/地区等<br /> </td> 
+   <td> 文件夹、州、国家/地区等 <br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_52.png" /> </td> 
    <td> 特定表上的收集元素。 这些值与1-N类型关联一致。 一个源表实例可以与目标表的多个实例一致，但一个目标表实例只能与源表的一个实例一致。 例如，一个收件人可以订阅“n”订阅信。<br /> </td> 
-   <td> 订阅、列表、排除日志等<br /> </td> 
+   <td> 订阅、列表、排除日志等。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->* 使用&#x200B;**[!UICONTROL Add]**&#x200B;按钮（侧图标栏上方）添加要在其中编辑表达式的输出列。 有关编辑表达式的更多信息，请参阅[此部分](#building-expressions)。
->* 单击红色的“x”(**Delete**)删除输出列。
+>* 使用 **[!UICONTROL Add]** 按钮（位于侧图标栏上方）以添加要在其中编辑表达式的输出列。 有关编辑表达式的更多信息，请参阅 [此部分](#building-expressions).
+>* 通过单击红色的“x”(**删除**)。
 >* 使用箭头更改输出列的顺序。
->* **[!UICONTROL Distribution of values]**&#x200B;用于查看所选字段值的分布（例如，链接到收件人镇、收件人语言等的分布）。
+>* 的 **[!UICONTROL Distribution of values]** 用于查看所选字段值的分布（例如，链接到收件人镇、收件人语言等的分布）。
 
 
 ## 创建计算字段 {#creating-calculated-fields}
@@ -281,7 +281,7 @@ ht-degree: 37%
 
    ![](assets/query_editor_nveau_61.png)
 
-* **[!UICONTROL JavaScript expression]**:计算字段的值是JavaScript函数评估的结果。可以键入返回的值（数字、日期等）。
+* **[!UICONTROL JavaScript expression]**:计算字段的值是JavaScript函数评估的结果。 可以键入返回的值（数字、日期等）。
 
    ![](assets/query_editor_nveau_62.png)
 
@@ -289,20 +289,20 @@ ht-degree: 37%
 
    可以使用列的源值并为其指定目标值。 此目标值将显示在新输出列中。
 
-   有关添加计算字段类型&#x200B;**[!UICONTROL Enumerations]**&#x200B;的示例，请参阅[此部分](../../workflow/using/adding-enumeration-type-calculated-field.md)。
+   添加计算字段类型的示例 **[!UICONTROL Enumerations]** 可用，请参阅 [此部分](../../workflow/using/adding-enumeration-type-calculated-field.md).
 
    ![](assets/query_editor_nveau_63.png)
 
-   **[!UICONTROL Enumerations]**&#x200B;类型计算字段可以包含4个条件：
+   的 **[!UICONTROL Enumerations]** 类型计算字段可以包括4个条件：
 
    * **[!UICONTROL Keep the source value]** 将源值还原到目标，而不更改它。
    * **[!UICONTROL Use the following value]** 允许您为未定义的源值输入默认目标值。
    * **[!UICONTROL Generate a warning and continue]** 警告用户源值无法更改。
    * **[!UICONTROL Generate an error and reject the line]** 阻止计算和导入行。
 
-单击&#x200B;**[!UICONTROL Detail of calculated field]**&#x200B;可查看插入字段的详细信息。
+单击 **[!UICONTROL Detail of calculated field]** 查看插入字段的详细信息。
 
-要删除此计算字段，请单击&#x200B;**[!UICONTROL Remove the calculated field]**&#x200B;交叉点。
+要删除此计算字段，请单击 **[!UICONTROL Remove the calculated field]** 交叉。
 
 ![](assets/query_editor_nveau_58.png)
 
@@ -314,11 +314,11 @@ ht-degree: 37%
 
 应用以下步骤：
 
-1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中单击&#x200B;**[!UICONTROL Add]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择要输入表达式的公式类型。
+1. 单击 **[!UICONTROL Add]** 在 **[!UICONTROL Data to extract]** 窗口。 在 **[!UICONTROL Formula type]** 窗口中，选择要输入表达式的公式类型。
 
-   可用的公式类型有以下几种：**[!UICONTROL Field only]**、**[!UICONTROL Aggregate]**、**[!UICONTROL Expression]**。
+   可用的公式类型有以下几种： **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**.
 
-   选择&#x200B;**[!UICONTROL Process on an aggregate function]**&#x200B;和&#x200B;**[!UICONTROL Count]**。 单击 **[!UICONTROL Next]**。
+   选择 **[!UICONTROL Process on an aggregate function]**&#x200B;和 **[!UICONTROL Count]**. 单击 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_nveau_54.png)
 
@@ -326,30 +326,30 @@ ht-degree: 37%
 
    ![](assets/query_editor_nveau_88.png)
 
-以下是&#x200B;**[!UICONTROL Formula types]**&#x200B;窗口中可用选项的详细视图：
+以下是 **[!UICONTROL Formula types]** 窗口：
 
 ![](assets/query_editor_nveau_05.png)
 
-1. **[!UICONTROL Field only]** 允许您返回窗 **[!UICONTROL Field to select]** 口。
-1. **[!UICONTROL Aggregate (Process on an aggregate function)]**.以下是一些聚合使用示例：
+1. **[!UICONTROL Field only]** 允许您返回 **[!UICONTROL Field to select]** 窗口。
+1. **[!UICONTROL Aggregate (Process on an aggregate function)]**. 以下是一些聚合使用示例：
 
    * **[!UICONTROL Count]** 用于运行主键计数。
    * **[!UICONTROL Sum]** 允许您将客户超过一年的所有购买进行汇总。
    * **[!UICONTROL Maximum value]** 允许您查找购买了最多“n”产品的客户。
    * **[!UICONTROL Minimum value]** 允许您对客户进行排序，并查找最近订阅了优惠的客户。
-   * **[!UICONTROL Average]**.此函数允许您计算收件人的平均年龄。
+   * **[!UICONTROL Average]**. 此函数允许您计算收件人的平均年龄。
 
-      使用&#x200B;**[!UICONTROL Distinct]**&#x200B;框可恢复列的唯一值和非零值。 例如，您可以恢复收件人的所有跟踪日志，这些跟踪日志将更改为值1，因为它们都与同一收件人有关。
+      的 **[!UICONTROL Distinct]** 框中，可以恢复列的唯一值和非零值。 例如，您可以恢复收件人的所有跟踪日志，这些跟踪日志将更改为值1，因为它们都与同一收件人有关。
 
-1. **[!UICONTROL Expression]** 打开窗 **[!UICONTROL Edit the expression]** 口。这样，您就可以检测到数字过多的电话号码，这可能是输入错误。
+1. **[!UICONTROL Expression]** 打开 **[!UICONTROL Edit the expression]** 窗口。 这样，您就可以检测到数字过多的电话号码，这可能是输入错误。
 
    ![](assets/query_editor_nveau_71.png)
 
-   有关所有可用函数的列表，请参阅[函数列表](#list-of-functions)。
+   有关所有可用函数的列表，请参阅 [函数列表](#list-of-functions).
 
 ## 函数列表 {#list-of-functions}
 
-如果选择了&#x200B;**[!UICONTROL Expression]**&#x200B;类型的公式，则将进入“编辑表达式”窗口。 可以将各种类别的函数与可用字段关联：**[!UICONTROL Aggregates]**、**[!UICONTROL String]**、**[!UICONTROL Date]**、**[!UICONTROL Numerical]**、**[!UICONTROL Currency]**、**[!UICONTROL Geomarketing]**、**[!UICONTROL Windowing function]**&#x200B;和&#x200B;**[!UICONTROL Others]**。
+如果 **[!UICONTROL Expression]** 类型公式，您将转到“编辑表达式”窗口。 可以将各种类别的函数与可用字段关联： **[!UICONTROL Aggregates]**, **[!UICONTROL String]**, **[!UICONTROL Date]**, **[!UICONTROL Numerical]**, **[!UICONTROL Currency]**, **[!UICONTROL Geomarketing]**, **[!UICONTROL Windowing function]** 和 **[!UICONTROL Others]**.
 
 表达式编辑器如下所示：
 
@@ -368,12 +368,12 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>平均</strong><br /> </td> 
-   <td> 返回数字类型列<br />的平均值 </td> 
+   <td> 返回数字类型列的平均值<br /> </td> 
    <td> Avg(&lt;值&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>计数</strong><br /> </td> 
-   <td> 计算列<br />的非空值 </td> 
+   <td> 计算列的非空值<br /> </td> 
    <td> Count(&lt;值&gt;)<br /></td>  
   </tr> 
   <tr> 
@@ -383,27 +383,27 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Countdistinct</strong><br /> </td> 
-   <td> 计算列<br />的非空值 </td> 
+   <td> 计算列的非空值<br /> </td> 
    <td> Countdistinct(&lt;值&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Max</strong><br /> </td> 
-   <td> 返回数字、字符串或日期类型列<br />的最大值 </td> 
+   <td> 返回数字、字符串或日期类型列的最大值<br /> </td> 
    <td> Max(&lt;值&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>最小</strong><br /> </td> 
-   <td> 返回数字、字符串或日期类型列<br />的最小值 </td> 
+   <td> 返回数字、字符串或日期类型列的最小值<br /> </td> 
    <td> Min(&lt;值&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>StdDev</strong><br /> </td> 
    <td> 返回数字、字符串或日期列的标准偏差<br /> </td> 
-   <td> StdDev（&lt;值&gt;）<br /></td> 
+   <td> StdDev(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>总和</strong><br /> </td> 
-   <td> 返回数字、字符串或日期类型列<br />的值之和 </td> 
+   <td> 返回数字、字符串或日期类型列值的和<br /> </td> 
    <td> Sum(&lt;值&gt;)<br /></td> 
   </tr> 
  </tbody> 
@@ -460,7 +460,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>JuxtWords</strong><br /> </td> 
-   <td> 连接作为参数传递的字符串。 如有必要，在字符串之间添加空格。<br /> </td> 
+   <td> 连接作为参数传递的字符串。 在字符串之间添加空格（如有必要）。<br /> </td> 
    <td> JuxtWords(&lt;字符串&gt;, &lt;字符串&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -471,7 +471,7 @@ ht-degree: 37%
   <tr> 
    <td> <strong>LPad</strong><br /> </td> 
    <td> 返回左侧的已完成字符串<br /> </td> 
-   <td> LPad（&lt;字符串&gt;, &lt;数字&gt;, &lt;字符&gt;）<br /></td> 
+   <td> LPad(&lt;string&gt;, &lt;number&gt;, &lt;character&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Left</strong><br /> </td> 
@@ -480,7 +480,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Length</strong><br /> </td> 
-   <td> 返回字符串<br />的长度 </td> 
+   <td> 返回字符串的长度<br /> </td> 
    <td> Length(&lt;字符串&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -525,13 +525,13 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Substring</strong><br /> </td> 
-   <td> 提取从字符串的字符n1开始的、长度为n2<br />的子字符串 </td> 
+   <td> 提取从字符串的字符n1开始的、长度为n2的子字符串<br /> </td> 
    <td> Substring(&lt;字符串&gt;, &lt;偏移&gt;, &lt;长度&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>ToString</strong><br /> </td> 
    <td> 将数字转换为字符串<br /> </td> 
-   <td> ToString（&lt;数字&gt;, &lt;数字&gt;）<br /> </td>  
+   <td> ToString(&lt;number&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Upper</strong><br /> </td> 
@@ -551,7 +551,7 @@ ht-degree: 37%
   <tr> 
    <td> <strong>dataLength</strong><br /> </td> 
    <td> 返回字符串大小<br /> </td> 
-   <td> dataLength（&lt;字符串&gt;）<br /> </td>  
+   <td> dataLength(&lt;string&gt;)<br /> </td>  
   </tr> 
  </tbody> 
 </table>
@@ -612,12 +612,12 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>DaysAgo</strong><br /> </td> 
-   <td> 返回与当前日期对应的日期减n天<br /> </td> 
+   <td> 返回与当前日期减n天对应的日期<br /> </td> 
    <td> DaysAgo(&lt;数字&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgoInt</strong><br /> </td> 
-   <td> 返回对应于当前日期的日期（整数yyyymmdd）减n天<br /> </td> 
+   <td> 返回与当前日期减n天对应的日期（整数yyyymmdd）<br /> </td> 
    <td> DaysAgoInt(&lt;数字&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -743,7 +743,7 @@ ht-degree: 37%
   <tr> 
    <td> <strong>TruncTime</strong><br /> </td> 
    <td> 将时间部分舍入到最接近的秒<br /> </td> 
-   <td> TruncTim（e&lt;日期&gt;, &lt;秒数&gt;）<br /> </td>  
+   <td> TruncTim(e)&lt;date&gt;, &lt;number of="" seconds=""&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncWeek</strong><br /> </td> 
@@ -785,7 +785,7 @@ ht-degree: 37%
 
 >[!NOTE]
 >
->请注意，**Dateonly**&#x200B;函数考虑的是服务器的时区，而不是运算符的时区。
+>请注意， **Dateonly** 函数会考虑服务器的时区，而不是运算符的时区。
 
 **数值**
 
@@ -808,7 +808,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Floor</strong><br /> </td> 
-   <td> 返回大于或等于某个数字<br />的最大整数 </td> 
+   <td> 返回大于或等于某个数字的最大整数<br /> </td> 
    <td> Floor(&lt;数字&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -823,7 +823,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Mod</strong><br /> </td> 
-   <td> 返回n1除以n2<br />的整数除余数 </td> 
+   <td> 返回n1除以n2的整数除余数<br /> </td> 
    <td> Mod(&lt;数字 1&gt;, &lt;数字 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -881,12 +881,12 @@ ht-degree: 37%
   <tr> 
    <td> <strong>ConvertCurrency</strong><br /> </td> 
    <td> 将以源货币表示的金额转换为以目标货币表示的金额<br /> </td> 
-   <td> ConvertCurrency（&lt;金额&gt;, &lt;源货币&gt;, &lt;目标货币&gt;, &lt;转化日期&gt;）<br /> </td>  
+   <td> ConvertCurrency(&lt;amount&gt;, &lt;source currency=""&gt;, &lt;target currency=""&gt;, &lt;conversion date=""&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>FormatCurrency</strong><br /> </td> 
-   <td> 根据所选货币设置设置设置显示的金额的格式<br /> </td> 
-   <td> FormatCurrency（&lt;金额&gt;, &lt;货币&gt;）<br /> </td>  
+   <td> 根据所选货币设置设置显示的金额的格式<br /> </td> 
+   <td> FormatCurrency(&lt;amount&gt;, &lt;currency&gt;)<br /> </td>  
   </tr> 
  </tbody> 
 </table>
@@ -902,7 +902,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Distance</strong><br /> </td> 
-   <td> 返回由经度和纬度定义的两点之间的距离，以度表示。<br /> </td> 
+   <td> 返回由经度和纬度定义的两点之间的距离（以度表示）。<br /> </td> 
    <td> Distance(&lt;经度 A&gt;, &lt;纬度 A&gt;, &lt;经度 B&gt;, &lt;纬度 B&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -919,7 +919,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Case</strong><br /> </td> 
-   <td> 如果条件为true，则返回值1。 如果没有，则返回值2.<br /> </td> 
+   <td> 如果条件为true，则返回值1。 如果没有，则返回值2。<br /> </td> 
    <td> Case(When(&lt;条件&gt;, &lt;值 1&gt;), Else(&lt;值 2&gt;))<br /> </td> 
   </tr> 
   <tr> 
@@ -934,17 +934,17 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>Decode</strong><br /> </td> 
-   <td> 如果值1 =值2，则返回值3。 如果不返回值4.<br /> </td> 
+   <td> 如果值1 =值2，则返回值3。 如果不返回值4。<br /> </td> 
    <td> Decode(&lt;值 1&gt;, &lt;值 2&gt;, &lt;值 3&gt;, &lt;值 4&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Else</strong><br /> </td> 
    <td> 返回值 1（只能用作 case 函数的参数）<br /> </td> 
-   <td> Else（&lt;值1&gt;, &lt;值2&gt;）<br /> </td>  
+   <td> Else(&lt;value&gt;, &lt;value&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>GetEmailDomain</strong><br /> </td> 
-   <td> 从电子邮件地址<br />提取域 </td> 
+   <td> 从电子邮件地址提取域名<br /> </td> 
    <td> GetEmailDomain(&lt;值&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -965,7 +965,7 @@ ht-degree: 37%
   <tr> 
    <td> <strong>IsEmptyString</strong><br /> </td> 
    <td> 如果字符串1为空，则返回值2，否则返回值3<br /> </td> 
-   <td> IsEmptyString（&lt;值1&gt;, &lt;值2&gt;, &lt;值3&gt;）<br /> </td>  
+   <td> IsEmptyString(&lt;value&gt;, &lt;value&gt;, &lt;value&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>NoNull</strong><br /> </td> 
@@ -1021,7 +1021,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>RowNum</strong><br /> </td> 
-   <td> 根据表分区和排序顺序生成行号。<br /> </td> 
+   <td> 根据表分区和排序序列生成行号。<br /> </td> 
    <td> RowNum(PartitionBy(&lt;值 1&gt;), OrderBy(&lt;值 1&gt;))<br /> </td> 
   </tr> 
  </tbody> 

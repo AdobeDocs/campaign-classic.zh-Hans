@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -41,13 +41,13 @@ Adobe Campaign 目前提供英语、法语、德语和日语共 4 种语言的�
 
 ## 如何配置电子邮件投放能力? {#how-to-configure-email-deliverability-}
 
-除了[Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)之外，请阅读投放能力技术建议，了解如何配置实例以最大限度地提升Campaign投放能力。
+除 [Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)，阅读可投放性技术建议，了解如何配置实例以最大限度地提升Campaign投放能力。
 
 [单击此处了解更多信息](../../delivery/using/about-deliverability.md)。
 
 ## 如何实施内容批准？ {#how-can-i-implement-content-approval-}
 
-借助 Campaign，您能够以协作模式为营销活动的主要步骤设置审批流程。对于每个活动，您可以批准投放目标、内容和成本。负责批准工作的 Adobe Campaign 操作员收到电子邮件通知后，可通过控制台或 Web 连接批准或拒绝批准相关请求。
+借助 Campaign，您能够以协作模式为营销活动的主要步骤设置审批流程。对于每个活动，您可以批准投放目标、内容和成本。负责审批的Adobe Campaign运营商可以通过电子邮件通知，并可以通过控制台或Web连接接受或拒绝审批。
 
 [单击此处了解更多信息](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)，并了解如何在 Campaign 中实施投放内容的批准工作。
 

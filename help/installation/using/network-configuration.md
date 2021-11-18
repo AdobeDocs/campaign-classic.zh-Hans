@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -25,18 +25,18 @@ ht-degree: 3%
 
 ### 投放服务器 {#delivery-server}
 
-对于投放服务器(**nlserver mta**)，必须打开以下端口：
+对于投放服务器(**nlserver mta**)，则以下端口必须打开：
 
 <table> 
  <tbody> 
   <tr> 
    <td> 端口<br /> </td> 
    <td> 目标<br /> </td> 
-   <td> 注释<br /> </td> 
+   <td> 评论<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp(smtp)<br /> </td> 
-   <td> Anywhere<br /> </td> 
+   <td> 随处<br /> </td> 
    <td> 用于电子邮件广播的SMTP流量。<br /> </td> 
   </tr> 
   <tr> 
@@ -46,8 +46,8 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 38000/tcp（默认端口）<br /> </td> 
-   <td> SMS网关<br /> </td> 
-   <td> 用于向NetSize SMS路由器[option]发送短信流量。<br /> </td> 
+   <td> 短信网关<br /> </td> 
+   <td> 用于将短信流量发送到NetSize SMS路由器[option]。<br /> </td> 
   </tr> 
   <tr> 
    <td> 7777/udp<br /> </td> 
@@ -59,19 +59,19 @@ ht-degree: 3%
 
 ### 入站邮件 {#inbound-mail}
 
-对于入站邮件恢复过程(**nlserver inMail**)，必须打开以下端口：
+对于入站邮件恢复流程(**nlserver inMail**)，则以下端口必须打开：
 
 <table> 
  <tbody> 
   <tr> 
    <td> 端口<br /> </td> 
    <td> 目标<br /> </td> 
-   <td> 注释<br /> </td> 
+   <td> 评论<br /> </td> 
   </tr> 
   <tr> 
    <td> 110/tcp(pop3)<br /> </td> 
    <td> 内部邮件服务器<br /> </td> 
-   <td> 用于提取退回邮件的POP3流量。<br /> </td> 
+   <td> 用于提取退回消息的POP3流量。<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp(smtp)<br /> </td> 
@@ -83,18 +83,18 @@ ht-degree: 3%
 
 ### 应用程序服务器 {#application-server}
 
-对于应用程序服务器(**nlserver web**)，必须打开以下端口：
+对于应用程序服务器(**nlserver web**)，则以下端口必须打开：
 
 <table> 
  <tbody> 
   <tr> 
    <td> 端口<br /> </td> 
    <td> 目标<br /> </td> 
-   <td> 注释<br /> </td> 
+   <td> 评论<br /> </td> 
   </tr> 
   <tr> 
    <td> 80/tcp(http)<br /> 443/tcp(https)<br /> </td> 
-   <td> Anywhere<br /> </td> 
+   <td> 随处<br /> </td> 
    <td> HTTP或HTTPS流量（包括可交付性选件的流量）。<br /> </td> 
   </tr> 
  </tbody> 
@@ -104,33 +104,33 @@ ht-degree: 3%
 
 ### 短信投放状态 {#sms-delivery-status}
 
-要跟踪短信投放(**nlserver sms**)，必须打开以下端口：
+跟踪短信投放(**nlserver sms**)，则以下端口必须打开：
 
 <table> 
  <tbody> 
   <tr> 
    <td> 端口<br /> </td> 
    <td> 目标<br /> </td> 
-   <td> 注释<br /> </td> 
+   <td> 评论<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp（默认端口）<br /> </td> 
-   <td> SMS网关<br /> </td> 
-   <td> 查询由NetSize SMS网关[option]管理的投放队列状态。<br /> </td> 
+   <td> 短信网关<br /> </td> 
+   <td> 查询由NetSize SMS网关[选项]管理的投放队列状态。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 富客户端 {#rich-client}
 
-对于Adobe Campaign富客户端(**nlclient**)，必须打开以下端口：
+对于Adobe Campaign富客户端(**nlclient**)，则以下端口必须打开：
 
 <table> 
  <tbody> 
   <tr> 
    <td> 端口<br /> </td> 
    <td> 目标<br /> </td> 
-   <td> 注释<br /> </td> 
+   <td> 评论<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp(http)</p><p>443/tcp(https)</p><br /> </td> 
@@ -182,7 +182,7 @@ ht-degree: 3%
 <table> 
  <tbody> 
   <tr> 
-   <td> 监听端口<br /> </td> 
+   <td> 侦听端口<br /> </td> 
    <td> 位置<br /> </td> 
   </tr> 
   <tr> 
@@ -199,12 +199,12 @@ ht-degree: 3%
 <table> 
  <tbody> 
   <tr> 
-   <td> 监听端口<br /> </td> 
+   <td> 侦听端口<br /> </td> 
    <td> 位置<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp(http)</p><p> 443/tcp(https)</p><br /> </td> 
-   <td> 随处可得。 直接从Adobe Campaign平台管理Web窗体或使用镜像页面时需要。<br /> </td> 
+   <td> 随处可得。 直接从Adobe Campaign平台管理Web窗体或使用镜像页面时，必需。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -214,7 +214,7 @@ ht-degree: 3%
 <table> 
  <tbody> 
   <tr> 
-   <td> 监听端口<br /> </td> 
+   <td> 侦听端口<br /> </td> 
    <td> 位置<br /> </td> 
   </tr> 
   <tr> 
@@ -226,17 +226,17 @@ ht-degree: 3%
 
 ## 与Adobe Experience Manager集成 {#integration-with-adobe-experience-manager}
 
-如果安装是“内部部署”的，则Adobe Campaign与Adobe Experience Manager之间的集成需要打开多个端口。 有关配置此集成的更多信息，请参阅[详细文档](../../integrations/using/about-adobe-experience-manager.md)。
+如果安装是“内部部署”的，则Adobe Campaign与Adobe Experience Manager之间的集成需要打开多个端口。 有关配置此集成的更多信息，请参阅 [详细文档](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
   <tr> 
-   <td> 监听端口<br /> </td> 
+   <td> 侦听端口<br /> </td> 
    <td> 说明<br /> </td> 
   </tr> 
   <tr> 
    <td> 80<br /> </td> 
-   <td> AEM与Adobe Campaign的连接<br /> </td> 
+   <td> AEM连接到Adobe Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 

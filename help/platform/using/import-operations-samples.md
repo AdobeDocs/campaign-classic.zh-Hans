@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 64%
@@ -23,12 +23,12 @@ ht-degree: 64%
 
 1. 创建清单
 
-   * 单击Adobe Campaign主页&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;菜单中的&#x200B;**[!UICONTROL Lists]**&#x200B;链接。
-   * 单击&#x200B;**[!UICONTROL Create]**，然后单击&#x200B;**[!UICONTROL Import a list]**&#x200B;按钮。
+   * 单击 **[!UICONTROL Lists]** 链接 **[!UICONTROL Profiles and targets]** 菜单。
+   * 单击 **[!UICONTROL Create]** 然后 **[!UICONTROL Import a list]** 按钮。
 
 1. 选择要导入的文件
 
-   单击&#x200B;**[!UICONTROL Local file]**&#x200B;字段右侧的文件夹，然后选择包含要导入的列表的文件。
+   单击右侧的文件夹 **[!UICONTROL Local file]** 字段，然后选择包含要导入的列表的文件。
 
    ![](assets/s_ncs_user_import_example00_01.png)
 
@@ -40,7 +40,7 @@ ht-degree: 64%
 
 1. 启动导入
 
-   单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Start]**&#x200B;以开始导入列表。
+   单击 **[!UICONTROL Next]** 然后 **[!UICONTROL Start]** 开始导入列表。
 
    ![](assets/s_ncs_user_import_example00_03.png)
 
@@ -50,29 +50,29 @@ ht-degree: 64%
 
 1. 选择模板
 
-   * 在Adobe Campaign主页中，单击&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Jobs]**。 在作业列表上方，单击&#x200B;**[!UICONTROL New import]**。
-   * 默认情况下，保持选中&#x200B;**[!UICONTROL New text import]**&#x200B;模板。
+   * 在Adobe Campaign主页中，单击 **[!UICONTROL Profiles and targets]** 链接，然后 **[!UICONTROL Jobs]**. 在作业列表上方，单击 **[!UICONTROL New import]**.
+   * 保留 **[!UICONTROL New text import]** 模板。
    * 更改标签和描述。
    * 选择 **[!UICONTROL Simple import]**。
    * 保留默认作业文件夹。
-   * 单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;并选择&#x200B;**[!UICONTROL Tracking mode]**&#x200B;选项，以查看执行期间导入的详细信息。
+   * 单击 **[!UICONTROL Advanced parameters]** ，然后选择 **[!UICONTROL Tracking mode]** 选项，以查看执行期间导入的详细信息。
 
 1. 选择要导入的文件
 
-   单击&#x200B;**[!UICONTROL Local file]**&#x200B;字段右侧的文件夹，然后选择要导入的文件。
+   单击右侧的文件夹 **[!UICONTROL Local file]** 字段，然后选择要导入的文件。
 
    ![](assets/s_ncs_user_import_example01_01.png)
 
 1. 关联字段
 
-   单击&#x200B;**[!UICONTROL Guess the destination fields]**&#x200B;图标可自动映射源架构和目标架构。 在单击&#x200B;**[!UICONTROL Next]**&#x200B;之前，请查看此窗口中的信息。
+   单击 **[!UICONTROL Guess the destination fields]** 图标以自动映射源架构和目标架构。 在单击 **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
 1. 协调
 
    * 转到 **Recipients (nms:recipient)** 表。
-   * 选择&#x200B;**[!UICONTROL Insertion]**&#x200B;操作，并保留其他字段中的默认值。
+   * 选择 **[!UICONTROL Insertion]** 操作，并在其他字段中保留默认值。
 
       ![](assets/s_ncs_user_import_example04_01.png)
 
@@ -90,7 +90,7 @@ ht-degree: 64%
 
       ![](assets/s_ncs_user_import_example06_01.png)
 
-      **[!UICONTROL Tracking]**&#x200B;模式允许您跟踪源文件中每个记录的导入详细信息。 为此，请在主页中单击&#x200B;**[!UICONTROL Profiles and Targets]**，然后单击&#x200B;**[!UICONTROL Processes]**，选择相关导入，并查找&#x200B;**[!UICONTROL General]**、**[!UICONTROL Journal]**&#x200B;和&#x200B;**[!UICONTROL Rejects]**&#x200B;选项卡。
+      的 **[!UICONTROL Tracking]** 模式可让您跟踪源文件中每个记录的导入详细信息。 为此，请在主页中单击 **[!UICONTROL Profiles and Targets]** then **[!UICONTROL Processes]**，选择相关导入，然后查找 **[!UICONTROL General]**, **[!UICONTROL Journal]** 和 **[!UICONTROL Rejects]** 选项卡。
 
       * 检查导入进度
 
@@ -122,9 +122,9 @@ ht-degree: 64%
 
 1. 协调
 
-   * 默认情况下保持选中&#x200B;**[!UICONTROL Update or insert]**。
-   * 将选项&#x200B;**[!UICONTROL Management of duplicates]**&#x200B;保留在&#x200B;**[!UICONTROL Update]**&#x200B;模式下，以便使用文本文件中的数据修改数据库中的现有记录。
-   * 选择字段&#x200B;**[!UICONTROL Birth date]**、**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Company]** ，并为它们分配协调键值。
+   * 保留 **[!UICONTROL Update or insert]** 默认情况下选中。
+   * 保留选项 **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** 模式，以便使用文本文件中的数据修改数据库中的现有记录。
+   * 选择字段 **[!UICONTROL Birth date]**, **[!UICONTROL Name]** 和 **[!UICONTROL Company]** 并为他们分配协调密钥。
 
       ![](assets/s_ncs_user_import_example04_02.png)
 
@@ -172,12 +172,12 @@ ht-degree: 64%
 
 1. 协调
 
-   * 转到表并选择&#x200B;**[!UICONTROL Update]**&#x200B;操作。
-   * 为&#x200B;**[!UICONTROL Management of doubles]**&#x200B;字段选择选项&#x200B;**[!UICONTROL Reject entity]**。
-   * 将选项&#x200B;**[!UICONTROL Management of duplicates]**&#x200B;保留在&#x200B;**[!UICONTROL Update]**&#x200B;模式下，以便使用文本文件中的数据修改数据库中的现有记录。
-   * 将光标放在&#x200B;**[!UICONTROL Last name (@lastName)]**&#x200B;节点上，然后选择&#x200B;**[!UICONTROL Update only if destination is empty]**&#x200B;选项。
-   * 对&#x200B;**[!UICONTROL Company (@company)]**&#x200B;节点重复此操作。
-   * 为字段&#x200B;**[!UICONTROL Birth date]**、**[!UICONTROL E-mail]**&#x200B;和&#x200B;**[!UICONTROL First name]**&#x200B;分配协调键值。
+   * 转到表格并选择 **[!UICONTROL Update]** 操作。
+   * 选择选项 **[!UICONTROL Reject entity]** 对于 **[!UICONTROL Management of doubles]** 字段。
+   * 保留选项 **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** 模式，以便使用文本文件中的数据修改数据库中的现有记录。
+   * 将光标放在 **[!UICONTROL Last name (@lastName)]** 节点，然后选择 **[!UICONTROL Update only if destination is empty]** 选项。
+   * 对 **[!UICONTROL Company (@company)]** 节点。
+   * 为字段分配协调键值 **[!UICONTROL Birth date]**, **[!UICONTROL Email]** 和 **[!UICONTROL First name]**.
 
       ![](assets/s_ncs_user_import_example04_03.png)
 
@@ -221,11 +221,11 @@ ht-degree: 64%
 
 1. 协调
 
-   * 转到表并选择&#x200B;**[!UICONTROL Update]**。
-   * 为&#x200B;**[!UICONTROL Management of doubles]**&#x200B;字段选择选项&#x200B;**[!UICONTROL Reject entity]**。
-   * 将&#x200B;**[!UICONTROL Management of duplicates]**&#x200B;选项保留在&#x200B;**[!UICONTROL Update]**&#x200B;模式下，用文本文件中的数据修改数据库中的现有记录。
-   * 将光标放在&#x200B;**[!UICONTROL Account number (@account)]**&#x200B;节点上，然后选择选项&#x200B;**[!UICONTROL Take empty values into account]**。
-   * 选择字段&#x200B;**[!UICONTROL Birth date]**、**[!UICONTROL E-mail]**&#x200B;和&#x200B;**[!UICONTROL First name]** ，并为它们分配协调键值。
+   * 转到表格并选择 **[!UICONTROL Update]**.
+   * 选择选项 **[!UICONTROL Reject entity]** 对于 **[!UICONTROL Management of doubles]** 字段。
+   * 保留选项 **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** 模式，用于使用文本文件中的数据修改数据库中的现有记录。
+   * 将光标放在 **[!UICONTROL Account number (@account)]** 节点，然后选择选项 **[!UICONTROL Take empty values into account]**.
+   * 选择字段 **[!UICONTROL Birth date]**, **[!UICONTROL Email]** 和 **[!UICONTROL First name]** 并为他们分配协调密钥。
 
       ![](assets/s_ncs_user_import_example04_04.png)
 
@@ -236,4 +236,4 @@ ht-degree: 64%
 
       ![](assets/s_ncs_user_import_example06_06.png)
 
-      空文本文件的值已覆写数据库中的值。数据库中的现有值已更新为导入文件中的值，与步骤4中为重复项选择的&#x200B;**[!UICONTROL Update]**&#x200B;选项保持一致。
+      空文本文件的值已覆写数据库中的值。数据库中的现有值已更新为导入文件中的值，以与 **[!UICONTROL Update]** 选项。
