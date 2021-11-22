@@ -8,7 +8,7 @@ exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -24,21 +24,21 @@ ht-degree: 8%
 
 以下几个因素可能会直接影响服务器性能并降低平台速度：
 
-* 个性化元素的数量和类型：电子邮件中的个性化会从数据库中提取每个收件人的数据。 如果存在多个个性化元素，则会增加准备投放所需的数据量。  在[此部分](about-personalization.md)中了解有关个性化的更多信息
+* 个性化元素的数量和类型：电子邮件中的个性化会从数据库中提取每个收件人的数据。 如果存在多个个性化元素，则会增加准备投放所需的数据量。  在 [此部分](about-personalization.md)
 
 * 服务器负载：当营销服务器同时处理多个不同的任务时，可能会降低性能。 营销服务器需要协调所有投放的所有传入和传出数据，以确保数据准确无误。
 
-   **提示**  — 为避免这种情况，请与团队的其他成员协调投放计划，以确保获得最佳性能。
+   **笔尖**  — 为避免这种情况，请与团队的其他成员协调投放计划，以确保获得最佳性能。
 
-* 工作流执行：监控工作流对于避免平台性能问题至关重要。 遵循本文档](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准则。[
+* 工作流执行：监控工作流对于避免平台性能问题至关重要。 遵循所列准则 [在本文档中](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
-* 如果您符合条件，可以使用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)使用[性能监控](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html)功能监控您的平台。
+* 如果您符合条件，则可以利用 [Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans) 监视您的平台，使用 [性能监控](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hans) 功能。
 
 ## 检查网络配置 {#network-config}
 
 要在处理大量电子邮件时优化投放，并避免被误认为是垃圾邮件发送者，请确保您具有不会尝试隐藏服务器身份的合法网络配置。
 
-**提示**:使用与您的品牌网站对应的透明发件人地址。例如，旅行社公司管理着华伦天奴连锁酒店。 它拥有其网站的valentino.com域。 为推广巴黎的华伦天奴酒店，它使用paris.valentino.com子域。 因此，相关发件人地址可以是hotel@paris.valentino.com。
+**笔尖**:使用与您的品牌网站对应的透明发件人地址。 例如，旅行社公司管理着华伦天奴连锁酒店。 它拥有其网站的valentino.com域。 为推广巴黎的华伦天奴酒店，它使用paris.valentino.com子域。 因此，相关发件人地址可以是hotel@paris.valentino.com。
 
 ## 可投放性管理 {#deliverability-management}
 
@@ -48,9 +48,9 @@ ht-degree: 8%
 
    * 它是指决定收件人服务器是否能够接受电子邮件的因素。 ISP（互联网服务提供商）会过滤掉其识别为SPAM的电子邮件，或阻止下载图像。 如果他们确定某个域发送的电子邮件过多，则会对从该发件人接收的电子邮件数量设置限制。
 
-   * 检查电子邮件的投放能力时，您希望重点关注四个主要类别：数据质量、消息和内容、发送基础结构和信誉。 有关此主题的更深入探讨，请参阅[此部分](about-deliverability.md)。
+   * 检查电子邮件的投放能力时，您希望重点关注四个主要类别：数据质量、消息和内容、发送基础结构和信誉。 有关此主题的更深入分析，请参阅 [此部分](about-deliverability.md).
 
-* 应用本文档](about-deliverability.md)中详细的[推荐。
+* 应用详细的推荐 [在本文档中](about-deliverability.md).
 
 * 请联系您的Adobe代表以获取帮助。
 
@@ -62,7 +62,7 @@ ht-degree: 8%
 
 **提示**
 
-* 如果您有无效地址列表，Adobe建议通过&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**&#x200B;将其导入隔离表。
+* 如果您有无效地址列表，Adobe建议将其导入隔离表，即通过 **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
 
 * 在投放分析期间，默认情况下会将地址被隔离的收件人排除在外：它们不是目标。 这样可加快投放速度，因为错误率对投放速度有显著的影响。例如，当收件箱已满或地址不存在时，可以隔离某个电子邮件地址。 [了解详情](#identifying-quarantined-addresses-for-a-delivery)
 
@@ -77,4 +77,4 @@ ht-degree: 8%
 
 为避免向无效地址发送消息、限制不当通信并提高发件人信誉，Adobe建议实施双重选择加入机制以进行订阅后确认。 这有助于确保收件人有意订阅。
 
-[此部分](../../web/using/use-cases--web-forms.md)中概述了实施此机制的详细信息。
+有关实施此机制的详细信息，请参阅 [此部分](../../web/using/use-cases--web-forms.md).

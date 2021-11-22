@@ -23,11 +23,11 @@ Explorer导航树的每个文件夹都具有附加到其的读、写和删除访
 
 ### 文件夹是什么 {#about-folders}
 
-文件夹是Adobe Campaign树中的节点。 通过右键单击树，通过&#x200B;**[!UICONTROL Add new folder]**&#x200B;菜单创建这些节点。 默认情况下，第一个菜单允许您添加与当前上下文对应的文件夹。
+文件夹是Adobe Campaign树中的节点。 通过右键单击树，可创建这些节点 **[!UICONTROL Add new folder]** 菜单。 默认情况下，第一个菜单允许您添加与当前上下文对应的文件夹。
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-可以自定义Explorer导航树。 在此部分](adobe-campaign-workspace.md)中了解配置步骤和最佳实践。[
+可以自定义Explorer导航树。 了解配置步骤和最佳实践 [在此部分中](adobe-campaign-workspace.md).
 
 ### 什么是视图 {#about-views}
 
@@ -51,8 +51,8 @@ Explorer导航树的每个文件夹都具有附加到其的读、写和删除访
 
 在以下示例中，我们将创建新文件夹以显示特定数据：
 
-1. 创建新的&#x200B;**[!UICONTROL Deliveries]**&#x200B;类型文件夹，并将其命名为&#x200B;**Deliveries France**。
-1. 右键单击此文件夹并选择&#x200B;**[!UICONTROL Properties...]**。
+1. 新建 **[!UICONTROL Deliveries]** 键入文件夹并将其命名为 **法国交付**.
+1. 右键单击此文件夹并选择 **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_add_folder_exple.png)
 
@@ -64,7 +64,7 @@ Explorer导航树的每个文件夹都具有附加到其的读、写和删除访
 
    >[!NOTE]
    >
-   >查询编辑器显示在[此部分](../../platform/using/about-queries-in-campaign.md)中。
+   >查询编辑器将在 [此部分](../../platform/using/about-queries-in-campaign.md).
 
    具有以下筛选条件：
 
@@ -76,7 +76,7 @@ Explorer导航树的每个文件夹都具有附加到其的读、写和删除访
 
 >[!NOTE]
 >
->在管理[事务性消息传递](../../message-center/using/about-transactional-messaging.md)事件时，不能将&#x200B;**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹设置为执行实例上的视图，因为这可能会导致访问权限问题。 有关事件集合的更多信息，请参阅[此部分](../../message-center/using/about-event-processing.md#event-collection)。
+>管理 [事务性消息传递](../../message-center/using/about-transactional-messaging.md) 事件、 **[!UICONTROL Real time events]** 或 **[!UICONTROL Batch events]** 文件夹不能设置为执行实例上的视图，因为这可能导致访问权限问题。 有关事件集合的更多信息，请参阅 [此部分](../../message-center/using/about-event-processing.md#event-collection).
 
 ## 文件夹的权限
 
@@ -84,11 +84,11 @@ Explorer导航树的每个文件夹都具有附加到其的读、写和删除访
 
 要编辑对树中特定文件夹的权限，请执行以下步骤：
 
-1. 右键单击文件夹并选择&#x200B;**[!UICONTROL Properties...]**。
+1. 右键单击文件夹并选择 **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. 单击&#x200B;**[!UICONTROL Security]**&#x200B;选项卡可查看此文件夹的授权。
+1. 单击 **[!UICONTROL Security]** 选项卡查看此文件夹的授权。
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
@@ -96,19 +96,19 @@ Explorer导航树的每个文件夹都具有附加到其的读、写和删除访
 
 要修改权限，您可以：
 
-* **替换组或运算符**。要执行此操作，请单击具有文件夹权限的组（或运算符）之一，然后从下拉列表中选择一个新组（或新运算符）：
+* **替换组或运算符**. 要执行此操作，请单击具有文件夹权限的组（或运算符）之一，然后从下拉列表中选择一个新组（或新运算符）：
 
    ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **授权组或运算符**。要执行此操作，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择要为此文件夹分配授权的组或运算符。
-* **禁止组或操作员**。要执行此操作，请单击&#x200B;**[!UICONTROL Delete]**，然后选择要从中删除此文件夹授权的组或运算符。
-* **选择分配给组或运算符的权限**。要执行此操作，请单击相关组或运算符，然后选择要授予的访问权限并取消选择其他访问权限。
+* **授权组或运算符**. 为此，请单击 **[!UICONTROL Add]** 按钮，然后选择要为此文件夹分配权限的组或运算符。
+* **禁止组或操作员**. 为此，请单击 **[!UICONTROL Delete]** 并选择要从中删除此文件夹授权的组或运算符。
+* **选择分配给组或运算符的权限**. 要执行此操作，请单击相关组或运算符，然后选择要授予的访问权限并取消选择其他访问权限。
 
    ![](assets/s_ncs_user_folder_properties_security03.png)
 
 ### 传播权限 {#propagate-permissions}
 
-您可以传播授权和访问权限。 为此，请在文件夹属性中选择&#x200B;**[!UICONTROL Propagate]**&#x200B;选项。
+您可以传播授权和访问权限。 为此，请选择 **[!UICONTROL Propagate]** 选项。
 
 然后，此窗口中定义的授权将应用于当前节点的所有子文件夹。 然后，您可以为每个子文件夹过载这些授权。
 
@@ -118,6 +118,6 @@ Explorer导航树的每个文件夹都具有附加到其的读、写和删除访
 
 ### 授予对所有运算符的访问权限 {#grant-access-to-all-operators}
 
-在&#x200B;**[!UICONTROL Security]**&#x200B;选项卡中，如果选择&#x200B;**[!UICONTROL System folder]**&#x200B;选项，则所有运算符都将有权访问此数据，而无论其权限如何。 如果清除此选项，则必须将运算符（或其组）明确添加到授权列表中，以便它们具有访问权限。
+在 **[!UICONTROL Security]** ，如果 **[!UICONTROL System folder]** 选项时，所有运算符都将有权访问此数据，而无论其权限如何。 如果清除此选项，则必须将运算符（或其组）明确添加到授权列表中，以便它们具有访问权限。
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)

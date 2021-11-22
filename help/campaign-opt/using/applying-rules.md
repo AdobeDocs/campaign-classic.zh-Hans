@@ -21,9 +21,9 @@ ht-degree: 9%
 
 要应用您创建的分类规则，您需要将其与分类关联，然后在投放中引用此分类。 操作步骤：
 
-1. Create a campaign typology.
+1. 创建营销活动分类。
 
-   Typologies are accessed via the **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** node.
+   可通过 **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** 节点。
 
 1. 转到 **[!UICONTROL Rules]** ，单击 **[!UICONTROL Add]** 按钮，然后选择要应用于此分类的规则。
 
@@ -46,23 +46,23 @@ ht-degree: 9%
 
 可以配置分类规则，以便它们仅与其链接的特定投放相关，或与投放目标中的特定收件人相关。
 
-To define the application conditions of a rule, click the **[!UICONTROL Edit the rule application conditions...]** link in the **[!UICONTROL General]** tab.
+要定义规则的应用条件，请单击 **[!UICONTROL Edit the rule application conditions...]** 链接 **[!UICONTROL General]** 选项卡。
 
-然后，使用查询编辑器定义筛选条件。 In the following example, the capacity rule concerns only deliveries with the word &#39;offer&#39; in their label or deliveries created before April 1st 2013.
+然后，使用查询编辑器定义筛选条件。 在以下示例中，容量规则仅涉及标签中带有“offer”字样的投放，或2013年4月1日之前创建的投放。
 
 ![](assets/campaign_opt_create_capacity_criterion.png)
 
 >[!NOTE]
 >
->对于筛选规则，您可以选择筛选条件的应用条件：它们可以依赖投放或投放大纲。 For more on this, refer to [Conditioning a filtering rule](filtering-rules.md#conditioning-a-filtering-rule).
+>对于筛选规则，您可以选择筛选条件的应用条件：它们可以依赖投放或投放大纲。 有关更多信息，请参阅 [调整过滤规则](filtering-rules.md#conditioning-a-filtering-rule).
 
 ## 调整计算频率 {#adjusting-calculation-frequency}
 
-每天晚上，通过数据库清理工作流自动重新执行仲裁。 However, values can be saved beyond this period.
+每天晚上，通过数据库清理工作流自动重新执行仲裁。 但是，值可以保存到此时段之后。
 
 事实上，某些计算使用的值每天都不会更改。 因此，每天重新计算数据和使数据库无偿过载将无关紧要。 例如，如果某个流程通过每周客户倾向得分和购买信息来丰富营销数据库，则无需每天重新计算基于这些值的数据。
 
-To do this, the **[!UICONTROL Frequency]** field of the **[!UICONTROL General]** tab lets you define a maximum period during which targeting is saved. 默认情况下，该值为 **0** 表示在下次执行每日重新仲裁之前，计算仍然有效。
+为此， **[!UICONTROL Frequency]** 字段 **[!UICONTROL General]** 选项卡，可定义保存定位的最长时间段。 默认情况下，该值为 **0** 表示在下次执行每日重新仲裁之前，计算仍然有效。
 
 要保存超出此时段的结果，请在 **[!UICONTROL Frequency]** 字段：此时间段过期后，将重新应用所有规则。
 
@@ -91,15 +91,15 @@ To do this, the **[!UICONTROL Frequency]** field of the **[!UICONTROL General]**
 
 >[!NOTE]
 >
->If you are working with Campaign Interaction module, offer eligibility rules are applied at the same time as filtering rules (for offers found in the delivery outlines) or during the personalization phase, during the call to the offer engine.
+>如果您使用Campaign交互模块，则选件资格规则将与筛选规则（适用于在投放大纲中找到的选件）同时应用，或者在个性化阶段（在调用选件引擎期间）应用。
 
-您可以使用 **[!UICONTROL General]** 选项卡。 When several rules are executed during the same message processing phase, you can configure their execution sequence in the **[!UICONTROL Execution sequence]** field.
+您可以使用 **[!UICONTROL General]** 选项卡。 当在同一消息处理阶段执行多个规则时，您可以在 **[!UICONTROL Execution sequence]** 字段。
 
 例如，执行顺序为20的压力规则将在执行顺序为30的压力规则之前执行。
 
 ### 控制规则 {#control-rules}
 
-对于 **[!UICONTROL Control]** 规则时，您可以决定在投放生命周期的哪个时间点应用规则（在定位之前或之后、开始个性化时、分析结束时）。 Select the value to apply in the drop-down list of the **[!UICONTROL Phase]** field, in the **[!UICONTROL General]** tab of the typology rule.
+对于 **[!UICONTROL Control]** 规则时，您可以决定在投放生命周期的哪个时间点应用规则（在定位之前或之后、开始个性化时、分析结束时）。 在 **[!UICONTROL Phase]** 字段，在 **[!UICONTROL General]** 选项卡。
 
 ![](assets/campaign_opt_define_control_phase.png)
 
@@ -127,18 +127,18 @@ To do this, the **[!UICONTROL Frequency]** field of the **[!UICONTROL General]**
 
 ### 控制传出SMTP流量 {#control-outgoing-smtp-traffic}
 
-As an option, you can use the **[!UICONTROL Managing affinities with IP addresses]** field to link deliveries to the delivery server (MTA) this affinity. 这样，您就可以将特定投放的电子邮件数量限制到计算机或输出地址。
+作为一个选项，您可以使用 **[!UICONTROL Managing affinities with IP addresses]** 用于将投放链接到此亲和度的投放服务器(MTA)的字段。 这样，您就可以将特定投放的电子邮件数量限制到计算机或输出地址。
 
 ![](assets/campaign_opt_select_ip_affinity.png)
 
 >[!NOTE]
 >
->Affinity management does not apply for **[!UICONTROL Filtering]** typologies.\
+>亲和度管理不适用于 **[!UICONTROL Filtering]** 分类。\
 >相关性在Adobe Campaign服务器上的实例配置文件中定义。 如需详细信息，请参阅[此部分](../../installation/using/about-initial-configuration.md)。
 
 ### 营销活动优化和分布式营销 {#campaign-optimization-and-distributed-marketing}
 
-The **[!UICONTROL Distributed Marketing]** tab lets you define the re-mapping of typologies and/or rules which applies when a shared campaign is ordered and/or reserved. 为本地实体定义的分类/规则（链接到为中央实体定义的分类）将替换链接到中央实体的规则/分类。 通过重新映射，您可以根据对营销活动进行排序的本地实体来调整中央实体规则。
+的 **[!UICONTROL Distributed Marketing]** 选项卡，用于定义分类和/或规则的重映射，当对共享营销活动进行排序和/或保留时，这些分类和/或规则会应用。 为本地实体定义的分类/规则（链接到为中央实体定义的分类）将替换链接到中央实体的规则/分类。 通过重新映射，您可以根据对营销活动进行排序的本地实体来调整中央实体规则。
 
 ![](assets/simu_campaign_opti_distrib_mkg.png)
 

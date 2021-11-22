@@ -25,9 +25,9 @@ ht-degree: 5%
 
 要创建、发布和交付有关数据的分析报表，请应用以下步骤：
 
-1. 创建新报表：请参阅[创建新报告](../../reporting/using/creating-a-new-report.md),
-1. 收集数据进行分析：请参阅[收集数据以分析](../../reporting/using/collecting-data-to-analyze.md)和[使用上下文](../../reporting/using/using-the-context.md),
-1. 使用活动及其容器定义报表的内容：请参阅[创建表](../../reporting/using/creating-a-table.md)、[创建图表](../../reporting/using/creating-a-chart.md)和[元素布局](../../reporting/using/element-layout.md),
-1. 配置显示选项：显示类型，共享报表：请参阅[报表显示上下文](../../reporting/using/configuring-access-to-the-report.md#report-display-context)、[定义条件内容](../../reporting/using/defining-a-conditional-content.md)和[配置对报表的访问](../../reporting/using/configuring-access-to-the-report.md)、
-1. 发布报表（发布向导）：请参阅[发布报表](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
-1. 转换报表：导出、历史记录、在浏览器中显示：请参阅[对报告](../../reporting/using/actions-on-reports.md)的操作。
+1. 创建新报表：请参阅 [创建新报告](../../reporting/using/creating-a-new-report.md),
+1. 收集数据进行分析：请参阅 [收集数据进行分析](../../reporting/using/collecting-data-to-analyze.md) 和 [使用上下文](../../reporting/using/using-the-context.md),
+1. 使用活动及其容器定义报表的内容：请参阅 [创建表](../../reporting/using/creating-a-table.md), [创建图表](../../reporting/using/creating-a-chart.md) 和 [元素布局](../../reporting/using/element-layout.md),
+1. 配置显示选项：显示类型，共享报表：请参阅 [报表显示上下文](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [定义条件内容](../../reporting/using/defining-a-conditional-content.md) 和 [配置对报表的访问权限](../../reporting/using/configuring-access-to-the-report.md),
+1. 发布报表（发布向导）：请参阅 [发布报表](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
+1. 转换报表：导出、历史记录、在浏览器中显示：请参阅 [对报表执行操作](../../reporting/using/actions-on-reports.md).

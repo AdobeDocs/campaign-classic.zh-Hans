@@ -21,33 +21,33 @@ ht-degree: 65%
 
 列表是一组静态用户档案，用于在投放操作期间提供定位目标，或在导入操作或工作流执行期间进行更新。例如，通过查询从数据库中提取出的一组数据即可形成一个列表。
 
-可通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Lists]**&#x200B;链接创建和管理列表。
+列表通过 **[!UICONTROL Lists]** 链接 **[!UICONTROL Profiles and targets]** 选项卡。
 
 ![](assets/s_ncs_user_interface_group_link.png)
 
 Adobe Campaign 提供两类列表：
 
-* **[!UICONTROL Group]** 类型：类型 **[!UICONTROL Group]** 列表属于根据特 **** 定条件选择的人员的状态列表。此列表就像一组用户档案的快照。请注意，将用户档案添加到数据库时，列表不会自动更新。
+* **[!UICONTROL Group]** 类型：的 **[!UICONTROL Group]** 类型列表属于 **静态** 根据特定条件选择的人员列表。 此列表就像一组用户档案的快照。请注意，将用户档案添加到数据库时，列表不会自动更新。
 
-   有关如何创建&#x200B;**[!UICONTROL Group]**&#x200B;类型列表的详细信息，请参阅此[page](#creating-a-profile-list-from-a-group)。
+   有关如何创建 **[!UICONTROL Group]** 类型列表，请参阅 [页面](#creating-a-profile-list-from-a-group).
 
-* **[!UICONTROL List]** 类型：类型 **[!UICONTROL List]** 列表允许您使用工作流创建和管理列表。这些是由数据导入生成的特定列表，可通过专用的&#x200B;**[!UICONTROL List update]**&#x200B;工作流活动进行更新。
+* **[!UICONTROL List]** 类型：的 **[!UICONTROL List]** 类型列表允许您使用工作流创建和管理列表。 这些是由数据导入生成的特定列表，可通过专用的 **[!UICONTROL List update]** 工作流活动。
 
-   与&#x200B;**[!UICONTROL Group]**&#x200B;类型列表不同，此类型列表可通过&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动自动更新。 请注意，有关如何创建&#x200B;**[!UICONTROL List]**&#x200B;类型列表的示例，请参阅[此页面](../../workflow/using/list-update.md)。
+   与 **[!UICONTROL Group]** 类型列表，此类型列表可通过 **[!UICONTROL Scheduler]** 活动。 请注意，有关如何创建 **[!UICONTROL List]** 类型列表，请参阅 [本页](../../workflow/using/list-update.md).
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#create-list-video)
 
 ## 从群组创建用户档案列表 {#creating-a-profile-list-from-a-group}
 
-**[!UICONTROL Group]** 通过链接创建的 **[!UICONTROL Profiles and targets]** 类型列表必须基于默认的Adobe Campaign用户档案表(nms:recipient)。
+**[!UICONTROL Group]** 通过创建的类型列表 **[!UICONTROL Profiles and targets]** 链接必须基于默认的Adobe Campaign配置文件表(nms:recipient)。
 
 >[!NOTE]
 >
 >要创建包含其他类型数据的列表，您必须执行某个工作流。例如，通过在访客表上运行查询并更新列表，您可以创建一个访客列表。如需有关此工作流的详细信息，请参阅[本章节](../../workflow/using/about-workflows.md)。
 
-要创建新的&#x200B;**[!UICONTROL Group]**&#x200B;类型列表，请应用以下步骤：
+创建新 **[!UICONTROL Group]** 类型列表，请应用以下步骤：
 
-1. 单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮并选择&#x200B;**[!UICONTROL New list]**。
+1. 单击 **[!UICONTROL Create]** 按钮，选择 **[!UICONTROL New list]**.
 
    ![](assets/s_ncs_user_new_group.png)
 
@@ -75,7 +75,7 @@ Adobe Campaign 提供两类列表：
 
 >[!NOTE]
 >
->只能使用&#x200B;**[!UICONTROL Group]**&#x200B;类型列表将数据链接到列表。
+>只能通过 **[!UICONTROL Group]** 类型列表。
 
 可对一组用户档案进行过滤并将得到的用户档案链接到列表。然后可将投放操作发送到此列表，从而定位用户档案。要分组用户档案：
 
@@ -92,9 +92,9 @@ Adobe Campaign 提供两类列表：
 
    ![](assets/s_ncs_user_add_selection_to_group_3.png)
 
-**[!UICONTROL Recreate the list]**&#x200B;选项会从列表中删除以前的内容。 此模式已进行了优化，因为无需通过查询来确认用户档案是否已链接到列表。
+的 **[!UICONTROL Recreate the list]** 选项会从列表中删除以前的内容。 此模式已进行了优化，因为无需通过查询来确认用户档案是否已链接到列表。
 
-如果取消选中&#x200B;**[!UICONTROL No trace of this job is saved in the database]**&#x200B;选项，则可以选择（或创建）将存储与此进程链接的信息的执行文件夹。
+如果取消选中 **[!UICONTROL No trace of this job is saved in the database]** 选项，您可以选择（或创建）将存储与此进程链接的信息的执行文件夹。
 
 可在窗口的上半部监控该执行过程。可以通过 **[!UICONTROL Stop]** 按钮停止该过程。已处理的联系人将会链接到列表。
 
@@ -142,4 +142,4 @@ Adobe Campaign 提供两类列表：
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-其他Campaign Classic操作方法视频可在[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)获取。
+提供了其他Campaign Classic操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).

@@ -213,16 +213,16 @@ _2019年5月30日_
 
 **护栏、稳健性和可扩展性方面的改进**
 
-* 生命周期 — XtkNewId序列使用优化：最耗费的表已从xtkNewId序列移至专用序列。 [阅读更多](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* 生命周期 — XtkNewId序列使用优化：最耗费的表已从xtkNewId序列移至专用序列。 [了解更多信息](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 * 通过HTTP v2进行FDA:通过HTTP的FDA协议广泛用于混合部署，特别是用于broadLog检索和交付准备。 增强了稳健性，以避免在检索或推送数据时出现网络问题和可能出现的错误。 这要求连接两端的内部版本是最新的，否则仍将使用旧协议。
 * 跟踪工作流：跟踪工作流的稳健性已得到增强。 修复了与跟踪日志插入/更新和URL跟踪自定义相关的几个问题。 此外，跟踪工作流现在会检测可能导致错误的跟踪日志问题并停止工作流。 这些问题现已被丢弃且未处理。
 * 清理工作流：清理工作流已得到改进，以避免潜在错误和停止。 这可优化数据库大小和性能。
 * 事务型消息中的嵌入式图像：我们在事务型消息中增加了对嵌入式图像的完全支持，以避免可能的崩溃或缺少图像。
 * 数据库大小 — XtkJobLog:清除机制已添加到此表。 这对数据库大小有积极影响。
-* 密送存档：密送归档的默认参数已更改，以提高归档速度。 [阅读更多](../../installation/using/email-archiving.md#parameters)
+* 密送存档：密送归档的默认参数已更改，以提高归档速度。 [了解更多信息](../../installation/using/email-archiving.md#parameters)
 * 数据库结构更新：数据库结构更新向导生成的SQL请求已得到改进，以加快执行速度。
 * 操作员操作的防护：已实施若干护栏，以防止操作员执行可能影响平台完整性的操作。 内置架构不能再通过界面删除。 此外，非管理员用户无法再编辑工作流源XML。
-* 提供了两个新选项： **XtkSecurity_Restrict_EditXML** （用于禁用投放的XML代码版本）和 **NmsOperation_OperationMgtDebug** （用于监视操作Mgt技术工作流的执行）。 [阅读更多](../../installation/using/configuring-campaign-options.md)
+* 提供了两个新选项： **XtkSecurity_Restrict_EditXML** （用于禁用投放的XML代码版本）和 **NmsOperation_OperationMgtDebug** （用于监视操作Mgt技术工作流的执行）。 [了解更多信息](../../installation/using/configuring-campaign-options.md)
 
 **其他变更**
 
@@ -234,9 +234,9 @@ _2019年5月30日_
 * 在Analytics集成中，现在允许检索包含%字符的AAM区段数据。 (NEO-12025)
 * 删除了工作流热图中的10,000条记录限制，以修复缺失的数据问题。 (NEO-12329)
 * Open Office不受支持，现在已从应用程序中完全删除。 如果您仍在使用它，请转到Libre Office，因为从19.1开始，它将不再工作。
-* 您现在可以使用sysfilter属性限制对工作流中更新数据活动的写入访问。 [阅读更多](../../configuration/using/filtering-schemas.md)
+* 您现在可以使用sysfilter属性限制对工作流中更新数据活动的写入访问。 [了解更多信息](../../configuration/using/filtering-schemas.md)
 
-**补丁程序**
+**修补程序**
 
 * 修复了阻止为iOS移动推送通知上传证书的问题。
 * 修复了事务推送通知的潜在重复服务器崩溃问题。 已修复其他崩溃问题。

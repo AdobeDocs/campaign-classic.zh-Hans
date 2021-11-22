@@ -17,11 +17,11 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-必须重新开发基于特定于默认Adobe Campaign收件人（nm:recipient或已链接的架构）的架构的报表，以便考虑自定义表及其通过目标映射链接的表中的数据（请参阅[Target映射](../../configuration/using/target-mapping.md)部分）。
+必须重新开发基于特定于默认Adobe Campaign收件人（nm:recipient或已链接的架构）的架构的报表，以便考虑自定义表及其通过目标映射链接的表的数据(请参阅 [目标映射](../../configuration/using/target-mapping.md) )。
 
-要创建新报告，请参阅[此部分](../../reporting/using/about-reports-creation-in-campaign.md)。
+要创建新报表，请参阅 [此部分](../../reporting/using/about-reports-creation-in-campaign.md).
 
-在某些情况下，还必须放置特定于这些表的新多维数据集。 [此部分](../../reporting/using/about-cubes.md)中详细介绍了多维数据集。
+在某些情况下，还必须放置特定于这些表的新多维数据集。 有关多维数据集的详细信息，请参阅 [此部分](../../reporting/using/about-cubes.md).
 
 下列报告涉及：
 

@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ![](../../assets/v7-only.svg)
 
-**[!UICONTROL Offer analysis]**&#x200B;报告概述了已接受或已拒绝的建议的数量。
+的 **[!UICONTROL Offer analysis]** 报表为您提供已接受或已拒绝建议的数量的概述。
 
 >[!NOTE]
 >
@@ -37,6 +37,6 @@ ht-degree: 10%
 
    ![](assets/offer_report_perdeliveries.png)
 
-数据可以根据报表上半部分提供的各种条件进行过滤。 选择所需的标准后，单击&#x200B;**[!UICONTROL Refresh]**&#x200B;链接以将其应用到报表。
+数据可以根据报表上半部分提供的各种条件进行过滤。 选择所需的标准后，单击 **[!UICONTROL Refresh]** 链接，以将其应用到报表。
 
 ![](assets/offer_report_criteria.png)

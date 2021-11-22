@@ -183,7 +183,7 @@ Adobe Campaign中提供了以下过滤器类型：
 
    * **[!UICONTROL Field only]** ，以选择字段。 这是默认模式。
    * **[!UICONTROL Aggregate]** 选择要使用的聚合公式（计数、总和、平均值、最大值、最小值）。
-   * **[!UICONTROL User filter]** 来选择现有用户过滤器之一。 有关用户过滤器的详细信息，请参阅 [保存过滤器](#saving-a-filter).
+   * **[!UICONTROL User filter]** 来选择现有用户过滤器之一。 有关用户过滤器的详情，请参阅 [保存过滤器](#saving-a-filter).
    * **[!UICONTROL Expression]** 以访问表达式编辑器。
 
       利用表达式编辑器，可定义高级过滤器。 它看起来如下所示：

@@ -17,7 +17,7 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
-默认情况下，下面详述的工作流与&#x200B;**Deliveries**&#x200B;模块一起安装。
+下面详述的工作流随 **投放** 模块。
 
 <table> 
  <tbody> 
@@ -34,7 +34,7 @@ ht-degree: 5%
   <tr> 
    <td> <span class="uicontrol">付费</span> <br /> </td> 
    <td> <span class="uicontrol">billing</span> <br /> </td> 
-   <td> 此工作流会通过电子邮件将系统活动报告发送给“billing”操作员。 默认情况下，每月25日触发该事件。<br /> </td> 
+   <td> 此工作流会通过电子邮件将系统活动报告发送给“billing”操作员。 默认情况下，每月25日触发。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">别名清理</span> <br /> </td> 
@@ -49,17 +49,17 @@ ht-degree: 5%
   <tr> 
    <td> <span class="uicontrol">数据库清理</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>此工作流是数据库维护工作流：它根据部署助手中定义的配置从数据库中删除过时的数据，从而与统计和进程进行不同的计算。 默认情况下，此工作流于每日凌晨4点触发。</p> <p>有关详细信息，请参见此<a href="../../production/using/database-cleanup-workflow.md">页面</a>。</p> </td> 
+   <td> <p>此工作流是数据库维护工作流：它根据部署助手中定义的配置从数据库中删除过时的数据，从而与统计和进程进行不同的计算。 默认情况下，此工作流于每日凌晨4点触发。</p> <p>有关更多信息，请参阅 <a href="../../production/using/database-cleanup-workflow.md">页面</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">暂停的工作流清理</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>此工作流会分析严重性设置为正常的暂停工作流，并在暂停过长时触发警告和通知。 一个月后，将无条件停止暂停的技术工作流。 默认情况下，此工作流于每周一早上5点触发。</p> <p>有关更多信息，请参阅<a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">处理暂停的工作流</a>。</p></td> 
+   <td> <p>此工作流会分析严重性设置为正常的暂停工作流，并在暂停过长时触发警告和通知。 一个月后，将无条件停止暂停的技术工作流。 默认情况下，此工作流于每周一早上5点触发。</p> <p>有关更多信息，请参阅 <a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">处理暂停的工作流</a>.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">优惠通知</span> <br /> </td> 
    <td> <span class="uicontrol">offerMgt</span> <br /> </td> 
-   <td> 此工作流将已批准的选件部署到在线环境，以及选件目录中包含的每个类别。<br /> </td> 
+   <td> 此工作流会将已批准的选件部署到在线环境，以及选件目录中包含的每个类别。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">预测</span> <br /> </td> 
@@ -69,7 +69,7 @@ ht-degree: 5%
   <tr> 
    <td> <span class="uicontrol">跟踪</span> <br /> </td> 
    <td> <span class="uicontrol">跟踪</span> <br /> </td> 
-   <td> 此工作流可执行跟踪信息的恢复和整合。 它还可确保重新计算跟踪和投放统计信息，特别是消息中心归档工作流使用的跟踪和投放统计信息。 默认情况下，每小时触发一次。<br /> </td> 
+   <td> 此工作流可执行跟踪信息的恢复和整合。 它还可确保重新计算跟踪和投放统计信息，特别是消息中心归档工作流使用的跟踪和投放统计信息。 默认情况下，每小时触发一次。 <br /> </td> 
   </tr> 
  </tbody> 
 </table>

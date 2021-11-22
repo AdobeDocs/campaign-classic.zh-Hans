@@ -26,7 +26,7 @@ ht-degree: 0%
 以下是从v7恢复v6.1的过程。
 
 1. 恢复数据库的备份并恢复它。
-1. 恢复&#x200B;**Adobe Campaign v6.back**&#x200B;文件夹（在Linux中为&#x200B;**nl6.back**），将其重命名为&#x200B;**Adobe Campaign v6**（在Linux中为&#x200B;**nl6**），然后将其还原到其原始位置。
+1. 恢复 **Adobe Campaign v6.back** 文件夹(**nl6.back** 在Linux中)，将其重命名为 **Adobe Campaign v6** (**nl6** 在Linux中)并将其还原到其原始位置。
 1. 通过重新分配侦听端口来重新配置IIS，以在IIS网站级别重新建立Adobe Campaign v6.1的集成。
 1. 停止Adobe Campaign v7服务。
 1. 重新启动IIS。
@@ -37,7 +37,7 @@ ht-degree: 0%
 以下是从v7恢复v6.02的过程。
 
 1. 恢复数据库的备份并恢复它。
-1. 恢复&#x200B;**Neolane v6.back**&#x200B;文件夹（在Linux中为&#x200B;**nl6.back**），将其重命名为&#x200B;**Neolane v6**（在Linux中为&#x200B;**nl6**），然后将其还原到其原始位置。
+1. 恢复 **Neolane v6.back** 文件夹(**nl6.back** 在Linux中)，将其重命名为 **Neolane v6** (**nl6** 在Linux中)并将其还原到其原始位置。
 1. 通过重新分配侦听端口来重新配置IIS，以在IIS网站级别重新建立Adobe Campaign v6.02的集成。
 1. 停止Adobe Campaign v6.1服务。
 1. 重新启动IIS。
@@ -48,7 +48,7 @@ ht-degree: 0%
 以下是从v7恢复v5.11的步骤。
 
 1. 恢复数据库的备份并恢复它。
-1. 恢复&#x200B;**Neolane v5.back**&#x200B;文件夹（在Linux中为&#x200B;**nl5.back**），将其重命名为&#x200B;**Neolane v5**（在Linux中为&#x200B;**nl5**），然后将其还原到其原始位置。
+1. 恢复 **Neolane v5.back** 文件夹(**nl5.back** 在Linux中)，将其重命名为 **Neolane v5** (**nl5** 在Linux中)并将其还原到其原始位置。
 1. 通过重新分配侦听端口来重新配置IIS，以在IIS网站级别重新建立Neolane v5的集成。
 1. 停止Adobe Campaign v7服务。
 1. 重新启动IIS。

@@ -47,45 +47,45 @@ ht-degree: 61%
 
 >[!NOTE]
 >
->要了解如何导入文件和Web窗体，请参阅[通用导入和导出](../../platform/using/get-started-data-import-export.md)。
+>要了解如何导入文件和Web窗体，请参阅 [一般导入和导出](../../platform/using/get-started-data-import-export.md).
 
 ## 用户档案和目标 {#profiles-and-targets}
 
-通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;链接，可显示存储在Adobe Campaign数据库中的收件人。 您可以创建新的收件人、编辑现有的收件人以及访问其用户档案。有关详细信息，请参见[此页面](../../platform/using/editing-a-profile.md)。
+的 **[!UICONTROL Profiles and targets]** 利用链接，可显示存储在Adobe Campaign数据库中的收件人。 您可以创建新的收件人、编辑现有的收件人以及访问其用户档案。有关详细信息，请参见[此页面](../../platform/using/editing-a-profile.md)。
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
 您还可以通过它访问：
 
-* 列表 — [了解详情](../../platform/using/creating-and-managing-lists.md)
-* 订阅服务 — [了解详情](../../delivery/using/managing-subscriptions.md)
-* Web应用程序 — [了解详情](../../web/using/about-web-applications.md)
-* 导入和导出（作业） — [了解详情](../../platform/using/about-generic-imports-exports.md)
-* 定位工作流 — [了解详情](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* 列表 —  [了解更多](../../platform/using/creating-and-managing-lists.md)
+* 订阅服务 —  [了解更多](../../delivery/using/managing-subscriptions.md)
+* web应用程序 —  [了解更多](../../web/using/about-web-applications.md)
+* 进出口（作业） —  [了解更多](../../platform/using/about-generic-imports-exports.md)
+* 定位工作流 —  [了解更多](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
 收件人页面允许您对用户档案执行常见的操作：编辑、更新、添加、删除、排序。
 
 如需更多高级用户档案操作，您需要编辑 Adobe Campaign 树状结构。为此可单击 Adobe Campaign 主页上的 **[!UICONTROL Explorer]** 链接。
 
-默认情况下，收件人存储在树的&#x200B;**[!UICONTROL Profiles and Targets > Recipients]**&#x200B;节点中。 您可通过此视图创建收件人，以及：
+默认情况下，收件人存储在 **[!UICONTROL Profiles and Targets > Recipients]** 树的节点。 您可通过此视图创建收件人，以及：
 
-* 对数据库的配置文件进行排序和筛选 — [了解详情](../../platform/using/filtering-options.md)
-* 从数据库中移动、复制或删除用户档案 — [了解详情](../../platform/using/managing-profiles.md),
-* 更新配置文件 — [了解详情](../../platform/using/updating-data.md)
-* 导出收件人 — [了解详情](../../platform/using/exporting-and-importing-profiles.md)
-* 创建收件人组 — [了解详情](../../platform/using/creating-and-managing-lists.md)
+* 对数据库的用户档案进行排序和筛选 —  [了解更多](../../platform/using/filtering-options.md)
+* 从数据库中移动、复制或删除用户档案 —  [了解更多](../../platform/using/managing-profiles.md),
+* 更新用户档案 —  [了解更多](../../platform/using/updating-data.md)
+* 导出收件人 —  [了解更多](../../platform/using/exporting-and-importing-profiles.md)
+* 创建收件人组 —  [了解更多](../../platform/using/creating-and-managing-lists.md)
 
 要访问各种高级功能和配置，需单击 **[!UICONTROL Explorer]** 图标。
 
 ![](assets/d_ncs_user_interface01.png)
 
-[此页面](../../platform/using/adobe-campaign-explorer.md)中显示了Adobe Campaign资源管理器的常规布局。
+Adobe Campaign资源管理器的常规布局在 [本页](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
->也可以单击 **[!UICONTROL Profiles and targets > Recipients]** 链接，从 Adobe Campaign 树状结构中显示该列表的高级视图。可根据您的需求配置列表的显示。您可以添加或删除列、定义列顺序、对数据进行排序等。 列表显示配置在[此页面](../../platform/using/adobe-campaign-ui-lists.md)中有介绍。
+>也可以单击 **[!UICONTROL Profiles and targets > Recipients]** 链接，从 Adobe Campaign 树状结构中显示该列表的高级视图。可根据您的需求配置列表的显示。您可以添加或删除列、定义列顺序、对数据进行排序等。 列表显示配置在 [本页](../../platform/using/adobe-campaign-ui-lists.md).
 >
->您也可以定义收件人视图。有关此功能的更多信息，请参阅[此部分](../../platform/using/access-management-folders.md)。
+>您也可以定义收件人视图。有关此功能的更多信息，请参阅 [此部分](../../platform/using/access-management-folders.md).
 
 ## 使用中的用户档案 {#active-profiles}
 
@@ -99,11 +99,11 @@ ht-degree: 61%
 >
 >Facebook 和 Twitter 渠道不包含在內。
 
-活动配置文件计数仅可用于&#x200B;**营销实例**。 它不适用于执行实例，即MID（中间采购）和RT（消息中心/实时消息）实例。
+活动用户档案计数可用于 **营销实例** 仅。 它不适用于执行实例，即MID（中间采购）和RT（消息中心/实时消息）实例。
 
 >[!NOTE]
 >
->您还可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关更多信息，请参阅[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html)。
+>您还可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关更多信息，请参阅 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 ## 教程视频 {#create-profiles-video}
 
@@ -113,7 +113,7 @@ ht-degree: 61%
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-其他Campaign Classic操作方法视频可在[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)获取。
+提供了其他Campaign Classic操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
 
 **另请参阅**
 

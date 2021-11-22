@@ -51,39 +51,39 @@ Power Booster和Power Cluster选项可供以下应用程序使用：
   </tr> 
   <tr> 
    <td> 电子邮件促销活动和出站交互<br /> </td> 
-   <td> 每月最多可能收到约3000万封电子邮件<br /> </td> 
+   <td> 每月最多可发送约3000万封电子邮件<br /> </td> 
    <td> 每月3000万到1亿封电子邮件<br /> </td> 
-   <td> 每月超过1亿封电子邮件<br /> </td> 
+   <td> 每月超过一亿封电子邮件<br /> </td> 
   </tr> 
   <tr> 
    <td> 事务性消息<br /> </td> 
-   <td> 每个执行服务器每小时50,000个<br /> </td> 
-   <td> 每个执行服务器每小时50,000个<br /> </td> 
-   <td> 每个执行服务器每小时50,000个<br /> </td> 
+   <td> 每个执行服务器每小时5万次<br /> </td> 
+   <td> 每个执行服务器每小时5万次<br /> </td> 
+   <td> 每个执行服务器每小时5万次<br /> </td> 
   </tr> 
   <tr> 
    <td> 可用性<br /> </td> 
-   <td> 主数据库的数据库<br /> </td> 
-   <td> 24/7除维护窗口和执行实例的下载时间外<br /> </td> 
-   <td> 24/7/365 service posible<br /> </td> 
+   <td> 主数据库的<br /> </td> 
+   <td> 24/7，执行实例的维护窗口和下载时间除外<br /> </td> 
+   <td> 24/7/365服务可能<br /> </td> 
   </tr> 
   <tr> 
    <td> 安全性<br /> </td> 
-   <td> 数据集市可从公共Internet访问<br /> </td> 
-   <td> 数据集市与面向互联网的正面组件隔离<br /> </td> 
-   <td> 数据集市与面向互联网的正面组件隔离<br /> </td> 
+   <td> 数据集市可从公共互联网访问<br /> </td> 
+   <td> 数据集市与面向互联网的正面组件是隔离的<br /> </td> 
+   <td> 数据集市与面向互联网的正面组件是隔离的<br /> </td> 
   </tr> 
   <tr> 
    <td> 部署模板<br /> </td> 
    <td> 所有内容都位于一个网站上（可以位于内部部署或云中）<br /> </td> 
    <td> 可在云中执行内部部署营销<br /> </td> 
-   <td> 在云中执行内部部署营销；可能执行不同的geos<br /> </td> 
+   <td> 在云中执行内部部署营销；可能在不同的地理位置执行<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 推荐 {#recommendations}
 
-* 执行实例必须专用于服务。 您无法为尚未订阅的服务安装包。 例如，如果订阅了&#x200B;**消息中心**&#x200B;服务的&#x200B;**Power Booster**&#x200B;选项，则只能在专用执行实例上安装&#x200B;**[!UICONTROL Execution of transactional messages]**&#x200B;包。 请核实您的许可协议。
-* 由于专用实例（或群集）是Adobe Campaign实例，因此推荐与主实例相同。 有关更多信息，请参见[本文档](../../production/using/foreword.md)。
+* 执行实例必须专用于服务。 您无法为尚未订阅的服务安装包。 例如，如果您订阅了 **Power Booster** 选项 **消息中心** 服务，您只能安装 **[!UICONTROL Execution of transactional messages]** 包。 请核实您的许可协议。
+* 由于专用实例（或群集）是Adobe Campaign实例，因此推荐与主实例相同。 有关更多信息，请参阅 [本文档](../../production/using/foreword.md).
 * 要从数据库/硬件组件的角度正确配置实例，请联系Adobe Campaign专业服务部门。

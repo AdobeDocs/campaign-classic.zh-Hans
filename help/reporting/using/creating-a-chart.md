@@ -33,15 +33,15 @@ ht-degree: 3%
 
    ![](assets/s_ncs_advuser_report_wizard_018.png)
 
-1. 单击&#x200B;**[!UICONTROL Data]**&#x200B;选项卡以定义要计算的数据源和系列。
+1. 单击 **[!UICONTROL Data]** 选项卡，以定义要计算的数据源和系列。
 
-   要在图表中显示的统计信息可以基于查询或上下文数据计算，即由当前页面的集客过渡提供的数据（有关更多信息，请参阅[使用上下文数据](../../reporting/using/using-the-context.md#using-context-data)）。
+   要在图表中显示的统计信息可以基于查询或上下文数据计算，即由当前页面的集客过渡提供的数据(有关更多信息，请参阅 [使用上下文数据](../../reporting/using/using-the-context.md#using-context-data))。
 
-   * 单击&#x200B;**[!UICONTROL Filter data...]**&#x200B;链接，为数据库中的数据定义筛选条件。
+   * 单击 **[!UICONTROL Filter data...]** 链接，以定义数据库中数据的筛选条件。
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * 要使用上下文数据，请从&#x200B;**[!UICONTROL Source]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL Context data]**，然后单击&#x200B;**[!UICONTROL Advanced settings...]**&#x200B;链接。 然后，选择统计信息将涉及的数据。
+   * 要使用上下文数据，请选择 **[!UICONTROL Context data]** 从 **[!UICONTROL Source]** 下拉菜单，然后单击 **[!UICONTROL Advanced settings...]** 链接。 然后，选择统计信息将涉及的数据。
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -57,11 +57,11 @@ Adobe Campaign提供各种类型的图形表示形式。 下文详述了这些�
 
 ![](assets/s_advuser_report_page_activity_04.png)
 
-也可以通过图表中&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL Chart type]**&#x200B;部分更改。
+也可以通过 **[!UICONTROL Chart type]** 部分 **[!UICONTROL General]** 选项卡。
 
 ![](assets/reporting_change_graph_type.png)
 
-变体取决于所选的图表类型。 它们通过&#x200B;**[!UICONTROL Variants...]**&#x200B;链接进行选择。
+变体取决于所选的图表类型。 通过 **[!UICONTROL Variants...]** 链接。
 
 ### 划分：饼图 {#breakdown--pie-charts}
 
@@ -71,7 +71,7 @@ Adobe Campaign提供各种类型的图形表示形式。 下文详述了这些�
 
 ![](assets/reporting_graph_type_sector_1.png)
 
-**[!UICONTROL Variants]**&#x200B;链接允许您个性化图表的整体呈现。
+的 **[!UICONTROL Variants]** 通过链接，您可以个性化图表的整体呈现。
 
 ![](assets/reporting_graph_type_sector_2.png)
 
@@ -101,11 +101,11 @@ Adobe Campaign提供各种类型的图形表示形式。 下文详述了这些�
 
 直方图允许您比较一个或多个变量的值。
 
-对于这些类型的图表，**[!UICONTROL Variants]**&#x200B;窗口中提供了以下选项：
+对于这些类型的图表， **[!UICONTROL Variants]** 窗口：
 
 ![](assets/reporting_select_graph_var.png)
 
-选中&#x200B;**[!UICONTROL Display caption]**&#x200B;选项以显示图表标题并选择其位置：
+检查 **[!UICONTROL Display caption]** 选项以显示图表标题并选择其位置：
 
 ![](assets/reporting_select_graph_legend.png)
 
@@ -113,7 +113,7 @@ Adobe Campaign提供各种类型的图形表示形式。 下文详述了这些�
 
 ![](assets/reporting_graph_type_histo.png)
 
-如有必要，您可以反转值显示序列。 要执行此操作，请选择&#x200B;**[!UICONTROL Reverse stacking]**&#x200B;选项。
+如有必要，您可以反转值显示序列。 为此，请选择 **[!UICONTROL Reverse stacking]** 选项。
 
 ### 转化：漏斗 {#conversion--funnel}
 
@@ -121,9 +121,9 @@ Adobe Campaign提供各种类型的图形表示形式。 下文详述了这些�
 
 ## 与图表交互 {#interaction-with-the-chart}
 
-您可以定义用户单击图表时的操作。 打开&#x200B;**[!UICONTROL Interaction events]**&#x200B;窗口，然后选择要执行的操作。
+您可以定义用户单击图表时的操作。 打开 **[!UICONTROL Interaction events]** ，然后选择要执行的操作。
 
-[此部分](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)中详细描述了可能的交互类型及其配置。
+有关可能的交互类型及其配置的详细信息，请参阅 [此部分](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
@@ -131,9 +131,9 @@ Adobe Campaign提供各种类型的图形表示形式。 下文详述了这些�
 
 通过图表可显示有关收集数据的统计信息。
 
-这些统计信息通过&#x200B;**[!UICONTROL Data]**&#x200B;选项卡的&#x200B;**[!UICONTROL Series parameters]**&#x200B;部分定义。
+这些统计信息通过 **[!UICONTROL Series parameters]** 部分 **[!UICONTROL Data]** 选项卡。
 
-要创建新统计信息，请单击&#x200B;**[!UICONTROL Add]**&#x200B;图标并配置相应的窗口。 可用的计算类型详见下文。
+要创建新统计信息，请单击 **[!UICONTROL Add]** 图标并配置相应的窗口。 可用的计算类型详见下文。
 
 ![](assets/reporting_add_statistics.png)
 

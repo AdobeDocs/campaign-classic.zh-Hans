@@ -19,25 +19,25 @@ ht-degree: 2%
 
 ## 上下文
 
-作为Adobe Campaign Classic的重要客户，我们致力于为您提供最佳体验和价值。 多年来，我们已经认识到在云中托管客户的价值和可靠性。  作为[Gold Standard Initiative](../../rn/using/gold-standard.md)的一部分，我们将所有客户转移到Adobe Managed Services（AWS上的Public Cloud），以提供更好、更可靠的服务。
+作为Adobe Campaign Classic的重要客户，我们致力于为您提供最佳体验和价值。 多年来，我们已经认识到在云中托管客户的价值和可靠性。  作为 [Gold Standard计划](../../rn/using/gold-standard.md)，我们会将所有客户转移到Adobe Managed Services(AWS上的Public Cloud)，以提供更好、更可靠的服务。
 
 该计划有三个主要目标：
 
-* 通过将基础设施移至安全且现代的环境(AWS)，解决已识别的安全漏洞。
-* 消除可能繁琐的扩展过程，提供对我们[增强型MTA](../../delivery/using//sending-with-enhanced-mta.md)的访问，并改进所有维护服务级别。
+* 通过将基础设施转移到安全和现代的环境来解决已发现的安全漏洞(AWS)。
+* 消除可能繁琐的扩展流程，提供对 [增强的MTA](../../delivery/using//sending-with-enhanced-mta.md) 并提高所有维护服务级别。
 * 为您的实例做好准备，以迎接Adobe Campaign Classic的未来，包括更自动化、更定期的升级，无需太多的资源，也无需花费太多时间。
 
 ### 词汇表
 
-* **内部版本升级**  — 将Adobe Campaign Classic软件更新为最新的安全内部版本号，但保持同一主/次内部版本级别时。例如：Campaign v7 20.2.3内部版本9182到Campaign v7 21.2.5内部版本9188。 [了解详情](../../platform/using/faq-build-upgrade.md)。
-* **MID/RT**  — 托管在Adobe Cloud上的消息执行服务器（批量促销活动为MID，实时单一消息为RT）
-* **Gold Standard升级**  — 此计划提供了改进的安全性、改进的支持、增强的维护和稳定性。它还可以简化将来的升级过程，并允许访问Campaign中的新功能。  [了解详情](../../rn/using/gs-overview.md)。
-* **AWS**  - Amazon Web Services(Amazon Public Cloud)
-* **SFTP**  — 安全文件传输协议。[了解详情](../../platform/using/sftp-server-usage.md)。
+* **内部版本升级**  — 将Adobe Campaign Classic软件更新为最新的安全内部版本号，但保持在相同的主/次内部版本级别时。 例如：Campaign v7 20.2.3内部版本9182到Campaign v7 21.2.5内部版本9188。 [了解详情](../../platform/using/faq-build-upgrade.md)。
+* **MID/RT**  — 在Analytics Cloud上托管的消息执行服务器（批量促销活动为MID，实时单一消息为RT）
+* **Gold Standard升级**  — 此方案提供了改进的安全性、改进的支持、增强的维护和稳定性。 它还可以简化将来的升级过程，并允许访问Campaign中的新功能。  [了解详情](../../rn/using/gs-overview.md)。
+* **AWS** - Amazon Web Services(Amazon Public Cloud)
+* **SFTP**  — 安全文件传输协议。 [了解详情](../../platform/using/sftp-server-usage.md)。
 
 
 >[!NOTE]
->Campaign Classicv7迁移到Public Cloud仅会影响使用&#x200B;**Adobe Managed Services**&#x200B;的客户。
+>Campaign Classicv7迁移到Public Cloud会影响使用 **Adobe Managed Services** 仅。
 
 
 ## 好处
@@ -80,24 +80,24 @@ ht-degree: 2%
 
 要开始这项工作，需要此迁移的帐户将收到来自Adobe的电子邮件通信，其中提供了时间表和文档访问权限。 这将是您关于您的帐户计划迁移的通知。
 
-[打开新的客户关怀支持票证](https://experienceleague.adobe.com/?support-solution=Campaign#support)可启动迁移。 使用主题行“迁移到AWS”。
+迁移可以由 [打开新的客户关怀支持票证](https://experienceleague.adobe.com/?support-solution=Campaign#support). 使用主题行“迁移到AWS”。
 
 ### 此迁移是否是强制性的？
 
-迁移到云的这一步骤是&#x200B;**迁移到Adobe Campaign实例的[Gold Standard认证](../../rn/using/gs-overview.md)**&#x200B;的第一步。 如果您托管在非公共云(AWS)的数据中心，则必须进行此迁移。
+迁移到云的步骤是 **第一步 [Gold Standard认证](../../rn/using/gs-overview.md)** 的Adobe Campaign实例。 如果您托管在非公共云(AWS)的数据中心，则必须进行此迁移。
 
-Amazon Web Services(AWS)是一个现代、安全且优化的环境，Adobe Managed Services云托管在Adobe Web Services(AWS)上。 [进一步了解AWS](https://aws.amazon.com/application-hosting/benefits/)。
+Amazon Web Services(AWS)是一个现代、安全且优化的环境，Adobe Managed Services云就托管在该环境上。 [进一步了解AWS](https://aws.amazon.com/application-hosting/benefits/).
 
-Adobe计划解除旧版数据中心，在那里运行的Adobe Campaign实例必须传输到新的参考数据中心AWS。
+Adobe计划解除旧版数据中心，在此运行的Adobe Campaign实例必须传输到新的参考数据中心AWS。
 
-这是前进的关键路径，因为您当前的位置可能会暴露在&#x200B;**安全和性能漏洞**&#x200B;中。
+这是前进的关键路径，因为您的当前位置可能会受到 **安全和性能漏洞**.
 
-此外，此迁移现在是&#x200B;**将来升级您的Adobe Campaign的任何版本的先决条件。**&#x200B;旧版数据中心不再可能进行内部版本升级。
+此外，此迁移现在是 **以后任何版本升级的先决条件** 你的Adobe Campaign。 旧版数据中心不再可能进行内部版本升级。
 
 Adobe致力于保护您的数据，并使您能够跟踪Adobe Campaign的未来。 我们需要你的合作，使它取得共同的成功！
 
 
-**我们组织了一** 个专门的客户关怀代表、客户成功经理、产品经理、工程师、技术运营专家和产品顾问团队，以协助并确保体验顺畅无缝。我们致力于确保您拥有相关项目和联系信息。
+**我们组织了一个团队** 专门的客户关怀代表、客户成功经理、产品经理、工程师、技术运营专家和产品顾问，以协助并确保体验顺畅无缝。 我们致力于确保您拥有相关项目和联系信息。
 
 我们投入了巨大的精力来开发技术，这些技术将使迁移快速、无缝和安全。
 
@@ -107,7 +107,7 @@ Adobe致力于保护您的数据，并使您能够跟踪Adobe Campaign的未来�
 * 用于数据集成的IP更改。
 * 新发送IP的可投放性提升。 但是，计划是让这项业务对业务透明，而不像最初在上线期间那样。
 
-在将Campaign迁移到[公共云常见问题解答](dc-migration-faq.md)中了解更多信息。
+在Campaign迁移中了解详情，请 [Public Cloud常见问题解答](dc-migration-faq.md).
 
 
 ## 历程到Gold Standard认证
@@ -147,7 +147,7 @@ Adobe可处理大多数操作。 我们需要您进行验证和注销。
 
 **Campaign服务器**
 
-现有的Campaign服务器（实际上是容器）将以“提升和转移”方式移动到Public Cloud(AWS)。 也就是说，无需安装新的服务器，但整个服务器都将传输到新数据中心。 这项操作只需要低级技术重新配置。
+现有的Campaign服务器（实际上是容器）将通过“提升并转移”方法移动到Public Cloud(AWS)。 也就是说，无需安装新的服务器，但整个服务器都将传输到新数据中心。 这项操作只需要低级技术重新配置。
 
 **服务器名称**
 
@@ -206,11 +206,11 @@ Adobe将在新数据中心配置相同数量的IP。
 
 **删除旧版数据中心上的实例**
 
-应用程序迁移完成后，将没有计划在旧版数据中心再次运行任何进程。 我们希望，除临时备份之外，旧版数据中心上的所有数据都可以擦除，直到计划备份进程在Public Cloud(AWS)上运行为止。
+应用程序迁移完成后，将没有计划在旧版数据中心再次运行任何进程。 我们希望，除临时备份之外，除非在Public Cloud(AWS)上运行计划备份进程，否则可以擦除旧版数据中心上的所有数据。
 
 **DNS委派**
 
-通常，用于从Campaign发送电子邮件的域（错误地址@符号右侧的一部分）已委派给Adobe。 可以更改委派并实施到AWS DNS服务器。
+通常，用于从Campaign发送电子邮件的域（错误地址@符号右侧的一部分）已委派给Adobe。 可以更改委派并将其实施到AWS DNS服务器。
 
 
 ## 支持以及其他有用链接{#support}

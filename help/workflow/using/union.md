@@ -23,21 +23,21 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关配置和使用并集活动的更多信息，请参阅[组合多个目标（并集）](targeting-data.md#combining-several-targets--union-)。
+>有关配置和使用并集活动的更多信息，请参阅 [合并多个目标（合并）](targeting-data.md#combining-several-targets--union-).
 
 ## 并集示例 {#union-example}
 
 在以下示例中，为了更新列表，已合并了两个查询的结果。 这两个查询针对的是收件人。 因此，结果基于同一表。
 
-1. 将&#x200B;**[!UICONTROL Union]** -type活动直接插入到两个查询之后，然后插入到列表的update-type活动之前，然后将其打开。
+1. 插入 **[!UICONTROL Union]** -type活动在两个查询之后，在列表的update-type活动之前，然后将其打开。
 1. 您可以输入标签。
-1. 选择&#x200B;**[!UICONTROL Keys only]**&#x200B;协调方法，因为在本例中，由查询生成的群体包含一致的数据。
+1. 选择 **[!UICONTROL Keys only]** 协调方法，因为在本例中，由查询产生的群体包含一致的数据。
 1. 如果您为查询添加了其他数据，则可以决定仅保留共享的数据。
-1. 如果要限制最终群体的大小，请勾选&#x200B;**[!UICONTROL Limit size of generated population]**&#x200B;框。
+1. 如果要限制最终群体的大小，请检查 **[!UICONTROL Limit size of generated population]** 框中。
 
    通过输入最大收件人数并选择群体优先的查询来指定此最终数字。
 
-1. 批准并集活动，然后配置列表更新活动（请参阅[列表更新](list-update.md)）。
+1. 批准并集活动，然后配置列表更新活动(请参阅 [列表更新](list-update.md))。
 1. 启动工作流. 将显示结果数，并创建或更新列表更新活动中定义的列表。 此列表包含两个查询的收件人集，或（如果适用）上一步中定义的编号。
 
    ![](assets/union_example.png)
@@ -55,4 +55,4 @@ ht-degree: 1%
 * 模式
 * recCount
 
-这组三个值用于标识由并集生成的目标。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms:recipient）， **[!UICONTROL recCount]** 是表中元素的数量。
+这组三个值用于标识由并集生成的目标。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体模式（通常为nms:recipient）和 **[!UICONTROL recCount]** 是表中的元素数。

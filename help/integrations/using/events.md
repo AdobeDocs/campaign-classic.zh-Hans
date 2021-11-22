@@ -30,13 +30,13 @@ ht-degree: 0%
 
 管道使用JavaScript函数处理每条消息。 此函数是用户定义的。
 
-它在&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;选项中“JSConnector”属性下进行配置。 每次收到事件时都会调用此JavaScript。 它由[!DNL pipelined]进程运行。
+它是在 **[!UICONTROL NmsPipeline_Config]** 选项。 每次收到事件时都会调用此JavaScript。 它由 [!DNL pipelined] 进程。
 
 示例Javascript文件为cus:triggers.js。
 
 ### JavaScript函数 {#function-js}
 
-[!DNL pipelined] Javascript必须以特定函数开头。
+的 [!DNL pipelined] Javascript必须以特定函数开头。
 
 对每个事件调用一次此函数：
 
@@ -50,16 +50,16 @@ function processPipelineMessage(xmlTrigger) {}
 <undefined/>
 ```
 
-应在编辑Javascript后重新启动[!DNL pipelined]。
+您应该重新启动 [!DNL pipelined] 编辑Javascript后。
 
 ### 触发数据格式 {#trigger-format}
 
-[!DNL trigger]数据以XML格式传递到JS函数。
+的 [!DNL trigger] 数据以XML格式传递到JS函数。
 
-* **[!UICONTROL @triggerId]**&#x200B;属性包含[!DNL trigger]的名称。
-* JSON格式的&#x200B;**enrichments**&#x200B;元素包含由Adobe Analytics生成的数据，并附加到触发器。
-* **[!UICONTROL @offset]** 是消息的“指针”。它指示消息在队列中的顺序。
-* **[!UICONTROL @partition]** 是队列中的消息容器。偏移相对于分区。 <br>队列中大约有15个分区。
+* 的 **[!UICONTROL @triggerId]** 属性包含 [!DNL trigger].
+* 的 **扩充** JSON格式的元素包含由Adobe Analytics生成的数据，并附加到触发器。
+* **[!UICONTROL @offset]** 是消息的“指针”。 它指示消息在队列中的顺序。
+* **[!UICONTROL @partition]** 是队列中的消息容器。 偏移相对于分区。 <br>队列中大约有15个分区。
 
 示例:
 
@@ -79,7 +79,7 @@ function processPipelineMessage(xmlTrigger) {}
 在Adobe Analytics中，对于每个触发器，内容都以JSON格式定义。
 例如，在触发器LogoUpload_uploading_Visits中：
 
-* **[!UICONTROL eVar01]** 可以包含字符串格式的购物者ID，该格式用于与Adobe Campaign收件人进行协调。<br>必须协调以找到购物者ID，该ID是主键。
+* **[!UICONTROL eVar01]** 可以包含字符串格式的购物者ID，该格式用于与Adobe Campaign收件人进行协调。 <br>必须协调以找到购物者ID，该ID是主键。
 
 * **[!UICONTROL timeGMT]** 可以包含Adobe Analytics端触发器的时间（以UTC Epoc格式表示）(自UTC 01/01/1970以来的秒数)。
 
@@ -109,20 +109,20 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 事件处理顺序{#order-events}
 
-事件按偏移的顺序一次处理一次。 [!DNL pipelined]的每个线程都处理不同的分区。
+事件按偏移的顺序一次处理一次。 每个线程 [!DNL pipelined] 处理不同的分区。
 
 检索到的最后一个事件的“offset”存储在数据库中。 因此，如果进程停止，则从最后一条消息重新启动。 此数据存储在内置模式xtk:pipelineOffset中。
 
 此指针专用于每个实例和每个用户。 因此，当多个实例通过不同的用户访问同一管道时，它们会以相同的顺序获取所有消息。
 
-管道选项的&#x200B;**consumer**&#x200B;参数标识调用实例。
+的 **消费者** pipeline选项的参数用于标识调用实例。
 
 目前，无法为不同的环境（如“暂存”或“开发”）设置不同的队列。
 
 ### 日志记录和错误处理 {#logging-error-handling}
 
-日志(如logInfo())会定向到[!DNL pipelined]日志。 将logError()等错误写入[!DNL pipelined]日志，并导致该事件被置于重试队列中。 在这种情况下，应检查管道日志。
-错误消息在[!DNL pipelined]选项中设置的持续时间内重试多次。
+日志(如logInfo())将被定向到 [!DNL pipelined] 日志。 将logError()等错误写入 [!DNL pipelined] 记录并导致事件被放入重试队列。 在这种情况下，应检查管道日志。
+在 [!DNL pipelined] 选项。
 
 出于调试和监控目的，完整的触发器数据将以XML格式写入触发器表的“data”字段中。 或者，包含触发器数据的logInfo()也具有相同的用途。
 
@@ -217,7 +217,7 @@ triggerType字段标识数据源自哪个触发器。
 
 >[!NOTE]
 >
->管道事件节点未内置，需要添加，并且需要在Campaign中创建相关表单。 这些操作仅限专家用户。 有关更多信息，请参阅以下章节：[导航层次结构](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)。 和[编辑表单](../../configuration/using/editing-forms.md)。
+>管道事件节点未内置，需要添加，并且需要在Campaign中创建相关表单。 这些操作仅限专家用户。 有关更多信息，请参阅以下章节： [导航层次结构](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). 和 [编辑表单](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
@@ -243,4 +243,4 @@ triggerType字段标识数据源自哪个触发器。
 ### 营销活动工作流 {#campaign-workflow}
 
 触发器促销活动工作流程通常与已使用的其他定期促销活动类似。
-例如，它可以从触发器上的查询开始，查找最后一天的特定事件。 该目标用于发送电子邮件。 扩充或数据可能来自触发器。 由于无需任何配置，因此营销人员可以安全地使用它。
+例如，它可以从触发器上的查询开始，查找最后一天中的特定事件。 该目标用于发送电子邮件。 扩充或数据可能来自触发器。 由于无需任何配置，因此营销人员可以安全地使用它。

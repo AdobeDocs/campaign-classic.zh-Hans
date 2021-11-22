@@ -48,18 +48,18 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 
 对于托管客户，您可以创建客户关怀票证，以便为您的组织启用Adobe I/O技术帐户令牌以用于触发器集成。
 
-对于On Premise客户，请参阅[为Adobe Experience Cloud Triggers配置Adobe I/O](../../integrations/using/configuring-adobe-io.md)页面。 请注意，在将API添加到Adobe I/O凭据时，您需要选择&#x200B;**[!UICONTROL Adobe Analytics]**。
+对于On Premise客户，请参阅 [为Adobe Experience Cloud Triggers配置Adobe I/O](../../integrations/using/configuring-adobe-io.md) 页面。 请注意，您需要选择 **[!UICONTROL Adobe Analytics]** 将API添加到Adobe I/O凭据时。
 
 ## 步骤2:配置NmsPipeline_Config管道选项 {#configuring-nmspipeline}
 
 设置身份验证后，管道将检索事件。 它将仅处理在Adobe Campaign中配置的触发器。 触发器必须是从Adobe Analytics生成，并推送到管道，该管道将仅处理在Adobe Campaign中配置的触发器。
 也可以使用通配符配置选项，以便无论名称如何都捕获所有触发器。
 
-1. 在Adobe Campaign中，访问&#x200B;**[!UICONTROL Explorer]**&#x200B;中&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**&#x200B;下的选项菜单。
+1. 在Adobe Campaign中，访问 **[!UICONTROL Administration]** > **[!UICONTROL Platform]**  > **[!UICONTROL Options]** 在 **[!UICONTROL Explorer]**.
 
-1. 选择&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;选项。
+1. 选择 **[!UICONTROL NmsPipeline_Config]** 选项。
 
-1. 在&#x200B;**[!UICONTROL Value (long text)]**&#x200B;字段中，您可以粘贴以下JSON代码，该代码指定两个触发器。 您需要确保删除注释。
+1. 在 **[!UICONTROL Value (long text)]** 字段中，您可以粘贴以下JSON代码，该代码指定两个触发器。 您需要确保删除注释。
 
    ```
    {
@@ -104,7 +104,7 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 
 管道的工作方式类似于供应商和消费者模型。 消息仅供个人消费者使用：每个消费者都有自己的报文副本。
 
-**Consumer**&#x200B;参数将实例标识为这些使用者之一。 实例的标识将调用管道。 您可以使用实例名称进行填充，该实例名称可在客户端控制台的“监视”页面上找到。
+的 **消费者** 参数会将实例标识为这些用户之一。 实例的标识将调用管道。 您可以使用实例名称进行填充，该实例名称可在客户端控制台的“监视”页面上找到。
 
 管道服务会跟踪每个消费者检索到的消息。 通过对不同实例使用不同的使用者，您可以确保将每条消息发送到每个实例。
 
@@ -112,8 +112,8 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 
 要配置管道选项，您应遵循以下建议：
 
-* 在&#x200B;**[!UICONTROL Triggers]**&#x200B;下添加或编辑触发器，则不应编辑其余触发器。
-* 确保JSON有效。 您可以使用JSON验证器，例如，请参阅此[website](https://jsonlint.com/)。
+* 在下添加或编辑触发器 **[!UICONTROL Triggers]**，则不应编辑其余内容。
+* 确保JSON有效。 您可以使用JSON验证器，请参阅 [网站](https://jsonlint.com/) 例如。
 * “name”对应于触发器ID。 通配符“*”将捕获所有触发器。
 * “消费者”对应于调用实例或应用程序的名称。
 * 管道化还支持“别名”主题。
@@ -125,16 +125,16 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 
 可选参数列表可在以下位置找到：
 
-| 选项 | 说明 |
+| Option | 说明 |
 |:-:|:-:|
 | appName（旧版） | 在上传公钥的旧版Oath应用程序中注册的OAuth应用程序的应用程序ID。 有关更多信息，请参阅此[页面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
-| authGatewayEndpoint（旧版） | 用于获取网关令牌的URL。 默认：```https://api.omniture.com``` |
-| authPrivateKey（旧版） | 私钥是Legacy Oath应用程序中上传的公共部分，AES使用XtkKey选项进行加密：```cryptString("PRIVATE_KEY")``` |
+| authGatewayEndpoint（旧版） | 用于获取网关令牌的URL。 默认： ```https://api.omniture.com``` |
+| authPrivateKey（旧版） | 私钥是Legacy Oath应用程序中上传的公共部分，AES使用XtkKey选项进行加密： ```cryptString("PRIVATE_KEY")``` |
 | disableAuth（旧版） | 禁用身份验证时，仅某些开发管道端点会接受在不使用网关令牌的情况下进行连接。 |
-| discoverPipelineEndpoint | 用于查找要用于此租户的Pipeline Services端点的URL。 默认：```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | ```var/INSTANCE/pipelined.json.``` <br>内部状态进程的两个转储之间的时间段。内部状态也可以在此处根据需要访问：```http://INSTANCE:7781/pipelined/status``` |
+| discoverPipelineEndpoint | 用于查找要用于此租户的Pipeline Services端点的URL。 默认： ```https://producer-pipeline-pnw.adobe.net``` |
+| dumpStatePeriodSec | 中内部状态进程的两个转储之间的时间段 ```var/INSTANCE/pipelined.json.``` <br> 内部状态也可在以下位置按需访问： ```http://INSTANCE:7781/pipelined/status``` |
 | forcedPipelineEndpoint | 禁用对PipelineServicesEndpoint的检测以强制执行 |
-| monitorServerPort | 流水线进程将监听此端口，以在此处提供内部状态进程：```http://INSTANCE:PORT/pipelined/status```。 <br>默认为7781 |
+| monitorServerPort | 流水线进程将监听此端口，以在此处提供内部状态进程： ```http://INSTANCE:PORT/pipelined/status```. <br>默认为7781 |
 | pointerFlushMessageCount | 处理此数量的消息时，偏移将保存在数据库中。 <br> 默认值为1000 |
 | pointerFlushPeriodSec | 在此期间之后，偏移将保存在数据库中。 <br>默认值为5（秒） |
 | processingJSThreads | 使用自定义JS连接器处理消息的专用线程数。 <br> 默认值为4 |
@@ -164,6 +164,6 @@ nlserver restart pipelined@instance
 
 要验证管道设置以进行预配，请执行以下步骤：
 
-* 确保[!DNL pipelined]进程正在运行。
+* 确保 [!DNL pipelined] 进程正在运行。
 * 检查pipelined.log中的管道连接日志。
 * 验证连接并检查是否收到ping。 托管客户可以从客户端控制台中使用监控。

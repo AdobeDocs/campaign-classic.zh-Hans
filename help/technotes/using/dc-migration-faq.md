@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-作为[Gold Standard Initiative](../../rn/using/gold-standard.md)的一部分，Adobe会解压缩旧版数据中心。 Campaign Classic实例必须传输到Public Cloud Amazon Web Services(AWS)。 [进一步了解此计划](dc-migration.md)。
+作为 [Gold Standard计划](../../rn/using/gold-standard.md),Adobe会解压缩旧版数据中心。 Campaign Classic实例必须传输到Public Cloud Amazon Web Services(AWS)。 [进一步了解此计划](dc-migration.md).
 
 以下是有关此项目、对营销活动环境的影响以及其他有用资源的一组常见问题。
 
-如果还有其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
+对于任何其他问题，您可以联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 ## 基础架构影响
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 下面列出了对数据库和基础架构的全局影响。
 
-* **数据库是否将更改？新数据库的版本是什么？ 将使用哪种操作系统？**
+* **数据库是否将更改？ 新数据库的版本是什么？ 将使用哪种操作系统？**
 
    Adobe保留选择和部署最适合的数据库管理引擎以在最佳条件下为Adobe Campaign服务的权利。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 * **数据丢失是否存在风险？**
 
-   该数据库将从旧版数据中心转储，并在Public Cloud(AWS)中恢复。 在新数据中心重新启动后，应用程序将从迁移前的完全状态恢复。 用户将看不到任何差异，只是某些计划任务将被延迟。
+   数据库将从旧数据中心转储，并在Public Cloud(AWS)中恢复。 在新数据中心重新启动后，应用程序将从迁移前的完全状态恢复。 用户将看不到任何差异，只是某些计划任务将被延迟。
 
 * **旧版数据中心和公共云之间的资源包大小有何差异？**
 
@@ -47,11 +47,11 @@ ht-degree: 0%
 
    第一步，我们将使用迁移来保留相同的Campaign Classic内部版本。
 
-   在进一步中，我们将继续升级到最新的Campaign ClassicGA内部版本。 有关更多信息，请参阅[内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)和[Campaign Gold Standard发行说明](../../rn/using/gold-standard.md)。
+   在进一步中，我们将继续升级到最新的Campaign ClassicGA内部版本。 有关更多信息，请参阅 [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md) 和 [Campaign Gold Standard发行说明](../../rn/using/gold-standard.md).
 
 * **解决迁移后问题的计划是什么？**
 
-   在生产系统迁移之前，将进行大量测试。 但是，如果出现任何问题，[Adobe客户关怀团队](https://experienceleague.adobe.com/?support-solution=Campaign#support)仍将是主要联系人。 Adobe已组建一个专家团队，以在需要时提供高级支持。
+   在生产系统迁移之前，将进行大量测试。 但是，如果出现任何问题， [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support) 仍将是主要的联络点。 Adobe已组建一个专家团队，以在需要时提供高级支持。
 
 ## 投放能力影响
 
@@ -59,11 +59,11 @@ ht-degree: 0%
 
 下面列出了对IP、阻止列表、子域和URL的全局影响。
 
-* **如何处理该允许列表上的IP?客户是否需要向中添加来自允许列表Campaign的传入流量的新IP地址？**
+* **如何处理该允许列表上的IP? 客户是否需要向中为来自Campaign的传入允许列表流量添加新的IP地址？**
 
    Adobe服务器的IP地址将发生更改。 因此，客户可能需要在其系统的中添允许列表加这些新IP地址。
 
-   [单](#config) 击此处了解有关IP的更多详允许列表细信息。
+   [单击此处](#config) 有关上IP的更多详细信息允许列表。
 
 * **我们将如何处理添加到SFTP/FTP允许列表访问的端口？**
 
@@ -73,13 +73,13 @@ ht-degree: 0%
 
    Adobe服务器的IP地址将发生更改。 因此，客户可能需要将这些新IP地址添加到其系允许列表统中的。
 
-   [单](#config) 击此处了解有关IP的更多详允许列表细信息。
+   [单击此处](#config) 有关上IP的更多详细信息允许列表。
 
 * **如何处理子域委派？**
 
    现有子域将从旧版数据中心移动到公共云(AWS)。 此部分将由Adobe可交付性团队在迁移过程中进行处理。
 
-   Adobe将指导客户完成所需的测试，以确保迁移后新的Public Cloud(AWS)服务器上的配置处于启动状态并运行。
+   Adobe将指导客户完成所需的测试，以确保迁移后新的Public Cloud(AWS)服务器上的配置处于运行状态并正在运行中。
 
 * **迁移是否会生成用于跟踪、资源和Web应用程序的新URL?**
 
@@ -87,13 +87,13 @@ ht-degree: 0%
 
 * **子域是否会从Neolane.net更改为campaign.adobe.com?**
 
-   迁移后，`neolane.net`和`campaign.adobe.com`都将到位。 要简化操作，请执行以下操作：我们将将neolane.net重定向到Public Cloud(AWS)中的新实例，因此无需客户进行任何更改。
+   两者兼有 `neolane.net` 和 `campaign.adobe.com` 迁移后将就绪。 要简化操作，请执行以下操作：我们将将neolane.net重定向到Public Cloud(AWS)中的新实例，因此不需要客户进行任何更改。
 
 * **那么IP公司的计划是什么？**
 
    首先，Adobe可投放性将评估平台的可投放性状态，并推荐切换到新IP的计划
 
-   迁移后无需预热。 这可能是一些例外，在这种情况下，[Adobe客户关怀团队](https://experienceleague.adobe.com/?support-solution=Campaign#support)将联系客户。
+   迁移后无需预热。 可能是个例外，在这种情况下， [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support) 将联系客户。
 
    但是，计划是让这项业务对业务透明，而不像最初在上线期间那样。
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
    是的。 例如，第三方集成（短信提供商）应将新的Adobe Campaign应用程序服务器IP地址添加到允许列表。
 
-* **迁移是否会影响使用Adobe Analytics连接器与Genesis的连接？在Adobe Analytics端将促销活动IP地允许列表址添加到促销活动？**
+* **迁移是否会影响使用Adobe Analytics连接器与Genesis的连接？ 在Adobe Analytics端将促销活动IP地允许列表址添加到促销活动？**
 
    Adobe Campaign应用程序服务器IP地址将发生更改。 迁移后，Adobe客户关怀将处理此步骤。
 
@@ -149,13 +149,13 @@ ht-degree: 0%
 
 * **多品牌配置是否会受迁移的影响？**
 
-   一旦子域和所有相关配置从旧版数据中心正确移动/重定向到Public Cloud(AWS)，我们就不会受到任何影响。
+   只要子域和所有相关配置从旧版数据中心正确移动/重定向到Public Cloud(AWS)，我们就不会期望受到任何影响。
 
 * **迁移是否会影响API连接？**
 
    Adobe服务器的IP地址将发生更改。 因此，客户可能需要将这些新IP地址添加到其系允许列表统中的。
 
-   [单击](#config) 此处了解有关IP的更多详细允许列表信息。
+   [单击此处](#config) 有关“时IP”的更多详允许列表细信息。
 
 * **我们是否会确保迁移后正确设置所有JavaScript内存配置参数？**
 
@@ -163,20 +163,20 @@ ht-degree: 0%
 
 * **访问某些文件扩展名是否存在风险？**
 
-   客户可能希望允许在公共资源文件夹中加载字体文件、Outlook会议文件。 此配置在当前的`config-<instance>.xml`文件中完成。 此操作将与配置文件一起复制。
+   客户可能希望允许在公共资源文件夹中加载字体文件、Outlook会议文件。 此配置在当前完成 `config-<instance>.xml` 文件。 此操作将与配置文件一起复制。
 
-* **新服务器上的时区是否在更改？客户是否能够保留其当前时区？**
+* **新服务器上的时区是否在更改？ 客户是否能够保持其当前时区？**
 
    它可能会根据新服务器位置而发生更改。 但是，客户将能够保留其当前时区。
 
-   [单击](../../workflow/using/managing-time-zones.md) 此处以详细了解Adobe Campaign Classic v7中的时区管理。
+   [单击此处](../../workflow/using/managing-time-zones.md) 有关Adobe Campaign Classic v7中时区管理的更多详细信息。
 
 
 ## 安全性和权限
 
 ![](assets/do-not-translate/security.png)
 
-迁移到Public Cloud(AWS)后，客户环境将保持为最新状态，并满足所有必要的安全要求。 这包括：
+迁移到Public Cloud(AWS)后，客户环境将保持为最新，并满足所有必要的安全要求。 这包括：
 
 * 定期提供最新的操作系统和安全修补程序
 * 按客户隔离基础架构
@@ -223,7 +223,7 @@ ht-degree: 0%
 
 * **我们是否需要计划在迁移期间停止营销活动？**
 
-   Adobe建议在旧版数据中心上关闭应用程序之前，减慢并最好暂停所有执行：投放和工作流。 这将简化Cloud Server(AWS)上的重新启动，因为流程将有时间“优雅”地暂停并保存任何正在进行的执行状态。
+   Adobe建议在旧版数据中心上关闭应用程序之前，减慢并最好暂停所有执行：投放和工作流。 这将简化云服务器(AWS)上的重新启动，因为将为进程提供时间来“优雅”暂停并保存任何正在进行的执行状态。
 
 * **我们是否预计Adobe Campaign服务会停机？**
 
@@ -244,7 +244,7 @@ ht-degree: 0%
 
    停机完全取决于客户数据库的大小和SFTP文件存储的大小。 请联系您的客户关怀联系人，以获得预计的持续时间。
 
-* **从旧版服务器发送的消息如何。链接是否始终可访问？**
+* **从旧版服务器发送的消息如何。 链接是否始终可以访问？**
 
    在迁移运行时，只有一项服务可以继续正常运行：电子邮件链接重定向。 所有收件人在单击电子邮件后都可以访问登陆页面。 但是，不会跟踪这些点击，因此在迁移前不久开始的投放的点击率将低于通常的点击率。
 

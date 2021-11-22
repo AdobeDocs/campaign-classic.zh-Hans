@@ -41,7 +41,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->选择&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;选项后，这表示用户档案处于状阻止列表态，即该用户档案表示不希望与其联系（例如，单击新闻稿中的退订链接）。 通过任何渠道（电子邮件、直邮广告等）投放时都不会定位这些顾客。有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
+>当 **[!UICONTROL No longer contact (by any channel)]** 选项，这表示用户档案处于状阻止列表态，即用户档案已表示不希望与其联系（例如，单击新闻稿中的退订链接）。 通过任何渠道（电子邮件、直邮广告等）投放时都不会定位这些顾客。有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
 
 ## “联系人信息”选项卡 {#contact-information-tab}
 
@@ -53,7 +53,7 @@ ht-degree: 87%
 
 ## “其他”选项卡 {#other-tab}
 
-此界面包含用户定义字段，可根据需求对其进行个性化设置。您还可以通过&#x200B;**[!UICONTROL Field properties...]**&#x200B;更改字段名称并定义其格式，如下所示：
+此界面包含用户定义字段，可根据需求对其进行个性化设置。您还可以通过 **[!UICONTROL Field properties...]**，如下所示：
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
@@ -67,7 +67,7 @@ ht-degree: 87%
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-有关更多信息，请参阅[创建和管理列表](../../platform/using/creating-and-managing-lists.md)。
+有关更多信息，请参阅 [创建和管理列表](../../platform/using/creating-and-managing-lists.md).
 
 ## “订阅”选项卡 {#subscriptions-tab}
 

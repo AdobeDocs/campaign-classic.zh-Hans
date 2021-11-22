@@ -4,7 +4,8 @@ title: 技术说明
 description: 技术说明
 hide: true
 hidefromtoc: true
-source-git-commit: 53ac193211a1d98c45e97bf01ab0ad843b8f8f02
+exl-id: e7d4331b-7149-4768-8e46-2e2911319074
+source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 35%
@@ -23,7 +24,7 @@ ht-degree: 35%
 
 **您是否受影响？**
 
-为了提高安全性，[Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - 2020年4月 — 中引入了用于跟踪电子邮件中链接的签名机制，并且默认情况下，从版本19.1.4(9032@3a9dc9c)和Campaign 20.2开始为所有客户启用该机制。
+为了提高安全性，在 [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - 2020年4月 — 从版本19.1.4(9032@3a9dc9c)和促销活动20.2开始，默认为所有客户启用。
 
 如果您的环境在下面列出的某个版本上运行，则可能会受到影响：
 
@@ -35,18 +36,18 @@ ht-degree: 35%
 * Campaign 19.2.2（版本9080）到19.2.3（版本9081）版本。 [了解详情](../../rn/using/release--19-2.md)
 * Campaign 19.1.5（版本9033）到19.1.7（版本9036）版本。 [了解详情](../../rn/using/release--19-1.md)
 
-在此部分](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本[。
+了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **如何更新？**
 
-作为&#x200B;**托管的客户**,Adobe将与您合作，不久便会更新您的配置。
+As a **托管客户**,Adobe将尽快与您合作更新配置。
 
-作为&#x200B;**本地/混合客户**，您需要更新配置。
+作为 **内部部署/混合客户**，则需要更新配置。
 
 按照以下步骤操作：
 
-1. 在[服务器配置文件](../../installation/using/the-server-configuration-file.md)(serverConf.xml)中，将&#x200B;**signEmailLinks**&#x200B;更改为&#x200B;**false**。
-1. 重新启动&#x200B;**nlserver**&#x200B;服务。
+1. 在 [服务器配置文件](../../installation/using/the-server-configuration-file.md) (serverConf.xml)，更改 **signEmailLinks** to **false**.
+1. 重新启动 **nlserver** 服务。
 1. 在跟踪服务器上，重新启动Web服务器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
    ```
@@ -55,7 +56,7 @@ ht-degree: 35%
 
 >[!NOTE]
 >
->**config-`<instance>`.xml**&#x200B;文件覆盖&#x200B;**serverConf.xml**&#x200B;设置。 如果&#x200B;**signEmailLinks**&#x200B;位于&#x200B;**config-`<instance>`.xml**&#x200B;中（其中&#x200B;**instance**&#x200B;是实例的名称），则还必须将其设置为&#x200B;**false**。
+>的 **配置 — `<instance>`.xml** 文件覆盖 **serverConf.xml** 设置。 如果 **signEmailLinks** 在  **配置 — `<instance>`.xml** (其中 **实例** 是实例的名称)，则还必须将其设置为 **false**.
 
 **会有什么影响？**
 

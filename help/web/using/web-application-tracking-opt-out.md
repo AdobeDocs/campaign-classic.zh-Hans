@@ -23,7 +23,7 @@ Adobe Campaign允许您停止跟踪通过cookie或网络信标选择退出行为
 
 >[!NOTE]
 >
->脚本编写时始终遵循[安全和隐私检查列表](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中描述的准则。
+>脚本编写时始终遵循 [安全和隐私检查列表](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## 配置横幅 {#configuring-the-banner-}
 
@@ -35,7 +35,7 @@ Adobe Campaign提供了一个示例横幅，您必须根据自己的需求进行
 >
 >要创建您自己的横幅，必须个性化现成的横幅。
 
-要激活横幅，必须配置Web应用程序属性。 请参阅[设计Web应用程序](designing-a-web-application.md)一节。
+要激活横幅，必须配置Web应用程序属性。 请参阅 [设计Web应用程序](designing-a-web-application.md) 中。
 
 如果激活了Web跟踪，您可以：
 
@@ -64,7 +64,7 @@ Adobe Campaign提供了一个示例横幅，您必须根据自己的需求进行
       
 ```
 
-您必须将&#x200B;**Please insert your message here**&#x200B;替换为包含跟踪信息的块。 此替换操作应在与选择退出横幅相关的新个性化块中执行。
+您必须将 **请在此处插入您的邮件** 包含跟踪信息的块。 此替换操作应在与选择退出横幅相关的新个性化块中执行。
 
 横幅将使用特定CSS进行传递。 但是，在创建和配置网页时，您可以覆盖样式。 请参见[此页面](content-editor-interface.md)。
 
@@ -72,7 +72,7 @@ Adobe Campaign提供了一个示例横幅，您必须根据自己的需求进行
 
 Adobe Campaign随API一起提供，允许您管理Cookie值并检索用户首选项。
 
-Cookie名称为&#x200B;**acoptout**。 常见值包括：
+Cookie名称为 **acoptout**. 常见值包括：
 
 * 0:用户已允许Web跟踪（默认值）
 * 1:用户已禁止Web跟踪
@@ -80,9 +80,9 @@ Cookie名称为&#x200B;**acoptout**。 常见值包括：
 
 用于自定义横幅的可用客户端API包括：
 
-* **NL.ClientWebTracking.allow()**:设置选择禁用Cookie值以允许Web跟踪。默认情况下允许Web跟踪。
-* **NL.ClientWebTracking.proid()**:设置禁用Cookie值以禁止Web跟踪。Web跟踪需要禁止用户输入。
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**:用户单击接受或拒绝按钮后，关闭选择退出Cookie横幅。（在点击事件冒泡阶段期间）
+* **NL.ClientWebTracking.allow()**:设置选择禁用Cookie值以允许Web跟踪。 默认情况下允许Web跟踪。
+* **NL.ClientWebTracking.ordon()**:设置禁用Cookie值以禁止Web跟踪。 Web跟踪需要禁止用户输入。
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**:用户单击接受或拒绝按钮后，关闭选择退出Cookie横幅。 （在点击事件冒泡阶段期间）
 
    bannerDomElt {DOMElement}需要删除的Cookie横幅的根DOM元素
 

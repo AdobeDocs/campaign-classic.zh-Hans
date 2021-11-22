@@ -27,10 +27,10 @@ ht-degree: 2%
 应用以下步骤以设置这些标记：
 
 1. 确定要跟踪的页面并确定其类型（WEB或TRANSACTION）。
-1. 确定您要收集的其他信息，并扩展&#x200B;**nms:webTrackingLog**&#x200B;模式，其中包含此信息的描述。 默认情况下，此架构可以存储每个交易的交易金额和项目数。
+1. 确定要收集的其他信息，并扩展 **nms:webTrackingLog** 架构，其中包含此信息的描述。 默认情况下，此架构可以存储每个交易的交易金额和项目数。
 1. 创建Web跟踪标记。 可以通过两种方式来执行此操作：
 
-   * 在Adobe Campaign平台中插入与这些页面对应的URL，然后生成并提取关联的Web跟踪标记（从客户端控制台的&#x200B;**[!UICONTROL Campaign execution>Resources>Web tracking tags]**&#x200B;节点）。
+   * 在Adobe Campaign平台中插入与这些页面对应的URL，然后生成并提取关联的Web跟踪标记(从 **[!UICONTROL Campaign execution>Resources>Web tracking tags]** 客户端控制台的节点)。
    * 自行在“即时创建”模式下创建Web跟踪标记：与这些页面对应的URL将自动插入到您的Adobe Campaign平台中。
 
 1. 在要跟踪的页面中静态或动态添加这些标记。

@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-**Web下载**&#x200B;活动会启动下载显式URL、外部帐户或Adobe Campaign实例上的文件。 使用HTTP协议。 这可以是GET或POST下载。
+的 **Web下载** 活动会启动下载显式URL、外部帐户或Adobe Campaign实例上的文件。 使用HTTP协议。 这可以是GET或POST下载。
 
 ## 属性 {#properties}
 
@@ -25,29 +25,29 @@ ht-degree: 2%
 
    要指定要下载的文件，您可以输入文件URL，使用存储文件的外部HTTP帐户，或通过Adobe Campaign实例加载文件。 可用参数详述如下：
 
-   * 要直接输入要下载的文件的URL，请选择&#x200B;**[!UICONTROL Explicit URL]**&#x200B;选项，然后在相应的字段中指定该URL。 此URL可以使用变量数据构建。
+   * 要直接输入要下载的文件的URL，请选择 **[!UICONTROL Explicit URL]** 选项，并在相应的字段中指定URL。 此URL可以使用变量数据构建。
 
       ![](assets/download_web_edit.png)
 
-   * 要使用&#x200B;**[!UICONTROL External account]**，请从下拉列表中选择帐户，然后指定要下载的文件。
+   * 使用 **[!UICONTROL External account]**，从下拉列表中选择帐户，然后指定要下载的文件。
 
-      从Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点配置外部帐户。 可以通过&#x200B;**[!UICONTROL Edit link]**&#x200B;图标编辑帐户参数。
+      外部帐户是通过 **[!UICONTROL Administration > Platform > External accounts]** Adobe Campaign树的节点。 帐户参数可通过 **[!UICONTROL Edit link]** 图标。
 
       ![](assets/download_web_edit_external.png)
 
-   * 要从Adobe Campaign实例下载文件，请选择&#x200B;**[!UICONTROL Adobe Campaign Instance]**&#x200B;选项。
+   * 要从Adobe Campaign实例下载文件，请选择 **[!UICONTROL Adobe Campaign Instance]** 选项。
 
       ![](assets/download_web_edit_instance.png)
 
 1. **文件历史化**
 
-   **[!UICONTROL File historization settings...]**&#x200B;链接允许您指定文件存储目录和此目录的清除频率。
+   的 **[!UICONTROL File historization settings...]** 链接允许您指定文件存储目录和此目录的清除频率。
 
    ![](assets/download_web_edit_hist.png)
 
    可以使用以下选项：
 
-   * **[!UICONTROL Use a default storage directory]**:在处理文件之前始终会移动该文件。如果选中此选项，则文件将移入默认存储目录(Adobe Campaign安装文件夹的&#x200B;**vars**&#x200B;目录)。 要指定存储目录，请取消选中该框，并在&#x200B;**[!UICONTROL Storage directory]**&#x200B;字段中输入其路径
+   * **[!UICONTROL Use a default storage directory]**:在处理文件之前始终会移动该文件。 如果选中此选项，则文件将移入默认存储目录( **var** Adobe Campaign安装文件夹的目录)。 要指定存储目录，请取消选中方框并在 **[!UICONTROL Storage directory]** 字段
    * **[!UICONTROL Number of files]**:输入存储目录中要保留的最大文件数。
    * **[!UICONTROL Maximum size (in Mb)]**:输入存储目录的最大容量(MB)。
 
@@ -55,15 +55,15 @@ ht-degree: 2%
 
    文件会根据其年龄（从最早到最新）而删除。 将清除最早的文件，直到验证两个清除规则。 因此，如果定义了100个文件限制，这意味着存储目录将始终包含工作流开始前的100个最新文件，以及正在处理的工作流中正在处理的文件。
 
-   如果不再想为&#x200B;**[!UICONTROL Number of files]**&#x200B;和&#x200B;**[!UICONTROL Maximum size (in Mb)]**&#x200B;选项设置限制，请输入0作为值。
+   如果您不再想为 **[!UICONTROL Number of files]** 和 **[!UICONTROL Maximum size (in Mb)]** 选项，输入0作为值。
 
 1. **高级参数**
 
-   **[!UICONTROL Advanced parameters...]**&#x200B;链接允许您指定下面显示的其他选项：
+   的 **[!UICONTROL Advanced parameters...]** 链接允许您指定下面显示的其他选项：
 
    ![](assets/download_web_edit_advanced.png)
 
-   **[!UICONTROL Process errors]**&#x200B;选项在[处理错误](monitoring-workflow-execution.md#processing-errors)中有详细说明。
+   的 **[!UICONTROL Process errors]** 选项的详情，请参阅 [处理错误](monitoring-workflow-execution.md#processing-errors).
 
 ## 输出参数 {#output-parameters}
 

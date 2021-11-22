@@ -19,9 +19,9 @@ ht-degree: 9%
 
 凭借其跟踪功能，Adobe Campaign使您能够跟踪发送的消息并检查收件人的行为：打开、点击链接、退订等。
 
-此信息可在投放每个收件人用户档案的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡中检索。 此选项卡显示从列表中选择的收件人所跟踪和点击的所有URL链接。 这是投放屏幕中仍存在的投放中跟踪的所有URL的累积。 该列表可进行配置，通常包含：点击的URL、点击的日期和时间以及找到URL的文档。 如需详细信息，请参阅[此部分](../../platform/using/editing-a-profile.md#tracking-tab)。
+此信息可在 **[!UICONTROL Tracking]** 选项卡。 此选项卡显示从列表中选择的收件人所跟踪和点击的所有URL链接。 这是投放屏幕中仍存在的投放中跟踪的所有URL的累积。 该列表可进行配置，通常包含：点击的URL、点击的日期和时间以及找到URL的文档。 如需详细信息，请参阅[此部分](../../platform/using/editing-a-profile.md#tracking-tab)。
 
-**投放仪表板**&#x200B;对于监控投放以及在发送消息过程中遇到的最终问题也很关键。 有关更多信息，请参见[此部分](delivery-dashboard.md)。
+的 **投放仪表板** 也是监控投放情况以及在发送消息过程中遇到的最终问题的关键。 有关更多信息，请参阅 [此部分](delivery-dashboard.md).
 
 下图显示了用户与各种服务器之间对话的各个阶段。
 
@@ -107,15 +107,15 @@ Web应用程序跟踪选择退出功能允许您停止跟踪选择退出行为�
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-以下故障诊断提示将帮助您解决在Adobe Campaign Classic中使用跟踪时出现的最常见问题。 如需更高级的故障诊断，请参阅[此部分](tracking-troubleshooting.md)。
+以下故障诊断提示将帮助您解决在Adobe Campaign Classic中使用跟踪时出现的最常见问题。 如需更高级的故障诊断，请参阅 [此部分](tracking-troubleshooting.md).
 
 * 检查trackinglogd进程是否正在运行
 
    此过程从IIS/Web服务器共享内存中读取并写入重定向日志。
 
-   您可以通过选择实例中的监视选项卡，从主页访问该页面。 您还可以对实例执行以下命令：`<user>@<instance>:~$ nlserver pdump`
+   您可以通过选择实例中的监视选项卡，从主页访问该页面。 您还可以对实例执行以下命令： `<user>@<instance>:~$ nlserver pdump`
 
-   如果trackinglogd进程未显示在列表中，请在实例中使用以下命令启动该进程：`<user>@<instance>:~$ nlserver start trackinglogd`
+   如果trackinglogd进程未显示在列表中，请在实例中使用以下命令启动该进程： `<user>@<instance>:~$ nlserver start trackinglogd`
 
 * 检查跟踪技术工作流是否最近运行。
 

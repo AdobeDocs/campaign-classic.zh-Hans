@@ -19,7 +19,7 @@ ht-degree: 5%
 
 使用交互的运算符有两种类型：选件经理和投放经理。 它们各自具有特定权限，仅允许它们访问树和平台的某些部分。
 
-* **[!UICONTROL Offer manager]** :创建和维护选件。请注意，如果在工作流中使用选件，则运算符需要位于&#x200B;**[!UICONTROL Administrator]**&#x200B;或&#x200B;**[!UICONTROL Offer managers]**&#x200B;运算符组中才能执行工作流。
+* **[!UICONTROL Offer manager]** :创建和维护选件。 请注意，如果在工作流中使用了选件，则运算符将需要位于 **[!UICONTROL Administrator]** 或 **[!UICONTROL Offer managers]** 操作员组。
 * **[!UICONTROL Delivery manager]** :批准和使用选件
 
 创建特定于交互的运算符的步骤与创建平台上所有其他运算符的步骤相同。 如需详细信息，请参阅[此部分](../../platform/using/access-management.md)。权限在操作员创建期间进行配置。
@@ -27,14 +27,14 @@ ht-degree: 5%
 ## 选件管理器 {#offer-manager}
 
 1. 创建新运算符。
-1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Offer manager]**&#x200B;组。
+1. 转到 **[!UICONTROL Groups and named rights]** 窗口，单击 **[!UICONTROL Add]** ，然后选择 **[!UICONTROL Offer manager]** 群组。
 
    ![](assets/offer_operators_create_001.png)
 
 分配给选件管理器的权限允许他们执行以下任务：
 
-* 修改&#x200B;**[!UICONTROL Design]**&#x200B;环境。
-* 查看&#x200B;**[!UICONTROL Live]**&#x200B;环境。
+* 修改 **[!UICONTROL Design]** 环境。
+* 查看 **[!UICONTROL Live]** 环境。
 * 配置管理功能（预定义空格和过滤器）。
 * 创建和更改类别。
 * 创建选件。
@@ -48,13 +48,13 @@ ht-degree: 5%
 ## 投放管理器 {#delivery-manager}
 
 1. 创建新运算符。
-1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Delivery manager]**&#x200B;组。
+1. 转到 **[!UICONTROL Groups and named rights]** 窗口，单击 **[!UICONTROL Add]** ，然后选择 **[!UICONTROL Delivery manager]** 群组。
 
    ![](assets/offer_operators_create_002.png)
 
 分配给投放管理器的权限，使他们能够执行以下任务：
 
-* 显示&#x200B;**[!UICONTROL Live]**&#x200B;环境。
+* 显示 **[!UICONTROL Live]** 环境。
 * 显示和修改选件类别。
 * 如果将此投放管理器指定为其审阅者之一，则批准选件。
 
@@ -77,12 +77,12 @@ ht-degree: 5%
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 正在编辑的选件/ Live选件<br /> </td> 
+   <td> 正在编辑的选件/实时选件<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> Recipient - Environment<br /> </td> 
+   <td> Recipient — 环境<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -92,7 +92,7 @@ ht-degree: 5%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 空格<br /> </td> 
+   <td> 空间<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -112,7 +112,7 @@ ht-degree: 5%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 选件目录<br /> </td> 
+   <td> 优惠目录<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -137,12 +137,12 @@ ht-degree: 5%
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 正在编辑的选件/ Live选件<br /> </td> 
+   <td> 正在编辑的选件/实时选件<br /> </td> 
    <td> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> Recipient - Environment<br /> </td> 
+   <td> Recipient — 环境<br /> </td> 
    <td> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -152,7 +152,7 @@ ht-degree: 5%
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 空格<br /> </td> 
+   <td> 空间<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -172,7 +172,7 @@ ht-degree: 5%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 选件目录<br /> </td> 
+   <td> 优惠目录<br /> </td> 
    <td> 读取<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 

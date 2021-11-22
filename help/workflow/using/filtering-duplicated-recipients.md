@@ -21,21 +21,21 @@ ht-degree: 4%
 
 要创建此示例，请应用以下步骤：
 
-1. 在工作流中拖放&#x200B;**[!UICONTROL Query]**&#x200B;活动并打开该活动。
-1. 单击&#x200B;**[!UICONTROL Edit query]**&#x200B;并将目标和筛选维度设置为&#x200B;**[!UICONTROL Recipients]**。
+1. 拖放 **[!UICONTROL Query]** 活动，然后打开活动。
+1. 单击 **[!UICONTROL Edit query]** 并将目标和过滤维度设置为 **[!UICONTROL Recipients]**.
 
    ![](assets/query_recipients_1.png)
 
-1. 将以下筛选条件定义到投放日志中存在的目标收件人。 在&#x200B;**表达式**&#x200B;列中选择&#x200B;**收件人投放日志(broadlog)**，在&#x200B;**运算符**&#x200B;列中选择&#x200B;**存在，如**。
+1. 将以下筛选条件定义到投放日志中存在的目标收件人。 选择 **收件人投放日志(broadlog)** 在 **表达式** 列，选择 **存在，如** 在 **运算符** 列。
 
    ![](assets/query_recipients_2.png)
 
-1. 定义以下筛选条件以定位投放。 在“表达式”列中选择&#x200B;**[!UICONTROL Internal name]**，在“运算符”列选择&#x200B;**[!UICONTROL equal to]**。
+1. 定义以下筛选条件以定位投放。 选择 **[!UICONTROL Internal name]** 在“表达式”列和 **[!UICONTROL equal to]** 在运算符列中。
 1. 在值列中，添加目标投放的内部名称。
 
    ![](assets/query_recipients_3.png)
 
-1. 使用&#x200B;**[!UICONTROL AND]**&#x200B;运算符，重复相同的操作以定位其他投放。
+1. 使用 **[!UICONTROL AND]** 运算符，重复相同的操作以定位其他投放。
 
    ![](assets/query_recipients_4.png)
 

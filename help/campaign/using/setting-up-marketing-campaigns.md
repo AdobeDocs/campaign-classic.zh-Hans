@@ -19,7 +19,7 @@ ht-degree: 6%
 
 活动包括操作（投放）和流程（导入或提取文件）以及资源（营销文档、投放概要）。 它们用于营销活动。活动是项目的一部分，项目包含在活动计划中。
 
-![](assets/do-not-localize/how-to-video.png) 了解如何在视频中创建营销计划、项目和 [营销策划](#video)
+![](assets/do-not-localize/how-to-video.png) 了解如何创建营销计划、项目和活动 [在视频中](#video)
 
 要创建营销活动，请执行以下操作：
 
@@ -35,55 +35,55 @@ ht-degree: 6%
 
 1. 计划促销活动和关联成本。 [了解详情](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
 
-完成这些步骤后，您可以开始投放（请参阅[此部分](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)），检查与投放相关的数据、流程和信息，并在必要时管理相关文档（请参阅[此部分](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)）。 您还可以跟踪营销活动和投放处理阶段的执行情况（请参阅[此部分](../../campaign/using/marketing-campaign-monitoring.md)）。
+完成这些步骤后，您可以开始投放(请参阅 [此部分](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery))，检查与投放相关的数据、流程和信息，并在必要时管理相关文档(请参阅 [此部分](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents))。 您还可以跟踪营销活动和投放处理阶段的执行情况(请参阅 [此部分](../../campaign/using/marketing-campaign-monitoring.md))。
 
 ## 创建计划和方案层次结构 {#creating-plan-and-program-hierarchy}
 
 要为营销计划和项目配置文件夹层次结构，请执行以下操作：
 
-1. 单击主页上的&#x200B;**Explorer**&#x200B;图标。
+1. 单击 **资源管理器** 图标。
 1. 右键单击要在其中创建计划的文件夹。
-1. 选择&#x200B;**添加新文件夹>营销活动管理>计划**。
+1. 选择 **添加新文件夹>营销活动管理>计划**.
 
    ![](assets/create_plan_1.png)
 
 1. 重命名计划。
-1. 右键单击新创建的计划，然后选择&#x200B;**属性……**。
+1. 右键单击新创建的计划，然后选择 **属性……**.
 
    ![](assets/create_plan_2.png)
 
-1. 在&#x200B;**General**&#x200B;选项卡中，修改&#x200B;**内部名称**&#x200B;以避免在资源包导出期间出现重复。
+1. 在 **常规** ，修改 **内部名称** 以避免在资源包导出期间出现重复。
 1. 单击&#x200B;**保存**。
-1. 右键单击新创建的计划，然后选择&#x200B;**新建“程序”文件夹**。
+1. 右键单击新创建的计划，然后选择 **创建新的“程序”文件夹**.
 1. 重复上述步骤以重命名新的程序文件夹及其内部名称。
 
 ## 创建营销策划 {#creating-a-campaign}
 
 ### 添加营销活动 {#adding-a-campaign}
 
-您可以通过营销活动列表创建营销活动。 要显示此视图，请选择&#x200B;**[!UICONTROL Campaigns]**&#x200B;功能板中的&#x200B;**[!UICONTROL Campaigns]**&#x200B;菜单。
+您可以通过营销活动列表创建营销活动。 要显示此视图，请选择 **[!UICONTROL Campaigns]** 菜单 **[!UICONTROL Campaigns]** 功能板。
 
 ![](assets/s_ncs_user_add_an_op_from_list.png)
 
-利用&#x200B;**[!UICONTROL Program]**&#x200B;字段，可选择营销活动要附加到的项目。 此信息是强制性的。
+的 **[!UICONTROL Program]** 字段中，您可以选择要将营销策划附加到的项目。 此信息是强制性的。
 
 ![](assets/s_ncs_user_new_op_wz_a.png)
 
-营销策划也可以通过项目创建。 要执行此操作，请单击相关程序&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
+营销策划也可以通过项目创建。 为此，请单击 **[!UICONTROL Add]** 按钮 **[!UICONTROL Schedule]** 选项卡。
 
 ![](assets/s_ncs_user_add_an_op.png)
 
-当您通过项目的&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡创建营销活动时，营销活动会自动链接到相关项目。 在这种情况下，**[!UICONTROL Program]**&#x200B;字段处于隐藏状态。
+当您通过 **[!UICONTROL Schedule]** 选项卡，营销活动会自动链接到相关项目。 的 **[!UICONTROL Program]** 字段。
 
 在营销活动创建窗口中，选择营销活动模板并添加营销活动的名称和描述。 您还可以指定营销活动开始和结束日期。
 
-单击&#x200B;**[!UICONTROL OK]**&#x200B;以创建营销活动。 它会添加到项目计划中。
+单击 **[!UICONTROL OK]** 创建营销活动。 它会添加到项目计划中。
 
 ![](assets/s_ncs_user_program_planning_with_op.png)
 
 >[!NOTE]
 >
->要过滤要显示的营销活动，请单击&#x200B;**[!UICONTROL Filter]**&#x200B;链接，然后选择要显示的营销活动状态。
+>要过滤要显示的营销活动，请单击 **[!UICONTROL Filter]** 链接，然后选择要显示的营销活动状态。
 
 ![](assets/s_ncs_user_program_planning_filter.png)
 
@@ -91,7 +91,7 @@ ht-degree: 6%
 
 然后，您可以编辑刚刚创建的营销活动并定义其参数。
 
-要打开和配置营销活动，请从计划中选择它，然后单击&#x200B;**[!UICONTROL Open]**。
+要打开和配置营销活动，请从计划中选择它，然后单击 **[!UICONTROL Open]**.
 
 ![](assets/s_ncs_user_new_op_edit.png)
 
@@ -109,7 +109,7 @@ ht-degree: 6%
 
 #### 为定期促销活动创建模板 {#creating-the-campaign-template}
 
-1. 创建&#x200B;**[!UICONTROL Recurring]**&#x200B;营销活动模板。
+1. 创建 **[!UICONTROL Recurring]** 营销活动模板。
 
    >[!NOTE]
    >
@@ -121,24 +121,24 @@ ht-degree: 6%
 
    ![](assets/s_ncs_user_op_template_recur_duplicate.png)
 
-1. 对于此类型的营销活动，会添加&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡以创建模板执行计划。
+1. 对于此类型的营销活动， **[!UICONTROL Schedule]** 选项卡，以创建模板执行计划。
 
 在此选项卡中，根据此模板指定营销活动的计划执行日期。
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-执行计划的配置模式与工作流的&#x200B;**[!UICONTROL Scheduler]**&#x200B;对象一致。 如需详细信息，请参阅[此部分](../../workflow/using/architecture.md)。
+执行计划的配置模式与 **[!UICONTROL Scheduler]** 对象。 如需详细信息，请参阅[此部分](../../workflow/using/architecture.md)。
 
 >[!IMPORTANT]
 >
 >必须仔细执行执行计划配置，以避免数据库过载。 定期营销活动会根据指定的计划复制其模板的工作流。 过于频繁的工作流创建的实施会阻碍数据库的操作。
 
-1. 在&#x200B;**[!UICONTROL Create in advance for]**&#x200B;字段中指定一个值，以便为指示的时段创建相应的工作流。
+1. 在 **[!UICONTROL Create in advance for]** 字段，以便为指示的时段创建相应的工作流。
 1. 使用定位参数和一个或多个通用投放，创建要在基于此模板的营销活动中使用的工作流模板。
 
    >[!NOTE]
    >
-   >此工作流必须另存为定期工作流模板。 为此，请编辑工作流属性，并在&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Recurring workflow template]**&#x200B;选项。
+   >此工作流必须另存为定期工作流模板。 为此，请编辑工作流属性并选择 **[!UICONTROL Recurring workflow template]** 选项 **[!UICONTROL Execution]** 选项卡。
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
@@ -158,17 +158,17 @@ ht-degree: 6%
    * **[!UICONTROL To be approved]** :允许您在工作流中强制提交批准请求。
    * **[!UICONTROL To be started]** :允许您在达到开始日期时启动工作流。
 
-   利用&#x200B;**[!UICONTROL Create in advance for]**&#x200B;字段，可创建涵盖所输入时段的所有工作流。
+   的 **[!UICONTROL Create in advance for]** 字段中，您可以创建涵盖输入时段的所有工作流。
 
-   执行&#x200B;**[!UICONTROL Jobs on campaigns]**&#x200B;工作流时，将根据营销活动计划中定义的发生次数创建专用工作流。 因此，将为每个执行日期创建工作流。
+   执行 **[!UICONTROL Jobs on campaigns]** 工作流中，将根据营销活动计划中定义的发生次数创建专用工作流。 因此，将为每个执行日期创建工作流。
 
-1. 定期工作流是根据营销活动中存在的工作流模板自动创建的。 它们显示在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中。
+1. 定期工作流是根据营销活动中存在的工作流模板自动创建的。 它们可从 **[!UICONTROL Targeting and workflows]** 选项卡。
 
    ![](assets/s_ncs_user_op_recur_planning_wfs.png)
 
    定期工作流实例的标签由其模板标签和工作流编号组成，其中之间有#字符。
 
-   从计划创建的工作流会自动与其关联到&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡的&#x200B;**[!UICONTROL Workflow]**&#x200B;列中。
+   从计划创建的工作流会在 **[!UICONTROL Workflow]** 列 **[!UICONTROL Schedule]** 选项卡。
 
    ![](assets/s_ncs_user_op_recur_planning_wfs_1.png)
 
@@ -187,7 +187,7 @@ ht-degree: 6%
 
 #### 创建营销活动模板 {#creating-the-campaign-template-1}
 
-1. 创建&#x200B;**[!UICONTROL Periodic]**&#x200B;营销活动模板，最好复制现有的营销活动模板。
+1. 创建 **[!UICONTROL Periodic]** 活动模板，最好通过复制现有的活动模板。
 
    ![](assets/s_ncs_user_op_template_period_create.png)
 
@@ -205,7 +205,7 @@ ht-degree: 6%
    >
    >此工作流是工作流模板。 无法从营销活动模板执行。
 
-1. 完成其执行计划以作为定期促销活动模板：单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并定义开始和结束日期，或通过链接填写执行计划。
+1. 完成其执行计划以作为定期促销活动模板：单击 **[!UICONTROL Add]** 按钮定义开始和结束日期，或通过链接填写执行计划。
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
@@ -227,4 +227,4 @@ ht-degree: 6%
 
 >[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。
+还提供其他Campaign操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).

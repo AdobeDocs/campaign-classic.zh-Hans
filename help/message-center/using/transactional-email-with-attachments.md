@@ -23,7 +23,7 @@ ht-degree: 2%
 
 在此方案中，您将了解如何发送包含单个和/或个性化附件的交易电子邮件。 附件不会预上载到事务型消息传递服务器上：而是会即时生成。
 
-当您捕获客户交互或详细信息时，您可能需要在流程结束时将此信息发回给客户，例如在附加到电子邮件的PDF文件中。
+在捕获客户交互或详细信息时，您可能需要在流程结束时将此信息发回给客户，例如在附加到电子邮件的PDF文件中。
 
 以下是此方案的主要步骤：
 
@@ -37,11 +37,11 @@ ht-degree: 2%
 
 * 这样，您就可以将附件的内容个性化。
 * 如果附件与事务关联（如上面所述的示例情景中所示），则它可能包含在客户流程期间生成的动态数据。
-* 附加PDF文件可优化安全性，因为您可以加密它们并通过HTTPS发送它们。
+* 附加PDF文件会优化安全性，因为您可以对其加密并通过HTTPS发送它们。
 
 >[!NOTE]
 >
->为避免出现性能问题，如果您将从个性化URL动态下载的图像作为附件包含在内，则默认情况下每个图像大小不应超过100,000字节。 此建议的阈值可从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置。
+>为避免出现性能问题，如果您将从个性化URL动态下载的图像作为附件包含在内，则默认情况下每个图像大小不应超过100,000字节。 建议的阈值可从 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## 推荐 {#important-notes}
 
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->为避免出现性能问题，建议在每封电子邮件中不要包含多个附件。 建议的阈值可从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置。
+>为避免出现性能问题，建议在每封电子邮件中不要包含多个附件。 建议的阈值可从 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## 实施 {#implementation}
 
@@ -70,11 +70,11 @@ ht-degree: 2%
 
 1. 您可以通过SOAP消息触发器发送电子邮件。 在SOAP调用中，有一个URL参数(attachmentURL)。
 
-   有关SOAP请求的更多信息，请参阅[事件描述](../../message-center/using/event-description.md)。
+   有关SOAP请求的更多信息，请参阅 [事件描述](../../message-center/using/event-description.md).
 
-1. 设计电子邮件时，单击&#x200B;**[!UICONTROL Attachment]**。
+1. 设计电子邮件时，单击 **[!UICONTROL Attachment]**.
 
-1. 在&#x200B;**[!UICONTROL Attachment definition]**&#x200B;屏幕中，输入SOAP附件参数：
+1. 在 **[!UICONTROL Attachment definition]** 屏幕中，输入SOAP附件参数：
 
    ```
    <%= rtEvent.ctx.attachmentUrl %>

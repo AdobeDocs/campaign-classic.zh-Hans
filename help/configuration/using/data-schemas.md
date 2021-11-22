@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 原则 {#principles}
 
-要编辑、创建和配置架构，请单击Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点。
+要编辑、创建和配置架构，请单击 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign客户端控制台的节点。
 
 >[!NOTE]
 >
@@ -43,16 +43,16 @@ ht-degree: 1%
 >
 >保存源架构后，将自动启动扩展架构的生成。
 
-如果需要检查架构的完整结构，可以使用预览选项卡。 如果架构已扩展，则将能够显示其所有扩展。 作为补充，“文档”选项卡显示所有架构属性和元素及其属性（SQL字段、类型/长度、标签、说明）。 “文档”选项卡仅适用于生成的架构。 有关更多信息，请参阅[重新生成模式](../../configuration/using/regenerating-schemas.md)一节。
+如果需要检查架构的完整结构，可以使用预览选项卡。 如果架构已扩展，则将能够显示其所有扩展。 作为补充，“文档”选项卡显示所有架构属性和元素及其属性（SQL字段、类型/长度、标签、说明）。 “文档”选项卡仅适用于生成的架构。 有关更多信息，请参阅 [重新生成模式](../../configuration/using/regenerating-schemas.md) 中。
 
 ## 示例：创建合同表 {#example--creating-a-contract-table}
 
-在以下示例中，我们要在Adobe Campaign数据库的数据库模型中为&#x200B;**contracts**&#x200B;创建新表。 此表允许您存储每个合同的持有人和共同持有人的名字和姓氏以及电子邮件地址。
+在以下示例中，我们要为 **合同** 在Adobe Campaign数据库的数据库模型中。 此表允许您存储每个合同的持有人和共同持有人的名字和姓氏以及电子邮件地址。
 
 为此，需要创建表的模式并更新数据库结构以生成相应的表。 应用以下阶段：
 
-1. 编辑Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点，然后单击&#x200B;**[!UICONTROL New]** 。
-1. 选择&#x200B;**[!UICONTROL Create a new table in the data model]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Next]** 。
+1. 编辑 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign树的节点，然后单击 **[!UICONTROL New]** .
+1. 选择 **[!UICONTROL Create a new table in the data model]** 选项并单击 **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
@@ -62,9 +62,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >默认情况下，用户创建的架构存储在“cus”命名空间中。 有关更多信息，请参阅[架构的标识](../../configuration/using/about-schema-reference.md#identification-of-a-schema)。
+   >默认情况下，用户创建的架构存储在“cus”命名空间中。 有关更多信息，请参阅 [模式的标识](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. 创建表的内容。 我们建议使用登入向导来确保不缺少任何设置。 要执行此操作，请单击&#x200B;**[!UICONTROL Insert]**&#x200B;按钮并选择要添加的设置类型。
+1. 创建表的内容。 我们建议使用登入向导来确保不缺少任何设置。 为此，请单击 **[!UICONTROL Insert]** 按钮，然后选择要添加的设置类型。
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -120,4 +120,4 @@ ht-degree: 1%
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. 更新数据库结构以创建模式将链接到的表。 有关更多信息，请参见[更新数据库结构](../../configuration/using/updating-the-database-structure.md)。
+1. 更新数据库结构以创建模式将链接到的表。 有关更多信息，请参阅 [更新数据库结构](../../configuration/using/updating-the-database-structure.md).

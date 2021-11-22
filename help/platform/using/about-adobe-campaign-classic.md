@@ -23,9 +23,9 @@ ht-degree: 92%
 
 >[!AVAILABILITY]
 >
->* 此集合中的帮助资料适用于其[最新版本](../../rn/using/latest-release.md)中的Campaign Classicv7。 当某个部分也适用于Campaign v8时，会提供特定徽章。
+>* 此集合中的帮助资料适用于其中的Campaign Classicv7 [最新版本](../../rn/using/latest-release.md). 当某个部分也适用于Campaign v8时，会提供特定徽章。
 >
->* Adobe Campaign v8文档可在[此处](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html)获取。
+>* Adobe Campaign v8文档可供使用 [此处](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hans).
 
 
 ![](assets/do-not-localize/how-to-video.png) [了解视频中的主要特性和功能](#video)
@@ -96,4 +96,4 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-其他Campaign Classic操作方法视频可在[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)获取。
+提供了其他Campaign Classic操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).

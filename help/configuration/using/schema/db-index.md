@@ -45,7 +45,7 @@ dbindex:==keyfield
 
 可以定义多个索引。 一个索引可以引用表的一个或多个字段。 索引声明通常遵循主架构元素的定义。
 
-`<dbindex>`中定义的`<keyfield>`元素的顺序非常重要。 第一个`<keyfield>`必须是查询主要基于的索引条件。
+的顺序 `<keyfield>` 在 `<dbindex>` 非常重要。 第一个 `<keyfield>` 必须是查询主要基于的索引条件。
 
 数据库中索引的名称是通过连接表的名称和索引的名称来计算的。 例如：在索引创建查询期间索引字段的表名“示例”、命名空间“自定义”、索引名“MyIndex” — >名称：&quot;CusSample_myIndex&quot;。
 
@@ -70,7 +70,7 @@ dbindex:==keyfield
 
 ## 示例 {#examples-3}
 
-在“id”字段上创建索引。 (在数据库（查询）中创建索引时，`<dbindex>`元素上的“@unique”属性会触发添加“UNIQUE” SQL关键字。)
+在“id”字段上创建索引。 (“@unique”属性位于 `<dbindex>` 在数据库（查询）中创建索引时，元素会触发添加“UNIQUE” SQL关键字。
 
 ```
 <element label="Sample" name="Sample">

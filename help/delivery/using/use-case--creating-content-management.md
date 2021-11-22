@@ -19,12 +19,12 @@ ht-degree: 2%
 
 要在Adobe Campaign中创建内容管理，需要执行以下步骤：
 
-* [第1步 — 分析要制作的内容](#step-1---analyzing-the-content-to-be-produced)、
-* [第2步 — 创建数据模式](#step-2---creating-the-data-schema),
-* [第3步 — 创建输入表单](#step-3---creating-the-input-form)、
-* [第4步 — 创建构建模板](#step-4---creating-the-construction-template)、
-* [第5步 — 创建发布模板](#step-5---creating-the-publication-template)、
-* [步骤6 — 创建内容](#step-6---creating-contents)。
+* [步骤1 — 分析要生成的内容](#step-1---analyzing-the-content-to-be-produced),
+* [步骤2 — 创建数据架构](#step-2---creating-the-data-schema),
+* [步骤3 — 创建输入表单](#step-3---creating-the-input-form),
+* [第4步 — 创建构建模板](#step-4---creating-the-construction-template),
+* [步骤5 — 创建发布模板](#step-5---creating-the-publication-template),
+* [步骤6 — 创建内容](#step-6---creating-contents).
 
 ## 步骤1 — 分析要生成的内容 {#step-1---analyzing-the-content-to-be-produced}
 
@@ -48,7 +48,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_content_define_statics.png)
 
-此新闻稿的各种元素都是根据JavaScript模板中定义的规则组合在一起的，该模板引用要插入的所有元素并概念化其布局。
+此新闻稿的各个元素都是根据JavaScript模板中定义的规则组合在一起的，该模板引用了要插入的所有元素并概念化了其布局。
 
 这些元素是通过专用架构创建的，该架构为每个内容指定以下元素：名称、标签、类型、大小，以及与其在Adobe Campaign中的处理相关的任何其他信息。
 
@@ -58,17 +58,17 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关在Adobe Campaign中创建和配置数据架构的更多信息，请参阅[此部分](../../configuration/using/about-schema-edition.md)。
+>有关在Adobe Campaign中创建和配置数据模式的更多信息，请参阅 [此部分](../../configuration/using/about-schema-edition.md).
 >
->[数据架构](data-schemas.md)中详细描述了特定于内容管理的配置元素。
+>有关特定于内容管理的配置元素的详细信息，请参阅 [数据模式](data-schemas.md).
 
 要创建数据架构，请应用以下步骤：
 
-1. 打开Adobe Campaign Explorer并选择&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点。
+1. 打开Adobe Campaign Explorer，然后选择 **[!UICONTROL Administration > Configuration > Data schemas]** 节点。
 
-   单击位于数据架构列表上方的&#x200B;**[!UICONTROL New]**&#x200B;图标。
+   单击 **[!UICONTROL New]** 图标。
 
-1. 选择用于内容管理的&#x200B;**[!UICONTROL Create a schema]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 选择 **[!UICONTROL Create a schema]** 用于内容管理的选项，然后单击 **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_content_create_schema.png)
 
@@ -76,15 +76,15 @@ ht-degree: 2%
 
    ![](assets/s_ncs_content_param_schema.png)
 
-   单击&#x200B;**[!UICONTROL Next]**&#x200B;以验证。
+   单击 **[!UICONTROL Next]** 验证。
 
-1. 在&#x200B;**[!UICONTROL Edit schema]**&#x200B;窗口中输入架构的内容。
+1. 在 **[!UICONTROL Edit schema]** 窗口。
 
-   使用&#x200B;**[!UICONTROL Insert]**&#x200B;按钮创建架构内容。
+   使用 **[!UICONTROL Insert]** 按钮以创建架构内容。
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   有关更多信息，请参阅[编辑架构](data-schemas.md#editing-schemas)。
+   有关更多信息，请参阅 [编辑模式](data-schemas.md#editing-schemas).
 
    对于内容中引用的每个元素，您需要选择一个匹配的类型。
 
@@ -133,7 +133,7 @@ ht-degree: 2%
   <tr> 
    <td> 作者<br /> </td> 
    <td> 元素<br /> </td> 
-   <td> Memo<br /> </td> 
+   <td> 备忘录<br /> </td> 
    <td> 作者<br /> </td> 
   </tr> 
   <tr> 
@@ -160,7 +160,7 @@ ht-degree: 2%
   </element>
 ```
 
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建数据架构。
+1. 单击 **[!UICONTROL Save]** 创建数据模式。
 
 ## 步骤3 — 创建输入表单 {#step-3---creating-the-input-form}
 
@@ -170,23 +170,23 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关在Adobe Campaign中创建和配置表单的更多信息，请参阅[此部分](../../configuration/using/identifying-a-form.md)。
+>有关在Adobe Campaign中创建和配置表单的更多信息，请参阅 [此部分](../../configuration/using/identifying-a-form.md).
 >
->[输入表单](input-forms.md)中详细描述了特定于内容管理的配置元素。
+>有关特定于内容管理的配置元素的详细信息，请参阅 [输入表单](input-forms.md).
 
 要创建用于内容管理的输入表单，请应用以下步骤：
 
-1. 打开Adobe Campaign Explorer并选择&#x200B;**[!UICONTROL Administration > Configuration > Input forms]**&#x200B;节点。
+1. 打开Adobe Campaign Explorer，然后选择 **[!UICONTROL Administration > Configuration > Input forms]** 节点。
 
-   单击表单列表上方的&#x200B;**[!UICONTROL New]**&#x200B;图标。
+   单击 **[!UICONTROL New]** 图标。
 
-1. 输入表单的名称和链接到表单的标签，然后选择&#x200B;**[!UICONTROL Content management]**&#x200B;类型。
+1. 输入表单的名称和链接到表单的标签，然后选择 **[!UICONTROL Content management]** 类型。
 
    ![](assets/s_ncs_content_param_form_edit.png)
 
    >[!NOTE]
    >
-   >要启用这两个元素自动匹配，我们建议使用与链接数据架构相同的名称。 使用输入区域上方的&#x200B;**[!UICONTROL Insert]**&#x200B;按钮，添加来自链接到表单的架构的字段。
+   >要启用这两个元素自动匹配，我们建议使用与链接数据架构相同的名称。 使用 **[!UICONTROL Insert]** 按钮以添加来自链接到表单的架构的字段。
 
    ![](assets/s_ncs_content_param_form_edit_step2.png)
 
@@ -208,11 +208,11 @@ ht-degree: 2%
      </input>
    ```
 
-   使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡，可在编辑表单时检查表单的呈现：
+   的 **[!UICONTROL Preview]** 选项卡，用于在编辑表单时检查表单的呈现：
 
    ![](assets/s_ncs_content_param_form_preview.png)
 
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建输入表单。
+1. 单击 **[!UICONTROL Save]** 创建输入表单。
 
 ## 第4步 — 创建构建模板 {#step-4---creating-the-construction-template}
 
@@ -222,18 +222,18 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[Formatting](formatting.md)中详细描述了链接到文档构建（JavaScript或XSL模板）的限制。
+>链接到文档构建（JavaScript或XSL模板）的约束在 [格式](formatting.md).
 
 要在Adobe Campaign中使用JavaScript模板，请应用以下步骤：
 
-1. 打开Adobe Campaign Explorer并选择&#x200B;**[!UICONTROL Administration > Configuration > JavaScript Templates]**&#x200B;节点。
+1. 打开Adobe Campaign Explorer，然后选择 **[!UICONTROL Administration > Configuration > JavaScript Templates]** 节点。
 
-   单击模板列表上方的&#x200B;**[!UICONTROL New]**&#x200B;图标。
+   单击 **[!UICONTROL New]** 图标。
 
 1. 输入模板名称，然后选择您为内容管理创建的架构。
 1. 导入要在消息中显示的设置内容。
 
-   添加变量元素，同时遵循[JavaScript模板](formatting.md#javascript-templates)中详述的语法。
+   在遵守 [JavaScript模板](formatting.md#javascript-templates).
 
    要显示我们的示例中显示的内容，JavaScript模板必须包含以下元素：
 
@@ -326,7 +326,7 @@ ht-degree: 2%
    </html>
    ```
 
-   通过在模板开始时调用函数，您可以设置对从Adobe Campaign数据库获取的个性化数据的调用(在本例中为：recipient.firstName和recipient.lastName)，以便在投放中使用时可以对其进行解释。 有关更多信息，请参阅[包括JavaScript模板](formatting.md#including-a-javascript-template)。
+   通过在模板开始时调用函数，您可以设置对从Adobe Campaign数据库获取的个性化数据的调用(在本例中为：recipient.firstName和recipient.lastName)，以便在投放中使用时可以对其进行解释。 有关更多信息，请参阅 [包含JavaScript模板](formatting.md#including-a-javascript-template).
 
    在此示例中，函数将包含以下代码：
 
@@ -345,7 +345,7 @@ ht-degree: 2%
    }
    ```
 
-   要使JavaScript模板有效，必须事先从树结构的&#x200B;**[!UICONTROL JavaScript codes]**&#x200B;节点创建此函数，如下所示：
+   为了使JavaScript模板有效，必须事先从 **[!UICONTROL JavaScript codes]** 树结构中的节点，如下所示：
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
@@ -355,25 +355,25 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关内容发布模板的更多信息，请参阅[发布模板](publication-templates.md)。
+>有关内容发布模板的更多信息，请参阅 [发布模板](publication-templates.md).
 
 在本例中，步骤如下：
 
-1. 通过&#x200B;**[!UICONTROL Administration > Configuration > Publication templates]**&#x200B;节点创建新发布模板。
+1. 通过 **[!UICONTROL Administration > Configuration > Publication templates]** 节点。
 1. 输入名称和标签，然后选择要使用的架构和表单。
-1. 然后输入模板的名称并选择要应用的渲染模式。 在此，我们根据上面创建的模板提供了&#x200B;**[!UICONTROL JavaScript]**&#x200B;类型渲染。
+1. 然后输入模板的名称并选择要应用的渲染模式。 这里，我们有 **[!UICONTROL JavaScript]** 根据上面创建的模板类型渲染。
 
    ![](assets/s_ncs_content_param_form_publish.png)
 
    >[!NOTE]
    >
-   >默认勾选&#x200B;**[!UICONTROL DOM interface]**&#x200B;选项，这意味着如果使用E4X语法，将无法访问此文档。 选中此选项后，必须使用DOM界面，推荐使用此语法。
+   >的 **[!UICONTROL DOM interface]** 默认勾选选项，这意味着如果您使用E4X语法，则无法访问此文档。 选中此选项后，必须使用DOM界面，推荐使用此语法。
    >
    >您仍可以使用E4X语法。 如果是，请确保取消选中此选项。
 
-   使用&#x200B;**[!UICONTROL Add]**&#x200B;按钮创建其他转换模板。
+   使用 **[!UICONTROL Add]** 按钮以创建其他转换模板。
 
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建发布模板。
+1. 单击 **[!UICONTROL Save]** 创建发布模板。
 
 ## 步骤6 — 创建内容 {#step-6---creating-contents}
 
@@ -381,13 +381,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关创建内容的更多信息，请参阅[使用内容模板](using-a-content-template.md)。
+>有关创建内容的更多信息，请参阅 [使用内容模板](using-a-content-template.md).
 
 ### 在投放向导中创建内容 {#creating-content-in-the-delivery-wizard}
 
 要直接在投放中创建内容，请应用以下步骤：
 
-1. 首先，通过投放属性的&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡引用发布模板。
+1. 首先，通过引用 **[!UICONTROL Advanced]** 选项卡。
 
    ![](assets/s_ncs_content_in_delivery.png)
 
@@ -397,6 +397,6 @@ ht-degree: 2%
 
    ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
-1. 单击&#x200B;**[!UICONTROL HTML preview]**&#x200B;选项卡以查看渲染。 您需要选择收件人以测试个性化。
+1. 单击 **[!UICONTROL HTML preview]** 选项卡查看渲染。 您需要选择收件人以测试个性化。
 
    ![](assets/s_ncs_content_use_in_delivery_preview.png)

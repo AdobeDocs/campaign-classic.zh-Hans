@@ -17,11 +17,11 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Adobe Campaign内容管理器模块是特定Campaign Classic[内置包](../../installation/using/installing-campaign-standard-packages.md)，您可以安装该模块以创建经常性新闻稿或网站。 它可以帮助您创建、验证和发布消息。
+Adobe Campaign内容管理器模块是一个特定的Campaign Classic [内置包](../../installation/using/installing-campaign-standard-packages.md) 可安装以创建定期新闻稿或网站的信息。 它可以帮助您创建、验证和发布消息。
 
 >[!NOTE]
 >
->本节将介绍内容管理模块。 有关如何设计电子邮件投放内容的更多信息，请参阅[此部分](defining-the-email-content.md)。
+>本节将介绍内容管理模块。 有关如何设计电子邮件投放内容的更多信息，请参阅 [此部分](defining-the-email-content.md).
 
 内容管理模块整合了工作组、工作流和内容聚合功能。 这允许自动设置消息的格式：电子邮件、邮件、短信、Web等
 

@@ -47,33 +47,33 @@ ht-degree: 2%
 
    我们建议：
 
-   * 将&#x200B;**[!UICONTROL nms:BroadLogRcp]**&#x200B;和&#x200B;**[!UICONTROL nms:TrackingLogRcp]**&#x200B;架构指定到现成的&#x200B;**[!UICONTROL nms:Recipientschema]**。 这两个日志表不应链接到任何其他自定义收件人表。
-   * 为每个新的自定义收件人模式定义专用的自定义broadlog和trackinglog模式。 设置目标映射时，可以自动完成此操作，请参阅[目标映射](../../configuration/using/target-mapping.md)。
+   * 将 **[!UICONTROL nms:BroadLogRcp]** 和 **[!UICONTROL nms:TrackingLogRcp]** 模式到现成模式 **[!UICONTROL nms:Recipientschema]**. 这两个日志表不应链接到任何其他自定义收件人表。
+   * 为每个新的自定义收件人模式定义专用的自定义broadlog和trackinglog模式。 设置目标映射时可以自动完成此操作，请参阅 [目标映射](../../configuration/using/target-mapping.md).
 
-* 您不能使用产品中提供的标准&#x200B;**[!UICONTROL Services and Subscriptions]**。
+* 您不能使用标准 **[!UICONTROL Services and Subscriptions]** 提供。
 
-   这表示[此部分](../../delivery/using/managing-subscriptions.md)中详述的整体操作不适用。
+   这表示 [此部分](../../delivery/using/managing-subscriptions.md) 不适用。
 
-* 具有&#x200B;**[!UICONTROL visitor]**&#x200B;表的链接不起作用。
+* 链接 **[!UICONTROL visitor]** 表不起作用。
 
-   因此，要使用&#x200B;**[!UICONTROL Social Marketing]**&#x200B;模块，必须配置存储步骤以引用正确的表。
+   因此，要使用 **[!UICONTROL Social Marketing]** 模块必须配置存储步骤才能引用正确的表。
 
    同样，在使用反向链接功能时，必须修改标准的初始消息传输模板。
 
 * 您无法在列表中手动添加用户档案。
 
-   因此，如果没有其他配置，则[此部分](../../platform/using/creating-and-managing-lists.md)中详述的过程将不适用。
+   因此，详见 [此部分](../../platform/using/creating-and-managing-lists.md) 如果没有其他配置，则不适用。
 
    >[!NOTE]
    >
-   >您仍可以使用工作流创建收件人列表。 有关更多信息，请参阅[使用工作流创建配置文件列表](../../configuration/using/creating-a-profile-list-with-a-workflow.md)。
+   >您仍可以使用工作流创建收件人列表。 有关更多信息，请参阅 [使用工作流创建用户档案列表](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 我们还建议检查不同现成配置中使用的默认值：根据所使用的功能，必须进行若干适应。
 
 例如：
 
-* 必须重新开发某些标准报表，特别是由&#x200B;**Interaction**&#x200B;和&#x200B;**移动应用程序**&#x200B;提供的报表。 请参阅[管理报告](../../configuration/using/managing-reports.md)一节。
-* 某些工作流活动的默认配置引用标准收件人表(**[!UICONTROL nms:recipient]**):当用于外部收件人表时，必须更改这些配置。 请参阅[管理工作流](../../configuration/using/managing-workflows.md)一节。
-* 必须修改标准&#x200B;**[!UICONTROL Unsubscription link]**&#x200B;个性化块。
+* 某些标准报告，特别是 **互动** 和 **移动设备应用程序** 必须重新开发。 请参阅 [管理报告](../../configuration/using/managing-reports.md) 中。
+* 某些工作流活动的默认配置引用标准收件人表(**[!UICONTROL nms:recipient]**):当用于外部收件人表时，必须更改这些配置。 请参阅 [管理工作流](../../configuration/using/managing-workflows.md) 中。
+* 标准 **[!UICONTROL Unsubscription link]** 必须修改个性化块。
 * 必须修改标准投放模板的目标映射。
 * V4表单与外部收件人表不兼容：您必须使用web应用程序。

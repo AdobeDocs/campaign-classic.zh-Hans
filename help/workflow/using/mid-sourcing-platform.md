@@ -17,7 +17,7 @@ ht-degree: 15%
 
 ![](../../assets/common.svg)
 
-默认情况下，下面详述的工作流与&#x200B;**中间源平台**&#x200B;模块一起安装。 有关此模块的更多信息，请参阅此[部分](../../installation/using/mid-sourcing-deployment.md)。
+下面详细介绍的工作流与 **中间源平台** 模块。 有关此模块的更多信息，请参阅此 [部分](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 

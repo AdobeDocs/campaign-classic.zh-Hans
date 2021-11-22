@@ -17,25 +17,25 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动定义导出时，您可以定义后处理以压缩文件或加密文件。
+Adobe Campaign允许您导出压缩或加密文件。 在定义通过 **[!UICONTROL Data extraction (file)]** 活动时，您可以定义后处理以压缩文件或加密文件。
 
 要实现此目的，请执行以下操作：
 
-1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=en#encrypting-data)为实例安装GPG密钥对。
+1. 使用 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=en#encrypting-data).
 
    >[!NOTE]
    >
    >控制面板仅限管理员用户，并且仅适用于某些Campaign版本。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)
 
-1. 如果Adobe Campaign的安装由Adobe托管，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)，以在服务器上安装必要的实用程序。
+1. 如果Adobe Campaign安装由Adobe托管，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 以在服务器上安装必要的实用程序。
 1. 如果您在内部部署安装Adobe Campaign，请安装您要使用的实用程序(例如：GPG、GZIP)以及应用程序服务器上必需的密钥（加密密钥）。
 
-然后，您可以在活动的&#x200B;**[!UICONTROL Script]**&#x200B;选项卡或&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动中使用命令或代码。 下面的用例中提供了一个示例。
+然后，您可以在 **[!UICONTROL Script]** 选项卡，或 **[!UICONTROL JavaScript code]** 活动。 下面的用例中提供了一个示例。
 
 **相关主题：**
 
 * [在处理之前解压缩或解密文件](../../platform/using/unzip-decrypt.md)
-* [数据提取（文件）活动](../../workflow/using/extraction--file-.md)。
+* [数据提取（文件）活动](../../workflow/using/extraction--file-.md).
 
 ## 用例：使用安装在控制面板上的密钥加密和导出数据 {#use-case-gpg-encrypt}
 
@@ -45,7 +45,7 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 
 执行此用例的步骤如下：
 
-1. 使用GPG实用程序生成GPG密钥对（公钥/私钥），然后将公钥安装到控制面板上。 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=en#encrypting-data)中提供了详细步骤。
+1. 使用GPG实用程序生成GPG密钥对（公钥/私钥），然后将公钥安装到控制面板上。 有关详细步骤，请参阅 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=en#encrypting-data).
 
 1. 在Campaign Classic中，构建用于导出数据的工作流，并使用通过控制面板安装的私钥对其加密。 为此，我们将构建一个工作流，如下所示：
 
@@ -56,17 +56,17 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
    * **[!UICONTROL JavaScript code]** 活动：加密要提取的数据。
    * **[!UICONTROL File transfer]** 活动：将数据发送到外部源（在本例中为SFTP服务器）。
 
-1. 配置&#x200B;**[!UICONTROL Query]**&#x200B;活动以定位数据库中的所需数据。 如需详细信息，请参阅[此部分](../../workflow/using/query.md)。
+1. 配置 **[!UICONTROL Query]** 活动来定位数据库中的所需数据。 如需详细信息，请参阅[此部分](../../workflow/using/query.md)。
 
-1. 打开&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动，然后根据需要对其进行配置。 有关如何配置活动的全局概念，请参阅[此部分](../../workflow/using/extraction--file-.md)。
+1. 打开 **[!UICONTROL Data extraction (file)]** 活动，然后根据您的需求对其进行配置。 有关如何配置活动的全局概念可在 [此部分](../../workflow/using/extraction--file-.md).
 
    ![](assets/gpg-data-extraction.png)
 
-1. 打开&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动，然后复制并粘贴以下命令以加密要提取的数据。
+1. 打开 **[!UICONTROL JavaScript code]** 活动，然后复制并粘贴以下命令以加密要提取的数据。
 
    >[!IMPORTANT]
    >
-   >确保将命令中的&#x200B;**fingrement**&#x200B;值替换为控制面板上安装的公共密钥的指纹。
+   >确保将 **指纹** 值，其中包含控制面板上安装的公钥的指纹。
 
    ```
    var cmd='gpg ';
@@ -80,7 +80,7 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 
    ![](assets/gpg-script.png)
 
-1. 打开&#x200B;**[!UICONTROL File transfer]**&#x200B;活动，然后指定要将文件发送到的SFTP服务器。 有关如何配置活动的全局概念，请参阅[此部分](../../workflow/using/file-transfer.md)。
+1. 打开 **[!UICONTROL File transfer]** 活动，然后指定要将文件发送到的SFTP服务器。 有关如何配置活动的全局概念可在 [此部分](../../workflow/using/file-transfer.md).
 
    ![](assets/gpg-file-transfer.png)
 
@@ -92,4 +92,4 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 
 >[!VIDEO](https://video.tv.adobe.com/v/36399?quality=12)
 
-其他Campaign Classic操作方法视频可在[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)获取。
+提供了其他Campaign Classic操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).

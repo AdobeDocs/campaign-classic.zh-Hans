@@ -21,10 +21,10 @@ ht-degree: 2%
 
 使用以下过程，将数据库中收件人的创建日期与使用聚合创建收件人的最后一个已知日期进行比较。 同日创建的所有收件人也将被选中。
 
-要对收件人执行&#x200B;**创建日期= max（创建日期）**&#x200B;类型筛选器，必须运行工作流以执行以下步骤：
+执行 **创建日期=最大值（创建日期）** 在收件人上键入过滤器，则必须运行工作流才能执行以下步骤：
 
-1. 使用基本查询检索数据库收件人。 有关此步骤的更多信息，请参阅[创建查询](query.md#creating-a-query)。
-1. 使用从&#x200B;**max（创建日期）**&#x200B;聚合函数生成的结果计算创建收件人的最后一个已知日期。
+1. 使用基本查询检索数据库收件人。 有关此步骤的更多信息，请参阅 [创建查询](query.md#creating-a-query).
+1. 使用 **最大（创建日期）** 聚合函数。
 1. 将每个收件人链接到聚合函数会生成相同的架构。
 1. 通过编辑的架构使用聚合过滤收件人。
 
@@ -34,8 +34,8 @@ ht-degree: 2%
 
 1. 创建查询。 在此，目标是在数据库中所有收件人中计算上次已知创建日期。 因此，查询不包含过滤器。
 1. 选择 **[!UICONTROL Add data]**。
-1. 在打开的窗口中，选择&#x200B;**[!UICONTROL Data linked to the filtering dimension]**，然后选择&#x200B;**[!UICONTROL Filtering dimension data]**。
-1. 在&#x200B;**[!UICONTROL Data to add]**&#x200B;窗口中，添加一列，以计算收件人表中&#x200B;**创建日期**&#x200B;字段的最大值。 您可以使用表达式编辑器或直接在&#x200B;**[!UICONTROL Expression]**&#x200B;列的字段中输入&#x200B;**max(@created)**。 然后单击&#x200B;**[!UICONTROL Finish]**&#x200B;按钮。
+1. 在打开的窗口中，选择 **[!UICONTROL Data linked to the filtering dimension]** then **[!UICONTROL Filtering dimension data]**.
+1. 在 **[!UICONTROL Data to add]** 窗口中，添加一个列，该列将计算 **创建日期** 字段。 您可以使用表达式编辑器或输入 **max(@created)** 直接输入 **[!UICONTROL Expression]** 列。 然后，单击 **[!UICONTROL Finish]** 按钮。
 
    ![](assets/datamanagement_usecase_2.png)
 
@@ -50,11 +50,11 @@ ht-degree: 2%
 要将处理收件人的查询链接到执行聚合函数计算的查询，您必须使用架构编辑活动。
 
 1. 将收件人的查询定义为主集。
-1. 在&#x200B;**[!UICONTROL Links]**&#x200B;选项卡中，添加新链接并在按如下方式打开的窗口中输入信息：
+1. 在 **[!UICONTROL Links]** 选项卡，添加新链接并在打开的窗口中输入以下信息：
 
    * 选择与聚合相关的临时架构。 此架构的数据将添加到主集的成员中。
-   * 选择&#x200B;**[!UICONTROL Use a simple join]**&#x200B;将聚合结果链接到主集的每个收件人。
-   * 最后，指定该链接为&#x200B;**[!UICONTROL Type 11 simple link]**。
+   * 选择 **[!UICONTROL Use a simple join]** 将聚合结果链接到主集的每个收件人。
+   * 最后，指定链接为 **[!UICONTROL Type 11 simple link]**.
 
    ![](assets/datamanagement_usecase_3.png)
 
@@ -64,13 +64,13 @@ ht-degree: 2%
 
 建立链接后，聚合结果和收件人构成同一临时架构的一部分。 因此，可以在架构上创建过滤器，以比较收件人的创建日期和由聚合函数表示的最后一个已知创建日期。 此过滤器使用拆分活动执行。
 
-1. 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，选择&#x200B;**收件人**&#x200B;作为定向维度，选择&#x200B;**编辑架构**&#x200B;作为筛选维度（用于筛选集客过渡架构活动）。
-1. 在&#x200B;**[!UICONTROL subsets]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Add a filtering condition on the inbound population]**，然后单击&#x200B;**[!UICONTROL Edit...]**。
+1. 在 **[!UICONTROL General]** 选项卡，选择 **收件人** 作为定向维度和 **编辑架构** 作为筛选维度（用于筛选集客过渡架构活动）。
+1. 在 **[!UICONTROL subsets]** 选项卡，选择 **[!UICONTROL Add a filtering condition on the inbound population]** 然后单击 **[!UICONTROL Edit...]**.
 1. 使用表达式编辑器，在收件人的创建日期和由聚合计算的创建日期之间添加等同条件。
 
    数据库中的日期类型字段通常保存为毫秒。 因此，您必须将这些参数延长一天，以避免仅检索在毫秒内创建的收件人。
 
-   要实现此目的，请使用表达式编辑器中提供的&#x200B;**ToDate**&#x200B;函数，该函数可将日期和小时数转换为简单日期。
+   为此，请使用 **ToDate** 函数，表达式编辑器中提供，可将日期和小时数转换为简单日期。
 
    因此，要用于标准的表达式为：
 

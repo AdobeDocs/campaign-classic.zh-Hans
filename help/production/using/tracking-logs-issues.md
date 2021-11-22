@@ -19,15 +19,15 @@ ht-degree: 13%
 
 跟踪日志无法转发的原因有多种。 我们建议您查看以下信息：
 
-* **跟踪工****作流是否出错？**
+* **是否**&#x200B;跟踪&#x200B;**工作流有错误？**
 
-   请参阅[监控技术工作流](../../workflow/using/monitoring-technical-workflows.md)。
+   请参阅 [监控技术工作流](../../workflow/using/monitoring-technical-workflows.md).
 
    ![](assets/tracking_scheduled_task.png)
 
-* **服务器上****的模块trackinglogdrunning吗？**
+* **是模块** trackinglogd **服务器上运行？**
 
-   请参阅[日志文件](../../production/using/log-files.md)。
+   请参阅 [日志文件](../../production/using/log-files.md).
 
 * **是否进行了更改？**
 

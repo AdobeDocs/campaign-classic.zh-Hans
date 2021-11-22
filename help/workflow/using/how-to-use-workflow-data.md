@@ -25,27 +25,27 @@ ht-degree: 2%
 
 Adobe Campaign数据库和现有列表的数据可以使用两个专用活动进行更新：
 
-* **[!UICONTROL List update]**&#x200B;活动允许您将工作表存储在数据库中。
+* 的 **[!UICONTROL List update]** 活动允许您在数据库中存储工作表。
 
    您可以选择或创建现有列表。 在这种情况下，会计算名称，可能还会计算记录文件夹。
 
    ![](assets/s_user_create_list.png)
 
-   请参阅[列表更新](list-update.md)。
+   请参阅 [列表更新](list-update.md).
 
-* **[!UICONTROL Update data]**&#x200B;活动对数据库中的字段执行批量更新。
+* 的 **[!UICONTROL Update data]** 活动会批量更新数据库中的字段。
 
-   有关更多信息，请参阅[更新数据](update-data.md)。
+   有关更多信息，请参阅 [更新数据](update-data.md).
 
 ### 订阅/退订管理 {#subscription-unsubscription-management}
 
-要了解如何通过工作流为信息服务的收件人订阅和取消订阅，请参阅[订阅服务](subscription-services.md)。
+要了解如何通过工作流为信息服务的收件人订阅和取消订阅，请参阅 [订阅服务](subscription-services.md).
 
 ## 通过工作流发送 {#sending-via-a-workflow}
 
 ### 投放活动 {#delivery-activity}
 
-[Delivery](delivery.md)中详细介绍了投放活动。
+有关投放活动的详情，请参阅 [投放](delivery.md).
 
 ### 丰富和定位投放 {#enriching-and-targeting-deliveries}
 
@@ -59,12 +59,12 @@ Adobe Campaign数据库和现有列表的数据可以使用两个专用活动进
 
 ![](assets/s_advuser_using_additional_data.png)
 
-工作流表中包含的数据由其名称标识：它始终由&#x200B;**targetData**&#x200B;链接组成。 有关更多信息，请参阅[Target数据](data-life-cycle.md#target-data)。
+工作流表中包含的数据由其名称标识：它总是由 **targetData** 链接。 有关更多信息，请参阅 [目标数据](data-life-cycle.md#target-data).
 
 在电子邮件投放的框架中，个性化字段还可以使用在定位工作流阶段中执行的定位扩展中的数据，如以下示例所示：
 
 ![](assets/s_advuser_add_data_email.png)
 
-如果在定位活动中指定了段码，则该段码会添加到工作流表的特定列，并随个性化字段一起提供。 要显示所有个性化字段，请单击可通过个性化按钮访问的&#x200B;**[!UICONTROL Target extension > Other...]**&#x200B;链接。
+如果在定位活动中指定了段码，则该段码会添加到工作流表的特定列，并随个性化字段一起提供。 要显示所有个性化字段，请单击 **[!UICONTROL Target extension > Other...]** 可通过个性化按钮访问的链接。
 
 ![](assets/s_advuser_segment_code_select.png)

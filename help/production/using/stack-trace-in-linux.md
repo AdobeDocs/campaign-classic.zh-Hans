@@ -17,17 +17,17 @@ ht-degree: 11%
 
 ![](../../assets/v7-only.svg)
 
-**堆栈跟踪**&#x200B;表示包含在&#x200B;**核心**&#x200B;类型文件中的跟踪。 此文件在发生计算机错误时生成。 它可以识别错误的来源。
+A **堆栈跟踪** 表示 **核心** 键入文件。 此文件在发生计算机错误时生成。 它可以识别错误的来源。
 
 >[!NOTE]
 >
->* **core**&#x200B;文件名为&#x200B;**core.`<num>`**。
->* **gdb — 必须在** 计算机上安装GNU调试器。
+>* A **核心** 文件已命名 **核心。`<num>`**.
+>* **gdb - GNU调试器** 必须安装在计算机上。
 
 >
 
 
-Adobe Campaign技术支持人员可以要求您提供此&#x200B;**堆栈跟踪**。 要获取它，请在Linux中输入以下命令：
+Adobe Campaign技术支持可以要求您提供 **堆栈跟踪**. 要获取它，请在Linux中输入以下命令：
 
 ```
 su - neolane
@@ -56,7 +56,7 @@ gdb nlserver <coreFile>
 
 Adobe Campaign技术支持可能会要求您使用特定的可执行文件（由我们提供）来运行此命令。
 
-在这种情况下，只需将&#x200B;**nlserver**&#x200B;替换为Adobe Campaign提供的可执行文件即可运行以下命令：
+在这种情况下，只需通过将 **nlserver** Adobe Campaign提供的可执行文件：
 
 ```
 gdb nlserver <coreFile>

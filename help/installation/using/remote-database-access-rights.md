@@ -19,19 +19,19 @@ ht-degree: 1%
 
 首先，为了使用户能够通过FDA对外部数据库执行操作，后者必须在Adobe Campaign中具有特定的命名权限。
 
-1. 在Adobe Campaign资源管理器中选择&#x200B;**[!UICONTROL Administration > Access Management > Named Rights]**&#x200B;节点。
+1. 选择 **[!UICONTROL Administration > Access Management > Named Rights]** 节点。
 1. 通过指定所选标签创建新权限。
-1. **[!UICONTROL Name]**&#x200B;字段必须采用以下格式&#x200B;**user:base@server**，其中：
+1. 的 **[!UICONTROL Name]** 字段必须采用以下格式 **user:base@server**，其中：
 
-   * **** user对应于外部数据库中用户的名称。
-   * **** basecorresponse使用外部数据库的名称。
-   * **** 服务器与外部数据库服务器的名称相对应。
+   * **用户** 与外部数据库中用户的名称相对应。
+   * **基础** 与外部数据库的名称相对应。
+   * **服务器** 与外部数据库服务器的名称相对应。
 
       >[!NOTE]
       >
-      >**:base**&#x200B;部分在Oracle中是可选的。
+      >的 **:base** 部分在Oracle中是可选的。
 
-1. 保存命名的权限，然后将其链接到Adobe Campaign资源管理器的&#x200B;**[!UICONTROL Administration > Access Management > Operators]**&#x200B;节点中的选定用户。
+1. 保存已命名的权限，然后将其链接到 **[!UICONTROL Administration > Access Management > Operators]** Adobe Campaign资源管理器的节点。
 
 然后，要处理外部数据库中包含的数据，Adobe Campaign用户必须对数据库至少具有“写入”权限才能创建工作表。 这些内容将由Adobe Campaign自动删除。
 
@@ -39,11 +39,11 @@ ht-degree: 1%
 
 * **CONNECT**:连接到远程数据库，
 * **读取数据**:对包含客户数据的表的只读访问，
-* **阅读“MetaData**”：访问服务器数据目录以获取表结构，
+* **读取“MetaData”**:访问服务器数据目录以获取表结构，
 * **加载**:在工作表中批量加载（处理集合和联接时需要），
-* **为表/** 索引/ **过程/函数创建/删除** (仅适用于由Adobe Campaign生成的工作表)、
-* **说明** （推荐）：在出现问题时监控性能，
-* **写入数据** （取决于集成方案）。
+* **创建/删除** 表示 **表/索引/过程/函数** (仅适用于由Adobe Campaign生成的工作表)、
+* **解释** （推荐）：在出现问题时监控性能，
+* **写入数据** （具体取决于集成方案）。
 
 数据库管理员需要使这些权限与每个数据库引擎的特定权限相匹配。 有关更多信息，请参阅以下章节。
 

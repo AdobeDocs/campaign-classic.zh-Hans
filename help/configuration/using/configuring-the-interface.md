@@ -25,8 +25,8 @@ ht-degree: 2%
 
 Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数据库(nms:recipient)对话。 因此，需要更改此变量。
 
-1. 转到资源管理器的&#x200B;**[!UICONTROL Administration>Platform>Options]**&#x200B;节点。
-1. 使用与外部收件人表匹配的架构名称更改&#x200B;**Nms_DefaultRcpSchema**&#x200B;变量的值(在本例中为：cus:indival)。
+1. 转到 **[!UICONTROL Administration>Platform>Options]** 资源管理器的节点。
+1. 更改 **Nms_DefaultRcpSchema** 变量，其名称与外部收件人表匹配的架构(在本例中为：cus:indival)。
 1. 保存更改。
 
 ## 创建新表单 {#creating-a-new-form-}
@@ -37,15 +37,15 @@ Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数�
 >
 >表单的名称必须与其所关注架构的名称相同。
 
-1. 转到资源管理器的&#x200B;**Administration > Configuration > Input forms**&#x200B;节点。
-1. 创建新的&#x200B;**xtk:form**&#x200B;类型&#x200B;**form**&#x200B;文件。
+1. 转到 **管理>配置>输入表单** 资源管理器的节点。
+1. 新建 **xtk:form** type **表单** 文件。
 1. 根据表模板描述您需要的所有监视和字段。
 
    >[!NOTE]
    >
-   >要详细了解&#x200B;**form**&#x200B;类型文件，请参阅[此页面](../../configuration/using/identifying-a-form.md)。
+   >要了解有关 **表单** 类型文件，请参阅 [本页](../../configuration/using/identifying-a-form.md).
 
-   在我们当前的示例中，**form**&#x200B;文件必须基于&#x200B;**cus:indival**&#x200B;架构，因此具有以下布局：
+   在本例中， **表单** 文件必须基于 **cus：单个** 架构，因此具有以下布局：
 
    ```
    <container colspan="2">
@@ -64,15 +64,15 @@ Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数�
 
 ## 在导航层次结构中创建新类型的文件夹 {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
-1. 转到&#x200B;**[!UICONTROL Administration>Configuration>Navigation hierarchies]**&#x200B;节点。
-1. 创建新的&#x200B;**xtk:navtree**&#x200B;类型&#x200B;**navtree**&#x200B;文档。
+1. 转到 **[!UICONTROL Administration>Configuration>Navigation hierarchies]** 节点。
+1. 新建 **xtk:navtree** type **navtree** 文档。
 1. 根据表模板描述您需要的所有监视和字段。
 
    >[!NOTE]
    >
-   >有关&#x200B;**navtree**&#x200B;类型文件的更多信息，请参阅[此页面](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)。
+   >更多信息 **navtree** 类型文件，请参阅 [本页](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
-   在当前示例中， **navtree**&#x200B;文件必须基于&#x200B;**cus:indivaly**&#x200B;架构，因此具有以下形式：
+   在当前示例中， **navtree** 文件必须基于 **cus：单个** 架构，因此具有以下形式：
 
    ```
     <model name="root">

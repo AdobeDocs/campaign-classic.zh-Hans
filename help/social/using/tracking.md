@@ -19,14 +19,14 @@ ht-degree: 4%
 
 Social Marketing提供的报表允许您测量Facebook和Twitter投放的反应率，并分析获取Facebook用户档案的情况。 以下报表可供使用：
 
-* **[!UICONTROL Reactivity rate]**&#x200B;报表，可通过Facebook或Twitter投放的&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡获取。
+* 的 **[!UICONTROL Reactivity rate]** 报表，可通过 **[!UICONTROL Summary]** 选项卡。
 
    ![](assets/social_report_3.png)
 
-* **[!UICONTROL Reactivity rate]**&#x200B;报表，可通过Twitter或Facebook服务的&#x200B;**[!UICONTROL Dashboard]**&#x200B;选项卡获取。
+* 的 **[!UICONTROL Reactivity rate]** 报表，可通过 **[!UICONTROL Dashboard]** 选项卡。
 
    ![](assets/social_report_2.png)
 
-* **[!UICONTROL Fan acquisition]**&#x200B;报表，可通过Facebook服务的&#x200B;**[!UICONTROL Dashboard]**&#x200B;选项卡获取。
+* 的 **[!UICONTROL Fan acquisition]** 报表，可通过 **[!UICONTROL Dashboard]** 选项卡。
 
    ![](assets/social_report_1.png)

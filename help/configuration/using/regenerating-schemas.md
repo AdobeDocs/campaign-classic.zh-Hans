@@ -20,10 +20,10 @@ ht-degree: 7%
 修改架构并保存修改时，将自动生成扩展架构。 但是，您可能需要手动重新生成架构以应用修改。 操作步骤：
 
 1. 选择需要重新生成的架构。
-1. 右键单击并选择&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]** 。
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以确认并启动该进程。
+1. 右键单击并选择 **[!UICONTROL Actions > Regenerate selected schemas...]** .
+1. 单击 **[!UICONTROL OK]** 以确认并启动该进程。
 
-然后，您可以在预览和文档选项卡中检查生成的架构的结构。 有关更多信息，请参阅[原则](../../configuration/using/data-schemas.md#principles)一节。
+然后，您可以在预览和文档选项卡中检查生成的架构的结构。 有关更多信息，请参阅 [原则](../../configuration/using/data-schemas.md#principles) 中。
 
 >[!NOTE]
 >

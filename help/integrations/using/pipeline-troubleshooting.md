@@ -16,17 +16,17 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-**管道化失败，出现错误“没有任务与掩码管道@&lt;>对应”**
+**管道化失败，出现错误“没有任务与掩码管道化@&lt;实例>相对应”**
 
 您的Adobe Campaign Classic版本不支持管道。
 
-1. 检查配置文件中是否存在[!DNL pipelined]元素。 如果不支持，则表示不支持。
-1. 升级到Campaign 20.3或[!DNL Gold Standard] 11。
+1. 检查 [!DNL pipelined] 元素存在于配置文件中。 如果不支持，则表示不支持。
+1. 升级到Campaign 20.3或 [!DNL Gold Standard] 11.
 
-**管道失败，出现“ aurait duly commencer par  `[` ou( `{` iRc=16384)”**
+**使用“ aurait duty commencer par管道失败 `[` 欧 `{` (iRc=16384)”**
 
-未设置&#x200B;**NmsPipeline_Config**选项。 这实际上是JSON解析错误。
-在选项**NmsPipeline_Config**&#x200B;中设置JSON配置。 请参阅此页面中的“路由选项”。
+的 **NmsPipeline_Config** 选项。 这实际上是JSON解析错误。
+在选项中设置JSON配置 **NmsPipeline_Config**. 请参阅此页面中的“路由选项”。
 
 **管道化失败，出现“主体必须是有效的组织或客户”**
 
@@ -42,9 +42,9 @@ ht-degree: 1%
 
 1. 检查是否已设置authPrivateKey。
 1. 检查authPrivateKey:以@开头，以=结尾，大约长4000个字符。
-1. 查找原始密钥，并确认其为：在RSA格式中，长4096位，以`-----BEGIN RSA PRIVATE KEY-----`开头。
+1. 查找原始密钥，并确认其为：以RSA格式，长4096位，开头为 `-----BEGIN RSA PRIVATE KEY-----`.
    <br> 如有必要，请重新创建密钥，并在Adobe Analytics上注册。
-1. 检查键是否在与[!DNL pipelined]相同的实例内进行编码。 <br>如有必要，请使用示例JavaScript或工作流重做编码。
+1. 检查键是否在与 [!DNL pipelined]. <br>如有必要，请使用示例JavaScript或工作流重做编码。
 
 **管道化失败，“身份验证期间无法读取令牌”**
 
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 1. 在此页面上运行密钥加密步骤。
 1. 检查密钥是否在同一实例上加密。
-1. 检查配置文件中的authPrivateKey是否与生成的密钥匹配。 <br>确保使用OpenSSL生成密钥对。例如，PuttyGen不生成正确的格式。
+1. 检查配置文件中的authPrivateKey是否与生成的密钥匹配。 <br>确保使用OpenSSL生成密钥对。 例如，PuttyGen不生成正确的格式。
 
 **管道化失败，其中“不再允许获取访问令牌”**
 
@@ -67,17 +67,17 @@ ht-degree: 1%
 2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
 ```
 
-此错误消息表示身份验证是使用旧版Omniture基本OAuth配置的。 请参阅[为Adobe Experience Cloud Triggers配置Adobe I/O](../../integrations/using/configuring-adobe-io.md)文档，以升级您的身份验证。
+此错误消息表示身份验证是使用旧版Omniture基本OAuth配置的。 请参阅 [为Adobe Experience Cloud Triggers配置Adobe I/O](../../integrations/using/configuring-adobe-io.md) 文档以升级您的身份验证。
 
 **不会检索任何触发器**
 
-当[!DNL pipelined]进程运行且未检索任何触发器时：
+当 [!DNL pipelined] 进程正在运行，且未检索任何触发器：
 
 1. 确保触发器在Analytics中处于活动状态，并且正在生成事件。
-1. 确保[!DNL pipelined]进程正在运行。
-1. 在[!DNL pipelined]日志中查找错误。
-1. 在[!DNL pipelined]状态页面中查找错误。 触发器丢弃，触发器失败应为零。
-1. 检查触发器名称是否在&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;选项中配置。 如有疑问，请使用通配符选项。
+1. 确保 [!DNL pipelined] 进程正在运行。
+1. 在 [!DNL pipelined] 日志。
+1. 在 [!DNL pipelined] 状态页面。 触发器丢弃，触发器失败应为零。
+1. 检查是否在 **[!UICONTROL NmsPipeline_Config]** 选项。 如有疑问，请使用通配符选项。
 1. 检查Analytics是否具有活动触发器并正在生成事件。 在Analytics中进行配置后，可能会延迟几个小时，才会激活配置。
 
 **事件未与客户关联**
@@ -95,9 +95,9 @@ ht-degree: 1%
 
 通常，触发器可能需要15-90分钟才能启动营销活动。 这会因数据收集的实施、管道的加载、定义触发器的自定义配置以及Adobe Campaign中的工作流而异。
 
-1. 检查[!DNL pipelined]进程是否正在运行。
+1. 检查 [!DNL pipelined] 进程正在运行。
 1. 在pipelined.log中查找可能导致重试的错误。 修复错误（如果适用）。
-1. 检查[!DNL pipelined]状态页以了解队列大小。 如果队列大小较大，请提高JS的性能。
+1. 检查 [!DNL pipelined] “队列大小”的“状态”页。 如果队列大小较大，请提高JS的性能。
 1. 由于延迟似乎随卷而增加，因此在Analytics上使用较少的消息配置触发器。
 
 **将阶段实例从旧版身份验证升级到AdobeIO身份验证**

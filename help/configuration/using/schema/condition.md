@@ -41,11 +41,11 @@ ht-degree: 8%
 
 ## 使用和使用上下文 {#use-and-context-of-use-2}
 
-一个`<sysfiler>`元素可以包含多个筛选条件。
+一个 `<sysfiler>`  元素可以包含多个筛选条件。
 
 ## 属性描述 {#attribute-description-2}
 
-* **boolOperator（字符串）**:如果在同 `<conditions>` 一元素中定义了多  `<sysfilter>` 个元素，则通过此属性可以合并它们。默认情况下，`<condition>`元素之间的逻辑链接为“AND”。 “@boolOperator”属性允许您组合“OR”和“AND”类型链接。
+* **boolOperator（字符串）**:若数 `<conditions>` 在同一  `<sysfilter>` 元素，此属性允许您组合它们。 默认情况下，逻辑链接位于 `<condition>` 元素为“AND”。 “@boolOperator”属性允许您组合“OR”和“AND”类型链接。
 * **enabledIf（字符串）**:条件激活测试。
 * **expr（字符串）**:XTK表达式。
 

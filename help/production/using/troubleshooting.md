@@ -21,10 +21,10 @@ ht-degree: 18%
 
 ## 常见问题和一般问题 {#common-and-general-issues}
 
-* 此[page](../../production/using/modules-and-frequent-issues.md)显示列出的模块遇到的最常见问题。
-* 此[页面](../../production/using/workflow-execution.md)列出了在遇到工作流执行问题时应遵循的常见疑难解答过程。
-* 此[页](../../production/using/lost-password.md)详细说明了如何更改或恢复丢失的密码。
-* 此[页面](../../production/using/console-update.md)将详细介绍在您停用相应选项时如何重新激活控制台更新请求。
+* 此 [页面](../../production/using/modules-and-frequent-issues.md) 显示列出的模块中遇到的最常见问题。
+* 此 [页面](../../production/using/workflow-execution.md) 列出了在遇到工作流执行问题时应遵循的常见疑难解答过程。
+* 此 [页面](../../production/using/lost-password.md) 详细说明如何更改或恢复丢失的密码。
+* 此 [页面](../../production/using/console-update.md) 详细介绍在停用相应选项时如何重新激活控制台更新请求。
 
 ## 投放疑难解答 {#delivery-troubleshooting}
 
@@ -32,7 +32,7 @@ ht-degree: 18%
 * [投放能力问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [图像显示问题](../../production/using/image-display-issues.md)
 * [缺少图像](../../production/using/images-missing.md)
-* [临时文件问题](../../production/using/temporary-files.md) (*仅限内部部署托管模型*)
+* [临时文件问题](../../production/using/temporary-files.md) (*仅内部部署托管模型*)
 
 **相关主题**：
 

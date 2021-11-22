@@ -63,7 +63,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关更多信息，请参阅此](../../platform/using/adobe-campaign-workspace.md#date-and-time)章节[。
 
-有关如何创建实例的更多信息，请参阅此[page](../../installation/using/creating-an-instance-and-logging-on.md)。
+有关如何创建实例的更多信息，请参阅此 [页面](../../installation/using/creating-an-instance-and-logging-on.md).
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 每项功能都包含一套基于工作任务相关需求及使用情境的功能。例如，**[!UICONTROL Profiles and targets]** 链接可用于访问收件人列表、订阅服务、现有的定位工作流，以及创建这些元素的快捷方式。
 
-可通过&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;界面左侧的&#x200B;**[!UICONTROL Lists]**&#x200B;链接访问这些列表。
+列表可通过 **[!UICONTROL Lists]** 链接 **[!UICONTROL Profiles and Targets]** 界面。
 
 ![](assets/recipient_list_overview.png)
 
@@ -99,7 +99,7 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 通过每个核心功能部分可以浏览各种可用的元素。要执行此操作，可使用 **[!UICONTROL Browsing]** 部分中的快捷方式。**[!UICONTROL Other choices]** 链接可用于访问其他所有页面，无论工作环境如何。
 
-您可以创建新元素（投放、Web应用程序、工作流等） 使用屏幕左侧&#x200B;**[!UICONTROL Create]**&#x200B;部分中的快捷键。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
+您可以创建新元素（投放、Web应用程序、工作流等） 使用 **[!UICONTROL Create]** 中，将其添加到Advertising Cloud中。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
 
 例如，在投放页面上，使用 **[!UICONTROL Create]** 按钮创建新的投放。
 
@@ -153,7 +153,7 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
 
 >[!NOTE]
 >
->管理员通过 **[!UICONTROL Administration > Platform > Enumerations]** 部分管理枚举（也称为“分项列表”）。有关更多信息，请参见[管理枚举](../../platform/using/managing-enumerations.md)。
+>管理员通过 **[!UICONTROL Administration > Platform > Enumerations]** 部分管理枚举（也称为“分项列表”）。有关更多信息，请参阅 [管理枚举](../../platform/using/managing-enumerations.md).
 
 ### 默认单位 {#default-units}
 
@@ -172,4 +172,4 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-其他Campaign Classic操作方法视频可在[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)获取。
+提供了其他Campaign Classic操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).

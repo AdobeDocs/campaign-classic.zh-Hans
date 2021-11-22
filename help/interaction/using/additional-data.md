@@ -19,15 +19,15 @@ ht-degree: 0%
 
 在调用交互引擎期间，您可以传输上下文附加信息。 此数据可以来自存储在工作流（出站渠道）工作表中的目标数据，或来自网站在调用（入站渠道）期间发送的调用数据。 您可以在资格规则中和选件个性化中使用此附加数据，还可以将其存储在建议表格中。
 
-对于集客渠道，例如恢复咨询选件的人员的浏览器语言或呼叫中心代理的名称等信息可能非常有用。 然后，您可以在资格规则中使用此调用数据，以便仅向那些使用法语或英语查看网页的用户展示选件。
+对于入站渠道，例如，恢复咨询选件的人员的浏览器语言或呼叫中心代理的名称等信息可能非常有用。 然后，您可以在资格规则中使用此调用数据，以便仅向那些使用法语或英语查看网页的用户展示选件。
 
 在定位工作流（出站渠道）中，您可以在调用引擎期间使用定位数据。 例如，您可以通过FDA使用收件人链接的交易或外部数据库中的数据扩充目标。
 
 ## 其他数据配置 {#additional-data-configuration}
 
-您必须扩展链接到环境的&#x200B;**nms:interaction**&#x200B;模式，并声明将在调用交互引擎期间使用的附加字段列表。 创建资格规则或个性化选件时，这些字段将可从&#x200B;**Interaction**&#x200B;节点访问（请参阅[Using adtical data](#using-additional-data)）。
+您必须将 **nms:interaction** 链接到环境的架构，并声明将在调用交互引擎期间使用的其他字段列表。 创建资格规则或个性化选件时，这些字段将从 **互动** 节点(请参阅 [使用其他数据](#using-additional-data))。
 
-对于集客渠道，必须将调用数据字段添加到&#x200B;**Interaction**&#x200B;节点中。
+对于集客渠道，必须将调用数据字段添加到 **互动** 节点。
 
 ```
 <element label="Interactions" labelSingular="Interaction" name="interaction">
@@ -39,7 +39,7 @@ ht-degree: 0%
 >
 >集客渠道支持XML集合，但指向其他架构的链接则不支持。
 
-对于出站渠道，必须将包含附加字段的&#x200B;**targetData**&#x200B;元素添加到&#x200B;**Interaction**&#x200B;节点中。
+对于出站渠道，必须添加 **targetData** 包含附加字段的元素 **互动** 节点。
 
 ```
 <element label="Interactions" labelSingular="Interaction" name="interaction">
@@ -53,7 +53,7 @@ ht-degree: 0%
 >
 >出站渠道不支持集合。 但是，您可以创建指向其他架构的链接。
 
-如果要在建议表中存储此数据，则还必须扩展&#x200B;**nms:compositionRcp**&#x200B;架构并声明这些字段。
+如果要在建议表中存储此数据，则还必须扩展 **nms:campationRcp** 架构并声明这些字段。
 
 ```
 <element label="Recipient offer propositions" labelSingular="Recipient offer proposition" name="propositionRcp">
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ### 输入渠道（网页） {#input-channel--web-page-}
 
-要在调用引擎时传输其他数据，必须将&#x200B;**interactionGlobalCtx**&#x200B;变量添加到网页的JavaScript代码中。 将包含调用数据的&#x200B;**Interaction**&#x200B;节点插入此变量。 您必须遵循&#x200B;**nms:interaction**&#x200B;模式中的相同xml结构。 请参阅：[其他数据配置](#additional-data-configuration)。
+要在调用引擎时传输其他数据，您必须添加 **interactionGlobalCtx** 变量。 插入 **互动** 包含此变量中调用数据的节点。 必须遵循 **nms:interaction** 架构。 请参阅： [其他数据配置](#additional-data-configuration).
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
@@ -74,7 +74,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### 输出通道 {#output-channel}
 
-您必须创建一个定向工作流，通过遵循与&#x200B;**nms:interaction**&#x200B;架构中相同的xml结构和相同的内部名称来加载工作表中的附加数据。 请参阅：[其他数据配置](#additional-data-configuration)。
+您必须创建一个定向工作流，通过遵循与 **nms:interaction** 架构。 请参阅： [其他数据配置](#additional-data-configuration).
 
 ## 使用其他数据 {#using-additional-data}
 
@@ -88,7 +88,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 >[!NOTE]
 >
->您必须在定义数据的渠道上限制规则。 在本例中，我们将限制入站Web渠道（**[!UICONTROL Taken into account if]**&#x200B;字段）上的规则。
+>您必须在定义数据的渠道上限制规则。 在本例中，我们将限制入站Web渠道(**[!UICONTROL Taken into account if]** 字段。
 
 ### 个性化 {#personalization}
 
@@ -100,11 +100,11 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 >
 >您必须对定义数据的渠道限制个性化。 在本例中，我们将限制入站Web渠道上的规则。
 
-如果您使用附加数据对选件进行了个性化，则默认情况下，此数据不会显示在预览中，因为它不在数据库中。 在环境的&#x200B;**[!UICONTROL Example of call data]**&#x200B;选项卡中，必须添加值示例才能在预览中使用。 请遵循&#x200B;**nms:interaction**&#x200B;模式扩展中的相同xml结构。 有关更多信息，请参阅[其他数据配置](#additional-data-configuration)。
+如果您使用附加数据对选件进行了个性化，则默认情况下，此数据不会显示在预览中，因为它不在数据库中。 在环境中 **[!UICONTROL Example of call data]** 选项卡，则必须添加值示例才能在预览中使用。 请遵循与 **nms:interaction** 模式扩展。 有关更多信息，请参阅 [其他数据配置](#additional-data-configuration).
 
 ![](assets/ita_calldata_preview.png)
 
-预览时，单击&#x200B;**[!UICONTROL Content personalization options for the preview]**&#x200B;并在&#x200B;**[!UICONTROL Call data]**&#x200B;字段中选择一个值。
+预览时，单击 **[!UICONTROL Content personalization options for the preview]** 并在 **[!UICONTROL Call data]** 字段。
 
 ![](assets/ita_calldata_preview2.png)
 
@@ -114,11 +114,11 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 >[!NOTE]
 >
->您必须扩展了&#x200B;**nms:compationRcp**&#x200B;模式并声明了将包含要存储的数据的字段。 有关此内容的更多信息：[其他数据配置](#additional-data-configuration)。
+>您必须已将 **nms:campationRcp** 架构，并声明了将包含要存储的数据的字段。 有关此内容的更多信息： [其他数据配置](#additional-data-configuration).
 
-在选件空间中，转到&#x200B;**[!UICONTROL Storage]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
+在选件空间中，转到 **[!UICONTROL Storage]** ，然后单击 **[!UICONTROL Add]** 按钮。
 
-在&#x200B;**[!UICONTROL Storage path]**&#x200B;列中，选择命题表中的存储字段。 在&#x200B;**[!UICONTROL Expression]**&#x200B;列中，选择&#x200B;**[!UICONTROL Interaction]**&#x200B;节点中的附加字段。
+在 **[!UICONTROL Storage path]** 列中，选择命题表格中的存储字段。 在 **[!UICONTROL Expression]** 列中，选择 **[!UICONTROL Interaction]** 节点。
 
 在生成建议或接受建议时（当用户点击选件时），您可以检索呼叫数据。
 

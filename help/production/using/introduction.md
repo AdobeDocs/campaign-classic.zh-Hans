@@ -42,7 +42,7 @@ Adobe Campaign基于在服务器端执行的多个进程，您在更新期间需
 
 >[!NOTE]
 >
->有关各种Adobe Campaign进程的更多信息，请参阅[此部分](../../installation/using/general-architecture.md#logical-application-layer)。\
+>有关各种Adobe Campaign流程的更多信息，请参阅 [此部分](../../installation/using/general-architecture.md#logical-application-layer).\
 >使用Power Booster或Power Cluster类型体系结构时，必须将此过程应用于所有Power Booster/Cluster服务器。
 
 如果新版本涉及更改数据库结构，我们建议按以下顺序重新启动服务器：

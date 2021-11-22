@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-以下部分详细介绍从v6.02迁移时需要的其他配置。您还应该配置[常规配置](../../migration/using/general-configurations.md)部分中详述的设置。
+以下部分详细介绍了从v6.02迁移时需要的其他配置。您还应在 [一般配置](../../migration/using/general-configurations.md) 中。
 
 ## Web 应用程序 {#web-applications}
 
@@ -37,13 +37,13 @@ ht-degree: 3%
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-如果您已修改这些Web应用程序并希望继续在v7中使用它们，则必须在不同的安全区中激活&#x200B;**allowSQLIncompent**&#x200B;选项，然后重新启动后期升级。 有关更多信息，请参阅[SQLData](../../migration/using/general-configurations.md#sqldata)一节。
+如果您已修改这些Web应用程序并希望继续在v7中使用它们，则必须激活 **allowSQLInjent** 选项，然后重新启动升级后。 请参阅 [SQLData](../../migration/using/general-configurations.md#sqldata) 的详细信息。
 
 ## 用户友好：主页和导航 {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
->如果要继续使用v6.02 overview-type Web应用程序，则必须在升级后之前，在不同的安全区中激活&#x200B;**allowSQLIncompent**&#x200B;选项。 请参阅[Web应用程序](#web-applications)。
+>如果要继续使用v6.02概述类型的Web应用程序，则必须激活 **allowSQLInjent** 选项。 请参阅 [Web应用程序](#web-applications).
 
 从版本6.02迁移后，Adobe Campaign v6.02主页不再显示，但仍然可以访问且与Adobe Campaign v7兼容。
 
@@ -51,9 +51,9 @@ Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/
 
 为此，请导入兼容包：
 
-单击&#x200B;**[!UICONTROL Tools > Advanced > Import package]**，然后选择&#x200B;**`\nl\datakit\nms\[Your language]\package\optional`**&#x200B;中的&#x200B;**campaignMigration.xml**&#x200B;包。
+单击 **[!UICONTROL Tools > Advanced > Import package]** 然后选择 **campaignMigration.xml** 包 **`\nl\datakit\nms\[Your language]\package\optional`**.
 
-要允许访问v6.02 Web应用程序类型接口，必须在&#x200B;**serverConf.xml**&#x200B;文件中激活&#x200B;**sessionTokenOnly**&#x200B;服务器配置选项：
+要允许访问v6.02 Web应用程序类型的界面，请 **sessionTokenOnly** 必须在 **serverConf.xml** 文件：
 
 ```
 sessionTokenOnly="true"
@@ -65,7 +65,7 @@ sessionTokenOnly="true"
 
 ![](assets/dashboards.png)
 
-除列表（**[!UICONTROL operation list]**、**[!UICONTROL delivery tracking in operations]**&#x200B;等）外，此主页上的所有链接都链接到v7屏幕 链接到v6.02概述（web应用程序）。
+此主页上的所有链接均链接至v7屏幕，但列表除外(**[!UICONTROL operation list]**, **[!UICONTROL delivery tracking in operations]**&#x200B;等) 链接到v6.02概述（web应用程序）。
 
 ![](assets/dashboards2.png)
 
@@ -79,4 +79,4 @@ sessionTokenOnly="true"
 
 迁移消息中心控制实例后，必须重新发布事务型消息模板才能使用。
 
-在v7中，执行实例上事务型消息模板的名称已发生更改。 它们当前由与创建它们的控制实例对应的运算符名称前缀，例如&#x200B;**control1_template1_rt**（其中&#x200B;**control1**&#x200B;是运算符的名称）。 如果您有大量模板，我们建议在控制实例中删除旧模板。
+在v7中，执行实例上事务型消息模板的名称已发生更改。 它们当前由与在其上创建它们的控制实例对应的运算符名称来前缀，例如 **control1_template1_rt** (其中 **control1** 是运算符的名称)。 如果您有大量模板，我们建议在控制实例中删除旧模板。

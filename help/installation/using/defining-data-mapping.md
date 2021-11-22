@@ -35,7 +35,7 @@ Adobe Campaign允许您定义外部表中数据的映射。
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   您可以选择是存储包含消息的排除项(**excludelog**)(**broadlog**)，还是存储在单独的表中。
+   您可以选择是否存储排除项(**排除日志**)，带消息(**broadlog**)或在单独的表中。
 
    您还可以选择是否管理此投放映射的跟踪(**trackinglog**)。
 
@@ -43,4 +43,4 @@ Adobe Campaign允许您定义外部表中数据的映射。
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮以启动投放映射创建：所有链接的表都会根据所选参数自动创建。
+   单击 **[!UICONTROL Save]** 用于启动投放映射创建的按钮：所有链接的表都会根据所选参数自动创建。

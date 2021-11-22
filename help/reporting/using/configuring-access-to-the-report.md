@@ -19,21 +19,21 @@ ht-degree: 1%
 
 ## 报表显示上下文 {#report-display-context}
 
-使用&#x200B;**[!UICONTROL Display]**&#x200B;选项卡定义Adobe Campaign平台中报表的显示上下文。 报表的访问权限取决于其选择类型、显示条件和访问权限。
+在Adobe Campaign平台中，使用 **[!UICONTROL Display]** 选项卡。 报表的访问权限取决于其选择类型、显示条件和访问权限。
 
 ### 选择类型 {#selection-type}
 
-对报表的访问权限可以限制为特定的上下文或选件空间，例如投放、收件人、选择的收件人等。 此访问在&#x200B;**[!UICONTROL Display]**&#x200B;选项卡的&#x200B;**[!UICONTROL Selection type]**&#x200B;部分中配置。
+对报表的访问权限可以限制为特定的上下文或选件空间，例如投放、收件人、选择的收件人等。 此访问权限在 **[!UICONTROL Selection type]** 部分 **[!UICONTROL Display]** 选项卡。
 
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
 * **[!UICONTROL Single selection]** :仅当选择特定实体时，才可访问报表。
 * **[!UICONTROL Multiple selection]** :选择多个实体后，将访问报告。
-* **[!UICONTROL Global]** :可通过选项卡中的可用报表列表访问该 **[!UICONTROL Reports]** 报表。
+* **[!UICONTROL Global]** :可通过 **[!UICONTROL Reports]** 选项卡。
 
 ### 显示序列 {#display-sequence}
 
-**[!UICONTROL Sequence]**&#x200B;字段允许您输入一个数值，用于指定报表在列表中的显示顺序。
+的 **[!UICONTROL Sequence]** 字段中，您可以输入一个数字值，以指定列表中报表的显示顺序。
 
 默认情况下，报表按相关性显示：在此字段中输入的值允许您将报表从最高值（最高值）排序到最低值（最小值）相关。
 
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 可以与其他运算符共享该报表。
 
-要使报表可访问，请选择&#x200B;**[!UICONTROL Report shared with other operators]**&#x200B;选项。 如果未选择此选项，则只有创建报表的操作员才能访问报表。
+要使报表可访问，请选择 **[!UICONTROL Report shared with other operators]** 选项。 如果未选择此选项，则只有创建报表的操作员才能访问报表。
 
 还可以与通过授权窗口添加的特定操作员或操作员组共享报表。
 
@@ -63,7 +63,7 @@ ht-degree: 1%
 
 ### 定义筛选选项 {#defining-the-filtering-options}
 
-**[!UICONTROL Reports]**&#x200B;选项卡显示平台中所有可用的报表，连接的操作员对这些报表具有访问权限。
+的 **[!UICONTROL Reports]** 选项卡显示平台中所有可用的报表，连接的操作员对这些报表具有访问权限。
 
 默认情况下，这些过滤器按相关性排序，但您可以应用其他类型的过滤器：按字母顺序、年龄等
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 ![](assets/report_ovv_select_type.png)
 
-要定义报表的类别，请通过&#x200B;**[!UICONTROL Display]**&#x200B;选项卡选择报表，如下所示：
+要定义报表的类别，请通过 **[!UICONTROL Display]** 选项卡，如下所示：
 
 ![](assets/report_select_category.png)
 
@@ -83,11 +83,11 @@ ht-degree: 1%
 
 例如，我们将创建一个指向报表的链接，以便通过收件人列表访问该报表。
 
-1. 单击&#x200B;**[!UICONTROL New]**，然后在报表创建向导中选择&#x200B;**[!UICONTROL Create a link to an existing report]**。
+1. 单击 **[!UICONTROL New]** 选择 **[!UICONTROL Create a link to an existing report]** 中。
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
-1. 从下拉列表中选择要创建链接的报表。 在本例中，我们将选择&#x200B;**按国家/地区**&#x200B;划分报表。
+1. 从下拉列表中选择要创建链接的报表。 在本例中，我们将选择 **按国家/地区划分** 报表。
 
    ![](assets/s_ncs_advuser_report_wizard_link_02.png)
 
@@ -103,36 +103,36 @@ ht-degree: 1%
    ![](assets/s_ncs_advuser_report_wizard_link_04.png)
 
 1. 发布报表。
-1. 转到收件人列表之一，然后单击&#x200B;**[!UICONTROL Reports]**&#x200B;链接：您可以访问刚刚创建的报表。
+1. 转到收件人列表之一，然后单击 **[!UICONTROL Reports]** 链接：您可以访问刚刚创建的报表。
 
    ![](assets/s_ncs_advuser_report_wizard_link_05.png)
 
 ## 报表预览 {#preview-of-the-report}
 
-在发布报表之前，请确保该报表正确显示在&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡中。
+在发布报表之前，请确保在 **[!UICONTROL Preview]** 选项卡。
 
 ![](assets/s_ncs_advuser_report_preview_01.png)
 
-要显示报表的预览，请选择&#x200B;**[!UICONTROL Global]**&#x200B;或&#x200B;**[!UICONTROL Selection]**&#x200B;选项。
+要显示报表的预览，请选择 **[!UICONTROL Global]** 或 **[!UICONTROL Selection]** 选项。
 
-这两个选项是根据报表的显示设置选择的。 如果显示设置为&#x200B;**[!UICONTROL Global]**，则需要选择&#x200B;**[!UICONTROL Global]**&#x200B;预览选项。 如果显示设置为&#x200B;**[!UICONTROL Single selection]**&#x200B;或&#x200B;**[!UICONTROL Multiple selection]**，则必须选择&#x200B;**[!UICONTROL Selection]**&#x200B;预览选项。
+这两个选项是根据报表的显示设置选择的。 如果显示设置为 **[!UICONTROL Global]**，您需要选择 **[!UICONTROL Global]** 预览选项。 如果显示设置为 **[!UICONTROL Single selection]** 或 **[!UICONTROL Multiple selection]**, **[!UICONTROL Selection]** 必须选择预览选项。
 
-有关更多信息，请参阅[报表显示上下文](#report-display-context)。
+有关更多信息，请参阅 [报表显示上下文](#report-display-context).
 
-通过特定设置，您可以控制错误。 **_uuid**&#x200B;设置位于报表的URL中。 您可以向其添加&#x200B;**&amp;_preview**&#x200B;或&#x200B;**&amp;_debug**&#x200B;设置。
+通过特定设置，您可以控制错误。 的 **_uuid** 设置。 您可以将 **&amp;_preview** 或 **&amp;_debug** 设置。
 
-要了解有关这些设置的更多信息，请参阅[Web窗体](../../web/using/about-web-forms.md)章节的&#x200B;**定义Web窗体属性**&#x200B;部分。
+要了解有关这些设置的更多信息，请参阅 **定义Web窗体属性** 部分 [Web窗体](../../web/using/about-web-forms.md) 章节。
 
 ## 发布报表 {#publishing-the-report}
 
-必须发布报表，才能与其他运算符共享并在可用报表列表中显示它们（另请参阅[报表显示上下文](#report-display-context)）。 每次更改报表时，必须再次执行此操作。
+必须发布报表，才能与其他运算符共享并在可用报表列表中显示它们(另请参阅 [报表显示上下文](#report-display-context))。 每次更改报表时，必须再次执行此操作。
 
-1. 单击工具栏中的&#x200B;**[!UICONTROL Publish]**&#x200B;以打开发布向导。
+1. 通过单击 **[!UICONTROL Publish]** 中。
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 
-1. 单击&#x200B;**[!UICONTROL Start]**&#x200B;以发布。
+1. 单击 **[!UICONTROL Start]** 。
 
    ![](assets/s_ncs_advuser_report_publish_02.png)
 
-1. 单击&#x200B;**[!UICONTROL Enlarge]**&#x200B;图标以在Web浏览器中打开报表。
+1. 单击 **[!UICONTROL Enlarge]** 图标以在Web浏览器中打开报表。

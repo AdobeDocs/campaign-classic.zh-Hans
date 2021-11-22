@@ -37,10 +37,10 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> 列表<br /> </td> 
-   <td> audience<br /> </td> 
+   <td> 受众<br /> </td> 
   </tr> 
   <tr> 
-   <td> 营销活动工作流，定位工作流<br /> </td> 
+   <td> 活动工作流，定位工作流<br /> </td> 
    <td> 工作流<br /> </td> 
   </tr> 
   <tr> 
@@ -74,31 +74,31 @@ ht-degree: 0%
 
    默认情况下， nms:recipient表中的20个字段会与Campaign Standard同步。 请参阅同步字段的详细列表。 您需要在Campaign Standard中检索的任何其他字段都必须由您的顾问进行映射和配置。
 
-   要确保要使用的字段可用，您可以检查&#x200B;**[!UICONTROL Administration > Development > Diagnosis > Data schemas]**&#x200B;中的配置文件资源定义。
+   要确保要使用的字段可用，您可以检查 **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
 
    此外，默认情况下，附加到收件人并存储在与nms:recipients相关的表中的所有数据都不会同步到Campaign Standard。
 
-   为了仍能使用相关数据，您可以在Campaign v7中执行定位并添加其他数据（如[同步受众](../../integrations/using/synchronizing-audiences.md)一节中所述），也可以咨询您的顾问以探索自定义的可能性。
+   为了仍然能够使用相关数据，您可以在Campaign v7中执行定位，并添加其他数据，如 [同步受众](../../integrations/using/synchronizing-audiences.md) 部分，或者您可以咨询顾问以探索自定义可能性。
 
 * **我在Campaign v7中使用的是除默认nms:recipient之外的其他用户档案维度，如何将它们与Campaign Standard同步？**
 
-   Campaign Standard使用名为&#x200B;**profiles**&#x200B;的唯一定位资源。 “Campaign Standard连接”功能的基本实施在Campaign v7收件人和Campaign Standard配置文件之间提供了默认映射。
+   Campaign Standard使用唯一定位资源，该资源名为 **用户档案**. “Campaign Standard连接”功能的基本实施在Campaign v7收件人和Campaign Standard配置文件之间提供了默认映射。
 
    如果您在Campaign v7中使用其他用户档案维度，或者如果您使用多个用户档案维度，则所有用户档案都必须映射到Campaign Standard用户档案。 请咨询您的顾问，以满足此特殊需求。
 
-* **我想通过工作流与Campaign Standard共享用户档案列表，但无法在Campaign Standard中找到我的受众**。
+* **我想通过工作流与Campaign Standard共享用户档案列表，但无法在Campaign Standard中找到我的受众**.
 
-   可以在&#x200B;**[!UICONTROL Audiences]**&#x200B;菜单的Campaign Standard中找到受众。 它们的标签在您的Campaign v7工作流的&#x200B;**[!UICONTROL List update]**&#x200B;活动中指定。 这些文件夹受实施期间定义的文件夹映射的约束。
+   受众可在 **[!UICONTROL Audiences]** 菜单Campaign Standard。 它们在 **[!UICONTROL List update]** 活动。 这些文件夹受实施期间定义的文件夹映射的约束。
 
-   首先需要检查的是工作流是否已完成且没有错误。 如果您在&#x200B;**[!UICONTROL List update]**&#x200B;活动中发现错误，则表示与Campaign Standard的同步可能失败。 要查看有关问题的更多详细信息，请转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**。 此文件夹包含由&#x200B;**[!UICONTROL List update]**&#x200B;活动执行触发的同步工作流。
+   首先需要检查的是工作流是否已完成且没有错误。 如果您发现 **[!UICONTROL List update]** 活动，则表示与Campaign Standard的同步可能失败。 要查看有关错误情况的更多详细信息，请转到 **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. 此文件夹包含由 **[!UICONTROL List update]** 活动执行。
 
-   此外，请确保在&#x200B;**[!UICONTROL List update]**&#x200B;活动中勾选了&#x200B;**[!UICONTROL Share with ACS]**&#x200B;选项，并且工作流已正确执行。
+   另外，请确保 **[!UICONTROL Share with ACS]** 选项 **[!UICONTROL List update]** 活动，且工作流已正确执行。
 
    请注意，列表中包含的收件人用户档案必须已在执行工作流之前与Campaign Standard同步。 与Campaign Standard共享后，列表的收件人将与Campaign Standard用户档案进行协调，这意味着他们必须存在于该位置。 列表中无法与Campaign Standard中的用户档案协调的收件人将被忽略。
 
    如果您共享由用户档案构成的列表，并且没有与Campaign Standard同步，则会在Campaign Standard中创建一个无法使用的空查询受众。
 
-* **我收到通知，告诉我同步工作流处于错误状态。我该怎么办？**
+* **我收到通知，告诉我同步工作流处于错误状态。 我该怎么办？**
 
    通过测试连接，在Campaign Standard和Campaign v7中检查外部帐户配置：
 
@@ -107,8 +107,8 @@ ht-degree: 0%
 
 * **在Campaign v7和Campaign Standard之间映射文件夹时，我没有可用的安全组。**
 
-   首先需要从&#x200B;**[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**&#x200B;同步安全组。 此操作会检查Campaign Standard中可用的安全组。 同步后，您可以在配置文件夹映射时找到安全组。
+   您需要首先从 **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**. 此操作会检查Campaign Standard中可用的安全组。 同步后，您可以在配置文件夹映射时找到安全组。
 
-* **我无法在Campaign Standard中编辑用户档案、受众或登陆页面。这是什么意思？**
+* **我无法在Campaign Standard中编辑用户档案、受众或登陆页面。 这是什么意思？**
 
    从Campaign v7同步的资源在Campaign Standard中处于只读模式，以确保数据一致性。 如果您需要编辑其中一个元素，可以在Campaign v7中执行该操作，然后在Campaign Standard中复制所做的更改。

@@ -36,7 +36,7 @@ Adobe Campaign的互动需要谨慎管理，才能高效运行。 您必须在�
 
 下面列出了有关资格规则的一些最佳实践。
 
-* 简化规则。 规则复杂性会随着查询的扩展而影响性能。 复杂规则是指包含5个以上条件的任何规则。
+* 简化规则。 规则复杂性会随着查找的深入而影响性能。 复杂规则是指包含5个以上条件的任何规则。
 * 为了提高性能，可以在跨多个选件共享的不同预定义过滤器中划分规则。
 * 将限制最严格的选件类别规则放在树中尽可能高的位置。 这样，他们将首先过滤掉最多的联系人，从而减少目标数量并阻止进一步规则处理他们。
 * 在树的底部放置时间或处理方面最昂贵的规则。 这样，这些规则将仅在其余目标受众上运行。
@@ -66,25 +66,25 @@ Adobe Campaign的互动需要谨慎管理，才能高效运行。 您必须在�
 
 在扩充活动中选择选件时，您可以选择要使用的选件空间。 但是，无论选择哪个选件空间，投放自定义菜单都取决于投放中设置的选件空间。
 
-在以下示例中，投放中选择的选件空间为&#x200B;**[!UICONTROL Email (Environment - Recipient)]**:
+在以下示例中，投放中选择的选件空间为 **[!UICONTROL Email (Environment - Recipient)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-如果您在投放中选择的选件空间未设置HTML渲染功能，则您将不会在投放菜单中看到该选件空间，并且它将无法进行选择。 同样，这与扩充活动中选择的选件空间无关。
+如果您在投放中选择的选件空间未设置HTML渲染功能，则您将不会在投放菜单中看到该选件空间，并且它将不可供选择。 同样，这与扩充活动中选择的选件空间无关。
 
-在以下示例中，HTML渲染函数在下拉列表中可用，因为投放中选择的选件空间具有渲染函数：
+在以下示例中，HTML渲染功能在下拉列表中可用，因为投放中选择的选件空间具有渲染功能：
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
-此函数插入代码，例如：`<%@ include proposition="targetData.proposition" view="rendering/html" %>`。
+此函数插入代码，例如： `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
-选择命题时，**[!UICONTROL view]**&#x200B;属性的值如下：
-* &quot;rendering/html&quot;:html渲染。 它使用HTML渲染函数。
+选择建议时， **[!UICONTROL view]** 属性如下所示：
+* &quot;rendering/html&quot;:html渲染。 它使用HTML渲染功能。
 * &quot;offer/view/html&quot;:html内容。 它不使用HTML渲染函数。 它仅包含HTML字段。
 
 当您在单个电子邮件投放中包含多个选件空间，并且其中某些选件空间具有渲染功能而某些选件空间没有该功能时，您必须记住哪些选件使用了哪些选件空间，哪些选件空间具有渲染功能。
 
-因此，为避免出现任何问题，建议所有选件空间都定义HTML渲染函数，即使您的选件空间仅需要HTML内容也是如此。
+因此，为避免出现任何问题，建议所有选件空间都定义一个HTML渲染函数，即使您的选件空间仅需要HTML内容也是如此。
 
 ### 在命题日志表中设置排名 {#rank-proposition-log-table}
 
@@ -108,7 +108,7 @@ Adobe Campaign的互动需要谨慎管理，才能高效运行。 您必须在�
 
 由于命题表中有一个名为@rank的字段，因此将复制工作流临时表中的值。
 
-有关在建议表中存储其他字段的更多信息，请参阅[通过工作流集成选件](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights)。
+有关在建议表中存储其他字段的更多信息，请参阅 [通过工作流集成优惠](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
 
 对于具有交互的出站选件，当选择了多个选件并且您想要记录它们在电子邮件中的显示顺序时，此功能非常有用。
 
@@ -123,7 +123,7 @@ Adobe Campaign的互动需要谨慎管理，才能高效运行。 您必须在�
 ### 扩展nms:offer模式 {#extending-nms-offer-schema}
 
 扩展nms:offer模式时，请确保遵循已设置的现成结构：
-* 在`<element name="view">`下为内容存储定义任何新字段。
+* 为下的内容存储定义任何新字段 `<element name="view">`.
 * 每个新字段需要定义两次。 一次作为常规XML字段，一次作为附加了“_jst”的CDATA XML字段。 例如：
 
    ```
@@ -131,4 +131,4 @@ Adobe Campaign的互动需要谨慎管理，才能高效运行。 您必须在�
    <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
    ```
 
-* 任何包含要跟踪的URL的字段都必须置于`<element name="trackedUrls">`下，位于`<element name="view" >`下。
+* 任何包含要跟踪的URL的字段都必须放在 `<element name="trackedUrls">` 在 `<element name="view" >`.

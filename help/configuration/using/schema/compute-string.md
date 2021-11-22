@@ -35,11 +35,11 @@ compute-string:==EMPTY
 
 ## 说明 {#description-1}
 
-`<compute-string>`元素允许您根据XTK表达式生成字符串，以根据多个值在界面中显示“已构建”标签。
+的 `<compute-string>` 元素允许您根据XTK表达式生成字符串，以根据多个值在界面中显示“已构建”标签。
 
 ## 使用和使用上下文 {#use-and-context-of-use-1}
 
-未定义`<compute-string>`时，默认情况下会输入`<compute-string>`元素，并在其中输入主键的值。
+否时 `<compute-string>` 定义 `<compute-string>` 默认情况下，元素输入为架构中主键的值。
 
 ## 属性描述 {#attribute-description-1}
 

@@ -25,4 +25,4 @@ Adobe Campaign的模块化设计支持各种部署配置，从独立设置（一
 >
 >主要安装配置步骤只能通过Adobe由Adobe托管的部署来执行，例如，配置服务器和实例配置文件。
 >
->要进一步了解部署之间的主要差异，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[托管部署和内部部署的功能差异](../../installation/using/capability-matrix.md)部分。
+>要详细了解部署之间的主要差异，请参阅 [托管模型](../../installation/using/hosting-models.md) 或 [托管部署和内部部署的功能差异](../../installation/using/capability-matrix.md).

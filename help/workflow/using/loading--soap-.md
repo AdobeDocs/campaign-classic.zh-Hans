@@ -19,9 +19,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->**加载(SOAP)**&#x200B;活动仅在安装了&#x200B;**FDA（联合数据访问）**&#x200B;模块时才可用。 请核实您的许可协议。
+>的 **加载(SOAP)** 活动仅在 **FDA（联合数据访问）** 已安装模块。 请核实您的许可协议。
 
-当无法通过外部数据库中的FDA直接收集数据时，除了&#x200B;**数据加载(RDBMS)**&#x200B;活动之外，还使用&#x200B;**加载(SOAP)**&#x200B;活动。
+的 **加载(SOAP)** 除 **数据加载(RDBMS)** 活动。
 
 操作如下：
 
@@ -37,19 +37,19 @@ ht-degree: 4%
 
    ![](assets/soap_load_003.png)
 
-1. 选择&#x200B;**[!UICONTROL Click here to view and edit analysis results]**&#x200B;以指定每个已标识的列。
+1. 选择 **[!UICONTROL Click here to view and edit analysis results]** 以指定每个已标识列。
 
    ![](assets/soap_load_001.png)
 
-   如果要更新此示例，请选择&#x200B;**[!UICONTROL Re-analyze the example]**。
+   如果要更新示例，请选择 **[!UICONTROL Re-analyze the example]**.
 
-   您还可以通过&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接对列数据的格式进行个性化。 有关格式化导入数据的更多信息，请参阅此[部分](../../platform/using/executing-import-jobs.md)。
+   您还可以通过 **[!UICONTROL Advanced parameters]** 链接。 有关格式化导入数据的更多信息，请参阅此 [部分](../../platform/using/executing-import-jobs.md).
 
 1. 您可以将行号用作标识符和/或指定SOAP调用返回多个元素。
 1. 根据选项卡脚本的函数输入以下选项卡脚本：
 
    * **[!UICONTROL Initialization]**:建立SOAP连接。
-   * **[!UICONTROL Iteration]**:执行对SOAP服务的调用。此函数的返回必须是与示例或WSDL描述兼容的XML对象。
+   * **[!UICONTROL Iteration]**:执行对SOAP服务的调用。 此函数的返回必须是与示例或WSDL描述兼容的XML对象。
 
       在返回空XML对象之前，Adobe Campaign将在循环中调用此选项卡的代码。
 

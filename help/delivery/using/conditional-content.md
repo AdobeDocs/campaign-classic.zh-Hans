@@ -26,7 +26,7 @@ ht-degree: 7%
 
 在以下示例中，您将学习如何创建根据收件人的性别和兴趣动态个性化的消息。
 
-* 显示“Mr.” 或“Ms” 根据数据源中&#x200B;**[!UICONTROL Gender]**&#x200B;字段（M或F）的值，
+* 显示“Mr.” 或“Ms” 根据 **[!UICONTROL Gender]** 字段（M或F），
 * 根据所指示或检测到的兴趣个性化地组合新闻稿或促销优惠：
 
    * 兴趣1 — >块1
@@ -36,26 +36,26 @@ ht-degree: 7%
 
 要根据字段的值创建条件内容，请应用以下步骤：
 
-1. 单击个性化图标，然后选择&#x200B;**[!UICONTROL Conditional content > If]**。
+1. 单击个性化图标，然后选择 **[!UICONTROL Conditional content > If]**.
 
    ![](assets/s_ncs_user_conditional_content02.png)
 
    个性化元素会插入到消息正文中。 您现在必须配置它们。
 
-1. 接下来，填写&#x200B;**if**&#x200B;表达式的参数。
+1. 接下来，填写 **if** 表达式。
 
    操作步骤：
 
-   * 选择表达式的第一个元素&#x200B;**`<field>`**（默认情况下，此元素在插入&#x200B;**if**&#x200B;表达式期间高亮显示），然后单击个性化图标以将其替换为测试字段。
+   * 选择表达式的第一个元素， **`<field>`**,(默认情况下，此元素会在插入 **if** 表达式)，然后单击个性化图标以将其替换为测试字段。
 
       ![](assets/s_ncs_user_conditional_content03.png)
 
-   * 将&#x200B;**`<value>`**&#x200B;替换为满足条件的字段的值。 此值必须用引号表示。
+   * 替换 **`<value>`** ，其中字段的值将满足条件。 此值必须用引号表示。
    * 指定满足条件时要插入的内容。 这可以包含文本、图像、表单、超文本链接等。
 
       ![](assets/s_ncs_user_conditional_content04.png)
 
-1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡，以根据投放收件人查看消息的内容：
+1. 单击 **[!UICONTROL Preview]** 选项卡，以根据投放收件人查看消息的内容：
 
    * 选择条件为true的收件人：
 
@@ -65,15 +65,15 @@ ht-degree: 7%
 
       ![](assets/s_ncs_user_conditional_content06.png)
 
-您可以添加其他大小写，并根据一个或多个字段的值定义不同的内容。 要实现此目的，请使用&#x200B;**[!UICONTROL Conditional content > Else]**&#x200B;和&#x200B;**[!UICONTROL Conditional content > Else if]**。 这些表达式的配置方式与&#x200B;**if**&#x200B;表达式相同。
+您可以添加其他大小写，并根据一个或多个字段的值定义不同的内容。 为此，请使用 **[!UICONTROL Conditional content > Else]** 和 **[!UICONTROL Conditional content > Else if]**. 这些表达式的配置方式与 **if** 表达式。
 
 ![](assets/s_ncs_user_conditional_content07.png)
 
 >[!CAUTION]
 >
->要遵循JavaScript语法，在添加&#x200B;**Else**&#x200B;和&#x200B;**Else if**&#x200B;条件后，必须删除&#x200B;**%> &lt;%**&#x200B;字符。
+>要遵循JavaScript语法，请 **%> &lt;%** 添加后必须删除字符 **Else** 和 **如果** 条件。
 
-单击&#x200B;**[!UICONTROL Preview]**&#x200B;并选择收件人以查看条件内容。
+单击 **[!UICONTROL Preview]** 并选择收件人以查看条件内容。
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
@@ -81,8 +81,8 @@ ht-degree: 7%
 
 在以下示例中，您将学习如何创建多语言电子邮件。 内容将以一种或另一种语言显示，具体取决于收件人的首选语言。
 
-1. 创建电子邮件并选择目标群体。 在此示例中，显示一个版本或另一个版本的条件将基于收件人用户档案的&#x200B;**Language**&#x200B;值。 在本例中，这些值被设置为&#x200B;**EN**、**FR**、**ES**。
-1. 在电子邮件HTML内容中，单击&#x200B;**[!UICONTROL Source]**&#x200B;选项卡，并粘贴以下代码：
+1. 创建电子邮件并选择目标群体。 在此示例中，用于显示一个版本或另一个版本的条件将基于 **语言** 收件人用户档案的值。 在本例中，这些值被设置为 **EN**, **FR**, **ES**.
+1. 在电子邮件HTML内容中，单击 **[!UICONTROL Source]** 选项卡，并粘贴以下代码：
 
    ```
    <% if (language == "EN" ) { %>
@@ -103,7 +103,7 @@ ht-degree: 7%
    <% } %>
    ```
 
-1. 通过选择使用不同首选语言的收件人，在&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡中测试电子邮件内容。
+1. 在 **[!UICONTROL Preview]** 选项卡，方法是选择使用不同首选语言的收件人。
 
    >[!NOTE]
    >
@@ -115,4 +115,4 @@ ht-degree: 7%
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-其他Campaign Classic操作方法视频可在[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)获取。
+提供了其他Campaign Classic操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).

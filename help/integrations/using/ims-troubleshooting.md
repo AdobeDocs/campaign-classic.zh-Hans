@@ -17,11 +17,11 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-以下故障诊断提示将帮助&#x200B;**on-premise**&#x200B;客户解决使用IMS集成时最常见的问题。 对于托管的&#x200B;****&#x200B;客户，请联系Adobe。
+以下故障诊断提示将提供帮助 **内部部署** 客户可解决使用IMS集成时出现的最常见问题。 对于 **托管** 客户，请联系Adobe。
 
 **外部帐户**
 
-只有&#x200B;**一个**&#x200B;外部帐户具有以下设置：
+应该只有 **one** 具有以下设置的外部帐户：
 
 * **内部名称**:Adobe_Marketing_Cloud
 * **类型**:Adobe Marketing Cloud
@@ -30,20 +30,20 @@ ht-degree: 1%
 
 **产品上下文**
 
-如果外部帐户具有&#x200B;**Product Context**&#x200B;字段，请检查其值是否设置为：**dma_campaign_classic**
+如果外部帐户具有 **产品上下文** 字段，检查其值设置为： **dma_campaign_classic**
 
 确保Campaign和Experience Cloud的产品上下文相同。
 
-例如，如果未显示&#x200B;**产品上下文**，则在Campaign和Experience Cloud中，默认的产品上下文应为&#x200B;**dma_campaign**。 如果出现&#x200B;**Product Context**&#x200B;字段，则默认的产品上下文应为&#x200B;**dma_campaign_classic**(在Campaign和Experience Cloud中)。
+例如，如果 **产品上下文** 未显示，则默认的产品上下文应为 **dma_campaign** 在Campaign和Experience Cloud中。 如果 **产品上下文** 字段中，默认的产品上下文应为 **dma_campaign_classic** 在Campaign和Experience Cloud中。
 
 **[!UICONTROL IMS Server URL]**
 
-在Campaign **Adobe Marketing Cloud**&#x200B;外部帐户中，检查&#x200B;**[!UICONTROL IMS Server URL]**&#x200B;是[adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/)还是[ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/)。 确保暂存实例和生产实例指向相同的IMS生产端点。
+在营销活动中 **Adobe Marketing Cloud** 外部帐户，检查 **[!UICONTROL IMS Server URL]** 是 [adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/) 或 [ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/). 确保暂存实例和生产实例指向相同的IMS生产端点。
 
 **关联掩码**
 
 * 检查尝试登录的用户是否属于Enterprise Dashboard中的操作员组。
-* 检查&#x200B;**[!UICONTROL Association Mask]**&#x200B;是否是Enterprise Dashboard中用户操作员组名称的前缀。
+* 检查 **[!UICONTROL Association Mask]** 是Enterprise Dashboard中用户操作员组名称的前缀。
 * 确保没有空格和拼写错误。
 * 检查Campaign中运算符组的名称是否未更改，并遵循以下语法：
 
@@ -57,7 +57,7 @@ Campaign外部帐户中定义的范围必须是IMS设置的范围的子集。
 
 **回调URL**
 
-应将&#x200B;**回调URL**&#x200B;添加到允许列表中，并以“https://”开头。 检查&#x200B;**回调URL**&#x200B;是否已链接到相应的实例。 例如，生产实例应重定向到生产URL。
+的 **回调URL** 应添加到允许列表，并以“https://”开头。 检查 **回调URL** 链接到相应的实例。 例如，生产实例应重定向到生产URL。
 
 **客户端ID和密钥**
 
@@ -73,11 +73,11 @@ Campaign外部帐户中定义的范围必须是IMS设置的范围的子集。
 
 * 用户将被重定向到adobe.com页面：
 
-   **[!UICONTROL Callback URL]**&#x200B;有问题。 请参阅上述步骤以检查&#x200B;**[!UICONTROL Callback URL]**&#x200B;配置。
+   在 **[!UICONTROL Callback URL]**. 请参阅上述步骤，以检查 **[!UICONTROL Callback URL]** 配置。
 
 * 消息“登录没有任何与表达式匹配的权限”：
 
-   请参阅上述步骤以检查&#x200B;**[!UICONTROL Association Mask]**&#x200B;和运算符组配置。
+   请参阅上述步骤，以检查 **[!UICONTROL Association Mask]** 和运算符组配置。
 
 * 用户无法访问Adobe ID登录页面：
 

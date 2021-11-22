@@ -21,33 +21,33 @@ ht-degree: 3%
 
 ## 优惠建议 {#offer-proposition}
 
-有关通过SOAP提供的建议，请添加&#x200B;**nms:compestation#Propose**&#x200B;命令，后跟以下参数：
+有关通过SOAP提供的建议，请在 **nms:campation#Propose** 命令后跟以下参数：
 
 * **targetId**:收件人的主键（可以是复合键）。
 * **maxCount**:指定联系人的选件建议数。
-* **上下文**:允许您在空间架构中添加上下文信息。如果使用的模式是&#x200B;**nms:interaction**，则应添加&#x200B;**`<empty>`**。
+* **上下文**:允许您在空间架构中添加上下文信息。 如果使用的架构为 **nms:interaction**, **`<empty>`** 值。
 * **类别**:指定选件必须属于的类别。
 * **主题**:指定选件必须属于的主题。
-* **uuid**:Adobe Campaign永久cookie的值(“uuid230”)。
+* **uid**:Adobe Campaign永久cookie的值(“uuid230”)。
 * **nli**:Adobe Campaign会话Cookie(“nlid”)的值。
 * **noProp**:使用“true”值停用建议书插入。
 
 >[!NOTE]
 >
->**targetId**&#x200B;和&#x200B;**maxCount**&#x200B;设置是强制设置的。 其他选项是可选的。
+>的 **targetId** 和 **maxCount** 设置是强制性的。 其他选项是可选的。
 
 响应查询，SOAP服务将返回以下参数：
 
 * **interactionId**:交互的ID。
-* **建议**:XML元素，包含命题列表，每个命题都有自己的ID和HTML表示形式。
+* **命题**:XML元素，包含命题列表，每个命题都有自己的ID和HTML表示。
 
 ## 选件更新 {#offer-update}
 
-将&#x200B;**nms:interaction#UpdateStatus**&#x200B;命令添加到URL中，然后添加以下参数：
+添加 **nms:interaction#UpdateStatus** 命令到URL，然后是以下参数：
 
-* **建议**:字符串，它包含在选件建议期间作为输出给出的建议ID。请参阅[优惠建议](#offer-proposition)。
-* **状态**:字符串类型，它会指定选件的新状态。在&#x200B;**nms:common**&#x200B;模式的&#x200B;**命题状态**&#x200B;枚举中列出了可能的值。 例如，现成的数字3对应于&#x200B;**Accepted**&#x200B;状态。
-* **上下文**:XML元素，用于在空间架构中添加上下文信息。如果使用的模式是&#x200B;**nms:interaction**，则应添加&#x200B;**`<empty>`**。
+* **命题**:字符串，它包含在选件建议期间作为输出给出的建议ID。 请参阅 [优惠建议](#offer-proposition).
+* **状态**:字符串类型，它会指定选件的新状态。 可能的值列在 **命题状态** 枚举，在 **nms:common** 架构。 例如，现成的数字3对应于 **已接受** 状态。
+* **上下文**:XML元素，用于在空间架构中添加上下文信息。 如果使用的架构为 **nms:interaction**, **`<empty>`** 值。
 
 ## 使用SOAP调用的示例 {#example-using-a-soap-call}
 

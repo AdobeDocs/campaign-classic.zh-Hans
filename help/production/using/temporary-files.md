@@ -23,7 +23,7 @@ ht-degree: 4%
 
 原因如下：
 
-Adobe Campaign会在&#x200B;**/tmp**&#x200B;下生成临时文件，然后将其重命名为将其移动到&#x200B;**/usr/local/neolane/nl6/var**。 当两个文件夹（**/tmp**&#x200B;和&#x200B;**/usr/local/neolane/nl6/var**）对应于不同设备时，会出现此错误。 ******df**&#x200B;命令用于验证。
+Adobe Campaign在 **/tmp**，然后将其重命名为 **/usr/local/neolane/nl6/var**. 当两个文件夹(**/tmp** 和 **/usr/local/neolane/nl6/var**，实际上是 **/var/nl6**)对应于不同的设备。 的 **df** 命令进行验证。
 
 要更正此问题，临时文件必须在与目标相同的设备中生成。
 

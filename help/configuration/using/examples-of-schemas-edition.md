@@ -19,9 +19,9 @@ ht-degree: 2%
 
 ## 扩展表 {#extending-a-table}
 
-要扩展&#x200B;**nms:recipient**&#x200B;模式收件人表，请应用以下过程：
+扩展 **nms:recipient** 架构收件人表，请应用以下过程：
 
-1. 使用以下数据创建扩展架构(**cus:extension**):
+1. 创建扩展架构(**cus:extension**):
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -42,13 +42,13 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   在本例中，添加了索引字段(**fidelity**)，并且&#x200B;**location**&#x200B;元素（已存在于&#x200B;**nms:recipient**&#x200B;模式中）以枚举字段(**area**)进行补充。
+   在本例中，索引字段(**保真度**)，并且 **位置** 元素(已存在于 **nms:recipient** 模式)以枚举字段(**面积**)。
 
    >[!IMPORTANT]
    >
-   >请记住添加&#x200B;**extendedSchema**&#x200B;属性以引用扩展模式。
+   >请记住，在 **extendedSchema** 属性来引用扩展架构。
 
-1. 检查扩展模式是否为&#x200B;**nms:recipient**&#x200B;模式，以及是否存在附加数据：
+1. 检查扩展架构是否为 **nms:recipient** 架构，并且存在附加数据：
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -103,7 +103,7 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-表类型为&#x200B;**autopk**，以便创建自动生成的主键值，以供链接到收件人表时使用。
+表类型为 **奥托普** 以创建自动生成的主密钥，该主密钥将用于链接到收件人表的连接。
 
 生成的架构：
 
@@ -237,7 +237,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 使用关系表可以将两个表与基数N-N链接起来。此表仅包含要链接的表的外键。
 
-组(**nms:group**)与收件人(**nms:recipient**)之间关系表的示例。
+组之间关系表的示例(**nms:group**)和收件人(**nms:recipient**)。
 
 关系表的源架构：
 
@@ -303,7 +303,7 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 此用例演示了如何使用现有引用表作为内置Adobe Campaign枚举机制（enum、userEnum或dbEnum）的替代方法。
 
-您还可以将现有引用表用作架构中的枚举。 这可以通过在表和引用表之间创建链接并添加属性&#x200B;**displayAsField=&quot;true&quot;**&#x200B;来实现。
+您还可以将现有引用表用作架构中的枚举。 这可以通过在表和参考表之间创建链接并添加属性来实现 **displayAsField=&quot;true&quot;**.
 
 在本例中，参考表包含银行名称和标识符列表：
 
@@ -321,7 +321,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-在使用此参考表的任何表中，定义链接并添加&#x200B;**displayAsField=&quot;true&quot;**&#x200B;属性。
+在使用此参考表的任何表中，定义链接并添加 **displayAsField=&quot;true&quot;** 属性。
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -333,7 +333,7 @@ xtkschema="xtk:srcSchema">
 
 * 要使其自动完成，必须在引用表中定义计算字符串。
 
-* 在链接定义中添加&#x200B;**noDbIndex=&quot;true&quot;**&#x200B;属性，以阻止Adobe Campaign对链接源表中存储的值创建索引。
+* 添加 **noDbIndex=&quot;true&quot;** 属性，以防止Adobe Campaign根据链接源表中存储的值创建索引。
 
 ## 相关主题
 

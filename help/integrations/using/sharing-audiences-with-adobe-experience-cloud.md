@@ -19,23 +19,23 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->要与Adobe Experience Cloud解决方案共享受众，您需要实施AdobeIdentity Management系统。 [进一步了解IMS ](../../integrations/using/about-adobe-id.md)。
+>要与Adobe Experience Cloud解决方案共享受众，您需要实施AdobeIdentity Management系统。 [进一步了解IMS。](../../integrations/using/about-adobe-id.md).
 
 通过Adobe Campaign，您可以与Adobe Experience Cloud解决方案和核心服务共享受众和区段。 有两个选项可用：
 
-1. 将Adobe Experience Platform区段数据发送到Adobe Campaign。 要实施此集成，您需要将实时客户数据平台与Campaign(RTCDP)连接起来。 [在本节中了解详情](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+1. 将Adobe Experience Platform区段数据发送到Adobe Campaign。 要实施此集成，您需要将Real-time Customer Data Platform与Campaign(RTCDP)连接起来。 [在本节中了解详情](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
 
-1. 将&#x200B;**Adobe Campaign**&#x200B;与&#x200B;**People核心服务**（也称为&#x200B;**Profiles &amp; Audiences核心服务**）或Adobe Audience Manager集成。 然后，您将能够：
+1. 集成 **Adobe Campaign** with **People核心服务** (也称为 **Profiles &amp; Audiences核心服务**)或Adobe Audience Manager。 然后，您将能够：
 
    * 将不同Adobe Experience Cloud解决方案中的共享受众/区段导入Adobe Campaign。 受众可通过Adobe Campaign中的列表导入。
 
-   * 以Adobe Experience Cloud共享受众的形式导出列表。 这些受众可在您使用的不同Adobe Experience Cloud解决方案中使用。 在工作流中使用专用的&#x200B;**[!UICONTROL Update shared audience]**&#x200B;活动进行定位后，可以导出受众。
+   * 以Adobe Experience Cloud共享受众的形式导出列表。 这些受众可在您使用的不同Adobe Experience Cloud解决方案中使用。 可在工作流中使用专用的 **[!UICONTROL Update shared audience]** 活动。
 
 此集成支持两种类型的Adobe Experience Cloud ID:
 
 * **访客ID**:此类标识符可协调Adobe Experience Cloud访客与Adobe Campaign收件人。
-* **声明的ID**:此类型的标识符将所有类型的数据与Adobe Campaign数据库中的元素进行协调。它在Adobe Campaign中表示为预定义的对帐密钥。
+* **声明的ID**:此类型的标识符将所有类型的数据与Adobe Campaign数据库中的元素进行协调。 它在Adobe Campaign中表示为预定义的对帐密钥。
 
    >[!NOTE]
    >

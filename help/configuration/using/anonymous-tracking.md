@@ -26,8 +26,8 @@ Adobe Campaign允许您在收集的Web跟踪信息以匿名方式浏览您网站
 
 要在实例上启用匿名Web跟踪，必须配置以下元素：
 
-* 跟踪服务器的&#x200B;**serverConf.xml**&#x200B;文件的&#x200B;**trackWebVisitors**&#x200B;重定向&#x200B;**元素的** trackWebVisitors参数必须设置为“**true**”，以便在访问该站点的未知Internet用户的浏览器中放置永久Cookie(**uid230**)。
-* 必须在部署向导的跟踪配置屏幕中选择&#x200B;**匿名Web跟踪**&#x200B;模式。
+* 的 **trackWebVisitors** 参数 **重定向** 元素 **serverConf.xml** 跟踪服务器的文件必须设置为“**true**&#39;，放置永久Cookie(**uuid230**)访问网站的未知internet用户的浏览器中。
+* 的 **匿名Web跟踪** 必须在部署向导的跟踪配置屏幕中选择模式。
 
    ![](assets/webtracking_anonymous_set.png)
 

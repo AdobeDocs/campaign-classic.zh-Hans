@@ -17,9 +17,9 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所有工作流。 它仅适用于&#x200B;**Campaign Administrators**。
+Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所有工作流。 它仅可用于 **Campaign管理员**.
 
-在[本页](../../production/using/monitoring-guidelines.md)中了解监控Campaign进程的其他方法。
+了解在中监控Campaign流程的其他方法 [本页](../../production/using/monitoring-guidelines.md).
 
 ## 工作流热图入门 {#about-the-workflow-heatmap}
 
@@ -31,22 +31,22 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
 * 按持续时间筛选工作流，以查看哪些工作流可能遇到问题
 * 按持续时间筛选活动，以查看哪些活动可能遇到问题
 * 轻松查找个别工作流和所有相关活动（及持续时间）
-* 按工作流类型过滤：[技术工作流](building-a-workflow.md#technical-workflows)或[营销活动工作流](building-a-workflow.md#campaign-workflows)
+* 按工作流类型过滤： [技术工作流](building-a-workflow.md#technical-workflows) 或 [活动工作流](building-a-workflow.md#campaign-workflows)
 * 查找要分析的特定工作流
 
 >[!NOTE]
 >
->除了&#x200B;**工作流热图**&#x200B;之外，您还可以创建一个工作流，该工作流将允许您监视一组工作流的状态并向主管发送定期消息。 有关更多信息，请参阅[专用部分](supervising-workflows.md)。
+>除 **工作流热图**，则可以创建一个工作流，用于监视一组工作流的状态并向主管发送定期消息。 有关更多信息，请参阅 [专用部分](supervising-workflows.md).
 
-使用工作流热图需要对以下概念有很好的了解：[工作流](about-workflows.md)、[活动](about-activities.md)和[工作流最佳实践](workflow-best-practices.md)。
+使用工作流热图需要对以下概念有很好的了解： [工作流](about-workflows.md), [活动](about-activities.md) 和 [工作流最佳实践](workflow-best-practices.md).
 
 ## 自定义工作流热图 {#using-the-heatmap}
 
 >[!NOTE]
 >
->如果工作流热图中未显示任何数据，请单击&#x200B;**[!UICONTROL Load data]**&#x200B;按钮。
+>如果工作流热图中未显示任何数据，请单击 **[!UICONTROL Load data]** 按钮。
 
-1. 转到&#x200B;**[!UICONTROL Monitoring]**&#x200B;并单击&#x200B;**[!UICONTROL Workflow HeatMap]**&#x200B;链接以显示&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;页面。
+1. 转到 **[!UICONTROL Monitoring]** ，然后单击 **[!UICONTROL Workflow HeatMap]** 用于显示 **[!UICONTROL Campaign Workflow HeatMap]** 页面。
 
    ![](assets/wkf_monitoring_path.png)
 
@@ -56,7 +56,7 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
 
    >[!NOTE]
    >
-   >只有尚未被&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流删除的工作流才可见。 有关数据库清理工作流的详细信息，请参阅[此部分](../../production/using/database-cleanup-workflow.md)。\
+   >只有尚未被 **[!UICONTROL Database cleanup]** 工作流可见。 有关数据库清理工作流的详细信息，请参阅 [此部分](../../production/using/database-cleanup-workflow.md).\
    >默认情况下，工作流热图时区是为当前管理员用户定义的时区。 例如，如果您与正在处理的营销用户不在同一区域，则可能需要更改该区域。
 
 1. 单击 **[!UICONTROL Filters]** 按钮。
@@ -67,22 +67,22 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
-1. 您还可以从&#x200B;**[!UICONTROL Workflows]**&#x200B;下拉列表中选择特定的工作流。
+1. 您还可以从 **[!UICONTROL Workflows]** 下拉列表。
 
    ![](assets/wkf_monitoring_filters_workflows.png)
 
    >[!NOTE]
    >
-   >应用&#x200B;**[!UICONTROL Min duration]**&#x200B;过滤器。 如果找不到特定的工作流，请将最小持续时间重置为0，以便所有工作流都显示在列表中。
+   >的 **[!UICONTROL Min duration]** 过滤器。 如果找不到特定的工作流，请将最小持续时间重置为0，以便所有工作流都显示在列表中。
 
-1. 您还可以对&#x200B;**[!UICONTROL Workflow type]**&#x200B;进行筛选：
+1. 您还可以在 **[!UICONTROL Workflow type]** :
 
-   * **[!UICONTROL Technical]** :仅 [显示现成的技术工](building-a-workflow.md#technical-workflows) 作流 [和数据](targeting-data.md#data-management) 管理工作流。
-   * **[!UICONTROL Marketing]** :仅显示与营销活动链接的工作流(称为 [营销活动工作流](building-a-workflow.md#campaign-workflows))。
+   * **[!UICONTROL Technical]** :仅 [现成的技术工作流](building-a-workflow.md#technical-workflows) 和 [数据管理工作流](targeting-data.md#data-management) 中。
+   * **[!UICONTROL Marketing]** :仅链接到营销活动(称为 [活动工作流](building-a-workflow.md#campaign-workflows)，则会显示。
 
-1. 要按名称搜索特定工作流，您还可以使用&#x200B;**[!UICONTROL Workflow name filter]**&#x200B;字段。
+1. 要按名称搜索特定工作流，您还可以使用 **[!UICONTROL Workflow name filter]** 字段。
 
-1. 如果在这两个时间之间编辑了一些工作流，请单击&#x200B;**[!UICONTROL Reload data]**&#x200B;按钮以刷新网格中显示的数据。
+1. 如果您在这两个工作流之间的时间中编辑了一些工作流，请单击 **[!UICONTROL Reload data]** 按钮来刷新网格中显示的数据。
 
 ## 解释工作流热图 {#reading-the-heatmap}
 
@@ -91,7 +91,7 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
 * 较深的红色单元格对应于同时运行大量工作流的时段。
 * 灰色单元格对应于未运行工作流的时段。
 
-要了解如何应用颜色代码以及如何导航热图，请单击&#x200B;**[!UICONTROL Help]**&#x200B;按钮。
+要了解如何应用颜色代码以及如何导航热图，请单击 **[!UICONTROL Help]** 按钮。
 
 ![](assets/wkf_monitoring_legend.png)
 
@@ -110,7 +110,7 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
    对于每个工作流，都会列出其包含的所有活动及其持续时间。
 
 1. 单击工作流ID或名称，以直接打开工作流。
-1. 要返回到&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;视图，请单击&#x200B;**[!UICONTROL Home]**&#x200B;按钮。
+1. 返回到 **[!UICONTROL Campaign Workflow HeatMap]** 视图，单击 **[!UICONTROL Home]** 按钮。
 
 ## 用例：使用热图执行操作 {#use-cases--using-the-heatmap-to-take-actions}
 
@@ -120,7 +120,7 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
 
 作为Campaign管理员，Workflow HeatMap可以帮助您了解实例的负载情况，并在适当时规划现有或新的工作流。
 
-1. 在&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;视图中，单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮。
+1. 从 **[!UICONTROL Campaign Workflow HeatMap]** 视图，单击 **[!UICONTROL Filters]** 按钮。
 1. 将持续时间设置为几秒或几分钟。
 1. 通过增加持续时间过滤器来排除没有意义的最短工作流。
 
@@ -135,12 +135,12 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
 
 作为Campaign管理员，工作流热图可帮助您查找可能会减慢活动速度的最长工作流。
 
-1. 在&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;视图中，单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮。
+1. 从 **[!UICONTROL Campaign Workflow HeatMap]** 视图，单击 **[!UICONTROL Filters]** 按钮。
 1. 将持续时间设置为1小时。
 
    ![](assets/wkf_monitoring_long_duration.png)
 
-1. 通过减小&#x200B;**[!UICONTROL Min duration]**&#x200B;滤镜，包含更多结果。
+1. 通过降低 **[!UICONTROL Min duration]** 过滤器。
 1. 浏览结果以查找最长的工作流，这些工作流可能对服务器和数据库资源（CPU、RAM、网络、IOPS等）产生更大的影响。
 1. 采取适当的措施：
 
@@ -153,9 +153,9 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
 
 在这种情况下，许多用户都在抱怨工作流的性能。 您需要检查哪些因素会减慢活动速度以及如何解决问题。
 
-1. 转到&#x200B;**[!UICONTROL Monitoring]**&#x200B;并单击&#x200B;**[!UICONTROL Workflows]**&#x200B;链接以显示&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;页面。
-1. 将&#x200B;**[!UICONTROL Min duration]**&#x200B;过滤器设置为5分钟。
-1. 将&#x200B;**[!UICONTROL Workflow type]**&#x200B;过滤器设置为&#x200B;**[!UICONTROL Marketing]** 。
+1. 转到 **[!UICONTROL Monitoring]** ，然后单击 **[!UICONTROL Workflows]** 用于显示 **[!UICONTROL Campaign Workflow HeatMap]** 页面。
+1. 设置 **[!UICONTROL Min duration]** 过滤到5分钟。
+1. 设置 **[!UICONTROL Workflow type]** 筛选 **[!UICONTROL Marketing]** .
 1. 从热图网格中，观察以下内容：
 
    ![](assets/wkf_monitoring_without.png)
@@ -166,7 +166,7 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
    * 性能很低。
 
 1. 从上午10点开始，不再有50个工作流，而是在一天的其余时间平均分配工作流的开始时间。
-1. 返回至&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;页面，然后单击&#x200B;**[!UICONTROL Reload data]**&#x200B;按钮。
+1. 返回到 **[!UICONTROL Campaign Workflow HeatMap]** 页面，然后单击 **[!UICONTROL Reload data]** 按钮。
 1. 现在，请注意以下事项：
 
    ![](assets/wkf_monitoring_with.png)

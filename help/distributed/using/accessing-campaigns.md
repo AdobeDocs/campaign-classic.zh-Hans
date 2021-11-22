@@ -29,7 +29,7 @@ ht-degree: 3%
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
-营销活动概述中仍可访问，该概述可通过主页上的&#x200B;**[!UICONTROL Campaigns]**&#x200B;链接找到。
+营销活动概述中仍可通过 **[!UICONTROL Campaigns]** 链接。
 
 ## 可用设置 {#available-settings}
 

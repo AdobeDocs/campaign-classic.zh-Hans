@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ![](../../assets/common.svg)
 
-下面详述的工作流计划每小时运行一次。 默认情况下，它随&#x200B;**消息中心 — 控制**&#x200B;模块一起安装。
+下面详述的工作流计划每小时运行一次。 它随 **消息中心 — 控制** 模块。
 
 
 有关更多信息，请根据您的Campaign版本，参阅以下章节：
@@ -35,7 +35,7 @@ ht-degree: 10%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 消息中心&lt;external_account_name&gt;<br /> </td> 
+   <td> 消息中心 &lt;external_account_name&gt;<br /> </td> 
    <td> mcSynch_&lt;external_account_name&gt;<br /> </td> 
    <td> 此工作流：<br /> 
     <ul> 

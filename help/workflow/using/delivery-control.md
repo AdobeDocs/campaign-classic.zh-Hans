@@ -17,13 +17,13 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
-**投放控件**&#x200B;类型操作允许您开始、暂停或停止投放。
+A **投放控制**-type操作允许您开始、暂停或停止投放。
 
-这可以是过渡中指定的投放、明确选择的投放或由脚本计算的投放。 有关更多信息，请参见[Delivery](delivery.md)。
+这可以是过渡中指定的投放、明确选择的投放或由脚本计算的投放。 有关更多信息，请参阅 [投放](delivery.md).
 
 ![](assets/edit_diffusion_act.png)
 
-如果选择&#x200B;**[!UICONTROL Start]**，则活动将执行开始投放（目标计算、内容准备、投放）所需的所有步骤。 如果之前的工作流活动已经执行了其中某些步骤，则不会再执行这些步骤。 例如，如果目标估计已由&#x200B;**[!UICONTROL Delivery]**&#x200B;类型活动执行（请参阅[投放](delivery.md)），则&#x200B;**[!UICONTROL Act on the delivery]**&#x200B;活动将启动其余步骤（内容准备和投放）。
+如果您选择 **[!UICONTROL Start]**，则活动将执行开始交付（目标计算、内容准备、交付）所需的所有步骤。 如果之前的工作流活动已经执行了其中某些步骤，则不会再执行这些步骤。 例如，如果目标估计已由 **[!UICONTROL Delivery]** 类型活动(请参阅 [投放](delivery.md))、 **[!UICONTROL Act on the delivery]** 活动将启动其余的步骤（内容准备和交付）。
 
 可以使用以下选项：
 
@@ -33,10 +33,10 @@ ht-degree: 5%
 
 * **[!UICONTROL Processing errors]**
 
-   请参阅[处理错误](monitoring-workflow-execution.md#processing-errors)。
+   请参阅 [处理错误](monitoring-workflow-execution.md#processing-errors).
 
 ## 输入参数 {#input-parameters}
 
 * deliveryId
 
-投放标识符（如果选定的操作为&#x200B;**[!UICONTROL Specified in the transition]**）。
+投放标识符(如果选定的操作为 **[!UICONTROL Specified in the transition]**.

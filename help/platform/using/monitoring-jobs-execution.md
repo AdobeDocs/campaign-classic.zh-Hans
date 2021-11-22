@@ -21,10 +21,10 @@ ht-degree: 55%
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
-* 使用&#x200B;**[!UICONTROL Journal]**&#x200B;选项卡可以查看与执行有关的日志消息。
-* **[!UICONTROL Rejects]**&#x200B;选项卡包含被拒绝的记录。 请参阅[此小节](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
+* 的 **[!UICONTROL Journal]** 选项卡，用于查看有关执行的日志消息。
+* 的 **[!UICONTROL Rejects]** 选项卡包含被拒绝的记录。 请参阅[此小节](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
 
-在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中， **[!UICONTROL Status]**&#x200B;字段指示作业的当前状态。
+在 **[!UICONTROL General]** 选项卡 **[!UICONTROL Status]** 字段指示作业的当前状态。
 
 每个状态都由一个特殊的图标和标签表示。状态及其图标如下：
 
@@ -40,7 +40,7 @@ ht-degree: 55%
 
 * **取消**
 
-   单击&#x200B;**[!UICONTROL Cancel]**&#x200B;按钮：正在进行的作业被取消。
+   单击 **[!UICONTROL Cancel]** 按钮：正在进行的作业被取消。
 
 * **正在取消**
 
@@ -48,11 +48,11 @@ ht-degree: 55%
 
 * **正在暂停**
 
-   单击&#x200B;**[!UICONTROL Pause]**:工作正在暂停。
+   单击 **[!UICONTROL Pause]**:工作正在暂停。
 
 * **已暂停**
 
-   单击&#x200B;**[!UICONTROL Pause]**:作业已挂起。 单击&#x200B;**[!UICONTROL Start]**&#x200B;可重新启动。
+   单击 **[!UICONTROL Pause]**:作业已挂起。 可以通过单击 **[!UICONTROL Start]**.
 
 * **已完成**
 

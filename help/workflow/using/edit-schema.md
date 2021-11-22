@@ -17,13 +17,13 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-可以使用&#x200B;**[!UICONTROL Edit schema]**&#x200B;活动在工作流中转换、标准化数据，并在必要时进行扩充。 它通常用于标准化数据结构：例如，您可以通过计算字段或聚合的平均值来重命名输出列或修改其内容。
+数据可以进行转换、标准化，并在必要时使用 **[!UICONTROL Edit schema]** 活动。 它通常用于标准化数据结构：例如，您可以通过计算字段或聚合的平均值来重命名输出列或修改其内容。
 
 此活动不会更改工作表中的数据，只会更改其架构，即数据的逻辑视图。
 
 ![](assets/wf_manipulation_box.png)
 
-您还可以通过&#x200B;**[!UICONTROL Links]**&#x200B;选项卡创建与其他工作表的连接。
+您还可以通过 **[!UICONTROL Links]** 选项卡。
 
 ![](assets/wf_manipulation_box_link_tab.png)
 

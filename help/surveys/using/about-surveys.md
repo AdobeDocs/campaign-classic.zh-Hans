@@ -19,22 +19,22 @@ ht-degree: 4%
 
 Adobe Campaign包含一个用于定义和发布Web应用程序的图形模块。 它用于创建页面，如外联网上的编辑表单，或通知表单，包括来自数据库的数据，包括表、图表、输入表单等。 使用此功能可设计和发布网页，用户可在其中查找或输入信息。
 
-可选的&#x200B;**Survey**&#x200B;附加组件允许您创建新类型的Web应用程序以创建和管理在线调查表，例如用于添加或修改用户档案信息、订阅或退订信息服务或竞争条目表单的表单。 收集了答案后，它们会存储在数据库或本地变量中。 该数据模型可通过对问卷的回答进行动态扩展。 您可以实时查看结果，过滤响应，并使用专用图表分析结果。
+可选 **调查** 附加组件允许您创建新类型的Web应用程序以创建和管理在线调查表，例如添加或修改用户档案信息的表单、订阅或退订信息服务或竞争条目表单。 收集了答案后，它们会存储在数据库或本地变量中。 数据模型可以通过对问卷的回答进行动态扩展。 您可以实时查看结果，过滤响应，并使用专用图表分析结果。
 
-本章详细介绍如何创建和管理&#x200B;**调查**、字段和页面管理、存储模式和记录。
+本章详细介绍如何创建和管理 **调查**、字段和页面管理、存储模式和记录。
 
-了解如何在[本页](getting-started-with-surveys.md)中创建您的第一个调查。
+了解如何在 [本页](getting-started-with-surveys.md).
 
 >[!NOTE]
 >
->* [本文档](../../web/using/about-web-forms.md)中提供了创建标准Web窗体的详细步骤。
+>* 有关创建标准Web窗体的详细步骤，请参阅 [本文档](../../web/using/about-web-forms.md).
 >
->* [本文档](../../web/using/about-web-applications.md)中详细介绍了Web应用程序管理。 有关更多信息，请参阅本章。
+>* Web应用程序管理详见 [本文档](../../web/using/about-web-applications.md). 有关更多信息，请参阅本章。
 
 
 ## 功能范围 {#campaign-surveys-scope}
 
-在Adobe Campaign中，使用[Web应用程序](../../web/using/about-web-forms.md)执行以下操作：
+在Adobe Campaign中，使用 [Web应用程序](../../web/using/about-web-forms.md) 至：
 
 * 创建多页面表单，
 * 使用集成的翻译工具管理多语言表单，
@@ -65,7 +65,7 @@ Adobe Campaign包含一个用于定义和发布Web应用程序的图形模块。
 1. 发布调查，然后将调查提交给收件人（例如，在投放或网站中包含链接）。
 1. 监视响应并查看报告。
 
-有关配置和排序这些步骤的更多信息，请参阅[本文档](../../web/using/about-web-forms.md)。 本章仅详细介绍特定于调查的配置。
+有关配置和排序这些步骤的更多信息，请参阅 [本文档](../../web/using/about-web-forms.md). 本章仅详细介绍特定于调查的配置。
 
 >[!CAUTION]
 >
@@ -73,13 +73,13 @@ Adobe Campaign包含一个用于定义和发布Web应用程序的图形模块。
 
 ## 设置 {#settings}
 
-默认情况下，调查在Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Online > Web Applications]**&#x200B;节点中可用。
+默认情况下，在 **[!UICONTROL Resources > Online > Web Applications]** Adobe Campaign树的节点。
 
 设置存储在以下文件夹中：
 
 * **[!UICONTROL Administration > Configuration > Form rendering]**:包含Web窗体演示文稿（应用程序和调查）的渲染模板。
-* **[!UICONTROL Resources > Templates > Web application templates]**:包含表单模板。要创建表单，您需要从模板开始。
+* **[!UICONTROL Resources > Templates > Web application templates]**:包含表单模板。 要创建表单，您需要从模板开始。
 
 >[!NOTE]
 >
->有关设置详细信息，请参见[本文档](../../web/using/about-web-forms.md)。
+>有关设置的详细信息，请参阅 [本文档](../../web/using/about-web-forms.md).

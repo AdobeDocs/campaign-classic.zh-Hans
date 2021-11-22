@@ -23,9 +23,9 @@ ht-degree: 1%
 
 总体而言，可使用三种类型的绑定：
 
-1. 使用手动定义的值范围。 例如，年龄、平均购物车、已投放的次数等)。 有关更多信息，请参阅[定义每个bin](#defining-each-bin)。
-1. 动态地，取决于枚举的值：只显示枚举中包含的值，所有其他值将分组到“其他”中。 有关更多信息，请参阅[动态管理Bin](#dynamically-managing-bins)。
-1. 使用值范围，将所有其他值分组在一起。 例如，18至25岁、26至59岁的人，以及其他人。 有关更多信息，请参阅[创建值范围](#creating-value-ranges)。
+1. 使用手动定义的值范围。 例如，年龄、平均购物车、已投放的次数等)。 有关更多信息，请参阅 [定义每个站](#defining-each-bin).
+1. 动态地，取决于枚举的值：只显示枚举中包含的值，所有其他值将分组到“其他”中。 有关更多信息，请参阅 [动态管理箱](#dynamically-managing-bins).
+1. 使用值范围，将所有其他值分组在一起。 例如，18至25岁、26至59岁的人，以及其他人。 有关更多信息，请参阅 [创建值范围](#creating-value-ranges).
 
 要启用绑定，请在创建维度时选中相应的框。
 
@@ -37,11 +37,11 @@ Adobe Campaign还为自动绑定提供了助手：值可以划分为N组，或�
 
 ### 定义每个站 {#defining-each-bin}
 
-要单独创建每个箱，请选择&#x200B;**[!UICONTROL Define each bin]**&#x200B;选项，然后使用表创建各种箱。
+要单独创建每个站，请选择 **[!UICONTROL Define each bin]** 选项，然后使用表创建各种箱。
 
 ![](assets/s_advuser_cube_class_01.png)
 
-单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以创建新的站点，并列出将分组到站点中的值。
+单击 **[!UICONTROL Add]** 按钮来创建新站点，并列出将分组到站点中的值。
 
 ![](assets/s_advuser_cube_class_02.png)
 
@@ -49,9 +49,9 @@ Adobe Campaign还为自动绑定提供了助手：值可以划分为N组，或�
 
 ![](assets/s_advuser_cube_class_03.png)
 
-您可以使用SQL掩码将多个值合并到过滤器中。 要执行此操作，请检查&#x200B;**[!UICONTROL Use an SQL mask]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**，然后输入要在&#x200B;**[!UICONTROL Value or expression]**&#x200B;列中应用的SQL筛选器。
+您可以使用SQL掩码将多个值合并到过滤器中。 要执行此操作，请检查 **[!UICONTROL Yes]** 在 **[!UICONTROL Use an SQL mask]** 列，并输入要在 **[!UICONTROL Value or expression]** 列。
 
-在以下示例中，所有以&#x200B;**yahoo**（yahoo.fr、yahoo.com、yahoo.be等）或&#x200B;**ymail**（ymail.com、ymail.eu等）开头的电子邮件域 将分组到标签&#x200B;**YAHOO！下**，以及rocketmail.comdomain中 **的地址** 。
+在以下示例中，所有以 **yahoo** （yahoo.fr、yahoo.com、yahoo.be等），或 **ymail** （ymail.com、ymail.eu等） 将分组到标签下 **YAHOO!**，以及 **rocketmail.com** 域。
 
 ![](assets/s_advuser_cube_class_03b.png)
 
@@ -62,7 +62,7 @@ Adobe Campaign还为自动绑定提供了助手：值可以划分为N组，或�
 要创建此类型的值绑定，请应用以下步骤：
 
 1. 创建新维度并启用绑定。
-1. 选择&#x200B;**[!UICONTROL Dynamically link the values to an enumeration]**&#x200B;选项，然后选择匹配的枚举。
+1. 选择 **[!UICONTROL Dynamically link the values to an enumeration]** 选项，然后选择匹配的枚举。
 
    ![](assets/s_advuser_cube_class_04.png)
 
@@ -72,15 +72,15 @@ Adobe Campaign还为自动绑定提供了助手：值可以划分为N组，或�
 
 您可以根据所需的间隔将值分组为多个范围。
 
-要手动定义范围，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择&#x200B;**[!UICONTROL Define a range]** :
+要手动定义范围，请单击 **[!UICONTROL Add]** 按钮，选择 **[!UICONTROL Define a range]** :
 
 ![](assets/s_advuser_cube_class_05.png)
 
-然后指定下限和上限，并单击&#x200B;**[!UICONTROL Ok]**&#x200B;进行确认。
+然后，指定下限和上限并单击 **[!UICONTROL Ok]** 确认。
 
 ### 自动生成箱 {#generating-bins-automatically}
 
-也可以自动生成垃圾桶。 为此，请单击&#x200B;**[!UICONTROL Generate bins...]**&#x200B;链接。
+也可以自动生成垃圾桶。 为此，请单击 **[!UICONTROL Generate bins...]** 链接。
 
 ![](assets/s_advuser_cube_class_06.png)
 
@@ -108,17 +108,17 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 
 ![](assets/nmx_enum_domain.png)
 
-要使用此枚举创建报告，请使用&#x200B;**[!UICONTROL Email domain]**&#x200B;维创建多维数据集。 选择&#x200B;**[!UICONTROL Enable binning]**&#x200B;选项，然后选择&#x200B;**[!UICONTROL Dynamically link the values to an enumeration]**。 然后，选择如上所示的&#x200B;**域**&#x200B;枚举。 所有没有指定别名的值都将重组到&#x200B;**Others**&#x200B;标签下。
+要使用此枚举创建报告，请使用 **[!UICONTROL Email domain]** 维度。 选择 **[!UICONTROL Enable binning]** 选项，然后 **[!UICONTROL Dynamically link the values to an enumeration]**. 然后，选择 **域** 如上所示。 没有指定别名的所有值都将重组到 **其他** 标签。
 
 ![](assets/nmx_add_dimension.png)
 
 接下来，创建基于此多维数据集的报告以显示值。
 
-您只需修改枚举即可更新相关报告。 例如，创建&#x200B;**Adobe**&#x200B;值并添加&#x200B;**adobe.com**&#x200B;别名，此时报表将自动更新为枚举级别的Adobe值。
+您只需修改枚举即可更新相关报告。 例如，创建 **Adobe** 值并添加 **adobe.com** 别名和报表将自动更新为枚举级别的Adobe值。
 
 ![](assets/nmx_add_alias.png)
 
-**[!UICONTROL Domains]**&#x200B;枚举用于生成显示域列表的内置报告。 要调整这些报表的内容，您可以编辑此列表。
+的 **[!UICONTROL Domains]** 枚举用于生成显示域列表的内置报告。 要调整这些报表的内容，您可以编辑此列表。
 
 您可以创建保留用于绑定的其他枚举，并将其用于其他多维数据集：所有别名值都将重组到第一个枚举选项卡中指定的区段中。
 
@@ -138,7 +138,7 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 
 要创建新聚合，请应用以下步骤：
 
-1. 单击多维数据集的&#x200B;**[!UICONTROL Aggregates]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
+1. 单击 **[!UICONTROL Aggregates]** 选项卡，然后单击 **[!UICONTROL Add]** 按钮。
 
    ![](assets/s_advuser_cube_agregate_02.png)
 
@@ -147,12 +147,12 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
    ![](assets/s_advuser_cube_agregate_03.png)
 
 1. 选择维度和级别。 对每个维度和每个级别重复此过程。
-1. 单击&#x200B;**[!UICONTROL Workflow]**&#x200B;选项卡以创建聚合工作流。
+1. 单击 **[!UICONTROL Workflow]** 选项卡，以创建聚合工作流。
 
    ![](assets/s_advuser_cube_agregate_04.png)
 
-   * 利用&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动，可定义计算更新的频率。 [此部分](../../workflow/using/scheduler.md)中详细介绍了调度程序。
-   * **[!UICONTROL Aggregate update]**&#x200B;活动允许您选择要应用的更新模式：完整或部分。
+   * 的 **[!UICONTROL Scheduler]** 活动可让您定义计算更新的频率。 有关调度程序的详细信息，请参见 [此部分](../../workflow/using/scheduler.md).
+   * 的 **[!UICONTROL Aggregate update]** 活动允许您选择要应用的更新模式：完整或部分。
 
       默认情况下，会在每次计算期间执行完整更新。 要启用部分更新，请选择相关选项并定义更新条件。
 
@@ -160,39 +160,39 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 
 ## 定义措施 {#defining-measures}
 
-度量类型在多维数据集的&#x200B;**[!UICONTROL Measures]**&#x200B;选项卡中定义。 您可以计算和、平均值、偏差等。
+度量类型在 **[!UICONTROL Measures]** 选项卡。 您可以计算和、平均值、偏差等。
 
-您可以创建所需数量的度量：然后，选择要在表格中显示或隐藏的度量。 有关更多信息，请参阅[显示度量](#displaying-measures)。
+您可以创建所需数量的度量：然后，选择要在表格中显示或隐藏的度量。 有关更多信息，请参阅 [显示度量](#displaying-measures).
 
 要定义新测量，请应用以下步骤：
 
-1. 单击度量列表上方的&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后选择度量类型和要计算的公式。
+1. 单击 **[!UICONTROL Add]** 按钮，并选择要计算的度量类型和公式。
 
    ![](assets/s_advuser_cube_create_a_measure.png)
 
 1. 如有必要，并根据运算符，选择操作所关注的表达式。
 
-   使用&#x200B;**[!UICONTROL Advanced selection]**&#x200B;按钮可创建复杂的计算公式。 如需详细信息，请参阅[此部分](../../platform/using/about-queries-in-campaign.md)。
+   的 **[!UICONTROL Advanced selection]** 按钮可创建复杂的计算公式。 如需详细信息，请参阅[此部分](../../platform/using/about-queries-in-campaign.md)。
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
-1. **[!UICONTROL Filter the measure data...]**&#x200B;链接允许您限制计算字段，并仅将其应用于数据库中的特定数据。
+1. 的 **[!UICONTROL Filter the measure data...]** 链接允许您限制计算字段，并仅将其应用于数据库中的特定数据。
 
    ![](assets/s_advuser_cube_create_a_measure_02.png)
 
-1. 输入度量的标签并添加描述，然后单击&#x200B;**[!UICONTROL Finish]**&#x200B;以创建它。
+1. 输入度量的标签并添加描述，然后单击 **[!UICONTROL Finish]** 来创建它。
 
 ## 显示度量 {#displaying-measures}
 
 您可以根据需要在表格中配置度量的显示：
 
-* 度量的显示顺序（参见[显示顺序](#display-sequence)），
-* 要在报表中显示/隐藏的信息（请参阅[配置显示屏](#configuring-the-display)）
-* 显示哪些度量：百分比、总数、小数位数等。 （请参阅[更改显示的度量类型](#changing-the-type-of-measure-displayed)）。
+* 度量的显示顺序(请参阅 [显示序列](#display-sequence))、
+* 要在报表中显示/隐藏的信息(请参阅 [配置显示](#configuring-the-display))
+* 显示哪些度量：百分比、总数、小数位数等。 (请参阅 [更改显示的度量类型](#changing-the-type-of-measure-displayed))。
 
 ### 显示序列 {#display-sequence}
 
-多维数据集中计算的度量通过&#x200B;**[!UICONTROL Measures]**&#x200B;按钮进行配置。
+多维数据集中计算的度量通过 **[!UICONTROL Measures]** 按钮。
 
 移动线条以更改显示顺序。 在以下示例中，法语数据被移动到列表底部：这表示它将显示在最后一列中。
 
@@ -202,7 +202,7 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 
 可以单独为每个测量或整体执行测量、行和列的配置。 使用特定图标可访问显示模式选择窗口。
 
-* 单击&#x200B;**[!UICONTROL Edit the configuration of the pivot table]**&#x200B;图标以访问配置窗口。
+* 单击 **[!UICONTROL Edit the configuration of the pivot table]** 图标以访问配置窗口。
 
    您可以选择是否显示度量的标签，并配置其布局（行或列）。
 
@@ -222,11 +222,11 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 
 配置报表后，您可以保存该报表并与其他运算符共享该报表。
 
-为此，请单击&#x200B;**[!UICONTROL Show the report properties]**&#x200B;图标并启用&#x200B;**[!UICONTROL Share this report]**&#x200B;选项。
+为此，请单击 **[!UICONTROL Show the report properties]** 图标并启用 **[!UICONTROL Share this report]** 选项。
 
 ![](assets/cube_share_option.png)
 
-指定报表所属的类别及其相关性。 有关更多信息，请参阅[本页](../../reporting/using/configuring-access-to-the-report.md#report-display-context)中的&#x200B;**显示序列**&#x200B;和&#x200B;**定义过滤选项**&#x200B;部分。
+指定报表所属的类别及其相关性。 有关更多信息，请参阅 [本页](../../reporting/using/configuring-access-to-the-report.md#report-display-context) 到 **显示序列**&#x200B;和 **定义筛选选项** 中。
 
 要确认这些更改，您需要保存报表。
 
@@ -238,7 +238,7 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 
 操作步骤：
 
-1. 单击&#x200B;**[!UICONTROL Add a filter]**&#x200B;图标。
+1. 单击 **[!UICONTROL Add a filter]** 图标。
 
    ![](assets/neolap_add_filter.png)
 
@@ -264,7 +264,7 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 
 每次修改过滤器（添加、删除、更改）时，都必须重新计算报告。
 
-也可以根据选定的内容创建过滤器。 要执行此操作，请选择源单元格、行和列，然后单击&#x200B;**[!UICONTROL Add a filter]**&#x200B;图标。
+也可以根据选定的内容创建过滤器。 要执行此操作，请选择源单元格、行和列，然后单击 **[!UICONTROL Add a filter]** 图标。
 
 要选择行、列或单元格，请左键单击该行、列或单元格。 要取消选择，请再次单击。
 

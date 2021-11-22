@@ -23,17 +23,17 @@ ht-degree: 1%
 
 有三种类型的Adobe Campaign模块：
 
-* 多实例模块：所有实例都运行一个进程。 这适用于以下模块：**web**、**syslogd**、**trackinglogd**&#x200B;和&#x200B;**watchdog**（**config-default.xml**&#x200B;文件中的活动）。
-* 单实例模块：每个实例运行一个进程。 这适用于以下模块：**mta**、**wfserver**、**inMail**、**sms**&#x200B;和&#x200B;**stat**（**config-`<instance>`.xml**&#x200B;文件中的活动）。
-* 实用程序模块：这些模块有时会运行，以执行偶尔或重复的操作（**cleanup**、**config**、下载跟踪日志等）。
+* 多实例模块：所有实例都运行一个进程。 这适用于以下模块： **web**, **syslogd**, **trackinglogd** 和 **监视** ( **config-default.xml** 文件)。
+* 单实例模块：每个实例运行一个进程。 这适用于以下模块： **mta**, **wfserver**, **inMail**, **短信** 和 **stat** ( **配置 — `<instance>`.xml** 文件)。
+* 实用程序模块：这些模块偶尔运行以执行偶尔或重复的操作(**清理**, **配置**、下载跟踪日志等)。
 
-使用安装文件夹&#x200B;**bin**&#x200B;目录中安装的命令行工具&#x200B;**nlserver**&#x200B;执行模块管理。
+使用命令行工具执行模块管理 **nlserver** 在 **宾** 安装文件夹的目录。
 
-**nlserver**&#x200B;工具的一般语法如下：
+的常规语法 **nlserver** 工具如下所示：
 
-**nlserver  `<command>``<command arguments>`**
+**nlserver `<command>``<command arguments>`**
 
-有关可用模块的列表，请使用&#x200B;**nlserver**&#x200B;命令。
+有关可用模块的列表，请使用 **nlserver** 命令。
 
 下表详细介绍了可用模块：
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 >
 >最后一个模块：链接到应用程序服务器的跟踪和中继模块，为了性能起见，它通过本机机制通过动态库集成到Apache或IIS Web服务器中。 没有可启动或管理此模块的Adobe Campaign命令。 因此，必须使用Web服务器本身的命令。
 
-使用以下命令显示模块用法及其参数的语法：**nlserver `[module]` -?**
+使用以下命令显示模块用法及其参数的语法： **nlserver `[module]` -?**
 
 示例:
 

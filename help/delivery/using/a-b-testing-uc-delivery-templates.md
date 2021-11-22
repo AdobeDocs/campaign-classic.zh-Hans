@@ -17,10 +17,10 @@ ht-degree: 20%
 
 ![](../../assets/common.svg)
 
-我们现在要创建两个投放模板。 每个模板都将在链接到&#x200B;**[!UICONTROL Split]**&#x200B;活动的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动中引用。 如需详细信息，请参阅[此部分](about-templates.md)。
+我们现在要创建两个投放模板。 每个模板都将在 **[!UICONTROL Email delivery]** 链接到的活动 **[!UICONTROL Split]** 活动。 如需详细信息，请参阅[此部分](about-templates.md)。
 
-1. 浏览到&#x200B;**[!UICONTROL Resources > Delivery template]**&#x200B;文件夹。
-1. 复制&#x200B;**[!UICONTROL Email]**&#x200B;投放模板。
+1. 浏览到 **[!UICONTROL Resources > Delivery template]** 文件夹。
+1. 复制 **[!UICONTROL Email]** 投放模板。
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 

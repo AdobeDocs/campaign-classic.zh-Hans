@@ -25,17 +25,17 @@ Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这�
 
 权限适用于操作员配置文件或操作员组。
 
-这些配置文件由链接到操作员连接模式的安全参数完成，Adobe Campaign。 有关[此页面](../../installation/using/security-zones.md)中安全区的更多信息。
+这些配置文件由链接到操作员连接模式的安全参数完成，Adobe Campaign。 有关 [本页](../../installation/using/security-zones.md).
 
 您可以向用户授予两种类型的权限：
 
-* 您可以定义属性权限的运算符组，然后将运算符与一个或多个组关联。 这样，您就可以重复使用权限，并使操作员配置文件更加一致。 它还有助于用户档案的管理和维护。 组创建和管理请参见[此部分](access-management-groups.md)。
+* 您可以定义属性权限的运算符组，然后将运算符与一个或多个组关联。 这样，您就可以重复使用权限，并使操作员配置文件更加一致。 它还有助于用户档案的管理和维护。 集团创建及管理于 [此部分](access-management-groups.md).
 
-* 您可以将命名权限直接归因于用户，在某些情况下，会导致通过组分配的权限过载。 这些权限显示在[此页面](access-management-named-rights.md)中。
+* 您可以将命名权限直接归因于用户，在某些情况下，会导致通过组分配的权限过载。 该等权利于 [本页](access-management-named-rights.md).
 
 >[!NOTE]
 >
->在开始定义权限之前，Adobe建议您阅读[安全配置检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)。
+>在开始定义权限之前，Adobe建议您 [安全配置检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html).
 
 在以下部分中了解如何授予访问权限和设置权限：
 

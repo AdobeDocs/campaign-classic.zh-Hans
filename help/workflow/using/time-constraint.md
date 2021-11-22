@@ -17,10 +17,10 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
-通过&#x200B;**时间约束**&#x200B;活动，您可以推迟执行或放弃任务。
+A **时间约束** 活动允许您延迟执行或放弃任务。
 
 输入活动的标签，并指定必须暂停工作流任务的时间范围。
 
-选择&#x200B;**[!UICONTROL Try again later if outside of execution period]**&#x200B;选项后，您可以在执行时间范围之外重新启动任务。 如果希望在工作流操作暂停后永久放弃该操作，请取消选择此选项。
+当 **[!UICONTROL Try again later if outside of execution period]** 选项，它允许您在执行时间范围之外重新启动任务。 如果希望在工作流操作暂停后永久放弃该操作，请取消选择此选项。
 
 ![](assets/s_user_scheduled_wait.png)

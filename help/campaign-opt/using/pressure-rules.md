@@ -81,7 +81,7 @@ ht-degree: 4%
 
 1. 指定计算投放权重的方法。
 
-   每个投放都有一个权重，即表示其优先级的值：这允许在活动之间进行仲裁。 权重使用分类规则和/或其属性中定义的公式计算。 For more on this, refer to [Message weight](#message-weight).
+   每个投放都有一个权重，即表示其优先级的值：这允许在活动之间进行仲裁。 权重使用分类规则和/或其属性中定义的公式计算。 有关更多信息，请参阅 [消息权重](#message-weight).
 
 1. 默认情况下，所有消息都会考虑阈值计算式。的 **[!UICONTROL Restriction]** 选项卡，可过滤与分类规则相关的消息：
 
@@ -130,7 +130,7 @@ ht-degree: 4%
 
 **示例:**
 
-In the following example, we want to link the weight of newsletters on music to the propensity score of their recipients. 操作步骤：
+在以下示例中，我们希望将音乐新闻稿的权重与其收件人的倾向得分相关联。 操作步骤：
 
 1. 创建新字段以存储收件人倾向得分。 字段， **@Music** 在这种情况下，将通过调查和在线投票、收集的跟踪数据等的回答来扩充。
 1. 创建分类规则以根据此字段计算消息权重。
@@ -163,7 +163,7 @@ In the following example, we want to link the weight of newsletters on music to 
 >
 >期间开始日期取决于数据库的配置方式。
 
-For instance, if you apply a 15-day pressure rule without grouping to a delivery dated 12/11, deliveries will be taken into account between 11/27 and 12/12. 如果压力规则考虑临时日历中的投放，则11/27至12/27之间计划的所有投放都将被考虑在内。 最后，如果在规则中为每个日历月配置分组，则在计算阈值时(从11/1到12/31)会考虑11月和12月的所有投放。
+例如，如果对日期为12/11的投放应用15天压力规则而不进行分组，则11/27到12/12之间的投放将被考虑在内。 如果压力规则考虑临时日历中的投放，则11/27至12/27之间计划的所有投放都将被考虑在内。 最后，如果在规则中为每个日历月配置分组，则在计算阈值时(从11/1到12/31)会考虑11月和12月的所有投放。
 
 >[!CAUTION]
 >
@@ -182,7 +182,7 @@ For instance, if you apply a 15-day pressure rule without grouping to a delivery
 
 ![](assets/campaign_opt_pressure_period_sample_0.png)
 
-The deliveries scheduled for 12th and 30th of June will not be sent: the 06/12 delivery would exceed the threshold of 3 messages per 2-week period, and the 30th delivery would exceed the threshold of authorized communications per calendar month.
+计划于6月12日和30日的投放将不会发送：06/12次投放将超过每两周3条报文的阈值，第30次投放将超过每个日历月授权通信的阈值。
 
 ![](assets/campaign_opt_pressure_period_sample_1.png)
 
@@ -190,9 +190,9 @@ The deliveries scheduled for 12th and 30th of June will not be sent: the 06/12 d
 
 ![](assets/campaign_opt_pressure_period_sample_2.png)
 
-For the same rule, if you group deliveries per quarter, the recipients of **newsletter no.5** will also be excluded, and it will not be sent.
+对于同一规则，如果按季度对投放进行分组，则收件人为 **新闻稿第5号** 也将被排除，且不会发送。
 
-Finally, if no grouping is selected, only **newsletter no.4** will not be sent, since it was scheduled for the same 2-week period as the first three newsletters.
+最后，如果未选择分组，则仅 **新闻稿第4号** 将不会发送，因为它计划在与前三个新闻稿相同的2周期间发送。
 
 >[!NOTE]
 >
@@ -204,7 +204,7 @@ Finally, if no grouping is selected, only **newsletter no.4** will not be sent, 
 
 的 **[!UICONTROL Forecasting]** 工作流会预计进行中期间（从开始日期到当前日期）的数据，以便在分析期间应用分类规则。 它还重新计算每晚仲裁的排除计数器。
 
-因此，对于每个收件人，Adobe Campaign检查要发送的消息数是否未超过阈值，同时考虑到在有关期间已发送的消息数。 此信息是 **指示器**，因为所有计算都会在交付时更新。
+因此，对于每个收件人，Adobe Campaign检查要发送的消息数量是否未超过阈值，同时考虑到在有关期间已发送的消息数量。 此信息是 **指示器**，因为所有计算都会在交付时更新。
 
 如果此数字超过阈值，则应用促销活动分类中定义的仲裁规则，并将收件人从权重较低的促销活动中排除。
 
@@ -309,7 +309,7 @@ Finally, if no grouping is selected, only **newsletter no.4** will not be sent, 
 
    ![](assets/campaign_opt_pressure_sample_2_3.png)
 
-1. Click **[!UICONTROL Finish]** to save this rule.
+1. 单击 **[!UICONTROL Finish]** 来保存此规则。
 1. 将规则链接到营销活动分类，并在投放中引用此分类以批准该分类。
 
 ### 仅发送加权最高的消息 {#sending-only-the-highest-weighted-messages}

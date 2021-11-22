@@ -23,7 +23,7 @@ ht-degree: 4%
 开始发送短信之前：
 
 * 确保收件人的用户档案至少包含其用户档案中的移动电话。
-* 进一步了解Adobe Campaign [投放最佳实践](delivery-best-practices.md)。
+* 进一步了解Adobe Campaign [投放最佳实践](delivery-best-practices.md).
 
 发送短信的关键步骤如下：
 
@@ -34,12 +34,12 @@ ht-degree: 4%
 * [发送、监控和跟踪短信](sms-send.md)
 * [故障诊断](troubleshooting-sms.md)
 
-此外，您还需要熟悉短信协议和设置。 浏览[本文档](sms-protocol.md)中Adobe Campaign与SMPP提供程序之间设置的连接
+此外，您还需要熟悉短信协议和设置。 逐步了解Adobe Campaign与SMPP提供商之间在 [本文档](sms-protocol.md)
 
-有关如何创建投放的全局信息，请参阅[此部分](steps-about-delivery-creation-steps.md)。
+有关如何创建投放的全局信息，请参阅 [此部分](steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >
->Adobe Campaign还允许您通过其&#x200B;**Adobe Campaign移动应用程序渠道(NMAC)**&#x200B;选项在移动终端上提交通知。
+>Adobe Campaign还允许您通过 **Adobe Campaign移动设备应用程序渠道(NMAC)** 选项。
 > 
->有关更多信息，请参阅[移动应用程序渠道快速入门](about-mobile-app-channel.md)一节。
+>有关更多信息，请参阅 [移动应用程序渠道快速入门](about-mobile-app-channel.md) 中。

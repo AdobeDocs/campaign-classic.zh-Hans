@@ -27,7 +27,7 @@ ht-degree: 10%
 
 ![](assets/Offermgt2.png)
 
-![](assets/do-not-localize/how-to-video.png) 要熟悉Campaign交互中使用的交互功能和术语，请观看 [此视频](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)。
+![](assets/do-not-localize/how-to-video.png) 要熟悉Campaign交互中使用的交互功能和术语，请观看 [此视频](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com).
 
 ## 相关主题
 

@@ -45,9 +45,9 @@ Adobe Campaign将外部帐户视为无关实体。
 您必须联系提供商以诊断其方面的潜在冲突。
 
    * 某些外部帐户共享相同的登录/密码组合。
-提供商无法分辨`BIND PDU`来自哪个外部帐户，因此他们将多个帐户中的所有连接视为单个帐户。 他们可能已将MO和SR随机路由到两个帐户，从而导致问题。
-如果提供商支持同一登录名/密码组合的多个短代码，则您必须要求他们在`BIND PDU`中放置该短代码的位置。 请注意，此信息必须放在`BIND PDU`中，而不是`SUBMIT_SM`中，因为`BIND PDU`是允许正确路由MO的唯一位置。
-请参阅上面每种PDU](sms-protocol.md#information-pdu)中的[信息部分，了解`BIND PDU`中提供哪个字段，通常在`address_range`中添加短代码，但需要提供商的特殊支持。 请联系他们，了解他们希望如何单独发送多个短代码。
+提供商无法从哪个外部帐户了解 `BIND PDU` 来自，因此他们会将多个帐户中的所有连接视为单个连接。 他们可能已将MO和SR随机路由到两个帐户，从而导致问题。
+如果提供商支持同一登录名/密码组合的多个短代码，则您必须要求他们在 `BIND PDU`. 请注意，此信息必须放在 `BIND PDU`，而不是 `SUBMIT_SM`，自 `BIND PDU` 是唯一允许正确路由MO的位置。
+请参阅 [每种PDU中的信息](sms-protocol.md#information-pdu) 部分以了解 `BIND PDU`，通常在 `address_range`，但需要提供商的特殊支持。 请联系他们，了解他们希望如何单独发送多个短代码。
 Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 ## 一般情况下，外部帐户出现问题 {#external-account-issues}
@@ -77,15 +77,15 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 ## 连接到提供程序时出现问题 {#issue-provider}
 
-* 如果`BIND PDU`返回非零`command_status`代码，请向提供程序获取更多信息。
+* 如果 `BIND PDU` 返回非零 `command_status` 代码，请咨询提供商以了解更多信息。
 
 * 检查网络是否配置正确，以便能够与提供程序建立TCP连接。
 
 * 要求提供商检查他们是否将IP正确添加允许列表到Adobe Campaign实例的。
 
-* 检查&#x200B;**外部帐户**&#x200B;设置。 向提供商询问字段的值。
+* 检查 **外部帐户** 设置。 向提供商询问字段的值。
 
-* 如果连接成功但不稳定，请检查[连接不稳定的问题](troubleshooting-sms.md#issues-unstable-connection)部分。
+* 如果连接成功但不稳定，请检查 [连接不稳定的问题](troubleshooting-sms.md#issues-unstable-connection) 中。
 
 * 如果连接问题难以诊断，网络捕获可以提供信息。 确保在出现问题时网络捕获同时运行，以便对其进行有效分析。 您还应注意问题出现的确切时间。
 
@@ -95,11 +95,11 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 * 连接持续时间不足1小时。 由于Adobe Campaign Classic MTA的工作方式，Adobe Campaign Classic发送器连接是一个例外。
 
-* 提供程序发送`UNBIND PDU`s。
+* 提供程序发送 `UNBIND PDU`s.
 
-* `enquire_link` 超时(在Adobe Campaign端或提供商端)。在这种情况下，您可能会看到`ENQUIRE_LINK_RESP`带有非零错误代码。
+* `enquire_link` 超时(在Adobe Campaign端或提供商端)。 您可能会看到 `ENQUIRE_LINK_RESP` 非零错误代码。
 
-* 有许多`BIND PDU`s。一天中的连接数不应多于几个，具体取决于连接数。 每小时应有超过1个BIND PDU发出警报。
+* 有很多 `BIND PDU`s.一天中的连接数不应多于几个，具体取决于连接数。 每小时应有超过1个BIND PDU发出警报。
 
 如何修复连接稳定性问题：
 
@@ -107,29 +107,29 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 * 启用详细的SMPP跟踪。 您需要他们查看连接重新启动时所发生的情况。
 
-* 如果提供程序发送`BIND PDU`s，则可能出现问题。 询问您的提供商发送`UNBING`的原因。
+* 如果提供商发送 `BIND PDU`可能出了点问题。 询问您的提供商为什么 `UNBING` 已发送。
 
 * 有时，获取网络捕获是查看连接如何关闭的唯一方法。
 
-* 如果提供程序通过发送`TCP FIN`或`TCP RST packet`来关闭连接，请咨询提供程序的详细信息。
+* 如果提供程序通过发送 `TCP FIN` 或 `TCP RST packet`，请咨询您的提供商详细信息。
 
-* 如果提供程序在发送带有错误代码的`DELIVER_SM_RESP`等干净错误后关闭连接，则必须修复其连接器，否则将阻止其他类型的消息传输，并触发MTA限制。 在收发器模式下，关闭连接会影响MT和SR，这一点尤其重要。
+* 如果提供程序在发送清理错误(如 `DELIVER_SM_RESP` 如果出现错误代码，则他们必须修复其连接器，否则将阻止其他类型的消息传输，并触发MTA限制。 在收发器模式下，关闭连接会影响MT和SR，这一点尤其重要。
 
 ## 发送MT（发送给最终用户的常规短信）时出现问题{#issue-MT}
 
-* 检查连接是否稳定。 除Adobe Campaign Classic上的发射器外，SMPP连接应持续保持至少1小时的高度。 请参阅[连接不稳定的问题](sms-protocol.md#issues-unstable-connection)一节。
+* 检查连接是否稳定。 除Adobe Campaign Classic上的发射器外，SMPP连接应持续保持至少1小时的高度。 请参阅部分 [连接不稳定的问题](sms-protocol.md#issues-unstable-connection).
 
-* 如果重新启动MTA会使发送MT在较短的时间内再次工作，则可能由于连接不稳定而出现限制。 请参阅[连接不稳定的问题](troubleshooting-sms.md#issues-unstable-connection)一节。
+* 如果重新启动MTA会使发送MT在较短的时间内再次工作，则可能由于连接不稳定而出现限制。 请参阅部分 [连接不稳定的问题](troubleshooting-sms.md#issues-unstable-connection).
 
 * 检查广泛日志是否存在，且状态正确且日期正确。 如果不是，则可能是投放或投放准备问题。
 
-* 检查MTA是否实际处理了消息。 如果不是这种情况，可能不是短信问题。
+* 检查MTA是否实际处理了消息。 如果不是这样，则可能不是短信问题。
 
-* 检查SMS连接器是否与提供商的设备绑定。 请向提供者提供反馈，以确保所有系统都通信正确。 有关绑定过程的信息，请参阅`BIND_TRANSMITTER`和`BIND_TRANSCEIVER PDU`s 。 您可能需要启用SMPP跟踪才能进行正确的故障诊断。
+* 检查SMS连接器是否与提供商的设备绑定。 请向提供者提供反馈，以确保所有系统都通信正确。 请参阅 `BIND_TRANSMITTER` 和 `BIND_TRANSCEIVER PDU`s ，以了解有关绑定过程的信息。 您可能需要启用SMPP跟踪才能进行正确的故障诊断。
 
-* 启用SMPP跟踪后，检查`SUBMIT_SM PDU`是否包含正确的信息。
+* 启用SMPP跟踪后，检查 `SUBMIT_SM PDU` 包含正确的信息。
 
-* 检查提供程序是否以`SUBMIT_SM_RESP PDU`的“OK”值（代码0）进行响应。 确保PDU到达合理延迟：超过1秒的内容必须与提供商讨论，通常在100毫秒内到达。
+* 检查提供程序是否使用 `SUBMIT_SM_RESP PDU` 值（代码0）。 确保PDU到达合理延迟：超过1秒的内容必须与提供商讨论，通常在100毫秒内到达。
 
 * 如果所有这些步骤都有效，您可以确信问题在提供方方。 他们必须在其平台上进行故障排除。
 
@@ -139,29 +139,29 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 重复项通常由重试引起。 重试消息时通常会出现重复项，您应尝试删除重试的根本原因。
 
-* 如果您在60秒之外看到重复项正好发送，则在提供程序端可能会出现问题，他们无法足够快地发送`SUBMIT_SM_RESP`。
+* 如果您看到重复项间隔60秒发送，则在提供程序端可能会出现问题，他们不会发送 `SUBMIT_SM_RESP` 快点。
 
-* 如果看到许多`BIND/UNBIND`，则连接不稳定。 在尝试解决重复消息问题之前，请参阅[不稳定连接问题](troubleshooting-sms.md#issues-unstable-connection)部分以了解解决方案。
+* 如果您看到许多 `BIND/UNBIND`，则连接不稳定。 请参阅[连接不稳定的问题](troubleshooting-sms.md#issues-unstable-connection) 部分，以了解解决重复消息问题。
 
 请减少重试时的重复数量：
 
-* 降低发送窗口。 发送窗口应该足够大，足以覆盖`SUBMIT_SM_RESP`延迟。 其值表示在窗口已满时发生错误时可复制的消息数量上限。
+* 降低发送窗口。 发送窗口应该足够大，可以盖住 `SUBMIT_SM_RESP` 延迟。 其值表示在窗口已满时发生错误时可复制的消息数量上限。
 
 ## 处理SR（交货收据）时发出 {#issue-process-SR}
 
 * 您需要启用SMPP跟踪才能进行任何类型的SR故障排除。
 
-* 检查`DELIVER_SM PDU`是否来自提供程序，并检查其格式是否正确。
+* 检查 `DELIVER_SM PDU` 来自提供商，且其格式正确。
 
-* 及时检查Adobe Campaign是否以成功的`DELIVER_SM_RESP PDU`回复。 在Adobe Campaign Classic上，这可以保证SR已插入`providerMsgId`表中，以便SMS进程进行延迟处理。
+* 检查Adobe Campaign是否成功回复 `DELIVER_SM_RESP PDU` 及时。 在Adobe Campaign Classic上，这保证SR已插入 `providerMsgId` 用于短信流程延期处理的表。
 
-如果未成功确认`DELIVER_SM PDU`，则应检查以下内容：
+如果 `DELIVER_SM PDU` 未成功确认，则应检查以下内容：
 
-* 检查与&#x200B;**External account**&#x200B;中的id提取和错误处理相关的正则表达式。 您可能需要根据`DELIVER_SM PDU`的内容验证它们。
+* 在中检查与id提取和错误处理相关的正则表达式 **外部帐户**. 您可能需要根据 `DELIVER_SM PDU`.
 
-* 检查是否在`broadLogMsg`表中正确设置了错误。
+* 检查错误是否在 `broadLogMsg` 表。
 
-如果`DELIVER_SM PDU`已由Adobe Campaign Classic扩展SMPP连接器确认，但broadLog未正确更新，请检查[匹配MT、SR和broadlog条目](sms-protocol.md#matching-mt)部分中描述的ID协调过程。
+如果 `DELIVER_SM PDU` 已得到Adobe Campaign Classic扩展SMPP连接器的确认，但broadLog未正确更新，请检查部分中描述的ID协调过程 [匹配MT、SR和broadlog条目](sms-protocol.md#matching-mt).
 
 如果您修复了所有问题，但某些无效SR仍在提供商的缓冲区中，则可以使用“无效ID确认计数”选项跳过它们。 应当谨慎使用，并在缓冲区清理后尽快将其重置为0。
 
@@ -171,19 +171,19 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 * 在捕获网络流量或分析SMPP跟踪时，如果配置了回复，请务必捕获与MO及其回复MT的整个对话。
 
-* 如果跟踪中未显示MO(`DELIVER_SM PDU`)，则问题出在提供程序端。 他们必须在其平台上进行故障排除。
+* 如果MO(`DELIVER_SM PDU`)未显示在跟踪中，问题出在提供程序端。 他们必须在其平台上进行故障排除。
 
-* 如果出现`DELIVER_SM PDU`，请检查Adobe Campaign是否确认它已成功`DELIVER_SM_RESP PDU`（代码0）。 此RESP可保证Adobe Campaign（自动回复和允许/）已应用所有处阻止列表理逻辑。 如果不适用，请在短信流程日志中搜索错误消息。
+* 如果 `DELIVER_SM PDU` 显示，检查是否已由Adobe Campaign确认成功 `DELIVER_SM_RESP PDU` （代码0）。 此RESP可保证Adobe Campaign（自动回复和允许/）已应用所有处阻止列表理逻辑。 如果不适用，请在短信流程日志中搜索错误消息。
 
-* 如果启用了自动回复，请检查是否已将`SUBMIT_SM`发送到提供程序。 如果没有，则保证在短信流程日志中找到错误消息。
+* 如果启用了自动回复，请检查 `SUBMIT_SM` 已发送给提供商。 如果没有，则保证在短信流程日志中找到错误消息。
 
-* 如果在跟踪中找到包含回复的`SUBMIT_SM MT PDU`，但短信未到达手机，则必须联系提供商以获取疑难解答帮助。
+* 如果 `SUBMIT_SM MT PDU` 包含回复的内容位于跟踪中，但短信未到达手机，您必须联系提供商以获取疑难解答帮助。
 
 ## 投放准备期间未排除隔离的收件人（由自动回复功能隔离）的问题 {#issue-delivery-preparation}
 
-* 检查隔离表和投放日志中的电话号码格式是否完全相同。 如果没有，请参阅此[部分](sms-protocol.md#automatic-reply)，如果您在国际电话号码格式的加号前缀中遇到问题。
+* 检查隔离表和投放日志中的电话号码格式是否完全相同。 如果不是，请参阅此 [部分](sms-protocol.md#automatic-reply) 如果您遇到国际电话号码格式的加号前缀问题。
 
-* 检查短代码。 如果收件人的短代码与外部帐户中定义的短代码相同，或者为空(empty = any shortcode)，则可能会排除。 如果整个Adobe Campaign实例只使用一个短代码，则更容易将所有&#x200B;**short code**&#x200B;字段留空。
+* 检查短代码。 如果收件人的短代码与外部帐户中定义的短代码相同，或者为空(empty = any shortcode)，则可能会排除。 如果整个Adobe Campaign实例只使用一个简短代码，则更容易保留所有 **短码** 字段为空。
 
 ## 编码问题 {#encoding-issues}
 
@@ -201,17 +201,17 @@ Unicode允许许多类似字符的变体，Adobe Campaign无法处理所有这�
 
 使用十六进制，您可以区分相似字符之间的差异。 小写L、大写I、O、0、所有不同类型的引号、非拉丁编码，甚至不同类型的空格都可能看起来相同甚至根本不显示。
 
-要将Unicode转换为十六进制，可以使用在线工具，如[Unicode代码转换器](https://r12a.github.io/app-conversion/)网站。 在文本中键入，确保没有PII（如电话号码），然后单击&#x200B;**Convert**。 您将在底部看到十六进制值（UTF-32区域）。
+要将Unicode转换为十六进制，您可以使用在线工具，如 [Unicode代码转换器](https://r12a.github.io/app-conversion/) 网站。 键入文本，确保没有PII（如电话号码），然后单击 **转换**. 您将在底部看到十六进制值（UTF-32区域）。
 
-打开有关编码问题的票证(无论是与提供商还是[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html))时，始终包含您键入的内容和所看到内容的十六进制版本。
+打开有关编码问题的票证时，无论是与提供商还是 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)，将始终包含您键入的内容和看到的内容的十六进制版本。
 
 **步骤3:知道您应发送什么**
 
-确定预期使用的编码，并联机搜索其字符表。 检查您打算发送的字符是否实际可在目标代码页面中使用。 检查`data_coding`字段是否正确，是否与您和提供商的期望值匹配。
+确定预期使用的编码，并联机搜索其字符表。 检查您打算发送的字符是否实际可在目标代码页面中使用。 检查 `data_coding` 字段正确，且与您和提供商的期望值相匹配。
 
 **步骤4:了解您实际发送的内容**
 
-您需要连接器的调试输出才能准确查看您发送给提供程序的字节。 编码问题出现在`SUBMIT_SM PDU`s中，因此请务必捕获这些问题。 发送非常独特的消息，这些消息在日志中很容易找到。
+您需要连接器的调试输出才能准确查看您发送给提供程序的字节。 中出现编码问题 `SUBMIT_SM PDU`所以一定要抓住他们。 发送非常独特的消息，这些消息在日志中很容易找到。
 
 测试时发送不同种类的特殊字符。 例如，GSM7编码的扩展字符以十六进制形式非常不同，因此很容易发现，因为它们不显示在任何其他编码中。
 
@@ -219,7 +219,7 @@ Unicode允许许多类似字符的变体，Adobe Campaign无法处理所有这�
 
 每当您在短信问题上寻求帮助(无论是向Adobe Campaign开启支持票证还是向短信提供商提供帮助，还是就此问题进行任何类型的通信)时，都需要包含以下信息以确保其符合相应的资格条件。 合格的问题是更快地解决问题的关键。
 
-* **出现问题时** 启用详细SMPP消息。没有这个，大多数短信问题都无法解决。
+* **启用详细SMPP消息** 当问题出现时。 没有这个，大多数短信问题都无法解决。
 
 * 如果问题与短信流量相关，请先与提供商联系。 其平台最适合于对短信流量问题进行实时高效诊断。
 
@@ -243,7 +243,7 @@ Unicode允许许多类似字符的变体，Adobe Campaign无法处理所有这�
 
 并非总是需要网络捕获，通常只需详细的SMPP消息即可。 以下是一些准则，可帮助您确定是否需要网络捕获：
 
-* 连接问题，但详细消息不显示任何`BIND_RESP PDU`。
+* 连接问题，但详细消息不显示任何 `BIND_RESP PDU`.
 
 * 无法解释的断开连接，且没有错误消息，连接器在检测到低级别协议错误时的常见行为。
 
@@ -261,7 +261,7 @@ Unicode允许许多类似字符的变体，Adobe Campaign无法处理所有这�
 
 * 性能问题：日志包含跟踪性能问题所需的所有信息。
 
-* 计时问题（`retry timing`、`enquire_link`期间、吞吐量上限等）
+* 计时问题(`retry timing`, `enquire_link` 句点、吞吐量上限等)
 
 * SR解析和处理：详细的日志提供了更多的上下文和更好的演示。
 
@@ -275,14 +275,14 @@ Unicode允许许多类似字符的变体，Adobe Campaign无法处理所有这�
 
 **按外部帐户启用（首选方法）**
 
-1. 在&#x200B;**外部帐户**&#x200B;中，选中&#x200B;**在日志文件**&#x200B;中启用详细的SMPP跟踪。
+1. 在 **外部帐户**，勾选 **在日志文件中启用详细的SMPP跟踪**.
 1. 等待10分钟，让服务器重新加载外部帐户。
 
 它现在应该处于活动状态。
 
 **在配置中启用**
 
-在`config-instance.xml`文件中，设置以下参数：
+在 `config-instance.xml` ，请设置以下参数：
 
 ```
 <mta>

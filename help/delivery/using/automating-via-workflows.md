@@ -21,7 +21,7 @@ ht-degree: 1%
 
 使用通过Adobe Campaign客户端界面配置的工作流程，可以自动创建、编辑和发布内容。
 
-可通过工作流图的&#x200B;**[!UICONTROL Tools]**&#x200B;工具栏访问&#x200B;**内容管理**&#x200B;活动。
+的 **内容管理** 通过 **[!UICONTROL Tools]** 工具栏。
 
 活动属性分为四个步骤：
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 ### 过渡 {#transition}
 
-使用&#x200B;**生成输出过渡**&#x200B;选项，可向&#x200B;**[!UICONTROL Content management]**&#x200B;活动添加输出过渡，以将新活动链接到工作流执行。 选中此选项后，输入过渡的标签。
+的 **生成输出过渡** 选项，可向 **[!UICONTROL Content management]** 活动，将新活动链接到工作流执行。 选中此选项后，输入过渡的标签。
 
 ## 示例 {#examples}
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 通过发布模型和内容字符串文件夹创建新的内容实例。
 
-在我们的示例中，我们超载了投放主题。 将考虑该参数，而不是在&#x200B;**[!UICONTROL Delivery]**&#x200B;模板中输入的参数。
+在我们的示例中，我们超载了投放主题。 系统将考虑该事件，而不是 **[!UICONTROL Delivery]** 模板。
 
 内容由来自输入URL的XML馈送自动填充：
 
@@ -103,7 +103,7 @@ ht-degree: 1%
 </book>
 ```
 
-数据格式与在发布模板中输入的数据架构不匹配（在我们的示例中为&#x200B;**cus:book**）；**`<section>`**&#x200B;元素必须替换为&#x200B;**`<chapter>`**&#x200B;元素。 我们需要应用“cus:book-workflow.xsl”样式表以进行必要的更改。
+数据格式与在发布模板(**cus:book** );the **`<section>`** 元素必须替换为 **`<chapter>`** 元素。 我们需要应用“cus:book-workflow.xsl”样式表以进行必要的更改。
 
 使用的XSLT样式表的源代码：
 
@@ -142,17 +142,17 @@ ht-degree: 1%
 
 活动的最终操作是保存内容实例并继续执行下一项任务。
 
-通过&#x200B;**Query**&#x200B;活动进行定位。
+通过 **查询** 活动。
 
-添加了&#x200B;**AND-join**&#x200B;活动，以确保只有在完成目标查询和内容更新后才开始投放。
+安 **AND — 连接** 添加了活动，以确保仅在完成target查询和内容更新后才开始投放。
 
-投放操作通过&#x200B;**Delivery**&#x200B;活动进行配置：
+投放操作通过 **投放** 活动：
 
 ![](assets/d_ncs_content_workflow4.png)
 
 将基于模板创建新投放操作。
 
-活动的投放模板用于选择发布模板的转换模板。 内容生成过程将考虑所有没有投放模板的HTML和文本模板，或者那些使用与活动相同的模板引用的模板。
+活动的投放模板用于选择发布模板的转换模板。 内容生成过程将考虑所有没有投放模板的HTML和文本模板，或者那些使用与活动相同的模板引用的内容和文本模板。
 
 将通过传入事件输入要传送的目标。
 
@@ -166,13 +166,13 @@ ht-degree: 1%
 
 ![](assets/d_ncs_content_workflow5.png)
 
-第一个&#x200B;**内容管理**&#x200B;任务会创建一个内容实例。
+第一个 **内容管理** 任务会创建内容实例。
 
 ![](assets/d_ncs_content_workflow6.png)
 
 >[!NOTE]
 >
->转换模板窗口的&#x200B;**[!UICONTROL Publication]**&#x200B;选项卡必须填充要生成的目标位置。
+>的 **[!UICONTROL Publication]** 必须使用要生成的目标的位置填充转换模板窗口的选项卡。
 
 将添加等待活动，以暂停下一个过渡一周。
 
@@ -188,7 +188,7 @@ ht-degree: 1%
 
 最终操作是通过强制发布目录生成此内容。
 
-**JavaScript代码**&#x200B;活动可检索每个生成文件的全名。
+的 **JavaScript代码** 活动会检索每个生成文件的完整名称。
 
 ![](assets/d_ncs_content_workflow9.png)
 
@@ -198,11 +198,11 @@ ht-degree: 1%
 
 ![](assets/d_ncs_content_workflow10.png)
 
-第一个&#x200B;**创建投放**&#x200B;任务将创建投放操作。
+第一个 **创建投放** 任务会创建投放操作。
 
 利用分支活动，可并行启动目标计算和内容实例的创建。
 
-执行任务后，AND-join框将激活&#x200B;**投放**&#x200B;任务，以在内容和定位上启动之前创建的投放。
+执行任务后，AND-join框将激活 **投放** 任务，以启动之前创建的有关内容和定位的投放。
 
 ![](assets/d_ncs_content_workflow11.png)
 
@@ -216,11 +216,11 @@ ht-degree: 1%
 
 ### 从FTP导入内容 {#importing-content-from-ftp}
 
-如果您的交付内容位于FTP或SFTP服务器上的HTML文件中，则可以轻松地将此内容加载到Adobe Campaign交付中。 请参见[此示例](../../workflow/using/loading-delivery-content.md)。
+如果您的交付内容位于FTP或SFTP服务器上的HTML文件中，则可以轻松地将此内容加载到Adobe Campaign交付中。 请参阅 [此示例](../../workflow/using/loading-delivery-content.md).
 
 ### 从Amazon Simple Storage Service(S3)连接器导入内容 {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-如果您的投放内容位于Amazon简单存储服务(S3)存储段中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参见[此示例](../../workflow/using/loading-delivery-content.md)。
+如果您的投放内容位于Amazon简单存储服务(S3)存储段中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参阅 [此示例](../../workflow/using/loading-delivery-content.md).
 
 ## 半自动更新 {#semi-automatic-update}
 
@@ -228,11 +228,11 @@ ht-degree: 1%
 
 通过输入表单手动激活数据恢复。
 
-其目的是在表单中声明&#x200B;**editBtn**&#x200B;类型&#x200B;**`<input>`**&#x200B;字段。 此控件包括编辑区域和用于启动处理的按钮。
+目的是宣布 **editBtn** type **`<input>`** 字段。 此控件包括编辑区域和用于启动处理的按钮。
 
 利用编辑区域，可填充用于构建要检索的XML数据馈送URL的变量数据。
 
-该按钮执行在&#x200B;**`<input>`**&#x200B;标记下填充的&#x200B;**GetAndTransform** SOAP方法。
+按钮执行 **GetAndTransform** 在 **`<input>`** 标记。
 
 格式的控制声明如下：
 
@@ -248,7 +248,7 @@ ht-degree: 1%
 </input>
 ```
 
-必须在&#x200B;**`<input>`**&#x200B;标记的&#x200B;**`<enter>`**&#x200B;元素下声明&#x200B;**GetAndTransform**&#x200B;方法。 此标记将从动态构建的表达式恢复XML数据的URL作为参数。 函数的第二个参数是可选的，当传入的XML数据与内容的格式不同时，会引用用于中间转换的样式表。
+的 **GetAndTransform** 方法必须在 **`<enter>`** 元素 **`<input>`** 标记。 此标记将从动态构建的表达式恢复XML数据的URL作为参数。 函数的第二个参数是可选的，当传入的XML数据与内容的格式不同时，会引用用于中间转换的样式表。
 
 输出会根据在最后一个参数中输入的路径来更新内容。
 

@@ -23,8 +23,8 @@ ht-degree: 4%
 
 选件管理通过Adobe Campaign中的文件夹树执行。
 
-在创建选件之前，您必须先指定一个环境（请参阅[环境概述](../../interaction/using/environments-overview.md)）。 它将包含一组选件的所有特征（资格、目标约束、呈现规则），这些选件按类别进行排序，以及其空格列表。
+在创建选件之前，您必须先指定一个环境(请参阅 [环境概述](../../interaction/using/environments-overview.md))。 它将包含一组选件的所有特征（资格、目标约束、呈现规则），这些选件按类别进行排序，以及其空格列表。
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Offer manager]**&#x200B;负责创建选件目录（即类别和选件）。
+>创建选件目录（即类别和选件）由 **[!UICONTROL Offer manager]**.

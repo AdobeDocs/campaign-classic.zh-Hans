@@ -21,7 +21,7 @@ Web跟踪标记只是使用相应参数构建的URL，通过HTTP查询发送到�
 
 ## 要发送的数据的格式 {#format-of-the-data-to-be-sent}
 
-Web跟踪URL的格式如下：**https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
+Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
 
 >[!NOTE]
 >
@@ -79,8 +79,7 @@ Web跟踪URL的格式如下：**https://`<name_of_redirection_server>`:`<port>`/
                               <p>URL参数</p> 
                            </td>
                            <td>
-                              <p>没有会话Cookie时要使用的投放标识符。 此值将为
-                                 以十六进制表示。
+                              <p>没有会话Cookie时要使用的投放标识符。 此值以十六进制表示。
                               </p> 
                            </td> 
                         </tr>
@@ -92,9 +91,7 @@ Web跟踪URL的格式如下：**https://`<name_of_redirection_server>`:`<port>`/
                               <p>URL参数</p> 
                            </td>
                            <td>
-                              <p>用于标识Internet用户的参数。 此参数的格式为“name=value”，
-                                 其中， name是收件人架构的字段。 此参数优先于
-                                 会话cookie中包含的标识符。
+                              <p>用于标识Internet用户的参数。 此参数的格式为“name=value”，其中name是收件人架构的字段。 此参数优先于会话Cookie中包含的标识符。
                               </p> 
                            </td> 
                         </tr> 
@@ -131,5 +128,5 @@ Web跟踪URL的格式如下：**https://`<name_of_redirection_server>`:`<port>`/
 
 可以使用以下方法：
 
-* 在要跟踪的网页中纳入的HTML **`<img>`**&#x200B;标记的&#x200B;**&quot;src&quot;**&#x200B;属性中插入URL。
+* 在 **&quot;src&quot;** 属性HTML **`<img>`** 标记包含在要跟踪的网页中。
 * 在生成要跟踪的网页时，直接调用重定向服务器。

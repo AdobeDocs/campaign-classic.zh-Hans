@@ -17,15 +17,15 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-您可以使用&#x200B;**[!UICONTROL Fork]**&#x200B;活动创建多个叫客过渡，并在同一工作流中独立运行多个活动。
+您可以使用 **[!UICONTROL Fork]** 活动创建多个叫客过渡，并在同一工作流中独立运行多个活动。
 
 >[!IMPORTANT]
 >
->您在&#x200B;**[!UICONTROL Fork]**&#x200B;活动后添加的叫客过渡不会同时运行。 此行为可能会影响工作流的性能。 如果需要单独运行多个活动，请使用&#x200B;**[!UICONTROL Fork]**&#x200B;活动。 或者，您也可以在工作流后续部分之前加入叫客活动。
+>您在 **[!UICONTROL Fork]** 活动不会同时运行。 此行为可能会影响工作流的性能。 使用 **[!UICONTROL Fork]** 活动。 或者，您也可以在工作流后续部分之前加入叫客活动。
 
-要配置&#x200B;**[!UICONTROL Fork]**&#x200B;活动及其相关活动，请执行以下步骤：
+配置 **[!UICONTROL Fork]** 活动及其相关活动，请按照以下步骤操作：
 
-1. 打开&#x200B;**[!UICONTROL Fork]**&#x200B;活动，并定义叫客过渡的名称和标签。
+1. 打开 **[!UICONTROL Fork]** 活动，并定义叫客过渡的名称和标签。
 
    ![](assets/s_user_segmentation_fork.png)
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 ## 示例：分段
 
-在此示例中，会向不同的群体组发送不同的电子邮件。 在查询后使用&#x200B;**[!UICONTROL Fork]**&#x200B;活动，以并行执行两个操作：
+在此示例中，会向不同的群体组发送不同的电子邮件。 A **[!UICONTROL Fork]** 活动在查询后使用，以并行执行两个操作：
 
 * 保存查询结果
 * 对结果进行分段以发送多个投放
@@ -66,17 +66,17 @@ ht-degree: 1%
 
 ## 用例：发送生日电子邮件
 
-会在收件人的生日当天向其列表发送定期电子邮件。 **[!UICONTROL Fork]**&#x200B;活动用于包含2月29日出生于闰年的收件人。 [了解](sending-a-birthday-email.md) 有关此用例的更多信息。
+会在收件人的生日当天向其列表发送定期电子邮件。 A **[!UICONTROL Fork]** 活动用于包含2月29日出生于闰年的收件人。 [了解更多](sending-a-birthday-email.md) 关于此用例。
 
 ![分支活动遵循测试活动，并位于两个查询活动之前。](assets/birthday-workflow_usecase_1.png)
 
 ## 用例：使用工作流自动化内容
 
-内容块的创建和交付是自动的。 **[!UICONTROL Fork]**&#x200B;活动用于计算目标并行创建内容。 [了解](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) 有关此用例的更多信息。
+内容块的创建和交付是自动的。 A **[!UICONTROL Fork]** 活动用于计算目标，并行用于创建内容。 [了解更多](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) 关于此用例。
 
 ![分支活动跟在投放活动之后，位于查询活动和内容管理活动之前，二者均通过AND连接活动进行连接。](../../delivery/using/assets/d_ncs_content_workflow10.png)
 
-然后，您可以配置每个叫客过渡，并根据需要使用[AND-join](and-join.md)活动将它们连接在一起。 这样，只有在&#x200B;**[!UICONTROL Fork]**&#x200B;活动的叫客过渡完成后，才会执行工作流的其余部分。
+然后，您可以配置每个叫客过渡，然后使用 [AND — 连接](and-join.md) 活动（如果需要）。 这样，工作流的其余部分将仅在 **[!UICONTROL Fork]** 活动的叫客过渡已完成。
 
 ## 相关主题
 

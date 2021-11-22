@@ -19,9 +19,9 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->要进一步继续，请确保系统已启用IMS。 请参阅关于[IMS](../../integrations/using/about-adobe-id.md)的章节。
+>要进一步继续，请确保系统已启用IMS。 请参阅有关 [IMS](../../integrations/using/about-adobe-id.md).
 
-启用IMS后，您可以请求配置与Campaign的People核心服务/Audience Manager集成。 为此，请向[Digital-Request@adobe.com](mailto:Digital-Request@adobe.com)发送电子邮件，其中包含以下信息：
+启用IMS后，您可以请求配置与Campaign的People核心服务/Audience Manager集成。 为此，请发送电子邮件至 [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) ，并提供以下信息：
 
 <table> 
  <tbody> 
@@ -35,7 +35,7 @@ ht-degree: 10%
   </tr> 
   <tr> 
    <td> <strong>IMS 组织 ID</strong><br /> </td> 
-   <td> 您的IMS组织ID。 <br> 您可以在Experience Cloud的“管理”菜单中找到您的IMS组织ID。首次连接到Adobe Experience Cloud时，也会提供该服务。 </td> 
+   <td> 您的IMS组织ID。 <br> 您可以在Experience Cloud的“管理”菜单中找到您的IMS组织ID。 首次连接到Adobe Experience Cloud时，也会提供该服务。 </td> 
   </tr> 
   <tr> 
    <td> <strong>环境:</strong><br /> </td> 

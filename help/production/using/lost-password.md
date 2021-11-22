@@ -30,7 +30,7 @@ ht-degree: 7%
 
 1. 通过具有管理员权限的运算符进行连接。
 1. 右键单击运算符。
-1. 选择&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**。
+1. 选择 **[!UICONTROL Actions]** > **[!UICONTROL Reset password]**.
 
    ![](assets/operator-passwd.png)
 
@@ -45,16 +45,16 @@ ht-degree: 7%
 如果内部密码丢失，则必须重新初始化它。
 要执行此操作，请应用以下过程：
 
-1. 编辑&#x200B;**/usr/local/neolane/nl6/conf/serverConf.xml**&#x200B;文件。
+1. 编辑 **/usr/local/neolane/nl6/conf/serverConf.xml** 文件。
 
-1. 转到&#x200B;**internalPassword**&#x200B;行。
+1. 转到 **internalPassword** 行。
 
    ```
    <!-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword="myPassword"/>
    ```
 
-1. 删除带引号的字符串，在此例中为：**myPassword**
+1. 删除带引号的字符串，在此例中为： **myPassword**
 
    因此，可获得以下行：
 
@@ -77,4 +77,4 @@ ht-degree: 7%
    Confirmation 
    ```
 
-1. 现在，您可以使用新密码在&#x200B;**内部**&#x200B;模式下连接。
+1. 现在，您可以使用新密码连接 **内部** 模式。

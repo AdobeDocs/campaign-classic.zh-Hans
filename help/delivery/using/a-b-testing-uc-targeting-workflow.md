@@ -17,9 +17,9 @@ ht-degree: 10%
 
 ![](../../assets/common.svg)
 
-您需要在营销活动的&#x200B;**[!UICONTROL Targeting and Workflows]**&#x200B;选项卡中创建工作流。 它由&#x200B;**[!UICONTROL Query]**&#x200B;活动、链接到两个&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动的&#x200B;**[!UICONTROL Split]**&#x200B;活动、**[!UICONTROL Wait]**&#x200B;活动、**[!UICONTROL JavaScript code]**&#x200B;活动和&#x200B;**[!UICONTROL Delivery]**&#x200B;活动组成。
+您需要在 **[!UICONTROL Targeting and Workflows]** 选项卡。 它由 **[!UICONTROL Query]** 活动，a **[!UICONTROL Split]** 链接到两个的活动 **[!UICONTROL Email delivery]** 活动， a **[!UICONTROL Wait]** 活动，a **[!UICONTROL JavaScript code]** 活动和 **[!UICONTROL Delivery]** 活动。
 
-1. 如果您尚未创建营销活动，请创建营销活动（有关更多信息，请参阅[此部分](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)）。
+1. 如果您尚未创建营销活动，请创建营销活动(有关更多信息，请参阅 [此部分](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign))。
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
@@ -27,11 +27,11 @@ ht-degree: 10%
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. 更改现有工作流的标签或单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建新工作流（有关更多信息，请参阅[此部分](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)）。
+1. 更改现有工作流的标签，或单击 **[!UICONTROL Add]** 要创建新受众（有关更多信息，请参阅） [此部分](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population))。
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
-1. 使用鼠标将活动拖放到工作流图中，包括&#x200B;**[!UICONTROL Query]**（**[!UICONTROL Target]**&#x200B;选项卡）、**[!UICONTROL Split]**（**[!UICONTROL Target]**&#x200B;选项卡）、两个&#x200B;**[!UICONTROL Email deliveries]**（**[!UICONTROL Deliveries]**&#x200B;选项卡）、**[!UICONTROL Wait]**&#x200B;活动（**[!UICONTROL Flow Control]**&#x200B;选项卡）、**[!UICONTROL JavaScript code]**&#x200B;活动（**[!UICONTROL Actions]**&#x200B;选项卡）和&#x200B;**[!UICONTROL Delivery]**&#x200B;活动（**[!UICONTROL Actions]**&#x200B;选项卡）。
+1. 使用鼠标将活动拖放到工作流图中，包括 **[!UICONTROL Query]** (**[!UICONTROL Target]** ) **[!UICONTROL Split]** (**[!UICONTROL Target]** 选项卡)，两个 **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** ) **[!UICONTROL Wait]** 活动(**[!UICONTROL Flow Control]** ) **[!UICONTROL JavaScript code]** 活动(**[!UICONTROL Actions]** )和 **[!UICONTROL Delivery]** 活动(**[!UICONTROL Actions]** 选项卡。
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 

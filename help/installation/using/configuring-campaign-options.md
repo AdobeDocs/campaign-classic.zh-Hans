@@ -17,12 +17,12 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-**[!UICONTROL Administration / Platform / Options]**&#x200B;节点允许您配置Adobe Campaign选项。 其中一些是安装Campaign时内置的，而另一些则可在需要时手动添加。 可用选项因随实例一起安装的包而异。
+的 **[!UICONTROL Administration / Platform / Options]** 节点允许您配置Adobe Campaign选项。 其中一些是安装Campaign时内置的，而另一些则可在需要时手动添加。 可用选项因随实例一起安装的包而异。
 
 
 >[!CAUTION]
 >
->* 此页面中未列出的选项仅限内部，且&#x200B;**不得修改**。
+>* 此页面中未列出的选项仅内部和 **不得修改**.
 >
 >* 修改或更新Adobe Campaign选项只能由专家用户执行。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">Deliverability_LastBroadLogMsgDate</span> <br /> </td> 
-   <td> 从可交付性实例中检索到的最后一个broadLogMsg的日期。<br /> </td> 
+   <td> 从可交付性实例中检索到的上一个broadLogMsg的日期。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Deliverability_LastBroadLogMsgSent</span> <br /> </td> 
@@ -51,11 +51,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
-   <td> 要将测试地址用于收件箱呈现的架构列表。 （元素名称之间用逗号分隔）例如：custom_nms_recipient.<br /> </td> 
+   <td> 要将测试地址用于收件箱呈现的架构列表。 （元素名称之间用逗号分隔）例如：custom_nms_recipient。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
-   <td> Enhanced MTA将向其发送已发送电子邮件原始副本的密件抄送电子邮件地址。<br /> </td> 
+   <td> Enhanced MTA将向其发送已发送电子邮件原始副本的密件抄送电子邮件地址。 <br /> </td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
@@ -66,7 +66,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
-   <td> 最小收件人数，以便将投放视为计费报表中的主投放。<br /> </td> 
+   <td> 最少收件人数，以便将投放视为账单报表中的主要投放。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_DefaultProvider</span> <br /> </td> 
@@ -82,11 +82,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span> <br /> </td> 
-   <td> 分析中间源投放时对投放部分的分组大小。<br /> </td> 
+   <td> 分析中间源投放时对投放部分的大小进行分组。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MsgValidityDuration</span> <br /> </td> 
-   <td> 投放的默认投放期（以秒为单位）。<br /> </td> 
+   <td> 投放的默认投放时段（以秒为单位）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RegexRules</span> <br /> </td> 
@@ -94,11 +94,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
-   <td> 在值中输入“1”可排除不再希望与之联系的收件人。<br /> </td> 
+   <td> 在值中输入“1”可排除不再希望与其联系的收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span> <br /> </td> 
-   <td> 在值中输入“1”可自动忽略双重。<br /> </td> 
+   <td> 在值中输入“1”可自动忽略双打。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMasks</span> <br /> </td> 
@@ -106,7 +106,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_FromAddressMasks</span> <br /> </td> 
-   <td> 用于定义发送消息时使用的发件人地址的语法。<br /> </td> 
+   <td> 允许您定义发送消息时使用的发件人地址的语法。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageServerTimeout</span> <br /> </td> 
@@ -114,7 +114,7 @@ ht-degree: 0%
   </tr> 
  <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
-   <td> 用于定义允许从个性化URL下载并附加到电子邮件的图像的最大大小（以字节为单位）。 默认值为100,000字节。 在发送校样并下载图像以处理电子邮件时，如果图像大小超过此值或出现下载问题，则投放日志中将显示错误，并且校样投放将失败。<br /> </td> 
+   <td> 用于定义允许从个性化URL下载并附加到电子邮件的图像的最大大小（以字节为单位）。 默认值为100,000字节。 在发送校样并下载图像以处理电子邮件时，如果图像的大小超过此值或存在下载问题，则投放日志中将显示错误，并且校样投放将失败。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
@@ -138,27 +138,27 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultErrorAddr</span> <br /> </td> 
-   <td> 用户留空时，实例级别用于电子邮件投放的默认“error”电子邮件地址。<br /> </td> 
+   <td> 用户将留空时，实例级别用于电子邮件投放的默认“error”电子邮件地址。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultFromAddr</span> <br /> </td> 
-   <td> 如果用户将留空，则在实例级别使用默认的“发件人”电子邮件地址进行电子邮件投放。<br /> </td> 
+   <td> 用户将留空时，实例级别用于电子邮件投放的默认“发件人”电子邮件地址。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultReplyToAddr</span> <br /> </td> 
-   <td> 用户留空时，实例级别用于电子邮件投放的默认“回复”电子邮件地址。<br /> </td> 
+   <td> 用户将留空时，实例级别用于电子邮件投放的默认“回复”电子邮件地址。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> 客户的通用名称。 用于向收件人显示的一些警告消息。<br /> “您之所以收到这条消息，是因为您已与*****或一家关联公司联系。不再从*****"接收消息。<br /> </td> 
+   <td> 客户的通用名称。 用于向收件人显示的一些警告消息。<br /> “您之所以收到这条消息，是因为您已与*****或一家关联公司联系。 不再从*****”接收消息。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
-   <td> 如果用户将留空，则在实例级别使用默认的“发件人”电子邮件标签进行电子邮件投放。<br /> </td> 
+   <td> 实例级别的默认“发件人”电子邮件标签，用于电子邮件投放（如果用户将其留空）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ReplyToName</span> <br /> </td> 
-   <td> 用户留空时，实例级别用于电子邮件投放的默认“回复”电子邮件标签。<br /> </td> 
+   <td> 实例级别的默认“回复”电子邮件标签，用于电子邮件投放（如果用户将其留空）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 
@@ -174,11 +174,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
-   <td> 授权转发电子邮件地址的列表（来自入站邮件处理模块）。 地址必须用逗号分隔（或*才允许所有地址）。 例如xyz@abc.com,pqr@abc.com。<br /> </td> 
+   <td> 授权转发电子邮件地址的列表（来自入站邮件处理模块）。 地址必须用逗号分隔（或*才允许所有地址）。 例如xyz@abc.com、pqr@abc.com。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
-   <td> 在“lineImage”Servlet中使用AES键对URL（LINE通道）进行编码。<br /> </td> 
+   <td> 在“lineImage”Servlet中使用AES键对URL（LINE渠道）进行编码。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
@@ -202,7 +202,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
-   <td> 中间源会话中可并行运行的最大调用数（默认为3）。<br /> </td> 
+   <td> 中间源会话中可并行运行的最大调用数（默认情况下为3个）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
@@ -210,7 +210,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>在计数正在运行的投放数量时， <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span>技术工作流会使用此选项。</p>利用该功能，可定义在运行投放计数中排除状态不一致的投放的天数。</p><p>默认情况下，该值设置为“7”，这表示将排除7天以前不一致的投放。</p></td> 
+   <td><p>此选项由 <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> 技术工作流。</p>利用该功能，可定义在运行投放计数中排除状态不一致的投放的天数。</p><p>默认情况下，该值设置为“7”，这表示将排除7天以前不一致的投放。</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -238,7 +238,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
-   <td> 已发送短信消息的参数：发送给短信网关以指示消息优先级的信息。<br /> </td> 
+   <td> 已发送短信消息的参数：发送到短信网关以指示消息优先级的信息。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_RetryCount</span> <br /> </td> 
@@ -250,7 +250,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> <span class="uicontrol">NmsUserAgent</span>统计信息的上次合并日期。<br /> </td> 
+   <td> 上次合并日期 <span class="uicontrol">NmsUserAgent</span> 统计信息。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
@@ -266,7 +266,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
-   <td> 将此选项与"0"值一起添加，以禁用投放XML代码的编辑（右键单击/ <span class="uicontrol">编辑XML源</span>或<span class="uicontrol">CTRL + F4</span>快捷键）。<br /> </td> 
+   <td> 将此选项与“0”值一起添加，以禁用投放XML代码的编辑(右键单击/ <span class="uicontrol">编辑XML源</span> 或 <span class="uicontrol">CTRL + F4</span> 快捷方式)。<br /> </td> 
   </tr>  
  </tbody> 
 </table>
@@ -305,7 +305,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
-   <td> 存储服务器上映像的文件夹。<br /> </td> 
+   <td> 存储服务器上图像的文件夹。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LogoPath</span> <br /> </td> 
@@ -313,15 +313,15 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmPublishingDir</span> <br /> </td> 
-   <td> 发布的根文件夹。<br /> 有关HTML和文本内容生成的更多信息，请参阅 <a href="../../delivery/using/using-a-content-template.md">此章节</a>。<br /> </td> 
+   <td> 发布的根文件夹。<br /> 有关HTML和文本内容生成的更多信息，请参阅 <a href="../../delivery/using/using-a-content-template.md">此部分</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> 允许您定义存储投放中使用的图像的服务器，以便浏览器获取这些图像。<br /> 对于内部版本  &lt;&gt;<br /> 对于版本&gt; 5098，我们改为使用投放的公共URL或 <span class="uicontrol">XtkFileRes_Public_</span> URL选项的URL。<br /> </td> 
+   <td> 允许您定义存储投放中使用的图像的服务器，以便浏览器获取这些图像。<br /> 对于版本低于5098的内部版本，我们会使用上传到实例的图像URL。<br /> 对于内部版本&gt; 5098，我们改为使用投放的公共URL或 <span class="uicontrol">XtkFileRes_Public_URL</span> 选项的URL。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
-   <td> 用于配置图像上传的实例名称。<br /> </td> 
+   <td> 允许您配置用于图像上传的实例名称。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaPassword</span> <br /> </td> 
@@ -362,11 +362,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_LimitConcurrency</span> <br /> </td> 
-   <td> 一次可由operationMgt工作流启动的投放/工作流/假设/模拟作业的最大数量。<br /> </td> 
+   <td> 一次可由operationMgt工作流启动的最大投放/工作流/假设/模拟作业数。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> 用于监视<a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>技术工作流的执行情况。 激活后（值“1”），执行信息将记录在工作流审核日志中。<br /> </td> 
+   <td> 用于监视 <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a> 技术工作流执行。 激活（值“1”）后，执行信息将记录在工作流审核日志中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -386,7 +386,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCampaign_Activate_OwnerConfirmation</span> <br /> </td> 
-   <td> 通过输入“1”作为值，激活操作所有者对投放的验证。 要取消激活此选项，请输入"0"。<br /> </td> 
+   <td> 通过输入“1”作为值，激活操作所有者对投放进行的验证。 要取消激活此选项，请输入“0”。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsAsset_JavascriptExt</span> <br /> </td> 
@@ -419,11 +419,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkKey</span> <br /> </td> 
-   <td> 此密钥用于加密数据库中的大多数密码。 （外部帐户， LDAP密码……）。<br /> </td> 
+   <td> 此密钥用于加密数据库中的大多数密码。 （外部帐户、LDAP密码……）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Allow_PrivilegeEscalation</span> <br /> </td> 
-   <td> 如果选择1，则此选项允许在JavaScript中进行权限提升。<br /> </td> 
+   <td> 如果选择1，则此选项将允许在JavaScript中进行权限提升。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Disable_ControlsOnFileDownload</span> <br /> </td> 
@@ -443,7 +443,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkTraceDeleteLogin</span> <br /> </td> 
-   <td> 输入“1”值，以在mData中通过修改其“修改者”字段来跟踪删除包含审核跟踪信息的元素。<br /> </td> 
+   <td> 输入“1”值，在删除记录之前，通过修改其“修改者”字段，跟踪在mData中删除具有审核跟踪信息的元素。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -462,8 +462,8 @@ ht-degree: 0%
    <td> <span class="uicontrol">MC_ExcressionCustomJs</span> <br /> </td> 
    <td> JavaScript库进行个性化，以扩充事件。 必须包含以下两个函数的实现：<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">mythredRtEvents(aiEventId);</span> :丰富并保存数据库中的事件( <span class="uicontrol"></span> 其中aiEventId对应于已处理的实时事件表)。</p> </li> 
-     <li> <p> <span class="uicontrol">methringBatchEvents(aiEventId);</span> :丰富并保存数据库中的事件(其中 <span class="uicontrol"></span> aiEventId对应于已处理批量事件的ID表)。</p> </li> 
+     <li> <p> <span class="uicontrol">mythringRtEvents(aiEventId);</span> :丰富和保存数据库中的事件(其中 <span class="uicontrol">aiEventId</span> 对应于已处理的实时事件表)。</p> </li> 
+     <li> <p> <span class="uicontrol">扩充BatchEvents(aiEventId);</span> :丰富和保存数据库中的事件(其中 <span class="uicontrol">aiEventId</span> 对应于已处理的批处理事件的ID表)。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -474,8 +474,8 @@ ht-degree: 0%
    <td> <span class="uicontrol">MC_RoutingCustomJs</span> <br /> </td> 
    <td> 要为路由事件进行个性化设置的JavaScript库。 必须包含以下两个函数的实现：<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> :返回选定用于处理实时事件的事务型消息的内部名称(其 <span class="uicontrol"></span> 中iEventId对应于所处理实时事件的ID)。</p> </li> 
-     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> :返回选定用于处理批处理事件的事务型消息的内部名称(其 <span class="uicontrol"></span> 中iEventId对应于已处理批处理事件的ID)。</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> :返回选定用于处理实时事件的事务型消息的内部名称(其中 <span class="uicontrol">iEventId</span> 对应于所处理实时事件的ID)。</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> :返回选定用于处理批处理事件的事务型消息的内部名称(其中 <span class="uicontrol">iEventId</span> 对应于已处理的批处理事件的ID)。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -520,7 +520,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMaxQueueAlert</span> <br /> </td> 
-   <td> 已排队实时事件的最大数的警报阈值。<br /> </td> 
+   <td> 已排队实时事件的最大数量的警报阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMaxQueueWarning</span> <br /> </td> 
@@ -536,7 +536,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueAlert</span> <br /> </td> 
-   <td> 挂起实时事件队列的临界条件之前的阈值。<br /> </td> 
+   <td> 挂起实时事件队列的关键条件前的阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueWarning</span> <br /> </td> 
@@ -560,7 +560,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_MessageCenterURL</span> <br /> </td> 
-   <td> 消息中心服务器URL，用于发送欢迎消息（LINE渠道）。<br /> </td> 
+   <td> 用于发送欢迎消息的消息中心服务器URL（LINE渠道）。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -641,27 +641,27 @@ ht-degree: 0%
   </tr>  
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> 要包含Adobe Campaign ootb表数据的表空间的名称。<br />请参 <a href="../../installation/using/creating-and-configuring-the-database.md">阅创建和配置数据库</a>。</td> 
+   <td> 要包含Adobe Campaign ootb表数据的表空间的名称。<br />请参阅 <a href="../../installation/using/creating-and-configuring-the-database.md">创建和配置数据库</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> 要包含Adobe Campaign ootb表索引的表空间的名称。<br />请参 <a href="../../installation/using/creating-and-configuring-the-database.md">阅创建和配置数据库</a>。</td> 
+   <td> 要包含Adobe Campaign ootb表索引的表空间的名称。<br />请参阅 <a href="../../installation/using/creating-and-configuring-the-database.md">创建和配置数据库</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
-   <td> 要包含Adobe Campaign工作表数据的表空间的名称。<br />请参 <a href="../../installation/using/creating-and-configuring-the-database.md">阅创建和配置数据库</a>。</td> 
+   <td> 要包含Adobe Campaign工作表数据的表空间的名称。<br />请参阅 <a href="../../installation/using/creating-and-configuring-the-database.md">创建和配置数据库</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWorkIndex</span> <br /> </td> 
-   <td> 要包含Adobe Campaign工作表索引的表空间的名称。<br />请参 <a href="../../installation/using/creating-and-configuring-the-database.md">阅创建和配置数据库</a>。</td> 
+   <td> 要包含Adobe Campaign工作表索引的表空间的名称。<br />请参阅 <a href="../../installation/using/creating-and-configuring-the-database.md">创建和配置数据库</a>.</td> 
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> 用于为Microsoft SQL Server上的工作表配置单独的数据库，以优化备份和复制。 选项对应于临时数据库的名称：如果指定，将在此数据库中写入工作表。 示例：'tempdb.dbo' （请注意，名称必须以圆点结尾）。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">阅读更多</a> <br /> </td> 
+   <td> 用于为Microsoft SQL Server上的工作表配置单独的数据库，以优化备份和复制。 选项对应于临时数据库的名称：如果指定，将在此数据库中写入工作表。 示例：'tempdb.dbo' （请注意，名称必须以圆点结尾）。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">了解更多信息</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
-   <td> Adobe Campaign实例的时区。 请参阅<a href="../../installation/using/time-zone-management.md#configuration" target="_blank">配置</a>。<br /> </td> 
+   <td> Adobe Campaign实例的时区。 请参阅 <a href="../../installation/using/time-zone-management.md#configuration" target="_blank">配置</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcUseNChar</span> <br /> </td> 
@@ -677,11 +677,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkInstancePrefix</span> <br /> </td> 
-   <td> 为自动生成的内部名称添加前缀。<br /> </td> 
+   <td> 为自动生成的内部名称添加了前缀。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkQuery_Schema_LineCount</span> <br /> </td> 
-   <td> 查询在xtk:schema和xtk:srcSchema.<br />上返回的结果的最大数量 </td> 
+   <td> 查询在xtk:schema和xtk:srcSchema上返回的结果的最大数。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSequence_AutoGeneration</span> <br /> </td> 
@@ -693,19 +693,19 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span> <br /> </td> 
-   <td> 在迁移过程中，会根据新版本标准自动重新组织树结构。<br /> 利用此选项，可禁用导航树的自动迁移。如果您使用它，则在迁移后，必须删除过时的文件夹，添加新文件夹并运行所有必要的检查。<br /> 
+   <td> 在迁移过程中，会根据新版本标准自动重新组织树结构。<br /> 利用此选项，可禁用导航树的自动迁移。 如果您使用它，则在迁移后，您必须删除过时的文件夹，添加新文件夹并运行所有必要的检查。<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">数据类型：</span> 整数</p> </li> 
      <li> <p> <span class="uicontrol">值（文本）</span> :1 </p> </li> 
-    </ul> 仅当现成的导航树发生了太多更改时，才应使用此选项。<br /> 有关更多信息，请参阅 <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">此章节</a>。<br /> </td> 
+    </ul> 仅当现成的导航树发生了太多更改时，才应使用此选项。<br /> 有关更多信息，请参阅 <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">此部分</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
-   <td> <span class="uicontrol">NmsEmailErrorStat</span>表清理的上次处理日期。<br /> </td> 
+   <td> 上次处理日期 <span class="uicontrol">NmsEmailErrorStat</span> 表清理。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span> <br /> </td> 
-   <td> 有关Postupgrade中发生的错误的信息，请遵循以下语法：<br /> <strong>{内部版本号}:{mode:pre/post/...}:{发生错误的'lessThan'/'greaterOrEquelThan' +子步骤}</strong> </td> 
+   <td> 有关Postupgrade中发生错误的信息，请遵循以下语法：<br /> <strong>{内部版本号}:{mode:pre/post/...}:{发生错误的'lessThan'/'greaterOrEquelThan' +子步骤}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span> <br /> </td> 
@@ -730,23 +730,23 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> 允许您配置Experience Cloud触发器。 数据类型为“长文本”，且必须为JSON格式。 请参阅<a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">如何将Experience Cloud触发器与Adobe Campaign Classic一起使用</a>。<br /> </td> 
+   <td> 允许您配置Experience Cloud触发器。 数据类型为“长文本”，且必须为JSON格式。 请参阅 <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">如何将Experience Cloud触发器与Adobe Campaign Classic结合使用</a>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">LASTIMPORT_&lt;&gt;_&lt;&gt;</span> <br /> </td> 
+   <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
    <td> 通过CRM连接器从第三方系统导入数据时，会使用此选项。 启用选项后，您只能收集自上次导入以来修改的对象。 必须手动创建并填充此选项，如下所示： 
     <ul> 
-     <li> <p> <span class="uicontrol">内部名称</span> :LASTIMPORT_&lt;&gt;_&lt;&gt;</p> </li> 
-     <li> <p> <span class="uicontrol">值（字段）</span> :上次导入的日期，采用yyyy/MM/dd hhss:mm:格式。 </p> </li> 
+     <li> <p> <span class="uicontrol">内部名称</span> :LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</p> </li> 
+     <li> <p> <span class="uicontrol">值（字段）</span> :上次导入的日期，使用yyyy/MM/dd hh:mm:ss格式。 </p> </li> 
     </ul><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> 用于集成的Adobe Target服务器。 默认情况下，此选项已被选中。 此值对应于Adobe Target域服务器，后跟值/m2。 例如：tt.omtrdc.net/m2。<br /> 请参 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">阅此部分</a>。<br /> </td> 
+   <td> 用于集成的Adobe Target服务器。 默认情况下，此选项已被选中。 此值对应于Adobe Target域服务器，后跟值/m2。 例如：tt.omtrdc.net/m2。<br /> 请参阅 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">此部分</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Adobe Target组织名称。 此值对应于Adobe Target客户端的名称。<br /> 请参 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">阅此部分</a>。<br /> </td> 
+   <td> Adobe Target组织名称。 此值对应于Adobe Target客户端的名称。<br /> 请参阅 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">此部分</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -783,7 +783,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_LastCampationSynchControl_</span> <br /> </td> 
-   <td> '+ [建议的架构] + "_" + extAccountSource。@executionInstanceId + [建议的架构] + "_" + vars.executionInstanceIdFilter<br /> </td> 
+   <td> '+ [建议的架构] + "_" + extAccountSource。@executionInstanceId + [建议的架构] + "_" + vars.executionIdFilter<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_LastCampositionSynchExec_</span> <br /> </td> 
@@ -795,7 +795,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_UseDaemon</span> <br /> </td> 
-   <td> 启用/禁用异步建议写入（“0”禁用，“1”启用）。<br /> </td> 
+   <td> 启用/禁用异步建议编写（“0”禁用，“1”启用）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsModule_CouponsEnabled</span> <br /> </td> 
@@ -820,7 +820,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_CustomerId</span> <br /> </td> 
-   <td> 发送帐单报表时使用的客户标识符。<br /> </td> 
+   <td> 发送账单报表时使用的客户标识符。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_IntranetURL</span> <br /> </td> 
@@ -828,7 +828,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LastPostUpgrade</span> <br /> </td> 
-   <td> 上次升级前AC实例的内部版本号。<br /> </td> 
+   <td> 上次升级之前的AC实例的内部版本号。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_URL</span> <br /> </td> 
@@ -865,11 +865,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Instance</span> <br /> </td> 
-   <td> 用于在跟踪服务器上定义实例名称。<br /> </td> 
+   <td> 用于定义跟踪服务器上的实例名称。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_LastConsolidation</span> <br /> </td> 
-   <td> 上次使用新数据合并跟踪信息时。<br /> </td> 
+   <td> 上次使用新数据整合跟踪信息时。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_OpenFormula</span> <br /> </td> 
@@ -889,7 +889,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ServerUrl</span> <br /> </td> 
-   <td> 额面跟踪服务器的URL。<br /> </td> 
+   <td> 额外跟踪服务器的URL。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ServerUrlList</span> <br /> </td> 
@@ -955,7 +955,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Active</span> <br /> </td> 
-   <td> 启用LDAP服务器以用于验证用户并向用户提供授权。<br /> </td> 
+   <td> 启用LDAP服务器，以用于验证用户并向用户提供授权。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AppLogin</span> <br /> </td> 
@@ -967,7 +967,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AutoOperator</span> <br /> </td> 
-   <td> 在Adobe Campaign中启用自动创建运算符和权限。<br /> </td> 
+   <td> 允许在Adobe Campaign中自动创建运算符和权限。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DN</span> <br /> </td> 
@@ -979,7 +979,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchBase</span> <br /> </td> 
-   <td> 搜索基数。<br /> </td> 
+   <td> 搜索库。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchFilter</span> <br /> </td> 
@@ -991,11 +991,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Mechanism</span> <br /> </td> 
-   <td> 用于联系LDAP服务器的身份验证类型(plain、md5、lds、ntlm、dpa)。<br /> </td> 
+   <td> 用于联系LDAP服务器的身份验证类型（纯、md5、lds、ntlm、dpa）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Rights</span> <br /> </td> 
-   <td> 启用从LDAP目录到Adobe Campaign中命名权限的授权和组同步。<br /> </td> 
+   <td> 允许将授权和组从LDAP目录同步到Adobe Campaign中的指定权限。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsAttr</span> <br /> </td> 
@@ -1003,11 +1003,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsBase</span> <br /> </td> 
-   <td> 搜索基数。<br /> </td> 
+   <td> 搜索库。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsFilter</span> <br /> </td> 
-   <td> 搜索用户授权的筛选器。<br /> </td> 
+   <td> 搜索过滤器以查找用户授权。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsMask</span> <br /> </td> 
@@ -1019,7 +1019,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Server</span> <br /> </td> 
-   <td> LDAP服务器地址（可以通过指定“：”作为分隔符来指定端口）。<br /> </td> 
+   <td> LDAP服务器地址（可通过指定“：”作为分隔符来指定端口）。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1048,11 +1048,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> 用于指定Web窗体失效模式的选项：默认情况下，如果选项为“tracking”，则使用跟踪服务器，并将个性化列表与“其他服务器”选项一起使用。<br /> </td> 
+   <td> 用于指定Web窗体失效模式的选项：默认情况下，如果选项为“tracking”，则使用跟踪服务器，并将个性化列表与“其他服务器”选项结合使用。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURLs</span> <br /> </td> 
-   <td> 要联系以进行Web窗体失效的服务器的个性化地址列表（“其他服务器”模式）。<br /> </td> 
+   <td> 要联系以进行Web窗体失效（“其他服务器”模式）的服务器的个性化地址列表。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

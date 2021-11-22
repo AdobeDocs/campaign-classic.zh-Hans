@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-默认情况下，下面详述的工作流随&#x200B;**Campaign**&#x200B;模块一起安装。 有关此模块的更多信息，请参阅此[部分](../../campaign/using/designing-marketing-campaigns.md)。
+下面详述的工作流随 **Campaign** 模块。 有关此模块的更多信息，请参阅此 [部分](../../campaign/using/designing-marketing-campaigns.md).
 
 >[!CAUTION]
 >
@@ -53,7 +53,7 @@ ht-degree: 3%
   <tr> 
    <td> <span class="uicontrol">服务提供商上的作业</span> <br /> </td> 
    <td> <span class="uicontrol">supplierMgt</span> <br /> </td> 
-   <td> 在投放获得批准后，此工作流将开始处理提供程序（向路由器发送电子邮件并进行后处理）。<br /> </td> 
+   <td> 在投放获得批准后，此工作流将开始处理提供程序（向路由器发送电子邮件并进行后处理）。 <br /> </td> 
   </tr> 
  </tbody> 
 </table>

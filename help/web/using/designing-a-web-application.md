@@ -17,11 +17,11 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-根据与[Web窗体](about-web-forms.md)相同的原则创建和管理Web应用程序。
+Web应用程序是按照与 [Web窗体](about-web-forms.md).
 
 >[!CAUTION]
 >
->使用&#x200B;**[!UICONTROL Preview]**&#x200B;子选项卡检查Web应用程序设计期间的错误。
+>使用 **[!UICONTROL Preview]** 子选项卡，以检查web应用程序设计期间的错误。
 >
 >在Web应用程序发布之前，更改不会向最终用户显示。
 
@@ -31,7 +31,7 @@ ht-degree: 4%
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-您还可以选择&#x200B;**[!UICONTROL Add a chart]**&#x200B;菜单。
+您还可以选择 **[!UICONTROL Add a chart]** 菜单。
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
@@ -47,11 +47,11 @@ ht-degree: 4%
 
 ## 概述类型的Web应用程序 {#overview-type-web-applications}
 
-Adobe Campaign界面使用许多Web应用程序来访问、管理收件人、投放、营销活动、库存等内容并与其进行交互。
+Adobe Campaign界面使用许多Web应用程序来访问、管理收件人、投放、营销活动、库存等内容并与之进行交互。
 
 在界面中，它们以功能板的形式显示，且仅包含一个页面。
 
-现成的Web应用程序存储在&#x200B;**[!UICONTROL Administration > Configuration > Web applications]**&#x200B;节点中。
+现成的Web应用程序存储在 **[!UICONTROL Administration > Configuration > Web applications]** 节点。
 
 ## 编辑表单类型的Web应用程序 {#edit-forms-type-web-applications}
 

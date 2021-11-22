@@ -36,7 +36,7 @@ ht-degree: 7%
 * 修复了在推送通知中以其他变量传递URL时可能导致移动设备应用程序收到格式错误或数据不正确的跟踪问题。 (NEO-11468, NEO-11960)
 * 修复了在将值分布与1:N链接结合使用时导致显示问题的问题。 (NEO-11820)
 * 修复了批量加载无法在Teradata16上工作的问题。
-* 增加了Teradata上时间戳的缓冲大小，以避免15.10驱动程序的绑定问题。
+* 增加了Teradata上时间戳的缓冲大小，以避免15.10驱动程序出现绑定问题。
 * 改进了对可能导致升级后问题的长名称索引的管理。
 * 改进了子代死机处理(MTA)期间的共享内存可用时间。
 * 修复了Apache（跟踪）中的潜在死锁。
@@ -103,15 +103,15 @@ ht-degree: 7%
     <ul> 
      <li> <p>访问权：允许数据主体接收由数据控制者捕获的其个人数据的副本，可能包括存储在Adobe Campaign中的数据。</p> </li> 
      <li> <p>删除权：数据主体有权擦除“数据控制者”捕获的个人数据，这可能包括存储在Adobe Campaign中的数据。</p> </li> 
-    </ul> 有关详细信息，请参阅<a href="https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html">有详细说明的文档</a>。<br /> </td> 
+    </ul> 有关更多信息，请参阅<a href="https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html">详细文档</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> 使用中的用户档案<br /> </td> 
-   <td> <p>Adobe Campaign现在提供活动用户档案的列表，通过专用工作流每月更新。</p> <p>有关详细信息，请参阅<a href="../../platform/using/about-profiles.md#active-profiles">有详细说明的文档</a>。</p> </td> 
+   <td> <p>Adobe Campaign现在提供活动用户档案的列表，通过专用工作流每月更新。</p> <p>有关更多信息，请参阅<a href="../../platform/using/about-profiles.md#active-profiles">详细文档</a>。</p> </td> 
   </tr> 
   <tr> 
    <td> Android推送连接器增强功能<br /> </td> 
-   <td> <p>Android连接器已得到增强，可支持更高的吞吐量。 </p> <p>有关详细信息，请参阅<a href="../../delivery/using/configuring-the-mobile-application.md">有详细说明的文档</a>。</p> </td> 
+   <td> <p>Android连接器已得到增强，可支持更高的吞吐量。 </p> <p>有关更多信息，请参阅<a href="../../delivery/using/configuring-the-mobile-application.md">详细文档</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -138,10 +138,10 @@ ht-degree: 7%
 * 对部署向导SOAP调用(xtk:serverOptions#SaveOptions)强制实施访问限制。
 * 已删除weka.jar过时库，并更新OpenSSL库以进行安全优化。
 * 改进了计费技术工作流以保护实例性能。
-* 恢复了管理员设置或重置任何操作员密码的功能。 要执行此操作，请右键单击运算符，选择 **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** 并设置操作员的新密码。 我们建议操作员在首次重新连接时更改其密码。 有关详细信息，请参阅[有详细说明的文档](../../production/using/lost-password.md)。
-* 为了支持Adobe Target中新增的多租户功能，现在在配置与Target集成的选项和外部帐户时，可以向URL中添加新的“at_property”参数。 可在Adobe Target中找到用于此参数的值，该值将在调用Target时由Campaign使用。 有关详细信息，请参阅[有详细说明的文档](../../integrations/using/inserting-a-dynamic-image.md)。
-* 现在，您可以指定在单击Adobe Target提供的图像时要打开的默认登录页面。 以前，单击该图像会导致在创建电子邮件时设置默认图像。 有关详细信息，请参阅[有详细说明的文档](../../integrations/using/inserting-a-dynamic-image.md)。
-* 添加了 **启用SMPP跟踪** 复选框以强制跟踪输出。 有关详细信息，请参阅[有详细说明的文档](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
+* 恢复了管理员设置或重置任何操作员密码的功能。 要执行此操作，请右键单击运算符，选择 **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** 并设置操作员的新密码。 我们建议操作员在首次重新连接时更改其密码。 有关更多信息，请参阅[详细文档](../../production/using/lost-password.md)。
+* 为了支持Adobe Target中新增的多租户功能，现在在配置与Target集成的选项和外部帐户时，可以向URL中添加新的“at_property”参数。 可在Adobe Target中找到用于此参数的值，该值将在调用Target时由Campaign使用。 有关更多信息，请参阅[详细文档](../../integrations/using/inserting-a-dynamic-image.md)。
+* 现在，您可以指定在单击Adobe Target提供的图像时要打开的默认登录页面。 以前，单击该图像会导致在创建电子邮件时设置默认图像。 有关更多信息，请参阅[详细文档](../../integrations/using/inserting-a-dynamic-image.md)。
+* 添加了 **启用SMPP跟踪** 复选框以强制跟踪输出。 有关更多信息，请参阅[详细文档](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)。
 
 **技术演进**
 
@@ -188,7 +188,7 @@ urlEncode函数
 nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 ```
 
-**补丁程序**
+**修补程序**
 
 * 修复了从Adobe Campaign Standard复制投放和跟踪日志到Adobe Campaign Classic时的同步问题。 (NEO-10023)
 * 修复了在快速加载操作失败后恢复ETL工作流时，处理Teradata中的错误和日志表时出现的问题。 现在，每次工作流继续时，错误和日志表都会被正确删除。 (NEO-10672)

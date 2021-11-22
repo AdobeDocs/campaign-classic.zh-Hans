@@ -30,7 +30,7 @@ ht-degree: 6%
 * 确保加密密码受限。
 * Protect可能包含个人信息（如镜像页面、Web应用程序等）的页面。
 
-[阅读更多](../../installation/using/privacy.md)
+[了解更多信息](../../installation/using/privacy.md)
 
 ## 访问管理
 
@@ -42,7 +42,7 @@ ht-degree: 6%
 * 检查每个操作员是否拥有适当的访问权限
 * 避免使用管理员操作员，并避免管理员组中的运算符过多
 
-[阅读更多](../../installation/using/access-management.md)
+[了解更多信息](../../installation/using/access-management.md)
 
 ## 脚本和编码准则
 
@@ -56,7 +56,7 @@ ht-degree: 6%
 
 * **在Web应用程序中添加捕获**:了解如何在公共登陆页面和订阅页面中添加捕获。
 
-[阅读更多](../../installation/using/scripting-coding-guidelines.md)
+[了解更多信息](../../installation/using/scripting-coding-guidelines.md)
 
 ## 网络、数据库和 SSL/TLS
 
@@ -66,7 +66,7 @@ ht-degree: 6%
 
 您还必须遵循数据库引擎安全性。
 
-[阅读更多](../../installation/using/network-database.md)
+[了解更多信息](../../installation/using/network-database.md)
 
 >[!CAUTION]
 >
@@ -76,19 +76,19 @@ ht-degree: 6%
 
 <img src="assets/do-not-localize/icon_server.svg" width="60px">
 
-必须在所有服务器上执行配置。 配置文件的类型为&#x200B;**serverConf.xml**&#x200B;和&#x200B;**`config-<instance>.xml`**。 以下是需要验证的关键元素：
+必须在所有服务器上执行配置。 配置文件的类型为 **serverConf.xml** 和 **`config-<instance>.xml`**. 以下是需要验证的关键元素：
 
 * **安全区**:配置安全区，以便它们直接考虑代理客户端的IP地址。
 
-* **文件上传保护**:使用新的uploadAllowList属性限制可上传到Adobe Campaign服务器的文件类型。这可在服务器配置文件中使用。
+* **文件上传保护**:使用新的uploadAllowList属性限制可上传到Adobe Campaign服务器的文件类型。 这可在服务器配置文件中使用。
 
 * **中继**:通过取消激活未使用模块/应用程序的中继规则来优化中继配置。
 
-* **外连接** 保护 **和命令限制** （服务器端）
+* **外连接保护** 和 **命令限制** （服务器端）
 
-* 您还可以添加额外的HTTP标头、激活checkIPConsitent、enableTLS、sessionTimeOutSec等。 有关更多信息，请参阅[Campaign服务器配置文档](../../installation/using/configuring-campaign-server.md)和[服务器配置文件描述](../../installation/using/the-server-configuration-file.md)。
+* 您还可以添加额外的HTTP标头、激活checkIPConsitent、enableTLS、sessionTimeOutSec等。 请参阅 [Campaign服务器配置文档](../../installation/using/configuring-campaign-server.md) 和 [服务器配置文件描述](../../installation/using/the-server-configuration-file.md) 以了解更多信息。
 
-[阅读更多](../../installation/using/server-configuration.md)
+[了解更多信息](../../installation/using/server-configuration.md)
 
 ## Web服务器配置
 
@@ -101,4 +101,4 @@ ht-degree: 6%
 * 删除横幅
 * 限制查询大小以阻止上载重要文件
 
-[阅读更多](../../installation/using/web-server-configuration.md)
+[了解更多信息](../../installation/using/web-server-configuration.md)

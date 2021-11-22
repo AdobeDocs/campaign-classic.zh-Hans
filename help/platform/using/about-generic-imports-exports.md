@@ -21,11 +21,11 @@ Adobe Campaign Classic提供通用导入和导出。 例如，它们允许您提
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
 
-从Adobe Campaign树的&#x200B;**[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]**&#x200B;节点管理通用导入和导出。
+一般导入和导出均从 **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** Adobe Campaign树的节点。
 
 执行一般导入和导出操作的步骤如下：
 
 1. [创建导入或导出模板](../../platform/using/creating-import-export-templates.md) （可选）。
-1. [创建导入或导出作业](../../platform/using/creating-import-export-jobs.md)。
-1. 配置并执行[import](../../platform/using/executing-import-jobs.md)或[export](../../platform/using/executing-export-jobs.md)作业。
-1. [](../../platform/using/monitoring-jobs-execution.md) 监控作业的执行情况。
+1. [创建导入或导出作业](../../platform/using/creating-import-export-jobs.md).
+1. 配置和执行 [导入](../../platform/using/executing-import-jobs.md) 或 [导出](../../platform/using/executing-export-jobs.md) 工作。
+1. [监视器](../../platform/using/monitoring-jobs-execution.md) 作业的执行。

@@ -24,7 +24,7 @@ ht-degree: 4%
 
 ## 定义要在应用程序中跟踪的URL {#defining-the-urls-to-be-tracked-in-the-application}
 
-此方法允许您手动定义要跟踪的页面，然后生成关联的Web跟踪标记示例。 此操作在客户端控制台的&#x200B;**[!UICONTROL Campaign execution>Resources>Web tracking tags]**&#x200B;节点中定义。
+此方法允许您手动定义要跟踪的页面，然后生成关联的Web跟踪标记示例。 此操作在 **[!UICONTROL Campaign execution>Resources>Web tracking tags]** 客户端控制台的节点。
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
@@ -33,13 +33,13 @@ ht-degree: 4%
 * 输入标记的标签：它将显示在跟踪日志中，
 * 指示源URL:此字段仅供参考，允许您指示跟踪的页面（可选）、
 * 如果需要，请输入有效期，
-* 单击&#x200B;**[!UICONTROL Generate]** HTML代码。
+* 单击 **[!UICONTROL Generate]** HTML代码。
 
 然后，复制生成的代码并将其粘贴到要跟踪的页面中。
 
 ## 要跟踪的URL的即时创建 {#on-the-fly-creation-of-urls-to-be-tracked}
 
-您可以通过向&#x200B;**tagid**&#x200B;参数的值添加信息来快速创建Web跟踪URL:
+您可以通过向 **tagid** 参数：
 
 * 跟踪的页面类型：“w”表示WEB，“t”表示TRANSACTION，
 * 必须在其中创建URL的文件夹的内部名称。
@@ -52,7 +52,7 @@ tagid=<identifier>|<type>|<foldername>
 
 >[!IMPORTANT]
 >
->当&#x200B;**tagid**&#x200B;参数用作URL参数时，请记住对该参数的值进行编码。
+>请记住对的值进行编码 **tagid** 参数。
 
 **示例**:创建交易类型Web跟踪URL。
 

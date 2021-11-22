@@ -8,7 +8,7 @@ exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '497'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-要将Campaign Classic数据导出到Adobe实时客户数据平台(RTCDP)，您首先需要在Campaign Classic中构建一个工作流，以将要共享的数据导出到S3或Azure Blob存储位置。
+要将Campaign Classic数据导出到Adobe Real-time Customer Data Platform(RTCDP)，您首先需要在Campaign Classic中构建一个工作流，以将要共享的数据导出到S3或Azure Blob存储位置。
 
-配置工作流并将数据发送到您的存储位置后，您需要将S3或Azure Blob存储位置作为Adobe体验平台中的&#x200B;**Source**&#x200B;连接。
+配置工作流并将数据发送到您的存储位置后，您需要将S3或Azure Blob存储位置作为 **来源** Adobe体验平台中。
 
 >[!NOTE]
 >
@@ -30,11 +30,11 @@ ht-degree: 3%
 
 为此，请添加和配置：
 
-* **[!UICONTROL Data extraction (file)]**&#x200B;活动，用于将目标数据提取到CSV文件中。 有关如何配置此活动的更多信息，请参阅[此部分](../../workflow/using/extraction--file-.md)。
+* 安 **[!UICONTROL Data extraction (file)]** 活动，以将目标数据提取到CSV文件。 有关如何配置此活动的更多信息，请参阅 [此部分](../../workflow/using/extraction--file-.md).
 
    ![](assets/rtcdp-extract-file.png)
 
-* **[!UICONTROL File transfer]**&#x200B;活动，用于将CSV文件传输到您的存储位置。 有关如何配置此活动的更多信息，请参阅[此部分](../../workflow/using/file-transfer.md)。
+* A **[!UICONTROL File transfer]** 活动，以将CSV文件传输到您的存储位置。 有关如何配置此活动的更多信息，请参阅 [此部分](../../workflow/using/file-transfer.md).
 
    ![](assets/rtcdp-file-transfer.png)
 
@@ -44,9 +44,9 @@ ht-degree: 3%
 
 ## 作为源连接存储位置
 
-下面列出了在Adobe体验平台中将S3或Azure Blob存储位置作为&#x200B;**Source**&#x200B;连接的主要步骤。 [源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html)中提供了有关每个步骤的详细信息。
+将S3或Azure Blob存储位置作为 **来源** 在Experience Platform中，如下所示。 有关每个步骤的详细信息，请参阅 [源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans).
 
-1. 在Adobe Experience Platform **[!UICONTROL Sources]**&#x200B;菜单中，创建与存储位置的连接：
+1. 在Adobe Experience Platform中 **[!UICONTROL Sources]** 菜单，请创建与存储位置的连接：
 
    * [创建Amazon S3源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
    * [Azure Blob连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)
@@ -59,7 +59,7 @@ ht-degree: 3%
 
 1. 为云存储批处理连接配置数据流。 数据流是一项计划任务，用于从存储位置检索数据并将其摄取到Adobe Experience Platform数据集。 此步骤允许您配置从存储位置摄取的数据，包括数据选择和CSV字段映射到XDM架构。
 
-   有关详细信息，请参见[此页](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html)。
+   有关详细信息可在 [本页](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html).
 
    ![](assets/rtcdp-map-xdm.png)
 

@@ -21,26 +21,26 @@ ht-degree: 2%
 
 这允许他们：
 
-* [筛选包](#filter-packages)、
-* [编辑资源包](#edit-packages)、
+* [筛选包](#filter-packages),
+* [编辑资源包](#edit-packages),
 * [取消资源包](#cancel-a-package),
-* [重新初始化包](#reinitializing-a-package)。
+* [重新初始化包](#reinitializing-a-package).
 
 ## 筛选包 {#filter-packages}
 
-从&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡中，可显示&#x200B;**[!UICONTROL Campaign packages]**&#x200B;列表，该列表可重组所有现有的分布式营销活动。 您可以过滤此列表，以便它仅显示已发布、延迟、待批准等的营销活动。 要实现此目的，请单击此视图上方的链接，或使用&#x200B;**[!UICONTROL Filter list]**&#x200B;链接并选择要显示的营销活动包状态。
+从 **[!UICONTROL Campaigns]** 选项卡，则可以显示 **[!UICONTROL Campaign packages]** 可重组所有现有的分布式营销活动。 您可以过滤此列表，以便它仅显示已发布、延迟、待批准等的营销活动。 要实现此目的，请单击此视图上部分的链接，或使用 **[!UICONTROL Filter list]** 链接并选择要显示的营销活动包状态。
 
 ![](assets/mkg_dist_catalog_filter.png)
 
 ## 编辑资源包 {#edit-packages}
 
-在&#x200B;**[!UICONTROL Campaign packages]**&#x200B;页面中，您可以查看每个包的摘要。
+的 **[!UICONTROL Campaign packages]** 页面可查看每个包的摘要。
 
 此摘要显示以下信息：标签、营销活动类型、创建该营销活动的营销活动名称以及文件夹。
 
 单击包名称以对其进行编辑。 您还可以按其本地实体和状态查看订单。
 
-**[!UICONTROL Campaign orders]**&#x200B;视图中还提供了此信息，其中列出了所有订单。
+此信息还可在 **[!UICONTROL Campaign orders]** 查看列出所有订单的。
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
@@ -50,7 +50,7 @@ ht-degree: 2%
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
-   **[!UICONTROL Edit > General]**&#x200B;选项卡允许您查看本地实体在订购营销活动时输入的信息。
+   的 **[!UICONTROL Edit > General]** 选项卡，用于查看本地实体在订购营销活动时输入的信息。
 
    ![](assets/mkg_dist_catalog_op_command_edit1a.png)
 
@@ -62,15 +62,15 @@ ht-degree: 2%
 
 中央实体可以随时取消促销活动包。
 
-点击营销活动包&#x200B;**[!UICONTROL Dashboard]**&#x200B;中的&#x200B;**[!UICONTROL Cancel]**。
+单击 **[!UICONTROL Cancel]** 营销活动包中 **[!UICONTROL Dashboard]**.
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 
-**[!UICONTROL Comment]**&#x200B;字段允许您说明取消的理由。
+的 **[!UICONTROL Comment]** 字段中，您可以对取消进行说明。
 
-对于&#x200B;**本地营销活动**，取消某个资源包会将其从可用营销活动列表中删除。
+对于 **本地营销活动**，取消某个资源包会将其从可用营销活动列表中删除。
 
-对于&#x200B;**协作营销活动**，取消资源包会触发大量操作：
+对于 **协作营销**，取消资源包会触发多项操作：
 
 1. 与此包相关的任何订单均被取消，
 
@@ -91,15 +91,15 @@ ht-degree: 2%
 可以重新初始化、修改已发布的促销活动包，并将其提供给本地实体。
 
 1. 选择相关的包。
-1. 单击&#x200B;**[!UICONTROL Reinitialize the package to reuse it]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL OK]**。
+1. 单击 **[!UICONTROL Reinitialize the package to reuse it]** 链接，单击 **[!UICONTROL OK]**.
 
    ![](assets/mkg_dist_mutual_op_reinit.png)
 
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮以批准资源包重新初始化。
+1. 单击 **[!UICONTROL Save]** 按钮以批准包重新初始化。
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
-1. 包状态将变为&#x200B;**[!UICONTROL Being edited]**。 再次修改、批准和发布该组件，以将其恢复到营销活动包的列表。
+1. 包状态将更改为 **[!UICONTROL Being edited]**. 再次修改、批准和发布该组件，以将其恢复到营销活动包的列表。
 
 >[!NOTE]
 >

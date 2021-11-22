@@ -21,15 +21,15 @@ ht-degree: 0%
 
 只要与Adobe Campaign的不同组件有连接，数据库服务器的操作系统就不重要。
 
-另请检查[数据库访问层](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)部分。
+另请查看 [数据库访问层](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) 中。
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
 本机客户端必须安装在Adobe Campaign应用程序服务器上。
 
-可以通过&#x200B;**SQL Server本机客户端11.0**&#x200B;下的ODBC驱动程序配置面板检查服务器上的本机客户端。
+您可以通过ODBC驱动程序配置面板(位于 **SQL Server本机客户端11.0**.
 
-必须存在以下访问DLL:**sqlncli11.dll**。
+必须存在以下访问DLL: **sqlncli11.dll**.
 
 访问DLL可在Microsoft网站上找到。
 
@@ -43,11 +43,11 @@ ht-degree: 0%
 >
 >不支持具有多字节字符的列名称。
 
-需要正确配置&#x200B;**NLS_NCHAR_CHARACTERSET**&#x200B;和&#x200B;**NLS_CHARACTERSET**&#x200B;参数，以使数据库以Unicode或ANSI格式工作。
+的 **NLS_NCHAR_CHARACTERSET** 和 **NLS_CHARACTERSET** 必须正确配置参数，才能使数据库以Unicode或ANSI格式工作。
 
 Adobe Campaign使用默认Oracle编码。 使用其他编码可能会触发兼容性问题：在这种情况下，请联系技术支持。
 
-要了解编码信息，请使用以下&#x200B;**sqlplus**&#x200B;命令：
+要了解您的编码，请使用以下代码 **sqlplus** 命令：
 
 ```
 SELECT * FROM nls_database_parameters ;
@@ -66,7 +66,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-要登录到&#x200B;**sqlplus**，请使用Oracle用户配置文件：
+登录到 **sqlplus**，则使用Oracle用户配置文件：
 
 ```
 su - oracle 
@@ -74,7 +74,7 @@ sqlplus
 [login] [password]
 ```
 
-您还可以在Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux)中引用[Oracle客户端。
+您还可以参阅 [OracleLinux中的客户端](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
 
 ## PostgresSQL {#postgressql}
 

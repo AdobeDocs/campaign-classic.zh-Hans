@@ -17,9 +17,9 @@ ht-degree: 5%
 
 ![](../../assets/v7-only.svg)
 
-通过&#x200B;**Simulation**&#x200B;模块，您可以测试属于某个类别或环境的选件的分布情况，然后再将建议发送给收件人。
+的 **模拟** 利用模块，可在向收件人发送建议之前，测试属于类别或环境的选件的分发。
 
-模拟会考虑以前应用于选件的上下文和资格规则（请参阅[选件目录概述](../../interaction/using/offer-catalog-overview.md)），以及它们的演示规则（请参阅[管理选件演示](../../interaction/using/managing-offer-presentation.md)）。 这样，您就可以测试和优化选件建议的各种版本，而无需实际使用选件，或者超量/不限次地吸引目标，因为模拟对目标收件人没有影响。
+模拟会考虑以前应用于选件的上下文和资格规则(请参阅 [优惠目录概述](../../interaction/using/offer-catalog-overview.md))及其演示规则(请参阅 [管理优惠演示](../../interaction/using/managing-offer-presentation.md))。 这样，您就可以测试和优化选件建议的各种版本，而无需实际使用选件，或者超量/不限次地吸引目标，因为模拟对目标收件人没有影响。
 
 要了解如何模拟优惠，请阅读以下步骤。
 
@@ -29,14 +29,14 @@ ht-degree: 5%
 
 要运行选件模拟，请应用以下步骤：
 
-1. 在&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Simulations]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
+1. 在 **[!UICONTROL Profiles and Targets]** ，单击 **[!UICONTROL Simulations]** 链接，然后单击 **[!UICONTROL Create]** 按钮。
 
    ![](assets/offer_simulation_001.png)
 
 1. 保存并编辑之前创建的模拟。
-1. 转到&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡并指定执行设置。
+1. 转到 **[!UICONTROL Edit]** 选项卡，然后指定执行设置。
 
-   有关更多信息，请参阅[执行设置](../../interaction/using/execution-settings.md)。
+   有关更多信息，请参阅 [执行设置](../../interaction/using/execution-settings.md).
 
    ![](assets/offer_simulation_003.png)
 
@@ -46,23 +46,23 @@ ht-degree: 5%
 
 1. 指定模拟范围。
 
-   有关更多信息，请参阅[范围的定义](../../interaction/using/simulation-scope.md#definition-of-the-scope)。
+   有关更多信息，请参阅 [范围的定义](../../interaction/using/simulation-scope.md#definition-of-the-scope).
 
    ![](assets/offer_simulation_004.png)
 
-1. 添加报表轴以增强&#x200B;**[!UICONTROL Offer distribution by rank]**&#x200B;报表（可选）。
+1. 添加报表轴以增强 **[!UICONTROL Offer distribution by rank]** 报表（可选）。
 
-   有关更多信息，请参阅[添加报表轴](../../interaction/using/simulation-scope.md#adding-reporting-axes)。
+   有关更多信息，请参阅 [添加报表轴](../../interaction/using/simulation-scope.md#adding-reporting-axes).
 
    ![](assets/offer_simulation_005.png)
 
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以记录模拟设置。
+1. 单击 **[!UICONTROL Save]** 以记录模拟设置。
 1. 通过仪表板启动模拟。
 
    ![](assets/offer_simulation_006.png)
 
 1. 检查模拟结果并显示分析报告。
 
-   有关更多信息，请参阅[模拟跟踪](../../interaction/using/simulation-tracking.md)。
+   有关更多信息，请参阅 [模拟跟踪](../../interaction/using/simulation-tracking.md).
 
    ![](assets/offer_simulation_007.png)

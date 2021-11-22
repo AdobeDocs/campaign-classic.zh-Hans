@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## 简单方法 {#simple-method}
 
-此方法包括通过在要跟踪的网页的HTML源代码中插入&#x200B;**`<img>`** HTML标记，向重定向服务器发送HTTP调用。
+此方法包括通过插入 **`<img>`** HTML标记。
 
 >[!IMPORTANT]
 >
@@ -128,7 +128,7 @@ ht-degree: 5%
 
 如果您希望控制发送到重定向服务器的信息，最可靠的方法是使用页面生成语言同步地执行HTTP查询。
 
-您构建的URL必须遵循[Web跟踪标记中定义的语法规则：定义](../../configuration/using/web-tracking-tag--definition.md)。
+您构建的URL必须遵循中定义的语法规则 [Web跟踪标记：定义](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

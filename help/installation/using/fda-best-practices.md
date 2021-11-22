@@ -19,7 +19,7 @@ ht-degree: 7%
 
 ## 使用外部数据优化电子邮件个性化 {#optimizing-email-personalization-with-external-data}
 
-您可以在专用工作流中预处理消息个性化。 要执行此操作，请使用投放属性的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡中提供的&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项。
+您可以在专用工作流中预处理消息个性化。 要执行此操作，请使用 **[!UICONTROL Prepare the personalization data with a workflow]** 选项(在 **[!UICONTROL Analysis]** 选项卡。
 
 在投放分析期间，此选项会自动创建并执行一个工作流，该工作流将链接到目标的所有数据存储在临时表中，包括来自外部数据库中链接的表的数据。
 
@@ -29,13 +29,13 @@ ht-degree: 7%
 
 在多个Adobe Campaign工作流活动中，您可以使用存储在外部数据库中的数据。
 
-* **对外部数据进行过滤**  — 通过查 [](../../workflow/using/targeting-data.md#selecting-data) 询活动，可添加外部数据并在定义的过滤器配置中使用。有关详细信息，请参见[此页面](../../workflow/using/targeting-data.md#selecting-data)。
+* **对外部数据进行过滤** - [查询](../../workflow/using/targeting-data.md#selecting-data) 活动允许您添加外部数据，并将其用在定义的过滤器配置中。 有关详细信息，请参见[此页面](../../workflow/using/targeting-data.md#selecting-data)。
 
-* **创建子集**  — 利用拆分 [](../../workflow/using/split.md) 活动可创建子集。您可以使用外部数据定义要使用的筛选条件。 有关详细信息，请参见[此页面](../../workflow/using/split.md)。
+* **创建子集** - [拆分](../../workflow/using/split.md) 活动。 您可以使用外部数据定义要使用的筛选条件。 有关详细信息，请参见[此页面](../../workflow/using/split.md)。
 
-* **加载外部数据库**  — 您可以在数据加载 [](../../workflow/using/data-loading--rdbms-.md) (RDBMS)活动中使用外部数据。请参阅[此页面](../../workflow/using/data-loading--rdbms-.md)以了解详情。
+* **加载外部数据库**  — 您可以在 [数据加载](../../workflow/using/data-loading--rdbms-.md) (RDBMS)活动。 请参阅[此页面](../../workflow/using/data-loading--rdbms-.md)以了解详情。
 
-* **添加信息和链接**  — 使用 [](../../workflow/using/enrichment.md) Enrichmentactivity可向工作流的工作台添加其他数据，以及链接到外部表。在此上下文中，它可以使用外部数据库中的数据。 请参阅[此页面](../../workflow/using/enrichment.md)以了解详情。
+* **添加信息和链接** - [扩充](../../workflow/using/enrichment.md) 活动允许您向工作流的工作台添加其他数据，以及链接到外部表。 在此上下文中，它可以使用外部数据库中的数据。 请参阅[此页面](../../workflow/using/enrichment.md)以了解详情。
 
 ## FDA限制 {#limitations}
 

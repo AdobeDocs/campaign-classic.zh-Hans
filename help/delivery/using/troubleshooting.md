@@ -19,7 +19,7 @@ ht-degree: 4%
 
 如果移动设备已连接到Wi-Fi，并且您未收到通知，请检查您的防火墙是否未阻止FCM/APNs端口。
 
-**Android**:移动设备连接到端口5228到5230上的FCM服务器。因此，必须配置防火墙，以便它授权与FCM的连接。 要打开的端口包括：5228（最常用的）、5229和5230。
+**Android**:移动设备连接到端口5228到5230上的FCM服务器。 因此，必须配置防火墙，以便它授权与FCM的连接。 要打开的端口包括：5228（最常用的）、5229和5230。
 
 **iOS**:
 
@@ -30,4 +30,4 @@ HTTP/2连接器：您必须允许与以下服务器进行通信：
 
 >[!NOTE]
 >
->有关两个连接器的更多信息，请参阅[在Adobe Campaign中配置移动应用程序](configuring-the-mobile-application.md)。
+>有关两个连接器的详细信息，请参阅 [在Adobe Campaign中配置移动应用程序](configuring-the-mobile-application.md).

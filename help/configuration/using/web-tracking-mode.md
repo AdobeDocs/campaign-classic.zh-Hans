@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Adobe Campaign允许您选择Web跟踪模式，该模式定义在应用程序中处理跟踪日志的方式。
 
-有三种可用的Web跟踪模式：**&quot;会话跟踪&quot;**、**&quot;永久跟踪&quot;**&#x200B;和&#x200B;**&quot;匿名跟踪&quot;**。
+有三种可用的Web跟踪模式： **&quot;会话跟踪&quot;**,**&quot;永久跟踪&quot;** 和 **&quot;匿名跟踪&quot;**.
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_mode.png)
 
@@ -31,7 +31,7 @@ Adobe Campaign允许您选择Web跟踪模式，该模式定义在应用程序中
 >
 >可以随时在实例部署向导中更改默认模式。
 
-请注意，如果您使用&#x200B;**perment web**&#x200B;或&#x200B;**anonymous**&#x200B;跟踪模式，则必须在跟踪表(trackingLogXXX)的“sourceID”列(uuid230)中添加一个索引：
+请注意，如果您使用 **永久网站** 或 **匿名** 跟踪模式下，您必须在跟踪表(trackingLogXXX)的“sourceID”列(uuid230)中添加一个索引：
 
 1. 确定与永久跟踪相关的跟踪表。
 1. 通过添加以下行来扩展与这些表匹配的架构：
@@ -42,11 +42,11 @@ Adobe Campaign允许您选择Web跟踪模式，该模式定义在应用程序中
 </dbindex>
 ```
 
-**** 永久和匿 **** 名Web跟踪模式包括两个选项： **强制** 投放和 **上次投放**。
+**永久** 和 **匿名** Web跟踪模式包括两个选项： **强制交付** 和 **上次投放**.
 
-使用&#x200B;**强制投放**&#x200B;选项，可在跟踪期间指定投放的标识符(@jobid)。
+的 **强制交付** 选项允许您在跟踪期间指定投放的标识符(@jobid)。
 
-**上次投放**&#x200B;选项允许您将当前跟踪日志链接到上次跟踪的投放。
+的 **上次投放** 选项允许您将当前跟踪日志链接到上次跟踪的投放。
 
 **会话Web跟踪的特点：**
 
@@ -81,7 +81,7 @@ Adobe Campaign允许您选择Web跟踪模式，该模式定义在应用程序中
 
 >[!NOTE]
 >
->如果安装了&#x200B;**[!UICONTROL Leads]**&#x200B;包，则需要对活动表(**crm:incomingLead**)执行相同的操作
+>如果 **[!UICONTROL Leads]** 包安装后，您需要为活动表(**crm:incomingLead**)
 
 以下模式总结了所有三种Web跟踪模式的功能：
 

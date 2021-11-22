@@ -17,13 +17,13 @@ ht-degree: 10%
 
 ![](../../assets/v7-only.svg)
 
-模拟完成后，您可以通过添加到模拟窗口的&#x200B;**[!UICONTROL Results]**&#x200B;选项卡和通过模拟仪表板提供的&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;报告来分析其结果。
+模拟完成后，可通过 **[!UICONTROL Results]** 选项卡(添加到模拟窗口和 **[!UICONTROL Breakdown of offers by rank]** 报表，可通过模拟仪表板中获取。
 
 仿真结果包含每个排名和每个收件人的命题的细分。 此外，还考虑了报表轴，并显示在此选项卡中。
 
 您可以保存这些结果，并在必要时通过创建对结果的描述性分析来导出它们。 要实现此目的，请在结果窗口中单击相应的链接。
 
-有关描述性分析向导的详细信息，请参阅[此部分](../../reporting/using/about-descriptive-analysis.md)。
+请参阅 [此部分](../../reporting/using/about-descriptive-analysis.md) 有关描述性分析向导的详细信息。
 
 ![](assets/offer_simulation_012.png)
 

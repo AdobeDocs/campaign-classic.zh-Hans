@@ -21,6 +21,6 @@ ht-degree: 82%
 
 ![](assets/s_ncs_user_profile_add.png)
 
-输入此用户档案的信息。[编辑用户档案](../../platform/using/editing-a-profile.md)中介绍了要完成的选项卡和字段。
+输入此用户档案的信息。要填写的选项卡和字段在 [编辑用户档案](../../platform/using/editing-a-profile.md).
 
 单击 **[!UICONTROL Save]** 确认用户档案的创建。然后系统会将该用户档案添加到 Adobe Campaign 数据库中。

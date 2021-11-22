@@ -17,13 +17,13 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-**SQL数据管理**&#x200B;活动允许您编写自己的SQL脚本以创建和填充工作表。
+的 **SQL数据管理** 活动允许您编写自己的SQL脚本以创建和填充工作表。
 
 ## 先决条件 {#prerequisites}
 
 在配置活动之前，请确保满足以下先决条件：
 
-* 活动仅可用于远程数据源。 因此，必须在实例上安装&#x200B;**[!UICONTROL FDA]**（联合数据访问）包。 [了解详情](../../installation/using/about-fda.md)。
+* 活动仅可用于远程数据源。 的 **[!UICONTROL FDA]** 因此，必须在实例上安装（联合数据访问）包。 [了解详情](../../installation/using/about-fda.md)。
 
    有关更多信息，请根据您的Campaign版本，参阅以下章节：
 
@@ -32,12 +32,12 @@ ht-degree: 4%
    ![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
 
 * 叫客模式必须存在于数据库中，并且必须链接到FDA数据库。
-* 执行工作流的操作员必须具有&#x200B;**[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**&#x200B;命名权限。 [了解详情](../../platform/using/access-management-named-rights.md)。
+* 执行工作流的操作员必须具有 **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** 右名。 [了解详情](../../platform/using/access-management-named-rights.md)。
 
 ## 配置SQL数据管理活动 {#configuring-the-sql-data-management-activity}
 
-1. 指定活动&#x200B;**[!UICONTROL Label]**。
-1. 选择要使用的&#x200B;**[!UICONTROL External account]**，然后选择链接到此外部帐户的&#x200B;**[!UICONTROL Outbound schema]**。
+1. 指定活动 **[!UICONTROL Label]**.
+1. 选择 **[!UICONTROL External account]** 要使用，请选择 **[!UICONTROL Outbound schema]** 链接到此外部帐户。
 
    >[!CAUTION]
    >
@@ -49,7 +49,7 @@ ht-degree: 4%
    >
    >SQL脚本编写器负责确保SQL脚本正常工作，并且其引用（字段名称等） 符合叫客架构。
 
-   如果要加载现有SQL代码，请选择&#x200B;**[!UICONTROL The SQL script is contained in an entity stored in the database]**&#x200B;选项。 必须在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**&#x200B;菜单中创建并存储SQL脚本。
+   如果要加载现有SQL代码，请选择 **[!UICONTROL The SQL script is contained in an entity stored in the database]** 选项。 必须在 **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** 菜单。
 
    否则，请在专用区域中键入或复制粘贴您的SQL脚本。
 
@@ -62,10 +62,10 @@ ht-degree: 4%
 
       >[!NOTE]
       >
-      >(&#39;name&#39;)值对应于过渡属性中的&#x200B;**[!UICONTROL Name]**&#x200B;字段。
+      >(&#39;name&#39;)值对应于 **[!UICONTROL Name]** 字段。
 
-1. 如果SQL脚本已包含用于创建出站工作表的命令，请取消选择&#x200B;**[!UICONTROL Automatically create work table]**&#x200B;选项。 否则，一旦工作流执行，将自动创建工作表。
-1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;以确认活动配置。
+1. 如果SQL脚本已包含用于创建出站工作表的命令，请取消选择 **[!UICONTROL Automatically create work table]** 选项。 否则，一旦工作流执行，将自动创建工作表。
+1. 单击 **[!UICONTROL Ok]** 以确认活动配置。
 
 活动现已配置完成。 它已准备好在工作流中执行。
 

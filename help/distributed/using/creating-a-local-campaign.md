@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-本地营销活动是使用&#x200B;**特定执行计划**&#x200B;的&#x200B;**[!UICONTROL campaign packages]**&#x200B;列表中引用的模板创建的实例。 其目标是使用由中央实体设置和配置的活动模板满足本地通信需求。 实施本地操作的主要阶段如下：
+本地营销活动是使用 **[!UICONTROL campaign packages]** 带有 **特定执行计划**. 其目标是使用由中央实体设置和配置的活动模板满足本地通信需求。 实施本地操作的主要阶段如下：
 
 **对于中央实体**
 
@@ -33,9 +33,9 @@ ht-degree: 1%
 
 ## 创建本地营销活动模板 {#creating-a-local-campaign-template}
 
-要创建营销活动包，您必须首先通过&#x200B;**[!UICONTROL Resources > Templates]**&#x200B;节点创建&#x200B;**营销活动模板**。
+要创建营销活动包，您必须首先创建 **活动模板** 通过 **[!UICONTROL Resources > Templates]** 节点。
 
-要创建新的本地模板，请复制默认的&#x200B;**[!UICONTROL Local campaign (opLocal)]**&#x200B;模板。
+要创建新的本地模板，请复制默认模板 **[!UICONTROL Local campaign (opLocal)]** 模板。
 
 ![](assets/mkg_dist_local_op_creation.png)
 
@@ -43,13 +43,13 @@ ht-degree: 1%
 
 ![](assets/mkg_dist_local_op_creation1.png)
 
-在营销活动窗口中，单击&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;链接。
+在营销活动窗口中，单击 **[!UICONTROL Edit]** ，然后单击 **[!UICONTROL Advanced campaign settings...]** 链接。
 
 ![](assets/mkt_distr_4.png)
 
 ### Web界面 {#web-interface}
 
-在&#x200B;**分布式营销**&#x200B;选项卡中，您可以选择Web界面的类型，并指定当本地实体下订单时要输入的默认值和参数。
+在 **分布式营销** 选项卡，您可以选择Web界面类型，并指定当本地实体下订单时要输入的默认值和参数。
 
 Web界面对应于订购营销活动时由本地实体填写的表单。
 
@@ -59,43 +59,43 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 可用的Web界面类型有四种：
 
-* **[!UICONTROL By brief]** :本地实体必须提供描述营销活动配置的描述。订单获得批准后，中央实体将整体配置并执行营销活动。
+* **[!UICONTROL By brief]** :本地实体必须提供描述营销活动配置的描述。 订单获得批准后，中央实体将整体配置并执行营销活动。
 
    ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** :本地实体有权访问Web表单，在该表单中，根据使用的模板，他们可以编辑内容、目标、最大大小，以及使用个性化字段创建和提取日期。本地实体可以评估目标并预览此Web窗体中的内容。
+* **[!UICONTROL By form]** :本地实体有权访问Web表单，在该表单中，根据使用的模板，他们可以编辑内容、目标、最大大小，以及使用个性化字段创建和提取日期。 本地实体可以评估目标并预览此Web窗体中的内容。
 
    ![](assets/mkt_distr_8.png)
 
-   提供的表单在Web应用程序中指定，该表单必须从模板&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;链接的&#x200B;**[!UICONTROL web Interface]**&#x200B;字段的下拉列表中进行选择。 请参阅[创建本地营销活动（按表单）](examples.md#creating-a-local-campaign--by-form-)。
+   提供的表单在Web应用程序中指定，该表单必须从 **[!UICONTROL web Interface]** 字段 **[!UICONTROL Advanced campaign settings...]** 链接。 请参阅 [创建本地营销活动（按表单）](examples.md#creating-a-local-campaign--by-form-).
 
    >[!NOTE]
    >
-   >此示例中使用的Web应用程序就是一个示例。 您必须创建特定的Web应用程序才能使用表单。 请参阅[API](../../configuration/using/about-web-services.md)。
+   >此示例中使用的Web应用程序就是一个示例。 您必须创建特定的Web应用程序才能使用表单。 请参阅 [API](../../configuration/using/about-web-services.md).
 
    ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** :本地实体有权访问其外联网(而非Adobe Campaign)中的campaign参数。这些参数与&#x200B;**本地营销活动（按形式）**&#x200B;的参数相同。
+* **[!UICONTROL By external form]** :本地实体有权访问其外联网(而非Adobe Campaign)中的campaign参数。 这些参数与 **本地营销活动（按表单）**.
 * **[!UICONTROL Pre-set]** :本地实体使用默认表单订购营销活动，而不将其本地化。
 
    ![](assets/mkt_distr_5.png)
 
 ### 默认值 {#default-values}
 
-选择要由本地实体完成的&#x200B;**[!UICONTROL Default values]**。 例如：
+选择 **[!UICONTROL Default values]** 由当地实体完成。 例如：
 
 * 联系和提取日期，
 * 目标特征（年龄段等）。
 
 ![](assets/mkg_dist_local_op_creation2.png)
 
-填写&#x200B;**[!UICONTROL Parent marketing program]**&#x200B;和&#x200B;**[!UICONTROL Charge]**&#x200B;字段。
+完成 **[!UICONTROL Parent marketing program]** 和 **[!UICONTROL Charge]** 字段。
 
 ![](assets/mkg_dist_local_op_creation3.png)
 
 ### 批准 {#approvals}
 
-从&#x200B;**[!UICONTROL Advanced parameters for campaign entry]**&#x200B;链接中，可以指定审阅人数上限。
+从 **[!UICONTROL Advanced parameters for campaign entry]** 链接时，可以指定审阅人的最大数量。
 
 ![](assets/s_advuser_mkg_dist_add_valid_op1.png)
 
@@ -107,7 +107,7 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 ### 文档 {#documents}
 
-您可以允许本地实体运算符链接文档（文本文件、电子表格、图像、促销活动描述等） 到本地营销活动。 使用&#x200B;**[!UICONTROL Advanced parameters for campaign entry...]**&#x200B;链接可限制文档数量。 要实现此目的，只需在&#x200B;**[!UICONTROL Number of documents]**&#x200B;字段中输入允许的最大数。
+您可以允许本地实体运算符链接文档（文本文件、电子表格、图像、促销活动描述等） 到本地营销活动。 的 **[!UICONTROL Advanced parameters for campaign entry...]** 链接可让您限制文档数量。 要执行此操作，只需在 **[!UICONTROL Number of documents]** 字段。
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
@@ -115,31 +115,31 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 ![](assets/s_advuser_mkg_dist_add_docs.png)
 
-如果不希望显示文档上载字段，请在&#x200B;**[!UICONTROL Number of documents]**&#x200B;字段中输入&#x200B;**[!UICONTROL 0]**。
+如果不希望显示文档上载字段，请输入 **[!UICONTROL 0]** 在 **[!UICONTROL Number of documents]** 字段。
 
 >[!NOTE]
 >
->可通过选中&#x200B;**[!UICONTROL Do not display the page used to enter the campaign parameters]**&#x200B;来停用&#x200B;**[!UICONTROL Advanced parameters for campaign entry]**。
+>的 **[!UICONTROL Advanced parameters for campaign entry]** 可通过检查 **[!UICONTROL Do not display the page used to enter the campaign parameters]**.
 
 ![](assets/s_advuser_mkg_dist_disable_op_parameters.png)
 
 ### 工作流 {#workflow}
 
-在&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，创建用于收集&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;中指定的&#x200B;**[!UICONTROL Default values]**&#x200B;并创建投放的营销活动工作流。
+在 **[!UICONTROL Targeting and workflows]** ，创建用于收集 **[!UICONTROL Default values]** 在 **[!UICONTROL Advanced campaign settings...]** 并创建投放。
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
-双击&#x200B;**[!UICONTROL Query]**&#x200B;活动，以根据指定的&#x200B;**[!UICONTROL Default values]**&#x200B;对其进行配置。
+双击 **[!UICONTROL Query]** 活动，以根据指定的 **[!UICONTROL Default values]**.
 
 ![](assets/mkt_dist_local_campaign_localize_query.png)
 
 ### 投放 {#delivery}
 
-在&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Detail...]**&#x200B;图标以查看所选投放的&#x200B;**[!UICONTROL Scheduling]**。
+在 **[!UICONTROL Audit]** ，单击 **[!UICONTROL Detail...]** 图标以查看 **[!UICONTROL Scheduling]** 的值。
 
 ![](assets/mkg_dist_local_op_creation4c.png)
 
-使用&#x200B;**[!UICONTROL Scheduling]**&#x200B;图标可配置投放的联系和执行日期。
+的 **[!UICONTROL Scheduling]** 图标，可配置投放的联系和执行日期。
 
 ![](assets/mkg_dist_local_op_creation4d.png)
 
@@ -147,17 +147,17 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 ![](assets/mkg_dist_local_op_creation4e.png)
 
-找到投放的HTML。 例如，在&#x200B;**[!UICONTROL Delivery > Current order > Additional fields]**&#x200B;中，使用&#x200B;**[!UICONTROL Age segment]**&#x200B;字段根据目标年龄定位投放。
+找到投放的HTML。 例如， **[!UICONTROL Delivery > Current order > Additional fields]**，则使用 **[!UICONTROL Age segment]** 字段，以根据目标的年龄来查找投放。
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-保存营销活动模板。 现在，您可以通过单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮，从&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Campaign packages]**&#x200B;视图中使用它。
+保存营销活动模板。 您现在可以从 **[!UICONTROL Campaign packages]** 视图 **[!UICONTROL Campaigns]** ，方法是 **[!UICONTROL Create]** 按钮。
 
 ![](assets/mkt_distr_9.png)
 
 >[!NOTE]
 >
->[营销活动模板](../../campaign/using/marketing-campaign-templates.md#campaign-templates)中详细介绍了营销活动模板及其常规配置。
+>营销活动模板及其常规配置详见 [营销活动模板](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ## 创建营销活动包 {#creating-the-campaign-package}
 
@@ -165,14 +165,14 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 应用以下步骤：
 
-1. 在&#x200B;**营销活动**&#x200B;页面的&#x200B;**[!UICONTROL Navigation]**&#x200B;部分，单击&#x200B;**[!UICONTROL Campaign packages]**&#x200B;链接。
+1. 在 **[!UICONTROL Navigation]** 部分 **促销活动** 页面，单击 **[!UICONTROL Campaign packages]** 链接。
 1. 单击 **[!UICONTROL Create]** 按钮。
 
    ![](assets/mkg_dist_add_an_entry.png)
 
-1. 通过窗口上方的部分，您可以选择[以前](#creating-a-local-campaign-template)指定的营销活动包模板。
+1. 利用窗口上方的部分，可选择 [先前](#creating-a-local-campaign-template) 指定的营销活动包模板。
 
-   默认情况下，**[!UICONTROL New local campaign package (localEmpty)]**&#x200B;模板用于本地营销活动。
+   默认情况下， **[!UICONTROL New local campaign package (localEmpty)]** 模板用于本地营销活动。
 
 1. 指定营销活动包的标签、文件夹和执行计划。
 
@@ -192,33 +192,33 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 ### 受众 {#audience}
 
-对于本地营销活动，中央实体可通过检查&#x200B;**[!UICONTROL Limit the package to a set of local entities]**&#x200B;来指定涉及的本地实体。
+对于本地营销活动，中央实体可通过检查 **[!UICONTROL Limit the package to a set of local entities]**.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry3.png)
 
 ### 其他设置 {#additional-settings}
 
-保存包后，中央实体可以从&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中对其进行编辑。
+保存包后，中央实体可以从 **[!UICONTROL Edit]** 选项卡。
 
 ![](assets/mkg_dist_edit_kit.png)
 
-从&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，中央实体可以：
+从 **[!UICONTROL General]** ，则中央实体可以：
 
-* 从&#x200B;**[!UICONTROL Approval parameters...]**&#x200B;链接配置营销活动包审阅人，
+* 从 **[!UICONTROL Approval parameters...]** 链接，
 * 审查执行计划，
 * 添加或删除本地实体。
 
 >[!NOTE]
 >
->默认情况下，每个实体只能对&#x200B;**本地促销活动**&#x200B;订购一次。
+>默认情况下，每个实体都可以对 **本地营销活动** 一次。
 >   
->选中&#x200B;**[!UICONTROL Enable multiple creation]**&#x200B;选项，以允许从营销活动包创建多个本地营销活动。
+>检查 **[!UICONTROL Enable multiple creation]** 选项，以允许从营销活动包创建多个本地营销活动。
 
 ![](assets/mkg_dist_local_op_multi_crea.png)
 
 ### 通知 {#notifications}
 
-当营销活动可用或达到注册截止时间时，会向本地通知组的操作员发送消息。 有关更多信息，请参阅[组织实体](about-distributed-marketing.md#organizational-entities)。
+当营销活动可用或达到注册截止时间时，会向本地通知组的操作员发送消息。 有关更多信息，请参阅 [组织实体](about-distributed-marketing.md#organizational-entities).
 
 ## 订购营销活动 {#ordering-a-campaign}
 
@@ -234,15 +234,15 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 要订购营销活动，请执行以下操作：
 
-1. 单击通知消息中的&#x200B;**[!UICONTROL Order campaign]**&#x200B;或Adobe Campaign中的相应按钮。
+1. 单击 **[!UICONTROL Order campaign]** 或Adobe Campaign中的相应按钮。
 
    输入您的ID和密码以订购营销活动。 界面由Web应用程序中定义的一组页面组成。
 
    >[!NOTE]
    >
-   >[此部分](../../web/using/about-web-applications.md)中详细介绍了Web应用程序。
+   >Web应用程序详见 [此部分](../../web/using/about-web-applications.md).
 
-1. 在第一页中输入必需的信息（订单标签和注释），然后单击&#x200B;**[!UICONTROL Next]**。
+1. 在首页中输入必需信息（订单标签和评论），然后单击 **[!UICONTROL Next]**.
 
    ![](assets/mkg_dist_subscribe_step1.png)
 
@@ -260,7 +260,7 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
    ![](assets/mkg_dist_local_op_catalog_detail_1.png)
 
-   **[!UICONTROL Edit]**&#x200B;选项卡包含本地实体在订购营销活动时输入的信息。
+   的 **[!UICONTROL Edit]** 选项卡包含本地实体在订购营销活动时输入的信息。
 
    ![](assets/mkg_dist_local_op_catalog_detail_1b.png)
 
@@ -268,11 +268,11 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
    ![](assets/mkg_dist_local_op_catalog_detail_3.png)
 
-   有关更多信息，请参阅[批准流程](#approval-process)一节。
+   有关更多信息，请参阅 [审批流程](#approval-process) 中。
 
-1. 然后，本地操作员会收到营销活动可用的通知：营销活动可用性可在&#x200B;**营销活动**&#x200B;选项卡的营销活动包列表中找到。 然后可以使用营销活动。 有关更多信息，请参阅[访问营销活动](accessing-campaigns.md)。
+1. 然后，本地操作员会收到营销活动可用的通知：营销活动可用性可在 **促销活动** 选项卡。 然后可以使用营销活动。 有关更多信息，请参阅 [访问营销活动](accessing-campaigns.md).
 
-   **[!UICONTROL Start targeting with order approval]**&#x200B;选项允许本地实体在订单获得批准后立即运行营销活动。
+   的 **[!UICONTROL Start targeting with order approval]** 选项允许本地实体在订单获得批准后立即运行营销活动。
 
    ![](assets/mkg_dist_local_op_catalog_use.png)
 
@@ -280,7 +280,7 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 要确认促销活动订单，中央实体必须批准该订单。
 
-通过&#x200B;**促销活动**&#x200B;选项卡访问&#x200B;**[!UICONTROL Campaign orders]**&#x200B;概述，您可以查看促销活动订单的状态并批准它们。
+的 **[!UICONTROL Campaign orders]** 概述，通过 **促销活动** 选项卡，用于查看促销活动订单的状态并批准它们。
 
 >[!NOTE]
 >
@@ -296,19 +296,19 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 >[!NOTE]
 >
->[审阅人](#reviewers)部分中介绍了如何选择审阅人。 他们可以接受或拒绝命令。
+>选择审阅者将显示在 [审阅人](#reviewers) 中。 他们可以接受或拒绝命令。
 
 ![](assets/mkg_dist_command_valid_web.png)
 
 #### 通过Adobe Campaign控制台批准 {#approving-via-the-adobe-campaign-console}
 
-此外，营销活动订单概述中的订单也可通过控制台获得批准。 要批准订单，请选择它并单击&#x200B;**[!UICONTROL Approve the order]**。
+此外，营销活动订单概述中的订单也可以通过控制台获得批准。 要批准订单，请选择它并单击 **[!UICONTROL Approve the order]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
 >[!NOTE]
 >
->在营销活动可用日期之前，仍可以编辑和重新配置营销活动。 本地实体也可以通过单击&#x200B;**[!UICONTROL Cancel]**&#x200B;按钮来拒绝营销活动。
+>在营销活动可用日期之前，仍可以编辑和重新配置营销活动。 本地实体也可以通过单击 **[!UICONTROL Cancel]** 按钮。
 
 #### 创建营销策划 {#creating-a-campaign}
 
@@ -316,7 +316,7 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 ![](assets/mkg_dist_mutual_op_created.png)
 
-有关更多信息，请参阅[访问营销活动](accessing-campaigns.md)。
+有关更多信息，请参阅 [访问营销活动](accessing-campaigns.md).
 
 ### 拒绝批准 {#rejecting-an-approval}
 
@@ -330,7 +330,7 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
-他们可以在营销活动包的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中查看相关注释。
+他们可以查看营销活动包中的相关评论 **[!UICONTROL Edit]** 选项卡。
 
 ![](assets/mkg_dist_do_not_valid_tab.png)
 
@@ -338,7 +338,7 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 每次需要批准时，审阅人都会通过电子邮件通知。
 
-对于每个本地实体，选择审阅人以批准营销活动订单和进行营销活动批准。 有关选择本地审阅人的详细信息，请参阅[组织实体](about-distributed-marketing.md#organizational-entities)。
+对于每个本地实体，选择审阅人以批准营销活动订单和进行营销活动批准。 有关选择本地审阅人的详细信息，请参阅 [组织实体](about-distributed-marketing.md#organizational-entities).
 
 >[!NOTE]
 >
@@ -346,8 +346,8 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 ### 取消订单 {#canceling-an-order}
 
-中央机构可使用订单仪表板上的&#x200B;**[!UICONTROL Delete]**&#x200B;按钮取消订单。
+中央机构可使用 **[!UICONTROL Delete]** 按钮。
 
 ![](assets/mkg_dist_local_op_cancel.png)
 
-这会取消&#x200B;**[!UICONTROL Campaign orders]**&#x200B;视图中的营销活动。
+这会取消 **[!UICONTROL Campaign orders]** 中。

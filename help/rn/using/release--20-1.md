@@ -93,7 +93,7 @@ _2020年2月17日_
  <tbody> 
   <tr> 
    <td> <p>hadoopFDA连接器已得到改进，可支持Hadoop3.0和Cloudera。</p>
-    <p>有关详细信息，请参阅<a href="../../installation/using/configure-fda-hadoop.md">有详细说明的文档</a>。</p>
+    <p>有关更多信息，请参阅<a href="../../installation/using/configure-fda-hadoop.md">详细文档</a>。</p>
    </td> 
   </tr> 
  </tbody> 
@@ -117,21 +117,21 @@ _2020年2月17日_
 
 * iOS 13现在支持HTTP2连接器。
 
-* 改进了推送通知功能（nms:address和nms:appSubscriptionRcp）所使用的表的隔离管理和清理。 对于iOS（仅限HTTP2连接器），禁用的令牌现在处理方式与Android相同。 现在，在NmsAppSubscriptionRcp表中设置了禁用标志。 [阅读更多](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* 改进了推送通知功能（nms:address和nms:appSubscriptionRcp）所使用的表的隔离管理和清理。 对于iOS（仅限HTTP2连接器），禁用的令牌现在处理方式与Android相同。 现在，在NmsAppSubscriptionRcp表中设置了禁用标志。 [了解更多信息](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* 在 **JavaScript代码** 和 **高级JavaScript代码** 工作流活动以定义超时期限。 这可防止JavaScript执行阶段运行过长。 如果超时期间已过，工作流将停止。 默认超时为1小时。 [阅读更多](../../workflow/using/sql-code-and-javascript-code.md)
+* 在 **JavaScript代码** 和 **高级JavaScript代码** 工作流活动以定义超时期限。 这可防止JavaScript执行阶段运行过长。 如果超时期间已过，工作流将停止。 默认超时为1小时。 [了解更多信息](../../workflow/using/sql-code-and-javascript-code.md)
 
 * 现在，在中间源服务器上找不到匹配的亲和度时，将停止投放分析，并显示相应的错误消息。
 
 * 现在支持Postgres的数据库故障切换：现在，当数据库服务器崩溃并重新启动时，Campaign会自动重新连接到该服务器。
 
-* 的 **开始挂起** 视图已添加到“管理”>“审核”>“工作流状态”节点。 这样，您就可以监控实例上等待启动的所有工作流 **operationMgt** 进程。 此视图随营销活动包一起提供。 [阅读更多](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* 的 **开始挂起** 视图已添加到“管理”>“审核”>“工作流状态”节点。 这样，您就可以监控实例上等待启动的所有工作流 **operationMgt** 进程。 此视图随营销活动包一起提供。 [了解更多信息](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 **其他变更**
 
 * 在Linux上，nlserver服务启动现在使用系统单元，而不是/etc/init.d/nlserver6脚本。 安装20.1程序包时，将自动执行到新启动方案的迁移。 /etc/init.d/nlserver6仍然提供，但是为了与nlserver服务（启动、重新启动、停止等）进行交互，我们建议您直接使用systemctl命令。
 
-* 最耗时的自定义表已从 **xtkNewId** 序列。 [阅读更多](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* 最耗时的自定义表已从 **xtkNewId** 序列。 [了解更多信息](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * 改进了查询性能，这些性能可能会受到不必要的数据库连接的影响。
 
@@ -141,7 +141,7 @@ _2020年2月17日_
 
 * 连接池的稳健性已得到改进，这可能防止意外连接失败的发生频率过高。
 
-* 电子邮件地址验证规则，用于在发生软错误时将地址添加到隔离。 [阅读更多](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+* 电子邮件地址验证规则，用于在发生软错误时将地址添加到隔离。 [了解更多信息](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
 * 对于Debian，Campaign现在使用系统PCRE库（当它们可用时）。
 
@@ -149,7 +149,7 @@ _2020年2月17日_
 
 * 在打开连接以加载富图像时，已向LINE servlet添加超时。 如果图像加载时间过长，则Servlet会停止连接以避免瓶颈。
 
-**补丁程序**
+**修补程序**
 
 * 修复了使用Hadoop连接器时的帐户密钥加密问题。
 

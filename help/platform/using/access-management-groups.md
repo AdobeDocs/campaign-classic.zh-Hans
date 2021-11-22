@@ -17,27 +17,27 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-通过树中的&#x200B;**[!UICONTROL Administration > Access management > Operator groups]**&#x200B;节点创建运算符组。
+运算符组通过 **[!UICONTROL Administration > Access management > Operator groups]** 树中的节点。
 
 ## 创建新运算符组 {#creating-a-new-operator-group}
 
 要创建新的运算符组，请应用以下步骤：
 
-1. 单击组列表右侧的&#x200B;**[!UICONTROL New]**&#x200B;按钮，或右键单击列表并选择&#x200B;**[!UICONTROL New]**。
-1. 在下部窗口的&#x200B;**[!UICONTROL General]**&#x200B;选项卡的相应字段中，输入此组的名称和说明。
+1. 单击 **[!UICONTROL New]** 按钮或右键单击列表并选择 **[!UICONTROL New]**.
+1. 在下部窗口中，从 **[!UICONTROL General]** 选项卡，在相应字段中输入此组的名称和说明。
 
    ![](assets/s_ncs_user_create_operator_gp.png)
 
-1. 单击&#x200B;**[!UICONTROL Content]**&#x200B;选项卡以定义此组的授权。
-1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以选择指定的权限或与组关联的运算符。
-1. 单击下拉列表或&#x200B;**[!UICONTROL Folder]**&#x200B;字段右侧文件夹中的，找到要与此组关联的指定权限或运算符。
-1. 选择要添加的权限或运算符，然后单击&#x200B;**[!UICONTROL OK]**&#x200B;以验证。
+1. 单击 **[!UICONTROL Content]** 选项卡来定义此群组的授权。
+1. 单击 **[!UICONTROL Add]** 按钮选择要与组关联的指定权限或运算符。
+1. 单击下拉列表或右侧文件夹上的 **[!UICONTROL Folder]** 字段，找到要与此组关联的指定权限或运算符。
+1. 选择要添加的权限或运算符，然后单击 **[!UICONTROL OK]** 验证。
 
    ![](assets/s_ncs_user_create_operator_gp03.png)
 
    重复此操作可添加其他权限或运算符。
 
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮将组添加到列表。
+1. 单击 **[!UICONTROL Save]** 按钮将群组添加到列表。
 
 ## 默认组 {#default-groups}
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Administrator]**
 
-   此组中的运算符对实例具有完全访问权限。 管理员可以访问界面中技术含量最高的部分。 他们承担着&#x200B;**[!UICONTROL Administration]**&#x200B;角色，并确保平台已全部设置。
+   此组中的运算符对实例具有完全访问权限。 管理员可以访问界面中技术含量最高的部分。 他们握着 **[!UICONTROL Administration]** 角色，并确保平台已全部设置。
 
    此组包含以下命名权限：
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Campaign managers]**
 
-   此组中的操作员可以管理营销活动：它允许您访问链接到营销策划的对象（计划、项目、工作流、预算等） 在&#x200B;**[!UICONTROL Campaign]**&#x200B;框架内(可选的Adobe Campaign模块)。
+   此组中的操作员可以管理营销活动：它允许您访问链接到营销策划的对象（计划、项目、工作流、预算等） 在 **[!UICONTROL Campaign]** (可选的Adobe Campaign模块)。
 
    此组包含以下命名权限：
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Content contributors]**
 
-   此组中的运算符可以访问&#x200B;**[!UICONTROL Content management]**&#x200B;框架内的Content文件夹(可选的Adobe Campaign模块)。 此组不授予任何其他权限。
+   此组中的运算符可以访问 **[!UICONTROL Content management]** (可选的Adobe Campaign模块)。 此组不授予任何其他权限。
 
 1. **[!UICONTROL Access to reports]**
 
@@ -90,11 +90,11 @@ ht-degree: 0%
 
 1. 本地/中央管理
 
-   这些组允许您使用&#x200B;**[!UICONTROL Distributed marketing]**(可选的Adobe Campaign模块)。
+   这些组允许您使用 **[!UICONTROL Distributed marketing]** (可选的Adobe Campaign模块)。
 
 1. **[!UICONTROL Offer managers]**
 
-   此组中的运算符可以创建和维护选件。 有关此内容的详细信息，请参见此[页面](../../interaction/using/operator-profiles.md)。
+   此组中的运算符可以创建和维护选件。 有关此内容的更多信息，请参阅此内容 [页面](../../interaction/using/operator-profiles.md).
 此组包含以下命名权限：
 
    * **[!UICONTROL INSERT FOLDERS]**:将文件夹插入Adobe Campaign树的权限（前提是您拥有相关分支的编辑权限），

@@ -17,7 +17,7 @@ ht-degree: 22%
 
 ![](../../assets/v7-only.svg)
 
-在运行任何迁移之前，请参阅[开始迁移之前](../../migration/using/before-starting-migration.md)和[配置平台](../../migration/using/configuring-your-platform.md)部分。
+运行任何迁移之前，请咨询 [开始迁移前](../../migration/using/before-starting-migration.md) 和 [配置平台](../../migration/using/configuring-your-platform.md) 中。
 
 从v6.02迁移到Adobe Campaign v7时，某些事先交付的文件将不会交付。
 

@@ -19,21 +19,21 @@ ht-degree: 9%
 
 创建投放时的关键步骤如下：
 
-1. **创建和标识投放**。[阅读更多](steps-create-and-identify-the-delivery.md)
+1. **创建和标识投放**. [了解更多信息](steps-create-and-identify-the-delivery.md)
 
-1. **定义投放内容**。投放内容定义特定于每个渠道。 有关更多信息，请参阅专述章节：
+1. **定义投放内容**. 投放内容定义特定于每个渠道。 有关更多信息，请参阅专述章节：
 
    * [电子邮件渠道](defining-the-email-content.md)
    * [短信渠道](sms-create.md#defining-the-sms-content)
    * [直邮渠道](defining-the-direct-mail-content.md)
    * [移动应用程序渠道](about-mobile-app-channel.md)
 
-1. **定义目标群体**。[阅读更多](steps-defining-the-target-population.md)
+1. **定义目标群体**. [了解更多信息](steps-defining-the-target-population.md)
 
-1. **发送投放**. [阅读更多](steps-sending-the-delivery.md)
+1. **发送投放**. [了解更多信息](steps-sending-the-delivery.md)
 
-1. **监控投放** （跟踪、隔离、报表等）。有关更多信息，请参阅[监控投放](about-delivery-monitoring.md)和[跟踪投放](about-message-tracking.md)章节。
+1. **监控投放** （跟踪、隔离、报表等）。 有关更多信息，请参阅 [监控投放](about-delivery-monitoring.md) 和 [跟踪投放](about-message-tracking.md) 中。
 
 >[!NOTE]
 >
->本章描述的步骤假定所有目标收件人及其用户档案都存储在数据库中，但外部投放情况除外（请参阅[选择外部收件人](steps-defining-the-target-population.md#selecting-external-recipients)）。
+>本章中描述的步骤假定除外部投放外，所有目标收件人及其用户档案都存储在数据库中(请参阅 [选择外部收件人](steps-defining-the-target-population.md#selecting-external-recipients))。

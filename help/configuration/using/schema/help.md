@@ -27,7 +27,7 @@ help:==EMPTY
 
 ## 父母 {#parents-6}
 
-`<srcschema>`  、   `<element>`   、    `<attribute>`    、     `<enumeration>`     、      `<value>`      、      `<param />`、       `<method />`
+`<srcschema>`  ,  `<element>`   ,   `<attribute>`    ,    `<enumeration>`     ,     `<value>`      ,     `<param />`,      `<method />`
 
 ## 子项 {#children-6}
 
@@ -35,7 +35,7 @@ help:==EMPTY
 
 ## 说明 {#description-6}
 
-此元素用于描述`<element>`或`<attribute>`   元素。 它只能包含文本，并且以XML形式存储在数据库中。
+通过此元素，您可以 `<element>`  或  `<attribute>`   元素。 它只能包含文本，并且以XML形式存储在数据库中。
 
 ## 属性描述 {#attribute-description-6}
 

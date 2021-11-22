@@ -35,13 +35,13 @@ ht-degree: 1%
 
 1. 在源环境中的所有实例上创建数据库的副本，
 1. 在目标环境的所有实例上恢复这些副本，
-1. 在启动&#x200B;**nms:freezeInstance.js**&#x200B;目标环境中的烧灼脚本之前，请先运行该脚本。
+1. 运行 **nms:freezeInstance.js** 目标环境中的烧灼脚本。
 
    此过程不会影响服务器及其配置。
 
    >[!NOTE]
    >
-   >在Adobe Campaign上下文中， **腐蚀**&#x200B;组合了允许您停止所有进程与外部交互的操作：日志、跟踪、投放、活动工作流等。\
+   >在Adobe Campaign, **灼烧** 将允许您停止所有进程与外部交互的操作组合在一起：日志、跟踪、投放、活动工作流等。\
    >此步骤对于避免多次投放消息（一次来自标称环境，一次来自复制环境）非常必要。
 
    >[!IMPORTANT]
@@ -61,14 +61,14 @@ ht-degree: 1%
 
 ### 转移过程 {#transfer-procedure}
 
-本节将通过案例研究帮助您了解将源环境传输到目标环境所需的步骤：我们的目标是将生产环境（**prod**&#x200B;实例）恢复到开发环境（**dev**&#x200B;实例），以便在尽可能接近“live”平台的上下文中工作。
+本节将通过案例研究帮助您了解将源环境传输到目标环境所需的步骤：我们的目标是恢复生产环境(**prod** 实例)到开发环境(**开发** 实例)以在尽可能靠近“live”平台的上下文中工作。
 
 必须非常小心地执行以下步骤：复制源环境数据库时，某些进程可能仍在进行中。 烧灼（下面步骤3）可阻止消息发送两次并保持数据一致性。
 
 >[!IMPORTANT]
 >
 >* 以下过程在PostgreSQL语言中有效。 如果SQL语言不同(例如Oracle)，则必须修改SQL查询。
->* 以下命令适用于PostgreSQL下&#x200B;**prod**&#x200B;实例和&#x200B;**dev**&#x200B;实例的上下文。
+>* 以下命令适用于 **prod** 实例和 **开发** 实例。
 
 >
 
@@ -89,14 +89,14 @@ pg_dump mydatabase > mydatabase.sql
 
 每个环境的大多数配置元素都各不相同：外部帐户（中间源、路由等）、技术选项（平台名称、数据库ID、电子邮件地址和默认URL等）。
 
-在目标数据库上保存源数据库之前，您需要导出目标环境（开发）配置。 为此，请导出以下两个表的内容：**xtkoption**&#x200B;和&#x200B;**nmsextaccount**。
+在目标数据库上保存源数据库之前，您需要导出目标环境（开发）配置。 为此，请导出以下两个表的内容： **xtkoption** 和 **nmsexaccount**.
 
 通过此导出，您可以保留开发配置，并仅刷新开发数据（工作流、模板、Web应用程序、收件人等）。
 
 为此，请为以下两个元素执行包导出：
 
-* 将&#x200B;**xtk:option**&#x200B;表导出到“options_dev.xml”文件中，但不包含具有以下内部名称的记录：“WdbcTimeZone”、“NmsServer_LastPostUpgrade”和“NmsBroadcast_RegexRules”。
-* 在“extaccount_dev.xml”文件中，导出ID不为0(@id &lt;> 0)的所有记录的&#x200B;**nms:extAccount**&#x200B;表。
+* 导出 **xtk:option** 表格到“options_dev.xml”文件中，但不包含具有以下内部名称的记录：“WdbcTimeZone”、“NmsServer_LastPostUpgrade”和“NmsBroadcast_RegexRules”。
+* 在“extaccount_dev.xml”文件中，导出 **nms:extAccount** ID不为0(@id &lt;> 0)的所有记录的表。
 
 检查导出的选项/帐户数是否等于每个文件中要导出的行数。
 
@@ -138,14 +138,14 @@ nlserver pdump
 
 >[!NOTE]
 >
->在Windows中，**webmdl**&#x200B;进程仍可处于活动状态，而不会影响其他操作。
+>在Windows中， **webmdl** 进程仍可以处于活动状态，而不会影响其他操作。
 
 您还可以检查系统进程是否尚未运行。
 
 为此，请使用以下过程：
 
-* 在Windows中：打开&#x200B;**任务管理器**&#x200B;并检查没有&#x200B;**nlserver.exe**&#x200B;进程。
-* 在Linux中：运行&#x200B;**ps aux | grep nlserver**&#x200B;命令，并检查没有&#x200B;**nlserver**&#x200B;进程。
+* 在Windows中：打开 **任务管理器** 并检查 **nlserver.exe** 进程。
+* 在Linux中：运行 **ps aux | grep nlserver** 命令并检查 **nlserver** 进程。
 
 ### 步骤4 — 在目标环境中恢复数据库（开发） {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -192,7 +192,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 
 >[!NOTE]
 >
->在&#x200B;**dev**&#x200B;环境中重新启动Adobe Campaign之前，您可以应用其他安全过程：仅启动&#x200B;**web**&#x200B;模块。
+>在上重新启动Adobe Campaign之前 **开发** 环境中，您可以应用附加的安全过程：开始 **web** 仅模块。
 >  
 >为此，请编辑实例的配置文件(**config-dev.xml**)，然后在每个模块（mta、stat等）的autoStart=&quot;true&quot;选项之前添加“_”字符。
 
@@ -223,11 +223,11 @@ nlserver pdump
 1. 打开数据库的管理控制台并清除ID不为0(@id &lt;> 0)的外部帐户（表nms:extAccount）。
 1. 在Adobe Campaign控制台中，导入之前通过导入包功能创建的options_dev.xml包。
 
-   检查&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;节点中的选项是否确实已更新。
+   检查 **[!UICONTROL Administration > Platform > Options]** 节点。
 
 1. 在Adobe Campaign控制台中，导入之前通过导入包功能创建的extaccount_dev.xml
 
-   检查外部数据库是否确实已导入&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中。
+   检查外部数据库是否确实已在 **[!UICONTROL Administration > Platform > External accounts]** .
 
 ### 步骤9 — 重新启动所有进程并更改用户（开发） {#step-9---restart-all-processes-and-change-users--dev-}
 

@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ![](../../assets/common.svg)
 
-默认情况下，下面详述的工作流随&#x200B;**传输到中间源**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅[Campaign Classicv7安装指南](../../installation/using/mid-sourcing-deployment.md)。
+下面详述的工作流随 **传输到中间源** 模块。 有关此模块的更多信息，请参阅 [Campaign Classicv7安装指南](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 

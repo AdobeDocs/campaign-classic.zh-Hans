@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ![](../../assets/common.svg)
 
-通过&#x200B;**Marketing Analytics**&#x200B;模块，可探索数据库中的数据。 它使您能够分析和测量数据、计算统计数据、简化和优化报表的创建和计算。 除此之外，营销分析还允许您创建报表和构建目标群体。 识别后，这些区段会存储在可在Adobe Campaign中使用的列表（定位、分段等）中。
+通过 **营销分析** 模块。 它使您能够分析和测量数据、计算统计数据、简化和优化报表的创建和计算。 除此之外，营销分析还允许您创建报表和构建目标群体。 识别后，这些区段会存储在可在Adobe Campaign中使用的列表（定位、分段等）中。
 
 多维数据集用于生成某些内置报告，包括投放报告（投放跟踪、点击、打开等）。 基于多维数据集的报告只能用作500万条事实线以下数据卷的标准。
 
@@ -27,7 +27,7 @@ ht-degree: 10%
 
 >[!CAUTION]
 >
->**Marketing** Analytics和Adobe Campaign模块。需要在您的实例上安装它，以便您能够使用下面描述的功能。
+>**营销分析** 是Adobe Campaign模块。 需要在您的实例上安装它，以便您能够使用下面描述的功能。
 
 借助Marketing Analytics模块，Campaign使您能够：
 
@@ -37,7 +37,7 @@ ht-degree: 10%
    * 减少用于报告和查询的各种计算中涉及的数据量，从而显着优化指标计算时间，
    * 简化对数据的访问，使用户能够根据各种维度处理数据（无论是否预先聚合）。
 
-   有关更多信息，请参阅[创建指示器](../../reporting/using/creating-indicators.md)。
+   有关更多信息，请参阅 [创建指标](../../reporting/using/creating-indicators.md).
 
 1. 在以下视图中创建数据透视表：
 
@@ -46,7 +46,7 @@ ht-degree: 10%
    * 使用的措施和指标个性化，
    * 为具有非技术背景的用户提供交互式分析工具。
 
-   有关更多信息，请参阅[使用多维数据集浏览数据](../../reporting/using/using-cubes-to-explore-data.md)。
+   有关更多信息，请参阅 [使用多维数据集浏览数据](../../reporting/using/using-cubes-to-explore-data.md).
 
 1. 使用多维数据集中计算和聚合的数据构建查询。
 1. 确定群体并在列表中引用它们。
@@ -79,34 +79,34 @@ ht-degree: 10%
 
    最常用的度量是和、平均、最大、最小、标准差等。
 
-   可以计算度量：例如，要约的接受率是其被呈现的次数与被接受次数的比率。
+   可以计算度量：例如，要约的接受率是其被呈现次数与被接受次数之比。
 
 ## 立方工作区 {#cube-workspace}
 
-多维数据集存储在&#x200B;**[!UICONTROL Administration > Configuration > Cubes]**&#x200B;节点中。
+多维数据集存储在 **[!UICONTROL Administration > Configuration > Cubes]** 节点。
 
 ![](assets/s_advuser_cube_node.png)
 
 多维数据集使用的主要上下文如下：
 
-* 数据导出可以直接在Adobe Campaign平台&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡中设计的报表中执行。
+* 数据导出可以直接在报表中执行，该报表在 **[!UICONTROL Reports]** 选项卡。
 
    要实现此目的，请创建新报告并选择要使用的多维数据集。
 
    ![](assets/cube_create_new.png)
 
-   多维数据集的显示方式与创建报告时所依据的模板类似。 选择模板后，单击&#x200B;**[!UICONTROL Create]**&#x200B;以配置和查看匹配的报表。
+   多维数据集的显示方式与创建报告时所依据的模板类似。 选择模板后，单击 **[!UICONTROL Create]** 配置和查看匹配报表。
 
    您可以调整测量、更改显示模式或配置表格，然后使用主按钮显示报表。
 
    ![](assets/cube_display_new.png)
 
-* 您还可以引用报表&#x200B;**[!UICONTROL Query]**&#x200B;框中的多维数据集以使用其指示器，如下所示：
+* 您还可以在 **[!UICONTROL Query]** 报表框以使用其指标，如下所示：
 
    ![](assets/s_advuser_query_using_a_cube.png)
 
-* 您还可以将基于多维数据集的数据透视表插入报表的任何页面。 要实现此目的，请引用要在相关页面上数据透视表的&#x200B;**[!UICONTROL Data]**&#x200B;选项卡中使用的多维数据集。
+* 您还可以将基于多维数据集的数据透视表插入报表的任何页面。 为此，请引用 **[!UICONTROL Data]** 选项卡。
 
    ![](assets/s_advuser_cube_in_report.png)
 
-   有关更多信息，请参阅[探索报表中的数据](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report)。
+   有关更多信息，请参阅 [浏览报表中的数据](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).

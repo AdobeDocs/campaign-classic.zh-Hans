@@ -21,11 +21,11 @@ ht-degree: 14%
 
 工作流活动按类别进行分组。 同时有四个选项卡。
 
-在营销活动工作流中，**[!UICONTROL Events]**&#x200B;选项卡被替换为&#x200B;**[!UICONTROL Deliveries]**&#x200B;选项卡。 [操作活动](about-action-activities.md)部分中详细介绍了此选项卡中的活动。
+在营销活动工作流中， **[!UICONTROL Events]** 选项卡被替换为 **[!UICONTROL Deliveries]** 选项卡。 有关此选项卡中的活动的详情，请参阅 [操作活动](about-action-activities.md) 中。
 
 ![](assets/wf-activity-tabs.png)
 
-阅读更多:
+了解更多信息:
 
 * [关于定位活动](about-targeting-activities.md)
 * [执行工作流](starting-a-workflow.md)

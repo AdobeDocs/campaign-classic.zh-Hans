@@ -51,8 +51,8 @@ ht-degree: 6%
 
 如果投放性能不佳，您可以检查：
 
-* **投放的大小**:完成大型投放可能需要较长时间。MTA子项配置为处理默认的批处理大小，该大小适用于大多数情况，但在投放速度持续缓慢时需要选中该大小。
-* **投放的目标**:投放性能禁止受软退件错误的影响，软退件错误将根据重试配置进行处理。错误数越多，重试的次数就越多。
-* **平台总负载**:发送多个大型投放时，整体平台可能会受到影响。您还可以检查IP信誉和可投放性问题。 有关更多信息，请参阅[此部分](about-deliverability.md)和[Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
+* **投放的大小**:完成大型投放可能需要较长时间。 MTA子项配置为处理默认的批处理大小，该大小适用于大多数情况，但在投放速度持续缓慢时需要选中该大小。
+* **投放的目标**:投放性能禁止受软退件错误的影响，软退件错误将根据重试配置进行处理。 错误数越多，重试的次数就越多。
+* **整体平台负载**:发送多个大型投放时，整体平台可能会受到影响。 您还可以检查IP信誉和可投放性问题。 有关更多信息，请参阅 [此部分](about-deliverability.md) 和 [Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans).
 
 平台和数据库维护也会影响投放发送性能。 有关详细信息，请参见[此页面](../../production/using/database-performances.md)。

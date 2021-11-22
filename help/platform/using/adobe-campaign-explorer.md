@@ -5,8 +5,8 @@ description: 了解如何使用Campaign Explorer
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f,f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
+source-git-commit: 1de1f7aafd7eb18c1160460ddd5c84ac59473664
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 34%
@@ -23,7 +23,7 @@ ht-degree: 34%
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - 树状结构**：您可以个性化树状结构的内容（添加、移动或删除节点）。此程序仅适用于专家级用户。有关更多信息，请参见[此部分](#about-navigation-hierarchy)。)
+**1 - 树状结构**：您可以个性化树状结构的内容（添加、移动或删除节点）。此程序仅适用于专家级用户。有关更多信息，请参阅  [此部分](#about-navigation-hierarchy).)。
 
 **2 - 列表**：您可以过滤列表、执行搜索、添加信息或排序数据。[了解详情](adobe-campaign-ui-lists.md)。
 
@@ -37,13 +37,13 @@ ht-degree: 34%
 
 ![](assets/d_ncs_integration_navigation.png)
 
-要向树中添加新文件夹，请右键单击要在其中插入文件夹的分支中的文件夹，然后选择&#x200B;**[!UICONTROL Add new folder]** 。 在快捷菜单中，选择要创建的文件类型。
+要向树中添加新文件夹，请右键单击要在其中插入文件夹的分支中的文件夹，然后选择 **[!UICONTROL Add new folder]** . 在快捷菜单中，选择要创建的文件类型。
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
-在此部分](../../configuration/using/configuration.md)中了解如何配置Campaign导航树[。
+了解如何配置Campaign导航树 [在此部分中](../../configuration/using/configuration.md).
 
-在此部分](access-management-folders.md)中了解如何设置文件夹[的权限。
+了解如何设置文件夹权限 [在此部分中](access-management-folders.md).
 
 ## 文件夹配置最佳实践
 
@@ -82,4 +82,4 @@ ht-degree: 34%
 
 ## 浏览和自定义列表 {#browsing-lists}
 
-了解如何浏览、管理和自定义此部分](adobe-campaign-ui-lists.md)中的列表[。
+了解如何浏览、管理和自定义列表 [在此部分中](adobe-campaign-ui-lists.md).

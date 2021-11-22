@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-下面详述的工作流默认安装在所有实例上，允许您初始化退回邮件鉴别规则列表、域列表和MX列表。 安装&#x200B;**可投放性监控（电子邮件可投放性）**&#x200B;包后，此工作流将在夜间运行。 有关投放能力监控的更多信息，请参阅此[部分](../../delivery/using/about-deliverability.md)。
+下面详述的工作流默认安装在所有实例上，允许您初始化退回邮件鉴别规则列表、域列表和MX列表。 一旦 **投放能力监控（电子邮件投放能力）** 包安装完成后，此工作流每晚运行。 有关投放能力监控的更多信息，请参阅此 [部分](../../delivery/using/about-deliverability.md).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ ht-degree: 2%
   <tr> 
    <td> <strong>可投放性刷新</strong><br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td>  安装<strong>可投放性监控（电子邮件可投放性）</strong>包后，此工作流会在夜间运行以定期更新规则列表，并允许主动管理平台可投放性。<br /> </td> 
+   <td>  一旦 <strong>投放能力监控（电子邮件投放能力）</strong> 包安装后，此工作流每晚运行，以定期更新规则列表，并允许主动管理平台可交付性。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

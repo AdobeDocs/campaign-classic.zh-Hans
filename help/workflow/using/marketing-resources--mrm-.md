@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ![](../../assets/common.svg)
 
-默认情况下，下面详述的工作流会随&#x200B;**营销资源(MRM)**&#x200B;模块一起安装。 有关此模块的更多信息，请参阅此[部分](../../campaign/using/designing-marketing-campaigns.md)。
+下面详述的工作流随 **营销资源(MRM)** 模块。 有关此模块的更多信息，请参阅此 [部分](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 
@@ -29,12 +29,12 @@ ht-degree: 11%
   <tr> 
    <td> <span class="uicontrol">营销资源通知</span> <br /> </td> 
    <td> <span class="uicontrol">assetMgt</span> <br /> </td> 
-   <td> 此工作流可管理链接到营销资源批准和发布的通知。<br /> </td> 
+   <td> 此工作流可管理链接到营销资源批准和发布的通知。 <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">任务通知</span> <br /> </td> 
    <td> <span class="uicontrol">taskMgt</span> <br /> </td> 
-   <td> 通过此工作流，您可以发送与营销活动中的任务相关的通知消息。<br /> </td> 
+   <td> 利用此工作流，可发送与营销活动中的任务相关的通知消息。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">讨论论坛进程</span> <br /> </td> 

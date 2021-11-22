@@ -21,44 +21,44 @@ ht-degree: 11%
 
 ## 将现有投放转换为模板 {#converting-an-existing-delivery-to-a-template}
 
-可以将投放转换为模板，以便执行新的重复投放操作。 要将投放转换为模板，请从投放列表中选择该模板，可通过树的&#x200B;**[!UICONTROL Campaign management]**&#x200B;节点访问该模板。
+可以将投放转换为模板，以便执行新的重复投放操作。 要将投放转换为模板，请从投放列表中选择它，可通过 **[!UICONTROL Campaign management]** 树的节点。
 
-右键单击并选择&#x200B;**[!UICONTROL Actions > Save as template...]**。
+右键单击并选择 **[!UICONTROL Actions > Save as template...]**.
 
 ![](assets/s_ncs_user_campaign_save_as_scenario.png)
 
-此操作将从选定的投放创建投放模板。 您必须输入保存该模板的文件夹（在&#x200B;**[!UICONTROL Folder]**&#x200B;字段中），以及创建基于此模板创建的投放的文件夹（在&#x200B;**[!UICONTROL Execution folder]**&#x200B;字段中）。
+此操作将从选定的投放创建投放模板。 您必须输入保存该文件夹的文件夹(在 **[!UICONTROL Folder]** 字段)以及创建基于此模板创建投放的文件夹(在 **[!UICONTROL Execution folder]** 字段。
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
-有关配置模式的更多信息，请参阅[将模板链接到投放](creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery)。
+有关配置模式的详细信息，请参阅 [将模板链接到投放](creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
 
 ## 创建新模板 {#creating-a-new-template}
 
 要配置投放模板，请执行以下步骤：
 
 1. 打开营销活动资源管理器。
-1. 在&#x200B;**Resources**&#x200B;文件夹中，选择&#x200B;**模板**，然后选择&#x200B;**投放模板**。
+1. 在 **资源** 文件夹，选择 **模板** then **投放模板**.
 
    ![](assets/delivery_template_1.png)
 
-1. 单击工具栏中的&#x200B;**新建**&#x200B;以创建新投放模板。
+1. 单击 **新建** ，以创建新投放模板。
 
    ![](assets/delivery_template_2.png)
 
-1. 修改文件夹的&#x200B;**标签**&#x200B;和&#x200B;**内部名称**。
+1. 修改 **标签** 和 **内部名称** 的子菜单。
 1. 保存并重新打开模板。
-1. 单击&#x200B;**属性**&#x200B;按钮，然后根据您的要求修改值。
+1. 单击 **属性** 按钮，然后根据您的要求修改值。
 
    ![](assets/delivery_template_3.png)
 
-1. 在&#x200B;**常规**&#x200B;选项卡中，确认或更改在&#x200B;**执行文件夹**、**文件夹**&#x200B;和&#x200B;**路由**&#x200B;下拉菜单中选择的位置。
+1. 在 **常规** ，确认或更改 **执行文件夹**, **文件夹**&#x200B;和 **路由** 下拉菜单。
 
    ![](assets/delivery_template_4.png)
 
-1. 使用电子邮件主题和目标群体填写&#x200B;**电子邮件参数**&#x200B;类别。
-1. 添加&#x200B;**HTML内容**&#x200B;以个性化模板，可显示镜像页面链接和退订链接。
-1. 选择&#x200B;**预览**&#x200B;选项卡。 在&#x200B;**测试个性化**&#x200B;下拉菜单中，选择&#x200B;**收件人**&#x200B;以将模板作为所选用户档案进行预览。
+1. 完成 **电子邮件参数** 类别。
+1. 添加 **HTML内容** 要个性化您的模板，您可以显示镜像页面链接和退订链接。
+1. 选择 **预览** 选项卡。 在 **测试个性化** 下拉菜单，选择 **收件人** 以预览模板作为所选配置文件。
 
    ![](assets/delivery_template_5.png)
 
@@ -88,4 +88,4 @@ ht-degree: 11%
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
-其他Campaign Classic操作方法视频可在[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)获取。
+提供了其他Campaign Classic操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).

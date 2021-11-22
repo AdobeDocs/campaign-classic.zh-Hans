@@ -31,7 +31,7 @@ ht-degree: 69%
 
 ### 常见问题解答
 
-如何升级到新版本？如何监测工作流执行？什么是数据库清理工作流？... [读出前10个问题](platform/using/common-questions.md)。
+如何升级到新版本？如何监测工作流执行？什么是数据库清理工作流？... [阅读前10个问题](platform/using/common-questions.md).
 
 <table>
     <tr><td><strong>主题问答</strong></td><td><strong>常见问题</strong></td><td><strong>最佳实践</strong></td><td><strong>操作说明</strong></td></tr>
@@ -99,7 +99,7 @@ Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用
 >
 >所有管理员用户都可访问控制面板。[此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
 >
->请注意，您的实例必须托管在AWS上，并升级为最新的[Gold Standard](rn/using/gs-overview.md)内部版本或[最新的GA内部版本(21.1.4)](rn/using/latest-release.md)。 在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
+>请注意，您的实例必须托管在AWS上，并使用最新的 [Gold Standard](rn/using/gs-overview.md) 构建或 [最新GA内部版本(21.1.4)](rn/using/latest-release.md). 在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
 
 ### 如何访问控制面板？
 
@@ -123,7 +123,7 @@ Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用
 ### 实例设置
 
 了解如何在控制面板中管理Campaign Classic实例设置。 在以下页面中了解详情：
-* [在允许列](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans) 表中添加IP以访问Campaign实例
+* [在上添允许列表加IP](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans) 访问Campaign实例
 * [管理URL权限](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hans)
 * [访问实例详细信息](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hans)
 * [管理用于数据加密的GPG密钥](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans)
@@ -132,7 +132,7 @@ Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-新的票务系统已通过[Adobe Admin Console](https://adminconsole.adobe.com/overview)启动。 新系统要求每个用户都有新的个人帐户，并具有正确的权限。如果您发现无法使用 Adobe ID 登录，请通过 Experience League 请求访问，客户关怀团队将尽快为您进行设置。[了解详情](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)
+新售票系统已透过 [Adobe Admin Console](https://adminconsole.adobe.com/overview). 新系统要求每个用户都有新的个人帐户，并具有正确的权限。如果您发现无法使用 Adobe ID 登录，请通过 Experience League 请求访问，客户关怀团队将尽快为您进行设置。[了解详情](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)
 
 ### 询问专家！
 
@@ -141,7 +141,7 @@ Campaign控制面板可让您管理每个实例的设置和跟踪实例的使用
 ### 访问 Campaign 下载中心
 
 自2020年6月起，Experience Cloud解决方案Software Distribution将取代旧版Neolane下载中心，并提供更高效的软件、包和工具查找和下载体验。 [点击此处](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)访问 Experience Cloud Software Distribution。
-在此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)中了解有关新的下载中心[的更多信息。
+进一步了解新的下载中心 [本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans).
 
 ### 创建工单或开始聊天
 

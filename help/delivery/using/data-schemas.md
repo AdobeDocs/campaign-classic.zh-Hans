@@ -19,11 +19,11 @@ ht-degree: 2%
 
 以下是关于在Adobe Campaign中使用数据模式的一些一般原则。
 
-有关在Adobe Campaign中创建和配置数据架构的更多信息，请参阅[此部分](../../configuration/using/about-schema-edition.md)。
+有关在Adobe Campaign中创建和配置数据模式的更多信息，请参阅 [此部分](../../configuration/using/about-schema-edition.md).
 
 ## 模式结构 {#schema-structure}
 
-数据架构的XML文档必须包含具有&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;属性的&#x200B;**`<srcschema>`**&#x200B;根元素，以填充架构名称及其命名空间。
+数据架构的XML文档必须包含 **`<srcschema>`** 根元素，其中 **name** 和 **命名空间** 属性来填充架构名称及其命名空间。
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -39,13 +39,13 @@ ht-degree: 2%
 <element name="book" template="ncm:content" xmlChildren="true">
 ```
 
-通过在主元素中输入的&#x200B;**template**&#x200B;属性，可以将具有通用属性的架构扩展到所有内容定义，如名称、创建日期、作者、关联字符串等。
+的 **模板** 通过在主元素中输入的属性，您可以将具有通用属性的架构扩展到所有内容定义，如名称、创建日期、作者、关联字符串等。
 
-**ncm:content**&#x200B;架构中对这些属性进行了描述。
+这些属性在 **ncm:content** 架构。
 
 >[!NOTE]
 >
->存在&#x200B;**xmlChildren**&#x200B;属性表示通过主元素输入的数据结构存储在内容实例的XML文档中。
+>存在 **xmlChildren** 属性指示通过主元素输入的数据结构存储在内容实例的XML文档中。
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ ht-degree: 2%
 
 ## 属性 {#properties}
 
-可以使用各种属性来扩充数据架构的&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;元素。
+可以使用各种属性来丰富 **`<element>`** 和 **`<attribute>`** 数据架构的元素。
 
 内容管理中使用的主要属性如下：
 
@@ -110,7 +110,7 @@ ht-degree: 2%
 
 集合是具有相同名称和相同层次结构级别的元素列表。
 
-在本例中，**`<chapter>`**&#x200B;和&#x200B;**`<page>`**&#x200B;元素是集合元素。 因此，必须将&#x200B;**unbound**&#x200B;属性添加到这些元素的定义中：
+在本例中， **`<chapter>`** 和 **`<page>`** 元素是收藏集元素。 的 **未绑定** 因此，必须将属性添加到这些元素的定义中：
 
 ```
 <element name="chapter" label="Chapter" unbound="true" ordered="true">
@@ -122,15 +122,15 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->存在&#x200B;**ordered=&quot;true&quot;**&#x200B;属性允许您对插入的集合元素进行排序。
+>存在 **ordered=&quot;true&quot;** 属性允许您对插入的集合元素进行排序。
 
 ## 元素引用 {#element-referencing}
 
-元素引用在内容架构中非常常用。 它允许您对&#x200B;**`<element>`**&#x200B;元素的定义进行分解，以便可以在具有相同结构的其他元素上引用该元素。
+元素引用在内容架构中非常常用。 它允许您对 **`<element>`** 元素，以便可以在具有相同结构的其他元素上引用该元素。
 
-要引用的元素上的&#x200B;**ref**&#x200B;属性必须使用引用元素的路径(XPath)完成。
+的 **ref** 必须使用引用元素的路径(XPath)完成要引用的元素上的属性。
 
-**示例**:添加与示 **** 例模式元素结构相 **`<chapter>`** 同的Appendixsection。
+**示例**:添加 **附录** 与 **`<chapter>`** 示例架构的元素。
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -154,9 +154,9 @@ ht-degree: 2%
 
 ## 计算字符串 {#compute-string}
 
-**计算字符串**&#x200B;是XPath表达式，用于构造表示内容实例的字符串。
+A **计算字符串** 是用于构建表示内容实例的字符串的XPath表达式。
 
-以下是我们使用其&#x200B;**计算字符串**&#x200B;的示例架构：
+以下是我们的示例模式及其 **计算字符串**:
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -177,4 +177,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->**Name**&#x200B;编辑控件允许您输入架构的键，包括名称和命名空间。 架构根元素的&#x200B;**name**&#x200B;和&#x200B;**namespace**&#x200B;属性会在架构的XML编辑字段中自动更新。
+>的 **名称** 编辑控件允许您输入架构的键，其中包含名称和命名空间。 的 **name** 和 **命名空间** 架构根元素的属性会在架构的XML edit字段中自动更新。

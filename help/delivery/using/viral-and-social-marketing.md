@@ -37,7 +37,7 @@ Adobe Campaign允许您设置工具以鼓励病毒式营销。
 
 >[!NOTE]
 >
->默认情况下，此链接不在块列表中提供。 单击&#x200B;**[!UICONTROL Other...]**&#x200B;并选择&#x200B;**[!UICONTROL Social network sharing links]**&#x200B;块，即可访问该块。
+>默认情况下，此链接不在块列表中提供。 您可以通过单击 **[!UICONTROL Other...]**，然后选择 **[!UICONTROL Social network sharing links]** 块。
 
 ![](assets/s_ncs_user_viral_add_link_via_others.png)
 
@@ -49,7 +49,7 @@ Adobe Campaign允许您设置工具以鼓励病毒式营销。
 
 >[!NOTE]
 >
->此个性化块包含所有链接（用于与所有社交网络发送和共享消息）。 可以根据您的需求进行更改。 但是，配置是为高级用户保留的。 要编辑匹配的个性化块，请转到Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Campaign management > Personalization blocks]**&#x200B;节点。
+>此个性化块包含所有链接（用于与所有社交网络发送和共享消息）。 可以根据您的需求进行更改。 但是，配置是为高级用户保留的。 要编辑匹配的个性化块，请转到 **[!UICONTROL Resources > Campaign management > Personalization blocks]** Adobe Campaign树的节点。
 
 ## 病毒式营销：转向朋友 {#viral-marketing--forward-to-a-friend}
 
@@ -59,8 +59,8 @@ Adobe Campaign允许您设置工具以鼓励病毒式营销。
 
 应用以下阶段：
 
-1. 将&#x200B;**[!UICONTROL Social network sharing links]**&#x200B;个性化块添加到原始消息的正文中。
-1. 消息收件人可以单击&#x200B;**[!UICONTROL Email]**&#x200B;图标，将此消息发送给一个或多个朋友。
+1. 添加 **[!UICONTROL Social network sharing links]** 个性化块放入原始消息的正文中。
+1. 消息收件人可以单击 **[!UICONTROL Email]** 图标，以将此消息发送给一个或多个朋友。
 
    ![](assets/s_ncs_user_viral_email_link.png)
 
@@ -68,13 +68,13 @@ Adobe Campaign允许您设置工具以鼓励病毒式营销。
 
    ![](assets/s_ncs_user_viral_email_msg.png)
 
-   当主收件人单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮时，会向他们发送消息。
+   当主收件人单击 **[!UICONTROL Next]** 按钮。
 
    >[!NOTE]
    >
-   >此消息的内容可以个性化以满足您的需求。 它基于&#x200B;**[!UICONTROL Transfer of original message]**&#x200B;模板创建，该模板存储在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;节点中。
+   >此消息的内容可以个性化以满足您的需求。 它基于 **[!UICONTROL Transfer of original message]** 模板，存储在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 节点。
    >
-   >还可以更改可供反向链接使用的消息转发表单。为此，您需要更改存储在&#x200B;**[!UICONTROL Resources > Online > Web applications]**&#x200B;节点中的&#x200B;**病毒表单** Web应用程序。
+   >也可以更改提供给反向链接的消息转发表单。要实现此目的，您需要更改 **病毒表单** 存储在 **[!UICONTROL Resources > Online > Web applications]** 节点。
 
 1. 在转发的消息中，链接允许裁判将其个人资料保存在数据库中。 为此目的提供了登入表单。
 
@@ -82,22 +82,22 @@ Adobe Campaign允许您设置工具以鼓励病毒式营销。
 
    >[!NOTE]
    >
-   >此配置可进行调整。 为此，您需要修改存储在&#x200B;**[!UICONTROL Resources > Online > Web applications]**&#x200B;节点中的&#x200B;**收件人订阅** Web应用程序。
+   >此配置可进行调整。 为此，您需要修改 **收件人订阅** 存储在 **[!UICONTROL Resources > Online > Web applications]** 节点。
    >
-   >有关Web应用程序的更多信息，请参阅[此部分](../../web/using/about-web-applications.md)。
+   >有关Web应用程序的详细信息，请参阅 [此部分](../../web/using/about-web-applications.md).
 
-   验证后，系统会向他们发送确认消息：只有在激活确认消息中的链接后，才会永久注册。 此消息基于&#x200B;**[!UICONTROL Registration confirmation]**&#x200B;模板创建，该模板存储在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;节点中。
+   验证后，系统会向他们发送确认消息：只有在激活确认消息中的链接后，才会永久注册。 此消息基于 **[!UICONTROL Registration confirmation]** 模板，存储在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 节点。
 
-   推荐人被添加到数据库的&#x200B;**收件人**&#x200B;文件夹，并订阅（默认情况下）**新闻通讯**&#x200B;信息服务。
+   裁判被加到 **收件人** 文件夹，并（默认情况下）订阅到 **新闻稿** 信息服务。
 
 ## 跟踪社交网络共享 {#tracking-social-network-sharing}
 
 会跟踪共享和访问共享信息的情况。 Adobe Campaign收集的此信息可在以下两个位置访问：
 
-* 在投放的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡中（或针对每个收件人单独设置）：
+* 在 **[!UICONTROL Tracking]** （或为每个收件人单独设置）：
 
    ![](assets/s_ncs_user_network_del_tracking_tab.png)
 
-* 在专用的&#x200B;**[!UICONTROL Sharing to social networks]**&#x200B;报告中：
+* 在 **[!UICONTROL Sharing to social networks]** 报表：
 
    ![](assets/s_ncs_user_viral_report.png)

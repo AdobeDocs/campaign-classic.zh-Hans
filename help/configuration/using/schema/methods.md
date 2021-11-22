@@ -35,7 +35,7 @@ ht-degree: 20%
 
 ## 说明 {#description-11}
 
-此元素允许您定义`<method>`元素。 声明方法时必须使用此参数。
+此元素允许您定义 `<method>`  元素。 声明方法时必须使用此参数。
 
 ## 属性描述 {#attribute-description-11}
 

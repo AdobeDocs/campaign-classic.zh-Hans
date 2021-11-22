@@ -29,29 +29,29 @@ ht-degree: 2%
 
 ![](assets/validation-1-in-op.png)
 
-批准示例可在此[部分](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)中找到。
+批准示例可在 [部分](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 操作员可以采取以下两种方式之一做出响应：使用电子邮件中链接的网页进行验证，或通过控制台进行验证。
 
 >[!NOTE]
 >
->保存响应后，无法修改该响应。
+>保存响应后，无法对其进行修改。
 
 ## 发送电子邮件 {#sending-emails}
 
 可能会收到一条批准消息，其中包含一个指向网页的链接，可通过该网页做出响应。 要使目标操作员接收批准电子邮件，操作员电子邮件地址必须填写完整。 如果情况并非如此，则运算符必须使用控制台做出响应
 
-此[部分](../../platform/using/access-management.md)中详细描述了操作员管理。
+此中详细介绍了操作员管理 [部分](../../platform/using/access-management.md).
 
-批准电子邮件会持续发送。 默认投放模板为&#x200B;**[!UICONTROL notifyAssignee]**:该文件夹保存在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;文件夹中。 此方案可以自定义，还建议制作副本并更改每个活动的模板。
+批准电子邮件会持续发送。 默认投放模板为 **[!UICONTROL notifyAssignee]**:它保存在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 文件夹。 此方案可以自定义，还建议制作副本并更改每个活动的模板。
 
-通过此模板创建的投放存储在&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**&#x200B;文件夹中。
+通过此模板创建的投放存储在 **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** 文件夹。
 
 ## 通过控制台进行批准 {#approval-via-the-console}
 
 在操作中，要批准的元素显示在营销活动仪表板上。
 
-对于技术工作流，可以从&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]**&#x200B;文件夹的树结构访问用户可以批准的任务。
+对于技术工作流，可以从 **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** 文件夹。
 
 ![](assets/validation-node.png)
 
@@ -60,7 +60,7 @@ ht-degree: 2%
 批准被分配给一组运算符、单个运算符或通过筛选条件选择的一组运算符。
 
 1. 就最简单的批准形式而言，一旦操作员做出响应，任务就会完成。 任何其他尝试做出响应的操作员都会收到通知，告知某人已经执行了该操作。
-1. 有关多个批准，请参阅[多个批准](#multiple-approval)。
+1. 有关多个批准，请参阅 [多次批准](#multiple-approval).
 
 审批的操作员组应指定为角色或职能，而不是指定个人。 例如，“促销活动预算”组比“Harry&#39;s组”更可取。 我们建议一个组中至少有两个人可以批准一项任务。 这样，如果一个人缺席，另一个人可以做出响应。
 
@@ -72,25 +72,25 @@ ht-degree: 2%
 
 ![](assets/expiration.png)
 
-要添加新过期，请单击&#x200B;**[!UICONTROL Add]**。 过渡会添加到创建的每个过期日期。 您可以：
+要添加新过期，请单击 **[!UICONTROL Add]**. 过渡会添加到创建的每个过期日期。 您可以：
 
 * 通过单击列表中的单元格（或按F2）直接修改典型参数，
-* 或者，单击&#x200B;**[!UICONTROL Detail...]**&#x200B;按钮以编辑表达式。
+* 或通过单击 **[!UICONTROL Detail...]** 按钮。
 
 >[!NOTE]
 >
 >无需指定过期的顺序，因为过期的处理顺序按时间顺序排列。
 
-当延迟超时时，**[!UICONTROL Do not terminate the task]**&#x200B;选项会使批准保持活动状态。 通过此模式，可以在保持批准活动状态时管理提醒：操作员仍可以响应。 默认情况下，此选项处于禁用状态，这意味着任务在过期时被视为已完成，并且操作员可能不再做出响应。
+的 **[!UICONTROL Do not terminate the task]** 当延迟超时时，选项会保持批准活动状态。 通过此模式，可以在保持批准活动状态时管理提醒：操作员仍可以响应。 默认情况下，此选项处于禁用状态，这意味着任务在过期时被视为已完成，并且操作员可能不再做出响应。
 
 您可以创建四种类型的过期日期：
 
 * **任务开始后延迟**:到期时间的计算方式是向批准激活的日期添加指定的时间长度。
 * **指定日期后的延迟**:过期时间的计算方式是向指定的日期添加一个时间长度。
 * **在给定日期之前延迟**:过期时间的计算方式是从您指定的日期减去一段时间。
-* **由脚本计算的到期时间**:过期时间是使用JavaScript计算的。
+* **由脚本计算过期时间**:过期时间是使用JavaScript计算的。
 
-   以下示例计算投放开始日期24小时之前的过期时间（由&#x200B;**vars.deliveryId**&#x200B;标识）：
+   以下示例计算投放开始之日(由 **vars.deliveryId**):
 
    ```
    var delivery = nms.delivery.get(vars.deliveryId)

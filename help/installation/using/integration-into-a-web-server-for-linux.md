@@ -23,7 +23,7 @@ Adobe Campaign包含Apache Tomcat，它通过HTTP（和SOAP）作为应用程序
 
 在这种情况下：
 
-* 默认监听端口为8080。 要更改，请参阅[此部分](configure-tomcat.md)。
+* 默认监听端口为8080。 要更改它，请参阅 [此部分](configure-tomcat.md).
 * 然后，客户端控制台使用URL进行连接，例如：
 
    ```
@@ -52,13 +52,13 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   确保仍启用&#x200B;**alias**、**authz_host**&#x200B;和&#x200B;**mime**&#x200B;模块。 为此，请使用以下命令：
+   确保 **别名**, **authz_host** 和 **mime** 模块仍然处于启用状态。 为此，请使用以下命令：
 
    ```
    a2enmod  alias authz_host mime
    ```
 
-1. 在&#x200B;**/etc/apache2/mods-available**&#x200B;中创建文件&#x200B;**nlsrv.load**&#x200B;并插入以下内容：
+1. 创建文件 **nlsrv.load** in **/etc/apache2/mods-available** 并插入以下内容：
 
    在Debian 8中：
 
@@ -66,7 +66,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
    ```
 
-1. 使用以下命令在&#x200B;**/etc/apache2/mods-available**&#x200B;中创建文件&#x200B;**nlsrv.conf**:
+1. 创建文件 **nlsrv.conf** in **/etc/apache2/mods-available** 使用以下命令：
 
    ```
    ln -s /usr/local/[INSTALL]/nl6/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
@@ -78,13 +78,13 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
     a2enmod nlsrv
    ```
 
-   如果为Adobe Campaign页面使用&#x200B;**mod_rewrite**&#x200B;模块，则需要将&#x200B;**nlsrv.load**&#x200B;和&#x200B;**nlsrv.conf**&#x200B;文件重命名为&#x200B;**zz-nlsrv.load**&#x200B;和&#x200B;**zz-nlsrv.conf**。 要激活模块，请运行以下命令：
+   如果您使用 **mod_rewrite** 模块，则需要重命名 **nlsrv.load** 和 **nlsrv.conf** 文件到 **zz-nlsrv.load** 和 **zz-nlsrv.conf**. 要激活模块，请运行以下命令：
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. 编辑&#x200B;**/etc/apache2/envvars**&#x200B;文件，添加以下行：
+1. 编辑 **/etc/apache2/envvars** 文件中，添加以下行：
 
    ```
    # Added Neolane
@@ -113,7 +113,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
 
 应用以下步骤：
 
-1. 在`httpd.conf`文件中，激活以下Apache模块：
+1. 在 `httpd.conf` 文件中，激活以下Apache模块：
 
    ```
    alias
@@ -152,18 +152,18 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
    ForceLanguagePriority
    ```
 
-1. 在`/etc/httpd/conf.d/`文件夹中创建特定于Adobe Campaign的配置文件。 例如`CampaignApache.conf`
+1. 在中创建特定于Adobe Campaign的配置文件 `/etc/httpd/conf.d/` 文件夹。 例如 `CampaignApache.conf`
 
-1. 对于&#x200B;**RHEL7**，在文件中添加以下说明：
+1. 对于 **RHEL7**，在文件中添加以下说明：
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
    Include /usr/local/neolane/nl6/conf/apache_neolane.conf
    ```
 
-1. 对于&#x200B;**RHEL7**:
+1. 对于 **RHEL7**:
 
-   添加具有以下内容的`/etc/systemd/system/httpd.service`文件：
+   添加 `/etc/systemd/system/httpd.service` 文件，其中包含以下内容：
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -244,4 +244,4 @@ GET /r/test
 Connection closed by foreign host.
 ```
 
-您还可以从Web浏览器请求URL [`https://<computer>`](https://myserver.adobe.com/r/test)。
+您还可以请求URL [`https://<computer>`](https://myserver.adobe.com/r/test) 从Web浏览器访问。

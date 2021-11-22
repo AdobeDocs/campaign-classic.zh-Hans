@@ -28,13 +28,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->开始之前，必须至少配置一个&#x200B;**HTML模板**&#x200B;来托管将来投放的内容。
+>在开始之前，您必须至少拥有一个 **HTML模板** 已配置为托管将来投放的内容。
 >
->在投放&#x200B;**[!UICONTROL Properties]**&#x200B;中，确保将&#x200B;**[!UICONTROL Content editing mode]**（在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中）设置为&#x200B;**[!UICONTROL DCE]**。 要确保编辑器的最佳操作，请参阅[内容编辑最佳实践](content-editing-best-practices.md)。
+>在投放中 **[!UICONTROL Properties]**，请确保 **[!UICONTROL Content editing mode]** (在 **[!UICONTROL Advanced]** 选项卡) **[!UICONTROL DCE]**. 要确保编辑器的最佳操作，请参阅 [内容编辑最佳实践](content-editing-best-practices.md).
 
 ## 步骤1 — 创建投放 {#step-1---creating-a-delivery}
 
-要创建新投放，请将光标放在&#x200B;**Campaigns**&#x200B;选项卡中，然后单击&#x200B;**Delivers**。 接下来，单击现有投放列表上方的&#x200B;**创建**&#x200B;按钮。 有关创建投放的更多信息，请参阅[此页面](../../delivery/using/about-email-channel.md)。
+要创建新投放，请将光标放在 **促销活动** 选项卡，单击 **投放**. 接下来，单击 **创建** 按钮。 有关创建投放的更多信息，请参阅 [本页](../../delivery/using/about-email-channel.md).
 
 ![](assets/delivery_step_1.png)
 
@@ -48,53 +48,53 @@ ht-degree: 0%
 
 数字内容编辑器附带各种现成的模板，这些模板具有不同的结构（列、文本区域等）。
 
-选择要使用的内容模板，然后单击&#x200B;**[!UICONTROL Start with the selected content]**&#x200B;按钮以在创建的投放中显示该模板。
+选择要使用的内容模板，然后单击 **[!UICONTROL Start with the selected content]** 按钮以显示创建投放中的模板。
 
 ![](assets/dce_select_model.png)
 
-您还可以通过选择&#x200B;**[!UICONTROL From a file]**&#x200B;来导入在Adobe Campaign之外创建的HTML内容。
+您还可以通过选择 **[!UICONTROL From a file]**.
 
 ![](assets/dce_select_from_file_template.png)
 
-您可以将此内容另存为模板以供将来使用。 创建个性化内容模板后，即可从模板列表中预览该模板。 有关更多信息，请参阅[模板管理](template-management.md)。
+您可以将此内容另存为模板以供将来使用。 创建个性化内容模板后，即可从模板列表中预览该模板。 有关更多信息，请参阅 [模板管理](template-management.md).
 
 >[!CAUTION]
 >
->如果您使用的是&#x200B;**Adobe Campaign Web界面**，则必须导入一个包含HTML内容和相关图像的.zip文件。
+>如果您使用 **Adobe Campaign Web界面**，则必须导入包含HTML内容和相关图像的.zip文件。
 
 ## 第4步 — 设计消息 {#step-4---designing-the-message}
 
 * 显示收件人的名字和姓氏
 
-   要将收件人的第一个和第二个名称插入到投放的文本字段中，请单击您选择的文本字段，然后将光标放在要显示它们的位置。 单击弹出工具栏中的第一个图标，然后单击&#x200B;**[!UICONTROL Personalization block]**。 选择&#x200B;**[!UICONTROL Greetings]**，然后单击&#x200B;**[!UICONTROL OK]**。
+   要将收件人的第一个和第二个名称插入到投放的文本字段中，请单击您选择的文本字段，然后将光标放在要显示它们的位置。 单击弹出工具栏中的第一个图标，然后单击 **[!UICONTROL Personalization block]**. 选择 **[!UICONTROL Greetings]**，然后单击 **[!UICONTROL OK]**.
 
    ![](assets/dce_personalizationblock_greetings.png)
 
 * 在图像中插入链接
 
-   要通过图像将投放收件人定向到外部地址，请单击相关图像以显示弹出工具栏，将光标放在第一个图标上，然后单击&#x200B;**[!UICONTROL Link to an external URL]**。 有关更多信息，请参阅[添加链接](editing-content.md#adding-a-link)。
+   要通过图像将投放收件人定向到外部地址，请单击相关图像以显示弹出工具栏，将光标放在第一个图标上，然后单击 **[!UICONTROL Link to an external URL]**. 有关更多信息，请参阅 [添加链接](editing-content.md#adding-a-link).
 
    ![](assets/dce_externalpage.png)
 
-   在&#x200B;**URL**&#x200B;字段中输入链接的URL，使用以下格式&#x200B;**https://www.myURL.com**，然后进行确认。
+   在 **URL** 字段 **https://www.myURL.com**，然后确认。
 
    可以随时使用窗口右侧的部分更改链接。
 
 * 将链接插入文本
 
-   要将外部链接集成到投放中的文本中，请选择一些文本或一个文本块，然后单击弹出工具栏中的第一个图标。 单击&#x200B;**[!UICONTROL Link to an external URL]**，在&#x200B;**[!UICONTROL URL]**&#x200B;字段中输入链接地址。 有关更多信息，请参阅[添加链接](editing-content.md#adding-a-link)。
+   要将外部链接集成到投放中的文本中，请选择一些文本或一个文本块，然后单击弹出工具栏中的第一个图标。 单击 **[!UICONTROL Link to an external URL]**，在 **[!UICONTROL URL]** 字段。 有关更多信息，请参阅 [添加链接](editing-content.md#adding-a-link).
 
    可以随时使用窗口右侧的部分更改链接。
 
    >[!CAUTION]
    >
-   >在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入的文本将替换原始文本。
+   >在 **[!UICONTROL Label]** 字段替换原始文本。
 
 * 添加镜像页面
 
    要允许收件人在Web浏览器中查看您的投放内容，您可以将指向镜像页面的链接集成到您的投放中。
 
-   单击您希望在其中看到已发布链接的文本字段。 单击弹出工具栏中的第一个图标，选择&#x200B;**[!UICONTROL Personalization block]**，然后选择&#x200B;**[!UICONTROL Link to Mirror Page (MirrorPage)]**。 单击&#x200B;**[!UICONTROL Save]**&#x200B;确认。
+   单击您希望在其中看到已发布链接的文本字段。 单击弹出工具栏中的第一个图标，选择 **[!UICONTROL Personalization block]**，则 **[!UICONTROL Link to Mirror Page (MirrorPage)]**. 单击 **[!UICONTROL Save]** 确认。
 
    ![](assets/dce_mirrorpage.png)
 
@@ -104,18 +104,18 @@ ht-degree: 0%
 
 * 集成指向Web应用程序的链接
 
-   使用数字内容编辑器，您可以从Adobe Campaign控制台中集成指向Web应用程序的链接，如登陆页面或表单页面。 有关更多信息，请参阅[链接到Web应用程序](editing-content.md#link-to-a-web-application)。
+   使用数字内容编辑器，您可以从Adobe Campaign控制台中集成指向Web应用程序的链接，如登陆页面或表单页面。 有关更多信息，请参阅 [链接到Web应用程序](editing-content.md#link-to-a-web-application).
 
-   为指向Web应用程序的链接选择文本字段，然后单击第一个图标。 选择&#x200B;**[!UICONTROL Link to a Web application]**，然后单击&#x200B;**Web Application**&#x200B;字段末尾的图标以选择所需的应用程序。
+   为指向Web应用程序的链接选择文本字段，然后单击第一个图标。 选择 **[!UICONTROL Link to a Web application]**，然后单击 **Web应用程序** 字段。
 
    ![](assets/dce_webapp.png)
 
-   单击&#x200B;**Save**&#x200B;以确认。
+   单击 **保存** 确认。
 
    >[!NOTE]
    >
-   >此步骤要求您事先至少保存一个Web应用程序。 这些参数可在控制台的&#x200B;**[!UICONTROL Campaigns > Web applications]**&#x200B;选项卡中找到。
+   >此步骤要求您事先至少保存一个Web应用程序。 这些参数可在 **[!UICONTROL Campaigns > Web applications]** 选项卡。
 
 ## 步骤5 — 保存投放 {#step-5---saving-the-delivery}
 
-集成内容后，单击&#x200B;**Save**&#x200B;保存投放。 现在，它将显示在投放列表中，该列表位于&#x200B;**[!UICONTROL Campaigns > Deliveries]**&#x200B;选项卡中。
+集成内容后，单击 **保存**. 现在，它将显示在投放列表中(位于 **[!UICONTROL Campaigns > Deliveries]** 选项卡。

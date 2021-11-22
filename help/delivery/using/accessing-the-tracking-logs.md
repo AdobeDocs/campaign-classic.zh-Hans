@@ -17,16 +17,16 @@ ht-degree: 17%
 
 ![](../../assets/common.svg)
 
-发送投放并激活跟踪后，**[!UICONTROL Tracking]**&#x200B;技术工作流负责检索跟踪数据。 默认情况下，每小时执行一次。
+发送投放并激活跟踪后， **[!UICONTROL Tracking]** 技术工作流负责检索跟踪数据。 默认情况下，每小时执行一次。
 
-此信息显示在投放所定向收件人用户档案的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡中，如以下示例所示：
+此信息显示在 **[!UICONTROL Tracking]** 选项卡，其中显示了由投放定向的收件人用户档案，如以下示例所示：
 
 ![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
-也可通过投放的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡访问。
+也可通过 **[!UICONTROL Tracking]** 选项卡。
 
 ![](assets/s_ncs_user_select_tracking_tab_from_del.png)
 
 >[!NOTE]
 >
->如果看不到投放的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡，则表示尚未激活跟踪。 请参阅[此小节](how-to-configure-tracked-links.md)。
+>如果您看不到 **[!UICONTROL Tracking]** 选项卡，这表示尚未激活跟踪。 请参阅[此小节](how-to-configure-tracked-links.md)。

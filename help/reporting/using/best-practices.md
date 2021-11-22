@@ -31,15 +31,15 @@ ht-degree: 0%
 
    例如，您可以：
 
-   * 浏览数据库中的数据并定义测量。 在此部分](../../reporting/using/about-cubes.md)中了解更多[信息
-   * 将指标添加到现有报表。 在此部分](../../reporting/using/about-reports-creation-in-campaign.md)中了解更多[信息
-   * 查看数据库中的数据。 在此部分](../../reporting/using/about-descriptive-analysis.md)中了解更多[信息
-   * 创建新投放报告。 在此部分](../../reporting/using/about-reports-creation-in-campaign.md)了解更多[),
-   * 从Adobe Campaign数据库导出数据(通过工作流，请参阅[此部分](../../workflow/using/about-workflows.md)
-   * 创建数据透视表。 在此部分](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)中了解更多[信息
-   * 浏览聚合数据。 在此部分](../../reporting/using/about-cubes.md)中了解更多[信息
-   * 使用向导分析数据。 在此部分](../../reporting/using/about-descriptive-analysis.md)中了解更多[信息
-   * 分析大量数据。 在此部分](../../reporting/using/about-reports-creation-in-campaign.md)中了解更多[信息
+   * 浏览数据库中的数据并定义测量。 了解更多 [在此部分中](../../reporting/using/about-cubes.md)
+   * 将指标添加到现有报表。 了解更多 [在此部分中](../../reporting/using/about-reports-creation-in-campaign.md)
+   * 查看数据库中的数据。 了解更多 [在此部分中](../../reporting/using/about-descriptive-analysis.md)
+   * 创建新投放报告。 了解更多 [在此部分中](../../reporting/using/about-reports-creation-in-campaign.md))、
+   * 从Adobe Campaign数据库导出数据(通过工作流，请参阅 [此部分](../../workflow/using/about-workflows.md)
+   * 创建数据透视表。 了解更多 [在此部分中](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
+   * 浏览聚合数据。 了解更多 [在此部分中](../../reporting/using/about-cubes.md)
+   * 使用向导分析数据。 了解更多 [在此部分中](../../reporting/using/about-descriptive-analysis.md)
+   * 分析大量数据。 了解更多 [在此部分中](../../reporting/using/about-reports-creation-in-campaign.md)
 
 1. 确定目标群体
 
@@ -102,7 +102,7 @@ if(string(ctx@_historyId)!==""))
 
    要快速查找索引字段，请查看Adobe Campaign界面中列的名称：如果字段已编入索引，则排序箭头的下划线为红色。
 
-   有关索引的更多信息，请参阅[此部分](../../configuration/using/data-model-best-practices.md#indexes)。
+   有关索引的更多信息，请参阅 [此部分](../../configuration/using/data-model-best-practices.md#indexes).
 
 * 确保报表可缩放：数据量会随着时间的推移而显着增加。
 
@@ -110,8 +110,8 @@ if(string(ctx@_historyId)!==""))
 
    最后，需要知道并调整数据清除延迟，以便于进行数据操作。
 
-   有关清理和数据保留的更多信息，请参阅[此部分](../../configuration/using/data-model-best-practices.md#data-retention)。
+   有关清理和数据保留的更多信息，请参阅 [此部分](../../configuration/using/data-model-best-practices.md#data-retention).
 
 ### 导出报表 {#exporting-reports}
 
-[此部分](../../reporting/using/actions-on-reports.md#exporting-a-report)中详细描述了特定于导出报告的Recommendations。
+Recommendations中详细介绍了特定于导出报表的 [此部分](../../reporting/using/actions-on-reports.md#exporting-a-report).

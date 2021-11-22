@@ -37,11 +37,11 @@ ht-degree: 2%
 
 要批准选件内容，请应用以下步骤：
 
-1. 单击&#x200B;**[!UICONTROL Approval]**&#x200B;按钮，然后在弹出窗口中选择&#x200B;**[!UICONTROL Approve content]**。
+1. 单击 **[!UICONTROL Approval]** 按钮，选择 **[!UICONTROL Approve content]** 中。
 
    ![](assets/offer_validate_002.png)
 
-1. 使用下拉列表，选择要编辑的表示法或要发布到实时环境的表示法，然后单击&#x200B;**[!UICONTROL Content approval]**。
+1. 使用下拉列表，选择要编辑的表示法或要发布到实时环境的表示法，然后单击 **[!UICONTROL Content approval]**.
 
    ![](assets/offer_validate_003.png)
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >**[!UICONTROL Content approved]**&#x200B;提及并不意味着已启用并批准所有选件表示形式。 它表示内容批准流程已完成，无论是否已启用/批准所有选件。
+   >的 **[!UICONTROL Content approved]** 提及并不意味着已启用并批准所有选件表示形式。 它表示内容批准流程已完成，无论是否已启用/批准所有选件。
 
 ## 批准优惠资格 {#approving-offer-eligibility}
 
@@ -61,11 +61,11 @@ ht-degree: 2%
 >
 >选件的内容和资格获得批准后，发布工作流程（选件通知）将自动运行，并且该选件会处于活跃状态并在所有激活的空间上可用。
 
-* 可通过单击&#x200B;**[!UICONTROL Schedule and eligibility rules]**&#x200B;查看规则的完整列表。
+* 可以通过单击 **[!UICONTROL Schedule and eligibility rules]**.
 
    ![](assets/offer_validate_005.png)
 
-* 要更改资格规则，请单击&#x200B;**[!UICONTROL Reject]**，然后单击&#x200B;**[!UICONTROL Eligibility approval]**。
+* 要更改资格规则，请单击 **[!UICONTROL Reject]**，然后单击 **[!UICONTROL Eligibility approval]**.
 
    ![](assets/offer_validate_007.png)
 
@@ -73,11 +73,11 @@ ht-degree: 2%
 
    ![](assets/offer_validate_006.png)
 
-* 要接受选件资格，请单击&#x200B;**[!UICONTROL Approve eligibility]**。
+* 要接受选件资格，请单击 **[!UICONTROL Approve eligibility]**.
 
    ![](assets/offer_validate_008.png)
 
-   批准资格，根据需要添加评论，然后单击&#x200B;**[!UICONTROL Eligibility approval]**。
+   批准资格，根据需要添加评论，然后单击 **[!UICONTROL Eligibility approval]**.
 
    ![](assets/offer_validate_009.png)
 
@@ -87,27 +87,27 @@ ht-degree: 2%
 
 ## 批准跟踪 {#approval-tracking}
 
-批准跟踪可在选件功能板中使用。 单击&#x200B;**[!UICONTROL Hide/display logs]**&#x200B;以访问。
+批准跟踪可在选件功能板中使用。 单击 **[!UICONTROL Hide/display logs]** 来访问它。
 
 ![](assets/offer_validate_012.png)
 
 >[!NOTE]
 >
->选件的&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡中也提供了跟踪功能，其中包含审阅人评论的详细信息。
+>在 **[!UICONTROL Audit]** 选项卡，其中包含审阅人评论的详细信息。
 
 ## 重新启动批准 {#restart-the-approval}
 
 启动批准后，即可重新启动该批准。 为此，请按照以下说明操作：
 
-1. 单击选件仪表板上的&#x200B;**[!UICONTROL Content approved]**。
-1. 在出现的&#x200B;**[!UICONTROL Edit]**&#x200B;窗口中，选择要重新启动的批准，然后单击&#x200B;**[!UICONTROL Re-initialize approval to submit it again]**。
-1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;进行确认。
+1. 单击 **[!UICONTROL Content approved]** 选件功能板中。
+1. 在 **[!UICONTROL Edit]** 显示的窗口中，选择要重新启动的批准，然后单击 **[!UICONTROL Re-initialize approval to submit it again]**.
+1. 单击以确认 **[!UICONTROL Ok]**.
 
 ![](assets/offer_validate_013.png)
 
 ## 发布选件 {#publishing-the-offer}
 
-选件的内容和资格均获得批准后，该选件将通过一个工作流程发布，该工作流程会为其批准周期已完成的每个选件自动运行。 **[!UICONTROL Offer notification]**&#x200B;工作流还每小时运行一次，以便将选件目录中包含的空间和类别（如有必要）从设计环境同步到实时环境。
+选件的内容和资格均获得批准后，该选件将通过一个工作流程发布，该工作流程会为其批准周期已完成的每个选件自动运行。 的 **[!UICONTROL Offer notification]** 工作流还每小时运行一次，以便从设计环境同步（如有必要）选件目录中包含的空间和类别到实时环境。
 
 设计环境中可用选件的功能板包含有关发布的信息，包括实时环境中匹配选件的名称。
 
@@ -121,9 +121,9 @@ ht-degree: 2%
 
 选件获得批准后，即可将其禁用。
 
-要实现此目的，请转到功能板，查看在线选件或等待联机的选件，然后单击&#x200B;**[!UICONTROL Disable offer]**。
+要实现此目的，请转到功能板以获取在线选件或等待联机的选件，然后单击 **[!UICONTROL Disable offer]**.
 
-您还可以直接禁用类别，方法是转到&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡并选中&#x200B;**[!UICONTROL Enabled]**&#x200B;框。
+您还可以通过转到 **[!UICONTROL Eligibility]** 选项卡并选中 **[!UICONTROL Enabled]** 框中。
 
 >[!NOTE]
 >

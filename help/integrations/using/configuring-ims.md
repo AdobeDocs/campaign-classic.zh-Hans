@@ -30,7 +30,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->确保用户已链接到将与Adobe Campaign同步的Adobe Experience Cloud组。 请参阅[配置外部帐户](#configuring-the-external-account)。
+>确保用户已链接到将与Adobe Campaign同步的Adobe Experience Cloud组。 请参阅 [配置外部帐户](#configuring-the-external-account).
 
 ## 更新控制台 {#updating-the-console}
 
@@ -38,13 +38,13 @@ ht-degree: 2%
 
 ## 安装包 {#installing-the-package}
 
-必须安装&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;包。 安装集成包与安装标准包相同，有关详细信息，请参阅[本页](../../installation/using/installing-campaign-standard-packages.md)。
+您必须安装 **[!UICONTROL Integration with the Adobe Experience Cloud]** 包。 安装集成包与安装标准包相同，详情请参阅 [本页](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/ims_6.png)
 
 ## 配置外部帐户 {#configuring-the-external-account}
 
-在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中配置&#x200B;**Adobe Experience Cloud**&#x200B;外部帐户。
+配置 **Adobe Experience Cloud** 外部帐户 **[!UICONTROL Administration > Platform > External accounts]**.
 
 >[!CAUTION]
 >
@@ -54,11 +54,11 @@ ht-degree: 2%
 
 输入以下信息：
 
-* 使用的IMS服务器的连接信息（ID和密钥）。 此信息由Adobe支持提供。 有关更多信息，请参阅[Adobe Experience Cloud管理员常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html)。
+* 使用的IMS服务器的连接信息（ID和密钥）。 此信息由Adobe支持提供。 有关更多信息，请参阅 [Adobe Experience Cloud管理员常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
 
-   **[!UICONTROL Callback server]**&#x200B;地址必须在&#x200B;**https**&#x200B;中指定。 此字段对应于您的Adobe Campaign实例的访问URL。
+   的 **[!UICONTROL Callback server]** 地址必须在 **https**. 此字段对应于您的Adobe Campaign实例的访问URL。
 
-* IMS组织ID:此信息可在Experience Cloud（位于&#x200B;**[!UICONTROL Administration > Experience Cloud Details]**&#x200B;中）上获取，并在您首次连接到Adobe Experience Cloud时提供。
+* IMS组织ID:此信息可在Experience Cloud(在 **[!UICONTROL Administration > Experience Cloud Details]** )，并在您首次连接到Adobe Experience Cloud时提供。
 * 关联掩码：利用此字段，可定义语法，以允许将Enterprise Dashboard中的配置名称与Adobe Campaign中的组同步。 如果您使用语法“Campaign - tenant_id -(.*)”，则在Adobe Campaign中创建的安全组将链接到Enterprise Dashboard中的配置名称“Campaign - tenant_id - internal_name”。
 
    >[!CAUTION]

@@ -23,18 +23,18 @@ ht-degree: 4%
 
 ## 上下文 {#context}
 
-在此用例中，网站&#x200B;**My online library**&#x200B;希望根据客户喜爱的文学流派向客户发放折扣。
+在此用例中，站点 **我的在线图书馆** 想根据客户最喜爱的文学风格，给客户打折。
 
 投放管理器已将与收藏流派关联的个性化字段集成到其电子邮件中。 目的是使用一些种子地址：这些种子地址的表中包含个性化字段，但此处未保存任何值。
 
 要使用随机字段替换，您必须具有：
 
 * 包含一个或多个个性化字段的投放，
-* 根据投放中使用的个性化字段修改&#x200B;**数据架构**&#x200B;的种子地址。
+* 种子地址 **数据模式** 将根据投放中使用的个性化字段进行修改。
 
 ## 创建投放 {#step-1---creating-a-delivery}
 
-有关创建投放的详细步骤，请参见[创建电子邮件投放](creating-an-email-delivery.md)一节。
+有关创建投放的详细步骤，请参见 [创建电子邮件投放](creating-an-email-delivery.md) 中。
 
 在此示例中，投放管理器已创建新闻稿。
 
@@ -53,19 +53,19 @@ ht-degree: 4%
 
 此枚举允许用户指定其客户最喜爱的文学类型。
 
-若要在种子地址&#x200B;**输入表单**&#x200B;中查看此数据架构修改，必须更新它。 请参阅[更新输入表单](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form)一节。
+要在种子地址中查看此数据模式修改 **输入表单**，则必须更新它。 请参阅 [更新输入表单](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) 中。
 
 ## 配置个性化 {#configuring-personalization}
 
 1. 打开投放。
 
-   在本例中，投放有两个个性化字段：收件人的&#x200B;**名字**&#x200B;和收件人的&#x200B;**最喜爱的文学流派**。
+   在本例中，投放有两个个性化字段：收件人的 **名字** 和收件人的 **最受欢迎的文学流派**.
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. 配置投放列表和种子地址。 请参阅[识别目标群体](steps-defining-the-target-population.md)。
+1. 配置投放列表和种子地址。 请参阅 [确定目标群体](steps-defining-the-target-population.md).
 
-   在本例中，用户选择&#x200B;**最喜爱的文学流派**&#x200B;为Sci-Fi的用户作为主要目标群体。
+   在本例中，用户会选择 **最受欢迎的文学流派** 是以Sci-Fi为主目标群体。
 
    ![](assets/dlv_seeds_usecase_26.png)
 
@@ -75,18 +75,18 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >有关&#x200B;**[!UICONTROL Edit the dynamic condition...]**&#x200B;链接的更多信息，请参阅[用例：根据条件](use-case--selecting-seed-addresses-on-criteria.md)选择种子地址。
+   >有关 **[!UICONTROL Edit the dynamic condition...]** 链接，请参阅 [用例：根据条件选择种子地址](use-case--selecting-seed-addresses-on-criteria.md).
 
-1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡，然后选择种子地址以测试个性化。
+1. 单击 **[!UICONTROL Preview]** 选项卡，然后选择种子地址以测试个性化。
 
    ![](assets/dlv_seeds_usecase_28.png)
 
    您可以看到其中一个个性化字段为空。 由于种子地址没有此字段的数据，因此HTML内容预览无法显示值。
 
-   在投放&#x200B;**时，将执行**&#x200B;字段的随机替换。
+   执行字段的随机替换 **投放时**.
 
 1. 单击 **[!UICONTROL Send]** 按钮。
-1. 分析投放，然后&#x200B;**确认投放**。
+1. 分析投放，然后 **确认投放**.
 
    种子地址会在其收件箱中接收投放内容。
 

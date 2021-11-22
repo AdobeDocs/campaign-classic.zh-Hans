@@ -21,7 +21,7 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 
 本页显示托管(Managed Services)部署与内部部署之间的主要差异。 混合部署的特性取决于由Adobe托管并在您的场所中托管的元素。
 
-此部分](../../installation/using/hosting-models.md)引入了不同的托管模型。[
+介绍了不同的托管模型 [在此部分中](../../installation/using/hosting-models.md).
 
 ## 每个部署模型的可用性 {#capability-matrix}
 
@@ -43,11 +43,11 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 
 ## 联合数据访问{#fda}
 
-Adobe Campaign提供了&#x200B;**联合数据访问**(FDA)选项，以便处理存储在一个或多个外部数据库中的信息：您无需更改Adobe Campaign数据的结构即可访问外部数据。 [了解详情](../../installation/using/about-fda.md)
+Adobe Campaign提供 **联合数据访问** (FDA)选项，用于处理存储在一个或多个外部数据库中的信息：您无需更改Adobe Campaign数据的结构即可访问外部数据。 [了解详情](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->只有内部部署或混合安装(使用[Snowflake连接器](../../installation/using/configure-fda-snowflake.md)除外)才能通过FDA访问外部数据库。
+>只有内部部署或混合安装才能通过FDA访问外部数据库， [Snowflake连接器](../../installation/using/configure-fda-snowflake.md).
 
 
 **另请参阅**
@@ -56,5 +56,5 @@ Adobe Campaign提供了&#x200B;**联合数据访问**(FDA)选项，以便处理�
 * [发行说明](../../rn/using/latest-release.md)
 * [Campaign Classic升级](../../rn/using/rn-overview.md)
 * [已弃用和已移除的功能](../../rn/using/deprecated-features.md)
-* [[!DNL Gold Standard] 发行版本](../../rn/using/gold-standard.md)
+* [[!DNL Gold Standard] 版本](../../rn/using/gold-standard.md)
 * [[!DNL Gold Standard] 项目](../../rn/using/gs-overview.md)

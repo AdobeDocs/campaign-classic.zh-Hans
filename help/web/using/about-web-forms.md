@@ -27,19 +27,19 @@ Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体以创
 
 ## 创建Web窗体的步骤 {#steps-for-creating-a-web-form}
 
-本章详细介绍在Adobe Campaign中设计&#x200B;**webForm**&#x200B;类型表单所需的步骤，以及可用的选项和配置。 Adobe Campaign允许您将此Web窗体提供给用户，以及在数据库中收集和存档答案。
+本章详细介绍设计 **webForm** 在Adobe Campaign中键入表单，以及可用的选项和配置。 Adobe Campaign允许您将此Web窗体提供给用户，以及在数据库中收集和存档答案。
 
 >[!CAUTION]
 >
 >配置Web应用程序和Web窗体时，您需要最小900像素的垂直分辨率(例如：1600x900)。
 
-可通过&#x200B;**Campaigns**&#x200B;选项卡的“Web应用程序”菜单访问Web窗体。 在Adobe Campaign树中，它们被分组到&#x200B;**[!UICONTROL Resources > Online > Web Applications]**&#x200B;节点下。
+Web窗体可通过 **促销活动** 选项卡。 在Adobe Campaign树中，它们被分组到 **[!UICONTROL Resources > Online > Web Applications]** 节点。
 
-要创建Web窗体，请单击Web应用程序列表上方的&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
+要创建Web窗体，请单击 **[!UICONTROL Create]** 按钮。
 
 ![](assets/webapp_create_new.png)
 
-选择Web窗体模板（默认为&#x200B;**[!UICONTROL newWebForm]**）。
+选择Web窗体模板( **[!UICONTROL newWebForm]** )。
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
@@ -47,7 +47,7 @@ Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体以创
 
 ![](assets/webapp_empty_dashboard.png)
 
-使用&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡可创建内容。
+的 **[!UICONTROL Edit]** 选项卡，您可以创建内容。
 
 ![](assets/webapp_edit_tab.png)
 
@@ -59,27 +59,27 @@ Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体以创
 
 * 定义页面排序和显示条件。
 
-   [定义Web窗体页面排序](defining-web-forms-page-sequencing.md)中详细介绍了此步骤。
+   有关此步骤的详细信息，请参阅 [定义Web窗体页面排序](defining-web-forms-page-sequencing.md).
 
 * 如有必要，翻译内容。
 
-   [翻译Web窗体](translating-a-web-form.md)中详细介绍了此步骤。
+   有关此步骤的详细信息，请参阅 [翻译Web窗体](translating-a-web-form.md).
 
 ## 关于Web窗体设计 {#about-web-forms-designing}
 
-表单的页面通过特定编辑器创建，通过该编辑器可定义和配置输入区域（文本）、选择字段（列表、复选框等） 和静态元素（图像、HTLM内容等）。 可以将它们分组到容器中，并根据您的需要更改其布局（有关更多信息，请参阅[创建容器](defining-web-forms-layout.md#creating-containers)）。
+表单的页面通过特定编辑器创建，通过该编辑器可定义和配置输入区域（文本）、选择字段（列表、复选框等） 和静态元素（图像、HTLM内容等）。 可以将它们分组到容器中，并根据您的需要更改其布局(有关更多信息，请参阅 [创建容器](defining-web-forms-layout.md#creating-containers))。
 
 以下部分详细说明了如何为表单屏幕定义内容和布局：
 
 * [向 Web 窗体添加字段](adding-fields-to-a-web-form.md),
-* [插入HTML内容](static-elements-in-a-web-form.md#inserting-html-content)、
+* [插入HTML内容](static-elements-in-a-web-form.md#inserting-html-content),
 * [Web 窗体中的静态元素](static-elements-in-a-web-form.md),
 * [定义 Web 窗体布局](defining-web-forms-layout.md).
 
 >[!NOTE]
 >
->* 在页面设计过程中，您可以在&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡中查看最终渲染。 要查看更改，请先保存表单。 所有错误都显示在&#x200B;**[!UICONTROL Log]**&#x200B;选项卡中。
->* 要确保页面按适当的顺序显示和信息存储，请在Web窗体中启用调试模式。 为此，请转到&#x200B;**[!UICONTROL Preview]**&#x200B;子选项卡并选中&#x200B;**[!UICONTROL Enable debug mode]**&#x200B;框：所有收集的信息和可能的执行错误都将显示在每个页面的底部。
+>* 在页面设计期间，您可以在 **[!UICONTROL Preview]** 选项卡。 要查看更改，请先保存表单。 任何错误都显示在 **[!UICONTROL Log]** 选项卡。
+>* 要确保页面按适当的顺序显示和信息存储，请在Web窗体中启用调试模式。 要执行此操作，请转到 **[!UICONTROL Preview]** 子选项卡，并检查 **[!UICONTROL Enable debug mode]** 框：所有收集的信息和可能的执行错误都将显示在每个页面的底部。
 
 >
 
@@ -94,6 +94,6 @@ Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体以创
 
 ![](assets/s_ncs_admin_webform_select_storage.png)
 
-单击&#x200B;**[!UICONTROL Ok]**&#x200B;以批准选择。
+单击 **[!UICONTROL Ok]** 以批准选择。
 
 ![](assets/s_ncs_admin_webform_confirm_storage.png)

@@ -17,7 +17,7 @@ ht-degree: 26%
 
 ![](../../assets/common.svg)
 
-默认情况下，下面详述的工作流与&#x200B;**使用执行实例**&#x200B;模块的选件引擎控制一起安装。
+下面详细介绍的工作流与 **具有执行实例的优惠引擎控制** 模块。
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ ht-degree: 26%
   <tr> 
    <td> <span class="uicontrol">命题同步</span> <br /> </td> 
    <td> <span class="uicontrol">命题同步</span> <br /> </td> 
-   <td> 此工作流将营销实例和执行实例之间的建议同步，用于交互。<br /> </td> 
+   <td> 此工作流可在用于交互的营销实例和执行实例之间同步建议。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

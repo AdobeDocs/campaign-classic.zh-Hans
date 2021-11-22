@@ -75,8 +75,8 @@ _2019 年 12 月 2 日_
    <td> <p>CCPA是加利福尼亚州新推出的隐私法，旨在协调数据保护要求并使之现代化，于2020年1月1日正式生效。 CCPA适用于为居住在加利福尼亚州的数据主体持有数据的Adobe Campaign客户。</p>
     <p>除了已有的可用隐私功能（包括同意管理、数据保留设置和用户角色）之外，Adobe Campaign还可帮助您为CCPA做好准备：</p>
     <ul>
-      <li>访问权和删除权：我们将利用为GDPR添加的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">阅读更多</a></li>
-      <li>您可以跟踪消费者是否选择退出了出售个人信息。 为此，您需要扩展Profiles表并添加 <strong>选择退出CCPA</strong> 字段。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">阅读更多</a></li></td> 
+      <li>访问权和删除权：我们将利用为GDPR添加的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">了解更多信息</a></li>
+      <li>您可以跟踪消费者是否选择退出了出售个人信息。 为此，您需要扩展Profiles表并添加 <strong>选择退出CCPA</strong> 字段。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">了解更多信息</a></li></td> 
   </tr> 
  </tbody> 
 </table>
@@ -90,7 +90,7 @@ _2019 年 12 月 2 日_
  <tbody> 
   <tr> 
    <td> <p>您现在可以使用预定义视图监控实例上所有工作流的执行状态。</p>
-   <p>有关详细信息，请参阅<a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">有详细说明的文档</a>。</p></td> 
+   <p>有关更多信息，请参阅<a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">详细文档</a>。</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -120,7 +120,7 @@ _2019 年 12 月 2 日_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>现在，通过扩展通用SMPP连接器支持安全短信。 这允许与提供商的加密连接。</p> <p><strong>警告</strong> 此功能要求在所有服务器上安装最新的证书。 无效、已吊销或过期的证书将生成影响整体短信发送功能的错误。</p><p>有关详细信息，请参阅<a href="https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html">有详细说明的文档</a>。 </p> </td> 
+<td> <p>现在，通过扩展通用SMPP连接器支持安全短信。 这允许与提供商的加密连接。</p> <p><strong>警告</strong> 此功能要求在所有服务器上安装最新的证书。 无效、已吊销或过期的证书将生成影响整体短信发送功能的错误。</p><p>有关更多信息，请参阅<a href="https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html">详细文档</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -133,20 +133,20 @@ _2019 年 12 月 2 日_
 **改进**
 
 * 优化了推送通知的内存消耗。
-* 为了优化性能和存储， **logins.log** 文件已得到增强。 现在，该文件可拆分为多个文件，每天一个，最多保留365个文件。 [阅读更多](../../production/using/log-files.md)
-* Microsoft Dynamics CRM外部帐户现在可以使用密码凭据（密码+用户名）或证书（私钥）进行配置。 [阅读更多](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
+* 为了优化性能和存储， **logins.log** 文件已得到增强。 现在，该文件可拆分为多个文件，每天一个，最多保留365个文件。 [了解更多信息](../../production/using/log-files.md)
+* Microsoft Dynamics CRM外部帐户现在可以使用密码凭据（密码+用户名）或证书（私钥）进行配置。 [了解更多信息](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
 * hadoopFDA连接器中添加了一些增强功能，以提高可靠性
 * 添加了特定护栏，以在允许在服务器上上传公共资源之前检查磁盘空间。
 * 新建 [促销活动选项](../../installation/using/configuring-campaign-options.md) 已添加：
    * 的 **WdbcKillSessionPolicy** 配置选项允许您 **无条件停止** 所有工作流和PostgreSQL数据库查询的行为。
    * 的 **NmsOperation_DeliveryPreparationWindow** 选项，用于定义从运行投放计数中排除状态不一致的投放的天数。
-   * 的 **WdbcOptions_TempDbName** 选项用于为Microsoft SQL Server上的工作表配置单独的数据库。 这可以优化备份和复制。 [阅读更多](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
-   * 的 **XtkCleanup_NoStats** 增强了PostgreSQL的选项，以更好地控制数据库清理工作流的存储优化步骤的行为。 [阅读更多](../../production/using/database-cleanup-workflow.md#statistics-update)
+   * 的 **WdbcOptions_TempDbName** 选项用于为Microsoft SQL Server上的工作表配置单独的数据库。 这可以优化备份和复制。 [了解更多信息](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
+   * 的 **XtkCleanup_NoStats** 增强了PostgreSQL的选项，以更好地控制数据库清理工作流的存储优化步骤的行为。 [了解更多信息](../../production/using/database-cleanup-workflow.md#statistics-update)
 * 已向 **logon()** API。 它可以防止在指定时间范围内连续多次失败的登录尝试之后再进行任何登录尝试。
-* 新 **最大个性化运行时间** 投放属性中的选项允许您为个性化运行时间定义超时时段，以防止个性化阶段运行过长。 [阅读更多](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* 的 **ftp协议** 已添加选项，允许您对SFTP连接使用代理配置。 [阅读更多](../../installation/using/file-res-management.md)
+* 新 **最大个性化运行时间** 投放属性中的选项允许您为个性化运行时间定义超时时段，以防止个性化阶段运行过长。 [了解更多信息](../../delivery/using/personalization-fields.md#timing-out-personalization)
+* 的 **ftp协议** 已添加选项，允许您对SFTP连接使用代理配置。 [了解更多信息](../../installation/using/file-res-management.md)
 * 新增了对本地环境的SFTP外部服务器的代理访问支持。
-* 已添加特定护栏，以阻止安装与Campaign实例不兼容的包。 [阅读更多](../../installation/using/installing-campaign-standard-packages.md)
+* 已添加特定护栏，以阻止安装与Campaign实例不兼容的包。 [了解更多信息](../../installation/using/installing-campaign-standard-packages.md)
 
 _已弃用的系统_
 
@@ -154,13 +154,13 @@ _已弃用的系统_
 * Apache 2.2
 * Centos 6
 
-请确保您使用最新Campaign兼容性矩阵中列出的任何系统的受支持版本。 [阅读更多](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
+请确保您使用最新Campaign兼容性矩阵中列出的任何系统的受支持版本。 [了解更多信息](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 
 _Campaign Mobile SDK_
 
 iOS SDK的版本1.0.26现已可用。 在此新内部版本中，我们添加了对iOS 13的支持。 此新版本现在支持iOS 13推送通知的通知优先级和新注册令牌管理流程。 如果您在以前版本的SDK上运行应用程序，则需要使用新的SDK重新编译您的应用程序。 要获取SDK，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
-**补丁程序**
+**修补程序**
 
 * 修复了 **添加链接的表** 字段 **数据加载(RDBMS)** 工作流活动。 (NEO-12213)
 * 修复了可能导致中间源服务器无法处理某些消息的问题。 (NEO-12395)

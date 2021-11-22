@@ -1,51 +1,51 @@
 ---
 product: campaign
-title: Apple邮件应用中的邮件隐私保护
-description: 了解Apple的邮件隐私保护功能可能会对您的促销活动有何影响
+title: Apple邮件应用程序中的邮件隐私保护
+description: 了解您的营销活动可能受Apple的邮件隐私保护功能的影响
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '2100'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Apple邮件应用中的邮件隐私保护
+# Apple邮件应用程序中的邮件隐私保护
 
 ![适用于v7和v8](../../assets/common.svg)
 
 ## 更改了哪些内容？
 
-2021年，Apple为其本机Mail应用程序引入了新的隐私保护功能。 此应用程序现在包含Apple的邮件隐私保护功能。 基本上，发件人不能再使用跟踪像素来收集有关已选择启用Apple邮件隐私保护功能的收件人的信息。 [阅读更多](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}。
+2021年，Apple为其本机Mail应用程序引入了新的隐私保护功能。 此应用程序现在包含Apple的邮件隐私保护功能。 基本上，发件人不能再使用跟踪像素来收集有关选择启用Apple邮件隐私保护功能的收件人的信息。 [了解更多](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hans){target=&quot;_blank&quot;}。
 
 ## 我的营销活动受到什么影响？
 
-Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能。 您不仅可以将此功能用于定位和营销活动，还可以用于量度。 例如，您可以使用电子邮件打开率来衡量促销活动的有效性和用户参与度。 简而言之，您的营销活动中可能会受到分段、定位和量度的影响。 [阅读更多](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html#in-addition-to-measuring-opens%2C-what-else-is-impacted%3F){target=&quot;_blank&quot;}。
+Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能。 您不仅可以将此功能用于定位和营销活动，还可以用于量度。 例如，您可以使用电子邮件打开率来衡量促销活动的有效性和用户参与度。 简而言之，您的营销活动中可能会受到分段、定位和量度的影响。 [了解更多](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html#in-addition-to-measuring-opens%2C-what-else-is-impacted%3F){target=&quot;_blank&quot;}。
 
 ## 我应该采取什么行动？
 
-苹果的新功能是，在电子邮件隐私保护方面，行业将呈现出什么样的格局。 我们强烈建议您遵循Adobe的建议。
+Apple的新功能是在电子邮件隐私保护方面，业内将会有怎样的变化。 我们强烈建议您遵循Adobe的建议。
 
 ### 评估对营销活动触发器的影响
 
-评估这些更改对当前促销活动触发器有何影响。 识别打开电子邮件的工作流，以将其作为分段、定位或重定位的标准。 阅读[提示和技巧](#find-email-open-tracking)。
+评估这些更改对当前促销活动触发器有何影响。 识别打开电子邮件的工作流，以将其作为分段、定位或重定位的标准。 阅读 [提示和技巧](#find-email-open-tracking).
 
 ### 保留数据
 
-保留您的数据并整合您当前在设备上的知识。 您可以根据用户代理设定关键绩效指标(KPI)。 例如，您可以针对使用iOS和Apple Mail应用程序的用户档案构建KPI。 阅读[提示和技巧](#preserve-tracking-data)。
+保留您的数据并整合您当前在设备上的知识。 您可以根据用户代理设定关键绩效指标(KPI)。 例如，您可以针对使用iOS和Apple Mail应用程序的用户档案构建KPI。 阅读 [提示和技巧](#preserve-tracking-data).
 
 ### 在保留期之后存档您的跟踪日志
 
 在Adobe Campaign的保留期之后存档您的跟踪日志：
 
 1. 检查营销活动实例中保留期的持续时间。
-1. 再次检查活动目标映射。 确定是否除了现成的配置文件表(`nmsRecipient`)之外还使用自定义配置文件表。
+1. 再次检查活动目标映射。 确定除了现成的用户档案表(`nmsRecipient`)。
 1. 从Adobe Campaign导出跟踪日志。 包括包含有关用户代理和操作系统数据的日志。
 
 ### 评估开放率的当前趋势
 
 确定在iOS设备上使用Apple Mail应用程序的受众比例。
-使用此评估，您可以识别潜在的异常差距及其原因。 您可以确定差距是由于促销活动性能问题还是Apple的隐私保护功能所致。 阅读[提示和技巧](#measure-ios-footprint)。
+使用此评估，您可以识别潜在的异常差距及其原因。 您可以确定差距是由于促销活动性能问题还是Apple的隐私保护功能所致。 阅读 [提示和技巧](#measure-ios-footprint).
 
 ### 重新评估您的营销活动策略和绩效量度
 
@@ -55,7 +55,7 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
 
 ## 提示和技巧
 
-### 测量整体iOS占用空间 {#measure-ios-footprint}
+### 衡量整个iOS足迹 {#measure-ios-footprint}
 
 要从Adobe Campaign数据收集分析，您可以使用现成报表：
 
@@ -81,7 +81,7 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
 
 您可以识别打开电子邮件的工作流，以将其作为分段、定位和重定位的标准。
 
-要实现此目的，您可以使用跟踪链接URL的&#x200B;**[!UICONTROL type]**&#x200B;属性(**[!UICONTROL url/@type]**)。 对于打开的电子邮件，此属性将设置为&#x200B;**[!UICONTROL Open]**。 此属性可从查询编辑器、工作流中的&#x200B;**[!UICONTROL Query]**&#x200B;活动和预定义过滤器中使用。 您可以将此属性用作营销活动的定位标准。
+为此，您可以使用 **[!UICONTROL type]** 跟踪链接URL的属性(**[!UICONTROL url/@type]**)。 对于打开的电子邮件，此属性将设置为 **[!UICONTROL Open]**. 此属性可在查询编辑器( **[!UICONTROL Query]** 活动和预定义过滤器。 您可以将此属性用作营销活动的定位标准。
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -89,7 +89,7 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
 
 * 您可以在查询中将电子邮件打开次数用作定位条件。
 
-   您可以指定作为筛选条件，将特定投放跟踪日志的URL类型设置为&#x200B;**[!UICONTROL Open]**。
+   您可以指定作为筛选条件，将特定投放跟踪日志的URL类型设置为 **[!UICONTROL Open]**.
 
    ![](assets/identify-email-open-tracking-2.png)
 
@@ -105,7 +105,7 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
    >
    >在工作流中，您无法查看预定义过滤器的定位标准。
 
-要检索在其中打开电子邮件作为定位标准的工作流列表，您必须查询`xtk:workflow`架构。 工作流的内容以XML格式存储在&#x200B;**[!UICONTROL XML memo (data)]**&#x200B;字段中。
+要检索在其中打开电子邮件作为定位标准的工作流列表，您必须查询 `xtk:workflow` 架构。 工作流的内容存储在 **[!UICONTROL XML memo (data)]** 字段。
 
 ![](assets/identify-email-open-tracking-5.png)
 
@@ -113,7 +113,7 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
 
 `expr="[url/@type] = 2"`
 
-此定位标准表示必须将跟踪的URL的类型设置为&#x200B;**[!UICONTROL Open]**。
+此定位标准意味着必须将跟踪的URL的类型设置为 **[!UICONTROL Open]**.
 
 ![](assets/identify-email-open-tracking-6.png)
 
@@ -138,13 +138,13 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
 >
 >我们强烈建议您在非生产环境中测试并验证此包。
 
-下载[示例包](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml)并安装它。 [了解详情](../../platform/using/working-with-data-packages.md#importing-packages)。
+下载 [示例包](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) 然后安装它。 [了解详情](../../platform/using/working-with-data-packages.md#importing-packages)。
 
 安装包后，您可以从包含实例中现成技术工作流的文件夹中访问该工作流：
 
 `/Administration/Production/Technical workflows/nmsTechnicalWorkflow`
 
-在用户界面中，选择&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**。
+从用户界面中，选择 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
 ![](assets/identify-email-open-tracking-8.png)
 
@@ -158,7 +158,7 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
 
 工作流包含以下详细步骤：
 
-1. 初始活动是`xtk:workflow`架构中的查询活动。 此活动用于在相应的实例中查找包含电子邮件的明确工作流查询，以作为定位条件打开。
+1. 初始活动是 `xtk:workflow` 架构。 此活动用于在相应的实例中查找包含电子邮件的明确工作流查询，以作为定位条件打开。
 
    ![](assets/identify-email-open-tracking-9.png)
 
@@ -259,7 +259,7 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
 
    ![](assets/identify-email-open-tracking-20.png)
 
-   如果列表不为空，则会将其插入用于电子邮件通知的HTML表中。
+   如果列表不为空，则会将其插入到电子邮件通知的HTML表中。
 
    ![](assets/identify-email-open-tracking-21.png)
 
@@ -328,7 +328,7 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
 
    检查实例的设置。 [阅读更多](../../platform/using/privacy-management.md#data-retention)。
 
-* 除了Apple的最新变化外，您还可以使用跟踪数据来增加巨大的价值，从而提高受众的参与度。
+* 除了Apple的近期更改之外，您还可以使用跟踪数据来增加巨大的价值来提升受众的参与度。
 * Apple可能会对其本机邮件应用程序及其邮件隐私保护功能进行进一步更改。
 
 出于所有这些原因，我们强烈建议您尽快导出此数据。 否则，您部分受众的跟踪数据可能会受到负面影响。
@@ -339,11 +339,11 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
 
 >[!IMPORTANT]
 >
->以下示例重点介绍了现成的`nms:Recipient`架构，该架构是默认的配置文件架构。 如果您使用附加到自定义用户档案的其他自定义目标映射，我们建议您将此导出策略扩展到所有自定义日志表。 [阅读更多](../../configuration/using/target-mapping.md)。
+>以下示例重点介绍现成的 `nms:Recipient` 架构，默认配置文件架构为。 如果您使用附加到自定义用户档案的其他自定义目标映射，我们建议您将此导出策略扩展到所有自定义日志表。 [阅读更多](../../configuration/using/target-mapping.md)。
 
 ##### 原则
 
-默认情况下，`nms:Recipient`架构链接到必须导出的三个架构：
+默认情况下， `nms:Recipient` 架构链接到必须导出的三个架构：
 
 | 架构 | 内容 |
 | --- | --- |
@@ -381,11 +381,11 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
    初始查询用于检索最近三个月的跟踪日志。
 您可以使用增量查询仅提取尚未导出的记录。
 
-   从&#x200B;**[!UICONTROL Additional data]**&#x200B;节点添加所有必需信息。
+   从 **[!UICONTROL Additional data]** 节点。
 
    ![](assets/export-tracking-data-2.png)
 
-1. 添加&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动。 将查询中的所有数据映射到提取文件格式。
+1. 添加 **[!UICONTROL Data extraction (file)]** 活动。 将查询中的所有数据映射到提取文件格式。
 
    ![](assets/export-tracking-data-3.png)
 
@@ -404,7 +404,7 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
 | 应用程序 | 操作系统或设备  | 查询过滤器 |
 | --- | --- | --- |
 | Apple Mail | iOS 15 | `operating System (Browser) contains 'iOS 15' and browser (Browser) contains 'ApplewebKit'` |
-| Apple Mail | iOS 14或iOS 13 | `browser contains 'AppleWebKit' and operating System of browser contains 'iOS 14' or operating System of browser contains 'iOS 13'` |
+| Apple Mail | iOS14或iOS13 | `browser contains 'AppleWebKit' and operating System of browser contains 'iOS 14' or operating System of browser contains 'iOS 13'` |
 | Apple Mail | iOS移动设备：iPad、iPod和iPhone | `device (Browser) contains iPhone or device (Browser) equal to iPod or device (Browser) equal to iPad and browser (Browser) equal to 'AppleWebKit'` |
 | Apple Mail | iPhone 、 iPad或iPod | `browser (Browser) equal to 'AppleWebKit' and device (Browser) equal to iPhone or device (Browser) equal to iPod or device (Browser) equal to iPad` |
 | Apple Mail | Mac | `browser (Browser) equal to 'AppleWebKit' and operating System (Browser) contains 'Mac'` |
@@ -420,18 +420,18 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
 * 创建隐藏列表
 * 报告
 
-以下示例显示了如何使用工作流按iOS设备划分记录：
+以下示例显示如何使用工作流按iOS设备划分记录：
 
 * 第一个示例工作流包含以下活动：
 
-   1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活动用于选择最近三个月打开的所有电子邮件。
-   1. **[!UICONTROL Split]**&#x200B;活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分所做的选择。
+   1. 初始 **[!UICONTROL Query]** 活动用于选择过去三个月内打开的所有电子邮件。
+   1. A **[!UICONTROL Split]** 活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分所做的选择。
 
-   1. 每个&#x200B;**[!UICONTROL Split]**&#x200B;活动后面都有一个&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动。 **[!UICONTROL Deduplication]**&#x200B;活动用于删除重复的电子邮件地址。
+   1. A **[!UICONTROL Deduplication]** 活动按每个活动进行 **[!UICONTROL Split]** 活动。 的 **[!UICONTROL Deduplication]** 活动用于删除重复的电子邮件地址。
 
-      **[!UICONTROL Deduplication]**&#x200B;活动放在&#x200B;**[!UICONTROL Split]**&#x200B;活动之后，以避免丢失有关使用各种设备的收件人的信息。
+      的 **[!UICONTROL Deduplication]** 活动位于 **[!UICONTROL Split]** 活动，以避免丢失有关使用各种设备的收件人的信息。
 
-   1. 每个&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动后面都有一个&#x200B;**[!UICONTROL End]**&#x200B;活动。
+   1. 安 **[!UICONTROL End]** 活动按每个活动进行 **[!UICONTROL Deduplication]** 活动。
 
    如果您将收件人仅存储在现成的收件人表中以进行定位，则此类型的工作流将非常有用。
 
@@ -439,13 +439,13 @@ Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能
 
 * 第二个示例工作流包含以下活动：
 
-   1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活动用于选择最近三个月打开的所有电子邮件。
-   1. **[!UICONTROL Deduplication]**&#x200B;活动用于删除重复的电子邮件地址。
-   1. 使用&#x200B;**[!UICONTROL Fork]**&#x200B;活动：
+   1. 初始 **[!UICONTROL Query]** 活动用于选择过去三个月内打开的所有电子邮件。
+   1. A **[!UICONTROL Deduplication]** 活动用于删除重复的电子邮件地址。
+   1. A **[!UICONTROL Fork]** 活动：
 
-      * 在一个过渡中，使用&#x200B;**[!UICONTROL Change dimension]**&#x200B;活动查找跟踪日志所引荐的收件人。
-      * 在另一个过渡中，**[!UICONTROL Split]**&#x200B;活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分所做的选择。
-   1. **[!UICONTROL End]**&#x200B;活动跟在&#x200B;**[!UICONTROL Split]**&#x200B;活动之后的每个过渡之后。
+      * 在一个过渡中， **[!UICONTROL Change dimension]** 活动用于查找跟踪日志所引荐的收件人。
+      * 在另一个过渡中， **[!UICONTROL Split]** 活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分所做的选择。
+   1. 安 **[!UICONTROL End]** 活动会跟踪 **[!UICONTROL Split]** 活动。
 
    如果将收件人存储在非现成收件人表的表格中，则此类型的工作流将非常有用。
 

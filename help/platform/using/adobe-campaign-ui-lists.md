@@ -23,7 +23,7 @@ ht-degree: 84%
 
 默认情况下，Adobe Campaign 会加载列表的前 200 条记录。这意味着不一定会显示您所查看的数据库表的所有记录。您可以统计列表中的记录数量并加载更多记录。
 
-在列表屏幕右下方， **[!UICONTROL counter]**&#x200B;显示已加载的记录数以及数据库中的记录总数（应用任何过滤器后）：
+在列表屏幕的右下方， **[!UICONTROL counter]** 显示已加载的记录数以及数据库中的记录总数（在应用任何筛选器后）：
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
@@ -47,7 +47,7 @@ ht-degree: 84%
 
 ![](assets/s_ncs_user_configure_list.png)
 
-在列表配置窗口中，单击&#x200B;**[!UICONTROL Advanced parameters]**（左下方）并更改要检索的行数。
+在列表配置窗口中，单击 **[!UICONTROL Advanced parameters]** （左下方）并更改要检索的行数。
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
@@ -82,7 +82,7 @@ ht-degree: 84%
    >
    >会按照数据库表，然后按字母顺序显示各个标签。
    >
-   >使用 **Search** 字段在可用字段中执行搜索。有关详细信息，请参见[此部分](#sorting-a-list)。
+   >使用 **Search** 字段在可用字段中执行搜索。有关详细信息，请参阅 [此部分](#sorting-a-list).
    >
    >通过具体图标标识各字段：SQL 字段、链接的表、已计算字段等。针对选中的每个字段，在可用字段的列表下会显示其说明。[了解详情](#configuring-lists)。
    >
@@ -103,7 +103,7 @@ ht-degree: 84%
 
 您可以创建新的列来显示列表中的其他字段。操作步骤：
 
-1. 单击列表右下方的&#x200B;**[!UICONTROL Configure the list]**。
+1. 单击 **[!UICONTROL Configure the list]** 列表右侧。
 1. 单击 **[!UICONTROL Add]** 在列表中显示新字段。
 
 ### 移除列 {#remove-a-column}
@@ -149,11 +149,11 @@ ht-degree: 84%
 
 1. 右键单击其中包含已显示数据的文件夹。
 1. 选择 **[!UICONTROL Properties]**。
-1. 单击&#x200B;**[!UICONTROL Advanced settings]**，然后在&#x200B;**[!UICONTROL Configuration]**&#x200B;字段中指定名称。
+1. 单击 **[!UICONTROL Advanced settings]** 然后在 **[!UICONTROL Configuration]** 字段。
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. 单击&#x200B;**[!UICONTROL OK]**，然后单击&#x200B;**[!UICONTROL Save]**。
+1. 单击 **[!UICONTROL OK]** 然后单击 **[!UICONTROL Save]**.
 
 然后可将此配置应用到另一个 **Delivery** 文件夹：
 
@@ -167,7 +167,7 @@ ht-degree: 84%
 
 要从列表中导出数据，必须使用导出向导。要启动此向导，可从列表中选择要导出的元素，右键单击它后选择 **[!UICONTROL Export...]**。
 
-[一般导入和导出](../../platform/using/about-generic-imports-exports.md)中说明了导入和导出函数的使用。
+有关导入和导出功能的使用，请参阅 [一般导入和导出](../../platform/using/about-generic-imports-exports.md).
 
 >[!CAUTION]
 >

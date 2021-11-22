@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-这些报告涉及整个数据库中数据的活动。 要查看报表功能板，请转到&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。
+这些报告涉及整个数据库中数据的活动。 要查看报表功能板，请转到 **[!UICONTROL Reports]** 选项卡。
 
 ![](assets/s_ncs_user_report_delivery_link.png)
 
@@ -29,19 +29,19 @@ ht-degree: 2%
 >
 >此部分仅显示链接到投放的报表。
 
-* **[!UICONTROL Delivery throughput]** :请参阅投 [放吞吐量](#delivery-throughput)。
-* **[!UICONTROL Browsers]** :请参阅浏 [览器](#browsers)。
-* **[!UICONTROL Sharing to social networks]** :请参阅 [共享到社交网络](#sharing-to-social-networks)。
-* **[!UICONTROL Statistics on sharing activities]** :请参阅 [共享活动的统计信息](#statistics-on-sharing-activities)。
-* **[!UICONTROL Operating systems]** :请参阅操 [作系统](#operating-systems)。
-* **[!UICONTROL URLs and click streams]** :请参阅 [URL并单击流](../../reporting/using/delivery-reports.md#urls-and-click-streams)。
-* **[!UICONTROL Tracking indicators]** :请参阅跟 [踪指示器](../../reporting/using/delivery-reports.md#tracking-indicators)。
-* **[!UICONTROL Non-deliverables and bounces]** :请参阅 [无法交付项和退回](#non-deliverables-and-bounces)。
-* **[!UICONTROL User activities]** :请参阅用 [户活动](#user-activities)。
-* **[!UICONTROL Subscription tracking]** :请参阅 [订阅跟踪](#subscription-tracking)。
-* **[!UICONTROL Delivery summary]** :请参阅 [投放摘要](../../reporting/using/delivery-reports.md#delivery-summary)。
-* **[!UICONTROL Delivery statistics]** :请参阅投 [放统计信息](#delivery-statistics)。
-* **[!UICONTROL Breakdown of opens]** :请参阅打 [开的划分](#breakdown-of-opens)。
+* **[!UICONTROL Delivery throughput]** :请参阅 [投放吞吐量](#delivery-throughput).
+* **[!UICONTROL Browsers]** :请参阅 [浏览器](#browsers).
+* **[!UICONTROL Sharing to social networks]** :请参阅 [共享到社交网络](#sharing-to-social-networks).
+* **[!UICONTROL Statistics on sharing activities]** :请参阅 [关于共享活动的统计资料](#statistics-on-sharing-activities).
+* **[!UICONTROL Operating systems]** :请参阅 [操作系统](#operating-systems).
+* **[!UICONTROL URLs and click streams]** :请参阅 [URL和点击流](../../reporting/using/delivery-reports.md#urls-and-click-streams).
+* **[!UICONTROL Tracking indicators]** :请参阅 [跟踪指标](../../reporting/using/delivery-reports.md#tracking-indicators).
+* **[!UICONTROL Non-deliverables and bounces]** :请参阅 [无法交付项和退回](#non-deliverables-and-bounces).
+* **[!UICONTROL User activities]** :请参阅 [用户活动](#user-activities).
+* **[!UICONTROL Subscription tracking]** :请参阅 [订阅跟踪](#subscription-tracking).
+* **[!UICONTROL Delivery summary]** :请参阅 [投放摘要](../../reporting/using/delivery-reports.md#delivery-summary).
+* **[!UICONTROL Delivery statistics]** :请参阅 [投放统计](#delivery-statistics).
+* **[!UICONTROL Breakdown of opens]** :请参阅 [打开次数的划分](#breakdown-of-opens).
 
 ## 投放吞吐量 {#delivery-throughput}
 
@@ -59,15 +59,15 @@ ht-degree: 2%
 
 可以使用以下选项：
 
-* **[!UICONTROL Opens]** :已打开的消息总数。未考虑文本格式的电子邮件。 有关跟踪打开的更多信息，请参阅[跟踪打开](../../reporting/using/indicator-calculation.md#tracking-opens-)。
-* **[!UICONTROL Clicks]** :投放中链接的总点击次数。取消订阅链接和镜像页面的点击量不会被考虑在内。
-* **[!UICONTROL Transactions]** :收到消息后的交易总数。为了考虑交易，必须在匹配的网页中插入交易类型Web跟踪标记。 Web跟踪配置请参见[此部分](../../configuration/using/about-web-tracking.md)。
+* **[!UICONTROL Opens]** :已打开的消息总数。 未考虑文本格式的电子邮件。 有关跟踪打开的更多信息，请参阅 [跟踪打开次数](../../reporting/using/indicator-calculation.md#tracking-opens-).
+* **[!UICONTROL Clicks]** :投放中链接的总点击次数。 取消订阅链接和镜像页面的点击量不会被考虑在内。
+* **[!UICONTROL Transactions]** :收到消息后的交易总数。 为了考虑交易，必须在匹配的网页中插入交易类型Web跟踪标记。 Web跟踪配置在 [此部分](../../configuration/using/about-web-tracking.md).
 
 ## 无法投放项和退回 {#non-deliverables-and-bounces}
 
 此报表显示了无法交付项的细分以及每个互联网域的退回细分。
 
-**[!UICONTROL Number of messages processed]**&#x200B;表示投放服务器处理的消息总数。 此值小于停止或暂停某些投放时（服务器处理之前）要投放的消息数。
+的 **[!UICONTROL Number of messages processed]** 表示投放服务器处理的消息总数。 此值小于停止或暂停某些投放时（服务器处理之前）要投放的消息数。
 
 ![](assets/s_ncs_user_errors_report.png)
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->此报表中显示的错误会触发隔离过程。 有关隔离管理的更多信息，请参阅[隔离管理](../../delivery/using/understanding-quarantine-management.md)。
+>此报表中显示的错误会触发隔离过程。 如需有关隔离管理的详细信息，请参阅 [隔离管理](../../delivery/using/understanding-quarantine-management.md).
 
 此报表的第一部分以值表和图表的形式显示无法交付项的划分。
 
@@ -99,7 +99,7 @@ ht-degree: 2%
    >
    >此指标仅涉及移动渠道上的投放。 如需详细信息，请参阅[此部分](../../delivery/using/sms-channel.md)。
 
-   单击`[+]`符号可打开值表的每一行。 对于每种错误类型，您可以按域显示错误消息的划分。
+   您可以通过单击 `[+]` 符号。 对于每种错误类型，您可以按域显示错误消息的划分。
 
    ![](assets/s_ncs_user_errors_report_detail.png)
 
@@ -113,13 +113,13 @@ ht-degree: 2%
 * 与针对此域处理的消息总数相比，此域出错的消息百分比，
 * 此域的错误消息与错误消息总数的百分比。
 
-可通过单击[+]符号打开值表的每一行。 对于每种域类型，您可以按错误类型显示错误消息的划分。
+您可以通过单击 [+] 符号。 对于每种域类型，您可以按错误类型显示错误消息的划分。
 
 ![](assets/s_ncs_user_errors_report_detail2.png)
 
 >[!NOTE]
 >
->此报表中显示的域名在多维数据集级别定义。 要更改这些值，请编辑&#x200B;**[!UICONTROL Delivery logs (broadlogrcp)]**&#x200B;多维数据集。 如需详细信息，请参阅[此部分](../../reporting/using/about-cubes.md)。**[!UICONTROL Others]**&#x200B;类别包含不属于特定类的域名。
+>此报表中显示的域名在多维数据集级别定义。 要更改这些值，请编辑 **[!UICONTROL Delivery logs (broadlogrcp)]** 多维数据集。 如需详细信息，请参阅[此部分](../../reporting/using/about-cubes.md)。的 **[!UICONTROL Others]** 类别包括不属于特定类的域名。
 
 ## 浏览器 {#browsers}
 
@@ -149,9 +149,9 @@ ht-degree: 2%
 
 统计数据以曲线、图表和值表的形式呈现。
 
-**[!UICONTROL History]**&#x200B;曲线表示此浏览器每天的出席率。 比率是每日（在此浏览器上）访客数与当天以最高出勤率测量的访客数之比。
+的 **[!UICONTROL History]** 曲线表示此浏览器每天的出席率。 比率是每日（在此浏览器上）访客数与当天以最高出勤率测量的访客数之比。
 
-**[!UICONTROL Breakdown per version]**&#x200B;图表表示与访客总数（在此浏览器上）相比，每个版本的访客的细分情况。
+的 **[!UICONTROL Breakdown per version]** 图表表示与（在此浏览器上）访客总数相比，每个版本的访客数细分。
 
 值表使用以下指标：
 
@@ -160,7 +160,7 @@ ht-degree: 2%
 
 ### 共享到社交网络 {#sharing-to-social-networks}
 
-病毒式营销让投放收件人与其联系网络共享信息：他们可以添加指向其配置文件(Facebook、Twitter等)的链接 或者给朋友发个信息。 在投放中跟踪每次共享和每次访问共享信息。 有关病毒式营销的更多信息，请参阅[此部分](../../delivery/using/viral-and-social-marketing.md)。
+病毒式营销让投放收件人与其联系网络共享信息：他们可以添加指向其配置文件(Facebook、Twitter等)的链接 或者给朋友发个信息。 在投放中跟踪每次共享和每次访问共享信息。 有关病毒式营销的更多信息，请参阅 [此部分](../../delivery/using/viral-and-social-marketing.md).
 
 此报表显示每个社交网络(Facebook、Twitter等)的共享和打开消息的划分 和/或每封电子邮件。
 
@@ -177,15 +177,15 @@ ht-degree: 2%
 
 中央表格显示有关电子邮件共享和打开次数的统计资料。
 
-在&#x200B;**[!UICONTROL Shares]**&#x200B;列中，我们有以下指示器：
+在 **[!UICONTROL Shares]** 栏目，我们有以下指标：
 
-* **[!UICONTROL No. of sharing activities]** :每个社交网络上共享的消息总数。此值等于对匹配&#x200B;**[!UICONTROL Links for sharing to social networks]**&#x200B;个性化块图标的总点击次数。
+* **[!UICONTROL No. of sharing activities]** :每个社交网络上共享的消息总数。 此值等于对匹配图标的总点击次数 **[!UICONTROL Links for sharing to social networks]** 个性化块。
 * **[!UICONTROL Breakdown]** :此比率表示每个社交网络的分享次数与分享总数的关系。
 * **[!UICONTROL Sharing rate]** :此比率表示每个社交网络的分享次数与要发送的消息数量的关系。
 
-在&#x200B;**[!UICONTROL Opens]**&#x200B;列中，我们有以下指示器：
+在 **[!UICONTROL Opens]** 栏目，我们有以下指标：
 
-* **[!UICONTROL No. of opens]** :将消息转发到的人员（通过个性化块）打开的消 **[!UICONTROL Links for sharing to social networks]** 息总数。此值等于镜像页面的显示次数。 未考虑投放收件人打开的次数。
+* **[!UICONTROL No. of opens]** :被转发到的人(通过 **[!UICONTROL Links for sharing to social networks]** 个性化块)。 此值等于镜像页面的显示次数。 未考虑投放收件人打开的次数。
 * **[!UICONTROL Breakdown]** :此比率表示每个社交网络的打开次数相对于总打开次数的细分。
 * **[!UICONTROL Rate of opens]** :此比率表示每个社交网络的打开数与共享总数的关系。
 
@@ -197,7 +197,7 @@ ht-degree: 2%
 
 此报表显示了共享到社交网络(Facebook、Twitter、电子邮件等)的演变 及时。
 
-有关病毒式营销的更多信息，请参阅[此部分](../../delivery/using/viral-and-social-marketing.md)。
+有关病毒式营销的更多信息，请参阅 [此部分](../../delivery/using/viral-and-social-marketing.md).
 
 ![](assets/s_ncs_user_social_report2.png)
 
@@ -205,9 +205,9 @@ ht-degree: 2%
 
 使用以下指标：
 
-* **[!UICONTROL New contacts]** :接收通过电子邮件共享的消息后的新订阅数。此值匹配通过电子邮件共享消息、单击&#x200B;**[!UICONTROL Subscription link]**&#x200B;并填写订阅表单的人数。
-* **[!UICONTROL Opens]** :消息被传输到的人员（通过个性化块）打开的 **[!UICONTROL Link for sharing to social networks]** 消息总数。此值等于镜像页面的显示次数。 未考虑投放收件人打开的次数。
-* **[!UICONTROL Sharing activities]** :通过社交网络共享的消息总数。此值与&#x200B;**[!UICONTROL Links for sharing to social networks]**&#x200B;个性化块图标的总点击次数匹配。
+* **[!UICONTROL New contacts]** :接收通过电子邮件共享的消息后的新订阅数。 此值匹配收到通过电子邮件共享的消息并单击 **[!UICONTROL Subscription link]** 并填写了订阅表格。
+* **[!UICONTROL Opens]** :消息被传输到的人员(通过 **[!UICONTROL Link for sharing to social networks]** 个性化块)。 此值等于镜像页面的显示次数。 未考虑投放收件人打开的次数。
+* **[!UICONTROL Sharing activities]** :通过社交网络共享的消息总数。 此值与 **[!UICONTROL Links for sharing to social networks]** 个性化块。
 
 ## 操作系统 {#operating-systems}
 
@@ -237,9 +237,9 @@ ht-degree: 2%
 
 统计数据以曲线、图表和值表的形式呈现。
 
-**[!UICONTROL History]**&#x200B;曲线表示此操作系统每天的使用率。 此比率是每日（在此操作系统上）访客数与在出勤率最高的当天测量的访客数之比。
+的 **[!UICONTROL History]** 曲线表示此操作系统每天的使用率。 此比率是每日（在此操作系统上）访客数与在出勤率最高的当天测量的访客数之比。
 
-**[!UICONTROL Breakdown by version]**&#x200B;图表表示每个版本的访客数与此操作系统上的访客总数之间的关系。
+的 **[!UICONTROL Breakdown by version]** 图表表示每个版本的访客相对于此操作系统上的访客总数的划分。
 
 值表使用以下指标：
 
@@ -252,11 +252,11 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_services_report.png)
 
-通过单击主页或资源管理器的&#x200B;**[!UICONTROL Profiles and targets > Services and subscriptions]**&#x200B;节点，可为订阅显示该节点。 选择所需的订阅，然后单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。 默认情况下， **[!UICONTROL Subscriptions tracking]**&#x200B;报表可用。 它允许您查看订阅和退订趋势以及一段时间内的忠诚度比率。 您可以通过下拉列表配置此数据的表示形式。 单击&#x200B;**[!UICONTROL Refresh]**&#x200B;以验证所选配置。
+通过单击 **[!UICONTROL Profiles and targets > Services and subscriptions]** 主页或资源管理器的节点。 选择所需的订阅，然后单击 **[!UICONTROL Reports]** 选项卡。 的 **[!UICONTROL Subscriptions tracking]** 报表默认可用。 它允许您查看订阅和退订趋势以及一段时间内的忠诚度比率。 您可以通过下拉列表配置此数据的表示形式。 单击 **[!UICONTROL Refresh]** 验证所选配置。
 
 如需详细信息，请参阅[此页面](../../delivery/using/managing-subscriptions.md)。
 
-**[!UICONTROL Number subscribed to date]**&#x200B;表示当前订阅的总人数。
+的 **[!UICONTROL Number subscribed to date]** 表示当前订阅的总人数。
 
 **[!UICONTROL Overall evolution of subscriptions]**
 
@@ -265,7 +265,7 @@ ht-degree: 2%
 * **[!UICONTROL Subscribers]** :有关期间的订户总数。
 * **[!UICONTROL Subscriptions]** :有关期间的订阅数。
 * **[!UICONTROL Unsubscriptions]** :有关期间的退订次数。
-* **[!UICONTROL Evolution]** :取消订阅数减去订阅数。该速率基于订阅者总数计算。
+* **[!UICONTROL Evolution]** :取消订阅数减去订阅数。 该速率基于订阅者总数计算。
 * **[!UICONTROL Loyalty]** :相关时段的订阅者忠诚度比率。
 
 **[!UICONTROL Subscription evolution curves]**
@@ -287,9 +287,9 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >有关硬退回和软退回的更多信息，请参阅[隔离管理](../../delivery/using/understanding-quarantine-management.md)。
+   >有关硬退回和软退回的更多信息，请参阅 [隔离管理](../../delivery/using/understanding-quarantine-management.md).
 
-* **[!UICONTROL Opens]** :与成功处理消息的数量相比，至少打开一次消息的目标收件人数量的百分比。
+* **[!UICONTROL Opens]** :至少打开一次消息的目标收件人数量与成功处理的消息数量之比。
 * **[!UICONTROL Clicks]** :与成功处理的消息数量相比，点击投放至少一次的人数百分比。
 * **[!UICONTROL Unsubscription]** :退订链接的点击次数与成功处理消息数的百分比。
 
@@ -297,7 +297,7 @@ ht-degree: 2%
 
 此报表显示了在相关时段内，操作系统、设备和浏览器的打开次数的细分情况。 对于每个类别，使用两个图表。 第一个报表显示有关计算机和移动设备上打开次数的统计信息。 第二个显示仅与移动设备上的打开次数相关的统计信息。
 
-打开次数对应于已打开的消息总数。 不会计算文本格式电子邮件。 有关“跟踪”打开次数的更多信息，请参阅[跟踪打开次数](../../reporting/using/indicator-calculation.md#tracking-opens-)一节。
+打开次数对应于已打开的消息总数。 不会计算文本格式电子邮件。 有关“跟踪”打开的更多信息，请参阅 [跟踪打开次数](../../reporting/using/indicator-calculation.md#tracking-opens-) 中。
 
 ![](assets/dlv_useragent_report.png)
 

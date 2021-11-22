@@ -20,7 +20,7 @@ ht-degree: 0%
 ## 创建查询 {#creating-a-query}
 
 通过查询，您可以根据条件选择目标。 您可以将段代码与查询结果关联，并向其中插入附加数据。
-有关查询示例的更多信息，请参阅此[此部分](querying-recipient-table.md)。
+有关查询示例的更多信息，请参阅此 [此部分](querying-recipient-table.md).
 
 >[!NOTE]
 >
@@ -28,9 +28,9 @@ ht-degree: 0%
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
-有关使用和管理附加数据的更多信息，请参阅[添加数据](#adding-data)。
+有关使用和管理附加数据的更多信息，请参阅 [添加数据](#adding-data).
 
-**[!UICONTROL Edit query...]**&#x200B;链接允许您通过以下方式定义群体的定位类型、限制和选择标准：
+的 **[!UICONTROL Edit query...]** 链接允许您通过以下方式定义群体的定位类型、限制和选择标准：
 
 1. 选择定向和过滤维度。 默认情况下，会从收件人中选择目标。 限制筛选器的列表与用于投放定位的列表相同。
 
@@ -38,25 +38,25 @@ ht-degree: 0%
 
    过滤维度允许收集这些元素，例如与目标人员（合同、完全和最终结算等）相关的信息。
 
-   有关更多信息，请参阅[定位和筛选维度](building-a-workflow.md#targeting-and-filtering-dimensions)。
+   有关更多信息，请参阅 [定位和筛选维度](building-a-workflow.md#targeting-and-filtering-dimensions).
 
    ![](assets/s_user_segmentation_query_edit.png)
 
-   如有必要，可在选择定向和筛选维度时选择&#x200B;**[!UICONTROL Temporary schema]** ，以根据集客过渡中的数据查询。
+   查询可以根据来自集客过渡的数据（如有必要）通过选择 **[!UICONTROL Temporary schema]** 选择定位和筛选维度时，会出现以下问题。
 
    ![](assets/query_temporary_table.png)
 
-1. 使用向导定义群体。 要输入的字段可能因目标类型而异。 您可以使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡预览符合当前标准的目标群体。
+1. 使用向导定义群体。 要输入的字段可能因目标类型而异。 您可以使用 **[!UICONTROL Preview]** 选项卡。
 
-   有关创建和使用过滤器或查询的更多信息，请参阅此[部分](../../platform/using/filtering-options.md)。
+   有关创建和使用过滤器或查询的更多信息，请参阅此 [部分](../../platform/using/filtering-options.md).
 
    ![](assets/s_user_segmentation_wizard.png)
 
-1. 如果您在步骤1中选择了&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;或使用&#x200B;**[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]**&#x200B;选项，则以后必须手动添加筛选条件。
+1. 如果已选择 **[!UICONTROL Filtering conditions]** 在步骤1中或使用 **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** 选项，则以后必须手动添加筛选条件。
 
-   您还可以通过选中相应的框来添加数据分组条件。 要实现此目的，筛选维度必须与查询的定向维度不同。 有关分组的详细信息，请参阅此[部分](querying-using-grouping-management.md)。
+   您还可以通过选中相应的框来添加数据分组条件。 要实现此目的，筛选维度必须与查询的定向维度不同。 有关分组的详细信息，请参阅 [部分](querying-using-grouping-management.md).
 
-   您还可以使用表达式生成器并将其与逻辑选项AND、OR和EXCEPT组合来添加更多标准。 然后，您可以预览标准组合的&#x200B;**[!UICONTROL Corresponding SQL query...]**。 有关更多信息，请参阅此[部分](../../platform/using/defining-filter-conditions.md#building-expressions)。
+   您还可以使用表达式生成器并将其与逻辑选项AND、OR和EXCEPT组合来添加更多标准。 然后，您可以预览 **[!UICONTROL Corresponding SQL query...]** 的双曲余切值。 如需详细信息，请参阅 [部分](../../platform/using/defining-filter-conditions.md#building-expressions).
 
    如果您希望稍后重新使用过滤器，请保存该过滤器。
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 利用额外的列，可收集有关目标群体的其他信息，例如合同编号、新闻稿订阅或来源。 此数据可存储在Adobe Campaign数据库或外部数据库中。
 
-**[!UICONTROL Add data...]**&#x200B;链接允许您选择要收集的附加数据。
+的 **[!UICONTROL Add data...]** 链接允许您选择要收集的附加数据。
 
 ![](assets/wf_add_data_link.png)
 
@@ -74,9 +74,9 @@ ht-degree: 0%
 
 ![](assets/wf_add_data_1st_option.png)
 
-* 选择&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;以选择Adobe Campaign数据库中的数据。
-* 选择&#x200B;**[!UICONTROL External data]**&#x200B;以从外部数据库添加数据。 仅当您购买了&#x200B;**Federated Data Access**&#x200B;选项时，此选项才可用。 有关更多信息，请参阅[访问外部数据库(FDA)](accessing-an-external-database--fda-.md)。
-* 选择&#x200B;**[!UICONTROL An offer proposition]**&#x200B;选项可添加一组列，用于存储优惠引擎生成的最佳建议。 仅当您购买了&#x200B;**Interaction**&#x200B;模块时，此选项才可用。
+* 选择 **[!UICONTROL Data linked to the filtering dimension]** 来选择Adobe Campaign数据库中的数据。
+* 选择 **[!UICONTROL External data]** 从外部数据库添加数据。 仅当您购买了 **联合数据访问** 选项。 有关更多信息，请参阅 [访问外部数据库(FDA)](accessing-an-external-database--fda-.md).
+* 选择 **[!UICONTROL An offer proposition]** 选项，以添加一组列，用于存储选件引擎生成的最佳建议。 仅当您购买了 **互动** 模块。
 
 如果平台上未安装可选模块，则不会显示此阶段。 你会被带到下一个阶段。
 
@@ -92,21 +92,21 @@ ht-degree: 0%
 
    您可以添加：
 
-   * 根据从目标群体或聚合中获取的数据（上个月的待定购买数、接收的平均金额等）计算的字段。 例如，转到[Selecting data](targeting-data.md#selecting-data)。
-   * 使用输出列列表右侧的&#x200B;**[!UICONTROL Add]**&#x200B;按钮创建的新字段。
+   * 根据从目标群体或聚合中获取的数据（上个月的待定购买数、接收的平均金额等）计算的字段。 例如，转到 [选择数据](targeting-data.md#selecting-data).
+   * 使用 **[!UICONTROL Add]** 按钮。
 
-      您还可以添加信息集合，例如合同列表、最近5次投放等。 收藏集与可以具有同一用户档案多个值（1-N关系）的字段一致。 有关更多信息，请参阅[编辑其他数据](targeting-data.md#editing-additional-data)。
+      您还可以添加信息集合，例如合同列表、最近5次投放等。 收藏集与可以具有同一用户档案多个值（1-N关系）的字段一致。 有关更多信息，请参阅 [编辑其他数据](targeting-data.md#editing-additional-data).
 
 要添加链接到目标群体的信息集合，请执行以下操作：
 
-1. 在向导的第一步中，选择&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;选项：
-1. 选择包含要收集的信息的表并单击&#x200B;**[!UICONTROL Next]**。
+1. 在向导的第一步中，选择 **[!UICONTROL Data linked to the filtering dimension]** 选项：
+1. 选择包含要收集的信息的表并单击 **[!UICONTROL Next]**.
 
    ![](assets/wf_add_data_linked_table.png)
 
-1. 如有必要，请通过选择&#x200B;**[!UICONTROL Data collected]**&#x200B;字段中的值之一，指定要保留的集合元素数。 默认情况下，将恢复集合的所有行，然后根据下一步中指定的条件进行筛选。
+1. 如有必要，请通过选择 **[!UICONTROL Data collected]** 字段。 默认情况下，将恢复集合的所有行，然后根据下一步中指定的条件进行筛选。
 
-   * 如果收藏集的单个元素与此收藏集的筛选条件一致，请在&#x200B;**[!UICONTROL Data collected]**&#x200B;字段中选择&#x200B;**[!UICONTROL Single row]**。
+   * 如果收藏集的单个元素与此收藏集的筛选条件一致，请选择 **[!UICONTROL Single row]** 在 **[!UICONTROL Data collected]** 字段。
 
       >[!IMPORTANT]
       >
@@ -114,8 +114,8 @@ ht-degree: 0%
       >
       >如果不遵守初始条件，结果可能有缺陷（缺少线或重叠线）。
 
-   * 如果选择恢复多行(**[!UICONTROL Limit the line count]**)，则可以指定要收集的行数。
-   * 如果收集的列包含聚合，例如声明的失败次数、网站平均支出等。 您可以使用&#x200B;**[!UICONTROL Aggregates]**&#x200B;值。
+   * 如果选择恢复几行(**[!UICONTROL Limit the line count]**)可指定要收集的行数。
+   * 如果收集的列包含聚合，例如声明的失败次数、网站平均支出等。 您可以使用 **[!UICONTROL Aggregates]** 值。
 
    ![](assets/query_add_collection_param.png)
 
@@ -123,7 +123,7 @@ ht-degree: 0%
 
    ![](assets/query_add_columns_collection_filter.png)
 
-1. 如果已选择&#x200B;**[!UICONTROL Limit the line count]**&#x200B;选项，请定义收集数据的过滤顺序。 如果收集的行数大于您指定要保留的行数，则可使用筛选顺序指定要保留的行。
+1. 如果已选择 **[!UICONTROL Limit the line count]** 选项，定义收集数据的过滤顺序。 如果收集的行数大于您指定要保留的行数，则可使用筛选顺序指定要保留的行。
 
 ## 示例：基于简单的收件人属性定位 {#example--targeting-on-simple-recipient-attributes}
 
@@ -131,13 +131,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[此部分](querying-recipient-table.md)中提供了其他查询示例。
+>其他查询示例请参见 [此部分](querying-recipient-table.md).
 
-1. 命名查询，然后选择&#x200B;**[!UICONTROL Edit query...]**&#x200B;链接。
-1. 在可用筛选器类型列表中选择&#x200B;**[!UICONTROL Filtering conditions]**。
+1. 命名查询，然后选择 **[!UICONTROL Edit query...]** 链接。
+1. 选择 **[!UICONTROL Filtering conditions]** （在可用过滤器类型列表中）。
 1. 为建议的目标输入不同的标准。 此处，使用AND选项组合了标准。 要纳入选择，收件人必须满足以下四个条件：
 
-   * 标题为“Mr”的收件人（也可以使用&#x200B;**Gender**&#x200B;字段并选择&#x200B;**Male**&#x200B;作为值找到）。
+   * 标题为“Mr”的收件人(也可使用 **性别** 字段和选择 **男** 作为值)。
    * 30岁以下的收件人。
    * 18岁以上的收件人。
    * 住在法国的收件人。
@@ -152,8 +152,8 @@ ht-degree: 0%
 
    ![](assets/query_example_preview.png)
 
-1. 保存过滤器，以便您稍后通过单击&#x200B;**[!UICONTROL Finish]** > **[!UICONTROL OK]**&#x200B;再次使用它们。
-1. 通过向工作流中添加其他活动，继续编辑工作流。 启动查询并完成上一个查询步骤后，将显示找到的收件人数。 您可以使用鼠标弹出菜单（右键单击过渡> **[!UICONTROL Display the target...]**）显示更多详细信息。
+1. 保存过滤器，以便您稍后通过单击 **[!UICONTROL Finish]** > **[!UICONTROL OK]**.
+1. 通过向工作流中添加其他活动，继续编辑工作流。 启动查询并完成上一个查询步骤后，将显示找到的收件人数。 您可以使用鼠标弹出菜单（右键单击过渡>）显示更多详细信息 **[!UICONTROL Display the target...]**)。
 
    ![](assets/query_example_result.png)
 
@@ -163,9 +163,9 @@ ht-degree: 0%
 * 模式
 * recCount
 
-这组值由三个值组成，用于标识查询所定向的群体。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms:recipient）， **[!UICONTROL recCount]** 是表中元素的数量。
+这组值由三个值组成，用于标识查询所定向的群体。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体模式（通常为nms:recipient）和 **[!UICONTROL recCount]** 是表中的元素数。
 
-此值是工作表的架构。 此参数适用于具有&#x200B;**[!UICONTROL tableName]**&#x200B;和&#x200B;**[!UICONTROL schema]**&#x200B;的所有过渡。
+此值是工作表的架构。 此参数适用于具有 **[!UICONTROL tableName]** 和 **[!UICONTROL schema]**.
 
 ## 优化查询 {#optimizing-queries}
 
@@ -180,9 +180,9 @@ ht-degree: 0%
 * 避免执行外连接。 尽可能使用零ID记录来实现外部连接功能。
 * 为联接使用正确的数据类型。
 
-   确保`where`子句的类型与字段相同。
+   确保 `where` 子句的类型与字段相同。
 
-   一个常见的错误是：`iBlacklist='3'`其中`iBlacklist`是数字字段，`3`表示文本值。
+   一个常见的错误是： `iBlacklist='3'` where `iBlacklist` 是数字字段， `3` 表示文本值。
 
    确保知道查询的执行计划。 避免进行全表扫描，尤其是实时查询或几乎每分钟运行的实时查询。
 
@@ -194,10 +194,10 @@ ht-degree: 0%
 
 ### 函数 {#functions}
 
-* 请注意`Lower(...)`等函数。 使用Lower函数时，不使用Index。
+* 请注意 `Lower(...)`. 使用Lower函数时，不使用Index。
 * 使用“like”指令或“upper”或“lower”指令仔细检查查询。 在用户输入上应用“Upper”，而不是在数据库字段上应用。
 
-   有关函数的更多信息，请参阅[此部分](../../platform/using/defining-filter-conditions.md#list-of-functions)。
+   有关函数的更多信息，请参阅 [此部分](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
 ### 筛选维度 {#filtering-dimensions}
 
@@ -217,7 +217,7 @@ SQL中筛选维的等效项是内部连接：
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-有关筛选维度的更多信息，请参阅[此部分](building-a-workflow.md#targeting-and-filtering-dimensions)。
+有关筛选维度的更多信息，请参阅 [此部分](building-a-workflow.md#targeting-and-filtering-dimensions).
 
 ### 架构 {#architecture}
 

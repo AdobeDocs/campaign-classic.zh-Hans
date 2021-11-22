@@ -40,7 +40,7 @@ ht-degree: 5%
 
 ### 执行延迟 {#exec-delay}
 
-从20.2版本开始，向 **[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动。 默认情况下，执行阶段不能超过1小时。 在此延迟后，进程将中止，并显示错误消息，并且活动执行将失败。
+从20.2版本开始，向 **[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动。 默认情况下，执行阶段不能超过1小时。 在此延迟后，进程将中止，并显示错误消息，活动执行将失败。
 
 您可以在 **[!UICONTROL Stop execution after]** 字段。
 

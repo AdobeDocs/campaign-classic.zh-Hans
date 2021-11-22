@@ -17,9 +17,9 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-对于集客联系人（呼叫中心或网站），使用一组资格规则向给定联系人建议最相关的选件。 要扩充优惠的资格标准，请扩展&#x200B;**nms:interaction**&#x200B;模式。
+对于集客联系人（呼叫中心或网站），使用一组资格规则向给定联系人建议最相关的选件。 要扩充优惠的资格标准，请将 **nms:interaction** 架构。
 
-* 要添加新的交互上下文，请扩展&#x200B;**nms:interaction**&#x200B;模式并根据模式中的需要创建任意数量的&#x200B;**attribute**&#x200B;元素。
+* 要添加新的交互上下文，请扩展 **nms:interaction** 架构和创建尽可能多的 **属性** 元素（根据需要）。
 
    在以下示例中，添加的标准是国家/地区代码和上次访问的页面。
 
@@ -31,4 +31,4 @@ ht-degree: 3%
 
    ![](assets/s_ncs_configuration_offer_context.png)
 
-* 配置SOAP调用时，插入&#x200B;**context** XML元素以引用在交互架构中添加的上下文信息。 有关更多信息，请参阅[通过SOAP（服务器端）](../../interaction/using/integration-via-soap--server-side-.md)集成。
+* 配置SOAP调用时，插入 **上下文** 用于引用在交互架构中添加的上下文信息的XML元素。 有关详细信息，请参阅 [通过SOAP（服务器端）进行集成](../../interaction/using/integration-via-soap--server-side-.md).

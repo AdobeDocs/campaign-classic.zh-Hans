@@ -24,7 +24,7 @@ ht-degree: 4%
 >
 >对于托管的实施，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 团队。
 
-The integration between Adobe Campaign Classic and Adobe Analytics authentication supports Adobe Identity Management Service (IMS):
+Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeIdentity Management服务(IMS):
 
 * 如果您管理迁移的外部帐户，则必须实施Adobe IMS并通过Adobe ID连接到Adobe Campaign。 通过Adobe ID IMS登录的用户应是 **数据连接器** 帐户，并且拥有 **产品配置文件** 下文提及。
 
@@ -40,7 +40,7 @@ The integration between Adobe Campaign Classic and Adobe Analytics authenticatio
 
 有关产品配置文件的更多信息，请参阅 [管理控制台文档](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
 
-1. From the [Admin console](https://adminconsole.adobe.com/), select your Adobe Analytics **[!UICONTROL Product]**.
+1. 从 [管理控制台](https://adminconsole.adobe.com/)，选择您的Adobe Analytics **[!UICONTROL Product]**.
 
    ![](assets/do-not-localize/triggers_1.png)
 
@@ -50,7 +50,7 @@ The integration between Adobe Campaign Classic and Adobe Analytics authenticatio
 
 1. 添加 **[!UICONTROL Product profile name]**，我们建议使用以下语法： `reserved_campaign_classic_<Company Name>`. 然后，单击 **[!UICONTROL Next]**.
 
-   此 **[!UICONTROL Product profile]** 应专门用于Analytics Connector，以防止出现配置错误。
+   此 **[!UICONTROL Product profile]** 应专门用于Analytics连接器，以防止出现配置错误。
 
 1. 打开新创建的 **[!UICONTROL Product profile]** ，然后选择 **[!UICONTROL Permissions]** 选项卡。
 
@@ -66,9 +66,9 @@ The integration between Adobe Campaign Classic and Adobe Analytics authenticatio
 
    ![](assets/do-not-localize/triggers_4.png)
 
-1. For the **[!UICONTROL Metrics]** capability, add the **[!UICONTROL Metrics]** you will need to configure later on.
+1. 对于 **[!UICONTROL Metrics]** 功能，添加 **[!UICONTROL Metrics]** 您以后需要配置。
 
-   If needed, you can switch on the Auto-include option which will add every permissions item into the included list and will automatically add new permission items.
+   如果需要，您可以打开自动包含选项，该选项会将每个权限项添加到包含的列表中，并自动添加新权限项。
 
    ![](assets/do-not-localize/triggers_13.png)
 
@@ -98,7 +98,7 @@ The integration between Adobe Campaign Classic and Adobe Analytics authenticatio
 
 1. 访问Adobe I/O并登录为 **系统管理员** IMS组织的ID。
 
-   For more information on Admin roles, refer to this [page](https://helpx.adobe.com/enterprise/using/admin-roles.html).
+   有关管理员角色的更多信息，请参阅此 [页面](https://helpx.adobe.com/enterprise/using/admin-roles.html).
 
 1. 单击 **[!UICONTROL Create a new project]**。
 

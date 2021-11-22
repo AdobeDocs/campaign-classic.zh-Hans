@@ -62,7 +62,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> 投放<br /> </td> 
-   <td> 监控投放情况以及发送消息时遇到的最终问题。 <a href="../../delivery/using/about-delivery-monitoring.md">了解详情</a><br /> </td> 
+   <td> 监控投放以及发送消息时遇到的最终问题。 <a href="../../delivery/using/about-delivery-monitoring.md">了解详情</a><br /> </td> 
    <td> 所有</td> 
   </tr> 
   <tr> 

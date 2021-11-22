@@ -17,10 +17,10 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-使用Campaign [联合数据访问](../../installation/using/about-fda.md)(FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对SAP HANA的访问。
+使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)选项，用于处理存储在外部数据库中的信息。 请按照以下步骤配置对SAP HANA的访问。
 
-1. 配置[SAP HANA数据库](#sap-config)
-1. 在Campaign中配置SAP HANA[外部帐户](#sap-external)
+1. 配置 [SAP HANA数据库](#sap-config)
+1. 配置SAP HANA [外部帐户](#sap-external) 在Campaign中
 
 ## SAP HANA驱动程序 {#sap-config}
 
@@ -28,8 +28,8 @@ ht-degree: 0%
 
 1. 根据您使用的操作系统安装ODBC驱动程序进行SAP HANA:
 
-   * **适用于Linux的hdb_client_linux.** tgz。解压后，启动hdbinst命令并按照说明完成驱动程序的安装。
-   * **适用于Windows的hdb_client_windows.** zipp。解压缩文件并启动可执行文件：**hdbinst.exe**。 按照向导说明完成驱动程序的安装。
+   * **hdb_client_linux.tgz** 的URL。 解压后，启动hdbinst命令并按照说明完成驱动程序的安装。
+   * **hdb_client_windows_zip** （对于Windows）。 解压缩文件并启动可执行文件： **hdbinst.exe**. 按照向导说明完成驱动程序的安装。
 
 1. 配置ODBC驱动程序。 配置可以在标准文件中执行：/etc/odbc.ini（用于常规参数）和/etc/odbcinst.ini（用于声明驱动程序）。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
       User:SYSTEM
       ```
 
-      &quot;InstallDir&quot;对应于&#x200B;**odbcinst.ini**&#x200B;文件的位置。
+      “InstallDir”对应于 **odbcinst.ini** 文件。
 
    * **/etc/odbcinst.ini**
 
@@ -64,11 +64,11 @@ ht-degree: 0%
 
 SAP HANA外部帐户允许您将Campaign实例连接到SAP HANA外部数据库。
 
-1. 在Campaign **[!UICONTROL Explorer]**&#x200B;中，单击&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
+1. 从Campaign **[!UICONTROL Explorer]**，单击 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. 单击&#x200B;**[!UICONTROL New]**&#x200B;并选择&#x200B;**[!UICONTROL External database]**&#x200B;作为&#x200B;**[!UICONTROL Type]**。
+1. 单击 **[!UICONTROL New]** 选择 **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
-1. 要配置&#x200B;**[!UICONTROL SAP Hana]**&#x200B;外部帐户，必须指定：
+1. 配置 **[!UICONTROL SAP Hana]** 外部帐户，您必须指定：
 
    * **[!UICONTROL Type]**:SAP Hana
 

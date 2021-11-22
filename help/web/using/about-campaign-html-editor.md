@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Campaign HTML编辑器入门
+title: CampaignHTML编辑器入门
 description: Campaign DCE快速入门
 audience: web
 content-type: reference
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 ---
 
-# Campaign HTML编辑器入门{#about-campaign-html-editor}
+# CampaignHTML编辑器入门{#about-campaign-html-editor}
 
 ![](../../assets/common.svg)
 
-**数字内容编辑器(DCE)**&#x200B;是一个HTML内容编辑器，通过该编辑器，您可以在Adobe Campaign中轻松创建HTML格式的内容和模板。
+的 **数字内容编辑器(DCE)** 是一个HTML内容编辑器，可让您在Adobe Campaign中轻松创建HTML格式的内容和模板。
 
 使用数字内容编辑器，您可以插入页面元素并设置其格式，以及将数据库字段映射到HTML页面的元素。 在为Web应用程序创建页面时，或在基于DCE模板创建投放时，此编辑器可用。
 
@@ -37,24 +37,24 @@ ht-degree: 0%
 
 ![](assets/dce_schema.png)
 
-要创建简单的&#x200B;**Web应用程序**，您需要：
+创建简单 **Web应用程序**，您需要：
 
-1. 创建Web应用程序 — [了解详情](creating-a-landing-page.md)
-1. 选择现有内容或从标准模板创建内容 — [了解详情](template-management.md)
-1. 编辑和配置内容 — [了解详情](editing-content.md)
-1. 发布Web应用程序 — [了解详情](creating-a-landing-page.md#step-3---publishing-content)
+1. 创建Web应用程序 —  [了解更多](creating-a-landing-page.md)
+1. 选择现有内容或从标准模板创建内容 —  [了解更多](template-management.md)
+1. 编辑和配置内容 —  [了解更多](editing-content.md)
+1. 发布Web应用程序 —  [了解更多](creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
->[此部分](creating-a-landing-page.md)提供了Web应用程序上下文中的完整实施示例。
+>Web应用程序上下文中的完整实施示例可在  [此部分](creating-a-landing-page.md).
 
-要创建&#x200B;**电子邮件投放**，您需要：
+创建 **电子邮件投放**，您需要：
 
-1. 从DCE模板创建投放 — [了解详情](use-case--creating-an-email-delivery.md)
-1. 选择现有内容或从[标准模板](template-management.md)创建内容
+1. 从DCE模板创建投放 —  [了解更多](use-case--creating-an-email-delivery.md)
+1. 选择现有内容或从 [标准模板](template-management.md)
 1. 编辑和配置在线内容
-1. 发送投放 — [了解详情](../../delivery/using/steps-about-delivery-creation-steps.md)
+1. 发送投放 —  [了解更多](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->[此用例](use-case--creating-an-email-delivery.md)中提供了电子邮件投放上下文中的完整实施示例。
+>有关电子邮件投放上下文的完整实施示例，请参阅 [此用例](use-case--creating-an-email-delivery.md).

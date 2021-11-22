@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ## 非检测示例
 
-`<%= getURL("http://mynewsletter.com") %>` 工作，并通过电子邮件将网页的实际内容发送给收件人。但是，这些链接均未被跟踪。 原因是MTA在发送之前会对每封电子邮件执行`"<%=getURL(..."`。 由于每个收件人的URL可能各不相同，因此Adobe Campaign无法知道用于跟踪的URL并为其分配一个标记ID。
+`<%= getURL("http://mynewsletter.com") %>` 工作，并通过电子邮件将网页的实际内容发送给收件人。 但是，这些链接均未被跟踪。 原因是MTA执行 `"<%=getURL(..."` ，以在发送前检查每个电子邮件。 由于每个收件人的URL可能各不相同，因此Adobe Campaign无法知道用于跟踪的URL并为其分配一个标记ID。
 
 如果要下载的页面与所有收件人的页面相同，则最佳实践是执行以下操作：
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 ## 推荐模式
 
-处理`<%@`说明后，要跟踪的URL具有以下语法：`<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
+处理后 `<%@` 说明，要跟踪的URL具有以下语法： `<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
 
 >[!IMPORTANT]
 >
@@ -37,10 +37,10 @@ ht-degree: 3%
 
 在向内容添加个性化链接时，应始终避免在URL的主机名部分进行任何个性化，以避免潜在的安全漏洞。 请参阅[此页面](../../installation/using/privacy.md#url-personalization)以了解详情。
 
-例如，`<a href="http://<%=myURL%>">`语法为&#x200B;**不安全**，必须避免使用。
+例如， `<a href="http://<%=myURL%>">` 语法为 **不安全** 必须避免。
 
 * 如果Adobe Campaign生成的链接包含一个或多个参数，则使用此语法可能会导致安全问题。
-* “整洁”可能会错误地修补某些链接，这些链接可能会随机发生。 典型症状是一段HTML，该HTML在电子邮件校样中可见，但在预览中不可见。
+* “整洁”可能会错误地修补某些链接，这些链接可能会随机发生。 典型症状是电子邮件校样中显示但预览中未显示的一段HTML。
 * 转义URL时出现问题，URL中的某些字符可能会导致问题。
 * 重定向URL中的参数名为ID的参数不能与参数冲突。
 * 随后，对跟踪的兴趣将限于投放的统计信息，因为Adobe Campaign会以不同的方式跟踪“myURL”的所有可能值。

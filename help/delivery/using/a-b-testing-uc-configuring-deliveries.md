@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-创建[群体后，即可配置投放。 ](a-b-testing-uc-population-samples.md)在此用例中，前两个投放允许您向群体A和B发送不同的内容。第三个投放是回退投放：它将发送给不属于A或B的收件人。其内容将由脚本计算，并且与A或B相同，具体取决于打开率最高的收件人。 我们需要为第三个投放配置一个等待期，以了解投放A和B的结果。这就是第三个投放包含&#x200B;**[!UICONTROL Wait]**&#x200B;活动的原因。
+一次 [群体创建](a-b-testing-uc-population-samples.md)，则可以配置投放。 在此用例中，前两个投放允许您向群体A和B发送不同的内容。第三个投放是回退投放：它将发送给不属于A或B的收件人。其内容将由脚本计算，并且与A或B相同，具体取决于打开率最高的收件人。 我们需要为第三个投放配置一个等待期，以了解投放A和B的结果。这就是第三个投放包含的原因 **[!UICONTROL Wait]** 活动。
 
-1. 转到&#x200B;**[!UICONTROL Split]**&#x200B;活动，并将定向于群体A的过渡链接到工作流中已有的电子邮件投放之一。
+1. 转到 **[!UICONTROL Split]** 活动，并将定向于群体A的过渡链接到工作流中已有的电子邮件投放之一。
 
    ![](assets/use_case_abtesting_createdeliveries_001.png)
 
@@ -28,11 +28,11 @@ ht-degree: 0%
 
    ![](assets/use_case_abtesting_createdeliveries_003.png)
 
-1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;以查看投放，然后保存它。
+1. 单击 **[!UICONTROL Continue]** 要查看投放，请保存它。
 
    ![](assets/use_case_abtesting_createdeliveries_002.png)
 
-1. 将目标为群体B的&#x200B;**[!UICONTROL Split]**&#x200B;活动的过渡链接到第二个电子邮件投放。
+1. 链接的过渡 **[!UICONTROL Split]** 定向于群体B的活动，发送到第二个电子邮件投放。
 
    ![](assets/use_case_abtesting_createdeliveries_004.png)
 
@@ -40,15 +40,15 @@ ht-degree: 0%
 
    ![](assets/use_case_abtesting_createdeliveries_005.png)
 
-1. 将发往其余群体的过渡链接到&#x200B;**[!UICONTROL Wait]**&#x200B;活动。
+1. 将发往剩余群体的过渡链接到 **[!UICONTROL Wait]** 活动。
 
    ![](assets/use_case_abtesting_createdeliveries_006.png)
 
-1. 打开&#x200B;**[!UICONTROL Wait]**&#x200B;活动并配置5天的等待期。
+1. 打开 **[!UICONTROL Wait]** 活动，并配置5天的等待期。
 
    ![](assets/use_case_abtesting_createdeliveries_007.png)
 
-1. 将&#x200B;**[!UICONTROL Wait]**&#x200B;活动链接到&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动。
+1. 链接 **[!UICONTROL Wait]** 活动 **[!UICONTROL JavaScript code]** 活动。
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 

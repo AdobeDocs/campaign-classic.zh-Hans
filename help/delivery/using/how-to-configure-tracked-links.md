@@ -23,11 +23,11 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->包含个性化的电子邮件内容中的链接需要跟踪特定的语法。 有关如何在电子邮件中添加可个性化且支持跟踪的链接的更多信息，请参阅[此部分](tracking-personalized-links.md)。
+>包含个性化的电子邮件内容中的链接需要跟踪特定的语法。 有关如何在电子邮件中添加可个性化的链接和支持跟踪的更多信息，请参阅 [此部分](tracking-personalized-links.md).
 
-我们强烈建议您在应用跟踪公式之前，在&#x200B;**[!UICONTROL Text content]**&#x200B;选项卡的分隔符中引住URL。 您在此选项卡中输入的URL分隔符将由Adobe Campaign用于标识字符串内的URL。 您可以使用以下分隔符对：
+我们强烈建议您在 **[!UICONTROL Text content]** 选项卡。 您在此选项卡中输入的URL分隔符将由Adobe Campaign用于标识字符串内的URL。 您可以使用以下分隔符对：
 * 括号()
-* 括号[ ]
+* 括号 [ ]
 * 大括号{ }
 
 在此示例中，URL https://www.adobe.com后面跟有一个分号。 收件人电子邮件客户端可以将分号解释为URL的一部分。 因此，链接可能会断开。 要避免出现此问题，您可以使用以下方式之一将URL括在分隔符中：
@@ -37,7 +37,7 @@ ht-degree: 10%
 
 默认启用消息跟踪。 要个性化URL的跟踪方式，请执行以下步骤：
 
-1. 在投放向导的下半部分中，选择消息内容下的&#x200B;**[!UICONTROL Display URLs]**&#x200B;选项。
+1. 选择 **[!UICONTROL Display URLs]** 选项。
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -51,7 +51,7 @@ ht-degree: 10%
    >
    >当链接的URL用作标签时，建议停用跟踪以避免因网络钓鱼而被拒绝的风险。
    >
-   >例如，如果将www.adobe.com URL插入消息中并激活该消息的跟踪，则超文本链接的内容将被修改为https://nlt.adobe.net/r/?id=xxxxxx。 这意味着收件人消息客户端可能会将其视为欺诈。
+   >例如，如果将www.adobe.com URL插入到消息中，并在消息上激活跟踪，则超文本链接的内容将被修改为https://nlt.adobe.net/r/?id=xxxxxx。 这意味着收件人消息客户端可能会将其视为欺诈。
 
 1. 如果需要，请更改跟踪标签，双击该标签并输入新标签。
 
@@ -59,7 +59,7 @@ ht-degree: 10%
    >
    >可以修改跟踪URL的标签和标签，以简化跟踪投放时的信息读取。 在计算点击次数时，将同时添加两个或两个同名的URL。
 
-1. 如果需要，请更改跟踪模式，在&#x200B;**[!UICONTROL Tracking]**&#x200B;列中选择与目标链接匹配的新模式，如下所示：
+1. 如果需要，请更改跟踪模式，在 **[!UICONTROL Tracking]** 与目标链接匹配的列，如下所示：
 
    ![](assets/s_ncs_user_select_tracking_mode.png)
 
@@ -67,9 +67,9 @@ ht-degree: 10%
 
    * **[!UICONTROL Enabled]** :在此URL上激活跟踪。
    * **[!UICONTROL Not tracked]** :停用对此URL的跟踪。
-   * **[!UICONTROL Always enabled]** :始终激活此URL的跟踪。此信息已保存，以便下次，如果URL在将来的消息内容中再次显示，则其跟踪将自动激活。
-   * **[!UICONTROL Never tracked]** :从不激活此URL的跟踪。此信息已保存，以便下次，如果URL在将来的消息中再次显示，则其跟踪将自动停用。
+   * **[!UICONTROL Always enabled]** :始终激活此URL的跟踪。 此信息已保存，以便下次，如果URL在将来的消息内容中再次显示，则其跟踪将自动激活。
+   * **[!UICONTROL Never tracked]** :从不激活此URL的跟踪。 此信息已保存，以便下次，如果URL在将来的消息中再次显示，则其跟踪将自动停用。
    * **[!UICONTROL Opt-out]** :将此URL视为选择退订或退订URL。
    * **[!UICONTROL Mirror page]** :将此URL视为镜像页面URL。
 
-1. 此外，您还可以在&#x200B;**[!UICONTROL Category]**&#x200B;列的下拉列表中为每个跟踪的URL选择一个类别。 这些类别可以显示报表，例如在&#x200B;**[!UICONTROL URLs and click streams]**&#x200B;中（请参阅[此部分](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)）。 类别在特定枚举中定义：**[!UICONTROL urlCategory]**（请参阅[管理枚举](../../platform/using/managing-enumerations.md)）。
+1. 此外，您还可以在 **[!UICONTROL Category]** 列。 这些类别可显示报表，例如 **[!UICONTROL URLs and click streams]** (请参阅 [此部分](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams))。 类别在特定枚举中定义： **[!UICONTROL urlCategory]** (请参阅 [管理枚举](../../platform/using/managing-enumerations.md))。

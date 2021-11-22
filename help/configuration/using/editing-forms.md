@@ -17,7 +17,7 @@ ht-degree: 13%
 
 ![](../../assets/v7-only.svg)
 
-可从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]**&#x200B;文件夹访问输入表单的创建和配置屏幕：
+输入表单创建和配置屏幕可从 **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** Adobe Campaign客户端控制台的文件夹：
 
 ![](assets/d_ncs_integration_form_arbo.png)
 

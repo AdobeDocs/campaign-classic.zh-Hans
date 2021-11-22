@@ -67,16 +67,16 @@ ht-degree: 4%
    vars.deliveryId = delivery.id
 ```
 
-有关脚本的详细说明，请参阅[此部分](#details-of-the-script)。
+有关脚本的详细说明，请参阅 [此部分](#details-of-the-script).
 
 ## 实施 {#implementation}
 
-1. 打开&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动。
-1. 将[脚本示例](#example-of-a-script)中提供的脚本复制到&#x200B;**[!UICONTROL JavaScript code]**&#x200B;窗口中。
+1. 打开 **[!UICONTROL JavaScript code]** 活动。
+1. 复制 [脚本示例](#example-of-a-script) 到 **[!UICONTROL JavaScript code]** 窗口。
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中，输入脚本的名称，即
+1. 在 **[!UICONTROL Label]** 字段，输入脚本的名称，即
 
    ```
    <%= vars.deliveryId %>
@@ -84,14 +84,14 @@ ht-degree: 4%
 
    ![](assets/use_case_abtesting_configscript_003.png)
 
-1. 关闭&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动。
+1. 关闭 **[!UICONTROL JavaScript code]** 活动。
 1. 保存工作流。
 
 ## 脚本的详细信息 {#details-of-the-script}
 
 本节详细介绍脚本的各个部分及其操作模式。
 
-* 脚本的第一部分是查询。 通过&#x200B;**queryDef**&#x200B;命令，您可以从&#x200B;**NmsDelivery**&#x200B;表中恢复通过执行定向工作流创建的投放，并根据其估计的打开率对其进行排序，然后恢复来自具有最高打开率的投放的信息。
+* 脚本的第一部分是查询。 的 **queryDef** 命令允许您从 **NmsDelivery** 将通过执行定位工作流创建的投放表格，并根据预计的打开率对其进行排序，然后恢复来自具有最高打开率的投放的信息。
 
    ```
    // query the database to find the winner (best open rate)
@@ -120,7 +120,7 @@ ht-degree: 4%
    delivery.Duplicate("nms:delivery|" + winner.@id)
    ```
 
-* 修改了复制投放的标签，并将单词&#x200B;**final**&#x200B;添加到该标签中。
+* 将修改复制投放的标签，并在 **final** 中的“隐藏主体”。
 
    ```
    // append 'final' to the delivery label
@@ -162,12 +162,12 @@ ht-degree: 4%
 
 通过以上示例，您可以根据电子邮件的打开率选择投放的内容。 您可以根据其他特定于投放的指标来调整它：
 
-* 最佳点击吞吐量：`[indicators/@recipientClickRatio]`,
-* 最高反应率（电子邮件打开和在消息中点击）：`[indicators/@reactivity]`,
-* 最低投诉率：`[indicators/@refusedRatio]`（对sortDesc属性使用false值）、
-* 最高转化率：`[indicators/@transactionRatio]`,
-* 收到消息后访问的页数：`[indicators/@totalWebPage]`,
-* 退订率最低：`[indicators/@optOutRatio]`,
-* 交易金额：`[indicators/@amount]`。
+* 最佳点击吞吐量： `[indicators/@recipientClickRatio]`,
+* 最高反应率（电子邮件打开和在消息中点击）： `[indicators/@reactivity]`,
+* 最低投诉率： `[indicators/@refusedRatio]` （对sortDesc属性使用false值），
+* 最高转化率： `[indicators/@transactionRatio]`,
+* 收到消息后访问的页数： `[indicators/@totalWebPage]`,
+* 退订率最低： `[indicators/@optOutRatio]`,
+* 交易金额： `[indicators/@amount]`.
 
 您现在可以定义最终投放。 [了解详情](a-b-testing-uc-final-delivery.md)。

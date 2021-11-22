@@ -31,15 +31,15 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->仅当您获得了&#x200B;**调查管理器**&#x200B;选项时，才可实施此用例。 请核实您的许可协议。
+>仅当您获取了 **调查管理器** 选项。 请核实您的许可协议。
 
 ## 步骤1 — 创建数据收集和存储工作流 {#step-1---creating-the-data-collection-and-storage-workflow}
 
 要收集调查的答案，请应用以下步骤：
 
-1. 创建工作流并放置&#x200B;**[!UICONTROL Answers to a survey]**&#x200B;活动。 有关使用此活动的更多信息，请参阅[此部分](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data)。
+1. 创建工作流并放置 **[!UICONTROL Answers to a survey]** 活动。 有关使用此活动的更多信息，请参阅 [此部分](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data).
 1. 编辑活动并选择要分析其答案的调查。
-1. 启用&#x200B;**[!UICONTROL Select all the answer data]**&#x200B;选项以收集所有信息。
+1. 启用 **[!UICONTROL Select all the answer data]** 选项来收集所有信息。
 
    ![](assets/reporting_usecase_1_01.png)
 
@@ -47,11 +47,11 @@ ht-degree: 6%
 
    ![](assets/reporting_usecase_1_02.png)
 
-1. 配置了答案收集框后，请定位&#x200B;**[!UICONTROL List update]**&#x200B;类型的活动以保存数据。
+1. 配置了答案收集框后，请定位 **[!UICONTROL List update]** 键入活动以保存数据。
 
    ![](assets/reporting_usecase_1_04.png)
 
-   在此活动中，指定要更新的列表，并取消选中&#x200B;**[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**&#x200B;选项：答案将添加到现有表中。 此选项将允许您引用多维数据集中的列表。 链接到列表的架构将不会针对每次更新重新生成，这将确保使用此列表的多维数据集的完整性。
+   在此活动中，指定要更新的列表，并取消选中 **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]** 选项：答案将添加到现有表中。 此选项将允许您引用多维数据集中的列表。 链接到列表的架构将不会针对每次更新重新生成，这将确保使用此列表的多维数据集的完整性。
 
    ![](assets/reporting_usecase_1_03.png)
 
@@ -63,11 +63,11 @@ ht-degree: 6%
 
 1. 添加调度程序以自动每天收集答案和更新列表。
 
-   有关&#x200B;**[!UICONTROL List update]**&#x200B;和&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动的详细信息，请参见。
+   的 **[!UICONTROL List update]** 和 **[!UICONTROL Scheduler]** 有关活动的详情，请参阅。
 
 ## 第2步 — 创建多维数据集、其度量及其指标 {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-然后，可以创建多维数据集并配置其度量：这些指标将用于创建将在报告中显示的指标。 有关创建和配置多维数据集的更多信息，请参阅[关于多维数据集](../../reporting/using/about-cubes.md)。
+然后，可以创建多维数据集并配置其度量：这些指标将用于创建将在报告中显示的指标。 有关创建和配置多维数据集的更多信息，请参阅 [关于多维数据集](../../reporting/using/about-cubes.md).
 
 在此示例中，多维数据集基于由之前创建的工作流馈送的列表中的数据。
 
@@ -77,7 +77,7 @@ ht-degree: 6%
 
 ![](assets/reporting_usecase_2_02.png)
 
-使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡可以控制报告的呈现。
+的 **[!UICONTROL Preview]** 选项卡，可控制报告的呈现。
 
 ## 第3步 — 创建报表并在表中配置数据布局 {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
 

@@ -29,7 +29,7 @@ ht-degree: 97%
 
 Adobe Campaign Classic 特别使用一系列技术来提供价值。这一技术组合要求您定期升级 Campaign Classic 实例，以确保使用最新版本提供出众的安全性、稳定性和性能。
 
-如果您使用的是Adobe Managed Services，则可以从Campaign [!DNL Gold Standard]升级中受益。 如需详细信息，请参阅[本文](../../rn/using/gs-overview.md)。
+如果您使用的是Adobe Managed Services，则可以从Campaign中受益 [!DNL Gold Standard] 升级。 如需详细信息，请参阅[本文](../../rn/using/gs-overview.md)。
 
 [阅读此部分](../../production/using/build-upgrade.md)以了解如何更新环境，并阅读有关此特定主题的[常见问题](../../platform/using/faq-build-upgrade.md)。
 

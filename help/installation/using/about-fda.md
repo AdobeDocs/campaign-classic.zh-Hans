@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign提供了&#x200B;**联合数据访问**(FDA)选项，以便处理存储在一个或多个外部数据库中的信息：您无需更改Adobe Campaign数据的结构即可访问外部数据。
+Adobe Campaign提供 **联合数据访问** (FDA)选项，用于处理存储在一个或多个外部数据库中的信息：您无需更改Adobe Campaign数据的结构即可访问外部数据。
 
 ## 先决条件 {#operating-principle}
 
@@ -25,7 +25,7 @@ FDA选项允许您在第三方数据库中扩展数据模型。 它将自动检�
 
 要使用此功能，下面列出了先决条件：
 
-* **配置**:除了Snowflake之外，您需要 **内部** 或混 **** 合托管模型来设置联合数据访问。[了解详情](../../installation/using/hosting-models.md)
-* **外部数据库版本**:您需要具有与Adobe Campaign FDA模块兼容的外部数据库。Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA)中详细列出了数据库系统和兼容版本。
-* **权限**:用户还必须在Adobe Campaign [和](../../installation/using/remote-database-access-rights.md) 外部数据库中拥有必要的权限。
+* **配置**:除了Snowflake，您需要 **内部部署** 或 **混合** 托管模型来设置联合数据访问。 [了解详情](../../installation/using/hosting-models.md)
+* **外部数据库版本**:您需要具有与Adobe Campaign FDA模块兼容的外部数据库。 Campaign中详细列出了数据库系统和兼容版本 [兼容性矩阵](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+* **权限**:用户还必须具有 [必要权限](../../installation/using/remote-database-access-rights.md) 在Adobe Campaign和外部数据库中。
 

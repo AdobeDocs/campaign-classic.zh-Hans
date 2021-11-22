@@ -87,7 +87,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 `Requested URL '/r/ id=h787bc0,281a4d8,281a4da&amp;p1=1' cannot be found`
 
-1. 访问&lt;redirection_server>/r/test URL ，并检查请求是否返回了内部版本号和localhost。
+1. 访问 &lt;redirection_server>/r/test URL并检查请求是否返回了内部版本号和localhost。
 
 1. 检查serverConf.xml文件中的spareServer配置，以获取跟踪服务器。 此配置应处于重定向模式。
 
@@ -104,13 +104,13 @@ $ grep -Rn 50x000000000FD7EC86
    </redirection>
    ```
 
-1. 手动检查&lt;deliveryID>.xml文件是否存在于……的计算机上/nl6/var/&lt;instance_name>/redir/url/&lt;YYYY>目录（YYYY表示交付年）。
+1. 手动检查 &lt;deliveryid>.xml文件存在于计算机中……/nl6/var/&lt;instance_name>/redir/url/&lt;yyyy> 目录（YYYY表示交付年份）。
 
-1. 手动检查是否可以在&lt;deliveryID>.xml文件中找到&lt;trackingUrlId>。
+1. 手动检查 &lt;trackingurlid> 可在 &lt;deliveryid>.xml文件。
 
 1. 手动检查相关deliveryID投放中是否存在broadlogID。
 
-1. 检查……中的&lt;deliveryID>.xml文件权限/nl6/var/&lt;instance_name>/redir/url/year目录。
+1. 检查 &lt;deliveryid>.xml文件在中的权限……/nl6/var/&lt;instance_name>/redir/url/year目录。
 
    他们应至少拥有644个权限，以便Apache可以读取跟踪url以重定向请求的链接。
 

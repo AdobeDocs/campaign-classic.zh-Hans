@@ -19,7 +19,7 @@ ht-degree: 1%
 
 在本例中，我们希望恢复过去7天内未联系的收件人。 此查询涉及所有投放。
 
-此示例还显示如何配置与选择收藏集元素（或橙色节点）相关的过滤器。 集合元素在&#x200B;**[!UICONTROL Field to select]**&#x200B;窗口中可用。
+此示例还显示如何配置与选择收藏集元素（或橙色节点）相关的过滤器。 收藏集元素在 **[!UICONTROL Field to select]** 窗口。
 
 * 需要选择哪个表？
 
@@ -35,8 +35,8 @@ ht-degree: 1%
 
 应用以下步骤：
 
-1. 打开通用查询编辑器并选择收件人表&#x200B;**[!UICONTROL (nms:recipient)]**。
-1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Primary key]**、**[!UICONTROL First name]**、**[!UICONTROL Last name]**&#x200B;和&#x200B;**[!UICONTROL Email]**。
+1. 打开通用查询编辑器并选择收件人表 **[!UICONTROL (nms:recipient)]**.
+1. 在 **[!UICONTROL Data to extract]** 窗口，选择 **[!UICONTROL Primary key]**, **[!UICONTROL First name]**, **[!UICONTROL Last name]** 和 **[!UICONTROL Email]**.
 
    ![](assets/query_editor_nveau_33.png)
 
@@ -44,20 +44,20 @@ ht-degree: 1%
 
    ![](assets/query_editor_nveau_34.png)
 
-1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Filtering conditions]**。
-1. 在&#x200B;**[!UICONTROL Target element]**&#x200B;窗口中，用于提取过去7天内没有跟踪日志的用户档案的筛选条件包含两个步骤。 您需要选择的元素是一个多对多链接。
+1. 在 **[!UICONTROL Data filtering]** 窗口，选择 **[!UICONTROL Filtering conditions]**.
+1. 在 **[!UICONTROL Target element]** 窗口中，用于提取过去7天没有跟踪日志的用户档案的筛选条件涉及两个步骤。 您需要选择的元素是一个多对多链接。
 
-   * 首先，为第一个&#x200B;**[!UICONTROL Value]**&#x200B;列选择&#x200B;**[!UICONTROL Recipient delivery logs (broadlog)]**&#x200B;收集元素（橙色节点）。
+   * 首先，选择 **[!UICONTROL Recipient delivery logs (broadlog)]** 第一个的收集元素（橙色节点） **[!UICONTROL Value]** 列。
 
       ![](assets/query_editor_nveau_67.png)
 
-      选择&#x200B;**[!UICONTROL do not exist as]**&#x200B;运算符。 无需在此行中选择第二个值。
+      选择 **[!UICONTROL do not exist as]** 运算符。 无需在此行中选择第二个值。
 
-   * 第二个筛选条件的内容取决于第一个筛选条件。 在此，**[!UICONTROL Event date]**&#x200B;字段直接提供在&#x200B;**[!UICONTROL Recipient delivery logs]**&#x200B;表中，因为有指向此表的链接。
+   * 第二个筛选条件的内容取决于第一个筛选条件。 这里， **[!UICONTROL Event date]** 字段 **[!UICONTROL Recipient delivery logs]** 表，因为有指向此表的链接。
 
       ![](assets/query_editor_nveau_36.png)
 
-      使用&#x200B;**[!UICONTROL greater than or equal to]**&#x200B;运算符选择&#x200B;**[!UICONTROL Event date]**。 选择&#x200B;**[!UICONTROL DaysAgo (7)]**&#x200B;值。 要实现此目的，请单击&#x200B;**[!UICONTROL Value]**&#x200B;字段中的&#x200B;**[!UICONTROL Edit expression]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Process on dates]**&#x200B;和&#x200B;**[!UICONTROL Current date minus n days]**，将&quot;7&quot;作为值。
+      选择 **[!UICONTROL Event date]** 和 **[!UICONTROL greater than or equal to]** 运算符。 选择 **[!UICONTROL DaysAgo (7)]** 值。 为此，请单击 **[!UICONTROL Edit expression]** 在 **[!UICONTROL Value]** 字段。 在 **[!UICONTROL Formula type]** 窗口，选择 **[!UICONTROL Process on dates]** 和 **[!UICONTROL Current date minus n days]**，将“7”作为值。
 
       ![](assets/query_editor_nveau_37.png)
 
@@ -65,13 +65,13 @@ ht-degree: 1%
 
       ![](assets/query_editor_nveau_38.png)
 
-1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口中，将姓氏切换为大写。 单击&#x200B;**[!UICONTROL Transformation]**&#x200B;列中的&#x200B;**[!UICONTROL Last name]**&#x200B;行，然后在下拉菜单中选择&#x200B;**[!UICONTROL Switch to upper case]**。
+1. 在 **[!UICONTROL Data formatting]** 窗口，将姓氏切换为大写。 单击 **[!UICONTROL Last name]** 行 **[!UICONTROL Transformation]** 列和选择 **[!UICONTROL Switch to upper case]** 中。
 
    ![](assets/query_editor_nveau_39.png)
 
-1. 使用&#x200B;**[!UICONTROL Add a calculated field]**&#x200B;函数将列插入数据预览窗口。
+1. 使用 **[!UICONTROL Add a calculated field]** 函数将列插入数据预览窗口。
 
-   在此示例中，在单列中添加一个包含收件人名字和姓氏的计算字段。 单击&#x200B;**[!UICONTROL Add a calculated field]**&#x200B;函数。 在&#x200B;**[!UICONTROL Export calculated field definition]**&#x200B;窗口中，输入标签和内部名称，然后选择&#x200B;**[!UICONTROL JavaScript Expression]**&#x200B;类型。 然后输入以下表达式：
+   在此示例中，在单列中添加一个包含收件人名字和姓氏的计算字段。 单击 **[!UICONTROL Add a calculated field]** 函数。 在 **[!UICONTROL Export calculated field definition]** 窗口，输入标签和内部名称并选择 **[!UICONTROL JavaScript Expression]** 类型。 然后输入以下表达式：
 
    ```
    var rep = source._firstName+" - "+source._lastName
@@ -80,10 +80,10 @@ ht-degree: 1%
 
    ![](assets/query_editor_nveau_40.png)
 
-   单击 **[!UICONTROL OK]**。**[!UICONTROL Data formatting]**&#x200B;窗口已配置。
+   单击 **[!UICONTROL OK]**。的 **[!UICONTROL Data formatting]** 窗口。
 
    有关添加计算字段的更多信息，请参阅此章节。
 
-1. 结果显示在&#x200B;**[!UICONTROL Data preview]**&#x200B;窗口中。 过去7天内未联系的收件人按字母顺序显示。 名称以大写显示，并且已创建具有名字和姓氏的列。
+1. 结果如 **[!UICONTROL Data preview]** 窗口。 过去7天内未联系的收件人按字母顺序显示。 名称以大写显示，并且已创建具有名字和姓氏的列。
 
    ![](assets/query_editor_nveau_41.png)

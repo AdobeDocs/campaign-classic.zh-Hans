@@ -31,7 +31,7 @@ Web服务允许您从第三方系统创建许多应用程序：
 
 在Adobe Campaign应用程序服务器上实施的Web服务的定义可从数据模式中获取。
 
-数据模式的语法中描述了Web服务，该服务可从&#x200B;**`<methods>`**&#x200B;元素中获取。
+Web服务在数据模式的语法中进行描述，可从 **`<methods>`** 元素。
 
 ```
 <methods>
@@ -46,15 +46,15 @@ Web服务允许您从第三方系统创建许多应用程序：
 </methods>
 ```
 
-下面我们有一个名为&#x200B;**GenerateForm**&#x200B;的方法定义示例。
+下面我们有一个名为的方法定义示例 **GenerateForm**.
 
-服务的描述以`<method>`元素开头。 方法的参数列表可从`<parameters>`元素完成。 每个参数都由名称、类型（布尔、字符串、DOMElement等）指定 和描述。 具有“out”值的“inout”属性允许您指定“result”参数位于SOAP调用输出中。
+服务的描述以 `<method>` 元素。 方法的参数列表可从  `<parameters>` 元素。 每个参数都由名称、类型（布尔、字符串、DOMElement等）指定 和描述。 具有“out”值的“inout”属性允许您指定“result”参数位于SOAP调用输出中。
 
 存在“static”属性（具有值“true”）会将此方法描述为静态，这意味着必须声明方法的所有参数。
 
 “const”方法隐式地将XML文档作为其输入，其格式为其关联的模式。
 
-[Method](../../configuration/using/schema/method.md)下的“架构引用”一章中提供了Adobe Campaign架构的`<method>`元素的完整说明
+对 `<method>` Adobe Campaign架构的元素可在 [方法](../../configuration/using/schema/method.md)
 
 “xtk:queryDef”架构中的“const”类型“ExecuteQuery”方法示例：
 
@@ -94,7 +94,7 @@ WSDL描述首先定义用于形成消息的类型，这些类型在“端口”�
 
 #### 类型 {#types}
 
-类型定义基于XML架构。 在我们的示例中，“ExecuteQuery”方法采用“s:string”字符串和XML文档(`<s:complextype>`)作为参数。 方法的返回值(&quot;ExecuteQueryResponse&quot;)是XML文档(`<s:complextype>`)。
+类型定义基于XML架构。 在我们的示例中，“ExecuteQuery”方法采用“s:string”字符串和XML文档(`<s:complextype>`)作为参数。 方法的返回值(&quot;ExecuteQueryResponse&quot;)是XML文档(  `<s:complextype>`)。
 
 ```
 <types>
@@ -130,7 +130,7 @@ WSDL描述首先定义用于形成消息的类型，这些类型在“端口”�
 
 #### 消息 {#messages}
 
-`<message>`描述要发送的字段集的名称和类型。 方法使用两条消息作为参数(“ExecuteQueryIn”)和返回值(“ExecuteQueryOut”)传递。
+的 `<message>` 描述要发送的一组字段的名称和类型。 方法使用两条消息作为参数(“ExecuteQueryIn”)和返回值(“ExecuteQueryOut”)传递。
 
 ```
 <message name="ExecuteQueryIn">
@@ -144,7 +144,7 @@ WSDL描述首先定义用于形成消息的类型，这些类型在“端口”�
 
 #### 端口类型 {#porttype}
 
-`<porttype>`将关联由查询(&quot;input&quot;)触发的“ExecuteQuery”操作中的消息，该查询生成响应(&quot;output&quot;)。
+的 `<porttype>` 将消息与由生成响应（“输出”）的查询（“输入”）触发的“ExecuteQuery”操作关联。
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -157,7 +157,7 @@ WSDL描述首先定义用于形成消息的类型，这些类型在“端口”�
 
 #### 绑定 {#binding}
 
-`<binding>`部分指定SOAP通信协议(`<soap:binding>`)、HTTP中的数据传输（“transport”属性的值）以及“ExecuteQuery”操作的数据格式。 SOAP信封的正文直接包含消息段，而不进行转换。
+的 `<binding>` part指定SOAP通信协议( `<soap:binding>` )、HTTP中的数据传输（“传输”属性的值）以及“ExecuteQuery”操作的数据格式。 SOAP信封的正文直接包含消息段，而不进行转换。
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -176,7 +176,7 @@ WSDL描述首先定义用于形成消息的类型，这些类型在“端口”�
 
 #### 服务 {#service}
 
-`<service>`部分介绍“XtkQueryDef”服务及其URI(位于Adobe Campaign应用程序服务器的URL上)。
+的 `<service>` 部分介绍了“XtkQueryDef”服务及其URI在Adobe Campaign应用程序服务器URL上的情况。
 
 ```
 <service name="XtkQueryDef">
@@ -188,15 +188,15 @@ WSDL描述首先定义用于形成消息的类型，这些类型在“端口”�
 
 ## 连接 {#connectivity}
 
-Adobe Campaign通过引入[安全区域](../../installation/using/security-zones.md)和会话管理设置，提高了身份验证机制的安全性。
+Adobe Campaign通过引入 [安全区](../../installation/using/security-zones.md) 和会话管理设置。
 
 有两种身份验证模式可用：
 
-* **通过对logon方法()的调用**。此模式会生成会话令牌和安全令牌。 它是最安全的模式，因此也是最推荐的模式。
+* **通过对logon方法()的调用**. 此模式会生成会话令牌和安全令牌。 它是最安全的模式，因此也是最推荐的模式。
 
 或者
 
-* **通过创建会话令** 牌的Adobe Campaign登录+密码。会话令牌在设置的时间段后自动过期。 不建议使用此模式，因此需要减少某些区域设置的应用程序安全设置（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）。
+* **通过Adobe Campaign登录+密码** 会话令牌。 会话令牌在设置的时间段后自动过期。 不建议使用此模式，因此需要减少某些区域设置的应用程序安全设置（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）。
 
 ### 会话令牌特性 {#session-token-characteristics}
 
@@ -240,7 +240,7 @@ Adobe Campaign通过引入[安全区域](../../installation/using/security-zones
 
 ### 调用示例 {#call-examples}
 
-* 使用&#x200B;**HttpSoapConnection/SoapService**:
+* 使用 **HttpSoapConnection/SoapService**:
 
 ```
   
@@ -273,11 +273,11 @@ Adobe Campaign通过引入[安全区域](../../installation/using/security-zones
   logInfo(queryRes[0].toXMLString())
 ```
 
-* 使用&#x200B;**HttpServletRequest**:
+* 使用 **HttpServletRequest**:
 
 >[!NOTE]
 >
->以下&#x200B;**HttpServletRequest**&#x200B;调用中使用的URL必须允许列表在&#x200B;**serverConf.xml**&#x200B;文件的url权限部分中。 服务器本身的URL也是如此。
+>以下用户使用的URL **HttpServletRequest** 需要在的url权限部分允许列表 **serverConf.xml** 文件。 服务器本身的URL也是如此。
 
 登录执行():
 

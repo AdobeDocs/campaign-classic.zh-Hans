@@ -19,9 +19,9 @@ ht-degree: 6%
 
 >[!AVAILABILITY]
 >
->:warning: 此功能仅在Campaign Classicv7中可用。[了解详情](../../social/using/about-social-marketing.md)
+>:warning: 此功能仅在Campaign Classicv7中可用。 [了解详情](../../social/using/about-social-marketing.md)
 
-默认情况下，下面详述的工作流与&#x200B;**Social Marketing**&#x200B;模块一起安装。
+下面详述的工作流随 **社交营销** 模块。
 
 <table> 
  <tbody> 
@@ -33,12 +33,12 @@ ht-degree: 6%
   <tr> 
    <td> <span class="uicontrol">facebook统计数据的计算</span> <br /> </td> 
    <td> <span class="uicontrol">statsFacebook</span> <br /> </td> 
-   <td> 此工作流计算与Facebook粉丝的交互关联的统计信息。<br /> </td> 
+   <td> 此工作流会计算与Facebook粉丝的交互关联的统计信息。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">同步Facebook粉丝</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebookFans</span> <br /> </td> 
-   <td> 此工作流将Facebook粉丝每天早上7点导入Adobe Campaign。<br /> </td> 
+   <td> 此工作流会在每天早上7点将Facebook粉丝导入Adobe Campaign。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">同步Facebook页面</span> <br /> </td> 

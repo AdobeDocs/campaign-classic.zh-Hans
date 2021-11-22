@@ -23,8 +23,8 @@ ht-degree: 1%
 
 我们将配置我们的规则，以便每个收件人仅提供一次加拿大之旅，如果被拒绝，则不再提供。
 
-1. 在Adobe Campaign树中，转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**&#x200B;节点。
-1. 创建新的&#x200B;**[!UICONTROL Offer presentation]**&#x200B;类型规则。
+1. 在Adobe Campaign树中，转到 **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** 节点。
+1. 新建 **[!UICONTROL Offer presentation]** 类型规则。
 
    ![](assets/offer_typology_example_001.png)
 
@@ -32,19 +32,19 @@ ht-degree: 1%
 
    ![](assets/offer_typology_example_002.png)
 
-1. 选择&#x200B;**[!UICONTROL All channels]**&#x200B;选项以将规则扩展到所有渠道。
+1. 选择 **[!UICONTROL All channels]** 选项以将规则扩展到所有渠道。
 
    ![](assets/offer_typology_example_003.png)
 
-1. 单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;链接，然后选择&#x200B;**[!UICONTROL Category]**&#x200B;节点作为表达式。
+1. 单击 **[!UICONTROL Edit expression]** 链接，然后选择 **[!UICONTROL Category]** 节点。
 
    ![](assets/offer_typology_example_004.png)
 
-1. 选择与您的加拿大差旅选件匹配的类别，然后单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭查询窗口。
+1. 选择与您的加拿大差旅选件匹配的类别，然后单击 **[!UICONTROL OK]** 以关闭查询窗口。
 
    ![](assets/offer_typology_example_005.png)
 
-1. 在&#x200B;**[!UICONTROL Offer presentation]**&#x200B;选项卡中，选择与环境中配置的维度相同的维度。
+1. 在 **[!UICONTROL Offer presentation]** 选项卡，选择与环境中配置的维度相同的维度。
 
    ![](assets/offer_typology_example_006.png)
 
@@ -56,17 +56,17 @@ ht-degree: 1%
 
    ![](assets/offer_typology_example_008.png)
 
-1. 选择&#x200B;**[!UICONTROL Offers for the same category]**&#x200B;筛选器可从&#x200B;**Canada**&#x200B;类别中排除所有选件。
+1. 选择 **[!UICONTROL Offers for the same category]** 过滤器，从 **加拿大** 类别。
 
    ![](assets/offer_typology_example_020.png)
 
-1. 选择&#x200B;**[!UICONTROL Rejected propositions]**&#x200B;过滤器，以便仅考虑收件人拒绝的主张。
+1. 选择 **[!UICONTROL Rejected propositions]** 过滤以仅考虑收件人拒绝的建议。
 
    ![](assets/offer_typology_example_021.png)
 
 1. 选择将应用此规则的收件人。
 
-   在本例中，我们将选择&#x200B;**频繁出差者**&#x200B;收件人。
+   在本例中，我们将选择 **常客** 收件人。
 
    ![](assets/offer_typology_example_009.png)
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 
    ![](assets/offer_typology_example_013.png)
 
-1. 转到选件环境（在本例中为&#x200B;**Environment - Recipient**），并引用使用&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中的下拉列表刚刚创建的新分类。
+1. 转到选件环境(**环境 — 收件人** 在本例中)，并引用使用 **[!UICONTROL Eligibility]** 选项卡。
 
    ![](assets/offer_typology_example_014.png)
 
@@ -84,20 +84,20 @@ ht-degree: 1%
 
 我们想发送属于加拿大类别的第一个优惠建议。 如果任何收件人拒绝该选件一次，则不会再向他们提供该选件。
 
-1. 在&#x200B;**Frevent travers**&#x200B;收件人文件夹中，选择其中一个用户档案，以检查他们有资格使用的选件：单击&#x200B;**[!UICONTROL Propositions]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
+1. 在 **常客** 收件人文件夹中，选择一个配置文件以检查其符合条件的选件：单击 **[!UICONTROL Propositions]** 选项卡，然后 **[!UICONTROL Preview]** 选项卡。
 
-   在我们的示例中，**Tim Ramsey**&#x200B;符合&#x200B;**Americas**&#x200B;类别中的选件条件。
+   在我们的示例中， **蒂姆·拉姆齐** 有资格获得属于 **美洲** 类别。
 
    ![](assets/offer_typology_example_015.png)
 
-1. 首先，创建一封电子邮件投放，该邮件投放的目标是提供优惠的&#x200B;**常客**&#x200B;收件人。
+1. 首先，创建以您的 **常客** 具有选件的收件人。
 1. 选择选件引擎调用参数。
 
-   在我们的示例中，选择了&#x200B;**Travel in America**&#x200B;类别，该类别包含&#x200B;**Canada**&#x200B;和&#x200B;**United States**&#x200B;子类别。
+   在本例中， **美国旅行** 类别，其中包含 **加拿大** 和 **美国** 子类别。
 
    ![](assets/offer_typology_example_016.png)
 
-1. 将选件插入消息正文并发送投放。 有关更多信息，请参阅[关于出站渠道](../../interaction/using/about-outbound-channels.md)。
+1. 将选件插入消息正文并发送投放。 有关更多信息，请参阅 [关于出站渠道](../../interaction/using/about-outbound-channels.md).
 
    收件人收到了他们有资格获得的选件。
 

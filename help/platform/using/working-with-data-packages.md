@@ -23,13 +23,13 @@ ht-degree: 2%
 
 数据包支持以 XML 格式文件的形式显示 Adobe Campaign 数据库的实体。数据包中包含的每个实体由其全部数据表示。
 
-**数据包**&#x200B;的原理是导出数据配置并将其集成到另一个Adobe Campaign系统中。 了解如何在此[部分](#data-package-best-practices)中维护一组一致的数据包。
+原则 **数据包** 是导出数据配置，并将其集成到另一个Adobe Campaign系统中。 了解如何在此中维护一组一致的数据包 [部分](#data-package-best-practices).
 
 ### 包类型 {#types-of-packages}
 
 可导出的包有三种类型：用户包、平台包和管理包。
 
-* **用户包**:它允许您选择要导出的实体列表。此类包管理依赖关系并验证错误。
+* **用户包**:它允许您选择要导出的实体列表。 此类包管理依赖关系并验证错误。
 * **平台包**:它包括所有添加的技术资源（非标准）：架构、JavaScript代码等
 
    ![](assets/ncs_datapackage_package_platform.png)
@@ -40,11 +40,11 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->**platform**&#x200B;和&#x200B;**admin**&#x200B;类型包含要导出的预定义实体列表。 每个实体都链接到过滤条件，这些条件允许您删除已创建资源包的现成资源。
+>的 **平台** 和 **管理员** 类型包含要导出的预定义实体列表。 每个实体都链接到过滤条件，这些条件允许您删除已创建资源包的现成资源。
 
 ## 数据结构 {#data-structure}
 
-数据包的描述是符合&#x200B;**xrk:navtree**&#x200B;数据架构语法的结构化XML文档。
+数据包的描述是符合 **xrk:navtree** 数据架构。
 
 数据包示例：
 
@@ -64,11 +64,11 @@ ht-degree: 2%
 </package>
 ```
 
-XML文档必须以&#x200B;**`<package>`**&#x200B;元素开头和结尾。 随后的任何&#x200B;**`<entities>`**&#x200B;元素按文档类型分发数据。
+XML文档必须以 **`<package>`** 元素。 任意 **`<entities>`** 之后按文档类型分发数据的元素。
 
-**`<entities>`**&#x200B;元素包含包的数据，其格式为在&#x200B;**schema**&#x200B;属性中输入的数据架构。
+安 **`<entities>`** 元素包含包的数据，格式为在 **模式** 属性。
 
-资源包中的数据不得包含基之间不兼容的内部密钥，例如自动生成的密钥（**autopk**&#x200B;选项）。
+资源包中的数据不得包含基之间不兼容的内部密钥，如自动生成的密钥(**奥托普** 选项)。
 
 在我们的示例中，“文件夹”和“公司”链接上的连接已被目标表上所谓的“高级别”键所替换：
 
@@ -79,7 +79,7 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开头和结尾。 随后
 </recipient>
 ```
 
-值为“none”的&#x200B;**`operation`**&#x200B;属性定义协调链接。
+的 **`operation`** 值为“none”的属性定义协调链接。
 
 可以从任何文本编辑器手动构建数据包。 只需确保XML文档的结构符合“xtk:navtree”数据架构即可。 Adobe Campaign控制台具有一个数据包导出和导入模块。
 
@@ -89,15 +89,15 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开头和结尾。 随后
 
 可以通过三种不同方式导出资源包：
 
-* **[!UICONTROL Package Export Wizard]**&#x200B;允许您在单个包中导出一组对象。 有关更多信息，请参见[导出包](#exporting-a-set-of-objects-in-a-package)中的一组对象
-* 通过右键单击&#x200B;**单个对象并选择&#x200B;**[!UICONTROL Actions > Export in a package]**，可直接在包中导出**。
-* **包定** 义允许您创建包结构，在该结构中添加稍后将在包中导出的对象。有关更多信息，请参阅[管理包定义](#managing-package-definitions)
+* 的 **[!UICONTROL Package Export Wizard]** 允许您在单个包中导出一组对象。 有关更多信息，请参阅 [导出包中的一组对象](#exporting-a-set-of-objects-in-a-package)
+* A **单个对象** 可以直接在包中导出，方法是右键单击该包并选择 **[!UICONTROL Actions > Export in a package]**.
+* **包定义** 允许您创建包结构，在其中添加稍后将在包中导出的对象。 有关更多信息，请参阅 [管理资源包定义](#managing-package-definitions)
 
 导出资源包后，您将能够将其和所有添加的实体导入另一个Campaign实例。
 
 ### 导出包中的一组对象 {#exporting-a-set-of-objects-in-a-package}
 
-可通过Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Export package...]**&#x200B;菜单访问包导出向导。
+包导出向导可通过 **[!UICONTROL Tools > Advanced > Export package...]** Adobe Campaign客户端控制台的菜单。
 
 ![](assets/ncs_datapackage_typepackage.png)
 
@@ -109,15 +109,15 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开头和结尾。 随后
 
    >[!CAUTION]
    >
-   >如果导出&#x200B;**[!UICONTROL Offer category]**、**[!UICONTROL Offer environment]**、**[!UICONTROL Program]**&#x200B;或&#x200B;**[!UICONTROL Plan]**&#x200B;类型文件夹，请勿选择&#x200B;**xtk:folder**，因为您可能会丢失一些数据。 选择与文件夹对应的实体：**nms:offerCategory**（选件类别）、**nms:offerEnv**（选件环境）、**nms:program**（程序）和&#x200B;**nms:plan**（计划）。
+   >如果导出 **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]**, **[!UICONTROL Program]** 或 **[!UICONTROL Plan]** 键入文件夹，请勿选择 **xtk:folder** 因为您可能会丢失一些数据。 选择与文件夹对应的实体： **nms:offerCategory** 对于选件类别， **nms:offerEnv** 对于选件环境， **nms:program** ，以及 **nms:plan** 计划。
 
-   列表管理允许您添加或删除要从配置中导出的实体。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择新实体。
+   列表管理允许您添加或删除要从配置中导出的实体。 单击 **[!UICONTROL Add]** 来选择新实体。
 
-   **[!UICONTROL Detail]**&#x200B;按钮编辑所选配置。
+   的 **[!UICONTROL Detail]** 按钮编辑所选配置。
 
    >[!NOTE]
    >
-   >依赖关系机制控制实体导出序列。 有关更多信息，请参阅[管理依赖项](#managing-dependencies)。
+   >依赖关系机制控制实体导出序列。 有关更多信息，请参阅 [管理依赖项](#managing-dependencies).
 
 1. 实体配置屏幕定义要提取的文档类型的过滤器查询。
 
@@ -127,9 +127,9 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开头和结尾。 随后
 
    >[!NOTE]
    >
-   >查询编辑器显示在[此部分](../../platform/using/about-queries-in-campaign.md)中。
+   >查询编辑器将在 [此部分](../../platform/using/about-queries-in-campaign.md).
 
-1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;并选择排序列以在提取期间对数据进行排序：
+1. 单击 **[!UICONTROL Next]** ，然后选择排序列以在提取期间对数据进行排序：
 
    ![](assets/ncs_datapackage_export5.png)
 
@@ -137,7 +137,7 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开头和结尾。 随后
 
    ![](assets/ncs_datapackage_export6.png)
 
-1. 利用资源包导出向导的最后一页，可开始导出。 数据将存储在&#x200B;**[!UICONTROL File]**&#x200B;字段中指示的文件中。
+1. 利用资源包导出向导的最后一页，可开始导出。 数据将存储在 **[!UICONTROL File]** 字段。
 
    ![](assets/ncs_datapackage_export7.png)
 
@@ -147,12 +147,12 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开头和结尾。 随后
 
 此机制由两个规则定义：
 
-* 链接到具有&#x200B;**own**&#x200B;或&#x200B;**owncopy**&#x200B;类型完整性的链接的对象将导出到与导出对象相同的包中。
-* 链接到具有&#x200B;**netural**&#x200B;或&#x200B;**define**&#x200B;类型完整性（定义的链接）的链接的对象必须单独导出。
+* 链接到链接的对象 **自己** 或 **owncopy** 类型完整性在与导出对象相同的包中导出。
+* 链接到链接的对象 **中性** 或 **定义** 类型完整性（定义的链接）必须单独导出。
 
 >[!NOTE]
 >
->[此部分](../../configuration/using/database-mapping.md#links--relation-between-tables)中定义了链接到架构元素的完整性类型。
+>链接到架构元素的完整性类型在 [此部分](../../configuration/using/database-mapping.md#links--relation-between-tables).
 
 #### 导出营销活动 {#exporting-a-campaign}
 
@@ -205,22 +205,22 @@ label="" name="" namespace="" vendor="">
 </package>   
 ```
 
-与包类型的从属关系在具有&#x200B;**和@pkgAdmin**&#x200B;属性的架构中定义。 这两个属性都会收到一个XTK表达式，该表达式定义与包的从属关系条件。
+与包类型的从属关系在具有 **@pkgAdmin和@pkgPlatform** 属性。 这两个属性都会收到一个XTK表达式，该表达式定义与包的从属关系条件。
 
 ```
 <element name="offerEnv" img="nms:offerEnv.png" 
 template="xtk:folder" pkgAdmin="@id != 0">
 ```
 
-最后，通过&#x200B;**@pkgStatus**&#x200B;属性，可定义这些元素或属性的导出规则。 根据属性的值，元素或属性将在导出的包中找到。 此属性的三个可能值是：
+最后， **@pkgStatus** 属性允许您为这些元素或属性定义导出规则。 根据属性的值，元素或属性将在导出的包中找到。 此属性的三个可能值是：
 
-* **从不**:不导出字段/链接
-* **始终**:此字段的强制导出
+* **从**:不导出字段/链接
+* **always**:此字段的强制导出
 * **preCreate**:授权创建链接的实体
 
 >[!NOTE]
 >
->**preCreate**&#x200B;值仅允许用于链接类型事件。 它授权您创建或指向尚未加载到导出包中的实体。
+>的 **preCreate** 值仅适用于链接类型事件。 它授权您创建或指向尚未加载到导出包中的实体。
 
 ## 管理资源包定义 {#managing-package-definitions}
 
@@ -235,9 +235,9 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ### 创建包定义 {#creating-a-package-definition}
 
-可以从&#x200B;**[!UICONTROL Administration > Configuration > Package management > Package definitions]**&#x200B;菜单访问包定义。
+包定义可从 **[!UICONTROL Administration > Configuration > Package management > Package definitions]** 菜单。
 
-要创建包定义，请单击&#x200B;**[!UICONTROL New]**&#x200B;按钮，然后填写包定义常规信息。
+要创建包定义，请单击 **[!UICONTROL New]** 按钮，然后填写包定义的常规信息。
 
 ![](assets/packagedefinition_create.png)
 
@@ -251,32 +251,32 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ### 将实体添加到包定义 {#adding-entities-to-a-package-definition}
 
-在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以选择要与包一起导出的实体。 [此部分](#exporting-a-set-of-objects-in-a-package)部分介绍了选择实体时的最佳实践。
+在 **[!UICONTROL Content]** ，单击 **[!UICONTROL Add]** 按钮选择要与包一起导出的实体。 选择实体时的最佳实践，请参见 [此部分](#exporting-a-set-of-objects-in-a-package) 中。
 
 ![](assets/packagedefinition_addentities.png)
 
 可以直接从实体在实例中的位置将实体添加到包定义中。 为此请执行以下操作步骤：
 
-1. 右键单击所需的实体，然后选择&#x200B;**[!UICONTROL Actions > Export in a package]**。
+1. 右键单击所需的实体，然后选择 **[!UICONTROL Actions > Export in a package]**.
 
    ![](assets/packagedefinition_singleentity.png)
 
-1. 选择&#x200B;**[!UICONTROL Add to a package definition]**，然后选择要向其添加实体的包定义。
+1. 选择 **[!UICONTROL Add to a package definition]**，然后选择要将实体添加到的包定义。
 
    ![](assets/packagedefinition_packageselection.png)
 
-1. 实体将添加到包定义中，随包一起导出（请参阅[此部分](#exporting-packages-from-a-package-definition)）。
+1. 实体将添加到包定义中，并随包一起导出(请参阅 [此部分](#exporting-packages-from-a-package-definition))。
 
    ![](assets/packagedefinition_entityadded.png)
 
 ### 配置包定义生成 {#configuring-package-definitions-generation}
 
-可以从包定义&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中配置包生成。 为此，请单击&#x200B;**[!UICONTROL Generation parameters]**&#x200B;链接。
+可以从包定义中配置包生成 **[!UICONTROL Content]** 选项卡。 为此，请单击 **[!UICONTROL Generation parameters]** 链接。
 
 ![](assets/packagedefinition_generationparameters.png)
 
 * **[!UICONTROL Include the definition]**:包括包定义中当前使用的定义。
-* **[!UICONTROL Include an installation script]**:允许您添加要在包导入时执行的javascript脚本。选择后，将在包定义屏幕中添加&#x200B;**[!UICONTROL Script]**&#x200B;选项卡。
+* **[!UICONTROL Include an installation script]**:允许您添加要在包导入时执行的javascript脚本。 选择后， **[!UICONTROL Script]** 选项卡。
 * **[!UICONTROL Include default values]**:将所有实体属性的值添加到包中。
 
    为避免冗长的导出，默认情况下未选择此选项。 这意味着具有默认值(“empty string”、“0”和“false”，如果架构中未另有定义，则不会将实体属性添加到包中，因此不会导出。
@@ -287,35 +287,35 @@ template="xtk:folder" pkgAdmin="@id != 0">
    >
    >如果导入资源包的实例包含与资源包的实体相同（例如，具有相同的外部ID），则不会更新其属性。 如果前个实例的属性具有默认值（因为它们未包含在包中），则可能会发生这种情况。
    >
-   >在这种情况下，选择&#x200B;**[!UICONTROL Include default values]**&#x200B;选项将阻止版本合并，因为前实例的所有属性都将与包一起导出。
+   >在这种情况下，选择 **[!UICONTROL Include default values]** 选项将阻止版本合并，因为以前实例的所有属性都将随包一起导出。
 
 ### 从包定义导出包 {#exporting-packages-from-a-package-definition}
 
 要从包定义导出包，请执行以下步骤：
 
-1. 选择要导出的包定义，然后单击&#x200B;**[!UICONTROL Actions]**&#x200B;按钮并选择&#x200B;**[!UICONTROL Export the package]**。
+1. 选择要导出的包定义，然后单击 **[!UICONTROL Actions]** 按钮，选择 **[!UICONTROL Export the package]**.
 1. 默认情况下，将选择与导出的包对应的XML文件。 它根据包定义命名空间和名称进行命名。
-1. 定义包名称和位置后，单击&#x200B;**[!UICONTROL Start]**&#x200B;按钮以启动导出。
+1. 定义包名称和位置后，单击 **[!UICONTROL Start]** 按钮来启动导出。
 
    ![](assets/packagedefinition_packageexport.png)
 
 ## 导入资源包 {#importing-packages}
 
-可通过Adobe Campaign客户端控制台的主菜单&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;访问包导入向导。
+可通过主菜单访问资源包导入向导 **[!UICONTROL Tools > Advanced > Import package]** Adobe Campaign客户端控制台的URL。
 
-您可以从以前执行的导出中导入包，例如从其他Adobe Campaign实例或[内置包](../../installation/using/installing-campaign-standard-packages.md)，具体取决于您的许可证条款。
+您可以从以前执行的导出中导入包，例如从其他Adobe Campaign实例或 [内置包](../../installation/using/installing-campaign-standard-packages.md)，具体取决于您的许可条款。
 
 ![](assets/ncs_datapackage_import.png)
 
 ### 从文件安装包 {#installing-a-package-from-a-file}
 
-要导入现有数据包，请选择XML文件，然后单击&#x200B;**[!UICONTROL Open]**。
+要导入现有数据包，请选择XML文件，然后单击 **[!UICONTROL Open]**.
 
 ![](assets/ncs_datapackage_import_1.png)
 
 然后，要导入的包的内容将显示在编辑器的中间部分。
 
-单击&#x200B;**[!UICONTROL Next]**&#x200B;和&#x200B;**[!UICONTROL Start]**&#x200B;以启动导入。
+单击 **[!UICONTROL Next]** 和 **[!UICONTROL Start]** 启动导入。
 
 ![](assets/ncs_datapackage_import_2.png)
 
@@ -325,7 +325,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 请参阅您的许可协议以检查可以安装的包。
 
-有关内置软件包的更多信息，请参阅[此页](../../installation/using/installing-campaign-standard-packages.md)。
+有关内置软件包的更多信息，请参阅 [本页](../../installation/using/installing-campaign-standard-packages.md).
 
 ## 数据包最佳实践 {#data-package-best-practices}
 
@@ -343,7 +343,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 >[!NOTE]
 >
->有关设置自动导出资源包的工作流的更多信息，请参阅[此页](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html)。
+>有关设置工作流以自动导出资源包的更多信息，请参阅 [本页](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html).
 
 ### 推荐 {#data-package-recommendations}
 

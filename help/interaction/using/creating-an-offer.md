@@ -21,7 +21,7 @@ ht-degree: 2%
 
 要创建选件，请应用以下步骤：
 
-1. 转到&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Offers]**&#x200B;链接。
+1. 转到 **[!UICONTROL Campaigns]** ，然后单击 **[!UICONTROL Offers]** 链接。
 
    ![](assets/offer_create_001.png)
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
    ![](assets/offer_create_002.png)
 
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建选件。
+1. 单击 **[!UICONTROL Save]** 以创建选件。
 
    ![](assets/offer_create_003.png)
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 ## 配置优惠资格 {#configuring-offer-eligibility}
 
-在&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中，定义选件有效的期限，并可显示该期限、要应用于目标的过滤器以及选件权重。
+在 **[!UICONTROL Eligibility]** 选项卡，定义选件的有效期限以及可显示的期限、要应用于目标的过滤器和选件权重。
 
 ### 定义优惠的资格期限 {#defining-the-eligibility-period-of-an-offer}
 
@@ -57,11 +57,11 @@ ht-degree: 2%
 
 您可以将过滤器应用到选件目标。
 
-要实现此目的，请单击&#x200B;**[!UICONTROL Edit query]**&#x200B;链接，然后选择要应用的过滤器。 （请参见[此部分](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)）。
+为此，请单击 **[!UICONTROL Edit query]** 链接，然后选择要应用的过滤器。 (请参阅 [此部分](../../platform/using/steps-to-create-a-query.md#step-4---filter-data))。
 
 ![](assets/offer_eligibility_create_003.png)
 
-如果已创建预定义过滤器，则可以从用户过滤器列表中选择它们。 有关更多信息，请参阅[创建预定义过滤器](../../interaction/using/creating-predefined-filters.md)。
+如果已创建预定义过滤器，则可以从用户过滤器列表中选择它们。 有关更多信息，请参阅 [创建预定义过滤器](../../interaction/using/creating-predefined-filters.md).
 
 ![](assets/offer_eligibility_create_004.png)
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->可以根据选件所属类别的参数暂时修改分配的权重。 有关更多信息，请参阅[创建选件类别](../../interaction/using/creating-offer-categories.md)。
+>可以根据选件所属类别的参数暂时修改分配的权重。 有关更多信息，请参阅 [创建选件类别](../../interaction/using/creating-offer-categories.md).
 
 要在选件中创建权重，请应用以下步骤：
 
@@ -103,7 +103,7 @@ ht-degree: 2%
 
    ![](assets/offer_weight_create_004.png)
 
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以节省重量。
+1. 单击 **[!UICONTROL OK]** 以节省重量。
 
    ![](assets/offer_weight_create_005.png)
 
@@ -115,22 +115,22 @@ ht-degree: 2%
 
 配置完成后，资格规则的摘要将显示在选件仪表板中。
 
-要查看，请单击&#x200B;**[!UICONTROL Schedule and eligibility rules]**&#x200B;链接。
+要查看该动态消息，请单击 **[!UICONTROL Schedule and eligibility rules]** 链接。
 
 ![](assets/offer_eligibility_create_005.png)
 
 ## 创建选件内容 {#creating-the-offer-content}
 
-1. 单击&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Content]**&#x200B;选项卡。
+1. 单击 **[!UICONTROL Edit]** ，然后单击 **[!UICONTROL Content]** 选项卡。
 
    ![](assets/offer_content_create_001.png)
 
 1. 填写选件内容的各个字段。
 
-   * **[!UICONTROL Title]** :指定要在选件中显示的标题。警告：这不是指选件的标签，该标签在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义。
-   * **[!UICONTROL Destination URL]** :指定选件的URL。要正确处理，必须以“http://”或“https://”开头。
+   * **[!UICONTROL Title]** :指定要在选件中显示的标题。 警告：这不是指在 **[!UICONTROL General]** 选项卡。
+   * **[!UICONTROL Destination URL]** :指定选件的URL。 要正确处理，必须以“http://”或“https://”开头。
    * **[!UICONTROL Image URL]** :指定选件图像的URL或访问路径。
-   * **[!UICONTROL HTML content]** /  **[!UICONTROL Text content]** :在所需的选项卡中输入选件的正文。要生成跟踪，**[!UICONTROL HTML content]**&#x200B;必须由HTML元素组成，这些元素可以包含在`<div>`类型元素中。 例如，HTML页面中`<table>`元素的结果将如下所示：
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** :在所需的选项卡中输入选件的正文。 要生成跟踪，请 **[!UICONTROL HTML content]** 必须由HTML元素组成，这些元素可以包含在 `<div>` 类型元素。 例如， `<table>` HTML页面中的元素将如下所示：
 
    ```
       <div> 
@@ -147,11 +147,11 @@ ht-degree: 2%
       </div>
    ```
 
-   [配置接受建议时的状态](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted)一节中介绍了定义接受URL的内容。
+   定义接受URL的详情请见 [在建议被接受时配置状态](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted) 中。
 
    ![](assets/offer_content_create_002.png)
 
-   要查找在选件空间配置期间定义的必填字段，请单击&#x200B;**[!UICONTROL Content definitions]**&#x200B;链接以显示列表。 有关更多信息，请参阅[创建选件空间](../../interaction/using/creating-offer-spaces.md)。
+   要查找在选件空间配置期间定义的必填字段，请单击 **[!UICONTROL Content definitions]** 链接以显示列表。 有关更多信息，请参阅 [创建优惠空间](../../interaction/using/creating-offer-spaces.md).
 
    ![](assets/offer_content_create_003.png)
 
@@ -161,7 +161,7 @@ ht-degree: 2%
 
 配置选件内容后，您便可以立即预览该选件，该选件将显示给其收件人。 操作步骤：
 
-1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
+1. 单击 **[!UICONTROL Preview]** 选项卡。
 
    ![](assets/offer_preview_create_001.png)
 
@@ -181,8 +181,8 @@ ht-degree: 2%
 >
 >这些假设是通过响应管理器执行的。 请核实您的许可协议。
 
-对选件建议执行的假设将在其&#x200B;**[!UICONTROL Measure]**&#x200B;选项卡中引用。
+在其中引用了对优惠建议进行的假设 **[!UICONTROL Measure]** 选项卡。
 
-有关创建假设的详细信息，请参见[此页](../../response/using/about-response-manager.md)。
+有关创建假设验证的详细信息，请参阅 [本页](../../response/using/about-response-manager.md).
 
 ![](assets/offer_hypothesis_001.png)

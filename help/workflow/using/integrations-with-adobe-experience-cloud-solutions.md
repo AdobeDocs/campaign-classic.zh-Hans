@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-默认情况下，下面详述的工作流与&#x200B;**与Adobe Experience Cloud**&#x200B;模块集成。 有关此模块的更多信息，请参阅此[部分](../../integrations/using/configuring-ims.md#installing-the-package)。
+下面详述的工作流随 **与Adobe Experience Cloud集成** 模块。 有关此模块的更多信息，请参阅此 [部分](../../integrations/using/configuring-ims.md#installing-the-package).
 
 <table> 
  <tbody> 
@@ -34,7 +34,7 @@ ht-degree: 8%
   <tr> 
    <td> <span class="uicontrol">将受众导出到Adobe Experience Cloud</span> <br /> </td> 
    <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
-   <td> 此工作流会将受众导出为共享的受众/区段。 这些受众可用于您使用的不同Adobe Experience Cloud解决方案。<br /> </td> 
+   <td> 此工作流会将受众导出为共享的受众/区段。 这些受众可在您使用的不同Adobe Experience Cloud解决方案中使用。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

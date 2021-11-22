@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## 范围的定义 {#definition-of-the-scope}
 
-打开&#x200B;**[!UICONTROL Scope]**&#x200B;选项卡以选择您的设置。
+打开 **[!UICONTROL Scope]** 选项卡来访问Advertising Cloud的帮助。
 
 以下项目是必填项：
 
@@ -46,8 +46,8 @@ ht-degree: 2%
 
 ## 添加报表轴 {#adding-reporting-axes}
 
-您可以通过&#x200B;**[!UICONTROL Calculations]**&#x200B;选项卡在目标或选件本身上添加报表轴来增强模拟分析。
+您可以通过在目标或选件本身上添加报告轴，通过 **[!UICONTROL Calculations]** 选项卡。
 
-为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择相应的字段。 轴将用于计算模拟，并显示在分析报告中。 有关更多信息，请参阅[模拟跟踪](../../interaction/using/simulation-tracking.md)。
+为此，请单击 **[!UICONTROL Add]** 按钮并选择相应的字段。 轴将用于计算模拟，并显示在分析报告中。 有关更多信息，请参阅 [模拟跟踪](../../interaction/using/simulation-tracking.md).
 
 ![](assets/offer_simulation_011.png)

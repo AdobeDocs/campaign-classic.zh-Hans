@@ -47,7 +47,7 @@ ht-degree: 16%
 
 当消息无法发送到用户档案时，远程服务器会自动发送错误消息，该消息被Adobe Campaign平台拾取并进行鉴别，以确定是否应隔离电子邮件地址或电话号码。
 
-[了解投放](understanding-delivery-failures.md) 失败是帮助您改进营销活动的关键步骤。
+[了解投放失败](understanding-delivery-failures.md) 是帮助您改进营销活动的关键步骤。
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 
@@ -55,4 +55,4 @@ ht-degree: 16%
 
 Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认情况下会将其地址已被隔离的收件人排除在外，不会将其设为目标。
 
-在[此部分](understanding-quarantine-management.md)中，您将找到有关如何识别和管理隔离地址的信息，并了解有关将地址添加到隔离的条件的更多信息。
+在 [此部分](understanding-quarantine-management.md)，您将找到有关如何识别和管理隔离地址的信息，并了解有关将地址隔离的条件的更多信息。

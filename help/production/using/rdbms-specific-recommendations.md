@@ -149,10 +149,10 @@ REINDEX TABLE nmsmirrorpageinfo;
 >[!NOTE]
 >
 >* Adobe建议从较小的表开始：这样，如果流程在大型表（故障风险最高）上失败，则至少部分维护已完成。
->* Adobe建议您添加特定于数据模型的表，这些表可能会进行重大更新。 如果您的每日数据复制流量较大，则&#x200B;**NmsRecipient**&#x200B;可能会出现这种情况。
+>* Adobe建议您添加特定于数据模型的表，这些表可能会进行重大更新。 这种情况可能适用于 **NmsRecipient** 如果您的每日数据复制流量较大，则为。
 >* VAFU和REINDEX语句将锁定表，在执行维护时会暂停某些进程。
->* 对于非常大的表（通常高于5 Gb），真空FULL语句可能会非常低效，并且需要很长时间。 Adobe不建议将其用于&#x200B;**YyyNmsBroadLogXxx**&#x200B;表。
->* 此维护操作可通过Adobe Campaign工作流使用&#x200B;**[!UICONTROL SQL]**&#x200B;活动来实施。 如需详细信息，请参阅[此部分](../../workflow/using/architecture.md)。确保将维护安排在活动时间较短的时间内，该时间不会与备份窗口发生冲突。
+>* 对于非常大的表（通常高于5 Gb），真空FULL语句可能会非常低效，并且需要很长时间。 Adobe不建议将它用于 **YyyNmsBroadLogXxx** 表。
+>* 此维护操作可通过Adobe Campaign工作流(使用 **[!UICONTROL SQL]** 活动。 如需详细信息，请参阅[此部分](../../workflow/using/architecture.md)。确保将维护安排在活动时间较短的时间内，该时间不会与备份窗口发生冲突。
 
 >
 
@@ -162,9 +162,9 @@ REINDEX TABLE nmsmirrorpageinfo;
 PostgreSQL不提供执行联机表重建的简单方法，因为VAFUM FULL语句锁定表，从而防止了常规生产。 这意味着，在未使用表时必须执行维护。 您可以：
 
 * 在Adobe Campaign平台停止时执行维护，
-* 停止可能写入正在重建的表的各种Adobe Campaign子服务（**nlserver停止wfserver instance_name**&#x200B;以停止工作流进程）。
+* 停止可能写入正在重建的表(**nlserver stop wfserver instance.name** 以停止工作流进程)。
 
-以下是使用特定函数生成必需DDL的表碎片整理示例。 以下SQL允许您创建两个新函数：**GenRebuildTablePart1**&#x200B;和&#x200B;**GenRebuildTablePart2**，可用于生成重新创建表所需的DDL。
+以下是使用特定函数生成必需DDL的表碎片整理示例。 以下SQL允许您创建两个新函数： **GenRebuildTablePart1** 和 **GenRebuildTablePart2**，用于生成重新创建表所需的DDL。
 
 * 第一个函数允许您创建工作表(此处为**_tmp**)，该表是原始表的副本。
 * 然后，第二个函数删除原始表并重命名工作表及其索引。
@@ -384,7 +384,7 @@ PostgreSQL不提供执行联机表重建的简单方法，因为VAFUM FULL语句
  $$ LANGUAGE plpgsql;
 ```
 
-以下示例可用于工作流中以重建所需的表，而不是使用&#x200B;**真空/重建**&#x200B;命令：
+以下示例可用于工作流中以重建所需的表，而不是使用 **真空/重建** 命令：
 
 ```
 function sqlGetMemo(strSql)
@@ -421,24 +421,24 @@ function sqlGetMemo(strSql)
 
 >[!NOTE]
 >
->对于Microsoft SQL Server，可以使用[此页](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)上详细的维护计划。
+>对于Microsoft SQL Server，您可以使用 [本页](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
 以下示例涉及Microsoft SQL Server 2005。 如果您使用的是其他版本，请与数据库管理员联系以了解有关维护过程的信息。
 
 1. 首先，使用具有管理员权限的登录名连接到Microsoft SQL Server Management Studio。
-1. 转到&#x200B;**[!UICONTROL Management > Maintenance Plans]**&#x200B;文件夹，右键单击该文件夹并选择&#x200B;**[!UICONTROL Maintenance Plan Wizard]**。
-1. 当第一页出现时，单击&#x200B;**[!UICONTROL Next]**。
-1. 选择要创建的维护计划类型（为每个任务单独计划或为整个计划单独计划），然后单击&#x200B;**[!UICONTROL Change...]**&#x200B;按钮。
-1. 在&#x200B;**[!UICONTROL Job schedule properties]**&#x200B;窗口中，选择所需的执行设置并单击&#x200B;**[!UICONTROL OK]**，然后单击&#x200B;**[!UICONTROL Next]**。
-1. 选择要执行的维护任务，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 转到 **[!UICONTROL Management > Maintenance Plans]** 文件夹，右键单击该文件夹并选择 **[!UICONTROL Maintenance Plan Wizard]**.
+1. 单击 **[!UICONTROL Next]** 第一页出现时。
+1. 选择要创建的维护计划类型（为每个任务单独计划或为整个计划单独计划），然后单击 **[!UICONTROL Change...]** 按钮。
+1. 在 **[!UICONTROL Job schedule properties]** 窗口，选择所需的执行设置并单击 **[!UICONTROL OK]**，然后单击 **[!UICONTROL Next]**.
+1. 选择要执行的维护任务，然后单击 **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
    >我们建议至少执行下面显示的维护任务。 您也可以选择统计信息更新任务，尽管该任务已经由数据库清理工作流执行。
 
-1. 在下拉列表中，选择要运行&#x200B;**[!UICONTROL Database Check Integrity]**&#x200B;任务的数据库。
-1. 选择数据库并单击&#x200B;**[!UICONTROL OK]**，然后单击&#x200B;**[!UICONTROL Next]**。
-1. 配置分配给数据库的最大大小，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 在下拉列表中，选择要运行的数据库 **[!UICONTROL Database Check Integrity]** 任务。
+1. 选择数据库并单击 **[!UICONTROL OK]**，然后单击 **[!UICONTROL Next]**.
+1. 配置分配给数据库的最大大小，然后单击 **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
@@ -448,7 +448,7 @@ function sqlGetMemo(strSql)
 
    * 如果指数碎片化率在10%到40%之间，建议进行重组。
 
-      选择要重新组织的数据库和对象（表或视图），然后单击&#x200B;**[!UICONTROL Next]**。
+      选择要重新组织的数据库和对象（表或视图），然后单击 **[!UICONTROL Next]**.
 
       >[!NOTE]
       >
@@ -456,22 +456,22 @@ function sqlGetMemo(strSql)
 
    * 如果指数碎片率高于40%，则建议重建。
 
-      选择要应用于索引重建任务的选项，然后单击&#x200B;**[!UICONTROL Next]**。
+      选择要应用于索引重建任务的选项，然后单击 **[!UICONTROL Next]**.
 
       >[!NOTE]
       >
-      >重建索引过程在处理器使用方面更加受限，它锁定数据库资源。 如果希望索引在重建期间可用，请选择&#x200B;**[!UICONTROL Keep index online while reindexing]**&#x200B;选项。
+      >重建索引过程在处理器使用方面更加受限，它锁定数据库资源。 选择 **[!UICONTROL Keep index online while reindexing]** 选项。
 
-1. 选择要在活动报表中显示的选项，然后单击&#x200B;**[!UICONTROL Next]**。
-1. 检查为维护计划配置的任务列表，然后单击&#x200B;**[!UICONTROL Finish]**。
+1. 选择要在活动报表中显示的选项，然后单击 **[!UICONTROL Next]**.
+1. 检查为维护计划配置的任务列表，然后单击 **[!UICONTROL Finish]**.
 
    此时将显示维护计划及其各个步骤的状态摘要。
 
-1. 维护计划完成后，单击&#x200B;**[!UICONTROL Close]**。
-1. 在Microsoft SQL Server资源管理器中，双击&#x200B;**[!UICONTROL Management > Maintenance Plans]**&#x200B;文件夹。
+1. 完成维护计划后，单击 **[!UICONTROL Close]**.
+1. 在Microsoft SQL Server资源管理器中，双击 **[!UICONTROL Management > Maintenance Plans]** 文件夹。
 1. 选择Adobe Campaign维护计划：工作流中详细介绍了各个步骤。
 
-   请注意，已在&#x200B;**[!UICONTROL SQL Server Agent > Jobs]**&#x200B;文件夹中创建了对象。 此对象允许您启动维护计划。 在本例中，只有一个对象，因为所有维护任务都属于同一计划的一部分。
+   请注意，已在 **[!UICONTROL SQL Server Agent > Jobs]** 文件夹。 此对象允许您启动维护计划。 在本例中，只有一个对象，因为所有维护任务都属于同一计划的一部分。
 
    >[!IMPORTANT]
    >
@@ -483,7 +483,7 @@ function sqlGetMemo(strSql)
 >
 >此配置是可选的。
 
-**WdbcOptions_TempDbName**&#x200B;选项允许您为Microsoft SQL Server上的工作表配置单独的数据库。 这可以优化备份和复制。
+的 **WdbcOptions_TempDbName** 选项用于为Microsoft SQL Server上的工作表配置单独的数据库。 这可以优化备份和复制。
 
 如果希望在另一个数据库上创建工作表（例如，在执行工作流期间创建的表），则可以使用此选项。
 

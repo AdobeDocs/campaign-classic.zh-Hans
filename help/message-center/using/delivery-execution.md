@@ -25,7 +25,7 @@ ht-degree: 6%
 >
 >MTA优先处理事务型消息，而不是任何其他投放。
 
-所有投放都分组到&#x200B;**[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**&#x200B;文件夹中。
+所有投放都分组在 **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** 文件夹。
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
@@ -35,13 +35,13 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->对于托管或混合安装，如果您已升级到[Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)，则所有事务型消息也可以随Adobe Campaign Enhanced MTA一起发送，以改进投放能力、吞吐量和退件处理。 所有方面都与标准营销消息相同。
+>对于托管安装或混合安装(如果已升级到 [增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则所有事务型消息也可以随Adobe Campaign Enhanced MTA一起发送，以改进投放能力、吞吐量和跳出处理。 所有方面都与标准营销消息相同。
 
 ## 事务型消息监控 {#transactional-message-monitoring}
 
-要监视事务型消息，请检查[投放日志](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)。
+要监视事务型消息，请检查 [投放日志](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
-从执行实例发送的事务性投放通过每小时运行的技术工作流(**[!UICONTROL Message Center execution instance]**)同步回控制实例。
+从执行实例发送的事务性投放通过技术工作流(**[!UICONTROL Message Center execution instance]**)每小时运行一次。
 
 >[!NOTE]
 >
@@ -74,4 +74,4 @@ To summarize, the deliveries weekly accumulate the events based on the latest ev
 
 Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
 
-要监视执行实例的活动和运行，请参阅[事务性消息报告](../../message-center/using/about-transactional-messaging-reports.md)。
+要监控执行实例的活动和运行，请参阅 [事务性消息报表](../../message-center/using/about-transactional-messaging-reports.md).

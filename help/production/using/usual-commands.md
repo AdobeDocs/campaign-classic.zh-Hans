@@ -19,16 +19,16 @@ ht-degree: 3%
 
 本节列出了Adobe Campaign中的常用命令。
 
-命令&#x200B;**nlserver**&#x200B;是整个Adobe Campaign应用程序的输入命令。
+命令 **nlserver** 是整个Adobe Campaign应用程序的输入命令。
 
-此命令具有以下语法：**nlserver **`<command>`****`<arguments>`****
+此命令具有以下语法： **nlserver **`<command>`****`<arguments>`****
 
-参数&#x200B;**`<command>`**&#x200B;对应于模块。
+参数 **`<command>`** 对应于模块。
 
 >[!NOTE]
 >
->* 无论如何，您都可以添加&#x200B;**-noconsole**&#x200B;参数，以删除在模块启动后显示的注释。
->* 相反，您可以添加参数&#x200B;**-verbose**&#x200B;以显示更多信息。
+>* 无论如何，您都可以将 **-noconsole** 用于删除模块启动后显示的注释的参数。
+>* 相反，您可以添加参数 **-verbose** 以显示更多信息。
 
 >
 
@@ -37,9 +37,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->要列出所有模块，您需要使用&#x200B;**nlserver pdump**&#x200B;命令。
+>要列出所有模块，您需要使用 **nlserver pdump** 命令。
 
-可添加参数&#x200B;**-who**&#x200B;以列出正在进行的连接（数据库和应用程序）。
+您可以添加参数 **-who** 列出正在进行的连接（数据库和应用程序）。
 
 ```
 nlserver pdump -who
@@ -61,9 +61,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-另一个有用的命令是&#x200B;**nlserver monitor**。 它列出了监控XML文件(在Adobe Campaign客户端中或通过&#x200B;**monitor.jsp**&#x200B;网页获取)。
+另一个有用的命令是 **nlserver监视器**. 它列出监控XML文件(在Adobe Campaign客户端或通过 **monitor.jsp** 网页)。
 
-可以添加参数&#x200B;**-missing**&#x200B;以列出缺失的模块（模块中的错误、模块关闭等）
+您可以添加参数 **— 缺失** 列出缺失的模块（模块错误、模块关闭等）
 
 ```
 nlserver monitor -missing
@@ -89,7 +89,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** 对应于在配置文件中输入的实例名称，或者对于单实 **** 例模块，默认值。
+>**`<instance>`** 对应于在配置文件中输入的实例名称，或 **默认** 例如单实例模块。
 
 ## 关闭服务 {#shut-down-services}
 
@@ -105,7 +105,7 @@ nlserver stop <module>@<INSTANCE>
 
       >[!NOTE]
       >
-      >从20.1开始，我们建议改用以下命令（对于Linux）：**systemctl停止nlserver**
+      >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl停止nlserver**
 
    * 在Windows中：
 
@@ -129,17 +129,17 @@ nlserver stop <module>@<INSTANCE>
 
       >[!NOTE]
       >
-      >从20.1开始，我们建议改用以下命令（对于Linux）：**systemctl启动nlserver**
+      >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl启动nlserver**
 
    * 在Windows中：网络启动nlserver6
 
-* 否则，在Adobe Campaign帐户中：**nlserver watchdog -svc -noconsole**
+* 否则，在Adobe Campaign帐户中： **nlserver watkdog -svc -noconsole**
 
 ## 配置命令 {#the-config-command}
 
-使用&#x200B;**config**&#x200B;命令可以管理服务器配置，包括重新配置数据库连接。
+的 **配置** 命令允许您管理服务器配置，包括重新配置数据库连接。
 
-使用&#x200B;**-setdblogin**&#x200B;参数的&#x200B;**config**&#x200B;命令对&#x200B;**nlserver**&#x200B;可执行文件执行。
+使用 **配置** 命令 **nlserver** 可执行文件 **-setdblogin** 参数。
 
 ```
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -151,16 +151,16 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 输入密码。
 
-要更改&#x200B;**internal**&#x200B;密码，请执行以下操作：**nlserver config -internalpassword**
+要更改 **内部** 密码： **nlserver config -internalpassword**
 
 >[!IMPORTANT]
 >
->要使用&#x200B;**Internal**&#x200B;标识符登录，您需要事先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+>要使用 **内部** 标识符，您需要事先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 >[!NOTE]
 >
->* 通常，您可以使用&#x200B;**config**&#x200B;命令，而不是手动修改配置文件
->* 要获取参数列表，请使用&#x200B;**-?** 参数： **nlserver配置 — ?**
+>* 通常，您可以使用 **配置** 命令
+>* 要获取参数列表，请使用 **-?** 参数： **nlserver配置 — ?**
 >* 对于Oracle数据库，不能指定帐户。 语法如下所示：
 >
->  nlserver config -setdblogin&lt;a0/test6@dbserver:Oracle:
+>  nlserver配置 — setdblogin:Oracle:test6@dbserver

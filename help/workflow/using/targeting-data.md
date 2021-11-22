@@ -21,21 +21,21 @@ ht-degree: 3%
 
 ### 选择数据 {#selecting-data}
 
-**[!UICONTROL Query]**&#x200B;活动允许您选择基本数据以构建目标群体。 有关更多信息，请参阅[创建查询](query.md#creating-a-query)。
+A **[!UICONTROL Query]** 活动允许您选择基本数据以构建目标群体。 有关更多信息，请参阅 [创建查询](query.md#creating-a-query).
 
-您还可以使用以下活动来查询和优化来自数据库的数据：[增量查询](incremental-query.md), [读取列表](read-list.md)。
+您还可以使用以下活动来查询和优化来自数据库的数据： [增量查询](incremental-query.md), [读取列表](read-list.md).
 
-可以收集要在整个工作流生命周期中转发和处理的其他数据。 有关更多信息，请参阅[添加数据](query.md#adding-data)和[编辑其他数据](#editing-additional-data)。
+可以收集要在整个工作流生命周期中转发和处理的其他数据。 有关更多信息，请参阅 [添加数据](query.md#adding-data) 和 [编辑其他数据](#editing-additional-data).
 
 ### 编辑其他数据 {#editing-additional-data}
 
 添加附加数据后，您可以对其进行编辑或使用它来优化查询活动中定义的目标。
 
-通过&#x200B;**[!UICONTROL Edit additional data...]**&#x200B;链接，可以查看添加的数据并对其进行修改或添加。
+的 **[!UICONTROL Edit additional data...]** 利用链接，可查看添加的数据并对其进行修改或添加到其中。
 
 ![](assets/wf_add_data_edit_link.png)
 
-要向之前定义的输出列添加数据，请在可用字段列表中选择该数据。 要创建新的输出列，请单击&#x200B;**[!UICONTROL Add]**&#x200B;图标，然后选择字段，然后单击&#x200B;**[!UICONTROL Edit expression]**。
+要向之前定义的输出列添加数据，请在可用字段列表中选择该数据。 要创建新的输出列，请单击 **[!UICONTROL Add]** 图标，然后选择字段并单击 **[!UICONTROL Edit expression]**.
 
 ![](assets/query_add_an_output_column.png)
 
@@ -43,41 +43,41 @@ ht-degree: 3%
 
 ![](assets/query_add_an_output_column_formula.png)
 
-**[!UICONTROL Add a sub-item]**&#x200B;选项允许您将计算数据附加到集合。 这允许您从集合中选择附加数据，或定义集合元素的聚合计算。
+的 **[!UICONTROL Add a sub-item]** 选项允许您将计算数据附加到集合。 这允许您从集合中选择附加数据，或定义集合元素的聚合计算。
 
 ![](assets/query_add_columns_subscription_sub-element.png)
 
 子元素将显示在它们映射到的集合的子树中。
 
-收藏集显示在&#x200B;**[!UICONTROL Collections]**&#x200B;子选项卡中。 您可以通过单击所选集合的&#x200B;**[!UICONTROL Detail]**&#x200B;图标来筛选收集的元素。 过滤器向导允许您选择收集的数据并指定要应用于集合中数据的过滤条件。
+收藏集显示在 **[!UICONTROL Collections]** 子选项卡。 您可以通过单击 **[!UICONTROL Detail]** 图标。 过滤器向导允许您选择收集的数据并指定要应用于集合中数据的过滤条件。
 
 ![](assets/query_add_columns_collection.png)
 
 ### 使用附加数据优化目标 {#refining-the-target-using-additional-data}
 
-通过收集的附加数据，可以优化数据库中的数据过滤。 为此，请单击&#x200B;**[!UICONTROL Refine the target using additional data...]**&#x200B;链接：这样，您就可以对添加的数据进行过滤。
+通过收集的附加数据，可以优化数据库中的数据过滤。 为此，请单击 **[!UICONTROL Refine the target using additional data...]** 链接：这样，您就可以对添加的数据进行过滤。
 
 ![](assets/wf_add_data_use_additional_data.png)
 
 ### 均质化数据 {#homogenizing-data}
 
-在&#x200B;**[!UICONTROL Union]**&#x200B;或&#x200B;**[!UICONTROL Intersection]**&#x200B;类型活动中，您可以选择仅保留共享的附加数据以保持数据一致。 在这种情况下，此活动的临时输出工作表将仅包含所有集客集中找到的附加数据。
+在 **[!UICONTROL Union]** 或 **[!UICONTROL Intersection]** 类型活动时，您可以选择仅保留共享的附加数据以保持数据一致。 在这种情况下，此活动的临时输出工作表将仅包含所有集客集中找到的附加数据。
 
 ![](assets/option-common_additionnal_col_only.png)
 
 ### 与其他数据协调 {#reconciliation-with-additional-data}
 
-在数据协调阶段（**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等） 活动)，则可以从其他列中选择要用于数据协调的列。 为此，请针对所选列配置协调并指定主集。 然后，选择窗口下列中的列，如以下示例所示：
+在数据协调阶段(**[!UICONTROL Union]**, **[!UICONTROL Intersection]**&#x200B;等。 活动)，则可以从其他列中选择要用于数据协调的列。 为此，请针对所选列配置协调并指定主集。 然后，选择窗口下列中的列，如以下示例所示：
 
 ![](assets/select-column-and-join.png)
 
 ### 创建子集 {#creating-subsets}
 
-**[!UICONTROL Split]**&#x200B;活动允许您根据通过提取查询定义的条件创建子集。 对于每个子集，在编辑群体的筛选条件时，您将访问标准查询活动，该活动允许您定义目标分段条件。
+的 **[!UICONTROL Split]** 活动允许您根据通过提取查询定义的标准创建子集。 对于每个子集，在编辑群体的筛选条件时，您将访问标准查询活动，该活动允许您定义目标分段条件。
 
-您可以将目标分割成多个子集，只使用附加数据作为筛选条件，或者除了目标数据之外，还使用附加数据。 如果您已购买&#x200B;**Federated Data Access**&#x200B;选项，则还可以使用外部数据。
+您可以将目标分割成多个子集，只使用附加数据作为筛选条件，或者除了目标数据之外，还使用附加数据。 如果您购买了 **联合数据访问** 选项。
 
-有关更多信息，请参阅[使用Split活动创建子集](#creating-subsets-using-the-split-activity) 。
+有关更多信息，请参阅 [使用拆分活动创建子集](#creating-subsets-using-the-split-activity).
 
 ## 对数据分段 {#segmenting-data}
 
@@ -127,53 +127,53 @@ ht-degree: 3%
 
 此外，可以仅保留一些列选项，或仅保留集客群体共享的列。
 
-[Intersect](intersection.md)部分中详细描述了交集活动。
+有关交集活动的详情，请参阅 [交集](intersection.md) 中。
 
 ### 排除群体（排除） {#excluding-a-population--exclusion-}
 
 利用排除活动，可从其他目标群体中排除目标的元素。 此活动的输出定向维度将为主集的维度。
 
-必要时，可以处理集客表。 事实上，要从其他维度中排除某个目标，必须将此目标返回到与主目标相同的定向维度。 要执行此操作，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并指定维度更改条件。
+必要时，可以处理集客表。 事实上，要从其他维度中排除某个目标，必须将此目标返回到与主目标相同的定向维度。 为此，请单击 **[!UICONTROL Add]** 按钮并指定维度更改条件。
 
-通过标识符、更改轴或连接执行数据协调。 [使用列表中的数据中提供了一个示例：读取列表](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list)。
+通过标识符、更改轴或连接执行数据协调。 例如 [使用列表中的数据：读取列表](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
 ### 使用拆分活动创建子集 {#creating-subsets-using-the-split-activity}
 
-**[!UICONTROL Split]**&#x200B;活动是标准活动，通过该活动，您可以通过一个或多个筛选维度创建所需数量的集，以及为每个子集生成一个输出过渡或唯一过渡。
+的 **[!UICONTROL Split]** 活动是一种标准活动，允许您通过一个或多个筛选维度创建所需数量的集，以及为每个子集生成一个输出过渡或一个唯一过渡。
 
 由集客过渡传送的附加数据可用于筛选条件。
 
 要对其进行配置，您首先需要选择以下标准：
 
-1. 在您的工作流中，拖放&#x200B;**[!UICONTROL Split]**&#x200B;活动。
-1. 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，选择所需的选项：**[!UICONTROL Use data from the target and additional data]**、**[!UICONTROL Use the additional data only]**&#x200B;或&#x200B;**[!UICONTROL Use external data]**。
-1. 如果选择&#x200B;**[!UICONTROL Use data from the target and additional data]**&#x200B;选项，则定向维度允许您使用集客过渡传送的所有数据。
+1. 在您的工作流中，拖放 **[!UICONTROL Split]** 活动。
+1. 在 **[!UICONTROL General]** 选项卡，选择所需的选项： **[!UICONTROL Use data from the target and additional data]**, **[!UICONTROL Use the additional data only]** 或 **[!UICONTROL Use external data]**.
+1. 如果 **[!UICONTROL Use data from the target and additional data]** 选项时，利用定向维度可使用集客过渡传送的所有数据。
 
    ![](assets/split-general-tab-options.png)
 
    在创建子集时，会使用上述筛选参数。
 
-   要定义筛选条件，请选择&#x200B;**[!UICONTROL Add a filtering condition on the inbound population]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接。 然后，指定用于创建此子集的筛选条件。
+   要定义筛选条件，请选择 **[!UICONTROL Add a filtering condition on the inbound population]** 选项，然后单击 **[!UICONTROL Edit...]** 链接。 然后，指定用于创建此子集的筛选条件。
 
    ![](assets/split-subset-config-all-data.png)
 
-   [此部分](cross-channel-delivery-workflow.md)中介绍了如何在&#x200B;**[!UICONTROL Split]**&#x200B;活动中使用筛选条件将目标分段为不同群体的示例。
+   显示如何在 **[!UICONTROL Split]** 将目标细分为不同群体的活动，如 [此部分](cross-channel-delivery-workflow.md).
 
-   **[!UICONTROL Label]**&#x200B;字段允许您为新创建的子集指定一个名称，该名称将匹配叫客过渡。
+   的 **[!UICONTROL Label]** 字段中，您可以为新创建的子集指定一个名称，该名称将匹配叫客过渡。
 
    您还可以为子集分配段码以识别该子集，并使用该子集来定位其群体。
 
-   如有必要，您可以针对要创建的每个子集分别更改定位和筛选维度。 为此，请编辑子集的筛选条件并选中&#x200B;**[!UICONTROL Use a specific filtering dimension]**&#x200B;选项。
+   如有必要，您可以针对要创建的每个子集分别更改定位和筛选维度。 为此，请编辑子集的筛选条件并检查 **[!UICONTROL Use a specific filtering dimension]** 选项。
 
    ![](assets/split-subset-config-specific-filtering.png)
 
-1. 如果选择&#x200B;**[!UICONTROL Use the additional data only]**&#x200B;选项，则仅提供附加数据以进行子集筛选。
+1. 如果 **[!UICONTROL Use the additional data only]** 选项，则仅提供用于子集筛选的附加数据。
 
    ![](assets/split-subset-config-additional-data-only.png)
 
-1. 如果启用了&#x200B;**联合数据访问**&#x200B;选项，则&#x200B;**[!UICONTROL Use external data]**&#x200B;允许您处理已配置的外部数据库中的数据，或创建与数据库的新连接。
+1. 如果 **联合数据访问** 选项，则 **[!UICONTROL Use external data]** 允许您处理已配置的外部数据库中的数据，或创建与数据库的新连接。
 
    ![](assets/split-subset-config-add_external_data.png)
 
@@ -185,27 +185,27 @@ ht-degree: 3%
 
 然后，我们需要添加新子集：
 
-1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并定义筛选条件。
+1. 单击 **[!UICONTROL Add]** 按钮并定义筛选条件。
 
    ![](assets/wf_split_add_a_tab.png)
 
-1. 在活动的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义筛选维度（请参阅上文）。默认情况下，该维度适用于所有子集。
+1. 在 **[!UICONTROL General]** 选项卡（请参阅上文）。默认情况下，它适用于所有子集。
 
    ![](assets/wf_split_edit_filtering.png)
 
-1. 如有必要，您可以单独更改每个子集的过滤维度。 这样，您就可以为所有金牌卡持有者构建一个集，一个用于点击最新新闻稿的所有收件人，另一个用于18至25岁在过去30天内进行店内购买的人员，所有这些人都使用相同的拆分活动。 要执行此操作，请选择&#x200B;**[!UICONTROL Use a specific filtering dimension]**&#x200B;选项，然后选择数据过滤上下文。
+1. 如有必要，您可以单独更改每个子集的过滤维度。 这样，您就可以为所有金牌卡持有者构建一个集，一个用于点击最新新闻稿的所有收件人，另一个用于18至25岁在过去30天内进行店内购买的人员，所有这些人都使用相同的拆分活动。 为此，请选择 **[!UICONTROL Use a specific filtering dimension]** 选项，然后选择数据过滤上下文。
 
    ![](assets/wf_split_change_dimension.png)
 
    >[!NOTE]
    >
-   >如果已获得&#x200B;**Federated Data Access**&#x200B;选项，则可以根据外部基中的信息创建子集。 为此，请在&#x200B;**[!UICONTROL Targeting dimension]**&#x200B;字段中选择外部表的架构。 有关更多信息，请参阅[访问外部数据库(FDA)](accessing-an-external-database--fda-.md)。
+   >如果您已获得 **联合数据访问** 选项，您可以根据外部库中的信息创建子集。 为此，请在 **[!UICONTROL Targeting dimension]** 字段。 有关更多信息，请参阅 [访问外部数据库(FDA)](accessing-an-external-database--fda-.md).
 
 创建子集后，默认情况下，拆分活动会显示与有子集一样多的输出过渡：
 
 ![](assets/wf_split_multi_outputs.png)
 
-您可以将所有这些子集分组到一个输出过渡中。 在这种情况下，指向相应子集的链接将在段代码中可见，例如。 要执行此操作，请选择&#x200B;**[!UICONTROL Generate all subsets in the same table]**&#x200B;选项。
+您可以将所有这些子集分组到一个输出过渡中。 在这种情况下，指向相应子集的链接将在段代码中可见，例如。 为此，请选择 **[!UICONTROL Generate all subsets in the same table]** 选项。
 
 ![](assets/wf_split_select_option_single_output.png)
 
@@ -213,7 +213,7 @@ ht-degree: 3%
 
 ![](assets/wf_split_single_output.png)
 
-也可以使用&#x200B;**[!UICONTROL Cells]**&#x200B;活动创建子集。 有关更多信息，请参阅[Cells](cells.md)一节。
+还可以使用 **[!UICONTROL Cells]** 活动。 有关更多信息，请参阅 [单元格](cells.md) 中。
 
 ### 使用目标数据 {#using-targeted-data}
 
@@ -221,15 +221,15 @@ ht-degree: 3%
 
 * 您可以根据各种工作流阶段中的数据操作来更新数据库中的数据。
 
-   有关更多信息，请[更新数据](update-data.md)。
+   欲知更多， [更新数据](update-data.md).
 
 * 您还可以刷新现有列表的内容。
 
-   有关更多信息，请参阅[列表更新](list-update.md)。
+   有关更多信息，请参阅 [列表更新](list-update.md).
 
 * 您可以在工作流中直接准备或开始投放。
 
-   有关更多信息，请参阅[投放](delivery.md)、[投放控制](delivery-control.md)和[连续投放](continuous-delivery.md)。
+   有关更多信息，请参阅 [投放](delivery.md), [投放控制](delivery-control.md) 和 [连续投放](continuous-delivery.md).
 
 ## 数据管理 {#data-management}
 
@@ -241,22 +241,22 @@ ht-degree: 3%
 
 为实施这些操作，Adobe Campaign提供：
 
-* 数据收集活动：[文件传输](file-transfer.md)、[数据加载（文件）](data-loading--file-.md)、[数据加载(RDBMS)](data-loading--rdbms-.md)、[更新数据](update-data.md)。 收集数据的第一步是准备数据，以便在其他活动中对其进行处理。 需要监控多个参数，以确保工作流正确执行并提供预期结果。 例如，在导入数据时，此数据的主键(Pkey)对于每个记录必须是唯一的。
-* 使用数据管理选项丰富了定位活动：[Query](query.md)、[Union](union.md)、[Intersect](intersection.md)、[Split](split.md)。 这允许您在多个不同定向维度的数据之间配置并集或交集，但前提是可以进行数据协调。
-* 数据转换活动：[扩充](enrichment.md)、[更改维度](change-dimension.md)。
+* 数据收集活动： [文件传输](file-transfer.md), [数据加载（文件）](data-loading--file-.md), [数据加载(RDBMS)](data-loading--rdbms-.md), [更新数据](update-data.md). 收集数据的第一步是准备数据，以便在其他活动中对其进行处理。 需要监控多个参数，以确保工作流正确执行并提供预期结果。 例如，在导入数据时，此数据的主键(Pkey)对于每个记录必须是唯一的。
+* 使用数据管理选项丰富了定位活动： [查询](query.md), [并集](union.md), [交集](intersection.md), [拆分](split.md). 这允许您在多个不同定向维度的数据之间配置并集或交集，但前提是可以进行数据协调。
+* 数据转换活动： [扩充](enrichment.md), [更改维度](change-dimension.md).
 
 >[!CAUTION]
 >
 >当链接两个工作流时，删除源表元素并不意味着链接到该工作流的所有数据都会被删除。
 >  
->例如，通过工作流删除收件人不会导致删除该收件人的所有投放历史记录。 但是，直接在“收件人”文件夹中删除收件人确实会导致删除此收件人关联的所有数据。
+>例如，通过工作流删除收件人不会导致删除该收件人的所有投放历史记录。 但是，直接在“收件人”文件夹中删除收件人确实会删除与此收件人关联的所有数据。
 
 ### 扩充和修改数据 {#enriching-and-modifying-data}
 
-除了定向维度之外，您还可以通过筛选维度指定收集数据的性质。 请参阅[定位和筛选维度](building-a-workflow.md#targeting-and-filtering-dimensions)。
+除了定向维度之外，您还可以通过筛选维度指定收集数据的性质。 请参阅 [定位和筛选维度](building-a-workflow.md#targeting-and-filtering-dimensions).
 
-可以扩充、聚合和操作所识别和收集的数据以优化目标结构。 为此，除了[划分数据](#segmenting-data)部分中详细介绍的数据操作活动外，还应使用以下内容：
+可以扩充、聚合和操作所识别和收集的数据以优化目标结构。 为此，除了 [对数据分段](#segmenting-data) 部分，请使用以下代码：
 
-* 通过&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动，您可以随时向架构添加列，以及向特定元素添加信息。 活动存储库的[扩充](enrichment.md)部分中详细介绍了该内容。
-* 利用&#x200B;**[!UICONTROL Edit schema]**&#x200B;活动，可修改架构的结构。 活动存储库的[编辑架构](edit-schema.md)部分中详细介绍了该内容。
-* **[!UICONTROL Change dimension]**&#x200B;活动允许您在目标构建周期中更改目标维度。 有关[Change dimension](change-dimension.md)部分的详细信息。
+* 的 **[!UICONTROL Enrichment]** 活动允许您向架构中添加列，以及向特定元素添加信息。 详见 [扩充](enrichment.md) 活动存储库的部分。
+* 的 **[!UICONTROL Edit schema]** 活动允许您修改架构的结构。 详见 [编辑架构](edit-schema.md) 活动存储库的部分。
+* 的 **[!UICONTROL Change dimension]** 活动允许您在目标构建周期中更改目标维度。 详见 [更改维度](change-dimension.md) 中。

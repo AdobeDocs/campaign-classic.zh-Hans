@@ -17,13 +17,13 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-通过交互中的挂接，可以修改&#x200B;**标准引擎行为**。
+通过交互中的挂接，您可以修改 **标准引擎行为**.
 
-**[!UICONTROL Target loading]**&#x200B;和&#x200B;**[!UICONTROL Proposition post-processing]**&#x200B;挂钩在Adobe Campaign的选件空间中配置：
+的 **[!UICONTROL Target loading]** 和 **[!UICONTROL Proposition post-processing]** 挂接在Adobe Campaign的选件空间中进行配置：
 
 ![](assets/interaction_hooks_1.png)
 
-**[!UICONTROL Dynamic offer]**&#x200B;挂接在Adobe Campaign中配置了选件权重：
+的 **[!UICONTROL Dynamic offer]** 挂接在Adobe Campaign中配置了选件权重：
 
 ![](assets/interaction_hooks_2.png)
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->**xmlInteraction**&#x200B;参数包含现成查询加载的联系人的呼叫数据和用户档案。
+>的 **xmlInteraction** 参数包含现成查询加载的联系人的呼叫数据和用户档案。
 
 **示例:**
 
@@ -119,7 +119,7 @@ return aReturnedProps;
 
 此挂接允许您调用外部引擎以选择链接到选件的产品列表。 该选件在资格规则之后和分类规则应用程序之前的选件中进行配置。
 
-预先，集成商应扩展命题&#x200B;**CompestationRcp**&#x200B;架构，并附加产品信息。 要指定此数据的存储位置，空间的&#x200B;**[!UICONTROL Storage]**&#x200B;选项卡中会显示一个&#x200B;**[!UICONTROL Proposition being processed]**&#x200B;链接
+集成商应事先扩展建议 **建议Rcp** 模式，其中包含产品上的其他信息。 要指定此数据的存储位置，请 **[!UICONTROL Proposition being processed]** 链接在 **[!UICONTROL Storage]** 选项卡
 
 ![](assets/interaction_hooks_3.png)
 

@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 发送短信消息 {#sending-sms-messages}
 
-要批准消息并将其发送给所创建投放的收件人，请单击&#x200B;**[!UICONTROL Send]**。
+要批准消息并将其发送给所创建投放的收件人，请单击 **[!UICONTROL Send]**.
 
 有关验证和发送投放的详细过程，请参阅以下章节：
 
@@ -28,11 +28,11 @@ ht-degree: 3%
 
 ## 高级参数 {#advanced-parameters}
 
-通过&#x200B;**[!UICONTROL Properties]**&#x200B;按钮可访问高级投放参数。 特定于短信投放的参数位于&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡的&#x200B;**[!UICONTROL SMS parameters]**&#x200B;部分。
+的 **[!UICONTROL Properties]** 按钮，可访问高级提交参数。 特定于短信投放的参数位于 **[!UICONTROL SMS parameters]** 部分 **[!UICONTROL Delivery]** 选项卡。
 
 可以使用以下选项：
 
-* **发件人地址**:允许您使用限制为11个字符的字母数字字符字符串来个性化投放发件人的名称。字段不能只由数字组成。 您可以定义一个条件来显示不同的名称，例如，根据收件人的区号显示不同的名称：
+* **发件人地址**:允许您使用限制为11个字符的字母数字字符字符串来个性化投放发件人的名称。 字段不能只由数字组成。 您可以定义一个条件来显示不同的名称，例如，根据收件人的区号显示不同的名称：
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
@@ -43,20 +43,20 @@ ht-degree: 3%
    >查看您所在国家/地区有关编辑发件人姓名的法律。 您还应咨询操作员是否提供此功能。
 
 * **传输模式**:短信报文传输
-* **优先级**:消息的重要级别。**[!UICONTROL Normal]** 默认情况下，优先级处于选中状态。请咨询您的服务提供商，以了解与&#x200B;**[!UICONTROL High]**&#x200B;优先级一起发送的短信的成本。
-* **应用程序类型**:选择要分配给短信投放的应用程序。默认情况下，**[!UICONTROL Direct Marketing]**&#x200B;选项处于选中状态，它是最常用的选项。
+* **优先级**:消息的重要级别。 **[!UICONTROL Normal]** 默认情况下，优先级处于选中状态。 向您的服务提供商咨询随 **[!UICONTROL High]** 优先级。
+* **应用程序类型**:选择要分配给短信投放的应用程序。 的 **[!UICONTROL Direct Marketing]** 选项，它是最常用的选项。
 
 **特定于NetSize连接器的参数**
 
 ![](assets/s_user_mobile_sms_adv_netsize.png)
 
-* **对单条消息使用多条短信**:这允许您通过多条短信消息，发送长度超过160个字符的消息。
+* **对单个消息使用多条短信**:这允许您通过多条短信消息，发送长度超过160个字符的消息。
 
 **特定于SMPP连接器的参数**
 
 ![](assets/s_user_mobile_sms_adv_smpp.png)
 
-* **每条消息的最大短信数**:利用此选项，可设置用于发送消息的短信数量。如果数字设置为0，则可以使用短信来传递消息。 例如，如果短信的数量设置为1或2，并且消息超过此阈值，则不会发送该消息。
+* **每条消息的最大短信数**:利用此选项，可设置用于发送消息的短信数量。 如果数字设置为0，则可以使用短信来传递消息。 例如，如果短信的数量设置为1或2，并且消息超过此阈值，则不会发送该消息。
 
 ## 监控和跟踪短信 {#monitoring-and-tracking-sms-deliveries}
 
@@ -68,7 +68,7 @@ ht-degree: 3%
 
 ## 处理入站消息 {#processing-inbound-messages}
 
-**nlserver sms**&#x200B;模块定期查询SMS路由器。 这允许Adobe Campaign跟踪投放进度并处理状态报告和收件人退订请求。
+的 **nlserver sms** 模块定期查询短信路由器。 这允许Adobe Campaign跟踪投放进度并处理状态报告和收件人退订请求。
 
 * **状态报表**:查看投放日志以检查消息的状态。
 
@@ -80,9 +80,9 @@ ht-degree: 3%
    > * 短信帐户只能链接到单个外部帐户，以确保状态报表归因到正确的帐户
 
 
-* **退订**:希望停止接收短信投放的收件人可返回包含STOP字样的消息。如果您的提供商根据合同条款允许，您可以通过&#x200B;**Inbound SMS**&#x200B;工作流活动检索消息，然后创建查询以为相关收件人启用&#x200B;**No lent contact this recipient**&#x200B;选项。
+* **退订**:希望停止接收短信投放的收件人可返回包含STOP字样的消息。 如果您的提供商根据合同条款允许它，则可以通过 **入站短信** 工作流活动，然后创建查询以启用 **不再联系此收件人** 选项。
 
-   请参阅[工作流](../../workflow/using/architecture.md)指南。
+   请参阅 [工作流](../../workflow/using/architecture.md) 的双曲余切值。
 
 ## InSMS模式 {#insms-schema}
 
@@ -120,7 +120,7 @@ InSMS架构包含与传入短信相关的信息。 可通过desc属性描述这�
 
 >[!IMPORTANT]
 >
->以下详细过程仅对SMPP连接器有效，扩展的通用SMPP连接器除外。 有关更多信息，请参阅[创建SMPP外部帐户](sms-set-up.md#creating-an-smpp-external-account)一节。
+>以下详细过程仅对SMPP连接器有效，扩展的通用SMPP连接器除外。 有关更多信息，请参阅 [创建SMPP外部帐户](sms-set-up.md#creating-an-smpp-external-account) 中。
 >
 >它构成了美国运营商在美国开展营销活动的认证过程的一部分。 在收到包含关键词的订阅者短信消息后，必须立即将这些消息回复回订阅者。
 
@@ -142,9 +142,9 @@ InSMS架构包含与传入短信相关的信息。 可通过desc属性描述这�
    </autoreply>
    ```
 
-1. 对于&#x200B;**`<shortcode>`**&#x200B;标记的&#x200B;**name**&#x200B;属性，指定将在消息发送者名称的位置显示的短代码。
+1. 对于 **name** 属性 **`<shortcode>`** 标记，指定将在消息发送者名称的位置显示的短代码。
 
-   在每个&#x200B;**`<reply>`**&#x200B;标记中，输入&#x200B;**关键字**&#x200B;属性（包含关键字）和&#x200B;**文本**&#x200B;属性（包含要为此关键字发送的消息）。
+   在 **`<reply>`** 标记，输入 **关键词** 属性 **文本** 属性。
 
    >[!NOTE]
    >
@@ -159,11 +159,11 @@ InSMS架构包含与传入短信相关的信息。 可通过desc属性描述这�
    <reply keyword="QUIT" text="You will not receive SMS anymore" />
    ```
 
-1. 完成后，请使用&#x200B;**smsAutoReply.xml**&#x200B;的名称保存此文件。
+1. 完成后，请使用名称保存此文件 **smsAutoReply.xml**.
 
    请注意，在Linux中，文件名称区分大小写。
 
-1. 将此文件复制到Adobe Campaign中与Web服务器位于同一位置的&#x200B;**conf**&#x200B;目录中。
+1. 将此文件复制到 **conf** 目录中，与Web服务器位于同一位置。
 
 >[!IMPORTANT]
 >

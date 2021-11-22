@@ -56,15 +56,15 @@ ht-degree: 1%
 
 ## 包配置 {#packages-configuration}
 
-直接链接到&#x200B;**Interaction**&#x200B;的任何架构扩展（选件、建议、收件人等） 必须在执行实例上部署。
+直接链接到的任何架构扩展 **互动** （优惠、建议、收件人等） 必须在执行实例上部署。
 
 必须在所有实例（控制和执行）上安装交互包。 还提供了两个其他包：一个包将安装在控制实例上，另一个包将安装在每个执行实例上。
 
 >[!NOTE]
 >
->安装包时，**long**&#x200B;类型字段（如命题ID）将变为&#x200B;**int64**&#x200B;类型字段。 ****[此部分](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)中详细介绍了此类数据。
+>安装包时， **long** 类型字段 **nms：建议** 表（如命题标识）成为 **int64** 类型字段。 有关此类型的数据，请参阅 [此部分](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-必须在每个实例上配置数据保留持续时间（通过部署向导中的&#x200B;**[!UICONTROL Data purge]**&#x200B;窗口）。 在执行实例中，此时段必须对应于类型学规则（滑动周期）和要计算的资格规则所必需的历史深度。
+必须在每个实例上配置数据保留持续时间(通过 **[!UICONTROL Data purge]** )。 在执行实例中，此时段必须对应于类型学规则（滑动周期）和要计算的资格规则所必需的历史深度。
 
 在控制实例上：
 
@@ -76,8 +76,8 @@ ht-degree: 1%
    * 选择 **[!UICONTROL Execution instance]**。
    * 勾选 **[!UICONTROL Enabled]** 选项。
    * 完成执行实例的连接参数。
-   * 每个执行实例都必须链接到ID。 单击&#x200B;**[!UICONTROL Initialize connection]**&#x200B;按钮时，会分配此ID。
-   * 检查使用的应用程序类型：**[!UICONTROL Message Center]**、**[!UICONTROL Interaction]**&#x200B;或两者兼有。
+   * 每个执行实例都必须链接到ID。 此ID是在您单击 **[!UICONTROL Initialize connection]** 按钮。
+   * 检查使用的应用程序类型： **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**，或两者兼有。
    * 输入使用的FDA帐户。 必须在执行实例上创建运算符，并且必须在相关实例的数据库上具有以下读写权限：
 
       ```
@@ -99,7 +99,7 @@ ht-degree: 1%
       >
       >如果遇到错误，您可以查阅同步工作流和选件通知。 这些工作流可在应用程序的技术工作流中找到。
 
-如果出于优化原因，执行实例上只复制了部分营销数据库，则可以指定链接到环境的受限架构，以允许用户仅使用执行实例上可用的数据。 您可以使用在执行实例中不可用的数据创建选件。 要实现此目的，必须通过限制出站渠道（**[!UICONTROL Taken into account if]**&#x200B;字段）上的此规则来停用其他渠道上的规则。
+如果出于优化原因，执行实例上只复制了部分营销数据库，则可以指定链接到环境的受限架构，以允许用户仅使用执行实例上可用的数据。 您可以使用在执行实例中不可用的数据创建选件。 要实现此目的，您必须通过限制出站渠道(**[!UICONTROL Taken into account if]** 字段。
 
 ![](assets/ita_filtering.png)
 
@@ -166,7 +166,7 @@ ALTER TABLE nmspropositionrcp
 
 ### Oracle {#oracle}
 
-编辑&#x200B;**Number**&#x200B;类型的大小不会导致值或索引被重写。 因此，它是立即的。
+编辑 **数值** 类型不会导致值或索引被重写。 因此，它是立即的。
 
 要执行的查询如下：
 

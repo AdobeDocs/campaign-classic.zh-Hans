@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-通过&#x200B;**内容管理**&#x200B;活动，您可以创建和操作内容，并基于此内容生成文件。 然后，可以通过“交付”活动交付此内容。
+A **内容管理** 活动允许您创建和操作内容，并基于此内容生成文件。 然后，可以通过“交付”活动交付此内容。
 
 >[!CAUTION]
 >
@@ -31,29 +31,29 @@ ht-degree: 2%
 
    ![](assets/content_mgmt_edit.png)
 
-   有关在Adobe Campaign中配置和使用内容管理的更多信息，请参阅此[部分](../../delivery/using/about-content-management.md)。
+   有关在Adobe Campaign中配置和使用内容管理的更多信息，请参阅此 [部分](../../delivery/using/about-content-management.md).
 
 1. **内容**
 
    * **[!UICONTROL Specified in the transition]**
 
-      此选项允许您使用过渡中指定的内容，即激活内容管理的事件必须包含&#x200B;**[!UICONTROL contentId]**&#x200B;变量。 此变量可由以前的内容管理或任何脚本进行设置。
+      此选项允许您使用过渡中指定的内容，即激活内容管理的事件必须包含 **[!UICONTROL contentId]** 变量。 此变量可由以前的内容管理或任何脚本进行设置。
 
    * **[!UICONTROL Explicit]**
 
-      此选项允许您通过&#x200B;**[!UICONTROL Content]**&#x200B;字段选择已创建的内容。 仅当选择&#x200B;**[!UICONTROL Explicit]**&#x200B;选项时，此字段才可见。
+      此选项允许您通过 **[!UICONTROL Content]** 字段。 仅当 **[!UICONTROL Explicit]** 选项。
 
       ![](assets/content_mgmt_explicit.png)
 
    * **[!UICONTROL Calculated by a script]**
 
-      内容标识符由脚本计算。 利用&#x200B;**[!UICONTROL Script]**&#x200B;字段，可定义评估内容标识符（主键）的JavaScript模板。 仅当选择&#x200B;**[!UICONTROL Calculated by a script]**&#x200B;选项时，此字段才可见。
+      内容标识符由脚本计算。 的 **[!UICONTROL Script]** 字段中，您可以定义用于评估内容标识符（主键）的JavaScript模板。 仅当 **[!UICONTROL Calculated by a script]** 选项。
 
       ![](assets/content_mgmt_script.png)
 
    * **[!UICONTROL New, created from a publication template]**
 
-      从发布模板创建新内容。 此新内容将保存在&#x200B;**[!UICONTROL String]**&#x200B;字段中指定的文件中。 **[!UICONTROL Template]**&#x200B;字段指定用于创建内容的发布模板。
+      从发布模板创建新内容。 此新内容将保存在 **[!UICONTROL String]** 字段。 的 **[!UICONTROL Template]** 字段指定用于创建内容的发布模板。
 
       ![](assets/content_mgmt_new.png)
 
@@ -65,7 +65,7 @@ ht-degree: 2%
 
    * **[!UICONTROL Access to data from an XML feed]**
 
-      此选项允许您从通过XSL样式表下载的XML文档构建内容。 选择此选项后，**[!UICONTROL URL]**&#x200B;字段会指定下载URL的XML内容。 **[!UICONTROL XSL stylesheet]**&#x200B;允许您指定用于转换下载的XML文档的样式表。 此属性是可选的。
+      此选项允许您从通过XSL样式表下载的XML文档构建内容。 选择此选项后， **[!UICONTROL URL]** 字段指定下载URL的XML内容。 的 **[!UICONTROL XSL stylesheet]** 可指定用于转换下载的XML文档的样式表。 此属性是可选的。
 
       ![](assets/content_mgmt_xmlcontent.png)
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 
       此选项会保存创建或修改的内容。
 
-      叫客过渡只激活一次，并将&#x200B;**[!UICONTROL contentId]**&#x200B;变量中的内容保存为参数。
+      叫客过渡只激活一次，内容保存在 **[!UICONTROL contentId]** 变量。
 
    * **[!UICONTROL Generate]**
 
@@ -83,13 +83,13 @@ ht-degree: 2%
 
       ![](assets/content_mgmt_generate.png)
 
-      对于以&#x200B;**[!UICONTROL contentId]**&#x200B;变量中保存的内容的标识符作为参数和&#x200B;**[!UICONTROL filename]**&#x200B;变量中的文件名生成的每个文件，都会激活叫客过渡。
+      对于使用保存在 **[!UICONTROL contentId]** 变量作为其参数，且文件名位于 **[!UICONTROL filename]** 变量。
 
 ## 输入参数 {#input-parameters}
 
 * contentId
 
-启用&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;选项时要使用的内容的标识符。
+要使用的内容的标识符(如果 **[!UICONTROL Specified in the transition]** 选项。
 
 ## 输出参数 {#output-parameters}
 
@@ -99,8 +99,8 @@ ht-degree: 2%
 
 * 文件名
 
-   如果所选操作为&#x200B;**[!UICONTROL Generate]**，则生成文件的完整名称。
+   如果所选操作为，则生成文件的完整名称 **[!UICONTROL Generate]**.
 
 ## 示例 {#examples}
 
-此[部分](../../delivery/using/automating-via-workflows.md#examples)中提供了示例。
+示例如下 [部分](../../delivery/using/automating-via-workflows.md#examples).

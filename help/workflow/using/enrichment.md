@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-**[!UICONTROL Enrichment]**&#x200B;活动允许您向用户档案列表添加信息并链接到现有表（创建新连接）。 还可以定义数据库中包含用户档案的协调条件。
+的 **[!UICONTROL Enrichment]** 利用活动，可向用户档案列表添加信息以及指向现有表格的链接（创建新连接）。 还可以定义数据库中包含用户档案的协调条件。
 
 ![](assets/enrichment_design.png)
 
@@ -27,28 +27,28 @@ ht-degree: 2%
 
 ![](assets/enrichment_edit.png)
 
-**[!UICONTROL Data linked to the filtering dimension]**&#x200B;选项允许您访问：
+的 **[!UICONTROL Data linked to the filtering dimension]** 选项允许您访问：
 
 * 过滤维度的数据：对工作表数据的访问
 * 链接到过滤维度的数据：对链接到工作表的数据的访问
 
 ![](assets/wf_enrich_linkoptions.png)
 
-使用&#x200B;**[!UICONTROL A link]**&#x200B;选项可在数据库的任何表上创建连接。
+的 **[!UICONTROL A link]** 选项允许您在数据库的任何表上创建连接。
 
 ![](assets/wf_enrich_linkstype.png)
 
 链接类型有四种：
 
 * **[!UICONTROL Define a collection]**:用于定义在表之间具有1-N基数的链接。
-* **[!UICONTROL Define a link whose target is still available]**:用于定义表之间具有1-1基数的链接。连接条件必须由目标表中的单个记录定义。
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**:用于定义表之间基数为0-1的链接。连接条件必须由0或1（最大）定义 记录在目标表中。
+* **[!UICONTROL Define a link whose target is still available]**:用于定义表之间具有1-1基数的链接。 连接条件必须由目标表中的单个记录定义。
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**:用于定义表之间基数为0-1的链接。 连接条件必须由0或1（最大）定义 记录在目标表中。
 
-   此选项在&#x200B;**[!UICONTROL Simple Join]**&#x200B;选项卡中配置，可通过&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动的&#x200B;**[!UICONTROL Edit additional data]**&#x200B;链接访问该选项。
+   此选项在 **[!UICONTROL Simple Join]** 选项卡 **[!UICONTROL Edit additional data]** 链接 **[!UICONTROL Enrichment]** 活动。
 
-* **[!UICONTROL Define a link by searching for a reference among several options]**:此类链接定义对唯一记录的协调。Adobe Campaign通过在目标表中添加外键来存储对唯一记录的引用，来创建指向目标表的链接。
+* **[!UICONTROL Define a link by searching for a reference among several options]**:此类链接定义对唯一记录的协调。 Adobe Campaign通过在目标表中添加外键来存储对唯一记录的引用，来创建指向目标表的链接。
 
-   此选项在&#x200B;**[!UICONTROL Reconciliation and deduplication]**&#x200B;选项卡中配置，可通过&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动的&#x200B;**[!UICONTROL Edit additional data]**&#x200B;链接访问该选项。
+   此选项在 **[!UICONTROL Reconciliation and deduplication]** 选项卡 **[!UICONTROL Edit additional data]** 链接 **[!UICONTROL Enrichment]** 活动。
 
 以下章节还提供了详细说明扩充活动在其上下文中运行的用例：
 
@@ -58,13 +58,13 @@ ht-degree: 2%
 
 ## 添加信息 {#adding-information}
 
-使用&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动向工作表添加列：此活动可用作查询活动的补充。
+使用 **[!UICONTROL Enrichment]** 活动向工作表中添加列：此活动可用作查询活动的补充。
 
-有关附加列的配置详情，请参见[Adding data](query.md#adding-data)。
+其他列的配置详见 [添加数据](query.md#adding-data).
 
-利用&#x200B;**[!UICONTROL Primary set]**&#x200B;字段，可选择集客过渡：将扩充此活动工作台的数据。
+的 **[!UICONTROL Primary set]** 字段，可选择集客过渡：将扩充此活动工作台的数据。
 
-单击&#x200B;**[!UICONTROL Add data]**&#x200B;链接，然后选择要添加的数据类型。 提供的数据类型列表取决于您平台上安装的模块和选项。 在最小的配置中，您始终可以添加链接到过滤维度和链接的数据。
+单击 **[!UICONTROL Add data]** 链接，然后选择要添加的数据类型。 提供的数据类型列表取决于您平台上安装的模块和选项。 在最小的配置中，您始终可以添加链接到过滤维度和链接的数据。
 
 ![](assets/enrichment_edit.png)
 
@@ -92,7 +92,7 @@ ht-degree: 2%
 
 ## 管理其他数据 {#managing-additional-data}
 
-如果不想保留以前定义的附加数据，请取消选择&#x200B;**[!UICONTROL Keep all additional data from the main set]**&#x200B;选项。 在这种情况下，只有扩充活动中选择的附加列才会添加到传出工作表中。 不会保存添加到上游活动的其他信息。
+取消选择 **[!UICONTROL Keep all additional data from the main set]** 选项。 在这种情况下，只有扩充活动中选择的附加列才会添加到传出工作表中。 不会保存添加到上游活动的其他信息。
 
 ![](assets/enrichment_edit_without_additional.png)
 
@@ -121,11 +121,11 @@ ht-degree: 2%
    83TY2;SWITZERLAND;mike@gmail.com
    ```
 
-1. 编辑扩充活动，然后单击&#x200B;**添加数据……**&#x200B;链接，用于创建与国家/地区表的连接。
+1. 编辑扩充活动，然后单击 **添加数据……** 链接以创建与国家/地区表的连接。
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. 选择&#x200B;**[!UICONTROL Link definition]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮。 指定要创建的链接类型。 在本例中，我们希望将文件收件人的国家/地区与数据库专用表中可用国家/地区列表中的国家/地区进行协调。 选择 **[!UICONTROL Define a link by searching for a reference among several options]** 选项。在&#x200B;**[!UICONTROL Target schema]**&#x200B;字段中选择国家/地区表。
+1. 选择 **[!UICONTROL Link definition]** 选项，然后单击 **[!UICONTROL Next]** 按钮。 指定要创建的链接类型。 在本例中，我们希望将文件收件人的国家/地区与数据库专用表中可用国家/地区列表中的国家/地区进行协调。 选择 **[!UICONTROL Define a link by searching for a reference among several options]** 选项。在 **[!UICONTROL Target schema]** 字段。
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -139,9 +139,9 @@ ht-degree: 2%
 
 ## 数据协调 {#data-reconciliation}
 
-扩充活动可用于配置数据协调，包括在数据加载到数据库后进行协调。 在这种情况下，使用&#x200B;**[!UICONTROL Reconciliation]**&#x200B;选项卡可定义Adobe Campaign数据库中的数据与工作表中数据之间的链接。
+扩充活动可用于配置数据协调，包括在数据加载到数据库后进行协调。 在本例中， **[!UICONTROL Reconciliation]** 选项卡，用于定义Adobe Campaign数据库中的数据与工作表中数据之间的链接。
 
-选择&#x200B;**[!UICONTROL Identify the targeting document based on work data]**&#x200B;选项，指定要创建链接的架构并定义连接条件：为此，请在工作数据(**[!UICONTROL Source expression]**)和定向维度(**[!UICONTROL Destination expression]**)中选择要协调的字段。
+选择 **[!UICONTROL Identify the targeting document based on work data]** 选项，指定要创建链接的架构并定义连接条件：为此，请选择工作数据中要协调的字段(**[!UICONTROL Source expression]**)和定向维度(**[!UICONTROL Destination expression]**)。
 
 您可以使用一个或多个协调条件。
 
@@ -153,24 +153,24 @@ ht-degree: 2%
 
 利用扩充活动，可向投放收件人的选件添加选件或链接。
 
-有关扩充活动的更多信息，请参阅此[部分](enrichment.md)。
+有关扩充活动的更多信息，请参阅此 [部分](enrichment.md).
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
 ![](assets/int_enrichment_offer1.png)
 
-配置查询后（请参阅此[部分](query.md)）：
+配置查询后(请参阅 [部分](query.md)):
 
 1. 添加并打开扩充活动。
 1. 在 **[!UICONTROL Enrichment]** 选项卡中，选择 **[!UICONTROL Add data]**。
-1. 在要添加的数据类型中选择&#x200B;**[!UICONTROL An offer proposition]**。
+1. 选择 **[!UICONTROL An offer proposition]** 在要添加的数据类型中。
 
    ![](assets/int_enrichment_offer2.png)
 
 1. 为要添加的建议指定标识符和标签。
 1. 指定选件选择。 可以使用以下两个选项：
 
-   * **[!UICONTROL Search for the best offer in a category]**:选中此选项并指定选件引擎调用参数（选件空间、类别或主题、联系日期、要保留的选件数量）。引擎将根据这些参数自动计算要添加的选件。 我们建议填写&#x200B;**[!UICONTROL Category]**&#x200B;或&#x200B;**[!UICONTROL Theme]**&#x200B;字段，而不是同时填写两者。
+   * **[!UICONTROL Search for the best offer in a category]**:选中此选项并指定选件引擎调用参数（选件空间、类别或主题、联系日期、要保留的选件数量）。 引擎将根据这些参数自动计算要添加的选件。 我们建议您完成 **[!UICONTROL Category]** 或 **[!UICONTROL Theme]** 字段，而不是同时使用这两个字段。
 
       ![](assets/int_enrichment_offer3.png)
 
@@ -178,11 +178,11 @@ ht-degree: 2%
 
       ![](assets/int_enrichment_offer4.png)
 
-1. 然后，配置与您选择的渠道对应的投放活动。 请参阅[跨渠道投放](cross-channel-deliveries.md)。
+1. 然后，配置与您选择的渠道对应的投放活动。 请参阅 [跨渠道投放](cross-channel-deliveries.md).
 
    可用于预览的建议数取决于扩充活动中执行的配置，而不是直接在投放中执行的任何可能的配置。
 
-要指定优惠建议，您还可以选择引用指向优惠的链接。 有关更多信息，请参阅以下章节[引用指向选件的链接](#referencing-a-link-to-an-offer)。
+要指定优惠建议，您还可以选择引用指向优惠的链接。 有关更多信息，请参阅以下章节 [引用指向选件的链接](#referencing-a-link-to-an-offer).
 
 ## 引用指向选件的链接 {#referencing-a-link-to-an-offer}
 
@@ -190,8 +190,8 @@ ht-degree: 2%
 
 操作步骤：
 
-1. 在活动的&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Add data]**。
-1. 在选择要添加的数据类型的窗口中，选择&#x200B;**[!UICONTROL A link]**。
+1. 选择 **[!UICONTROL Add data]** 的 **[!UICONTROL Enrichment]** 选项卡。
+1. 在选择要添加的数据类型的窗口中，选择 **[!UICONTROL A link]**.
 1. 选择要建立的链接类型及其目标。 在这种情况下，目标是选件架构。
 
    ![](assets/int_enrichment_link1.png)
@@ -200,7 +200,7 @@ ht-degree: 2%
 
    ![](assets/int_enrichment_link2.png)
 
-1. 然后，配置与您选择的渠道对应的投放活动。 请参阅[跨渠道投放](cross-channel-deliveries.md)。
+1. 然后，配置与您选择的渠道对应的投放活动。 请参阅 [跨渠道投放](cross-channel-deliveries.md).
 
    >[!NOTE]
    >
@@ -208,21 +208,21 @@ ht-degree: 2%
 
 ## 存储优惠排名和权重 {#storing-offer-rankings-and-weights}
 
-默认情况下，当使用&#x200B;**扩充**&#x200B;活动来提供选件时，其排名和权重不会存储在建议表中。
+默认情况下，当 **扩充** 活动用于提供优惠，其排名和权重不会存储在建议表中。
 
-默认情况下，**[!UICONTROL Offer engine]**&#x200B;活动会存储此信息。
+的 **[!UICONTROL Offer engine]** 默认情况下，活动会存储此信息。
 
 但是，您可以按如下方式存储此信息：
 
 1. 在扩充活动中创建对选件引擎的调用，该活动放在查询之后和投放活动之前。
-1. 在活动的主窗口中，选择&#x200B;**[!UICONTROL Edit additional data...]**。
+1. 在活动的主窗口中，选择 **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
-1. 为排名添加&#x200B;**[!UICONTROL @rank]**&#x200B;列，为选件权重添加&#x200B;**[!UICONTROL @weight]**&#x200B;列。
+1. 添加 **[!UICONTROL @rank]** 排名和 **[!UICONTROL @weight]** 选件权重。
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
 1. 确认添加并保存工作流。
 
-投放会自动存储选件的排名和权重。 此信息显示在投放的&#x200B;**[!UICONTROL Offers]**&#x200B;选项卡中。
+投放会自动存储选件的排名和权重。 此信息显示在投放的 **[!UICONTROL Offers]** 选项卡。

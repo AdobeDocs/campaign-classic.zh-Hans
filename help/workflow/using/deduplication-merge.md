@@ -26,11 +26,11 @@ ht-degree: 5%
 
 ## 关于此用例 {#about-this-use-case}
 
-此用例介绍如何在&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动中使用&#x200B;**[!UICONTROL Merge]**&#x200B;功能。
+此用例介绍如何使用 **[!UICONTROL Merge]** 功能 **[!UICONTROL Deduplication]** 活动。
 
-有关此功能的更多信息，请参阅[此部分](deduplication.md#merging-fields-into-single-record)。
+有关此功能的更多信息，请参阅 [此部分](deduplication.md#merging-fields-into-single-record).
 
-**[!UICONTROL Deduplication]**&#x200B;活动用于从数据集中删除重复行。 在此用例中，下面显示的数据会根据“电子邮件”字段进行复制。
+的 **[!UICONTROL Deduplication]** 活动用于从数据集中删除重复行。 在此用例中，下面显示的数据会根据“电子邮件”字段进行复制。
 
 | 上次修改日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
 |-----|------------|-----------|-------|--------------|------|
@@ -38,24 +38,24 @@ ht-degree: 5%
 | 7/22/2020 | 鲍比 | 蒂斯纳 | bob@mycompany.com |  | 777-777-7777 |
 | 10/03/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
 
-利用重复数据删除活动的&#x200B;**[!UICONTROL Merge]**&#x200B;字符，您可以配置重复数据删除的一组规则，以定义要合并到单个生成数据记录中的字段组。 例如，使用一组重复的记录，您可以选择保留最早的电话号码或最近的名称。
+使用重复数据删除活动 **[!UICONTROL Merge]** 根据需要，您可以配置重复数据删除的一组规则，以定义要合并到单个生成数据记录中的一组字段。 例如，使用一组重复的记录，您可以选择保留最早的电话号码或最近的名称。
 
 ## 激活合并功能 {#activating-merge}
 
 
-要启用合并功能，您首先需要配置&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动。 为此，请执行以下步骤：
+要启用合并功能，您首先需要配置 **[!UICONTROL Deduplication]** 活动。 为此，请执行以下步骤：
 
-1. 打开活动，然后单击&#x200B;**[编辑配置]**&#x200B;链接。
+1. 打开活动，然后单击 **[编辑配置]** 链接。
 
-1. 选择要用于重复数据删除的协调字段，然后单击&#x200B;**[!UICONTROL Next]**。 在本例中，我们希望根据电子邮件字段删除重复项。
+1. 选择要用于重复数据删除的协调字段，然后单击 **[!UICONTROL Next]**. 在本例中，我们希望根据电子邮件字段删除重复项。
 
    ![](assets/uc_merge_edit.png)
 
-1. 单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接，然后激活&#x200B;**[!UICONTROL Merge records]**&#x200B;和&#x200B;**[!UICONTROL Use several record merging criteria]**&#x200B;选项。
+1. 单击 **[!UICONTROL Advanced parameters]** 链接，然后激活 **[!UICONTROL Merge records]** 和 **[!UICONTROL Use several record merging criteria]** 选项。
 
    ![](assets/uc_merge_advanced_parameters.png)
 
-1. 将&#x200B;**[!UICONTROL Merge]**&#x200B;选项卡添加到&#x200B;**[!UICONTROL Deduplication]**&#x200B;配置屏幕中。 执行重复数据删除时，我们将使用此选项卡指定要合并的数据。
+1. 的 **[!UICONTROL Merge]** 选项卡 **[!UICONTROL Deduplication]** 配置屏幕。 执行重复数据删除时，我们将使用此选项卡指定要合并的数据。
 
 ## 配置要合并的字段 {#configuring-rules}
 
@@ -68,7 +68,7 @@ ht-degree: 5%
 
 要配置这些规则，请执行以下步骤：
 
-1. 打开&#x200B;**[!UICONTROL Merge]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
+1. 打开 **[!UICONTROL Merge]** ，然后单击 **[!UICONTROL Add]** 按钮。
 
    ![](assets/uc_merge_add.png)
 
@@ -98,7 +98,7 @@ ht-degree: 5%
 
 ## 结果 {#results}
 
-配置这些规则后，将在&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动结束时收到以下数据。
+配置这些规则后，会在 **[!UICONTROL Deduplication]** 活动。
 
 | 修改日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
 |-----|------------|-----------|-------|--------------|------|

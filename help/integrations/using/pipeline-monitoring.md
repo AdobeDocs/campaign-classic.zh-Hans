@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-[!DNL pipelined]状态Web服务提供有关[!DNL pipelined]进程状态的信息。
+的 [!DNL pipelined] 状态web服务提供有关 [!DNL pipelined] 进程。
 
 它可以使用浏览器手动访问，也可以通过监控应用程序自动访问。
 
@@ -41,12 +41,12 @@ ht-degree: 1%
    * 下一偏移刷新：等待到下一批完成的时间。
    * processed-since-last-flush:上一批中处理的触发器数。
 * 路由
-   * 触发器：已检索触发器列表。 在[!DNL pipelined]选项中配置。
+   * 触发器：已检索触发器列表。 在 [!DNL pipelined] 选项。
 * 统计资料
    * average-pointer-flush-time（平均指针刷新时间毫秒）：一批触发器的平均处理时间。
    * average-trigger-processing-time-ms:分析触发器数据所花费的平均时间。
    * 字节读取：从队列中读取的字节数。
-   * 当前消息：当前从队列中提取并等待处理的待处理消息数。 **此指示器应接近零**。
+   * 当前消息：当前从队列中提取并等待处理的待处理消息数。 **此指示器应接近零**.
    * current-retries:处理失败并等待重试的消息的当前数量。
    * 峰值消息：进程自启动以来已处理的最大待处理消息数。
    * 指针刷新：自开始以来已处理的邮件批数。
@@ -59,8 +59,8 @@ ht-degree: 1%
 
 * average-trigger-processing-time-ms:分析触发器数据所花费的平均时间。
 * is-JS-processor:值“1”。
-* trigger-discared:因处理错误而在重试过多后丢弃的消息数。 **此指标应为零**。
-* 触发器失败：JS中的处理错误数。 **此指标应为零**。
+* trigger-discared:因处理错误而在重试过多后丢弃的消息数。 **此指标应为零**.
+* 触发器失败：JS中的处理错误数。 **此指标应为零**.
 * 触发器接收：从队列接收的消息数。
 
 * 设置：配置文件中会设置这些参数。

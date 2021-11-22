@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-默认情况下，投放模板以&#x200B;**[!UICONTROL Recipients]**&#x200B;为目标。 因此，其目标映射使用&#x200B;**nms:recipient**&#x200B;表的字段。 Adobe Campaign为您的投放提供了其他目标映射，可根据您的需求使用。
+默认情况下，投放模板定位 **[!UICONTROL Recipients]**. 因此，其目标映射使用 **nms:recipient** 表。 Adobe Campaign为您的投放提供了其他目标映射，可根据您的需求使用。
 
 ![](assets/delivery_select_mapping.png)
 
@@ -35,4 +35,4 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->您还可以创建新的目标映射。 此操作专家用户专用。 有关详细信息，请参阅[配置指南](../../configuration/using/target-mapping.md)。
+>您还可以创建新的目标映射。 此操作专家用户专用。 有关更多信息，请参阅 [配置指南](../../configuration/using/target-mapping.md).

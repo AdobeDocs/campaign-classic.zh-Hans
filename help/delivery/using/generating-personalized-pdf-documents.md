@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-## 关于可变PDF文档 {#about-variable-pdf-documents}
+## 关于变量PDF文档 {#about-variable-pdf-documents}
 
 Adobe Campaign允许您为来自LibreOffice或Microsoft Word文档的电子邮件附件生成变量PDF文档。
 
@@ -25,7 +25,7 @@ Adobe Campaign允许您为来自LibreOffice或Microsoft Word文档的电子邮�
 
 要个性化您的文档，可使用与电子邮件个性化相同的JavaScript功能。
 
-您需要激活&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;选项。 将文件附加到投放电子邮件后，即可访问此选项。 有关附加计算文件的更多信息，请参阅[附加文件](attaching-files.md)一节。
+您需要激活 **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** 选项。 将文件附加到投放电子邮件后，即可访问此选项。 有关附加计算文件的更多信息，请参阅 [附加文件](attaching-files.md) 中。
 
 发票题头个性化示例：
 
@@ -38,7 +38,7 @@ Adobe Campaign允许您为来自LibreOffice或Microsoft Word文档的电子邮�
 生成动态表的步骤如下：
 
 * 创建一个包含三行且所需列数的表，然后配置其布局（边框等）。
-* 将光标放在表上并单击&#x200B;**[!UICONTROL Table > Table properties]**&#x200B;菜单。 转到&#x200B;**[!UICONTROL Table]**&#x200B;选项卡，并输入以&#x200B;**NlJsTable**&#x200B;开头的名称。
+* 将光标放在表格上，然后单击 **[!UICONTROL Table > Table properties]** 菜单。 转到 **[!UICONTROL Table]** 选项卡，输入以开头的名称 **NlJs表**.
 * 在第一行的第一个单元格中，定义一个循环（例如，“for”），用于对要在表中显示的值进行迭代。
 * 在表第二行的每个单元格中，插入返回要显示的值的脚本。
 * 在表的第三行和最后一行中关闭循环。
@@ -57,22 +57,22 @@ Adobe Campaign允许您为来自LibreOffice或Microsoft Word文档的电子邮�
 
 **步骤1:创建附件：**
 
-* 插入对个性化块的调用：**&lt;%@ include view=&quot;blockname&quot; %>**。
+* 插入对个性化块的调用： **&lt;%@ include view=&quot;blockname&quot; %>**.
 * 将您的内容（无论是否个性化）插入文件正文。
 
 ![](assets/s_ncs_open_office_blocdeperso.png)
 
 **步骤2:创建个性化块：**
 
-* 转到Adobe Campaign控制台的&#x200B;**[!UICONTROL Resources > Campaign management > Personalization blocks]**&#x200B;菜单。
+* 转到 **[!UICONTROL Resources > Campaign management > Personalization blocks]** 菜单访问Adobe Campaign。
 * 创建新的“My Logo”个性化块，并将“My_Logo”作为内部名称。
-* 单击&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;链接，然后选中&#x200B;**[!UICONTROL "The content of the block is included in an attachment"]**&#x200B;选项。 这样，您就可以将个性化块的定义直接复制到OpenOffice文件的内容中。
+* 单击 **[!UICONTROL Advanced parameters...]** 链接，然后检查 **[!UICONTROL "The content of the block is included in an attachment"]** 选项。 这样，您就可以将个性化块的定义直接复制到OpenOffice文件的内容中。
 
    ![](assets/s_ncs_pdf_bloc_option.png)
 
    您需要区分个性化块中的两种类型的声明：
 
-   * 个性化字段的Adobe Campaign代码，其中“open”和“closed”雪佛兰必须替换为转义字符（分别为`&lt;`和`&gt;`）。
+   * 个性化字段的Adobe Campaign代码，其中“open”和“closed”雪佛兰必须分别替换为转义字符( `&lt;` 和 `&gt;`)。
    * 整个OpenOffice XML代码将被复制到OpenOffice文档中。
 
 在示例中，个性化块如下所示：

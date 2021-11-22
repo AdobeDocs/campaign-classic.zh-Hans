@@ -9,7 +9,7 @@ exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
 source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 15%
+ht-degree: 18%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 ![](../../assets/common.svg)
 
-Campaign Optimization是Adobe Campaign模块，可让您控制、过滤和监控投放的发送。 为了避免营销活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这样可确保发送的消息符合客户的需求和期望以及公司通信政策。
+Campaign Optimization是Adobe Campaign模块，可让您控制、过滤和监控投放的发送。 为了避免活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这可确保所发送的邮件符合客户的需求与期望以及公司的通信政策。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#typologies-video)
 
