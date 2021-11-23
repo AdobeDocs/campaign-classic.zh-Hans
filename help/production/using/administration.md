@@ -80,15 +80,14 @@ ht-degree: 1%
    >* 在发生紧急情况时，使用 **-immediate** 强制立即停止进程的选项（等同于Unix命令） **kill -9**)。
    >* 使用 **-noconsole** 选项，以确保启动的模块在控制台上不显示任何内容。 其日志将通过 **syslogd** 模块。
    >* 使用 **-verbose** 选项，以显示有关流程操作的其他信息。
-
-      >
-      >   示例:
-      >
-      >   **nlserver重新启动web -verbose**
-      >
-      >   **nlserver start mta@myinstance -verbose**
-      >
-      >   此选项会添加其他日志。 我们建议在没有 **-verbose** 选项，以避免日志过载。
+   >
+   >   示例:
+   >
+   >   **nlserver重新启动web -verbose**
+   >
+   >   **nlserver start mta@myinstance -verbose**
+   >
+   >   此选项会添加其他日志。 我们建议在没有 **-verbose** 选项，以避免日志过载。
 
 
 * 启动所有Adobe Campaign进程(等同于启动 **nlserver6** 服务):
