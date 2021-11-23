@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: 识别窗体
-description: 识别窗体
+title: 识别表单
+description: 识别表单
 audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 0d22b0bc-8fbc-4269-af9e-cee27e29bb27
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
 workflow-type: tm+mt
 source-wordcount: '62'
-ht-degree: 14%
+ht-degree: 0%
 
 ---
 
-# 识别窗体{#identifying-a-form}
+# 识别表单{#identifying-a-form}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 通过输入表单，您可以从Adobe Campaign客户端控制台编辑与数据架构关联的实例。
 

@@ -6,30 +6,30 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 898353f80a93052cd25088098c9570c2b44ceac4
 workflow-type: tm+mt
-source-wordcount: '2384'
+source-wordcount: '2385'
 ht-degree: 0%
 
 ---
 
 # 窗体结构{#form-structure}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 表单的描述是一种结构化XML文档，用于观察表单模式的语法 **xtk:form**.
 
-输入表单的XML文档必须包含 `<form>` 根元素，其中  **name** 和  **命名空间** 属性来填充表单名称和命名空间。
+输入表单的XML文档必须包含 `<form>` 根元素，其中 **name** 和 **命名空间** 属性来填充表单名称和命名空间。
 
-```
+```xml
 <form name="form_name" namespace="name_space">
-...
+…
 </form>
 ```
 
 默认情况下，表单与具有相同名称和命名空间的数据架构相关联。 要将表单与其他名称关联，请将 **实体模式** 属性 `<form>` 元素。 为了说明输入表单的结构，让我们使用“cus:recipient”示例模式描述接口：
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple1.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <input xpath="@gender"/>
   <input xpath="@birthDate"/>
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple2.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple3.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple4.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2" type="frame" label="General">
     <input xpath="@gender"/>
@@ -120,7 +120,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ![](assets/d_ncs_integration_form_exemple5.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <static type="separator" colspan="2" label="General"/>
   <input xpath="@gender"/>
@@ -138,11 +138,11 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 容器允许您对一组控件进行分组。 它们由 **`<container>`** 元素。 上面使用它们设置多列控件的格式。
 
-的 **xpath** 属性 `<container>` 允许您简化子控件的引用。 然后，控件的引用将相对于父项 `<container>` 父项。
+的 **xpath** 属性 `<container>` 允许您简化子控件的引用。 然后，控件的引用将相对于父项 `<container>` 元素。
 
 不带“xpath”的容器示例：
 
-```
+```xml
 <container colcount="2">
   <input xpath="location/@zipCode"/>
   <input xpath="location/@city"/>
@@ -151,7 +151,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 在名为“location”的元素中添加“xpath”的示例：
 
-```
+```xml
 <container colcount="2" xpath="location">
   <input xpath="@zipCode"/>
   <input xpath="@city"/>
@@ -168,7 +168,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ![](assets/d_ncs_integration_form_exemple6.png)
 
-```
+```xml
 <container type="notebook">
   <container colcount="2" label="General">
     <input xpath="@gender"/>
@@ -176,18 +176,19 @@ A **`<static>`** 元素可用于设置输入表单的格式：
     <input xpath="@email" colspan="2"/>
   </container>
   <container colcount="2" label="Location">
-    ...
+    …
   </container>
 </container>
 ```
 
 主容器由 **type=&quot;notebook&quot;** 属性。 在子容器中声明制表符，并从 **标签** 属性。
 
+![](assets/d_ncs_integration_form_exemple7.png)
+
 >[!NOTE]
 >
 >A **style=&quot;down&quot;|up**（默认情况下）**&quot;** 功能强制选项卡标签在控件下方或上方垂直定位。 此功能属于可选功能。
->![](assets/d_ncs_integration_form_exemple7.png)
->`<container style="down" type="notebook">  ... </container>`
+>`<container style="down" type="notebook">  … </container>`
 
 #### 图标列表 {#icon-list}
 
@@ -195,7 +196,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ![](assets/d_ncs_integration_form_exemple8.png)
 
-```
+```xml
 <container type="iconbox">
   <container colcount="2" label="General" img="xtk:properties.png">
     <input xpath="@gender"/>
@@ -203,7 +204,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
     <input xpath="@email" colspan="2"/>
   </container>
   <container colcount="2" label="Location" img="nms:msgfolder.png">
-    ...
+    …
   </container>
 </container>
 ```
@@ -220,12 +221,12 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 此示例说明了“性别”字段值控件的可见性：
 
-```
+```xml
 <container type="visibleGroup" visibleIf="@gender=1">
-  ...
+  …
 </container>
 <container type="visibleGroup" visibleIf="@gender=2">
-  ...
+  …
 </container>
 ```
 
@@ -241,12 +242,12 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 利用此容器，可启用或禁用动态条件中的一组数据。 禁用控件会阻止对其进行编辑。 以下示例说明如何启用“Gender”字段值中的控件：
 
-```
+```xml
 <container type="enabledGroup" enabledIf="@gender=1">
-  ...
+  …
 </container>
 <container type="enabledGroup" enabledIf="@gender=2">
-  ...
+  …
 </container>
 ```
 
@@ -256,7 +257,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 请记住，链接在数据架构中声明如下：
 
-```
+```xml
 <element label="Company" name="company" target="cus:company" type="link"/>
 ```
 
@@ -264,7 +265,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ![](assets/d_ncs_integration_form_exemple9.png)
 
-```
+```xml
 <input xpath="company"/>
 ```
 
@@ -280,7 +281,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 您可以通过添加 **`<sysfilter>`** 元素：
 
-```
+```xml
 <input xpath="company">
   <sysFilter>
     <condition expr="[location/@city] =  'Newton"/>
@@ -290,7 +291,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 您还可以使用 **`<orderby>`** 元素：
 
-```
+```xml
 <input xpath="company">
   <orderBy>
     <node expr="[location/@zipCode]"/>
@@ -318,9 +319,9 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 架构中的集合链接示例：
 
-```
+```xml
 <element label="Events" name="rcpEvent" target="cus:event" type="link" unbound="true">
-...
+…
 </element>
 ```
 
@@ -328,7 +329,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ![](assets/d_ncs_integration_form_exemple11.png)
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -349,7 +350,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 在加载列表时，可以应用过滤和排序：
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -370,7 +371,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 模式中的关系表示例：
 
-```
+```xml
 <srcSchema name="subscription" namespace="cus">
   <element name="recipient" type="link" target="cus:recipient" label="Recipient"/>
   <element name="service" type="link" target="cus:service" label="Subscription service"/>
@@ -381,7 +382,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
-```
+```xml
 <input type="linklist" xpath="subscription" xpathChoiceTarget="service" xpathEditTarget="service" zoom="true">
   <input xpath="recipient"/>
   <input xpath="service"/>
@@ -417,7 +418,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ![](assets/d_ncs_integration_form_exemple13.png)
 
-```
+```xml
 <input xpath="rcpEvent" type="list">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -436,7 +437,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ![](assets/d_ncs_integration_form_exemple14.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -451,7 +452,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ![](assets/d_ncs_integration_form_exemple15.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true" zoomOnAdd="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -463,7 +464,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </input>
 ```
 
-编辑表单已从 `<form>`  元素。 其结构与输入形式的结构相同。 的 **[!UICONTROL Detail]** 按钮 **zoom=&quot;true&quot;** 属性已在 **`<input>`** 标记。 此属性允许您启动选定行的编辑表单。
+编辑表单已从 `<form>` 元素。 其结构与输入形式的结构相同。 的 **[!UICONTROL Detail]** 按钮 **zoom=&quot;true&quot;** 属性已在 **`<input>`** 标记。 此属性允许您启动选定行的编辑表单。
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ![](assets/d_ncs_integration_form_exemple16.png)
 
-```
+```xml
 <value value="@gender"/>
 <input xpath="@gender" readOnly="true"/>
 ```
@@ -499,7 +500,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 “性别”字段示例：
 
-```
+```xml
 <input type="RadioButton" xpath="@gender" checkedValue="0" label="Choice 1"/>
 <input type="RadioButton" xpath="@gender" checkedValue="1" label="Choice 2"/>
 <input type="RadioButton" xpath="@gender" checkedValue="2" label="Choice 3"/>
@@ -511,12 +512,16 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 复选框反映布尔状态（选中或未选中）。 默认情况下，此控件由“Boolean”(true/false)字段使用。 默认值为0或1的变量可与此按钮关联。 此值可通过 **checkValue** 属性。
 
-```
+```xml
 <input xpath="@boolean1"/>
 <input xpath="@field1" type="checkbox" checkedValue="Y"/>
 ```
 
 ![](assets/d_ncs_integration_form_exemple20.png)
+
+## 明细列表 {#enumeration}
+
+<!-- to be completed -->
 
 ## 导航层次结构编辑 {#navigation-hierarchy-edit}
 
@@ -524,7 +529,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 要编辑的控件将分组为 **`<container>`** 在 **`<input>`** 标记：
 
-```
+```xml
 <input nolabel="true" type="treeEdit">
   <container label="Text fields">
     <input xpath="@text1"/>
@@ -541,9 +546,9 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ## 表达式字段 {#expression-field}
 
-表达式字段会从表达式动态更新字段；the **`<input>`** 标记与 **xpath** 属性，以输入要更新的字段的路径以及 **expr** 包含更新表达式的属性。
+表达式字段会从表达式动态更新字段；the **`<input>`** 标记与 **xpath** 属性，以输入要更新的字段的路径以及 **博览** 包含更新表达式的属性。
 
-```
+```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
 <input expr="Iif([/tmp/@flag]=='On', true, false)" type="expr" xpath="@boolean1"/>
 <input expr="[/ignored/@action] == 'FCP'" type="expr" xpath="@launchFCP"/>
@@ -566,21 +571,21 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 通过初始化和关闭表单时，可以更新表单的上下文 **`<enter>`** 和 **`<leave>`** 标记。
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <enter>
-    <set...
+    <set…
   </enter>
-  ...
+  …
   <leave>
-    <set...
+    <set…
   </leave>
 </form>
 ```
 
 >[!NOTE]
 >
->的 `<enter>`  和  `<leave>`   标记可用于 `<container>` 页面类型（“notebook”和“iconbox”类型）。
+>的 `<enter>` 和 `<leave>` 标记可用于 `<container>` 页面类型（“notebook”和“iconbox”类型）。
 
 ### 表达语言 {#expression-language-}
 
@@ -588,7 +593,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 的 **`<if expr="<expression>" />`** 如果验证了表达式，则标记会执行标记下指定的说明：
 
-```
+```xml
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
   <set xpath="@boolean1" expr="true"/>
 </if>
@@ -596,7 +601,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 的 **`<check expr="<condition>" />`** 与 **`<error>`** 标记会阻止验证表单，并在不满足条件时显示错误消息：
 
-```
+```xml
 <leave>
   <check expr="/tmp/@test != ''">
     <error>You must populate the 'Test' field!</error> 
@@ -604,22 +609,24 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </leave>
 ```
 
+<!-- changer exemple par un exemple plus parlant. cf. vidéo validation 02:27. noter aussi l'attribut required dans l'exemple de la vidéo. -->
+
 ## 向导 {#wizards}
 
 向导会引导您完成页面形式的一组数据输入步骤。 验证表单时，将保存输入的数据。
 
 向导具有以下结构：
 
-```
+```xml
 <form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
   <container title="Title of page 1" desc="Long description of page 1">
     <input xpath="@lastName"/>
     <input xpath="comment"/>
   </container>
   <container title="Title of page 2" desc="Long description of page 2">
-    ...
+    …
   </container>
-  ...
+  …
 </form>
 ```
 
@@ -635,10 +642,10 @@ SOAP方法可从填充的 **`<leave>`** 标记。
 
 的 **`<soapcall>`** 标记包含对具有以下输入参数的方法的调用：
 
-```
+```xml
 <soapCall name="<name>" service="<schema>">
-  <param type="<type>" exprIn="<xpath>"/>  
-  ...
+  <param  type="<type>" exprIn="<xpath>"/>  
+  …
 </soapCall>
 ```
 
@@ -661,12 +668,12 @@ SOAP方法可从填充的 **`<leave>`** 标记。
 
 **示例**:
 
-```
+```xml
 <leave>
   <soapCall name="RegisterGroup" service="nms:recipient">         
-    <param type="DOMElement" exprIn="/tmp/entityList"/>         
-    <param type="DOMElement" exprIn="/tmp/choiceList"/>         
-    <param type="boolean"    exprIn="true"/>       
+    <param  type="DOMElement"    exprIn="/tmp/entityList"/>         
+    <param  type="DOMElement"    exprIn="/tmp/choiceList"/>         
+    <param  type="boolean"       exprIn="true"/>       
   </soapCall>
 </leave>
 ```

@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: d750e13d3770d3b36b5f4376233d4da458730ed7
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 100%
+source-wordcount: '2420'
+ht-degree: 99%
 
 ---
 
@@ -76,6 +76,10 @@ Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中�
 在创建隐私请求之前，您需要定义将要使用的命名空间。这是将用于识别 Adobe Campaign 数据库中的数据主体的键。
 
 开箱即用的三种命名空间：电子邮件、电话和手机。如果您需要其他命名空间（例如，收件人自定义字段），则可以从 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]** 创建新命名空间。
+
+>[!NOTE]
+>
+>为获得最佳性能，建议使用现成的命名空间。
 
 ## 创建隐私请求 {#create-privacy-request-ui}
 

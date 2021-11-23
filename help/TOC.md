@@ -6,7 +6,7 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 93fcb0b2b12b581dadbe4358e72bb883384fbbe6
+source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
 workflow-type: tm+mt
 source-wordcount: '2571'
 ht-degree: 99%
@@ -373,11 +373,11 @@ ht-degree: 99%
       + [配置对  [!DNL Assets] 的访问](integrations/using/configuring-access-to-assets.md)
       + [插入共享资源](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [使用 [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [使用  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [配置集成](integrations/using/configuring-the-integration.md)
       + [创建  [!DNL Experience Manager]  新闻稿](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [使用 [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
+      + [使用  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [配置与  [!DNL Adobe Target] 的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
    + ACS 连接器 {#acs-connector}
@@ -387,7 +387,7 @@ ht-degree: 99%
       + [同步 Web 应用程序](integrations/using/synchronizing-web-applications.md)
       + [对  [!DNL ACS Connector] 进行故障排除](integrations/using/troubleshooting-the-acs-connector.md)
    + Adobe Experience Cloud 触发器 {#experience-triggers}
-      + [使用 [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [使用  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [配置管道](integrations/using/configuring-pipeline.md)
       + [为  [!DNL Experience Cloud Triggers] 配置 Adobe I/O](integrations/using/configuring-adobe-io.md)
       + [为自定义实施配置事件](integrations/using/events.md)
@@ -790,8 +790,8 @@ ht-degree: 99%
       + [重新生成模式](configuration/using/regenerating-schemas.md)
       + [模式版本示例](configuration/using/examples-of-schemas-edition.md)
    + 输入窗体 {#input-forms}
-      + [识别窗体](configuration/using/identifying-a-form.md)
-      + [编辑窗体](configuration/using/editing-forms.md)
+      + [识别表单](configuration/using/identifying-a-form.md)
+      + [编辑表单](configuration/using/editing-forms.md)
       + [窗体结构](configuration/using/form-structure.md)
    + API {#api}
       + [关于 Web 服务](configuration/using/about-web-services.md)
