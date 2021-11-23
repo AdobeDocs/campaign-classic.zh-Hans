@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
 source-wordcount: '1651'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    </tr>
    <tr>
    <td>Campaign API 文档 - jsapi.chm 文件</td>
-   <td>从 Campaign 19.1 版本开始，Campaign Classic API 在专用页面中提供。如果您使用的是旧版 jsapi.chm 文件，您现在应该参考 <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html">新的在线版本</a>。</td>
+   <td>从 Campaign 19.1 版本开始，Campaign Classic API 在专用页面中提供。如果您使用的是旧版 jsapi.chm 文件，您现在应该参考 <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans">新的在线版本</a>。</td>
   </tr> 
   <tr> 
    <td>活动编排 - 预测营销</td>
