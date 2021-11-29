@@ -6,14 +6,14 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2d2a6e32-587d-4a7b-ba1c-d9140da53f64
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 3%
+source-wordcount: '706'
+ht-degree: 7%
 
 ---
 
-# 在 Twitter 上配置发布{#configuring-publishing-on-twitter}
+# 在Twitter上发布的配置步骤{#configuring-publishing-on-twitter}
 
 ![](../../assets/v7-only.svg)
 
@@ -30,16 +30,15 @@ ht-degree: 3%
 
 首先，创建一个或多个Twitter帐户以将您的推文发送到。
 
-要创建Twitter帐户，请转到 [https://twitter.com](https://twitter.com).
+要创建Twitter帐户，请转到 [https://twitter.com](https://twitter.com){target=&quot;_blank&quot;}。
 
 ## 在Twitter上创建测试帐户 {#creating-a-test-account-on-twitter}
 
-我们还建议创建一个专用Twitter帐户，以用于发送推文校样(有关更多信息，请参阅 [发送校样](../../social/using/publishing-on-twitter.md#sending-the-proof)):
+创建可用于发送的专用Twitter帐户 [推文校样](../../social/using/publishing-on-twitter.md#sending-the-proof). 要创建专用Twitter帐户，请执行以下步骤：
 
-* 创建新的Twitter帐户。
-* 单击右上角的菜单，然后选择 **[!UICONTROL Settings]**.
-* 选择 **[!UICONTROL Security and privacy]** ，然后选中 **[!UICONTROL Protect my Tweets]** 框中。
-* 单击 **[!UICONTROL Save Changes]** 按钮。
+1. 创建新的Twitter帐户。
+1. 访问帐户  **[!UICONTROL Settings]**.
+1. 浏览到 **[!UICONTROL Privacy & Safety]** 和 **[!UICONTROL Audience and Tagging]** 并检查 **[!UICONTROL Protect your Tweets]** 选项。 您的推文和其他帐户信息仅对关注您的人员可见。
 
 ![](assets/social_twitter_test_page.png)
 
@@ -48,8 +47,8 @@ ht-degree: 3%
 为了Adobe Campaign能够将推文发送到您的Twitter帐户，您需要为每个Twitter帐户创建一个Twitter应用程序。 要执行此操作，请应用以下步骤：
 
 1. 登录到您的Twitter帐户。
-1. 在您的Internet浏览器中输入以下地址： [https://apps.twitter.com/](https://apps.twitter.com/).
-1. 然后，单击 **[!UICONTROL Create New App]** 按钮。
+1. 在您的Internet浏览器中输入以下地址： [https://developer.twitter.com/en/apps](https://developer.twitter.com/en/apps).
+1. 然后，单击 **[!UICONTROL Create an App]** 按钮。
 
    ![](assets/social_create_twitter_app_001.png)
 
@@ -65,11 +64,13 @@ ht-degree: 3%
 
 此步骤要求同时访问Adobe Campaign控制台和登录到Twitter帐户的Internet浏览器：
 
-* **Twitter**:选择之前创建的应用程序([https://dev.twitter.com/apps](https://dev.twitter.com/apps))，然后单击 **[!UICONTROL Keys and Access Tokens]** 选项卡。
+* in **Twitter**:从 [本页](https://developer.twitter.com/en/portal/projects-and-apps)，选择之前创建的应用程序并编辑 **应用程序权限**.
 
    ![](assets/social_twitter_service_002.png)
 
-* **Adobe Campaign**:转到 **[!UICONTROL Profiles and targets]** ，单击 **[!UICONTROL Services and Subscriptions]** 链接，然后单击 **[!UICONTROL Create]** 按钮。
+   编辑 **密钥和令牌** 选项卡来访问应用程序详细信息。
+
+* in **Adobe Campaign**:转到 **[!UICONTROL Profiles and targets]** ，单击 **[!UICONTROL Services and Subscriptions]** 链接，然后单击 **[!UICONTROL Create]** 按钮。
 
    ![](assets/social_twitter_service_007.png)
 
@@ -90,43 +91,44 @@ ht-degree: 3%
    >的 **[!UICONTROL Internal name]** 的名称必须与Twitter帐户的名称相同。 要确保没有登入错误，请应用以下步骤。
 
    * 单击 **[!UICONTROL Save]** 按钮。
-   * 在服务概述中，单击之前创建的Twitter类型服务。
-   * 选择 **[!UICONTROL Twitter page]** 选项卡。应显示Twitter帐户。
+   * 在服务概述中，单击之前创建的Twitter服务。
 
-      ![](assets/social_twitter_service_010.png)
+   <!-- * Select the **[!UICONTROL Twitter page]** tab. The Twitter account should be displayed. 
+    
+      ![](assets/social_twitter_service_010.png)-->
 
-1. 在 **[!UICONTROL Visitor folder]** 字段中，选择将在其中创建关注者的访客文件夹。 有关更多信息，请参阅 [工作原理](../../social/using/publishing-on-twitter.md#operating-principle). 默认情况下，关注者将在 **[!UICONTROL Visitors]** 文件夹。
+1. 在 **[!UICONTROL Visitor folder]** 字段中，选择将在其中创建关注者的文件夹。 如需详细信息，请参阅[此部分](../../social/using/publishing-on-twitter.md#operating-principle)。默认情况下，关注者会保存在 **[!UICONTROL Visitors]** 文件夹。
 
    ![](assets/social_twitter_service_010_b.png)
 
-1. 在Twitter上，复制 **[!UICONTROL Consumer Key (API Key)]** 和 **[!UICONTROL Consumer Secret (API Secret)]** 字段并粘贴到 **[!UICONTROL Consumer key]** 和 **[!UICONTROL Consumer secret]** 的字段。
+1. 在Twitter上，复制 **[!UICONTROL Consumer Key (API Key)]** 和 **[!UICONTROL Consumer Secret (API Secret)]** 字段并粘贴到 **[!UICONTROL Consumer key]** 和 **[!UICONTROL Consumer secret]** Campaign客户端控制台的字段。
 
    ![](assets/social_twitter_service_012.png)
 
-1. 在Twitter上，复制 **[!UICONTROL Access Token]** 和 **[!UICONTROL Access Token Secret]** 字段并粘贴到 **[!UICONTROL Access token]** 和 **[!UICONTROL Access token secret]** 的字段。
+1. 在Twitter上，复制 **[!UICONTROL Access Token]** 和 **[!UICONTROL Access Token Secret]** 字段并粘贴到 **[!UICONTROL Access token]** 和 **[!UICONTROL Access token secret]** Campaign客户端控制台的字段。
 
    ![](assets/social_twitter_service_013.png)
 
-1. 在Adobe Campaign控制台中，单击 **[!UICONTROL Save]**. 现已完成对Adobe Campaign的写入访问权限委派。
+1. 在Campaign客户端控制台中，单击 **[!UICONTROL Save]**. 您现在已委派对Adobe Campaign的写入权限。
 
    ![](assets/social_twitter_service_014.png)
 
 >[!NOTE]
 >
->您必须创建一个 **[!UICONTROL Twitter]** 为每个Twitter应用程序键入服务。
+>您必须创建一个 **[!UICONTROL Twitter]** 服务。
 
-的 **[!UICONTROL Twitter account Synchronization]** 工作流在Adobe Campaign中同步Twitter帐户。 有关更多信息，请参阅 [同步Facebook页面](../../social/using/publishing-on-facebook-walls.md#synchronizing-facebook-pages).
+的 **[!UICONTROL Twitter account Synchronization]** 工作流在Adobe Campaign中同步Twitter帐户。 有关详细信息，请参见[此页面](../../social/using/publishing-on-facebook-walls.md#synchronizing-facebook-pages)。
 
 ## 同步Twitter帐户 {#synchronizing-twitter-accounts}
 
 >[!IMPORTANT]
 >
->为了工作流恢复Twitter订阅者列表， **[!UICONTROL Twitter account synchronization]** 框。 有关更多信息，请参阅 [委派对Adobe Campaign的写入权限](#delegating-write-access-to-adobe-campaign).
+>为了工作流恢复Twitter订阅者列表， **[!UICONTROL Twitter account synchronization]** 框。 如需详细信息，请参阅[此部分](#delegating-write-access-to-adobe-campaign)。
 
 的 **[!UICONTROL Twitter account synchronization]** 工作流，通过 **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** 节点中，用于将以前配置的Twitter帐户与Adobe Campaign同步。 默认情况下，此工作流于每星期四早上7:30触发。
 
 >[!NOTE]
 >
->可以随时通过运行预期的任务处理来启动工作流。 您还可以编辑调度程序以更改工作流触发频率。 有关调度程序的详细信息，请参阅 [此部分](../../workflow/using/scheduler.md).
+>您可以随时通过运行预期的任务处理来启动工作流。 您还可以编辑调度程序以更改工作流触发频率。 有关调度程序的详细信息，请参阅 [此部分](../../workflow/using/scheduler.md).
 
-您现在可以将推文发送到Twitter帐户，并向关注者发送私信。 有关更多信息，请参阅： [在Twitter上发布](../../social/using/publishing-on-twitter.md).
+您现在可以将推文发送到Twitter帐户，并向关注者发送私信。 有关详细信息，请参见[此页面](../../social/using/publishing-on-twitter.md)。

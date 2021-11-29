@@ -6,10 +6,10 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2135a836-245f-406e-b351-c27d38e0f9fd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 3%
+source-wordcount: '903'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 ## 创建测试Facebook页面 {#creating-a-test-facebook-page}
 
-我们建议创建用于传送发布校样的专用Facebook页面(有关更多信息，请参阅 [发送校样](../../social/using/publishing-on-facebook.md#sending-the-proof).
+我们建议创建用于传送发布校样的专用Facebook页面(有关更多信息，请参阅 [此部分](../../social/using/publishing-on-facebook.md#sending-the-proof).
 
 1. 登录到用于管理页面的Facebook帐户。
 1. 创建新的Facebook页面。
@@ -54,7 +54,7 @@ ht-degree: 3%
 1. 登录到用于管理页面的Facebook帐户。
 1. 在浏览器中输入以下地址： [https://developers.facebook.com/apps](https://developers.facebook.com/apps).
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >根据您拥有的帐户类型，可能需要一个或多个授权。
    >
@@ -82,7 +82,7 @@ ht-degree: 3%
 
 此步骤要求您同时访问Adobe Campaign控制台和登录到用于页面管理的Facebook帐户的Internet浏览器：
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Adobe Campaign运算符必须具有管理权限才能执行此配置。
 
@@ -102,7 +102,7 @@ ht-degree: 3%
 
    ![](assets/social_facebook_external_account_006.png)
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >在任何情况下都不得使用不安全的URL。
 
@@ -121,7 +121,7 @@ ht-degree: 3%
    >
    >的 **[!UICONTROL Marketing URL]** 字段，此为可选字段。
 
-1. 在Adobe Campaign控制台中，单击 **[!UICONTROL Request the authorization from the application]** 链接 **[!UICONTROL Connector]** 选项卡。 的 **[!UICONTROL Synchronize Facebook pages]** 工作流会自动触发并收集由管理员管理的所有Facebook页面。 有关更多信息，请参阅 [同步Facebook页面](#synchronizing-facebook-pages).
+1. 在Adobe Campaign控制台中，单击 **[!UICONTROL Request the authorization from the application]** 链接 **[!UICONTROL Connector]** 选项卡。 的 **[!UICONTROL Synchronize Facebook pages]** 工作流会自动触发并收集由管理员管理的所有Facebook页面。 [了解详情](#synchronizing-facebook-pages)。
 
    ![](assets/social_facebook_external_account_004.png)
 
@@ -143,14 +143,16 @@ ht-degree: 3%
 >
 >如果Facebook帐户管理多个页面，则只需配置一个外部帐户以在Facebook帐户的任何页面上写入即可。 对于每个新的Facebook帐户，您将需要创建一个 **[!UICONTROL Routing]** 键入外部帐户。
 
-的 **[!UICONTROL Synchronization of Facebook pages]** 工作流可同步由Facebook帐户管理的所有页面，以便您直接通过Adobe Campaign在其涂鸦墙上发布内容。 有关更多信息，请参阅 [同步Facebook页面](#synchronizing-facebook-pages).
+的 **[!UICONTROL Synchronization of Facebook pages]** 工作流可同步由Facebook帐户管理的所有页面，以便您直接通过Adobe Campaign在其涂鸦墙上发布内容。 [了解详情](#synchronizing-facebook-pages)。
 
 ## 同步Facebook页面 {#synchronizing-facebook-pages}
 
-的 **[!UICONTROL Synchronization of Facebook pages]** 工作流，通过 **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** 节点，用于同步(在Adobe Campaign中)先前配置的Facebook帐户页面。 默认情况下，此工作流配置为每天或每当管理员单击 **[!UICONTROL Request an authorization from the application]** 服务配置屏幕中的链接(请参阅 [委派对Adobe Campaign的写入权限](#delegating-write-access-to-adobe-campaign))。
+的 **[!UICONTROL Synchronization of Facebook pages]** 工作流，通过 **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** 节点，用于同步(在Adobe Campaign中)先前配置的Facebook帐户页面。 默认情况下，此工作流配置为每天或每当管理员单击 **[!UICONTROL Request an authorization from the application]** 链接。 [了解详情](#delegating-write-access-to-adobe-campaign)。
 
-同步完成后，收集的页面将显示在外部帐户中输入的服务文件夹中(请参阅 [委派对Adobe Campaign的写入权限](#delegating-write-access-to-adobe-campaign))。 默认情况下，页面会添加到的根 **[!UICONTROL Facebook]** 服务文件夹，可通过 **[!UICONTROL Profiles and Targets > Services and subscriptions]** 菜单。
+同步完成后，收集的页面将显示在外部帐户中输入的服务文件夹中。 [了解详情](#delegating-write-access-to-adobe-campaign)).
+
+默认情况下，页面会添加到的根 **[!UICONTROL Facebook]** 服务文件夹，可通过 **[!UICONTROL Profiles and Targets > Services and subscriptions]** 菜单。
 
 ![](assets/social_facebook_service_002.png)
 
-现在，您可以直接通过Adobe Campaign在Facebook页面的墙上发布内容。 有关更多信息，请参阅 [在Facebook上发布](#publishing-on-facebook-walls).
+现在，您可以直接通过Adobe Campaign在Facebook页面的墙上发布内容。 [了解详情](#publishing-on-facebook-walls)。

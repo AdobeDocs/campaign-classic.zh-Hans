@@ -6,10 +6,10 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 5%
+source-wordcount: '923'
+ht-degree: 6%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 5%
 
 ### 选择校样的目标 {#selecting-the-target-of-the-proof}
 
-的 **[!UICONTROL Target of the proofs]** 选项卡，可让您定义在最终投放之前用于测试投放的Twitter帐户。 因此，我们建议您创建一个专用于发送校样的Twitter帐户。 有关如何创建专用Twitter帐户的更多信息，请参阅 [在Twitter上创建测试帐户](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). 选择校样目标的步骤与选择主目标的步骤相同。 请参阅 [在Twitter上创建测试帐户](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter).
+的 **[!UICONTROL Target of the proofs]** 选项卡，可让您定义在最终投放之前用于测试投放的Twitter帐户。 因此，我们建议您创建一个专用于发送校样的Twitter帐户。 有关如何创建专用Twitter帐户的更多信息，请参阅 [此部分](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). 选择校样目标的步骤与选择主目标的步骤相同。 请参阅[此小节](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter)。
 
 ![](assets/social_twitter_delivery_004.png)
 
@@ -70,7 +70,7 @@ ht-degree: 5%
 
 ![](assets/social_twitter_delivery_005.png)
 
-### 查看预览 {#viewing-the-preview}
+### 预览消息 {#viewing-the-preview}
 
 的 **[!UICONTROL Preview]** 选项卡，可查看推文的呈现。
 
@@ -83,7 +83,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->预览可能与最终推文略有不同。 我们强烈建议在最终投放之前发送校样，以查看推文的确切呈现。 请参阅 [发送校样](#sending-the-proof).
+>预览可能与最终推文略有不同。 我们强烈建议在最终投放之前发送校样，以查看推文的确切呈现。 请参阅[此小节](#sending-the-proof)。
 
 ### 配置跟踪 {#configuring-tracking}
 
@@ -95,13 +95,13 @@ ht-degree: 5%
 >
 >在 **[!UICONTROL Tweet]** 投放模板时，默认情况下会启用跟踪。
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >我们无法区分分析推文的机器人和实际点击的用户。
 
 ### 发送校样 {#sending-the-proof}
 
-我们强烈建议在最终交付之前发送发布校样，以在专用Twitter测试页面上获取发布的确切呈现。 有关创建专用Twitter帐户的更多信息，请参阅 [在Twitter上创建测试帐户](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). 有关选择校样目标的详细步骤，请参见 [选择校样的目标](#selecting-the-target-of-the-proof).
+我们强烈建议在最终交付之前发送发布校样，以在专用Twitter测试页面上获取发布的确切呈现。 有关创建专用Twitter帐户的更多信息，请参阅 [此部分](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). 有关选择校样目标的详细步骤，请参见 [此部分](#selecting-the-target-of-the-proof).
 
 校样投放与电子邮件投放相同。 请参阅[此小节](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
@@ -125,7 +125,7 @@ ht-degree: 5%
 
 ### 操作原则 {#operating-principle}
 
-的 **[!UICONTROL Synchronize Twitter accounts]** 工作流(请参阅 [同步Twitter帐户](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts))取回了Twitter订阅者列表，以便您能够向他们发送私信。 恢复的关注者存储在特定表中：访客表。 要显示Twitter关注者列表，请转到 **[!UICONTROL Profiles and Targets > Visitors]** 节点。
+的 **[!UICONTROL Synchronize Twitter accounts]** 工作流(请参阅 [了解更多](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts))取回了Twitter订阅者列表，以便您能够向他们发送私信。 恢复的关注者存储在特定表中：访客表。 要显示Twitter关注者列表，请转到 **[!UICONTROL Profiles and Targets > Visitors]** 节点。
 
 ![](assets/social_twitter_visitors_001.png)
 

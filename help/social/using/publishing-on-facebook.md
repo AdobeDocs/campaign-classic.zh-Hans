@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: 在 Facebook 上发布
-description: 在 Facebook 上发布
+description: 了解如何在Facebook上发布
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1138'
 ht-degree: 3%
 
 ---
@@ -54,7 +54,7 @@ facebook固有以下限制。
 
 ## 选择校样目标 {#selecting-the-proof-target}
 
-的 **[!UICONTROL Target of the proofs]** 选项卡，可定义在发送投放之前要用于测试投放的Facebook页面。 为此，我们建议创建专用的Facebook专用页面。 有关创建专用Facebook页面的更多信息，请参阅 [创建测试Facebook页面](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). 要选择校样目标，请应用与主目标相同的步骤： [选择主目标](#selecting-the-main-target).
+的 **[!UICONTROL Target of the proofs]** 选项卡，可定义在发送投放之前要用于测试投放的Facebook页面。 为此，我们建议创建专用的Facebook专用页面。 有关创建专用Facebook页面的更多信息，请参阅 [本页](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). 要选择校样目标，请应用与主目标相同的步骤。 [了解详情](#selecting-the-main-target)
 
 ![](assets/social_facebook_delivery_004.png)
 
@@ -73,7 +73,7 @@ facebook固有以下限制。
 * **[!UICONTROL Cities]**
 * **[!UICONTROL Languages]**
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >请小心使用此函数。 在投放报表中， **[!UICONTROL Number of fans]** 指示器不会考虑这些Facebook过滤器。
 >
@@ -102,7 +102,7 @@ facebook固有以下限制。
 
 ![](assets/social_facebook_delivery_015.png)
 
-### 使用链接发布状态 {#publishing-a-status-with-a-link}
+### 发布包含链接的状态 {#publishing-a-status-with-a-link}
 
 带有链接的状态类型投放可以包含文本、图像和链接。 以下部分详细介绍投放编辑屏幕的字段与Facebook上的最终发布之间的对称性：
 
@@ -110,7 +110,7 @@ facebook固有以下限制。
 
 输入各种字段：
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >所有URL都必须以开头 **&quot;http://&quot;** 或 **&quot;https://&quot;**.
 
@@ -131,7 +131,7 @@ facebook固有以下限制。
 
 1. 在 **[!UICONTROL Image]** 字段中，输入将在发布左侧显示的图像URL。
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >图像必须托管在公共互联网网站上，Facebook才能上传。
 
@@ -148,7 +148,7 @@ facebook固有以下限制。
 
 输入各种字段：
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >所有URL都必须以开头 **&quot;http://&quot;** 或 **&quot;https://&quot;**.
 
@@ -188,7 +188,7 @@ facebook固有以下限制。
 
 >[!NOTE]
 >
->预览内容可能与最终的Facebook发布内容略有不同。 我们强烈建议在最终交付之前发送校样，以精确呈现发布。 请参阅 [发送校样](#sending-the-proof).
+>预览内容可能与最终的Facebook发布内容略有不同。 我们强烈建议在最终交付之前发送校样，以精确呈现发布。 [了解详情](#sending-the-proof)。
 
 ## 配置跟踪 {#configuring-tracking}
 
@@ -204,7 +204,7 @@ facebook固有以下限制。
 
 ## 发送校样 {#sending-the-proof}
 
-我们强烈建议在最终交付之前发送发布校样，以在专用Facebook测试页面上查看发布的确切呈现。 有关创建专用Facebook测试页面的更多信息，请参阅 [创建测试Facebook页面](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). 有关选择目标校样的详细步骤，请参见 [选择校样目标](#selecting-the-proof-target).
+我们强烈建议在最终交付之前发送发布校样，以在专用Facebook测试页面上查看发布的确切呈现。 有关创建专用Facebook测试页面的更多信息，请参阅 [本页](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). 有关选择目标校样的详细步骤，请参见 [此部分](#selecting-the-proof-target).
 
 校样投放与电子邮件投放相同。 请参阅[此小节](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 

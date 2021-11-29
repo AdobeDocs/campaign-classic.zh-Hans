@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2575'
 ht-degree: 99%
 
 ---
@@ -596,7 +596,7 @@ ht-degree: 99%
       + [创建 Facebook 应用程序](social/using/creating-a-facebook-application.md)
       + [在 Twitter 上配置发布](social/using/configuring-publishing-on-twitter.md)
    + 在社交媒体上发布{#publishing-on-facebook-twitter}
-      + [概述](social/using/overview.md)
+      + [社交媒体入门](social/using/overview.md)
       + [在 Facebook 上发布](social/using/publishing-on-facebook.md)
       + [在 Twitter 上发布](social/using/publishing-on-twitter.md)
    + 附件 {#annexes}
