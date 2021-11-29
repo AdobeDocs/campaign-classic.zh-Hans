@@ -6,10 +6,10 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b5334de18eca8fc1147ae0c42fe23a6932bf71d2
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 2%
+source-wordcount: '876'
+ht-degree: 5%
 
 ---
 
@@ -17,29 +17,29 @@ ht-degree: 2%
 
 ![](../../assets/v7-only.svg)
 
-借助Web应用程序， Social Marketing可让您在Facebook应用程序中显示个性化内容，从而更轻松地通过此社交网络获取潜在客户。 有关Facebook类型Web应用程序的更多示例，请参阅 [facebook应用程序示例](../../social/using/examples-of-facebook-apps.md).
+通过使用Web应用程序，Campaign Social营销模块可在Facebook应用程序中显示个性化内容，从而更轻松地通过此社交媒体获取潜在客户。 有关Facebook类型Web应用程序的更多示例，请参阅 [本页](../../social/using/examples-of-facebook-apps.md).
 
 >[!NOTE]
 >
->也可以将Adobe Campaign与合作伙伴开发的Facebook应用程序相集成。 在这种情况下，无需使用Adobe Campaign Web应用程序获取Facebook配置文件。 有关更多信息，请参阅 [配置外部帐户](#configuring-external-accounts).
+>您还可以将Adobe Campaign与合作伙伴开发的Facebook应用程序相集成。 在这种情况下，无需使用Adobe Campaign Web应用程序获取Facebook配置文件。 [了解详情](#configuring-external-accounts)。
 
 ![](assets/social_webapp_fb_000.png)
 
-应用以下配置步骤：
+配置步骤包括：
 
-1. 创建一个或多个Facebook应用程序。 有关更多信息，请参阅： [创建Facebook应用程序](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application).
-1. 输入 **[!UICONTROL terms of service]** 和 **[!UICONTROL Privacy policy]** 要在Facebook权限请求屏幕上显示的链接。 有关更多信息，请参阅： [输入服务条款和隐私政策链接](#entering-the-terms-of-service-and-privacy-policy-links).
-1. 对于每个Facebook应用程序，请 **[!UICONTROL Facebook Connect]** 键入外部帐户。 有关更多信息，请参阅： [配置外部帐户](#configuring-external-accounts).
-1. 对于每个Facebook应用程序，在Adobe Campaign中创建一个Facebook类型的Web应用程序。 有关更多信息，请参阅： [创建Facebook类型Web应用程序](#creating-a-facebook-type-web-application).
-1. 配置Facebook应用程序，以便它们在Facebook页面上以选项卡的形式显示。 有关更多信息，请参阅： [配置Facebook选项卡](#configuring-facebook-tabs).
+1. 创建一个或多个Facebook应用程序。 [了解详情](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application)
+1. 输入 **[!UICONTROL terms of service]** 和 **[!UICONTROL Privacy policy]** 要在Facebook权限请求屏幕上显示的链接。 [了解详情](#entering-the-terms-of-service-and-privacy-policy-links)
+1. 对于每个Facebook应用程序，请 **[!UICONTROL Facebook Connect]** 键入外部帐户。 [了解详情](#configuring-external-accounts)
+1. 对于每个Facebook应用程序，在Adobe Campaign中创建一个Facebook类型的Web应用程序。 [了解详情](#creating-a-facebook-type-web-application)
+1. 配置Facebook应用程序，以便它们在Facebook页面上以选项卡的形式显示。 [了解详情](#configuring-facebook-tabs)
 
 ## 配置外部帐户 {#configuring-external-accounts}
 
 对于每个Facebook应用程序，您需要创建 **[!UICONTROL Facebook Connect]** 键入外部帐户。
 
-此步骤要求您同时访问Adobe Campaign控制台和登录到用于页面管理的Facebook帐户的Internet浏览器：
+此步骤需要访问您的Adobe Campaign控制台和Facebook管理员帐户：
 
-* **Facebook**:选择之前创建的应用程序( [https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然后选择 **[!UICONTROL Settings]** > **[!UICONTROL Basic]** 选项卡。
+* 开 **Facebook**:选择之前创建的应用程序( [https://developers.facebook.com/apps](https://developers.facebook.com/apps))，然后选择 **[!UICONTROL Settings]** > **[!UICONTROL Basic]** 选项卡。
 
    ![](assets/social_webapp_fb_008.png)
 
@@ -47,15 +47,15 @@ ht-degree: 2%
    >
    >如果 **[!UICONTROL Facebook Web Games]** 中，单击 **[!UICONTROL Add Platform]** 按钮，然后选择 **[!UICONTROL Facebook Web Games]**.
 
-* **Adobe Campaign**:转到 **[!UICONTROL Administration > Platform > External accounts]** 树的节点并单击 **[!UICONTROL New]**.
+* 开 **Adobe Campaign**:浏览 **[!UICONTROL Administration > Platform > External accounts]** 单击 **[!UICONTROL New]**.
 
    ![](assets/social_webapp_fb_005.png)
 
-1. 输入标签和内部名称并选择 **[!UICONTROL Facebook Connect]** 类型。
+1. 输入标签和内部名称，然后选择 **[!UICONTROL Facebook Connect]** 类型。
 
    ![](assets/social_webapp_fb_006.png)
 
-1. 为应用程序选择托管模式： **[!UICONTROL hosted by a partner]** 或 **[!UICONTROL hosted by this instance]**.
+1. 选择应用程序托管模式： **[!UICONTROL hosted by a partner]** 或 **[!UICONTROL hosted by this instance]**.
 
    ![](assets/social_webapp_fb_012.png)
 
@@ -73,22 +73,22 @@ ht-degree: 2%
 
    **由此实例托管的应用程序**
 
-   如果要在此实例上托管应用程序（如果您没有第三方应用程序），则需要使用Adobe Campaign Web应用程序获取Facebook配置文件。 有关更多信息，请参阅 [facebook应用程序示例](../../social/using/examples-of-facebook-apps.md).
+   如果要在此实例上托管应用程序（如果您没有第三方应用程序），则需要使用Adobe Campaign Web应用程序获取Facebook配置文件。 有关详细信息，请参见[此页面](../../social/using/examples-of-facebook-apps.md)。
 
    在Adobe Campaign控制台中，复制 **[!UICONTROL Secure Canvas URL]** 字段，并将其粘贴到 **[!UICONTROL Facebook Web games (https)]** 字段(在 **[!UICONTROL Facebook Web Games]** )。
 
    ![](assets/social_facebook_external_account_009.png)
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
-   >在任何情况下都不得使用不安全的URL。
+   >请勿使用任何不安全的URL。
 
    在Facebook上，复制 **[!UICONTROL App ID]** 和 **[!UICONTROL App Secret]** 字段并粘贴到 **[!UICONTROL Application ID]** 和 **[!UICONTROL Application secret]** 字段。
 
    ![](assets/social_facebook_external_account_008.png)
 
 1. 在Facebook上，单击 **[!UICONTROL Save Changes]** 按钮。
-1. 在Adobe Campaign控制台中，单击 **[!UICONTROL Subscribe]** 按钮，使Adobe Campaign能够在每次风扇通过此应用程序签入时实时恢复数据。 有关更多信息，请参阅： [facebook应用程序示例](../../social/using/examples-of-facebook-apps.md).
+1. 在Adobe Campaign控制台中，单击 **[!UICONTROL Subscribe]** 按钮，使Adobe Campaign能够在每次风扇通过此应用程序签入时实时恢复数据。  [了解详情](../../social/using/examples-of-facebook-apps.md)
 
    ![](assets/social_webapp_fb_013.png)
 
@@ -105,7 +105,7 @@ ht-degree: 2%
 
    ![](assets/social_fb_terms_of_services.png)
 
-## 创建Facebook类型Web应用程序 {#creating-a-facebook-type-web-application}
+## 创建Facebook类型的Web应用程序 {#creating-a-facebook-type-web-application}
 
 利用Adobe Campaign Facebook应用程序，可在Facebook应用程序中显示个性化内容。 对于每个Facebook应用程序，您需要在Adobe Campaign中创建一个Web应用程序。 要创建Facebook Web应用程序，请按如下步骤操作：
 
@@ -127,11 +127,11 @@ ht-degree: 2%
    >* **[!UICONTROL "Page Tab" competition]**:Facebook应用程序完全集成到品牌页面选项卡中。
 
 
-1. 在 **[!UICONTROL Application]** 字段中，输入链接到Facebook应用程序的外部帐户。 有关更多信息，请参阅： [配置外部帐户](#configuring-external-accounts).
+1. 在 **[!UICONTROL Application]** 字段中，输入链接到Facebook应用程序的外部帐户。 [了解详情](#configuring-external-accounts)
 
    ![](assets/social_webapp_005.png)
 
-1. 选择 **[!UICONTROL Edit]** ，然后编辑Web应用程序。 有关更多信息，请参阅： [facebook应用程序示例](../../social/using/examples-of-facebook-apps.md).
+1. 选择 **[!UICONTROL Edit]** ，然后编辑Web应用程序。 [了解详情](../../social/using/examples-of-facebook-apps.md)
 
    ![](assets/social_webapp_003.png)
 
@@ -155,7 +155,7 @@ ht-degree: 2%
 
    ![](assets/social_webapp_fb_001.png)
 
-1. 在 **[!UICONTROL Secure Page Tab URL]** 字段，输入web应用程序的公共URL，该URL可通过 **[!UICONTROL Dashboard]** 选项卡。 有关创建Facebook类型Web应用程序的更多信息，请参阅 [创建Facebook类型Web应用程序](#creating-a-facebook-type-web-application).
+1. 在 **[!UICONTROL Secure Page Tab URL]** 字段，输入web应用程序的公共URL，该URL可通过 **[!UICONTROL Dashboard]** 选项卡。 有关创建Facebook类型Web应用程序的更多信息，请参阅 [此部分](#creating-a-facebook-type-web-application).
 
    ![](assets/social_webapp_fb_002.png)
 
