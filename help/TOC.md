@@ -510,7 +510,7 @@ ht-degree: 99%
       + [工作流属性](workflow/using/workflow-properties.md)
       + [高级参数](workflow/using/advanced-parameters.md)
       + [JavaScript 脚本和模板](workflow/using/javascript-scripts-and-templates.md)
-      + [工作流中的JavaScript代码示例](workflow/using/javascript-in-workflows.md)
+      + [工作流中的 JavaScript 代码示例](workflow/using/javascript-in-workflows.md)
       + [访问外部数据库](workflow/using/accessing-an-external-database--fda-.md)
       + [管理权限](workflow/using/managing-rights.md)
       + [管理活动图像](workflow/using/managing-activity-images.md)
