@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: dcfa6d1e5623792c852d164d636ebe19a7aaa614
+source-git-commit: b06e7b3d2dcb172e6a10c383b5f9800960e7a074
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -361,23 +361,9 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
    或者，移除 `type="frame"` 属性 `<container>` 元素。
 
-## 嵌套表单 {#nest-forms}
+### 嵌套表单 {#nest-forms}
 
 您可以将表单嵌套在其他表单中。 例如，您可以在iconbox表单中嵌套笔记本表单。
 
 嵌套级别控制导航。 用户可以向下展开到子表单。
-
-要将表单嵌套在另一个表单中，请插入 `<container>` 元素并设置 `type` 属性。 对于顶级表单，您可以在外部容器或 `<form>` 元素。
-
-### 示例
-
-此示例显示了一个复杂的表单：
-
-* 顶级表单是一个iconbox表单。 此表单包含两个标有 **常规** 和 **详细信息**.
-
-   因此，外部窗体会显示 **常规** 和 **详细信息** 页面。 要访问这些页面，用户需单击表单左侧的图标。
-
-* 子表单是嵌套在 **常规** 容器。 该子表单包括两个被标记的容器 **名称** 和 **联系人**.
-
-
 
