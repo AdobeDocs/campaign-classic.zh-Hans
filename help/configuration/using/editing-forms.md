@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: e712298a07ecfe345c0b53a4f07f6bc4c19106f7
+source-git-commit: 0d132f56e7888ad810e309b97b9337ec56fe1ee0
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1143'
 ht-degree: 2%
 
 ---
@@ -413,7 +413,6 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
    1. 从菜单中，选择 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
    1. 选择并扩展数据架构。 例如，您可以添加字段。 [阅读更多](extending-a-schema.md)。
 
-      >[!CAUTION]
-      > 请勿在工厂命名空间中修改原始数据，而是在自定义命名空间中扩展原始数据。 原因是，在软件升级期间，工厂命名空间中的所有数据都会被覆盖。 例如， `xtk`, `ncm`和 `nms` 工厂命名空间被覆盖。 自定义命名空间中的数据不会被修改。
+
 
 
