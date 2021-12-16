@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: df3c833e99caeb94df1978dc8792b86c8634626b
+source-git-commit: 214f6874f87fce5518651f6ff818e99d5edea7e0
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1105'
 ht-degree: 2%
 
 ---
@@ -366,3 +366,40 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 您可以将表单嵌套在其他表单中。 例如，您可以在iconbox表单中嵌套笔记本表单。
 
 嵌套级别控制导航。 用户可以向下展开到子表单。
+
+要将表单嵌套在另一个表单中，请插入 `<container>` 元素并设置 `type` 属性。 对于顶级表单，您可以在外部容器或 `<form>` 元素。
+
+### 示例
+
+此示例显示了一个复杂的表单：
+
+* 顶级表单是一个iconbox表单。 此表单包含两个标有 **常规** 和 **详细信息**.
+
+   因此，外部窗体会显示 **常规** 和 **详细信息** 页面。 要访问这些页面，用户需单击表单左侧的图标。
+
+* 子表单是嵌套在 **常规** 容器。 该子表单包括两个被标记的容器 **名称** 和 **联系人**.
+
+```xml
+<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
+  <container type="iconbox">
+    <container img="ncm:general.png" label="General">
+      <container type="notebook">
+        <container label="Name">
+          <input xpath="@firstName"/>
+          <input xpath="@lastName"/>
+        </container>
+        <container label="Contact">
+          <input xpath="@email"/>
+        </container>
+      </container>
+    </container>
+    <container img="ncm:detail.png" label="Details">
+      <input xpath="@birthDate"/>
+    </container>
+  </container>
+</form>
+```
+
+因此， **常规** 外部表单的页面显示 **名称** 和 **联系人** 选项卡。
+
+![](assets/nested_forms_preview.png)
