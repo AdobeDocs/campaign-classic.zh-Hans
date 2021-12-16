@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: b06e7b3d2dcb172e6a10c383b5f9800960e7a074
+source-git-commit: d8cd7910798f62cbab8aa0d7cfcc31010ed02297
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '945'
 ht-degree: 2%
 
 ---
@@ -360,10 +360,3 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
    ```
 
    或者，移除 `type="frame"` 属性 `<container>` 元素。
-
-### 嵌套表单 {#nest-forms}
-
-您可以将表单嵌套在其他表单中。 例如，您可以在iconbox表单中嵌套笔记本表单。
-
-嵌套级别控制导航。 用户可以向下展开到子表单。
-
