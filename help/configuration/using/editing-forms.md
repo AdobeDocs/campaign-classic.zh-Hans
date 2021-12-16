@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 1ab984d12c9beb0ba3378bbfb49d1d7d07e870f6
+source-git-commit: e712298a07ecfe345c0b53a4f07f6bc4c19106f7
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1196'
 ht-degree: 2%
 
 ---
@@ -416,11 +416,4 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
       >[!CAUTION]
       > 请勿在工厂命名空间中修改原始数据，而是在自定义命名空间中扩展原始数据。 原因是，在软件升级期间，工厂命名空间中的所有数据都会被覆盖。 例如， `xtk`, `ncm`和 `nms` 工厂命名空间被覆盖。 自定义命名空间中的数据不会被修改。
 
-1. 修改工厂输入表单：
 
-   1. 从菜单中，选择 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
-   1. 选择输入表单并对其进行修改。
-
-   您可以扩展工厂数据架构，但无法扩展工厂输入表单。 我们建议您直接修改工厂输入表单，而无需重新创建。 在软件升级期间，您在工厂输入表单中所做的修改将与升级合并。 如果自动合并失败，您可以解决冲突。 [阅读更多](../../production/using/upgrading.md#resolving-conflicts)。
-
-   例如，如果扩展了工厂架构，并且添加了一个附加字段，则可以将此字段添加到相关的工厂表单中。
