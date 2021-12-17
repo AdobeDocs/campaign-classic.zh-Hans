@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
+source-git-commit: 5261021bde11bc9450a429f26aa493ca2398dbc7
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 100%
+source-wordcount: '2531'
+ht-degree: 97%
 
 ---
 
@@ -28,10 +28,11 @@ _2021 年 10 月 8 日_
 
 **补丁程序**
 
+* 改进了内部版本9342中可用的计费工作流修复，该修复要求手动重新启动工作流才能应用该修复。 现在，升级后将自动重新启动工作流。
+
 * 修复了在将 **Interaction** 模块与 [Power Booster](../../installation/using/power-booster-and-power-cluster.md) 选项结合使用时可能导致无法正确管理优惠的问题。(NEO-39263)
 
 * 修复了在多中间源实例上使用多个 IP 关联时，在发送投放时出现的“在中间服务器 xxx 上未找到 IP 关联 xxx”错误。(NEO-37514)
-
 
 ## ![](assets/do-not-localize/orange_2.png) 21.1.4 版 - 版本 9342 {#release-21-1-4-build-9342}
 
@@ -49,9 +50,9 @@ _2021 年 9 月 7 日_
 
 **其他变更**
 
+* 修复了21.1.3中引入的使用计费工作流新护栏的回归。 在错误实例上执行账单工作流，并尝试发送未生成的账单报表时崩溃。 您需要手动重新启动工作流以应用修复。
 * 之前弃用的 Microsoft CRM 连接器（Office 365 和内部部署）已从界面中删除。[阅读更多](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * 迁移到 Tomcat 8 后，更新了 IIS 设置脚本以修复 IIS 集成问题。(NEO-31019)
-* 添加了护栏，以仅允许[计费技术工作流](../../production/using/monitoring-processes.md#billing-report)在营销实例上运行。
 * 在工作流过渡的 **View population** 窗口的“data”和“schema”选项卡中，数据源标识已得到改进。
 * 以下架构中添加了缺少的数据库索引以防止出现数据库更新问题：xtk:rights、nms:dlvExclusion、nms:seedMember、nms:trackingUrl
 
@@ -193,6 +194,7 @@ Campaign 现在支持以下系统：
 
 **其他变更**
 
+* 添加了护栏，以仅允许[计费技术工作流](../../production/using/monitoring-processes.md#billing-report)在营销实例上运行。
 * 适用于 Windows 的第三方 OpenSSL 已更新至 1.1.1h 版本。
 * 在 Debian 包描述中，nlserver 已更改为 Adobe Campaign Classic 服务器。
 
