@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: bf063ec8f06c3e8e70011a5b5101f17e163a383c
+source-git-commit: 8789571c9cf9ca857777fe5c03c355200c466789
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 >如果您使用的是通过oAuth身份验证的旧版Triggers集成， **您需要按如下所述转到Adobe I/O**.
 >请注意，在迁移到 [!DNL Adobe I/O]，则某些传入触发器可能会丢失。
 >
->Campaign的旧版oAuth身份验证模式将在 **2021年10月20日**. 在扩展之前，托管环境将从扩展中受益  **2022年2月23日**. 作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须 [提供OAuth应用程序的AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) Adobe。
+>Campaign的旧版oAuth身份验证模式已在 **2021年10月20日**. 在扩展之前，托管环境将从扩展中受益  **2022年2月23日**. 作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须 [提供OAuth应用程序的AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) Adobe。
 
 ## 先决条件 {#adobe-io-prerequisites}
 

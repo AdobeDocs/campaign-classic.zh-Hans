@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
+source-git-commit: 8789571c9cf9ca857777fe5c03c355200c466789
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 97%
+source-wordcount: '1744'
+ht-degree: 96%
 
 ---
 
@@ -62,7 +62,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <td><p>从 Campaign 21.1 版本开始，弃用了“技术可投放性监视报告”功能。</p>
    <p>如果需要，您仍可以每天通过电子邮件接收此报告，直到功能被移除的那天。如需申请，请打开一个具体的<a href="https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">支持案例</a>，并指明实例的名称和用于接收报告的电子邮件地址。</p> 
    <p>Adobe 建议您与投放评估团队合作，以确定用于监测实例投放性能的理想工具。</p>
-  <p><em>目标移除日期：2021 年底</em></p>
+  <p><em>目标移除日期：2022年初</em></p>
   </td>
  </tr>
   <tr>
@@ -70,7 +70,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   <td><p> 从 Campaign 20.3 版本开始，最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成身份验证现已更改并移至 Adobe I/O。 <p>
   <p>如果您使用的是 Triggers 集成，则需要相应地调整实施。<a href="../../integrations/using/configuring-adobe-io.md">了解详情</a></p> 
   <p>有关 Oauth 身份验证折旧的详细信息，请参阅此<a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">页面</a></p> 
-  <p><em>目标删除日期：2021 年 11 月</em></p>
+  <p><em>目标移除日期：2021年10月20日。 托管环境将从扩展中受益，直到2022年2月23日。 </em></p>
   </td>
   </tr>
  </tbody> 
@@ -179,7 +179,7 @@ Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因
 
 从 19.1 版本开始，Adobe Campaign 不再与以下操作系统兼容。
 
-* CentOS 6 [了解详情](https://wiki.centos.org/Download)
+* CentOS 6. [了解详情](https://wiki.centos.org/Download)
 * Debian 7。[了解详情](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x。[了解详情](https://access.redhat.com/support/policy/updates/errata)
 * Windows Server 2008。[了解详情](https://support.microsoft.com/en-us/lifecycle/search/1163)
