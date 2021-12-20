@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
 workflow-type: tm+mt
-source-wordcount: '2559'
+source-wordcount: '2556'
 ht-degree: 88%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 88%
 ## 版本7.1(21.1)
 
 >[!CAUTION]
->Campaign **[!UICONTROL Help > About...]** 菜单允许您检查 [版本号和内部版本号](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). 但是，请注意，对于本页中列出的9277到9343之间的所有内部版本，版本号将设置为7.0，而不是7.1。
+>Campaign **[!UICONTROL Help > About...]** 菜单允许您检查 [版本号和内部版本号](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). 但请注意，对于本页中列出的9277到9343之间的所有内部版本，版本号显示为7.0，而不是7.1。
 
 ### ![](assets/do-not-localize/green_2.png) 21.1.4 版 - 版本 9343 {#release-21-1-4-build-9343}
 
