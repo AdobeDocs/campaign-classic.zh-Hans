@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 24%
@@ -32,11 +32,11 @@ Campaign用户可以使用其Adobe ID连接到Adobe Campaign控制台。 该集�
 >如果您通过Adobe标识服务(IMS)连接到Campaign，则需要升级到最新内部版本，以便在 **2021年6月30日**. 对于Campaign服务器和客户端控制台，此升级都是必需的。 根据您当前的版本，您必须升级到以下版本之一：
 >
 > * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
-> * [Campaign 21.1.3](../../rn/using/latest-release.md)
-> * [Campaign 20.2.5](../../rn/using/release--20-2.md)
-> * [Campaign 20.1.4](../../rn/using/release--20-1.md)
-> * [Campaign 19.2.4](../../rn/using/release--19-2.md)
-> * [Campaign 19.1.8](../../rn/using/release--19-1.md)
+> * [Campaign 21.1.4](../../rn/using/latest-release.md)
+> * [Campaign 20.2.5](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+> * [Campaign 20.1.4](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+> * [Campaign 19.2.4](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+> * [Campaign 19.1.8](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 >
 > [!DNL :bulb:] [了解有关IMS更新的更多信息](../../technotes/using/ims-updates.md)

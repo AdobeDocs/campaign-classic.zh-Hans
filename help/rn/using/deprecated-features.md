@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: ht
-source-wordcount: '1700'
-ht-degree: 100%
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+workflow-type: tm+mt
+source-wordcount: '1737'
+ht-degree: 98%
 
 ---
 
@@ -85,6 +85,12 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   <tr> 
    <td><strong>区域 - 功能</strong></td>
    <td><strong>替换</strong></td> 
+  </tr>
+ <tr>  
+   <td>CRM 连接器 活动<br></td>
+   <td><p> Microsoft CRM、Salesforce、OracleCRM按需活动不再可用。</p>
+   <p>要配置Adobe Campaign与CRM系统之间的数据同步，您可以使用CRM连接器活动。</p>
+   <p><a href="../../workflow/using/crm-connector.md">了解详情</a></p>
   </tr>
   <tr>  
    <td>报告<br></td>

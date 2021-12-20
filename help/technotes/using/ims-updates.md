@@ -3,9 +3,9 @@ product: campaign
 title: 技术说明 — 更新您的环境以使用IMS连接到Adobe Campaign。
 description: 营销活动 — IMS更新
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
+source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '587'
 ht-degree: 9%
 
 ---
@@ -40,10 +40,9 @@ Adobe希望在2021年6月30日之前为所有客户保留IMS功能。 IMS是安�
 
    * Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
    * Campaign 21.1.3版本。 [了解详情](../../rn/using/latest-release.md)
-   * Campaign 20.2.5版本。 [了解详情](../../rn/using/release--20-2.md)
-   * Campaign 20.1.4版本。 [了解详情](../../rn/using/release--20-1.md)
-   * Campaign 19.2.4版本。 [了解详情](../../rn/using/release--19-2.md)
-   * Campaign 19.1.8版本。 [了解详情](../../rn/using/release--19-1.md)
+   * Campaign 20.2.5版本。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+   * Campaign 20.1.4版本。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+   * Campaign 19.2.4版本。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
 
    这些版本随附了新的连接协议。 Campaign服务器和客户端控制台都必须进行升级：升级所有实例后，客户端控制台需要升级到此版本，并且在升级后能够连接到Campaign **2021年6月30日**.
 

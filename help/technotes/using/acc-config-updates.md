@@ -3,7 +3,7 @@ product: campaign
 title: 技术说明 — Adobe Campaign配置更新
 description: Adobe Campaign配置更新
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 12%
@@ -36,10 +36,10 @@ As a **托管或Managed Services客户**，则Adobe会定期通知您内部版�
 
 * Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
-* Campaign 20.2.4版本。 [了解详情](../../rn/using/release--20-2.md)
-* Campaign 20.1.4版本。 [了解详情](../../rn/using/release--20-1.md)
-* Campaign 19.2.4版本。 [了解详情](../../rn/using/release--19-2.md)
-* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--19-1.md)
+* Campaign 20.2.5版本。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign 20.1.4版本。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign 19.2.4版本。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -62,9 +62,9 @@ As a **托管或Managed Services客户**，则Adobe会定期通知您内部版�
 的 **现已可用** 应安装以下控制台版本以解析最近识别的回归参数。 此回归会阻止在投放中使用客户端控制台的某些组件，例如日期选取器和图像管理。 **控制台升级** 为必填项。
 
 * 最新Gold Standard 11内部版本9032@10c2709。 [了解详情](../../rn/using/gold-standard.md)
-* Campaign 20.1.4版本。 [了解详情](../../rn/using/release--20-1.md)
-* Campaign 19.2.4版本。 [了解详情](../../rn/using/release--19-2.md)
-* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--19-1.md)
+* Campaign 20.1.4版本。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign 19.2.4版本。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 ## AdobeIdentity Management系统(IMS)更新
 
@@ -78,10 +78,10 @@ Adobe标识服务(IMS)将停止从 **2021年6月30日**. [了解详情](https://
 
 * Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
-* Campaign 20.2.5版本。 [了解详情](../../rn/using/release--20-2.md)
-* Campaign 20.1.4版本。 [了解详情](../../rn/using/release--20-1.md)
-* Campaign 19.2.4版本。 [了解详情](../../rn/using/release--19-2.md)
-* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--19-1.md)
+* Campaign 20.2.5版本。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign 20.1.4版本。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign 19.2.4版本。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 这些版本随附了新的连接协议：必须升级，Campaign服务器和客户端控制台才能在 **2021年6月30日**.
 
@@ -111,8 +111,8 @@ Adobe标识服务(IMS)将停止从 **2021年6月30日**. [了解详情](https://
 
 * Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
-* Campaign 20.2.5版本。 [了解详情](../../rn/using/release--20-2.md)
-* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--19-1.md)
+* Campaign 20.2.5版本。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
 了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 

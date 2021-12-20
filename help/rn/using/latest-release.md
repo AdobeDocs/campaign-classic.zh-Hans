@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: 最新版本
-description: 最新 Campaign Classic 发行说明
+description: 最新Campaign Classicv7发行说明
 feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 5261021bde11bc9450a429f26aa493ca2398dbc7
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 97%
+source-wordcount: '2559'
+ht-degree: 88%
 
 ---
 
@@ -17,12 +17,14 @@ ht-degree: 97%
 
 ![](../../assets/v7-only.svg)
 
-此页面列出了&#x200B;**最新版本 Campaign Classic** 中的新功能、改进和错误修复
+本页列出了 **最新Campaign Classicv7版本**. 每个新内部版本都带有一个状态，该状态以颜色实现。 进一步了解Campaign Classicv7在中的构建状态 [本页](rn-overview.md).
 
-在[此页面](rn-overview.md)中了解 Campaign 版本状态
+## 版本7.1(21.1)
 
+>[!CAUTION]
+>Campaign **[!UICONTROL Help > About...]** 菜单允许您检查 [版本号和内部版本号](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). 但是，请注意，对于本页中列出的9277到9343之间的所有内部版本，版本号将设置为7.0，而不是7.1。
 
-## ![](assets/do-not-localize/green_2.png) 21.1.4 版 - 版本 9343 {#release-21-1-4-build-9343}
+### ![](assets/do-not-localize/green_2.png) 21.1.4 版 - 版本 9343 {#release-21-1-4-build-9343}
 
 _2021 年 10 月 8 日_
 
@@ -34,7 +36,7 @@ _2021 年 10 月 8 日_
 
 * 修复了在多中间源实例上使用多个 IP 关联时，在发送投放时出现的“在中间服务器 xxx 上未找到 IP 关联 xxx”错误。(NEO-37514)
 
-## ![](assets/do-not-localize/orange_2.png) 21.1.4 版 - 版本 9342 {#release-21-1-4-build-9342}
+### ![](assets/do-not-localize/orange_2.png) 21.1.4 版 - 版本 9342 {#release-21-1-4-build-9342}
 
 _2021 年 9 月 7 日_
 
@@ -68,7 +70,7 @@ _2021 年 9 月 7 日_
 * 修复了传入过渡是来自 FDA 数据源时，导致无法在&#x200B;**扩充**&#x200B;工作流活动中使用变量的问题。
 * 修复了一个可能导致电子邮件中的 URL 损坏的问题。
 
-## ![](assets/do-not-localize/orange_2.png) 21.1.3 版 - 版本 9330 {#release-21-1-3-build-9330}
+### ![](assets/do-not-localize/orange_2.png) 21.1.3 版 - 版本 9330 {#release-21-1-3-build-9330}
 
 _2021 年 6 月 5 日_
 
@@ -179,18 +181,18 @@ Campaign 现在支持以下系统：
 
 **已弃用的功能**
 
-* 从 Campaign 21.1 版本开始，弃用 Adobe Analytics Data Connector。如果您使用的是此连接器，则需要使用新连接器 Adobe Analytics Connector 相应地调整实施。
-有关更多信息，请参阅[有详细说明的文档](../../technotes/using/aa-connector-migration.md)。
-* 现已弃用对 Debian 8 的支持。
-* 随着在 20.3 版中弃用 OracleCRM，已从界面中删除相关的外部帐户。
+* ODBC驱动程序现在直接与Adobe Campaign第三方安装。 安装驱动程序不再需要手动步骤。
+* Google Big Query现在可用于托管部署。
 
-在[已弃用和已删除的功能页面](../../rn/using/deprecated-features.md)中了解详情。
+[了解更多信息](../../installation/using/configure-fda.md)
 
 **改进**
 
-* 在保存工作流时添加了额外的检查，以确保活动名称是唯一的，且过渡后始终跟随有活动。
-* **计费 (billing)** 技术工作流现在包括原来由&#x200B;**活跃计费用户档案数** (billingActiveContactCount) 工作流执行的任务，后者已被删除。工作流每月发送的电子邮件报表现在将提供关于实例上活跃用户档案数的信息。[阅读更多](../../workflow/using/about-technical-workflows.md)。
-* 添加了新的 **_keyOnMData** 属性，以便能够使用密钥对备忘数据进行操作。
+* 已对Microsoft Dynamics Connector Web API应用了以下关键修复：
+   * 修复了在过滤条件包含查找字段时，可能导致从Microsoft CRM导入数据失败或无法工作的问题。
+   * 修复了在由工作流触发的导入期间导致字符串类型字段的null值保存为Null而不是空值的问题。
+   * 修复了使用Web API调用导致数据导入或导出出现以下错误的问题：&quot;无效的URI:URI方案太长”。
+   * 修复了在从Microsoft Dynamics 365导入期间阻止导入查找字段数据的问题。
 
 **其他变更**
 
@@ -224,14 +226,14 @@ Campaign 现在支持以下系统：
 * 修复了由于特定加入机制导致投放个性化失败，因此导致无法发送包含一组验证的投放的问题。(NEO-14391)
 * 修复了在查询和扩充活动以投放表为目标时，无法通过警报活动发送警报的问题。(NEO-25157)
 
-## ![](assets/do-not-localize/red_2.png) 21.1.2 版 - 版本 9282 {#release-21-1-2-build-9282}
+### ![](assets/do-not-localize/red_2.png) 21.1.2 版 - 版本 9282 {#release-21-1-2-build-9282}
 
 _2021 年 4 月 15 日_
 
 * 为优化安全性，改进了密码管理。
 * 修复了可能导致 MTA 崩溃的问题。
 
-## ![](assets/do-not-localize/red_2.png) 21.1.1 版 - 版本 9277 {#release-21-1-1-build-9277}
+### ![](assets/do-not-localize/red_2.png) 21.1.1 版 - 版本 9277 {#release-21-1-1-build-9277}
 
 _2021 年 2 月 22 日_
 

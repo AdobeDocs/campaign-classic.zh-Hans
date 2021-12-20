@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
-workflow-type: ht
-source-wordcount: '2575'
-ht-degree: 100%
+source-git-commit: 5bcc0c06b5c189c4481366d0d283199d6813ecd3
+workflow-type: tm+mt
+source-wordcount: '2581'
+ht-degree: 99%
 
 ---
 
@@ -21,19 +21,14 @@ ht-degree: 100%
 + 发行说明 {#release-notes}
    + [升级入门](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
-   + [!DNL Gold Standard] 版本{#gs-release}
-      + [什么是  [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [[!DNL Gold Standard] 发行说明](rn/using/gold-standard.md)
-      + [[!DNL Gold Standard] 兼容性矩阵](rn/using/compatibility-matrix-gs.md)
    + 之前版本 {#previous-releases}
-      + [20.3 版](rn/using/release--20-3.md)
-      + [20.2 版](rn/using/release--20-2.md)
-      + [20.1 版](rn/using/release--20-1.md)
-      + [19.2 版](rn/using/release--19-2.md)
-      + [19.1 版](rn/using/release--19-1.md)
-      + [18.10 版](rn/using/release--18-10.md)
-      + [18.6 版](rn/using/release--18-6.md)
-      + [18.4 版](rn/using/release--18-4.md)
+      + [!DNL Gold Standard] 版本{#gs-release}
+         + [什么是  [!DNL Gold Standard]](rn/using/gs-overview.md)
+         + [[!DNL Gold Standard] 发行说明](rn/using/gold-standard.md)
+         + [[!DNL Gold Standard] 兼容性矩阵](rn/using/compatibility-matrix-gs.md)
+      + [2020年](rn/using/release--2020.md)
+      + [2019](rn/using/release--2019.md)
+      + [2018](rn/using/release--2018.md)
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
 + 入门 {#getting-started}
@@ -560,7 +555,7 @@ ht-degree: 100%
       + [其他数据](interaction/using/additional-data.md)
       + [扩展示例](interaction/using/extension-example.md)
       + [创建测试环境](interaction/using/creating-a-test-environment.md)
-      + [挂钩](interaction/using/hooks.md)
+      + [修改标准引擎行为](interaction/using/hooks.md)
       + [分布式架构](interaction/using/distributed-architectures.md)
       + [数据缓冲区配置](installation/using/interaction---data-buffer.md)
    + 用例 {#case-study}
@@ -849,6 +844,7 @@ ht-degree: 100%
       + [技术说明](technotes/using/technote.md)
       + [Campaign 配置更新](technotes/using/acc-config-updates.md)
       + [IMS 更新](technotes/using/ims-updates.md)
+      + [TLS 1.0和1.1支持生命周期终止](technotes/using/eol-tls-support.md)
    + 电子邮件和推送通知{#technotes-email}
       + [Apple iOS 上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
       + [Apple 邮件隐私保护常见问题解答](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hans)

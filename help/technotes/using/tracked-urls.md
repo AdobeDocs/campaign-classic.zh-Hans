@@ -5,7 +5,7 @@ description: 技术说明
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
+source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 35%
@@ -30,11 +30,12 @@ ht-degree: 35%
 
 * Gold Standard 8 - 11。 [了解详情](../../rn/using/gold-standard.md#gs-8)
 * Campaign 21.1.1（版本9277）到21.1.2（版本9282）版本。 [了解详情](../../rn/using/latest-release.md)
-* Campaign 20.3.1（版本9228）到20.3.3（版本9234）版本。 [了解详情](../../rn/using/release--20-3.md)
-* Campaign 20.2.1（版本9178）到20.2.4（版本9187）版本。 [了解详情](../../rn/using/release--20-2.md)
-* Campaign 20.1.1（版本9122）到21.1.3（版本9124）版本。 [了解详情](../../rn/using/release--20-1.md)
-* Campaign 19.2.2（版本9080）到19.2.3（版本9081）版本。 [了解详情](../../rn/using/release--19-2.md)
-* Campaign 19.1.5（版本9033）到19.1.7（版本9036）版本。 [了解详情](../../rn/using/release--19-1.md)
+* Campaign 20.3.1（版本9228）到20.3.3（版本9234）版本。 [了解详情](../../rn/using/release--2020.md#release-20-3)
+* Campaign 20.2.1（版本9178）到20.2.4（版本9187）版本。 [了解详情](../../rn/using/release--2020.md#release-20-2)
+* Campaign 20.1.1（版本9122）到21.1.3（版本9124）版本。 [了解详情](../../rn/using/release--2020.md#release-20-1)
+* Campaign 19.2.2（版本9080）到19.2.3（版本9081）版本。 [了解详情](../../rn/using/release--2019.md#release-19-2)
+* Campaign 19.1.5（版本9033）到19.1.7（版本9036）版本。 [了解详情](../../rn/using/release--2019.md#release-19-1)
+
 
 了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
