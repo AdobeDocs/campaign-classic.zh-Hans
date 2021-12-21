@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
 workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ _2021 年 10 月 8 日_
 
 **补丁程序**
 
-* 改进了内部版本9342中可用的计费工作流修复，该修复要求手动重新启动工作流才能应用该修复。 现在，升级后将自动重新启动工作流。
+* 改进了版本 9342 中使用的计费工作流修补程序，该程序需要手动重启工作流才能应用。现在，升级后将自动重启工作流。
 
 * 修复了在将 **Interaction** 模块与 [Power Booster](../../installation/using/power-booster-and-power-cluster.md) 选项结合使用时可能导致无法正确管理优惠的问题。(NEO-39263)
 
@@ -52,7 +52,7 @@ _2021 年 9 月 7 日_
 
 **其他变更**
 
-* 修复了21.1.3中引入的使用计费工作流新护栏的回归。 在错误实例上执行账单工作流，并尝试发送未生成的账单报表时崩溃。 您需要手动重新启动工作流以应用修复。
+* 修复了 21.1.3 中引入的与计费工作流新护栏有关的回归问题。计费工作流在错误实例上执行，并在尝试发送未生成的计费报告时崩溃。您需要手动重启工作流以便应用此修补程序。
 * 之前弃用的 Microsoft CRM 连接器（Office 365 和内部部署）已从界面中删除。[阅读更多](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * 迁移到 Tomcat 8 后，更新了 IIS 设置脚本以修复 IIS 集成问题。(NEO-31019)
 * 在工作流过渡的 **View population** 窗口的“data”和“schema”选项卡中，数据源标识已得到改进。
