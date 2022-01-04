@@ -5,9 +5,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '882'
 ht-degree: 4%
 
 ---
@@ -95,6 +95,8 @@ ht-degree: 4%
 * 在 [类型](../../campaign-opt/using/about-campaign-typologies.md) 使用 **[!UICONTROL Managing affinities with IP addresses]** 用于将投放链接到管理所述亲和度的投放服务器(MTA)的字段。 [了解详情](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic)。
 
 * 发送电子邮件后，检查标题以验证发送投放的IP地址。 电子邮件管理员应帮助您获取标题信息。
+
+* 对于短信投放，请确保短信渠道具有专用亲和度，该亲和度限于 **one** 应用程序服务器容器。 [了解详情](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >

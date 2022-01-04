@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 5bcc0c06b5c189c4481366d0d283199d6813ecd3
+source-git-commit: e142bcc18dd22179d83c54b9e79d3e3339b005fa
 workflow-type: tm+mt
-source-wordcount: '2581'
+source-wordcount: '2599'
 ht-degree: 99%
 
 ---
@@ -597,6 +597,7 @@ ht-degree: 99%
    + 附件 {#annexes}
       + [Facebook 应用程序示例](social/using/examples-of-facebook-apps.md)
       + [跟踪](social/using/tracking.md)
++ [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
 + 安装和配置指南 {#installing-campaign-classic}
    + 架构原理 {#architecture-and-hosting-models}
       + [一般架构](installation/using/general-architecture.md)
@@ -854,3 +855,4 @@ ht-degree: 99%
    + 迁移到 Adobe Managed Services{#dc-migration}
       + [迁移到公共云](technotes/using/dc-migration.md)
       + [常见问题解答](technotes/using/dc-migration-faq.md)
++ [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)

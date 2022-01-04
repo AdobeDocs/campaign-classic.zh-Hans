@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 638b259462d3e01d744567e56d67a120359dc34a
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1625'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,10 @@ ht-degree: 3%
 
    ![](assets/s_user_segmentation_toolbar.png)
 
-   有关跟踪和启动高级定位工作流的图标，请参阅此章节 [部分](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   以下章节详细介绍了与进度和日志显示相关的图标：
+
+   * [显示进度](../../workflow/using/monitoring-workflow-execution.md#displaying-progress)
+   * [显示日志](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)
 
 * **对象对齐**
 

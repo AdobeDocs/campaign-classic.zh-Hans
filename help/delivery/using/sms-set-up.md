@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1697'
 ht-degree: 35%
 
 ---
@@ -24,6 +24,10 @@ ht-degree: 35%
    请注意，现已弃用旧版连接器。 已弃用的功能仍然可用，但不会进一步增强或支持这些功能。请参阅[此页面](../../rn/using/deprecated-features.md)以了解详情。
 
 1. 在其中引用此外部帐户的投放模板。
+
+>[!NOTE]
+>
+> 对于短信投放，分类应使用在中创建的特定短信亲和度 **one** 专用应用程序服务器容器。 [了解详情](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 ## 创建SMPP外部帐户 {#creating-an-smpp-external-account}
 
