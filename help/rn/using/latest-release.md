@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: 最新版本
-description: 最新Campaign Classicv7发行说明
+description: 最新 Campaign Classic v7 发行说明
 feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
+source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 91%
+source-wordcount: '2580'
+ht-degree: 97%
 
 ---
 
@@ -181,18 +181,18 @@ Campaign 现在支持以下系统：
 
 **已弃用的功能**
 
-* ODBC驱动程序现在直接与Adobe Campaign第三方安装。 安装驱动程序不再需要手动步骤。
-* Google Big Query现在可用于托管部署。
+* 从 Campaign 21.1 版本开始，弃用 Adobe Analytics Data Connector。如果您使用的是此连接器，则需要使用新连接器 Adobe Analytics Connector 相应地调整实施。
+有关更多信息，请参阅[有详细说明的文档](../../technotes/using/aa-connector-migration.md)。
+* 现已弃用对 Debian 8 的支持。
+* 随着在 20.3 版中弃用 OracleCRM，已从界面中删除相关的外部帐户。
 
-[了解更多信息](../../installation/using/configure-fda.md)
+在[已弃用和已删除的功能页面](../../rn/using/deprecated-features.md)中了解详情。
 
 **改进**
 
-* 已对Microsoft Dynamics Connector Web API应用了以下关键修复：
-   * 修复了在过滤条件包含查找字段时，可能导致从Microsoft CRM导入数据失败或无法工作的问题。
-   * 修复了在由工作流触发的导入期间导致字符串类型字段的null值保存为Null而不是空值的问题。
-   * 修复了使用Web API调用导致数据导入或导出出现以下错误的问题：&quot;无效的URI:URI方案太长”。
-   * 修复了在从Microsoft Dynamics 365导入期间阻止导入查找字段数据的问题。
+* 在保存工作流时添加了额外的检查，以确保活动名称是唯一的，且过渡后始终跟随有活动。
+* **计费 (billing)** 技术工作流现在包括原来由&#x200B;**活跃计费用户档案数** (billingActiveContactCount) 工作流执行的任务，后者已被删除。工作流每月发送的电子邮件报表现在将提供关于实例上活跃用户档案数的信息。[阅读更多](../../workflow/using/about-technical-workflows.md)。
+* 添加了新的 **_keyOnMData** 属性，以便能够使用密钥对备忘数据进行操作。
 
 **其他变更**
 

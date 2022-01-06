@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 8789571c9cf9ca857777fe5c03c355200c466789
+source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 96%
+source-wordcount: '1707'
+ht-degree: 98%
 
 ---
 
@@ -84,14 +84,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
  <tbody>
   <tr> 
    <td><strong>区域 - 功能</strong></td>
-   <td><strong>替换</strong></td> 
-  </tr>
- <tr>  
-   <td>CRM 连接器 活动<br></td>
-   <td><p> Microsoft CRM、Salesforce、OracleCRM按需活动不再可用。</p>
-   <p>要配置Adobe Campaign与CRM系统之间的数据同步，您可以使用CRM连接器活动。</p>
-   <p><a href="../../workflow/using/crm-connector.md">了解详情</a></p>
-  </tr>
+   <td><strong>替换</strong></td>
   <tr>  
    <td>报告<br></td>
    <td><p>在 Adobe Flash Player 生命周期结束后，量规报告和图表渲染引擎不再可用。<a href="../../reporting/using/creating-a-new-report.md">了解详情</a></p>
