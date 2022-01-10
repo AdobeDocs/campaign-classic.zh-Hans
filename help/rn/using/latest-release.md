@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e4dfdd32c07753ee9e202ab4e4bf815485e47d8b
+source-git-commit: 630a62c5e5c9782c5c55fdebd651493a2d68fc54
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1056'
 ht-degree: 17%
 
 ---
@@ -30,7 +30,7 @@ FDA帐户已进行多项安全改进：
 * ODBC驱动程序现在直接与Adobe Campaign第三方安装。 安装这些驱动程序不再需要手动步骤。
 * 配置FDA外部帐户时，您现在可以使用密钥对身份验证登录到Snowflake帐户，以增强身份验证安全性。 [了解更多信息](../../installation/using/configure-fda-snowflake.md)
 * 现在，在配置FDA外部帐户时，您可以使用系统分配的托管身份登录到Azure synapse分析帐户。 [了解更多信息](../../installation/using/configure-fda-synapse.md#azure-external)
-
+* 已从Campaign中删除对log4j库的所有引用，以确保获得最佳安全性。
 
 **改进**
 
@@ -55,6 +55,7 @@ FDA帐户已进行多项安全改进：
 * 在 **错误管理** 工作流活动的属性：的 **出错时中止** 选项会自动停止工作流。 之后将无法重新启动它(NEO-29661)。 [了解更多信息](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * 现在，专用序列用于生成nmsGroup表的主密钥，该表用于创建收件人的统计组。 以前，使用xtknewId序列。 (NEO-30832)
 * 添加了对使用CRM连接器活动进行批量更新操作的支持。
+* 改进了事务性消息传递处理时间的性能。 (NEO-40370)
 
 **修补程序**
 
