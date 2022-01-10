@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Adobe Campaign运营商可以使用论坛来共享信息。 以下元素各自�
 要访问操作员论坛，请执行以下操作：
 
 * 如果您拥有访问 **[!UICONTROL Administration > Access management > Operators]** 浏览器的节点，打开所需运算符的仪表板，然后单击 **[!UICONTROL Forum]** 链接。
-* 如果没有，请在Adobe Campaign中找到操作员的姓名（通过此操作员向论坛发布的消息，即分配给他的任务），然后单击该姓名以访问其仪表板。 您还可以要求管理员创建操作员文件夹的视图。
+* 如果没有，请在Adobe Campaign中找到操作员的姓名（通过此操作员向论坛发布的消息，该消息是指派给他们的任务），然后单击该名称以访问其仪表板。 您还可以要求管理员创建操作员文件夹的视图。
 
 ## 订阅论坛 {#subscribing-to-a-forum}
 

@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9265d389da53e51889c2b7a8cd330c1866a030d9
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 1%
+source-wordcount: '731'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)选项，用于处理存储在外部数据库中的信息。 请按照以下步骤配置对MicrosoftAzure synapse分析的访问权限。
+使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)选项，用于处理存储在外部数据库中的信息。 请按照以下步骤配置对 **MicrosoftAzure synapse分析**.
 
 1. 配置Azure synapse [CentOS](#azure-centos), [Windows](#azure-windows) 或 [德比安](#azure-debian)
 1. 配置Azure synapse [外部帐户](#azure-external) 在Campaign中
@@ -191,7 +191,6 @@ ht-degree: 1%
    >
    >要允许从Azure synapse分析端进行通信，您可能需要将公共IP添加到允许列表中。 为此，请参阅 [Azure文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
-
 ## azure synapse外部帐户 {#azure-external}
 
 的 [!DNL Azure Synapse] 外部帐户允许您将Campaign实例连接到Azure synapse外部数据库。
@@ -206,14 +205,34 @@ ht-degree: 1%
 
    ![](assets/azure_1.png)
 
-1. 配置 [!DNL Azure Synapse] 外部帐户，您必须指定：
+1. 在 **[!UICONTROL Configuration]**，选择 **[!UICONTROL Azure Synapse Analytics]** 从 **[!UICONTROL Type]** 下拉菜单。
 
-   * **[!UICONTROL Type]**:azure synapse分析
+   ![](assets/azure_2.png)
 
-   * **[!UICONTROL Server]**:azure synapse服务器的URL
+1. 配置 [!DNL Azure Synapse] 外部帐户：
 
-   * **[!UICONTROL Account]**:用户的名称
+   * 对于标准身份验证，您必须指定：
 
-   * **[!UICONTROL Password]**:用户帐户密码
+      * **[!UICONTROL Server]**:azure synapse服务器的URL
 
-   * **[!UICONTROL Database]**:数据库的名称
+      * **[!UICONTROL Account]**:用户的名称
+
+      * **[!UICONTROL Password]**:用户帐户密码
+
+      * **[!UICONTROL Database]**:数据库的名称
+
+      ![](assets/azure_3.png)
+
+   * 对于系统分配的托管身份验证，您必须指定：
+
+      * **[!UICONTROL Server]**:azure synapse服务器的URL
+
+      * **[!UICONTROL Database]**:数据库的名称
+
+      * **[!UICONTROL Options]**:添加以下语法 `Authentication=ActiveDirectoryMsi`
+
+      ![](assets/azure_4.png)
+
+
+
+1. 单击 **[!UICONTROL Save]**。

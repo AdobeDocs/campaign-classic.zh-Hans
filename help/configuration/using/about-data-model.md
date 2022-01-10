@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 6%
@@ -83,7 +83,7 @@ Adobe Campaign中内置的“收件人”表为构建数据模型提供了一个
 
 ## 使用自定义收件人表 {#custom-recipient-table}
 
-在设计Adobe Campaign数据模型时，您可以使用 [现成的收件人表](#default-recipient-table)，或决定创建 [自定义收件人表](../../configuration/using/about-custom-recipient-table.md) 用于存储营销用户档案的表。
+在设计Adobe Campaign数据模型时，您可以使用 [内置收件人表](#default-recipient-table)，或决定创建 [自定义收件人表](../../configuration/using/about-custom-recipient-table.md) 用于存储营销用户档案的表。
 
 事实上，如果您的数据模型不适合以收件人为中心的结构，则可以设置其他表作为Adobe Campaign中的定向维度。 例如，当您需要定位家庭、帐户（如手机）和公司/网站，而不是简单的收件人时，这可能会相关。
 
@@ -95,11 +95,11 @@ Adobe Campaign中内置的“收件人”表为构建数据模型提供了一个
 
 使用自定义Recipient表的好处如下：
 
-* **灵活的数据模型**  — 如果您不需要大多数收件人表字段，或者数据模型不是以收件人为中心，则开箱即用的收件人表将毫无用处。
+* **灵活的数据模型**  — 如果您不需要大多数收件人表字段，或者数据模型不是以收件人为中心，则内置的收件人表将毫无用处。
 
-* **可扩展性**  — 大型卷需要精简的表格，其中很少有字段，以便进行高效设计。 现成的“收件人”表将包含太多无用的字段，这可能会影响性能并且缺乏效率。
+* **可扩展性**  — 大型卷需要精简的表格，其中很少有字段，以便进行高效设计。 内置的收件人表将包含太多无用字段，这可能影响性能并且缺乏效率。
 
-* **数据位置**  — 如果数据位于外部现有的营销数据库上，则使用现成的“收件人”表可能需要过多的工作。 基于现有结构创建新结构更简单。
+* **数据位置**  — 如果数据位于外部现有的营销数据库上，则使用内置的收件人表可能需要过多的工作。 基于现有结构创建新结构更简单。
 
 * **轻松迁移**  — 无需维护，即可检查所有扩展在升级时是否仍然有效。
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 每个 **[!UICONTROL Design]** 环境已链接到 **[!UICONTROL Live]** 环境。 选件完成后，其内容和资格规则将受到批准周期的约束。 完成此周期后，相关选件会自动部署到 **[!UICONTROL Live]** 环境。 从此刻起，它将可供投放。
 
-默认情况下，交互会 **[!UICONTROL Design]** 环境和 **[!UICONTROL Live]** 链接到该环境。 这两个环境都已预配置为定向即装即用的收件人表。
+默认情况下，交互会 **[!UICONTROL Design]** 环境和 **[!UICONTROL Live]** 链接到该环境。 这两个环境都已预配置为定向内置的收件人表。
 
 >[!NOTE]
 >

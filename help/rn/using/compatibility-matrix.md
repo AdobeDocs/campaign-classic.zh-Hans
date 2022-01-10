@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '720'
 ht-degree: 89%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 89%
 
 本文档列出了针对[最新内部版本](../../rn/using/latest-release.md)的 **Adobe Campaign Classic v7** 支持的所有系统和组件。此列表中未包含的产品和版本与 Adobe Campaign 不兼容。
 
-如果您是 [!DNL Gold Standard] 用户，请参阅 [[!DNL Gold Standard]  兼容性矩阵](../../rn/using/compatibility-matrix-gs.md)。
+如果您是 [!DNL Gold Standard] 用户，请参阅 [[!DNL Gold Standard]  兼容性矩阵](../../rn/using/gold-standard.md#compatibility-matrix-gs)。
 
 ## 重要说明{#important-notes}
 
@@ -48,7 +48,6 @@ ht-degree: 89%
 <tr>
 <td>Debian</td>
 <td>
-<p>11（64 位）</p>
 <p>10（64 位）</p>
 <p>9（64 位）</p>
 </td>
@@ -64,7 +63,6 @@ ht-degree: 89%
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2019</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -149,7 +147,7 @@ ht-degree: 89%
 <tr>
 <td>SQL Server</td>
 <td>
-<p>2019年</p>
+<p>2019</p>
 <p>2017</p>
 <p>2016年</p>
 <p>2014</p>
@@ -190,54 +188,31 @@ ht-degree: 89%
 
 ## 联合数据访问 (FDA){#FederatedDataAccessFDA}
 
-下面列出了与 Adobe Campaign [联合数据访问模块](../../installation/using/about-fda.md)兼容的外部数据库。
+下面列出了与 Adobe Campaign [联合数据访问模块](../../installation/using/about-fda.md)兼容的外部数据库。兼容性取决于 [托管模型](../../installation/using/hosting-models.md).
+
+**Managed Services** （托管）、 **混合** 和 **内部部署** 环境可以将Campaign与以下外部数据库系统连接：
+
 <table>
 <tbody>
-<td><strong>连接器</strong></td>
-<td><strong>版本兼容性</strong></td>
-<td><strong>托管模型兼容性</strong></td>
-<td><strong>版本兼容性</strong></td>
+<td><strong>数据库系统</strong></td>
+<td><strong>数据库版本</strong></td>
+<td><strong>Campaign版本</strong></td>
 <tr>
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>Managed Services、混合和内部部署</td>
-<td>最少21.1.5</td>
-</tr>
-<td>Vertica</td>
-<td> </td>
-<td>仅限混合和内部部署</td>
-<td>最少19.1.4人</td>
+<td>最少7.2.1</td>
 </tr>
 <tr>
-<td>Google Big Query</td>
+<td>Google BigQuery</td>
 <td> </td>
-<td>Managed Services、混合和内部部署</td>
-<td>最少21.1.5</td>
-</tr>
-<tr>
-<td>Microsoft Azure Synapse Analytics</td>
-<td> </td>
-<td>混合和内部部署</td>
-<td>最少19.1.4人</td>
+<td>最少7.2.1</td>
 </tr>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
-<td>Managed Services、混合和内部部署</td>
-<td>最少19.1.4人</td>
+<td>最低v7.0 19.1.4</td>
 </td>
-</tr>
-<tr>
-<td>Oracle</td>
-<td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
-<p>11g</p>
-</td>
-<td>仅限混合和内部部署</td>
-<td>最少6.11伏</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -250,8 +225,37 @@ ht-degree: 89%
 <p>9.5.x</p>
 <p>9.4.x</p>
 </td>
-<td>Managed Services、混合和内部部署</td>
-<td>最少19.1.4人</td>
+<td>最少7.0版19.1.4</td>
+</tr>
+</tbody>
+</table>
+
+此外， **混合** 和 **内部部署** 环境还可以将Campaign与：
+
+<table>
+<tbody>
+<td><strong>数据库系统</strong></td>
+<td><strong>数据库版本</strong></td>
+<td><strong>Campaign版本</strong></td>
+<tr>
+<td>Vertica</td>
+<td> </td>
+<td>最少7.0版19.1.4</td>
+</tr>
+<tr>
+<td>Microsoft Azure Synapse Analytics</td>
+<td> </td>
+<td>最少7.0版19.1.4</td>
+</tr>
+<tr>
+<td>Oracle</td>
+<td>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
+<p>11g</p>
+</td>
+<td>最少7.0版</td>
 </tr>
 <tr><td>SQL Server</td>
 <td>
@@ -261,15 +265,13 @@ ht-degree: 89%
 <p>2014年</p>
 <p>2012 SP1 和 SP2</p>
 </td>
-<td>仅限混合和内部部署</td>
-<td>最少6.11伏</td>
+<td>最少7.0版</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
 <p>5.7</p>
 </td>
-<td>仅限混合和内部部署</td>
-<td>最少6.11伏</td>
+<td>最少7.0版</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -279,16 +281,14 @@ ht-degree: 89%
 <p>15.10</p>
 <p>15.0</p>
 </td>
-<td>仅限混合和内部部署</td>
-<td>最少6.11伏</td>
+<td>最少7.0版</td>
 </tr>
 <tr>
 <td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
-<td>仅限混合和内部部署</td>
-<td>最少6.11伏</td>
+<td>最少7.0版</td>
 </tr>
 <tr>
 <td>Sybase</td>
@@ -296,16 +296,14 @@ ht-degree: 89%
 <p>IQ 16</p>
 <p>ASE 15.7</p>
 </td>
-<td>仅限混合和内部部署</td>
-<td>最少6.11伏</td>
+<td>最少7.0版</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
 <td>
 <p>V1 SPS 12</p>
 </td>
-<td>仅限混合和内部部署</td>
-<td>最少6.11伏</td>
+<td>最少7.0版</td>
 </tr>
 <tr><td>Hadoop（通过 HiveSQL）</td>
 <td>
@@ -313,11 +311,13 @@ ht-degree: 89%
 <p>HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6)</p>
 <p>Cloudera CDH6.x</p>
 </td>
-<td>仅限混合和内部部署</td>
-<td>最少6.11伏</td>
+<td>最少7.0版</td>
 </tr>
 </tbody>
 </table>
+
+
+
 
 
 ## 客户端控制台 {#ClientConsoleoperatingsystems}

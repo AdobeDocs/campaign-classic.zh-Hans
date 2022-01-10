@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 2cdcd45fc142eb9ae9e32c17a67beb4eaf2d2953
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 3%
+source-wordcount: '1104'
+ht-degree: 2%
 
 ---
 
@@ -199,7 +199,7 @@ Campaign和Microsoft Dynamics现已连接。 您可以在两个系统之间设�
 
 >[!NOTE]
 >
-> 您需要确保将添加到允许列表两个URL:服务器URL和 `login.microsoftonline.com` 中。
+> 您需要确保将添加到允许列表两个URL:服务器URL和 `login.microsoftonline.com` 中。 有关如何配置URL权限的更多信息，请参阅此 [页面](../../installation/using/url-permissions.md).
 
 ## 支持的字段数据类型 {#ms-dyn-supported-types}
 

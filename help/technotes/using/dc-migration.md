@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1557'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## 上下文
 
-作为Adobe Campaign Classic的重要客户，我们致力于为您提供最佳体验和价值。 多年来，我们已经认识到在云中托管客户的价值和可靠性。  作为 [Gold Standard计划](../../rn/using/gold-standard.md)，我们会将所有客户转移到Adobe Managed Services(AWS上的Public Cloud)，以提供更好、更可靠的服务。
+作为Adobe Campaign Classic的重要客户，我们致力于为您提供最佳体验和价值。 多年来，我们已经认识到在云中托管客户的价值和可靠性。  作为 [每年升级计划](../../rn/using/rn-overview.md#yearly-upgrade)，我们会将所有客户转移到Adobe Managed Services(AWS上的Public Cloud)，以提供更好、更可靠的服务。
 
 该计划有三个主要目标：
 
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 * **内部版本升级**  — 将Adobe Campaign Classic软件更新为最新的安全内部版本号，但保持在相同的主/次内部版本级别时。 例如：Campaign v7 20.2.3内部版本9182到Campaign v7 21.2.5内部版本9188。 [了解详情](../../platform/using/faq-build-upgrade.md)。
 * **MID/RT**  — 在Analytics Cloud上托管的消息执行服务器（批量促销活动为MID，实时单一消息为RT）
-* **Gold Standard升级**  — 此方案提供了改进的安全性、改进的支持、增强的维护和稳定性。 它还可以简化将来的升级过程，并允许访问Campaign中的新功能。  [了解详情](../../rn/using/gs-overview.md)。
+* **每年升级计划**  — 此方案提供了改进的安全性、改进的支持、增强的维护和稳定性。 它还可以简化将来的升级过程，并允许访问Campaign中的新功能。  [了解详情](../../rn/using/rn-overview.md#yearly-upgrade)。
 * **AWS** - Amazon Web Services(Amazon Public Cloud)
 * **SFTP**  — 安全文件传输协议。 [了解详情](../../platform/using/sftp-server-usage.md)。
 
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 * 改进了电子邮件容量
 * 更大的数据库
-* Sposed Campaign版本 — Gold Standard
+* 对Campaign版本进行了校验
 
 **为Adobe Campaign Classic客户提供可靠而可靠的解决方案**
 
@@ -67,10 +67,10 @@ ht-degree: 2%
 1. 电子邮件发送容量更高。 在新数据中心托管的实例将能够从电子邮件投放的专用基础架构中受益。 这可能会提高电子邮件发送速度，或者减少发送IP的使用。
 1. 更好的硬件可扩展性。 增加硬件资源可以更快地完成。 从技术上讲，这个数量级是1小时，而不是几天。
 
-**Gold Standard可简化未来升级**
+**每年升级可简化未来升级**
 
 1. 贵组织等待升级的时间越长，升级的复杂程度就越高，面临漏洞的可能性也会增加（尤其是从旧版本迁移时）。
-1. 通过Gold Standard升级，您的实例将实现现代化，并准备好以更少的手动干预和更少的资源接收更多自动化和定期更新。
+1. 借助Campaign每年升级（以前是Gold Standard计划），您的实例将实现现代化，并准备好以更少的手动干预和资源获得更自动化和定期的更新。
 
 ![](assets/GSMigrations.png)
 
@@ -84,7 +84,7 @@ ht-degree: 2%
 
 ### 此迁移是否是强制性的？
 
-迁移到云的步骤是 **第一步 [Gold Standard认证](../../rn/using/gs-overview.md)** 的Adobe Campaign实例。 如果您托管在非公共云(AWS)的数据中心，则必须进行此迁移。
+迁移到云的步骤是 **第一步 [年度升级计划](../../rn/using/rn-overview.md#yearly-upgrade)** 的Adobe Campaign实例。 如果您托管在非公共云(AWS)的数据中心，则必须进行此迁移。
 
 Amazon Web Services(AWS)是一个现代、安全且优化的环境，Adobe Managed Services云就托管在该环境上。 [进一步了解AWS](https://aws.amazon.com/application-hosting/benefits/).
 
@@ -109,12 +109,6 @@ Adobe致力于保护您的数据，并使您能够跟踪Adobe Campaign的未来�
 
 在Campaign迁移中了解详情，请 [Public Cloud常见问题解答](dc-migration-faq.md).
 
-
-## 历程到Gold Standard认证
-
-我们将协助您完成每个里程碑之间的验证步骤。
-
-![](assets/GS-milestones.png)
 
 ## 迁移到公共云的路径
 
@@ -216,5 +210,5 @@ Adobe将在新数据中心配置相同数量的IP。
 ## 支持以及其他有用链接{#support}
 
 * [迁移到Adobe Managed Services(Public Cloud)常见问题解答](dc-migration-faq.md)
-* [Gold Standard升级](../../rn/using/gs-overview.md)
+* [促销活动每年升级](../../rn/using/rn-overview.md)
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)

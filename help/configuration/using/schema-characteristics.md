@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 模式特性{#schema-characteristics}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 引用现有表的模式的特征如下：
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->请勿删除标准收件人表中的字段，即使这些字段无用也是如此。 这可能会导致Adobe Campaign数据库中的行为错误。
+>请勿删除内置收件人表中的字段，即使这些字段无用也是如此。 这可能会导致Adobe Campaign数据库中的行为错误。
 
 ## 视图属性 {#the-view-attribute}
 

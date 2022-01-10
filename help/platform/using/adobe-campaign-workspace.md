@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 80%
+source-wordcount: '909'
+ht-degree: 67%
 
 ---
 
@@ -35,17 +35,17 @@ ht-degree: 80%
 
 ### 控制台和 Web 访问 {#console-and-web-access}
 
-可通过控制台或互联网浏览器访问 Adobe Campaign 平台。
+可通过控制台或互联网浏览器访问 Adobe Campaign 平台。在 [兼容性矩阵](../../rn/using/compatibility-matrix.md#Browsers).
 
-Web 访问提供了与控制台类似的界面，但是功能有所减少。
+Web访问界面与控制台界面类似。 在浏览器中，您可以使用与控制台相同的导航和显示功能，但只能对营销活动执行一组缩减的操作。 例如，您可以查看和取消营销活动，但无法修改营销活动。 对于给定的运算符，将在控制台中显示具有以下选项的营销活动：
 
-例如，针对指定的操作员，控制台中会显示活动及以下选项：
+![从营销活动的仪表板，操作员可以查看和取消营销活动，但也可以对其进行修改，并向其添加投放、文档和任务。](assets/operation_from_console.png)
 
-![](assets/operation_from_console.png)
+而使用Web访问时，选项将主要启用查看功能：
 
-而使用 Web 访问时，选项主要是查看功能：
+![在浏览器中，同一操作员只能查看和取消营销活动。](assets/operation_from_web.png)
 
-![](assets/operation_from_web.png)
+详细了解 [使用web界面](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 ### 语言 {#languages}
 

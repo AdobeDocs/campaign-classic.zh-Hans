@@ -6,7 +6,7 @@ feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 2%
@@ -103,7 +103,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >即使帐户被禁用，操作员仍可以从Campaign接收警报或通知。 要停止向此运算符发送Campaign通知，Adobe建议您从其用户档案中删除电子邮件地址。
+   >即使其帐户被禁用，操作员仍可以从Campaign接收警报或通知。 要停止向此运算符发送Campaign通知，Adobe建议您从其用户档案中删除电子邮件地址。
 
 * 的 **[!UICONTROL Forbid access from the rich client]** 选项，您可以将Adobe Campaign的使用限制为 [Web访问](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) 或通过API:对Adobe Campaign客户端控制台的访问权限不再可用。
 * 可以将安全区与操作员链接。 有关详细信息，请参见[此页面](../../installation/using/security-zones.md)。

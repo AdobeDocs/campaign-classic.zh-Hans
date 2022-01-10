@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7a1b8a1cd3ad434dac5c324056113d7ec15ddd8a
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 2%
+source-wordcount: '501'
+ht-degree: 1%
 
 ---
 
@@ -73,8 +73,9 @@ ht-degree: 2%
 
 利用此字段，可定义在活动出错时要执行的操作。 有两种可能的选项：
 
-* **[!UICONTROL Stop the process]**:工作流将自动停止。 其状态更改为 **[!UICONTROL Failed]**. 解决问题后，重新启动工作流。
+* **[!UICONTROL Suspend the process]**:工作流将自动停止。 其状态更改为 **[!UICONTROL Failed]**. 解决问题后，重新启动工作流。
 * **[!UICONTROL Ignore]**:不会执行此任务和以下所有任务（在同一分支中）。 这对于定期任务很有用。 如果分支具有上游调度程序，则该调度程序将像往常一样在下一个执行日期开始。
+* **[!UICONTROL Abort on error]**:工作流会自动停止，无法重新启动。 其状态更改为 **[!UICONTROL Failed]**.
 
 ## 初始化脚本 {#initialization-script}
 

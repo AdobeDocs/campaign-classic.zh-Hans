@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 1f8a51fc7760e8dcdf369cb759de724b0e7bea0c
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '293'
 ht-degree: 20%
 
 ---
@@ -47,8 +47,7 @@ Adobe Campaign提供 **联合数据访问** (FDA)选项，用于处理存储在�
 
 >[!CAUTION]
 >
->只有内部部署或混合安装才能通过FDA访问外部数据库， [Snowflake连接器](../../installation/using/configure-fda-snowflake.md).
-
+>兼容的外部数据库系统取决于您的托管模型。 在 [Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md).
 
 **另请参阅**
 
@@ -57,4 +56,3 @@ Adobe Campaign提供 **联合数据访问** (FDA)选项，用于处理存储在�
 * [Campaign Classic升级](../../rn/using/rn-overview.md)
 * [已弃用和已移除的功能](../../rn/using/deprecated-features.md)
 * [[!DNL Gold Standard] 版本](../../rn/using/gold-standard.md)
-* [[!DNL Gold Standard] 项目](../../rn/using/gs-overview.md)

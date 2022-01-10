@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '886'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ Adobe Campaign 功能帮助您遵守以下法规：
 
 * **访问权**&#x200B;是数据主体从数据控制者处就与其有关的个人数据是否正在进行处理、处理位置和处理目的获得确认的权限。数据控制者应当以电子格式免费提供个人数据副本。
 
-* **被遗忘权**（删除请求）也称为数据擦除，用于授权数据主体通过数据控制者擦除其个人数据，停止进一步散发数据，并可能使第三方停止处理数据。
+* **被遗忘权**（删除请求）也称为数据擦除，允许数据主体通过数据控制者擦除其个人数据，停止进一步传播数据，并可能使第三方停止处理数据。
 
 要了解如何可以创建&#x200B;**访问**&#x200B;和&#x200B;**删除**&#x200B;请求以及 Adobe Campaign 如何处理这些请求，请参阅[实施步骤](../../platform/using/privacy-requests.md)。
 

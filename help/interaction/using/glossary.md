@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 0%
@@ -64,7 +64,7 @@ ht-degree: 0%
 * **酉模式**:每次处理一个联系人。 此模式通常用于集客交互和事务型消息。
 * **识别模式**:是指联系人的状态。
 
-   * **[!UICONTROL explicit]** :联系人在登录渠道界面后被识别。
+   * **[!UICONTROL explicit]** :联系人在登录渠道界面后即被识别。
    * **[!UICONTROL implicit]** :联系人已通过cookie（永久或会话）进行识别。 它可以作为匿名或已识别的联系人进行处理。
    * **[!UICONTROL anonymous]** :无法识别联系人。
 

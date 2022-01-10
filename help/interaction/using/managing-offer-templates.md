@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: e4a6cc22-05bd-4b8a-984d-d0706fc210e1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 5%
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 # 管理优惠模板{#managing-offer-templates}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 选件模板在Adobe Campaign中现成提供。 在创建选件、复制选件或根据需要调整其配置后，您可以使用这些选件。 您还可以创建自己的模板。 模板选件存储在文件夹中 **资源** > **模板** > **选件模板**.
 

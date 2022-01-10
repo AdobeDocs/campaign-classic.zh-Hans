@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: e2dea4a0-9ed8-47b6-a16b-eeee653d2290
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7728826eea199d2367fcbf556c01ec9d6cae466f
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # 执行设置{#execution-settings}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 在创建模拟时，您可以根据需要指定执行设置。 通过这些设置，您可以根据模拟的优先级在活动不足时执行模拟，或在日志中记录SQL查询。 此阶段是可选的。
 

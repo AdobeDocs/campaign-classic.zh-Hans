@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '2614'
-ht-degree: 14%
+ht-degree: 13%
 
 ---
 
@@ -37,13 +37,13 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 
 **隔离**&#x200B;仅适用于地址，而不适用于用户档案本身。这意味着，如果两个用户档案具有相同的电子邮件地址，那么隔离该地址会同时影响这两个用户档案。
 
-同样，其电子邮件地址被隔离的用户档案可以更新其用户档案并输入新地址，然后即可再次被投放操作定向。
+同样，其电子邮件地址被隔离的用户档案可以更新其用户档案并输入新地址，然后可以再次被投放操作定向。
 
 在 **阻止列表**&#x200B;另一方面，将导致用户档案不再为任何投放所定向，例如，在退订（选择退出）后。
 
 >[!NOTE]
 >
->当用户回复的短信带有“STOP”之类的关键字以选择退出短信投放时，其用户档案不会像电子邮件选择退出过程阻止列表中一样添加到该中。 用户档案的电话号码将添加到隔离，以便用户继续接收电子邮件。
+>当用户回复的短信带有“STOP”之类的关键字以选择退出短信投放时，他们的用户档案不会像电子邮件选择退出过程阻止列表中一样添加到该中。 用户档案的电话号码将添加到隔离，以便用户继续接收电子邮件。
 
 ## 确定隔离的地址 {#identifying-quarantined-addresses}
 

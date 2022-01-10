@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: a5f6478d3c0780464974053e389923614abba582
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -367,7 +367,7 @@ ht-degree: 0%
 
 要向表单页面插入上传字段，请选择 **[!UICONTROL Advanced controls > File...]** 菜单。
 
-默认情况下，上传的文件会存储在可通过 **[!UICONTROL Resources > Online > Public resources]** 菜单。 您可以使用脚本更改此行为。 此脚本可以使用 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)，包括涉及文件操作的用户。
+默认情况下，上传的文件会存储在可通过 **[!UICONTROL Resources > Online > Public resources]** 菜单。 您可以使用脚本更改此行为。 此脚本可以使用 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)，包括涉及文件操作的用户。
 
 您可以将指向这些文件的链接存储在本地变量或数据库字段中。 例如，您可以扩展收件人模式，以添加指向基于文件的资源的链接。
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '3023'
 ht-degree: 0%
@@ -174,7 +174,7 @@ user:~ user$ host -t a mta5.am0.yahoodns.net
                 mta5.am0.yahoodns.net has address 98.138.112.35
 ```
 
-对于此记录，用户可以联系8个对等IP地址。 由于用户有2个公共IP地址，因此8 * 2 = 16个组合可访问yahoo.com邮件服务器。 这些组合中的每个组合都称为路径。
+对于此记录，用户可以联系8个对等IP地址。 由于用户有2个公共IP地址，因此这会为他们提供8 * 2 = 16的组合，以访问yahoo.com邮件服务器。 这些组合中的每个组合都称为路径。
 
 第二个MX记录显示为：
 

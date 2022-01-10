@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 # 关于优惠模拟{#about-offers-simulation}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 的 **模拟** 利用模块，可在向收件人发送建议之前，测试属于类别或环境的选件的分发。
 

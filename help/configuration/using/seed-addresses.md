@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # 种子地址{#seed-addresses}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 如果收件人表是自定义表，则需要额外的配置。 的 **[!UICONTROL nms:seedMember]** 必须扩展架构。 种子地址中添加了一个用于定义适当字段的附加选项卡，如下所示：
 

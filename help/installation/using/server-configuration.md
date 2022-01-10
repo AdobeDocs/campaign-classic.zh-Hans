@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
+source-git-commit: e55fff99fd5dec8da998310dc7026c1a506abadc
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '624'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）限制。
 
 ## 命令限制（服务器端）
 
-一些命令已列入黑名单，无法使用execCommand函数执行。 专用Unix用户为执行外部命令提供了额外的安全性。 对于托管安装，将自动应用此限制。 对于内部部署安装，您可以按照 [本页](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). 此外， **[!UICONTROL Script]** 和 **[!UICONTROL External task]** 工作流活动不可用（新安装的实例）。
+中包含若干命阻止列表令，无法使用execCommand函数执行。 专用Unix用户为执行外部命令提供了额外的安全性。 对于托管安装，将自动应用此限制。 对于内部部署安装，您可以按照 [本页](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). 此外， **[!UICONTROL Script]** 和 **[!UICONTROL External task]** 工作流活动不可用（新安装的实例）。
 
 ## 其他配置
 

@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 0%
@@ -472,7 +472,7 @@ A **[!UICONTROL Control task]** 链接到投放批准：批准定位、内容、
 
    ![](assets/s_ncs_user_task_percentage_done_op.png)
 
-1. 审阅人收到通知电子邮件，告知他操作员已完成分配给他们的部分。
+1. 审阅人会收到通知电子邮件，告知他们操作员已完成分配给他们的部分。
 
    他们可以跟踪任务仪表板上的进度。
 

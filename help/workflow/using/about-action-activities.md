@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 08af51345c047612b010c82646cba99becfda459
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 2%
+source-wordcount: '269'
+ht-degree: 3%
 
 ---
 
@@ -31,6 +31,4 @@ ht-degree: 2%
 * **SQL代码和JavaScript代码**:执行活动中指定的SQL脚本或JavaScript。 请参阅 [SQL代码和JavaScript代码](sql-code-and-javascript-code.md).
 * **SQL数据管理**:允许您编写自己的SQL查询以创建和填充工作表。 请参阅 [SQL数据管理](sql-data-management.md).
 * **nlserver模块**:启动nlserver模块及其参数。 请参阅 [Nlserver模块](nlserver-module.md).
-* **导入和导出（与v4兼容）**:导入和导出活动（v4兼容性）允许您使用活动中指定的模板（导入或导出）导入和导出数据。
-* **Microsoft CRM、Salesforce、OracleCRM（按需）**:允许您专门将Adobe Campaign与其中一个预配置的CRM连接。 这些活动与 [此部分](crm-connector.md)，以包含更多特定选项。 特别是，您可以选择要执行同步的促销活动类型。
 * **更新聚合**:允许您选择聚合更新模式（完整或部分）。 请参阅 [更新聚合](update-aggregate.md).

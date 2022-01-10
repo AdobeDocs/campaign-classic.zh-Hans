@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6cecc81135afd067712e51ec9c1ad3239170702e
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 7%
+source-wordcount: '411'
+ht-degree: 8%
 
 ---
 
@@ -19,9 +19,8 @@ ht-degree: 7%
 
 使用Campaign **联合数据访问** (FDA)选项，用于处理存储在外部数据库中的信息。 请按照以下步骤配置对 [!DNL Snowflake].
 
-1. 配置 [!DNL Snowflake] on [CentOS](#snowflake-centos), [Windows](#snowflake-windows) 或 [德比安](#snowflake-debian)
+1. 配置 [!DNL Snowflake] on [Linux](#snowflake-linux).
 1. 配置 [!DNL Snowflake] [外部帐户](#snowflake-external) 在Campaign中
-
 
 >[!NOTE]
 >
@@ -29,47 +28,43 @@ ht-degree: 7%
 
 ![](assets/snowflake_3.png)
 
-## SnowflakeCentOS {#snowflake-centos}
+## SnowflakeLinux {#snowflake-linux}
 
-配置 [!DNL Snowflake] 在CentOS上，执行以下步骤：
+配置 [!DNL Snowflake] 在Linux上，请执行以下步骤：
 
-1. 下载用于 [!DNL Snowflake]. [单击此处](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) 开始下载。
-1. 然后，您需要使用以下命令在CentOs上安装ODBC驱动程序：
+1. 在ODBC安装之前，请检查以下软件包是否安装在Linux分发版上：
 
-   ```
-   rpm -Uvh unixodbc
-   rpm -Uvh snowflake-odbc-2.20.2.x86_64.rpm
-   ```
+   * 对于Red Hat/CentOS:
 
-1. 下载并安装ODBC驱动程序后，需要重新启动Campaign Classic。 为此，请运行以下命令：
+      ```
+      yum update
+      yum upgrade
+      yum install -y grep sed tar wget perl curl
+      ```
 
-   ```
-   /etc/init.d/nlserver6 stop
-   /etc/init.d/nlserver6 start
-   ```
+   * 对于Debian:
 
-1. 然后，在Campaign中，您可以配置 [!DNL Snowflake] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [此部分](#snowflake-external).
+      ```
+      apt-get update
+      apt-get upgrade
+      apt-get install -y grep sed tar wget perl curl
+      ```
 
-## SnowflakeWindows {#snowflake-windows}
-
-1. 下载 [用于Windows的ODBC驱动程序](https://docs.snowflake.net/manuals/user-guide/odbc-download.html). 请注意，您需要管理员级别的权限才能安装驱动程序。 有关更多信息，请参阅 [本页](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
-
-1. 配置ODBC驱动程序。 有关更多信息，请参阅 [本页](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
-
-1. 然后，在Campaign中，您可以配置 [!DNL Snowflake] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [此部分](#snowflake-external).
-
-## SnowflakeDebian {#snowflake-debian}
-
-1. 下载用于 [!DNL Snowflake]. [单击此处](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) 开始下载。
-
-1. 然后，您需要使用以下命令在Debian上安装ODBC驱动程序：
+1. 在运行脚本之前，您可以使用 `--help` 选项：
 
    ```
-   apt-get install unixodbc
-   apt-get install snowflake-odbc-x.xx.x.x86_64.deb
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts/
+   ./snowflake_odbc-setup.sh --help
    ```
 
-1. 下载并安装ODBC驱动程序后，需要重新启动Campaign Classic。 为此，请运行以下命令：
+1. 访问脚本所在的目录，并以根用户身份运行以下脚本：
+
+   ```
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts
+   ./snowflake_odbc-setup.sh
+   ```
+
+1. 安装ODBC驱动程序后，需要重新启动Campaign Classic。 为此，请运行以下命令：
 
    ```
    systemctl stop nlserver.service
@@ -88,23 +83,36 @@ ht-degree: 7%
 
 1. 选择 **[!UICONTROL External database]** 作为外部帐户的 **[!UICONTROL Type]**.
 
-1. 配置 **[!UICONTROL Snowflake]** 外部帐户，您必须指定：
+1. 在 **[!UICONTROL Configuration]**，选择 [!DNL Snowflake] 从 **[!UICONTROL Type]** 下拉菜单。
 
-   * **[!UICONTROL Type]**: [!DNL Snowflake]
+   ![](assets/snowflake_5.png)
 
-   * **[!UICONTROL Server]**:的URL [!DNL Snowflake] 服务器
+1. 添加 **[!UICONTROL Server]** URL和 **[!UICONTROL Database]**.
 
-   * **[!UICONTROL Account]**:用户的名称
+1. 配置 **[!UICONTROL Snowflake]** 外部帐户身份验证：
 
-   * **[!UICONTROL Password]**:用户帐户密码
+   * 对于帐户/密码身份验证，您必须指定：
 
-   * **[!UICONTROL Database]**:数据库的名称
+      * **[!UICONTROL Account]**:用户的名称
 
-   ![](assets/snowflake.png)
+      * **[!UICONTROL Password]**:用户帐户密码。
+
+      ![](assets/snowflake.png)
+
+   * 对于密钥对身份验证，请单击 **[!UICONTROL Keypair Auth]** 选项卡 **[!UICONTROL Private key]** 验证并复制粘贴 **[!UICONTROL Private key]**.
+
+      ![](assets/snowflake_4.png)
+
 
 1. 单击 **[!UICONTROL Parameters]** 选项卡 **[!UICONTROL Deploy functions]** 按钮以创建函数。
 
+   >[!NOTE]
+   >
+   >要使所有函数都可用，您需要在远程数据库中创建Adobe Campaign SQL函数。 有关更多信息，请参阅 [页面](../../configuration/using/adding-additional-sql-functions.md).
+
    ![](assets/snowflake_2.png)
+
+1. 单击 **[!UICONTROL Save]** 配置完成后。
 
 连接器支持以下选项：
 

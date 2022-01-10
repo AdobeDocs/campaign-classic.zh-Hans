@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: a5f6478d3c0780464974053e389923614abba582
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间�
 
 ## 如何使用自定义收件人表？ {#how-to-use-a-custom-recipient-table-}
 
-您可以在 Campaign 中创建并实施非标准的收件人表，以发送邮件。
+您可以在Campaign中创建并实施非内置的收件人表，以发送消息。
 
 [单击此处了解更多信息](../../configuration/using/about-custom-recipient-table.md)
 
@@ -65,4 +65,4 @@ Adobe Campaign 查询编辑器是一款功能强大的工具，可用于探索�
 
 ## 在哪里可以找到 Campaign Classic API 的列表？  {#where-can-i-find-the-list-of-campaign-classic-apis}
 
-所有 Campaign API（包括其完整说明）均在此[专用文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)中提供。
+所有 Campaign API（包括其完整说明）均在此[专用文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)中提供。

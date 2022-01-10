@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 负责投放的用户会与采购部门一起，为购买过警察小说的订阅者创建通讯。
 
-为了与他们分享他们协作的最终结果，送货经理决定将其从采购部门的同事添加到送货部门，作为种子地址。 使用动态条件可节省配置和更新地址的时间。
+为了与他们分享他们协作的最终结果，交付经理决定将他们从采购部门到交付部门的同事添加为种子地址。 使用动态条件可节省配置和更新地址的时间。
 
 要使用动态条件，您必须具有：
 

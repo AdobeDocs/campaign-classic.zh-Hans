@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 9d8d1e9c-63e4-40c4-8338-b921d08ea405
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a23f66a4822f3c87770c5c9741e91f78778931cb
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 4%
+source-wordcount: '161'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,10 @@ FDA选项允许您在第三方数据库中扩展数据模型。 它将自动检�
 
 要使用此功能，下面列出了先决条件：
 
-* **配置**:除了Snowflake，您需要 **内部部署** 或 **混合** 托管模型来设置联合数据访问。 [了解详情](../../installation/using/hosting-models.md)
-* **外部数据库版本**:您需要具有与Adobe Campaign FDA模块兼容的外部数据库。 Campaign中详细列出了数据库系统和兼容版本 [兼容性矩阵](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+* **配置**:兼容外部数据库的列表，取决于 [托管模型](../../installation/using/hosting-models.md).
+* **外部数据库版本**:您需要具有与Adobe Campaign FDA模块兼容的外部数据库。
+
+   Campaign中详细列出了每个托管模型的数据库系统和兼容版本 [兼容性矩阵](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+
 * **权限**:用户还必须具有 [必要权限](../../installation/using/remote-database-access-rights.md) 在Adobe Campaign和外部数据库中。
 

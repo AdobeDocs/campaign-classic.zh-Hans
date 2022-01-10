@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 648b6c0982e15716b11bdbc5954ce88491582e7d
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,11 @@ Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行
    >
    >的导出功能 **[!UICONTROL CRM Connector]** 活动可以在CRM端插入或更新字段。 要在CRM中启用字段更新，您需要指定远程表的主键。 如果缺少键，则将插入数据（而不是更新）。
 
-1. 在 **[!UICONTROL Mapping]** 部分，指定要导出的字段及其在CRM中的映射。
+1. 检查 **[!UICONTROL Export in Batches]** 如果您需要更快的导出。
+
+   ![](assets/crm_export_config_2.png)
+
+1. 在 **[!UICONTROL Mapping]** ，单击 **[!UICONTROL New]** ，以在CRM中指定要导出的字段及其映射。
 
    ![](assets/crm_export_config.png)
 

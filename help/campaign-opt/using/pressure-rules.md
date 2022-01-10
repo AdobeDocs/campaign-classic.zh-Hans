@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 52aa7b268d5eb83354c3a4d8687ced95300538e2
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3285'
 ht-degree: 4%
 
 ---
@@ -64,6 +64,8 @@ ht-degree: 4%
    >[!NOTE]
    >
    >仅当 **[!UICONTROL Take the deliveries into account in the provisional calendar]** 选项。 有关更多信息，请参阅 [设置期间](#setting-the-period).
+   >
+   >此选项在Campaign v8中不可用。
 
 1. 定义计算消息最多数量的方法。
 
@@ -149,28 +151,29 @@ ht-degree: 4%
 
 例如，压力规则定义每周2条消息的阈值，并对每个日历月进行分组，将阻止在同一周内发送2条以上的消息，并在同一日历月内发送。 警告，如果时段与两个月重叠，则计算阈值将考虑这两个日历月的投放，因此可能会阻止在第二个月内进行所有新投放。
 
->[!NOTE]
->
->默认情况下，在计算阈值时只考虑已发送的投放。 检查 **[!UICONTROL Take the deliveries into account in the provisional calendar]** 选项。 在这种情况下，考虑的期限将加倍，以便能将今后的交付和以前的交付结合起来。\
->要将考虑的投放限制为2周的期限，您可以：
->
->* 输入 **15天** 在 **[!UICONTROL Concerned period]** 字段：在计算时，将考虑在应用规则的投放日期前两周发送的投放，
->
->  或者
->
->* 输入 **7d** 在 **[!UICONTROL Period considered]** 字段，并检查 **[!UICONTROL Take the deliveries into account in the provisional calendar]**\
-   >选项：计算时，将考虑在投放日期之前7天内发送的投放以及在应用规则的投放日期之后7天内计划发送的投放。
->
->期间开始日期取决于数据库的配置方式。
+请注意，默认情况下，在计算阈值时只考虑已发送的投放。 在Campaign Classicv7中，检查 **[!UICONTROL Take the deliveries into account in the provisional calendar]** 选项。 在这种情况下，考虑的期限将加倍，以便能将今后的交付和以前的交付结合起来。
+
+要将考虑的投放限制为2周的期限，您可以：
+
+1. 输入 **15天** 在 **[!UICONTROL Concerned period]** 字段：在计算时，将考虑在应用规则的投放日期前两周发送的投放，
+
+或者
+
+1. 输入 **7d** 在 **[!UICONTROL Period considered]** 字段，并检查 **[!UICONTROL Take the deliveries into account in the provisional calendar]** 选项：计算时，将考虑在投放日期之前7天内发送的投放以及在应用规则的投放日期之后7天内计划发送的投放。
+
+   >[!AVAILABILITY]
+   >此方法在Campaign v8中不可用。
+
+期间开始日期取决于数据库的配置方式。
 
 例如，如果对日期为12/11的投放应用15天压力规则而不进行分组，则11/27到12/12之间的投放将被考虑在内。 如果压力规则考虑临时日历中的投放，则11/27至12/27之间计划的所有投放都将被考虑在内。 最后，如果在规则中为每个日历月配置分组，则在计算阈值时(从11/1到12/31)会考虑11月和12月的所有投放。
 
->[!CAUTION]
->
->**常见案例**
->要确保未考虑当前日历周的投放，也不会考虑计算阈值上周的投放，请指定 **[!UICONTROL Period considered]** 在“0”处选择“按日历周分组”作为 **[!UICONTROL Period type]**.
-> 
->当时段大于0（例如1）时，计算阈值可能会考虑前一天的投放。 因此，如果前一天对应于前一日历周，并且所选期间类型为“按日历周分组”，则计算阈值将考虑前一周的所有时间。
+
+**常见案例**
+
+要确保未考虑当前日历周的投放，也不会考虑计算阈值上周的投放，请指定 **[!UICONTROL Period considered]** 在“0”处选择“按日历周分组”作为 **[!UICONTROL Period type]**.
+
+当时段大于0（例如1）时，计算阈值可能会考虑前一天的投放。 因此，如果前一天对应于前一日历周，并且所选期间类型为“按日历周分组”，则计算阈值将考虑前一周的所有时间。
 
 **示例:**
 
@@ -333,6 +336,9 @@ ht-degree: 4%
    ![](assets/campaign_opt_pressure_example_1.png)
 
    在计算时，将考虑在投放日期之前7天内发送且在投放日期之后7天内计划发送的投放。 有关更多信息，请参阅 [设置期间](#setting-the-period).
+
+   >[!AVAILABILITY]
+   >Campaign v8中无法考虑计划投放。
 
 1. 在 **[!UICONTROL Typologies]** 选项卡，将规则链接到营销活动分类。
 1. 保存更改。

@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 6c5cac3ccc60deb5940c785c9cb8b08f5938fe62
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 50%
+source-wordcount: '259'
+ht-degree: 51%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 50%
 
 ## 新增功能
 
-* **[10月版已正式发布！](rn/using/latest-release.md)**<br/> 在发行说明中了解新功能、改进和修复
+* **[1月版已正式发布！](rn/using/latest-release.md)**<br/> 在发行说明中了解新功能、改进和修复
 
 * **[Apple邮件隐私保护常见问题解答](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hans)** 和 **[技术说明](technotes/using/apple-mail-app-privacy-protection.md)**<br/> 查找针对Apple关于iOS 15的公告的响应指南
 
@@ -83,6 +83,6 @@ ht-degree: 50%
 | [发行说明](rn/using/latest-release.md) | [错误消息列表](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans) |
 | [操作说明视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans) | [Campaign 数据模型](configuration/using/about-data-model.md) |
 | [兼容性矩阵](rn/using/compatibility-matrix.md) | [Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html) |
-| [[!DNL Gold Standard] 升级](rn/using/gs-overview.md) | [跟踪指南](https://helpx.adobe.com/cn/campaign/kb/acc-tracking.html) |
+| [升级入门](rn/using/rn-overview.md) | [跟踪指南](https://helpx.adobe.com/cn/campaign/kb/acc-tracking.html) |
 | [已弃用的功能](rn/using/deprecated-features.md) | [安全性和隐私检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html) |
 | [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans) | [监控准则](production/using/monitoring-guidelines.md) |

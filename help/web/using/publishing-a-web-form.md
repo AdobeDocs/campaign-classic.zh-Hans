@@ -6,9 +6,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '963'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 的 **[!UICONTROL Load additional data]** 选项允许您添加未在表单页面中使用但仍将预加载的信息。
 
-例如，您可以预加载收件人的性别，并通过测试框自动将其定向到相应的页面。
+例如，您可以预载收件人的性别，并通过测试框自动将他们定向到相应的页面。
 
 ![](assets/s_ncs_admin_survey_preload_ex.png)
 

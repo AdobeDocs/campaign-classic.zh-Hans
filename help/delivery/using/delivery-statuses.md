@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 5%
@@ -49,7 +49,7 @@ ajouter screenshot -->
   </tr> 
   <tr> 
    <td> 已忽略<br /> </td> 
-   <td> 由于收件人的地址出错，未将投放发送到收件人。 已、已隔阻止列表离、未提供或存在重复项。 <br /> </td> 
+   <td> 由于收件人地址出错，未将投放发送给收件人。 已、已隔阻止列表离、未提供或存在重复项。 <br /> </td> 
   </tr> 
   <tr> 
    <td> 失败<br /> </td> 

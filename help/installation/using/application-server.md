@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8794464d6fcc8ab648cd6866266855a701538fde
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ yum install java-1.8.0-openjdk
 
 ## OpenSSL {#openssl}
 
-在Linux中，必须安装OpenSSL。 Adobe Campaign支持的版本包括 **OpenSSL 1.0.1** 和 **OpenSSL 0.9.8**. 接受子版本0.9.8g到0.9.8o。
+在Linux中，必须安装OpenSSL。 Adobe Campaign支持OpenSSL版本1.0.2或更高版本。
 
 ## 导出报表 {#exporting-reports}
 

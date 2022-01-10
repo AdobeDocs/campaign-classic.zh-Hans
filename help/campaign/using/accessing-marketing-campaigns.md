@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 89c007775d4df7c6d50951283efe764c3c424d91
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1271'
 ht-degree: 2%
 
 ---
@@ -161,6 +161,35 @@ Campaign允许您管理由各种营销活动组成的一组项目。 每个营�
 1. 使用菜单访问概述。
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
+
+除了在营销活动中导航和查看外，您还可以执行以下类型的任务：
+
+* 监控实例上的活动
+* 参与验证流程，例如批准或拒绝投放内容
+* 执行其他快速操作，例如暂停工作流
+* 访问所有报表功能
+* 参加论坛讨论
+
+此表汇总了您可以通过浏览器对营销活动执行的操作：
+
+| 页面  | 操作 |
+| --- | --- |
+| 营销活动、投放、选件等的列表。 | 删除列表项 |
+| 营销活动 | 取消营销活动 |
+| 投放 | 批准投放内容和目标<br/>提交投放内容<br/>确认投放<br/>暂停和停止投放 |
+| Web应用程序 | 创建Web应用程序<br/>编辑应用程序内容和属性<br/>将应用程序内容另存为模板<br/>发布应用程序 |
+| 选件 | 批准选件内容和资格<br/>禁用在线选件 |
+| 任务 | 完成任务<br/>取消任务 |
+| 营销资源 | 批准资源<br/>锁定和解锁资源 |
+| Campaign包 | 提交资源包以供审批<br/>批准或拒绝资源包<br/>取消资源包 |
+| 营销活动订单 | 创建订单<br/>接受或拒绝订单 <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
+| Stock | 删除库存行 |
+| 优惠模拟 | 启动和停止模拟 |
+| 定位工作流 | 启动、暂停和停止工作流 |
+| 报告 | 在报表历史记录中保存当前数据 |
+| 论坛 | 添加讨论<br/>在讨论中回复留言<br/>进行讨论并退订 |
+
+### 批准
 
 批准（例如，对目标或投放内容）可以通过Web访问进行。
 

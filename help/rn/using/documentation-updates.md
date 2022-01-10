@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
+source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
-source-wordcount: '4705'
-ht-degree: 97%
+source-wordcount: '4796'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,31 @@ ht-degree: 97%
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
-## 2021 年 12 月{#dec-2021}
+## 2022年
+
+###  年 1 月
+
+**随 7.2.1 版提供的文档更新**
+
+更新了兼容性矩阵。 [了解更多信息](compatibility-matrix.md)
+
+更新了发行说明章节。 [了解更多信息](rn-overview.md)
+
+更新了FDA外部帐户配置以进行Snowflake。 [了解更多信息](../../installation/using/configure-fda-snowflake.md)
+
+更新了Azure synapse分析的FDA外部帐户配置。 [了解更多信息](../../installation/using/configure-fda-synapse.md#azure-external)
+
+更新了Google BigQuery FDA连接器。 [了解更多信息](../../installation/using/configure-fda-google-big-query.md)
+
+弃用后，Microsoft CRM、Salesforce、OracleCRM（按需）操作活动已从文档中删除。
+
+新选项 **出错时中止** 已添加到工作流错误管理部分。 [了解更多信息](../../workflow/using/advanced-parameters.md#in-case-of-errors)
+
+在CRM连接器活动中添加了批量更新选项。 [了解更多信息](../../workflow/using/crm-connector.md)
+
+## 2021年
+
+### 2021 年 12 月{#dec-2021}
 
 Campaign Classicv7发行说明已重新组织，以简化导航。 [了解更多信息](rn-overview.md)
 
@@ -29,7 +53,7 @@ Campaign Classicv7发行说明已重新组织，以简化导航。 [了解更多
 
 CentOs 8已结束其生命周期，现已在Adobe Campaign Classic中弃用。 [了解更多信息](deprecated-features.md)
 
-## 2021 年 11 月{#nov-2021}
+### 2021 年 11 月{#nov-2021}
 
 添加了有关传入短信(MO)的限制。 [了解更多信息](../../delivery/using/sms-protocol.md#multipart)
 
@@ -46,13 +70,13 @@ CentOs 8已结束其生命周期，现已在Adobe Campaign Classic中弃用。 [
 在工作流中添加了JavaScript代码实施示例。 [了解更多信息](../../workflow/using/javascript-in-workflows.md)
 
 
-## 2021 年 10 月{#oct-2021}
+### 2021 年 10 月{#oct-2021}
 
 现有技术说明已分组到新的&#x200B;**技术说明**&#x200B;部分。
 
 更新了&#x200B;**硬件大小调整建议**&#x200B;页面并将其添加到了&#x200B;**技术说明**&#x200B;部分。[阅读更多](../../technotes/using/hardware-sizing.md)
 
-## 2021 年 9 月{#sept-2021}
+### 2021 年 9 月{#sept-2021}
 
 **随 21.1.4 版提供的文档更新**
 
@@ -62,7 +86,7 @@ CentOs 8已结束其生命周期，现已在Adobe Campaign Classic中弃用。 [
 
 更新了[计费技术工作流](../../production/using/monitoring-processes.md#billing-report)的描述，并新增了护栏。
 
-## 2021 年 8 月{#aug-2021}
+### 2021 年 8 月{#aug-2021}
 
 添加了新的工作流活动：更改数据源 - [了解详情](../../workflow/using/change-data-source.md)
 
@@ -71,12 +95,12 @@ CentOs 8已结束其生命周期，现已在Adobe Campaign Classic中弃用。 [
 添加了有关 Campaign 与 AEM Assets 之间集成的注释，该集成已从 Adobe Experience Manager 6.4 开始停用。 [了解详情](../../integrations/using/configuring-access-to-assets.md)
 
 
-## 2021 年 7 月 {#july-2021}
+### 2021 年 7 月 {#july-2021}
 
 [Campaign 21.1.3 版本](../../rn/using/latest-release.md#release-21-1-3-build-9330)已转为“一般可用性 (GA)”。
 
 
-## 2021 年 6 月 {#june-2021}
+### 2021 年 6 月 {#june-2021}
 
 **事务性消息传递**&#x200B;部分经过了重新组织，并通过新的“入门”部分进行了说明，包括[增强模式](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，从而帮助更好地了解该流程。[阅读更多](../../message-center/using/about-transactional-messaging.md)
 
@@ -88,11 +112,11 @@ LINE 渠道增强 - [了解详情](../../delivery/using/line-channel.md)
 
 新的 Vertica FDA 连接器 - [了解详情](../../installation/using/configure-fda-vertica.md)
 
-新的 Google Big Query FDA 连接器 - [了解详情](../../installation/using/configure-fda-google-big-query.md)
+新的Google BigQuery FDA连接器 —  [了解更多](../../installation/using/configure-fda-google-big-query.md)
 
 “计费 (billing)”技术工作流描述现在包括原来由“活跃计费用户档案数 (billingActiveContactCount)”执行的任务。[阅读更多](../../workflow/using/about-technical-workflows.md)
 
-## 2021 年 5 月 {#may-2021}
+### 2021 年 5 月 {#may-2021}
 
 已更新和改进工作流热图报表文档。[阅读更多](../../workflow/using/heatmap.md)
 
@@ -102,13 +126,13 @@ LINE 渠道增强 - [了解详情](../../delivery/using/line-channel.md)
 
 已创建有关跟踪 URL 签名问题的新技术说明。[阅读更多](../../technotes/using/tracked-urls.md)
 
-## 2021 年 4 月 {#april-2021}
+### 2021 年 4 月 {#april-2021}
 
 新增的一个小节介绍了如何使用 Adobe Experience Platform Sources 与 Destinations 在 Campaign Classic 和 Adobe 实时客户数据平台 (RTCDP) 之间共享数据。[阅读更多](../../integrations/using/get-started-sources-destinations.md)
 
 已创建一条新的技术说明，以说明如何在 ISP 中断后更新弹回限定条件。[阅读更多](../../delivery/using/update-bounce-qualification.md)
 
-## 2021 年 3 月 {#march-2021}
+### 2021 年 3 月 {#march-2021}
 
 [开始使用短信部分](../../delivery/using/sms-channel.md)已重新组织和完善。您现在可以在专门章节中学习如何[配置短信渠道](../../delivery/using/sms-set-up.md)、[创建短信](../../delivery/using/sms-create.md)、[发送和跟踪短信](../../delivery/using/sms-send.md)。
 
@@ -129,7 +153,7 @@ Campaign Classic 的“帮助和支持选项”页面已集成到核心文档中
 
 [可投放性](../../delivery/using/about-deliverability.md)部分已更新，现包括指向新的 [Adobe 可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)的链接。所有与适用于各种 Adobe 解决方案的可投放性相关的一般信息均已移至[最佳实践指南附录](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans#additional-resources)。
 
-## 2021 年 2 月 {#release-21.1}
+### 2021 年 2 月 {#release-21.1}
 
 **随 21.1 版提供的文档更新**
 
@@ -155,7 +179,7 @@ Campaign Classic 的“帮助和支持选项”页面已集成到核心文档中
 
 新增了有关如何在电子邮件中添加可个性化并支持跟踪的链接的信息。[阅读更多](../../delivery/using/tracking-personalized-links.md)。
 
-## 2021 年 1 月 {#jan-2021}
+### 2021 年 1 月 {#jan-2021}
 
 **[!UICONTROL Fork]** 活动部分已使用最佳实践进行了扩充。[阅读更多](../../workflow/using/fork.md)
 
@@ -173,7 +197,14 @@ Oracle On Demand API 现在作为与 Campaign 连接的 CRM 已弃用。[阅读�
 
 新增&#x200B;**导入和导出数据**&#x200B;部分，其中包含与工作流、数据压缩、加密和导入最佳实践相关的新页面。[阅读更多](../../platform/using/get-started-data-import-export.md)
 
-## 2020 年 12 月 {#dec-2020}
+
+
+
+
+
+## 2020年
+
+### 2020 年 12 月 {#dec-2020}
 
 **投放监视**&#x200B;部分已重组为专题。[阅读更多](../../delivery/using/about-delivery-monitoring.md)
 
@@ -187,7 +218,7 @@ Oracle On Demand API 现在作为与 Campaign 连接的 CRM 已弃用。[阅读�
 
 向&#x200B;**事务性消息传递**&#x200B;部分中添加了注释，用于警告不得将事件文件夹设置为执行实例上的视图，以避免出现访问权限问题。[阅读更多](../../message-center/using/about-event-processing.md#event-collection)
 
-## 2020 年 11 月 {#nov-2020}
+### 2020 年 11 月 {#nov-2020}
 
 Campaign 数据模型概述已得到改进并重组。[阅读更多](../../configuration/using/about-data-model.md)。
 
@@ -207,7 +238,7 @@ Campaign 联合数据访问 (FDA) 文档已通过每个外部数据库配置的�
 
 新增了一个部分，其中列出有关隐私的常见问题解答。[阅读更多](../../platform/using/privacy-faq.md)
 
-## 2020 年 10 月 {#oct-2020}
+### 2020 年 10 月 {#oct-2020}
 
 **20.3 版本中包含的新功能**
 
@@ -221,8 +252,8 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 更新了已弃用和已删除的功能页面。[阅读更多](../../rn/using/deprecated-features.md)
 
-[!DNL Gold Standard] 版本的发行说明和兼容性矩阵现在可在专门部分中获取。
-[阅读更多](../../rn/using/gold-standard.md#gs-11)。
+的发行说明和兼容性矩阵 [!DNL Gold Standard] 现在，可在专用页面中使用该版本。
+[阅读更多](../../rn/using/gold-standard.md)。
 
 最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成现已更改并移至 Adobe I/O。[阅读更多](../../integrations/using/configuring-adobe-io.md)
 
@@ -246,7 +277,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 已使用有关如何从旧版二进制协议迁移到基于 HTTP/2 的 APNs 提供程序 API 的详细信息来创建新的技术说明。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)
 
-## 2020 年 9 月 {#september-2020}
+### 2020 年 9 月 {#september-2020}
 
 已添加注释来指定“有效用户档案”计数仅适用于营销实例。[阅读更多](../../platform/using/about-profiles.md#active-profiles)
 
@@ -254,7 +285,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 已添加关于在投放中对种子地址使用额外数据的说明。[阅读更多](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
-## 2020 年 8 月 {#aug-2020}
+### 2020 年 8 月 {#aug-2020}
 
 通过专用部分了解与使用 Campaign 进行投放设计和发送相关的最佳实践。[阅读更多](../../delivery/using/delivery-best-practices.md)
 
@@ -293,7 +324,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 **[!UICONTROL AND-join]** 活动部分已使用有关其使用情况的更多信息以及关于变量的使用说明进行了扩充。[阅读更多](../../workflow/using/and-join.md)
 
-## 2020 年 7 月 {#july-2020}
+### 2020 年 7 月 {#july-2020}
 
 已向工作流用例中添加了有关如何使用增量查询自动更新列表的用例。[阅读更多](../../workflow/using/about-workflow-use-cases.md)
 
@@ -311,7 +342,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 已在 **[!UICONTROL Scheduler]** 活动部分中添加最佳实践。[阅读更多](../../workflow/using/scheduler.md)
 
-## 2020 年 6 月 {#june-2020}
+### 2020 年 6 月 {#june-2020}
 
 更新了“删除隔离地址”部分。这包括明确了地址会自动从隔离列表中删除的情况。[阅读更多](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
@@ -319,7 +350,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 Experience Cloud Triggers 和 Adobe Campaign Classic 集成页面已移至[此处](../../integrations/using/about-triggers.md)。
 
-## 2020 年 7 月 {#release-20-2}
+### 2020 年 7 月 {#release-20-2}
 
 **20.2 版本中包含的新功能**
 
@@ -351,7 +382,7 @@ Spam Assassin 安装部分已更新为新的安装文件名。[了解详情](../
 
 有关复制环境的部分已更新。[了解详情](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
-## 2020 年 5 月 {#may-2020}
+### 2020 年 5 月 {#may-2020}
 
 “监视投放能力”部分已移动和改进。[阅读更多](../../delivery/using/monitoring-deliverability.md)
 
@@ -363,7 +394,7 @@ Spam Assassin 安装部分已更新为新的安装文件名。[了解详情](../
 
 数据包最佳实践部分已移动并更新。[阅读更多](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
-## 2020 年 4 月 {#april-2020}
+### 2020 年 4 月 {#april-2020}
 
 联合数据访问 (FDA) 权限表已移至访问外部数据库 (FDA) 文档。[阅读更多](../../installation/using/remote-database-access-rights.md)
 
@@ -379,7 +410,7 @@ Spam Assassin 安装部分已更新为新的安装文件名。[了解详情](../
 
 Adobe Campaign 增强 MTA 文章已更新。现在只适用于 Campaign Classic。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)
 
-## 2020 年 3 月 {#march-2020}
+### 2020 年 3 月 {#march-2020}
 
 数据模型最佳实践已更新新的部分，包括[序列](../../configuration/using/data-model-best-practices.md#sequences)性能[和](../../configuration/using/data-model-best-practices.md#performance) 大表 [](../../configuration/using/data-model-best-practices.md#large-tables)。[阅读更多](../../configuration/using/data-model-best-practices.md)
 
@@ -393,7 +424,7 @@ Adobe Campaign 增强 MTA 文章已更新。现在只适用于 Campaign Classic�
 
 访问管理指南已更新，其中包含有关已命名权限的更多信息。[阅读更多](../../platform/using/access-management-named-rights.md)
 
-## 2020 年 2 月 {#february-2020}
+### 2020 年 2 月 {#february-2020}
 
 现在提供概述设计 Adobe Campaign 数据模型时最佳实践和主要建议的新部分。[阅读更多](../../configuration/using/data-model-best-practices.md)
 
@@ -405,7 +436,7 @@ Adobe Campaign 增强 MTA 文章已更新。现在只适用于 Campaign Classic�
 
 电子邮件存档部分已得到改进。[阅读更多](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
-## 2020 年 1 月 {#release-20-1}
+### 2020 年 1 月 {#release-20-1}
 
 **20.1 版本中包含的新功能**
 
@@ -465,7 +496,9 @@ Adobe Campaign 增强 MTA 文章已更新，其中包含有关在未向每封邮
 
 已添加如何在工作流中使用实例变量的示例。[阅读更多](../../workflow/using/javascript-scripts-and-templates.md)
 
-## 2019 年 12 月 {#december-2019}
+## 2019
+
+### 2019 年 12 月 {#december-2019}
 
 “WdbcOptions_TempDbName”选项已添加到 Campaign 选项的列表。[阅读更多](../../installation/using/configuring-campaign-options.md)
 
@@ -503,7 +536,7 @@ Adobe Campaign 增强 MTA 文档现已可用。[阅读更多](https://helpx.adob
 
 Adobe Campaign 与 Adobe 实时客户数据平台之间的集成现在在&#x200B;**“与 Adobe Experience Cloud 集成”**&#x200B;指南中提到。[阅读更多](../../integrations/using/about-campaign-integrations.md)。
 
-## 2019 年 11 月 {#november-2019}
+### 2019 年 11 月 {#november-2019}
 
 在[多路复用中间源服务器](../../installation/using/mid-sourcing-server.md#multiplexing-the-mid-sourcing-server)和[和支持多个控制实例](../../message-center/using/transactional-messaging-architecture.md#supporting-several-control-instances)部分中添加了一个警告，提到完全托管和混合客户端不支持这些部署。
 
@@ -517,7 +550,7 @@ Adobe Campaign 与 Adobe 实时客户数据平台之间的集成现在在&#x200B
 
 投放最佳实践快速入门指南已更新。[阅读更多](../../delivery/using/delivery-best-practices.md)
 
-## 2019 年 10 月 {#october-2019}
+### 2019 年 10 月 {#october-2019}
 
 Campaign 的错误消息列表已更新。[阅读更多](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans)
 
@@ -535,7 +568,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 在文档中添加了配置本地安装的收件箱呈现的步骤。[阅读更多](../../delivery/using/inbox-rendering.md#activating-inbox-rendering)
 
-## 2019 年 9 月 {#september-2019}
+### 2019 年 9 月 {#september-2019}
 
 添加了新页面，以提供维护 Campaign Classic 的一般准则。[阅读更多](../../production/using/monitoring-guidelines.md)
 
@@ -545,7 +578,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 已更新工作流和投放性能改进的最佳实践。[阅读有关工作流的更多信息](../../workflow/using/workflow-best-practices.md) ， [以及有关投放的更多信息](../../delivery/using/delivery-performances.md#best-practices-performance)。
 
-## 2019 年 5 月 {#release-19-1}
+### 2019 年 5 月 {#release-19-1}
 
 **19.1 版本中包含的新功能**
 
@@ -624,7 +657,7 @@ Campaign 硬件大小调整指南已更新。[阅读更多](https://helpx.adobe.
 
 添加了关于 Teradata 外部帐户查询分段的信息。[阅读更多](../../installation/using/external-accounts.md)
 
-## 2019 年 1 月{#release-doc-16-01-2019}
+### 2019 年 1 月{#release-doc-16-01-2019}
 
 Marketing Cloud 触发器技术说明已更新。[阅读更多](../../integrations/using/about-triggers.md)
 

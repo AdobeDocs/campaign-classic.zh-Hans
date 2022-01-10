@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: e142bcc18dd22179d83c54b9e79d3e3339b005fa
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '2599'
-ht-degree: 99%
+source-wordcount: '2556'
+ht-degree: 98%
 
 ---
 
@@ -22,10 +22,8 @@ ht-degree: 99%
    + [升级入门](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
    + 之前版本 {#previous-releases}
-      + [!DNL Gold Standard] 版本{#gs-release}
-         + [什么是  [!DNL Gold Standard]](rn/using/gs-overview.md)
-         + [[!DNL Gold Standard] 发行说明](rn/using/gold-standard.md)
-         + [[!DNL Gold Standard] 兼容性矩阵](rn/using/compatibility-matrix-gs.md)
+      + [[!DNL Gold Standard]](rn/using/gold-standard.md)
+      + [2021年](rn/using/release--2021.md)
       + [2020年](rn/using/release--2020.md)
       + [2019](rn/using/release--2019.md)
       + [2018](rn/using/release--2018.md)
@@ -597,7 +595,6 @@ ht-degree: 99%
    + 附件 {#annexes}
       + [Facebook 应用程序示例](social/using/examples-of-facebook-apps.md)
       + [跟踪](social/using/tracking.md)
-+ [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
 + 安装和配置指南 {#installing-campaign-classic}
    + 架构原理 {#architecture-and-hosting-models}
       + [一般架构](installation/using/general-architecture.md)
@@ -821,23 +818,15 @@ ht-degree: 99%
       + [收集所有访问](configuration/using/collecting-all-visits.md)
       + [匿名跟踪](configuration/using/anonymous-tracking.md)
 + 迁移指南 {#migrating-to-a-new-version}
-   + 迁移概述 {#migration-overview}
-      + [关于迁移](migration/using/about-migration.md)
-      + [迁移方法](migration/using/migration-method.md)
-      + [迁移警告](migration/using/migration-warnings.md)
+   + [迁移到Adobe Campaign v7](migration/using/about-migration.md)
    + 迁移过程 {#migration-procedure}
-      + [开始迁移前](migration/using/before-starting-migration.md)
-      + [测试迁移](migration/using/testing-the-migration.md)
-      + [配置平台](migration/using/configuring-your-platform.md)
-   + 迁移到 Adobe Campaign 7 {#migrating-to-adobe-campaign-7}
-      + [迁移到 Adobe Campaign 7 的先决条件](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
-      + [在 Windows 中迁移到 Adobe Campaign 7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-      + [在 Linux 中迁移到 Adobe Campaign v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
-   + 配置{#configuration}
-      + [常规配置](migration/using/general-configurations.md)
-      + [v5.11 中的特定配置](migration/using/specific-configurations-in-v5-11.md)
-      + [v6.02 中的特定配置](migration/using/specific-configurations-in-v6-02.md)
-      + [v6.10 中的特定配置](migration/using/specific-configurations-in-v6-10.md)
+      + [先决条件](migration/using/before-starting-migration.md)
+      + [关于迁移测试](migration/using/testing-the-migration.md)
+      + [调整配置](migration/using/configuring-your-platform.md)
+   + 开始迁移 {#migrating-to-adobe-campaign-7}
+      + [迁移Microsoft Windows平台](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
+      + [迁移Linux平台](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+      + [配置平台](migration/using/general-configurations.md)
    + [回滚过程](migration/using/about-rollback.md)
 + 技术说明 {#technotes}
    + [硬件大小调整建议](technotes/using/hardware-sizing.md)
@@ -855,4 +844,4 @@ ht-degree: 99%
    + 迁移到 Adobe Managed Services{#dc-migration}
       + [迁移到公共云](technotes/using/dc-migration.md)
       + [常见问题解答](technotes/using/dc-migration-faq.md)
-+ [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
++ [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)

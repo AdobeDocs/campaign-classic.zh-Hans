@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: eef2a12738ce299686857720c3dc8456ffdd0c80
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2625'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,12 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-如果您从v5.11或v6.02迁移，本节将详细介绍在Adobe Campaign v7中执行的配置。
+本节详细介绍从v5.11或v6.02迁移时在Adobe Campaign v7中执行的配置。
 
 此外：
 
-* 如果您从v5.11进行迁移，则还必须完成 [v5.11中的特定配置](../../migration/using/specific-configurations-in-v5-11.md) 中。
-* 如果您从v6.02进行迁移，则还必须完成 [v6.02中的特定配置](../../migration/using/specific-configurations-in-v6-02.md) 中。
+* 如果您从v5.11进行迁移，则还必须完成 [此部分](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* 如果您从v6.02进行迁移，则还必须完成 [此部分](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## 时区 {#time-zones}
 
@@ -662,12 +662,3 @@ sessionTokenOnly="false"
 ### 匿名Web应用程序 {#anonymous-web-applications}
 
 如果遇到任何问题，请重新发布Web应用程序。
-
-## 红帽 {#red-hat}
-
-如果在v6.02或v5.11中删除了现成的架构，则在升级后可能无法再编辑您的架构。 如果发生这种情况，请执行以下命令：
-
-```
-su - neolane
-nlserver config -postupgrade -instance:<instance name> -force
-```

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
 source-wordcount: '3991'
 ht-degree: 0%
@@ -697,7 +697,7 @@ ht-degree: 0%
     <ul> 
      <li> <p> <span class="uicontrol">数据类型：</span> 整数</p> </li> 
      <li> <p> <span class="uicontrol">值（文本）</span> :1 </p> </li> 
-    </ul> 仅当现成的导航树发生了太多更改时，才应使用此选项。<br /> 有关更多信息，请参阅 <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">此部分</a>.<br /> </td> 
+    </ul> 仅当现成的导航树发生了太多更改时，才应使用此选项。<br /> 有关更多信息，请参阅 <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11">此部分</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 

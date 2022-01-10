@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 1%
@@ -163,7 +163,7 @@ Neobank公司希望为两个不同的目标创建营销选件。 它希望为其
 
    ![](assets/offer_inbound_fallback_example_051.png)
 
-1. 用户是Neobank客户，使用其凭据登录。
+1. 用户（Neobank客户）使用其凭据登录。
 
    ![](assets/offer_inbound_fallback_example_052.png)
 

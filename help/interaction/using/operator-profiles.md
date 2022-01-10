@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '384'
 ht-degree: 5%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >在两种情况下，选件管理器只能批准选件。 第一个是，如果没有人特别指定为审阅者，第二个是，如果负责创建模板（具有指定审阅者的权限）的操作员在选件所依据的选件模板中将其指定为审阅者。
+   >在两种情况下，选件管理器只能批准选件。 第一个是，如果没有人特别指定为审阅者，第二个是，如果负责创建模板（具有指定审阅者的权限）的操作员在选件所依据的选件模板中将他们指定为审阅者。
 
 ## 投放管理器 {#delivery-manager}
 

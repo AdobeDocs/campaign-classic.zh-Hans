@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 8491b3a5d1333f4445f90a8a051cd1f5149691bc
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 49%
+source-wordcount: '487'
+ht-degree: 54%
 
 ---
 
@@ -100,12 +100,6 @@ Campaign客户端控制台为
 ![](assets/about-acc.png)
 
 每当您联系Adobe客户关怀团队时，都需要提供Adobe Campaign客户端控制台和应用程序服务器的版本号和内部版本号。
-
-如果您在 [Campaign [!DNL Gold Standard] 版本](../../rn/using/gold-standard.md)，则还需要共享 **[!UICONTROL About]** 框中。 例如，对于 **Gold Standard 12** 版本，此内部版本号可能会显示：&quot;build 9032@554dbcd&quot;。
-
-![](assets/about-acc-gs.png)
-
-详细了解 [!DNL Gold Standard] [在本文中](../../rn/using/gs-overview.md).
 
 **相关主题**：
 

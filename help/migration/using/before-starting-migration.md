@@ -6,48 +6,26 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 1%
+source-wordcount: '322'
+ht-degree: 2%
 
 ---
 
-# 开始迁移前{#before-starting-migration}
+# 先决条件{#before-starting-migration}
 
 ![](../../assets/v7-only.svg)
 
+此页面列出了在开始迁移过程之前要执行的特定步骤。 您还必须引用 [本页](about-migration.md) 以获取更多指导。
+
 >[!NOTE]
 >
->在本文档中，以链接到数据库的命令为例。 这些值可能因其配置而异。 与数据库管理员联系。
+>在本文档中，提供了命令作为示例。 这些值可能因您的配置而异。
 
-## 警告 {#warnings}
-
-* 迁移过程必须仅由专家用户执行。 您必须至少得到来自Adobe Campaign的数据库专家、系统管理员和应用程序开发人员的协助。
-* 在开始迁移之前，请检查您使用的系统和系统组件是否实际与v7兼容。 请查阅 [兼容性矩阵](../../rn/using/compatibility-matrix.md).
-* 如果您使用Adobe Campaign Cloud Messaging（中间源），请在开始整个迁移过程之前联系Adobe。
-* 在开始迁移过程之前，您 **必须** 备份数据。
-* 迁移过程可能需要数天才能完成。
-* Adobe Campaign v7在配置方面比5.11和6.02版本更严格。 这主要是为了避免数据损坏等问题，并在数据库中保留数据完整性。 因此，v5.11和v6.02中提供的某些功能在v7中可能不再工作，因此在迁移后可能需要进行调整。 在投入生产之前，我们建议您系统性地测试所有配置，特别是使用Adobe Campaign所必需的工作流。
-
-### 已安装版本 {#installed-version}
-
-在迁移之前，您应安装当前所用版本的最新版本。
-
-转到 **[!UICONTROL Help> About]** 菜单(使用 **nlserver pdump** 命令。
-
-### 数据备份 {#data-backup}
-
-在开始迁移过程之前，您 **必须** 备份数据。
-
-### 环境 {#environment}
-
-* 无法更改数据库引擎类型(DBMS)。 例如，您无法从PostgreSQL引擎切换到Oracle引擎。 但是，您可以从Oracle8引擎切换到Oracle10引擎。
-* 无法从非Unicode数据库转到Unicode数据库。
-
-### 推荐 {#recommendation}
-
-由于迁移过程是敏感的，因此我们强烈建议在开始该过程之前彻底阅读此文档。
+1. 查看您的Adobe Campaign版本：在迁移之前，请安装您当前使用的最新版本。
+1. 备份数据。
+1. 检查您的环境：不能更改数据库引擎系统(DBMS)。 例如，您无法从PostgreSQL引擎切换到Oracle引擎。 但是，您可以切换到数据库引擎的最新版本。 请注意，不能从非Unicode数据库转到Unicode数据库。
 
 ## 迁移步骤 {#migration-steps}
 
@@ -75,6 +53,6 @@ ht-degree: 1%
 nlserver config -internalpassword
 ```
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >的 **内部** 所有跟踪服务器的密码必须相同。 有关更多信息，请参阅 [内部标识符](../../installation/using/configuring-campaign-server.md#internal-identifier) 和 [权限](../../platform/using/access-management.md) 中。
