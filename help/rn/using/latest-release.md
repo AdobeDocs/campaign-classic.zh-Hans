@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 630a62c5e5c9782c5c55fdebd651493a2d68fc54
 workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 17%
+ht-degree: 30%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 17%
 
 ![](../../assets/v7-only.svg)
 
-本页列出了 **最新Campaign Classicv7版本**. 每个新内部版本都带有一个状态，该状态以颜色实现。 进一步了解Campaign Classicv7在中的构建状态 [本页](rn-overview.md).
+此页面列出了 **Campaign v7 最新版本**&#x200B;中的新增功能、改进和修复。每个新的内部版本都带有一个以颜色突出显示的状态。在[此页面](rn-overview.md)中了解有关 Campaign Classic v7 内部版本状态的更多信息。
 
 ## ![](assets/do-not-localize/green_2.png) 7.2.1 版 - 版本 9346 {#release-7-2-1}
 
@@ -27,7 +27,7 @@ _2022年1月10日_
 
 FDA帐户已进行多项安全改进：
 
-* ODBC驱动程序现在直接与Adobe Campaign第三方安装。 安装这些驱动程序不再需要手动步骤。
+* ODBC 驱动程序现在直接通过 Adobe Campaign 第三方安装。安装这些驱动程序不再需要手动步骤。
 * 配置FDA外部帐户时，您现在可以使用密钥对身份验证登录到Snowflake帐户，以增强身份验证安全性。 [了解更多信息](../../installation/using/configure-fda-snowflake.md)
 * 现在，在配置FDA外部帐户时，您可以使用系统分配的托管身份登录到Azure synapse分析帐户。 [了解更多信息](../../installation/using/configure-fda-synapse.md#azure-external)
 * 已从Campaign中删除对log4j库的所有引用，以确保获得最佳安全性。
@@ -36,10 +36,10 @@ FDA帐户已进行多项安全改进：
 
 * Microsoft Dynamics CRM 365 Connector
 
-   已对Microsoft Dynamics Connector Web API应用了以下关键修复：
+   已对 Microsoft Dynamics Connector Web API 应用了以下重要修复：
 
-   * 修复了在由工作流触发的导入期间导致字符串类型字段的null值保存为Null而不是空值的问题。
-   * 修复了使用Web API调用导致数据导入或导出出现以下错误的问题：&quot;无效的URI:URI方案太长”。
+   * 修复了在由工作流触发的导入过程中，导致字符串类型字段的 null 值保存为 Null 而不是空值的问题。
+   * 修复了使用 Web API 调用时导致数据导入或导出出现以下错误的问题：“Invalid URI: The URI scheme is too long”。
    * 修复了从Microsoft Dynamics 365导入包含查找字段的数据时出现的各种问题。
 
 * Google BigQuery FDA连接器
@@ -49,7 +49,7 @@ FDA帐户已进行多项安全改进：
 
 **其他变更**
 
-* 弃用后，已从界面中删除Microsoft CRM、Salesforce、OracleCRM按需操作活动。 要配置Adobe Campaign与CRM系统之间的数据同步，您可以使用CRM连接器活动。 [了解更多信息](../../workflow/using/crm-connector.md)
+* 弃用后，已从界面中删除Microsoft CRM、Salesforce、OracleCRM按需操作活动。 要配置 Adobe Campaign 与 CRM 系统之间的数据同步，您可以使用 CRM 连接器活动。[了解更多信息](../../workflow/using/crm-connector.md)
 * 的 **[!UICONTROL Encrypted identifier]** 字段已添加到访客模式(nms:visitor)。 会计算该字段并将其用于 Web 应用程序。在中间源实例上配置Line渠道时，这种情况适用。
 * CRM数据源现在可以与 **更改数据源** 活动。
 * 在 **错误管理** 工作流活动的属性：的 **出错时中止** 选项会自动停止工作流。 之后将无法重新启动它(NEO-29661)。 [了解更多信息](../../workflow/using/advanced-parameters.md#in-case-of-errors)

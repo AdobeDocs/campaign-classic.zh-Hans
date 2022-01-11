@@ -1,23 +1,23 @@
 ---
 product: campaign
-title: Campaign Classic2021版
-description: 了解有关Campaign Classic2021版本的更多信息
+title: Campaign Classic 2021 版
+description: 详细了解 Campaign Classic 2021 版
 feature: Overview
 role: User
 level: Beginner
 source-git-commit: babb585438a6e467afad74391035059f7b12a6ec
 workflow-type: tm+mt
 source-wordcount: '2540'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
 # 2021年版{#release-2021}
 
-## 版本7.1(21.1)
+## 7.1 版 (21.1)
 
 >[!CAUTION]
->使用 **[!UICONTROL Help > About...]** 用于检查您的Adobe Campaign的菜单 [版本号和内部版本号](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). 但请注意，对于本页中列出的9277到9343之间的所有内部版本，版本号显示为7.0，而不是7.1。
+>使用 **[!UICONTROL Help > About...]** 用于检查您的Adobe Campaign的菜单 [版本号和内部版本号](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). 但请注意，对于本页中列出的 9277 到 9343 之间的所有内部版本，版本号显示为 7.0，而不是 7.1。
 
 ### ![](assets/do-not-localize/limited_2.png) 21.1.4 版 - 版本 9343 {#release-21-1-4-build-9343}
 

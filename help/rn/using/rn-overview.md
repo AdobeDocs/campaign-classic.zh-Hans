@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 81%
+ht-degree: 87%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 81%
 
 ## 版本状态{#rn-statuses}
 
-每个新内部版本都带有一个状态，该状态以颜色实现。
+每个新的内部版本都带有一个以颜色突出显示的状态。
 
-![](assets/do-not-localize/green3.png) **一般可用性** (GA) - 已在生产中验证并受到 Adobe 推荐。
+![](assets/do-not-localize/green3.png) **正式发布版** (GA) - 已在生产中验证并受到 Adobe 推荐。
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 仅限按需部署。
 
@@ -41,9 +41,9 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 
 ## 推荐{#recommendations}
 
-为确保配置稳定，我们建议您安装 **相同的稳定内部版本** 在同一客户端配置上运行的所有服务器上。
+为确保配置稳定，建议您在使用相同客户端配置运行的所有服务器上安装&#x200B;**相同的稳定版本**。
 
-此外，客户端控制台必须与服务器实例位于同一内部版本。
+此外，客户端控制台须与服务器实例属于同一版本。
 
 要使您的实施保持为最新，请确保针对每个新版本阅读[已弃用和已删除的功能](../../rn/using/deprecated-features.md)和[兼容性矩阵](../../rn/using/compatibility-matrix.md)页面。
 
@@ -136,7 +136,7 @@ Adobe 团队将引导和指导您的组织完成此旅程。
 
 ## 其他资源{#support}
 
-* [查找Campaign版本](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+* [查找您的 Campaign 版本](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
 * [帮助与支持](../../support.md)
 * [控制面板版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hans)
 * [最新文档更新](../../rn/using/documentation-updates.md)

@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
 source-wordcount: '4796'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -47,27 +47,27 @@ ht-degree: 95%
 
 ### 2021 年 12 月{#dec-2021}
 
-Campaign Classicv7发行说明已重新组织，以简化导航。 [了解更多信息](rn-overview.md)
+Campaign Classic v7 发行说明已重新组织以简化导航。[了解更多信息](rn-overview.md)
 
-更新并改进了有关Campaign表单版本的文档。 [了解更多信息](../../configuration/using/editing-forms.md)
+更新并改进了有关 Campaign 表单版本的文档。[了解更多信息](../../configuration/using/editing-forms.md)
 
-CentOs 8已结束其生命周期，现已在Adobe Campaign Classic中弃用。 [了解更多信息](deprecated-features.md)
+CentOs 8 的生命周期已终止，现已在 Adobe Campaign Classic 中弃用。[了解更多信息](deprecated-features.md)
 
 ### 2021 年 11 月{#nov-2021}
 
-添加了有关传入短信(MO)的限制。 [了解更多信息](../../delivery/using/sms-protocol.md#multipart)
+添加了有关传入短信 (MO) 的限制。[了解更多信息](../../delivery/using/sms-protocol.md#multipart)
 
-更新了CRM连接器部署的迁移过程日志详细信息。 [了解更多信息](../../migration/using/testing-the-migration.md#verification-process)
+更新了 CRM 连接器部署的迁移过程日志详细信息。[了解更多信息](../../migration/using/testing-the-migration.md#verification-process)
 
-添加了有关实施Adobe Campaign-Adobe Analytics集成的IMS权限的要求。 [了解更多信息](../../platform/using/adobe-analytics-provisioning.md)
+添加了有关实施 Adobe Campaign-Adobe Analytics 集成的 IMS 权限的要求。[了解更多信息](../../platform/using/adobe-analytics-provisioning.md)
 
-更新了Adobe Analytics Data Connector生命周期终止日期，从2022年3月1日至2022年8月17日。 [了解更多信息](deprecated-features.md)
+将 Adobe Analytics 数据连接器的生命周期终止日期从 2022 年 3 月 1 日更新为 2022 年 8 月 17 日。[了解更多信息](deprecated-features.md)
 
-添加了指向Adobe Experience Platform Mobile SDK文档的链接，以了解如何在Launch中配置Campaign扩展Adobe。 [了解更多信息](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+添加了 Adobe Experience Platform 移动 SDK 文档的链接，以了解如何在 Adobe Launch 中配置 Campaign 扩展程序。[了解更多信息](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
 
-添加了有关如何使用JavaScript计算值、交换数据以及使用SOAP调用执行特定操作的章节。[了解更多信息](../../workflow/using/javascript-scripts-and-templates.md)
+添加了有关如何使用 JavaScript 计算值、交换数据以及使用 SOAP 调用执行特定操作的部分。[了解更多信息](../../workflow/using/javascript-scripts-and-templates.md)
 
-在工作流中添加了JavaScript代码实施示例。 [了解更多信息](../../workflow/using/javascript-in-workflows.md)
+添加了在工作流中实施 JavaScript 代码的示例。[了解更多信息](../../workflow/using/javascript-in-workflows.md)
 
 
 ### 2021 年 10 月{#oct-2021}
@@ -202,7 +202,7 @@ Oracle On Demand API 现在作为与 Campaign 连接的 CRM 已弃用。[阅读�
 
 
 
-## 2020年
+## 2020
 
 ### 2020 年 12 月 {#dec-2020}
 
