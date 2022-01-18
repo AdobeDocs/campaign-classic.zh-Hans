@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -35,9 +35,9 @@ ht-degree: 87%
 
 Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、最充分的信息，保持环境的安全，并改进您对我们产品的体验。
 
-这就是为什么我们认为你至关重要的原因 **运行最新的稳定版本** Adobe Campaign。 它还将确保您获得更好的支持体验，因为识别、再现和修复最近的内部版本中的问题通常要快得多。此外，您可能遇到的许多问题已在最新内部版本中得到修复。
+这就是为什么我们认为&#x200B;**运行最新稳定版本的** Adobe Campaign 至关重要的原因。它还将确保您获得更好的支持体验，因为识别、再现和修复最近的内部版本中的问题通常要快得多。此外，您可能遇到的许多问题已在最新内部版本中得到修复。
 
-作为托管客户，您无需采取任何操作，即可通过最新稳定版本自动从升级中受益。 在 [每年升级部分](#yearly-upgrade). 如果您从旧内部版本进行迁移，则Adobe建议您先升级到此版本。
+作为托管客户，您无需采取任何操作，即可通过最新稳定版本自动从升级中受益。在[年度升级部分](#yearly-upgrade)中了解详情。如果您从旧内部版本进行迁移，Adobe 建议您先升级到此版本。
 
 ## 推荐{#recommendations}
 
@@ -53,19 +53,19 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 
 作为本地用户，您可以执行升级。为此，您需要[下载最新的稳定内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)并升级所有环境。了解有关[升级过程](../../production/using/build-upgrade.md)的更多信息，并查阅[内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)。
 
-## 每年升级 {#yearly-upgrade}
+## 年度升级 {#yearly-upgrade}
 
 Adobe 和 Adobe Campaign 致力于通过我们的软件解决方案为您提供理想体验和价值。公司致力于确保您能获取我们的解决方案用于执行任务的最新版相关技术。
 
 Adobe Campaign Classic 特别使用一系列技术来提供价值。这一技术组合要求您定期升级 Campaign Classic 实例，以确保使用最新版本提供出众的安全性、稳定性和性能。
 
-作为托管用户，您无需采取任何操作，即可通过最新稳定内部版本自动从升级中受益。 请通过以下常见问题解答了解更多信息。
+作为托管用户，您无需采取任何操作，即可通过最新稳定内部版本从升级中受益。请通过以下常见问题解答了解详情。
 
 ### 我的组织为什么需要此升级？
 
 作为托管客户，如果已确定您的帐户需要升级一项或多项与 Campaign Classic 相关的技术，以及更新当前内部版本和/或版本，Adobe 将直接通知您。
 
-作为在旧版本上运行的内部部署或混合Adobe,Analytics鼓励您转为使用最新的稳定版本。
+对于在旧版本上运行的内部部署或混合型客户，Adobe 建议您迁移到最新稳定内部版本。
 
 这将确保您的帐户免受漏洞攻击，并利用更新后的性能技术。此升级还将使您的帐户能够在以后更轻松地定期升级，而且无需过多的手动操作和干预。
 
