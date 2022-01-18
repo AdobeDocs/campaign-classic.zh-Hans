@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4796'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,29 +21,29 @@ ht-degree: 98%
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
-## 2022年
+## 2022
 
-###  年 1 月
+### 1 月
 
 **随 7.2.1 版提供的文档更新**
 
-更新了兼容性矩阵。 [了解更多信息](compatibility-matrix.md)
+更新了兼容性矩阵。[了解更多信息](compatibility-matrix.md)
 
-更新了发行说明章节。 [了解更多信息](rn-overview.md)
+更新了发行说明章节。[了解更多信息](rn-overview.md)
 
-更新了FDA外部帐户配置以进行Snowflake。 [了解更多信息](../../installation/using/configure-fda-snowflake.md)
+更新了适用于 Snowflake 的 FDA 外部帐户配置。[了解更多信息](../../installation/using/configure-fda-snowflake.md)
 
-更新了Azure synapse分析的FDA外部帐户配置。 [了解更多信息](../../installation/using/configure-fda-synapse.md#azure-external)
+更新了适用于 Azure Synapse Analytics 的 FDA 外部帐户配置。[了解更多信息](../../installation/using/configure-fda-synapse.md#azure-external)
 
-更新了Google BigQuery FDA连接器。 [了解更多信息](../../installation/using/configure-fda-google-big-query.md)
+更新了 Google BigQuery FDA 连接器。[了解更多信息](../../installation/using/configure-fda-google-big-query.md)
 
-弃用后，Microsoft CRM、Salesforce、OracleCRM（按需）操作活动已从文档中删除。
+弃用后，Microsoft CRM、Salesforce、Oracle CRM On Demand 操作活动已从文档中删除。
 
-新选项 **出错时中止** 已添加到工作流错误管理部分。 [了解更多信息](../../workflow/using/advanced-parameters.md#in-case-of-errors)
+新选项 **Abort on error** 已添加到工作流错误管理部分。[了解更多信息](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 
-在CRM连接器活动中添加了批量更新选项。 [了解更多信息](../../workflow/using/crm-connector.md)
+在 CRM 连接器活动中增加了批量更新选项。[了解更多信息](../../workflow/using/crm-connector.md)
 
-## 2021年
+## 2021
 
 ### 2021 年 12 月{#dec-2021}
 
@@ -112,7 +112,7 @@ LINE 渠道增强 - [了解详情](../../delivery/using/line-channel.md)
 
 新的 Vertica FDA 连接器 - [了解详情](../../installation/using/configure-fda-vertica.md)
 
-新的Google BigQuery FDA连接器 —  [了解更多](../../installation/using/configure-fda-google-big-query.md)
+新的 Google BigQuery FDA 连接器 - [了解详情](../../installation/using/configure-fda-google-big-query.md)
 
 “计费 (billing)”技术工作流描述现在包括原来由“活跃计费用户档案数 (billingActiveContactCount)”执行的任务。[阅读更多](../../workflow/using/about-technical-workflows.md)
 
@@ -252,7 +252,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 更新了已弃用和已删除的功能页面。[阅读更多](../../rn/using/deprecated-features.md)
 
-的发行说明和兼容性矩阵 [!DNL Gold Standard] 现在，可在专用页面中使用该版本。
+[!DNL Gold Standard] 版本的发行说明和兼容性矩阵现在可在专门页面中获取。
 [阅读更多](../../rn/using/gold-standard.md)。
 
 最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成现已更改并移至 Adobe I/O。[阅读更多](../../integrations/using/configuring-adobe-io.md)
@@ -450,7 +450,7 @@ Hadoop FDA 连接器增强 - [阅读更多](../../installation/using/configure-f
 
 安装指南已更新并与最新版本的兼容性矩阵同步。新增了支持的系统。已弃用和不支持的系统的实例已被删除。[阅读更多](../../installation/using/general-architecture.md)
 
-更新了兼容性矩阵，纳入 Hadoop 3.0 和 Snowflake FDA 连接器。[阅读更多](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+更新了兼容性矩阵，纳入 Hadoop 3.0 和 Snowflake FDA 连接器。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 
 安装指南中添加了有关 IP 关联的最佳实践。[阅读更多](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -468,7 +468,7 @@ Hadoop FDA 连接器增强 - [阅读更多](../../installation/using/configure-f
 
 **Campaign Classic 本地和托管功能矩阵**&#x200B;页面已更新新的 FDA 连接器。[阅读更多](../../installation/using/capability-matrix.md)。
 
-**Campaign Classic 功能矩阵**&#x200B;页面已更新。[阅读更多](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+**Campaign Classic 功能矩阵**&#x200B;页面已更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 
 新的&#x200B;**[!UICONTROL Cleanup of Nmsaddress]**&#x200B;工作流记录在[此处](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)。
 
@@ -520,7 +520,7 @@ FDA 矩阵页面已移到[此处](../../installation/using/remote-database-acces
 
 **随版本提供的其他文档更新**
 
-Adobe Campaign 增强 MTA 文档现已可用。[阅读更多](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+Adobe Campaign 增强 MTA 文档现已可用。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)
 
 增加了新的部分，介绍如何对活动中保持“尽快启动”状态的工作流进行故障排除。[阅读更多](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -582,7 +582,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 **19.1 版本中包含的新功能**
 
-控制面板 - [阅读更多](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+控制面板 - [阅读更多](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
 
 审核跟踪 - [阅读更多](../../production/using/audit-trail.md)
 
@@ -606,7 +606,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 Marketing Cloud 触发器技术说明已更新。[阅读更多](../../integrations/using/about-triggers.md)
 
-错误消息的列表已更新。[阅读更多](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+错误消息的列表已更新。[阅读更多](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans)
 
 添加了有关事务消息的 SOAP 身份验证方法的更多信息。[阅读更多](../../message-center/using/event-description.md)
 
@@ -645,7 +645,7 @@ Apache 配置步骤已更新。[阅读更多](../../installation/using/integrati
 更新了有关共享受众集成的文档。
 [阅读更多](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-以下技术已更新：[SMS 连接器协议和设置](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)以及[序列自动生成](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+以下技术已更新：[SMS 连接器协议和设置](https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html)以及[序列自动生成](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
 技术工作流部分已更新。[阅读更多](../../workflow/using/about-technical-workflows.md)
 
