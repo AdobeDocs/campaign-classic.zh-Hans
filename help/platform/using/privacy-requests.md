@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 71a5433db3ce2af5a25e5f861bd6f1dfb9aa8934
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2425'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -281,7 +281,7 @@ Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私
 
    * 您可以使用 **nms:gdprRequest** 模式上的 **queryDef** 来查看访问请求的状态。
    * 您可以使用 **nms:gdprRequestData** 模式上的 **queryDef** 来获取访问请求的结果。
-   * 从下载XML文件 **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;**，则必须登录并从包含在中的IP访问该网允许列表站。 为此，请创建一个允许您访问 JSSP 生成的文件的 Web 应用程序。
+   * 为了能够从 **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;** 下载 XML 文件，您必须登录并从已列入允许列表的 IP 访问它。为此，请创建一个允许您访问 JSSP 生成的文件的 Web 应用程序。
 
 ### 从 JS 调用 API {#invoking-api-from-js}
 
