@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -149,7 +149,7 @@ ht-degree: 90%
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016年</p>
+<p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 和 SP2</p>
 <p><strong>重要提示：</strong>当 Campaign 服务器在 Linux 上运行时，不支持将 Microsoft SQL Server 作为主数据库。<a href="../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers">了解详情</a>。</p>
@@ -188,15 +188,15 @@ ht-degree: 90%
 
 ## 联合数据访问 (FDA){#FederatedDataAccessFDA}
 
-下面列出了与 Adobe Campaign [联合数据访问模块](../../installation/using/about-fda.md)兼容的外部数据库。兼容性取决于 [托管模型](../../installation/using/hosting-models.md).
+下面列出了与 Adobe Campaign [联合数据访问模块](../../installation/using/about-fda.md)兼容的外部数据库。兼容性取决于您的[托管模型](../../installation/using/hosting-models.md)。
 
-**Managed Services** （托管）、 **混合** 和 **内部部署** 环境可以将Campaign与以下外部数据库系统连接：
+**Managed Services**（托管）、 **混合**&#x200B;和&#x200B;**内部部署**&#x200B;环境可以将 Campaign 与以下外部数据库系统连接：
 
 <table>
 <tbody>
 <td><strong>数据库系统</strong></td>
 <td><strong>数据库版本</strong></td>
-<td><strong>Campaign版本</strong></td>
+<td><strong>Campaign 版本</strong></td>
 <tr>
 <tr>
 <td>Snowflake</td>
@@ -211,7 +211,7 @@ ht-degree: 90%
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
-<td>最低v7.0 19.1.4</td>
+<td>最低版本为 7.0 19.1.4</td>
 </td>
 </tr>
 <tr>
@@ -225,27 +225,27 @@ ht-degree: 90%
 <p>9.5.x</p>
 <p>9.4.x</p>
 </td>
-<td>最少7.0版19.1.4</td>
+<td>最低版本为 7.0 19.1.4</td>
 </tr>
 </tbody>
 </table>
 
-此外， **混合** 和 **内部部署** 环境还可以将Campaign与：
+此外，**混合**&#x200B;和&#x200B;**内部部署**&#x200B;环境还可以将 Campaign 与以下连接：
 
 <table>
 <tbody>
 <td><strong>数据库系统</strong></td>
 <td><strong>数据库版本</strong></td>
-<td><strong>Campaign版本</strong></td>
+<td><strong>Campaign 版本</strong></td>
 <tr>
 <td>Vertica</td>
 <td> </td>
-<td>最少7.0版19.1.4</td>
+<td>最低版本为 7.0 19.1.4</td>
 </tr>
 <tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
-<td>最少7.0版19.1.4</td>
+<td>最低版本为 7.0 19.1.4</td>
 </tr>
 <tr>
 <td>Oracle</td>
@@ -255,23 +255,23 @@ ht-degree: 90%
 <p>12c</p>
 <p>11g</p>
 </td>
-<td>最少7.0版</td>
+<td>最低版本为 7.0</td>
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019年</p>
-<p>2017年</p>
-<p>2016年</p>
-<p>2014年</p>
+<p>2019</p>
+<p>2017</p>
+<p>2016</p>
+<p>2014</p>
 <p>2012 SP1 和 SP2</p>
 </td>
-<td>最少7.0版</td>
+<td>最低版本为 7.0</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
 <p>5.7</p>
 </td>
-<td>最少7.0版</td>
+<td>最低版本为 7.0</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -281,14 +281,14 @@ ht-degree: 90%
 <p>15.10</p>
 <p>15.0</p>
 </td>
-<td>最少7.0版</td>
+<td>最低版本为 7.0</td>
 </tr>
 <tr>
 <td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
-<td>最少7.0版</td>
+<td>最低版本为 7.0</td>
 </tr>
 <tr>
 <td>Sybase</td>
@@ -296,14 +296,14 @@ ht-degree: 90%
 <p>IQ 16</p>
 <p>ASE 15.7</p>
 </td>
-<td>最少7.0版</td>
+<td>最低版本为 7.0</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
 <td>
 <p>V1 SPS 12</p>
 </td>
-<td>最少7.0版</td>
+<td>最低版本为 7.0</td>
 </tr>
 <tr><td>Hadoop（通过 HiveSQL）</td>
 <td>
@@ -311,7 +311,7 @@ ht-degree: 90%
 <p>HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6)</p>
 <p>Cloudera CDH6.x</p>
 </td>
-<td>最少7.0版</td>
+<td>最低版本为 7.0</td>
 </tr>
 </tbody>
 </table>
@@ -331,8 +331,8 @@ ht-degree: 90%
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2016年</p>
-<p>2012年</p>
+<p>2016</p>
+<p>2012</p>
 </td>
 </tr>
 <tr>
