@@ -7,9 +7,9 @@ user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2556'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
    + [最新版本](rn/using/latest-release.md)
    + 之前版本 {#previous-releases}
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
-      + [2021年](rn/using/release--2021.md)
+      + [2021](rn/using/release--2021.md)
       + [2020](rn/using/release--2020.md)
       + [2019](rn/using/release--2019.md)
       + [2018](rn/using/release--2018.md)
@@ -818,14 +818,14 @@ ht-degree: 98%
       + [收集所有访问](configuration/using/collecting-all-visits.md)
       + [匿名跟踪](configuration/using/anonymous-tracking.md)
 + 迁移指南 {#migrating-to-a-new-version}
-   + [迁移到Adobe Campaign v7](migration/using/about-migration.md)
+   + [迁移到 Adobe Campaign v7](migration/using/about-migration.md)
    + 迁移过程 {#migration-procedure}
       + [先决条件](migration/using/before-starting-migration.md)
       + [关于迁移测试](migration/using/testing-the-migration.md)
       + [调整配置](migration/using/configuring-your-platform.md)
    + 开始迁移 {#migrating-to-adobe-campaign-7}
-      + [迁移Microsoft Windows平台](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-      + [迁移Linux平台](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+      + [迁移 Microsoft Windows 平台](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
+      + [迁移 Linux 平台](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
       + [配置平台](migration/using/general-configurations.md)
    + [回滚过程](migration/using/about-rollback.md)
 + 技术说明 {#technotes}
