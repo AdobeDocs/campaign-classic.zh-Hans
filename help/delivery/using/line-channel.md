@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 035297523c25061f28751c28df86d562f40f45ea
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 ## 设置LINE渠道 {#setting-up-line-channel}
 
-在创建 [!DNL LINE] 帐户和外部帐户，您首先需要在实例上安装LINE包。 有关此内容的更多信息，请查阅 [折线图](../../installation/using/installing-campaign-standard-packages.md#line-package) 部分。
+在创建 [!DNL LINE] 帐户和外部帐户，您首先需要在实例上安装LINE包。 有关此内容的详细信息，请查阅 [此部分](../../installation/using/installing-campaign-standard-packages.md#line-package).
 
 您必须先创建 [!DNL LINE] 帐户，以便您随后将其关联到Adobe Campaign。 然后，您可以发送 [!DNL LINE] 向添加了 [!DNL LINE] 帐户。 外部帐户和 [!DNL LINE] 帐户只能由平台的功能管理员管理。
 

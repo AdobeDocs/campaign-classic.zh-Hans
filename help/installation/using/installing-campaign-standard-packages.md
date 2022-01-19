@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 6c23dadb5b6523e17e242de43a908ca86ed7cc23
+source-git-commit: 035297523c25061f28751c28df86d562f40f45ea
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1254'
 ht-degree: 6%
 
 ---
@@ -241,7 +241,7 @@ ht-degree: 6%
 
 ### 消息中心包 {#message-center-package}
 
-您必须安装投放渠道（电子邮件、移动设备渠道、移动设备应用程序渠道等） 安装事务性消息（消息中心包）之前。 如果您已启动仅限电子邮件的消息中心项目，并且随后需要添加新渠道，则必须执行以下步骤：
+您必须安装投放渠道（电子邮件、移动渠道、移动应用程序渠道、LINE等） 安装事务性消息（消息中心包）之前。 如果您已启动仅限电子邮件的消息中心项目，并且随后需要添加新渠道，则必须执行以下步骤：
 
 1. 安装新渠道，例如 **移动渠道**，使用资源包导入向导( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)。
 1. 导入文件( **[!UICONTROL Tools > Advanced > Import package > File]**)，然后选择：
@@ -254,6 +254,19 @@ ht-degree: 6%
 
    ![](assets/messagecenter_install_channel.png)
 
+
+### [!DNL LINE] 渠道设置{#line-package}
+
+设置 [!DNL LINE] 渠道，必须先安装 [!DNL LINE] 包。
+
+在中间源配置的上下文中，您需要：
+
+* 安装 [!DNL LINE] 营销和MID实例上的包
+
+* 设置 [!DNL LINE] mkt实例上的外部帐户通过更改提交模式指向mid实例。 [了解详情](../../delivery/using/line-channel.md#configure-line-external)
+
+* 设置 [!DNL LINE] MID实例上外部帐户中的凭据。
+
 >[!CAUTION]
 >
->如果在LINE之前安装了消息中心包，则LINE的消息中心投放模板将不可用
+>的消息中心投放模板 [!DNL LINE] 如果在安装消息中心包之前安装，则通道将不可用 [!DNL LINE].
