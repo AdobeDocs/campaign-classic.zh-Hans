@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 035297523c25061f28751c28df86d562f40f45ea
+source-git-commit: ad75b8050133b331f6fbfa5042a444a874ba3cb4
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1148'
 ht-degree: 2%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 2%
 # 创建LINE投放{#line-channel}
 
 ![](../../assets/common.svg)
-
->[!NOTE]
->
->[!DNL LINE] 仅可用于内部部署或托管服务安装。
 
 [!DNL LINE] 是免费即时消息、语音和视频呼叫的应用程序，适用于每个移动操作系统和PC上。
 
