@@ -7,9 +7,9 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 671e29425e8962ced833c10303b6edce7afda462
+source-git-commit: 9ee95f6d60500b18e242c6d648488615f47a4459
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '646'
 ht-degree: 4%
 
 ---
@@ -141,10 +141,21 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 
    ![](assets/do-not-localize/triggers_12.png)
 
-1. 使用以下命令将这些服务帐户凭据粘贴到nlserver:
+1. 使用步骤6中生成的私钥。
+
+   如果您已使用这些凭据设置触发器，则此连接器配置的私钥必须相同。
+
+1. 使用以下命令对私钥进行编码： `base64 ./private.key > private.key.base64`. 这会将base64内容保存到新文件 `private.key.base64`.
+
+   >[!NOTE]
+   >
+   >有时，在复制/粘贴私钥时，会自动添加额外的行。 在对私钥进行编码之前，请记得将其删除。
+
+1. 从文件复制内容 `private.key.base64`.
+
+1. 通过SSH登录到安装了Adobe Campaign实例的每个容器，并通过以下命令(如 `neolane` 用户。 这将插入 **[!UICONTROL Technical Account]** 实例配置文件中的凭据。
 
    ```
-   nlserver config -instance:<instanceName> -setimsjwtauth::<ImsOrgId>/<ClientId>/<TechnicalAccountId>/<ClientSecret>/<$(base64 -w0 /path/to/private.key)>
+   nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
-
 您现在可以开始使用Analytics连接器并跟踪客户行为。
