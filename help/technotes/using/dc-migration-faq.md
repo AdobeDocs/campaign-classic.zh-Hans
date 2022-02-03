@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
 workflow-type: tm+mt
-source-wordcount: '2243'
+source-wordcount: '2216'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-作为 [Gold Standard计划](../../rn/using/gold-standard.md),Adobe会解压缩旧版数据中心。 Campaign Classic实例必须传输到Public Cloud Amazon Web Services(AWS)。 [进一步了解此计划](dc-migration.md).
+Adobe解压缩旧版数据中心：Campaign Classic实例必须传输到Public Cloud Amazon Web Services(AWS)。 [进一步了解此计划](dc-migration.md).
 
 以下是有关此项目、对营销活动环境的影响以及其他有用资源的一组常见问题。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
    第一步，我们将使用迁移来保留相同的Campaign Classic内部版本。
 
-   在进一步中，我们将继续升级到最新的Campaign ClassicGA内部版本。 有关更多信息，请参阅 [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md) 和 [Campaign Gold Standard发行说明](../../rn/using/gold-standard.md).
+   在进一步中，我们将继续升级到最新的Campaign ClassicGA内部版本。 有关详细信息，请参见[此页面](../../rn/using/rn-overview.md)。
 
 * **解决迁移后问题的计划是什么？**
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
    Adobe服务器的IP地址将发生更改。 因此，客户可能需要在其系统的中添允许列表加这些新IP地址。
 
-   [单击此处](#config) 有关上IP的更多详细信息允许列表。
+   [了解更多](#config) 关于允许列表上的IP。
 
 * **我们将如何处理添加到SFTP/FTP允许列表访问的端口？**
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
    Adobe服务器的IP地址将发生更改。 因此，客户可能需要将这些新IP地址添加到其系允许列表统中的。
 
-   [单击此处](#config) 有关上IP的更多详细信息允许列表。
+   [了解更多](#config) 关于允许列表上的IP。
 
 * **如何处理子域委派？**
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
    Adobe服务器的IP地址将发生更改。 因此，客户可能需要将这些新IP地址添加到其系允许列表统中的。
 
-   [单击此处](#config) 有关“时IP”的更多详允许列表细信息。
+   [了解更多](#config) 关于IP on 允许列表 Analytics。
 
 * **我们是否会确保迁移后正确设置所有JavaScript内存配置参数？**
 
@@ -169,7 +169,7 @@ ht-degree: 0%
 
    它可能会根据新服务器位置而发生更改。 但是，客户将能够保留其当前时区。
 
-   [单击此处](../../workflow/using/managing-time-zones.md) 有关Adobe Campaign Classic v7中时区管理的更多详细信息。
+   [了解更多](../../workflow/using/managing-time-zones.md) 关于Adobe Campaign Classic v7中的时区管理。
 
 
 ## 安全性和权限
