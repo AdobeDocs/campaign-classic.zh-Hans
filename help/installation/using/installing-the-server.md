@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e88ed7a5710f9ec8713d9e7151d2fd4904097990
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '391'
 ht-degree: 2%
 
 ---
@@ -157,7 +157,7 @@ net stop nlserver6
 
 ## 安装LibreOffice {#installing-libreoffice}
 
-下载LibreOffice，例如从 [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) 并按常规安装步骤操作。
+下载LibreOffice并按照常规安装步骤操作。
 
 添加以下环境变量：
 

@@ -3,10 +3,8 @@ product: campaign
 title: 批准营销活动
 description: 了解如何管理营销活动的批准
 audience: campaign
-content-type: reference
-topic-tags: orchestrate-campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 2%
@@ -252,7 +250,6 @@ Adobe Campaign允许您以协作模式为营销活动的主要阶段设置审批
 >* 如果定义了审阅人列表，则当一个审阅人接受了某个作业时，该作业即被批准。 随后，相关批准链接将不再在功能板中提供。 在启用通知发送后，如果其他审阅人单击通知消息中的批准链接，则系统会通知他们其他操作员已经批准了该作业。
 >* 您可以在审阅人编辑窗口的下半部分定义营销活动的批准计划。 默认情况下，审阅人自提交日期起有3天时间批准流程。 可以配置提醒，该提醒会在批准截止日期之前自动发送给相关操作员。
 >* 您可以从此部分添加提醒。
-
 >
 
 
