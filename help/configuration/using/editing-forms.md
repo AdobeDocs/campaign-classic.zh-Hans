@@ -2,11 +2,8 @@
 product: campaign
 title: 编辑表单
 description: 编辑表单
-audience: configuration
-content-type: reference
-topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: daecbdecde0b80b47c113acc80618aee314c5434
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 2%
@@ -29,7 +26,7 @@ ht-degree: 2%
 
 Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架构，请选择 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** 中。 有关更多信息 [窗体结构](form-structure.md).
 
-要访问输入表单，请选择 **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** 从菜单：
+To access input forms, choose **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** from the menu:
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
@@ -184,9 +181,9 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
 1. 指定表单属性：
 
-   * 指定表单名称和命名空间。
+   * Specify the form name and the namespace.
 
-      表单名称和命名空间可以匹配相关数据架构。  此示例显示 `cus:order` 数据架构：
+      表单名称和命名空间可以匹配相关数据架构。  This example shows a form for the `cus:order` data schema:
 
       ```xml
       <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
@@ -450,7 +447,7 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 1. 修改工厂输入表单：
 
    1. 从菜单中，选择 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
-   1. 选择输入表单并对其进行修改。
+   1. Select an input form and modify it.
 
    您可以扩展工厂数据架构，但无法扩展工厂输入表单。 我们建议您直接修改工厂输入表单，而无需重新创建。 在软件升级期间，您在工厂输入表单中所做的修改将与升级合并。 如果自动合并失败，您可以解决冲突。 [阅读更多](../../production/using/upgrading.md#resolving-conflicts)。
 

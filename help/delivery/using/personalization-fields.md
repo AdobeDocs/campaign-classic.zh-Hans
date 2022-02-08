@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: 个性化字段
-description: 个性化字段
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: 了解如何使用个性化字段
+feature: Personalization
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 11%
+source-wordcount: '884'
+ht-degree: 10%
 
 ---
 

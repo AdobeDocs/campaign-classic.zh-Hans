@@ -2,14 +2,12 @@
 product: campaign
 title: 扩展模式
 description: 了解如何扩展模式
-audience: configuration
-content-type: reference
-topic-tags: editing-schemas
+feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 5%
+source-wordcount: '327'
+ht-degree: 4%
 
 ---
 
@@ -63,5 +61,5 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->要考虑修改，您需要重新生成架构。 有关更多信息，请参阅 [重新生成模式](../../configuration/using/regenerating-schemas.md) 中。\
->如果修改影响数据库的结构，则需要运行更新。 有关更多信息，请参阅[更新数据库结构](../../configuration/using/updating-the-database-structure.md)。
+>要考虑修改，您需要重新生成架构。 有关详细信息，请参见[此页面](../../configuration/using/regenerating-schemas.md)。\
+>如果修改影响数据库的结构，则需要运行更新。 有关详细信息，请参见[此页面](../../configuration/using/updating-the-database-structure.md)。

@@ -1,12 +1,10 @@
 ---
 product: campaign
 title: SMS 连接器协议和设置
-description: 进一步了解SMS连接器及其配置方法。
-audience: delivery
-content-type: reference
-topic-tags: configuring-channels
+description: 进一步了解SMS连接器及其配置方法
+feature: SMS
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 4d789ad0138f65134d3c1592ef5d5517d39fc0f7
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '8460'
 ht-degree: 0%

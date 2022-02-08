@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: 配置 URL 跟踪选项
-description: 配置 URL 跟踪选项
-audience: delivery
-content-type: reference
-topic-tags: tracking-messages
+description: Learn how to configure URL tracking options
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 12%
+source-wordcount: '167'
+ht-degree: 9%
 
 ---
 
@@ -21,11 +18,11 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->此窗口中还配置了电子邮件中图像的管理。 请参阅 [添加图像](defining-the-email-content.md#adding-images).
+>The management of images in emails is also configured in this window. 请参阅 [添加图像](defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
-您可以配置跟踪选项：
+You can configure the tracking options:
 
 * 激活/取消激活所有消息的URL跟踪。
 
@@ -47,4 +44,4 @@ ht-degree: 12%
 
 >[!CAUTION]
 >
->此选项卡中的设置只能由专家用户修改。
+>Settings in this tab can only be modified by expert users.

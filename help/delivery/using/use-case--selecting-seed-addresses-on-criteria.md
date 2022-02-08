@@ -2,13 +2,11 @@
 product: campaign
 title: '"用例：根据条件选择种子地址"'
 description: '"用例：根据条件选择种子地址"'
-audience: delivery
-content-type: reference
-topic-tags: using-seed-addresses
+feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '837'
 ht-degree: 3%
 
 ---
@@ -38,13 +36,13 @@ ht-degree: 3%
 
 ![](assets/dlv_seeds_usecase_01.png)
 
-## 步骤2 — 创建公共值 {#step-2---creating-a-common-value}
+## 步骤2 — 创建公用值 {#step-2---creating-a-common-value}
 
 要创建与示例中的值（采购部门）类似的公用值，您必须先将 **数据模式** 并编辑关联的输入表单。
 
 ### 扩展数据模式 {#extending-the-data-schema}
 
-有关模式扩展的更多详细信息，请参阅 [配置指南](../../configuration/using/data-schemas.md).
+有关模式扩展的更多详细信息，请参阅 [此部分](../../configuration/using/data-schemas.md).
 
 1. 在 **[!UICONTROL Administration > Configuration > Data schemas]** 节点，单击 **[!UICONTROL New]** 图标。
 1. 在 **[!UICONTROL Creation of a data schema]** 窗口，选择 **[!UICONTROL Extension of a schema]** 选项并单击 **[!UICONTROL Next]**.
@@ -154,7 +152,7 @@ ht-degree: 3%
 
 1. 编辑要用于投放的种子地址，然后输入 **购买** 作为 **[!UICONTROL Department]** 字段。
 
-## 步骤3 — 定义条件 {#step-3---defining-the-condition}
+## 第3步 — 定义条件 {#step-3---defining-the-condition}
 
 您现在可以为投放指定种子地址的动态条件。 操作步骤：
 

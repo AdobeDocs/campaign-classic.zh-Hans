@@ -1,14 +1,11 @@
 ---
 product: campaign
 title: 验证投放
-description: 验证投放
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+description: 了解如何验证投放
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1666'
 ht-degree: 5%
 
 ---
@@ -135,7 +132,6 @@ ht-degree: 5%
 >
 >* 有关可用验证模式的详情，请参阅 [更改批准模式](steps-validating-the-delivery.md#changing-the-approval-mode).
 >* 校样目标的配置在 [定义特定校样目标](steps-defining-the-target-population.md#defining-a-specific-proof-target).
-
 >
 
 

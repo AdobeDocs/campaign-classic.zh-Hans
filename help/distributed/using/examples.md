@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: 示例
-description: 示例
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+title: 分布式营销示例
+description: 分布式营销示例
+feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
 
-# 示例{#examples}
+# 分布式营销示例{#distributed-marketing-samples}
 
 ![](../../assets/v7-only.svg)
 
@@ -23,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->API在专用文档中进行了详细介绍，具体访问方式取决于您的合同。 请参阅 [API](../../configuration/using/about-web-services.md).
+>API在专用文档中进行了详细介绍。 [了解详情](../../configuration/using/about-web-services.md)。
 >
 >此示例中使用的Web应用程序不是随Adobe Campaign一起提供的现成Web应用程序。 要在营销活动中使用表单，必须创建专用的Web应用程序。
 

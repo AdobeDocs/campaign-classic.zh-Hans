@@ -2,9 +2,8 @@
 product: campaign
 title: 批准营销活动
 description: 了解如何管理营销活动的批准
-audience: campaign
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 2%

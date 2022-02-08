@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: 个性化块
-description: 个性化块
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: 了解如何使用个性化块
+feature: Personalization
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 2%
 
 ---

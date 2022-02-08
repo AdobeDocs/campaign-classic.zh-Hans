@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: 选择目标映射
-description: 选择目标映射
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+description: 了解目标映射
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -35,4 +32,4 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->您还可以创建新的目标映射。 此操作专家用户专用。 有关更多信息，请参阅 [配置指南](../../configuration/using/target-mapping.md).
+>您还可以创建新的目标映射。 此操作专家用户专用。 有关更多信息，请参见[此章节](../../configuration/using/target-mapping.md)。

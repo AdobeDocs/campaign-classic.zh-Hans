@@ -2,11 +2,8 @@
 product: campaign
 title: 一致性规则
 description: 一致性规则
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 3%
@@ -21,9 +18,9 @@ ht-degree: 3%
 
 Adobe Campaign通过营销活动分类中包含的一组规则，确保通信的一致性。 其目标是控制发送给收件人的投放内容，如量、性质、相关性等。
 
-**容量** 例如，规则可以避免消息投放所涉及的平台过载。 例如，不得同时向太多人发送包含下载链接的特殊选件，以避免服务器饱和；电话营销活动不得超过呼叫中心等的处理能力。 有关更多信息，请参阅 [控制容量](#controlling-capacity).
+**容量** 例如，规则可以避免消息投放所涉及的平台过载。 例如，不得同时向太多人发送包含下载链接的特殊选件，以避免服务器饱和；电话营销活动不得超过呼叫中心等的处理能力。 有关更多信息，请参阅 [控制能力](#controlling-capacity).
 
-## 控制容量 {#controlling-capacity}
+## 控制能力 {#controlling-capacity}
 
 在投放消息之前，您需要确保贵组织具有处理投放（物理基础架构）、投放可生成的响应（入站消息）以及要与订阅者联系的呼叫数（呼叫中心处理能力）的能力。
 
@@ -113,7 +110,7 @@ Adobe Campaign通过营销活动分类中包含的一组规则，确保通信的
 
 ![](assets/campaign_opt_create_capacity_06.png)
 
-## 监控消费 {#monitoring-consumption}
+## 监控使用情况 {#monitoring-consumption}
 
 默认情况下，容量规则仅用于指示目的。 选择 **[!UICONTROL Exclude messages in excess of capacity from the target]** 选项来阻止超出定义的加载。 在这种情况下，将使用此分类规则自动从投放中排除多余的消息。
 

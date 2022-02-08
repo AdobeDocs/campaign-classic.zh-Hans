@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: 重新生成模式
-description: 重新生成模式
-audience: configuration
-content-type: reference
-topic-tags: editing-schemas
+title: 重新生成架构
+description: 了解如何重新生成Campaign模式
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 7%
+source-wordcount: '132'
+ht-degree: 2%
 
 ---
 
-# 重新生成模式{#regenerating-schemas}
+# 重新生成架构{#regenerating-schemas}
 
 ![](../../assets/v7-only.svg)
 

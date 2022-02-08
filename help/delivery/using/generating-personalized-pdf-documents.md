@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: 生成个性化 PDF 文档
-description: 生成个性化 PDF 文档
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: 了解如何生成个性化的PDF文档
+feature: Personalization
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 2%
+source-wordcount: '442'
+ht-degree: 1%
 
 ---
 

@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: 元素和属性
-description: 元素和属性
-audience: configuration
-content-type: reference
-topic-tags: schema-reference
+description: 计算字符串元素
 exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 8%
+source-wordcount: '88'
+ht-degree: 6%
 
 ---
 

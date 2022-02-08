@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: 关于在 Campaign 中创建报告
-description: 关于在 Campaign 中创建报告
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: 创建报表的关键步骤
+description: 了解创建报表的关键步骤
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 5%
+source-wordcount: '170'
+ht-degree: 0%
 
 ---
 
-# 创建报表的关键步骤{#about-reports-creation-in-campaign}
+# 创建报表的关键步骤{#key-steps-to-create-a-report}
 
 ![](../../assets/common.svg)
 
@@ -25,7 +22,7 @@ ht-degree: 5%
 
 要创建、发布和交付有关数据的分析报表，请应用以下步骤：
 
-1. 创建新报表：请参阅 [创建新报告](../../reporting/using/creating-a-new-report.md),
+1. 创建新报表：请参阅 [创建新报表](../../reporting/using/creating-a-new-report.md),
 1. 收集数据进行分析：请参阅 [收集数据进行分析](../../reporting/using/collecting-data-to-analyze.md) 和 [使用上下文](../../reporting/using/using-the-context.md),
 1. 使用活动及其容器定义报表的内容：请参阅 [创建表](../../reporting/using/creating-a-table.md), [创建图表](../../reporting/using/creating-a-chart.md) 和 [元素布局](../../reporting/using/element-layout.md),
 1. 配置显示选项：显示类型，共享报表：请参阅 [报表显示上下文](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [定义条件内容](../../reporting/using/defining-a-conditional-content.md) 和 [配置对报表的访问权限](../../reporting/using/configuring-access-to-the-report.md),

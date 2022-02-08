@@ -1,13 +1,12 @@
 ---
 product: campaign
 title: 跟踪和监视消息
-audience: delivery
-content-type: reference
-topic-tags: deliveries-best-practices
+description: 了解如何跟踪和监视消息
+feature: Monitoring
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '438'
 ht-degree: 3%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 3%
 
 您点击了 **发送** 按钮？ 让我们看看会发生什么。 发送投放后，Adobe Campaign允许您跟踪已发送的消息，并了解收件人对您的投放有何反应。 这将帮助您改进将来的发送并优化后续促销活动。
 
-## 监控投放 {#monitoring-deliveries}
+## 监测投放 {#monitoring-deliveries}
 
 要控制您的营销活动，您必须确保已将消息发送给收件人。
 
@@ -37,7 +36,7 @@ ht-degree: 3%
 >
 >这些步骤只能由专家用户执行。
 
-## 跟踪 {#tracking-deliveries}
+## 跟踪行为 {#track-behaviour}
 
 为了更好地了解收件人的行为，您可以跟踪收件人对投放的反应：接收、打开、链接点击、退订等。 在Campaign Classic中，此信息显示在投放所定向收件人的跟踪选项卡和投放的跟踪选项卡中。
 

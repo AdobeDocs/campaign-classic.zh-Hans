@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: 个性化优惠券
-description: 个性化优惠券
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: 了解如何创建和插入个性化优惠券
+feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---

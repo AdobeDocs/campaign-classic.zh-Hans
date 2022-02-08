@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: 在Adobe Campaign Classic中使用增强的MTA发送
-description: 了解使用Adobe Campaign Enhanced MTA发送电子邮件的范围和特性。
-audience: delivery
-content-type: reference
-topic-tags: sending-emails
+description: 了解使用Adobe Campaign Enhanced MTA发送电子邮件的范围和特性
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 3%
@@ -51,7 +48,7 @@ Mommentum代表了创新的高性能MTA技术，该技术包括更智能的跳�
 
 **我能否同时使用本机Adobe Campaign MTA和Enhanced MTA?**
 
-不。 升级实例后，电子邮件投放只能使用Enhanced MTA。
+没有。升级实例后，电子邮件投放只能使用Enhanced MTA。
 
 <!--
 **Is there a fee associated with upgrading my instance to and subsequent use of the Enhanced MTA?**
@@ -86,7 +83,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 **升级到Enhanced MTA后，是否需要再次经历IP升温？**
 
-不。 升级不需要切换到新IP，因此您可以继续使用现有的已热电子邮件IP。
+没有。升级不需要切换到新IP，因此您可以继续使用现有的已热电子邮件IP。
 
 **升级到Enhanced MTA会影响当前正在进行的任何营销活动或投放吗？**
 

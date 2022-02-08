@@ -2,13 +2,10 @@
 product: campaign
 title: 目标映射
 description: 了解如何创建目标映射
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 468a986d7cfb8a4c51229cf81b6656ca2d101f40
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '490'
 ht-degree: 2%
 
 ---
@@ -124,7 +121,3 @@ ht-degree: 2%
 * 创建投放时，在目标选择期间直接选择映射，如下所示：
 
 ![](assets/mapping_selection_ciblage.png)
-
-**相关主题**
-
-* [快速响应客户访问其数据的请求](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Quicklyrespondtocustomerrequeststoaccesstheirdata)

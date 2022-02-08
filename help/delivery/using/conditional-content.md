@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: 条件内容
-description: 条件内容
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: 了解如何添加条件内容
+feature: Personalization
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '482'
 ht-degree: 7%
 
 ---

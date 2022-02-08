@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: 测试跟踪
-description: 测试跟踪
-audience: delivery
-content-type: reference
-topic-tags: tracking-messages
+title: 测试消息跟踪
+description: 了解如何测试消息跟踪
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 3%
+source-wordcount: '256'
+ht-degree: 1%
 
 ---
 
-# 测试跟踪{#testing-tracking}
+# 测试消息跟踪{#testing-tracking}
 
 ![](../../assets/common.svg)
 

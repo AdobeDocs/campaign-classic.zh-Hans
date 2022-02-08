@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: 在 ISP 中断后更新退回限制条件
-description: 了解如何在ISP中断后更新退件资格。
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+description: 了解如何在ISP中断后更新退回资格
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: cee019432c64eaaefac86a27b731355242fd1555
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%

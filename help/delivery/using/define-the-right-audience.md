@@ -1,13 +1,12 @@
 ---
 product: campaign
 title: 定义正确的受众
-audience: delivery
-content-type: reference
-topic-tags: deliveries-best-practices
+description: 了解选择受众时的最佳实践
+feature: Audiences
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '487'
 ht-degree: 3%
 
 ---

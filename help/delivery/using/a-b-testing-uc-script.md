@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: 创建脚本
-description: 了解如何通过专用用例执行A/B测试。
-audience: delivery
-content-type: reference
-topic-tags: a-b-testing
+description: 了解如何通过专用用例执行A/B测试
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 4%

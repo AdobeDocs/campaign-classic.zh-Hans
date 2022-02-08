@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: 用Adobe Campaign Classic在日本手机上发送电子邮件
-description: 了解如何配置、设计和发送将在日文移动设备上阅读的电子邮件。
-audience: delivery
-content-type: reference
-topic-tags: sending-emails
+description: 了解如何配置、设计和发送将在日文移动设备上阅读的电子邮件
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -76,7 +73,7 @@ Adobe Campaign允许您检查消息格式是否已调整为发送到日语移动
 
 利用此分类规则，可确保投放遵循 [格式约束](#limitations-and-recommendations) 由日语运算符定义，特别是与电子邮件总大小、HTML和文本部分的大小、消息中的图像数量以及HTML内容中的标记有关。
 
-### 发送校样 {#sending-proofs}
+###   发送验证 {#sending-proofs}
 
 您可以发送校样以测试投放。 发送校样时，如果您使用的是替换地址，请输入与所用用户档案的电子邮件格式对应的地址。
 
@@ -91,7 +88,7 @@ Adobe Campaign允许您检查消息格式是否已调整为发送到日语移动
 * 创建两个投放：一个仅用于日语收件人，另一个用于其他收件人 — 请参阅 [此部分](#designing-a-specific-delivery-for-japanese-formats).
 * 创建单个投放，Adobe Campaign将自动检测要使用的格式 — 请参阅 [此部分](#designing-a-delivery-for-all-formats).
 
-### 为日语格式设计特定交付 {#designing-a-specific-delivery-for-japanese-formats}
+### 为日语格式设计特定交付内容 {#designing-a-specific-delivery-for-japanese-formats}
 
 您可以创建包含两个投放的工作流：一个在日文移动设备上阅读，另一个在标准电子邮件格式的收件人上阅读。
 
@@ -101,7 +98,7 @@ Adobe Campaign允许您检查消息格式是否已调整为发送到日语移动
 
 ![](assets/deco-mail_07.png)
 
-### 为所有格式设计投放 {#designing-a-delivery-for-all-formats}
+### 设计所有格式的投放 {#designing-a-delivery-for-all-formats}
 
 当Adobe Campaign根据域(定义为 **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** 或 **[!UICONTROL Text]** )，则可以向所有收件人发送相同的投放。
 

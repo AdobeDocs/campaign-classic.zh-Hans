@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: 跟踪故障排除
-description: 本节提供与在Adobe Campaign Classic中跟踪配置和实施相关的常见问题。
-audience: delivery
-content-type: reference
-topic-tags: tracking-messages
+description: 本节提供与在Adobe Campaign Classic中跟踪配置和实施相关的常见问题
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%

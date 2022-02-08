@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: 关于Adobe Campaign Classic中的投放能力
-description: 了解有关在Adobe Campaign Classic中管理投放能力的更多信息。
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+description: 了解有关在Adobe Campaign中管理可投放性的更多信息
+feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 4%
+source-wordcount: '760'
+ht-degree: 5%
 
 ---
 
@@ -39,7 +37,7 @@ ht-degree: 4%
 
 您必须确保在实例级别（菜单）提供正确的地址 **[!UICONTROL Tools > Advanced > Deployment wizard...]**)或最常用的场景中。
 
-有关此内容的更多信息，请参阅 [定义发件人](defining-the-email-content.md).
+有关更多信息，请参阅[此页面](defining-the-email-content.md)。
 
 ## 个性化 {#personalization}
 

@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: 定义最终投放
-description: 了解如何通过专用用例执行A/B测试。
-audience: delivery
-content-type: reference
-topic-tags: a-b-testing
+description: 了解如何通过专用用例执行A/B测试
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 9%

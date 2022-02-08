@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: 配置接口
-description: 配置接口
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
+title: 配置界面
+description: 了解如何配置Campaign界面
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 2%
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
-# 配置接口{#configuring-the-interface}
+# 配置界面{#configuring-the-interface}
 
 ![](../../assets/common.svg)
 

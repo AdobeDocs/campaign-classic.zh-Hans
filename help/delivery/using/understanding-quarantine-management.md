@@ -2,14 +2,12 @@
 product: campaign
 title: 了解隔离管理
 description: 了解隔离管理
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+feature: Monitoring
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: ff35cef03ba35c7a6693a65dc7d2482b916c5bdb
 workflow-type: tm+mt
-source-wordcount: '2614'
-ht-degree: 13%
+source-wordcount: '2613'
+ht-degree: 11%
 
 ---
 
@@ -17,17 +15,15 @@ ht-degree: 13%
 
 ![](../../assets/common.svg)
 
-## 关于隔离 {#about-quarantines}
-
 Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认情况下会将其地址已被隔离的收件人排除在外，不会将其设为目标。举例来说，信箱已满或地址不存在时，可以隔离某个电子邮件地址。无论如何，隔离程序都符合下面所述的具体规则。
 
 >[!NOTE]
 >
 >本节适用于在线渠道：电子邮件、短信、推送通知。
 
-### 通过隔离优化投放 {#optimizing-your-delivery-through-quarantines}
+## 通过隔离管理优化投放 {#optimizing-your-delivery-through-quarantines}
 
-在准备消息时，电子邮件地址或电话号码处于隔离状态的用户档案会被自动被排除（请参阅[确定投放的隔离地址](#identifying-quarantined-addresses-for-a-delivery)）。这样可加快投放速度，因为错误率对投放速度有显著的影响。
+在准备消息时，电子邮件地址或电话号码处于隔离状态的用户档案将被自动排除(请参阅 [确定投放的隔离地址](#identifying-quarantined-addresses-for-a-delivery))。 这样可加快投放速度，因为错误率对投放速度有显著的影响。
 
 如果无效地址率过高，某些互联网访问提供商会自动将电子邮件判断为垃圾邮件。因此，隔离可让您避免被这些提阻止列表供商添加到。
 
@@ -257,6 +253,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
 * 投放开始时出现连接问题：失败类型 **[!UICONTROL Undefined]**，失败原因 **[!UICONTROL Unreachable]**，则执行重试。
 * 投放期间连接丢失：软错误，失败原因 **[!UICONTROL Refused]**，则执行重试。
 * 百度在发送过程中返回的同步错误：硬错误，失败原因 **[!UICONTROL Refused]**，则不执行重试。
+>
 Adobe Campaign每10分钟联系百度服务器以检索已发送消息的状态并更新广告。 如果消息声明为已发送，则广播中消息的状态将设置为 **[!UICONTROL Received]**. 如果百度声明错误，则状态将设置为 **[!UICONTROL Failed]**.
 
 **对于Android V2**

@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: 创建和识别投放
-description: 创建和识别投放
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+title: 创建和标识投放
+description: 创建和标识投放
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 9%
+ht-degree: 5%
 
 ---
 
-# 创建和识别投放 {#create-and-identify-the-delivery}
+# 创建和标识投放 {#create-and-identify-the-delivery}
 
 ![](../../assets/common.svg)
 

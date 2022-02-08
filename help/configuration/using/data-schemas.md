@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: 数据模式
-description: 数据模式
-audience: configuration
-content-type: reference
-topic-tags: editing-schemas
+description: Campaign数据模式快速入门
+feature: Schema Extension
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->现成的数据架构只能由Adobe Campaign Classic控制台的管理员删除。
+>内置数据架构只能由Adobe Campaign Classic控制台的管理员删除。
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 

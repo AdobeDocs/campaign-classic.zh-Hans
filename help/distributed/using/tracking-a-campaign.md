@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: 跟踪活动
-description: 跟踪活动
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+description: 了解如何使用Campaign分布式营销跟踪活动
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 2%
+source-wordcount: '416'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +21,7 @@ ht-degree: 2%
 * [筛选包](#filter-packages),
 * [编辑资源包](#edit-packages),
 * [取消资源包](#cancel-a-package),
-* [重新初始化包](#reinitializing-a-package).
+* [重新初始化资源包](#reinitializing-a-package).
 
 ## 筛选包 {#filter-packages}
 
@@ -86,7 +83,7 @@ ht-degree: 2%
 
 如果需要，中央实体仍可以访问和重新初始化已取消的包（请参阅下文）。 只有当地实体获得批准并启动后，才会再次向它们提供这些服务。 包重新初始化过程如下所示。
 
-## 重新初始化包 {#reinitializing-a-package}
+## 重新初始化资源包 {#reinitializing-a-package}
 
 可以重新初始化、修改已发布的促销活动包，并将其提供给本地实体。
 

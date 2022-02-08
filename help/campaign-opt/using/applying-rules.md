@@ -2,22 +2,19 @@
 product: campaign
 title: 应用规则
 description: 应用规则
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '978'
 ht-degree: 9%
 
 ---
 
-# 应用规则{#applying-rules}
+# 应用分类规则{#applying-rules}
 
 ![](../../assets/common.svg)
 
-## 对投放应用分类 {#applying-a-typology-to-a-delivery}
+## 将分类应用于投放 {#applying-a-typology-to-a-delivery}
 
 要应用您创建的分类规则，您需要将其与分类关联，然后在投放中引用此分类。 操作步骤：
 

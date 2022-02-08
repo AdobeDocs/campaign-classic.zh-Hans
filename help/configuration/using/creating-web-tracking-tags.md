@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: 创建 Web 跟踪标记
-description: 创建 Web 跟踪标记
-audience: configuration
-content-type: reference
-topic-tags: setting-up-web-tracking
+title: 创建Web跟踪标记
+description: 了解如何创建Web跟踪标记
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 4%
+source-wordcount: '265'
+ht-degree: 0%
 
 ---
 
-# 创建 Web 跟踪标记{#creating-web-tracking-tags}
+# 创建Web跟踪标记{#creating-web-tracking-tags}
 
 ![](../../assets/v7-only.svg)
 

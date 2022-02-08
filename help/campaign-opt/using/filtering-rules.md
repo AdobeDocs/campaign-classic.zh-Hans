@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: 筛选规则
-description: 筛选规则
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
+description: 了解如何使用过滤规则
+feature: Typology Rules
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '507'
 ht-degree: 2%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 2%
 
 筛选规则可以链接到其他类型的规则（控制、压力等） 分类，或分组到 **筛选** 分类。 有关更多信息，请参阅 [创建和使用过滤分类](#creating-and-using-a-filtering-typology).
 
-## 创建过滤规则 {#creating-a-filtering-rule}
+## 创建筛选规则 {#creating-a-filtering-rule}
 
 例如，您可以过滤新闻稿的订阅者，以防止将通信发送给未达到法定年龄的收件人。
 
@@ -47,7 +45,7 @@ ht-degree: 2%
 
 ![](assets/campaign_opt_create_filter_05.png)
 
-## 调整过滤规则 {#conditioning-a-filtering-rule}
+## 筛选规则的条件 {#conditioning-a-filtering-rule}
 
 您可以根据链接的投放大纲或投放大纲限制筛选规则的应用程序字段。
 

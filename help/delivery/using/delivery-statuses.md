@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: 投放状态
-description: 了解有关投放仪表板上可用状态的更多信息。
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+description: 了解有关投放仪表板上可用状态的更多信息
+feature: Monitoring
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 5%
+source-wordcount: '632'
+ht-degree: 4%
 
 ---
 
@@ -31,7 +29,7 @@ ajouter screenshot -->
 
 * [投放仪表板](delivery-dashboard.md)
 * [投放疑难解答](delivery-troubleshooting.md)
-* [关于可投放性](about-deliverability.md)
+* [投放能力入门](about-deliverability.md)
 
 ## 投放状态列表 {#list-delivery-statuses}
 

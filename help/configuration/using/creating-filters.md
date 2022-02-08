@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: 创建过滤器
-description: 创建过滤器
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
+description: 了解如何为自定义表创建过滤器
 exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 6%
+source-wordcount: '96'
+ht-degree: 4%
 
 ---
 

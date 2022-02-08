@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: '"用例：创建内容管理"'
-description: '"用例：创建内容管理"'
-audience: delivery
-content-type: reference
-topic-tags: content-management
+title: “用例：创建内容管理”
+description: “用例：创建内容管理”
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -20,10 +17,10 @@ ht-degree: 2%
 要在Adobe Campaign中创建内容管理，需要执行以下步骤：
 
 * [步骤1 — 分析要生成的内容](#step-1---analyzing-the-content-to-be-produced),
-* [步骤2 — 创建数据架构](#step-2---creating-the-data-schema),
-* [步骤3 — 创建输入表单](#step-3---creating-the-input-form),
+* [第2步 — 创建数据架构](#step-2---creating-the-data-schema),
+* [第3步 — 创建输入表单](#step-3---creating-the-input-form),
 * [第4步 — 创建构建模板](#step-4---creating-the-construction-template),
-* [步骤5 — 创建发布模板](#step-5---creating-the-publication-template),
+* [第5步 — 创建发布模板](#step-5---creating-the-publication-template),
 * [步骤6 — 创建内容](#step-6---creating-contents).
 
 ## 步骤1 — 分析要生成的内容 {#step-1---analyzing-the-content-to-be-produced}
@@ -52,7 +49,7 @@ ht-degree: 2%
 
 这些元素是通过专用架构创建的，该架构为每个内容指定以下元素：名称、标签、类型、大小，以及与其在Adobe Campaign中的处理相关的任何其他信息。
 
-## 步骤2 — 创建数据架构 {#step-2---creating-the-data-schema}
+## 第2步 — 创建数据架构 {#step-2---creating-the-data-schema}
 
 数据模式是与内容关联的XML文档。 它描述此内容中数据的XML结构。
 
@@ -162,7 +159,7 @@ ht-degree: 2%
 
 1. 单击 **[!UICONTROL Save]** 创建数据模式。
 
-## 步骤3 — 创建输入表单 {#step-3---creating-the-input-form}
+## 第3步 — 创建输入表单 {#step-3---creating-the-input-form}
 
 利用输入表单，可通过Adobe Campaign客户端控制台中的输入界面编辑内容实例。
 
@@ -349,7 +346,7 @@ ht-degree: 2%
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## 步骤5 — 创建发布模板 {#step-5---creating-the-publication-template}
+## 第5步 — 创建发布模板 {#step-5---creating-the-publication-template}
 
 下一步包括创建内容发布模板，以链接架构、表单和内容构建模板。 此发布模板可以具有多种输出格式。
 

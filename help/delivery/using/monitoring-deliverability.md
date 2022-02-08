@@ -2,24 +2,22 @@
 product: campaign
 title: 在Adobe Campaign Classic中监控投放能力
 description: 了解有关Adobe Campaign Classic中投放能力监控的工具和准则。
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+feature: Deliverability
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 2%
+source-wordcount: '533'
+ht-degree: 1%
 
 ---
 
-# 监测可投放性{#monitoring-deliverability}
+# 监控投放能力{#monitoring-deliverability}
 
 ![](../../assets/common.svg)
 
 在下面，您将找到有关Adobe Campaign提供的不同监控工具的详细信息，以及有关利用Adobe Campaign提供的功能监控平台投放能力的其他一些准则。
 
-## 投放能力监控 {#configuration}
+## 关于投放能力监控 {#about-deliverability-monitoring}
 
 此功能可通过Adobe Campaign中的专用包获取。 要使用它，必须安装此包。 完成后，重新启动服务器以考虑包。
 * 对于托管和混合客户端， **投放能力监控** 由Adobe技术支持和顾问在您的实例上配置。 有关更多信息，请联系您的Adobe客户经理。
@@ -59,7 +57,3 @@ ht-degree: 2%
 * 使用 [批次](steps-sending-the-delivery.md#sending-using-multiple-waves)，请验证在触发下一个波形之前，每个波形是否有足够的时间完成。
 * 检查错误和新错误的数量 [隔离](understanding-quarantine-management.md) 与其他投放一致。
 * 请仔细查阅 [投放日志](delivery-dashboard.md#delivery-logs-and-history) 详细检查突出显示的错误类型(阻止列表、DNS问题、反垃圾邮件规则等)。
-
-<!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
-
-Each delivery will generate a broadcast statistics report when you open a delivery in the “Deliveries List”, which includes some reputation metrics that may impact your deliverability.-->

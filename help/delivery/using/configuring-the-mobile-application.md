@@ -2,11 +2,8 @@
 product: campaign
 title: 在Adobe Campaign中配置iOS移动应用程序
 description: 了解如何为iOS设置移动应用程序
-audience: delivery
-content-type: reference
-topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 6%

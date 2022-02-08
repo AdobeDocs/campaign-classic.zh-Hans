@@ -2,11 +2,9 @@
 product: campaign
 title: 短信故障排除
 description: 了解如何对短信渠道进行故障诊断的更多信息
-audience: delivery
-content-type: reference
-topic-tags: configuring-channels
+feature: SMS
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 0%

@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: 定义直邮内容
-description: 定义直邮内容
-audience: delivery
-content-type: reference
-topic-tags: sending-direct-mail
+description: 了解如何定义直邮内容
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 4%
+source-wordcount: '167'
+ht-degree: 10%
 
 ---
 

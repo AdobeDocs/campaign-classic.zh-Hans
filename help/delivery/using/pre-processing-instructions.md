@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: 跟踪URL的预处理说明
-description: 进一步了解用于编写电子邮件URL脚本并仍对其进行跟踪的预处理说明。
-audience: delivery
-content-type: reference
-topic-tags: tracking-messages
+description: 进一步了解用于编写电子邮件URL脚本并仍对其进行跟踪的预处理说明
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%

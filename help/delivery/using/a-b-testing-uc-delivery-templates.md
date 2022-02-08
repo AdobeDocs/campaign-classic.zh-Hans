@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: 创建投放模板
-description: 了解如何通过专用用例执行A/B测试。
-audience: delivery
-content-type: reference
-topic-tags: a-b-testing
+description: 了解如何通过专用用例执行A/B测试
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 20%

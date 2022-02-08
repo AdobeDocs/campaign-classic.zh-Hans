@@ -1,14 +1,13 @@
 ---
 product: campaign
 title: 优化消息投放
-audience: delivery
-content-type: reference
-topic-tags: deliveries-best-practices
+description: 了解如何优化消息投放
+feature: Deliverability
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 9%
+source-wordcount: '736'
+ht-degree: 8%
 
 ---
 

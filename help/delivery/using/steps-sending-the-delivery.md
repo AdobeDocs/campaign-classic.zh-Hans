@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: 配置和发送投放
-description: 配置和发送投放
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+title: 配置并发送投放
+description: 了解如何配置和发送投放
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1526'
 ht-degree: 5%
 
 ---
 
-# 配置和发送投放 {#configuring-and-sending-the-delivery}
+# 配置并发送投放 {#configuring-and-sending-the-delivery}
 
 ![](../../assets/common.svg)
 
@@ -179,7 +176,7 @@ ht-degree: 5%
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-默认情况下，会为投放的第一天安排五次重试，最短间隔为一小时，分布在一天的24小时内。 在此之后，每天对一次重试进行编程，直到投放截止时间(在 **[!UICONTROL Validity]** 选项卡(请参阅 [定义有效期](#defining-validity-period))。
+默认情况下，会为投放的第一天安排五次重试，最短间隔为一小时，分布在一天的24小时内。 在此之后，每天对一次重试进行编程，直到投放截止时间(在 **[!UICONTROL Validity]** 选项卡。 请参阅 [定义有效期](#defining-validity-period).
 
 ## 定义有效期 {#defining-validity-period}
 

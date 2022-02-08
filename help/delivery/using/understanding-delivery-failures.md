@@ -2,11 +2,9 @@
 product: campaign
 title: 了解投放失败
 description: 了解如何了解投放失败
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+feature: Monitoring
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -192,7 +190,7 @@ ht-degree: 14%
 
 对于使用旧版Campaign MTA的内部部署安装和托管/混合安装，要修改投放的持续时间，请转到投放或投放模板的高级参数，并在相应字段中指定所需的持续时间。 请参阅 [定义有效期](steps-sending-the-delivery.md#defining-validity-period).
 
-默认配置允许每小时进行五次重试，每天进行一次重试，间隔为四天。 可以全局更改重试次数(与Adobe技术管理员联系)或每个投放或投放模板的重试次数(请参阅 [配置重试](steps-sending-the-delivery.md#configuring-retries))。
+默认配置允许每小时进行五次重试，每天进行一次重试，间隔为四天。 可以全局更改重试次数(与Adobe技术管理员联系)，或针对每个投放或投放模板进行更改。 请参阅 [配置重试](steps-sending-the-delivery.md#configuring-retries).
 
 ## 同步和异步错误 {#synchronous-and-asynchronous-errors}
 

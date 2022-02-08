@@ -2,11 +2,8 @@
 product: campaign
 title: 数据库映射
 description: 数据库映射
-audience: configuration
-content-type: reference
-topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -343,7 +340,7 @@ SQL字段约束如下：
 
 >[!IMPORTANT]
 >
->在创建表时，主键设置为0的记录会自动插入。 此记录用于避免外连接，该连接对卷表无效。 默认情况下，所有外键都将初始化为值0，以便在未填充数据项时始终在连接时返回结果。
+>在创建表时，主键设置为0的记录会自动插入。 此记录用于避免外连接，这对卷表无效。 默认情况下，所有外键都将初始化为值0，以便在未填充数据项时始终在连接时返回结果。
 
 ## 链接：表之间的关系 {#links--relation-between-tables}
 

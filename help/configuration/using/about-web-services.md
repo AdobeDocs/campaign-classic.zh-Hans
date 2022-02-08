@@ -2,11 +2,9 @@
 product: campaign
 title: 关于 Web 服务
 description: 关于 Web 服务
-audience: configuration
-content-type: reference
-topic-tags: api
+feature: API
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 3%
@@ -68,13 +66,13 @@ SOAP消息的结构如下：
 
 在此示例中，SOAP查询调用“ExecuteQuery”方法，该方法将字符串作为身份验证（会话令牌）的参数，以及要执行的查询描述的XML内容。
 
-有关详细信息，请参阅 [ExecuteQuery(xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
+For further information, refer to [ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
 
 >[!NOTE]
 >
->此服务的WSDL描述已完成，如下所示： [Web服务描述：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
+>The WSDL description of this service is completed in the example shown here: [Web service description: WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
-### SOAP查询 {#soap-query}
+### SOAP query {#soap-query}
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -141,7 +139,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 
    * 如果与使用的SOAP版本不兼容，则为“版本不匹配”；
    * 如果消息标头中出现问题，则为“必须了解”，
-   * 如果客户端缺少某些信息，则为“客户端”
+   * &quot;Client&quot; in the event that the client is missing some information,
    * 如果服务器在执行处理时遇到问题，则为“服务器”。
 
 * `<faultstring>` :描述错误的消息

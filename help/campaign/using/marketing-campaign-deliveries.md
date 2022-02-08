@@ -2,9 +2,9 @@
 product: campaign
 title: 营销活动投放
 description: 了解有关营销活动投放的更多信息
-audience: campaign
+feature: Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 建议的配置适用于不同类型的投放：直邮、电子邮件、移动渠道。 [了解详情](../../delivery/using/steps-about-delivery-creation-steps.md)。
 
-## 启动投放 {#starting-a-delivery}
+## 开始投放 {#starting-a-delivery}
 
 在批准所有批准后，即可开始投放。 然后，投放过程取决于投放类型。 有关电子邮件或移动渠道投放，请参阅 [开始在线投放](#starting-an-online-delivery)，以及直邮投递的信息，请参阅 [启动离线投放](#starting-an-offline-delivery).
 
@@ -155,7 +155,7 @@ ht-degree: 2%
 
 也可以从此视图编辑和修改它们。
 
-### 通过投放大纲关联和构建链接的资源 {#associating-and-structuring-resources-linked-via-a-delivery-outline}
+### 关联和构建通过投放大纲链接的资源 {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >

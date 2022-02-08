@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: 使用Adobe Campaign Classic发送电子邮件
-description: 了解如何确认电子邮件的投放，并了解投放电子邮件的特性。
-audience: delivery
-content-type: reference
-topic-tags: sending-emails
+title: 发送电子邮件的关键步骤
+description: 了解如何确认电子邮件的投放，并了解投放电子邮件的特性
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 3%
+source-wordcount: '214'
+ht-degree: 0%
 
 ---
 
-# 发送电子邮件的主要步骤 {#confirming-email-delivery}
+# 发送电子邮件的关键步骤 {#key-steps-to-send-an-email}
 
 ![](../../assets/common.svg)
 

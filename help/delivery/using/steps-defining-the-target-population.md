@@ -1,23 +1,19 @@
 ---
 product: campaign
 title: 定义目标群体
-description: 定义目标群体
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+description: 了解如何定义目标群体
+feature: Audiences
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 3%
+source-wordcount: '1598'
+ht-degree: 2%
 
 ---
 
 # 定义目标群体 {#defining-the-target-population}
 
 ![](../../assets/common.svg)
-
-## 关于目标群体 {#about-target-populations}
 
 对于每个投放，您可以定义多种类型的目标群体：
 
@@ -112,7 +108,7 @@ ht-degree: 3%
 >
 >定义电子邮件投放的邮件内容时，请勿包含指向镜像页面的链接；无法在此投放模式下生成。
 
-### 设置排除设置 {#customizing-exclusion-settings}
+### 定义排除设置 {#define-exclusion-settings}
 
 地址错误和质量评级由服务提供商(IAP)提供。 在执行投放操作后，收件人用户档案中的此信息将自动更新，并包含服务提供商返回的文件。 它可以在用户档案中以只读方式查看。
 

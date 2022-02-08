@@ -2,14 +2,12 @@
 product: campaign
 title: 种子地址
 description: 种子地址
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
+feature: Seed Address
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 3%
+source-wordcount: '322'
+ht-degree: 8%
 
 ---
 
@@ -44,7 +42,7 @@ ht-degree: 3%
 
 应用以下步骤：
 
-1. 创建的扩展 **nms:seedMember** 架构。 有关更多信息，请参阅 [扩展模式](../../configuration/using/extending-a-schema.md).
+1. 创建的扩展 **nms:seedMember** 架构。 如需详细信息，请参阅[此部分](../../configuration/using/extending-a-schema.md)。
 1. 在此新扩展中，在的根下添加新元素 **[!UICONTROL seedMember]** 使用以下参数：
 
    ```
@@ -82,7 +80,7 @@ ht-degree: 3%
    >    * 在 **nms:seedMember** 扩展中，包含电子邮件地址的字段必须具有 **name=&quot;email&quot;** 属性。 SQL名称必须不同于已用于收件人架构的“sEmail”。 此属性必须立即在 **`<element name="custom_cus_person" />`** 元素。
 
 
-1. 修改 **[!UICONTROL seedMember]** 表单，以在 **[!UICONTROL Seed addresses]** 窗口。 有关更多信息，请参阅 [窗体结构](../../configuration/using/form-structure.md).
+1. 修改 **[!UICONTROL seedMember]** 表单，以在 **[!UICONTROL Seed addresses]** 窗口。 有关详细信息，请参见[此页面](../../configuration/using/form-structure.md)。
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

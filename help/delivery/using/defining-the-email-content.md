@@ -2,11 +2,9 @@
 product: campaign
 title: 在Adobe Campaign Classic中定义电子邮件内容
 description: 了解如何在使用Adobe Campaign Classic时定义电子邮件内容。
-audience: delivery
-content-type: reference
-topic-tags: sending-emails
+feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 1%
