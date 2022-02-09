@@ -2,13 +2,11 @@
 product: campaign
 title: 构建工作流
 description: 了解如何构建工作流
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 638b259462d3e01d744567e56d67a120359dc34a
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1623'
 ht-degree: 3%
 
 ---
@@ -109,7 +107,7 @@ ht-degree: 3%
 
 * **映像管理**
 
-   您可以自定义图表的背景图像以及与各种活动相关的背景图像。 请参阅 [管理活动图像](managing-activity-images.md).
+   您可以自定义图表的背景图像以及与各种活动相关的背景图像。 请参阅 [更改活动图像](managing-activity-images.md).
 
 ## 配置活动 {#configuring-activities}
 
@@ -148,7 +146,7 @@ ht-degree: 3%
 有关创建定位工作流的详细步骤，请参阅以下章节：
 
 1. **识别** 数据库中的数据 — 请参阅 [创建查询](targeting-data.md#creating-queries)
-1. **准备** 满足投放需求的数据 — 请参阅 [扩充和修改数据](targeting-data.md#enriching-and-modifying-data)
+1. **准备** 满足投放需求的数据 — 请参阅 [丰富和修改数据](targeting-data.md#enriching-and-modifying-data)
 1. **使用** 用于执行更新或在投放中执行更新的数据 — 请参阅 [更新数据库](how-to-use-workflow-data.md#updating-the-database)
 
 定位期间执行的所有扩充和所有处理的结果都存储在个性化字段中并可访问，特别是在创建个性化消息时使用。 有关更多信息，请参阅 [目标数据](data-life-cycle.md#target-data)
@@ -239,7 +237,7 @@ Campaign工作流和实施示例详见 [本页](../../campaign/using/marketing-c
 
 但是，您可以创建一个视图来显示实例上的所有工作流。 在此视图中，您可以使用 **复制到**.
 
-**首先，让我们创建一个视图：**
+**创建视图**
 
 1. 在 **资源管理器**，转到在中创建视图所需的文件夹。
 1. 右键单击并转到 **添加新文件夹** > **进程**，选择 **工作流**.

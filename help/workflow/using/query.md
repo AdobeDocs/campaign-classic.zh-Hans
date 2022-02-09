@@ -4,7 +4,7 @@ title: 查询
 description: 进一步了解查询工作流活动
 feature: Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 0%

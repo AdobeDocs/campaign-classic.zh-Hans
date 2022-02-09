@@ -2,18 +2,15 @@
 product: campaign
 title: 启动工作流
 description: 了解如何启动工作流并发现工作流操作工具栏和右键单击菜单
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 2%
 
 ---
 
-# 启动工作流 {#starting-a-workflow}
+# 开始工作流 {#starting-a-workflow}
 
 ![](../../assets/common.svg)
 

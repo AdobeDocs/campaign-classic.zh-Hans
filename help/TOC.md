@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: ht
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -506,7 +506,7 @@ ht-degree: 100%
       + [工作流中的 JavaScript 代码示例](workflow/using/javascript-in-workflows.md)
       + [访问外部数据库](workflow/using/accessing-an-external-database--fda-.md)
       + [管理权限](workflow/using/managing-rights.md)
-      + [管理活动图像](workflow/using/managing-activity-images.md)
+      + [更改活动图像](workflow/using/managing-activity-images.md)
       + [管理时区](workflow/using/managing-time-zones.md)
       + [技术工作流](workflow/using/about-technical-workflows.md)
 + 管理优惠{#managing-offers}

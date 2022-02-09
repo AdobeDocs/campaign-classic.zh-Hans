@@ -2,11 +2,8 @@
 product: campaign
 title: 高级参数
 description: 高级参数
-audience: workflow
-content-type: reference
-topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 7a1b8a1cd3ad434dac5c324056113d7ec15ddd8a
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 1%
@@ -35,7 +32,7 @@ ht-degree: 1%
 
 ## 图像 {#image}
 
-利用此字段，可更改链接到活动的图像。 有关更多信息，请参阅： [管理活动图像](managing-activity-images.md).
+利用此字段，可更改链接到活动的图像。 有关更多信息，请参阅 [更改活动图像](managing-activity-images.md).
 
 ## 执行 {#execution}
 
