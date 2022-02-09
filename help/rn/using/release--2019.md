@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Campaign Classic2019版
-description: 了解有关Campaign Classic2019版本的更多信息
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+title: Campaign Classic 2019 版
+description: 详细了解 Campaign Classic 2019 版
+exl-id: 8a36a542-e095-4208-b624-e59845592863
+source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
 workflow-type: tm+mt
 source-wordcount: '4843'
 ht-degree: 24%
 
 ---
 
-
-# 2019版{#release-2019}
+# 2019 版{#release-2019}
 
 ![](../../assets/v7-only.svg)
 
@@ -78,7 +78,7 @@ _2019 年 12 月 2 日_
    <td> <p>CCPA是加利福尼亚州新推出的隐私法，旨在协调数据保护要求并使之现代化，于2020年1月1日正式生效。 CCPA适用于为居住在加利福尼亚州的数据主体持有数据的Adobe Campaign客户。</p>
     <p>除了已有的可用隐私功能（包括同意管理、数据保留设置和用户角色）之外，Adobe Campaign还可帮助您为CCPA做好准备：</p>
     <ul>
-      <li>访问权和删除权：我们将利用为GDPR添加的功能。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">了解更多信息</a></li>
+      <li>Right to Access and Right to Delete: we are leveraging the capabilities that were added for GDPR. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">了解更多信息</a></li>
       <li>您可以跟踪消费者是否选择退出了出售个人信息。 为此，您需要扩展Profiles表并添加 <strong>选择退出CCPA</strong> 字段。 <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">了解更多信息</a></li></td> 
   </tr> 
  </tbody> 
@@ -227,7 +227,7 @@ _2020 年 12 月 16 日_
 >
 > * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。[了解详情](../../technotes/using/ims-updates.md)
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign的旧版oAuth身份验证模式 [已经退休了](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) on **2021年9月**. 在扩展之前，托管环境将从扩展中受益  **2022年2月23日**. 作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
+> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign 的旧版 oAuth 身份验证模式已于 **2021 年 9 月**[停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。在扩展之前，托管环境将从扩展中受益  **2022年2月23日**. 作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持期限延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 
 
@@ -337,9 +337,9 @@ _2019年6月21日_
 **改进**
 
 * 修复了链接到域列管理的回归，该回归会阻止在某些配置上发送电子邮件。
-* 为了提高性能，已在rtEvent SOAP调用中添加了_operation=&quot;none&quot;属性，以避免“SELECT FOR UPDATE”请求。
-* 修复了测试活动后叫客过渡的工作流显示问题。 (NEO-12727)
-* 现在，允许在导入工作流期间删除在Microsoft Dynamics中创建的虚拟记录。
+* To improve performance, a _operation=&quot;none&quot; attribute has been added to rtEvent SOAP calls to avoid &quot;SELECT FOR UPDATE&quot; requests.
+* Fixed a workflow display issue with outbound transitions after the Test activity. (NEO-12727)
+* We now allow the deletion of dummy records created in Microsoft Dynamics during import workflow.
 * 改进了在使用内部帐户时执行安全区域包的权限。
 
 
@@ -359,11 +359,11 @@ _2019年5月30日_
  <tbody> 
   <tr> 
    <td> 控制面板<br /> </td> 
-   <td> <p>要提高管理员用户的工作效率，请通过监控存储、添加要的IP地址并为每个实例安装SSH密钥来管理SFTP服务允许列表器的设置。 请注意，控制面板仅适用于自今天起托管在AWS上的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">立即通过Experience Cloud登录</a>)。</p> <p>有关更多信息，请参阅<a href="https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans">详细文档</a>和<a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/control-panel-overview.html?lang=zh-Hans">操作方法视频</a>。 </p><p>注意：要访问控制面板，无需升级到最新的Campaign内部版本。</p> </td> 
+   <td> <p>要提高管理员用户的工作效率，请通过监控存储、添加要的IP地址并为每个实例安装SSH密钥来管理SFTP服务允许列表器的设置。 请注意，控制面板仅适用于自今天起托管在AWS上的客户(<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">立即通过Experience Cloud登录</a>)。</p> <p>有关更多信息，请参阅<a href="https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans">详细文档</a>和<a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/control-panel-overview.html?lang=zh-Hans">操作方法视频</a>。 </p><p>Note: upgrading to the latest Campaign build is not required to access the Control Panel.</p> </td> 
   </tr> 
     <tr> 
    <td> 审核跟踪<br /> </td> 
-   <td> <p>作为管理员，可通过监控和管理Adobe Campaign Classic实例中所做的更改来提高生产效率。 审核跟踪将记录对源架构、工作流和选项所执行的操作。 您可以快速查看是否已创建、修改或删除某个元素。</p><p>有关更多信息，请参阅 <a href="../../production/using/audit-trail.md">详细文档</a> 和 <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/monitoring/audit-trail.html">操作方法视频</a>.</p></td> 
+   <td> <p>作为管理员，可通过监控和管理Adobe Campaign Classic实例中所做的更改来提高生产效率。 The Audit Trail will log actions made on Source Schemas, Workflows and Options. 您可以快速查看是否已创建、修改或删除某个元素。</p><p>有关更多信息，请参阅 <a href="../../production/using/audit-trail.md">详细文档</a> 和 <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/monitoring/audit-trail.html">操作方法视频</a>.</p></td> 
   </tr> 
   <tr> 
    <td> 护栏、稳健性和可扩展性<br /> </td> 
@@ -406,10 +406,10 @@ _2019年5月30日_
 * 跟踪工作流：跟踪工作流的稳健性已得到增强。 修复了与跟踪日志插入/更新和URL跟踪自定义相关的几个问题。 此外，跟踪工作流现在会检测可能导致错误的跟踪日志问题并停止工作流。 这些问题现已被丢弃且未处理。
 * 清理工作流：清理工作流已得到改进，以避免潜在错误和停止。 这可优化数据库大小和性能。
 * 事务型消息中的嵌入式图像：我们在事务型消息中增加了对嵌入式图像的完全支持，以避免可能的崩溃或缺少图像。
-* 数据库大小 — XtkJobLog:清除机制已添加到此表。 这对数据库大小有积极影响。
-* 密送存档：密送归档的默认参数已更改，以提高归档速度。 [了解更多信息](../../installation/using/email-archiving.md#parameters)
-* 数据库结构更新：数据库结构更新向导生成的SQL请求已得到改进，以加快执行速度。
-* 操作员操作的防护：已实施若干护栏，以防止操作员执行可能影响平台完整性的操作。 内置架构不能再通过界面删除。 此外，非管理员用户无法再编辑工作流源XML。
+* 数据库大小 — XtkJobLog:清除机制已添加到此表。 This has a positive impact on the database size.
+* BCC archiving: the default parameters for BCC archiving have been changed to increase archiving velocity. [了解更多信息](../../installation/using/email-archiving.md#parameters)
+* Database structure update: SQL requests generated by the Database Structure Update Wizard have been improved for faster execution.
+* 操作员操作的防护：已实施若干护栏，以防止操作员执行可能影响平台完整性的操作。 内置架构不能再通过界面删除。 Also, the workflow source XML can no longer be edited by non-admin users.
 * 提供了两个新选项： **XtkSecurity_Restrict_EditXML** （用于禁用投放的XML代码版本）和 **NmsOperation_OperationMgtDebug** （用于监视操作Mgt技术工作流的执行）。 [了解更多信息](../../installation/using/configuring-campaign-options.md)
 
 **其他变更**
@@ -419,7 +419,7 @@ _2019年5月30日_
 * 现在，在分析反编译投放时，如果将发布模式设置为 **[!UICONTROL None]** 在部署向导中，记录一个错误并停止分析：“发布模式”设置为“无”：无法嵌入图像。 图像无法在功能手机上显示。” (NEO-12208)
 * 事务型消息传递的broadlog管理已得到改进。 将broadlogs从执行实例同步到控制实例时， @lastModified字段会更新为系统的当前日期。 为控制实例添加了MC_Update_BlLastModified选项。 True表示将在控制实例上使用当前日期（默认行为）。 False表示我们使用执行实例broadlog的@lastModified日期。 (NEO-12579)
 * 在优惠券临时表中添加了索引，以优化投放发送。 (NEO-12437)
-* 在Analytics集成中，现在允许检索包含%字符的AAM区段数据。 (NEO-12025)
+* In the Analytics integration, the retrieval of AAM segment data with % character is now allowed. (NEO-12025)
 * 删除了工作流热图中的10,000条记录限制，以修复缺失的数据问题。 (NEO-12329)
 * Open Office不受支持，现在已从应用程序中完全删除。 如果您仍在使用它，请转到Libre Office，因为从19.1开始，它将不再工作。
 * 您现在可以使用sysfilter属性限制对工作流中更新数据活动的写入访问。 [了解更多信息](../../configuration/using/filtering-schemas.md)
@@ -463,7 +463,7 @@ _2019年5月30日_
 * 修复了在投放中使用种子地址时的ID耗尽问题。 (NEO-11842)
 * 修复了phantomjs和Debian 9兼容性的问题。
 * 修复了批准校样内容时的错误。 (NEO-12725)
-* 修复了“从群体中排除此子集”工作流功能的问题。 (NEO-12441)
+* Fixed an issue with the &quot;Exclude this subset from the population&quot; workflow feature. (NEO-12441)
 * 修复了HTTPRequest-wait API未等待所有回调完成的问题。 (NEO-12628)
 * 修复了拆分活动中的“更新共享受众”任务存在的问题。 (NEO-11562)
 * 修复了Web服务器崩溃问题。 (NEO-12904)
