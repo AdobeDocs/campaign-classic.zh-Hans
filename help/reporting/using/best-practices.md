@@ -2,13 +2,11 @@
 product: campaign
 title: 报告最佳实践
 description: Campaign报告最佳实践
-audience: reporting
-content-type: reference
-topic-tags: reporting-in-adobe-campaign
+feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +15,7 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-## 分析需求{#analyzing-needs}
+## 分析您的需求{#analyzing-needs}
 
 使用报告工具取决于要处理的数据量、其复杂性以及要设置的报告类型。
 
@@ -62,7 +60,7 @@ ht-degree: 0%
 
    需要仔细研究与数据卷和更新相关的问题，以避免报告显示问题，特别是在时间方面的问题。 因此，我们建议创建聚合以在报表外预算一些数据。 包含跟踪和投放日志的表可以包含数百万条记录：这意味着需要通过要在报表中使用的工作流来聚合数据。
 
-## 优化报表创建{#optimizing-report-creation}
+## 优化报表设计{#optimizing-report-creation}
 
 ### 数据卷 {#data-volume}
 

@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: 关于描述性分析
-description: 关于描述性分析
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
+title: 描述性分析入门
+description: 描述性分析入门
+feature: Reporting
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 关于描述性分析{#about-descriptive-analysis}
+# 描述性分析入门{#about-descriptive-analysis}
 
 ![](../../assets/common.svg)
 

@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: 创建图表
-description: 创建图表
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+description: 了解如何设计图表
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

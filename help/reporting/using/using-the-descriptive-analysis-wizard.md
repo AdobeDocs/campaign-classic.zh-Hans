@@ -2,11 +2,8 @@
 product: campaign
 title: 使用描述性分析向导
 description: 使用描述性分析向导
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 1%
@@ -51,7 +48,7 @@ ht-degree: 1%
 
    有关收件人的描述性分析示例，请参阅： [定性数据分析](../../reporting/using/use-cases.md#qualitative-data-analysis).
 
-* 在 **工作流**，将光标放在指向收件人表的过渡上，右键单击并选择 **[!UICONTROL Analyze target]**. 有关更多信息，请参阅 [分析工作流中的过渡目标](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
+* 在 **工作流**，将光标放在指向收件人表的过渡上，右键单击并选择 **[!UICONTROL Analyze target]**. 有关更多信息，请参阅 [在工作流中分析过渡目标](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
 * 对于 **列表**，选择一个或多个列表并应用与收件人相同的流程。
 * 在 **投放**，选择要分析其目标的投放，右键单击并选择 **[!UICONTROL Actions > Explore the target]**，如下所示：
 

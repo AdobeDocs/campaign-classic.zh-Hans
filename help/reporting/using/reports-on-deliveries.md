@@ -2,14 +2,11 @@
 product: campaign
 title: 投放报告
 description: 投放报告
-audience: reporting
-content-type: reference
-topic-tags: accessing-built-in-reports
 exl-id: dcbf280c-3040-4218-a453-1497662fef2e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +24,6 @@ Adobe Campaign提供多种类型的报表，可通过客户控制台或internet�
 
 您可以从客户端控制台主页、报表仪表板或投放列表访问报表。 报表的显示模式取决于其上下文。 主页上提供了主要报表列表，可让您快速访问投放数据。 您可以根据需要更改此列表。 请参阅 [此部分](../../reporting/using/about-reports-creation-in-campaign.md) 以了解更多信息。
 
-## 使用报表 {#using-reports}
 
 通过报表功能板提供了搜索字段，以便快速访问列表中的其中一个报表。
 

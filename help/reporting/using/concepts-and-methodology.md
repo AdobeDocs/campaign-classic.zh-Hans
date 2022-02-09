@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: 概念和方法
-description: 概念和方法
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: 多维数据集的最佳实践
+description: 多维数据集的最佳实践
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -158,7 +155,7 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 
       ![](assets/s_advuser_cube_agregate_05.png)
 
-## 定义措施 {#defining-measures}
+## 定义度量 {#defining-measures}
 
 度量类型在 **[!UICONTROL Measures]** 选项卡。 您可以计算和、平均值、偏差等。
 
@@ -187,7 +184,7 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 您可以根据需要在表格中配置度量的显示：
 
 * 度量的显示顺序(请参阅 [显示序列](#display-sequence))、
-* 要在报表中显示/隐藏的信息(请参阅 [配置显示](#configuring-the-display))
+* 要在报表中显示/隐藏的信息(请参阅 [配置显示内容](#configuring-the-display))
 * 显示哪些度量：百分比、总数、小数位数等。 (请参阅 [更改显示的度量类型](#changing-the-type-of-measure-displayed))。
 
 ### 显示序列 {#display-sequence}
@@ -198,7 +195,7 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 
 ![](assets/s_advuser_cube_in_report_config_04.png)
 
-### 配置显示 {#configuring-the-display}
+### 配置显示内容 {#configuring-the-display}
 
 可以单独为每个测量或整体执行测量、行和列的配置。 使用特定图标可访问显示模式选择窗口。
 
@@ -218,7 +215,7 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 
 ![](assets/s_advuser_cube_in_report_config_07.png)
 
-## 共享报表 {#sharing-a-report}
+## 共享您的报表 {#sharing-a-report}
 
 配置报表后，您可以保存该报表并与其他运算符共享该报表。
 

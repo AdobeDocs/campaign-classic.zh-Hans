@@ -2,14 +2,11 @@
 product: campaign
 title: 创建新报告
 description: 了解创建新报告的关键步骤
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +36,7 @@ ht-degree: 1%
 
 1. 保存此报表。
 
-## 对图表建模 {#modelizing-the-chart}
+## 为图表建模 {#modelizing-the-chart}
 
 保存报表后，应显示此内容。 您现在可以构建报表图表。
 
@@ -91,7 +88,7 @@ ht-degree: 1%
 
 ## 创建页面 {#creating-a-page}
 
-内容通过置于图表中的活动进行配置。 有关更多信息，请参阅 [建模图表](#modelizing-the-chart).
+内容通过置于图表中的活动进行配置。 有关更多信息，请参阅 [模型化图表](#modelizing-the-chart).
 
 要配置活动，请双击其图标。
 

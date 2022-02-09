@@ -2,14 +2,11 @@
 product: campaign
 title: 配置对报告的访问权限
 description: 配置对报告的访问权限
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

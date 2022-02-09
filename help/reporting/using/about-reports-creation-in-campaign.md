@@ -2,10 +2,11 @@
 product: campaign
 title: 创建报表的关键步骤
 description: 了解创建报表的关键步骤
+feature: Reporting
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

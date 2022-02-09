@@ -2,14 +2,11 @@
 product: campaign
 title: 报告的属性
 description: 了解有关报表属性设置的更多信息
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +34,7 @@ ht-degree: 2%
 
 * 的 **访问控制** 参数。 以下介绍了这些设置。
 
-## 控制对报告的访问 {#report-accessibility}
+## 控制对报表的访问 {#report-accessibility}
 
 可以在Adobe Campaign控制台中或通过Web浏览器访问报表。 在这种情况下，可能需要配置如下所示的报表访问控制。
 
@@ -52,7 +49,7 @@ ht-degree: 2%
 * **[!UICONTROL Access control]**:此选项允许Adobe Campaign运算符在登录后访问它。
 * **[!UICONTROL Specific account]**:利用此选项，可在 **[!UICONTROL Operator]** 字段。
 
-## 管理报表本地化 {#managing-report-localization}
+## 翻译您的报表 {#report-localization}
 
 您可以配置希望将报表翻译成的语言。 为此，请单击 **[!UICONTROL Localization]** 选项卡。
 

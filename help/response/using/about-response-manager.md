@@ -2,14 +2,11 @@
 product: campaign
 title: 关于响应管理器
 description: 关于响应管理器
-audience: campaign
-content-type: reference
-topic-tags: response-manager
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

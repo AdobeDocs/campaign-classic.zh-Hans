@@ -2,14 +2,12 @@
 product: campaign
 title: 全局报告
 description: 全局报告
-audience: reporting
-content-type: reference
-topic-tags: accessing-built-in-reports
+feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

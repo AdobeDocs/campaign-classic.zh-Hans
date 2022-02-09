@@ -2,14 +2,11 @@
 product: campaign
 title: 创建指标
 description: 创建指标
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +20,7 @@ ht-degree: 2%
 
 1. 选择工作表。 请参阅 [选择工作表](#selecting-the-work-table).
 1. 定义维度。 请参阅 [定义维度](#defining-dimensions).
-1. 定义度量。 请参阅 [建设指标](#building-indicators).
+1. 定义度量。 请参阅 [建立指标](#building-indicators).
 1. 创建聚合（可选）。 请参阅 [计算和使用聚合](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
 此示例向您展示了如何快速在报表中创建一个简单多维数据集以导出其度量。
@@ -92,7 +89,7 @@ Dimension与根据每个多维数据集的相关事实架构为其定义的分�
 
    有关更多信息，请参阅 [动态管理箱](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
-## 建设指标 {#building-indicators}
+## 建立指标 {#building-indicators}
 
 定义维度后，您需要为要在单元格中显示的值指定计算模式。 为此，请在 **[!UICONTROL Measures]** 选项卡：创建要在将使用多维数据集的报表中显示的任意数量的度量。
 
@@ -105,7 +102,7 @@ Dimension与根据每个多维数据集的相关事实架构为其定义的分�
 
    ![](assets/s_advuser_cube_wz_11.png)
 
-   的 **[!UICONTROL Filter the measure data...]** 链接仅允许您选择女性。 有关定义度量和可用选项的更多信息，请参阅 [定义措施](../../reporting/using/concepts-and-methodology.md#defining-measures).
+   的 **[!UICONTROL Filter the measure data...]** 链接仅允许您选择女性。 有关定义度量和可用选项的更多信息，请参阅 [定义度量](../../reporting/using/concepts-and-methodology.md#defining-measures).
 
    ![](assets/s_advuser_cube_wz_12.png)
 
@@ -131,7 +128,7 @@ Dimension与根据每个多维数据集的相关事实架构为其定义的分�
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. 可以切换尺寸的轴、删除这些轴、添加新测量等。 此处详细介绍了可能的操作： [使用多维数据集浏览数据](../../reporting/using/using-cubes-to-explore-data.md).
+1. 可以切换尺寸的轴、删除这些轴、添加新测量等。 可能的操作详见 [本页](../../reporting/using/using-cubes-to-explore-data.md).
 
    为此，请使用相应的图标。
 

@@ -2,14 +2,12 @@
 product: campaign
 title: 投放报告
 description: 投放报告
-audience: reporting
-content-type: reference
-topic-tags: accessing-built-in-reports
+feature: Reporting
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

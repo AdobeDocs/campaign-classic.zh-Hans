@@ -2,14 +2,11 @@
 product: campaign
 title: 对报告执行操作
 description: 对报告执行操作
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +53,7 @@ ht-degree: 1%
 * 报表不必使用在单元格级别定义的特定格式。 最好使用 **[!UICONTROL Form rendering]** 定义表中单元格的格式。 的 **[!UICONTROL Form rendering]** 可以通过 **[!UICONTROL Administration > Configuration > Form rendering]**.
 * 我们不建议插入HTML内容。
 * 如果报表包含多个表、图表等 类型元素，它们将导出一个，而另一个将导出。
-* 可以在单元格中强制返回回车符：此配置将保留在Excel中。 有关更多信息，请参阅此 [定义单元格格式](../../reporting/using/creating-a-table.md#defining-cell-format).
+* 可以在单元格中强制返回回车符：此配置将保留在Excel中。 如需详细信息，请参阅[此部分](../../reporting/using/creating-a-table.md#defining-cell-format)。
 
 ### 推迟出口 {#postpone-the-export}
 

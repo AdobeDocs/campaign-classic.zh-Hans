@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: 处理报告
-description: 处理报告
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
+title: 使用分析报表
+description: 使用分析报表
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 2%
+source-wordcount: '816'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +20,7 @@ ht-degree: 2%
 
 要保存报表，请单击 **[!UICONTROL Save]** 给报表贴个标签。
 
-选择 **[!UICONTROL Also save data]** 如果要创建报表的历史记录，并在保存时查看报表的值。 有关更多信息，请参阅 [存档分析报告](#archiving-analysis-reports).
+选择 **[!UICONTROL Also save data]** 如果要创建报表的历史记录，并在保存时查看报表的值。 有关更多信息，请参阅 [存档分析报表](#archiving-analysis-reports).
 
 的 **[!UICONTROL Share this report]** 选项允许其他运算符访问报表。
 
@@ -125,7 +122,7 @@ ht-degree: 2%
 
 有关详细信息，请参见[此页面](../../reporting/using/actions-on-reports.md)。
 
-## 重新使用现有报告和分析 {#re-using-existing-reports-and-analyses}
+## 重复使用现有报告和分析 {#re-using-existing-reports-and-analyses}
 
 您可以使用已存储在Adobe Campaign中的现有报表创建数据的描述性分析报表。 在保存分析或创建并配置报表以通过描述性分析向导访问时，可以使用此模式。
 
@@ -138,7 +135,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_user_report_wizard_01.png)
 
-## 存档分析报告 {#archiving-analysis-reports}
+## 存档分析报表 {#archiving-analysis-reports}
 
 在基于现有分析创建描述性分析时，可以创建存档以存储数据和比较报表结果。
 

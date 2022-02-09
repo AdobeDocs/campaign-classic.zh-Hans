@@ -2,14 +2,11 @@
 product: campaign
 title: 创建表
 description: 创建表
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '2495'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

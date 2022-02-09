@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 1e2c20befebf2343cb0f781aa7f2bd1ed6b3f383
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -215,7 +215,7 @@ Campaign 现在支持以下系统：
 * 修复了使用 Web 应用程序时导致跟踪标记在 **nms:trackingURL** 架构中生成不正确的主键的问题。(NEO-27931)
 * 对 ODBC 3.x 的兼容性已得到增强，以确保错误消息的准确性。
 * 修复了在电子邮件投放中使用自定义内容模板时可能导致控制台崩溃的问题。(NEO-31547)
-* 修复了由于连接速度缓慢或响应内容过大，Tomcat 无法发送有效响应的问题。
+* 修复了由于连接速度缓慢或响应内容过大，Tomcat 无法发送有效响应的问题。(NEO-30858)
 * 修复了从 PostgreSQL 数据库读取 UUID 时可能发生的问题。
 * 修复了在搜索与优惠相关的建议数据时可能导致性能不良的问题。(NEO-27554)
 * 修复了当 IMS 服务被激活但未响应时导致 Web 进程没有响应的问题。
@@ -277,7 +277,7 @@ Campaign 现在支持以下系统：
 * 修复了重新打开之前创建和保存的 Web 应用程序时，会导致源代码中的部分字符发生更改的问题。(NEO-27597)
 * 修复了升级到包含用于跟踪链接的新签名机制的内部版本时可能发生的问题（从内部版本 19.1.4 和 Campaign 20.2）：当多个模板与某个事件关联时，升级可能会导致在发送事务性消息时选择错误的模板。(NEO-28326)
 * 修复了导致 MTA 无响应并且无法处理投放（除非重新启动）的问题。(NEO-27455)
-* 修复了在对日期时间类型列执行批量加载操作时与时间戳管理相关的 MSSQL 数据库问题。
+* 修复了在对日期时间类型列进行批量加载操作期间与时区管理相关的MSSQL数据库问题。 (NEO-27375)
 * 修复了使用 Redshift xtk 函数时的工作流查询问题。SubDays、SubSeconds、SubMinutes 和 SubHours 现在接受两种 Redshift 时间戳类型 (NEO-24962)。
 * 修复了尝试以匿名访问方式预览报告时会显示脚本错误消息的问题。(NEO-27081)
 * 修复了在执行投放分析时，可能会减少服务器内存使用的问题。

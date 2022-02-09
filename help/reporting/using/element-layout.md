@@ -2,14 +2,11 @@
 product: campaign
 title: 元素布局
 description: 元素布局
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +14,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-除了此处详述的各种图表外： [图表类型和变体](../../reporting/using/creating-a-chart.md#chart-types-and-variants)，您可以调整显示内容并向报表页面添加元素。
+除了详细描述的各种图表外 [此处](../../reporting/using/creating-a-chart.md#chart-types-and-variants)，您可以调整显示内容并向报表页面添加元素。
 
 您可以使用容器：这些选项允许您链接页面的多个元素，并在列和/或单元格中配置其布局。 有关如何使用这些源代码的详情，请参阅 [此部分](../../web/using/defining-web-forms-layout.md#creating-containers).
 

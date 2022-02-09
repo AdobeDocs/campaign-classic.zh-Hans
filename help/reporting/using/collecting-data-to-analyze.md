@@ -2,14 +2,11 @@
 product: campaign
 title: 收集数据进行分析
 description: 收集数据进行分析
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
