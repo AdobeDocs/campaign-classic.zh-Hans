@@ -2,18 +2,16 @@
 product: campaign
 title: 关于活动
 description: 关于活动
-audience: workflow
-content-type: reference
-topic-tags: introduction
+feature: Workflows, Data Management
 exl-id: 900dd30e-d4fb-452a-af3f-ae00758b0077
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 14%
+ht-degree: 12%
 
 ---
 
-# 关于活动{#about-activities}
+# 工作流活动{#wf-activities}
 
 ![](../../assets/common.svg)
 

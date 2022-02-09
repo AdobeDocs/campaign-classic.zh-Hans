@@ -2,11 +2,9 @@
 product: campaign
 title: Web 窗体入门
 description: Campaign中的Web窗体入门
-audience: web
-content-type: reference
-topic-tags: web-forms
+feature: Landing Pages
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -80,7 +78,6 @@ Web窗体可通过 **促销活动** 选项卡。 在Adobe Campaign树中，它�
 >
 >* 在页面设计期间，您可以在 **[!UICONTROL Preview]** 选项卡。 要查看更改，请先保存表单。 任何错误都显示在 **[!UICONTROL Log]** 选项卡。
 >* 要确保页面按适当的顺序显示和信息存储，请在Web窗体中启用调试模式。 要执行此操作，请转到 **[!UICONTROL Preview]** 子选项卡，并检查 **[!UICONTROL Enable debug mode]** 框：所有收集的信息和可能的执行错误都将显示在每个页面的底部。
-
 >
 
 

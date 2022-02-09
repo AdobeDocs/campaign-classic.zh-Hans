@@ -2,11 +2,8 @@
 product: campaign
 title: 安装 Campaign Classic 内置软件包
 description: 了解如何安装Campaign内置软件包
-audience: installation
-content-type: reference
-topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 035297523c25061f28751c28df86d562f40f45ea
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '1254'
 ht-degree: 6%

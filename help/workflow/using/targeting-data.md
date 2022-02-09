@@ -2,18 +2,16 @@
 product: campaign
 title: 定位数据
 description: 了解有关在工作流中定位数据的更多信息
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 3%
 
 ---
 
-# 定位数据{#targeting-data}
+# Target 数据{#targeting-data}
 
 ![](../../assets/common.svg)
 
@@ -59,7 +57,7 @@ A **[!UICONTROL Query]** 活动允许您选择基本数据以构建目标群体�
 
 ![](assets/wf_add_data_use_additional_data.png)
 
-### 均质化数据 {#homogenizing-data}
+### 数据均匀化 {#homogenizing-data}
 
 在 **[!UICONTROL Union]** 或 **[!UICONTROL Intersection]** 类型活动时，您可以选择仅保留共享的附加数据以保持数据一致。 在这种情况下，此活动的临时输出工作表将仅包含所有集客集中找到的附加数据。
 
@@ -79,9 +77,9 @@ A **[!UICONTROL Query]** 活动允许您选择基本数据以构建目标群体�
 
 有关更多信息，请参阅 [使用拆分活动创建子集](#creating-subsets-using-the-split-activity).
 
-## 对数据分段 {#segmenting-data}
+## 区段数据 {#segmenting-data}
 
-### 合并多个目标（合并） {#combining-several-targets--union-}
+### 合并多个目标（并集） {#combining-several-targets--union-}
 
 利用并集活动，可在一个过渡中合并多个活动的结果。 集不一定必须是同质的。
 
@@ -251,7 +249,7 @@ A **[!UICONTROL Query]** 活动允许您选择基本数据以构建目标群体�
 >  
 >例如，通过工作流删除收件人不会导致删除该收件人的所有投放历史记录。 但是，直接在“收件人”文件夹中删除收件人确实会删除与此收件人关联的所有数据。
 
-### 扩充和修改数据 {#enriching-and-modifying-data}
+### 丰富和修改数据 {#enriching-and-modifying-data}
 
 除了定向维度之外，您还可以通过筛选维度指定收集数据的性质。 请参阅 [定位和筛选维度](building-a-workflow.md#targeting-and-filtering-dimensions).
 

@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: 互动和优惠管理
-description: 根据资格条件规则将最佳优惠发送给您的联系人。
-audience: interaction
-content-type: reference
-topic-tags: interaction-overview
+description: 了解如何根据资格规则向联系人发送最佳优惠
+feature: Interaction, Offers
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 10%
+source-wordcount: '289'
+ht-degree: 6%
 
 ---
 

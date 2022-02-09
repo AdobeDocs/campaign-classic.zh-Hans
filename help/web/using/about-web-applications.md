@@ -2,11 +2,9 @@
 product: campaign
 title: Web 应用程序入门
 description: 创建和共享动态Web应用程序、登陆页和调查
-audience: web
-content-type: reference
-topic-tags: web-applications
+feature: Landing Pages
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 20%

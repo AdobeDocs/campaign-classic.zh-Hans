@@ -2,13 +2,11 @@
 product: campaign
 title: 定义审批
 description: 通过审批，操作员能够做出管理工作流的决策或确认其继续执行
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3af4f259b80b3e03c81ee278b470ef6ffe3fe4d0
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '841'
 ht-degree: 2%
 
 ---
@@ -29,7 +27,7 @@ ht-degree: 2%
 
 ![](assets/validation-1-in-op.png)
 
-批准示例可在 [部分](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+批准示例可在 [此部分](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 操作员可以采取以下两种方式之一做出响应：使用电子邮件中链接的网页进行验证，或通过控制台进行验证。
 
@@ -37,7 +35,7 @@ ht-degree: 2%
 >
 >保存响应后，无法对其进行修改。
 
-## 发送电子邮件 {#sending-emails}
+## 通过电子邮件批准 {#sending-emails}
 
 可能会收到一条批准消息，其中包含一个指向网页的链接，可通过该网页做出响应。 要使目标操作员接收批准电子邮件，操作员电子邮件地址必须填写完整。 如果情况并非如此，则运算符必须使用控制台做出响应
 

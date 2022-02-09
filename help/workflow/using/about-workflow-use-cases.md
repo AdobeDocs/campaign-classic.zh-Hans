@@ -2,20 +2,16 @@
 product: campaign
 title: 关于工作流用例
 description: 进一步了解使用Campaign Classic工作流可执行的用例。
-audience: workflow
-content-type: reference
-topic-tags: about-workflows-and-data-management
-internal: n
-snippet: y
+feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 68%
+source-wordcount: '206'
+ht-degree: 66%
 
 ---
 
-# 关于工作流用例 {#about-workflow-use-cases}
+# 工作流用例 {#about-workflow-use-cases}
 
 ![](../../assets/common.svg)
 

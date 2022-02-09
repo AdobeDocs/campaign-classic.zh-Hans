@@ -2,11 +2,9 @@
 product: campaign
 title: CRM连接器数据同步
 description: 在Campaign和CRM之间管理数据
-audience: platform
-content-type: reference
-topic-tags: connectors
+feature: Salesforce Integration, Microsoft CRM Integration
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 648b6c0982e15716b11bdbc5954ce88491582e7d
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%

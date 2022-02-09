@@ -2,18 +2,16 @@
 product: campaign
 title: 关于定位活动
 description: 关于定位活动
-audience: workflow
-content-type: reference
-topic-tags: targeting-activities
+feature: Workflows, Data Management, Audiences
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '438'
 ht-degree: 3%
 
 ---
 
-# 关于定位活动{#about-targeting-activities}
+# 在工作流中定位活动{#about-targeting-activities}
 
 ![](../../assets/common.svg)
 

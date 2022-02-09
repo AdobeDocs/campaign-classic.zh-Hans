@@ -2,11 +2,9 @@
 product: campaign
 title: Campaign中的收件箱呈现
 description: 了解如何捕获电子邮件渲染并在专用报告中提供
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -44,7 +42,7 @@ Litmus是一种功能丰富的电子邮件验证和预览应用程序。 它允�
    * **[!UICONTROL Internal name]**:deliverabilityInstance
    * **[!UICONTROL Type]**: HTTP
    * **[!UICONTROL Server]**:https://deliverability-app.neolane.net/deliverability
-   * **[!UICONTROL Encryption]**:无
+   * **[!UICONTROL Encryption]**: 无
    * 勾选 **[!UICONTROL Enabled]** 选项。
 
    ![](assets/s_tn_inbox_rendering_external-account.png)
@@ -84,7 +82,6 @@ Litmus是一种功能丰富的电子邮件验证和预览应用程序。 它允�
 >
 >* 每次生成收件箱呈现报告时，都会为每个消息传送客户端扣除一个令牌：一个用于Outlook 2000渲染的令牌，一个用于Outlook 2010渲染的令牌，一个用于Apple Mail 9渲染，等等。
 >* 对于同一投放，如果您再次生成收件箱呈现，则可用令牌的数量会再次减少所生成渲染的数量。
-
 >
 
 

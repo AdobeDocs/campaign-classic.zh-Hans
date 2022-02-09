@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: 发送带有附件的事务性电子邮件
-description: 了解如何使用Adobe Campaign Classic发送包含单个和/或个性化附件的交易电子邮件。
-audience: message-center
-content-type: reference
-topic-tags: use-case
+description: 了解如何使用Adobe Campaign发送包含单个和/或个性化附件的交易电子邮件
+feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 7f4bbf3e79d6cdaf17987b9307ebf12801abad22
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '624'
 ht-degree: 2%
 
 ---

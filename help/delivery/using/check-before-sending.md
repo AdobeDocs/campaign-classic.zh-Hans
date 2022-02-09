@@ -1,13 +1,12 @@
 ---
 product: campaign
 title: 发送前检查
-audience: delivery
-content-type: reference
-topic-tags: deliveries-best-practices
+description: 消息准备就绪后，在发送之前执行所有检查
+feature: Deliverability
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
+source-git-commit: 808f459a0b77b1787fc017c031247ab268b5aafa
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '892'
 ht-degree: 4%
 
 ---

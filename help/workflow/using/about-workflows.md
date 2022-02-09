@@ -2,11 +2,9 @@
 product: campaign
 title: 关于工作流
 description: 利用工作流实现流程自动化、管理数据和受众、发送消息等。
-audience: workflow
-content-type: reference
-topic-tags: introduction
+feature: Workflows, Data Management
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 26%

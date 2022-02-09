@@ -2,11 +2,8 @@
 product: campaign
 title: 关于优惠模拟
 description: 关于优惠模拟
-audience: interaction
-content-type: reference
-topic-tags: simulating-offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
-source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%

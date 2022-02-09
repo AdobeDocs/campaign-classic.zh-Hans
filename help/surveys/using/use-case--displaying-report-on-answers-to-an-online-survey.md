@@ -2,11 +2,9 @@
 product: campaign
 title: '"用例：显示在线调查的答案报告"'
 description: '"用例：显示在线调查的答案报告"'
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 6%

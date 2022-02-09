@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: 关于模板
-description: 关于模板
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+description: 投放模板快速入门
+feature: Delivery Templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 2%
+source-wordcount: '276'
+ht-degree: 1%
 
 ---
 
@@ -35,4 +33,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->可用的模板取决于您的访问权限、实例配置和上下文。 例如，在创建信息服务时，您可以链接确认消息的投放模板：然后，您只能访问其目标映射为订阅映射的模板。 有关更多信息，请参阅 [选择目标映射](selecting-a-target-mapping.md) 和 [关于服务和订阅](about-services-and-subscriptions.md).
+>可用的模板取决于您的访问权限、实例配置和上下文。 例如，在创建信息服务时，您可以链接确认消息的投放模板：然后，您只能访问其目标映射为订阅映射的模板。 有关更多信息，请参阅 [选择目标映射](selecting-a-target-mapping.md) 和 [服务和订阅](about-services-and-subscriptions.md).

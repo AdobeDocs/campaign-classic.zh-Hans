@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: 通过工作流实现自动化
-description: 通过工作流实现自动化
-audience: delivery
-content-type: reference
-topic-tags: content-management
+description: 了解如何通过工作流实现内容管理自动化
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 1%
+source-wordcount: '1190'
+ht-degree: 0%
 
 ---
 

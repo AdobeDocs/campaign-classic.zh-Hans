@@ -2,11 +2,8 @@
 product: campaign
 title: 向列表发送报告
 description: 了解如何使用工作流将报表发送到列表
-audience: workflow
-content-type: reference
-topic-tags: use-cases
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
