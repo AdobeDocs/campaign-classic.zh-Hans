@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: 同步 Web 应用程序
-description: 同步 Web 应用程序
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+description: 了解如何使Web应用程序与ACS Connector同步
+feature: ACS Connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '801'
 ht-degree: 1%
 
 ---
@@ -82,11 +80,11 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_10.png)
 
-## 设计和发送电子邮件 {#designing-and-sending-the-email}
+## 设计并发送电子邮件 {#designing-and-sending-the-email}
 
 在本部分中，我们将了解如何在Campaign Standard电子邮件中包含从Campaign v7 Web应用程序复制的登陆页面的链接。
 
-创建、设计和发送电子邮件的步骤与经典电子邮件的步骤相同。 请参阅 [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=zh-Hans) 文档。
+创建、设计和发送电子邮件的步骤与经典电子邮件的步骤相同。 请参阅 [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=zh-Hans) 文档。
 
 1. 创建新电子邮件，并选择一个或多个复制的用户档案作为受众。
 1. 编辑内容并插入 **[!UICONTROL Link to a landing page]**.

@@ -1,23 +1,19 @@
 ---
 product: campaign
-title: ACS Connector原则和数据周期
+title: ACS Connector入门
 description: ACS Connector原则和数据周期
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+feature: ACS Connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: f007dcbf63d7a69a6d532d0be99b0fa90f4f6d7a
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '1988'
+source-wordcount: '1985'
 ht-degree: 0%
 
 ---
 
-# ACS Connector原则和数据周期{#acs-connector-principles-and-data-cycle}
+# ACS Connector入门{#acs-connector-gs}
 
 ![](../../assets/v7-only.svg)
-
-## 简介 {#introduction}
 
 ACS Connector桥Adobe Campaign v7和Adobe Campaign Standard。 它是Campaign v7中的一项集成功能，可自动将数据复制到Campaign Standard，从而将两个应用程序中的最佳功能结合起来。 Campaign v7具有用于管理主营销数据库的高级工具。 Campaign v7中的数据复制允许Campaign Standard在用户友好的环境中利用丰富的数据。
 

@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: 批准营销活动
+title: 建立和管理审批流程
 description: 了解如何管理营销活动的批准
 feature: Approvals
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 3af4f259b80b3e03c81ee278b470ef6ffe3fe4d0
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2438'
 ht-degree: 2%
 
 ---

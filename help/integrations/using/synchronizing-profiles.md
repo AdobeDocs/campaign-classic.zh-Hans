@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: 同步用户档案
-description: 同步用户档案
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+description: 了解如何使用ACS Connector同步配置文件
+feature: ACS Connector
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1201'
 ht-degree: 3%
 
 ---
