@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 630a62c5e5c9782c5c55fdebd651493a2d68fc54
+source-git-commit: fc49c0ec80c8741b01ea150c3bc7362b73357607
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1035'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,6 @@ _2022 年 1 月 10 日_
 
 FDA 帐户已进行多项安全性增强：
 
-* ODBC 驱动程序现在直接通过 Adobe Campaign 第三方安装。不再需要手动安装这些驱动程序。
 * 配置 FDA 外部帐户时，您现在可以使用密钥对身份验证登录到 Snowflake 帐户，以增强身份验证安全性。[了解更多信息](../../installation/using/configure-fda-snowflake.md)
 * 在配置 FDA 外部帐户时，您现在可以使用系统分配的托管身份登录到 Azure Synapse Analytics 帐户。[了解更多信息](../../installation/using/configure-fda-synapse.md#azure-external)
 * 已从 Campaign 中删除对 log4j 库的所有引用，以确保获得最佳安全性。
