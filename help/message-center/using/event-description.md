@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c30d64e6930cb97f4a3c15acd97654d57d1bbf85
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ ht-degree: 0%
 
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** 访问实时类型架构。
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** 以访问批处理类型架构。
+
+有关生成WSDL文件的更多信息，请参阅 [此部分](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 这两种方法都包含 **`<urn:sessiontoken>`** 用于登录到事务型消息传递模块的元素。 我们建议通过受信任的IP地址来使用识别方法。 要检索会话令牌，请执行登录SOAP调用，然后执行get令牌，然后再执行注销。 对多个RT调用使用相同的令牌。 此部分中包含的示例使用的是会话令牌方法（推荐使用）。
 

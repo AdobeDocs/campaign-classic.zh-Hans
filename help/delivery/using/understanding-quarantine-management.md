@@ -4,10 +4,10 @@ title: 了解隔离管理
 description: 了解隔离管理
 feature: Monitoring
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: ff35cef03ba35c7a6693a65dc7d2482b916c5bdb
+source-git-commit: afe4329fd230f30e48bfbf5ac2073ca95a6fd04e
 workflow-type: tm+mt
-source-wordcount: '2613'
-ht-degree: 11%
+source-wordcount: '2837'
+ht-degree: 9%
 
 ---
 
@@ -27,19 +27,25 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 
 如果无效地址率过高，某些互联网访问提供商会自动将电子邮件判断为垃圾邮件。因此，隔离可让您避免被这些提阻止列表供商添加到。
 
-此外，隔离还可避免向错误的电话号码投放短信，有助于降低短信发送成本。有关安全防护和优化投放之最佳做法的更多信息，请参阅[此页面](delivery-best-practices.md)。
+此外，隔离还可避免向错误的电话号码投放短信，有助于降低短信发送成本。
+
+有关安全防护和优化投放之最佳做法的更多信息，请参阅[此页面](delivery-best-practices.md)。
 
 ### 隔离与阻止列表 {#quarantine-vs-denylist}
 
-**隔离**&#x200B;仅适用于地址，而不适用于用户档案本身。这意味着，如果两个用户档案具有相同的电子邮件地址，那么隔离该地址会同时影响这两个用户档案。
+隔离和阻止列表不适用于同一对象：
 
-同样，其电子邮件地址被隔离的用户档案可以更新其用户档案并输入新地址，然后可以再次被投放操作定向。
+* **隔离** 仅应用于 **地址** （或电话号码等），而不是用户档案本身。 例如，其电子邮件地址已被隔离的用户档案可以更新其用户档案并输入新地址，然后可以再次通过投放操作定向该用户档案。 同样，如果两个用户档案的电话号码恰巧相同，那么隔离该号码后，这两个用户档案都将受到影响。
 
-在 **阻止列表**&#x200B;另一方面，将导致用户档案不再为任何投放所定向，例如，在退订（选择退出）后。
+   隔离的地址或电话号码显示在 [排除日志](#identifying-quarantined-addresses-for-a-delivery) （用于投放）或 [隔离列表](#identifying-quarantined-addresses-for-the-entire-platform) （适用于整个平台）。
+
+* 在 **阻止列表**，则会导致 **个人资料** 不再被投放定向，例如在退订（选择退出）后，对给定渠道进行定位。 例如，如果电子邮件渠道上的用阻止列表户档案有两个电子邮件地址，则这两个地址都将从投放中排除。
+
+   您可以检查用户档案是否位阻止列表于上，查看 **[!UICONTROL No longer contact]** 部分 **[!UICONTROL General]** 选项卡。 请参阅[此小节](../../platform/using/editing-a-profile.md#general-tab)。
 
 >[!NOTE]
 >
->当用户回复的短信带有“STOP”之类的关键字以选择退出短信投放时，他们的用户档案不会像电子邮件选择退出过程阻止列表中一样添加到该中。 用户档案的电话号码将添加到隔离，以便用户继续接收电子邮件。
+>隔离包括 **[!UICONTROL Denylisted]** 状态。 在这种情况下，用户档案涉及的地址或电话号码将与 **[!UICONTROL Denylisted]** 状态。 有关管理停止短信消息的更多信息，请参阅 [此部分](../../delivery/using/sms-send.md#processing-inbound-messages).
 
 ## 确定隔离的地址 {#identifying-quarantined-addresses}
 
@@ -90,9 +96,12 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 
 ### 删除隔离地址 {#removing-a-quarantined-address}
 
-如果需要，您可以从隔离列表中手动删除地址。 此外，符合特定条件的地址会由 **[!UICONTROL Database cleanup]** 工作流。
+如果需要，您可以从隔离列表中手动删除地址。 此外，符合特定条件的地址会由 [数据库清理](../../production/using/database-cleanup-workflow.md) 工作流。
 
-要手动从隔离列表中删除地址，请执行以下操作：
+要手动从隔离列表中删除地址，请执行以下操作之一。
+
+>[!IMPORTANT]
+从隔离中手动删除电子邮件地址意味着您将再次开始投放到此地址。 因此，这可能会对您的投放能力和IP信誉造成严重影响，最终可能会导致您的IP地址或发送域被阻止。 考虑从隔离中删除任何地址时，请格外小心。 如有疑问，请联系可投放性专家。
 
 * 您可以将其状态更改为 **[!UICONTROL Valid]** 从 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** 节点。
 
@@ -109,21 +118,26 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 其状态随后更改为 **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
-地址在 **[!UICONTROL Quarantine]** 或 **[!UICONTROL On denylist]** 即使收到电子邮件，状态也永远不会被删除。
+地址在 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 即使收到电子邮件，状态也永远不会被删除。
 
-您可以修改错误数和两个错误之间的句点。 为此，请在部署向导中更改相应的设置(**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)。 有关部署向导的更多信息，请参阅 [此部分](../../installation/using/deploying-an-instance.md).
+对于托管安装或混合安装(如果已升级到 [增强的MTA](sending-with-enhanced-mta.md)，在 **[!UICONTROL Erroneous]** 现在，状态和重试之间的最短延迟取决于IP在给定域名的历史和当前表现。
+
+对于使用旧版Campaign MTA的内部部署安装和托管/混合安装，您可以修改错误数以及两个错误之间的间隔时间。 为此，请在 [部署向导](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或 [在投放级别](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 ## 将地址加入隔离的条件 {#conditions-for-sending-an-address-to-quarantine}
 
-Adobe Campaign根据投放失败类型和在错误消息鉴别过程中分配的原因管理隔离(请参阅 [退回邮件鉴别](understanding-delivery-failures.md#bounce-mail-qualification))和 [投放失败类型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Adobe Campaign根据投放失败类型和在错误消息鉴别过程中分配的原因管理隔离(请参阅 [退回邮件鉴别](understanding-delivery-failures.md#bounce-mail-qualification) 和 [投放失败类型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons))。
 
 * **已忽略的错误**：已忽略的错误不会将地址添加到隔离。
 * **硬错误**：相应的电子邮件地址会立即添加到隔离。
 * **软错误**：软错误不会立即将地址添加到隔离，但会增加错误计数。有关此内容的更多信息，请参阅 [软错误管理](#soft-error-management).
 
-如果用户将电子邮件标记为垃圾邮件([反馈回路](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops))时，该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，用户的电子邮件地址会自动添加到隔离。
+如果用户将电子邮件标记为垃圾邮件([反馈回路](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops))时，该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅指地址，用户档案不在阻止列表上，因此用户可继续接收短信消息和推送通知。
 
-隔离地址列表中， **[!UICONTROL Error reason]** 字段指示将选定地址置于隔离中的原因。 Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式导入电子邮件地址，这样以后就不会重新定向这些地址。
+>[!NOTE]
+Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式导入电子邮件地址，这样以后就不会重新定向这些地址。
+
+隔离地址列表(请参阅 [确定整个平台的隔离地址](#identifying-quarantined-addresses-for-the-entire-platform))、 **[!UICONTROL Error reason]** 字段指示将选定地址置于隔离中的原因。
 
 ![](assets/tech_quarant_error_reasons.png)
 
@@ -131,11 +145,9 @@ Adobe Campaign根据投放失败类型和在错误消息鉴别过程中分配的
 
 与硬错误相反，软错误不会立即将地址添加到隔离，而是增加错误计数。
 
-* 当错误计数达到限制阈值时，地址将被隔离。
-* 在默认配置中，阈值被设置为 5 次错误，其中如果两次错误间隔至少 24 小时，则会将其突出显示。在第 5 次出错后，即会将地址添加到隔离。
-* 可修改错误计数阈值。有关更多信息，请参阅 [在投放临时失败后重试](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+将在 [投放持续时间](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period). 当错误计数达到限制阈值时，即会将地址添加到隔离。有关更多信息，请参阅 [在投放临时失败后重试](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
-如果上次出现重大错误的时间超过10天，则会重新初始化错误计数。 地址状态随后更改为 **有效** 并且会从 **数据库清理** 工作流。
+如果上次出现重大错误的时间超过10天，则会重新初始化错误计数。 地址状态随后更改为 **有效** 并且会从 [数据库清理](../../production/using/database-cleanup-workflow.md) 工作流。
 
 ## 推送通知隔离 {#push-notification-quarantines}
 

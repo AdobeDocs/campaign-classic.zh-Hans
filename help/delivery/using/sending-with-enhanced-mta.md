@@ -3,9 +3,9 @@ product: campaign
 title: 在Adobe Campaign Classic中使用增强的MTA发送
 description: 了解使用Adobe Campaign Enhanced MTA发送电子邮件的范围和特性
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 8ac6cddad04d1142b84a735ab8083e732c17714b
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1946'
 ht-degree: 3%
 
 ---
@@ -135,6 +135,10 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 促销活动投放吞吐量图将不再向电子邮件收件人显示吞吐量。 该图表现在将显示消息从Campaign中继到增强型MTA的吞吐量速度。
 
 有关投放吞吐量的更多信息，请参阅 [此部分](../../reporting/using/global-reports.md#delivery-throughput).
+
+>[!NOTE]
+>
+>使用 [电子邮件反馈服务](#email-feedback-service) (EFS)功能（目前作为测试版提供），“促销活动投放”吞吐量图仍显示电子邮件收件人的吞吐量。
 
 ### 有效期
 

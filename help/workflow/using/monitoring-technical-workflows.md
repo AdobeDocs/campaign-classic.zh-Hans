@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 1a4fd75a90667e57149772497a7b1bd14b251db3
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 8%
+source-wordcount: '504'
+ht-degree: 6%
 
 ---
 
@@ -43,9 +43,8 @@ ht-degree: 8%
 
 对于 **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. 检查 **[!UICONTROL Database Cleanup]** 工作流每天成功运行并完成。 有关详细信息，请参见此 [ 页面](delivery.md)。
+1. 检查 **[!UICONTROL Database Cleanup]** 工作流每天成功运行并完成。 有关更多信息，请参阅此[页面](../../production/using/database-cleanup-workflow.md)..
 1. 查看日志，验证经过的时间是否随时间相对恒定，并且不会干扰其他工作流。
-1. 有关更多信息，请查看此 [页面](../../production/using/database-cleanup-workflow.md).
 
 对于 **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
@@ -53,7 +52,7 @@ ht-degree: 8%
 
 对于 **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. 检查 **[!UICONTROL Deliverability update]** 工作流每天成功运行并完成。 有关详细信息，请参见此 [ 页面](delivery.md)。
+1. 检查 **[!UICONTROL Deliverability update]** 工作流每天成功运行并完成。
 1. 在日志中验证规则是否定期更新。
 
 对于 **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:

@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 47cc5bc2f16ea87b6a12f6bf500c1e8d1f406876
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 * **[!UICONTROL Delete the source files after transfer]**
 
-   清除远程服务器上的文件。
+   清除远程服务器上的文件。 如果未选中此选项，请确保手动监控SFTP目录中已存档内容的大小。
 
 * **[!UICONTROL Use SSL]**
 
