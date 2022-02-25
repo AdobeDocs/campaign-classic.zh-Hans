@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 9d8eae6b9c31d98d5e7e14b61f3abcf46311304d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '917'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 91%
 
 每个新的内部版本都带有一个以颜色突出显示的状态。
 
-![](assets/do-not-localize/green3.png) **正式发布** (GA) — 最新的稳定内部版本，在生产中验证并由Adobe推荐。
+![](assets/do-not-localize/green3.png) **正式发布版** (GA) - 最新稳定版本，已在生产中验证并受到 Adobe 推荐。
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 仅限按需部署。
 
@@ -41,7 +41,7 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 
 ## 推荐{#recommendations}
 
-为确保配置稳定，我们建议您安装 **同一内部版本** 在同一客户端配置上运行的所有服务器上。
+为确保配置稳定，建议您在使用相同客户端配置运行的所有服务器上安装&#x200B;**相同的版本**。
 
 此外，客户端控制台须与服务器实例属于同一版本。
 
@@ -51,7 +51,7 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 
 作为托管客户（托管服务或混合），您需要联系客户关怀团队以升级环境。
 
-作为本地用户，您可以执行升级。为此，您需要 [下载最新的稳定版本(GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 并升级您的所有环境。 了解有关[升级过程](../../production/using/build-upgrade.md)的更多信息，并查阅[内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)。
+作为本地用户，您可以执行升级。为此，您需要[下载最新的稳定版本 (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 并升级所有环境。了解有关[升级过程](../../production/using/build-upgrade.md)的更多信息，并查阅[版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)。
 
 ## 年度升级 {#yearly-upgrade}
 
@@ -59,13 +59,13 @@ Adobe 和 Adobe Campaign 致力于通过我们的软件解决方案为您提供�
 
 Adobe Campaign Classic 特别使用一系列技术来提供价值。这一技术组合要求您定期升级 Campaign Classic 实例，以确保使用最新版本提供出众的安全性、稳定性和性能。
 
-作为  托管用户，您无需采取任何操作，即可通过最新 GA 内部版本从  升级中受益。请通过以下常见问题解答了解详情。
+作为托管用户，您无需采取任何操作，即可通过最新 GA 版本从升级中受益。请通过以下常见问题解答了解详情。
 
 ### 我的组织为什么需要此升级？
 
 作为托管客户，如果已确定您的帐户需要升级一项或多项与 Campaign Classic 相关的技术，以及更新当前内部版本和/或版本，Adobe 将直接通知您。
 
-作为在旧版本上运行的内部部署或混合Adobe,Analytics鼓励您转为使用最新的稳定内部版本(GA)。
+对于在旧版本上运行的内部部署或混合型客户，Adobe 建议您迁移到最新稳定版本 (GA)。
 
 这将确保您的帐户免受漏洞攻击，并利用更新后的性能技术。此升级还将使您的帐户能够在以后更轻松地定期升级，而且无需过多的手动操作和干预。
 
