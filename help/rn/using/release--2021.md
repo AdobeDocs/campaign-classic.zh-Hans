@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2543'
+ht-degree: 100%
 
 ---
 
@@ -277,7 +277,7 @@ Campaign 现在支持以下系统：
 * 修复了重新打开之前创建和保存的 Web 应用程序时，会导致源代码中的部分字符发生更改的问题。(NEO-27597)
 * 修复了升级到包含用于跟踪链接的新签名机制的内部版本时可能发生的问题（从内部版本 19.1.4 和 Campaign 20.2）：当多个模板与某个事件关联时，升级可能会导致在发送事务性消息时选择错误的模板。(NEO-28326)
 * 修复了导致 MTA 无响应并且无法处理投放（除非重新启动）的问题。(NEO-27455)
-* 修复了在对日期时间类型列进行批量加载操作期间与时区管理相关的MSSQL数据库问题。 (NEO-27375)
+* 修复了在对日期时间类型列执行批量加载操作时与时区管理相关的 MSSQL 数据库问题。(NEO-27375)
 * 修复了使用 Redshift xtk 函数时的工作流查询问题。SubDays、SubSeconds、SubMinutes 和 SubHours 现在接受两种 Redshift 时间戳类型 (NEO-24962)。
 * 修复了尝试以匿名访问方式预览报告时会显示脚本错误消息的问题。(NEO-27081)
 * 修复了在执行投放分析时，可能会减少服务器内存使用的问题。
