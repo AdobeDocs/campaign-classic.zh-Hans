@@ -5,10 +5,10 @@ description: Adobe Experience Cloud Triggers实施快速入门
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
+source-git-commit: 0a59b0dbdbe70cf8993ce7153b8f3c049c1f1108
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 11%
+source-wordcount: '235'
+ht-degree: 8%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 11%
 
 >[!CAUTION]
 >
->此功能并非作为产品的一部分现成可用。实施需要咨询 Adobe。请联系您的Adobe代表以了解更多信息
+>此功能并非作为产品的一部分现成可用。对于此实施，您首先需要打开一个具有Adobe支持的票证。 然后，您将能够按照 [页面](../../integrations/using/configuring-pipeline.md#prerequisites).
 
 [!DNL Triggers] 在用户操作后的短时间内运行营销操作。 典型响应时间不到1小时。
 

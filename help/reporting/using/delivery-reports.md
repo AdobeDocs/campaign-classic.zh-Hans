@@ -4,10 +4,10 @@ title: 投放报告
 description: 投放报告
 feature: Reporting
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 64d97c7879320296a5f8efc5bb5bc2bea8663c08
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1451'
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 >
 >相关百分比是根据成功转发的消息数量计算的。
 
-* **[!UICONTROL Distinct opens for the population reached]** :至少一次打开消息的目标收件人数目的估计。 退订链接和镜像页面的点击量会被考虑在内。
+* **[!UICONTROL Distinct opens for the population reached]** :至少一次打开消息的目标收件人数目的估计。 由于必须打开电子邮件才能单击链接，因此会考虑对跟踪URL的点击。
 * **[!UICONTROL Sum of opens for the population reached]** :目标收件人的打开总数估计。
 * **[!UICONTROL Clicks on opt-out link]** :退订链接的点击次数。
 * **[!UICONTROL Clicks on the mirror page link]** :点击指向镜像页面的链接的次数。 要考虑这一点，必须在投放向导（跟踪的URL）中将链接定义为相同的链接。 请参阅 [页面](../../delivery/using/about-delivery-monitoring.md).
