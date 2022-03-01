@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 830d91dc5f6663a24d9fb8c2afeb03cdb93d4eec
+source-git-commit: 2f22f1a3cbf0dccb6872718ea4e0bd20b257c169
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 83%
@@ -19,7 +19,7 @@ ht-degree: 83%
 
 此页面列出了 **Campaign v7 最新版本**&#x200B;中的新增功能、改进和修复。每个新的内部版本都带有一个以颜色突出显示的状态。在[此页面](rn-overview.md)中了解有关 Campaign Classic v7 内部版本状态的更多信息。
 
-## ![](assets/do-not-localize/green_2.png) 7.2.2 版 - 版本 4349 {#release-7-2-2}
+## ![](assets/do-not-localize/green_2.png) 7.2.2 版 - 版本 9349 {#release-7-2-2}
 
 _2022年3月1日_
 
