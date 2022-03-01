@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: fc49c0ec80c8741b01ea150c3bc7362b73357607
-workflow-type: ht
-source-wordcount: '1035'
-ht-degree: 100%
+source-git-commit: 8278228a6610e99f9400343bc967e16f2759dfbe
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 83%
 
 ---
 
@@ -18,6 +18,24 @@ ht-degree: 100%
 ![](../../assets/v7-only.svg)
 
 此页面列出了 **Campaign v7 最新版本**&#x200B;中的新增功能、改进和修复。每个新的内部版本都带有一个以颜色突出显示的状态。在[此页面](rn-overview.md)中了解有关 Campaign Classic v7 内部版本状态的更多信息。
+
+## ![](assets/do-not-localize/green_2.png) 7.2.2 版 - 版本 4349 {#release-7-2-2}
+
+_2022年3月1日_
+
+**修补程序**
+
+* 修复了在配置 **Web分析** 外部帐户，这会导致即使发生错误，集成状态也始终显示“集成成功”。 (NEO-36672)
+* 修复了当具有负ID时与序列ID机制相关的多个升级后错误。 (NEO-43205、NEO-42846、NEO-42845)
+* 修复了在使用 **Web分析** 具有定期和连续投放的外部帐户，这会导致外部帐户中的数据部分丢失。 (NEO-38548)
+* 修复了更新NmsActiveContact表时升级后速度减慢的问题。 (NEO-43206)
+* 修复了将现成文件夹从 **管理** 节点到任何其他位置。 (NEO-42875)
+* 修复了在使用 **更新数据** 工作流活动，可阻止使用Google Cloud外部数据库中的收件人数据更新收件人架构。 (NEO-42343)
+* 修复了升级后期间与Adobe Analytics连接器相关的问题。 (NEO-43318, NEO-38136)
+* 修复了在升级后期间被“VALUE_TO_CHANGE”覆盖的CUID问题。 (NEO-43267)
+* 修复了在多中间配置上同步中间源和营销实例时导致错误的问题。 (NEO-10432)
+* 修复了在同时拥有1000个以上广播时刷新投放能力工作流时导致错误的问题。 (NEO-40276)
+* 修复了打开率和点击率投放指示器无法自动更新的问题。 (NEO-43253)
 
 ## ![](assets/do-not-localize/green_2.png) 7.2.1 版 - 版本 9346 {#release-7-2-1}
 
