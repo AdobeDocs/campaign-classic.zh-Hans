@@ -2,11 +2,9 @@
 product: campaign
 title: 使用本地审批活动
 description: 了解如何使用本地批准活动
-audience: workflow
-content-type: reference
-topic-tags: use-cases
+feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 2%

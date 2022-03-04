@@ -2,11 +2,9 @@
 product: campaign
 title: 向 Web 窗体添加字段
 description: 向 Web 窗体添加字段
-audience: web
-content-type: reference
-topic-tags: web-forms
+feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: a5f6478d3c0780464974053e389923614abba582
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '2368'
 ht-degree: 1%
@@ -377,7 +375,6 @@ ht-degree: 1%
 >* Adobe Campaign不会控制上传的资源的大小或类型：因此，我们强烈建议仅将上载字段用于安全类型的内联网站点。
 >* 如果多个服务器已链接到实例（负载平衡架构），则需要确保对Web表单的调用到达同一服务器。
 >* 这些实施需要Adobe Campaign咨询团队的帮助。
-
 >
 
 

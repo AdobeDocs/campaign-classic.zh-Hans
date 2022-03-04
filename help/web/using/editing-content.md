@@ -2,11 +2,9 @@
 product: campaign
 title: 编辑内容
 description: 编辑内容
-audience: web
-content-type: reference
-topic-tags: editing-html-content
+feature: Web Apps, Web Forms, Landing Pages
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -31,7 +29,7 @@ ht-degree: 1%
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-这些条件采用XTK表达式语法(例如 **ctx.recipient@email != &quot;&quot;** 或 **ctx.recipient@status==&quot;0&quot;**)。 默认情况下，所有字段都可见。
+这些条件采用XTK表达式语法(例如 **ctx.recipient@电子邮件 != &quot;&quot;** 或 **ctx.recipient@status==&quot;0&quot;**)。 默认情况下，所有字段都可见。
 
 >[!NOTE]
 >
@@ -137,7 +135,6 @@ ht-degree: 1%
 >* 新窗口(_blank)
 >* 当前窗口(_self)
 >* 默认浏览器行为
-
 >
 
 

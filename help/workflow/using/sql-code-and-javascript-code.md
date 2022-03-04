@@ -2,14 +2,12 @@
 product: campaign
 title: SQL 代码和 JavaScript 代码
 description: 了解有关SQL和JavaScript代码工作流活动的更多信息
-audience: workflow
-content-type: reference
-topic-tags: action-activities
+feature: Workflows
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: 8e6ebec9af0b7865616cf3904c8d400094567bdb
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -36,11 +34,11 @@ ht-degree: 5%
 **[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动会在工作流的上下文中执行JavaScript脚本。 有关脚本的更多信息，请参阅以下章节：
 
 * [JavaScript 脚本和模板](javascript-scripts-and-templates.md)
-* [工作流中的JavaScript代码示例](javascript-in-workflows.md)
+* [工作流中的 JavaScript 代码示例](javascript-in-workflows.md)
 
 ### 执行延迟 {#exec-delay}
 
-从20.2版本开始，向 **[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动。 默认情况下，执行阶段不能超过1小时。 在此延迟后，进程将中止，并显示错误消息，活动执行将失败。
+从20.2版本开始，向 **[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动。 默认情况下，执行阶段不能超过1小时。 在此延迟后，进程将中止，并显示错误消息，并且活动执行将失败。
 
 您可以在 **[!UICONTROL Stop execution after]** 字段。
 

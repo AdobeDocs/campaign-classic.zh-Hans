@@ -2,8 +2,9 @@
 product: campaign
 title: 分析结果
 description: 了解如何通过专用用例执行A/B测试
+feature: A/B Testing
 exl-id: e6f39180-d161-4226-810a-10bb1c3682ca
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 5%

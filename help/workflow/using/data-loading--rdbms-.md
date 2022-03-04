@@ -2,11 +2,9 @@
 product: campaign
 title: 数据加载 (RDBMS)
 description: 了解有关数据加载(RDBMS)工作流活动的更多信息
-audience: workflow
-content-type: reference
-topic-tags: action-activities
+feature: Workflows, Data Management Activity
 exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 3%

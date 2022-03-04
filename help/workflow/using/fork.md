@@ -2,11 +2,9 @@
 product: campaign
 title: 分叉
 description: 进一步了解分支工作流活动
-audience: workflow
-content-type: reference
-topic-tags: flow-control-activities
+feature: Workflows
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 1113afb573bad958ec7cc2cf008f71c8e751e8f9
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%

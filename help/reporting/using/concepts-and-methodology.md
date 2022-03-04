@@ -2,10 +2,11 @@
 product: campaign
 title: 多维数据集的最佳实践
 description: 多维数据集的最佳实践
+feature: Reporting
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---

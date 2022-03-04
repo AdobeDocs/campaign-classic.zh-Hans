@@ -1,12 +1,10 @@
 ---
 product: campaign
 title: 用例 — 创建电子邮件投放
-description: 创建电子邮件投放用例
-audience: web
-content-type: reference
-topic-tags: editing-html-content
+description: 用例 — 创建电子邮件投放
+feature: Web Apps, Web Forms, Landing Pages
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%

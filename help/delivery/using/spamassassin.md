@@ -2,8 +2,9 @@
 product: campaign
 title: SpamAssassin
 description: 了解如何使用SpamAssassin设置电子邮件垃圾邮件检测
+feature: Email, Deliverability
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 6%

@@ -2,11 +2,9 @@
 product: campaign
 title: '"用例：创建概述"'
 description: '"用例：创建概述"'
-audience: web
-content-type: reference
-topic-tags: web-applications
+feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%

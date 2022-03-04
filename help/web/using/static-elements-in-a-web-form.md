@@ -2,14 +2,12 @@
 product: campaign
 title: Web 窗体中的静态元素
 description: Web 窗体中的静态元素
-audience: web
-content-type: reference
-topic-tags: web-forms
+feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '1031'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -30,7 +28,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >在服务器端，脚本可以使用 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+   >在服务器端，脚本可以使用 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans).
 
 ## 插入HTML内容 {#inserting-html-content}
 

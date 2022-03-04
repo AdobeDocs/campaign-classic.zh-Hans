@@ -2,9 +2,9 @@
 product: campaign
 title: 营销活动投放
 description: 了解有关营销活动投放的更多信息
-feature: Resource Management, Cross Channel Orchestration
+feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%

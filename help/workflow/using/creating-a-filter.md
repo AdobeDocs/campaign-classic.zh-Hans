@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: 创建过滤器
+title: 创建筛选
 description: 了解如何在执行查询时创建过滤器
-feature: Query Editor
+feature: Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 2%

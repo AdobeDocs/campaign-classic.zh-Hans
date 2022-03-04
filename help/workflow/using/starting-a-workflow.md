@@ -1,11 +1,12 @@
 ---
 product: campaign
-title: 启动工作流
+title: 开始工作流
 description: 了解如何启动工作流并发现工作流操作工具栏和右键单击菜单
+feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '797'
 ht-degree: 2%
 
 ---
@@ -46,7 +47,9 @@ ht-degree: 2%
 
    此操作会停止当前正在执行的工作流。 实例的状态设置为 **已完成**. 如果可能，将停止正在进行的操作。 导入和SQL查询将立即取消。
 
-   停止是一个异步过程。 注册请求，然后工作流服务器或服务器取消正在进行的操作。 因此，停止工作流实例可能需要时间，尤其是当工作流在多个服务器上运行时，每个服务器都必须控制以取消正在进行的任务。
+   >[!IMPORTANT]
+   >
+   >停止工作流是一个异步过程：注册请求，然后工作流服务器或服务器取消正在进行的操作。 因此，停止工作流实例可能需要时间，尤其是当工作流在多个服务器上运行时，每个服务器都必须控制以取消正在进行的任务。 要避免出现任何问题，请等待停止操作完成，并且不要在同一工作流中执行多个停止请求。
 
 * **[!UICONTROL Restart]**
 

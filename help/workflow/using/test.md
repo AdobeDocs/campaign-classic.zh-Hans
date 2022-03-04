@@ -2,14 +2,12 @@
 product: campaign
 title: 测试
 description: 进一步了解测试工作流活动
-audience: workflow
-content-type: reference
-topic-tags: flow-control-activities
+feature: Workflows
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -23,7 +21,7 @@ A **测试** 类型活动可激活满足其关联条件的第一个过渡。 如
 
 ![](assets/edit_test.png)
 
-有关可通过工作流JavaScript访问的应用程序服务器的所有其他JavaScript函数和SOAP方法的更多信息，请参阅 [JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+有关可通过工作流JavaScript访问的应用程序服务器的所有其他JavaScript函数和SOAP方法的更多信息，请参阅 [JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans).
 
 您还可以直接从此编辑器插入变量。 有关如何使用变量的更多信息，请参阅 [此部分](javascript-scripts-and-templates.md#variables).
 

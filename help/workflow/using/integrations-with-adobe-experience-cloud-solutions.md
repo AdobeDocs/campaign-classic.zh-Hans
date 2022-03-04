@@ -2,10 +2,8 @@
 product: campaign
 title: 与Adobe Experience Cloud解决方案工作流程集成
 description: 了解有关与Adobe Experience Cloud解决方案工作流集成的更多信息
-audience: workflow
-content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 8%

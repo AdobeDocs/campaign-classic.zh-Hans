@@ -2,9 +2,9 @@
 product: campaign
 title: 查询
 description: 进一步了解查询工作流活动
-feature: Query Editor
+feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 0%
@@ -223,7 +223,7 @@ SQL中筛选维的等效项是内部连接：
 * 对开发和生产环境使用相同的值。 请尽可能使用相同的：
 
    * 操作系统,
-   * 版本、
+   * 版本,
    * 数据、
    * 应用程序、
    * 卷。

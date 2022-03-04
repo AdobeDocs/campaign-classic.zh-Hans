@@ -2,8 +2,9 @@
 product: campaign
 title: 电子邮件参数
 description: 了解特定于电子邮件投放的选项和设置
+feature: Email
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 8%

@@ -2,11 +2,9 @@
 product: campaign
 title: 使用增量查询每季度更新列表
 description: 在此用例中，使用增量查询自动更新收件人列表。
-audience: workflow
-content-type: reference
-topic-tags: targeting-activities
+feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 5%

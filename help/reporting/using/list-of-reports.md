@@ -2,11 +2,12 @@
 product: campaign
 title: 报告列表
 description: 报告列表
+feature: Reporting
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1007'
+ht-degree: 2%
 
 ---
 

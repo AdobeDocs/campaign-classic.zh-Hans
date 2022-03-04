@@ -2,11 +2,9 @@
 product: campaign
 title: 个性化链接跟踪入门
 description: 了解如何在电子邮件中编写可进行个性化的链接，并在Campaign Classic中支持跟踪。
-audience: delivery
-content-type: reference
-topic-tags: tracking-messages
+feature: Personalization
 exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 7%

@@ -2,10 +2,8 @@
 product: campaign
 title: 收件箱呈现技术工作流
 description: 本节介绍收件箱呈现包中安装的技术工作流
-audience: workflow
-content-type: reference
-topic-tags: technical-workflows
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+feature: Workflows, Inbox Rendering
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 2%

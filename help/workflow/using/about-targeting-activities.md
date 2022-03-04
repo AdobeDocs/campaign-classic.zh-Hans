@@ -2,9 +2,9 @@
 product: campaign
 title: 关于定位活动
 description: 关于定位活动
-feature: Workflows, Data Management, Audiences
+feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 3%

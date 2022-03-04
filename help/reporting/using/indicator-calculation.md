@@ -2,11 +2,12 @@
 product: campaign
 title: 指标计算
 description: 指标计算
+feature: Reporting
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2972'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +34,7 @@ ht-degree: 0%
    <td> sum(Iif([@url-id]=1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 点击次数<br /> </td> 
+   <td> 点击数<br /> </td> 
    <td> @clicks<br /> </td> 
    <td> URL类型等@totalClicks于“电子邮件点击”的所有URL总和。<br /> </td> 
    <td> sum(Iif([url/@type]=1, @totalClicks, 0))<br /> </td> 
@@ -109,7 +110,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> 错误<br /> </td> 
-   <td> @value<br /> </td> 
+   <td> @值<br /> </td> 
    <td> 此类型错误的失败消息数。<br /> </td> 
    <td> Count(@status=2和msg/@failureReason="错误类型的值")<br /> </td> 
   </tr> 
@@ -230,7 +231,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> 电子邮件<br /> </td> 
-   <td> @email<br /> </td> 
+   <td> @电子邮件<br /> </td> 
    <td> URL类@totalClicks等于“email”的所有总和。<br /> </td> 
    <td> Sum(iIf([url/@category]='email',@totalClicks,0))<br /> </td> 
   </tr> 
@@ -566,7 +567,7 @@ ht-degree: 0%
    <td> Countdistinct([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 点击次数<br /> </td> 
+   <td> 点击数<br /> </td> 
    <td> @recipientClick<br /> </td> 
    <td> URL类型等于“电@broadLog-ids点击”的非重复计数。 <br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1, @broadLog-id, 0))<br /> </td> 
@@ -645,7 +646,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> 电子邮件<br /> </td> 
-   <td> @email<br /> </td> 
+   <td> @电子邮件<br /> </td> 
    <td> URL类@totalClicks等于“email”的所有URL总和。<br /> </td> 
    <td> Sum(iIf([url/@category]='email',@totalClicks,0))<br /> </td> 
   </tr> 
@@ -721,13 +722,13 @@ ht-degree: 0%
    <td> 百分比([指标/@totalRecipientClick], [指标/@success])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 点击次数<br /> </td> 
+   <td> 点击数<br /> </td> 
    <td> @_click<br /> </td> 
    <td> URL主键与@totalClicks 1不同的所有项计数<br /> </td> 
    <td> count(Iif([@url-id] != 1, @totalClicks, 0)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 点击量(%)<br /> </td> 
+   <td> 点击数 (%)<br /> </td> 
    <td> -<br /> </td> 
    <td> 点击次数与累计点击总数的百分比。<br /> </td> 
    <td> 百分比(@_click, @_total)<br /> </td> 
@@ -815,7 +816,7 @@ ht-degree: 0%
    <td> sum(Iif([url/@type] = 5, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 点击次数<br /> </td> 
+   <td> 点击数<br /> </td> 
    <td> @clicks<br /> </td> 
    <td> URL类型等于“电@totalClicks单击”的所有URL总和。<br /> </td> 
    <td> sum(Iif([url/@type] = 1, @totalClicks, 0))<br /> </td> 
@@ -874,7 +875,7 @@ ht-degree: 0%
    <td> Countdistinct([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 点击次数<br /> </td> 
+   <td> 点击数<br /> </td> 
    <td> @personClick<br /> </td> 
    <td> URL类别@source-ids为“电子邮件点击”的总数。 <br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1, @source-id, 0)) <br /> </td> 

@@ -1,19 +1,20 @@
 ---
 product: campaign
-title: 添加枚举类型计算字段
+title: 添加明细列表类型计算字段
 description: 了解如何添加枚举类型计算字段
 audience: workflow
 content-type: reference
 topic-tags: use-cases
+feature: Workflows, Data Management
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 1%
 
 ---
 
-# 添加枚举类型计算字段 {#adding-an-enumeration-type-calculated-field}
+# 添加明细列表类型计算字段 {#adding-an-enumeration-type-calculated-field}
 
 ![](../../assets/common.svg)
 

@@ -2,8 +2,9 @@
 product: campaign
 title: 创建直邮投放
 description: 了解如何创建直邮投放
+feature: Direct Mail
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 11%

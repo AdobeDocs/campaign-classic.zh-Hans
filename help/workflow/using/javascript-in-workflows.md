@@ -1,18 +1,17 @@
 ---
 product: campaign
-title: 工作流中的JavaScript代码示例
+title: 工作流中的 JavaScript 代码示例
 description: 以下示例显示如何在工作流中使用JavaScript代码
-audience: workflow
-content-type: reference
-topic-tags: advanced-management
-source-git-commit: fa3a3e1801738928876734aa42342f0a5b49e320
+feature: Workflows
+exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '1768'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# 工作流中的JavaScript代码示例{#javascript-in-workflows}
+# 工作流中的 JavaScript 代码示例{#javascript-in-workflows}
 
 ![](../../assets/common.svg)
 

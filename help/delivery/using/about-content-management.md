@@ -2,8 +2,9 @@
 product: campaign
 title: 关于内容管理
 description: Campaign内容管理器模块快速入门
+feature: Landing Pages, Email Design
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 2%

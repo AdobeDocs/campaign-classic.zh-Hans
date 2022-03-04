@@ -2,8 +2,9 @@
 product: campaign
 title: 在Adobe Campaign中配置Android移动应用程序
 description: 了解如何设置适用于Android的移动应用程序
+feature: Push
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 3%

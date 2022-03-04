@@ -2,9 +2,9 @@
 product: campaign
 title: 投放监测入门
 description: 进一步了解Campaign Classic交付监控功能
-feature: Monitoring
+feature: Monitoring, Deliverability
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 16%

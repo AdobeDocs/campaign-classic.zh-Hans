@@ -2,12 +2,12 @@
 product: campaign
 title: 投放状态
 description: 了解有关投放仪表板上可用状态的更多信息
-feature: Monitoring
+feature: Monitoring, Deliverability
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 

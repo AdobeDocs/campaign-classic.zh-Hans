@@ -4,7 +4,7 @@ title: '"用例：配置字段替换"'
 description: '"用例：配置字段替换"'
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%

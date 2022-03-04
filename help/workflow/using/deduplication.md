@@ -2,9 +2,9 @@
 product: campaign
 title: 重复数据删除
 description: 了解有关重复数据删除工作流活动的更多信息
-feature: Workflows, Data Management
+feature: Workflows, Targeting Activity
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%

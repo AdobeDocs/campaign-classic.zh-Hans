@@ -2,12 +2,12 @@
 product: campaign
 title: 了解隔离管理
 description: 了解隔离管理
-feature: Monitoring
+feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: afe4329fd230f30e48bfbf5ac2073ca95a6fd04e
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '2837'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -201,7 +201,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 负载过长<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr> 
   <tr> 
    <td> 消息创建/分析阶段 — 意外的内容格式问题<br /> </td> 
@@ -209,7 +209,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 根据错误显示的各种错误消息<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 未定义<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr> 
   <tr> 
    <td> 证书问题（密码、损坏等） 并测试与APNs问题的连接<br /> </td> 
@@ -217,7 +217,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 根据错误显示的各种错误消息<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr> 
   <tr> 
    <td> 发送过程中网络连接丢失<br /> </td> 
@@ -233,7 +233,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 未注册<br /> </td> 
    <td> 硬<br /> </td> 
    <td> 用户未知<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr> 
   <tr> 
    <td> APNs消息拒绝：所有其他错误<br /> </td> 
@@ -241,7 +241,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 错误消息中将存在错误拒绝原因<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -288,7 +288,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 不能使用以下关键词：{1}<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr> 
   <tr> 
    <td> 消息创建/分析阶段：负载太大<br /> </td> 
@@ -296,7 +296,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 通知过重：{1}位，而只有{2}位已授权<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr> 
   <tr> 
    <td> 发送过程中网络连接丢失<br /> </td> 
@@ -320,7 +320,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 无法识别开发人员帐户，请检查您的ID和密码<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr> 
   <tr> 
    <td> FCM报文拒绝：超出设备配额<br /> </td> 
@@ -336,7 +336,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> </td> 
    <td> 硬<br /> </td> 
    <td> 用户未知<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr> 
   <tr> 
    <td> FCM报文拒绝：所有其他错误<br /> </td> 
@@ -344,7 +344,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> Firebase Cloud Messaging服务器返回了意外的错误代码：{1} </td> 
    <td> </td> 
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr> 
     <tr> 
    <td> FCM报文拒绝：参数无效<br /> </td> 
@@ -352,7 +352,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> INVALID_ARGUMENT </td> 
    <td> 已忽略</td> 
    <td> 未定义<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr>
     <tr> 
    <td> FCM报文拒绝：第三方身份验证错误<br /> </td> 
@@ -368,7 +368,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> SENDER_ID_MISMATCH </td> 
    <td> 柔和</td>
    <td> 用户未知<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr>
     <tr> 
    <td> FCM报文拒绝：未注册<br /> </td> 
@@ -376,7 +376,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 未注册 </td> 
    <td> 硬</td> 
    <td> 用户未知<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr>
     <tr> 
    <td> FCM报文拒绝：内部<br /> </td> 
@@ -400,7 +400,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 意外错误代码</td> 
    <td> 已忽略</td> 
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr>
   <tr> 
    <td> 身份验证：连接问题<br /> </td> 
@@ -416,7 +416,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> unauthorized_client </td> 
    <td> 已忽略</td>
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：客户端未授权使用此方法检索访问令牌，或者客户端未授权任何请求的作用域。<br /> </td> 
@@ -424,7 +424,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> unauthorized_client </td> 
    <td> 已忽略</td>
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：拒绝访问<br /> </td> 
@@ -432,7 +432,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> access_denied</td> 
    <td> 已忽略</td>
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：无效电子邮件<br /> </td> 
@@ -440,7 +440,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> invalid_grant </td> 
    <td> 已忽略</td> 
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：JWT无效<br /> </td> 
@@ -448,7 +448,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> invalid_grant </td> 
    <td> 已忽略</td> 
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：JWT签名无效<br /> </td> 
@@ -456,7 +456,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> invalid_grant </td> 
    <td> 已忽略</td> 
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：提供的OAuth范围或ID令牌受众无效<br /> </td> 
@@ -464,7 +464,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> unauthorized_client</td> 
    <td> 已忽略</td> 
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：已禁用OAuth客户端<br /> </td> 
@@ -472,7 +472,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> disabled_client</td> 
    <td> 已忽略</td> 
    <td> 已拒绝<br /> </td> 
-   <td> 否<br /> </td> 
+   <td> 未<br /> </td> 
   </tr>
  </tbody> 
 </table>

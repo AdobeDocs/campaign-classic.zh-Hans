@@ -1,21 +1,19 @@
 ---
 product: campaign
-title: '在 Adobe Campaign 中配置移动应用程序 '
+title: '在Adobe Campaign中配置移动应用程序 '
 description: 了解如何从移动应用程序配置开始
-audience: delivery
-content-type: reference
-topic-tags: sending-push-notifications
+feature: Push
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 10%
+ht-degree: 7%
 
 ---
 
 # 应用程序配置入门
 
-在此部分中，您可以找到基于销售在线假日套餐的公司的配置示例。 其移动应用程序(Neotrips)有两个版本可供客户使用：Neotrips for Android，Neotrips for iOS。
+在此部分中，您可以找到基于销售在线假日套餐的公司的配置示例。 其移动应用程序(Neotrips)有两个版本可供客户使用：Neotrips for Android和Neotrips for iOS。
 
 要在Adobe Campaign中发送推送通知，您需要：
 

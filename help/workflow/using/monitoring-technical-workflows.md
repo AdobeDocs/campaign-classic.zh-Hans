@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: 监控技术工作流
-description: 监控技术工作流
-audience: workflow
-content-type: reference
-topic-tags: use-cases
+title: 监测技术工作流
+description: 监测技术工作流
+feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: 1a4fd75a90667e57149772497a7b1bd14b251db3
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 6%
 
 ---
 
-# 监控技术工作流 {#monitoring-technical-workflows}
+# 监测技术工作流 {#monitoring-technical-workflows}
 
 ![](../../assets/common.svg)
 

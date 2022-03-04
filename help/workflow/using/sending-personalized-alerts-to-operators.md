@@ -2,8 +2,9 @@
 product: campaign
 title: 向操作员发送个性化提醒
 description: 了解如何向运营商发送个性化提醒
+feature: Workflows
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%

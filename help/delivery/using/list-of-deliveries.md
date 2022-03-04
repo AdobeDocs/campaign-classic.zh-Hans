@@ -2,8 +2,9 @@
 product: campaign
 title: 访问传递的列表
 description: 了解如何访问已创建投放的列表
+feature: Monitoring
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 10%
