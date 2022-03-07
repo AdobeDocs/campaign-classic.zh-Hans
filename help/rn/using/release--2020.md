@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
-source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
+source-git-commit: c228f827e91f25ee3a837f7fe6549ae4e5714ba3
 workflow-type: tm+mt
-source-wordcount: '6569'
-ht-degree: 74%
+source-wordcount: '6619'
+ht-degree: 73%
 
 ---
 
@@ -35,7 +35,7 @@ _2020 年 10 月 27 日_
 >
 > * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。[了解详情](../../technotes/using/ims-updates.md)
 > * 此版本附带[安全修复](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign 的旧版 oAuth 身份验证模式已于 **2021 年 9 月**[停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。在扩展之前，托管环境将从扩展中受益  **2022年2月23日**. 作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持期限延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
+> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign 的旧版 oAuth 身份验证模式已于 **2021 年 9 月**[停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。托管环境的支持时间可延长至 **2022 年 2 月 23 日**。作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持期限延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 
 **新增功能**
@@ -125,6 +125,7 @@ Campaign 现在支持以下系统：
 * 改进了从 Adobe Target 插入图像时显示的错误消息，并且外部帐户中的租户名称为空。
 * 在投放属性中，**[!UICONTROL Archive emails]** 选项已重命名为 **[!UICONTROL Email BCC]**。
 * 为了提高稳健性，现在拒绝对无效节点执行 selectAll 查询。如果需要禁用检查并恢复先前行为，可将 XtkSecurity_Disable_QueryCheck 设置为 0。
+* 为nmsBroadlogId序列添加了负ID范围支持。 此内部版本调整nmsBroadlogId序列的min_value以包含负范围。 如果您的严格用例不允许使用负ID，请将序列的min_value还原为1。
 
 **技术演进**
 
@@ -224,7 +225,7 @@ _2020 年 12 月 22 日_
 >
 > * 此版本附带新的连接协议：如果您是通过 Adobe Identity Service (IMS) 连接到 Campaign，则 Campaign 服务器和客户端控制台都必须升级，这样才能在&#x200B;**2021 年 6 月 30 日**&#x200B;之后连接到 Campaign。[了解详情](../../technotes/using/ims-updates.md)
 > * 此版本附带[安全修复](https://helpx.adobe.com/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign 的旧版 oAuth 身份验证模式已于 **2021 年 9 月**[停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。在扩展之前，托管环境将从扩展中受益  **2022年2月23日**. 作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持期限延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
+> * 如果您是通过 oAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/configuring-adobe-io.md)中的说明移至 Adobe I/O。Campaign 的旧版 oAuth 身份验证模式已于 **2021 年 9 月**[停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。托管环境的支持时间可延长至 **2022 年 2 月 23 日**。作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持期限延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
 
 
 **改进**
