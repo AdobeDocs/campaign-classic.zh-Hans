@@ -31,7 +31,7 @@ ht-degree: 99%
 
 更新了有关如何将地址发送到隔离列表以及如何从隔离列表中移除地址的章节。[了解更多信息](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-添加了工作流最佳实践，建议不要在同一工作流上执行多个停止请求。 [了解更多信息](../../workflow/using/workflow-best-practices.md)
+添加了工作流最佳实践，建议不要在同一工作流上执行多个停止请求。[了解更多信息](../../workflow/using/workflow-best-practices.md)
 
 添加了有关如何阻止定期投放在营销活动中运行的信息。 [了解更多信息](../../workflow/using/recurring-delivery.md)
 
