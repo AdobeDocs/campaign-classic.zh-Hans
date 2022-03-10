@@ -4,10 +4,10 @@ title: 循环投放
 description: 了解有关定期投放工作流活动的更多信息
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 6f0479cfe6c6801eb44fcc7a35bdac1241ec3be6
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 21%
+source-wordcount: '271'
+ht-degree: 17%
 
 ---
 
@@ -39,9 +39,12 @@ A **循环投放** 将在每次执行时创建一个新投放实例。 例如，
 
 ![循环投放](assets/delivery_recurring.jpg)
 
+如果要停止定期投放运行，应完全取消营销活动或停止执行该活动的工作流。 从Campaign仪表板停止投放将只停止投放发生：每次执行工作流时，将继续创建循环投放的下一个实例。
+
 >[!NOTE]
 >
->无法从 **[!UICONTROL Recurring delivery]** 键入活动。\
+>无法从 **[!UICONTROL Recurring delivery]** 键入活动。
+> 
 >要通过营销活动工作流直接创建投放，请使用预先配置的渠道特定活动(例如， **[!UICONTROL Email delivery]**)。
 
 ## 教程视频(#recurring-delivery-video)

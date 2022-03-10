@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
+source-git-commit: deb658fee9a668fd98aebfd1852252114ffb6edc
 workflow-type: tm+mt
-source-wordcount: '4887'
+source-wordcount: '4903'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 99%
 更新了有关如何将地址发送到隔离列表以及如何从隔离列表中移除地址的章节。[了解更多信息](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 添加了工作流最佳实践，建议不要在同一工作流上执行多个停止请求。 [了解更多信息](../../workflow/using/workflow-best-practices.md)
+
+添加了有关如何阻止定期投放在营销活动中运行的信息。 [了解更多信息](../../workflow/using/recurring-delivery.md)
 
 ### 2022 年 1 月 {#january-2022}
 
