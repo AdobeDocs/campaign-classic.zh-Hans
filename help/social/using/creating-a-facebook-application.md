@@ -6,9 +6,9 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
-source-git-commit: b5334de18eca8fc1147ae0c42fe23a6932bf71d2
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '874'
 ht-degree: 5%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 5%
 
 配置步骤包括：
 
-1. 创建一个或多个Facebook应用程序。 [了解详情](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application)
+1. 创建一个或多个Facebook应用程序。
 1. 输入 **[!UICONTROL terms of service]** 和 **[!UICONTROL Privacy policy]** 要在Facebook权限请求屏幕上显示的链接。 [了解详情](#entering-the-terms-of-service-and-privacy-policy-links)
 1. 对于每个Facebook应用程序，请 **[!UICONTROL Facebook Connect]** 键入外部帐户。 [了解详情](#configuring-external-accounts)
 1. 对于每个Facebook应用程序，在Adobe Campaign中创建一个Facebook类型的Web应用程序。 [了解详情](#creating-a-facebook-type-web-application)

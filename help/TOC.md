@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: ht
-source-wordcount: '2555'
-ht-degree: 100%
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+workflow-type: tm+mt
+source-wordcount: '2548'
+ht-degree: 99%
 
 ---
 
@@ -585,14 +585,12 @@ ht-degree: 100%
    + [关于社交媒体营销](social/using/about-social-marketing.md)
    + 配置{#configuration}
       + [开始工作流](social/using/starting-workflows.md)
-      + [在 Facebook 好友墙上发布](social/using/publishing-on-facebook-walls.md)
       + [创建 Facebook 应用程序](social/using/creating-a-facebook-application.md)
       + [在 Twitter 上配置发布](social/using/configuring-publishing-on-twitter.md)
-   + 在社交媒体上发布{#publishing-on-facebook-twitter}
-      + [社交媒体入门](social/using/overview.md)
-      + [在 Facebook 上发布](social/using/publishing-on-facebook.md)
+   + 在 Twitter 上发布 {#publishing-on-facebook-twitter}
+      + [开始使用Twitter](social/using/overview.md)
       + [在 Twitter 上发布](social/using/publishing-on-twitter.md)
-   + 附件 {#annexes}
+   + 获取Facebook联系人 {#annexes}
       + [Facebook 应用程序示例](social/using/examples-of-facebook-apps.md)
       + [跟踪](social/using/tracking.md)
 + 安装和配置指南 {#installing-campaign-classic}
