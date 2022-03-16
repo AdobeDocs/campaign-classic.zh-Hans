@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: 访问外部数据库
-description: 访问外部数据库
-audience: platform
-content-type: reference
-topic-tags: connectors
+title: 创建用于FDA的数据模式
+description: 了解如何为FDA创建数据模式
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
-source-git-commit: d2d0ff575edbee18febb5ec895fcec1e0ae34de7
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 6%
+source-wordcount: '187'
+ht-degree: 2%
 
 ---
 

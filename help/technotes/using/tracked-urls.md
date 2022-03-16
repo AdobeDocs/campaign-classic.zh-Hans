@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: 技术说明
-description: 技术说明
+title: '跟踪的 URL 签名问题 '
+description: '跟踪的 URL 签名问题 '
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 35%
+source-wordcount: '361'
+ht-degree: 36%
 
 ---
 

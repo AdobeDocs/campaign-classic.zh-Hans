@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: 访问外部数据库
+title: 联合数据访问入门
 description: 了解如何在外部数据库中访问和处理数据
 feature: Federated Data Access
 exl-id: 9d8d1e9c-63e4-40c4-8338-b921d08ea405
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 3%
+source-wordcount: '163'
+ht-degree: 0%
 
 ---
 
