@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e4cd327d1495987e7d32bd1b903c8fe5de2813f2
+source-git-commit: e3ff5bb55e108c163dcf395da84076201f09e61c
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 82%
+source-wordcount: '1281'
+ht-degree: 99%
 
 ---
 
@@ -21,21 +21,26 @@ ht-degree: 82%
 
 ## ![](assets/do-not-localize/green_2.png) 7.2.2 版 - 版本 9349 {#release-7-2-2}
 
-_2022年3月1日_
+_2022 年 3 月 1 日_
+
+>[!NOTE]
+>
+> 此内部版本与v7.2.1客户端控制台兼容。
 
 **修补程序**
 
-* 修复了在配置 **Web分析** 外部帐户，这会导致即使发生错误，集成状态也始终显示“集成成功”。 (NEO-36672)
-* 修复了当具有负ID时与序列ID机制相关的多个升级后错误。 (NEO-43205、NEO-42846、NEO-42845)
-* 修复了在使用 **Web分析** 具有定期和连续投放的外部帐户，这会导致外部帐户中的数据部分丢失。 (NEO-38548)
-* 修复了更新NmsActiveContact表时升级后速度减慢的问题。 (NEO-43206)
-* 修复了将现成文件夹从 **管理** 节点到任何其他位置。 (NEO-42875)
-* 修复了在使用 **更新数据** 工作流活动，可阻止使用Google Cloud外部数据库中的收件人数据更新收件人架构。 (NEO-42343)
-* 修复了升级后期间与Adobe Analytics连接器相关的问题。 (NEO-43318, NEO-38136)
-* 修复了在升级后期间被“VALUE_TO_CHANGE”覆盖的CUID问题。 (NEO-43267)
-* 修复了在多中间配置上同步中间源和营销实例时导致错误的问题。 (NEO-10432)
-* 修复了在同时拥有1000个以上广播时刷新投放能力工作流时导致错误的问题。 (NEO-40276)
-* 修复了打开率和点击率投放指示器无法自动更新的问题。 (NEO-43253)
+* 修复了在配置&#x200B;**网站分析**&#x200B;外部帐户时，导致即使发生错误，集成状态也始终显示为“Integration successful”的问题。(NEO-36672)
+* 修复了当具有负 ID 时与序列 ID 机制相关的多个升级后错误。(NEO-43205、NEO-42846、NEO-42845)
+* 修复了在使用具有循环和连续投放的&#x200B;**网站分析**&#x200B;外部帐户时导致外部帐户中的数据部分丢失的问题。(NEO-38548)
+* 修复了更新 NmsActiveContact 表时升级后速度减慢的问题。(NEO-43206)
+* 修复了将现成文件夹从&#x200B;**管理**&#x200B;节点移动到任何其他位置时出现的升级后故障问题。(NEO-42875)
+* 修复了在使用&#x200B;**更新数据**&#x200B;工作流活动时，可能会导致无法使用 Google Cloud 外部数据库中的收件人数据更新收件人模式的问题。(NEO-42343)
+* 修复了升级后与 Adobe Analytics 连接器相关的问题。(NEO-43318、NEO-38136)
+* 修复了升级后 CUID 被“VALUE_TO_CHANGE”覆盖的问题。(NEO-43267)
+* 修复了在多中间配置上同步中间源和营销实例时导致出现错误的问题。(NEO-10432)
+* 修复了在同时拥有 1000 个以上 broadlog 时刷新可投放性工作流时导致出现错误的问题。(NEO-40276)
+* 修复了导致打开率和点击率投放指标无法自动更新的问题。(NEO-43253)
+
 
 ## ![](assets/do-not-localize/limited_2.png) 7.2.1 版 - 版本 9346 {#release-7-2-1}
 
@@ -51,7 +56,7 @@ FDA 帐户已进行多项安全性增强：
 
 **兼容性更新**
 
-Adobe Campaign现在与Windows Server 2019兼容。 请参阅 [Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md#OperatingSystems).
+Adobe Campaign 现在与 Windows Server 2019 兼容。请参阅 [Campaign 兼容性矩阵](../../rn/using/compatibility-matrix.md#OperatingSystems)。
 
 **改进**
 
