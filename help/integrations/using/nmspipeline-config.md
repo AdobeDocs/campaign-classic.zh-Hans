@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: 配置集成
-description: 配置集成
+title: 管道选项 NmsPipeline_Config
+description: 管道选项 NmsPipeline_Config
 audience: integrations
 content-type: reference
-source-git-commit: c6d5e597a02a1210507b0c6d84ab7d170e877eb1
+source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 2%
+source-wordcount: '374'
+ht-degree: 3%
 
 ---
 

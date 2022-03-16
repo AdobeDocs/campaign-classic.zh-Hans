@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: 隐私和同意
-description: 进一步了解隐私和同意
+title: 隐私和同意常见问题解答
+description: 隐私和同意常见问题解答
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: ht
-source-wordcount: '796'
-ht-degree: 100%
+source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 98%
 
 ---
 
