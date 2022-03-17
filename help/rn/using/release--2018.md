@@ -1,15 +1,16 @@
 ---
 product: campaign
-title: Campaign Classic2018版
-description: 了解有关Campaign Classic2018版本的更多信息
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+title: Campaign Classic 2018 版
+description: 详细了解 Campaign Classic 2018 版
+exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
+source-git-commit: 96f2ae67a5b47b80533e759713cf5b36baa8cf36
 workflow-type: tm+mt
 source-wordcount: '5414'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
-# 2018版{#release-2018}
+# 2018 版{#release-2018}
 
 ![](../../assets/v7-only.svg)
 
@@ -43,7 +44,7 @@ ht-degree: 7%
 
 **改进**
 
-* 修复了事务型消息的跟踪指标的计算过程中存在的问题。 (NEO-12529, NEO-12581)
+* 修复了事务型消息的跟踪指标的计算过程中存在的问题。 (NEO-12529、NEO-12581)
 * 修复了HTTPRequest API未等待所有回调完成的问题。 (NEO-12628)
 * 在优惠券临时表中添加了索引，以优化投放发送。 (NEO-12437)
 * 修复了分析日语(.JP)域的目标收件人的消息时的问题。 (NEO-12246)
@@ -321,7 +322,7 @@ NmsRecipient上的索引已重新工作。 这应会提高使用此表的查询�
   </tr> 
   <tr> 
    <td> 支持Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign现在与Windows Server 2016兼容。 请参阅 <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campaign Classic兼容性矩阵</a>.<br /> </td> 
+   <td> Adobe Campaign 现在与 Windows Server 2016 兼容。请参阅 <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campaign Classic兼容性矩阵</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -371,7 +372,7 @@ decryptPassword
 * 修复了在使用复杂工作流时可能发生的客户端冻结问题。 (NEO-11847)
 * 修复了在选择特定架构的元素后保存新投放时的Oracle错误(NEO-11682)。
 * 修复了查询包含带重音符的字段(FDA/Teradata)时的问题。 现在，外部帐户允许您更改用于与Teradata驱动程序通信的编码。 (NEO-11818).
-* 修复了在推送通知中以其他变量传递URL时可能导致移动设备应用程序收到格式错误或数据不正确的跟踪问题。 (NEO-11468, NEO-11960)
+* 修复了在推送通知中以其他变量传递URL时可能导致移动设备应用程序收到格式错误或数据不正确的跟踪问题。 (NEO-11468、NEO-11960)
 * 修复了在将值分布与1:N链接结合使用时导致显示问题的问题。 (NEO-11820)
 * 修复了批量加载无法在Teradata16上工作的问题。
 * 增加了Teradata上时间戳的缓冲大小，以避免15.10驱动程序出现绑定问题。
@@ -389,7 +390,7 @@ decryptPassword
 * 电子邮件存档日志已得到增强，这使得检查哪些电子邮件已成功发送或通过密送存档失败变得更加容易和清晰。 (NEO-10675)
 * 修复了导致在跟踪广播中显示负载平衡器IP而不是客户IP的问题。 (NEO-11295)
 * 修复了使用FDA连接到PostgreSQL数据库时LATIN1编码错误。 (NEO-11299)
-* 修复了在使用 **[!UICONTROL Prepare the personalization data with a workflow]** 投放选项。 (NEO-11047, NEO-11301)
+* 修复了在使用 **[!UICONTROL Prepare the personalization data with a workflow]** 投放选项。 (NEO-11047、NEO-11301)
 * 修复了导致投放属性被错误覆盖的随机问题。 (NEO-11015)
 * 修复了在 **[!UICONTROL Survey answers]** 工作流活动。 (NEO-11382)
 * 修复了在 **[!UICONTROL Survey answers]** 工作流活动。 (NEO-10816)
