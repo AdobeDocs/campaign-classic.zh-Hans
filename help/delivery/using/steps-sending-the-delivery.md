@@ -4,9 +4,9 @@ title: 配置并发送投放
 description: 了解如何配置和发送投放
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1556'
 ht-degree: 5%
 
 ---
@@ -33,13 +33,16 @@ ht-degree: 5%
    >
    >复制投放时，会重置参数。
 
-* **[!UICONTROL Send using multiple waves]**:有关更多信息，请参阅 [使用多个批次发送](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**:使用此选项可分批发送消息，而不是发送给整个受众。 配置批数及其比例。 [了解详情](#sending-using-multiple-waves)。
 
-* **[!UICONTROL Test SMTP delivery]**:利用此选项，可测试通过SMTP发送的投放。 投放会一直处理到与SMTP服务器的连接，但不会发送。
+* **[!UICONTROL Test SMTP delivery]**:使用此选项可测试通过SMTP的发送。 投放会一直处理到与SMTP服务器的连接，但不会发送：对于投放的每个收件人，Campaign会连接到SMTP提供程序服务器，执行SMTP RCPT TO命令，然后在SMTP DATA命令之前关闭连接。
 
    >[!NOTE]
    >
-   >安装使用中间源作为时，不建议使用此选项，否则不调用mta。 有关配置SMTP服务器的详细信息，请参阅 [到此部分](../../installation/using/configure-delivery-settings.md).
+   >* 在中间源中，不建议使用此选项。
+   >
+   >* 在 [此部分](../../installation/using/configure-delivery-settings.md).
+
 
 * **[!UICONTROL Email BCC]**:此选项允许您通过密送方式在外部系统上存储电子邮件，方法是只需向邮件目标添加密送电子邮件地址。 如需详细信息，请参阅[此部分](sending-messages.md#archiving-emails)。
 

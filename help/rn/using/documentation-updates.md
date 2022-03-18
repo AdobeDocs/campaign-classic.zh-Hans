@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: deb658fee9a668fd98aebfd1852252114ffb6edc
+source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
 workflow-type: tm+mt
-source-wordcount: '4903'
-ht-degree: 100%
+source-wordcount: '4938'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,16 @@ ht-degree: 100%
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
 ## 2022
+
+
+### 2022 年 3 月 {#mar-2022}
+
+添加了对 **[!UICONTROL Test SMTP delivery]** 选项。 [了解更多信息](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+
+发行说明概述部分已更新，以阐明Campaign Console升级准则。 [了解更多信息](../../rn/using/rn-overview.md)
+
+新的Campaign v7.2.2内部版本现已可用。 [了解更多信息](../../rn/using/latest-release.md)
+
 
 ### 2022 年 2 月 {#february-2022}
 
