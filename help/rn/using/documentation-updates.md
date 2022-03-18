@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 29e56d6bf2817eeb863cbe33f99233a8241f2bf5
+source-git-commit: 4fe661cf6a0fef8126fd24a68b1021760a5d0bfd
 workflow-type: tm+mt
-source-wordcount: '4931'
+source-wordcount: '4932'
 ht-degree: 97%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 97%
 
 添加了对 **[!UICONTROL Test SMTP delivery]** 选项。 [了解更多信息](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-发行说明概述部分已更新，以阐明Campaign Console升级准则。 [了解更多信息](../../rn/using/rn-overview.md)
+升级入门页面已更新，以阐明Campaign Console升级准则。 [了解更多信息](../../rn/using/rn-overview.md)
 
 新的Campaign v7.2.2内部版本现已可用。 [了解更多信息](../../rn/using/latest-release.md)
 
