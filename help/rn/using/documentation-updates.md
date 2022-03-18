@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
+source-git-commit: 29e56d6bf2817eeb863cbe33f99233a8241f2bf5
 workflow-type: tm+mt
-source-wordcount: '4938'
-ht-degree: 99%
+source-wordcount: '4931'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 99%
 
 ### 2021 年 12 月{#dec-2021}
 
-Campaign Classic v7 发行说明已重新组织以简化导航。[了解更多信息](rn-overview.md)
+Campaign Classicv7发行说明已重新组织以简化导航。 [了解更多信息](rn-overview.md)
 
 更新并改进了有关 Campaign 表单版本的文档。[了解更多信息](../../configuration/using/editing-forms.md)
 
@@ -124,7 +124,7 @@ CentOs 8 的生命周期已终止，现已在 Adobe Campaign Classic 中弃用�
 
 ### 2021 年 6 月 {#june-2021}
 
-**事务性消息传递**&#x200B;部分经过了重新组织，并通过新的“入门”部分进行了说明，包括[增强模式](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，从而帮助更好地了解该流程。[阅读更多](../../message-center/using/about-transactional-messaging.md)
+的 **事务型消息传递** 重新组织并阐明了章节，添加了新的入门章节，包括 [增强模式](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) 以便更好地理解过程。 [阅读更多](../../message-center/using/about-transactional-messaging.md)
 
 **随 21.1.3 版提供的文档更新**
 
@@ -156,7 +156,7 @@ LINE 渠道增强 - [了解详情](../../delivery/using/line-channel.md)
 
 ### 2021 年 3 月 {#march-2021}
 
-[开始使用短信部分](../../delivery/using/sms-channel.md)已重新组织和完善。您现在可以在专门章节中学习如何[配置短信渠道](../../delivery/using/sms-set-up.md)、[创建短信](../../delivery/using/sms-create.md)、[发送和跟踪短信](../../delivery/using/sms-send.md)。
+[开始使用短信部分](../../delivery/using/sms-channel.md)已重新组织和完善。您现在可以学习如何 [配置短信渠道](../../delivery/using/sms-set-up.md), [创建短信](../../delivery/using/sms-create.md), [发送和跟踪短信](../../delivery/using/sms-send.md) 在专述章节中。
 
 Campaign Classic 的“帮助和支持选项”页面已集成到核心文档中。[阅读更多](../../support.md)
 
@@ -285,7 +285,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 已在“获取 Adobe Campaign 版本”部分的“关于”框说明中添加了详细信息。[阅读更多](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
-已向“更新 Adobe Campaign Classic”部分中添加了执行内部版本升级的准则。阅读更多 [阅读更多](../../production/using/build-upgrade.md)
+已向“更新 Adobe Campaign Classic”部分中添加了执行内部版本升级的准则。[了解更多信息](../../production/using/build-upgrade.md)
 
 已向 Campaign 常见问题部分中添加了关于 Campaign 内部版本升级的常见问题解答。阅读更多 [阅读更多](../../platform/using/faq-build-upgrade.md)
 
@@ -344,7 +344,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 * 在查询中调用实例变量
 * 对总体应用分割百分比
 
-**[!UICONTROL AND-join]** 活动部分已使用有关其使用情况的更多信息以及关于变量的使用说明进行了扩充。[阅读更多](../../workflow/using/and-join.md)
+的 **[!UICONTROL AND-join]** 活动部分已使用有关其使用情况的其他信息以及有关变量使用的说明进行了扩充。 [了解更多信息](../../workflow/using/and-join.md)
 
 ### 2020 年 7 月 {#july-2020}
 
@@ -612,7 +612,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 已创建新的版本升级常见问题解答。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/build-upgrade-faq.html)
 
-[兼容性矩阵](compatibility-matrix.md)已更新。更新了支持的列表库系统，以及 Android/iOS 版本和相关 SDK。已存档 19.0 兼容性矩阵。
+[兼容性矩阵](compatibility-matrix.md)已更新。更新了支持的数据库系统列表、Android/iOS版本和相关SDK。 已存档 19.0 兼容性矩阵。
 
 “Campaign Classic 中已弃用和已删除的功能”页面已更新。[阅读更多](deprecated-features.md)
 
@@ -626,7 +626,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 预处理工作流选项的描述已更新，以反映产品更改。[阅读更多](../../workflow/using/data-loading--file-.md)
 
-Marketing Cloud 触发器技术说明已更新。[阅读更多](../../integrations/using/about-triggers.md)
+Experience Cloud触发器技术说明已更新。 [阅读更多](../../integrations/using/about-triggers.md)
 
 错误消息的列表已更新。[阅读更多](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
@@ -681,7 +681,7 @@ Campaign 硬件大小调整指南已更新。[阅读更多](https://helpx.adobe.
 
 ### 2019 年 1 月{#release-doc-16-01-2019}
 
-Marketing Cloud 触发器技术说明已更新。[阅读更多](../../integrations/using/about-triggers.md)
+Experience Cloud触发器技术说明已更新。 [阅读更多](../../integrations/using/about-triggers.md)
 
 在优惠批准部分添加了注释，以指定“已批准内容”提及指示内容批准流程已完成，无论是否已启用/批准所有优惠。[阅读更多](../../interaction/using/offer-catalog-overview.md)
 
