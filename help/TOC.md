@@ -7,9 +7,9 @@ user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2548'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -588,9 +588,9 @@ ht-degree: 99%
       + [创建 Facebook 应用程序](social/using/creating-a-facebook-application.md)
       + [在 Twitter 上配置发布](social/using/configuring-publishing-on-twitter.md)
    + 在 Twitter 上发布 {#publishing-on-facebook-twitter}
-      + [开始使用Twitter](social/using/overview.md)
+      + [Twitter 入门](social/using/overview.md)
       + [在 Twitter 上发布](social/using/publishing-on-twitter.md)
-   + 获取Facebook联系人 {#annexes}
+   + 获取 Facebook 联系人 {#annexes}
       + [Facebook 应用程序示例](social/using/examples-of-facebook-apps.md)
       + [跟踪](social/using/tracking.md)
 + 安装和配置指南 {#installing-campaign-classic}
