@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 4fe661cf6a0fef8126fd24a68b1021760a5d0bfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4932'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 97%
 
 ### 2022 年 3 月 {#mar-2022}
 
-添加了对 **[!UICONTROL Test SMTP delivery]** 选项。 [了解更多信息](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+添加了对 **[!UICONTROL Test SMTP delivery]** 选项的详细说明。[了解更多信息](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-升级入门页面已更新，以阐明Campaign Console升级准则。 [了解更多信息](../../rn/using/rn-overview.md)
+更新了升级入门页面，以阐明 Campaign 控制台升级准则。[了解更多信息](../../rn/using/rn-overview.md)
 
-新的Campaign v7.2.2内部版本现已可用。 [了解更多信息](../../rn/using/latest-release.md)
+现已推出新的 Campaign v7.2.2 内部版本。[了解更多信息](../../rn/using/latest-release.md)
 
 
 ### 2022 年 2 月 {#february-2022}
@@ -69,7 +69,7 @@ ht-degree: 97%
 
 ### 2021 年 12 月{#dec-2021}
 
-Campaign Classicv7发行说明已重新组织以简化导航。 [了解更多信息](rn-overview.md)
+Campaign Classic v7 发行说明已重新组织以简化导航。[了解更多信息](rn-overview.md)
 
 更新并改进了有关 Campaign 表单版本的文档。[了解更多信息](../../configuration/using/editing-forms.md)
 
@@ -124,7 +124,7 @@ CentOs 8 的生命周期已终止，现已在 Adobe Campaign Classic 中弃用�
 
 ### 2021 年 6 月 {#june-2021}
 
-的 **事务型消息传递** 重新组织并阐明了章节，添加了新的入门章节，包括 [增强模式](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) 以便更好地理解过程。 [阅读更多](../../message-center/using/about-transactional-messaging.md)
+**事务性消息传递**&#x200B;部分经过了重新组织，并通过新的“入门”部分进行了说明，包括[增强模式](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，从而帮助更好地了解该流程。[阅读更多](../../message-center/using/about-transactional-messaging.md)
 
 **随 21.1.3 版提供的文档更新**
 
@@ -156,7 +156,7 @@ LINE 渠道增强 - [了解详情](../../delivery/using/line-channel.md)
 
 ### 2021 年 3 月 {#march-2021}
 
-[开始使用短信部分](../../delivery/using/sms-channel.md)已重新组织和完善。您现在可以学习如何 [配置短信渠道](../../delivery/using/sms-set-up.md), [创建短信](../../delivery/using/sms-create.md), [发送和跟踪短信](../../delivery/using/sms-send.md) 在专述章节中。
+[短信入门部分](../../delivery/using/sms-channel.md)已重新组织和完善。您现在可以在专门章节中学习如何[配置短信渠道](../../delivery/using/sms-set-up.md)、[创建短信](../../delivery/using/sms-create.md)、[发送和跟踪短信](../../delivery/using/sms-send.md)。
 
 Campaign Classic 的“帮助和支持选项”页面已集成到核心文档中。[阅读更多](../../support.md)
 
@@ -344,7 +344,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 * 在查询中调用实例变量
 * 对总体应用分割百分比
 
-的 **[!UICONTROL AND-join]** 活动部分已使用有关其使用情况的其他信息以及有关变量使用的说明进行了扩充。 [了解更多信息](../../workflow/using/and-join.md)
+**[!UICONTROL AND-join]** 活动部分的内容中增加了有关其使用情况的更多信息和关于变量的使用说明。[了解更多信息](../../workflow/using/and-join.md)
 
 ### 2020 年 7 月 {#july-2020}
 
@@ -472,7 +472,7 @@ Hadoop FDA 连接器增强 - [阅读更多](../../installation/using/configure-f
 
 安装指南已更新并与最新版本的兼容性矩阵同步。新增了支持的系统。已弃用和不支持的系统的实例已被删除。[阅读更多](../../installation/using/general-architecture.md)
 
-更新了兼容性矩阵，纳入 Hadoop 3.0 和 Snowflake FDA 连接器。[阅读更多](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+更新了兼容性矩阵，纳入 Hadoop 3.0 和 Snowflake FDA 连接器。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 
 安装指南中添加了有关 IP 关联的最佳实践。[阅读更多](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -490,7 +490,7 @@ Hadoop FDA 连接器增强 - [阅读更多](../../installation/using/configure-f
 
 **Campaign Classic 本地和托管功能矩阵**&#x200B;页面已更新新的 FDA 连接器。[阅读更多](../../installation/using/capability-matrix.md)。
 
-**Campaign Classic 功能矩阵**&#x200B;页面已更新。[阅读更多](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+**Campaign Classic 功能矩阵**&#x200B;页面已更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 
 新的&#x200B;**[!UICONTROL Cleanup of Nmsaddress]**&#x200B;工作流记录在[此处](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)。
 
@@ -542,7 +542,7 @@ FDA 矩阵页面已移到[此处](../../installation/using/remote-database-acces
 
 **随版本提供的其他文档更新**
 
-Adobe Campaign 增强 MTA 文档现已可用。[阅读更多](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+Adobe Campaign 增强 MTA 文档现已可用。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)
 
 增加了新的部分，介绍如何对活动中保持“尽快启动”状态的工作流进行故障排除。[阅读更多](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -604,7 +604,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 **19.1 版本中包含的新功能**
 
-控制面板 - [阅读更多](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+控制面板 - [阅读更多](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
 
 审核跟踪 - [阅读更多](../../production/using/audit-trail.md)
 
@@ -612,7 +612,7 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 已创建新的版本升级常见问题解答。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/build-upgrade-faq.html)
 
-[兼容性矩阵](compatibility-matrix.md)已更新。更新了支持的数据库系统列表、Android/iOS版本和相关SDK。 已存档 19.0 兼容性矩阵。
+[兼容性矩阵](compatibility-matrix.md)已更新。更新了支持的数据库系统列表，Android/iOS 版本和相关 SDK。已存档 19.0 兼容性矩阵。
 
 “Campaign Classic 中已弃用和已删除的功能”页面已更新。[阅读更多](deprecated-features.md)
 
@@ -626,9 +626,9 @@ GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在
 
 预处理工作流选项的描述已更新，以反映产品更改。[阅读更多](../../workflow/using/data-loading--file-.md)
 
-Experience Cloud触发器技术说明已更新。 [阅读更多](../../integrations/using/about-triggers.md)
+Experience Cloud 触发器技术说明已更新。[阅读更多](../../integrations/using/about-triggers.md)
 
-错误消息的列表已更新。[阅读更多](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+错误消息的列表已更新。[阅读更多](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans)
 
 添加了有关事务消息的 SOAP 身份验证方法的更多信息。[阅读更多](../../message-center/using/event-description.md)
 
@@ -667,7 +667,7 @@ Apache 配置步骤已更新。[阅读更多](../../installation/using/integrati
 更新了有关共享受众集成的文档。
 [阅读更多](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-以下技术已更新：[SMS 连接器协议和设置](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)以及[序列自动生成](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+以下技术已更新：[SMS 连接器协议和设置](https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html)以及[序列自动生成](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
 
 技术工作流部分已更新。[阅读更多](../../workflow/using/about-technical-workflows.md)
 
@@ -681,7 +681,7 @@ Campaign 硬件大小调整指南已更新。[阅读更多](https://helpx.adobe.
 
 ### 2019 年 1 月{#release-doc-16-01-2019}
 
-Experience Cloud触发器技术说明已更新。 [阅读更多](../../integrations/using/about-triggers.md)
+Experience Cloud 触发器技术说明已更新。[阅读更多](../../integrations/using/about-triggers.md)
 
 在优惠批准部分添加了注释，以指定“已批准内容”提及指示内容批准流程已完成，无论是否已启用/批准所有优惠。[阅读更多](../../interaction/using/offer-catalog-overview.md)
 
