@@ -4,20 +4,20 @@ title: Chrome Firefox和Edge浏览器中的Campaign Web组件和版本100
 description: Chrome、Firefox和Edge浏览器中的Campaign Web组件和版本100
 hide: true
 hidefromtoc: true
-source-git-commit: 48c9aab4f7e5f1f204a003a4d53f8d975247b867
+source-git-commit: 8b790141342f85769aa6c9663c2e9a34b504e2c5
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
 # 3位数的浏览器版本对Campaign Web组件的影响 {#version-100}
 
-Google、Mozilla警告说，Chrome和Firefox可能会由于即将推出的3位数版本而破坏某些网站。
+Google和Mozilla警告，Chrome和Firefox由于即将推出3位版本，可能会损坏某些网站。
 
 Chrome v100已设置为在 **2022年3月29日**，和Firefox v100 on **2022年5月3日**.
 
-请注意，Microsoft Edge于2022年3月提前发布了版本100。
+Microsoft于2022年3月早些时候发布Edge v100。
 
 版本号从2位更改为3位，在访问未准备好进行此更改的网站时，可能会导致一些问题。 某些网页可能会在这些新浏览器版本中停止正确显示。
 
