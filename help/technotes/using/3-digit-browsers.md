@@ -4,31 +4,26 @@ title: Chrome和Firefox浏览器中的Campaign Web组件和版本100
 description: Chrome和Firefox浏览器中的Campaign Web组件和版本100
 hide: true
 hidefromtoc: true
-source-git-commit: 68049d1905524b644794799348bd6387b2afed0d
+source-git-commit: 88148b70de408de7571166e1869c088e10e87bae
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
-# Chrome和Firefox浏览器中的Campaign Web组件和版本100 {#version-100}
-
-## 什么 {#what-version-100}
+# Chrome和Firefox v100对Campaign Web组件的影响 {#version-100}
 
 Google和Mozilla警告，Chrome和Firefox由于即将推出3位版本，可能会损坏某些网站。
+
 版本号从2位更改为3位，在访问未准备好进行此更改的网站时，可能会导致一些问题。 某些网页可能会在这些新浏览器版本中停止正确显示。
-
-Mozilla和Google正在提前测试主要网站的兼容性。 如果站点在发布这些版本之前无法修复的问题，则两个站点都准备好备份计划，以确保站点不受影响。
-
-## 为什么 {#why-version-100}
-
-网站上的潜在问题或功能丢失源于浏览器发送到您正在访问的网站的用户代理字符串：用户代理是由浏览器发送到网站的字符串，用于告知网站您使用的浏览器和版本以及相关技术。 当您的浏览器向网站发送请求时，它会使用用户代理字符串标识自己，然后再检索您请求的内容。 用户代理字符串中的数据可帮助网站以适合您的浏览器的格式交付内容。 用户代理的版本会递增以匹配浏览器版本号。 从2位移到3位可能会导致问题。
-
-## When {#when-version-100}
 
 Chrome v100已设置为在 **2022年3月29日**，和Firefox v100 on **2022年5月3日**.
 
-## 其中 {#where-version-100}
+Mozilla和Google正在提前测试主要网站的兼容性。 如果站点在发布这些版本之前无法修复的问题，则两个站点都准备好备份计划，以确保站点不受影响。
+
+网站上的潜在问题或功能丢失源于浏览器发送到您正在访问的网站的用户代理字符串：用户代理是由浏览器发送到网站的字符串，用于告知网站您使用的浏览器和版本以及相关技术。 当您的浏览器向网站发送请求时，它会使用用户代理字符串标识自己，然后再检索您请求的内容。 用户代理字符串中的数据可帮助网站以适合您的浏览器的格式交付内容。 用户代理的版本会递增以匹配浏览器版本号。 从2位移到3位可能会导致问题。
+
+## 您是否受影响？{#version-100-impact}
 
 Adobe建议您测试Campaign Web应用程序（包括Web表单和调查以及电子邮件镜像页面），以确保它们仍然可以使用这些新浏览器版本正常工作。
 
@@ -36,11 +31,11 @@ Adobe建议您测试Campaign Web应用程序（包括Web表单和调查以及电
 
 您必须同时使用Firefox和Chrome、移动和桌面进行检查。
 
-## 如何 {#how-version-100}
+## 如何测试？{#version-100-test}
 
-在Chrome和Firefox的夜间版本中，您可以将浏览器配置为立即将版本报告为100，并更正您遇到的任何问题。
+在Chrome和Firefox中，您可以将浏览器配置为立即报告版本100，然后报告并更正您遇到的任何问题。
 
-### Firefox 100{#test-firefox-100}
+### 使用Firefox 100测试{#test-firefox-100}
 
 要使用Mozilla Firefox 100测试网页，您可以通过手动更改用户代理字符串来模拟即将在您的Web应用程序上发生的用户代理更改。
 
@@ -63,7 +58,7 @@ Adobe建议您测试Campaign Web应用程序（包括Web表单和调查以及电
 
 要将用户代理更改回默认值，只需返回 `about:config` 和搜索 `general.useragent.override` 设置。  出现后，单击垃圾桶图标以删除设置，然后重新启动浏览器。
 
-### Chrome 100{#test-chrome-100}
+### 使用Chrome 100进行测试{#test-chrome-100}
 
 要在您自己的Web应用程序上测试Google Chrome 100用户代理，可以通过以下步骤启用此测试：
 
