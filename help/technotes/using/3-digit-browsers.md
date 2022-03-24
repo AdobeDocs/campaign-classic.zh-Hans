@@ -4,9 +4,9 @@ title: Chrome和Firefox浏览器中的Campaign Web组件和版本100
 description: Chrome和Firefox浏览器中的Campaign Web组件和版本100
 hide: true
 hidefromtoc: true
-source-git-commit: 88148b70de408de7571166e1869c088e10e87bae
+source-git-commit: d238f0aa28289c69c91dc6a028792260708ed9f3
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Mozilla和Google正在提前测试主要网站的兼容性。 如果站点在发
 
 ## 您是否受影响？{#version-100-impact}
 
-Adobe建议您测试Campaign Web应用程序（包括Web表单和调查以及电子邮件镜像页面），以确保它们仍然可以使用这些新浏览器版本正常工作。
+Adobe建议您测试Campaign Web应用程序（包括Web窗体和调查），以确保它们仍然可以使用这些新浏览器版本正常工作。
 
 此建议适用于所有Web应用程序，特别是当您已包含JavaScript代码时。
 
