@@ -2,11 +2,10 @@
 product: campaign
 title: Chrome Firefox和Edge浏览器中的Campaign Web组件和版本100
 description: Chrome、Firefox和Edge浏览器中的Campaign Web组件和版本100
-hide: true
-hidefromtoc: true
-source-git-commit: 8b790141342f85769aa6c9663c2e9a34b504e2c5
+exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
+source-git-commit: b8329e24f07ec8b3dd89f655b47699f130266008
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -31,7 +30,7 @@ Adobe建议您测试Campaign Web应用程序（包括Web窗体和调查），以
 
 此建议适用于所有Web应用程序，特别是当您已包含JavaScript代码时。
 
-您必须同时检查所有浏览器、移动设备和桌面。
+您必须使用所有浏览器、移动设备和桌面进行检查。
 
 ## 如何测试？{#version-100-test}
 
