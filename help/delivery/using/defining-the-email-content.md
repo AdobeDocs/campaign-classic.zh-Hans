@@ -4,7 +4,7 @@ title: 在Adobe Campaign Classic中定义电子邮件内容
 description: 了解如何在使用Adobe Campaign Classic时定义电子邮件内容。
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: f5bd8c1806440b47225130070e166d90d99dcc75
 workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 1%
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 消息的内容在投放配置窗口的下半部分中定义。
 
-默认情况下，根据收件人首选项以HTML或文本格式发送消息。 我们建议以这两种格式创建内容，以确保消息能够在任何邮件系统中正确显示。 有关更多信息，请参阅 [选择消息格式](#selecting-message-formats).
+默认情况下，根据收件人首选项以HTML或文本格式发送消息。 我们建议以这两种格式创建内容，以确保消息能够在任何邮件系统中正确显示。 有关更多信息，请参阅 [选择消息格式](email-parameters.md#selecting-message-formats).
 
 * 要导入HTML内容，请使用 **[!UICONTROL Open]** 按钮。 您还可以将源代码直接粘贴到 **[!UICONTROL Source]** 子选项卡。
 
