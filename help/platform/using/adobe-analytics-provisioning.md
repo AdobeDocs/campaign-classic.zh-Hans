@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Adobe Analytics connector预配
 description: 了解有关Adobe Analytics连接器配置的更多信息
@@ -7,7 +6,7 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+source-git-commit: cb434747d2bee5d24dcaa1141100c269eea313ad
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 2%
