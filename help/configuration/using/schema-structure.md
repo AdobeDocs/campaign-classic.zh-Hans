@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1562'
 ht-degree: 1%
 
 ---
@@ -175,12 +175,10 @@ ht-degree: 1%
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
-   <td> <strong>Teradata</strong><br /> </td> 
-   <td> <strong>DB2</strong><br /> </td> 
    <td> <strong>MS SQL</strong><br /> </td> 
+   <td> <strong>Adobe Campaign</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> 字符串<br /> </td> 
@@ -215,7 +213,7 @@ ht-degree: 1%
    <td> 斯马林特<br /> </td> 
   </tr> 
   <tr> 
-   <td> 双精度<br /> </td> 
+   <td> 双线<br /> </td> 
    <td> 双精度<br /> </td> 
    <td> 浮动<br /> </td> 
    <td> 浮动<br /> </td> 
@@ -247,7 +245,7 @@ ht-degree: 1%
    <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
-   <td> 时间<br /> </td> 
+   <td> 每位用户<br /> </td> 
    <td> 时间<br /> </td> 
    <td> 浮动<br /> </td> 
    <td> 时间<br /> </td> 
@@ -486,7 +484,6 @@ XPath是一种语法，用于在XML文档的树中查找节点。
 >
 >* **location/@city** 无效；请使用 **`[location/@city]`**
 >* **`[@email]`** 和 **@email** 等于
-
 >
 
 

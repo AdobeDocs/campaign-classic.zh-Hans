@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -112,3 +112,11 @@ ht-degree: 0%
 * **我无法在Campaign Standard中编辑用户档案、受众或登陆页面。 这是什么意思？**
 
    从Campaign v7同步的资源在Campaign Standard中处于只读模式，以确保数据一致性。 如果您需要编辑其中一个元素，可以在Campaign v7中执行该操作，然后在Campaign Standard中复制所做的更改。
+
+* **在 [ACS] 用户档案投放日志复制工作流。 我该怎么办？**
+
+   如果同时使用Campaign Classic和Campaign Standard实例通过跟踪的URL发送电子邮件，则在同步过程中可能会出现重复的URL tagId问题。 在本例中， **[ACS] 用户档案投放日志复制** (newRcpDeliveryLogReplication)工作流仍失败，并出现以下错误：
+
+   ```PGS-220000 PostgreSQL error: ERROR: duplicate key value violates unique constraint "nmstrackingurl_tagid" DETAIL: Key (stagid) = (1c7bdec2) already exists.```
+
+   要解决此问题并防止再次发生该问题，请更新 **更新跟踪URL** (writerTrackingUrls)活动，并将“ACS”前缀添加到@tagId源表达式。

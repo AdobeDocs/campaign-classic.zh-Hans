@@ -4,9 +4,9 @@ title: ACS Connector入门
 description: ACS Connector原则和数据周期
 feature: ACS Connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '2038'
 ht-degree: 0%
 
 ---
@@ -147,6 +147,11 @@ ACS Connector有两种实施类型。 这两项操作始终由Adobe Campaign咨�
 * **[!UICONTROL `[ACS] New replication`]** （新复制）：此增量工作流是可用于复制自定义表的示例。 请参阅 [高级实施](#advanced-implementation).
 * **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification):此增量工作流将投放消息从Campaign Standard复制到Campaign v7。
 * **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication):此增量工作流将投放ID、电子邮件广泛日志和电子邮件跟踪日志从Campaign Standard复制到Campaign v7。 它仅考虑从Campaign Standard向Campaign v7的nms:recipients表所包含的用户档案发送的投放。
+
+   >[!NOTE]
+   >
+   > 如果同时使用Campaign Classic和Campaign Standard实例通过跟踪的URL发送电子邮件，则在同步过程中可能会出现重复的URL tagId问题。 要防止出现这种情况，请更新 **更新跟踪URL** (writerTrackingUrls)活动，并将“ACS”前缀添加到@tagId源表达式。
+
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication):此增量工作流将投放ID、电子邮件广泛日志和电子邮件跟踪日志从Campaign Standard复制到Campaign v7。 它仅考虑从Campaign Standard向Campaign v7特定表（定义nms:recipients除外）所包含用户档案发送的投放。
 
 ### 默认收件人字段 {#default-recipient-fields}
@@ -175,7 +180,7 @@ ACS Connector有两种实施类型。 这两项操作始终由Adobe Campaign咨�
   </tr> 
   <tr> 
    <td> 电子邮件<br /> </td> 
-   <td> @email<br /> </td> 
+   <td> @电子邮件<br /> </td> 
   </tr> 
   <tr> 
    <td> 姓氏<br /> </td> 
