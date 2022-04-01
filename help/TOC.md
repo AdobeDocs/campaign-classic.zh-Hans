@@ -7,9 +7,9 @@ user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: dd7217bd508d718d84c417fcdf7610a5582ef204
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -830,7 +830,7 @@ ht-degree: 99%
    + [硬件大小调整建议](technotes/using/hardware-sizing.md)
    + 升级和兼容性{#technote-migration}
       + [技术说明](technotes/using/technote.md)
-      + [3位数浏览器版本的影响](technotes/using/3-digit-browsers.md)
+      + [3 位数浏览器版本影响](technotes/using/3-digit-browsers.md)
       + [Campaign 配置更新](technotes/using/acc-config-updates.md)
       + [IMS 更新](technotes/using/ims-updates.md)
       + [TLS 1.0 和 1.1 支持生命周期终止](technotes/using/eol-tls-support.md)
