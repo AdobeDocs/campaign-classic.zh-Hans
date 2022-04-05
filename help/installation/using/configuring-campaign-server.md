@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 这些程序仅限于 **内部部署**/**混合** 部署和需要管理权限。
 
-对于 **托管** 部署时，服务器端设置只能通过Adobe进行配置。 但是，某些设置可以在  [营销活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)，如IP管允许列表理或URL权限。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans)。
+对于 **托管** 部署时，服务器端设置只能通过Adobe进行配置。 但是，某些设置可以在 [营销活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)，如IP管允许列表理或URL权限。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans)。
 
 有关更多信息，请参阅以下章节：
 
@@ -159,7 +159,7 @@ Adobe Campaign使用以下JSP页：
 * /nl/jsp/**logon.jsp**:通过Web访问报告和部署客户端控制台，
 * /nl/jsp/**s.jsp** :使用病毒式营销（赞助和社交网络）。
 
-用于移动设备应用程序渠道的JSSP如下所示：
+用于Mobile应用程序渠道的JSSP如下所示：
 
 * nms/mobile/1/registerIOS.jssp
 * nms/mobile/1/registerAndroid.jssp

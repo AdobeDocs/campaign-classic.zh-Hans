@@ -4,10 +4,10 @@ title: 全局报告
 description: 全局报告
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2295'
+ht-degree: 4%
 
 ---
 
@@ -48,6 +48,14 @@ ht-degree: 0%
 ![](assets/s_ncs_user_report_toolbar.png)
 
 您可以通过更改时间刻度来配置显示的值：1小时查看、3小时查看、24小时查看等。 单击 **[!UICONTROL Refresh]** 以确认您的选择。
+
+>[!NOTE]
+>
+>如果您的实例托管在AWS上，则还可以使用Campaign Classic监控每小时发送的投放数量 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). 要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
+>
+>所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
+>
+>请注意，您的实例必须升级为 [Gold Standard](../../rn/using/gold-standard.md) 构建或 [最新GA内部版本(21.1.3)](../../rn/using/latest-release.md). 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。
 
 ## 用户活动 {#user-activities}
 
