@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '407'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 **[!UICONTROL IMS Server URL]**
 
-在营销活动中 **Adobe Marketing Cloud** 外部帐户，检查 **[!UICONTROL IMS Server URL]** 是 [adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/) 或 [ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/). 确保暂存实例和生产实例指向相同的IMS生产端点。
+在营销活动中 **Adobe Marketing Cloud** 外部帐户，检查 **[!UICONTROL IMS Server URL]** 是 `adobeid-na1.services.adobe.com` 或 `ims-na1.adobelogin.com`. 确保暂存实例和生产实例指向相同的IMS生产端点。
 
 **关联掩码**
 

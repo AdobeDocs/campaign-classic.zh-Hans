@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '995'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 1%
    如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 * 步骤 **6**, **9** 和 **10** 没必要。
-* 步骤期间 **12** 和 **13**，则需要在连接URL中指示8080端口（因为控制台直接与Tomcat通信，而不是通过Web服务器）。 URL将变为 [http://console.campaign.net:8080](http://console.campaign.net). 步骤期间 **13**，选择 **[!UICONTROL Issue towards Mid-sourcing]** 包以及要安装的包。
+* 步骤期间 **12** 和 **13**，则需要在连接URL中指示8080端口（因为控制台直接与Tomcat通信，而不是通过Web服务器）。 URL将变为 `http://console.campaign.net:8080`. 步骤期间 **13**，选择 **[!UICONTROL Issue towards Mid-sourcing]** 包以及要安装的包。
 
    ![](assets/s_ncs_install_midsourcing02.png)
 

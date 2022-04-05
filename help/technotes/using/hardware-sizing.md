@@ -3,7 +3,7 @@ product: campaign
 title: Campaign Classicv7的硬件大小调整建议
 description: Campaign Classicv7的硬件大小调整建议
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
-source-git-commit: ee296e0ce25570d1fe62238e505f978df17c1f24
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
@@ -87,7 +87,7 @@ Adobe为您提供了可在部署环境中中继到Adobe Campaign服务器的URL�
 | 活动收件人 | 500万 |
 | 电子邮件 | 420万/月 |
 | 直邮 | 100万/月 |
-| 移动短信 | 10万/月 |
+| Mobile短信 | 10万/月 |
 | 每日电子邮件流量达到峰值 | 500 |
 
 对于这些卷，一对Adobe Campaign应用程序服务器系统为Adobe Campaign客户端用户和工作流执行提供了所有功能。 对于500万活动收件人和此电子邮件卷，应用程序服务器工作负载不是CPU或I/O密集型工作；大部分压力都在数据库上。
@@ -136,7 +136,7 @@ Adobe Campaign Web服务器显示在安全区域中。
 | 活动收件人 | 两千万 |
 | 电子邮件 | 4200万/月 |
 | 直邮 | 每月1000万 |
-| 移动短信 | 100万/月 |
+| Mobile短信 | 100万/月 |
 | 每日电子邮件流量达到峰值 | 500万 |
 
 ### Web和应用程序服务器
@@ -172,7 +172,7 @@ Web服务器托管Campaign Web应用程序，支持系统中1000万活动收件�
 | 活动收件人 | 5千万 |
 | 电子邮件 | 1.08亿/月 |
 | 直邮 | 每月2500万 |
-| 移动短信 | 2,500万/月 |
+| Mobile短信 | 2,500万/月 |
 | 事务性消息 | 2,500万/月 |
 | 每日电子邮件流量达到峰值 | 250万 |
 
@@ -252,7 +252,7 @@ Web服务器托管Campaign Web应用程序，支持系统中1000万活动收件�
 为了数据库安全，必须维护任何建议的RAID配置，以确保存储设备丢失不会导致数据丢失。
 
 * **I/O性能**
-必须遵循数据库存储的建议IOPS等级。 诸如Amazon EC2之类的云服务可能无法提供所需的性能，必须仔细评估。 例如，Amazon EC2预配置SSD卷当前每卷的IOPS为20,000。 在 [Amazon文档](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html)，因此4卷RAID配置的额定值为80,000 IOPS ，这可能不够。
+必须遵循数据库存储的建议IOPS等级。 诸如Amazon EC2之类的云服务可能无法提供所需的性能，必须仔细评估。 例如，Amazon EC2预配置SSD卷当前每卷的IOPS为20,000。 在 [Amazon文档](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html))，则4卷RAID配置的额定值为80,000 IOPS，这可能不够。
 
 Adobe建议在将系统投入生产之前，对Adobe Campaign的任何虚拟化部署进行性能测试。
 

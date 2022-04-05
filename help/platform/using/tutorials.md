@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 70%
+source-wordcount: '366'
+ht-degree: 69%
 
 ---
 
@@ -21,13 +21,12 @@ ht-degree: 70%
 
 参阅我们直观的逐步指南，开始使用 Adobe Campaign。
 
-* [使用 Adobe Experience Manager 编辑电子邮件内容](https://helpx.adobe.com/campaign/kb/acc-aem.html)：了解 Adobe Campaign 和 Experience Manager 集成的基本知识。
 * [隐私管理](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html):了解Adobe Campaign Classic在使用我们的服务时为帮助您遵守隐私规定提供的服务。
 * [在电子邮件中集成动态内容](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)：了解 Campaign Classic 和 Target Standard 集成的基本知识。
 * [管理可投放性](../../delivery/using/about-deliverability.md)：了解与可投放性相关的概念和最佳实践，以及 Adobe Campaign Classic 提供的工具，从而最佳地发送您的投放内容。
 * [投放最佳实践](../../delivery/using/delivery-best-practices.md)：了解有关使用 Adobe Campaign Classic 设计投放内容并发送内容的最佳实践。
 * [执行构建版升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)：本指南会显示执行 Campaign Classic 构建版升级的重要步骤和最佳实践。
-* [安全配置检查列表](https://helpx.adobe.com/campaign/kb/acc-security.html)：了解有关检查安全配置和强化内部部署的核心元素
+* [安全配置检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)：了解有关检查安全配置和强化内部部署的核心元素
 
 通过查看以下用例和示例，进一步了解 Adobe Campaign：
 

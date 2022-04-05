@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 6b7ec6b39a79e9b1e6e2bba3d5193765094cf4fd
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '7969'
+source-wordcount: '7961'
 ht-degree: 5%
 
 ---
@@ -708,7 +708,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 以下是 **javaScript** 节点。 这是JavaScript解释器的配置。
 
-有关其他信息，请参阅 [报表文档](../../reporting/using/actions-on-reports.md#memory-allocation) 这个 [技术说明](https://helpx.adobe.com/campaign/kb/out-of-memory-error-in-js-code-activity-in-workflows.html).
+有关其他信息，请参阅 [报表文档](../../reporting/using/actions-on-reports.md#memory-allocation).
 
 <table> 
  <thead> 
@@ -1028,11 +1028,11 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 例如，要授权访问域business.com的所有URL，我们可以定义两条记录：
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.*”
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.&#42;&quot;
 
-和
+和 
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*”
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 以下是默认配置：
 

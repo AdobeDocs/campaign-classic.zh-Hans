@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '517'
 ht-degree: 97%
 
 ---
@@ -25,7 +25,7 @@ Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间�
 
 [单击此处了解有关 Campaign 数据模型的更多信息](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html)。
 
-[本文列出了](https://helpx.adobe.com/cn/campaign/kb/acc-data-model-best-practices.html)最佳实践。
+[本文列出了](../../configuration/using/data-model-best-practices.md)最佳实践。
 
 ## 如何使用 Campaign 模式？ {#how-to-work-with-campaign-schemas-}
 

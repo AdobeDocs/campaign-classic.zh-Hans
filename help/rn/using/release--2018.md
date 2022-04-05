@@ -3,10 +3,10 @@ product: campaign
 title: Campaign Classic 2018 版
 description: 详细了解 Campaign Classic 2018 版
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: 96f2ae67a5b47b80533e759713cf5b36baa8cf36
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '5414'
-ht-degree: 8%
+source-wordcount: '5385'
+ht-degree: 7%
 
 ---
 
@@ -122,7 +122,7 @@ ht-degree: 8%
      <li> <p>在iOS中跟踪静默通知 </p> </li> 
      <li> <p>在iOS中实施有关注册调用的反馈</p> </li> 
      <li> <p>提高iOS交付准备速度</p> </li> 
-    </ul> <p>作为遭Google弃用的GCM的一部分，Android V2连接器现在只能连接到FCM服务器。</p><p>有关更多信息，请参阅<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">详细文档</a>。本文详细介绍了向FCM升级的手动 <a href="https://helpx.adobe.com/cn/campaign/kb/migrate-to-fcm.html">文章</a>. </p> </td> 
+    </ul> <p>作为遭Google弃用的GCM的一部分，Android V2连接器现在只能连接到FCM服务器。</p><p>有关更多信息，请参阅<a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">详细文档</a>。</p> </td> 
   </tr> 
   <tr> 
    <td> SQL数据管理活动<br /> </td> 
@@ -151,7 +151,7 @@ ht-degree: 8%
 * 的 **日期计算公式** 现在，使用直邮投放模板创建单个投放时，投放属性中的选项可用。 (NEO-9792)
 * 对Cookie跟踪和Web应用程序的域名管理进行了改进。 有关更多信息，请参阅下面的“技术演变”部分。
 * 在安全性和性能方面，已改进Adobe Marketing Cloud在投放或登陆页面中共享资产的导入。
-* 移动渠道外部帐户中新增了一个复选框，用于在日志文件中启用详细的SMPP跟踪，以便从Adobe Campaign界面直接访问此输出。
+* 在Mobile渠道外部帐户中新增了一个复选框，用于在日志文件中启用详细的SMPP跟踪，这使此输出可直接从Adobe Campaign界面访问。
 * 在广播日志中，每小时的最大连接数和最大消息数之间存在区别。 当达到限制时，就可以知道为什么吞吐量有限。 以前，同一消息（“满足配额”）适用于这两种情况。
 * 现在，您可以指定在从池获取连接时要执行的SQL脚本。 此脚本可用于设置默认架构。 此脚本将在查询分段后应用。 (NEO-11256)
 * Campaign SDK不再存储用户ID以遵守PII法规。 数据现在以哈希形式存储。
@@ -213,7 +213,7 @@ NmsRecipient上的索引已重新工作。 这应会提高使用此表的查询�
 * 修复了报表中的问题，即无论选择哪个聚合运算符，图表都会始终计算值的总和。 (NEO-10913)
 * 由于“request.scheme”函数已被弃用，因此已从JSAPI文档中删除该函数。 (NEO-10828)
 * 修复了某些具有特定时区配置的用户无法登录Adobe Campaign的问题。 (NEO-10712)
-* 修复了使用扩展通用SMPP连接器设置移动渠道外部帐户时发生的问题：如果您为接收机指定了不同的参数，则发射机将错误地使用这些参数而不是自己的参数。
+* 修复了使用扩展通用SMPP连接器设置Mobile渠道外部帐户时出现的问题：如果您为接收机指定了不同的参数，则发射机将错误地使用这些参数而不是自己的参数。
 * 修复了在为压力规则设置频率时导致计划投放失败的问题，因为在首次仲裁后会不断重新计算投放。 (NEO-10016)
 * 修复了在应用程序池回收过程（在nlsrvmod.dll库中）期间导致IIS Web服务器崩溃的问题。 (NEO-10862)
 * 修复了可能阻止在 **配置文件和Target** 屏幕。 (NEO-8228)
@@ -466,7 +466,7 @@ decryptPassword
 **改进**
 
 * **LINE渠道 — 架构增强**:与Adobe Campaign中的所有其他渠道一样，现在所有部署类型都支持LINE渠道：托管、混合和内部部署。
-* **序列自动生成**:ID生成机制已得到增强，可增加具有大量对象的Campaign实例的有效期。 有关更多信息，请参阅 [技术说明](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html).
+* **序列自动生成**:ID生成机制已得到增强，可增加具有大量对象的Campaign实例的有效期。
 
 **其他变更**
 

@@ -4,10 +4,10 @@ title: 数据模型最佳实践
 description: 了解如何使用Campaign Classic数据模型
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4007'
-ht-degree: 1%
+source-wordcount: '3988'
+ht-degree: 0%
 
 ---
 
@@ -104,7 +104,7 @@ Adobe Campaign资源具有三个标识符，并且可以添加其他标识符。
 
 | 标识符 | 说明 | 最佳实践 |
 |--- |--- |--- |
-| Id | <ul><li>ID是Adobe Campaign表的物理主键。 对于现成表，它是从序列中生成的32位数</li><li>此标识符通常对特定Adobe Campaign实例是唯一的。 </li><li>自动生成的ID可在架构定义中可见。 搜索 *autopk=&quot;true&quot;* 属性。</li></ul> | <ul><li>自动生成的标识符不应用作工作流或包定义中的引用。</li><li>不应假定ID将始终为递增数。</li><li>现成表中的id是32位数字，不应更改此类型。 此编号取自同名部分中涵盖的“序列”。</li></ul> |
+| ID | <ul><li>ID是Adobe Campaign表的物理主键。 对于现成表，它是从序列中生成的32位数</li><li>此标识符通常对特定Adobe Campaign实例是唯一的。 </li><li>自动生成的ID可在架构定义中可见。 搜索 *autopk=&quot;true&quot;* 属性。</li></ul> | <ul><li>自动生成的标识符不应用作工作流或包定义中的引用。</li><li>不应假定ID将始终为递增数。</li><li>现成表中的id是32位数字，不应更改此类型。 此编号取自同名部分中涵盖的“序列”。</li></ul> |
 | 名称（或内部名称） | <ul><li>此信息是表中记录的唯一标识符。 此值可手动更新，通常使用生成的名称。</li><li>此标识符在部署到其他Adobe Campaign实例时会保留其值，它不应为空。</li></ul> | <ul><li>如果要将Adobe Campaign生成的对象从环境部署到另一个环境，请重命名该记录名称。</li><li>当对象具有命名空间属性(*模式* 例如)，此通用命名空间将用于所有创建的自定义对象。 不应使用某些保留的命名空间： *nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*.</li><li>当对象没有任何命名空间(*工作流* 或 *投放* 例如)，此命名空间概念将作为内部名称对象的前缀添加： *namespaceMyObjectName*.</li><li>请勿使用特殊字符，如空格“”、半列“：”或连字符“ — ”。 所有这些字符都将替换为下划线“_”（允许的字符）。 例如，“abc-def”和“abc:def”将存储为“abc_def”并相互覆盖。</li></ul> |
 | 标签 | <ul><li>标签是Adobe Campaign中对象或记录的业务标识符。</li><li>此对象允许使用空格和特殊字符。</li><li>它不保证记录的唯一性。</li></ul> | <ul><li>建议确定对象标签的结构。</li><li>这是用于为Adobe Campaign用户标识记录或对象的最易用的解决方案。</li></ul> |
 
@@ -148,9 +148,7 @@ Adobe Campaign主键是所有现成表的自动生成id，对于自定义表，�
 
 默认情况下，自定义序列的值介于+1,000到+2.1BB之间。 从技术上讲，通过启用负ID，可以获得4BB的完整范围。 这应当谨慎使用，在从负数跨越到正数时，将丢失一个ID:在生成的SQL查询中，记录0通常被Adobe Campaign忽略。
 
-**相关主题：**
-* 有关 **序列自动生成** 功能，请参阅 [本文档](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html).
-* 欲知序列耗尽的更多信息，请关注 [此视频](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+欲知序列耗尽的更多信息，请关注 [此视频](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## 索引 {#indexes}
 
@@ -327,5 +325,3 @@ Adobe Campaign依赖第三方数据库引擎。 根据提供商的不同，为�
 * 的 *产品* 和 *存储* 表格较小：不到一万。
 * 产品标签和引用已放置在 *产品* 表。
 * 的 *交易记录项* 表中仅具有指向 *产品* 表格，这是数字的。
-
-<!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->

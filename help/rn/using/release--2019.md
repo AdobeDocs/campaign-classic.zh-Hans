@@ -3,9 +3,9 @@ product: campaign
 title: Campaign Classic 2019 版
 description: 详细了解 Campaign Classic 2019 版
 exl-id: 8a36a542-e095-4208-b624-e59845592863
-source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4825'
 ht-degree: 24%
 
 ---
@@ -277,7 +277,7 @@ _2020年9月15日_
 * 修复了数据库连接上的导致 Web 服务器由于数据库编码问题而不断重新启动的回归问题。这可能会造成过度使用。(NEO-23264)
 * 修复了由于非托管数据源而导致数据库清理工作流可能失败的问题。(NEO-23160, NEO-23364)
 * 清理工作流现在按 100 批而不是逐批清除过期列表。
-* 在切换到[新序列 ID 机制](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)后，所有更新收件人表的 Web 应用程序都会在升级后期间重新发布。
+* 在切换到新序列 ID 机制后，所有更新收件人表的 Web 应用程序都会在升级后期间重新发布。
 * 修复了在HTML内容标记外部存在Javascript代码时无法发送电子邮件的问题。 (NEO-18628)
 * 修复了阻止跟踪工作流更新事务型消息跟踪指示器的问题。 (NEO-17770)
 * 改进了数据库更新向导的性能，以减少SQL语句的数量，从而优化响应时间。
@@ -401,7 +401,7 @@ _2019年5月30日_
 
 **护栏、稳健性和可扩展性方面的改进**
 
-* 生命周期 — XtkNewId序列使用优化：最耗费的表已从xtkNewId序列移至专用序列。 [了解更多信息](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* 生命周期 — XtkNewId序列使用优化：最耗费的表已从xtkNewId序列移至专用序列。
 * 通过HTTP v2进行FDA:通过HTTP的FDA协议广泛用于混合部署，特别是用于broadLog检索和交付准备。 增强了稳健性，以避免在检索或推送数据时出现网络问题和可能出现的错误。 这要求连接两端的内部版本是最新的，否则仍将使用旧协议。
 * 跟踪工作流：跟踪工作流的稳健性已得到增强。 修复了与跟踪日志插入/更新和URL跟踪自定义相关的几个问题。 此外，跟踪工作流现在会检测可能导致错误的跟踪日志问题并停止工作流。 这些问题现已被丢弃且未处理。
 * 清理工作流：清理工作流已得到改进，以避免潜在错误和停止。 这可优化数据库大小和性能。

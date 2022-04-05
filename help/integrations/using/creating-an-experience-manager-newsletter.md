@@ -5,9 +5,9 @@ description: 创建Experience Manager新闻稿
 audience: integrations
 content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '275'
 ht-degree: 1%
 
 ---
@@ -17,8 +17,6 @@ ht-degree: 1%
 ![](../../assets/common.svg)
 
 此集成可用于例如在Adobe Experience Manager中创建新闻稿，然后在Adobe Campaign中作为电子邮件促销活动的一部分使用。
-
-有关如何使用此集成的更详细示例，请参阅此 [分步指南](https://helpx.adobe.com/campaign/kb/acc-aem.html).
 
 **来自Adobe Experience Manager:**
 

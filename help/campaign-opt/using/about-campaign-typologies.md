@@ -4,10 +4,10 @@ title: 关于活动类型
 description: 关于活动类型
 feature: Typology Rules
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 18%
+source-wordcount: '468'
+ht-degree: 19%
 
 ---
 
@@ -78,8 +78,6 @@ Campaign Optimization是Adobe Campaign模块，可让您控制、过滤和监控
 还提供其他Campaign操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
 
 **相关主题**
-
-* [将自动业务规则应用于任何渠道上的投放](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
 
 * [分类和疲劳管理入门](pressure-rules.md)
 

@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
-source-git-commit: c228f827e91f25ee3a837f7fe6549ae4e5714ba3
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '6619'
+source-wordcount: '6601'
 ht-degree: 73%
 
 ---
@@ -278,7 +278,7 @@ _2020 年 7 月 22 日_
 * iOS HTTP2 连接器已得到改进（第三方更新和错误管理）。(NEO-25904, NEO-25903)
 * 更新了 catalina.properties 中的 jarToSkip 列表，以删除对不再使用的 jar 文件（iOS 通知）的引用。
 * 修复了在升级后阻止投放准备的问题。
-* 在切换到[新序列 ID 机制](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)后，所有更新收件人表的 Web 应用程序都会在升级后期间重新发布。
+* 在切换到新序列 ID 机制后，所有更新收件人表的 Web 应用程序都会在升级后期间重新发布。
 * 修复了投放内容中的潜在 XSS 漏洞。(NEO-17987, NEO-26073)
 
 ![](assets/do-not-localize/cp-icon.png) **新的控制面板 6 月版本**，包含活动用户档案监测、子域投放能力审核和 GPG 密钥管理。[了解详情](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)。
@@ -529,7 +529,7 @@ _2020 年 12 月 23 日_
 
 ### ![](assets/do-not-localize/red_2.png) 20.1.3 版 - 版本 9124{#release-20-1-3-build-9124}
 
-_2020年5月6日_
+_2020 年 5 月 6 日_
 
 * 修复了&#x200B;**文件传输**&#x200B;活动的问题，该问题导致基于 SFTP 密钥的身份验证无法在 Debian 9 上工作。(NEO-23183)
 
@@ -607,7 +607,7 @@ _2020年2月17日_
 
 * 在Linux上，nlserver服务启动现在使用系统单元，而不是/etc/init.d/nlserver6脚本。 安装20.1程序包时，将自动执行到新启动方案的迁移。 /etc/init.d/nlserver6仍然提供，但是为了与nlserver服务（启动、重新启动、停止等）进行交互，我们建议您直接使用systemctl命令。
 
-* 最耗时的自定义表已从 **xtkNewId** 序列。 [了解更多信息](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* 最耗时的自定义表已从 **xtkNewId** 序列。
 
 * 改进了查询性能，这些性能可能会受到不必要的数据库连接的影响。
 

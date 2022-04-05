@@ -4,9 +4,9 @@ title: 面向数据的 API
 description: 面向数据的 API
 feature: API
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ XML文档存储在数据库的MEMO类型字段中。
 您必须熟悉Adobe Campaign数据模型，才能在脚本中处理数据库的字段。
 
 有关数据模型的演示，请参阅 [Adobe Campaign数据模型描述](../../configuration/using/data-model-description.md).
-
-要生成其结构，请参阅本文： [如何生成数据模型或数据字典](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
 
 ## 查询和编写器 {#query-and-writer}
 

@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '968'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Adobe Campaign包含Apache Tomcat，它通过HTTP（和SOAP）作为应用程序
 在这种情况下：
 
 * 默认监听端口为8080。 要更改它，请参阅 [此部分](../../installation/using/configure-tomcat.md).
-* 然后，客户端控制台使用URL进行连接，例如 [https:// `<computer>`:8080](https://myserver.adobe.com:8080).
+* 然后，客户端控制台使用URL进行连接，例如 ```https:// `<computer>`:8080```.
 
 但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开对网络外部控制台的访问时，我们建议使用专用Web服务器作为HTTP流量的主入口点。
 

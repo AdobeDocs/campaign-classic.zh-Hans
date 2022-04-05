@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4961'
+source-wordcount: '4892'
 ht-degree: 99%
 
 ---
@@ -297,8 +297,6 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 “Campaign 报告高级功能”部分已得到改进，以详细说明如何在自定义报告中使用 URL 参数和变量。[阅读更多](../../reporting/using/advanced-functionalities.md)
 
 报告属性页面已重组并进行了丰富，以促进配置。[阅读更多](../../reporting/using/properties-of-the-report.md)
-
-已使用有关如何从旧版二进制协议迁移到基于 HTTP/2 的 APNs 提供程序 API 的详细信息来创建新的技术说明。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/migrate-to-apns-http2.html)
 
 ### 2020 年 9 月 {#september-2020}
 
@@ -668,13 +666,11 @@ Apache 配置步骤已更新。[阅读更多](../../installation/using/integrati
 更新了有关共享受众集成的文档。
 [阅读更多](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-以下技术已更新：[SMS 连接器协议和设置](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)以及[序列自动生成](https://helpx.adobe.com/cn/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)。
+以下技术说明已更新： [SMS连接器协议和设置](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
 技术工作流部分已更新。[阅读更多](../../workflow/using/about-technical-workflows.md)
 
 Campaign 域名设置程序已得到改进和更新。
-
-Android 应用程序从 Google Cloud Messaging (GCM) 到 Firebase Cloud Messaging (FCM) 的迁移过程已更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/migrate-to-fcm.html)
 
 Campaign 硬件大小调整指南已更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)
 

@@ -4,9 +4,9 @@ title: Web 服务调用
 description: Web 服务调用
 feature: API
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
 
 WSDL文件是从URL生成的：
 
-[https://localhost/nl/jsp/schemawsdl.jsp?schema=xtk:queryDef](https://my_serveur/nl/jsp/schemawsdl.jsp?schema=xtk:queryDef)
+`https://localhost/nl/jsp/schemawsdl.jsp?schema=xtk:queryDef`
 
 WSDL描述首先定义用于形成消息的类型，这些类型在“端口”中关联，通过“绑定”与协议连接，从而形成Web服务。
 

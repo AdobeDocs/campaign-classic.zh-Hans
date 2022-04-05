@@ -6,10 +6,10 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 399e9468-bf70-425d-af0b-72c29636b513
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 8%
+source-wordcount: '96'
+ht-degree: 10%
 
 ---
 
@@ -44,7 +44,3 @@ ht-degree: 8%
 1. 单击 **[!UICONTROL Preview]** 查看过滤器的结果。
 
    ![](assets/offer_filter_create_006.png)
-
-**相关主题**
-
-* [将常用查询另存为可编辑的预定义过滤器](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Savefrequentlyusedqueriesaseditablepredefinedfilters)

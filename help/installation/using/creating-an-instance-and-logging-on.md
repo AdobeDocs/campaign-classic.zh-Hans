@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '587'
 ht-degree: 5%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 5%
 
 1. 通过URL指定与Adobe Campaign应用程序服务器的连接。 使用DNS或计算机的别名，或您的IP地址。
 
-   例如，您可以使用 [`https://<machine>.<domain>.com`](https://myserver.adobe.com) 键入URL。
+   例如，您可以使用 `https://<machine>.<domain>.com` 键入URL。
 
    >[!CAUTION]
    >
@@ -53,7 +53,7 @@ ht-degree: 5%
 
    ![](assets/s_ncs_install_create_instance.png)
 
-   添加到域名的实例名称不得超过40个字符。 这样，您就可以限制“消息ID”标头的大小，并防止消息被视为垃圾邮件，尤其是SpamAssassin等工具。
+   添加到域名的实例名称不得超过40个字符。 这样，您就可以限制“消息ID”标头的大小，并防止消息被视为垃圾信息，尤其是SpamAssassin等工具。
 
 1. 在 **[!UICONTROL DNS masks]** 字段，输入 **DNS掩码列表** 实例附加到的ID。 Adobe Campaign服务器使用HTTP请求中显示的主机名来确定要访问的实例。
 
@@ -61,7 +61,7 @@ ht-degree: 5%
 
    您可以定义一个值列表，其中各个值之间用逗号分隔。
 
-   ? 和*字符可用作通配符来替换一个或多个字符（DNS、端口等）。 例如， **演示*** 值将与“https://demo”一起使用，因为它与“https://demo:8080”甚至“https://demo2”一起使用。
+   此 ? 和 &#42; 字符可用作通配符来替换一个或多个字符（DNS、端口等）。 例如， **演示&#42;** 值将与“https://demo”一起使用，因为它与“https://demo:8080”甚至“https://demo2”一起使用。
 
    使用的名称必须在DNS中定义。 您还可以通知DNS名称与 **c:/windows/system32/drivers/etc/hosts** 文件 **/etc/hosts** 文件。 因此，您必须修改连接设置以使用此DNS名称，才能连接到您选择的实例。
 

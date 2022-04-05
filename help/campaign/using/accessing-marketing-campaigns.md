@@ -4,9 +4,9 @@ title: 访问营销活动
 description: 访问营销活动
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1247'
 ht-degree: 2%
 
 ---
@@ -149,7 +149,7 @@ Campaign允许您管理由各种营销活动组成的一组项目。 每个营�
 
 >[!NOTE]
 >
->要访问营销活动配置并对其进行更改，请单击 **[!UICONTROL Advanced campaign parameters...]** 链接 **[!UICONTROL Edit]** 选项卡。 有关在营销活动级别设置参数以便投放自动继承值的详细信息，请参阅 [我们的技术](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
+>要访问营销活动配置并对其进行更改，请单击 **[!UICONTROL Advanced campaign parameters...]** 链接 **[!UICONTROL Edit]** 选项卡。
 
 ## 使用Web界面 {#using-the-web-interface-}
 
@@ -176,7 +176,7 @@ Campaign允许您管理由各种营销活动组成的一组项目。 每个营�
 | 营销活动 | 取消营销活动 |
 | 投放 | 批准投放内容和目标<br/>提交投放内容<br/>确认投放<br/>暂停和停止投放 |
 | Web应用程序 | 创建Web应用程序<br/>编辑应用程序内容和属性<br/>将应用程序内容另存为模板<br/>发布应用程序 |
-| 选件 | 批准选件内容和资格<br/>禁用在线选件 |
+| 优惠 | 批准选件内容和资格<br/>禁用在线选件 |
 | 任务 | 完成任务<br/>取消任务 |
 | 营销资源 | 批准资源<br/>锁定和解锁资源 |
 | Campaign包 | 提交资源包以供审批<br/>批准或拒绝资源包<br/>取消资源包 |
