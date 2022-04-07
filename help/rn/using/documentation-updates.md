@@ -31,8 +31,8 @@ ht-degree: 99%
 * 更新了升级入门页面，以阐明 Campaign 控制台升级准则。[了解更多信息](../../rn/using/rn-overview.md)
 
 * 现已推出新的 Campaign v7.2.2 内部版本。[了解更多信息](../../rn/using/latest-release.md)
-* 添加了与ACS连接器相关的故障诊断信息。 [了解更多信息](../../integrations/using/troubleshooting-the-acs-connector.md)
-* 已在 [已弃用和已删除的功能](../../rn/using/deprecated-features.md#dbe-eol) 页面。
+* 添加了与 ACS 连接器相关的故障排除信息。[了解更多信息](../../integrations/using/troubleshooting-the-acs-connector.md)
+* 生命周期已终止的旧版 PostgreSQL 已添加至[已弃用和删除的功能](../../rn/using/deprecated-features.md#dbe-eol)页面。
 
 ### 2022 年 2 月 {#february-2022}
 
