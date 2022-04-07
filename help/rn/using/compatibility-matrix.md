@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '721'
 ht-degree: 100%
 
@@ -149,7 +149,7 @@ ht-degree: 100%
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016年</p>
+<p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 和 SP2</p>
 <p><strong>重要提示：</strong>当 Campaign 服务器在 Linux 上运行时，不支持将 Microsoft SQL Server 作为主数据库。<a href="../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers">了解详情</a>。</p>
@@ -256,10 +256,10 @@ ht-degree: 100%
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019年</p>
-<p>2017年</p>
-<p>2016年</p>
-<p>2014年</p>
+<p>2019</p>
+<p>2017</p>
+<p>2016</p>
+<p>2014</p>
 <p>2012 SP1 和 SP2</p>
 </td>
 <td>最低版本为 7.0</td>
@@ -329,8 +329,8 @@ ht-degree: 100%
 <td>Microsoft Windows Server</td>
 <td>
 <p>2019（从 7.2.1 版本开始）</p>
-<p>2016年</p>
-<p>2012年</p>
+<p>2016</p>
+<p>2012</p>
 </td>
 </tr>
 <tr>
