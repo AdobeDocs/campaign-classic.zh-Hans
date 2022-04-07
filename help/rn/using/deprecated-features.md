@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1730'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -215,7 +215,7 @@ Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。
 
 * DB2 UDB 9.5、9.7。通过联合数据访问 (FDA) 支持更新版本的 DB2。[了解详情](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Oracle 9i、10G R2。通过联合数据访问 (FDA) 支持更新版本的 Oracle。[了解详情](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
-* 最高9.6的PostgreSQL版本已结束其生命周期。 通过联合数据访问(FDA)支持更新版本的PostgreSQL。 [了解详情](https://www.postgresql.org/support/versioning)
+* 最高9.6的PostgreSQL版本已结束其生命周期。 较新版本的 PostgreSQL 由联合数据访问 (FDA) 进行支持。[了解详情](https://www.postgresql.org/support/versioning)
 * MSSQL 2000、2005、2008 R2。通过联合数据访问 (FDA) 支持更新版本的 SQL Server。[了解详情](https://support.microsoft.com/en-us/lifecycle/search/1044)
 * MySQL 5.1。通过联合数据访问 (FDA) 支持更新版本的 MySQL。[了解详情](https://en.wikipedia.org/wiki/InfiniDB)
 * InfiniDB 的生命周期已终止。[了解详情](https://www.mysql.com/support)
@@ -235,7 +235,7 @@ Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。
 * MySQL 5.1
 * DB2 UDB 9.7
 
-最高9.6的PostgreSQL版本已结束其生命周期。 因此，Adobe Campaign不支持这些功能。
+9.6 及以下版本的 PostgreSQL 的生命周期已结束。因此，Adobe Campaign 不支持这些版本。
 
 ### SMS 连接器 {#sms-eol}
 
