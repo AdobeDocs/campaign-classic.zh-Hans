@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 62f19239ac3b3ea909e26d6424338213b4d91479
+source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 50%
+source-wordcount: '235'
+ht-degree: 52%
 
 ---
 
@@ -83,6 +83,6 @@ ht-degree: 50%
 | [发行说明](rn/using/latest-release.md) | [错误消息列表](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans) |
 | [操作说明视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans) | [Campaign 数据模型](configuration/using/about-data-model.md) |
 | [兼容性矩阵](rn/using/compatibility-matrix.md) | [Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html) |
-| [升级入门](rn/using/rn-overview.md) | [跟踪指南](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/about-message-tracking.html) |
+| [升级入门](rn/using/rn-overview.md) | [跟踪指南](delivery/using/about-message-tracking.md) |
 | [已弃用的功能](rn/using/deprecated-features.md) | [安全性和隐私检查列表](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html) |
 | [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans) | [监控准则](production/using/monitoring-guidelines.md) |
