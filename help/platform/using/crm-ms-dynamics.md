@@ -4,16 +4,16 @@ title: Campaign - Microsoft Dynamics CRM连接器
 description: 了解如何连接Campaign和Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 连接Campaign和Microsoft Dynamics 365{#connect-to-msdyn}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在本页中，您将学习如何将Campaign Classic连接到 **Microsoft Dynamics CRM 365**.
 

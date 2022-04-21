@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 56%
@@ -15,7 +15,7 @@ ht-degree: 56%
 
 # CRM 连接器{#crm-connectors}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## CRM连接器入门 {#about-crm-connectors}
 

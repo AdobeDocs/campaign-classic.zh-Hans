@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 87%
@@ -15,7 +15,7 @@ ht-degree: 87%
 
 # 编辑用户档案{#editing-a-profile}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 要查看与用户档案相关的信息，请在用户档案列表中单击其名称。
 

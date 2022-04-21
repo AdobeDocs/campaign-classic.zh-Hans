@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 86%
@@ -15,7 +15,7 @@ ht-degree: 86%
 
 # 更新数据{#updating-data}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 可以手动或自动更新已链接至收件人用户档案的数据。
 

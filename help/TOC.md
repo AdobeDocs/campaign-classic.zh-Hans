@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: dd7217bd508d718d84c417fcdf7610a5582ef204
-workflow-type: ht
-source-wordcount: '2552'
-ht-degree: 100%
+source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
+workflow-type: tm+mt
+source-wordcount: '2571'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,11 @@ ht-degree: 100%
    + 隐私 {#privacy}
       + [隐私和同意](platform/using/privacy-and-recommendations.md)
       + [隐私管理](platform/using/privacy-management.md)
-      + [隐私请求](platform/using/privacy-requests.md)
+      + 隐私请求 {#privacy-requests}
+         + [关于隐私请求](platform/using/privacy-requests.md)
+         + [创建和管理隐私请求](platform/using/privacy-requests-ui.md)
+         + [自动隐私请求流程](platform/using/privacy-requests-api.md)
+         + [选择禁用个人信息销售](platform/using/privacy-requests-ccpa.md)
    + 用户档案管理 {#profile-management}
       + [关于用户档案](platform/using/about-profiles.md)
       + [编辑用户档案](platform/using/editing-a-profile.md)
