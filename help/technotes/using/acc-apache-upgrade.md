@@ -4,9 +4,9 @@ title: 技术说明 — Adobe Campaign - Apache版本安全更新
 description: Adobe Campaign - Apache版本安全更新
 hide: true
 hidefromtoc: true
-source-git-commit: 086d03cf0ceb5c2db7ded0c2bedb1b0514257d8a
+source-git-commit: 41aa16e3ac6f150b9a048a22729b4cc4b9ccc10a
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,17 @@ ht-degree: 0%
 
 Campaign Classic可与第三方工具配合使用，并且会定期更新兼容性，以仅实施受支持的版本，并从最新的修复和改进中受益。
 
-Adobe Campaign包含Apache Tomcat，它通过HTTP作为应用程序服务器中的入口点，并与Apache Web服务器集成。 Apache Software Foundation已发布Apache HTTP Server 2.4.53。此版本解决了漏洞 — CVE-2021-44790和CVE-2021-44224 — 其中一个漏洞可能允许远程攻击者控制受影响的系统。 在 [Apache 2.4.53公告](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}。
+Adobe Campaign包含Apache Tomcat，它通过HTTP作为应用程序服务器中的入口点，并与Apache Web服务器集成。 Apache Software Foundation已发布Apache HTTP Server 2.4.53。此版本解决了可能允许远程攻击者控制受影响系统的漏洞。 在 [Apache 2.4.53公告](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}。
 
-Adobe Campaign团队将通过 **2022年5月31日** 以缓解此Apache漏洞并使实例环境更安全。 此升级适用于在易受攻击的Apache HHTP Server版本上运行的所有Managed Services客户。 如果您受到影响，Adobe已与您联系，以告知您此升级。
+Adobe Campaign团队将通过 **2022年5月31日** 以缓解此Apache漏洞并使实例环境更安全。 此升级适用于在易受攻击的Apache HTTP Server版本上运行的所有Managed Services客户。 如果您受到影响，Adobe已与您联系，以告知您此升级。
 
 此升级预计会在正常工作时间以外自动运行，以便您继续使用Campaign服务而不会造成任何中断。
 
-在我们升级您的生产实例之前，我们的团队将首先升级您的非生产实例。 由于这是自动升级过程，因此您不需要执行任何操作。 但是，如果您遇到任何问题，请联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+在我们升级您的生产实例之前，我们的团队将首先升级您的非生产实例。 由于这是Adobe拥有的自动升级过程，因此不需要您的一方执行任何操作。 但是，如果您遇到任何问题，请联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
-由于升级需要重新启动Apache，因此我们预计在下面提到的时段内，停机时间不会超过10分钟。
+
+>[!NOTE]
+>此升级需要重新启动Apache Web服务器。 在下面所述的时段内，停机时间不会超过10分钟。
 
 ## 常见问题解答 {#apache-faq}
 
@@ -34,7 +36,7 @@ Adobe Campaign团队将通过 **2022年5月31日** 以缓解此Apache漏洞并�
 
 * **哪些客户是安全升级的目标？**
 
-   所有在旧版Apache上实施Campaign环境的客户，都将被升级到适用的最新版Apache。
+   所有使用在旧版Apache上实施的Campaign环境的客户都将升级到适用的最新Apache版本。
 
 * **预计停机时间是多少？**
 
