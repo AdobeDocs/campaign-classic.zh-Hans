@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '2216'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Adobe解压缩旧版数据中心：Campaign Classic实例必须传输到Public C
 
 * **迁移会影响到到外部帐户的连接吗？**
 
-   是的。 例如，第三方集成（短信提供商）应将新的Adobe Campaign应用程序服务器IP地址添加到允许列表。
+   是. 例如，第三方集成（短信提供商）应将新的Adobe Campaign应用程序服务器IP地址添加到允许列表。
 
 * **迁移是否会影响使用Adobe Analytics连接器与Genesis的连接？ 在Adobe Analytics端将促销活动IP地允许列表址添加到促销活动？**
 
@@ -145,7 +145,7 @@ Adobe解压缩旧版数据中心：Campaign Classic实例必须传输到Public C
 
 * **对于未附加到IMS集成组织ID的客户，该怎么办？**
 
-   将为没有IMS的客户提供一个：IMS组织ID将附加到其实例。
+   将为没有IMS的客户提供一个：组织ID将附加到其实例。
 
 * **多品牌配置是否会受迁移的影响？**
 

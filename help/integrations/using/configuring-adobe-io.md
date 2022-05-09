@@ -8,10 +8,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 3%
+source-wordcount: '693'
+ht-degree: 4%
 
 ---
 
@@ -32,12 +32,12 @@ ht-degree: 3%
 
 在启动此实施之前，请检查您具有：
 
-* 有效 **组织标识符**:Identity Management系统(IMS)组织标识符是Adobe Experience Cloud中的唯一标识符，例如用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **开发人员访问** 到您的组织。 IMS组织的系统管理员需要遵循 **将开发人员添加到单个产品配置文件** 过程详细 [本页](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) 为开发人员提供 `Analytics - {tenantID}` 与触发器关联的Adobe Analytics产品的产品配置文件。
+* 有效 **组织标识符**:组织ID是Adobe Experience Cloud中的唯一标识符，例如用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans)
+* a **开发人员访问** 到您的组织。 组织的系统管理员需要遵循 **将开发人员添加到单个产品配置文件** 过程详细 [本页](https://helpx.adobe.com/enterprise/using/manage-developers.html) 为开发人员提供 `Analytics - {tenantID}` 与触发器关联的Adobe Analytics产品的产品配置文件。
 
 ## 步骤1:创建/更新Adobe I/O项目 {#creating-adobe-io-project}
 
-1. 访问 [!DNL Adobe I/O] 并使用IMS组织的开发人员访问权限登录。
+1. 访问 [!DNL Adobe I/O] 并使用贵组织的开发人员访问权限登录。
 
    >[!NOTE]
    >

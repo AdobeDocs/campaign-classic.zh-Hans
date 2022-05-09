@@ -5,10 +5,10 @@ description: '管道故障排除 '
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 0%
+source-wordcount: '705'
+ht-degree: 1%
 
 ---
 
@@ -30,11 +30,11 @@ ht-degree: 0%
 
 **管道化失败，出现“主体必须是有效的组织或客户”**
 
-组织标识符配置无效。
+组织ID配置无效。
 
-1. 检查IMSOrgId是否在serverConf.xml中设置。
-1. 在实例配置文件中查找可覆盖默认值的空IMSOrgId。 如果是，请将其删除。
-1. 检查IMSOrgId是否与Experience Cloud中的客户IMSOrgId匹配。
+1. 检查是否在serverConf.xml中设置了组织ID(ImsOrgId)。
+1. 检查实例配置文件中的空组织ID是否可以覆盖默认组织ID。 如果是，请将其删除。
+1. 检查组织ID是否正确。 要查找您的组织ID，请参阅 [本页](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}
 
 **管道化失败，出现“无效密钥”**
 

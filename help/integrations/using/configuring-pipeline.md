@@ -5,10 +5,10 @@ description: 了解如何配置管道
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b8f74c290106d57630c5d486c04b8424132e3297
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 1%
+source-wordcount: '907'
+ht-degree: 2%
 
 ---
 
@@ -34,8 +34,8 @@ ht-degree: 1%
 您还需要：
 
 * Adobe I/O项目身份验证
-* 有效的IMSOrgID ，即添加了Adobe Analytics的Experience Cloud客户的标识符
-* 开发人员访问IMS组织
+* 有效的组织ID — 要查找您的组织ID，请参阅 [本页](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}
+* 对您组织的开发人员访问权限
 * 触发器配置在Adobe Analytics中完成
 
 ## 身份验证和配置文件 {#authentication-configuration}
@@ -128,10 +128,10 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 | Option | 说明 |
 |:-:|:-:|
 | appName（旧版） | 在上传公钥的旧版Oath应用程序中注册的OAuth应用程序的应用程序ID。 有关更多信息，请参阅此[页面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
-| authGatewayEndpoint（旧版） | 用于获取网关令牌的URL。 默认： ```https://api.omniture.com``` |
+| authGatewayEndpoint（旧版） | 用于获取网关令牌的URL。 默认: ```https://api.omniture.com``` |
 | authPrivateKey（旧版） | 私钥是Legacy Oath应用程序中上传的公共部分，AES使用XtkKey选项进行加密： ```cryptString("PRIVATE_KEY")``` |
 | disableAuth（旧版） | 禁用身份验证时，仅某些开发管道端点会接受在不使用网关令牌的情况下进行连接。 |
-| discoverPipelineEndpoint | 用于查找要用于此租户的Pipeline Services端点的URL。 默认： ```https://producer-pipeline-pnw.adobe.net``` |
+| discoverPipelineEndpoint | 用于查找要用于此租户的Pipeline Services端点的URL。 默认: ```https://producer-pipeline-pnw.adobe.net``` |
 | dumpStatePeriodSec | 中内部状态进程的两个转储之间的时间段 ```var/INSTANCE/pipelined.json.``` <br> 内部状态也可在以下位置按需访问： ```http://INSTANCE:7781/pipelined/status``` |
 | forcedPipelineEndpoint | 禁用对PipelineServicesEndpoint的检测以强制执行 |
 | monitorServerPort | 流水线进程将监听此端口，以在此处提供内部状态进程： ```http://INSTANCE:PORT/pipelined/status```. <br>默认为7781 |

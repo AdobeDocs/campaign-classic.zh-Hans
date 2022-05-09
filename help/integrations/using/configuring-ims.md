@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 2%
 
 要使用与IMS的集成，请执行以下操作：
 
-* 您必须拥有Adobe Experience Cloud组织和IMS ID(在首次连接到Adobe Experience Cloud时提供)。
-* 您必须在Experience Cloud中添加用户。 有关详细信息，请参见[此页面](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+* 您必须具有Adobe Experience Cloud组织名称和ID。 要查找您的组织ID，请参阅 [本页](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}。
+* 您必须在Experience Cloud中添加用户。 有关更多信息，请参阅 [本页](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}。
 
 >[!NOTE]
 >
->确保用户已链接到将与Adobe Campaign同步的Adobe Experience Cloud组。 请参阅 [配置外部帐户](#configuring-the-external-account).
+>确保用户已链接到将与Adobe Campaign同步的Adobe Experience Cloud组。 [了解详情](#configuring-the-external-account)。
 
 ## 更新控制台 {#updating-the-console}
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 ## 安装包 {#installing-the-package}
 
-您必须安装 **[!UICONTROL Integration with the Adobe Experience Cloud]** 包。 安装集成包与安装标准包相同，详情请参阅 [本页](../../installation/using/installing-campaign-standard-packages.md).
+您必须安装内置 **[!UICONTROL Integration with the Adobe Experience Cloud]** 包。 安装集成包与安装标准包相同，详情请参阅 [本页](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/ims_6.png)
 
@@ -58,8 +58,8 @@ ht-degree: 2%
 
    的 **[!UICONTROL Callback server]** 地址必须在 **https**. 此字段对应于您的Adobe Campaign实例的访问URL。
 
-* IMS组织ID:此信息可在Experience Cloud(在 **[!UICONTROL Administration > Experience Cloud Details]** )，并在您首次连接到Adobe Experience Cloud时提供。
-* 关联掩码：利用此字段，可定义语法，以允许将Enterprise Dashboard中的配置名称与Adobe Campaign中的组同步。 如果您使用语法“Campaign - tenant_id -(.*)”，则在Adobe Campaign中创建的安全组将链接到Enterprise Dashboard中的配置名称“Campaign - tenant_id - internal_name”。
+* 组织ID:要查找您的组织ID，请参阅 [本页](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html){_blank}。
+* 关联掩码：利用此字段，可定义语法，以允许将Enterprise Dashboard中的配置名称与Adobe Campaign中的组同步。 如果您使用语法“Campaign - tenant_id -(.&#42;)”，则在Adobe Campaign中创建的安全组将链接到Enterprise Dashboard中的配置名称“Campaign - tenant_id - internal_name”。
 
    >[!CAUTION]
    >

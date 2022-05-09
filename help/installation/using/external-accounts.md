@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 7%
+source-wordcount: '1627'
+ht-degree: 8%
 
 ---
 
@@ -243,7 +243,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 * **[!UICONTROL IMS organization ID]**
 
-   您的IMS组织的ID。 要查找您的组织ID，请参阅 [本页](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) (**在哪里可以找到我的IMS组织ID?**)。
+   您组织的ID。 要查找您的组织ID，请参阅 [本页](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}。
 
 * **[!UICONTROL Association mask]**
 
