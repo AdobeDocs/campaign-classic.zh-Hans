@@ -4,9 +4,9 @@ title: 设计 Web 应用程序
 description: 设计 Web 应用程序
 feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 0ad183ae68faf41ac0b14bb37639a4b1da9d8776
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '277'
 ht-degree: 4%
 
 ---
@@ -19,9 +19,7 @@ Web应用程序是按照与 [Web窗体](about-web-forms.md).
 
 >[!CAUTION]
 >
->使用 **[!UICONTROL Preview]** 子选项卡，以检查web应用程序设计期间的错误。
->
->在Web应用程序发布之前，更改不会向最终用户显示。
+>使用 **[!UICONTROL Preview]** 子选项卡，以检查web应用程序设计期间的错误。 请注意，用于预览Web应用程序的用户档案测试需要位于 **[!UICONTROL Access rights]** 对于 **[!UICONTROL Web application agent]** 运算符。 </br>在Web应用程序发布之前，更改不会向最终用户显示。
 
 ## 在Web应用程序中插入图表 {#inserting-charts-in-a-web-application}
 
