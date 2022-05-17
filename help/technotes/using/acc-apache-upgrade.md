@@ -5,7 +5,7 @@ description: Adobe Campaign - Apache版本安全更新
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 7ee1cc501342aa59d1752259bf7228ea47a8cccb
+source-git-commit: e0f4cc33ea715d013596afa12894cc8e5023154b
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Adobe Campaign团队将通过 **2022年6月15日** 以缓解此Apache漏洞并�
 
 * **客户需要运行哪些验证？**
 
-   此安全升级不需要任何特定测试。 如果发现任何问题，请联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+   此安全升级不需要任何特定测试。 如果发现任何问题，请联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 * **我是否可以请求更改计划安全升级插槽的日期/时间？**
