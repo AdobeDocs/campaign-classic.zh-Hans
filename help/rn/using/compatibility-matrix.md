@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 100%
+source-wordcount: '733'
+ht-degree: 96%
 
 ---
 
@@ -227,7 +227,7 @@ ht-degree: 100%
 </tbody>
 </table>
 
-此外，**混合**&#x200B;和&#x200B;**内部部署**&#x200B;环境还可以将 Campaign 与以下连接：
+此外， **混合** 和 **内部部署** 环境还可以将Campaign与以下外部数据库系统连接。 这些系统 **不兼容** 与Campaign **Managed Services** （托管）环境。
 
 <table>
 <tbody>
@@ -420,13 +420,7 @@ ht-degree: 100%
 <p>最新版本</p>
 </td>
 </tr>
-<tr>
-<td>
-<p>Microsoft Internet Explorer</p>
-</td>
-<td>
-<p>11</p>
-</td>
+
 </tr>
 </tbody>
 </table>
