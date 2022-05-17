@@ -5,9 +5,9 @@ description: Adobe Campaign - Apache版本安全更新
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: e0f4cc33ea715d013596afa12894cc8e5023154b
+source-git-commit: a3eae4e253f66f5a651ffe0458f60b1f8bdf2258
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 # Adobe Campaign - Apache版本安全更新 {#apache-update}
 
 >[!CAUTION]
->本文适用于：Campaign Classicv7 Managed Services客户、Campaign v8客户和Campaign Standard客户。
+>本文适用于： **Campaign Classicv7 Managed Services** 客户， **Campaign v8** 客户和 **Campaign Standard** 客户。
 
 Adobe Campaign可与第三方工具配合使用，并且会定期更新兼容性，以仅实施受支持的版本，并从最新的修复和改进中受益。
 
@@ -25,7 +25,7 @@ Adobe Campaign团队将通过 **2022年6月15日** 以缓解此Apache漏洞并�
 
 此升级预计会在正常工作时间以外自动运行，以便您继续使用Campaign服务而不会造成任何中断。
 
-在我们升级您的生产实例之前，我们的团队将首先升级您的非生产实例。 由于这是Adobe拥有的自动升级过程，因此不需要您的一方执行任何操作。 但是，如果您遇到任何问题，请联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+非生产实例将首先通过Adobe进行升级，然后升级生产实例。 由于这是Adobe拥有的自动升级过程，因此不需要您的一方执行任何操作。 但是，如果您遇到任何问题，请联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 >[!NOTE]
