@@ -5,9 +5,9 @@ description: Adobe Campaign - Apache版本安全更新
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: ef34decdb33cdfd095c437abd5d1eb029f8a0648
+source-git-commit: 7ee1cc501342aa59d1752259bf7228ea47a8cccb
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,6 @@ Adobe Campaign团队将通过 **2022年6月15日** 以缓解此Apache漏洞并�
 
    当前的Apache版本易受攻击，并且存在潜在的安全威胁。 必须将您的Campaign实例升级到最新适用的Apache版本，以解决安全风险。
 
-
 * **哪些客户是安全升级的目标？**
 
    所有使用在旧版Apache上实施的Campaign环境的客户都将升级到适用的最新Apache版本。
@@ -49,6 +48,10 @@ Adobe Campaign团队将通过 **2022年6月15日** 以缓解此Apache漏洞并�
 * **客户是否需要执行任何操作才能进行此安全升级？**
 
    由于安全升级将自动运行，因此无需执行任何操作。
+
+* **维护时段内运行的营销活动/工作流有何影响？**
+
+   在维护窗口期间，工作流和邮件服务将同时停止，并且计划活动将不会运行。 在停机期间，任何正在进行的活动或正在运行的进程都将停止，直到服务器重新启动为止。 活动完成并重新启动服务器后，所有服务都将恢复。
 
 * **客户需要运行哪些验证？**
 
