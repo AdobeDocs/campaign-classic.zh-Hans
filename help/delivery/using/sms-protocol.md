@@ -4,7 +4,7 @@ title: SMS 连接器协议和设置
 description: 进一步了解SMS连接器及其配置方法
 feature: SMS
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 2c145829517a6961d502cc3e7b904547f8c71602
 workflow-type: tm+mt
 source-wordcount: '8460'
 ht-degree: 0%
@@ -410,7 +410,7 @@ Adobe Campaign Classic扩展SMPP连接器可以控制每个MTA子项的连接数
 
 对于Adobe Campaign Classic，可能有不同数量的接收机和发射机连接：
 
-* **发送器连接= MTA子连接数x MTA子进程数x MTA子进程数x MTA数（如果设置了自动回复）+ MTA子连接数**
+* **发送器连接= MTA子连接数* MTA子进程数* MTA数 </br> （如果设置了自动回复）+ MTA子连接数**
 
 如上所示，如果启用了自动回复，Adobe Campaign Classic SMS进程将打开更多发送器连接。 这些额外的连接用于发送自动回复。
 
