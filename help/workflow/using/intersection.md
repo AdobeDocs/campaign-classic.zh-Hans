@@ -4,14 +4,20 @@ title: 交集
 description: 交集
 feature: Workflows, Targeting Activity
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: eb7a8cd2c9ff476a830dcc6e8e7c29ccd72c24f0
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # 交集{#intersection}
+
+>[!CONTEXTUALHELP]
+>id="ac_workflow_intersection"
+>title="交集活动"
+>abstract="“交集”类型活动从接收目标的交集创建目标。 利用交集，可仅提取所有集客活动结果共有的群体。 将创建目标，并收到所有结果：因此，在执行交集之前，必须先完成所有之前的活动。"
+
 
 ![](../../assets/common.svg)
 
