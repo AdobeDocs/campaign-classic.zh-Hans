@@ -4,7 +4,7 @@ title: 创建协作活动
 description: 了解如何创建协作活动
 feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 创建协作活动{#creating-a-collaborative-campaign-intro}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 中央实体通过 **分布式营销** 营销活动模板。 请参见[此页面](about-distributed-marketing.md#collaborative-campaign)。
 

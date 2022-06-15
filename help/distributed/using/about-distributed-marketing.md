@@ -4,18 +4,18 @@ title: 分布式营销入门
 description: 分布式营销入门
 feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 分布式营销入门{#about-distributed-marketing}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
-Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部门等）开展合作活动的申请 和地方实体（销售点、地区机构等）。 此合作基于称为 **[!UICONTROL list of campaign packages]**，其中向本地实体提供了集中创建的营销活动模板和实例。
+Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部门等）开展合作活动的申请 实施协作营销活动。此合作基于称为 **[!UICONTROL list of campaign packages]**，其中向本地实体提供了集中创建的营销活动模板和实例。
 
 中央实体提供本地实体可能使用的营销活动。 营销活动由表示本地或协作营销活动的包实现。 要使用营销活动，本地实体必须对其进行订购，并且该订购必须获得批准。
 

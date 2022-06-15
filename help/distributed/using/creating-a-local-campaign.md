@@ -4,7 +4,7 @@ title: 创建本地活动
 description: 创建本地活动
 feature: Distributed Marketing
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 创建本地活动{#creating-a-local-campaign}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 本地营销活动是使用 **[!UICONTROL campaign packages]** 带有 **特定执行计划**. 其目标是使用由中央实体设置和配置的活动模板满足本地通信需求。 实施本地操作的主要阶段如下：
 

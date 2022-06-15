@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 假设验证跟踪{#hypothesis-tracking}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 假设验证计算结果可在Adobe Campaign平台的不同级别获得：通过假设和目标群体反应计算的指标可通过实际假设以及通过营销活动和投放提供的假设验证报告中可见。
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 * **控制组的毛利总额**:控制组的毛利总额。
 * **每个联系人的平均利润**:总利润/联系人。
 * **控制组的平均边距**:总边距/控制组。
-* **额外收入**:（联系人的平均收入 — 控制组的平均收入）*联系人数
+* **额外收入**:（联系的平均收入 — 控制组的平均收入）&#42;联系人数
 * **附加边距**:（平均联系边距 — 控制组的平均边距）/联系次数
 * **每个联系人的平均成本**:计算的交货成本/联系人数。
 * **ROI**:交付的计算成本/每个联系人的毛利总额
