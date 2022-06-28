@@ -4,7 +4,7 @@ title: 迁移到新的可投放性服务器
 description: 了解如何实施Campaign可投放性服务器
 hide: true
 hidefromtoc: true
-source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
+source-git-commit: 65ab862ec568647dd06c1f7b7b83e5b921353cc7
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 4%
@@ -73,7 +73,7 @@ Adobe正在停用较旧的数据中心，这是出于安全合规性的原因。
    >当出现下载提示时，您应保存config.zip文件，因为您将无法再次下载它。
 
 1. 单击 **[!UICONTROL Next]**。
-1. 选择任何现有 **[!UICONTROL Product profile]** 或根据需要创建新受众。 无需权限 **[!UICONTROL Product profile]**. 有关 [!DNL Analytics] **[!UICONTROL Product Profiles]**，请参阅 [这是](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+1. 选择任何现有 **[!UICONTROL Product profile]** 或根据需要创建新受众。 无需权限 **[!UICONTROL Product profile]**. 有关 [!DNL Analytics] **[!UICONTROL Product Profiles]**，请参阅 [本页](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
    然后，单击 **[!UICONTROL Save configured API]**.
 
