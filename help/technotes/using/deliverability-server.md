@@ -4,7 +4,7 @@ title: 迁移到新的可投放性服务器
 description: 了解如何实施Campaign可投放性服务器
 hide: true
 hidefromtoc: true
-source-git-commit: a2590a6d8df1e73d77bbdef7b8cf3b2d6efe207f
+source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 4%
@@ -30,7 +30,7 @@ Adobe正在停用较旧的数据中心，这是出于安全合规性的原因。
 
 ## 您是否受影响？{#acc-deliverability-impacts}
 
-如果您使用现有的Adobe Campaign可投放性服务器，并且您的环境在低于Campaign 21.1.1的内部版本中实施，则您会受到影响。 您需要升级到Campaign 21.1（或更高版本）。
+如果您使用旧的Adobe Campaign可投放性服务器，并且您的环境在低于Campaign 21.1.1的内部版本中实施，则您会受到影响。 您需要升级到Campaign 21.1（或更高版本）。
 
 了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
