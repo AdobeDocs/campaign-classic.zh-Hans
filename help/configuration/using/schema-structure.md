@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '1562'
-ht-degree: 1%
+source-wordcount: '1520'
+ht-degree: 2%
 
 ---
 
@@ -175,33 +175,27 @@ ht-degree: 1%
 <table> 
  <tbody> 
   <tr> 
+   <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
    <td> <strong>MS SQL</strong><br /> </td> 
-   <td> <strong>Adobe Campaign</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> 字符串<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2（如果为unicode，则为NVARCHAR2）<br /> </td> 
-   <td> VARCHAR（如果为Unicode，则为VARCHAR字符集UNICODE）<br /> </td> 
-   <td> VARCHAR<br /> </td> 
    <td> VARCHAR（如果为unicode，则为NVARCHAR）<br /> </td> 
   </tr> 
   <tr> 
    <td> 布尔值<br /> </td> 
    <td> 斯马林特<br /> </td> 
    <td> 数字(3)<br /> </td> 
-   <td> 数值(3)<br /> </td> 
-   <td> 斯马林特<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> 字节<br /> </td> 
    <td> 斯马林特<br /> </td> 
    <td> 数字(3)<br /> </td> 
-   <td> 数值(3)<br /> </td> 
-   <td> 斯马林特<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
@@ -209,63 +203,47 @@ ht-degree: 1%
    <td> 斯马林特<br /> </td> 
    <td> 数字(5)<br /> </td> 
    <td> 斯马林特<br /> </td> 
-   <td> 斯马林特<br /> </td> 
-   <td> 斯马林特<br /> </td> 
   </tr> 
   <tr> 
-   <td> 双线<br /> </td> 
+   <td> 两次<br /> </td> 
    <td> 双精度<br /> </td> 
    <td> 浮动<br /> </td> 
-   <td> 浮动<br /> </td> 
-   <td> 双精度<br /> </td> 
    <td> 浮动<br /> </td> 
   </tr> 
   <tr> 
    <td> 长<br /> </td> 
    <td> 整数<br /> </td> 
    <td> 数字(10)<br /> </td> 
-   <td> 整数<br /> </td> 
-   <td> 整数<br /> </td> 
    <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGINT<br /> </td> 
    <td> 数字(20)<br /> </td> 
-   <td> 数值(20)<br /> </td> 
-   <td> BIGINT<br /> </td> 
    <td> BIGINT<br /> </td> 
   </tr> 
   <tr> 
    <td> 日期<br /> </td> 
    <td> 日期<br /> </td> 
-   <td> 日期<br /> </td> 
-   <td> 时间戳<br /> </td> 
    <td> 日期<br /> </td> 
    <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
-   <td> 每位用户<br /> </td> 
+   <td> 时间<br /> </td> 
    <td> 时间<br /> </td> 
    <td> 浮动<br /> </td> 
-   <td> 时间<br /> </td> 
-   <td> 时间<br /> </td> 
    <td> 浮动<br /> </td> 
   </tr> 
   <tr> 
    <td> 日期时间<br /> </td> 
    <td> 时间戳<br /> </td> 
    <td> 日期<br /> </td> 
-   <td> 时间戳<br /> </td> 
-   <td> 时间戳<br /> </td> 
    <td> MS SQL &lt; 2008:DATETIME<br /> MS SQL &gt;= 2012:DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> 时间戳<br /> </td> 
    <td> 日期<br /> </td> 
-   <td> 时间戳<br /> </td> 
-   <td> 时间戳<br /> </td> 
    <td> MS SQL &lt; 2008:DATETIME<br /> MS SQL &gt;= 2012:DATETIME2<br /> </td> 
   </tr> 
   <tr> 
@@ -273,23 +251,17 @@ ht-degree: 1%
    <td> 双精度<br /> </td> 
    <td> 浮动<br /> </td> 
    <td> 浮动<br /> </td> 
-   <td> 双精度<br /> </td> 
-   <td> 浮动<br /> </td> 
   </tr> 
   <tr> 
    <td> 备忘录<br /> </td> 
    <td> 文本<br /> </td> 
    <td> CLOB（如果为Unicode，则为NCLOB）<br /> </td> 
-   <td> CLOB（如果为Unicode，则为CLOB字符集UNICODE）<br /> </td> 
-   <td> CLOB(6M)<br /> </td> 
    <td> 文本（如果为Unicode，则为NTEXT）<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> BLOB<br /> </td> 
-   <td> BLOB(4M)<br /> </td> 
    <td> 图像<br /> </td> 
   </tr> 
  </tbody> 

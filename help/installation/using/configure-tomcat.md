@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
-source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -49,3 +49,15 @@ Adobe Campaign使用 **名为Apache Tomcat的嵌入式Web Servlet** 处理应用
 ```
 
 如有必要，可以在服务器端重现此操作。
+
+## 隐藏Tomcat错误报告 {#hide-tomcat-error-report}
+
+出于安全考虑，我们强烈建议您隐藏Tomcat错误报告。 以下是步骤。
+
+1. 打开 **server.xml** 文件位于 **/tomcat-8/conf** Adobe Campaign安装文件夹的目录：  `/usr/local/neolane/nl6/tomcat-8/conf`
+1. 在所有现有上下文元素之后的底部添加以下元素：
+
+   ```
+   <Valve className="org.apache.catalina.valves.ErrorReportValve" showReport="false" showServerInfo="false"/>
+   ```
+1. 重新启动nlserver和Apache Web服务器。

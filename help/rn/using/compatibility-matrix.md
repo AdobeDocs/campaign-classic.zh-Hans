@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
-workflow-type: ht
-source-wordcount: '733'
-ht-degree: 100%
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+workflow-type: tm+mt
+source-wordcount: '749'
+ht-degree: 97%
 
 ---
 
@@ -48,6 +48,7 @@ ht-degree: 100%
 <tr>
 <td>Debian</td>
 <td>
+<p>11（64 位）</p>
 <p>10（64 位）</p>
 <p>9（64 位）</p>
 </td>
@@ -149,7 +150,7 @@ ht-degree: 100%
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016</p>
+<p>2016年</p>
 <p>2014</p>
 <p>2012 - SP1 和 SP2</p>
 <p><strong>重要提示：</strong>当 Campaign 服务器在 Linux 上运行时，不支持将 Microsoft SQL Server 作为主数据库。<a href="../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers">了解详情</a>。</p>
@@ -256,19 +257,23 @@ ht-degree: 100%
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019</p>
-<p>2017</p>
-<p>2016</p>
-<p>2014</p>
+<p>2019年</p>
+<p>2017年</p>
+<p>2016年</p>
+<p>2014年</p>
 <p>2012 SP1 和 SP2</p>
 </td>
 <td>最低版本为 7.0</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
+<p>8</p>
 <p>5.7</p>
 </td>
-<td>最低版本为 7.0</td>
+<td>
+<p>最低版本为 7.3 </p>
+<p>最低版本为 7.0</p>
+</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -329,15 +334,16 @@ ht-degree: 100%
 <td>Microsoft Windows Server</td>
 <td>
 <p>2019（从 7.2.1 版本开始）</p>
-<p>2016</p>
-<p>2012</p>
+<p>2016年</p>
+<p>2012年</p>
 </td>
 </tr>
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>8</p>
+<p>11（从Campaign v7.3开始）</p>
 <p>10（建议用于日语实例）</p>
+<p>8</p>
 </td>
 </tr>
 </tbody>
@@ -368,15 +374,15 @@ ht-degree: 100%
 <tr>
 <td>Android</td>
 <td>
-<p>7.x、8.x、9.0</p>
-<p>带有移动 SDK 内部版本 1.0.27。</p>
+<p>12（从Campaign v7.3开始）、9.0、8.x、7.x</p>
+<p>带有Mobile SDK内部版本1.1.1</p>
 </td>
 </tr>
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9 - 14</p>
-<p>带有移动 SDK 内部版本 1.0.26，与 32 位和 64 位版本兼容。</p>
+<p>iOS 9 - 15</p>
+<p>带有移动 SDK 内部版本 1.0.26，与 32 位和 64 位版本兼容。从Campaign v7.3开始，支持iOS 15</p>
 </td>
 </tr>
 </tbody>

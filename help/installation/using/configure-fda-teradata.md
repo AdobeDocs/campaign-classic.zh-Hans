@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 0%
+source-wordcount: '1798'
+ht-degree: 1%
 
 ---
 
@@ -95,6 +95,27 @@ ht-degree: 0%
    * **[!UICONTROL Options]**:要通过Teradata传递的选项。 使用以下格式：“parameter=value”。 使用半列作为值之间的分隔符。
 
    * **[!UICONTROL Timezone]**:在Teradata中设置时区。 [了解详情](#timezone)
+
+连接器支持以下选项：
+
+| Option | 说明 |
+|---|---|
+| TD_MAX_SESSIONS | 指定Teradata并行传输程序可为操作员作业获取的最大登录会话数。 <br>[有关更多信息，请参阅此页面](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/ds2ref/p1naft0um1kn3vn1ubgkrjdf7c3a.html). |
+| 时区名称 | 服务器时区的名称。 |
+| CharacterSet | 用于配置Teradata字符集。 <br>[有关更多信息，请参阅此页面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
+| IANAAppCodePage | ODBC应用程序代码页。 <br>[有关更多信息，请参阅此页面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
+
+### 添加其他ODBC外部帐户 {#add-external}
+
+>[!NOTE]
+>
+> 此选项不适用于低于7.3.1版本的内部版本。
+
+teradata驱动程序提供其自己的ODBC库，但此库可能与其他ODBC外部帐户不兼容。
+
+如果要配置另一个同样使用ODBC的外部帐户(例如Snowflake)，则需要将ODBCLib选项添加到默认ODBC库(`/usr/lib/x86_64-linux-gnu/libodbc.so` 关于Debian和 `/usr/lib64/libodbc.so` （在RHEL/CentOS中）。
+
+![](assets/ext_account_24.png)
 
 ### 查询分段
 

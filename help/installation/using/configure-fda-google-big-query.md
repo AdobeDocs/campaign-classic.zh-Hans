@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 5d2ec0836fe5f106e0c56e5abbe7bab9332d7e18
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '779'
 ht-degree: 2%
 
 ---
@@ -193,11 +193,11 @@ ht-degree: 2%
 
 连接器支持以下选项：
 
-| Option | 值 | 说明 |
-|:-:|:-:|:-:|
-| ProxyType | 字符串 | 用于通过ODBC和SDK连接器连接到BigQuery的代理类型。 </br>当前支持HTTP（默认）、http_no_tunnel、socks4和socks5。 |
-| ProxyHost | 字符串 | 可以访问代理的主机名或IP地址。 |
-| ProxyPort | 数字 | 代理正在运行的端口号，如8080 |
-| ProxyUid | 字符串 | 用于已验证代理的用户名 |
-| ProxyPwd | 字符串 | ProxyUid密码 |
-| bqpath | 字符串 | 请注意，这仅适用于批量加载工具(Cloud SDK)。 </br> 要避免使用PATH变量或如果google-cloud-sdk目录必须移动到其他位置，您可以使用此选项指定服务器上云sdk bin目录的确切路径。 |
+| Option | 说明 |
+|:-:|:-:|
+| ProxyType | 用于通过ODBC和SDK连接器连接到BigQuery的代理类型。 </br>当前支持HTTP（默认）、http_no_tunnel、socks4和socks5。 |
+| ProxyHost | 可以访问代理的主机名或IP地址。 |
+| ProxyPort | 代理正在运行的端口号，如8080 |
+| ProxyUid | 用于已验证代理的用户名 |
+| ProxyPwd | ProxyUid密码 |
+| bqpath | 请注意，这仅适用于批量加载工具(Cloud SDK)。 </br> 要避免使用PATH变量或如果google-cloud-sdk目录必须移动到其他位置，您可以使用此选项指定服务器上云sdk bin目录的确切路径。 |

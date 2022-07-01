@@ -4,10 +4,10 @@ title: 为iOS设备创建推送通知
 description: 了解如何为iOS创建推送通知
 feature: Push
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 3%
+source-wordcount: '965'
+ht-degree: 6%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 3%
 
    ![](assets/nmac_delivery_ios_3.png)
 
-1. 选择通知类型： **[!UICONTROL Alert]**, **[!UICONTROL Badge]**&#x200B;或 **[!UICONTROL Alert and badge]** 或 **[!UICONTROL Silent Push]**.
+1. 选择 **[!UICONTROL Notification type]** 介于 **[!UICONTROL General notification (Alert, Sound, Badge)]** 或 **[!UICONTROL Silent notification]**.
 
    ![](assets/nmac_delivery_ios_4.png)
 
@@ -51,32 +51,67 @@ ht-degree: 3%
    >
    >的 **静默推送** 模式允许向移动应用程序发送“静默”通知。 用户未知晓通知的到达。 它将直接转给应用程序。
 
-1. 在 **[!UICONTROL Title]** 字段，输入要在通知中显示的标题标签。 它将仅显示在通知中心提供的通知列表中。 利用此字段，可定义 **标题** iOS通知有效负载的参数。
+1. 在 **[!UICONTROL Title]** 字段，输入要在通知中心提供的通知列表中显示的标题标签。
 
-1. 如果使用HTTP/2连接器，则可以添加子标题( **字幕** iOS通知有效负载的参数)。 请参阅 [此部分](configuring-the-mobile-application.md).
+   利用此字段，可定义 **标题** iOS通知有效负载的参数。
 
-1. 然后，输入 **[!UICONTROL Message]** 和 **[!UICONTROL Value of the badge]** 基于所选通知类型。
+1. 您可以添加 **[!UICONTROL Subtitle]**,iOS通知有效负载的子标题参数的值。 请参阅 [此部分](configuring-the-mobile-application.md).
+
+1. 在 **[!UICONTROL Message content]** 的子菜单。 个性化字段的使用情况请参见 [关于个性化](about-personalization.md) 中。
 
    ![](assets/nmac_delivery_ios_5.png)
 
-   >[!NOTE]
-   >
-   >**[!UICONTROL Badge]** 和 **[!UICONTROL Alert and badge]** 类型通知允许您修改徽章的值（移动设备应用程序徽标上方的数字）。 要刷新标记，您只需输入0作为值。 如果字段为空，则标记值不会更改。
-
 1. 单击 **[!UICONTROL Insert emoticon]** 图标将表情符号插入推送通知。 要自定义表情符号列表，请参阅 [此部分](customizing-emoticon-list.md)
 
-1. 的 **[!UICONTROL Action button]** 用于为警报通知中显示的操作按钮定义标签(**action_loc_key** 字段)。 如果您的iOS应用程序管理可本地化的字符串(**Localizable.strings**)，则在此字段中输入相应的键。 如果您的应用程序不管理可本地化的文本，请输入要在操作按钮上显示的标签。 有关可本地化字符串的更多信息，请参阅 [Apple文档](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
-1. 在 **[!UICONTROL Play a sound]** 字段中，选择要在收到通知时由移动终端播放的声音。
+1. 从 **[!UICONTROL Sound and Badge]** 选项卡，您可以编辑以下选项：
 
+   * **[!UICONTROL Clean Badge]**:启用此选项可刷新标记值。
+
+   * **[!UICONTROL Value]**:设置一个数字，该数字将用于直接在应用程序图标上显示新的未读信息数。
+
+   * **[!UICONTROL Critical alert mode]**:启用此选项，即使用户的手机设置为焦点模式或iPhone静音，也可向通知添加声音。
+
+   * **[!UICONTROL Name]**:选择在收到通知时移动终端要播放的声音。
+
+   * **[!UICONTROL Volume]**:音量从0到100。
    >[!NOTE]
    >
    >必须在应用程序中包含声音，并在创建服务时定义声音。 请参阅[此小节](configuring-the-mobile-application.md#configuring-external-account-ios)。
 
-1. 在 **[!UICONTROL Application variables]** 字段，输入每个变量的值。 应用程序变量允许您定义通知行为：例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
+   ![](assets/nmac_delivery_ios_6.png)
 
-   >[!NOTE]
-   >
-   >应用程序变量必须在移动应用程序的代码中定义，并在服务创建期间输入。 如需详细信息，请参阅[此部分](configuring-the-mobile-application.md)。
+1. 从 **[!UICONTROL Application variables]** 选项卡， **[!UICONTROL Application variables]** 会自动添加。 例如，通过它们可定义通知行为，您可以将特定应用程序屏幕配置为在用户激活通知时显示。
+
+   如需详细信息，请参阅[此部分](configuring-the-mobile-application.md)。
+
+1. 从 **[!UICONTROL Advanced]** 选项卡，您可以编辑以下常规选项：
+
+   * **[!UICONTROL Mutable content]**:启用此选项，以允许移动应用程序下载媒体内容。
+
+   * **[!UICONTROL Thread-id]**:用于将相关通知分组在一起的标识符。
+
+   * **[!UICONTROL Category]**:将显示操作按钮的类别ID的名称。 这些通知为用户提供了一种更快的方式，无需在应用程序中打开或导航即可响应通知执行不同任务。
+
+   ![](assets/nmac_delivery_ios_7.png)
+
+1. 对于时间敏感通知，您可以指定以下选项：
+
+   * **[!UICONTROL Target content ID]**:标识符，用于定位在打开通知时要转发的应用程序窗口。
+
+   * **[!UICONTROL Launch image]**:要显示的launch图像文件的名称。 如果用户选择启动您的应用程序，则将显示选定的图像，而不是应用程序的启动屏幕。
+
+   * **[!UICONTROL Interruption level]**:
+
+      * **[!UICONTROL Active]**:默认情况下，系统会立即显示通知、点亮屏幕并播放声音。 通知不会突破“焦点”模式。
+
+      * **[!UICONTROL Passive]**:系统将通知添加到通知列表，而不会点亮屏幕或播放声音。 通知不会突破“焦点”模式。
+
+      * **[!UICONTROL Time sensitive]**:系统会立即显示通知、点亮屏幕、播放声音并打破“聚焦”模式。 此级别不需要Apple的特殊许可。
+
+      * **[!UICONTROL Critical]**:系统立即显示通知，将屏幕点亮，并绕过静音开关或聚焦模式。 请注意，此级别需要获得Apple的特殊许可。
+   * **[!UICONTROL Relevance score]**:将相关性得分设置为0到100。 系统将使用它对通知摘要中的通知进行排序。
+
+   ![](assets/nmac_delivery_ios_8.png)
 
 1. 配置通知后，单击 **[!UICONTROL Preview]** 选项卡来预览通知。
 
@@ -88,14 +123,13 @@ ht-degree: 3%
    >
    >预览使用iOS 10的外观。
 
-要发送校样并发送最终投放，请使用与电子邮件投放相同的流程。
+要发送校样并发送最终投放，请使用与电子邮件投放相同的流程。 [了解详情](steps-validating-the-delivery.md)
 
 发送消息后，您可以监控和跟踪投放内容。 有关更多信息，请参阅一下章节。
 
 * [推送通知隔离](understanding-quarantine-management.md#push-notification-quarantines)
 * [监测投放](about-delivery-monitoring.md)
 * [了解投放失败](understanding-delivery-failures.md)
-
 
 ## 创建iOS富通知 {#creating-ios-delivery}
 
@@ -118,7 +152,6 @@ ht-degree: 3%
 1. 在 **[!UICONTROL Target type]** 窗口，选择 **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** 单击 **[!UICONTROL Next]**.
 
 1. 在 **[!UICONTROL Service]** 下拉列表，选择您之前创建的服务，然后选择要定位的应用程序并单击 **[!UICONTROL Finish]**.
-的 **[!UICONTROL Application variables]** 将根据在配置步骤中添加的内容自动添加。
 
    ![](assets/nmac_ios_6.png)
 
@@ -126,10 +159,22 @@ ht-degree: 3%
 
    ![](assets/nmac_ios_7.png)
 
-1. 检查 **[!UICONTROL Mutable content]** 框，以允许移动设备应用程序下载媒体内容。
+1. 从 **[!UICONTROL Application variables]** 选项卡， **[!UICONTROL Application variables]** 将根据在配置步骤中添加的内容自动添加。
+
+   >[!NOTE]
+   >
+   >应用程序变量必须在移动应用程序的代码中定义，并在服务创建期间输入。 如需详细信息，请参阅[此部分](configuring-the-mobile-application.md)。
+
+   ![](assets/nmac_ios_10.png)
+
+1. 从 **[!UICONTROL Advanced]** 选项卡，勾选 **[!UICONTROL Mutable content]** 框，以便移动应用程序下载媒体内容。
 
 1. 单击 **[!UICONTROL Save]** 并发送投放内容。
 
 当在订阅者的移动iOS设备上收到图像和网页时，应在推送通知中显示。
 
 ![](assets/nmac_ios_8.png)
+
+
+
+

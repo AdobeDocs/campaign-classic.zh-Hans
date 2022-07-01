@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a2590a6d8df1e73d77bbdef7b8cf3b2d6efe207f
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2585'
 ht-degree: 99%
 
 ---
@@ -677,6 +677,8 @@ ht-degree: 99%
             + [配置 Sybase IQ](installation/using/configure-fda-sybase.md)
             + [配置 Teradata](installation/using/configure-fda-teradata.md)
             + [配置 SAP HANA](installation/using/configure-fda-sap-hana.md)
+            + [配置Microsoft SQL Server](installation/using/configure-fda-sql.md)
+            + [配置PostgreSQL](installation/using/configure-fda-postgresql.md)
          + [远程访问权限](installation/using/remote-database-access-rights.md)
          + [连接到数据库](installation/using/connecting-to-database.md)
          + [创建数据架构](installation/using/creating-data-schema.md)
@@ -688,6 +690,7 @@ ht-degree: 99%
       + [创建新实例](installation/using/creating-new-instances.md)
       + [Campaign 选项列表](installation/using/configuring-campaign-options.md)
       + [卸载 Campaign](installation/using/uninstalling-campaign.md)
+      + [安装新字体](installation/using/install-fonts.md)
 + 监视指南 {#monitoring-campaign-classic}
    + 简介 {#introduction}
       + [前言](production/using/foreword.md)

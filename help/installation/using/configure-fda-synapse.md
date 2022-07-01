@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 9265d389da53e51889c2b7a8cd330c1866a030d9
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '772'
 ht-degree: 2%
 
 ---
@@ -236,3 +236,9 @@ ht-degree: 2%
 
 
 1. 单击 **[!UICONTROL Save]**。
+
+连接器支持以下选项：
+
+| Option | 说明 |
+|---|---|
+| 身份验证 | 连接器支持的身份验证类型。 当前支持的值：ActiveDirectoryMSI。 </br>有关更多信息，请参阅 [SQL文档](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) (连接字符串示例n°8)。 |

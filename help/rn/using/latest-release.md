@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e3ff5bb55e108c163dcf395da84076201f09e61c
-workflow-type: ht
-source-wordcount: '1281'
-ht-degree: 100%
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+workflow-type: tm+mt
+source-wordcount: '1933'
+ht-degree: 71%
 
 ---
 
@@ -18,6 +18,72 @@ ht-degree: 100%
 ![](../../assets/v7-only.svg)
 
 此页面列出了 **Campaign v7 最新版本**&#x200B;中的新增功能、改进和修复。每个新的内部版本都带有一个以颜色突出显示的状态。在[此页面](rn-overview.md)中了解有关 Campaign Classic v7 内部版本状态的更多信息。
+
+## ![](assets/do-not-localize/limited_2.png) 7.3.1 版 - 版本 9352 {#release-7-3-1}
+
+_2022年7月1日_
+
+**新增功能**
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>时效性通知</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>在 iOS 15 中，Apple 新增了“即时通知”的概念，当通知具有时效性并且需要实时联系用户时，该概念让应用程序开发人员可以控制对“专注”模式的绕过。</p>
+<p>了解如何在 <a href="../../delivery/using/create-notifications-ios.md">详细文档</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**兼容性更新**
+
+* Adobe Campaign SDK现在支持Android 12和iOS 15进行推送通知。
+* Adobe Campaign现在与MySQL 8兼容。
+* Adobe Campaign 现在与 Windows 11 兼容。
+* Adobe Campaign现在与Debian 11兼容。
+
+请参阅 [Campaign 兼容性矩阵](../../rn/using/compatibility-matrix.md#OperatingSystems)。
+
+**改进**
+
+* 在Internet Explorer 11生命周期结束后，控制台的HTML渲染引擎现在使用Edge Chromium。
+* Adobe Campaign中的数据库连接管理已得到改进，以优化稳定性。
+* Campaign 现在支持适用于 POP3 的 Microsoft Exchange Online OAuth 2.0 身份验证。[了解更多信息](../../installation/using/external-accounts.md#bounce-mails-external-account)
+* 修复了将扩充工作流活动与外部数据结合使用时的各种问题。 (NEO-38069)
+* SAP Hana FDA连接器已更新，可与最新的SAP Hana数据库版本(2.x)一起正常运行。
+* teradataFDA连接器已更新，可使用最新Teradata版本(17)正常运行。
+* 20.2中，为新投放和投放模板引入了对iOS投放基于令牌的身份验证支持。 在7.2中，向升级后添加了一个修补程序，以将基于令牌的身份验证支持最多应用于10,000个之前创建的投放和投放模板。 在7.3中，修补程序已得到改进，并且限制已被删除。
+
+**修补程序**
+
+* 修复了上一个内部版本中的错误，该错误会阻止用户调整IMS登录页面的大小。
+* 修复了在现有实例上安装内容管理器包时发生的错误。
+* 修复了 **促销活动** 连续显示“操作正在进行”消息的菜单。
+* 启用Adobe Analytics后，修复了在发送带有URL的电子邮件时，如果不保存投放，则会从URL中删除BID(Broadlog ID)和CID（促销活动ID）的问题。
+* 修复了在具有消息中心特定配置的实例的公共资源文件夹中上传图像时的问题。 将显示以下错误消息：“无法将图像上传到跟踪服务器”。
+* 修复了在配置文件不正确的情况下重新生成配置时导致系统崩溃的问题。
+* 修复了可能导致投放指示器无法正确更新的问题。 (NEO-44827)
+* 修复了在使用复杂查询时可能导致升级后错误的问题。 (NEO-43648)
+* 修复了可能阻止webApps预览工作的问题。 (NEO-43242)
+* 修复了在具有数据加载（文件）活动的工作流中使用外部目标映射文件时，可能导致投放准备失败的问题。 (NEO-43691)
+* 修复了可能导致崩溃并需要完全重新启动实例的问题。 (NEO-44645)
+* 修复了可能阻止工作流热图加载任何结果的问题。 (NEO-43360)
+* 修复了使用FDA外部连接器时可能导致连接问题的问题。 (NEO-42722)
+* 修复了使用地址替换和控制组排除时校样的问题。 (NEO-39695)
+* 修复了由于Snowflake连接器问题而可能导致工作流失败的问题。 (NEO-46299)
+* 修复了由于个性化块中的无效字符而可能冻结客户端控制台的问题。 (NEO-45761)
+* 修复了在创建外部帐户以将Snowflake作为外部数据库时可能导致连接问题的问题。 (NEO-45744)
+* 修复了可能导致显示受visibleIf属性保护的表信息的问题。 (NEO-37865)
+* 修复了在投放分析阶段可能显示“$ is not defined”错误消息的问题。 (NEO-32940)
+* 修复了导致投放与错误的eventType关联的问题。 (NEO-45743)
+* 修复了由于间歇性核心转储而导致崩溃的问题(NEO-30549)
+* 修复了在投放中使用错误HTML代码时可能导致崩溃的问题。 (NEO-40385)
+* 修复了可能阻止非管理员用户访问 **分析** 选项卡。 (NEO-34025)
 
 ## ![](assets/do-not-localize/green_2.png) 7.2.2 版 - 版本 9349 {#release-7-2-2}
 
@@ -40,7 +106,6 @@ _2022 年 3 月 1 日_
 * 修复了在多中间配置上同步中间源和营销实例时导致出现错误的问题。(NEO-10432)
 * 修复了在同时拥有 1000 个以上 broadlog 时刷新可投放性工作流时导致出现错误的问题。(NEO-40276)
 * 修复了导致打开率和点击率投放指标无法自动更新的问题。(NEO-43253)
-
 
 ## ![](assets/do-not-localize/limited_2.png) 7.2.1 版 - 版本 9346 {#release-7-2-1}
 

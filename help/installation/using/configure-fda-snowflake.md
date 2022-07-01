@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 6cecc81135afd067712e51ec9c1ad3239170702e
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 8%
+source-wordcount: '512'
+ht-degree: 6%
 
 ---
 
@@ -123,3 +123,6 @@ ht-degree: 8%
 | 时区名称 | 默认为空，这表示使用Campaign Classic应用程序服务器的系统时区。 可以使用选项强制使用TIMEZONE会话参数。 <br>[有关更多信息，请参阅此页面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
 | WeekStart | WEEK_START会话参数。 默认情况下，设置为0。 <br>[有关更多信息，请参阅此页面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
 | UseCachedResult | USE_CACHED_RESULTS会话参数。 默认情况下，设置为TRUE。 此选项可用于禁用Snowflake缓存结果。 <br>[有关更多信息，请参阅此页面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
+| bulkThreads | 用于Snowflake批量加载器的线程数量越多，线程数越多，对于较大的批量加载而言，性能越好。 默认情况下，设置为1。 数字可根据计算机线程计数进行调整。 |
+| chunkSize | 确定批量加载器块的文件大小。 默认情况下，设置为128MB。 当与bulkThreads一起使用时，可以修改以获得更佳性能。 同时活动线程越多，性能越好。 <br>有关更多信息，请参阅 [Snowflake文档](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
+| StageName | 预配置的内部阶段的名称。 它将用于批量加载，而不是创建新的临时阶段。 |

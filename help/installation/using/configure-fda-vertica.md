@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
-source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '399'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 2%
 
 1. 配置 [!DNL Vertica] on [CentOS](#vertica-centos), [Windows](#vertica-windows) 或 [德比安](#vertica-debian)
 1. 配置 [!DNL Vertica] [外部帐户](#vertica-external) 在Campaign中
-
 
 >[!NOTE]
 >
@@ -166,4 +165,12 @@ ht-degree: 2%
    * **[!UICONTROL Password]**:用户帐户密码
 
    * **[!UICONTROL Database]**:数据库的名称
+
    ![](assets/vertica.png)
+
+连接器支持以下选项：
+
+| Option | 说明 |
+|---|---|
+| 时区名称 | 默认为空，这表示使用Campaign Classic应用程序服务器的系统时区。 可以使用选项强制使用TIMEZONE会话参数。 |
+
