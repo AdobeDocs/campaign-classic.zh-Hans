@@ -4,9 +4,9 @@ title: 创建登陆页面
 description: 创建登陆页面
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '721'
 ht-degree: 3%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->**DCE为加载的HTML页面执行JavaScript代码。** HTML模板中可能显示在Adobe Campaign界面中的JavaScript错误。 这些错误与编辑器无关。 要检查导入的文件中是否没有错误，建议先在浏览器(Internet Explorer / Firefox / Chrome)中测试这些文件，然后再将文件导入DCE。
+>**DCE为加载的HTML页面执行JavaScript代码。** HTML模板中可能显示在Adobe Campaign界面中的JavaScript错误。 这些错误与编辑器无关。 要检查导入的文件中是否没有错误，建议先在Web浏览器中测试这些文件，然后再将文件导入DCE。
 
 ## 步骤2 — 配置内容 {#step-2---configuring-the-content}
 

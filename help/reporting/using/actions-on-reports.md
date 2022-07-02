@@ -4,9 +4,9 @@ title: 对报告执行操作
 description: 对报告执行操作
 feature: Reporting
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 3%
 
 ---
@@ -86,7 +86,7 @@ document.nl_waitBeforeRender = true;
 
 您可以打印报表：要执行此操作，请单击打印机图标：这将打开对话框。
 
-为了获得更好的结果，请编辑Internet Explorer打印选项，然后选择 **[!UICONTROL Print background colors and images]**.
+为获得更好的结果，请编辑Explorer打印选项，然后选择 **[!UICONTROL Print background colors and images]**.
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
