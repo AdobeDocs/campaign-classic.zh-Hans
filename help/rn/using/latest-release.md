@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: 2bbf548992b7ab9c0d8a6a0666c2024db5af1f63
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1936'
 ht-degree: 71%
 
 ---
@@ -51,7 +51,7 @@ _2022年7月1日_
 
 **改进**
 
-* 在Internet Explorer 11生命周期结束后，控制台的HTML渲染引擎现在使用Edge Chromium。
+* 在Internet Explorer 11生命周期结束后，控制台中Adobe Services的HTML渲染引擎现在使用Edge Chromium。
 * Adobe Campaign中的数据库连接管理已得到改进，以优化稳定性。
 * Campaign 现在支持适用于 POP3 的 Microsoft Exchange Online OAuth 2.0 身份验证。[了解更多信息](../../installation/using/external-accounts.md#bounce-mails-external-account)
 * 修复了将扩充工作流活动与外部数据结合使用时的各种问题。 (NEO-38069)
