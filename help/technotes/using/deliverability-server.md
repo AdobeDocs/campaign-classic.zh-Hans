@@ -4,10 +4,11 @@ title: 迁移到新的可投放性服务器
 description: 了解如何实施Campaign可投放性服务器
 hide: true
 hidefromtoc: true
-source-git-commit: 65ab862ec568647dd06c1f7b7b83e5b921353cc7
+exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
+source-git-commit: a007e4d5dd73f01657f1642be6f0b1a92f39e9bf
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 4%
+source-wordcount: '923'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->如果对这些更改有任何疑问，请阅读 [常见问题解答](#faq-aa). 有关详细信息，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>有关这些更改的任何问题，请联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 ## 更改了哪些内容？{#acc-deliverability-changes}
 
@@ -36,14 +37,13 @@ Adobe正在停用较旧的数据中心，这是出于安全合规性的原因。
 
 ## 如何更新？{#acc-deliverability-update}
 
-作为托管客户，Adobe将与您合作，将您的实例升级到较新版本。
+As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版本，并在Adobe Developer控制台中创建项目。
 
-作为内部部署/混合型客户，您需要升级到其中一个较新版本，以便从新的可投放性服务器中受益。
-升级所有实例后，您将能够 [实施新集成](#implementation-steps) Adobe投放能力服务器，并确保无缝过渡。
+作为 **内部部署/混合客户**，您需要升级到其中一个较新版本，才能从新的可投放性服务器中受益。 升级所有实例后，您将能够 [实施新集成](#implementation-steps) Adobe投放能力服务器，并确保无缝过渡。
 
 ## 实施步骤（混合和内部部署客户） {#implementation-steps}
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >这些步骤只应由混合实施和内部部署实施执行。
 >
@@ -55,29 +55,45 @@ Adobe正在停用较旧的数据中心，这是出于安全合规性的原因。
 
 ### 步骤1:创建/更新Adobe Developer项目 {#adobe-io-project}
 
+
+
 1. 访问 [Adobe Developer控制台](https://developer.adobe.com/console/home) 并使用贵组织的开发人员访问权限登录。
 
    >[!NOTE]
    >
    > 确保您已登录到正确的组织门户。
 
-1. 选择 **[!UICONTROL + Add to Project]** 选择 **[!UICONTROL API]**.
-1. 在 **[!UICONTROL Add an API]** 窗口，选择 **[!UICONTROL Adobe Campaign]**.
-1. 选择 **[!UICONTROL Service Account (JWT)]** 作为身份验证类型。
-1. 如果您的客户端ID为空，请选择 **[!UICONTROL Generate a key pair]** 创建公钥和私钥对。
+1. 选择 **[!UICONTROL Create new project]**。
+   ![](assets/New-Project.png)
 
-   然后，将自动下载密钥，默认到期日期为365天。 过期后，您将需要创建新密钥对并更新配置文件中的集成。 使用选项2，您可以选择手动创建和上传 **[!UICONTROL Public key]** 的期限。
 
    >[!CAUTION]
    >
-   >当出现下载提示时，您应保存config.zip文件，因为您将无法再次下载它。
+   >如果您已经为其他集成(如Analytics连接器或Adobe触发器)使用AdobeIO JWT身份验证功能，则必须通过添加 **Campaign API** 到那个项目。
+1. 选择 **[!UICONTROL Add API]**.
+   ![](assets/Add-API.png)
+1. 在 **[!UICONTROL Add an API]** 窗口，选择 **[!UICONTROL Adobe Campaign]**.
+   ![](assets/AC-API.png)
+<!--1. Choose **[!UICONTROL Service Account (JWT)]** as the authentication type.-->
+1. 如果您的客户端ID为空，请选择 **[!UICONTROL Generate a key pair]** 创建公钥和私钥对。
+   ![](assets/Generate-a-key-pair.png)
+
+   然后，将自动下载密钥，默认到期日期为365天。 过期后，您将需要创建新密钥对并更新配置文件中的集成。 使用选项2，您可以选择手动创建和上传 **[!UICONTROL Public key]** 的期限。
+   ![](assets/New-key-pair.png)
+
+   >[!CAUTION]
+   >
+   >您应该保存 `config.zip` 文件，因为您将无法再次下载它。
 
 1. 单击 **[!UICONTROL Next]**。
-1. 选择任何现有 **[!UICONTROL Product profile]** 或根据需要创建新受众。 无需权限 **[!UICONTROL Product profile]**. 有关 [!DNL Analytics] **[!UICONTROL Product Profiles]**，请参阅 [本页](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+1. 选择任何现有 **[!UICONTROL Product profile]** 或根据需要创建新受众。 无需权限 **[!UICONTROL Product profile]**. 有关 **[!UICONTROL Product Profiles]**，请参阅 [本页](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+   ![](assets/Product-Profile-API.png)
 
    然后，单击 **[!UICONTROL Save configured API]**.
 
-1. 在您的项目中，选择 **[!UICONTROL Adobe Campaign]** 并在 **[!UICONTROL Service Account (JWT)]**:
+1. 在您的项目中，选择 **[!UICONTROL Adobe Campaign]** 并在 **[!UICONTROL Service Account (JWT)]**
+
+   ![](assets/Config-API.png)
 
    * **[!UICONTROL Client ID]**
    * **[!UICONTROL Client Secret]**
@@ -116,7 +132,7 @@ Adobe正在停用较旧的数据中心，这是出于安全合规性的原因。
 
 1. 打开客户端控制台，以管理员身份登录Adobe Campaign。
 1. 浏览到 **管理>平台>选项**.
-1. 检查 `DmRendering_cuid` 选项值。 应在您的所有Campaign实例(MKT、MID、RT、EXEC)上填充该实例。 如果未填充，则必须填写值。 如果未填写值，请联系 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 来获取你的CUID。
+1. 检查 `DmRendering_cuid` 选项值。 应在您的所有Campaign实例(MKT、MID、RT、EXEC)上填充该实例。 如果未填写值，请联系 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 来获取你的CUID。
 
 ### 步骤4:启用新的可投放性服务器
 
@@ -125,7 +141,6 @@ Adobe正在停用较旧的数据中心，这是出于安全合规性的原因。
 1. 打开客户端控制台，以管理员身份登录Adobe Campaign。
 1. 浏览到 **管理>平台>选项**.
 1. 访问 `NewDeliverabilityServer_FeatureFlag` 选项，并将值设置为 `1`. 此配置应在您的所有Campaign实例(MKT、MID、RT、EXEC)上执行。
-
 
 ### 步骤5:验证配置
 
@@ -136,13 +151,5 @@ Adobe正在停用较旧的数据中心，这是出于安全合规性的原因。
 1. 浏览到 **管理>生产>技术工作流**.
 1. 重新启动 **可投放性更新** (deliverabilityUpdate)工作流。 此操作应在您的所有Campaign实例(MKT、MID、RT、EXEC)上执行。
 1. 检查日志：工作流应在执行时不出错。
-
-## 常见问题解答{#faq-aa}
-
-问：答：
-
-问：答：
-
-
 
 如需更多指导，请联系 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
