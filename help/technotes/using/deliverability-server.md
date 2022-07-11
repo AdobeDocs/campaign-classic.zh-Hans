@@ -5,9 +5,9 @@ description: 了解如何实施Campaign可投放性服务器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: a007e4d5dd73f01657f1642be6f0b1a92f39e9bf
+source-git-commit: 2e4d699aef0bea4f12d1bd2d715493c4a94a74dd
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '927'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 从Campaign Classicv7 21.1版本开始，Adobe Campaign提出了新的可交付性服务器，该服务器可提供高可用性并解决安全合规性问题。 Campaign Classic现在可将投放能力规则、广播和禁止地址从和同步到新的投放能力服务器。
 
-作为Campaign Classic客户，您必须实施新的可投放性服务器
+作为Campaign Classic客户，您必须实施新的可交付性服务器。
 
 >[!NOTE]
 >
@@ -27,7 +27,6 @@ ht-degree: 5%
 Adobe正在停用较旧的数据中心，这是出于安全合规性的原因。 Adobe Campaign Classic客户需要迁移到托管在Amazon Web Service(AWS)上的新可交付性服务。
 
 此新服务器可保证高可用性(99.9)，并&#x200B;提供安全且经过验证的端点，以使Campaign服务器能够获取所需数据：新的可交付性服务器不会针对每个请求连接到数据库，而是缓存数据以尽可能提供请求。 此机制可缩短响应时间&#x200B;。
-
 
 ## 您是否受影响？{#acc-deliverability-impacts}
 
@@ -43,6 +42,9 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 
 ## 实施步骤（混合和内部部署客户） {#implementation-steps}
 
+作为新可投放性服务器集成的一部分，Campaign需要通过基于Identity Management服务(IMS)的身份验证与Adobe共享服务进行通信。 首选方法是使用基于Adobe Developer的网关令牌(也称为技术帐户令牌或AdobeIO JWT)。
+
+
 >[!WARNING]
 >
 >这些步骤只应由混合实施和内部部署实施执行。
@@ -51,11 +53,18 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 
 ### 先决条件{#prerequisites}
 
-作为新可投放性服务器集成的一部分，Campaign需要通过基于Identity Management服务(IMS)的身份验证与Adobe共享服务进行通信。 首选方法是使用基于Adobe Developer的网关令牌(也称为技术帐户令牌或AdobeIO JWT)。
+在开始实施之前，请检查您的实例配置。
+
+1. 打开Campaign客户端控制台，以管理员身份登录Adobe Campaign。
+1. 浏览到 **管理>平台>选项**.
+1. 检查 `DmRendering_cuid` 选项值。
+
+   * 如果填充了选项，则可以开始实施。
+   * 如果未填写值，请联系 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 来获取你的CUID。
+
+      必须在具有相同值的所有Campaign实例(MKT、MID、RT、EXEC)上填充此选项。
 
 ### 步骤1:创建/更新Adobe Developer项目 {#adobe-io-project}
-
-
 
 1. 访问 [Adobe Developer控制台](https://developer.adobe.com/console/home) 并使用贵组织的开发人员访问权限登录。
 
@@ -126,15 +135,7 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 
 1. 您必须停止并重新启动服务器才能考虑修改。 您还可以运行 `config -reload` 命令。
 
-### 步骤3:检查配置
-
-设置完成后，您可以检查实例配置。 按照下面的步骤进行操作：
-
-1. 打开客户端控制台，以管理员身份登录Adobe Campaign。
-1. 浏览到 **管理>平台>选项**.
-1. 检查 `DmRendering_cuid` 选项值。 应在您的所有Campaign实例(MKT、MID、RT、EXEC)上填充该实例。 如果未填写值，请联系 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 来获取你的CUID。
-
-### 步骤4:启用新的可投放性服务器
+### 步骤3:启用新的可投放性服务器
 
 您现在可以启用新的可投放性服务器。 要执行此操作，请执行以下操作：
 
@@ -142,7 +143,7 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 1. 浏览到 **管理>平台>选项**.
 1. 访问 `NewDeliverabilityServer_FeatureFlag` 选项，并将值设置为 `1`. 此配置应在您的所有Campaign实例(MKT、MID、RT、EXEC)上执行。
 
-### 步骤5:验证配置
+### 步骤4:验证配置
 
 要检查集成是否成功，请执行以下步骤：
 
