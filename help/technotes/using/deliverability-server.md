@@ -5,7 +5,7 @@ description: 了解如何实施Campaign可投放性服务器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 4ad6f1e3a3d23383d17f947430c32fecefb3a8e1
+source-git-commit: c3b1ffcb580c7510a64115e0abbf16cb766146c5
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 3%
@@ -82,7 +82,6 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
    ![](assets/Add-API.png)
 1. 在 **[!UICONTROL Add an API]** 窗口，选择 **[!UICONTROL Adobe Campaign]**.
    ![](assets/AC-API.png)
-<!--1. Choose **[!UICONTROL Service Account (JWT)]** as the authentication type.-->
 1. 如果您的客户端ID为空，请选择 **[!UICONTROL Generate a key pair]** 创建公钥和私钥对。
    ![](assets/Generate-a-key-pair.png)
 
