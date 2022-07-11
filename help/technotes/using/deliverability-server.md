@@ -5,10 +5,10 @@ description: 了解如何实施Campaign可投放性服务器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2e4d699aef0bea4f12d1bd2d715493c4a94a74dd
+source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 5%
+source-wordcount: '909'
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 
 作为 **内部部署/混合客户**，您需要升级到其中一个较新版本，才能从新的可投放性服务器中受益。 升级所有实例后，您将能够 [实施新集成](#implementation-steps) Adobe投放能力服务器，并确保无缝过渡。
 
-## 实施步骤（混合和内部部署客户） {#implementation-steps}
+## 实施步骤 {#implementation-steps}
 
 作为新可投放性服务器集成的一部分，Campaign需要通过基于Identity Management服务(IMS)的身份验证与Adobe共享服务进行通信。 首选方法是使用基于Adobe Developer的网关令牌(也称为技术帐户令牌或AdobeIO JWT)。
 
@@ -48,8 +48,6 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 >[!WARNING]
 >
 >这些步骤只应由混合实施和内部部署实施执行。
->
->对于托管的实施，请联系 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ### 先决条件{#prerequisites}
 
