@@ -5,16 +5,16 @@ description: 了解如何实施Campaign可投放性服务器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: c3b1ffcb580c7510a64115e0abbf16cb766146c5
+source-git-commit: 5e0cf925ab4915c8a1d2c9d50daf77190023710f
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1065'
 ht-degree: 3%
 
 ---
 
 # Campaign可投放性服务器 {#acc-deliverability}
 
-从Campaign Classicv7 21.1版本开始，Adobe Campaign提出了新的可交付性服务器，该服务器可提供高可用性并解决安全合规性问题。 Campaign Classic现在可将投放能力规则、广播和禁止地址从和同步到新的投放能力服务器。
+开始 [v7.2.1版](../../rn/using/latest-release.md#release-7-2-2), Adobe Campaign提出了新的可交付性服务器，可带来高可用性并解决安全合规性问题。 Campaign Classic现在可将投放能力规则、广播和禁止地址从和同步到新的投放能力服务器。
 
 作为Campaign Classic客户，您必须实施新的可投放性服务器 **2022年8月31日之前**.
 
