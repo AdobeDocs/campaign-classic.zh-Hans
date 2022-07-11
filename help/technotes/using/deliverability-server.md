@@ -5,10 +5,10 @@ description: 了解如何实施Campaign可投放性服务器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
+source-git-commit: 6740b5eed33612bd7a3b217a8f53b07518f879fb
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 4%
+source-wordcount: '1067'
+ht-degree: 3%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 4%
 
 从Campaign Classicv7 21.1版本开始，Adobe Campaign提出了新的可交付性服务器，该服务器可提供高可用性并解决安全合规性问题。 Campaign Classic现在可将投放能力规则、广播和禁止地址从和同步到新的投放能力服务器。
 
-作为Campaign Classic客户，您必须实施新的可交付性服务器。
+作为Campaign Classic客户，您必须实施新的可投放性服务器 **2022年8月31日之前**.
 
 >[!NOTE]
 >
->有关这些更改的任何问题，请联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>如果对这些更改有任何疑问，请参阅 [常见问题解答](#faq)，或联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## 更改了哪些内容？{#acc-deliverability-changes}
 
@@ -30,7 +30,7 @@ Adobe正在停用较旧的数据中心，这是出于安全合规性的原因。
 
 ## 您是否受影响？{#acc-deliverability-impacts}
 
-如果您使用旧的Adobe Campaign可投放性服务器，并且您的环境在低于Campaign 21.1.1的内部版本中实施，则您会受到影响。 您需要升级到Campaign 21.1（或更高版本）。
+如果您的环境是在低于 [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2)，则会受到影响。 您需要升级到Campaign v7.2.1（或更高版本）。
 
 了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -150,5 +150,22 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 1. 浏览到 **管理>生产>技术工作流**.
 1. 重新启动 **可投放性更新** (deliverabilityUpdate)工作流。 此操作应在您的所有Campaign实例(MKT、MID、RT、EXEC)上执行。
 1. 检查日志：工作流应在执行时不出错。
+
+
+## 常见问题解答 {#faq}
+
+### 如果我不升级环境，会发生什么情况？
+
+任何在8月31日之前未升级的Campaign实例将无法再连接Campaign可投放性服务器。 因此， **可投放性更新** (deliverabilityUpdate)工作流将失败。 此工作流管理MX规则和跳出规则的每日更新。
+
+如果您不升级环境，电子邮件设置将停止同步（MX管理规则、入站电子邮件规则、域管理规则和退回鉴别规则）。 这可能会随着时间的推移而影响您的投放能力。 如果对这些规则进行了重大更改，则必须从此时起手动应用这些规则。
+
+仅对于MKT实例 [全局抑制列表](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) 会受到影响。
+
+### 我现在无法升级。 指导是什么？
+
+如果您在8月31日之前无法升级实例，则必须临时禁用 **可投放性更新** （可交付性更新）工作流程，直到升级完成，以便它不会尝试与旧可交付性服务器同步。
+
+
 
 如需更多指导，请联系 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).

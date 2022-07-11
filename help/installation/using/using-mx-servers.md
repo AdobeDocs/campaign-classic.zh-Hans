@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 6740b5eed33612bd7a3b217a8f53b07518f879fb
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 1%
@@ -64,7 +64,7 @@ Adobe Campaign通过错误类型与原因之间的匹配来管理此流程：
 >
 >要了解有关投放失败类型和原因的更多信息，请参阅此 [部分](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
-## 投放能力实例
+## 投放能力实例 {#deliveratbility-env}
 
 MX规则和跳出规则的每日更新由客户端实例中的特定工作流管理，该工作流已连接到这些规则的可交付性实例所有者。
 
