@@ -5,7 +5,7 @@ description: 了解如何实施Campaign可投放性服务器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 6740b5eed33612bd7a3b217a8f53b07518f879fb
+source-git-commit: 4ad6f1e3a3d23383d17f947430c32fecefb3a8e1
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 3%
@@ -77,6 +77,7 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
    >[!CAUTION]
    >
    >如果您已经为其他集成(如Analytics连接器或Adobe触发器)使用AdobeIO JWT身份验证功能，则必须通过添加 **Campaign API** 到那个项目。
+
 1. 选择 **[!UICONTROL Add API]**.
    ![](assets/Add-API.png)
 1. 在 **[!UICONTROL Add an API]** 窗口，选择 **[!UICONTROL Adobe Campaign]**.
