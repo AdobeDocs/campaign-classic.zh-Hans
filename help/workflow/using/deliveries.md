@@ -3,10 +3,10 @@ product: campaign
 title: 投放
 description: 了解有关默认投放工作流的更多信息
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 5%
    <td> 此工作流使枚举值标准化。 默认情况下，此工作流于每日凌晨3点触发。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">可投放性更新</span> <br /> </td> 
+   <td> <span class="uicontrol">可投放性刷新</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
    <td> 利用此工作流，可创建退回邮件鉴别规则的列表，以及平台中域和MX的列表。 此工作流仅在HTTPS端口打开时才有效。 除非安装了可交付性模块，否则不会更新这些列表。<br /> </td> 
   </tr> 

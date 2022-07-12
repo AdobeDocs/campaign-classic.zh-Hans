@@ -4,7 +4,7 @@ title: 监测技术工作流
 description: 监测技术工作流
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 6%
@@ -48,9 +48,9 @@ ht-degree: 6%
 
 检查跟踪工作流是否按计划运行（默认为每小时一次），以及日记帐是否不会突出显示重复错误。 有关更多信息，请参阅此](delivery.md)章节[。
 
-对于 **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
+对于 **[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**:
 
-1. 检查 **[!UICONTROL Deliverability update]** 工作流每天成功运行并完成。
+1. 检查 **[!UICONTROL Refresh for Deliverability]** 工作流每天成功运行并完成。
 1. 在日志中验证规则是否定期更新。
 
 对于 **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
