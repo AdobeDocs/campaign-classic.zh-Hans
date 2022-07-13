@@ -5,16 +5,16 @@ description: 了解如何实施Campaign可投放性服务器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: dfa28fc10bcfddcf35e8ddfa0af1fba718400350
+source-git-commit: 5d6ff45605980e5fe21933c5d8fb6c48e02f1628
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1121'
 ht-degree: 3%
 
 ---
 
 # Campaign可投放性服务器 {#acc-deliverability}
 
-开始 [v7.2.1版](../../rn/using/latest-release.md#release-7-2-2), Adobe Campaign提出了新的可交付性服务器，可带来高可用性并解决安全合规性问题。 Campaign Classic现在可将投放能力规则、广播和禁止地址从和同步到新的投放能力服务器。
+开始 [v7.2.1版](../../rn/using/latest-release.md#release-7-2-2),Adobe Campaign依赖于新的可交付性服务器，该服务器可提供高可用性并解决安全合规性问题。 Campaign Classic现在可将投放能力规则、广播和禁止地址从和同步到新的投放能力服务器。 旧的可投放性服务器将于2022年8月31日解压缩。
 
 作为Campaign Classic客户，您必须实施新的可投放性服务器 **2022年8月31日之前**.
 
@@ -30,13 +30,13 @@ Adobe正在停用较旧的数据中心，这是出于安全合规性的原因。
 
 ## 您是否受影响？{#acc-deliverability-impacts}
 
-所有客户都需要将升级到 [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) 并实施其环境以从新的可投放性服务器中受益。
+所有客户都受到影响，必须升级到 [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) （或更多）并实施其环境以从新的可投放性服务器中受益。
 
 ## 如何更新？{#acc-deliverability-update}
 
 As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版本，并在Adobe Developer控制台中创建项目。
 
-作为 **内部部署/混合客户**，您需要升级到 [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) 从新的可投放性服务器中受益。 升级所有实例后，您必须 [实施新集成](#implementation-steps) Adobe投放能力服务器，并确保无缝过渡。
+作为 **内部部署/混合客户**，您需要升级到 [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) （或更多）从新的可投放性服务器中受益。 升级所有实例后，您必须 [实施新集成](#implementation-steps) Adobe投放能力服务器，并确保无缝过渡。
 
 ## 实施步骤 {#implementation-steps}
 
