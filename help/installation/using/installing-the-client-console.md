@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 0f63636e9cc22ac97e634a4f11dc585cb39b05c0
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 4%
@@ -36,7 +36,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 ## Adobe托管的实施 {#hosted-customers}
 
-作为托管客户的广告，您有两个选项可用于安装或更新客户端控制台：
+作为托管客户，您有两个选项可用来安装或更新客户端控制台：
 
 1. Adobe可以直接部署。 更新控制台后，系统将在弹出窗口中提示用户下载最新的客户端控制台版本。
 
