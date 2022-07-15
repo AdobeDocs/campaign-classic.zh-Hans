@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -271,7 +271,7 @@ ht-degree: 95%
 <p>5.7</p>
 </td>
 <td>
-<p>最低版本为 7.3 </p>
+<p>最低版本为 7.3</p>
 <p>最低版本为 7.0</p>
 </td>
 </tr>
@@ -341,7 +341,7 @@ ht-degree: 95%
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>11（从Campaign v7.3开始）</p>
+<p>11（从 Campaign v7.3 开始）</p>
 <p>10（建议用于日语实例）</p>
 <p>8</p>
 </td>
@@ -392,15 +392,15 @@ ht-degree: 95%
 <tr>
 <td>Android</td>
 <td>
-<p>12（从Campaign v7.3开始）、9.0、8.x、7.x</p>
-<p>带有Mobile SDK内部版本1.1.1</p>
+<p>12（从 Campaign v7.3 开始）、9.0、8.x、7.x</p>
+<p>带有移动 SDK 内部版本 1.1.1</p>
 </td>
 </tr>
 <tr>
 <td>iOS</td>
 <td>
 <p>iOS 9 - 15</p>
-<p>带有移动 SDK 内部版本 1.0.26，与 32 位和 64 位版本兼容。从Campaign v7.3开始，支持iOS 15</p>
+<p>带有移动 SDK 内部版本 1.0.26，与 32 位和 64 位版本兼容。从 Campaign v7.3 开始支持 iOS 15</p>
 </td>
 </tr>
 </tbody>
