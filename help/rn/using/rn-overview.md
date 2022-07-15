@@ -6,20 +6,22 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 29e56d6bf2817eeb863cbe33f99233a8241f2bf5
-workflow-type: ht
-source-wordcount: '881'
-ht-degree: 100%
+source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
+workflow-type: tm+mt
+source-wordcount: '921'
+ht-degree: 90%
 
 ---
 
-# 升级入门{#rn-overview}
+# 版本更新{#rn-overview}
 
 ![](../../assets/v7-only.svg)
 
+Adobe Campaign Classic会定期发布产品更新，这些更新带来了新功能、错误修复，并改进了性能、安全性和可用性。 这些更新将作为产品版本发布。 有关每个新内部版本的详细信息，请参阅 [发行说明](latest-release.md).
+
 ## 版本状态{#rn-statuses}
 
-每个新的内部版本都带有一个以颜色突出显示的状态。
+每个新内部版本都带有一个状态，该状态由 [发行说明](latest-release.md).
 
 ![](assets/do-not-localize/green3.png) **正式发布版** (GA) - 最新稳定版本，已在生产中验证并受到 Adobe 推荐。
 
@@ -43,7 +45,7 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 
 为确保配置稳定，Adobe 建议您在使用相同客户端配置运行的所有服务器上安装&#x200B;**相同的版本**。
 
-此外，除发行说明中另有提及外，客户端控制台必须在与服务器实例相同的&#x200B;**内部版本上运行**。
+此外，除于 [发行说明](latest-release.md)，客户端控制台必须位于 **同一内部版本** 作为服务器实例。
 
 要使您的实施保持为最新，请确保针对每个新版本阅读[已弃用和已删除的功能](../../rn/using/deprecated-features.md)和[兼容性矩阵](../../rn/using/compatibility-matrix.md)页面。
 
@@ -51,7 +53,9 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 
 作为托管客户（托管服务或混合），请联系客户关怀团队以升级环境。
 
-作为内部部署用户，您可以执行升级。为此，请[下载最新的稳定版本 (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 并升级所有环境。了解有关[升级过程](../../production/using/build-upgrade.md)的更多信息，并查阅[版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)。
+作为内部部署用户，您可以执行升级。为此，请[下载最新的稳定版本 (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 并升级所有环境。
+
+了解 [升级过程](../../production/using/build-upgrade.md)和 [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md).
 
 ## 年度升级 {#yearly-upgrade}
 
@@ -124,7 +128,7 @@ Adobe 团队将引导和指导您的组织完成这一过程。
     </a>
     </div>
     <ul>
-    <li>升级 Campaign Classic 实例的工作量和复杂性会随着两个版本 (v5 --&gt; v7) 之间的距离而增加。</li>
+    <li>升级 Campaign Classic 实例的工作量和复杂性会随着两个版本 (v6 --&gt; v7) 之间的距离而增加。</li>
     <li>您的组织等待的时间越长，升级就越复杂（您所面临的漏洞就越多）。</li>
     <li>定期更新可减少升级时的停机时间并降低回退风险。</li>
     </ul>

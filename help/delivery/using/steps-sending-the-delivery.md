@@ -4,10 +4,10 @@ title: 配置并发送投放
 description: 了解如何配置和发送投放
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
+source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 5%
+source-wordcount: '1502'
+ht-degree: 4%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
->[!NOTE]
->
->只有投放所有者才能启动投放。 为了使其他操作员（或操作员组）能够开始投放，您必须将他们添加为 **[!UICONTROL Delivery start:]** 字段。 有关详细信息，请参阅 [此部分](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+## 权限{#delivery-permissions}
+
+只有投放所有者才能启动投放。 要使其他运算符（或运算符组）能够开始投放，请将它们作为审阅者添加到 **[!UICONTROL Delivery start:]** 字段。 [了解详情](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
 
 ## 传递其他参数 {#delivery-additiona-parameters}
 
@@ -25,32 +25,32 @@ ht-degree: 5%
 
 ![](assets/s_ncs_user_wizard_delivery.png)
 
-* **[!UICONTROL Delivery priority]**:利用此选项，可声明投放的优先级（正常、高或低），从而影响投放的发送顺序。 这样，您就可以优先处理某些更紧急投放的订单，而不是其他投放。
+* **[!UICONTROL Delivery priority]**:使用此选项可通过设置投放的优先级来更改投放的发送顺序：正常、高或低。
 
-* **[!UICONTROL Message batch quantity]**:利用此选项可定义同一XML投放包内分组的消息数。 如果将参数设置为0，则会自动对消息进行分组。 包大小由计算定义 `<delivery size>/1024`，每个包最少包含8条消息，最多包含256条消息。
+* **[!UICONTROL Message batch quantity]**:使用此选项可定义同一XML投放包内分组的消息数。 如果将参数设置为0，则会自动对消息进行分组。 包大小由计算定义 `<delivery size>/1024`，每个包最少包含8条消息，最多包含256条消息。
 
    >[!IMPORTANT]
    >
-   >复制投放时，会重置参数。
+   >通过复制现有投放创建投放时，将重置此参数。
 
-* **[!UICONTROL Send using multiple waves]**:使用此选项可分批发送消息，而不是发送给整个受众。 配置批数及其比例。 [了解详情](#sending-using-multiple-waves)。
+* **[!UICONTROL Send using multiple waves]**:使用此选项可批量发送消息，而不是一次发送给整个受众。 [了解详情](#sending-using-multiple-waves)。
 
 * **[!UICONTROL Test SMTP delivery]**:使用此选项可测试通过SMTP的发送。 投放会一直处理到与SMTP服务器的连接，但不会发送：对于投放的每个收件人，Campaign会连接到SMTP提供程序服务器，执行SMTP RCPT TO命令，然后在SMTP DATA命令之前关闭连接。
 
    >[!NOTE]
    >
-   >* 在中间源中，不建议使用此选项。
+   >* 在中间源中不得设置此选项。
    >
    >* 在 [此部分](../../installation/using/configure-delivery-settings.md).
 
 
-* **[!UICONTROL Email BCC]**:此选项允许您通过密送方式在外部系统上存储电子邮件，方法是只需向邮件目标添加密送电子邮件地址。 如需详细信息，请参阅[此部分](sending-messages.md#archiving-emails)。
+* **[!UICONTROL Email BCC]**:使用此选项，只需向消息目标添加密送电子邮件地址，即可通过密送方式在外部系统上存储电子邮件。 [了解详情](sending-messages.md#archiving-emails)。
 
 ## 确认投放 {#confirming-delivery}
 
-配置投放并准备好发送后，请确保已运行投放分析。
+配置投放并准备好发送后，执行投放分析。
 
-为此，请单击 **[!UICONTROL Send]**，选择所需的操作并单击 **[!UICONTROL Analyze]**. 有关此内容的更多信息，请参阅 [启动分析](steps-validating-the-delivery.md#analyzing-the-delivery).
+为此，请单击 **[!UICONTROL Send]**，选择所需的操作并单击 **[!UICONTROL Analyze]**. [了解详情](steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -66,7 +66,7 @@ ht-degree: 5%
 
 ## 计划投放发送 {#scheduling-the-delivery-sending}
 
-您可以推迟邮件的投放，以便计划内容的投放或管理销售压力并避免过度营销。
+您可以通过计划投放来推迟消息发送。
 
 1. 单击 **[!UICONTROL Send]** 按钮并选择 **[!UICONTROL Postpone delivery]** 选项。
 
