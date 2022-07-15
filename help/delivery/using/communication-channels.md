@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: 通信渠道
-description: 创建投放以在不同渠道上发送个性化消息
+description: 创建投放，在不同渠道上发送个性化信息
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
