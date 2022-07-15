@@ -5,10 +5,10 @@ description: 了解如何实施Campaign可投放性服务器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 5d6ff45605980e5fe21933c5d8fb6c48e02f1628
+source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 3%
+source-wordcount: '1116'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->如果对这些更改有任何疑问，请参阅 [常见问题解答](#faq)，或联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>有关这些更改的更多问题，请参阅 [常见问题解答](#faq)，或联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}。
 
 ## 更改了哪些内容？{#acc-deliverability-changes}
 
@@ -56,7 +56,7 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 1. 检查 `DmRendering_cuid` 选项值。
 
    * 如果填充了选项，则可以开始实施。
-   * 如果未填写值，请联系 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 来获取你的CUID。
+   * 如果未填写值，请联系 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以获取您的CUID。
 
       必须在具有相同值的所有Campaign实例(MKT、MID、RT、EXEC)上填充此选项。 作为混合客户，请联系Adobe以在MID、RT和EXEC实例中设置选项。
 
@@ -91,7 +91,7 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
    >您应该保存 `config.zip` 文件，因为您将无法再次下载它。
 
 1. 单击 **[!UICONTROL Next]**。
-1. 选择任何现有 **[!UICONTROL Product profile]** 或根据需要创建新受众。 无需权限 **[!UICONTROL Product profile]**. 有关 **[!UICONTROL Product Profiles]**，请参阅 [本页](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+1. 选择任何现有 **[!UICONTROL Product profile]** 或根据需要创建新受众。 无需权限 **[!UICONTROL Product profile]**. 有关 **[!UICONTROL Product Profiles]**，请参阅 [本页](https://helpx.adobe.com/enterprise/using/manage-developers.html){_blank}。
    ![](assets/Product-Profile-API.png)
 
    然后，单击 **[!UICONTROL Save configured API]**.
@@ -152,18 +152,17 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 
 ## 常见问题解答 {#faq}
 
+### 更新的时间轴是什么？
+
+对于托管客户(Campaign Managed Services)，过渡到新的可投放性服务器将于’22年7月开始，该服务器允许添加这些改进的功能并增强安全性。 所有托管客户将在8月底之前进行更新。
+
+内部部署客户和混合客户必须在同一时间范围内进行过渡。
+
 ### 如果我不升级环境，会发生什么情况？
 
-任何在8月31日之前未升级的Campaign实例将无法再连接Campaign可投放性服务器。 因此， **可投放性刷新** (deliverabilityUpdate)工作流将失败。 此工作流管理MX规则和跳出规则的每日更新。
+任何在8月31日之前未升级的Campaign实例将无法再连接Campaign可投放性服务器。 因此， **可投放性刷新** （可投放性更新）工作流将失败，并且这将影响您的可投放性。
 
 如果您不升级环境，电子邮件设置将停止同步（MX管理规则、入站电子邮件规则、域管理规则和退回鉴别规则）。 这可能会随着时间的推移而影响您的投放能力。 如果对这些规则进行了重大更改，则必须从此时起手动应用这些规则。
 
 仅对于MKT实例 [全局抑制列表](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) 会受到影响。
 
-### 我现在无法升级。 指导是什么？
-
-如果您在8月31日之前无法升级实例，则必须临时禁用 **可投放性刷新** （可交付性更新）工作流程，直到升级完成，以便它不会尝试与旧可交付性服务器同步。
-
-
-
-如需更多指导，请联系 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
