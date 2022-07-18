@@ -5,7 +5,7 @@ description: 了解如何实施Campaign可投放性服务器
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
+source-git-commit: 64813905b360be1f2df7883f018e42bd154c2f9c
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 2%
@@ -58,7 +58,7 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
    * 如果填充了选项，则可以开始实施。
    * 如果未填写值，请联系 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以获取您的CUID。
 
-      必须在具有相同值的所有Campaign实例(MKT、MID、RT、EXEC)上填充此选项。 作为混合客户，请联系Adobe以在MID、RT和EXEC实例中设置选项。
+   必须在所有Campaign实例(MKT、MID、RT、EXEC)上使用正确的值填充此选项。 作为混合客户，请联系Adobe以在MID、RT和EXEC实例中设置选项。
 
 ### 步骤1:创建/更新Adobe Developer项目 {#adobe-io-project}
 
