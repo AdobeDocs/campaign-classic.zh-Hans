@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 001d5494e4b77e03c610c7c8b2cb38161d65c711
+source-git-commit: 378788764e244dcad12018d6d703048707d4c3e6
 workflow-type: tm+mt
-source-wordcount: '4906'
+source-wordcount: '4931'
 ht-degree: 99%
 
 ---
@@ -25,17 +25,28 @@ ht-degree: 99%
 
 ### 2022 年 7 月 {#july-2022}
 
-* 文档中详细介绍了’22年7月版随附的功能和改进功能。
+有关过渡到新可投放性服务器的详情，请参阅新技术说明。 [了解更多信息](../../technotes/using/deliverability-server.md)
+
+**随 7.3.1 版提供的文档更新**
+
+更新了兼容性矩阵。[了解更多信息](compatibility-matrix.md)
+
+更新了发行说明章节。[了解更多信息](rn-overview.md)
+
+iOS 15的时间敏感通知。 [了解更多信息](../../delivery/using/create-notifications-ios.md)
+
 
 ### 2022 年 3 月 {#mar-2022}
 
-* 添加了对 **[!UICONTROL Test SMTP delivery]** 选项的详细说明。[了解更多信息](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+添加了对 **[!UICONTROL Test SMTP delivery]** 选项的详细说明。[了解更多信息](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-* 更新了升级入门页面，以阐明 Campaign 控制台升级准则。[了解更多信息](../../rn/using/rn-overview.md)
+更新了升级入门页面，以阐明 Campaign 控制台升级准则。[了解更多信息](../../rn/using/rn-overview.md)
 
-* 现已推出新的 Campaign v7.2.2 内部版本。[了解更多信息](../../rn/using/latest-release.md)
-* 添加了与 ACS 连接器相关的故障排除信息。[了解更多信息](../../integrations/using/troubleshooting-the-acs-connector.md)
-* 生命周期已终止的旧版 PostgreSQL 已添加至[已弃用和删除的功能](../../rn/using/deprecated-features.md#dbe-eol)页面。
+现已推出新的 Campaign v7.2.2 内部版本。[了解更多信息](../../rn/using/latest-release.md)
+
+添加了与 ACS 连接器相关的故障排除信息。[了解更多信息](../../integrations/using/troubleshooting-the-acs-connector.md)
+
+生命周期已终止的旧版 PostgreSQL 已添加至[已弃用和删除的功能](../../rn/using/deprecated-features.md#dbe-eol)页面。
 
 ### 2022 年 2 月 {#february-2022}
 
