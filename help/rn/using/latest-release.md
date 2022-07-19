@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+source-git-commit: 8d6f5a3596c2c919e597e0b6ce3d711276c8df12
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1965'
 ht-degree: 98%
 
 ---
@@ -61,12 +61,12 @@ _2022 年 7 月 1 日_
 
 **修补程序**
 
-* 修复了上一内部版本中的错误，该错误会导致用户无法调整 IMS 登录页面的大小。
-* 修复了在现有实例上安装内容管理器包时发生的错误。
-* 修复了 **Campaigns** 菜单中持续显示“operation in progress”消息的问题。
-* 修复了在启用 Adobe Analytics 后发送带有 URL 的电子邮件时，会从 URL 中删除 BID (Broadlog ID) 和 CID（营销活动 ID）而不保存投放的问题。
-* 修复了在使用消息中心特定配置的实例的公共资源文件夹中上传图像时出现的问题。会显示以下错误消息：“Unable to upload the images to the tracking servers”。
-* 修复了在配置文件不正确的情况下重新生成配置时导致系统崩溃的问题。
+* 修复了上一内部版本中的错误，该错误会导致用户无法调整 IMS 登录页面的大小。(NEO-30085)
+* 修复了在现有实例上安装内容管理器包时发生的错误。(NEO-32349)
+* 修复了 **Campaigns** 菜单中持续显示“operation in progress”消息的问题。(NEO-44904)
+* 修复了在启用 Adobe Analytics 后发送带有 URL 的电子邮件时，会从 URL 中删除 BID (Broadlog ID) 和 CID（营销活动 ID）而不保存投放的问题。(NEO-38678)
+* 修复了在使用消息中心特定配置的实例的公共资源文件夹中上传图像时出现的问题。会显示以下错误消息：“Unable to upload the images to the tracking servers”。(NEO-38546、NEO-45572)
+* 修复了在配置文件不正确的情况下重新生成配置时导致系统崩溃的问题。(NEO-38752)
 * 修复了可能导致投放指标无法正确更新的问题。(NEO-44827)
 * 修复了在使用复杂查询时可能导致升级后错误的问题。(NEO-43648)
 * 修复了可能导致 webApps 预览无法运行的问题。(NEO-43242)
