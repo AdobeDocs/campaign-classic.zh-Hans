@@ -3,7 +3,7 @@ product: campaign
 title: 更新新的可投放性服务器
 description: 了解如何更新到新的Campaign可投放性服务器
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: de3a2bf1ab6851184c75bc302ff0c42db186e7f0
+source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 2%
