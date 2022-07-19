@@ -1,18 +1,16 @@
 ---
 product: campaign
-title: 迁移到新的可投放性服务器
-description: 了解如何实施Campaign可投放性服务器
-hide: true
-hidefromtoc: true
+title: 更新新的可投放性服务器
+description: 了解如何更新到新的Campaign可投放性服务器
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 02af725ec7f75e31496b72b533db485c85a416e1
+source-git-commit: de3a2bf1ab6851184c75bc302ff0c42db186e7f0
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1122'
 ht-degree: 2%
 
 ---
 
-# Campaign可投放性服务器 {#acc-deliverability}
+# 更新新的可投放性服务器 {#acc-deliverability}
 
 开始 [v7.2.1版](../../rn/using/latest-release.md#release-7-2-2),Adobe Campaign依赖于新的可交付性服务器，该服务器可提供高可用性并解决安全合规性问题。 Campaign Classic现在可将投放能力规则、广播和禁止地址从和同步到新的投放能力服务器。 旧的可投放性服务器将于2022年8月31日解压缩。
 
