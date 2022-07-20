@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 56e9fcc4240649f53239b12f1390dea041602e79
+source-git-commit: b472178316f97f08e9c87f8aebd707709f320e5f
 workflow-type: tm+mt
 source-wordcount: '2823'
 ht-degree: 0%
@@ -247,7 +247,7 @@ ht-degree: 0%
 1. 首先，使用以下查询恢复要清除的投放列表：
 
    ```sql
-   SELECT iDeliveryId, iNeedMirrorPage FROM NmsDelivery WHERE iWebResPurged = 0 AND tsWebValidity IS NOT NULL AND tsWebValidity < $(curdate)"
+   SELECT iDeliveryId, iNeedMirrorPage FROM NmsDelivery WHERE iWebResPurged = 0 AND tsWebValidity IS NOT NULL AND tsWebValidity < $(curdate)
    ```
 
    where `$(curDate)` 是当前服务器日期。
@@ -255,11 +255,11 @@ ht-degree: 0%
 1. 的 **NmsMirrorPageInfo** 然后，如果需要，使用先前恢复的投放的标识符清除表。 批量删除用于生成以下查询：
 
    ```sql
-   DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000)
+   DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000
    ```
 
    ```sql
-   DELETE FROM NmsMirrorPageSearch WHERE iMessageId IN (SELECT iMessageId FROM NmsMirrorPageSearch WHERE iDeliveryId = $(dl)) LIMIT 5000)
+   DELETE FROM NmsMirrorPageSearch WHERE iMessageId IN (SELECT iMessageId FROM NmsMirrorPageSearch WHERE iDeliveryId = $(dl)) LIMIT 5000
    ```
 
    where `$(dl)` 是投放的标识符。
@@ -304,7 +304,7 @@ ht-degree: 0%
 1. 对 **XtkReject** 表中包含以下查询：
 
    ```sql
-   DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l))
+   DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l)
    ```
 
    where `$(curDate)` 是当前服务器日期，我们从中减去为 **NmsCleanup_RejectsPurgeDelay** 选项(请参阅 [部署向导](#deployment-wizard))和 `$(l)` 是要批量删除的最大记录数。
