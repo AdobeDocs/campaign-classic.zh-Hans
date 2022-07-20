@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
+source-git-commit: 56e9fcc4240649f53239b12f1390dea041602e79
 workflow-type: tm+mt
-source-wordcount: '2910'
+source-wordcount: '2823'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 的 **[!UICONTROL Database cleanup]** 可通过 **[!UICONTROL Administration > Production > Technical workflows]** 节点，用于删除过时的数据以避免数据库的指数增长。 工作流会自动触发，无需用户干预。
 
-![](assets/ncs_cleanup_workflow.png)
+![cleanup](assets/ncs_cleanup_workflow.png)
 
 ## 配置 {#configuration}
 
@@ -40,11 +40,11 @@ ht-degree: 0%
 * **[!UICONTROL Weekly]**
 * **[!UICONTROL Once]**
 
-![](assets/ncs_cleanup_scheduler.png)
+![调度程序](assets/ncs_cleanup_scheduler.png)
 
 >[!IMPORTANT]
 >
->为了 **[!UICONTROL Database cleanup]** 工作流要在调度程序中定义的日期和时间启动，必须启动工作流引擎(wfserver)。 如果情况并非如此，则在下次启动工作流引擎之前不会进行数据库清理。
+>为了 **[!UICONTROL Database cleanup]** 工作流要在调度程序中定义的日期和时间启动，必须启动工作流引擎(wfserver)。
 
 ### 部署向导 {#deployment-wizard}
 
@@ -83,12 +83,10 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->如果其中任务失败，则不会执行以下任务。\
->SQL查询 **限制** 属性将重复执行，直到处理所有信息为止。
-
->[!NOTE]
+>如果其中一个任务失败，则不会执行下一个任务。
 >
->以下描述数据库清理工作流所执行任务的部分保留给数据库管理员或熟悉SQL语言的用户。
+>SQL查询 **限制** 属性会重复执行，直到所有信息都被处理。
+
 
 ### 要删除清理的列表 {#lists-to-delete-cleanup}
 
@@ -96,31 +94,31 @@ ht-degree: 0%
 
 1. 将使用以下SQL查询恢复要删除的列表：
 
-   ```
+   ```sql
    SELECT iGroupId, sLabel, iType FROM NmsGroup WHERE iDeleteStatus <> 0 OR tsExpirationDate <= GetDate() 
    ```
 
 1. 每个列表都有多个指向其他表的链接。 使用以下查询批量删除所有这些链接：
 
-   ```
+   ```sql
    DELETE FROM $(relatedTable) WHERE iGroupId=$(l) IN (SELECT iGroupId FROM $(relatedTable) WHERE iGroupId=$(l) LIMIT 5000) 
    ```
 
-   where **$(relatedTable)** 是与 **NmsGroup** 和 **$(l)** 是列表标识符。
+   where `$(relatedTable)` 是与 **NmsGroup** 和 `$(l)` 是列表标识符。
 
 1. 当该列表为“List”类型列表时，将使用以下查询删除关联的表：
 
-   ```
+   ```sql
    DROP TABLE grp$(l)
    ```
 
 1. 每 **选择** 使用以下查询删除操作恢复的类型列表：
 
-   ```
+   ```sql
    DELETE FROM NmsGroup WHERE iGroupId=$(l) 
    ```
 
-   where **$(l)** 是列表标识符
+   where `$(l)` 是列表标识符
 
 ### 清理要删除或回收的投放 {#cleanup-of-deliveries-to-be-deleted-or-recycled}
 
@@ -133,7 +131,7 @@ ht-degree: 0%
 
    * 在投放排除表(**NmsDlvExclusion**)，则会使用以下查询：
 
-      ```
+      ```sql
       DELETE FROM NmsDlvExclusion WHERE iDeliveryId=$(l)
       ```
 
@@ -141,11 +139,11 @@ ht-degree: 0%
 
    * 在优惠券表(**NmsCouponValue**)，则会使用以下查询（包含批量删除）：
 
-      ```
+      ```sql
       DELETE FROM NmsCouponValue WHERE iMessageId IN (SELECT iMessageId FROM NmsCouponValue WHERE EXISTS (SELECT B.iBroadLogId FROM $(BroadLogTableName) B WHERE B.iDeliveryId = $(l) AND B.iBroadLogId = iMessageId ) LIMIT 5000)
       ```
 
-      where **$(l)** 是投放的标识符。
+      where `$(l)` 是投放的标识符。
 
    * 在投放日志表(**NmsBroadlogXxx**)，则批量删除会以20,000条记录的批次执行。
    * 在优惠建议表(**NmsCampationXxx**)，则批量删除会以20,000条记录的批次执行。
@@ -156,21 +154,21 @@ ht-degree: 0%
    * 在批处理日志表中(**XtkJobLog**)，则批量删除会以20,000条记录的批次执行。 此表包含要删除的投放日志。
    * 在投放URL跟踪表中(**NmsTrackingUrl**)，则会使用以下查询：
 
-      ```
+      ```sql
       DELETE FROM NmsTrackingUrl WHERE iDeliveryId=$(l)
       ```
 
-      where **$(l)** 是投放的标识符。
+      where `$(l)` 是投放的标识符。
 
       此表包含在要删除的投放中找到的URL，以启用其跟踪。
 
 1. 将从投放表格(**NmsDelivery**):
 
-   ```
+   ```sql
    DELETE FROM NmsDelivery WHERE iDeliveryId = $(l)
    ```
 
-   where **$(l)** 是投放的标识符。
+   where `$(l)` 是投放的标识符。
 
 #### 使用中间源的投放 {#deliveries-using-mid-sourcing}
 
@@ -178,7 +176,7 @@ ht-degree: 0%
 
 1. 为此，工作流会检查每个投放是否处于非活动状态（根据其状态）。 如果投放处于活动状态，则会在删除之前停止该投放。 通过执行以下查询来执行检查：
 
-   ```
+   ```sql
    SELECT iState FROM NmsDelivery WHERE iDeliveryId = $(l) AND iState <> 100;
    ```
 
@@ -192,23 +190,23 @@ ht-degree: 0%
 
 1. 的 **[!UICONTROL Database cleanup]** 工作流会创建已过期的投放列表。 此列表包含状态不为 **[!UICONTROL Finished]** ，以及最近停止的包含超过10,000条未处理消息的投放。 使用以下查询：
 
-   ```
+   ```sql
    SELECT iDeliveryId, iState FROM NmsDelivery WHERE iDeleteStatus=0 AND iIsModel=0 AND iDeliveryMode=1 AND ( (iState >= 51 AND iState < 85 AND tsValidity IS NOT NULL AND tsValidity < $(currentDate) ) OR (iState = 85 AND DateMinusDays(15) < tsLastModified AND iToDeliver - iProcessed >= 10000 ))
    ```
 
-   where **投放模式1** 匹配 **[!UICONTROL Mass delivery]** 模式， **州51** 匹配 **[!UICONTROL Start pending]** 州， **州85** 匹配 **[!UICONTROL Stopped]** 状态，且投放服务器上批量更新的投放日志的最大数量等于10,000。
+   where `delivery mode 1` 匹配 **[!UICONTROL Mass delivery]** 模式， `state 51` 匹配 **[!UICONTROL Start pending]** 州， `state 85` 匹配 **[!UICONTROL Stopped]** 状态，且投放服务器上批量更新的投放日志的最大数量等于10,000。
 
 1. 然后，该工作流包含使用中间源的最近过期投放的列表。 尚未通过中间源服务器恢复投放日志的投放将被排除。
 
    使用以下查询：
 
-   ```
+   ```sql
    SELECT iDeliveryId, tsValidity, iMidRemoteId, mData FROM NmsDelivery WHERE (iDeliveryMode = 4 AND (iState = 85 OR iState = 95) AND tsValidity IS NOT NULL AND (tsValidity < SubDays(GetDate() , 15) OR tsValidity < $(DateOfLastLogPullUp)) AND tsLastModified > SubDays(GetDate() , 15))
    ```
 
 1. 以下查询用于检测外部帐户是否仍处于活动状态，以便按日期筛选投放：
 
-   ```
+   ```sql
    SELECT iExtAccountId FROM NmsExtAccount WHERE iActive<>0 AND sName=$(providerName)
    ```
 
@@ -216,31 +214,31 @@ ht-degree: 0%
 
    使用以下查询：
 
-   ```
+   ```sql
    UPDATE $(BroadLogTableName) SET tsLastModified=$(curdate), iStatus=7, iMsgId=$(bl) WHERE iDeliveryId=$(dl) AND iStatus=6
    ```
 
-   where **$(curdate)** 是数据库服务器的当前日期， **$(bl)** 是投放日志消息的标识符， **$(dl)** 是投放标识符， **投放状态6** 匹配 **[!UICONTROL Pending]** 状态和 **投放状态7** 匹配 **[!UICONTROL Delivery cancelled]** 状态。
+   where `$(curdate)`是数据库服务器的当前日期， `$(bl)` 是投放日志消息的标识符， `$(dl)` 是投放标识符， `delivery status 6` 匹配 **[!UICONTROL Pending]** 状态和 `delivery status 7` 匹配 **[!UICONTROL Delivery cancelled]** 状态。
 
-   ```
+   ```sql
    UPDATE NmsDelivery SET iState = 95, tsLastModified = $(curdate), tsBroadEnd = tsValidity WHERE iDeliveryId = $(dl)
    ```
 
-   where **交货状态95** 匹配 **[!UICONTROL Finished]** 状态和 **$(dl)** 是投放的标识符。
+   where `delivery state 95` 匹配 **[!UICONTROL Finished]** 状态和 `$(dl)` 是投放的标识符。
 
 1. 所有片段(**deliveryParts**)，并删除正在进行的通知投放的所有过时片段。 批量删除功能同时适用于这两个任务。
 
    使用以下查询：
 
-   ```
+   ```sql
    DELETE FROM NmsDeliveryPart WHERE iDeliveryPartId IN (SELECT iDeliveryPartId FROM NmsDeliveryPart WHERE iDeliveryId IN (SELECT iDeliveryId FROM NmsDelivery WHERE iState=95 OR iState=85) LIMIT 5000)
    ```
 
-   ```
+   ```sql
    DELETE FROM NmsDeliveryPart WHERE iDeliveryPartId IN (SELECT iDeliveryPartId FROM NmsDeliveryPart WHERE tsValidity < $(curDate) LIMIT 500000)
    ```
 
-   where **交货状态95** 匹配 **[!UICONTROL Finished]** 状态， **交货状态85** 匹配 **[!UICONTROL Stopped]** 状态和 **$(curDate)** 是当前服务器日期。
+   where `delivery state 95` 匹配 **[!UICONTROL Finished]** 状态， `delivery state 85` 匹配 **[!UICONTROL Stopped]** 状态和 `$(curDate)` 是当前服务器日期。
 
 ### 清理镜像页面 {#cleanup-of-mirror-pages}
 
@@ -248,32 +246,32 @@ ht-degree: 0%
 
 1. 首先，使用以下查询恢复要清除的投放列表：
 
-   ```
+   ```sql
    SELECT iDeliveryId, iNeedMirrorPage FROM NmsDelivery WHERE iWebResPurged = 0 AND tsWebValidity IS NOT NULL AND tsWebValidity < $(curdate)"
    ```
 
-   where **$(curDate)** 是当前服务器日期。
+   where `$(curDate)` 是当前服务器日期。
 
 1. 的 **NmsMirrorPageInfo** 然后，如果需要，使用先前恢复的投放的标识符清除表。 批量删除用于生成以下查询：
 
-   ```
+   ```sql
    DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000)
    ```
 
-   ```
+   ```sql
    DELETE FROM NmsMirrorPageSearch WHERE iMessageId IN (SELECT iMessageId FROM NmsMirrorPageSearch WHERE iDeliveryId = $(dl)) LIMIT 5000)
    ```
 
-   where **$(dl)** 是投放的标识符。
+   where `$(dl)` 是投放的标识符。
 
 1. 然后，将条目添加到投放日志。
 1. 然后识别已清除的投放，以避免以后必须重新处理它们。 将执行以下查询：
 
-   ```
+   ```sql
    UPDATE NmsDelivery SET iWebResPurged = 1 WHERE iDeliveryId IN ($(strIn))
    ```
 
-   where **$(strIn)** 是投放标识符的列表。
+   where `$(strIn)` 是投放标识符的列表。
 
 ### 清理工作表 {#cleanup-of-work-tables}
 
@@ -281,21 +279,21 @@ ht-degree: 0%
 
 1. 名称以开头的表列表 **wkDlv_** 将首先通过以下查询(postgresql)恢复：
 
-   ```
+   ```sql
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkDlv_') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
 1. 然后，将排除正在进行的工作流使用的表。 为此，可使用以下查询恢复正在进行的投放列表：
 
-   ```
+   ```sql
    SELECT iDeliveryId FROM NmsDelivery WHERE iDeliveryId<>0 AND iDeleteStatus=0 AND iState NOT IN (0,85,100);
    ```
 
-   其中0是与 **[!UICONTROL Being edited]** 投放状态，85与 **[!UICONTROL Stopped]** 状态和100匹配 **[!UICONTROL Deleted]** 状态。
+   where `0` 是与 **[!UICONTROL Being edited]** 投放状态， `85` 匹配 **[!UICONTROL Stopped]** 状态和 `100` 匹配 **[!UICONTROL Deleted]** 状态。
 
 1. 将使用以下查询删除不再使用的表：
 
-   ```
+   ```sql
    DROP TABLE wkDlv_15487_1;
    ```
 
@@ -305,15 +303,15 @@ ht-degree: 0%
 
 1. 对 **XtkReject** 表中包含以下查询：
 
-   ```
+   ```sql
    DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l))
    ```
 
-   where **$(curDate)** 是当前服务器日期，我们从中减去为 **NmsCleanup_RejectsPurgeDelay** 选项(请参阅 [部署向导](#deployment-wizard))和 **$(l)** 是要批量删除的最大记录数。
+   where `$(curDate)` 是当前服务器日期，我们从中减去为 **NmsCleanup_RejectsPurgeDelay** 选项(请参阅 [部署向导](#deployment-wizard))和 `$(l)` 是要批量删除的最大记录数。
 
 1. 然后，将使用以下查询删除所有孤立拒绝：
 
-   ```
+   ```sql
    DELETE FROM XtkReject WHERE iJobId NOT IN (SELECT iJobId FROM XtkJob)
    ```
 
@@ -327,54 +325,54 @@ ht-degree: 0%
 
 1. 要恢复要删除的工作流列表，可使用以下查询：
 
-   ```
+   ```sql
    SELECT iWorkflowId, iHistory FROM XtkWorkflow WHERE iWorkflowId<>0
    ```
 
 1. 此查询会生成工作流列表，工作流将使用以下查询删除所有链接的日志、已完成的任务和已完成事件：
 
-   ```
+   ```sql
    DELETE FROM XtkWorkflowLog WHERE iWorkflowId=$(lworkflow) AND tsLog < DateMinusDays($(lhistory))
    ```
 
-   ```
+   ```sql
    DELETE FROM XtkWorkflowTask WHERE iWorkflowId=$(lworkflow) AND iStatus<>0 AND tsCompletion < DateMinusDays($(lhistory)) 
    ```
 
-   ```
+   ```sql
    DELETE FROM XtkWorkflowEvent WHERE iWorkflowId=$(l) AND iStatus>2 AND tsProcessing < DateMinusDays($(lHistory))
    ```
 
-   where **$(lworkflow)** 是工作流的标识符，并且 **$(lhistory)** 是历史记录的标识符。
+   where `$(lworkflow)` 是工作流的标识符，并且 `$(lhistory)` 是历史记录的标识符。
 
 1. 所有未使用的表都将被删除。 为此，将通过 **wkf%** 使用以下查询键入掩码(postgresql):
 
-   ```
+   ```sql
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkf%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
 1. 然后，将排除挂起的工作流实例使用的所有表。 可使用以下查询恢复活动工作流的列表：
 
-   ```
+   ```sql
    SELECT iWorkflowId FROM XtkWorkflow WHERE iWorkflowId<>0 AND iState<>20
    ```
 
 1. 然后，恢复每个工作流标识符，以查找正在进行的工作流所使用的表的名称。 这些名称将从以前恢复的表列表中排除。
 1. 使用以下查询排除“增量查询”类型的活动历史记录表：
 
-   ```
+   ```sql
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkfhisto%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
-   ```
+   ```sql
    SELECT iWorkflowId FROM XtkWorkflow WHERE iWorkflowId IN ($(strCondition))
    ```
 
-   where **$(strcondition)** 是与 **wkfhisto%** 蒙版。
+   where `$(strcondition)` 是与 **wkfhisto%** 蒙版。
 
 1. 剩余的表将使用以下查询删除：
 
-   ```
+   ```sql
    DROP TABLE wkf15487_12;
    ```
 
@@ -382,7 +380,7 @@ ht-degree: 0%
 
 此任务使用以下查询删除工作流登录：
 
-```
+```sql
 DELETE FROM XtkWorkflowLogin WHERE iWorkflowId NOT IN (SELECT iWorkflowId FROM XtkWorkflow)
 ```
 
@@ -390,7 +388,7 @@ DELETE FROM XtkWorkflowLogin WHERE iWorkflowId NOT IN (SELECT iWorkflowId FROM X
 
 此任务将删除链接到组的孤立工作表。 的 **NmsGroup** 表存储要清除的组（类型不同于0）。 表名的前缀为 **grp**. 要确定要清理的组，可使用以下查询：
 
-```
+```sql
 SELECT iGroupId FROM NmsGroup WHERE iType>0"
 ```
 
@@ -398,27 +396,27 @@ SELECT iGroupId FROM NmsGroup WHERE iType>0"
 
 此任务使用批量删除功能从访客表中删除过时的记录。 过时记录是指上次修改时间早于部署向导中定义的保护期的记录(请参阅 [部署向导](#deployment-wizard))。 使用以下查询：
 
-```
+```sql
 DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
 ```
 
-where **$(tsDate)** 是当前服务器日期，从中我们减去为 **NmsCleanup_VisitorPurgeDelay** 选项。
+where `$(tsDate)` 是当前服务器日期，从中我们减去为 **NmsCleanup_VisitorPurgeDelay** 选项。
 
 ### NPAI的清理 {#cleanup-of-npai}
 
 此任务允许您从 **NmsAddress** 表。 以下查询用于执行批量删除：
 
-```
+```sql
 DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=2 AND tsLastModified < $(tsDate1) AND tsLastModified >= $(tsDate2) LIMIT 5000)
 ```
 
-where **状态2** 匹配 **[!UICONTROL Valid]** 状态， **$(tsDate1)** 是当前服务器日期，并且 **$(tsDate2)** 匹配 **NmsCleanup_LastCleanup** 选项。
+where `status 2` 匹配 **[!UICONTROL Valid]** 状态， `$(tsDate1)` 是当前服务器日期，并且 `$(tsDate2)` 匹配 **NmsCleanup_LastCleanup** 选项。
 
 ### 清理订阅 {#cleanup-of-subscriptions-}
 
 此任务将从 **NmsSubscription** 表，使用批量删除。 使用以下查询：
 
-```
+```sql
 DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 ```
 
@@ -428,25 +426,25 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 1. 首先，使用以下查询恢复跟踪日志表的列表：
 
-   ```
+   ```sql
    SELECT distinct(sTrackingLogSchema) FROM NmsDeliveryMapping WHERE sTrackingLogSchema IS NOT NULL;
    ```
 
 1. 批量删除用于清除以前恢复的表列表中的所有表。 使用以下查询：
 
-   ```
+   ```sql
    DELETE FROM NmsTrackingLogRcp WHERE iTrackingLogId IN (SELECT iTrackingLogId FROM NmsTrackingLogRcp WHERE tsLog < $(tsDate) LIMIT 5000) 
    ```
 
-   where **$(tsDate)** 是当前服务器日期，我们从中减去为 **NmsCleanup_TrackingLogPurgeDelay** 选项。
+   where `$(tsDate)` 是当前服务器日期，我们从中减去为 **NmsCleanup_TrackingLogPurgeDelay** 选项。
 
 1. 使用批量删除功能清除跟踪统计信息表。 使用以下查询：
 
-   ```
+   ```sql
    DELETE FROM NmsTrackingStats WHERE iTrackingStatsId IN (SELECT iTrackingStatsId FROM NmsTrackingStats WHERE tsStart < $(tsDate) LIMIT 5000) 
    ```
 
-   where **$(tsDate)** 是当前服务器日期，我们从中减去为 **NmsCleanup_TrackingStatPurgeDelay** 选项。
+   where `$(tsDate)` 是当前服务器日期，我们从中减去为 **NmsCleanup_TrackingStatPurgeDelay** 选项。
 
 ### 清理投放日志 {#cleanup-of-delivery-logs}
 
@@ -454,26 +452,26 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 1. 为此，可使用以下查询恢复投放日志架构的列表：
 
-   ```
+   ```sql
    SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL UNION SELECT distinct(sBroadLogExclSchema) FROM NmsDeliveryMapping WHERE sBroadLogExclSchema IS NOT NULL
    ```
 
 1. 使用中间源时， **NmsBroadLogMid** 投放映射中未引用表。 的 **nms:broadLogMid** 架构会添加到由上一个查询恢复的列表。
 1. 的 **数据库清理** 然后，工作流从以前恢复的表中清除过时的数据。 使用以下查询：
 
-   ```
+   ```sql
    DELETE FROM $(tableName) WHERE iBroadLogId IN (SELECT iBroadLogId FROM $(tableName) WHERE tsLastModified < $(option) LIMIT 5000) 
    ```
 
-   where **$(tableName)** 是架构列表中每个表的名称，以及 **$(option)** 是为 **NmsCleanup_BroadLogPurgeDelay** 选项(请参阅 [部署向导](#deployment-wizard))。
+   where `$(tableName)` 是架构列表中每个表的名称，以及 `$(option)` 是为 **NmsCleanup_BroadLogPurgeDelay** 选项(请参阅 [部署向导](#deployment-wizard))。
 
 1. 最后，工作流检查 **NmsProviderMsgId** 表存在。 如果是，则使用以下查询删除所有过时的数据：
 
-   ```
+   ```sql
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
    ```
 
-   where **$(option)** 与为 **NmsCleanup_BroadLogPurgeDelay** 选项(请参阅 [部署向导](#deployment-wizard))。
+   where `$(option)` 与为 **NmsCleanup_BroadLogPurgeDelay** 选项(请参阅 [部署向导](#deployment-wizard))。
 
 ### 清理NmsEmailErrorStat表 {#cleanup-of-the-nmsemailerrorstat-table-}
 
@@ -488,31 +486,31 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 中的错误总数 **NmsEmailErrorStat** 在开始日期和结束日期之间，使用以下查询恢复表：
 
-```
-"SELECT COUNT(*) FROM NmsEmailErrorStat WHERE tsDate>= $(start) AND tsDate< $(end)"
+```sql
+SELECT COUNT(*) FROM NmsEmailErrorStat WHERE tsDate>= $(start) AND tsDate< $(end)
 ```
 
-where **$end** 和 **$start** 是先前定义的开始和结束日期。
+where `$end` 和 `$start` 是先前定义的开始和结束日期。
 
 如果总计大于0:
 
 1. 执行以下查询是为了仅将错误保留在超出特定阈值（等于20）之外：
 
-   ```
-   "SELECT iMXIP, iPublicId, SUM(iTotalConnections), SUM(iTotalErrors), SUM(iMessageErrors), SUM(iAbortedConnections), SUM(iFailedConnections), SUM(iRefusedConnections), SUM(iTimeoutConnections) FROM NmsEmailErrorStat WHERE tsDate>=$(start ) AND tsDate<$(end ) GROUP BY iMXIP, iPublicId HAVING SUM(iTotalErrors) >= 20"
+   ```sql
+   SELECT iMXIP, iPublicId, SUM(iTotalConnections), SUM(iTotalErrors), SUM(iMessageErrors), SUM(iAbortedConnections), SUM(iFailedConnections), SUM(iRefusedConnections), SUM(iTimeoutConnections) FROM NmsEmailErrorStat WHERE tsDate>=$(start ) AND tsDate<$(end ) GROUP BY iMXIP, iPublicId HAVING SUM(iTotalErrors) >= 20
    ```
 
 1. 的 **coalescingErrors** 消息。
 1. 将创建新连接，以删除在开始日期和结束日期之间发生的所有错误。 使用以下查询：
 
-   ```
-   "DELETE FROM NmsEmailErrorStat WHERE tsDate>=$(start) AND tsDate<$(end)"
+   ```sql
+   DELETE FROM NmsEmailErrorStat WHERE tsDate>=$(start) AND tsDate<$(end)
    ```
 
 1. 每个错误都保存在 **NmsEmailErrorStat** 表：
 
-   ```
-   "INSERT INTO NmsEmailErrorStat(iMXIP, iPublicId, tsDate, iTotalConnections, iTotalErrors, iTimeoutConnections, iRefusedConnections, iAbortedConnections, iFailedConnections, iMessageErrors) VALUES($(lmxip ), $(lpublicId ), $(tsstart ), $(lconnections ), $(lconnectionErrors ),$(ltimeoutConnections ), $(lrefusedConnections ), $(labortedConnections ), $(lfailedConnections ), $(lmessageErrors))"
+   ```sql
+   INSERT INTO NmsEmailErrorStat(iMXIP, iPublicId, tsDate, iTotalConnections, iTotalErrors, iTimeoutConnections, iRefusedConnections, iAbortedConnections, iFailedConnections, iMessageErrors) VALUES($(lmxip ), $(lpublicId ), $(tsstart ), $(lconnections ), $(lconnectionErrors ),$(ltimeoutConnections ), $(lrefusedConnections ), $(labortedConnections ), $(lfailedConnections ), $(lmessageErrors))
    ```
 
    其中每个变量与由上一个查询恢复的值匹配。
@@ -527,7 +525,7 @@ where **$end** 和 **$start** 是先前定义的开始和结束日期。
 
 使用以下查询：
 
-```
+```sql
 DELETE FROM NmsEmailError WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailErrorStat)
 ```
 
@@ -537,7 +535,7 @@ DELETE FROM NmsEmailError WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmai
 
 使用以下查询：
 
-```
+```sql
 DELETE FROM NmsMxDomain WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailErrorStat)
 ```
 
@@ -549,11 +547,11 @@ DELETE FROM NmsMxDomain WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailE
 
 通过以下查询，可恢复命题表列表并对每个命题表进行批量删除：
 
-```
+```sql
 DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FROM NmsPropositionXxx WHERE tsLastModified < $(option) LIMIT 5000) 
 ```
 
-where **$(option)** 是为 **NmsCleanup_CompationPurgeDelay** 选项(请参阅 [部署向导](#deployment-wizard))。
+where `$(option)` 是为 **NmsCleanup_CompationPurgeDelay** 选项(请参阅 [部署向导](#deployment-wizard))。
 
 ### 清理模拟表 {#cleanup-of-simulation-tables}
 
@@ -561,13 +559,13 @@ where **$(option)** 是为 **NmsCleanup_CompationPurgeDelay** 选项(请参阅 [
 
 1. 要恢复需要清理的模拟列表，请使用以下查询：
 
-   ```
+   ```sql
    SELECT iSimulationId FROM NmsSimulation WHERE iSimulationId<>0
    ```
 
 1. 要删除的表的名称由 **wkSimu_** 前缀后跟模拟的标识符(例如： **wkSimu_456831_aggr**):
 
-   ```
+   ```sql
    DROP TABLE wkSimu_456831_aggr
    ```
 
@@ -575,7 +573,7 @@ where **$(option)** 是为 **NmsCleanup_CompationPurgeDelay** 选项(请参阅 [
 
 使用以下查询：
 
-```
+```sql
 DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
 ```
 
@@ -585,7 +583,7 @@ where **$(tsDate)** 是为 **XtkCleanup_AuditTrailPurgeDelay** 选项。
 
 使用以下查询：
 
-```
+```sql
 DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=STATUS_QUARANTINE AND tsLastModified < $(NmsCleanup_AppSubscriptionRcpPurgeDelay + 5d) AND iType IN (MESSAGETYPE_IOS, MESSAGETYPE_ANDROID ) LIMIT 5000)
 ```
 
@@ -607,7 +605,7 @@ DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WH
 
 要恢复broadlog架构列表，请使用以下查询：
 
-```
+```sql
 SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
 ```
 
@@ -619,8 +617,8 @@ SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema I
 
 此任务会清除 **sessionInfo** 表中，将使用以下查询：
 
-```
- DELETE FROM XtkSessionInfo WHERE tsexpiration < $(curdate) 
+```sql
+DELETE FROM XtkSessionInfo WHERE tsexpiration < $(curdate) 
 ```
 
 ### 清理过期事件 {#cleansing-expired-events}
