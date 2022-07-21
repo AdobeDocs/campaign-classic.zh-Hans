@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8d6f5a3596c2c919e597e0b6ce3d711276c8df12
+source-git-commit: 0d0c97213cf8b95bbadd06f4c5666213b6c6c8f1
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 98%
+source-wordcount: '1987'
+ht-degree: 97%
 
 ---
 
@@ -84,6 +84,7 @@ _2022 年 7 月 1 日_
 * 修复了由于间歇性核心转储而导致崩溃的问题 (NEO-30549)
 * 修复了在投放中使用错误 HTML 代码时可能导致崩溃的问题。(NEO-40385)
 * 修复了可能导致非管理员用户无法访问投放属性中的 **Analysis** 选项卡的问题。(NEO-34025)
+* 修复了在消息准备期间可能会阻止在块模式下从外部服务器上传图像的问题。 (NEO-40307)
 
 ## ![](assets/do-not-localize/green_2.png) 7.2.2 版 - 版本 9349 {#release-7-2-2}
 
