@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 配置营销活动响应管理器{#configuration}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 本节面向负责配置响应管理的人员。 它假定了有关扩展架构、定义工作流和SQL编程的一定数量的知识。
 

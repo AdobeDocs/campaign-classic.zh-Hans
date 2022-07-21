@@ -4,7 +4,7 @@ title: 筛选规则
 description: 了解如何使用过滤规则
 feature: Typology Rules
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 筛选规则{#filtering-rules}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 通过筛选规则，您可以根据查询中定义的条件定义要排除的消息。 这些规则已链接到定向维度。
 

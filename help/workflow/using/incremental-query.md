@@ -4,7 +4,7 @@ title: 增量查询
 description: 了解有关增量查询工作流活动的更多信息
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 增量查询{#incremental-query}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 通过增量查询，您可以根据条件定期选择目标，同时排除已针对此条件定向的人员。
 

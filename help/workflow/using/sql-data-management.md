@@ -4,7 +4,7 @@ title: SQL 数据管理
 description: 了解有关SQL数据管理工作流活动的更多信息
 feature: Workflows
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # SQL 数据管理{#sql-data-management}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **SQL数据管理** 活动允许您编写自己的SQL脚本以创建和填充工作表。
 

@@ -4,7 +4,7 @@ title: 循环投放
 description: 了解有关定期投放工作流活动的更多信息
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 6f0479cfe6c6801eb44fcc7a35bdac1241ec3be6
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 17%
@@ -13,7 +13,7 @@ ht-degree: 17%
 
 # 循环投放{#recurring-delivery}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **[!UICONTROL Recurring delivery]** 活动，可配置特定于营销策划的投放模板实例。
 

@@ -3,7 +3,7 @@ product: campaign
 title: 投放
 description: 了解有关默认投放工作流的更多信息
 feature: Workflows
-source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 投放{#deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面详述的工作流随 **投放** 模块。
 

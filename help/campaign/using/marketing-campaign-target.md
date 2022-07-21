@@ -4,7 +4,7 @@ title: 营销活动目标受众
 description: 了解如何定义营销活动的受众
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 选择营销活动受众 {#marketing-campaign-deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在营销活动中，您可以为每个投放定义：
 

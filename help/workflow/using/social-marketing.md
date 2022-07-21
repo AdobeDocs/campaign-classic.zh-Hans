@@ -3,7 +3,7 @@ product: campaign
 title: 社交媒体营销
 description: 进一步了解社交营销技术工作流
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # 社交媒体营销{#social-marketing}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 >[!AVAILABILITY]
 >

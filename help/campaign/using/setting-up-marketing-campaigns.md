@@ -4,7 +4,7 @@ title: 创建营销活动
 description: 了解如何创建和执行营销活动
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: f95b75adf8f46d8301d800451ea0e62629690a8f
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # 营销活动入门{#setting-up-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 活动包括操作（投放）和流程（导入或提取文件）以及资源（营销文档、投放概要）。 它们用于营销活动。活动是项目的一部分，项目包含在活动计划中。
 
@@ -41,7 +41,7 @@ ht-degree: 6%
 
 1. 单击 **资源管理器** 图标。
 1. 右键单击要在其中创建计划的文件夹。
-1. 选择 **添加新文件夹>营销活动管理>计划**.
+1. 选择 **添加新文件夹> Campaign Management >计划**.
 
    ![](assets/create_plan_1.png)
 

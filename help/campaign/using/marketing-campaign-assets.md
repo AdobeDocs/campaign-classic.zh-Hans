@@ -4,7 +4,7 @@ title: 营销活动文档和投放概述
 description: 进一步了解营销活动文档和投放概述
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 管理关联文档 {#managing-associated-documents}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 您可以将各种文档与营销活动关联：报表、照片、网页、图表等。 这些文档可以采用任何格式(Microsoft Word、PowerPoint、PNG、JPG、AcrobatPDF等)。
 

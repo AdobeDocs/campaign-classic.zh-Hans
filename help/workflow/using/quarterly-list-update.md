@@ -4,7 +4,7 @@ title: 使用增量查询每季度更新列表
 description: 在此用例中，使用增量查询自动更新收件人列表。
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 使用增量查询每季度更新列表 {#quarterly-list-update}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在以下示例中， [增量查询](incremental-query.md) 用于自动更新收件人列表。 这些收件人作为季节性营销活动的一部分进行定位。
 

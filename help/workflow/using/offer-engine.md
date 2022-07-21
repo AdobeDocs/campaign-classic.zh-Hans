@@ -4,7 +4,7 @@ title: 优惠引擎
 description: 优惠引擎
 feature: Workflows, Interaction
 exl-id: 8db4b04f-7754-4a49-ab72-afc916888ebb
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 优惠引擎{#offer-engine}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **[!UICONTROL Offer engine]** 活动允许您在投放之前定义对选件引擎的调用。
 

@@ -4,7 +4,7 @@ title: 文件传输
 description: 了解有关文件传输工作流活动的更多信息
 feature: Workflows, Data Management
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 文件传输{#file-transfer}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **文件传输** 活动允许您接收或发送文件、测试文件存在情况或在服务器上列出文件。 使用的协议为Azure Blob Storage、Amazon Simple Storage Service(S3)、FTP或SFTP。
 通过S3、Azure Blob Storage或SFTP连接，您还可以通过Adobe实时客户数据平台将区段数据导入Adobe Campaign。 有关更多信息，请参阅此 [文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).

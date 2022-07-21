@@ -4,7 +4,7 @@ title: 丰富数据
 description: 进一步了解扩充工作流活动
 feature: Workflows, Enrichment Activity
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 丰富数据{#enriching-data}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 关于扩充数据 {#about-enriching-data}
 

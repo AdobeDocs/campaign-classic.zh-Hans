@@ -4,7 +4,7 @@ title: 创建摘要列表
 description: 创建摘要列表
 feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 创建摘要列表{#creating-a-summary-list}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 此用例详细介绍了如何创建工作流，在收集文件并进行多项扩充后，您可以创建摘要列表。 此示例基于在商店中购物的联系人列表。
 
@@ -61,7 +61,7 @@ Phone;500;London 5
 
    有关此活动的更多信息，请参阅 [从文件加载数据](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
-1. 配置 **文件收集器** 活动，从所选目录收集文本(*.txt)类型文件。
+1. 配置 **文件收集器** 收集文本的活动(&#42;.txt)从选定目录中键入文件。
 
    ![](assets/uc2_enrich_collecteur.png)
 

@@ -4,7 +4,7 @@ title: 营销活动投放
 description: 了解有关营销活动投放的更多信息
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 营销活动投放 {#marketing-campaign-deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 投放可通过营销活动仪表板、营销活动工作流创建，或直接通过投放概述创建。
 

@@ -4,7 +4,7 @@ title: 关于工作流活动
 description: 关于活动
 feature: Workflows, Data Management
 exl-id: 900dd30e-d4fb-452a-af3f-ae00758b0077
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # 工作流活动{#wf-activities}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 本节介绍所有可用的活动。 根据创建/编辑工作流的节点或上下文，可用活动可能会有所不同。 例如，在营销活动中创建的工作流具有特定于渠道的投放活动。
 

@@ -4,7 +4,7 @@ title: 查询投放信息
 description: 了解如何查询投放信息
 feature: Query Editor
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 查询投放信息 {#querying-delivery-information}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 特定投放的点击次数 {#number-of-clicks-for-a-specific-delivery}
 

@@ -4,7 +4,7 @@ title: 更改维度
 description: 更改维度
 feature: Workflows, Targeting Activity
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 更改维度{#change-dimension}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 通过更改维度活动，您可以在目标构建周期中更改定向维度。 轴移动取决于数据模板和输入维度。 例如，您可以从“合同”维度切换到“客户”维度。
 

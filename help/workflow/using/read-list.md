@@ -4,7 +4,7 @@ title: 读取列表
 description: 了解有关读取列表工作流活动的更多信息
 feature: Workflows, Targeting Activity
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 读取列表{#read-list}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在工作流中处理的数据可以来自列表，其中数据已预先准备或结构化（在先前的分段或文件上传之后）。
 

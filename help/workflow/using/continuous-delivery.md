@@ -4,7 +4,7 @@ title: 连续投放
 description: 连续投放
 feature: Workflows, Channels Activity
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # 连续投放{#continuous-delivery}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **连续投放** “类型”操作允许您向现有投放中添加新收件人。 此投放类型可避免您每次都必须创建新投放：此模式通常更有效，尤其是对于需要时发送的低容量警报或通知。
 

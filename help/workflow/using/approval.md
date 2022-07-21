@@ -4,7 +4,7 @@ title: 审批
 description: 审批
 feature: Workflows, Approvals
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 审批{#approval}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 安 **批准** 任务需要操作员的参与。 操作员被分配了一项任务，可以通过电子邮件、使用电子邮件中链接的网页或通过控制台做出响应。
 

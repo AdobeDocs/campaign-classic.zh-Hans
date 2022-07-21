@@ -4,7 +4,7 @@ title: 工作流生命周期
 description: 了解有关工作流生命周期的更多信息
 feature: Workflows
 exl-id: fceb5752-dc73-4386-8c18-c4f3e6110ca5
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 工作流生命周期 {#workflow-life-cycle}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 工作流周期有三个主要步骤。
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
    这是初始设计阶段：创建新工作流后，其状态为“正在编辑”。 该工作流尚未由服务器处理，可以无风险修改。
 
-* **开始**
+* **已开始**
 
    初始设计阶段完成后，可以启动工作流。 在此阶段中，实例由服务器处理，并执行各个任务。 仍可以使用某些预防措施修改工作流。
 

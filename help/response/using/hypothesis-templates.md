@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 假设验证模板{#hypothesis-templates}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 创建假设验证模型 {#creating-a-hypothesis-model}
 
@@ -31,7 +31,7 @@ ht-degree: 2%
 1. 输入假设验证标签。
 1. 指定模板是否要通过 **[!UICONTROL Hypothesis type]**.
 1. 对于 **[!UICONTROL Delivery]** 类型模板，指定是否应使用控制组执行测量。 [了解详情](#properties-of-a-hypothesis-template)
-1. 对于 **[!UICONTROL Delivery]** 类型模板时，您可以选择特定渠道，或决定使用将模板应用于Adobe Campaign中的所有可用渠道 **[!UICONTROL Channel]** 下拉列表。 [了解详情](#properties-of-a-hypothesis-template)
+1. 对于 **[!UICONTROL Delivery]** 类型模板时，您可以选择特定渠道，或决定使用将模板应用到Adobe Campaign中的所有可用渠道 **[!UICONTROL Channel]** 下拉列表。 [了解详情](#properties-of-a-hypothesis-template)
 1. 选择 **[!UICONTROL Execution folder]** 其中，要创建并自动执行将从此模板创建的假设验证。
 1. 选择执行设置。 [了解详情](#hypothesis-template-execution-settings)
 1. 指定假设计算周期。 [了解详情](#hypothesis-template-execution-settings)

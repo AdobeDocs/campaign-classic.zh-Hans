@@ -4,7 +4,7 @@ title: 跳转（开始点和结束点）
 description: 跳转（开始点和结束点）
 feature: Workflows
 exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 15%
@@ -13,7 +13,7 @@ ht-degree: 15%
 
 # 跳转（开始点和结束点）{#jump-start-point-and-end-point}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 **[!UICONTROL Jump]**  — 类型图形对象用于提高复杂图表的可读性，特别是具有交叉过渡的图形对象。
 

@@ -4,7 +4,7 @@ title: 列表更新
 description: 列表更新
 feature: Workflows, Targeting Activity
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 列表更新{#list-update}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **列表更新** 活动将过渡中指定的群体存储在收件人列表中。
 

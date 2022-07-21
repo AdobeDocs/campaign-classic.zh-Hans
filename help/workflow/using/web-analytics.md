@@ -3,7 +3,7 @@ product: campaign
 title: 网络分析
 description: 进一步了解Web分析包
 feature: Workflows, Analytics Integration
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 网络分析{#web-analytics}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面详述的工作流随 **Web Analytics连接器** 模块。 有关此模块的更多信息，请参阅此 [部分](../../platform/using/adobe-analytics-connector.md).
 

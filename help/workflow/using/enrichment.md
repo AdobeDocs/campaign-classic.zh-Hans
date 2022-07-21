@@ -4,7 +4,7 @@ title: 扩充
 description: 进一步了解扩充工作流活动
 feature: Workflows, Enrichment Activity, Targeting Activity
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 扩充{#enrichment}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **[!UICONTROL Enrichment]** 利用活动，可向用户档案列表添加信息以及指向现有表格的链接（创建新连接）。 还可以定义数据库中包含用户档案的协调条件。
 

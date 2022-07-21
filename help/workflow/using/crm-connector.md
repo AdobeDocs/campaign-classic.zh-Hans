@@ -3,7 +3,7 @@ title: CRM 连接器
 description: 进一步了解CRM连接器和配置数据同步
 feature: Workflows, Data Management
 exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # CRM 连接器{#crm-connector}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **CRM连接器** 活动，可配置Adobe Campaign与CRM系统之间的数据同步。
 

@@ -4,7 +4,7 @@ title: 监督工作流
 description: 了解如何监督Campaign工作流
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 用例：监控工作流{#supervising-workflows}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 此用例详细介绍了如何创建工作流，以便您监视“已暂停”、“已停止”或“有错误”的一组工作流的状态。
 

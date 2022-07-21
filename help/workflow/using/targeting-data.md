@@ -4,7 +4,7 @@ title: 定位数据
 description: 了解有关在工作流中定位数据的更多信息
 feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Target 数据{#targeting-data}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 创建查询 {#creating-queries}
 

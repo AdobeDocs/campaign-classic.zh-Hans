@@ -4,7 +4,7 @@ title: 更新数据
 description: 了解有关更新数据工作流活动的更多信息
 feature: Workflows, Targeting Activity, Data Management
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 更新数据{#update-data}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 安 **更新数据**-type活动对数据库中的字段执行批量更新。
 

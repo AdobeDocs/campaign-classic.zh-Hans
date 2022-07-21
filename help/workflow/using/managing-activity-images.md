@@ -4,7 +4,7 @@ title: 更改活动图像
 description: 了解如何更改活动图像
 feature: Workflows
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 更改活动图像{#change-activity-images}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 可以更改各种工作流图表中使用的图像。 但是，它们必须符合某些限制。 以下是实施阶段：
 

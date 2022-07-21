@@ -4,7 +4,7 @@ title: 外部信号
 description: 了解有关外部信号工作流活动的更多信息
 feature: Workflows
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 外部信号{#external-signal}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **外部信号** 活动允许您在工作流中触发对计划的一组任务的执行。
 

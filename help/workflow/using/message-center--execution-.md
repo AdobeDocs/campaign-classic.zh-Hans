@@ -3,7 +3,7 @@ product: campaign
 title: 消息中心（执行）
 description: 消息中心（执行）
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 9%
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # 消息中心（执行）{#message-center-execution}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面详述的工作流随 **消息中心 — 执行** 默认情况下为加载项。
 

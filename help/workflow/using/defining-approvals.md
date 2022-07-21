@@ -4,7 +4,7 @@ title: 定义审批
 description: 通过审批，操作员能够做出管理工作流的决策或确认其继续执行
 feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 3af4f259b80b3e03c81ee278b470ef6ffe3fe4d0
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 定义审批 {#defining-approvals}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 通过批准，操作员能够做出管理工作流的决策或确认工作流的继续执行情况。
 

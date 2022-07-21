@@ -4,7 +4,7 @@ title: 压力规则
 description: 压力规则
 feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '3285'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 压力规则{#pressure-rules}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 关于营销疲劳度 {#about-marketing-fatigue}
 
@@ -215,7 +215,7 @@ ht-degree: 4%
 >
 >如果多个投放的得分相等，则将发送计划为最早日期的营销活动。
 
-## Use cases on pressure rules {#use-cases-on-pressure-rules}
+## 压力规则的用例 {#use-cases-on-pressure-rules}
 
 ### 根据条件调整阈值 {#adapting-the-threshold-based-on-criterion}
 
@@ -333,7 +333,7 @@ ht-degree: 4%
 
    ![](assets/campaign_opt_pressure_example_1.png)
 
-   在计算时，将考虑在投放日期之前7天内发送且在投放日期之后7天内计划发送的投放。 For more on this, refer to [Set the period](#setting-the-period).
+   在计算时，将考虑在投放日期之前7天内发送且在投放日期之后7天内计划发送的投放。 有关更多信息，请参阅 [设置期间](#setting-the-period).
 
    >[!AVAILABILITY]
    >Campaign v8中无法考虑计划投放。
@@ -344,8 +344,8 @@ ht-degree: 4%
 现在，为要应用压力规则的每个投放创建并配置工作流。
 
 1. 创建营销策划. 如需详细信息，请参阅[此部分](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
-1. In the **[!UICONTROL Targeting and workflows]** tab of your campaign, add a **Query** activity to your workflow. For more on using this activity, refer to [this section](../../workflow/using/query.md).
-1. Add an **[!UICONTROL Email delivery]** activity to the workflow and open it. For more on using this activity, refer to [this section](../../workflow/using/delivery.md).
+1. 在 **[!UICONTROL Targeting and workflows]** 的 **查询** 活动。 有关使用此活动的更多信息，请参阅 [此部分](../../workflow/using/query.md).
+1. 添加 **[!UICONTROL Email delivery]** 活动，并将其打开。 有关使用此活动的更多信息，请参阅 [此部分](../../workflow/using/delivery.md).
 1. 转到 **[!UICONTROL Approvals]** 选项卡 **[!UICONTROL Delivery properties]** 并禁用所有批准。
 
    ![](assets/campaign_opt_pressure_example_2.png)
@@ -389,12 +389,12 @@ ht-degree: 4%
    <td> 投放1<br /> </td> 
    <td> 已禁用<br /> </td> 
    <td> 5<br /> </td> 
-   <td> 3pm<br /> </td> 
+   <td> 下午3点<br /> </td> 
    <td> 早8点（次日）<br /> </td> 
    <td> 下午2点<br /> </td> 
    <td> 夜间<br /> </td> 
-   <td> 排除<br /> </td> 
-   <td> 排除<br /> </td> 
+   <td> 已排除<br /> </td> 
+   <td> 已排除<br /> </td> 
   </tr> 
   <tr> 
    <td> 投放2<br /> </td> 

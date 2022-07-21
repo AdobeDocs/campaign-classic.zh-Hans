@@ -4,7 +4,7 @@ title: 营销活动模板
 description: 营销活动模板
 feature: Campaigns, Templates
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 创建和配置营销活动模板 {#campaign-templates}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 所有营销活动都基于存储主要特征和功能的模板。 营销活动模板集中在 **[!UICONTROL Resources > Templates > Campaign templates]** 节点。 默认模板将作为标准模板提供。 它允许您使用所有可用模块（文档、任务、种子地址等）创建新营销活动，但提供的模块取决于您的权限和Adobe Campaign平台的配置。
 

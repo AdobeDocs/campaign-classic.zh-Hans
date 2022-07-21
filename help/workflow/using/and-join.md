@@ -4,7 +4,7 @@ title: AND-连接
 description: AND-连接
 feature: Workflows
 exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # AND-连接{#and-join}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 仅当激活所有集客过渡（即，完成所有先前的活动）时，连接才会触发其叫客过渡。 这样，您就可以确保某些活动在继续执行工作流之前已完成。
 

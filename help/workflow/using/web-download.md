@@ -4,7 +4,7 @@ title: Web 下载
 description: 进一步了解Web下载工作流活动
 feature: Workflows
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Web 下载{#web-download}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 的 **Web下载** 活动会启动下载显式URL、外部帐户或Adobe Campaign实例上的文件。 使用HTTP协议。 这可以是GET或POST下载。
 

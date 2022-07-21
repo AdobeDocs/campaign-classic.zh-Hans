@@ -4,7 +4,7 @@ title: 跨渠道投放
 description: 了解有关跨渠道投放的更多信息
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # 跨渠道投放{#cross-channel-deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 在 **[!UICONTROL Deliveries]** 营销活动工作流活动的选项卡。
 

@@ -4,7 +4,7 @@ title: 分叉
 description: 进一步了解分支工作流活动
 feature: Workflows
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 分叉{#fork}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 您可以使用 **[!UICONTROL Fork]** 活动创建多个叫客过渡，并在同一工作流中独立运行多个活动。
 

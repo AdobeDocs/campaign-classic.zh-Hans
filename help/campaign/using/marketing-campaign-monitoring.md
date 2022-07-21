@@ -4,7 +4,7 @@ title: 监控营销活动
 description: 监控营销活动
 feature: Campaigns, Monitoring
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 监控营销活动 {#monitoring-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## 跟踪活动 {#tracking-a-campaign}
 

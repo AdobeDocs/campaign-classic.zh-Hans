@@ -3,7 +3,7 @@ product: campaign
 title: 与Adobe Experience Cloud解决方案工作流程集成
 description: 了解有关与Adobe Experience Cloud解决方案工作流集成的更多信息
 topic-tags: technical-workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # 与 Adobe Experience Cloud 解决方案集成{#integrations-with-adobe-experience-cloud-solutions}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面详述的工作流随 **与Adobe Experience Cloud集成** 模块。 有关此模块的更多信息，请参阅此 [部分](../../integrations/using/configuring-ims.md#installing-the-package).
 

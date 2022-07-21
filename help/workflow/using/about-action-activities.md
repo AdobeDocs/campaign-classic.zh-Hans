@@ -4,7 +4,7 @@ title: 关于操作活动
 description: 关于操作活动
 feature: Workflows, Data Management
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 工作流中的操作活动{#about-action-activities}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 * **投放**:允许您配置投放操作。 请参阅 [投放](delivery.md) 中。
 * **投放控制**:允许您开始、暂停或停止投放。 请参阅 [投放控制](delivery-control.md) 中。

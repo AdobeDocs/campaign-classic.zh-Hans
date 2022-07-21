@@ -4,7 +4,7 @@ title: 更新聚合
 description: 了解有关更新聚合工作流活动的更多信息
 feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 更新聚合{#update-aggregate}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 聚合在多维数据集级别定义，用于报告。 A **[!UICONTROL Workflow]** 选项卡。
 

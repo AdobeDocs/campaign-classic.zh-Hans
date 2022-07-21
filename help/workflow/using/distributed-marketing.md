@@ -3,7 +3,7 @@ product: campaign
 title: 分布式营销
 description: 进一步了解分布式营销包
 feature: Workflows, Data Management, Distributed Marketing
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # 分布式营销{#distributed-marketing}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面详细介绍的工作流与 **分布式营销** 模块。 有关此模块的更多信息，请参阅此 [部分](../../distributed/using/about-distributed-marketing.md).
 

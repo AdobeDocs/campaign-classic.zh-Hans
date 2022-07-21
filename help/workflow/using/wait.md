@@ -4,7 +4,7 @@ title: 等待
 description: 了解有关等待工作流活动的更多信息
 feature: Workflows
 exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 等待{#wait}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **等待** 活动会在几秒到几个月之间的任意时间延迟后，激活其过渡。 等待任务不会阻止其他任务的执行；当此任务处于待处理状态时，工作流可以并行执行任务。
 

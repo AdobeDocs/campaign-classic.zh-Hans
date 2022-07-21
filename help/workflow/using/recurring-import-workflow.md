@@ -4,7 +4,7 @@ title: 设置定期导入
 description: 了解如何为定期导入配置工作流模板。
 feature: Workflows, Data Management
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 设置循环导入工作流 {#setting-up-a-recurring-import}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 如果您需要定期导入具有相同结构的文件，则使用工作流模板是最佳做法。
 

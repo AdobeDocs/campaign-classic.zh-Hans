@@ -3,7 +3,7 @@ product: campaign
 title: 传输到中间源
 description: 了解有关传输到中间源工作流的更多信息
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 7%
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # 传输到中间源{#transfer-to-mid-sourcing}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面详述的工作流随 **传输到中间源** 模块。 有关此模块的更多信息，请参阅 [Campaign Classicv7安装指南](../../installation/using/mid-sourcing-deployment.md).
 

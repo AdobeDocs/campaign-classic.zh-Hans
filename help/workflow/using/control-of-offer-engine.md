@@ -4,7 +4,7 @@ title: 优惠引擎控制
 description: 优惠引擎控制
 feature: Workflows, Offers
 topic-tags: technical-workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 26%
@@ -14,7 +14,7 @@ ht-degree: 26%
 
 # 优惠引擎控制{#control-of-offer-engine}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面详细介绍的工作流与 **具有执行实例的优惠引擎控制** 模块。
 

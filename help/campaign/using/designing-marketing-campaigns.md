@@ -4,16 +4,16 @@ title: 设计和执行营销活动
 description: 定义、优化、执行和分析营销活动
 feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '443'
+ht-degree: 19%
 
 ---
 
 # 设计和执行营销活动{#designing-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Adobe Campaign让您能够定义、优化、执行和分析通信和营销活动。 Adobe Campaign的作用类似于营销策略的统一订单和执行中心。 有关更多信息，请参阅 [访问营销活动](../../distributed/using/accessing-campaigns.md) 和 [创建营销活动](../../campaign/using/setting-up-marketing-campaigns.md).
 

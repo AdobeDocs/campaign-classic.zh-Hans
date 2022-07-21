@@ -4,7 +4,7 @@ title: 开始工作流
 description: 了解如何启动工作流并发现工作流操作工具栏和右键单击菜单
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 开始工作流 {#starting-a-workflow}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 工作流始终手动启动。 但是，启动时，它可以保持不活动状态，具体取决于通过调度程序指定的信息(请参阅 [调度程序](scheduler.md))或活动计划。
 

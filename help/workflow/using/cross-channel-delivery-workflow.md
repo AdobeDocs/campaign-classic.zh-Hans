@@ -4,7 +4,7 @@ title: 跨渠道投放工作流
 description: 了解有关跨渠道投放工作流的更多信息
 feature: Workflows, Channels Activity
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: e454cc29038b4eab9fad1dcb46813fc8e1a83db1
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 跨渠道投放工作流{#cross-channel-delivery-workflow}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 此用例展示了涉及跨渠道投放工作流的示例。 有关跨渠道投放的一般概念，请参阅 [此部分](cross-channel-deliveries.md).
 

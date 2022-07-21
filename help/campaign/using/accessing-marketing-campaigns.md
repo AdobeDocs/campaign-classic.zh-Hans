@@ -4,7 +4,7 @@ title: 访问营销活动
 description: 访问营销活动
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 访问营销活动{#accessing-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Adobe Campaign允许您创建、配置、执行和分析营销活动。 所有营销活动都可从统一的控制中心进行管理。
 
@@ -99,7 +99,7 @@ Campaign允许您管理由各种营销活动组成的一组项目。 每个营�
 
 ### 控制活动 {#controlling-a-campaign}
 
-#### 功能板 {#dashboard}
+#### 仪表板 {#dashboard}
 
 对于每个营销活动，作业、资源和投放都集中在单个屏幕（功能板）中，让您能够与他人协作管理营销操作。
 

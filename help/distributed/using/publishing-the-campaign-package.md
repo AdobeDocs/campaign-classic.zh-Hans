@@ -4,7 +4,7 @@ title: 发布活动包
 description: 发布活动包
 feature: Distributed Marketing
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 发布活动包{#publishing-the-campaign-package}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 中央实体操作员将希望提供的营销活动发布到 **[!UICONTROL list of campaign packages]**.
 

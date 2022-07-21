@@ -4,7 +4,7 @@ title: 营销活动工作流热图
 description: 使用Workflow HeatMap监控您的工作流
 feature: Workflows, Heatmap
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 工作流热图 {#workflow-heatmap}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所有工作流。 它仅可用于 **Campaign管理员**.
 

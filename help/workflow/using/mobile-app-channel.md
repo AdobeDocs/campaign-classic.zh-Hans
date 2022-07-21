@@ -3,7 +3,7 @@ product: campaign
 title: 移动应用程序渠道
 description: 移动应用程序渠道
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 18%
@@ -13,7 +13,7 @@ ht-degree: 18%
 
 # 移动应用程序渠道{#mobile-app-channel}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面详细介绍的工作流与 **移动设备应用程序渠道** 模块。 有关此模块的更多信息，请参阅此 [部分](../../delivery/using/about-mobile-app-channel.md).
 

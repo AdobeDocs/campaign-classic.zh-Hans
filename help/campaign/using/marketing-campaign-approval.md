@@ -4,7 +4,7 @@ title: 建立和管理审批流程
 description: 了解如何管理营销活动的批准
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '2438'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 建立和管理审批流程 {#approving-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 投放的每个步骤都可获得批准，以确保对营销活动的各个流程进行全面监控和控制：定位、内容、预算、提取和发送校样。
 

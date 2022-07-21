@@ -3,7 +3,7 @@ product: campaign
 title: 消息中心（控制）
 description: 消息中心（控制）
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # 消息中心（控制）{#message-center-control}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面详述的工作流计划每小时运行一次。 它随 **消息中心 — 控制** 模块。
 

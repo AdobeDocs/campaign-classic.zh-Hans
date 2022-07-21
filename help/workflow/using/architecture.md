@@ -4,7 +4,7 @@ title: 架构
 description: 工作流由特定模块处理，该模块可在多个服务器上启动以共享处理负载。
 feature: Workflows
 exl-id: 46801f78-706c-4dfa-bce7-3d15f569f222
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 架构 {#architecture}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 工作流由特定模块处理。 为了共享处理负载，可以在多台服务器上启动此模块。
 

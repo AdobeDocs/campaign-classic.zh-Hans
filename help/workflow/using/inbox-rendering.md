@@ -3,7 +3,7 @@ product: campaign
 title: 收件箱呈现技术工作流
 description: 本节介绍收件箱呈现包中安装的技术工作流
 feature: Workflows, Inbox Rendering
-source-git-commit: 378788764e244dcad12018d6d703048707d4c3e6
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 收件箱呈现(IR){#inbox-rendering}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 下面详细介绍的工作流与 **收件箱呈现(IR)** 模块。 有关收件箱呈现的更多信息，请参阅此 [部分](../../delivery/using/inbox-rendering.md).
 

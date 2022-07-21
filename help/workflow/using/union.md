@@ -4,7 +4,7 @@ title: 并集
 description: 进一步了解Union工作流活动
 feature: Workflows, Targeting Activity
 exl-id: 1cda3146-c333-4743-a871-c44583b6e5b2
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 并集{#union}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 并集会将单个目标中多个集客活动的结果分组。 将创建目标，并收到所有结果：因此，必须完成之前的所有活动才能执行并集。
 
