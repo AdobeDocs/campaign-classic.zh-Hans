@@ -3,10 +3,10 @@ product: campaign
 title: 更新新的可投放性服务器
 description: 了解如何更新到新的Campaign可投放性服务器
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
+source-git-commit: 8b8935b181b615c0a243799b14d01f778b84b715
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -58,13 +58,13 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 
    必须在所有Campaign实例(MKT、MID、RT、EXEC)上使用正确的值填充此选项。 作为混合客户，请联系Adobe以在MID、RT和EXEC实例中设置选项。
 
+>[!CAUTION]
+>
+>作为内部部署客户，如果您在自己的侧面实施了防火墙，则必须添加此url `https://deliverability-service.adobe.io` 到您的允许列表。 [了解详情](../../installation/using/url-permissions.md)。
+
 ### 步骤1:创建/更新Adobe Developer项目 {#adobe-io-project}
 
-1. 访问 [Adobe Developer控制台](https://developer.adobe.com/console/home) 并使用贵组织的开发人员访问权限登录。
-
-   >[!NOTE]
-   >
-   > 确保您已登录到正确的组织门户。
+1. 访问 [Adobe Developer控制台](https://developer.adobe.com/console/home) 并使用贵组织的开发人员访问权限登录。 确保您已登录到正确的组织门户。
 
 1. 选择 **[!UICONTROL Create new project]**。
    ![](assets/New-Project.png)
