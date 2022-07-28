@@ -7,9 +7,9 @@ user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2582'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -837,7 +837,7 @@ ht-degree: 99%
    + [硬件大小调整建议](technotes/using/hardware-sizing.md)
    + 升级和兼容性{#technote-migration}
       + [技术说明](technotes/using/technote.md)
-      + [新的投放能力服务器](technotes/using/deliverability-server.md)
+      + [新的可投放性服务器](technotes/using/deliverability-server.md)
       + [Apache 安全升级](technotes/using/acc-apache-upgrade.md)
       + [Campaign 配置更新](technotes/using/acc-config-updates.md)
       + [IMS 更新](technotes/using/ims-updates.md)
