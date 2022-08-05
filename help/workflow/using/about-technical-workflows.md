@@ -4,9 +4,9 @@ title: 技术工作流
 description: 进一步了解Campaign Classic包中可用的技术工作流。
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 5bfd755ae8278a221e0f0e6f4121bfb072ebda12
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1705'
 ht-degree: 3%
 
 ---
@@ -78,4 +78,4 @@ ht-degree: 3%
 | **任务通知** (taskMgt) | 营销资源(MRM) — 仅限Campaign v7 | 利用此工作流，可发送与营销活动中的任务相关的通知消息。 |
 | **跟踪** （跟踪） | 投放 | 此工作流可执行跟踪信息的恢复和整合。 它还可确保重新计算跟踪和投放统计信息，特别是消息中心归档工作流使用的跟踪和投放统计信息。 默认情况下，每小时触发一次。 |
 | **更新事件状态** (updateEventsStatus) | 事务型消息执行（消息中心 — 执行） | 利用此工作流，可为事件分配状态。 事件状态如下所示：<ul><li>待定：事件在队列中。 尚未关联消息模板。</li><li>待定投放：事件在队列中，消息模板已与其关联，且投放当前正在处理该事件。</li><li>已发送：此状态复制于投放日志。 这意味着投放已发送。</li><li>被投放忽略：此状态复制于投放日志。 这意味着投放已被忽略。</li><li>投放错误：此状态复制于投放日志。 这意味着投放失败。</li><li>未涵盖的事件：事件未能与消息模板关联。 将不会重新处理该事件。</li></ul> |
-| **可投放性刷新** (deliverabilityUpdate) | 投放 | 安装可投放性监控（电子邮件可投放性）包后，此工作流将在夜间运行，并管理退回电子邮件鉴别规则以及域和MX列表。 这要求在平台上打开HTTPS端口。 |
+| **可投放性刷新** (deliverabilityUpdate) | 投放 | 此工作流每晚运行，可管理退回电子邮件鉴别规则以及域和MX列表。 这要求在平台上打开HTTPS端口。 |
