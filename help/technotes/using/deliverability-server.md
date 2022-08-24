@@ -3,10 +3,10 @@ product: campaign
 title: 更新新的可投放性服务器
 description: 了解如何更新到新的Campaign可投放性服务器
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: ca9df95442355a0cd18c7c9ef048c2d77e84188e
+source-git-commit: 38f5cb9fdeb9deceab812c6ebc158e2ab37e3155
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 2%
+source-wordcount: '1235'
+ht-degree: 3%
 
 ---
 
@@ -58,9 +58,19 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 
    必须在所有Campaign实例(MKT、MID、RT、EXEC)上使用正确的值填充此选项。 作为混合客户，请联系Adobe以在MID、RT和EXEC实例中设置选项。
 
+作为内部部署客户，您还必须检查营销活动 **[!UICONTROL Product profile]** 可供贵组织使用。 要执行此操作，请执行以下步骤：
+
+1. 作为管理员，请连接到 [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}。
+1. 访问 **产品和服务** 部分和检查 **Adobe Campaign** 列出。
+如果您看不到 **Adobe Campaign** 联系人 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以添加该变量。
+1. 单击 **Adobe Campaign** ，然后选择您的组织。
+1. 检查 **[!UICONTROL Product profile]** 存在。 如果没有，请创建它。 无需权限 **[!UICONTROL Product profile]**.
+
+
 >[!CAUTION]
 >
 >作为内部部署客户，如果您在自己的侧面实施了防火墙，则必须添加此url `https://deliverability-service.adobe.io` 到您的允许列表。 [了解详情](../../installation/using/url-permissions.md)。
+
 
 ### 步骤1:创建/更新Adobe Developer项目 {#adobe-io-project}
 
@@ -123,7 +133,7 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 1. 从文件复制内容 `private.key.base64`.
 1. 通过SSH登录到安装了Adobe Campaign实例的每个容器，并通过以下命令(如 `neolane` 用户。 这将插入 **[!UICONTROL Technical Account]** 实例配置文件中的凭据。
 
-   ```
+   ```sql
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
