@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 45c5ef3315e4208184e9c0ab5f20678646fe2d0b
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 100%
+source-wordcount: '1624'
+ht-degree: 92%
 
 ---
 
@@ -43,36 +43,10 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <td><strong>功能</strong></td>
    <td><strong>替换</strong></td>
   </tr>
-  <tr>
-  <td>CentOs 8.x（64 位）<br></td>
-   <td><p>CentOS Linux 8 将于 2021 年 12 月 31 日终止生命周期 (EOL)。<a href="https://www.centos.org/centos-linux-eol/">了解详情</a></p>
-   <p>如果您使用的是此操作系统，则需要相应地调整实施。CentOS 7.x（64 位）和 RHEL 8.x/7.x（64 位）仍然受到支持。</p>
-  <p><em>目标移除日期：2021 年 12 月 31 日。</em></p>
-  </td>
- </tr>
-    <tr>
-  <td>Adobe Analytics Data Connector<br></td>
-   <td><p>从 Campaign 21.1.3 版本开始，弃用 Adobe Analytics Data Connector。</p>
-   <p>如果您使用的是此连接器，则需要相应地调整实施。<a href="../../platform/using/adobe-analytics-connector.md">了解详情</a></p>
-  <p><em>目标移除日期：2022 年 8 月 17 日</em></p>
-  </td>
- </tr>
-    <tr>
-  <td>技术可投放性监视报告<br></td>
-   <td><p>从 Campaign 21.1 版本开始，弃用了“技术可投放性监视报告”功能。</p>
-   <p>如果需要，您仍可以每天通过电子邮件接收此报告，直到功能被移除的那天。如需申请，请打开一个具体的<a href="https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">支持案例</a>，并指明实例的名称和用于接收报告的电子邮件地址。</p> 
-   <p>Adobe 建议您与投放评估团队合作，以确定用于监测实例投放性能的理想工具。</p>
-  <p><em>目标移除日期：2022 年初</em></p>
-  </td>
- </tr>
-  <tr>
-  <td>Oauth 身份验证（OAuth 和 JWT）<br></td>
-  <td><p> 从 Campaign 20.3 版本开始，最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成身份验证现已更改并移至 Adobe I/O。 <p>
-  <p>如果您使用的是 Triggers 集成，则需要相应地调整实施。<a href="../../integrations/using/configuring-adobe-io.md">了解详情</a></p> 
-  <p>有关 Oauth 身份验证折旧的详细信息，请参阅此<a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">页面</a></p> 
-  <p><em>目标移除日期：2021 年 10 月 20 日。 托管环境的支持时间可延长至 2022 年 5 月 25 日。 </em></p>
-  </td>
-  </tr>
+<tr>
+ <td>N/A</td>
+ <td>不适用</td>
+</tr>
  </tbody> 
 </table>
 
@@ -83,9 +57,29 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
 <table> 
  <tbody>
   <tr> 
-   <td><strong>区域 - 功能</strong></td>
-   <td><strong>替换</strong></td>
+   <td><strong>功能</strong></td>
+   <td><strong>详细信息</strong></td>
   <tr>  
+      <tr>
+  <td>Adobe Analytics Data Connector<br></td>
+   <td><p>Adobe Analytics Data Connector已于2022年8月17日被删除。 Campaign 21.1.3版本已弃用该版本。</p>
+   <p>如果您使用的是此连接器，则需要相应地调整实施。<a href="../../platform/using/adobe-analytics-connector.md">了解详情</a></p>
+  </td>
+ </tr>
+    <tr>
+  <td>技术可投放性监视报告<br></td>
+   <td><p>技术投放能力监控报告不再可用。 Campaign 21.1.3版本已弃用该版本。</p>
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+  </td>
+ </tr>
+  <tr>
+  <td>Oauth 身份验证（OAuth 和 JWT）<br></td>
+  <td><p> 最初基于oAUTH身份验证设置来访问管道的Triggers集成身份验证现已更改并移至Adobe I/O。此身份验证模式已在Campaign 20.3版本中弃用。<p>
+  <p>如果您使用的是Triggers集成，请了解如何调整实施 <a href="../../integrations/using/configuring-adobe-io.md">本页</a>.</p> 
+  <p>有关 Oauth 身份验证折旧的详细信息，请参阅此<a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">页面</a></p> 
+  <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
+  </td>
+  </tr>
    <td>报告<br></td>
    <td><p>在 Adobe Flash Player 生命周期结束后，量规报告和图表渲染引擎不再可用。<a href="../../reporting/using/creating-a-new-report.md">了解详情</a></p>
   </tr>
@@ -142,13 +136,9 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
  </tbody> 
 </table>
 
-## 已弃用的兼容性 {#deprecated-compatibility}
+<!--## Deprecated compatibility {#deprecated-compatibility}
 
-Campaign Classic 不再支持以下操作系统。请参阅[兼容性矩阵](../../rn/using/compatibility-matrix.md)，以在兼容性终止之前升级到新版本或迁移到新系统。
-
-### Adobe Campaign 20.2 版  {#compat-20-2-release}
-
-从 20.2 版本开始，弃用旧版 SMS 连接器。请参阅[已弃用的功能](#deprecated-features)部分
+The following systems are deprecated for Campaign Classic. Please refer to the [Compatibility matrix](../../rn/using/compatibility-matrix.md) to upgrade to a newer version or move to a new system before the compatibility ends.-->
 
 ## 兼容性终止 {#end-of-compatibility}
 
@@ -168,15 +158,20 @@ Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因
 
 ### 操作系统 {#o-s-eol}
 
-从 21.1.3 版本开始，弃用对 Debian 8 的支持。
 
-从 19.1 版本开始，Adobe Campaign 不再与以下操作系统兼容。
+* 从22.1版本开始，Adobe Campaign不再与CentOs 8.x（64位）兼容。 CentOS Linux 8生命周期(EOL)于2021年12月31日终止。 [了解详情](https://www.centos.org/centos-linux-eol/)。
 
-* CentOS 6。[了解详情](https://wiki.centos.org/Download)
-* Debian 7。[了解详情](https://wiki.debian.org/DebianReleases)
-* RHEL 6.x。[了解详情](https://access.redhat.com/support/policy/updates/errata)
-* Windows Server 2008。[了解详情](https://support.microsoft.com/en-us/lifecycle/search/1163)
-* SLES 11。[了解详情](https://www.suse.com/lifecycle)
+   如果您使用的是此操作系统，请相应地调整实施。 CentOS 7.x（64 位）和 RHEL 8.x/7.x（64 位）仍然受到支持。
+
+* 从21.1.3版本开始，Adobe Campaign不再与Debian 8兼容。
+
+* 从 19.1 版本开始，Adobe Campaign 不再与以下操作系统兼容。
+
+   * CentOS 6。[了解详情](https://wiki.centos.org/Download)
+   * Debian 7。[了解详情](https://wiki.debian.org/DebianReleases)
+   * RHEL 6.x。[了解详情](https://access.redhat.com/support/policy/updates/errata)
+   * Windows Server 2008。[了解详情](https://support.microsoft.com/en-us/lifecycle/search/1163)
+   * SLES 11。[了解详情](https://www.suse.com/lifecycle)
 
 ### Web 服务器 {#web-server-eol}
 
@@ -239,7 +234,7 @@ Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。
 
 ### SMS 连接器 {#sms-eol}
 
-Adobe Campaign 与以下 SMS 连接器不兼容：
+从 20.2 版本开始，弃用旧版 SMS 连接器。Adobe Campaign与以下项不兼容：
 
 * 通用 SMPP（支持二进制模式的 SMPP 版本 3.4）
 * Sybase365 (SAP SMS 365)
