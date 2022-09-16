@@ -3,9 +3,9 @@ product: campaign
 title: 更新新的可投放性服务器
 description: 了解如何更新到新的Campaign可投放性服务器
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 7385617d69c823850083a94b561d02c9152803e1
+source-git-commit: 9583763eb1d4403b32a1b77a9542f476c314d167
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1319'
 ht-degree: 3%
 
 ---
@@ -62,11 +62,7 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 1. 作为管理员，请连接到 [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}。
 1. 访问 **产品和服务** 部分和检查 **Adobe Campaign** 列出。
 如果您看不到 **Adobe Campaign** 联系人 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以添加该变量。
-1. 单击 **Adobe Campaign** ，然后选择您的组织。
-
-   >[!CAUTION]
-   >
-   >如果您有多个组织，请确保选择正确的组织。 了解有关组织的更多信息 [本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}。
+1. 单击 **Adobe Campaign** ，然后选择您的组织。 **注意**:如果您有多个组织，请确保选择正确的组织。 了解有关组织的更多信息 [本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}。
 
 1. 检查 **[!UICONTROL Product profile]** 存在。 如果没有，请创建它。 无需权限 **[!UICONTROL Product profile]**.
 
@@ -79,11 +75,7 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 ### 步骤1:创建/更新Adobe Developer项目 {#adobe-io-project}
 
 1. 访问 [Adobe Developer控制台](https://developer.adobe.com/console/home) 并使用贵组织的开发人员访问权限登录。 确保您已登录到正确的组织门户。
-
-   >[!CAUTION]
-   >
-   >如果您有多个组织，请确保选择正确的组织。 了解有关组织的更多信息 [本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}。
-
+   **注意**:如果您有多个组织，请确保选择正确的组织。 了解有关组织的更多信息 [本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}。
 1. 选择 **[!UICONTROL Create new project]**。
    ![](assets/New-Project.png)
 
