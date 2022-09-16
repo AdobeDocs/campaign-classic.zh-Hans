@@ -3,9 +3,9 @@ product: campaign
 title: 更新新的可投放性服务器
 description: 了解如何更新到新的Campaign可投放性服务器
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 38f5cb9fdeb9deceab812c6ebc158e2ab37e3155
+source-git-commit: 7385617d69c823850083a94b561d02c9152803e1
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1317'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,6 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 
 作为新可投放性服务器集成的一部分，Campaign需要通过基于Identity Management服务(IMS)的身份验证与Adobe共享服务进行通信。 首选方法是使用基于Adobe Developer的网关令牌(也称为技术帐户令牌或AdobeIO JWT)。
 
-
 >[!WARNING]
 >
 >只应对混合实施和内部部署实施执行这些步骤。
@@ -64,6 +63,11 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 1. 访问 **产品和服务** 部分和检查 **Adobe Campaign** 列出。
 如果您看不到 **Adobe Campaign** 联系人 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以添加该变量。
 1. 单击 **Adobe Campaign** ，然后选择您的组织。
+
+   >[!CAUTION]
+   >
+   >如果您有多个组织，请确保选择正确的组织。 了解有关组织的更多信息 [本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}。
+
 1. 检查 **[!UICONTROL Product profile]** 存在。 如果没有，请创建它。 无需权限 **[!UICONTROL Product profile]**.
 
 
@@ -76,9 +80,12 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 
 1. 访问 [Adobe Developer控制台](https://developer.adobe.com/console/home) 并使用贵组织的开发人员访问权限登录。 确保您已登录到正确的组织门户。
 
+   >[!CAUTION]
+   >
+   >如果您有多个组织，请确保选择正确的组织。 了解有关组织的更多信息 [本页](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}。
+
 1. 选择 **[!UICONTROL Create new project]**。
    ![](assets/New-Project.png)
-
 
    >[!CAUTION]
    >
@@ -151,12 +158,14 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 
 要检查集成是否成功，请执行以下步骤：
 
-
 1. 打开客户端控制台并登录到Adobe Campaign。
 1. 浏览到 **管理>生产>技术工作流**.
 1. 重新启动 **可投放性刷新** (deliverabilityUpdate)工作流。 此操作应在您的所有Campaign实例(MKT、MID、RT、EXEC)上执行。 作为混合客户，请联系Adobe，在MID、RT和EXEC实例上重新启动工作流。
 1. 检查日志：工作流应在执行时不出错。
 
+>[!CAUTION]
+>
+>更新后， **更新用于收件箱呈现的种子网络(updateRenderingSeeds)** 工作流必须停止，因为它将不再应用且将失败。
 
 ## 常见问题解答 {#faq}
 
@@ -173,4 +182,3 @@ As a **托管客户**,Adobe将与您合作，将您的实例升级到较新版�
 如果您不升级环境，电子邮件设置将停止同步（MX管理规则、入站电子邮件规则、域管理规则和退回鉴别规则）。 这可能会随着时间的推移而影响您的投放能力。 如果对这些规则进行了重大更改，则必须从此时起手动应用这些规则。
 
 仅对于MKT实例 [全局抑制列表](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) 会受到影响。
-
