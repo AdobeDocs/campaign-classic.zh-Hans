@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
 workflow-type: tm+mt
-source-wordcount: '1817'
-ht-degree: 7%
+source-wordcount: '1818'
+ht-degree: 8%
 
 ---
 
@@ -118,8 +118,8 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 * [直邮](../../delivery/using/about-direct-mail-channel.md)
 * [代理](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
-* [iOS渠道](../../delivery/using/configuring-the-mobile-application.md)
-* [Android渠道](../../delivery/using/configuring-the-mobile-application-android.md)
+* [iOS 频道](../../delivery/using/configuring-the-mobile-application.md)
+* [Android 频道](../../delivery/using/configuring-the-mobile-application-android.md)
 
 ### 执行实例  {#execution-instance-external-account}
 
@@ -213,7 +213,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 外部帐户配置设置取决于数据库引擎。 请通过以下部分了解更多信息：
 
-* 配置对 [韦尔蒂察](../../installation/using/configure-fda-vertica.md)
+* 配置对 [vertica analytics](../../installation/using/configure-fda-vertica.md)
 * 配置对 [Snowflake](../../installation/using/configure-fda-snowflake.md)
 * 配置对 [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 * 配置对 [azure synapse](../../installation/using/configure-fda-synapse.md)
@@ -453,7 +453,7 @@ Amazon Simple Storage Service(S3)连接器可用于将数据导入或导出到Ad
 
 要了解在何处查找访问密钥ID和密钥访问密钥，请参阅Amazon Web服务 [文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
-### Azure Blob存储 {#azure-blob-external-account}
+### Azure Blob Storage {#azure-blob-external-account}
 
 的 **Azure Blob存储** 外部帐户可用于使用 **[!UICONTROL Transfer file]** 工作流活动。 有关更多信息，请参阅此](../../workflow/using/file-transfer.md)章节[。
 

@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '342'
 ht-degree: 5%
 
 ---
@@ -42,29 +42,15 @@ ht-degree: 5%
 
 请访问以下链接以了解更多信息：
 
-* 连接Campaign和 [韦尔蒂察](../../installation/using/configure-fda-vertica.md)
-
-* 连接Campaign和 [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
-
 * 连接Campaign和 [azure synapse](../../installation/using/configure-fda-synapse.md)
-
-* 连接Campaign和 [Snowflake](../../installation/using/configure-fda-snowflake.md)
-
+* 连接Campaign和 [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 * 连接Campaign和 [Hadoop](../../installation/using/configure-fda-hadoop.md)
-
-* 连接Campaign和 [Oracle](../../installation/using/configure-fda-oracle.md)
-
-* 连接Campaign和 [Netezza](../../installation/using/configure-fda-netezza.md)
-
-* 连接Campaign和 [sybase IQ](../../installation/using/configure-fda-sybase.md)
-
-* 连接Campaign和 [Teradata](../../installation/using/configure-fda-teradata.md)
-
-* 连接Campaign和 [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
-
-* 连接Campaign和 [PostgreSQL](../../installation/using/configure-fda-postgresql.md)
-
 * 连接Campaign和 [Microsoft SQL Server](../../installation/using/configure-fda-sql.md)
-
+* 连接Campaign和 [Netezza](../../installation/using/configure-fda-netezza.md)
+* 连接Campaign和 [Oracle](../../installation/using/configure-fda-oracle.md)
+* 连接Campaign和 [PostgreSQL](../../installation/using/configure-fda-postgresql.md)
 * 连接Campaign和 [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
-
+* 连接Campaign和 [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* 连接Campaign和 [sybase IQ](../../installation/using/configure-fda-sybase.md)
+* 连接Campaign和 [Teradata](../../installation/using/configure-fda-teradata.md)
+* 连接Campaign和 [vertica analytics](../../installation/using/configure-fda-vertica.md)
