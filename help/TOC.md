@@ -7,9 +7,9 @@ user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2583'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -678,7 +678,7 @@ ht-degree: 99%
             + [配置 Snowflake](installation/using/configure-fda-snowflake.md)
             + [配置 Sybase IQ](installation/using/configure-fda-sybase.md)
             + [配置 Teradata](installation/using/configure-fda-teradata.md)
-            + [配置Vertica analytics](installation/using/configure-fda-vertica.md)
+            + [配置 Vertica Analytics](installation/using/configure-fda-vertica.md)
          + [远程访问权限](installation/using/remote-database-access-rights.md)
          + [连接到数据库](installation/using/connecting-to-database.md)
          + [创建数据架构](installation/using/creating-data-schema.md)
