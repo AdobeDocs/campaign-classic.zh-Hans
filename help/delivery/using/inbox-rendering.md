@@ -4,9 +4,9 @@ title: Campaign中的收件箱呈现
 description: 了解如何捕获电子邮件渲染并在专用报告中提供
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 048189f49623cf00f4c3f1f34ff4b795d80391ef
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '821'
 ht-degree: 8%
 
 ---
@@ -20,6 +20,9 @@ ht-degree: 8%
 在点击 **发送** 按钮，确保以最佳方式在各种Web客户端、Web邮件和设备上向收件人显示您的消息。
 
 要实现此目的，Adobe Campaign将利用 [利特穆斯](https://litmus.com/email-testing) 基于web的电子邮件测试解决方案，用于捕获渲染并在专用报告中提供。 这样，您就可以预览不同上下文中可能收到的已发送消息，并检查主要桌面和应用程序的兼容性。
+
+>[!CAUTION]
+>收件箱呈现与不兼容 [定期投放](communication-channels.md#recurring-delivery).
 
 Litmus是一种功能丰富的电子邮件验证和预览应用程序。 它允许电子邮件内容创建者在70多个电子邮件渲染器(如Gmail收件箱或Apple Mail客户端)中预览其消息内容。
 
