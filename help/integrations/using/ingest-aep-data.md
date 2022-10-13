@@ -5,7 +5,7 @@ description: 了解如何将Adobe Experience Platform受众摄取到Campaign Cla
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 89a18ae9ec57376d6ebec6c416c7562f960eb882
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 将Adobe Experience Platform区段摄取到Campaign中 {#destinations}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 要将Adobe Experience Platform受众摄取到Campaign中并在工作流中使用，您首先需要将Adobe Campaign as a Adobe Experience Platform **目标** ，然后使用要导出的区段对其进行配置。
 
