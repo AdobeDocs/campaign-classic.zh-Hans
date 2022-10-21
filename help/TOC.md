@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
-workflow-type: ht
-source-wordcount: '2583'
+source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+workflow-type: tm+mt
+source-wordcount: '2584'
 ht-degree: 100%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 100%
          + [报告](platform/using/faq-reporting.md)
          + [开发](platform/using/faq-developers.md)
          + [教程](platform/using/tutorials.md)
+      + [词汇表](platform/using/ac-glossary.md)
    + 隐私 {#privacy}
       + [隐私和同意](platform/using/privacy-and-recommendations.md)
       + [隐私管理](platform/using/privacy-management.md)
@@ -516,7 +517,7 @@ ht-degree: 100%
 + 管理优惠{#managing-offers}
    + 互动入门 {#interaction-overview}
       + [互动和优惠管理](interaction/using/interaction-and-offer-management.md)
-      + [词汇表](interaction/using/glossary.md)
+      + [词汇表](interaction/using/i-glossary.md)
       + [互动最佳实践](interaction/using/interaction-best-practices.md)
    + 一般操作 {#general-operation}
       + [实施步骤](interaction/using/implementation-steps.md)
