@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## 交互类型和联系方法 {#interaction-types-and-contact-methods}
 
-交互有两种可能类型：集客交互（由联系人发起）和出站交互（由选件制作者发起）。
+交互有两种可能类型：入站交互（由联系人发起）和出站交互（由选件设计器发起）。
 
 这两种交互可以在统一模式（为单个联系人计算选件）或批量模式（为一组联系人计算选件）中执行。 通常，集客交互以统一模式进行，出站交互以批处理模式进行。 但是，对于事务型消息，例如，可能存在某些例外，即叫客交互以统一模式进行(请参阅 [此部分](../../message-center/using/about-transactional-messaging.md))。
 
