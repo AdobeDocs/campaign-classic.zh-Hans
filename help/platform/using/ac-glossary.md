@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 891418c4120793cf296a65f7aed86e71925a0d66
+source-git-commit: cd26bf082d891e55bce489256dd9d43a1e3f243c
 workflow-type: tm+mt
-source-wordcount: '6454'
+source-wordcount: '6453'
 ht-degree: 4%
 
 ---
@@ -782,7 +782,7 @@ Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-
 
 用户档案是代表最终客户、潜在客户或潜在客户的信息记录。 每个用户档案都对应于nmsRecipient表中的记录或外部表，其中包含Cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息。
 
-详细了解 [用户档案](../../platforrm/using/about-profiles.md).
+详细了解 [用户档案](../../platform/using/about-profiles.md).
 +++
 
 +++**项目**
@@ -1018,7 +1018,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 *上下文：促销活动互动，事务型消息传递*
 
-在统一模式下，选件引擎在运行时处理单个联系人。 此模式通常用于集客交互和事务型消息。
+在统一模式下，优惠引擎在运行时处理单个联系人。 此模式通常用于集客交互和事务型消息。
 
 详细了解 [酉模式](../../interaction/using/about-inbound-channels.md).
 +++
