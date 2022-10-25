@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: c4d7c87e769a270b18c57267e134bfbe9a2e0cdf
+source-git-commit: dea815b07f0b91ed550060fa00cf0501ae6594f7
 workflow-type: tm+mt
-source-wordcount: '6260'
+source-wordcount: '6087'
 ht-degree: 4%
 
 ---
@@ -77,12 +77,15 @@ ACS Connector(Prime Offering)连接了Adobe Campaign v7和Adobe Campaign Standar
 详细了解 [审核跟踪](../../production/using/audit-trail.md).
 +++
 
-+++**自动化促销活动**
+<!--
+----DUPLICATE WITH THE "CAMPAIGN" ENTRY?---
++++**Automated campaigns**
 
-按计划运行的营销活动，例如定向生日或周年纪念的收件人。 还可用于执行前瞻和回顾逻辑，例如，谁在昨天购买了产品或谁在明天有付款。
+Campaigns that run on a schedule, such as for targeting recipients who have a birthday or an anniversary. Can also be used to execute look-ahead and look-back logic, such as who purchased yesterday or who has a payment due tomorrow.
 
-详细了解 [促销活动](../../campaign/using/designing-marketing-campaigns.md).
+Learn more about [Campaigns](../../campaign/using/designing-marketing-campaigns.md).
 +++
+-->
 
 +++**批处理模式**
 
@@ -101,7 +104,7 @@ ACS Connector(Prime Offering)连接了Adobe Campaign v7和Adobe Campaign Standar
 +++
 
 <!--
------UNCLEAR-----
+-----NOT USEFUL HERE?-----
 +++**Changeover process**
 
 *Context: Campaign Interaction*
@@ -193,7 +196,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 *上下文：电子邮件投放能力*
 
-一种量度，可让操作员测量营销活动在到达收件人收件箱时是否成功，而不会跳出或标记为垃圾邮件。
+投放能力允许您衡量活动是否成功到达收件人的收件箱，而不会出现弹回或标记为垃圾邮件。 更准确地说，电子邮件投放能力是指一组特征，这些特征决定了消息在短时间内通过个人电子邮件地址到达其目标的能力，并在内容和格式方面具有预期质量。
 
 详细了解 [投放能力](../../delivery/using/about-deliverability.md).
 +++
@@ -219,14 +222,17 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 详细了解 [投放日志](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 +++
 
-+++**交付基础知识**
+<!--
+----STRANGE IN DOCS?----
++++**Delivery fundamentals**
 
-*上下文：电子邮件投放能力*
+*Context: Email Deliverability*
 
-Adobe Campaign可投放性基础咨询服务提供电子邮件可投放性咨询和声誉管理，以支持使用Adobe Campaign投放的客户。
+Adobe Campaign Deliverability Fundamentals Consulting Service provides email deliverability consultation and reputation management to support customers using Adobe Campaign deliveries.
 
-详细了解 [投放能力](../../delivery/using/about-deliverability.md).
+Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 +++
+-->
 
 +++**投放概要**
 
@@ -310,15 +316,21 @@ The version of Javascript that is used in Adobe Campaign Classic. Sometimes call
 详细了解 [电子邮件密送](../../delivery/using/email-parameters.md#email-bcc).
 +++
 
-+++**电子邮件卷承诺**
+<!--
+-----STRANGE FOR DOCS?----
++++**Email volume commitment**
 
-销售订单中规定的每年发送的预期电子邮件。 这是年度电子邮件总量承诺，包括由于发送错误而发送但未发送的电子邮件，例如：未投放邮件，包括但不限于电子邮件地址错误、硬退回、软退回、邮件客户端的电子邮件过滤器和电子邮件黑名单。
+The anticipated emails sent per year as set forth in the Sales Order. This is the total annual email volume commitment, including emails sent but not delivered due to delivery errors such as: non-delivery of a message including but not limited to email address errors, hard bounces, soft bounces, email filters of mail clients, and email blacklists. 
 +++
+-->
 
-+++**引擎调用**
+<!--
+-----USEFUL FOR DOCS?----
++++**Engine call**
 
-引擎调用是在服务器端启动实时处理以提取数据的服务器调用，例如与调查、WebApps、JSSP、API、移动设备应用程序注册等相关的数据。 引擎调用必须在每天5,000个引擎调用的包中获得许可。
+An engine call is a server call that starts real-time processing on server side for the extraction of data, such as data relating to surveys, WebApps, JSSP, APIs, mobile app registrations, etc. Engine calls must be licensed in packs of 5,000 Engine Calls per day.
 +++
+-->
 
 +++**扩充活动**
 
@@ -389,7 +401,7 @@ Explorer视图是包含Adobe Campaign工件和数据的文件夹的分层显示�
 
 +++**文件夹视图**
 
-“文件夹视图”是一种特殊的“资源管理器”文件夹类型，用于显示选定数据类型的所有记录，无论它属于哪个文件夹。 文件夹视图用作管理多个文件夹之间分发的分区数据或数据的管理工具。
+“文件夹”视图是一种特殊的资源管理器文件夹类型，用于显示选定数据类型的所有记录，无论它属于哪个文件夹。 文件夹视图用作管理多个文件夹之间分发的分区数据或数据的管理工具。
 
 详细了解 [文件夹视图](../../platform/using/adobe-campaign-explorer.md).
 +++
@@ -401,12 +413,15 @@ Forms定义特定架构类型的界面表示形式。 Forms是轻松创建和编
 详细了解 [Forms](../../configuration/using/identifying-a-form.md).
 +++
 
-+++**生成的SQL查询**
+<!--
+-----USEFUL HERE?-----
++++**Generated SQL query**
 
-当运算符操作模式时为基础数据库生成的SQL代码。 架构定义随后使用数据库表和列实施的数据类型。 为架构操作（例如在查询中）生成的SQL基于已安装的数据库类型。 因此，可以将数据库交换为其他类型，并且Campaign中的查询保持不变。 Adobe将此功能称为与数据库无关的功能。
+The SQL code generated for the underlying database when an operator manipulates a schema. Schemas define the data types that are then implemented using database tables and columns. The SQL generated for schema manipulation (such as in a query) is based on the installed database type. Thus, the database can be swapped to a different type and the queries in Campaign remain unchanged. Adobe refers to this functionality as being database-agnostic.
 
-详细了解 [生成的SQL查询](../../platform/using/steps-to-create-a-query.md#step-6---preview-data).
+Learn more about [Generated SQL queries](../../platform/using/steps-to-create-a-query.md#step-6---preview-data).
 +++
+-->
 
 +++**热图**
 
@@ -425,11 +440,12 @@ Campaign热图是一个显示24小时工作流执行信息的表。 它按小时
 
 ## I - L {#sec-3}
 
+<!-- added more details but maybe still not clear/useful here? -->
 +++**识别模式**
 
 *上下文：营销活动互动*
 
-指联系人的状态。 它可以是显式的、隐式的或匿名的。
+识别模式是指联系人的状态。 它可以是显式的、隐式的或匿名的。
 
 * **显式**:联系人在登录渠道界面后即被识别。
 * **隐式**:联系人已通过cookie（永久或会话）进行识别。 它可以作为匿名或已识别的联系人进行处理。
@@ -439,7 +455,7 @@ Campaign热图是一个显示24小时工作流执行信息的表。 它按小时
 +++
 
 <!--
-----UNCLEAR----
+----NOT USEFUL HERE?----
 +++**Image serving**
 
 The functionality that supplies the images embedded in emails to the delivery’s recipients. The insertion of the images based on an emails system’s “download images” functionality is what generates an “open” entry in Campaign’s tracking logs.
@@ -488,7 +504,7 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 +++**本地缓存**
 
-在操作员计算机上本地存储的信息。 控制台会使用缓存信息来减少服务器所需的流量并提高性能。 定期清除本地缓存（在“文件”菜单上）会更新存储的信息，并提高性能和稳定性。
+本地缓存是在操作员计算机上本地存储的信息。 控制台会使用缓存信息来减少服务器所需的流量并提高性能。 定期清除本地缓存（在“文件”菜单上）会更新存储的信息，并提高性能和稳定性。
 
 详细了解 [本地缓存](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 +++
@@ -521,21 +537,21 @@ This template type is used to manage multilingual messages.  It is available for
 
 +++**命名空间**
 
-分区，用于将客户数据类型与数据模型中Adobe Campaign的本机数据类型分隔开。 还用于促进定义从一个实例迁移到另一个实例，例如将架构或模板从开发实例移动到生产实例。
+命名空间是一个分区，用于将客户数据类型与数据模型中Adobe Campaign的本机数据类型分隔开。 还用于促进定义从一个实例迁移到另一个实例，例如将架构或模板从开发实例移动到生产实例。
 
 详细了解 [命名空间](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
 
 +++**导航栏**
 
-在界面顶部运行的导航元素。 导航栏可重组平台的各种核心功能。 单击导航栏链接以显示与此功能相关的功能集。 可以访问的核心功能列表将取决于您所安装的软件包和附加组件以及访问权。导航栏的用途是简化屏幕管理并提高工作效率。
+导航栏是在界面顶部运行的导航元素。 导航栏可重组平台的各种核心功能。 单击导航栏链接以显示与此功能相关的功能集。 可以访问的核心功能列表将取决于您所安装的软件包和附加组件以及访问权。导航栏的用途是简化屏幕管理并提高工作效率。
 
 详细了解 [导航栏](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
 +++
 
 +++**导航树**
 
-Adobe Campaign的Explorer视图中的主导航。 导航树的工作方式类似于文件浏览器（例如Windows资源管理器）。 文件夹可能包含子文件夹。 选择节点后，将显示与该节点对应的视图。 显示的视图是与架构关联的列表以及用于编辑所选行的输入表单。 您可以自定义导航树并设置文件夹的权限。
+导航树是Adobe Campaign的Explorer视图中的主导航。 导航树的工作方式类似于文件浏览器（例如Windows资源管理器）。 文件夹可能包含子文件夹。 选择节点后，将显示与该节点对应的视图。 显示的视图是与架构关联的列表以及用于编辑所选行的输入表单。 您可以自定义导航树并设置文件夹的权限。
 
 详细了解 [导航树](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
 +++
@@ -553,7 +569,7 @@ Adobe Campaign的Explorer视图中的主导航。 导航树的工作方式类似
 
 *上下文：营销活动互动*
 
-在Adobe Campaign中定义的一组选件，可在交互过程中进行选择。 该目录以对应于一类别的每个节点来分层组织。
+选件目录是在Adobe Campaign中定义的一组选件，可在交互过程中进行选择。 该目录以对应于一类别的每个节点来分层组织。
 
 详细了解 [优惠目录](../../interaction/using/offer-catalog-overview.md).
 +++
@@ -562,7 +578,7 @@ Adobe Campaign的Explorer视图中的主导航。 导航树的工作方式类似
 
 *上下文：营销活动互动*
 
-集客互动的联系人。 在引擎调用处理期间，联系人与定向维度关联。 未识别的匿名联系人将归属于访客定位维度。 有两种类型的联系人：已识别和匿名：
+选件联系人是来自集客互动的联系人。 在引擎调用处理期间，联系人与定向维度关联。 未识别的匿名联系人将归属于访客定位维度。 有两种类型的联系人：已识别和匿名：
 
 * **已识别的联系人**:已在频道上自愿识别的联系人。 在叫客交互中，联系人会被自动识别。
 * **匿名联系人**:未通过渠道自愿订阅，但可通过Cookie隐式识别的联系人。 此术语仅用于传入交互。
@@ -583,7 +599,7 @@ Adobe Campaign的Explorer视图中的主导航。 导航树的工作方式类似
 
 *上下文：营销活动互动*
 
-选择将在环境中显示的选件（符合条件的选件）。 套利原则根据类别和报价中定义的标准，按优先级对报价进行排序。
+选件引擎会选择将在环境中显示的选件（符合条件的选件）。 套利原则根据类别和报价中定义的标准，按优先级对报价进行排序。
 
 详细了解 [互动](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -592,7 +608,7 @@ Adobe Campaign的Explorer视图中的主导航。 导航树的工作方式类似
 
 *上下文：营销活动互动*
 
-删除不符合选择条件的选件的过程。 在优惠引擎套利步骤之前执行。
+选件引擎修剪是删除不符合选择条件的选件的过程。 在优惠引擎套利步骤之前执行。
 
 详细了解 [互动](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -601,7 +617,7 @@ Adobe Campaign的Explorer视图中的主导航。 导航树的工作方式类似
 
 *上下文：营销活动互动*
 
-根文件夹，用于定义选件目录、其可用空格和环境的预定义过滤器。 操作员需要为每个定向维度创建一个环境。 选件环境有两种类型：设计和实时。
+选件环境是根文件夹，用于定义选件目录、其可用空格和环境的预定义过滤器。 操作员需要为每个定向维度创建一个环境。 选件环境有两种类型：设计和实时。
 
 详细了解 [环境](../../interaction/using/fundamental-principles.md).
 +++
@@ -610,27 +626,27 @@ Adobe Campaign的Explorer视图中的主导航。 导航树的工作方式类似
 
 *上下文：营销活动互动*
 
-链接到营销活动的环境 **设计环境**. 它包含已通过 **设计环境**. 可以选择在网站上演示或插入到出站消息中。
+选件实时环境已链接到营销活动 **设计环境**. 它包含已通过 **设计环境**. 可以选择在网站上演示或插入到出站消息中。
 
 详细了解 [实时环境](../../interaction/using/fundamental-principles.md).
-+++
-
-+++**优惠预览**
-
-*上下文：营销活动互动*
-
-预览选件在其文件夹中显示时的显示效果。 可从选件预览选项卡或联系人资料访问选件。
-
-详细了解 [选件预览](../../interaction/using/creating-an-offer.md#previewing-the-offer).
 +++
 
 +++**选件演示规则**
 
 *上下文：营销活动互动*
 
-选件环境中引用的分类规则，允许运算符通过考虑收件人的建议历史记录来排除特定选件。
+选件演示规则是选件环境中引用的分类规则，允许运算符通过考虑收件人的建议历史来排除特定选件。
 
 详细了解 [选件演示规则](../../interaction/using/managing-offer-presentation.md#presentation-rules-overview).
++++
+
++++**优惠预览**
+
+*上下文：营销活动互动*
+
+这是选件在其文件夹中显示的预览。 可从选件预览选项卡或联系人资料访问选件。
+
+详细了解 [选件预览](../../interaction/using/creating-an-offer.md#previewing-the-offer).
 +++
 
 +++**优惠建议**
@@ -687,18 +703,18 @@ Adobe Campaign的Explorer视图中的主导航。 导航树的工作方式类似
 详细了解 [选件权重](../../interaction/using/creating-an-offer.md#offer-weight).
 +++
 
-+++**运算符组**
-
-操作员组允许您管理Campaign操作员的角色。 您可定义属于权限的运算符组，然后将运算符与一个或多个组关联。 这样，您就可以重复使用权限，并使操作员配置文件更加一致。 它还有助于用户档案的管理和维护。
-
-详细了解 [运算符组](../../platform/using/access-management-groups.md).
-+++
-
 +++**操作员**
 
 操作员是具有登录和执行操作权限的Adobe Campaign用户。 操作员与操作员组关联，并继承这些组的权限。 您还可以将命名权限直接归因到运算符。
 
 详细了解 [运算符](../../platform/using/access-management-operators.md).
++++
+
++++**运算符组**
+
+操作员组允许您管理Campaign操作员的角色。 您可定义属于权限的运算符组，然后将运算符与一个或多个组关联。 这样，您就可以重复使用权限，并使操作员配置文件更加一致。 它还有助于用户档案的管理和维护。
+
+详细了解 [运算符组](../../platform/using/access-management-groups.md).
 +++
 
 +++**选项**
@@ -774,7 +790,7 @@ Adobe Campaign提供了可插入投放的内置个性化块。 它们是动态�
 +++
 
 <!--
-----DEPREACTED----
+----DEPRECATED----
 +++**Predictive Engagement Scoring**
 
 Predictive engagement scoring predicts the probability of a recipient engaging with a message and the probability of opting out (unsubscribing) within the next seven days after the next email send. The probabilities are further divided into buckets according to the specific risk of disengagement, medium, or low. The model also provides the risk percentile rank for the customers to understand where the rank of a certain customer in relation to others. 
@@ -839,25 +855,25 @@ Adobe Campaign中的“公共资源”文件夹包含由应用程序服务器托
 +++
 
 <!--
------DID NOT FIND IN DOCS----
+-----DID NOT FIND IN ACC DOCS, ACS?----
 +++**Retargeting campaigns**
 
 Campaigns that re-target the recipients of a previous delivery or deliveries.
 +++
 -->
 
-+++**模式扩展**
-
-架构扩展允许您自定义现成的架构，以最适合您的业务用例。 例如，您可以将“忠诚度”字段添加到收件人表。
-
-详细了解 [模式扩展](../../configuration/using/extending-a-schema.md).
-+++
-
 +++**架构**
 
 模式是与数据库表关联的XML文档。 它定义了数据结构并描述了表的SQL定义。 操作员在Campaign中处理模式，产品将其操作转换为所需的SQL，然后针对数据库执行该SQL。
 
 详细了解 [模式](../../configuration/using/about-schema-reference.md).
++++
+
++++**模式扩展**
+
+架构扩展允许您自定义现成的架构，以最适合您的业务用例。 例如，您可以将“忠诚度”字段添加到收件人表。
+
+详细了解 [模式扩展](../../configuration/using/extending-a-schema.md).
 +++
 
 +++**种子地址**
@@ -868,6 +884,7 @@ Campaigns that re-target the recipients of a previous delivery or deliveries.
 +++
 
 <!--
+-------ACS?-----
 +++**Send-time optimization**
 
 To improve the open rate of your messages, you can manually define a sending time per recipient. Each profile will receive the message at the specified date and time, whenever possible. Defining a sending time can be done at the delivery level or using a workflow.
@@ -944,7 +961,7 @@ Learn more about [Send-time optimization](../../delivery/using/about-seed-addres
 +++
 
 <!--
------NOT USEFUL-----
+-----NOT USEFUL, detail-----
 +++**Task**
 
 One iteration of the defined functionality of a workflow activity. Each execution of a task has a unique task identifier.   
@@ -960,7 +977,6 @@ Learn more about [Tasks](../../workflow/using/about-workflows.md).
 
 <!--
 -----ACS -> SEEDS IN ACC-----
-
 +++**Test profiles**
 
 Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
@@ -970,7 +986,7 @@ Learn more about [Test profiles](../../workflow/using/about-workflows.md).
 -->
 
 <!--
------NOT USEFUL?-----
+-----NOT FOR DOCS?-----
 +++**Total database storage**
 
 The aggregate size of the production and non-production instance(s) database storage managed by Adobe. 
@@ -993,6 +1009,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 详细了解 [事务型消息传递](../../message-center/using/about-transactional-messaging.md).
 +++
 
+<!------- USEFUL HERE??----->
 +++**触发的营销活动**
 
 触发式营销活动是指在工作流中收到API请求时执行的营销活动。 工作流中的信号活动会使用API调用，该活动会启动工作流的执行。
@@ -1010,15 +1027,6 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 +++
 -->
 
-+++**类型规则**
-
-*上下文：促销活动优化*
-
-分类规则是作为投放分析阶段一部分实施的业务规则。 分类规则是对投放内容（控制规则）、投放目标（筛选规则）或执行业务要求的其他逻辑（压力规则）的检查。 规则是可包含在一个或多个分类中的粒度元素。
-
-详细了解 [分类规则](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
-+++
-
 +++**类型**
 
 *上下文：促销活动优化*
@@ -1026,6 +1034,15 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 分类是应用于投放分析阶段的分类规则组。 营销活动分类可以包含多个分类规则，但投放只能引用一个分类。
 
 详细了解 [分类](../../campaign-opt/using/about-campaign-typologies.md#typologies).
++++
+
++++**类型规则**
+
+*上下文：促销活动优化*
+
+分类规则是作为投放分析阶段一部分实施的业务规则。 分类规则是对投放内容（控制规则）、投放目标（筛选规则）或执行业务要求的其他逻辑（压力规则）的检查。 规则是可包含在一个或多个分类中的粒度元素。
+
+详细了解 [分类规则](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 ## U - Z {#sec-6}
@@ -1056,18 +1073,18 @@ Web应用程序是由Campaign实例托管的动态交互式应用程序页面。
 详细了解 [Web应用程序](../../web/using/about-web-applications.md).
 +++
 
-+++**工作流日记帐**
-
-工作流日志是工作流的分步执行日志。 它包含工作流的所有历史记录或审核跟踪。 它用于开发、疑难解答或调试目的。
-
-详细了解 [工作流日记帐](../../workflow/using/monitoring-workflow-execution.md).
-+++
-
 +++**工作流**
 
 工作流是营销活动执行流程的直观表示形式。 它允许您跨应用程序服务器的不同模块编排各种流程和任务。 您可以利用这个全面的图形环境设计各式流程，包括部分划分、活动执行、文件处理、人员参与等。工作流引擎会执行并跟踪这些流程。
 
 详细了解 [工作流](../../workflow/using/about-workflows.md).
++++
+
++++**工作流日记帐**
+
+工作流日志是工作流的分步执行日志。 它包含工作流的所有历史记录或审核跟踪。 它用于开发、疑难解答或调试目的。
+
+详细了解 [工作流日记帐](../../workflow/using/monitoring-workflow-execution.md).
 +++
 
 +++**工作台**
