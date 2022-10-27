@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: dea815b07f0b91ed550060fa00cf0501ae6594f7
+source-git-commit: 9900fb627dfb310e8f34735a502997ef8e24e769
 workflow-type: tm+mt
-source-wordcount: '6087'
-ht-degree: 4%
+source-wordcount: '5993'
+ht-degree: 3%
 
 ---
 
@@ -140,14 +140,14 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 使用控制组通过排除部分控制组受众来衡量活动的影响。 操作员可以比较收到消息的目标群体的行为与非目标联系人的行为。 根据发送日志，操作员还可以在将来的营销活动中定位控制组。
 
-详细了解 [内容批准](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+详细了解 [内容组](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**控制面板**
 
-该控制面板允许您管理每个实例的设置并跟踪其使用情况，从而帮助您作为Adobe Campaign的产品管理员提高工作效率。 其直观的界面可让您轻松监控关键资产的使用情况，并执行管理任务，如将 IP 地址添加到允许列表、SFTP 存储监控、密钥管理等。
+该控制面板允许Adobe Campaign的产品管理员管理其每个实例的设置和跟踪使用情况，从而帮助他们提高工作效率。 其直观的界面让用户能够轻松监控关键资产的使用情况，并执行管理任务，如IP地址允许列表添加、SFTP存储监控、密钥管理等。
 
-详细了解 [内容批准](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans).
+详细了解 [内容面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans).
 +++
 
 +++**多维数据集**
@@ -170,7 +170,7 @@ Adobe Campaign提供了预定义的数据模型，其中数据类型通过安装
 
 Campaign数据模型是一组架构，用于定义数据类型及其关系（链接）。 数据模型是抽象定义，物理上使用包含实际数据的数据库来实现。
 
-详细了解 [自定义资源](../../configuration/using/about-data-model.md).
+详细了解 [数据模型](../../configuration/using/about-data-model.md).
 +++
 
 +++**数据库清理工作流**
@@ -261,7 +261,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *上下文：分布式营销*
 
-向Campaign运营商提供的分布式营销附加组件提供了一个协作工作区，用于在中心实体（总部、营销部门等）之间实施营销活动 实施协作营销活动。此合作基于称为 **Campaign包列表**，其中向本地实体提供了集中创建的营销活动模板和实例。
+向Campaign运营商提供的分布式营销附加组件是一个协作工作区，用于在中心实体（总部、营销部门等）之间实施营销活动 实施协作营销活动。此合作基于称为 **Campaign包列表**，其中向本地实体提供了集中创建的营销活动模板和实例。
 
 详细了解 [分布式营销](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -270,7 +270,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 值分布是一个工具，用于显示当前存在于数据库中的架构属性的值分布。 这有助于您确定哪些值可用、其计数和百分比，并避免在创建查询或表达式时出现值大小写和拼写问题。
 
-详细了解 [分布式营销](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
+详细了解 [值分布](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
 +++
 
 +++**域委派**
@@ -385,7 +385,7 @@ Explorer视图是包含Adobe Campaign工件和数据的文件夹的分层显示�
 详细了解 [文件提取批准](../../delivery/using/validating.md).
 +++
 
-+++**正在过滤维度**
++++**过滤维度**
 
 筛选维度是一种架构，其中包含查询用于筛选所需行的数据或属性。 筛选维度架构必须直接链接到定义的定向维度，以便Adobe Campaign能够跨数据库连接并返回响应行。
 
@@ -542,12 +542,15 @@ This template type is used to manage multilingual messages.  It is available for
 详细了解 [命名空间](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
 
-+++**导航栏**
+<!--
+----generic, not specific to campaign----
++++**Navigation bar**
 
-导航栏是在界面顶部运行的导航元素。 导航栏可重组平台的各种核心功能。 单击导航栏链接以显示与此功能相关的功能集。 可以访问的核心功能列表将取决于您所安装的软件包和附加组件以及访问权。导航栏的用途是简化屏幕管理并提高工作效率。
+The navigation bar is the navigation element running across the top of the interface. The navigation bar regroups the various core capabilities of the platform. Click a navigation bar link to display the set of functionalities related to this capability. The list of core capabilities you can access depends on the packages and add-ons you have installed and on your access rights. The purpose of the Navigation bar is to simplify screen management and increase productivity.
 
-详细了解 [导航栏](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
+Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
 +++
+-->
 
 +++**导航树**
 
@@ -592,7 +595,7 @@ This template type is used to manage multilingual messages.  It is available for
 
 选件 **设计环境** 是运算符在其中创建选件、定义分类规则以及选择选件所定向的架构的环境。 用于存储所生成的优惠建议的表也由环境定义。 默认情况下， Interaction附加组件附带 **设计** 环境和 **实时** 链接到该环境。 这两个环境都已预配置为定向内置的收件人表。
 
-详细了解 [设计环境](../../interaction/using/fundamental-principles.md).
+详细了解 [选件设计环境](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**优惠引擎套利**
@@ -619,7 +622,7 @@ This template type is used to manage multilingual messages.  It is available for
 
 选件环境是根文件夹，用于定义选件目录、其可用空格和环境的预定义过滤器。 操作员需要为每个定向维度创建一个环境。 选件环境有两种类型：设计和实时。
 
-详细了解 [环境](../../interaction/using/fundamental-principles.md).
+详细了解 [选件环境](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**选件实时环境**
@@ -628,7 +631,7 @@ This template type is used to manage multilingual messages.  It is available for
 
 选件实时环境已链接到营销活动 **设计环境**. 它包含已通过 **设计环境**. 可以选择在网站上演示或插入到出站消息中。
 
-详细了解 [实时环境](../../interaction/using/fundamental-principles.md).
+详细了解 [选件实时环境](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**选件演示规则**
@@ -662,7 +665,7 @@ This template type is used to manage multilingual messages.  It is available for
 
 *上下文：营销活动互动*
 
-选件建议是该操作的结果，该操作包括在给定选件空间中向联系人展示选件，例如网站上的横幅、电子邮件或短信内容。 此结果存储在选件建议表中，该表定义了选件、收件人和时间戳，提供了收件人收到的所有选件的记录。
+选件表示是渠道用于显示选件的信息。 选件表示可以由表示选件的空间的呈现函数构建，或直接输入到界面(例如，在HTML块中)中。 选件可以由空格表示。
 
 详细了解 [互动](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -676,13 +679,13 @@ This template type is used to manage multilingual messages.  It is available for
 详细了解 [优惠模拟](../../interaction/using/about-offers-simulation.md).
 +++
 
-+++**选件空间**
++++**优惠空间**
 
 *上下文：营销活动互动*
 
 选件空间是一个文件夹，用于定义选件的显示位置。 通过定义空格，您可以指定使用的渠道、构建选件的内容，以及指定显示的选件。 选件空间是渠道与选件引擎之间的接口。
 
-详细了解 [优惠模拟](../../interaction/using/creating-offer-spaces.md).
+详细了解 [选件空间](../../interaction/using/creating-offer-spaces.md).
 +++
 
 +++**选件主题**
@@ -747,7 +750,7 @@ This template type is used to manage multilingual messages.  It is available for
 详细了解 [调色板](../../workflow/using/building-a-workflow.md#adding-and-linking-activities).
 +++
 
-+++**性能监控**
++++**性能监测**
 
 性能监控信息显示在“监控”选项卡上。 它显示基础系统的量度，如内存和CPU使用率、SMTP服务器统计信息、服务器进程和其他相关信息。
 
@@ -1010,9 +1013,9 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 +++
 
 <!------- USEFUL HERE??----->
-+++**触发的营销活动**
++++**已触发营销活动**
 
-触发式营销活动是指在工作流中收到API请求时执行的营销活动。 工作流中的信号活动会使用API调用，该活动会启动工作流的执行。
+触发的营销活动是指在工作流中收到API请求时执行的营销活动。 工作流中的信号活动会使用API调用，该活动会启动工作流的执行。
 
 详细了解 [触发的营销活动](../../workflow/using/external-signal.md).
 +++
