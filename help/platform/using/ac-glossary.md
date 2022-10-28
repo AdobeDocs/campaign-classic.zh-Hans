@@ -4,11 +4,9 @@ title: Adobe Campaign术语表
 description: Adobe Campaign术语表
 role: User, Data Architect
 level: Beginner
-hide: true
-hidefromtoc: true
-source-git-commit: 9900fb627dfb310e8f34735a502997ef8e24e769
+source-git-commit: 3a540b59640d4cf128417f751d0076fd97310768
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '6041'
 ht-degree: 3%
 
 ---
@@ -140,14 +138,14 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 使用控制组通过排除部分控制组受众来衡量活动的影响。 操作员可以比较收到消息的目标群体的行为与非目标联系人的行为。 根据发送日志，操作员还可以在将来的营销活动中定位控制组。
 
-详细了解 [内容组](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+详细了解 [控制组](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**控制面板**
 
 该控制面板允许Adobe Campaign的产品管理员管理其每个实例的设置和跟踪使用情况，从而帮助他们提高工作效率。 其直观的界面让用户能够轻松监控关键资产的使用情况，并执行管理任务，如IP地址允许列表添加、SFTP存储监控、密钥管理等。
 
-详细了解 [内容面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans).
+详细了解 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans).
 +++
 
 +++**多维数据集**
@@ -284,12 +282,12 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 ## E - H {#sec-2}
 
 <!--
-----DEPREACTED----
+----DEPRECATED------>
 +++**E4X**
 
-The version of Javascript that is used in Adobe Campaign Classic. Sometimes called ECMAScript, it is an extension of Javascript that allows the mixing of Javascript and XML primitives in the same code. Note that E4X is classified as a deprecated language. 
+E4X是Adobe Campaign Classic中使用的Javascript版本。 它有时称为ECMAScript，是Javascript的扩展，允许在同一代码中混合使用Javascript和XML基元。 请注意，E4X被分类为已弃用的语言。
 +++
--->
+
 
 +++**资格规则**
 
@@ -1060,14 +1058,14 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 +++
 
 <!--
------NO OCCURRENCE IN ACC, OLD v6 CONCEPT?----
+-----NO OCCURRENCE IN ACC, OLD v6 CONCEPT?
 +++**Universes**
 
 Application pages hosted by the Campaign instance. Used for approval forms, landing pages, opt-out forms, preference pages or to implement other business requirements.  
 
 Learn more about [Universes](../../workflow/using/about-workflows.md).
 +++
--->
+------>
 
 +++**Web 应用程序**
 
