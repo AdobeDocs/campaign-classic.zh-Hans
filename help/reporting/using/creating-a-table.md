@@ -4,7 +4,7 @@ title: 创建表
 description: 创建表
 feature: Reporting
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
@@ -464,4 +464,4 @@ A **[!UICONTROL List with group]** 使用“类型表”可以对表中的数据
 
 这些类型的报表的配置与描述性分析向导所使用的报表类似。 有关详细信息，请参见[此页面](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)。
 
-有关创建数据透视表的更多信息，请参阅 [此部分](../../reporting/using/using-cubes-to-explore-data.md).
+有关创建数据透视表的更多信息，请参阅 [此部分](../../reporting/using/ac-cubes.md).

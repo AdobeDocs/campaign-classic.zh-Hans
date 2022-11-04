@@ -4,10 +4,10 @@ title: 更新聚合
 description: 了解有关更新聚合工作流活动的更多信息
 feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 4%
+source-wordcount: '123'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +17,12 @@ ht-degree: 4%
 
 聚合在多维数据集级别定义，用于报告。 A **[!UICONTROL Workflow]** 选项卡。
 
-有关Adobe Campaign中多维数据集和使用聚合的更多信息，请参阅 [部分](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
+处理大量数据时，聚合非常有用。 系统会根据专用工作流框中定义的设置自动更新这些参数，以便将最近收集的数据集成到指标中
+
+聚合在每个多维数据集的相关选项卡中定义。
+
+![](assets/s_advuser_cube_agregate_01.png)
+
 
 的 **[!UICONTROL Update aggregate]** 活动允许您选择要应用的更新模式：完整或部分。
 

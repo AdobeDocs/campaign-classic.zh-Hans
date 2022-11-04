@@ -4,7 +4,7 @@ title: 收集数据进行分析
 description: 收集数据进行分析
 feature: Reporting
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 3%
@@ -55,7 +55,7 @@ ht-degree: 3%
 
 ![](assets/reporting_query_from_cube.png)
 
-多维数据集可扩展数据库的探索和分析能力，同时为最终用户更轻松地配置报告和表：只需选择一个已完全配置的现有多维数据集并使用其计算、度量和统计信息即可。 有关创建多维数据集的更多信息，请参阅 [此部分](../../reporting/using/about-cubes.md).
+多维数据集可扩展数据库的探索和分析能力，同时为最终用户更轻松地配置报告和表：只需选择一个已完全配置的现有多维数据集并使用其计算、度量和统计信息即可。 有关创建多维数据集的更多信息，请参阅 [此部分](../../reporting/using/ac-cubes.md).
 
 单击 **[!UICONTROL Edit query...]** 链接，然后选择要在报表中显示或使用的指标。
 

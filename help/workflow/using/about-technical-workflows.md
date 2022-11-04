@@ -4,10 +4,10 @@ title: 技术工作流
 description: 进一步了解Campaign Classic包中可用的技术工作流。
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 5bfd755ae8278a221e0f0e6f4121bfb072ebda12
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '1705'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -47,9 +47,9 @@ ht-degree: 3%
 | **讨论论坛进程** (newsgroupMgt) | 营销资源(MRM) | 此工作流用于管理论坛中通知的发送。 在收到批准信号时触发 |
 | **分布式营销流程** (centralLocalMgt) | 中央/地方营销（分布式营销） | 此工作流会开始处理与使用分布式营销模块相关的问题。 它会启动本地促销活动的创建，并管理与订单和促销活动包可用性相关的通知。 |
 | **事件清除** (webAnalyticsPurgeWebEvents) | Web Analytics连接器 | 利用此工作流，可根据在“有效期”(Life)字段中配置的期间，从数据库字段中删除每个事件。 |
-| **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流会将受众导出为共享的受众/区段。 这些受众可在您使用的不同Adobe Experience Cloud解决方案中使用。 |
+| **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流会将受众导出为共享的受众/区段。 您可在所用的不同 Adobe Experience Cloud 解决方案中使用这些受众。 |
 | **预测** （预测） | 投放 | 此工作流会分析在临时日历中保存的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。 |
-| **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流更新了选件建议多维数据集的完整聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合会捕获以下维度：渠道、投放、营销选件和日期。 然后，使用选件建议多维数据集来根据选件生成报告。 您可以在 [此部分](../../reporting/using/about-cubes.md). |
+| **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流更新了选件建议多维数据集的完整聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合会捕获以下维度：渠道、投放、营销选件和日期。 然后，使用选件建议多维数据集来根据选件生成报告。 您可以在 [此部分](../../reporting/using/ac-cubes.md). |
 | **已转换联系人的标识** (webAnalyticsFindConverted) | Web Analytics连接器 | 此工作流可为在再营销活动后完成购买的网站访客建立索引。 可通过再营销效率报表访问此工作流取回的数据（请参阅此页面）。 |
 | **从Adobe Experience Cloud导入受众** (importSharedAudience) | 与Adobe Experience Cloud集成 | 利用此工作流，可将不同Adobe Experience Cloud解决方案中的受众/区段导入Adobe Campaign。 |
 | **营销活动中投放的作业** (deliveryMgt) | 营销活动（营销活动） | 此工作流会触发已批准的投放，并启动外部投放的服务提供商的后处理。 它还会发送批准通知和提醒。 |
@@ -58,7 +58,7 @@ ht-degree: 3%
 | **从MID迁移到LineUserID** (MIDToUserIDMigration) | LINE 渠道 | 此工作流会生成从LINE V1迁移到LINE V2的LINE V2用户ID。 |
 | **营销资源通知** (assetMgt) | 营销资源(MRM) | 此工作流可管理链接到营销资源批准和发布的通知。 |
 | **消息中心 &lt;external_account_name>** (mcSynch_&lt;external_account_name>) | 事务型消息控制（消息中心 — 控制） | 此工作流： <ul><li>取回由操作处理的事件列表。</li><li>与NmsBroadLogMsg表同步，以恢复投放消息的资格。</li><li>与NmsBroadLogMsg表同步完成后，立即恢复事件投放日志。</li><li>与NmsTrackingUrl表同步，以便恢复交付URL的跟踪。</li><li>完成与NmsTrackingUrl表的同步后，会立即恢复事件跟踪URL。</li><li>允许您在发送投放后每三小时恢复隔离的所有电子邮件地址。</li></ul> |
-| **MessageCenter完整聚合计算** (agg_messageCenter_full) | 事务型消息控制（消息中心 — 控制） | 此工作流更新消息中心多维数据集的完整聚合。 默认情况下，此工作流于每日凌晨3点触发。 此聚合会捕获以下维度：渠道、日期、状态和事件类型。 然后，消息中心多维数据集用于根据事件生成报告。 您可以在 [此部分](../../reporting/using/about-cubes.md) |
+| **MessageCenter完整聚合计算** (agg_messageCenter_full) | 事务型消息控制（消息中心 — 控制） | 此工作流更新消息中心多维数据集的完整聚合。 默认情况下，此工作流于每日凌晨3点触发。 此聚合会捕获以下维度：渠道、日期、状态和事件类型。 然后，消息中心多维数据集用于根据事件生成报告。 您可以在 [此部分](../../reporting/using/ac-cubes.md) |
 | **中间源（投放计数器）** (defaultMidSourcingDlv) | 传输到中间源 | 此工作流会收集中间源服务器上投放的计数信息。 计数信息包括常规投放指示器，如发送的投放数量等。 不包括打开等跟踪信息。 默认情况下，每10分钟触发一次。 |
 | **中间源（投放日志）** (defaultMidSourcingLog) | 传输到中间源 | 此工作流在中间源服务器上收集投放日志。 默认情况下，每小时触发一次。 |
 | **NMAC选择退出管理** (mobileAppOptOutMgt) | 移动应用程序渠道 | 此工作流可更新移动设备上的取消订阅通知。 从凌晨1点到午夜之间，每6小时触发一次。 有关更多详细信息，请参阅 [此部分](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |

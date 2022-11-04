@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%
@@ -43,7 +43,7 @@ Adobe Campaign 不是专门的报告创建工具：在 Adobe Campaign 中创建�
 
 创建和配置多维数据集后，报告查询框和 Web 应用程序中即会使用这些多维数据集。它们可以在数据透视表中使用和操作。
 
-了解如何利用多维数据集[探索数据](../../reporting/using/using-cubes-to-explore-data.md)。
+了解如何利用多维数据集[探索数据](../../reporting/using/ac-cubes.md)。
 
 ## 我能利用在线调查的回答创建报告吗？ {#can-i-create-a-report-from-answers-to-an-online-survey-}
 

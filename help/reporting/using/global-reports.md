@@ -4,7 +4,7 @@ title: 全局报告
 description: 全局报告
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '2295'
 ht-degree: 4%
@@ -125,7 +125,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->此报表中显示的域名在多维数据集级别定义。 要更改这些值，请编辑 **[!UICONTROL Delivery logs (broadlogrcp)]** 多维数据集。 如需详细信息，请参阅[此部分](../../reporting/using/about-cubes.md)。的 **[!UICONTROL Others]** 类别包括不属于特定类的域名。
+>此报表中显示的域名在多维数据集级别定义。 要更改这些值，请编辑 **[!UICONTROL Delivery logs (broadlogrcp)]** 多维数据集。 如需详细信息，请参阅[此部分](../../reporting/using/ac-cubes.md)。的 **[!UICONTROL Others]** 类别包括不属于特定类的域名。
 
 ## 浏览器 {#browsers}
 
@@ -278,7 +278,7 @@ ht-degree: 4%
 
 此图表显示了相关期间订阅和退订的演变情况。
 
-## 投放统计 {#delivery-statistics}
+## 投放统计信息 {#delivery-statistics}
 
 此报表显示按互联网域、处理和发送的所有消息、硬退回和软退回、打开、点击和退订的细分。
 

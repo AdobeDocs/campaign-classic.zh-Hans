@@ -4,7 +4,7 @@ title: Adobe Campaign术语表
 description: Adobe Campaign术语表
 role: User, Data Architect
 level: Beginner
-source-git-commit: 3a540b59640d4cf128417f751d0076fd97310768
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '6041'
 ht-degree: 3%
@@ -154,7 +154,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 多维数据集是一种Adobe Campaign直观的数据探索工具，可帮助用户创建和共享动态报告。
 
-详细了解 [多维数据集](../../reporting/using/about-cubes.md).
+详细了解 [多维数据集](../../reporting/using/ac-cubes.md).
 +++
 
 +++**自定义资源**

@@ -4,9 +4,9 @@ title: 报告最佳实践
 description: Campaign报告最佳实践
 feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -29,13 +29,13 @@ ht-degree: 0%
 
    例如，您可以：
 
-   * 浏览数据库中的数据并定义测量。 了解更多 [在此部分中](../../reporting/using/about-cubes.md)
+   * 浏览数据库中的数据并定义测量。 了解更多 [在此部分中](../../reporting/using/ac-cubes.md)
    * 将指标添加到现有报表。 了解更多 [在此部分中](../../reporting/using/about-reports-creation-in-campaign.md)
    * 查看数据库中的数据。 了解更多 [在此部分中](../../reporting/using/about-descriptive-analysis.md)
    * 创建新投放报告。 了解更多 [在此部分中](../../reporting/using/about-reports-creation-in-campaign.md))、
    * 从Adobe Campaign数据库导出数据(通过工作流，请参阅 [此部分](../../workflow/using/about-workflows.md)
    * 创建数据透视表。 了解更多 [在此部分中](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * 浏览聚合数据。 了解更多 [在此部分中](../../reporting/using/about-cubes.md)
+   * 浏览聚合数据。 了解更多 [在此部分中](../../reporting/using/ac-cubes.md)
    * 使用向导分析数据。 了解更多 [在此部分中](../../reporting/using/about-descriptive-analysis.md)
    * 分析大量数据。 了解更多 [在此部分中](../../reporting/using/about-reports-creation-in-campaign.md)
 

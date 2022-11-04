@@ -3,8 +3,10 @@ product: campaign
 title: 多维数据集的最佳实践
 description: 多维数据集的最佳实践
 feature: Reporting
+hide: true
+hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 0%
@@ -127,8 +129,6 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 处理大量数据时，聚合非常有用。 系统会根据专用工作流框中定义的设置自动更新这些参数，以便将最近收集的数据集成到指标中
 
 聚合在每个多维数据集的相关选项卡中定义。
-
-![](assets/s_advuser_cube_agregate_01.png)
 
 >[!NOTE]
 >

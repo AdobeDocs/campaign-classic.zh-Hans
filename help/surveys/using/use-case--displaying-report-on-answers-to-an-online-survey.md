@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: '"用例：显示在线调查的答案报告"'
-description: '"用例：显示在线调查的答案报告"'
+title: "用例：显示在线调查的答案报告"
+description: "用例：显示在线调查的答案报告"
 feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 6%
@@ -65,7 +65,7 @@ ht-degree: 6%
 
 ## 第2步 — 创建多维数据集、其度量及其指标 {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-然后，可以创建多维数据集并配置其度量：这些指标将用于创建将在报告中显示的指标。 有关创建和配置多维数据集的更多信息，请参阅 [关于多维数据集](../../reporting/using/about-cubes.md).
+然后，可以创建多维数据集并配置其度量：这些指标将用于创建将在报告中显示的指标。 有关创建和配置多维数据集的更多信息，请参阅 [关于多维数据集](../../reporting/using/ac-cubes.md).
 
 在此示例中，多维数据集基于由之前创建的工作流馈送的列表中的数据。
 

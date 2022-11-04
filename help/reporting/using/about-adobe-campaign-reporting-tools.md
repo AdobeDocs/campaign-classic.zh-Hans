@@ -4,7 +4,7 @@ title: 关于Adobe Campaign报告工具
 description: 在内建或自定义报告中，分析促销活动成功与否。
 feature: Reporting
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 19%
@@ -39,7 +39,7 @@ Adobe Campaign提供了多种报表工具：
 
 1. **分析报表**:Marketing Analytics支持直观的数据探索。
 
-   如需详细信息，请参阅[此部分](../../reporting/using/about-cubes.md)。
+   如需详细信息，请参阅[此部分](../../reporting/using/ac-cubes.md)。
 
 >[!CAUTION]
 >

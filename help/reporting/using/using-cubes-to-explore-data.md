@@ -3,8 +3,10 @@ product: campaign
 title: 使用多维数据集浏览数据
 description: 使用多维数据集浏览数据
 feature: Reporting
+hide: true
+hidefromtoc: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -23,7 +25,7 @@ Marketing Analytics可以更轻松地创建报表，以及通过多维数据集�
 
 >[!NOTE]
 >
->创建或修改多维数据集时，需要使用Marketing Analytics。 有关更多信息，请参阅 [关于多维数据集](../../reporting/using/about-cubes.md).
+>创建或修改多维数据集时，需要使用Marketing Analytics。 有关更多信息，请参阅 [关于多维数据集](../../reporting/using/ac-cubes.md).
 
 ## 浏览报表中的数据 {#exploring-the-data-in-a-report}
 
