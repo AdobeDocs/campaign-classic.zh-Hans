@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: e91024df3ee2ed761035806f62ddc679c52039d9
 workflow-type: tm+mt
-source-wordcount: '2588'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -315,11 +315,6 @@ ht-degree: 100%
       + [配置对报告的访问权限](reporting/using/configuring-access-to-the-report.md)
       + [对报告执行操作](reporting/using/actions-on-reports.md)
    + [设计包含多维数据集的报告](reporting/using/ac-cubes.md)
-   + 设计包含多维数据集的报告 {#designing-reports-with-cubes}
-      + [多维数据集入门](reporting/using/about-cubes.md)
-      + [创建指标](reporting/using/creating-indicators.md)
-      + [使用多维数据集浏览数据](reporting/using/using-cubes-to-explore-data.md)
-      + [概念和方法](reporting/using/concepts-and-methodology.md)
 + 设计 Web 内容{#designing-content}
    + Web 应用程序 {#web-applications}
       + [Web 应用程序入门](web/using/about-web-applications.md)

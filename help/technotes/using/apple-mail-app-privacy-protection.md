@@ -3,10 +3,10 @@ product: campaign
 title: Apple邮件应用程序中的邮件隐私保护
 description: 了解您的营销活动可能受Apple的邮件隐私保护功能的影响
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 我的营销活动受到什么影响？
 
-Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能。 您不仅可以将此功能用于定位和营销活动，还可以用于量度。 例如，您可以使用电子邮件打开率来衡量促销活动的有效性和用户参与度。 简而言之，您的营销活动中可能会受到分段、定位和量度的影响。 [了解更多](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html#in-addition-to-measuring-opens%2C-what-else-is-impacted%3F){target=&quot;_blank&quot;}。
+Adobe Campaign提供了使用跟踪像素跟踪电子邮件打开次数的功能。 您不仅可以将此功能用于定位和营销活动，还可以用于量度。 例如，您可以使用电子邮件打开率来衡量促销活动的有效性和用户参与度。 简而言之，您的营销活动中可能会受到分段、定位和量度的影响。
 
 ## 我应该采取什么行动？
 
@@ -450,7 +450,3 @@ Apple的新功能是在电子邮件隐私保护方面，业内将会有怎样的
    如果将收件人存储在非现成收件人表的表格中，则此类型的工作流将非常有用。
 
    ![](assets/export-tracking-data-wkf-2.png)
-
-## 有用链接
-
-[Apple邮件隐私保护常见问题解答](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}
