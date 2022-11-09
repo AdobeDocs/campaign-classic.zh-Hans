@@ -4,7 +4,7 @@ title: 创建调查的关键步骤
 description: 使用Campaign创建您的第一个调查
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 创建调查的关键步骤{#getting-started-with-surveys}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 以下是使用以下内置模板创建简单调查的主要步骤的快速概述：
 

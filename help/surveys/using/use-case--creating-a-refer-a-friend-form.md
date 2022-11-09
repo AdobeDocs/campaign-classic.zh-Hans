@@ -4,7 +4,7 @@ title: 创建“推荐朋友”调查
 description: 了解创建“推荐朋友”表单的步骤
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 用例：创建引用窗体{#use-case-creating-a-refer-a-friend-form}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 在本例中，我们希望向数据库中的收件人提供竞争信息。 Web窗体将有一个用于输入答案的部分，另一个用于通过输入朋友的电子邮件地址来引荐朋友。
 

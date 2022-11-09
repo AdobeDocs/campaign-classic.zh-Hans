@@ -4,7 +4,7 @@ title: 发布、跟踪和使用收集的数据
 description: 了解如何发布、跟踪和使用在调查中收集的数据
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 发布、跟踪和使用收集的数据{#publish-track-and-use-collected-data}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 创建、配置和发布表单后，您可以与受众共享该链接并跟踪响应。
 

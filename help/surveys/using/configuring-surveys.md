@@ -4,7 +4,7 @@ title: 配置在线调查
 description: 了解如何配置在线调查
 feature: Surveys
 exl-id: 387bc362-4064-4181-9385-8e0c3423ba3e
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 配置在线调查{#configuring-surveys}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## 调查属性 {#survey-properties}
 

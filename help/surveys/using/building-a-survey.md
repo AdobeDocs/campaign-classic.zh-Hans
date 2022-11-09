@@ -4,7 +4,7 @@ title: 设计调查
 description: 了解设计调查的关键步骤
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 设计调查{#building-a-survey}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## 创建新调查 {#creating-a-new-survey}
 
