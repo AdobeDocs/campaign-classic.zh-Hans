@@ -4,7 +4,7 @@ title: 隐私
 description: 进一步了解有关隐私的最佳实践
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: fcbaacccaf3f1771570e42e7a83847ed3fd998ef
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 4%
@@ -77,7 +77,7 @@ Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数�
 
 要启用URL签名，请同时在所有Campaign服务器上执行以下步骤：
 
-1. 在服务器配置文件(serverConf.xml)中，更改 **signEmailLinks** to **false**.
+1. 在服务器配置文件(serverConf.xml)中，更改 **signEmailLinks** to **true**.
 1. 重新启动 **nlserver** 服务。
 1. 在跟踪服务器上，重新启动Web服务器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
