@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: e91024df3ee2ed761035806f62ddc679c52039d9
+source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2557'
+ht-degree: 100%
 
 ---
 
@@ -841,7 +841,6 @@ ht-degree: 0%
       + [TLS 1.0 和 1.1 支持生命周期终止](technotes/using/eol-tls-support.md)
    + 电子邮件和推送通知{#technotes-email}
       + [Apple iOS 上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Apple 邮件隐私保护常见问题解答](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hans)
       + [如何更新错误的硬退回](delivery/using/update-bounce-qualification.md)
       + [iOS 证书更新](technotes/using/ios-certificate-update.md)
       + [跟踪的 URL 更新](technotes/using/tracked-urls.md)

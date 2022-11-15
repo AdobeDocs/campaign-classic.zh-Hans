@@ -3,10 +3,10 @@ product: campaign
 title: Apple邮件应用程序中的邮件隐私保护
 description: 了解您的营销活动可能受Apple的邮件隐私保护功能的影响
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
+source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2056'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 更改了哪些内容？
 
-2021年，Apple为其本机Mail应用程序引入了新的隐私保护功能。 此应用程序现在包含Apple的邮件隐私保护功能。 基本上，发件人不能再使用跟踪像素来收集有关选择启用Apple邮件隐私保护功能的收件人的信息。 [了解更多](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=zh-Hans){target=&quot;_blank&quot;}。
+2021年，Apple为其本机Mail应用程序引入了新的隐私保护功能。 此应用程序现在包含Apple的邮件隐私保护功能。 基本上，发件人不能再使用跟踪像素来收集有关选择启用Apple邮件隐私保护功能的收件人的信息。
 
 ## 我的营销活动受到什么影响？
 
