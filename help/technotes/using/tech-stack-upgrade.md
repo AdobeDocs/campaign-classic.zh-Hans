@@ -4,16 +4,16 @@ title: 技术说明 — Adobe Campaign系统升级
 description: Adobe Campaign系统升级
 hide: true
 hidefromtoc: true
-source-git-commit: b119d52b94d95086261fcdc1744698a78296df9c
+source-git-commit: 6fc11ea75863abe86e81c4978843e8487cbd83a0
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 9%
+source-wordcount: '502'
+ht-degree: 8%
 
 ---
 
 # Adobe Campaign 2023系统升级 {#ac-system-upgrade}
 
-Campaign基础架构依赖于第三方系统，这些系统必须定期更新系统版本和修复。 这些更新是强制性的，可确保服务的连续性，并保护Campaign环境免受安全风险的影响。 此外，需要升级才能与第三方系统更改保持一致。
+Campaign基础架构依赖于第三方系统，必须定期更新最新版本和修复。 这些更新是强制性的，可确保服务的连续性，并保护Campaign环境免受安全风险的影响。 此外，还需要升级Campaign以确保与第三方系统更改兼容。
 
 As a **托管或托管的Cloud Services客户**，则Adobe会在需要时通知您这些升级。 您将需要根据建议升级环境以确保合规性。
 
@@ -23,7 +23,7 @@ As a **托管或托管的Cloud Services客户**，则Adobe会在需要时通知�
 
 >[!NOTE]
 >
->有关这些更改的任何问题，请联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>有关这些更改的任何问题，请联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。另请参阅 [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md).
 
 ## Campaign内部版本升级 {#ac-upgrade}
 
@@ -60,12 +60,12 @@ As a **托管或托管的Cloud Services客户**，则Adobe会在需要时通知�
 
 * 作为托管或托管的Cloud Services客户，Adobe将与您联系，并将数据库系统从PostgreSQL 11升级到PostgreSQL 14。
 * 作为混合客户，如果您的营销数据库系统是PostgreSQL，则必须将其升级到PostgreSQL 14。
-* 作为内部部署客户，系统会请您将数据库系统升级到PostgreSQL 14。../integrations/using/configuring-adobe-io.md)。
+* 作为内部部署客户，系统会请您将数据库系统升级到PostgreSQL 14。
 
 
 ## 有用链接
 
 * [升级环境](../../production/using/build-upgrade.md)
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)
-* [下载Campaign Classic内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)
+* [下载最新的Campaign Classic内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)
 * [使新客户端控制台可供用户使用](../../installation/using/client-console-availability-for-windows.md)
