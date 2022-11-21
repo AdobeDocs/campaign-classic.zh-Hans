@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ca2f50a501c63cc8b2d4de5d9a41b655a6b6d6cf
+source-git-commit: 95c4a83037bcd2e22a03ac80d1ec4a7896a94ce3
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2709'
 ht-degree: 75%
 
 ---
@@ -43,8 +43,8 @@ _2022年11月21日_
 
 **其他变更**
 
-* 网络日志已得到改进：现在，仅向具有管理员权限的用户显示logonEscalation警告。 (NEO-47167)
-* 为避免出现错误， **为热图服务工作流收集数据** (collectDataHeatMapService)现在默认停止。 (NEO-33959)
+* 网络日志已得到改进： `logonEscalation` 现在，仅向具有管理员权限的用户显示警告。 (NEO-47167)
+* 为避免出现错误， **为热图服务收集数据** (collectDataHeatMapService)工作流现在默认停止。 (NEO-33959)
 * 实施了各种改进，以优化促销活动仪表板的CPU使用率。 (NEO-46417)
 * 为防止崩溃，已删除loadLibraryDebug JS方法。 (NEO-46968)
 * 对log4j库的其余引用已从Windows上的Campaign安装中删除。 (NEO-44851)
@@ -56,11 +56,11 @@ _2022年11月21日_
 * 修复了在电子邮件投放中重置内容批准时阻止您重新批准的问题。 (NEO-44259)
 * 修复了可能阻止 **投放批准** 按钮。 (NEO-47547)
 * 修复了投放的HTML选项卡中可能出现于大型HTML代码的性能问题。 (NEO-47440)
-* 修复了在启用FeatureFlag_GZIP_Compression选项时，影响MID实例上投放日志状态更新的问题。 (NEO-49183)
+* 修复了当MID实例的 `FeatureFlag_GZIP_Compression` 选项。 (NEO-49183)
 * 修复了在使用基于令牌的身份验证时阻止从执行实例发送iOS移动设备应用程序通知的问题。 (NEO-45961)
 * 修复了 **可投放性刷新** 工作流(deliverabilityUpdate)，当要同步的广告日志过多时，该工作流卡住。 (NEO-48287)
-* 修复了阻止消息中心同步工作流(mcSynch)的事件类型问题。
-* 修复了在添加 **已打开的收件人** indicator(estimatedRecipientOpen)(在 **查询** 工作流活动。 (NEO-46665)
+* 修复了阻止 **消息中心同步** (mcSynch)工作流。
+* 修复了在添加 **已打开的收件人**  (estimatedRecipientOpen)指示器 **查询** 工作流活动。 (NEO-46665)
 * 修复了 **帐单** 在同一实例上安装消息中心控制和执行包时，工作流失败。 (NEO-47674)
 * 修复了 **帐单** 将主键定义为字符串而不是整数的表时，工作流失败。 (NEO-46254)
 * 修复了工作流名称过长时热图过滤器出现的问题。 (NEO-46301)
