@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 95c4a83037bcd2e22a03ac80d1ec4a7896a94ce3
+source-git-commit: d592902157b499423283307402eb74452d4827bc
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 75%
@@ -36,7 +36,6 @@ _2022年11月21日_
 **已弃用的功能**
 
 * 现已弃用Facebook的社交营销。 您可以使用Twitter集成在社交媒体上发布内容，或使用Adobe创建自定义渠道。
-
 * ACS Connector（Prime产品）现已弃用。 您可以使用Campaign导出/导入功能提取和插入两个产品中的数据。
 
 在[已弃用和已删除的功能页面](deprecated-features.md)中了解详情。
