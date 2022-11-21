@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
+source-git-commit: 8ea5a42e0539ea23c1d9940e3f38f2c90fdcc223
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 100%
+source-wordcount: '2556'
+ht-degree: 99%
 
 ---
 
@@ -836,7 +836,7 @@ ht-degree: 100%
       + [技术说明](technotes/using/technote.md)
       + [新的可投放性服务器](technotes/using/deliverability-server.md)
       + [Apache 安全升级](technotes/using/acc-apache-upgrade.md)
-      + [Campaign 配置更新](technotes/using/acc-config-updates.md)
+      + [2023年系统升级](technotes/using/tech-stack-upgrade.md)
       + [IMS 更新](technotes/using/ims-updates.md)
       + [TLS 1.0 和 1.1 支持生命周期终止](technotes/using/eol-tls-support.md)
    + 电子邮件和推送通知{#technotes-email}

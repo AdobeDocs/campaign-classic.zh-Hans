@@ -2,8 +2,10 @@
 product: campaign
 title: 技术说明 — Adobe Campaign配置更新
 description: Adobe Campaign配置更新
+hide: true
+hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8ea5a42e0539ea23c1d9940e3f38f2c90fdcc223
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 12%
