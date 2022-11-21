@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
+source-git-commit: 31a475c98b09bbeca6a16c6fd98698af10016033
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1714'
 ht-degree: 8%
 
 ---
@@ -117,9 +117,9 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 * [电话](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [直邮](../../delivery/using/about-direct-mail-channel.md)
 * [代理](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
-* [Twitter](../../social/using/configuring-publishing-on-twitter.md)
-* [iOS 频道](../../delivery/using/configuring-the-mobile-application.md)
-* [Android 频道](../../delivery/using/configuring-the-mobile-application-android.md)
+* [Twitter](../../social/using/about-social-marketing.md)
+* [iOS 渠道](../../delivery/using/configuring-the-mobile-application.md)
+* [Android 渠道](../../delivery/using/configuring-the-mobile-application-android.md)
 
 ### 执行实例  {#execution-instance-external-account}
 
@@ -225,29 +225,6 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 * 配置对 [sybase IQ](../../installation/using/configure-fda-sybase.md)
 * 配置对 [Teradata](../../installation/using/configure-fda-teradata.md)
 
-### Facebook connect {#facebook-connect-external-account}
-
-的 **[!UICONTROL Facebook Connect]** 外部帐户允许您在Facebook应用程序中显示个性化内容，从而更便于通过此社交网络获取潜在客户。
-
-对于每个Facebook应用程序，您需要创建 **[!UICONTROL Facebook Connect]** 键入外部帐户。 有关更多信息，请参阅 [页面](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
-
-![](assets/ext_account_12.png)
-
-* **[!UICONTROL Hosting mode]**
-
-   之间应用程序的托管模式 **[!UICONTROL hosted by a partner]** 或 **[!UICONTROL hosted by this instance]**.
-
-* **[!UICONTROL Application ID]**
-
-   您的Facebook应用程序的应用程序ID。
-
-* **[!UICONTROL Application secret]**
-
-   您的Facebook应用程序的应用程序密钥。
-
-如果您选择由此实例模式托管的，则需要将安全画布URL粘贴到 **Facebook Web游戏(https)** 字段在Facebook
-
-要了解在何处查找这些凭据，请参阅 [页面](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
 ## Adobe解决方案集成外部帐户
 

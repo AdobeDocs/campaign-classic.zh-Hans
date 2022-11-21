@@ -3,11 +3,13 @@ product: campaign
 title: ACS Connector入门
 description: ACS Connector原则和数据周期
 feature: ACS Connector
+hide: true
+hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
 source-wordcount: '2038'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -100,7 +102,7 @@ Campaign Standard和Campaign v7可使用复制的用户档案来定位营销活�
 * **在Campaign Standard中取消订阅服务**:取消订阅投放的选项未从Campaign Standard同步到Campaign v7。 但是，您可以配置Campaign Standard投放，以将其退订链接定向到Campaign v7。 单击退订链接的收件人的用户档案将在Campaign v7中更新，并且数据会复制到Campaign Standard。 请参阅 [更改退订链接](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
 * 只有电子邮件广告和跟踪日志才会从Campaign Standard复制到Campaign v7。
 
-### 帐单 {#billing}
+### 计费 {#billing}
 
 您选择的用于发送投放、Campaign v7或Campaign Standard的应用程序不会对账单产生影响。 账单信息可在Campaign v7和Campaign Standard之间协调。 因此，如果您使用这两个应用程序向同一收件人发送投放内容，则该投放内容仍会计为一个活动用户档案。
 
@@ -231,15 +233,15 @@ ACS Connector有两种实施类型。 这两项操作始终由Adobe Campaign咨�
    <td> @fax<br /> </td> 
   </tr> 
   <tr> 
-   <td> 地址1（公寓）<br /> </td> 
+   <td> 地址 1（公寓）<br /> </td> 
    <td> [位置/@address1]<br /> </td> 
   </tr> 
   <tr> 
-   <td> 地址2<br /> </td> 
+   <td> 地址 2<br /> </td> 
    <td> [位置/@address2]<br /> </td> 
   </tr> 
   <tr> 
-   <td> 地址3（号码和街道）<br /> </td> 
+   <td> 地址 3（号码和街道）<br /> </td> 
    <td> [位置/@address3]<br /> </td> 
   </tr> 
   <tr> 
@@ -255,7 +257,7 @@ ACS Connector有两种实施类型。 这两项操作始终由Adobe Campaign咨�
    <td> [位置/@city]<br /> </td> 
   </tr> 
   <tr> 
-   <td> 州/省代码<br /> </td> 
+   <td> 省/市/自治区代码<br /> </td> 
    <td> [位置/@stateCode]<br /> </td> 
   </tr> 
   <tr> 

@@ -4,10 +4,11 @@ title: Adobe Campaign术语表
 description: Adobe Campaign术语表
 role: User, Data Architect
 level: Beginner
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '6041'
-ht-degree: 3%
+source-wordcount: '5972'
+ht-degree: 4%
 
 ---
 
@@ -31,12 +32,14 @@ A/B测试是一项功能，允许用户定义两到三个电子邮件变体：�
 详细了解 [访问管理](access-management.md).
 +++
 
-+++**ACS 连接器**
+<!--
++++**ACS Connector**
 
-ACS Connector(Prime Offering)连接了Adobe Campaign v7和Adobe Campaign Standard。 它是Campaign v7中的一项集成功能，可自动将数据复制到Campaign Standard，从而将两个应用程序中的最佳功能结合起来。 Campaign v7具有用于管理主营销数据库的高级工具。 Campaign v7中的数据复制允许Campaign Standard在用户友好的环境中利用丰富的数据。
+ACS Connector (Prime Offering) bridges Adobe Campaign v7 and Adobe Campaign Standard. It is an integrated feature in Campaign v7 that automatically replicates data to Campaign Standard, uniting the best of both applications. Campaign v7 has advanced tools to manage the primary marketing database. The data replication from Campaign v7 allows Campaign Standard to leverage the rich data in a user-friendly environment. 
 
-详细了解 [ACS Connector](../../integrations/using/acs-connector-principles-and-data-cycle.md).
+Learn more about [ACS Connector](../../integrations/using/acs-connector-principles-and-data-cycle.md).
 +++
+-->
 
 +++**活动**
 
@@ -686,7 +689,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 详细了解 [选件空间](../../interaction/using/creating-offer-spaces.md).
 +++
 
-+++**选件主题**
++++**优惠主题**
 
 *上下文：营销活动互动*
 
@@ -711,7 +714,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 详细了解 [运算符](../../platform/using/access-management-operators.md).
 +++
 
-+++**运算符组**
++++**操作员组**
 
 操作员组允许您管理Campaign操作员的角色。 您可定义属于权限的运算符组，然后将运算符与一个或多个组关联。 这样，您就可以重复使用权限，并使操作员配置文件更加一致。 它还有助于用户档案的管理和维护。
 
@@ -915,7 +918,7 @@ Learn more about [Send-time optimization](../../delivery/using/about-seed-addres
 详细了解 [订阅服务活动](../../workflow/using/subscription-services.md).
 +++
 
-+++**Target批准**
++++**目标审批**
 
 *上下文：Campaign分布式营销*
 

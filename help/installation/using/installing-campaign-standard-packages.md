@@ -3,10 +3,10 @@ product: campaign
 title: 安装Campaign Classic内置软件包
 description: 了解如何安装Campaign内置软件包
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 13%
+source-wordcount: '1253'
+ht-degree: 12%
 
 ---
 
@@ -229,8 +229,8 @@ ht-degree: 13%
    <td> 所有 </td> 
   </tr> 
   <tr> 
-   <td> ACS 连接器<br /> </td> 
-   <td> 桥梁Adobe Campaign v7和Adobe Campaign Standard。 它是Campaign v7中的一项集成功能，可自动将数据复制到Campaign Standard，从而将两个应用程序中的最佳功能结合起来。 可选。<a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">了解详情</a> <br /> </td> 
+   <td> ACS Connector（已弃用）<br /> </td> 
+   <td> 桥梁Adobe Campaign v7和Adobe Campaign Standard。 它是Campaign v7中的一项集成功能，可自动将数据复制到Campaign Standard，从而将两个应用程序中的最佳功能结合起来。 可选。<br /> </td> 
    <td> 营销 </td> 
   </tr> 
  </tbody> 

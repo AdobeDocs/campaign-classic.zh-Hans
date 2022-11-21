@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f94d7e2cddd75d50cb21973a62ec223f2344edf1
+source-git-commit: ca2f50a501c63cc8b2d4de5d9a41b655a6b6d6cf
 workflow-type: tm+mt
-source-wordcount: '2654'
-ht-degree: 77%
+source-wordcount: '2713'
+ht-degree: 75%
 
 ---
 
@@ -27,22 +27,19 @@ _2022年11月21日_
 
 * Microsoft Internet Explorer 11生命周期结束后，客户端控制台中功能板的HTML渲染引擎现在使用Edge Chromium。 (NEO-20741)
 
-<!--
-**Deprecated features**
-
-* Social Marketing with Facebook is now deprecated. You can still use Twitter integration to post on social media, or work with Adobe to create a custom channel.
-
-* ACS Connector (prime offering) is now deprecated. You can use Campaign export/import capabilities to extract and inject data in both products.
-
-Learn more in the [Deprecated and removed features page](deprecated-features.md).
-
--->
-
 **改进**
 
 * Google BigQuery连接器现在完全支持布尔字段。 (NEO-49181)
 * 您现在可以在 `Configuration for the redirection service` serverConf.xml文件的部分。 这适用于以下Cookie: `uuid230`, `nllastdelid` 和 `AMCV_` (NEO-42541)
 * 现在，可以通过设置 `showSourceIP` 在serverConf.xml文件的重定向节点中设置为false。 [了解更多](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+
+**已弃用的功能**
+
+* 现已弃用Facebook的社交营销。 您可以使用Twitter集成在社交媒体上发布内容，或使用Adobe创建自定义渠道。
+
+* ACS Connector（Prime产品）现已弃用。 您可以使用Campaign导出/导入功能提取和插入两个产品中的数据。
+
+在[已弃用和已删除的功能页面](deprecated-features.md)中了解详情。
 
 **其他变更**
 
