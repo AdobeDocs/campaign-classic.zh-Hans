@@ -6,10 +6,10 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 59a2bc62b4c03ef0702cb57bd9dc808e7d0b444b
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 0%
+source-wordcount: '706'
+ht-degree: 4%
 
 ---
 
@@ -124,7 +124,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 投放个性化不再支持此类语法。 请参阅 <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. 否则，请检查值类型是否正确。<br /> </td> 
+   <td> 投放个性化不再支持此类语法。 <br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -136,7 +136,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> logon(logon)<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 必须不再使用此连接方法。 请参阅 <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">已识别的Web应用程序</a>.<br /> </td> 
+   <td> 必须不再使用此连接方法。<br /> </td> 
   </tr> 
   <tr> 
    <td> new SoapMethodCall(<br /> </td> 
@@ -148,14 +148,8 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> sql=<br /> </td> 
    <td> PU-0005<br /> </td> 
    <td> 错误<br /> </td> 
-   <td> 此类错误会导致迁移失败。 请参阅 <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>.<br /> </td> 
+   <td> 此类错误会导致迁移失败。<br /> </td> 
   </tr> 
-  <tr> 
-   <td> SQLDATA<br /> </td> 
-   <td> PU-0006<br /> </td> 
-   <td> 错误<br /> </td> 
-   <td> 此类错误会导致迁移失败。 请参阅 <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. 如果您收到概述类型的Web应用程序错误日志（从v6.02迁移），请参阅 <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11" target="_blank">配置Campaign</a>.<br /> </td> 
-  </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 
@@ -168,7 +162,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> 错误<br /> </td> 
-   <td> Microsoft CRM、Salesforce、OracleCRM按需活动不再可用。 要配置Adobe Campaign与CRM系统之间的数据同步，您需要使用 <a href="../../workflow/using/crm-connector.md" target="_blank">CRM连接器</a> 定位活动。<br /> </td>
+   <td> Microsoft CRM、Salesforce、Oracle CRM On Demand 操作活动不再可用。要配置Adobe Campaign与CRM系统之间的数据同步，您需要使用 <a href="../../workflow/using/crm-connector.md" target="_blank">CRM连接器</a> 定位活动。<br /> </td>
   </tr> 
  </tbody> 
 </table>

@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 1%
+source-wordcount: '638'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,10 @@ ht-degree: 1%
 例如： **uploadWhiteList=”。&#42;.png，.&#42;.jpg&quot;** 将允许您在服务器上上传PNG和JPG格式。 不接受其他格式。
 
 您还可以通过配置Web服务器来阻止上传重要文件。 [了解详情](web-server-configuration.md)
+
+>[!NOTE]
+>
+>的 **uploadWhiteList** 属性会限制可在Adobe Campaign服务器上上传的文件类型。 但是，当发布模式为 **跟踪服务器** 或 **其他Adobe Campaign服务器**, **uploadWhitelist** 属性也必须在这些服务器上更新。
 
 ## 代理连接配置 {#proxy-connection-configuration}
 

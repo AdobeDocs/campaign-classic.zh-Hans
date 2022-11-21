@@ -4,9 +4,9 @@ title: Campaign - Microsoft Dynamics CRM连接器
 description: 了解如何连接Campaign和Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 1a2e6a0bc754a1236f64b35e99c1be08f1066f75
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1111'
 ht-degree: 3%
 
 ---
@@ -216,3 +216,4 @@ Campaign和Microsoft Dynamics现已连接。 您可以在两个系统之间设�
 | 关于 | 否 |
 | PartyList | 否 |
 | ManagedProperty | 否 |
+| 多选选项集 | 否 |

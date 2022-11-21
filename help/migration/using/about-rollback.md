@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: rollback
 exl-id: 5120a7c4-3760-48d9-94da-d587d333e8d8
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,6 @@ ht-degree: 0%
 
 回滚过程取决于您的Campaign初始版本。
 
-## 还原到Campaign v6.1
-
 以下是从v7恢复v6.1的过程。
 
 1. 恢复数据库的备份并恢复它。
@@ -32,24 +30,28 @@ ht-degree: 0%
 1. 重新启动IIS。
 1. 重新启动Adobe Campaign v6.1服务。
 
-## 恢复到Campaign v6.02
+<!--
+	
+## Restore to Campaign v6.02
 
-以下是从v7恢复v6.02的过程。
+Here is the procedure to restore a v6.02 from a v7.
 
-1. 恢复数据库的备份并恢复它。
-1. 恢复 **Neolane v6.back** 文件夹(**nl6.back** 在Linux中)，将其重命名为 **Neolane v6** (**nl6** 在Linux中)并将其还原到其原始位置。
-1. 通过重新分配侦听端口来重新配置IIS，以在IIS网站级别重新建立Adobe Campaign v6.02的集成。
-1. 停止Adobe Campaign v6.1服务。
-1. 重新启动IIS。
-1. 重新启动Adobe Campaign v6.02服务。
+1. Recover the backup of the database and restore it.
+1. Recover the **Neolane v6.back** folder (**nl6.back** in Linux), rename it to **Neolane v6** (**nl6** in Linux) and restore it to its original location.
+1. Re-configure IIS by re-assigning the listen ports to re-establish the integration of Adobe Campaign v6.02 at IIS Website level.
+1. Stop the Adobe Campaign v6.1 service.
+1. Re-start IIS.
+1. Restart the Adobe Campaign v6.02 service.
 
-## 恢复到Campaign v5.11
+## Restore to Campaign v5.11
 
-以下是从v7恢复v5.11的步骤。
+Here is the procedure to restore a v5.11 from a v7.
 
-1. 恢复数据库的备份并恢复它。
-1. 恢复 **Neolane v5.back** 文件夹(**nl5.back** 在Linux中)，将其重命名为 **Neolane v5** (**nl5** 在Linux中)并将其还原到其原始位置。
-1. 通过重新分配侦听端口来重新配置IIS，以在IIS网站级别重新建立Neolane v5的集成。
-1. 停止Adobe Campaign v7服务。
-1. 重新启动IIS。
-1. 重新启动Adobe Campaign v5服务。
+1. Recover the backup of the database and restore it.
+1. Recover the **Neolane v5.back** folder (**nl5.back** in Linux), rename it to **Neolane v5** (**nl5** in Linux) and restore it to its original location.
+1. Re-configure IIS by re-assigning the listen ports to re-establish the integration of Neolane v5 at IIS Website level.
+1. Stop the Adobe Campaign v7 service.
+1. Re-start IIS.
+1. Re-start the Adobe Campaign v5 service.
+
+-->

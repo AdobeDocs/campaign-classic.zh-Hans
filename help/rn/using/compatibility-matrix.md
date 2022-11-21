@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
-workflow-type: ht
-source-wordcount: '763'
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
+workflow-type: tm+mt
+source-wordcount: '764'
 ht-degree: 100%
 
 ---
@@ -150,7 +150,7 @@ ht-degree: 100%
 <td>
 <p>2019</p>
 <p>2017</p>
-<p>2016</p>
+<p>2016年</p>
 <p>2014</p>
 <p>2012 - SP1 和 SP2</p>
 <p><strong>重要提示：</strong>当 Campaign 服务器在 Linux 上运行时，不支持将 Microsoft SQL Server 作为主数据库。<a href="../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers">了解详情</a>。</p>
@@ -280,10 +280,10 @@ ht-degree: 100%
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2019</p>
-<p>2017</p>
-<p>2016</p>
-<p>2014</p>
+<p>2019年</p>
+<p>2017年</p>
+<p>2016年</p>
+<p>2014年</p>
 <p>2012 SP1 和 SP2</p>
 </td>
 <td>最低版本为 7.0</td>
@@ -299,6 +299,7 @@ ht-degree: 100%
 <tr>
 <td>Teradata</td>
 <td>
+<p>17</p>
 <p>16.20</p>
 <p>16</p>
 <p>15.10</p>
@@ -342,8 +343,8 @@ ht-degree: 100%
 <td>Microsoft Windows Server</td>
 <td>
 <p>2019（从 7.2.1 版本开始）</p>
-<p>2016</p>
-<p>2012</p>
+<p>2016年</p>
+<p>2012年</p>
 </td>
 </tbody>
 </table>

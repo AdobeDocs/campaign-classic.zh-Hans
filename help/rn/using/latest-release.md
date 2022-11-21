@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 52e9925932e9b802a92f317b0950a1e933499b56
+source-git-commit: f94d7e2cddd75d50cb21973a62ec223f2344edf1
 workflow-type: tm+mt
-source-wordcount: '2008'
-ht-degree: 100%
+source-wordcount: '2654'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +19,67 @@ ht-degree: 100%
 
 此页面列出了 **Campaign v7 最新版本**&#x200B;中的新增功能、改进和修复。每个新的内部版本都带有一个以颜色突出显示的状态。在[此页面](rn-overview.md)中了解有关 Campaign Classic v7 内部版本状态的更多信息。
 
-## ![](assets/do-not-localize/limited_2.png) 7.3.1 版 - 内部版本 9352 {#release-7-3-1}
+## ![](assets/do-not-localize/green_2.png) 7.3.2 版 - 内部版本 9356 {#release-7-3-2}
+
+_2022年11月21日_
+
+**兼容性更新**
+
+* Microsoft Internet Explorer 11生命周期结束后，客户端控制台中功能板的HTML渲染引擎现在使用Edge Chromium。 (NEO-20741)
+
+<!--
+**Deprecated features**
+
+* Social Marketing with Facebook is now deprecated. You can still use Twitter integration to post on social media, or work with Adobe to create a custom channel.
+
+* ACS Connector (prime offering) is now deprecated. You can use Campaign export/import capabilities to extract and inject data in both products.
+
+Learn more in the [Deprecated and removed features page](deprecated-features.md).
+
+-->
+
+**改进**
+
+* Google BigQuery连接器现在完全支持布尔字段。 (NEO-49181)
+* 您现在可以在 `Configuration for the redirection service` serverConf.xml文件的部分。 这适用于以下Cookie: `uuid230`, `nllastdelid` 和 `AMCV_` (NEO-42541)
+* 现在，可以通过设置 `showSourceIP` 在serverConf.xml文件的重定向节点中设置为false。 [了解更多](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+
+**其他变更**
+
+* 网络日志已得到改进：现在，仅向具有管理员权限的用户显示logonEscalation警告。 (NEO-47167)
+* 为避免出现错误， **为热图服务工作流收集数据** (collectDataHeatMapService)现在默认停止。 (NEO-33959)
+* 实施了各种改进，以优化促销活动仪表板的CPU使用率。 (NEO-46417)
+* 为防止崩溃，已删除loadLibraryDebug JS方法。 (NEO-46968)
+* 对log4j库的其余引用已从Windows上的Campaign安装中删除。 (NEO-44851)
+
+**修补程序**
+
+* 修复了阻止您使用 **合并所选行** 工作流选项。 (NEO-48488)
+* 修复了阻止 **成功** 使用Adobe Campaign Enhanced MTA时，无法正确更新投放指示器。 (NEO-50462)
+* 修复了在电子邮件投放中重置内容批准时阻止您重新批准的问题。 (NEO-44259)
+* 修复了可能阻止 **投放批准** 按钮。 (NEO-47547)
+* 修复了投放的HTML选项卡中可能出现于大型HTML代码的性能问题。 (NEO-47440)
+* 修复了在启用FeatureFlag_GZIP_Compression选项时，影响MID实例上投放日志状态更新的问题。 (NEO-49183)
+* 修复了在使用基于令牌的身份验证时阻止从执行实例发送iOS移动设备应用程序通知的问题。 (NEO-45961)
+* 修复了 **可投放性刷新** 工作流(deliverabilityUpdate)，当要同步的广告日志过多时，该工作流卡住。 (NEO-48287)
+* 修复了阻止消息中心同步工作流(mcSynch)的事件类型问题。
+* 修复了在添加 **已打开的收件人** indicator(estimatedRecipientOpen)(在 **查询** 工作流活动。 (NEO-46665)
+* 修复了 **帐单** 在同一实例上安装消息中心控制和执行包时，工作流失败。 (NEO-47674)
+* 修复了 **帐单** 将主键定义为字符串而不是整数的表时，工作流失败。 (NEO-46254)
+* 修复了工作流名称过长时热图过滤器出现的问题。 (NEO-46301)
+* 修复了7.3.1中关于SnowflakeFDA连接器的问题，该问题在扩充期间使用“0或1基数简单连接”时导致记录丢失。 (NEO-48737)
+* 修复了SnowflakeFFDA在 **拆分** 工作流活动。 (NEO-45899)
+* 修复了可能阻止保存外部帐户配置的问题。 对于具有解析器功能(Snowflake和Google BigQuery)的连接器，现在在连接测试后自动保存外部帐户。 (NEO-47636)
+* 修复了阻止在 **数据更新** MSSQL上的工作流活动。 (NEO-47763)
+* 修复了在未设置引擎时区（特定于MSSQL）时导致MTA进程崩溃的问题。 (NEO-46619)
+* 修复了当图像节点(img)包含具有个性化字段的URL时，HTML文件导入存在的问题。 (NEO-48396)
+* 修复了在尝试连接到 `limit` 未在serverConf.xml文件中配置节点。
+* 修复了在使用某些函数(例如 `to_nclob` 具有未启用NChar的Oracleunicode数据库。 (NEO-49361)
+* 修复了在nmsDeliveryMapping文件夹上具有读取访问权限的用户尝试运行营销活动或工作流时导致错误的问题。 (NEO-48230)
+* 修复了阻止 `JSPContext.sqlExecWithOneParam` 函数。 (NEO-50066)
+* 修复了各种重定向错误。 (NEO-50030)
+
+## ![](assets/do-not-localize/orange_2.png) 7.3.1 版 - 内部版本 9352 {#release-7-3-1}
 
 _2022 年 7 月 1 日_
 

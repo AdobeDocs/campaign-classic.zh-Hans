@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1464'
 ht-degree: 1%
 
 ---
@@ -236,13 +236,25 @@ ht-degree: 1%
 
 * 仅当营销用户/管理员使用的IP需要创建（事实上是预览）调查、WebApps和报表时，才将allowDebug设置为true。 此标记允许这些IP显示中继规则并对其进行调试。
 
+   * 当allowDebug设置为false时，输出为：
+
+      ```
+      <redir status='OK' date='...' sourceIP='...'/>
+      ```
+
+   * 如果allowDebug设置为true，则输出为：
+
+      ```
+      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
+      ```
+
 * 请勿将allowEmptyPassword、allowUserPassword、allowSQLIncompent设置为true。 以下属性仅用于从v5和v6.0顺利迁移：
 
    * **allowEmptyPassword** 允许运算符具有空密码。 如果是这种情况，请通知所有操作员要求他们在截止时间内设置密码。 在此截止日期过后，将此属性更改为false。
 
    * **allowUserPassword** 允许操作员将其凭据作为参数发送（以便它们将由apache/IIS/proxy记录）。 此功能过去曾用于简化API使用。 您可以在指南（或在规范中）中查看某些第三方应用程序是否使用它。 如果是，您必须通知他们更改使用我们API的方式，并尽快删除此功能。
 
-   * **allowSQLInjent** 允许用户使用旧语法执行SQL注入。 尽快执行 [本页](../../migration/using/general-configurations.md) 才能将此属性设置为false。 您可以使用/nl/jsp/ping.jsp?zones=true检查您的安全区域配置。 此页显示当前IP的安全措施（使用这些安全标志计算）的活动状态。
+   * **allowSQLInjent** 允许用户使用旧语法执行SQL注入。 此属性应设置为false。 您可以使用/nl/jsp/ping.jsp?zones=true检查您的安全区域配置。 此页显示当前IP的安全措施（使用这些安全标志计算）的活动状态。
 
 * HttpOnly Cookie/useSecurityToken:请参阅 **sessionTokenOnly** 标记。
 

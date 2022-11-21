@@ -4,9 +4,9 @@ title: S与Adobe Campaign Classic中的Enhanced MTA
 description: 了解使用Adobe Campaign Enhanced MTA发送电子邮件的范围和特性
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1999'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 4%
 
 Adobe Campaign现在可以升级为使用新的MTA（邮件传输代理），该MTA运行SparkPost的商业电子邮件MTA，名为 **动量**.
 
-Mommentum代表了创新的高性能MTA技术，该技术包括更智能的跳出处理和自动投放能力优化功能，可帮助发件人实现并保持最佳收件箱投放率。 <!--More than 37% of the world’s business email is sent using SparkPost’s MTA technology.-->
+Mommentum代表了创新的高性能MTA技术，该技术包括更智能的跳出处理和自动投放能力优化功能，可帮助发件人实现并保持最佳收件箱投放率。 <!--More than 37% of the world's business email is sent using SparkPost's MTA technology.-->
 
 **有什么好处？**
 
@@ -59,7 +59,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 * If you are new to Adobe Campaign Classic, you are already using the Enhanced MTA.
 
-* For Adobe Campaign Classic existing customers, we’ve implemented a phased rollout that covers all hosted or partially hosted (hybrid) instances. If you’re not already using it, we’ll be contacting you in the near future with the dates and details for upgrading your Adobe Campaign Classic instances to the Enhanced MTA.
+* For Adobe Campaign Classic existing customers, we've implemented a phased rollout that covers all hosted or partially hosted (hybrid) instances. If you're not already using it, we'll be contacting you in the near future with the dates and details for upgrading your Adobe Campaign Classic instances to the Enhanced MTA.
 -->
 
 ### 升级到增强的MTA
@@ -141,6 +141,12 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 >
 >使用 [电子邮件反馈服务](#email-feedback-service) (EFS)功能（目前作为测试版提供），“促销活动投放”吞吐量图仍显示电子邮件收件人的吞吐量。
 
+### 重试
+
+Campaign不再使用投放中的重试设置。 软退件重试次数及其间隔时间，由Enhanced MTA根据从消息电子邮件域返回的退回响应的类型和严重性确定。
+
+有关重试的更多信息，请参阅 [此部分](steps-sending-the-delivery.md#configuring-retries).
+
 ### 有效期
 
 仅当将设置为 **3.5天或以下**. 如果您在Campaign中定义的值超过3.5天，则不会将其考虑在内。
@@ -215,9 +221,9 @@ DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成�
 
 | 发送流程中的步骤 | KPI摘要 | 发送日志状态 |
 |--- |--- |--- |
-| 已成功将消息从Campaign中继到增强MTA | **[!UICONTROL Success]** 百分比未显示（从0%开始） | 服务提供商考虑 |
+| 已成功将消息从Campaign中继到增强MTA | **[!UICONTROL Success]** 百分比未显示（从0%开始） | 由服务提供商考虑 |
 | 硬弹回消息从增强的MTA中报回 | 中未更改 **[!UICONTROL Success]** 百分比 | 失败 |
-| 从Enhanced MTA报告软弹回消息 | 中未更改 **[!UICONTROL Success]** 百分比 | 服务提供商考虑 |
+| 从Enhanced MTA报告软弹回消息 | 中未更改 **[!UICONTROL Success]** 百分比 | 由服务提供商考虑 |
 | 软弹回消息重试成功 | **[!UICONTROL Success]** 百分比相应地增加 | 已发送 |
 | 软弹回消息重试失败 | 中未更改 **[!UICONTROL Success]** 百分比 | 失败 |
 

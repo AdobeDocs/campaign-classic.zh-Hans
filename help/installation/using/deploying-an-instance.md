@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 11e175c737d9c6cbb9432ec7835f35ee0e00a5c0
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 1%
+source-wordcount: '3140'
+ht-degree: 2%
 
 ---
 
@@ -78,10 +78,10 @@ ht-degree: 1%
 
 指示以下参数：
 
-* **[!UICONTROL Sender name]** :发件人的姓名、
-* **[!UICONTROL Sender address]** :发件人的地址，
-* **[!UICONTROL Reply address text]** :收件人单击 **[!UICONTROL Reply]** 按钮，
-* **[!UICONTROL Reply address]** :收件人单击 **[!UICONTROL Reply]** 按钮，
+* **[!UICONTROL Sender name]** :发件人的姓名
+* **[!UICONTROL Sender address]** :发件人地址
+* **[!UICONTROL Reply address text]** :收件人单击 **[!UICONTROL Reply]** 按钮
+* **[!UICONTROL Reply address]** :收件人单击 **[!UICONTROL Reply]** 按钮
 * **[!UICONTROL Error address]** :出错的邮件的电子邮件地址。 这是用于处理退回邮件的技术地址，包括由于目标地址不存在而由Adobe Campaign服务器收到的电子邮件。
 
 除此之外，您还可以指定 **掩码** 已授权发送者地址和错误地址。 如有必要，可以使用逗号分隔这些掩码。 此配置是可选的。 输入字段后，Adobe Campaign会在投放时（在分析期间，如果地址不包含任何变量）检查地址是否有效。 此操作模式可确保不使用可能触发投放问题的地址。 必须在投放服务器上配置投放地址。
@@ -106,14 +106,22 @@ ht-degree: 1%
 
 可以使用以下选项：
 
-* **[!UICONTROL Delivery duration of messages]** :在此时间之后，投放将停止（默认为5天），
-* **[!UICONTROL Online resources validity duration]** :保留收件人用户档案信息以生成镜像页面的时间，
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** :选择此选项后，将不阻止列表会联系收件人，
+* **[!UICONTROL Delivery duration of messages]** :在此时间之后，投放将停止（默认为5天）。
+* **[!UICONTROL Online resources validity duration]** :保留收件人用户档案信息以生成镜像页面的时间。
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** :选择此选项后，将不阻止列表会联系收件人。
 * **[!UICONTROL Automatically ignore doubles]** :选择此选项后，将不会将投放到重复的地址。
+
+>[!NOTE]
+>
+>对于托管安装或混合安装(如果已升级到 [增强的MTA](../../delivery/using/sending-with-enhanced-mta.md), **[!UICONTROL Delivery duration of the messages]** 仅当设置为 **3.5天或以下**. 如果定义的值超过 3.5 天，则不会将其考虑在内。
 
 ### 重试参数 {#retry-parameters}
 
 有关收回之资料载于 **恢复期** 和 **恢复次数** 字段：当收件人不可访问时，例如，如果收件人的收件箱已满，则默认情况下程序将尝试与他们联系5次，每次尝试之间的间隔为1小时（在最长投放时间）。 这些值可以根据您的需要进行更改。
+
+>[!NOTE]
+>
+>对于托管安装或混合安装(如果已升级到 [增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，将不再使用Campaign重试参数。 软退件重试次数及其间隔时间，由Enhanced MTA根据从消息电子邮件域返回的退回响应的类型和严重性确定。
 
 ### 隔离参数 {#quarantine-parameters}
 
@@ -147,7 +155,7 @@ ht-degree: 1%
 
 ### 未处理的退回邮件 {#unprocessed-bounce-mails}
 
-退回由Adobe Campaign自动处理，并应用 **管理>促销活动管理>无法交付项管理>投放日志资格** 节点。 有关更多信息，请参阅 [退回邮件管理](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+退回由Adobe Campaign自动处理，并应用 **管理> Campaign Management >无法交付项管理>交付日志资格** 节点。 有关更多信息，请参阅 [退回邮件管理](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 未处理的退回未显示在Adobe Campaign界面中。 除非使用以下字段将它们传输到第三方邮箱，否则将自动删除它们：
 
@@ -270,7 +278,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_install_deployment_wiz_12.png)
 
-### 短信投放的默认帐户 {#default-account-for-sms-delivery}
+### SMS 投放的默认帐户 {#default-account-for-sms-delivery}
 
 输入以下信息：
 

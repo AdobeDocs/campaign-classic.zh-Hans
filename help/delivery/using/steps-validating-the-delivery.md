@@ -4,7 +4,7 @@ title: 验证投放
 description: 了解如何验证投放
 feature: Deliverability, Email Rendering, Proofs
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 5%

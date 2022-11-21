@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: acbb2144906841a6da59314b84b3faf5863cf9d6
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '7957'
-ht-degree: 9%
+source-wordcount: '7979'
+ht-degree: 19%
 
 ---
 
@@ -1110,7 +1110,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> 自动启动<br /> </td> 
+   <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1134,7 +1134,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> 启动进程时要执行的JavaScript ID。<br /> </td> 
+   <td> 启动进程时要执行的 JavaScript 的 ID.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1158,7 +1158,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间。 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> ’06年:00:00' <br /> </td> 
   </tr> 
@@ -1170,7 +1170,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> 开始时的优先级。 低优先级模块首次启动和最后停止。 因此，syslogd模块的优先级必须为0。<br /> </td> 
+   <td> 启动优先级. 低优先级模块首先启动和最后停止。因此 syslogd 模块的优先级必须为 0。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -1229,7 +1229,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> 自动启动<br /> </td> 
+   <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1265,7 +1265,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> 启动进程时要执行的JavaScript ID。<br /> </td> 
+   <td> 启动进程时要执行的 JavaScript 的 ID.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1319,7 +1319,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间。 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> ’06年:00:00' <br /> </td> 
   </tr> 
@@ -1331,7 +1331,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> 开始时的优先级。 低优先级模块首次启动和最后停止。 因此，syslogd模块的优先级必须为0。<br /> </td> 
+   <td> 启动优先级. 低优先级模块首先启动和最后停止。因此 syslogd 模块的优先级必须为 0。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -1391,7 +1391,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> 自动启动<br /> </td> 
+   <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1403,7 +1403,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> 启动进程时要执行的JavaScript ID<br /> </td> 
+   <td> 启动进程时要执行的 JavaScript 的 ID<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1433,13 +1433,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间。 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> ’06年:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> 开始时的优先级。 低优先级模块首次启动和最后停止。 因此，syslogd模块的优先级必须为0。<br /> </td> 
+   <td> 启动优先级. 低优先级模块首先启动和最后停止。因此 syslogd 模块的优先级必须为 0。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -1480,7 +1480,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> 自动启动<br /> </td> 
+   <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1510,7 +1510,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> 启动进程时要执行的JavaScript ID。<br /> </td> 
+   <td> 启动进程时要执行的 JavaScript 的 ID.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1570,7 +1570,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间。 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> ’06年:00:00' <br /> </td> 
   </tr> 
@@ -1588,7 +1588,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> 开始时的优先级。 低优先级模块首次启动和最后停止。 因此，syslogd模块的优先级必须为0。<br /> </td> 
+   <td> 启动优先级. 低优先级模块首先启动和最后停止。因此 syslogd 模块的优先级必须为 0。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -1736,7 +1736,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> 要提交的作业的数据库轮询频率。 此值指示数据库轮询频率（以秒为单位）。 为获取等待交付的作业列表，MTA会定期轮询数据库。 当没有等待的作业时，轮询周期由此值定义。 否则，如果作业已被转移到子服务器，则该轮询持续时间被自动缩短为一秒，以便能够尽快地再次处理新作业，即当子服务器再次可用时。 这并不意味着在子服务器再次可用之前，将每秒执行一次数据库查询。 事实上，只有在至少一个子服务器变为可用时，才可进行数据库访问。<br /> </td> 
+   <td> 要投放的作业的数据库轮询频率。该值表示数据库轮询频率（以秒为单位）。为了获得等待投放的作业列表，MTA 会定期轮询数据库。当没有作业等待时，轮询周期由该值定义。否则，如果作业已转移到子服务器，则此轮询持续时间会自动减少到一秒，以便可以尽快再次处理新作业，即一旦子服务器再次可用。这并不意味着数据库查询将每秒进行一次，直到子服务器再次可用。事实上，只有在至少有一个子服务器可用时才进行数据库访问。<br /> </td> 
    <td> 长<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
@@ -1754,7 +1754,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> 子服务器的最大数量。 表示运行的服务器的最大数量。 建议在与服务器内存资源兼容的最佳位置限制此数量。 可以在投放期间检查此项。 使用的内存不应超过物理内存的三分之一，否则将使用交换。 请参阅 <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">MTA子进程</a>.<br /> </td> 
+   <td> 子服务器的最大数量。 表示运行的服务器的最大数量。建议将此数量限制在与服务器内存资源兼容的最佳值。这可以在投放期间进行检查。使用的内存不应超过可用物理内存的三分之一，否则将使用交换。请参阅 <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">MTA子进程</a>.<br /> </td> 
    <td> 长<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -1833,7 +1833,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> soapConnectorTimeoutSec<br /> </td> 
-   <td> 超时（以秒为单位），在此之后，将放弃投放连接器的SOAP连接。<br /> </td> 
+   <td> 放弃投放连接器的 SOAP 连接后的超时（以秒为单位）。<br /> </td> 
    <td> 长<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -1866,7 +1866,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> enableTLS<br /> </td> 
-   <td> 在远程服务器支持时，激活以安全模式(STARTTLS/SMTPS)发送电子邮件。<br /> </td> 
+   <td> 在远程服务器支持时以安全模式 (STARTTLS/SMTPS) 激活电子邮件投放。<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1884,7 +1884,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxSessionsPerChild<br /> </td> 
-   <td> 子服务器的SMTP会话数上限。 要发送消息，MTA会初始化与收件人MTA的SMTP连接。 给定子服务器的并发和活动SMTP会话的最大数量受此值限制。 如果将此值乘以maxSpareServers，则获得给定子服务器可同时处理的消息数上限。<br /> </td> 
+   <td> 子服务器的SMTP会话数上限。 为了投放消息，MTA 初始化与收件人 MTA 的 SMTP 连接。给定子服务器的最大并发和活动 SMTP 会话数受此值限制。如果将此值乘以 maxSpareServers，则可以得到给定子服务器可以同时处理的消息的最大数量。<br /> </td> 
    <td> 长<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -2061,7 +2061,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> 自动启动 <br /> </td> 
+   <td> 自动开始 <br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2091,7 +2091,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> 启动进程时要执行的JavaScript ID。<br /> </td> 
+   <td> 启动进程时要执行的 JavaScript 的 ID.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2127,7 +2127,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间。 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> ’06年:00:00' <br /> </td> 
   </tr> 
@@ -2157,7 +2157,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> 开始时的优先级。 低优先级模块首次启动和最后停止。 因此，syslogd模块的优先级必须为0。<br /> </td> 
+   <td> 启动优先级. 低优先级模块首先启动和最后停止。因此 syslogd 模块的优先级必须为 0。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2350,7 +2350,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> 自动启动<br /> </td> 
+   <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2368,7 +2368,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> 启动进程时要执行的JavaScript ID。<br /> </td> 
+   <td> 启动进程时要执行的 JavaScript 的 ID.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2398,7 +2398,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间。 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> ’06年:00:00' <br /> </td> 
   </tr> 
@@ -2410,7 +2410,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> 开始时的优先级。 低优先级模块首次启动和最后停止。 因此，syslogd模块的优先级必须为0。<br /> </td> 
+   <td> 启动优先级. 低优先级模块首先启动和最后停止。因此 syslogd 模块的优先级必须为 0。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2474,13 +2474,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> 自动启动<br /> </td> 
+   <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> 启动进程时要执行的JavaScript ID。<br /> </td> 
+   <td> 启动进程时要执行的 JavaScript 的 ID.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2504,13 +2504,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间。 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> ’06年:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> 开始时的优先级。 低优先级模块首次启动和最后停止。 因此，syslogd模块的优先级必须为0。<br /> </td> 
+   <td> 启动优先级. 低优先级模块首先启动和最后停止。因此 syslogd 模块的优先级必须为 0。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2539,13 +2539,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> 自动启动<br /> </td> 
+   <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> 启动进程时要执行的JavaScript ID。<br /> </td> 
+   <td> 启动进程时要执行的 JavaScript 的 ID.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2575,13 +2575,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间。 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> ’06年:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> 开始时的优先级。 低优先级模块首次启动和最后停止。 因此，syslogd模块的优先级必须为0。<br /> </td> 
+   <td> 启动优先级. 低优先级模块首先启动和最后停止。因此 syslogd 模块的优先级必须为 0。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2610,7 +2610,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> 自动启动<br /> </td> 
+   <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2652,7 +2652,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> 启动进程时要执行的JavaScript ID <br /> </td> 
+   <td> 启动进程时要执行的 JavaScript 的 ID <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2688,13 +2688,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间。 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> ’06年:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> 开始时的优先级。 低优先级模块首次启动和最后停止。 因此，syslogd模块的优先级必须为0。<br /> </td> 
+   <td> 启动优先级. 低优先级模块首先启动和最后停止。因此 syslogd 模块的优先级必须为 0。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2741,13 +2741,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> 自动启动<br /> </td> 
+   <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> 启动进程时要执行的JavaScript ID <br /> </td> 
+   <td> 启动进程时要执行的 JavaScript 的 ID <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2783,7 +2783,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间。 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> ’06年:00:00' <br /> </td> 
   </tr> 
@@ -2795,7 +2795,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> 开始时的优先级。 低优先级模块首次启动和最后停止。 因此，syslogd模块的优先级必须为0。<br /> </td> 
+   <td> 启动优先级. 低优先级模块首先启动和最后停止。因此 syslogd 模块的优先级必须为 0。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2850,7 +2850,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> 自动启动<br /> </td> 
+   <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2868,7 +2868,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> 启动进程时要执行的JavaScript ID。<br /> </td> 
+   <td> 启动进程时要执行的 JavaScript 的 ID.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2898,13 +2898,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间。 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> ’06年:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> 开始时的优先级。 低优先级模块首次启动和最后停止。 因此，syslogd模块的优先级必须为0。<br /> </td> 
+   <td> 启动优先级. 低优先级模块首先启动和最后停止。因此 syslogd 模块的优先级必须为 0。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -3321,6 +3321,12 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
+   <td> showSourceIP<br /> </td> 
+   <td> 如果设置为false，则r/test返回的响应中的sourceIP值将为空字符串。 <br /> </td> 
+   <td> 布尔值<br /> </td> 
+   <td> true<br /> </td> 
+  </tr> 
+  <tr> 
    <td> startRedirection<br /> </td> 
    <td> 启动重定向服务。<br /> </td> 
    <td> 布尔值<br /> </td> 
@@ -3423,7 +3429,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> 关联<br /> </td> 
-   <td> 亲和度<br /> </td> 
+   <td> 关联<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3435,7 +3441,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> 自动启动<br /> </td> 
+   <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -3447,7 +3453,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> 启动进程时要执行的JavaScript ID。<br /> </td> 
+   <td> 启动进程时要执行的 JavaScript 的 ID.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3471,13 +3477,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间。 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> ’06年:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> 开始时的优先级。 低优先级模块首次启动和最后停止。 因此，syslogd模块的优先级必须为0。<br /> </td> 
+   <td> 启动优先级. 低优先级模块首先启动和最后停止。因此 syslogd 模块的优先级必须为 0。<br /> </td> 
    <td> 短<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 

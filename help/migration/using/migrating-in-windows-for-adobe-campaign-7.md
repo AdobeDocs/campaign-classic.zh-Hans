@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 63aca25a8d1ae24ef83849b35a44d1b37cfa5e96
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -49,11 +49,15 @@ ht-degree: 0%
    net stop nlserver6
    ```
 
-   如果从v5.11迁移，请运行以下命令：
+<!--
+
+   If you are migrating from v5.11, run the following command:
 
    ```
    net stop nlserver5
    ```
+
+-->
 
 1. 对于每个服务器，确保正确停止Adobe Campaign服务。 使用管理员权限登录并运行以下命令：
 
@@ -83,12 +87,14 @@ ht-degree: 0%
 
 ## 备份Campaign数据库 {#back-up-the-database}
 
-此过程取决于您之前的Adobe Campaign版本。
+以下是备份Adobe Campaign v6.1的步骤。
 
-### 对于Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
+<!--
 
-1. 备份Adobe Campaign数据库。
-1. 备份 **Neolane v5** 目录中使用以下命令：
+### For Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
+
+1. Make a backup of the Adobe Campaign database.
+1. Make a backup of the **Neolane v5** directory using the following command:
 
    ```
    ren "Neolane v5" "Neolane v5.back"
@@ -96,15 +102,15 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >为防范这种情况，我们建议您将 **Neolane v5.back** 文件夹，并将其保存在服务器以外的安全位置。
+   >As a precaution, we recommend that you zip the **Neolane v5.back** folder and save it elsewhere in a safe location other than the server.
 
-1. 在windows服务管理控制台中，禁用5.11应用程序服务器服务的自动启动。 您还可以使用以下命令：
+1. In the windows service management console, disable the automatic startup of the 5.11 application server service. You can also use the following command:
 
    ```
    sc config nlserver5 start= disabled
    ```
 
-1. 编辑 **配置 — `<instance name>`.xml** (在 **Neolane v5。 返回** 文件夹)来阻止 **mta**, **wfserver**, **stat**&#x200B;等。 服务自动启动。 例如， **autoStart** with **_autoStart**.
+1. Edit the **config-`<instance name>`.xml** (in the **Neolane v5. back** folder) to prevent the **mta**, **wfserver**, **stat**, etc. services from starting automatically. For instance, replace **autoStart** with **_autoStart**.
 
    ```
    <?xml version='1.0'?>
@@ -125,10 +131,13 @@ ht-degree: 0%
    </serverconf>
    ```
 
-### 对于Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
+-->
 
-1. 备份Adobe Campaign数据库。
-1. 备份 **Neolane v6** 目录中使用以下命令：
+<!--
+### For Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
+
+1. Make a backup of the Adobe Campaign database.
+1. Make a backup of the **Neolane v6** directory using the following command:
 
    ```
    ren "Neolane v6" "Neolane v6.back"
@@ -136,15 +145,15 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >为防范这种情况，我们建议您将 **Neolane v6.back** 文件夹，并将其保存在服务器以外的安全位置。
+   >As a precaution, we recommend that you zip the **Neolane v6.back** folder and save it elsewhere in a safe location other than the server.
 
-1. 在Windows服务管理器中，停用6.02应用程序服务器自动启动。 您还可以使用以下命令：
+1. In the Windows service manager, deactivate the 6.02 application server automatic startup. You can also use the following command:
 
    ```
    sc config nlserver6 start= disabled
    ```
 
-1. 编辑 **配置 — `<instance name>`.xml** (在 **Neolane v6. 返回** 文件夹)来阻止 **mta**, **wfserver**, **stat**&#x200B;等。 服务自动启动。 例如， **autoStart** with **_autoStart**.
+1. Edit the **config-`<instance name>`.xml** (in the **Neolane v6. back** folder) to prevent the **mta**, **wfserver**, **stat**, etc. services from starting automatically. For instance, replace **autoStart** with **_autoStart**.
 
    ```
    <?xml version='1.0'?>
@@ -165,7 +174,7 @@ ht-degree: 0%
    </serverconf>
    ```
 
-### 对于Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
+-->
 
 1. 备份Adobe Campaign数据库。
 1. 备份 **Adobe Campaign v6** 目录中使用以下命令：
@@ -327,9 +336,11 @@ ht-degree: 0%
       >
       >以下IIS配置步骤详见 [此部分](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
 
-## 安全区 {#security-zones}
+<!--
+## Security zones {#security-zones}
 
-如果您是从v6.02或更低版本迁移，则必须先配置安全区，然后才能启动服务。 [了解详情](../../migration/using/general-configurations.md#security)
+If you are migrating from v6.02 or earlier, you must configure your security zones before starting services. [Learn more](../../migration/using/general-configurations.md#security)
+-->
 
 ## 重新启动服务 {#re-starting-the-services}
 
@@ -339,49 +350,51 @@ ht-degree: 0%
 1. 中间源服务器.
 1. 营销服务器。
 
-在执行下一步之前，请对新安装进行完整测试，确保没有回归，并且所有操作都可以按照 [本页](../../migration/using/general-configurations.md).
+在执行下一步之前，请对新安装进行完整测试，确保没有回归，一切正常。
 
 ## 删除以前的版本 {#deleting-and-cleansing-adobe-campaign-previous-version}
 
-此过程取决于您之前的Adobe Campaign版本。
+以下是删除Adobe Campaign v6.1的步骤。
 
-### 对于Adobe Campaign v5 {#adobe-campaign-v5}
+<!--
 
-在删除和清除Adobe Campaign v5安装之前，必须应用以下建议：
+### For Adobe Campaign v5 {#adobe-campaign-v5}
 
-* 让功能团队对新安装进行完整检查。
-* 只有在您确定不需要回滚时，才卸载Adobe Campaign v5。
+Before you delete and cleanse the Adobe Campaign v5 installation, you must apply the following recommendations:
 
-1. 在IIS中，删除 **Neolane v5** 网站，然后 **Neolane v5** 应用程序池。
-1. 重命名 **Neolane v5.back** 文件夹 **Neolane v5**.
-1. 使用“添加/删除组件”向导卸载Adobe Campaign v5。
+* Get the functional teams to run a full check of the new installation.
+* Only uninstall Adobe Campaign v5 once you are certain that no rollback is necessary.
+
+1. In IIS, delete the **Neolane v5** website, then the **Neolane v5** application pool. 
+1. Rename the **Neolane v5.back** folder as **Neolane v5**.
+1. Uninstall Adobe Campaign v5 using the Add/remove components wizard. 
 
    ![](assets/migration_wizard_2.png)
 
-1. 删除 **nlserver5** 使用以下命令的Windows服务：
+1. Delete the **nlserver5** Windows service using the following command:
 
    ```
    sc delete nlserver5
    ```
 
-1. 重新启动服务器。
+1. Re-start the server.
 
-### 对于Adobe Campaign v6.02 {#adobe-campaign-v6-02}
+### For Adobe Campaign v6.02 {#adobe-campaign-v6-02}
 
-在删除和清除Adobe Campaign v6.02安装之前，必须应用以下建议：
+Before you delete and cleanse the Adobe Campaign v6.02 installation, you must apply the following recommendations:
 
-* 让功能团队对新安装进行完整检查。
-* 只有在您确定不需要回滚时，才卸载Adobe Campaign v6.02。
+* Get the functional teams to run a full check of the new installation.
+* Only uninstall Adobe Campaign v6.02 once you are certain that no rollback is necessary.
 
-1. 在IIS中，删除 **Neolane v6** 网站，然后 **Neolane v6** 应用程序池。
-1. 重命名 **Neolane v6.back** 文件夹 **Neolane v6**.
-1. 使用“添加/删除组件”向导卸载Adobe Campaign v6.02。
+1. In IIS, delete the **Neolane v6** website, then the **Neolane v6** application pool. 
+1. Rename the **Neolane v6.back** folder as **Neolane v6**.
+1. Uninstall Adobe Campaign v6.02 using the Add/remove components wizard. 
 
    ![](assets/migration_wizard_2.png)
 
-1. 重新启动服务器。
+1. Re-start the server.
 
-### 对于Adobe Campaign v6.1 {#adobe-campaign-v6-1}
+-->
 
 在删除和清除Adobe Campaign v6安装之前，必须应用以下建议：
 

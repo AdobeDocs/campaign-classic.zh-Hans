@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-本文档详细介绍迁移的先决条件以及迁移到Adobe Campaign Classic v7的步骤。 步骤和可选设置取决于您的配置。 [了解详情](../../migration/using/general-configurations.md)。
+本文档详细介绍迁移的先决条件以及迁移到Adobe Campaign Classic v7的步骤。 步骤和可选设置取决于您的配置。
 
 移民进程必须谨慎进行，其影响必须事先充分考虑，并且必须严格执行。 它只能由专家用户执行。 我们强烈建议您联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 开始任何迁移过程之前。
 
@@ -35,7 +35,7 @@ ht-degree: 3%
 * 如果您使用Adobe Campaign Cloud Messaging（中间源部署），请先联系Adobe客户关怀团队，然后再开始。
 * 在开始迁移过程之前，您 **必须** 备份数据。
 * 迁移过程可能需要数天才能完成。
-* Adobe Campaign v7是比以前版本更安全的版本：这会影响配置准则，以避免数据损坏等问题，并保留数据库中的数据完整性。 因此，v5.11和v6.02中提供的某些功能可能不再在v7中受支持，并且需要在迁移后进行调整。 作为客户，您有责任测试所有配置，包括工作流。
+* Adobe Campaign v7是比以前版本更安全的版本：这会影响配置准则，以避免数据损坏等问题，并保留数据库中的数据完整性。 作为客户，您有责任测试所有配置，包括工作流。
 
 中提供了更多先决条件 [本页](../../migration/using/before-starting-migration.md).
 
