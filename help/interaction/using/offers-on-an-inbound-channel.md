@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 6eaf7490f1be913986af2924017d014d2ba54559
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 入站渠道优惠{#offers-on-an-inbound-channel}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## 向匿名访客展示优惠 {#presenting-an-offer-to-an-anonymous-visitor}
 
@@ -57,8 +57,8 @@ Neobank网站希望在其网站上显示一个选件，该选件针对的是浏�
    这样，任何缺少以下元素之一的选件都将不符合此空间的条件：
 
    * 标题
-   * HTML内容
-   * 图像URL
+   * HTML 内容
+   * 图像 URL
    * 目标URL
 
    ![](assets/offer_inbound_anonymous_example_030.png)

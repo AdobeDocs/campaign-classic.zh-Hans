@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: f9dd9ad6-48da-4a80-9405-109a433a1ed5
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 6eaf7490f1be913986af2924017d014d2ba54559
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 呈现规则{#presentation-rules}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## 创建演示规则 {#creating-a-presentation-rule}
 
