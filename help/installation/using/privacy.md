@@ -4,22 +4,17 @@ title: 隐私
 description: 进一步了解有关隐私的最佳实践
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 197ac1322cb8f4f34d2670a29d622a21f407c90c
+source-git-commit: 0e57ffba9b8c7fd05843c3353d2c0d64cbc83b8b
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 4%
+source-wordcount: '845'
+ht-degree: 2%
 
 ---
 
-# 隐私 {#privacy}
+# 个性化和隐私 {#privacy}
 
 ![](../../assets/v7-only.svg)
 
-## 隐私请求
-
-Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数据保护条例》(GDPR) 和《加州消费者隐私法案》(CCPA) 的隐私政策。
-
-请参阅 [本页](../../platform/using/privacy-management.md) 有关隐私管理概念及Adobe Campaign中实施步骤的一般信息。 您还可以找到最佳实践以及用户流程和角色的概述。
 
 ## URL个性化 {#url-personalization}
 
@@ -187,3 +182,8 @@ Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数�
    除 **robots.txt** 文件，建议添加 **X-Robots-Tag** 标题。 您可以在Apache或IIS中，并在 **serverConf.xml** 配置文件。
 
    有关更多信息，请参阅 [本文](https://developers.google.com/search/reference/robots_meta_tag).
+
+
+## 隐私请求
+
+请参阅 [本页](../../platform/using/privacy-management.md) 有关隐私管理概念及Adobe Campaign中实施步骤的一般信息。 您还可以找到最佳实践以及用户流程和角色的概述。
