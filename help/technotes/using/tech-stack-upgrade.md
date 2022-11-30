@@ -5,9 +5,9 @@ description: Adobe Campaign系统升级
 hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: 7948f6423b80788adf26a53afcd380953c8b8463
+source-git-commit: 7d7185e9d8c376d1390dc7e5f6a8724c3cbcfd40
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '510'
 ht-degree: 8%
 
 ---
@@ -43,7 +43,7 @@ As a **托管或托管的Cloud Services客户**，则Adobe会在需要时通知�
 
 **您是否受影响？**
 
-如果您在Debian操作系统上运行Campaign，要从最新的Debian安全更新中受益，您需要将Campaign基础架构移至 **Debian 11**. 请注意，Debian 9的生命周期已于2022年6月30日终止，不再提供安全修复。
+如果您在Debian操作系统上运行Campaign，要从最新的Debian安全更新中受益，您需要将Campaign基础架构移至 **Debian 11**. 请注意，Debian 9的生命周期已于2022年6月30日终止，不再提供安全修复。 Adobe在2023年6月30日之前为Debian 9提供安全支持。
 
 **如何更新？**
 
