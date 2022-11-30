@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: a3f64d71b857312fd3130bb66a864740c902e2f4
 workflow-type: tm+mt
 source-wordcount: '2722'
-ht-degree: 75%
+ht-degree: 99%
 
 ---
 
@@ -21,62 +21,62 @@ ht-degree: 75%
 
 ## ![](assets/do-not-localize/green_2.png) 7.3.2 版 - 内部版本 9356 {#release-7-3-2}
 
-_2022年11月21日_
+_2022 年 11 月 21 日_
 
 **兼容性更新**
 
 * Adobe Campaign现在与PostgreSQL 14兼容。
-* Microsoft Internet Explorer 11生命周期结束后，客户端控制台中功能板的HTML渲染引擎现在使用Edge Chromium。 (NEO-20741)
+* 在 Microsoft Internet Explorer 11 的生命周期终止后，客户端控制台中仪表板的 HTML 渲染引擎现在使用的是 Edge Chromium。(NEO-20741)
 
 请参阅 [Campaign 兼容性矩阵](../../rn/using/compatibility-matrix.md#RDBMSservers)。
 
 **改进**
 
-* Google BigQuery连接器现在完全支持布尔字段。 (NEO-49181)
-* 您现在可以在 `Configuration for the redirection service` serverConf.xml文件的部分。 这适用于以下Cookie: `uuid230`, `nllastdelid` 和 `AMCV_` (NEO-42541)
-* 现在，可以通过设置 `showSourceIP` 在serverConf.xml文件的重定向节点中设置为false。 [了解更多](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+* Google BigQuery 连接器现在完全支持布尔字段。(NEO-49181)
+* 您现在可以在 serverConf.xml 文件的 `Configuration for the redirection service` 部分配置 IMS Cookie 的有效期。这适用于以下 Cookie：`uuid230`、`nllastdelid` 和 `AMCV_` (NEO-42541)
+* 现在通过在 serverConf.xml 文件的重定向节点中将 `showSourceIP` 设置为“false”，可将 IP 在“/r/test”请求中隐藏。[了解更多信息](../../installation/using/the-server-configuration-file.md#redirection-redirection) (NEO-46656)
 
 **已弃用的功能**
 
-* 现已弃用Facebook的社交营销。 您可以使用Twitter集成在社交媒体上发布内容，或使用Adobe创建自定义渠道。
-* ACS Connector（Prime产品）现已弃用。 您可以使用Campaign导出/导入功能提取和插入两个产品中的数据。
+* 通过 Facebook 进行社交媒体营销的功能现已弃用。您可以使用 Twitter 集成在社交媒体上发布内容，或与 Adobe 合作创建自定义渠道。
+* ACS 连接器（高级服务）现已弃用。您可以使用 Campaign 的导出/导入功能来从两款产品中提取数据或向其中插入数据。
 
 在[已弃用和已删除的功能页面](deprecated-features.md)中了解详情。
 
 **其他变更**
 
-* 网络日志已得到改进： `logonEscalation` 现在，仅向具有管理员权限的用户显示警告。 (NEO-47167)
-* 为避免出现错误， **为热图服务收集数据** (collectDataHeatMapService)工作流现在默认停止。 (NEO-33959)
-* 实施了各种改进，以优化促销活动仪表板的CPU使用率。 (NEO-46417)
-* 为防止崩溃，已删除loadLibraryDebug JS方法。 (NEO-46968)
-* 对log4j库的其余引用已从Windows上的Campaign安装中删除。 (NEO-44851)
+* 网络日志已改进：`logonEscalation` 警告信息现在仅会向拥有管理员权限的用户显示。(NEO-47167)
+* 为避免出现错误，**为热图服务收集数据** (collectDataHeatMapService) 工作流现在会默认处于停止状态。(NEO-33959)
+* 实施了各种旨在优化活动仪表板的 CPU 使用率的改进。(NEO-46417)
+* 为防止出现崩溃，loadLibraryDebug JS 方法已被移除。(NEO-46968)
+* 对 log4j 库的其余引用已从 Windows 上的 Campaign 安装中移除。(NEO-44851)
 
 **修补程序**
 
-* 修复了阻止您使用 **合并所选行** 工作流选项。 (NEO-48488)
-* 修复了阻止 **成功** 使用Adobe Campaign Enhanced MTA时，无法正确更新投放指示器。 (NEO-50462)
-* 修复了在电子邮件投放中重置内容批准时阻止您重新批准的问题。 (NEO-44259)
-* 修复了可能阻止 **投放批准** 按钮。 (NEO-47547)
-* 修复了投放的HTML选项卡中可能出现于大型HTML代码的性能问题。 (NEO-47440)
-* 修复了当MID实例的 `FeatureFlag_GZIP_Compression` 选项。 (NEO-49183)
-* 修复了在使用基于令牌的身份验证时阻止从执行实例发送iOS移动设备应用程序通知的问题。 (NEO-45961)
-* 修复了 **可投放性刷新** 工作流(deliverabilityUpdate)，当要同步的广告日志过多时，该工作流卡住。 (NEO-48287)
-* 修复了阻止 **消息中心同步** (mcSynch)工作流。
-* 修复了在添加 **已打开的收件人**  (estimatedRecipientOpen)指示器 **查询** 工作流活动。 (NEO-46665)
-* 修复了 **帐单** 在同一实例上安装消息中心控制和执行包时，工作流失败。 (NEO-47674)
-* 修复了 **帐单** 将主键定义为字符串而不是整数的表时，工作流失败。 (NEO-46254)
-* 修复了工作流名称过长时热图过滤器出现的问题。 (NEO-46301)
-* 修复了7.3.1中关于SnowflakeFDA连接器的问题，该问题在扩充期间使用“0或1基数简单连接”时导致记录丢失。 (NEO-48737)
-* 修复了SnowflakeFFDA在 **拆分** 工作流活动。 (NEO-45899)
-* 修复了可能阻止保存外部帐户配置的问题。 对于具有解析器功能(Snowflake和Google BigQuery)的连接器，现在在连接测试后自动保存外部帐户。 (NEO-47636)
-* 修复了阻止在 **数据更新** MSSQL上的工作流活动。 (NEO-47763)
-* 修复了在未设置引擎时区（特定于MSSQL）时导致MTA进程崩溃的问题。 (NEO-46619)
-* 修复了当图像节点(img)包含具有个性化字段的URL时，HTML文件导入存在的问题。 (NEO-48396)
-* 修复了在尝试连接到 `limit` 未在serverConf.xml文件中配置节点。
-* 修复了在使用某些函数(例如 `to_nclob` 具有未启用NChar的Oracleunicode数据库。 (NEO-49361)
-* 修复了在nmsDeliveryMapping文件夹上具有读取访问权限的用户尝试运行营销活动或工作流时导致错误的问题。 (NEO-48230)
-* 修复了阻止 `JSPContext.sqlExecWithOneParam` 函数。 (NEO-50066)
-* 修复了各种重定向错误。 (NEO-50030)
+* 修复了会导致用户无法使用&#x200B;**合并所选行**&#x200B;工作流选项的问题。(NEO-48488)
+* 修复了在使用 Adobe Campaign 增强 MTA 时，无法正确更新 **Success** 投放指标的问题。(NEO-50462)
+* 修复了在电子邮件投放中重置内容批准时出现的问题，此问题会导致您无法进行重新批准。(NEO-44259)
+* 修复了可能导致&#x200B;**投放批准**&#x200B;按钮无法显示的问题。(NEO-47547)
+* 修复了投放的 HTML 选项卡的性能问题，该问题可能会在大型 HTML 代码中出现。(NEO-47440)
+* 修复了当 `FeatureFlag_GZIP_Compression` 选项启用时，会影响 MID 实例上的投放日志状态更新的问题。(NEO-49183)
+* 修复了在使用基于令牌的身份验证时，会导致无法从执行实例发送 iOS 移动应用程序通知的问题。(NEO-45961)
+* 修复了&#x200B;**刷新可投放性**&#x200B;工作流 (deliverabilityUpdate) 的问题，此问题的表现为：当要同步的 broadlog 过多时，该工作流会卡住。(NEO-48287)
+* 修复了会阻止&#x200B;**消息中心同步** (mcSynch) 工作流的事件类型问题。
+* 修复了在&#x200B;**查询**&#x200B;工作流活动的附加数据中添加&#x200B;**已打开的收件人** (estimatedRecipientOpen) 指标时，可能会导致错误的问题。(NEO-46665)
+* 修复了一项与&#x200B;**计费**&#x200B;工作流有关的问题，其具体表现为，当在同一实例上安装了消息中心控制和执行包时，该工作流会失败。(NEO-47674)
+* 修复了一项与&#x200B;**计费**&#x200B;工作流有关的问题，其具体表现为：在具有其主键被定义为字符串而不是整数的表时，该工作流会失败。(NEO-46254)
+* 修复了工作流名称过长时，热图过滤器会出现的一项问题。(NEO-46301)
+* 修复了 7.3.1 版本中的 Snowflake FDA 连接器存在的问题，在扩充期间使用“0 或 1 基数简单联接”时，该问题会导致记录被丢弃。(NEO-48737)
+* 修复了 Snowflake FFDA 的一个问题，在使用&#x200B;**拆分**&#x200B;工作流活动中的排序参数时，此问题会出现。(NEO-45899)
+* 修复了可能会导致无法保存外部帐户配置的问题。对于具有解析器功能的连接器（Snowflake 和 Google BigQuery）而言，现在当连接测试完成后，外部帐户将被自动保存。(NEO-47636)
+* 修复了会导致无法在 MSSQL 的&#x200B;**数据更新**&#x200B;工作流活动中插入时间数据类型的问题。(NEO-47763)
+* 修复了在引擎时区未设置时（特定于 MSSQL），会导致 MTA 流程崩溃的问题。(NEO-46619)
+* 修复了当映像节点 (img) 包含具有个性化字段的 URL 时，HTML 文件导入的问题。(NEO-48396)
+* 修复了未在 serverConf.xml 中配置 `limit` 节点的情况下，当尝试连接实例时出现 HTTP 500 错误的问题。
+* 修复了一项可能会导致“字符集匹配有误”的错误的问题，在未启用 NChar 的 Oracle Unicode 数据库中使用某些函数（如 `to_nclob`）时，该问题会出现。(NEO-49361)
+* 修复了对 nmsDeliveryMapping 文件夹具有读取访问权限的用户尝试运行活动或工作流时会导致错误的问题。(NEO-48230)
+* 修复了会导致 `JSPContext.sqlExecWithOneParam` 功能无法正常运行的问题。(NEO-50066)
+* 修复了各种重定向错误。(NEO-50030)
 
 ## ![](assets/do-not-localize/orange_2.png) 7.3.1 版 - 内部版本 9352 {#release-7-3-1}
 

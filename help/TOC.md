@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
 source-wordcount: '2524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -825,7 +825,7 @@ ht-degree: 99%
       + [技术说明](technotes/using/technote.md)
       + [新的可投放性服务器](technotes/using/deliverability-server.md)
       + [Apache 安全升级](technotes/using/acc-apache-upgrade.md)
-      + [2023年系统升级](technotes/using/tech-stack-upgrade.md)
+      + [2023 年系统升级](technotes/using/tech-stack-upgrade.md)
       + [IMS 更新](technotes/using/ims-updates.md)
       + [TLS 1.0 和 1.1 支持生命周期终止](technotes/using/eol-tls-support.md)
    + 电子邮件和推送通知{#technotes-email}

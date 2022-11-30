@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
 source-wordcount: '4994'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,15 +25,15 @@ ht-degree: 98%
 
 ### 2022 年 11 月 {#nov-2022}
 
-更新了“发行说明”部分，其中包含7.3.2改进和修补程序。 [了解更多信息](latest-release.md)
+更新了“发行说明”部分，更新内容是 7.3.2 版本的改进和修补程序。[了解更多信息](latest-release.md)
 
-更新了支持Teradata17的兼容性矩阵。 [了解更多信息](compatibility-matrix.md)
+更新了兼容性矩阵，更新内容是有关 Teradata 17 的支持情况。[了解更多信息](compatibility-matrix.md)
 
-文件和资源管理部分已更新，其中包含有关 **uploadWhiteList** 属性。 [了解更多信息](../../installation/using/file-res-management.md)
+更新了文件和资源管理部分，更新内容是有关 **uploadWhiteList** 属性的更多信息。[了解更多信息](../../installation/using/file-res-management.md)
 
-更新了有关安全区的文档，添加了有关 **allowDebug** 属性。 [了解更多信息](../../installation/using/security-zones.md#recommendations)
+更新了有关安全区域的文档，更新内容是有关 **allowDebug** 属性的更多信息。[了解更多信息](../../installation/using/security-zones.md#recommendations)
 
-迁移指南已更新。 已删除对不支持的Adobe Campaign版本的引用。 [了解更多信息](../../migration/using/about-migration.md)
+迁移指南已更新。已移除对不支持的 Adobe Campaign 版本的引用。[了解更多信息](../../migration/using/about-migration.md)
 
 
 ### 2022 年 7 月 {#july-2022}

@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 0ecf9c69cc4b444feda1e42701a3a27f2b2e7eeb
 workflow-type: tm+mt
 source-wordcount: '1684'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -45,14 +45,14 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </tr>
 <tr>
  <td>通过 Facebook 进行社交媒体营销</td>
- <td>现已弃用Facebook的社交营销。 您可以使用Twitter集成在社交媒体上发布内容，或使用Adobe创建自定义渠道。
+ <td>通过 Facebook 进行社交媒体营销的功能现已弃用。您可以使用 Twitter 集成在社交媒体上发布内容，或与 Adobe 合作创建自定义渠道。
  <p></p>
   <p>目标移除日期：2023 年底</p>
   </td>
 </tr>
 <tr>
  <td>ACS 连接器</td>
- <td>ACS Connector（Prime产品）现已弃用。 您可以使用Campaign导出/导入功能提取和插入两个产品中的数据。<p></p>
+ <td>ACS 连接器（高级服务）现已弃用。您可以使用 Campaign 的导出/导入功能来从两款产品中提取数据或向其中插入数据。<p></p>
   <p>目标移除日期：2023 年底</p>
   </td>
 </tr>
