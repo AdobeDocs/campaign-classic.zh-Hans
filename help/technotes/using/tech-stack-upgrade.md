@@ -5,7 +5,7 @@ description: Adobe Campaign系统升级
 hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: b8bbdb4a0d595ec2bc884e041d1e56b81da8aa3d
+source-git-commit: 7948f6423b80788adf26a53afcd380953c8b8463
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 8%
@@ -55,7 +55,7 @@ As a **托管或托管的Cloud Services客户**，则Adobe会在需要时通知�
 
 **您是否受影响？**
 
-如果您的Campaign数据库系统是PostgreSQL，要从最新的PostgreSQL创新和安全更新中受益，您需要升级到 **PostgreSQL 14**. 请注意，PostreSQL 11将于2022年11月30日终止生命周期。
+如果您的Campaign数据库系统是PostgreSQL，要从最新的PostgreSQL创新和安全更新中受益，您需要升级到 **PostgreSQL 14**. 请注意，PostreSQL 11将于2023年11月9日终止生命周期。
 
 **如何更新？**
 
