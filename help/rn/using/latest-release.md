@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: f37f6c080bc6fb70cbd3f853db4ad8685ae8ebf8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2737'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ _2022 年 11 月 21 日_
 
 **兼容性更新**
 
-* Adobe Campaign现在与PostgreSQL 14兼容。
+* Adobe Campaign 现与 PostgreSQL 14 兼容。
 * 在 Microsoft Internet Explorer 11 的生命周期终止后，客户端控制台中仪表板的 HTML 渲染引擎现在使用的是 Edge Chromium。(NEO-20741)
 
 请参阅 [Campaign 兼容性矩阵](../../rn/using/compatibility-matrix.md#RDBMSservers)。
