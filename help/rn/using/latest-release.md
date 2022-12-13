@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f37f6c080bc6fb70cbd3f853db4ad8685ae8ebf8
-workflow-type: ht
-source-wordcount: '2737'
-ht-degree: 100%
+source-git-commit: 1c0aeecd72a35fc6e2e72f4b042df2ff39e5cb6f
+workflow-type: tm+mt
+source-wordcount: '2771'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,8 @@ _2022 年 11 月 21 日_
 
 **兼容性更新**
 
-* Adobe Campaign 现与 PostgreSQL 14 兼容。
+* Adobe Campaign 现与 PostgreSQL 14 兼容。有关更多信息，请参阅 [技术说明](../../technotes/using/tech-stack-upgrade.md).
+
 * 在 Microsoft Internet Explorer 11 的生命周期终止后，客户端控制台中仪表板的 HTML 渲染引擎现在使用的是 Edge Chromium。(NEO-20741)
 
 请参阅 [Campaign 兼容性矩阵](../../rn/using/compatibility-matrix.md#RDBMSservers)。
@@ -108,7 +109,7 @@ _2022 年 7 月 1 日_
 * 现在，Adobe Campaign SDK 支持在 Android 12 和 iOS 15 上使用“推送通知”。
 * Adobe Campaign 现与 MySQL 8 兼容。
 * Adobe Campaign 现与 Windows 11 兼容。
-* Adobe Campaign 现与 Debian 11 兼容。
+* Adobe Campaign 现与 Debian 11 兼容。有关更多信息，请参阅 [技术说明](../../technotes/using/tech-stack-upgrade.md).
 
 请参阅 [Campaign 兼容性矩阵](../../rn/using/compatibility-matrix.md#OperatingSystems)。
 
@@ -241,3 +242,4 @@ Adobe Campaign 现在与 Windows Server 2019 兼容。请参阅 [Campaign 兼容
 * 修复了可能导致您无法预览附加到工作流的电子邮件投放的问题。(NEO-37840)
 * 修复了可能导致数据库清理工作流删除包含列表值的有效表的问题。(NEO-34911)
 * 修复了可能导致营销实例上的计费工作流崩溃的问题。
+* 修复了可能导致向比预期更多收件人发送投放的问题。 (NEO-45108)
