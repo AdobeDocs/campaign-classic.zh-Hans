@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 1c0aeecd72a35fc6e2e72f4b042df2ff39e5cb6f
+source-git-commit: 8391df5046d56edfb33de5eb9f2afb4738108791
 workflow-type: tm+mt
 source-wordcount: '2771'
 ht-degree: 98%
@@ -149,6 +149,7 @@ _2022 年 7 月 1 日_
 * 修复了在投放中使用错误 HTML 代码时可能导致崩溃的问题。(NEO-40385)
 * 修复了可能导致非管理员用户无法访问投放属性中的 **Analysis** 选项卡的问题。(NEO-34025)
 * 修复了在消息准备期间可能会阻止图像以块模式从外部服务器上传的问题。(NEO-40307)
+* 修复了可能导致向比预期更多收件人发送投放的问题。 (NEO-45108)
 
 ## ![](assets/do-not-localize/green_2.png) 7.2.2 版 - 版本 9349 {#release-7-2-2}
 
@@ -242,4 +243,3 @@ Adobe Campaign 现在与 Windows Server 2019 兼容。请参阅 [Campaign 兼容
 * 修复了可能导致您无法预览附加到工作流的电子邮件投放的问题。(NEO-37840)
 * 修复了可能导致数据库清理工作流删除包含列表值的有效表的问题。(NEO-34911)
 * 修复了可能导致营销实例上的计费工作流崩溃的问题。
-* 修复了可能导致向比预期更多收件人发送投放的问题。 (NEO-45108)
