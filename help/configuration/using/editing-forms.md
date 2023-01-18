@@ -3,7 +3,7 @@ product: campaign
 title: 编辑表单
 description: 编辑表单
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 4af44f38d495d31dec4b9b7a142dbed0c2450d56
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架构，请选择 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** 中。 有关更多信息 [窗体结构](form-structure.md).
 
-To access input forms, choose **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** from the menu:
+要访问输入表单，请选择 **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** 从菜单：
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
@@ -181,9 +181,9 @@ To access input forms, choose **[!UICONTROL Administration]> [!UICONTROL Configu
 
 1. 指定表单属性：
 
-   * Specify the form name and the namespace.
+   * 指定表单名称和命名空间。
 
-      表单名称和命名空间可以匹配相关数据架构。  This example shows a form for the `cus:order` data schema:
+      表单名称和命名空间可以匹配相关数据架构。  此示例显示 `cus:order` 数据架构：
 
       ```xml
       <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
@@ -249,7 +249,7 @@ To access input forms, choose **[!UICONTROL Administration]> [!UICONTROL Configu
 
    | 元素 | 属性 | 说明 |
    | --- | --- | --- |
-   | `<input>` | `read-only:"true"` | 提供对字段的只读访问权限 |
+   | `<input>` | `read-only="true"` | 提供对字段的只读访问权限 |
    | `<container>` | `type="visibleGroup" visibleIf="`*edit-expr*`"` | 有条件地显示一组字段 |
    | `<container>` | `type="enabledGroup" enabledIf="`*edit-expr*`"` | 有条件地启用一组字段 |
 
@@ -447,7 +447,7 @@ To access input forms, choose **[!UICONTROL Administration]> [!UICONTROL Configu
 1. 修改工厂输入表单：
 
    1. 从菜单中，选择 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
-   1. Select an input form and modify it.
+   1. 选择输入表单并对其进行修改。
 
    您可以扩展工厂数据架构，但无法扩展工厂输入表单。 我们建议您直接修改工厂输入表单，而无需重新创建。 在软件升级期间，您在工厂输入表单中所做的修改将与升级合并。 如果自动合并失败，您可以解决冲突。 [阅读更多](../../production/using/upgrading.md#resolving-conflicts)。
 
