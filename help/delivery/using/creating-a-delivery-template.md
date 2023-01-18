@@ -4,9 +4,9 @@ title: 创建投放模板
 description: 创建投放模板
 feature: Delivery Templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '383'
 ht-degree: 11%
 
 ---
@@ -33,6 +33,10 @@ ht-degree: 11%
 
 ## 创建新模板 {#creating-a-new-template}
 
+>[!NOTE]
+>
+>为避免出现配置错误，Adobe建议您复制本机模板并自定义其设置，而不是创建新模板。
+
 要配置投放模板，请执行以下步骤：
 
 1. 打开营销活动资源管理器。
@@ -40,7 +44,7 @@ ht-degree: 11%
 
    ![](assets/delivery_template_1.png)
 
-1. 单击 **新建** ，以创建新投放模板。
+1. 单击 **新建** （在工具栏中）创建新投放模板，或 **复制** 现有模板。
 
    ![](assets/delivery_template_2.png)
 
@@ -62,9 +66,6 @@ ht-degree: 11%
 
 1. 单击&#x200B;**保存**。您的模板现已准备就绪，可在投放中使用。
 
->[!NOTE]
->
->为避免出现配置错误，我们建议您复制本机模板并更改其属性，而不是创建新模板。
 
 ## 教程视频 {#delivery-template-video}
 
