@@ -4,7 +4,7 @@ title: 关于定位活动
 description: 关于定位活动
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 743baa49e5d62ed1c2f7f635f6bf120a67646e63
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 3%
@@ -22,7 +22,7 @@ ht-degree: 3%
 * **读取列表**:允许您使用列表中包含的数据。 请参阅 [使用列表中的数据：读取列表](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list) 中。
 * **并集**:允许您将多个活动的结果分组到单个目标中。 请参阅 [并集](union.md) 中。
 * **交集**:允许您仅提取具有相同集客活动结果的群体。 请参阅 [交集](intersection.md) 中。
-* **排除**:允许您基于从中提取一个或多个其他目标的主目标创建目标。 请参阅 [交集](intersection.md) 中。
+* **排除**:允许您基于从中提取一个或多个其他目标的主目标创建目标。 请参阅 [排除](exclusion.md) 中。
 * **拆分**:允许您将目标分割成多个子集。 请参阅 [拆分](split.md) 中。
 * **单元格**:以数据列的形式提供各种子集的视图，并且当有许多子集时便于对这些子集的操作。 有关更多信息，请参阅 [单元格](cells.md) 中。
 * **单元格优惠**:允许您将不同的选件关联到群体的每个子集。 请参阅 [单元格优惠](offers-by-cell.md) 中。
