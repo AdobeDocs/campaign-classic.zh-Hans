@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: 5ad84f77b0618f2e8b948a3712bc106c19b03788
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '795'
 ht-degree: 2%
 
 ---
@@ -123,7 +123,14 @@ ht-degree: 2%
       apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
       ```
 
-1. 访问脚本所在的目录并运行以下脚本：
+1. 在运行脚本之前，可以通过指定 — help参数获取更多信息：
+
+   ```
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts
+   ./bigquery_odbc-setup.sh --help
+   ```
+
+1. 访问脚本所在的目录，并作为根用户运行以下脚本：
 
    ```
    cd /usr/local/neolane/nl6/bin/fda-setup-scripts
