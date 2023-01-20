@@ -8,10 +8,10 @@ level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 1dd0fe6734785b593302ed90db1d150cf6aee00c
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 100%
+source-wordcount: '1659'
+ht-degree: 98%
 
 ---
 
@@ -149,7 +149,7 @@ Adobe Campaign 与 Analytics 平台的整合是通过连接器执行的。要同
 1. **[!UICONTROL Advanced]** 选项卡可让您配置或修改更多技术设置。
 
    * **[!UICONTROL Lifespan]**：可让您指定延迟（以天为单位），在此之后技术工作流会在 Adobe Campaign 中恢复网站事件。默认值：180 天。
-   * **[!UICONTROL Persistence]**：可让您指定将所有网站事件（例如购买）归因到再营销活动的时段，默认值：7 天。
+   * **[!UICONTROL Persistence]**:用于定义所有Web事件（例如购买）可归因到再营销活动的时段，默认：7天。
 
 >[!NOTE]
 >
