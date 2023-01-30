@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 8391df5046d56edfb33de5eb9f2afb4738108791
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2771'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ _2022 年 11 月 21 日_
 
 **兼容性更新**
 
-* Adobe Campaign 现与 PostgreSQL 14 兼容。有关更多信息，请参阅 [技术说明](../../technotes/using/tech-stack-upgrade.md).
+* Adobe Campaign 现与 PostgreSQL 14 兼容。有关更多信息，请参见此[技术说明](../../technotes/using/tech-stack-upgrade.md)。
 
 * 在 Microsoft Internet Explorer 11 的生命周期终止后，客户端控制台中仪表板的 HTML 渲染引擎现在使用的是 Edge Chromium。(NEO-20741)
 
@@ -109,7 +109,7 @@ _2022 年 7 月 1 日_
 * 现在，Adobe Campaign SDK 支持在 Android 12 和 iOS 15 上使用“推送通知”。
 * Adobe Campaign 现与 MySQL 8 兼容。
 * Adobe Campaign 现与 Windows 11 兼容。
-* Adobe Campaign 现与 Debian 11 兼容。有关更多信息，请参阅 [技术说明](../../technotes/using/tech-stack-upgrade.md).
+* Adobe Campaign 现与 Debian 11 兼容。有关更多信息，请参见此[技术说明](../../technotes/using/tech-stack-upgrade.md)。
 
 请参阅 [Campaign 兼容性矩阵](../../rn/using/compatibility-matrix.md#OperatingSystems)。
 
@@ -149,7 +149,7 @@ _2022 年 7 月 1 日_
 * 修复了在投放中使用错误 HTML 代码时可能导致崩溃的问题。(NEO-40385)
 * 修复了可能导致非管理员用户无法访问投放属性中的 **Analysis** 选项卡的问题。(NEO-34025)
 * 修复了在消息准备期间可能会阻止图像以块模式从外部服务器上传的问题。(NEO-40307)
-* 修复了可能导致向比预期更多收件人发送投放的问题。 (NEO-45108)
+* 修复了可能导致向比预期更多的收件人发送投放的问题。(NEO-45108)
 
 ## ![](assets/do-not-localize/green_2.png) 7.2.2 版 - 版本 9349 {#release-7-2-2}
 
