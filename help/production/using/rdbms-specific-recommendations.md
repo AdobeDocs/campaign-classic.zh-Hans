@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98b338ddf0da184363c599d74aeb98ed7f6303ce
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1176'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,6 @@ ht-degree: 1%
 在PostgreSQL中，您可以使用以下典型关键字：
 
 * 真空（完整、分析、详细）
-* 重新索引
 
 要运行DAVUM操作，并对其进行分析和计时，可以使用以下语法：
 
@@ -99,61 +98,48 @@ VACUUM (FULL, ANALYZE, VERBOSE) <table>;
 ```
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsdelivery;
-REINDEX TABLE nmsdelivery;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverystat;
-REINDEX TABLE nmsdeliverystat;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflow;
-REINDEX TABLE xtkworkflow;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowevent;
-REINDEX TABLE xtkworkflowevent;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowjob;
-REINDEX TABLE xtkworkflowjob;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowlog;
-REINDEX TABLE xtkworkflowlog;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowtask;
-REINDEX TABLE xtkworkflowtask;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkjoblog;
-REINDEX TABLE xtkjoblog;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkjob;
-REINDEX TABLE xtkjob;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsaddress;
-REINDEX TABLE nmsaddress;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverypart;
-REINDEX TABLE nmsdeliverypart;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
-REINDEX TABLE nmsmirrorpageinfo;
 ```
 
 >[!NOTE]
 >
 >* Adobe建议从较小的表开始：这样，如果流程在大型表（故障风险最高）上失败，则至少部分维护已完成。
 >* Adobe建议您添加特定于数据模型的表，这些表可能会进行重大更新。 这种情况可能适用于 **NmsRecipient** 如果您的每日数据复制流量较大，则为。
->* VAFU和REINDEX语句将锁定表，在执行维护时会暂停某些进程。
+>* VAWU语句将锁定表，该表在执行维护时会暂停某些进程。
 >* 对于非常大的表（通常高于5 Gb），真空FULL语句可能会非常低效，并且需要很长时间。 Adobe不建议将它用于 **YyyNmsBroadLogXxx** 表。
 >* 此维护操作可通过Adobe Campaign工作流(使用 **[!UICONTROL SQL]** 活动。 如需详细信息，请参阅[此部分](../../workflow/using/architecture.md)。确保将维护安排在活动时间较短的时间内，该时间不会与备份窗口发生冲突。
-
 >
 
 
@@ -417,7 +403,7 @@ function sqlGetMemo(strSql)
 
 请联系您的数据库管理员，以了解最适合您的Oracle版本的过程。
 
-## Microsoft SQL Server {#microsoft-sql-server}
+## Microsoft SQL 服务器 {#microsoft-sql-server}
 
 >[!NOTE]
 >
