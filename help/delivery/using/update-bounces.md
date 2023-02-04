@@ -5,9 +5,9 @@ description: 了解如何在ISP中断后更新退回资格
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: 13f730d428861124060146efa26238ceca38bed6
+source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 2%
 >
 >您可以在上查看Google Workspace状态功能板 [本页](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}。
 
-## 症状{#update-bounce-symptoms}
+## 影响{#update-bounce-impact}
 
 如果ISP发生中断，则无法成功将通过Campaign发送的电子邮件发送给其收件人：这些电子邮件将被错误地标记为退回。
 
@@ -57,7 +57,10 @@ ht-degree: 2%
 
 * 对于Campaign Classicv7实例，其中包含SMTP弹回响应信息，请在 **[!UICONTROL Error text]** 隔离列表的字段：
 
-   * **错误文本（隔离文本）** 包含“550-5.1.1”和 **错误文本（隔离文本）** 包含“support.ISP.com”“support.ISP.com”可以是：例如&quot;support.apple.com&quot;或&quot;support.google.com&quot;
+   * **错误文本（隔离文本）** 包含“550-5.1.1”和 **错误文本（隔离文本）** 包含&quot;support.ISP.com&quot;
+
+      其中“support.ISP.com”可以是：例如&quot;support.apple.com&quot;或&quot;support.google.com&quot;
+
    * **更新状态(@lastModified)** YYYY/MM/DD HH或之后:MM:SS AM
    * **更新状态(@lastModified)** YYYY/MM/DD HH上或之前:MM:SS PM
 
