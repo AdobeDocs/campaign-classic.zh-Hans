@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: 在 ISP 中断后更新退回限制条件
+title: 在Gmail中断后更新退回鉴别
 description: 了解如何在ISP中断后更新退回资格
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 13f730d428861124060146efa26238ceca38bed6
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 3%
+source-wordcount: '426'
+ht-degree: 1%
 
 ---
 
