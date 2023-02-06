@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
-workflow-type: ht
+source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
+workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign Classic 会定期发布产品更新，这些更新包括新增功能、错误修复、性能改进、安全性提升及可用性增强。这些更新会作为产品内部版本发布。有关每个新的内部版本的详细信息，请参阅[发行说明](latest-release.md)。
+Adobe Campaign Classic 会定期发布产品更新，这些更新包括新增功能、错误修复、性能改进、安全性提升及可用性增强。这些更新将作为 **产品版本**. 有关每个新的内部版本的详细信息，请参阅[发行说明](latest-release.md)。
 
 ## 版本状态{#rn-statuses}
 
@@ -27,7 +27,7 @@ Adobe Campaign Classic 会定期发布产品更新，这些更新包括新增功
 
 ![](assets/do-not-localize/limited3.png) **有限可用性** (LA) - 仅限按需部署。
 
-![](assets/do-not-localize/blue3.png) **发布候选项** (RC) - 具有新功能的最新版本。
+![](assets/do-not-localize/blue3.png) **发布候选项** (RC) — 具有新功能的最新内部版本。
 
 ![](assets/do-not-localize/orange3.png) **不再可用** - 无部署。无错误修复。建议更新到较新的内部版本。
 
@@ -37,9 +37,9 @@ Adobe Campaign Classic 会定期发布产品更新，这些更新包括新增功
 
 Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、最充分的信息，保持环境的安全，并改进您对我们产品的体验。
 
-这就是为什么&#x200B;**运行最新稳定版本的** Adobe Campaign 至关重要的原因。它还可确保您获得更好的支持体验，因为识别、再现和修复较新的内部版本中的问题通常要快得多。此外，许多您可能会遇到的问题已在最新内部版本中得到修复。
+这就是为什么你 **运行最新的稳定内部版本** Adobe Campaign。 它还可确保您获得更好的支持体验，因为识别、再现和修复较新的内部版本中的问题通常要快得多。此外，许多您可能会遇到的问题已在最新内部版本中得到修复。
 
-作为托管客户，您无需采取任何操作，即可通过最新稳定版本自动从升级中受益。在[年度升级部分](#yearly-upgrade)中了解详情。如果您从旧内部版本进行迁移，Adobe 建议您先升级到此版本。
+作为托管客户，您无需采取任何操作，即可通过最新稳定内部版本自动从升级中受益。 在[年度升级部分](#yearly-upgrade)中了解详情。如果您从旧内部版本进行迁移，则Adobe建议您先升级到此内部版本。
 
 ## 推荐{#recommendations}
 
@@ -69,7 +69,7 @@ Adobe Campaign Classic 专门使用一系列技术来为用户创造价值。这
 
 作为托管客户，如果已确定您的帐户需要升级一项或多项与 Campaign Classic 相关的技术，并更新当前内部版本和/或版本，Adobe 将直接通知您。
 
-对于在旧版本上运行的内部部署或混合型客户，Adobe 建议您迁移到最新稳定版本 (GA)。
+作为在旧版本上运行的内部部署或混合部署客户，Adobe鼓励您转为使用最新的稳定版本(GA)。
 
 这样可确保您的帐户免受漏洞攻击，并利用更新后的高性能技术。此升级还会使您的帐户能够在以后更轻松地定期升级，而且无需过多的手动操作和干预。
 

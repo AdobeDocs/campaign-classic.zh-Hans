@@ -4,10 +4,10 @@ title: 了解隔离管理
 description: 了解隔离管理
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: f7813764e55986efa3216b50e5ebf4387bd70e5e
+source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
 workflow-type: tm+mt
-source-wordcount: '2983'
-ht-degree: 13%
+source-wordcount: '2997'
+ht-degree: 12%
 
 ---
 
@@ -128,7 +128,9 @@ Adobe Campaign根据投放失败类型和在错误消息鉴别过程中分配的
 对于使用旧版Campaign MTA的内部部署安装和托管/混合安装，您可以修改错误数以及两个错误之间的间隔时间。 为此，请在 [部署向导](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或 [在投放级别](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 
-## 删除隔离地址 {#removing-a-quarantined-address}
+## 从隔离中删除地址 {#removing-a-quarantined-address}
+
+### 自动更新 {#unquarantine-auto}
 
 符合特定条件的地址将由 [数据库清理](../../production/using/database-cleanup-workflow.md) 工作流。
 
@@ -144,17 +146,21 @@ Adobe Campaign根据投放失败类型和在错误消息鉴别过程中分配的
 >
 >地址在 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 状态永远不会被删除，即使他们收到电子邮件也是如此。
 
+### 手动更新 {#unquarantine-manual}
+
 您也可以手动取消地址隔离。 要手动从隔离列表中删除地址，请将其状态更改为 **[!UICONTROL Valid]** 从 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** 节点。
 
 ![](assets/tech_quarant_error_status.png)
 
-您可能需要对隔离列表执行批量更新，例如，在ISP中断期间，电子邮件被错误地标记为退回，因为无法将其成功发送给收件人。
+### 批量更新 {#unquarantine-bulk}
 
-要执行此操作，请创建一个工作流并在隔离表格中添加查询，以过滤掉所有受影响的收件人，以便从隔离列表中删除这些收件人，并将其包含在将来的Campaign电子邮件投放中。
+您可能需要对隔离列表执行批量更新，例如，在ISP中断时。 在这种情况下，电子邮件错误地标记为退回，因为无法成功将其投放到收件人。 这些地址必须从隔离列表中删除。
+
+要执行此操作，请创建工作流并添加 **[!UICONTROL Query]** 活动，以过滤掉所有受影响的收件人。 识别后，即可从隔离列表中删除这些标记，并将其包含在将来的Campaign电子邮件投放中。
 
 以下是此查询的建议准则：
 
-* 对于Campaign v8和Campaign Classicv7环境，其中包含 **[!UICONTROL Error text]** 隔离列表的字段：
+* 对于Campaign Classicv7环境，其中包含 **[!UICONTROL Error text]** 隔离列表的字段：
 
    * **错误文本（隔离文本）** 包含&quot;Momen_Code10_InvalidRecipient&quot;
    * **电子邮件域(@domain)** 等于domain1.com或 **电子邮件域(@domain)** 等于domain2.com或 **电子邮件域(@domain)** 等于domain3.com
@@ -171,11 +177,11 @@ Adobe Campaign根据投放失败类型和在错误消息鉴别过程中分配的
    * **更新状态(@lastModified)** YYYY/MM/DD HH上或之前:MM:SS PM
 
 
-获得受影响的收件人列表后，添加 **[!UICONTROL Update data]** 活动，将其状态设置为 **[!UICONTROL Valid]** 这样它们就会被 **[!UICONTROL Database cleanup]** 工作流。 您也只需从隔离表格中删除它们即可。
+获得受影响的收件人列表后，添加 **[!UICONTROL Update data]** 活动，将其电子邮件地址状态设置为 **[!UICONTROL Valid]** 这样它们就会被 **[!UICONTROL Database cleanup]** 工作流。 您也只需从隔离表格中删除它们即可。
 
 ## 推送通知隔离 {#push-notification-quarantines}
 
-推送通知的隔离机制与常规流程的全局隔离机制相同。 请参阅 [关于隔离](#about-quarantines). 但是，对于推送通知，某些错误的管理方式不同。 例如，对于某些软错误，不会在同一投放内执行重试。 下面列出了推送通知的特性。 重试机制（重试次数、频率）与电子邮件的相同。
+推送通知的隔离机制与常规流程的全局隔离机制相同。 但是，对于推送通知，某些错误的管理方式不同。 例如，对于某些软错误，不会在同一投放内执行重试。 下面列出了推送通知的特性。 重试机制（重试次数、频率）与电子邮件的相同。
 
 隔离的项目是设备令牌。
 

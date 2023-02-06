@@ -5,9 +5,9 @@ description: 了解如何在ISP中断后更新退回资格
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
+source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '513'
 ht-degree: 2%
 
 ---
@@ -48,14 +48,14 @@ ht-degree: 2%
 
 根据事件的时间范围和ISP，以下是此查询的建议准则。
 
-* 对于Campaign v8和Campaign Classicv7环境，其中包含 **[!UICONTROL Error text]** 隔离列表的字段：
+* 对于 **[!UICONTROL Error text]** 隔离列表的字段：
 
    * **错误文本（隔离文本）** 包含&quot;Momen_Code10_InvalidRecipient&quot;
    * **电子邮件域(@domain)** 等于domain1.com或 **电子邮件域(@domain)** 等于domain2.com或 **电子邮件域(@domain)** 等于domain3.com
    * **更新状态(@lastModified)** YYYY/MM/DD HH或之后:MM:SS AM
    * **更新状态(@lastModified)** YYYY/MM/DD HH上或之前:MM:SS PM
 
-* 对于Campaign Classicv7实例，其中包含SMTP弹回响应信息，请在 **[!UICONTROL Error text]** 隔离列表的字段：
+* 对于 **[!UICONTROL Error text]** 隔离列表的字段：
 
    * **错误文本（隔离文本）** 包含“550-5.1.1”和 **错误文本（隔离文本）** 包含&quot;support.ISP.com&quot;
 
