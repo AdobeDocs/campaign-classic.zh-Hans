@@ -4,10 +4,10 @@ title: 了解隔离管理
 description: 了解隔离管理
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: f7813764e55986efa3216b50e5ebf4387bd70e5e
 workflow-type: tm+mt
-source-wordcount: '2837'
-ht-degree: 10%
+source-wordcount: '2983'
+ht-degree: 13%
 
 ---
 
@@ -71,8 +71,9 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 >
 >隔离数量的增加是正常的，与数据库的“磨损”有关。 例如，如果将电子邮件地址的生命周期视为三年，而收件人表每年增加50%，则隔离的增加可以按如下方式计算：
 >
->年末1:(1*0.33)/(1+0.5)=22%。
-第 2 年年末：((1.22*0.33)+0.33)/(1.5+0.75)=32.5%。
+>年末1:(1)&#42;0.33)/(1+0.5)=22%。
+>
+>年末2年：(1.22)&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
 
 ### 确定投放报告中的隔离地址 {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -94,35 +95,6 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 
 ![](assets/tech_quarant_recipients_filter.png)
 
-### 删除隔离地址 {#removing-a-quarantined-address}
-
-如果需要，您可以从隔离列表中手动删除地址。 此外，符合特定条件的地址会由 [数据库清理](../../production/using/database-cleanup-workflow.md) 工作流。
-
-要手动从隔离列表中删除地址，请执行以下操作之一。
-
->[!IMPORTANT]
-从隔离中手动删除电子邮件地址意味着您将再次开始投放到此地址。 因此，这可能会对您的投放能力和IP信誉造成严重影响，最终可能会导致您的IP地址或发送域被阻止。 考虑从隔离中删除任何地址时，请格外小心。 如有疑问，请联系可投放性专家。
-
-* 您可以将其状态更改为 **[!UICONTROL Valid]** 从 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** 节点。
-
-   ![](assets/tech_quarant_error_status.png)
-
-* 您还可以将其状态更改为 **[!UICONTROL Allowlisted]**. 在这种情况下，地址仍保留在隔离列表中，但会系统地定位该地址，即使遇到错误也是如此。
-
-在以下情况下，地址会自动从隔离列表中删除：
-
-* 中的地址 **[!UICONTROL With errors]** 成功投放后，状态将从隔离列表中删除。
-* 中的地址 **[!UICONTROL With errors]** 如果上次软退件发生在10天以前，则会从隔离列表中删除状态。 有关软错误管理的更多信息，请参阅 [此部分](#soft-error-management).
-* 中的地址 **[!UICONTROL With errors]** 状态 **[!UICONTROL Mailbox full]** 30天后将从隔离列表中删除错误。
-
-其状态随后更改为 **[!UICONTROL Valid]**.
-
->[!IMPORTANT]
-地址在 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 即使收到电子邮件，状态也永远不会被删除。
-
-对于托管安装或混合安装(如果已升级到 [增强的MTA](sending-with-enhanced-mta.md)，在 **[!UICONTROL Erroneous]** 现在，状态和重试之间的最短延迟取决于IP在给定域名的历史和当前表现。
-
-对于使用旧版Campaign MTA的内部部署安装和托管/混合安装，您可以修改错误数以及两个错误之间的间隔时间。 为此，请在 [部署向导](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或 [在投放级别](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 ## 将地址加入隔离的条件 {#conditions-for-sending-an-address-to-quarantine}
 
@@ -135,7 +107,8 @@ Adobe Campaign根据投放失败类型和在错误消息鉴别过程中分配的
 如果用户将电子邮件标记为垃圾邮件([反馈回路](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops))时，该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅指地址，用户档案不在阻止列表上，因此用户可继续接收短信消息和推送通知。
 
 >[!NOTE]
-Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式导入电子邮件地址，这样以后就不会重新定向这些地址。
+>
+>Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式导入电子邮件地址，这样以后就不会重新定向这些地址。
 
 隔离地址列表(请参阅 [确定整个平台的隔离地址](#identifying-quarantined-addresses-for-the-entire-platform))、 **[!UICONTROL Error reason]** 字段指示将选定地址置于隔离中的原因。
 
@@ -148,6 +121,57 @@ Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式�
 将在 [投放持续时间](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period). 当错误计数达到限制阈值时，即会将地址添加到隔离。有关更多信息，请参阅 [在投放临时失败后重试](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 如果上次出现重大错误的时间超过10天，则会重新初始化错误计数。 地址状态随后更改为 **有效** 并且会从 [数据库清理](../../production/using/database-cleanup-workflow.md) 工作流。
+
+
+对于托管安装或混合安装(如果已升级到 [增强的MTA](sending-with-enhanced-mta.md)，在 **[!UICONTROL Erroneous]** 现在，状态和重试之间的最短延迟取决于IP在给定域名的历史和当前表现。
+
+对于使用旧版Campaign MTA的内部部署安装和托管/混合安装，您可以修改错误数以及两个错误之间的间隔时间。 为此，请在 [部署向导](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或 [在投放级别](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+
+
+## 删除隔离地址 {#removing-a-quarantined-address}
+
+符合特定条件的地址将由 [数据库清理](../../production/using/database-cleanup-workflow.md) 工作流。
+
+在以下情况下，地址会自动从隔离列表中删除：
+
+* 中的地址 **[!UICONTROL With errors]** 成功投放后，状态将从隔离列表中删除。
+* 中的地址 **[!UICONTROL With errors]** 如果上次软退件发生在10天以前，则会从隔离列表中删除状态。 有关软错误管理的更多信息，请参阅 [此部分](#soft-error-management).
+* 中的地址 **[!UICONTROL With errors]** 状态 **[!UICONTROL Mailbox full]** 30天后将从隔离列表中删除错误。
+
+其状态随后更改为 **[!UICONTROL Valid]**.
+
+>[!IMPORTANT]
+>
+>地址在 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 状态永远不会被删除，即使他们收到电子邮件也是如此。
+
+您也可以手动取消地址隔离。 要手动从隔离列表中删除地址，请将其状态更改为 **[!UICONTROL Valid]** 从 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** 节点。
+
+![](assets/tech_quarant_error_status.png)
+
+您可能需要对隔离列表执行批量更新，例如，在ISP中断期间，电子邮件被错误地标记为退回，因为无法将其成功发送给收件人。
+
+要执行此操作，请创建一个工作流并在隔离表格中添加查询，以过滤掉所有受影响的收件人，以便从隔离列表中删除这些收件人，并将其包含在将来的Campaign电子邮件投放中。
+
+以下是此查询的建议准则：
+
+* 对于Campaign v8和Campaign Classicv7环境，其中包含 **[!UICONTROL Error text]** 隔离列表的字段：
+
+   * **错误文本（隔离文本）** 包含&quot;Momen_Code10_InvalidRecipient&quot;
+   * **电子邮件域(@domain)** 等于domain1.com或 **电子邮件域(@domain)** 等于domain2.com或 **电子邮件域(@domain)** 等于domain3.com
+   * **更新状态(@lastModified)** YYYY/MM/DD HH或之后:MM:SS AM
+   * **更新状态(@lastModified)** YYYY/MM/DD HH上或之前:MM:SS PM
+
+* 对于Campaign Classicv7实例，其中包含SMTP弹回响应信息，请在 **[!UICONTROL Error text]** 隔离列表的字段：
+
+   * **错误文本（隔离文本）** 包含“550-5.1.1”和 **错误文本（隔离文本）** 包含&quot;support.ISP.com&quot;
+
+   其中“support.ISP.com”可以是：例如&quot;support.apple.com&quot;或&quot;support.google.com&quot;
+
+   * **更新状态(@lastModified)** YYYY/MM/DD HH或之后:MM:SS AM
+   * **更新状态(@lastModified)** YYYY/MM/DD HH上或之前:MM:SS PM
+
+
+获得受影响的收件人列表后，添加 **[!UICONTROL Update data]** 活动，将其状态设置为 **[!UICONTROL Valid]** 这样它们就会被 **[!UICONTROL Database cleanup]** 工作流。 您也只需从隔离表格中删除它们即可。
 
 ## 推送通知隔离 {#push-notification-quarantines}
 
@@ -201,7 +225,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 负载过长<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr> 
   <tr> 
    <td> 消息创建/分析阶段 — 意外的内容格式问题<br /> </td> 
@@ -209,7 +233,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 根据错误显示的各种错误消息<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 未定义<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr> 
   <tr> 
    <td> 证书问题（密码、损坏等） 并测试与APNs问题的连接<br /> </td> 
@@ -217,14 +241,14 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 根据错误显示的各种错误消息<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr> 
   <tr> 
    <td> 发送过程中网络连接丢失<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 连接错误<br /> </td> 
    <td> 未定义<br /> </td> 
-   <td> 不可访问<br /> </td> 
+   <td> 不可到达<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
@@ -233,7 +257,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 未注册<br /> </td> 
    <td> 硬<br /> </td> 
    <td> 用户未知<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr> 
   <tr> 
    <td> APNs消息拒绝：所有其他错误<br /> </td> 
@@ -241,7 +265,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 错误消息中将存在错误拒绝原因<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -261,12 +285,14 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
 在投放分析过程中，从目标中排除的所有设备都会自动添加到 **excludeLogAppSubRcp** 表。
 
 >[!NOTE]
-对于使用百度连接器的客户，以下是不同类型的错误：
-* 投放开始时出现连接问题：失败类型 **[!UICONTROL Undefined]**，失败原因 **[!UICONTROL Unreachable]**，则执行重试。
-* 投放期间连接丢失：软错误，失败原因 **[!UICONTROL Refused]**，则执行重试。
-* 百度在发送过程中返回的同步错误：硬错误，失败原因 **[!UICONTROL Refused]**，则不执行重试。
 >
-Adobe Campaign每10分钟联系百度服务器以检索已发送消息的状态并更新广告。 如果消息声明为已发送，则广播中消息的状态将设置为 **[!UICONTROL Received]**. 如果百度声明错误，则状态将设置为 **[!UICONTROL Failed]**.
+>对于使用百度连接器的客户，以下是不同类型的错误：
+>
+>* 投放开始时出现连接问题：失败类型 **[!UICONTROL Undefined]**，失败原因 **[!UICONTROL Unreachable]**，则执行重试。
+>* 投放期间连接丢失：软错误，失败原因 **[!UICONTROL Refused]**，则执行重试。
+>* 百度在发送过程中返回的同步错误：硬错误，失败原因 **[!UICONTROL Refused]**，则不执行重试。
+>
+>Adobe Campaign每10分钟联系百度服务器以检索已发送消息的状态并更新广告。 如果消息声明为已发送，则广播中消息的状态将设置为 **[!UICONTROL Received]**. 如果百度声明错误，则状态将设置为 **[!UICONTROL Failed]**.
 
 **对于Android V2**
 
@@ -288,7 +314,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 不能使用以下关键词：{1}<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr> 
   <tr> 
    <td> 消息创建/分析阶段：负载太大<br /> </td> 
@@ -296,14 +322,14 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 通知过重：{1}位，而只有{2}位已授权<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr> 
   <tr> 
    <td> 发送过程中网络连接丢失<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 地址上没有来自Firebase Cloud Messaging服务的响应：{1}<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 不可访问<br /> </td> 
+   <td> 不可到达<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
@@ -311,7 +337,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> Firebase Cloud Messaging服务暂时不可用<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 不可访问<br /> </td> 
+   <td> 不可到达<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
@@ -320,7 +346,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 无法识别开发人员帐户，请检查您的ID和密码<br /> </td> 
    <td> 柔和<br /> </td> 
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr> 
   <tr> 
    <td> FCM报文拒绝：超出设备配额<br /> </td> 
@@ -336,7 +362,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> </td> 
    <td> 硬<br /> </td> 
    <td> 用户未知<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr> 
   <tr> 
    <td> FCM报文拒绝：所有其他错误<br /> </td> 
@@ -344,7 +370,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> Firebase Cloud Messaging服务器返回了意外的错误代码：{1} </td> 
    <td> </td> 
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr> 
     <tr> 
    <td> FCM报文拒绝：参数无效<br /> </td> 
@@ -352,7 +378,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> INVALID_ARGUMENT </td> 
    <td> 已忽略</td> 
    <td> 未定义<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr>
     <tr> 
    <td> FCM报文拒绝：第三方身份验证错误<br /> </td> 
@@ -368,7 +394,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> SENDER_ID_MISMATCH </td> 
    <td> 柔和</td>
    <td> 用户未知<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr>
     <tr> 
    <td> FCM报文拒绝：未注册<br /> </td> 
@@ -376,7 +402,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 未注册 </td> 
    <td> 硬</td> 
    <td> 用户未知<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr>
     <tr> 
    <td> FCM报文拒绝：内部<br /> </td> 
@@ -400,7 +426,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 意外错误代码</td> 
    <td> 已忽略</td> 
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr>
   <tr> 
    <td> 身份验证：连接问题<br /> </td> 
@@ -416,7 +442,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> unauthorized_client </td> 
    <td> 已忽略</td>
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：客户端未授权使用此方法检索访问令牌，或者客户端未授权任何请求的作用域。<br /> </td> 
@@ -424,7 +450,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> unauthorized_client </td> 
    <td> 已忽略</td>
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：拒绝访问<br /> </td> 
@@ -432,7 +458,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> access_denied</td> 
    <td> 已忽略</td>
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：无效电子邮件<br /> </td> 
@@ -440,7 +466,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> invalid_grant </td> 
    <td> 已忽略</td> 
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：JWT无效<br /> </td> 
@@ -448,7 +474,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> invalid_grant </td> 
    <td> 已忽略</td> 
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：JWT签名无效<br /> </td> 
@@ -456,7 +482,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> invalid_grant </td> 
    <td> 已忽略</td> 
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：提供的OAuth范围或ID令牌受众无效<br /> </td> 
@@ -464,7 +490,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> unauthorized_client</td> 
    <td> 已忽略</td> 
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr>
     <tr> 
    <td> 身份验证：已禁用OAuth客户端<br /> </td> 
@@ -472,7 +498,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> disabled_client</td> 
    <td> 已忽略</td> 
    <td> 已拒绝<br /> </td> 
-   <td> 未<br /> </td> 
+   <td> 否<br /> </td> 
   </tr>
  </tbody> 
 </table>
@@ -484,7 +510,8 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
 短信消息的隔离机制与常规过程在全局上相同。 请参阅 [关于隔离](#about-quarantines). 以下列出了短信的特性。
 
 >[!NOTE]
-的 **[!UICONTROL Delivery log qualification]** 表不适用于 **扩展通用SMPP** 连接器。
+>
+>的 **[!UICONTROL Delivery log qualification]** 表不适用于 **扩展通用SMPP** 连接器。
 
 <table> 
  <tbody> 
@@ -514,21 +541,21 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> 接收数据（SR或MO）时出错<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 不可访问<br /> </td> 
+   <td> 不可到达<br /> </td> 
   </tr> 
   <tr> 
    <td> 无效的MT确认<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 处理用于发送查询的确认帧时出错“{1}”<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 不可访问<br /> </td> 
+   <td> 不可到达<br /> </td> 
   </tr> 
   <tr> 
    <td> 发送MT时出错<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 发送消息时出错<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 不可访问<br /> </td> 
+   <td> 不可到达<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -542,8 +569,10 @@ SMPP连接器从SR（状态报告）消息中检索数据，该消息使用正�
 在鉴定新类型的错误之前，失败原因始终设置为 **已拒绝** 默认情况下。
 
 >[!NOTE]
-失败类型和失败原因与电子邮件相同。 请参阅 [投放失败类型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
-请向提供商提供状态和错误代码列表，以在投放日志鉴别表中设置正确的失败类型和失败原因。
+>
+>失败类型和失败原因与电子邮件相同。 请参阅 [投放失败类型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>
+>请向提供商提供状态和错误代码列表，以在投放日志鉴别表中设置正确的失败类型和失败原因。
 
 生成的消息示例：
 
