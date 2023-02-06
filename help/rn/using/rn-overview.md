@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
+source-git-commit: 1cc1568fe77cc5bbde88092b0e9108792e10fd71
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 90%
+source-wordcount: '934'
+ht-degree: 85%
 
 ---
 
@@ -67,7 +67,7 @@ Adobe Campaign Classic 专门使用一系列技术来为用户创造价值。这
 
 ### 我的组织为什么需要此升级？
 
-作为托管客户，如果已确定您的帐户需要升级一项或多项与 Campaign Classic 相关的技术，并更新当前内部版本和/或版本，Adobe 将直接通知您。
+作为托管客户，如果您的帐户被确定需要升级与Campaign Classic相关的一种或多种技术，并将您的基础架构升级到当前版本（例如从v7.2.1升级到v7.3.3）和/或版本（从v7到v8），则Adobe会直接通知您。
 
 作为在旧版本上运行的内部部署或混合部署客户，Adobe鼓励您转为使用最新的稳定版本(GA)。
 

@@ -5,9 +5,9 @@ description: 了解如何在Italia Online服务中断后更新退回资格
 feature: Deliverability
 hide: true
 hidefromtow: true
-source-git-commit: 3cf6ffb2b69d44b56615492dd9db8965ae3cf4e1
+source-git-commit: 0e6a46e4a0575fa5a300a952a6bb134f3426172e
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 ## 影响{#outage-impact}
 
-如果ISP发生中断，则无法成功将通过Campaign发送的电子邮件发送给其收件人：这些电子邮件将被错误地标记为退回。 这不仅影响Adobe，还影响到所有试图向Italia Online发送电子邮件的人。
+与大多数ISP中断时一样，通过Campaign发送的某些电子邮件错误地标记为退回。 这不仅影响了Adobe，而且在停机期间，所有试图向Italia Online发送电子邮件的人。
 
-症状包括：
+症状为：
 
-* **延期退回** 消息 `452 requested action aborted: try again later` 正在观察 — 这些操作将自动重试，无需执行任何操作。 当ISP恢复完整容量时，应该会有所改进。
+* **延期退回** 消息 `452 requested action aborted: try again later`  — 自动重试这些操作，无需执行任何操作。
 
 * **硬退回** 消息 `550 <email address> recipient rejected` ISP已于当地时间1月26日早8点至晚2点返回，以防止发送方继续使其服务器过载。 正如意大利在线邮递员所确认的，这些地址并非真正的硬退回，因此我们建议取消对因该邮件而于2023年1月26日被排除的所有电子邮件地址的隔离。
 
