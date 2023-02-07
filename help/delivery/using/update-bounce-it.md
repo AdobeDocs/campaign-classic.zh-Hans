@@ -4,8 +4,8 @@ title: 在Italia Online中断后更新退件资格
 description: 了解如何在Italia Online服务中断后更新退回资格
 feature: Deliverability
 hide: true
-hidefromtow: true
-source-git-commit: 0e6a46e4a0575fa5a300a952a6bb134f3426172e
+hidefromtoc: true
+source-git-commit: 3fa54f83ee6a119a4566866933aaee20ec378e91
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
