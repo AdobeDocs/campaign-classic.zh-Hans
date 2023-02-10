@@ -4,10 +4,10 @@ title: 集成Campaign SDK
 description: 了解如何将Campaign SDK集成到移动应用程序
 feature: Mobile SDK Integration, Push
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 0ae52b00f69298e001596583fe166771faddead2
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 1%
+source-wordcount: '1010'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->要获取Campaign SDK（以前称为Neolane SDK），请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}。
+>要获取Campaign SDK（以前称为Neolane SDK），请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
 
@@ -27,9 +27,9 @@ SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
 
 >[!NOTE]
 >
->您还可以通过在Launch中配置Adobe Experience Platform扩展来使用Adobe Campaign Mobile SDK。 [在Adobe Experience Platform文档中了解详情](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target=&quot;_blank&quot;}。
+>您还可以通过在Launch中配置Adobe Experience Platform扩展来使用Adobe Campaign Mobile SDK。 [在Adobe Experience Platform文档中了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 >
->了解如何配置和安装Adobe Experience Platform Mobile SDK [在此视频中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=en){target=&quot;_blank&quot;}。
+>了解如何配置和安装Adobe Experience Platform Mobile SDK [在此视频中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=en){target="_blank"}.
 
 ## 加载Campaign SDK {#loading-campaign-sdk}
 

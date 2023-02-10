@@ -4,10 +4,10 @@ title: 配置Campaign短信渠道
 description: 了解如何在Campaign中配置短信渠道
 feature: SMS
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 0ae52b00f69298e001596583fe166771faddead2
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 35%
+source-wordcount: '1722'
+ht-degree: 34%
 
 ---
 
@@ -28,6 +28,10 @@ ht-degree: 35%
 > 对于短信投放，分类应使用在中创建的特定短信亲和度 **one** 专用应用程序服务器容器。 [了解详情](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 ## 创建SMPP外部帐户 {#creating-an-smpp-external-account}
+
+>[!IMPORTANT]
+>
+>对多个外部短信帐户使用相同的帐户和密码可能会导致帐户之间发生冲突和重叠。 请参阅 [短信疑难解答页面](troubleshooting-sms.md#external-account-conflict).
 
 要向手机发送短信，您首先需要创建SMPP外部帐户。
 有关短信协议和设置的更多信息，请参阅此 [页面](sms-protocol.md).
@@ -118,9 +122,9 @@ ht-degree: 35%
    <td> <img height="21px" src="assets/delta.png" /> </td> 
    <td> SP </td> 
    <td> 0 </td> 
-   <td> recomplend </td> 
+   <td> ¡ </td> 
    <td> P </td> 
-   <td> - </td> 
+   <td> ¿ </td> 
    <td> p </td> 
   </tr> 
   <tr> 
@@ -156,7 +160,7 @@ ht-degree: 35%
   <tr> 
    <td> è </td> 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
-   <td> 悠悠 </td> 
+   <td> ¤ </td> 
    <td> 4 </td> 
    <td> D </td> 
    <td> T </td> 
