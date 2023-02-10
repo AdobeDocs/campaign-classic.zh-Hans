@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
+source-git-commit: 985c0f170b8a56d7cdf76779ed9581832da301b1
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2532'
 ht-degree: 99%
 
 ---
@@ -832,7 +832,6 @@ ht-degree: 99%
       + [Apple iOS 上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
       + [如何更新错误的硬退回](delivery/using/update-bounce-qualification.md)
       + [在ISP中断后更新错误硬退回](delivery/using/update-bounces.md)
-      + [在意大利在线服务中断后更新错误硬退回](delivery/using/update-bounce-it.md)
       + [iOS 证书更新](technotes/using/ios-certificate-update.md)
       + [跟踪的 URL 更新](technotes/using/tracked-urls.md)
    + 迁移到 Adobe Managed Services{#dc-migration}
