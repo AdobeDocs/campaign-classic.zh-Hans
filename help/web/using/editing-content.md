@@ -4,7 +4,7 @@ title: 编辑内容
 description: 编辑内容
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 7f5770c5181b4f2e966d8ecfe6b1d4b9c764e5fa
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -221,9 +221,9 @@ ht-degree: 1%
 
 ![](assets/dce_popup_imgupload.png)
 
-的 **删除** 图标删除 ![]() 标记。
+的 **删除** 图标会删除包含图像的标记。
 
-的 **复制** 图标会复制 ![]() 标记及其内容。
+的 **复制** 图标会复制标记及其内容。
 
 >[!CAUTION]
 >

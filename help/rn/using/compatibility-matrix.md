@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 76218abd198f677541338c7f854d047d2c644013
+source-git-commit: 84c6dacb96bd0853be9eaef0dfa7e36116f8a46a
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 94%
+source-wordcount: '779'
+ht-degree: 89%
 
 ---
 
@@ -322,8 +322,6 @@ ht-degree: 94%
 
 
 
-
-
 ## 客户端控制台 {#ClientConsoleoperatingsystems}
 
 **必须**&#x200B;配备以下操作系统和浏览器，才能使用 [Campaign 客户端控制台](../../installation/using/installing-the-client-console.md)。
@@ -337,7 +335,7 @@ ht-degree: 94%
 <td>Microsoft Windows</td>
 <td>
 <p>11（从 Campaign v7.3 开始）</p>
-<p>10（建议用于日语实例）</p>
+<p>10</p>
 <p>8</p>
 </td>
 </tr>
@@ -353,22 +351,10 @@ ht-degree: 94%
 
 ### Microsoft WebView2 运行时
 
-<table>
-<tbody>
-<tr>
-<td>
-<p>Microsoft Edge WebView2 运行时
-</p>
-</td>
-<td>
-<p>最新版本</p>
-</td>
-<td>
-<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn">从 Microsoft 开发人员网站下载</a></p>
-</td>
-</tr>
-</tbody>
-</table>
+Microsoft Edge WebView2 运行时 对于Campaign客户端控制台，必须安装最新版本。
+
+从下载Microsoft Edge WebView2 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn).
+
 
 ## 移动 SDK{#MobileSDK}
 
@@ -377,14 +363,14 @@ ht-degree: 94%
 <table>
 <tbody>
 <tr>
-<td>Android</td>
+<td>Google Android</td>
 <td>
 <p>12（从 Campaign v7.3 开始）、9.0、8.x、7.x</p>
 <p>带有移动 SDK 内部版本 1.1.1</p>
 </td>
 </tr>
 <tr>
-<td>iOS</td>
+<td>AppleiOS</td>
 <td>
 <p>iOS 9 - 15</p>
 <p>带有移动 SDK 内部版本 1.0.26，与 32 位和 64 位版本兼容。从 Campaign v7.3 开始支持 iOS 15</p>
@@ -395,46 +381,13 @@ ht-degree: 94%
 
 ## 浏览器{#Browsers}
 
-以下浏览器与 Campaign 兼容，可用于进行 [Web 访问](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-)。
+以下浏览器在其最新版本中与Campaign兼容， [Web访问](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
-<table>
-<tbody>
-<tr>
-<td>
-<p>Microsoft Edge</p>
-</td>
-<td>
-<p>最新版本</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Mozilla Firefox</p>
-</td>
-<td>
-<p>最新版本</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Google Chrome</p>
-</td>
-<td>
-<p>最新版本</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Safari</p>
-</td>
-<td>
-<p>最新版本</p>
-</td>
-</tr>
+* Google Chrome
+* Microsoft Edge
+* Mozilla Firefox
+* Safari
 
-</tr>
-</tbody>
-</table>
 
 
 ## 更多此类内容{#Morelikethis}
