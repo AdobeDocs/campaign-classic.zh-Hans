@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8391df5046d56edfb33de5eb9f2afb4738108791
+source-git-commit: 2654157b02b549d4184ed6a5a93acad47e452713
 workflow-type: tm+mt
-source-wordcount: '2771'
+source-wordcount: '2772'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ _2022 年 11 月 21 日_
 
 * 在 Microsoft Internet Explorer 11 的生命周期终止后，客户端控制台中仪表板的 HTML 渲染引擎现在使用的是 Edge Chromium。(NEO-20741)
 
-请参阅 [Campaign 兼容性矩阵](../../rn/using/compatibility-matrix.md#RDBMSservers)。
+在 [Campaign 兼容性矩阵](../../rn/using/compatibility-matrix.md#RDBMSservers)中了解详情。
 
 **改进**
 
