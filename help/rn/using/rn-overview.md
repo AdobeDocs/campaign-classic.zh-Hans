@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 1cc1568fe77cc5bbde88092b0e9108792e10fd71
-workflow-type: ht
-source-wordcount: '934'
-ht-degree: 100%
+source-git-commit: f797aafac99d6b9c2bdb409a1d0883c889fd3b0e
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -51,9 +51,9 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 
 ## 升级流程{#process-upgrade}
 
-作为托管客户（托管服务或混合），请联系客户关怀团队以升级环境。
+作为托管、Managed Services或混合型客户，请联系Adobe客户关怀团队以升级您的环境。
 
-作为内部部署用户，您可以执行升级。为此，请[下载最新的稳定版本 (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 并升级所有环境。
+作为内部部署客户，您可以执行升级。 为此，请[下载最新的稳定版本 (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 并升级所有环境。
 
 了解有关[升级过程](../../production/using/build-upgrade.md)的更多信息，并请参阅[内部版本升级常见问题](../../platform/using/faq-build-upgrade.md)。
 
@@ -67,7 +67,7 @@ Adobe Campaign Classic 专门使用一系列技术来为用户创造价值。这
 
 ### 我的组织为什么需要此升级？
 
-作为托管客户，如果您的帐户被识别为需要升级 Campaign Classic 的一种或多种技术，并且需将基础架构升级到当前版本（例如从 v7.2.1 升级到 v7.3.3）和/或从 v7 版升级到 v8 版，Adobe 会直接通知您。
+作为托管客户，如果已确定您的帐户需要升级一项或多项与Campaign Classic相关的技术，并将您的基础架构升级到当前内部版本（例如从v7.2.1到v7.3.3）和/或版本（例如从v7到v8），则Adobe会直接通知您。
 
 对于在旧版本上运行的内部部署或混合型客户，Adobe 建议您迁移到稳定的最新版本 (GA)。
 
@@ -77,7 +77,7 @@ Adobe Campaign Classic 专门使用一系列技术来为用户创造价值。这
 
 Adobe 团队将引导和指导您的组织完成这一过程。
 
-一支由专职客户关怀代表、产品经理、工程师和技术运营专家以及产品顾问组成的团队将为您提供帮助并确保实现流畅的体验。
+一支由专业的客户关怀代表、产品经理、工程师和技术运营专家以及产品顾问组成的团队将为您提供帮助并确保实现流畅的体验。
 
 ### 好处
 
