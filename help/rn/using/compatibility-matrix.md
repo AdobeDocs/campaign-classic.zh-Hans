@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 84c6dacb96bd0853be9eaef0dfa7e36116f8a46a
+source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '781'
 ht-degree: 89%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 89%
 <td>
 <p>7.x</p>
 <p><strong>重要说明：</strong>如果您使用的是 RHEL，则必须愿意禁用 SELinux，或者让架构师编写自定义 SELinux 规则来检查已启用的 SELinux 是否不会导致 Campaign 操作问题。</p>
-<p>8.x</br><strong>重要信息：</strong> CentOS Linux 8将于2021年12月31日终止生命周期(EOL)。 有关更多信息，请参阅<a href="../../rn/using/deprecated-features.md">已弃用的功能</a>页面。</p>
+<p>8.x</br><strong>重要提示：</strong> CentOS Linux 8将于2021年12月31日终止生命周期(EOL)。 有关更多信息，请参阅<a href="../../rn/using/deprecated-features.md">已弃用的功能</a>页面。</p>
 </td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ ht-degree: 89%
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>Campaign支持由Oracle和OpenJDK开发的Java开发工具包(JDK)。</p>
+<p>Campaign支持由Oracle开发的Java开发工具包(JDK)和OpenJDK。</p>
 </td>
 </tr>
 <tr>
@@ -248,7 +248,7 @@ ht-degree: 89%
 </tr>
 <tr><td>MySQL</td>
 <td>
-<p>8（从 Campaign v7.3 开始）</p>
+<p>8</p>
 <p>5.7</p>
 </td>
 <td>
@@ -271,7 +271,12 @@ ht-degree: 89%
 <p>12c</p>
 <p>11g</p>
 </td>
-<td>最低版本为 7.0</td>
+<td>
+<p>最低版本为 7.0</p>
+<p></p>
+<p></p>
+<p></p>
+</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
@@ -330,28 +335,38 @@ ht-degree: 89%
 
 <table>
 <tbody>
-</tr>
+<td><strong>系统</strong></td>
+<td><strong>操作系统版本</strong></td>
+<td><strong>Campaign 版本</strong></td>
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>11（从 Campaign v7.3 开始）</p>
+<p>11</p>
 <p>10</p>
 <p>8</p>
 </td>
+<td>
+<p>最低版本为 7.3</p>
+<p></p>
+<p></p>
 </tr>
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2019（从 Campaign v7.2.1 开始）</p>
+<p>2019</p>
 <p>2016</p>
 <p>2012</p>
 </td>
+<td>
+<p>最低版本为 7.2.1</p>
+<p></p>
+<p></p>
 </tbody>
 </table>
 
 ### Microsoft WebView2 运行时
 
-Microsoft Edge WebView2 运行时 对于Campaign客户端控制台，必须安装最新版本。
+Microsoft Edge WebView2 运行时 最新版本是Campaign客户端控制台的必需版本。
 
 从下载Microsoft Edge WebView2 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn).
 
@@ -370,7 +385,7 @@ Microsoft Edge WebView2 运行时 对于Campaign客户端控制台，必须安�
 </td>
 </tr>
 <tr>
-<td>AppleiOS</td>
+<td>Apple iOS</td>
 <td>
 <p>iOS 9 - 15</p>
 <p>带有移动 SDK 内部版本 1.0.26，与 32 位和 64 位版本兼容。从 Campaign v7.3 开始支持 iOS 15</p>
@@ -381,7 +396,7 @@ Microsoft Edge WebView2 运行时 对于Campaign客户端控制台，必须安�
 
 ## 浏览器{#Browsers}
 
-以下浏览器在其最新版本中与Campaign兼容， [Web访问](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+以下浏览器在其最新版本中与Campaign for兼容 [Web访问](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 * Google Chrome
 * Microsoft Edge
