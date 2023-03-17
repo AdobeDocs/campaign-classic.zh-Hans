@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 02ab5f4520179fcce8eedbe3dcc7b08cb9cfe0d2
 workflow-type: tm+mt
 source-wordcount: '2989'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -23,33 +23,33 @@ ht-degree: 93%
 
 >[!CAUTION]
 >
-> 此版本目前仅适用于“托管Cloud Services”用户，并且很快将可用于内部部署和混合部署。
+> 此版本目前仅适用于受管Cloud Services用户，不久将可用于内部部署和混合部署。
 >
 >必须升级客户端控制台。在[此页面](../../installation/using/installing-the-client-console.md)中了解如何升级您的客户端控制台。
 
 >[!NOTE]
 >
->此版本仅对托管Cloud Services用户正式发布。
+>此版本仅对托管Cloud Services用户为GA版。
 
 _2023 年 3 月 9 日_
 
 **安全性增强**
 
-* 为了优化安全性，已将Tomcat从版本8.5.81更新到8.5.85。 (NEO-56936)
+* 为了优化安全性，Tomcat已从8.5.81版更新到8.5.85版。 (NEO-56936)
 
 **改进**
 
-* 已改进计费工作流以优化性能。 (NEO-47658)
-* 跟踪工作流已得到改进，可在投放规模较大时优化性能。 (NEO-45064)
-* 跟踪管理已得到改进，以修复URL中动态参数可能存在的问题。 跟踪管理v3现在处理ajax类型URL（使用“#”后面的参数），并阻止第三方工具修改跟踪URL。 要应用此更改，您需要联系Adobe。 (NEO-46535)
+* 账单工作流程已得到改进，可优化性能。 (NEO-47658)
+* 改进了跟踪工作流，以在投放大小较高时优化性能。 (NEO-45064)
+* 已改进跟踪管理，以修复URL中动态参数可能存在的问题。 跟踪管理v3现在可以处理ajax类型URL（在“#”后面带有参数）并阻止第三方工具修改跟踪URL。 要应用此更改，您需要联系Adobe。 (NEO-46535)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
 **修补程序**
 
-* 修复了可能阻止从控制实例（事务性消息上下文）发送iOS验证推送通知的问题。 (NEO-54713)
-* 修复了可能阻止您在中滚动的问题 **编辑** 数字内容编辑器(DCE)的选项卡。 (NEO-54474)
-* 修复了以下问题：当两个扩充活动在其链接中使用相同的名称标识符时，导致第二个扩充活动使用第一个扩充活动的链接。 (NEO-48851)
+* 修复了可能阻止从控制实例（事务型消息传递上下文）发送iOS校样推送通知的问题。 (NEO-54713)
+* 修复了可能导致无法在数字内容编辑器 (DCE) 的&#x200B;**编辑**&#x200B;选项卡中滚动的问题。(NEO-54474)
+* 修复了两个扩充活动在其链接中使用相同名称标识符时导致第二个扩充活动使用第一个活动的链接的问题。 (NEO-48851)
 
 ## ![](assets/do-not-localize/green.png) 7.3.2 版 - 内部版本 9356 {#release-7-3-2}
 
@@ -61,7 +61,7 @@ _2022 年 11 月 21 日_
 
 >[!NOTE]
 >
->此版本正式发布仅用于内部部署和混合部署。
+>此版本仅适用于内部部署和混合部署的GA。
 
 **兼容性更新**
 

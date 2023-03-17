@@ -4,32 +4,28 @@ title: 集成Campaign SDK
 description: 了解如何将Campaign SDK集成到移动应用程序
 feature: Mobile SDK Integration, Push
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: 0ae52b00f69298e001596583fe166771faddead2
+source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
 
 # 将Campaign SDK与您的应用程序集成 {#integrating-campaign-sdk-into-the-mobile-application}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
-适用于iOS和Android的Campaign SDK是移动设备应用程序渠道模块的组件之一。
 
 >[!NOTE]
 >
->要获取Campaign SDK（以前称为Neolane SDK），请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
+>Adobe建议通过在数据收集UI中配置Adobe Campaign扩展来使用Adobe Experience Platform Mobile SDK。 Adobe Experience Platform Mobile SDK可帮助在您的移动设备应用程序中为Adobe的Experience Cloud解决方案和服务提供支持。 SDK配置通过数据收集UI进行管理，以实现灵活配置和基于规则的可扩展集成。 [在Adobe Developer文档中了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
-SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
+适用于iOS和Android的Campaign SDK是移动设备应用程序渠道模块的组件之一。 SDK的目标是促进将移动应用程序集成到Adobe Campaign平台。
+
+要获取Campaign SDK（以前称为Neolane SDK），请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 要了解有关支持的不同Android和iOS版本的更多信息，请参阅 [兼容性矩阵](../../rn/using/compatibility-matrix.md#MobileSDK).
 
->[!NOTE]
->
->您还可以通过在Launch中配置Adobe Experience Platform扩展来使用Adobe Campaign Mobile SDK。 [在Adobe Experience Platform文档中了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
->
->了解如何配置和安装Adobe Experience Platform Mobile SDK [在此视频中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=en){target="_blank"}.
 
 ## 加载Campaign SDK {#loading-campaign-sdk}
 

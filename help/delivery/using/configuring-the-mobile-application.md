@@ -4,9 +4,9 @@ title: 在Adobe Campaign中配置iOS移动应用程序
 description: 了解如何为iOS设置移动应用程序
 feature: Push
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '651'
 ht-degree: 6%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->必须在将应用程序集成到Adobe Campaign SDK之前，为推送操作配置了应用程序。
+>在与AdobeSDK进行任何集成之前，必须为应用程序配置推送操作。
 >
 >如果情况并非如此，请参阅 [本页](https://developer.apple.com/documentation/usernotifications).
 
