@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 02ab5f4520179fcce8eedbe3dcc7b08cb9cfe0d2
+source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
 workflow-type: tm+mt
-source-wordcount: '2989'
-ht-degree: 94%
+source-wordcount: '2947'
+ht-degree: 95%
 
 ---
 
@@ -23,15 +23,9 @@ ht-degree: 94%
 
 >[!CAUTION]
 >
-> 此版本目前仅适用于受管Cloud Services用户，不久将可用于内部部署和混合部署。
->
 >必须升级客户端控制台。在[此页面](../../installation/using/installing-the-client-console.md)中了解如何升级您的客户端控制台。
 
->[!NOTE]
->
->此版本仅对托管Cloud Services用户为GA版。
-
-_2023 年 3 月 9 日_
+_2023 年 3 月 20 日_
 
 **安全性增强**
 
@@ -51,17 +45,13 @@ _2023 年 3 月 9 日_
 * 修复了可能导致无法在数字内容编辑器 (DCE) 的&#x200B;**编辑**&#x200B;选项卡中滚动的问题。(NEO-54474)
 * 修复了两个扩充活动在其链接中使用相同名称标识符时导致第二个扩充活动使用第一个活动的链接的问题。 (NEO-48851)
 
-## ![](assets/do-not-localize/green.png) 7.3.2 版 - 内部版本 9356 {#release-7-3-2}
+## ![](assets/do-not-localize/orange_2.png) 7.3.2 版 - 内部版本 9356 {#release-7-3-2}
 
 _2022 年 11 月 21 日_
 
 >[!CAUTION]
 >
 >必须升级客户端控制台。在[此页面](../../installation/using/installing-the-client-console.md)中了解如何升级您的客户端控制台。
-
->[!NOTE]
->
->此版本仅适用于内部部署和混合部署的GA。
 
 **兼容性更新**
 
