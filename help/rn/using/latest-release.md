@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
 workflow-type: tm+mt
 source-wordcount: '2947'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,21 +29,21 @@ _2023 年 3 月 20 日_
 
 **安全性增强**
 
-* 为了优化安全性，Tomcat已从8.5.81版更新到8.5.85版。 (NEO-56936)
+* 为了优化安全性，已将 Tomca 版本从 8.5.81 更新到 8.5.85。(NEO-56936)
 
 **改进**
 
-* 账单工作流程已得到改进，可优化性能。 (NEO-47658)
-* 改进了跟踪工作流，以在投放大小较高时优化性能。 (NEO-45064)
-* 已改进跟踪管理，以修复URL中动态参数可能存在的问题。 跟踪管理v3现在可以处理ajax类型URL（在“#”后面带有参数）并阻止第三方工具修改跟踪URL。 要应用此更改，您需要联系Adobe。 (NEO-46535)
+* 改进了计费工作流以优化性能。(NEO-47658)
+* 改进了跟踪工作流程，从而优化在投放大小较高时的性能。(NEO-45064)
+* 改进了跟踪管理，以修复 URL 中动态参数可能存在的问题。跟踪管理 v3 现在可以处理 AJAX 类型的 URL（在“#”后面带有参数）并可阻止第三方工具修改跟踪 URL。要应用此更改，请联系 Adobe。(NEO-46535)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
 **修补程序**
 
-* 修复了可能阻止从控制实例（事务型消息传递上下文）发送iOS校样推送通知的问题。 (NEO-54713)
+* 修复了一个可能导致无法从控制实例（事务性消息传递上下文）发送 iOS 验证推送通知的问题。(NEO-54713)
 * 修复了可能导致无法在数字内容编辑器 (DCE) 的&#x200B;**编辑**&#x200B;选项卡中滚动的问题。(NEO-54474)
-* 修复了两个扩充活动在其链接中使用相同名称标识符时导致第二个扩充活动使用第一个活动的链接的问题。 (NEO-48851)
+* 修复了两个扩充活动在其链接中使用相同名称标识符时导致第二个扩充活动使用第一个活动的链接的问题。(NEO-48851)
 
 ## ![](assets/do-not-localize/orange_2.png) 7.3.2 版 - 内部版本 9356 {#release-7-3-2}
 
