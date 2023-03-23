@@ -7,7 +7,7 @@ exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 1%
+ht-degree: 13%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ac_workflow_intersection"
 >title="交集活动"
->abstract="“交集”类型活动从接收目标的交集创建目标。 利用交集，可仅提取所有集客活动结果共有的群体。"
+>abstract="交集类型活动从收到的目标的交集创建目标。交集允许您仅提取所有入站活动结果共有的群体。"
 >additional-url="https://video.tv.adobe.com/v/329373" text="观看演示视频"
 
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 安 **交集**-type活动从接收目标的交集创建目标。
 
-利用交集，可仅提取所有集客活动结果共有的群体。 将创建目标，并收到所有结果：因此，在执行交集之前，必须先完成所有之前的活动。 要配置此活动，您需要为其输入标签以及与结果相关的选项。
+交集允许您仅提取所有入站活动结果共有的群体。将创建目标，并收到所有结果：因此，在执行交集之前，必须先完成所有之前的活动。 要配置此活动，您需要为其输入标签以及与结果相关的选项。
 
 ![](assets/s_user_segmentation_inter.png)
 
