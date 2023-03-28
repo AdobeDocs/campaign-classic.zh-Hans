@@ -4,7 +4,7 @@ title: 创建种子地址
 description: 了解如何创建和使用种子地址
 feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -32,11 +32,11 @@ Adobe Campaign还允许您创建种子地址模板，这些模板可导入投放
    >
    >地址的标签会自动填写您定义的姓氏和名字。
    >
-   >创建种子地址时，无需输入每个选项卡的所有字段。 投放期间会随机输入任何缺失的个性化元素。
+   >创建种子地址时，您无需输入每个选项卡的所有字段。 在投放分析期间会随机输入缺少的个性化元素。
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
-1. 在 **[!UICONTROL Seed fields]** ，输入分析阶段期间将插入投放日志的值(在 **[!UICONTROL nms:broadLog]** 表)。
+1. 在 **[!UICONTROL Address fields]** ，输入分析阶段期间将插入投放日志的值(在 **[!UICONTROL nms:broadLog]** 表)。
 
 1. 在 **[!UICONTROL Additional data]** 选项卡，输入在数据管理工作流中创建的要为其分配特定值的投放所使用的个性化数据。
 
