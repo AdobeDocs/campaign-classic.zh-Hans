@@ -3,7 +3,7 @@ product: campaign
 title: 技术说明 — 更新您的环境以使用IMS连接到Adobe Campaign。
 description: 营销活动 — IMS更新
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
+source-git-commit: bdccc4ee7cbb8c765d488879f99677b2302d32e7
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 9%
@@ -14,7 +14,7 @@ ht-degree: 9%
 
 ![](../../assets/v7-only.svg)
 
-2021年6月30日，对 [AdobeIdentity Management系统](https://helpx.adobe.com/enterprise/using/identity.html) (IMS)登录功能，可能会影响您继续使用Adobe Campaign的能力。 了解如何确保您继续使用Adobe Campaign Classic v7而不中断。
+于2021年6月30日，对 [AdobeIdentity Management系统](https://helpx.adobe.com/enterprise/using/identity.html) (IMS)登录功能，可能会影响您继续使用Adobe Campaign的能力。 了解如何确保您继续使用Adobe Campaign Classic v7而不中断。
 
 ## 更改了哪些内容？
 
