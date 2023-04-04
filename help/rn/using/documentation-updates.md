@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
+source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
 workflow-type: tm+mt
-source-wordcount: '4994'
-ht-degree: 100%
+source-wordcount: '3577'
+ht-degree: 99%
 
 ---
 
@@ -21,9 +21,21 @@ ht-degree: 100%
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
-## 2022
+## 2023
 
-### 2022 年 11 月 {#nov-2022}
+### 2023 年 4 月
+
+添加了有关如何在内部部署/混合环境中启用Microsoft Edge Chromium的技术说明。 [了解更多信息](../../technotes/using/edge-chromium.md)
+
+### 2023 年 3 月
+
+更新了“发行说明”部分，更新内容是 7.3.3 版本的改进和修补程序。[了解更多信息](latest-release.md)
+
+
++++ 2022
+
+
+## 2022 年 11 月 {#nov-2022}
 
 更新了“发行说明”部分，更新内容是 7.3.2 版本的改进和修补程序。[了解更多信息](latest-release.md)
 
@@ -36,7 +48,7 @@ ht-degree: 100%
 迁移指南已更新。已移除对不支持的 Adobe Campaign 版本的引用。[了解更多信息](../../migration/using/about-migration.md)
 
 
-### 2022 年 7 月 {#july-2022}
+## 2022 年 7 月 {#july-2022}
 
 有关过渡到新的可交付性服务器的详情，请参阅新技术说明。[了解更多信息](../../technotes/using/deliverability-server.md)
 
@@ -49,7 +61,7 @@ ht-degree: 100%
 iOS 15 的时效性通知。[了解更多信息](../../delivery/using/create-notifications-ios.md)
 
 
-### 2022 年 3 月 {#mar-2022}
+## 2022 年 3 月 {#mar-2022}
 
 添加了对 **[!UICONTROL Test SMTP delivery]** 选项的详细说明。[了解更多信息](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
@@ -61,7 +73,7 @@ iOS 15 的时效性通知。[了解更多信息](../../delivery/using/create-not
 
 生命周期已终止的旧版 PostgreSQL 已添加至[已弃用和删除的功能](../../rn/using/deprecated-features.md#dbe-eol)页面。
 
-### 2022 年 2 月 {#february-2022}
+## 2022 年 2 月 {#february-2022}
 
 更新了&#x200B;**文件传输**&#x200B;活动一节，提醒用户手动监测 SFTP 目录中已存档内容的大小，以防未选择 **Delete the source files after transfer** 选项。[了解更多信息](../../workflow/using/file-transfer.md#properties)
 
@@ -73,7 +85,7 @@ iOS 15 的时效性通知。[了解更多信息](../../delivery/using/create-not
 
 添加了有关如何阻止循环投放在营销活动中运行的信息。[了解更多信息](../../workflow/using/recurring-delivery.md)
 
-### 2022 年 1 月 {#january-2022}
+## 2022 年 1 月 {#january-2022}
 
 **随 7.2.1 版提供的文档更新**
 
@@ -93,9 +105,11 @@ iOS 15 的时效性通知。[了解更多信息](../../delivery/using/create-not
 
 在 CRM 连接器活动中增加了批量更新选项。[了解更多信息](../../workflow/using/crm-connector.md)
 
-## 2021
++++
 
-### 2021 年 12 月{#dec-2021}
++++ 2021
+
+## 2021 年 12 月{#dec-2021}
 
 Campaign Classic v7 发行说明已重新组织以简化导航。[了解更多信息](rn-overview.md)
 
@@ -103,7 +117,7 @@ Campaign Classic v7 发行说明已重新组织以简化导航。[了解更多�
 
 CentOs 8 的生命周期已终止，现已在 Adobe Campaign Classic 中弃用。[了解更多信息](deprecated-features.md)
 
-### 2021 年 11 月{#nov-2021}
+## 2021 年 11 月{#nov-2021}
 
 添加了有关传入短信 (MO) 的限制。[了解更多信息](../../delivery/using/sms-protocol.md#multipart)
 
@@ -120,13 +134,13 @@ CentOs 8 的生命周期已终止，现已在 Adobe Campaign Classic 中弃用�
 添加了在工作流中实施 JavaScript 代码的示例。[了解更多信息](../../workflow/using/javascript-in-workflows.md)
 
 
-### 2021 年 10 月{#oct-2021}
+## 2021 年 10 月{#oct-2021}
 
 现有技术说明已分组到新的&#x200B;**技术说明**&#x200B;部分。
 
 更新了&#x200B;**硬件大小调整建议**&#x200B;页面并将其添加到了&#x200B;**技术说明**&#x200B;部分。[阅读更多](../../technotes/using/hardware-sizing.md)
 
-### 2021 年 9 月{#sept-2021}
+## 2021 年 9 月{#sept-2021}
 
 **随 21.1.4 版提供的文档更新**
 
@@ -136,7 +150,7 @@ CentOs 8 的生命周期已终止，现已在 Adobe Campaign Classic 中弃用�
 
 更新了[计费技术工作流](../../production/using/monitoring-processes.md#billing-report)的描述，并新增了护栏。
 
-### 2021 年 8 月{#aug-2021}
+## 2021 年 8 月{#aug-2021}
 
 添加了新的工作流活动：更改数据源 - [了解详情](../../workflow/using/change-data-source.md)
 
@@ -145,12 +159,12 @@ CentOs 8 的生命周期已终止，现已在 Adobe Campaign Classic 中弃用�
 添加了有关 Campaign 与 AEM Assets 之间集成的注释，该集成已从 Adobe Experience Manager 6.4 开始停用。 [了解详情](../../integrations/using/configuring-access-to-assets.md)
 
 
-### 2021 年 7 月 {#july-2021}
+## 2021 年 7 月 {#july-2021}
 
 [Campaign 21.1.3 版本](../../rn/using/latest-release.md#release-21-1-3-build-9330)已转为“一般可用性 (GA)”。
 
 
-### 2021 年 6 月 {#june-2021}
+## 2021 年 6 月 {#june-2021}
 
 **事务性消息传递**&#x200B;部分经过了重新组织，并通过新的“入门”部分进行了说明，包括[增强模式](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，从而帮助更好地了解该流程。[阅读更多](../../message-center/using/about-transactional-messaging.md)
 
@@ -166,7 +180,7 @@ LINE 渠道增强 - [了解详情](../../delivery/using/line-channel.md)
 
 “计费 (billing)”技术工作流描述现在包括原来由“活跃计费用户档案数 (billingActiveContactCount)”执行的任务。[阅读更多](../../workflow/using/about-technical-workflows.md)
 
-### 2021 年 5 月 {#may-2021}
+## 2021 年 5 月 {#may-2021}
 
 已更新和改进工作流热图报表文档。[阅读更多](../../workflow/using/heatmap.md)
 
@@ -176,13 +190,13 @@ LINE 渠道增强 - [了解详情](../../delivery/using/line-channel.md)
 
 已创建有关跟踪 URL 签名问题的新技术说明。[阅读更多](../../technotes/using/tracked-urls.md)
 
-### 2021 年 4 月 {#april-2021}
+## 2021 年 4 月 {#april-2021}
 
 新增的一个小节介绍了如何使用 Adobe Experience Platform Sources 与 Destinations 在 Campaign Classic 和 Adobe 实时客户数据平台 (RTCDP) 之间共享数据。[阅读更多](../../integrations/using/get-started-sources-destinations.md)
 
 已创建一条新的技术说明，以说明如何在 ISP 中断后更新弹回限定条件。[阅读更多](../../delivery/using/update-bounce-qualification.md)
 
-### 2021 年 3 月 {#march-2021}
+## 2021 年 3 月 {#march-2021}
 
 [短信入门部分](../../delivery/using/sms-channel.md)已重新组织和完善。您现在可以在专门章节中学习如何[配置短信渠道](../../delivery/using/sms-set-up.md)、[创建短信](../../delivery/using/sms-create.md)、[发送和跟踪短信](../../delivery/using/sms-send.md)。
 
@@ -203,7 +217,7 @@ Campaign Classic 的“帮助和支持选项”页面已集成到核心文档中
 
 [可投放性](../../delivery/using/about-deliverability.md)部分已更新，现包括指向新的 [Adobe 可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)的链接。所有与适用于各种 Adobe 解决方案的可投放性相关的一般信息均已移至[最佳实践指南附录](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans#additional-resources)。
 
-### 2021 年 2 月 {#release-21.1}
+## 2021 年 2 月 {#release-21.1}
 
 **随 21.1 版提供的文档更新**
 
@@ -229,7 +243,7 @@ Campaign Classic 的“帮助和支持选项”页面已集成到核心文档中
 
 新增了有关如何在电子邮件中添加可个性化并支持跟踪的链接的信息。[阅读更多](../../delivery/using/tracking-personalized-links.md)。
 
-### 2021 年 1 月 {#jan-2021}
+## 2021 年 1 月 {#jan-2021}
 
 **[!UICONTROL Fork]** 活动部分已使用最佳实践进行了扩充。[阅读更多](../../workflow/using/fork.md)
 
@@ -247,14 +261,13 @@ Oracle On Demand API 现在作为与 Campaign 连接的 CRM 已弃用。[阅读�
 
 新增&#x200B;**导入和导出数据**&#x200B;部分，其中包含与工作流、数据压缩、加密和导入最佳实践相关的新页面。[阅读更多](../../platform/using/get-started-data-import-export.md)
 
++++
 
 
++++ 2020
 
 
-
-## 2020
-
-### 2020 年 12 月 {#dec-2020}
+## 2020 年 12 月 {#dec-2020}
 
 **投放监视**&#x200B;部分已重组为专题。[阅读更多](../../delivery/using/about-delivery-monitoring.md)
 
@@ -268,7 +281,7 @@ Oracle On Demand API 现在作为与 Campaign 连接的 CRM 已弃用。[阅读�
 
 向&#x200B;**事务性消息传递**&#x200B;部分中添加了注释，用于警告不得将事件文件夹设置为执行实例上的视图，以避免出现访问权限问题。[阅读更多](../../message-center/using/about-event-processing.md#event-collection)
 
-### 2020 年 11 月 {#nov-2020}
+## 2020 年 11 月 {#nov-2020}
 
 Campaign 数据模型概述已得到改进并重组。[阅读更多](../../configuration/using/about-data-model.md)。
 
@@ -288,7 +301,7 @@ Campaign 联合数据访问 (FDA) 文档已通过每个外部数据库配置的�
 
 新增了一个部分，其中列出有关隐私的常见问题解答。[阅读更多](../../platform/using/privacy-faq.md)
 
-### 2020 年 10 月 {#oct-2020}
+## 2020 年 10 月 {#oct-2020}
 
 **20.3 版本中包含的新功能**
 
@@ -325,7 +338,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 报告属性页面已重组并进行了丰富，以促进配置。[阅读更多](../../reporting/using/properties-of-the-report.md)
 
-### 2020 年 9 月 {#september-2020}
+## 2020 年 9 月 {#september-2020}
 
 已添加注释来指定“有效用户档案”计数仅适用于营销实例。[阅读更多](../../platform/using/about-profiles.md#active-profiles)
 
@@ -333,7 +346,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 已添加关于在投放中对种子地址使用额外数据的说明。[阅读更多](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
-### 2020 年 8 月 {#aug-2020}
+## 2020 年 8 月 {#aug-2020}
 
 通过专用部分了解与使用 Campaign 进行投放设计和发送相关的最佳实践。[阅读更多](../../delivery/using/delivery-best-practices.md)
 
@@ -372,7 +385,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 **[!UICONTROL AND-join]** 活动部分的内容中增加了有关其使用情况的更多信息和关于变量的使用说明。[了解更多信息](../../workflow/using/and-join.md)
 
-### 2020 年 7 月 {#july-2020}
+## 2020 年 7 月 {#july-2020}
 
 已向工作流用例中添加了有关如何使用增量查询自动更新列表的用例。[阅读更多](../../workflow/using/about-workflow-use-cases.md)
 
@@ -390,7 +403,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 已在 **[!UICONTROL Scheduler]** 活动部分中添加最佳实践。[阅读更多](../../workflow/using/scheduler.md)
 
-### 2020 年 6 月 {#june-2020}
+## 2020 年 6 月 {#june-2020}
 
 更新了“删除隔离地址”部分。这包括明确了地址会自动从隔离列表中删除的情况。[阅读更多](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
@@ -398,7 +411,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 Experience Cloud Triggers 和 Adobe Campaign Classic 集成页面已移至[此处](../../integrations/using/about-triggers.md)。
 
-### 2020 年 7 月 {#release-20-2}
+## 2020 年 7 月 {#release-20-2}
 
 **20.2 版本中包含的新功能**
 
@@ -430,7 +443,7 @@ Spam Assassin 安装部分已更新为新的安装文件名。[了解详情](../
 
 有关复制环境的部分已更新。[了解详情](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
-### 2020 年 5 月 {#may-2020}
+## 2020 年 5 月 {#may-2020}
 
 “监视投放能力”部分已移动和改进。[阅读更多](../../delivery/using/monitoring-deliverability.md)
 
@@ -442,7 +455,7 @@ Spam Assassin 安装部分已更新为新的安装文件名。[了解详情](../
 
 数据包最佳实践部分已移动并更新。[阅读更多](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
-### 2020 年 4 月 {#april-2020}
+## 2020 年 4 月 {#april-2020}
 
 联合数据访问 (FDA) 权限表已移至访问外部数据库 (FDA) 文档。[阅读更多](../../installation/using/remote-database-access-rights.md)
 
@@ -458,7 +471,7 @@ Spam Assassin 安装部分已更新为新的安装文件名。[了解详情](../
 
 Adobe Campaign 增强 MTA 文章已更新。现在只适用于 Campaign Classic。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)
 
-### 2020 年 3 月 {#march-2020}
+## 2020 年 3 月 {#march-2020}
 
 数据模型最佳实践已更新新的部分，包括[序列](../../configuration/using/data-model-best-practices.md#sequences)性能[和](../../configuration/using/data-model-best-practices.md#performance) 大表 [](../../configuration/using/data-model-best-practices.md#large-tables)。[阅读更多](../../configuration/using/data-model-best-practices.md)
 
@@ -472,7 +485,7 @@ Adobe Campaign 增强 MTA 文章已更新。现在只适用于 Campaign Classic�
 
 访问管理指南已更新，其中包含有关已命名权限的更多信息。[阅读更多](../../platform/using/access-management-named-rights.md)
 
-### 2020 年 2 月 {#february-2020}
+## 2020 年 2 月 {#february-2020}
 
 现在提供概述设计 Adobe Campaign 数据模型时最佳实践和主要建议的新部分。[阅读更多](../../configuration/using/data-model-best-practices.md)
 
@@ -484,7 +497,7 @@ Adobe Campaign 增强 MTA 文章已更新。现在只适用于 Campaign Classic�
 
 电子邮件存档部分已得到改进。[阅读更多](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
-### 2020 年 1 月 {#release-20-1}
+## 2020 年 1 月 {#release-20-1}
 
 **20.1 版本中包含的新功能**
 
@@ -544,195 +557,198 @@ Adobe Campaign 增强 MTA 文章已更新，其中包含有关在未向每封邮
 
 已添加如何在工作流中使用实例变量的示例。[阅读更多](../../workflow/using/javascript-scripts-and-templates.md)
 
-## 2019
++++
 
-### 2019 年 12 月 {#december-2019}
+<!--
 
-“WdbcOptions_TempDbName”选项已添加到 Campaign 选项的列表。[阅读更多](../../installation/using/configuring-campaign-options.md)
+### December 2019 {#december-2019}
 
-FDA 矩阵页面已移到[此处](../../installation/using/remote-database-access-rights.md)。
+The "WdbcOptions_TempDbName" option has been added to the list of Campaign options. [Read more](../../installation/using/configuring-campaign-options.md)
 
-“访问权限矩阵”页面已移到[此处](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en)。
+The FDA matrix page has been moved [here](../../installation/using/remote-database-access-rights.md).
 
-描述如何使用 AMP 定义交互式内容的部分已被移动。[阅读更多](../../delivery/using/defining-interactive-content.md)
+The Access Rights Matrix page has been moved [here](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en).
 
-**19.2 版本中包含的新功能**
+The section describing how to define interactive content with AMP has been moved. [Read more](../../delivery/using/defining-interactive-content.md)
 
-加利福尼亚消费者隐私法 (CCPA) - [阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)
+**New capabilities included in 19.2 release**
 
-使用 AMP 定义交互式内容 - [阅读更多](../../delivery/using/defining-interactive-content.md)
+California Consumer Privacy Act (CCPA) - [Read more](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
 
-工作流实时监视 - [阅读更多](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+Interactive content with AMP - [Read more](../../delivery/using/defining-interactive-content.md)
 
-安全 SMS 消息 (TLS) - [阅读更多](https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html)
+Workflow live monitoring - [Read more](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
-**随版本提供的其他文档更新**
+Secure SMS Messaging (TLS) - [Read more](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)
 
-Adobe Campaign 增强 MTA 文档现已可用。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)
+**Other documentation updates coming with the release**
 
-增加了新的部分，介绍如何对活动中保持“尽快启动”状态的工作流进行故障排除。[阅读更多](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
+The Adobe Campaign Enhanced MTA documentation is now available. [Read more](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
-新的“NmsOperation_DeliveryPreparationWindow”和“WdbcKillSessionPolicy”选项已添加到 Campaign 选项列表中。[阅读更多](../../installation/using/configuring-campaign-options.md)
+A new section has been added on how to troubleshoot a workflow staying in the "Start as soon as possible" state within a campaign. [Read more](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
-现在提供了描述 Adobe Campaign Classic 数据模型基础知识的新文档。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html)
+The new "NmsOperation_DeliveryPreparationWindow" and "WdbcKillSessionPolicy" options have been added to the list of Campaign options. [Read more](../../installation/using/configuring-campaign-options.md)
 
-投放属性中新的&#x200B;**最大个性化运行时间**&#x200B;选项记录于[此部分](../../delivery/using/personalization-fields.md#timing-out-personalization)。
+A new document describing the Adobe Campaign Classic data model basics is now available. [Read more](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
 
-更新了使用 **HttpServletRequest** 与 logon() 和 query() 的示例。[阅读更多](../../configuration/using/web-service-calls.md)。
+The new **Maximum personalization run time** option in the delivery properties is documented in this [section](../../delivery/using/personalization-fields.md#timing-out-personalization).
 
-在模式定义中添加了&#x200B;**sqlDefault** 属性的建议。[阅读更多](../../configuration/using/schema/attribute.md)).
+The examples for API calls using an **HttpServletRequest** with logon() and query() have been updated. [Read more](../../configuration/using/web-service-calls.md).
 
-Adobe Campaign 与 Adobe 实时客户数据平台之间的集成现在在&#x200B;**“与 Adobe Experience Cloud 集成”**&#x200B;指南中提到。[阅读更多](../../integrations/using/about-campaign-integrations.md)。
+A recommendation for **sqlDefault** attribute in schema definition has been added. [Read more](../../configuration/using/schema/attribute.md)).
 
-### 2019 年 11 月 {#november-2019}
+The integration between Adobe Campaign and Adobe Real-time Customer Data Platform is now referenced in the **Integrating with Adobe Experience Cloud** guide. [Read more](../../integrations/using/about-campaign-integrations.md).
 
-在[多路复用中间源服务器](../../installation/using/mid-sourcing-server.md#multiplexing-the-mid-sourcing-server)和[和支持多个控制实例](../../message-center/using/transactional-messaging-architecture.md#supporting-several-control-instances)部分中添加了一个警告，提到完全托管和混合客户端不支持这些部署。
+### November 2019 {#november-2019}
 
-增加了新的部分，用于说明如何在发送电子邮件时强制使用字符编码。[阅读更多](../../delivery/using/sending-messages.md#character-encoding)
+A warning has been added to the [Multiplexing the mid-sourcing server](../../installation/using/mid-sourcing-server.md#multiplexing-the-mid-sourcing-server) and [Supporting several control instances](../../message-center/using/transactional-messaging-architecture.md#supporting-several-control-instances) sections mentioning that these deployments are not supported for fully hosted and hybrid clients.
 
-“访问管理”部分已更新&#x200B;**隐私数据权限**。[阅读更多](../../platform/using/access-management-named-rights.md)
+A new section has been added to describe how to force the character encoding used when sending an email. [Read more](../../delivery/using/sending-messages.md#character-encoding)
 
-添加了信息，以指定个性化字段内容不能超过 1024 个字符。[阅读更多](../../delivery/using/personalization-fields.md)
+The Access management section has been updated with the **Privacy Data right**. [Read more](../../platform/using/access-management-named-rights.md)
 
-控制面板文档已集成到新的协作文档集中。[阅读更多](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
+Information was added to specify that personalization fields content cannot exceed 1024 characters. [Read more](../../delivery/using/personalization-fields.md)
 
-投放最佳实践快速入门指南已更新。[阅读更多](../../delivery/using/delivery-best-practices.md)
+The Control Panel documentation has been integrated into the new collaborative documentation set. [Read more](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
-### 2019 年 10 月 {#october-2019}
+The Delivery Best Practices getting started guide has been updated. [Read more](../../delivery/using/delivery-best-practices.md)
 
-Campaign 的错误消息列表已更新。[阅读更多](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans)
+### October 2019 {#october-2019}
 
-GDPR 入门指南已得到改进和丰富。它现在是包括 GDPR 和 CCPA 在内的隐私管理文档。[阅读更多](https://helpx.adobe.com/content/help/cn/campaign/kb/campaign-privacy.html)
+The list of error messages for Campaign has been updated. [Read more](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
-在 Campaign Classic 中新增了用户跟踪的故障排除页面。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/classic-tracking-troubleshooting.html)。
+The GDPR getting started guide has been improved and enriched. It is now a privacy management documentation including GDPR and CCPA. [Read more](https://helpx.adobe.com/content/help/en/campaign/kb/campaign-privacy.html)
 
-新增了 Adobe Analytics Connector 的最佳实践页面。[阅读有关 Adobe Analytics Connector 的更多信息](../../platform/using/adobe-analytics-connector.md)
+A new troubleshooting page has been added for tracking in Campaign Classic. [Read more](https://helpx.adobe.com/campaign/kb/classic-tracking-troubleshooting.html).
 
-投放最佳实践快速入门指南已移动并更新。[阅读更多](../../delivery/using/delivery-best-practices.md)
+A new page of best practices for Adobe Analytics Connector has been added. [Read more on Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md)
 
-已向 SMS 渠道文档添加了建议，以避免在使用具有相同提供者帐户的扩展通用 SMPP 连接器的多个外部帐户时出现问题。[阅读更多](../../delivery/using/sms-set-up.md#automatic-reply)
+The Delivery Best Practices getting started guide has been moved and updated. [Read more](../../delivery/using/delivery-best-practices.md)
 
-在调度程序活动文档中添加了有关如何防止同时执行工作流的信息。[阅读更多](../../workflow/using/scheduler.md)
+A recommendation has been added to the SMS channel documentation to avoid issues when using multiple external accounts leveraging the Extended generic SMPP connector with the same provider account. [Read more](../../delivery/using/sms-set-up.md#automatic-reply)
 
-在文档中添加了配置本地安装的收件箱呈现的步骤。[阅读更多](../../delivery/using/inbox-rendering.md#activating-inbox-rendering)
+Information was added in the Scheduler activity documentation on how to prevent simultaneous executions of a workflow. [Read more](../../workflow/using/scheduler.md)
 
-### 2019 年 9 月 {#september-2019}
+The steps to configure Inbox rendering for on-premise installations have been added to documentation. [Read more](../../delivery/using/inbox-rendering.md#activating-inbox-rendering)
 
-添加了新页面，以提供维护 Campaign Classic 的一般准则。[阅读更多](../../production/using/monitoring-guidelines.md)
+### September 2019 {#september-2019}
 
-与工作流监测有关的信息已集中到新的专设部分。[阅读更多](../../workflow/using/monitoring-workflow-execution.md)。
+A new page has been added to provide general guidelines for maintaining Campaign Classic. [Read more](../../production/using/monitoring-guidelines.md)
 
-已添加有关 Adobe Campaign Classic 中跟踪的一般准则的新页面。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-tracking.html)。
+Information related to workflows monitoring has been centralized into a new dedicated section. [Read more](../../workflow/using/monitoring-workflow-execution.md).
 
-已更新工作流和投放性能改进的最佳实践。[阅读有关工作流的更多信息](../../workflow/using/workflow-best-practices.md) ， [以及有关投放的更多信息](../../delivery/using/delivery-performances.md#best-practices-performance)。
+A new page about general guidelines for tracking in Adobe Campaign Classic has been added. [Read more](https://helpx.adobe.com/campaign/kb/acc-tracking.html).
 
-### 2019 年 5 月 {#release-19-1}
+The best practices for performance improvements of workflows and deliveries have been updated. [Read more on workflows](../../workflow/using/workflow-best-practices.md) and [more on deliveries](../../delivery/using/delivery-performances.md#best-practices-performance).
 
-**19.1 版本中包含的新功能**
+### May 2019 {#release-19-1}
 
-控制面板 - [阅读更多](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
+**New capabilities included in 19.1 release**
 
-审核跟踪 - [阅读更多](../../production/using/audit-trail.md)
+Control Panel - [Read more](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
-**随版本提供的其他文档更新**
+Audit trail - [Read more](../../production/using/audit-trail.md)
 
-已创建新的版本升级常见问题解答。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/build-upgrade-faq.html)
+**Other documentation updates coming with the release**
 
-[兼容性矩阵](compatibility-matrix.md)已更新。更新了支持的数据库系统列表，Android/iOS 版本和相关 SDK。已存档 19.0 兼容性矩阵。
+A new Build upgrade FAQ has been created. [Read more](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html)
 
-“Campaign Classic 中已弃用和已删除的功能”页面已更新。[阅读更多](deprecated-features.md)
+The [Compatibility matrix](compatibility-matrix.md) has been updated. The list of supported database systems has been updated, Android/iOS versions and related SDKs. The 19.0 Compatibility matrix has been archived.
 
-《安装指南》中添加了服务器配置文件的说明。[阅读更多](../../installation/using/the-server-configuration-file.md)
+The 'Deprecated and Removed Features in Campaign Classic' page has been updated. [Read more](deprecated-features.md)
 
-添加了介绍托管和混合型号的安装和配置步骤的部分。[阅读更多](../../installation/using/hosting-models.md)
+The description of the server configuration file has been added to the Installation guide. [Read more](../../installation/using/the-server-configuration-file.md)
 
-添加了描述 Campaign 服务器卸载步骤的部分。[阅读更多](../../installation/using/uninstalling-campaign.md)
+A section has been added describing the installation and configuration steps for hosted and hybrid models. [Read more](../../installation/using/hosting-models.md)
 
-[安全性](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)、 [投放能力](../../delivery/using/about-deliverability.md)和 [隐私](../../platform/using/privacy-management.md)入门指南已更新。
+A section has been added describing the Campaign server uninstallation steps. [Read more](../../installation/using/uninstalling-campaign.md)
 
-预处理工作流选项的描述已更新，以反映产品更改。[阅读更多](../../workflow/using/data-loading--file-.md)
+The [security](https://helpx.adobe.com/campaign/kb/acc-security.html), [deliverability](../../delivery/using/about-deliverability.md) and [privacy](../../platform/using/privacy-management.md) getting started guides have been updated.
 
-Experience Cloud 触发器技术说明已更新。[阅读更多](../../integrations/using/about-triggers.md)
+The description of the pre-process workflow option has been updated to reflect product changes. [Read more](../../workflow/using/data-loading--file-.md)
 
-错误消息的列表已更新。[阅读更多](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans)
+The Experience Cloud Triggers technote has been updated. [Read more](../../integrations/using/about-triggers.md)
 
-添加了有关事务消息的 SOAP 身份验证方法的更多信息。[阅读更多](../../message-center/using/event-description.md)
+The list of error messages has been updated. [Read more](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
-Apache 配置步骤已更新。[阅读更多](../../installation/using/integration-into-a-web-server-for-linux.md)
+Added more information on SOAP authentication methods for transactional messaging. [Read more](../../message-center/using/event-description.md)
 
-添加了包含 Classic 的端点列表的新页面。[阅读更多](../../installation/using/campaign-network-endpoints.md)
+The Apache configuration steps have been updated. [Read more](../../installation/using/integration-into-a-web-server-for-linux.md)
 
-数据包最佳实践文章已更新。[阅读更多](../../configuration/using/data-model-best-practices.md)
+A new page has been added including the list of endpoints for Classic. [Read more](../../installation/using/campaign-network-endpoints.md)
 
-“管理优惠”文档已更新，其中新增了列出最佳实践的部分。[阅读更多](../../interaction/using/interaction-best-practices.md)
+The Data package best practices article has been updated. [Read more](../../configuration/using/data-model-best-practices.md)
 
-已创建一篇关于在 Adobe Campaign Classic 中使用优惠目录的新知识库文章。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/offer-best-practices.html)
+The Managing Offers documentation has been updated with a new section listing best practices. [Read more](../../interaction/using/interaction-best-practices.md)
 
-子工作流活动部分新增了使用示例。[阅读更多](../../workflow/using/sub-workflow.md)
+A new Knowledge base article on using the offer catalog in Adobe Campaign Classic has been created. [Read more](https://helpx.adobe.com/campaign/kb/offer-best-practices.html)
 
-[Campaign Classic 本地和托管功能矩阵](../../installation/using/capability-matrix.md)页面已更新，其中包含与电子邮件密件抄送相关的信息。
+The Sub-workflow activity section has been enhanced with an example of usage. [Read more](../../workflow/using/sub-workflow.md)
 
-事务性消息文档已更新，包含有关模板发布的说明。[阅读更多](../../message-center/using/publishing-message-templates.md#template-publication)
+The [Campaign Classic On-premise & Hosted capability matrix](../../installation/using/capability-matrix.md) page has been updated with information relating to Email BCC.
 
-“未处理的弹回邮件”部分已更新，其中包含有关“转发地址”和“错误地址”字段的更多详细信息。[阅读更多](../../installation/using/deploying-an-instance.md)
+The Transactional Messaging documentation has been updated with a note regarding template publication. [Read more](../../message-center/using/publishing-message-templates.md#template-publication)
 
-新增了有关工作流计划最佳实践的部分。[阅读更多](../../workflow/using/workflow-best-practices.md)
+The Unprocessed bounce mails section has been updated with more details on the Forwarding address and Address for errors fields. [Read more](../../installation/using/deploying-an-instance.md)
 
-为 Campaign 选项列表增加了两个新选项：XtkSecurity_Restrict_EditXML 和 NmsOperation_OperationMgtDebug。
-[阅读更多](../../installation/using/configuring-campaign-options.md)
+A new section on workflow planning best practices has been added. [Read more](../../workflow/using/workflow-best-practices.md)
 
-添加了有关 Campaign Classic 中可用的不同外部帐户以及如何配置这些帐户的信息。
-[阅读更多](../../installation/using/external-accounts.md)
+Added two new options to the list of Campaign options: XtkSecurity_Restrict_EditXML and NmsOperation_OperationMgtDebug.
+ [Read more](../../installation/using/configuring-campaign-options.md)
 
-更新了 Analytics Connector 部分以反映接口更改。
-[阅读更多](../../platform/using/adobe-analytics-connector.md)
+Added information on the different external accounts available in Campaign Classic and how to configure them.
+ [Read more](../../installation/using/external-accounts.md)
 
-添加了有关计费报告的信息。
-[阅读更多](../../production/using/monitoring-processes.md)
+Updated Analytics Connector section to reflect interface changes.
+ [Read more](../../platform/using/adobe-analytics-connector.md)
 
-更新了有关共享受众集成的文档。
-[阅读更多](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+Added information on the Billing report.
+ [Read more](../../production/using/monitoring-processes.md)
 
-以下技术说明已更新：[SMS 连接器协议和设置](https://helpx.adobe.com/cn/campaign/kb/sms-connector-protocol-and-settings.html)。
+Updated documentation on the Shared audiences integration.
+ [Read more](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-技术工作流部分已更新。[阅读更多](../../workflow/using/about-technical-workflows.md)
+The following technote has been updated: [SMS connector protocol and settings](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
-Campaign 域名设置程序已得到改进和更新。
+The Technical workflows section has been updated. [Read more](../../workflow/using/about-technical-workflows.md)
 
-Campaign 硬件大小调整指南已更新。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)
+The Campaign Domain Name Setup procedure has been improved and updated.
 
-添加了关于 Teradata 外部帐户查询分段的信息。[阅读更多](../../installation/using/external-accounts.md)
+The Campaign Hardware Sizing Guide has been updated. [Read more](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html)
 
-### 2019 年 1 月{#release-doc-16-01-2019}
+Information was added on Query Banding for the Teradata external account. [Read more](../../installation/using/external-accounts.md)
 
-Experience Cloud 触发器技术说明已更新。[阅读更多](../../integrations/using/about-triggers.md)
+### January 2019{#release-doc-16-01-2019}
 
-在优惠批准部分添加了注释，以指定“已批准内容”提及指示内容批准流程已完成，无论是否已启用/批准所有优惠。[阅读更多](../../interaction/using/offer-catalog-overview.md)
+The Experience Cloud Triggers technote has been updated. [Read more](../../integrations/using/about-triggers.md)
 
-在《安装指南》中添加了新部分，其中列出了“管理/平台/选项”节点中的选项。[阅读更多](../../installation/using/configuring-campaign-options.md)
+A note was added in the offer approval section to specify  that the "Content approved" mention indicates that the content approval process has been achieved, whether all offers have been enabled/approved or not. [Read more](../../interaction/using/offer-catalog-overview.md)
 
-添加了有关使用种子地址保护邮寄列表的信息。[阅读更多](../../delivery/using/creating-seed-addresses.md)
+A new section was added in the Installation guide, listing options from the Administration / Platform / Options node. [Read more](../../installation/using/configuring-campaign-options.md)
 
-创建和发送投放时的关键步骤已重新分组到新部分，并提供了在需要时可参考的各种渠道。[阅读更多](../../delivery/using/steps-about-delivery-creation-steps.md)
+Information was added about the use of seed addresses to protect your mailing list. [Read more](../../delivery/using/creating-seed-addresses.md)
 
-[电子邮件归档](../../installation/using/email-archiving.md)部分已进行了移动、重新组织并增加了阐明信息：
+Key steps when creating and sending a delivery have been regrouped into a new section, with references to the various channels when needed. [Read more](../../delivery/using/steps-about-delivery-creation-steps.md)
 
-* 已添加有关每个连接的电子邮件和密送 IP 参数的最佳实践。
+The [Email archiving](../../installation/using/email-archiving.md) section has been moved, reorganized and improved with clarified information:
 
-* 如果您已经在使用旧版本（Adobe Campaign 17.2 – 版本 8795 之前）的电子邮件归档，我们更新了升级到新电子邮件归档系统（密送）的步骤。
+* Best practices have been added regarding emails per connection and BCC sending IPs parameters.
 
-在《使用工作流实现自动化》指南中添加了一个用例：向运营商发送个性化提醒。[阅读更多](../../workflow/using/sending-personalized-alerts-to-operators.md)
+* We've updated the steps to upgrade to the new email archiving system (BCC) if you were already using email archiving with an older build (prior to Adobe Campaign 17.2 – build 8795).
 
-“迁移到新版本”部分已更新。文档现在只详细介绍了从任何旧版本迁移到 Adobe Campaign Classic v7 的步骤，因为现在已不再可能迁移到 Adobe Campaign v6.11。[阅读更多](../../migration/using/about-migration.md)
+A use case has been added to the Automating with Workflows guide: Sending personalized alerts to operators. [Read more](../../workflow/using/sending-personalized-alerts-to-operators.md)
 
-对“投放临时失败后的重试”部分进行了阐明。[阅读更多](../../delivery/using/understanding-delivery-failures.md)
+The "Migrating to a new version" section has been updated. The documentation now only details the steps for a migration to Adobe Campaign Classic v7 from any older version, as it is no longer possible to migrate to Adobe Campaign v6.11. [Read more](../../migration/using/about-migration.md)
 
-指向“数字内容编辑器”部分的链接已添加到“定义电子邮件内容”部分。[阅读更多](../../delivery/using/defining-the-email-content.md)
+The "Retries after a delivery temporary failure" section has been clarified. [Read more](../../delivery/using/understanding-delivery-failures.md)
 
-“事务性消息架构”部分已更新，并显示一条警告，指定控件和执行实例不能安装在同一台计算机上。[阅读更多](../../message-center/using/transactional-messaging-architecture.md)
+Links to the "Digital Content Editor" section have been added to the "Defining the email content" section. [Read more](../../delivery/using/defining-the-email-content.md)
 
-“工作流监视”部分已更新，其中包含 8700 到 8977 (18.10) 版本的说明，包括有关如何为这些版本安装 Workflow HeatMap 包的技术说明的链接。[阅读更多](../../workflow/using/heatmap.md)
+The "Transactional messaging architecture" section has been updated with a warning specifying that the control and the execution instances cannot be installed on the same machine. [Read more](../../message-center/using/transactional-messaging-architecture.md)
 
-添加了一个用例，说明如何使用工作流中的扩充活动发送包含自定义数据字段的电子邮件。[阅读更多](../../workflow/using/email-enrichment-with-custom-date-fields.md)
+The "Workflow monitoring" section has been updated with a note for builds between 8700 and 8977 (18.10), including a link to the technote on how to install the Workflow HeatMap package for these builds. [Read more](../../workflow/using/heatmap.md)
 
-功能视频已移到[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)。
+Added a use case on how to send an email with custom data fields using the Enrichment activity in a workflow. [Read more](../../workflow/using/email-enrichment-with-custom-date-fields.md)
+
+Feature videos have been moved [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+-->
