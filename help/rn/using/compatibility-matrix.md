@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '802'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -375,7 +375,7 @@ Microsoft Edge WebView2 运行时要使用 Campaign 客户端控制台，必须�
 
 您可以在下列操作系统上使用 Campaign [发送推送通知](../../delivery/using/about-mobile-app-channel.md)，通过利用关联的 [Mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)。
 
-您还可以通过在数据收集UI中配置Adobe Experience Platform Mobile SDK扩展来使用Adobe Campaign。
+您还可以通过在“数据收集 UI”中配置 Adobe Campaign 扩展来使用 Adobe Experience Platform Mobile SDK。
 
 <table>
 <tbody>
