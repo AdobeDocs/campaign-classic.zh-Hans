@@ -4,14 +4,16 @@ title: 在Adobe Campaign中配置Android移动应用程序
 description: 了解如何设置适用于Android的移动应用程序
 feature: Push
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
 workflow-type: tm+mt
 source-wordcount: '963'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # Android 配置步骤
+
+![](../../assets/v7-only.svg)
 
 安装包后，您可以在Adobe Campaign Classic中定义Android应用程序设置。
 
@@ -166,7 +168,7 @@ ht-degree: 3%
 
 | 消息类型 | 可配置消息元素（FCM有效负载名称） | 可配置选项（FCM有效负载名称） |
 |:-:|:-:|:-:|
-| 数据消息 | 不适用 | dryRun |
+| 数据消息 | N/A | dryRun |
 | 通知消息 | 标题， body， android_channel_id，图标，声音，标记，颜色， click_action <br> | dryRun |
 
 <br>

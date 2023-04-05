@@ -4,7 +4,7 @@ title: 为iOS设备创建推送通知
 description: 了解如何为iOS创建推送通知
 feature: Push
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # 创建iOS通知{#create-notifications-ios}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 本节详细介绍特定于iOS通知交付的元素。 有关投放创建的全局概念，请参阅 [此部分](steps-about-delivery-creation-steps.md).
 

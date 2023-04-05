@@ -4,7 +4,7 @@ title: 为Android设备创建推送通知
 description: 了解如何为Android创建推送通知
 feature: Push
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 创建Android通知{#create-notificaations-android}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 使用Adobe Campaign在Android设备上发送推送通知。 有关投放创建的全局概念，请参阅 [此部分](steps-about-delivery-creation-steps.md).
 
@@ -27,11 +27,11 @@ ht-degree: 1%
    <br>消息将直接发送到移动应用程序，该应用程序将生成Android通知并将通知显示到设备。 数据消息仅包含您的自定义应用程序变量。
 
 * **[!UICONTROL Notification message]**，由FCM SDK自动处理。
-   <br> FCM会代表客户端应用程序在用户设备上自动显示消息。 Notification messages contain a predefined set of parameters and options but can still be further personalized with custom application variables.
+   <br> FCM会代表客户端应用程序在用户设备上自动显示消息。 通知消息包含一组预定义的参数和选项，但仍可以使用自定义应用程序变量进一步进行个性化。
 
-For more information on Firebase Cloud Messaging messages types, refer to [FCM documentation](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages).
+有关Firebase Cloud Messaging消息类型的更多信息，请参阅 [FCM文档](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages).
 
-## Create a data message {#creating-data-message}
+## 创建数据消息 {#creating-data-message}
 
 1. 转到 **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
@@ -80,9 +80,9 @@ For more information on Firebase Cloud Messaging messages types, refer to [FCM d
 
    ![](assets/nmac_android_3.png)
 
-1. Select **[!UICONTROL Deliver on Android (android)]** in the **[!UICONTROL Delivery template]** drop-down. 添加 **[!UICONTROL Label]** 投放。
+1. 选择 **[!UICONTROL Deliver on Android (android)]** 在 **[!UICONTROL Delivery template]** 下拉菜单。 添加 **[!UICONTROL Label]** 投放。
 
-1. Click **[!UICONTROL To]** to define the population to target. 默认情况下， **[!UICONTROL Subscriber application]** 目标映射。 单击 **[!UICONTROL Add]** 来选择您的服务。
+1. 单击 **[!UICONTROL To]** 定义要定位的群体。 默认情况下， **[!UICONTROL Subscriber application]** 目标映射。 单击 **[!UICONTROL Add]** 来选择您的服务。
 
    ![](assets/nmac_android_7.png)
 
@@ -94,9 +94,9 @@ For more information on Firebase Cloud Messaging messages types, refer to [FCM d
 
 1. 选择 **[!UICONTROL notification message]** as **[!UICONTROL Message Type]**.
 
-1. Add a title and edit your message. 使用个性化的推送通知 **[!UICONTROL Notification options]**:
+1. 添加标题并编辑消息。 使用个性化的推送通知 **[!UICONTROL Notification options]**:
 
-   * **[!UICONTROL Channel ID]**:设置通知的渠道ID。 The app must create a channel with this channel ID before any notification with this channel ID is received.
+   * **[!UICONTROL Channel ID]**:设置通知的渠道ID。 在收到具有此渠道ID的任何通知之前，应用程序必须使用此渠道ID创建渠道。
    * **[!UICONTROL Sound]**:设置设备收到通知时要播放的声音。
    * **[!UICONTROL Color]**:设置通知的图标颜色。
    * **[!UICONTROL Icon]**:将通知的图标设置为在用户档案的设备上显示。
@@ -107,11 +107,11 @@ For more information on Firebase Cloud Messaging messages types, refer to [FCM d
 
    ![](assets/nmac_android_8.png)
 
-1. If your application is configured with HTTP v1 API protocol, you can further personalize your push notification with the following **[!UICONTROL HTTPV1 additional options]**:
+1. 如果您的应用程序配置了HTTP v1 API协议，则可以使用以下内容进一步个性化推送通知 **[!UICONTROL HTTPV1 additional options]**:
 
    * **[!UICONTROL Ticker]**:设置通知的滚动条文本。 仅适用于设置为Android 5.0 Lollipop的设备。
-   * **[!UICONTROL Image]**: Set the image&#39;s URL to be displayed in your notification.
-   * **[!UICONTROL Notification Count]**: Set the number of new unread information to display directly on the application icon.
+   * **[!UICONTROL Image]**:设置要在通知中显示的图像URL。
+   * **[!UICONTROL Notification Count]**:设置要直接在应用程序图标上显示的新未读信息数。
    * **[!UICONTROL Sticky]**:设置为true或false。 如果设置为false，则当用户单击通知时，该通知将自动被取消。 如果设置为true，则即使用户单击通知，也仍会显示通知。
    * **[!UICONTROL Notification Priority]**:将通知的优先级设置为默认、最小、低或高。 有关更多信息，请参阅 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
    * **[!UICONTROL Visibility]**:将通知的可见性级别设置为公共、私有或机密。 有关更多信息，请参阅 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
