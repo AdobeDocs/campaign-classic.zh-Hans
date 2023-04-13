@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3577'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 99%
 
 ### 2023 年 4 月
 
-添加了有关如何在内部部署/混合环境中启用Microsoft Edge Chromium的技术说明。 [了解更多信息](../../technotes/using/edge-chromium.md)
+添加了有关如何在内部部署/混合环境中启用 Microsoft Edge Chromium 的技术说明。[了解更多信息](../../technotes/using/edge-chromium.md)
 
 ### 2023 年 3 月
 
