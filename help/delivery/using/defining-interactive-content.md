@@ -4,10 +4,10 @@ title: 在Adobe Campaign Classic中定义交互式内容
 description: 了解如何在Adobe Campaign中使用AMP定义交互式动态电子邮件内容
 feature: Email Design, Dynamic Content
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 1348c1d88d0732b0dda4ed488b4a258ac7e15c42
 workflow-type: tm+mt
-source-wordcount: '1565'
-ht-degree: 3%
+source-wordcount: '1505'
+ht-degree: 4%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Adobe Campaign允许您使用新的 [用于电子邮件的AMP](https://amp.dev/about/email/) 格式，它允许在特定条件下发送动态电子邮件。
+Adobe Campaign允许您使用交互式 [用于电子邮件的AMP](https://amp.dev/about/email/) 格式，它允许在特定条件下发送动态电子邮件。
 
 使用AMP for Email，您可以：
 * 测试向正确配置的特定地址发送AMP电子邮件。
-* 在向相应的提供商注册后，将AMP电子邮件发送到Gmail、Outlook或Mail.ru地址。
+* 在向相应的提供商注册后，将AMP电子邮件发送到Gmail或Mail.ru地址。
 
 有关测试和发送AMP电子邮件的更多信息，请参阅 [此部分](#targeting-amp-email).
 
@@ -131,16 +131,16 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，A
 
 在Adobe Campaign中构建AMP内容时，您必须符合要发送的动态电子邮件的条件，这些条件特定于收件人的电子邮件提供商。
 
-目前有三个电子邮件提供商支持测试此格式：Gmail、Outlook和Mail.ru。
+目前，两个电子邮件提供商支持测试此格式：Gmail和Mail.ru。
 
-在Gmail帐户上使用AMP格式测试投放所需的所有步骤和规范都将在相应的 [Gmail](https://developers.google.com/gmail/ampemail?), [Outlook ](https://docs.microsoft.com/en-gb/outlook/amphtml/)和 [Mail.ru](https://postmaster.mail.ru/amp) 开发人员文档。
+在Gmail帐户上使用AMP格式测试投放所需的所有步骤和规范都将在相应的 [Gmail](https://developers.google.com/gmail/ampemail?)和 [Mail.ru](https://postmaster.mail.ru/amp) 开发人员文档。
 
 特别是必须满足以下要求：
-* 遵循特定于的AMP安全要求 [Gmail](https://developers.google.com/gmail/ampemail/security-requirements), [Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/security-requirements)和 [Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto).
+* 遵循特定于的AMP安全要求 [Gmail](https://developers.google.com/gmail/ampemail/security-requirements)和 [Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto).
 * AMP MIME部分必须包含 [有效的AMP文档](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_emails/?format=email).
 * AMP MIME部分必须小于100KB。
 
-您还可以查阅 [Gmail的提示和已知限制](https://developers.google.com/gmail/ampemail/tips) 和 [Outlook的AMP最佳实践](https://docs.microsoft.com/en-gb/outlook/amphtml/best-practices).
+您还可以查阅 [Gmail的提示和已知限制](https://developers.google.com/gmail/ampemail/tips) 文档。
 
 ## 定位AMP电子邮件 {#targeting-amp-email}
 
@@ -156,15 +156,15 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，A
 
 >[!NOTE]
 >
->目前只支持测试AMP格式的Gmail、Outlook和Mail.ru。
+>只有Gmail和Mail.ru支持测试AMP格式。
 
-对于Gmail和Outlook，您必须首先将您使用的发件人地址添加到从允许列表Adobe Campaign为您定位的Gmail和Outlook帐户发送的邮件中。
+对于Gmail，您必须首先将您使用的发件人地址添加到从允许列表Adobe Campaign为您定位的Gmail帐户发送的。
 
 操作步骤：
 1. 确保为相关电子邮件提供商勾选了启用动态电子邮件的选项。
 1. 复制投放中显示的发件人地址 **[!UICONTROL From]** 字段，并将其粘贴到电子邮件提供商帐户设置的相应部分中。
 
-有关更多详细信息，请查阅 [Gmail](https://developers.google.com/gmail/ampemail/testing-dynamic-email) 和 [Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/register-outlook#individual-mailbox-registration) 开发人员文档。
+有关更多详细信息，请查阅 [Gmail](https://developers.google.com/gmail/ampemail/testing-dynamic-email) 开发人员文档。
 
 ![](assets/amp_from_field.png)
 
@@ -176,9 +176,9 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，A
 
 >[!NOTE]
 >
->目前，只有Gmail、Outlook和Mail.ru支持AMP格式。
+>只有Gmail和Mail.ru支持AMP格式。
 
-使用几个地址进行测试后，您可以向任何Gmail或Outlook地址发送AMP电子邮件。 为此，您必须向Google或Microsoft注册，并等待他们的回答。 按照 [Gmail](https://developers.google.com/gmail/ampemail/register) 和 [Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/register-outlook#global-registration) 开发人员文档。 成功注册后，您将成为授权发件人。
+使用几个地址进行测试后，您可以向任何Gmail地址发送AMP电子邮件。 为此，您必须向Google注册，等待他们的答案。 按照 [Gmail](https://developers.google.com/gmail/ampemail/register) 开发人员文档。 成功注册后，您将成为授权发件人。
 
 要向Mail.ru地址发送AMP电子邮件，请按照 [Mail.ru开发人员文档](https://postmaster.mail.ru/amp/?lang=en#howto) (**如果您是电子邮件发件人** )。
 
@@ -186,7 +186,7 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，A
 
 AMP内容和回退准备就绪后，如果您定义了兼容的目标，那么您便可以像往常一样发送电子邮件。
 
-目前，在某些情况下，只有Gmail、Outlook和Mail.ru支持AMP格式。 您可以定位来自其他电子邮件提供商的地址，但他们将收到您电子邮件的HTML或纯文本版本。
+目前，在某些情况下，只有Gmail和Mail.ru支持AMP格式。 您可以定位来自其他电子邮件提供商的地址，但他们将收到您电子邮件的HTML或纯文本版本。
 
 >[!IMPORTANT]
 >
