@@ -7,7 +7,7 @@ exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '1204'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->Adobe Campaign提供一组工具来监控您的投放能力并优化电子邮件发送。 在 [此部分](about-deliverability.md).
+>Adobe Campaign提供一组工具来监控您的投放能力并优化电子邮件发送。 在[此部分](about-deliverability.md)中了解更多信息。
 
 通过准备投放和/或在工作流过程中发送投放，可自动发送投放。 有关工作流中投放类型活动的更多信息，请参阅 [此部分](../../workflow/using/about-action-activities.md).
 
@@ -102,7 +102,7 @@ Adobe Campaign提供电话投放模板，用于创建外部投放。 使用此�
 
 Campaign中有三种类型的投放对象：
 
-### 单次投放 {#single-delivery}
+### 单个投放 {#single-delivery}
 
 A **投放** 是执行一次的独立投放对象。 它可以重复、重新准备，但只要它处于最终状态（已取消、停止、完成），就不能重复使用。
 
