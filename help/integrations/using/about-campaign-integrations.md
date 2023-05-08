@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 关于 Campaign 集成
-description: 使用其他 Adobe 解决方案，并将其不同的功能与 Campaign 相结合。
+description: 使用其他 Adobe 解决方案，并将其各种功能与 Campaign 相结合。
 audience: integrations
 content-type: reference
 topic-tags: campaign-integrations

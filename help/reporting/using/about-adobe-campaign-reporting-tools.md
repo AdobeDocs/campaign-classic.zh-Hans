@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 关于Adobe Campaign报告工具
-description: 在内建或自定义报告中，分析促销活动成功与否。
+description: 在内置报告或自定义报告中分析您的营销活动是否取得成功。
 feature: Reporting
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
 source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
