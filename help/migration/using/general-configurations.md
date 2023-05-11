@@ -5,8 +5,10 @@ description: 常规配置
 audience: migration
 content-type: reference
 topic-tags: configuration
+hide: true
+hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
 workflow-type: tm+mt
 source-wordcount: '2625'
 ht-degree: 0%
@@ -334,7 +336,7 @@ allowSQLInjection="false"
      </queryFilter>
    ```
 
-**聚合**
+**总计**
 
 聚合函数（集合）
 
@@ -354,7 +356,7 @@ allowSQLInjection="false"
    >
    >自动地对集料函数执行节点。 不再需要指定OO0.iOperationId=iOperationId的条件。
    >
-   >无法再使用“count(*)”函数。 您必须使用“countall()”。
+   >无法再使用“count(&#42;)”函数。 您必须使用“countall()”。
 
 * 以前的语法：
 
@@ -456,7 +458,8 @@ allowSQLInjection="false"
 * **[!UICONTROL Keep the current version]**:表示更新被拒绝。
 
    >[!IMPORTANT]
-   如果选择此解决模式，则可能会丢失新版本中的修补程序。 因此，强烈建议不要使用或仅保留此选项给专家运算符。
+   >
+   >如果选择此解决模式，则可能会丢失新版本中的修补程序。 因此，强烈建议不要使用或仅保留此选项给专家运算符。
 
 如果选择手动解决冲突，请按如下方式继续：
 
@@ -502,12 +505,14 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 在v7中，选件内容已移动。 在v6.02中，内容位于每个表示模式(**nms:emailOfferView**)。 在v7中，内容现在位于选件架构中。 升级后，该内容将不会显示在界面中。 升级后，您必须重新创建选件内容，或开发一个脚本，该脚本会自动将内容从表示架构移动到选件架构。
 
 >[!IMPORTANT]
-如果迁移后发送了某些使用已配置选件的投放，则必须在v7中删除并重新创建所有这些投放。 如果您无法执行此操作，则会提供“兼容性模式”。 不建议使用此模式，因为您不会从Interaction v7中的所有新增功能中受益。 这是一种过渡模式，允许您在实际6.1迁移之前完成持续的营销活动。 有关此模式的更多信息，请联系我们。
+>
+>如果迁移后发送了某些使用已配置选件的投放，则必须在v7中删除并重新创建所有这些投放。 如果您无法执行此操作，则会提供“兼容性模式”。 不建议使用此模式，因为您不会从Interaction v7中的所有新增功能中受益。 这是一种过渡模式，允许您在实际6.1迁移之前完成持续的营销活动。 有关此模式的更多信息，请联系我们。
 
 移动脚本的示例(**interactionTo610_full_XX.js**)在 **迁移** 文件夹中的Adobe Campaign v7文件夹。 此文件展示了一个客户使用每个选件( **[!UICONTROL htmlSource]** 和 **[!UICONTROL textSource]** 字段)。 中 **NmsEmailOfferView** 已将表移到选件表中。
 
 >[!NOTE]
-使用此脚本不允许您从“内容管理”和“渲染函数”选项中受益。 要从这些功能中受益，您必须重新思考目录选件，特别是选件内容和配置空间。
+>
+>使用此脚本不允许您从“内容管理”和“渲染函数”选项中受益。 要从这些功能中受益，您必须重新思考目录选件，特别是选件内容和配置空间。
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -606,7 +611,8 @@ logInfo("Done");
 1. 执行全面的测试。
 
    >[!NOTE]
-   上线后将修改类别和选件的名称。 在传入渠道中，更新对选件和类别的所有引用。
+   >
+   >上线后将修改类别和选件的名称。 在传入渠道中，更新对选件和类别的所有引用。
 
 ## 报告 {#reports}
 
