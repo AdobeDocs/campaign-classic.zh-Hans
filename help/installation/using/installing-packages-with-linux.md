@@ -2,11 +2,13 @@
 product: campaign
 title: 在 Linux 中安装包
 description: 在 Linux 中安装包
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: fbab510788abe0fccbbd791233c906e7f9d8d703
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # 在 Linux 中安装包{#installing-packages-with-linux}
 
-![](../../assets/v7-only.svg)
+
 
 对于Linux 32位平台，请安装Adobe Campaign 32位。 对于Linux 64位平台，请安装Adobe Campaign 64位。
 
@@ -357,4 +359,4 @@ nlserver stop web
 
 Adobe Campaign服务器定义名为 **内部** 对所有情况均具有所有权限。 安装后，登录名没有密码。 必须定义一个。
 
-在 [此部分](../../installation/using/configuring-campaign-server.md#internal-identifier).
+在[此章节](../../installation/using/configuring-campaign-server.md#internal-identifier)中了解更多信息。

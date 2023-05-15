@@ -2,17 +2,19 @@
 product: campaign
 title: 安装Campaign Classic内置软件包
 description: 了解如何安装Campaign内置软件包
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '1253'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
 # 安装Campaign Classic内置软件包{#installing-campaign-standard-packages}
 
-![](../../assets/v7-only.svg)
+
 
 ## 关于内置包 {#campaign-standard-packages}
 

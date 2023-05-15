@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: 技术电子邮件配置
-description: 了解如何配置Campaign以在发送电子邮件时控制实例的输出。
+description: 了解如何配置Campaign以在发送电子邮件时控制实例的输出
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '3023'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 # 技术电子邮件配置{#email-deliverability}
 
-![](../../assets/v7-only.svg)
+
 
 ## 概述 {#overview}
 
@@ -239,7 +241,7 @@ MX所遵守的规则在 **[!UICONTROL MX management]** 文档 **[!UICONTROL Admi
 
 每个规则可用的以下参数包括：
 
-* **[!UICONTROL MX mask]**:应用规则的域。 每个规则都为MX定义一个地址掩码。 因此，名称与此掩码匹配的任何MX均符合条件。 掩码可以包含“*”和“？” 一般字符。
+* **[!UICONTROL MX mask]**:应用规则的域。 每个规则都为MX定义一个地址掩码。 因此，名称与此掩码匹配的任何MX均符合条件。 掩码可以包含“&#42;&quot;和&quot;?&quot; 一般字符。
 
    例如，以下地址：
 
@@ -249,7 +251,7 @@ MX所遵守的规则在 **[!UICONTROL MX management]** 文档 **[!UICONTROL Admi
 
    与以下掩码兼容：
 
-   * *.yahoo.com
+   * &#42;.yahoo.com
    * ?.mx.yahoo.com
 
    例如，对于电子邮件地址foobar@gmail.com，域名为gmail.com，MX记录为：
@@ -393,18 +395,18 @@ MX所遵守的规则在 **[!UICONTROL MX management]** 文档 **[!UICONTROL Admi
 
 在上一个示例中，在正常情况下，地址将按如下方式分发：
 
-    * &quot;1&quot;:5 /(5+5+1)= 45%
-    * &quot;2&quot;:5 /(5+5+1)= 45%
-    * &quot;3&quot;:1 /(5+5+1)= 10%
+    * &quot;1&quot;: 5 / (5+5+1) = 45%
+    * &quot;2&quot;: 5 / (5+5+1) = 45%
+    * &quot;3&quot;: 1 / (5+5+1) = 10%
 
 例如，如果第一个地址不能用于给定的MX，则消息将按如下方式发送：
 
-    * &quot;2&quot;:5 /(5+1)= 83%
-    * &quot;3&quot;:1 /(5+1)= 17%
+    * &quot;2&quot;: 5 / (5+1) = 83%
+    * &quot;3&quot;: 1 / (5+1) = 17%
 
-* **includeDomains**:允许您为属于特定域的电子邮件保留此IP地址。 这是可包含一个或多个通配符(“*”)的掩码列表。 如果未指定属性，则所有域都可以使用此IP地址。
+* **includeDomains**:允许您为属于特定域的电子邮件保留此IP地址。 这是可包含一个或多个通配符的掩码列表(“&#42;&#39;)。 如果未指定属性，则所有域都可以使用此IP地址。
 
-   示例： **includeDomains=&quot;wanadoo.com，orange.com，yahoo.*&quot;**
+   示例： **includeDomains=&quot;wanadoo.com，orange.com，yahoo。&#42;&quot;**
 
 * **excludeDomains**:不包括此IP地址的域列表。 此过滤器在 **includeDomains** 过滤器。
 

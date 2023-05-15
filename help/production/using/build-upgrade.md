@@ -2,11 +2,13 @@
 product: campaign
 title: 内部版本升级入门
 description: 了解升级到新内部版本的关键步骤
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '2356'
 ht-degree: 3%
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 # 执行内部版本升级{#performing-a-build-upgrade}
 
-![](../../assets/v7-only.svg)
+
 
 本节将为您提供有关升级过程以及识别和解决冲突的步骤的深入演练。
 
@@ -163,7 +165,7 @@ ht-degree: 3%
 
 ### 升级Adobe Campaign Server应用程序
 
-1. 运行 **Setup.exe** 文件。 如果需要下载此文件，请访问 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html).
+1. 运行 **Setup.exe** 文件。 如果需要下载此文件，请访问 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html).
 
 1. 选择安装模式： **更新** 或 **修复**.
 
@@ -246,7 +248,7 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 
 在中间源环境的上下文中，您需要执行以下其他步骤才能升级：
 
-1. 联系人 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 协调中间源服务器的升级。
+1. 联系人 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 协调中间源服务器的升级。
 1. 通过运行测试链接验证版本是否已更新。 例如：
 
    ```
@@ -363,8 +365,8 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 #### 在哪里找代码？
 
 1. 内置代码存储在Datakit文件夹的XML文件中。 查找与冲突对象匹配的XML文件。 示例：installationDirectory\datakit\nms\fra\form\recipient.xml
-1. 检索原始版本：通过 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 或另一个未升级的产品安装。
-1. 检索新版本：通过 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 或客户安装的文件。
+1. 检索原始版本：通过 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 或另一个未升级的产品安装。
+1. 检索新版本：通过 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 或客户安装的文件。
 1. 检索自定义版本：从Campaign客户端中检索对象的源代码。
 
 ### 如何进行差异比较？

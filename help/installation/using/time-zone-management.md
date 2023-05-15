@@ -2,11 +2,13 @@
 product: campaign
 title: 时区管理
 description: 时区管理
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # 时区管理{#time-zone-management}
 
-![](../../assets/v7-only.svg)
+
 
 ## 操作原则 {#operating-principle}
 
@@ -95,7 +97,7 @@ Adobe Campaign允许您以UTC（协调通用时间）格式存储日期/时间�
 可能值的示例：
 
 * 欧洲/巴黎，
-* 欧洲/伦敦，
+* 欧洲/伦敦,
 * 美国/纽约等
 
    这些值取自tz(Olson)数据库。 有关更多信息，请参阅 [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).

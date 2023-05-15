@@ -2,11 +2,13 @@
 product: campaign
 title: 管理
 description: 管理
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # 管理{#administration}
 
-![](../../assets/v7-only.svg)
+
 
 自动启动Adobe Campaign模块(**web**, **mta**, **wfserver**&#x200B;等) 由提供 **nlserver** 服务器。
 
@@ -80,14 +82,15 @@ ht-degree: 1%
    >* 在发生紧急情况时，使用 **-immediate** 强制立即停止进程的选项（等同于Unix命令） **kill -9**)。
    >* 使用 **-noconsole** 选项，以确保启动的模块在控制台上不显示任何内容。 其日志将通过 **syslogd** 模块。
    >* 使用 **-verbose** 选项，以显示有关流程操作的其他信息。
-   >
-   >   示例:
-   >
-   >   **nlserver重新启动web -verbose**
-   >
-   >   **nlserver start mta@myinstance -verbose**
-   >
-   >   此选项会添加其他日志。 我们建议在没有 **-verbose** 选项，以避免日志过载。
+
+      >
+      >   示例:
+      >
+      >   **nlserver重新启动web -verbose**
+      >
+      >   **nlserver start mta@myinstance -verbose**
+      >
+      >   此选项会添加其他日志。 我们建议在没有 **-verbose** 选项，以避免日志过载。
 
 
 * 启动所有Adobe Campaign进程(等同于启动 **nlserver6** 服务):

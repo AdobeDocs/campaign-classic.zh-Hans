@@ -2,20 +2,22 @@
 product: campaign
 title: Campaign Classic数据库建议
 description: 数据库建议
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 数据库{#database}
 
-![](../../assets/v7-only.svg)
+
 
 数据库服务器可以在任何给定的操作系统上运行，而不管应用程序服务器或服务器使用的操作系统是什么，只要它们之间有网络连接。
 
@@ -23,7 +25,7 @@ ht-degree: 0%
 
 另请查看 [数据库访问层](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) 中。
 
-## Microsoft SQL Server {#microsoft-sql-server}
+## Microsoft SQL 服务器 {#microsoft-sql-server}
 
 本机客户端必须安装在Adobe Campaign应用程序服务器上。
 

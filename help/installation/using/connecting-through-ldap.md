@@ -1,21 +1,21 @@
 ---
 product: campaign
 title: 通过 LDAP 连接
-description: '了解如何使用LDAP登录Campaign '
+description: 了解如何使用LDAP登录Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e011333411af79b985166a4e73592a1860749cf1
 workflow-type: tm+mt
 source-wordcount: '1008'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 通过 LDAP 连接{#connecting-through-ldap}
-
-![](../../assets/v7-only.svg)
 
 ## 配置Campaign和LDAP {#configuring-campaign-and-ldap}
 
@@ -189,4 +189,4 @@ LDAP配置在部署向导中执行。 的 **[!UICONTROL LDAP integration]** 选�
 
    无论是通过Adobe Campaign还是LDAP，从不会动态创建组。 需要在Adobe Campaign和LDAP目录中单独创建它们。
 
-   LDAP目录中的组名称需要与Adobe Campaign组的名称一致。 其关联掩码在部署向导的最后一个配置阶段中定义：Adobe Campaign_(.*)。
+   LDAP目录中的组名称需要与Adobe Campaign组的名称一致。 其关联掩码在部署向导的最后一个配置阶段中定义：Adobe Campaign_(.&#42;)，例如。

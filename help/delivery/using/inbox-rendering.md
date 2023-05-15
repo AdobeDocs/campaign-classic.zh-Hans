@@ -2,18 +2,20 @@
 product: campaign
 title: Campaign中的收件箱呈现
 description: 了解如何捕获电子邮件渲染并在专用报告中提供
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 048189f49623cf00f4c3f1f34ff4b795d80391ef
+source-git-commit: e011333411af79b985166a4e73592a1860749cf1
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 8%
+source-wordcount: '839'
+ht-degree: 9%
 
 ---
 
 # 收件箱呈现{#inbox-rendering}
 
-![](../../assets/common.svg)
+
 
 ## 关于收件箱呈现 {#about-inbox-rendering}
 
@@ -33,6 +35,8 @@ Litmus是一种功能丰富的电子邮件验证和预览应用程序。 它允�
 >在投放中测试个性化无需进行收件箱呈现。 可以使用Adobe Campaign工具(例如 **[!UICONTROL Preview]** 和 [校样](steps-validating-the-delivery.md#sending-a-proof).
 
 ## 激活收件箱呈现 {#activating-inbox-rendering}
+
+[!BADGE 内部部署和混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"}
 
 对于托管和混合客户端，Adobe技术支持和顾问会在您的实例上配置收件箱呈现。 有关更多信息，请联系您的Adobe客户经理。
 

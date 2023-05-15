@@ -2,11 +2,13 @@
 product: campaign
 title: 配置 SpamAssassin
 description: 配置 SpamAssassin
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 2%
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 # 配置 SpamAssassin{#configuring-spamassassin}
 
-![](../../assets/v7-only.svg)
+
 
 >[!NOTE]
 >
@@ -95,7 +97,7 @@ SpamAssassin是一款用于过滤不良电子邮件的软件。 与此软件结�
        "<root>\perl\site\bin\spamassassin" "C:\TestSpamMail.txt"
       ```
 
-      此测试电子邮件的内容会触发SpamAssassin的1,000分。 这意味着，它被检测为不需要，并且安装已成功，并且完全正常运行。
+      此测试电子邮件的内容会触发SpamAssassin的1,000分。 这意味着，它被检测为不需要，并且安装成功并且完全正常。
 
 ### 将SpamAssassin集成到Adobe Campaign {#integrating-spamassassin-into-adobe-campaign}
 

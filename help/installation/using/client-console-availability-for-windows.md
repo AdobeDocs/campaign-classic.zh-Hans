@@ -2,11 +2,13 @@
 product: campaign
 title: 适用于 Windows 的客户端控制台可用性
 description: 适用于 Windows 的客户端控制台可用性
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 4%
@@ -15,7 +17,7 @@ ht-degree: 4%
 
 # 适用于 Windows 的客户端控制台可用性{#client-console-availability-for-windows}
 
-![](../../assets/v7-only.svg)
+
 
 要使Adobe Campaign用户能够登录到您创建和配置的实例，他们需要使用客户端控制台。
 

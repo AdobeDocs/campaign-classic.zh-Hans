@@ -2,20 +2,22 @@
 product: campaign
 title: 安装服务器
 description: 安装服务器
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: e88ed7a5710f9ec8713d9e7151d2fd4904097990
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 安装服务器{#installing-the-server}
 
-![](../../assets/v7-only.svg)
+
 
 ## 执行安装程序 {#executing-the-installation-program}
 
@@ -139,7 +141,7 @@ nlserver stop web
 
 Adobe Campaign服务器定义名为 **内部** 对所有情况均具有所有权限。 安装后，登录名没有密码。 必须定义一个。
 
-在 [此部分](../../installation/using/configuring-campaign-server.md#internal-identifier).
+在[此章节](../../installation/using/configuring-campaign-server.md#internal-identifier)中了解更多信息。
 
 ## 启动Adobe Campaign服务 {#starting-adobe-campaign-services}
 

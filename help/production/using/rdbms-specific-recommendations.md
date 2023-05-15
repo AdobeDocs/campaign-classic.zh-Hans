@@ -2,11 +2,13 @@
 product: campaign
 title: RDBMS 特定建议
 description: RDBMS 特定建议
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 98b338ddf0da184363c599d74aeb98ed7f6303ce
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # RDBMS 特定建议{#rdbms-specific-recommendations}
 
-![](../../assets/v7-only.svg)
+
 
 为了帮助您设置维护计划，本节列出了一些与Adobe Campaign支持的各种RDBMS引擎相适应的建议和最佳实践。 但是，这些只是建议。 根据您的内部流程和限制，由您自行调整以适应您的需求。 数据库管理员有责任构建和执行这些计划。
 

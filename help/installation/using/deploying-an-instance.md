@@ -2,20 +2,22 @@
 product: campaign
 title: 部署实例
 description: 了解有关Campaign部署向导的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 11e175c737d9c6cbb9432ec7835f35ee0e00a5c0
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '3140'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 部署实例{#deploying-an-instance}
 
-![](../../assets/v7-only.svg)
+
 
 >[!NOTE]
 >
@@ -278,14 +280,14 @@ ht-degree: 2%
 
 ![](assets/s_ncs_install_deployment_wiz_12.png)
 
-### SMS 投放的默认帐户 {#default-account-for-sms-delivery}
+### 短信投放的默认帐户 {#default-account-for-sms-delivery}
 
 输入以下信息：
 
 * **[!UICONTROL Label]** :输入此短信/Wap推送帐户的名称。 例如，您可能希望使用路由器的名称。
 * 对于 **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Notification Endpoint]** 字段：有关所需的设置，请联系您的服务提供商。
 
-### 发送短信的参数 {#parameters-of-sms-sent}
+### 已发送短信的参数 {#parameters-of-sms-sent}
 
 在 **优先级** 下拉列表：选择“正常”、“高”或“紧急”以将其应用于要发送的消息。
 

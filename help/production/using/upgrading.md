@@ -2,11 +2,13 @@
 product: campaign
 title: 升级到新内部版本
 description: 了解升级到新内部版本的技术步骤
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 3%
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 # 升级到新内部版本（内部部署）{#upgrading}
 
-![](../../assets/v7-only.svg)
+
 
 在开始升级过程之前，请确定并确认要将哪个版本的Adobe Campaign升级到，并咨询 [发行说明](../../rn/using/latest-release.md) .
 
@@ -24,7 +26,6 @@ ht-degree: 3%
 >* Adobe强烈建议在更新之前对每个实例进行数据库备份。 有关更多信息，请参见[此章节](../../production/using/backup.md)。
 >* 要执行升级，请确保您具有访问实例和日志的功能和权限。
 >* 阅读 [此部分](../../installation/using/general-architecture.md) 和 [版本升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html) 章节。
-
 >
 
 
@@ -124,7 +125,7 @@ ht-degree: 3%
 
 ### 获取更新的包 {#obtain-updated-packages}
 
-首先，恢复两个更新的Adobe Campaign包：连接到 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 使用您的用户凭据。 了解有关Software Distribution的更多信息，请参阅 [本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+首先，恢复两个更新的Adobe Campaign包：连接到 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 使用您的用户凭据。 了解有关Software Distribution的更多信息，请参阅 [本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans?lang=en).
 
 文件为 **nlserver6-v7-XXX.rpm**
 

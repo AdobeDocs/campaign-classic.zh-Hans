@@ -2,20 +2,22 @@
 product: campaign
 title: 日志文件
 description: 日志文件
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: c9d427da-6965-4945-90f0-d0770701d55e
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '431'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 日志文件{#log-files}
 
-![](../../assets/v7-only.svg)
+
 
 日志文件的组织方式如下：
 
@@ -57,7 +59,7 @@ ht-degree: 1%
 
 为了优化性能和存储， logins.log文件可拆分为多个文件，每天一个文件(logins.yy-mm-dd.log)，最多保留365个文件。 syslogd(**maxNumberOfLoginsFiles** 选项)。 请参阅 [服务器配置文件](../../installation/using/the-server-configuration-file.md#syslogd).
 
-默认情况下，每个模块和每个实例的日志最多可包含两个10 MB的文件。 第二个文件名为： **`<modulename>`_2.log**. 因此，每个模块和每个实例的日志大小限制为2*10MB。
+默认情况下，每个模块和每个实例的日志最多可包含两个10 MB的文件。 第二个文件名为： **`<modulename>`_2.log**. 因此，日志大小限制为2&#42;每个模块和每个实例10MB。
 
 但是，您可以保留较大的文件。 要启用此功能，请更改 **maxFileSizeMb=&quot;10&quot;** 设置 **syslogd** 节点 **conf/serverConf.xml** 文件。 此值表示日志文件的最大大小(MB)。
 

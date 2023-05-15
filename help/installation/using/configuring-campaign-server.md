@@ -2,11 +2,13 @@
 product: campaign
 title: 配置 Campaign 服务器
 description: 配置 Campaign 服务器
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 # Campaign服务器配置入门{#gs-campaign-server-config}
 
-![](../../assets/v7-only.svg)
+
 
 本章详细介绍可以执行以匹配您的需求和环境特性的服务器端配置。
 
@@ -159,7 +161,7 @@ Adobe Campaign使用以下JSP页：
 * /nl/jsp/**logon.jsp**:通过Web访问报告和部署客户端控制台，
 * /nl/jsp/**s.jsp** :使用病毒式营销（赞助和社交网络）。
 
-用于Mobile应用程序渠道的JSSP如下所示：
+用于移动设备应用程序渠道的JSSP如下所示：
 
 * nms/mobile/1/registerIOS.jssp
 * nms/mobile/1/registerAndroid.jssp

@@ -2,20 +2,22 @@
 product: campaign
 title: 网络配置
 description: 学习系统通信指南
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '666'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 # 网络配置{#network-configuration}
 
-![](../../assets/v7-only.svg)
+
 
 ## 进程之间的通信 {#communication-between-processes}
 
@@ -163,7 +165,7 @@ ht-degree: 3%
    <td> 5432/tcp<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Microsoft SQL Server</strong><br /> </td> 
+   <td> <strong>Microsoft SQL 服务器</strong><br /> </td> 
    <td> 1433/tcp<br /> </td> 
   </tr> 
   <tr> 
