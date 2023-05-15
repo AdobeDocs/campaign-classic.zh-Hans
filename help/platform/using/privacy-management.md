@@ -2,12 +2,14 @@
 product: campaign
 title: 隐私管理
 description: 了解有关隐私管理的更多信息
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: ht
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 100%
 
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # 隐私管理 {#privacy-management}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign 提供一套工具来帮助您遵守[隐私法规](#privacy-management-regulations)（包括 GDPR、CCPA、PDPA、LGPD）。
 

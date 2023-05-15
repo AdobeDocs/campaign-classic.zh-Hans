@@ -2,9 +2,10 @@
 product: campaign
 title: 关于操作活动
 description: 关于操作活动
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # 工作流中的操作活动{#about-action-activities}
 
-![](../../assets/v7-only.svg)
+
 
 * **投放**:允许您配置投放操作。 请参阅 [投放](delivery.md) 中。
 * **投放控制**:允许您开始、暂停或停止投放。 请参阅 [投放控制](delivery-control.md) 中。

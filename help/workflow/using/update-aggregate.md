@@ -2,9 +2,10 @@
 product: campaign
 title: 更新聚合
 description: 了解有关更新聚合工作流活动的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 3%
@@ -13,7 +14,7 @@ ht-degree: 3%
 
 # 更新聚合{#update-aggregate}
 
-![](../../assets/v7-only.svg)
+
 
 聚合在多维数据集级别定义，用于报告。 A **[!UICONTROL Workflow]** 选项卡。
 

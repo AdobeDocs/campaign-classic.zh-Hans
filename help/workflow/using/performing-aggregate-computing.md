@@ -2,9 +2,10 @@
 product: campaign
 title: 执行聚合计算
 description: 了解如何在查询中执行聚合计算
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # 执行聚合计算 {#performing-aggregate-computing}
 
-![](../../assets/v7-only.svg)
+
 
 在本例中，我们希望根据性别来计算住在伦敦的收件人数量。
 

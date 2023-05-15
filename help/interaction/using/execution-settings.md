@@ -2,11 +2,13 @@
 product: campaign
 title: 执行设置
 description: 执行设置
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: e2dea4a0-9ed8-47b6-a16b-eeee653d2290
-source-git-commit: 7728826eea199d2367fcbf556c01ec9d6cae466f
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 4%
@@ -15,7 +17,7 @@ ht-degree: 4%
 
 # 执行设置{#execution-settings}
 
-![](../../assets/common.svg)
+
 
 在创建模拟时，您可以根据需要指定执行设置。 通过这些设置，您可以根据模拟的优先级在活动不足时执行模拟，或在日志中记录SQL查询。 此阶段是可选的。
 

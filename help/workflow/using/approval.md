@@ -2,9 +2,10 @@
 product: campaign
 title: 审批
 description: 审批
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Approvals
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # 审批{#approval}
 
-![](../../assets/v7-only.svg)
+
 
 安 **批准** 任务需要操作员的参与。 操作员被分配了一项任务，可以通过电子邮件、使用电子邮件中链接的网页或通过控制台做出响应。
 

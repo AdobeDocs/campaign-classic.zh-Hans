@@ -2,22 +2,23 @@
 product: campaign
 title: CRM 连接器
 description: Campaign中的CRM连接器快速入门
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 56%
+ht-degree: 60%
 
 ---
 
 # CRM 连接器{#crm-connectors}
 
-![](../../assets/v7-only.svg)
 
-## CRM连接器入门 {#about-crm-connectors}
+
+## CRM 连接器入门 {#about-crm-connectors}
 
 Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台链接到第三方系统。通过这些 CRM 连接器，您可以同步处理联系人、帐户、购买等。您可以使用这些 CRM 连接器轻松地将您的应用程序与各第三方和商务应用程序相集成。
 

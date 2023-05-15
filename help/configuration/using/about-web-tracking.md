@@ -2,8 +2,9 @@
 product: campaign
 title: 关于 Web 跟踪
 description: 关于 Web 跟踪
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 91c31703-75e6-47a4-a877-35682dd687a9
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 4%
@@ -11,8 +12,6 @@ ht-degree: 4%
 ---
 
 # 关于 Web 跟踪{#about-web-tracking}
-
-![](../../assets/v7-only.svg)
 
 除了显示Internet用户单击电子邮件中链接的行为的标准跟踪之外，Adobe Campaign平台还允许您收集有关Internet用户如何浏览您网站的信息。 此数据收集由Web跟踪模块执行。
 

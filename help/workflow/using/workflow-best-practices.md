@@ -2,18 +2,19 @@
 product: campaign
 title: 工作流最佳实践
 description: 了解Campaign工作流最佳实践
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1687'
-ht-degree: 6%
+ht-degree: 12%
 
 ---
 
 # 工作流最佳实践{#workflow-best-practices}
 
-![](../../assets/v7-only.svg)
+
 
 ## 执行和性能 {#execution-and-performance}
 
@@ -27,17 +28,17 @@ JavaScript方法 **[!UICONTROL logInfo()]** 是调试工作流的绝佳解决方
 
 另外还提供了两个可帮助的解决方案：
 
-* **在两次处决之间保留临时人口的结果**
+* **在两次执行之间保留中期群体的结果**
 
-   此选项会在工作流的两次执行之间保留临时表。 它可在工作流属性的 **[!UICONTROL General]** 选项卡，可用于开发和测试以监控数据和检查结果。 您可以在开发环境中使用此选项，但决不能在生产环境中使用此选项。 保留临时表可导致数据库的大小显着增加，最终达到大小限制。 此外，这会减缓备份速度。
+   此选项会在工作流的两次执行之间保留临时表。 它可在工作流属性的 **[!UICONTROL General]** 选项卡，可用于开发和测试以监控数据和检查结果。 您可以在开发环境中使用此选项，但切勿在生产环境中使用。保留临时表可能会导致数据库的大小显著增加并最终达到大小限制。此外，这还将减慢备份速度。
 
-   只保留上次执行工作流的工作表。 以前执行中的工作表会被 **[!UICONTROL cleanup]** 工作流，每天运行。
+   仅保留最后一次工作流执行的工作表。以前执行中的工作表会被 **[!UICONTROL cleanup]** 工作流，每天运行。
 
    >[!CAUTION]
    >
-   >不得在生产工作流中勾选此选项。此选项用于分析结果，仅用于测试目的，因此必须仅用于开发或暂存环境。
+   >不得在生产工作流中勾选此选项。此选项用于分析结果，并且是仅为测试目的而设计，因此只能用于开发或暂存环境。
 
-* **在日志中记录SQL查询**
+* **在日志中记录 SQL 查询**
 
    在 **[!UICONTROL Execution]** 选项卡，此选项将记录该工具从不同活动生成的所有SQL查询。 这是查看平台实际执行的操作的好方法。 但是，此选项只应在开发期间临时使用，而不应在生产时激活。
 
@@ -104,7 +105,7 @@ Adobe 建议为工作流赋予正确的名称和标签，这样工作流没有�
 
 * 正常
 * 生产
-* 关键
+* 严重
 
 在创建工作流时提供此信息将帮助您了解配置流程的严重性。
 

@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: 自定义表情符号列表
-description: 了解如何在使用Adobe Campaign Classic时自定义表情符号列表
+description: 了解如何在使用Adobe Campaign时自定义表情符号列表
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email, Push
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '442'
 ht-degree: 3%
 
 ---
 
 # 自定义表情符号列表 {#customize-emoticons}
 
-![](../../assets/common.svg)
+
 
 弹出窗口中显示的表情符号列表由枚举来规定，该枚举允许您在列表中显示值，以限制用户对给定字段所做的选择。
 可以自定义表情符号列表顺序，还可以向列表中添加其他表情符号。

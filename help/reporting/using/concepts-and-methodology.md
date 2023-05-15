@@ -2,20 +2,21 @@
 product: campaign
 title: 多维数据集的最佳实践
 description: 多维数据集的最佳实践
+badge: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 feature: Reporting
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 0%
+source-wordcount: '1504'
+ht-degree: 1%
 
 ---
 
 # 多维数据集的最佳实践{#concepts-and-methodology}
 
-![](../../assets/common.svg)
+
 
 ## 数据绑定 {#data-binning}
 
@@ -188,7 +189,7 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 * 要在报表中显示/隐藏的信息(请参阅 [配置显示内容](#configuring-the-display))
 * 显示哪些度量：百分比、总数、小数位数等。 (请参阅 [更改显示的度量类型](#changing-the-type-of-measure-displayed))。
 
-### 显示序列 {#display-sequence}
+### 显示序列  {#display-sequence}
 
 多维数据集中计算的度量通过 **[!UICONTROL Measures]** 按钮。
 

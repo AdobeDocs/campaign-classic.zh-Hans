@@ -2,18 +2,20 @@
 product: campaign
 title: 关于Adobe Campaign Classic中的投放能力
 description: 了解有关在Adobe Campaign中管理可投放性的更多信息
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 # 控制消息内容{#control-message-content}
 
-![](../../assets/common.svg)
+
 
 为确保您的电子邮件能够到达收件人并提高电子邮件的投放率，收件人必须遵守许多规则。 否则，某些消息的内容可能会被检测为垃圾邮件。 Adobe Campaign为您提供了多种工具，可让您的内容符合这些规则。
 

@@ -2,18 +2,19 @@
 product: campaign
 title: 分布式营销
 description: 进一步了解分布式营销包
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management, Distributed Marketing
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '69'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
 
 # 分布式营销{#distributed-marketing}
 
-![](../../assets/v7-only.svg)
+
 
 下面详细介绍的工作流与 **分布式营销** 模块。 有关此模块的更多信息，请参阅此 [部分](../../distributed/using/about-distributed-marketing.md).
 

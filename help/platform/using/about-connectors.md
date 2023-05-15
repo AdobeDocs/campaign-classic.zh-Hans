@@ -2,11 +2,12 @@
 product: campaign
 title: 关于连接器
 description: 关于连接器
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 8%
@@ -15,7 +16,7 @@ ht-degree: 8%
 
 # 连接器入门{#about-connectors}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign提供了多个连接器，允许您与外部应用程序通信、连接到数据库引擎，以及与Adobe Analytics集成以共享数据。
 

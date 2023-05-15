@@ -2,11 +2,12 @@
 product: campaign
 title: 应用程序对象
 description: 应用程序对象
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 4%
@@ -15,7 +16,7 @@ ht-degree: 4%
 
 # 应用程序对象{#application-objects}
 
-![](../../assets/v7-only.svg)
+
 
 应监控内置对象，并防止其增长过多非常重要。
 

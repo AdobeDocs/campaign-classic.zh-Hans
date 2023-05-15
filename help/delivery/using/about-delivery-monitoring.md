@@ -2,9 +2,11 @@
 product: campaign
 title: 投放监测入门
 description: 进一步了解Campaign Classic交付监控功能
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 16%
@@ -13,7 +15,7 @@ ht-degree: 16%
 
 # 投放监测入门 {#about-delivery-monitoring}
 
-![](../../assets/common.svg)
+
 
 监控投放发送后的投放是确保营销活动高效且能够与客户联系的关键步骤。
 

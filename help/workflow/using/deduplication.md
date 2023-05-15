@@ -2,18 +2,19 @@
 product: campaign
 title: 重复数据删除
 description: 了解有关重复数据删除工作流活动的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1089'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
 # 重复数据删除{#deduplication}
 
-![](../../assets/v7-only.svg)
+
 
 重复数据删除会从集客活动结果中删除重复项。 可以对电子邮件地址、电话号码或其他字段执行重复数据删除。
 
@@ -33,7 +34,7 @@ ht-degree: 10%
 
 所选主记录将转发数据，而不会将字段数据与重复行中的其他相关数据合并。
 
-补码：
+补充:
 
 | 日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
 -----|------------|-----------|-------|--------------|------

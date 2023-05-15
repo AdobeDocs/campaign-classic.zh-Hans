@@ -2,8 +2,10 @@
 product: campaign
 title: 目标映射
 description: 了解如何创建目标映射
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 2%
@@ -12,7 +14,7 @@ ht-degree: 2%
 
 # 目标映射{#target-mapping}
 
-![](../../assets/common.svg)
+
 
 在以下两种情况下，需要创建目标映射：
 

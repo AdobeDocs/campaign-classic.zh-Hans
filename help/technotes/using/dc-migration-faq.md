@@ -2,11 +2,12 @@
 product: campaign
 title: 迁移到Adobe Managed Services(Public Cloud)常见问题解答
 description: Campaign Classic迁移到公共云常见问题解答
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2215'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # 迁移到公共云常见问题解答{#dc-faq}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe解压缩旧版数据中心：Campaign Classic实例必须传输到Public Cloud Amazon Web Services(AWS)。 [进一步了解此计划](dc-migration.md).
 

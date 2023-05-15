@@ -2,18 +2,20 @@
 product: campaign
 title: 生成个性化内容
 description: 了解如何在Adobe Campaign投放中构建个性化内容
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design, Personalization
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 # 生成个性化内容 {#build-personalized-content}
 
-![](../../assets/common.svg)
+
 
 在设计消息内容时，请尽量避免可能阻止您执行投放的常见问题。 大多数情况下，可能的错误都与 [个性化](about-personalization.md), [格式](defining-the-email-content.md#message-content) 和 [图像](defining-the-email-content.md#adding-images).
 

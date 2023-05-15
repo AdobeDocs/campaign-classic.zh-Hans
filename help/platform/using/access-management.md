@@ -2,18 +2,19 @@
 product: campaign
 title: 权限入门
 description: 了解如何授予对Campaign功能的访问权限
+badge: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '264'
 ht-degree: 6%
 
 ---
 
 # 权限入门{#access-management}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这些权限和限制是授权或拒绝的一组权限和限制：
 

@@ -2,18 +2,20 @@
 product: campaign
 title: 投放报告
 description: 投放报告
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 64d97c7879320296a5f8efc5bb5bc2bea8663c08
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1451'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
 # 投放报告 {#delivery-reports}
 
-![](../../assets/common.svg)
+
 
 您可以通过从投放概述访问的各种报表来跟踪投放的执行情况。 要显示报表，请应用以下过程：
 
@@ -44,7 +46,7 @@ ht-degree: 2%
 
 ## 跟踪指标 {#tracking-indicators}
 
-此报表整合了用于跟踪收件人在收到投放时的行为的关键指标。 它提供了对投放和接收统计信息、打开和点进率、生成的点击流、Web跟踪以及将活动共享到社交网络的访问权限。
+此报表整合了用于跟踪收件人在收到投放时的行为的关键指标。 它提供了对投放和接收统计数据、打开率和点进率、生成的点击流、Web 跟踪以及与社交网络共享的活动的访问权限。
 
 >[!NOTE]
 >
@@ -55,7 +57,7 @@ ht-degree: 2%
 **[!UICONTROL 1. Delivery statistics]**
 
 * **[!UICONTROL Messages to deliver]** :投放分析后要投放的邮件总数。
-* **[!UICONTROL Success]** :成功处理的消息数。
+* **[!UICONTROL Success]** : 成功处理的消息数.
 
 **[!UICONTROL 2. Reception statistics]**
 
@@ -174,7 +176,7 @@ ht-degree: 2%
 
 ## 热门点击 {#hot-clicks}
 
-此报表可显示每个链接上的消息内容(HTML和/或文本)，以及链接的点击百分比。 个性化块退订链接、镜像页面链接和选件链接在累计的点击总数中会得到考虑，但不会显示在报表中。
+此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。个性化块退订链接、镜像页面链接和优惠链接将计入总累计点击次数，但不会显示在报告中。
 
 >[!NOTE]
 >

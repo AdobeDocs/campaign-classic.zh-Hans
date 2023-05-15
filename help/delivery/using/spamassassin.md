@@ -2,9 +2,11 @@
 product: campaign
 title: SpamAssassin
 description: 了解如何使用SpamAssassin设置电子邮件垃圾邮件检测
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email, Deliverability
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 6%
@@ -13,7 +15,7 @@ ht-degree: 6%
 
 # SpamAssassin{#spamassassin}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign可以配置为与 [SpamAssassin](https://spamassassin.apache.org)，用于电子邮件垃圾邮件过滤的第三方服务。 这样，您就可以对电子邮件进行评分，以确定邮件是否存在被接收时使用的防垃圾邮件工具视为垃圾邮件的风险。
 

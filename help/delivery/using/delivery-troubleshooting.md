@@ -2,9 +2,11 @@
 product: campaign
 title: 投放发送疑难解答
 description: 了解有关投放性能的更多信息以及如何对与投放监控相关的问题进行故障诊断
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 投放发送疑难解答 {#delivery-troubleshooting}
 
-![](../../assets/common.svg)
+
 
 本节列出了您在发送投放时可能遇到的常见问题，以及如何对其进行故障诊断。
 

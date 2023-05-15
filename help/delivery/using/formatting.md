@@ -2,9 +2,11 @@
 product: campaign
 title: 格式化
 description: 格式化
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1447'
 ht-degree: 0%
@@ -13,9 +15,9 @@ ht-degree: 0%
 
 # 格式化{#formatting}
 
-![](../../assets/common.svg)
 
-## JavaScript模板 {#javascript-templates}
+
+## JavaScript 模板 {#javascript-templates}
 
 JavaScript模板是包含JavaScript代码的HTML或文本文档。 其构建方式与投放操作中的电子邮件内容相同。
 

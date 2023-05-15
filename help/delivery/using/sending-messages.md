@@ -2,9 +2,11 @@
 product: campaign
 title: 发送电子邮件的关键步骤
 description: 了解如何确认电子邮件的投放，并了解投放电子邮件的特性
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # 发送电子邮件的关键步骤 {#key-steps-to-send-an-email}
 
-![](../../assets/common.svg)
+
 
 创建并配置电子邮件后，即可将其发送到主目标。 本节介绍检查和确认电子邮件投放的主要步骤。
 

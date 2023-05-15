@@ -2,9 +2,11 @@
 product: campaign
 title: 创建定位工作流
 description: 了解如何通过专用用例执行A/B测试
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 10%
@@ -13,7 +15,7 @@ ht-degree: 10%
 
 # 创建定位工作流 {#step-1--creating-a-targeting-workflow}
 
-![](../../assets/common.svg)
+
 
 您需要在 **[!UICONTROL Targeting and Workflows]** 选项卡。 它由 **[!UICONTROL Query]** 活动，a **[!UICONTROL Split]** 链接到两个的活动 **[!UICONTROL Email delivery]** 活动， a **[!UICONTROL Wait]** 活动，a **[!UICONTROL JavaScript code]** 活动和 **[!UICONTROL Delivery]** 活动。
 

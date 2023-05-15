@@ -2,9 +2,11 @@
 product: campaign
 title: 配置 URL 跟踪选项
 description: 了解如何配置URL跟踪选项
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Email Design
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 9%
@@ -13,7 +15,7 @@ ht-degree: 9%
 
 # 配置 URL 跟踪选项{#personalizing-url-tracking}
 
-![](../../assets/common.svg)
+
 
 高级消息跟踪设置可通过 **[!UICONTROL Tracking & Images]** 图标。
 

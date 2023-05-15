@@ -2,18 +2,19 @@
 product: campaign
 title: 监测工作流执行
 description: 监测工作流执行
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2016'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # 监测工作流执行 {#monitoring-workflow-execution}
 
-![](../../assets/v7-only.svg)
+
 
 本节介绍有关如何监控工作流执行情况的信息。
 
@@ -131,7 +132,7 @@ ht-degree: 0%
 
 ![](assets/wf-notification_error-console.png)
 
-您可以配置工作流，以便在发生错误时不会暂停并继续执行。 为此，请编辑工作流 **[!UICONTROL Properties]** 和 **[!UICONTROL Error management]** 选择 **[!UICONTROL Ignore]** 选项 **[!UICONTROL In case of error]** 字段。 然后，您可以指定在暂停进程之前可忽略的连续错误数。
+可以配置工作流，使其在发生错误时不暂停并继续执行。为此，请编辑工作流 **[!UICONTROL Properties]** 和 **[!UICONTROL Error management]** 选择 **[!UICONTROL Ignore]** 选项 **[!UICONTROL In case of error]** 字段。 随后，您可以指定在流程暂停前可忽略的连续错误的数量。
 
 在这种情况下，错误任务被中止。 此模式特别适用于设计为稍后重新尝试营销活动（定期操作）的工作流。
 

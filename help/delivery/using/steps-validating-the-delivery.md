@@ -2,18 +2,20 @@
 product: campaign
 title: 验证投放
 description: 了解如何验证投放
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1666'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
 # 验证投放 {#validating-the-delivery}
 
-![](../../assets/common.svg)
+
 
 创建并配置投放后，您必须先验证投放，然后再将其发送到主目标。
 
@@ -62,7 +64,7 @@ ht-degree: 5%
 
 1. 等待分析完成。
 
-   分析完成后，窗口的上半部分会指示投放准备是否完成或是否发生任何错误。 列出了所有验证步骤、警告和错误。 彩色图标显示消息类型：
+   分析完成后，窗口的上半部分会指示投放准备是否完成或是否发生任何错误。 这将列出所有验证步骤、警告和错误。彩色图标显示消息类型：
    * 蓝色图标表示信息性消息。
    * 黄色图标表示非关键处理错误。
    * 红色图标表示阻止发送投放的严重错误。
@@ -209,7 +211,7 @@ ht-degree: 5%
 
 ## 更改批准模式 {#changing-the-approval-mode}
 
-的 **[!UICONTROL Analysis]** 选项卡（用于提交属性），可让您选择验证模式。 如果在分析期间生成警告（例如，如果某些字符在投放的主题中突出显示等），则可以配置投放以定义是否应仍执行该投放。 默认情况下，用户必须在分析阶段结束时确认消息的发送：此为 **手动** 验证。
+的 **[!UICONTROL Analysis]** 选项卡（用于提交属性），可让您选择验证模式。 如果在分析期间生成警告（例如，如果某些字符在投放的主题中突出显示等），则可以配置投放以定义是否应仍执行该投放。 默认情况下，用户必须在分析阶段结束时确认消息的发送：这是&#x200B;**手动**&#x200B;验证。
 
 从相应字段的下拉列表中选择其他批准模式。
 

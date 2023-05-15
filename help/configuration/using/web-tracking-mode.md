@@ -2,17 +2,18 @@
 product: campaign
 title: Web 跟踪模式
 description: 了解如何选择Web跟踪模式
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: b0f30c1f-cdc9-4ad2-8a6c-19d5aae4feb3
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '681'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Web 跟踪模式{#web-tracking-mode}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign允许您选择Web跟踪模式，该模式定义在应用程序中处理跟踪日志的方式。
 
@@ -49,7 +50,7 @@ Adobe Campaign允许您选择Web跟踪模式，该模式定义在应用程序中
 
 此模式会为具有会话Cookie的用户创建跟踪日志。 这些用户点击了Adobe Campaign发送的电子邮件中的URL，以便我们能够跟踪以下信息：
 
-* 投放ID
+* 投放 ID
 * 联系人ID
 * 投放日志
 * 永久cookie(uuid230)

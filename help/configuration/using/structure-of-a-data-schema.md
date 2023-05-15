@@ -2,11 +2,12 @@
 product: campaign
 title: 数据模式的结构
 description: 数据模式的结构
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 86036f2f-ec7c-413e-b1e1-10a71a06cd6d
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 10%
@@ -14,8 +15,6 @@ ht-degree: 10%
 ---
 
 # 数据模式的结构{#structure-of-a-data-schema}
-
-![](../../assets/v7-only.svg)
 
 数据模式的结构以树结构的形式显示。 要在Adobe Campaign客户端控制台中以图形方式查看它，请选择目标架构，然后单击 **[!UICONTROL Structure]** 子选项卡。
 

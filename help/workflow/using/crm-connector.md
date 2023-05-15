@@ -1,18 +1,19 @@
 ---
 title: CRM 连接器
 description: 进一步了解CRM连接器和配置数据同步
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '113'
-ht-degree: 3%
+ht-degree: 10%
 
 ---
 
 # CRM 连接器{#crm-connector}
 
-![](../../assets/v7-only.svg)
+
 
 的 **CRM连接器** 活动，可配置Adobe Campaign与CRM系统之间的数据同步。
 
@@ -21,9 +22,9 @@ ht-degree: 3%
 通过此活动，您可以：
 
 * 从CRM导入
-* 导出到CRM
+* 导出到 CRM
 * 导入在CRM中删除的对象
-* 删除CRM中的对象
+* 删除 CRM 中的对象
 
 ![](assets/crm_task_select_op.png)
 

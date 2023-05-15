@@ -2,9 +2,10 @@
 product: campaign
 title: 监测技术工作流
 description: 监测技术工作流
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 6%
@@ -13,7 +14,7 @@ ht-degree: 6%
 
 # 监测技术工作流 {#monitoring-technical-workflows}
 
-![](../../assets/v7-only.svg)
+
 
 需要监控技术工作流，并在其失败时采取相应的操作。
 

@@ -2,20 +2,21 @@
 product: campaign
 title: 操作员用户档案
 description: 操作员用户档案
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
 # 操作员用户档案{#operator-profiles}
 
-![](../../assets/v7-only.svg)
+
 
 使用交互的运算符有两种类型：选件经理和投放经理。 它们各自具有特定权限，仅允许它们访问树和平台的某些部分。
 
@@ -37,7 +38,7 @@ ht-degree: 5%
 * 查看 **[!UICONTROL Live]** 环境。
 * 配置管理功能（预定义空格和过滤器）。
 * 创建和更改类别。
-* 创建选件。
+* 创建优惠.
 * 配置选件资格。
 * 批准选件。
 
@@ -97,12 +98,12 @@ ht-degree: 5%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 预定义选件过滤器<br /> </td> 
+   <td> 预定义优惠过滤器<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 分类<br /> </td> 
+   <td> 类型<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -117,7 +118,7 @@ ht-degree: 5%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 选件类别<br /> </td> 
+   <td> 优惠类别<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -157,12 +158,12 @@ ht-degree: 5%
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 预定义选件过滤器<br /> </td> 
+   <td> 预定义优惠过滤器<br /> </td> 
    <td> 读取<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 分类<br /> </td> 
+   <td> 类型<br /> </td> 
    <td> 读取<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -177,7 +178,7 @@ ht-degree: 5%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 选件类别<br /> </td> 
+   <td> 优惠类别<br /> </td> 
    <td> </td> 
    <td> 读取<br /> </td> 
   </tr> 

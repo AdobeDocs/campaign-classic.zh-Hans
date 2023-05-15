@@ -2,9 +2,11 @@
 product: campaign
 title: 访问跟踪日志
 description: 访问跟踪日志
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: df494786-5950-4646-aa9c-4dde45845057
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 17%
@@ -13,7 +15,7 @@ ht-degree: 17%
 
 # 访问跟踪日志{#accessing-the-tracking-logs}
 
-![](../../assets/common.svg)
+
 
 发送投放并激活跟踪后， **[!UICONTROL Tracking]** 技术工作流负责检索跟踪数据。 默认情况下，每小时执行一次。
 

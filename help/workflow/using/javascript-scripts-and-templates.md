@@ -2,9 +2,10 @@
 product: campaign
 title: JavaScript 脚本和模板
 description: JavaScript 脚本和模板
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # JavaScript 脚本和模板{#javascript-scripts-and-templates}
 
-![](../../assets/v7-only.svg)
+
 
 脚本使得可以计算值、在进程中的不同任务之间交换数据，以及使用SOAP调用执行特定操作。
 

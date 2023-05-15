@@ -2,9 +2,11 @@
 product: campaign
 title: 在报表中使用上下文
 description: 了解如何在报表中使用上下文
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 在报表中使用上下文{#using-the-context}
 
-![](../../assets/common.svg)
+
 
 当您想要以 **[!UICONTROL tables]** 或 **[!UICONTROL charts]**，可从两个来源获取：新查询(请参阅 [定义数据的直接过滤器](#defining-a-direct-filter-on-data))或报表上下文(请参阅 [使用上下文数据](#using-context-data))。
 

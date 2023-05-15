@@ -2,9 +2,11 @@
 product: campaign
 title: 通信渠道
 description: 创建投放，在不同渠道上发送个性化信息
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 20%
@@ -13,7 +15,7 @@ ht-degree: 20%
 
 # 通信渠道{#communication-channels}
 
-![](../../assets/common.svg)
+
 
 借助Adobe Campaign，您可以发送跨渠道营销活动，包括电子邮件、短信、LINE消息、推送通知和直邮，并使用各种专用的 [报告](../../reporting/using/delivery-reports.md). 这些消息通过投放设计和发送，并且可以针对每个收件人进行个性化。
 
@@ -21,7 +23,7 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->Adobe Campaign提供一组工具来监控您的投放能力并优化电子邮件发送。 在[此部分](about-deliverability.md)中了解更多信息。
+>Adobe Campaign提供一组工具来监控您的投放能力并优化电子邮件发送。 在[此章节](about-deliverability.md)中了解更多信息。
 
 通过准备投放和/或在工作流过程中发送投放，可自动发送投放。 有关工作流中投放类型活动的更多信息，请参阅 [此部分](../../workflow/using/about-action-activities.md).
 

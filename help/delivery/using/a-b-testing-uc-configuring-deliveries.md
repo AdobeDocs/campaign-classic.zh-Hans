@@ -2,9 +2,11 @@
 product: campaign
 title: 配置投放
 description: 了解如何通过专用用例执行A/B测试
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # 在工作流中配置投放 {#step-4--configuring-the-deliveries-in-the-workflow}
 
-![](../../assets/common.svg)
+
 
 一次 [群体创建](a-b-testing-uc-population-samples.md)，则可以配置投放。 在此用例中，前两个投放允许您向群体A和B发送不同的内容。第三个投放是回退投放：它将发送给不属于A或B的收件人。其内容将由脚本计算，并且与A或B相同，具体取决于打开率最高的收件人。 我们需要为第三个投放配置一个等待期，以了解投放A和B的结果。这就是第三个投放包含的原因 **[!UICONTROL Wait]** 活动。
 

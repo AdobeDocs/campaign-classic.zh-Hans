@@ -2,9 +2,11 @@
 product: campaign
 title: 条件内容
 description: 了解如何添加条件内容
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization, Multilingual Messages
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 7%
@@ -13,7 +15,7 @@ ht-degree: 7%
 
 # 条件内容{#conditional-content}
 
-![](../../assets/common.svg)
+
 
 通过配置条件内容字段，您可以创建基于收件人用户档案的动态个性化。 当满足特定条件时替换文本块和/或图像。
 

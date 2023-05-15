@@ -2,11 +2,12 @@
 product: campaign
 title: 数据库清理工作流
 description: 了解如何自动清理过时的数据
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: b472178316f97f08e9c87f8aebd707709f320e5f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2823'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # 数据库清理工作流{#database-cleanup-workflow}
 
-![](../../assets/v7-only.svg)
+
 
 ## 简介 {#introduction}
 

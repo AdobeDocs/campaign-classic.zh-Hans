@@ -2,18 +2,20 @@
 product: campaign
 title: 定义目标群体
 description: 了解如何定义目标群体
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Audiences, Proofs
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1598'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 定义目标群体 {#defining-the-target-population}
 
-![](../../assets/common.svg)
+
 
 对于每个投放，您可以定义多种类型的目标群体：
 
@@ -24,7 +26,7 @@ ht-degree: 2%
 
 ## 选择投放的主要收件人 {#selecting-the-main-target}
 
-在大多数情况下，主目标是从Adobe Campaign数据库中提取（默认模式）。 但是，收件人也可以存储在外部文件中。 在 [此部分](steps-defining-the-target-population.md#selecting-external-recipients).
+在大多数情况下，主目标是从Adobe Campaign数据库中提取（默认模式）。 但是，收件人也可以存储在外部文件中。 在[此章节](steps-defining-the-target-population.md#selecting-external-recipients)中了解更多信息。
 
 要选择投放的收件人，请执行以下步骤：
 

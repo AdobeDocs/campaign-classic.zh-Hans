@@ -2,17 +2,19 @@
 product: campaign
 title: 多维数据集入门
 description: 多维数据集入门
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Reporting
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '343'
 ht-degree: 24%
 
 ---
 
 # 多维数据集入门{#about-cubes}
 
-![](../../assets/v7-only.svg)
+
 
 通过 **营销分析** 模块。 它使您能够分析和测量数据、计算统计数据、简化和优化报表的创建和计算。 除此之外，营销分析还允许您创建报表和构建目标群体。 识别后，这些区段会存储在可在Adobe Campaign中使用的列表（定位、分段等）中。
 
@@ -44,4 +46,4 @@ ht-degree: 24%
 1. 使用多维数据集中计算和聚合的数据构建查询。
 1. 确定群体并在列表中引用它们。
 
-了解如何在中创建和使用多维数据集 [Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target=&quot;_blank&quot;}。
+了解如何在中创建和使用多维数据集 [Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target="_blank"}.

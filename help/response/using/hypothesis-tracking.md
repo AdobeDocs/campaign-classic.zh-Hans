@@ -2,11 +2,13 @@
 product: campaign
 title: 跟踪假设
 description: 了解如何在营销活动响应管理器中跟踪假设验证
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: 878ba2b532d5cb59af77b6450b12ae5d2ff149b2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 1%
@@ -15,13 +17,13 @@ ht-degree: 1%
 
 # 假设验证跟踪{#hypothesis-tracking}
 
-![](../../assets/common.svg)
+
 
 假设验证计算结果可在Adobe Campaign平台的不同级别获得：通过假设和目标群体反应计算的指标可通过实际假设以及通过营销活动和投放提供的假设验证报告中可见。
 
 ## 假设验证结果 {#hypothesis-results}
 
-### 指示器 {#indicators}
+### 指标 {#indicators}
 
 计算假设后，会自动更新多个测量指标。 这些功能在 **[!UICONTROL General]** 假设验证。
 

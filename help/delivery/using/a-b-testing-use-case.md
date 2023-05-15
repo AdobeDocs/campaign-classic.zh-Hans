@@ -2,9 +2,11 @@
 product: campaign
 title: AB测试用例
 description: 了解如何通过专用用例执行A/B测试
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # A/B测试此用例 {#ab-testing-use-case}
 
-![](../../assets/common.svg)
+
 
 在此用例中，我们将通过定位工作流比较两个电子邮件投放内容。 消息和文本在两个投放中都相同：只有布局发生更改。
 

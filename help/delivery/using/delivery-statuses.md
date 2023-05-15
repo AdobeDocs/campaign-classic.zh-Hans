@@ -2,18 +2,20 @@
 product: campaign
 title: 投放状态
 description: 了解有关投放仪表板上可用状态的更多信息
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
 # 投放状态 {#delivery-statuses}
 
-![](../../assets/common.svg)
+
 
 <!--ajouter intro 
 
@@ -50,11 +52,11 @@ ajouter screenshot -->
    <td> 由于收件人地址出错，未将投放发送给收件人。 已、已隔阻止列表离、未提供或存在重复项。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> 失败<br /> </td> 
+   <td> 已失败<br /> </td> 
    <td> 由于地址无效或收件箱已满等原因，投放无法到达收件人。 它还可以链接到个性化块的问题，因为当架构与投放映射不匹配时，这些块可能会生成错误。 请参阅 <a href="understanding-delivery-failures.md" target="_blank">了解投放失败</a><br /> </td> 
   </tr>
   <tr> 
-   <td> 待定<br /> </td> 
+   <td> 待处理<br /> </td> 
    <td> 投放已准备就绪，可供投放服务器(MTA)处理。 请参阅 <a href="#pending-status" target="_blank">待定状态</a>.<br /> </td> 
   </tr> 
   <tr> 
@@ -62,24 +64,24 @@ ajouter screenshot -->
    <td> 服务器(MTA)已考虑投放，但未处理。<br /> </td> 
   </tr>  
   <tr> 
-   <td> 已取消投放<br /> </td> 
+   <td> 投放已取消<br /> </td> 
    <td> 操作员取消了投放。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 服务提供商考虑<br /> </td> 
+   <td> 由服务提供商考虑<br /> </td> 
    <td> 短信服务提供商收到了投放。<br /> 对于托管安装或混合安装(如果已升级到 <a href="sending-with-enhanced-mta.md" target="_blank">增强的MTA</a>，则该消息已成功从Campaign中继到增强MTA。</td> 
   </tr> 
   <tr> 
-   <td> 在移动设备上接收<br /> </td> 
+   <td> 已在移动设备上接收<br /> </td> 
    <td> 收件人在其移动设备上收到了短信。<br /> </td> 
   </tr>
   <tr> 
-   <td> 发送给服务提供商<br /> </td> 
+   <td> 已发送给服务提供商<br /> </td> 
    <td> 已将投放发送到短信服务提供商，但尚未收到。<br />
    </td> 
   </tr> 
   <tr> 
-   <td> 准备好<br /> </td> 
+   <td> 已准备<br /> </td> 
    <td> 中间状态仅用于外部连接器（如移动渠道）。 它遵循“待定”状态，是将确定以下状态的外部连接器。<br /> </td> 
   </tr> 
  </tbody> 

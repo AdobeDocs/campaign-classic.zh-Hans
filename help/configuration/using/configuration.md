@@ -2,8 +2,9 @@
 product: campaign
 title: 配置Campaign Explorer导航树
 description: 了解如何配置Campaign Explorer导航树
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 1%
@@ -11,8 +12,6 @@ ht-degree: 1%
 ---
 
 # 配置Campaign Explorer导航树{#configuration}
-
-![](../../assets/v7-only.svg)
 
 作为专家用户，您可以在资源管理器树中添加文件夹并对其进行自定义。
 
@@ -265,7 +264,7 @@ A **`<command>`** 元素可包含 **`<command>`** 子元素。 在这种情况�
 
 使用命令分隔符可显示命令之间的分隔条。 它由 **&#39;-&#39;** 命令标签中包含的值。
 
-可选存在 **`<soapcall>`** 标记及其输入参数定义要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+可选存在 **`<soapcall>`** 标记及其输入参数定义要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans).
 
 可以通过 **`<enter>`** 标记。 有关此标记的更多信息，请参阅输入表单文档。
 

@@ -2,11 +2,12 @@
 product: campaign
 title: 图像显示问题
 description: 图像显示问题
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 62fa491e-3e83-422b-bcde-2bae2c1b676e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 6%
@@ -15,7 +16,7 @@ ht-degree: 6%
 
 # 图像显示问题{#image-display-issues}
 
-![](../../assets/v7-only.svg)
+
 
 如果您在已发送的消息中遇到图像显示问题，原因可能与错误位置相关：
 

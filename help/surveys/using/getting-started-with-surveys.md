@@ -2,9 +2,11 @@
 product: campaign
 title: 创建调查的关键步骤
 description: 使用Campaign创建您的第一个调查
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 创建调查的关键步骤{#getting-started-with-surveys}
 
-![](../../assets/common.svg)
+
 
 以下是使用以下内置模板创建简单调查的主要步骤的快速概述：
 

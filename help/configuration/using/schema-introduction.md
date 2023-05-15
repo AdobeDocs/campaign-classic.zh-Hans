@@ -2,8 +2,9 @@
 product: campaign
 title: 模式参考
 description: 架构参考列表
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 21%
@@ -11,8 +12,6 @@ ht-degree: 21%
 ---
 
 # 模式参考 {#schema-reference}
-
-![](../../assets/v7-only.svg)
 
 在编辑模式时，可使用基于源模式(xtk:srcSchema)的审批系统。 在使用“数据库结构更新……”更新数据库时，也会发现一些错误 向导。
 

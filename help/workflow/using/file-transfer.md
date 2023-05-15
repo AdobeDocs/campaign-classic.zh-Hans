@@ -2,18 +2,19 @@
 product: campaign
 title: 文件传输
 description: 了解有关文件传输工作流活动的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 文件传输{#file-transfer}
 
-![](../../assets/v7-only.svg)
+
 
 的 **文件传输** 活动允许您接收或发送文件、测试文件存在情况或在服务器上列出文件。 使用的协议为Azure Blob Storage、Amazon Simple Storage Service(S3)、FTP或SFTP。
 通过S3、Azure Blob Storage或SFTP连接，您还可以通过Adobe实时客户数据平台将区段数据导入Adobe Campaign。 有关更多信息，请参阅此 [文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
@@ -56,7 +57,7 @@ ht-degree: 1%
 
    的 **[!UICONTROL Keep history of files sent]** 选项可让您跟踪发送的文件。 可以从目录访问此历史记录。
 
-1. **测试以查看文件是否存在**
+1. **测试文件是否存在**
 
    要测试文件是否存在，请选择 **[!UICONTROL Test to see if file exists]** 选项 **[!UICONTROL Action]** 字段。 远程服务器的配置与文件下载的配置相同。 有关更多信息，请参阅 [部分](#properties).
 

@@ -1,25 +1,26 @@
 ---
 product: campaign
 title: 脚本和编码准则
-description: 进一步了解在Adobe Campaign中进行开发时应遵循的准则（工作流、Javascript、JSSP等）。
+description: 进一步了解在Adobe Campaign中进行开发时应遵循的准则（工作流、Javascript、JSSP等）
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 # 脚本和编码准则 {#scripting-coding-guidelines}
 
-![](../../assets/v7-only.svg)
+
 
 ## 脚本
 
-有关更多详细信息，请参阅 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+有关更多详细信息，请参阅 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans).
 
 如果您使用工作流、Web应用程序、jssp编写脚本，请遵循以下最佳实践：
 
@@ -56,7 +57,7 @@ ht-degree: 3%
 >
 >如果您使用的内部版本低于8140，则 **XtkPassUnknownSQLFunctionsToRDBMS** 选项可能会设置为“1”。 如果要保护数据库，请删除此选项（或将其设置为“0”）。
 
-如果使用用户输入在查询或SQL语句中生成过滤器，则始终必须对它们进行转义(请参阅 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)  — 数据保护：转义函数)。 这些函数包括：
+如果使用用户输入在查询或SQL语句中生成过滤器，则始终必须对它们进行转义(请参阅 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)  — 数据保护：转义函数)。 这些函数包括：
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)

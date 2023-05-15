@@ -2,18 +2,20 @@
 product: campaign
 title: 通过工作流实现自动化
 description: 了解如何通过工作流实现内容管理自动化
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Workflows
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1190'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 使用工作流实现自动化{#automating-via-workflows}
 
-![](../../assets/common.svg)
+
 
 ## 内容管理活动 {#content-management-activity}
 
@@ -36,7 +38,7 @@ ht-degree: 0%
 
    要使用的内容是之前创建的。 进程将涉及由传入事件传播的内容实例。 内容标识符通过事件的“contentId”变量进行访问。
 
-* **显式**
+* **明确**
 
    允许您选择之前创建的内容。
 

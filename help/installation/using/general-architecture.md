@@ -2,11 +2,12 @@
 product: campaign
 title: Campaign Classic一般架构
 description: 了解如何安装和配置Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # 一般架构{#general-architecture}
 
-![](../../assets/v7-only.svg)
+
 
 典型的Adobe Campaign解决方案部署包含以下组件：
 

@@ -2,11 +2,12 @@
 product: campaign
 title: 访问外部数据库的权限
 description: 外部数据库访问权限
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # 远程数据库访问权限 {#remote-database-access-rights}
 
-![](../../assets/v7-only.svg)
+
 
 首先，为了使用户能够通过FDA对外部数据库执行操作，后者必须在Adobe Campaign中具有特定的命名权限。
 
@@ -55,7 +56,7 @@ ht-degree: 1%
 | **创建表** | 创建关于架构权限的表 | 创建权限 | 创建表权限 | 创建表权限 | 创建权限 | 创建权限 |
 | **创建索引** | N/A | 创建权限 | 索引或创建任何索引权限 | ALTER权限 | 创建权限 | 索引权限 |
 | **创建函数** | 创建关于架构权限的函数 | 使用语言plpythonu权限可调用外部python脚本 | 创建过程或创建任何过程权限 | 创建函数权限 | 使用权限 | 创建例程权限 |
-| **创建过程** | 不适用 | 使用语言plpythonu权限可调用外部python脚本 | 创建过程或创建任何过程权限 | 创建过程权限 | 使用权限（过程是函数） | 创建例程权限 |
+| **创建过程** | N/A | 使用语言plpythonu权限可调用外部python脚本 | 创建过程或创建任何过程权限 | 创建过程权限 | 使用权限（过程是函数） | 创建例程权限 |
 | **删除对象（表、索引、函数、过程）** | 拥有对象 | 拥有对象或是超级用户 | 删除任意&lt;对象>权限 | ALTER权限 | 表：拥有表索引：拥有索引函数：拥有函数 | 删除权限 |
 | **监控执行** | 所需对象的MONITOR权限 | 使用EXPLAIN命令无需任何权限 | INSERT和SELECT权限以及执行EXPLAIN PLAN所基于的语句的必要权限 | SHOWPLAN权限 | 使用EXPLAIN语句无需任何权限 | 选择权限 |
 | **写入数据** | INSERT和/或UPDATE权限（取决于写入操作） | 插入和更新权限 | 插入和更新或插入和更新任何表权限 | 插入和更新权限 | 插入和更新权限 | 插入和更新权限 |

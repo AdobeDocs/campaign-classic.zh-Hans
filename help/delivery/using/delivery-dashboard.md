@@ -2,18 +2,20 @@
 product: campaign
 title: 投放仪表板
 description: 进一步了解如何使用投放仪表板监控投放
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 # 投放仪表板 {#delivery-dashboard}
 
-![](../../assets/common.svg)
+
 
 的 **投放仪表板** 是监控投放情况以及在发送消息过程中遇到的最终问题的关键。
 
@@ -69,7 +71,7 @@ ht-degree: 4%
 
 ## 投放跟踪日志和历史记录 {#tracking-logs}
 
-的 **[!UICONTROL Tracking]** 选项卡列出了此投放的跟踪历史记录。 此选项卡显示已发送消息的跟踪数据，即所有受Adobe Campaign跟踪的URL。 跟踪数据每小时更新一次。
+的 **[!UICONTROL Tracking]** 选项卡列出了此投放的跟踪历史记录。 此选项卡显示已发送消息的跟踪数据，即由 Adobe Campaign 跟踪的所有 URL。跟踪数据每小时更新一次。
 
 >[!NOTE]
 >

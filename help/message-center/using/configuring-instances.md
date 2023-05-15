@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: 配置实例
-description: 了解如何在Adobe Campaign Classic中配置事务型消息传递控制和执行实例。
+description: 了解如何在Adobe Campaign Classic中配置事务型消息传递控制和执行实例
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 1%
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 # 配置实例 {#creating-a-shared-connection}
 
-![](../../assets/v7-only.svg)
+
 
 要使用事务型消息传递功能，您需要配置控制和执行实例。 您可以使用以下任一方法：
 * [一个控制实例](#control-instance) 与一个或多个执行实例关联

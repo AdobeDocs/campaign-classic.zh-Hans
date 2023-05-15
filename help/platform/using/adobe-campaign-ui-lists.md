@@ -2,9 +2,10 @@
 product: campaign
 title: 管理和自定义列表
 description: 了解如何浏览和配置列表
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 84%
@@ -13,7 +14,7 @@ ht-degree: 84%
 
 # 管理和自定义列表{#manage-and-customize-lists}
 
-![](../../assets/v7-only.svg)
+
 
 您可以使用资源管理器访问Campaign数据库中的记录列表。 您可以过滤这些列表、运行搜索、添加信息、过滤和排序数据。
 

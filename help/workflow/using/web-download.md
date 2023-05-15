@@ -2,9 +2,10 @@
 product: campaign
 title: Web 下载
 description: 进一步了解Web下载工作流活动
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Web 下载{#web-download}
 
-![](../../assets/v7-only.svg)
+
 
 的 **Web下载** 活动会启动下载显式URL、外部帐户或Adobe Campaign实例上的文件。 使用HTTP协议。 这可以是GET或POST下载。
 

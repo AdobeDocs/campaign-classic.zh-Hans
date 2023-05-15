@@ -2,9 +2,10 @@
 product: campaign
 title: 关于活动类型
 description: 关于活动类型
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Typology Rules
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 19%
@@ -12,8 +13,6 @@ ht-degree: 19%
 ---
 
 # 关于活动类型{#about-campaign-typologies}
-
-![](../../assets/v7-only.svg)
 
 Campaign Optimization是Adobe Campaign模块，可让您控制、过滤和监控投放的发送。 为了避免活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这可确保所发送的邮件符合客户的需求与期望以及公司的通信政策。
 

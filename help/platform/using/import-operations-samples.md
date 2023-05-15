@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: 通用导入范例
-description: 了解有关使用导入作业可以执行的通用导入的更多信息。
+description: 了解有关使用导入作业可以执行的通用导入的更多信息
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 64%
@@ -15,7 +17,7 @@ ht-degree: 64%
 
 # 通用导入范例 {#import-operations-samples}
 
-![](../../assets/common.svg)
+
 
 ## 从收件人清单导入 {#example--import-from-a-list-of-recipients}
 

@@ -2,9 +2,10 @@
 product: campaign
 title: Campaign Classic数据模型快速入门
 description: 了解如何扩展 Campaign 数据模型、编辑模式、使用 API 等
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Data Model
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 6%
@@ -12,8 +13,6 @@ ht-degree: 6%
 ---
 
 # Campaign 数据模型快速入门{#about-data-model}
-
-![](../../assets/v7-only.svg)
 
 Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间的交互组成。本页列出了主表和概念。
 

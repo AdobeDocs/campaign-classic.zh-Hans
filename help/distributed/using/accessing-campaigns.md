@@ -2,9 +2,10 @@
 product: campaign
 title: 访问活动
 description: 访问活动
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Distributed Marketing
 exl-id: 5534bd5b-6888-4bf6-8a39-109c6fc0f6c3
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 3%
@@ -13,7 +14,7 @@ ht-degree: 3%
 
 # 访问活动{#accessing-campaigns}
 
-![](../../assets/v7-only.svg)
+
 
 对营销活动进行订购后，该订单已获得批准，并且已到达可用日期，便可以执行该活动。
 

@@ -2,8 +2,10 @@
 product: campaign
 title: 配置界面
 description: 了解如何配置Campaign界面
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -12,7 +14,7 @@ ht-degree: 0%
 
 # 配置界面{#configuring-the-interface}
 
-![](../../assets/common.svg)
+
 
 要在Adobe Campaign界面中查看新收件人表并与之对话，请应用以下步骤：
 
@@ -24,7 +26,7 @@ Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数�
 
 1. 转到 **[!UICONTROL Administration>Platform>Options]** 资源管理器的节点。
 1. 更改 **Nms_DefaultRcpSchema** 变量，其名称与外部收件人表匹配的架构(在本例中为：cus:indival)。
-1. 保存更改。
+1. 保存更改.
 
 ## 创建新表单 {#creating-a-new-form-}
 

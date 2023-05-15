@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: 配置导出作业
-description: 了解如何在Campaign Classic中配置和执行导出作业。
+description: 了解如何在Campaign中配置和执行导出作业
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '925'
 ht-degree: 45%
 
 ---
 
 # 配置导出作业 {#executing-export-jobs}
 
-![](../../assets/common.svg)
+
 
 利用导出作业，可访问和提取数据库中的数据：联系人、客户、列表、区段等
 

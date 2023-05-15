@@ -2,18 +2,20 @@
 product: campaign
 title: 配置并发送投放
 description: 了解如何配置和发送投放
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1502'
-ht-degree: 4%
+ht-degree: 11%
 
 ---
 
 # 配置并发送投放 {#configuring-and-sending-the-delivery}
 
-![](../../assets/common.svg)
+
 
 ## 权限{#delivery-permissions}
 
@@ -35,7 +37,7 @@ ht-degree: 4%
 
 * **[!UICONTROL Send using multiple waves]**:使用此选项可批量发送消息，而不是一次发送给整个受众。 [了解详情](#sending-using-multiple-waves)。
 
-* **[!UICONTROL Test SMTP delivery]**:使用此选项可测试通过SMTP的发送。 投放会一直处理到与SMTP服务器的连接，但不会发送：对于投放的每个收件人，Campaign会连接到SMTP提供程序服务器，执行SMTP RCPT TO命令，然后在SMTP DATA命令之前关闭连接。
+* **[!UICONTROL Test SMTP delivery]**:使用此选项可测试通过SMTP的发送。 处理投放直至连接到 SMTP 服务器，但不发送：对于投放的每个收件人，Campaign 连接到 SMTP 提供商服务器，执行 SMTP RCPT TO 命令，并在执行 SMTP DATA 命令之前关闭连接。
 
    >[!NOTE]
    >
@@ -106,7 +108,7 @@ ht-degree: 4%
 
 ![](assets/s_ncs_user_email_del_plan_calendar_timezone.png)
 
-## 使用多个批次发送 {#sending-using-multiple-waves}
+## 使用多批次发送 {#sending-using-multiple-waves}
 
 要平衡负载，您可以将投放分为多个批次。 配置批数及其相对于整个交货的比例。
 
@@ -188,9 +190,9 @@ ht-degree: 4%
 
 ![](assets/s_ncs_user_email_del_valid_period.png)
 
-* 的 **[!UICONTROL Delivery duration]** 字段允许您输入全局投放重试的限制。 这意味着Adobe Campaign从开始日期开始发送消息，然后，对于仅返回错误的消息，会执行常规的可配置重试，直到达到有效性限制为止。
+* 的 **[!UICONTROL Delivery duration]** 字段允许您输入全局投放重试的限制。 这意味着，Adobe Campaign 从开始日期开始发送消息，然后对于仅返回错误的消息，将执行定期、可配置的重试，直至达到有效期限。
 
-   您还可以选择指定日期。 要执行此操作，请选择 **[!UICONTROL Explicitly set validity dates]**. 在这种情况下，投放和有效期限制日期还允许您指定时间。 默认使用当前时间，但您可以直接在输入字段中修改此时间。
+   您也可以选择指定日期。要执行此操作，请选择 **[!UICONTROL Explicitly set validity dates]**. 在此情况下，也可以使用投放和有效期限日期指定时间。默认情况下使用当前时间，但您可以直接在输入字段中修改此项。
 
    >[!IMPORTANT]
    >

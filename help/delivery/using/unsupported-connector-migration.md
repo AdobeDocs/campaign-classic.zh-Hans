@@ -2,18 +2,19 @@
 product: campaign
 title: 不支持的SMS连接器迁移
 description: 将不支持的SMS连接器迁移到扩展通用SMPP连接器
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 # 将不支持的SMS连接器迁移到扩展通用SMPP连接器{#unsupported-connector-migration}
 
-![](../../assets/v7-only.svg)
+
 
 自20.2版起，弃用旧版连接器。 本文档将帮助您将仍在旧系统上运行的连接器迁移到推荐的SMPP连接器。
 

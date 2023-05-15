@@ -2,11 +2,13 @@
 product: campaign
 title: 管理优惠模板
 description: 管理优惠模板
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: e4a6cc22-05bd-4b8a-984d-d0706fc210e1
-source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 5%
@@ -15,7 +17,7 @@ ht-degree: 5%
 
 # 管理优惠模板{#managing-offer-templates}
 
-![](../../assets/common.svg)
+
 
 选件模板在Adobe Campaign中现成提供。 在创建选件、复制选件或根据需要调整其配置后，您可以使用这些选件。 您还可以创建自己的模板。 模板选件存储在文件夹中 **资源** > **模板** > **选件模板**.
 

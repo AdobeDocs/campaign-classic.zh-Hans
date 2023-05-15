@@ -2,20 +2,21 @@
 product: campaign
 title: 创建和管理操作员组
 description: 了解如何授予对操作员组的访问权限
+badge: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
 
 # 创建和管理操作员组 {#operator-groups}
 
-![](../../assets/common.svg)
+
 
 运算符组通过 **[!UICONTROL Administration > Access management > Operator groups]** 树中的节点。
 

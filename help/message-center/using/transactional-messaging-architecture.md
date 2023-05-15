@@ -2,8 +2,9 @@
 product: campaign
 title: 事务性消息传递架构
 description: 本节介绍Adobe Campaign Classic事务型消息传递架构以及用于交付事务型消息的可用渠道
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
@@ -12,7 +13,7 @@ ht-degree: 1%
 
 # 事务性消息传递架构 {#transactional-messaging-architecture}
 
-![](../../assets/v7-only.svg)
+
 
 事务型消息传递依赖于由多个实例组成的特定架构：
 

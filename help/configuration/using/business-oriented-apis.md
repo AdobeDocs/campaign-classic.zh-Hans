@@ -2,9 +2,10 @@
 product: campaign
 title: 面向业务的 API
 description: 面向业务的 API
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: API
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 3%
@@ -13,13 +14,11 @@ ht-degree: 3%
 
 # 面向业务的 API{#business-oriented-apis}
 
-![](../../assets/v7-only.svg)
-
-业务API特定于每种类型的对象。 They have an effect on:
+业务API特定于每种类型的对象。 它们会对以下内容产生影响：
 
 * 投放:
 
-   * Creating a delivery action, refer to [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
+   * 创建投放操作，请参阅 [SubmitDelivery(nms:delivery)](#submitdelivery--nms-delivery-),
    * 发送营销活动（开始、暂停、停止、发送校样），
    * 恢复投放日志。
 
@@ -48,10 +47,10 @@ ht-degree: 3%
 
 * 验证，
 * 订阅服务的内部名称，
-* an XML document containing the recipient information (from the &quot;nms:recipient&quot; schema),
+* 包含收件人信息的XML文档（来自“nms:recipient”模式），
 * 一个布尔值，用于创建收件人（如果还没有）。
 
-Description of the &quot;subscribe&quot; method in the &quot;nms:subscription&quot; schema:
+“nms:subscription”模式中“subscribe”方法的描述：
 
 ```
 <method name="Subscribe" static="true">
@@ -101,7 +100,7 @@ Description of the &quot;subscribe&quot; method in the &quot;nms:subscription&qu
    </SOAP-ENV:Envelope>
    ```
 
-* 响应：
+* 响应:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -162,7 +161,7 @@ Description of the &quot;subscribe&quot; method in the &quot;nms:subscription&qu
 </SOAP-ENV:Body>
 ```
 
-Response:
+响应:
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -203,9 +202,9 @@ Response:
 
 除错误外，此调用不返回任何数据。
 
-### XML document example {#xml-document-example}
+### XML文档示例 {#xml-document-example}
 
-This example is based on a custom delivery template from an external data source (a file in this case). 投放模板中对配置进行了完整描述，因此在调用发生时，所有仍要发送的内容都是 `<externalsource>` 元素。
+此示例基于来自外部数据源（本例中为文件）的自定义投放模板。 投放模板中对配置进行了完整描述，因此在调用发生时，所有仍要发送的内容都是 `<externalsource>` 元素。
 
 ```
 <delivery>

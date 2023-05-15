@@ -2,20 +2,21 @@
 product: campaign
 title: 创建优惠
 description: 创建优惠
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '803'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 创建优惠{#creating-an-offer}
 
-![](../../assets/v7-only.svg)
+
 
 ## 创建选件 {#creating-the-offer}
 
@@ -65,7 +66,7 @@ ht-degree: 2%
 
 ![](assets/offer_eligibility_create_004.png)
 
-### 选件权重 {#offer-weight}
+### 优惠权重 {#offer-weight}
 
 要使引擎能够在目标符合条件的多个选件之间做出决定，您需要为选件分配一个或多个权重。 您还可以根据需要将过滤器应用到目标，或限制权重要应用到的选件空间。 与重量较轻的选件相比，将更喜欢权重较大的选件。
 

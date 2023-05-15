@@ -2,18 +2,19 @@
 product: campaign
 title: 发送带有附件的事务性电子邮件
 description: 了解如何使用Adobe Campaign发送包含单个和/或个性化附件的交易电子邮件
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 # 用例：发送带有附件的交易电子邮件 {#transactional-email-with-attachments}
 
-![](../../assets/v7-only.svg)
+
 
 此用例的用途是将电子邮件附件快速添加到出站调度。
 
@@ -52,7 +53,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->为避免出现性能问题，建议在每封电子邮件中不要包含多个附件。 建议的阈值可从 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
+>为了避免出现性能问题，建议每封电子邮件不要附加多个附件。建议的阈值可从 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## 实施 {#implementation}
 

@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: 生产疑难解答
-description: 了解与Adobe Campaign配置、监控、升级过程、数据处理和数据库维护过程相关的生产故障排除过程。
+description: 了解与Adobe Campaign配置、监控、升级过程、数据处理和数据库维护过程相关的生产故障排除过程
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 18%
@@ -15,7 +16,7 @@ ht-degree: 18%
 
 # 生产疑难解答{#troubleshooting}
 
-![](../../assets/v7-only.svg)
+
 
 本节包含与Adobe Campaign一般生产问题相关的故障诊断过程，例如投放和工作流执行、监控、数据库维护、连接等。
 

@@ -2,8 +2,9 @@
 product: campaign
 title: 定义Web跟踪标记
 description: 定义Web跟踪标记
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 2%
@@ -12,7 +13,7 @@ ht-degree: 2%
 
 # Web 跟踪标记：定义{#web-tracking-tag-definition}
 
-![](../../assets/v7-only.svg)
+
 
 Web跟踪标记只是使用相应参数构建的URL，通过HTTP查询发送到重定向服务器。
 

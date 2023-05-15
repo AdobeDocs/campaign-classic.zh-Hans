@@ -2,9 +2,10 @@
 product: campaign
 title: 向列表发送报告
 description: 了解如何使用工作流将报表发送到列表
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # 向列表发送报告{#sending-a-report-to-a-list}
 
-![](../../assets/v7-only.svg)
+
 
 此用例详细说明了如何生成每月即装即用 **[!UICONTROL Tracking indicators]** 报表格式，以及如何将其发送到收件人列表。
 

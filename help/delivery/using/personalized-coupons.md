@@ -2,9 +2,11 @@
 product: campaign
 title: 个性化优惠券
 description: 了解如何创建和插入个性化优惠券
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 个性化优惠券{#personalized-coupons}
 
-![](../../assets/common.svg)
+
 
 向投放添加优惠券可为收件人提供更高的产品和服务价值。 您可以使用促销活动优惠券模块创建一组要添加到即将推出的营销选件的优惠券。 准备好创建投放时，分配适用的优惠券。 由于优惠券在选定时段内有效，因此分配的优惠券将唯一地链接到其投放消息。 此外，Campaign会确认在发送投放之前有足够的优惠券接收消息数量。
 

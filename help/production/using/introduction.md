@@ -2,26 +2,27 @@
 product: campaign
 title: 简介
 description: 简介
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 3e39a0d2-ff7e-4233-82bb-2b360f696a33
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
 
 # 简介{#introduction}
 
-![](../../assets/v7-only.svg)
+
 
 本节介绍升级Adobe Campaign、客户端和服务器端时应用的过程，并介绍如何将现有实例切换为Unicode。
 
 >[!NOTE]
 >
->对于托管实例，您必须与Adobe管理员进行协调。\
+>对于托管/托管服务实例，您必须与Adobe管理员进行协调。\
 >对于内部部署实例，您可以从Adobe顾问处获得帮助。
 
 必须将升级应用于安装Adobe Campaign的所有服务器。

@@ -2,11 +2,12 @@
 product: campaign
 title: 创建预定义过滤器
 description: 创建预定义过滤器
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 399e9468-bf70-425d-af0b-72c29636b513
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 10%
@@ -15,7 +16,7 @@ ht-degree: 10%
 
 # 创建预定义过滤器{#creating-predefined-filters}
 
-![](../../assets/v7-only.svg)
+
 
 通过预定义过滤器，您可以为目标群体创建资格规则，这些规则可在选件创建期间轻松重复使用。 它们特定于每个环境，并考虑选件参数。
 

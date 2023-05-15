@@ -2,20 +2,21 @@
 product: campaign
 title: 管理明细列表
 description: 管理明细列表
+badge: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
 
 # 管理枚举{#managing-enumerations}
 
-![](../../assets/common.svg)
+
 
 明细列表（也称为“明细列表”）是系统建议用于填充某些字段的值列表。 枚举可让您标准化这些字段的值，并有助于数据输入或在查询中使用。
 

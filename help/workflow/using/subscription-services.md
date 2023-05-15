@@ -2,9 +2,10 @@
 product: campaign
 title: 订阅服务
 description: 了解有关订阅服务工作流活动的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity, Subscription Services Activity
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # 订阅服务{#subscription-services}
 
-![](../../assets/v7-only.svg)
+
 
 A **订阅服务**-type活动允许您为过渡中指定的群体创建或删除信息服务订阅。
 

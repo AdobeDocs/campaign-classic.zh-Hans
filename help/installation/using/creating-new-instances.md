@@ -2,11 +2,12 @@
 product: campaign
 title: 创建新实例
 description: 创建新实例
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 3b87eb3c-3b50-4ed4-80b1-4333261ffe0b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 10%
@@ -15,7 +16,7 @@ ht-degree: 10%
 
 # 创建新实例{#creating-new-instances}
 
-![](../../assets/v7-only.svg)
+
 
 安装Adobe Campaign并创建实例后，您可以从控制台添加新实例。 此创建模式允许您创建跟踪实例，而无需访问控制台。
 

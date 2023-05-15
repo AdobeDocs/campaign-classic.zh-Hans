@@ -2,18 +2,20 @@
 product: campaign
 title: 定义正确的受众
 description: 了解选择受众时的最佳实践
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Audiences
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # 定义正确的受众 {#define-the-right-audience}
 
-![](../../assets/common.svg)
+
 
 目标群体是关键：仔细构建列表，在流行的电子邮件客户端和移动设备上测试电子邮件，并确保电子邮件列表是最新的（地址不未知或过时）。 您还可以发送校样，以帮助设置完整的验证周期。
 

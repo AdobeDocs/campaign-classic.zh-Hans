@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: 在Adobe Campaign Classic中管理投放能力时的要点
-description: 在Adobe Campaign Classic中管理投放能力时，需要检查哪些要点？
+description: 了解在Adobe Campaign中管理投放能力时要检查的要点
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '654'
 ht-degree: 2%
 
 ---
 
 # 投放能力疑难解答{#deliverability-faq}
 
-![](../../assets/common.svg)
+
 
 您遇到投放能力问题吗？ 你可以在这里找到解决方案。
 

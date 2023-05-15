@@ -2,11 +2,12 @@
 product: campaign
 title: 关于部署类型
 description: 关于部署类型
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 08628efb-9186-4b67-9431-310d4bc276b4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 6%
@@ -15,7 +16,7 @@ ht-degree: 6%
 
 # 关于部署类型{#about-deployment-types}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign的模块化设计支持各种部署配置，从独立设置（一台计算机上的所有组件）到使用多台服务器的完全冗余和分布式体系结构的企业部署。 所有这些都取决于所需的性能和安全性级别。
 

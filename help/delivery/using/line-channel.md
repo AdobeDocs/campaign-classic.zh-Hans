@@ -2,18 +2,20 @@
 product: campaign
 title: 创建LINE投放
 description: 了解如何创建LINE报文
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Line App
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1153'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 创建LINE投放{#line-channel}
 
-![](../../assets/common.svg)
+
 
 [!DNL LINE] 是免费即时消息、语音和视频呼叫的应用程序，适用于每个移动操作系统和PC上。
 
@@ -177,8 +179,8 @@ A **[!UICONTROL Text message]** [!DNL LINE] 投放是以文本形式发送给收
 
    可根据屏幕大小定义图像：
 
-   * 1040像素
-   * 700像素
+   * 1040px
+   * 700px
    * 460px
    * 300px
    * 240px

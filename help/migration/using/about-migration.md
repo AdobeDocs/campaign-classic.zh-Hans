@@ -2,13 +2,14 @@
 product: campaign
 title: 迁移到Campaign Classic
 description: 了解如何从以前的Campaign版本迁移到Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
 topic-tags: migration-overview
 hide: true
 hidefromtoc: true
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
-source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 3%
@@ -17,7 +18,7 @@ ht-degree: 3%
 
 # 迁移入门{#about-migration}
 
-![](../../assets/v7-only.svg)
+
 
 本文档详细介绍迁移的先决条件以及迁移到Adobe Campaign Classic v7的步骤。 步骤和可选设置取决于您的配置。
 

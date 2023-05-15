@@ -2,18 +2,19 @@
 product: campaign
 title: CRM连接器数据同步
 description: 在Campaign和CRM之间管理数据
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Salesforce Integration, Microsoft CRM Integration
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1536'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 在Campaign和CRM之间同步数据 {#data-synchronization}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行的： [CRM连接器](../../workflow/using/crm-connector.md).
 
@@ -244,7 +245,7 @@ Adobe Campaign和CRM之间的数据同步是通过专用的工作流活动执行
    >
    >元素删除期间必须与CRM特定的限制相一致。 这意味着，例如，对于Salesforce.com，无法恢复在30天前删除的元素。
 
-## 删除CRM中的对象 {#deleting-objects-in-the-crm}
+## 删除 CRM 中的对象 {#deleting-objects-in-the-crm}
 
 要删除CRM端的对象，您需要指定要删除的远程元素的主键。
 

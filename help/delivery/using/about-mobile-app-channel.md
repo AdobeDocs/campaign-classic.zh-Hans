@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: '移动应用程序渠道入门 '
-description: 移动应用程序渠道快速入门，Adobe Campaign Classic
+title: 移动应用程序渠道入门
+description: 移动应用程序渠道快速入门，Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Push
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '665'
 ht-degree: 2%
 
 ---
 
 # 移动应用程序渠道入门{#about-mobile-app-channel}
 
-![](../../assets/common.svg)
+
 
 的 **移动设备应用程序渠道** 允许您使用Adobe Campaign平台通过应用程序向iOS和Android终端发送个性化推送通知。
 
@@ -94,7 +96,7 @@ Adobe Campaign服务器必须能够在iOS HTTP/2连接器的443端口上联系AP
    api.development.push.apple.com:443
    ```
 
-* 在生产中：
+* 生产中:
 
    ```
    api.push.apple.com:443

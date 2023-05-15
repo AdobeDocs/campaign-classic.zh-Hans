@@ -2,18 +2,19 @@
 product: campaign
 title: 构建工作流
 description: 了解如何构建工作流
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1623'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
 # 构建工作流 {#building-a-workflow}
 
-![](../../assets/v7-only.svg)
+
 
 本节详细介绍在Campaign中构建工作流的主要原则和最佳实践。
 
@@ -153,7 +154,7 @@ ht-degree: 3%
 
 ### 定位和筛选维度 {#targeting-and-filtering-dimensions}
 
-在数据分段操作期间，定向键值会映射到过滤维度。 利用定向维度，可定义操作所定向的群体：收件人、合同受益人、操作员、订阅者等 通过筛选维度，您可以根据特定条件选择群体：合同持有者、新闻稿订阅者等
+在数据分段操作过程中，定位键将映射到筛选维度。定位维度可让您定义操作的目标人群：收件人、合同受益人、操作人员、订阅者等。筛选维度可让您根据特定标准选择人群：合同持有人、时事通讯订阅者等。
 
 例如，要选择拥有寿险保单超过5年的客户，请选择以下定向维度： **客户** 和以下过滤维度： **合同持有人**. 然后，您可以在查询活动中定义筛选条件
 

@@ -2,9 +2,10 @@
 product: campaign
 title: 文件收集器
 description: 了解有关文件收集器工作流活动的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # 文件收集器{#file-collector}
 
-![](../../assets/v7-only.svg)
+
 
 的 **文件收集器** 监视一个或多个文件到达目录中的情况，并为收到的每个文件激活其过渡。 对于每个事件， **[!UICONTROL filename]** 变量包含收到的文件的全名。 收集的文件将移至其他目录以进行存档，并确保只计数一次。
 

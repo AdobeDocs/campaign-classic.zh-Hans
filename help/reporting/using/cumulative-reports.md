@@ -2,9 +2,11 @@
 product: campaign
 title: 累积报告
 description: 累积报告
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: e67748dd-fa50-4992-b85f-474389e876cf
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 8%
@@ -13,7 +15,7 @@ ht-degree: 8%
 
 # 累积报告 {#cumulative-reports}
 
-![](../../assets/common.svg)
+
 
 您可以显示投放的累积报告。 为此，请选择要比较的投放，以获取这些投放的报告列表。
 

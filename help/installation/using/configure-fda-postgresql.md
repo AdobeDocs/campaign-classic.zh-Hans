@@ -2,7 +2,9 @@
 product: campaign
 title: 配置对PostgreSQL的访问权限
 description: 了解如何配置对PostgreSQL的访问权限
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+exl-id: 2c678f45-2555-4647-9885-bd002db7df37
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 1%
@@ -11,7 +13,7 @@ ht-degree: 1%
 
 # 配置对PostgreSQL的访问权限 {#configure-fda-postgresql}
 
-![](../../assets/v7-only.svg)
+
 
 使用Campaign **联合数据访问** (FDA)选项，用于处理存储在外部PostgreSQL数据库中的信息。
 

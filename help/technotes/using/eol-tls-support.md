@@ -1,20 +1,22 @@
 ---
 product: campaign
-title: TLS 1.0和1.1支持生命周期终止
-description: TLS 1.0和1.1支持生命周期终止
+title: TLS 1.0 和 1.1 支持生命周期终止
+description: TLS 1.0 和 1.1 支持生命周期终止
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
+exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
-# TLS 1.0和1.1支持生命周期终止{#eol-tls-support}
+# TLS 1.0 和 1.1 支持生命周期终止{#eol-tls-support}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe不再支持与传输层安全(TLS)1.2协议不兼容的用户系统和客户端系统。 如果您继续使用旧版TLS，则可能会失去对所有Adobe产品和服务的访问权限。
 

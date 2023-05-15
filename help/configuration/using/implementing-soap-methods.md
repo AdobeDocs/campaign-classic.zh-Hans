@@ -2,17 +2,18 @@
 product: campaign
 title: 实施 SOAP 方法
 description: 实施 SOAP 方法
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # 实现SOAP方法{#implementing-soap-methods}
 
-![](../../assets/v7-only.svg)
+
 
 ## 简介 {#introduction}
 
@@ -51,7 +52,7 @@ testLog(msg)方法在nms:recipient扩展中声明
 >
 >命名空间和用于库的名称与找到声明的命名空间和架构名称无关。
 
-### 定义 {#definition}
+### 条件 {#definition}
 
 SOAP方法以JavaScript函数的形式实现，这些函数分组到代表库的脚本中。
 

@@ -2,18 +2,20 @@
 product: campaign
 title: 营销活动投放最佳实践
 description: 了解设计和发送投放时的最佳实践
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '103'
-ht-degree: 24%
+ht-degree: 28%
 
 ---
 
 # 投放最佳实践 {#delivery-best-practices}
 
-![](../../assets/common.svg)
+
 
 了解与使用Adobe Campaign进行投放设计和发送相关的最佳实践。 使用以下链接浏览主题并查找指南。
 
@@ -50,9 +52,7 @@ ht-degree: 24%
       <img alt="设计" src="assets/do-not-localize/custom.svg" width="60px"/>
     </a>
     <div>
-      <a href="design-and-personalize.md">
-    <strong>个性化内容</strong>
-    </a>
+      <a href="design-and-personalize.md"><strong>个性化内容</strong></a>
     </div>
     <p>
     <em>应用正确的设置</em>

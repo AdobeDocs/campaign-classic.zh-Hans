@@ -2,20 +2,21 @@
 product: campaign
 title: 中间源部署
 description: 中间源部署
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 中间源部署{#mid-sourcing-deployment}
 
-![](../../assets/v7-only.svg)
+
 
 此配置是托管(ASP)配置与内部化之间的最佳中间解决方案。 面向外的执行组件在托管在Adobe Campaign的“中间源”服务器上执行。
 

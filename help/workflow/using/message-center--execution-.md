@@ -2,18 +2,19 @@
 product: campaign
 title: 消息中心（执行）
 description: 消息中心（执行）
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
 
 # 消息中心（执行）{#message-center-execution}
 
-![](../../assets/v7-only.svg)
+
 
 下面详述的工作流随 **消息中心 — 执行** 默认情况下为加载项。
 

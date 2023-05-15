@@ -2,8 +2,9 @@
 product: campaign
 title: 添加其他 SQL 函数
 description: 了解如何定义其他SQL函数
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -11,8 +12,6 @@ ht-degree: 0%
 ---
 
 # 定义其他SQL函数{#adding-additional-sql-functions}
-
-![](../../assets/v7-only.svg)
 
 Adobe Campaign允许用户定义 **自己的功能** 可以访问SQL函数的SQL函数，包括数据库提供的函数和控制台中尚未提供的函数。 例如，这对于聚合函数（平均、最大、总和）非常有用，这些函数只能在服务器上计算，或者当数据库提供了一种实施某些函数的更简单方法时，也不能“手动”在控制台中写入表达式（例如，日期管理）时。
 

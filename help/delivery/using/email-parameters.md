@@ -2,22 +2,24 @@
 product: campaign
 title: 电子邮件参数
 description: 了解特定于电子邮件投放的选项和设置
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 8%
+ht-degree: 14%
 
 ---
 
 # 电子邮件参数 {#email-parameters}
 
-![](../../assets/common.svg)
+
 
 本节介绍特定于电子邮件投放的选项和参数。
 
-## 电子邮件密送 {#email-bcc}
+## 电子邮件密件抄送 {#email-bcc}
 
 Adobe Campaign允许您通过密件抄送方式在外部系统上存储电子邮件，方法是只需向消息目标添加密件抄送电子邮件地址。
 
@@ -79,9 +81,9 @@ Adobe Campaign允许您通过密件抄送方式在外部系统上存储电子邮
 
 ## 生成镜像页面 {#generating-mirror-page}
 
-镜像页面是可通过Web浏览器在线访问的HTML页面。 其内容与电子邮件相同。
+镜像页面是可通过 Web 浏览器在线访问的 HTML 页面。其内容与电子邮件的内容相同。
 
-默认情况下，如果将链接插入到邮件内容中，则会生成镜像页面。 有关个性化块插入的更多信息，请参阅 [个性化块](personalization-blocks.md).
+默认情况下，如果将链接插入到电子邮件内容中，则会生成镜像页面。有关个性化块插入的更多信息，请参阅 [个性化块](personalization-blocks.md).
 
 在投放属性中， **[!UICONTROL Mode]** 字段 **[!UICONTROL Validity]** 选项卡，可修改此页面的生成模式。
 
@@ -91,7 +93,7 @@ Adobe Campaign允许您通过密件抄送方式在外部系统上存储电子邮
 >
 >必须为要创建镜像页面的投放定义HTML内容。
 
-除了默认模式之外，还提供以下选项：
+除默认模式外，还提供了以下选项：
 
 * **[!UICONTROL Force the generation of the mirror page]**:即使投放中未插入指向镜像页面的链接，也会创建镜像页面。
 * **[!UICONTROL Do not generate the mirror page]**:即使投放中存在链接，也不会生成镜像页面。

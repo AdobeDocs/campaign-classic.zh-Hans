@@ -2,8 +2,10 @@
 product: campaign
 title: 识别表单
 description: 识别表单
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: 0d22b0bc-8fbc-4269-af9e-cee27e29bb27
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 14%
@@ -12,7 +14,7 @@ ht-degree: 14%
 
 # 识别表单{#identifying-a-form}
 
-![](../../assets/common.svg)
+
 
 通过输入表单，您可以从Adobe Campaign客户端控制台编辑与数据架构关联的实例。
 

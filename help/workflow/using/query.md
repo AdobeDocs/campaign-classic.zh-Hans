@@ -2,18 +2,19 @@
 product: campaign
 title: 查询
 description: 进一步了解查询工作流活动
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1629'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 查询{#query}
 
-![](../../assets/v7-only.svg)
+
 
 ## 创建查询 {#creating-a-query}
 
@@ -225,7 +226,7 @@ SQL中筛选维的等效项是内部连接：
    * 操作系统,
    * 版本,
    * 数据,
-   * 应用程序、
+   * 应用程序,
    * 卷。
 
    >[!NOTE]

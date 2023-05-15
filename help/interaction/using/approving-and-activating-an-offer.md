@@ -2,11 +2,13 @@
 product: campaign
 title: 批准和激活优惠
 description: 批准和激活优惠
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
-source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 2%
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 # 批准和激活优惠{#approving-and-activating-an-offer}
 
-![](../../assets/common.svg)
+
 
 选件内容完成后，您需要批准该内容以将其复制到实时环境中并进行交付。 批准涉及选件内容及其资格。
 

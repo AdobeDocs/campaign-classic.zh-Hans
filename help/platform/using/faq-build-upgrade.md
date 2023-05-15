@@ -2,11 +2,12 @@
 product: campaign
 title: 内部版本升级常见问题解答
 description: 与Campaign内部版本升级相关的常见问题
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 56ff1f02e614a91200a8f2ca106dcc76e82f122d
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2031'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 内部版本升级常见问题解答 {#build-upgrade-faq}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign 会定期更新。如果您熟悉我们发布的 [发行说明](../../rn/using/rn-overview.md)，您可能会意识到，平均每年发布2/3个包含新增功能、改进和修复的次要版本。 此外，我们还定期发布仅包含累积修复的内部版本。这种定期更新旨在让您掌握最新、最充分的信息，保持环境的完全安全，并显然改善您对我们产品的体验。
 
@@ -104,7 +105,7 @@ Adobe将在进行任何更改之前备份您的系统。 但是，如果非生�
 
 查看 [在下面构建升级检查列表](#check-list) 以及您的测试计划，并确保能够执行这些测试的资源在24-48小时内可用。 完成升级。
 
-有关更多信息，请 [请参阅本文档](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
+有关更多信息，请 [请参阅本文档](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html).
 
 ## 是否可以在夜间或工作时段执行内部版本升级？
 

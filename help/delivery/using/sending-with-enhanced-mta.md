@@ -2,9 +2,11 @@
 product: campaign
 title: S与Adobe Campaign Classic中的Enhanced MTA
 description: 了解使用Adobe Campaign Enhanced MTA发送电子邮件的范围和特性
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # 使用增强 MTA 发送 {#sending-with-enhanced-mta}
 
-![](../../assets/common.svg)
+
 
 的 **Adobe Campaign增强MTA** （邮件传输代理）提供了升级的发送基础结构，以改进投放能力、信誉、吞吐量、报告、退件处理、IP升级和连接设置管理。
 
@@ -222,17 +224,17 @@ DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成�
 | 发送流程中的步骤 | KPI摘要 | 发送日志状态 |
 |--- |--- |--- |
 | 已成功将消息从Campaign中继到增强MTA | **[!UICONTROL Success]** 百分比未显示（从0%开始） | 由服务提供商考虑 |
-| 硬弹回消息从增强的MTA中报回 | 中未更改 **[!UICONTROL Success]** 百分比 | 失败 |
+| 硬弹回消息从增强的MTA中报回 | 中未更改 **[!UICONTROL Success]** 百分比 | 已失败 |
 | 从Enhanced MTA报告软弹回消息 | 中未更改 **[!UICONTROL Success]** 百分比 | 由服务提供商考虑 |
 | 软弹回消息重试成功 | **[!UICONTROL Success]** 百分比相应地增加 | 已发送 |
-| 软弹回消息重试失败 | 中未更改 **[!UICONTROL Success]** 百分比 | 失败 |
+| 软弹回消息重试失败 | 中未更改 **[!UICONTROL Success]** 百分比 | 已失败 |
 
 **没有电子邮件反馈服务**
 
 | 发送流程中的步骤 | KPI摘要 | 发送日志状态 |
 |--- |--- |--- |
 | 已成功将消息从Campaign中继到增强MTA | **[!UICONTROL Success]** 百分比从100%开始 | 已发送 |
-| 硬弹回消息从增强的MTA中报回 | **[!UICONTROL Success]** 百分比相应降低 | 失败 |
+| 硬弹回消息从增强的MTA中报回 | **[!UICONTROL Success]** 百分比相应降低 | 已失败 |
 | 从Enhanced MTA报告软弹回消息 | 中未更改 **[!UICONTROL Success]** 百分比 | 已发送 |
 | 软弹回消息重试成功 | 中未更改 **[!UICONTROL Success]** 百分比 | 已发送 | **[!UICONTROL Success]** 百分比相应地增加 | 已发送 |
-| 软弹回消息重试失败 | **[!UICONTROL Success]** 百分比相应降低 | 失败 |
+| 软弹回消息重试失败 | **[!UICONTROL Success]** 百分比相应降低 | 已失败 |

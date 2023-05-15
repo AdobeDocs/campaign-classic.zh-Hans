@@ -2,9 +2,10 @@
 product: campaign
 title: 调度程序
 description: 了解有关调度程序工作流活动的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 10%
@@ -13,7 +14,7 @@ ht-degree: 10%
 
 # 调度程序 {#scheduler}
 
-![](../../assets/v7-only.svg)
+
 
 的 **调度程序** 是在其计划指定的时间激活其过渡的持久任务。
 

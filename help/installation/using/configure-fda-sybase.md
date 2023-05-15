@@ -2,11 +2,12 @@
 product: campaign
 title: 配置对Sybase IQ的访问
 description: 了解如何在FDA中配置对Sybase IQ的访问
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # 配置对Sybase IQ的访问 {#configure-access-to-sybase-iq}
 
-![](../../assets/v7-only.svg)
+
 
 使用Campaign **联合数据访问** (FDA)选项，用于处理存储在外部数据库中的信息。 请按照以下步骤配置对Sybase IQ的访问。
 

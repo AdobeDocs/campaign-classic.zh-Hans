@@ -2,9 +2,10 @@
 product: campaign
 title: 数据提取（文件）
 description: 进一步了解数据提取（文件）工作流活动
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management Activity
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # 数据提取（文件）{#extraction-file}
 
-![](../../assets/v7-only.svg)
+
 
 您可以使用 **[!UICONTROL Data extraction (file)]** 活动。
 

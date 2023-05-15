@@ -2,9 +2,10 @@
 product: campaign
 title: 向操作员发送个性化提醒
 description: 了解如何向运营商发送个性化提醒
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # 向操作员发送个性化提醒{#sending-personalized-alerts-to-operators}
 
-![](../../assets/v7-only.svg)
+
 
 在此示例中，我们希望向运算符发送警报，该运算符将包含已打开新闻稿但未单击其所包含链接的用户档案名称。
 

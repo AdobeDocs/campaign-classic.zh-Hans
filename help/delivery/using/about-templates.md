@@ -2,9 +2,11 @@
 product: campaign
 title: 关于模板
 description: 投放模板快速入门
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 关于模板{#about-templates}
 
-![](../../assets/common.svg)
+
 
 投放配置可保存在投放模板中以便重复使用。 模板可以包含投放的完整或部分配置。
 

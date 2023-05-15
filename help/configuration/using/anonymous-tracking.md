@@ -2,8 +2,9 @@
 product: campaign
 title: 匿名跟踪
 description: 了解如何设置匿名跟踪
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 5%
@@ -11,8 +12,6 @@ ht-degree: 5%
 ---
 
 # 匿名跟踪{#anonymous-tracking}
-
-![](../../assets/v7-only.svg)
 
 Adobe Campaign允许您在收集的Web跟踪信息以匿名方式浏览您网站时，将其链接到收件人。 当用户浏览您网站的标记页面时，会收集此浏览信息，以便用户在单击由Adobe Campaign发送的电子邮件后，即会识别这些用户，并且该信息会自动链接到这些用户。
 

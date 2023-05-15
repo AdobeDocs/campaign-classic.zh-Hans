@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: SFTP 服务器使用情况
-description: 了解有关SFTP服务器最佳实践和疑难解答的更多信息。
+description: 了解有关SFTP服务器最佳实践和疑难解答的更多信息
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 41%
@@ -15,7 +17,7 @@ ht-degree: 41%
 
 # SFTP 服务器最佳实践和故障排除 {#sftp-server-usage}
 
-![](../../assets/common.svg)
+
 
 ## SFTP服务器全局建议 {#global-recommendations}
 
@@ -31,7 +33,7 @@ ht-degree: 41%
 
 * 默认情况下，您创建的所有文件夹仅为标识符的读/写模式。创建 Campaign 需要访问的文件夹时，请确保使用整个组的读/写权限进行配置。否则，出于安全原因，工作流程可能无法创建/删除文件，因为它们在同一组内的不同标识符下运行。
 
-* 您尝试启动SFTP连接的公共IP必须添加到Campaign实允许列表例上的。 可通过请求将IP允许列表地址添加到 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* 您尝试启动SFTP连接的公共IP必须添加到Campaign实允许列表例上的。 可通过请求将IP允许列表地址添加到 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## 数据库使用最佳实践 {#sftp-server-best-practices}
 
@@ -68,7 +70,7 @@ SFTP服务器设计为临时存储空间，您可以在其上控制文件的保�
 
 ## Adobe托管的SFTP服务器存在连接问题 {#sftp-server-troubleshooting}
 
-以下部分列出了要通过检查并向Adobe支持团队提供的信息 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 遇到与Adobe托管的SFTP服务器的连接问题时。
+以下部分列出了要通过检查并向Adobe支持团队提供的信息 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 遇到与Adobe托管的SFTP服务器的连接问题时。
 
 1. 检查您的实例是否正在运行。要执行此操作，请打开您的浏览器，然后 **[!UICONTROL GET]** 在实例中调用 **[!UICONTROL /r/test]** 端点：
 
@@ -100,11 +102,11 @@ SFTP服务器设计为临时存储空间，您可以在其上控制文件的保�
    >
    >Netcat 工具可让您在各种操作系统上轻松管理网络联机（请参见 [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)）。
 
-   如果端口未打开，请确保打开侧面的传出联机，然后重试。如果仍遇到连接问题，请将命令的输出与 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 团队。
+   如果端口未打开，请确保打开侧面的传出联机，然后重试。如果仍遇到连接问题，请将命令的输出与 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 团队。
 
 1. 检查您尝试启动SFTP连接的公共IP是否是您提供给Adobe支持的允许列表IP。
 1. 如果您使用基于密码的身份验证，则您的密码可能已过期（密码的有效期为90天）。 因此，我们强烈建议使用基于密钥的身份验证(请参阅 [SFTP服务器最佳实践](#sftp-server-best-practices))。
-1. 如果您使用基于密钥的身份验证，请检查您使用的密钥是否与您提供的密钥相同 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 用于实例配置的团队。
+1. 如果您使用基于密钥的身份验证，请检查您使用的密钥是否与您提供的密钥相同 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 用于实例配置的团队。
 1. 如果您使用的是 FileZilla 或类似的 FTP 工具，请在支持票证中提供联机日志详细信息。
 
 ## “无法解析主机名”错误

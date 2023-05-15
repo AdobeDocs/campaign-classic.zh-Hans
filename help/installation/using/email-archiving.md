@@ -2,20 +2,21 @@
 product: campaign
 title: 电子邮件存档
 description: 电子邮件存档
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 3%
+source-wordcount: '1359'
+ht-degree: 5%
 
 ---
 
 # 配置电子邮件密送 {#email-archiving}
 
-![](../../assets/v7-only.svg)
+
 
 您可以配置Adobe Campaign以保留从您的平台发送的电子邮件副本。
 
@@ -34,6 +35,9 @@ ht-degree: 3%
 * 电子邮件存档系统已随Adobe Campaign 17.2（版本8795）发生更改。 如果您已经使用电子邮件存档，则必须手动升级到新的电子邮件密送系统。 有关此内容的更多信息，请参阅 [转到新的电子邮件密件抄送](#updated-email-archiving-system--bcc-) 中。
 
 ## 激活电子邮件密送（内部部署） {#activating-email-archiving--on-premise-}
+
+[!BADGE 内部部署和混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"}
+
 
 要在内部部署安装Adobe Campaign时激活密送电子邮件存档，请执行以下步骤。
 
@@ -102,6 +106,9 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 ## 配置密送电子邮件地址（内部部署） {#configuring-the-bcc-email-address--on-premise-}
 
+[!BADGE 内部部署和混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"}
+
+
 >[!IMPORTANT]
 >
 >出于隐私原因，密件抄送电子邮件必须由能够存储安全的个人身份信息(PII)的存档系统处理。
@@ -124,6 +131,10 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 >此外，中继器分配 **[!UICONTROL Sent]** 状态发送到所有电子邮件，包括未发送的电子邮件。 因此，所有消息都会被存档。
 
 ## 转到新的电子邮件密件抄送 {#updated-email-archiving-system--bcc-}
+
+[!BADGE 内部部署和混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"}
+
+
 
 >[!IMPORTANT]
 >

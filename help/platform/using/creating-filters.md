@@ -2,11 +2,13 @@
 product: campaign
 title: 创建过滤器
 description: 创建过滤器
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # 创建过滤器{#creating-filters}
 
-![](../../assets/common.svg)
+
 
 在Adobe Campaign树中导航时(从 **[!UICONTROL Explorer]** 菜单)，则数据库中包含的数据将显示在列表中。 这些列表可配置为仅显示操作员所需的数据。 然后，可以对过滤的数据启动操作。 过滤器配置允许您从列表中选择数据 **[!UICONTROL dynamically]**. 如果数据被修改，则会更新过滤的数据。
 

@@ -2,9 +2,10 @@
 product: campaign
 title: 开始工作流
 description: 了解如何启动工作流并发现工作流操作工具栏和右键单击菜单
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # 开始工作流 {#starting-a-workflow}
 
-![](../../assets/v7-only.svg)
+
 
 工作流始终手动启动。 但是，启动时，它可以保持不活动状态，具体取决于通过调度程序指定的信息(请参阅 [调度程序](scheduler.md))或活动计划。
 

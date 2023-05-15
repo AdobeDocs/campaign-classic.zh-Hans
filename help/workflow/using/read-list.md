@@ -2,9 +2,10 @@
 product: campaign
 title: 读取列表
 description: 了解有关读取列表工作流活动的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # 读取列表{#read-list}
 
-![](../../assets/v7-only.svg)
+
 
 在工作流中处理的数据可以来自列表，其中数据已预先准备或结构化（在先前的分段或文件上传之后）。
 

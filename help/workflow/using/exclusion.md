@@ -2,9 +2,10 @@
 product: campaign
 title: 排除
 description: 进一步了解排除工作流活动
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
 exl-id: f4fe97d9-6571-4aa5-8022-b0af9d5a6a13
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # 排除{#exclusion}
 
-![](../../assets/v7-only.svg)
+
 
 安 **排除**-type活动会根据从中提取一个或多个其他目标的主目标创建目标。
 

@@ -2,9 +2,11 @@
 product: campaign
 title: 发布、跟踪和使用收集的数据
 description: 了解如何发布、跟踪和使用在调查中收集的数据
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # 发布、跟踪和使用收集的数据{#publish-track-and-use-collected-data}
 
-![](../../assets/common.svg)
+
 
 创建、配置和发布表单后，您可以与受众共享该链接并跟踪响应。
 

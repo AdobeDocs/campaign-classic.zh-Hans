@@ -2,9 +2,10 @@
 product: campaign
 title: 查询收件人表
 description: 了解如何查询收件人表
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Query Editor
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 3%
@@ -13,7 +14,7 @@ ht-degree: 3%
 
 # 查询收件人表 {#querying-recipient-table}
 
-![](../../assets/v7-only.svg)
+
 
 在此示例中，我们希望恢复电子邮件域名为“orange.co.uk”且不居住在伦敦的收件人的姓名和电子邮件。
 

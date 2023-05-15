@@ -2,11 +2,12 @@
 product: campaign
 title: 连接到外部数据库
 description: 了解如何连接到外部数据库
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # 连接到数据库 {#connecting-to-the-database}
 
-![](../../assets/v7-only.svg)
+
 
 要启用与外部数据库的连接，必须指示连接参数，即目标数据源和需要加载数据的表的名称。
 

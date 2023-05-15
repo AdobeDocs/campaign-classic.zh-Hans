@@ -2,9 +2,10 @@
 product: campaign
 title: 查询投放信息
 description: 了解如何查询投放信息
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Query Editor
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # 查询投放信息 {#querying-delivery-information}
 
-![](../../assets/v7-only.svg)
+
 
 ## 特定投放的点击次数 {#number-of-clicks-for-a-specific-delivery}
 

@@ -2,18 +2,19 @@
 product: campaign
 title: 本地审批
 description: 本地审批
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 本地审批{#local-approval}
 
-![](../../assets/v7-only.svg)
+
 
 集成到定位工作流后， **[!UICONTROL Local approval]** 活动允许您在发送投放之前设置收件人批准流程。
 
@@ -37,7 +38,7 @@ ht-degree: 1%
 
    ![](assets/local_validation_intro_3.png)
 
-## Target批准通知 {#target-approval-notification}
+## 目标审批通知 {#target-approval-notification}
 
 在本例中， **[!UICONTROL Local approval]** 活动位于上游定位和投放之间：
 

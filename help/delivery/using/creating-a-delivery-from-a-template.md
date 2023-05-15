@@ -2,9 +2,11 @@
 product: campaign
 title: 从模板创建投放
 description: 了解如何从模板创建投放
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 7%
@@ -13,7 +15,7 @@ ht-degree: 7%
 
 # 从模板创建投放{#creating-a-delivery-from-a-template}
 
-![](../../assets/common.svg)
+
 
 ## 将模板链接到投放 {#linking-the-template-to-a-delivery}
 

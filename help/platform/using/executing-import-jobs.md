@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: 配置导入作业
-description: 了解如何在Campaign Classic中配置和执行导入作业。
+description: 了解如何在Campaign中配置和执行导入作业
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2955'
-ht-degree: 58%
+source-wordcount: '2954'
+ht-degree: 59%
 
 ---
 
 # 配置导入作业 {#executing-import-jobs}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign允许您以文本、CSV、TAB或XML格式从一个或多个文件将数据导入数据库。 这些文件与表（主表或链接的表）相关联，并且源文件的每个字段与数据库的字段相关联。
 
@@ -244,7 +246,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式从一个或多个文件
 
 选项 **[!UICONTROL Reject]** 和 **[!UICONTROL Ignore]** 如上所述操作。
 
-### 出错 {#behavior-in-the-event-of-an-error}
+### 发生错误时 {#behavior-in-the-event-of-an-error}
 
 大多数数据传输操作会生成各种类型的错误（不一致的行格式、无效的电子邮件地址等）。 导入引擎生成的所有错误和所有警告都将存储并链接到导入实例。
 

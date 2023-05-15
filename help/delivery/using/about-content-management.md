@@ -2,9 +2,11 @@
 product: campaign
 title: 关于内容管理
 description: Campaign内容管理器模块快速入门
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Landing Pages, Email Design
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # 关于内容管理{#about-content-management}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign内容管理器模块是一个特定的Campaign Classic [内置包](../../installation/using/installing-campaign-standard-packages.md) 可安装以创建定期新闻稿或网站的信息。 它可以帮助您创建、验证和发布消息。
 

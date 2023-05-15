@@ -2,8 +2,9 @@
 product: campaign
 title: Campaign Classicv7的硬件大小调整建议
 description: Campaign Classicv7的硬件大小调整建议
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
@@ -12,7 +13,7 @@ ht-degree: 1%
 
 # 硬件大小调整建议{#hardware-sizing-reco}
 
-![](../../assets/v7-only.svg)
+
 
 ## 概述
 
@@ -82,12 +83,12 @@ Adobe为您提供了可在部署环境中中继到Adobe Campaign服务器的URL�
 
 估计数量：
 
-| 渠道 | 卷 |
+| 渠道 | 容量 |
 | ----------------------- | ----------------- |
 | 活动收件人 | 500万 |
 | 电子邮件 | 420万/月 |
 | 直邮 | 100万/月 |
-| Mobile短信 | 10万/月 |
+| 移动短信 | 10万/月 |
 | 每日电子邮件流量达到峰值 | 500 |
 
 对于这些卷，一对Adobe Campaign应用程序服务器系统为Adobe Campaign客户端用户和工作流执行提供了所有功能。 对于500万活动收件人和此电子邮件卷，应用程序服务器工作负载不是CPU或I/O密集型工作；大部分压力都在数据库上。
@@ -131,13 +132,13 @@ Adobe Campaign Web服务器显示在安全区域中。
 
 估计数量：
 
-| 渠道 | 卷 |
+| 渠道 | 容量 |
 | ----------------------- | ----------------- |
 | 活动收件人 | 两千万 |
 | 电子邮件 | 4200万/月 |
 | 直邮 | 每月1000万 |
-| Mobile短信 | 100万/月 |
-| 每日电子邮件流量达到峰值 | 500万 |
+| 移动短信 | 100万/月 |
+| 每日电子邮件流量达到峰值 | 5,000,000 |
 
 ### Web和应用程序服务器
 
@@ -167,12 +168,12 @@ Web服务器托管Campaign Web应用程序，支持系统中1000万活动收件�
 
 估计数量：
 
-| 渠道 | 卷 |
+| 渠道 | 容量 |
 | ----------------------- | ----------------- |
 | 活动收件人 | 5千万 |
 | 电子邮件 | 1.08亿/月 |
 | 直邮 | 每月2500万 |
-| Mobile短信 | 2,500万/月 |
+| 移动短信 | 2,500万/月 |
 | 事务性消息 | 2,500万/月 |
 | 每日电子邮件流量达到峰值 | 250万 |
 

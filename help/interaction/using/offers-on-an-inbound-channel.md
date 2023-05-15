@@ -2,11 +2,13 @@
 product: campaign
 title: 入站渠道优惠
 description: 入站渠道优惠
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: 6eaf7490f1be913986af2924017d014d2ba54559
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 # 入站渠道优惠{#offers-on-an-inbound-channel}
 
-![](../../assets/common.svg)
+
 
 ## 向匿名访客展示优惠 {#presenting-an-offer-to-an-anonymous-visitor}
 
@@ -59,7 +61,7 @@ Neobank网站希望在其网站上显示一个选件，该选件针对的是浏�
    * 标题
    * HTML 内容
    * 图像 URL
-   * 目标URL
+   * 目标 URL
 
    ![](assets/offer_inbound_anonymous_example_030.png)
 

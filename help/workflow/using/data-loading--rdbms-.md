@@ -2,9 +2,10 @@
 product: campaign
 title: 数据加载 (RDBMS)
 description: 了解有关数据加载(RDBMS)工作流活动的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management Activity
 exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 3%
@@ -13,7 +14,7 @@ ht-degree: 3%
 
 # 数据加载 (RDBMS){#data-loading-rdbms}
 
-![](../../assets/v7-only.svg)
+
 
 的 **[!UICONTROL Data loading (RDBMS)]** 活动允许您直接访问此外部数据库，并仅收集定位所需的数据。
 

@@ -2,7 +2,9 @@
 product: campaign
 title: 配置对Microsoft SQL Server的访问权限
 description: 了解如何配置对Microsoft SQL Server的访问
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 1%
@@ -11,7 +13,7 @@ ht-degree: 1%
 
 # 配置对Microsoft SQL Server的访问权限 {#configure-fda-sql}
 
-![](../../assets/v7-only.svg)
+
 
 使用Campaign **联合数据访问** (FDA)选项，用于处理存储在外部Microsoft SQL Server数据库中的信息。 请按照以下步骤配置对 [!DNL Microsoft SQL Server].
 
@@ -113,4 +115,3 @@ ht-degree: 1%
 | 身份验证 | 连接器支持的身份验证类型。 当前支持的值：ActiveDirectoryMSI。 <br> 有关更多信息，请参阅示例8 [Microsoft文档](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
 | 加密 | 指定连接是否在网络上使用TLS加密。 可能的值为 **是/必需（18.0及更高版本）**, **无/可选（18.0及更高版本）**&#x200B;和 **strict（18.0及更高版本）**. 默认值为 **是** 版本18.0及更高版本 **否** 在以前的版本中。 <br>有关更多信息，请参阅 [Microsoft文档](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
 | TrustServerCertificate | 与一起使用时，使用自签名服务器证书启用加密 **加密**. <br>接受的值： **是** 或 **否** （默认值，表示将验证服务器证书）。 |
-

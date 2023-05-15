@@ -2,18 +2,17 @@
 product: campaign
 title: 压力规则
 description: 压力规则
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3285'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 # 压力规则{#pressure-rules}
-
-![](../../assets/v7-only.svg)
 
 ## 关于营销疲劳度 {#about-marketing-fatigue}
 
@@ -24,7 +23,7 @@ ht-degree: 4%
 根据定义的阈值和消息权重选择营销活动。
 
 * 阈值是指定时间段内为给定收件人授权的最高投放数。 可以设置或变量。 可在分类规则设置中设置或计算分类规则。 请参阅 [最大消息数](#maximum-number-of-messages).
-* 投放权重允许您确定压力管理框架内优先级最高的投放。 权重最高的消息具有优先级。 请参阅 [消息权重](#message-weight).
+* 利用投放权重，您可以确定压力管理框架内的优先级最高的投放。具有最高权重的消息优先。请参阅 [消息权重](#message-weight).
 
 仲裁包括确保权重大于正在进行的营销活动的计划营销活动不会导致过度的用户档案征集：如果出现这种情况，则会将用户档案从投放中排除。
 
@@ -119,9 +118,9 @@ ht-degree: 4%
 
 ### 消息权重 {#message-weight}
 
-每个投放都有一个权重，该权重表示其优先级级别。 默认情况下，投放的权重设置为5。 压力规则允许您定义要应用于的投放的权重。
+每个投放都有一个代表其优先级的权重。默认情况下，投放权重设置为 5。压力规则允许您定义要应用于的投放的权重。
 
-可以通过公式设置或计算权重以适合收件人。 例如，您可以根据收件人兴趣定义投放的权重。
+可以通过公式设置或计算权重以满足收件人的需求。例如，您可以根据收件人兴趣来定义投放权重。
 
 >[!CAUTION]
 >
@@ -339,7 +338,7 @@ ht-degree: 4%
    >Campaign v8中无法考虑计划投放。
 
 1. 在 **[!UICONTROL Typologies]** 选项卡，将规则链接到营销活动分类。
-1. 保存更改。
+1. 保存您的更改。
 
 现在，为要应用压力规则的每个投放创建并配置工作流。
 
@@ -374,8 +373,8 @@ ht-degree: 4%
  <thead> 
   <tr> 
    <th> 投放<br /> </th> 
-   <th> 批准<br /> </th> 
-   <th> 粗细<br /> </th> 
+   <th> 审批<br /> </th> 
+   <th> 权重<br /> </th> 
    <th> 提取日期/时间<br /> </th> 
    <th> 联系日期<br /> </th> 
    <th> 投放开始日期/时间<br /> </th> 
@@ -389,9 +388,9 @@ ht-degree: 4%
    <td> 投放1<br /> </td> 
    <td> 已禁用<br /> </td> 
    <td> 5<br /> </td> 
-   <td> 下午3点<br /> </td> 
+   <td> 3pm<br /> </td> 
    <td> 早8点（次日）<br /> </td> 
-   <td> 下午2点<br /> </td> 
+   <td> 2pm<br /> </td> 
    <td> 夜间<br /> </td> 
    <td> 已排除<br /> </td> 
    <td> 已排除<br /> </td> 
@@ -400,9 +399,9 @@ ht-degree: 4%
    <td> 投放2<br /> </td> 
    <td> 已禁用<br /> </td> 
    <td> 10<br /> </td> 
-   <td> 4点<br /> </td> 
+   <td> 4pm<br /> </td> 
    <td> 早9点（次日）<br /> </td> 
-   <td> 下午2点<br /> </td> 
+   <td> 2pm<br /> </td> 
    <td> 夜间<br /> </td> 
    <td> 已发送<br /> </td> 
    <td> 早9点（次日）<br /> </td> 

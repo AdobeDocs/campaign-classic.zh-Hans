@@ -2,8 +2,9 @@
 product: campaign
 title: 在网站中输入Web跟踪标记
 description: 了解如何在网站中插入Web跟踪标记
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -11,8 +12,6 @@ ht-degree: 0%
 ---
 
 # 在您的网站中插入Web跟踪标记{#inserting-tags-in-your-site}
-
-![](../../assets/v7-only.svg)
 
 ## 简单方法 {#simple-method}
 

@@ -1,21 +1,22 @@
 ---
 product: campaign
 title: 安全和隐私检查清单
-description: 了解有关安全和隐私方面需要检查的关键元素的更多信息。
+description: 了解有关安全和隐私方面需要检查的关键元素的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '486'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 # 安全和隐私检查清单{#get-started-security-privacy}
 
-![](../../assets/v7-only.svg)
+
 
 本节将介绍有关安全和隐私方面需要检查的关键元素。 某些配置只能由内部部署客户执行。
 

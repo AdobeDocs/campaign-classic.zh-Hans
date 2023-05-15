@@ -2,9 +2,10 @@
 product: campaign
 title: 分布式营销入门
 description: 分布式营销入门
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # 分布式营销入门{#about-distributed-marketing}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部门等）开展合作活动的申请 实施协作营销活动。此合作基于称为 **[!UICONTROL list of campaign packages]**，其中向本地实体提供了集中创建的营销活动模板和实例。
 
@@ -50,7 +51,7 @@ Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部门等
 
    营销活动包列表包含可用于本地实体的营销活动。
 
-* **Campaign包**
+* **Campaign 包**
 
    模板（或营销活动实例），由中央实体创建，并可供一组本地实体使用。
 

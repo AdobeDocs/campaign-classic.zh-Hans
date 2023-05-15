@@ -2,9 +2,11 @@
 product: campaign
 title: 如何配置跟踪的链接
 description: 如何配置跟踪的链接
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 10%
@@ -13,7 +15,7 @@ ht-degree: 10%
 
 # 如何配置跟踪的链接{#how-to-configure-tracked-links}
 
-![](../../assets/common.svg)
+
 
 对于每次投放，您可以跟踪邮件是否收到，以及邮件内容中插入的链接是否被点击。这样即可在目标投放行动实施后，跟踪收件人的行为。
 

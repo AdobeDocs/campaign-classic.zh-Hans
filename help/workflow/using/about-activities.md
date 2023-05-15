@@ -2,18 +2,19 @@
 product: campaign
 title: 关于工作流活动
 description: 关于活动
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 900dd30e-d4fb-452a-af3f-ae00758b0077
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
 # 工作流活动{#wf-activities}
 
-![](../../assets/v7-only.svg)
+
 
 本节介绍所有可用的活动。 根据创建/编辑工作流的节点或上下文，可用活动可能会有所不同。 例如，在营销活动中创建的工作流具有特定于渠道的投放活动。
 

@@ -2,9 +2,11 @@
 product: campaign
 title: 种子地址
 description: 种子地址
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Seed Address
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 8%
@@ -13,7 +15,7 @@ ht-degree: 8%
 
 # 种子地址{#seed-addresses}
 
-![](../../assets/common.svg)
+
 
 如果收件人表是自定义表，则需要额外的配置。 的 **[!UICONTROL nms:seedMember]** 必须扩展架构。 种子地址中添加了一个用于定义适当字段的附加选项卡，如下所示：
 

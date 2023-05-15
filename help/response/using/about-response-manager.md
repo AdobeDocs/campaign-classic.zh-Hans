@@ -2,8 +2,10 @@
 product: campaign
 title: 关于响应管理器
 description: 关于响应管理器
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
-source-git-commit: 878ba2b532d5cb59af77b6450b12ae5d2ff149b2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 13%
@@ -12,7 +14,7 @@ ht-degree: 13%
 
 # 营销活动响应管理器入门{#about-response-manager}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign 提供响应管理附加功能，可让您衡量营销活动的成功性和盈利能力，还可提供跨通信渠道（电子邮件、移动设备、直邮等）的优惠建议。
 

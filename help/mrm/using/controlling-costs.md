@@ -2,11 +2,12 @@
 product: campaign
 title: 控制成本
 description: 了解如何控制成本
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # 控制成本{#controlling-costs}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，并使用“营销资源管理”模块按类别划分这些成本。
 
@@ -118,7 +119,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 当支出产生发票并支付发票时，其金额随后在 **[!UICONTROL Invoiced]** 字段。
 
-### 支出类别 {#expense-categories}
+### 费用类别 {#expense-categories}
 
 这些金额可以分为多个费用类别，以便更好地阅读数据并更详细地报告营销投资。 在预算创建期间，通过 **[!UICONTROL Budgets]** 树的节点。
 
@@ -331,7 +332,7 @@ Adobe Campaign允许您控制已计划、已提交和已开票的营销成本，
 
 ![](assets/s_user_cost_mgmt_sample_18.png)
 
-#### 预算批准 {#budget-approval}
+#### 预算审批 {#budget-approval}
 
 激活批准后，可通过特殊链接从促销活动仪表板批准预算。 启动定向工作流并需要批准直邮投放时，会显示此链接。
 

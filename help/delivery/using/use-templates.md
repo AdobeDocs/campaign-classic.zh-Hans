@@ -2,9 +2,11 @@
 product: campaign
 title: 使用投放模板
 description: 使用投放模板
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 使用模板 {#use-templates}
 
-![](../../assets/common.svg)
+
 
 交付模板为大多数常见类型的活动提供现成方案，从而提高效率。 借助模板，营销人员可以在较短的时间内以最少的自定义时间部署新营销活动。
 

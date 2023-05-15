@@ -2,8 +2,9 @@
 product: campaign
 title: 收集所有访问
 description: 收集所有访问
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -11,8 +12,6 @@ ht-degree: 3%
 ---
 
 # 收集所有访问{#collecting-all-visits}
-
-![](../../assets/v7-only.svg)
 
 通过Adobe Campaign提供的Web跟踪模块，您可以收集收件人在消息中单击后进行网站跟踪的上下文中对网站特定页面的访问。
 

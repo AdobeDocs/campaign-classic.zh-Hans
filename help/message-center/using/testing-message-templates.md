@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: 测试事务型消息模板
-description: 了解如何管理事务型消息中的种子地址，以便在Adobe Campaign Classic中预览和测试它们。
+description: 了解如何管理事务型消息中的种子地址，以便在Adobe Campaign Classic中预览和测试它们
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # 测试事务型消息模板 {#testing-message-templates}
 
-![](../../assets/v7-only.svg)
+
 
 一旦 [消息模板](../../message-center/using/creating-the-message-template.md) 准备就绪，请按照以下步骤进行预览和测试。
 

@@ -2,18 +2,20 @@
 product: campaign
 title: 报告的属性
 description: 了解有关报表属性设置的更多信息
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 报告的属性{#properties-of-the-report}
 
-![](../../assets/common.svg)
+
 
 您可以完全个性化并配置报表，以满足您的需求。 为此，请编辑其属性。 通过 **[!UICONTROL Properties]** 按钮。
 
@@ -41,7 +43,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_advuser_report_properties_02b.png)
 
-可能的选项包括：
+可能的选项为：
 
 * **[!UICONTROL Anonymous access]**:此选项允许不受限制地访问报表。 但是，不可能操纵。
 

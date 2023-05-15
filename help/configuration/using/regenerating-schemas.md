@@ -2,8 +2,9 @@
 product: campaign
 title: 重新生成架构
 description: 了解如何重新生成Campaign模式
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 2%
@@ -11,8 +12,6 @@ ht-degree: 2%
 ---
 
 # 重新生成架构{#regenerating-schemas}
-
-![](../../assets/v7-only.svg)
 
 修改架构并保存修改时，将自动生成扩展架构。 但是，您可能需要手动重新生成架构以应用修改。 操作步骤：
 

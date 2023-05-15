@@ -2,8 +2,10 @@
 product: campaign
 title: 窗体结构
 description: 窗体结构
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2385'
 ht-degree: 0%
@@ -12,7 +14,7 @@ ht-degree: 0%
 
 # 窗体结构{#form-structure}
 
-![](../../assets/common.svg)
+
 
 表单的描述是一种结构化XML文档，用于观察表单模式的语法 **xtk:form**.
 

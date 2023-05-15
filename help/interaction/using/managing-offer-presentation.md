@@ -2,20 +2,22 @@
 product: campaign
 title: 管理优惠演示
 description: 管理优惠演示
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '995'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 管理优惠演示{#managing-offer-presentation}
 
-![](../../assets/common.svg)
+
 
 ## 演示规则概述 {#presentation-rules-overview}
 
@@ -73,7 +75,7 @@ ht-degree: 0%
 >
 >您还可以使用非标准表。 如果要使用特定定向维度，则需要使用目标映射创建表以及专用环境。 有关更多信息，请参阅 [创建优惠环境](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
-### 句点 {#period}
+### 期间 {#period}
 
 这是一个从选件演示日期开始的滑动周期。 它为优惠建议的有效性设置了时限。 该规则不适用于在此期间之后提出的建议。
 
@@ -86,7 +88,7 @@ ht-degree: 0%
 
 ![](assets/offer_typology_010.png)
 
-### 建议数 {#number-of-propositions}
+### 建议的数量 {#number-of-propositions}
 
 可以设置在排除相关选件之前可以提出的建议的最大数量。
 

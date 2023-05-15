@@ -2,9 +2,10 @@
 product: campaign
 title: 跨渠道投放工作流
 description: 了解有关跨渠道投放工作流的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Channels Activity
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -13,7 +14,7 @@ ht-degree: 3%
 
 # 跨渠道投放工作流{#cross-channel-delivery-workflow}
 
-![](../../assets/v7-only.svg)
+
 
 此用例展示了涉及跨渠道投放工作流的示例。 有关跨渠道投放的一般概念，请参阅 [此部分](cross-channel-deliveries.md).
 
@@ -42,7 +43,7 @@ ht-degree: 3%
 
    ![](assets/wkf_cross-channel_3.png)
 
-1. 保存更改。
+1. 保存您的更改。
 
 ## 步骤2:创建包含选件的电子邮件 {#step-2--creating-an-email-including-an-offer}
 
@@ -53,7 +54,7 @@ ht-degree: 3%
 
    有关将优惠集成到消息正文中的更多信息，请参阅 [此部分](../../interaction/using/integrating-an-offer-via-the-wizard.md#delivering-with-a-call-to-the-offer-engine).
 
-1. 保存更改。
+1. 保存您的更改。
 1. 右键单击 **[!UICONTROL Email delivery]** 活动以将其打开。
 1. 选择 **[!UICONTROL Generate an outbound transition]** 选项来恢复群体和跟踪日志。
 

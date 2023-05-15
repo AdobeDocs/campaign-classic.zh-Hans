@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: 事件处理
-description: 了解如何在Adobe Campaign Classic中处理事务型消息传递事件。
+description: 了解如何在Adobe Campaign Classic中处理事务型消息传递事件
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # 事件处理 {#about-event-processing}
 
-![](../../assets/v7-only.svg)
+
 
 在事务型消息传递的上下文中，事件由外部信息系统生成，并通过 **[!UICONTROL PushEvent]** 和 **[!UICONTROL PushEvents]** 方法(请参阅 [事件描述](../../message-center/using/event-description.md))。
 

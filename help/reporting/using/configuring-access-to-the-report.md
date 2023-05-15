@@ -2,18 +2,20 @@
 product: campaign
 title: 配置对报告的访问权限
 description: 配置对报告的访问权限
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '754'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 配置对报告的访问权限{#configuring-access-to-the-report}
 
-![](../../assets/common.svg)
+
 
 ## 报表显示上下文 {#report-display-context}
 
@@ -29,7 +31,7 @@ ht-degree: 1%
 * **[!UICONTROL Multiple selection]** :选择多个实体后，将访问报告。
 * **[!UICONTROL Global]** :可通过 **[!UICONTROL Reports]** 选项卡。
 
-### 显示序列 {#display-sequence}
+### 显示序列  {#display-sequence}
 
 的 **[!UICONTROL Sequence]** 字段中，您可以输入一个数字值，以指定列表中报表的显示顺序。
 

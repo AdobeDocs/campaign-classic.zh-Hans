@@ -2,9 +2,11 @@
 product: campaign
 title: Campaign中的投放能力入门
 description: 了解投放能力最佳实践
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 8%
@@ -13,7 +15,7 @@ ht-degree: 8%
 
 # 什么是可投放性{#about-deliverability}
 
-![](../../assets/common.svg)
+
 
 投放能力允许您衡量活动是否成功到达收件人的收件箱，而不会出现弹回或标记为垃圾邮件。 [了解投放能力为何重要](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters).
 
@@ -31,7 +33,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->由于ISP必须不断开发新的复杂过滤技术来保护其客户免受垃圾邮件发送者的攻击，因此电子邮件投放能力的特点是标准和规则不断变化。 请确保您参考 [Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) 定期更新。
+>由于ISP必须不断开发新的复杂过滤技术来保护其客户免受垃圾邮件发送者的攻击，因此电子邮件投放能力的特点是标准和规则不断变化。 请确保您参考 [Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans) 定期更新。
 
 ### 投放能力率
 

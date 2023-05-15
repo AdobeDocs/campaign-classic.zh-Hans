@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: 关于Adobe Campaign报告工具
-description: 在内置报告或自定义报告中分析您的营销活动是否取得成功。
+description: 在内建或自定义报表中分析促销活动是否成功
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 19%
+ht-degree: 16%
 
 ---
 
 # 开始使用报告 {#about-adobe-campaign-reporting-tools}
 
-![](../../assets/common.svg)
+
 
 除 [内置报告](../../reporting/using/about-campaign-built-in-reports.md)，则Adobe Campaign允许您在各种上下文中生成报表以满足不同的需求。 本文档详细介绍了使用原则和实施模式。
 

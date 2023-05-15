@@ -2,11 +2,12 @@
 product: campaign
 title: 创建测试环境
 description: 创建测试环境
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 49ac279b-bc67-4311-b0a4-0e23f2a99c52
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 10%
@@ -15,7 +16,7 @@ ht-degree: 10%
 
 # 创建测试环境{#creating-a-test-environment}
 
-![](../../assets/v7-only.svg)
+
 
 要创建测试环境（沙盒模式），请应用以下步骤：
 

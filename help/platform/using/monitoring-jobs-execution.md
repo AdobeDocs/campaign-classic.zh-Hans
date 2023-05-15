@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: 监视作业执行
-description: 了解如何监视导入和导出作业的执行。
+description: 了解如何监视导入和导出作业的执行
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 55%
@@ -15,7 +17,7 @@ ht-degree: 55%
 
 # 监测作业执行 {#monitoring-job-execution}
 
-![](../../assets/common.svg)
+
 
 您可以直接从导入/导出作业列表跟踪导入和导出作业的执行情况。
 

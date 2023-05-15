@@ -2,18 +2,20 @@
 product: campaign
 title: 跟踪URL的预处理说明
 description: 进一步了解用于编写电子邮件URL脚本并仍对其进行跟踪的预处理说明
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 预处理指令 {#pre-processing-instructions}
 
-![](../../assets/common.svg)
+
 
 您可以在投放内容中使用特定语法来添加说明并编写跟踪电子邮件的URL脚本。 &lt;%@说明不是JavaScript:此语法专用于Adobe Campaign。
 
@@ -37,7 +39,7 @@ ht-degree: 1%
    <%@ include view="MirrorPage" %>  
    ```
 
-* 镜像页面URL:
+* 镜像页面 URL:
 
    ```
    View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.

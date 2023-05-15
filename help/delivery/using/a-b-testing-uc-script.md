@@ -2,18 +2,20 @@
 product: campaign
 title: 创建脚本
 description: 了解如何通过专用用例执行A/B测试
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 # 创建脚本 {#step-5--creating-the-script}
 
-![](../../assets/common.svg)
+
 
 脚本会计算用于剩余群体的投放内容的选择。 此脚本以最高打开率恢复有关投放的信息，并将内容复制到最终投放。
 
@@ -166,6 +168,6 @@ ht-degree: 4%
 * 最高转化率： `[indicators/@transactionRatio]`,
 * 收到消息后访问的页数： `[indicators/@totalWebPage]`,
 * 退订率最低： `[indicators/@optOutRatio]`,
-* 交易金额： `[indicators/@amount]`.
+* 交易金额: `[indicators/@amount]`.
 
 您现在可以定义最终投放。 [了解详情](a-b-testing-uc-final-delivery.md)。

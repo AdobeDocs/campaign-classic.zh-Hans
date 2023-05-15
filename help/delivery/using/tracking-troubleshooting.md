@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: 跟踪故障排除
-description: 本节提供与在Adobe Campaign Classic中跟踪配置和实施相关的常见问题
+description: 本节提供与在Adobe Campaign中跟踪配置和实施相关的常见问题
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
 
 # 跟踪故障排除 {#tracking-troubleshooting}
 
-![](../../assets/common.svg)
+
 
 在此部分中，您将在Adobe Campaign Classic中找到与跟踪配置和实施相关的常见问题。
 

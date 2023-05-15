@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: 压缩或加密文件
-description: 了解如何在处理之前在Campaign Classic中压缩或加密文件。
+description: 了解如何在处理之前在Campaign中压缩或加密文件
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '540'
 ht-degree: 8%
 
 ---
 
 # Zip或加密文件 {#zipping-or-encrypting-a-file}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign允许您导出压缩或加密文件。 在定义通过 **[!UICONTROL Data extraction (file)]** 活动时，您可以定义后处理以压缩文件或加密文件。
 

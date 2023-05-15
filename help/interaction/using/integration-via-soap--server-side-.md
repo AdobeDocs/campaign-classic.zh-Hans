@@ -2,11 +2,12 @@
 product: campaign
 title: 通过 SOAP（服务器端）进行集成
 description: 通过 SOAP（服务器端）进行集成
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 通过SOAP（服务器端）进行集成{#integration-via-soap-server-side}
 
-![](../../assets/v7-only.svg)
+
 
 为选件管理提供的SOAP Web服务与Adobe Campaign中常用的服务不同。 您可以通过上一节中描述的交互URL访问这些选件，并让您展示或更新给定联系人的选件。
 

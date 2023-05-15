@@ -2,9 +2,11 @@
 product: campaign
 title: 发送前检查
 description: 消息准备就绪后，在发送之前执行所有检查
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 808f459a0b77b1787fc017c031247ab268b5aafa
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # 发送前执行所有检查 {#perform-all-checks}
 
-![](../../assets/common.svg)
+
 
 消息准备就绪后，请确保其内容在所有设备上均正确显示，并且不包含任何错误，如错误的个性化或链接损坏。
 

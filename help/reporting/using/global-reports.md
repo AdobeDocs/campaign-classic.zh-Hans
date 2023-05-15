@@ -2,18 +2,19 @@
 product: campaign
 title: 全局报告
 description: 全局报告
+badge: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 4%
+source-wordcount: '2306'
+ht-degree: 8%
 
 ---
 
 # 全局报告 {#global-reports}
 
-![](../../assets/common.svg)
+
 
 这些报告涉及整个数据库中数据的活动。 要查看报表功能板，请转到 **[!UICONTROL Reports]** 选项卡。
 
@@ -43,7 +44,7 @@ ht-degree: 4%
 
 ## 投放吞吐量 {#delivery-throughput}
 
-此报表包含有关给定时段内整个平台的投放吞吐量的信息。 为了测量消息的传送速度，标准是每小时发送的消息数和消息的大小（以位/秒为单位）。 在以下示例中，第一个图表以蓝色显示成功投放，以橙色显示错误投放的数量。
+此报表包含有关给定时段内整个平台的投放吞吐量的信息。 用于衡量邮件传送速度的标准是每小时发送的邮件数和邮件大小（以位/秒为单位）。在下面的示例中，第一个图表用蓝色显示成功投放，用橙色显示错误投放的数量。
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
@@ -299,9 +300,9 @@ ht-degree: 4%
 * **[!UICONTROL Clicks]** :与成功处理的消息数量相比，点击投放至少一次的人数百分比。
 * **[!UICONTROL Unsubscription]** :退订链接的点击次数与成功处理消息数的百分比。
 
-## 打开次数的划分 {#breakdown-of-opens}
+## 打开的细分 {#breakdown-of-opens}
 
-此报表显示了在相关时段内，操作系统、设备和浏览器的打开次数的细分情况。 对于每个类别，使用两个图表。 第一个报表显示有关计算机和移动设备上打开次数的统计信息。 第二个显示仅与移动设备上的打开次数相关的统计信息。
+此报表显示了在相关时段内，操作系统、设备和浏览器的打开次数的细分情况。 为每个类别使用了两个图表。第一个图表显示有关计算机和移动设备上的打开的统计数据。第二个图表显示仅与移动设备上的打开有关的统计数据。
 
 打开次数对应于已打开的消息总数。 不会计算文本格式电子邮件。 有关“跟踪”打开的更多信息，请参阅 [跟踪打开次数](../../reporting/using/indicator-calculation.md#tracking-opens-) 中。
 

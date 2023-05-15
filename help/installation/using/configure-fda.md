@@ -2,11 +2,12 @@
 product: campaign
 title: 配置FDA连接器
 description: 了解FDA配置步骤
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 5%
@@ -15,7 +16,7 @@ ht-degree: 5%
 
 # 配置 FDA 连接器 {#specific-configurations-by-database-type}
 
-![](../../assets/v7-only.svg)
+
 
 根据您希望能够从Adobe Campaign访问的外部数据库，您需要执行特定配置。 这些配置实质上涉及在Adobe Campaign服务器上安装驱动程序并声明属于每个RDBMS的环境变量。
 

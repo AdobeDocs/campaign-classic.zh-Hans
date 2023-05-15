@@ -2,9 +2,11 @@
 product: campaign
 title: 添加种子地址
 description: 添加种子地址
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Seed Address
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 5%
@@ -13,7 +15,7 @@ ht-degree: 5%
 
 # 添加种子地址{#adding-seed-addresses}
 
-![](../../assets/common.svg)
+
 
 ## 投放中的种子地址 {#seed-addresses-in-a-delivery}
 

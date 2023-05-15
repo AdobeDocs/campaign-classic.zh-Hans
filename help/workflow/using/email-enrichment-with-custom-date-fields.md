@@ -2,9 +2,10 @@
 product: campaign
 title: 具有自定义日期字段的电子邮件扩充
 description: 了解如何使用自定义日期字段扩充电子邮件
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%
@@ -13,7 +14,7 @@ ht-degree: 3%
 
 # 具有自定义日期字段的电子邮件扩充{#email-enrichment-with-custom-date-fields}
 
-![](../../assets/v7-only.svg)
+
 
 在此示例中，我们希望向本月将庆祝生日的收件人发送一封包含自定义数据字段的电子邮件。 电子邮件将包含一个优惠券，在他们生日前后一周有效。
 

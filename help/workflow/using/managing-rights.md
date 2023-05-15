@@ -2,18 +2,19 @@
 product: campaign
 title: 管理工作流权限
 description: 了解如何管理工作流权限
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 88995fb3-d336-4355-acd4-33118dd0e2b0
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 管理工作流权限{#managing-rights}
 
-![](../../assets/v7-only.svg)
+
 
 如果Adobe Campaign操作员不是管理员，则需要拥有创建、执行或修改工作流的访问权限。
 
@@ -23,7 +24,7 @@ ht-degree: 0%
 
 有关管理操作员和权限的更多信息，请参阅此 [部分](../../platform/using/access-management.md).
 
-## 运算符组 {#operator-groups-wf}
+## 操作员组 {#operator-groups-wf}
 
 以下运算符组与工作流关联：
 

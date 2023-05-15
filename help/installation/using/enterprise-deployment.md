@@ -2,11 +2,12 @@
 product: campaign
 title: 企业部署
 description: 企业部署
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 企业部署{#enterprise-deployment}
 
-![](../../assets/v7-only.svg)
+
 
 这是最完整的配置。 它以标准配置为基础，以提高安全性和可用性：
 
@@ -76,7 +77,7 @@ ht-degree: 3%
 在以下示例中，实例的参数为：
 
 * 实例的名称：演示
-* DNS掩码：tracking.campaign.net*、console.campaign.net*（应用程序服务器处理客户端控制台连接和报表以及镜像页面和退订页面的URL）
+* DNS掩码：tracking.campaign.net&#42;, console.campaign.net&#42; （应用程序服务器处理客户端控制台连接和报表以及镜像页面和退订页面的URL）
 * 语言：英语
 * 数据库：campaign:demo@dbsrv
 

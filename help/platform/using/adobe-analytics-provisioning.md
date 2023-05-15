@@ -2,11 +2,12 @@
 product: campaign
 title: Adobe Analytics connector预配
 description: 了解有关Adobe Analytics连接器配置的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: bb806da3d865e0d05e7823b2609227ea8effd875
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # Adobe Analytics Connector 配置 {#adobe-analytics-connector-provisioning}
 
-![](../../assets/v7-only.svg)
+
 
 >[!IMPORTANT]
 >

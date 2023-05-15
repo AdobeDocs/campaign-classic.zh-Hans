@@ -2,9 +2,10 @@
 product: campaign
 title: 定义审批
 description: 通过审批，操作员能够做出管理工作流的决策或确认其继续执行
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # 定义审批 {#defining-approvals}
 
-![](../../assets/v7-only.svg)
+
 
 通过批准，操作员能够做出管理工作流的决策或确认工作流的继续执行情况。
 
@@ -62,7 +63,7 @@ ht-degree: 2%
 
 审批的操作员组应指定为角色或职能，而不是指定个人。 例如，“促销活动预算”组比“Harry&#39;s组”更可取。 我们建议一个组中至少有两个人可以批准一项任务。 这样，如果一个人缺席，另一个人可以做出响应。
 
-## 过期 {#expirations}
+## 过期时间 {#expirations}
 
 过期是在不同类型的活动（特别是在批准中）中使用的特定过渡。 您可以使用过期功能在给定时间后触发某个操作，而无需响应。 例如，还可以使用它来跟踪工作流，并将批准分配给其他组。
 
@@ -98,7 +99,7 @@ ht-degree: 2%
    return expiration
    ```
 
-## 多次批准 {#multiple-approval}
+## 多重审批 {#multiple-approval}
 
 多个批准是一种机制，允许所有批准操作员做出响应。 为每个响应激活一个过渡。
 

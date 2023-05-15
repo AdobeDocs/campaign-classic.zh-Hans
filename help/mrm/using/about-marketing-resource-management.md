@@ -2,11 +2,12 @@
 product: campaign
 title: 营销资源管理快速入门
 description: 发现营销资源管理
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # 营销资源管理入门{#about-marketing-resource-management}
 
-![](../../assets/v7-only.svg)
+
 
 的 **营销资源管理(MRM)** 通过提供对涉及的任务、预算和营销资源的完整管理和实时跟踪，您可以以协作模式控制营销活动。
 

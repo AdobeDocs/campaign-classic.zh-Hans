@@ -2,18 +2,19 @@
 product: campaign
 title: 工作流中的 JavaScript 代码示例
 description: 以下示例显示如何在工作流中使用JavaScript代码
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1764'
 ht-degree: 3%
 
 ---
 
 # 工作流中的 JavaScript 代码示例{#javascript-in-workflows}
 
-![](../../assets/v7-only.svg)
+
 
 以下示例显示如何在工作流中使用JavaScript代码：
 
@@ -52,7 +53,7 @@ ht-degree: 3%
    1. 调用 `Write` 方法 `xtk:session` 架构。
 
       >[!IMPORTANT]
-      > 如果您使用Adobe Campaign v8，我们建议您将暂存机制与 **摄取** 和 **数据更新/删除** 的API `Write` 方法Snowflake。 [了解更多](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}。
+      > 如果您使用Adobe Campaign v8，我们建议您将暂存机制与 **摄取** 和 **数据更新/删除** 的API `Write` 方法Snowflake。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
    1. 将XML代码作为写入请求的参数传递。
 
@@ -243,7 +244,7 @@ var query = xtk.queryDef.create(
 
 ### 步骤3:运行查询
 
-请执行以下步骤：
+执行以下步骤：
 
 1. 调用 `ExecuteQuery` 方法 `queryDef` 实体：
 
@@ -423,7 +424,7 @@ xtk.workflow.PostEvent(
 * 创建执行SQL查询的方法
 * 使用 `write` 插入、更新和删除记录的方法
 
-请执行以下步骤：
+执行以下步骤：
 
 1. 定义查询：
 
@@ -562,7 +563,7 @@ for each (var w in res.recipient)
 * 的 `delete` 操作
 
 >[!IMPORTANT]
-> 如果您使用Adobe Campaign v8，我们建议您将暂存机制与 **摄取** 和 **数据更新/删除** 的API `Write` 方法Snowflake。 [了解更多](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}。
+> 如果您使用Adobe Campaign v8，我们建议您将暂存机制与 **摄取** 和 **数据更新/删除** 的API `Write` 方法Snowflake。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
 #### 示例1:插入或更新记录
 

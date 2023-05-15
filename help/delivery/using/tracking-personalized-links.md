@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: 个性化链接跟踪入门
-description: 了解如何在电子邮件中编写可进行个性化的链接，并在Campaign Classic中支持跟踪。
+description: 了解如何在电子邮件中编写可在Campaign中进行个性化和支持跟踪的链接
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization
 exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '218'
 ht-degree: 7%
 
 ---
 
 # 个性化链接跟踪入门 {#tracking-personalized-links}
 
-![](../../assets/common.svg)
+
 
 包含个性化的电子邮件内容中的链接需要跟踪特定的语法。
 

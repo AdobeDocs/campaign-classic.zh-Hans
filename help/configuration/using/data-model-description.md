@@ -2,18 +2,18 @@
 product: campaign
 title: Adobe Campaign Classic数据模型描述
 description: 本文档介绍Adobe Campaign数据模型
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Data Model
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2374'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Campaign数据模型描述{#data-model-description}
 
-![](../../assets/v7-only.svg)
 
 Adobe Campaign 提供了预定义的数据模型。本节详细介绍Adobe Campaign数据模型的内置表及其交互。
 
@@ -180,9 +180,9 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 * 控制组的响应率： **dProofRenatedRate**. 假设控制组的响应率。
 * 联系的总人口收入： **dContactRenactedTotalAmount**. 假设中目标联系人的总收入。
 * 控制组的平均收入： **dContactRenactedAvgAmount**. 假设中目标控制组联系人的平均收入。
-* 控制组的总收入： **dProofRenactedTotalAmount**. 假设控制组的总收入。
+* 控制组的总收入： **dProofRenactedTotalAmount**. 假设验证对照组的总收入.
 * 控制组的平均收入： **dProofRenactedAvgAmount**. 假设控制组的平均收入。
-* 每个联系人的毛利总额： **dContactRenactedTotalMargin**. 假设中定位的每个联系人的总利润。
+* 每个联系人的毛利总额： **dContactRenactedTotalMargin**. 假设验证中针对的每次联系的总利润.
 * 每个联系人的平均利润： **dContactRenactedAvgMargin**. 假设中定位的每个联系人的平均毛利。
 * 控制组的毛利总额： **dProofRenactedTotalMargin**. 在假设中定位的控制组的总利润。
 * 控制组的平均利润： **dProofRenactedAvgMargin**. 在假设中定位的控制组的平均边距。

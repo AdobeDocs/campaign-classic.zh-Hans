@@ -2,20 +2,21 @@
 product: campaign
 title: 安装客户端控制台
 description: 了解如何安装客户端控制台
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1118'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # 安装和更新Campaign客户端控制台{#installing-the-client-console}
 
-![](../../assets/v7-only.svg)
+
 
 Campaign客户端控制台是一个富客户端，可让您连接到Campaign应用程序服务器。
 
@@ -39,7 +40,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 从Campaign Classic7.3内部版本开始，任何控制台安装都需要安装Microsoft Edge Webview 2运行时。
 
-Web View默认作为Windows 11操作系统的一部分安装。 如果系统上尚不存在Campaign Classic控制台安装程序，将提示您从下载它 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download). 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器访问该链接。
+Web View默认作为Windows 11操作系统的一部分安装。 如果系统上尚不存在Campaign Classic控制台安装程序，将提示您从下载它 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn). 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器访问该链接。
 
 ## Adobe托管的实施 {#hosted-customers}
 

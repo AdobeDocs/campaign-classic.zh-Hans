@@ -2,12 +2,13 @@
 product: campaign
 title: 添加明细列表类型计算字段
 description: 了解如何添加枚举类型计算字段
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: workflow
 content-type: reference
 topic-tags: use-cases
 feature: Workflows, Data Management
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 1%
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 # 添加明细列表类型计算字段 {#adding-an-enumeration-type-calculated-field}
 
-![](../../assets/v7-only.svg)
+
 
 在此，我们要使用 **[!UICONTROL Enumerations]** 类型计算字段。 此字段将在数据预览窗口中生成额外的列。 此列将为每个收件人（0、1和2）指定作为结果返回的数值。 新列中的每个值将分配一个性别：“Male”表示“1”，“Female”表示“2”，或“Not issided”（如果值等于“0”）。
 

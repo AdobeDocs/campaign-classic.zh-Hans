@@ -2,10 +2,12 @@
 product: campaign
 title: 创建Experience Manager新闻稿
 description: 创建Experience Manager新闻稿
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 1%
@@ -14,11 +16,11 @@ ht-degree: 1%
 
 # 创建Experience Manager新闻稿{#creating-an-experience-manager-newsletter}
 
-![](../../assets/common.svg)
 
-例如，此集成可用于在Adobe Experience Manager中创建新闻稿，然后在Adobe Campaign中用作电子邮件促销活动的一部分。
 
-**从Adobe Experience Manager：**
+此集成可用于例如在Adobe Experience Manager中创建新闻稿，然后在Adobe Campaign中作为电子邮件促销活动的一部分使用。
+
+**来自Adobe Experience Manager:**
 
 1. 在您的AEM创作实例中，单击 **Adobe Experience** 徽标，然后选择 **[!UICONTROL Sites]**.
 
@@ -29,55 +31,55 @@ ht-degree: 1%
 
    ![](assets/aem_uc_2.png)
 
-1. 选择 **[!UICONTROL Adobe Campaign Email (AC 6.1)]** 模板和命名您的新闻稿。
-1. 创建页面后，访问 **[!UICONTROL Page information]** 菜单并单击 **[!UICONTROL Open Properties]**.
+1. 选择 **[!UICONTROL Adobe Campaign Email (AC 6.1)]** 模板并命名新闻稿。
+1. 创建页面后，访问 **[!UICONTROL Page information]** 菜单，单击 **[!UICONTROL Open Properties]**.
 
    ![](assets/aem_uc_3.png)
 
-1. 在 **[!UICONTROL Cloud Services]** 选项卡，选择 **[!UICONTROL Adobe Campaign]** 作为 **[!UICONTROL Cloud service configuration]** 和您的Adobe Campaign实例。
+1. 在 **[!UICONTROL Cloud Services]** 选项卡，选择 **[!UICONTROL Adobe Campaign]** as **[!UICONTROL Cloud service configuration]** 和您的Adobe Campaign实例。
 
    ![](assets/aem_uc_4.png)
 
-1. 通过添加组件(例如Adobe Campaign中的个性化字段)编辑电子邮件内容。
-1. 当电子邮件准备就绪时，访问 **[!UICONTROL Page information]** 菜单并单击 **[!UICONTROL Start workflow]**.
+1. 通过添加组件(例如Adobe Campaign中的个性化字段)来编辑电子邮件内容。
+1. 电子邮件准备就绪后，访问 **[!UICONTROL Page information]** 菜单，单击 **[!UICONTROL Start workflow]**.
 
    ![](assets/aem_uc_5.png)
 
-1. 从第一个下拉菜单中，选择 **[!UICONTROL Publish to Adobe Campaign]** 作为工作流模型，然后单击 **[!UICONTROL Start workflow]**.
+1. 从第一个下拉菜单中，选择 **[!UICONTROL Publish to Adobe Campaign]** 作为工作流模型，单击 **[!UICONTROL Start workflow]**.
 
    ![](assets/aem_uc_6.png)
 
-1. 然后，在上一步中，启动 **[!UICONTROL Approve for Campaign]** 工作流。
-1. 免责声明显示在页面顶部。 单击 **[!UICONTROL Complete]** 要确认审阅并单击 **[!UICONTROL Ok]**.
+1. 然后，与上一步一样，启动 **[!UICONTROL Approve for Campaign]** 工作流。
+1. 免责声明将显示在页面顶部。 单击 **[!UICONTROL Complete]** 确认审阅并单击 **[!UICONTROL Ok]**.
 
    ![](assets/aem_uc_7.png)
 
-1. 再次单击 **[!UICONTROL Complete]** 并选择 **[!UICONTROL Newsletter approval]** 在 **[!UICONTROL Next Step]** 下拉菜单。
+1. 再次单击 **[!UICONTROL Complete]** 选择 **[!UICONTROL Newsletter approval]** 在 **[!UICONTROL Next Step]** 下拉菜单。
 
    ![](assets/aem_uc_8.png)
 
-您的新闻稿现已准备就绪，并已在Adobe Campaign中同步。
+您的新闻稿现已准备就绪，并可在Adobe Campaign中同步。
 
-**从Adobe Campaign：**
+**来自Adobe Campaign:**
 
-1. 从 **[!UICONTROL Campaigns]** 选项卡，单击 **[!UICONTROL Deliveries]** 则 **[!UICONTROL Create]**.
+1. 从 **[!UICONTROL Campaigns]** ，单击 **[!UICONTROL Deliveries]** then **[!UICONTROL Create]**.
 
    ![](assets/aem_uc_9.png)
 
-1. 在 **[!UICONTROL Delivery template]** 下拉列表中，选择 **[!UICONTROL Email delivery with AEM content (mailAEMContent)]** 模板。
+1. 在 **[!UICONTROL Delivery template]** 下拉框中，选择 **[!UICONTROL Email delivery with AEM content (mailAEMContent)]** 模板。
 
    ![](assets/aem_uc_10.png)
 
-1. 添加 **[!UICONTROL Label]** 到您的投放，然后单击 **[!UICONTROL Continue]**.
+1. 添加 **[!UICONTROL Label]** 投放，单击 **[!UICONTROL Continue]**.
 1. 单击 **[!UICONTROL Synchronize]** 按钮。
 
-   如果此按钮未出现在界面中，请单击 **[!UICONTROL Properties]** 按钮并选择 **[!UICONTROL Advanced]** 选项卡。 此 **[!UICONTROL Content editing mode]** 字段应设置为 **[!UICONTROL AEM]** 将您的AEM实例放在 **[!UICONTROL AEM account]** 字段。
+   如果此按钮未显示在界面中，请单击 **[!UICONTROL Properties]** 按钮并选择 **[!UICONTROL Advanced]** 选项卡。 的 **[!UICONTROL Content editing mode]** 字段应设置为 **[!UICONTROL AEM]** 的AEM实例 **[!UICONTROL AEM account]** 字段。
 
    ![](assets/aem_uc_11.png)
 
-1. 选择之前在Adobe Experience Manager中创建的投放并单击 **[!UICONTROL Ok]**.
-1. 单击 **[!UICONTROL Refresh content]** 对AEM投放做出更改后立即按此按钮。
+1. 选择之前在Adobe Experience Manager中创建的投放，然后单击 **[!UICONTROL Ok]**.
+1. 单击 **[!UICONTROL Refresh content]** 按钮。
 
    ![](assets/aem_uc_12.png)
 
-您的电子邮件现已准备就绪，可发送给您的受众。
+您的电子邮件现已准备好发送给受众。

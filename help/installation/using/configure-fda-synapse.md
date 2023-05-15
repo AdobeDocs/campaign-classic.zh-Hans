@@ -2,11 +2,12 @@
 product: campaign
 title: 配置对Synapse的访问
 description: 了解如何在FDA中配置对Synapse的访问
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # 配置对Azure synapse的访问 {#configure-access-to-azure-synapse}
 
-![](../../assets/v7-only.svg)
+
 
 使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)选项，用于处理存储在外部数据库中的信息。 请按照以下步骤配置对 **MicrosoftAzure synapse分析**.
 

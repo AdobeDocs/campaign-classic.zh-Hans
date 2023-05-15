@@ -2,9 +2,11 @@
 product: campaign
 title: 创建“推荐朋友”调查
 description: 了解创建“推荐朋友”表单的步骤
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # 用例：创建引用窗体{#use-case-creating-a-refer-a-friend-form}
 
-![](../../assets/common.svg)
+
 
 在本例中，我们希望向数据库中的收件人提供竞争信息。 Web窗体将有一个用于输入答案的部分，另一个用于通过输入朋友的电子邮件地址来引荐朋友。
 

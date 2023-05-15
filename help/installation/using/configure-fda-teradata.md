@@ -2,11 +2,12 @@
 product: campaign
 title: 配置对Teradata的访问
 description: 了解如何在FDA中配置对Teradata的访问
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1798'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # 配置对Teradata的访问 {#configure-access-to-teradata}
 
-![](../../assets/v7-only.svg)
+
 
 使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)选项，用于处理存储在外部数据库中的信息。 请按照以下步骤配置对Teradata的访问。
 

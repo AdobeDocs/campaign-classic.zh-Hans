@@ -2,20 +2,21 @@
 product: campaign
 title: 配置Campaign选项
 description: 了解如何配置Campaign选项
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3991'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 # Campaign Classic 选项列表{#configuring-campaign-options}
 
-![](../../assets/v7-only.svg)
+
 
 的 **[!UICONTROL Administration / Platform / Options]** 节点允许您配置Adobe Campaign选项。 其中一些是安装Campaign时内置的，而另一些则可在需要时手动添加。 可用选项因随实例一起安装的包而异。
 
@@ -126,7 +127,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_PublishingScript</span> <br /> </td> 
-   <td> 发布脚本。<br /> </td> 
+   <td> 发布脚本.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_NoCountBroadLogMsgPush</span> <br /> </td> 
@@ -150,7 +151,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> 客户的通用名称。 用于向收件人显示的一些警告消息。<br /> “您之所以收到这条消息，是因为您已与*****或一家关联公司联系。 不再从*****”接收消息。<br /> </td> 
+   <td> 客户的常用名称. 用于向收件人显示的一些警告消息。<br /> “您之所以收到这条消息，是因为您已与*****或一家关联公司联系。 不再从*****”接收消息。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -297,15 +298,15 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
-   <td> 上传期间跳过的图像的URL掩码列表。<br /> </td> 
+   <td> 上传期间跳过的图像的 URL 掩码列表.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
-   <td> 图像上传的配置。 这些值可以是无/跟踪/脚本/列表（可以由运算符的可选设置来覆盖）。 </td> 
+   <td> 图像上传的配置. 这些值可以是无/跟踪/脚本/列表（可以由运算符的可选设置来覆盖）。 </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
-   <td> 存储服务器上图像的文件夹。<br /> </td> 
+   <td> 要将服务器上的图像存储到的文件夹.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LogoPath</span> <br /> </td> 
@@ -337,7 +338,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkFileRes_Public_URL</span> <br /> </td> 
-   <td> 公共资源文件的新URL。<br /> </td> 
+   <td> 公共资源文件的新 URL.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -488,15 +489,15 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgProcessTimeAlert</span> <br /> </td> 
-   <td> 实时事件平均处理时间的警报阈值。<br /> </td> 
+   <td> 实时事件的平均处理时间的警报阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgProcessTimeWarning</span> <br /> </td> 
-   <td> 实时事件平均处理时间的警告阈值。<br /> </td> 
+   <td> 实时事件的平均处理时间的警告阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueAlert</span> <br /> </td> 
-   <td> 已排队实时事件的平均数的警报阈值。<br /> </td> 
+   <td> 已排队实时事件的平均数目的警报阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeAlert</span> <br /> </td> 
@@ -508,15 +509,15 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueWarning</span> <br /> </td> 
-   <td> 已排队实时事件的平均数的警告阈值。<br /> </td> 
+   <td> 平均已排队实时事件数的警告阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventErrorAlert</span> <br /> </td> 
-   <td> 处理实时事件错误的警报阈值。<br /> </td> 
+   <td> 实时事件的处理错误的警报阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventErrorWarning</span> <br /> </td> 
-   <td> 处理实时事件错误的警告阈值。<br /> </td> 
+   <td> 实时事件的处理错误的警告阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMaxQueueAlert</span> <br /> </td> 
@@ -536,11 +537,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueAlert</span> <br /> </td> 
-   <td> 挂起实时事件队列的关键条件前的阈值。<br /> </td> 
+   <td> 待处理实时事件队列的严重情况前阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueWarning</span> <br /> </td> 
-   <td> 挂起实时事件队列警告前的阈值。<br /> </td> 
+   <td> 待处理实时事件队列的警告前阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventThroughputAlert</span> <br /> </td> 
@@ -677,7 +678,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkInstancePrefix</span> <br /> </td> 
-   <td> 为自动生成的内部名称添加了前缀。<br /> </td> 
+   <td> 已添加到自动生成的内部名称的前缀.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkQuery_Schema_LineCount</span> <br /> </td> 
@@ -816,11 +817,11 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NmsExecutionInstanceId</span> <br /> </td> 
-   <td> 执行实例标识符。<br /> </td> 
+   <td> 执行实例标识符.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_CustomerId</span> <br /> </td> 
-   <td> 发送账单报表时使用的客户标识符。<br /> </td> 
+   <td> 发送账单报告时使用的客户标识符.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_IntranetURL</span> <br /> </td> 
@@ -857,7 +858,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ClickFormula</span> <br /> </td> 
-   <td> 跟踪的URL计算脚本。<br /> </td> 
+   <td> 跟踪的 URL 计算脚本.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ExtAccount</span> <br /> </td> 
@@ -873,7 +874,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_OpenFormula</span> <br /> </td> 
-   <td> 打开URL计算脚本。<br /> </td> 
+   <td> 打开 URL 计算脚本.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Password</span> <br /> </td> 
@@ -987,7 +988,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchScope</span> <br /> </td> 
-   <td> 搜索范围。<br /> </td> 
+   <td> 搜索范围.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Mechanism</span> <br /> </td> 
@@ -1015,7 +1016,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsScope</span> <br /> </td> 
-   <td> 搜索范围。<br /> </td> 
+   <td> 搜索范围.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Server</span> <br /> </td> 
@@ -1048,7 +1049,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> 用于指定Web窗体失效模式的选项：默认情况下，如果选项为“tracking”，则使用跟踪服务器，并将个性化列表与“其他服务器”选项结合使用。<br /> </td> 
+   <td> 允许您指定 Web 窗体失效模式的选项：默认情况下为本地，如果选项为“跟踪”，则使用跟踪服务器，并使用带有“其他服务器”选项的个性化列表。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURLs</span> <br /> </td> 

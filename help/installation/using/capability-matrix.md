@@ -2,17 +2,18 @@
 product: campaign
 title: Campaign本地、混合和托管功能矩阵
 description: 了解托管部署和内部部署之间的主要区别
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 20%
+ht-degree: 28%
 
 ---
 
 # 每个模型的功能矩阵{#capability-matrix-per-model}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性及其用法取决于安装的部署类型。 本文将详细介绍完全托管(Managed Services)部署与内部部署之间某些功能的主要区别。
 
@@ -25,7 +26,7 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 | 功能 | 托管 | 混合 | 内部部署 | 详细信息 |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 配置 Campaign 服务器 | 按需 | 可用 | 可用 | [了解详情](../../installation/using/the-server-configuration-file.md) |
-| 电子邮件密送 | 按需 | 按需 | 可用 | [了解详情](../../installation/using/email-archiving.md) |
+| 电子邮件密件抄送 | 按需 | 按需 | 可用 | [了解详情](../../installation/using/email-archiving.md) |
 | 管理消息中心执行实例 | 按需 | 按需 | 可用 | [了解详情](../../message-center/using/about-transactional-messaging.md) |
 | 管理中间源平台 | 按需 | 按需 | 可用 | [了解详情](../../installation/using/mid-sourcing-server.md) |
 | 通过Litmus呈现收件箱 | 按需 | 按需 | 可用 | [了解详情](../../delivery/using/inbox-rendering.md) |

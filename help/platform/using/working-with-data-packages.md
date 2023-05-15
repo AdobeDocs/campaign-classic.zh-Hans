@@ -2,20 +2,22 @@
 product: campaign
 title: 使用数据包
 description: 使用数据包
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2442'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 使用数据包{#working-with-data-packages}
 
-![](../../assets/common.svg)
+
 
 ## 关于数据包 {#about-data-packages}
 
@@ -299,7 +301,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
    ![](assets/packagedefinition_packageexport.png)
 
-## 导入资源包 {#importing-packages}
+## 导入包 {#importing-packages}
 
 可通过主菜单访问资源包导入向导 **[!UICONTROL Tools > Advanced > Import package]** Adobe Campaign客户端控制台的URL。
 
@@ -378,7 +380,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 * 包含一个或多个功能。
 * 应包含所有依赖项，以便能够在不使用任何其他包的情况下运行功能。
 
-**活动**
+**营销活动**
 
 此包不是强制包。 为所有营销活动创建特定类型有时非常有用，即使营销活动可被视为功能。
 

@@ -2,20 +2,22 @@
 product: campaign
 title: 模拟范围
 description: 模拟范围
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
-source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 # 模拟范围{#simulation-scope}
 
-![](../../assets/common.svg)
+
 
 ## 范围的定义 {#definition-of-the-scope}
 
@@ -24,9 +26,9 @@ ht-degree: 2%
 以下项目是必填项：
 
 * 环境或选件类别。
-* 提供空间。
-* 联系日期。 在联系日期不符合条件的选件将不被考虑在内。
-* 目标群体。
+* 优惠空间.
+* 联系日期. 在联系日期不符合条件的选件将不被考虑在内。
+* 目标人群.
 
    如果您未在目标上配置过滤器，则会考虑整个收件人表。
 

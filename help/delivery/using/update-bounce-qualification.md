@@ -2,9 +2,11 @@
 product: campaign
 title: 更新Apple 2021年服务中断后的退回鉴别
 description: 了解如何在Apple 2021年服务中断后更新退回资格
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 在Apple中断后更新错误硬退回 {#update-bounce-qualification.md}
 
-![](../../assets/common.svg)
+
 
 ## 上下文
 

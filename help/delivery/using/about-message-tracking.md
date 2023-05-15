@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: 跟踪入门
-description: 进一步了解有关在Adobe Campaign Classic中跟踪的一般准则
+description: 进一步了解有关在Adobe Campaign中跟踪的一般准则
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Email
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 9%
+source-wordcount: '683'
+ht-degree: 10%
 
 ---
 
 # 消息跟踪入门 {#get-started-tracking}
 
-![](../../assets/common.svg)
+
 
 凭借其跟踪功能，Adobe Campaign使您能够跟踪发送的消息并检查收件人的行为：打开、点击链接、退订等。
 

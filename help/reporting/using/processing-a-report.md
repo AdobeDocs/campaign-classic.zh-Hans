@@ -2,9 +2,11 @@
 product: campaign
 title: 使用分析报表
 description: 使用分析报表
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 使用分析报表{#processing-a-report}
 
-![](../../assets/common.svg)
+
 
 ## 保存分析报表 {#saving-an-analysis-report}
 

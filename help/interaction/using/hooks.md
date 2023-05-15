@@ -2,20 +2,21 @@
 product: campaign
 title: 挂钩
 description: 挂钩
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
-source-git-commit: 7728826eea199d2367fcbf556c01ec9d6cae466f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 修改标准引擎行为{#hooks}
 
-![](../../assets/v7-only.svg)
+
 
 通过交互中的挂接，您可以修改 **标准引擎行为**.
 

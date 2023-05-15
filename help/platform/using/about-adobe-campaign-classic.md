@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: 关于 Adobe Campaign Classic
-description: 发现关键功能、用户界面和全局指南。
+description: 探索关键功能、用户界面和全局指南
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 92%
@@ -15,7 +16,7 @@ ht-degree: 92%
 
 # 开始使用Campaign Classic{#about-adobe-campaign-classic}
 
-![](../../assets/v7-only.svg)
+
 
 为了实现高水准的客户交互和优秀的客户体验，企业必须确保客户在所有接触点上的历程是一致且连续的。现在，营销人员能够高效的设计、计划、执行、管理，并且优化跨渠道营销活动，从而创造更高的市场营销投资回报，并且提高客户忠诚度。
 

@@ -2,9 +2,11 @@
 product: campaign
 title: 使用描述性分析向导
 description: 使用描述性分析向导
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # 使用描述性分析向导{#using-the-descriptive-analysis-wizard}
 
-![](../../assets/common.svg)
+
 
 要创建描述性分析报告，请使用专用向导。 配置取决于要分析的数据和所需的渲染。
 

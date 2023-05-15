@@ -2,9 +2,10 @@
 product: campaign
 title: 互动和优惠管理
 description: 了解如何根据资格规则向联系人发送最佳优惠
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Interaction, Offers
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 6%
@@ -13,7 +14,7 @@ ht-degree: 6%
 
 # 互动和优惠管理{#interaction-and-offer-management}
 
-![](../../assets/v7-only.svg)
+
 
 互动让您能够在与给定联系人（客户或目标）的交互过程中，通过使其成为单个或多个自适应选件进行实时响应。 例如，这些可以是简单的通信消息、针对一个或多个产品或服务的特惠。
 

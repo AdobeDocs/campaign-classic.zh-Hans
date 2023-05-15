@@ -2,11 +2,12 @@
 product: campaign
 title: 最新版本
 description: 最新 Campaign Classic v7 发行说明
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2947'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # 最新版本{#latest-release}
 
-![](../../assets/v7-only.svg)
+
 
 此页面列出了 **Campaign v7 最新版本**&#x200B;中的新增功能、改进和修复。每个新的内部版本都带有一个以颜色突出显示的状态。在[此页面](rn-overview.md)中了解有关 Campaign Classic v7 内部版本状态的更多信息。
 

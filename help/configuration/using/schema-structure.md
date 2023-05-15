@@ -2,11 +2,12 @@
 product: campaign
 title: 模式结构
 description: 模式结构
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 2%
@@ -14,8 +15,6 @@ ht-degree: 2%
 ---
 
 # 模式结构{#schema-structure}
-
-![](../../assets/v7-only.svg)
 
 的基本结构 `<srcschema>` 如下所示：
 
@@ -199,19 +198,19 @@ ht-degree: 2%
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
-   <td> 短<br /> </td> 
+   <td> 短整型<br /> </td> 
    <td> 斯马林特<br /> </td> 
    <td> 数字(5)<br /> </td> 
    <td> 斯马林特<br /> </td> 
   </tr> 
   <tr> 
-   <td> 两次<br /> </td> 
+   <td> 双精度型<br /> </td> 
    <td> 双精度<br /> </td> 
    <td> 浮动<br /> </td> 
    <td> 浮动<br /> </td> 
   </tr> 
   <tr> 
-   <td> 长<br /> </td> 
+   <td> 长整型<br /> </td> 
    <td> 整数<br /> </td> 
    <td> 数字(10)<br /> </td> 
    <td> INT<br /> </td> 

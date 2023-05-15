@@ -2,18 +2,20 @@
 product: campaign
 title: 关于 Campaign 内置报告
 description: 关于 Campaign 内置报告
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '269'
+ht-degree: 4%
 
 ---
 
 # 关于 Campaign 内置报告{#about-campaign-built-in-reports}
 
-![](../../assets/common.svg)
+
 
 本章提供Adobe Campaign内置报表的列表、其内容和上下文。 利用以下信息，可避免创建平台中已有的报表。
 

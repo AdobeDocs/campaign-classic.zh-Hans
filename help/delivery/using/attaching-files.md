@@ -2,18 +2,20 @@
 product: campaign
 title: 附加文件
 description: 附加文件
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '928'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 # 将文件附加到电子邮件{#attaching-files}
 
-![](../../assets/common.svg)
+
 
 ## 关于电子邮件附件 {#about-email-attachments}
 
@@ -21,7 +23,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->为避免出现性能问题，建议在每封电子邮件中不要包含多个附件。 建议的阈值可从 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
+>为了避免出现性能问题，建议每封电子邮件不要附加多个附件。建议的阈值可从 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
 
 可能有两种情况：
 
@@ -70,7 +72,7 @@ ht-degree: 2%
 
 可以使用以下选项：
 
-* **在创建投放模板时指定文件名**
+* **创建投放模板时指定文件名**
 * **在发送每条消息期间，文件内容会进行个性化并转换为PDF**
 * **文件名称在投放分析期间计算（它不能取决于收件人用户档案）**
 * **文件名是在每个收件人（取决于收件人）的投放时计算的**

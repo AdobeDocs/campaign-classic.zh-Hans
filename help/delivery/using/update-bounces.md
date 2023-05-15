@@ -2,19 +2,22 @@
 product: campaign
 title: 在 ISP 中断后更新退回限制条件
 description: 了解如何在ISP中断后更新退回资格
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
+exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# 在ISP中断后更新错误硬退回 {#update-bounces}
+# ISP 中断后更新错误的硬退回 {#update-bounces}
 
-![](../../assets/common.svg)
+
 
 ## 上下文{#update-bounce-context}
 

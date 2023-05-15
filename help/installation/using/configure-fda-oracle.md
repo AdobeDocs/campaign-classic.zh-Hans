@@ -2,20 +2,21 @@
 product: campaign
 title: 配置对Oracle的访问
 description: 了解如何在FDA中配置对Oracle的访问
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 配置对Oracle的访问 {#configure-access-to-oracle}
 
-![](../../assets/v7-only.svg)
+
 
 使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)选项，用于处理存储在外部数据库中的信息。 请按照以下步骤配置对Oracle的访问。
 
@@ -96,5 +97,5 @@ ht-degree: 0%
 
    * **[!UICONTROL Password]**:用户帐户密码
 
-   * **[!UICONTROL Time zone]**:服务器时区
+   * **[!UICONTROL Time zone]**: 服务器时区
    ![](assets/oracle_config.png)

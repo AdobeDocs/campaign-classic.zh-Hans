@@ -2,9 +2,10 @@
 product: campaign
 title: 分叉
 description: 进一步了解分支工作流活动
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # 分叉{#fork}
 
-![](../../assets/v7-only.svg)
+
 
 您可以使用 **[!UICONTROL Fork]** 活动创建多个叫客过渡，并在同一工作流中独立运行多个活动。
 

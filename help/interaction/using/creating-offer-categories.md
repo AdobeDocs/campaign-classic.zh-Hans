@@ -2,11 +2,12 @@
 product: campaign
 title: 创建优惠类别
 description: 创建优惠类别
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 创建优惠类别{#creating-offer-categories}
 
-![](../../assets/v7-only.svg)
+
 
 选件类别的创建只能在 **[!UICONTROL Design]** 环境。 它们会自动部署在 **[!UICONTROL Live]** 环境（即，提供）。 默认情况下， **[!UICONTROL Design]** 环境包含用于接收所有选件的类别。 可以创建子类别以将层次结构添加到目录选件中。
 

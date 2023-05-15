@@ -1,10 +1,12 @@
 ---
 product: campaign
 title: 投放性能最佳实践
-description: 了解有关投放性能和最佳实践的更多信息。
+description: 进一步了解投放性能和最佳实践
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 6%
@@ -13,7 +15,7 @@ ht-degree: 6%
 
 # 投放性能最佳实践 {#delivery-performances}
 
-![](../../assets/common.svg)
+
 
 我们建议遵循以下准则，以确保投放性能良好，并检查在遇到投放问题时执行的操作。
 

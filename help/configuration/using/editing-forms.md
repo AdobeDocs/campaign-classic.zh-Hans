@@ -2,8 +2,10 @@
 product: campaign
 title: 编辑表单
 description: 编辑表单
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 4af44f38d495d31dec4b9b7a142dbed0c2450d56
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # 编辑表单{#editing-forms}
 
-![](../../assets/common.svg)
+
 
 ## 概述
 
@@ -60,7 +62,7 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
    该表单包括多个按特定顺序排列的浮动屏幕。 用户从一个屏幕导航到下一个屏幕。 [阅读更多](form-structure.md#wizards)。
 
-* Iconbox
+* 图标框
 
    此表单包含多个页面。 要导航表单，用户需选择表单左侧的图标。
 

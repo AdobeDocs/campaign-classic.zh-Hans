@@ -2,18 +2,19 @@
 product: campaign
 title: 收集数据进行分析
 description: 收集数据进行分析
+badge: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 feature: Reporting
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '514'
 ht-degree: 3%
 
 ---
 
 # 收集数据进行分析{#collecting-data-to-analyze}
 
-![](../../assets/common.svg)
+
 
 要用于构建报表的数据可直接在报表页面中选择(有关更多信息，请参阅 [使用上下文](../../reporting/using/using-the-context.md))或通过一个或多个查询收集。
 

@@ -2,9 +2,11 @@
 product: campaign
 title: 了解隔离管理
 description: 了解隔离管理
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2997'
 ht-degree: 12%
@@ -13,7 +15,7 @@ ht-degree: 12%
 
 # 了解隔离管理{#understanding-quarantine-management}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认情况下会将其地址已被隔离的收件人排除在外，不会将其设为目标。举例来说，信箱已满或地址不存在时，可以隔离某个电子邮件地址。无论如何，隔离程序都符合下面所述的具体规则。
 

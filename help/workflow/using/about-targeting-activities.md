@@ -2,20 +2,21 @@
 product: campaign
 title: 关于定位活动
 description: 关于定位活动
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 743baa49e5d62ed1c2f7f635f6bf120a67646e63
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
 # 在工作流中定位活动{#about-targeting-activities}
 
-![](../../assets/v7-only.svg)
 
-通过这些活动，您可以通过定义集并使用交集、并集或排除运算拆分或组合这些集来构建一个或多个目标。
+
+利用这些活动，您可以通过定义集合并使用交集、并集或差集操作来拆分或合并这些集合，从而构建一个或多个目标。
 
 * **查询**:允许您运行查询。 请参阅 [创建查询](query.md#creating-a-query).
 * **增量查询**:允许您执行查询并规划其执行。 请参阅 [增量查询](incremental-query.md) 中。

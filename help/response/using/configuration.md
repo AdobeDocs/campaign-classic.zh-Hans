@@ -2,11 +2,13 @@
 product: campaign
 title: 配置营销活动响应管理器
 description: 了解如何配置Campaign响应管理器
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
-source-git-commit: 878ba2b532d5cb59af77b6450b12ae5d2ff149b2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 # 配置营销活动响应管理器{#configuration}
 
-![](../../assets/common.svg)
+
 
 本节面向负责配置响应管理的人员。 它假定了有关扩展架构、定义工作流和SQL编程的一定数量的知识。
 

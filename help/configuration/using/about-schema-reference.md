@@ -2,9 +2,10 @@
 product: campaign
 title: 关于Adobe Campaign Classic中的模式引用
 description: 了解如何配置扩展模式以扩展Adobe Campaign Classic数据库的概念数据模型
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Schema Extension
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 7%
@@ -12,8 +13,6 @@ ht-degree: 7%
 ---
 
 # 关于模式参考{#about-schema-reference}
-
-![](../../assets/v7-only.svg)
 
 本章介绍如何配置扩展模式以扩展Adobe Campaign数据库的概念数据模型。
 

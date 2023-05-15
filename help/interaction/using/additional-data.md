@@ -2,20 +2,21 @@
 product: campaign
 title: 其他数据
 description: 其他数据
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '717'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 其他数据{#additional-data}
 
-![](../../assets/v7-only.svg)
+
 
 在调用交互引擎期间，您可以传输上下文附加信息。 此数据可以来自存储在工作流（出站渠道）工作表中的目标数据，或来自网站在调用（入站渠道）期间发送的调用数据。 您可以在资格规则中和选件个性化中使用此附加数据，还可以将其存储在建议表格中。
 

@@ -2,18 +2,19 @@
 product: campaign
 title: 创建本地活动
 description: 创建本地活动
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Distributed Marketing
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1564'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 创建本地活动{#creating-a-local-campaign}
 
-![](../../assets/v7-only.svg)
+
 
 本地营销活动是使用 **[!UICONTROL campaign packages]** 带有 **特定执行计划**. 其目标是使用由中央实体设置和配置的活动模板满足本地通信需求。 实施本地操作的主要阶段如下：
 
@@ -45,7 +46,7 @@ ht-degree: 1%
 
 ![](assets/mkt_distr_4.png)
 
-### Web界面 {#web-interface}
+### Web 界面 {#web-interface}
 
 在 **分布式营销** 选项卡，您可以选择Web界面类型，并指定当本地实体下订单时要输入的默认值和参数。
 
@@ -91,7 +92,7 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 ![](assets/mkg_dist_local_op_creation3.png)
 
-### 批准 {#approvals}
+### 审批 {#approvals}
 
 从 **[!UICONTROL Advanced parameters for campaign entry]** 链接时，可以指定审阅人的最大数量。
 

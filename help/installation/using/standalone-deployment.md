@@ -2,11 +2,12 @@
 product: campaign
 title: 独立部署
 description: 独立部署
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 独立部署{#standalone-deployment}
 
-![](../../assets/v7-only.svg)
+
 
 此配置包含同一计算机上的所有组件：
 
@@ -75,7 +76,7 @@ ht-degree: 3%
 在以下示例中，实例的参数为：
 
 * 实例的名称： **演示**
-* DNS掩码： **console.campaign.net*** （仅适用于客户端控制台连接和报表）
+* DNS掩码： **console.campaign.net&#42;** （仅适用于客户端控制台连接和报表）
 * 数据库： **campaign:demo@dbsrv**
 
 ### 安装和配置（单台计算机） {#installing-and-configuring--single-machine-}

@@ -2,18 +2,19 @@
 product: campaign
 title: 高级参数
 description: 高级参数
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 # 高级参数{#advanced-parameters}
 
-![](../../assets/v7-only.svg)
+
 
 活动的“属性”屏幕具有 **[!UICONTROL Advanced]** 选项卡，用于在发生错误时定义行为；和允许您输入初始化脚本。 此选项卡有两个版本：
 
@@ -45,20 +46,20 @@ ht-degree: 2%
 * **[!UICONTROL Do not activate]**:不会执行此任务和以下所有任务（在同一分支中）。
 * **[!UICONTROL Activate but do not execute]**:此任务和以下所有任务（在同一分支中）将自动停止。 如果您希望在任务启动时存在该位置，则此选项会非常有用。 要手动执行任务，请右键单击活动并选择 **[!UICONTROL Normal execution]**.
 
-## 亲和度 {#affinity}
+## 关联 {#affinity}
 
 您可以选择在特定计算机上强制执行工作流或工作流活动。 为此，您必须在工作流或相关活动的级别定义一个或多个倾向性。
 
 高可用性工作流配置详见 [部分](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 
-## Max。 执行期 {#max--execution-period}
+## 最大值. 执行期 {#max--execution-period}
 
 利用此字段，可在任务过长时设置警告。 它不会影响工作流操作。 如果任务在 **[!UICONTROL Max. execution period]** 结束， **[!UICONTROL Instance monitoring]** 页面将显示此工作流的警告。 通过 **[!UICONTROL Monitoring]** 选项卡。
 
 ## 行为 {#behavior}
 
-利用此字段，可定义要使用异步任务应用的行为。 有两种可能的选项：
+利用此字段，可定义要使用异步任务应用的行为。 提供了两个可能的选项：
 
 * **[!UICONTROL Several tasks authorized]**:即使第一个任务未完成，也可以同时执行多个任务。
 * **[!UICONTROL The current task has priority]**:正在进行的任务优先处理。 只要任务正在进行中，就不会执行其他任务。
@@ -69,7 +70,7 @@ ht-degree: 2%
 
 ## 出错时 {#in-case-of-errors}
 
-利用此字段，可定义在活动出错时要执行的操作。 有两种可能的选项：
+利用此字段，可定义在活动出错时要执行的操作。 提供了两个可能的选项：
 
 * **[!UICONTROL Suspend the process]**:工作流将自动停止。 其状态更改为 **[!UICONTROL Failed]**. 解决问题后，重新启动工作流。
 * **[!UICONTROL Ignore]**:不会执行此任务和以下所有任务（在同一分支中）。 这对于定期任务很有用。 如果分支具有上游调度程序，则该调度程序将像往常一样在下一个执行日期开始。

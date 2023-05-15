@@ -2,18 +2,20 @@
 product: campaign
 title: 了解投放失败
 description: 了解如何了解投放失败
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2614'
-ht-degree: 14%
+ht-degree: 17%
 
 ---
 
 # 了解投放失败{#understanding-delivery-failures}
 
-![](../../assets/common.svg)
+
 
 ## 关于投放失败 {#about-delivery-failures}
 
@@ -54,13 +56,13 @@ ht-degree: 14%
    <td> 说明 </td> 
   </tr> 
   <tr> 
-   <td> 帐户已禁用 </td> 
+   <td> 帐户被禁用 </td> 
    <td> 软/硬 </td> 
    <td> 4 </td> 
    <td> 链接到地址的帐户不再处于活动状态。 当互联网访问提供商(IAP)检测到长时间不活动时，它可以关闭用户的帐户。 然后，将无法投放到用户地址。 如果帐户因6个月不活动而暂时禁用，并且仍可以激活，则将分配状态“有错误”，并将重试该帐户，直到错误计数达到5为止。 如果错误表示该帐户已永久停用，则会直接将其设置为隔离。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 隔离中的地址 </td> 
+   <td> 隔离地址 </td> 
    <td> 硬 </td> 
    <td> 9 </td> 
    <td> 地址被隔离。<br /> </td> 
@@ -72,31 +74,31 @@ ht-degree: 14%
    <td> 收件人的地址未提供。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 质量差的地址 </td> 
+   <td> 低质量地址 </td> 
    <td> 已忽略 </td> 
    <td> 14 </td> 
    <td> 此地址的质量评级过低。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 列入阻止列表地址 </td> 
+   <td> 已列入阻止列表的地址 </td> 
    <td> 硬 </td> 
    <td> 8 </td> 
    <td> 发送时已将地阻止列表址添加到。 此状态用于将数据从外部列表和外部系统导入Adobe Campaign隔离列表。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 控制地址 </td> 
+   <td> 对照地址 </td> 
    <td> 已忽略 </td> 
    <td> 127 </td> 
    <td> 收件人的地址是控制组的一部分。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 双线 </td> 
+   <td> 双精度型 </td> 
    <td> 已忽略 </td> 
    <td> 10 </td> 
    <td> 此投放中已包含收件人的地址。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 已忽略错误 </td> 
+   <td> 错误已忽略 </td> 
    <td> 已忽略 </td> 
    <td> 25 </td> 
    <td> 地址在允许列表上。 因此，该错误会被忽略，并将发送电子邮件。<br /> </td> 
@@ -108,13 +110,13 @@ ht-degree: 14%
    <td> 收件人被“仲裁”类型的活动类型规则排除。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 由SQL规则排除 </td> 
+   <td> 由 SQL 规则排除 </td> 
    <td> 已忽略 </td> 
    <td> 11 </td> 
    <td> 收件人被“SQL”类型的营销活动分类规则排除。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 域无效 </td> 
+   <td> 无效域 </td> 
    <td> 柔和 </td> 
    <td> 2 </td> 
    <td> 电子邮件地址的域不正确或不再存在。 此用户档案将被重新定向，直到错误计数达到 5 为止。此后，该记录将设置为隔离状态，并且以后不会再进行重试。<br /> </td> 
@@ -135,10 +137,10 @@ ht-degree: 14%
    <td> 未定义 </td> 
    <td> 未定义 </td> 
    <td> 0 </td> 
-   <td> 该地址正在进行鉴别，因为错误数尚未递增。 当服务器发送新的错误消息时，会发生此类错误： 这可能是一个孤立的错误，但如果再次发生，则错误计数会增加，从而提醒技术团队。然后，他们可以执行消息分析，并通过 <span class="uicontrol">管理</span> / <span class="uicontrol">营销活动管理</span> / <span class="uicontrol">无法交付项管理</span> 树结构中的节点。<br /> </td> 
+   <td> 该地址正在进行鉴别，因为错误数尚未递增。 当服务器发送新的错误消息时，会发生此类错误： 这可能是一个孤立的错误，但如果再次发生，则错误计数会增加，从而提醒技术团队。然后，他们可以执行消息分析，并通过 <span class="uicontrol">管理</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">无法交付项管理</span> 树结构中的节点。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 不符合选件的资格 </td> 
+   <td> 不符合优惠资格 </td> 
    <td> 已忽略 </td> 
    <td> 16 </td> 
    <td> 收件人不符合投放中选件的条件。<br /> </td> 
@@ -150,7 +152,7 @@ ht-degree: 14%
    <td> 由于安全反馈为垃圾邮件报告，该地址已置于隔离中。 根据错误，将重试该地址，直到错误计数达到5为止，或直接将其发送到隔离。<br /> </td> 
   </tr> 
   <tr> 
-   <td> Target大小有限 </td> 
+   <td> 目标大小受限 </td> 
    <td> 已忽略 </td> 
    <td> 17 </td> 
    <td> 已达到收件人的最大投放大小。<br /> </td> 
@@ -159,10 +161,10 @@ ht-degree: 14%
    <td> 不合格地址 </td> 
    <td> 已忽略 </td> 
    <td> 15 </td> 
-   <td> 邮政地址不符合条件。<br /> </td> 
+   <td> 邮寄地址不合格.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 不可访问 </td> 
+   <td> 不可到达 </td> 
    <td> 软/硬 </td> 
    <td> 3 </td> 
    <td> 消息投放链中发生错误。 可能是SMTP中继上的事件、临时不可访问的域等。 根据错误，将重试该地址，直到错误计数达到5为止，或直接将其发送到隔离。<br /> </td> 

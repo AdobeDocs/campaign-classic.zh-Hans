@@ -2,9 +2,11 @@
 product: campaign
 title: 调查入门
 description: Campaign调查入门
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # 调查入门{#about-surveys}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign包含一个用于定义和发布Web应用程序的图形模块。 它用于创建页面，如外联网上的编辑表单，或通知表单，包括来自数据库的数据，包括表、图表、输入表单等。 使用此功能可设计和发布网页，用户可在其中查找或输入信息。
 

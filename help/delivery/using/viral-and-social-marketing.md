@@ -2,8 +2,10 @@
 product: campaign
 title: 病毒式营销和社交媒体营销
 description: 病毒式营销和社交媒体营销
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 2%
@@ -12,7 +14,7 @@ ht-degree: 2%
 
 # 病毒式营销和社交媒体营销{#viral-and-social-marketing}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign允许您设置工具以鼓励病毒式营销。
 

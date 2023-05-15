@@ -2,11 +2,12 @@
 product: campaign
 title: 使用Adobe Campaign Explorer
 description: 了解如何使用Campaign Explorer
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 34%
@@ -15,7 +16,7 @@ ht-degree: 34%
 
 # 使用Adobe Campaign Explorer {#using-adobe-campaign-explorer}
 
-![](../../assets/v7-only.svg)
+
 
 可通过工具栏图标访问 Adobe Campaign Explorer。它可用于访问 Adobe Campaign、所有 Adobe Campaign 功能、配置屏幕以及部分平台元素的更详细视图。
 

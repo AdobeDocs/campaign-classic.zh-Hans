@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: A/B 测试入门
-description: 进一步了解Campaign Classic中的A/B测试。
+description: 进一步了解Campaign中的A/B测试
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '349'
 ht-degree: 3%
 
 ---
 
 # A/B 测试入门 {#get-started-a-b-testing}
 
-![](../../assets/common.svg)
+
 
 A/B测试允许您比较一个投放的多个版本彼此的对比，以便确定哪个版本对目标群体的影响最大。
 
