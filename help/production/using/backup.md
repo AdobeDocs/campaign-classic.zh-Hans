@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
-source-git-commit: dcc441272b29f682165a26006800e914e7c38252
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '198'
 ht-degree: 2%
 
 ---
@@ -30,21 +30,21 @@ ht-degree: 2%
 
 文件分为几类：
 
-* 配置文件，存储在 `nl6/conf`，可让您快速重新配置Adobe Campaign。
+* 配置文件，存储在 **nl6/conf**，可让您快速重新配置Adobe Campaign。
 
-* 重定向文件，存储在  `nl6/var/`<instancename>`/redir`，位于跟踪（通常称为“前端”）服务器上，并包含之前所有的促销活动重定向。 以前的营销活动仍使用这些量度。
+* 重定向文件，存储在  **nl6/var/`<instance-name>`/redir**，位于跟踪（通常称为“前端”）服务器上，并包含之前所有的促销活动重定向。 以前的营销活动仍使用这些量度。
 
-* 日志文件，存储在 `nl6/var/`<instancename>`/log`，可用于跟踪问题。
+* 日志文件，存储在 **nl6/var/`<instance-name>`/log**，可用于跟踪问题。
 
 因此，要备份的目录如下：
 
-* `nl6/conf`
+* nl6/conf
 
-* `nl6/var/`<instanceName>`/redir` （对于每个实例）
+* nl6/var/`<instance-name>`/redir（对于每个实例）
 
-* `nl6/var/`<instanceName>`/log` （可选）
+* nl6/var/`<instance-name>`/log（可选）
 
-* `nl6/var/`<instanceName>`/relay` （可选）
+* nl6/var/`<instance-name>`/relay（可选）
 
 
 ## 数据库 {#database}

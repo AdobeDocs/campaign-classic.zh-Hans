@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 8%
@@ -111,19 +111,19 @@ ajouter screenshot -->
       nlserver pdump
       HH:MM:SS > Application server for Adobe Campaign Classic (X.Y.Z YY.R build nnnn@SHA1) of DD/MM/YYYY
       [...]
-      mta@<INSTANCENAME> (9268) - 23.0 Mb
+      mta@<instance-name> (9268) - 23.0 Mb
       [...]
       ```
 
    1. 如果MTA未列出，请使用以下命令启动它：
 
       ```
-      nlserver start mta@<INSTANCENAME>
+      nlserver start mta@<instance-name>
       ```
 
       >[!NOTE]
       >
-      >替换 `<INSTANCENAME>` ，其名称为实例（生产、开发等）。 实例名称通过配置文件进行标识： `[path of application]nl6/conf/config-<INSTANCENAME>.xml`
+      >替换 `<instance-name>` ，其名称为实例（生产、开发等）。 实例名称通过配置文件进行标识： `[path of application]nl6/conf/config-<instance-name>.xml`
 
 * 投放可能使用未在发送服务器上配置的亲和度。
 

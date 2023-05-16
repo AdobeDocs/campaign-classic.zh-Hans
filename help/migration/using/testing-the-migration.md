@@ -9,7 +9,7 @@ topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 4%
@@ -56,13 +56,13 @@ ht-degree: 4%
 * 在 **配置** 命令：
 
    ```
-   nlserver.exe config <option> -instance:<instanceName>
+   nlserver.exe config <option> -instance:<instance-name>
    ```
 
 * 或在升级后：
 
    ```
-   nlserver.exe config -postupgrade <option> -instance:<instanceName>
+   nlserver.exe config -postupgrade <option> -instance:<instance-name>
    ```
 
 >[!NOTE]
@@ -76,7 +76,7 @@ ht-degree: 4%
 * 的 **-showCustomEntities** 选项显示所有非标准对象的列表：
 
    ```
-   nlserver.exe config -showCustomEntities -instance:<instanceName>
+   nlserver.exe config -showCustomEntities -instance:<instance-name>
    ```
 
    已发送消息的示例：
@@ -88,7 +88,7 @@ ht-degree: 4%
 * 的 **-showDeletedEntities** 选项显示数据库或文件系统中缺少的所有标准对象的列表。 对于每个缺失的对象，指定路径。
 
    ```
-   nlserver.exe config -showDeletedEntities -instance:<instanceName>
+   nlserver.exe config -showDeletedEntities -instance:<instance-name>
    ```
 
    已发送消息的示例：
@@ -104,7 +104,7 @@ ht-degree: 4%
 您可以使用以下命令自行启动验证过程（不进行迁移）：
 
 ```
-nlserver.exe config -postupgrade -check -instance:<instanceName>
+nlserver.exe config -postupgrade -check -instance:<instance-name>
 ```
 
 >[!NOTE]
@@ -177,7 +177,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
 利用此选项，可恢复已修改的现成对象。 对于每个已还原的对象，更改的备份将存储在选定的文件夹中：
 
 ```
-nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instanceName>
+nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instance-name>
 ```
 
 >[!NOTE]

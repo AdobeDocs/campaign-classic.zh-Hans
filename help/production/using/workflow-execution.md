@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
@@ -52,20 +52,20 @@ ht-degree: 3%
    nlserver pdump
    HH:MM:SS > Application server for Adobe Campaign Version X.Y (build XXXX) of DD/MM/YYYY
    [...]
-   wfserver@<INSTANCENAME> (9340) - 11.3 Mb
+   wfserver@<instance-name> (9340) - 11.3 Mb
    [...]
    ```
 
    如果模块未运行，请联系Adobe客户关怀团队。 如果您已安装内部部署，则管理员用户必须使用以下命令重新启动该服务。
 
    ```
-   nlserver start wfserver@<INSTANCENAME>
+   nlserver start wfserver@<instance-name>
    ```
 
    >[!NOTE]
    >
-   >替换 **`<instancename>`** ，其名称为实例（生产、开发等）。 实例名称通过配置文件进行标识：
-   >`[path of application]nl6/conf/config-<instancename>.xml`
+   >替换 **`<instance-name>`** ，其名称为实例（生产、开发等）。 实例名称通过配置文件进行标识：
+   >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    有关如何重新启动模块的更多信息，请参阅 [此部分](../../production/using/usual-commands.md#module-launch-commands).
 
@@ -95,7 +95,7 @@ ht-degree: 3%
    nlserver pdump
    HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    [...]
-   wfserver@<INSTANCENAME> (9340) - 11.3 Mb
+   wfserver@<instance-name> (9340) - 11.3 Mb
    [...]
    ```
 
@@ -104,13 +104,13 @@ ht-degree: 3%
 1. 如果模块未运行，请联系Adobe客户关怀团队。 如果您已安装内部部署，则管理员必须使用以下命令重新启动该安装。
 
    ```
-   nlserver start wfserver@<INSTANCENAME>
+   nlserver start wfserver@<instance-name>
    ```
 
    >[!NOTE]
    >
-   >替换 **`<instancename>`** ，其名称为实例（生产、开发等）。 实例名称通过配置文件进行标识：
-   >`[path of application]nl6/conf/config-<instancename>.xml`
+   >替换 **`<instance-name>`** ，其名称为实例（生产、开发等）。 实例名称通过配置文件进行标识：
+   >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    有关如何重新启动模块的更多信息，请参阅 [此部分](../../production/using/usual-commands.md#module-launch-commands).
 
