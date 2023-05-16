@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 9ea7eea5a539407a17b0a11c942570cfa6c16f2f
 workflow-type: tm+mt
-source-wordcount: '3610'
+source-wordcount: '3598'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,11 @@ ht-degree: 0%
 # 监控流程{#monitoring-processes}
 
 
-
 应用程序服务器和重定向服务器(**跟踪**)。
 
 ## 手动监控 {#manual-monitoring}
 
-转到 **[!UICONTROL Monitoring]** ，然后单击 **[!UICONTROL Overview]** 链接以显示Adobe Campaign进程监控页面。
+要访问Adobe Campaign进程监视页面，请浏览 **[!UICONTROL Monitoring]** ，然后单击 **[!UICONTROL Overview]** 链接。
 
 ![](assets/d_ncs_monitoring.png)
 
@@ -33,71 +32,71 @@ ht-degree: 0%
 * 缺少进程和执行信息（开始日期、PID等）的列表，
 * 工作流和投放的视图。
 
-有关监控不同Campaign流程的其他方法，请参见 [本页](../../production/using/monitoring-guidelines.md).
+有关监控Campaign流程的其他方法，请参阅 [本页](../../production/using/monitoring-guidelines.md).
 
 ### 日志日志 {#log-journal}
 
-可以显示与流程相关的日志日志。 为此，请单击该过程， **mta** 例如，单击 **[!UICONTROL Open the log journal]** .
+要显示与某个流程相关的日志日志，请单击该流程， **mta** 例如，选择 **[!UICONTROL Open the log journal]** .
 
 ![](assets/d_ncs_monitoring2.png)
 
 ### 系统指标 {#system-indicators}
 
-系统指示器列表允许您显示有关计算机的信息，如其物理和虚拟内存、活动进程和可用磁盘空间。 Linux和Windows操作系统的指示器不同。 转到 **[!UICONTROL Instance Monitoring]** 页面，然后单击 **[!UICONTROL Display]** 链接以打开指标列表
+浏览系统指示器列表，以显示有关计算机的信息，如其物理和虚拟内存、活动进程和可用磁盘空间。 Linux和Windows操作系统的指示器不同。 转到 **[!UICONTROL Instance Monitoring]** 页面，然后单击 **[!UICONTROL Display]** 链接以打开指标列表。
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Pending events queued]** :特定于 **消息中心**. 请参阅 [此部分](../../message-center/using/additional-configurations.md#monitoring-thresholds) 以了解更多信息。
+* **[!UICONTROL Pending events queued]**:特定于 **消息中心**. [了解详情](../../message-center/using/additional-configurations.md#monitoring-thresholds)
 
-* **[!UICONTROL Memory]** :有关物理内存(RAM)的信息。
+* **[!UICONTROL Memory]**:有关物理内存(RAM)的信息。
 
-   **[!UICONTROL Current value]** :实际内存消耗。
+   **[!UICONTROL Current value]**:当前内存消耗。
 
-   **[!UICONTROL Max Value]** :安装的内存总量。
+   **[!UICONTROL Max Value]**:安装的内存总量。
 
-   **[!UICONTROL Available]** :可用内存量。
+   **[!UICONTROL Available]**:可用内存量。
 
-   **[!UICONTROL Warning]** :当内存消耗达到总量的80%时，将显示此指示器。
+   **[!UICONTROL Warning]**:当内存消耗达到总量的80%时，将显示此指示器。
 
-   **[!UICONTROL Alert]** :当内存消耗达到总量的90%时，将显示此指示器。
+   **[!UICONTROL Alert]**:当内存消耗达到总量的90%时，将显示此指示器。
 
    当 **[!UICONTROL Warning]** 和 **[!UICONTROL Alert]** 显示指示器，您可以通过将RAM添加到安装了Adobe Campaign服务器的计算机来解决此问题。 您还可以决定在专用计算机上安装Adobe Campaign服务器。
 
-* **[!UICONTROL Swap Memory]** :与与分页文件匹配的虚拟内存相关的信息：Windows使用的硬盘上的区域，如同RAM。
+* **[!UICONTROL Swap Memory]**:与与分页文件匹配的虚拟内存相关的信息：Windows使用的硬盘上的区域，如同RAM。
 
-   **[!UICONTROL Current value]** :实际内存消耗。
+   **[!UICONTROL Current value]**:实际内存消耗。
 
-   **[!UICONTROL Max Value]** :内存总量。
+   **[!UICONTROL Max Value]**:内存总量。
 
-   **[!UICONTROL Available]** :可用内存量。
+   **[!UICONTROL Available]**:可用内存量。
 
-   **[!UICONTROL Warning]** :当内存消耗达到总量的80%时，将显示此指示器。
+   **[!UICONTROL Warning]**:当内存消耗达到总量的80%时，将显示此指示器。
 
-   **[!UICONTROL Alert]** :当内存消耗达到总量的90%时，将显示此指示器。
+   **[!UICONTROL Alert]**:当内存消耗达到总量的90%时，将显示此指示器。
 
    当 **[!UICONTROL Warning]** 和 **[!UICONTROL Alert]** 显示指示器时，您可以通过在高级Windows设置中增加exchange文件的大小来解决此问题。
 
-* **[!UICONTROL Disk XXX]** :有关机器读取器的信息。
+* **[!UICONTROL Disk XXX]**:有关机器读取器的信息。
 
-   **[!UICONTROL Current value]** :实际使用的磁盘空间。
+   **[!UICONTROL Current value]**:实际使用的磁盘空间。
 
-   **[!UICONTROL Max Value]** :磁盘总容量。
+   **[!UICONTROL Max Value]**:磁盘总容量。
 
-   **[!UICONTROL Available]** :可用磁盘空间
+   **[!UICONTROL Available]**:可用磁盘空间。
 
-   **[!UICONTROL Used]** :已用磁盘的百分比。
+   **[!UICONTROL Used]**:已用磁盘的百分比。
 
-   **[!UICONTROL Warning]** :当可用磁盘空间达到总容量的80%时，将显示此指示器。
+   **[!UICONTROL Warning]**:当可用磁盘空间达到总容量的80%时，将显示此指示器。
 
-   **[!UICONTROL Alert]** :当可用磁盘空间达到总容量的90%时，将显示此指示器。
+   **[!UICONTROL Alert]**:当可用磁盘空间达到总容量的90%时，将显示此指示器。
 
-* **[!UICONTROL Number of processes too old]** :有关Adobe Campaign进程一天以上活动的信息。
+* **[!UICONTROL Number of processes too old]**:有关Adobe Campaign进程一天以上活动的信息。
 
-   **[!UICONTROL Current value]** :当前活动的进程数。
+   **[!UICONTROL Current value]**:当前活动的进程数。
 
-   **[!UICONTROL Max Value]** :授权进程的最大数量(1)。
+   **[!UICONTROL Max Value]**:授权进程的最大数量(1)。
 
-   **[!UICONTROL Alert]** :如果进程数等于1，则显示此指示器。
+   **[!UICONTROL Alert]**:如果进程数等于1，则显示此指示器。
 
    当 **[!UICONTROL Alert]** 显示指示器时，可能是相关进程被SQL数据库引擎锁定，或者它陷入无限循环。 的 **监视** 由Adobe Campaign提供的流程每天自动重新启动所有流程，并使您能够解决此问题。 但是，您也可以自行停止相关流程以强制重新启动。
 
@@ -105,115 +104,115 @@ ht-degree: 0%
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Pending events queued]** :特定于 **消息中心**. 请参阅 [此部分](../../message-center/using/additional-configurations.md#monitoring-thresholds) 以了解更多信息。
+* **[!UICONTROL Pending events queued]**:特定于 **消息中心**. 请参阅 [此部分](../../message-center/using/additional-configurations.md#monitoring-thresholds) 以了解更多信息。
 
-* **[!UICONTROL Load average (1/5/15 minutes)]** :与负载有关的信息，即处理器在机器上运行的进程在最后一分钟、五分钟或十五分钟内的使用率
+* **[!UICONTROL Load average (1/5/15 minutes)]**:与负载有关的信息，即处理器在机器上运行的进程在最后一分钟、五分钟或十五分钟内的使用率
 
-   **[!UICONTROL Current value]** :机器的实际负载。
+   **[!UICONTROL Current value]**:机器的实际负载。
 
-   **[!UICONTROL Max value]** :计算机上进程的最大使用负载
+   **[!UICONTROL Max value]**:计算机上进程的最大使用负载
 
-   **[!UICONTROL Warning]** :当负载在最后一分钟、五分钟或十五分钟内达到最大授权值的80%时，会显示此指示器。
+   **[!UICONTROL Warning]**:当负载在最后一分钟、五分钟或十五分钟内达到最大授权值的80%时，会显示此指示器。
 
-   **[!UICONTROL Alert]** :当负载达到最后一分钟、五分钟或十五分钟的最大授权值的90%时，将显示此指示器。
+   **[!UICONTROL Alert]**:当负载达到最后一分钟、五分钟或十五分钟的最大授权值的90%时，将显示此指示器。
 
-* **[!UICONTROL Memory]** :有关物理内存(RAM)的信息。
+* **[!UICONTROL Memory]**  有关物理内存(RAM)的信息。
 
-   **[!UICONTROL Current value]** :实际内存消耗。
+   **[!UICONTROL Current value]**:实际内存消耗。
 
-   **[!UICONTROL Max Value]** :安装的内存总量。
+   **[!UICONTROL Max Value]**:安装的内存总量。
 
-   **[!UICONTROL Available]** :可用内存量。
+   **[!UICONTROL Available]**:可用内存量。
 
-   **[!UICONTROL Warning]** :当内存消耗达到总量的80%时，将显示此指示器。
+   **[!UICONTROL Warning]**:当内存消耗达到总量的80%时，将显示此指示器。
 
-   **[!UICONTROL Alert]** :当内存消耗达到总量的90%时，将显示此指示器。
+   **[!UICONTROL Alert]**:当内存消耗达到总量的90%时，将显示此指示器。
 
    当 **[!UICONTROL Warning]** 和 **[!UICONTROL Alert]** 显示指示器，您可以通过将RAM添加到安装了Adobe Campaign服务器的计算机来解决此问题。 您还可以决定在专用计算机上安装Adobe Campaign服务器。
 
-* **[!UICONTROL Swap Memory]** :与与分页文件匹配的虚拟内存相关的信息：Windows使用的硬盘上的区域，如同RAM。
+* **[!UICONTROL Swap Memory]**:与与分页文件匹配的虚拟内存相关的信息：Windows使用的硬盘上的区域，如同RAM。
 
-   **[!UICONTROL Current value]** :实际内存消耗。
+   **[!UICONTROL Current value]**:实际内存消耗。
 
-   **[!UICONTROL Max Value]** :内存总量。
+   **[!UICONTROL Max Value]**:内存总量。
 
-   **[!UICONTROL Available]** :可用内存量。
+   **[!UICONTROL Available]**:可用内存量。
 
-   **[!UICONTROL Warning]** :当内存消耗达到总量的80%时，将显示此指示器。
+   **[!UICONTROL Warning]**:当内存消耗达到总量的80%时，将显示此指示器。
 
-   **[!UICONTROL Alert]** :当内存消耗达到总量的90%时，将显示此指示器。
+   **[!UICONTROL Alert]**:当内存消耗达到总量的90%时，将显示此指示器。
 
    当 **[!UICONTROL Warning]** 和 **[!UICONTROL Alert]** 显示指示器时，您可以通过增加exchange文件的大小来解决问题。
 
-* **[!UICONTROL Core Files]** :有关在Adobe Campaign进程崩溃后生成的文件的信息。 这些文件可让您诊断崩溃的原因。
+* **[!UICONTROL Core Files]**:有关在Adobe Campaign进程崩溃后生成的文件的信息。 这些文件可让您诊断崩溃的原因。
 
-   **[!UICONTROL Current Value]** :现有文件的数量。
+   **[!UICONTROL Current Value]**:现有文件的数量。
 
-   **[!UICONTROL Max Value]** :授权文件的最大数量(1)。
+   **[!UICONTROL Max Value]**:授权文件的最大数量(1)。
 
-   **[!UICONTROL Warning]** :当文件数接近1时，将显示此指示器。
+   **[!UICONTROL Warning]**:当文件数接近1时，将显示此指示器。
 
-   **[!UICONTROL Alert]** :当文件数等于1时，将显示此指示器。
+   **[!UICONTROL Alert]**:当文件数等于1时，将显示此指示器。
 
    当因崩溃而丢失进程时，该进程将在进程列表中以红色显示，并由 **监视** 流程由Adobe Campaign提供。
 
-* **[!UICONTROL Number of shared memory segments]** :有关所有Adobe Campaign进程共享的内存段的信息。
+* **[!UICONTROL Number of shared memory segments]**:有关所有Adobe Campaign进程共享的内存段的信息。
 
-   **[!UICONTROL Current value]** :当前正在使用的内存段数。
+   **[!UICONTROL Current value]**:当前正在使用的内存段数。
 
-   **[!UICONTROL Max Value]** :已授权的最大内存段数(2)。
+   **[!UICONTROL Max Value]**:已授权的最大内存段数(2)。
 
-   **[!UICONTROL Warning]** :当内存段数量达到1时，将显示此指示器。
+   **[!UICONTROL Warning]**:当内存段数量达到1时，将显示此指示器。
 
-   **[!UICONTROL Alert]** :当内存段数量达到2时，将显示此指示器。
+   **[!UICONTROL Alert]**:当内存段数量达到2时，将显示此指示器。
 
-* **[!UICONTROL Number of processes too old]** :有关活动超过一天的进程的信息。
+* **[!UICONTROL Number of processes too old]**:有关活动超过一天的进程的信息。
 
-   **[!UICONTROL Current value]** :当前活动的进程数。
+   **[!UICONTROL Current value]**:当前活动的进程数。
 
-   **[!UICONTROL Max Value]** :授权进程的最大数量。
+   **[!UICONTROL Max Value]**:授权进程的最大数量。
 
-   **[!UICONTROL Warning]** :当进程数达到授权阈值的80%时，将显示此指示器。
+   **[!UICONTROL Warning]**:当进程数达到授权阈值的80%时，将显示此指示器。
 
-   **[!UICONTROL Alert]** :当进程数达到授权阈值的90%时，将显示此指示器。
+   **[!UICONTROL Alert]**:当进程数达到授权阈值的90%时，将显示此指示器。
 
-* **[!UICONTROL File Handles]** :有关文件描述符的信息，即每个进程打开的文件数。
+* **[!UICONTROL File Handles]**:有关文件描述符的信息，即每个进程打开的文件数。
 
-   **[!UICONTROL Current value]** :文件描述符的当前数量。
+   **[!UICONTROL Current value]**:文件描述符的当前数量。
 
-   **[!UICONTROL Max Value]** :操作系统授权的文件描述符的最大数量。
+   **[!UICONTROL Max Value]**:操作系统授权的文件描述符的最大数量。
 
-   **[!UICONTROL Warning]** :当授权文件描述符的数量达到80%阈值时，将显示此指示符。
+   **[!UICONTROL Warning]**:当授权文件描述符的数量达到80%阈值时，将显示此指示符。
 
-   **[!UICONTROL Alert]** :当授权文件描述符的数量达到90%阈值时，将显示此指示符。
+   **[!UICONTROL Alert]**:当授权文件描述符的数量达到90%阈值时，将显示此指示符。
 
-* **[!UICONTROL Processes]** :有关机器进程的信息。
+* **[!UICONTROL Processes]**:有关机器进程的信息。
 
-   **[!UICONTROL Current value]** :当前活动的进程数。
+   **[!UICONTROL Current value]**:当前活动的进程数。
 
-   **[!UICONTROL Max Value]** :授权进程的最大数量。
+   **[!UICONTROL Max Value]**:授权进程的最大数量。
 
-   **[!UICONTROL Active Processes]** :活动进程数。
+   **[!UICONTROL Active Processes]**:活动进程数。
 
-   **[!UICONTROL Inactive Processes]** :不活动的进程数。
+   **[!UICONTROL Inactive Processes]**:不活动的进程数。
 
-   **[!UICONTROL Warning]** :当授权进程数达到80%阈值时，将显示此指示器。
+   **[!UICONTROL Warning]**:当授权进程数达到80%阈值时，将显示此指示器。
 
-   **[!UICONTROL Alert]** :当授权进程数达到90%阈值时，将显示此指示器。
+   **[!UICONTROL Alert]**:当授权进程数达到90%阈值时，将显示此指示器。
 
-* **[!UICONTROL Zombie Processes]** :有关已停止但仍具有进程标识符(PID)且在进程表中仍可见的进程的信息。
+* **[!UICONTROL Zombie Processes]**:有关已停止但仍具有进程标识符(PID)且在进程表中仍可见的进程的信息。
 
-   **[!UICONTROL Current value]** :当前处于活动状态的僵尸进程数。
+   **[!UICONTROL Current value]**:当前处于活动状态的僵尸进程数。
 
-   **[!UICONTROL Max Value]** :授权僵尸进程的最大数量(2)。
+   **[!UICONTROL Max Value]**:授权僵尸进程的最大数量(2)。
 
-   **[!UICONTROL Warning]** :当僵尸进程数接近2时，将显示此指示器。
+   **[!UICONTROL Warning]**:当僵尸进程数接近2时，将显示此指示器。
 
-   **[!UICONTROL Alert]** 当僵尸进程数达到2时，将显示此指示器。
+   **[!UICONTROL Alert]**:当僵尸进程数达到2时，将显示此指示器。
 
-#### 自定义指标 {#customized-indicators}
+#### 自定义指示器 {#customized-indicators}
 
-Adobe Campaign允许您自定义指示器。 操作步骤：
+Adobe Campaign允许您自定义指标，如下所述：
 
 1. 创建 **.sh** 文件和名称 **[!UICONTROL cust_indicators.sh]** .
 1. 将您的自定义指示器添加到此文件。 例如：
@@ -239,17 +238,15 @@ Adobe Campaign允许您自定义指示器。 操作步骤：
    </indicator>"
    ```
 
-1. 将文件放入 **[!UICONTROL usr/local/neolane/nl6]** 文件夹。
+1. 在 **[!UICONTROL usr/local/neolane/nl6]** 文件夹。
 
-此文件将由Adobe Campaign调用。
+此文件由Adobe Campaign调用。
 
 ## SMTP报表 {#smtp-reports}
 
 SMTP投放监控报表已集成到Adobe Campaign平台中。 可以通过控制台或使用Web访问来访问它们。
 
-这些报表按域显示SMTP投放统计信息和SMTP错误。
-
-要访问这些权限，操作员必须具有管理权限。
+这些报表按域显示SMTP投放统计信息和SMTP错误。 要访问这些权限，运算符必须具有 **管理** 权限。
 
 它们按 **监控** >“SMTP监视”。
 
