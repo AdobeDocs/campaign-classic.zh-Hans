@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 关于Adobe Campaign报告工具
-description: 在内建或自定义报表中分析促销活动是否成功
+description: 在内置报告或自定义报告中分析您的营销活动是否取得成功
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
@@ -9,7 +9,7 @@ exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 

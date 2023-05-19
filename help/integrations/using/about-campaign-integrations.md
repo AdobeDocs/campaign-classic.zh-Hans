@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 关于 Campaign 集成
-description: 使用其他Adobe解决方案，并将其不同功能与Campaign结合使用
+description: 使用其他 Adobe 解决方案，并将其各种功能与 Campaign 相结合
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
@@ -11,7 +11,7 @@ exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
