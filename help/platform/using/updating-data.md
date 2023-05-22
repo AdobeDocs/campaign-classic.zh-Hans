@@ -20,11 +20,11 @@ ht-degree: 86%
 
 可以手动或自动更新已链接至收件人用户档案的数据。
 
-## 设置自动更新 {#setting-up-an-automatic-update}
+## 設定自動更新 {#setting-up-an-automatic-update}
 
 可通过工作流配置自动更新。如需详细信息，请参阅[此部分](../../workflow/using/update-data.md)。
 
-## 执行批量更新 {#performing-a-mass-update}
+## 執行大量更新 {#performing-a-mass-update}
 
 要执行手动更新，请在所选的收件人上单击鼠标右键并使用 **[!UICONTROL Actions]** 快捷菜单，或使用 **[!UICONTROL Actions]** 图标。
 
@@ -34,7 +34,7 @@ ht-degree: 86%
 
 ### 大量更新 {#mass-update}
 
-要进行批量更新，请使用 **[!UICONTROL Action > Mass update of selected lines...]**. 向导可帮助您配置并运行更新。
+若要大量更新，請使用 **[!UICONTROL Action > Mass update of selected lines...]**. 向导可帮助您配置并运行更新。
 
 向导的第一步是指定要更新的字段。
 
@@ -68,7 +68,7 @@ ht-degree: 86%
 
 ### 合并数据 {#merge-data}
 
-选择 **[!UICONTROL Merge selected lines...]** 启动两个收件人用户档案的合并。 选择该选项之前，必须选择要合并的用户档案。使用向导来配置和开始合并操作。
+選取 **[!UICONTROL Merge selected lines...]** 以啟動兩個收件者設定檔的合併。 选择该选项之前，必须选择要合并的用户档案。使用向导来配置和开始合并操作。
 
 向导会显示一个或多个来源用户档案中每个已完成字段的提取內容。如果要合并的用户档案中的一个或多个字段具有不同的值，则会在 **[!UICONTROL List of conflicts]** 部分中显示这些值。您可使用列表下方的单选按钮来选择默认的用户档案，如以下示例所示：
 
@@ -80,12 +80,12 @@ ht-degree: 86%
 
 检查窗口两个部分中的 **[!UICONTROL Result]** 列，然后单击 **[!UICONTROL Finish]** 执行合并。
 
-## 导出数据 {#exporting-data}
+## 匯出資料 {#exporting-data}
 
 可以导出列表的內容。要配置并执行导出：
 
 1. 选择要导出的记录。
-1. 右键单击并选择 **[!UICONTROL Export...]**.
+1. 按一下右鍵並選取 **[!UICONTROL Export...]**.
 
    ![](assets/s_ncs_user_export_list.png)
 
@@ -93,9 +93,9 @@ ht-degree: 86%
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   有关如何配置导出向导的更多信息，请参阅 [此部分](../../platform/using/executing-export-jobs.md).
+   有關如何設定匯出精靈的詳細資訊，請參閱 [本節](../../platform/using/executing-export-jobs.md).
 
-## 订阅服务 {#subscribing-to-a-service}
+## 訂閱服務 {#subscribing-to-a-service}
 
 在大多数情況下，收件人可通过专用的登陆页来订阅新闻稿，如[本节所述](../../delivery/using/managing-subscriptions.md)。但是，过滤后的收件人用户档案可以手动订阅某个服务（新闻稿或传播服务）。操作步骤：
 
@@ -112,16 +112,16 @@ ht-degree: 86%
    >
    >此编辑器允许您创建新的服务：单击 **[!UICONTROL Create]** 按钮。
 
-1. 您可以 **[!UICONTROL Send a confirmation message]** 收件人。 可在链接到所选服务的订阅场景中配置此消息的內容。
+1. 您可以 **[!UICONTROL Send a confirmation message]** 收件者。 可在链接到所选服务的订阅场景中配置此消息的內容。
 1. 单击 **[!UICONTROL Start]** 按钮执行订阅过程。
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
 
 可在窗口的上部监控该执行过程。可以通过 **[!UICONTROL Stop]** 按钮停止该过程。但是，已处理的收件人将被订阅。
 
-如果取消选中 **[!UICONTROL Do not keep a trace of this job in the database]** 选项，您可以选择（或创建）将存储此进程信息的执行文件夹。
+如果您取消勾選 **[!UICONTROL Do not keep a trace of this job in the database]** 選項，您可以選取（或建立）執行資料夾，此程式上的資訊將儲存於此處。
 
-要检查该过程，请转到 **[!UICONTROL Subscriptions]** 选项卡，或 **[!UICONTROL Subscriptions]** 选项卡 **[!UICONTROL Profiles and Targets > Services and Subscriptions]** 节点。
+若要檢查程式，請前往 **[!UICONTROL Subscriptions]** 索引標籤上的此作業相關收件者的設定檔，或 **[!UICONTROL Subscriptions]** 索引標籤是透過 **[!UICONTROL Profiles and Targets > Services and Subscriptions]** 節點。
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 
