@@ -3,12 +3,12 @@ product: campaign
 title: 时区管理
 description: 时区管理
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 1%
@@ -21,83 +21,83 @@ ht-degree: 1%
 
 ## 操作原则 {#operating-principle}
 
-Adobe Campaign允许您根据其时区来表示日期：这使国际用户能够在不同时区工作。 使用同一实例的每个国家/地区都可以管理促销活动的执行、跟踪、归档等。 取决于当地时间。
+Adobe Campaign可讓您將日期表示為其時區的函式：這可讓國際使用者在不同的時區在全球各地工作。 每個使用相同執行個體的國家/地區都可以管理行銷活動的執行、追蹤、封存等。 視當地時間而定。
 
-为了能够在国际范围内使用Adobe Campaign平台，系统使用的所有日期都必须可链接到一个时区。 因此，其时区已知的日期可以导入任何其他时区，或不管时区如何。
+為了能在國際規模上使用Adobe Campaign平台，系統使用的所有日期都必須可連結至時區。 因此，時區已知的日期可以匯入到任何其他時區中，或者不考慮時區。
 
-Adobe Campaign允许您以UTC（协调通用时间）格式存储日期/时间。 当数据公开时，它会转换为运算符的本地日期/时间。 当数据库以UTC进行配置时，会自动执行转换(请参阅 [配置](#configuration))。 如果数据库未按UTC进行配置，则平台中日期时区的信息将存储在一个选项中。
+Adobe Campaign可讓您以UTC （國際標準時間）格式儲存日期/時間。 當資料公開時，會轉換為運運算元的本機日期/時間。 當資料庫設定為UTC時，會自動執行轉換(請參閱 [設定](#configuration))。 如果資料庫未以UTC設定，則平台中日期的時區資訊會儲存在選項中。
 
-时区管理的主要平台功能包括：导入/导出数据和运算符以及工作流管理。 的 **继承概念** 可用于导入/导出或工作流。 默认情况下，它们是为数据库服务器时区配置的，但您可以为工作流甚至单个活动重新定义新时区。
+與時區管理相關的主要平台功能包括：匯入/匯出資料、操作員及工作流程管理。 此 **繼承概念** 可用於匯入/匯出或工作流程。 預設會針對資料庫伺服器時區設定時區，但您可以為工作流程甚至單一活動重新定義新時區。
 
-**运算符** 可在 **投放配置** 和可以指定执行投放的特定时区。
+**運運算元** 可以在以下期間修改時區： **傳遞設定** 和可以指定執行傳送的特定時區。
 
 >[!IMPORTANT]
 >
->如果数据库不管理多个时区，则对于所有数据过滤操作，必须在数据库服务器的时区中执行SQL查询。
+>如果資料庫未管理多個時區，則對於所有資料篩選操作，必須在資料庫伺服器的時區執行SQL查詢。
 
-每个Adobe Campaign运算符都链接到一个时区：此信息在其配置文件中进行配置。 有关更多信息，请参阅 [本文档](../../platform/using/access-management.md).
+每個Adobe Campaign運運算元都會連結至時區：這項資訊會在其設定檔中設定。 有關詳細資訊，請參閱 [本檔案](../../platform/using/access-management.md).
 
-当Adobe Campaign平台不需要时区管理时，您可以将存储模式保留为具有特定链接时区的本地格式。
+當Adobe Campaign平台不需要時區管理時，您可以使用特定的連結時區，以本機格式保留儲存模式。
 
 ## 推荐 {#recommendations}
 
-时区结合了以下几个现实：表达式可以用UTC日期描述恒定的时滞，或者用某个区域的时间描述，该时间可能每年更改两次（夏令时）。
+時區結合多種現實：此運算式可描述與UTC日期之間恆定的時間延遲，或是區域每年可能變更兩次的時間（日光節約時間）。
 
-例如，在postgreSQL中， **设置时区“欧洲/巴黎”；** command将考虑夏季和冬季时间：日期将以UTC+1或UTC+2表示，具体取决于年份时间。
+例如，在postgreSQL中， **設定&#39;歐洲/巴黎&#39;時區；** 命令會考量夏季和冬季時間：日期會根據一年中的時間以UTC+1或UTC+2表示。
 
-但是，如果您使用 **设置时区0200;** ，则滞后时间将始终为UTC+2。
+不過，如果您使用 **設定時區0200；** 命令，則時間延遲將一律為UTC+2。
 
 ## 配置 {#configuration}
 
-在数据库创建期间选择日期和时间的存储模式(请参阅 [创建新实例](#creating-a-new-instance))。 在迁移时，链接到日期的小时数将转换为本地日期和小时数(请参阅 [迁移](#migration))。
+日期與時間的儲存模式是在建立資料庫時選取的(請參閱 [建立新執行個體](#creating-a-new-instance))。 若是移轉，與日期連結的時數會轉換為當地日期和時數(請參閱 [移轉](#migration))。
 
-从技术角度来看，存储有两种方式 **日期+时间** 在数据库中键入信息：
+從技術角度來看，有兩種儲存方式 **日期+時間** 在資料庫中輸入資訊：
 
-1. 带时区格式的时间戳：数据库引擎以UTC格式存储日期。 每个打开的会话都将有一个时区，并且日期将根据时区进行转换。
-1. 本地格式+本地时区：所有日期都以本地格式存储（无时差管理），并且会为它们分配一个时区。 时区存储在 **WdbcTimeZone** 选项，可通过 **[!UICONTROL Administration > Platform > Options]** 菜单。
+1. 時區格式的時間戳記：資料庫引擎會以UTC格式儲存日期。 每個開啟的工作階段都會有一個時區，日期會根據時區進行轉換。
+1. 本機格式+本機時區：所有日期都會以本機格式儲存（無時間延遲管理），並為它們指派單一時區。 時區儲存在 **WdbcTimeZone** Adobe Campaign選項進行變更，可透過 **[!UICONTROL Administration > Platform > Options]** 樹狀結構的功能表。
 
 >[!IMPORTANT]
 >
->请注意，此修改可能会导致数据一致性和同步问题。
+>請注意，此修改可能會導致資料一致性和同步問題。
 
-### 创建新实例 {#creating-a-new-instance}
+### 建立新執行個體 {#creating-a-new-instance}
 
-为了使多个国际用户能够处理同一实例，您需要在创建实例时配置时区，以管理不同国家/地区之间的时差。 在实例创建期间，在 **[!UICONTROL Time zone]** 数据库配置阶段的部分。
+為了讓多位國際使用者在相同例項上工作，您需要在建立例項時設定時區，以管理國家/地區之間的時差。 在建立執行個體期間，選取 **[!UICONTROL Time zone]** 資料庫組態階段的區段。
 
-检查 **[!UICONTROL UTC database (date fields with time zone)]** 选项，以UTC格式（SQL字段和XML字段）存储所有日期和时间的数据。
+檢查 **[!UICONTROL UTC database (date fields with time zone)]** 以UTC格式儲存所有含日期和時間的資料（SQL欄位和XML欄位）的選項。
 
 ![](assets/install_wz_select_utc_option.png)
 
 >[!IMPORTANT]
 >
->如果您使用 **Oracle**，则Oracle客户端层的时区文件(.dat)必须与服务器上安装的时区文件兼容。
+>如果您使用 **oracle**，Oracle使用者端層的時區檔案(.dat)必須與伺服器上安裝的時區檔案相容。
 
-如果数据库不是UTC时区，则可以选择下拉列表中提供的时区之一。 您还可以使用服务器的时区或选择UTC（协调通用时间）选项。
+如果資料庫不是UTC，您可以選取下拉式清單中提供的其中一個時區。 您也可以使用伺服器的時區，或選取UTC （國際標準時間）選項。
 
 ![](assets/install_wz_unselect_utc_option.png)
 
-当 **[!UICONTROL UTC Database (date fields with time zone)]** 选项时， SQL字段将以TIMESTAMP WITH TIMEZONE格式存储。
+當 **[!UICONTROL UTC Database (date fields with time zone)]** 選項時，SQL欄位會以TIMESTAMP WITH TIMEZONE格式儲存。
 
-否则，它们将以本地格式存储，您将需要选择要应用于数据库的时区。
+否則，它們會以本機格式儲存，而且您必須選取要套用至資料庫的時區。
 
-### 迁移 {#migration}
+### 移轉 {#migration}
 
-迁移到早期版本（不进行时区管理）时，您需要在数据库中定义日期存储模式。
+移轉至較舊版本（沒有時區管理）時，您需要在資料庫中定義日期儲存模式。
 
-为确保与访问Adobe Campaign数据库的外部工具兼容， **日期+时间** 默认情况下，类型SQL字段仍以本地格式存储。
+為確保與存取Adobe Campaign資料庫的外部工具相容， **日期+時間** 型別SQL欄位預設會保留為本機格式。
 
-包含日期的XML字段现在以UTC格式存储。 在加载期间，非UTC格式的字段会使用服务器的时区自动转换。 这意味着所有XML字段将逐步转换为UTC格式。
+包含日期的XML欄位現在以UTC儲存。 在載入期間，非UTC格式的欄位會使用伺服器的時區自動轉換。 這表示所有XML欄位將逐步轉換為UTC格式。
 
-要使用现有实例，请将 **WdbcTimeZone** 选项，然后输入实例的时区。
+若要使用現有例項，請新增 **WdbcTimeZone** 選項並輸入執行個體的時區。
 
 >[!IMPORTANT]
 >
->请确保为WdbcTimeZone选项配置了正确的值：以后进行的更改可能会导致不一致。
+>請確定已為WdbcTimeZone選項設定正確的值：稍後進行的變更可能會導致不一致。
 
-可能值的示例：
+可能值的範例：
 
-* 欧洲/巴黎，
+* 歐洲/巴黎，
 * 欧洲/伦敦,
-* 美国/纽约等
+* 美洲/紐約等
 
-   这些值取自tz(Olson)数据库。 有关更多信息，请参阅 [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+   這些值取自tz (Olson)資料庫。 如需詳細資訊，請參閱 [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).

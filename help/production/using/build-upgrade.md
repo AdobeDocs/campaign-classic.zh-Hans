@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: 内部版本升级入门
-description: 了解升级到新内部版本的关键步骤
+title: 開始進行組建版本升級
+description: 瞭解升級至新組建版本的關鍵步驟
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '2355'
 ht-degree: 3%
@@ -19,237 +19,237 @@ ht-degree: 3%
 
 
 
-本节将为您提供有关升级过程以及识别和解决冲突的步骤的深入演练。
+本節將為您提供升級流程的深入介紹，以及識別和解決衝突的步驟。
 
-建设升级必须谨慎进行，其影响必须事先充分考虑，程序必须严守纪律。 要确保成功升级，请确保只有专家用户才能执行下面列出的步骤。 此外，我们强烈建议您联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 开始任何升级之前。
+組建升級必須謹慎進行，必須事先充分考慮其影響，並且程式必須以高度的紀律性完成。 若要確保升級成功，請確定只有專家使用者才能執行下列步驟。 此外，我們強烈建議您使用 [Adobe客戶服務](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 在開始任何升級之前。
 
-需要满足以下先决条件：
+需要下列先決條件：
 
-* 了解营销活动架构
-* 系统和服务器端知识
-* 管理权限
+* 瞭解Campaign架構
+* 系統與伺服器端知識
+* 管理許可權和許可權
 
-您可以在以下部分中找到更多信息： [更新Adobe Campaign](../../production/using/upgrading.md), [迁移到新版本](../../migration/using/about-migration.md).
+您可在以下章節找到更多資訊： [更新Adobe Campaign](../../production/using/upgrading.md)， [移轉至新版本](../../migration/using/about-migration.md).
 
-对于托管实例和混合实例，您必须向Adobe技术运营团队请求内部版本升级。 有关更多信息，请参阅本页底部的常见问题解答部分。 另请查阅 [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md).
+對於託管和混合式執行個體，您必須向Adobe技術營運團隊請求組建升級。 如需詳細資訊，請參閱底部的「常見問題」一節（若此頁面適用）。 另請參閱 [版本編號升級常見問題集](../../platform/using/faq-build-upgrade.md).
 
-## 准备升级
+## 準備升級
 
 ![](assets/do-not-localize/icon_planification.png)
 
-在开始内部版本升级之前，必须执行如下所述的完整准备。
-系统准备好升级后，将需要升级内部版本 **至少** 2小时。
+在開始組建版本升級之前，您必須執行下列所述的完整準備。
+一旦系統準備好升級，就需要進行組建升級 **至少** 2小時。
 
-内部版本升级过程需要以下资源：
+組建版本升級程式需要下列資源：
 
-* Adobe架构师 — 了解数据库结构（即装即用模式和任何已添加的其他模式、营销活动设计以及必须按特定顺序启动和测试的任何关键路径功能）。
-* 项目经理 — 如果内部版本升级涉及许多不同的实例（生产、暂存、测试）和其他第三方服务器和应用程序（数据库、SFTP站点、消息服务提供商），则有项目经理来协调所有测试被视为最佳做法。
-* Adobe Campaign管理员 — 您的管理员知道服务器的配置，包括但不限于：安全性、文件夹布局、报告和导入\导出要求。 如果没有管理员，请勿执行内部版本升级。
-* Adobe Campaign运营商（营销用户） — 成功升级取决于用户成功执行其日常任务的能力。 因此，在测试已升级的服务器时，应始终至少包含一位每日操作员。
+* Adobe架構師 — 瞭解資料庫結構（現成可用的結構描述和已新增的任何其他結構描述、行銷活動設計，以及必須依特定順序啟動和測試的任何關鍵路徑功能）。
+* 專案管理員 — 如果組建版本升級涉及許多不同的執行個體（生產、測試、測試）和其他協力廠商伺服器和應用程式（資料庫、SFTP網站、訊息服務提供者），則由專案管理員協調所有測試被視為最佳實務。
+* Adobe Campaign管理員 — 您的管理員知道伺服器的設定，包括但不限於：安全性、資料夾配置、報告和匯入\匯出需求。 沒有您的管理員，請勿執行組建版本升級。
+* Adobe Campaign操作員（行銷使用者） — 成功升級取決於使用者成功執行其日常任務的能力。 因此，升級伺服器的測試中請務必至少包含其中一個每日操作員。
 
-### 规划
+### 規劃
 
-以下是有关如何规划内部版本升级的要点：
+以下是如何規劃組建版本升級的關鍵點：
 
-1. 至少保留2小时进行升级。
-1. 为Adobe和客户员工分发联系详细信息。
-1. 对于托管实例：Adobe和客户人员将协调升级的时间以及执行人员。
-1. 对于内部部署实例：客户员工负责管理整个流程 — 如果需要协助测试自定义工作流和交付逻辑，则应引入咨询服务。
-1. 确定并确认要升级到的Adobe Campaign版本 — 请查阅 [Adobe Campaign Classic发行说明](../../rn/using/rn-overview.md).
-1. 确认拥有升级可执行文件。
+1. 至少保留2小時進行升級。
+1. 為Adobe和客戶員工分配聯絡人詳細資料。
+1. 針對託管例項：Adobe和客戶員工將協調升級時間以及執行人員。
+1. 對於內部部署執行個體：客戶員工會管理整個流程 — 如果需要測試自訂工作流程和傳送邏輯方面的協助，則應引入諮詢服務。
+1. 決定並確認您要升級至哪個Adobe Campaign版本 — 請參閱 [Adobe Campaign Classic發行說明](../../rn/using/rn-overview.md).
+1. 確認擁有升級可執行檔。
 
-### 关键人员
+### 重要人員
 
-内部版本升级过程需要以下人员参与：
+組建版本升級程式需要下列人員參與：
 
-* Adobe架构师：对于托管或混合架构，架构师必须与Adobe Campaign客户关怀团队进行协调。
+* Adobe架構師：對於託管或混合式架構，架構師必須與Adobe Campaign Client Care協調。
 
-* 项目经理：
-   * 对于On Premise安装：客户的内部项目领导者负责领导升级并管理生命周期测试。
+* 專案經理：
+   * 對於內部部署：客戶的內部專案主管會領導升級並管理生命週期測試。
 
-   * 对于托管安装：托管团队将与Adobe Campaign客户关怀团队和客户合作，协调所有实例的升级时间轴。
+   * 針對託管安裝：託管團隊將與Adobe Campaign客戶服務團隊和客戶合作，協調所有例項的升級時間表。
 
-* Adobe Campaign管理员：
-   * 对于On Premise安装：管理员将执行升级。
+* Adobe Campaign管理員：
+   * 對於內部部署安裝：管理員會執行升級。
 
-   * 对于托管安装：托管团队会执行升级。
+   * 對於託管安裝：託管團隊會執行升級。
 
-* Adobe Campaign操作员\营销用户：操作员对开发、测试和生产实例运行测试。
+* Adobe Campaign operator\marketing user： operator會在開發、測試和生產執行個體上執行測試。
 
-### 准备内部版本升级
+### 準備組建版本升級
 
-在开始内部版本升级之前，内部部署客户需要执行以下准备：
+在開始進行組建版本升級之前，內部部署客戶需要執行下列準備：
 
-1. 确保在升级之前可以导出任何开发工作，导出为资源包。
+1. 確保任何開發工作都可以在升級前匯出，匯出為套件。
 
-1. 为源环境和目标环境的所有实例执行数据库的完全备份。
+1. 針對來源和目標環境的所有執行處理，執行資料庫的完整備份。
 
-1. 获取 [服务器配置文件](../../installation/using/the-server-configuration-file.md).
+1. 取得最新版的 [伺服器設定檔](../../installation/using/the-server-configuration-file.md).
 
-1. [下载最新内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html). [了解详情](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)。
+1. [下載最新組建版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html). [了解详情](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)。
 
-你还需要知道 [有用命令行](../../installation/using/command-lines.md) 开始内部版本升级之前：
+您還需要瞭解所有 [有用的命令列](../../installation/using/command-lines.md) 開始建置升級之前：
 
-* **nlserver pdump**:列出运行进程
-* **nlserver pdump -who**:列出活动客户端会话
-* **nlserver监视器 — 缺少**:列出缺少的属性
-* **nlserver开始process@instance-name**:启动进程
-* **nlserver停止process@instance-name**:停止进程
-* **nlserver重新启动process@instance-name**:重新启动进程
-* **nlserver关闭**:停止所有Campaign进程
-* **nlserver watckdog -svc**:启动监视程序（仅限UNIX）
+* **nlserver pdump**：列出正在執行的程式
+* **nlserver pdump -who**：列出作用中使用者端工作階段
+* **nlserver監視器 — missing**：列出缺少的屬性
+* **nlserver啟動process@instance-name**：啟動程式
+* **nlserver stop process@instance-name**：停止程式
+* **nlserver重新啟動process@instance-name**：重新啟動程式
+* **nlserver shutdown**：停止所有行銷活動程式
+* **nlserver watchdog -svc**：啟動監視程式（僅限UNIX）
 
-## 执行升级
+## 執行升級
 
 ![](assets/do-not-localize/icon_process.png)
 
-以下程序仅由 **内部部署** 客户。 对于托管客户，托管团队会负责处理。 要将Adobe Campaign更新为新内部版本，请参阅下面的详细过程。
+以下程式僅由執行 **內部部署** 客戶。 對於託管客戶，由託管團隊負責。 若要將Adobe Campaign更新至新組建版本，詳細程式如下所述。
 
-### 复制环境
+### 複製環境
 
-以下是复制Adobe Campaign环境的方式，以便将源环境恢复到目标环境，从而生成两个相同的工作环境。
+以下說明複製Adobe Campaign環境的方法，以便將來源環境還原到目標環境，從而得到兩個相同的工作環境。
 
 为此请执行以下操作步骤：
 
-1. 在源环境中的所有实例上创建数据库的副本。
+1. 在來源環境中的所有執行個體上建立資料庫復本。
 
-1. 在目标环境的所有实例上恢复这些副本。
+1. 在目標環境的所有執行個體上還原這些復本。
 
-1. 运行 **nms:freezeInstance.js** 目标环境中的烧灼脚本。 这将阻止所有进程与外部交互：日志、跟踪、投放、活动工作流等。
+1. 執行 **nms：freezeInstance.js** 啟動之前，先對目標環境執行燒灼程式檔。 這將停止與外界互動的所有程式：記錄、追蹤、傳送、行銷活動工作流程等。
 
    ```
    nlserverjavacsriptnms:freezeInstance.js–instance:<dev> -arg:run
    ```
 
-1. 检查烧灼，如下所示：
+1. 檢查燒製，如下所示：
 
-   * 检查唯一的投放部分是ID设置为 **0**:
+   * 檢查唯一傳遞部分是否是ID設定為的傳遞部分 **0**：
 
       ```
       SELECT * FROM neolane.nmsdeliverypart;
       ```
 
-   * 检查投放状态更新是否正确：
+   * 檢查傳遞狀態更新是否正確：
 
       ```
       SELECT iSate, count(*) FROM neolane.nmsdeliveryGroup By iProd;
       ```
 
-   * 检查工作流状态更新是否正确：
+   * 檢查工作流程狀態更新是否正確：
 
       ```
       SELECT iState, count (*) FROM neolane.xtkworkflowGROUP BY iState;
       SELECT iStatus, count (*) FROM neolane.xtkworkflowGROUP BY iStatus;
       ```
 
-### 关闭服务
+### 關閉服務
 
-要使用新版本替换所有文件，需要关闭nlserverservice的所有实例。
+若要以新版本取代所有檔案，必須關閉nlserverservice的所有執行個體。
 
-1. 关闭以下服务：
+1. 關閉下列服務：
 
-   * Web服务(IIS): **iisreset /stop**
-   * Adobe Campaign服务： **net stop nlserver6**
+   * Web服務(IIS)： **iisreset /stop**
+   * Adobe Campaign服務： **網路停止nlserver6**
 
    >[!NOTE]
    >
-   >确保已停止重定向服务器(webmdl)，以便IIS使用的nlsrvmod.dll文件可以替换为新版本。
+   >請確定重新導向伺服器(webmdl)已停止，以便IIS使用的nlsrvmod.dll檔案可以換成新版本。
 
-1. 通过运行 **nlserver pdump** 命令。 如果没有任务，则输出应类似于以下内容：
+1. 執行 **nlserver pdump** 命令。 如果沒有任務，則輸出應類似於以下內容：
 
    ```
    C:\<installation path>\bin>nlserverpdump HH:MM:SS > Application Server for Adobe Campaign version x.x (build xxx) dated xx/xx/xxxx No tasks
    ```
 
-1. 检查Windows任务管理器，确认所有进程都已停止。
+1. 檢查Windows工作管理員，確認所有處理程式都已停止。
 
-### 升级Adobe Campaign Server应用程序
+### 升級Adobe Campaign伺服器應用程式
 
-1. 运行 **Setup.exe** 文件。 如果需要下载此文件，请访问 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html).
+1. 執行 **Setup.exe** 檔案。 如果您需要下載此檔案，請存取 [下載中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html).
 
-1. 选择安装模式： **更新** 或 **修复**.
+1. 選取安裝模式： **更新** 或 **修復**.
 
-1. 单击 **下一个**.
+1. 按一下 **下一個**.
 
-1. 单击 **完成**:安装程序会复制新文件。
+1. 按一下 **完成**：安裝程式會複製新檔案。
 
-1. 操作完成后，单击 **完成**.
+1. 作業完成後，按一下 **完成**.
 
-### 同步资源
+### 同步資源
 
-1. 打开命令行。
+1. 開啟命令列。
 
-1. 运行 **nlserver config -postupgrade -allinstances** 要执行以下操作：
+1. 執行 **nlserver config -postupgrade -allinstances** 若要執行下列動作：
 
-   * 同步资源
-   * 更新架构
+   * 同步資源
+   * 更新結構
    * 更新数据库
 
    >[!NOTE]
    >
-   >此操作只应在nlserverweb应用程序服务器上执行一次且只能执行一次。
+   >此操作只應在nlserverweb應用程式伺服器上執行一次。
 
-   要仅同步一个数据库，请运行以下命令：
+   若要只同步一個資料庫，請執行以下命令：
 
    ```
    nlserver config -postupgrade -instance: <instance_name>
    ```
 
-1. 检查同步是否生成了任何错误或警告。
+1. 檢查同步是否已產生任何錯誤或警告。
 
-### 重新启动服务
+### 重新啟動服務
 
-需要重新启动以下服务：
+需要重新啟動下列服務：
 
-* Web服务(IIS): **issreset /start**
-* Adobe Campaign服务： **网络启动nlserver6**
+* Web服務(IIS)： **issreset /start**
+* Adobe Campaign服務： **網路啟動nlserver6**
 
-### 客户端控制台更新
+### 使用者端主控台更新
 
-客户端控制台必须与服务器实例位于同一内部版本。
+使用者端主控台必須與伺服器執行個體位於相同的版本上。
 
-在安装Adobe Campaign应用程序服务器的计算机上(nlserverweb)，下载并复制文件：
+在安裝Adobe Campaign應用程式伺服器的電腦上(nlserverweb)，下載並複製檔案：
 
 ```
 Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 ```
 
-下次连接客户端控制台时，窗口会告知用户新更新的可用性，并为用户提供下载和安装该更新的可能性。
+下次連線使用者端主控台時，會出現一個視窗，告知使用者是否有新的更新，並提供他們下載和安裝更新的可能性。
 
-### 特定的其他任务
+### 特定其他任務
 
-某些配置需要特定的其他任务才能更新到新内部版本。
+某些設定需要特定的其他任務才能更新到新的版本編號。
 
 #### 事务性消息传递
 
-在Campaign实例上启用事务性消息传递（消息中心）后，您需要执行以下其他步骤才能升级：
+在您的Campaign執行個體上啟用異動訊息（訊息中心）時，您需要執行以下額外步驟以進行升級：
 
-1. 将消息中心生产服务器更新为所选版本。
-1. 运行升级后的脚本。
-1. 运行测试并确保通过消息中心生产实例成功接收电子邮件。
-1. 升级客户端并清除缓存。
-1. 导出包：
-   * 使用客户端包导出工具导出包
-   * 导入架构包
-   * 断开和重新连接客户端
-   * 更新数据库
-   * 断开连接并重新连接
-   * 导入管理包
-   * 导入内容包
-   * 导入内容管理包
-   * 断开连接并重新连接
-   * 对工作流执行快速健全检查
+1. 將Message Center生產伺服器更新至所選版本。
+1. 執行升級後指令碼。
+1. 執行測試並確保透過訊息中心生產執行個體成功收到電子郵件。
+1. 升級使用者端並清除快取。
+1. 匯出套件：
+   * 使用使用者端套件匯出工具匯出套件
+   * 匯入結構描述套件
+   * 中斷使用者端連線並重新連線
+   * 更新資料庫
+   * 中斷連線並重新連線
+   * 匯入管理套件
+   * 匯入內容封裝
+   * 匯入內容管理套件
+   * 中斷連線並重新連線
+   * 執行工作流程的快速健全性檢查
 
-1. 发布消息中心模板，以确保服务器和消息中心实例之间的接口正常工作。
-1. 运行测试以确保通过消息中心生产实例成功接收电子邮件。
-1. 在生产中运行工作流测试，以确保收到投放。
+1. 發佈訊息中心範本，以確保伺服器與訊息中心執行個體之間的介面運作正常。
+1. 執行測試以確保成功透過訊息中心生產執行個體接收電子郵件。
+1. 在生產環境中執行工作流程測試，以確保接收傳遞。
 
 #### 中间源
 
-在中间源环境的上下文中，您需要执行以下其他步骤才能升级：
+在中間來源環境的環境中，您需要執行這些額外的步驟以進行升級：
 
-1. 联系人 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 协调中间源服务器的升级。
-1. 通过运行测试链接验证版本是否已更新。 例如：
+1. 連絡人 [Adobe客戶服務](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 協調中間來源伺服器的升級。
+1. 執行測試連結以驗證版本是否已更新。 例如：
 
    ```
    http://[InsertServerURL]/r/test
@@ -257,15 +257,15 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 
 >[!NOTE]
 >
->中间源服务器必须始终运行与营销服务器相同（或更新）的版本。
+>中間來源伺服器必須一律執行與行銷伺服器相同的版本（或更新版本）。
 
-## 在发生冲突时
+## 發生衝突時
 
-### 识别冲突
+### 識別衝突
 
-您需要检查同步结果。 此过程仅由内部部署客户执行。 对于托管客户，托管团队会负责处理。 有两种方法可查看同步结果：
+您需要檢查同步化結果。 此程式僅由內部部署客戶執行。 對於託管客戶，由託管團隊負責。 檢視同步化結果的方式有兩種：
 
-在命令行界面中，错误由三个V形标记“>>”实现，并自动停止同步。 警告由双V形标记“>>”实现，并且必须在同步完成后进行解析。 在升级后，命令提示符中会显示一个摘要。 它可以如下所示：
+在命令列介面中，錯誤會以三重V形&#39;>>>&#39;具體化，並且同步會自動停止。 警告會以雙V形&#39;>>&#39;具體化，同步化完成後必須加以解析。 升級後結束時，命令提示字元中會顯示摘要。 它看起來可能像這樣：
 
 ```
 YYYY-MM-DD HH:MM:SS.749Z 00002E7A 1 info log =========Summary of the update==========
@@ -276,142 +276,142 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log The document with identifier 'de
 YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView‘ and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
 ```
 
-如果警告涉及资源冲突，则需要用户注意才能解决该问题。
+如果警告與資源衝突有關，則需要使用者注意才能解決。
 
-的 **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** 文件包含同步结果。 默认情况下，该插件可在以下目录中使用： **installationDirectory/var/`<instance-name>`/postupgrade**. 错误和警告属性会指示错误和警告。
+此 **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** 檔案包含同步化結果。 預設可在以下目錄中取得： **installationDirectory/var/`<instance-name>`/postupgrade**. 錯誤和警告屬性會指出錯誤和警告。
 
-### 分析冲突
+### 分析衝突
 
-**如何发现冲突？**
+**如何找到衝突？**
 
-冲突可在相关服务器的postupgrade.log中或Campaign客户端界面（管理>配置>包管理>编辑冲突）中找到。
+在相關伺服器的postupgrade.log或Campaign使用者端介面（「管理>設定>封裝管理>編輯衝突」）中，可能會發現衝突。
 
-标识符为“stockOverview”且类型为“nms:webApp”的文档与新版本冲突。
+識別碼為「stockOverview」且型別為「nms：webApp」的檔案與新版本發生衝突。
 
-如果发现冲突，请检查以下条件是否匹配：
+如果發現衝突，請檢查以下條件是否相符：
 
-* 客户是否修改或自定义了对象？
-* 对象在产品中是否发生更改？
+* 客戶是否已修改或自訂物件？
+* 物件在產品中是否變更？
 
-如果这两种条件都不适用，则为误报。 如果这两种条件都适用，则发现了真正的冲突。
+如果這些條件都不適用，則為誤判。 如果這兩個條件都適用，就會發現真正的衝突。
 
-**客户是否修改了对象？**
+**客戶是否已修改物件？**
 
-1. 识别冲突的对象。
-1. 询问客户是否修改了对象。
-1. 这个物体有什么不寻常的吗？
-1. 对象代码中是否设置了上次修改日期？
-1. 检查冲突中“_conflict”属性的XML代码。 它看起来像个自定义吗？
+1. 識別衝突的物件。
+1. 詢問客戶是否修改了物件。
+1. 物件是否有任何不尋常之處？
+1. 物件的程式碼中是否設定了上次修改日期？
+1. 檢查衝突中的XML程式碼是否有「_conflict」屬性。 它看起來像自訂嗎？
 
-**对象是否已在新内部版本中更改？**
+**物件在新組建中是否已變更？**
 
-1. 有“常见的疑犯？” 内置Web应用程序或报表(例如：“deliveryValidation”、“deliveryOverview”、“budget”)。
-1. 检查更改日志以获取任何更新。
-1. 问Adobe Campaign专家。
-1. 对代码执行“diff”。
+1. 有「常見疑點」嗎？ 內建Web應用程式或報表（例如：「deliveryValidation」、「deliveryOverview」、「budget」）。
+1. 檢查變更記錄檔是否有任何更新。
+1. 詢問Adobe Campaign專家。
+1. 對程式碼執行「diff」。
 
-### 解决冲突
+### 解決衝突
 
-要解决冲突，请应用以下流程：
+若要解決衝突，請套用下列程式：
 
-1. 在Adobe Campaign资源管理器中，转到 **管理>配置>包管理>编辑冲突**.
+1. 在Adobe Campaign Explorer中，前往 **管理>設定>封裝管理>編輯衝突**.
 
-1. 在列表中选择要解决的冲突。
-有三种解决冲突的选项： **接受新版本**, **保留当前版本**, **合并代码（并声明为已解析）**, **忽略冲突（不建议）**.
+1. 在清單中選取您要解決的衝突。
+有三種選項可解決衝突： **接受新版本**， **保留目前版本**， **合併程式碼（並宣告為已解析）**， **忽略衝突（不建議使用）**.
 
-**我何时可以接受新版本？**
+**何時可以接受新版本？**
 
-* 如果您需要标准功能。
-* 如果您没有自定义（所有自定义项都将被删除）
+* 如果您想要標準特徵。
+* 如果您沒有自訂（將會移除所有自訂）
 
-**我何时可以保留当前版本？**
+**何時可以保留目前版本？**
 
-* 如果您有自定义设置
-* 如果您不想合并
-* 如果升级中不需要对冲突对象进行任何修复
+* 如果您有自訂專案
+* 如果您不想合併
+* 如果您不需要升級時衝突物件的任何修正
 
-**何时执行合并？**
+**何時執行合併？**
 
-* 只能合并表单、报表和Web应用程序。
-* 某些次要合并可以在不了解代码的情况下进行解析。
-* 更复杂的合并应由拥有适当技能和能力的人进行。
-* 请参阅 [执行合并](#perform-a-merge).
+* 只能合併表單、報表和網頁應用程式。
+* 有些次要合併不需要瞭解程式碼就能解決。
+* 應由具備適當技能與能力的人來執行更複雜的合併。
+* 另請參閱 [執行合併](#perform-a-merge).
 
-**如果我忽视冲突呢？**
+**如果忽略衝突怎麼辦？**
 
-* 冲突将继续存在
-* 不会升级对象
-* 长期影响：版本不兼容，客户将不会从错误修复中受益。
-
->[!IMPORTANT]
->强烈建议解决冲突。
-
-### 执行合并{#perform-a-merge}
-
-合并的类型不同：
-
-1. 轻松合并：自定义元素和新元素很小且不相关，无需编码。
-1. 无更改：接受新版本，仅更改上次更新日期，仅更改注释、制表符、空格或新行。 示例：意外保存。
-1. 琐碎的更改：只更改了一行。 示例：xpathToLoad
-1. 复杂合并：需要编码时。 需要发展技能。 请参阅 [复杂合并](#complex-merges).
-
-#### 如何合并？
-
-1. 获取所有三个版本：原始版本、新版本和自定义版本。
-1. 在原始版本和新版本之间运行“差异”。
-1. 隔离更改。
-1. 如果没有更改，请通过保留当前版本来解决。
-
-#### 在哪里找代码？
-
-1. 内置代码存储在Datakit文件夹的XML文件中。 查找与冲突对象匹配的XML文件。 示例：installationDirectory\datakit\nms\fra\form\recipient.xml
-1. 检索原始版本：通过 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 或另一个未升级的产品安装。
-1. 检索新版本：通过 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 或客户安装的文件。
-1. 检索自定义版本：从Campaign客户端中检索对象的源代码。
-
-### 如何进行差异比较？
-
-1. 安装文本或合并编辑器，例如记事本++、AraxisMerge、WinMerge。
-1. 在编辑器中打开原始文件和新文件。
-1. 运行差异比较（比较两个文件）。
-1. 识别任何差异。
-
-### 如何合并？
-
-1. 从自定义版本开始。
-1. 应用更改。
-1. 通过将冲突声明为已解决来解决冲突。
-1. 检查非回归。
-
-如果选择手动解决冲突，请按如下方式继续：
-
-1. 在窗口的下部，搜索 **_conflict_string_** 查找存在冲突的实体。 随新版本安装的实体包含新参数，与先前版本匹配的实体包含自定义参数。
-1. 删除您不希望保留的版本。 删除 **_conflict_argument_** 要保留的实体的字符串。
-1. 转到已解决的冲突。 单击 **操作** 图标，选择 **声明为已解析**.
-1. 保存更改：冲突现已解决。
-
-#### 复杂合并{#complex-merges}
-
-1. 了解更改的功能：对更改进行逆向工程，检查更改日志，跟踪Adobe Campaign专家。
-1. 决定该怎么做。
-1. 了解自定义的功能：反向工程更改
-
-以下是执行复杂合并的步骤：
-
-1. 从更改集复制代码位
-1. 粘贴到自定义版本
-1. 定制的非回归测试
-1. 测试更改的功能
-1. 执行用户接受测试
-1. 在测试环境中执行
-
+* 衝突將持續存在
+* 將不會升級物件
+* 長期影響：版本不相容，客戶將無法受益於錯誤修正。
 
 >[!IMPORTANT]
->执行复杂合并需要具备开发技能。
+>強烈建議解決衝突。
+
+### 執行合併{#perform-a-merge}
+
+有不同型別的合併：
+
+1. 輕鬆合併：自訂元素和新元素都很小且沒關係，不需要編碼。
+1. 無變更：接受新版本、僅上次變更更新日期、僅註解、標籤、空格或新行。 範例：意外儲存。
+1. 微不足道的變更：只變更了一行。 範例： xpathToLoad
+1. 複雜合併：需要編碼時。 需要開發技能。 另請參閱 [複雜合併](#complex-merges).
+
+#### 如何合併？
+
+1. 取得所有三個版本：原始版本、新版本和自訂版本。
+1. 執行原始版本與新版本之間的「差異」。
+1. 隔離變更。
+1. 如果沒有變更，請保留目前版本以解決。
+
+#### 在哪裡可以找到程式碼？
+
+1. 內建程式碼會儲存在datakit資料夾的XML檔案中。 尋找符合衝突物件的XML檔案。 範例： installationDirectory\datakit\nms\fra\form\recipient.xml
+1. 擷取原始版本：透過 [下載中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 或其他未升級的產品安裝。
+1. 擷取新版本：透過 [下載中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 或客戶安裝的檔案。
+1. 擷取自訂版本：從Campaign使用者端中擷取物件的原始程式碼。
+
+### 如何做出比較？
+
+1. 安裝文字或合併編輯器，例如Notepad ++、AraxisMerge、WinMerge。
+1. 在編輯器中開啟原始檔案和新檔案。
+1. 執行差異（比較兩個檔案）。
+1. 識別任何差異。
+
+### 如何合併？
+
+1. 從自訂版本開始。
+1. 套用變更。
+1. 將衝突宣告為已解決，以解決衝突。
+1. 檢查無回歸。
+
+如果您選擇手動解決衝突，請按照以下步驟進行：
+
+1. 在視窗的下半部，搜尋 **_conflict_string_** 以找出有衝突的圖元。 與新版本一起安裝的實體包含新引數，符合先前版本的實體包含自訂引數。
+1. 刪除您不想保留的版本。 刪除 **_conflict_argument_** 要保留之實體的字串。
+1. 移至您已解決的衝突。 按一下 **動作** 圖示並選取 **宣告為已解決**.
+1. 儲存您的變更：衝突現已解決。
+
+#### 複雜合併{#complex-merges}
+
+1. 瞭解變更的作用：對變更進行反向工程、檢查變更記錄，並與Adobe Campaign專家跟進。
+1. 決定如何處理變更。
+1. 瞭解自訂的功能：對變更進行反向工程
+
+以下是執行複雜合併的步驟：
+
+1. 從變更集復製程式碼位元
+1. 貼上至自訂版本
+1. 測試自訂的不回歸
+1. 測試變更的功能
+1. 執行使用者驗收測試
+1. 在測試環境中執行
+
+
+>[!IMPORTANT]
+>執行複雜的合併需要開發技能。
 
 **相关主题**
 
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)
-* [Campaign Classic发行说明](../../rn/using/rn-overview.md)
-* [帮助和支持选项以进行Campaign Classic](../../support.md)
-* [Campaign每年升级计划](../../rn/using/rn-overview.md)
+* [Campaign Classic發行說明](../../rn/using/rn-overview.md)
+* [Campaign Classic的說明與支援選項](../../support.md)
+* [Campaign年度升級計畫](../../rn/using/rn-overview.md)

@@ -3,12 +3,12 @@ product: campaign
 title: 备份
 description: 备份
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 2%
@@ -17,43 +17,43 @@ ht-degree: 2%
 
 # 备份{#backup}
 
-备份对于避免在计算机上出现问题（无论是物理问题还是系统问题）时丢失数据至关重要。
+備份是必要的，以避免在電腦上發生問題（無論是實體或系統相關問題）時遺失資料。
 
-数据存储在两个不同的位置：
+資料會儲存在兩個不同的位置：
 
-* 物理文件存储在Adobe Campaign目录中，
-* 其他数据存储在数据库中。
+* 實體檔案儲存在Adobe Campaign目錄中，
+* 其他資料會儲存在資料庫中。
 
-大多数数据都在数据库中。 这表示要备份的信息的99%。
+大部分的資料都在資料庫中。 這代表要備份的99%資訊。
 
-## 物理文件 {#physical-files}
+## 實體檔案 {#physical-files}
 
-文件分为几类：
+檔案分為幾個類別：
 
-* 配置文件，存储在 **nl6/conf**，可让您快速重新配置Adobe Campaign。
+* 組態檔，儲存在 **nl6/conf**，讓您快速重新設定Adobe Campaign。
 
-* 重定向文件，存储在  **nl6/var/`<instance-name>`/redir**，位于跟踪（通常称为“前端”）服务器上，并包含之前所有的促销活动重定向。 以前的营销活动仍使用这些量度。
+* 重新導向檔案，儲存在  **nl6/var/`<instance-name>`/redir**，位於追蹤（通常稱為「前端」）伺服器上，並包含所有先前的促銷活動重新導向。 舊版行銷活動仍會使用這些量度。
 
-* 日志文件，存储在 **nl6/var/`<instance-name>`/log**，可用于跟踪问题。
+* 記錄檔，儲存在 **nl6/var/`<instance-name>`/log**，可用來追蹤問題。
 
-因此，要备份的目录如下：
+因此，要備份的目錄為：
 
 * nl6/conf
 
-* nl6/var/`<instance-name>`/redir（对于每个实例）
+* nl6/var/`<instance-name>`/redir （適用於每個執行個體）
 
-* nl6/var/`<instance-name>`/log（可选）
+* nl6/var/`<instance-name>`/log （選擇性）
 
-* nl6/var/`<instance-name>`/relay（可选）
+* nl6/var/`<instance-name>`/relay （選擇性）
 
 
 ## 数据库 {#database}
 
 >[!IMPORTANT]
 >
->必须备份数据库。
+>必須備份資料庫。
 
 
-数据库包含Adobe Campaign富客户端控制台中显示的所有信息以及所有业务线数据。
+資料庫包含Adobe Campaign豐富型使用者端主控台中顯示的所有資訊，以及所有業務資料。
 
-您的托管公司，特别是其数据库管理员，负责此操作。
+您的託管公司（尤其是其資料庫管理員）會負責這項作業。

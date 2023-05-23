@@ -3,12 +3,12 @@ product: campaign
 title: 数据库性能
 description: 数据库性能
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 33dcfd4b-51fd-44f4-98e0-23eafb79d7da
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -19,68 +19,68 @@ ht-degree: 8%
 
 
 
-大多数性能问题都与数据库维护相关。 以下四个主要线索可帮助您找到性能缓慢的原因：
+大多數效能問題都與資料庫維護有關。 以下四個主要線索可協助您找出效能緩慢的原因：
 
 * 配置
-* 安装和配置Adobe Campaign平台
+* Adobe Campaign平台的安裝和設定
 * 数据库维护
-* 实时诊断
+* 即時診斷
 
 ## 配置 {#configuration}
 
-检查初始的Adobe Campaign平台配置是否仍然有效，并在必要时，根据可交付性或数据库大小重新评估客户的需求。 我们还建议运行完整的硬件检查（CPU、RAM、IO系统）。
+檢查初始Adobe Campaign平台設定是否仍然有效，並視需要重新評估客戶的可傳遞性或資料庫大小需求。 我們也建議執行完整的硬體檢查（CPU、RAM、IO系統）。
 
 >[!NOTE]
 >
->您可以参考 [Adobe Campaign硬件大小调整指南](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html) 分析。
+>您可參閱 [Adobe Campaign硬體大小調整指南](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html) 以取得深入分析。
 
-## 平台配置 {#platform-configuration}
+## 平台設定 {#platform-configuration}
 
-不适当的配置可能会影响平台性能。 我们建议您在 **serverConf.xml** 文件。
+不當的設定可能會影響平台效能。 建議您檢視「 」中的網路設定、平台傳遞能力選項以及MTA設定 **serverConf.xml** 檔案。
 
 ## 数据库维护 {#database-maintenance}
 
-**数据库清理任务**
+**資料庫清理工作**
 
-请确保数据库清理任务已运行。 为此，请查看日志文件以查看它们是否包含任何错误。 如需详细信息，请参阅[此部分](../../production/using/database-cleanup-workflow.md)。
+請確定資料庫清理工作可正常運作。 要執行此操作，請檢視記錄檔以檢視它們是否包含任何錯誤。 如需详细信息，请参阅[此部分](../../production/using/database-cleanup-workflow.md)。
 
-**维护计划**
+**維護計畫**
 
-确保正确计划和执行数据库维护。 为此，请与数据库管理员联系以了解有关以下内容的更多信息：
+請確定資料庫維護已正確排程並執行。 若要這麼做，請聯絡資料庫管理員以進一步瞭解：
 
-* 他们的维护计划
-* 以前执行的维护计划
-* 查看脚本日志
+* 他們的維護排程
+* 先前執行的維護計畫
+* 檢視指令碼記錄
 
 如需详细信息，请参阅[此部分](../../production/using/recommendations.md)。
 
 >[!IMPORTANT]
 >
->如果您使用中间源配置，则必须定期维护数据库。 在营销平台上分析投放时，营销实例会向中间源实例发送信息。 如果流程速度减慢，则营销实例将受到影响。
+>如果您使用中間來源組態，則必須定期維護資料庫。 在行銷平台上分析傳遞時，行銷執行個體會傳送資訊給中間來源執行個體。 如果流程速度變慢，行銷執行個體將受到影響。
 
 **管理工作表**
 
-请检查工作表的数量和大小。 当数据库超出一定大小时，数据库性能会受到影响。 这些表由工作流和投放创建。 工作流和投放处于活动状态时，它们会保留在数据库中。 要限制工作表的大小，可以执行以下操作：
+請檢查工作表的數目和大小。 當它們超過特定大小時，資料庫效能會受到影響。 這些表格是由工作流程和傳遞建立的。 當工作流程和傳遞作用中時，它們會留在資料庫中。 若要限制工作表的大小，您可以執行下列操作：
 
-* 停止或删除具有以下状态的投放： **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Ready for delivery]**&#x200B;或 **[!UICONTROL Paused]**.
-* 停止或删除因错误而暂停的工作流。
-* 停止所有用于测试的不包含 **[!UICONTROL End]** 活动，因此其状态保持 **[!UICONTROL Paused]**.
+* 停止或刪除狀態為下列的傳遞： **[!UICONTROL Failed]**， **[!UICONTROL In progress]**， **[!UICONTROL Ready for delivery]**，或 **[!UICONTROL Paused]**.
+* 停止或刪除因錯誤而暫停的工作流程。
+* 停止所有用於測試的工作流程，這些工作流程不包含 **[!UICONTROL End]** 活動及其狀態維持不變 **[!UICONTROL Paused]**.
 
 >[!IMPORTANT]
 >
->如果操作时间长，释放了大量空间，这意味着需要进行深入的维护（索引重建等）。 如需详细信息，请参阅[此部分](../../production/using/recommendations.md)。
+>如果操作需要很長時間並釋放了大量空間，這表示需要進行深入維護（重建索引等）。 如需详细信息，请参阅[此部分](../../production/using/recommendations.md)。
 
-**Adobe Campaign进程监控**
+**Adobe Campaign程式監控**
 
-根据Adobe Campaign安装设置，可以使用两个工具进行平台监控：
+根據Adobe Campaign安裝設定，可使用兩種工具進行平台監視：
 
-* 实例生产页面。 有关更多信息，请参阅 [手动监控](../../production/using/monitoring-processes.md#manual-monitoring).
-* 的 *netreport* 脚本。 有关更多信息，请参阅 [通过Adobe Campaign脚本自动监控](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
+* 執行個體生產頁面。 有關詳細資訊，請參閱 [手動監視](../../production/using/monitoring-processes.md#manual-monitoring).
+* 此 *netreport* 指令碼。 有關詳細資訊，請參閱 [透過Adobe Campaign指令碼自動監視](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
-## 详情 {#specifics}
+## 細節 {#specifics}
 
-可能需要进行实时诊断以确定问题的原因。 首先检查进程和平台日志文件，然后在重新创建问题时监视数据库活动。 请特别注意以下事项：
+您可能需要執行即時診斷，以找出問題的原因。 首先檢查流程和平台記錄檔，然後在重新建立問題的同時監控資料庫活動。 請特別留意下列事項：
 
-* 维护执行计划
-* 正在执行SQL查询
-* 是否同时运行外部进程（清理、导入、聚合计算等）。
+* 維護執行計畫
+* 正在執行的SQL查詢
+* 外部程式是否同時執行（清除、匯入、彙總計算等）。

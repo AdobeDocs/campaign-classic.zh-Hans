@@ -1,44 +1,44 @@
 ---
 product: campaign
-title: 配置URL权限
-description: 了解如何配置URL权限
+title: 設定URL許可權
+description: 瞭解如何設定URL許可權
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 29%
 
 ---
 
-# 配置URL权限（内部部署）{#url-permissions}
+# 設定URL許可權（內部部署）{#url-permissions}
 
 
 
 Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的 URL 默认列表是有限的。这些 URL 允许实例正常运行。
 
-默认情况下，实例不允许连接到外部 URL。但是，可以向经授权的URL列表添加一些外部URL，以便您的实例可以连接到这些URL。 这允许您将 Campaign 实例连接到外部系统，例如 SFTP 服务器或网站，以启用文件和/或数据传输。
+默认情况下，实例不允许连接到外部 URL。不過，您可以將一些外部URL新增至授權URL清單，以便您的執行個體可以連結到這些URL。 这允许您将 Campaign 实例连接到外部系统，例如 SFTP 服务器或网站，以启用文件和/或数据传输。
 
 >[!NOTE]
 >
->此过程仅限于 **内部部署** 部署。
+>此程式僅限於 **內部部署** 部署。
 >
->As a **托管** 客户，如果您能够 [营销活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，则可以使用URL权限自助服务界面。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hans)
+>As a **託管** 客戶，如果您能存取 [Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，您可以使用URL許可權自助服務介面。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hans)
 >
->其他 **混合/托管** 客户需要联系Adobe支持团队以将IP添加到允许列表。
+>其他 **混合/託管** 客戶需要聯絡Adobe支援團隊，將IP新增至允許清單。
 
-对于 **混合** 和 **内部部署** 部署时，管理员需要引用 **urlPermission** 在 **serverConf.xml** 文件。
+對象 **混合式** 和 **內部部署** 部署，管理員需要參考新的 **urlPermission** 在 **serverConf.xml** 檔案。
 
 
-提供了三种连接保护模式：
+提供三種連線保護模式：
 
-* **阻塞**:所有不属于该的URL都允许列表将被阻止，并显示一则错误消息。 这是升级后的默认模式。
-* **许可**:允许所有不属于该允许列表的URL。
-* **警告**:所有不属于该的URL都允许列表是允许的，但JS解释器会发出警告，以便管理员可以收集它们。 此模式会添加JST-310027警告消息。
+* **封鎖**：所有不屬於允許清單的URL都會遭到封鎖，並出現錯誤訊息。 這是升級後預設的模式。
+* **許可性**：允許不屬於允許清單的所有URL。
+* **警告**：允許所有不屬於允許清單的URL，但JS解譯器會發出警告，以便管理員可以收集。 此模式會新增JST-310027警告訊息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -50,14 +50,14 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 
 >[!IMPORTANT]
 >
->默认情况下，新实施使用 **阻塞** 模式。
+>依預設，新實作會使用 **封鎖** 模式。
 >
->作为来自迁移的现有客户，您可以临时使用 **警告** 模式。 在允许URL之前分析出站流量。 定义允许的URL列表后，您可以将URL添加到允许列表并激活 **阻塞** 模式。
+>由於現有客戶來自移轉，因此您可暫時使用 **警告** 模式。 在允許URL之前分析傳出流量。 定義允許的URL清單後，您可以將URL新增至允許清單並啟動 **封鎖** 模式。
 
-有关更多信息，请参阅以下章节：
+如需詳細資訊，請參閱下列章節：
 
 * [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
 * [托管模型](hosting-models.md)
 * [Campaign 服务器配置](configuring-campaign-server.md)
-* [Campaign服务器配置文件参数](the-server-configuration-file.md)
-* [安全和隐私检查列表](get-started-security-privacy.md)
+* [Campaign伺服器設定檔案引數](the-server-configuration-file.md)
+* [安全性與隱私權檢查清單](get-started-security-privacy.md)

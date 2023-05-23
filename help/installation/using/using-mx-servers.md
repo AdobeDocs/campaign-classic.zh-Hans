@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: 在 Campaign 中使用 MX 服务器
-description: 了解MX服务器如何与Adobe Campaign Classic配合使用
+description: 瞭解MX伺服器如何與Adobe Campaign Classic搭配運作
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 1%
@@ -20,75 +20,75 @@ ht-degree: 1%
 
 
 
-了解MX服务器如何与Adobe Campaign Classic配合使用。
+瞭解MX伺服器如何與Adobe Campaign Classic搭配運作。
 
-## MX服务器 {#mx-servers}
+## MX伺服器 {#mx-servers}
 
-### 什么是MX服务器？
+### 什麼是MX伺服器？
 
-邮件交换器记录（MX记录）是域名系统(DNS)中的一种资源记录类型，它指定负责代表域接受电子邮件的邮件服务器。
+郵件交換器記錄（MX記錄）是網域名稱系統(DNS)中的一種資源記錄，指定了負責代表網域接受電子郵件訊息的郵件伺服器。
 
-### MX服务器的工作原理是什么？
+### MX伺服器如何運作？
 
-当您发送电子邮件时，软件服务器将与收件人域服务器建立连接。 两台服务器之间的通信使用SMTP语言，并且域可以有多台MX服务器。 与此域的连接将从最高优先级（最小数字）开始，而其他服务器则称为“备份”服务器。 必须遵守连接协议。
+當您傳送電子郵件時，軟體伺服器會建立與收件者網域伺服器的連線。 兩個伺服器之間的通訊使用SMTP語言，而且網域可以有多個MX伺服器。 與此網域的連線將從最高優先順序（最小數字）開始，而其他伺服器稱為「備份」伺服器。 必須遵循連線通訊協定。
 
-### MX服务器如何与Adobe Campaign一起使用？
+### MX伺服器如何與Adobe Campaign搭配運作？
 
-在连接协议中，必须遵守规则，以防止垃圾邮件和垄断服务器。 最重要的是：
+在連線通訊協定中，必須遵循規則以防止傳送垃圾訊息和壟斷伺服器。 最重要的專案如下：
 
-* **允许的最大连接数**:遵守此数字后，IP不在阻止列表中，电子邮件也不会因额外连接而被拒绝。
-* **最大消息数**:在连接期间，必须定义允许发送的消息数。 如果未定义此号码，服务器将发送尽可能多的数据。 这会导致被识别为垃圾邮件发送者，并被ISP添阻止列表加到中。
-* **每小时消息数**:为了与您的电子信誉相匹配，Adobe Campaign将控制您的IP每小时能够发送的电子邮件数量。 此系统将保护您免受电子邮件拒绝或/和阻止列表的影响。
+* **允許的最大連線數目**：遵守此數目後，IP不會列入封鎖清單中，且不會因為額外的連線而拒絕電子郵件。
+* **訊息數量上限**：在連線期間，必須定義允許傳送的訊息數。 如果未定義此數字，伺服器會儘可能多地傳送。 這會導致系統識別為垃圾訊息傳送者，並由ISP新增至封鎖清單。
+* **每小時訊息數**：為符合您的電子信譽，Adobe Campaign會控制IP每小時可傳送的電子郵件數量。 此系統將保護您免受電子郵件拒絕或/和封鎖清單的侵擾。
 
-## 退回电子邮件
+## 傳入電子郵件
 
-### 什么是Inbounce电子邮件？
+### 什麼是退回電子郵件？
 
-这是Adobe Campaign在服务器通信期间用于处理错误的过程。
+這是Adobe Campaign用來在伺服器通訊期間處理錯誤的程式。
 
-### “退回”电子邮件的工作原理
+### Inbounce電子郵件如何運作？
 
-错误地址将处理ISP发回的退回。 该过程将分析不同的SMTP错误代码，并根据RegEx标准应用正确的操作。
+錯誤位址將處理ISP傳回的退信。 該程式將分析不同的SMTP錯誤代碼，並根據RegEx標準套用正確的動作。
 
-例如，电子邮件地址由ISP发送反馈“550用户未知”。 此错误代码由Adobe Campaign错误地址(returnpath address)处理。 然后，将该错误与RegEx标准进行比较，并应用正确的规则。 该电子邮件被视为 *硬退回* （与类型匹配），然后 *用户未知* （与原因匹配），并在第一个循环进入系统后在隔离中推送。
+例如，電子郵件地址有由ISP傳送的意見反應「550使用者未知」。 此錯誤碼會由Adobe Campaign錯誤位址（returnpath位址）處理。 然後將此錯誤與RegEx標準進行比較，並套用正確的規則。 會將電子郵件視為 *硬跳出* （符合型別），然後 *使用者不明* （符合原因）並在第一個回圈進入系統後於隔離區中推送。
 
-### Adobe Campaign是如何管理的？
+### Adobe Campaign如何管理該功能？
 
-Adobe Campaign通过错误类型与原因之间的匹配来管理此流程：
+Adobe Campaign會透過錯誤型別和原因的相符專案來管理此程式：
 
-* **[!UICONTROL User Unknown]**:语法正确但不存在的地址。 此错误会被分类为硬退回，并在第一个错误内推送到隔离。
-* **[!UICONTROL Mailbox full]**:已达到最大容量的邮箱。 此错误还可能表示用户不再使用此邮箱。 此错误会被分类为软退件，并在第三个错误内推入隔离，并在30天后从隔离中删除。
-* **[!UICONTROL Inactive User]**:由于用户在过去6个月中处于非活动状态，ISP已停用该邮箱。 此错误会被分类为软退件，并在第三个错误内推送到隔离。
-* **[!UICONTROL Invalid domain]**:电子邮件地址中的域不存在。 此错误会被分类为软退件，并在第三个错误内推送到隔离。
-* **[!UICONTROL Refused]**:ISP拒绝向其用户发送电子邮件。 此错误会被分类为软退件，并且不会被推送到隔离，因为错误未链接到电子邮件地址，而是IP或/域名声誉。
+* **[!UICONTROL User Unknown]**：語法正確但不存在的位址。 此錯誤會分類為硬退回，並在第一次錯誤時推送至隔離區。
+* **[!UICONTROL Mailbox full]**：已達到最大容量的信箱。 此錯誤也可能表示使用者已不再使用此信箱。 此錯誤會分類為軟退信，並在第三個錯誤中被推送至隔離區，並在30天後從隔離區中移除。
+* **[!UICONTROL Inactive User]**：由於過去6個月內有非作用中使用者，ISP已停用信箱。 此錯誤會分類為軟退信，並在第三個錯誤中推送至隔離區。
+* **[!UICONTROL Invalid domain]**：電子郵件地址中的網域不存在。 此錯誤會分類為軟退信，並在第三個錯誤中推送至隔離區。
+* **[!UICONTROL Refused]**：ISP拒絕傳送電子郵件給使用者。 此錯誤會分類為軟退信，不會推送至隔離區，因為錯誤並未連結至電子郵件地址，只是IP或/網域信譽。
 
 >[!NOTE]
 >
->要了解有关投放失败类型和原因的更多信息，请参阅此 [部分](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>若要進一步瞭解傳送失敗型別和原因，請參閱本節 [區段](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
-## 投放能力实例 {#deliveratbility-env}
+## 傳遞能力執行個體 {#deliveratbility-env}
 
-MX规则和跳出规则的每日更新由客户端实例中的特定工作流管理，该工作流已连接到这些规则的可交付性实例所有者。
+MX規則和退回規則的每日更新是由使用者端執行個體中的特定工作流程管理，該工作流程會連線到這些規則的Deliverability執行個體擁有者。
 
-此每日更新针对所有希望通过透明度流程使其实例保持最新的客户。
+此每日更新正在執行中，適用於希望透過透明程式保持其執行個體最新狀態的所有使用者端。
 
-MX规则具有6个不同的吞吐量级别，这些级别主要用于启动过程：
+MX規則有6個不同的輸送量層級，主要用於提升程式期間：
 
 ![](assets/mx-rules-throughput.png)
 
-自定义模式适用于希望设置自己MX规则的高级客户端。 激活自定义模式后，可交付性实例不会更新客户端，因为同步将关闭。
+自訂模式適用於想要設定自己MX規則的進階使用者端。 當啟動自訂模式時，使用者端將不會由傳遞能力執行個體更新，因為同步將會關閉。
 
-## 跳出示例
+## 跳出範例
 
-* **用户未知** （硬退回）：550 5.1.1 ...用户未知{mx003}
-* **邮箱已满** （软跳出）：550 5.2.2超出用户配额
-* **非活动邮箱** （软跳出）：550 5.7.1 :收件人地址被拒绝：不活动的MailBox，不超过6个月
-* **域无效** （软跳出）：“ourdan.com”的DNS查询失败
-* **已拒绝** （软跳出）：入站电子邮件退回（规则“Feedback_loop_Hotmail”与此退回相匹配）
-* **不可访问** （软跳出）：421 4.16.55 [TS01] 由于用户投诉过多，x.x.x.x中的消息会暂时延迟
+* **使用者不明** （硬跳出）：550 5.1.1 ...使用者未知{mx003}
+* **郵箱已滿** （軟退回）：超過550 5.2.2使用者配額
+* **非使用中信箱** （軟退信）： 550 5.7.1 ：收件者地址已拒絕：非作用中MailBox，未超過6個月重複傳送
+* **網域無效** （軟退信）：「ourdan.com」的DNS查詢失敗
+* **已拒絕** （軟退信）：傳入電子郵件退信（規則「Feedback_loop_Hotmail」符合此退信）
+* **無法聯絡** （軟退回）：421 4.16.55 [TS01] 來自x.x.x.x的訊息因使用者過多投訴而暫時延遲
 
 **相关主题：**
-* [MX配置](../../installation/using/email-deliverability.md#mx-configuration)
-* [技术电子邮件配置](../../installation/using/email-deliverability.md)
-* [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
-* [Campaign Classic — 技术Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)
+* [MX設定](../../installation/using/email-deliverability.md#mx-configuration)
+* [技術電子郵件設定](../../installation/using/email-deliverability.md)
+* [瞭解傳遞失敗](../../delivery/using/understanding-delivery-failures.md)
+* [Campaign Classic — 技術Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

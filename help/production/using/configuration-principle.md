@@ -3,12 +3,12 @@ product: campaign
 title: 配置原则
 description: 配置原则
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 03d7e579-8678-44b8-bbe7-cf4204bffb25
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 4%
@@ -19,29 +19,29 @@ ht-degree: 4%
 
 
 
-Adobe Campaign平台基于实例的概念，与Apache使用的虚拟主机的概念类似。 此操作模式允许您通过为服务器分配多个实例来共享服务器。 实例彼此完全分离，并使用它们自己的数据库和配置文件运行。
+Adobe Campaign平台以例項概念為基礎，類似於Apache使用的虛擬主機。 此作業模式可讓您透過指派多個執行個體來共用伺服器。 執行個體彼此完全分開，並使用自己的資料庫和組態檔進行操作。
 
-对于给定服务器，有两个元素对于所有Adobe Campaign实例都是通用的：
+對於指定的伺服器，有兩個元素是所有Adobe Campaign執行個體共同的：
 
-* 的 **内部** 密码：这是一般管理员密码。 它对特定应用程序服务器的所有实例都是通用的。
+* 此 **內部** 密碼：這是一般管理員密碼。 它對於特定應用程式伺服器的所有執行個體都是通用的。
 
    >[!IMPORTANT]
    >
-   >要使用 **内部** 标识符，您需要事先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+   >若要使用 **內部** 識別碼，您必須預先定義密碼。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
-* 多种技术服务器配置：这些配置在实例的特定配置中都可能会过载。
+* 多個技術伺服器設定：在執行個體的特定設定中，這些設定都可多載。
 
-配置文件保存在 **conf** 安装目录的目录。 配置分为三个文件：
+組態檔案會儲存在 **conf** 安裝目錄的目錄。 此設定分為三個檔案：
 
-* **serverConf.xml**:所有实例的整体配置。
-* **配置 —**`<instance>`**.xml** (其中 **`<instance>`** 是实例名称):实例的特定配置。
-* **serverConf.xml.diff**:初始配置与当前配置之间的增量。 此文件由应用程序自动生成，不得手动修改。 它用于在更新内部版本时自动传播用户修改。
+* **serverConf.xml**：所有執行個體的整體設定。
+* **config-**`<instance>`**.xml** (其中 **`<instance>`** 執行個體名稱)：執行個體的特定設定。
+* **serverConf.xml.diff**：初始設定和目前設定之間的差值。 此檔案由應用程式自動產生，且不得手動修改。 它用於在更新組建版本時自動傳播使用者修改。
 
-实例配置的加载方式如下：
+執行個體設定載入如下：
 
-* 模块加载 **serverConf.xml** 文件以获取所有实例共享的参数。
-* 然后加载 **配置 —**`<instance>`**.xml** 文件。 与 **serverConf.xml**.
+* 模組載入 **serverConf.xml** 檔案來取得所有例證共用的引數。
+* 然後載入 **config-**`<instance>`**.xml** 檔案。 此檔案中的值優先順序高於中包含的值 **serverConf.xml**.
 
-   这两个文件的格式相同。 中的任意值 **serverConf.xml** 对于中的给定实例，可能会过载 **配置 — `<instance>`.xml** 文件。
+   這兩個檔案的格式相同。 中的任何值 **serverConf.xml** 可以在的指定執行個體中多載 **config-`<instance>`.xml** 檔案。
 
-此操作模式为配置提供了极大的灵活性。
+此作業模式為設定提供絕佳的彈性。

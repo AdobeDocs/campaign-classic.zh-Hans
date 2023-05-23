@@ -3,12 +3,12 @@ product: campaign
 title: 密码丢失
 description: 密码丢失
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 8%
@@ -19,55 +19,55 @@ ht-degree: 8%
 
 
 
-您可以更改或恢复丢失的密码。
-有两种可能的情况：
+您可以變更或復原遺失的密碼。
+有兩種可能的情況：
 
-* [Adobe Campaign运算符丢失密码](#password-lost-by-campaign-operator)
-* [内部密码丢失](#internal-password-lost) （仅限内部部署客户）
+* [Adobe Campaign運運算元遺失密碼](#password-lost-by-campaign-operator)
+* [內部密碼遺失](#internal-password-lost) （僅限內部部署客戶）
 
-## Campaign操作员丢失密码 {#password-lost-by-campaign-operator}
+## Campaign運運算元遺失密碼 {#password-lost-by-campaign-operator}
 
-如果Adobe Campaign运算符丢失其密码，您可以更改它。
+如果Adobe Campaign運運算元遺失密碼，您可以加以變更。
 为此请执行以下操作步骤：
 
-1. 通过具有管理员权限的运算符进行连接。
-1. 右键单击运算符。
+1. 透過具有管理員許可權的操作者連線。
+1. 以滑鼠右鍵按一下運運算元。
 1. 选择 **[!UICONTROL Actions]** > **[!UICONTROL Reset password]**.
 
    ![](assets/operator-passwd.png)
 
-1. 设置操作员的新密码。 我们建议操作员在首次重新连接时更改其密码。
+1. 設定運運算元的新密碼。 建議操作員在第一次重新連線時變更密碼。
 
-## 内部密码丢失 {#internal-password-lost}
+## 內部密碼遺失 {#internal-password-lost}
 
 >[!NOTE]
 >
->此部分仅适用于内部部署客户。
+>本節內容僅適用於內部部署客戶。
 
-如果内部密码丢失，则必须重新初始化它。
-要执行此操作，请应用以下过程：
+如果內部密碼遺失，您必須重新初始化它。
+要執行此操作，請套用下列程式：
 
-1. 编辑 **/usr/local/neolane/nl6/conf/serverConf.xml** 文件。
+1. 編輯 **/usr/local/neolane/nl6/conf/serverConf.xml** 檔案。
 
-1. 转到 **internalPassword** 行。
+1. 前往 **internalPassword** 行。
 
    ```
    <!-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword="myPassword"/>
    ```
 
-1. 删除带引号的字符串，在此例中为： **myPassword**
+1. 刪除引號中的字串，在此案例中為： **myPassword**
 
-   因此，可获得以下行：
+   因此，您將獲得以下行：
 
    ```
    !-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword=""/
    ```
 
-1. 保存更改并关闭文件。
+1. 儲存變更並關閉檔案。
 
-1. 配置新密码。 为此，请输入以下命令：
+1. 設定新密碼。 要執行此操作，請輸入下列命令：
 
    ```
    nlserver config -internalpassword
@@ -79,4 +79,4 @@ ht-degree: 8%
    Confirmation 
    ```
 
-1. 现在，您可以使用新密码连接 **内部** 模式。
+1. 您現在可以使用新密碼進行連線 **內部** 模式。

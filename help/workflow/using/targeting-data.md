@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: 定位数据
-description: 了解有关在工作流中定位数据的更多信息
+description: 進一步瞭解在工作流程中鎖定目標資料
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1922'
 ht-degree: 3%
 
 ---
@@ -20,242 +20,242 @@ ht-degree: 3%
 
 ### 选择数据 {#selecting-data}
 
-A **[!UICONTROL Query]** 活动允许您选择基本数据以构建目标群体。 有关更多信息，请参阅 [创建查询](query.md#creating-a-query).
+A **[!UICONTROL Query]** 活動可讓您選取基本資料來建立目標母體。 有關詳細資訊，請參閱 [建立查詢](query.md#creating-a-query).
 
-您还可以使用以下活动来查询和优化来自数据库的数据： [增量查询](incremental-query.md), [读取列表](read-list.md).
+您也可以使用下列活動來查詢及調整資料庫中的資料： [增量查詢](incremental-query.md)， [讀取清單](read-list.md).
 
-可以收集要在整个工作流生命周期中转发和处理的其他数据。 有关更多信息，请参阅 [添加数据](query.md#adding-data) 和 [编辑其他数据](#editing-additional-data).
+可以在整個工作流程的生命週期中收集要轉送和處理的其他資料。 有關詳細資訊，請參閱 [新增資料](query.md#adding-data) 和 [編輯其他資料](#editing-additional-data).
 
-### 编辑其他数据 {#editing-additional-data}
+### 編輯其他資料 {#editing-additional-data}
 
-添加附加数据后，您可以对其进行编辑或使用它来优化查询活动中定义的目标。
+新增其他資料後，您可以編輯該資料，或使用它來調整查詢活動中定義的目標。
 
-的 **[!UICONTROL Edit additional data...]** 利用链接，可查看添加的数据并对其进行修改或添加到其中。
+此 **[!UICONTROL Edit additional data...]** 連結可讓您檢視新增的資料、修改或新增至其中。
 
 ![](assets/wf_add_data_edit_link.png)
 
-要向之前定义的输出列添加数据，请在可用字段列表中选择该数据。 要创建新的输出列，请单击 **[!UICONTROL Add]** 图标，然后选择字段并单击 **[!UICONTROL Edit expression]**.
+若要將資料新增至先前定義的輸出欄，請在可用欄位清單中選取該資料。 若要建立新的輸出欄，請按一下 **[!UICONTROL Add]** 圖示，然後選取欄位並按一下 **[!UICONTROL Edit expression]**.
 
 ![](assets/query_add_an_output_column.png)
 
-为要添加的字段定义计算模式，例如聚合。
+為要新增的欄位定義計算模式，例如彙總。
 
 ![](assets/query_add_an_output_column_formula.png)
 
-的 **[!UICONTROL Add a sub-item]** 选项允许您将计算数据附加到集合。 这允许您从集合中选择附加数据，或定义集合元素的聚合计算。
+此 **[!UICONTROL Add a sub-item]** 選項可讓您將計算資料附加至集合。 這可讓您從收集中選取額外資料，或定義收集要素的彙總計算。
 
 ![](assets/query_add_columns_subscription_sub-element.png)
 
-子元素将显示在它们映射到的集合的子树中。
+子元素會顯示在它們對應之集合的子樹狀結構中。
 
-收藏集显示在 **[!UICONTROL Collections]** 子选项卡。 您可以通过单击 **[!UICONTROL Detail]** 图标。 过滤器向导允许您选择收集的数据并指定要应用于集合中数据的过滤条件。
+集合顯示在 **[!UICONTROL Collections]** 子標籤。 您可以按一下 **[!UICONTROL Detail]** 圖示來尋找已選取的集合。 篩選精靈可讓您選取收集的資料，並指定要套用至集合中資料的篩選條件。
 
 ![](assets/query_add_columns_collection.png)
 
-### 使用附加数据优化目标 {#refining-the-target-using-additional-data}
+### 使用其他資料縮小目標範圍 {#refining-the-target-using-additional-data}
 
-通过收集的附加数据，可以优化数据库中的数据过滤。 为此，请单击 **[!UICONTROL Refine the target using additional data...]** 链接：这样，您就可以对添加的数据进行过滤。
+收集的其他資料可讓您調整資料庫中的資料篩選。 若要這麼做，請按一下 **[!UICONTROL Refine the target using additional data...]** 連結：這可讓您對新增的資料進行過度篩選。
 
 ![](assets/wf_add_data_use_additional_data.png)
 
-### 数据均匀化 {#homogenizing-data}
+### 同質化資料 {#homogenizing-data}
 
-在 **[!UICONTROL Union]** 或 **[!UICONTROL Intersection]** 类型活动时，您可以选择仅保留共享的附加数据以保持数据一致。 在这种情况下，此活动的临时输出工作表将仅包含所有集客集中找到的附加数据。
+在 **[!UICONTROL Union]** 或 **[!UICONTROL Intersection]** 型別活動，您可以選擇僅保留共用的其他資料，以保持資料的一致性。 在此情況下，此活動的暫時輸出工作表將僅包含所有入站集中找到的其他資料。
 
 ![](assets/option-common_additionnal_col_only.png)
 
-### 与其他数据协调 {#reconciliation-with-additional-data}
+### 與其他資料協調 {#reconciliation-with-additional-data}
 
-在数据协调阶段(**[!UICONTROL Union]**, **[!UICONTROL Intersection]**&#x200B;等。 活动)，则可以从其他列中选择要用于数据协调的列。 为此，请针对所选列配置协调并指定主集。 然后，选择窗口下列中的列，如以下示例所示：
+在資料協調階段期間(**[!UICONTROL Union]**， **[!UICONTROL Intersection]**&#x200B;等。 活動)，則可從其他欄中選取要用於資料協調的欄。 要執行此操作，請在選取的欄上設定調解，並指定主集。 然後選取視窗下方欄中的欄，如下列範例所示：
 
 ![](assets/select-column-and-join.png)
 
-### 创建子集 {#creating-subsets}
+### 建立子集 {#creating-subsets}
 
-的 **[!UICONTROL Split]** 活动允许您根据通过提取查询定义的标准创建子集。 对于每个子集，在编辑群体的筛选条件时，您将访问标准查询活动，该活动允许您定义目标分段条件。
+此 **[!UICONTROL Split]** 活動可讓您根據透過擷取查詢定義的條件建立子集。 對於每個子集，當您編輯母體的篩選條件時，您將存取可讓您定義目標細分條件的標準查詢活動。
 
-您可以将目标分割成多个子集，只使用附加数据作为筛选条件，或者除了目标数据之外，还使用附加数据。 如果您购买了 **联合数据访问** 选项。
+您僅可使用其他資料作為篩選條件或目標資料以外的資料，將目標分割成數個子集。 如果您已購買 **同盟資料存取** 選項。
 
-有关更多信息，请参阅 [使用拆分活动创建子集](#creating-subsets-using-the-split-activity).
+有關詳細資訊，請參閱 [使用分割活動建立子集](#creating-subsets-using-the-split-activity).
 
-## 区段数据 {#segmenting-data}
+## 區段資料 {#segmenting-data}
 
-### 合并多个目标（并集） {#combining-several-targets--union-}
+### 結合數個目標（聯集） {#combining-several-targets--union-}
 
-利用并集活动，可在一个过渡中合并多个活动的结果。 集不一定必须是同质的。
+聯合活動可讓您在一個轉變中結合多個活動的結果。 集合不一定要是同質的。
 
 ![](assets/join_reconciliation_options.png)
 
-以下数据协调选项可用：
+下列資料調解選項可供使用：
 
 * **[!UICONTROL Keys only]**
 
-   如果输入群体是同质的，则可以使用此选项。
+   如果輸入母體是同質的，則可以使用此選項。
 
 * **[!UICONTROL All columns in common]**
 
-   利用此选项，可根据目标各种群体共有的所有列协调数据。
+   此選項可讓您根據目標各種母體共有的所有欄來調解資料。
 
-   Adobe Campaign根据列的名称来标识列。 接受容差阈值：例如，“电子邮件”列可被识别为与“@email”列相同。
+   Adobe Campaign會根據欄的名稱來識別欄。 可接受容許度臨界值：例如，「電子郵件」欄可識別為與「@email」欄相同。
 
 * **[!UICONTROL A selection of columns]**
 
-   选择此选项可定义要应用数据协调之列的列表。
+   選取此選項可定義將套用資料協調的欄清單。
 
-   首先，选择主集（包含源数据的集），然后选择要用于连接的列。
+   首先，選取主集（包含來源資料的主集），然後選取要用於聯結的欄。
 
    ![](assets/join_reconciliation_options_01.png)
 
    >[!CAUTION]
    >
-   >在数据协调期间，不会删除重复的群体。
+   >在資料協調期間，母體不會進行重複資料刪除。
 
-   您可以将群体大小限制为给定数量的记录。 为此，请单击相应的选项并指定要保留的记录数。
+   您可以將母體大小限製為指定的記錄數。 若要這麼做，請按一下適當的選項，並指定要保留的記錄數。
 
-   此外，指定集客群体的优先级：窗口的下部列出并集活动的集客过渡，并允许您使用窗口右侧的蓝色箭头对它们进行排序。
+   此外，指定入站母體的優先順序：視窗下方會列出聯合活動的入站轉變，並讓您使用視窗右側的藍色箭頭來排序它們。
 
-   将首先从列表中第一个集客过渡的群体中获取记录，如果未达到最大值，则将从第二个集客过渡的群体中获取记录，等等。
+   記錄會先從清單中第一個入站轉變的母體中取得，然後，如果尚未達到最大值，則會從第二個入站轉變的母體中取得，依此類推。
 
    ![](assets/join_limit_nb_priority.png)
 
-### 提取关节数据（交集） {#extracting-joint-data--intersection-}
+### 擷取結合點資料（交集） {#extracting-joint-data--intersection-}
 
 ![](assets/traitements.png)
 
-利用交集，可仅恢复集客过渡群体共享的线条。 此活动的配置应与工会活动类似。
+交集可讓您僅復原入站轉變母體共用的線。 此活動的設定方式應類似聯合活動。
 
-此外，可以仅保留一些列选项，或仅保留集客群体共享的列。
+此外，可能只會保留選定的欄，或僅保留入站母體共用的欄。
 
-有关交集活动的详情，请参阅 [交集](intersection.md) 中。
+有關交集活動的詳情，請參閱 [交集](intersection.md) 區段。
 
-### 排除群体（排除） {#excluding-a-population--exclusion-}
+### 排除人口（排除） {#excluding-a-population--exclusion-}
 
-利用排除活动，可从其他目标群体中排除目标的元素。 此活动的输出定向维度将为主集的维度。
+排除活動可讓您從不同的目標母體中排除目標元素。 此活動的輸出目標維度將是主要集的輸出目標維度。
 
-必要时，可以处理集客表。 事实上，要从其他维度中排除某个目标，必须将此目标返回到与主目标相同的定向维度。 为此，请单击 **[!UICONTROL Add]** 按钮并指定维度更改条件。
+必要時，可以操控傳入表格。 事實上，若要從其他維度排除目標，此目標必須傳回至與主要目標相同的目標維度。 若要這麼做，請按一下 **[!UICONTROL Add]** 按鈕並指定維度變更條件。
 
-通过标识符、更改轴或连接执行数据协调。 例如 [使用列表中的数据：读取列表](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
+資料協調會透過識別碼、變更軸或連線來執行。 以下提供範例： [使用清單中的資料：讀取清單](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
-### 使用拆分活动创建子集 {#creating-subsets-using-the-split-activity}
+### 使用「分割」活動建立子集 {#creating-subsets-using-the-split-activity}
 
-的 **[!UICONTROL Split]** 活动是一种标准活动，允许您通过一个或多个筛选维度创建所需数量的集，以及为每个子集生成一个输出过渡或一个唯一过渡。
+此 **[!UICONTROL Split]** 活動是標準活動，可讓您透過一或多個篩選維度來建立所需數量的集合，並為每個子集產生一個輸出轉變或產生唯一轉變。
 
-由集客过渡传送的附加数据可用于筛选条件。
+入站轉變所傳達的其他資料可用於篩選條件中。
 
-要对其进行配置，您首先需要选择以下标准：
+若要進行設定，您必須先選取條件：
 
-1. 在您的工作流中，拖放 **[!UICONTROL Split]** 活动。
-1. 在 **[!UICONTROL General]** 选项卡，选择所需的选项： **[!UICONTROL Use data from the target and additional data]**, **[!UICONTROL Use the additional data only]** 或 **[!UICONTROL Use external data]**.
-1. 如果 **[!UICONTROL Use data from the target and additional data]** 选项时，利用定向维度可使用集客过渡传送的所有数据。
+1. 在工作流程中，拖放 **[!UICONTROL Split]** 活動。
+1. 在 **[!UICONTROL General]** 索引標籤中，選取所需的選項： **[!UICONTROL Use data from the target and additional data]**， **[!UICONTROL Use the additional data only]** 或 **[!UICONTROL Use external data]**.
+1. 如果 **[!UICONTROL Use data from the target and additional data]** 選項經已選取，而目標維度可讓您使用入站轉變所傳達的所有資料。
 
    ![](assets/split-general-tab-options.png)
 
-   在创建子集时，会使用上述筛选参数。
+   建立子集時，會使用上述篩選引數。
 
-   要定义筛选条件，请选择 **[!UICONTROL Add a filtering condition on the inbound population]** 选项，然后单击 **[!UICONTROL Edit...]** 链接。 然后，指定用于创建此子集的筛选条件。
+   若要定義篩選條件，請選擇 **[!UICONTROL Add a filtering condition on the inbound population]** 選項，然後按一下 **[!UICONTROL Edit...]** 連結。 然後指定建立此子集的篩選條件。
 
    ![](assets/split-subset-config-all-data.png)
 
-   显示如何在 **[!UICONTROL Split]** 将目标细分为不同群体的活动，如 [此部分](cross-channel-delivery-workflow.md).
+   顯示如何使用中篩選條件的範例 **[!UICONTROL Split]** 將目標區隔成不同母體的活動詳見 [本節](cross-channel-delivery-workflow.md).
 
-   的 **[!UICONTROL Label]** 字段中，您可以为新创建的子集指定一个名称，该名称将匹配叫客过渡。
+   此 **[!UICONTROL Label]** 欄位可讓您為新建立的子集命名，這會符合出站轉變。
 
-   您还可以为子集分配段码以识别该子集，并使用该子集来定位其群体。
+   您也可以將區段代碼指派給子集，以識別該子集並使用它來定位其母體。
 
-   如有必要，您可以针对要创建的每个子集分别更改定位和筛选维度。 为此，请编辑子集的筛选条件并检查 **[!UICONTROL Use a specific filtering dimension]** 选项。
+   如有必要，您可以針對要建立的每個子集個別變更目標定位和篩選維度。 若要這麼做，請編輯子集的篩選條件，並檢查 **[!UICONTROL Use a specific filtering dimension]** 選項。
 
    ![](assets/split-subset-config-specific-filtering.png)
 
-1. 如果 **[!UICONTROL Use the additional data only]** 选项，则仅提供用于子集筛选的附加数据。
+1. 如果 **[!UICONTROL Use the additional data only]** 選項，則只提供其他資料用於子集篩選。
 
    ![](assets/split-subset-config-additional-data-only.png)
 
-1. 如果 **联合数据访问** 选项，则 **[!UICONTROL Use external data]** 允许您处理已配置的外部数据库中的数据，或创建与数据库的新连接。
+1. 如果 **同盟資料存取** 選項已啟用， **[!UICONTROL Use external data]** 可讓您在已設定的外部資料庫中處理資料，或建立與資料庫的新連線。
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   有关更多信息，请根据您的Campaign版本，参阅以下章节：
+   如需詳細資訊，請根據您的Campaign版本，參閱下列章節：
 
    ![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文档](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=en)
+   ![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
 
-然后，我们需要添加新子集：
+然後，我們需要新增子集：
 
-1. 单击 **[!UICONTROL Add]** 按钮并定义筛选条件。
+1. 按一下 **[!UICONTROL Add]** 按鈕並定義篩選條件。
 
    ![](assets/wf_split_add_a_tab.png)
 
-1. 在 **[!UICONTROL General]** 选项卡（请参阅上文）。默认情况下，它适用于所有子集。
+1. 在中定義篩選維度 **[!UICONTROL General]** 索引標籤的活動（請參閱上文）。依預設，其會套用至所有子集。
 
    ![](assets/wf_split_edit_filtering.png)
 
-1. 如有必要，您可以单独更改每个子集的过滤维度。 这样，您就可以为所有金牌卡持有者构建一个集，一个用于点击最新新闻稿的所有收件人，另一个用于18至25岁在过去30天内进行店内购买的人员，所有这些人都使用相同的拆分活动。 为此，请选择 **[!UICONTROL Use a specific filtering dimension]** 选项，然后选择数据过滤上下文。
+1. 如有必要，您可以個別變更每個子集的篩選維度。 這可讓您為所有金卡持有者建立一組檔案，一個檔案用於所有點按了最新電子報的收件者，第三個檔案用於過去30天內於店內購買的18至25歲人士，所有檔案都使用相同的分割活動。 若要這麼做，請選取 **[!UICONTROL Use a specific filtering dimension]** 選項並選取資料篩選內容。
 
    ![](assets/wf_split_change_dimension.png)
 
    >[!NOTE]
    >
-   >如果您已获得 **联合数据访问** 选项，您可以根据外部库中的信息创建子集。 为此，请在 **[!UICONTROL Targeting dimension]** 字段。 有关更多信息，请参阅 [访问外部数据库(FDA)](accessing-an-external-database--fda-.md).
+   >如果您已取得 **同盟資料存取** 選項，您可以根據外部基底中的資訊建立子集。 若要這麼做，請選取外部表格的綱要 **[!UICONTROL Targeting dimension]** 欄位。 有關詳細資訊，請參閱 [存取外部資料庫(FDA)](accessing-an-external-database--fda-.md).
 
-创建子集后，默认情况下，拆分活动会显示与有子集一样多的输出过渡：
+建立子集後，分割活動預設會顯示與子集一樣多的輸出轉變：
 
 ![](assets/wf_split_multi_outputs.png)
 
-您可以将所有这些子集分组到一个输出过渡中。 在这种情况下，指向相应子集的链接将在段代码中可见，例如。 为此，请选择 **[!UICONTROL Generate all subsets in the same table]** 选项。
+您可以將所有這些子集群組成一個輸出轉變。 在此情況下，個別子集的連結將顯示在區段代碼中，例如。 若要這麼做，請選取 **[!UICONTROL Generate all subsets in the same table]** 選項。
 
 ![](assets/wf_split_select_option_single_output.png)
 
-例如，您可以放置单个投放活动，并根据每个收件人集的段码对投放内容进行个性化：
+例如，您可以放置單一傳遞活動，並根據每個收件者集的區段代碼來個人化傳遞內容：
 
 ![](assets/wf_split_single_output.png)
 
-还可以使用 **[!UICONTROL Cells]** 活动。 有关更多信息，请参阅 [单元格](cells.md) 中。
+您也可以使用下列專案建立子集： **[!UICONTROL Cells]** 活動。 如需詳細資訊，請參閱 [儲存格](cells.md) 區段。
 
-### 使用目标数据 {#using-targeted-data}
+### 使用目標資料 {#using-targeted-data}
 
-识别和准备数据后，即可在以下上下文中使用该数据：
+識別並準備資料後，即可在下列內容中使用：
 
-* 您可以根据各种工作流阶段中的数据操作来更新数据库中的数据。
+* 您可以在各種工作流程階段中處理資料後，更新資料庫中的資料。
 
-   欲知更多， [更新数据](update-data.md).
+   如需詳細資訊， [更新資料](update-data.md).
 
-* 您还可以刷新现有列表的内容。
+* 您也可以重新整理現有清單的內容。
 
-   有关更多信息，请参阅 [列表更新](list-update.md).
+   有關詳細資訊，請參閱 [清單更新](list-update.md).
 
-* 您可以在工作流中直接准备或开始投放。
+* 您可以直接在工作流程中準備或開始傳遞。
 
-   有关更多信息，请参阅 [投放](delivery.md), [投放控制](delivery-control.md) 和 [连续投放](continuous-delivery.md).
+   有關詳細資訊，請參閱 [傳遞](delivery.md)， [傳遞控制](delivery-control.md) 和 [持續傳遞](continuous-delivery.md).
 
 ## 数据管理 {#data-management}
 
-在Adobe Campaign中，数据管理通过提供更高效、更灵活的工具，将一组活动整合在一起，用于解决复杂的定位问题。 这样，您就可以使用与合同、订阅、对投放的反应等相关的信息，对与联系人的所有通信实施一致的管理。 通过数据管理，您可以在分段操作期间跟踪数据生命周期，特别是：
+在Adobe Campaign中，資料管理結合了一系列活動，提供更有效率、更靈活的工具來解決複雜的鎖定目標問題。 這可讓您使用合約、訂閱、傳遞再活動等相關資訊，對與連絡人的所有通訊實作一致的管理。 「資料管理」可讓您在細分作業期間追蹤資料生命週期，特別是：
 
 * 通过包括未在数据集市中建模的数据，简化及优化定位流程（创建新表：根据设定，对每个定位工作流进行本地扩展）。
 * 保留和传送缓冲区计算内容，尤其是在目标建构阶段或进行数据库管理时。
 * 访问外部数据库（可选）：在定位过程中考虑异构数据库。
 
-为实施这些操作，Adobe Campaign提供：
+為了實作這些作業，Adobe Campaign提供：
 
-* 数据收集活动： [文件传输](file-transfer.md), [数据加载（文件）](data-loading--file-.md), [数据加载(RDBMS)](data-loading--rdbms-.md), [更新数据](update-data.md). 收集数据的第一步是准备数据，以便在其他活动中对其进行处理。 需要监控多个参数，以确保工作流正确执行并提供预期结果。 例如，在导入数据时，此数据的主键(Pkey)对于每个记录必须是唯一的。
-* 使用数据管理选项丰富了定位活动： [查询](query.md), [并集](union.md), [交集](intersection.md), [拆分](split.md). 这允许您在多个不同定向维度的数据之间配置并集或交集，但前提是可以进行数据协调。
-* 数据转换活动： [扩充](enrichment.md), [更改维度](change-dimension.md).
+* 資料收集活動： [檔案傳輸](file-transfer.md)， [資料載入（檔案）](data-loading--file-.md)， [資料載入(RDBMS)](data-loading--rdbms-.md)， [更新資料](update-data.md). 收集資料的第一步是準備資料，以便在其他活動中處理。 為了確保工作流程正確執行並提供預期結果，需要監控數個引數。 例如，當您匯入資料時，此資料的主索引鍵(Pkey)對於每個記錄必須是唯一的。
+* 目標定位活動已新增資料管理選項： [查詢](query.md)， [聯集](union.md)， [交集](intersection.md)， [Split](split.md). 這可讓您在數個不同目標維度的資料之間設定聯合或交集，前提是資料協調可行。
+* 資料轉換活動： [擴充](enrichment.md)， [變更維度](change-dimension.md).
 
 >[!CAUTION]
 >
->当链接两个工作流时，删除源表元素并不意味着链接到该工作流的所有数据都会被删除。
+>連結兩個工作流程時，刪除來源表格元素並不表示刪除連結至該元素的所有資料。
 >  
->例如，通过工作流删除收件人不会导致删除该收件人的所有投放历史记录。 但是，直接在“收件人”文件夹中删除收件人确实会删除与此收件人关联的所有数据。
+>例如，透過工作流程刪除收件者並不會導致所有收件者的傳遞歷史記錄遭到刪除。 不過，直接在「收件者」資料夾中刪除收件者，實際上會導致連結至此收件者的所有資料都遭到刪除。
 
-### 丰富和修改数据 {#enriching-and-modifying-data}
+### 豐富及修改資料 {#enriching-and-modifying-data}
 
-除了定向维度之外，您还可以通过筛选维度指定收集数据的性质。 请参阅 [定位和筛选维度](building-a-workflow.md#targeting-and-filtering-dimensions).
+除了目標維度，篩選維度也可讓您指定所收集資料的性質。 請參閱 [目標定位和篩選維度](building-a-workflow.md#targeting-and-filtering-dimensions).
 
-可以扩充、聚合和操作所识别和收集的数据以优化目标结构。 为此，除了 [对数据分段](#segmenting-data) 部分，请使用以下代码：
+已識別和收集的資料可以擴充、彙總和操作，以最佳化目標建構。 若要這麼做，除了在中詳述的資料操作活動外， [將資料分段](#segmenting-data) 區段，使用下列專案：
 
-* 的 **[!UICONTROL Enrichment]** 活动允许您向架构中添加列，以及向特定元素添加信息。 详见 [扩充](enrichment.md) 活动存储库的部分。
-* 的 **[!UICONTROL Edit schema]** 活动允许您修改架构的结构。 详见 [编辑架构](edit-schema.md) 活动存储库的部分。
-* 的 **[!UICONTROL Change dimension]** 活动允许您在目标构建周期中更改目标维度。 详见 [更改维度](change-dimension.md) 中。
+* 此 **[!UICONTROL Enrichment]** 活動可讓您暫時新增欄到結構描述，以及向特定元素新增資訊。 其詳細資訊請參閱 [擴充](enrichment.md) 活動存放庫中的區段。
+* 此 **[!UICONTROL Edit schema]** 活動可讓您修改綱要的結構。 其詳細資訊請參閱 [編輯結構描述](edit-schema.md) 活動存放庫中的區段。
+* 此 **[!UICONTROL Change dimension]** 活動可讓您在目標建構週期中變更目標維度。 其詳細資訊請參閱 [變更維度](change-dimension.md) 區段。

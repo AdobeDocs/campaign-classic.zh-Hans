@@ -3,12 +3,12 @@ product: campaign
 title: 维护类型
 description: 维护类型
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 2%
@@ -19,69 +19,69 @@ ht-degree: 2%
 
 
 
-## 应用程序维护 {#application-maintenance}
+## 應用程式維護 {#application-maintenance}
 
-Adobe Campaign提供了一个内置工作流，可让您计划特定数据库维护任务：the **数据库清理工作流**. 此工作流会执行以下任务：
+Adobe Campaign提供內建的工作流程，可讓您排程特定資料庫維護任務： **資料庫清理工作流程**. 此工作流程會執行下列工作：
 
-* 删除过期记录，
-* 删除孤立记录并重新初始化过期对象的状态，
-* 更新数据库统计信息。
+* 刪除過期的記錄，
+* 刪除孤立的記錄，並重新初始化過期物件的狀態，
+* 更新資料庫統計資料。
 
 >[!IMPORTANT]
 >
->请注意，清理任务主要涉及应用程序级别维护，而不涉及RDBMS级别维护（统计更新除外）。 但是，需要对数据库执行维护操作。 即使数据库清理工作流成功运行，这并不意味着数据库已得到最佳调整。
+>請注意，清理任務主要處理應用程式層級的維護，而非RDBMS層級的維護（統計資料更新除外）。 不過，需要針對資料庫執行維護操作。 即使資料庫清理工作流程成功執行，這並不表示資料庫已最佳調整。
 
-## 技术维护 {#technical-maintenance}
+## 技術維護 {#technical-maintenance}
 
-数据库清理工作流不包含任何数据库维护工具：由您组织维护。 为此，您可以：
+資料庫清理工作流程不包含任何資料庫維護工具：您可以自行組織維護。 若要這麼做，您可以：
 
-* 与数据库管理员合作，使用第三方工具设置数据库维护，
-* 使用Adobe Campaign工作流引擎计划和跟踪这些维护活动。
+* 與您的資料庫管理員合作，使用協力廠商工具設定資料庫維護。
+* 使用Adobe Campaign工作流程引擎來排程及追蹤這些維護活動。
 
-这些维护程序必须定期执行，并应包括以下内容：
+這些維護程式必須定期執行，並應包括下列內容：
 
-* 重新索引频繁更新的表，
-* 压缩/重建表以避免碎片化。
+* 重新索引經常更新的資料表，
+* 壓縮/重建資料表以避免片段。
 
-### 维护计划 {#maintenance-schedule}
+### 維護排程 {#maintenance-schedule}
 
-您需要找到执行这些维护活动的适当插槽。 它们在运行时会严重影响数据库性能，甚至会阻止应用程序（由于锁定）。
+您需要找到適合執行這些維護活動的位置。 它們可能會嚴重影響執行時的資料庫效能，甚至封鎖應用程式（由於鎖定）。
 
-这些任务通常在低活动期间每周运行一次，不会与备份、数据重新加载或聚合计算相冲突。 有些系统的维护要求较高。
+這些工作通常會在低活動期間每週執行一次，而不會與備份、資料重新載入或彙總計算發生衝突。 有些系統受到強烈要求，需要更頻繁的維護。
 
-更深入的维护（如完整表重建）可每月执行一次，最好是在应用程序完全停止时执行，因为系统仍然不可用。
+更深入的維護（例如完整表格重新建置）可以每月執行一次，最好是讓應用程式完全停止，因為系統無論如何都無法使用。
 
-### 重建表 {#rebuilding-a-table}
+### 重建表格 {#rebuilding-a-table}
 
-提供了以下几种策略：
+有幾種策略可供使用：
 
 <table> 
  <thead> 
   <tr> 
-   <th> 操作 </th> 
+   <th> 作業 </th> 
    <th> 说明 </th> 
    <th> 好处 </th> 
-   <th> 缺点 </th> 
+   <th> 缺點 </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> 联机碎片整理<br /> </td> 
-   <td> 大多数数据库引擎提供碎片整理方法。<br /> </td> 
-   <td> 只需使用数据库碎片整理方法即可。 这些方法通常在碎片整理期间通过锁定数据来解决完整性问题。<br /> </td> 
-   <td> 根据数据库的不同，这些碎片整理方法可以作为RDBMS选项(Oracle)提供，并且并不总是处理较大表的最有效方法。<br /> </td> 
+   <td> 線上磁碟重組<br /> </td> 
+   <td> 大部分的資料庫引擎都提供磁碟重組方法。<br /> </td> 
+   <td> 只要使用資料庫磁碟重組方法即可。 這些方法通常會在磁碟重組期間鎖定資料，以解決完整性問題。<br /> </td> 
+   <td> 視資料庫而定，這些磁碟重組方法可作為RDBMS選項(Oracle)提供，而且並不總是處理大型表格的最有效率。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 转储和恢复<br /> </td> 
-   <td> 将表转储到文件中，删除数据库中的表，并从转储中恢复。<br /> </td> 
-   <td> 这是对表进行碎片整理的最简单方法。 也是数据库几乎已满时的唯一解决方案。<br /> </td> 
-   <td> 由于表被删除并重新创建，因此即使在只读模式下，应用程序也无法保持联机状态（表在恢复阶段期间不可用）。<br /> </td> 
+   <td> 傾印和還原<br /> </td> 
+   <td> 將表格傾印到檔案、刪除資料庫中的表格並從傾印還原。<br /> </td> 
+   <td> 這是重組表格的最簡單方法。 也是資料庫幾乎已滿時的唯一解決方案。<br /> </td> 
+   <td> 因為表格被刪除並重新建立，所以應用程式無法保持上線，即使是在唯讀模式（表格在還原階段無法使用）。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 复制、重命名和删除<br /> </td> 
-   <td> 这会创建表及其索引的副本，然后删除现有副本并重命名副本以替换它。<br /> </td> 
-   <td> 此方法比第一种方法速度更快，因为它生成的IO较少（没有作为文件的副本，也没有从此文件中读取）。<br /> </td> 
-   <td> 需要两倍的空间。<br /> 必须停止在进程期间写入表的所有活动进程。 但是，读取过程不会受到影响，因为表在重建后的最后时刻被交换。 <br /> </td> 
+   <td> 複製、重新命名和放置<br /> </td> 
+   <td> 這樣會建立表格及其索引的復本，然後捨棄現有的復本，並重新命名復本以取而代之。<br /> </td> 
+   <td> 此方法比第一種方法速度快，因為它產生的IO較少（沒有檔案復本且從此檔案讀取）。<br /> </td> 
+   <td> 需要兩倍的空間。<br /> 必須停止在程式期間寫入表格的所有作用中程式。 不過，讀取程式不會受到影響，因為表格在重建後的最後時刻會被交換。 <br /> </td> 
   </tr> 
  </tbody> 
 </table>

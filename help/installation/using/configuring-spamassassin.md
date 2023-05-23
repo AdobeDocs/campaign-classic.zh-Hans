@@ -3,14 +3,14 @@ product: campaign
 title: 配置 SpamAssassin
 description: 配置 SpamAssassin
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '983'
 ht-degree: 2%
 
 ---
@@ -21,61 +21,61 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->某些配置只能通过Adobe来执行由Adobe托管的部署。 例如，访问服务器和实例配置文件。 要了解有关不同部署的更多信息，请参阅 [托管模型](../../installation/using/hosting-models.md) 或 [本页](../../installation/using/capability-matrix.md).
+>部分設定只能由Adobe託管部署的Adobe執行。 例如，存取伺服器和執行個體組態檔。 若要進一步瞭解不同的部署，請參閱 [託管模型](../../installation/using/hosting-models.md) 區段或 [此頁面](../../installation/using/capability-matrix.md).
 
 ## 概述 {#overview}
 
-SpamAssassin是一款用于过滤不良电子邮件的软件。 与此软件结合使用后，Adobe Campaign可以为电子邮件分配分数，并确定在投放启动之前是否可能认为某个消息是不受欢迎的。 为此，必须在Adobe Campaign的应用程序服务器上安装和配置SpamAssassin ，并需要一定数量的附加Perl模块才能运行。
+SpamAssassin是專為篩選不良電子郵件而設計的軟體。 結合此軟體，Adobe Campaign可以為電子郵件指派分數，並在啟動傳遞前判斷訊息是否可能被視為不想要的。 為此，必須在Adobe Campaign的應用程式伺服器上安裝和設定SpamAssassin，並需要一定數量的額外Perl模組才能運作。
 
-本章所述的SpamAssassin的部署和集成基于默认软件安装，过滤和评分规则也是基于默认软件安装的，这些规则是SpamAssassin提供的，无需任何修改或优化。 得分归因和消息鉴别完全基于SpamAssassin选项的配置和过滤规则。 网络管理员负责根据公司的需求调整他们的工作。
+如本章所述，SpamAssassin的部署和整合是根據預設軟體安裝，以及篩選和評分規則，這些規則是由SpamAssassin提供，沒有任何變更或最佳化。 評分歸因和訊息資格完全以SpamAssassin選項的設定和篩選規則為基礎。 網路管理員負責根據公司的需求調整其角色。
 
 >[!IMPORTANT]
 >
->SpamAssassin对电子邮件不希望的鉴别完全基于过滤和评分规则。
+>SpamAssassin會將電子郵件限定為不受歡迎，完全是根據篩選和評分規則。
 >
->因此，必须每天至少更新一次这些规则，以便SpamAssassin安装及其与Adobe Campaign的集成能够完全正常运行，并确保在发送之前分配给投放的分数的相关性。
+>因此，這些規則必須每天至少更新一次，才能讓您的SpamAssassin安裝及其與Adobe Campaign的整合充分發揮功能，並保障在傳送前指派給您傳送的分數的相關性。
 >
->此更新由托管SpamAssassin的服务器管理员负责。
+>此更新由裝載SpamAssassin的伺服器管理員負責。
 
-在Adobe Campaign中使用SpamAssassin可指示使用SpamAssassin的邮件服务器在收到由Adobe Campaign发送的电子邮件时的可能行为。 但是，互联网提供商或在线邮件服务器的邮件服务器仍可能认为Adobe Campaign发送的邮件是不可取的。
+在Adobe Campaign中使用SpamAssassin可指出使用SpamAssassin的郵件伺服器收到Adobe Campaign傳送的電子郵件時的可能行為。 不過，網際網路提供者或線上郵件伺服器的郵件伺服器仍可能將Adobe Campaign傳送的郵件視為不想要的郵件。
 
-在Perl中部署SpamAssassin及其模块要求Adobe Campaign应用程序服务器配备通过HTTP连接（TCP/80流）进行Internet访问的功能。
+在Perl中部署SpamAssassin及其模組時，需要Adobe Campaign應用程式伺服器配備透過HTTP連線（TCP/80流量）的網際網路存取。
 
-## 在Windows计算机上安装 {#installing-on-a-windows-machine}
+## 在Windows電腦上進行安裝 {#installing-on-a-windows-machine}
 
-要在Windows上安装和配置SpamAssassin以启用与Adobe Campaign的集成，请应用以下步骤：
+若要在Windows上安裝和設定SpamAssassin以啟用與Adobe Campaign的整合，請套用下列步驟：
 
-1. 安装SpamAssassin
-1. 将SpamAssassin集成到Adobe Campaign
+1. 安裝SpamAssassin
+1. 將SpamAssassin整合至Adobe Campaign
 
-### 安装SpamAssassin {#installing-spamassassin}
+### 安裝SpamAssassin {#installing-spamassassin}
 
-1. 连接到 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 使用您的用户凭据。 了解有关Software Distribution的更多信息，请参阅 [本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans?lang=en).
-1. 下载 **Neolane Spam Assassin（Windows安装）(2.0)** 文件(neolane_spamassassin.2.0.zip)。
-1. 将此文件复制到Adobe Campaign服务器，然后解压缩。
+1. 連線至 [軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 使用您的使用者認證。 進一步瞭解中的軟體發佈 [此頁面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans).
+1. 下載 **Neolane Spam Assassin （Windows安裝） (2.0)** 檔案(neolane_spamassassin.2.0.zip)。
+1. 將此檔案複製到Adobe Campaign伺服器，然後解壓縮。
 
    >[!NOTE]
    >
-   >您可以选择根据需要解压缩文件，前提是路径由以下任意正则表达式字符组成： **`-_A-Za-z\xA0-\xFF0-9\.\%\@\=\+\,\/\\\:.`**. 安装路径不得包含任何空格字符。
+   >只要路徑是由下列任一規則運算式字元組成，您就可以選擇將檔案解壓縮： **`-_A-Za-z\xA0-\xFF0-9\.\%\@\=\+\,\/\\\:.`**. 安裝路徑不得包含任何空白字元。
 
-1. 转到已解压缩文件的文件，然后双击 **run_me.bat** 文件来启动安装脚本。
+1. 前往您解壓縮檔案的檔案，然後按兩下 **run_me.bat** 檔案啟動安裝指令碼。
 
-   如果出现Windows Shell，并且该Shell继续显示几秒钟，请等待安装和更新完成，然后单击 **输入**.
+   如果Windows Shell出現並持續顯示幾秒鐘，請等候安裝與更新完成，然後按一下 **輸入**.
 
-   如果Windows Shell在立即消失之前未显示或未显示，请执行这些步骤，双击 **portableShell.bat** 文件来显示Windows Shell，并检查Shell路径是否与 **spamassassin.zip** 文件已解压。 如果不是这种情况，请使用 **cd** 命令。
+   如果Windows Shell在立即消失之前未出現或未顯示，請依照下列步驟操作，連按兩下 **portableShell.bat** 檔案來顯示Windows Shell，並檢查Shell路徑是否對應到 **spamassassin.zip** 檔案已解壓縮。 如果不是這種情況，請使用 **cd** 命令。
 
-   输入 **run_me.bat** 然后单击 **输入** 以启动安装和更新过程。 该操作会返回以下值之一，以指示更新结果。
+   輸入 **run_me.bat** 然後按一下 **輸入** 以開始安裝和更新程式。 操作會傳回下列其中一個值，以表示更新結果。
 
-   * **0**:已进行更新。
-   * **1**:没有新更新可用。
-   * **2**:没有新更新可用。
-   * **3**:更新在先前验证期间失败。
-   * **4** 或更多：发生错误。
+   * **0**：已執行更新。
+   * **1**：沒有可用的新更新。
+   * **2**：沒有可用的新更新。
+   * **3**：在先前的驗證期間更新失敗。
+   * **4** 或更多：發生錯誤。
 
-1. 要检查SpamAssassin安装是否成功，请按照以下步骤使用GTUBE测试（未经请求的批量电子邮件的通用测试）：
+1. 若要檢查SpamAssassin安裝是否成功，請使用以下程式使用GTUBE測試（未經請求的批次電子郵件的通用測試）：
 
-   1. 创建文本文件，并将其保存在 **C:\TestSpamMail.txt**.
-   1. 在文件中插入以下内容：
+   1. 建立文字檔並將其儲存在 **C:\TestSpamMail.txt**.
+   1. 將下列內容插入檔案中：
 
       ```
       Subject: Test Spam Mail (GTUBE)
@@ -91,18 +91,18 @@ SpamAssassin是一款用于过滤不良电子邮件的软件。 与此软件结�
       XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
       ```
 
-   1. 双击 **portableShell.bat** 文件来显示Windows Shell，然后启动以下命令(或“`<root>`“ ”在解压缩时指定已创建的文件夹  **spamassassin.zip** 文件):
+   1. 連按兩下 **portableShell.bat** 檔案以顯示Windows Shell，然後啟動以下命令(或&quot;`<root>`&quot;會在解壓縮時指定建立的資料夾  **spamassassin.zip** file)：
 
       ```
        "<root>\perl\site\bin\spamassassin" "C:\TestSpamMail.txt"
       ```
 
-      此测试电子邮件的内容会触发SpamAssassin的1,000分。 这意味着，它被检测为不需要，并且安装成功并且完全正常。
+      此測試電子郵件的內容會觸發SpamAssassin的1,000分評分。 這表示偵測到它是不想要的，而且安裝成功且完全正常運作。
 
-### 将SpamAssassin集成到Adobe Campaign {#integrating-spamassassin-into-adobe-campaign}
+### 將SpamAssassin整合至Adobe Campaign {#integrating-spamassassin-into-adobe-campaign}
 
-1. 编辑 **`[INSTALL]/conf/serverConf.xml`** 文件。 中所有可用的参数 **serverConf.xml** 此 [部分](../../installation/using/the-server-configuration-file.md).
-1. 更改 **spamCheck** elements&#39; **命令** 属性 **Web** 节点。 为此，请运行以下命令：
+1. 編輯 **`[INSTALL]/conf/serverConf.xml`** 檔案。 所有引數都可在 **serverConf.xml** 列於此 [區段](../../installation/using/the-server-configuration-file.md).
+1. 變更 **垃圾郵件檢查** 元素&#39; **命令** 中的屬性 **Web** 節點。 要執行此操作，請執行以下命令：
 
    ```
    <spamCheck command='"<absolute path to the folder where you unzipped the zip file>\call_perl_with_args.bat" "<absolute path to nlserver>/spamcheck.pl"'/>
@@ -110,54 +110,54 @@ SpamAssassin是一款用于过滤不良电子邮件的软件。 与此软件结�
 
    >[!NOTE]
    >
-   >所有路径都必须是绝对路径。
+   >所有路徑都必須是絕對路徑。
 
-   停止并启动 **[!UICONTROL Adobe Campaign]** 服务。
+   停止並啟動 **[!UICONTROL Adobe Campaign]** 服務。
 
-1. 要在Adobe Campaign中检查SpamAssassin的集成，请使用GTBUE测试（未经请求的批量电子邮件的通用测试）：
+1. 若要檢查Adobe Campaign中SpamAssassin的整合，請使用GTBUE測試（未經請求的大量電子郵件的通用測試）：
 
-   双击 **portableshell.bat** 文件。 这会触发Windows Shell的显示。 然后，运行以下命令：
+   連按兩下 **portableshell.bat** 檔案。 這會觸發顯示Windows Shell。 然後執行下列命令：
 
    ```
    perl "[INSTALL]\bin\spamcheck.pl" "C:\TestSpamMail.txt"
    ```
 
-   此测试电子邮件的内容会触发由SpamAssassin分配的1,000个点数。 这意味着，它被检测为不良，在Adobe Campaign的集成成功，并且完全正常。
+   此測試電子郵件的內容會觸發SpamAssassin指派的1,000個點。 這表示系統偵測到不想要此功能，且成功整合Adobe Campaign，且可完全正常運作。
 
-1. 更新SpamAssassin过滤和评分规则
+1. 更新SpamAssassin篩選和評分規則
 
-   要初步更新过滤和评分规则，请开始 **portableShell.bat** 并运行以下命令：
-
-   ```
-   sa-update --no-gpg
-   ```
-
-   要运行过滤和评分规则的自动更新，请在计划系统任务中使用以下相同命令：
+   若要進行篩選和評分規則的初始更新，請開始 **portableShell.bat** 並執行下列命令：
 
    ```
    sa-update --no-gpg
    ```
 
-## 在Linux计算机上安装 {#installing-on-a-linux-machine}
+   若要執行篩選和評分規則的自動更新，請在排程的系統工作中使用此相同的命令：
 
-### Debian中的安装步骤 {#installation-steps-in-debian}
+   ```
+   sa-update --no-gpg
+   ```
 
-* 如有必要，请使用以下命令安装Perl和SpamAssassin:
+## 在Linux機器上安裝 {#installing-on-a-linux-machine}
+
+### Debian中的安裝步驟 {#installation-steps-in-debian}
+
+* 如有必要，請使用以下命令安裝Perl和SpamAssassin：
 
    ```
    apt-get install spamassassin libxml-writer-perl
    ```
 
-* 在 **serverConf.xml** 文件(在 `/usr/local/[INSTALL]/nl6/conf/`)，请更改 **spamCheck** 行如下：
+* 在 **serverConf.xml** 檔案(可在 `/usr/local/[INSTALL]/nl6/conf/`)，變更 **垃圾郵件檢查** 行如下：
 
    ```
    <spamCheck command="perl
    /usr/local/[NSTALL]/nl6/bin/spamcheck.pl"/>
    ```
 
-### RHEL/CentOS中的安装步骤 {#installation-steps-in-rhel-centos}
+### RHEL/CentOS中的安裝步驟 {#installation-steps-in-rhel-centos}
 
-如有必要，请安装Perl并使用CPAN恢复包：
+如有必要，請安裝Perl並使用CPAN復原套件：
 
 ```
 cpan Digest::SHA1
@@ -169,13 +169,13 @@ cpan XML::Writer
 cpan Mail::SpamAssassin
 ```
 
-### 更新过滤器规则 {#updating-filter-rules}
+### 更新篩選規則 {#updating-filter-rules}
 
-可以使用 **sa-update** 工具。 请参阅官方的SpamAssassin网站 [https://spamassassin.apache.org/](https://spamassassin.apache.org/) 以了解更多信息。
+篩選規則可以使用自動更新 **sa-update** 工具。 請參閱官方SpamAssassin網站 [https://spamassassin.apache.org/](https://spamassassin.apache.org/) 以取得詳細資訊。
 
-在Debian中，每天会自动进行更新。
+在Debian中，每天都會自動進行更新。
 
-如果情况并非如此（例如，手动安装Debian时），请创建脚本以自动更新规则。
+如果不是這種情況（例如手動安裝Debian時），請建立指令碼以自動化規則更新。
 
 ```
 !/bin/sh
@@ -183,15 +183,15 @@ test -x /usr/bin/sa-update || exit 0
 /usr/sbin/sa-update && /etc/init.d/spamassassin update
 ```
 
-将此脚本插入 **crontab** 使用以下命令：
+將此指令碼插入 **crontab** 使用下列命令：
 
 ```
 crontab-e
 ```
 
-### 性能优化 {#performance-optimization}
+### 效能最佳化 {#performance-optimization}
 
-要提高Linux中的性能，请编辑 **/etc/spamassassin/local.cf** ，并在文件末尾添加以下行：
+若要在Linux中改善效能，請編輯 **/etc/spamassassin/local.cf** 並在檔案結尾處新增下列行：
 
 ```
 dns_available no

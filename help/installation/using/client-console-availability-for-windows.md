@@ -3,12 +3,12 @@ product: campaign
 title: 适用于 Windows 的客户端控制台可用性
 description: 适用于 Windows 的客户端控制台可用性
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 4%
@@ -19,44 +19,44 @@ ht-degree: 4%
 
 
 
-要使Adobe Campaign用户能够登录到您创建和配置的实例，他们需要使用客户端控制台。
+為了讓Adobe Campaign使用者能夠登入您已建立和設定的執行個體，他們需要使用使用者端主控台。
 
-## 使客户端控制台可用
+## 讓使用者端主控台可供使用
 
-当计算机用于启动Adobe Campaign应用程序服务器(**nlserver web**)从客户端控制台接收用户连接，您可以将其配置为通过HTML界面提供Adobe Campaign富客户端的设置程序。 当客户端控制台有新版本可用时，系统会邀请用户在启动其客户端控制台时下载它。
+用來啟動Adobe Campaign應用程式伺服器的電腦時(**nlserver web**)會從使用者端主控台接收使用者連線，您可以將其設定為可透過HTML介面使用Adobe Campaign rich client的設定程式。 每當有新版本的使用者端主控台可用時，使用者就會在啟動其使用者端主控台時下載該版本。
 
-为此，您必须：
+若要這麼做，您必須：
 
-1. 选择包含控制台安装程序的包。
+1. 選取包含主控台安裝程式的套件。
 
-   此文件名为 `setup-client-7.X.XXXX.exe` 对于v7或 `setup-client-6.X.XXXX.exe` 对于v6.1，其中 `X` 是Adobe Campaign和 `XXXX` 是内部版本号。
+   此檔案名為 `setup-client-7.X.XXXX.exe` 適用於v7或 `setup-client-6.X.XXXX.exe` 適用於v6.1，其中 `X` 是Adobe Campaign的子版本，且 `XXXX` 是建置編號。
 
-1. 将此包复制并粘贴到Adobe Campaign安装文件夹（在混合安装的营销服务器上）下 **/datakit/nl/eng/jsp**.
-1. 启动Adobe Campaign服务器。
+1. 將此套件複製並貼到Adobe Campaign安裝資料夾（針對混合安裝位在Marketing伺服器上）的下方 **/datakit/nl/eng/jsp**.
+1. 啟動Adobe Campaign伺服器。
 
-然后，由于以下URL，Campaign用户可以通过Web浏览器下载控制台安装程序：
+Campaign使用者可透過網頁瀏覽器下載主控台安裝程式，網址如下：
 
 ```
 https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
 ```
 
-此页面需要在应用程序中定义登录名和密码。
+此頁面需要應用程式中定義的登入名和密碼。
 
-了解如何安装控制台 [在此部分中](../../installation/using/installing-the-client-console.md).
+瞭解如何安裝主控台 [在本節中](../../installation/using/installing-the-client-console.md).
 
-## 建议最终用户升级其客户端控制台
+## 建議使用者升級其使用者端主控台
 
-控制台在Campaign服务器文件夹中可用后，系统会邀请用户在专用的提示窗口中下载最新的客户端控制台版本。 Adobe建议将选项保留为 **[!UICONTROL No longer ask this question]** 取消选中，以确保当有新版本的控制台可用时，所有用户都会收到警报。
+在Campaign伺服器資料夾中提供主控台後，系統會邀請使用者在專用的提示視窗中下載最新的使用者端主控台版本。 Adobe建議保留選項 **[!UICONTROL No longer ask this question]** 取消選取，以確保在可使用新版主控台時，所有使用者都會收到警報。
 
-如果选择此选项并选择不下载最新版本，则不会向其他用户通知新的可用版本。
+如果您選取此選項並選擇不下載最新版本，則不會通知其他使用者有新的可用版本。
 
-如果选择了选项，则可以重置此提示。 只有能够编辑Windows注册表的系统管理员才应进行以下更改：
+如果選取了選項，您可以重設此提示。 只有熟悉編輯Windows登入的系統管理員才應該進行下列變更：
 
-1. 使用打开注册表编辑器 **regedit** 命令 **[!UICONTROL Start > Run]** 菜单。
-1. 搜索节点并展开该节点。
+1. 使用開啟登入編輯器 **regedit** 命令來自 **[!UICONTROL Start > Run]** 功能表。
+1. 搜尋節點並展開。
 
    ```
    \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
    ```
 
-1. 删除 **confDewildedUpgrade** 登录并关闭注册表编辑器。
+1. 刪除 **confAdvisedUpgrade** 輸入並關閉登入編輯程式。

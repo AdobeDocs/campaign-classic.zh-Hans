@@ -1,171 +1,171 @@
 ---
 product: campaign
-title: 技术说明 — Adobe Campaign配置更新
-description: Adobe Campaign配置更新
+title: 技術檔案 — Adobe Campaign設定更新
+description: Adobe Campaign設定更新
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 12%
+source-wordcount: '1123'
+ht-degree: 13%
 
 ---
 
-# Adobe Campaign配置更新2021 {#acc-config-updates}
+# 2021年Adobe Campaign設定更新 {#acc-config-updates}
 
 
 
-基础架构和设置应定期更新以包含最新内部版本和产品修复。 这些修复是确保服务和安全的连续性所必需的。 此外，需要升级才能与第三方更改保持一致。
+基礎結構和設定應定期更新為最新的建置和產品修正。 為確保服務的連續性和安全性，這些修正是必要的。 此外，還需要升級以符合第三方變更。
 
-As a **托管或Managed Services客户**，则Adobe会定期通知您内部版本升级。 您将需要根据建议进行升级，以确保合规性。
+As a **託管或Managed Services客戶**，Adobe會定期通知您版本編號升級。 您將需要根據建議進行升級，以確保法規遵循。
 
-作为 **内部部署或混合客户**，则您应该按照最新发布的内部版本，定期升级您的实施。
+作為 **內部部署或混合客戶**，您應該根據最新發佈的組建，定期升級實作。
 
-出于安全考虑，您现在必须升级到下面列出的某个版本。 除了标准升级步骤之外，还必须执行一些手动任务，以确保您的环境安全，并且可以随时更改Adobe或第三方系统。
+基於安全考量，您現在必須升級至下列版本之一。 除了標準升級步驟外，還必須執行一些手動工作，以確保您的環境是安全的，並準備好因應Adobe或協力廠商系統即將進行的變更。
 
 >[!NOTE]
 >
 >有关这些更改的任何问题，请联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-## 安全更新 {#acc-security-updates}
+## 安全性更新 {#acc-security-updates}
 
-最新的Campaign版本随附了安全修复，该修复增强了针对服务器端请求伪造(SSRF)问题的保护。 请参阅[此页面](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)以了解详情。
+最新Campaign版本隨附安全性修正，可針對伺服器端請求偽造(SSRF)問題加強保護。 请参阅[此页面](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)以了解详情。
 
 **您是否受影响？**
 
-如果您的环境的内部版本低于下面列出的环境，则您会受到影响：
+如果您的環境採用的版本編號低於下方所列的版本，則會受到影響：
 
-* Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
-* Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
-* Campaign 20.2.5版本。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-* Campaign 20.1.4版本。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-* Campaign 19.2.4版本。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* Gold Standard 11. [了解详情](../../rn/using/gold-standard.md)
+* Campaign 21.1.1版。 [了解详情](../../rn/using/latest-release.md)
+* Campaign 20.2.5版。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign 20.1.4版。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign 19.2.4版。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign 19.1.8版。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
-了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+瞭解如何檢查您的版本 [在本節中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **如何更新？**
 
-您需要升级到上面列出的其中一个较新的内部版本。
+您需要升級至上述較新組建之一。
 
-* 作为混合客户，Adobe将通知您中间源实例的计划升级日期。 Adobe强烈建议您也升级营销实例。
+* 作為混合客戶，Adobe會通知您中間來源執行個體的已排程升級日期。 Adobe強烈建議您也升級行銷執行個體。
 
-   新内部版本向后兼容Campaign Classic17.9版本，但Adobe强烈建议在所有实例上升级以解决安全漏洞
+   新組建版本可回溯相容於Campaign Classic17.9版，但Adobe強烈建議升級所有執行個體，以解決安全性弱點
 
-* 作为内部部署客户，系统会要求您将营销和中间源实例升级为最新内部版本。
+* 作為內部部署客戶，您需要將行銷和中間來源執行個體升級至最新版本。
 
 >[!CAUTION]
 >
->如果您无法在建议的时间范围内升级， **您应联系Adobe客户关怀团队，以对实例应用短期手动安全修复**.
+>如果您無法在建議的時間範圍內升級， **您應該聯絡Adobe客戶服務團隊，針對您的執行個體套用短期的手動安全性修正**.
 
-## Campaign Classic客户端控制台更新  {#acc-cc-updates}
+## Campaign Classic使用者端主控台更新  {#acc-cc-updates}
 
-的 **现已可用** 应安装以下控制台版本以解析最近识别的回归参数。 此回归会阻止在投放中使用客户端控制台的某些组件，例如日期选取器和图像管理。 **控制台升级** 为必填项。
+此 **現已推出** 應安裝下列主控台版本，以解決最近識別的回歸。 此回歸會防止使用使用者端主控台的某些元件，例如在傳送中的日期選擇器和影像管理。 **主控台升級** 為必填欄位。
 
-* 最新Gold Standard 11内部版本9032@10c2709。 [了解详情](../../rn/using/gold-standard.md)
-* Campaign 20.1.4版本。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-* Campaign 19.2.4版本。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* 最新Gold Standard 11版本編號9032@10c2709。 [了解详情](../../rn/using/gold-standard.md)
+* Campaign 20.1.4版。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign 19.2.4版。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign 19.1.8版。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
-## AdobeIdentity Management系统(IMS)更新
+## AdobeIdentity Management系統(IMS)更新
 
-Adobe标识服务(IMS)将停止从 **2021年6月30日**. [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+Adobe身分識別服務(IMS)將停止支援舊的Internet Explorer版本，從 **2021年6月30日**. [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
-需要升级Campaign客户端控制台，以确保与Adobe IMS兼容。
-
-**您是否受影响？**
-
-如果您连接到Campaign [通过Adobe ID](../../integrations/using/about-adobe-id.md)，通过AdobeIdentity Management服务(IMS)，必须升级到下面列出的某个新版本：
-
-* Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
-* Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
-* Campaign 20.2.5版本。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-* Campaign 20.1.4版本。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-* Campaign 19.2.4版本。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
-
-这些版本随附了新的连接协议：必须升级，Campaign服务器和客户端控制台才能在 **2021年6月30日**.
-
-了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
-
-**如何更新？**
-
-作为托管客户，Adobe将很快与您合作，将您的实例升级到新版本。
-
-作为内部部署/混合型客户，您需要升级到其中一个较新版本，以便从新的客户端控制台中受益，并确保无缝过渡 **2021年6月30日之前**.
-
-升级所有实例后，还需要将客户端控制台升级到此版本。
-
-* 了解如何访问 [AdobeSoftware Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
-
-* [了解如何安装Campaign客户端控制台](../../installation/using/installing-the-client-console.md).
-
-## 与Experience Cloud触发器集成 {#acc-triggers-updates}
-
-旧版oAuth身份验证服务已终止。 Triggers集成身份验证（最初基于用于访问管道的oAUTH身份验证设置）已移至Adobe I/O。Campaign的旧版oAuth身份验证模式 [已经退休了](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) on **2021年9月**. 托管环境的支持时间可延长至 **2022 年 2 月 23 日**。作为内部部署或混合型客户，请联系Adobe客户关怀团队，将支持期限延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md?lang=en#step-optional)。
+需要升級Campaign使用者端主控台，以確保與Adobe IMS相容。
 
 **您是否受影响？**
 
-如果实例在 **低于Campaign 19.1.8、20.2.4、Gold Standard 11的版本**，则表示您正在通过oAuth身份验证使用旧版Triggers集成： **您需要升级到新版本并迁移到Adobe I/O**.
+如果您正在連線至Campaign [透過Adobe ID](../../integrations/using/about-adobe-id.md)，透過AdobeIdentity Management服務(IMS)，必須升級至下列新版本之一：
 
-必须升级到下面列出的某个新版本：
+* Gold Standard 11. [了解详情](../../rn/using/gold-standard.md)
+* Campaign 21.1.1版。 [了解详情](../../rn/using/latest-release.md)
+* Campaign 20.2.5版。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign 20.1.4版。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
+* Campaign 19.2.4版。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+* Campaign 19.1.8版。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
 
-* Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
-* Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
-* Campaign 20.2.5版本。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+這些版本隨附新的連線通訊協定：Campaign伺服器和使用者端主控台都必須升級，才能在升級後連線至Campaign **2021年6月30日**.
 
-了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
-
-**如何更新？**
-
-将实例升级到较新版本后，所有客户都需要遵循 [过程移至新的身份验证模式](../../integrations/using/configuring-adobe-io.md). 这要求您生成新的Adobe I/O令牌，并将其用在实施中。  
-
-此外，对于混合环境，客户需要确保在中间源实例上配置管道。 [了解详情](../../integrations/using/configuring-pipeline.md)。
-
-[了解如何迁移到Adobe I/O](../../integrations/using/configuring-adobe-io.md).
-
-## APNs更新 {#acc-apns-updates}
-
-### 基于HTTP/2的APNs提供程序API
-
-自 **2021年3月31日**,Apple推送通知服务(APNs)不再支持旧版二进制协议。 [阅读更多](https://developer.apple.com/news/?id=c88acm2b)。
-
-**您受影响吗？**
-
-如果实例在 **低于Campaign 21.1的版本，** 而且，如果使用旧版Apple二进制协议发送推送通知，则需要更新到基于HTTP/2的APNs提供程序API。
-
-了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+瞭解如何檢查您的版本 [在本節中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **如何更新？**
 
-作为托管客户，如果您已升级到新内部版本，则Adobe已将您的实例更新为基于HTTP/2的API。
+作為託管客戶，Adobe將協助您儘快將執行個體升級至較新版本。
 
-作为内部部署/混合客户，您需要更新配置。
+身為內部部署/混合部署客戶，您需要升級至較新版本，才能從新的使用者端主控台獲益，並確保順暢轉換 **2021年6月30日之前**.
 
-### APNs根证书更新
+升級所有執行個體後，使用者端主控台也需要升級至此版本。
 
-2021年3月29日，Apple推送通知服务(APNs)基础架构更新影响了Adobe Campaign Classic iOS渠道。 操作系统配置更改为 **强制** 以避免iOS推送渠道中断。
+* 瞭解如何存取 [Adobe軟體發佈](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans).
 
-进一步了解APNs的更改 [本页](https://developer.apple.com/news/?id=7gx0a2lp).
+* [瞭解如何安裝Campaign使用者端主控台](../../installation/using/installing-the-client-console.md).
+
+## 與Experience Cloud觸發器整合 {#acc-triggers-updates}
+
+舊版oAuth驗證服務已終止服務。 已將Triggers整合驗證（最初根據oAUTH驗證設定來存取管道）移至Adobe I/O。Campaign的舊版oAuth驗證模式 [已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) 於 **2021年9月**. 托管环境的支持时间可延长至 **2022 年 2 月 23 日**。若為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 
 **您是否受影响？**
 
-如果您使用Campaign在iOS设备上发送推送通知，则会受到影响。
+如果您的執行個體在 **比Campaign 19.1.8、20.2.4、Gold Standard 11更舊的版本**，接著您就會透過oAuth驗證使用舊版的Triggers整合： **您需要升級到較新版本，然後移至Adobe I/O**.
+
+必須升級至下列新版本之一：
+
+* Gold Standard 11. [了解详情](../../rn/using/gold-standard.md)
+* Campaign 21.1.1版。 [了解详情](../../rn/using/latest-release.md)
+* Campaign 20.2.5版。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
+* Campaign 19.1.8版。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+
+瞭解如何檢查您的版本 [在本節中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **如何更新？**
 
-作为托管客户，无需执行任何操作：Adobe已将新的根证书纳入到您的环境中。
+執行個體升級至較新版本後，所有客戶都必須遵循 [程式移至新的驗證模式](../../integrations/using/configuring-adobe-io.md). 這需要您產生新的Adobe I/O代號，並在實作中使用它。  
 
-作为内部部署/混合客户，您需要更新配置以确保无缝过渡 **2021年3月29日之前**.
+此外，對於混合環境，客戶需要確保在中間來源執行個體上設定管道。 [了解详情](../../integrations/using/configuring-pipeline.md)。
 
-[了解如何合并新证书](ios-certificate-update.md).
+[瞭解如何移轉至Adobe I/O](../../integrations/using/configuring-adobe-io.md).
 
-## 有用链接
+## APN更新 {#acc-apns-updates}
 
-* [升级环境](../../production/using/build-upgrade.md)
+### 以HTTP/2為基礎的APN提供者API
+
+從 **2021年3月31日**，Apple推播通知服務(APN)不再支援舊版二進位通訊協定。 [阅读更多](https://developer.apple.com/news/?id=c88acm2b)。
+
+**您有受到影響嗎？**
+
+如果您的執行個體在 **比Campaign 21.1舊的版本，** 而您使用舊版Apple二進位通訊協定傳送推播通知，則需更新為HTTP/2型APN提供者API。
+
+瞭解如何檢查您的版本 [在本節中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
+**如何更新？**
+
+作為託管客戶，如果您已升級至新的組建版本，Adobe已將您的執行個體更新至HTTP/2型API。
+
+作為內部部署/混合部署客戶，您需要更新設定。
+
+### APN根憑證更新
+
+2021年3月29日，Apple推播通知服務(APN)基礎架構更新影響Adobe Campaign Classic iOS頻道。 作業系統組態變更為 **強制** 以避免iOS推播頻道中斷。
+
+深入瞭解APN變更 [在此頁面中](https://developer.apple.com/news/?id=7gx0a2lp).
+
+**您是否受影响？**
+
+如果您使用Campaign在iOS裝置上傳送推播通知，則會受到影響。
+
+**如何更新？**
+
+作為託管客戶，無需採取任何動作：Adobe已將新的根憑證整合至您的環境。
+
+身為內部部署/混合部署客戶，您需要更新設定，以確保順暢轉換 **2021年3月29日之前**.
+
+[瞭解如何整合新憑證](ios-certificate-update.md).
+
+## 有用的連結
+
+* [升級您的環境](../../production/using/build-upgrade.md)
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)
-* [下载Campaign Classic内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)
-* [使新客户端控制台可供用户使用](../../installation/using/client-console-availability-for-windows.md)
+* [下載Campaign Classic建置](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)
+* [讓使用者可以使用新的使用者端主控台](../../installation/using/client-console-availability-for-windows.md)

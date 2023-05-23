@@ -1,67 +1,67 @@
 ---
 product: campaign
-title: 配置安全区
-description: 了解如何配置安全区
+title: 設定安全性區域
+description: 瞭解如何設定安全性區域
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 1%
 
 ---
 
-# 定义安全区（内部部署）{#defining-security-zones}
+# 定義安全性區域（內部部署）{#defining-security-zones}
 
 
 
-每个操作员需要链接到区域才能登录到实例，并且操作员IP必须包含在安全区域中定义的地址或地址集中。 安全区域配置在Adobe Campaign服务器的配置文件中执行。
+每個運運算元都必須連結到區域才能登入執行個體，而且運運算元IP必須包含在安全性區域中定義的位址或位址集中。 在Adobe Campaign伺服器的設定檔案中執行安全區域設定。
 
-操作员从控制台中的配置文件链接到安全区域，可在 **[!UICONTROL Administration > Access management > Operators]** 节点。 [了解详情](#linking-a-security-zone-to-an-operator)。
-
->[!NOTE]
->
->此过程仅限于 **内部部署** 部署。
->
->As a **托管** 客户，如果您能够 [营销活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，则可以使用安全区自助服务界面。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans)
->
->其他 **混合/托管** 客户需要联系Adobe支持团队以将IP添加到允许列表。
-
-## 创建安全区 {#creating-security-zones}
-
-区域由以下项定义：
-
-* 一个或多个IP地址范围（IPv4和IPv6）
-* 与每个IP地址范围关联的技术名称
-
-安全区域是互锁的，这意味着在另一个区域内定义新区域会减少可以登录到该区域的操作员数量，同时增加分配给每个操作员的权限。
-
-必须在服务器配置期间定义区域， **serverConf.xml** 文件。 中所有可用的参数 **serverConf.xml** 在 [此部分](../../installation/using/the-server-configuration-file.md).
-
-每个区域都定义权限，例如：
-
-* HTTP连接而不是HTTPS
-* 错误显示(Java错误、JavaScript、C++等)
-* 报表和WebApp预览
-* 通过登录/密码进行身份验证
-* 非安全连接模式
+運運算元會從主控台中的設定檔連結至安全性區域，您可在以下位置存取： **[!UICONTROL Administration > Access management > Operators]** 節點。 [了解详情](#linking-a-security-zone-to-an-operator)。
 
 >[!NOTE]
 >
->**每个运算符都必须链接到区域**. 如果运算符的IP地址属于区域定义的范围，则运算符可以登录到实例。\
->操作员的IP地址可以在多个区域中定义。 在这种情况下，运算符会接收 **set** 每个区域的可用权限。
+>此程式僅限於 **內部部署** 部署。
+>
+>As a **託管** 客戶，如果您能存取 [Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，您可以使用Security Zone自助服務介面。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans)
+>
+>其他 **混合/託管** 客戶需要聯絡Adobe支援團隊，將IP新增至允許清單。
 
-开箱即用 **serverConf.xml** 文件包括三个区域： **公共、VPN和LAN**.
+## 建立安全性區域 {#creating-security-zones}
+
+區域由下列專案定義：
+
+* 一或多個IP位址範圍（IPv4和IPv6）
+* 與每個IP位址範圍相關聯的技術名稱
+
+安全區域會互鎖，這表示在另一個區域中定義新區域會減少可以登入該區域的操作者數量，同時增加指派給每個操作者的許可權。
+
+區域必須在伺服器設定期間定義，在 **serverConf.xml** 檔案。 所有引數都可在 **serverConf.xml** 列於 [本節](../../installation/using/the-server-configuration-file.md).
+
+每個區域都會定義許可權，例如：
+
+* HTTP連線而非HTTPS
+* 錯誤顯示(Java錯誤、JavaScript、C++等)
+* 報表和WebApp預覽
+* 透過登入/密碼驗證
+* 非安全連線模式
 
 >[!NOTE]
 >
->**开箱即用的配置是安全的**. 但是，在从旧版Adobe Campaign迁移之前，可能需要临时降低安全性才能迁移和批准新规则。
+>**每個運運算元都必須連結至區域**. 如果運運算元的IP位址屬於區域定義的範圍，則運運算元可以登入執行個體。\
+>運運算元的IP位址可定義於數個區域中。 在此案例中，運運算元會收到 **set** 每個區域的可用許可權數量。
 
-如何在 **serverConf.xml** 文件：
+現成可用 **serverConf.xml** 檔案包含三個區域： **公用、VPN和LAN**.
+
+>[!NOTE]
+>
+>**開箱即用的設定是安全的**. 不過，在從舊版Adobe Campaign移轉之前，可能需要暫時降低安全性，才能移轉和核准新規則。
+
+如何在中定義區域的範例 **serverConf.xml** 檔案：
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" name="public">
@@ -85,24 +85,24 @@ ht-degree: 1%
 </securityZone>
 ```
 
-定义区域的所有权限如下所示：
+定義區域的所有權利如下：
 
-* **allowDebug**:允许在“调试”模式下执行webApp
-* **allowEmptyPassword**:在没有密码的情况下授权与实例的连接
-* **allowHTTP**:无需使用HTTPS协议即可创建会话
-* **allowUserPassword**:会话令牌可以具有以下格式“`<login>/<password>`&quot;
-* **sessionTokenOnly**:连接URL中不需要安全令牌
-* **showErrors**:服务器端的错误将被转发并显示
+* **allowDebug**：啟用webApp在「偵錯」模式下執行
+* **allowEmptyPassword**：授權使用密碼連線到執行個體
+* **allowHTTP**：不需要使用HTTPS通訊協定即可建立工作階段
+* **allowUserPassword**：工作階段Token可以有下列形式»`<login>/<password>`&quot;
+* **sessionTokenOnly**：連線URL中不需要安全性權杖
+* **showError**：伺服器端的錯誤會轉送並顯示
 
 >[!IMPORTANT]
 >
->在区域定义中，每个属性均使用 **true** 值降低了安全性。
+>在區域定義中，每個屬性都具有 **true** 值會降低安全性。
 
-使用消息中心时，如果存在多个执行实例，则需要使用 **sessionTokenOnly** 定义的属性 **true**，其中只需添加必要的IP地址。 有关配置实例的更多信息，请参阅 [本文档](../../message-center/using/configuring-instances.md).
+使用訊息中心時，如果有多個執行個體，您需要使用建立其他安全性區域 **sessionTokenOnly** 屬性定義為 **true**，僅新增必要的IP位址。 有關設定執行個體的詳細資訊，請參閱 [本檔案](../../message-center/using/configuring-instances.md).
 
-## 安全区的最佳实践 {#best-practices-for-security-zones}
+## 安全性區域的最佳實務 {#best-practices-for-security-zones}
 
-在 **lan** 安全区，可以添加定义技术访问的IP地址掩码。 此添加将允许访问服务器上托管的所有实例。
+在「 」的定義 **區域網路** 安全區域，可以新增定義技術存取許可權的IP位址遮罩。 此新增將啟用對伺服器上託管之所有執行個體的存取權。
 
 ```
 <securityZone allowDebug="true" allowEmptyPassword="false" allowHTTP="true"
@@ -121,9 +121,9 @@ ht-degree: 1%
       </securityZone>
 ```
 
-我们建议仅在专用于实例的配置文件中为只访问特定实例的运算符直接定义IP地址范围。
+我們建議直接在專屬於執行個體的設定檔案中定義IP位址範圍，以供僅存取特定執行個體的操作者使用。
 
-在 **`config-<instance>.xml`** 文件：
+在 **`config-<instance>.xml`** 檔案：
 
 ```
   <securityZone name="public">
@@ -132,35 +132,35 @@ ht-degree: 1%
       <subNetwork id="cus1" mask="a.b.c.d/xx"/>
 ```
 
-## 安全区域中的子网络和代理 {#sub-networks-and-proxies-in-a-security-zone}
+## 安全區域中的子網路和代理 {#sub-networks-and-proxies-in-a-security-zone}
 
-的 **代理** 参数可在 **subNetwork** 用于指定安全区中代理使用的元素。
+此 **proxy** 引數可用於 **子網路** 元素來指定安全區域中的Proxy使用。
 
-当引用代理并且连接通过此代理进入时（通过HTTP X-Forwarded-For标头可见），验证的区域是代理客户端的区域，而不是代理客户端的区域。
+當參照Proxy且連線透過此Proxy （透過HTTP X-Forwarded-For標頭可見）進入時，已驗證的區域是Proxy的使用者端區域，而不是Proxy的使用者端區域。
 
 >[!IMPORTANT]
 >
->如果配置了代理并且可以覆盖该代理（或者如果不存在），则将测试的IP地址将能够被伪造。
+>如果已設定Proxy且可以覆寫它（如果不存在，則覆寫它），將進行測試的IP位址將能夠被偽造。
 >
->此外，中继现在与代理类似。 因此，您可以将IP地址127.0.0.1添加到安全区域配置中的代理列表。
+>此外，中繼現在會像代理一樣產生。 因此，您可以將IP位址127.0.0.1新增至安全性區域設定中的代理程式清單。
 >
->例如：&quot; `<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`&quot;
+>例如：「 」 `<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`「。
 
-可能会出现各种情况：
+可能會出現各種情況：
 
-* 子网络在安全区域中直接引用，且未配置代理：子网络的用户可以直接连接到Adobe Campaign服务器。
+* 子網路會直接在安全性區域中參考，且未設定Proxy：子網路的使用者可以直接連線至Adobe Campaign伺服器。
 
    ![](assets/8101_proxy1.png)
 
-* 为安全区域中的子网络指定代理：来自此子网络的用户可以通过此代理访问Adobe Campaign服务器。
+* 為安全性區域中的子網路指定Proxy：此子網路的使用者可以透過此Proxy存取Adobe Campaign伺服器。
 
    ![](assets/8101_proxy2.png)
 
-* 代理包含在安全区子网络中：通过此代理具有访问权限的用户（无论其来源如何）可以访问Adobe Campaign服务器。
+* Proxy包含在安全區域子網路中：透過此Proxy具有存取權的使用者（無論其來源為何）都可以存取Adobe Campaign伺服器。
 
    ![](assets/8101_proxy3.png)
 
-必须在 **`<subnetwork>`** 关注和一级子网 **`<subnetwork name="all"/>`**. 例如，以下是IP地址为10.131.146.102的代理：
+可能存取Adobe Campaign伺服器的代理程式IP位址必須同時輸入到 **`<subnetwork>`** 相關和第一層子網路 **`<subnetwork name="all"/>`**. 例如，此處為IP位址為10.131.146.102的Proxy：
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -183,83 +183,83 @@ ht-degree: 1%
 </securityZone>
 ```
 
-## 将安全区域链接到操作员 {#linking-a-security-zone-to-an-operator}
+## 將安全區域連結至操作員 {#linking-a-security-zone-to-an-operator}
 
-定义区域后，每个操作员必须链接到其中一个操作员才能登录到实例，并且该操作员的IP地址必须包含在区域中引用的地址或地址范围中。
+定義區域後，每個運運算元都必須連結到其中一個運運算元，才能登入執行個體，而且運運算元的IP位址必須包含在區域中參考的位址或位址範圍內。
 
-区域的技术配置在Campaign Server的配置文件中执行： **serverConf.xml**.
+區域的技術設定是在Campaign伺服器的設定檔案中執行： **serverConf.xml**.
 
-在此之前，您必须首先配置现成的 **[!UICONTROL Security zone]** 用于将标签链接到中定义的区域内部名称的枚举 **serverConf.xml** 文件。
+在此之前，您必須先設定現成可用的設定 **[!UICONTROL Security zone]** 將標籤連結至區域中定義之區域的內部名稱的列舉 **serverConf.xml** 檔案。
 
-此配置在Campaign资源管理器中完成：
+此設定可在Campaign檔案總管中完成：
 
-1. 单击 **[!UICONTROL Administration > Platform > Enumerations]** 节点。
-1. 选择 **[!UICONTROL Security zone (securityZone)]** 系统枚举。
+1. 按一下 **[!UICONTROL Administration > Platform > Enumerations]** 節點。
+1. 選取 **[!UICONTROL Security zone (securityZone)]** 系統分項清單。
 
    ![](assets/enum_securityzone.png)
 
-1. 对于服务器配置文件中定义的每个安全区域，单击 **[!UICONTROL Add]** 按钮。
-1. 在 **[!UICONTROL Internal name]** 字段，输入在 **serverConf.xml** 文件。 它对应于 **@name** 属性 `<securityzone>`  元素。 在  **标签**&#x200B;字段。
+1. 針對伺服器組態檔中定義的每個安全區域，按一下 **[!UICONTROL Add]** 按鈕。
+1. 在 **[!UICONTROL Internal name]** 欄位中，輸入中定義的區域名稱 **serverConf.xml** 檔案。 它對應至 **@name** 的屬性 `<securityzone>`  元素。 在中輸入連結至內部名稱的標籤  **標籤**&#x200B;欄位。
 
    ![](assets/enum_addsecurityvalue.png)
 
-1. 单击确定并保存修改。
+1. 按一下「確定」並儲存修改。
 
-定义区域并 **[!UICONTROL Security zone]** 枚举已配置，您需要将每个运算符链接到安全区域：
+定義區域後，以及 **[!UICONTROL Security zone]** 列舉已設定，您必須將每個運運算元連結至安全性區域：
 
-1. 单击 **[!UICONTROL Administration > Access management > Operators]** 节点。
-1. 选择要将安全区域链接到的运算符，然后单击 **[!UICONTROL Edit]** 选项卡。
-1. 转到 **[!UICONTROL Access rights]** ，然后单击 **[!UICONTROL Edit access parameters...]** 链接。
+1. 按一下 **[!UICONTROL Administration > Access management > Operators]** 節點。
+1. 選取您要連結安全區域的操作員，然後按一下 **[!UICONTROL Edit]** 標籤。
+1. 前往 **[!UICONTROL Access rights]** 標籤並按一下 **[!UICONTROL Edit access parameters...]** 連結。
 
    ![](assets/zone_operator.png)
 
-1. 从 **[!UICONTROL Authorized connection zone]** 下拉列表
+1. 從「 」中選取區域 **[!UICONTROL Authorized connection zone]** 下拉式清單
 
    ![](assets/zone_operator_selection.png)
 
-1. 单击 **[!UICONTROL OK]** 并保存修改以应用这些更改。
+1. 按一下 **[!UICONTROL OK]** 並儲存修改以套用這些變更。
 
 
 
 ## 推荐
 
-* 确保在subNetwork中不允许使用反向代理。 如果是这样， **全部** 将检测到来自此本地IP的流量，因此将受信任。
+* 請確定您的反向Proxy不允許出現在subNetwork中。 如果是這種情況， **全部** 流量會被偵測為來自此本機IP，因此會受信任。
 
-* 最大限度地减少sessionTokenOnly=&quot;true&quot;的使用：
+* 最小化sessionTokenOnly=&quot;true&quot;的使用：
 
-   * 警告：如果此属性设置为true，则运算符可能会显示到 **CRSF攻击**.
-   * 此外，sessionToken Cookie未使用httpOnly标记进行设置，因此某些客户端JavaScript代码可以读取它。
-   * 但是，多个执行单元格上的消息中心需要sessionTokenOnly:创建新的安全区域，并将sessionTokenOnly设置为“true”并添加 **仅需要的IP** 在此区域中。
+   * 警告：如果此屬性設定為true，則運運算元可顯示於 **CRSF攻擊**.
+   * 此外，sessionToken Cookie未設定httpOnly旗標，因此某些使用者端JavaScript程式碼可以讀取。
+   * 不過，多個執行儲存格上的Message Center需要sessionTokenOnly：在sessionTokenOnly設為&quot;true&quot;的情況下建立新的安全性區域並新增 **僅需要的IP** 在此區域中。
 
-* 如果可能，将所有allowHTTP、showErrors设置为false（不适用于localhost）并检查它们。
+* 可能的話，請將所有allowHTTP、showErrors設定為false （不適用於localhost）並檢查它們。
 
-   * allowHTTP = &quot;false&quot;:强制运算符使用HTTPS
-   * showErrors = &quot;false&quot;:隐藏技术错误（包括SQL错误）。 它可以防止显示过多信息，但会降低营销人员解决错误的能力（无需向管理员请求更多信息）
+   * allowHTTP = &quot;false&quot;：強制運運算元使用HTTPS
+   * showErrors = &quot;false&quot;：隱藏技術錯誤（包括SQL錯誤）。 它可防止顯示太多資訊，但會降低行銷人員解決錯誤的能力（無需向管理員要求更多資訊）
 
-* 仅当营销用户/管理员使用的IP需要创建（事实上是预览）调查、WebApps和报表时，才将allowDebug设置为true。 此标记允许这些IP显示中继规则并对其进行调试。
+* 只有在行銷使用者/管理員使用的IP上，才將allowDebug設定為true，這些使用者/管理員需要建立（事實上是預覽）調查、webApps和報表。 此旗標可讓這些IP顯示轉送規則並偵錯。
 
-   * 当allowDebug设置为false时，输出为：
+   * 當allowDebug設為false時，輸出為：
 
       ```
       <redir status='OK' date='...' sourceIP='...'/>
       ```
 
-   * 如果allowDebug设置为true，则输出为：
+   * 當allowDebug設定為true時，輸出為：
 
       ```
       <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
       ```
 
-* 请勿将allowEmptyPassword、allowUserPassword、allowSQLIncompent设置为true。 以下属性仅用于从v5和v6.0顺利迁移：
+* 切勿將allowEmptyPassword、allowUserPassword、allowSQLInjection設定為true。 這些屬性僅允許從v5和v6.0順利移轉：
 
-   * **allowEmptyPassword** 允许运算符具有空密码。 如果是这种情况，请通知所有操作员要求他们在截止时间内设置密码。 在此截止日期过后，将此属性更改为false。
+   * **allowEmptyPassword** 可讓操作員使用空白密碼。 如果您遇到這種情況，請通知所有操作員要求他們設定截止日期的密碼。 一旦過了這個期限，就將此屬性變更為false。
 
-   * **allowUserPassword** 允许操作员将其凭据作为参数发送（以便它们将由apache/IIS/proxy记录）。 此功能过去曾用于简化API使用。 您可以在指南（或在规范中）中查看某些第三方应用程序是否使用它。 如果是，您必须通知他们更改使用我们API的方式，并尽快删除此功能。
+   * **allowUserPassword** 可讓操作員傳送其認證作為引數（以便由apache/IIS/proxy記錄）。 此功能過去曾用來簡化API的使用。 無論某些協力廠商應用程式是否使用此功能，您都可以簽入您的逐步指南（或規格）。 若是如此，您必須通知他們變更使用API的方式，並儘快移除此功能。
 
-   * **allowSQLInjent** 允许用户使用旧语法执行SQL注入。 此属性应设置为false。 您可以使用/nl/jsp/ping.jsp?zones=true检查您的安全区域配置。 此页显示当前IP的安全措施（使用这些安全标志计算）的活动状态。
+   * **allowSQLInjection** 可讓使用者使用舊語法執行SQL插入。 此屬性應設為false。 您可以使用/nl/jsp/ping.jsp？zones=true來檢查您的安全性區域設定。 此頁面顯示目前IP的安全性措施（使用這些安全性旗標計算）的有效狀態。
 
-* HttpOnly Cookie/useSecurityToken:请参阅 **sessionTokenOnly** 标记。
+* HttpOnly cookie/useSecurityToken：請參閱 **sessionTokenOnly** 標幟。
 
-* 最大限度地减少添加到允许列表的IP:我们开箱即用地在安全区中为专用网络添加了3个范围。 您不太可能使用所有这些IP地址。 所以只保留你需要的。
+* 最小化新增到允許清單的IP：開箱即用，在安全區域中，我們為私人網路新增了3個範圍。 您不太可能會使用所有這些IP位址。 所以只保留您需要的內容。
 
-* 更新webApp/internal运算符，使其仅可在本地主机中访问。
+* 將webApp/內部運運算元更新為僅可在localhost中存取。

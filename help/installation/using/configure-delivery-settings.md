@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: Campaign投放设置配置
-description: 了解如何配置Campaign投放设置
+title: Campaign傳遞設定組態
+description: 瞭解如何設定Campaign傳遞設定
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 5%
@@ -19,27 +19,27 @@ ht-degree: 5%
 
 
 
-必须在 **serverConf.xml** 文件夹。
+傳遞引數必須設定在 **serverConf.xml** 資料夾。
 
-* **DNS配置**:指定用于响应MTA模块从 **`<dnsconfig>`** 向前。
+* **DNS設定**：指定傳遞網域和DNS伺服器的IP位址（或主機），用於回應MTA模組從進行的MX型別DNS查詢。 **`<dnsconfig>`** 從上往下。
 
    >[!NOTE]
    >
-   >的 **nameServers** 参数对于在Windows中进行安装是必不可少的。 对于Linux中的安装，必须将其留空。
+   >此 **nameServer** 引數對於Windows中的安裝是必要的。 若是在Linux中進行安裝，則必須保留空白。
 
    ```
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-您还可以根据自己的需求和设置执行以下配置：配置 [SMTP中继](#smtp-relay)，调整 [MTA子进程](#mta-child-processes), [管理出站SMTP流量](#managing-outbound-smtp-traffic-with-affinities).
+您也可以根據您的需求和設定進行以下設定：設定 [SMTP轉送](#smtp-relay)，調整數量 [MTA子處理序](#mta-child-processes)， [管理輸出SMTP流量](#managing-outbound-smtp-traffic-with-affinities).
 
-## SMTP中继 {#smtp-relay}
+## SMTP轉送 {#smtp-relay}
 
-MTA模块充当SMTP广播（端口25）的本机邮件传输代理。
+MTA模組會當作SMTP廣播（連線埠25）的原生郵件傳輸代理程式。
 
-但是，如果您的安全策略需要，则可以通过中继服务器替换它。 在这种情况下，全局吞吐量将是中继吞吐量(前提是中继服务器吞吐量低于Adobe Campaign吞吐量)。
+不過，如果您的安全性原則需要，可以透過轉送伺服器來取代它。 在這種情況下，全域輸送量將是轉送量(前提是轉送伺服器輸送量低於Adobe Campaign輸送量)。
 
-在这种情况下，这些参数是通过在 **`<relay>`** 中。 您必须指定用于传输邮件及其关联端口（默认为25）的SMTP服务器的IP地址（或主机）。
+在此情況下，這些引數的設定方式為透過以下專案中的SMTP伺服器進行： **`<relay>`** 區段。 您必須指定用來傳輸郵件及其相關連線埠（預設為25）之SMTP伺服器的IP位址（或主機）。
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -47,31 +47,31 @@ MTA模块充当SMTP广播（端口25）的本机邮件传输代理。
 
 >[!IMPORTANT]
 >
->此操作模式对投放造成严重限制，因为它会因为中继服务器的固有性能（延迟、带宽……）而大大降低吞吐量。 此外，鉴别同步投放错误（通过分析SMTP流量检测到）的容量将受到限制，如果中继服务器不可用，则将无法发送。
+>此作業模式表示傳送作業受到嚴重限制，因為中繼伺服器的固有效能（延遲、頻寬……）會大幅降低輸送量。 此外，限定同步傳送錯誤（透過分析SMTP流量所偵測）的容量將會受到限制，而且如果無法使用轉送伺服器，將無法進行傳送。
 
-## MTA子进程 {#mta-child-processes}
+## MTA子處理序 {#mta-child-processes}
 
-可以根据服务器的CPU功率和可用网络资源来优化广播性能，从而控制子进程（默认为2）的数量。 此配置将在 **`<master>`** MTA配置的部分。
+您可以控制子處理序（預設為2）的數量，以便根據伺服器的CPU效能和可用的網路資源來最佳化廣播效能。 此設定將在 **`<master>`** 每部電腦上MTA設定的區段。
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
 ```
 
-另请参阅 [电子邮件发送优化](../../installation/using/email-deliverability.md#email-sending-optimization).
+另請參閱 [電子郵件傳送最佳化](../../installation/using/email-deliverability.md#email-sending-optimization).
 
-## 管理具有相关性的出站SMTP流量 {#managing-outbound-smtp-traffic-with-affinities}
+## 使用相關性管理輸出SMTP流量 {#managing-outbound-smtp-traffic-with-affinities}
 
 >[!IMPORTANT]
 >
->从一台服务器到另一台服务器的关联配置需要保持一致。 我们建议您联系Adobe以进行亲和度配置，因为配置更改应复制到运行MTA的所有应用程序服务器上。
+>伺服器之間的相似性設定必須一致。 建議您聯絡Adobe以取得相似性設定，因為應在執行MTA的所有應用程式伺服器上復寫設定變更。
 
-您可以通过具有IP地址的相关性来改善出站SMTP流量。
+您可以透過與IP位址的相似性來改善輸出SMTP流量。
 
 要执行此操作，请应用以下步骤：
 
-1. 在 **`<ipaffinity>`** 部分 **serverConf.xml** 文件。
+1. 輸入相關性，在 **`<ipaffinity>`** 部分 **serverConf.xml** 檔案。
 
-   一个亲和度可以具有多个不同的名称：要将它们分开，请使用 **;** 字符。
+   一個相似性可以有多種不同的名稱：若要加以分隔，請使用 **；** 字元。
 
    示例:
 
@@ -80,23 +80,23 @@ MTA模块充当SMTP广播（端口25）的本机邮件传输代理。
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   要查看相关参数，请参阅 **serverConf.xml** 文件。
+   若要檢視相關引數，請參閱 **serverConf.xml** 檔案。
 
-1. 要在下拉列表中启用亲和度选择，您需要在 **IPAffinity** 枚举。
+1. 若要在下拉式清單中啟用相關性選擇，您必須在以下專案新增相關性名稱： **IPAffinity** 分項清單。
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >详细列表请参见 [本文档](../../platform/using/managing-enumerations.md).
+   >詳細列舉請參閱 [本檔案](../../platform/using/managing-enumerations.md).
 
-   然后，您可以选择要使用的亲和度，如下分类所示：
+   然後您可以選取要使用的相似性，如下面的型別所示：
 
    ![](assets/ipaffinity_typology.png)
 
    >[!NOTE]
    >
-   >您还可以参阅 [投放服务器配置](../../installation/using/email-deliverability.md#delivery-server-configuration).
+   >您也可以參閱 [傳遞伺服器設定](../../installation/using/email-deliverability.md#delivery-server-configuration).
 
 **相关主题**
 * [技术电子邮件配置](email-deliverability.md)

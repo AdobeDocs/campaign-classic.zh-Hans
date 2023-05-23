@@ -4,9 +4,9 @@ title: Campaign Classic的說明與支援選項
 description: 需要Campaign Classic的支援嗎？ 您找到了正确的地方！
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '796'
 ht-degree: 66%
 
 ---

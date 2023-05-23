@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1563'
 ht-degree: 1%
 
 ---
@@ -17,196 +17,196 @@ ht-degree: 1%
 
 
 
-可以将Web应用程序本地化为多种语言。
+您可以將網頁應用程式本地化為數種語言。
 
-您可以直接在Adobe Campaign控制台中执行翻译(请参阅 [在编辑器中管理翻译](#managing-translations-in-the-editor))，或导出和导入字符串以将翻译外部化(请参阅 [外部化翻译](#externalizing-translation))。
+您可以直接在Adobe Campaign主控台中執行翻譯(請參閱 [在編輯器中管理翻譯](#managing-translations-in-the-editor))，或匯出和匯入字串以將翻譯外部化(請參閱 [外部化翻譯](#externalizing-translation))。
 
-默认提供的翻译语言列表详见 [更改表单显示语言](#changing-forms-display-language).
+預設可用的翻譯語言清單詳見 [變更表單顯示語言](#changing-forms-display-language).
 
-Web应用程序采用编辑语言设计：这是用于输入标签和要翻译的其他内容的参考语言。
+網頁應用程式是以編輯語言設計：這是用來輸入標籤和其他要翻譯內容的參考語言。
 
-默认语言是Web应用程序在访问URL中未添加任何语言设置时将使用的语言。
-
->[!NOTE]
->
->默认情况下，编辑语言和默认语言与控制台语言相同。
-
-## 选择语言 {#choosing-languages}
-
-要定义一种或多种翻译语言，请单击 **[!UICONTROL Properties]** 按钮，然后 **[!UICONTROL Localization]** 选项卡。 单击 **[!UICONTROL Add]** 按钮来定义Web应用程序的新翻译语言。
+預設語言是Web應用程式在存取URL中未新增任何語言設定時所顯示的語言。
 
 >[!NOTE]
 >
->此窗口还允许您更改默认语言和编辑语言。
+>依預設，編輯語言和預設語言與主控台語言相同。
+
+## 選擇語言 {#choosing-languages}
+
+若要定義一或多個翻譯語言，請按一下 **[!UICONTROL Properties]** Web應用程式的按鈕，然後 **[!UICONTROL Localization]** 標籤。 按一下 **[!UICONTROL Add]** 按鈕來定義網頁應用程式的新翻譯語言。
+
+>[!NOTE]
+>
+>此視窗也可讓您變更預設語言和編輯語言。
 
 ![](assets/s_ncs_admin_survey_add_lang.png)
 
-当您为Web应用程序添加翻译语言时（或当默认语言和编辑语言不同时）， **[!UICONTROL Translation]** 子选项卡 **[!UICONTROL Edit]** 选项卡来管理翻译。
+當您新增網頁應用程式的翻譯語言時（或當預設語言與編輯語言不同時）， **[!UICONTROL Translation]** 子標籤會新增至 **[!UICONTROL Edit]** 標籤以管理翻譯。
 
-Adobe Campaign包含翻译和管理多语言翻译的工具。 此编辑器允许您查看要翻译或批准的字符串，直接在界面中输入翻译，或导入/导出字符串以将翻译外部化。
+Adobe Campaign包含翻譯及管理多語言翻譯的工具。 此編輯器可讓您檢視要翻譯或核准的字串、直接在介面中輸入翻譯，或匯入/匯出字元字串以將翻譯外部化。
 
-## 在编辑器中管理翻译 {#managing-translations-in-the-editor}
+## 在編輯器中管理翻譯 {#managing-translations-in-the-editor}
 
-### 收集字符串 {#collecting-strings}
+### 收集字串 {#collecting-strings}
 
-的 **[!UICONTROL Translations]** 选项卡，可为构成Web应用程序的字符串输入翻译。
+此 **[!UICONTROL Translations]** 索引標籤可讓您為構成Web應用程式的字元字串輸入翻譯。
 
-首次打开此选项卡时，它将不包含任何数据。 单击 **[!UICONTROL Collect the strings to translate]** 链接以更新Web应用程序中的字符串。
+第一次開啟此索引標籤時，不會包含任何資料。 按一下 **[!UICONTROL Collect the strings to translate]** 更新網頁應用程式中字串的連結。
 
-Adobe Campaign收集在中定义的字段和字符串的标签 **[!UICONTROL Texts]** 所有静态元素的选项卡：HTML块、Javascript等 静态元素在 [Web窗体中的静态元素](static-elements-in-a-web-form.md).
+Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 所有靜態元素的索引標籤：HTML區塊、Javascript等。 靜態元素的詳細說明，請參閱 [網路表單中的靜態元素](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
 >[!CAUTION]
 >
->此过程可能需要几分钟时间，具体取决于要处理的数据量。
+>視要處理的資料量而定，此程式可能需要幾分鐘的時間。
 > 
->如果出现警告，指出系统词典中缺少某些翻译，请参阅 [翻译系统字符串](#translating-the-system-strings).
+>如果出現警告指出系統字典中缺少某些翻譯，請參閱 [轉譯系統字串](#translating-the-system-strings).
 
-每次翻译字符串时，其翻译都会添加到翻译词典中。
+每次翻譯字串時，其翻譯都會新增至翻譯字典。
 
-当收集流程检测到翻译已存在时，此翻译将显示在 **[!UICONTROL Text]** 列。 字符串的状态将变为 **[!UICONTROL Translated]**.
+當收集程式偵測到已有翻譯存在時，此翻譯會顯示在 **[!UICONTROL Text]** 字串的欄。 字串的狀態已轉換為 **[!UICONTROL Translated]**.
 
-对于从未翻译过的字符串， **[!UICONTROL Text]** 字段，且状态为 **[!UICONTROL To translate]**.
+對於從未翻譯過的字元字串， **[!UICONTROL Text]** 欄位為空白，且狀態為 **[!UICONTROL To translate]**.
 
-### 筛选字符串 {#filtering-strings}
+### 篩選字串 {#filtering-strings}
 
-默认情况下，将显示Web应用程序的每种翻译语言。 有两个默认过滤器：语言和状态。 单击 **[!UICONTROL Filters]** 按钮，然后单击 **[!UICONTROL By language or status]** 以显示匹配的下拉框。 您还可以创建高级过滤器。 有关详细信息，请参见[此页面](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
+依預設，會顯示Web應用程式的每種翻譯語言。 預設篩選器有兩種：語言和狀態。 按一下 **[!UICONTROL Filters]** 按鈕，然後按一下 **[!UICONTROL By language or status]** 以顯示相符的下拉式方塊。 您也可以建立進階篩選。 有关详细信息，请参见[此页面](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
-转到 **[!UICONTROL Language]** 下拉框中选择翻译语言。
+前往 **[!UICONTROL Language]** 下拉式方塊以選取翻譯語言。
 
-要仅显示未翻译的字符串，请选择 **[!UICONTROL To translate]** 在 **[!UICONTROL Status]** 下拉框。 您还可以仅显示已翻译或已批准的字符串。
+若只要顯示未翻譯的字串，請選取 **[!UICONTROL To translate]** 在 **[!UICONTROL Status]** 下拉式方塊。 您也可以只顯示翻譯或核准的字串。
 
-### 翻译字符串 {#translating-strings}
+### 轉譯字串 {#translating-strings}
 
-1. 要翻译某个单词，请双击字符串列表上的其行。
+1. 若要翻譯單字，請在字串清單上連按兩下其行。
 
    ![](assets/s_ncs_admin_survey_trad_tab_add_term.png)
 
-   源字符串显示在窗口的上部。
+   來源字串會顯示在視窗的上半部。
 
-1. 在下方输入其翻译。 要批准该应用程序，请检查 **[!UICONTROL Translation approved]** 选项。
+1. 在下方輸入其翻譯。 若要核准，請核取 **[!UICONTROL Translation approved]** 選項。
 
    >[!NOTE]
    >
-   >翻译批准是可选的，不会阻止该过程。
+   >翻譯核准為選用，不會阻礙此程式。
 
-   未批准的翻译显示为 **[!UICONTROL Translated]**. 批准的翻译显示为 **[!UICONTROL Approved]**.
+   未核准的翻譯會顯示為 **[!UICONTROL Translated]**. 已核准的翻譯會顯示為 **[!UICONTROL Approved]**.
 
-## 外部化翻译 {#externalizing-translation}
+## 外部化翻譯 {#externalizing-translation}
 
-可以使用Adobe Campaign以外的工具导出和导入字符串以翻译字符串。
+您可以使用Adobe Campaign以外的工具匯出和匯入字元字串以翻譯字元。
 
 >[!CAUTION]
 >
->导出字符串后，请勿使用集成工具执行任何翻译。 当您重新导入翻译时，这会导致冲突，并且这些转换将丢失。
+>匯出字串後，請勿使用整合工具執行任何翻譯。 當您重新匯入翻譯時，這會導致衝突，並且這些翻譯將會遺失。
 
-### 导出文件 {#exporting-files}
+### 匯出檔案 {#exporting-files}
 
-1. 选择要导出其字符串的Web应用程序，右键单击，然后选择 **[!UICONTROL Actions > Export strings for translation...]**
+1. 選取您要匯出其字串的Web應用程式，按一下滑鼠右鍵，然後選取 **[!UICONTROL Actions > Export strings for translation...]**
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
-1. 选择 **[!UICONTROL Export strategy]** :
+1. 選取 **[!UICONTROL Export strategy]** ：
 
-   * **[!UICONTROL One file per language]**:导出将为每个翻译语言生成一个文件。 每个文件对所有选定的Web应用程序都是通用的。
-   * **[!UICONTROL One file per Web application]**:导出将为每个选定的Web应用程序生成一个文件。 每个文件都将包含所有翻译语言。
-
-      >[!NOTE]
-      >
-      >此类导出不适用于XLIFF导出。
-
-   * **[!UICONTROL One file per language and per Web application]**:导出将生成多个文件。 每个文件将包含每个Web应用程序一种翻译语言。
-   * **[!UICONTROL One file for all]**:导出将为所有Web应用程序生成单个多语言文件。 它将包含所有选定Web应用程序的所有翻译语言。
+   * **[!UICONTROL One file per language]**：匯出作業會針對每種翻譯語言產生一個檔案。 每個檔案對於所有選取的Web應用程式都是通用的。
+   * **[!UICONTROL One file per Web application]**：匯出作業會針對每個選取的Web應用程式產生一個檔案。 每個檔案都會包含所有翻譯語言。
 
       >[!NOTE]
       >
-      >此类导出不适用于XLIFF导出。
+      >此型別的匯出不適用於XLIFF匯出。
 
-1. 然后选择 **[!UICONTROL Target folder]** 将记录文件的位置。
-1. 选择文件格式( **[!UICONTROL CSV]** 或 **[!UICONTROL XLIFF]** )并单击 **[!UICONTROL Start]**.
+   * **[!UICONTROL One file per language and per Web application]**：匯出將會產生數個檔案。 每個檔案將包含每個網頁應用程式的一種翻譯語言。
+   * **[!UICONTROL One file for all]**：匯出將會為所有網頁應用程式產生單一多語言檔案。 它會包含所有選定網頁應用程式的所有翻譯語言。
+
+      >[!NOTE]
+      >
+      >此型別的匯出不適用於XLIFF匯出。
+
+1. 然後選取 **[!UICONTROL Target folder]** 將記錄檔案的位置。
+1. 選取檔案格式( **[!UICONTROL CSV]** 或 **[!UICONTROL XLIFF]** )並按一下 **[!UICONTROL Start]**.
 
 ![](assets/s_ncs_admin_survey_trad_export_start.png)
 
 >[!NOTE]
 >
->导出文件的名称会自动生成。 如果多次执行相同的导出，将用新文件替换现有文件。 如果需要保留以前的文件，请更改 **[!UICONTROL Target folder]** ，然后单击 **[!UICONTROL Start]** 再次运行导出。
+>匯出檔案的名稱會自動產生。 如果多次執行相同的匯出，則會以新檔案取代現有檔案。 如果您需要保留先前的檔案，請變更 **[!UICONTROL Target folder]** ，然後按一下 **[!UICONTROL Start]** 以再次執行匯出。
 
-在 **CSV格式**，则每种语言都会链接到状态和批准状态。 的 **批准？** 列允许您批准翻译。 此列可能包含值 **是** 或 **否**. 对于集成编辑器(请参阅 [在编辑器中管理翻译](#managing-translations-in-the-editor))，则批准翻译是可选的，并且不会阻止该过程。
+當您匯出檔案時 **CSV格式**，每種語言都會連結至狀態和核准狀態。 此 **核准？** 欄可讓您核准翻譯。 此欄可能包含值 **是** 或 **否**. 至於整合式編輯器(請參閱 [在編輯器中管理翻譯](#managing-translations-in-the-editor))，則核准翻譯為選用，不會阻礙此程式。
 
-### 导入文件 {#importing-files}
+### 匯入檔案 {#importing-files}
 
-完成外部翻译后，即可导入翻译后的文件。
+外部翻譯完成後，您可以匯入已翻譯的檔案。
 
-1. 转到Web应用程序列表，右键单击，然后选择 **[!UICONTROL Actions > Import translated strings...]**
+1. 前往Web應用程式清單，按一下滑鼠右鍵，然後選取 **[!UICONTROL Actions > Import translated strings...]**
 
    >[!NOTE]
    >
-   >无需选择与翻译相关的Web应用程序。 将光标放在Web应用程序列表上的任意位置。
+   >不需要選取翻譯所關心的Web應用程式。 將游標置於Web應用程式清單上的任何位置。
 
    ![](assets/s_ncs_admin_survey_trad_import.png)
 
-1. 选择要导入的文件，然后单击 **[!UICONTROL Upload]**.
+1. 選取要匯入的檔案，然後按一下 **[!UICONTROL Upload]**.
 
    ![](assets/s_ncs_admin_survey_trad_import_start.png)
 
 >[!NOTE]
 >
->外部翻译始终优先于内部翻译。 如果发生冲突，内部翻译将被外部翻译覆盖。
+>外部翻譯的優先順序一律高於內部翻譯。 如果發生衝突，內部翻譯將由外部翻譯覆寫。
 
-## 更改表单显示语言 {#changing-forms-display-language}
+## 變更表單顯示語言 {#changing-forms-display-language}
 
-Web窗体以 **[!UICONTROL Localization]** 选项卡。 要更改语言，必须在URL的末尾添加以下字符(其中 **xx** 是语言的符号):
+網路表單會以中指定的預設語言顯示 **[!UICONTROL Localization]** Web應用程式屬性的索引標籤。 若要變更語言，您必須在URL的結尾新增下列字元(其中 **xx** 是語言的符號)：
 
 ```
 ?lang=xx
 ```
 
-如果语言是URL的第一个或唯一参数。 例如： **https://myserver/webApp/APP34?lang=en**
+語言是URL的第一個或唯一引數。 例如： **https://myserver/webApp/APP34**
 
 ```
 &lang=xx
 ```
 
-如果URL中语言之前有其他参数，请执行以下操作： 例如： **https://myserver/webApp/APP34?status=1&amp;lang=en**
+如果URL中的語言之前還有其他引數。 例如： **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
-下面列出了默认提供的翻译语言和字典。
+以下列出預設可用的翻譯語言和字典。
 
-**默认系统字典**:某些语言包括包含系统字符串翻译的默认词典。 有关更多信息，请参阅 [翻译系统字符串](#translating-the-system-strings).
+**預設系統字典**：某些語言包含預設字典，其中包含系統字串的翻譯。 有關詳細資訊，請參閱 [轉譯系統字串](#translating-the-system-strings).
 
-**日历管理**:Web应用程序的页面可以包含输入日期的日历。 默认情况下，此日历提供多种语言（天数的翻译、日期格式）。
+**行事曆管理**：網頁應用程式的頁面可包含用於輸入日期的日曆。 依預設，此行事曆提供數種語言版本（翻譯的天數、日期格式）。
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>语言（符号）</strong><br /> </td> 
-   <td> <strong>默认系统字典</strong><br /> </td> 
-   <td> <strong>日历管理</strong><br /> </td> 
+   <td> <strong>語言（符號）</strong><br /> </td> 
+   <td> <strong>預設系統字典</strong><br /> </td> 
+   <td> <strong>行事曆管理</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 德语(de)<br /> </td> 
+   <td> 德文(de)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 英语(en)<br /> </td> 
+   <td> 英文(en)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 英语（美国）(en_US)<br /> </td> 
+   <td> 英文（美國） (en_US)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 英语（英国）(en_GB)<br /> </td> 
+   <td> 英文（英國） (en_GB)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 阿拉伯语(ar)<br /> </td> 
+   <td> 阿拉伯文(ar)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -216,192 +216,192 @@ Web窗体以 **[!UICONTROL Localization]** 选项卡。 要更改语言，必须
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 朝鲜语(ko)<br /> </td> 
+   <td> 韓文(ko)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 丹麦语(da)<br /> </td> 
+   <td> 丹麥文(da)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 西班牙语(es)<br /> </td> 
+   <td> 西班牙文(es)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 爱沙尼亚语（等）<br /> </td> 
+   <td> 愛沙尼亞文(et)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 芬兰语(fi)<br /> </td> 
+   <td> 芬蘭文(fi)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 法语(fr)<br /> </td> 
+   <td> 法文(fr)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 法语（比利时）(fr_BE)<br /> </td> 
+   <td> 法文（比利時） (fr_BE)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 法语（法国）(fr_FR)<br /> </td> 
+   <td> 法文（法國） (fr_FR)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 希腊语(el)<br /> </td> 
+   <td> 希臘文(el)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 希伯来语(he)<br /> </td> 
+   <td> 希伯來文(he)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 匈牙利语(hu)<br /> </td> 
+   <td> 匈牙利文(hu)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 印度尼西亚语(id)<br /> </td> 
+   <td> 印尼文(id)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 爱尔兰语(ga)<br /> </td> 
+   <td> 愛爾蘭文(ga)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 意大利语(it)<br /> </td> 
+   <td> 義大利文(it)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 意大利语（意大利）(it_IT)<br /> </td> 
+   <td> 義大利文（義大利） (it_IT)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 意大利语（瑞士）(it_CH)<br /> </td> 
+   <td> 義大利文（瑞士） (it_CH)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 日语(ja)<br /> </td> 
+   <td> 日文(ja)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 拉脱维亚语(lv)<br /> </td> 
+   <td> 拉脫維亞文(lv)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 立陶宛语(lt)<br /> </td> 
+   <td> 立陶宛文(lt)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 马耳他语(mt)<br /> </td> 
+   <td> 馬爾他文(mt)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 荷兰语(nl)<br /> </td> 
+   <td> 荷蘭文(nl)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 荷兰语（比利时）(nl_BE)<br /> </td> 
+   <td> 荷蘭文（比利時） (nl_BE)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 荷兰语（荷兰）(nl_NL)<br /> </td> 
+   <td> 荷蘭文（荷蘭） (nl_NL)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 挪威语（挪威）(no_NO)<br /> </td> 
+   <td> 挪威文（挪威） (no_NO)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 波兰语(pl)<br /> </td> 
+   <td> 波蘭文(pl)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 葡萄牙语(pt)<br /> </td> 
+   <td> 葡萄牙文(pt)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 葡萄牙语（巴西）(pt_BR)<br /> </td> 
+   <td> 葡萄牙文（巴西） (pt_BR)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 葡萄牙语（葡萄牙）(pt_PT)<br /> </td> 
+   <td> 葡萄牙文（葡萄牙） (pt_PT)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 俄语(ru)<br /> </td> 
+   <td> 俄文(ru)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 斯洛文尼亚语(sl)<br /> </td> 
+   <td> 斯洛維尼亞文(sl)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 斯洛伐克语(sk)<br /> </td> 
+   <td> 斯洛伐克文(sk)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 瑞典语(sv)<br /> </td> 
+   <td> 瑞典文(sv)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 瑞典语（芬兰）(sv_FI)<br /> </td> 
+   <td> 瑞典文（芬蘭） (sv_FI)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 瑞典语（瑞典）(sv_SE)<br /> </td> 
+   <td> 瑞典文（瑞典） (sv_SE)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 捷克语(cs)<br /> </td> 
+   <td> 捷克文(cs)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 泰语(th)<br /> </td> 
+   <td> 泰文(th)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 越南语(vi)<br /> </td> 
+   <td> 越南文(vi)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 华伦(wa)<br /> </td> 
+   <td> 瓦隆文(wa)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -410,70 +410,70 @@ Web窗体以 **[!UICONTROL Localization]** 选项卡。 要更改语言，必须
 
 >[!NOTE]
 >
->要添加默认提供的语言以外的其他语言，请参阅 [添加翻译语言](#adding-a-translation-language)
+>若要新增預設語言以外的其他語言，請參閱 [新增翻譯語言](#adding-a-translation-language)
 
-## 示例：以多种语言显示Web应用程序 {#example--displaying-a-web-application-in-several-languages}
+## 範例：以數種語言顯示Web應用程式 {#example--displaying-a-web-application-in-several-languages}
 
-以下Web窗体有四种语言版本：英语、法语、德语和西班牙语。 字符串均已通过 **[!UICONTROL Translation]** 选项卡。 由于默认语言为英语，因此在发布调查时，使用标准URL以英语显示调查。
+下列網路表單提供四種語言版本：英文、法文、德文和西班牙文。 字元字串已透過 **[!UICONTROL Translation]** 網頁表單的索引標籤。 由於預設語言為英文，因此發佈調查表時，請使用標準URL以英文顯示。
 
 ![](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
-添加 **?lang=fr** 到URL的末尾，以法语显示它：
+新增 **？lang=fr** 在URL結尾以法文顯示：
 
 >[!NOTE]
 >
->每种语言的符号列表详见 [更改表单显示语言](#changing-forms-display-language).
+>每種語言的符號清單詳見 [變更表單顯示語言](#changing-forms-display-language).
 
 ![](assets/s_ncs_admin_survey_trad_sample_en.png)
 
-您可以添加 **?lang=es** 或 **?lang=de** 用西班牙语或德语显示。
+您可以新增 **？lang=es** 或 **？lang=de** 以西班牙文或德文顯示。
 
 >[!NOTE]
 >
->如果此Web应用程序已使用其他参数，请添加 **&amp;lang=**.\
+>如果此Web應用程式已使用其他引數，請新增 **&amp;lang=**.\
 >例如： **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
-## 高级翻译配置 {#advanced-translation-configuration}
+## 進階翻譯設定 {#advanced-translation-configuration}
 
 >[!CAUTION]
 >
->此部分仅适用于专家用户。
+>本區段僅供專家使用者使用。
 
-### 翻译系统字符串 {#translating-the-system-strings}
+### 轉譯系統字串 {#translating-the-system-strings}
 
-系统字符串是所有Web应用程序使用的现成字符串。 例如： **[!UICONTROL Next]** , **[!UICONTROL Previous]**, **[!UICONTROL Approve]** 按钮， **[!UICONTROL Loading]** 消息等。 默认情况下，某些语言包含包含这些字符串翻译的词典。 语言列表详见 [更改表单显示语言](#changing-forms-display-language).
+系統字串是所有Web應用程式所使用的現成可用的字元字串。 例如： **[!UICONTROL Next]** ， **[!UICONTROL Previous]**， **[!UICONTROL Approve]** 按鈕， **[!UICONTROL Loading]** 訊息等 依預設，某些語言會包含字典，其中包含這些字串的翻譯。 有關語言的詳細清單，請參閱 [變更表單顯示語言](#changing-forms-display-language).
 
-如果将Web应用程序翻译成系统词典未翻译的语言，则会显示一条警告消息，告知您缺少某些翻译。
+如果您將Web應用程式翻譯成系統字典未翻譯的語言，則會出現警告訊息，通知您缺少部分翻譯。
 
 ![](assets/s_ncs_admin_survey_trad_error.png)
 
-要添加语言，请应用以下步骤：
+若要新增語言，請套用下列步驟：
 
-1. 转到Adobe Campaign树并单击 **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]** .
-1. 在窗口的上部，选择要翻译的系统字符串，然后单击 **[!UICONTROL Add]** 的下一部分。
+1. 前往Adobe Campaign樹並按一下 **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]** .
+1. 在視窗的上半部分，選取要翻譯的系統字串，然後按一下 **[!UICONTROL Add]** 位於下方。
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
 
-1. 选择翻译语言并输入字符串的翻译。 您可以通过检查 **[!UICONTROL Translation approved]** 选项。
+1. 選取翻譯語言並輸入字串的翻譯。 您可以核取 **[!UICONTROL Translation approved]** 選項。
 
    ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
    >[!NOTE]
    >
-   >翻译批准是可选的，不会阻止该过程。
+   >翻譯核准為選用，不會阻礙此程式。
 
 >[!CAUTION]
 >
->请勿删除现成的系统字符串。
+>請勿刪除現成可用的系統字串。
 
-### 添加翻译语言 {#adding-a-translation-language}
+### 新增翻譯語言 {#adding-a-translation-language}
 
-要将Web应用程序翻译成默认语言以外的语言(请参阅 [更改表单显示语言](#changing-forms-display-language))，则需要添加新的翻译语言。
+若要將Web應用程式翻譯成預設語言以外的語言(請參閱 [變更表單顯示語言](#changing-forms-display-language))，您需要新增翻譯語言。
 
-1. 单击 **[!UICONTROL Administration > Platform > Enumerations]** “Adobe Campaign”树的节点，然后选择 **[!UICONTROL Languages available for translation]** 列表。 可用翻译的列表显示在窗口的下部。
+1. 按一下 **[!UICONTROL Administration > Platform > Enumerations]** Adobe Campaign樹狀結構的節點，並選取 **[!UICONTROL Languages available for translation]** 從清單中。 可用翻譯的清單會顯示在視窗的下方。
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
-1. 单击 **[!UICONTROL Add]** 按钮，然后输入 **[!UICONTROL Internal name]**, **[!UICONTROL Label]** 和图像的标识符（标志）。 要添加新映像，请与管理员联系。
+1. 按一下 **[!UICONTROL Add]** 按鈕，然後輸入 **[!UICONTROL Internal name]**， **[!UICONTROL Label]** 和影像的識別碼（標幟）。 若要新增影像，請聯絡您的管理員。
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)

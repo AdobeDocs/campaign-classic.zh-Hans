@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: 集成到 Linux 版的 Web 服务器
-description: 了解如何将Campaign集成到Web服务器(Linux)中
+description: 瞭解如何將Campaign整合至網頁伺服器(Linux)
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 5%
@@ -19,48 +19,48 @@ ht-degree: 5%
 
 
 
-Adobe Campaign包含Apache Tomcat，它通过HTTP（和SOAP）作为应用程序服务器中的入口点。
+Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程式伺服器的進入點。
 
-您可以使用此集成的Tomcat服务器来提供HTTP请求。
+您可以使用此整合式Tomcat伺服器來處理HTTP請求。
 
-在这种情况下：
+在此案例中：
 
-* 默认监听端口为8080。 要更改它，请参阅 [此部分](configure-tomcat.md).
-* 然后，客户端控制台使用URL进行连接，例如：
+* 預設接聽連線埠為8080。 若要變更，請參閱 [本節](configure-tomcat.md).
+* 然後，使用者端主控台會使用URL連線，例如：
 
    ```
    http://<computer>:8080
    ```
 
-但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开对网络外部控制台的访问时，我们建议使用专用Web服务器作为HTTP流量的主入口点。
+不過，基於安全性與管理考量，建議使用專用網頁伺服器作為HTTP流量的主要入口點，因為執行Adobe Campaign的電腦會公開在網際網路上，而您想要開啟網路外部主控台的存取許可權。
 
-Web服务器还允许您使用HTTPs协议保证数据的机密性。
+網頁伺服器也可讓您使用HTTPs通訊協定來保證資料機密性。
 
-同样，当您希望使用跟踪功能时，必须使用Web服务器，该功能仅作为Web服务器的扩展模块提供。
+同樣地，當您想要使用追蹤功能時，也必須使用Web伺服器，追蹤功能只能當做擴充模組提供給Web伺服器。
 
 >[!NOTE]
 >
->如果不使用跟踪功能，则可以通过重定向到Campaign来执行Apache或IIS的标准安装。 不需要跟踪Web服务器扩展模块。
+>如果您未使用追蹤功能，可以執行標準Apache或IIS安裝，並重導至Campaign。 不需要追蹤Web伺服器擴充功能模組。
 
-## 使用Debian配置Apache Web服务器 {#configuring-the-apache-web-server-with-debian}
+## 使用Debian設定Apache Web Server {#configuring-the-apache-web-server-with-debian}
 
-如果您在基于APT的分发下安装了Apache，则此过程适用。
+如果您在根據APT的分發下安裝Apache，則此程式適用。
 
 应用以下步骤：
 
-1. 使用以下命令禁用默认加载的模块：
+1. 使用下列命令停用預設載入的模組：
 
    ```
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   确保 **别名**, **authz_host** 和 **mime** 模块仍然处于启用状态。 为此，请使用以下命令：
+   確保 **別名**， **authz_host** 和 **mime** 模組仍為啟用。 为此，请使用以下命令：
 
    ```
    a2enmod  alias authz_host mime
    ```
 
-1. 创建文件 **nlsrv.load** in **/etc/apache2/mods-available** 并插入以下内容：
+1. 建立檔案 **nlsrv.load** 在 **/etc/apache2/mods-available** 並插入下列內容：
 
    在Debian 8中：
 
@@ -68,25 +68,25 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
    ```
 
-1. 创建文件 **nlsrv.conf** in **/etc/apache2/mods-available** 使用以下命令：
+1. 建立檔案 **nlsrv.conf** 在 **/etc/apache2/mods-available** 使用下列命令：
 
    ```
    ln -s /usr/local/[INSTALL]/nl6/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
    ```
 
-1. 使用以下命令激活此模块：
+1. 使用下列命令啟動此模組：
 
    ```
     a2enmod nlsrv
    ```
 
-   如果您使用 **mod_rewrite** 模块，则需要重命名 **nlsrv.load** 和 **nlsrv.conf** 文件到 **zz-nlsrv.load** 和 **zz-nlsrv.conf**. 要激活模块，请运行以下命令：
+   如果您使用 **mod_rewrite** Adobe Campaign頁面的模組，您必須重新命名 **nlsrv.load** 和 **nlsrv.conf** 檔案至 **zz-nlsrv.load** 和 **zz-nlsrv.conf**. 若要啟動模組，請執行以下命令：
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. 编辑 **/etc/apache2/envvars** 文件中，添加以下行：
+1. 編輯 **/etc/apache2/envvars** 檔案中，新增下列行：
 
    ```
    # Added Neolane
@@ -94,28 +94,28 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
    export USERPATH=/usr/local/neolane
    ```
 
-   保存更改。
+   儲存變更。
 
-1. 然后，使用以下类型的命令将Adobe Campaign用户添加到Apache用户组，反之亦然：
+1. 然後使用以下型別的命令，將Adobe Campaign使用者新增至Apache使用者群組，反之亦然：
 
    ```
    usermod neolane -G www-data
    usermod www-data -G neolane
    ```
 
-1. 重新启动Apache:
+1. 重新啟動Apache：
 
    ```
    invoke-rc.d apache2 restart
    ```
 
-## 在RHEL中配置Apache Web服务器 {#configuring-apache-web-server-in-rhel}
+## 在RHEL中設定Apache Web Server {#configuring-apache-web-server-in-rhel}
 
-如果您已在基于RPM（RHEL、CentOS和Suse）的包下安装并保护了Apache，则此过程适用。
+若您已在RPM （RHEL、CentOS和Suse）封裝下安裝並保護Apache，則此程式適用。
 
 应用以下步骤：
 
-1. 在 `httpd.conf` 文件中，激活以下Apache模块：
+1. 在 `httpd.conf` 檔案中，啟用下列Apache模組：
 
    ```
    alias
@@ -123,7 +123,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
    mime
    ```
 
-1. 停用以下模块：
+1. 停用下列模組：
 
    ```
    auth_basic
@@ -138,7 +138,7 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
    userdir
    ```
 
-   对链接到已停用模块的功能进行注释：
+   註解連結至已停用模組的函式：
 
    ```
    DirectoryIndex
@@ -154,18 +154,18 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
    ForceLanguagePriority
    ```
 
-1. 在中创建特定于Adobe Campaign的配置文件 `/etc/httpd/conf.d/` 文件夹。 例如 `CampaignApache.conf`
+1. 在中建立Adobe Campaign專屬設定檔 `/etc/httpd/conf.d/` 資料夾。 例如 `CampaignApache.conf`
 
-1. 对于 **RHEL7**，在文件中添加以下说明：
+1. 對象 **RHEL7**，請在檔案中新增下列指示：
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
    Include /usr/local/neolane/nl6/conf/apache_neolane.conf
    ```
 
-1. 对于 **RHEL7**:
+1. 對象 **RHEL7**：
 
-   添加 `/etc/systemd/system/httpd.service` 文件，其中包含以下内容：
+   新增 `/etc/systemd/system/httpd.service` 包含下列內容的檔案：
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -174,39 +174,39 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
    Environment=USERPATH=/usr/local/neolane LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib
    ```
 
-   更新系统使用的模块：
+   更新systemd使用的模組：
 
    ```
    systemctl daemon-reload
    ```
 
-1. 然后，通过运行以下命令，将Adobe Campaign运算符添加到Apache运算符组，反之亦然：
+1. 然後執行命令，將Adobe Campaign運運算元新增至Apache運運算元群組（反之亦然）：
 
    ```
    usermod -a -G neolane apache
    usermod -a -G apache neolane
    ```
 
-   要使用的组名称取决于Apache的配置方式。
+   要使用的群組名稱取決於Apache的設定方式。
 
-1. 运行Apache和Adobe Campaign服务器。
+1. 執行Apache和Adobe Campaign伺服器。
 
-   对于RHEL7:
+   對於RHEL7：
 
    ```
    systemctl start httpd
    systemctl start nlserver
    ```
 
-## 启动Web服务器并测试配置{#launching-the-web-server-and-testing-the-configuration}
+## 啟動Web伺服器並測試設定{#launching-the-web-server-and-testing-the-configuration}
 
-现在，您可以通过启动Apache来测试配置。 现在，Adobe Campaign模块应在控制台上显示其横幅（某些操作系统上显示两个横幅）：
+您現在可以啟動Apache以測試設定。 Adobe Campaign模組現在應在主控台上顯示其橫幅（某些作業系統上有兩個橫幅）：
 
 ```
  /etc/init.d/apache start
 ```
 
-将显示以下信息：
+會顯示下列資訊：
 
 ```
 12:26:28 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -217,15 +217,15 @@ Web服务器还允许您使用HTTPs协议保证数据的机密性。
 12:26:28 >   Server started
 ```
 
-接下来，检查它是否通过提交测试URL做出响应。
+接下來，請檢查它是否透過提交測試URL來回應。
 
-您可以通过执行以下操作，从命令行中测试此代码：
+您可以從命令列透過執行下列動作來測試此專案：
 
 ```
  telnet localhost 80  
 ```
 
-您应该获得：
+您應取得：
 
 ```
 Trying 127.0.0.1...
@@ -233,17 +233,17 @@ Connected to localhost.localdomain.
 Escape character is '^]'.
 ```
 
-然后输入：
+然後輸入：
 
 ```
 GET /r/test
 ```
 
-将显示以下信息：
+會顯示下列資訊：
 
 ```
 <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='' localHost='XXXX'/>
 Connection closed by foreign host.
 ```
 
-您还可以请求URL [`https://<computer>`](https://myserver.adobe.com/r/test) 从Web浏览器访问。
+您也可以要求URL [`https://<computer>`](https://myserver.adobe.com/r/test) 從網頁瀏覽器。

@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: 通过 LDAP 连接
-description: 了解如何使用LDAP登录Campaign
+description: 瞭解如何使用LDAP登入Campaign
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: e011333411af79b985166a4e73592a1860749cf1
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 1%
@@ -17,50 +17,50 @@ ht-degree: 1%
 
 # 通过 LDAP 连接{#connecting-through-ldap}
 
-## 配置Campaign和LDAP {#configuring-campaign-and-ldap}
+## 設定Campaign和LDAP {#configuring-campaign-and-ldap}
 
 >[!NOTE]
 >
->LDAP配置仅可用于内部部署或混合安装。
+>LDAP設定僅適用於內部部署或混合安裝。
 
-LDAP配置在部署向导中执行。 的 **[!UICONTROL LDAP integration]** 选项。 请参阅 [部署向导](../../installation/using/deploying-an-instance.md#deployment-wizard).
+LDAP設定會在部署精靈中執行。 此 **[!UICONTROL LDAP integration]** 選項必須在第一個組態步驟中選取。 請參閱 [部署精靈](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-利用窗口，可通过指定的LDAP目录配置Adobe Campaign用户的标识。
+視窗可讓您透過指定的LDAP目錄來設定Adobe Campaign使用者的身分識別。
 
 ![](assets/s_ncs_install_deployment_wiz_ldap_01.png)
 
-* 在 **[!UICONTROL LDAP server]** 字段。 您可以添加端口号。 默认情况下，使用的端口为389。
-* 在下拉列表中，为用户选择身份验证方法：
+* 在中指定LDAP伺服器的位址 **[!UICONTROL LDAP server]** 欄位。 您可以新增連線埠號碼。 依預設，使用的連線埠為389。
+* 在下拉式清單中，選取使用者的驗證方法：
 
-   * 加密密码(**md5**)
+   * 加密密碼(**md5**)
 
-      默认模式。
+      預設模式。
 
-   * 纯文本密码+ SSL(**TLS**)
+   * 純文字密碼+ SSL (**TLS**)
 
-      整个身份验证过程（包括密码）已加密。 安全端口636不得在此模式下使用：Adobe Campaign会自动切换到安全模式。
+      整個驗證程式（包括密碼）都會加密。 在此模式中不得使用安全連線埠636： Adobe Campaign會自動切換至安全模式。
 
-      使用此身份验证模式时，在Linux中，证书由openLDAP客户端库验证。 我们建议使用有效的SSL证书，以便对身份验证过程进行加密。 否则，信息将以纯文本形式显示。
+      當您使用此驗證模式時，在Linux中，憑證會由openLDAP使用者端程式庫驗證。 建議您使用有效的SSL憑證，以便加密驗證程式。 否則，資訊將以純文字顯示。
 
-      证书也在Windows中验证。
+      憑證也會在Windows中驗證。
 
-   * Windows NT LAN管理器(**NTLM**)
+   * Windows NT LAN管理員(**NTLM**)
 
-      专有的Windows身份验证。 的 **[!UICONTROL Unique identifier]** 仅用于域名。
+      專有的Windows驗證。 此 **[!UICONTROL Unique identifier]** 僅用於網域名稱。
 
-   * 分布式密码验证(**DPA**)
+   * 分散式密碼驗證(**DPA**)
 
-      专有的Windows身份验证。 的 **[!UICONTROL Unique identifier]** 仅用于域名(domain.com)。
+      專有的Windows驗證。 此 **[!UICONTROL Unique identifier]** 僅用於網域名稱(domain.com)。
 
    * 纯文本密码
 
-      无加密（仅用于测试阶段）。
+      無加密（僅供測試階段使用）。
 
-* 选择用户身份验证模式： **[!UICONTROL Automatically compute the unique user identifier]** (请参阅步骤 [可分辨名称计算](#distinguished-name-calculation))或 **[!UICONTROL Search the unique user identifier in the directory]** (请参阅步骤 [搜索标识符](#searching-for-identifiers))。
+* 選取使用者驗證模式： **[!UICONTROL Automatically compute the unique user identifier]** （請參閱步驟） [辨別名稱計算](#distinguished-name-calculation))或 **[!UICONTROL Search the unique user identifier in the directory]** （請參閱步驟） [搜尋識別碼](#searching-for-identifiers))。
 
-## 兼容性 {#compatibility}
+## 相容性 {#compatibility}
 
-兼容的系统取决于所选的身份验证机制。 以下是操作系统和LDAP服务器的兼容性矩阵。
+相容的系統取決於選取的驗證機制。 以下是作業系統與LDAP伺服器的相容性矩陣。
 
 <table> 
  <thead> 
@@ -82,111 +82,111 @@ LDAP配置在部署向导中执行。 的 **[!UICONTROL LDAP integration]** 选�
    <td> Windows、Linux<br /> </td> 
   </tr> 
   <tr> 
-   <td> NTLM和DPA<br /> </td> 
+   <td> NTLM與DPA<br /> </td> 
    <td> </td> 
    <td> Windows<br /> </td> 
   </tr> 
   <tr> 
-   <td> 纯文本<br /> </td> 
+   <td> 純文字<br /> </td> 
    <td> Windows、Linux<br /> </td> 
    <td> Windows、Linux<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 可分辨名称计算 {#distinguished-name-calculation}
+## 辨別名稱計算 {#distinguished-name-calculation}
 
-如果要计算可分辨名称(DN)标识符，则部署向导的下一步允许您配置计算模式。
+如果您要計算辨別名稱(DN)識別碼，部署精靈的下一個步驟可讓您設定計算模式。
 
 ![](assets/s_ncs_install_deployment_wiz_ldap_02.png)
 
-* 在 **[!UICONTROL Distinguished Name]** 字段。
+* 在的目錄中，指定使用者的唯一識別碼（辨別名稱 — DN）。 **[!UICONTROL Distinguished Name]** 欄位。
 
-   **[!UICONTROL (login)]** 将替换为Adobe Campaign运算符的标识符。
+   **[!UICONTROL (login)]** 將取代為Adobe Campaign運運算元的識別碼。
 
    >[!CAUTION]
    >
-   >的 **[!UICONTROL dc]** 设置必须小写。
+   >此 **[!UICONTROL dc]** 設定必須為小寫。
 
-* 选择选项 **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** 以同步LDAP目录中的组和用户关联以及Adobe Campaign中的组和用户关联。
+* 選取選項 **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** 以同步LDAP目錄中的群組與使用者關聯，以及Adobe Campaign中的群組與使用者關聯。
 
-   选择此选项时， **[!UICONTROL Application level DN used for the search]** 和 **[!UICONTROL Password of the application login]** 启用。
+   選取此選項時， **[!UICONTROL Application level DN used for the search]** 和 **[!UICONTROL Password of the application login]** 已啟用。
 
-   如果填充这两个字段，Adobe Campaign将使用其自己的登录名和密码连接到LDAP服务器。 如果它们为空，Adobe Campaign将匿名连接到服务器。
+   如果您填入這兩個欄位，Adobe Campaign會使用自己的登入和密碼連線至LDAP伺服器。 如果它們是空的，Adobe Campaign將匿名連線到伺服器。
 
-## 搜索标识符 {#searching-for-identifiers}
+## 搜尋識別碼 {#searching-for-identifiers}
 
-如果选择搜索标识符，则部署向导允许您配置搜索。
+如果您選擇搜尋識別碼，部署精靈可讓您設定搜尋。
 
-* 在 **[!UICONTROL Application level DN used for the search]** 和 **[!UICONTROL Password of the application login]** 字段中，提供用于搜索标识符的Adobe Campaign将连接的标识符和密码。 如果它们为空，Adobe Campaign将匿名连接到服务器。
-* 指定 **[!UICONTROL Base identifier]** 和 **[!UICONTROL Search scope]** 以确定要从中开始搜索的LDAP目录的子集。
+* 在 **[!UICONTROL Application level DN used for the search]** 和 **[!UICONTROL Password of the application login]** 欄位中，提供Adobe Campaign用來連線以搜尋識別碼的識別碼和密碼。 如果它們是空的，Adobe Campaign將匿名連線到伺服器。
+* 指定 **[!UICONTROL Base identifier]** 和 **[!UICONTROL Search scope]** 欄位，以判斷要開始搜尋的LDAP目錄子集。
 
-   在下拉列表中选择所需的模式：
+   在下拉式清單中選取所需的模式：
 
    ![](assets/s_ncs_install_deployment_wiz_ldap_03.png)
 
    1. **[!UICONTROL Recursive (default mode)]**.
 
-      从给定级别开始，将以完整方式搜索LDAP目录。
+      會從指定的層級開始完全搜尋LDAP目錄。
 
    1. **[!UICONTROL Limited to the base]**.
 
-      搜索中包含所有属性。
+      所有屬性都包含在搜尋中。
 
    1. **[!UICONTROL Limited to the first sub-level of the base]**.
 
-      将对目录的所有属性执行搜索，并从属性的第一级开始执行搜索。
+      對目錄的所有屬性執行搜尋，並從屬性的第一層級開始。
 
-* 的 **[!UICONTROL Filter]** 字段，可指定元素以优化搜索范围。
+* 此 **[!UICONTROL Filter]** 欄位可讓您指定元素來縮小搜尋範圍。
 
-## 配置LDAP授权 {#configuring-ldap-authorizations}
+## 設定LDAP授權 {#configuring-ldap-authorizations}
 
-当您选择 **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** 选项。
+當您選取 **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** 選項。
 
 ![](assets/s_ncs_install_deployment_wiz_ldap_04.png)
 
-您必须指定多个参数才能找到用户所属的组或组及其相应权限，例如：
+您必須指定數個引數，才能尋找使用者所屬的一個或多個群組及其對應的許可權，例如：
 
-* the **[!UICONTROL Database identifier]** 字段，
-* the **[!UICONTROL Search scope]** 字段，
+* 此 **[!UICONTROL Database identifier]** 欄位，
+* 此 **[!UICONTROL Search scope]** 欄位，
 
    >[!NOTE]
    >
-   >如果已选择搜索DN，则可以选择 **[!UICONTROL Reuse the DN search parameters]** 以便从上一屏幕中继承DN的选定值和搜索范围。
+   >如果您已選擇搜尋DN，可以選取 **[!UICONTROL Reuse the DN search parameters]** 以延續前一個畫面中為DN和搜尋範圍選取的值。
 
-* the **[!UICONTROL Rights search filter]** 字段，根据登录名和用户的可分辨名称，
-* the **[!UICONTROL Attribute containing the group or authorization name]** 字段，
-* the **[!UICONTROL Association mask]** 字段，用于提取Adobe Campaign中的组名称及其关联权限。 您可以使用正则表达式来搜索名称。
-* 选择 **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** 以便用户自动获得连接的访问权限。
+* 此 **[!UICONTROL Rights search filter]** 欄位，根據登入和使用者的辨別名稱，
+* 此 **[!UICONTROL Attribute containing the group or authorization name]** 有關使用者的欄位，
+* 此 **[!UICONTROL Association mask]** 欄位，用於在Adobe Campaign中擷取群組名稱及其相關許可權。 您可以使用規則運算式來搜尋名稱。
+* 選取 **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** 以便自動授予使用者連線的存取許可權。
 
-单击 **[!UICONTROL Save]** 完成实例的配置。
+按一下 **[!UICONTROL Save]** 以完成執行個體的設定。
 
-## 管理操作员 {#managing-operators}
+## 管理運運算元 {#managing-operators}
 
-确认配置后，必须定义通过LDAP目录管理的Adobe Campaign运算符。
+確認設定後，您必須定義透過LDAP目錄管理哪些Adobe Campaign運運算元。
 
-要使用LDAP目录验证操作员，请编辑相应的配置文件，然后单击 **[!UICONTROL Edit the access parameters]** 链接。 选择 **[!UICONTROL Use LDAP for authentication]** 选项：的 **[!UICONTROL Password]** 字段显示为灰色。
+若要使用LDAP目錄來驗證運運算元，請編輯對應的設定檔，然後按一下 **[!UICONTROL Edit the access parameters]** 連結。 選取 **[!UICONTROL Use LDAP for authentication]** 選項： **[!UICONTROL Password]** 此運運算元的欄位會變成灰色。
 
 ![](assets/s_ncs_install_operator_in_ldap.png)
 
 ## 用例 {#use-cases}
 
-本节提供了一些简单的用例，帮助您根据需要实现最合适的配置。
+本節提供一些簡單的使用案例，協助您根據需求達成最適當的設定。
 
-1. 已在LDAP目录中创建用户，但未在Adobe Campaign中创建。
+1. 已在LDAP目錄中建立使用者，但未在Adobe Campaign中建立。
 
-   可以配置Adobe Campaign，以便用户通过其LDAP身份验证访问平台。 Adobe Campaign需要能够控制LDAP目录中ID/密码组合的有效性，以便能够在Adobe Campaign中即时创建运算符。 为此，请检查 **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** 选项。 在这种情况下，还需要配置组同步：the **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** 选项。
+   可以設定Adobe Campaign，讓使用者透過其LDAP驗證存取平台。 Adobe Campaign需要能夠控制LDAP目錄中ID/密碼組合的有效性，以便在Adobe Campaign中即時建立運運算元。 若要這麼做，請核取 **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** 選項。 在此情況下，也需要設定群組同步： **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** 需要選取選項。
 
-1. 用户已在Adobe Campaign中创建，但未在LDAP目录中创建。
+1. 使用者已在Adobe Campaign中建立，但未在LDAP目錄中建立。
 
-   他们无法登录Adobe Campaign。
+   他們將無法登入Adobe Campaign。
 
-1. LDAP目录中有一个组在Adobe Campaign中不存在。
+1. LDAP目錄中的群組不存在於Adobe Campaign中。
 
-   此组将不会在Adobe Campaign中创建。 您需要创建组并同步这些组，才能通过 **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** 选项。
+   不會在Adobe Campaign中建立此群組。 您需要建立群組並同步群組，以透過 **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** 選項。
 
-1. 组存在于Adobe Campaign中，并且LDAP目录将在事件后激活：Adobe Campaign中的用户组不会自动替换为LDAP组的内容。 同样，如果组仅存在于Adobe Campaign中，则在LDAP中创建并同步该组之前，不能向其添加LDAP用户。
+1. 群組存在於Adobe Campaign中，且LDAP目錄在事件後啟動： Adobe Campaign中的使用者群組不會自動取代為LDAP群組的內容。 同樣地，如果群組僅存在於Adobe Campaign中，則在LDAP中建立並同步處理群組之前，不能將LDAP使用者新增到該群組中。
 
-   无论是通过Adobe Campaign还是LDAP，从不会动态创建组。 需要在Adobe Campaign和LDAP目录中单独创建它们。
+   無論透過Adobe Campaign還是LDAP，群組都不會即時建立。 兩者都需要分別在Adobe Campaign和LDAP目錄中建立。
 
-   LDAP目录中的组名称需要与Adobe Campaign组的名称一致。 其关联掩码在部署向导的最后一个配置阶段中定义：Adobe Campaign_(.&#42;)，例如。
+   LDAP目錄中的群組名稱必須與Adobe Campaign群組的名稱一致。 它們的關聯遮罩會在部署精靈的最後一個設定階段中定義： Adobe Campaign_(。&#42;)。
