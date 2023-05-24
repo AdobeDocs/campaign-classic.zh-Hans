@@ -17,19 +17,19 @@ ht-degree: 3%
 
 
 
-本节详细介绍如何构建用于执行A/B测试的工作流。
+本节详细介绍如何构建工作流以执行A/B测试。
 
-1. 创建新工作流，然后配置 [查询](../../workflow/using/query.md) 活动来定位所需的群体。
+1. 创建新工作流，然后配置 [查询](../../workflow/using/query.md) 活动，以定位所需群体。
 
-1. 添加 [拆分](../../workflow/using/split.md) 活动，将目标群体划分为多个子集。
+1. 添加 [Split](../../workflow/using/split.md) 活动，将目标群体划分为多个子集。
 
-1. 打开活动，然后根据需要配置每个子集。 有关如何配置 **[!UICONTROL Split]** 活动，请参阅 [此部分](../../workflow/using/split.md).
+1. 打开活动，然后根据需要配置每个子集。 有关如何配置的详细信息 **[!UICONTROL Split]** 活动，请参阅 [本节](../../workflow/using/split.md).
 
-   在本例中，我们希望通过将新闻稿的2个新主题分别展示给目标群体的10%来测试新闻稿的2个新主题。
+   在本例中，我们希望通过向10%的目标群体展示新闻稿中的每一个，来测试2个新主题。
 
    ![](assets/ab-testing-split.png)
 
-1. 添加过渡，以便将包含当前主题的新闻稿发送给其余群体。 为此，请激活 **[!UICONTROL Generate complement]** 选项 **[!UICONTROL General]** 选项卡。
+1. 添加过渡，以便向其余人群发送包含当前主题的新闻稿。 为此，请激活 **[!UICONTROL Generate complement]** 选项来自 **[!UICONTROL General]** 选项卡。
 
    ![](assets/ab-testing-complement.png)
 
@@ -39,4 +39,4 @@ ht-degree: 3%
 
 您现在可以启动工作流。 发送投放后，您将能够跟踪投放日志中三个子集的行为，以查看哪个主题最成功。
 
-工作流还允许您通过自动识别性能更佳的投放变体，然后将其发送给其余群体，来自动执行您的流程。 有关更多信息，请参阅此专述 [用例](a-b-testing-use-case.md).
+借助工作流，您还可以自动识别表现更好的投放变体，然后将其发送给其余群体，从而自动化您的流程。 有关更多信息，请参阅此专题 [用例](a-b-testing-use-case.md).

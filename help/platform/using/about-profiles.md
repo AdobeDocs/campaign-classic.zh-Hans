@@ -18,11 +18,11 @@ ht-degree: 60%
 
 
 
-用户档案将集中在Adobe Campaign数据库中。 有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助Adobe Campaign，您可以整合营销历史、购买信息、偏好、CRM数据以及整合视图中任何相关的PI数据，以便进行分析并采取行动。
+用户档案集中存储在Adobe Campaign数据库中。 有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助Adobe Campaign，您可以将营销历史、购买信息、偏好、CRM数据和任何相关的PI数据整合到一个整合视图中，以便进行分析并采取行动。
 
 “**用户档案**”是指代表最终客户或潜在客户的信息记录（例如 nmsRecipient 表或外部表中的记录，包含 cookie ID、客户 ID、移动标识符或与特定渠道相关的其他信息）。
 
-在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、SMS 等）所定位的默认用户档案。通过数据库中存储的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
+在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、SMS 等）所定位的默认用户档案。通过存储在数据库中的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
 
 ![](assets/do-not-localize/how-to-video.png) [了解视频中用户档案的概念](#create-profiles-video)
 
@@ -48,45 +48,45 @@ ht-degree: 60%
 
 >[!NOTE]
 >
->要了解如何导入文件和Web窗体，请参阅 [一般导入和导出](../../platform/using/get-started-data-import-export.md).
+>要了解如何导入文件和Web窗体，请参阅 [通用导入和导出](../../platform/using/get-started-data-import-export.md).
 
 ## 用户档案和目标 {#profiles-and-targets}
 
-的 **[!UICONTROL Profiles and targets]** 利用链接，可显示存储在Adobe Campaign数据库中的收件人。 您可以创建新的收件人、编辑现有的收件人以及访问其用户档案。有关详细信息，请参见[此页面](../../platform/using/editing-a-profile.md)。
+此 **[!UICONTROL Profiles and targets]** 链接可显示存储在Adobe Campaign数据库中的收件人。 您可以创建新的收件人、编辑现有的收件人以及访问其用户档案。有关详细信息，请参见[此页面](../../platform/using/editing-a-profile.md)。
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
 您还可以通过它访问：
 
-* 列表 —  [了解更多](../../platform/using/creating-and-managing-lists.md)
-* 订阅服务 —  [了解更多](../../delivery/using/managing-subscriptions.md)
-* web应用程序 —  [了解更多](../../web/using/about-web-applications.md)
-* 进出口（作业） —  [了解更多](../../platform/using/about-generic-imports-exports.md)
-* 定位工作流 —  [了解更多](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* 列表 —  [了解详情](../../platform/using/creating-and-managing-lists.md)
+* 订阅服务 —  [了解详情](../../delivery/using/managing-subscriptions.md)
+* Web应用程序 —  [了解详情](../../web/using/about-web-applications.md)
+* 导入和导出（作业） —  [了解详情](../../platform/using/about-generic-imports-exports.md)
+* 定位工作流 —  [了解详情](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
 收件人页面允许您对用户档案执行常见的操作：编辑、更新、添加、删除、排序。
 
 如需更多高级用户档案操作，您需要编辑 Adobe Campaign 树状结构。为此可单击 Adobe Campaign 主页上的 **[!UICONTROL Explorer]** 链接。
 
-默认情况下，收件人存储在 **[!UICONTROL Profiles and Targets > Recipients]** 树的节点。 您可通过此视图创建收件人，以及：
+默认情况下，收件人存储在 **[!UICONTROL Profiles and Targets > Recipients]** 树节点。 您可通过此视图创建收件人，以及：
 
-* 对数据库的用户档案进行排序和筛选 —  [了解更多](../../platform/using/filtering-options.md)
-* 从数据库中移动、复制或删除用户档案 —  [了解更多](../../platform/using/managing-profiles.md),
-* 更新用户档案 —  [了解更多](../../platform/using/updating-data.md)
-* 导出收件人 —  [了解更多](../../platform/using/exporting-and-importing-profiles.md)
-* 创建收件人组 —  [了解更多](../../platform/using/creating-and-managing-lists.md)
+* 排序和筛选数据库的用户档案 —  [了解详情](../../platform/using/filtering-options.md)
+* 从数据库中移动、复制或删除用户档案 —  [了解详情](../../platform/using/managing-profiles.md)，
+* 更新用户档案 —  [了解详情](../../platform/using/updating-data.md)
+* 导出收件人 —  [了解详情](../../platform/using/exporting-and-importing-profiles.md)
+* 创建收件人组 —  [了解详情](../../platform/using/creating-and-managing-lists.md)
 
 要访问各种高级功能和配置，需单击 **[!UICONTROL Explorer]** 图标。
 
 ![](assets/d_ncs_user_interface01.png)
 
-Adobe Campaign资源管理器的常规布局在 [本页](../../platform/using/adobe-campaign-explorer.md).
+Adobe Campaign Explorer的常规布局在中介绍 [此页面](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
->也可以单击 **[!UICONTROL Profiles and targets > Recipients]** 链接，从 Adobe Campaign 树状结构中显示该列表的高级视图。可根据您的需求配置列表的显示。您可以添加或删除列、定义列顺序、对数据进行排序等。 列表显示配置在 [本页](../../platform/using/adobe-campaign-ui-lists.md).
+>也可以单击 **[!UICONTROL Profiles and targets > Recipients]** 链接，从 Adobe Campaign 树状结构中显示该列表的高级视图。可根据您的需求配置列表的显示。您可以添加或删除列、定义列顺序、对数据排序等。 中介绍了列表显示配置 [此页面](../../platform/using/adobe-campaign-ui-lists.md).
 >
->您也可以定义收件人视图。有关此功能的更多信息，请参阅 [此部分](../../platform/using/access-management-folders.md).
+>您也可以定义收件人视图。有关此功能的更多信息，请参阅 [本节](../../platform/using/access-management-folders.md).
 
 ## 使用中的用户档案 {#active-profiles}
 
@@ -94,23 +94,23 @@ Adobe Campaign资源管理器的常规布局在 [本页](../../platform/using/ad
 
 计费账单的开立仅会考虑&#x200B;**使用中**&#x200B;的用户档案。如果用户档案在过去 12 个月通过任何渠道被定位或进行了传输，则该用户档案被视为使用中。
 
-已被多个投放定向的用户档案将仅计数一次。
+多次投放所定向的用户档案仅计数一次。
 
 >[!NOTE]
 >
 >Facebook 和 Twitter 渠道不包含在內。
 
-活动用户档案计数可用于 **营销实例** 仅。 它不适用于执行实例，即MID（中间采购）和RT（消息中心/实时消息）实例。
+活动配置文件计数可用于 **营销实例** 仅此而已。 它不适用于执行实例，即MID （中间源）和RT （消息中心/实时消息传递）实例。
 
 >[!NOTE]
 >
->您还可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关更多信息，请参阅 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>您还可以直接通过Campaign控制面板监控实例上的活动用户档案数。 有关详情，请参阅 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 ## 教程视频 {#create-profiles-video}
 
 了解如何访问用户档案数据、对用户档案进行排序和筛选以及手动创建和管理用户档案。
 
-此视频还介绍了Adobe Campaign Classic是否遵守了《通用数据保护法规》。
+此视频还介绍了Adobe Campaign Classic对一般数据保护法规的合规性。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
@@ -122,7 +122,7 @@ Adobe Campaign资源管理器的常规布局在 [本页](../../platform/using/ad
 
 * [定义目标群体](../../delivery/using/define-the-right-audience.md)
 
-* [在工作流中创建查询和划分数据区段](../../workflow/using/targeting-data.md)
+* [在工作流中创建查询和区段数据](../../workflow/using/targeting-data.md)
 
 * [选择目标映射](../../delivery/using/selecting-a-target-mapping.md)
 

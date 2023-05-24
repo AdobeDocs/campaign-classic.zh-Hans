@@ -18,15 +18,15 @@ ht-degree: 1%
 
 ## 数据模型概述 {#overview-of-the-datamodel}
 
-Adobe Campaign不为每个实体提供专用的读取API（没有getRecipient或getDelivery函数等）。 使用QUERY &amp; WRITER数据读取和修改方法访问模型的数据。
+Adobe Campaign不为每个实体提供专用读取API（无getRecipient或getDelivery函数等）。 使用QUERY &amp; WRITER数据读取和修改方法访问模型数据。
 
-Adobe Campaign允许您管理收藏集：通过查询，您可以恢复整个数据库中收集的一组信息。 与在SQL模式下访问不同，Adobe Campaign API返回的是XML树而不是数据列。 Adobe Campaign因此会创建包含所有收集数据的复合文档。
+Adobe Campaign允许您管理收藏集：通过查询，您可以恢复在整个群中收集的一组信息。 与在SQL模式下访问不同，Adobe Campaign API返回XML树而不是数据列。 因此，Adobe Campaign会创建包含所有收集数据的复合文档。
 
-此操作模式不提供XML文档的属性和元素与数据库中表列之间的一对一映射。
+此操作模式不提供在XML文档的属性和元素与数据库中表的列之间的一对一映射。
 
 XML文档存储在数据库的MEMO类型字段中。
 
-## 模型描述 {#description-of-the-model}
+## 模型的描述 {#description-of-the-model}
 
 您必须熟悉Adobe Campaign数据模型，才能在脚本中处理数据库的字段。
 
@@ -34,35 +34,35 @@ XML文档存储在数据库的MEMO类型字段中。
 
 ## 查询和编写器 {#query-and-writer}
 
-下面的介绍模式详细介绍了数据库和客户(网页或Adobe Campaign客户端控制台)之间用于读取(ExecuteQuery)和写入(Writer)的低级交换。
+以下介绍模式详细介绍了数据库和客户(网页或Adobe Campaign客户端控制台)之间读取(ExecuteQuery)和写入(Writer)的低级交换。
 
 ![](assets/s_ncs_integration_webservices_schema_writer.png)
 
-### ExecuteQuery {#executequery}
+### Executequery {#executequery}
 
 对于列和条件，您可以使用查询。
 
-这允许您隔离基础SQL。 查询语言不依赖于基础引擎：某些函数将被重新映射，这可能会生成多个SELECT SQL订单。
+这使您可以隔离基础SQL。 查询语言不依赖于底层引擎：某些函数将重新映射，这可能会生成多个SELECT SQL顺序。
 
-有关更多信息，请参阅 [模式“xtk:queryDef”的“ExecuteQuery”方法示例](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+有关更多信息，请参阅 [架构“xtk：queryDef”的“ExecuteQuery”方法示例](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-的 **ExecuteQuery** 方法介绍于 [ExecuteQuery(xtk:queryDef)](#executequery--xtk-querydef-).
+此 **Executequery** 方法在 [ExecuteQuery (xtk：queryDef)](#executequery--xtk-querydef-).
 
 ### 写入 {#write}
 
-使用“写入”(write)命令可以编写简单或复杂的文档，其中包含一个或多个基表中的条目。
+“写入”命令可让您编写简单或复杂的文档，并在基础的一个或多个表中包含条目。
 
-事务型API允许您通过 **updateOrInsert** 命令：使用一个命令可以创建或更新数据。 您还可以配置修改合并(**合并**):此操作模式允许您授权部分更新。
+事务型API允许您通过 **updateOrInsert** 命令：一个命令用于创建或更新数据。 您还可以配置修改合并(**merge**)：利用此操作模式，可授权进行部分更新。
 
 XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结构。
 
-Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xtk-session-).
+有关写入方法的介绍，请参见 [写入/写入收集(xtk：session)](#write---writecollection--xtk-session-).
 
-## ExecuteQuery(xtk:queryDef) {#executequery--xtk-querydef-}
+## ExecuteQuery (xtk：queryDef) {#executequery--xtk-querydef-}
 
-此方法允许您根据与架构关联的数据执行查询。 它采用身份验证字符串（必须登录）和XML文档，以描述要作为参数提交的查询。 返回参数是一个XML文档，其中包含查询结果，其格式为查询引用的架构。
+此方法允许您从与架构关联的数据执行查询。 它需要身份验证字符串（必须登录）和描述查询的XML文档，以作为参数提交。 return参数是一个XML文档，它以查询所引用的架构格式包含查询的结果。
 
-在“xtk:queryDef”架构中定义“ExecuteQuery”方法：
+“xtk：queryDef”架构中“ExecuteQuery”方法的定义：
 
 ```
 <method name="ExecuteQuery" const="true">
@@ -74,11 +74,11 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 
 >[!NOTE]
 >
->这是一种“const”方法。 输入参数以&quot;xtk:queryDef&quot;模式的格式包含在XML文档中。
+>这是“常量”方法。 输入参数以“xtk：queryDef”架构的格式包含在XML文档中。
 
 ### 输入查询的XML文档的格式 {#format-of-the-xml-document-of-the-input-query}
 
-查询的XML文档的结构在“xtk:queryDef ”架构中进行了描述。 本文档介绍SQL查询的子句：&quot;select&quot;、&quot;where&quot;、&quot;order by&quot;、&quot;group by&quot;、&quot;having&quot;。
+查询的XML文档的结构在“xtk：queryDef”模式中描述。 本文档介绍了SQL查询的子句：“select”、“where”、“order by”、“group by”、“having”。
 
 ```
 <queryDef schema="schema_key" operation="operation_type">
@@ -110,7 +110,7 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 </queryDef>
 ```
 
-子查询( `<subquery>`  )  `<condition> `  元素。 的语法   `<subquery> `   元素基于    `<querydef>`.
+子查询( `<subquery>`  )可以在中定义  `<condition> `  元素。 的语法   `<subquery> `   元素基于    `<querydef>`.
 
 示例 `<subquery>  : </subquery>`
 
@@ -128,20 +128,20 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
   
 ```
 
-查询必须引用 **模式** 属性。
+查询必须引用以下项的开始架构： **架构** 属性。
 
-所需的操作类型在 **操作** 属性和包含以下值之一：
+所需的操作类型输入于 **操作** 属性并包含以下值之一：
 
-* **get**:从表中检索记录，并在数据不存在时返回错误，
-* **getIfExists**:从表中检索记录，并在数据不存在时返回空文档，
-* **选择**:创建游标以返回多个记录，如果没有数据则返回空文档，
-* **计数**:返回数据计数。
+* **get**：从表中检索记录，如果数据不存在，则返回错误。
+* **getIfExists**：从表中检索记录，如果数据不存在，则返回空文档，
+* **选择**：创建光标以返回多个记录，如果没有数据，则返回空文档，
+* **count**：返回数据计数。
 
-的 **XPath** 语法用于根据输入模式查找数据。 有关XPath的详细信息，请参阅 [数据模式](../../configuration/using/data-schemas.md).
+此 **XPath** 语法用于根据输入架构定位数据。 有关XPath的更多信息，请参阅 [数据架构](../../configuration/using/data-schemas.md).
 
-#### “get”操作的示例 {#example-with-the--get--operation}
+#### “获取”操作的示例 {#example-with-the--get--operation}
 
-在电子邮件上检索带过滤器的收件人（“nms:recipient”模式）的姓氏和名字。
+检索在电子邮件上使用过滤器的收件人（“nms：recipient”模式）的姓氏和名字。
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -158,9 +158,9 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 </queryDef>
 ```
 
-#### “select”操作的示例 {#example-with-the--select--operation}
+#### “选择”操作的示例 {#example-with-the--select--operation}
 
-返回在文件夹和电子邮件域上过滤的收件人列表（按出生日期的降序排序）。
+返回按文件夹和电子邮件域过滤的收件人列表，并按出生日期的降序排序。
 
 ```
 <queryDef schema="nms:recipient" operation="select">
@@ -183,9 +183,9 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 </queryDef>
 ```
 
-表达式可以是简单的字段或复杂的表达式，如算术运算或字符串的串联。
+表达式可以是简单字段或复杂表达式，例如算术运算或字符串连接。
 
-要限制要返回的记录数，请将 **lineCount** 属性 `<querydef>` 元素。
+要限制返回的记录数，请添加 **行计数** 归因于 `<querydef>` 元素。
 
 要将查询返回的记录数限制为100，请执行以下操作：
 
@@ -194,14 +194,14 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 ...
 ```
 
-要检索下一个100条记录，请再次运行同一查询，并添加 **startLine** 属性。
+要检索接下来的100条记录，请再次运行相同的查询，添加 **startLine** 属性。
 
 ```
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
 ...
 ```
 
-#### “count”运算的示例 {#example-with-the--count--operation}
+#### “count”操作的示例 {#example-with-the--count--operation}
 
 要计算查询中的记录数，请执行以下操作：
 
@@ -216,11 +216,11 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 
 >[!NOTE]
 >
->我们再次使用上一个示例中的条件。 的 `<select>` 和子句不被使用。 `</select>`
+>我们再次使用上一个示例中的条件。 此 `<select>` 和子句不使用。 `</select>`
 
 #### 数据分组 {#data-grouping}
 
-要检索引用多次的电子邮件地址，请执行以下操作：
+要检索多次引用的电子邮件地址，请执行以下操作：
 
 ```
 <queryDef schema="nms:recipient" operation="select">
@@ -242,7 +242,7 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 </queryDef>
 ```
 
-通过添加 **groupBy** 属性直接分配给要分组的字段：
+可以通过添加 **groupBy** 要分组的字段的属性：
 
 ```
 <select>
@@ -254,9 +254,9 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 >
 >不再需要填充 `<groupby>` 元素。
 
-#### 在条件中括号 {#bracketing-in-conditions}
+#### 条件中的括号 {#bracketing-in-conditions}
 
-以下是两个在同一条件下括号的示例。
+以下是两个在相同条件下使用方括号的示例。
 
 * 单个表达式中的简单版本：
 
@@ -266,7 +266,7 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
    </where>
    ```
 
-* 具有的结构化版本 `<condition>` 元素：
+* 结构化版本，具有 `<condition>` 元素：
 
    ```
    <where>
@@ -281,7 +281,7 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
    </where>
    ```
 
-当多个条件应用于同一字段时，可以将“OR”运算符替换为“IN”运算：
+当多个条件应用于同一字段时，可以用“IN”操作替换“OR”运算符：
 
 ```
 <where>
@@ -292,11 +292,11 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 </where>
 ```
 
-当条件中使用了两个以上的数据时，此语法会简化查询。
+当条件中使用两个以上的数据时，此语法可简化查询。
 
 #### 链接示例 {#examples-on-links}
 
-* 链接1-1或N1:当表具有外键（链接从表开始）时，可以直接过滤或检索链接表的字段。
+* 链接1-1或N1：当表具有外键（链接从表开始）时，可以直接筛选或检索链接表的字段。
 
    文件夹标签上的过滤器示例：
 
@@ -306,7 +306,7 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
    </where>
    ```
 
-   要从“nms:recipient”模式检索文件夹的字段，请执行以下操作：
+   要从“nms：recipient”模式中检索文件夹的字段，请执行以下操作：
 
    ```
    <select>
@@ -317,9 +317,9 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
    </select>
    ```
 
-* 收藏集链接(1N):必须通过 **存在** 或 **不存在** 运算符。
+* 收藏集链接(1N)：必须通过 **存在** 或 **不存在** 运算符。
 
-   要筛选订阅了“新闻稿”信息服务的收件人，请执行以下操作：
+   筛选已订阅“新闻稿”信息服务的收件人：
 
    ```
    <where>
@@ -329,9 +329,9 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
    </where>
    ```
 
-   直接从 `<select>` 不建议使用子句，因为查询返回主产品。 仅当链接的表只包含一条记录时(例如， `<node expr="">`)。
+   直接从检索集合链接的字段 `<select>` 不建议使用子句，因为查询返回基数product。 仅当链接表仅包含一个记录时才使用它(示例 `<node expr="">`)。
 
-   “订阅”集合链接示例：
+   “订阅”收藏集链接示例：
 
    ```
    <select>
@@ -339,11 +339,11 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
    </select>
    ```
 
-   可以检索包含 `<select>` 子句。 引用字段的XPaths是集合元素中的上下文字段。
+   可以在中检索包含集合链接元素的子列表 `<select>` 子句。 引用字段的XPath与收集元素中的上下文相关。
 
-   过滤( `<orderby>`  )和限制(  `<where>`  )元素。
+   筛选( `<orderby>`  )和限制(  `<where>`  )个元素。
 
-   在本例中，对于每个收件人，查询都会返回收件人订阅的电子邮件和信息服务列表：
+   在本例中，对于每个收件人，查询将返回收件人订阅的电子邮件和信息服务的列表：
 
    ```
    <queryDef schema="nms:recipient" operation="select">
@@ -365,11 +365,11 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
    </queryDef>
    ```
 
-#### 绑定“where”和“select”子句的参数 {#binding-the-parameters-of-the--where--and--select--clause}
+#### 绑定&#39;where&#39;和&#39;select&#39;子句的参数 {#binding-the-parameters-of-the--where--and--select--clause}
 
-参数的绑定允许引擎设置查询中使用的参数的值。 这非常有用，因为引擎负责值的转义，并且对于要检索的参数，缓存还有额外的好处。
+参数的绑定允许引擎设置查询中使用的参数的值。 这非常有用，因为引擎负责转义值，而且对于要检索的参数来说，缓存还有额外的好处。
 
-构建查询时，“绑定”值将替换为字符(? 在ODBC中， `#[index]#` ...)。
+构建查询时，“绑定”值将替换为字符(？ 在ODBC中， `#[index]#` （在postgres...）中)。
 
 ```
 <select>
@@ -384,35 +384,35 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 
 >[!IMPORTANT]
 >
->如果查询包含“订单依据”或“组依据”说明，则数据库引擎将无法“绑定”值。 必须将@noSqlBind=&quot;true&quot;属性放在查询的&quot;select&quot;和/或&quot;where&quot;说明中。
+>如果查询包含“order-by”或“group-by”指令，则数据库引擎将无法“绑定”值。 您必须将@noSqlBind=&quot;true&quot;属性放置在查询的&quot;select&quot;和/或&quot;where&quot;指令上。
 
-#### 查询构建提示： {#query-building-tip-}
+#### 查询生成提示： {#query-building-tip-}
 
-要帮助处理查询的语法，您可以在Adobe Campaign客户端控制台中使用通用查询编辑器来编写查询( **[!UICONTROL Tools/ Generic query editor...]** 菜单)。 操作步骤：
+要帮助使用查询的语法，您可以使用Adobe Campaign客户端控制台中的通用查询编辑器来编写查询( **[!UICONTROL Tools/ Generic query editor...]** 菜单)。 操作步骤：
 
 1. 选择要检索的数据：
 
    ![](assets/s_ncs_integration_webservices_queyr1.png)
 
-1. 定义过滤条件：
+1. 定义筛选条件：
 
    ![](assets/s_ncs_integration_webservices_queyr2.png)
 
-1. 执行查询并按Ctrl+F4查看查询源代码。
+1. 执行查询并按CTRL+F4查看查询源代码。
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
 ### 输出文档格式 {#output-document-format}
 
-返回参数是与查询关联的架构格式的XML文档。
+返回参数是格式为与查询关联的架构的XML文档。
 
-从“nms:recipient”模式返回“get”操作的示例：
+从“get”操作的“nms：recipient”模式返回的示例：
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
 ```
 
-在“选择”操作中，返回的文档是元素的枚举：
+在“选择”操作中，返回的文档是元素的明细列表：
 
 ```
 <!-- the name of the first element does not matter -->
@@ -431,7 +431,7 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 
 #### 别名 {#alias}
 
-使用别名可修改输出文档中数据的位置。 的 **别名** 属性必须在相应的字段上指定XPath。
+别名允许您修改输出文档中数据的位置。 此 **别名** 属性必须在相应的字段中指定XPath。
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -449,7 +449,7 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 <recipient My_folder="Recipients" First name ="John" lastName="Doe"/>
 ```
 
-而不是：
+而非：
 
 ```
 <recipient firstName="John" lastName="Doe">
@@ -499,17 +499,17 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
    </SOAP-ENV:Envelope>
    ```
 
-## Write/WriteCollection(xtk:session) {#write---writecollection--xtk-session-}
+## 写入/写入收集(xtk：session) {#write---writecollection--xtk-session-}
 
-这些服务用于插入、更新或删除实体（“写入”方法）或实体集合（“写入收集”方法）。
+这些服务用于插入、更新或删除实体（“写入”方法）或实体集合（“WriteCollection”方法）。
 
-要更新的实体与数据模式相关联。 输入参数是验证字符串（必须登录）和包含要更新数据的XML文档。
+要更新的实体与数据模式相关联。 输入参数是一个身份验证字符串（必须登录）和一个包含要更新的数据的XML文档。
 
-本文档补充了有关配置写入过程的说明。
+对本文档进行了补充，提供了有关配置写入过程的说明。
 
-除错误外，调用不返回任何数据。
+调用未返回任何数据，错误除外。
 
-在“xtk:session”架构中对“Write”和“WriteCollection”方法的定义：
+“xtk：session”模式中“Write”和“WriteCollection”方法的定义：
 
 ```
 <method name="Write" static="true">
@@ -526,27 +526,27 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 
 >[!NOTE]
 >
->这是一种“静态”方法。 输入参数以要更新的模式的格式包含在XML文档中。
+>这是一种“静态”方法。 输入参数以要更新的架构的格式包含在XML文档中。
 
 ### 概述 {#overview}
 
-数据协调操作基于在关联架构中输入的键值的定义。 写入过程根据输入文档中输入的数据查找第一合格键。 根据实体在数据库中的存在，插入或更新实体。
+数据协调根据在关联架构中输入的键的定义运行。 写入过程根据输入文档中输入的数据查找第一个符合条件的键。 根据实体在数据库中的存在性插入或更新该实体。
 
-待更新实体架构的键值已根据 **xtkschema** 属性。
+要更新的实体的架构的键已完成，该键基于 **xtkschema** 属性。
 
-因此，可以强制使用 **_key** 属性，该属性包含构成键的XPath列表（以逗号分隔）。
+因此，可以通过强制使用合并关键项 **_key** 包含构成键的XPath列表的属性（用逗号分隔）。
 
-可以通过填充 **_operation** 属性的值：
+可以通过填充 **操作(_O)** 属性的下列值：
 
-* **插入**:强制插入记录（不使用协调键值），
-* **insertOrUpdate**:根据协调键值（默认模式）更新或插入记录，
-* **更新**:更新记录；如果数据不存在，则不执行任何操作，
-* **删除**:删除记录，
-* **无**:仅用于链接协调，而不进行更新或插入。
+* **插入**：强制插入记录（不使用协调键），
+* **insertOrUpdate**：根据协调键（默认模式）更新或插入记录，
+* **更新**：更新记录；如果数据不存在，则不执行任何操作，
+* **delete**：删除记录，
+* **无**：仅用于链接协调，不会更新或插入。
 
-### “Write”方法的示例 {#example-with-the--write--method}
+### &#39;Write&#39;方法示例 {#example-with-the--write--method}
 
-使用电子邮件地址、出生日期和城镇更新或插入收件人（隐含的“insertOrUpdate”操作）：
+使用电子邮件地址、出生日期和城镇更新或插入收件人（隐式“insertOrUpdate”操作）：
 
 ```
 <recipient xtkschema="nms:recipient" email="john.doe@adobe.com" birthDate="1956/05/04" folder-id=1203 _key="@email, [@folder-id]">
@@ -562,9 +562,9 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 
 >[!NOTE]
 >
->对于删除操作，输入文档必须只包含构成协调键值的字段。
+>对于删除操作，输入文档必须仅包含组成协调键的字段。
 
-### “WriteCollection”方法的示例 {#example-with-the--writecollection--method}
+### &#39;WriteCollection&#39;方法的示例 {#example-with-the--writecollection--method}
 
 更新或插入多个收件人：
 
@@ -580,7 +580,7 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 
 #### 示例 1 {#example-1}
 
-根据文件夹的内部名称(@name)将文件夹与收件人关联。
+根据文件夹的内部名称(@name)将其与收件人关联。
 
 ```
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -588,17 +588,17 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 </recipient>
 ```
 
-可在链接的元素上输入“_key”和“_operation”属性。 此元素上的行为与输入架构的主元素上的行为相同。
+可以在链接的元素上输入“_key”和“_operation”属性。 此元素上的行为与输入架构的主元素上的行为相同。
 
-主实体(nms:recipient)的键的定义由链接表（元素）中的字段组成 `<folder>`  架构“xtk:folder”)和电子邮件。
+主实体(“nms：recipient”)的键的定义由链接表（元素）中的字段组成 `<folder>`  架构“xtk：folder”)和电子邮件。
 
 >[!NOTE]
 >
->在文件夹元素中输入的操作“无”定义对文件夹的协调，而无需更新或插入。
+>在文件夹元素上输入的操作“none”定义了对文件夹的协调，无需更新或插入。
 
 #### 示例 2 {#example-2}
 
-从收件人更新公司（“cus:company”架构中的链接表）：
+从收件人更新公司（在“cus：company”模式中链接的表）：
 
 ```
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -608,7 +608,7 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 
 #### 示例 3 {#example-3}
 
-使用组关系表(“nms:rcpGrpRel”)向组添加收件人：
+使用组关系表(“nms：rcpGrpRel”)将收件人添加到组：
 
 ```
 <recipient _key="@email" email="martin.ledger@adobe.net" xtkschema="nms:recipient">
@@ -620,11 +620,11 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
 
 >[!NOTE]
 >
->键的定义未在 `<rcpgroup>` 元素，因为基于组名称的隐式键在“nms:group”模式中定义。
+>键的定义未输入到 `<rcpgroup>` 元素，因为在“nms：group”架构中定义了基于组名称的隐式键。
 
-### XML收集元素 {#xml-collection-elements}
+### XML收藏集元素 {#xml-collection-elements}
 
-默认情况下，必须填充所有集合元素，才能更新XML集合元素。 来自数据库的数据将替换为来自输入文档的数据。 如果文档仅包含要更新的元素，则必须对所有要更新的集合元素填充“_operation”属性，以便强制与数据库的XML数据合并。
+默认情况下，必须填写所有收集要素才能更新XML收集要素。 数据库中的数据将被输入文档中的数据替换。 如果文档只包含要更新的元素，则必须在所有要更新的收集元素中填充“_operation”属性，以便强制与数据库的XML数据合并。
 
 ### SOAP消息示例 {#example-of-soap-messages-1}
 
@@ -656,7 +656,7 @@ Write方法在 [Write/WriteCollection(xtk:session)](#write---writecollection--xt
    </SOAP-ENV:Envelope>
    ```
 
-   返回时出错：
+   返回并出现错误：
 
    ```
    <?xml version='1.0'?>

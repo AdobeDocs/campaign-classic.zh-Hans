@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 投放执行
-description: 了解有关事务型消息投放执行和监控的更多信息
+description: 了解有关事务性消息投放执行和监控的更多信息
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
@@ -18,35 +18,35 @@ ht-degree: 6%
 
 
 
-## 事务型消息发送 {#transactional-message-send}
+## 事务性消息发送 {#transactional-message-send}
 
-在执行实例中，一旦扩充阶段完成并且投放模板已链接到事件，将发送投放。
+在执行实例上，一旦扩充阶段完成并将投放模板链接到事件，就会发送投放。
 
 >[!NOTE]
 >
->MTA优先处理事务型消息，而不是任何其他投放。
+>MTA会优先处理事务型消息，而不是任何其他投放。
 
 所有投放都分组在 **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** 文件夹。
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
-默认情况下，这些文件夹会按提交月分类为子文件夹。 可以在消息模板属性中更改此排序，如下所示。
+默认情况下，它们按投放月份分类为子文件夹。 可以在消息模板属性中更改此排序，如下所示。
 
 ![](assets/messagecenter_deliveries_properties_001.png)
 
 >[!NOTE]
 >
->对于托管安装或混合安装(如果已升级到 [增强的MTA](../../delivery/using/sending-with-enhanced-mta.md)，则所有事务型消息也可以随Adobe Campaign Enhanced MTA一起发送，以改进投放能力、吞吐量和跳出处理。 所有方面都与标准营销消息相同。
+>对于托管或混合安装，如果已升级到 [增强型MTA](../../delivery/using/sending-with-enhanced-mta.md)，所有事务型消息也可通过Adobe Campaign Enhanced MTA发送，以改进投放能力、吞吐量和退回处理。 所有方面都与标准营销消息相同。
 
-## 事务型消息监控 {#transactional-message-monitoring}
+## 事务性消息监测 {#transactional-message-monitoring}
 
-要监视事务型消息，请检查 [投放日志](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+要监控事务型消息，请检查 [投放日志](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
-从执行实例发送的事务性投放通过技术工作流(**[!UICONTROL Message Center execution instance]**)每小时运行一次。
+从执行实例发送的事务投放通过技术工作流(**[!UICONTROL Message Center execution instance]**)每小时运行一次。
 
 >[!NOTE]
 >
->投放每周会根据最新事件更新而不是事件创建日期来累计事件。 因此，在从控制实例提取事务性消息传递投放日志时，与每个投放日志ID关联的投放ID可能会随着日志更新而随时间而改变（例如，当收到事件的入站退件时）。
+>投放每周会根据最新的事件更新而不是根据事件创建日期来累计事件。 因此，在从控制实例提取事务性消息投放日志时，与每个投放日志ID关联的投放ID可能会随着日志的更新（例如，当接收到事件的入站退回时）而改变。
 
 <!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
@@ -75,4 +75,4 @@ To summarize, the deliveries weekly accumulate the events based on the latest ev
 
 Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
 
-要监控执行实例的活动和运行，请参阅 [事务性消息报表](../../message-center/using/about-transactional-messaging-reports.md).
+要监视执行实例的活动和运行，请参见 [事务性消息报告](../../message-center/using/about-transactional-messaging-reports.md).

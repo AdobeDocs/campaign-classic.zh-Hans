@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 檔案和資源管理
-description: 瞭解如何在Campaign中設定檔案和資源管理
+title: 文件和资源管理
+description: 了解如何在Campaign中配置文件和资源管理
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
@@ -15,57 +15,57 @@ ht-degree: 0%
 
 ---
 
-# 檔案和資源管理{#file-and-resmanagement}
+# 文件和资源管理{#file-and-resmanagement}
 
 
 
-## 限制上傳檔案格式 {#limiting-uploadable-files}
+## 限制上载文件格式 {#limiting-uploadable-files}
 
-使用 **uploadWhiteList** 屬性來限制可在Adobe Campaign伺服器上傳的檔案型別。
+使用 **uploadwhitelist** 属性，用于限制可在Adobe Campaign服务器上上传的文件类型。
 
-此屬性可在 **dataStore** 的元素 **serverConf.xml** 檔案。 所有引數都可在 **serverConf.xml** 列於此 [區段](../../installation/using/the-server-configuration-file.md).
+此属性可在 **数据存储** 元素 **serverConf.xml** 文件。 所有参数均可在 **serverConf.xml** 在此列出 [部分](../../installation/using/the-server-configuration-file.md).
 
-此屬性的預設值為 **.+** 並可讓您上傳任何檔案型別。
+此属性的默认值为 **.+** 并允许您上传任何文件类型。
 
-若要限制可能的格式，請以有效的Java規則運算式取代屬性值。 您可以用逗號分隔多個值，以輸入它們。
+要限制可能的格式，请用有效的Java正则表达式替换属性值。 您可以通过用逗号分隔来输入多个值。
 
-例如： **uploadWhiteList=&quot;。&#42;.png，.&#42;.jpg」** 可讓您將PNG和JPG格式上傳至伺服器。 不接受任何其他格式。
+例如： **uploadWhiteList=&quot;。&quot;&#42;.png，.&#42;.jpg”** 将允许您在服务器上传PNG和JPG格式。 不接受任何其他格式。
 
-您也可以藉由設定Web伺服器來防止重要檔案上傳。 [了解详情](web-server-configuration.md)
+您还可以通过配置Web服务器来阻止上载重要文件。 [了解详情](web-server-configuration.md)
 
 >[!NOTE]
 >
->此 **uploadWhiteList** 屬性會限制Adobe Campaign伺服器上可供上傳的檔案型別。 但是，當發佈模式為 **追蹤伺服器** 或 **其他Adobe Campaign伺服器**，則 **uploadWhitelist** 屬性也必須在這些伺服器上更新。
+>此 **uploadwhitelist** 属性限制可在Adobe Campaign服务器上上传的文件类型。 但是，当发布模式为 **跟踪服务器** 或 **其他Adobe Campaign服务器**，则 **uploadWhitelist** 属性也必须在这些服务器上更新。
 
-## Proxy連線設定 {#proxy-connection-configuration}
+## 代理连接配置 {#proxy-connection-configuration}
 
-您可以透過Proxy，使用 **檔案傳輸** 例如工作流程活動。 若要完成此操作，您需要設定 **proxyConfig** 部分 **serverConf.xml** 檔案的特定命令。 所有引數都可在 **serverConf.xml** 列於此 [區段](../../installation/using/the-server-configuration-file.md).
+您可以通过代理，使用 **文件传输** 例如，工作流活动。 要实现此目的，您需要配置 **proxyConfig** 部分 **serverConf.xml** 通过特定命令执行文件。 所有参数均可在 **serverConf.xml** 在此列出 [部分](../../installation/using/the-server-configuration-file.md).
 
-可以使用下列Proxy連線：HTTP、HTTPS、FTP、SFTP。 請注意，從20.2 Campaign版本開始，HTTP和HTTPS通訊協定引數為 **不再提供**. 由於這些引數仍可在先前的組建中使用（包括9032），因此下文仍會提及這些引數。
+可以使用以下代理连接： HTTP、HTTPS、FTP、SFTP。 请注意，从20.2 Campaign版本开始，HTTP和HTTPS协议参数为 **不再可用**. 由于这些参数在以前的版本（包括9032）中仍然可用，因此下文仍会提及这些参数。
 
 >[!CAUTION]
 >
->僅支援基本驗證模式。 不支援NTLM驗證。
+>仅支持基本身份验证模式。 不支持NTLM身份验证。
 >
->不支援SOCKS代理。
+>不支持SOCKS代理。
 
-您可以使用下列指令：
+可以使用以下命令：
 
 ```
 nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'http’]
 ```
 
-通訊協定引數可以是&#39;http&#39;、&#39;https&#39;或&#39;ftp&#39;。
+协议参数可以是“http”、“https”或“ftp”。
 
-如果您在與HTTP/HTTPS流量相同的連線埠上設定FTP，您可以使用以下專案：
+如果您在与HTTP/HTTPS流量相同的端口上设置FTP，则可以使用以下内容：
 
 ```
 nlserver config -setproxy:http/198.51.100.0:8080/user
 ```
 
-「http」和「https」選項僅在通訊協定引數為「ftp」時使用，並指示指定連線埠上的通道是透過HTTPS還是透過HTTP執行。
+仅当协议参数为“ftp”并指示指定端口上的隧道是通过HTTPS还是通过HTTP执行时，才使用“http”和“https”选项。
 
-如果您透過Proxy伺服器對FTP/SFTP和HTTP/HTTPS流量使用不同的連線埠，則應設定「ftp」通訊協定引數。
+如果通过代理服务器对FTP/SFTP和HTTP/HTTPS流量使用不同的端口，则应设置“ftp”协议参数。
 
 
 例如：
@@ -74,9 +74,9 @@ nlserver config -setproxy:http/198.51.100.0:8080/user
 nlserver config -setproxy:ftp/198.51.100.0:8080/user:’http’
 ```
 
-然後輸入密碼。
+然后输入密码。
 
-HTTP連線在proxyHTTP引數中定義：
+HTTP连接在proxyHTTP参数中定义：
 
 ```
 <proxyConfig enabled=“1” override=“localhost*” useSingleProxy=“0”>
@@ -84,7 +84,7 @@ HTTP連線在proxyHTTP引數中定義：
 </proxyConfig>
 ```
 
-HTTPS連線在proxyHTTPS引數中定義：
+HTTPS连接在proxyHTTPS参数中定义：
 
 ```
 <proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
@@ -92,7 +92,7 @@ HTTPS連線在proxyHTTPS引數中定義：
 </proxyConfig>
 ```
 
-FTP/FTPS連線在proxyFTP引數中定義：
+FTP/FTPS连接在proxyFTP参数中定义：
 
 ```
 <proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
@@ -100,34 +100,34 @@ FTP/FTPS連線在proxyFTP引數中定義：
 </proxyConfig>
 ```
 
-如果您對多個連線型別使用相同的Proxy，只有proxyHTTP會定義useSingleProxy設為&quot;1&quot;或&quot;true&quot;。
+如果对多种连接类型使用同一代理，则只定义proxyHTTP并将useSingleProxy设置为“1”或“true”。
 
-如果您有應通過Proxy的內部連線，請將其新增到覆寫引數中。
+如果您有应通过代理的内部连接，请将它们添加到覆盖参数中。
 
-如果要暫時停用Proxy連線，請將enabled引數設為&quot;false&quot;或&quot;0&quot;。
+如果要临时禁用代理连接，请将enabled参数设置为“false”或“0”。
 
-如果您需要透過Proxy使用iOS HTTP/2聯結器，則支援下列HTTP Proxy模式：
+如果您需要通过代理使用iOS HTTP/2连接器，则支持以下HTTP代理模式：
 
-* 沒有驗證的HTTP
-* HTTP基本驗證
+* 不带身份验证的HTTP
+* HTTP基本身份验证
 
-若要啟動Proxy模式，必須在 `serverconf.xml` 檔案：
+要激活代理模式，必须在 `serverconf.xml` 文件：
 
 ```
 <nmac useHTTPProxy="true">
 ```
 
-如需此iOS HTTP/2聯結器的詳細資訊，請參閱此 [頁面](../../delivery/using/about-mobile-app-channel.md).
+有关此iOS HTTP/2连接器的更多信息，请参阅此 [页面](../../delivery/using/about-mobile-app-channel.md).
 
-## 管理公用資源 {#managing-public-resources}
+## 管理公共资源 {#managing-public-resources}
 
-若要公開發佈，連結至行銷活動的電子郵件和公共資源中使用的影像，必須存在於外部可存取的伺服器上。 然後，外部收件者或操作員便可使用這些值。 [了解详情](../../installation/using/deploying-an-instance.md#managing-public-resources)。
+要公开发布，链接到营销策划的电子邮件和公共资源中使用的图像必须存在于外部可访问的服务器上。 然后，外部收件人或操作员可以使用它们。 [了解详情](../../installation/using/deploying-an-instance.md#managing-public-resources)。
 
-公用資源儲存在 **/var/res/instance** Adobe Campaign安裝目錄的目錄。
+公共资源存储在 **/var/res/instance** Adobe Campaign安装目录的目录。
 
-相符的URL是： **http://server/res/instance** 位置 **例項** 是追蹤例項的名稱。
+匹配的URL是： **http://server/res/instance** 位置 **实例** 是跟踪实例的名称。
 
-您可以將節點新增至以指定其他目錄 **conf-`<instance>`.xml** 檔案來設定伺服器上的儲存空間。 這表示新增下列行：
+您可以通过将节点添加到 **会议 — `<instance>`.xml** 文件，用于在服务器上配置存储。 这意味着添加以下行：
 
 ```
 <serverconf>
@@ -140,4 +140,4 @@ FTP/FTPS連線在proxyFTP引數中定義：
 </serverconf>
 ```
 
-在這種情況下，部署精靈視窗上方指定的公用資源新URL應指向此資料夾。
+在这种情况下，部署向导窗口上部给定的公共资源的新URL应指向此文件夹。

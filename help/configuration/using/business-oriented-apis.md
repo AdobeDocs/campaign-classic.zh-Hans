@@ -18,39 +18,39 @@ ht-degree: 3%
 
 * 投放:
 
-   * 创建投放操作，请参阅 [SubmitDelivery(nms:delivery)](#submitdelivery--nms-delivery-),
+   * 创建投放操作，请参阅 [SubmitDelivery (nms：delivery)](#submitdelivery--nms-delivery-)，
    * 发送营销活动（开始、暂停、停止、发送校样），
    * 恢复投放日志。
 
 * 工作流:
 
    * 启动工作流，
-   * 验证流程等。
+   * 验证进程等。
 
-      请参阅 [JavaScript中的SOAP方法](../../configuration/using/soap-methods-in-javascript.md).
+      请参阅 [javascript中的SOAP方法](../../configuration/using/soap-methods-in-javascript.md).
 
 * 内容管理
-* 订阅管理，请参阅 [订阅(nms:subscription)](#subscribe--nms-subscription-) 和 [取消订阅(nms:subscription)](#unsubscribe--nms-subscription-).
-* 数据流程：进口、出口。
+* 订阅管理，请参阅 [订阅(nms：subscription)](#subscribe--nms-subscription-) 和 [取消订阅(nms：subscription)](#unsubscribe--nms-subscription-).
+* 数据过程：导入、导出。
 
-本节详细介绍“订阅”、“取消订阅”和“提交交付”服务的使用。
+本节详细说明了“Subscribe”、“Unsubscribe”和“SubmitDelivery”服务的使用。
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans) 包含有关Adobe Campaign中SOAP调用和使用Javascript的其他信息，以及对应用程序中使用的所有方法和函数的完整引用。
+>[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans) 包含有关在Adobe Campaign中SOAP调用和使用Javascript的其他信息，以及对应用程序中使用的所有方法和函数的完整引用。
 
-## 订阅(nms:subscription) {#subscribe--nms-subscription-}
+## 订阅(nms：subscription) {#subscribe--nms-subscription-}
 
-此服务允许您向收件人订阅信息服务并更新收件人用户档案。
+此服务允许您为收件人订阅信息服务并更新收件人配置文件。
 
-要调用服务，需要以下参数：
+调用服务需要以下参数：
 
 * 验证，
 * 订阅服务的内部名称，
-* 包含收件人信息的XML文档（来自“nms:recipient”模式），
-* 一个布尔值，用于创建收件人（如果还没有）。
+* 包含收件人信息的XML文档（来自“nms：recipient”模式），
+* 用于收件人创建的布尔值（如果尚不存在）。
 
-“nms:subscription”模式中“subscribe”方法的描述：
+“nms：subscription”模式中“subscription”方法的描述：
 
 ```
 <method name="Subscribe" static="true">
@@ -62,13 +62,13 @@ ht-degree: 3%
 </method>
 ```
 
-对帐密钥的定义必须通过_输入&#x200B;**key** 属性 `<recipient>` 元素。 此属性的内容是以逗号分隔的XPath列表。
+必须通过_输入协调键值的定义&#x200B;**键** 上的属性 `<recipient>` XML文档的元素。 此属性的内容是以逗号分隔的XPath列表。
 
-除错误外，此调用不返回任何数据。
+此调用不会返回任何数据，错误除外。
 
 ### 示例 {#examples}
 
-电子邮件地址上收件人协调键值的订阅：输入XML文档必须引用此字段中的电子邮件地址和键的定义。
+电子邮件地址上具有收件人协调密钥的订阅：输入XML文档必须引用此字段上的电子邮件地址和密钥定义。
 
 ```
 <recipient _key="email" email= "john.doe@adobe.com"/>
@@ -112,17 +112,17 @@ ht-degree: 3%
    </SOAP-ENV:Envelope>
    ```
 
-## 取消订阅(nms:subscription) {#unsubscribe--nms-subscription-}
+## 取消订阅(nms：subscription) {#unsubscribe--nms-subscription-}
 
-此服务允许您使收件人从信息服务中取消订阅并更新收件人用户档案。
+此服务允许您从信息服务中取消订阅收件人并更新收件人用户档案。
 
-要调用服务，需要以下参数：
+调用服务需要以下参数：
 
 * 验证，
 * 要取消订阅的服务的内部名称，
-* 包含收件人信息的XML文档（来自“nms:recipient”模式），
+* 包含收件人信息的XML文档（来自“nms：recipient”模式），
 
-“nms:subscription”模式中“取消订阅”方法的描述：
+“nms：subscription”模式中“Unsubscribe”方法的描述：
 
 ```
 <method name="Unsubscribe" static="true">
@@ -133,15 +133,15 @@ ht-degree: 3%
 </method>
 ```
 
-协调键值的定义必须通过 `<recipient>` 元素。 此属性的内容是以逗号分隔的XPath列表。
+必须通过_key属性(位于 `<recipient>` XML文档的元素。 此属性的内容是以逗号分隔的XPath列表。
 
-如果收件人不在数据库中或者没有订阅相关信息服务，则该服务不执行任何操作并且不产生错误。
+如果收件人不在数据库中或未订阅有关的信息服务，该服务将不执行任何操作并且不生成错误。
 
 >[!NOTE]
 >
->如果未将服务名称指定为参数，则收件人随后将在阻止列表时自动(@blackList=&quot;1&quot;)。
+>阻止列表如果未将服务名称指定为参数，则收件人将在(@blackList=&quot;1&quot;)时自动收到。
 
-除错误外，此调用不返回任何数据。
+此调用不会返回任何数据，错误除外。
 
 ### SOAP消息示例 {#example-of-soap-messages-1}
 
@@ -173,19 +173,19 @@ ht-degree: 3%
 </SOAP-ENV:Envelope>
 ```
 
-## SubmitDelivery(nms:delivery) {#submitdelivery--nms-delivery-}
+## SubmitDelivery (nms：delivery) {#submitdelivery--nms-delivery-}
 
 此服务允许您创建和提交投放操作。
 
-要调用服务，需要以下参数：
+调用服务需要以下参数：
 
 * 验证，
 * 投放模板的内部名称，
-* 可选的XML文档，其中包含其他提交数据。
+* 包含其他投放数据的可选XML文档。
 
-您可能遇到性能问题，因此不应在卷中调用此API。
+不应在卷中调用此API，因为您可能会遇到性能问题。
 
-其模式中方法的描述：
+方法在其模式中的描述：
 
 ```
 <method name="SubmitDelivery" static="true">
@@ -196,15 +196,15 @@ ht-degree: 3%
 </method>
 ```
 
-必须从Adobe Campaign客户端控制台创建投放模板。 它包含所有投放通用的参数（发件人地址或消息有效期）。
+必须从Adobe Campaign客户端控制台创建投放模板。 它包含所有投放的通用参数（发件人地址或消息的有效期）。
 
-输入XML文档是遵循“nms:delivery”模式结构的投放模板片段。 它将包含无法在投放模板中静态定义的所有其他数据（例如，要定位的收件人列表）。
+输入XML文档是符合“nms：delivery”模式结构的投放模板片段。 它将包含无法在投放模板中静态定义的所有附加数据（例如，要定位的收件人列表）。
 
-除错误外，此调用不返回任何数据。
+此调用不会返回任何数据，错误除外。
 
 ### XML文档示例 {#xml-document-example}
 
-此示例基于来自外部数据源（本例中为文件）的自定义投放模板。 投放模板中对配置进行了完整描述，因此在调用发生时，所有仍要发送的内容都是 `<externalsource>` 元素。
+此示例基于来自外部数据源的自定义投放模板（此示例中是一个文件）。 投放模板中完整描述了配置，因此当调用发生时，仅需发送以下文件中的内容： `<externalsource>` 元素。
 
 ```
 <delivery>

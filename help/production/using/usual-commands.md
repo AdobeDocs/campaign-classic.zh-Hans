@@ -19,28 +19,28 @@ ht-degree: 4%
 
 
 
-本節列出Adobe Campaign中的常用命令。
+本节列出了Adobe Campaign中的常用命令。
 
-命令 **nlserver** 是整個Adobe Campaign應用程式的輸入命令。
+命令 **nlserver** 是整个Adobe Campaign应用程序的输入命令。
 
-這個命令的語法如下： **nlserver **`<command>`****`<arguments>`****
+此命令具有以下语法： **nlserver **`<command>`****`<arguments>`****
 
-引數 **`<command>`** 對應至模組。
-
->[!NOTE]
->
->* 無論如何，您都可以新增 **-noconsole** 用來刪除模組啟動後所顯示註解的引數。
->* 反之，您可以新增引數 **-verbose** 以顯示更多資訊。
->
-
-
-## 監視命令 {#monitoring-commands-}
+参数 **`<command>`** 对应于模块。
 
 >[!NOTE]
 >
->若要列出所有模組，您需要使用 **nlserver pdump** 命令。
+>* 无论如何，您都可以添加 **-noconsole** 参数，用于删除启动模块后显示的注释。
+>* 相反，您可以添加参数 **-verbose** 以显示更多信息。
+>
 
-您可以新增引數 **-who** 列出進行中的連線（資料庫和應用程式）。
+
+## 监视命令 {#monitoring-commands-}
+
+>[!NOTE]
+>
+>要列出所有模块，您需要使用 **nlserver pdump** 命令。
+
+您可以添加参数 **-who** 列出正在进行的连接（数据库和应用程序）。
 
 ```
 nlserver pdump -who
@@ -62,9 +62,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-另一個有用的指令是 **nlserver監視**. 它會列出監視XML檔案(在Adobe Campaign使用者端中取得，或透過 **monitor.jsp** 網頁)。
+另一个有用的命令是 **nlserver monitor**. 它列出了监控XML文件(在Adobe Campaign客户端中获取，或通过 **monitor.jsp** 网页)。
 
-您可以新增引數 **-missing** 列出缺席模組（模組、模組關閉等錯誤）
+您可以添加参数 **-missing** 列出缺席模块（模块出错、模块关闭等）
 
 ```
 nlserver monitor -missing
@@ -74,11 +74,11 @@ mta@test
 wfserver@test
 ```
 
-這對應於具有自動啟動但尚未啟動的模組。
+这对应于具有自动启动但尚未启动的模块。
 
-## 模組啟動命令 {#module-launch-commands}
+## 模块启动命令 {#module-launch-commands}
 
-啟動模組的語法仍會具有下列格式：
+launch模块的语法仍然具有以下格式：
 
 ```
 nlserver start <module>@<INSTANCE>
@@ -90,13 +90,13 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** 對應於在組態檔案中輸入的例證名稱，或 **預設** 用於單執行個體模組。
+>**`<instance>`** 对应于在配置文件中输入的实例名称，或 **默认** 用于单实例模块。
 
-## 關閉服務 {#shut-down-services}
+## 关闭服务 {#shut-down-services}
 
-若要停止Adobe Campaign服務，請使用下列命令之一：
+要停止Adobe Campaign服务，请使用以下命令之一：
 
-* 如果您擁有root或管理員存取權：
+* 如果您具有root或管理员访问权限：
 
    * 在Linux中：
 
@@ -106,7 +106,7 @@ nlserver stop <module>@<INSTANCE>
 
       >[!NOTE]
       >
-      >從20.1版開始，建議您改用下列命令（適用於Linux）： **systemctl停止nlserver**
+      >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl stop nlserver**
 
    * 在Windows中：
 
@@ -114,33 +114,33 @@ nlserver stop <module>@<INSTANCE>
       net stop nlserver6
       ```
 
-* 如果沒有，則在Adobe Campaign帳戶中：
+* 如果没有，则在Adobe Campaign帐户中：
 
    ```
    nlserver shutdown 
    ```
 
-## 重新啟動服務 {#restart-services}
+## 重新启动服务 {#restart-services}
 
-同樣地，若要重新啟動Adobe Campaign，您可以使用下列命令之一：
+同样，要重新启动Adobe Campaign，您可以使用以下命令之一：
 
-* 如果您擁有root或管理員存取權：
+* 如果您具有root或管理员访问权限：
 
    * 在Linux中： /etc/init.d/nlserver6 start
 
       >[!NOTE]
       >
-      >從20.1版開始，建議您改用下列命令（適用於Linux）： **systemctl啟動nlserver**
+      >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl启动nlserver**
 
-   * 在Windows中：網路啟動nlserver6
+   * 在Windows中：net start nlserver6
 
-* 否則，在Adobe Campaign帳戶中： **nlserver watchdog -svc -noconsole**
+* 否则，在Adobe Campaign帐户中： **nlserver watchdog -svc -noconsole**
 
-## 設定命令 {#the-config-command}
+## 配置命令 {#the-config-command}
 
-此 **設定** command可讓您管理伺服器組態，包括重新設定資料庫連線。
+此 **config** 命令用于管理服务器配置，包括重新配置数据库连接。
 
-使用 **設定** 命令 **nlserver** 可執行檔，包含 **-setdblogin** 引數。
+使用 **config** 命令 **nlserver** 可执行文件 **-setdblogin** 参数。
 
 ```
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -152,16 +152,16 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 输入密码。
 
-若要變更 **內部** 密碼： **nlserver config -internalpassword**
+要更改 **内部** 密码： **nlserver配置 — internalpassword**
 
 >[!IMPORTANT]
 >
->若要使用 **內部** 識別碼，您必須預先定義密碼。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+>要使用，请登录 **内部** 标识符，则需要预先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 >[!NOTE]
 >
->* 一般而言，您可以使用 **設定** 命令
->* 若要取得引數清單，請使用 **-？** 引數： **nlserver設定 — ？**
->* 若是Oracle資料庫，則不得指定帳戶。 語法如下：
+>* 通常，您可以使用 **config** 命令
+>* 要获取参数列表，请使用 **-？** 参数： **nlserver配置 — ？**
+>* 对于Oracle数据库，不能指定帐户。 语法如下所示：
 >
->  nlserver config -setdblogin:Oracle:test6@dbserver
+>  nlserver配置 — setdblogin:Oracle:test6@dbserver

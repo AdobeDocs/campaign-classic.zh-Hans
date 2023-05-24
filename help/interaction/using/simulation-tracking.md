@@ -19,17 +19,17 @@ ht-degree: 10%
 
 
 
-模拟完成后，可通过 **[!UICONTROL Results]** 选项卡(添加到模拟窗口和 **[!UICONTROL Breakdown of offers by rank]** 报表，可通过模拟仪表板中获取。
+模拟完成后，您可以通过以下方式分析其结果 **[!UICONTROL Results]** 选项卡，该选项卡将添加到模拟窗口 **[!UICONTROL Breakdown of offers by rank]** 报表，可通过在simulation dashboard中获取。
 
-仿真结果包含每个排名和每个收件人的命题的细分。 此外，还考虑了报表轴，并显示在此选项卡中。
+模拟结果包含每个级别和每个收件人的建议细分。 也会考虑报表轴，并显示在选项卡中。
 
-您可以保存这些结果，并在必要时通过创建对结果的描述性分析来导出它们。 要实现此目的，请在结果窗口中单击相应的链接。
+您可以保存这些结果，并在必要时通过创建结果的描述性分析导出这些结果。 要执行此操作，请在结果窗口中单击相应的链接。
 
-请参阅 [此部分](../../reporting/using/about-descriptive-analysis.md) 有关描述性分析向导的详细信息。
+请参阅 [本节](../../reporting/using/about-descriptive-analysis.md) 以了解有关描述性分析向导的详细信息。
 
 ![](assets/offer_simulation_012.png)
 
-数据透视表提供了按排名划分的选件划分的概览。 与Adobe Campaign中的所有报表一样，您可以导出、打印、存档或在Web浏览器中显示它。
+数据透视表可快速查看每个排名的选件细分。 与Adobe Campaign中的所有报告一样，您可以在Web浏览器中导出、打印、存档或显示报告。
 
 如需详细信息，请参阅[此部分](../../reporting/using/actions-on-reports.md)。
 

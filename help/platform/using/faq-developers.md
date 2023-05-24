@@ -40,7 +40,7 @@ Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间�
 
 ## 如何使用自定义收件人表？ {#how-to-use-a-custom-recipient-table-}
 
-您可以在Campaign中创建并实施非内置的收件人表，以发送消息。
+您可以在Campaign中创建并实施非内置的收件人表来发送消息。
 
 [单击此处了解更多信息](../../configuration/using/about-custom-recipient-table.md)
 

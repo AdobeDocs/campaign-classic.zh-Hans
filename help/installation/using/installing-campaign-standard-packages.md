@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 安裝Campaign Classic內建套件
-description: 瞭解如何安裝Campaign內建套件
+title: 安装Campaign Classic内置软件包
+description: 了解如何安装Campaign内置软件包
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
@@ -12,43 +12,43 @@ ht-degree: 13%
 
 ---
 
-# 安裝Campaign Classic內建套件{#installing-campaign-standard-packages}
+# 安装Campaign Classic内置软件包{#installing-campaign-standard-packages}
 
 
 
-## 關於內建套件 {#campaign-standard-packages}
+## 关于内置软件包 {#campaign-standard-packages}
 
-內建套件包含一組功能，可依您的需求及合約進行安裝。 以下提供Campaign內建套件的完整清單。
+内置软件包包含一组功能，可以根据您的需求和合同进行安装。 下面提供了Campaign内置包的完整列表。
 
 >[!CAUTION]
 >
->您只能安裝與授權合約中提及之選項對應的套件。
+>您只能安装与许可协议中提到的选项对应的软件包。
 >
->安裝新套件可能會影響您的所有平台：在最終部署之前，必須測試及驗證套件。
+>安装新软件包可能会影响您的所有平台：在最终部署之前，必须对其进行测试和验证。
 >
->安裝套件後，您就無法解除安裝它。
+>软件包安装后，将无法卸载。
 >
->作為託管或混合客戶，請聯絡Adobe以部署新的內建套件。
+>作为托管或混合型客户，请联系Adobe以部署新的内置软件包。
 
-若要安裝內建套件：
+要安装内置软件包，请执行以下操作：
 
-1. 從存取套件匯入精靈 **[!UICONTROL Tools > Advanced > Import package]** 在Adobe Campaign使用者端主控台中。
+1. 从访问资源包导入向导 **[!UICONTROL Tools > Advanced > Import package]** 在Adobe Campaign客户端控制台中。
 1. 选择 **[!UICONTROL Install a standard package]**。
-1. 在套件清單中，檢查您要安裝的套件。
+1. 在包列表中，选中要安装的包。
    >[!NOTE]
    >
-   >套件呈現灰色時，表示已安裝或套件與執行個體不相容。 相容性在下表中詳細說明。
-1. 按一下 **[!UICONTROL Next]**，則 **[!UICONTROL Start]** 以開始套件安裝。
+   >当包呈灰显状态时，表示已安装该包，或者该包与实例不兼容。 兼容性详见下表。
+1. 单击 **[!UICONTROL Next]**，则 **[!UICONTROL Start]** 以开始软件包安装。
 
-   安裝套件後，進度列會顯示 **100%** 而且您會在安裝記錄檔中看到下列訊息： **[!UICONTROL Installation of packages successful]**.
+   安装包后，进度条将显示 **100%** 并且您可以在安装日志中看到以下消息： **[!UICONTROL Installation of packages successful]**.
 
-1. **[!UICONTROL Close]** 安裝視窗。
+1. **[!UICONTROL Close]** 安装窗口。
 
-套件現已安裝。
+现已安装包。
 
-### 現成可用的套件清單 {#list-of-standard-packages}
+### 现成软件包列表 {#list-of-standard-packages}
 
-下表列出所有Campaign內建套件。
+下表列出了所有Campaign内置软件包。
 
 <table> 
  <thead> 
@@ -61,33 +61,33 @@ ht-degree: 13%
  <tbody> 
   <tr> 
    <td> 投放<br /> </td> 
-   <td> 監控傳送訊息時遇到的傳遞和最終問題。 <a href="../../delivery/using/about-delivery-monitoring.md">了解详情</a><br /> </td> 
+   <td> 监视投放以及在发送消息时遇到的最终问题。 <a href="../../delivery/using/about-delivery-monitoring.md">了解详情</a><br /> </td> 
    <td> 所有</td> 
   </tr> 
   <tr> 
-   <td> 行銷活動（行銷活動）<br /> </td> 
-   <td> 定義、最佳化、執行和分析通訊和行銷活動。 <a href="../../campaign/using/designing-marketing-campaigns.md">了解详情</a><br /> </td> 
+   <td> 营销活动（营销活动）<br /> </td> 
+   <td> 定义、优化、执行和分析通信和营销活动。 <a href="../../campaign/using/designing-marketing-campaigns.md">了解详情</a><br /> </td> 
    <td> 营销</td>
   </tr> 
   <tr> 
-   <td> 行銷資源(RM)<br /> </td> 
-   <td> 藉由管理及追蹤任務、預算及行銷資源，以合作模式控制行銷動作。 <a href="../../mrm/using/about-marketing-resource-management.md">了解详情</a> <br /> </td> 
+   <td> 营销资源(MRM)<br /> </td> 
+   <td> 通过提供对任务、预算和营销资源的管理和跟踪，在协作模式下控制营销活动。 <a href="../../mrm/using/about-marketing-resource-management.md">了解详情</a> <br /> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
-   <td> 優惠方案引擎（互動）<br /> </td> 
-   <td> 在與指定聯絡人（客戶或目標）互動期間即時回應，方法是提供單一或數個已調整的優惠方案。  可选。<a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">了解详情</a> <br /> </td> 
+   <td> 优惠引擎（交互）<br /> </td> 
+   <td> 在与给定联系人（客户或目标）交互期间通过使其成为单个或多个自适应优惠实时响应。  可选。<a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">了解详情</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
-   <td> 透過執行例項控制優惠方案引擎。 可选。<br /> </td> 
-   <td> 套裝軟體，可安裝在優惠方案引擎的控制執行個體上（互動）。 <a href="../../interaction/using/distributed-architectures.md#packages-configuration">了解详情</a> </td> 
+   <td> 使用执行实例控制优惠引擎。 可选。<br /> </td> 
+   <td> 要在选件引擎的控制实例上安装的包（交互）。 <a href="../../interaction/using/distributed-architectures.md#packages-configuration">了解详情</a> </td> 
    <td> 营销<br /> </td>  
   </tr> 
   <tr> 
-   <td> 執行個體的優惠方案引擎。 可选。<br /> </td> 
-   <td> 要在優惠方案引擎的執行例項上安裝的套件（互動）。 <a href="../../interaction/using/distributed-architectures.md">了解详情</a> </td> 
-   <td> 中間，執行 <br /> </td>  
+   <td> 执行实例的优惠引擎。 可选。<br /> </td> 
+   <td> 要在选件引擎（交互）的执行实例上安装的包。 <a href="../../interaction/using/distributed-architectures.md">了解详情</a> </td> 
+   <td> 中间，执行 <br /> </td>  
   </tr> 
   <!--tr> 
    <td> Lead Management (Leads) (deprecated)<br /> </td> 
@@ -96,176 +96,176 @@ ht-degree: 13%
    <td> Optional, <a href="https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html">Learn More</a> </td> 
   </tr--> 
   <tr> 
-   <td> 社交網路（社交行銷） <br /> </td> 
-   <td> 將Adobe Campaign與Twitter和Facebook同步。 <a href="../../social/using/about-social-marketing.md">了解详情</a> <br /> </td> 
+   <td> 社交网络（社交营销） <br /> </td> 
+   <td> 将Adobe Campaign与Twitter和Facebook同步。 <a href="../../social/using/about-social-marketing.md">了解详情</a> <br /> </td> 
    <td> 所有</td> 
   </tr> 
   <tr> 
-   <td> 異動訊息控制（訊息中心 — 控制）<br /> </td> 
-   <td> 管理從資訊系統觸發的事件產生的觸發訊息。 可选。<a href="../../message-center/using/about-transactional-messaging.md">了解详情</a> <br /> </td> 
+   <td> 事务性消息控制（消息中心 — 控制）<br /> </td> 
+   <td> 管理从信息系统触发的事件生成的触发消息。 可选。<a href="../../message-center/using/about-transactional-messaging.md">了解详情</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> 異動訊息執行（訊息中心 — 執行） <br /> </td> 
-   <td> 確保更高的可用性和更好的負載管理。 可选。<a href="../../message-center/using/about-transactional-messaging.md">了解详情</a><br /> </td> 
+   <td> 事务性消息执行（消息中心 — 执行） <br /> </td> 
+   <td> 确保更高的可用性和更好的负载管理。 可选。<a href="../../message-center/using/about-transactional-messaging.md">了解详情</a><br /> </td> 
    <td> 执行<br /> </td>
   </tr> 
   <tr> 
    <td> LINE 渠道<br /> </td> 
-   <td> 透過Adobe Campaign使用LINE頻道傳送傳遞。 可选。異動訊息（訊息中心封裝）為必要。 <a href="../../delivery/using/line-channel.md">了解详情</a> <br /> </td> 
+   <td> 使用带有Adobe Campaign的LINE渠道发送投放。 可选。事务性消息传递（消息中心包）是必需的。 <a href="../../delivery/using/line-channel.md">了解详情</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
-   <td> 直接郵件頻道<br /> </td> 
-   <td> 透過Adobe Campaign使用直接郵件通道傳送傳遞。 可选。<a href="../../delivery/using/about-direct-mail-channel.md">了解详情</a><br /> </td> 
+   <td> 直邮渠道<br /> </td> 
+   <td> 在Adobe Campaign中使用直邮渠道发送投放。 可选。<a href="../../delivery/using/about-direct-mail-channel.md">了解详情</a><br /> </td> 
    <td> 所有<br /> </td>
   </tr> 
   <tr> 
    <td> 移动频道 (SMS) <br /> </td> 
-   <td> 透過Adobe Campaign使用行動/簡訊通道傳送傳遞。 可选。<a href="../../delivery/using/sms-channel.md">了解详情</a> <br /> </td> 
+   <td> 通过Adobe Campaign使用移动/短信渠道发送投放。 可选。<a href="../../delivery/using/sms-channel.md">了解详情</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
    <tr> 
    <td> 电话渠道<br /> </td> 
-   <td> 透過Adobe Campaign使用電話通道傳送傳遞。 用於客服中心。 可选。<a href="../../delivery/using/communication-channels.md">了解详情</a> <br /> </td> 
+   <td> 使用Adobe Campaign的电话渠道发送投放。 用于呼叫中心。 可选。<a href="../../delivery/using/communication-channels.md">了解详情</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
    <td> 移动应用程序渠道<br /> </td> 
-   <td> 使用Adobe Campaign平台，透過應用程式將個人化通知傳送至iOS和Android終端。 可选。<a href="../../delivery/using/about-mobile-app-channel.md">了解详情</a> <br /> </td> 
+   <td> 使用Adobe Campaign平台通过应用程序向iOS和Android终端发送个性化通知。 可选。<a href="../../delivery/using/about-mobile-app-channel.md">了解详情</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
-   <td> 內容管理員<br /> </td> 
-   <td> 建立週期性電子報或網站，然後驗證並發佈您的訊息。 <a href="../../delivery/using/about-content-management.md">了解详情</a> <br /> </td> 
+   <td> 内容管理器<br /> </td> 
+   <td> 创建定期新闻稿或网站，然后验证并发布消息。 <a href="../../delivery/using/about-content-management.md">了解详情</a> <br /> </td> 
    <td> </td>
   </tr> 
   <tr> 
-   <td> 線上調查（調查管理員）<br /> </td> 
-   <td> 建立和管理線上表單，以新增或修改設定檔資訊、訂閱、取消訂閱或競爭者輸入表單。 可选。<a href="../../surveys/using/about-surveys.md">了解详情</a> <br /> </td> 
+   <td> 在线调查（调查管理器）<br /> </td> 
+   <td> 创建和管理在线表单，以添加或修改用户档案信息、订阅、取消订阅或竞争登录表单。 可选。<a href="../../surveys/using/about-surveys.md">了解详情</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> 行銷分析<br /> </td> 
-   <td> 可讓您分析和測量資料、計算統計資料、簡化和最佳化報告的建立和計算。 您也可以建立報告並建置目標母體。 可选。<a href="../../reporting/using/ac-cubes.md">了解详情</a><br /> </td> 
+   <td> Marketing Analytics<br /> </td> 
+   <td> 用于分析和测量数据、计算统计信息、简化和优化报告创建和计算。 此外，您还可以创建报告并构建目标群体。 可选。<a href="../../reporting/using/ac-cubes.md">了解详情</a><br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
    <td> 响应管理器<br /> </td> 
-   <td> 測量行銷活動的成功和盈利能力，或為所有溝通管道提供建議。  可选。<a href="../../response/using/about-response-manager.md">了解详情</a> <br /> </td> 
+   <td> 衡量营销活动的成功性和盈利能力，或为所有通信渠道提供建议。  可选。<a href="../../response/using/about-response-manager.md">了解详情</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> 存取外部資料（同盟資料存取）<br /> </td> 
-   <td> 提供同盟資料存取(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊，因此您可以在不變更Adobe Campaign資料結構的情況下存取外部資料。  可选。<a href="../../workflow/using/accessing-an-external-database--fda-.md">了解详情</a> <br /> </td> 
+   <td> 访问外部数据（联合数据访问）<br /> </td> 
+   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，这样您就可以在不更改Adobe Campaign数据结构的情况下访问外部数据。  可选。<a href="../../workflow/using/accessing-an-external-database--fda-.md">了解详情</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
    <td> 活动优化<br /> </td> 
-   <td> 控制、篩選及監控傳遞的傳送，以便傳送的訊息最符合客戶的需求和期望，並遵守公司的通訊政策。 可选。<a href="../../campaign-opt/using/about-campaign-typologies.md">了解详情</a> <br /> </td> 
+   <td> 控制、筛选和监控投放的发送，以便发送的消息最符合客户的需求和期望，同时遵守公司的通信政策。 可选。<a href="../../campaign-opt/using/about-campaign-typologies.md">了解详情</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> 傳遞能力監控（電子郵件傳遞能力）<br /> </td> 
-   <td> 衡量促銷活動成功抵達收件者收件匣而無跳出或標示為垃圾訊息的程度。 可选。<a href="../../delivery/using/about-deliverability.md">了解详情</a> <br /> </td> 
+   <td> 可投放性监控（电子邮件可投放性）<br /> </td> 
+   <td> 衡量营销活动在未弹回或标记为垃圾邮件的情况下到达收件人的收件箱是否成功。 可选。<a href="../../delivery/using/about-deliverability.md">了解详情</a> <br /> </td> 
    <td> 所有 </td> 
   </tr> 
   <tr> 
-   <td> 優惠券管理<br /> </td> 
-   <td> 建立一組抵用券以新增至即將推出的行銷優惠方案。 可选。<a href="../../delivery/using/personalized-coupons.md">了解详情</a> <br /> </td> 
+   <td> 优惠券管理<br /> </td> 
+   <td> 创建一组优惠券以添加到即将推出的营销优惠中。 可选。<a href="../../delivery/using/personalized-coupons.md">了解详情</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> 收件匣轉譯(IR)<br /> </td> 
-   <td> 可讓您預覽在不同內容中傳送的訊息，並在主要桌上型電腦和應用程式中檢查相容性。 可选。<a href="../../delivery/using/inbox-rendering.md">了解详情</a><br /> </td> 
+   <td> 收件箱呈现(IR)<br /> </td> 
+   <td> 允许您预览在可能接收消息的不同上下文中发送的消息，并检查主要台式机和应用程序中的兼容性。 可选。<a href="../../delivery/using/inbox-rendering.md">了解详情</a><br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> 中央/地方行銷（分散式行銷）<br /> </td> 
-   <td> 在中央實體（總部、行銷部門等）之間實施合作活動 实施协作营销活动。可选。<a href="../../distributed/using/about-distributed-marketing.md">了解详情</a><br /> </td> 
+   <td> 中央/本地营销（分布式营销）<br /> </td> 
+   <td> 实施中央实体（总部、营销部门等）之间的合作活动 实施协作营销活动。可选。<a href="../../distributed/using/about-distributed-marketing.md">了解详情</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
    <td> CRM 连接器<br /> </td> 
-   <td> 提供各種CRM聯結器，用於將您的Adobe Campaign平台連結至您的協力廠商系統。  <a href="../../platform/using/crm-connectors.md">了解详情</a> <br /> </td> 
+   <td> 提供各种CRM连接器，用于将您的Adobe Campaign平台链接到第三方系统。  <a href="../../platform/using/crm-connectors.md">了解详情</a> <br /> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
-   <td> 網站分析聯結器<br /> </td> 
-   <td> 允許Adobe Campaign和Adobe Analytics透過Web Analytics聯結器套件互動。 與異動訊息（訊息中心封裝）不相容。 <a href="../../platform/using/adobe-analytics-connector.md">了解详情</a><br /> </td> 
+   <td> 网站分析连接器<br /> </td> 
+   <td> 允许Adobe Campaign和Adobe Analytics通过Web Analytics连接器包进行交互。 与事务性消息传递（消息中心包）不兼容。 <a href="../../platform/using/adobe-analytics-connector.md">了解详情</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
-   <td> AEM整合<br /> </td> 
-   <td> 可讓您直接在Adobe Experience Manager中管理電子郵件傳送的內容以及表單，以便從AEM內容編輯功能以及Adobe Campaign的傳送功能中受益。 <a href="../../integrations/using/about-adobe-experience-manager.md">了解详情</a> <br /> </td> 
+   <td> AEM集成<br /> </td> 
+   <td> 允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单，以便从AEM内容编辑功能以及Adobe Campaign的投放功能中受益。 <a href="../../integrations/using/about-adobe-experience-manager.md">了解详情</a> <br /> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
-   <td> Adobe Experience Cloud共用受眾整合<br /> </td> 
-   <td> 可讓您與Adobe Experience Cloud解決方案和核心服務交換和共用受眾/區段。 需要IMS。 <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">了解详情</a> <br /> </td> 
+   <td> Adobe Experience Cloud共享受众集成<br /> </td> 
+   <td> 允许您与Adobe Experience Cloud解决方案和核心服务交换和共享受众/区段。 需要IMS。 <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">了解详情</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
-   <td> 與Adobe Experience Cloud整合<br /> </td> 
-   <td> 可讓您從不同的Adobe Experience Cloud解決方案匯入和匯出對象/區段至Adobe Campaign。 可选。<a href="../../integrations/using/configuring-ims.md#installing-the-package">了解详情</a> </td> 
+   <td> 与Adobe Experience Cloud集成<br /> </td> 
+   <td> 允许您将受众/区段从不同的Adobe Experience Cloud解决方案导入和导出到Adobe Campaign中。 可选。<a href="../../integrations/using/configuring-ims.md#installing-the-package">了解详情</a> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
    <td> 隐私数据保护规定<br /> </td> 
-   <td> 包含可協助您遵循Campaign Classic隱私權規範的其他功能。 <a href="https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html">了解详情</a> <br /> </td> 
+   <td> 包含有助于在Campaign Classic中遵守隐私规定的其他功能。 <a href="https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html">了解详情</a> <br /> </td> 
    <td> 所有</td> 
   </tr> 
   <tr> 
-   <td> 轉移至中間來源 <br /> </td> 
-   <td> 詳細說明中間來源伺服器的安裝和設定，以及可讓協力廠商以中間來源模式傳送訊息的執行個體部署。 可选。<a href="../../installation/using/mid-sourcing-server.md">了解详情</a> <br /> </td> 
+   <td> 传输到中间源 <br /> </td> 
+   <td> 详细介绍中间源服务器的安装和配置，以及使第三方能够在中间源模式下发送消息的实例的部署。 可选。<a href="../../installation/using/mid-sourcing-server.md">了解详情</a> <br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
    <td> 中间源平台<br /> </td> 
-   <td> 此設定是託管(ASP)設定與內部化之間的最佳中繼解決方案。 向外執行元件是在Adobe Campaign託管的「中間來源」伺服器上執行。 可选。<a href="../../installation/using/mid-sourcing-server.md">了解详情</a> <br /> </td> 
+   <td> 此配置是托管(ASP)配置和内部化之间的最佳中间解决方案。 在Adobe Campaign托管的“中间源”服务器上执行面向外部的执行组件。 可选。<a href="../../installation/using/mid-sourcing-server.md">了解详情</a> <br /> </td> 
    <td> 中间源 </td> 
   </tr> 
   <tr> 
-   <td> AMP支援<br /> </td> 
-   <td> 可讓您使用新的互動式AMP作為電子郵件格式，並傳送動態電子郵件。 可选。<a href="../../delivery/using/defining-interactive-content.md">了解详情</a> <br /> </td> 
+   <td> AMP支持<br /> </td> 
+   <td> 使您能够使用新的交互式AMP作为电子邮件格式，并发送动态电子邮件。 可选。<a href="../../delivery/using/defining-interactive-content.md">了解详情</a> <br /> </td> 
    <td> 所有 </td> 
   </tr> 
   <tr> 
-   <td> ACS聯結器（已棄用）<br /> </td> 
-   <td> Bridges Adobe Campaign v7和Adobe Campaign Standard。 這是Campaign v7中的整合功能，可自動將資料複製到Campaign Standard，將兩個應用程式的優點整合在一起。 可选。<br /> </td> 
+   <td> ACS连接器（已弃用）<br /> </td> 
+   <td> Bridges Adobe Campaign v7和Adobe Campaign Standard。 它是Campaign v7中的一项集成功能，可自动将数据复制到Campaign Standard，将两个应用程序的最佳功能整合在一起。 可选。<br /> </td> 
    <td> 营销 </td> 
   </tr> 
  </tbody> 
 </table>
 
-### 訊息中心套件 {#message-center-package}
+### 消息中心包 {#message-center-package}
 
-您必須安裝傳送頻道（電子郵件、行動裝置頻道、行動應用程式頻道、LINE等） 安裝異動訊息（訊息中心套件）之前。 如果您已開始僅限電子郵件的訊息中心專案，且之後需要新增頻道，您必須依照下列步驟進行：
+您必须安装投放渠道（电子邮件、移动渠道、移动应用程序渠道、LINE等） 安装事务性消息（消息中心包）之前。 如果您已启动仅用于电子邮件的消息中心项目，并且随后需要添加新渠道，则必须执行以下步骤：
 
-1. 安裝新管道，例如 **行動裝置頻道**，使用套件匯入精靈( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)。
-1. 匯入檔案( **[!UICONTROL Tools > Advanced > Import package > File]**)，然後選取：
+1. 安装新渠道，例如 **移动渠道**，使用资源包导入向导( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)。
+1. 导入文件( **[!UICONTROL Tools > Advanced > Import package > File]**)，然后选择：
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. 在 **[!UICONTROL XML data content to import]**，僅保留與相關頻道對應的訊息中心傳遞範本。 例如，如果您已新增 **行動裝置頻道**，僅保留 **實體** 與對應的元素 **[!UICONTROL Mobile transactional message]** (smsTriggerMessage)範本。 如果您已新增 **行動應用程式頻道**，僅保留 **iOS交易式訊息** 範本(iosTriggerMessage)和 **Android交易式訊息** (androidTriggerMessage)。
+1. 在 **[!UICONTROL XML data content to import]**，仅保留与相关渠道对应的消息中心投放模板。 例如，如果您已添加 **移动渠道**，仅保留 **实体** 与对应的元素 **[!UICONTROL Mobile transactional message]** (smsTriggerMessage)模板。 如果您已添加 **移动应用程序渠道**，仅保留 **iOS事务型消息** 模板(iosTriggerMessage)和 **Android事务型消息** (androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)
 
 
-### [!DNL LINE] 頻道設定{#line-package}
+### [!DNL LINE] 渠道设置{#line-package}
 
-若要設定 [!DNL LINE] 頻道，您必須先安裝 [!DNL LINE] 封裝。
+要设置 [!DNL LINE] 渠道，您必须先安装 [!DNL LINE] 包。
 
-在中間來源設定的內容中，您需要：
+在中间源配置的上下文中，您需要：
 
-* 安裝 [!DNL LINE] 行銷和MID執行個體上的套件
+* 安装 [!DNL LINE] 营销和MID实例上的包
 
-* 設定 [!DNL LINE] mkt執行個體上的外部帳戶，以透過變更傳送模式指向中間執行個體。 [了解详情](../../delivery/using/line-channel.md#configure-line-external)
+* 设置 [!DNL LINE] mkt实例上的外部帐户，以通过更改投放模式指向中间实例。 [了解详情](../../delivery/using/line-channel.md#configure-line-external)
 
-* 設定 [!DNL LINE] MID執行個體的外部帳戶中的認證。
+* 设置 [!DNL LINE] MID实例上的外部帐户中的凭据。
 
 >[!CAUTION]
 >
->的訊息中心傳遞範本 [!DNL LINE] 如果之前已安裝訊息中心套件，則頻道將不可用 [!DNL LINE].
+>消息中心投放模板 [!DNL LINE] 如果之前安装了消息中心包，则渠道将不可用 [!DNL LINE].

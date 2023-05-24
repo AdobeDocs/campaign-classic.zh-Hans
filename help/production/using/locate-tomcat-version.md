@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 在Adobe Campaign中找到Tomcat版本
-description: 瞭解如何找出在Adobe Campaign執行個體中使用的內嵌Tomcat Web servlet最新版本
+description: 了解如何确定Adobe Campaign实例中使用的嵌入式Tomcat Web Servlet的当前版本
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
@@ -19,39 +19,39 @@ ht-degree: 0%
 
 
 
-Adobe Campaign使用 **稱為Apache Tomcat的內嵌Web servlet** 在應用程式和任何外部介面（包括使用者端主控台、追蹤的URL連結、SOAP呼叫等）之間處理HTTP/HTTPS請求。 在任何面對外部的Adobe Campaign執行個體中，通常有一個外部Web伺服器（通常是IIS或Apache）在這之前。
+Adobe Campaign使用 **名为Apache Tomcat的嵌入式Web servlet** 在应用程序和任何外部界面（包括客户端控制台、跟踪的URL链接、SOAP调用等）之间处理HTTP/HTTPS请求。 对于任何面向外部的Adobe Campaign实例，通常有一个外部Web服务器（通常是IIS或Apache）位于该服务器之前。
 
-請依照下列程式操作，以找出使用於的Tomcat確切版本 **Campaign Classic內部部署執行個體** 以協助疑難排解問題。
+请按照以下步骤了解Tomcat在 **Campaign Classic内部部署实例** 以帮助解决问题。
 
 ## Adobe Campaign中使用的Tomcat
 
-Tomcat會在Java上執行，並需要安裝JDK。 如需詳細資訊，請參閱「 」中的Java Development Kit (JDK) [Campaign相容性對照表](../../rn/using/compatibility-matrix.md) 區段。
+Tomcat在Java上运行，需要安装JDK。 有关更多信息，请参阅 [Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md) 部分。
 
-Adobe Campaign中使用的Tomcat是自訂的內嵌版本，並未使用完整版一般可用的Tomcat的所有功能，且可能不會遭受完整版的所有漏洞。 Tomcat也不應該公開給外部網際網路，而公開的Adobe Campaign執行個體應該有外部網頁伺服器（IIS、Apache等） 在Tomcat前保護。
+Adobe Campaign中使用的Tomcat是自定义的嵌入式版本，它没有使用Tomcat的完整正式发行版本的所有功能，并且可能没有完整版本的所有漏洞。 Tomcat也不应该向外部Internet公开，并且公开的任何Adobe Campaign实例都应该具有外部Web服务器（IIS、Apache等） 在汤凯特面前保护它。
 
-Tomcat內嵌版本的新版本或升級版本僅隨Adobe Campaign本身的新組建版本發行，不會作為Adobe Campaign組建以外的個別修補程式發行。
+Tomcat嵌入式版本的新版本或升级版本仅随Adobe Campaign本身的新内部版本一起发布，而不会作为Adobe Campaign内部版本之外的单独修补程序发布。
 
-## 如何找到內嵌Tomcat的版本
+## 如何查找嵌入的Tomcat的版本
 
-若要在Adobe Campaign執行個體中找出內嵌Tomcat的版本，請遵循下列步驟。
+要在Adobe Campaign实例中查找嵌入式Tomcat的版本，请执行以下步骤。
 
 >[!NOTE]
 >
->您必須能存取Adobe Campaign伺服器上需要檢查的檔案。 以下所述的程式僅適用於 **內部部署託管模型**.
+>您必须有权访问您需要检查的Adobe Campaign服务器上的文件。 以下所述的过程仅适用于 **内部部署托管模型**.
 
-1. 導覽至 *\tomcat-7\lib* Adobe Campaign安裝資料夾中的子資料夾(例如， *C:\Program檔案\ [Installation_folder]* 在Windows中，或 */usr/local/neolane/nl6* （在Linux中）。
+1. 导航到 *\tomcat-7\lib* Adobe Campaign安装文件夹中的子文件夹(例如， *C:\Program Files\ [Installation_folder]* 在Windows中，或者 */usr/local/neolane/nl6* （在Linux中）。
 
-   如果您使用Tomcat v6執行較舊版本的Adobe Campaign，請使用 *\tomcat-6\lib*.
+   如果您在使用Tomcat v6运行旧版本的Adobe Campaign，请使用 *\tomcat-6\lib*.
 
-1. 複製檔案 *catalina.jar* 至外部暫存資料夾（例如您的案頭），並將副檔名從.jar重新命名為.zip。
+1. 复制文件 *catalina.jar* 到外部临时文件夹（例如，您的桌面），并将扩展名从.jar重命名为.zip。
 
-1. 將複製的檔案解壓縮。 這會產生許多子資料夾和檔案。
+1. 解压缩复制的文件。 这会生成许多子文件夹和文件。
 
-1. 在解壓縮的檔案/資料夾中，使用文字編輯器開啟或讀取以下包含的檔案： *org/apache/catalina/util/ServerInfo.properties*. 您可能需要新增.txt副檔名，以利使用文字編輯器開啟。
+1. 在解压缩的文件/文件夹中，使用文本编辑器打开或读取以下包含的文件： *org/apache/catalina/util/ServerInfo.properties*. 您可能需要添加.txt扩展名以方便使用文本编辑器打开。
 
-1. 完成後，如果檔案位於伺服器電腦上，請刪除您建立的暫存檔案。
+1. 完成后，如果该文件位于服务器计算机上，请删除您创建的临时文件。
 
-例如， *伺服器資訊。屬性* Adobe Campaign的檔案將包含下列資訊，指出Tomcat v8.5.X：
+例如， *服务器信息。属性* Adobe Campaign的文件将包含以下信息，指示Tomcat v8.5.X：
 
 *server.info=Apache Tomcat/8.5.X*
 
@@ -59,10 +59,10 @@ Tomcat內嵌版本的新版本或升級版本僅隨Adobe Campaign本身的新組
 
 *server.build=MM DD YYYY HH:MM:SS*
 
-當您能夠建立用於特定執行個體的Tomcat確切版本後，它可能會協助您疑難排解Tomcat相關問題。
+一旦您能够建立特定实例中使用的Tomcat的确切版本，它可能会帮助您排除与Tomcat相关的问题。
 
 >[!NOTE]
 >
->內嵌Tomcat的主要版本只有在Adobe Campaign的主要版本變更時才會升級（雖然舊版可能不再受到正式支援，但此資訊可能會有所幫助，因為有些客戶可能仍在執行這些版本）。
+>嵌入式Tomcat的主要版本只有在Adobe Campaign的主要版本发生更改时才会升级（尽管官方可能不再支持旧版本，但由于一些客户仍在运行这些版本，因此这些信息可能会很有用）。
 >
->例如，Adobe Campaign v6.02將一律使用Tomcat v6.x。
+>例如，Adobe Campaign v6.02将始终使用Tomcat v6.x。

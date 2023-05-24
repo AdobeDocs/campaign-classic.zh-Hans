@@ -15,19 +15,19 @@ ht-degree: 0%
 
 
 
-2021年3月29日，Apple推送通知服务(APNs)基础架构更新影响了Adobe Campaign Classic iOS渠道。 操作系统配置更改为 **强制** 以避免iOS推送渠道中断。
+2021年3月29日，Apple推送通知服务(APN)基础架构更新影响了Adobe Campaign Classic iOS渠道。 操作系统配置更改是 **必需** 以避免iOS推送渠道中断。
 
-进一步了解APNs的更改 [本页](https://developer.apple.com/news/?id=7gx0a2lp).
+详细了解APN更改 [本页内容](https://developer.apple.com/news/?id=7gx0a2lp).
 
-作为托管客户，无需执行任何操作：Adobe已将新的根证书纳入到您的环境中。
+作为托管客户，无需执行任何操作：Adobe已将新的根证书并入您的环境。
 
-作为内部部署/混合客户，您需要更新配置以确保无缝过渡 **2021年3月29日之前**.
+作为内部部署/混合部署客户，您需要更新配置以确保无缝过渡 **2021年3月29日之前**.
 
 要合并新证书，请执行以下步骤：
 
-1. 下载 **AACertificateServices 5/12/2020** 根证书 [从此页](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL).
+1. 下载 **AAACertificateServices 5/12/2020** 根证书 [从此页面](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL).
 
-1. 检查OS和JAVA Trustores中均存在AAA证书。 如果没有，请添加。
+1. 检查您的OS和JAVA Trustores中是否都存在AAA证书。 如果没有，请添加它。
 
 1. 重新启动Adobe Campaign Web服务：
 

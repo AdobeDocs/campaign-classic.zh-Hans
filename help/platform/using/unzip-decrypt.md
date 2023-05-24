@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 解壓縮或解密檔案
-description: 瞭解在處理前如何在Campaign中解壓縮或解密檔案
+title: 解压缩或解密文件
+description: 了解在处理之前如何在Campaign中解压缩或解密文件
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
@@ -15,74 +15,74 @@ ht-degree: 10%
 
 ---
 
-# 解壓縮或解密檔案 {#unzipping-or-decrypting-a-file-before-processing}
+# 解压缩或解密文件 {#unzipping-or-decrypting-a-file-before-processing}
 
 
 
-Adobe Campaign可讓您匯入壓縮或加密的檔案。 在中讀取它們之前 [資料載入（檔案）](../../workflow/using/data-loading--file-.md) 活動，您可以定義解壓縮或解密檔案的預先處理。
+Adobe Campaign允许您导入压缩或加密文件。 在中阅读它们之前 [正在加载数据（文件）](../../workflow/using/data-loading--file-.md) 活动，您可以定义一个预处理来解压缩或解密文件。
 
-若要這麼做：
+要做到这一点，请执行以下操作：
 
-1. 使用 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) 產生公開/私密金鑰組。
+1. 使用 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) 以生成公钥/私钥对。
 
    >[!NOTE]
    >
    >所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
    >
-   >請注意，您的執行個體必須託管於AWS上，並透過以下方式升級： [最新GA版本編號](../../rn/using/rn-overview.md). 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
+   >请注意，您的实例必须托管在AWS上并使用 [最新GA内部版本](../../rn/using/rn-overview.md). 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
 
-1. 如果您的Adobe Campaign安裝是由Adobe託管，請聯絡 [Adobe客戶服務](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 在伺服器上安裝必要的公用程式。
-1. 如果您安裝的Adobe Campaign是內部部署，請在應用程式伺服器上安裝您要使用的公用程式（例如：GPG、GZIP）以及必要的金鑰（加密金鑰）。
+1. 如果您安装的Adobe Campaign由Adobe托管，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 在服务器上安装必要的实用程序。
+1. 如果您安装的Adobe Campaign是内部部署，请在应用程序服务器上安装要使用的实用程序（例如：GPG、GZIP）以及必需的密钥（加密密钥）。
 
-然後您可以在工作流程中使用所需的預先處理命令：
+然后，您可以在工作流中使用所需的预处理命令：
 
-1. 新增並設定 **[!UICONTROL File transfer]** 活動。
-1. 新增 **[!UICONTROL Data loading (file)]** 活動並定義檔案格式。
+1. 添加和配置 **[!UICONTROL File transfer]** 活动。
+1. 添加 **[!UICONTROL Data loading (file)]** 并定义文件格式。
 1. 勾选 **[!UICONTROL Pre-process the file]** 选项。
-1. 指定要套用的前置處理命令。
-1. 新增其他活動以管理來自檔案的資料。
-1. 儲存並執行您的工作流程。
+1. 指定要应用的预处理命令。
+1. 添加其他活动以管理来自文件的数据。
+1. 保存并执行工作流。
 
-以下的使用案例中提供範例。
+以下用例中介绍了示例。
 
 **相关主题：**
 
-* [資料載入（檔案）活動](../../workflow/using/data-loading--file-.md).
-* [壓縮或加密檔案](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+* [数据加载（文件）活动](../../workflow/using/data-loading--file-.md).
+* [压缩或加密文件](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
-## 使用案例：匯入使用控制面板產生的金鑰加密的資料 {#use-case-gpg-decrypt}
+## 用例：导入使用控制面板生成的密钥加密的数据 {#use-case-gpg-decrypt}
 
-在此使用案例中，我們將建置工作流程，以便使用在「控制面板」中產生的金鑰，匯入已在外部系統中加密的資料。
+在此使用案例中，我们将构建一个工作流，以便使用在控制面板中生成的密钥导入已在外部系统中加密的数据。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#video)
 
-執行此使用案例的步驟如下：
+执行此用例的步骤如下：
 
-1. 使用「控制面板」產生金鑰組（公用/私用）。 詳細步驟請參閱 [控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. 使用控制面板可生成密钥对（公钥/私钥）。 有关详细步骤，请参阅 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
-   * 公開金鑰將與外部系統共用，外部系統將使用公開金鑰加密要傳送至Campaign的資料。
-   * Campaign Classic將使用私密金鑰來解密傳入的加密資料。
+   * 公共密钥将与外部系统共享，外部系统将使用它加密要发送到Campaign的数据。
+   * Campaign Classic将使用私钥对传入的加密数据进行解密。
 
    ![](assets/gpg_generate.png)
 
-1. 在外部系統中，使用從「控制面板」下載的公開金鑰，將資料加密並匯入Campaign Classic。
+1. 在外部系统中，使用从控制面板下载的公钥加密数据并导入Campaign Classic。
 
-1. 在Campaign Classic中，建立工作流程以匯入加密的資料，並使用已透過「控制面板」安裝的私密金鑰加以解密。 為此，我們將建立工作流程，如下所示：
+1. 在Campaign Classic中，构建一个工作流以导入加密数据，并使用通过控制面板安装的私钥对其进行解密。 为此，我们将构建一个工作流，如下所示：
 
    ![](assets/gpg_import_workflow.png)
 
-   * **[!UICONTROL File transfer]** 活動：將檔案從外部來源傳輸至Campaign Classic。 在此範例中，我們要從SFTP伺服器傳輸檔案。
-   * **[!UICONTROL Data loading (file)]** 活動：將檔案中的資料載入資料庫，並使用「控制面板」中產生的私密金鑰加以解密。
+   * **[!UICONTROL File transfer]** 活动：将文件从外部源传输到Campaign Classic。 在本例中，我们要从SFTP服务器传输文件。
+   * **[!UICONTROL Data loading (file)]** 活动：将数据从文件加载到数据库中，并使用控制面板中生成的私钥对其进行解密。
 
-1. 開啟 **[!UICONTROL File transfer]** 活動，然後指定您要匯入加密.gpg檔案的外部帳戶。
+1. 打开 **[!UICONTROL File transfer]** 活动，然后指定要从中导入加密的.gpg文件的外部帐户。
 
    ![](assets/gpg_key_transfer.png)
 
-   有關如何設定活動的全域概念，請參閱 [本節](../../workflow/using/file-transfer.md).
+   有关如何配置活动的全局概念，请参见 [本节](../../workflow/using/file-transfer.md).
 
-1. 開啟 **[!UICONTROL Data loading (file)]** 活動，然後根據您的需求進行設定。 有關如何設定活動的全域概念，請參閱 [本節](../../workflow/using/data-loading--file-.md).
+1. 打开 **[!UICONTROL Data loading (file)]** 活动，然后根据需要进行配置。 有关如何配置活动的全局概念，请参见 [本节](../../workflow/using/data-loading--file-.md).
 
-   為活動新增前置處理階段，以便解密傳入的資料。 若要這麼做，請選取 **[!UICONTROL Pre-process the file]** 選項，然後將這個解密命令複製並貼到 **[!UICONTROL Command]** 欄位：
+   为活动添加预处理阶段，以便解密传入数据。 要执行此操作，请选择 **[!UICONTROL Pre-process the file]** 选项，然后将此解密命令复制并粘贴到 **[!UICONTROL Command]** 字段：
 
    `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
 
@@ -90,20 +90,20 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在中讀取它們之�
 
    >[!CAUTION]
    >
-   >在此範例中，我們使用「控制面板」預設使用的複雜密碼，即「複雜密碼」。
+   >在本例中，我们使用控制面板默认使用的密码短语“passphrase”。
    >
-   >如果您過去曾透過客戶服務請求在執行個體上安裝GPG金鑰，密碼可能已變更，且預設為與密碼不同。
+   >如果您过去通过客户关怀请求在实例上安装了GPG密钥，则该密码可能已更改，并且默认情况下与密码不同。
 
-1. 按一下 **[!UICONTROL OK]** 以確認活動設定。
+1. 单击 **[!UICONTROL OK]** 以确认活动配置。
 
-1. 您現在可以執行工作流程。 一旦執行後，您就可以將工作流程記錄檔簽入，指出已執行解密，且檔案中的資料已匯入。
+1. 您现在可以运行工作流。 执行此操作后，您可以在工作流日志中签入解密，并且文件中的数据已导入。
 
    ![](assets/gpg_run.png)
 
-## 教學課程影片 {#video}
+## 教程视频 {#video}
 
-本影片說明如何使用GPG金鑰來解密資料。
+本视频说明如何使用GPG密钥解密数据。
 
 >[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
-提供其他Campaign Classic操作影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
+提供了其他Campaign Classic操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).

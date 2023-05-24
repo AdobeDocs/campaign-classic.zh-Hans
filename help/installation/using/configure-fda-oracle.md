@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 配置对Oracle的访问
-description: 了解如何在FDA中配置对Oracle的访问
+title: 配置对Oracle的访问权限
+description: 了解如何在FDA中配置对Oracle的访问权限
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
@@ -14,27 +14,27 @@ ht-degree: 1%
 
 ---
 
-# 配置对Oracle的访问 {#configure-access-to-oracle}
+# 配置对Oracle的访问权限 {#configure-access-to-oracle}
 
 
 
-使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)选项，用于处理存储在外部数据库中的信息。 请按照以下步骤配置对Oracle的访问。
+使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)用于处理存储在外部数据库中的信息的选项。 按照以下步骤配置对Oracle的访问权限。
 
 1. 配置Oracle [Linux](#oracle-linux) 或 [Windows](#azure-windows)
 1. 配置Oracle [外部帐户](#oracle-external) 在Campaign中
 
-## OracleLinux {#oracle-linux}
+## Linux上的Oracle {#oracle-linux}
 
-在FDA中连接到Oracle外部数据库需要在Adobe Campaign服务器上的下面添加其他配置。
+连接到FDA中的Oracle外部数据库需要在Adobe Campaign服务器上进行以下其他配置。
 
-1. 安装与您的Oracle版本对应的Oracle完整客户端。
-1. 将TNS定义添加到安装中。 为此，请在 **tnsnames.ora** 文件。 如果此存储库不存在，请创建它。
+1. 安装与您的Oracle版本相对应的Oracle完整客户端。
+1. 将TNS定义添加到安装中。 要执行此操作，请在 **tnsnames.ora** /etc/oracle存储库中的文件。 如果此存储库不存在，请创建它。
 
-   然后，创建新的TNS_ADMIN环境变量：导出TNS_ADMIN=/etc/oracle并重新启动计算机。
+   然后，创建一个新的TNS_ADMIN环境变量：导出TNS_ADMIN=/etc/oracle并重新启动计算机。
 
-1. 将Oracle集成到Adobe Campaign服务器(nlserver)中。 为此，请检查 **customer.sh** 文件位于Adobe Campaign服务器树结构的“nl6”文件夹中，且包含指向Oracle库的链接。
+1. 将Oracle集成到Adobe Campaign服务器(nlserver)。 要执行此操作，请检查 **customer.sh** 文件位于Adobe Campaign服务器树结构的“nl6”文件夹中，并且其中包含指向Oracle库的链接。
 
-   例如，对于11.2中的客户：
+   例如，对于11.2中的客户端：
 
    ```
    export ORACLE_HOME=/usr/lib/oracle/11.2
@@ -44,7 +44,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >这些值(特别是ORACLE_HOME)取决于您的安装存储库。 在引用这些值之前，请务必检查树结构。
+   >这些值(特别是ORACLE_HOME)取决于您的安装资料档案库。 在引用这些值之前，请确保检查树结构。
 
 1. 安装Oracle所需的库：
 
@@ -63,25 +63,25 @@ ht-degree: 1%
       yum install libaio1
       ```
 
-1. 在Campaign Classic中，您可以配置 [!DNL Oracle] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [此部分](#oracle-external).
+1. 然后，您可以在Campaign Classic中配置 [!DNL Oracle] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [本节](#oracle-external).
 
-## OracleWindows {#oracle-windows}
+## 在Windows上Oracle {#oracle-windows}
 
-在FDA中连接到Oracle外部数据库需要在Adobe Campaign服务器上的下面添加其他配置。
+连接到FDA中的Oracle外部数据库需要在Adobe Campaign服务器上进行以下其他配置。
 
 1. 安装Oracle客户端。
 
-1. 在C:Oracle文件夹中，创建 **tnsnames.ora** 包含TNS定义的文件。
+1. 在C：Oracle文件夹中，创建 **tnsnames.ora** 包含TNS定义的文件。
 
-1. 添加一个以C:Oracle为值的TNS_ADMIN环境变量，然后重新启动计算机。
+1. 添加一个TNS_ADMIN环境变量，并将C：Oracle作为值，然后重新启动计算机。
 
-1. 在Campaign Classic中，您可以配置 [!DNL Oracle] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [此部分](#oracle-external).
+1. 然后，您可以在Campaign Classic中配置 [!DNL Oracle] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [本节](#oracle-external).
 
-## Oracle外部帐户 {#oracle-external}
+## oracle外部帐户 {#oracle-external}
 
-的 [!DNL Oracle] 外部帐户允许您将Campaign实例连接到Oracle外部数据库。
+此 [!DNL Oracle] 外部帐户允许您将Campaign实例连接到Oracle外部数据库。
 
-1. 从Campaign **[!UICONTROL Explorer]**，选择 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. 来自营销活动 **[!UICONTROL Explorer]**，选择 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. 选择 **[!UICONTROL New]**.
 
@@ -91,11 +91,11 @@ ht-degree: 1%
 
    * **[!UICONTROL Type]**: Oracle
 
-   * **[!UICONTROL Server]**:DNS的名称
+   * **[!UICONTROL Server]**：DNS的名称
 
-   * **[!UICONTROL Account]**:用户的名称
+   * **[!UICONTROL Account]**：用户的名称
 
-   * **[!UICONTROL Password]**:用户帐户密码
+   * **[!UICONTROL Password]**：用户帐户密码
 
    * **[!UICONTROL Time zone]**: 服务器时区
    ![](assets/oracle_config.png)

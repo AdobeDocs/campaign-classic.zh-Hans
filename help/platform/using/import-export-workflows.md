@@ -25,17 +25,17 @@ ht-degree: 31%
 
 ### 使用列表中的数据：读取列表 {#using-data-from-a-list--read-list}
 
-在工作流中发送的数据可以来自列表，其中数据是预先准备和构建的。
+工作流中发送的数据可以来自事先已准备并构建数据的列表。
 
-此列表可能是在Adobe Campaign中直接创建的，或由 **[!UICONTROL Import a list]** 选项。 有关此选项的更多信息，请参阅此 [页面](../../platform/using/about-generic-imports-exports.md).
+此列表可能直接在Adobe Campaign中创建或由导入 **[!UICONTROL Import a list]** 选项。 有关此选项的更多信息，请参阅此 [页面](../../platform/using/about-generic-imports-exports.md).
 
-有关在工作流中使用读取列表活动的更多信息，请参阅 [本页](../../workflow/using/read-list.md).
+有关在工作流中使用读取列表活动的更多信息，请参阅 [此页面](../../workflow/using/read-list.md).
 
 ### 从文件加载数据 {#loading-data-from-a-file}
 
-可以在工作流中处理的数据可以从结构化文件中提取，以便将其导入Adobe Campaign。
+可在工作流中处理的数据可从结构化文件中提取，以便将其导入Adobe Campaign。
 
-有关加载数据活动的描述，请参阅 [数据加载（文件）](../../workflow/using/data-loading--file-.md) 中。
+有关加载数据活动的描述，请参阅 [正在加载数据（文件）](../../workflow/using/data-loading--file-.md) 部分。
 
 要导入的结构化文件示例：
 
@@ -47,10 +47,10 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-收集数据后，您可以在工作流中使用它，例如扩充投放或更新数据库。 有关详细信息，请参见[此页面](../../workflow/using/how-to-use-workflow-data.md)。
+收集数据后，您可以在工作流中使用该数据，例如，扩充投放或更新数据库。 有关详细信息，请参见[此页面](../../workflow/using/how-to-use-workflow-data.md)。
 
 ## 导出数据 {#exporting-data-via-a-workflow}
 
 在使用可用于转换数据的一些可用数据管理活动之后，可以使用工作流程来自动执行某些导出过程或导出精确数据集。
 
-导出操作使用 **[!UICONTROL Data extraction (file) activity]**. 有关如何配置和使用活动的更多信息，请参阅 [本页](../../workflow/using/extraction--file-.md).
+使用执行导出操作 **[!UICONTROL Data extraction (file) activity]**. 有关如何配置和使用活动的更多信息，请参阅 [此页面](../../workflow/using/extraction--file-.md).

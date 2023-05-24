@@ -18,13 +18,13 @@ ht-degree: 10%
 
 
 
-如果您选择了 **[!UICONTROL Do not request console update]** 选项，并要重新激活更新请求，请应用以下过程：
+如果您选择了 **[!UICONTROL Do not request console update]** 选项，并且您希望重新激活更新请求，请应用以下过程：
 
-1. 使用 **regedit** 命令 **[!UICONTROL Start > Execute]** 菜单。
+1. 使用打开注册表数据库的编辑器 **regedit** 命令在Windows中 **[!UICONTROL Start > Execute]** 菜单。
 
    ![](assets/ncs_console_update_1.png)
 
 1. 在树中，显示 **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]** 节点。
-1. 删除 **[!UICONTROL confAdvisedUpgrade]** 并关闭注册表编辑器。
+1. 删除 **[!UICONTROL confAdvisedUpgrade]** 输入并关闭注册表编辑器。
 
    ![](assets/ncs_console_update_2.png)

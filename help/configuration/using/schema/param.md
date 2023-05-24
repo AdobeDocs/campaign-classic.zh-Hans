@@ -6,7 +6,7 @@ exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## 内容模型 {#content-model-12}
 
-参数：==帮助
+param：==help
 
 ## 属性 {#attributes-12}
 
@@ -26,11 +26,11 @@ ht-degree: 2%
 * @inout（字符串）
 * @label（字符串）
 * @localizable（字符串）
-* @name(MNTOKEN)
-* @namespace(MNTOKEN)
+* @name (MNTOKEN)
+* @namespace (MNTOKEN)
 * @type（字符串）
 
-## 父母 {#parents-12}
+## 父项 {#parents-12}
 
 `<parameters>`
 
@@ -44,47 +44,47 @@ ht-degree: 2%
 
 ## 属性描述 {#attribute-description-12}
 
-* **desc（字符串）**:与相关的描述 `<param>` 元素。
-* **输入（字符串）**:此属性定义参数是否位于SOAP调用的输入（输入）或输出（输出）。 如果未指定此属性，则输入默认参数(&quot;@inout=in&quot;)。
-* **标签（字符串）**: `<param>` 标签
-* **可本地化（字符串）**:如果激活了该属性，则此属性将告知收集工具恢复“@label”属性的值以进行翻译（内部使用）。
-* **name(MNTOKEN)**:内部名称 `<param>`
-* **类型（字符串）**:此属性定义 `<param>` 元素
+* **desc（字符串）**：与有关的描述 `<param>` 元素。
+* **inout（字符串）**：此属性定义参数是否在SOAP调用的输入(in)或输出(out)。 如果未指定此属性，则默认参数为输入(&quot;@inout=in&quot;)。
+* **标签（字符串）**： `<param>` 标签
+* **可本地化（字符串）**：如果激活，此属性会告知收集工具恢复“@label”属性的值以进行翻译（内部使用）。
+* **名称(MNTOKEN)**：的内部名称 `<param>`
+* **类型（字符串）**：此属性定义 `<param>` 元素
 
    可用类型列表：
 
-   * 任意
-   * 宾
+   * 任何
+   * 纸盒
    * blob
-   * 布尔
+   * 布尔值
    * 字节
    * CDATA
-   * date
+   * datetime
    * datetimetz
-   * datetimenotz
-   * 日期
+   * datemenotz
+   * date
    * DOMDocument
    * DOMElement
    * 多次
    * 枚举
-   * 浮点
+   * 浮点数
    * html
    * int64
    * 链接
-   * long
+   * 长
    * 备忘录
    * MNTOKEN
-   * 百分比
-   * primarykey
+   * percent
+   * 主密钥
    * 短
    * 字符串
    * 时间
-   * 时间跨平台
+   * 时间跨度
    * uuid
 
 ## 示例 {#examples-9}
 
-字符串类型的“serviceName”集客设置的定义：
+字符串类型的“serviceName”入站设置的定义：
 
 ```
 <param desc="Name of the information service(s) (separated with commas)"

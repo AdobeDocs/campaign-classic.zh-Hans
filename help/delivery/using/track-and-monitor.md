@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 跟踪和监视消息
-description: 了解如何跟踪和监视消息
+title: 跟踪和监控消息
+description: 了解如何跟踪和监控消息
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
@@ -17,22 +17,22 @@ ht-degree: 3%
 
 
 
-您点击了 **发送** 按钮？ 让我们看看会发生什么。 发送投放后，Adobe Campaign允许您跟踪已发送的消息，并了解收件人对您的投放有何反应。 这将帮助您改进将来的发送并优化后续促销活动。
+您已单击 **发送** 按钮？ 让我们看看会发生什么。 发送投放后，借助Adobe Campaign，您可以跟踪已发送的消息并了解收件人如何对投放做出反应。 这将帮助您改进未来发送并优化下一个营销活动。
 
 ## 监测投放 {#monitoring-deliveries}
 
-要控制您的营销活动，您必须确保已将消息发送给收件人。
+要控制您的营销活动，您必须确保消息确实已发送给收件人。
 
 在Campaign投放仪表板中，您可以检查已处理的消息和投放审核日志。
 您还可以控制投放日志中消息的状态。 [了解详情](about-delivery-monitoring.md)。
 
-如果未发送投放，且其状态仍为 **待定**?
+如果未发送投放并且其状态保持不变，该怎么办 **待处理**？
 
-* 执行过程正在等待某些资源的可用性。 MTA可能尚未启动。
-检查您的mta@instance模块是否已在MTA服务器上启动，并在必要时启动MTA模块。 [了解详情](../../production/using/administration.md)。
+* 执行进程正在等待某些资源的可用性。 MTA可能尚未启动。
+检查是否在MTA服务器上启动mta@instance模块，并根据需要启动MTA模块。 [了解详情](../../production/using/administration.md)。
 
-* 投放可能使用的亲和度尚未在发送实例上配置。
-提示：检查流量管理（IP亲和度）的配置。 有关更多信息，请参阅控制传出SMTP流量。
+* 投放可能使用未在发送实例上配置的关联。
+提示：检查流量管理（IP关联）的配置。 有关更多信息，请参阅控制传出SMTP通信。
 
 >[!NOTE]
 >
@@ -40,32 +40,32 @@ ht-degree: 3%
 
 ## 跟踪行为 {#track-behaviour}
 
-为了更好地了解收件人的行为，您可以跟踪收件人对投放的反应：接收、打开、链接点击、退订等。 在Campaign Classic中，此信息显示在投放所定向收件人的跟踪选项卡和投放的跟踪选项卡中。
+为了更好地了解收件人的行为，您可以跟踪他们对投放的反应：接收、打开、点击链接、取消订阅等。 在Campaign Classic中，此信息显示在投放所定向的收件人的“跟踪”选项卡和投放的“跟踪”选项卡中。
 
-**笔尖**:默认启用消息跟踪。 要配置URL，请在投放向导的下半部分选择显示URL选项。 对于消息的每个URL，您可以选择是否激活跟踪。
+**笔尖**：默认启用消息跟踪。 要配置URL，请选择投放向导下方的显示URL选项。 对于消息的每个URL，您可以选择是否激活跟踪。
 
-有关更多信息，请参阅 [配置跟踪](how-to-configure-tracked-links.md) 部分和 [跟踪指标](../../reporting/using/delivery-reports.md#tracking-indicators) 描述。
+有关详情，请参阅 [配置跟踪](how-to-configure-tracked-links.md) 部分和 [跟踪指标](../../reporting/using/delivery-reports.md#tracking-indicators) 描述。
 
 ## 投放性能 {#delivery-performances}
 
-要测量消息的传送速度，您可以控制传送吞吐量。 标准是每小时发送的消息数量和消息的大小（以位/秒为单位）。 有关此内容的更多信息，请参阅 [投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput).
+要测量消息投放的速度，您可以控制投放吞吐量。 标准是每小时发送的消息数和消息大小（以位/秒为单位）。 有关此内容的更多信息，请参阅 [投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput).
 
-**提示**:
+**提示**：
 
-* 请勿在实例上将投放保持为失败状态，因为这会维护临时表并影响性能。
+* 请勿将投放置于实例上的失败状态，因为这会维护临时表并影响性能。
 
 * 从数据库中删除不再需要的投放和不活动的收件人，以保持地址质量。
 
-* 请勿尝试同时计划大型投放。 请注意，可能需要5到10分钟才能将负载均匀地分布到系统上。
+* 请勿尝试一起安排大型投放。 请注意，可能需要5到10分钟才能将负载均匀分布到系统上。
 
 ## 投放疑难解答 {#delivery-troubleshooting}
 
-当遇到投放问题时，可以执行特定操作：
+遇到投放问题时可以执行特定操作：
 
-* [投放能力问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
+* [可投放性问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 
 * [图像显示问题](../../production/using/image-display-issues.md)
 
-* [交付性能问题](delivery-performances.md)
+* [投放性能问题](delivery-performances.md)
 
 * [临时文件问题](../../production/using/temporary-files.md) - *仅限内部部署客户*

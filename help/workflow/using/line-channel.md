@@ -16,7 +16,7 @@ ht-degree: 13%
 
 
 
-下面详述的工作流随 **LINE渠道** 模块。 有关此模块的更多信息，请参阅此 [部分](../../delivery/using/line-channel.md).
+下面详述的工作流将随 **LINE渠道** 默认模块。 有关此模块的更多信息，请参阅此 [部分](../../delivery/using/line-channel.md).
 
 <table> 
  <tbody> 
@@ -28,17 +28,17 @@ ht-degree: 13%
   <tr> 
    <td> <span class="uicontrol">LINE V2访问令牌更新</span> <br /> </td> 
    <td> <span class="uicontrol">updateLineV2AccessToken</span> <br /> </td> 
-   <td> 此工作流将刷新LINE V2的访问令牌。<br /> </td> 
+   <td> 此工作流将刷新对LINE V2的访问令牌。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">删除已阻止的LINE用户</span> <br /> </td> 
+   <td> <span class="uicontrol">删除被阻止的LINE用户</span> <br /> </td> 
    <td> <span class="uicontrol">deleteBlockedLineUsersV2</span> <br /> </td> 
-   <td> 此工作流可确保在LINE V2用户阻止LINE正式帐户180天后删除其数据。<br /> </td> 
+   <td> 此工作流可确保在LINE V2用户阻止LINE官方帐户180天后删除这些用户数据。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">从MID迁移到LineUserID</span> <br /> </td> 
+   <td> <span class="uicontrol">MID到LineUserID迁移</span> <br /> </td> 
    <td> <span class="uicontrol">MIDToUserIDMigration</span> <br /> </td> 
-   <td> 此工作流会生成从LINE V1迁移到LINE V2的LINE V2用户ID。<br /> </td> 
+   <td> 此工作流会生成LINE V2用户的ID，以便从LINE V1迁移到LINE V2。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

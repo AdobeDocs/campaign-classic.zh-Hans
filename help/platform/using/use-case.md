@@ -25,16 +25,16 @@ ht-degree: 3%
 
 为此，我们需要使用预定义的文件管理器：这些过滤器链接到文档类型，并可通过 **[!UICONTROL Administration > Configuration > Predefined filters]** 节点。 这些数据过滤器可用于应用程序中的每种类型的编辑器（或文档）。
 
-数据过滤器的创建方式与预定义过滤器相同，但还有一个额外的字段用于选择要应用过滤器的文档类型。
+数据筛选器的创建方式与预定义筛选器的创建方式相同，但有一个附加字段可用于选择将应用筛选器的文档类型。
 
 应用以下步骤：
 
-1. 通过 **[!UICONTROL Administration > Configuration > Predefined filters]** 节点。
+1. 通过创建新过滤器 **[!UICONTROL Administration > Configuration > Predefined filters]** 节点。
 1. 单击 **[!UICONTROL Select link]** 图标以选择相关文档：
 
    ![](assets/s_ncs_user_filter_choose_schema.png)
 
-1. 选择订阅模式(nms:subscription)并单击 **[!UICONTROL OK]**.
+1. 选择订阅架构(nms：subscription)，然后单击 **[!UICONTROL OK]**.
 
    ![](assets/s_ncs_user_filter_select_schema.png)
 
@@ -46,14 +46,14 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   您可以访问这些字段，以在过滤器编辑器的正文中定义过滤器条件。 应用程序过滤器的定义方式与高级过滤器完全相同。 请参阅 [创建高级过滤器](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+   您可以访问这些字段，以便在过滤器编辑器的正文中定义过滤器条件。 应用程序过滤器的定义方式与高级过滤器完全相同。 参见 [创建高级过滤器](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
-1. 为订阅创建新筛选器，以仅显示电子邮件格式未定义的订阅：
+1. 在订阅上创建一个新的筛选器，以仅显示具有未定义电子邮件格式的订阅：
 
    ![](assets/s_ncs_user_filter_parameters.png)
 
-1. 单击 **[!UICONTROL Save]** 向此类型列表的预定义过滤器中添加过滤器。
-1. 您现在可以在 **[!UICONTROL Subscriptions]** 选项卡；您可以通过单击 **[!UICONTROL Filters]** 按钮。
+1. 单击 **[!UICONTROL Save]** 将过滤器添加到此类型列表的预定义过滤器。
+1. 您现在可以在以下位置使用此过滤器： **[!UICONTROL Subscriptions]** 收件人配置文件的选项卡；您可以通过单击 **[!UICONTROL Filters]** 按钮。
 
    ![](assets/s_ncs_user_filter_on_events.png)
 

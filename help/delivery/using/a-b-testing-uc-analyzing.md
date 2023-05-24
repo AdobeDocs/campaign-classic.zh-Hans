@@ -17,9 +17,9 @@ ht-degree: 5%
 
 
 
-发送测试投放后，您可以检查已将其发送到的收件人以及是否已打开这些投放。
+发送测试投放后，您可以检查它们已发送给哪些收件人以及是否打开了它们。
 
-* 要确定已定向的收件人，请通过营销活动仪表板打开投放，然后单击 **[!UICONTROL Delivery]** 选项卡。
+* 要确定已定向哪些收件人，请通过活动仪表板打开投放并单击 **[!UICONTROL Delivery]** 选项卡。
 
    ![](assets/use_case_abtesting_analysis_001.png)
 
@@ -31,6 +31,6 @@ ht-degree: 5%
 
    ![](assets/use_case_abtesting_analysis_003.png)
 
-在本例中，投放B的打开率最高。 这意味着内容B将用于最终交付。
+在我们的示例中，投放B的打开率最高。 这意味着内容B将用于最终投放。
 
 ![](assets/use_case_abtesting_analysis_004.png)

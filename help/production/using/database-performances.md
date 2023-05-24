@@ -19,68 +19,68 @@ ht-degree: 8%
 
 
 
-大多數效能問題都與資料庫維護有關。 以下四個主要線索可協助您找出效能緩慢的原因：
+大多数性能问题都与数据库维护有关。 以下四个主要线索可帮助您找到性能缓慢的原因：
 
 * 配置
-* Adobe Campaign平台的安裝和設定
+* Adobe Campaign平台的安装和配置
 * 数据库维护
-* 即時診斷
+* 实时诊断
 
 ## 配置 {#configuration}
 
-檢查初始Adobe Campaign平台設定是否仍然有效，並視需要重新評估客戶的可傳遞性或資料庫大小需求。 我們也建議執行完整的硬體檢查（CPU、RAM、IO系統）。
+检查初始Adobe Campaign平台配置是否仍然有效，并根据需要重新评估客户的可交付性或数据库大小。 我们还建议运行完整的硬件检查（CPU、RAM、IO系统）。
 
 >[!NOTE]
 >
->您可參閱 [Adobe Campaign硬體大小調整指南](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html) 以取得深入分析。
+>您可以引用 [Adobe Campaign硬件大小调整指南](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html) 以获取洞察。
 
-## 平台設定 {#platform-configuration}
+## 平台配置 {#platform-configuration}
 
-不當的設定可能會影響平台效能。 建議您檢視「 」中的網路設定、平台傳遞能力選項以及MTA設定 **serverConf.xml** 檔案。
+配置不当可能会影响平台性能。 我们建议您检查网络配置、平台可投放性选项以及 **serverConf.xml** 文件。
 
 ## 数据库维护 {#database-maintenance}
 
-**資料庫清理工作**
+**数据库清理任务**
 
-請確定資料庫清理工作可正常運作。 要執行此操作，請檢視記錄檔以檢視它們是否包含任何錯誤。 如需详细信息，请参阅[此部分](../../production/using/database-cleanup-workflow.md)。
+请确保数据库清理任务正在运行。 要执行此操作，请查看日志文件以查看它们是否包含任何错误。 如需详细信息，请参阅[此部分](../../production/using/database-cleanup-workflow.md)。
 
-**維護計畫**
+**维护计划**
 
-請確定資料庫維護已正確排程並執行。 若要這麼做，請聯絡資料庫管理員以進一步瞭解：
+确保正确地计划和执行数据库维护。 要执行此操作，请联系您的数据库管理员了解以下方面的更多信息：
 
-* 他們的維護排程
-* 先前執行的維護計畫
-* 檢視指令碼記錄
+* 他们的维护计划
+* 以前执行的维护计划
+* 查看脚本日志
 
 如需详细信息，请参阅[此部分](../../production/using/recommendations.md)。
 
 >[!IMPORTANT]
 >
->如果您使用中間來源組態，則必須定期維護資料庫。 在行銷平台上分析傳遞時，行銷執行個體會傳送資訊給中間來源執行個體。 如果流程速度變慢，行銷執行個體將受到影響。
+>如果您使用的是中间源配置，则必须定期维护数据库。 在营销平台上分析投放时，营销实例向中间源实例发送信息。 如果流程速度减慢，则营销实例将受到影响。
 
 **管理工作表**
 
-請檢查工作表的數目和大小。 當它們超過特定大小時，資料庫效能會受到影響。 這些表格是由工作流程和傳遞建立的。 當工作流程和傳遞作用中時，它們會留在資料庫中。 若要限制工作表的大小，您可以執行下列操作：
+请检查工作表的数量和大小。 当它们超过一定大小时，数据库性能就会受到影响。 这些表由工作流和投放创建。 当工作流和投放处于活动状态时，它们将保留在数据库中。 要限制工作表的大小，可以执行以下操作：
 
-* 停止或刪除狀態為下列的傳遞： **[!UICONTROL Failed]**， **[!UICONTROL In progress]**， **[!UICONTROL Ready for delivery]**，或 **[!UICONTROL Paused]**.
-* 停止或刪除因錯誤而暫停的工作流程。
-* 停止所有用於測試的工作流程，這些工作流程不包含 **[!UICONTROL End]** 活動及其狀態維持不變 **[!UICONTROL Paused]**.
+* 停止或删除具有以下状态的投放： **[!UICONTROL Failed]**， **[!UICONTROL In progress]**， **[!UICONTROL Ready for delivery]**，或 **[!UICONTROL Paused]**.
+* 停止或删除由于错误而暂停的工作流。
+* 停止所有用于测试的工作流(不包含 **[!UICONTROL End]** 活动，因此其地位仍然不变 **[!UICONTROL Paused]**.
 
 >[!IMPORTANT]
 >
->如果操作需要很長時間並釋放了大量空間，這表示需要進行深入維護（重建索引等）。 如需详细信息，请参阅[此部分](../../production/using/recommendations.md)。
+>如果运行时间较长，并且释放了大量空间，则意味着需要进行深度维护（索引重建等）。 如需详细信息，请参阅[此部分](../../production/using/recommendations.md)。
 
-**Adobe Campaign程式監控**
+**Adobe Campaign流程监控**
 
-根據Adobe Campaign安裝設定，可使用兩種工具進行平台監視：
+根据Adobe Campaign安装设置，可以使用两种工具进行平台监控：
 
-* 執行個體生產頁面。 有關詳細資訊，請參閱 [手動監視](../../production/using/monitoring-processes.md#manual-monitoring).
-* 此 *netreport* 指令碼。 有關詳細資訊，請參閱 [透過Adobe Campaign指令碼自動監視](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
+* 实例生产页面。 有关更多信息，请参阅 [手动监测](../../production/using/monitoring-processes.md#manual-monitoring).
+* 此 *网络报告* 脚本。 有关更多信息，请参阅 [通过Adobe Campaign脚本进行自动监控](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
-## 細節 {#specifics}
+## 具体信息 {#specifics}
 
-您可能需要執行即時診斷，以找出問題的原因。 首先檢查流程和平台記錄檔，然後在重新建立問題的同時監控資料庫活動。 請特別留意下列事項：
+可能需要运行实时诊断以找出问题的原因。 首先检查流程和平台日志文件，然后在重新创建问题时监控数据库活动。 请特别注意以下事项：
 
-* 維護執行計畫
-* 正在執行的SQL查詢
-* 外部程式是否同時執行（清除、匯入、彙總計算等）。
+* 维护执行计划
+* 正在执行的SQL查询
+* 是否同时运行外部进程（清理、导入、聚合计算等）。

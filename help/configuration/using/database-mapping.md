@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 数据库映射{#database-mapping}
 
-我们示例架构的SQL映射提供了以下XML文档：
+示例架构的SQL映射提供了以下XML文档：
 
 ```
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -36,25 +36,25 @@ ht-degree: 0%
 
 ## 说明 {#description}
 
-架构的根元素不再 **`<srcschema>`**，但 **`<schema>`**.
+架构的根元素不再存在 **`<srcschema>`**，但 **`<schema>`**.
 
-这会将我们转到另一类文档，该文档是从源架构自动生成的，简称为架构。 此架构将由Adobe Campaign应用程序使用。
+这会将我们转到另一种类型的文档，它自动从源架构生成，简称为架构。 Adobe Campaign应用程序将使用此架构。
 
-SQL名称根据元素名称和类型自动确定。
+SQL名称是根据元素名称和类型自动确定的。
 
 SQL命名规则如下：
 
-* 表：架构命名空间和名称的拼接
+* 表：架构命名空间和名称的连接
 
-   在本例中，表的名称是通过 **sqltable** 属性：
+   在我们的示例中，表的名称是通过中的架构的主元素输入的 **sqltable** 属性：
 
    ```
    <element name="recipient" sqltable="CusRecipient">
    ```
 
-* 字段：元素的名称，前面是根据类型定义的前缀（“i”表示整数，“d”表示双精度类型，“s”表示字符串，“ts”表示日期等）
+* 字段：前面有根据类型定义的前缀的元素名称（例如，“i”表示整数，“d”表示双精度，“s”表示字符串，“ts”表示日期等）
 
-   字段名称通过 **sqlname** 每个键入的属性 **`<attribute>`** 和 **`<element>`**:
+   字段名称是通过 **sqlname** 每种类型的属性 **`<attribute>`** 和 **`<element>`**：
 
    ```
    <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -62,9 +62,9 @@ SQL命名规则如下：
 
 >[!NOTE]
 >
->SQL名称可以从源架构中重载。 要实现此目的，请在相关元素中填充“sqltable”或“sqlname”属性。
+>可以从源架构中重载SQL名称。 为此，请在相关元素中填充“sqltable”或“sqlname”属性。
 
-用于创建从扩展模式生成的表的SQL脚本如下所示：
+用于创建从扩展模式生成的表的SQL脚本如下：
 
 ```
 CREATE TABLE CusRecipient(
@@ -81,27 +81,27 @@ SQL字段约束如下：
 
 ## XML字段 {#xml-fields}
 
-默认情况下，任何键入的 **`<attribute>`** 和 **`<element>`** 元素被映射到数据模式表的SQL字段。 但是，您可以在XML中引用此字段，而不是SQL ，这意味着数据存储在包含所有XML字段值的表的Memo字段(&quot;mData&quot;)中。 这些数据的存储是一个XML文档，用于观察架构结构。
+默认情况下，任何键入的 **`<attribute>`** 和 **`<element>`** 元素被映射到数据架构表的SQL字段。 但是，您可以用XML而不是SQL引用此字段，这意味着数据存储在包含所有XML字段值的表的备注字段(“mData”)中。 这些数据的存储是观察架构结构的XML文档。
 
-要以XML填充字段，必须将 **xml** 属性，其值为“true”。
+要在XML中填充字段，您必须添加 **xml** 有关元素的值为“true”的属性。
 
-**示例**:以下是两个XML字段使用示例。
+**示例**：以下是两个XML字段用法示例。
 
-* 多行注释字段：
+* 多行评论字段：
 
    ```
    <element name="comment" xml="true" type="memo" label="Comment"/>
    ```
 
-* 以HTML格式描述数据：
+* HTML格式的数据描述：
 
    ```
    <element name="description" xml="true" type="html" label="Description"/>
    ```
 
-   “html”类型允许您将HTML内容存储在CDATA标记中，并在Adobe Campaign客户端界面中显示特殊的HTML编辑检查。
+   通过“html”类型，您可以将HTML内容存储在CDATA标签中，并在Adobe Campaign客户端界面中显示特殊的HTML编辑检查。
 
-使用XML字段，您无需修改数据库的物理结构即可添加字段。 另一个优势是使用的资源较少（分配给SQL字段的大小、对每个表的字段数的限制等）。
+通过使用XML字段，您可以添加字段，而无需修改数据库的物理结构。 另一个优点是，您使用的资源较少（分配给SQL字段的大小、每个表的字段数限制等）。
 
 主要缺点是无法索引或过滤XML字段。
 
@@ -109,7 +109,7 @@ SQL字段约束如下：
 
 通过索引，可以优化应用程序中使用的SQL查询的性能。
 
-从数据架构的主元素中声明索引。
+从数据架构的主元素声明索引。
 
 ```
 <dbindex name="name_of_index" unique="true/false">
@@ -122,7 +122,7 @@ SQL字段约束如下：
 索引遵循以下规则：
 
 * 索引可以引用表中的一个或多个字段。
-* 如果 **独特** 属性包含值“true”。
+* 在以下情况下，索引可以在所有字段中是唯一的（以避免重复） **独特** 特性包含值“true”。
 * 索引的SQL名称由表的SQL名称和索引的名称确定。
 
 >[!NOTE]
@@ -131,7 +131,7 @@ SQL字段约束如下：
 
 >[!NOTE]
 >
->索引在表映射（标准或FDA）期间自动创建。
+>在表映射期间（标准或FDA）自动创建索引。
 
 **示例**:
 
@@ -174,9 +174,9 @@ SQL字段约束如下：
 
 ## 密钥管理 {#management-of-keys}
 
-表必须至少具有一个用于标识表中记录的键。
+表必须具有至少一个用于标识表中记录的键。
 
-从数据架构的主元素中声明一个键。
+从数据架构的主元素中声明了一个键。
 
 ```
 <key name="name_of_key">
@@ -186,23 +186,23 @@ SQL字段约束如下：
 </key>
 ```
 
-密钥遵循以下规则：
+键值遵循以下规则：
 
 * 键可以引用表中的一个或多个字段。
-* 当键是要填充的架构中的第一个键，或者包含的是 **内部** 属性。
-* 每个键定义隐式声明一个唯一索引。 通过添加 **noDbIndex** 属性。
+* 如果某个键是架构中第一个要填充的键，或者如果它包含 **内部** 值为“true”的属性。
+* 为每个键定义隐式声明唯一索引。 可以通过添加以下内容来阻止在键上创建索引 **noDbIndex** 值为“true”的属性。
 
 >[!NOTE]
 >
->作为标准，键是在定义索引后从架构的主元素中声明的元素。
+>作为标准，键是在定义索引后从架构的主元素声明的元素。
 
 >[!NOTE]
 >
->在表映射（标准或FDA）期间创建键，Adobe Campaign会查找唯一索引。
+>键是在表映射（标准或FDA）期间创建的，Adobe Campaign查找唯一的索引。
 
 **示例**:
 
-* 向电子邮件地址和城市添加键：
+* 向电子邮件地址和城市添加密钥：
 
    ```
    <srcSchema name="recipient" namespace="cus">
@@ -285,15 +285,15 @@ SQL字段约束如下：
    </schema>
    ```
 
-### 自动增量密钥 {#auto-incremental-key}
+### 自动增量键 {#auto-incremental-key}
 
-大多数Adobe Campaign表的主键是由数据库引擎自动生成的32位长整数。 键值的计算取决于序列(默认情况下， **XtkNewId** SQL函数)，生成一个在整个数据库中唯一的数字。 在插入记录时自动输入键的内容。
+大多数Adobe Campaign表的主键是由数据库引擎自动生成的32位长整数。 键值的计算取决于序列(默认情况下， **XtkNewId** SQL函数)生成一个在整个数据库中唯一的数字。 在插入记录时自动输入密钥的内容。
 
-增量密钥的优点是它为表之间的连接提供了不可修改的技术密钥。 此外，此键不会占用太多内存，因为它使用双字节整数。
+增量键的优点在于，它为表之间的连接提供了一个不可修改的技术键。 此外，此键不会占用太多内存，因为它使用双字节整数。
 
-您可以在源架构中指定要与一起使用的序列的名称 **pkSequence** 属性。 如果源架构中未提供此属性，则 **XtkNewId** 将使用默认序列。 该应用程序使用专用序列 **nms:broadLog** 和 **nms:trackingLog** 模式(**NmsBroadLogId** 和 **NmsTrackingLogId** )，因为这些表包含的记录最多。
+您可以在源架构中指定要与配合使用的序列的名称 **pkSequence** 属性。 如果源架构中未提供此属性，则 **XtkNewId** 将使用默认序列。 应用程序使用专用序列进行 **nms：broadLog** 和 **nms：trackingLog** 架构(**NmsBroadLogId** 和 **NmsTrackingLogId** 分别)，因为这些是包含最多记录的表。
 
-从ACC 18.10开始， **XtkNewId** 不再是现成架构中序列的默认值。 现在，您可以构建模式或使用专用序列扩展现有模式。
+从ACC 18.10， **XtkNewId** 不再是现成架构中序列的默认值。 您现在可以使用专用序列构建架构或扩展现有架构。
 
 >[!IMPORTANT]
 >
@@ -301,13 +301,13 @@ SQL字段约束如下：
 
 >[!NOTE]
 >
->在Adobe Campaign架构中引用的序列(**NmsTrackingLogId** 例如，)必须与返回参数中ID数的SQL函数关联，该ID数以逗号分隔。 必须调用此函数 **GetNew** XXX **Id**，其中 **XXX** 是序列的名称(**GetNewNmsTrackingLogIds** 例如)。 查看 **postgres-nms-sql**, **mssql-nms.sql** 或 **oracle-nms.sql** 中随应用程序提供的文件 **datakit/nms/eng/sql/** 目录来恢复每个数据库引擎的“NmsTrackingLogId”序列创建示例。
+>Adobe Campaign架构中引用的序列(**NmsTrackingLogId** 例如，必须与SQL函数关联，该函数返回参数中的ID数（用逗号分隔）。 必须调用此函数 **GetNew** XXX **Id**，其中 **XXX** 是序列的名称(**GetNewNmsTrackingLogIds** 例如)。 查看 **postgres-nms.sql**， **mssql-nms.sql** 或 **oracle-nms.sql** 随应用程序提供的文件 **datakit/nms/eng/sql/** 目录，以恢复为每个数据库引擎创建“NmsTrackingLogId”序列的示例。
 
-要声明唯一键，请在 **奥托普** 属性（值为“true”）。
+要声明唯一键，请填充 **autopk** 属性（值为“true”）。
 
 **示例**:
 
-在源模式中声明增量键：
+在源架构中声明增量密钥：
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -335,11 +335,11 @@ SQL字段约束如下：
 </schema>
 ```
 
-除了键值及其索引的定义之外，还在扩展架构中添加了名为“id”的数字字段，以包含自动生成的主键值。
+除了键的定义及其索引之外，还向扩展架构中添加了一个名为“id”的数字字段，以包含自动生成的主键。
 
 >[!IMPORTANT]
 >
->在创建表时，主键设置为0的记录会自动插入。 此记录用于避免外连接，该连接对卷表无效。 默认情况下，所有外键都将初始化为值0，以便在未填充数据项时始终在连接时返回结果。
+>创建表时会自动插入主键设置为0的记录。 此记录用于避免外部联接，这对于卷表无效。 默认情况下，所有外键都使用值0进行初始化，以便当数据项未填充时，始终可以在连接上返回结果。
 
 ## 链接：表之间的关系 {#links--relation-between-tables}
 
@@ -347,24 +347,24 @@ SQL字段约束如下：
 
 各种类型的关联（称为“基数”）如下所示：
 
-* 基数1-1:源表格的一个存在最多可以具有目标表格的一个对应存在。
-* 基数1-N:源表格的一个存在可以具有目标表格的多个对应存在，但目标表格的一个存在最多可以具有源表格的一个对应存在。
-* 基数N-N:源表格的一个存在可以具有目标表格的多个对应存在，反之亦然。
+* 基数1-1：源表格的一个存在最多可以具有目标表格的一个对应存在。
+* 基数1-N：源表格的一个存在可以具有多个目标表格的相应存在，但目标表格的一个存在最多可以具有源表格的一个相应存在。
+* 基数N-N：源表格的一个存在可以具有多个目标表格的相应存在，反之亦然。
 
-在界面中，您可以通过其图标轻松区分不同类型的关系。
+在界面中，通过图标可以轻松区分不同类型的关系。
 
-要与促销活动表/数据库建立连接关系，请执行以下操作：
+对于与Campaign表/数据库的连接关系：
 
-* ![](assets/join_with_campaign11.png) :基数1-1。 例如，在收件人和当前订单之间。 收件人一次只能与当前订单表的一个实例相关。
-* ![](assets/externaljoin11.png) :基数1-1，外部连接。 例如，在收件人与其国家/地区之间。 收件人只能与表国家/地区的一个事件相关。 将不会保存国家/地区表的内容。
-* ![](assets/join_with_campaign1n.png) :基数1-N。例如，在收件人和订阅表之间。 收件人可以与订阅表格上的多次事件相关。
+* ![](assets/join_with_campaign11.png) ：基数1-1。 例如，在收件人与当前订单之间。 收件人一次只能与当前订单表的一个实例相关。
+* ![](assets/externaljoin11.png) ：基数1-1，外部连接。 例如，在收件人与其国家/地区之间。 收件人只能与表国家/地区的一个匹配项相关。 将不会保存国家/地区表的内容。
+* ![](assets/join_with_campaign1n.png) ：基数1-N。例如，在收件人和订阅表之间。 收件人可以与订阅表中的多次发生次数相关。
 
-对于使用联合数据库访问的连接关系：
+对于使用联合数据库访问的联接关系：
 
-* ![](assets/join_fda_11.png) :基数1-1
-* ![](assets/join_fda_1m.png) :基数1-N
+* ![](assets/join_fda_11.png) ：基数1-1
+* ![](assets/join_fda_1m.png) ：基数1-N
 
-有关FDA表的更多信息，请参阅 [访问外部数据库](../../installation/using/about-fda.md).
+有关FDA表的详细信息，请参阅 [访问外部数据库](../../installation/using/about-fda.md).
 
 必须在包含通过主元素链接的表的外键的架构中声明链接：
 
@@ -378,29 +378,29 @@ SQL字段约束如下：
 
 链接遵循以下规则：
 
-* 链接的定义是在 **链接**-type **`<element>`** 具有以下属性：
+* 链接的定义输入于 **链接**-type **`<element>`** 具有以下属性：
 
-   * **name**:源表中链接的名称，
-   * **目标**:目标架构的名称，
-   * **标签**:链接标签，
-   * **revLink** （可选）：目标模式中反向链接的名称（默认自动推导），
-   * **完整性** （可选）：源表格的出现与目标表格的出现的参照完整性。 可能的值如下：
+   * **name**：源表中链接的名称，
+   * **目标**：目标架构的名称，
+   * **标签**：链接标签，
+   * **revLink** （可选）：目标架构中的反向链接的名称（默认自动推断），
+   * **完整性** （可选）：源表的出现与目标表的出现之间的参照完整性。 可能的值如下：
 
-      * **定义**:如果源实例不再被目标实例引用，则可以删除该源实例，
-      * **正常**:删除源实例将初始化指向目标实例的链接键（默认模式），此类型的完整性将初始化所有外键，
-      * **自己**:删除源事件会导致删除目标事件，
-      * **owncopy**:与 **自己** （如果是删除）或重复（如果是重复），
-      * **中性**:不执行任何操作。
-   * **revIntegrity** （可选）：目标架构上的完整性（默认情况下为可选，“正常”），
-   * **revCardinality** （可选）：使用值“single”填充基数类型1-1（默认情况下为1-N）。
-   * **externalJoin** （可选）：强制外连接
-   * **revExternalJoin** （可选）：在反向链路上强制外连接
+      * **定义**：如果源具体值不再由目标具体值引用，则可以删除该源具体值，
+      * **普通**：删除源具体值将初始化指向目标具体值的链接的键（默认模式），此类型的完整性将初始化所有外键，
+      * **own**：删除源具体值会导致删除目标具体值，
+      * **owncopy**：与 **own** （若为删除）或重复发生次数（若为重复），
+      * **中性**：不执行任何操作。
+   * **revIntegrity** （可选）：目标架构上的完整性（可选，默认为“正常”），
+   * **revCardinality** （可选）：值为“single”时，将使用1-1类型填充基数（默认情况下为1-N）。
+   * **externalJoin** （可选）：强制外部连接
+   * **revExternalJoin** （可选）：强制反向链接上的外部连接
 
 
-* 链接将源表中的一个或多个字段引用到目标表。 构成连接的字段( `<join>`  元素)，因为默认情况下，会使用目标架构的内部键自动推断这些元素。
-* 索引会自动添加到扩展架构中链接的外键中。
-* 链接由两个半链接组成，其中第一个链接从源架构声明，第二个链接在目标架构的扩展架构中自动创建。
-* 如果 **externalJoin** 属性，其值为“true”（在PostgreSQL中受支持）。
+* 链接从源表向目标表引用一个或多个字段。 构成连接的字段( `<join>`  元素)，因为它们默认使用目标架构的内部键自动推断。
+* 索引会自动添加到扩展模式中链接的外键中。
+* 链接由两个半链接组成，其中第一个是从源架构中声明的，第二个是在目标架构的扩展架构中自动创建的。
+* 连接可以是外部连接，如果 **externalJoin** 添加了属性，其值为“true”（PostgreSQL支持）。
 
 >[!NOTE]
 >
@@ -408,7 +408,7 @@ SQL字段约束如下：
 
 ### 示例 1 {#example-1}
 
-1-N与“cus:company”架构表相关：
+与“cus：company”模式表相关的1-N关系：
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -436,11 +436,11 @@ SQL字段约束如下：
 </schema>
 ```
 
-链接定义由构成连接的字段来补充，即在目标架构中使用其XPath(&quot;@id&quot;)的主键，在架构中使用其XPath(&quot;@company-id&quot;)的外键。
+链接定义由组成连接的字段补充，即主键在目的架构中带有其XPath (“@id”)，外键在架构中带有其XPath (“@company-id”)。
 
-外键会自动添加到与目标表中关联字段使用相同特征的元素中，并遵循以下命名约定：目标架构的名称，后跟关联字段的名称（在我们的示例中为“company-id”）。
+外键会自动添加到与目标表中的关联字段使用相同特征的元素中，命名规则如下：目标架构名称后跟关联字段名称（在本例中为“company-id”）。
 
-目标的扩展模式(“cus:company”):
+目标(“cus：company”)的扩展架构：
 
 ```
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
@@ -461,17 +461,17 @@ SQL字段约束如下：
 </schema>
 ```
 
-添加了指向“cus:recipient”表的反向链接，其中包含以下参数：
+添加了指向“cus：recipient”表的反向链接，以及以下参数：
 
-* **name**:自动从源模式的名称推断（可以使用源模式上链接定义中的“revLink”属性强制推断）
-* **revLink**:反向链接名称
-* **目标**:链接架构的键值（“cus:recipient”架构）
-* **未绑定**:链接将声明为1-N基数的集合元素（默认情况下）
-* **完整性**:默认情况下为“define”（可以使用源架构上的链接定义中的“revIntegrity”属性强制进行）。
+* **name**：自动从源架构的名称推断（可以在源架构的链接定义中使用“revLink”属性强制）
+* **revLink**：反向链接的名称
+* **目标**：链接架构的键（“cus：recipient”架构）
+* **未绑定**：将链接声明为1-N基数的收集元素（默认情况下）
+* **完整性**：默认情况下，“define”（可以在源架构上的链接定义中使用“revIntegrity”属性强制）。
 
 ### 示例 2 {#example-2}
 
-在本例中，我们将声明指向“nms:address”模式表的链接。 连接是外部连接，明确填充有收件人的电子邮件地址和链接表(“nms:address”)的“@address”字段。
+在本例中，我们将声明指向“nms：address”模式表的链接。 连接是外部连接，使用收件人的电子邮件地址和链接表的“@address”字段(“nms：address”)显式填充。
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -486,7 +486,7 @@ SQL字段约束如下：
 
 ### 示例 3 {#example-3}
 
-与“cus:extension”架构表的1-1关系：
+与“cus：extension”模式表的1-1关系：
 
 ```
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
@@ -494,7 +494,7 @@ SQL字段约束如下：
 
 ### 示例 4 {#example-4}
 
-链接到文件夹（“xtk:folder”架构）：
+链接到文件夹（“xtk：folder”架构）：
 
 ```
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
@@ -504,7 +504,7 @@ SQL字段约束如下：
 
 ### 示例 5 {#example-5}
 
-在本例中，我们希望在链接（“company”到“cus:company”架构）上使用 **xlink** 属性和(“email”)表的字段：
+在本例中，我们希望使用以下项的链接（“company”到“cus：company”模式）上创建键： **xlink** （“电子邮件”）表的属性和字段：
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -548,4 +548,4 @@ SQL字段约束如下：
 </schema>
 ```
 
-“companyEmail”名称键的定义已扩展为“company”链接的外键。 此键值会在这两个字段上生成唯一索引。
+使用“company”链接的外键扩展了“companyEmail”名称键的定义。 此键值在两个字段中都生成一个唯一索引。

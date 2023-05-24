@@ -16,7 +16,7 @@ ht-degree: 8%
 
 
 
-在 **[!UICONTROL Deliveries]** 营销活动工作流活动的选项卡。
+跨渠道投放可在 **[!UICONTROL Deliveries]** 活动工作流活动的选项卡。
 
 可用的各种渠道包括：
 
@@ -27,19 +27,19 @@ ht-degree: 8%
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [Android](../../delivery/using/create-notifications-android.md)
 
-选择要作为投放基础的模板并定义其内容。
+选择投放所基于的模板并定义其内容。
 
-您可以使用不同的定位活动为工作流上游的投放指定定位。
+您可以使用不同的定向活动，在工作流上游指定投放目标。
 
-在以下示例中，我们将创建一个工作流，在一周后为推送通知订阅者发送电子邮件或短信，然后发送推送通知。 操作步骤：
+在下面的示例中，我们将创建一个工作流，以便在一周后为推送通知订阅者发送电子邮件或短信，然后发送推送通知。 操作步骤：
 
 1. 创建营销策划.
-1. 在 **[!UICONTROL Targeting and workflows]** 的 **[!UICONTROL Query]** 到您的工作流。
-1. 配置查询。 例如，在此，我们选择订阅推送通知的收件人作为目标维度。
+1. 在 **[!UICONTROL Targeting and workflows]** 选项卡，添加 **[!UICONTROL Query]** 到您的工作流。
+1. 配置查询。 例如，在本例中，我们选择订阅了推送通知的收件人作为目标维度。
 
    >[!NOTE]
    >
-   >对于推送通知，请使用 **订户应用程序** 目标维度。
+   >对于推送通知，请使用 **订阅者申请** 目标维度。
 
    ![](assets/cross_channel_delivery_1.png)
 
@@ -47,20 +47,20 @@ ht-degree: 8%
 
    ![](assets/cross_channel_delivery_2.png)
 
-1. 添加 **[!UICONTROL Split]** 活动，以划分具有移动号码的收件人和具有电子邮件地址的收件人。
-1. 在 **[!UICONTROL Delivery]** 选项卡，为每个目标选择投放。
+1. 添加 **[!UICONTROL Split]** 活动到您的工作流，以划分具有手机号码的收件人和具有电子邮件地址的收件人。
+1. 在 **[!UICONTROL Delivery]** 选项卡，为每个目标选择一个投放。
 
-   通过双击工作流中的投放活动，以与经典投放向导相同的方式创建投放。 有关详细信息，请参见此 [ 页面](../../delivery/using/about-email-channel.md)。
+   通过双击工作流中的投放活动，以与使用经典投放向导相同的方式创建投放。 有关详细信息，请参见此 [ 页面](../../delivery/using/about-email-channel.md)。
 
    ![](assets/cross_channel_delivery_3.png)
 
-1. 添加和配置 **[!UICONTROL Wait]** 活动，以便收件人一次不会收到过多投放。
-1. 添加 **[!UICONTROL Split]** 活动来划分iOS或Android移动设备应用程序的订阅者。
+1. 添加和配置 **[!UICONTROL Wait]** 活动，以便收件人不会一次收到太多投放。
+1. 添加 **[!UICONTROL Split]** 活动以划分iOS或Android移动应用程序的订阅者。
 
-   为每个操作系统选择一项服务。 有关服务创建的更多信息，请参阅此 [页面](../../delivery/using/configuring-the-mobile-application.md).
+   为每个操作系统选择服务。 有关创建服务的详细信息，请参阅此 [页面](../../delivery/using/configuring-the-mobile-application.md).
 
    ![](assets/cross_channel_delivery_4.png)
 
-1. 为每个操作系统选择和配置移动应用程序交付。
+1. 为每个操作系统选择并配置移动应用程序投放。
 
    ![](assets/cross_channel_delivery_5.png)

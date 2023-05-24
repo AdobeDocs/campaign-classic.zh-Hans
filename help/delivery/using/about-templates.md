@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 关于模板
-description: 投放模板快速入门
+description: 投放模板入门
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
@@ -17,22 +17,22 @@ ht-degree: 1%
 
 
 
-投放配置可保存在投放模板中以便重复使用。 模板可以包含投放的完整或部分配置。
+投放配置可以保存在投放模板中以便重复使用。 模板可能包含投放的完整或部分配置。
 
-可以手动执行投放模板，如本章所述，或根据事件（在设定时间启动，文件到达服务器时启动等）。 投放模板可通过 **[!UICONTROL Resources > Templates > Delivery templates]** 树中的节点。
+投放模板可以手动执行，如本章所述，也可以根据事件（在设置时间启动，在文件到达服务器时启动，等等）。 可通过以下方式配置投放模板 **[!UICONTROL Resources > Templates > Delivery templates]** 树中的节点。
 
 ![](assets/s_user_template_list.png)
 
 模板有两种类型：
 
-1. Adobe Campaign本地投放模板
+1. Adobe Campaign本机投放模板
 
-   不得从系统中删除本机模板。 这些渠道包括每个投放渠道的最小配置。 但是，管理员可以限制某些功能或为用户提供默认值（跟踪激活、发件人电子邮件地址等）。 模板列表中的本机方案以粗体显示。 必须复制这些参数才能对其进行修改。
+   不得从系统中删除本机模板。 它们包括每个投放渠道的最低配置。 但是，管理员可以限制某些功能，或为用户提供默认值（跟踪激活、发件人电子邮件地址等）。 本机方案在模板列表中以粗体显示。 必须复制它们才能修改它们。
 
-1. 预定义投放模板
+1. 预定义的投放模板
 
-   Adobe Campaign管理员可以创建新投放模板。 它们可由操作员（那些具有适当访问权限的用户）重复使用，或由服务器进程自动重复使用。 例如，您可以配置电子邮件投放模板，当用户使用此模板创建投放时，只需输入文本或HTML内容，然后投放即可；管理员已经定义了其他选项。
+   Adobe Campaign管理员可以创建新的投放模板。 操作员（拥有适当访问权限的用户）可重复使用这些变量，服务器进程也可自动使用这些变量。 例如，您可以配置电子邮件投放模板，当用户使用此模板创建投放时，只需要输入文本或HTML内容即可投放；管理员已定义其他选项。
 
 >[!NOTE]
 >
->可用的模板取决于您的访问权限、实例配置和上下文。 例如，在创建信息服务时，您可以链接确认消息的投放模板：然后，您只能访问其目标映射为订阅映射的模板。 有关更多信息，请参阅 [选择目标映射](selecting-a-target-mapping.md) 和 [服务和订阅](about-services-and-subscriptions.md).
+>可用的模板取决于您的访问权限、实例配置和上下文。 例如，在创建信息服务时，可以链接确认消息的投放模板：然后只能访问其目标映射为订阅映射的模板。 有关更多信息，请参阅 [选择目标映射](selecting-a-target-mapping.md) 和 [服务和订阅](about-services-and-subscriptions.md).

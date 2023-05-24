@@ -17,10 +17,10 @@ ht-degree: 0%
 
 您的Adobe Campaign平台提供两个TRANSACTION类型的Web跟踪参数作为标准：
 
-* **金额**:表示交易金额，
-* **文章**:表示交易记录中的项目数。
+* **数量**：表示交易金额，
+* **文章**：表示交易记录中的项目数。
 
-这些参数在 **nms:webTrackingLog** 架构，以及报表中看到的一些指标。
+这些参数在 **nms：webTrackingLog** 模式，和是报表中看到的一些指标。
 
 要定义其他参数，必须扩展此架构。
 
@@ -38,23 +38,23 @@ ht-degree: 0%
 </srcSchema>
 ```
 
-您可以通过配置（投放或收件人）的跟踪日志列表来显示这些参数的值。
+您可以通过配置（投放或收件人的）跟踪日志列表来显示这些参数的值。
 
 ## 重定向服务器配置 {#redirection-server-configuration}
 
-在服务器配置中，您可以定义Web跟踪参数要考虑的最大字符数。
+在服务器配置中，您可以定义用于Web跟踪参数的最大字符数。
 
 >[!IMPORTANT]
 >
->增加需要考虑的最大字符数可能会影响平台的Web跟踪性能。
+>增加要考虑的最大字符数可能会影响平台的Web跟踪性能。
 
-为此，请修改 **webTrackingParamSize** 属性 **`<trackinglogd>`** 元素 **serverConf.xml** 文件。 此文件保存在 **conf** Adobe Campaign安装目录的子目录。
+为此，请修改 **webTrackingParamSize** 的属性 **`<trackinglogd>`** 中的元素 **serverConf.xml** 文件。 此文件保存在 **会议** Adobe Campaign安装目录的子目录。
 
 **示例**:
 
-默认值为64个字符。 此值允许您考虑 **金额** 和 **文章** (&quot;amount=xxxxxxxxx&amp;article=xxxxxxx&quot;)标准参数。
+默认值为64个字符。 通过此值，可将 **数量** 和 **文章** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxx&quot;)标准参数。
 
-通过考虑上述扩展架构示例中指示的两个参数（名称大小+值大小），您可以修改配置以考虑100个字符(“amount=xxxxxxxxxxxx&amp;article=xxxxxxxx&amp;mode=xxxxxxxxxxxx&amp;code=xxxxx”)。
+通过考虑上述扩展架构示例中指示的两个参数（名称大小+值大小），您可以修改配置以考虑100个字符(&quot;amount=xxxxxxxx&amp;article=xxxxxxxx&amp;mode=xxxxxxxxxx&amp;code=xxxxx&quot;)。
 
 ```
 <trackinglogd args="" autoStart="false" initScript="" maxCreateFileRetry="5" maxLogsSizeOnDiskMb="500"
@@ -66,14 +66,14 @@ webTrackingParamSize="64"/>
 修改配置后，您必须：
 
 * 停止承载重定向模块（Apache、IIS等）的Web服务器，
-* 停止Adobe Campaign服务器： **net stop nlserver6** 在Windows中， **/etc/init.d/nlserver6 stop** 在Linux中，
+* 停止Adobe Campaign服务器： **网络停止nlserver6** 在Windows中， **/etc/init.d/nlserver6停止** 在Linux中，
 
    >[!NOTE]
    >
-   >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl停止nlserver**
+   >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl stop nlserver**
 
-* 在Linux中，使用 **ipcrm** 命令，
-* 重新启动Adobe Campaign服务器： **网络启动nlserver6** 在Windows中， **/etc/init.d/nlserver6开始** 在Linux中，
+* 在Linux中，使用删除共享内存段 **ipcrm** 命令，
+* 重新启动Adobe Campaign服务器： **网络启动nlserver6** 在Windows中， **/etc/init.d/nlserver6启动** 在Linux中，
 
    >[!NOTE]
    >
@@ -81,7 +81,7 @@ webTrackingParamSize="64"/>
 
 * 重新启动Web服务器。
 
-**示例**:考虑Linux下的配置。
+**示例**：考虑Linux下的配置。
 
 ```
 adobe@selma:~$ systemctl stop nlserver
@@ -107,4 +107,4 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->对于Linux，如果您将 **webTrackingParamSize** 或 **maxSharedLogs** 参数时，您可能需要增加共享内存(SHM)的大小。
+>对于Linux，如果增加 **webTrackingParamSize** 或 **maxSharedLogs** 参数，您可能需要增加共享内存(SHM)的大小。

@@ -13,17 +13,17 @@ ht-degree: 5%
 
 # 匿名跟踪{#anonymous-tracking}
 
-Adobe Campaign允许您在收集的Web跟踪信息以匿名方式浏览您网站时，将其链接到收件人。 当用户浏览您网站的标记页面时，会收集此浏览信息，以便用户在单击由Adobe Campaign发送的电子邮件后，即会识别这些用户，并且该信息会自动链接到这些用户。
+通过Adobe Campaign，您可以在收件人匿名浏览您的网站时将收集的Web跟踪信息链接到收件人。 当用户浏览网站的标记页面时，将收集此浏览信息，以便他们单击Adobe Campaign发送的电子邮件后，即会识别这些页面，并且信息会自动链接到这些页面。
 
 >[!IMPORTANT]
 >
->在网站上设置匿名跟踪可能会触发大量跟踪日志的收集，从而影响数据库操作。 小心配置。\
->跟踪日志会保存在数据库中，直到清除跟踪数据为止。 使用部署向导配置清除频率。 如需详细信息，请参阅[此部分](../../installation/using/deploying-an-instance.md#purging-data)。
+>在网站上设置匿名跟踪可能会触发收集大量跟踪日志，从而影响数据库操作。 请谨慎配置。\
+>跟踪日志将保存在数据库中，直到清除跟踪数据为止。 使用部署向导配置清除频率。 如需详细信息，请参阅[此部分](../../installation/using/deploying-an-instance.md#purging-data)。
 
 要在实例上启用匿名Web跟踪，必须配置以下元素：
 
-* 的 **trackWebVisitors** 参数 **重定向** 元素 **serverConf.xml** 跟踪服务器的文件必须设置为“**true**&#39;，放置永久Cookie(**uuid230**)访问网站的未知internet用户的浏览器中。
-* 的 **匿名Web跟踪** 必须在部署向导的跟踪配置屏幕中选择模式。
+* 此 **trackWebVisitors** 的参数 **重定向** 元素 **serverConf.xml** 必须将跟踪服务器的文件设置为&#39;**true**`，以放置永久Cookie(**uuid230**)，这些浏览器为访问网站的未知Internet用户。
+* 此 **匿名Web跟踪** 必须在部署向导的跟踪配置屏幕中选择模式。
 
    ![](assets/webtracking_anonymous_set.png)
 

@@ -17,55 +17,55 @@ ht-degree: 4%
 
 
 
-随机字段替换允许您将收件人列表中的某个值归因于用户在投放中使用此值时的种子地址为空(例如：名称、城市等)。
+随机字段替换允许您在投放中使用此值时，将收件人列表中的值归因于空的种子地址（例如：名称、城市等）。
 
-通过此替换，您可以在创建投放时节省时间：替代不会手动将所需值添加到种子地址，而是会在投放所定向的收件人列表中随机取回此值，并将其应用于种子地址。
+通过此替换，您可以在创建投放时节省时间：替代不会将所需值手动添加到种子地址，而是会在投放定向的收件人列表中随机恢复此值，并将其应用于种子地址。
 
 ## 上下文 {#context}
 
-在此用例中，站点 **我的在线图书馆** 想根据客户最喜爱的文学风格，给客户打折。
+在此用例中，站点 **我的联机库** 根据客户喜爱的文学类型，向客户打折购买。
 
-投放管理器已将与收藏流派关联的个性化字段集成到其电子邮件中。 目的是使用一些种子地址：这些种子地址的表中包含个性化字段，但此处未保存任何值。
+投放经理已将链接到最喜爱流派的个人化字段集成到其电子邮件中。 目的是使用一些种子地址：这些种子地址在表中具有个性化字段，但未保存任何值。
 
 要使用随机字段替换，您必须具有：
 
 * 包含一个或多个个性化字段的投放，
-* 种子地址 **数据模式** 将根据投放中使用的个性化字段进行修改。
+* 种子地址，其 **数据架构** 根据投放中使用的个性化字段进行修改。
 
 ## 创建投放 {#step-1---creating-a-delivery}
 
-有关创建投放的详细步骤，请参见 [创建电子邮件投放](creating-an-email-delivery.md) 中。
+有关创建投放的详细步骤，请参见 [创建电子邮件投放](creating-an-email-delivery.md) 部分。
 
-在此示例中，投放管理器已创建新闻稿。
+在本例中，投放经理创建了新闻稿。
 
 ![](assets/dlv_seeds_usecase_24.png)
 
-## 编辑种子地址数据模式 {#editing-the-seed-addresses-data-schema}
+## 编辑种子地址数据架构 {#editing-the-seed-addresses-data-schema}
 
-有关如何修改数据架构的说明，请参阅一节。
+有关如何修改数据模式的说明，请参阅部分。
 
-在本例中，种子地址数据架构采用从收件人数据架构创建的值：
+在此示例中，种子地址数据模式采用从收件人数据模式创建的值：
 
 ```
  <attribute label="Favorite literary genre" length="80" name="favoriteLiteraryGenre"
                type="string" userEnum="favoriteLiteraryGenre"/>
 ```
 
-此枚举允许用户指定其客户最喜爱的文学类型。
+此明细列表允许用户指定其客户最喜爱的文学类型。
 
-要在种子地址中查看此数据模式修改 **输入表单**，则必须更新它。 请参阅 [更新输入表单](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) 中。
+使此数据架构修改可在种子地址中查看 **输入表单**，您必须更新它。 请参阅 [更新输入表单](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) 部分。
 
 ## 配置个性化 {#configuring-personalization}
 
 1. 打开投放。
 
-   在本例中，投放有两个个性化字段：收件人的 **名字** 和收件人的 **最受欢迎的文学流派**.
+   在此示例中，投放有两个个性化字段：收件人的 **名字** 以及收件人的 **最喜爱的文学类型**.
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. 配置投放列表和种子地址。 请参阅 [确定目标群体](steps-defining-the-target-population.md).
+1. 配置投放列表和种子地址。 请参阅 [确定目标人群](steps-defining-the-target-population.md).
 
-   在本例中，用户会选择 **最受欢迎的文学流派** 是以Sci-Fi为主目标群体。
+   在本例中，用户选择满足以下条件的用户 **最喜爱的文学类型** 科幻小说是主要目标人群。
 
    ![](assets/dlv_seeds_usecase_26.png)
 
@@ -75,7 +75,7 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >有关 **[!UICONTROL Edit the dynamic condition...]** 链接，请参阅 [用例：根据条件选择种子地址](use-case--selecting-seed-addresses-on-criteria.md).
+   >欲知关于 **[!UICONTROL Edit the dynamic condition...]** 链接，请参阅 [用例：根据条件选择种子地址](use-case--selecting-seed-addresses-on-criteria.md).
 
 1. 单击 **[!UICONTROL Preview]** 选项卡，然后选择种子地址以测试个性化。
 
@@ -83,13 +83,13 @@ ht-degree: 4%
 
    您可以看到其中一个个性化字段为空。 由于种子地址没有此字段的数据，因此HTML内容预览无法显示值。
 
-   执行字段的随机替换 **投放时**.
+   进行字段的随机替换 **在交付时**.
 
 1. 单击 **[!UICONTROL Send]** 按钮。
-1. 分析投放，然后 **确认投放**.
+1. 分析您的投放，然后 **确认投放**.
 
-   种子地址会在其收件箱中接收投放内容。
+   种子地址会在收件箱中接收投放。
 
-   字段个性化非常有效。
+   字段个性化有效。
 
    ![](assets/dlv_seeds_usecase_08.png)

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 配置对Netezza的访问
-description: 了解如何在FDA中配置对Netezza的访问
+title: 配置对Netezza的访问权限
+description: 了解如何在FDA中配置对Netezza的访问权限
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
@@ -14,25 +14,25 @@ ht-degree: 0%
 
 ---
 
-# 配置对Netezza的访问 {#configure-access-to-netezza}
+# 配置对Netezza的访问权限 {#configure-access-to-netezza}
 
 
 
-使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)选项，用于处理存储在外部数据库中的信息。 请按照以下步骤配置对Netezza的访问。
+使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)用于处理存储在外部数据库中的信息的选项。 按照以下步骤配置对Netezza的访问权限。
 
-1. 安装和配置 [Netezza驱动程序](#netezza-config)
+1. 安装和配置 [netezza驱动程序](#netezza-config)
 1. 配置Netezza [外部帐户](#netezza-external) 在Campaign中
 
-## Netezza配置 {#netezza-config}
+## netezza配置 {#netezza-config}
 
-在FDA中连接到Netezza外部数据库需要在Adobe Campaign服务器上进行以下其他配置：
+连接到FDA中的Netezza外部数据库需要在Adobe Campaign服务器上进行以下其他配置：
 
-1. 根据您使用的操作系统安装ODBC驱动程序进行Netezza:
+1. 根据您使用的操作系统安装用于Netezza的ODBC驱动程序：
 
-   * **nz-linuxclient-v7.2.0.0.tar.gz** 的URL。 选择与您的操作系统（linux或linux64）对应的文件夹，然后启动unpack命令。 您可以保留默认建议在存储库中执行的安装：&quot;/usr/local/nz&quot;。
-   * **nz-winclient-v7.2.0.0.zip** （对于Windows）。 解压缩文件，并启动与您的操作系统对应的可执行脚本：nzodbcsetup.exe或nzodbcsetup64.exe。 按照向导说明完成驱动程序的安装。
+   * **nz-linuxclient-v7.2.0.0.tar.gz** 适用于Linux的。 选择与您的操作系统（linux或linux64）对应的文件夹，然后启动unpack命令。 您可以将安装保留在默认情况下建议的存储库中执行：“/usr/local/nz”。
+   * **nz-winclient-v7.2.0.0.zip** 用于Windows。 解压缩文件，然后启动与您的操作系统对应的可执行脚本： nzodbcsetup.exe或nzodbcsetup64.exe。 按照向导说明完成安装驱动程序。
 
-1. 配置ODBC驱动程序。 配置可以在标准文件中执行： **/etc/odbc.ini** 对于常规参数和 **/etc/odbcinst.ini** 来宣布司机。
+1. 配置ODBC驱动程序。 可在标准文件中进行配置： **/etc/odbc.ini** 一般参数和 **/etc/odbcinst.ini** 用于声明驱动程序。
 
    * **/etc/odbc.ini**
 
@@ -41,7 +41,7 @@ ht-degree: 0%
       InstallDir=/etc/
       ```
 
-      &quot;InstallDir&quot;对应于odbcinst.ini文件的位置。
+      “InstallDir”对应于odbcinst.ini文件的位置。
 
    * **/etc/odbcinst.ini**
 
@@ -66,32 +66,32 @@ ht-degree: 0%
 
 1. 指定Adobe Campaign服务器的环境变量：
 
-   * **LD_LIBRARY_PATH**:/usr/local/nz/lib和/usr/local/nz/lib64。 “/usr/local/nz”对应于安装驱动程序时默认提供的安装存储库。 您需要在此指定为安装选择的存储库。
-   * **奥德布奇尼**:odbc.ini文件的位置(例如/etc/odbc.ini)。
-   * **NZ_ODBC_INI_PATH**:odbc.ini文件的位置。 Netezza还需要此第二个变量才能使用odbc.ini文件。
+   * **LD_LIBRARY_PATH**： /usr/local/nz/lib和/usr/local/nz/lib64。 “/usr/local/nz”对应于安装驱动程序时默认提供的安装存储库。 在此，您需要指定为安装选择的存储库。
+   * **ODBCINI**：odbc.ini文件的位置(例如/etc/odbc.ini)。
+   * **NZ_ODBC_INI_PATH**：odbc.ini文件的位置。 使用odbc.ini文件时，Netezza还需要第二个变量。
 
-## Netezza外部帐户 {#netezza-external}
+## netezza外部帐户 {#netezza-external}
 
 netezza外部帐户允许您将Campaign实例连接到Netezza外部数据库。
 
-1. 从Campaign **[!UICONTROL Explorer]**，单击 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. 来自营销活动 **[!UICONTROL Explorer]**，单击 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. 单击 **[!UICONTROL New]** 选择 **[!UICONTROL External database]** as **[!UICONTROL Type]**.
+1. 单击 **[!UICONTROL New]** 并选择 **[!UICONTROL External database]** 作为 **[!UICONTROL Type]**.
 
-1. 配置 **[!UICONTROL Netezza]** 外部帐户，您必须指定：
+1. 要配置 **[!UICONTROL Netezza]** 外部帐户，您必须指定：
 
    * **[!UICONTROL Type]**: Netezza
 
-   * **[!UICONTROL Server]**:netezza服务器的URL
+   * **[!UICONTROL Server]**：Netezza服务器的URL
 
-   * **[!UICONTROL Account]**:用户的名称
+   * **[!UICONTROL Account]**：用户的名称
 
-   * **[!UICONTROL Password]**:用户帐户密码
+   * **[!UICONTROL Password]**：用户帐户密码
 
-   * **[!UICONTROL Database]**:数据库的名称
+   * **[!UICONTROL Database]**：数据库的名称
 
 >[!NOTE]
 >
->不考虑对包含自动生成的主键的架构的操作。
+>不包含对包含自动生成主键的架构的操作。
 >
->该表将使用 **组织** 子句。 由于此子句的Netezza限制为1到4列，因此此索引不能包含4列以上。
+>该表将使用 **组织日期** 子句中定义的第一个索引。 由于此子句限制为1到4列具有Netezza，因此此索引不能包含4列以上的列。

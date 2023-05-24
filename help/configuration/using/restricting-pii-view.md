@@ -16,13 +16,13 @@ ht-degree: 2%
 
 ## 概述 {#overview}
 
-某些客户需要营销用户才能访问数据记录，但不希望他们查看个人身份信息(PII)，如名字、姓氏或电子邮件地址。 Adobe Campaign提出了一种保护隐私并防止常规营销活动运营商滥用数据的方法。
+某些客户需要营销用户能够访问数据记录，但不希望他们查看个人身份信息(PII)，如名字、姓氏或电子邮件地址。 Adobe Campaign提出了一种保护隐私并防止数据被常规营销活动操作员滥用的方法。
 
 ## 实施 {#implementation}
 
-可应用于任何元素或属性的新属性已添加到架构中，它补充了现有属性 **[!UICONTROL visibleIf]** . 此属性为： **[!UICONTROL accessibleIf]** . 当包含与当前用户上下文相关的XTK表达式时，它可以利用 **[!UICONTROL HasNamedRight]** 或 **[!UICONTROL $(login)]** ，例如。
+架构中添加了可应用于任何元素或属性的新属性，它补充了现有属性 **[!UICONTROL visibleIf]** . 此属性为： **[!UICONTROL accessibleIf]** . 当包含与当前用户上下文相关的XTK表达式时，它可以利用 **[!UICONTROL HasNamedRight]** 或 **[!UICONTROL $(login)]** 例如。
 
-您可以找到收件人模式扩展的示例，该示例显示了下面的用法：
+您可以找到收件人模式扩展的示例，该示例显示以下用法：
 
 ```
 <srcSchema desc="Recipient table (profiles" entitySchema="xtk:srcSchema" extendedSchema="nms:recipient"
@@ -39,25 +39,25 @@ ht-degree: 2%
 
 主要属性包括：
 
-* **[!UICONTROL visibleIf]** :会隐藏元数据中的字段，因此无法在架构视图、列选择或表达式生成器中访问这些字段。 但这不会隐藏任何数据，如果在表达式中手动输入字段名称，则会显示值。
-* **[!UICONTROL accessibleIf]** :隐藏生成查询中的数据（用空值替换它）。 如果visibleIf为空，则获取的表达式与 **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL visibleIf]** ：从元数据中隐藏字段，因此在架构视图、列选择或表达式生成器中无法访问这些字段。 但这不会隐藏任何数据，如果手动在表达式中输入字段名称，则会显示值。
+* **[!UICONTROL accessibleIf]** ：隐藏生成的查询中的数据（将其替换为空值）。 如果visibleIf为空，则它将获得与相同的表达式 **[!UICONTROL accessibleIf]** .
 
 以下是在Campaign中使用此属性的后果：
 
-* 在控制台中，数据将不会使用通用查询编辑器显示。
+* 在控制台中使用通用查询编辑器不会显示数据，
 * 数据在概述列表和记录列表（控制台）中不可见。
-* 数据将在详细视图中变为只读。
-* 数据将仅在过滤器中可用（这意味着使用某些二分法策略，您仍然可以猜测值）。
-* 使用受限字段构建的任何表达式也将受到限制：lower(@email)变得与@email一样可访问。
-* 在工作流中，您可以将受限列作为过渡的额外列添加到目标群体中，但Adobe Campaign用户仍无法访问该列。
-* 在组（列表）中存储目标群体时，所存储字段的特征与数据源相同。
+* 在详细视图中，数据将变为只读。
+* 数据只能在筛选器中使用（这意味着使用某些二分法，您仍然可以猜测值）。
+* 使用受限字段构建的任何表达式也会受到限制：lower(@email)变得与@email一样可访问。
+* 在工作流中，您可以将受限列作为过渡的额外列添加到目标群体，但Adobe Campaign用户仍无法访问它。
+* 当将目标群体存储在一个组（列表）中时，所存储字段的特征与数据源相同。
 * 默认情况下，JS代码无法访问数据。
 
 ## 推荐 {#recommendations}
 
-在每个投放中，电子邮件地址都会复制到 **[!UICONTROL broadLog]** 和 **[!UICONTROL forecastLog]** 表：因此，这些字段也需要保护。
+在每次投放中，电子邮件地址都会复制到 **[!UICONTROL broadLog]** 和 **[!UICONTROL forecastLog]** 表：因此，这些字段也需要受到保护。
 
-以下是用于实施此功能的日志表扩展示例：
+以下是实施此操作的日志表扩展示例：
 
 ```
 <srcSchema entitySchema="xtk:srcSchema" extendedSchema="nms:broadLogRcp" img="nms:broadLog.png"
@@ -88,4 +88,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->此限制适用于非技术用户：具有相关权限的技术用户将能够检索数据。 因此，此方法不是100%安全。
+>此限制适用于非技术用户：具有相关权限的技术用户将能够检索数据。 因此，此方法不是100%安全的。

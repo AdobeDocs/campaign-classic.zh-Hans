@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 扩展模式
+title: 扩展架构
 description: 了解如何扩展模式
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Schema Extension
@@ -12,29 +12,29 @@ ht-degree: 4%
 
 ---
 
-# 扩展模式{#extending-a-schema}
+# 扩展架构{#extending-a-schema}
 
 >[!IMPORTANT]
 >
->不得扩展某些内置架构：主要是定义了以下设置的用户：\
+>某些内置架构不得扩展：主要是那些定义了以下设置的架构：\
 >**dataSource=&quot;file&quot;** 和 **mappingType=&quot;xmlFile&quot;**.\
->不能扩展以下架构： **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl：监控**, **nms:calendar**, **nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk：连接**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusion**, **xtk:j**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext**, **xtk:session**, **xtk:sqlSchema**, **xtk:strings**.
->此列表并不详尽。
+>不得扩展以下架构： **xtk：entityBackupNew**， **xtk：entityBackupOriginal**， **xtk：entityOriginal**， **xtk：form**， **xtk：srcSchema**， **ncm：publishing**， **nl：monitoring**， **nms：calendar**， **nms：remoteTracking**， **nms：userAgentRules**， **xtk：builder**， **xtk：连接**， **xtk：dbInit**， **xtk：funcList**， **xtk：fusion**， **xtk： jst**， **xtk：navtree**， **xtk：queryDef**， **xtk：resourceMenu**， **xtk：schema**， **xtk：scriptContext**， **xtk：session**， **xtk：sqlSchema**， **xtk：字符串**.
+>这份清单并非详尽无遗。
 
 扩展现有模式的方法有两种：
 
 1. 直接修改源架构。
-1. 创建另一个具有相同名称但命名空间不同的架构。 其优势在于，您无需修改原始架构即可扩展表。
+1. 创建另一个名称相同但命名空间不同的架构。 优点在于，无需修改原始模式即可扩展表。
 
-   架构的根元素必须包含 **extendedSchema** 属性，其名称为要扩展的架构的值。
+   架构的根元素必须包含 **extendedschema** 属性，其值为要扩展的架构的名称。
 
-   扩展架构没有其自己的架构：将使用扩展架构的字段填充从源架构生成的架构。
+   扩展架构没有自己的架构：从源架构生成的架构将使用扩展架构的字段进行填充。
 
    >[!IMPORTANT]
    >
-   >不允许修改应用程序的内置模式，而是模式扩展机制。 否则，在应用程序未来升级时，修改的架构将不会更新。 这可能会导致使用Adobe Campaign时出现故障。
+   >不允许修改应用程序的内置架构，但可以修改架构扩展机制。 否则，修改后的架构将不会在应用程序未来升级时更新。 这可能会导致使用Adobe Campaign时出现故障。
 
-   **示例**:扩展 **nms:recipient** 架构。
+   **示例**：的扩展 **nms：recipient** 架构。
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">
@@ -44,7 +44,7 @@ ht-degree: 4%
    </srcSchema>
    ```
 
-   的 **nms:recipient** 扩展架构中填充了扩展架构中填充的字段：
+   此 **nms：recipient** 扩展架构中填充了扩展架构中填充的字段：
 
    ```
    <schema dependingSchemas="cus:recipient" name="recipient" namespace="nms">
@@ -54,11 +54,11 @@ ht-degree: 4%
    </schema>
    ```
 
-   的 **depingSchemas** 架构的根元素上的属性引用了对扩展架构的依赖关系。
+   此 **依赖模式** 架构的根元素上的属性引用对扩展架构的依赖关系。
 
-   的 **属于** 字段中的属性将填充声明该属性的架构。
+   此 **beystsTo** 字段上的属性会填充声明该属性的架构。
 
 >[!IMPORTANT]
 >
->要考虑修改，您需要重新生成架构。 有关详细信息，请参见[此页面](../../configuration/using/regenerating-schemas.md)。\
+>要将这些修改考虑在内，您需要重新生成架构。 有关详细信息，请参见[此页面](../../configuration/using/regenerating-schemas.md)。\
 >如果修改影响数据库的结构，则需要运行更新。 有关详细信息，请参见[此页面](../../configuration/using/updating-the-database-structure.md)。

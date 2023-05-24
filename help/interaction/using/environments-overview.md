@@ -18,12 +18,12 @@ ht-degree: 6%
 
 
 
-本章详细介绍如何在交互中管理选件环境。
+本章详细介绍如何在“交互”中管理优惠环境。
 
-管理和使用选件时，会涉及多个不同的用户配置文件。 因此，第一步是确保这些用户档案存在，如果不存在，则创建它们。
+管理和使用选件涉及多个不同的用户配置文件。 因此，第一步包括确保存在这些用户档案，如果不存在，则创建它们。
 
 >[!IMPORTANT]
 >
->以下配置需要由 **技术管理员**.
+>以下配置需要由执行 **技术管理员**.
 
-![](assets/do-not-localize/how-to-video.png) 看这个 [视频](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) 了解Campaign交互的架构，并了解优惠引擎的工作方式。
+![](assets/do-not-localize/how-to-video.png) 观看此内容 [视频](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) 以了解Campaign交互的架构，并了解优惠引擎的工作原理。

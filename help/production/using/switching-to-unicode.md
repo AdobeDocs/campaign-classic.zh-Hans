@@ -19,42 +19,42 @@ ht-degree: 7%
 
 
 
-針對現有 **prod** Linux/PostgreSQL中的執行個體，切換至Unicode的步驟如下：
+对于现有 **prod** 在Linux/PostgreSQL中的实例，切换到unicode的步骤如下：
 
-1. 停止將處理作業寫入資料庫：
+1. 停止写入数据库的进程：
 
    ```
    su - neolane
    nlserver shutdown
    ```
 
-1. 傾印資料庫：
+1. 转储数据库：
 
    ```
    su - postgres
    pg_dump mydatabase > mydatabase.sql
    ```
 
-1. 建立Unicode資料庫：
+1. 创建Unicode数据库：
 
    ```
    createdb -E UNICODE mydatabase_unicode
    ```
 
-1. 還原資料庫：
+1. 还原数据库：
 
    ```
    psql mydatabase_unicode < mydatabase.sql
    ```
 
-1. 更新表示資料庫為Unicode的選項：
+1. 更新指示数据库为Unicode的选项：
 
    ```
    psql mydatabase_unicode
    update XtkOption set sStringValue = 'u'||sStringValue where sName='XtkDatabaseId' and sStringValue not like 'u%';
    ```
 
-1. 在追蹤伺服器上：
+1. 在跟踪服务器上：
 
    ```
    su - neolane
@@ -62,7 +62,7 @@ ht-degree: 7%
    vi config-prod.xml
    ```
 
-   新增 **u** 與資料庫識別碼相關的值前面的字元(**資料庫識別碼**)：
+   添加 **u** 与数据库标识符相关的值前面的字符(**databaseId**)：
 
    ```
    <web>
@@ -70,7 +70,7 @@ ht-degree: 7%
    </web>
    ```
 
-1. 在呼叫資料庫的伺服器上：
+1. 在调用数据库的服务器上：
 
    ```
    su - neolane
@@ -78,7 +78,7 @@ ht-degree: 7%
    vi config-prod.xml
    ```
 
-   修改資料庫參考：
+   修改数据库引用：
 
    ```
    <dataSource name="default">
@@ -88,7 +88,7 @@ ht-degree: 7%
    </dataSource>
    ```
 
-1. 重新啟動所有電腦：
+1. 重新启动所有计算机：
 
    ```
    /etc/init.d/apache stop
@@ -97,7 +97,7 @@ ht-degree: 7%
    /etc/init.d/apache start
    ```
 
-1. 確認交換器。 若要這麼做，請透過Adobe Campaign主控台連線，並：
+1. 确认交换机。 为此，请通过Adobe Campaign控制台连接并：
 
-   * 檢查資料是否正確顯示，尤其是重音字元：
-   * 啟動傳遞，並檢查追蹤擷取是否有效。
+   * 检查数据是否正确显示，特别是重音字符：
+   * 启动投放并检查跟踪检索是否有效。

@@ -16,10 +16,10 @@ ht-degree: 12%
 
 
 
-下面详述的工作流计划每小时运行一次。 它随 **消息中心 — 控制** 模块。
+下面详细介绍的工作流计划每小时运行一次。 它随一起安装 **消息中心 — 控制** 默认模块。
 
 
-有关更多信息，请根据您的Campaign版本，参阅以下章节：
+有关更多信息（取决于您的Campaign版本），请参阅以下章节：
 
 ![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文档](../../message-center/using/about-transactional-messaging.md)
 
@@ -38,12 +38,12 @@ ht-degree: 12%
    <td> mcSynch_&lt;external_account_name&gt;<br /> </td> 
    <td> 此工作流：<br /> 
     <ul> 
-     <li> <p>取回由操作处理的事件列表。</p> </li> 
-     <li> <p>与NmsBroadLogMsg表同步，以恢复投放消息的资格。</p> </li> 
-     <li> <p>与NmsBroadLogMsg表同步完成后，立即恢复事件投放日志。</p> </li> 
-     <li> <p>与NmsTrackingUrl表同步，以便恢复交付URL的跟踪。</p> </li> 
-     <li> <p>完成与NmsTrackingUrl表的同步后，会立即恢复事件跟踪URL。</p> </li> 
-     <li> <p>允许您在发送投放后每三小时恢复隔离的所有电子邮件地址。</p> </li> 
+     <li> <p>恢复操作处理的事件列表。</p> </li> 
+     <li> <p>与NmsBroadLogMsg表同步，以恢复投放消息资格。</p> </li> 
+     <li> <p>与NmsBroadLogMsg表的同步完成后，立即恢复事件投放日志。</p> </li> 
+     <li> <p>与NmsTrackingUrl表同步，以恢复对投放URL的跟踪。</p> </li> 
+     <li> <p>与NmsTrackingUrl表的同步完成后，立即恢复事件跟踪URL。</p> </li> 
+     <li> <p>用于在发送投放后，每三小时恢复一次所有被隔离的电子邮件地址。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

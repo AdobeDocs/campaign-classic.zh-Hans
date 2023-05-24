@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 网络、数据库和 SSL/TLS
-description: 进一步了解网络、数据库和SSL/TLS配置最佳实践
+description: 了解有关网络、数据库和SSL/TLS配置最佳实践的更多信息
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
@@ -20,20 +20,20 @@ ht-degree: 9%
 
 ## 网络配置
 
-部署内部部署类型的架构时，需要检查的一个非常重要的事项是 [网络配置](../../installation/using/network-configuration.md). 确保Tomcat服务器不能直接在服务器外部访问：
+在部署内部部署类型的体系结构时，需要检查的一件非常重要的事情是 [网络配置](../../installation/using/network-configuration.md). 确保Tomcat服务器无法在服务器外部直接访问：
 
-* 在外部IP上关闭Tomcat端口(8080)（必须在本地主机上工作）
+* 关闭外部IP上的Tomcat端口(8080)（必须在本地主机上工作）
 * 请勿将标准HTTP端口(80)映射到Tomcat端口(8080)
 
-如果可能，请使用安全渠道：POP3改为POP3（或POP3而不是TLS）。
+如果可能，请使用安全渠道：使用POP3S而不是POP3（或TLS上的POP3）。
 
 ## 数据库
 
-必须应用数据库引擎安全最佳实践。
+您必须应用数据库引擎安全最佳实践。
 
 ## SSL/TLS配置
 
-要检查证书，您可以使用openssl。 要检查活动密码，您可以使用nmap:
+要检查证书，您可以使用openssl。 要检查活动密码，您可以使用nmap：
 
 ```
 #!/bin/sh
@@ -51,7 +51,7 @@ openssl x509 -noout -subject -dates
 nmap --script ssl-enum-ciphers -p ${REMPORT} ${REMHOST}
 ```
 
-您还可以使用 [sslyze](https://github.com/nabla-c0d3/sslyze/releases) python脚本，可同时执行这两项操作。
+您也可以使用 [slyze](https://github.com/nabla-c0d3/sslyze/releases) python脚本，两者都执行。
 
 ```
 python sslyze.py --sslv2 --sslv3 --tlsv1 --reneg --resum --certinfo=basic --hide_rejected_ciphers --sni=SNI myserver.com

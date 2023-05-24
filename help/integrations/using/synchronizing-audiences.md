@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 同步受众
-description: 瞭解如何使用ACS Connector同步受眾
+description: 了解如何将受众与ACS Connector同步
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
@@ -18,49 +18,49 @@ ht-degree: 1%
 
 
 
-您可以使用Campaign v7進階功能建立複雜的清單，並以順暢的方式與Campaign Standard（包括其他資料）直接即時以對象身分分享此清單。 您的Campaign Standard使用者就可以在Adobe Campaign Standard中使用對象。
+您可以使用Campaign v7高级功能构建一个复杂的列表，并以无缝方式与Campaign Standard（包括其他数据）实时地直接作为受众共享该列表。 然后，您的Campaign Standard用户可以在Adobe Campaign Standard中使用该受众。
 
-涉及在Campaign Standard中未複製之其他資料的複雜目標定位，只能使用Campaign v7來達成。
+涉及在Campaign Standard中未复制的其他数据的复杂定位，只能使用Campaign v7实现。
 
-您也可以透過Campaign Standard共用透過Microsoft Dynamics等聯結器的收件者清單或資料。
+您还可以通过Campaign Standard共享通过Microsoft Dynamics等连接器的收件人列表或数据。
 
-此使用案例顯示如何在Campaign v7中準備傳送的目標，以及如何在使用Adobe Campaign Standard建立和傳送的傳送中重複使用此目標及其其他資料。
+此用例展示了如何在Campaign v7中准备投放目标，以及如何在通过Adobe Campaign Standard创建和发送的投放中重用此目标及其附加数据。
 
 >[!NOTE]
 >
->如果您需要的所有資料都已復寫，您也可以使用Adobe Campaign Standard中的彙總和集合來擴充資料。
+>如果您需要的所有数据都已复制，您还可以使用Adobe Campaign Standard中的聚合和集合来扩充数据。
 
 ## 先决条件 {#prerequisites}
 
-若要完成此操作，您需要：
+要实现此目的，您需要：
 
-* 收件者儲存在Campaign v7資料庫中並與Campaign Standard同步。 請參閱 [同步設定檔](../../integrations/using/synchronizing-profiles.md) 區段。
-* 其他資料，例如儲存在Campaign v7資料庫中與nms：recipients相關的表格中的訂閱或交易。 這些資料可以來自Campaign v7 OOB結構描述或自訂表格。 由於它們未同步，因此預設無法在Campaign Standard中使用。
-* 有權執行Campaign v7和Campaign Standard的工作流程。
-* 以Campaign Standard建立和執行傳送的權利。
+* 收件人存储在Campaign v7数据库中并与Campaign Standard同步。 请参阅 [同步用户档案](../../integrations/using/synchronizing-profiles.md) 部分。
+* 其他数据，例如存储在Campaign v7数据库中与nms：recipients相关的表中的订阅或交易。 这些数据可以来自Campaign v7 OOB架构或自定义表。 默认情况下，它们在Campaign Standard中不可用，因为它们未同步。
+* 有权在Campaign v7和Campaign Standard中执行工作流。
+* 有权在Campaign Standard中创建和执行投放。
 
-## 在Campaign v7中使用其他資料建立目標定位工作流程 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}
+## 在Campaign v7中创建包含附加数据的定位工作流 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}
 
-涉及在Campaign Standard中未複製之其他資料的複雜目標定位，只能使用Campaign v7來達成。
+涉及在Campaign Standard中未复制的其他数据的复杂定位，只能使用Campaign v7实现。
 
-定義目標及其其他資料後，可以將其儲存為可與Campaign Standard共用的清單。
+定义目标及其附加数据后，可以将其另存为可与Campaign Standard共享的列表。
 
 >[!NOTE]
 >
->此為範例。 根據您的要求，您只需查詢收件者清單並與ACS共用即可，無需任何進一步處理。 您也可以使用其他資料管理活動來準備最終目標。
+>这是一个示例。 根据您的要求，您只需查询收件人列表并将其与ACS共享即可，无需任何进一步处理。 您还可以使用其他数据管理活动来准备最终目标。
 
-若要取得最終對象及其額外資料：
+要获取最终受众及其附加数据，请执行以下操作：
 
-1. 建立新的工作流程，從 **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
-1. 新增 **[!UICONTROL Query]** 活動，並選取您要向其傳送最終電子郵件的收件者。 例如，所有年齡介於18到30歲之間且居住在法國的收件者。
+1. 从创建新工作流 **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
+1. 添加 **[!UICONTROL Query]** 活动并选择要向其发送最终电子邮件的收件人。 例如，所有年龄在18至30岁之间且居住在法国的收件人。
 
    ![](assets/acs_connect_query1.png)
 
-1. 從查詢中新增其他資料。 如需詳細資訊，請參閱 [新增資料](../../workflow/using/query.md#adding-data) 區段。
+1. 从查询中添加其他数据。 欲了解更多信息，请参见 [添加数据](../../workflow/using/query.md#adding-data) 部分。
 
-   此範例說明如何新增彙總，以計算收件者在一年內收到多少傳遞。
+   此示例说明如何添加聚合以计算收件人在一年内接收的投放数量。
 
-   在 **[!UICONTROL Query]**，選取 **[!UICONTROL Add data...]**.
+   在 **[!UICONTROL Query]**，选择 **[!UICONTROL Add data...]**.
 
    ![](assets/acs_connect_query2.png)
 
@@ -68,87 +68,87 @@ ht-degree: 1%
 
    ![](assets/acs_connect_query3.png)
 
-1. 選擇 **[!UICONTROL Data linked to the filtering dimension]** 然後選取 **[!UICONTROL Recipient delivery logs]** 節點並按一下 **[!UICONTROL Next]**.
+1. 选择 **[!UICONTROL Data linked to the filtering dimension]** 然后选择 **[!UICONTROL Recipient delivery logs]** 节点并单击 **[!UICONTROL Next]**.
 
    ![](assets/acs_connect_query4.png)
 
-1. 選取 **[!UICONTROL Aggregates]** 在 **[!UICONTROL Data collected]** 欄位並按一下 **[!UICONTROL Next]**.
+1. 选择 **[!UICONTROL Aggregates]** 在 **[!UICONTROL Data collected]** 字段并单击 **[!UICONTROL Next]**.
 
    ![](assets/acs_connect_query5.png)
 
-1. 新增篩選條件，以僅考慮過去365天內建立的記錄，然後按一下 **[!UICONTROL Next]**.
+1. 添加筛选条件以仅考虑过去365天内创建的日志，然后单击 **[!UICONTROL Next]**.
 
    ![](assets/acs_connect_query6.png)
 
-1. 定義輸出欄。 在此，唯一需要的欄是計算傳遞數量的欄。 若要這麼做：
+1. 定义输出列。 在此，唯一需要的列是计算投放数量的列。 为此，请执行以下操作：
 
-   * 選取 **[!UICONTROL Add]** 在視窗右側。
-   * 從 **[!UICONTROL Select field]** 視窗，按一下 **[!UICONTROL Advanced selection]**.
-   * 選取 **[!UICONTROL Aggregate]**，則 **[!UICONTROL Count]**. 檢查 **[!UICONTROL Distinct]** 選項，然後按一下 **[!UICONTROL Next]**.
-   * 在欄位清單中，選取用於 **計數** 函式。 選擇永遠填入的欄位，例如 **[!UICONTROL Primary key]** 欄位，然後按一下 **[!UICONTROL Finish]**.
-   * 變更中的運算式 **[!UICONTROL Alias]** 欄。 此別名可讓您在最終傳送中輕鬆擷取新增的欄。 例如 **NBdeliveries**.
-   * 按一下 **[!UICONTROL Finish]** 並儲存 **[!UICONTROL Query]** 活動設定。
+   * 选择 **[!UICONTROL Add]** 在窗户的右边。
+   * 从 **[!UICONTROL Select field]** 窗口，单击 **[!UICONTROL Advanced selection]**.
+   * 选择 **[!UICONTROL Aggregate]**，则 **[!UICONTROL Count]**. 查看 **[!UICONTROL Distinct]** 选项，然后单击 **[!UICONTROL Next]**.
+   * 在字段列表中，选择用于 **计数** 函数。 选择一个将始终填充的字段，例如 **[!UICONTROL Primary key]** 字段，然后单击 **[!UICONTROL Finish]**.
+   * 更改中的表达式 **[!UICONTROL Alias]** 列。 利用此别名，可轻松地在最终投放中检索添加的列。 例如 **NBdeliveries**.
+   * 单击 **[!UICONTROL Finish]** 并保存 **[!UICONTROL Query]** 活动配置。
 
    ![](assets/acs_connect_query7.png)
 
-1. 保存工作流。下一節將展示如何與ACS共用母體。
+1. 保存工作流。下一部分将演示如何与ACS共享群体。
 
-## 與Campaign Standard共用目標 {#share-the-target-with-campaign-standard}
+## 与Campaign Standard共享目标 {#share-the-target-with-campaign-standard}
 
-定義目標母體後，您可以透過 **[!UICONTROL List update]** 活動。
+定义目标群体后，您可以通过以下方式与ACS共享 **[!UICONTROL List update]** 活动。
 
-1. 在先前建立的工作流程中，新增 **[!UICONTROL List update]** 並指定要更新或建立的清單。
+1. 在之前创建的工作流中，添加 **[!UICONTROL List update]** 活动并指定要更新或创建的列表。
 
-   指定您要在Campaign v7中儲存清單的資料夾。 清單受實施期間定義的資料夾對應約束，一旦在Campaign Standard中共用，可能會影響其可見性。 請參閱 [許可權轉換](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion) 區段。
+   在Campaign v7中指定要保存列表的文件夹。 列表受实施期间定义的文件夹映射的约束，一旦在Campaign Standard中共享，可能会影响其可见性。 请参阅 [权限转换](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion) 部分。
 
-1. 確定 **[!UICONTROL Share with ACS]** 選項時才會核取。 預設會勾選。
+1. 确保 **[!UICONTROL Share with ACS]** 选项。 默认情况下，该复选框处于选中状态。
 
    ![](assets/acs_connect_listupdate1.png)
 
-1. 儲存並執行工作流程。
+1. 保存并执行工作流。
 
-   目標及其他Campaign Standard會儲存在Campaign v7的清單中，並立即以清單對象的形式共用。 只有已複製的設定檔會與ACS共用。
+   目标及其附加数据将保存在Campaign v7的列表中，并立即作为Campaign Standard中的列表受众共享。 只有已复制的用户档案才会与ACS共享。
 
-如果發生錯誤，在 **[!UICONTROL List update]** 活動，這表示與Campaign Standard的同步可能已失敗。 若要檢視關於所發生問題的詳細資訊，請前往 **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. 此資料夾包含由觸發的同步工作流程 **[!UICONTROL List update]** 活動執行。 請參閱 [ACS聯結器疑難排解](../../integrations/using/troubleshooting-the-acs-connector.md) 區段。
+如果在 **[!UICONTROL List update]** 活动，这意味着与Campaign Standard的同步可能已失败。 要能够查看有关所发生问题的更多详细信息，请访问 **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. 此文件夹包含由触发的同步工作流 **[!UICONTROL List update]** 活动执行。 请参阅 [ACS连接器故障排除](../../integrations/using/troubleshooting-the-acs-connector.md) 部分。
 
-## 擷取Campaign Standard中的資料並將其用於傳遞 {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
+## 在Campaign Standard中检索数据并将其用于投放 {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
 
-在Campaign v7中執行目標定位工作流程後，您便能夠從 **[!UICONTROL Audiences]** Campaign Standard功能表。
+在Campaign v7中执行定位工作流后，您便能够从 **[!UICONTROL Audiences]** Campaign Standard菜单。
 
 ![](assets/acs_connect_deliveryworkflow_audience.png)
 
-透過Campaign Standard建立傳遞工作流程，就可以使用此對象及其在傳遞中包含的其他資料。
+通过在Campaign Standard中创建投放工作流，随后可以使用此受众及其在投放中包含的其他数据。
 
-1. 從建立新的工作流程 **[!UICONTROL Marketing activities]** 功能表。
-1. 新增 **[!UICONTROL Read audience]** 活動並選取您先前從Campaign v7共用的對象。
+1. 从创建新工作流 **[!UICONTROL Marketing activities]** 菜单。
+1. 添加 **[!UICONTROL Read audience]** 活动并选择您之前从Campaign v7共享的受众。
 
-   此活動用於擷取所選對象的資料。 您也可以套用其他 **[!UICONTROL Source Filtering]** 如有需要，可使用此活動的對應索引標籤。
+   此活动用于检索所选受众的数据。 您还可以应用其他 **[!UICONTROL Source Filtering]** 如果需要，可使用此活动的相应选项卡。
 
-1. 新增 **[!UICONTROL Email delivery]** 活動並設定為與其他任何活動相同 [電子郵件傳遞活動](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
-1. 開啟傳遞內容。
-1. 添加个性化字段。從快顯視窗中，找到 **[!UICONTROL Additional data (targetData)]** 節點。 此節點包含在初始鎖定目標工作流程中運算的對象其他資料。 您可以使用它們做為任何其他個人化欄位。
+1. 添加 **[!UICONTROL Email delivery]** 活动，并将其配置为任何其他 [电子邮件投放活动](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
+1. 打开投放内容。
+1. 添加个性化字段。从弹出窗口中，找到 **[!UICONTROL Additional data (targetData)]** 节点。 此节点包含在初始定位工作流中计算的受众的附加数据。 您可以将它们用作任何其他个性化字段。
 
-   在此範例中，來自原始目標定位工作流程的其他資料是過去365天內傳送給每個收件者的傳送數量。 在此可看見目標工作流程中指定的NBdeliveries別名。
+   在本例中，来自原始定位工作流的附加数据是过去365天内发送给每个收件人的投放数量。 此处显示定位工作流中指定的NBdeliveries别名。
 
    ![](assets/acs_connect_deliveryworkflow_targetdata.png)
 
-1. 儲存傳遞和工作流程。
+1. 保存投放和工作流。
 
-   工作流程現在已準備好執行。 將會分析傳遞並準備傳送。
+   工作流现已准备就绪，可执行。 将分析投放并准备发送。
 
    ![](assets/acs_connect_deliveryworkflow_ready.png)
 
-## 傳送並監視您的傳遞 {#send-and-monitor-your-delivery}
+## 发送并监控您的投放 {#send-and-monitor-your-delivery}
 
-傳送及其內容準備就緒後，傳送傳送：
+投放及其内容准备就绪后，发送投放：
 
-1. 執行傳遞工作流程。 此步驟會準備要傳送的電子郵件。
-1. 從傳送控制面板，手動確認可傳送傳送。
-1. 監視傳送的報告和記錄：
+1. 执行投放工作流。 此步骤准备要发送的电子邮件。
+1. 在投放仪表板中，手动确认投放可以发送。
+1. 监测投放的报告和日志：
 
-   * **在Campaign Standard中**：存取 [報告](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) 和 [記錄](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) 和任何傳遞一樣，與傳遞相關。
-   * **在Campaign v7和Campaign Standard中**：傳遞ID、電子郵件廣泛記錄檔和電子郵件追蹤記錄檔會同步至Campaign v7。 然後您可以從Campaign v7以全方位的角度檢視行銷活動。
+   * **在Campaign Standard中**：访问 [报告](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) 和 [日志](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) 和任何投放一样，与投放相关。
+   * **在Campaign v7和Campaign Standard中**：投放ID、电子邮件广泛日志和电子邮件跟踪日志同步到Campaign v7。 然后，您可以从Campaign v7全面了解营销活动。
 
-      隔離會自動同步回Campaign v7。 如此可讓您將無法傳遞的資訊納入考量，以便在Campaign v7中執行下一個目標定位。
+      隔离会自动同步回Campaign v7。 这样，在Campaign v7中执行的下一个定位时就可以考虑无法投放的信息。
 
-      您可以在Campaign Standard中找到有關隔離管理的更多資訊 [本節](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
+      您可以在Campaign Standard中找到有关隔离管理的更多信息 [本节](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).

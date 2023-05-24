@@ -1,16 +1,16 @@
 ---
 product: campaign
 title: 架构元素和属性 — 枚举元素
-description: 明细元素
+description: 明细列表元素
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
-# 明细元素 {#enumeration--element}
+# 明细列表元素 {#enumeration--element}
 
 ![](../../../assets/v7-only.svg)
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 * @name（字符串）
 * @template（字符串）
 
-## 父母 {#parents-5}
+## 父项 {#parents-5}
 
 `<srcschema>`
 
@@ -38,52 +38,52 @@ ht-degree: 2%
 
 ## 说明 {#description-5}
 
-利用此元素，可定义值枚举。 枚举属于其中定义的架构，但可通过其他架构访问。
+此元素允许我们定义值枚举。 枚举属于在其中定义它的模式，但它可以通过另一个模式访问。
 
 ## 使用和使用上下文 {#use-and-context-of-use-4}
 
-枚举在架构开始时定义（在定义主元素之前）。
+枚举是在架构的开头定义的（在定义主元素之前）。
 
 ## 属性描述 {#attribute-description-5}
 
-* **basetype（字符串）**:枚举中存储的值的类型。
+* **basetype（字符串）**：枚举中存储的值的类型。
 
    可用类型列表：
 
-   * 任意
-   * 宾
+   * 任何
+   * 纸盒
    * blob
-   * 布尔
+   * 布尔值
    * 字节
    * CDATA
-   * date
+   * datetime
    * datetimetz
-   * datetimenotz
-   * 日期
+   * datemenotz
+   * date
    * DOMDocument
    * DOMElement
    * 多次
    * 枚举
-   * 浮点
+   * 浮点数
    * html
    * int64
    * 链接
-   * long
+   * 长
    * 备忘录
    * MNTOKEN
-   * 百分比
-   * primarykey
+   * percent
+   * 主密钥
    * 短
    * 字符串
    * 时间
-   * 时间跨平台
+   * 时间跨度
    * uuid
 
-* **默认（字符串）**:默认值。 默认值也可以是枚举中定义的值之一。
-* **desc（字符串）**:明细列表描述。
-* **标签（字符串）**:枚举标签。
-* **名称（字符串）**:枚举的内部名称。
-* **模板（字符串）**:此属性定义对 `<enumeration>` 由多个架构共享的元素。 定义会自动复制到当前架构中。
+* **默认（字符串）**：默认值。 默认值也可以是枚举中定义的值之一。
+* **desc（字符串）**：枚举描述。
+* **标签（字符串）**：枚举标签。
+* **名称（字符串）**：枚举的内部名称。
+* **模板（字符串）**：此属性定义对 `<enumeration>` 由多个架构共享的元素。 该定义会自动复制到当前架构中。
 
 ## 示例 {#examples-4}
 

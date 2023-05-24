@@ -19,34 +19,34 @@ ht-degree: 3%
 
 
 
-以下章節提供有關工作流程執行常見問題以及如何疑難排解的資訊。
+以下部分介绍了与工作流执行相关的常见问题以及如何对其进行疑难解答。
 
-如需工作流程的詳細資訊，請參閱下列章節：
+有关工作流的详细信息，请参阅以下章节：
 
 * [关于工作流](../../workflow/using/about-workflows.md)
 * [启动工作流](../../workflow/using/starting-a-workflow.md)
 * [工作流生命周期](../../workflow/using/workflow-life-cycle.md)
-* [使用工作流程時的最佳實務](../../workflow/using/workflow-best-practices.md)
+* [使用工作流时的最佳实践](../../workflow/using/workflow-best-practices.md)
 
-## 在行銷活動中儘快開始 {#start-as-soon-as-possible-in-campaigns}
+## 在营销活动中尽快开始 {#start-as-soon-as-possible-in-campaigns}
 
-在某些情況下，從行銷活動執行的工作流程不會在按一下 **[!UICONTROL Start]** 按鈕。 此狀態不會開始，而會變成「儘快開始」狀態。
+在某些情况下，从营销策划执行的工作流不会在单击 **[!UICONTROL Start]** 按钮。 它不会启动，而是进入“尽快启动”状态。
 
-此問題可能有數個原因，請依照下列步驟加以解決：
+此问题的原因可能有多种，请按照以下步骤解决此问题：
 
-1. 檢查 [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md) 技術工作流程狀態。 此工作流程可管理行銷活動內的工作或工作流程。 如果失敗，會導致工作流程無法啟動/停止。 重新啟動以繼續執行行銷活動工作流程。
+1. 查看 [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md) 技术工作流状态。 此工作流用于管理营销策划内的作业或工作流。 如果失败，将导致工作流无法启动/停止。 重新启动它以继续运行活动工作流。
 
-   如需技術工作流程監控的詳細資訊，請參閱 [此頁面](../../workflow/using/monitoring-technical-workflows.md).
+   有关技术工作流监控的更多信息，请参阅 [此页面](../../workflow/using/monitoring-technical-workflows.md).
 
    >[!NOTE]
    >
-   >工作流程重新啟動後，請務必執行擱置中的任務(以滑鼠右鍵按一下 **[!UICONTROL Scheduler]** 活動/ **[!UICONTROL Execute pending task(s) now]**)，以檢查它是否在任何活動中再次失敗。
+   >重新启动工作流后，确保执行挂起的任务(右键单击 **[!UICONTROL Scheduler]** 活动/ **[!UICONTROL Execute pending task(s) now]**)，以检查它是否在任何活动中再次失败。
 
-   如果工作流程仍然失敗，請檢查稽核記錄是否有特定錯誤，並據此進行疑難排解，然後再次重新啟動工作流程。
+   如果工作流仍然失败，请检查审核日志中的特定错误，进行相应的故障诊断，然后再次重新启动工作流。
 
-1. 檢查 **[!UICONTROL wfserver]** 中的模組狀態 **[!UICONTROL Monitoring]** 索引標籤，可從Campaign Classic首頁存取(請參閱 [監控流程](../../production/using/monitoring-processes.md))。 此程式負責執行所有工作流程。
+1. 查看 **[!UICONTROL wfserver]** 中的模块状态 **[!UICONTROL Monitoring]** 选项卡，可从Campaign Classic主页访问(请参阅 [监控流程](../../production/using/monitoring-processes.md))。 此进程负责运行所有工作流。
 
-   管理員使用者還可以檢查 **wfserver@`<instance>`** 模組會使用以下命令在您的主要應用程式伺服器上啟動。
+   管理员用户还可以检查 **wfserver@`<instance>`** 使用以下命令在主应用程序服务器上启动模块。
 
    ```
    nlserver pdump
@@ -56,7 +56,7 @@ ht-degree: 3%
    [...]
    ```
 
-   如果模組未執行，請聯絡Adobe客戶服務。 如果您有內部部署安裝，管理員使用者必須使用下列命令重新啟動服務。
+   如果模块未运行，请联系Adobe客户关怀团队。 如果您使用的是内部部署，管理员用户必须使用以下命令重新启动服务。
 
    ```
    nlserver start wfserver@<instance-name>
@@ -64,32 +64,32 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >Replace **`<instance-name>`** 包含您執行個體的名稱（生產、開發等）。 執行個體名稱會透過設定檔案識別：
+   >Replace **`<instance-name>`** 使用实例名称（生产、开发等）。 实例名称通过配置文件进行标识：
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
-   有關如何重新啟動模組的詳細資訊，請參閱 [本節](../../production/using/usual-commands.md#module-launch-commands).
+   有关如何重新启动模块的更多信息，请参阅 [本节](../../production/using/usual-commands.md#module-launch-commands).
 
-1. 檢查 **執行中的行銷活動處理序數目** 執行個體上的超過臨界值。 有一個由定義的限制 [**[!UICONTROL NmsOperation_LimitConcurrency]**](../../installation/using/configuring-campaign-options.md#campaign-e-workflow-management) 可在執行個體上並行執行多少行銷活動流程的選項。 當達到此限制時，只要執行的工作流程數量超過限制，工作流程就會維持在「儘快開始」狀態。
+1. 检查 **运行的营销活动进程数** 实例上的大于阈值。 有一个由定义的限制 [**[!UICONTROL NmsOperation_LimitConcurrency]**](../../installation/using/configuring-campaign-options.md#campaign-e-workflow-management) 选项可确定有多少营销活动流程可以在实例上并行运行。 当达到此限制时，只要正在运行的工作流数量超过限制，工作流就会一直处于“尽快启动”状态。
 
-   若要解決此問題，請停止不需要的工作流程並刪除失敗的傳送。 如果達到臨界值，將允許執行新程式。
+   要解决此问题，请停止不需要的工作流并删除失败的投放。 如果达到此阈值，则将允许运行新进程。
 
-   若要檢查執行個體正在執行的工作流程數量，我們建議使用預先定義的檢視，預設可在以下位置存取： **[!UICONTROL Administration]** / **[!UICONTROL Audit]** 資料夾。 有关详细信息，请参见[此页面](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)。
+   要检查实例正在运行的工作流数量，我们建议使用预定义视图，默认情况下可在中访问 **[!UICONTROL Administration]** / **[!UICONTROL Audit]** 文件夹。 有关详细信息，请参见[此页面](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)。
 
    >[!IMPORTANT]
    >
-   >增加 **[!UICONTROL NmsOperation_LimitConcurrency]** 選項臨界值可能會導致執行個體出現效能問題。 無論如何，請勿自行執行此動作，並聯絡Adobe Campaign聯絡人。
+   >增加 **[!UICONTROL NmsOperation_LimitConcurrency]** 选项阈值可能会导致实例出现性能问题。 无论如何，请不要自行执行此操作，并联系您的Adobe Campaign联系人。
 
-如需如何監視工作流程的詳細資訊，請參閱 [本節](../../workflow/using/monitoring-workflow-execution.md).
+有关如何监控工作流的更多信息，请参阅 [本节](../../workflow/using/monitoring-workflow-execution.md).
 
-## 開始進行中 {#start-in-progress}
+## 开始进行中 {#start-in-progress}
 
-如果工作流程未執行，其狀態為 **開始進行中**，這可能表示未啟動工作流程模組。
+如果工作流未执行，其状态为 **开始进行中**，这可能意味着未启动工作流模块。
 
-若要勾選此專案並在必要時啟動模組，請套用下列步驟：
+要选中此项，并在必要时启动模块，请应用以下步骤：
 
-1. 檢查 **[!UICONTROL wfserver]** 中的模組狀態 **[!UICONTROL Monitoring]** 索引標籤，可從Campaign Classic首頁存取(請參閱 [監控流程](../../production/using/monitoring-processes.md))。
+1. 查看 **[!UICONTROL wfserver]** 中的模块状态 **[!UICONTROL Monitoring]** 选项卡，可从Campaign Classic主页访问(请参阅 [监控流程](../../production/using/monitoring-processes.md))。
 
-   管理員使用者還可以檢查 **wfserver@`<instance>`** 模組會使用以下命令在您的主要應用程式伺服器上啟動。
+   管理员用户还可以检查 **wfserver@`<instance>`** 使用以下命令在主应用程序服务器上启动模块。
 
    ```
    nlserver pdump
@@ -99,9 +99,9 @@ ht-degree: 3%
    [...]
    ```
 
-   有關如何監視模組的詳細資訊，請參閱 [本節](../../production/using/usual-commands.md#monitoring-commands-).
+   有关如何监视模块的详细信息，请参阅 [本节](../../production/using/usual-commands.md#monitoring-commands-).
 
-1. 如果模組未執行，請聯絡Adobe客戶服務。 如果您有內部部署安裝，管理員必須使用下列命令將其重新啟動。
+1. 如果模块未运行，请联系Adobe客户关怀团队。 如果您使用的是内部部署，管理员必须使用以下命令重新启动内部部署。
 
    ```
    nlserver start wfserver@<instance-name>
@@ -109,15 +109,15 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >Replace **`<instance-name>`** 包含您執行個體的名稱（生產、開發等）。 執行個體名稱會透過設定檔案識別：
+   >Replace **`<instance-name>`** 使用实例名称（生产、开发等）。 实例名称通过配置文件进行标识：
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
-   有關如何重新啟動模組的詳細資訊，請參閱 [本節](../../production/using/usual-commands.md#module-launch-commands).
+   有关如何重新启动模块的更多信息，请参阅 [本节](../../production/using/usual-commands.md#module-launch-commands).
 
-## 失敗的工作流程 {#failed-workflow}
+## 失败的工作流 {#failed-workflow}
 
-如果工作流程失敗，請執行下列步驟：
+如果工作流失败，请执行以下步骤：
 
-1. 檢查工作流程日誌。 如需詳細資訊，請參閱 [監控工作流程執行](../../workflow/using/monitoring-workflow-execution.md) 和 [顯示記錄](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) 區段。
-1. 监测技术工作流. 如需詳細資訊，請參閱 [本節](../../workflow/using/monitoring-technical-workflows.md).
-1. 尋找個別工作流程活動上的失敗。
+1. 检查工作流日记帐。 有关详情，请参阅 [监控工作流执行](../../workflow/using/monitoring-workflow-execution.md) 和 [显示日志](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) 部分。
+1. 监测技术工作流. 欲知详情，请参阅 [本节](../../workflow/using/monitoring-technical-workflows.md).
+1. 查找单个工作流活动中的故障。

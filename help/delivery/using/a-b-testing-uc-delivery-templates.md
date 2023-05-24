@@ -17,18 +17,18 @@ ht-degree: 20%
 
 
 
-我们现在要创建两个投放模板。 每个模板都将在 **[!UICONTROL Email delivery]** 链接到的活动 **[!UICONTROL Split]** 活动。 如需详细信息，请参阅[此部分](about-templates.md)。
+现在，我们要创建两个投放模板。 每个模板都将在以下字段中引用： **[!UICONTROL Email delivery]** 活动链接到 **[!UICONTROL Split]** 活动。 如需详细信息，请参阅[此部分](about-templates.md)。
 
-1. 浏览到 **[!UICONTROL Resources > Delivery template]** 文件夹。
+1. 浏览至 **[!UICONTROL Resources > Delivery template]** 文件夹。
 1. 复制 **[!UICONTROL Email]** 投放模板。
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 
-1. 创建要用于分发A的内容。
+1. 创建用于投放A的内容。
 
    ![](assets/use_case_abtesting_deliverymodel_002.png)
 
-1. 重复此过程以为投放B创建模板。
+1. 重复此过程以创建用于投放B的模板。
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
 

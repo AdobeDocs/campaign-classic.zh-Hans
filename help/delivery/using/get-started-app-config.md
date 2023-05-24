@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 在Adobe Campaign中設定行動應用程式
-description: 瞭解如何開始使用行動應用程式設定
+title: 在Adobe Campaign中配置移动应用程序
+description: 了解如何开始使用移动应用程序配置
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
@@ -16,56 +16,56 @@ ht-degree: 10%
 
 
 
-您可以在本節中找到根據銷售線上假日套件的公司而定的設定範例。 其行動應用程式(Neotrips)提供兩個版本供客戶使用：Android的Neotrips和iOS的Neotrips。
+您可以在此部分找到基于销售在线假日软件包的公司进行配置的示例。 其移动应用程序(Neotrips)有两种版本可供客户使用：Neotrips for Android和Neotrips for iOS。
 
-若要在Adobe Campaign中傳送推播通知，您需要：
+要在Adobe Campaign中发送推送通知，您需要：
 
-* 建立 **[!UICONTROL Mobile application]** 輸入Neotrips行動應用程式的資訊服務。 請參閱 [適用於iOS的本節](configuring-the-mobile-application.md#configuring-ios-service). 和 [適用於Android的本節](configuring-the-mobile-application-android.md#configuring-android-service).
-* 將應用程式的iOS和Android版本新增至此服務。
-* 建立傳遞 [iOS](create-notifications-ios.md) 和 [Android](create-notifications-android.md).
+* 创建 **[!UICONTROL Mobile application]** 键入Neotrips移动应用程序的信息服务。 请参阅 [适用于iOS的此部分](configuring-the-mobile-application.md#configuring-ios-service). 和 [此部分适用于Android](configuring-the-mobile-application-android.md#configuring-android-service).
+* 将应用程序的iOS和Android版本添加到此服务。
+* 创建投放 [iOS](create-notifications-ios.md) 和 [Android](create-notifications-android.md).
 
 ![](assets/nmac_service_diagram.png)
 
 >[!NOTE]
 >
->前往 **[!UICONTROL Subscriptions]** 此服務的索引標籤，用於檢視服務的訂閱者清單，也就是所有已安裝應用程式至行動裝置並同意接收通知的使用者。
+>转到 **[!UICONTROL Subscriptions]** 选项卡以查看服务的订阅者列表，即在其移动设备上安装了应用程序并同意接收通知的所有人员。
 
-## 安裝套件 {#installing-package-ios}
+## 安装包 {#installing-package-ios}
 
-[!BADGE 內部部署和混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="僅適用於內部部署和混合部署"}
+[!BADGE 内部部署和混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"}
 
-![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中安裝行動應用程式套件](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [在视频中了解如何安装移动应用程序包](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
 
-身為混合/託管客戶，請聯絡 [Adobe客戶服務](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊以存取Campaign中的推播通知頻道。
+作为混合/托管客户，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 团队访问Campaign中的推送通知渠道。
 
-作為內部部署客戶，您需要安裝內建套件。
+作为内部部署客户，您需要安装内置软件包。
 
 >[!CAUTION]
 >
->進一步瞭解Campaign內建套件、最佳實務和建議 [此頁面](../../installation/using/installing-campaign-standard-packages.md).
+>在中详细了解Campaign内置包、最佳实践和建议 [此页面](../../installation/using/installing-campaign-standard-packages.md).
 
-安裝步驟如下：
+安装步骤包括：
 
-1. 從存取套件匯入精靈 **[!UICONTROL Tools > Advanced > Import package]** 在Adobe Campaign使用者端主控台中。
+1. 从访问资源包导入向导 **[!UICONTROL Tools > Advanced > Import package]** 在Adobe Campaign客户端控制台中。
 
    ![](assets/package_ios.png)
 
 1. 选择 **[!UICONTROL Install a standard package]**。
 
-1. 在出現的清單中，核取 **[!UICONTROL Mobile App Channel]**.
+1. 在显示的列表中，选中 **[!UICONTROL Mobile App Channel]**.
 
    ![](assets/package_ios_2.png)
 
-1. 按一下 **[!UICONTROL Next]**，則 **[!UICONTROL Start]** 以開始套件安裝。
+1. 单击 **[!UICONTROL Next]**，则 **[!UICONTROL Start]** 以开始软件包安装。
 
-   安裝套件後，進度列會顯示 **100%** 而且您會在安裝記錄檔中看到下列訊息： **[!UICONTROL Installation of packages successful]**.
+   安装包后，进度条将显示 **100%** 并且您可以在安装日志中看到以下消息： **[!UICONTROL Installation of packages successful]**.
 
    ![](assets/package_ios_3.png)
 
-1. **[!UICONTROL Close]** 安裝視窗。
+1. **[!UICONTROL Close]** 安装窗口。
 
-完成此步驟後，您就可以設定Android和iOS應用程式。
-請參閱下列章節：
+完成此步骤后，您可以配置Android和iOS应用程序。
+请参阅以下章节：
 
 * [iOS 配置步骤](configuring-the-mobile-application.md)
 

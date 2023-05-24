@@ -19,17 +19,17 @@ ht-degree: 4%
 
 
 
-當系統投入生產時，可能會顯示如下錯誤訊息（特別是在傳送記錄中）：
+系统投入生产时，可能会显示如下错误消息（特别是在投放日志中）：
 
-*無法將檔案&#39;/tmp/tmp0000.tmp&#39;重新命名為/usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml ；（errno=18，無效的跨裝置連結） (iRc=-52)*
+*无法将文件&#39;/tmp/tmp0000.tmp&#39;重命名为/usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml ；（errno=18，无效的跨设备链接）(iRc=-52)*
 
 原因如下：
 
-Adobe Campaign在下產生暫存檔 **/tmp**，然後將其重新命名以移動至 **/usr/local/neolane/nl6/var**. 當兩個資料夾(**/tmp** 和 **/usr/local/neolane/nl6/var**，實際上是連結至的符號連結 **/var/nl6**)對應至不同的裝置。 此 **df** 指令用於驗證。
+Adobe Campaign在下生成临时文件 **/tmp**，然后重命名它们，以将其移动到 **/usr/local/neolane/nl6/var**. 当两个文件夹(**/tmp** 和 **/usr/local/neolane/nl6/var**，实际上是指向的符号链接 **/var/nl6**)对应于不同的设备。 此 **df** 命令用于验证。
 
-若要修正此問題，臨時檔案必須在與目的地相同的裝置上產生。
+要更正此问题，临时文件必须在与目标相同的设备上生成。
 
-例如，執行下列動作：
+例如，执行以下命令：
 
 ```
 $ cd ~/nl6/var
@@ -37,7 +37,7 @@ $ mkdir tmp
 $ vi ~/nl6/customer.sh
 ```
 
-然後新增：
+然后添加：
 
 ```
 export TMPDIR=/usr/local/neolane/nl6/var/tmp 

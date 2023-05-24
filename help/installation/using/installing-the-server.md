@@ -19,70 +19,70 @@ ht-degree: 3%
 
 
 
-## 執行安裝程式 {#executing-the-installation-program}
+## 执行安装程序 {#executing-the-installation-program}
 
-若是Windows 32位元平台，請安裝Adobe Campaign 32位元。 若是Windows 64位元平台，請安裝Adobe Campaign 64位元。
+对于Windows 32位平台，请安装Adobe Campaign 32位。 对于Windows 64位平台，请安装Adobe Campaign 64位。
 
-Adobe Campaign伺服器的安裝步驟如下：
+Adobe Campaign服务器的安装步骤如下：
 
-1. 執行檔案 **setup.exe**.
+1. 执行文件 **setup.exe**.
 
    ![](assets/s_ncs_install_installer_01.png)
 
-1. 選取安裝型別。
+1. 选择安装类型。
 
    ![](assets/s_ncs_install_installer_01a.png)
 
-   有多種安裝型別可供使用：
+   提供了几种安装类型：
 
-   * **[!UICONTROL Installation of an application server]** ：安裝Adobe Campaign應用程式伺服器和使用者端主控台。
-   * **[!UICONTROL Minimal installation (Network)]** ：從網路安裝使用者端電腦。 如有必要，電腦上只會安裝有限數量的DLL，而其他所有元件都將從網路磁碟機使用。
-   * **[!UICONTROL Installation of a client]** ：安裝Adobe Campaign使用者端所需的元件。
-   * **[!UICONTROL Custom installation]** ：使用者選擇要安裝的元素。
+   * **[!UICONTROL Installation of an application server]** ：安装Adobe Campaign应用程序服务器和客户端控制台。
+   * **[!UICONTROL Minimal installation (Network)]** ：从网络安装客户端计算机。 如有必要，计算机上只会安装有限数量的DLL，而其它所有组件都将从网络驱动器中使用。
+   * **[!UICONTROL Installation of a client]** ：安装Adobe Campaign客户端所需的组件。
+   * **[!UICONTROL Custom installation]** ：用户选择要安装的元素。
 
-   選取 **應用程式伺服器的安裝**，並完成不同的步驟，如下所示：
+   选择 **应用程序服务器的安装**，并完成不同的步骤，如下所示：
 
    ![](assets/s_ncs_install_installer_02.png)
 
-1. 選取安裝目錄：
+1. 选择安装目录：
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. 按一下 **[!UICONTROL Finish]** 若要開始安裝，請執行下列動作：
+1. 单击 **[!UICONTROL Finish]** 要开始安装，请执行以下操作：
 
    ![](assets/s_ncs_install_installer_04.png)
 
-   進度列會顯示安裝的深度：
+   进度条显示安装的深度：
 
    ![](assets/s_ncs_install_installer_05.png)
 
-   安裝完成後，會出現一則訊息，讓您知道：
+   安装完成后，将显示一条消息，告知您：
 
    ![](assets/s_ncs_install_installer_06.png)
 
    >[!NOTE]
    >
-   >伺服器安裝完成後，必須重新啟動伺服器，以避免可能的網路問題。
+   >服务器安装完成后，需要重新启动服务器以避免可能的网络问题。
 
-   安裝完成後，請啟動Adobe Campaign以建立設定檔。 請參閱 [伺服器的首次啟動](#first-start-up-of-the-server).
+   安装完成后，启动Adobe Campaign以创建配置文件。 请参阅 [服务器的首次启动](#first-start-up-of-the-server).
 
-## 摘要安裝測試 {#summary-installation-testing}
+## 摘要安装测试 {#summary-installation-testing}
 
-您可以使用下列命令測試初始安裝：
+可以使用以下命令测试初始安装：
 
 ```
 nlserver pdump
 ```
 
-如果Adobe Campaign未啟動，回應為：
+如果未启动Adobe Campaign，则响应为：
 
 ```
 No task
 ```
 
-## 伺服器的首次啟動 {#first-start-up-of-the-server}
+## 服务器的首次启动 {#first-start-up-of-the-server}
 
-安裝測試完成後，請透過以下方式開啟命令提示字元： **[!UICONTROL Start > Programs > Adobe Campaign]** 選單並輸入下列指令：
+安装测试完成后，通过 **[!UICONTROL Start > Programs > Adobe Campaign]** 并输入以下命令：
 
 ```
 nlserver web
@@ -90,9 +90,9 @@ nlserver web
 
 ![](assets/s_ncs_install_cmd_nlserverweb.png)
 
-安裝目錄中的檔案可用來設定Adobe Campaign伺服器模組。
+安装目录中的文件用于配置Adobe Campaign服务器模块。
 
-會顯示下列資訊：
+将显示以下信息：
 
 ```
 15:30:12 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -104,13 +104,13 @@ nlserver web
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-按下 **Ctrl+C** 若要停止此程式，請輸入下列命令：
+按 **Ctrl+C** 要停止该进程，请输入以下命令：
 
 ```
 nlserver start web
 ```
 
-會顯示下列資訊：
+将显示以下信息：
 
 ```
 12:17:21 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -122,13 +122,13 @@ nlserver start web
 12:17:22 >   Server started
 ```
 
-若要停止，請輸入：
+要停止此操作，请输入：
 
 ```
 nlserver stop web
 ```
 
-會顯示下列資訊：
+将显示以下信息：
 
 ```
 12:18:31 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -137,31 +137,31 @@ nlserver stop web
 12:18:31 >   Web server stopped (pid=29188, tid=-1224824320)...
 ```
 
-## 內部識別碼的密碼 {#password-for-the-internal-identifier}
+## 内部标识符的密码 {#password-for-the-internal-identifier}
 
-Adobe Campaign伺服器會定義名為的技術登入 **內部** 擁有所有執行個體的所有權利。 在安裝之後，登入沒有密碼。 必須定義一個。
+Adobe Campaign服务器定义一个名为的技术登录 **内部** 拥有所有实例的所有权限。 安装之后，登录没有密码。 必须定义一个。
 
 在[此章节](../../installation/using/configuring-campaign-server.md#internal-identifier)中了解更多信息。
 
-## 啟動Adobe Campaign服務 {#starting-adobe-campaign-services}
+## 启动Adobe Campaign服务 {#starting-adobe-campaign-services}
 
-若要啟動Adobe Campaign服務，您可以使用服務管理員，或在命令列輸入以下內容（搭配適當的許可權）：
+要启动Adobe Campaign服务，您可以使用服务管理器或在命令行中输入以下内容（具有相应的权限）：
 
 ```
 net start nlserver6
 ```
 
-如果您稍後需要停止Adobe Campaign程式，請使用命令：
+如果您稍后需要停止Adobe Campaign进程，请使用命令：
 
 ```
 net stop nlserver6
 ```
 
-## 安裝LibreOffice {#installing-libreoffice}
+## 安装LibreOffice {#installing-libreoffice}
 
-下載LibreOffice並依照一般安裝步驟操作。
+下载LibreOffice并按照常规安装步骤操作。
 
-新增以下環境變數：
+添加以下环境变量：
 
 ```
 OOO_BASIS_INSTALL_DIR="C:\Program Files (x86)\LibreOffice 6\"

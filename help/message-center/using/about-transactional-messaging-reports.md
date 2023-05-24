@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 访问事务性消息传递报告
-description: 了解如何访问Adobe Campaign Classic事务型消息传递报表
+description: 了解如何访问Adobe Campaign Classic事务性消息报告
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
@@ -18,8 +18,8 @@ ht-degree: 15%
 
 
 
-Adobe Campaign提供了多个报表，用于控制活动并顺利运行执行实例。
+Adobe Campaign提供了多个报表，可让您控制活动并顺利运行执行实例。
 
-可以从 **[!UICONTROL Reports]** 选项卡 **控制实例**.
+这些消息中心报告可从以下网址访问： **[!UICONTROL Reports]** 的选项卡 **控制实例**.
 
 ![](assets/messagecenter_reporting_002.png)

@@ -17,38 +17,38 @@ ht-degree: 0%
 
 
 
-一次 [群体创建](a-b-testing-uc-population-samples.md)，则可以配置投放。 在此用例中，前两个投放允许您向群体A和B发送不同的内容。第三个投放是回退投放：它将发送给不属于A或B的收件人。其内容将由脚本计算，并且与A或B相同，具体取决于打开率最高的收件人。 我们需要为第三个投放配置一个等待期，以了解投放A和B的结果。这就是第三个投放包含的原因 **[!UICONTROL Wait]** 活动。
+一次 [创建群体](a-b-testing-uc-population-samples.md)，您可以配置投放。 在此使用案例中，前两个投放使您能够向群体A和B发送不同的内容。第三个投放是回退投放：将发送给不属于A或B的收件人。其内容将由脚本计算，并将与A或B相同，具体取决于哪个脚本的打开率最高。 我们需要为第三次投放配置一个等待期，以便了解投放A和B的结果。这就是为什么第三次投放包含 **[!UICONTROL Wait]** 活动。
 
-1. 转到 **[!UICONTROL Split]** 活动，并将定向于群体A的过渡链接到工作流中已有的电子邮件投放之一。
+1. 转到 **[!UICONTROL Split]** 活动，并将定向为群体A的过渡链接到工作流中已有的某个电子邮件投放。
 
    ![](assets/use_case_abtesting_createdeliveries_001.png)
 
 1. 双击投放以将其打开。
-1. 使用下拉列表，选择投放A的模板。
+1. 使用下拉列表，为投放A选择模板。
 
    ![](assets/use_case_abtesting_createdeliveries_003.png)
 
-1. 单击 **[!UICONTROL Continue]** 要查看投放，请保存它。
+1. 单击 **[!UICONTROL Continue]** 查看投放，然后保存它。
 
    ![](assets/use_case_abtesting_createdeliveries_002.png)
 
-1. 链接的过渡 **[!UICONTROL Split]** 定向于群体B的活动，发送到第二个电子邮件投放。
+1. 链接以下项的过渡 **[!UICONTROL Split]** 定向到人群B的活动以发送第二封电子邮件。
 
    ![](assets/use_case_abtesting_createdeliveries_004.png)
 
-1. 打开投放，在投放B中选择模板，然后保存投放。
+1. 打开投放并在投放B中选择模板，然后保存投放。
 
    ![](assets/use_case_abtesting_createdeliveries_005.png)
 
-1. 将发往剩余群体的过渡链接到 **[!UICONTROL Wait]** 活动。
+1. 将计划发送给剩余群体的过渡链接到 **[!UICONTROL Wait]** 活动。
 
    ![](assets/use_case_abtesting_createdeliveries_006.png)
 
-1. 打开 **[!UICONTROL Wait]** 活动，并配置5天的等待期。
+1. 打开 **[!UICONTROL Wait]** 并配置一个5天的等待期。
 
    ![](assets/use_case_abtesting_createdeliveries_007.png)
 
-1. 链接 **[!UICONTROL Wait]** 活动 **[!UICONTROL JavaScript code]** 活动。
+1. 链接 **[!UICONTROL Wait]** 的活动 **[!UICONTROL JavaScript code]** 活动。
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 

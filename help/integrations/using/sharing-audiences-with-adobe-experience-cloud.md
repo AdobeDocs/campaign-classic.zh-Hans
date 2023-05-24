@@ -21,13 +21,13 @@ ht-degree: 63%
 
 >[!CAUTION]
 >
->要与Adobe Experience Cloud解决方案共享受众，您需要实施AdobeIdentity Management系统。 [进一步了解IMS。](../../integrations/using/about-adobe-id.md).
+>要与Adobe Experience Cloud解决方案共享受众，您需要实施AdobeIdentity Management System。 [了解有关IMS的更多信息](../../integrations/using/about-adobe-id.md).
 
-通过Adobe Campaign，您可以与Adobe Experience Cloud解决方案和核心服务共享受众和区段。 有两个选项可用：
+借助Adobe Campaign，您可以与Adobe Experience Cloud解决方案和核心服务共享受众和区段。 提供了两个选项：
 
-1. 将Adobe Experience Platform区段数据发送到Adobe Campaign。 要实施此集成，您需要将Real-time Customer Data Platform与Campaign(RTCDP)连接起来。 [在此章节中了解详情](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
+1. 将Adobe Experience Platform区段数据发送到Adobe Campaign。 要实施此集成，您需要将Real-time Customer Data Platform连接到Campaign (RTCDP)。 [在此章节中了解详情](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
 
-1. 集成 **Adobe Campaign** with **People核心服务** (也称为 **Profiles &amp; Audiences核心服务**)或Adobe Audience Manager。 然后，您将能够：
+1. 集成 **Adobe Campaign** 替换为 **人员核心服务** (也称为 **配置文件和受众核心服务**)或Adobe Audience Manager。 然后，您将能够：
 
    * 从不同的 Adobe Experience Cloud 解决方案导入共享受众/区段到 Adobe Campaign 中。 可通过 Adobe Campaign 中的列表导入受众。
 

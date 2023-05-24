@@ -2,7 +2,7 @@
 product: campaign
 title: 技术说明 — 在您的Campaign环境中启用Microsoft Edge Chromium
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-description: 营销活动 — Edge Chromium
+description: Campaign - Edge Chromium
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
@@ -18,13 +18,13 @@ ht-degree: 13%
 
 ## 更改了哪些内容？
 
-在Microsoft Internet Explorer 11生命周期结束后，客户端控制台中功能板的HTML渲染引擎正在使用Edge Chromium，从Campaign Classicv7.3开始。
+在Microsoft Internet Explorer 11的生命周期终止后，客户端控制台中仪表板的HTML渲染引擎使用的是Edge Chromium，从Campaign Classicv7.3开始。
 
-除了Microsoft Edge Webview 2运行时的安装之外，该运行时现在为 [任何客户端控制台安装都需要](../../installation/using/installing-the-client-console.md#webview)，则必须在实例上启用Microsoft Edge Chromium 。
+除了安装Microsoft Edge Webview 2运行时(现在是 [任何客户端控制台安装均需要](../../installation/using/installing-the-client-console.md#webview)，必须在实例上启用Microsoft Edge Chromium。
 
 ## 您是否受影响？
 
-如果您的环境已升级到Campaign Classicv7.3（或更高版本），则您会受到影响。
+如果您的环境已升级到Campaign Classicv7.3（或更高版本），则您将受到影响。
 
 ## 如何更新？
 
@@ -32,9 +32,9 @@ ht-degree: 13%
 
 * 作为 **内部部署/混合** 客户，您需要在实例上启用Microsoft Edge Chromium。
 
-   升级到Campaign Classicv7.3（及更高版本）时，新 `webView2Mode` 属性在Campaign服务器配置文件中可用 `serverConf.xml`. 必须启用此属性。
+   升级到Campaign Classicv7.3（及更高版本）时，将使用 `webView2Mode` 属性在Campaign服务器配置文件中可用 `serverConf.xml`. 必须启用此属性。
 
-   要执行此操作，请在所有环境(MKT、MID、RT)中应用以下步骤：
+   要执行此操作，请在您的所有环境(MKT、MID、RT)上应用以下步骤：
 
    1. 编辑Campaign服务器配置文件(`serverConf.xml`)
    1. 在 `<web>` 模块，设置 `webView2Mode = "1"`
@@ -50,7 +50,7 @@ ht-degree: 13%
       nlserver restart web
       ```
 
-   1. 如果您的环境使用Apache作为Web服务器，请运行以下命令以重新启动Apache:
+   1. 如果您的环境使用Apache作为Web服务器，请运行以下命令以重新启动Apache：
 
       ```
       /etc/init.d/apache2 restart

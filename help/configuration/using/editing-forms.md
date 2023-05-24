@@ -19,16 +19,16 @@ ht-degree: 2%
 
 ## 概述
 
-营销人员和运营人员使用输入表单创建、修改和预览记录。 Forms显示信息的可视表示形式。
+营销人员和操作员使用输入表单来创建、修改和预览记录。 Forms显示信息的可视化表示形式。
 
 您可以创建和修改输入表单：
 
-* 您可以修改默认提交的工厂输入表单。 工厂输入表单基于工厂数据架构。
+* 您可以修改默认提供的出厂输入表单。 工厂输入表单基于工厂数据架构。
 * 您可以根据定义的数据架构创建自定义输入表单。
 
-Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架构，请选择 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** 中。 有关更多信息 [窗体结构](form-structure.md).
+Forms是 `xtk:form` 类型。 您可以在中查看输入表单结构 `xtk:form` 架构。 要查看此架构，请选择 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** 从菜单中。 详细了解 [窗体结构](form-structure.md).
 
-要访问输入表单，请选择 **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** 从菜单：
+要访问输入表单，请选择 **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** 从菜单中：
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
@@ -44,23 +44,23 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
 ## 表单类型
 
-您可以创建不同类型的输入表单。 表单类型决定用户在表单中导航的方式：
+您可以创建不同类型的输入表单。 表单类型决定了用户浏览表单的方式：
 
 * 控制台屏幕
 
-   这是默认的表单类型。 表单包含单页。
+   这是默认表单类型。 该表单包含一个页面。
 
    ![](assets/console_screen_form.png)
 
 * 内容管理
 
-   使用此表单类型进行内容管理。 请参阅 [用例](../../delivery/using/use-case--creating-content-management.md).
+   使用此表单类型进行内容管理。 查看此 [用例](../../delivery/using/use-case--creating-content-management.md).
 
    ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
 * 向导
 
-   该表单包括多个按特定顺序排列的浮动屏幕。 用户从一个屏幕导航到下一个屏幕。 [阅读更多](form-structure.md#wizards)。
+   此形式包含按特定顺序排序的多个浮动屏幕。 用户从一个屏幕导航到下一屏幕。 [阅读更多](form-structure.md#wizards)。
 
 * 图标框
 
@@ -88,7 +88,7 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
 * 在表单中组织内容
 * 定义对输入字段的访问权限
-* 将表单嵌套在其他表单中
+* 在其他表单中嵌套表单
 
 [阅读更多](form-structure.md#containers)。
 
@@ -103,13 +103,13 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
 #### 组字段
 
-使用容器将输入字段分组为有组织的部分。
+使用容器将输入字段分组到组织好的部分中。
 
-要在表单中插入部分，请使用以下元素： `<container type="frame">`. （可选）要添加节标题，请使用 `label` 属性。
+要将节插入到表单中，请使用此元素： `<container type="frame">`. 或者，要添加章节标题，请使用 `label` 属性。
 
 语法： `<container type="frame" label="`*section_title*`"> […] </container>`
 
-在本例中，容器定义 **创建** 部分，包括 **[!UICONTROL Created by]** 和 **[!UICONTROL Name]** 输入字段：
+在此示例中，容器定义 **创建** 部分，包括 **[!UICONTROL Created by]** 和 **[!UICONTROL Name]** 输入字段：
 
 ```xml
 <form _cs="Coupons (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Coupons"
@@ -125,11 +125,11 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
 ![](assets/console_screen_form.png)
 
-#### 将页面添加到多页面表单
+#### 将页面添加到多页表单
 
 对于多页面表单，请使用容器创建表单页面。
 
-此示例显示 **常规** 和 **详细信息** 表单页面：
+此示例显示了 **常规** 和 **详细信息** 表单页面：
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -150,13 +150,13 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
 ## 对图像的引用
 
-要查找图像，请选择 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]** 中。
+要查找图像，请选择 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]** 从菜单中。
 
-要将图像与表单中的元素（例如图标）关联，您可以添加对图像的引用。 使用 `img` 属性，例如 `<container>` 元素。
+要将图像与表单中的元素（例如图标）相关联，可以添加对图像的引用。 使用 `img` 属性，例如 `<container>` 元素。
 
 语法: `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
 
-此示例显示对 `book.png` 和 `detail.png` 图像 `ncm` 命名空间：
+此示例显示对 `book.png` 和 `detail.png` 图像来自 `ncm` 命名空间：
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -167,7 +167,7 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 </container>
 ```
 
-这些图像用于用户单击以导航多页面表单的图标：
+这些图像用于用户单击以导航多页表单的图标：
 
 ![](assets/nested_forms_preview.png)
 
@@ -177,7 +177,7 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 要创建表单，请执行以下步骤：
 
 1. 从菜单中，选择 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
-1. 单击 **[!UICONTROL New]** 按钮。
+1. 单击 **[!UICONTROL New]** 按钮进行修改。
 
    ![](assets/input-form-create-1.png)
 
@@ -185,7 +185,7 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
    * 指定表单名称和命名空间。
 
-      表单名称和命名空间可以匹配相关数据架构。  此示例显示 `cus:order` 数据架构：
+      表单名称和命名空间可以与相关数据架构匹配。  此示例显示了 `cus:order` 数据架构：
 
       ```xml
       <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
@@ -193,7 +193,7 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
       </form>
       ```
 
-      或者，您也可以在 `entity-schema` 属性。
+      或者，您也可以在以下位置显式指定数据模式： `entity-schema` 属性。
 
       ```xml
       <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
@@ -206,13 +206,13 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
       ![](assets/input-form-create-2.png)
 
-      如果要设计多页面表单，则可以在 `<form>` 元素，并在容器中指定类型。
+      如果您设计的是多页表单，则可以省略 `<form>` 元素，并在容器中指定类型。
 
 1. 单击 **[!UICONTROL Save]**。
 
 1. 插入表单元素。
 
-   例如，要插入输入字段，请使用 `<input>` 元素。 设置 `xpath` 属性作为XPath表达式。 [阅读更多](schema-structure.md#referencing-with-xpath)。
+   例如，要插入输入字段，请使用 `<input>` 元素。 设置 `xpath` 属性作为XPath表达式添加到字段引用。 [阅读更多](schema-structure.md#referencing-with-xpath)。
 
    此示例显示基于 `nms:recipient` 架构。
 
@@ -221,7 +221,7 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
    <input xpath="@lastName"/>
    ```
 
-1. 如果表单基于特定架构类型，则可以查找此架构的字段：
+1. 如果表单基于特定的架构类型，则可以查找此架构的字段：
 
    1. 单击 **[!UICONTROL Insert]** > **[!UICONTROL Document fields]**.
 
@@ -233,9 +233,9 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
 1. （可选）指定字段编辑器。
 
-   默认的字段编辑器与每个数据类型关联：
-   * 对于日期类型字段，表单显示输入日历。
-   * 对于枚举类型字段，表单会显示选择列表。
+   默认字段编辑器与每个数据类型相关联：
+   * 对于日期类型字段，表单会显示输入日历。
+   * 对于枚举类型字段，表单会显示一个选择列表。
 
    您可以使用以下字段编辑器类型：
 
@@ -245,9 +245,9 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
    | 复选框 | `type="checkbox"` |
    | 编辑树 | `type="tree"` |
 
-   有关更多信息 [内存列表控件](form-structure.md#memory-list-controls).
+   详细了解 [内存列表控件](form-structure.md#memory-list-controls).
 
-1. （可选）定义对以下字段的访问权限：
+1. （可选）定义对字段的访问权限：
 
    | 元素 | 属性 | 说明 |
    | --- | --- | --- |
@@ -281,19 +281,19 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
    ![](assets/input-form-create-3.png)
 
-## 创建多页面表单 {#create-multipage-form}
+## 创建多页表单 {#create-multipage-form}
 
-您可以创建多页面表单。 您还可以将表单嵌套在其他表单中。
+您可以创建多页面表单。 还可以将表单嵌套在其他表单中。
 
 ### 创建 `iconbox` 表单
 
-使用 `iconbox` 表单类型，用于在表单左侧显示图标，使用户转到表单中的不同页面。
+使用 `iconbox` 表单类型：在表单左侧显示图标，这些图标会将用户引导至表单中的不同页面。
 
 ![](assets/iconbox_form_preview.png)
 
-将现有表单的类型更改为 `iconbox`，请执行以下步骤：
+要将现有表单的类型更改为 `iconbox`，请按照以下步骤操作：
 
-1. 更改 `type` 属性 `<form>` 元素 `iconbox`:
+1. 更改 `type` 的属性 `<form>` 元素至 `iconbox`：
 
    ```xml
    <form […] type="iconbox">
@@ -302,7 +302,7 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 1. 为每个表单页面设置一个容器：
 
    1. 添加 `<container>` 元素作为的子项 `<form>` 元素。
-   1. 要为图标定义标签和图像，请使用 `label` 和 `img` 属性。
+   1. 要定义图标的标签和图像，请使用 `label` 和 `img` 属性。
 
       ```xml
       <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="iconbox" xtkschema="xtk:form">
@@ -320,17 +320,17 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
           </container>
       </form>
       ```
-   或者，移除 `type="frame"` 属性 `<container>` 元素。
+   或者，删除 `type="frame"` 现有属性中的 `<container>` 元素。
 
-### 创建笔记本表单
+### 创建笔记本窗体
 
-使用 `notebook` 表单类型，用于在表单顶部显示选项卡，可将用户引导至不同的页面。
+使用 `notebook` 表单类型：在表单顶部显示选项卡，这些选项卡会将用户引导至不同的页面。
 
 ![](assets/notebook_form_preview.png)
 
-将现有表单的类型更改为 `notebook`，请执行以下步骤：
+要将现有表单的类型更改为 `notebook`，请按照以下步骤操作：
 
-1. 更改 `type` 属性 `<form>` 元素 `notebook`:
+1. 更改 `type` 的属性 `<form>` 元素至 `notebook`：
 
    ```xml
    <form […] type="notebook">
@@ -358,25 +358,25 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
      </form>
    ```
 
-   或者，移除 `type="frame"` 属性 `<container>` 元素。
+   或者，删除 `type="frame"` 现有属性中的 `<container>` 元素。
 
 ### 嵌套表单
 
-您可以将表单嵌套在其他表单中。 例如，您可以在iconbox表单中嵌套笔记本表单。
+您可以将表单嵌套在其他表单中。 例如，可以在iconbox表单中嵌套笔记本表单。
 
-嵌套级别控制导航。 用户可以向下展开到子表单。
+嵌套级别控制导航。 用户可以向下钻取到子表单。
 
-要将表单嵌套在另一个表单中，请插入 `<container>` 元素并设置 `type` 属性。 对于顶级表单，您可以在外部容器或 `<form>` 元素。
+若要将表单嵌套在另一个表单中，请插入 `<container>` 元素并设置 `type` 表单类型的属性。 对于顶级表单，您可以在外部容器中或以下位置设置表单类型 `<form>` 元素。
 
 ### 示例
 
-此示例显示了一个复杂的表单：
+此示例显示了一个复杂的形式：
 
-* 顶级表单是一个iconbox表单。 此表单包含两个标有 **常规** 和 **详细信息**.
+* 顶级表单是iconbox表单。 此表单包含两个标记为的容器 **常规** 和 **详细信息**.
 
-   因此，外部窗体会显示 **常规** 和 **详细信息** 页面。 要访问这些页面，用户需单击表单左侧的图标。
+   因此，外部表单会显示 **常规** 和 **详细信息** 页面。 要访问这些页面，用户请单击表单左侧的图标。
 
-* 子表单是嵌套在 **常规** 容器。 该子表单包括两个被标记的容器 **名称** 和 **联系人**.
+* 子表单是嵌套在 **常规** 容器。 该子表单包括两个标记有标签的容器 **名称** 和 **联系人**.
 
 ```xml
 <form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
@@ -399,21 +399,21 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 </form>
 ```
 
-因此， **常规** 外部表单的页面显示 **名称** 和 **联系人** 选项卡。
+因此， **常规** 页显示 **名称** 和 **联系人** 选项卡。
 
 ![](assets/nested_forms_preview.png)
 
-要将表单嵌套在另一个表单中，请插入 `<container>` 元素并设置 `type` 属性。 对于顶级表单，您可以在外部容器或 `<form>` 元素。
+若要将表单嵌套在另一个表单中，请插入 `<container>` 元素并设置 `type` 表单类型的属性。 对于顶级表单，您可以在外部容器中或以下位置设置表单类型 `<form>` 元素。
 
 ### 示例
 
-此示例显示了一个复杂的表单：
+此示例显示了一个复杂的形式：
 
-* 顶级表单是一个iconbox表单。 此表单包含两个标有 **常规** 和 **详细信息**.
+* 顶级表单是iconbox表单。 此表单包含两个标记为的容器 **常规** 和 **详细信息**.
 
-   因此，外部窗体会显示 **常规** 和 **详细信息** 页面。 要访问这些页面，用户需单击表单左侧的图标。
+   因此，外部表单会显示 **常规** 和 **详细信息** 页面。 要访问这些页面，用户请单击表单左侧的图标。
 
-* 子表单是嵌套在 **常规** 容器。 该子表单包括两个被标记的容器 **名称** 和 **联系人**.
+* 子表单是嵌套在 **常规** 容器。 该子表单包括两个标记有标签的容器 **名称** 和 **联系人**.
 
 ```xml
 <form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
@@ -436,7 +436,7 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 </form>
 ```
 
-因此， **常规** 外部表单的页面显示 **名称** 和 **联系人** 选项卡。
+因此， **常规** 页显示 **名称** 和 **联系人** 选项卡。
 
 ![](assets/nested_forms_preview.png)
 
@@ -444,26 +444,26 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
 ## 修改工厂输入表单 {#modify-factory-form}
 
-要修改工厂表单，请执行以下步骤：
+要修改出厂表单，请执行以下步骤：
 
 1. 修改工厂输入表单：
 
    1. 从菜单中，选择 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
    1. 选择输入表单并对其进行修改。
 
-   您可以扩展工厂数据架构，但无法扩展工厂输入表单。 我们建议您直接修改工厂输入表单，而无需重新创建。 在软件升级期间，您在工厂输入表单中所做的修改将与升级合并。 如果自动合并失败，您可以解决冲突。 [阅读更多](../../production/using/upgrading.md#resolving-conflicts)。
+   您可以扩展工厂数据架构，但无法扩展工厂输入表单。 我们建议您直接修改出厂输入表单，而无需重新创建它们。 在软件升级期间，工厂输入表单中的修改将与升级合并。 如果自动合并失败，您可以解决冲突。 [阅读更多](../../production/using/upgrading.md#resolving-conflicts)。
 
-   例如，如果扩展了工厂架构，并且添加了一个附加字段，则可以将此字段添加到相关的工厂表单中。
+   例如，如果您使用附加字段扩展工厂模式，则可以将此字段添加到相关的工厂表单。
 
 ## 验证表单 {#validate-forms}
 
 您可以在表单中包含验证控件。
 
-### 授予字段的只读访问权限
+### 授予对字段的只读访问权限
 
-要授予字段的只读访问权限，请使用 `readOnly="true"` 属性。 例如，您可能希望显示记录的主键，但具有只读访问权限。 [阅读更多](form-structure.md#non-editable-fields)。
+要授予对字段的只读访问权限，请使用 `readOnly="true"` 属性。 例如，您可能希望显示记录的主键，但具有只读访问权限。 [阅读更多](form-structure.md#non-editable-fields)。
 
-在本例中，主键(`iRecipientId`) `nms:recipient` 架构以只读访问方式显示：
+在此示例中，主键(`iRecipientId`的) `nms:recipient` 架构以只读访问权限显示：
 
 ```xml
 <value xpath="@iRecipientId" readOnly="true"/>
@@ -471,12 +471,12 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 
 ### 检查必填字段
 
-您可以检查必填信息：
+您可以检查必需信息：
 
-* 使用 `required="true"` 属性。
-* 使用 `<leave>` 节点来检查这些字段并显示错误消息。
+* 使用 `required="true"` 必填字段的属性。
+* 使用 `<leave>` 节点，以检查这些字段并显示错误消息。
 
-在此示例中，需要提供电子邮件地址，如果用户未提供此信息，则会显示一条错误消息：
+在此示例中，需要电子邮件地址，如果用户未提供此信息，则会显示错误消息：
 
 ```xml
 <input xpath="@email" required="true"/>
@@ -487,11 +487,11 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 </leave>
 ```
 
-有关更多信息 [表达式字段](form-structure.md#expression-field) 和 [表单上下文](form-structure.md#context-of-forms).
+详细了解 [表达式字段](form-structure.md#expression-field) 和 [表单上下文](form-structure.md#context-of-forms).
 
 ### 验证值
 
-您可以使用JavaScript SOAP调用从控制台验证表单数据。 例如，使用这些调用进行复杂的验证，以根据授权值列表检查值。 [阅读更多](form-structure.md#soap-methods)。
+您可以使用JavaScript SOAP调用从控制台验证表单数据。 使用这些调用进行复杂验证，例如，根据授权值列表检查值。 [阅读更多](form-structure.md#soap-methods)。
 
 1. 在JS文件中创建验证函数。
 
@@ -509,11 +509,11 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
    }
    ```
 
-   在本例中，函数名为 `checkValue`. 此函数用于检查 `recipient` 中的数据类型 `nms` 命名空间。 正在检查的值将被记录。 如果值无效，则会记录一条错误消息。 如果值有效，则返回值1。
+   在此示例中，函数名为 `checkValue`. 此函数用于检查 `recipient` 中的数据类型 `nms` 命名空间。 将记录正在检查的值。 如果该值无效，则会记录一条错误消息。 如果该值有效，则返回值1。
 
-   您可以使用返回的值修改表单。
+   您可以使用返回的值来修改表单。
 
-1. 在表单中，将 `<soapCall>` 元素 `<leave>` 元素。
+1. 在表单中，添加 `<soapCall>` 元素到 `<leave>` 元素。
 
    在此示例中，使用SOAP调用来验证 `@valueToCheck` 字符串：
 
@@ -528,16 +528,16 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
    </form>
    ```
 
-   在本例中， `checkValue` 方法和 `nms:recipient` 使用服务：
+   在此示例中， `checkValue` 方法和 `nms:recipient` 使用的服务：
 
    * 服务是命名空间和数据类型。
-   * 方法是函数名称。 名称区分大小写。
+   * 方法是函数名称。 该名称区分大小写。
 
-   同步执行调用。
+   同步执行呼叫。
 
-   将显示所有例外。 如果您使用 `<leave>` 元素，则用户在验证输入的信息之前无法保存表单。
+   将显示所有例外。 如果您使用 `<leave>` 元素，则在验证输入的信息之前，用户无法保存表单。
 
-此示例展示了如何从表单中发起服务调用：
+此示例说明如何从表单中进行服务调用：
 
 ```xml
 <enter>
@@ -548,4 +548,4 @@ Forms是 `xtk:form` 类型。 您可以在 `xtk:form` 架构。 要查看此架�
 </enter>
 ```
 
-在此示例中，输入的是ID，它是主键。 当用户填写此ID的表单时，将使用此ID作为输入参数进行SOAP调用。 输出是一个写入此字段的布尔值： `/tmp/@count`. 您可以在表单中使用此布尔值。 有关更多信息 [表单上下文](form-structure.md#context-of-forms).
+在此示例中，输入是一个ID，它是一个主键。 当用户填写此ID的表单时，将使用此ID作为输入参数进行SOAP调用。 输出是写入此字段的布尔值： `/tmp/@count`. 您可以在表单内使用此布尔值。 详细了解 [表单上下文](form-structure.md#context-of-forms).

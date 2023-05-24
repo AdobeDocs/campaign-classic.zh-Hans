@@ -23,15 +23,15 @@ ht-degree: 22%
 
 默认情况下，此目录中存在三个导入模板和一个导出模板。不得更改它们。
 
-* 本机模板 **[!UICONTROL Import denylist]** 已配置为导入已添加到的电子邮件地址列阻止列表表。
+* 本机模板 **[!UICONTROL Import denylist]** 阻止列表已配置为导入添加到的电子邮件地址列表。
 
-* 的 **[!UICONTROL New text import]** 和 **[!UICONTROL New text export]** 模板允许您从头开始配置导入或导出。
+* 此 **[!UICONTROL New text import]** 和 **[!UICONTROL New text export]** 模板允许您从头开始配置导入或导出。
 
 ![](assets/s_ncs_user_export_wizard_template_create.png)
 
-您可以复制现有模板以创建自己的模板，或通过 **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** 菜单。
+您可以复制现有模板以创建自己的模板，或通过创建新模板 **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** 菜单。
 
-然后，配置模板的过程与以下章节中介绍的过程相同：
+然后，配置模板的过程与以下部分中显示的过程相同：
 
 * [配置导入作业](../../platform/using/executing-import-jobs.md)
 * [配置导出作业](../../platform/using/executing-export-jobs.md)

@@ -16,12 +16,12 @@ ht-degree: 4%
 
 
 
-与随Adobe Campaign提供的内置收件人表一样，新的收件人表也可能会收到一批预定义过滤器。
+就像随Adobe Campaign提供的内置收件人表一样，新的收件人表可能会接收一批预定义过滤器。
 
-这些过滤器将在目标选择窗口中提供，其功能与收件人的区段（使用参数输入表单、文件夹等）具有相同。
+这些过滤器将在目标选择窗口中提供，并具有与收件人区段相同的功能（使用参数输入表单、文件夹等）。
 
 1. 转到 **[!UICONTROL Administration > Configuration > Predefined filters]** 节点。
-1. 创建新过滤器。
-1. 输入 **[!UICONTROL Label]** ，然后选择与 **[!UICONTROL Document type]** 字段。
-1. 创建 **[!UICONTROL filtering conditions]** 基于架构的字段。
+1. 创建新筛选器。
+1. 输入 **[!UICONTROL Label]** ，然后选择与中的外部收件人表匹配的架构 **[!UICONTROL Document type]** 字段。
+1. 创建您的 **[!UICONTROL filtering conditions]** 基于架构的字段。
 1. 保存过滤器。

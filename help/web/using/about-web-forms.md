@@ -17,75 +17,75 @@ ht-degree: 5%
 
 
 
-Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体以创建包含输入和选择字段的页面，这些页面可能包含数据库中的数据。 这样，您就可以设计和发布网页，以供用户访问以查看或输入信息。
+Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体，以创建包含输入和选择字段的页面，这些字段可能包括数据库中的数据。 这样，您就可以设计和发布用户有权访问的Web页，以查看或输入信息。
 
 本章详细介绍Web窗体的创建和管理、如何管理字段和页面以及存储和保存模式。
 
 >[!CAUTION]
 >
->出于隐私原因，我们建议对所有外部资源使用HTTPS。
+>出于隐私原因，我们建议将HTTPS用于所有外部资源。
 
 ## 创建Web窗体的步骤 {#steps-for-creating-a-web-form}
 
-本章详细介绍设计 **webForm** 在Adobe Campaign中键入表单，以及可用的选项和配置。 Adobe Campaign允许您将此Web窗体提供给用户，以及在数据库中收集和存档答案。
+本章详细介绍设计 **webForm** 在Adobe Campaign中键入表单，以及可用的选项和配置。 Adobe Campaign让您可以让此Web表单可供用户使用，并在数据库中收集和存档答案。
 
 >[!CAUTION]
 >
->配置Web应用程序和Web窗体时，您需要最小900像素的垂直分辨率(例如：1600x900)。
+>在配置Web应用程序和Web窗体时，您至少需要900像素的垂直分辨率（例如：1600x900）。
 
-Web窗体可通过 **促销活动** 选项卡。 在Adobe Campaign树中，它们被分组到 **[!UICONTROL Resources > Online > Web Applications]** 节点。
+可通过Web窗体的Web应用程序菜单访问 **营销活动** 选项卡。 在Adobe Campaign树中，它们分组在 **[!UICONTROL Resources > Online > Web Applications]** 节点。
 
 要创建Web窗体，请单击 **[!UICONTROL Create]** 按钮。
 
 ![](assets/webapp_create_new.png)
 
-选择Web窗体模板( **[!UICONTROL newWebForm]** )。
+选择Web窗体模板( **[!UICONTROL newWebForm]** 默认情况下)。
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-这会将您转到表单的仪表板。
+这会将您转到表单仪表板。
 
 ![](assets/webapp_empty_dashboard.png)
 
-的 **[!UICONTROL Edit]** 选项卡，您可以创建内容。
+此 **[!UICONTROL Edit]** 选项卡，以创建内容。
 
 ![](assets/webapp_edit_tab.png)
 
 要定义Web窗体的配置和内容，请应用以下步骤：
 
-* 首先，创建所需的页面和控件：输入字段、下拉列表、HTML内容等。
+* 首先创建所需的页面和控件：输入字段、下拉列表、HTML内容等。
 
-   下面详细介绍了此步骤。
+   此步骤详见下文。
 
-* 定义页面排序和显示条件。
+* 定义页面顺序并设置显示条件。
 
-   有关此步骤的详细信息，请参阅 [定义Web窗体页面排序](defining-web-forms-page-sequencing.md).
+   此步骤详见 [定义Web窗体页面排序](defining-web-forms-page-sequencing.md).
 
-* 如有必要，翻译内容。
+* 如有必要，请翻译内容。
 
-   有关此步骤的详细信息，请参阅 [翻译Web窗体](translating-a-web-form.md).
+   此步骤详见 [翻译Web窗体](translating-a-web-form.md).
 
 ## 关于Web窗体设计 {#about-web-forms-designing}
 
-表单的页面通过特定编辑器创建，通过该编辑器可定义和配置输入区域（文本）、选择字段（列表、复选框等） 和静态元素（图像、HTLM内容等）。 可以将它们分组到容器中，并根据您的需要更改其布局(有关更多信息，请参阅 [创建容器](defining-web-forms-layout.md#creating-containers))。
+表单的页面通过特定编辑器创建，该编辑器允许您定义和配置输入区域（文本）、选择字段（列表、复选框等） 和静态元素（图像、HTLM内容等）。 它们可以分组到容器中，并根据您的需要更改其布局(有关更多信息，请参阅 [创建容器](defining-web-forms-layout.md#creating-containers))。
 
-以下部分详细说明了如何为表单屏幕定义内容和布局：
+以下部分详细介绍如何定义表单屏幕的内容和布局：
 
 * [向 Web 窗体添加字段](adding-fields-to-a-web-form.md),
-* [插入HTML内容](static-elements-in-a-web-form.md#inserting-html-content),
+* [插入HTML内容](static-elements-in-a-web-form.md#inserting-html-content)，
 * [Web 窗体中的静态元素](static-elements-in-a-web-form.md),
 * [定义 Web 窗体布局](defining-web-forms-layout.md).
 
 >[!NOTE]
 >
->* 在页面设计期间，您可以在 **[!UICONTROL Preview]** 选项卡。 要查看更改，请先保存表单。 任何错误都显示在 **[!UICONTROL Log]** 选项卡。
->* 要确保页面按适当的顺序显示和信息存储，请在Web窗体中启用调试模式。 要执行此操作，请转到 **[!UICONTROL Preview]** 子选项卡，并检查 **[!UICONTROL Enable debug mode]** 框：所有收集的信息和可能的执行错误都将显示在每个页面的底部。
+>* 在页面设计过程中，您可以在中查看最终渲染 **[!UICONTROL Preview]** 选项卡。 要查看更改，请先保存表单。 任何错误都将显示在 **[!UICONTROL Log]** 选项卡。
+>* 要确保页面显示和信息存储的顺序正确，请在Web窗体中启用调试模式。 为此，请转到 **[!UICONTROL Preview]** 子选项卡并检查 **[!UICONTROL Enable debug mode]** 框：所有收集的信息和可能的执行错误都将显示在每页底部。
 >
 
 
 ### 使用工具栏中的图标 {#using-the-icons-in-the-toolbar}
 
-您还可以使用工具栏中的图标或右键单击以插入输入区域。
+也可以使用工具栏中的图标或右键单击来插入输入区域。
 
 ![](assets/s_ncs_admin_webform_add_selection.png)
 

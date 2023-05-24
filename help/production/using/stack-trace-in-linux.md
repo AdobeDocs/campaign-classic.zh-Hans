@@ -19,16 +19,16 @@ ht-degree: 11%
 
 
 
-A **棧疊追蹤** 代表包含在 **核心** 輸入檔案。 此檔案會在發生電腦錯誤時產生。 它可以識別錯誤的來源。
+A **栈栈跟踪** 表示包含在 **核心** 键入文件。 此文件是在发生计算机错误时生成的。 它可以识别错误的来源。
 
 >[!NOTE]
 >
->* A **核心** 檔案已命名 **核心。`<num>`**.
->* **gdb - GNU Debugger** 必須安裝在電腦上。
+>* A **核心** 文件已命名 **核心。`<num>`**.
+>* **gdb - GNU调试器** 必须安装在计算机上。
 >
 
 
-Adobe Campaign技術支援人員可詢問您相關問題 **棧疊追蹤**. 若要取得，請在Linux中輸入下列命令：
+Adobe Campaign技术支持人员可以询问您相关问题 **栈栈跟踪**. 要获取此命令，请在Linux中输入以下命令：
 
 ```
 su - neolane
@@ -55,9 +55,9 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-Adobe Campaign技術支援可能會要求您使用特定的可執行檔（由我們提供）執行此命令。
+Adobe Campaign技术支持可能会要求您使用特定的可执行文件（由我们提供）运行此命令。
 
-在此情況下，只要執行下列命令，取代 **nlserver** 使用Adobe Campaign提供的可執行檔：
+在这种情况下，只需通过替换 **nlserver** 使用Adobe Campaign提供的可执行文件：
 
 ```
 gdb nlserver <coreFile>

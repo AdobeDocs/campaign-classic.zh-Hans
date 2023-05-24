@@ -14,7 +14,7 @@ ht-degree: 92%
 
 ---
 
-# 开始使用Campaign Classic{#about-adobe-campaign-classic}
+# Campaign Classic入门{#about-adobe-campaign-classic}
 
 
 
@@ -24,12 +24,12 @@ ht-degree: 92%
 
 >[!AVAILABILITY]
 >
->* 此集合中的帮助资料适用于其中的Campaign Classicv7 [最新版本](../../rn/using/latest-release.md). 当某个部分也适用于Campaign v8时，会提供特定徽章。
+>* 本系列中的帮助资料适用于其中的Campaign Classicv7 [最新版本](../../rn/using/latest-release.md). 当部分也适用于Campaign v8时，可以使用特定徽章。
 >
->* Adobe Campaign v8文档可供使用 [此处](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hans).
+>* 提供了Adobe Campaign v8文档 [此处](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hans).
 
 
-![](assets/do-not-localize/how-to-video.png) [了解视频中的主要特性和功能](#video)
+![](assets/do-not-localize/how-to-video.png) [了解视频的主要特性和功能](#video)
 
 ## 重要功能 {#key-capabilities}
 

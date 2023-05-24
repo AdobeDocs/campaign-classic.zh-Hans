@@ -20,60 +20,60 @@ ht-degree: 1%
 
 首先，为了使用户能够通过FDA对外部数据库执行操作，后者必须在Adobe Campaign中具有特定的命名权限。
 
-1. 选择 **[!UICONTROL Administration > Access Management > Named Rights]** 节点。
-1. 通过指定所选标签创建新权限。
-1. 的 **[!UICONTROL Name]** 字段必须采用以下格式 **user:base@server**，其中：
+1. 选择 **[!UICONTROL Administration > Access Management > Named Rights]** Adobe Campaign节点。
+1. 通过指定您选择的标签来创建新的权限。
+1. 此 **[!UICONTROL Name]** 字段必须采用以下格式 **user：base@server**，其中：
 
-   * **用户** 与外部数据库中用户的名称相对应。
+   * **用户** 对应于外部数据库中的用户名称。
    * **基础** 与外部数据库的名称相对应。
    * **服务器** 与外部数据库服务器的名称相对应。
 
       >[!NOTE]
       >
-      >的 **:base** 部分在Oracle中是可选的。
+      >此 **：base** 部件在Oracle中是可选的。
 
-1. 保存已命名的权限，然后将其链接到 **[!UICONTROL Administration > Access Management > Operators]** Adobe Campaign资源管理器的节点。
+1. 保存指明权限，然后将其链接到您从 **[!UICONTROL Administration > Access Management > Operators]** 节点(位于Adobe Campaign资源管理器中)。
 
-然后，要处理外部数据库中包含的数据，Adobe Campaign用户必须对数据库至少具有“写入”权限才能创建工作表。 这些内容将由Adobe Campaign自动删除。
+然后，要处理外部数据库中包含的数据，Adobe Campaign用户必须至少具有数据库的“写入”权限才能创建工作表。 Adobe Campaign会自动删除它们。
 
-一般而言，需要拥有以下权限：
+一般而言，以下权利是必要的：
 
-* **CONNECT**:连接到远程数据库，
-* **读取数据**:对包含客户数据的表的只读访问，
-* **读取“MetaData”**:访问服务器数据目录以获取表结构，
-* **加载**:在工作表中批量加载（处理集合和联接时需要），
-* **创建/删除** 表示 **表/索引/过程/函数** (仅适用于由Adobe Campaign生成的工作表)、
-* **解释** （推荐）：在出现问题时监控性能，
+* **CONNECT**：连接到远程数据库，
+* **读取数据**：对包含客户数据的表的只读访问，
+* **读取&#39;元数据&#39;**：访问服务器数据目录以获取表结构，
+* **加载**：在工作表中成批加载（处理收藏集和连接时需要成批加载），
+* **创建/删除** 对象 **表/索引/过程/函数** (仅适用于Adobe Campaign生成的工作表)，
+* **说明** （建议）：用于监测出现问题时的性能，
 * **写入数据** （具体取决于集成方案）。
 
-数据库管理员需要使这些权限与每个数据库引擎的特定权限相匹配。 有关更多信息，请参阅以下章节。
+数据库管理员需要使这些权限与特定于每个数据库引擎的权限相匹配。 有关更多信息，请参阅以下部分。
 
 ## FDA权限 {#fda-rights}
 
-|   | Snowflake | 红移 | Oracle | SQLServer | PostgreSQL | MySQL |
+|   | Snowflake | Redshift | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **连接到远程数据库** | 仓库的使用情况、数据库的使用情况和架构权限的使用情况 | 创建链接到AWS帐户的用户 | 创建会话权限 | CONNECT权限 | CONNECT权限 | 创建与具有所有权限的远程主机绑定的用户 |
-| **创建表** | 创建关于架构权限的表 | 创建权限 | 创建表权限 | 创建表权限 | 创建权限 | 创建权限 |
-| **创建索引** | N/A | 创建权限 | 索引或创建任何索引权限 | ALTER权限 | 创建权限 | 索引权限 |
-| **创建函数** | 创建关于架构权限的函数 | 使用语言plpythonu权限可调用外部python脚本 | 创建过程或创建任何过程权限 | 创建函数权限 | 使用权限 | 创建例程权限 |
-| **创建过程** | N/A | 使用语言plpythonu权限可调用外部python脚本 | 创建过程或创建任何过程权限 | 创建过程权限 | 使用权限（过程是函数） | 创建例程权限 |
-| **删除对象（表、索引、函数、过程）** | 拥有对象 | 拥有对象或是超级用户 | 删除任意&lt;对象>权限 | ALTER权限 | 表：拥有表索引：拥有索引函数：拥有函数 | 删除权限 |
-| **监控执行** | 所需对象的MONITOR权限 | 使用EXPLAIN命令无需任何权限 | INSERT和SELECT权限以及执行EXPLAIN PLAN所基于的语句的必要权限 | SHOWPLAN权限 | 使用EXPLAIN语句无需任何权限 | 选择权限 |
-| **写入数据** | INSERT和/或UPDATE权限（取决于写入操作） | 插入和更新权限 | 插入和更新或插入和更新任何表权限 | 插入和更新权限 | 插入和更新权限 | 插入和更新权限 |
-| **将数据加载到表中** | 在架构上创建暂存，选择并插入目标表权限 | 选择和插入权限 | 选择和插入权限 | 插入、管理批量操作和更改表权限 | 选择和插入权限 | 文件权限 |
-| **访问客户端数据** | 选择“开（未来）表”或“查看”权限 | 选择权限 | 选择或选择任何表权限 | 选择权限 | 选择权限 | 选择权限 |
-| **访问元数据** | 选择INFORMATION_SCHEMA权限 | 选择权限 | 使用DESCRIBE语句无需任何权限 | 查看定义权限 | 使用“\d表”命令无需权限 | 选择权限 |
+| **正在连接到远程数据库** | WAREHOUSE使用情况、数据库使用情况以及架构权限使用情况 | 创建链接到AWS帐户的用户 | 创建会话权限 | CONNECT权限 | CONNECT权限 | 创建绑定到具有ALL PRIVILEGES的远程主机的用户 |
+| **创建表** | 根据方案权限创建表 | CREATE权限 | CREATE TABLE权限 | 创建表权限 | CREATE权限 | CREATE权限 |
+| **创建索引** | N/A | CREATE权限 | 索引或CREATE ANY INDEX权限 | ALTER权限 | CREATE权限 | INDEX权限 |
+| **创建函数** | CREATE函数ON方案权限 | USAGE ON LANGUAGE plythonu权限用于调用外部python脚本 | CREATE PROCEDURE或CREATE ANY PROCEDURE权限 | “创建函数”权限 | USAGE权限 | CREATE ROUTINE权限 |
+| **创建过程** | N/A | USAGE ON LANGUAGE plythonu权限用于调用外部python脚本 | CREATE PROCEDURE或CREATE ANY PROCEDURE权限 | 创建过程权限 | USAGE权限（过程是函数） | CREATE ROUTINE权限 |
+| **删除对象（表、索引、函数、过程）** | 拥有对象 | 拥有对象或成为超级用户 | 删除任意&lt;对象>权限 | ALTER权限 | 表：拥有表索引：拥有索引函数：拥有函数 | DROP权限 |
+| **监测执行** | 对所需对象的MONITOR权限 | 使用EXPLAIN命令不需要任何特权 | INSERT和SELECT权限以及执行EXPLAIN PLAN所基于的语句的必要权限 | SHOWPLAN权限 | 使用EXPLAIN语句不需要任何特权 | SELECT权限 |
+| **写入数据** | INSERT和/或UPDATE权限（取决于写入操作） | INSERT和UPDATE权限 | INSERT和UPDATE或INSERT和UPDATE ANY TABLE权限 | INSERT和UPDATE权限 | INSERT和UPDATE权限 | INSERT和UPDATE权限 |
+| **将数据加载到表中** | 在方案上创建阶段，在目标表权限上选择并插入 | SELECT和INSERT权限 | SELECT和INSERT权限 | 插入、管理批量操作和ALTER TABLE权限 | SELECT和INSERT权限 | FILE权限 |
+| **访问客户端数据** | 选择（将来）表或视图权限 | SELECT权限 | 选择或选择任何表权限 | SELECT权限 | SELECT权限 | SELECT权限 |
+| **访问元数据** | SELECT on INFORMATION_SCHEMA SCHEMA权限 | SELECT权限 | 使用DESCRIBE语句不需要任何特权 | 查看定义权限 | 使用“\d table”命令不需要权限 | SELECT权限 |
 
-|   | DB2 UDB | teradata | InfiniDB | sybase IQ/ Sybase ASE | Netezza | AsterData |
+|   | DB2 UDB | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **连接到远程数据库** | CONNECT权限 | CONNECT权限 | 创建与具有所有权限的远程主机绑定的用户 | 使用CONNECT语句无需权限 | 无需权限 | CONNECT权限 |
-| **创建表** | CREATETAB权限 | 创建表或表关键字 | 创建权限 | 资源权限和创建权限 | 表权限 | 创建权限 |
-| **创建索引** | 索引权限 | 创建索引或索引关键字 | 索引权限 | 资源权限和创建权限 | 索引权限 | 创建权限 |
-| **创建函数** | IMPLICIT_SCHEMA权限或CREATEIN权限 | 创建函数或函数关键字 | 创建例程权限 | Java函数的RESOURCE权限或DBA权限 | 函数权限 | 创建函数权限 |
-| **创建过程** | IMPLICIT_SCHEMA权限或CREATEIN权限 | 创建过程或过程关键字 | 创建例程权限 | 资源权限 | 过程权限 | 创建函数权限 |
-| **删除对象（表、索引、函数、过程）** | DROPIN权限或CONTROL权限或拥有对象 | DROP &lt;对象>或与对象相关的关键字 | 删除权限 | 拥有对象或DBA权限 | 删除权限 | 拥有对象 |
-| **监控执行** | 解释权限 | 使用EXPLAIN语句无需任何权限 | 选择权限 | 只有系统管理员才能执行sp_showplan | 使用EXPLAIN语句无需任何权限 | 使用EXPLAIN语句无需任何权限 |
-| **写入数据** | INSERT和UPDATE权限或DATAACCESS权限 | 插入和更新权限 | 插入和更新权限 | 插入和更新权限 | 插入和更新权限 | 插入和更新权限 |
-| **将数据加载到表中** | 加载权限 | 选择和插入权限以分别使用COPY TO和COPY FROM语句 | 文件权限 | 是表的所有者或ALTER权限。 根据 — gl选项，只有在用户具有DBA权限时，才可能执行LOAD TABLE | 选择和插入权限 | 选择和插入权限 |
-| **访问客户端数据** | 插入/更新权限或DATAACCESS权限 | 选择权限 | 选择权限 | 选择权限 | 选择权限 | 选择权限 |
-| **访问元数据** | 使用DESCRIBE语句无需授权 | 显示权限 | 选择权限 | 无需使用DESCRIBE语句的权限 | 使用“\d表”命令无需权限 | 使用SHOW命令无需任何权限 |
+| **正在连接到远程数据库** | CONNECT权限 | CONNECT权限 | 创建绑定到具有ALL PRIVILEGES的远程主机的用户 | 使用CONNECT语句无需权限 | 无需权限 | CONNECT权限 |
+| **创建表** | CREATETAB权限 | CREATE TABLE或TABLE关键字 | CREATE权限 | RESOURCE权限和CREATE权限 | TABLE权限 | CREATE权限 |
+| **创建索引** | INDEX权限 | CREATE INDEX或INDEX关键字 | INDEX权限 | RESOURCE权限和CREATE权限 | INDEX权限 | CREATE权限 |
+| **创建函数** | IMPLICIT_SCHEMA权限或CREATEIN权限 | CREATE FUNCTION或FUNCTION关键字 | CREATE ROUTINE权限 | Java函数的RESOURCE权限或DBA权限 | FUNCTION权限 | CREATE FUNCTION权限 |
+| **创建过程** | IMPLICIT_SCHEMA权限或CREATEIN权限 | CREATE PROCEDURE or PROCEDURE关键字 | CREATE ROUTINE权限 | RESOURCE权限 | PROCEDURE权限 | CREATE FUNCTION权限 |
+| **删除对象（表、索引、函数、过程）** | DROPIN权限或CONTROL权限，或拥有对象 | DROP &lt; object >或与对象相关的关键字 | DROP权限 | 拥有对象或DBA权限 | DROP权限 | 拥有对象 |
+| **监测执行** | EXPLAIN权限 | 使用EXPLAIN语句不需要任何特权 | SELECT权限 | 只有系统管理员可以执行sp_showplan | 使用EXPLAIN语句不需要任何特权 | 使用EXPLAIN语句不需要任何特权 |
+| **写入数据** | INSERT和UPDATE权限或DATACCESS权限 | INSERT和UPDATE权限 | INSERT和UPDATE权限 | INSERT和UPDATE权限 | INSERT和UPDATE权限 | INSERT和UPDATE权限 |
+| **将数据加载到表中** | LOAD权限 | SELECT和INSERT权限分别使用COPY TO和COPY FROM语句 | FILE权限 | 是表的所有者或ALTER权限。 根据 — gl选项，可能只有在用户具有DBA权限时才执行LOAD TABLE | SELECT和INSERT权限 | SELECT和INSERT权限 |
+| **访问客户端数据** | INSERT/UPDATE权限或DATACCESS权限 | SELECT权限 | SELECT权限 | SELECT权限 | SELECT权限 | SELECT权限 |
+| **访问元数据** | 使用DESCRIBE语句无需授权 | 显示权限 | SELECT权限 | 使用DESCRIBE语句无需权限 | 使用“\d table”命令不需要权限 | 使用SHOW命令不需要任何特权 |

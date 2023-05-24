@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 监视作业执行
-description: 了解如何监视导入和导出作业的执行
+description: 了解如何监视导入和导出作业执行
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
@@ -19,14 +19,14 @@ ht-degree: 55%
 
 
 
-您可以直接从导入/导出作业列表跟踪导入和导出作业的执行情况。
+您可以直接从导入/导出作业列表中跟踪导入和导出作业的执行情况。
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
-* 的 **[!UICONTROL Journal]** 选项卡，用于查看有关执行的日志消息。
-* 的 **[!UICONTROL Rejects]** 选项卡包含被拒绝的记录。 请参阅[此小节](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
+* 此 **[!UICONTROL Journal]** 选项卡允许您查看有关执行的日志消息。
+* 此 **[!UICONTROL Rejects]** 选项卡包含被拒绝的记录。 请参阅[此小节](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
 
-在 **[!UICONTROL General]** 选项卡 **[!UICONTROL Status]** 字段指示作业的当前状态。
+在 **[!UICONTROL General]** 选项卡， **[!UICONTROL Status]** 字段指示作业的当前状态。
 
 每个状态都由一个特殊的图标和标签表示。状态及其图标如下：
 
@@ -42,7 +42,7 @@ ht-degree: 55%
 
 * **取消**
 
-   单击 **[!UICONTROL Cancel]** 按钮：正在进行的作业被取消。
+   单击 **[!UICONTROL Cancel]** 按钮：正在执行的作业已取消。
 
 * **正在取消**
 
@@ -50,11 +50,11 @@ ht-degree: 55%
 
 * **正在暂停**
 
-   单击 **[!UICONTROL Pause]**:工作正在暂停。
+   单击 **[!UICONTROL Pause]**：作业正在暂停。
 
 * **已暂停**
 
-   单击 **[!UICONTROL Pause]**:作业已挂起。 可以通过单击 **[!UICONTROL Start]**.
+   单击 **[!UICONTROL Pause]**：作业已暂停。 可以通过单击重新启动 **[!UICONTROL Start]**.
 
 * **已完成**
 

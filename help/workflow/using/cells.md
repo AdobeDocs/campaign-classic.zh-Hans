@@ -16,15 +16,15 @@ ht-degree: 8%
 
 
 
-的 **[!UICONTROL Cells]** 活动以数据列的形式提供了各种子集的视图。 它有助于处理子集，还可鼓励实现个性化。
+此 **[!UICONTROL Cells]** 活动以数据列的形式提供各种子集的视图。 它有助于子集操作，并且还旨在鼓励个性化可能性。
 
 ![](assets/wf_split_cells.png)
 
-此活动可配置为根据用户需求输入特定参数。 默认情况下，每个子集的详细信息会通过 **[!UICONTROL Selection]** 和 **[!UICONTROL Advanced]** 选项卡。 在以下示例中，表单已被修改：a **[!UICONTROL Data]** 选项卡，以启用选件的关联和每个子集的优先级。
+可将此活动配置为根据用户需求输入特定参数。 默认情况下，每个子集的详细信息都会在专用窗口中通过 **[!UICONTROL Selection]** 和 **[!UICONTROL Advanced]** 选项卡。 在以下示例中，表单已修改： **[!UICONTROL Data]** 添加了选项卡，以启用优惠与每个子集的优先级之间的关联。
 
 ![](assets/wf_split_cells_with_customization.png)
 
-对于此配置，向工作流表单中添加了以下信息(在 **[!UICONTROL Administration > Configurations > Input forms]** Adobe Campaign树节点):
+对于此配置，以下信息已添加到工作流表单(在 **[!UICONTROL Administration > Configurations > Input forms]** Adobe Campaign节点)：
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
@@ -49,4 +49,4 @@ ht-degree: 8%
                 </container>
 ```
 
-Adobe Campaign中的登录表单个性化是专家用户保留的内容。 有关更多信息，请参阅此](../../configuration/using/identifying-a-form.md)章节[。
+Adobe Campaign中的登录表单个性化是为专家用户保留的。 有关更多信息，请参阅此](../../configuration/using/identifying-a-form.md)章节[。

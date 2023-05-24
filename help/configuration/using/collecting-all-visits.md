@@ -13,23 +13,23 @@ ht-degree: 3%
 
 # 收集所有访问{#collecting-all-visits}
 
-通过Adobe Campaign提供的Web跟踪模块，您可以收集收件人在消息中单击后进行网站跟踪的上下文中对网站特定页面的访问。
+通过Adobe Campaign提供的Web跟踪模块，您可以收集收件人单击消息后，在网站跟踪的上下文中对网站某些页面的访问次数。
 
-但是，您可以配置您的平台，以便该平台收集具有Web跟踪标记的页面所有访问次数，该标记由平台已知用户执行。
+但是，您可以对平台进行配置，使其收集该平台已知的用户对带有Web跟踪标记的页面的所有访问。
 
-平台已知的用户是已被投放定向且已至少单击一次接收消息的收件人。 永久Cookie用于标识此收件人。
+平台已知的用户是已定位投放并且已至少单击一次所接收消息的收件人。 永久性Cookie用于标识此收件人。
 
 >[!IMPORTANT]
 >
->Adobe Campaign平台不适用于消息中单击后访问网站的上下文之外的网站跟踪工具。 启用此选项后，可能会导致在托管服务器的计算机上（重定向、应用程序和数据库）大量使用资源。 建议您确保硬件架构能够支持此负载，并避免在最常访问的页面（如主页）中放置Web跟踪标记。
+>Adobe Campaign平台不打算用作除单击消息后访问网站的上下文之外的网站跟踪工具。 启用此选项后，可能会导致托管服务器的计算机上的资源使用率非常高（重定向、应用程序和数据库）。 建议您确保硬件架构可以支持此加载，并避免将Web跟踪标记放在访问频率最高的页面（如主页）中。
 
 ## 服务器配置 {#server-configuration}
 
-服务器的配置方式是使 **serverConf.xml** 文件。 这些文件保存在 **conf** Adobe Campaign安装目录的子目录。
+服务器是通过重载 **serverConf.xml** 文件。 这些文件保存在 **会议** Adobe Campaign安装目录的子目录。
 
 ### 重定向服务器 {#redirection-server}
 
-对于重定向服务器，请将 **trackWebVisitors** 属性 **重定向** 元素 **true**.
+对于重定向服务器，请设置 **trackWebVisitors** 的属性 **重定向** 元素至 **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -38,11 +38,11 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="true"
 trackingPassword=""
 ```
 
-## 配置默认匹配的营销活动 {#configuring-a-default-matching-campaign}
+## 配置默认匹配营销活动 {#configuring-a-default-matching-campaign}
 
 要通过客户端控制台查看跟踪信息，您必须：
 
 * 创建 **虚拟投放** （投放映射必须与目标架构的映射相同），
-* 输入 **内部名称** 的 **NmsTracking_WebTrackingDelivery** 选项。
+* 输入 **内部名称** 此投放的 **NmsTracking_WebTrackingDelivery** 选项。
 
-在创建的虚拟投放中，可以查看并非直接在电子邮件中单击之后显示的所有网站跟踪信息。
+可以在创建的虚拟投放中查看并非直接在电子邮件中点击之后的所有网站跟踪信息。

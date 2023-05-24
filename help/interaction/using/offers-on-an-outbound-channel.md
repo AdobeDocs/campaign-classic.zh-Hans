@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ## 电子邮件选件投放 {#email-offer-delivery}
 
-在我们的数据库中，有一类前往非洲的旅行优惠。 已配置每个选件的资格、上下文和表示形式。 现在，我们希望创建一个营销活动，通过电子邮件提供我们的优惠。
+在我们的数据库中，有一类前往非洲的旅行机会。 已配置每个优惠的资格、上下文和表示形式。 现在，我们要创建一个营销活动，通过电子邮件展示我们的优惠。
 
 1. 创建营销活动和定位工作流。
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_002.png)
 
-1. 为选件环境选择与假日匹配的电子邮件空间。
+1. 为优惠环境选择与假日匹配的电子邮件空间。
 
    ![](assets/offer_delivery_example_003.png)
 
@@ -39,15 +39,15 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_004.png)
 
-1. 将投放中的选件数量设置为2。
+1. 将投放中的选件数量设置为两个。
 
    ![](assets/offer_delivery_example_005.png)
 
-1. 关闭选件管理窗口并创建投放的内容。
+1. 关闭选件管理窗口并创建投放内容。
 
    ![](assets/offer_delivery_example_006.png)
 
-1. 使用菜单插入第一个选件建议并选择HTML渲染功能。
+1. 使用菜单插入第一个优惠建议并选择HTML渲染功能。
 
    ![](assets/offer_delivery_example_007.png)
 
@@ -55,18 +55,18 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_008.png)
 
-1. 单击 **[!UICONTROL Preview]** 要在投放中预览选件，请选择收件人以预览将收到的选件。
+1. 单击 **[!UICONTROL Preview]** 要在投放中预览优惠，请选择一位收件人，以便在收件人收到优惠时预览优惠。
 
    ![](assets/offer_delivery_example_009.png)
 
 1. 保存投放并启动定位工作流。
-1. 打开投放，然后单击 **[!UICONTROL Audit]** 选项卡：您可以看到选件引擎已从目录中的各种选件中选择了要提出的建议。
+1. 打开您的投放，然后单击 **[!UICONTROL Audit]** 选项卡中的投放：您可以看到优惠引擎已从目录中的各种优惠中选择了要提出的主张。
 
    ![](assets/offer_delivery_example_010.png)
 
 ## 执行优惠模拟 {#perform-an-offer-simulation}
 
-1. 在 **[!UICONTROL Profiles and Targets]** ，单击 **[!UICONTROL Simulations]** 链接，然后单击 **[!UICONTROL Create]** 按钮。
+1. 在 **[!UICONTROL Profiles and Targets]** 选项卡，单击 **[!UICONTROL Simulations]** 链接，然后单击 **[!UICONTROL Create]** 按钮。
 
    ![](assets/offer_simulation_001.png)
 
@@ -74,26 +74,26 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_002.png)
 
-1. 保存模拟。 然后，会在新选项卡中打开该对话框。
+1. 保存模拟。 然后，该操作将在新选项卡中打开。
 
    ![](assets/offer_simulation_example_003.png)
 
-1. 单击 **[!UICONTROL Edit]** ，然后 **[!UICONTROL Scope]**.
+1. 单击 **[!UICONTROL Edit]** 选项卡，然后 **[!UICONTROL Scope]**.
 
    ![](assets/offer_simulation_example_004.png)
 
-1. 选择要模拟选件的类别。
+1. 选择要为其模拟优惠的类别。
 
    ![](assets/offer_simulation_example_005.png)
 
-1. 选择要用于模拟的选件空间。
+1. 选择要用于模拟的优惠空间。
 
    ![](assets/offer_simulation_example_006.png)
 
-1. 输入有效日期。 您必须至少输入开始日期。 这允许选件引擎过滤选件并选择在给定日期有效的选件。
-1. 如有必要，请指定一个或多个主题，以将选件数量限制为设置中包含此关键字的选件数量。
+1. 输入有效日期。 您至少必须输入开始日期。 这允许优惠引擎筛选优惠，并选择在给定日期有效的优惠。
+1. 如有必要，请指定一个或多个主题，以将选件数量限制为设置中包含此关键字的选件。
 
-   在本例中， **旅行** 类别包含两个具有两个不同主题的子类别。 我们希望通过 **客户> 1年** 主题。
+   在我们的示例中， **旅行** 类别包含两个子类别，具有两个单独的主题。 我们希望使用对优惠进行模拟 **客户>1年** 主题。
 
    ![](assets/offer_simulation_example_007.png)
 
@@ -101,27 +101,27 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_008.png)
 
-1. 配置要发送给每个收件人的选件数量。
+1. 配置要发送给每个收件人的优惠数量。
 
-   在我们的示例中，选件引擎将为每个收件人选择权重最高的3个选件。
+   在我们的示例中，优惠引擎将为每个收件人选择权重最高的3个优惠。
 
    ![](assets/offer_simulation_example_009.png)
 
-1. 保存设置，然后单击 **[!UICONTROL Start]** 在 **[!UICONTROL Dashboard]** 选项卡来运行模拟。
+1. 保存设置，然后单击 **[!UICONTROL Start]** 在 **[!UICONTROL Dashboard]** 选项卡运行模拟。
 
    ![](assets/offer_simulation_example_010.png)
 
-1. 模拟完成后，请查阅 **[!UICONTROL Results]** 以详细了解每个选件的建议。
+1. 模拟完成后，请查阅 **[!UICONTROL Results]** 以了解每个选件的建议详细细分。
 
-   在我们的示例中，选件引擎基于3个建议来划分选件。
+   在我们的示例中，优惠引擎将优惠划分基于3个建议。
 
    ![](assets/offer_simulation_example_011.png)
 
-1. 显示 **[!UICONTROL Breakdown of offers by rank]** 查看选件引擎选择的选件列表。
+1. 显示 **[!UICONTROL Breakdown of offers by rank]** 以查看优惠引擎选择的优惠列表。
 
    ![](assets/offer_simulation_example_012.png)
 
-1. 如有必要，您可以更改范围设置，并通过单击 **[!UICONTROL Start simulation]**.
+1. 如有必要，可以更改范围设置并通过单击再次运行模拟 **[!UICONTROL Start simulation]**.
 
    ![](assets/offer_simulation_example_010.png)
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 关于在Adobe Campaign中创建投放的步骤
-description: 了解在Adobe Campaign中创建主投放的步骤
+title: 关于Adobe Campaign中的投放创建步骤
+description: 了解Adobe Campaign中的主要投放创建步骤
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Channel Configuration
@@ -17,9 +17,9 @@ ht-degree: 14%
 
 
 
-创建投放时的关键步骤如下：
+创建投放时的主要步骤如下：
 
-1. **创建和标识投放**. [了解更多信息](steps-create-and-identify-the-delivery.md)
+1. **创建和识别投放**. [了解更多信息](steps-create-and-identify-the-delivery.md)
 
 1. **定义投放内容**. 投放内容定义特定于每个渠道。 有关更多信息，请参阅专述章节：
 
@@ -32,8 +32,8 @@ ht-degree: 14%
 
 1. **发送投放**. [了解更多信息](steps-sending-the-delivery.md)
 
-1. **监控投放** （跟踪、隔离、报表等）。 有关更多信息，请参阅 [监控投放](about-delivery-monitoring.md) 和 [跟踪投放](about-message-tracking.md) 中。
+1. **监测投放** （跟踪、隔离、报告等）。 有关详情，请参阅 [监控投放](about-delivery-monitoring.md) 和 [跟踪投放](about-message-tracking.md) 部分。
 
 >[!NOTE]
 >
->本章中描述的步骤假定除外部投放外，所有目标收件人及其用户档案都存储在数据库中(请参阅 [选择外部收件人](steps-defining-the-target-population.md#selecting-external-recipients))。
+>本章介绍的步骤假定所有目标收件人及其用户档案都存储在数据库中，外部投放情况除外(请参阅 [选择外部收件人](steps-defining-the-target-population.md#selecting-external-recipients))。

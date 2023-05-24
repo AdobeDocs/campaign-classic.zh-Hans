@@ -19,24 +19,24 @@ ht-degree: 2%
 
 
 
-以下故障诊断提示将提供帮助 **内部部署** 客户可解决使用IMS集成时出现的最常见问题。 对于 **托管** 客户，请联系Adobe。
+以下故障诊断提示将有所帮助 **内部部署** 客户可以解决使用IMS集成时最常见的问题。 对象 **托管** 客户，请联系Adobe。
 
 **外部帐户**
 
-应该只有 **one** 具有以下设置的外部帐户：
+应该只有 **一** 外部帐户，具有以下设置：
 
-* **内部名称**:Adobe_Marketing_Cloud
-* **类型**:Adobe Marketing Cloud
+* **内部名称**：Adobe_Marketing_Cloud
+* **类型**：Adobe Marketing Cloud
 
-删除具有相同设置的任何重复的外部帐户。
+删除具有相同设置的任何重复外部帐户。
 
 **产品上下文**
 
-如果外部帐户具有 **产品上下文** 字段，检查其值设置为： **dma_campaign_classic**
+如果外部帐户具有 **产品上下文** 字段，检查其值是否设置为： **dma_campaign_classic**
 
-确保Campaign和Experience Cloud的产品上下文相同。
+确保您的产品上下文与Campaign和Experience Cloud相同。
 
-例如，如果 **产品上下文** 未显示，则默认的产品上下文应为 **dma_campaign** 在Campaign和Experience Cloud中。 如果 **产品上下文** 字段中，默认的产品上下文应为 **dma_campaign_classic** 在Campaign和Experience Cloud中。
+例如，如果 **产品上下文** 不会显示，默认产品上下文应为 **dma_campaign** 在Campaign和Experience Cloud中。 如果 **产品上下文** 字段，则默认产品上下文应为 **dma_campaign_classic** 在Campaign和Experience Cloud中。
 
 **[!UICONTROL IMS Server URL]**
 
@@ -44,10 +44,10 @@ ht-degree: 2%
 
 **关联掩码**
 
-* 检查尝试登录的用户是否属于Enterprise Dashboard中的操作员组。
+* 检查尝试登录的用户是否属于Enterprise Dashboard中的运算符组。
 * 检查 **[!UICONTROL Association Mask]** 是Enterprise Dashboard中用户操作员组名称的前缀。
 * 确保没有空格和拼写错误。
-* 检查Campaign中运算符组的名称是否未更改，并遵循以下语法：
+* 检查Campaign中操作员组的名称是否未更改，并遵循以下语法：
 
 ```
 <Association Mask> + <Operator Group Name in Campaign> = Complete name of the operator group in Enterprise Dashboard
@@ -59,28 +59,28 @@ Campaign外部帐户中定义的范围必须是IMS设置的范围的子集。
 
 **回调URL**
 
-的 **回调URL** 应添加到允许列表，并以“https://”开头。 检查 **回调URL** 链接到相应的实例。 例如，生产实例应重定向到生产URL。
+此 **回调URL** 应添加到允许列表中，并以“https://”开头。 检查 **回调URL** 链接到相应的实例。 例如，生产实例应重定向到生产URL。
 
-**客户端ID和密钥**
+**客户端ID和密码**
 
-客户ID在Campaign外部帐户和IMS设置的帐户之间匹配。
+Campaign外部帐户与IMS设置的外部帐户之间的客户端ID匹配。
 
-检查输入的客户端密钥是否正确。
+检查输入的客户端密码是否正确。
 
 **重新启动服务器**
 
 如果对Campaign外部帐户中的上述设置进行了任何更改，请重新启动服务器
 
-**常见的错误类型和可能的解决方案**
+**常见错误类型和可能的解决方案**
 
-* 用户将被重定向到adobe.com页面：
+* 用户将被重定向至adobe.com页面：
 
-   在 **[!UICONTROL Callback URL]**. 请参阅上述步骤，以检查 **[!UICONTROL Callback URL]** 配置。
+   有一个问题 **[!UICONTROL Callback URL]**. 请参阅之前的步骤以检查 **[!UICONTROL Callback URL]** 配置。
 
-* 消息“登录没有任何与表达式匹配的权限”：
+* 消息“Login does not any right matching the expression”（登录没有任何权限与表达式匹配）：
 
-   请参阅上述步骤，以检查 **[!UICONTROL Association Mask]** 和运算符组配置。
+   请参阅之前的步骤以检查 **[!UICONTROL Association Mask]** 和操作员组配置。
 
 * 用户无法访问Adobe ID登录页面：
 
-   请参阅上述步骤以检查范围配置。
+   请参阅前面的步骤以检查作用域配置。

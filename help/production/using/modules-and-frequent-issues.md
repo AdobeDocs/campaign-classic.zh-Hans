@@ -19,71 +19,71 @@ ht-degree: 6%
 
 
 
-受常見問題影響的模組清單如下：
+以下是受常见问题影响的模块列表：
 
 <table> 
  <thead> 
   <tr> 
    <th> 模块 </th> 
-   <th> 執行範圍 </th> 
+   <th> 执行范围 </th> 
    <th> 故障排除 </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> 匯出 </td> 
-   <td> 匯出程式的執行<br /> </td> 
-   <td> 排程此匯出的操作員需要重新啟動它。 差異或完整重新啟動。<br /> </td> 
+   <td> 导出 </td> 
+   <td> 执行导出过程<br /> </td> 
+   <td> 计划此导出的操作员需要重新启动它。 增量或完全重新启动。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 匯入 </td> 
-   <td> 匯入程式的執行<br /> </td> 
-   <td> 排程此匯出的操作員需要重新啟動它。 檢查資料庫中是否有重複專案。<br /> </td> 
+   <td> 导入 </td> 
+   <td> 导入过程的执行<br /> </td> 
+   <td> 计划此导出的操作员需要重新启动它。 检查数据库是否存在重复项。<br /> </td> 
   </tr> 
   <tr> 
    <td> inMail </td> 
-   <td> 讀取退回信箱<br /> </td> 
-   <td> 如果退回的郵件不再轉寄，則檢查此模組。<br /> </td> 
+   <td> 读取退回邮箱<br /> </td> 
+   <td> 如果退回的邮件不再转发，则检查此模块。<br /> </td> 
   </tr> 
   <tr> 
    <td> mta </td> 
-   <td> 傳送電子郵件<br /> </td> 
-   <td> 如果不再傳送郵件，則檢查此模組。<br /> </td> 
+   <td> 发送电子邮件<br /> </td> 
+   <td> 如果不再发送邮件，则检查此模块。<br /> </td> 
   </tr> 
   <tr> 
    <td> stat </td> 
-   <td> 維護MTA連線統計資料<br /> </td> 
-   <td> 如果不再傳送郵件，則檢查此模組。<br /> </td> 
+   <td> 维护MTA连接统计信息<br /> </td> 
+   <td> 如果不再发送邮件，则检查此模块。<br /> </td> 
   </tr> 
   <tr> 
    <td> syslogd </td> 
-   <td> 記錄寫入<br /> </td> 
-   <td> 如果記錄檔中遺失某些記錄，請檢查以確定模組使用的是連線埠6666。 請參閱 <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">開啟的連線埠清單</a>.<br /> </td> 
+   <td> 日志写入<br /> </td> 
+   <td> 如果日志文件中缺少某些日志，请检查以确保模块使用的是端口6666。 请参阅 <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">打开的端口列表</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> 跟踪 </td> 
-   <td> 合併和擷取追蹤記錄<br /> </td> 
-   <td> 如果追蹤記錄不再轉送，則檢查此模組。<br /> </td> 
+   <td> 合并和检索跟踪日志<br /> </td> 
+   <td> 如果不再转发跟踪日志，请选中此模块。<br /> </td> 
   </tr> 
   <tr> 
    <td> trackinglogd </td> 
-   <td> 追蹤記錄檔寫入和清除伺服器<br /> </td> 
-   <td> 如果追蹤記錄不再轉送且伺服器上的檔案中沒有記錄追蹤，則檢查此模組。 請參閱 <a href="../../production/using/tracking-logs-issues.md" target="_blank">追蹤記錄問題</a>.<br /> </td> 
+   <td> 跟踪日志写入和清除服务器<br /> </td> 
+   <td> 如果跟踪日志不再转发，并且服务器上的文件中没有日志跟踪，则选中此模块。 请参阅 <a href="../../production/using/tracking-logs-issues.md" target="_blank">跟踪日志问题</a>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 看門狗 </td> 
-   <td> 啟動和監視執行個體<br /> </td> 
-   <td> 如果沒有處理程式啟動，則檢查此模組。<br /> </td> 
+   <td> 监视程序 </td> 
+   <td> 启动和监控实例<br /> </td> 
+   <td> 如果未启动任何进程，则选中此模块。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 網頁 </td> 
-   <td> 應用程式伺服器（HTTP和SOAP）<br /> </td> 
-   <td> 如果主控台和Web連線無法運作並觸發 <strong>xtk：session</strong> 型別錯誤<br /> </td> 
+   <td> Web </td> 
+   <td> 应用程序服务器（HTTP和SOAP）<br /> </td> 
+   <td> 如果控制台和Web连接不起作用并触发 <strong>xtk：session</strong> 类型错误<br /> </td> 
   </tr> 
   <tr> 
    <td> wfserver </td> 
-   <td> 控制工作流程執行個體的執行。<br /> </td> 
-   <td> 如果您遇到任何問題，請重新啟動此模組。 如有需要，請套用程式以提高記錄檔的精確度，詳情請見 <a href="../../production/using/log-precision.md" target="_blank">記錄精確度</a> 區段。<br /> </td> 
+   <td> 控制工作流实例的执行。<br /> </td> 
+   <td> 如果遇到任何问题，请重新启动此模块。 如有必要，请应用此过程以提高日志的精度，详见 <a href="../../production/using/log-precision.md" target="_blank">日志精度</a> 部分。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -29,11 +29,11 @@ ht-degree: 10%
 
    ![](assets/offer_env_creation_001.png)
 
-1. 接下来，转到之前创建的文件夹，然后添加 **[!UICONTROL Offer environment]** 使用右键单击菜单。
+1. 接下来，转到您刚刚创建的文件夹并添加 **[!UICONTROL Offer environment]** 使用右键单击菜单。
 
    ![](assets/offer_env_creation_001bis.png)
 
-1. 应用相同的流程以创建环境子文件夹和元素。
-1. 测试完成并希望在生产中使用环境后，请在设计环境中复制选件和空间。 (右键单击> **[!UICONTROL Actions]** > **[!UICONTROL Deploy]** )。
+1. 应用相同的流程来创建环境子文件夹和元素。
+1. 完成测试并希望在生产环境中使用环境后，在设计环境中复制选件和空间。 (右键单击> **[!UICONTROL Actions]** > **[!UICONTROL Deploy]** )。
 
    ![](assets/migration_interaction_5.png)

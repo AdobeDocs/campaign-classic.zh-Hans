@@ -16,9 +16,9 @@ ht-degree: 3%
 
 
 
-的 **[!UICONTROL Data loading (RDBMS)]** 活动允许您直接访问此外部数据库，并仅收集定位所需的数据。
+此 **[!UICONTROL Data loading (RDBMS)]** 通过活动，您可以直接访问此外部数据库，并仅收集定位所需的数据。
 
-为了提高性能，我们建议使用查询活动（可在其中使用外部数据库的数据）。 有关更多信息，请参阅 [访问外部数据库(FDA)](accessing-an-external-database--fda-.md).
+为了提高性能，我们建议使用查询活动（其中可以使用外部数据库的数据）。 有关更多信息，请参阅 [访问外部数据库（联合数据访问）](accessing-an-external-database--fda-.md).
 
 操作如下：
 
@@ -26,14 +26,14 @@ ht-degree: 3%
 
    ![](assets/s_advuser_wf_sgbd_sample_1.png)
 
-   在相应字段中输入的表名称将用作外部数据库中收集数据的模板。 通过数据加载活动的集客过渡，可以计算或传递由工作流处理的表的名称。 要选择要使用的表，请单击 **[!UICONTROL Advanced..]**. 链接并选择 **[!UICONTROL Specified in the transition]** 或 **[!UICONTROL Explicit]** 选项。
+   在相应字段中输入的表的名称将用作在外部数据库中收集数据的模板。 工作流处理的表的名称可以由数据加载活动的集客过渡计算或传递。 要选择要使用的表，请单击 **[!UICONTROL Advanced..]**. 链接并选择 **[!UICONTROL Specified in the transition]** 或 **[!UICONTROL Explicit]** 选项。
 
    ![](assets/s_advuser_wf_sgbd_sample_5.png)
 
-1. 单击 **[!UICONTROL Select the columns to extract...]** 链接以选择要在数据库中收集的数据。
+1. 单击 **[!UICONTROL Select the columns to extract...]** 用于选择要在数据库中收集的数据的链接。
 
    ![](assets/s_advuser_wf_sgbd_sample_2.png)
 
-1. 您可以根据此数据定义过滤器。 为此，请单击 **[!UICONTROL Edit query....]** 链接。
+1. 您可以根据此数据定义过滤器。 要执行此操作，请单击 **[!UICONTROL Edit query....]** 链接。
 
-   像这样收集的数据可以在工作流的整个生命周期中使用。
+   这样收集的数据可在工作流的整个生命周期中使用。

@@ -17,196 +17,196 @@ ht-degree: 1%
 
 
 
-您可以將網頁應用程式本地化為數種語言。
+可以将Web应用程序本地化为多种语言。
 
-您可以直接在Adobe Campaign主控台中執行翻譯(請參閱 [在編輯器中管理翻譯](#managing-translations-in-the-editor))，或匯出和匯入字串以將翻譯外部化(請參閱 [外部化翻譯](#externalizing-translation))。
+您可以直接在Adobe Campaign控制台中执行翻译(请参阅 [在编辑器中管理翻译](#managing-translations-in-the-editor))，或导出和导入字符串以将翻译外部化(请参阅 [将翻译外部化](#externalizing-translation))。
 
-預設可用的翻譯語言清單詳見 [變更表單顯示語言](#changing-forms-display-language).
+有关默认可用的翻译语言列表，请参阅 [更改表单显示语言](#changing-forms-display-language).
 
-網頁應用程式是以編輯語言設計：這是用來輸入標籤和其他要翻譯內容的參考語言。
+Web应用程序使用编辑语言设计：这是用于输入标签和其他要翻译的内容所使用的参考语言。
 
-預設語言是Web應用程式在存取URL中未新增任何語言設定時所顯示的語言。
-
->[!NOTE]
->
->依預設，編輯語言和預設語言與主控台語言相同。
-
-## 選擇語言 {#choosing-languages}
-
-若要定義一或多個翻譯語言，請按一下 **[!UICONTROL Properties]** Web應用程式的按鈕，然後 **[!UICONTROL Localization]** 標籤。 按一下 **[!UICONTROL Add]** 按鈕來定義網頁應用程式的新翻譯語言。
+默认语言是Web应用程序在访问URL中未添加任何语言设置时显示的语言。
 
 >[!NOTE]
 >
->此視窗也可讓您變更預設語言和編輯語言。
+>默认情况下，编辑语言和默认语言与控制台语言相同。
+
+## 选择语言 {#choosing-languages}
+
+要定义一种或多种翻译语言，请单击 **[!UICONTROL Properties]** 按钮，然后 **[!UICONTROL Localization]** 选项卡。 单击 **[!UICONTROL Add]** 按钮，为Web应用程序定义新的翻译语言。
+
+>[!NOTE]
+>
+>此窗口还允许您更改默认语言和编辑语言。
 
 ![](assets/s_ncs_admin_survey_add_lang.png)
 
-當您新增網頁應用程式的翻譯語言時（或當預設語言與編輯語言不同時）， **[!UICONTROL Translation]** 子標籤會新增至 **[!UICONTROL Edit]** 標籤以管理翻譯。
+在为Web应用程序添加翻译语言时（或者当默认语言与编辑语言不同时）， **[!UICONTROL Translation]** 子选项卡将添加到 **[!UICONTROL Edit]** 选项卡以管理翻译。
 
-Adobe Campaign包含翻譯及管理多語言翻譯的工具。 此編輯器可讓您檢視要翻譯或核准的字串、直接在介面中輸入翻譯，或匯入/匯出字元字串以將翻譯外部化。
+Adobe Campaign包括一个用于翻译和管理多语言翻译的工具。 通过此编辑器，您可以查看要翻译或批准的字符串、直接在界面中输入翻译或导入/导出字符串以将翻译外部化。
 
-## 在編輯器中管理翻譯 {#managing-translations-in-the-editor}
+## 在编辑器中管理翻译 {#managing-translations-in-the-editor}
 
-### 收集字串 {#collecting-strings}
+### 收集字符串 {#collecting-strings}
 
-此 **[!UICONTROL Translations]** 索引標籤可讓您為構成Web應用程式的字元字串輸入翻譯。
+此 **[!UICONTROL Translations]** 选项卡允许您为构成Web应用程序的字符串输入翻译。
 
-第一次開啟此索引標籤時，不會包含任何資料。 按一下 **[!UICONTROL Collect the strings to translate]** 更新網頁應用程式中字串的連結。
+首次打开此选项卡时，它将不包含任何数据。 单击 **[!UICONTROL Collect the strings to translate]** 用于更新Web应用程序中字符串的链接。
 
-Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 所有靜態元素的索引標籤：HTML區塊、Javascript等。 靜態元素的詳細說明，請參閱 [網路表單中的靜態元素](static-elements-in-a-web-form.md).
+Adobe Campaign收集 **[!UICONTROL Texts]** 所有静态元素的选项卡：HTML块、Javascript等 有关静态元素的详情，请参见 [Web窗体中的静态元素](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
 >[!CAUTION]
 >
->視要處理的資料量而定，此程式可能需要幾分鐘的時間。
+>根据要处理的数据量，此过程可能需要几分钟时间。
 > 
->如果出現警告指出系統字典中缺少某些翻譯，請參閱 [轉譯系統字串](#translating-the-system-strings).
+>如果系统字典中缺少某些翻译，请参考 [翻译系统字符串](#translating-the-system-strings).
 
-每次翻譯字串時，其翻譯都會新增至翻譯字典。
+每次翻译字符串时，都会将其翻译添加到翻译词典中。
 
-當收集程式偵測到已有翻譯存在時，此翻譯會顯示在 **[!UICONTROL Text]** 字串的欄。 字串的狀態已轉換為 **[!UICONTROL Translated]**.
+当收集过程检测到某个翻译已存在时，此翻译将显示在 **[!UICONTROL Text]** 字符串的列。 字符串的状态已转换为 **[!UICONTROL Translated]**.
 
-對於從未翻譯過的字元字串， **[!UICONTROL Text]** 欄位為空白，且狀態為 **[!UICONTROL To translate]**.
+对于从未翻译过的字符串，将 **[!UICONTROL Text]** 字段为空，状态为 **[!UICONTROL To translate]**.
 
-### 篩選字串 {#filtering-strings}
+### 筛选字符串 {#filtering-strings}
 
-依預設，會顯示Web應用程式的每種翻譯語言。 預設篩選器有兩種：語言和狀態。 按一下 **[!UICONTROL Filters]** 按鈕，然後按一下 **[!UICONTROL By language or status]** 以顯示相符的下拉式方塊。 您也可以建立進階篩選。 有关详细信息，请参见[此页面](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
+默认情况下，将显示Web应用程序的每种翻译语言。 有两种默认筛选器：语言和状态。 单击 **[!UICONTROL Filters]** 按钮，然后单击 **[!UICONTROL By language or status]** 以显示匹配的下拉框。 您还可以创建高级过滤器。 有关详细信息，请参见[此页面](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
-前往 **[!UICONTROL Language]** 下拉式方塊以選取翻譯語言。
+转到 **[!UICONTROL Language]** 用于选择翻译语言的下拉框。
 
-若只要顯示未翻譯的字串，請選取 **[!UICONTROL To translate]** 在 **[!UICONTROL Status]** 下拉式方塊。 您也可以只顯示翻譯或核准的字串。
+要仅显示未翻译的字符串，请选择 **[!UICONTROL To translate]** 在 **[!UICONTROL Status]** 下拉框。 您还可以仅显示已翻译或已批准的字符串。
 
-### 轉譯字串 {#translating-strings}
+### 翻译字符串 {#translating-strings}
 
-1. 若要翻譯單字，請在字串清單上連按兩下其行。
+1. 要翻译单词，请双击字符串列表中的单词。
 
    ![](assets/s_ncs_admin_survey_trad_tab_add_term.png)
 
-   來源字串會顯示在視窗的上半部。
+   源字符串显示在窗口的上部。
 
-1. 在下方輸入其翻譯。 若要核准，請核取 **[!UICONTROL Translation approved]** 選項。
+1. 在下半部分输入其翻译。 要批准它，请选中 **[!UICONTROL Translation approved]** 选项。
 
    >[!NOTE]
    >
-   >翻譯核准為選用，不會阻礙此程式。
+   >翻译审批是可选的，不会阻止该流程。
 
-   未核准的翻譯會顯示為 **[!UICONTROL Translated]**. 已核准的翻譯會顯示為 **[!UICONTROL Approved]**.
+   未批准的翻译显示为 **[!UICONTROL Translated]**. 已批准的翻译显示为 **[!UICONTROL Approved]**.
 
-## 外部化翻譯 {#externalizing-translation}
+## 将翻译外部化 {#externalizing-translation}
 
-您可以使用Adobe Campaign以外的工具匯出和匯入字元字串以翻譯字元。
+可以使用Adobe Campaign以外的工具导出和导入字符串以翻译它们。
 
 >[!CAUTION]
 >
->匯出字串後，請勿使用整合工具執行任何翻譯。 當您重新匯入翻譯時，這會導致衝突，並且這些翻譯將會遺失。
+>导出字符串后，请勿使用集成工具执行任何翻译。 当您重新导入翻译时，这会导致冲突，并且这些翻译将丢失。
 
-### 匯出檔案 {#exporting-files}
+### 导出文件 {#exporting-files}
 
-1. 選取您要匯出其字串的Web應用程式，按一下滑鼠右鍵，然後選取 **[!UICONTROL Actions > Export strings for translation...]**
+1. 选择要导出其字符串的Web应用程序，单击鼠标右键，然后选择 **[!UICONTROL Actions > Export strings for translation...]**
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
-1. 選取 **[!UICONTROL Export strategy]** ：
+1. 选择 **[!UICONTROL Export strategy]** ：
 
-   * **[!UICONTROL One file per language]**：匯出作業會針對每種翻譯語言產生一個檔案。 每個檔案對於所有選取的Web應用程式都是通用的。
-   * **[!UICONTROL One file per Web application]**：匯出作業會針對每個選取的Web應用程式產生一個檔案。 每個檔案都會包含所有翻譯語言。
-
-      >[!NOTE]
-      >
-      >此型別的匯出不適用於XLIFF匯出。
-
-   * **[!UICONTROL One file per language and per Web application]**：匯出將會產生數個檔案。 每個檔案將包含每個網頁應用程式的一種翻譯語言。
-   * **[!UICONTROL One file for all]**：匯出將會為所有網頁應用程式產生單一多語言檔案。 它會包含所有選定網頁應用程式的所有翻譯語言。
+   * **[!UICONTROL One file per language]**：导出操作将为每种翻译语言生成一个文件。 每个文件对所有选定的Web应用程序都是通用的。
+   * **[!UICONTROL One file per Web application]**：导出操作将为每个选定的Web应用程序生成一个文件。 每个文件都将包含所有翻译语言。
 
       >[!NOTE]
       >
-      >此型別的匯出不適用於XLIFF匯出。
+      >此类型的导出不适用于XLIFF导出。
 
-1. 然後選取 **[!UICONTROL Target folder]** 將記錄檔案的位置。
-1. 選取檔案格式( **[!UICONTROL CSV]** 或 **[!UICONTROL XLIFF]** )並按一下 **[!UICONTROL Start]**.
+   * **[!UICONTROL One file per language and per Web application]**：导出将生成多个文件。 每个文件将包含每个Web应用程序的一种翻译语言。
+   * **[!UICONTROL One file for all]**：导出将为所有Web应用程序生成一个多语言文件。 它将包含所有选定Web应用程序的所有翻译语言。
+
+      >[!NOTE]
+      >
+      >此类型的导出不适用于XLIFF导出。
+
+1. 然后，选择 **[!UICONTROL Target folder]** 将记录文件的位置。
+1. 选择文件格式( **[!UICONTROL CSV]** 或 **[!UICONTROL XLIFF]** )，然后单击 **[!UICONTROL Start]**.
 
 ![](assets/s_ncs_admin_survey_trad_export_start.png)
 
 >[!NOTE]
 >
->匯出檔案的名稱會自動產生。 如果多次執行相同的匯出，則會以新檔案取代現有檔案。 如果您需要保留先前的檔案，請變更 **[!UICONTROL Target folder]** ，然後按一下 **[!UICONTROL Start]** 以再次執行匯出。
+>导出文件的名称会自动生成。 如果多次执行相同的导出，则将用新文件替换现有文件。 如果需要保留以前的文件，请更改 **[!UICONTROL Target folder]** ，然后单击 **[!UICONTROL Start]** 以运行导出。
 
-當您匯出檔案時 **CSV格式**，每種語言都會連結至狀態和核准狀態。 此 **核准？** 欄可讓您核准翻譯。 此欄可能包含值 **是** 或 **否**. 至於整合式編輯器(請參閱 [在編輯器中管理翻譯](#managing-translations-in-the-editor))，則核准翻譯為選用，不會阻礙此程式。
+在中导出文件时 **CSV格式**，每种语言均链接到状态和审批状态。 此 **批准？** 列允许您批准翻译。 此列可能包含值 **是** 或 **否**. 至于集成编辑器(请参阅 [在编辑器中管理翻译](#managing-translations-in-the-editor))，批准翻译是可选的，不会阻止该流程。
 
-### 匯入檔案 {#importing-files}
+### 正在导入文件 {#importing-files}
 
-外部翻譯完成後，您可以匯入已翻譯的檔案。
+外部翻译完成后，您可以导入已翻译的文件。
 
-1. 前往Web應用程式清單，按一下滑鼠右鍵，然後選取 **[!UICONTROL Actions > Import translated strings...]**
+1. 转到Web应用程序列表，右键单击，然后选择 **[!UICONTROL Actions > Import translated strings...]**
 
    >[!NOTE]
    >
-   >不需要選取翻譯所關心的Web應用程式。 將游標置於Web應用程式清單上的任何位置。
+   >无需选择翻译涉及的Web应用程序。 将光标放置在Web应用程序列表上的任意位置。
 
    ![](assets/s_ncs_admin_survey_trad_import.png)
 
-1. 選取要匯入的檔案，然後按一下 **[!UICONTROL Upload]**.
+1. 选择要导入的文件，然后单击 **[!UICONTROL Upload]**.
 
    ![](assets/s_ncs_admin_survey_trad_import_start.png)
 
 >[!NOTE]
 >
->外部翻譯的優先順序一律高於內部翻譯。 如果發生衝突，內部翻譯將由外部翻譯覆寫。
+>外部翻译总是比内部翻译更重要。 如果发生冲突，内部翻译将由外部翻译覆盖。
 
-## 變更表單顯示語言 {#changing-forms-display-language}
+## 更改表单显示语言 {#changing-forms-display-language}
 
-網路表單會以中指定的預設語言顯示 **[!UICONTROL Localization]** Web應用程式屬性的索引標籤。 若要變更語言，您必須在URL的結尾新增下列字元(其中 **xx** 是語言的符號)：
+Web窗体以中指定的默认语言显示 **[!UICONTROL Localization]** 选项卡。 要更改语言，您必须在URL末尾添加以下字符(其中 **xx** 是语言的符号)：
 
 ```
 ?lang=xx
 ```
 
-語言是URL的第一個或唯一引數。 例如： **https://myserver/webApp/APP34**
+语言是URL的第一个参数或唯一参数。 例如： **https://myserver/webApp/APP34**
 
 ```
 &lang=xx
 ```
 
-如果URL中的語言之前還有其他引數。 例如： **https://myserver/webApp/APP34?status=1&amp;lang=en**
+如果URL中的语言之前还有其他参数。 例如： **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
-以下列出預設可用的翻譯語言和字典。
+下面列出了默认可用的翻译语言和词典。
 
-**預設系統字典**：某些語言包含預設字典，其中包含系統字串的翻譯。 有關詳細資訊，請參閱 [轉譯系統字串](#translating-the-system-strings).
+**默认系统词典**：某些语言包含默认词典，其中包含系统字符串的翻译。 有关更多信息，请参阅 [翻译系统字符串](#translating-the-system-strings).
 
-**行事曆管理**：網頁應用程式的頁面可包含用於輸入日期的日曆。 依預設，此行事曆提供數種語言版本（翻譯的天數、日期格式）。
+**日历管理**：Web应用程序的页面可以包含用于输入日期的日历。 默认情况下，此日历提供多种语言版本（翻译的天数、日期格式）。
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>語言（符號）</strong><br /> </td> 
-   <td> <strong>預設系統字典</strong><br /> </td> 
-   <td> <strong>行事曆管理</strong><br /> </td> 
+   <td> <strong>语言（符号）</strong><br /> </td> 
+   <td> <strong>默认系统词典</strong><br /> </td> 
+   <td> <strong>日历管理</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 德文(de)<br /> </td> 
+   <td> 德语(de)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 英文(en)<br /> </td> 
+   <td> 英语(en)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 英文（美國） (en_US)<br /> </td> 
+   <td> 英语（美国） (en_US)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 英文（英國） (en_GB)<br /> </td> 
+   <td> 英语（英国）(en_GB)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 阿拉伯文(ar)<br /> </td> 
+   <td> 阿拉伯语(ar)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -216,192 +216,192 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 韓文(ko)<br /> </td> 
+   <td> 朝鲜语(ko)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 丹麥文(da)<br /> </td> 
+   <td> 丹麦语(da)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 西班牙文(es)<br /> </td> 
+   <td> 西班牙语(es)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 愛沙尼亞文(et)<br /> </td> 
+   <td> 爱沙尼亚语(et)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 芬蘭文(fi)<br /> </td> 
+   <td> 芬兰语(fi)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 法文(fr)<br /> </td> 
+   <td> 法语(fr)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 法文（比利時） (fr_BE)<br /> </td> 
+   <td> 法语（比利时） (fr_BE)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 法文（法國） (fr_FR)<br /> </td> 
+   <td> 法语（法国） (fr_FR)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 希臘文(el)<br /> </td> 
+   <td> 希腊语(el)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 希伯來文(he)<br /> </td> 
+   <td> 希伯来语(he)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 匈牙利文(hu)<br /> </td> 
+   <td> 匈牙利语(hu)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 印尼文(id)<br /> </td> 
+   <td> 印度尼西亚语(id)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 愛爾蘭文(ga)<br /> </td> 
+   <td> 爱尔兰语(ga)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 義大利文(it)<br /> </td> 
+   <td> 意大利语(it)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 義大利文（義大利） (it_IT)<br /> </td> 
+   <td> 意大利语（意大利） (it_IT)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 義大利文（瑞士） (it_CH)<br /> </td> 
+   <td> 意大利语（瑞士） (it_CH)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 日文(ja)<br /> </td> 
+   <td> 日语(ja)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 拉脫維亞文(lv)<br /> </td> 
+   <td> 拉脱维亚语(lv)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 立陶宛文(lt)<br /> </td> 
+   <td> 立陶宛语(lt)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 馬爾他文(mt)<br /> </td> 
+   <td> 马耳他语(mt)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 荷蘭文(nl)<br /> </td> 
+   <td> 荷兰语(nl)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 荷蘭文（比利時） (nl_BE)<br /> </td> 
+   <td> 荷兰语（比利时） (nl_BE)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 荷蘭文（荷蘭） (nl_NL)<br /> </td> 
+   <td> 荷兰语（荷兰） (nl_NL)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 挪威文（挪威） (no_NO)<br /> </td> 
+   <td> 挪威语（挪威）(no_NO)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 波蘭文(pl)<br /> </td> 
+   <td> 波兰语(pl)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 葡萄牙文(pt)<br /> </td> 
+   <td> 葡萄牙语(pt)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 葡萄牙文（巴西） (pt_BR)<br /> </td> 
+   <td> 葡萄牙语（巴西）(pt_BR)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 葡萄牙文（葡萄牙） (pt_PT)<br /> </td> 
+   <td> 葡萄牙语（葡萄牙）(pt_PT)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 俄文(ru)<br /> </td> 
+   <td> 俄语(ru)<br /> </td> 
    <td> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 斯洛維尼亞文(sl)<br /> </td> 
+   <td> 斯洛文尼亚语(sl)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 斯洛伐克文(sk)<br /> </td> 
+   <td> 斯洛伐克语(sk)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 瑞典文(sv)<br /> </td> 
+   <td> 瑞典语(sv)<br /> </td> 
    <td> 是<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
-   <td> 瑞典文（芬蘭） (sv_FI)<br /> </td> 
+   <td> 瑞典语（芬兰） (sv_FI)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 瑞典文（瑞典） (sv_SE)<br /> </td> 
+   <td> 瑞典语（瑞典） (sv_SE)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 捷克文(cs)<br /> </td> 
+   <td> 捷克语(cs)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 泰文(th)<br /> </td> 
+   <td> 泰语(th)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 越南文(vi)<br /> </td> 
+   <td> 越南语(vi)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 瓦隆文(wa)<br /> </td> 
+   <td> 瓦卢翁(wa)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -410,70 +410,70 @@ Adobe Campaign會收集中定義的欄位和字串標籤 **[!UICONTROL Texts]** 
 
 >[!NOTE]
 >
->若要新增預設語言以外的其他語言，請參閱 [新增翻譯語言](#adding-a-translation-language)
+>要添加默认提供的语言以外的其他语言，请参阅 [添加翻译语言](#adding-a-translation-language)
 
-## 範例：以數種語言顯示Web應用程式 {#example--displaying-a-web-application-in-several-languages}
+## 示例：以多种语言显示Web应用程序 {#example--displaying-a-web-application-in-several-languages}
 
-下列網路表單提供四種語言版本：英文、法文、德文和西班牙文。 字元字串已透過 **[!UICONTROL Translation]** 網頁表單的索引標籤。 由於預設語言為英文，因此發佈調查表時，請使用標準URL以英文顯示。
+下列Web表格有四种语言版本：英语、法语、德语和西班牙语。 字符串已全部通过 **[!UICONTROL Translation]** Web窗体的选项卡。 由于默认语言是英语，因此发布调查时，请使用标准URL以英语显示。
 
 ![](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
-新增 **？lang=fr** 在URL結尾以法文顯示：
+添加 **？lang=fr** 在URL末尾以法文显示：
 
 >[!NOTE]
 >
->每種語言的符號清單詳見 [變更表單顯示語言](#changing-forms-display-language).
+>每种语言的符号列表详见 [更改表单显示语言](#changing-forms-display-language).
 
 ![](assets/s_ncs_admin_survey_trad_sample_en.png)
 
-您可以新增 **？lang=es** 或 **？lang=de** 以西班牙文或德文顯示。
+您可以添加 **？lang=es** 或 **？lang=de** 以西班牙文或德文显示。
 
 >[!NOTE]
 >
->如果此Web應用程式已使用其他引數，請新增 **&amp;lang=**.\
+>如果此Web应用程序已经使用了其他参数，请添加 **&amp;lang=**.\
 >例如： **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
-## 進階翻譯設定 {#advanced-translation-configuration}
+## 高级翻译配置 {#advanced-translation-configuration}
 
 >[!CAUTION]
 >
->本區段僅供專家使用者使用。
+>本部分仅供专家用户使用。
 
-### 轉譯系統字串 {#translating-the-system-strings}
+### 翻译系统字符串 {#translating-the-system-strings}
 
-系統字串是所有Web應用程式所使用的現成可用的字元字串。 例如： **[!UICONTROL Next]** ， **[!UICONTROL Previous]**， **[!UICONTROL Approve]** 按鈕， **[!UICONTROL Loading]** 訊息等 依預設，某些語言會包含字典，其中包含這些字串的翻譯。 有關語言的詳細清單，請參閱 [變更表單顯示語言](#changing-forms-display-language).
+系统字符串是所有Web应用程序使用的现成字符串。 例如： **[!UICONTROL Next]** ， **[!UICONTROL Previous]**， **[!UICONTROL Approve]** 按钮， **[!UICONTROL Loading]** 消息等 默认情况下，某些语言包含包含这些字符串翻译的词典。 有关语言的详细列表，请参见 [更改表单显示语言](#changing-forms-display-language).
 
-如果您將Web應用程式翻譯成系統字典未翻譯的語言，則會出現警告訊息，通知您缺少部分翻譯。
+如果您将Web应用程序翻译成未翻译系统词典的语言，则会显示一条警告消息，通知您缺少某些翻译。
 
 ![](assets/s_ncs_admin_survey_trad_error.png)
 
-若要新增語言，請套用下列步驟：
+要添加语言，请应用以下步骤：
 
-1. 前往Adobe Campaign樹並按一下 **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]** .
-1. 在視窗的上半部分，選取要翻譯的系統字串，然後按一下 **[!UICONTROL Add]** 位於下方。
+1. 转到Adobe Campaign树并单击 **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]** .
+1. 在窗口的上半部分，选择要翻译的系统字符串，然后单击 **[!UICONTROL Add]** 在下面部分。
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
 
-1. 選取翻譯語言並輸入字串的翻譯。 您可以核取 **[!UICONTROL Translation approved]** 選項。
+1. 选择翻译语言并输入字符串的翻译。 您可以通过选中 **[!UICONTROL Translation approved]** 选项。
 
    ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
    >[!NOTE]
    >
-   >翻譯核准為選用，不會阻礙此程式。
+   >翻译审批是可选的，不会阻止该流程。
 
 >[!CAUTION]
 >
->請勿刪除現成可用的系統字串。
+>请勿删除现成的系统字符串。
 
-### 新增翻譯語言 {#adding-a-translation-language}
+### 添加翻译语言 {#adding-a-translation-language}
 
-若要將Web應用程式翻譯成預設語言以外的語言(請參閱 [變更表單顯示語言](#changing-forms-display-language))，您需要新增翻譯語言。
+要将Web应用程序翻译成默认应用程序以外的语言，请参阅 [更改表单显示语言](#changing-forms-display-language))，您将需要添加新的翻译语言。
 
-1. 按一下 **[!UICONTROL Administration > Platform > Enumerations]** Adobe Campaign樹狀結構的節點，並選取 **[!UICONTROL Languages available for translation]** 從清單中。 可用翻譯的清單會顯示在視窗的下方。
+1. 单击 **[!UICONTROL Administration > Platform > Enumerations]** Adobe Campaign节点，然后选择 **[!UICONTROL Languages available for translation]** 从名单上。 可用翻译的列表显示在窗口的下部。
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
-1. 按一下 **[!UICONTROL Add]** 按鈕，然後輸入 **[!UICONTROL Internal name]**， **[!UICONTROL Label]** 和影像的識別碼（標幟）。 若要新增影像，請聯絡您的管理員。
+1. 单击 **[!UICONTROL Add]** 按钮，然后输入 **[!UICONTROL Internal name]**， **[!UICONTROL Label]** 图像的和标识符（标记）。 要添加新图像，请联系您的管理员。
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)

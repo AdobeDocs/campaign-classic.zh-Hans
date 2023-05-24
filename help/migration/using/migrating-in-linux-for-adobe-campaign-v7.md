@@ -22,25 +22,25 @@ ht-degree: 0%
 
 Linux中的迁移步骤如下：
 
-1. 停止所有服务 —  [了解更多](#service-stop).
-1. 保存数据库 —  [了解更多](#back-up-the-database).
-1. 卸载以前的Adobe Campaign版本包 —  [了解更多](#uninstalling-adobe-campaign-previous-version-packages).
-1. 迁移平台 —  [了解更多](#deploying-adobe-campaign-v7).
-1. 重新启动服务 —  [了解更多](#re-starting-services).
+1. 停止所有服务 —  [了解详情](#service-stop).
+1. 保存数据库 —  [了解详情](#back-up-the-database).
+1. 卸载以前的Adobe Campaign版本包 —  [了解详情](#uninstalling-adobe-campaign-previous-version-packages).
+1. 迁移平台 —  [了解详情](#deploying-adobe-campaign-v7).
+1. 重新启动服务 —  [了解详情](#re-starting-services).
 
 ## 服务停止 {#service-stop}
 
-首先，在所有相关计算机上停止所有具有数据库访问权限的进程。
+首先，停止在所有相关计算机上访问数据库的所有进程。
 
-1. 登录方式 **根**.
-1. 使用重定向模块的所有服务器(**webmdl** 服务)。 对于Apache，运行以下命令：
+1. 登录身份 **根**.
+1. 所有使用重定向模块的服务器(**webmdl** （服务）需要停止。 对于Apache，请运行以下命令：
 
    ```
    /etc/init.d/apache2 stop
    ```
 
-1. 再次登录为 **根**.
-1. 在所有服务器上停止Adobe Campaign以前的版本服务。
+1. 再次登录身份 **根**.
+1. 停止所有服务器上的Adobe Campaign早期版本服务。
 
    ```
    /etc/init.d/nlserver6 stop
@@ -61,15 +61,15 @@ Linux中的迁移步骤如下：
    ps waux | grep nlserver
    ```
 
-   活动进程的列表及其ID(PID)会显示。
+   将显示活动进程的列表及其ID (PID)。
 
-1. 如果一个或多个Adobe Campaign进程在几分钟后仍处于活动状态或被阻止状态，请终止它们。
+1. 如果数分钟后一个或多个Adobe Campaign进程仍处于活动状态或受阻，请将其终止。
 
    ```
    killall nlserver
    ```
 
-1. 如果某些进程在几分钟后仍处于活动状态，您可以使用命令强制它们关闭：
+1. 如果某些进程在几分钟后仍处于活动状态，您可以使用命令强制关闭它们：
 
    ```
    killall -9 nlserver
@@ -156,7 +156,7 @@ Linux中的迁移步骤如下：
 -->
 
 1. 备份Adobe Campaign数据库。
-1. 登录方式 **奈奥兰** 并备份 **nl6** 目录中使用以下命令：
+1. 登录身份 **neolane** 并备份 **nl6** 目录：
 
    ```
    su - neolane
@@ -165,7 +165,7 @@ Linux中的迁移步骤如下：
 
    >[!IMPORTANT]
    >
-   >为防范这种情况，我们建议您将 **nl6.back** 文件夹，并将其保存到服务器以外的安全位置。
+   >为以防万一，我们建议您压缩 **nl6.back** 文件夹并将其保存到服务器以外的安全位置。
 
 ## 卸载Adobe Campaign以前的版本包 {#uninstalling-adobe-campaign-previous-version-packages}
 
@@ -211,39 +211,39 @@ Linux中的迁移步骤如下：
 
 -->
 
-本节将介绍如何卸载Adobe Campaign v6.1包。
+本部分说明如何卸载Adobe Campaign v6.1软件包。
 
-1. 登录方式 **根**.
-1. 使用以下命令标识已安装的Adobe Campaign包。
+1. 登录身份 **根**.
+1. 使用以下命令标识安装的Adobe Campaign软件包。
 
-   * 在 **德比安**:
+   * In **Debian**：
 
       ```
       dpkg -l | grep nl
       ```
 
-      将显示已安装包的列表：
+      此时将显示已安装软件包的列表：
 
       ```
       ii  nlserver6                       XXXX                     nlserver6-XXXX
       ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
       ```
 
-   * 在 **红帽**:
+   * In **Red Hat**：
 
       ```
       rpm -qa | grep nl
       ```
 
-1. 卸载Adobe Campaign v6包。
+1. 卸载Adobe Campaign v6软件包。
 
-   * 在 **德比安**:
+   * In **Debian**：
 
       ```
       dpkg --purge nlserver6 nlthirdparty6
       ```
 
-   * 在 **红帽**:
+   * In **Red Hat**：
 
       ```
       rprm -ev nlserver6 nlthirdparty6
@@ -251,7 +251,7 @@ Linux中的迁移步骤如下：
 
 ## 部署Adobe Campaign v7 {#deploying-adobe-campaign-v7}
 
-以下是部署v7的步骤。
+以下是部署v7的过程。
 
 <!--
 
@@ -464,29 +464,29 @@ To deploy Adobe Campaign, apply the following steps:
 
 -->
 
-部署Adobe Campaign包含两个阶段：
+部署Adobe Campaign涉及两个阶段：
 
-* 安装Adobe Campaign v7包：必须对每台服务器执行此操作。
+* 安装Adobe Campaign v7包：必须在每台服务器上执行此操作。
 * 升级后：必须在每个实例上启动此命令。
 
 要部署Adobe Campaign，请应用以下步骤：
 
-1. 使用以下命令安装最新的Adobe Campaign v7包：
+1. 使用以下命令安装最新的Adobe Campaign v7软件包：
 
-   * 在 **德比安**:
+   * In **Debian**：
 
       ```
       dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
-   * 在 **红帽**:
+   * In **Red Hat**：
 
       ```
       rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
       ```
    >[!IMPORTANT]
    >
-   >必须先成功安装包，然后才能继续执行下一步。
+   >在继续下一步之前，您必须成功安装包。
 
    >[!NOTE]
    >
@@ -500,9 +500,9 @@ To deploy Adobe Campaign, apply the following steps:
 
    >[!NOTE]
    >
-   >有关如何在Linux中安装Adobe Campaign的详细信息，请参阅 [此部分](../../installation/using/installing-campaign-standard-packages.md).
+   >有关如何在Linux中安装Adobe Campaign的更多信息，请参阅 [本节](../../installation/using/installing-campaign-standard-packages.md).
 
-1. 转到 **nl6.back** 备份文件夹，并复制（覆盖）每个实例的配置文件和子文件夹。 登录方式 **奈奥兰** 并运行以下命令：
+1. 转到 **nl6.back** 备份文件夹并复制（覆盖）每个实例的配置文件和子文件夹。 登录身份 **neolane** 并运行以下命令：
 
    ```
    su - neolane
@@ -519,7 +519,7 @@ To deploy Adobe Campaign, apply the following steps:
    nlserver config -reload
    ```
 
-1. 使用以下命令启动升级后进程(仍为 **奈奥兰**):
+1. 使用以下命令启动升级后过程(仍作为 **neolane**)：
 
    ```
    su - neolane
@@ -598,7 +598,7 @@ If you are migrating from v6.02 or earlier, you must configure your security zon
 
 ## 重新启动服务 {#re-starting-services}
 
-以下是重新启动服务的步骤。
+以下是重新启动服务的过程。
 
 <!--
 
@@ -666,13 +666,13 @@ Fully test the new installation, check that it does not regress and make sure th
 
 -->
 
-在以下每台服务器上启动Apache和Adobe Campaign服务：
+在下列每台服务器上启动Apache和Adobe Campaign服务：
 
 1. 跟踪和重定向服务器。
 1. 中间源服务器.
 1. 营销服务器。
 
-完全测试新安装，检查其是否未回退，并确保一切正常。
+全面测试新安装，检查它是否未退回，并确保一切正常运行。
 
 <!--
 

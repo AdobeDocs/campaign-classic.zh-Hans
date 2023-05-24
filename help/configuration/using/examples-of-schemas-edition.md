@@ -16,9 +16,9 @@ ht-degree: 2%
 
 ## 扩展表 {#extending-a-table}
 
-扩展 **nms:recipient** 架构收件人表，请应用以下过程：
+要扩展 **nms：recipient** 模式收件人表，请按照以下步骤进行操作：
 
-1. 创建扩展架构(**cus:extension**):
+1. 创建扩展架构(**cus：extension**)，并使用以下数据：
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -39,13 +39,13 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   在本例中，索引字段(**保真度**)，并且 **位置** 元素(已存在于 **nms:recipient** 模式)以枚举字段(**面积**)。
+   在此示例中，索引字段(**保真度**)，并且 **位置** 元素(已存在于 **nms：recipient** schema)后附加一个枚举字段(**区域**)。
 
    >[!IMPORTANT]
    >
-   >请记住，在 **extendedSchema** 属性来引用扩展架构。
+   >请记得添加 **extendedschema** 属性，以引用扩展架构。
 
-1. 检查扩展架构是否为 **nms:recipient** 架构，并且存在附加数据：
+1. 检查扩展架构是否 **nms：recipient** 架构中是否存在其他数据：
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -71,7 +71,7 @@ ht-degree: 2%
    </schema>
    ```
 
-   从数据库更新向导生成的SQL脚本如下所示：
+   通过数据库更新向导生成的SQL脚本如下所示：
 
    ```
    ALTER TABLE NmsRecipient ADD iFidelity INTEGER;
@@ -83,9 +83,9 @@ ht-degree: 2%
 
 ## 链接的收藏集表 {#linked-collection-table}
 
-本节介绍如何使用基数1-N创建链接到收件人表的订单表。
+本节介绍如何创建链接到基数为1-N的收件人表的订单表。
 
-订单表来源架构：
+订单表源架构：
 
 ```
 <srcSchema label="Order" name="order" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -100,9 +100,9 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-表类型为 **奥托普** 以创建自动生成的主密钥，该主密钥将用于链接到收件人表的连接。
+表类型为 **autopk** 以创建一个自动生成的主键，供链接连接到收件人表使用。
 
-生成的架构：
+已生成架构：
 
 ```
 <schema label="Order" mappingType="sql" name="order" namespace="cus" xtkschema="xtk:schema">  
@@ -144,15 +144,15 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 >[!NOTE]
 >
->在脚本末尾的SQL命令INSERT INTO允许您插入标识符记录集为0以模拟外连接。
+>SQL命令INSERT INTO位于脚本末尾，用于插入设置为0的标识符记录，以模拟外连接。
 
 ## 扩展表 {#extension-table}
 
-扩展表允许您扩展基数1-1链接表中现有表的内容。
+扩展表允许您扩展链接的基数1-1表中现有表的内容。
 
-扩展表的用途是避免对表中支持的字段数设置限制，或优化数据所占用的空间（按需使用）。
+扩展表的目的是避免对表中支持的字段数的限制，或者优化数据占用的空间（按需使用）。
 
-创建扩展表模式(**cus:feature**):
+创建扩展表架构(**cus：feature**)：
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -164,7 +164,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 </srcSchema>
 ```
 
-在收件人表上创建扩展模式以添加基数1-1链接：
+在收件人表上创建扩展模式以添加基数1-1的链接：
 
 ```
 <srcSchema extendedSchema="nms:recipient" label="Recipient" mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -176,7 +176,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 >[!NOTE]
 >
->收件人表和扩展表之间链接的定义必须使用包含外键的架构进行填充。
+>收件人表和扩展表之间链接的定义必须从包含外键的架构中填充。
 
 用于创建扩展表的SQL脚本如下所示：
 
@@ -186,7 +186,7 @@ CREATE UNIQUE INDEX CusFeature_id ON CusFeature(iFeatureId);
 INSERT INTO CusFeature (iFeatureId) VALUES (0); 
 ```
 
-收件人表SQL更新脚本如下所示：
+收件人表SQL更新脚本如下：
 
 ```
 ALTER TABLE NmsRecipient ADD iFeatureId INTEGER;
@@ -198,11 +198,11 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 ## 溢出表 {#overflow-table}
 
-溢出表是扩展表（基数1-1），但在溢出表的模式中填充了指向要扩展表的链接声明。
+溢出表是扩展表（基数1-1），但指向要扩展的表的链接的声明填充在溢出表的模式中。
 
-溢出表包含要扩展的表的外键。 因此，不会修改要扩展的表。 两个表之间的关系是要扩展的表的主键的值。
+溢出表包含要扩展的表的外键。 因此，不会修改要扩展的表。 两个表之间的关系是要扩展的表的主键值。
 
-创建溢出表模式(**cus:overflow**):
+创建溢出表模式(**cus：overflow**)：
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -221,7 +221,7 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 >[!NOTE]
 >
->溢出表的主键是指向要扩展的表的链接（示例中为“nms:recipient”模式）。
+>溢出表的主键是指向要扩展的表的链接（在本例中为“nms：recipient”模式）。
 
 表创建SQL脚本如下所示：
 
@@ -232,9 +232,9 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 ## 关系表 {#relationship-table}
 
-使用关系表可以将两个表与基数N-N链接起来。此表仅包含要链接的表的外键。
+关系表允许您链接两个具有基数N-N的表。此表只包含要链接的表的外键。
 
-组之间关系表的示例(**nms:group**)和收件人(**nms:recipient**)。
+组之间关系表的示例(**nms：group**)和收件人(**nms：recipient**)。
 
 关系表的源架构：
 
@@ -252,7 +252,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 </srcSchema>
 ```
 
-生成的架构如下所示：
+生成的架构如下：
 
 ```
 <schema mappingType="sql" name="rcpGrpRel" namespace="cus" xtkschema="xtk:schema">  
@@ -298,11 +298,11 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 ## 用例：将字段链接到现有引用表 {#uc-link}
 
-此用例演示了如何使用现有引用表作为内置Adobe Campaign枚举机制（enum、userEnum或dbEnum）的替代方法。
+此用例演示如何使用现有引用表作为内置Adobe Campaign枚举机制（enum、userEnum或dbEnum）的替代方案。
 
-您还可以将现有引用表用作架构中的枚举。 这可以通过在表和参考表之间创建链接并添加属性来实现 **displayAsField=&quot;true&quot;**.
+您还可以在架构中使用现有引用表作为明细列表。 这可以通过在表和引用表之间创建链接以及添加属性来实现 **displayAsField=&quot;true&quot;**.
 
-在本例中，参考表包含银行名称和标识符列表：
+在此示例中，参考表包含银行名称和标识符的列表：
 
 ```
 <srcSchema entitySchema="xtk:srcSchema" img="cus:bank16x16.png" label="Bank" mappingType="sql" name="bank" namespace="cus"
@@ -324,18 +324,18 @@ xtkschema="xtk:srcSchema">
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
 ```
 
-用户界面不会显示链接，而会显示字段。 当用户选择该字段时，他们可以从参考表中选择一个值或使用自动完成功能。
+用户界面不会显示链接，而是显示字段。 当用户选取该字段时，可以从参照表中选取值或使用自动完成功能。
 
 ![](assets/schema-edition-ex.png)
 
-* 要使其自动完成，必须在引用表中定义计算字符串。
+* 为了使其自动完成，必须在参考表中定义计算字符串。
 
-* 添加 **noDbIndex=&quot;true&quot;** 属性，以防止Adobe Campaign根据链接源表中存储的值创建索引。
+* 添加 **noDbIndex=&quot;true&quot;** 属性，以防止Adobe Campaign对链接源表中存储的值创建索引。
 
 ## 相关主题
 
-* [使用枚举](../../platform/using/managing-enumerations.md)
+* [使用明细列表](../../platform/using/managing-enumerations.md)
 
-* [Campaign模式快速入门](../../configuration/using/about-schema-edition.md)
+* [Campaign架构入门](../../configuration/using/about-schema-edition.md)
 
 * [更新数据库结构](../../configuration/using/updating-the-database-structure.md)

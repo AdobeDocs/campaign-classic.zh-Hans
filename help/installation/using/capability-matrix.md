@@ -15,9 +15,9 @@ ht-degree: 28%
 
 
 
-Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性及其用法取决于安装的部署类型。 本文将详细介绍完全托管(Managed Services)部署与内部部署之间某些功能的主要区别。
+Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性及其使用方式取决于安装的部署类型。 本文详细介绍了完全托管(Managed Services)部署与内部部署之间在某些功能上存在的主要差异。
 
-本页显示托管(Managed Services)部署与内部部署之间的主要差异。 混合部署的特性取决于由Adobe托管并在您的场所中托管的元素。
+本页显示了托管(Managed Services)部署与内部部署之间的主要区别。 混合部署的特定性取决于Adobe托管并在您的内部部署中托管的元素。
 
 介绍了不同的托管模型 [在此部分中](../../installation/using/hosting-models.md).
 
@@ -25,27 +25,27 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 
 | 功能 | 托管 | 混合 | 内部部署 | 详细信息 |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 配置 Campaign 服务器 | 按需 | 可用 | 可用 | [了解详情](../../installation/using/the-server-configuration-file.md) |
-| 电子邮件密件抄送 | 按需 | 按需 | 可用 | [了解详情](../../installation/using/email-archiving.md) |
-| 管理消息中心执行实例 | 按需 | 按需 | 可用 | [了解详情](../../message-center/using/about-transactional-messaging.md) |
-| 管理中间源平台 | 按需 | 按需 | 可用 | [了解详情](../../installation/using/mid-sourcing-server.md) |
-| 通过Litmus呈现收件箱 | 按需 | 按需 | 可用 | [了解详情](../../delivery/using/inbox-rendering.md) |
-| 与IMS集成(Adobe ID) | 按需 | 按需 | 按需 | [了解详情](../../integrations/using/about-adobe-id.md) |
-| 加密/解密用于文件传输的数据 | 按需 | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
-| 压缩/解压缩文件 | 按需 | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
-| 域名委派 | 按需 | 按需 | 不可用 | [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans) |
-| 安装SpamAssassin | 按需 | 可用 | 可用 | [了解详情](../../delivery/using/spamassassin.md) |
-| 访问投放能力报告 | 可用 | 按需 | 可用 | [了解详情](../../delivery/using/monitoring-deliverability.md) |
+| 配置 Campaign 服务器 | On-demand | 可用 | 可用 | [了解详情](../../installation/using/the-server-configuration-file.md) |
+| 电子邮件密件抄送 | On-demand | On-demand | 可用 | [了解详情](../../installation/using/email-archiving.md) |
+| 管理消息中心执行实例 | On-demand | On-demand | 可用 | [了解详情](../../message-center/using/about-transactional-messaging.md) |
+| 管理中间源平台 | On-demand | On-demand | 可用 | [了解详情](../../installation/using/mid-sourcing-server.md) |
+| 通过Litmus呈现收件箱 | On-demand | On-demand | 可用 | [了解详情](../../delivery/using/inbox-rendering.md) |
+| 与IMS集成(Adobe ID) | On-demand | On-demand | On-demand | [了解详情](../../integrations/using/about-adobe-id.md) |
+| 加密/解密用于文件传输的数据 | On-demand | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
+| 压缩/解压缩文件 | On-demand | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
+| 域名委派 | On-demand | On-demand | 不可用 | [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans) |
+| 安装SpamAssassin | On-demand | 可用 | 可用 | [了解详情](../../delivery/using/spamassassin.md) |
+| 访问可投放性报告 | 可用 | On-demand | 可用 | [了解详情](../../delivery/using/monitoring-deliverability.md) |
 | 配置LDAP身份验证 | 不可用 | 可用 | 可用 | [了解详情](../../installation/using/connecting-through-ldap.md) |
 
 
 ## 联合数据访问{#fda}
 
-Adobe Campaign提供 **联合数据访问** (FDA)选项，用于处理存储在一个或多个外部数据库中的信息：您无需更改Adobe Campaign数据的结构即可访问外部数据。 [了解详情](../../installation/using/about-fda.md)
+Adobe Campaign提供 **联合数据访问** (FDA)选项，用于处理存储在一个或多个外部数据库中的信息：无需更改Adobe Campaign数据的结构即可访问外部数据。 [了解详情](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->兼容的外部数据库系统取决于您的托管模型。 在 [Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md).
+>兼容的外部数据库系统取决于您的托管模型。 了解详情，请参阅 [Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md).
 
 **另请参阅**
 

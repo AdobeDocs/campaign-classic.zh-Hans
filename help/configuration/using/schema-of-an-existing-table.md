@@ -15,19 +15,19 @@ ht-degree: 10%
 
 ## 概述 {#overview}
 
-当应用程序需要访问现有表、SQL视图或远程数据库中的数据时，请使用以下数据在Adobe Campaign中创建其模式：
+当应用程序需要访问现有表的数据、SQL视图或远程数据库中的数据时，请使用以下数据在Adobe Campaign中创建其模式：
 
-* 表名称：使用&quot;sqltable&quot;属性输入表的名称（使用dblink时的别名），
-* 架构键：引用协调字段，
+* 表的名称：输入具有“sqltable”属性的表的名称（使用dblink时带有别名），
+* 模式键：引用协调字段，
 * 索引：用于生成查询，
-* XML结构中的字段及其位置：仅填写应用程序中使用的字段，
-* 链接：是否与基的其他表存在连接。
+* 字段及其在XML结构中的位置：仅填写应用程序中使用的字段，
+* 链接：如果与基的其他表有连接。
 
 ## 实施 {#implementation}
 
-要创建相应的架构，请应用以下阶段：
+要创建相应的方案，请应用以下阶段：
 
-1. 编辑 **[!UICONTROL Administration>Configuration>Data schemas]** Adobe Campaign树的节点，然后单击 **[!UICONTROL New]** .
+1. 编辑 **[!UICONTROL Administration>Configuration>Data schemas]** Adobe Campaign节点，然后单击 **[!UICONTROL New]** .
 1. 选择 **[!UICONTROL Access data from an existing table or an SQL view]** 选项并单击 **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
@@ -36,11 +36,11 @@ ht-degree: 10%
 
    ![](assets/s_ncs_configuration_select_table.png)
 
-1. 根据您的需求调整架构内容。
+1. 调整架构内容以满足您的需求。
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   架构必须在 `<srcSchema>` 根元素，以便不生成表创建SQL脚本。
+   架构必须使用view=&quot;true&quot;属性填充 `<srcSchema>` 根元素，以便不生成表创建SQL脚本。
 
 **示例** :
 
@@ -57,6 +57,6 @@ ht-degree: 10%
 
 ## 访问外部数据库 {#accessing-an-external-database}
 
-的 **联合数据访问 — FDA** 选项授予您访问存储在外部数据库中的数据的权限。
+此 **联合数据访问 — FDA** 选项使您可以访问存储在外部数据库中的数据。
 
-有关在架构上执行以访问外部数据库中数据的配置，请参见 [本页](../../installation/using/creating-data-schema.md).
+有关对架构进行配置以访问外部数据库中的数据的详情，请参见 [此页面](../../installation/using/creating-data-schema.md).

@@ -6,7 +6,7 @@ exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 ## 内容模型 {#content-model-3}
 
-dbindex:==keyfield
+dbindex：==keyfield
 
 ## 属性 {#attributes-3}
 
 * @_operation（字符串）
 * @applicableIf（字符串）
 * @label（字符串）
-* @name(MNTOKEN)
-* @unique（布尔）
+* @name (MNTOKEN)
+* @unique（布尔型）
 
-## 父母 {#parents-3}
+## 父项 {#parents-3}
 
 `<element>`
 
@@ -42,32 +42,32 @@ dbindex:==keyfield
 
 可以定义多个索引。 一个索引可以引用表的一个或多个字段。 索引声明通常遵循主架构元素的定义。
 
-的顺序 `<keyfield>` 在 `<dbindex>` 非常重要。 第一个 `<keyfield>` 必须是查询主要基于的索引条件。
+的顺序 `<keyfield>` 中定义的元素 `<dbindex>` 非常重要。 第一个 `<keyfield>` 必须是查询所主要依据的索引标准。
 
-数据库中索引的名称是通过连接表的名称和索引的名称来计算的。 例如：在索引创建查询期间索引字段的表名“示例”、命名空间“自定义”、索引名“MyIndex” — >名称：&quot;CusSample_myIndex&quot;。
+通过连接表的名称和索引的名称来计算数据库中索引的名称。 例如：表名“Sample”、命名空间“Cus”、索引名“MyIndex” — >创建索引时索引字段的名称，查询：“CusSample_myIndex”。
 
 ## 属性描述 {#attribute-description-3}
 
-* **_operation（字符串）**:定义在数据库中写入的类型。
+* **操作（字符串）(_O)**：定义在数据库中写入的类型。
 
-   此属性主要用于扩展即装即用架构。
+   此属性主要用于扩展现成的架构。
 
-   可访问的值包括：
+   可访问值包括：
 
-   * &quot;none&quot;:单独协调。 这意味着Adobe Campaign将在不更新元素的情况下恢复该元素，或者在元素不存在时生成错误。
-   * &quot;insertOrUpdate&quot;:使用插入进行更新。 这意味着Adobe Campaign将更新元素，或在元素不存在时创建元素。
-   * &quot;insert&quot;:插入。 这意味着Adobe Campaign将插入元素，而不检查它是否存在。
-   * &quot;update&quot;:更新。 这意味着Adobe Campaign将更新元素，或在元素不存在时生成错误。
-   * &quot;delete&quot;:删除。 这意味着Adobe Campaign将恢复和删除元素。
+   * “无”：仅和解。 这意味着Adobe Campaign将恢复该元素，而不会更新它，如果它不存在，则不会生成错误。
+   * &quot;insertOrUpdate&quot;：使用insertion更新。 这意味着Adobe Campaign将更新元素，如果元素不存在则创建元素。
+   * &quot;insert&quot;： insertion. 这意味着Adobe Campaign将插入元素而不检查元素是否存在。
+   * &quot;update&quot;： update. 这意味着Adobe Campaign将更新元素，如果元素不存在，则生成错误。
+   * &quot;delete&quot;：删除。 这意味着Adobe Campaign将恢复和删除元素。
 
-* **appliableIf（字符串）**:考虑索引的条件 — 接收XTK表达式。
-* **标签（字符串）**:索引标签。
-* **name(MNTOKEN)**:唯一索引名称。
-* **唯一（布尔）**:如果激活了此选项(@unique=&quot;true&quot;)，则属性可保证索引在其整个字段中的唯一性。
+* **applicableIf（字符串）**：考虑索引的条件 — 接收XTK表达式。
+* **标签（字符串）**：索引标签。
+* **名称(MNTOKEN)**：唯一索引名称。
+* **唯一（布尔值）**：如果激活此选项(@unique=&quot;true&quot;)，则属性将保证索引在其字段中的唯一性。
 
 ## 示例 {#examples-3}
 
-在“id”字段上创建索引。 (“@unique”属性位于 `<dbindex>` 在数据库（查询）中创建索引时，元素会触发添加“UNIQUE” SQL关键字。
+在“id”字段上创建索引。 @unique ( `<dbindex>` 在数据库中创建索引时，元素会触发添加“唯一”SQL关键字（查询）。
 
 ```
 <element label="Sample" name="Sample">

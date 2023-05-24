@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Campaign Classic資料庫建議
-description: 資料庫建議
+title: Campaign Classic数据库建议
+description: 数据库建议
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
@@ -19,56 +19,56 @@ ht-degree: 1%
 
 
 
-資料庫伺服器可以在任何指定的作業系統上執行，無論應用程式伺服器使用的作業系統為何，只要它們之間有網路連線即可。
+数据库服务器可以在任何给定的操作系统上运行，而不管应用程序服务器使用的操作系统是什么，只要它们之间有网络连接。
 
-只要可以與Adobe Campaign的不同元件連線，資料庫伺服器的作業系統就並不重要。
+只要可以与Adobe Campaign的不同组件建立连接，数据库服务器的操作系统就并不重要。
 
-同時請檢查 [資料庫存取層](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) 區段。
+另外请查看 [数据库访问层](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) 部分。
 
 ## Microsoft SQL 服务器 {#microsoft-sql-server}
 
-原生使用者端必須安裝在Adobe Campaign應用程式伺服器上。
+必须在Adobe Campaign应用程序服务器上安装本机客户端。
 
-您可以透過ODBC驅動程式組態面板，在底下檢查伺服器上的原生使用者端 **SQL Server Native Client 11.0**.
+您可以通过ODBC驱动程序配置面板检查服务器上的本机客户端，位于 **SQL Server Native Client 11.0**.
 
-下列存取DLL必須存在： **sqlncli11.dll**.
+必须存在以下访问DLL： **sqlncli11.dll**.
 
-存取DLL可在Microsoft網站上找到。
+访问DLL位于Microsoft网站上。
 
 >[!NOTE]
 >
->不支援從在Linux中執行的應用程式伺服器存取Microsoft SQL Server。
+>不支持从在Linux中运行的应用程序服务器访问Microsoft SQL Server。
 
 ## Oracle {#oracle}
 
 >[!NOTE]
 >
->不支援具有多位元組字元的欄名稱。
+>不支持具有多字节字符的列名。
 
-此 **NLS_NCHAR_CHARACTERSET** 和 **NLS_CHARACTERSET** 必須正確設定引數，資料庫才能在Unicode或ANSI中運作。
+此 **NLS_NCHAR_CHARACTERSET** 和 **NLS_CHARACTERSET** 需要正确配置参数，数据库才能在Unicode或ANSI中工作。
 
-Adobe Campaign使用預設的Oracle編碼。 使用其他編碼可能會觸發相容性問題：在這種情況下，請聯絡技術支援人員。
+Adobe Campaign使用默认的Oracle编码。 使用其他编码可能会触发兼容性问题：在这种情况下，请联系技术支持。
 
-若要瞭解您的編碼，請使用以下內容 **sqlplus** 命令：
+要了解您的编码，请使用以下内容 **sqlplus** 命令：
 
 ```
 SELECT * FROM nls_database_parameters ;
 ```
 
-* 對於Unicode安裝，支援的編碼為：
+* 对于Unicode安装，支持的编码包括：
 
    ```
    NLS_NCHAR_CHARACTERSET         AL16UTF16
    NLS_CHARACTERSET         AL32UTF8
    ```
 
-* 對於ANSI安裝（非unicode），僅支援下列編碼：
+* 对于ANSI安装（非unicode），仅支持以下编码：
 
 ```
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-登入 **sqlplus**，使用Oracle使用者設定檔：
+登录 **sqlplus**，使用Oracle用户配置文件：
 
 ```
 su - oracle 
@@ -76,12 +76,12 @@ sqlplus
 [login] [password]
 ```
 
-您也可以參閱 [Linux中的Oracle使用者端](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
+您还可以参阅 [Linux中的Oracle客户端](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
 
 ## PostgresSQL {#postgressql}
 
-建議您在安裝資料庫引擎時安裝UTF-8支援。 如此一來，您就可以建立Unicode資料庫。
+建议您在安装数据库引擎时安装UTF-8支持。 这样，您将能够创建Unicode数据库。
 
-**相關主題**
+**相关主题**
 
-* [Adobe Campaign Classic表格中的Unlogged選項](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Adobe Campaign Classic表中的Unlogged选项](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)

@@ -19,55 +19,55 @@ ht-degree: 8%
 
 
 
-您可以變更或復原遺失的密碼。
-有兩種可能的情況：
+您可以更改或恢复丢失的密码。
+有两种可能的情况：
 
-* [Adobe Campaign運運算元遺失密碼](#password-lost-by-campaign-operator)
-* [內部密碼遺失](#internal-password-lost) （僅限內部部署客戶）
+* [Adobe Campaign操作员丢失密码](#password-lost-by-campaign-operator)
+* [内部密码丢失](#internal-password-lost) （仅限内部部署客户）
 
-## Campaign運運算元遺失密碼 {#password-lost-by-campaign-operator}
+## Campaign操作员丢失密码 {#password-lost-by-campaign-operator}
 
-如果Adobe Campaign運運算元遺失密碼，您可以加以變更。
+如果Adobe Campaign操作员丢失了密码，您可以更改密码。
 为此请执行以下操作步骤：
 
-1. 透過具有管理員許可權的操作者連線。
-1. 以滑鼠右鍵按一下運運算元。
+1. 通过具有管理员权限的操作员连接。
+1. 右键单击运算符。
 1. 选择 **[!UICONTROL Actions]** > **[!UICONTROL Reset password]**.
 
    ![](assets/operator-passwd.png)
 
-1. 設定運運算元的新密碼。 建議操作員在第一次重新連線時變更密碼。
+1. 设置操作员的新密码。 我们建议操作员在首次重新连接时更改其密码。
 
-## 內部密碼遺失 {#internal-password-lost}
+## 内部密码丢失 {#internal-password-lost}
 
 >[!NOTE]
 >
->本節內容僅適用於內部部署客戶。
+>此部分仅适用于内部部署客户。
 
-如果內部密碼遺失，您必須重新初始化它。
-要執行此操作，請套用下列程式：
+如果内部密码丢失，则必须重新初始化该密码。
+要执行此操作，请应用以下步骤：
 
-1. 編輯 **/usr/local/neolane/nl6/conf/serverConf.xml** 檔案。
+1. 编辑 **/usr/local/neolane/nl6/conf/serverConf.xml** 文件。
 
-1. 前往 **internalPassword** 行。
+1. 转到 **internalPsword** 行。
 
    ```
    <!-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword="myPassword"/>
    ```
 
-1. 刪除引號中的字串，在此案例中為： **myPassword**
+1. 删除引号中的字符串，在本例中为： **myPassword**
 
-   因此，您將獲得以下行：
+   这样，您将获得以下行：
 
    ```
    !-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword=""/
    ```
 
-1. 儲存變更並關閉檔案。
+1. 保存更改并关闭文件。
 
-1. 設定新密碼。 要執行此操作，請輸入下列命令：
+1. 配置新密码。 为此，请输入以下命令：
 
    ```
    nlserver config -internalpassword
@@ -79,4 +79,4 @@ ht-degree: 8%
    Confirmation 
    ```
 
-1. 您現在可以使用新密碼進行連線 **內部** 模式。
+1. 您现在可以使用新密码进行连接 **内部** 模式。

@@ -17,61 +17,61 @@ ht-degree: 2%
 
 
 
-本节详细介绍使用自定义（或外部）收件人表的原则。
+本节详细说明使用自定义（或外部）收件人表的原则。
 
-默认情况下，Adobe Campaign提供了一个内置的收件人表，即装即用函数和进程都与之关联。 内置的收件人表具有许多预定义的字段和表，可以使用扩展表轻松扩展这些字段和表。
+默认情况下，Adobe Campaign提供了一个内置的收件人表，开箱即用的函数和进程将链接到该表。 内置的收件人表具有许多预定义字段和表，可使用扩展表轻松扩展这些字段和表。
 
-如果此扩展方法具有很好的扩展表的灵活性，则它不允许减少表中的字段或链接数。 使用非标准表（即“外部收件人表”）可以获得更大的灵活性，但在实施该表时需要采取某些预防措施。
+如果此扩展方法为扩展表提供了良好的灵活性，则它不允许减少表中的字段或链接数。 使用非标准表或“外部收件人表”可提供更大的灵活性，但在实施时需要采取某些预防措施。
 
-此功能允许Adobe Campaign处理来自外部数据库的数据：此数据将用作投放的一组用户档案。 实施此过程涉及一些可能与客户需求相关的精确度。 例如：
+此功能允许Adobe Campaign处理来自外部数据库的数据：此数据将用作投放的一组用户档案。 实施此流程涉及多个可能根据客户需求而相关的精确度。 例如：
 
-* 没有进出Adobe Campaign数据库的更新流：此表中的数据可以直接通过托管该表的数据库引擎进行更新。
+* 没有与Adobe Campaign数据库之间的更新流：可以通过承载此表的数据数据库引擎直接更新该表中的数据。
 * 在现有数据库上运行的进程中没有更改。
-* 使用具有非标准结构的用户档案数据库：可以使用单个实例将保存在具有各种结构的各种表中的用户档案传送到。
-* 更新Adobe Campaign数据库时，无需进行任何更改或维护。
-* 如果您不需要大多数表字段或数据库模板不是以收件人为中心，则内置的收件人表将无用。
-* 为了提高效率，如果用户档案数量很大，则需要一个字段较少的表。 内置的收件人表具有太多字段用于此特定情况。
+* 使用具有非标准结构的用户档案数据库：可使用单个实例将内容交付给以各种结构保存在各种表中的用户档案。
+* 更新Adobe Campaign数据库时不需要更改或维护。
+* 如果您不需要大部分表字段或数据库模板未以收件人为中心，则内置的收件人表将毫无用处。
+* 为了提高效率，如果您有大量用户档案，则需要具有少量字段的表。 对于此特定情况，内置收件人表的字段过多。
 
-本节介绍用于映射Adobe Campaign中现有表的关键点以及用于根据任何表执行投放的配置。 最后，介绍了如何向用户提供与内置收件人表一样实用的查询界面。 要了解本节介绍的材料，需要充分了解屏幕和模式设计的原则。
+此部分介绍用于映射Adobe Campaign中现有表的关键点，以及根据任何表执行投放时应用的配置。 最后，还介绍了如何为用户提供与内置收件人表一样实用的查询接口。 要了解本节中介绍的材料，需要很好地了解屏幕和模式设计的原则。
 
 ## Recommendations和限制 {#recommendations-and-limitations}
 
 使用自定义收件人表具有以下限制：
 
-* Adobe Campaign不支持多个收件人模式（称为定位模式），这些模式链接到相同的broadlog和/或跟踪日志模式。 否则，这可能会导致以后的数据协调出现异常。
+* Adobe Campaign不支持链接到同一broadlog和/或trackinglog架构的多个收件人架构（也称为定位架构）。 否则，这可能会导致以后数据协调出现异常。
 
-   下图详细列出了每个自定义收件人架构所需的关系结构：
+   下图详细说明每个自定义收件人架构所需的关系结构：
    ![](assets/custom_recipient_limitation.png)
 
    我们建议：
 
-   * 将 **[!UICONTROL nms:BroadLogRcp]** 和 **[!UICONTROL nms:TrackingLogRcp]** 模式到现成模式 **[!UICONTROL nms:Recipientschema]**. 这两个日志表不应链接到任何其他自定义收件人表。
-   * 为每个新的自定义收件人模式定义专用的自定义broadlog和trackinglog模式。 设置目标映射时可以自动完成此操作，请参阅 [目标映射](../../configuration/using/target-mapping.md).
+   * 专注于 **[!UICONTROL nms:BroadLogRcp]** 和 **[!UICONTROL nms:TrackingLogRcp]** 开箱即用的架构 **[!UICONTROL nms:Recipientschema]**. 这两个日志表不应链接到任何其他自定义收件人表。
+   * 为每个新的自定义收件人架构定义专用的自定义broadlog和trackinglog架构。 这在设置目标映射时可自动完成，请参阅 [目标映射](../../configuration/using/target-mapping.md).
 
-* 您不能使用标准 **[!UICONTROL Services and Subscriptions]** 提供。
+* 不能使用标准 **[!UICONTROL Services and Subscriptions]** 在产品中提供。
 
-   这表示 [此部分](../../delivery/using/managing-subscriptions.md) 不适用。
+   这意味着整个操作详见 [本节](../../delivery/using/managing-subscriptions.md) 不适用。
 
-* 链接 **[!UICONTROL visitor]** 表不起作用。
+* 与的链接 **[!UICONTROL visitor]** 表格不起作用。
 
-   因此，要使用 **[!UICONTROL Social Marketing]** 模块必须配置存储步骤才能引用正确的表。
+   因此，要使用 **[!UICONTROL Social Marketing]** 模块必须配置存储步骤以引用正确的表。
 
-   同样，在使用反向链接功能时，必须修改标准的初始消息传输模板。
+   同样，在使用反向链接功能时，必须采用标准的初始报文传输模板。
 
-* 您无法在列表中手动添加用户档案。
+* 您不能在列表中手动添加用户档案。
 
-   因此，详见 [此部分](../../platform/using/creating-and-managing-lists.md) 如果没有其他配置，则不适用。
+   因此，中详述的程序 [本节](../../platform/using/creating-and-managing-lists.md) 不适用，因为没有其他配置。
 
    >[!NOTE]
    >
-   >您仍可以使用工作流创建收件人列表。 有关更多信息，请参阅 [使用工作流创建用户档案列表](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+   >您仍然可以使用工作流创建收件人列表。 有关更多信息，请参阅 [使用工作流创建用户档案列表](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
-我们还建议检查不同现成配置中使用的默认值：根据所使用的功能，必须进行若干适应。
+我们还建议检查不同的现成配置中使用的默认值：根据使用的功能，必须执行若干调整。
 
 例如：
 
-* 某些标准报告，特别是 **互动** 和 **移动设备应用程序** 必须重新开发。 请参阅 [管理报告](../../configuration/using/managing-reports.md) 中。
-* 某些工作流活动的默认配置引用标准收件人表(**[!UICONTROL nms:recipient]**):当用于外部收件人表时，必须更改这些配置。 请参阅 [管理工作流](../../configuration/using/managing-workflows.md) 中。
-* 标准 **[!UICONTROL Unsubscription link]** 必须修改个性化块。
+* 某些标准报告，特别是由提供的报告 **互动** 和 **移动应用程序** 必须重新开发。 请参阅 [管理报告](../../configuration/using/managing-reports.md) 部分。
+* 某些工作流活动的默认配置引用标准收件人表(**[!UICONTROL nms:recipient]**)：在用于外部收件人表时，必须更改这些配置。 请参阅 [管理工作流](../../configuration/using/managing-workflows.md) 部分。
+* 标准 **[!UICONTROL Unsubscription link]** 必须调整个性化块。
 * 必须修改标准投放模板的目标映射。
-* V4表单与外部收件人表不兼容：您必须使用web应用程序。
+* V4表单与外部收件人表不兼容：您必须使用Web应用程序。

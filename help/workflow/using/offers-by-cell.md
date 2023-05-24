@@ -16,18 +16,18 @@ ht-degree: 8%
 
 
 
-的 **[!UICONTROL Offers by cell]** 活动允许您将集客群体（例如，通过查询）分发到多个区段，并指定要为其中每个区段显示的选件。
+此 **[!UICONTROL Offers by cell]** 利用活动，可将集客群体（例如从查询）分配到多个区段，并指定要为每个区段呈现的选件。
 
-此活动只能与 **互动**. 有关更多信息，请参阅 [部分](../../interaction/using/about-outbound-channels.md).
+此活动只能用于 **互动**. 有关更多信息，请参阅此 [部分](../../interaction/using/about-outbound-channels.md).
 
 操作步骤：
 
-1. 添加 **[!UICONTROL Offers by cell]** 活动，然后将其打开。
-1. 在 **[!UICONTROL General]** 选项卡，选择要在其中显示选件的选件空间。
-1. 在 **[!UICONTROL Cells]** ，请使用 **[!UICONTROL Add]** 按钮：
+1. 添加 **[!UICONTROL Offers by cell]** 指定目标群体后打开该群体。
+1. 在 **[!UICONTROL General]** 选项卡中，选择要显示优惠的优惠空间。
+1. 在 **[!UICONTROL Cells]** 选项卡中，使用 **[!UICONTROL Add]** 按钮：
 
-   * 使用可用的过滤和限制规则指定子集群体。
-   * 接下来，选择要向子集显示的选件。 可用选件是符合上一步所选选件空间条件的选件。
+   * 使用可用的筛选和限制规则指定子集群体。
+   * 接下来，选择要向子集呈现的选件。 可用优惠是在上一步中选择的优惠空间上符合条件的优惠。
 
       ![](assets/int_offer_per_cell1.png)
 

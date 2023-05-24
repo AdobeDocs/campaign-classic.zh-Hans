@@ -23,19 +23,19 @@ ht-degree: 7%
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* 单击 **[!UICONTROL Edit query]** 链接，然后选择要定位的收件人。
+* 单击 **[!UICONTROL Edit query]** 链接并选择要定位的收件人。
 
    ![](assets/use_case_abtesting_createrecipients_002.png)
 
-* 链接 **[!UICONTROL Query]** 活动 **[!UICONTROL Split]** 活动。
+* 链接 **[!UICONTROL Query]** 的活动 **[!UICONTROL Split]** 活动。
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
 ## 配置拆分活动 {#configuring-the-split-activity}
 
-此活动允许您创建多个群体：接收投放A的，接收投放B的，以及剩余的群体。 通过使用随机选择，您只能定位每个投放的一部分群体。
+通过此活动，可创建多个群体：接收投放A的群体、接收投放B的群体和其余群体。 通过使用随机选择，您可以只定向每次投放的部分群体。
 
-1. 创建群体A:
+1. 创建群体A：
 
    * 双击 **[!UICONTROL Split]** 活动。
 
@@ -57,13 +57,13 @@ ht-degree: 7%
 
       ![](assets/use_case_abtesting_createrecipients_008.png)
 
-1. 创建群体B:
+1. 创建群体B：
 
    * 单击 **[!UICONTROL Add]** 为群体B创建新选项卡。
 
       ![](assets/use_case_abtesting_createrecipients_009.png)
 
-   * 将群体限制为以前的10%。
+   * 与以前一样，将人口限制在10%。
 
       ![](assets/use_case_abtesting_createrecipients_010.png)
 
@@ -77,8 +77,8 @@ ht-degree: 7%
 
       ![](assets/use_case_abtesting_createrecipients_012.png)
 
-   * 更改标签以指定此群体既不包含A也不包含B，然后单击 **[!UICONTROL OK]** 来关闭活动。
+   * 更改标签以指定此群体既不包括A也不包括B，然后单击 **[!UICONTROL OK]** 以关闭活动。
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-您现在可以创建两个投放模板。 [了解详情](a-b-testing-uc-delivery-templates.md)).
+您现在可以创建这两个投放模板。 [了解详情](a-b-testing-uc-delivery-templates.md)).

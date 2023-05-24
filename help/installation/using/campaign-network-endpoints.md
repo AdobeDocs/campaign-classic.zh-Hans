@@ -19,6 +19,6 @@ ht-degree: 22%
 
 | 上下文 | URL |
 |--- |--- |
-| 浏览器端点 | `https://*.experiencecloud.adobe.com` （SSO提供程序）<br>`https://*.campaign.adobe.com` （Campaign实例）<br>`https://adobeid-na1.services.adobe.com` (Adobe登录) |
+| 浏览器端点 | `https://*.experiencecloud.adobe.com` （SSO提供商）<br>`https://*.campaign.adobe.com` （Campaign实例）<br>`https://adobeid-na1.services.adobe.com` (Adobe登录) |
 | 收件箱呈现(Litmus) | `https://deliverability-app.neolane.net/deliverability` |
-| 品牌URL、镜像页面、跟踪、文件引用（部署向导） | 检查为您配置的URL。 |
+| 品牌URL、镜像页面、跟踪、fileref（部署向导） | 检查已为您配置的URL。 |

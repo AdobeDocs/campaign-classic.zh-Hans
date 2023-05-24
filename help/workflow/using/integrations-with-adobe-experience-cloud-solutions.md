@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 与Adobe Experience Cloud解决方案工作流程集成
-description: 了解有关与Adobe Experience Cloud解决方案工作流集成的更多信息
+title: 与Adobe Experience Cloud解决方案工作流的集成
+description: 详细了解与Adobe Experience Cloud解决方案工作流的集成
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 topic-tags: technical-workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 
 
-下面详述的工作流随 **与Adobe Experience Cloud集成** 模块。 有关此模块的更多信息，请参阅此 [部分](../../integrations/using/configuring-ims.md#installing-the-package).
+下面详述的工作流将随 **与Adobe Experience Cloud集成** 默认模块。 有关此模块的更多信息，请参阅此 [部分](../../integrations/using/configuring-ims.md#installing-the-package).
 
 <table> 
  <tbody> 
@@ -28,12 +28,12 @@ ht-degree: 10%
   <tr> 
    <td> <span class="uicontrol">从Adobe Experience Cloud导入受众</span> <br /> </td> 
    <td> <span class="uicontrol">importSharedAudience</span> <br /> </td> 
-   <td> 利用此工作流，可将不同Adobe Experience Cloud解决方案中的受众/区段导入Adobe Campaign。<br /> </td> 
+   <td> 利用此工作流，可将受众/区段从不同的Adobe Experience Cloud解决方案导入到Adobe Campaign中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">将受众导出到Adobe Experience Cloud</span> <br /> </td> 
    <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
-   <td> 此工作流会将受众导出为共享的受众/区段。 这些受众可在您使用的不同Adobe Experience Cloud解决方案中使用。<br /> </td> 
+   <td> 此工作流将受众导出为共享受众/区段。 这些受众可在您使用的其他Adobe Experience Cloud解决方案中使用。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

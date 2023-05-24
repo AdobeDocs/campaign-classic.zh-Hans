@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 营销活动投放最佳实践
+title: Campaign投放最佳实践
 description: 了解设计和发送投放时的最佳实践
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
@@ -17,7 +17,7 @@ ht-degree: 28%
 
 
 
-了解与使用Adobe Campaign进行投放设计和发送相关的最佳实践。 使用以下链接浏览主题并查找指南。
+了解与Adobe Campaign的交付设计和发送相关的最佳实践。 使用以下链接可导航主题并查找指南。
 
 <table>
 <tr>
@@ -31,7 +31,7 @@ ht-degree: 28%
     </a>
     </div>
     <p>
-    <em>安全并优化发送过程</em>
+    <em>确保发送过程安全并优化</em>
     <p>
   </td>
    <td>
@@ -44,7 +44,7 @@ ht-degree: 28%
     </a>
     </div>
     <p>
-    <em>方便和加快新投放</em>
+    <em>加速和固定新投放</em>
     <p>
   </td>
   <td>
@@ -75,7 +75,7 @@ ht-degree: 28%
   </td>
    <td>
     <a href="check-before-sending.md">
-      <img alt="检查" src="assets/do-not-localize/start.svg" width="60px"/>
+      <img alt="Check" src="assets/do-not-localize/start.svg" width="60px"/>
     </a>
     <div>
       <a href="check-before-sending.md">
@@ -96,7 +96,7 @@ ht-degree: 28%
     </a>
     </div>
     <p>
-    <em>控制发送和故障诊断</em>
+    <em>控制发送和故障排除</em>
     <p>
   </td>
 </tr>
@@ -104,7 +104,7 @@ ht-degree: 28%
 
 另请参阅:
 
-* [投放能力入门](about-deliverability.md)
+* [可投放性入门](about-deliverability.md)
 
 * [投放创建步骤](steps-about-delivery-creation-steps.md)
 

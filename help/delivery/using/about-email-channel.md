@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 关于Adobe Campaign Classic中的电子邮件渠道
-description: 本节提供特定于Adobe Campaign中电子邮件渠道的常规信息
+description: 本节提供特定于Adobe Campaign中电子邮件渠道的一般信息
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
@@ -17,13 +17,13 @@ ht-degree: 12%
 
 
 
-Adobe Campaign允许您向目标群体批量交付个性化的电子消息。
+Adobe Campaign可让您向目标群体批量投放个性化的电子消息。
 
 开始发送电子邮件之前：
 
 * 确保收件人用户档案至少包含电子邮件地址。
-* 进一步了解Adobe Campaign [投放最佳实践](delivery-best-practices.md).
-* 请阅读以下章节，了解有关可投放性的更多信息： [Campaign中的投放能力管理](about-deliverability.md) 和 [投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans).
+* 了解有关Adobe Campaign的更多信息 [投放最佳实践](delivery-best-practices.md).
+* 请阅读以下部分，了解有关可投放性的更多信息： [Campaign中的可投放性管理](about-deliverability.md) 和 [可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans).
 
 发送电子邮件的关键步骤如下：
 
@@ -31,6 +31,6 @@ Adobe Campaign允许您向目标群体批量交付个性化的电子消息。
 * [定义目标群体](steps-defining-the-target-population.md)
 * [定义电子邮件的内容](defining-the-email-content.md)
 * [发送电子邮件](sending-messages.md)
-* [监控投放](about-delivery-monitoring.md)
+* [监测投放](about-delivery-monitoring.md)
 
-以下部分提供了特定于电子邮件渠道的信息。 有关如何创建投放的全局信息，请参阅 [此部分](steps-about-delivery-creation-steps.md).
+以下部分提供了特定于电子邮件渠道的信息。 有关如何创建投放的全局信息，请参阅 [本节](steps-about-delivery-creation-steps.md).

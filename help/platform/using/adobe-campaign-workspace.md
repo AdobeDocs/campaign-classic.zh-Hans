@@ -18,7 +18,7 @@ ht-degree: 67%
 
 
 
-## 浏览Adobe Campaign界面 {#about-adobe-campaign-interface}
+## 探索Adobe Campaign界面 {#about-adobe-campaign-interface}
 
 连接到数据库后，即可访问 Adobe Campaign 主页，这是一个仪表板：其中包含允许您访问各种功能的链接和快捷方式，具体显示哪些取决于您的安装以及常规平台配置。
 
@@ -32,29 +32,29 @@ ht-degree: 67%
 >
 >在您的实例上有哪些 Adobe Campaign 功能可用取决于已安装的模块和附加组件。根据您的权限及具体配置，部分功能可能无法使用。
 >
->在安装任何模块或附加组件之前，您需要检查您的许可协议或与Adobe帐户管理员联系。
+>在安装任何模块或加载项之前，您需要查看许可协议或与Adobe客户经理联系。
 
 ### 控制台和 Web 访问 {#console-and-web-access}
 
-可通过控制台或互联网浏览器访问 Adobe Campaign 平台。在 [兼容性矩阵](../../rn/using/compatibility-matrix.md#Browsers).
+可通过控制台或互联网浏览器访问 Adobe Campaign 平台。请参阅中的兼容浏览器 [兼容性矩阵](../../rn/using/compatibility-matrix.md#Browsers).
 
-Web访问界面与控制台界面类似。 在浏览器中，您可以使用与控制台相同的导航和显示功能，但只能对营销活动执行一组缩减的操作。 例如，您可以查看和取消营销活动，但无法修改营销活动。 对于给定的运算符，将在控制台中显示具有以下选项的营销活动：
+Web访问界面类似于控制台界面。 在浏览器中，您可以使用与控制台中相同的导航和显示功能，但您只能在营销策划上执行一组缩减的操作。 例如，您可以查看和取消营销活动，但无法修改营销活动。 对于给定的运算符，营销活动将在控制台中显示以下选项：
 
-![从营销活动的仪表板，操作员可以查看和取消营销活动，但也可以对其进行修改，并向其添加投放、文档和任务。](assets/operation_from_console.png)
+![在营销策划的仪表板中，操作员可以查看和取消营销策划，还可以修改营销策划，并向其中添加投放、文档和任务。](assets/operation_from_console.png)
 
-而使用Web访问时，选项将主要启用查看功能：
+而使用Web访问时，选项将主要支持查看：
 
 ![在浏览器中，同一操作员只能查看和取消营销活动。](assets/operation_from_web.png)
 
-详细了解 [使用web界面](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+详细了解 [使用Web界面](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 ### 语言 {#languages}
 
-安装Adobe Campaign Classic实例时，将选择语言。
+安装Adobe Campaign Classic实例时选择语言。
 
 ![](assets/language.png)
 
-您可以选择五种不同的语言：
+您可以在五种不同的语言之间进行选择：
 
 * 英语（英国）
 * 英语（美国）
@@ -64,7 +64,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关更多信息，请参阅此](../../platform/using/adobe-campaign-workspace.md#date-and-time)章节[。
 
-有关如何创建实例的更多信息，请参阅此 [页面](../../installation/using/creating-an-instance-and-logging-on.md).
+有关如何创建实例的详细信息，请参阅此 [页面](../../installation/using/creating-an-instance-and-logging-on.md).
 
 >[!CAUTION]
 >
@@ -82,7 +82,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 每项功能都包含一套基于工作任务相关需求及使用情境的功能。例如，**[!UICONTROL Profiles and targets]** 链接可用于访问收件人列表、订阅服务、现有的定位工作流，以及创建这些元素的快捷方式。
 
-列表可通过 **[!UICONTROL Lists]** 链接 **[!UICONTROL Profiles and Targets]** 界面。
+这些列表可通过 **[!UICONTROL Lists]** 左侧部分中的链接 **[!UICONTROL Profiles and Targets]** 界面。
 
 ![](assets/recipient_list_overview.png)
 
@@ -100,7 +100,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 通过每个核心功能部分可以浏览各种可用的元素。要执行此操作，可使用 **[!UICONTROL Browsing]** 部分中的快捷方式。**[!UICONTROL Other choices]** 链接可用于访问其他所有页面，无论工作环境如何。
 
-您可以创建新元素（投放、Web应用程序、工作流等） 使用 **[!UICONTROL Create]** 中，将其添加到Advertising Cloud中。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
+您可以创建新元素（投放、Web应用程序、工作流等） 使用 **[!UICONTROL Create]** 部分。 使用列表上方的 **[!UICONTROL Create]** 按钮向列表中添加新元素。
 
 例如，在投放页面上，使用 **[!UICONTROL Create]** 按钮创建新的投放。
 
@@ -138,8 +138,8 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
   </tr> 
   <tr> 
    <td> 带时间的短日期<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>例如：09/25/2018 10:47:25 PM</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>例如：25/09/2018 22:47:25</strong></p> </td> 
+   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>例如：2018年9月25日10:47:下午25</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>例如：2018年9月25日22:47:25</strong></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -154,22 +154,22 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
 
 >[!NOTE]
 >
->管理员通过 **[!UICONTROL Administration > Platform > Enumerations]** 部分管理枚举（也称为“分项列表”）。有关更多信息，请参阅 [管理枚举](../../platform/using/managing-enumerations.md).
+>管理员通过 **[!UICONTROL Administration > Platform > Enumerations]** 部分管理枚举（也称为“分项列表”）。有关更多信息，请参阅 [管理明细列表](../../platform/using/managing-enumerations.md).
 
 ### 默认单位 {#default-units}
 
 在表示一段时间的字段中（例如，某次投放的资源的有效期、已批准的任务期限等），可采用以下&#x200B;**单位**&#x200B;表示该值：
 
-* **[!UICONTROL s]** 若为秒，
+* **[!UICONTROL s]** 几秒钟，
 * **[!UICONTROL mn]** 几分钟，
 * **[!UICONTROL h]** 数小时，
-* **[!UICONTROL d]** 几天。
+* **[!UICONTROL d]** 好几天了。
 
 ![](assets/enter_unit_sample.png)
 
 ## 教程视频 {#video}
 
-此视频介绍Campaign Classic工作区。
+本视频介绍Campaign Classic工作区。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 

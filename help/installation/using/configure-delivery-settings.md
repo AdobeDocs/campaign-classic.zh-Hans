@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Campaign傳遞設定組態
-description: 瞭解如何設定Campaign傳遞設定
+title: Campaign投放设置配置
+description: 了解如何配置Campaign投放设置
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
@@ -19,27 +19,27 @@ ht-degree: 5%
 
 
 
-傳遞引數必須設定在 **serverConf.xml** 資料夾。
+投放参数必须在 **serverConf.xml** 文件夹。
 
-* **DNS設定**：指定傳遞網域和DNS伺服器的IP位址（或主機），用於回應MTA模組從進行的MX型別DNS查詢。 **`<dnsconfig>`** 從上往下。
+* **DNS配置**：指定用于响应MTA模块从发出的MX类型DNS查询的DNS服务器的投放域和IP地址（或主机）。 **`<dnsconfig>`** 自此以后。
 
    >[!NOTE]
    >
-   >此 **nameServer** 引數對於Windows中的安裝是必要的。 若是在Linux中進行安裝，則必須保留空白。
+   >此 **nameServer** 参数对于Windows中的安装至关重要。 对于Linux中的安装，必须将其留空。
 
    ```
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-您也可以根據您的需求和設定進行以下設定：設定 [SMTP轉送](#smtp-relay)，調整數量 [MTA子處理序](#mta-child-processes)， [管理輸出SMTP流量](#managing-outbound-smtp-traffic-with-affinities).
+您还可以根据需求和设置执行以下配置：配置 [SMTP中继](#smtp-relay)，调整数量 [MTA子进程](#mta-child-processes)， [管理出站SMTP流量](#managing-outbound-smtp-traffic-with-affinities).
 
-## SMTP轉送 {#smtp-relay}
+## SMTP中继 {#smtp-relay}
 
-MTA模組會當作SMTP廣播（連線埠25）的原生郵件傳輸代理程式。
+MTA模块充当SMTP广播的本机邮件传输代理（端口25）。
 
-不過，如果您的安全性原則需要，可以透過轉送伺服器來取代它。 在這種情況下，全域輸送量將是轉送量(前提是轉送伺服器輸送量低於Adobe Campaign輸送量)。
+但是，如果您的安全策略要求，可以使用中继服务器替换它。 在这种情况下，全局吞吐量将是中继吞吐量(前提是中继服务器的吞吐量低于Adobe Campaign吞吐量)。
 
-在此情況下，這些引數的設定方式為透過以下專案中的SMTP伺服器進行： **`<relay>`** 區段。 您必須指定用來傳輸郵件及其相關連線埠（預設為25）之SMTP伺服器的IP位址（或主機）。
+在这种情况下，这些参数是通过配置 **`<relay>`** 部分。 必须指定用于传输邮件及其关联端口（默认为25）的SMTP服务器的IP地址（或主机）。
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -47,31 +47,31 @@ MTA模組會當作SMTP廣播（連線埠25）的原生郵件傳輸代理程式�
 
 >[!IMPORTANT]
 >
->此作業模式表示傳送作業受到嚴重限制，因為中繼伺服器的固有效能（延遲、頻寬……）會大幅降低輸送量。 此外，限定同步傳送錯誤（透過分析SMTP流量所偵測）的容量將會受到限制，而且如果無法使用轉送伺服器，將無法進行傳送。
+>这种操作模式意味着对投放的严重限制，因为中继服务器固有的性能（延迟、带宽……）会极大地降低吞吐量。 此外，限定同步投放错误（通过分析SMTP流量检测）的容量将受限，并且如果中继服务器不可用，则无法进行发送。
 
-## MTA子處理序 {#mta-child-processes}
+## MTA子进程 {#mta-child-processes}
 
-您可以控制子處理序（預設為2）的數量，以便根據伺服器的CPU效能和可用的網路資源來最佳化廣播效能。 此設定將在 **`<master>`** 每部電腦上MTA設定的區段。
+可以控制子进程（默认为2）的数量，以便根据服务器的CPU功率和可用的网络资源优化广播性能。 此配置将在 **`<master>`** 每台计算机上MTA配置的部分。
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
 ```
 
-另請參閱 [電子郵件傳送最佳化](../../installation/using/email-deliverability.md#email-sending-optimization).
+另请参阅 [电子邮件发送优化](../../installation/using/email-deliverability.md#email-sending-optimization).
 
-## 使用相關性管理輸出SMTP流量 {#managing-outbound-smtp-traffic-with-affinities}
+## 使用相关性管理出站SMTP流量 {#managing-outbound-smtp-traffic-with-affinities}
 
 >[!IMPORTANT]
 >
->伺服器之間的相似性設定必須一致。 建議您聯絡Adobe以取得相似性設定，因為應在執行MTA的所有應用程式伺服器上復寫設定變更。
+>关联配置需要在不同服务器之间保持一致。 我们建议您联系Adobe以进行关联配置，因为应在运行MTA的所有应用程序服务器上复制配置更改。
 
-您可以透過與IP位址的相似性來改善輸出SMTP流量。
+您可以通过与IP地址的相似性来改进出站SMTP流量。
 
 要执行此操作，请应用以下步骤：
 
-1. 輸入相關性，在 **`<ipaffinity>`** 部分 **serverConf.xml** 檔案。
+1. 输入以下各项的相似性： **`<ipaffinity>`** 部分 **serverConf.xml** 文件。
 
-   一個相似性可以有多種不同的名稱：若要加以分隔，請使用 **；** 字元。
+   一个关联可以有多个不同的名称：要分隔它们，请使用 **；** 字符。
 
    示例:
 
@@ -80,23 +80,23 @@ MTA模組會當作SMTP廣播（連線埠25）的原生郵件傳輸代理程式�
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   若要檢視相關引數，請參閱 **serverConf.xml** 檔案。
+   要查看相关参数，请参阅 **serverConf.xml** 文件。
 
-1. 若要在下拉式清單中啟用相關性選擇，您必須在以下專案新增相關性名稱： **IPAffinity** 分項清單。
+1. 要在下拉列表中启用关联选择，您需要将关联名称添加到 **IPAffinity** 明细列表。
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >詳細列舉請參閱 [本檔案](../../platform/using/managing-enumerations.md).
+   >明细列表详见 [本文档](../../platform/using/managing-enumerations.md).
 
-   然後您可以選取要使用的相似性，如下面的型別所示：
+   然后，您可以选择要使用的关联，如下面的分类所示：
 
    ![](assets/ipaffinity_typology.png)
 
    >[!NOTE]
    >
-   >您也可以參閱 [傳遞伺服器設定](../../installation/using/email-deliverability.md#delivery-server-configuration).
+   >您还可以参阅 [投放服务器配置](../../installation/using/email-deliverability.md#delivery-server-configuration).
 
 **相关主题**
 * [技术电子邮件配置](email-deliverability.md)

@@ -18,13 +18,13 @@ ht-degree: 10%
 
 
 
-安装Adobe Campaign并创建实例后，您可以从控制台添加新实例。 此创建模式允许您创建跟踪实例，而无需访问控制台。
+安装Adobe Campaign并创建实例后，您可以从控制台添加新实例。 通过此创建模式，您可以在不访问控制台的情况下创建跟踪实例。
 
-为此，请登录到现有数据库并应用以下步骤：
+要执行此操作，请登录到现有数据库并应用以下步骤：
 
 1. 声明新实例
 
-   转到 **[!UICONTROL Tools > Advanced > Declare a new instance...]** 来启动向导。
+   转到 **[!UICONTROL Tools > Advanced > Declare a new instance...]** 以启动向导。
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 

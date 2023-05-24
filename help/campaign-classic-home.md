@@ -16,13 +16,13 @@ ht-degree: 62%
 
 ## 新增功能
 
-* **[11月版已正式发布！](rn/using/latest-release.md)**<br/> 在发行说明中了解新功能、改进和修复
+* **[11月版已上线！](rn/using/latest-release.md)**<br/> 在发行说明中探索新功能、改进和修复
 
-* **[2022版计划](technotes/using/dc-migration.md)**<br/> 升级您的环境并提高安全性、基础架构和性能
+* **[2022版计划](technotes/using/dc-migration.md)**<br/> 升级您的环境并改进安全性、基础架构和性能
 
 <!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
 
-* **[更新Adobe Experience Cloud Triggers集成](integrations/using/configuring-adobe-io.md)**<br/> 旧版oAuth身份验证服务已终止：您必须迁移到Adobe I/O
+* **[更新您的Adobe Experience Cloud Triggers集成](integrations/using/configuring-adobe-io.md)**<br/> 旧版oAuth身份验证服务已终止：您必须迁移到Adobe I/O
 
 [更多更新](rn/using/documentation-updates.md)
 

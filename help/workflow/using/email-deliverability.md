@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 电子邮件投放能力
-description: 进一步了解电子邮件可投放性包
+title: 电子邮件可投放性
+description: 了解有关电子邮件可投放性包的更多信息
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Deliverability
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
@@ -12,11 +12,11 @@ ht-degree: 4%
 ---
 
 
-# 投放能力监控（电子邮件投放能力）{#email-deliverability}
+# 可投放性监控（电子邮件可投放性）{#email-deliverability}
 
 
 
-下面详述的工作流默认安装在所有实例上，允许您初始化退回邮件鉴别规则列表、域列表和MX列表。 一旦 **投放能力监控（电子邮件投放能力）** 包安装完成后，此工作流每晚运行。 有关投放能力监控的更多信息，请参阅此 [部分](../../delivery/using/about-deliverability.md).
+默认情况下，所有实例上都会安装下面详细介绍的工作流，该工作流允许您初始化退回邮件鉴别规则的列表、域列表和MX列表。 一旦 **可投放性监控（电子邮件可投放性）** 包已安装，此工作流每夜运行。 有关可投放性监控的更多信息，请参阅此 [部分](../../delivery/using/about-deliverability.md).
 
 <table> 
  <tbody> 
@@ -26,9 +26,9 @@ ht-degree: 4%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>可投放性刷新</strong><br /> </td> 
+   <td> <strong>刷新可投放性</strong><br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td>  一旦 <strong>投放能力监控（电子邮件投放能力）</strong> 包安装后，此工作流每晚运行，以定期更新规则列表，并允许主动管理平台可交付性。<br /> </td> 
+   <td>  一旦 <strong>可投放性监控（电子邮件可投放性）</strong> 安装包，此工作流每夜运行以定期更新规则列表，并允许主动管理平台可投放性。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

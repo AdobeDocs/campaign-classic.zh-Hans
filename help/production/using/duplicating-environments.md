@@ -25,99 +25,99 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->如果您無權存取伺服器和資料庫（託管環境），則無法執行下列程式。 請聯絡Adobe。
+>如果您无权访问服务器和数据库（托管环境），则无法执行以下所述的过程。 请联系Adobe。
 
-使用Adobe Campaign需要安裝和設定一個或多個環境：開發、測試、預生產、生產等。
+使用Adobe Campaign需要安装和配置一个或多个环境：开发、测试、预生产、生产等。
 
-每個環境都包含一個Adobe Campaign執行個體，而每個Adobe Campaign執行個體都連結至一或多個資料庫。 應用程式伺服器可以執行一或多個處理作業：幾乎所有處理作業都可直接存取執行處理資料庫。
+每个环境都包含一个Adobe Campaign实例，并且每个Adobe Campaign实例都链接到一个或多个数据库。 应用程序服务器可以执行一个或多个进程：几乎所有这些进程都可以直接访问实例数据库。
 
-本節詳細說明複製Adobe Campaign環境時所套用的程式，即將來源環境還原至目標環境，這會產生兩個相同的工作環境。
+此部分详细介绍用于复制Adobe Campaign环境的过程，即将源环境恢复到目标环境，从而产生两个完全相同的工作环境。
 
 要执行此操作，请应用以下步骤：
 
-1. 在來源環境中的所有執行個體上建立資料庫復本，
-1. 在目標環境的所有執行個體上還原這些復本，
-1. 執行 **nms：freezeInstance.js** 啟動之前，先對目標環境執行燒灼程式檔。
+1. 在源环境中的所有实例上创建数据库的副本，
+1. 在目标环境的所有实例上恢复这些副本，
+1. 运行 **nms：freezeInstance.js** 启动前对目标环境编写的烧灼脚本。
 
-   此程式不會影響伺服器及其設定。
+   此过程不会影响服务器及其配置。
 
    >[!NOTE]
    >
-   >在Adobe Campaign的設定中， **燒灼化** 結合可讓您停止與外界互動的所有程式的動作：記錄、追蹤、傳送、行銷活動工作流程等。\
-   >此步驟是避免傳送訊息多次（一次來自名義環境，另一次來自重複環境）所必需的。
+   >在Adobe Campaign的上下文中， **烧蚀** 可让您停止与外界交互的所有进程（日志、跟踪、投放、活动工作流等）的合并操作。\
+   >此步骤对于避免多次发送消息（一次来自名义环境，一次来自重复环境）是必需的。
 
    >[!IMPORTANT]
    >
-   >一個環境可以包含多個執行個體。 每個Adobe Campaign執行個體都要遵守授權合約。 檢查您的授權合約，瞭解您可以擁有多少環境。\
-   >以下程式可讓您傳輸環境，而不會影響您已安裝的環境和例項數量。
+   >一个环境可以包含多个实例。 每个Adobe Campaign实例都受许可合同的约束。 检查您的许可协议，了解您可以拥有多少个环境。\
+   >通过下面的过程，您可以在不影响已安装的环境和实例数量的情况下传输环境。
 
-### 開始之前 {#before-you-start}
+### 开始之前 {#before-you-start}
 
 >[!IMPORTANT]
 >
->強烈建議您在開始傳輸程式之前，先針對來源和目標環境的所有執行個體執行資料庫的完整備份。 這樣一來，如果發生問題，您就可以還原備份並返回初始設定。
+>我们强烈建议先对源环境和目标环境的所有实例运行数据库的完整备份，然后再开始传输过程。 这样，如果发生问题，您将能够恢复备份并返回到初始配置。
 
-為了讓此程式發揮作用，來源和目標環境必須具有相同數量的執行個體、相同目的（行銷執行個體、傳遞執行個體）和類似設定。 技術設定必須符合軟體先決條件。 兩個環境中都必須安裝相同的元件。
+为了使此过程正常工作，源环境和目标环境必须具有相同的实例数、相同的目的（营销实例、投放实例）和类似的配置。 技术配置必须符合软件先决条件。 必须在两个环境中安装相同的组件。
 
 ## 实施 {#implementation}
 
-### 轉移程式 {#transfer-procedure}
+### 传输过程 {#transfer-procedure}
 
-本節將協助您瞭解透過案例研究將來源環境轉移至目標環境所需的步驟：我們的目標是還原生產環境(**prod** 執行個體)至開發環境(**開發** 執行個體)，以便在儘可能接近「即時」平台的內容中運作。
+本节将帮助您了解通过案例研究将源环境转移到目标环境所需的步骤：我们的目标是恢复生产环境(**prod** 实例)到开发环境(**开发** 实例)，以便在尽可能接近“实时”平台的上下文中工作。
 
-必須謹慎執行下列步驟：複製來源環境資料庫時，某些程式可能仍在進行中。 驗證（下方的步驟3）可防止訊息傳送兩次，並維持資料的一致性。
+必须谨慎执行以下步骤：在复制源环境数据库时，某些进程可能仍在进行中。 验证（下面的步骤3）可防止发送两次消息并保持数据一致性。
 
 >[!IMPORTANT]
 >
->* 下列程式在PostgreSQL語言中有效。 如果SQL語言不同(例如Oracle)，則必須調整SQL查詢。
->* 以下指令適用於的 **prod** 執行個體和 **開發** PostgreSQL下的執行個體。
+>* 以下过程在PostgreSQL语言中有效。 如果SQL语言不同(例如Oracle)，则必须调整SQL查询。
+>* 以下命令适用于的上下文 **prod** 实例和 **开发** Postgresql下的实例。
 >
 
 
-### 步驟1 — 備份來源環境(prod)資料 {#step-1---make-a-backup-of-the-source-environment--prod--data}
+### 步骤1 — 备份源环境(prod)数据 {#step-1---make-a-backup-of-the-source-environment--prod--data}
 
-複製資料庫
+复制数据库
 
-從複製所有來源環境資料庫開始。 作業取決於資料庫引擎，由資料庫管理員負責。
+首先复制所有源环境数据库。 操作取决于数据库引擎，由数据库管理员负责。
 
-在PostgreSQL底下，命令為：
+在PostgreSQL下，命令为：
 
 ```
 pg_dump mydatabase > mydatabase.sql
 ```
 
-### 步驟2 — 匯出目標環境設定（開發） {#step-2---export-the-target-environment-configuration--dev-}
+### 步骤2 — 导出目标环境配置（开发） {#step-2---export-the-target-environment-configuration--dev-}
 
-每個環境的大多數設定元素都不同：外部帳戶（中間來源、路由等）、技術選項（平台名稱、DatabaseId、電子郵件地址和預設URL等）。
+每个环境的大多数配置元素各不相同：外部帐户（中间源、路由等）、技术选项（平台名称、数据库ID、电子邮件地址和默认URL等）。
 
-將來源資料庫儲存在目標資料庫之前，您需要匯出目標環境(dev)設定。 要執行此操作，請匯出這兩個表格的內容： **xtkoption** 和 **nmsextaccount**.
+在将源数据库保存到目标数据库之前，需要导出目标环境(dev)配置。 要执行此操作，请导出这两个表的内容： **xtkoption** 和 **nmsextaccount**.
 
-此匯出可讓您保留開發設定，並僅重新整理開發資料（工作流程、範本、Web應用程式、收件者等）。
+通过此导出，您可以保留开发配置并仅刷新开发数据（工作流、模板、Web应用程序、收件人等）。
 
-要執行此操作，請針對下列兩個元素執行封裝匯出：
+为此，请为以下两个元素执行资源包导出：
 
-* 匯出 **xtk：option** 資料表放入&#39;options_dev.xml&#39;檔案中，不含具有下列內部名稱的記錄：&#39;WdbcTimeZone&#39;、&#39;NmsServer_LastPostUpgrade&#39;和&#39;NmsBroadcast_RegexRules&#39;。
-* 在&#39;extaccount_dev.xml&#39;檔案中，匯出 **nms：extAccount** ID不是0 (@id &lt;> 0)的所有記錄表格。
+* 导出 **xtk：option** 表到“options_dev.xml”文件中，不包含具有以下内部名称的记录：“WdbcTimeZone”、“NmsServer_LastPostUpgrade”和“NmsBroadcast_RegexRules”。
+* 在&#39;extaccount_dev.xml&#39;文件中，导出 **nms：extAccount** 表，用于所有ID不是0 (@id &lt;> 0)的记录。
 
-檢查匯出的選項/帳戶數是否等於每個檔案中要匯出的行數。
+检查导出的选项/帐户数是否等于每个文件中要导出的行数。
 
 >[!NOTE]
 >
->套件匯出中要匯出的行數為1000行。 如果選項數或外部帳戶數超過1000，您必須執行數個匯出。
+>资源包导出中要导出的行数为1000行。 如果选项数或外部帐户数超过1000，则必须执行多次导出。
 > 
 >有关更多信息，请参见[此章节](../../platform/using/working-with-data-packages.md#exporting-packages)。
 
 >[!NOTE]
 >
->匯出nmsextaccount表格時，與外部帳戶相關的密碼（例如中間來源、訊息中心執行、SMPP、IMS和其他外部帳戶的密碼）不會匯出。 請確定您事先可以存取正確的密碼，因為在外部帳戶匯入迴環境後，可能需要重新輸入密碼。
+>导出nmsextaccount表时，与外部帐户相关的密码（例如中间源、消息中心执行、SMPP、IMS和其他外部帐户的密码）不会导出。 请确保您事先可以访问正确的密码，因为在外部帐户导入回环境后，可能需要重新输入这些密码。
 
-### 步驟3 — 停止目標環境（開發） {#step-3---stop-the-target-environment--dev-}
+### 步骤3 — 停止目标环境（开发） {#step-3---stop-the-target-environment--dev-}
 
-您需要停止所有目標環境伺服器上的Adobe Campaign程式。 此作業取決於您的作業系統。
+您需要停止所有目标环境服务器上的Adobe Campaign进程。 此操作取决于您的操作系统。
 
-您可以停止所有處理作業，或僅停止寫入資料庫的處理作業。
+您可以停止所有进程，或仅停止写入数据库的进程。
 
-若要停止所有程式，請使用下列命令：
+要停止所有进程，请使用以下命令：
 
 * 在Windows中：
 
@@ -131,7 +131,7 @@ pg_dump mydatabase > mydatabase.sql
    /etc/init.d/nlserver6 stop
    ```
 
-使用下列命令來檢查所有處理程式是否已停止：
+使用以下命令检查是否已停止所有进程：
 
 ```
 nlserver pdump
@@ -139,100 +139,100 @@ nlserver pdump
 
 >[!NOTE]
 >
->在Windows中， **webmdl** 程式仍可正常運作，而不會影響其他作業。
+>在Windows中， **webmdl** 进程仍可以处于活动状态，而不会影响其他操作。
 
-您也可以檢查是否有任何系統處理序仍在執行中。
+您还可以检查是否没有系统进程仍在运行。
 
-要執行此操作，請使用下列程式：
+为此，请使用以下流程：
 
-* 在Windows中：開啟 **任務管理員** 並檢查是否沒有 **nlserver.exe** 程式。
-* 在Linux中：執行 **ps aux | grep nlserver** 命令並檢查是否沒有 **nlserver** 程式。
+* 在Windows中：打开 **任务管理器** 检查是否没有 **nlserver.exe** 流程。
+* 在Linux中：运行 **ps aux | grep nlserver** 命令，并检查是否存在 **nlserver** 流程。
 
-### 步驟4 — 還原目標環境（開發）中的資料庫 {#step-4---restore-the-databases-in-the-target-environment--dev-}
+### 步骤4 — 恢复目标环境中的数据库（开发） {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
-若要還原目標環境中的來源資料庫，請使用下列命令：
+要在目标环境中恢复源数据库，请使用以下命令：
 
 ```
 psql mydatabase < mydatabase.sql
 ```
 
-### 步驟5 — 燒灼目標環境（開發） {#step-5---cauterize-the-target-environment--dev-}
+### 步骤5 — 烧灼目标环境（开发） {#step-5---cauterize-the-target-environment--dev-}
 
-為避免發生故障，在啟動目標環境時，不得自動執行連結至傳遞傳送和工作流程執行的流程。
+为避免发生故障，在激活目标环境时，不得自动执行链接到投放发送和工作流执行的流程。
 
-要執行此操作，請執行以下命令：
+为此，请运行以下命令：
 
 ```
 nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 ```
 
-### 步驟6 — 檢查燒製 {#step-6---check-cauterization}
+### 步骤6 — 检查烧蚀 {#step-6---check-cauterization}
 
-1. 檢查唯一的deliverypart是否為ID設為0的專案：
+1. 检查唯一的deliverypart是否是ID设置为0的部件：
 
    ```
    SELECT * FROM neolane.nmsdeliverypart;
    ```
 
-1. 檢查傳遞狀態更新是否正確：
+1. 检查投放状态更新是否正确：
 
    ```
    SELECT iState, count(*) FROM neolane.nmsdelivery GROUP BY iState;
    ```
 
-1. 檢查工作流程狀態更新是否正確：
+1. 检查工作流状态更新是否正确：
 
    ```
    SELECT iState, count(*) FROM neolane.xtkworkflow GROUP BY iState;
    SELECT iStatus, count(*) FROM neolane.xtkworkflow GROUP BY iStatus;
    ```
 
-### 步驟7 — 重新啟動目標環境Web程式（開發） {#step-7---restart-the-target-environment-web-process--dev-}
+### 步骤7 — 重新启动目标环境Web进程（开发） {#step-7---restart-the-target-environment-web-process--dev-}
 
-在目標環境中，為所有伺服器重新啟動Adobe Campaign程式。
+在目标环境中，为所有服务器重新启动Adobe Campaign进程。
 
 >[!NOTE]
 >
->在上重新啟動Adobe Campaign之前 **開發** 環境，您可以套用其他安全程式：啟動 **網頁** 僅限模組。
+>在上重新启动Adobe Campaign之前 **开发** 环境中，您可以应用其他安全过程：启动 **Web** 仅限模块。
 >  
->若要這麼做，請編輯執行個體的設定檔案(**config-dev.xml**)，然後為每個模組（mta、stat等）在autoStart=&quot;true&quot;選項前新增&quot;_&quot;字元。
+>为此，请编辑实例的配置文件(**config-dev.xml**)，然后为每个模块（mta、stat等）在autoStart=&quot;true&quot;选项之前添加&quot;_&quot;字符。
 
-執行以下命令以啟動Web程式：
+运行以下命令启动Web进程：
 
 ```
 nlserver start web
 ```
 
-使用以下命令來檢查是否只有Web處理序啟動：
+使用以下命令检查是否只有Web进程已启动：
 
 ```
 nlserver pdump
 ```
 
-檢查使用者端主控台的存取權功能。
+检查对客户端控制台的访问权限是否有效。
 
-### 步驟8 — 將選項和外部帳戶匯入目標環境（開發） {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
+### 步骤8 — 将选项和外部帐户导入目标环境（开发） {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
 
 >[!IMPORTANT]
 >
->在此步驟只應啟動Web程式。 如果不是這種情況，請先停止其他正在執行的程式，然後再繼續
+>在此步骤中只应启动Web进程。 如果不是这种情况，请先停止其他正在运行的进程，然后再继续
 
-首先，在匯入之前檢查檔案數行的值（例如：選項表格的「NmsTracking_Pointer」，以及外部帳戶表格的傳遞或中間來源帳戶）
+首先，在导入之前检查几行文件的值（例如：选项表的“NmsTracking_Pointer”，外部帐户表的交货或中间源帐户）
 
-若要從目標環境資料庫(dev)匯入組態：
+要从目标环境数据库(dev)导入配置，请执行以下操作：
 
-1. 開啟資料庫的Admin Console，並清除ID不是0 (@id &lt;> 0)的外部帳戶（表格nms：extAccount）。
-1. 在Adobe Campaign主控台中，匯入先前透過匯入套件功能建立的options_dev.xml套件。
+1. 打开数据库的Admin Console并清除ID不是0 (@id &lt;> 0)的外部帐户（表nms：extAccount）。
+1. 在Adobe Campaign控制台中，导入之前通过导入包功能创建的options_dev.xml包。
 
-   檢查中的選項是否確實已更新 **[!UICONTROL Administration > Platform > Options]** 節點。
+   检查中的选项是否确实已更新 **[!UICONTROL Administration > Platform > Options]** 节点。
 
-1. 在Adobe Campaign主控台中，匯入先前透過匯入套件功能建立的extaccount_dev.xml
+1. 在Adobe Campaign控制台中，导入之前通过导入资源包功能创建的extaccount_dev.xml
 
-   檢查外部資料庫是否確實已匯入 **[!UICONTROL Administration > Platform > External accounts]** .
+   检查外部数据库是否确实已导入 **[!UICONTROL Administration > Platform > External accounts]** .
 
-### 步驟9 — 重新啟動所有程式並變更使用者（開發） {#step-9---restart-all-processes-and-change-users--dev-}
+### 步骤9 — 重新启动所有进程并更改用户（开发） {#step-9---restart-all-processes-and-change-users--dev-}
 
-若要啟動Adobe Campaign程式，請使用下列命令：
+要启动Adobe Campaign进程，请使用以下命令：
 
 * 在Windows中：
 
@@ -246,10 +246,10 @@ nlserver pdump
    /etc/init.d/nlserver6 start
    ```
 
-使用以下命令來檢查處理程式是否已啟動：
+使用以下命令检查进程是否已启动：
 
 ```
 nlserver pdump
 ```
 
-變更使用者以尋找開發平台上已存在的使用者。
+更改用户以查找开发平台上已存在的用户。

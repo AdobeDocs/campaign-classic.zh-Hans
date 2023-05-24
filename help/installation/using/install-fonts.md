@@ -18,6 +18,6 @@ ht-degree: 0%
 
 
 
-以下是如何将新字体安装到Campaign应用程序服务器。
+以下说明如何将新字体安装到Campaign应用程序服务器。
 
-新字体可以放入 `/usr/local/share/` 文件夹。
+新字体可以放入 `/usr/local/share/` MTA进程运行的所有容器上的文件夹。

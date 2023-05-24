@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 实现IMS
-description: 实现IMS
+title: 实施IMS
+description: 实施IMS
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
@@ -15,22 +15,22 @@ ht-degree: 0%
 
 ---
 
-# 实现IMS{#implementing-ims}
+# 实施IMS{#implementing-ims}
 
 
 
 ## 启用IMS连接 {#enabling-the-ims-connection}
 
-1. 要启用通过IMS连接，请勾选 **[!UICONTROL Connect with an Adobe ID]** 在控制台的连接窗口中。
+1. 要启用通过IMS连接，请选中 **[!UICONTROL Connect with an Adobe ID]** 控制台的“连接”窗口中。
 
    ![](assets/ims_1.png)
 
-1. 输入Adobe ID和密码。 随后将显示Adobe Campaign主屏幕。
+1. 输入您的Adobe ID和密码。 随后将显示Adobe Campaign主屏幕。
 
    ![](assets/ims_2.png)
 
 ## 禁用IMS连接 {#disabling-the-ims-connection}
 
-要禁用通过Adobe ID进行连接，请断开连接，单击 **[!UICONTROL File > Connections]** 取消选中 **[!UICONTROL Connect with an Adobe ID]**.
+要禁用通过Adobe ID的连接，请断开连接，单击 **[!UICONTROL File > Connections]** 和取消选中 **[!UICONTROL Connect with an Adobe ID]**.
 
 ![](assets/ims_4.png)

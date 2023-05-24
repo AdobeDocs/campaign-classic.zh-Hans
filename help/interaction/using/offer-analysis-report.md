@@ -18,19 +18,19 @@ ht-degree: 10%
 
 
 
-的 **[!UICONTROL Offer analysis]** 报表为您提供已接受或已拒绝建议的数量的概述。
+此 **[!UICONTROL Offer analysis]** 报告提供已接受或已拒绝建议数量的概览。
 
 >[!NOTE]
 >
->此功能仅在线可见，且仅对投放管理器可见。
+>此功能仅在线显示，并且仅对投放管理器可见。
 
-统计信息按以下三个条件排序：
+统计信息基于三个标准排序：
 
 * 按日期：
 
    ![](assets/offer_report_perdate.png)
 
-* 按空格：
+* 按空间：
 
    ![](assets/offer_report_perspaces.png)
 
@@ -38,6 +38,6 @@ ht-degree: 10%
 
    ![](assets/offer_report_perdeliveries.png)
 
-数据可以根据报表上半部分提供的各种条件进行过滤。 选择所需的标准后，单击 **[!UICONTROL Refresh]** 链接，以将其应用到报表。
+可以根据报表上半部分提供的各种标准筛选数据。 选择所需的标准后，单击 **[!UICONTROL Refresh]** 链接以将其应用于报表。
 
 ![](assets/offer_report_criteria.png)

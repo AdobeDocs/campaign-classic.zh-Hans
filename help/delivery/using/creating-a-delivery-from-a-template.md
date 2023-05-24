@@ -23,11 +23,11 @@ ht-degree: 7%
 
 ![](assets/s_ncs_user_wizard_select_template.png)
 
-否则，请单击 **[!UICONTROL Select link]** 文件夹来浏览树。
+否则，请单击 **[!UICONTROL Select link]** 字段右侧的文件夹浏览树。
 
 ![](assets/s_ncs_user_wizard_choose_link.png)
 
-从 **[!UICONTROL Folder]** ，或单击 **[!UICONTROL Display sub-levels]** 图标，以在当前目录的子树中显示目录的内容。
+从中选择所需的目录 **[!UICONTROL Folder]** 字段，或单击 **[!UICONTROL Display sub-levels]** 图标，以显示当前目录的子树中的目录内容。
 
 选择要使用的投放模板，然后单击 **[!UICONTROL Ok]**.
 
@@ -41,7 +41,7 @@ ht-degree: 7%
 
 输入投放参数并单击 **[!UICONTROL Send]**.
 
-此操作会在附加到模板的文件夹中生成投放。 此投放的名称是从中创建该投放模板的名称。
+此操作在附加到模板的文件夹中生成投放。 此投放的名称是从中创建该投放的投放模板的名称。
 
 >[!NOTE]
 >

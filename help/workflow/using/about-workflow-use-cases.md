@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 关于工作流用例
-description: 进一步了解使用Campaign Classic工作流可执行的用例
+description: 了解关于您可以使用Campaign Classic工作流执行的用例的更多信息
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
@@ -16,9 +16,9 @@ ht-degree: 66%
 
 
 
-在此部分中，您将发现利用Campaign工作流功能的各种用例。
+在此部分中，您将找到各种利用Campaign工作流功能的用例。
 
-它们将帮助您发现可以使用工作流的不同上下文并响应您的需求。
+它们将帮助您发现可在其中使用工作流的不同上下文并响应您的需求。
 
 ## 投放 {#deliveries}
 
@@ -49,7 +49,7 @@ ht-degree: 66%
 * [创建摘要列表](creating-a-summary-list.md)
 * [丰富数据](enriching-data.md)
 * [使用聚合](using-aggregates.md)
-* [导入使用由控制面板生成的密钥加密的数据](../../platform/using/unzip-decrypt.md)
+* [导入使用控制面板生成的密钥加密的数据](../../platform/using/unzip-decrypt.md)
 * [使用安装在控制面板上的密钥加密和导出数据](how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [使用增量查询每季度更新列表](quarterly-list-update.md)
 * [使用外部重复数据删除活动的合并功能](deduplication-merge.md)

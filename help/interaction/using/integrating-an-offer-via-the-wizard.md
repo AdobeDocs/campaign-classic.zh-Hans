@@ -18,18 +18,18 @@ ht-degree: 2%
 
 
 
-创建投放时，可以使用两种方法来集成选件：
+在创建投放时，可通过两种方法来集成优惠：
 
 * 在投放正文中调用优惠引擎。
-* 通过促销活动的投放大纲引用选件。 此方法通常用于纸面营销活动。
+* 通过营销活动的投放大纲引用优惠。 此方法通常用于纸张营销活动。
 
-## 通过调用优惠引擎进行投放 {#delivering-with-a-call-to-the-offer-engine}
+## 通过调用优惠引擎进行交付 {#delivering-with-a-call-to-the-offer-engine}
 
-要在营销活动期间展示选件，只需根据所选渠道创建经典的投放操作即可。 定义投放内容后，通过单击 **[!UICONTROL Offers]** 图标。
+要在营销活动期间呈现选件，只需基于所选渠道创建经典投放操作即可。 定义投放内容后，通过单击 **[!UICONTROL Offers]** 工具栏中可用的图标。
 
 ![](assets/offer_delivery_009.png)
 
-了解有关直邮投放的更多信息 [在此部分中](../../delivery/using/about-direct-mail-channel.md). 进一步了解营销活动 [在此部分中](../../campaign/using/setting-up-marketing-campaigns.md).
+了解有关直邮投放的更多信息 [在此部分中](../../delivery/using/about-direct-mail-channel.md). 了解有关营销活动的更多信息 [在此部分中](../../campaign/using/setting-up-marketing-campaigns.md).
 
 ### 将选件插入投放的主要步骤 {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -39,21 +39,21 @@ ht-degree: 2%
 
    ![](assets/offer_delivery_001.png)
 
-1. 选择与您的选件环境匹配的空间。
+1. 选择与优惠环境匹配的空间。
 
    ![](assets/offer_delivery_002.png)
 
-1. 要优化引擎的选件选择，请选择要显示的选件所属的类别，或选择一个/多个主题。 我们建议一次只使用其中一个字段，以避免超出限制。
+1. 要优化引擎的选件选择，请选择要显示的选件所属类别或一个/多个主题。 我们建议一次只使用这些字段之一，以避免超出限制。
 
    ![](assets/offer_delivery_003.png)
 
    ![](assets/offer_delivery_004.png)
 
-1. 指定要插入投放正文的选件数量。
+1. 指定要插入到投放正文中的优惠数量。
 
    ![](assets/offer_delivery_005.png)
 
-1. 选择 **[!UICONTROL Exclude non-eligible recipients]** 选项。 有关更多信息，请参阅 [用于调用优惠引擎的参数](#parameters-for-calling-offer-engine).
+1. 选择 **[!UICONTROL Exclude non-eligible recipients]** 选项（如有必要）。 有关更多信息，请参阅 [用于调用优惠引擎的参数](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_006.png)
 
@@ -61,60 +61,60 @@ ht-degree: 2%
 
    ![](assets/offer_delivery_007.png)
 
-1. 使用合并字段将属性插入投放内容。 可用的建议数取决于引擎调用的配置方式，其顺序取决于选件的优先级。
+1. 使用合并字段将属性插入到投放内容中。 可用建议的数目取决于引擎调用的配置方式，其顺序取决于优惠的优先级。
 
    ![](assets/offer_delivery_008.png)
 
-1. 完成内容并照常发送投放。
+1. 按常规方式完成内容并发送投放。
 
    ![](assets/offer_delivery_010.png)
 
 ### 用于调用优惠引擎的参数 {#parameters-for-calling-offer-engine}
 
-* **[!UICONTROL Space]** :选件环境的空间，必须选择该空间才能激活选件引擎。
-* **[!UICONTROL Category]** :选件排序的特定文件夹。 如果未指定类别，则选件引擎将考虑环境中包含的所有选件，除非选择了主题。
-* **[!UICONTROL Themes]** :类别中上游定义的关键词。 这些选件用作过滤器，允许您通过在一组类别中选择选件来优化要显示的选件数量。
-* **[!UICONTROL Number of propositions]** :引擎返回的可插入到投放主体中的选件数。 如果未将选件插入到消息中，则仍会生成选件，但不会显示选件。
-* **[!UICONTROL Exclude non-eligible recipients]** :利用此选项，可激活或取消激活排除符合条件的选件不足的收件人。 合格建议的数目可能低于所要求的建议数目。 如果选中此框，则投放中将排除没有足够建议的收件人。 如果不选择此选项，则不会排除这些收件人，但他们将没有请求的建议数。
-* **[!UICONTROL Do not display anything if no offer is selected]** :此选项允许您选择在其中一个命题不存在时如何处理消息。 选中此框后，将不显示缺少命题的表示，并且此命题的消息中将不显示任何内容。 如果未勾选方框，则在发送期间将取消消息本身，收件人将不再收到任何消息。
+* **[!UICONTROL Space]** ：必须选择优惠环境的空间才能激活优惠引擎。
+* **[!UICONTROL Category]** ：用于对选件进行排序的特定文件夹。 如果未指定类别，则优惠引擎将会考虑环境中包含的所有优惠，除非选择了主题。
+* **[!UICONTROL Themes]** ：在类别中上游定义的关键字。 这些类别可充当过滤器，让您通过在一组类别中选择选件来优化要显示的选件数量。
+* **[!UICONTROL Number of propositions]** ：引擎返回的可插入到投放主体中的选件数。 如果未将选件插入到消息中，则仍会生成选件，但不会显示选件。
+* **[!UICONTROL Exclude non-eligible recipients]** ：利用此选项，可激活或取消激活对没有足够的合格优惠的收件人的排除。 合格建议的数目可能低于请求的建议数目。 如果选中此框，则将从投放中排除没有足够建议的收件人。 如果不选择此选项，这些收件人将不会被排除，但他们将不会具有所请求数量的建议。
+* **[!UICONTROL Do not display anything if no offer is selected]** ：利用此选项可选择在某个建议不存在时如何处理消息。 选中此框后，将不显示缺少的建议的表示形式，并且此建议的消息中不会显示任何内容。 如果未选中该框，则消息本身将在发送期间被取消，收件人将不再收到任何消息。
 
 ### 在投放中插入优惠建议 {#inserting-an-offer-proposition-into-a-delivery}
 
-要呈现的选件的表示形式通过合并字段插入到投放的正文中。 在优惠引擎调用的参数中定义建议的数量。
+要呈现的优惠表示形式通过合并字段插入到投放正文中。 建议数量在优惠引擎调用的参数中定义。
 
-可以使用选件的字段或（如果是电子邮件）渲染功能对投放进行个性化。
+可以使用优惠的字段或渲染函数（如果是电子邮件）对投放进行个性化。
 
 ![](assets/offer_delivery_011.png)
 
-## 使用投放提交大纲 {#delivering-with-delivery-outlines}
+## 使用投放大纲投放 {#delivering-with-delivery-outlines}
 
 您还可以使用投放大纲在投放中显示选件。
 
-有关投放大纲的更多信息，请参阅 [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) 的双曲余切值。
+有关投放概要的更多信息，请参阅 [营销活动 — MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) 指南。
 
 1. 创建新营销活动或访问现有营销活动。
 1. 通过营销活动的 **[!UICONTROL Edit]** > **[!UICONTROL Documents]** 选项卡。
-1. 添加大纲，然后在其中插入所需数量的选件，方法是右键单击该大纲并选择 **[!UICONTROL New]** > **[!UICONTROL Offer]**，然后保存营销活动。
+1. 添加大纲，然后根据需要插入任意数量的选件，方法是右键单击大纲并选择 **[!UICONTROL New]** > **[!UICONTROL Offer]**，然后保存营销策划。
 
    ![](assets/int_compo_offre1.png)
 
-1. 创建投放，其投放大纲将您有权访问（例如直邮投放）。
+1. 创建一个投放概要（例如，直邮投放）可供您访问的投放。
 1. 编辑投放时，单击 **[!UICONTROL Select a delivery outline]**.
 
    >[!NOTE]
    >
-   >根据投放类型，此选项可在 **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** 菜单（例如，电子邮件投放）。
+   >根据投放类型，此选项可在以下位置找到： **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** 菜单（例如电子邮件投放）。
 
    ![](assets/int_compo_offre2.png)
 
-1. 使用 **[!UICONTROL Offers]** 按钮，则可以配置选件空间以及要在投放中显示的选件数量。
+1. 使用 **[!UICONTROL Offers]** 按钮时，您可以配置投放中要呈现的优惠空间以及优惠数量。
 
    ![](assets/int_compo_offre3.png)
 
-1. 使用个性化字段将建议添加到投放正文中(有关更多信息，请参阅 [在投放中插入优惠建议](#inserting-an-offer-proposition-into-a-delivery) 部分)，或者对于直邮投放，可通过编辑提取文件格式。
+1. 使用个性化字段将建议添加到投放正文中(有关更多信息，请参阅 [在投放中插入优惠建议](#inserting-an-offer-proposition-into-a-delivery) 部分)，如果是直邮投放，则通过编辑提取文件格式进行检索。
 
-   将从投放大纲中引用的选件中选择建议。
+   将从投放概要中引用的优惠中选择建议。
 
    >[!NOTE]
    >
-   >仅当选件直接在投放中生成时，有关选件排名和权重的信息才会保存在建议表中。
+   >仅当优惠直接在投放中生成时，有关优惠排名和权重的信息才保存在建议表中。

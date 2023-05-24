@@ -13,25 +13,25 @@ ht-degree: 1%
 
 # 筛选模式{#filtering-schemas}
 
-## 系统过滤器 {#system-filters}
+## 系统筛选器 {#system-filters}
 
-您可以根据特定用户的权限筛选对架构的访问权限。 系统过滤器允许您使用 **readAccess** 和 **writeAccess** 参数。
+您可以筛选对特定用户的架构访问权限，具体取决于其权限。 通过系统筛选器，您可以使用管理架构中详述的实体的读取和写入权限 **readAccess** 和 **writeraccess** 参数。
 
 >[!NOTE]
 >
 >此限制仅适用于非技术用户：具有相关权限或使用工作流的技术用户将能够检索和更新数据。
 
-* **readAccess**:提供对架构数据的只读访问权限。
+* **readAccess**：提供对架构数据的只读访问权限。
 
-   **警告**  — 必须使用相同的限制设置所有链接的表。 此配置可能会影响性能。
+   **警告**  — 所有链接表都必须设置相同的限制。 此配置可能会影响性能。
 
-* **writeAccess**:提供对架构数据的写入访问权限。
+* **writeraccess**：提供对架构数据的写入权限。
 
-这些过滤器在主 **元素** 架构的级别和（如以下示例所示）可以采用以限制访问的方式来形成。
+这些筛选器输入在主页面 **元素** 架构的级别和可以形成来限制访问，如以下示例所示。
 
 * 限制写入权限
 
-   在此，过滤器用于禁止在没有ADMINISTRATION权限的情况下对操作员的架构具有WRITE权限。 这意味着只有管理员才具有此架构描述的实体的写入权限。
+   此处，过滤器用于禁止没有管理权限的运算符在架构上具有“写入”权限。 这意味着只有管理员才对此架构描述的实体具有写入权限。
 
    ```
    <sysFilter name="writeAccess">      
@@ -39,9 +39,9 @@ ht-degree: 1%
    </sysFilter>
    ```
 
-* 限制读和写权限：
+* 限制读取和写入权限：
 
-   在此，过滤器用于禁止所有运算符对架构的读取和写入权限。 仅 **内部** 帐户，由表达式“$(loginId)!=0”，具有这些权限。
+   此处，该过滤器用于禁止所有操作员在架构上同时具有“读取”和“写入”权限。 仅 **内部** 帐户，由表达式“$(loginId)”表示！=0”，具有这些权限。
 
    ```
    <sysFilter name="readAccess"> 
@@ -53,59 +53,59 @@ ht-degree: 1%
    </sysFilter>
    ```
 
-   可能 **expr** 用于定义条件的属性值为TRUE或FALSE。
+   可能 **表达式** 用于定义条件的属性值是TRUE或FALSE。
 
 >[!NOTE]
 >
->如果未指定过滤器，则所有运算符都将具有架构的读写权限。
+>如果未指定筛选器，则所有操作员都将具有架构的读写权限。
 
-## Protect内置模式 {#protecting-built-in-schemas}
+## Protect内置架构 {#protecting-built-in-schemas}
 
-默认情况下，内置架构仅可通过具有ADMINISTRATION权限的操作员的WRITE权限访问：
+默认情况下，只有具有管理权限的操作员才可以通过“写入”权限访问内置架构：
 
-* ncm:publishing
-* nl：监控
-* nms:calendar
-* xtk:builder
+* ncm：publishing
+* nl：monitoring
+* nms：calendar
+* xtk：builder
 * xtk：连接
-* xtk:dbInit
-* xtk:entityBackupNew
-* xtk:entityBackupOriginal
-* xtk:entityOriginal
-* xtk:form
-* xtk:funcList
-* xtk:fusion
-* xtk:image
-* xtk:javascript
-* xtk:jssp
-* xtk:jst
-* xtk:navtree
-* xtk:operatorGroup
-* xtk:package
-* xtk:queryDef
-* xtk:resourceMenu
-* xtk:rights
-* xtk:schema
-* xtk:scriptContext
-* xtk:specFile
-* xtk:sql
-* xtk:sqlSchema
-* xtk:srcSchema
-* xtk:strings
-* xtk:xslt
+* xtk：dbInit
+* xtk：entityBackupNew
+* xtk：entityBackupOriginal
+* xtk：entityOriginal
+* xtk：form
+* xtk：funcList
+* xtk：fusion
+* xtk：image
+* xtk：javascript
+* xtk：jssp
+* xtk：jst
+* xtk：navtree
+* xtk：operatorGroup
+* xtk：package
+* xtk：queryDef
+* xtk：resourceMenu
+* xtk：rights
+* xtk：schema
+* xtk：scriptContext
+* xtk：specFile
+* xtk：sql
+* xtk：sqlSchema
+* xtk：srcSchema
+* xtk：字符串
+* xtk：xslt
 
 >[!IMPORTANT]
 >
->的读取和写入权限 **xtk:sessionInfo** 架构只能由Adobe Campaign实例的内部帐户访问。
+>的读写权限 **xtk：sessionInfo** 架构只能由Adobe Campaign实例的内部帐户访问。
 
-## 修改内置架构的系统筛选器 {#modifying-system-filters-of-built-in-schemas}
+## 修改内置模式的系统筛选器 {#modifying-system-filters-of-built-in-schemas}
 
-您仍然可以修改现成架构的系统筛选器，由于与旧版本存在兼容性问题，这些架构默认受到保护。
+您仍然可以修改现成架构的系统筛选器，由于与旧版本的兼容性问题，这些筛选器默认受保护。
 
 >[!NOTE]
 >
->但是，Adobe建议您不要修改默认参数，以确保最佳安全性。
+>但是，Adobe建议您不要修改默认参数以确保最佳安全性。
 
 1. 为相关架构创建扩展或打开现有扩展。
-1. 添加子元素 **`<sysfilter name="<filter name>" _operation="delete"/>`** 在主元素中，删除源架构中相同下的过滤器应用程序。
-1. 如果需要，可以添加新过滤器，详情请参阅 [系统过滤器](#system-filters).
+1. 添加子元素 **`<sysfilter name="<filter name>" _operation="delete"/>`** 在主元素中删除源架构中相同下的过滤器应用程序。
+1. 如果需要，您可以添加新过滤器，如中所述 [系统筛选器](#system-filters).

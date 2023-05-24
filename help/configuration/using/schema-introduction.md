@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 模式参考
-description: 架构参考列表
+title: 架构引用
+description: 架构引用列表
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
@@ -11,11 +11,11 @@ ht-degree: 21%
 
 ---
 
-# 模式参考 {#schema-reference}
+# 架构引用 {#schema-reference}
 
-在编辑模式时，可使用基于源模式(xtk:srcSchema)的审批系统。 在使用“数据库结构更新……”更新数据库时，也会发现一些错误 向导。
+编辑架构时，可以使用基于源架构(xtk：srcSchema)的审批系统。 使用“数据库结构更新……”向导更新数据库时，也可能会发现一些错误。
 
-默认情况下，在Adobe Campaign架构中，所有布尔类型属性都为“false”。 要激活它们，您需要在架构中指定属性并将其值设置为“true”。
+默认情况下，在Adobe Campaign架构中，所有布尔类型属性均为“false”。 要激活它们，您需要在架构中指定属性，并将其值设置为“true”。
 
 引用列表：
 

@@ -19,19 +19,19 @@ ht-degree: 3%
 
 
 
-若為過載伺服器，可能會超過連線臨界值。 無論如何，找出原因都相當實用。
+对于重载服务器，可能会超过连接阈值。 无论如何，查明原因都很有用。
 
-有三個不同的臨界值：
+有三种不同的阈值：
 
-* 此 **Web連線閾值**，已在網頁伺服器中設定。 若要修改它，請連絡您的系統管理員。
+* 此 **Web连接阈值**，已在Web服务器中配置。 要修改它，请联系您的系统管理员。
 
-* 此 **資料庫連線閾值**. 若要修改它，請連絡您的資料庫管理員。
+* 此 **数据库连接阈值**. 要修改它，请与数据库管理员联系。
 
-* 此 **Adobe Campaign連線臨界值**，有兩個地方可用：
+* 此 **Adobe Campaign连接阈值**，可在以下两个位置使用：
 
-   * **Tomcat** side：所有實際送達Adobe Campaign Tomcat使用者端的查詢。
+   * **Tomcat** side：所有查询实际到达了Adobe Campaign Tomcat客户端。
 
-      此臨界值設定於 **nl6/tomcat-8/conf/server.xml** 檔案。 此 **maxThreads** attribute可讓您增加一次處理的查詢數臨界值。 例如，可變更為250。
+      此阈值配置于 **nl6/tomcat-8/conf/server.xml** 文件。 此 **maxThreads** 通过属性，可增加一次处理的查询数量的阈值。 例如，可以将其更改为250。
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -45,9 +45,9 @@ ht-degree: 3%
                   unpackWARs="true" autoDeploy="true">
       ```
 
-   * **資料庫**：由處理程式同時在資料庫上開啟的所有連線集。
+   * **数据库**：由进程在数据库上同时打开的所有连接集。
 
-      此臨界值是在檔案中設定的 **nl6/conf/serverConf.xml**. 此 **maxCnx** 屬性位於 **資料來源集區** 可讓您增加同時處理的查詢臨界值。
+      此阈值在文件中配置 **nl6/conf/serverConf.xml**. 此 **maxCnx** 属性位于 **数据源池** 可让您提高同时处理的查询的阈值。
 
       ```
           <!-- Data source

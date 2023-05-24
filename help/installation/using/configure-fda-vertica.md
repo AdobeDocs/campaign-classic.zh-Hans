@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 配置对Vertica analytics的访问权限
-description: 了解如何在FDA中配置对Vertica analytics的访问
+description: 了解如何在FDA中配置对Vertica analytics的访问权限
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
@@ -18,27 +18,27 @@ ht-degree: 0%
 
 
 
-使用Campaign **联合数据访问** (FDA)选项，用于处理存储在外部数据库中的信息。 请按照以下步骤配置对 [!DNL Vertica Analytics].
+使用Campaign **联合数据访问** (FDA)用于处理存储在外部数据库中的信息的选项。 按照以下步骤配置对的访问权限 [!DNL Vertica Analytics].
 
-1. 配置 [!DNL Vertica Analytics] on [CentOS](#vertica-centos), [Windows](#vertica-windows) 或 [德比安](#vertica-debian)
+1. 配置 [!DNL Vertica Analytics] 日期 [CentOS](#vertica-centos)， [Windows](#vertica-windows) 或 [Debian](#vertica-debian)
 1. 配置 [!DNL Vertica Analytics] [外部帐户](#vertica-external) 在Campaign中
 
 ![](assets/snowflake_3.png)
 
-## vertica analyticsCentOS {#vertica-centos}
+## CentOS上的Vertica analytics {#vertica-centos}
 
-配置 [!DNL Vertica Analytics] 在CentOS上，执行以下步骤：
+配置 [!DNL Vertica Analytics] 在CentOS上，请执行以下步骤：
 
-1. 下载用于 [!DNL Vertica Analytics]. [单击此处](https://www.vertica.com/download/vertica/client-drivers/) 并下载最新的Linux RPM。
+1. 下载的ODBC驱动程序 [!DNL Vertica Analytics]. [单击此处](https://www.vertica.com/download/vertica/client-drivers/) 并下载最新的Linux RPM。
 
-1. 然后，您需要使用以下命令安装unixODBC:
+1. 然后，您需要使用以下命令安装unixODBC：
 
    ```
    yum search unixODBC
    yum install unixODBC.x86_64
    ```
 
-1. 如果您之前已安装 [!DNL Vertica Analytics] 服务器上，将已安装ODBC驱动程序。 在这种情况下，请按如下方式更新驱动器：
+1. 如果您之前安装了 [!DNL Vertica Analytics] 服务器，将安装ODBC驱动程序。 在这种情况下，请按如下方式更新驱动器：
 
    ```
    #Switch to root
@@ -77,27 +77,27 @@ ht-degree: 0%
    rm vertica-client-x.x.x-x.x86_64.rpm
    ```
 
-1. 在Adobe Campaign中，您随后可以配置 [!DNL Vertica Analytics] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [此部分](#vertica-external).
+1. 然后，您可以在Adobe Campaign中配置 [!DNL Vertica Analytics] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [本节](#vertica-external).
 
-## vertica analytics {#vertica-windows}
+## Windows上的Vertica analytics {#vertica-windows}
 
-1. 下载 [用于Windows的ODBC驱动程序](https://www.vertica.com/download/vertica/client-drivers/). 要安装Windows驱动程序，您需要启用.NET Framework 3.5，否则安装向导将尝试自动启用并下载它。
+1. 下载 [适用于Windows的ODBC驱动程序](https://www.vertica.com/download/vertica/client-drivers/). 要安装Windows驱动程序，您需要启用.NET Framework 3.5，否则安装向导将尝试自动启用并下载它。
 
-1. 在Windows中配置ODBC驱动程序。 有关更多信息，请参阅 [本页](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
+1. 在Windows中配置ODBC驱动程序。 有关更多信息，请参阅 [此页面](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 
-1. 在Adobe Campaign中，您随后可以配置 [!DNL Vertica Analytics] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [此部分](#vertical-external).
+1. 然后，您可以在Adobe Campaign中配置 [!DNL Vertica Analytics] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [本节](#vertical-external).
 
-## vertica analyticsDebian {#vertica-debian}
+## DebianVertica analytics {#vertica-debian}
 
-1. 下载用于 [!DNL Vertica Analytics]. [单击此处](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) 开始下载。
+1. 下载的ODBC驱动程序 [!DNL Vertica Analytics]. [单击此处](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) 开始下载。
 
-1. 然后，您需要使用以下命令安装unixODBC:
+1. 然后，您需要使用以下命令安装unixODBC：
 
    ```
    apt-get install unixODBC
    ```
 
-1. 如果您之前已安装 [!DNL Vertica Analytics] 服务器上，将已安装ODBC驱动程序。 在这种情况下，请按如下方式更新驱动器：
+1. 如果您之前安装了 [!DNL Vertica Analytics] 服务器，将安装ODBC驱动程序。 在这种情况下，请按如下方式更新驱动器：
 
    ```
    #Switch to root
@@ -139,13 +139,13 @@ ht-degree: 0%
    Port = 5433
    ```
 
-1. 在Adobe Campaign中，您随后可以配置 [!DNL Vertica Analytics] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [此部分](#vertica-external).
+1. 然后，您可以在Adobe Campaign中配置 [!DNL Vertica Analytics] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [本节](#vertica-external).
 
 ## vertica analytics外部帐户 {#vertica-external}
 
-您需要创建 [!DNL Vertica Analytics] 外部帐户将Campaign实例连接到 [!DNL Vertica Analytics] 外部数据库。
+您需要创建 [!DNL Vertica Analytics] 用于将Campaign实例连接到 [!DNL Vertica Analytics] 外部数据库。
 
-1. 从Campaign **[!UICONTROL Explorer]**，单击 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. 来自营销活动 **[!UICONTROL Explorer]**，单击 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. 单击 **[!UICONTROL New]**。
 
@@ -155,13 +155,13 @@ ht-degree: 0%
 
    * **[!UICONTROL Type]**: [!DNL Vertica Analytics]
 
-   * **[!UICONTROL Server]**:的URL [!DNL Vertica Analytics] 服务器
+   * **[!UICONTROL Server]**：的URL [!DNL Vertica Analytics] 服务器
 
-   * **[!UICONTROL Account]**:用户的名称
+   * **[!UICONTROL Account]**：用户的名称
 
-   * **[!UICONTROL Password]**:用户帐户密码
+   * **[!UICONTROL Password]**：用户帐户密码
 
-   * **[!UICONTROL Database]**:数据库的名称
+   * **[!UICONTROL Database]**：数据库的名称
 
    ![](assets/vertica.png)
 
@@ -169,5 +169,5 @@ ht-degree: 0%
 
 | Option | 说明 |
 |---|---|
-| 时区名称 | 默认为空，这表示使用Campaign Classic应用程序服务器的系统时区。 可以使用选项强制使用TIMEZONE会话参数。 |
+| 时区名称 | 默认情况下为空，这意味着使用Campaign Classic应用程序服务器的系统时区。 选项可用于强制使用时区会话参数。 |
 

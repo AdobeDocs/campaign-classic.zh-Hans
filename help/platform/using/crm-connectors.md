@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: CRM 连接器
-description: Campaign中的CRM连接器快速入门
+description: Campaign中的CRM连接器入门
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
@@ -26,16 +26,16 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 >[!NOTE]
 >
->此功能在Adobe Campaign中通过 **CRM连接器** 专用包。
+>此功能可在Adobe Campaign中通过 **CRM连接器** 专用包。
 
 
 ### 兼容系统 {#compatible-crm-systems-and-limitations}
 
-Campaign中详细介绍了支持的CRM和版本 [兼容性矩阵](../../rn/using/compatibility-matrix.md).
+有关支持的CRM和版本的详情，请参阅Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >
->CRM连接器只能与安全URL(https)一起使用。
+>CRM连接器仅适用于安全URL (https)。
 
 ### 实施步骤 {#crm-implementation-steps}
 

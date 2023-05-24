@@ -21,9 +21,9 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->作为v7用户，要能够进一步，请确保在您的系统上启用了AdobeIdentity Management系统(IMS)。 [了解详情](../../integrations/using/about-adobe-id.md)。
+>作为v7用户，为了能够继续下一步操作，请确保在您的系统上启用了AdobeIdentity Management System (IMS) 。 [了解详情](../../integrations/using/about-adobe-id.md)。
 
-为您的组织启用IMS后，您可以请求配置与Campaign的People核心服务/Audience Manager集成。 为此，请发送电子邮件至 [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) ，并提供以下信息：
+为您的组织启用IMS后，您可以请求配置People核心服务/Audience Manager与Campaign的集成。 为此，请发送电子邮件至 [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) ，并提供以下信息：
 
 <table> 
  <tbody> 
@@ -37,15 +37,15 @@ ht-degree: 16%
   </tr> 
   <tr> 
    <td> <strong>组织 ID</strong><br /> </td> 
-   <td> 您的组织ID。 <br> 要查找您的组织ID，请参阅 <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans">本页</a></td> 
+   <td> 您的组织ID。 <br> 要查找您的组织ID，请参阅 <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans">此页面</a></td> 
   </tr> 
   <tr> 
    <td> <strong>环境</strong><br /> </td> 
    <td> 示例：生产 </td> 
   </tr> 
   <tr> 
-   <td> <strong>AAM或People Service</strong><br /> </td> 
-   <td> 示例：Adobe Audience Manager。 请务必提及您是否拥有Audience Manager许可证。</td> 
+   <td> <strong>AAM或人员服务</strong><br /> </td> 
+   <td> 示例： Adobe Audience Manager。 请务必说明您是否拥有Audience Manager许可证。</td> 
   </tr> 
   <tr> 
    <td> <strong>声明的ID或访客ID</strong><br /> </td> 

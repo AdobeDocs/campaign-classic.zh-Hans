@@ -18,48 +18,48 @@ ht-degree: 39%
 
 
 
-Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安装目录的目录。 本节列出了 **serverConf.xml** 文件。
+Adobe Campaign的整体配置在中定义 **serverConf.xml** 文件，位于 **会议** 安装目录的目录。 此部分列出了的所有不同节点和参数 **serverConf.xml** 文件。
 
 >[!NOTE]
 >
->只能通过Adobe对由Adobe托管的部署执行服务器端配置。 要了解有关不同部署的更多信息，请参阅 [托管模型](../../installation/using/hosting-models.md) 或 [本页](../../installation/using/capability-matrix.md). 下面介绍了托管和混合型号的安装和配置步骤 [部分](../../installation/using/hosting-models.md).
+>对于由Adobe托管的部署，只能由Adobe执行服务器端配置。 要了解有关不同部署的更多信息，请参阅 [托管模型](../../installation/using/hosting-models.md) 部分或至 [此页面](../../installation/using/capability-matrix.md). 本指南介绍了托管和混合模型的安装和配置步骤 [部分](../../installation/using/hosting-models.md).
 
-第一个参数位于 **共享** 节点。 这些值与实例相关。 所有nlserver命令（nlserver web、nlserver wfserver等）都可能使用它们。 其他部分与特定nlserver子命令相关。
+第一个参数位于 **已共享** 节点。 这些属性与实例相关。 它们可能被所有nlserver命令（ nlserver web 、 nlserver wfserver等）使用。 其他部分与特定的nlserver子命令相关。
 
 **共享参数**
 
 * [身份验证](#authentication)
-* [dataStore](#datastore)
+* [数据存储](#datastore)
 * [dnsConfig](#dnsconfig)
 * [执行](#exec)
 * [htmlToPdf](#htmltopdf)
 * [ims](#ims)
-* [javaScript](#javascript)
-* [mailExchanger](#mailexchanger)
+* [javascript](#javascript)
+* [mailExchange](#mailexchanger)
 * [模块](#module)
 * [监测](#monitoring)
-* [乌孔夫](#ooconv)
+* [ooconv](#ooconv)
 * [proxyConfig](#proxyconfig)
-* [threadPool](#threadpool)
+* [线程池](#threadpool)
 * [urlPermission](#urlpermission)
 * [xtkJobs](#xtkjobs)
 
 **其他参数**
 
-* [存档](#archiving)
+* [归档](#archiving)
 * [inMail](#inmail)
-* [interactiond](#interactiond)
+* [交互](#interactiond)
 * [mta](#mta)
 * [nmac](#nmac)
 * [流水线](#pipelined)
 * [修复](#repair)
-* [securityZone](#securityzone)
+* [安全区域](#securityzone)
 * [短信](#sms)
 * [stat](#stat)
 * [syslogd](#syslogd)
 * [跟踪](#tracking)
 * [trackinglogd](#trackinglogd)
-* [web](#web)
+* [Web](#web)
 * [wfserver](#wfserver)
 
 ## 身份验证 {#authentication}
@@ -83,10 +83,10 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
-   <td> defaultMode<br /> </td> 
+   <td> 默认模式<br /> </td> 
    <td> 默认识别模式.<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> “nl”<br /> </td> 
+   <td> 'nl'<br /> </td> 
   </tr> 
   <tr> 
    <td> longSessionTimeOutSec<br /> </td> 
@@ -102,7 +102,7 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
   </tr> 
   <tr> 
    <td> sessionCacheSec<br /> </td> 
-   <td> 缓存持续时间：会话信息的缓存时间（以秒为单位）。<br /> </td> 
+   <td> 缓存持续时间：会话信息的缓存（以秒为单位）。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -117,7 +117,7 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
 
 ### XTK {#xtk}
 
-以下是 **authentication > XTK** 节点：
+以下是 **身份验证> XTK** 节点：
 
 <table> 
  <thead> 
@@ -130,23 +130,23 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
  </thead> 
  <tbody> 
   <tr> 
-   <td> internalPassword<br /> </td> 
+   <td> internalPsword<br /> </td> 
    <td> 内部帐号的密码.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> internalSecurityZone<br /> </td> 
-   <td> 内部帐户安全区：内部帐户的授权区域。<br /> </td> 
+   <td> 内部帐户安全区：内部帐户的授权区。<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> “lan”<br /> </td> 
+   <td> 'lan'<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## dataStore {#datastore}
+## 数据存储 {#datastore}
 
-以下是 **dataStore** 节点。 这是定义服务器数据源的位置。
+以下是 **数据存储** 节点。 这是定义服务器数据源的位置。
 
 <table> 
  <thead> 
@@ -166,49 +166,49 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
   </tr> 
   <tr> 
    <td> extraSandboxedDirectories<br /> </td> 
-   <td> 附加沙盒目录：要添加到沙盒中的其他路径（逗号分隔）。<br /> </td> 
+   <td> 额外的沙盒目录：要添加到沙盒中的其他路径（以逗号分隔）。<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> “/home/customers/,/sftp/” <br /> </td> 
+   <td> `/home/customers/，/sftp/` <br /> </td> 
   </tr> 
   <tr> 
    <td> formCacheTimeToLive<br /> </td> 
-   <td> 表单缓存过期延迟：超时时间（以秒为单位），在此时间后，缓存条目将失效。 O表示缓存条目仅在发布时刷新。<br /> </td> 
+   <td> 表单缓存过期延迟：缓存条目失效后的超时（以秒为单位）。 O表示仅在发布时刷新缓存条目。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> 主机<br /> </td> 
-   <td> DNS掩码：此实例提供的DNS掩码列表(以逗号分隔，可使用*和？ 模式)。<br /> </td> 
+   <td> DNS掩码：此实例提供的DNS掩码的列表(用逗号分隔，可以使用*和？ 模式)。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '*'<br /> </td> 
   </tr> 
   <tr> 
    <td> interactionCacheTimeToLive<br /> </td> 
-   <td> 交互JSSP缓存过期延迟：超时时间（以秒为单位），在此时间后，缓存条目将失效。 负值表示缓存始终无效。 “0”、空值或无效值被视为60。<br /> </td> 
+   <td> 交互JSSP缓存过期延迟：缓存条目失效后的超时（以秒为单位）。 负值表示缓存始终失效。 “0”、空值或无效值视为60。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
-   <td> 朗<br /> </td> 
-   <td> 实例语言（枚举）。 可能的值包括“fr_FR”(Français)、“en_GB”(英语(UK))、“en_US”(英语（美国）)、“de_DE”(Deutsch)和“ja_JP”（日语）。<br /> </td> 
+   <td> lang<br /> </td> 
+   <td> 实例语言（明细列表）。 可能的值包括“fr_FR”（法国）、“en_GB”(英语（英国）)、“en_US”(英语（美国）)、“de_DE”（德语）和“ja_JP”（日语）。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> 'en_US'<br /> </td> 
   </tr> 
   <tr> 
-   <td> uploadDirectory<br /> </td> 
-   <td> 上传文件夹：上载数据的目标目录的路径。<br /> </td> 
+   <td> uploaddirectory<br /> </td> 
+   <td> 上载文件夹：上载数据的目标目录的路径。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> “$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/upload/” <br /> </td> 
   </tr> 
   <tr> 
    <td> uploadAllowlist<br /> </td> 
-   <td> 要下载的授权文件，用“,”分隔。字符串必须是有效的常规 Java 表达式。请参阅 <a href="file-res-management.md" target="_blank">限制可上载的文件</a>.<br /> </td> 
+   <td> 要下载的授权文件，用“,”分隔。字符串必须是有效的常规 Java 表达式。参见 <a href="file-res-management.md" target="_blank">限制可上载文件</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '.+' <br /> </td> 
   </tr> 
   <tr> 
    <td> useVault<br /> </td> 
-   <td> 将密钥存储在保管库中：使用Hashicorp Vault。<br /> </td> 
+   <td> 将密码存储在保险库中：使用Hashicorp保险库。<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
@@ -216,11 +216,11 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
    <td> vaultSecretPath<br /> </td> 
    <td> 保险库中的密码路径<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> “/v1/secret/campaign/”<br /> </td> 
+   <td> '/v1/secret/campaign/'<br /> </td> 
   </tr> 
   <tr> 
    <td> vaultTokenPath<br /> </td> 
-   <td> 包含保险库令牌的文件的本地路径. $(HOME)可以在此路径中使用（但不能用到其他env变量）。<br /> </td> 
+   <td> 包含保险库令牌的文件的本地路径. $(HOME)可以在此路径中使用（但不能在其他env变量中使用）。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> “$(HOME)/.vaulttoken”<br /> </td> 
   </tr> 
@@ -232,15 +232,15 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
   </tr> 
   <tr> 
    <td> viewCacheTimeToLive<br /> </td> 
-   <td> 视图缓存的有效期：超时时间（以秒为单位），在此时间后，缓存条目将失效。 负值表示缓存始终无效。 “0”、空值或无效值被视为60。<br /> </td> 
+   <td> 视图缓存的有效期：缓存条目失效后的超时（以秒为单位）。 负值表示缓存始终失效。 “0”、空值或无效值视为60。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
-   <td> workingDirectory<br /> </td> 
+   <td> 工作目录<br /> </td> 
    <td> 工作目录的 XPath。<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> workingDirectory :工作目录的XPath。 默认：“$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/workspace/”<br /> </td> 
+   <td> workingDirectory ：工作目录的XPath。 默认值：“$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/workspace/”<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -271,9 +271,9 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
  </tbody> 
 </table>
 
-### dataSource {#datasource}
+### 数据源 {#datasource}
 
-以下是 **dataStore > dataSource** 节点。
+以下是 **数据存储>数据源** 节点。
 
 <table> 
  <thead> 
@@ -319,7 +319,7 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 加密<br /> </td> 
+   <td> 已加密<br /> </td> 
    <td> 加密的密码<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> </td> 
@@ -337,8 +337,8 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 提供程序<br /> </td> 
-   <td> 类型（枚举）。 可能的值包括：“Oracle”、“MSSQL”(Microsoft SQL Server)、“PostgreSQL”(PostgreSQL)、“Teradata”、“DB2”、“MySQL”、“Netezza”、“AsterData”、“SAPHANA”(SAP HANA)、“RedShift”(Amazon Redshift)、“ODBC”(SybaseASE，Sybase IQ)、“中继”（HTTP到远程数据库）。<br /> </td> 
+   <td> 提供商<br /> </td> 
+   <td> 类型（明细列表）。 可能的值包括“Oracle”、“MSSQL”(Microsoft SQL Server)、“PostgreSQL”(PostgreSQL)、“Teradata”、“DB2”、“MySQL”、“Netezza”、“AsterData”、“SAPHANA”(SAP HANA)、“RedShift”(Amazon Redshift)、“ODBC”(ODBC(Sybase ASE、Sybase IQ))、“中继”（到远程数据库的HTTP中继）。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -362,7 +362,7 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
   </tr> 
   <tr> 
    <td> useTimestampTZ<br /> </td> 
-   <td> 带时区的日期字段：请参阅 <a href="../../installation/using/time-zone-management.md" target="_blank">时区管理</a>.<br /> </td> 
+   <td> 带有时区的日期字段：请参阅 <a href="../../installation/using/time-zone-management.md" target="_blank">时区管理</a>.<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> </td> 
   </tr> 
@@ -388,7 +388,7 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
  </tbody> 
 </table>
 
-在 **dataStore > dataSource >池** 节点，配置关联连接池的参数：
+在 **数据存储>数据源>池** 节点，配置关联连接池的参数：
 
 <table> 
  <thead> 
@@ -411,7 +411,7 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> 拒绝新连接之前允许的连接的最大数目。请参阅 <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技术说明</a>.<br /> </td> 
+   <td> 拒绝新连接之前允许的连接的最大数目。查看此 <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技术说明</a>.<br /> </td> 
    <td> 短整型<br /> </td> 
   </tr> 
   <tr> 
@@ -424,7 +424,7 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
 
 ### virtualDir {#virtualdir}
 
-以下是 **dataStore > virtualDir** 节点。 这是虚拟目录到实际目录映射的配置。
+以下是 **dataStore > virtualDir** 节点。 这是虚拟目录到真实目录映射的配置。
 
 有关其他信息，请参阅 [管理公共资源](file-res-management.md).
 
@@ -458,9 +458,9 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
 <virtualDir name="publicFileRes" path="$(XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)"/>
 ```
 
-### precossCommand {#preprocesscommand}
+### preprocesscommand {#preprocesscommand}
 
-以下是 **dataStore > precossCommand** 节点。 这些是用于预处理“加载文件”工作流活动的授权命令。
+以下是 **dataStore > preprocessCommand** 节点。 这些是对“加载文件”工作流活动进行预处理的授权命令。
 
 <table> 
  <thead> 
@@ -500,7 +500,7 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
 
 以下是 **dnsConfig** （DNS配置）节点。
 
-有关其他信息，请参阅 [部分](../../installation/using/configuring-campaign-server.md).
+有关其他信息，请参阅此 [部分](../../installation/using/configuring-campaign-server.md).
 
 <table> 
  <thead> 
@@ -514,13 +514,13 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
  <tbody> 
   <tr> 
    <td> localDomain<br /> </td> 
-   <td> 域名：默认域名。 由SMTP HELO命令使用。 默认情况下，使用在Windows中声明的第一个网络接口的网络参数；或在Linux（域或搜索条目）下解析file/etc/resolv.conf。 <br /> </td> 
+   <td> 域名：默认域名。 由SMTP HELO命令使用。 默认情况下，使用在Windows中声明的第一个网络接口的网络参数；或解析Linux下的file/etc/resolv.conf （域或搜索条目）。 <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> nameServers<br /> </td> 
-   <td> DNS服务器：域名服务器(DNS)列表（以逗号分隔）。 请参阅下面的注释。<br /> </td> 
+   <td> nameServer<br /> </td> 
+   <td> DNS服务器：域名服务器(DNS)的逗号分隔列表。 请参阅下面的注释。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -541,17 +541,17 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
 
 >[!NOTE]
 >
->注释 **nameSevers**:默认情况下，使用网络
+>注释 **nameSevers**：默认情况下，使用网络
 >在Windows中声明的第一个网络接口的参数
 >未在UNIX中定义。 定义域名服务器(DNS)
->MTA用来获取为
+>由MTA用来获取为声明的邮件交换器
 >域。
 >
->如果未定义此值，MTA将在主机网络配置中搜索此信息。 如果可以使用多个DNS，则不同的DNS地址必须用逗号分隔(例如：212.155.207.1,212.155.207.2)。 如果您的投放服务器具有多个网络接口，则MTA使用的DNS列表是第一个。 在这种情况下，我们建议将 **nameServer** 参数来避免任何歧义。
+>如果未定义此值，MTA将在主机网络配置中查找此信息。 如果可能存在多个DNS，则不同的DNS地址必须以逗号分隔（例如：212.155.207.1、212.155.207.2）。 如果您的投放服务器有多个网络接口，则MTA使用的DNS列表是第一个列表。 在这种情况下，我们建议指定 **nameServer** 参数，以避免任何歧义。
 
 >[!CAUTION]
 >
->如果网络主机配置使用DHCP，则MTA将找不到DHCP提供的DNS列表。 在这种情况下，我们建议在Windows控制面板的网络参数中指定DNS列表。
+>如果您的网络主机配置使用DHCP，则MTA将找不到DHCP提供的DNS列表。 在这种情况下，我们建议在Windows控制面板的网络参数中指定DNS列表。
 
 ## 执行 {#exec}
 
@@ -570,7 +570,7 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
  <tbody> 
   <tr> 
    <td> blacklistFile<br /> </td> 
-   <td> 包含要添加到的命令的文件的路允许列表径。 <br /> </td> 
+   <td> 允许列表包含要添加到的命令的文件的路径。 <br /> </td> 
    <td> 字符串<br /> </td> 
   </tr> 
   <tr> 
@@ -583,7 +583,7 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
 
 ## htmlToPdf {#htmltopdf}
 
-以下是 **htmlToPdf** 节点。 这是将网页转换为PDF文档的服务配置。
+以下是 **htmlToPdf** 节点。 这是用于将Web页转换为PDF文档的服务的配置。
 
 <table> 
  <thead> 
@@ -609,32 +609,32 @@ Adobe Campaign的整体配置在 **serverConf.xml** 文件，位于 **conf** 安
   </tr> 
   <tr> 
    <td> 模式<br /> </td> 
-   <td> 用于转换的工具。 可能的值包括：phantomjs， wkhtmltopdf，其他，已禁用<br /> </td> 
+   <td> 用于转换的工具。 可能的值包括：phantomjs、wkhtmltopdf、other、disabled<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> “phantomjs” <br /> </td> 
+   <td> 'phantomjs' <br /> </td> 
   </tr> 
   <tr> 
    <td> 超时<br /> </td> 
-   <td> 转化超时：最大转化时间（以秒为单位）。 超出此阈值后，转换过程将停止，并引发错误。<br /> </td> 
+   <td> 转换超时：最长转换时间（秒）。 超过此阈值后，转换过程将停止并引发错误。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 120<br /> </td> 
   </tr> 
   <tr> 
-   <td> 详细<br /> </td> 
-   <td> 详细模式：以详细模式启动，以诊断可能的错误。<br /> </td> 
+   <td> 冗长<br /> </td> 
+   <td> 详细模式：在详细模式下启动以诊断可能存在的错误。<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
-   <td> waitTime<br /> </td> 
-   <td> 等待进程时的延迟：延迟（以秒为单位）。 如果超出此延迟，则停止转换并引发错误。 <br /> </td> 
+   <td> waitetime<br /> </td> 
+   <td> 等待进程时的延迟：同时使用所有进程和等待进程释放时的延迟（以秒为单位）。 如果超过此延迟，转换将停止并引发错误。 <br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 15<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Phantomjs的示例：
+phantomjs示例：
 
 ```
 phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:{outPdf}' '-post:{postFile}' '-url:{originUrl}' -sessiontoken:{sessiontoken} -format:{format} -orientation:{orientation} -marginTop:{marginTop} -marginLeft:{marginLeft} -marginRight:{marginRight} -marginBottom:{marginBottom}
@@ -642,7 +642,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 ## ims {#ims}
 
-以下是 **ims** 节点。 这是Campaign使用连接到其他服务的配置 [IMS](../../integrations/using/about-adobe-id.md).
+以下是 **ims** 节点。 这是Campaign连接到其他服务的配置，使用 [IMS](../../integrations/using/about-adobe-id.md).
 
 <table> 
  <thead> 
@@ -707,9 +707,9 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 ## JavaScript {#javascript}
 
-以下是 **javaScript** 节点。 这是JavaScript解释器的配置。
+以下是 **javascript** 节点。 这是JavaScript解释器的配置。
 
-有关其他信息，请参阅 [报表文档](../../reporting/using/actions-on-reports.md#memory-allocation).
+有关其他信息，请参阅 [报告文档](../../reporting/using/actions-on-reports.md#memory-allocation).
 
 <table> 
  <thead> 
@@ -729,16 +729,16 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
   </tr> 
   <tr> 
    <td> stackSizeKB<br /> </td> 
-   <td> 每个堆栈块的大小（以 kilo octet 为单位）. 这是一个内存管理调整参数，大多数用户都不应该调整此参数。 <br /> </td> 
+   <td> 每个堆栈块的大小（以 kilo octet 为单位）. 这是大多数用户不应调整的内存管理调整参数。 <br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 8<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## mailExchanger {#mailexchanger}
+## mailExchange {#mailexchanger}
 
-以下是 **mailExchanger** 节点。 这是SMTP服务器的配置。
+以下是 **mailExchange** 节点。 这是SMTP服务器的配置。
 
 <table> 
  <thead> 
@@ -780,17 +780,17 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
  </thead> 
  <tbody> 
   <tr> 
-   <td> defaultNameSpace<br /> </td> 
+   <td> defaultnameSpace<br /> </td> 
    <td> 创建新实体时使用的默认命名空间.<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> “cus”<br /> </td> 
+   <td> 'cus'<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 监测 {#monitoring}
 
-以下是 **监测** 节点。 这是监视服务配置。
+以下是 **监测** 节点。 这是监控服务配置。
 
 <table> 
  <thead> 
@@ -804,7 +804,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
  <tbody> 
   <tr> 
    <td> maxPreparationJobsSec<br /> </td> 
-   <td> 最大准备时间：持续时间（以秒为单位），在此之后，投放操作应该不再进行准备。<br /> </td> 
+   <td> 最长准备时间：持续时间（以秒为单位），之后不应再准备投放操作。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
@@ -823,9 +823,9 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
  </tbody> 
 </table>
 
-## 乌孔夫 {#ooconv}
+## ooconv {#ooconv}
 
-以下是 **乌孔夫** 节点。 这是文档转换服务器的配置。
+以下是 **ooconv** 节点。 这是文档转换服务器的配置。
 
 <table> 
  <thead> 
@@ -838,7 +838,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
  </thead> 
  <tbody> 
   <tr> 
-   <td> maxConversions<br /> </td> 
+   <td> maxConversion<br /> </td> 
    <td> 允许 OpenOffice 服务器执行的最大转换次数。如果超过此数目，服务器将重新启动。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1000<br /> </td> 
@@ -888,9 +888,9 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
   </tr> 
   <tr> 
    <td> 覆盖<br /> </td> 
-   <td> 例外：应忽略代理参数的地址列表。<br /> </td> 
+   <td> 例外：应忽略其代理参数的地址列表。<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> 'localhost*' <br /> </td> 
+   <td> '本地主机*' <br /> </td> 
   </tr> 
   <tr> 
    <td> useSingleProxy<br /> </td> 
@@ -903,7 +903,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 ### HTTP代理/安全代理 {#http-proxy---secure-proxy-}
 
-在 **proxyConfig > HTTP代理/安全代理** 节点，请配置以下参数。
+在 **proxyConfig > HTTP代理/安全代理** 节点，配置以下参数。
 
 有关其他信息，请参阅 [代理连接配置](file-res-management.md).
 
@@ -939,9 +939,9 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
  </tbody> 
 </table>
 
-## threadPool {#threadpool}
+## 线程池 {#threadpool}
 
-以下是 **threadPool** 节点。
+以下是 **线程池** 节点。
 
 <table> 
  <thead> 
@@ -964,13 +964,13 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 ## urlPermission {#urlpermission}
 
-以下是 **urlPermission** 节点。 这是Javascript代码可访问的URL列表。
+以下是 **urlPermission** 节点。 这是Javascript代码可以访问的URL列表。
 
-域和正则表达式列表，用于指定在Javascript代码中遇到的URL是否可以由Adobe Campaign服务器使用。
+域和正则表达式的列表，用于指定Adobe Campaign服务器能否使用Javascript代码中遇到的URL。
 
-如果找不到URL，则会根据指定的默认模式执行默认操作。
+如果找不到URL，将根据指定的默认模式执行默认操作。
 
-有关其他信息，请参阅 [外连接保护](../../installation/using/configuring-campaign-server.md#url-permissions).
+有关其他信息，请参阅 [传出连接保护](../../installation/using/configuring-campaign-server.md#url-permissions).
 
 <table> 
  <thead> 
@@ -984,13 +984,13 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
  <tbody> 
   <tr> 
    <td> 操作<br /> </td> 
-   <td> 如果URL不在授权列表（枚举）中，则执行默认操作。 可能的值包括“忽略”（授权时不显示警告消息，这要求禁用保护）、“警告”（授权并发出警告消息）和“拒绝”（禁止访问URL）。<br /> </td> 
+   <td> 如果URL不在授权列表中（枚举），则默认操作。 可能的值包括“忽略”（在没有警告消息的情况下授权，这需要禁用保护）、“警告”（授权并发出警告消息）和“拒绝”（禁止访问URL）。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> 拒绝<br /> </td> 
   </tr> 
   <tr> 
    <td> debugTrace<br /> </td> 
-   <td> 调试URL选择机制的跟踪：在URL验证过程中发出其他消息。<br /> </td> 
+   <td> URL选择机制的调试跟踪：在URL验证过程中发出其他消息。<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
@@ -999,9 +999,9 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 ### url {#url}
 
-对于每个URL，添加 **url** 节点（具有以下参数）：
+为每个URL添加 **url** 节点包含以下参数：
 
-有关其他信息，请参阅 [外连接保护](../../installation/using/configuring-campaign-server.md#url-permissions).
+有关其他信息，请参阅 [传出连接保护](../../installation/using/configuring-campaign-server.md#url-permissions).
 
 <table> 
  <thead> 
@@ -1014,26 +1014,26 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
  <tbody> 
   <tr> 
    <td> dnsSuffix<br /> </td> 
-   <td> 域名或域父项，与URL相关：要验证的URL域的全部或部分，以加速验证。 仅当URL的域包含dsnSuffix时，才会针对正则表达式验证该URL。<br /> </td> 
+   <td> URL关注的域名或域父级：要验证的URL的所有或部分域，可加速验证。 只有当URL的域包含dsnSuffix时，才会针对正则表达式验证URL。<br /> </td> 
    <td> 字符串<br /> </td> 
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
-   <td> 用于优化验证属于此域的URL的正则表达式：URL必须验证的正则表达式（如果与dnsSuffix对应）。<br /> </td> 
+   <td> 用于优化属于此域的验证URL的正则表达式：URL必须验证的正则表达式（如果它对应于dnsSuffix）。<br /> </td> 
    <td> 字符串<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-如果记录满足 **dnsSuffix** 但不是 **urlRegEx**，将检查以下记录。
+如果记录满足 **dnsSuffix** 但不是 **urlRegEx**，则会检查以下记录。
 
-例如，要授权访问域business.com的所有URL，我们可以定义两条记录：
+例如，要授权访问域business.com的所有URL，我们可以定义两个记录：
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.&#42;&quot;
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.&#42;”
 
 和
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;”
 
 以下是默认配置：
 
@@ -1075,9 +1075,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </tbody> 
 </table>
 
-## 存档 {#archiving}
+## 归档 {#archiving}
 
-以下是 **存档** 节点。 这是后台执行的存档操作的配置。
+以下是 **归档** 节点。 这是在后台执行的存档操作的配置。
 
 有关其他信息，请参阅 [激活电子邮件存档（内部部署）](../../installation/using/email-archiving.md#activating-email-archiving--on-premise-).
 
@@ -1099,18 +1099,18 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> archivingType<br /> </td> 
-   <td> 已发送消息的存档策略（枚举）。 可能的值为“0”（无存档）和“1”（将已发送邮件的存档传输到SMTP服务器）。<br /> </td> 
+   <td> 已发送消息的归档策略（枚举）。 可能的值为“0”（无存档）和“1”（将已发送消息的存档传输到SMTP服务器）。<br /> </td> 
    <td> 字节<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
-   <td> 阿尔格<br /> </td> 
+   <td> 参数<br /> </td> 
    <td> 启动参数<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> autoStart<br /> </td> 
+   <td> autostart<br /> </td> 
    <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
@@ -1122,14 +1122,14 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> 10000<br /> </td> 
   </tr> 
   <tr> 
-   <td> compressionFormat<br /> </td> 
-   <td> 在存档（枚举）过程中使用的压缩格式。 可能的值为“0”（无压缩）和“1”（使用zip格式压缩已发送的消息）。<br /> </td> 
+   <td> 压缩格式<br /> </td> 
+   <td> 存档期间使用的压缩格式（枚举）。 可能的值为“0”（无压缩）和“1”（使用zip格式压缩已发送的消息）。<br /> </td> 
    <td> 字节<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> expirationDelay<br /> </td> 
-   <td> 未处理电子邮件自动存档之前的延迟：未处理的电子邮件存档前的天数。<br /> </td> 
+   <td> 自动存档未处理电子邮件之前的延迟：存档未处理电子邮件之前的天数。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -1141,13 +1141,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> 内存消耗警报：有关给定进程所消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
+   <td> 内存消耗警报：有关给定进程消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告：警告给定进程消耗的RAM量（以Mb为单位）。<br /> </td> 
+   <td> 内存消耗警告：有关给定进程消耗的RAM量（以Mb为单位）的警告。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1159,7 +1159,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 参见 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动重启进程</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -1183,7 +1183,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> smtpEnableTLS<br /> </td> 
-   <td> 激活SMTPS支持：在远程服务器支持时，激活以安全模式(STARTTLS/SMTPS)发送电子邮件。<br /> </td> 
+   <td> 激活SMTPS支持：当远程服务器支持时，在安全模式(STARTTLS/SMTPS)下激活电子邮件投放。<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
@@ -1195,7 +1195,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> smtpRelayAddress<br /> </td> 
-   <td> 要使用的SMTP中继的DNS名称或IP地址列表（以逗号分隔）。 <br /> </td> 
+   <td> 要使用的SMTP中继的DNS名称或IP地址的逗号分隔列表。 <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1223,44 +1223,44 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </thead> 
  <tbody> 
   <tr> 
-   <td> 阿尔格<br /> </td> 
+   <td> 参数<br /> </td> 
    <td> 启动参数<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> autoStart<br /> </td> 
+   <td> autostart<br /> </td> 
    <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> checkInstanceName<br /> </td> 
-   <td> 验证实例名称：如果为true，则消息ID标头中包含的Adobe Campaign实例名称必须与当前实例相同。 <br /> </td> 
+   <td> 验证实例名称：如果为true，则Message-ID标头中包含的Adobe Campaign实例的名称必须与当前实例相同。 <br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 真<br /> </td> 
   </tr> 
   <tr> 
    <td> defaultForwardAddress<br /> </td> 
-   <td> 转发地址：规则未处理默认电子邮件传送地址。 <br /> </td> 
+   <td> 转发地址：规则未处理的默认电子邮件转移地址。 <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> errorForwardAddress<br /> </td> 
-   <td> 错误地址：用于传输无效电子邮件的默认地址（MIME编码错误）。 <br /> </td> 
+   <td> 错误的地址：用于传输无效电子邮件的默认地址（错误的MIME编码）。 <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> ignoreSize<br /> </td> 
-   <td> 忽略消息大小：用于忽略POP3服务器返回的消息的大小。 在这种情况下，模块需要“。” 消息的结尾。 <br /> </td> 
+   <td> ignoresize<br /> </td> 
+   <td> 忽略消息大小：用于忽略POP3服务器返回的消息的大小。 在这种情况下，模块需要“。” 在邮件末尾。 <br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> inMailPeriodSec<br /> </td> 
-   <td> 消息读取期：消息队列轮询频率。<br /> </td> 
+   <td> 消息读取周期：消息队列轮询频率。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
@@ -1272,7 +1272,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxBroadLog<br /> </td> 
-   <td> 要更新的日志数上限：定义在更新数据库之前要保留在内存中的日志消息的最大数量。<br /> </td> 
+   <td> 要更新的最大日志数：定义在更新数据库之前保留在内存中的最大日志消息数。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 20<br /> </td> 
   </tr> 
@@ -1284,13 +1284,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> 内存消耗警报：有关给定进程所消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
+   <td> 内存消耗警报：有关给定进程消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告：警告给定进程消耗的RAM量（以Mb为单位）。<br /> </td> 
+   <td> 内存消耗警告：有关给定进程消耗的RAM量（以Mb为单位）的警告。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1302,7 +1302,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> popMailPeriodSec<br /> </td> 
-   <td> POP3轮询期<br /> </td> 
+   <td> POP3轮询周期<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
@@ -1320,7 +1320,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 参见 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动重启进程</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -1341,7 +1341,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 ### msgDump {#msgdump}
 
-在 **inMail > msgDump** 节点，请配置以下参数。 这是已处理消息的转储配置。
+在 **inMail > msgDump** 节点，配置以下参数。 这是已处理消息的转储的配置。
 
 <table> 
  <thead> 
@@ -1363,16 +1363,16 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> msgPath<br /> </td> 
    <td> 消息转储路径。<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> “/tmp/inMail”<br /> </td> 
+   <td> '/tmp/inMail'<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## interactiond {#interactiond}
+## 交互 {#interactiond}
 
-以下是 **interactiond** 节点。 这是入站交互事件的写入守护程序的配置。
+以下是 **交互** 节点。 这是入站交互事件的写入守护程序的配置。
 
-有关其他信息，请参阅 [交互 — 数据缓冲区](../../installation/using/interaction---data-buffer.md).
+有关其他信息，请参阅 [交互 — 数据缓冲](../../installation/using/interaction---data-buffer.md).
 
 <table> 
  <thead> 
@@ -1385,20 +1385,20 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </thead> 
  <tbody> 
   <tr> 
-   <td> 阿尔格<br /> </td> 
+   <td> 参数<br /> </td> 
    <td> 启动参数<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> autoStart<br /> </td> 
+   <td> autostart<br /> </td> 
    <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> callDataSize<br /> </td> 
-   <td> 最大值. 共享内存中用于调用数据的字符数。<br /> </td> 
+   <td> 最大值. 存储在共享内存中用于调用数据的字符数。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1410,19 +1410,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> 内存消耗警报：有关给定进程所消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
+   <td> 内存消耗警报：有关给定进程消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告：警告给定进程消耗的RAM量（以Mb为单位）。<br /> </td> 
+   <td> 内存消耗警告：有关给定进程消耗的RAM量（以Mb为单位）的警告。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSharedEntries<br /> </td> 
-   <td> 最大值. 共享内存中存储的事件数。<br /> </td> 
+   <td> 最大值. 存储在共享内存中的事件数。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 25000<br /> </td> 
   </tr> 
@@ -1434,7 +1434,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 参见 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动重启进程</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -1445,14 +1445,14 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
-   <td> statsPeriod<br /> </td> 
-   <td> 响应时间统计的聚合持续时间（以秒为单位）. 0表示已停用统计存储。<br /> </td> 
+   <td> statsperiod<br /> </td> 
+   <td> 响应时间统计的聚合持续时间（以秒为单位）. 0表示统计存储已停用。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> targetKeySize<br /> </td> 
-   <td> 最大值. 存储在共享内存中用于识别个人的字符数。<br /> </td> 
+   <td> 最大值. 存储在共享内存中用于标识个人的字符数。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 16<br /> </td> 
   </tr> 
@@ -1474,26 +1474,26 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </thead> 
  <tbody> 
   <tr> 
-   <td> 阿尔格<br /> </td> 
+   <td> 参数<br /> </td> 
    <td> 启动参数<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> '-tracefilter:nlmta <br /> </td> 
+   <td> `-tracefilter：nlmta` <br /> </td> 
   </tr> 
   <tr> 
-   <td> autoStart<br /> </td> 
+   <td> autostart<br /> </td> 
    <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> dataLogPath<br /> </td> 
-   <td> 保存已发送电子邮件的路径：如果不为空，则保存已发送电子邮件的所有源文件的路径。 <br /> </td> 
+   <td> 已发送电子邮件的保存路径：如果不为空，则将保存已发送电子邮件的所有源文件的路径。 <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> debugPath<br /> </td> 
-   <td> 转储目录：如果不为空，则复制此目录中已发送邮件的MIME信封。 用于故障排除。 <br /> </td> 
+   <td> 转储目录：如果不为空，则将已发送邮件的MIME信封复制到此目录中。 用于故障排除。 <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1505,7 +1505,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> errorPeriodSec<br /> </td> 
-   <td> 错误统计频率：在数据库中生成统计信息和存储之间的时间。 <br /> </td> 
+   <td> 错误统计信息频率：从生成统计信息到存储在数据库中之间的时间。 <br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
@@ -1523,7 +1523,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> logLevel<br /> </td> 
-   <td> 显示日志消息的级别。写入数据库的日志的严重性级别。 由MTA生成的日志消息并非总是写入数据库中。 通过此参数，您可以定义在数据库中必须写入消息的级别。 如果定义级别2，则也会写入级别1和0的消息，而如果定义级别1，则只会写入级别1和0的消息。 可能的值包括：0（错误）、1（警告）、2（信息）<br /> </td> 
+   <td> 显示日志消息的级别。写入数据库中的日志的严重性级别。 MTA生成的日志消息并不总是全部写入数据库中。 通过此参数，您可以定义您认为消息必须写入数据库时所依据的级别。 如果定义级别2，则还会写入级别1和级别0的消息，而如果定义级别1，则只写入级别1和级别0的消息。 可能的值为：0 （错误）、1 （警告）、2 （信息）<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -1535,13 +1535,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> 内存消耗警报：有关给定进程所消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
+   <td> 内存消耗警报：有关给定进程消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告：警告给定进程消耗的RAM量（以Mb为单位）。<br /> </td> 
+   <td> 内存消耗警告：有关给定进程消耗的RAM量（以Mb为单位）的警告。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1553,7 +1553,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> minErrorsToLog<br /> </td> 
-   <td> 要考虑的错误阈值：如果errorPeriodSec指定时段的错误总数严格低于阈值，则不会为给定路径生成错误统计信息。<br /> </td> 
+   <td> 要考虑的错误阈值：如果errorPeriodSec指定的时段内的错误总数完全低于阈值，则不会为给定路径生成错误统计信息。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
@@ -1565,25 +1565,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> notifRelay<br /> </td> 
-   <td> 通知中继：HostName：用于中继通知的端口。<br /> </td> 
+   <td> 通知中继：用于中继通知的HostName：Port。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 参见 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动重启进程</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeDataLogDelay<br /> </td> 
-   <td> 删除已存档电子邮件之前的延迟：清除dataLogPath中指定目录中的已存档电子邮件前间隔的天数。<br /> </td> 
+   <td> 删除已存档电子邮件之前的延迟：清除dataLogPath中指定的目录中的已存档电子邮件之前的天数。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 15<br /> </td> 
   </tr> 
   <tr> 
    <td> retryLostMessages<br /> </td> 
-   <td> 重试丢失的消息：如果子进程已停用，将重试部分投放。<br /> </td> 
+   <td> 重试丢失的消息：如果子进程已终止，将重试部分投放。<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 真<br /> </td> 
   </tr> 
@@ -1595,17 +1595,17 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> signEmailLinks<br /> </td> 
-   <td> 启用签名机制。 这可提高电子邮件中跟踪链接的安全性。<br /> </td> 
+   <td> 启用签名机制。 这提高了电子邮件中跟踪链接的安全性。<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 真<br /> </td> 
   </tr>
   <tr> 
    <td> statServerAddress<br /> </td> 
-   <td> 投放统计服务器的地址，给定为 
+   <td> 投放统计服务器的地址，以 
     &lt;dns or="" ip=""&gt; 
-      <code>[</code>: 
+      <code>[</code>： 
      &lt;port&gt; 
-       <code>]</code>. 请参阅 
+       <code>]</code>. 参见 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">统计服务器的坐标</a>. 
       <br /> 
      </td> 
@@ -1613,38 +1613,38 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> 如果未定义，则默认端口为7777。<br /> </td> 
   </tr> 
   <tr> 
-   <td> statServerTLSupport<br /> </td> 
-   <td> 按域启用TLS:启用可由MX配置的TLS（需要最新的统计服务器）。<br /> </td> 
+   <td> statServerTLSSupport<br /> </td> 
+   <td> 按域启用TLS：启用可由MX配置的TLS（需要最新的统计信息服务器）。<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 真 <br /> </td> 
   </tr> 
   <tr> 
    <td> statServerVersion<br /> </td> 
-   <td> 使用的协议版本：通信协议版本（v5.11和6.0.2服务器为1,v6.1服务器为2）。<br /> </td> 
+   <td> 使用的协议版本：通信协议版本（1用于v5.11和6.0.2服务器，2用于v6.1服务器）。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> 如果未定义，则使用最新版本。 <br /> </td> 
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> 如果设置为“true”，则您的实例将使用 <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">增强的MTA</a>.<br /> </td> 
+   <td> 如果设置为“true”，则您的实例将使用 <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">增强型MTA</a>.<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> <br /> </td>b 
   </tr>
   <tr> 
    <td> verifyMode<br /> </td> 
-   <td> 验证模式：激活验证模式(不进行报文的物理传输；用于模拟和测试)。<br /> </td> 
+   <td> 验证模式：激活验证模式（无消息的物理传输；用于模拟和测试）。<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
-   <td> workingPath<br /> </td> 
-   <td> 工作目录：MTA用于与其子进程通信的临时文件的位置。<br /> </td> 
+   <td> 工作路径<br /> </td> 
+   <td> 工作目录： MTA用来与其子进程通信的临时文件的位置。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> “$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/mta/” <br /> </td> 
   </tr> 
   <tr> 
    <td> xMailer<br /> </td> 
-   <td> X-Mailer字段：SMTP邮件标头中字段“X-Mailer”的值。<br /> </td> 
+   <td> X-Mailer字段： SMTP邮件标头中“X-Mailer”字段的值。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> 'nlserver，内部版本$(PRODUCT_VERSION)'<br /> </td> 
   </tr>  
@@ -1653,7 +1653,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 ### cache {#cache}
 
-在 **缓存** 节点，请配置以下参数。 这是本地文件缓存配置。
+在 **缓存** 节点，配置以下参数。 这是本地文件缓存配置。
 
 <table> 
  <thead> 
@@ -1667,7 +1667,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> maxPeriodSec<br /> </td> 
-   <td> 在以下情况下回收：句点，以秒为单位，此后将自动从缓存中删除文件以回收存储。<br /> </td> 
+   <td> 在以下时段后回收：以秒为单位的时段，在此时段后将自动从缓存中删除文件以回收存储。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 244800<br /> </td> 
   </tr> 
@@ -1679,7 +1679,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> purgePeriodSec<br /> </td> 
-   <td> 清除频率：执行缓存清除机制之间的时段（以秒为单位）。<br /> </td> 
+   <td> 清除频率：缓存清除机制执行之间的时段（以秒为单位）。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
@@ -1688,9 +1688,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 ### 中继 {#relay}
 
-在 **mta >中继** 节点，请配置以下参数。 这是邮件投放的邮件服务器配置。
+在 **mta >中继** 节点，配置以下参数。 这是消息投放的邮件服务器的配置。
 
-该列表的处理方式与MX DNS查询返回的MX列表相同，通常只要第一个MX可用，就使用下一个MX，依此类推。
+该列表的处理方式将与MX DNS查询返回的MX列表相同，通常只要第一个MX可用，然后使用下一个MX，依此类推。
 
 有关其他信息，请参阅 [SMTP中继](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
@@ -1706,7 +1706,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> 地址<br /> </td> 
-   <td> 要使用的SMTP中继的DNS名称或IP地址列表（以逗号分隔）。 <br /> </td> 
+   <td> 要使用的SMTP中继的DNS名称或IP地址的逗号分隔列表。 <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1721,9 +1721,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 ### 主控 {#master}
 
-在 **mta >主控** 节点，请配置以下参数。 这是主服务器的配置。
+在 **mta >主控** 节点，配置以下参数。 这是主服务器的配置。
 
-有关其他信息，请参阅 [部分](../../installation/using/configuring-campaign-server.md#mta-child-processes).
+有关其他信息，请参阅此 [部分](../../installation/using/configuring-campaign-server.md#mta-child-processes).
 
 <table> 
  <thead> 
@@ -1755,7 +1755,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> 最大子服务器数。表示运行的服务器的最大数量。建议将此数量限制在与服务器内存资源兼容的最佳值。这可以在投放期间进行检查。使用的内存不应超过可用物理内存的三分之一，否则将使用交换。请参阅 <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">MTA子进程</a>.<br /> </td> 
+   <td> 最大子服务器数。表示运行的服务器的最大数量。建议将此数量限制在与服务器内存资源兼容的最佳值。这可以在投放期间进行检查。使用的内存不应超过可用物理内存的三分之一，否则将使用交换。参见 <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">MTA子进程</a>.<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -1774,9 +1774,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </tbody> 
 </table>
 
-### 孩子 {#child}
+### 子项 {#child}
 
-在 **mta >子项** 节点，请配置以下参数。 这是子服务器的配置。
+在 **mta >子项** 节点，配置以下参数。 这是子服务器的配置。
 
 有关其他信息，请参阅 [电子邮件发送优化](../../installation/using/email-deliverability.md#email-sending-optimization).
 
@@ -1822,13 +1822,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxWaitingMessages<br /> </td> 
-   <td> 待处理消息：内存中待发送消息的最大数量。 <br /> </td> 
+   <td> 挂起消息：在内存中等待投放的消息的最大数量。 <br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 2000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxWorkingSetMb<br /> </td> 
-   <td> 子进程可使用的最大内存大小(MB)。超出此限制后，进程将停止，以便它使用的内存将释放到系统。 <br /> </td> 
+   <td> 子进程可使用的最大内存大小（以MB为单位）。超出此限制后，进程将停止，以便将其使用的内存释放给系统。 <br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 128<br /> </td> 
   </tr> 
@@ -1853,7 +1853,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </tbody> 
 </table>
 
-在 **mta >子> smtp** 节点，请配置以下参数。 这是SMTP会话的配置。
+在 **mta >子项> smtp** 节点，配置以下参数。 这是SMTP会话的配置。
 
 <table> 
  <thead> 
@@ -1892,9 +1892,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </tbody> 
 </table>
 
-在 **mta >子项> smtp > IPAfinity** 节点，请配置以下参数。 这是使用IP地址管理用于优化传出SMTP流量的喜好的配置。
+在 **mta >子项> smtp > IPAffinity** 节点，配置以下参数。 这是配置与IP地址的相似性管理，以优化传出SMTP流量。
 
-有关其他信息，请参阅 [要使用的IP地址列表](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use) 和 [管理具有相关性的出站SMTP流量](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities).
+有关其他信息，请参阅 [要使用的IP地址列表](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use) 和 [管理具有相似性的出站SMTP流量](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities).
 
 <table> 
  <thead> 
@@ -1907,18 +1907,18 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> localDomain<br /> </td> 
-   <td> 域名：链接到IP地址的本地域名。 发出SMTP HELO命令时使用。<br /> </td> 
+   <td> 域名：链接到IP地址的本地域名。 在发出SMTP HELO命令时使用。<br /> </td> 
    <td> 字符串<br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
-   <td> 逻辑名称：用户链接到亲和度的名称。 名称用分号分隔；<br /> </td> 
+   <td> 逻辑名称：用户链接到关联的名称。 名称使用分号分隔；<br /> </td> 
    <td> 字符串<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-在 **mta >子项> smtp > IP** 节点，请配置以下参数。
+在 **mta >子项> smtp > IP** 节点，配置以下参数。
 
 有关其他信息，请参阅 [要使用的IP地址列表](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 
@@ -1966,7 +1966,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 ## nmac {#nmac}
 
-以下是 **nmac** 节点。 这是推送通知投放的配置。
+以下是 **nmac** 节点。 这是针对推送通知投放的配置。
 
 <table> 
  <thead> 
@@ -1979,7 +1979,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </thead> 
  <tbody> 
   <tr> 
-   <td> useHTTProxy<br /> </td> 
+   <td> useHTTPProxy<br /> </td> 
    <td> 使用 shared/proxyHTTP 中定义的 HTTP 代理. <br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
@@ -1989,7 +1989,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 ### 中继 {#relay-1}
 
-以下是 **nmac >中继** 节点。 这会配置对消息传递的中继的使用(ios http2 connector)。
+以下是 **nmac >中继** 节点。 这会将中继配置为消息传送（ios http2连接器）。
 
 <table> 
  <thead> 
@@ -2024,7 +2024,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 ## 流水线 {#pipelined}
 
-以下是 **流水线** 节点。 这是Pipeline Services的事件处理模块的配置。
+以下是 **流水线** 节点。 这是管道服务的事件处理模块的配置。
 
 <table> 
  <thead> 
@@ -2038,12 +2038,12 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> appName<br /> </td> 
-   <td> 保存公钥时在开发人员连接中生成的应用程序的名称。 <br /> </td> 
+   <td> 保存公钥时在Developer Connection中生成的应用程序的名称。 <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> 阿尔格<br /> </td> 
+   <td> 参数<br /> </td> 
    <td> 启动参数<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
@@ -2056,19 +2056,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> authPrivateKey<br /> </td> 
-   <td> 用于获取令牌的私钥（在AES中使用XtkKey选项加密）。<br /> </td> 
+   <td> 用于获取令牌的私钥（已使用XtkKey选项使用AES进行加密）。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> autoStart<br /> </td> 
+   <td> autostart<br /> </td> 
    <td> 自动开始 <br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
    <td> disableAuth<br /> </td> 
-   <td> 禁用身份验证：在未进行身份验证的情况下连接到Pipeline Services。 <br /> </td> 
+   <td> 禁用身份验证：无需身份验证即可连接到管道服务。 <br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -2080,13 +2080,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> dumpStatePeriodSec<br /> </td> 
-   <td> 状态保存期：进程内部信息保存在文件中的频率。 如果为0，则不活动。 <br /> </td> 
+   <td> 状态保存周期：将进程的内部信息保存在文件中的频率。 如果为0，则不活动。 <br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
    <td> forcedPipelineEndpoint<br /> </td> 
-   <td> 监听URL:强制管道服务的监听URL。 <br /> </td> 
+   <td> 侦听URL：强制管道服务的侦听URL。 <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2098,19 +2098,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> 内存消耗警报：有关给定进程所消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
+   <td> 内存消耗警报：有关给定进程消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告：警告给定进程消耗的RAM量（以Mb为单位）。<br /> </td> 
+   <td> 内存消耗警告：有关给定进程消耗的RAM量（以Mb为单位）的警告。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> monitorServerPort<br /> </td> 
-   <td> 状态服务器端口：用于查询进程状态的HTTP服务器端口。 如果为0，则不活动。<br /> </td> 
+   <td> 状态服务器端口：允许您查询进程状态的HTTP服务器端口。 如果为0，则不活动。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 7781<br /> </td> 
   </tr> 
@@ -2121,14 +2121,14 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
-   <td> pointerFlushPeriodSec<br /> </td> 
-   <td> 存储指针之前的延迟：在此期间，指针将至少存储一次在数据库中（在活动不力时，此指针非常有用）。<br /> </td> 
+   <td> pointerFlushperiodSec<br /> </td> 
+   <td> 存储指针之前的延迟：在此时段内，指针将至少存储到数据库中一次（在活动较少的情况下很有用）。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 参见 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动重启进程</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -2151,8 +2151,8 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
-   <td> retryValiditySec<br /> </td> 
-   <td> 在此时段后放弃：如果在此时间段后处理仍然失败，请放弃事件。<br /> </td> 
+   <td> retryValidSec<br /> </td> 
+   <td> 在此时段后放弃：如果在此时段后处理仍失败，则放弃事件。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
@@ -2181,18 +2181,18 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> repairActionDelayMin<br /> </td> 
-   <td> 交货操作修复模块：延迟（以分钟为单位），修复模块可在延迟后处理投放操作。 <br /> </td> 
+   <td> 投放操作修复模块：延迟（以分钟为单位），之后，修复模块可以处理投放操作。 <br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## securityZone {#securityzone}
+## 安全区域 {#securityzone}
 
-以下是 **securityZone** 节点。
+以下是 **安全区域** 节点。
 
-有关其他信息，请参阅 [定义安全区](../../installation/using/security-zones.md).
+有关其他信息，请参阅 [定义安全区域](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -2223,7 +2223,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
-   <td> allowSQLInjent<br /> </td> 
+   <td> allowSQLInjection<br /> </td> 
    <td> 授权在表达式中使用 SQLDATA.<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
@@ -2253,7 +2253,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
-   <td> showErrors<br /> </td> 
+   <td> showError<br /> </td> 
    <td> 显示错误详细信息<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
@@ -2286,11 +2286,11 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 </securityZone>
 ```
 
-### subNetwork {#subnetwork}
+### 子网络 {#subnetwork}
 
 以下是 **securityZone > subNetwork** 节点。
 
-有关其他信息，请参阅 [定义安全区](../../installation/using/security-zones.md).
+有关其他信息，请参阅 [定义安全区域](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -2331,7 +2331,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 ## 短信 {#sms}
 
-以下是 **短信** 节点。 这是入站短信管理模块的配置。
+以下是 **短信** 节点。 这是入站SMS管理模块的配置。
 
 <table> 
  <thead> 
@@ -2344,13 +2344,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </thead> 
  <tbody> 
   <tr> 
-   <td> 阿尔格<br /> </td> 
+   <td> 参数<br /> </td> 
    <td> 启动参数<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> autoStart<br /> </td> 
+   <td> autostart<br /> </td> 
    <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
@@ -2375,36 +2375,36 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> keepAlivePeriod<br /> </td> 
-   <td> 会话连续性框架的重复：max 两帧之间用于通知接收会话仍处于启用状态的时段（以秒为单位）。<br /> </td> 
+   <td> 会话连续性帧的重复周期：最大值。 两帧之间的时段（以秒为单位），用于通知接收会话仍处于启用状态。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> 内存消耗警报：有关给定进程所消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
+   <td> 内存消耗警报：有关给定进程消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告：警告给定进程消耗的RAM量（以Mb为单位）。<br /> </td> 
+   <td> 内存消耗警告：有关给定进程消耗的RAM量（以Mb为单位）的警告。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
-   <td> pollPeriod<br /> </td> 
-   <td> 搜索频率：短信帐户投票期。<br /> </td> 
+   <td> pollPerience<br /> </td> 
+   <td> 搜索频率：短信帐户轮询时段。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 参见 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动重启进程</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
-   <td> reloadPeriod<br /> </td> 
+   <td> reloadPerod<br /> </td> 
    <td> 帐户重新加载频率：要轮询的帐户的数据库重新加载频率。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 600<br /> </td> 
@@ -2417,7 +2417,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> srReadDelay<br /> </td> 
-   <td> SR处理延迟的秒数：只有恢复日期早于当前时间的SR减去srReadDelay给定的持续时间（以秒为单位）。 <br /> </td> 
+   <td> SR处理延迟的秒数：仅限恢复日期早于当前时间减去srReadDelay给定的持续时间（以秒为单位）的SR。 <br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -2432,7 +2432,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 ### netsize {#netsize}
 
-以下是 **sms >网络大小** 节点。
+以下是 **sms > netsize** 节点。
 
 <table> 
  <thead> 
@@ -2468,13 +2468,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </thead> 
  <tbody> 
   <tr> 
-   <td> 阿尔格<br /> </td> 
+   <td> 参数<br /> </td> 
    <td> 启动参数<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> autoStart<br /> </td> 
+   <td> autostart<br /> </td> 
    <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
@@ -2487,13 +2487,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> 内存消耗警报：有关给定进程所消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
+   <td> 内存消耗警报：有关给定进程消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告：警告给定进程消耗的RAM量（以Mb为单位）。<br /> </td> 
+   <td> 内存消耗警告：有关给定进程消耗的RAM量（以Mb为单位）的警告。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2505,7 +2505,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 参见 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动重启进程</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -2533,13 +2533,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </thead> 
  <tbody> 
   <tr> 
-   <td> 阿尔格<br /> </td> 
+   <td> 参数<br /> </td> 
    <td> 启动参数<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> autoStart<br /> </td> 
+   <td> autostart<br /> </td> 
    <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
@@ -2564,19 +2564,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> 内存消耗警报：有关给定进程所消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
+   <td> 内存消耗警报：有关给定进程消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告：警告给定进程消耗的RAM量（以Mb为单位）。<br /> </td> 
+   <td> 内存消耗警告：有关给定进程消耗的RAM量（以Mb为单位）的警告。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 参见 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动重启进程</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -2604,13 +2604,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </thead> 
  <tbody> 
   <tr> 
-   <td> 阿尔格<br /> </td> 
+   <td> 参数<br /> </td> 
    <td> 启动参数<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> autoStart<br /> </td> 
+   <td> autostart<br /> </td> 
    <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
@@ -2629,25 +2629,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> dedupOpenPeriodMin<br /> </td> 
-   <td> 删除重复的开口：删除重复的打开跟踪日志，以限制在Outlook等邮件阅读器中预览邮件的效果。<br /> </td> 
+   <td> 删除重复打开：删除重复的打开跟踪日志，以限制邮件阅读器（如Outlook）中邮件预览的影响。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> errorIgnorePercent<br /> </td> 
-   <td> 最多忽略X%的错误：只要尚未考虑的日记帐比率未达到此值，就不要更新跟踪指标。 <br /> </td> 
+   <td> 忽略最多X%的错误：只要尚未考虑的日记帐比率未达到此值，就不会更新跟踪指示器。 <br /> </td> 
    <td> 字节<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> errorIgnorePeriod<br /> </td> 
-   <td> 更新错误指示器：重新计算错误指示器前的最大持续时间。<br /> </td> 
+   <td> 更新错误指示器：重新计算错误指示器之前的最长持续时间。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
   <tr> 
-   <td> indicatorsDuration<br /> </td> 
-   <td> 在以下期间计算指标：在投放有效日期之后的持续时间，在此之后将不再计算合并指标。<br /> </td> 
+   <td> 指示器持续时间<br /> </td> 
+   <td> 计算以下期间的指标：投放有效日期后的持续时间，此后不再计算合并的指标。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 2592000<br /> </td> 
   </tr> 
@@ -2665,31 +2665,31 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> 内存消耗警报：有关给定进程所消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
+   <td> 内存消耗警报：有关给定进程消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告：警告给定进程消耗的RAM量（以Mb为单位）。<br /> </td> 
+   <td> 内存消耗警告：有关给定进程消耗的RAM量（以Mb为单位）的警告。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> phishbowlServiceAPIKey<br /> </td> 
-   <td> Phishbowl服务端点集成的API密钥。 这可保护从旧版本生成的格式错误的URL的重定向。 <br /> </td> 
+   <td> Phishbowl服务端点集成的API密钥。 这可以保护从旧内部版本生成的格式错误的URL的重定向。 <br /> </td> 
    <td> 长整型<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> phishbowlServiceEndpoint<br /> </td> 
-   <td> Phishbowl服务端点集成的端点。 这可保护从旧版本生成的格式错误的URL的重定向。<br /> </td> 
+   <td> Phishbowl服务端点集成的端点。 这可以保护从旧内部版本生成的格式错误的URL的重定向。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 参见 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动重启进程</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -2701,13 +2701,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> trackingIgnorePercent<br /> </td> 
-   <td> 最多忽略X%的跟踪：只要尚未考虑的日记帐比率未达到此值，就不要更新跟踪指标。<br /> </td> 
+   <td> 忽略最多X%的跟踪：只要尚未考虑的日记帐比率未达到此值，就不会更新跟踪指标。<br /> </td> 
    <td> 字节<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> trackingIgnorePeriod<br /> </td> 
-   <td> 更新跟踪指标：重新计算跟踪指示器之前的最大持续时间。<br /> </td> 
+   <td> 更新跟踪指标：重新计算跟踪指标之前的最长持续时间。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
@@ -2735,13 +2735,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </thead> 
  <tbody> 
   <tr> 
-   <td> 阿尔格<br /> </td> 
+   <td> 参数<br /> </td> 
    <td> 启动参数<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> autoStart<br /> </td> 
+   <td> autostart<br /> </td> 
    <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
@@ -2754,37 +2754,37 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxCreateFileRetry<br /> </td> 
-   <td> 最大写入重试数：在日志文件中写入失败时可以创建的文件的最大数量。<br /> </td> 
+   <td> 最大写入重试次数：在日志文件写入失败时可创建的最大文件数。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> maxLogsSizeOnDiskMb<br /> </td> 
-   <td> 最大日志大小：磁盘上日志使用的最大空间(MB)。 不能小于100 MB。 <br /> </td> 
+   <td> 最大日志大小：日志在磁盘上使用的最大空间（以MB为单位）。 不得小于100 MB。 <br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> 内存消耗警报：有关给定进程所消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
+   <td> 内存消耗警报：有关给定进程消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告：警告给定进程消耗的RAM量（以Mb为单位）。<br /> </td> 
+   <td> 内存消耗警告：有关给定进程消耗的RAM量（以Mb为单位）的警告。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSharedLogs<br /> </td> 
-   <td> 最大日志计数：共享内存中存储的最大日志数。 不能少于10000。 <br /> </td> 
+   <td> 最大日志计数：共享内存中存储的最大日志数。 不能小于10000。 <br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 25000<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 参见 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动重启进程</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -2809,11 +2809,11 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </tbody> 
 </table>
 
-## web {#web}
+## Web {#web}
 
-以下是 **web** 节点。 这是Web模块的配置。
+以下是 **Web** 节点。 这是Web模块的配置。
 
-有关其他信息，请参阅 [部分](configuring-campaign-server.md#default-port-for-tomcat).
+有关其他信息，请参阅此 [部分](configuring-campaign-server.md#default-port-for-tomcat).
 
 <table> 
  <thead> 
@@ -2832,32 +2832,32 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> MaxThreads<br /> </td> 
+   <td> 最大线程<br /> </td> 
    <td> 最大线程数。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 75<br /> </td> 
   </tr> 
   <tr> 
-   <td> MinSpareThreads<br /> </td> 
+   <td> MinspareThreads<br /> </td> 
    <td> 最小线程数。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
-   <td> 阿尔格<br /> </td> 
+   <td> 参数<br /> </td> 
    <td> 启动参数<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> autoStart<br /> </td> 
+   <td> autostart<br /> </td> 
    <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
   </tr> 
   <tr> 
-   <td> controlPort<br /> </td> 
-   <td> Tomcat监听控制端口：请参阅 <a href="configure-tomcat.md" target="_blank">配置Tomcat</a>.<br /> </td> 
+   <td> 控制端口<br /> </td> 
+   <td> Tomcat侦听控制端口：请参阅 <a href="configure-tomcat.md" target="_blank">配置Tomcat</a>.<br /> </td> 
    <td> 短整型<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
@@ -2881,25 +2881,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> 内存消耗警报：有关给定进程所消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
+   <td> 内存消耗警报：有关给定进程消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告：有关给定进程消耗的RAM量（以MB为单位）的警告<br /> </td> 
+   <td> 内存消耗警告：有关给定进程消耗的RAM量（以Mb为单位）的警告<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> notifRelay<br /> </td> 
-   <td> 通知中继：HostName：启用通知中继的端口。<br /> </td> 
+   <td> 通知中继：启用通知中继的HostName：Port。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 参见 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动重启进程</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
@@ -2939,10 +2939,10 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> downloadPath<br /> </td> 
-   <td> 下载文件夹：客户端控制台的安装程序下载路径。<br /> </td> 
+   <td> downloadpath<br /> </td> 
+   <td> 下载文件夹：客户端控制台安装程序的下载路径。<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> “$(XTK_INSTALL_DIR)/datakit/nl/eng/jsp”<br /> </td> 
+   <td> '$(XTK_INSTALL_DIR)/datakit/nl/eng/jsp'<br /> </td> 
   </tr> 
   <tr> 
    <td> foFileName<br /> </td> 
@@ -2952,14 +2952,14 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> soapRouter<br /> </td> 
-   <td> SOAP路由器的URL(http://myserver/xxx、http://jni或mailto:xxx)。<br /> </td> 
+   <td> SOAP路由器的URL (http://myserver/xxx、http://jni或mailto:xxx)。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> 'http://jni'<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-的 **web > jsp > classpath** 节点包含启动JVM时要使用的所有类路径的列表。 以下是默认配置：
+此 **web > jsp >类路径** 节点包含启动JVM时要使用的所有类路径的列表。 以下是默认配置：
 
 ```
 '$(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar
@@ -3012,7 +3012,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </thead> 
  <tbody> 
   <tr> 
-   <td> collectsGarbageAfterRequest<br /> </td> 
+   <td> collectoragemafterrequest<br /> </td> 
    <td> 在每次查询后启用 JavaScript 上下文的垃圾收集器。<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 真<br /> </td> 
@@ -3026,13 +3026,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </tbody> 
 </table>
 
-的 **web > jsp > classpath** 节点包含启动JVM时要使用的所有类路径的列表。
+此 **web > jsp >类路径** 节点包含启动JVM时要使用的所有类路径的列表。
 
 ### 中继 {#relay-2}
 
 以下是 **web >中继** 节点。 这是两个区域之间HTTP请求的中继配置。
 
-有关其他信息，请参阅 [部分](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
+有关其他信息，请参阅此 [部分](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
 <table> 
  <thead> 
@@ -3052,19 +3052,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> forbiddenCharsInAuthority<br /> </td> 
-   <td> 禁止字符（域）：URI的“authority”部分中的禁止字符列表。<br /> </td> 
+   <td> 禁止使用的字符（域）： URI“权限”部分中禁止使用的字符列表。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '.?#@/:' <br /> </td> 
   </tr> 
   <tr> 
    <td> forbiddenCharsInPath<br /> </td> 
-   <td> 禁止字符（路径）：URI的“路径”部分中的禁止字符列表。<br /> </td> 
+   <td> 禁止使用的字符（路径）： URI“路径”部分中禁止使用的字符列表。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '?#/'<br /> </td> 
   </tr> 
   <tr> 
    <td> modDir<br /> </td> 
-   <td> “mod_dir”模块选项的值：在查询文件夹时要使用的文件列表。<br /> </td> 
+   <td> “mod_dir”模块选项的值：查询文件夹时要使用的文件列表。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> 'index.md' <br /> </td> 
   </tr> 
@@ -3076,7 +3076,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> startRelayInModule<br /> </td> 
-   <td> 在Web服务器中启动HTTP中继模块。 <br /> </td> 
+   <td> 启动Web服务器中的HTTP中继模块。 <br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 真<br /> </td> 
   </tr> 
@@ -3089,7 +3089,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </tbody> 
 </table>
 
-添加 **web >中继> url** 用于每个要中继的URL的节点（插入顺序定义优先级），其参数如下。
+添加 **web >中继> url** 使用下列参数为每个要中继的URL插入节点（插入顺序定义优先级）。
 
 有关其他信息，请参阅 [动态页面安全和中继](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) 和 [部分](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
@@ -3105,7 +3105,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> IPMask<br /> </td> 
-   <td> 授权IP:允许此掩码使用中继的源IP地址列表（以逗号分隔）。<br /> </td> 
+   <td> 授权IP：逗号分隔的源IP地址列表，允许使用此掩码的中继。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3117,37 +3117,37 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> hostMask<br /> </td> 
-   <td> 要中继的DNS别名：要中继的DNS别名掩码列表（以逗号分隔）(例如：“*.adobe.com”)。<br /> </td> 
+   <td> 要中继的DNS别名：要中继的DNS别名掩码的逗号分隔列表（例如：“*.adobe.com”）。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> httpAllowed<br /> </td> 
-   <td> 无论安全区域（如webApps）如何，都会授权HTTP访问。 <br /> </td> 
+   <td> 无论安全区域是什么，HTTP访问已授权（如webApps）。 <br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> relayHost<br /> </td> 
-   <td> 添加原始主机：中继时使用原始请求的HTTP“Host”标头。<br /> </td> 
+   <td> 添加原始主机：中继时使用原始请求的HTTP“主机”标头。<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> relayPath<br /> </td> 
-   <td> 添加初始URL路径：附加要中继到目标页面URL的完整路径。 <br /> </td> 
+   <td> 中继路径<br /> </td> 
+   <td> 添加初始URL路径：附加URL的完整路径，以中继到目标页面的URL。 <br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> 状态<br /> </td> 
-   <td> 公共资源的同步状态（枚举）。 可能的值包括“正常”（正常执行）、“黑名单”(在出现错误404时添加阻止列表到的URL)和“备用”（如果存在，则在备用服务器上上传文件）。<br /> </td> 
+   <td> 公共资源的同步状态（枚举）。 阻止列表可能的值包括“正常”（正常执行）、“黑名单”（在错误404的情况下将url添加到上传）和“备用”（如果存在，则在备用服务器上上传文件）。<br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> 正常<br /> </td> 
+   <td> 普通<br /> </td> 
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
-   <td> 目标页面的URL:请参阅 <a href="configure-tomcat.md" target="_blank">配置Tomcat</a>.<br /> </td> 
+   <td> 目标页面的URL：请参阅 <a href="configure-tomcat.md" target="_blank">配置Tomcat</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3231,9 +3231,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
      timeout="" status="spare" httpAllowed="true" urlPath="/*.jpg"/>
 ```
 
-添加 **web > relay > responseHeader** 节点，用于向转发到中继的回复添加每个HTTP标头。
+添加 **web > relay > responseHeader** 每个HTTP标头的节点，用于添加转发到中继的回复。
 
-有关其他信息，请参阅 [管理HTTP头](../../installation/using/configuring-campaign-server.md#managing-http-headers).
+有关其他信息，请参阅 [管理HTTP标头](../../installation/using/configuring-campaign-server.md#managing-http-headers).
 
 <table> 
  <thead> 
@@ -3267,7 +3267,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 以下是 **web >重定向** 节点。 这是重定向模块的配置。
 
-有关其他信息，请参阅 [部分](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
+有关其他信息，请参阅此 [部分](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
 <table> 
  <thead> 
@@ -3281,19 +3281,19 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> 组织ID:Adobe Experience Cloud中的唯一组织标识符，尤其用于VisitorID服务和IMS SSO。 <br /> </td> 
+   <td> 组织ID： Adobe Experience Cloud中的唯一组织标识符，特别用于VisitorID服务和IMS SSO。 <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> P3PCompactPolicy<br /> </td> 
-   <td> 描述用于永久性Cookie的策略的值（与P3P Compact Policy格式兼容）。 <br /> </td> 
+   <td> 描述用于永久Cookie的策略的值（符合P3P压缩策略格式）。 <br /> </td> 
    <td> 字符串<br /> </td> 
-   <td> “CAO DSP COR CUR A DEVa TAIa我们的BUS IND UNI COM NAV”<br /> </td> 
+   <td> 'CAO DSP COR CURa DEVa TAI我们的公共汽车旅馆UNI COM NAV'<br /> </td> 
   </tr> 
   <tr> 
    <td> cookieDomain<br /> </td> 
-   <td> 要配置以明确指示要设置Cookie的域的逗号分隔域列表。 <br /> </td> 
+   <td> 要配置的以逗号分隔的域列表，以明确指示要设置Cookie的域。 <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3305,25 +3305,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> defLogCount<br /> </td> 
-   <td> 按调用记录计数：默认情况下，在调用方法GetTrackingLogs时返回的日志数。<br /> </td> 
+   <td> 按调用的日志计数：在调用GetTrackingLogs方法时默认返回的日志数。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
    <td> expirationURL<br /> </td> 
-   <td> 过期重定向的页面：重定向服务器在投放操作的重定向过期时默认使用的网页URL。<br /> </td> 
+   <td> 过期重定向的页面：投放操作的重定向过期时，重定向服务器默认使用的网页URL。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> maxJobsInCache<br /> </td> 
-   <td> 最大作业计数：缓存中投放操作的最大数量。 不得低于50。 <br /> </td> 
+   <td> 最大作业计数：缓存中的最大投放操作数。 不得低于50。 <br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> showSourceIP<br /> </td> 
-   <td> 如果设置为false，则r/test返回的响应中的sourceIP值将为空字符串。 <br /> </td> 
+   <td> 当设置为false时，r/test返回的响应中的sourceIP值为空字符串。 <br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 真<br /> </td> 
   </tr> 
@@ -3354,7 +3354,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </tbody> 
 </table>
 
-以下是 **web >重定向> spareServer** 节点。
+以下是 **web >重定向>备用服务器** 节点。
 
 有关其他信息，请参阅 [冗余跟踪](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
@@ -3370,7 +3370,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> enabledIf<br /> </td> 
-   <td> 在以下情况下，请考虑：如果表达式返回true，则会考虑跟踪服务器。 <br /> </td> 
+   <td> 在以下情况下需要考虑：如果表达式返回true，则需考虑跟踪服务器。 <br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3391,7 +3391,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 ### spamCheck {#spamcheck}
 
-以下是 **web > spamCheck** 节点。 这是电子邮件防垃圾邮件评分评估参数的配置。
+以下是 **web > spamCheck** 节点。 这是电子邮件反垃圾邮件评分评估参数的配置。
 
 有关其他信息，请参阅 [配置SpamAssassin](../../installation/using/configuring-spamassassin.md).
 
@@ -3406,7 +3406,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> 命令<br /> </td> 
-   <td> 用于评估电子邮件的防垃圾邮件得分的命令(例如“perl spamcheck.pl”)。<br /> </td> 
+   <td> 评估电子邮件的反垃圾邮件分数要执行的命令（例如“perl spamcheck.pl”）。<br /> </td> 
    <td> 字符串<br /> </td> 
   </tr> 
  </tbody> 
@@ -3416,7 +3416,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 以下是 **wfserver** 节点。 这是工作流进程配置。
 
-有关其他信息，请参阅 [高可用性工作流和相关性](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+有关其他信息，请参阅 [高可用性工作流和相似性](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 <table> 
  <thead> 
@@ -3435,13 +3435,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> 阿尔格<br /> </td> 
+   <td> 参数<br /> </td> 
    <td> 启动参数<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> autoStart<br /> </td> 
+   <td> autostart<br /> </td> 
    <td> 自动开始<br /> </td> 
    <td> 布尔值<br /> </td> 
    <td> 假<br /> </td> 
@@ -3460,25 +3460,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> 内存消耗警报：有关给定进程所消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
+   <td> 内存消耗警报：有关给定进程消耗的RAM量（以Mb为单位）的警报。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> 内存消耗警告：警告给定进程消耗的RAM量（以Mb为单位）。<br /> </td> 
+   <td> 内存消耗警告：有关给定进程消耗的RAM量（以Mb为单位）的警告。<br /> </td> 
    <td> 长整型<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> notifRelay<br /> </td> 
-   <td> 通知中继：HostName：启用通知中继的端口。<br /> </td> 
+   <td> 通知中继：启用通知中继的HostName：Port。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> 进程自动重新启动的时间. 请参阅 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动进程重新启动</a>.<br /> </td> 
+   <td> 进程自动重新启动的时间. 参见 <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">自动重启进程</a>.<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 

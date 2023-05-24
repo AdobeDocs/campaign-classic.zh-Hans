@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 调整配置
-description: 了解如何在迁移到Campaign v7前后调整配置
+description: 了解在迁移到Campaign v7之前和之后如何调整配置
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
@@ -20,20 +20,20 @@ ht-degree: 2%
 
 
 
-Adobe Campaign v7中的某些主要更改需要特定配置。 在迁移之前或之后，可能需要这些配置。
+Adobe Campaign v7中的某些主要更改需要特定配置。 这些配置在迁移之前或之后可能很有必要。
 
-在迁移期间， **NmsRecipient** 表是根据架构定义重建的。 对此表的SQL结构在Adobe Campaign外所做的任何更改都将丢失。
+在迁移期间， **NmsRecipient** 表是从架构定义中重建的。 在Adobe Campaign之外对此表的SQL结构所做的任何更改都将丢失。
 
 要检查的元素示例：
 
-* 如果已在 **NmsRecipient** 表格，但您尚未在架构中详细说明该内容，因此不会保存该表格。
-* 的 **表空间** 默认情况下，属性会返回其值，即在部署向导中定义的值。
-* 如果已将引用视图添加到 **NmsRecipient** 表格，则必须在迁移之前将其删除。
+* 如果已向中添加了列（或索引） **NmsRecipient** 表，但您尚未在架构中详细描述它，将不会保存它。
+* 此 **表空间** 默认情况下，属性会取回其值，换言之，取回部署向导中定义的值。
+* 如果您已将参考视图添加到 **NmsRecipient** 表，您必须在迁移之前删除它。
 
 
-## 迁移之前 {#before-the-migration}
+## 迁移前 {#before-the-migration}
 
-迁移到Adobe Campaign v7时，必须配置以下元素。 在启动 **postupgrade**.
+迁移到Adobe Campaign v7时，必须配置以下元素。 在开始 **升级后**.
 
 <!--
 
@@ -78,37 +78,37 @@ Adobe Campaign v7中的某些主要更改需要特定配置。 在迁移之前�
 
 ## 迁移后 {#after-the-migration}
 
-运行后 **postupgrade**，请检查并配置以下元素：
+运行后 **升级后**，检查并配置以下元素：
 
 * 镜像页面
 
-   镜像页面个性化块已随v6.x发生更改。此新版本可提高访问这些页面时的安全性。
+   镜像页面个性化块已随v6.x更改。此新版本提高了访问这些页面时的安全性。
 
-   如果在消息中使用v5个性化块，则镜像页面显示将失败。 Adobe强烈建议在消息中插入镜像页面时使用新的个性化块。
+   如果您在邮件中使用了v5个性化块，则镜像页面显示将失败。 Adobe强烈建议您在消息中插入镜像页面时使用新的个性化块。
 
-   但是，作为临时解决方法（以及由于镜像页面仍处于实时状态），您可以通过更改选项返回到旧的个性化块以避免此问题 **[!UICONTROL XtkAcceptOldPasswords]** 将其设置为 **[!UICONTROL 1]**. 这不会影响新v6.x个性化块的使用。
+   但是，作为临时解决方法（并且镜像页面仍处于活动状态），您可以返回旧的个性化块，通过改变选项以避免此问题 **[!UICONTROL XtkAcceptOldPasswords]** 并将其设置为 **[!UICONTROL 1]**. 这不会影响新的v6.x个性化块的使用情况。
 
 * 语法
 
-   如果遇到与语法相关的任何错误，则在升级后期间必须临时激活 **allowSQLInjent** 选项 **serverConf.xml** 文件，因为这样您就有时间重写代码。 修改代码后，请确保重新激活安全性。
+   如果您遇到与语法相关的任何错误，则在升级后，您必须临时激活 **allowSQLInjection** 中的选项 **serverConf.xml** 文件，因为这样您就有时间重写代码。 修改代码后，请确保重新激活安全性。
 
 * 冲突
 
-   迁移是通过升级后执行的，冲突可能会显示在报表、表单或Web应用程序中。 这些冲突可以从控制台中解决。
+   迁移是通过升级后执行的，冲突可能会出现在报表、表单或Web应用程序中。 这些冲突可以从控制台中解决。
 
 * Tomcat
 
-   如果您自定义了安装文件夹，请确保检查迁移后文件夹是否正确更新。
+   如果您自定义了安装文件夹，请确保检查它在迁移后是否正确更新。
 
 * 报告
 
-   当前所有现成的报表都使用v6.x渲染引擎。 如果您已将JavaScript代码添加到报表中，则某些元素可能会受到影响。
+   所有现成的报表当前都使用v6.x渲染引擎。 如果您在报表中添加了JavaScript代码，则某些元素可能会受到影响。
 
 * Web应用程序
 
-   在升级后，如果在连接到已识别的Web应用程序时遇到任何问题，则必须激活 **allowUserPassword** 和 **sessionTokenOnly** 选项 **serverConf.xml** 文件。 要避免出现任何安全问题，必须在问题解决后重新激活这两个选项。
+   升级后，如果您在连接到已识别的Web应用程序时遇到任何问题，则必须激活 **allowUserPassword** 和 **sessionTokenOnly** 中的选项 **serverConf.xml** 文件。 为避免出现任何安全问题，在解决问题后必须重新激活这两个选项。
 
-   根据Web应用程序的类型及其配置，必须执行其他操作以确保它们正常工作。
+   根据Web应用程序的类型及其配置，您必须执行其他操作以确保它们正常工作。
 
 <!--
   If migrating from a v5.11 platform, additional configurations must be carried out. [Learn more](../../migration/using/general-configurations.md#specific-configurations-in-v5-11.md)
@@ -137,7 +137,7 @@ Adobe Campaign v7中的某些主要更改需要特定配置。 在迁移之前�
 
 * 互动
 
-   如果您使用 **互动**，则迁移后必须调整任何参数。
+   如果您使用 **互动**&#x200B;中，您必须在迁移后调整任何参数。
 
 <!--
 

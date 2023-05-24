@@ -20,15 +20,15 @@ ht-degree: 0%
 
 
 
-迁移后，如果出现问题，您可能需要回退到Campaign的先前版本。
+迁移后，如果出现问题，您可能需要回退到以前版本的Campaign。
 
 回滚过程取决于您的Campaign初始版本。
 
 以下是从v7恢复v6.1的过程。
 
 1. 恢复数据库的备份并恢复它。
-1. 恢复 **Adobe Campaign v6.back** 文件夹(**nl6.back** 在Linux中)，将其重命名为 **Adobe Campaign v6** (**nl6** 在Linux中)并将其还原到其原始位置。
-1. 通过重新分配侦听端口来重新配置IIS，以在IIS网站级别重新建立Adobe Campaign v6.1的集成。
+1. 恢复 **Adobe Campaign v6.back** 文件夹(**nl6.back** 在Linux中)，将其重命名为 **Adobe Campaign v6** (**nl6** （在Linux中）并将其还原到原始位置。
+1. 通过重新分配侦听端口来重新配置IIS，以便在IIS网站级别重新建立Adobe Campaign v6.1的集成。
 1. 停止Adobe Campaign v7服务。
 1. 重新启动IIS。
 1. 重新启动Adobe Campaign v6.1服务。

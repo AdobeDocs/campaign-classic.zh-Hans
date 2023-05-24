@@ -17,11 +17,11 @@ ht-degree: 5%
 
 
 
-脚本会计算用于剩余群体的投放内容的选择。 此脚本以最高打开率恢复有关投放的信息，并将内容复制到最终投放。
+脚本会计算预定用于剩余群体的投放内容的选择。 此脚本可恢复有关打开率最高的投放的信息，并将内容复制到最终投放中。
 
 ## 脚本示例 {#example-of-a-script}
 
-以下脚本可以像在定位工作流中一样使用。 如需详细信息，请参阅[此部分](#implementation)。
+以下脚本可以按原样在定位工作流中使用。 如需详细信息，请参阅[此部分](#implementation)。
 
 ```
  // query the database to find the winner (best open rate)
@@ -67,12 +67,12 @@ ht-degree: 5%
    vars.deliveryId = delivery.id
 ```
 
-有关脚本的详细说明，请参阅 [此部分](#details-of-the-script).
+有关脚本的详细说明，请参阅 [本节](#details-of-the-script).
 
 ## 实施 {#implementation}
 
-1. 打开 **[!UICONTROL JavaScript code]** 活动。
-1. 复制 [脚本示例](#example-of-a-script) 到 **[!UICONTROL JavaScript code]** 窗口。
+1. 打开您的 **[!UICONTROL JavaScript code]** 活动。
+1. 复制中提供的脚本 [脚本示例](#example-of-a-script) 到 **[!UICONTROL JavaScript code]** 窗口。
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
@@ -85,13 +85,13 @@ ht-degree: 5%
    ![](assets/use_case_abtesting_configscript_003.png)
 
 1. 关闭 **[!UICONTROL JavaScript code]** 活动。
-1. 保存工作流。
+1. 保存您的工作流。
 
 ## 脚本的详细信息 {#details-of-the-script}
 
-本节详细介绍脚本的各个部分及其操作模式。
+此部分详细介绍脚本的各个部分及其操作模式。
 
-* 脚本的第一部分是查询。 的 **queryDef** 命令允许您从 **NmsDelivery** 将通过执行定位工作流创建的投放表格，并根据预计的打开率对其进行排序，然后恢复来自具有最高打开率的投放的信息。
+* 脚本的第一部分是查询。 此 **queryDef** 命令允许您从 **NmsDelivery** 对通过执行定位工作流创建的投放进行表，并根据它们的估计打开率对它们进行排序，然后恢复来自具有最高打开率的投放的信息。
 
    ```
    // query the database to find the winner (best open rate)
@@ -111,7 +111,7 @@ ht-degree: 5%
         </queryDef>).ExecuteQuery()
    ```
 
-* 具有最高打开率的投放会重复显示。
+* 会复制打开率最高的投放。
 
    ```
     // create a new delivery object and initialize it by doing a copy of
@@ -120,14 +120,14 @@ ht-degree: 5%
    delivery.Duplicate("nms:delivery|" + winner.@id)
    ```
 
-* 将修改复制投放的标签，并在 **final** 中的“隐藏主体”。
+* 已复制投放的标签已修改，并且单词 **final** 会添加到其中。
 
    ```
    // append 'final' to the delivery label
    delivery.label = winner.@label + " final"
    ```
 
-* 投放会复制到营销活动仪表板中。
+* 投放将会复制到活动仪表板中。
 
    ```
    // link the delivery to the operation to make sure it will be displayed in
@@ -144,14 +144,14 @@ ht-degree: 5%
    delivery.scheduling.delayed = 0
    ```
 
-* 投放保存在数据库中。
+* 投放将保存在数据库中。
 
    ```
    // save the delivery in database
    delivery.save()
    ```
 
-* 复制投放的唯一标识符存储在工作流变量中。
+* 重复投放的唯一标识符存储在工作流变量中。
 
    ```
    // store the new delivery Id in event variables
@@ -160,14 +160,14 @@ ht-degree: 5%
 
 ## 其他选择标准 {#other-selection-criteria}
 
-通过以上示例，您可以根据电子邮件的打开率选择投放的内容。 您可以根据其他特定于投放的指标来调整它：
+通过以上示例，您可以根据电子邮件的打开率选择投放内容。 您可以根据其他特定于投放的指标对其进行调整：
 
-* 最佳点击吞吐量： `[indicators/@recipientClickRatio]`,
-* 最高反应率（电子邮件打开和在消息中点击）： `[indicators/@reactivity]`,
+* 最佳点击吞吐量： `[indicators/@recipientClickRatio]`，
+* 最高反应率（电子邮件打开数和邮件点击数）： `[indicators/@reactivity]`，
 * 最低投诉率： `[indicators/@refusedRatio]` （对sortDesc属性使用false值），
-* 最高转化率： `[indicators/@transactionRatio]`,
-* 收到消息后访问的页数： `[indicators/@totalWebPage]`,
-* 退订率最低： `[indicators/@optOutRatio]`,
+* 最高转化率： `[indicators/@transactionRatio]`，
+* 收到消息后访问的页面数： `[indicators/@totalWebPage]`，
+* 最低退订率： `[indicators/@optOutRatio]`，
 * 交易金额: `[indicators/@amount]`.
 
 您现在可以定义最终投放。 [了解详情](a-b-testing-uc-final-delivery.md)。

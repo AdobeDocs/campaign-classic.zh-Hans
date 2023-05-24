@@ -14,9 +14,9 @@ ht-degree: 5%
 
 
 
-的 **模拟** 利用模块，可在向收件人发送建议之前，测试属于类别或环境的选件的分发。
+此 **模拟** 通过模块，您可以在向收件人发送建议之前测试属于某个类别或环境的选件分布。
 
-模拟会考虑以前应用于选件的上下文和资格规则(请参阅 [优惠目录概述](../../interaction/using/offer-catalog-overview.md))及其演示规则(请参阅 [管理优惠演示](../../interaction/using/managing-offer-presentation.md))。 这样，您就可以测试和优化选件建议的各种版本，而无需实际使用选件，或者超量/不限次地吸引目标，因为模拟对目标收件人没有影响。
+模拟会考虑先前应用于优惠的上下文和资格规则(请参阅 [优惠目录概述](../../interaction/using/offer-catalog-overview.md))及其呈现规则(请参阅 [管理优惠演示](../../interaction/using/managing-offer-presentation.md))。 这样，您就可以测试和优化各种版本的选件建议，而无需实际使用选件或过度/缺邀目标客户，因为模拟对目标收件人没有影响。
 
 要了解如何模拟优惠，请阅读以下步骤。
 
@@ -24,14 +24,14 @@ ht-degree: 5%
 
 ## 创建模拟的主要步骤 {#main-steps-for-creating-a-simulation}
 
-要运行选件模拟，请应用以下步骤：
+要运行选件的模拟，请应用以下步骤：
 
-1. 在 **[!UICONTROL Profiles and Targets]** ，单击 **[!UICONTROL Simulations]** 链接，然后单击 **[!UICONTROL Create]** 按钮。
+1. 在 **[!UICONTROL Profiles and Targets]** 选项卡，单击 **[!UICONTROL Simulations]** 链接，然后单击 **[!UICONTROL Create]** 按钮。
 
    ![](assets/offer_simulation_001.png)
 
-1. 保存并编辑之前创建的模拟。
-1. 转到 **[!UICONTROL Edit]** 选项卡，然后指定执行设置。
+1. 保存并编辑刚刚创建的模拟。
+1. 转到 **[!UICONTROL Edit]** 选项卡，并指定执行设置。
 
    有关更多信息，请参阅 [执行设置](../../interaction/using/execution-settings.md).
 
@@ -39,7 +39,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >仅当您使用与Campaign的交互时，才可使用执行设置。
+   >仅当使用“与Campaign的交互”时，执行设置才可用。
 
 1. 指定模拟范围。
 
@@ -47,18 +47,18 @@ ht-degree: 5%
 
    ![](assets/offer_simulation_004.png)
 
-1. 添加报表轴以增强 **[!UICONTROL Offer distribution by rank]** 报表（可选）。
+1. 添加报告轴以增强 **[!UICONTROL Offer distribution by rank]** 报表（可选）。
 
-   有关更多信息，请参阅 [添加报表轴](../../interaction/using/simulation-scope.md#adding-reporting-axes).
+   有关更多信息，请参阅 [添加报告轴](../../interaction/using/simulation-scope.md#adding-reporting-axes).
 
    ![](assets/offer_simulation_005.png)
 
 1. 单击 **[!UICONTROL Save]** 以记录模拟设置。
-1. 通过仪表板启动模拟。
+1. 通过仪表板开始模拟。
 
    ![](assets/offer_simulation_006.png)
 
-1. 检查模拟结果并显示分析报告。
+1. 检查仿真结果并显示分析报告。
 
    有关更多信息，请参阅 [模拟跟踪](../../interaction/using/simulation-tracking.md).
 
