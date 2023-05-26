@@ -125,7 +125,7 @@ ht-degree: 2%
 >
 >一旦操作员批准或拒绝了任务，其他审核操作员就不能再对批准执行操作。
 
-### 自动和手动批准 {#automatic-and-manual-approval}
+### 自动和手动审批 {#automatic-and-manual-approval}
 
 在创建定位工作流时，如果批准是自动的（默认模式），Adobe Campaign会显示批准链接，或者在需要批准时立即发送通知。
 

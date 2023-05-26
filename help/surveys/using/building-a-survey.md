@@ -136,4 +136,4 @@ Web窗体可通过 **[!UICONTROL Resources > Online > Web applications]** 树节
 
 >[!CAUTION]
 >
->当您随机显示问题时(**[!UICONTROL Display randomly]** 选项)，请注意不要使用必须填写一个或多个选择的多选问题。
+>当您随机显示问题时(**[!UICONTROL Display randomly]** 选项中)，请注意不要使用必须填写一个或多个选项的多选问题。

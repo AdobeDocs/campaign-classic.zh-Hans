@@ -46,7 +46,7 @@ A **投放**-type活动允许您创建投放操作。 它可以使用输入元�
 
       选择投放操作后，您可以通过单击 **[!UICONTROL Edit link]** 图标。
 
-   * 创建脚本以计算投放。 要执行此操作，请选择 **[!UICONTROL Computed by a script]** 选项并输入脚本。 您可以通过单击 **[!UICONTROL Edit...]** 选项。 以下示例可恢复投放的标识符：
+   * 创建脚本以计算投放。 要执行此操作，请选择 **[!UICONTROL Computed by a script]** 选项并输入脚本。 您可以通过单击 **[!UICONTROL Edit...]** 选项。 以下示例恢复投放的标识符：
 
       ![](assets/diffusion_edit_3.png)
 

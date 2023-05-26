@@ -76,7 +76,7 @@ ht-degree: 5%
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. 在 **[!UICONTROL Label]** 字段，输入脚本的名称，即
+1. 在 **[!UICONTROL Label]** 字段中，输入脚本的名称，即
 
    ```
    <%= vars.deliveryId %>

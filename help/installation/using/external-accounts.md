@@ -97,7 +97,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 * **[!UICONTROL Azure Client secret]**
 
-   客户端密码ID可在 **客户端密码** 中的列 **证书和密钥** Azure门户中应用程序的菜单。
+   客户端密码ID可在以下位置找到： **客户端密码** 中的列 **证书和密钥** Azure门户中应用程序的菜单。
 
 * **[!UICONTROL Azure Redirect URL]**
 

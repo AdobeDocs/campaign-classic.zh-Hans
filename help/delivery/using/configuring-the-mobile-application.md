@@ -97,7 +97,7 @@ ht-degree: 6%
    >
    >确保对于应用程序的开发版本（沙盒）和生产版本，不要使用相同的证书。
 
-1. 此 **[!UICONTROL Sounds]** 选项卡允许您指定要播放的声音。 单击 **[!UICONTROL Add]** 和填充 **[!UICONTROL Internal name]** 字段，必须包含应用程序中嵌入的文件名称或系统声音的名称。
+1. 此 **[!UICONTROL Sounds]** 选项卡允许您指定要播放的声音。 单击 **[!UICONTROL Add]** 和填充 **[!UICONTROL Internal name]** 字段，必须包含应用程序中嵌入的文件的名称或系统声音的名称。
 
 1. 单击 **[!UICONTROL Next]** 以开始配置开发应用程序。
 

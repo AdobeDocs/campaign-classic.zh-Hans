@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 为匿名交互定位和存储环境 {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
-默认情况下，交互附带预配置的环境，以定向收件人表（已识别的选件）。 如果要定位其他表（匿名选件的访客表或特定的收件人表），则需要使用目标映射向导创建环境。 有关此内容的更多信息，请参阅 [创建优惠环境](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+默认情况下，交互附带预配置的环境，以定向收件人表（已识别的选件）。 如果要定位另一个表（匿名选件的访客表或特定的收件人表），则需要使用目标映射向导创建环境。 有关此内容的更多信息，请参阅 [创建优惠环境](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 通过映射创建向导创建匿名环境时， **[!UICONTROL Environment dedicated to incoming anonymous interactions]** 框会在环境的 **[!UICONTROL General]** 选项卡。
 
