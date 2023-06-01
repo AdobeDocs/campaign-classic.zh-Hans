@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '328'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 4%
 
 1. 选择包含控制台安装程序的软件包。
 
-   此文件名为 `setup-client-7.X.XXXX.exe` 对于v7或 `setup-client-6.X.XXXX.exe` 对于v6.1，其中 `X` 是Adobe Campaign的子版本，并且 `XXXX` 是内部版本号。
+   此文件名为 `setup-client-7.X.XXXX.exe`，其中 `X` 是Adobe Campaign的子版本，并且 `XXXX` 是内部版本号。
 
 1. 将此包复制并粘贴到Adobe Campaign安装文件夹（对于混合安装，位于Marketing Server上）中的 **/datakit/nl/eng/jsp**.
 1. 启动Adobe Campaign服务器。

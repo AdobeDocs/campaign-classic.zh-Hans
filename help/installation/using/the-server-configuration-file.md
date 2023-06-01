@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '7979'
+source-wordcount: '7955'
 ht-degree: 39%
 
 ---
@@ -1618,12 +1618,12 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;”
    <td> 布尔值<br /> </td> 
    <td> 真 <br /> </td> 
   </tr> 
-  <tr> 
+  <!--tr> 
    <td> statServerVersion<br /> </td> 
-   <td> 使用的协议版本：通信协议版本（1用于v5.11和6.0.2服务器，2用于v6.1服务器）。<br /> </td> 
-   <td> 字符串<br /> </td> 
-   <td> 如果未定义，则使用最新版本。 <br /> </td> 
-  </tr> 
+   <td> Protocol version used: communication protocol version (1 for a v5.11 and 6.0.2 server, 2 for a v6.1 server).<br /> </td> 
+   <td> String<br /> </td> 
+   <td> If undefined, the latest version is used. <br /> </td> 
+  </tr--> 
   <tr> 
    <td> useMomentum<br /> </td> 
    <td> 如果设置为“true”，则您的实例将使用 <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">增强型MTA</a>.<br /> </td> 

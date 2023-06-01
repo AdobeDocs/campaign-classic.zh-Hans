@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
-source-wordcount: '935'
-ht-degree: 100%
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 98%
 
 ---
 
@@ -129,7 +129,7 @@ Adobe 团队将引导和指导您的组织完成这一过程。
     </a>
     </div>
     <ul>
-    <li>升级 Campaign Classic 实例的工作量和复杂性会随着两个版本 (v6 --&gt; v7) 之间的距离而增加。</li>
+    <li>升级Campaign Classic实例的工作量和复杂性会随着两个版本之间的距离而增加。</li>
     <li>您的组织等待的时间越长，升级就越复杂（您所面临的漏洞就越多）。</li>
     <li>定期更新可减少升级时的停机时间并降低回退风险。</li>
     </ul>

@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '882'
 ht-degree: 4%
 
 ---
@@ -171,15 +171,3 @@ webmdl@default (1644) - 18.2 Mo
 >
 >有关此IIS选项的更多信息，请参阅 [官方文档](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits).
 
-### 配置http错误消息显示 {#configuring-http-error-message-display}
-
-如果使用6.1版本的IIS服务器，则生成的错误消息可能由于消息中显示不想要的HTML代码而难以读取。
-
-要修复此问题并正确显示错误，请应用以下配置：
-
-1. 通过打开IIS **[!UICONTROL Start > Control Panel > Administrative tools]** 菜单。
-1. 在 **连接** 窗格中，选择为您的Adobe Campaign安装创建的站点，然后双击 **配置编辑器** 在主窗格中。
-1. 在 **章节** 下拉列表，选择 **system.webServer** > **httpErrors**.
-1. 选择 **PassThrough** 值位于 **existingresponse** 行。
-
-![](assets/ins_iis_httperrors.png)

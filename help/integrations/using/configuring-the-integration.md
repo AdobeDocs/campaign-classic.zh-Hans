@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '528'
 ht-degree: 3%
 
 ---
@@ -120,10 +120,6 @@ ht-degree: 3%
 1. 配置 **复制** 从AEM创作实例复制到AEM发布实例。
 
    要了解如何配置复制，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html).
-
-1. 安装集成 **功能包** 之后，在创作实例上复制发布实例上的安装。 (仅适用于AEM版本5.6.1和6.0)。
-
-   要了解如何安装功能包，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/experience-manager/aem-previous-versions.html).
 
 1. Adobe Experience Manager Adobe Campaign通过配置专用的 **Cloud Service**.
 

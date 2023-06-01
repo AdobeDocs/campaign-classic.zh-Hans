@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,6 @@ Tomcat嵌入式版本的新版本或升级版本仅随Adobe Campaign本身的新
 
 1. 导航到 *\tomcat-7\lib* Adobe Campaign安装文件夹中的子文件夹(例如， *C:\Program Files\ [Installation_folder]* 在Windows中，或者 */usr/local/neolane/nl6* （在Linux中）。
 
-   如果您在使用Tomcat v6运行旧版本的Adobe Campaign，请使用 *\tomcat-6\lib*.
-
 1. 复制文件 *catalina.jar* 到外部临时文件夹（例如，您的桌面），并将扩展名从.jar重命名为.zip。
 
 1. 解压缩复制的文件。 这会生成许多子文件夹和文件。
@@ -64,5 +62,4 @@ Tomcat嵌入式版本的新版本或升级版本仅随Adobe Campaign本身的新
 >[!NOTE]
 >
 >嵌入式Tomcat的主要版本只有在Adobe Campaign的主要版本发生更改时才会升级（尽管官方可能不再支持旧版本，但由于一些客户仍在运行这些版本，因此这些信息可能会很有用）。
->
->例如，Adobe Campaign v6.02将始终使用Tomcat v6.x。
+

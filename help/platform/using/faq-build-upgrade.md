@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '1995'
 ht-degree: 3%
 
 ---
@@ -54,15 +54,16 @@ Adobe Campaign 会定期更新。如果您熟悉我们发布的 [发行说明](.
 
 例如，使用上一节屏幕快照中的服务器信息：
 
-* 内部版本升级涉及从内部版本6880移动到任何大于6880的内部版本。 例如，v6.1.1内部版本8222到v6.1.1内部版本8666
+* 内部版本升级涉及从内部版本9342移动到任何大于9342的内部版本。 例如，v7.1内部版本9342到v7.1内部版本9342
 
-* 版本升级涉及从版本6.0.2移动到任何大于6.0.2的版本。例如： v6.0.1内部版本2222到v6.1.1内部版本8666
+* 版本升级涉及从版本6移动到任何更新的版本。  例如： v6.1.1内部版本8666到v7.1内部版本9342。
 
 ## 我是否应在进行这些更新之前备份数据？
 
 在进行任何更改之前，Adobe将备份系统。 但是，如果您的非生产系统（开发或暂存服务器）中存在关键的自定义工作，强烈建议您在进行任何升级之前将该工作导出为资源包。
 
-![](assets/do-not-localize/how-to-video.png) 欲知更多信息， [观看此操作方法视频](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+<!--
+![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
 ## 升级将于何时进行？
 
@@ -97,7 +98,9 @@ Adobe Campaign 会定期更新。如果您熟悉我们发布的 [发行说明](.
 
 ## 如何准备内部版本升级？
 
-在您的开发和暂存系统中，导出任何重要且必须保留的工作。 欲知更多信息，请 [观看此操作方法视频](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+在您的开发和暂存系统中，导出任何重要且必须保留的工作。
+
+<!--For more information please [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
 通过在实施结束时查看提供给团队的文档，刷新您在操作手册中（或由您的咨询团队/合作伙伴）开发的关键路径工作流和投放的知识。
 
@@ -105,7 +108,7 @@ Adobe Campaign 会定期更新。如果您熟悉我们发布的 [发行说明](.
 
 查看我们的 [以下版本升级核对清单](#check-list) 和您的测试计划，并确保能够执行这些测试的资源在24到48小时内可用。 完成升级。
 
-欲知更多信息， [请参阅本文档](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html).
+欲知更多信息， [请参阅此章节](../../production/using/build-upgrade.md).
 
 ## 可以在夜间或下班时间执行内部版本升级吗？
 

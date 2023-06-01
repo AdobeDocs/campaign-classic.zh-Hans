@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1213'
 ht-degree: 3%
 
 ---
@@ -166,7 +166,7 @@ ht-degree: 3%
 
    有关更多信息，请参阅 [Campaign服务器配置](../../installation/using/configuring-campaign-server.md).
 
-1. 复制客户端控制台安装程序(**setup-client-7.XX**， **YYYY.exe** 对于v7或 **setup-client-6.XX**， **YYYY.exe** （适用于v6.1）到 **/datakit/nl/eng/jsp** 文件夹。 [了解详情](../../installation/using/client-console-availability-for-windows.md)。
+1. 复制客户端控制台安装程序 **setup-client-7.XX**， **YYYY.exe** 到 **/datakit/nl/eng/jsp** 文件夹。 [了解详情](../../installation/using/client-console-availability-for-windows.md)。
 
 1. 启动Adobe Campaign服务器(**网络启动nlserver6** 在Windows中， **/etc/init.d/nlserver6启动** （在Linux中）并运行命令 **nlserver pdump** 再次检查所有已启用的模块是否存在。
 

@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1111'
 ht-degree: 4%
 
 ---
@@ -64,7 +64,7 @@ Web View默认作为Windows 11操作系统的一部分安装。 如果您的系�
 
 1. 选择包含控制台安装程序的软件包。
 
-   此文件名为setup-client-7.X.XXXX.exe （适用于v7）或setup-client-6.X.XXXX.exe （适用于v6.1），其中X是Adobe Campaign的子版本，XXXX是内部版本号。
+   此文件名为setup-client-7.X.XXXX.exe ，其中X是Adobe Campaign的子版本，XXXX是内部版本号。
 
 1. 将此包复制并粘贴到/datakit/nl/eng/jsp下的Adobe Campaign安装文件夹（对于混合安装，位于Marketing Server上）中。
 

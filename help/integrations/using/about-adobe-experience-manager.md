@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: e9756046-fc67-4afd-b7a9-c8d73614f02e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,5 @@ Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe 
 * Adobe Experience Manager **创作** 实例。
 * Adobe Experience Manager **发布** 实例。
 * Adobe Campaign实例。
-
-Adobe Campaign与Adobe Experience Manager 6.1、6.2、6.3、6.4和6.5兼容。以下部分概述了集成。
 
 有关更多详细信息，请参阅 [Adobe Experience Manager文档](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)

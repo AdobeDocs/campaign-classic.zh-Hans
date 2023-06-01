@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1077'
 ht-degree: 3%
 
 ---
@@ -165,7 +165,7 @@ ht-degree: 3%
 
    有关更多信息，请参阅 [Campaign服务器配置](../../installation/using/configuring-campaign-server.md).
 
-1. 复制客户端控制台安装程序(**setup-client-7.XX**， **YYYY.exe** 对于v7或 **setup-client-6.XX**， **YYYY.exe** （适用于v6.1）到 **/datakit/nl/eng/jsp** 文件夹。 [了解详情](../../installation/using/client-console-availability-for-windows.md)。
+1. 复制客户端控制台安装程序 **setup-client-7.XXX.exe** 到 **/datakit/nl/eng/jsp** 文件夹。 [了解详情](../../installation/using/client-console-availability-for-windows.md)。
 
 1. 请按照以下部分中所述的Web服务器集成过程(IIS、Apache)进行操作：
 
