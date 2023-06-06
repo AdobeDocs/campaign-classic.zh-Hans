@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
 workflow-type: tm+mt
-source-wordcount: '1798'
-ht-degree: 2%
+source-wordcount: '1760'
+ht-degree: 1%
 
 ---
 
@@ -101,7 +101,7 @@ ht-degree: 2%
 
 | Option | 说明 |
 |---|---|
-| TD_MAX_SESSIONS | 指定Teradata并行传输程序可以为操作员作业获取的最大登录会话数。 <br>[有关更多信息，请参阅此页面](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/ds2ref/p1naft0um1kn3vn1ubgkrjdf7c3a.html). |
+| TD_MAX_SESSIONS | 指定Teradata并行传输程序可以为操作员作业获取的最大登录会话数。 |
 | 时区名称 | 服务器时区的名称。 |
 | 字符集 | 用于配置Teradata字符集。 <br>[有关更多信息，请参阅此页面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
 | IANAAppCodePage | odbc应用程序代码页。 <br>[有关更多信息，请参阅此页面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
@@ -226,7 +226,7 @@ Adobe Campaign不会对其将在数据库中创建的对象设置保护模式（
 
 ### UDF_UTF16TO8安装 {#UDF-UTF16TO8-installation}
 
-如果要在Adobe Campaign实例中使用udf_utf16to8函数，则必须从以下位置在Teradata数据库上安装用户模式函数： **teradataunicode工具包** 的 [页面](https://downloads.teradata.com/download/tools/unicode-tool-kit) (utk_release1.7.0.0.zip)。
+如果要在Adobe CampaignTeradata实例中使用udf_utf16to8函数，请从 **teradataunicode工具包**.
 
 下载文件的sha1如下e58235f434f52c71316a577cb48e20b97d24f470。
 

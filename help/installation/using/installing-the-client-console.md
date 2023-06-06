@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 4%
+source-wordcount: '1109'
+ht-degree: 3%
 
 ---
 
@@ -40,7 +40,7 @@ Campaign客户端控制台是一个富客户端，可用于连接到Campaign应�
 
 从Campaign Classic7.3内部版本开始，任何控制台安装都需要安装Microsoft Edge Webview 2运行时。
 
-Web View默认作为Windows 11操作系统的一部分安装。 如果您的系统中不存在该程序，Campaign Classic控制台安装程序将提示您从以下位置下载它 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn). 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器访问链接。
+Web View默认作为Windows 11操作系统的一部分安装。 如果您的系统中不存在该程序，Campaign Classic控制台安装程序将提示您从以下位置下载它 [Microsoft开发人员网站](https://www.adobe.com/go/acc-ms-webview2-runtime-download). 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器访问链接。
 
 ## Adobe托管的实施 {#hosted-customers}
 
@@ -132,7 +132,7 @@ Adobe建议保留选项 **[!UICONTROL No longer ask this question]** 未选中�
 
 1. 通过URL指定与Adobe Campaign应用程序服务器的连接。 使用计算机的DNS或别名或IP地址。
 
-   例如，您可以使用 [`https://<machine>.<domain>.com`](https://myserver.adobe.com) 键入URL。
+   例如，您可以使用 `https://<machine>.<domain>.com` 键入URL。
 
 1. 如果为贵组织配置了Adobe IMS，请勾选选项 **[!UICONTROL Connect with an Adobe ID]**
 

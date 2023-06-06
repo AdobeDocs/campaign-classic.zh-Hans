@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
-source-wordcount: '1684'
-ht-degree: 100%
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+workflow-type: tm+mt
+source-wordcount: '1508'
+ht-degree: 96%
 
 ---
 
@@ -211,24 +211,24 @@ Adobe 不支持以下数据库引擎，因为其编辑者已弃用它们。运�
 
 从 19.1 Spring 版本开始，Adobe Campaign 不再与以下 FDA 服务器兼容：
 
-* PostgreSQL 9.3。[了解详情](https://www.postgresql.org/support/versioning)
-* MySQL 5.5。[了解详情](https://www.fromdual.com/support-for-mysql-from-oracle)
-* DB2 9.5。[了解详情](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Teradata 14 – 14.1。[了解详情](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
+* PostgreSQL 9.3.
+* MySQL 5.5.
+* DB2 9.5。
+* teradata14 - 14.1。
 
-Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。
+Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。请使用较新版本或系统。
 
-* DB2 UDB 9.5、9.7。通过联合数据访问 (FDA) 支持更新版本的 DB2。[了解详情](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Oracle 9i、10G R2。通过联合数据访问 (FDA) 支持更新版本的 Oracle。[了解详情](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
-* 9.6 及以下版本的 PostgreSQL 的生命周期已结束。较新版本的 PostgreSQL 由联合数据访问 (FDA) 进行支持。[了解详情](https://www.postgresql.org/support/versioning)
-* MSSQL 2000、2005、2008 R2。通过联合数据访问 (FDA) 支持更新版本的 SQL Server。[了解详情](https://support.microsoft.com/en-us/lifecycle/search/1044)
-* MySQL 5.1。通过联合数据访问 (FDA) 支持更新版本的 MySQL。[了解详情](https://en.wikipedia.org/wiki/InfiniDB)
-* InfiniDB 的生命周期已终止。[了解详情](https://www.mysql.com/support)
-* Teradata 13、13.1。通过联合数据访问 (FDA) 支持更新版本的 Teradata。[了解详情](https://www.info.teradata.com/download.cfm?ItemID=1007255)
-* Netezza 6.02、7.0。Netezza 的生命周期已终止。[了解详情](https://en.wikipedia.org/wiki/Netezza)
-* AsterData 5.0。AsterData 的生命周期已终止。[了解详情](https://en.wikipedia.org/wiki/Aster_Data_Systems)
-* Sybase IQ 15.2、15.4、15.5 和 Sybase ASE 15.0。通过联合数据访问 (FDA) 支持更新版本的 Sybase。[了解详情](https://sites.google.com/site/dbatipsandtricks/time-tracker)
-* Hadoop via HiveSQL：Hadoop 2.7.3、HiveSQL 1.2.1。Adobe Campaign Classic 仍通过联合数据访问 (FDA) 支持列出的 Hadoop via HiveSQL 版本，但这些版本与以下版本合并：HortonWorks (HDP 2.4.X、2.5.x、2.6.x）和 HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6)
+* DB2 UDB 9.5、9.7。
+* Oracle 9i、10G R2。
+* 9.6 及以下版本的 PostgreSQL 的生命周期已结束。
+* MSSQL 2000、2005、2008 R2。
+* MySQL 5.1.
+* InfiniDB 的生命周期已终止。
+* teradata13、13.1。
+* Netezza 6.02、7.0。Netezza 的生命周期已终止。
+* AsterData 5.0。AsterData 的生命周期已终止。
+* sybase IQ15.2、15.4、15.5和Sybase ASE 15.0。
+* 通过HiveSQLHadoop：Hadoop2.7.3、HiveSQL 1.2.1。Adobe Campaign Classic仍支持列出的通过联合数据访问(FDA)通过HiveSQL的Hadoop版本，但这些版本与以下版本合并：HortonWorks (HDP 2.4.X、2.5.x、2.6.x)和HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6)
 
 **RDBMS 服务器**
 
