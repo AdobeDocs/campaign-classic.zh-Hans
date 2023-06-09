@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: d9976b904d116b1f4deb9fde7842ad64234c7c8a
+source-git-commit: 131f1c658f76bd9e4e62fe95cf1cec8e9cc25122
 workflow-type: tm+mt
 source-wordcount: '3343'
 ht-degree: 3%
@@ -79,24 +79,12 @@ Adobe Campaign在Adobe Campaign客户端控制台中提供了一个图形助手�
 指示以下参数：
 
 * **[!UICONTROL Sender name]** ：输入发件人的名称。
-* **[!UICONTROL Sender address]** ：输入发件人的电子邮件地址。
-
-  >[!NOTE]
-  >
-  > 从Adobe Campaign发送电子邮件时， **发件人地址** 邮箱不受监视，营销用户无法访问此邮箱。 Adobe Campaign也不提供自动回复或自动转发此邮箱中收到的电子邮件的功能。 详细了解可投放性最佳实践 [在本文档中](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
+* **[!UICONTROL Sender address]** ：输入发件人的电子邮件地址。 从Adobe Campaign发送电子邮件时， **发件人地址** 邮箱不受监视，营销用户无法访问此邮箱。 Adobe Campaign也不提供自动回复或自动转发此邮箱中收到的电子邮件的功能。 详细了解可投放性最佳实践 [在本文档中](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
 
 * **[!UICONTROL Reply address text]** ：输入收件人单击 **[!UICONTROL Reply]** 按钮。
-* **[!UICONTROL Reply address]** ：输入收件人单击 **[!UICONTROL Reply]** 电子邮件客户端软件中的按钮。
+* **[!UICONTROL Reply address]** ：输入收件人单击 **[!UICONTROL Reply]** 电子邮件客户端软件中的按钮。 目的 **回复地址** 字段为您希望收件人回复的地址与 **发件人地址**.  此地址必须是有效的电子邮件地址，链接到受监控邮箱，并由客户托管。  它可以是支持邮箱，例如customer-care@customer.com，在其中读取和响应电子邮件。
 
-  >[!NOTE]
-  >
-  >目的 **回复地址** 字段为您希望收件人回复的地址与 **发件人地址**.  此地址必须是有效的电子邮件地址，链接到受监控邮箱，并由客户托管。  它可以是支持邮箱，例如customer-care@customer.com，在其中读取和响应电子邮件。
-
-* **[!UICONTROL Error address]** ：输入有错误的消息的电子邮件地址。 这是用于处理退回邮件的技术地址，包括Adobe Campaign服务器因目标地址不存在而收到的电子邮件。
-
-  >[!NOTE]
-  >
-  > 此地址必须是有效的电子邮件地址，链接到受监控邮箱，并由客户托管。 它可以是退回邮箱，例如errors@customer.com。
+* **[!UICONTROL Error address]** ：输入有错误的消息的电子邮件地址。 这是用于处理退回邮件的技术地址，包括Adobe Campaign服务器因目标地址不存在而收到的电子邮件。 此地址必须是有效的电子邮件地址，链接到受监控邮箱，并由客户托管。 它可以是退回邮箱，例如errors@customer.com。
 
 
 除此之外，您还可以指定 **蒙版** 已授权发件人地址和错误地址。 如有必要，可以使用逗号分隔这些掩码。 此配置是可选的。 输入字段后，Adobe Campaign会在投放时（分析期间，如果地址不包含任何变量）检查地址是否有效。 此操作模式可确保不使用可能触发投放问题的地址。 必须在投放服务器上配置投放地址。
