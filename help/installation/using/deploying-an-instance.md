@@ -8,16 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '3140'
+source-wordcount: '3333'
 ht-degree: 3%
 
 ---
 
 # 部署实例{#deploying-an-instance}
-
-
 
 >[!NOTE]
 >
@@ -25,7 +23,7 @@ ht-degree: 3%
 
 ## 部署向导 {#deployment-wizard}
 
-通过Adobe Campaign客户端控制台中提供的图形向导，您可以定义要连接的实例的参数。
+Adobe Campaign在Adobe Campaign客户端控制台中提供了一个图形助手，用于定义要连接的实例的参数。
 
 要启动部署向导，请选择 **“工具”>“高级”>“部署向导”**.
 
@@ -80,13 +78,36 @@ ht-degree: 3%
 
 指示以下参数：
 
-* **[!UICONTROL Sender name]** ：发件人姓名
-* **[!UICONTROL Sender address]** ：发件人地址
-* **[!UICONTROL Reply address text]** ：可自定义的名称，将在收件人单击 **[!UICONTROL Reply]** 电子邮件客户端软件中的按钮
-* **[!UICONTROL Reply address]** ：收件人单击 **[!UICONTROL Reply]** 电子邮件客户端软件中的按钮
-* **[!UICONTROL Error address]** ：出现错误的消息的电子邮件地址。 这是用于处理退回邮件的技术地址，包括Adobe Campaign服务器因目标地址不存在而收到的电子邮件。
+* **[!UICONTROL Sender name]** ：输入发件人的名称。
+* **[!UICONTROL Sender address]** ：输入发件人的电子邮件地址。
+
+  >[!NOTE]
+  >
+  > 从Adobe Campaign发送电子邮件时， **发件人地址** 邮箱不受监视，营销用户无法访问此邮箱。 Adobe Campaign也不提供自动回复或自动转发此邮箱中收到的电子邮件的功能。
+
+* **[!UICONTROL Reply address text]** ：输入收件人单击 **[!UICONTROL Reply]** 按钮。
+* **[!UICONTROL Reply address]** ：输入收件人单击 **[!UICONTROL Reply]** 电子邮件客户端软件中的按钮。
+
+  >[!NOTE]
+  >
+  >目的 **回复地址** 字段为您希望收件人回复的地址与 **发件人地址**.  此地址必须是有效的电子邮件地址，并链接到受监视的邮箱。  此邮箱必须由客户托管。  它可以是支持邮箱，例如customer-care@customer.com，在其中读取和响应电子邮件。
+
+* **[!UICONTROL Error address]** ：输入有错误的消息的电子邮件地址。 这是用于处理退回邮件的技术地址，包括Adobe Campaign服务器因目标地址不存在而收到的电子邮件。
+
+  >[!NOTE]
+  >
+  > 此地址必须是有效的电子邮件地址，并链接到受监视的邮箱。 此邮箱必须由客户托管。 它可以是退回邮箱，例如errors@customer.com。
+
 
 除此之外，您还可以指定 **蒙版** 已授权发件人地址和错误地址。 如有必要，可以使用逗号分隔这些掩码。 此配置是可选的。 输入字段后，Adobe Campaign会在投放时（分析期间，如果地址不包含任何变量）检查地址是否有效。 此操作模式可确保不使用可能触发投放问题的地址。 必须在投放服务器上配置投放地址。
+
+>[!NOTE]
+>
+>* 这些设置保存在Campaign平台选项中。 [了解详情](../../installation/using/configuring-campaign-options.md)。
+> 
+>* 对于多品牌配置，您可以调整错误地址并从电子邮件路由外部帐户覆盖此配置。 [了解详情](../../installation/using/external-accounts.md#email-routing-external-account)。
+>
+
 
 ### 地址中授权的字符 {#characters-authorized-in-addresses}
 
@@ -183,15 +204,15 @@ ht-degree: 3%
 
 * 使用在部署向导的此页面上输入的外部URL信息（无论是否安全）来构建新URL。 除了此信息外，修改的链接还包含：投放的标识符、收件人和URL。
 
-   跟踪信息由Adobe Campaign在跟踪服务器上收集，以扩充收件人用户档案和链接到投放的数据( **[!UICONTROL Tracking]** 选项卡)。
+  跟踪信息由Adobe Campaign在跟踪服务器上收集，以扩充收件人用户档案和链接到投放的数据( **[!UICONTROL Tracking]** 选项卡)。
 
-   有关内部URL的信息仅供Adobe Campaign应用程序服务器用于联系跟踪服务器。
+  有关内部URL的信息仅供Adobe Campaign应用程序服务器用于联系跟踪服务器。
 
-   有关更多信息，请参阅 [跟踪服务器](#tracking-server).
+  有关更多信息，请参阅 [跟踪服务器](#tracking-server).
 
 * 配置URL后，您需要启用跟踪。 为此，必须在跟踪服务器上注册实例。
 
-   有关更多信息，请参阅 [保存跟踪](#saving-tracking).
+  有关更多信息，请参阅 [保存跟踪](#saving-tracking).
 
 ### 跟踪服务器 {#tracking-server}
 
@@ -203,7 +224,7 @@ ht-degree: 3%
 * **[!UICONTROL External URL]** 和/或 **[!UICONTROL Secure external URL]** ：输入要在要发送的电子邮件中使用的重定向URL。
 * **[!UICONTROL Internal URL(s)]** ：仅Adobe Campaign服务器用于联系跟踪服务器以收集日志和上传URL的URL。 无需将其与实例相关联。
 
-   如果不指定URL，则默认情况下将使用跟踪URL。
+  如果不指定URL，则默认情况下将使用跟踪URL。
 
 借助中间源架构，您可以将跟踪管理外部化。 操作步骤：
 
@@ -337,6 +358,13 @@ ht-degree: 3%
 
 Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台上。
 
+
+>[!NOTE]
+>
+>* 这些设置保存在Campaign平台选项中。 [了解详情](../../installation/using/configuring-campaign-options.md)。
+>* 对于多品牌配置，您可以调整镜像页面URL，并从电子邮件路由外部帐户覆盖此配置。 [了解详情](../../installation/using/configuring-campaign-options.md)。
+
+
 ## 管理公共资源 {#managing-public-resources}
 
 >[!IMPORTANT]
@@ -365,7 +393,7 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台上
 
 * 对于电子邮件图像， **https://**&#x200B;服务器&#x200B;**/res/img** URL。
 
-   可以为每次投放覆盖此值。
+  可以为每次投放覆盖此值。
 
 * 对于公共资源，需使用URL **https://**&#x200B;服务器&#x200B;**/res/**&#x200B;实例&#x200B;****位置&#x200B;**实例**是跟踪实例的名称。
 
@@ -390,38 +418,38 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台上
 
 * 跟踪服务器
 
-   这些资源将自动复制到不同的跟踪服务器。 在步骤中配置它们 [跟踪配置](#tracking-configuration).
+  这些资源将自动复制到不同的跟踪服务器。 在步骤中配置它们 [跟踪配置](#tracking-configuration).
 
 * 其他Adobe Campaign服务器
 
-   您可以使用其他一台要在其中复制资源的Adobe Campaign服务器。
+  您可以使用其他一台要在其中复制资源的Adobe Campaign服务器。
 
-   服务器端，要使用专用的Adobe Campaign服务器，您必须使用以下命令创建一个新实例：
+  服务器端，要使用专用的Adobe Campaign服务器，您必须使用以下命令创建一个新实例：
 
-   ```
-   nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
-   ```
+  ```
+  nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
+  ```
 
-   然后输入密码。
+  然后输入密码。
 
-   专用服务器的参数在 **[!UICONTROL Media URL(s)]**， **[!UICONTROL Password]** 和 **[!UICONTROL Instance name]** 字段。
+  专用服务器的参数在 **[!UICONTROL Media URL(s)]**， **[!UICONTROL Password]** 和 **[!UICONTROL Instance name]** 字段。
 
-   ![](assets/s_ncs_install_images_upload_b.png)
+  ![](assets/s_ncs_install_images_upload_b.png)
 
 * 手动发布脚本（仅适用于公共资源）
 
-   ![](assets/s_ncs_install_images_upload_c.png)
+  ![](assets/s_ncs_install_images_upload_c.png)
 
-   您可以使用脚本发布图像：
+  您可以使用脚本发布图像：
 
    * 您必须创建此脚本：其内容取决于您的配置。
    * 该脚本将通过以下命令调用：
 
-      ```
-      [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
-      ```
+     ```
+     [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
+     ```
 
-      位置 `[INSTALL]` 是Adobe Campaign安装文件夹的访问路径。
+     位置 `[INSTALL]` 是Adobe Campaign安装文件夹的访问路径。
 
    * 在Unix中，确保脚本可执行。
 

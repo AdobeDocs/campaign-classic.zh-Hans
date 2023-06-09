@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 8%
@@ -106,6 +106,7 @@ ht-degree: 8%
 启用此选项后，将直接在数据库中执行投放准备，这可以显着加快分析。
 
 目前，此选项仅在满足以下条件时可用：
+
 * 投放必须是电子邮件。 目前不支持其他渠道。
 * 您不得使用中间源或外部路由，而只能使用批量投放路由类型。 您可以检查中使用的工艺路线 **[!UICONTROL General]** 的选项卡 **[!UICONTROL Delivery properties]**.
 * 不能定位来自外部文件的群体。 对于单次投放，单击 **[!UICONTROL To]** 链接来自 **[!UICONTROL Email parameters]** 并检查 **[!UICONTROL Defined in the database]** 选项。 对于工作流中使用的投放，检查收件人是否为 **[!UICONTROL Specified by the inbound event(s)]** 在 **[!UICONTROL Delivery]** 选项卡。
@@ -136,7 +137,6 @@ ht-degree: 8%
 >* 有关可用验证模式的详情，请参见 [更改审批模式](steps-validating-the-delivery.md#changing-the-approval-mode).
 >* 中说明了验证目标的配置 [定义特定验证目标](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 >
-
 
 要发送校样，请执行以下步骤：
 

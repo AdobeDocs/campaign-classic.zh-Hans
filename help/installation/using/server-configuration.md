@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 4%
@@ -15,8 +15,6 @@ ht-degree: 4%
 ---
 
 # 服务器安全设置 {#server-configuration}
-
-
 
 ## 文件上传保护
 
@@ -76,9 +74,9 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）有限。
 * 您可以添加其他标头，如HSTS、X-FRAME-OPTIONS、CSP...
 * 您必须在生产环境中应用这些组件之前，先在测试环境中对其进行测试。
 
-   >[!IMPORTANT]
-   >
-   >可以通过添加某些标头来破坏Adobe Campaign。
+  >[!IMPORTANT]
+  >
+  >可以通过添加某些标头来破坏Adobe Campaign。
 
 Adobe Campaign允许您在中设置普通密码 `<dbcnx .../>` 元素。 请勿使用此功能。
 

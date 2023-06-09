@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 9%
+source-wordcount: '1830'
+ht-degree: 8%
 
 ---
 
@@ -59,27 +59,27 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 * **[!UICONTROL Server]**
 
-   pop3服务器的URL。
+  pop3服务器的URL。
 
 * **[!UICONTROL Port]**
 
-   POP3连接端口号。 默认端口为110。
+  POP3连接端口号。 默认端口为110。
 
 * **[!UICONTROL Account]**
 
-   用户的名称。
+  用户的名称。
 
 * **[!UICONTROL Password]**
 
-   用户帐户密码。
+  用户帐户密码。
 
 * **[!UICONTROL Encryption]**
 
-   选择的加密类型，介于 **[!UICONTROL By default]**， **[!UICONTROL POP3 + STARTTLS]**， **[!UICONTROL POP3]** 或 **[!UICONTROL POP3S]**.
+  选择的加密类型，介于 **[!UICONTROL By default]**， **[!UICONTROL POP3 + STARTTLS]**， **[!UICONTROL POP3]** 或 **[!UICONTROL POP3S]**.
 
 * **[!UICONTROL Function]**
 
-   入站电子邮件或SOAP路由器
+  入站电子邮件或SOAP路由器
 
 >[!IMPORTANT]
 >
@@ -89,19 +89,19 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 * **[!UICONTROL Azure tenant]**
 
-   Azure ID(或目录（租户）ID)可在 **Essentials** Azure门户中应用程序概述的下拉列表。
+  Azure ID(或目录（租户）ID)可在 **Essentials** Azure门户中应用程序概述的下拉列表。
 
 * **[!UICONTROL Azure Client ID]**
 
-   客户端ID(或应用程序（客户端）ID)可在 **Essentials** Azure门户中应用程序概述的下拉列表。
+  客户端ID(或应用程序（客户端）ID)可在 **Essentials** Azure门户中应用程序概述的下拉列表。
 
 * **[!UICONTROL Azure Client secret]**
 
-   客户端密码ID可在以下位置找到： **客户端密码** 中的列 **证书和密钥** Azure门户中应用程序的菜单。
+  客户端密码ID可在 **客户端密码** 中的列 **证书和密钥** Azure门户中应用程序的菜单。
 
 * **[!UICONTROL Azure Redirect URL]**
 
-   可以在以下位置找到重定向URL： **身份验证** Azure门户中应用程序的菜单。 它应以下列语法结尾 `nl/jsp/oauth.jsp`，例如 `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+  可以在以下位置找到重定向URL： **身份验证** Azure门户中应用程序的菜单。 它应以下列语法结尾 `nl/jsp/oauth.jsp`，例如 `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
 输入其他凭据后，您可以单击 **[!UICONTROL Setup the connection]** 以完成外部帐户配置。
 
@@ -113,7 +113,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 可以配置以下渠道：
 
-* [电子邮件](../../installation/using/deploying-an-instance.md#email-channel-parameters)
+* [电子邮件](#email-routing-external-account)
 * [手机（短信）](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [电话](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [直邮](../../delivery/using/about-direct-mail-channel.md)
@@ -122,23 +122,37 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 * [iOS 渠道](../../delivery/using/configuring-the-mobile-application.md)
 * [Android 渠道](../../delivery/using/configuring-the-mobile-application-android.md)
 
+### 电子邮件路由 {#email-routing-external-account}
+
+默认情况下，会根据您的配置提供电子邮件路由外部帐户。
+
+作为内部部署客户，您可以按如下所述创建新的路由外部帐户或更新参数。 此配置仅供专家用户使用，可能会影响您的可投放性。 如有任何问题，请联系Adobe客户关怀团队或您的Adobe代表。
+
+* 您必须使用 **中间源**， **外部** 路由，或 **批量** 投放路由类型。
+
+* 对象 **批量** 和 **中间源** 投放模式，您可以在 **品牌化** 选项卡。 这些参数用于覆盖 [默认参数](../../installation/using/deploying-an-instance.md#email-channel-parameters) 对象 **镜像页面URL** 和 **错误地址** 具有特定于您品牌的设置。
+
+  ![](assets/ext-account-branding.png)
+
+* 要配置中间源外部帐户，请参阅 [本节](mid-sourcing-server.md)
+
 ### 执行实例  {#execution-instance-external-account}
 
-如果您有划分的体系结构，则需要指定链接到控制实例的执行实例并连接它们。 将事务性消息模板部署到执行实例
+如果您有划分的体系结构，则需要指定链接到控制实例的执行实例并连接它们。 将事务性消息模板部署到执行实例。
 
 ![](assets/ext_account_13.png)
 
 * **[!UICONTROL URL]**
 
-   安装执行实例的服务器的URL。
+  安装执行实例的服务器的URL。
 
 * **[!UICONTROL Account]**
 
-   帐户的名称，它必须与operator文件夹中定义的消息中心代理匹配。
+  帐户的名称，它必须与operator文件夹中定义的消息中心代理匹配。
 
 * **[!UICONTROL Password]**
 
-   运算符文件夹中定义的帐户的密码。
+  运算符文件夹中定义的帐户的密码。
 
 有关此配置的更多信息，请参阅此 [页面](../../message-center/using/configuring-instances.md#control-instance).
 
@@ -154,23 +168,23 @@ FTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访问
 
 * **[!UICONTROL Server]**
 
-   ftp服务器的名称。
+  ftp服务器的名称。
 
 * **[!UICONTROL Port]**
 
-   FTP连接端口号。 默认端口为21。
+  FTP连接端口号。 默认端口为21。
 
 * **[!UICONTROL Account]**
 
-   用户的名称。
+  用户的名称。
 
 * **[!UICONTROL Password]**
 
-   用户帐户密码。
+  用户帐户密码。
 
 * **[!UICONTROL Encryption]**
 
-   选择的加密类型，介于 **[!UICONTROL None]** 或 **[!UICONTROL SSL]**.
+  选择的加密类型，介于 **[!UICONTROL None]** 或 **[!UICONTROL SSL]**.
 
 要了解在何处查找这些凭据，请参阅此 [页面](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
@@ -182,19 +196,19 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL Server]**
 
-   sftp服务器的URL。
+  sftp服务器的URL。
 
 * **[!UICONTROL Port]**
 
-   FTP连接端口号。 默认端口为22。
+  FTP连接端口号。 默认端口为22。
 
 * **[!UICONTROL Account]**
 
-   用于连接到SFTP服务器的帐户名称。
+  用于连接到SFTP服务器的帐户名称。
 
 * **[!UICONTROL Password]**
 
-   用于连接到SFTP服务器的密码。
+  用于连接到SFTP服务器的密码。
 
 要在Windows上添加SSH密钥，请执行以下操作：
 
@@ -237,39 +251,39 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL IMS server]**
 
-   IMS服务器的URL。 确保暂存实例和生产实例指向相同的IMS生产端点。
+  IMS服务器的URL。 确保暂存实例和生产实例指向相同的IMS生产端点。
 
 * **[!UICONTROL IMS scope]**
 
-   此处定义的范围必须是IMS设置的范围的子集。
+  此处定义的范围必须是IMS设置的范围的子集。
 
 * **[!UICONTROL IMS client identifier]**
 
-   IMS客户端的ID。
+  IMS客户端的ID。
 
 * **[!UICONTROL IMS client secret]**
 
-   IMS客户端密钥的凭据。
+  IMS客户端密钥的凭据。
 
 * **[!UICONTROL Callback server]**
 
-   访问Adobe Campaign实例的URL。
+  访问Adobe Campaign实例的URL。
 
 * **[!UICONTROL IMS organization ID]**
 
-   您组织的ID。 要查找您的组织ID，请参阅 [此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}。
+  您组织的ID。 要查找您的组织ID，请参阅 [此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}.
 
 * **[!UICONTROL Association mask]**
 
-   语法，允许Enterprise Dashboard中的配置名称与Adobe Campaign中的组同步。
+  语法，允许Enterprise Dashboard中的配置名称与Adobe Campaign中的组同步。
 
 * **[!UICONTROL Server]**
 
-   Adobe Experience Cloud实例的URL。
+  Adobe Experience Cloud实例的URL。
 
 * **[!UICONTROL Tenant]**
 
-   您的Adobe Experience Cloud租户的名称。
+  您的Adobe Experience Cloud租户的名称。
 
 有关此配置的更多信息，请参阅 [此页面](../../integrations/using/configuring-ims.md).
 
@@ -289,15 +303,15 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL Server]**
 
-   Adobe Experience Manager服务器的URL。
+  Adobe Experience Manager服务器的URL。
 
 * **[!UICONTROL Port]**
 
-   用于连接到Adobe Experience Manager创作实例的帐户名称。
+  用于连接到Adobe Experience Manager创作实例的帐户名称。
 
 * **[!UICONTROL Password]**
 
-   用于连接到Adobe Experience Manager创作实例的密码。
+  用于连接到Adobe Experience Manager创作实例的密码。
 
 有关更多信息，请参阅此](../../integrations/using/about-adobe-experience-manager.md)章节[。
 
@@ -319,21 +333,21 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL Account]**
 
-   用于登录到Microsoft CRM的帐户。
+  用于登录到Microsoft CRM的帐户。
 
 * **[!UICONTROL Server]**
 
-   Microsoft CRM服务器的URL。
+  Microsoft CRM服务器的URL。
 
-   查找您的Microsoft CRM **[!UICONTROL Server URL]**，访问您的Microsoft Dynamics CRM帐户，然后单击 **Dynamics 365** 并选择您的应用程序。 然后，您可以找到您的 **[!UICONTROL Server URL]** 在浏览器的地址栏中，例如 `https://myserver.crm.dynamics.com/`.
+  查找您的Microsoft CRM **[!UICONTROL Server URL]**，访问您的Microsoft Dynamics CRM帐户，然后单击 **Dynamics 365** 并选择您的应用程序。 然后，您可以找到您的 **[!UICONTROL Server URL]** 在浏览器的地址栏中，例如 `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Client identifier]**
 
-   可以在Microsoft Azure管理门户中找到的客户端ID **[!UICONTROL Update your code]** 类别， **[!UICONTROL Client ID]** 字段。
+  可以在Microsoft Azure管理门户中找到的客户端ID **[!UICONTROL Update your code]** 类别， **[!UICONTROL Client ID]** 字段。
 
 * **[!UICONTROL CRM version]**
 
-   选择 **[!UICONTROL Dynamics CRM 365]** crm版本。
+  选择 **[!UICONTROL Dynamics CRM 365]** crm版本。
 
 替换为 **[!UICONTROL Web API]** 部署类型和 **[!UICONTROL Certificate]** 身份验证，您需要提供以下详细信息：
 
@@ -341,15 +355,15 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL Server]**
 
-   Microsoft CRM服务器的URL。
+  Microsoft CRM服务器的URL。
 
-   查找您的Microsoft CRM **[!UICONTROL Server URL]**，访问您的Microsoft Dynamics CRM帐户，然后单击 **Dynamics 365** 并选择您的应用程序。 然后，您可以找到您的 **[!UICONTROL Server URL]** 在浏览器的地址栏中，例如 `https://myserver.crm.dynamics.com/`.
+  查找您的Microsoft CRM **[!UICONTROL Server URL]**，访问您的Microsoft Dynamics CRM帐户，然后单击 **Dynamics 365** 并选择您的应用程序。 然后，您可以找到您的 **[!UICONTROL Server URL]** 在浏览器的地址栏中，例如 `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
-   请注意，私钥需要编码为Base64。
+  请注意，私钥需要编码为Base64。
 
-   为此，您可以使用Base64编码器帮助或使用命令行 `base64 -w0 private.key` 适用于Linux的。
+  为此，您可以使用Base64编码器帮助或使用命令行 `base64 -w0 private.key` 适用于Linux的。
 
 * **[!UICONTROL Custom Key identifier]**
 
@@ -357,11 +371,11 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL Client identifier]**
 
-   可以在Microsoft Azure管理门户中找到的客户端ID **[!UICONTROL Update your code]** 类别， **[!UICONTROL Client ID]** 字段。
+  可以在Microsoft Azure管理门户中找到的客户端ID **[!UICONTROL Update your code]** 类别， **[!UICONTROL Client ID]** 字段。
 
 * **[!UICONTROL CRM version]**
 
-   CRM的版本，介于 **[!UICONTROL Dynamics CRM 2007]**， **[!UICONTROL Dynamics CRM 2015]** 或 **[!UICONTROL Dynamics CRM 2016]**.
+  CRM的版本，介于 **[!UICONTROL Dynamics CRM 2007]**， **[!UICONTROL Dynamics CRM 2015]** 或 **[!UICONTROL Dynamics CRM 2016]**.
 
 有关此配置的更多信息，请参阅此 [页面](../../platform/using/crm-connectors.md).
 
@@ -375,23 +389,23 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL Account]**
 
-   用于登录到Salesforce CRM的帐户。
+  用于登录到Salesforce CRM的帐户。
 
 * **[!UICONTROL Password]**
 
-   用于登录到Salesforce CRM的密码。
+  用于登录到Salesforce CRM的密码。
 
 * **[!UICONTROL Client identifier]**
 
-   要了解在何处查找您的客户端标识符，请参阅此 [页面](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  要了解在何处查找您的客户端标识符，请参阅此 [页面](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL Security token]**
 
-   要了解在何处查找您的安全令牌，请参阅此 [页面](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  要了解在何处查找您的安全令牌，请参阅此 [页面](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL API version]**
 
-   选择API的版本。
+  选择API的版本。
 
 对于此外部帐户，您需要使用配置向导配置Salesforce CRM。
 
@@ -409,23 +423,23 @@ Amazon Simple Storage Service (S3)连接器可用于将数据导入或导出Adob
 
 * **[!UICONTROL AWS S3 Account Server]**
 
-   服务器的URL，应按如下方式填写：
+  服务器的URL，应按如下方式填写：
 
-   ```
-   <S3bucket name>.s3.amazonaws.com/<s3object path>
-   ```
+  ```
+  <S3bucket name>.s3.amazonaws.com/<s3object path>
+  ```
 
 * **[!UICONTROL AWS access key ID]**
 
-   要了解在何处查找您的AWS访问密钥ID，请参阅此 [页面](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+  要了解在何处查找您的AWS访问密钥ID，请参阅此 [页面](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
 * **[!UICONTROL Secret access key to AWS]**
 
-   要了解在何处查找您的AWS访问密钥，请参阅此 [页面](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+  要了解在何处查找您的AWS访问密钥，请参阅此 [页面](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
 * **[!UICONTROL AWS Region]**
 
-   要了解有关AWS地区的更多信息，请参阅此 [页面](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+  要了解有关AWS地区的更多信息，请参阅此 [页面](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
 * 此 **[!UICONTROL Use server side encryption]** 复选框允许您以S3加密模式存储文件。
 
@@ -441,12 +455,12 @@ Amazon Simple Storage Service (S3)连接器可用于将数据导入或导出Adob
 
 * **[!UICONTROL Server]**
 
-   Azure Blob存储服务器的URL。
+  Azure Blob存储服务器的URL。
 
 * **[!UICONTROL Encryption]**
 
-   选择的加密类型，介于 **[!UICONTROL None]** 或 **[!UICONTROL SSL]**.
+  选择的加密类型，介于 **[!UICONTROL None]** 或 **[!UICONTROL SSL]**.
 
 * **[!UICONTROL Access key]**
 
-   了解在何处查找您的 **[!UICONTROL Access key]**，请参阅此 [页面](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+  了解在何处查找您的 **[!UICONTROL Access key]**，请参阅此 [页面](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).

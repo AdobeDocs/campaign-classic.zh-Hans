@@ -7,16 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '3991'
+source-wordcount: '3993'
 ht-degree: 6%
 
 ---
 
 # Campaign Classic 选项列表{#configuring-campaign-options}
-
-
 
 此 **[!UICONTROL Administration / Platform / Options]** 节点允许您配置Adobe Campaign选项。 其中一些是安装Campaign时内置的，其他则可以在需要时手动添加。 可用选项因随实例一起安装的软件包而异。
 
@@ -26,7 +24,6 @@ ht-degree: 6%
 >* 此页面中未列出的选项仅供内部使用，并且 **不得修改**.
 >
 >* 修改或更新Adobe Campaign选项只能由专家用户执行。
-
 
 ## 投放 {#delivery}
 
@@ -151,7 +148,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> 客户的常用名称. 用于向收件人显示的某些警告消息中。<br /> “您收到此消息是因为您与*****或关联公司有联系。 不再接收来自*****的消息”。<br /> </td> 
+   <td> 客户的常用名称. 用于向收件人显示的某些警告消息中。<br /> “您收到此消息是因为您与‘组织’或关联公司有联系。 不再接收来自“组织”的邮件<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -159,7 +156,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ReplyToName</span> <br /> </td> 
-   <td> 如果用户留空，则在用于电子邮件投放的实例级别使用默认“回复”电子邮件标签。<br /> </td> 
+   <td> 如果用户留空，则在用于电子邮件投放的实例级别使用默认的“回复”电子邮件标签。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 
@@ -710,7 +707,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span> <br /> </td> 
-   <td> 输入“1”值，以便不通过清理工作流执行统计信息更新。<br /> </td> 
+   <td> 输入“1”值，以便不通过清理工作流更新统计信息。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
