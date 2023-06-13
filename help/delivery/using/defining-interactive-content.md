@@ -4,9 +4,9 @@ title: 在Adobe Campaign Classic中定义交互式内容
 description: 了解如何在Adobe Campaign中使用AMP定义交互式和动态电子邮件内容
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Email Design, Dynamic Content
+feature: Email Design
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: ae7aa6989314677a839795e8caa8ba0f95009e09
 workflow-type: tm+mt
 source-wordcount: '1499'
 ht-degree: 4%
