@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 84dc10d9f1979b7b9277fbc6837bc5ee9ab0e9dd
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
-source-wordcount: '3341'
+source-wordcount: '3366'
 ht-degree: 3%
 
 ---
@@ -84,7 +84,7 @@ Adobe Campaign在Adobe Campaign客户端控制台中提供了一个图形助手�
 * **[!UICONTROL Reply address text]** ：输入收件人单击 **[!UICONTROL Reply]** 按钮。
 * **[!UICONTROL Reply address]** ：输入收件人单击 **[!UICONTROL Reply]** 电子邮件客户端软件中的按钮。 目的 **回复地址** 字段为您希望收件人回复的地址与 **发件人地址**.  此地址必须是有效的电子邮件地址，链接到受监控邮箱，并由客户托管。  例如，它可以是一个支持邮箱， `customer-care@customer.com`，在其中读取和响应电子邮件。
 
-* **[!UICONTROL Error address]** ：输入有错误的消息的电子邮件地址。 这是用于处理退回邮件的技术地址，包括Adobe Campaign服务器因目标地址不存在而收到的电子邮件。 此地址必须是有效的电子邮件地址，链接到受监控邮箱，并由客户托管。 例如，它可能是退回邮箱， `errors@customer.com`.
+* **[!UICONTROL Error address]** ：输入有错误的消息的电子邮件地址。 这是用于处理退回邮件的技术地址，包括Adobe Campaign服务器因目标地址不存在而收到的电子邮件。 此地址必须是有效的电子邮件地址，链接到受监控邮箱，并由客户托管。 例如，它可能是退回邮箱， `errors@customer.com`. 此地址可以在投放模板中更改，或者从 **SMTP** 投放/投放模板属性的选项卡。 [了解详情](../../delivery/using/email-parameters.md#managing-bounce-emails-managing-bounce-emails)。
 
 
 除此之外，您还可以指定 **蒙版** 已授权发件人地址和错误地址。 如有必要，可以使用逗号分隔这些掩码。 此配置是可选的。 输入字段后，Adobe Campaign会在投放时（分析期间，如果地址不包含任何变量）检查地址是否有效。 此操作模式可确保不使用可能触发投放问题的地址。 必须在投放服务器上配置投放地址。

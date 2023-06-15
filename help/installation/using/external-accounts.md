@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 8%
@@ -126,9 +126,9 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 默认情况下，会根据您的配置提供电子邮件路由外部帐户。
 
-作为内部部署客户，您可以按如下所述创建新的路由外部帐户或更新参数。 此配置仅供专家用户使用，可能会影响您的可投放性。 如有任何问题，请联系Adobe客户关怀团队或您的Adobe代表。
+作为内部部署/混合部署客户，您可以按如下所述创建新的路由外部帐户或更新参数。 此配置仅供专家用户使用，可能会影响您的可投放性。 如有任何问题，请联系Adobe客户关怀团队或您的Adobe代表。
 
-* 您必须使用 **中间源**， **外部** 路由，或 **批量** 投放路由类型。
+* 您可以使用 **中间源**， **外部** 路由，或 **批量** 投放路由类型。
 
 * 对象 **批量** 和 **中间源** 投放模式，您可以在 **品牌化** 选项卡。 这些参数用于覆盖 [默认参数](../../installation/using/deploying-an-instance.md#email-channel-parameters) 对象 **镜像页面URL** 和 **错误地址** 具有特定于您品牌的设置。
 

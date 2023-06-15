@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 14%
@@ -61,19 +61,19 @@ ht-degree: 14%
 
 * **[!UICONTROL Use recipient preferences]** （默认模式）
 
-   根据收件人用户档案中存储的数据(默认存储在 **[!UICONTROL email format]** 字段(@emailFormat)。 如果收件人希望以特定格式接收消息，则会将该格式用于发送的邮件。如果未填写该字段，则会发送替代的多部分消息（请参阅下文）。
+  根据收件人用户档案中存储的数据(默认存储在 **[!UICONTROL email format]** 字段(@emailFormat)。 如果收件人希望以特定格式接收消息，则会将该格式用于发送的邮件。如果未填写该字段，则会发送替代的多部分消息（请参阅下文）。
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
-   该消息包含两种格式：文本和HTML。 接收时显示的格式取决于收件人邮件软件的配置(multipart-alternative)。
+  该消息包含两种格式：文本和HTML。 接收时显示的格式取决于收件人邮件软件的配置(multipart-alternative)。
 
-   >[!IMPORTANT]
-   >
-   >此选项包括文档的两个版本。 因此，它会影响投放率，因为消息大小更大。
+  >[!IMPORTANT]
+  >
+  >此选项包括文档的两个版本。 因此，它会影响投放率，因为消息大小更大。
 
 * **[!UICONTROL Send all messages in text format]**
 
-   消息以文本格式发送。 不会发送HTML格式，但仅当收件人单击消息时，才会将其用于镜像页面。
+  消息以文本格式发送。 不会发送HTML格式，但仅当收件人单击消息时，才会将其用于镜像页面。
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ ht-degree: 14%
 * **[!UICONTROL Do not generate the mirror page]**：即使投放中存在链接，也不生成镜像页面。
 * **[!UICONTROL Generates a mirror page accessible using only the message identifier]**：利用此选项，您可以在投放日志窗口中访问带有个性化信息的镜像页面内容。 要执行此操作，请在投放结束后，单击 **[!UICONTROL Delivery]** 选项卡，然后选择要查看其镜像页面的收件人的行。 单击 **[!UICONTROL Display the mirror page for this message...]** 链接。
 
-   ![](assets/s_ncs_user_wizard_miror_page_link.png)
+  ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## 字符编码 {#character-encoding}
 
@@ -117,7 +117,7 @@ ht-degree: 14%
 
 此 **[!UICONTROL SMTP]** 通过投放参数的选项卡，可配置退回邮件的管理。
 
-默认情况下，平台的默认错误框中会收到退回的电子邮件，但您可以为投放定义特定的错误地址。
+默认情况下，退回的电子邮件会接收到 [平台的默认错误框](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)，但您可以为投放定义特定的错误地址。
 
 您还可以从该屏幕中定义特定地址，以便调查应用程序无法自动鉴定退回邮件的原因。 对于每个字段， **添加个性化字段** 图标允许您添加个性化参数。
 
