@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1931'
 ht-degree: 1%
 
 ---
 
 # 定义电子邮件的内容 {#defining-the-email-content}
-
-
 
 ## 寄件者 {#sender}
 
@@ -29,15 +27,14 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->* 默认情况下，将使用发件人的地址进行回复。
->* 标头参数不能为空。 默认情况下，它们包含配置部署向导时输入的值。 欲了解更多信息，请参见 [安装指南](../../installation/using/deploying-an-instance.md).
+>* 默认情况下，使用发件人的地址进行回复。
+>* 标头参数不能为空。 默认情况下，它们包含配置部署向导时输入的值。 在[此章节](../../installation/using/deploying-an-instance.md)中了解更多信息。
 >* 发件人地址是允许发送电子邮件的必填项（RFC标准）。
 >* Adobe Campaign检查输入的电子邮件地址的语法。
 
-
->[!IMPORTANT]
+>[!CAUTION]
 >
->在Internet访问提供商(ISP)为打击未经请求的电子邮件（垃圾邮件）而实施的检查的背景下，Adobe建议创建对应于为投放和回复指定的地址的电子邮件帐户。 请与您的消息传递系统管理员联系。
+>为了避免投放能力问题，必须存在与为投放和回复指定的地址对应的电子邮件帐户，并且必须对其进行监控。 请与系统管理员核实。
 
 ## 消息主题 {#message-subject}
 
@@ -71,45 +68,45 @@ ht-degree: 1%
 
 * 要导入HTML内容，请使用 **[!UICONTROL Open]** 按钮。 您还可以将源代码直接粘贴到 **[!UICONTROL Source]** 子选项卡。
 
-   如果您使用 [数字内容编辑器](../../web/using/about-campaign-html-editor.md) (DCE)，请参阅 [选择内容模板](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+  如果您使用 [数字内容编辑器](../../web/using/about-campaign-html-editor.md) (DCE)，请参阅 [选择内容模板](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
-   >[!IMPORTANT]
-   >
-   >必须事先创建HTML内容，然后将其导入Adobe Campaign。 HTML编辑器不是为内容创建而设计的。
+  >[!IMPORTANT]
+  >
+  >必须事先创建HTML内容，然后将其导入Adobe Campaign。 HTML编辑器不是为内容创建而设计的。
 
-   此 **[!UICONTROL Preview]** 通过子选项卡，可查看收件人每个内容的呈现方式。 内容的个性化字段和条件元素被替换成所选用户档案的相应信息。
+  此 **[!UICONTROL Preview]** 通过子选项卡，可查看收件人每个内容的呈现方式。 内容的个性化字段和条件元素被替换成所选用户档案的相应信息。
 
-   通过工具栏按钮可访问“HTML”页的标准操作和格式设置参数。
+  通过工具栏按钮可访问“HTML”页的标准操作和格式设置参数。
 
-   ![](assets/s_ncs_user_wizard_email01_138.png)
+  ![](assets/s_ncs_user_wizard_email01_138.png)
 
-   可以在来自本地文件或Adobe Campaign中图像库的消息中插入图像。 要执行此操作，请单击 **[!UICONTROL Image]** 图标并选择相应的选项。
+  可以在来自本地文件或Adobe Campaign中图像库的消息中插入图像。 要执行此操作，请单击 **[!UICONTROL Image]** 图标并选择相应的选项。
 
-   ![](assets/s_ncs_user_wizard_email01_18.png)
+  ![](assets/s_ncs_user_wizard_email01_18.png)
 
-   库图像可通过 **[!UICONTROL Resources>Online>Public resources]** 文件夹树中的文件夹。 另请参阅 [添加图像](#adding-images).
+  库图像可通过 **[!UICONTROL Resources>Online>Public resources]** 文件夹树中的文件夹。 另请参阅 [添加图像](#adding-images).
 
-   工具栏中的最后一个按钮允许您插入个性化字段。
+  工具栏中的最后一个按钮允许您插入个性化字段。
 
-   >[!NOTE]
-   >
-   >有关个性化字段的使用，请参见 [关于个性化](about-personalization.md).
+  >[!NOTE]
+  >
+  >有关个性化字段的使用，请参见 [关于个性化](about-personalization.md).
 
-   通过页面底部的选项卡，可显示正在创建的页面的HTML代码，并查看消息的个性化呈现。 要启动此显示，请单击 **[!UICONTROL Preview]** 并使用选择收件人 **[!UICONTROL Test personalization]** 按钮。 您可以从定义的目标中选择收件人，也可以选择其他收件人。
+  通过页面底部的选项卡，可显示正在创建的页面的HTML代码，并查看消息的个性化呈现。 要启动此显示，请单击 **[!UICONTROL Preview]** 并使用选择收件人 **[!UICONTROL Test personalization]** 按钮。 您可以从定义的目标中选择收件人，也可以选择其他收件人。
 
-   ![](assets/s_ncs_user_wizard_email01_139.png)
+  ![](assets/s_ncs_user_wizard_email01_139.png)
 
-   您可以验证HTML消息。 您还可以查看电子邮件标头的内容。
+  您可以验证HTML消息。 您还可以查看电子邮件标头的内容。
 
-   ![](assets/s_ncs_user_wizard_email01_140.png)
+  ![](assets/s_ncs_user_wizard_email01_140.png)
 
 * 要导入文本内容，请使用 **[!UICONTROL Open]** 按钮，或者 **[!UICONTROL Text Content]** 制表符，以输入以文本格式显示时的消息内容。 使用工具栏按钮访问对内容的操作。 最后一个按钮允许您插入个性化字段。
 
-   ![](assets/s_ncs_user_wizard_email01_141.png)
+  ![](assets/s_ncs_user_wizard_email01_141.png)
 
-   对于HTML格式，单击 **[!UICONTROL Preview]** 选项卡以查看消息的呈现及其个性化设置。
+  对于HTML格式，单击 **[!UICONTROL Preview]** 选项卡以查看消息的呈现及其个性化设置。
 
-   ![](assets/s_ncs_user_wizard_email01_142.png)
+  ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## 定义交互式内容 {#amp-for-email-format}
@@ -149,18 +146,25 @@ ht-degree: 1%
 
 HTML格式电子邮件投放可以包含图像。 在投放向导中，您可以导入包含图像的HTML页面，或直接使用HTML编辑器通过 **[!UICONTROL Image]** 图标。
 
+
+### 护栏 {#img-guardrails}
+
+为避免性能问题，电子邮件中包含的图像默认不得超过100 MB。 可以从以下位置配置此限制 `NmsDelivery_MaxDownloadedImageSize` 选项。
+
+了解详情，请参阅 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
+
+### 图像类型 {#img-types}
+
 图像可以是：
 
 * 本地映像或从服务器调用的映像
 * 存储在Adobe Campaign公共资源库中的图像
 
-   公共资源可通过 **[!UICONTROL Resources > Online]** Adobe Campaign层次结构的节点。 它们分组在库中，可以包含在电子邮件中，但也可以用于营销活动或任务，或者内容管理。
+  公共资源可通过 **[!UICONTROL Resources > Online]** Adobe Campaign层次结构的节点。 它们分组在库中，可以包含在电子邮件中，但也可以用于营销活动或任务，或者内容管理。
 
 * 与Adobe Experience Cloud共享的资源。 请参阅[此小节](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md)。
 
->[!IMPORTANT]
->
->要使用投放向导在电子邮件中包含图像，必须将Adobe Campaign实例配置为启用公共资源管理。 此过程可以从部署向导中执行。 请参阅 [本节](../../installation/using/deploying-an-instance.md) 以了解有关配置的更多信息。
+### 插入和管理图像 {#manage-images}
 
 利用投放向导，可将本地图像或存储在库中的图像添加到消息的内容中。 要执行此操作，请单击 **[!UICONTROL Image]** 按钮(位于“HTML内容”工具栏中)。
 
@@ -188,12 +192,10 @@ HTML格式电子邮件投放可以包含图像。 在投放向导中，您可以
 
 >[!IMPORTANT]
 >
->* 在手动上传或发送消息期间修改图像访问路径。
+> 在手动上传或发送消息期间修改图像URL。
 > 
->* 为避免性能问题，如果您将从个性化URL动态下载的图像包含为 [附件](attaching-files.md)，默认情况下，每个图像大小不应超过100,000字节。 可以从以下位置配置此建议的阈值 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
 
-
-**用例：发送包含图像的消息**
+### 用例：发送包含图像的消息 {#uc-images}
 
 以下是包含四个图像的投放示例：
 
@@ -253,23 +255,23 @@ HTML格式电子邮件投放可以包含图像。 在投放向导中，您可以
 
    * 对于1D格式，Adobe Campaign中提供了以下类型：Codabar、代码128、GS1-128（以前称为EAN-128）、UPC-A、UPC-E、ISBN、EAN-8、代码39、交错码2（共5个）、POSTNET和皇家邮件(RM4SCC)。
 
-      1D条形码示例：
+     1D条形码示例：
 
-      ![](assets/barcode_insert_08.png)
+     ![](assets/barcode_insert_08.png)
 
    * DataMatrix和PDF417类型涉及2D格式。
 
-      2D条形码示例：
+     2D条形码示例：
 
-      ![](assets/barcode_insert_09.png)
+     ![](assets/barcode_insert_09.png)
 
    * 要插入QR码，请选择此类型并输入要应用的纠错率。 此比率定义了重复的信息量和对恶化的容差。
 
-      ![](assets/barcode_insert_06.png)
+     ![](assets/barcode_insert_06.png)
 
-      QR代码示例：
+     QR代码示例：
 
-      ![](assets/barcode_insert_12.png)
+     ![](assets/barcode_insert_12.png)
 
 1. 输入要插入到电子邮件中的条形码大小：通过配置小数位数，可以将条形码的大小从x1增大到x10。
 1. 此 **[!UICONTROL Value]** 字段用于定义条形码的值。 值可以匹配特殊选件，可以是标准的函数，也可以是链接到客户的数据库字段的值。
