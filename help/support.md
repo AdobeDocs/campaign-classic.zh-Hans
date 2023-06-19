@@ -4,10 +4,10 @@ title: Campaign Classic的帮助和支持选项
 description: 需要Campaign Classic支持？ 您找到了正确的地方！
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 66%
+source-wordcount: '755'
+ht-degree: 69%
 
 ---
 
@@ -99,7 +99,7 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 >
 >所有管理员用户都可访问控制面板。[此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
 >
->请注意，您的实例必须托管在AWS上，并使用最新的进行升级 [GA内部版本](rn/using/rn-overview.md). 在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
+>请注意，您的实例必须托管在AWS上，并使用最新的进行升级 [GA内部版本](rn/using/rn-overview.md). 在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
 
 ### 如何访问控制面板？
 
@@ -107,7 +107,7 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 ### 控制面板常见问题解答
 
-[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)以访问 Campaign 控制面板常见问题解答。
+[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)以访问 Campaign 控制面板常见问题解答。
 
 ### SFTP 管理
 
@@ -132,19 +132,18 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-新票证系统已通过 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 新系统要求每个用户都有新的个人帐户，并具有正确的权限。如果您发现无法使用 Adobe ID 登录，请通过 Experience League 请求访问，客户关怀团队将尽快为您进行设置。[了解详情](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)
+新票证系统已通过 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. 新系统要求每个用户都有新的个人帐户，并具有正确的权限。如果您发现无法使用 Adobe ID 登录，请通过 Experience League 请求访问，客户关怀团队将尽快为您进行设置。[了解详情](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)
 
 ### 询问专家！
 
-加入 Campaign Classic 社区：在现有问题中搜索答案，或向社区提问。[加入对话](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}。
+加入 Campaign Classic 社区：在现有问题中搜索答案，或向社区提问。[加入对话](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### 访问 Campaign 下载中心
 
-自2020年6月起，Experience Cloud解决方案Software Distribution将取代旧版Neolane Download Center，并提供更高效的软件、包和工具查找和下载体验。 [点击此处](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)访问 Experience Cloud Software Distribution。
-了解有关新下载中心的更多信息 [本页内容](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){_blank}。
+作为Campaign管理员，浏览 [此页面](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 访问Experience Cloud软件分发。
 
 ### 创建工单或开始聊天
 
 通过创建案例，您可以就您在使用 Adobe 产品的过程中遇到的任何问题联系 Adobe 客户支持团队。为帮助您解决问题或排除疑难，Adobe Admin Console 将支持您与 Adobe 客户支持团队聊天。
 
-要在该新系统中记录问题或启动聊天会话，请连接到 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 请按照中所述的详细步骤进行操作 [此页面](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html){_blank}。
+要在该新系统中记录问题或启动聊天会话，请连接到 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. 请按照中所述的详细步骤进行操作 [此页面](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html){_blank}.

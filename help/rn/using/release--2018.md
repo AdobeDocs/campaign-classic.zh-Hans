@@ -5,9 +5,9 @@ description: 详细了解 Campaign Classic 2018 版
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '5385'
+source-wordcount: '5379'
 ht-degree: 8%
 
 ---
@@ -441,7 +441,7 @@ decryptPassword
  <tbody> 
   <tr> 
    <td> 欧盟通用数据保护条例(GDPR)<br /> </td> 
-   <td> <p>GDPR是欧盟(EU)的新隐私法，旨在协调数据保护要求并使之现代化，于2018年5月25日生效。 GDPR 适用于所持有数据的数据主体位于欧盟的 Adobe Campaign 客户。</p> <p>除了Adobe Campaign中已有的可用隐私功能（包括同意管理、数据保留设置和用户角色）之外，我们还将以数据处理方的角色利用此机会来包含其他功能，以帮助您作为数据控制方为特定GDPR请求做好准备：</p> 
+   <td> <p>GDPR是欧盟(EU)的隐私法，旨在协调数据保护要求并使之现代化。 GDPR 适用于所持有数据的数据主体位于欧盟的 Adobe Campaign 客户。</p> <p>除了Adobe Campaign中已有的可用隐私功能（包括同意管理、数据保留设置和用户角色）之外，我们还将以数据处理方的角色利用此机会来包含其他功能，以帮助您作为数据控制方为特定GDPR请求做好准备：</p> 
     <ul> 
      <li> <p>访问权：允许数据主体接收其由数据控制者捕获的个人数据的副本，可能包括存储在Adobe Campaign中的数据。</p> </li> 
      <li> <p>删除权：允许数据主体擦除其由数据控制者捕获的个人数据，可能包括存储在Adobe Campaign中的数据。</p> </li> 
