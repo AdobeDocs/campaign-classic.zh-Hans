@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1943'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,7 @@ HTML格式电子邮件投放可以包含图像。 在投放向导中，您可以
 
 ### 护栏 {#img-guardrails}
 
-为避免性能问题，电子邮件中包含的图像默认不得超过100 MB。 可以从以下位置配置此限制 `NmsDelivery_MaxDownloadedImageSize` 选项。
+为避免性能问题，电子邮件中包含的图像不能超过100 MB。 此限制（默认设置）可以从 `NmsDelivery_MaxDownloadedImageSize` 选项。 但是，Adobe强烈建议避免在电子邮件投放中出现大型图像。
 
 了解详情，请参阅 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
 

@@ -5,9 +5,9 @@ description: 了解如何使用Adobe Campaign发送带有个人和/或个性化�
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '663'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 4%
 
 ## Recommendations和护栏 {#important-notes}
 
-为避免性能问题，电子邮件中包含的图像默认不得超过100 MB。 可以从以下位置配置此限制 `NmsDelivery_MaxDownloadedImageSize` 选项。
+为避免性能问题，电子邮件中包含的图像不能超过100 MB。 此限制（默认设置）可以从 `NmsDelivery_MaxDownloadedImageSize` 选项。 但是，Adobe强烈建议避免在电子邮件投放中出现大型图像。
 
 Adobe还建议限制附加文件的大小和数量。 默认情况下，您只能将一个文件作为附件添加到电子邮件中。 此阈值可以从以下位置配置： `NmsDelivery_MaxRecommendedAttachments` 选项。
 
