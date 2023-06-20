@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1508'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -171,7 +171,7 @@ Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因
 
 * 从 22.1 版本开始，Adobe Campaign 不再兼容 CentOs 8.x（64 位）。 CentOS Linux 8 将于 2021 年 12 月 31 日终止生命周期 (EOL)。[了解详情](https://www.centos.org/centos-linux-eol/)。
 
-   如果使用此操作系统，请相应地调整实施。CentOS 7.x（64 位）和 RHEL 8.x/7.x（64 位）仍然受到支持。
+  如果使用此操作系统，请相应地调整实施。CentOS 7.x（64 位）和 RHEL 8.x/7.x（64 位）仍然受到支持。
 
 * 从 21.1.3 版本开始，Adobe Campaign 不再兼容 Debian 8。
 
@@ -211,10 +211,10 @@ Adobe 不支持以下数据库引擎，因为其编辑者已弃用它们。运�
 
 从 19.1 Spring 版本开始，Adobe Campaign 不再与以下 FDA 服务器兼容：
 
-* PostgreSQL 9.3.
-* MySQL 5.5.
+* PostgreSQL 9.3。
+* MySQL 5.5。
 * DB2 9.5。
-* teradata14 - 14.1。
+* Teradata 14 – 14.1。
 
 Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。请使用较新版本或系统。
 
@@ -222,13 +222,13 @@ Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。请使�
 * Oracle 9i、10G R2。
 * 9.6 及以下版本的 PostgreSQL 的生命周期已结束。
 * MSSQL 2000、2005、2008 R2。
-* MySQL 5.1.
+* MySQL 5.1。
 * InfiniDB 的生命周期已终止。
-* teradata13、13.1。
+* Teradata 13、13.1。
 * Netezza 6.02、7.0。Netezza 的生命周期已终止。
 * AsterData 5.0。AsterData 的生命周期已终止。
-* sybase IQ15.2、15.4、15.5和Sybase ASE 15.0。
-* 通过HiveSQLHadoop：Hadoop2.7.3、HiveSQL 1.2.1。Adobe Campaign Classic仍支持列出的通过联合数据访问(FDA)通过HiveSQL的Hadoop版本，但这些版本与以下版本合并：HortonWorks (HDP 2.4.X、2.5.x、2.6.x)和HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6)
+* Sybase IQ 15.2、15.4、15.5 和 Sybase ASE 15.0。
+* Hadoop via HiveSQL：Hadoop 2.7.3、HiveSQL 1.2.1。Adobe Campaign Classic 仍通过联合数据访问 (FDA) 支持列出的 Hadoop via HiveSQL 版本，但这些版本与以下版本合并：HortonWorks (HDP 2.4.X、2.5.x、2.6.x）和 HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6)
 
 **RDBMS 服务器**
 
