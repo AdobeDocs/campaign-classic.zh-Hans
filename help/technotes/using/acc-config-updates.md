@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 13%
+source-wordcount: '1097'
+ht-degree: 11%
 
 ---
 
@@ -28,6 +28,7 @@ As a **托管或Managed Services客户**，Adobe将定期通知您版本升级�
 >[!NOTE]
 >
 >有关这些更改的任何问题，请联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>
 
 ## 安全更新 {#acc-security-updates}
 
@@ -39,10 +40,10 @@ As a **托管或Managed Services客户**，Adobe将定期通知您版本升级�
 
 * Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
-* Campaign 20.2.5版本。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-* Campaign 20.1.4版本。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-* Campaign 19.2.4版本。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* Campaign 20.2.5版本。
+* Campaign 20.1.4版本。
+* Campaign 19.2.4版本。
+* Campaign 19.1.8版本。
 
 了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -52,22 +53,23 @@ As a **托管或Managed Services客户**，Adobe将定期通知您版本升级�
 
 * 作为混合型客户，Adobe将通知您中间源实例的计划升级日期。 Adobe强烈建议您也升级营销实例。
 
-   新版本向后兼容Campaign Classic17.9版本，但Adobe强烈建议升级所有实例以解决安全漏洞
+  新版本向后兼容Campaign Classic17.9版本，但Adobe强烈建议升级所有实例以解决安全漏洞
 
 * 作为内部部署客户，您需要将营销和中间源实例升级到最新内部版本。
 
 >[!CAUTION]
 >
 >如果您无法在建议的时间范围内升级， **您应该联系Adobe客户关怀团队，为您的实例应用短期手动安全修补程序**.
+>
 
 ## Campaign Classic客户端控制台更新  {#acc-cc-updates}
 
 此 **现已推出** 应安装以下控制台版本以解决最近识别的回归。 此回归导致无法使用客户端控制台的某些组件，如投放中的日期选择器和图像管理。 **控制台升级** 是必需的。
 
 * 最新的Gold Standard 11内部版本9032@10c2709。 [了解详情](../../rn/using/gold-standard.md)
-* Campaign 20.1.4版本。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-* Campaign 19.2.4版本。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* Campaign 20.1.4版本。
+* Campaign 19.2.4版本。
+* Campaign 19.1.8版本。
 
 ## AdobeIdentity Management System (IMS)更新
 
@@ -81,10 +83,10 @@ Adobe身份服务(IMS)将停止支持以下项的旧Internet Explorer版本： *
 
 * Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
-* Campaign 20.2.5版本。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-* Campaign 20.1.4版本。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-* Campaign 19.2.4版本。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* Campaign 20.2.5版本。
+* Campaign 20.1.4版本。
+* Campaign 19.2.4版本。
+* Campaign 19.1.8版本。
 
 这些版本附带新的连接协议：Campaign服务器和客户端控制台都必须进行升级，才能在升级后连接到Campaign **2021年6月30日**.
 
@@ -114,8 +116,8 @@ Adobe身份服务(IMS)将停止支持以下项的旧Internet Explorer版本： *
 
 * Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
-* Campaign 20.2.5版本。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-* Campaign 19.1.8版本。 [了解详情](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+* Campaign 20.2.5版本。
+* Campaign 19.1.8版本。
 
 了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 

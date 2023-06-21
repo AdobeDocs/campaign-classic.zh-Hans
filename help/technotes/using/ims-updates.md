@@ -4,10 +4,10 @@ title: 技术说明 — 更新您的环境以使用IMS连接到Adobe Campaign
 description: Campaign - IMS更新
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 10%
+source-wordcount: '579'
+ht-degree: 9%
 
 ---
 
@@ -37,15 +37,15 @@ Adobe希望在2021年6月30日之后为所有客户保留IMS功能。 IMS是安�
 
 * 作为内部部署/混合部署客户，您需要升级到上面列出的较新版本之一，以便从新的客户端控制台中受益并确保无缝过渡 **2021年6月30日之前**.
 
-   必须升级到下面列出的新版本之一：
+  必须升级到下面列出的新版本之一：
 
    * Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
    * Campaign 21.1.3版本。 [了解详情](../../rn/using/latest-release.md)
-   * Campaign 20.2.5版本。 [了解详情](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-   * Campaign 20.1.4版本。 [了解详情](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-   * Campaign 19.2.4版本。 [了解详情](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+   * Campaign 20.2.5版本。
+   * Campaign 20.1.4版本。
+   * Campaign 19.2.4版本。
 
-   这些版本随附新的连接协议。 Campaign服务器和客户端控制台都必须升级：升级所有实例后，客户端控制台需要升级到此版本，并且之后能够连接到Campaign **2021年6月30日**.
+  这些版本随附新的连接协议。 Campaign服务器和客户端控制台都必须升级：升级所有实例后，客户端控制台需要升级到此版本，并且之后能够连接到Campaign **2021年6月30日**.
 
 此外，请确保 [Windows版本](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)，替换为 **Internet Explorer 11** 内置，安装在每个用户的计算机上。
 
@@ -62,13 +62,13 @@ Adobe希望在2021年6月30日之后为所有客户保留IMS功能。 IMS是安�
 
 * 启动Campaign客户端控制台并访问实例连接设置。 如果 **与Adobe ID连接** 选项，则表示您使用的是Adobe IMS。
 
-   ![](../../integrations/using/assets/ims_1.png)
+  ![](../../integrations/using/assets/ims_1.png)
 
 或者
 
 * 启动Campaign客户端控制台，并检查连接窗口。 如果您要与Adobe ID连接（如下面的屏幕所示），则使用的是IMS。
 
-   ![](../../integrations/using/assets/adobeID.png)
+  ![](../../integrations/using/assets/adobeID.png)
 
 **连接警告消息**
 
@@ -85,6 +85,7 @@ Adobe希望在2021年6月30日之后为所有客户保留IMS功能。 IMS是安�
 >[!NOTE]
 >
 >有关这些更改的任何问题，请联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>
 
 ## 有用的链接
 

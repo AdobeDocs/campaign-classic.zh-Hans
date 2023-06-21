@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 36%
+source-wordcount: '351'
+ht-degree: 35%
 
 ---
 
@@ -31,11 +31,11 @@ ht-degree: 36%
 
 * Gold Standard 8至11。 [了解详情](../../rn/using/gold-standard.md#gs-8)
 * Campaign 21.1.1（内部版本9277）到21.1.2（内部版本9282）版本。 [了解详情](../../rn/using/latest-release.md)
-* Campaign 20.3.1（内部版本9228）到20.3.3（内部版本9234）版本。 [了解详情](../../rn/using/release--2020.md#release-20-3)
-* Campaign 20.2.1（内部版本9178）到20.2.4（内部版本9187）版本。 [了解详情](../../rn/using/release--2020.md#release-20-2)
-* Campaign 20.1.1（内部版本9122）到21.1.3（内部版本9124）版本。 [了解详情](../../rn/using/release--2020.md#release-20-1)
-* Campaign 19.2.2（内部版本9080）到19.2.3（内部版本9081）的版本。 [了解详情](../../rn/using/release--2019.md#release-19-2)
-* Campaign 19.1.5（内部版本9033）到19.1.7（内部版本9036）版本。 [了解详情](../../rn/using/release--2019.md#release-19-1)
+* Campaign 20.3.1（内部版本9228）到20.3.3（内部版本9234）版本。
+* Campaign 20.2.1（内部版本9178）到20.2.4（内部版本9187）版本。
+* Campaign 20.1.1（内部版本9122）到21.1.3（内部版本9124）版本。
+* Campaign 19.2.2（内部版本9080）到19.2.3（内部版本9081）的版本。
+* Campaign 19.1.5（内部版本9033）到19.1.7（内部版本9036）版本。
 
 
 了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
@@ -59,6 +59,7 @@ As a **托管客户**，Adobe将很快与您合作以更新您的配置。
 >[!NOTE]
 >
 >此 **config-`<instance>`.xml** 文件覆盖 **serverConf.xml** 设置。 如果 **signEmailLinks** 中存在于  **config-`<instance>`.xml** (其中 **实例** 是实例的名称)，还必须将其转换为 **false**.
+>
 
 **会有什么影响？**
 
@@ -69,3 +70,4 @@ As a **托管客户**，Adobe将很快与您合作以更新您的配置。
 >[!NOTE]
 >
 >有关这些更改的任何问题，请联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+>
