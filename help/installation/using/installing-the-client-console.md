@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 0bea34e2db2b54bdd2a6fed80b47d473c89f631e
+source-git-commit: 45bf9d76dc41fd8cecfaab3f258856861201db3f
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 4%
@@ -32,9 +32,9 @@ Campaign客户端控制台是一个富客户端，可用于连接到Campaign应�
 
 >[!CAUTION]
 >
->必须运行Campaign客户端控制台和Campaign应用程序服务器 **在相同产品版本上**. Adobe还强烈建议使用 **相同的产品版本**. 了解如何在中检查您的Campaign客户端和服务器版本 [本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>* 必须运行Campaign客户端控制台和Campaign应用程序服务器 **在相同产品版本上**. Adobe还强烈建议使用 **相同的产品版本**. 了解如何在中检查您的Campaign客户端和服务器版本 [本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 >
->应仅允许目标用户访问安装控制台的安装文件夹，确保相应地限制写入权限。
+>* 应仅允许目标用户访问安装控制台的安装文件夹，确保相应地限制写入权限。
 
 
 
