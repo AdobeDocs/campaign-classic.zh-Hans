@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
+source-git-commit: f38d9053a3817fabc196dfbbfc5fff67bf1a7b06
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 24%
@@ -16,8 +16,6 @@ ht-degree: 24%
 ---
 
 # 关于Adobe ID{#about-adobe-id}
-
-
 
 AdobeIdentity Management System (IMS)可帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的AdobeID的更多信息，请参阅 [此页面](https://helpx.adobe.com/enterprise/using/identity.html).
 
@@ -43,8 +41,8 @@ Campaign用户可以使用其Adobe ID连接到Adobe Campaign控制台。 该集�
 > * Campaign 19.2.4
 > * Campaign 19.1.8
 >
-> [!DNL :bulb:] [了解有关IMS更新的更多信息](../../technotes/using/ims-updates.md)
->
+[了解有关IMS更新的更多信息](../../technotes/using/ims-updates.md)
+>>
 
 ## 更多资源
 
