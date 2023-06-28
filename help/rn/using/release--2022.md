@@ -5,16 +5,18 @@ description: 详细了解 Campaign Classic 2022 版
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '2025'
 ht-degree: 100%
 
 ---
 
 # 2022 版{#release-2022}
 
-## ![](assets/do-not-localize/orange_2.png) 7.3.1 版 - 内部版本 9352 {#release-7-3-1}
+## 7.3.1 版 - 内部版本 9352 {#release-7-3-1}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2022 年 7 月 1 日_
 
@@ -82,7 +84,9 @@ _2022 年 7 月 1 日_
 * 修复了在消息准备期间可能会阻止图像以块模式从外部服务器上传的问题。(NEO-40307)
 * 修复了可能导致向比预期更多的收件人发送投放的问题。(NEO-45108)
 
-## ![](assets/do-not-localize/green_2.png) 7.2.2 版 - 版本 9349 {#release-7-2-2}
+## 7.2.2 版 - 内部版本 9349 {#release-7-2-2}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2022 年 3 月 1 日_
 
@@ -104,7 +108,9 @@ _2022 年 3 月 1 日_
 * 修复了在同时拥有 1000 个以上 broadlog 时刷新可投放性工作流时导致出现错误的问题。(NEO-40276)
 * 修复了导致打开率和点击率投放指标无法自动更新的问题。(NEO-43253)
 
-## ![](assets/do-not-localize/limited_2.png) 7.2.1 版 - 版本 9346 {#release-7-2-1}
+## 7.2.1 版 - 内部版本 9346 {#release-7-2-1}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2022 年 1 月 10 日_
 

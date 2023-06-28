@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: ht
-source-wordcount: '1670'
-ht-degree: 100%
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,9 @@ ht-degree: 100%
 ## [!DNL Gold Standard] 发行说明
 
 
-### ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] 12 版{#gs-12}
+### [!DNL Gold Standard] 12版{#gs-12}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2021 年 9 月 7 日_
 
@@ -38,7 +40,9 @@ _2021 年 8 月 27 日_
 * 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、互联网浏览器等）链接的方式出现错误处理特殊字符。URL 参数现已经过编码。
 * 修复了日期选取器的问题，该问题可能导致控制台显示阻止程序错误消息。(NEO-36345)
 
-### ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] 11 版{#gs-11}
+### [!DNL Gold Standard] 11版{#gs-11}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2021 年 4 月 14 日_
 
@@ -83,7 +87,9 @@ _2020 年 12 月 22 日_
 
 * 修复了在运行&#x200B;**扩充**&#x200B;活动时可能导致工作流失败的问题。(NEO-17338)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 10 版{#gs-10}
+### [!DNL Gold Standard] 10版{#gs-10}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2020 年 7 月 7 日_
 
@@ -95,7 +101,9 @@ _2020 年 7 月 7 日_
 >
 >我们建议您使用此版本中提供的客户端控制台进行升级。请参见[此页面](../../installation/using/installing-the-client-console.md)。
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 9 版{#gs-9}
+### [!DNL Gold Standard] 9版{#gs-9}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2020 年 6 月 22 日_
 
@@ -111,7 +119,9 @@ _2020 年 6 月 22 日_
 * 修复了反网络钓鱼服务的问题。(NEO-25283)
 * 修复了使用特定自定义跟踪公式时的跟踪问题。(NEO-25277)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 8 版{#gs-8}
+### [!DNL Gold Standard] 8版{#gs-8}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2020 年 4 月 29 日_
 
@@ -136,7 +146,9 @@ _2020 年 4 月 29 日_
 * 修复了导致清理工作流崩溃的回归。
 * 修复了清理工作流日志中的次要回归。
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 6 版{#gs-6}
+### [!DNL Gold Standard] 6版{#gs-6}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2020 年 3 月 9 日_
 
@@ -144,7 +156,9 @@ _2020 年 3 月 9 日_
 
 * 修复了外部帐户使用 FTP over SSL 时的问题。(NEO-20498)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 5 版{#gs-5}
+### [!DNL Gold Standard] 5版{#gs-5}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2019 年 12 月 17 日_
 
@@ -152,7 +166,9 @@ _2019 年 12 月 17 日_
 
 * 修复了以下通信渠道上的跟踪问题：移动（SMS 或 MMS）、推送（iOS 或 Android）和社交网络（Facebook 或 Twitter）。(NEO-19595)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 4 版{#gs-4}
+### [!DNL Gold Standard] 4版{#gs-4}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2019 年 12 月 11 日_
 
@@ -160,7 +176,9 @@ _2019 年 12 月 11 日_
 
 * 修复了使用 MSSQL 数据库发送消息时的性能问题。(NEO-17558)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 3 版{#gs-3}
+### [!DNL Gold Standard] 3版{#gs-3}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2019 年 11 月 20 日_
 
@@ -170,7 +188,9 @@ _2019 年 11 月 20 日_
 * 修复了在多个投放中显示累积报告时的问题。(NEO-18165)
 * 修复了可能出现拦截或导致 Web 服务器崩溃的问题。
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 2 版{#gs-2}
+### [!DNL Gold Standard] 2版{#gs-2}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2019 年 9 月 19 日_
 
@@ -179,7 +199,9 @@ _2019 年 9 月 19 日_
 * 修复了使用 CRM Connector for Salesforce 时的问题。(NEO-17712)
 * 修复了在发送事务性消息时可能导致性能问题的索引问题。
 
-### ![](assets/do-not-localize/red_2.png) 19.1.4 版 - 内部版本 9032{#release-19-1-4-build-9032}
+### 19.1.4 版 - 内部版本 9032{#release-19-1-4-build-9032}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2019 年 8 月 13 日_
 
@@ -200,6 +222,7 @@ _2019 年 8 月 13 日_
 >除非另有说明，否则支持所有次要版本。
 >
 >Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。随着这些第三方系统和工具的特定版本到达其各自创建者的终止生命周期 (EOL)，Adobe Campaign 将不再与这些版本兼容，并将在后续产品发布中从兼容性矩阵中移除。请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
+>
 
 ### 操作系统{#OperatingSystems-gs}
 

@@ -7,20 +7,20 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
-workflow-type: ht
-source-wordcount: '962'
-ht-degree: 100%
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+workflow-type: tm+mt
+source-wordcount: '986'
+ht-degree: 99%
 
 ---
 
 # 最新版本{#latest-release}
 
-
-
 此页面列出了 **Campaign v7 最新版本**&#x200B;中的新增功能、改进和修复。每个新的内部版本都带有一个以颜色突出显示的状态。在[此页面](rn-overview.md)中了解有关 Campaign Classic v7 内部版本状态的更多信息。
 
-## ![](assets/do-not-localize/green_2.png) 7.3.3 版 - 内部版本 9359 {#release-7-3-3}
+## 7.3.3 版 - 内部版本 9359 {#release-7-3-3}
+
+[!BADGE 一般可用性]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="一般可用性"}
 
 >[!CAUTION]
 >
@@ -46,7 +46,9 @@ _2023 年 3 月 20 日_
 * 修复了可能导致无法在数字内容编辑器 (DCE) 的&#x200B;**编辑**&#x200B;选项卡中滚动的问题。(NEO-54474)
 * 修复了两个扩充活动在其链接中使用相同名称标识符时导致第二个扩充活动使用第一个活动的链接的问题。(NEO-48851)
 
-## ![](assets/do-not-localize/orange_2.png) 7.3.2 版 - 内部版本 9356 {#release-7-3-2}
+## 7.3.2 版 - 内部版本 9356 {#release-7-3-2}
+
+[!BADGE 有限可用性]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限可用性"}
 
 _2022 年 11 月 21 日_
 

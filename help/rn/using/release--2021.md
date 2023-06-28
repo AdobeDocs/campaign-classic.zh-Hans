@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: a06623611ff3f8d9dfb5d498e01686e12a924923
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
 workflow-type: tm+mt
-source-wordcount: '2545'
+source-wordcount: '2595'
 ht-degree: 100%
 
 ---
@@ -19,8 +19,11 @@ ht-degree: 100%
 
 >[!CAUTION]
 >使用 **[!UICONTROL Help > About...]** 菜单来检查您的 Adobe Campaign [版本号和内部版本号](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。但请注意，对于本页中列出的 9277 到 9343 之间的所有内部版本，版本号显示为 7.0，而不是 7.1。
+> 
 
-### ![](assets/do-not-localize/limited_2.png) 21.1.4 版 - 版本 9343 {#release-21-1-4-build-9343}
+### 21.1.4 版 - 内部版本 9343 {#release-21-1-4-build-9343}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2021 年 10 月 8 日_
 
@@ -32,7 +35,9 @@ _2021 年 10 月 8 日_
 
 * 修复了在多中间源实例上使用多个 IP 关联时，在发送投放时出现的“在中间服务器 xxx 上未找到 IP 关联 xxx”错误。(NEO-37514)
 
-### ![](assets/do-not-localize/limited_2.png) 21.1.4 版 - 版本 9342 {#release-21-1-4-build-9342}
+### 21.1.4 版 - 内部版本 9342 {#release-21-1-4-build-9342}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2021 年 9 月 7 日_
 
@@ -66,7 +71,9 @@ _2021 年 9 月 7 日_
 * 修复了传入过渡是来自 FDA 数据源时，导致无法在&#x200B;**扩充**&#x200B;工作流活动中使用变量的问题。
 * 修复了一个可能导致电子邮件中的 URL 损坏的问题。
 
-### ![](assets/do-not-localize/limited_2.png) 21.1.3 版 - 版本 9330 {#release-21-1-3-build-9330}
+### 21.1.3 版 - 内部版本 9330 {#release-21-1-3-build-9330}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2021 年 6 月 5 日_
 
@@ -222,14 +229,18 @@ Campaign 现在支持以下系统：
 * 修复了由于特定加入机制导致投放个性化失败，因此导致无法发送包含一组验证的投放的问题。(NEO-14391)
 * 修复了在查询和扩充活动以投放表为目标时，无法通过警报活动发送警报的问题。(NEO-25157)
 
-### ![](assets/do-not-localize/red_2.png) 21.1.2 版 - 版本 9282 {#release-21-1-2-build-9282}
+### 21.1.2 版 - 内部版本 9282 {#release-21-1-2-build-9282}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2021 年 4 月 15 日_
 
 * 为优化安全性，改进了密码管理。
 * 修复了可能导致 MTA 崩溃的问题。
 
-### ![](assets/do-not-localize/red_2.png) 21.1.1 版 - 版本 9277 {#release-21-1-1-build-9277}
+### 21.1.1 版 - 内部版本 9277 {#release-21-1-1-build-9277}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2021 年 2 月 22 日_
 
