@@ -5,7 +5,7 @@ description: 了解有关文件收集器工作流活动的更多信息
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 1f87a5fba1298955fa07b9a045b21718c76a7fce
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -32,39 +32,39 @@ ht-degree: 0%
 
    * **[!UICONTROL Directory]**
 
-      包含要下载的文件的目录。 必须在服务器上预先创建此目录：如果该目录不存在，将引发错误。
+     包含要下载的文件的目录。 必须在服务器上预先创建此目录：如果该目录不存在，将引发错误。
 
    * **[!UICONTROL Filter]**
 
-      只考虑与此筛选器匹配的文件。 将忽略目录中的其他文件。 如果过滤器为空，则考虑目录中的所有文件。 过滤器示例： **&#42;.zip**， **导入 — &#42;.txt**.
+     只考虑与此筛选器匹配的文件。 将忽略目录中的其他文件。 如果过滤器为空，则考虑目录中的所有文件。 过滤器示例： **&#42;.zip**， **导入 — &#42;.txt**.
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 
-      如果启用此选项，则任务将在收到第一个文件后结束。 如果目录中存在多个与过滤器对应的文件，则只考虑其中一个。 此选项确保只发送一个事件。 考虑的文件是列表中的第一个文件，按字母顺序排列。
+     如果启用此选项，则任务将在收到第一个文件后结束。 如果目录中存在多个与过滤器对应的文件，则只考虑其中一个。 此选项确保只发送一个事件。 考虑的文件是列表中的第一个文件，按字母顺序排列。
 
-      对于未计划的活动，如果在指定的目录中未找到与筛选器匹配的文件，并且 **[!UICONTROL Process file nonexistence]** 选项未启用，将引发错误。
+     对于未计划的活动，如果在指定的目录中未找到与筛选器匹配的文件，并且 **[!UICONTROL Process file nonexistence]** 选项未启用，将引发错误。
 
    * **[!UICONTROL Execution schedule]**
 
-      通过 **[!UICONTROL Schedule]** 选项卡。
+     通过 **[!UICONTROL Schedule]** 选项卡。
 
 1. **错误处理**
 
    以下两个选项可用：
 
-   * **[!UICONTROL Process file nonexistence]**
+   * **[!UICONTROL Process missing file]**
 
-      每次在指定目录中未找到与过滤器匹配的文件时，此选项都会启动一个特殊过渡。
+     每次在指定目录中未找到与过滤器匹配的文件时，此选项都会启动一个特殊过渡。
 
-      如果未计划该任务，则此过渡将仅激活一次。
+     如果未计划该任务，则此过渡将仅激活一次。
 
-   * **[!UICONTROL Processing errors]**
+   * **[!UICONTROL Process errors]**
 
-      此选项会显示一个特殊的过渡，在生成错误时激活。 在这种情况下，工作流不会更改为错误状态，而是继续执行
+     此选项会显示一个特殊的过渡，在生成错误时激活。 在这种情况下，工作流不会更改为错误状态，而是继续执行
 
-      考虑的错误是文件系统错误（无法移动文件、无法访问目录等）。
+     考虑的错误是文件系统错误（无法移动文件、无法访问目录等）。
 
-      此选项不处理与活动配置相关的错误，即无效值。
+     此选项不处理与活动配置相关的错误，即无效值。
 
 1. **历史化**
 
