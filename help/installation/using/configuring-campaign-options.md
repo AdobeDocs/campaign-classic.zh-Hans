@@ -2,14 +2,14 @@
 product: campaign
 title: 配置Campaign选项
 description: 了解如何配置Campaign选项
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 942d44104ae56e9334f42f10751979ce4f4a714d
 workflow-type: tm+mt
-source-wordcount: '3993'
+source-wordcount: '4011'
 ht-degree: 6%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 6%
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> 允许您允许负责投放的操作员确认发送（如果指定了特定操作员或操作员组来在投放的属性中开始投放）。</p><p> 要实现此目的，请通过输入“1”作为值来激活选项。 要停用此选项，请输入“0”。</p><p> 然后，发送确认流程将默认运行：只有投放属性中为发送指定的操作员或操作员组（或管理员）才能确认并执行发送。 请参阅<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">此小节</a>。</p> </td> 
+   <td><p> 允许您允许负责投放的操作员确认发送（如果指定了特定操作员或操作员组来在投放的属性中开始投放）。</p><p> 要实现此目的，请通过输入“1”作为值来激活选项。 要停用此选项，请输入“0”。</p><p> 然后，发送确认流程将默认运行：只有投放属性中为发送指定的操作员或操作员组（或管理员）才能确认并执行发送。 请参阅<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">此章节</a>。</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数据库(nms：recipient)进行对话。<br /> 选项值必须对应于与外部收件人表匹配的架构的名称。<br /> </td> 
@@ -72,11 +72,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_LogsPerTransac</span> <br /> </td> 
-   <td> 为一次投放创建的BroadLog的数量。<br /> </td> 
+   <td> 在投放准备期间插入broadLog所需的最小批次大小（行数）。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MaxDelayPerTransac</span> <br /> </td> 
-   <td> 每个事务插入（在表中）日志(broadLogs) ：每个批次处理的行数。<br /> </td> 
+   <td> 批次持续时间阈值（毫秒数），在投放准备期间插入broadLog的批次大小加倍。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span> <br /> </td> 
@@ -287,11 +287,11 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NcmResourcesDir</span> <br /> </td> 
-   <td> 在Adobe Campaign客户端控制台中发布资源的位置。 请参阅<a href="../../delivery/using/formatting.md#image-referencing">此小节</a>。<br /> </td> 
+   <td> 在Adobe Campaign客户端控制台中发布资源的位置。 请参阅<a href="../../delivery/using/formatting.md#image-referencing">此章节</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmResourcesDirPreview</span> <br /> </td> 
-   <td> 在Adobe Campaign客户端控制台中用于预览的资源位置。 请参阅<a href="../../delivery/using/formatting.md#image-referencing">此小节</a>。<br /> </td> 
+   <td> 在Adobe Campaign客户端控制台中用于预览的资源位置。 请参阅<a href="../../delivery/using/formatting.md#image-referencing">此章节</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
@@ -740,11 +740,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> 用于集成的Adobe Target服务器。 默认情况下已选中此选项。 此值对应于Adobe Target Domain Server，后跟值/m2。 例如：tt.omtrdc.net/m2。<br /> 参见 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">本节</a>.<br /> </td> 
+   <td> 用于集成的Adobe Target服务器。 默认情况下已选中此选项。 此值对应于Adobe Target Domain Server，后跟值/m2。 例如：tt.omtrdc.net/m2。<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> 请参阅此章节</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Adobe Target组织名称。 此值对应于Adobe Target客户端的名称。<br /> 参见 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">本节</a>.<br /> </td> 
+   <td> Adobe Target组织名称。 此值对应于Adobe Target客户端的名称。<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> 请参阅此章节</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
