@@ -2,21 +2,19 @@
 product: campaign
 title: 关于 Adobe Campaign Classic
 description: 探索关键功能、用户界面和全局指南
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '930'
 ht-degree: 92%
 
 ---
 
 # Campaign Classic入门{#about-adobe-campaign-classic}
-
-
 
 为了实现高水准的客户交互和优秀的客户体验，企业必须确保客户在所有接触点上的历程是一致且连续的。现在，营销人员能够高效的设计、计划、执行、管理，并且优化跨渠道营销活动，从而创造更高的市场营销投资回报，并且提高客户忠诚度。
 
@@ -24,12 +22,11 @@ ht-degree: 92%
 
 >[!AVAILABILITY]
 >
->* 本系列中的帮助资料适用于其中的Campaign Classicv7 [最新版本](../../rn/using/latest-release.md). 当部分也适用于Campaign v8时，可以使用特定徽章。
+>* 本系列中的帮助资料适用于其中的Campaign Classicv7 [最新版本](../../rn/using/latest-release.md). 当部分也适用于Campaign v8时，可提供特定徽章。
 >
 >* 提供了Adobe Campaign v8文档 [此处](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hans).
 
-
-![](assets/do-not-localize/how-to-video.png) [了解视频的主要特性和功能](#video)
+![](assets/do-not-localize/how-to-video.png) [在视频中发现主要特性和功能](#video)
 
 ## 重要功能 {#key-capabilities}
 
