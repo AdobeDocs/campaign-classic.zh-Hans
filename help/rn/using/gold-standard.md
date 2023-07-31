@@ -3,14 +3,14 @@ product: campaign
 title: "[!DNL Gold Standard] 版本"
 description: Campaign Classic  [!DNL Gold Standard] 的发行说明和兼容性矩阵
 feature: Release Notes
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1787'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 ## [!DNL Gold Standard] 发行说明
 
 
-### [!DNL Gold Standard] 12版{#gs-12}
+### [!DNL Gold Standard] 12 版本{#gs-12}
 
 [!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
@@ -40,7 +40,7 @@ _2021 年 8 月 27 日_
 * 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、互联网浏览器等）链接的方式出现错误处理特殊字符。URL 参数现已经过编码。
 * 修复了日期选取器的问题，该问题可能导致控制台显示阻止程序错误消息。(NEO-36345)
 
-### [!DNL Gold Standard] 11版{#gs-11}
+### [!DNL Gold Standard] 11 版本{#gs-11}
 
 [!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
@@ -87,7 +87,7 @@ _2020 年 12 月 22 日_
 
 * 修复了在运行&#x200B;**扩充**&#x200B;活动时可能导致工作流失败的问题。(NEO-17338)
 
-### [!DNL Gold Standard] 10版{#gs-10}
+### [!DNL Gold Standard] 10 版本{#gs-10}
 
 [!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
@@ -101,7 +101,7 @@ _2020 年 7 月 7 日_
 >
 >我们建议您使用此版本中提供的客户端控制台进行升级。请参见[此页面](../../installation/using/installing-the-client-console.md)。
 
-### [!DNL Gold Standard] 9版{#gs-9}
+### [!DNL Gold Standard] 9 版本{#gs-9}
 
 [!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
@@ -119,7 +119,7 @@ _2020 年 6 月 22 日_
 * 修复了反网络钓鱼服务的问题。(NEO-25283)
 * 修复了使用特定自定义跟踪公式时的跟踪问题。(NEO-25277)
 
-### [!DNL Gold Standard] 8版{#gs-8}
+### [!DNL Gold Standard] 8 版本{#gs-8}
 
 [!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
@@ -146,7 +146,7 @@ _2020 年 4 月 29 日_
 * 修复了导致清理工作流崩溃的回归。
 * 修复了清理工作流日志中的次要回归。
 
-### [!DNL Gold Standard] 6版{#gs-6}
+### [!DNL Gold Standard] 6 版本{#gs-6}
 
 [!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
@@ -156,7 +156,7 @@ _2020 年 3 月 9 日_
 
 * 修复了外部帐户使用 FTP over SSL 时的问题。(NEO-20498)
 
-### [!DNL Gold Standard] 5版{#gs-5}
+### [!DNL Gold Standard] 5 版本{#gs-5}
 
 [!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
@@ -166,7 +166,7 @@ _2019 年 12 月 17 日_
 
 * 修复了以下通信渠道上的跟踪问题：移动（SMS 或 MMS）、推送（iOS 或 Android）和社交网络（Facebook 或 Twitter）。(NEO-19595)
 
-### [!DNL Gold Standard] 4版{#gs-4}
+### [!DNL Gold Standard] 4 版本{#gs-4}
 
 [!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
@@ -176,7 +176,7 @@ _2019 年 12 月 11 日_
 
 * 修复了使用 MSSQL 数据库发送消息时的性能问题。(NEO-17558)
 
-### [!DNL Gold Standard] 3版{#gs-3}
+### [!DNL Gold Standard] 3 版本{#gs-3}
 
 [!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
@@ -188,7 +188,7 @@ _2019 年 11 月 20 日_
 * 修复了在多个投放中显示累积报告时的问题。(NEO-18165)
 * 修复了可能出现拦截或导致 Web 服务器崩溃的问题。
 
-### [!DNL Gold Standard] 2版{#gs-2}
+### [!DNL Gold Standard] 2 版本{#gs-2}
 
 [!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
