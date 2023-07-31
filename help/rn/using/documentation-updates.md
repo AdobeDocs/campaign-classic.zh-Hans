@@ -3,14 +3,14 @@ product: campaign
 title: Adobe Campaign Classic v7 文档更新
 description: 本页列出了 Adobe Campaign Classic 文档中的所有新增功能和更新
 feature: Release Notes
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3584'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -290,7 +290,7 @@ Campaign 数据模型概述已得到改进并重组。[阅读更多](../../confi
 
 Campaign 联合数据访问 (FDA) 文档已通过每个外部数据库配置的详细信息得到改进，并已移至[此部分](../../installation/using/about-fda.md)。
 
-Campaign 20.2.3 版本已转为“一般可用性 (GA)”。
+Campaign 20.2.3 版本已转为“正式发布版 (GA)”。
 
 “隐私”部分已移动并新增两个页面：[隐私管理](../../platform/using/privacy-management.md)和[管理隐私请求](../../platform/using/privacy-requests.md)。
 
