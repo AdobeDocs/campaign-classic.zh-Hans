@@ -2,15 +2,16 @@
 product: campaign
 title: 挂钩
 description: 挂钩
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 1%
+source-wordcount: '520'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 1%
 
 “交互”中的挂接允许您修改 **标准引擎行为**.
 
-此 **[!UICONTROL Target loading]** 和 **[!UICONTROL Proposition post-processing]** 在Adobe Campaign中，可在选件空间中配置挂接：
+此 **[!UICONTROL Target loading]** 和 **[!UICONTROL Proposition post-processing]** 在Adobe Campaign中，可在选件空间中配置挂钩：
 
 ![](assets/interaction_hooks_1.png)
 
@@ -28,26 +29,26 @@ ht-degree: 1%
 
 ![](assets/interaction_hooks_2.png)
 
-## 目标加载 {#target-loading}
+## 正在加载目标 {#target-loading}
 
-通过此挂接，您可以使用外部系统中的附加数据扩充联系人的用户档案（由现成查询加载）。
+此挂接允许您使用来自外部系统的附加数据扩充联系人的用户档案（由现成查询加载）。
 
-收集的数据必须插入到调用数据节点（交互节点）中。 集成商必须预先扩展了调用数据模式才能定义所收集数据的结构。 用户以与访问标准呼叫数据相同的方式访问此数据（在资格规则和个性化级别）。
+收集的数据必须插入到调用数据节点（交互节点）中。 集成商必须预先扩展了调用数据模式才能定义所收集数据的结构。 用户可以按与标准呼叫数据相同的方式访问此数据（在资格规则和个性化级别）。
 
 **输入参数：**
 
-* xmlInteraction （xml类型）：“交互”节点
-* TargetId（表类型）：目标标识符
-* sUuid230（字符串类型）： uuid230永久Cookie的值
+* xmlInteraction （xml类型）：交互节点
+* aTargetId（表类型）：目标标识符
+* sUuid230（字符串类型）： uuid230永久cookie的值
 * sNlid（字符串类型）： nlid会话Cookie的值
 
 **返回参数：**
 
-* 扩充的交互节点（此挂接的第一个参数）
+* 扩充了交互节点（此挂接的第一个参数）
 
 >[!NOTE]
 >
->此 **xmlInteraction** 参数包含调用数据和由现成查询加载的联系人的配置文件。
+>此 **xmlInteraction** 参数包含调用数据以及由现成查询加载的联系人的配置文件。
 
 **示例:**
 
@@ -64,26 +65,26 @@ ht-degree: 1%
 
 使用一致性规则的示例：
 
-* 限制同一调用、链接到同一产品或同一类别的提议的数量。
+* 限制同一调用中、链接到相同产品或相同类别的建议数量。
 * 在同一交互中仅显示与产品相关的优惠。
 
-后处理在分类规则应用和符合条件的主张排序之后，在优先级设置步骤之前执行。
+后处理在分类规则应用和合格建议排序之后，在优先级划分步骤之前执行。
 
 **输入参数：**
 
-* a建议：符合条件的建议表。 以下是此表中元素的结构示例
+* a建议：合格建议的表。 以下是此表中元素结构的示例
 
-   ```
-   { offer_id:1234,
-     weight:2}
-   ```
+  ```
+  { offer_id:1234,
+    weight:2}
+  ```
 
-* dicOffer （xml类型）：符合条件的优惠的所有属性（优惠代码、类别ID、类别全名、开始日期、结束日期、标签、内部名称、优惠ID、其他优惠字段）的字典。 例如
+* dicOffer（xml类型）：符合条件的优惠的所有属性（优惠代码、类别ID、类别全名、开始日期、结束日期、标签、内部名称、优惠ID、其他优惠字段）的字典。 例如
 
-   ```
-   { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
-     "1243": ...}
-   ```
+  ```
+  { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
+    "1243": ...}
+  ```
 
 * xmlTarget （xml类型）：配置文件数据节点
 * xmlInteraction （xml类型）：调用数据节点
@@ -92,7 +93,7 @@ ht-degree: 1%
 **返回参数：**
 
 * 已修改建议列表（挂接的第一个参数）
-* 修改了交互节点
+* 已修改的交互节点
 
 **示例:**
 
@@ -118,26 +119,26 @@ return aReturnedProps;
 
 ## 动态选件 {#dynamic-offer}
 
-利用此挂接，可调用外部引擎以选择链接到优惠的产品列表。 它是在资格规则之后、分类规则应用程序之前在选件中进行配置。
+此挂接允许您调用外部引擎以选择链接到优惠的产品列表。 它是在资格规则之后、类型规则应用程序之前在选件中配置的。
 
-集成商应预先扩展这些建议 **建议Rcp** 架构中附加的产品信息。 要指定此数据的存储位置，请 **[!UICONTROL Proposition being processed]** 链接位于 **[!UICONTROL Storage]** 空间选项卡
+集成商应预先扩展建议 **建议Rcp** 架构中的产品附加信息。 要指定此数据的存储位置，请 **[!UICONTROL Proposition being processed]** 链接位于 **[!UICONTROL Storage]** 空间选项卡
 
 ![](assets/interaction_hooks_3.png)
 
 **输入参数：**
 
-* xmlOffer （xml类型）：选件（选件代码、类别id、类别全名、开始日期、结束日期、标签、内部名称、选件id、其他选件字段）
+* xmlOffer （xml类型）：选件（选件代码、类别ID、类别全名、开始日期、结束日期、标签、内部名称、选件ID、其他选件字段）
 * dWeight：上下文权重（双类型）
 * xmlTarget （xml类型）：配置文件数据节点
 * xmlInteraction （xml类型）：调用数据节点
 
 **返回参数：**
 
-返回要生成的建议表。 此表格的每个元素均由以下信息组成：
+返回要生成的建议表。 此表的每个元素均由以下信息组成：
 
 * 优惠标识符
 * 其他产品数据（例如产品代码）
-* 权重
+* 粗细
 
 >[!NOTE]
 >

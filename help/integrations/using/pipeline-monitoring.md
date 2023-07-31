@@ -2,15 +2,16 @@
 product: campaign
 title: 管道监测
 description: 管道监测
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Triggers
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 84399496-33fd-4936-85e7-32de8503740f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 1%
+source-wordcount: '445'
+ht-degree: 2%
 
 ---
 
@@ -32,14 +33,14 @@ ht-degree: 1%
 
 建议监测的指标会突出显示。
 
-* 使用者：提取触发器的客户端的名称。 在管道选项中配置。
+* 消费者：提取触发器的客户端的名称。 在管道选项中配置。
 * http-request
    * last-alive-ms-ago：自进行连接检查以来的时间（以毫秒为单位）。
    * last-failed-cnx-ms-ago：自上次连接检查失败以来的时间（以毫秒为单位）。
    * pipeline-host：从中提取管道数据的主机的名称。
 * 指针
-   * current-offsets：指针（按子线程）进入管道的值。
-   * last-flush-ms-ago：自检索到一批触发器以来的时间（以毫秒为单位）。
+   * current-offsets：指针（每个子线程）进入管道的值。
+   * last-flush-ms-ago：自检索一批触发器以来的时间（以毫秒为单位）。
    * next-offsets-flush：完成时等到下一个批次的时间。
    * processed-since-last-flush：上一批次中处理的触发器数。
 * 路由
@@ -52,9 +53,9 @@ ht-degree: 1%
    * current-retries：处理失败并等待重试的当前消息数。
    * peak-messages：进程自启动以来处理的最大挂起消息数。
    * 指针刷新：自启动以来处理的消息批次数。
-   * routing-JS-custom：由自定义JS处理的消息数。
+   * routing-JS-custom：自定义JS处理的消息数。
    * trigger-discarded：因处理错误而重试过多后丢弃的消息数。
-   * trigger-processed：已处理但未出现错误的消息数。
+   * trigger-processed：无错误处理的消息数。
    * trigger-received：从队列接收的消息数。
 
 这些统计信息按处理线程显示。
@@ -70,11 +71,11 @@ ht-degree: 1%
    * flush-pointer-period-ms：两个批次之间的时间（以毫秒为单位）。
    * processing-threads-JS：运行自定义JS的处理线程数。
    * retry-period-ms：发生处理错误时两次重试之间的时间。
-   * retry-validity-duration-ms：重试处理直至丢弃消息的持续时间。
+   * retry-validity-duration-ms：重试处理时间直到丢弃消息为止的持续时间。
    * 管道消息报表
 
 ## 管道消息报表 {#pipeline-report}
 
-此报表显示过去五天内每小时的消息数。
+此报表显示最近五天内每小时的消息数。
 
 ![](assets/triggers_9.png)

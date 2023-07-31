@@ -2,15 +2,16 @@
 product: campaign
 title: 向 Adobe 提交请求
 description: 向 Adobe 提交请求
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Audiences, People Core Service Integration
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '158'
 ht-degree: 16%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 16%
 >
 >作为v7用户，为了能够继续下一步操作，请确保在您的系统上启用了AdobeIdentity Management System (IMS) 。 [了解详情](../../integrations/using/about-adobe-id.md)。
 
-为您的组织启用IMS后，您可以请求配置People核心服务/Audience Manager与Campaign的集成。 为此，请发送电子邮件至 [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) ，并提供以下信息：
+为您的组织启用IMS后，您可以请求配置人员核心服务/Audience Manager与Campaign的集成。 为此，请发送电子邮件至 [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) ，并提供以下信息：
 
 <table> 
  <tbody> 
@@ -45,7 +46,7 @@ ht-degree: 16%
   </tr> 
   <tr> 
    <td> <strong>AAM或人员服务</strong><br /> </td> 
-   <td> 示例： Adobe Audience Manager。 请务必说明您是否拥有Audience Manager许可证。</td> 
+   <td> 示例：Adobe Audience Manager。 请务必说明您是否拥有Audience Manager许可证。</td> 
   </tr> 
   <tr> 
    <td> <strong>声明的ID或访客ID</strong><br /> </td> 

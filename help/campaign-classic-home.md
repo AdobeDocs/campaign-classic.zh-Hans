@@ -2,8 +2,9 @@
 keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7产品文档
+feature: Overview
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: ad6a39f69c07662f43c39d4c96d53acccbe4a60c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 62%
@@ -22,7 +23,7 @@ ht-degree: 62%
 
 <!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
 
-* **[更新您的Adobe Experience Cloud Triggers集成](integrations/using/configuring-adobe-io.md)**<br/> 旧版oAuth身份验证服务已终止：您必须迁移到Adobe I/O
+* **[更新Adobe Experience Cloud Triggers集成](integrations/using/configuring-adobe-io.md)**<br/> 旧版oAuth身份验证服务的生命周期已终止：您必须迁移到Adobe I/O
 
 [更多更新](rn/using/documentation-updates.md)
 

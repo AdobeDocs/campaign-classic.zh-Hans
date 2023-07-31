@@ -1,18 +1,19 @@
 ---
 product: campaign
-title: 不受支持的SMS连接器迁移
-description: 将不受支持的SMS连接器迁移到扩展的通用SMPP连接器
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+title: 不支持的短信连接器迁移
+description: 将不支持的SMS连接器迁移到扩展通用SMPP连接器
+feature: SMS, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '460'
 ht-degree: 3%
 
 ---
 
-# 将不受支持的SMS连接器迁移到扩展的通用SMPP连接器{#unsupported-connector-migration}
+# 将不支持的SMS连接器迁移到扩展通用SMPP连接器{#unsupported-connector-migration}
 
 
 
@@ -33,7 +34,7 @@ ht-degree: 3%
 * **[!UICONTROL O2]**
 * **[!UICONTROL iOS]**
 
-已弃用的功能仍然可用并受支持，但不会进一步增强。 我们建议使用 **[!UICONTROL Extended generic SMPP]** 连接器。
+已弃用的功能仍然可用并受支持，但不会进一步增强它们。 我们建议使用 **[!UICONTROL Extended generic SMPP]** 连接器。
 
 有关已弃用和已删除功能的详细信息，请参阅此 [页面](../../rn/using/deprecated-features.md).
 
@@ -45,9 +46,9 @@ ht-degree: 3%
 >
 >即使您可以调换参数，配置 **[!UICONTROL Extended Generic SMPP]** 连接器要求您与提供商联系，提供商将为您提供填写其余参数所需的信息。 有关详细信息，请参见此 [ 页面](sms-protocol.md)。
 
-首先，您需要创建一个新的 **[!UICONTROL Extended Generic SMPP]** 然后，您或许能够转置某些参数。 您可以在此处找到详细步骤 [页面](sms-set-up.md#creating-an-smpp-external-account).
+首先，您需要创建一个 **[!UICONTROL Extended Generic SMPP]** 然后，您或许能够转置某些参数。 您可以在此处找到详细步骤 [页面](sms-set-up.md#creating-an-smpp-external-account).
 
-现在，您需要填写以下文件中的参数： **[!UICONTROL Mobile]** 新创建的选项卡 **[!UICONTROL Extended Generic SMPP]** 外部帐户，具体取决于您之前的连接器。
+现在，您需要填写 **[!UICONTROL Mobile]** 新创建的选项卡 **[!UICONTROL Extended Generic SMPP]** 外部帐户，具体取决于您之前的连接器。
 
 ### 从通用连接器 {#from-generic-connector}
 
@@ -111,7 +112,7 @@ ht-degree: 3%
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-### 从CLX连接器 {#from-clx}
+### 来自CLX连接器 {#from-clx}
 
 来自您的 **[!UICONTROL CLX]** 连接器，您可以调换到新创建的 **[!UICONTROL Extended SMPP]** 帐户：
 

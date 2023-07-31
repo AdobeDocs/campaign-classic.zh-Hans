@@ -2,12 +2,12 @@
 product: campaign
 title: 事务性消息传递入门
 description: 详细了解Adobe Campaign Classic事务型消息传递的工作原理和关键步骤
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Transactional Messaging
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '651'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 **事务性消息传递** （消息中心）是一个Campaign模块，用于管理从外部信息系统发送的事件生成的自定义触发器通知。
 
-事务型消息是由诸如网站之类的提供商实时发送的单个且唯一的通信。 此消息尤其符合预期，因为它包含收件人要检查或确认的重要信息。
+事务型消息是由提供程序（如网站）实时发送的单个且唯一的通信。 由于它包含收件人要检查或确认的重要信息，因此尤其需要使用。
 
 事务性消息传递功能旨在支持可扩展性并提供7天24小时服务。
 
@@ -41,25 +41,25 @@ ht-degree: 6%
 
 Adobe Campaign事务性消息传递模块集成到一个信息系统中，该信息系统返回要更改为个性化事务性消息的事件。 这些消息可以通过电子邮件、短信或推送通知单独或批量发送。
 
-此功能依赖于特定的架构，其中 **执行实例** 分隔自 **控制实例**. 此分布确保更高的可用性和更好的负载管理。 有关此内容的更多信息，请参阅 [事务性消息传递架构](../../message-center/using/transactional-messaging-architecture.md).
+此功能依赖于特定架构，其中 **执行实例** 分隔自 **控制实例**. 此分布可确保更高的可用性和更好的负载管理。 有关此内容的更多信息，请参阅 [事务性消息架构](../../message-center/using/transactional-messaging-architecture.md).
 
 >[!NOTE]
 >
 >要为托管在Adobe云上的消息中心执行实例创建新用户，您需要联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). 消息中心用户是特定的操作员，需要专用权限才能访问 **[!UICONTROL Real time events (nmsRtEvent)]** 文件夹。
 
-事务性消息传递的总体过程可描述如下：
+事务型消息传递的总体过程可描述如下：
 
 ![](assets/transactional-msg-overview.png)
 
-例如，假设您是一家公司，其网站上的客户可以购买产品。
+例如，假设您是一家设有网站的公司，您的客户可以在其中购买产品。
 
-Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子邮件。 当其中某个访客离开您的网站而未完成购买（触发促销活动事件的外部事件）时，会自动向他们发送购物车放弃电子邮件（事务性消息投放）。
+Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子邮件。 当其中某个访客离开您的网站而未完成购买（触发营销活动事件的外部事件）时，会自动向他们发送购物车放弃电子邮件（事务性消息投放）。
 
-下面详细说明了实施此解决方案的主要步骤： [本节](#key-steps).
+要实现该目标，主要步骤详见以下内容： [本节](#key-steps).
 
 >[!NOTE]
 >
->Adobe Campaign优先处理事务型消息，而不是任何其他投放。
+>Adobe Campaign会优先处理事务型消息，而不是任何其他投放。
 
 ## 关键步骤 {#key-steps}
 
@@ -76,15 +76,15 @@ Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子
 
 >[!NOTE]
 >
->上述所有步骤均在 **控制实例**. 在控制实例上发布模板也会将其发布到所有 **执行实例**. 有关事务型消息传递实例的详细信息，请参阅 [事务性消息传递架构](../../message-center/using/transactional-messaging-architecture.md).
+>上述所有步骤均在 **控制实例**. 在控制实例上发布模板也会在所有实例上发布 **执行实例**. 有关事务型消息传递实例的详细信息，请参阅 [事务性消息架构](../../message-center/using/transactional-messaging-architecture.md).
 
 ### 执行实例上的事件处理
 
 设计和发布事务型消息模板后，如果触发了相应的事件，则将对执行以下主要步骤 **执行实例**：
 
-1. 当外部信息系统生成事件时，相关数据将通过 **推送事件** 和 **Pushevents** 方法。 参见 [事件集合](../../message-center/using/about-event-processing.md#event-collection).
-1. 该事件已链接到相应的消息模板。 参见 [模板路由](../../message-center/using/about-event-processing.md#routing-towards-a-template).
-1. 扩充阶段完成后，将发送投放。 参见 [投放执行](../../message-center/using/delivery-execution.md). 每个目标收件人都会收到一条个性化的消息。
+1. 当外部信息系统生成事件时，相关数据会通过 **Pushevent** 和 **PushEvents** 方法。 请参阅 [事件集合](../../message-center/using/about-event-processing.md#event-collection).
+1. 该事件已链接到相应的消息模板。 请参阅 [模板路由](../../message-center/using/about-event-processing.md#routing-towards-a-template).
+1. 扩充阶段完成后，将发送投放。 请参阅 [投放执行](../../message-center/using/delivery-execution.md). 每个定向收件人都会收到一条个性化消息。
 
 ## 相关主题 {#related-topics}
 

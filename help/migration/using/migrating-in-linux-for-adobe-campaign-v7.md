@@ -2,16 +2,17 @@
 product: campaign
 title: 将Linux平台迁移到Adobe Campaign v7
 description: 了解如何将Linux平台迁移到Adobe Campaign v7
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 hide: true
 hidefromtoc: true
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -33,14 +34,14 @@ Linux中的迁移步骤如下：
 首先，停止在所有相关计算机上访问数据库的所有进程。
 
 1. 登录身份 **根**.
-1. 所有使用重定向模块的服务器(**webmdl** （服务）需要停止。 对于Apache，请运行以下命令：
+1. 所有使用重定向模块的服务器(**webmdl** 服务)需要停止。 对于Apache，请运行以下命令：
 
    ```
    /etc/init.d/apache2 stop
    ```
 
 1. 再次登录身份 **根**.
-1. 停止所有服务器上的Adobe Campaign早期版本服务。
+1. 停止所有服务器上的Adobe Campaign先前版本服务。
 
    ```
    /etc/init.d/nlserver6 stop
@@ -61,15 +62,15 @@ Linux中的迁移步骤如下：
    ps waux | grep nlserver
    ```
 
-   将显示活动进程的列表及其ID (PID)。
+   此时将显示活动进程的列表及其ID (PID)。
 
-1. 如果数分钟后一个或多个Adobe Campaign进程仍处于活动状态或受阻，请将其终止。
+1. 如果一个或多个Adobe Campaign进程在几分钟后仍处于活动状态或受阻，请将其终止。
 
    ```
    killall nlserver
    ```
 
-1. 如果某些进程在几分钟后仍处于活动状态，您可以使用命令强制关闭它们：
+1. 如果某些进程在几分钟后仍处于活动状态，可以使用命令强制关闭它们：
 
    ```
    killall -9 nlserver
@@ -211,43 +212,43 @@ Linux中的迁移步骤如下：
 
 -->
 
-本部分说明如何卸载Adobe Campaign v6.1软件包。
+本节介绍如何卸载Adobe Campaign v6.1软件包。
 
 1. 登录身份 **根**.
 1. 使用以下命令标识安装的Adobe Campaign软件包。
 
-   * In **Debian**：
+   * 在 **Debian**：
 
-      ```
-      dpkg -l | grep nl
-      ```
+     ```
+     dpkg -l | grep nl
+     ```
 
-      此时将显示已安装软件包的列表：
+     此时将显示已安装的软件包列表：
 
-      ```
-      ii  nlserver6                       XXXX                     nlserver6-XXXX
-      ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
-      ```
+     ```
+     ii  nlserver6                       XXXX                     nlserver6-XXXX
+     ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
+     ```
 
-   * In **Red Hat**：
+   * 在 **Red Hat**：
 
-      ```
-      rpm -qa | grep nl
-      ```
+     ```
+     rpm -qa | grep nl
+     ```
 
 1. 卸载Adobe Campaign v6软件包。
 
-   * In **Debian**：
+   * 在 **Debian**：
 
-      ```
-      dpkg --purge nlserver6 nlthirdparty6
-      ```
+     ```
+     dpkg --purge nlserver6 nlthirdparty6
+     ```
 
-   * In **Red Hat**：
+   * 在 **Red Hat**：
 
-      ```
-      rprm -ev nlserver6 nlthirdparty6
-      ```
+     ```
+     rprm -ev nlserver6 nlthirdparty6
+     ```
 
 ## 部署Adobe Campaign v7 {#deploying-adobe-campaign-v7}
 
@@ -473,26 +474,27 @@ To deploy Adobe Campaign, apply the following steps:
 
 1. 使用以下命令安装最新的Adobe Campaign v7软件包：
 
-   * In **Debian**：
+   * 在 **Debian**：
 
-      ```
-      dpkg -i nlserver6-XXXX-amd64_debX.deb
-      ```
+     ```
+     dpkg -i nlserver6-XXXX-amd64_debX.deb
+     ```
 
-   * In **Red Hat**：
+   * 在 **Red Hat**：
 
-      ```
-      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
-      ```
+     ```
+     rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
+     ```
+
    >[!IMPORTANT]
    >
-   >在继续下一步之前，您必须成功安装包。
+   >在继续下一步之前，必须成功安装包。
 
    >[!NOTE]
    >
-   >Adobe Campaign v7安装在 **/usr/local/neolane/nl6/** 目录。
+   >Adobe Campaign v7安装在中 **/usr/local/neolane/nl6/** 目录。
 
-1. 要使客户端控制台安装程序可用，请将其复制到Adobe Campaign安装目录中：
+1. 要使客户端控制台安装程序可用，请将其复制到Adobe Campaign安装目录：
 
    ```
    cp setup-client-7.0.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
@@ -502,7 +504,7 @@ To deploy Adobe Campaign, apply the following steps:
    >
    >有关如何在Linux中安装Adobe Campaign的更多信息，请参阅 [本节](../../installation/using/installing-campaign-standard-packages.md).
 
-1. 转到 **nl6.back** 备份文件夹并复制（覆盖）每个实例的配置文件和子文件夹。 登录身份 **neolane** 并运行以下命令：
+1. 转到 **nl6.back** 备份文件夹，并复制（覆盖）每个实例的配置文件和子文件夹。 登录身份 **neolane** 并运行以下命令：
 
    ```
    su - neolane
@@ -672,7 +674,7 @@ Fully test the new installation, check that it does not regress and make sure th
 1. 中间源服务器.
 1. 营销服务器。
 
-全面测试新安装，检查它是否未退回，并确保一切正常运行。
+全面测试新安装，检查它是否不会回退并确保一切正常运行。
 
 <!--
 

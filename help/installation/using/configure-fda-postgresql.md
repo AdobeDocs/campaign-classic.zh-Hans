@@ -2,12 +2,13 @@
 product: campaign
 title: 配置对PostgreSQL的访问权限
 description: 了解如何配置对PostgreSQL的访问权限
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 1%
+source-wordcount: '372'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 
 
-使用Campaign **联合数据访问** (FDA)选项，用于处理存储在外部PostgreSQL数据库中的信息。
+使用营销活动 **联合数据访问** (FDA)选项，用于处理存储在外部PostgreSQL数据库中的信息。
 
 ## PostgreSQL配置 {#postgresql-configuration}
 
@@ -27,7 +28,7 @@ ht-degree: 1%
 
 * 对于Linux，执行以下命令 `yum install postgresql-devel`.
 
-* 对于Windows，Libpq通过以下方式实现 `libpq.dll` Adobe Campaign安装中包含的步骤。
+* 对于Windows，Libpq通过以下方式实现 `libpq.dll` ，包含在Adobe Campaign安装中。
 
 然后，您可以在Adobe Campaign中配置 [!DNL PostgreSQL] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [本节](#postgresql-external).
 
@@ -63,7 +64,7 @@ ht-degree: 1%
 
    * **[!UICONTROL Timezone]**：时区设置于 [!DNL PostgreSQL]. [了解详情](https://www.postgresql.org/docs/7.2/timezones.html)
 
-1. 单击 **[!UICONTROL Parameters]** 按Tab键，然后 **[!UICONTROL Deploy functions]** 按钮创建函数。
+1. 单击 **[!UICONTROL Parameters]** 选项卡，然后 **[!UICONTROL Deploy functions]** 按钮创建函数。
 
    >[!NOTE]
    >
@@ -75,7 +76,7 @@ ht-degree: 1%
 
 | Option | 说明 |
 |:-:|:-:|
-| PGSQL_CONNECT_TIMEOUT | 最长等待连接时间（以秒为单位）。 <br>有关更多信息，请参阅 [PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT). |
-| PGSQL_KEEPALIVES_IDLE | TCP应在此时间之后向服务器发送keepalive消息的闲置秒数。 <br>有关更多信息，请参阅 [PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-IDLE). |
-| PGSQL_KEEPALIVES_INTVL | 服务器未确认的TCP keepalive消息应重新传输的秒数。  <br>有关更多信息，请参阅 [PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-INTERVAL). |
-| PGSQL_KEEPALIVES_CNT | 在客户机与服务器的连接被视为失效之前可以丢失的TCP keepalive数。 <br>有关更多信息，请参阅 [PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-COUNT). |
+| PGSQL_CONNECT_超时 | 最长等待连接时间（以秒为单位）。 <br>有关详细信息，请参见 [PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT). |
+| PGSQL_KEEPALIVES_IDLE | TCP应该向服务器发送keepalive消息之后处于非活动状态的秒数。 <br>有关详细信息，请参见 [PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-IDLE). |
+| PGSQL_KEEPALIVES_INTVL | 服务器未确认的TCP keepalive消息应重新传输的秒数。  <br>有关详细信息，请参见 [PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-INTERVAL). |
+| PGSQL_KEEPALIVES_CNT | 在客户端与服务器的连接被视为失效之前可以丢失的TCP keepalive数。 <br>有关详细信息，请参见 [PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-COUNT). |

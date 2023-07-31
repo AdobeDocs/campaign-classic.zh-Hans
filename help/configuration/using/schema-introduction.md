@@ -2,20 +2,21 @@
 product: campaign
 title: 架构引用
 description: 架构引用列表
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 21%
+source-wordcount: '97'
+ht-degree: 20%
 
 ---
 
 # 架构引用 {#schema-reference}
 
-编辑架构时，可以使用基于源架构(xtk：srcSchema)的审批系统。 使用“数据库结构更新……”向导更新数据库时，也可能会发现一些错误。
+编辑架构时，基于源架构(xtk：srcSchema)的审批系统可用。 使用“数据库结构更新……”向导更新数据库时，也可能会发现一些错误。
 
-默认情况下，在Adobe Campaign架构中，所有布尔类型属性均为“false”。 要激活它们，您需要在架构中指定属性，并将其值设置为“true”。
+默认情况下，在Adobe Campaign架构中，所有布尔类型属性均为“false”。 要激活它们，您需要在架构中指定属性并将其值设置为“true”。
 
 引用列表：
 

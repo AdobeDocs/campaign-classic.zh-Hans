@@ -2,11 +2,12 @@
 product: campaign
 title: 配置对Microsoft SQL Server的访问权限
 description: 了解如何配置对Microsoft SQL Server的访问权限
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 
 
-使用Campaign **联合数据访问** (FDA)选项，用于处理存储在外部Microsoft SQL Server数据库中的信息。 按照以下步骤配置对的访问权限 [!DNL Microsoft SQL Server].
+使用营销活动 **联合数据访问** (FDA)选项，用于处理存储在外部Microsoft SQL Server数据库中的信息。 按照以下步骤配置对的访问权限 [!DNL Microsoft SQL Server].
 
 1. 配置 [!DNL Microsoft SQL Server] 日期 [CentOS](#sql-centos).
 1. 配置 [!DNL Microsoft SQL Server] 日期 [Linux](#sql-linux).
@@ -28,7 +29,7 @@ ht-degree: 1%
 >
 > [!DNL Microsoft SQL Server] 在CentOS 7和6上提供。
 
-配置 [!DNL Microsoft SQL Server] 在CentOS上，请执行以下步骤：
+配置 [!DNL Microsoft SQL Server] 在CentOS上，执行以下步骤：
 
 1. 使用以下命令下载并安装SQL ODBC驱动程序：
 
@@ -46,7 +47,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 如果您运行的Adobe Campaign版本较低（7.2.1之前的版本），则需要安装 `unix ODBC drivers`.
+> 如果您运行的Adobe Campaign版本较低（7.2.1之前），则需要安装 `unix ODBC drivers`.
 
 1. 从下载MS ODBC驱动程序 [此页面](https://packages.microsoft.com/ubuntu/16.04/prod/pool/main/m/msodbcsql17/).
 
@@ -66,7 +67,7 @@ ht-degree: 1%
 
 1. 在Windows中，单击 **[!UICONTROL Control Panel]** &#39;>&#39; **[!UICONTROL System and Security]** &#39;>&#39; **[!UICONTROL Administrative Tools]**&#39;>&#39; **[!UICONTROL ODBC Data Sources (64-bit)]**.
 
-1. 从 **[!UICONTROL ODBC Data Sources (64-bit)]** 新窗口，单击 **[!UICONTROL Add...]**.
+1. 从 **[!UICONTROL ODBC Data Sources (64-bit)]** 新建窗口，请单击 **[!UICONTROL Add...]**.
 
 1. 检查SQL Server Native Client v11是否列在 **[!UICONTROL Create New Data Source]** 窗口。
 
@@ -100,7 +101,7 @@ ht-degree: 1%
 
    * **[!UICONTROL Timezone]**：时区设置于 [!DNL Microsoft SQL Server]. [了解详情](https://docs.microsoft.com/en-us/sql/t-sql/functions/current-timezone-transact-sql?view=sql-server-ver15)
 
-1. 单击 **[!UICONTROL Parameters]** 按Tab键，然后 **[!UICONTROL Deploy functions]** 按钮创建函数。
+1. 单击 **[!UICONTROL Parameters]** 选项卡，然后 **[!UICONTROL Deploy functions]** 按钮创建函数。
 
    >[!NOTE]
    >
@@ -113,5 +114,5 @@ ht-degree: 1%
 | Option | 说明 |
 |---|---|
 | 身份验证 | 连接器支持的身份验证类型。 当前支持的值： ActiveDirectoryMSI。 <br> 有关更多信息，请参阅示例8 [Microsoft文档](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
-| 加密 | 指定连接是否通过网络使用TLS加密。 可能的值包括 **是/必需（18.0及更高版本）**， **no/optional（18.0及更高版本）**、和 **strict（18.0及更高版本）**. 默认值设置为 **是** 版本18.0及更高版本中的 **否** 在以前的版本中。 <br>有关更多信息，请参阅 [Microsoft文档](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
-| TrustserverCertificate | 使用自签名服务器证书启用加密（与配合使用时） **加密**. <br>接受的值： **是** 或 **否** （默认值，表示将验证服务器证书）。 |
+| 加密 | 指定连接是否通过网络使用TLS加密。 可能的值包括 **是/必需（18.0及更高版本）**， **no/optional（18.0及更高版本）**、和 **strict（18.0及更高版本）**. 默认值设置为 **是** 版本18.0及更高版本中的 **否** 在以前的版本中。 <br>有关详细信息，请参见 [Microsoft文档](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
+| TrustserverCertificate | 与一起使用时，允许使用自签名服务器证书进行加密 **加密**. <br>接受的值： **是** 或 **否** （默认值，表示将验证服务器证书）。 |

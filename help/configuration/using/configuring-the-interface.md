@@ -2,13 +2,14 @@
 product: campaign
 title: 配置接口
 description: 了解如何配置Campaign界面
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Application Settings
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 0%
+source-wordcount: '318'
+ht-degree: 1%
 
 ---
 
@@ -16,33 +17,33 @@ ht-degree: 0%
 
 
 
-要在Adobe Campaign界面中查看新收件人表并与之对话，请应用以下步骤：
+要在Adobe Campaign界面中查看新收件人表并与其对话，请应用以下步骤：
 
 * 创建新表单以编辑新收件人表的内容。
 * 在浏览器树的文件夹中输入新类型。
-* 创建新的Web应用程序以通过Adobe Campaign主页访问自定义表。
+* 创建新的Web应用程序，以通过Adobe Campaign主页访问自定义表。
 
 Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数据库(nms：recipient)进行对话。 因此，需要更改此变量。
 
-1. 转到 **[!UICONTROL Administration>Platform>Options]** 浏览器的节点。
-1. 更改 **Nms_DefaultRcpSchema** 变量中指定与外部收件人表匹配的架构的名称（在本例中为：cus：individual）。
+1. 转到 **[!UICONTROL Administration>Platform>Options]** 资源管理器节点。
+1. 更改 **Nms_DefaultRcpSchema** 变量，其模式名称与外部收件人表匹配（在本例中为：cus：individual）。
 1. 保存更改.
 
 ## 创建新表单 {#creating-a-new-form-}
 
-通过创建新表单，可查看和编辑外部收件人表的数据。
+创建新表单后，您可以查看和编辑外部收件人表的数据。
 
 >[!IMPORTANT]
 >
->表单的名称必须与其涉及的架构名称相同。
+>表单的名称必须与它涉及的架构的名称相同。
 
-1. 转到 **管理>配置>输入表单** 浏览器的节点。
+1. 转到 **管理>配置>输入表单** 资源管理器节点。
 1. 新建 **xtk：form** type **表单** 文件。
-1. 根据表模板描述所需的全部监视和字段。
+1. 根据表模板说明所需的所有监视和字段。
 
    >[!NOTE]
    >
-   >了解更多关于 **表单** 键入文件，请参见 [此页面](../../configuration/using/identifying-a-form.md).
+   >详细了解 **表单** 键入文件，请参阅 [此页面](../../configuration/using/identifying-a-form.md).
 
    在本例中， **表单** 文件必须基于 **cus：individual** 架构，因此具有以下布局：
 
@@ -65,13 +66,13 @@ Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数�
 
 1. 转到 **[!UICONTROL Administration>Configuration>Navigation hierarchies]** 节点。
 1. 新建 **xtk：navtree** type **导航树** 文档。
-1. 根据表模板描述所需的全部监视和字段。
+1. 根据表模板说明所需的所有监视和字段。
 
    >[!NOTE]
    >
-   >有关更多详细信息 **导航树** 键入文件，请参见 [此页面](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+   >有关更多详细信息 **导航树** 键入文件，请参阅 [此页面](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
-   在当前示例中， **导航树** 文件必须基于 **cus：individual** 架构，因此具有以下形式：
+   在本例中， **导航树** 文件必须基于 **cus：individual** 架构，因此具有以下形式：
 
    ```
     <model name="root">

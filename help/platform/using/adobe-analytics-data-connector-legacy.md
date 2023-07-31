@@ -2,13 +2,13 @@
 product: campaign
 title: Adobe Analytics Data Connector
 description: Adobe Analytics Data Connector
-feature: Overview
+feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1659'
 ht-degree: 98%
@@ -147,7 +147,7 @@ Adobe Campaign 与 Analytics 平台的整合是通过连接器执行的。要同
 1. **[!UICONTROL Advanced]** 选项卡可让您配置或修改更多技术设置。
 
    * **[!UICONTROL Lifespan]**：可让您指定延迟（以天为单位），在此之后技术工作流会在 Adobe Campaign 中恢复网站事件。默认值：180 天。
-   * **[!UICONTROL Persistence]**：用于定义所有Web事件（例如购买）均可归因于再营销活动的时段，默认值：7天。
+   * **[!UICONTROL Persistence]**：用于定义所有Web事件（例如购买）可归因于再营销活动的时段，默认值：7天。
 
 >[!NOTE]
 >
@@ -201,9 +201,9 @@ Adobe Campaign 与 Adobe Analytics - Data Connector 之间的数据交换由四�
 * **[!UICONTROL Identification of converted contacts]**：再营销活动后进行购买的访客的目录。通过此工作流收集的数据可在 **[!UICONTROL Re-marketing efficiency]** 报表中访问，请参阅此[页面](#creating-a-re-marketing-campaign)。
 * **[!UICONTROL Sending of indicators and campaign attributes]**：可让您使用 Adobe Analytics - Data Connector 通过 Adobe Campaign 将电子邮件营销活动指标发送到 Adobe Experience Cloud。此工作流在每天凌晨 4 点触发，可能需要 24 小时才能将数据发送到 Analytics。
 
-   请注意，切勿重新启动此工作流，否则它将重新发送所有先前数据，可能会影响 Analytics 结果的准确性。
+  请注意，切勿重新启动此工作流，否则它将重新发送所有先前数据，可能会影响 Analytics 结果的准确性。
 
-   所涉指标包括：
+  所涉指标包括：
 
    * **[!UICONTROL Messages to deliver]** (@toDeliver)
    * **[!UICONTROL Processed]** (@processed)
@@ -216,11 +216,11 @@ Adobe Campaign 与 Adobe Analytics - Data Connector 之间的数据交换由四�
    * **[!UICONTROL Opt-Out]** (@optOut)
    * **[!UICONTROL Errors]** (@error)
 
-   >[!NOTE]
-   >
-   >发送的数据是基于上次快照的 delta 值，可能会导致量度数据中出现负值。
+  >[!NOTE]
+  >
+  >发送的数据是基于上次快照的 delta 值，可能会导致量度数据中出现负值。
 
-   发送的属性如下所示：
+  发送的属性如下所示：
 
    * **[!UICONTROL Internal name]** (@internalName)
    * **[!UICONTROL Label]** (@label)
@@ -230,7 +230,6 @@ Adobe Campaign 与 Adobe Analytics - Data Connector 之间的数据交换由四�
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
    * **[!UICONTROL Contact date]** (scheduling/@contactDate)
-
 
 ## 在 Adobe Campaign 中跟踪投放 {#tracking-deliveries-in-adobe-campaign}
 

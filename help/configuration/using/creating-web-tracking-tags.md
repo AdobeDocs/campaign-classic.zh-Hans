@@ -2,18 +2,19 @@
 product: campaign
 title: 创建Web跟踪标记
 description: 了解如何创建Web跟踪标记
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
 
 # 创建Web跟踪标记{#creating-web-tracking-tags}
 
-必须在Adobe Campaign平台中引用要跟踪的网站的每个页面。 可以通过两种方式执行此引用：
+必须在Adobe Campaign平台中引用要跟踪的网站每个页面。 可以通过两种方式执行此引用：
 
 1. 手动定义要跟踪的URL，
 1. 动态创建要跟踪的URL。
@@ -35,7 +36,7 @@ ht-degree: 0%
 
 ## 动态创建要跟踪的URL {#on-the-fly-creation-of-urls-to-be-tracked}
 
-您可以通过将信息添加到 **tagid** 参数：
+您可以通过将信息添加到的值来动态创建Web跟踪URL **tagid** 参数：
 
 * 跟踪的页面类型：“w”表示WEB，“t”表示TRANSACTION，
 * 必须创建URL的文件夹的内部名称。
@@ -48,7 +49,7 @@ tagid=<identifier>|<type>|<foldername>
 
 >[!IMPORTANT]
 >
->请记住对 **tagid** 参数作为URL参数时的响应。
+>请记住对 **tagid** 参数作为URL参数时的情况。
 
 **示例**：创建事务类型Web跟踪URL。
 

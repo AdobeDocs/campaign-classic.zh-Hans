@@ -2,15 +2,16 @@
 product: campaign
 title: 配置 Campaign 服务器
 description: 配置 Campaign 服务器
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1603'
 ht-degree: 3%
 
 ---
@@ -19,13 +20,13 @@ ht-degree: 3%
 
 
 
-本章详细介绍可以根据您的需求和环境特定性执行的服务器端配置。
+本章详细介绍可根据您的需求和环境特性执行的服务器端配置。
 
 ## 限制
 
-这些过程仅限于 **内部部署**/**混合** 部署，并需要管理权限。
+这些过程仅限于 **内部部署**/**混合** 部署并需要管理权限。
 
-对象 **托管** 部署，服务器端设置只能由Adobe配置。 但是，某些设置可以在中进行设置 [营销活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)，如IP允许列表管理或URL权限。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans)。
+对象 **托管** 部署、服务器端设置只能由Adobe配置。 但是，可以在中设置某些设置 [营销活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)，如IP允许列表管理或URL权限。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans)。
 
 有关更多信息，请参阅以下章节：
 
@@ -35,7 +36,7 @@ ht-degree: 3%
 
 ## 配置文件
 
-Campaign Classic配置文件存储在 **会议** Adobe Campaign安装文件夹的文件夹。 该配置分布在两个文件中：
+Campaign Classic配置文件存储在 **会议** Adobe Campaign安装文件夹的文件夹。 该配置分为两个文件：
 
 * **serverConf.xml**：所有实例的常规配置。 此文件结合了Adobe Campaign服务器的技术参数：这些参数由所有实例共享。 下面详细描述了其中一些参数。 本中列出的不同节点和参数 [部分](../../installation/using/the-server-configuration-file.md).
 * **config-`<instance>`.xml** (其中 **实例** 实例的名称)：实例的特定配置。 如果在多个实例之间共享服务器，请在相关文件中输入特定于每个实例的参数。
@@ -45,7 +46,7 @@ Campaign Classic配置文件存储在 **会议** Adobe Campaign安装文件夹�
 根据您的需求和配置配置配置或调整Campaign服务器。 您可以：
 
 * 保护 [内部标识符](#internal-identifier)
-* 启用 [营销活动进程](#enabling-processes)
+* 启用 [营销活动流程](#enabling-processes)
 * 配置 [URL权限](url-permissions.md)
 * 定义 [安全区域](security-zones.md)
 * 配置 [Tomcat设置](configure-tomcat.md)
@@ -58,14 +59,14 @@ Campaign Classic配置文件存储在 **会议** Adobe Campaign安装文件夹�
    * 限制上载文件格式
    * 启用对公共资源的访问
    * 配置代理连接
-* [自动重启进程](#automatic-process-restart)
+* [流程自动重新启动](#automatic-process-restart)
 
 
 ## 内部标识符 {#internal-identifier}
 
-此 **内部** 标识符是用于安装、管理和维护目的的技术登录。 此登录名未与实例关联。
+此 **内部** identifier是用于安装、管理和维护的技术登录。 此登录名未与实例关联。
 
-使用此登录名连接的操作员将拥有所有实例的所有权限。 如果进行新安装，此登录将没有密码。 您必须手动定义此密码。
+使用此登录进行连接的操作员将拥有所有实例的所有权限。 如果是新安装，此登录将没有密码。 您必须手动定义此密码。
 
 使用以下命令：
 
@@ -89,62 +90,62 @@ Confirmation: XXXX
 
 通过启用（和禁用）服务器上的Adobe Campaign进程 **config-default.xml** 和 **`config-<instance>.xml`** 文件。
 
-要将这些更改应用于这些文件，如果Adobe Campaign服务已启动，则必须运行 **nlserver配置 — reload** 命令。
+要将更改应用到这些文件，如果Adobe Campaign服务已启动，则必须运行 **nlserver配置 — reload** 命令。
 
 有两种类型的进程：多实例和单实例。
 
-* **多实例**：为所有实例启动一个进程。 以下情况就是如此 **Web**， **syslogd** 和 **trackinglogd** 流程。
+* **多实例**：为所有实例启动一个进程。 这就是 **Web**， **syslogd** 和 **trackinglogd** 进程。
 
-   可以从以下位置配置启用 **config-default.xml** 文件。
+  可以从以下位置配置启用 **config-default.xml** 文件。
 
-   声明Adobe Campaign服务器以访问客户端控制台并重定向（跟踪）：
+  声明Adobe Campaign服务器以访问客户端控制台并进行重定向（跟踪）：
 
-   ```
-   vi nl6/conf/config-default.xml
-   <web args="-tomcat" autoStart="true"/>  
-   <!-- to start if the machine is also a redirection server -->  
-   <trackinglogd autoStart="true"/>
-   ```
+  ```
+  vi nl6/conf/config-default.xml
+  <web args="-tomcat" autoStart="true"/>  
+  <!-- to start if the machine is also a redirection server -->  
+  <trackinglogd autoStart="true"/>
+  ```
 
-   在此示例中，使用编辑文件 **vi** 命令。 可以使用任何 **.txt** 或 **.xml** 编辑者。
+  在此示例中，使用编辑文件 **vi** 命令。 可以使用任何 **.txt** 或 **.xml** 编辑者。
 
 * **单实例**：为每个实例启动一个进程(模块： **mta**， **wfserver**， **inMail**， **短信** 和 **stat**)。
 
-   可使用实例的配置文件配置启用：
+  可使用实例的配置文件配置启用：
 
-   ```
-   config-<instance>.xml
-   ```
+  ```
+  config-<instance>.xml
+  ```
 
-   声明要交付的服务器，执行工作流实例并恢复退回邮件：
+  声明要交付的服务器，执行工作流实例并恢复退回邮件：
 
-   ```
-   <mta autoStart="true" statServerAddress="localhost"/>
-   <wfserver autoStart="true"/>  
-   <inMail autoStart="true"/>
-   <stat autoStart="true"/>
-   ```
+  ```
+  <mta autoStart="true" statServerAddress="localhost"/>
+  <wfserver autoStart="true"/>  
+  <inMail autoStart="true"/>
+  <stat autoStart="true"/>
+  ```
 
 **Campaign数据存储**
 
-您可以配置存储目录(**var** Adobe Campaign目录)（日志、下载、重定向等）。 要执行此操作，请使用 **XTK_VAR_DIR** 系统变量：
+您可以配置存储目录(**变量** Adobe Campaign目录)执行相同的更改（日志、下载、重定向等）。 要执行此操作，请使用 **XTK_VAR_DIR** 系统变量：
 
 * 在Windows中，在 **XTK_VAR_DIR** 系统变量
 
-   ```
-   D:\log\AdobeCampaign
-   ```
+  ```
+  D:\log\AdobeCampaign
+  ```
 
 * 在Linux中，转到 **customer.sh** 文件并指示： **export XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
-   有关更多信息，请参阅 [个性化参数](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+  有关详细信息，请参见 [个性化参数](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
 ## 动态页面安全和中继 {#dynamic-page-security-and-relays}
 
-默认情况下，所有动态页面都会自动与 **本地** 已启动Web模块的计算机的Tomcat服务器。 此配置输入于 **`<url>`** 的查询中继配置部分 **ServerConf.xml** 文件。
+默认情况下，所有动态页面都会自动与 **本地** 已启动Web模块的计算机的Tomcat服务器。 此配置输入于 **`<url>`** 的查询中继配置的部分 **ServerConf.xml** 文件。
 
-您可以在中继执行动态页面 **远程** 服务器；如果计算机上未激活Web模块。 要执行此操作，您必须将 **localhost** 包含JSP和JSSP、Web应用程序、报告和字符串的远程计算机的名称。
+您可以在中继页面上执行动态页面， **远程** 服务器；如果计算机上未激活Web模块。 为此，您必须将 **localhost** 远程计算机的名称，用于JSP和JSSP、Web应用程序、报告和字符串。
 
 有关各种可用参数的更多信息，请参阅 **serverConf.xml** 配置文件。
 
@@ -168,7 +169,7 @@ Adobe Campaign使用以下JSP页：
 
 **示例:**
 
-可以防止从外部进行客户端计算机连接。 要实现此目的，只需限制执行 **soaprouter.jsp** 并且仅授权执行镜像页面、病毒链接、网络表单和公共资源。
+可以防止从外部进行客户端计算机连接。 要实现此目的，只需限制执行 **soaprouter.jsp** 并且仅授权执行镜像页面、病毒链接、Web窗体和公共资源。
 
 参数如下：
 
@@ -186,21 +187,21 @@ Adobe Campaign使用以下JSP页：
 <url IPMask=""               deny="true" hostMask="" relayHost="false" relayPath="false" targetUrl="http://localhost:8080" timeout="" urlPath="*.jssp"/>
 ```
 
-在此示例中， **`<IP_addresses>`** 该值符合授权使用此掩码的中继模块的IP地址列表（以逗号分隔）。
+在此示例中， **`<IP_addresses>`** 值与授权使用此掩码的中继模块的IP地址列表（以逗号分隔）一致。
 
 >[!NOTE]
 >
->应根据您的配置和网络限制调整值，尤其是在已针对您的安装开发特定配置的情况下。
+>应根据您的配置和网络限制调整值，尤其是在已经为您的安装开发了特定配置的情况下。
 
 ### 管理HTTP标头 {#managing-http-headers}
 
-默认情况下，不会中继所有HTTP标头。 您可以在中继发送的回复中添加特定标头。 操作步骤：
+默认情况下，不会中继所有HTTP标头。 您可以在由中继发送的回复中添加特定标头。 操作步骤：
 
 1. 转到 **serverConf.xml** 文件。
-1. 在 **`<relay>`** 节点，转到已中继HTTP标头的列表。
+1. 在 **`<relay>`** 节点，转到中继HTTP标头的列表。
 1. 添加 **`<responseheader>`** 元素具有以下属性：
 
-   * **name**：标头名称
+   * **name**：标题名称
    * **值**：值名称。
 
    例如：
@@ -232,9 +233,9 @@ sh
 >
 >这份清单并非详尽无遗。
 
-在 **执行** 节点上，您需要引用之前在 **blacklistFile** 属性。
+在 **执行** 节点时，您需要在 **blacklistFile** 属性。
 
-**仅适用于Linux**：在服务器配置文件中，我们建议您指定专门用于执行外部命令的用户来增强安全配置。 此用户在 **执行** 配置文件的节点。 所有参数均可在 **serverConf.xml** 在此列出 [部分](../../installation/using/the-server-configuration-file.md).
+**仅适用于Linux**：在服务器配置文件中，建议您指定专门用于执行外部命令的用户来增强安全配置。 此用户在 **执行** 配置文件的节点。 中所有可用的参数，请参见 **serverConf.xml** 中列出 [部分](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >
@@ -252,18 +253,18 @@ sh
 
 >[!IMPORTANT]
 >
->您不应使用自定义sudo。 系统需要安装标准sudo。
+>您不应使用自定义sudo。 系统需要安装标准的sudo。
 
 
 ## 冗余跟踪 {#redundant-tracking}
 
-当使用多个服务器进行重定向时，它们必须能够通过SOAP调用相互通信，以便共享来自要重定向的URL的信息。 在投放启动时，可能并非所有重定向服务器都可用；因此，它们可能没有相同级别的信息。
+当使用多个服务器进行重定向时，它们必须能够通过SOAP调用相互通信，以便共享要重定向的URL中的信息。 在投放启动时，可能并非所有重定向服务器都可用；因此，它们可能没有相同级别的信息。
 
 >[!NOTE]
 >
->在使用标准或企业体系结构时，主应用程序服务器必须有权在每台计算机上上载跟踪信息。
+>在使用标准或企业体系结构时，必须授权主应用程序服务器在每台计算机上上载跟踪信息。
 
-必须在重定向配置中通过 **serverConf.xml** 文件。
+必须在重定向配置中通过指定冗余服务器的URL **serverConf.xml** 文件。
 
 **示例:**
 
@@ -272,21 +273,21 @@ sh
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-此 **enableIf** 属性是可选的（默认情况下为空），仅允许您在结果为true时启用连接。 这使您可以在所有的重定向服务器上获得相同的配置。
+此 **enableIf** 属性是可选的（默认情况下为空），并且仅在结果为true时才允许您启用连接。 这使您可以在所有的重定向服务器上获得相同的配置。
 
 要获取计算机的主机名，请运行以下命令： **主机名 — s**.
 
 
 
-## 高可用性工作流和相似性 {#high-availability-workflows-and-affinities}
+## 高可用性工作流和任务共用性 {#high-availability-workflows-and-affinities}
 
 您可以配置多个工作流服务器(wfserver)并在两台或多台计算机上分发它们。 如果选择此类型的体系结构，请根据Adobe Campaign访问配置负载平衡器的连接模式。
 
 要从Web访问，请选择 **负载平衡器** 模式以限制连接时间。
 
-如果通过Adobe Campaign控制台访问，请选择 **哈希** 或 **粘性ip** 模式。 这样可维护富客户端与服务器之间的连接，并防止用户会话在导入或导出操作期间中断。
+如果通过Adobe Campaign控制台访问，请选择 **哈希** 或 **粘性ip** 模式。 这可以让您维护富客户端与服务器之间的连接，并防止用户会话在导入或导出操作期间中断，例如。
 
-您可以选择在特定计算机上强制执行工作流或工作流活动。 要实现此目的，您必须为相关工作流或活动定义一个或多个相关性。
+您可以选择在特定计算机上强制执行工作流或工作流活动。 要实现此目的，您必须为相关工作流或活动定义一个或多个任务共用性。
 
 1. 通过在以下位置输入工作流或活动的任务共用性： **[!UICONTROL Affinity]** 字段。
 
@@ -296,7 +297,7 @@ sh
 
    ![](assets/s_ncs_install_server_wf_affinity02.png)
 
-   下拉列表包含以前使用的相关性。 它会随着时间使用不同的输入值完成。
+   下拉列表包含以前使用的任务共用性。 它会随着时间的推移使用不同的输入值完成。
 
 1. 打开 **nl6/conf/config-`<instance>.xml`** 文件。
 1. 修改与 **[!UICONTROL wfserver]** 模块如下所示：
@@ -313,7 +314,7 @@ sh
 
    执行未定义关联的工作流时，关联名称后面的逗号是必需的。
 
-   如果您希望仅执行定义了关联的工作流，请不要在关联列表的末尾添加逗号。 例如，按如下方式修改该行：
+   如果您希望仅执行为其定义了关联的工作流，请不要在关联列表的末尾添加逗号。 例如，按如下方式修改该行：
 
    ```
    <wfserver autoStart="true" affinity="XXX"/>
@@ -321,7 +322,7 @@ sh
 
 ## 自动重新启动 {#automatic-process-restart}
 
-默认情况下，不同的Adobe Campaign进程每天早上6点（服务器时间）自动重新启动。
+默认情况下，不同的Adobe Campaign进程会在每天早上6点（服务器时间）自动重新启动。
 
 但是，您可以更改此配置。
 

@@ -2,14 +2,15 @@
 product: campaign
 title: 跟踪的 URL 签名问题
 description: 跟踪的 URL 签名问题
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Technote
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 35%
+source-wordcount: '358'
+ht-degree: 34%
 
 ---
 
@@ -19,22 +20,22 @@ ht-degree: 35%
 
 在最近的更改后，如果URL签名在Campaign中处于活动状态，则跟踪的URL可能会失败。 某些邮箱可能比其他邮箱受到的影响更大，因为某些公司具有特定的安全工具，这些工具可能会影响链接并更改 URL 签名机制。
 
-因此，Adobe建议您禁用跟踪链接的签名机制。 此过程修复了旧的跟踪链接，但通过双重转义收到的跟踪链接除外。
+因此，Adobe建议您禁用跟踪链接的签名机制。 此过程修复了旧的跟踪链接，但以双重转义收到的跟踪链接除外。
 
 请注意，退订链接可能会像任何其他链接一样失效，其频率在不同主机上是可变的，但小于 1%。
 
 **您是否受影响？**
 
-为了提高安全性，引入了电子邮件中跟踪链接的签名机制。 [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - 2020年4月 — 默认情况下为从Build 19.1.4 (9032@3a9dc9c)和Campaign 20.2开始的所有客户启用和。
+为了提高安全性，中引入了用于跟踪电子邮件中链接的签名机制。 [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - 2020年4月 — 默认情况下为从Build 19.1.4 (9032@3a9dc9c)和Campaign 20.2开始的所有客户启用和。
 
-如果您的环境使用以下列出的某个版本运行，则可能会受到影响：
+如果您的环境在下面列出的某个版本上运行，则可能会受到影响：
 
 * Gold Standard 8至11。 [了解详情](../../rn/using/gold-standard.md#gs-8)
 * Campaign 21.1.1（内部版本9277）到21.1.2（内部版本9282）版本。 [了解详情](../../rn/using/latest-release.md)
 * Campaign 20.3.1（内部版本9228）到20.3.3（内部版本9234）版本。
 * Campaign 20.2.1（内部版本9178）到20.2.4（内部版本9187）版本。
 * Campaign 20.1.1（内部版本9122）到21.1.3（内部版本9124）版本。
-* Campaign 19.2.2（内部版本9080）到19.2.3（内部版本9081）的版本。
+* Campaign 19.2.2（内部版本9080）到19.2.3（内部版本9081）版本。
 * Campaign 19.1.5（内部版本9033）到19.1.7（内部版本9036）版本。
 
 
@@ -42,11 +43,11 @@ ht-degree: 35%
 
 **如何更新？**
 
-As a **托管客户**，Adobe将很快与您合作以更新您的配置。
+作为 **托管客户**，Adobe将很快与您合作以更新您的配置。
 
 作为 **内部部署/混合部署客户**，您需要更新配置。
 
-执行以下步骤：
+请按照以下步骤操作：
 
 1. 在 [服务器配置文件](../../installation/using/the-server-configuration-file.md) (serverConf.xml)，更改 **signEmailLinks** 到 **false**.
 1. 重新启动 **nlserver** 服务。

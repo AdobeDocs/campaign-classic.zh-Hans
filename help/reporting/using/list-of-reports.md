@@ -2,12 +2,12 @@
 product: campaign
 title: 报告列表
 description: 报告列表
-badge: label="v7" type="信息性" tooltip="仅适用于Campaign Classicv7"
-feature: Reporting
+badge: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1014'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 ## 投放报告 {#reports-on-deliveries}
 
-下表列出了Adobe Campaign提供的内置报告。
+下表显示了Adobe Campaign提供的内置报告。
 
 有关这些报告内容的更多信息，请参阅 [本节](../../reporting/using/delivery-reports.md).
 
@@ -31,7 +31,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 用户活动(recipientActivity)<br /> </td> 
-   <td> 按时段划分的打开、点击和交易。<br /> </td> 
+   <td> 按时间段的打开、点击和交易细分。<br /> </td> 
    <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -56,11 +56,11 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 浏览器(browserStatistics)<br /> </td> 
-   <td> 有关单击了消息的收件人使用的浏览器的统计信息。<br /> </td> 
+   <td> 有关收件人点击消息后使用的浏览器的统计信息。<br /> </td> 
    <td> xtk：none<br /> </td> 
   </tr> 
   <tr> 
-   <td> 分享到社交网络(deliveryForward)<br /> </td> 
+   <td> 共享到社交网络(deliveryForward)<br /> </td> 
    <td> 共享活动和邮件打开统计信息。<br /> </td> 
    <td> nms：delivery<br /> </td> 
   </tr> 
@@ -71,11 +71,11 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 假设验证报表(deliveryHypothesis)<br /> </td> 
-   <td> 显示投放假设的度量摘要。<br /> </td> 
+   <td> 显示投放假设验证的度量摘要。<br /> </td> 
    <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 投放统计数据(statisticsPerDelivery)<br /> </td> 
+   <td> 投放统计信息(statisticsPerDelivery)<br /> </td> 
    <td> 每个电子邮件域的统计数据（已处理消息、已投放消息、硬退回、软退回、点击次数、退订）。<br /> </td> 
    <td> nms：delivery<br /> </td> 
   </tr> 
@@ -91,17 +91,17 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 投放摘要(deliverySending)<br /> </td> 
-   <td> 投放指标摘要：目标、排除项和发送的消息。<br /> </td> 
+   <td> 投放指标摘要：目标、排除项和已发送消息。<br /> </td> 
    <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> 投放摘要(deliveryStatistics)<br /> </td> 
-   <td> 所选投放的概要表：目标、排除项和发送的消息。<br /> </td> 
+   <td> 所选投放的摘要表：目标、排除项和发送的消息。<br /> </td> 
    <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> 操作系统(osStatistics)<br /> </td> 
-   <td> 点击了消息的收件人使用的操作系统的统计信息。<br /> </td> 
+   <td> 点击消息的收件人使用的操作系统的统计信息。<br /> </td> 
    <td> xtk：none<br /> </td> 
   </tr> 
   <tr> 
@@ -111,7 +111,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> URL和点击吞吐量(topUrlDelivery)<br /> </td> 
-   <td> 大多数被动URL和关联的点击流。<br /> </td> 
+   <td> 大多数反应URL和相关联的点击流。<br /> </td> 
    <td> nms：delivery<br /> </td> 
   </tr> 
  </tbody> 
@@ -119,9 +119,9 @@ ht-degree: 2%
 
 ## 营销活动报表 {#reports-on-campaigns}
 
-有关活动的报告涉及 **nms：operation** 表格。
+有关营销活动的报表涉及 **nms：operation** 表格。
 
-下表列出了Adobe Campaign提供的内置报告。
+下表显示了Adobe Campaign提供的内置报告。
 
 有关这些报告内容的更多信息，请参阅 [本节](../../campaign/using/designing-marketing-campaigns.md).
 
@@ -133,27 +133,27 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 用户活动(operationRecipientActivity)<br /> </td> 
-   <td> 按时段划分的打开、点击和交易，具体取决于促销活动。<br /> </td> 
+   <td> 按时段划分的打开、点击和交易，取决于Campaign。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 投放吞吐量(operationThroughput)<br /> </td> 
-   <td> 以邮件/小时和Mb/s表示的投放吞吐量图表取决于Campaign。<br /> </td> 
+   <td> 投放吞吐量（操作吞吐量）<br /> </td> 
+   <td> 以邮件/小时和Mbits/s表示的投放吞吐量图表取决于Campaign。<br /> </td> 
   </tr> 
   <tr> 
    <td> 营销活动费用(budgetOperationExpenses)<br /> </td> 
-   <td> 根据促销活动，详细显示促销活动行项目。<br /> </td> 
+   <td> 显示详细的促销活动行项目，具体取决于促销活动。<br /> </td> 
   </tr> 
   <tr> 
    <td> 失败和退回(operationErrors)<br /> </td> 
-   <td> 退回和无法投放（按原因和域）取决于Campaign。<br /> </td> 
+   <td> 退回和无法投放项按原因和域分类，具体取决于Campaign。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 浏览成本行(budgetExplorerOperation)<br /> </td> 
+   <td> 探索成本行(budgetExplorerOperation)<br /> </td> 
    <td> 成本行的描述性分析，取决于MRM。<br /> </td> 
   </tr> 
   <tr> 
    <td> 跟踪指标(operationFeedback)<br /> </td> 
-   <td> 关键跟踪指标：打开数、点击数和事务处理数概览取决于促销活动。<br /> </td> 
+   <td> 关键跟踪指标概览：打开数、点击数和事务处理数取决于促销活动。<br /> </td> 
   </tr> 
   <tr> 
    <td> 共享到社交网络(operationForward)<br /> </td> 
@@ -161,19 +161,19 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 假设验证报表(operationHypothesis)<br /> </td> 
-   <td> 显示促销活动投放的假设验证测量摘要，具体取决于Campaign。<br /> </td> 
+   <td> 显示Campaign投放的假设验证测量摘要，具体取决于Campaign。<br /> </td> 
   </tr> 
   <tr> 
    <td> 共享活动统计数据(forwardActivityOpt)<br /> </td> 
-   <td> 根据Campaign对各个时段的共享活动、打开次数和订阅次数进行分析。<br /> </td> 
+   <td> 根据Campaign分析每个时段的共享活动、打开次数和订阅。<br /> </td> 
   </tr> 
   <tr> 
    <td> 投放摘要(operationStatistics)<br /> </td> 
-   <td> 营销活动投放的摘要图表：目标、排除项和已发送消息。<br /> </td> 
+   <td> 活动投放的摘要图表：目标、排除项和已发送消息。<br /> </td> 
   </tr> 
   <tr> 
    <td> URL和点击吞吐量(operationTopUrlDelivery)<br /> </td> 
-   <td> 大多数被动URL和相关联的点击流取决于Campaign。<br /> </td> 
+   <td> 大多数被反应的URL和相关联的点击流取决于Campaign。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -182,7 +182,7 @@ ht-degree: 2%
 
 关于服务的报告涉及 **nms：service** 表格。
 
-下表列出了Adobe Campaign提供的内置报告。
+下表显示了Adobe Campaign提供的内置报告。
 
 有关这些报告内容的更多信息，请参阅相关指南。
 
@@ -194,7 +194,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 粉丝收购(socialAcquisitionsByWebapp)<br /> </td> 
-   <td> 哪些Web应用程序使潜在客户能够进行收购？ 依赖社交营销加载项。<br /> </td> 
+   <td> 哪些Web应用程序支持了潜在客户收购？ 依赖社交营销加载项。<br /> </td> 
   </tr> 
   <tr> 
    <td> 订阅细分(mobileAppDistribution)<br /> </td> 
@@ -210,14 +210,14 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 反应率(mobileAppReactivityRate)<br /> </td> 
-   <td> 最新投放的反应率取决于移动设备应用程序渠道加载项。<br /> </td> 
+   <td> 最新投放的反应率取决于移动应用程序渠道加载项。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 预算报表 {#budget-reports}
 
-下表列出了Adobe Campaign提供的内置报告。
+下表显示了Adobe Campaign提供的内置报告。
 
 有关这些报告内容的更多信息，请参阅 [本节](../../campaign/using/designing-marketing-campaigns.md).
 
@@ -235,7 +235,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 预算演变(budgetEvolution)<br /> </td> 
-   <td> 按承付水平分列的预算费用演变。<br /> </td> 
+   <td> 按承付款额分列的预算费用的变化。<br /> </td> 
    <td> nms：budget<br /> </td> 
   </tr> 
   <tr> 
@@ -259,7 +259,7 @@ ht-degree: 2%
    <td> nms：plan<br /> </td> 
   </tr> 
   <tr> 
-   <td> 浏览成本行(budgetExplorerProgram)<br /> </td> 
+   <td> 探索成本行(budgetExplorerProgram)<br /> </td> 
    <td> 成本行的描述性分析。<br /> </td> 
    <td> nms：program<br /> </td> 
   </tr> 
@@ -275,7 +275,7 @@ ht-degree: 2%
 
 模拟报表涉及 **nms：simulation** 表格。
 
-下表列出了Adobe Campaign提供的内置报告。
+下表显示了Adobe Campaign提供的内置报告。
 
 有关这些报告内容的更多信息，请参阅相关指南。
 
@@ -287,22 +287,22 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 模拟排除的详细信息(dlvSimuLossDetail)<br /> </td> 
-   <td> 所有排除原因的详细表。<br /> </td> 
+   <td> 所有排除原因的详细表格。<br /> </td> 
   </tr> 
   <tr> 
    <td> 按排名划分优惠(offerSimulationRanking)<br /> </td> 
-   <td> 模拟中按排名划分的优惠细分。<br /> </td> 
+   <td> 模拟中按排名划分的优惠。<br /> </td> 
   </tr> 
   <tr> 
    <td> 模拟摘要(dlvSimuLossSummary)<br /> </td> 
    <td> 模拟数量和排除项摘要。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 重叠统计(dlvSimuOverlaying)<br /> </td> 
+   <td> 重叠统计(dlvSimuOverling)<br /> </td> 
    <td> 投放目标重叠量。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 模拟排除的摘要(dlvSimuLossSimu)<br /> </td> 
+   <td> 模拟排除项摘要(dlvSimuLossSimu)<br /> </td> 
    <td> 模拟导致的排除列表。<br /> </td> 
   </tr> 
  </tbody> 
@@ -310,9 +310,9 @@ ht-degree: 2%
 
 ## Web应用程序报表 {#reports-on-web-applications}
 
-有关Web应用程序的报告涉及 **nms：WebApp** 表格。
+关于Web应用程序的报告涉及 **nms：WebApp** 表格。
 
-下表列出了Adobe Campaign提供的内置报告。
+下表显示了Adobe Campaign提供的内置报告。
 
 有关这些报告内容的更多信息，请参阅 [本节](../../web/using/about-web-applications.md).
 
@@ -324,7 +324,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 文档（调查词典）<br /> </td> 
-   <td> 调查结构的描述，具体取决于Survey Manager加载项。<br /> </td> 
+   <td> 调查结构的描述，取决于Survey Manager加载项。<br /> </td> 
   </tr> 
   <tr> 
    <td> 主要(surveyProperties)<br /> </td> 
@@ -332,14 +332,14 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 回复的细目(surveyDistribution)<br /> </td> 
-   <td> 问题回复的明细。<br /> </td> 
+   <td> 对问题的回复的细分。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 其他ootb报告 {#other-ootb-reports}
 
-此外，还内置提供了以下报告。 有关更多信息，请参阅有关其相关功能的文档。
+内置提供了以下报告。 有关更多信息，请参阅有关其相关功能的文档。
 
 <table> 
  <tbody> 
@@ -350,7 +350,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 优惠分析(offerAnalysis)<br /> </td> 
-   <td> 按日期和渠道进行优惠分析，具体取决于交互加载项。<br /> </td> 
+   <td> 每个日期和渠道的优惠分析，取决于交互加载项。<br /> </td> 
    <td> nms：offer<br /> </td> 
   </tr> 
   <tr> 
@@ -359,8 +359,8 @@ ht-degree: 2%
    <td> nms：webEvent<br /> </td> 
   </tr> 
   <tr> 
-   <td> Social潜在客户获取的历史(socialVisitorStatistics)<br /> </td> 
-   <td> twitter和Facebook潜在客户收购的历史记录取决于Social营销附加产品。<br /> </td> 
+   <td> 社交潜在客户获取的历史(socialVisitorStatistics)<br /> </td> 
+   <td> twitter和Facebook潜在客户收购的历史取决于Social营销附加产品。<br /> </td> 
    <td> nms：visitor<br /> </td> 
   </tr> 
   <tr> 

@@ -2,16 +2,17 @@
 product: campaign
 title: 连接失败
 description: 连接失败
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 4%
+source-wordcount: '399'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 4%
 
 
 
-连接问题的原因可能有多种，并且取决于不同的上下文。
+连接问题的原因可能多种多样，并且取决于不同的上下文。
 
 您可以尝试以下测试，如果连接失败仍然存在，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
@@ -28,14 +29,14 @@ ht-degree: 4%
 <table> 
 <thead> 
 <tr> 
-<th>检查<br /> </th> 
+<th>支票<br /> </th> 
 <th>解决方法<br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td>您是否可以从计算机访问Internet？</td> 
-<td>检查是否可以连接到Internet上的网站（例如）。 如果无法连接，则问题出现在您的计算机上。 请联系您的系统管理员。</td>
+<td>您是否可从计算机访问Internet？</td> 
+<td>检查您是否可以连接到Internet上的网站（例如）。 如果无法连接，则问题出现在您的计算机上。 请与系统管理员联系。</td>
 </tr>
 <tr> 
 <td>能否通过其他服务连接到托管Adobe Campaign的服务器？</td> 
@@ -43,7 +44,7 @@ ht-degree: 4%
 </tr>
 <tr> 
 <td>Web服务器是否响应？</td> 
-<td>使用Web浏览器连接到Adobe Campaign服务器访问URL： <b>http(s)：// &lt;urlserver&gt;</b>. 如果不响应，则计算机上的Web服务器将停止。 请与主机公司的系统管理员联系以重新启动服务。</td>
+<td>使用Web浏览器连接到Adobe Campaign服务器访问URL： <b>http(s)：// &lt;urlserver&gt;</b>. 如果不响应，则计算机上的Web服务器将停止。 请与主机公司的系统管理员联系以重新启动该服务。</td>
 </tr>
 <tr> 
 <td>Adobe Campaign是否已正确集成？</td> 
@@ -52,11 +53,11 @@ ht-degree: 4%
 </tr>
 <tr> 
 <td>连接到以下URL： <b>http(s)：//&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
-<td>如果您收到Tomcat Java错误，请检查JAVA集成是否正确执行。 它集成在文件[应用程序路径]/nl6/customer.sh中</td>
+<td>如果您收到Tomcat Java错误，请检查是否正确执行JAVA集成。 它集成在文件[应用程序路径]/nl6/customer.sh中</td>
 </tr>
 <tr> 
 <td>连接到以下URL： <b>http(s)：//&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
-<td>如果获得空白页，请检查Adobe Campaign Web模块是否已启动。 命令nlserver pdump应返回DD/MM/YYYY的Application server for Adobe Campaign Classic (7.X YY.R内部版本XXX@SHA1)。 如果没有，请使用命令nlserver start web重新启动模块</td>
+<td>如果获得空白页面，请检查Adobe Campaign Web模块是否已启动。 命令nlserver pdump应返回DD/MM/YYYY的Adobe Campaign Classic Application Server (7.X YY.R内部版本XXX@SHA1)。 如果不能，请使用命令nlserver start web重新启动模块</td>
 </tr>
 <tr>
 <td>检查安全区域的常规配置。</td>

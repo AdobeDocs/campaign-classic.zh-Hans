@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Campaign本地、混合和托管功能矩阵
-description: 了解托管部署和内部部署之间的主要区别
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: 了解托管部署和内部部署之间的主要差异
+feature: Installation, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '300'
 ht-degree: 28%
 
 ---
@@ -15,9 +16,9 @@ ht-degree: 28%
 
 
 
-Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性及其使用方式取决于安装的部署类型。 本文详细介绍了完全托管(Managed Services)部署与内部部署之间在某些功能上存在的主要差异。
+Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性及其使用取决于安装的部署类型。 本文详细介绍了完全托管(Managed Services)部署与内部部署之间在某些功能上存在的主要差异。
 
-本页显示了托管(Managed Services)部署与内部部署之间的主要区别。 混合部署的特定性取决于Adobe托管并在您的内部部署中托管的元素。
+本页显示托管(Managed Services)部署与内部部署之间的主要差异。 混合部署的具体情况取决于Adobe托管并在您的场所中托管的元素。
 
 介绍了不同的托管模型 [在此部分中](../../installation/using/hosting-models.md).
 
@@ -46,6 +47,7 @@ Adobe Campaign提供 **联合数据访问** (FDA)选项，用于处理存储在�
 >[!CAUTION]
 >
 >兼容的外部数据库系统取决于您的托管模型。 了解详情，请参阅 [Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md).
+>
 
 **另请参阅**
 

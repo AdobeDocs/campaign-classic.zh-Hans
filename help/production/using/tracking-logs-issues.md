@@ -2,14 +2,15 @@
 product: campaign
 title: 跟踪日志问题
 description: 跟踪日志问题
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 58656aa1-aa95-451f-80b8-9e2d28223056
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '69'
+source-wordcount: '76'
 ht-degree: 13%
 
 ---
@@ -22,14 +23,14 @@ ht-degree: 13%
 
 * **是否**&#x200B;跟踪&#x200B;**工作流有错误？**
 
-   请参阅 [监控技术工作流](../../workflow/using/monitoring-technical-workflows.md).
+  请参阅 [监控技术工作流](../../workflow/using/monitoring-technical-workflows.md).
 
-   ![](assets/tracking_scheduled_task.png)
+  ![](assets/tracking_scheduled_task.png)
 
-* **是模块** trackinglogd **是否在服务器上运行？**
+* **是模块** trackinglogd **在服务器上运行？**
 
-   请参阅 [日志文件](../../production/using/log-files.md).
+  请参阅 [日志文件](../../production/using/log-files.md).
 
 * **是否进行了更改？**
 
-   它们可能会触发与使用跟踪别名的服务器的连接丢失。
+  它们可能会触发使用跟踪别名断开与服务器的连接。

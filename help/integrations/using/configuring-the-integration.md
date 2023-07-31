@@ -2,15 +2,16 @@
 product: campaign
 title: 配置Adobe Experience Manager集成
 description: 了解如何配置Campaign-AEM集成
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Experience Manager Integration
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 3%
+source-wordcount: '540'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 3%
 
 ## Adobe Campaign中的配置步骤 {#configuring-in-adobe-campaign}
 
-要同时使用这两种解决方案，您必须将它们配置为相互连接。
+要同时使用这两种解决方案，必须将其配置为相互连接。
 
 执行以下步骤，在Adobe Campaign中启动配置：
 
@@ -34,7 +35,7 @@ ht-degree: 3%
 
 您首先需要安装 **[!UICONTROL AEM integration]** 包。
 
-1. 从您的Adobe Campaign实例中，选择 **[!UICONTROL Tools]** 从上方工具栏中。
+1. 从Adobe Campaign实例中，选择 **[!UICONTROL Tools]** 工具栏中的。
 1. 选择 **[!UICONTROL Tools > Advanced > Import package...]**。
 
    ![](assets/aem_config_1.png)
@@ -46,26 +47,26 @@ ht-degree: 3%
 
 1. 在下一个窗口中，单击 **[!UICONTROL Start]** 按钮以开始安装包。 安装完成后，请关闭该窗口。
 
-### 为AEM操作员配置安全区域 {#configure-the-security-zone-for-aem-operator}
+### 为AEM运算符配置安全区域 {#configure-the-security-zone-for-aem-operator}
 
 此 **[!UICONTROL AEM integration]** 包设置 **[!UICONTROL aemserver]** 运算符。 此运算符用于将Adobe Experience Manager服务器连接到Adobe Campaign。
 
-您需要为此操作员配置一个安全区域，以便通过Adobe Experience Manager连接到Adobe Campaign。
+您需要为此操作员配置一个安全区域，以通过Adobe Experience Manager连接到Adobe Campaign。
 
 >[!CAUTION]
 >
->我们强烈建议创建一个专用于AEM的安全区域，以避免任何安全问题。 有关更多信息，请参阅安装 [指南](../../installation/using/security-zones.md).
+>我们强烈建议创建专用于AEM的安全区域，以避免任何安全问题。 有关详细信息，请参见安装 [指南](../../installation/using/security-zones.md).
 
-如果您的Campaign实例由Adobe托管，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 团队。 如果您使用的是内部部署Campaign，请执行以下步骤：
+如果您的Campaign实例由Adobe托管，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 团队。 如果您使用的是内部部署Campaign，请按照以下步骤操作：
 
 1. 打开 **serverConf.xml** 配置文件。
-1. 访问 **allowUserPassword** 安全区域的属性，并将其设置为 **true**.
+1. 访问 **allowUserPassword** 选定的安全区域的属性，并将其设置为 **true**.
 
    这将允许Adobe Experience Manager通过登录/密码连接Adobe Campaign。
 
 ### 配置外部帐户 {#configure-the-external-account}
 
-此 **[!UICONTROL AEM integration]** 包已为Adobe Experience Cloud创建外部帐户。 您现在需要将其配置为与Adobe Experience Manager实例连接。
+此 **[!UICONTROL AEM integration]** 包已创建Adobe Experience Cloud的外部帐户。 您现在需要将其配置为与您的Adobe Experience Manager实例连接。
 
 要配置AEM外部帐户，请执行以下步骤：
 
@@ -83,7 +84,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >确保您的 **[!UICONTROL Server]** 地址未以尾随斜杠结尾。
+   >确保您的 **[!UICONTROL Server]** 地址不以尾随斜杠结尾。
 
    ![](assets/aem_config_4.png)
 

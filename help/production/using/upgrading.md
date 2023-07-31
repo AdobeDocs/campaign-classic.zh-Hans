@@ -2,16 +2,17 @@
 product: campaign
 title: 升级到新内部版本
 description: 了解升级到新内部版本的技术步骤
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 3%
+source-wordcount: '1170'
+ht-degree: 4%
 
 ---
 
@@ -25,9 +26,8 @@ ht-degree: 3%
 >
 >* Adobe强烈建议在更新之前对每个实例进行数据库备份。 有关更多信息，请参见[此章节](../../production/using/backup.md)。
 >* 要执行升级，请确保您有权访问实例和日志。
->* 已阅读 [本节](../../installation/using/general-architecture.md) 和 [内部版本升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html) 章节开始之前。
+>* 读取 [本节](../../installation/using/general-architecture.md) 和 [内部版本升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html) 章节开始之前。
 >
-
 
 ## Windows {#in-windows}
 
@@ -48,12 +48,13 @@ ht-degree: 3%
 
    * Web服务(IIS)：
 
-      **iisreset /stop**
+     **iisreset /stop**
 
    * Adobe Campaign服务： **网络停止nlserver6**
+
    >[!IMPORTANT]
    >
-   >您还需要确保重定向服务器(webmdl)已停止，以便 **nlsrvmod.dll** IIS使用的文件可以用新版本替换。
+   >您还需要确保重定向服务器(webmdl)已停止，以便 **nlsrvmod.dll** IIS使用的文件可以使用新版本替换。
 
 1. 通过运行 **nlserver pdump** 命令。 应出现以下内容：
 
@@ -71,7 +72,7 @@ ht-degree: 3%
 
 1. 运行 **setup.exe**.
 
-   要下载此文件，请连接到 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 使用您的用户凭据。 在中了解有关Software Distribution的更多信息 [此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans).
+   要下载此文件，请连接到 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 使用您的用户凭据。 在中了解有关软件分发的更多信息 [此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans).
 
 1. 选择安装模式：选择 **[!UICONTROL Update or repair]**
 1. 单击 **[!UICONTROL Next]**。
@@ -95,9 +96,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->此操作只应执行一次，并且只应在(**nlserver web**)应用程序服务器。
+>此操作只应执行一次，并且仅在(**nlserver web**)应用程序服务器。
 
-然后检查同步是否生成了错误或警告。 有关更多信息，请参阅 [解决升级冲突](#resolving-upgrade-conflicts).
+然后检查同步是否生成了错误或警告。 有关详细信息，请参见 [解决升级冲突](#resolving-upgrade-conflicts).
 
 ### 重新启动服务 {#restart-services}
 
@@ -105,13 +106,13 @@ ht-degree: 3%
 
 * Web服务(IIS)：
 
-   **iisreset /start**
+  **iisreset /start**
 
 * Adobe Campaign服务： **网络启动nlserver6**
 
 ## Linux {#in-linux}
 
-在Linux环境中，请按照以下步骤将Adobe Campaign更新为新内部版本：
+在Linux环境中，执行以下步骤以将Adobe Campaign更新到新内部版本：
 
 * [下载更新的包](#obtain-updated-packages)，
 * [执行更新](#perform-an-update)，
@@ -125,7 +126,7 @@ ht-degree: 3%
 
 ### 获取更新的包 {#obtain-updated-packages}
 
-首先恢复Adobe Campaign的两个更新包：连接到 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 使用您的用户凭据。 在中了解有关Software Distribution的更多信息 [此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans).
+首先恢复Adobe Campaign的两个更新包：连接到 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 使用您的用户凭据。 在中了解有关软件分发的更多信息 [此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans).
 
 文件为 **nlserver6-v7-XXX.rpm**
 
@@ -133,31 +134,31 @@ ht-degree: 3%
 
 * 基于RPM的分发(RedHat、SuSe)
 
-   要安装它们，请以root身份执行：
+  要安装它们，请以root身份执行：
 
-   ```
-   $rpm -Uvh nlserver6-v7-XXXX.rpm
-   ```
+  ```
+  $rpm -Uvh nlserver6-v7-XXXX.rpm
+  ```
 
-   其中XXX是文件的版本。
+  其中XXX是文件的版本。
 
-   rpm文件依赖于可在CentOS/Red Hat分发中找到的软件包。 如果不想使用其中的某些依赖关系，则可能必须使用rpm的“nodeps”选项：
+  rpm文件依赖于可在CentOS/Red Hat分发中找到的软件包。 如果不想使用某些依赖关系，则可能需要使用rpm的“nodeps”选项：
 
-   ```
-   rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
-   ```
+  ```
+  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+  ```
 
 * 基于DEB的分发(Debian)
 
-   要安装它们，请以root身份执行：
+  要安装它们，请以root身份执行：
 
-   ```
-   dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
-   ```
+  ```
+  dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+  ```
 
 >[!NOTE]
 >
->有关完整安装过程的详情，请参见 [本节](../../installation/using/installing-campaign-standard-packages.md). 资源会自动同步，但您需要确保没有发生错误。 有关更多信息，请参阅 [解决升级冲突](#resolving-upgrade-conflicts).
+>有关完整安装过程的详情，请参见 [本节](../../installation/using/installing-campaign-standard-packages.md). 资源会自动同步，但您需要确保没有发生错误。 有关详细信息，请参见 [解决升级冲突](#resolving-upgrade-conflicts).
 
 ### 重新启动Web服务器 {#reboot-the-web-server}
 
@@ -172,11 +173,9 @@ ht-degree: 3%
 >[!IMPORTANT]
 >
 >* 您的脚本可能会被调用 **httpd** 而不是 **apache**.
->* 在获得以下回复之前，必须执行此命令：
-
-   >
-   >   Apache必须执行此操作，才能应用新库。
-
+>* 必须执行此命令，直到获得以下回复为止：
+>
+>   Apache需要此操作才能应用新库。
 
 然后重新启动Apache：
 
@@ -186,30 +185,30 @@ ht-degree: 3%
 
 ## 解决升级冲突 {#resolving-upgrade-conflicts}
 
-在资源同步过程中， **升级后** 命令使您可以检测同步是否产生了错误或警告。
+在资源同步过程中， **升级后** 命令可以检测同步是否生成了错误或警告。
 
 ### 查看同步结果 {#view-the-synchronization-result}
 
 查看同步结果的方法有两种：
 
-* 在命令行界面中，错误通过三个V形符号实现 **>>>** 和同步会自动停止。 警告以双V形标示 **>>** 同步完成后必须解析和。 升级后结束时，命令提示符中会显示摘要。 它看起来可能像这样：
+* 在命令行界面中，错误以三个V形符号具体化 **>>>** 并且同步会自动停止。 警告以双V形标记具体化 **>>** 同步完成后必须解析和。 升级后结束时，命令提示符中会显示摘要。 它看上去可能如下所示：
 
-   ```
-   2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
-   2013-04-09 07:48:39.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
-   2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
-   ```
+  ```
+  2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
+  2013-04-09 07:48:39.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
+  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
+  ```
 
-   如果警告与资源冲突有关，则需要用户注意才能解决该问题。
+  如果警告与资源冲突有关，则需要用户注意才能解决该问题。
 
-* 此 **postupgrade_`<server version number>_<time of postupgrade>`.log** 日志文件包含同步结果。 默认情况下，它位于以下目录中： **`<installation directory>/var/<instance/postupgrade`**. 错误和警告属性表示错误和警告。
+* 此 **升级后_`<server version number>_<time of postupgrade>`.log** 日志文件包含同步结果。 默认情况下，它位于以下目录中： **`<installation directory>/var/<instance/postupgrade`**. 错误和警告属性表示错误和警告。
 
 ### 解决冲突 {#resolving-conflicts}
 
-要解决冲突，请应用以下进程：
+要解决冲突，请应用以下流程：
 
 1. 在Adobe Campaign树中，转到 **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
 1. 在列表中选择要解决的冲突。
@@ -217,20 +216,20 @@ ht-degree: 3%
 解决冲突的方法有三种：
 
 * **[!UICONTROL Declare as resolved]** ：需要用户提前干预。
-* **[!UICONTROL Accept the new version]** ：如果用户未更改Adobe Campaign提供的资源，则建议使用。
+* **[!UICONTROL Accept the new version]** ：如果用户未更改随Adobe Campaign提供的资源，则建议这样做。
 * **[!UICONTROL Keep the current version]** ：表示更新被拒绝。
 
-   >[!IMPORTANT]
-   >
-   >如果选择此解决模式，则可能无法受益于新版本中的更正。
+  >[!IMPORTANT]
+  >
+  >如果选择此解决模式，您可能无法受益于新版本中的更正。
 
 如果您选择手动解决冲突，请按以下步骤操作：
 
-1. 在窗口的下半部分，搜索 **_冲突_** 用于查找有冲突的实体的字符串。 使用新版本安装的实体包含 **新** 参数，则与先前版本匹配的实体包含 **cus** 参数。
+1. 在窗口的下部，搜索 **_冲突_** 用于查找存在冲突的实体的字符串。 使用新版本安装的实体包含 **新建** 参数，与先前版本匹配的实体包含 **cus** 参数。
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. 删除您不想保留的版本。 删除 **_conflict_argument_** 所保留实体的字符串。
+1. 删除您不想保留的版本。 删除 **_conflict_argument_** 要保留的实体的字符串。
 
    ![](assets/s_ncs_production_conflict003.png)
 
@@ -241,30 +240,30 @@ ht-degree: 3%
 
 更新失败可能会链接到数据库配置。 确保技术管理员和数据库管理员执行的配置兼容。
 
-例如，Unicode数据库不仅必须授权存储LATIN1数据等。
+例如，Unicode数据库不仅必须授权存储LATIN1数据等，
 
 ## 警告客户端控制台有可用的更新 {#warn-the-client-consoles-of-the-available-update}
 
 ### Windows {#in-windows-1}
 
-在安装了Adobe Campaign应用程序服务器的计算机上(**nlserver web**)，下载并复制文件  **setup-client-6.XXXX.exe** i n **[应用程序的路径]/datakit/nl/eng/jsp**.
+在安装Adobe Campaign应用程序服务器的计算机上(**nlserver web**)，下载并复制文件  **setup-client-6.XXXX.exe** i n **[应用程序的路径]/datakit/nl/eng/jsp**.
 
-下次连接客户端控制台时，将显示一个窗口，通知用户更新是否可用，并允许用户下载和安装更新。
+下次连接客户端控制台时，将显示一个窗口，通知用户是否有更新，并允许用户下载和安装更新。
 
 >[!NOTE]
 >
->确保IIS_XPG用户对此安装文件具有适当的读取权限，并参阅 [安装指南](../../installation/using/general-architecture.md) 了解更多信息。
+>确保IIS_XPG用户对此安装文件具有适当的读取权限，并参阅 [安装指南](../../installation/using/general-architecture.md) 以了解更多信息。
 
 ### Linux {#in-linux-1}
 
-在Adobe Campaign应用程序服务器(**nlserver web**)中，检索  **setup-client-6.XXXX.exe** 打包并复制，另存为 **/usr/local/neolane/nl6/datakit/nl/eng/jsp**：
+在Adobe Campaign应用程序服务器(**nlserver web**)已安装，请检索  **setup-client-6.XXXX.exe** 打包并复制，另存为 **/usr/local/neolane/nl6/datakit/nl/eng/jsp**：
 
 ```
  cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
 ```
 
-下次连接客户端控制台时，将显示一个窗口，通知用户更新是否可用，并允许用户下载和安装更新。
+下次连接客户端控制台时，将显示一个窗口，通知用户是否有更新，并允许用户下载和安装更新。
 
 >[!NOTE]
 >
->确保Apache用户拥有此安装文件的适当读取权限，并参阅 [安装指南](../../installation/using/general-architecture.md) 了解更多信息。
+>确保Apache用户对此安装文件具有适当的读取权限，并参阅 [安装指南](../../installation/using/general-architecture.md) 以了解更多信息。

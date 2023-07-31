@@ -2,16 +2,17 @@
 product: campaign
 title: 常用命令
 description: 常用命令
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 4%
+source-wordcount: '432'
+ht-degree: 6%
 
 ---
 
@@ -29,10 +30,9 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->* 无论如何，您都可以添加 **-noconsole** 参数，用于删除启动模块后显示的注释。
+>* 无论如何，您可以添加 **-noconsole** 用于删除模块启动后显示的注释的参数。
 >* 相反，您可以添加参数 **-verbose** 以显示更多信息。
 >
-
 
 ## 监视命令 {#monitoring-commands-}
 
@@ -62,9 +62,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-另一个有用的命令是 **nlserver monitor**. 它列出了监控XML文件(在Adobe Campaign客户端中获取，或通过 **monitor.jsp** 网页)。
+另一个有用的命令是 **nlserver monitor**. 它列出了监控XML文件(通过Adobe Campaign客户端获取，或通过 **monitor.jsp** 网页)。
 
-您可以添加参数 **-missing** 列出缺席模块（模块出错、模块关闭等）
+您可以添加参数 **-missing** 列出不存在的模块（模块出错、模块关闭等）
 
 ```
 nlserver monitor -missing
@@ -78,7 +78,7 @@ wfserver@test
 
 ## 模块启动命令 {#module-launch-commands}
 
-launch模块的语法仍然具有以下格式：
+Launch模块的语法仍将具有以下格式：
 
 ```
 nlserver start <module>@<INSTANCE>
@@ -100,25 +100,25 @@ nlserver stop <module>@<INSTANCE>
 
    * 在Linux中：
 
-      ```
-      /etc/init.d/nlserver6 stop
-      ```
+     ```
+     /etc/init.d/nlserver6 stop
+     ```
 
-      >[!NOTE]
-      >
-      >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl stop nlserver**
+     >[!NOTE]
+     >
+     >从20.1开始，我们建议改使用以下命令（对于Linux）： **systemctl stop nlserver**
 
    * 在Windows中：
 
-      ```
-      net stop nlserver6
-      ```
+     ```
+     net stop nlserver6
+     ```
 
 * 如果没有，则在Adobe Campaign帐户中：
 
-   ```
-   nlserver shutdown 
-   ```
+  ```
+  nlserver shutdown 
+  ```
 
 ## 重新启动服务 {#restart-services}
 
@@ -126,11 +126,11 @@ nlserver stop <module>@<INSTANCE>
 
 * 如果您具有root或管理员访问权限：
 
-   * 在Linux中： /etc/init.d/nlserver6 start
+   * 在Linux中：/etc/init.d/nlserver6 start
 
-      >[!NOTE]
-      >
-      >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl启动nlserver**
+     >[!NOTE]
+     >
+     >从20.1开始，我们建议改使用以下命令（对于Linux）： **systemctl启动nlserver**
 
    * 在Windows中：net start nlserver6
 
@@ -156,7 +156,7 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 >[!IMPORTANT]
 >
->要使用，请登录 **内部** 标识符，则需要预先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+>要使用 **内部** 标识符，则需要预先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 >[!NOTE]
 >
@@ -165,3 +165,4 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 >* 对于Oracle数据库，不能指定帐户。 语法如下所示：
 >
 >  nlserver配置 — setdblogin:Oracle:test6@dbserver
+>

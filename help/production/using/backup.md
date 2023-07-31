@@ -2,41 +2,42 @@
 product: campaign
 title: 备份
 description: 备份
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 2%
+source-wordcount: '223'
+ht-degree: 6%
 
 ---
 
 # 备份{#backup}
 
-备份对于避免在机器上发生问题（无论是物理问题还是系统相关问题）时丢失数据至关重要。
+为了避免在机器上发生问题（无论是物理问题还是系统相关问题）时丢失数据，备份是必不可少的。
 
 数据存储在两个不同的位置：
 
 * 物理文件存储在Adobe Campaign目录中，
-* 其他数据则存储在数据库中。
+* 其它数据则存储在数据库中。
 
-大多数数据都在数据库中。 这代表要备份的信息的99%。
+大部分数据都在数据库中。 这代表要备份的信息的99%。
 
 ## 物理文件 {#physical-files}
 
-文件分为以下几类：
+文件分为以下几个类别：
 
 * 配置文件，存储在 **nl6/conf**，使您能够快速重新配置Adobe Campaign。
 
-* 重定向文件，存储在  **nl6/var/`<instance-name>`/redir**，位于跟踪（通常称为“前端”）服务器上，并包括所有以前的活动重定向。 它们仍由以前的营销活动使用。
+* 重定向文件，存储在  **nl6/var/`<instance-name>`/redir**，位于跟踪（通常称为“前端”）服务器上，并且包括所有以前的营销活动重定向。 它们仍由以前的营销活动使用。
 
 * 日志文件，存储在 **nl6/var/`<instance-name>`/log**，可用于跟踪问题。
 
-因此，要备份的目录为：
+因此，要备份的目录包括：
 
 * nl6/conf
 
@@ -56,4 +57,4 @@ ht-degree: 2%
 
 该数据库包含Adobe Campaign富客户端控制台中显示的所有信息，以及所有业务线数据。
 
-您的托管公司（尤其是其数据库管理员）对此操作负责。
+您的托管公司（特别是其数据库管理员）负责此操作。

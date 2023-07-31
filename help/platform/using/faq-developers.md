@@ -2,15 +2,16 @@
 product: campaign
 title: 开发人员常见问题解答
 description: 开发人员常见问题解答
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Troubleshooting, Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 97%
+source-wordcount: '524'
+ht-degree: 95%
 
 ---
 
@@ -40,7 +41,7 @@ Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间�
 
 ## 如何使用自定义收件人表？ {#how-to-use-a-custom-recipient-table-}
 
-您可以在Campaign中创建并实施非内置的收件人表来发送消息。
+您可以在Campaign中创建并实施非内置的收件人表，以发送消息。
 
 [单击此处了解更多信息](../../configuration/using/about-custom-recipient-table.md)
 

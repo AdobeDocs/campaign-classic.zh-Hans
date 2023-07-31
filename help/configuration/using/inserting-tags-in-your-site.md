@@ -1,21 +1,22 @@
 ---
 product: campaign
-title: 在您的站点中插入Web跟踪标记
+title: 在站点中插入Web跟踪标记
 description: 了解如何在您的网站中插入Web跟踪标记
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
 
-# 在您的站点中插入Web跟踪标记{#inserting-tags-in-your-site}
+# 在您的网站中插入Web跟踪标记{#inserting-tags-in-your-site}
 
 ## 简单方法 {#simple-method}
 
-此方法包括通过插入 **`<img>`** 要跟踪的网页的HTML源代码中的HTML标记。
+此方法包括通过插入重定向服务器来发送HTTP调用 **`<img>`** 要跟踪的网页的HTML源代码中的HTML标记。
 
 >[!IMPORTANT]
 >
@@ -33,7 +34,7 @@ ht-degree: 0%
 
 在控制台中定义要跟踪的页面时，可以生成示例Web跟踪标记以复制并粘贴到网页的源代码中。
 
-但是，在使用TRANSACTION类型标记时，必须使用JavaScript修改示例标记，以便插入事务信息（金额、项目数）和扩展架构定义的任何信息。
+但是，在使用TRANSACTION类型的标记时，必须使用JavaScript修改示例标记，以便插入事务信息（金额、项目数）和扩展架构定义的任何信息。
 
 ### 静态插入标记 {#static-insertion-of-tags}
 
@@ -120,7 +121,7 @@ ht-degree: 0%
 </html>
 ```
 
-## 最优化方法 {#optimum-method-}
+## 优化方法 {#optimum-method-}
 
 如果您希望控制发送到重定向服务器的信息，最可靠的方法是使用页面生成语言自己同步执行HTTP查询。
 
@@ -132,7 +133,7 @@ ht-degree: 0%
 >
 >重定向和Web跟踪使用Cookie，执行同步HTTP调用的Web服务器必须与重定向服务器位于同一域中，这一点非常重要。 各种HTTP交换必须传递“id”、“uuid”和“uuid230”Cookie。
 
-**示例**：在Java中动态生成，收件人使用其帐号进行身份验证。
+**示例**：在Java中动态生成，使用收件人的帐号进行收件人身份验证。
 
 ```
 [...]

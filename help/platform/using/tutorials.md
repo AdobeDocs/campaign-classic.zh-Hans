@@ -2,16 +2,17 @@
 product: campaign
 title: 教程
 description: 教程
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Overview
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 69%
+source-wordcount: '376'
+ht-degree: 68%
 
 ---
 
@@ -48,7 +49,7 @@ ht-degree: 69%
 
 ### 培训课程和视频
 
-除了这些简短而详细的视频外，您还可以找到 [培训课程](https://learning.adobe.com/catalog.html) 和观看功能 [演示视频](https://www.adobe.com/training/video.html) 在Adobe.com上。
+除了这些简短而详尽的视频外，您还可以找到 [培训课程](https://learning.adobe.com/catalog.html) 和监视功能 [演示视频](https://www.adobe.com/training/video.html) 在Adobe.com上。
 
 ### Experience League课程
 

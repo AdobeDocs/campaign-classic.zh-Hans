@@ -2,14 +2,15 @@
 product: campaign
 title: 操作员用户档案
 description: 操作员用户档案
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '391'
 ht-degree: 9%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 9%
 
 
 
-有两种类型的操作员使用交互：优惠经理和投放经理。 每个用户都具有特定的权限，仅允许他们访问树和平台的某些部分。
+有两种类型的操作员使用交互：优惠经理和投放经理。 每个用户都具有特定的权限，这些权限仅允许他们访问树的某些部分和平台。
 
 * **[!UICONTROL Offer manager]** ：创建和维护选件。 请注意，如果在工作流中使用选件，则运算符需要位于 **[!UICONTROL Administrator]** 或 **[!UICONTROL Offer managers]** 操作员组，以执行工作流。
 * **[!UICONTROL Delivery manager]** ：批准和使用选件
@@ -42,9 +43,9 @@ ht-degree: 9%
 * 配置优惠资格。
 * 批准选件。
 
-   >[!NOTE]
-   >
-   >优惠经理只能在两种特定情况下批准优惠。 第一种情况是，如果具体没有人为审查者指定，第二种情况是，负责创建模板（有权指派审查者）的操作员在优惠所依据的优惠模板中将他们指定为审查者。
+  >[!NOTE]
+  >
+  >优惠经理只能在两种特定情况下批准优惠。 第一种情况是，如果具体没有指定任何人为审核者，第二种情况是，负责创建模板（有权指定审核者）的操作员在选件所依据的选件模板中将他们指定为审核者。
 
 ## 投放管理器 {#delivery-manager}
 
@@ -57,11 +58,11 @@ ht-degree: 9%
 
 * 显示 **[!UICONTROL Live]** 环境。
 * 显示和修改优惠类别。
-* 批准选件（如果该投放经理被指定为其审阅人之一）。
+* 批准选件（如果将此投放管理器指定为其审阅者之一）。
 
-   >[!NOTE]
-   >
-   >仅当在优惠配置期间已将投放经理定义为审核者时，他们才能批准优惠。
+  >[!NOTE]
+  >
+  >仅当在选件配置期间已将投放经理定义为审阅者时，他们才能批准选件。
 
 ## 根据操作员回顾权限 {#recap-of-rights-according-to-operator}
 
@@ -130,7 +131,7 @@ ht-degree: 9%
   <tr> 
    <td> </td> 
    <td> <strong>投放管理器（编辑）</strong><br /> </td> 
-   <td> <strong>Delivery Manager（正式启用）</strong><br /> </td> 
+   <td> <strong>Delivery manager（正式启用）</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>树结构级别</strong><br /> </td> 

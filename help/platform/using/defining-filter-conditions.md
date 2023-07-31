@@ -2,15 +2,16 @@
 product: campaign
 title: 定义筛选条件
 description: 定义筛选条件
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Query Editor
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3241'
 ht-degree: 37%
 
 ---
@@ -43,13 +44,13 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">大于</span> <br /> </td> 
-   <td> 返回一个大于输入值的值。<br /> </td> 
-   <td> <strong>年龄(@age)大于50</strong>，将返回所有大于“50”的值，即“51”、“52”等。<br /> </td> 
+   <td> 返回大于输入值的值。<br /> </td> 
+   <td> <strong>年龄(@age)大于50</strong>，将返回所有大于“50”的值，如“51”、“52”等。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">小于</span> <br /> </td> 
    <td> 返回小于输入值的值。<br /> </td> 
-   <td> <strong>创建日期(@created)早于“DaysAgo(100)”</strong>，将返回所有在100天前创建的收件人。<br /> </td> 
+   <td> <strong>创建日期(@created)早于“DaysAgo(100)”</strong>，将返回之前100天创建的所有收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">大于或等于</span> <br /> </td> 
@@ -58,7 +59,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">小于或等于</span> <br /> </td> 
-   <td> 返回所有等于或小于输入值的值。<br /> </td> 
+   <td> 返回等于或小于输入值的所有值。<br /> </td> 
    <td> <strong>年龄(@age)小于或等于“60”</strong>，将返回所有60岁或以下的收件人。<br /> </td> 
   </tr> 
   <tr> 
@@ -67,7 +68,7 @@ ht-degree: 37%
    <td> <strong>等于“英语”的语言(@language)</strong>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">开头为</span> <br /> </td> 
+   <td> <span class="uicontrol">开始于</span> <br /> </td> 
    <td> 返回以输入值开头的结果。<br /> </td> 
    <td> <strong>帐户# (@account)以“32010”开头。</strong><br /> </td> 
   </tr> 
@@ -79,42 +80,42 @@ ht-degree: 37%
   <tr> 
    <td> <span class="uicontrol">包含</span> <br /> </td> 
    <td> 返回至少包含输入值的结果。<br /> </td> 
-   <td> <strong>电子邮件域(@domain)包含“mail”</strong>，将返回包含“mail”的所有域名。 因此，还将返回“gmail.com”域。<br /> </td> 
+   <td> <strong>电子邮件域(@domain)包含“mail”</strong>，将返回包含“mail”的所有域名。 因此，也会返回“gmail.com”域。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不包含</span> <br /> </td> 
    <td> 返回不包含输入值的结果。<br /> </td> 
-   <td> <strong>电子邮件域(@domain)不包含“vo”</strong>. 在这种情况下，将不返回包含“vo”的域名。 'voila.fr'域名将不会显示在结果中。<br /> </td> 
+   <td> <strong>电子邮件域(@domain)不包含“vo”</strong>. 在这种情况下，将不返回包含“vo”的域名。 “voila.fr”域名将不会显示在结果中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">相似</span> <br /> </td> 
-   <td> <span class="uicontrol">相似</span>与<span class="uicontrol">包含</span>运算符非常相似。它允许您插入 <span class="uicontrol">%</span> 值中的通配符。<br /> </td> 
+   <td> <span class="uicontrol">相似</span>与<span class="uicontrol">包含</span>运算符非常相似。它可让您插入 <span class="uicontrol">%</span> 值中的通配符。<br /> </td> 
    <td> <strong>姓氏(@lastName)，如“Jon%s”</strong>. 在本例中，如果操作员忘记了“n”和“s”之间缺少的字母，则使用通配符作为“绝招”来查找名称“Jones”。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不相似</span> <br /> </td> 
    <td> 与 <span class="uicontrol">相似</span>相同。用于不恢复输入的值。 在本例中，输入的值也必须包含 <span class="uicontrol">%</span> 个通配符字段。<br /> </td> 
-   <td> <strong>姓氏(@lastName)不像“Smi%h”</strong>. 在本例中，将不会返回姓氏为“Smi%h”的收件人。<br /> </td> 
+   <td> <strong>姓氏(@lastName)不像“Smi%h”</strong>. 在此，将不会返回姓氏为“Smi%h”的收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">为空</span> <br /> </td> 
    <td> 在这种情况下，我们要查找的结果与第二个“值”列中的空值匹配。<br /> </td> 
-   <td> <strong>Mobile (@mobilePhone)为空</strong> 返回所有没有手机号码的收件人。<br /> </td> 
+   <td> <strong>移动设备(@mobilePhone)为空</strong> 返回所有没有手机号码的收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不为空</span> <br /> </td> 
-   <td> 工作方式与 <span class="uicontrol">为空</span> 运算符。 无需在第二个“值”列中输入数据。<br /> </td> 
+   <td> 与的工作方式相反 <span class="uicontrol">为空</span> 运算符。 无需在第二个“值”列中输入数据。<br /> </td> 
    <td> <strong>电子邮件(@email)不为空</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">包含在</span> <br /> </td> 
    <td> 返回指定值中包含的结果。 这些值必须以逗号分隔。<br /> </td> 
-   <td> <strong>出生日期(@birthDate)载于`1979年12月10日、1984年12月10日'</strong>，将返回这些日期之间出生的收件人。 <br /> </td> 
+   <td> <strong>出生日期(@birthDate)已列入`1979/10/1979,12/10/1984`</strong>，将返回这些日期之间出生的收件人。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">未包含在</span> <br /> </td> 
-   <td> 工作方式与 <span class="uicontrol">包含在</span> 运算符。 在本例中，我们要根据输入的值排除收件人。<br /> </td> 
-   <td> <strong>出生日期(@birthDate)未列入`1979/10/1979、12/10/1984`</strong>. 与上一个示例不同，不会返回这些日期内出生的收件人。<br /> </td> 
+   <td> <span class="uicontrol">中未包含</span> <br /> </td> 
+   <td> 的工作方式与 <span class="uicontrol">包含在</span> 运算符。 在本例中，我们要根据输入的值排除收件人。<br /> </td> 
+   <td> <strong>出生日期(@birthDate)不包括1979/12/10/1984</strong>. 与上一个示例不同，不会返回这些日期内出生的收件人。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -123,28 +124,28 @@ ht-degree: 37%
 
 对于使用多个筛选条件的查询，需要定义条件之间的链接。 有三种可能的链接：
 
-* **[!UICONTROL And]** 可让您组合两个筛选条件，
-* **[!UICONTROL Or]** 让您提供替代方案，
+* **[!UICONTROL And]** 可让您组合两个过滤条件，
+* **[!UICONTROL Or]** 让你提供替代方案，
 * **[!UICONTROL Except]** 用于定义例外。
 
 单击 **[!UICONTROL And]** （默认提供）并从下拉列表中选择。
 
 ![](assets/query_condition_modif_01.png)
 
-* **[!UICONTROL And]**：添加条件并启用过度筛选。
-* **[!UICONTROL Or]**：添加条件并启用过度筛选。
+* **[!UICONTROL And]**：添加条件并启用过度过滤。
+* **[!UICONTROL Or]**：添加条件并启用过度过滤。
 
-   以下示例允许您查找其电子邮件域包含“orange.co.uk”或其邮政编码以“NW”开头的收件人。
+  以下示例允许您查找其电子邮件域包含“orange.co.uk”或其邮政编码以“NW”开头的收件人。
 
-   ![](assets/query_condition_modif_02.png)
+  ![](assets/query_condition_modif_02.png)
 
 * **[!UICONTROL Except]**：如果您有两个过滤器，但第一个过滤器未返回值，则此类型的链接会创建一个例外。
 
-   在以下示例中，我们希望返回其电子邮件域包含“orange.co.uk”的收件人，但收件人的姓氏为“Smith”时除外。
+  在以下示例中，我们希望返回其电子邮件域包含“orange.co.uk”的收件人，除非收件人的姓氏为“Smith”。
 
-   ![](assets/query_condition_modif_03.png)
+  ![](assets/query_condition_modif_03.png)
 
-此示例显示了一个过滤器，该过滤器可让您显示：会说西班牙语的收件人、使用手机号码的女性收件人、没有帐号且公司名称以字母“N”开头的收件人。
+此示例显示了一个用于显示的过滤器：说西班牙语的收件人、使用手机号码的女性收件人、没有帐号且公司名称以字母“N”开头的收件人。
 
 ![](assets/query_editor_nveau_31.png)
 
@@ -152,10 +153,10 @@ ht-degree: 37%
 
 本节将介绍如何借助工具栏中的蓝色箭头来排列条件的优先级。
 
-* 通过指向右侧的箭头，可以向过滤器中添加一定程度的圆括号。
-* 通过指向左侧的箭头，可从筛选器中删除所选的括号级别。
+* 通过指向右侧的箭头，可以向过滤器添加一定级别的圆括号。
+* 通过指向左侧的箭头，可从筛选器中删除选定的括号级别。
 
-   ![](assets/query_condition_modif_04.png)
+  ![](assets/query_condition_modif_04.png)
 
 * 垂直箭头允许您移动条件，从而更改其执行顺序。
 
@@ -169,7 +170,7 @@ ht-degree: 37%
 
 ## 选择要提取的数据 {#selecting-data-to-extract}
 
-可用字段因表而异。 所有字段都存储在称为的主节点中 **[!UICONTROL Main element]**. 在以下示例中，可用字段位于收件人表中。 字段始终按字母顺序显示。
+可用字段因表而异。 所有字段都存储在主节点(称为 **[!UICONTROL Main element]**. 在以下示例中，可用字段位于收件人表中。 字段始终按字母顺序显示。
 
 所选字段的详细信息将显示在窗口底部。 例如， **[!UICONTROL Email domain]** 字段是 **[!UICONTROL Calculated SQL field]** 其扩展为 **[!UICONTROL (@domain)]**.
 
@@ -183,9 +184,9 @@ ht-degree: 37%
 
 ![](assets/query_editor_nveau_01.png)
 
-默认情况下不显示高级字段。 单击 **[!UICONTROL Display advanced fields]** 位于可用字段的右下角以显示所有内容。 再次单击可返回到前一个视图。
+默认情况下，不显示高级字段。 单击 **[!UICONTROL Display advanced fields]** 字段的右下角显示所有内容。 再次单击可返回到前视图。
 
-例如，在收件人表中，高级字段为 **布尔值1**， **[!UICONTROL Boolean 2]**， **[!UICONTROL Boolean 3]**， **[!UICONTROL Foreign key of "Folder" link]**&#x200B;等。
+例如，在收件人表中，高级字段为 **布尔值1**， **[!UICONTROL Boolean 2]**， **[!UICONTROL Boolean 3]**， **[!UICONTROL Foreign key of "Folder" link]**，等等。
 
 以下示例显示了收件人表的高级字段。
 
@@ -209,7 +210,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_48.png" /> </td> 
-   <td> 主键. 此SQL字段是标识表中记录的一种方法。<br /> </td> 
+   <td> 主键. 此SQL字段用于标识表中的记录。<br /> </td> 
    <td> 标识符收件人为主键，标识符按定义是唯一的。<br /> </td> 
   </tr> 
   <tr> 
@@ -225,7 +226,7 @@ ht-degree: 37%
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_49.png" /> </td> 
    <td> 包含长文本的字段。<br /> </td> 
-   <td> 注释、完整地址等<br /> </td> 
+   <td> 评论、完整地址等<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_50.png" /> </td> 
@@ -248,12 +249,12 @@ ht-degree: 37%
  <tbody> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_51.png" /> </td> 
-   <td> 尤其是指向表的链接。 它们与1-1类型关联一致。 源表格的一个存在只能与目标表格的一个存在一致。 例如，一个国家/地区只能链接一个收件人。<br /> </td> 
+   <td> 尤其是指向表的链接。 这些规则与1-1类型关联一致。 源表的出现只能与目标表的一个出现一致。 例如，一个国家/地区只能链接一个收件人。<br /> </td> 
    <td> 文件夹、州/省、国家/地区等。 <br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_52.png" /> </td> 
-   <td> 特定表上的收集要素。 它们与1-N类型关联一致。 一个源表格出现次数可以与目标表格的多个出现次数一致，但目标表格出现一次可以与源表格出现一次一致。 例如，一位收件人可以订阅“n”个订阅信。<br /> </td> 
+   <td> 特定表上的收集要素。 它们与1-N类型关联一致。 一个源表格出现次数可以与目标表格的多个出现次数一致，但目标表格出现次数可以只与源表格出现次数一致。 例如，一位收件人可以订阅“n”个订阅信。<br /> </td> 
    <td> 订阅、列表、排除日志等。<br /> </td> 
   </tr> 
  </tbody> 
@@ -261,11 +262,10 @@ ht-degree: 37%
 
 >[!NOTE]
 >
->* 使用 **[!UICONTROL Add]** 按钮（侧图标栏上方），以添加要在其中编辑表达式的输出列。 有关编辑表达式的更多信息，请参阅 [本节](#building-expressions).
+>* 使用 **[!UICONTROL Add]** 按钮（侧图标栏上方），以添加要在其中编辑表达式的输出列。 有关编辑表达式的详细信息，请参阅 [本节](#building-expressions).
 >* 通过单击红色的“x”删除输出列(**删除**)。
 >* 使用箭头更改输出列的顺序。
->* 此 **[!UICONTROL Distribution of values]** 用作查看所选字段的值分布的方式（例如，链接到收件人城镇、收件人语言等的分布）。
-
+>* 此 **[!UICONTROL Distribution of values]** 用于查看所选字段值的分布情况（例如，链接到收件人城镇、收件人语言等的分布情况）。
 
 ## 创建计算字段 {#creating-calculated-fields}
 
@@ -277,32 +277,32 @@ ht-degree: 37%
 
 * **[!UICONTROL Fixed string]**：用于添加字符串。
 
-   ![](assets/query_editor_nveau_60.png)
+  ![](assets/query_editor_nveau_60.png)
 
 * **[!UICONTROL String with JavaScript tags]**：计算字段的值将字符串和JavaScript指令组合在一起。
 
-   ![](assets/query_editor_nveau_61.png)
+  ![](assets/query_editor_nveau_61.png)
 
-* **[!UICONTROL JavaScript expression]**：计算字段的值是JavaScript函数评估的结果。 可以键入返回的值（数字、日期等）。
+* **[!UICONTROL JavaScript expression]**：计算字段的值是JavaScript函数求值的结果。 可以键入返回的值（数字、日期等）。
 
-   ![](assets/query_editor_nveau_62.png)
+  ![](assets/query_editor_nveau_62.png)
 
 * **[!UICONTROL Enumerations]**：利用此类型的字段，可使用/修改新列中某个输出列的内容。
 
-   可以使用列的源值并为其指定目标值。 此目标值将显示在新输出列中。
+  可以使用列的源值并为它指定目标值。 此目标值将显示在新输出列中。
 
-   添加计算字段类型的示例 **[!UICONTROL Enumerations]** 可用，请参阅 [本节](../../workflow/using/adding-enumeration-type-calculated-field.md).
+  添加计算字段类型的示例 **[!UICONTROL Enumerations]** 可用，请参阅 [本节](../../workflow/using/adding-enumeration-type-calculated-field.md).
 
-   ![](assets/query_editor_nveau_63.png)
+  ![](assets/query_editor_nveau_63.png)
 
-   此 **[!UICONTROL Enumerations]** 类型计算字段可以包括4个条件：
+  此 **[!UICONTROL Enumerations]** 类型计算字段可以包括4个条件：
 
    * **[!UICONTROL Keep the source value]** 将源值还原到目标而不更改它。
    * **[!UICONTROL Use the following value]** 允许您为未定义的源值输入默认目标值。
    * **[!UICONTROL Generate a warning and continue]** 警告用户无法更改源值。
    * **[!UICONTROL Generate an error and reject the line]** 阻止计算和导入该行。
 
-单击 **[!UICONTROL Detail of calculated field]** 查看插入字段的详细信息。
+单击 **[!UICONTROL Detail of calculated field]** 以查看插入字段的详细信息。
 
 要删除此计算字段，请单击 **[!UICONTROL Remove the calculated field]** 十字。
 
@@ -324,11 +324,11 @@ ht-degree: 37%
 
    ![](assets/query_editor_nveau_54.png)
 
-1. 主键已计算。
+1. 计算主键。
 
    ![](assets/query_editor_nveau_88.png)
 
-以下详细介绍了 **[!UICONTROL Formula types]** 窗口：
+以下是 **[!UICONTROL Formula types]** 窗口：
 
 ![](assets/query_editor_nveau_05.png)
 
@@ -337,13 +337,13 @@ ht-degree: 37%
 
    * **[!UICONTROL Count]** 用于运行主键计数。
    * **[!UICONTROL Sum]** 允许您合计客户在一年以上的所有购买次数。
-   * **[!UICONTROL Maximum value]** 可让您查找购买最多“n”个产品的客户。
-   * **[!UICONTROL Minimum value]** 允许您对客户进行排序，并查找最近订阅了优惠的用户。
+   * **[!UICONTROL Maximum value]** 允许您查找购买最多“n”个产品的客户。
+   * **[!UICONTROL Minimum value]** 允许您对客户进行排序，并查找最近订阅了选件的客户。
    * **[!UICONTROL Average]**. 此函数允许您计算收件人的平均年龄。
 
-      此 **[!UICONTROL Distinct]** 框用于恢复列的唯一值和非零值。 例如，您可以恢复所有收件人的跟踪日志，并且这些跟踪日志将更改为值1，因为它们都与同一收件人有关。
+     此 **[!UICONTROL Distinct]** 框用于恢复列的唯一值和非零值。 例如，您可以恢复所有收件人的跟踪日志，这些跟踪日志将更改为值1，因为它们都涉及同一收件人。
 
-1. **[!UICONTROL Expression]** 打开 **[!UICONTROL Edit the expression]** 窗口。 这样，您就可以检测数字过多（可能是输入错误）的电话号码。
+1. **[!UICONTROL Expression]** 打开 **[!UICONTROL Edit the expression]** 窗口。 这样，您就可以检测包含太多数字（可能是输入错误）的电话号码。
 
    ![](assets/query_editor_nveau_71.png)
 
@@ -351,7 +351,7 @@ ht-degree: 37%
 
 ## 函数列表 {#list-of-functions}
 
-如果 **[!UICONTROL Expression]** 选择类型公式，您将被带到“编辑表达式”窗口。 可以将各种类别的函数关联到可用字段： **[!UICONTROL Aggregates]**， **[!UICONTROL String]**， **[!UICONTROL Date]**， **[!UICONTROL Numerical]**， **[!UICONTROL Currency]**， **[!UICONTROL Geomarketing]**， **[!UICONTROL Windowing function]** 和 **[!UICONTROL Others]**.
+如果 **[!UICONTROL Expression]** 选择了类型公式，您将被带到“编辑表达式”窗口。 可以将各种类别的函数关联到可用字段： **[!UICONTROL Aggregates]**， **[!UICONTROL String]**， **[!UICONTROL Date]**， **[!UICONTROL Numerical]**， **[!UICONTROL Currency]**， **[!UICONTROL Geomarketing]**， **[!UICONTROL Windowing function]** 和 **[!UICONTROL Others]**.
 
 表达式编辑器如下所示：
 
@@ -452,7 +452,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>IfEquals</strong><br /> </td> 
-   <td> 如果前两个参数相等，则返回第三个参数。 如果不是，则返回最后一个参数<br /> </td> 
+   <td> 如果前两个参数相等，则返回第三个参数。 如果不能，则返回最后一个参数<br /> </td> 
    <td> IfEquals(&lt;字符串&gt;, &lt;字符串&gt;, &lt;字符串&gt;, &lt;字符串&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -599,7 +599,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>DateOnly</strong><br /> </td> 
-   <td> 仅返回日期（时间为00:00）*<br /> </td> 
+   <td> 仅返回日期（且时间为00:00）*<br /> </td> 
    <td> DateOnly(&lt;日期&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -609,17 +609,17 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <strong>DayOfYear</strong><br /> </td> 
-   <td> 返回日期年份中的日数<br /> </td> 
+   <td> 返回日期年份中的天数<br /> </td> 
    <td> DayOfYear(&lt;日期&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgo</strong><br /> </td> 
-   <td> 返回与当前日期对应的日期减去n天<br /> </td> 
+   <td> 返回对应于当前日期n天的日期<br /> </td> 
    <td> DaysAgo(&lt;数字&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgoInt</strong><br /> </td> 
-   <td> 返回对应于当前日期减去n天的日期（整数yyyymmdd）<br /> </td> 
+   <td> 返回对应于当前日期n天的日期（整数yyyymmdd）<br /> </td> 
    <td> DaysAgoInt(&lt;数字&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -745,7 +745,7 @@ ht-degree: 37%
   <tr> 
    <td> <strong>TruncTime</strong><br /> </td> 
    <td> 将时间部分舍入到最接近的秒<br /> </td> 
-   <td> TruncTim(e&lt;date&gt;， &lt;number of="" seconds=""&gt;)<br /> </td>  
+   <td> TruncTim(e)&lt;date&gt;， &lt;number of="" seconds=""&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncWeek</strong><br /> </td> 
@@ -997,7 +997,7 @@ ht-degree: 37%
  </tbody> 
 </table>
 
-**窗口函数**
+**窗口化函数**
 
 <table> 
  <tbody> 

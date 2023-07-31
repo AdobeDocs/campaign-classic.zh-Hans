@@ -2,14 +2,15 @@
 product: campaign
 title: 投放执行
 description: 了解有关事务性消息投放执行和监控的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center, Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '240'
 ht-degree: 6%
 
 ---
@@ -36,17 +37,17 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->对于托管或混合安装，如果已升级到 [增强型MTA](../../delivery/using/sending-with-enhanced-mta.md)，所有事务型消息也可通过Adobe Campaign Enhanced MTA发送，以改进投放能力、吞吐量和退回处理。 所有方面都与标准营销消息相同。
+>对于托管或混合安装，如果已升级到 [增强MTA](../../delivery/using/sending-with-enhanced-mta.md)，所有事务型消息也可通过Adobe Campaign Enhanced MTA发送，以提升投放能力、吞吐量和退件处理。 所有方面都与标准营销消息相同。
 
 ## 事务性消息监测 {#transactional-message-monitoring}
 
 要监控事务型消息，请检查 [投放日志](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
-从执行实例发送的事务投放通过技术工作流(**[!UICONTROL Message Center execution instance]**)每小时运行一次。
+从执行实例发送的事务投放通过技术工作流(**[!UICONTROL Message Center execution instance]**)，每小时运行一次。
 
 >[!NOTE]
 >
->投放每周会根据最新的事件更新而不是根据事件创建日期来累计事件。 因此，在从控制实例提取事务性消息投放日志时，与每个投放日志ID关联的投放ID可能会随着日志的更新（例如，当接收到事件的入站退回时）而改变。
+>投放每周根据最新的事件更新而不是根据事件创建日期来累计事件。 因此，在从控制实例提取事务性消息投放日志时，与每个投放日志ID关联的投放ID可能会随着日志的更新（例如，当收到事件的入站退回时）而随着时间的推移而改变。
 
 <!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 

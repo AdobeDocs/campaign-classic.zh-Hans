@@ -2,11 +2,12 @@
 product: campaign
 title: 定义外部数据映射
 description: 了解如何在外部数据库中映射数据
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: a7253ca7-47e5-4def-849d-3ce1c9b948fb
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '201'
 ht-degree: 3%
 
 ---
@@ -33,7 +34,7 @@ Adobe Campaign允许您定义外部表中数据的映射。
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   您可以选择是否存储排除项(**excludelog**)，包含消息(**broadlog**)，或者在单独的表中。
+   您可以选择是否存储排除项(**excludelog**)，消息为(**broadlog**)，或者在单独的表中。
 
    您还可以选择是否管理此投放映射的跟踪(**trackinglog**)。
 
@@ -41,4 +42,4 @@ Adobe Campaign允许您定义外部表中数据的映射。
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   单击 **[!UICONTROL Save]** 按钮以启动投放映射创建：根据选定的参数自动创建所有链接表。
+   单击 **[!UICONTROL Save]** 按钮以启动投放映射创建：根据所选参数自动创建所有链接表。

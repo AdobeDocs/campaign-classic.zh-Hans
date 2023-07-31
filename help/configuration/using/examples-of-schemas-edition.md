@@ -2,11 +2,12 @@
 product: campaign
 title: 模式版本示例
 description: 模式版本示例
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Schema Extension
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '670'
 ht-degree: 2%
 
 ---
@@ -39,7 +40,7 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   在此示例中，索引字段(**保真度**)，并且 **位置** 元素(已存在于 **nms：recipient** schema)后附加一个枚举字段(**区域**)。
+   在此示例中，索引字段(**保真**)，并且 **位置** 元素(已存在于 **nms：recipient** schema)后附加一个枚举字段(**区域**)。
 
    >[!IMPORTANT]
    >
@@ -100,7 +101,7 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-表类型为 **autopk** 以创建一个自动生成的主键，供链接连接到收件人表使用。
+表类型为 **autopk** 以创建一个自动生成的主键，供链接到收件人表的链接使用。
 
 已生成架构：
 
@@ -144,11 +145,11 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 >[!NOTE]
 >
->SQL命令INSERT INTO位于脚本末尾，用于插入设置为0的标识符记录，以模拟外连接。
+>SQL命令INSERT INTO在脚本末尾用于插入设置为0的标识符记录，以模拟外部联接。
 
 ## 扩展表 {#extension-table}
 
-扩展表允许您扩展链接的基数1-1表中现有表的内容。
+扩展表允许您扩展链接基数1-1表中的现有表的内容。
 
 扩展表的目的是避免对表中支持的字段数的限制，或者优化数据占用的空间（按需使用）。
 
@@ -176,7 +177,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 >[!NOTE]
 >
->收件人表和扩展表之间链接的定义必须从包含外键的架构中填充。
+>收件人表和扩展表之间链接的定义必须从包含外键的模式中填充。
 
 用于创建扩展表的SQL脚本如下所示：
 
@@ -186,7 +187,7 @@ CREATE UNIQUE INDEX CusFeature_id ON CusFeature(iFeatureId);
 INSERT INTO CusFeature (iFeatureId) VALUES (0); 
 ```
 
-收件人表SQL更新脚本如下：
+收件人表SQL更新脚本如下所示：
 
 ```
 ALTER TABLE NmsRecipient ADD iFeatureId INTEGER;
@@ -234,7 +235,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 关系表允许您链接两个具有基数N-N的表。此表只包含要链接的表的外键。
 
-组之间关系表的示例(**nms：group**)和收件人(**nms：recipient**)。
+组间关系表的示例(**nms：group**)和收件人(**nms：recipient**)。
 
 关系表的源架构：
 
@@ -298,11 +299,11 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 ## 用例：将字段链接到现有引用表 {#uc-link}
 
-此用例演示如何使用现有引用表作为内置Adobe Campaign枚举机制（enum、userEnum或dbEnum）的替代方案。
+此用例演示如何使用现有引用表作为内置Adobe Campaign枚举机制（enum、userEnum或dbEnum）的替代方法。
 
-您还可以在架构中使用现有引用表作为明细列表。 这可以通过在表和引用表之间创建链接以及添加属性来实现 **displayAsField=&quot;true&quot;**.
+您还可以在架构中使用现有引用表作为枚举。 这可以通过在表和参考表之间创建链接以及添加属性来实现 **displayAsField=&quot;true&quot;**.
 
-在此示例中，参考表包含银行名称和标识符的列表：
+在本例中，参考表包含银行名称和标识符的列表：
 
 ```
 <srcSchema entitySchema="xtk:srcSchema" img="cus:bank16x16.png" label="Bank" mappingType="sql" name="bank" namespace="cus"
@@ -324,7 +325,7 @@ xtkschema="xtk:srcSchema">
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
 ```
 
-用户界面不会显示链接，而是显示字段。 当用户选取该字段时，可以从参照表中选取值或使用自动完成功能。
+用户界面不会显示链接，但会显示字段。 当用户选取该字段时，可以从参照表中选取值或使用自动完成功能。
 
 ![](assets/schema-edition-ex.png)
 
@@ -334,8 +335,8 @@ xtkschema="xtk:srcSchema">
 
 ## 相关主题
 
-* [使用明细列表](../../platform/using/managing-enumerations.md)
+* [使用枚举](../../platform/using/managing-enumerations.md)
 
-* [Campaign架构入门](../../configuration/using/about-schema-edition.md)
+* [Campaign模式入门](../../configuration/using/about-schema-edition.md)
 
 * [更新数据库结构](../../configuration/using/updating-the-database-structure.md)

@@ -2,12 +2,13 @@
 product: campaign
 title: 目标映射
 description: 了解如何创建目标映射
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Application Settings
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '502'
 ht-degree: 2%
 
 ---
@@ -25,15 +26,15 @@ ht-degree: 2%
 
 ## 创建和配置链接到自定义表的架构 {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
-在创建目标映射之前，需要完成多个配置，以便Adobe Campaign能够与新的收件人数据架构一起运行。
+在创建目标映射之前，需要执行多个配置，以便Adobe Campaign能够与新的收件人数据架构一起运行。
 
 要执行此操作，请应用以下步骤：
 
-1. 创建一个新的数据架构，该架构集成了您要使用的自定义表的字段。
+1. 创建新的数据架构，它将集成要使用的自定义表的字段。
 
    欲知更多信息，请参见 [架构引用(xtk：srcSchema)](../../configuration/using/about-schema-reference.md).
 
-   在我们的示例中，我们将创建一个客户模式，它是一个非常简单的表，包含以下字段：ID、名字、姓氏、电子邮件地址、手机号码。 目的是能够将电子邮件或短信警报发送给存储在此表中的个人。
+   在我们的示例中，我们将创建一个客户模式，它是一个非常简单的表，包含以下字段：ID、名字、姓氏、电子邮件地址、手机号码。 目的是能够向存储在此表中的个人发送电子邮件或短信警报。
 
    模式示例(cus：individual)
 
@@ -82,22 +83,22 @@ ht-degree: 2%
    ```
 
 1. 单击 **[!UICONTROL Administration > Campaign management > Target mappings]** 节点。
-1. 单击 **新** 按钮以打开目标映射创建向导。
+1. 单击 **新建** 按钮以打开目标映射创建向导。
 1. 输入 **标签** 字段并选择之前在中创建的架构 **定位维度** 字段。
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. 在 **编辑地址表单** 窗口中，选择与各种投放地址匹配的架构字段。 在这里，我们可以映射 **@email** 和 **@mobile** 字段。
+1. 在 **编辑地址表单** 窗口中，选择与各种投放地址匹配的架构字段。 在此，我们能够映射 **@email** 和 **@mobile** 字段。
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. 在以下内容中 **存储** 窗口中，输入 **扩展架构的后缀** 用于区分Adobe Campaign提供的新架构和现成架构的字段。
+1. 在以下内容中 **存储** 窗口，输入 **扩展架构的后缀** 字段，用于区分Adobe Campaign提供的新架构和现成架构。
 
    单击 **[!UICONTROL Define new additional fields]** 以选择要在投放中定位的维度。
 
-   默认情况下，排除管理与消息存储在同一表中。
+   默认情况下，排除管理将与消息存储在同一表中。
 
-   查看 **生成存储架构以进行跟踪** 框（如果要为链接到目标映射的跟踪配置存储）。
+   查看 **生成用于跟踪的存储架构** 框。
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
@@ -111,13 +112,13 @@ ht-degree: 2%
 
 1. 单击 **保存** 按钮以关闭向导。
 
-   该向导使用启动架构来创建使新目标映射工作所需的所有其他架构。
+   向导使用启动架构创建使新目标映射工作所需的所有其他架构。
 
    ![](assets/mapping_schema_list.png)
 
 ## 使用目标映射 {#using-target-mapping}
 
-可通过两种方式将新模式用作投放目标：
+有两种方法可以将新模式用作投放的目标：
 
 * 根据映射创建一个或多个投放模板
 * 创建投放时，请在目标选择过程中直接选择映射，如下所示：

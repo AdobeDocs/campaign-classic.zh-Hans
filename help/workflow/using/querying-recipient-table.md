@@ -2,12 +2,12 @@
 product: campaign
 title: 查询收件人表
 description: 了解如何查询收件人表
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+feature: Query Editor, Workflows
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '399'
 ht-degree: 3%
 
 ---
@@ -20,19 +20,19 @@ ht-degree: 3%
 
 * 我们应该选择哪个表？
 
-   收件人表(nms：recipient)
+  收件人表(nms：recipient)
 
-* 要选择作为输出列的字段
+* 要选为输出列的字段
 
-   电子邮件、姓名、城市和帐号
+  电子邮件、姓名、城市和帐号
 
-* 收件人的筛选条件是什么？
+* 收件人的过滤条件是什么？
 
-   城市和电子邮件域
+  城市和电子邮件域
 
 * 是否已配置排序？
 
-   是，基于 **[!UICONTROL Account number]** 和 **[!UICONTROL Last name]**
+  是，基于 **[!UICONTROL Account number]** 和 **[!UICONTROL Last name]**
 
 要创建此示例，请应用以下步骤：
 
@@ -41,26 +41,26 @@ ht-degree: 3%
 
    ![](assets/query_editor_03.png)
 
-1. 对列进行排序，以按正确的顺序显示它们。 在此，我们要按降序对帐号排序，并按字母顺序对名称排序。 然后单击 **[!UICONTROL Next]**。
+1. 对列进行排序，以按正确的顺序显示它们。 在这里，我们要按降序对帐号进行排序，并按字母顺序对名称进行排序。 然后单击 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_04.png)
 
 1. 在 **[!UICONTROL Data filtering]** 窗口，优化您的搜索：选择 **[!UICONTROL Filtering conditions]** 并单击 **[!UICONTROL Next]**.
-1. 此 **[!UICONTROL Target element]** 窗口可让您输入过滤器设置。
+1. 此 **[!UICONTROL Target element]** 窗口允许您输入过滤器设置。
 
    定义以下筛选条件：电子邮件域等于“orange.co.uk”的收件人。 要执行此操作，请选择 **电子邮件域(@email)** 在 **[!UICONTROL Expression]** 列，选择 **等于** 在 **[!UICONTROL Operator]** 列并在中输入“orange.co.uk” **[!UICONTROL Value]** 列。
 
    ![](assets/query_editor_05.png)
 
-1. 如果需要，请单击 **[!UICONTROL Distribution of values]** 按钮以查看基于潜在客户电子邮件域的分发。 数据库中每个电子邮件域都有一个可用百分比。 在应用过滤器之前，将显示“orange.co.uk”以外的域。
+1. 如果需要，请单击 **[!UICONTROL Distribution of values]** 按钮以查看基于潜在客户电子邮件域的分发。 对于数据库中的每个电子邮件域，都有一个百分比可用。 在应用过滤器之前，将显示“orange.co.uk”以外的域。
 
    查询摘要显示在窗口底部： **电子邮件域等于“orange.co.uk”**.
 
-1. 单击 **[!UICONTROL Preview]** 要了解查询结果，请执行以下操作：只显示“orange.co.uk”电子邮件域。
+1. 单击 **[!UICONTROL Preview]** 要了解查询结果，请仅显示“orange.co.uk”电子邮件域。
 
    ![](assets/query_editor_nveau_17.png)
 
-1. 现在，我们将更改查询以查找不在伦敦居住的联系人。
+1. 现在，我们将更改查询以查找不住在伦敦的联系人。
 
    选择 **[!UICONTROL City (location/@city)]** 在 **[!UICONTROL Expression]** 列， **[!UICONTROL different from]** 作为运算符，并输入 **[!UICONTROL London]** 在 **[!UICONTROL Value]** 列。
 
@@ -76,7 +76,7 @@ ht-degree: 3%
 
    此 **[!UICONTROL Column results]** 选项卡以列显示查询结果。
 
-   结果会显示所有使用“orange.co.uk”电子邮件域且并非居住在伦敦的收件人。 未显示“名字”列，因为它在上一阶段未选中。 帐号按降序排序。
+   结果会显示所有具有“orange.co.uk”电子邮件域的收件人，这些收件人不在伦敦居住。 “名字”列未显示，因为它在上一阶段中未被选中。 帐号按降序排序。
 
    ![](assets/query_editor_nveau_12.png)
 

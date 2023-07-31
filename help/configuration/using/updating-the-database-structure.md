@@ -2,11 +2,12 @@
 product: campaign
 title: 更新数据库结构
 description: 更新数据库结构
+feature: Configuration
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 6c1e061b-8636-4285-8d83-97474544d252
-source-git-commit: 50a89f993523f3274e87ebac740d1c121082e18c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 8%
@@ -17,11 +18,11 @@ ht-degree: 8%
 
 
 
-要应用对架构所做的修改，请启动数据库更新向导。 此向导可通过以下方式访问： **[!UICONTROL Tools > Advanced > Update database structure]** . 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。
+要应用对架构所做的修改，请启动数据库更新向导。 可通过访问此向导 **[!UICONTROL Tools > Advanced > Update database structure]** . 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。
 
 ![](assets/d_ncs_integration_schema_update.png)
 
-自动填充和激活数据库中的模块。
+数据库中的模块将自动填充和激活。
 
 ![](assets/d_ncs_integration_schema_update_select.png)
 
@@ -35,7 +36,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->该代码位于编辑字段中，可以修改该代码以删除或添加SQL代码。
+>此代码位于编辑字段中，可以修改以删除或添加SQL代码。
 
 接下来，启动数据库更新：
 

@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: 事务性消息传递架构
-description: 此部分介绍Adobe Campaign Classic事务型消息传递架构以及传递事务型消息的可用渠道
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: 此部分介绍Adobe Campaign Classic事务性消息架构以及投放事务性消息的可用渠道
+feature: Transactional Messaging, Message Center, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1099'
 ht-degree: 1%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 事务性消息传递依赖于特定的架构，该架构由多个实例组成：
 
-* A **控制实例**，创建消息模板。
+* A **控制实例**，其中创建消息模板。
 
 * 一个或多个 **执行实例**，接收事件并投放消息。
 
@@ -29,17 +30,17 @@ ht-degree: 1%
 
 ## 安装实例 {#installing-instances}
 
-安装事务型消息包时，要采取一些预防措施。 Adobe建议您先在测试环境中工作，然后再投入生产。 您还需要具有兼容的Adobe Campaign许可证。 有关更多信息，请与您的Adobe客户经理联系。
+安装事务型消息包时，要采取几个预防措施。 Adobe建议您先在测试环境中工作，然后再投入生产。 您还需要具有兼容的Adobe Campaign许可证。 有关更多信息，请与您的Adobe客户经理联系。
 
 >[!IMPORTANT]
 >
 >控制实例和执行实例必须安装在不同的计算机上。 他们不能共享同一个Campaign实例。
 
-如果需要使用多个渠道，则必须先安装和配置相关包，然后再安装事务型消息包。 有关此内容的更多信息，请参阅 [添加投放渠道](#adding-a-delivery-channel).
+如果需要使用多个渠道，则必须先安装和配置相关包，然后再安装事务性消息包。 有关此内容的更多信息，请参阅 [添加投放渠道](#adding-a-delivery-channel).
 
 ## 控制实例 {#control-instance}
 
-要在计算机上安装控制实例，请选择 **[!UICONTROL Transactional message control]** 通过 **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** 菜单。 有关此内容的更多信息，请参阅 [安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md).
+要在计算机上安装控制实例，请选择 **[!UICONTROL Transactional message control]** 通过打包 **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** 菜单。 有关此内容的更多信息，请参阅 [安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_controlinstance_001.png)
 
@@ -49,7 +50,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->仅内部部署环境支持与多个控制实例共享执行群集。
+>仅本地环境支持将执行群集与多个控制实例共享。
 
 可以在多个控制实例之间共享执行集群。 例如，如果您管理多个专用商店，则可以为每个品牌配置一个控制实例，并将它们全部链接到同一个执行集群。
 
@@ -61,7 +62,7 @@ ht-degree: 1%
 
 ## 执行实例 {#execution-instance}
 
-要在计算机上安装执行实例，请选择 **[!UICONTROL Transactional message execution]** 通过 **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** 菜单。 有关此内容的更多信息，请参阅 [安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md).
+要在计算机上安装执行实例，请选择 **[!UICONTROL Transactional message execution]** 通过打包 **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** 菜单。 有关此内容的更多信息，请参阅 [安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_executioninstance_001.png)
 
@@ -69,25 +70,25 @@ ht-degree: 1%
 
 ## 可用的投放渠道
 
-电子邮件渠道默认可用。 要在多个渠道上投放事务型消息，您可以添加其他渠道（移动渠道、移动应用程序渠道等）。
+默认情况下，电子邮件渠道可用。 要在多个渠道上投放事务型消息，您可以添加其他渠道（移动渠道、移动应用程序渠道等）。
 
 >[!IMPORTANT]
 >
->添加投放渠道（移动渠道、移动应用程序渠道等） 必须在安装事务型消息包之前执行。
+>添加投放渠道（移动设备渠道、移动设备应用程序渠道等） 必须在安装事务型消息包之前执行。
 
 ### 添加投放渠道 {#adding-a-delivery-channel}
 
 Adobe建议您 **始终在安装事务型消息包之前添加投放渠道包**.
 
-但是，如果您已在电子邮件渠道上启动事务性消息传递项目，然后在项目期间决定添加新渠道，则可以执行以下步骤。
+但是，如果您已在电子邮件渠道上启动事务型消息传递项目，然后在项目期间决定添加新渠道，则可以执行以下步骤。
 
 >[!NOTE]
 >
 >此过程仅适用于使用安装在同一台计算机上的Windows NLServer的客户。
 
 1. 安装您需要的渠道，例如 **移动渠道**，使用资源包导入向导(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)。
-1. 执行文件导入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，然后选择 **数据项&#x200B;**`[Your language]`**packagemessageCenter.xml** 文件。
-1. 在 **[!UICONTROL XML content of the data to import]**，仅保留与添加的渠道对应的投放模板。 例如，如果您已添加 **移动渠道**，仅保留 **实体** 与 **[!UICONTROL Mobile transactional message]** (smsTriggerMessage)。 如果您已添加 **移动应用程序渠道**，仅保留 **iOS事务型消息** (iosTriggerMessage)和 **Android事务型消息** (androidTriggerMessage)。
+1. 执行文件导入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，然后选择 **datakitems **`[Your language]`**packagemessageCenter.xml** 文件。
+1. 在 **[!UICONTROL XML content of the data to import]**，仅保留与添加渠道对应的投放模板。 例如，如果您已添加 **移动渠道**，仅保留 **实体** 与对应的 **[!UICONTROL Mobile transactional message]** (smsTriggerMessage)。 如果您已添加 **移动应用程序渠道**，仅保留 **iOS事务型消息** (iosTriggerMessage)和 **Android事务型消息** (androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)
 
@@ -132,18 +133,18 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 >[!NOTE]
 >
->有关移动设备应用程序渠道的详情，请参见 [本节](../../delivery/using/about-mobile-app-channel.md).
+>有关移动设备应用程序渠道的详细信息，请参阅 [本节](../../delivery/using/about-mobile-app-channel.md).
 
 要将事务性消息模块与移动应用程序渠道结合使用，您需要应用以下配置：
 
 1. 安装 **移动应用程序渠道** 打包到控制实例和执行实例上。
-1. 复制 **移动应用程序** 键入Adobe Campaign服务及其包含在执行实例上的移动应用程序。
+1. 复制 **移动应用程序** 键入Adobe Campaign服务以及它包含在执行实例上的移动应用程序。
 
 事件必须包含以下元素：
 
 * 移动设备ID (**registrationId** 适用于Android和 **deviceToken** (适用于iOS)。 此ID表示将向其发送通知的“地址”。
-* 指向移动应用程序或集成键的链接(**uuid**)，用于恢复特定于应用程序的连接信息。
-* 将向其发送通知的频道(**希望渠道**)：iOS41个，Android 42个
+* 指向移动应用程序或集成键的链接(**uuid**)，可以恢复特定于应用程序的连接信息。
+* 通知将发送到的频道(**希望渠道**)：iOS为41，Android为42
 * 所有对个性化有用的数据
 
 以下是包含此信息的事件示例：
@@ -177,15 +178,15 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 通过与LINE渠道相结合，事务型消息允许您在消费者移动设备上安装的LINE应用程序上发送实时消息。 当LINE用户添加品牌页面时，此标头用于发送欢迎消息。
 
-要将事务型消息模块与LINE结合使用，需要以下元素才能在 **营销** 实例和您的 **执行** 实例：
+要将事务型消息模块与LINE结合使用，需要在以下元素中进行配置： **营销** 实例和您的 **执行** 实例：
 
 * 安装 **[!UICONTROL LINE Connect]** 两个实例上的包。
-* 安装 **[!UICONTROL Transactional message control]** 包，以及 **[!UICONTROL Transactional message execution]** 执行实例上的包。
+* 安装 **[!UICONTROL Transactional message control]** 包，以及 **[!UICONTROL Transactional message execution]** 程序包中。
 * 创建行 **外部帐户** 和 **服务** 在要同步的两个实例上使用相同的命名。 有关如何创建LINE外部帐户和服务的详细信息，请参阅 [本节](../../delivery/using/line-channel.md#setting-up-line-channel).
 
 然后，从 **[!UICONTROL Explorer]** ，在 **[!UICONTROL Platform]** > **[!UICONTROL External account]** ，您需要在两个实例上配置不同的外部帐户：
 
-1. 创建 **[!UICONTROL External database]** 外部帐户 **执行** 实例具有以下配置：
+1. 创建 **[!UICONTROL External database]** 您的外部帐户 **执行** 实例进行以下配置：
 
    ![](assets/line_config_mc.png)
 
@@ -199,16 +200,15 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
    * **[!UICONTROL Server]** ：输入数据库服务器URL。
    * **[!UICONTROL Account]** ：输入数据库帐户。
 
-      >[!NOTE]
-      >
-      >数据库用户需要拥有对FDA连接的以下表的读取权限：XtkOption、NmsVisitor、NmsVisitorSub、NmsService、NmsBroadLogRtEvent、NmsBroadLogBatchEvent、NmsTrackingLogRtEvent、NmsTrackingLogBatchEvent、NmsRtEvent、NmsBroadLogMsg、 NmsDelivery、NmsWebTrackingLogXtkFolder。
+     >[!NOTE]
+     >
+     >数据库用户需要拥有对FDA连接的以下表的读取权限：XtkOption、NmsVisitor、NmsVisitorSub、NmsService、NmsBroadLogRtEvent、NmsBroadLogBatchEvent、NmsTrackingLogRtEvent、NmsTrackingLogBatchEvent、NmsRtEvent、NmsBroadLogMsg、 NmsDelivery、NmsWebTrackingLogXtkFolder。
 
    * **[!UICONTROL Password]** ：输入数据库帐户的密码。
    * **[!UICONTROL Database]** ：输入执行实例的数据库名称。
    * **[!UICONTROL Target of an HTTP relay to remote database's account]** 框必须选中。
 
-
-1. 创建 **[!UICONTROL External Database]** 您的中的帐户 **营销** 实例进行配置。
+1. 创建 **[!UICONTROL External Database]** 您的帐户 **营销** 实例进行配置。
 
    ![](assets/line_config_mc_1.png)
 
@@ -219,13 +219,12 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
    从 **[!UICONTROL Connection]** 类别：
 
    * **[!UICONTROL Type]** ：选择 **[!UICONTROL HTTP relay to remote Database]** .
-   * **[!UICONTROL Server]** ：输入您营销活动的执行实例的服务器URL。
+   * **[!UICONTROL Server]** ：输入营销活动的执行实例的服务器URL。
    * **[!UICONTROL Account]** ：输入用于访问执行实例的帐户。
    * **[!UICONTROL Password]** ：输入用于访问执行实例的帐户的密码。
    * **[!UICONTROL Data Source]** ：输入以下语法 **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
 
-
-1. 创建 **[!UICONTROL Execution instance]** 外部帐户 **营销** 实例使用以下配置来创建数据同步工作流：
+1. 创建 **[!UICONTROL Execution instance]** 您的外部帐户 **营销** 实例使用以下配置创建数据同步工作流：
 
    ![](assets/line_config_mc_2.png)
 
@@ -242,10 +241,8 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
    从 **[!UICONTROL Account connection method]** 类别：
 
    * **[!UICONTROL Method]** ：选择 **[!UICONTROL Federated Data Access (FDA)]** .
-   * **[!UICONTROL FDA account]** ：从下拉菜单中选择您的FDA帐户。
+   * **[!UICONTROL FDA account]** ：从下拉列表中选择您的FDA帐户。
    * 单击 **[!UICONTROL Create the archiving workflow]** 按钮。
    * 单击 **[!UICONTROL Create data synchronization workflow]** 按钮创建LINE数据同步工作流。
-
-
 
 1. 您现在可以开始 [创建事务型消息](../../message-center/using/creating-the-message-template.md).

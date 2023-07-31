@@ -2,12 +2,12 @@
 product: campaign
 title: 监测准则
 description: 了解监控 Campaign 实例和流程的准则和最佳实践
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '767'
 ht-degree: 21%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 21%
 
 ## 实例监视仪表板 {#instance-monitoring-dashboard}
 
-此 **[!UICONTROL Monitoring]** 选项卡(可从Campaign Classic主页访问)是帮助您监视实例的主要入口点。
+此 **[!UICONTROL Monitoring]** 选项卡，可从Campaign Classic主页访问，是帮助您监视实例的主要入口点。
 
 它提供实例上所发生情况的仪表板：其状态（内部版本号、已安装的包等）、系统指示器、日志、当前运行的工作流、上次发送投放的状态等。
 
@@ -29,7 +29,7 @@ ht-degree: 21%
 ## 监控Campaign Classic进程 {#monitoring-campaign-classic-processes}
 
 <table>
-<tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">监测实例</a></p></td>
+<tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">监控实例</a></p></td>
 <td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#monitoring-workflows">监测工作流</a></p></td>
 <td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">监测投放</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">监视数据库</a></p></td></tr>
@@ -41,23 +41,23 @@ ht-degree: 21%
 
 <img src="assets/do-not-localize/icon_system.svg" width="60px">
 
-**自动监控工具**
+**自动监视工具**
 
-可以使用多种自动方法。 以帮助您监控实例。 例如，您可以设置包含检测到的异常的电子邮件报告，检索XML格式的指示器列表等。 [单击此处](../../production/using/monitoring-processes.md#automatic-monitoring)以了解更多信息。
+可以使用几种自动方法。 以帮助您监控实例。 例如，您可以设置包含检测到的异常的电子邮件报表，以XML格式检索指示器列表等。 [单击此处](../../production/using/monitoring-processes.md#automatic-monitoring)以了解更多信息。
 
 **审核跟踪**
 
-审核记录允许您可视化与实例中的选项、工作流和架构相关的更改的完整历史记录。 [单击此处](../../production/using/audit-trail.md)以了解更多信息。
+审计追踪允许您可视化与实例中的选项、工作流和架构相关的更改的完整历史记录。 [单击此处](../../production/using/audit-trail.md)以了解更多信息。
 
 **控制面板**
 
-利用控制面板，可管理实例的多个设置：管理URL权限、查看实例详细信息（如服务器的内部版本等）。 它还允许您监视连接到实例的SFTP服务器上的可用空间。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)以了解更多信息。
+控制面板允许您管理实例的多个设置：管理URL权限、检查实例详细信息（如服务器的内部版本等）。 它还允许您监视连接到实例的SFTP服务器上的可用空间。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)以了解更多信息。
 
 >[!NOTE]
 >
 >所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
 >
->请注意，您的实例必须托管在AWS上并使用 [最新GA内部版本](../../rn/using/rn-overview.md). 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html)中详述的步骤操作。
+>请注意，您的实例必须托管在AWS上，并使用进行升级 [最新GA版本](../../rn/using/rn-overview.md). 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
 
 ### 监控工作流 {#monitoring-workflows}
 
@@ -65,7 +65,7 @@ ht-degree: 21%
 
 **工作流热图**
 
-工作流热图提供了实例上运行的所有工作流的可视化表示形式。 它允许您轻松监控实例的负载并相应地规划工作流。 [单击此处](../../workflow/using/heatmap.md)以了解更多信息。
+工作流热图提供了实例上运行的所有工作流的可视化表示形式。 它允许您轻松监控实例的负载并相应地计划工作流。 [单击此处](../../workflow/using/heatmap.md)以了解更多信息。
 
 **审核跟踪**
 
@@ -75,9 +75,9 @@ ht-degree: 21%
 
 遇到工作流执行问题时，可以执行特定操作。 [单击此处](../../production/using/workflow-execution.md) 了解更多信息
 
-**工作流状态监控**
+**工作流状态监测**
 
-除了热图之外，您还可以创建一个工作流，用于监视一组工作流的状态并向主管发送定期消息。 [单击此处](../../workflow/using/supervising-workflows.md)以了解更多信息。
+除了热图之外，您还可以创建工作流，用于监视一组工作流的状态并向主管发送定期消息。 [单击此处](../../workflow/using/supervising-workflows.md)以了解更多信息。
 
 **一般准则**
 
@@ -98,7 +98,7 @@ SMTP报告按域显示投放统计信息和SMTP错误。 [了解详情](../../pr
 [投放发送和设计的最佳实践](../../delivery/using/delivery-best-practices.md) 可以帮助您提高他们的性能。
 
 **投放疑难解答**
-遇到投放问题时可以执行特定操作：
+遇到投放问题时，可以执行特定操作：
 * [可投放性问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [图像显示问题](../../production/using/image-display-issues.md)
 * [投放性能问题](../../delivery/using/delivery-performances.md)
@@ -126,11 +126,11 @@ SMTP报告按域显示投放统计信息和SMTP错误。 [了解详情](../../pr
 
 *仅限内部部署和混合托管模型*
 
-备份对于避免在机器上发生问题（无论是物理问题还是系统相关问题）时丢失数据至关重要。 [单击此处](../../production/using/backup.md)以了解更多信息。有关恢复过程的说明，请参见 [本节](../../production/using/restoration.md).
+为了避免在机器上发生问题（无论是物理问题还是系统相关问题）时丢失数据，备份是必不可少的。 [单击此处](../../production/using/backup.md)以了解更多信息。有关恢复过程的说明，请参见 [本节](../../production/using/restoration.md).
 
 ## Campaign Classic技术原则 {#campaign-classic-technical-principles}
 
-技术资源可在Campaign Classic文档中找到。 我们建议您先熟悉这些主题，然后再对实例执行任何技术操作。
+Campaign Classic文档中提供了技术资源。 我们建议您先熟悉这些主题，然后再对实例执行任何技术操作。
 
 **托管模型和功能**
 

@@ -2,11 +2,12 @@
 product: campaign
 title: 技术说明 — 更新您的环境以使用IMS连接到Adobe Campaign
 description: Campaign - IMS更新
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Technote, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '586'
 ht-degree: 9%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 9%
 
 
 
-2021年6月30日，已对 [AdobeIdentity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS)登录功能，这可能会影响您继续使用Adobe Campaign的能力。 了解如何确保继续使用Adobe Campaign Classic v7而不中断。
+2021年6月30日，已对 [AdobeIdentity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS)登录功能，这可能会影响您继续使用Adobe Campaign的能力。 了解如何确保继续不间断地使用Adobe Campaign Classic v7。
 
 ## 更改了哪些内容？
 
@@ -23,13 +24,13 @@ AdobeIdentity Management服务(IMS)已停止支持上的旧Internet Explorer版�
 
 Adobe希望在2021年6月30日之后为所有客户保留IMS功能。 IMS是安全框架的一部分，该框架允许用户登录到客户端控制台，即Adobe Campaign。
 
-要保留此功能，客户必须在每个用户的计算机上更新客户端控制台，并确保对您的 [Windows版本](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)，替换为 **Internet Explorer 11** 内置，安装在每个用户的计算机上。
+要保留此功能，客户必须更新每个用户计算机上的客户端控制台，并确保对您的进行最新更新 [Windows版本](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)，替换为 **Internet Explorer 11** 内置，安装在每个用户的计算机上。
 
 ## 您是否受影响？
 
-如果您要连接到Campaign [通过Adobe ID](../../integrations/using/about-adobe-id.md)，通过AdobeIdentity Management服务(IMS)，并运行比下面列出的版本旧的Campaign版本，您会受到影响。
+如果您要连接到Campaign [通过Adobe ID](../../integrations/using/about-adobe-id.md)，通过AdobeIdentity Management服务(IMS)并运行比下面列出的版本旧的Campaign版本，您会受到影响。
 
-如果已升级但使用的是旧版本的Microsoft Internet Explorer，则必须升级到Internet Explorer 11。
+如果您已升级，但使用的是旧版本的Microsoft Internet Explorer，则必须升级到Internet Explorer 11。
 
 ## 如何更新？
 
@@ -37,7 +38,7 @@ Adobe希望在2021年6月30日之后为所有客户保留IMS功能。 IMS是安�
 
 * 作为内部部署/混合部署客户，您需要升级到上面列出的较新版本之一，以便从新的客户端控制台中受益并确保无缝过渡 **2021年6月30日之前**.
 
-  必须升级到下面列出的新版本之一：
+  必须升级到下列新版本之一：
 
    * Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
    * Campaign 21.1.3版本。 [了解详情](../../rn/using/latest-release.md)
@@ -45,9 +46,9 @@ Adobe希望在2021年6月30日之后为所有客户保留IMS功能。 IMS是安�
    * Campaign 20.1.4版本。
    * Campaign 19.2.4版本。
 
-  这些版本随附新的连接协议。 Campaign服务器和客户端控制台都必须升级：升级所有实例后，客户端控制台需要升级到此版本，并且之后能够连接到Campaign **2021年6月30日**.
+  这些版本随附新的连接协议。 Campaign服务器和客户端控制台都必须进行升级：一旦升级了所有实例，客户端控制台就需要升级到此版本，并且之后能够连接到Campaign **2021年6月30日**.
 
-此外，请确保 [Windows版本](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)，替换为 **Internet Explorer 11** 内置，安装在每个用户的计算机上。
+此外，请确保对您的 [Windows版本](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)，替换为 **Internet Explorer 11** 内置，安装在每个用户的计算机上。
 
 ## 常见问题解答
 
@@ -66,13 +67,13 @@ Adobe希望在2021年6月30日之后为所有客户保留IMS功能。 IMS是安�
 
 或者
 
-* 启动Campaign客户端控制台，并检查连接窗口。 如果您要与Adobe ID连接（如下面的屏幕所示），则使用的是IMS。
+* 启动Campaign客户端控制台，并检查您的连接窗口。 如果您正在与Adobe ID连接，如以下屏幕所示，则您使用的是IMS。
 
   ![](../../integrations/using/assets/adobeID.png)
 
 **连接警告消息**
 
-如果用户需要更新其客户端控制台或使用旧版本的Microsoft Internet Explorer，他们将会看到以下警告消息： **您需要安装更新到Windows和/或Adobe应用的最新版本。**
+如果用户需要更新其客户端控制台或使用旧版本的Microsoft Internet Explorer，则以下警告消息对用户可见： **您需要安装更新到Windows和/或Adobe应用的最新版本。**
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
@@ -94,4 +95,4 @@ Adobe希望在2021年6月30日之后为所有客户保留IMS功能。 IMS是安�
 * [使用户可以使用新的客户端控制台](../../installation/using/client-console-availability-for-windows.md)
 * [安装 Campaign Client Console](../../installation/using/installing-the-client-console.md)
 * [访问Adobe软件分发](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)
-* [下载Campaign Classic内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)
+* [下载Campaign Classic版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)

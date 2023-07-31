@@ -2,15 +2,15 @@
 product: campaign
 title: Adobe Campaign Classic v7 文档更新
 description: 本页列出了 Adobe Campaign Classic 文档中的所有新增功能和更新
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+feature: Release Notes
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3577'
-ht-degree: 100%
+source-wordcount: '3584'
+ht-degree: 99%
 
 ---
 

@@ -2,16 +2,17 @@
 product: campaign
 title: 集成到 Windows 版 Web 服务器
 description: 集成到 Windows 版 Web 服务器
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 4%
+source-wordcount: '907'
+ht-degree: 5%
 
 ---
 
@@ -25,10 +26,10 @@ Adobe Campaign包括Apache Tomcat，它通过HTTP（和SOAP）充当应用程序
 
 在本例中：
 
-* 默认侦听端口为8080。 要更改此名称，请参阅 [本节](../../installation/using/configure-tomcat.md).
+* 默认侦听端口为8080。 要更改它，请参阅 [本节](../../installation/using/configure-tomcat.md).
 * 然后，客户端控制台使用URL进行连接，例如 ```https:// `<computer>`:8080```.
 
-但是，出于安全和管理原因，我们建议使用专用的Web服务器作为HTTP流量的主要入口点，因为运行Adobe Campaign的计算机在Internet上公开并且您希望打开对网络外部控制台的访问。
+但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开访问网络外部的控制台时，我们建议使用专用的Web服务器作为HTTP流量的主要入口点。
 
 Web服务器还允许您通过HTTPs协议保证数据机密性。
 
@@ -44,7 +45,7 @@ IIS Web服务器的配置过程大多是图形化的。 它涉及使用网站（
 
 以下部分详细介绍了IIS 7中的配置。 IIS8的配置基本相同。
 
-如果您的计算机上尚未安装Web IIS服务器，可以通过 **[!UICONTROL Add > Remove Programs > Enable or disable Windows functionalities]** 菜单。
+如果计算机上尚未安装Web IIS服务器，则可以通过 **[!UICONTROL Add > Remove Programs > Enable or disable Windows functionalities]** 菜单。
 
 在IIS 7中，除了标准服务之外，您还需要安装ISAPI扩展和ISAPI过滤器。
 
@@ -54,12 +55,12 @@ IIS Web服务器的配置过程大多是图形化的。 它涉及使用网站（
 
 应用以下配置步骤：
 
-1. 通过打开IIS **[!UICONTROL Control panel > Administrative tools > Services]** 菜单。
+1. 通过以下方式打开IIS： **[!UICONTROL Control panel > Administrative tools > Services]** 菜单。
 1. 根据网络参数（TCP连接端口、DNS主机、IP地址）创建和配置站点(例如，Adobe Campaign)。
 
    ![](assets/s_ncs_install_iis7_add_site.png)
 
-   您必须至少指定站点的名称和虚拟目录的访问路径。 由于不使用Website目录的访问路径，因此可以使用以下目录。
+   必须至少指定站点的名称和虚拟目录的访问路径。 由于不使用Website目录的访问路径，因此可以使用以下目录。
 
    ```
    C:\inetpub\wwwroot
@@ -73,11 +74,11 @@ IIS Web服务器的配置过程大多是图形化的。 它涉及使用网站（
 
    >[!NOTE]
    >
-   >如果是Windows Server 2008/IIS7安装，则必须以管理员身份登录才能运行VBS脚本或以管理员身份执行该脚本。
+   >如果是Windows Server 2008/IIS7安装，您必须以管理员身份登录才能运行VBS脚本或以管理员身份执行该脚本。
 
-   单击 **[!UICONTROL OK]** 如果Web服务器用作跟踪重定向服务器，否则请单击 **[!UICONTROL Cancel]**.
+   单击 **[!UICONTROL OK]** 如果将Web服务器用作跟踪重定向服务器，则单击 **[!UICONTROL Cancel]**.
 
-   如果已在Web服务器上配置了多个站点，则会显示一个中间页面，用于指定安装适用于哪个网站：输入链接到站点的编号，然后单击 **[!UICONTROL OK]**.
+   当Web服务器上已配置了多个站点时，将显示一个中间页面，用于指定安装应用于哪个网站：输入链接到该站点的编号，然后单击 **[!UICONTROL OK]**.
 
    ![](assets/s_ncs_install_iis7_parameters_step3.png)
 
@@ -85,7 +86,7 @@ IIS Web服务器的配置过程大多是图形化的。 它涉及使用网站（
 
    ![](assets/s_ncs_install_iis7_parameters_step7.png)
 
-1. 在 **[!UICONTROL Content View]** 选项卡中，确保使用Adobe Campaign资源正确配置了网站：
+1. 在 **[!UICONTROL Content View]** 选项卡上，确保使用Adobe Campaign资源正确配置了网站：
 
    ![](assets/s_ncs_install_iis7_parameters_step6.png)
 
@@ -97,11 +98,11 @@ IIS Web服务器的配置过程大多是图形化的。 它涉及使用网站（
 
 要执行此操作，请应用以下步骤：
 
-1. 选择 **[!UICONTROL Features View]** 选项卡，然后双击 **身份验证** 链接。
+1. 选择 **[!UICONTROL Features View]** 选项卡，并双击 **身份验证** 链接。
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
-1. 在 **目录安全** 选项卡中，确保启用了匿名访问。 如有必要，请单击 **[!UICONTROL Edit]** 用于更改设置的链接。
+1. 在 **目录安全** 选项卡中，确保已启用匿名访问。 如有必要，请单击 **[!UICONTROL Edit]** 用于更改设置的链接。
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
@@ -109,13 +110,13 @@ IIS Web服务器的配置过程大多是图形化的。 它涉及使用网站（
 
 您现在必须测试配置是否正确。
 
-要执行此操作，请应用以下步骤：
+要实现此目的，请执行以下步骤：
 
 1. 使用重新启动IIS服务器 **iisreset** 命令行。
 
 1. 启动Adobe Campaign服务，然后确保该服务正在运行。
 
-1. 通过将以下URL插入Web浏览器来测试跟踪模块：
+1. 通过将以下URL插入到Web浏览器中来测试跟踪模块：
 
    ```
    https://<computer>/r/test
@@ -155,17 +156,17 @@ webmdl@default (1644) - 18.2 Mo
 
 在配置IIS Web服务器时，对于上载到服务器的设置文件，会自动限制大约28 MB。
 
-这可能会在Adobe Campaign中产生影响，尤其是当您想要上传的文件大于此限制时。
+这可能会在Adobe Campaign中造成影响，特别是当您要上传大于此限制的文件时。
 
-例如，如果您使用 **正在加载数据（文件）** 在工作流中键入活动以导入50 MB的文件，如果出现错误，工作流将无法正确执行。
+例如，如果您使用 **数据加载（文件）** 在工作流中键入活动以导入50 MB的文件，如果出现错误，工作流将无法正确执行。
 
 在这种情况下，您必须提高此限制：
 
-1. 通过打开IIS **[!UICONTROL Start > (Control panel) > Administration tools]** 菜单。
-1. 在 **连接** 窗格中，选择为Adobe安装创建的站点，然后双击 **请求筛选** 在主窗格中。
-1. 在 **操作** 窗格，选择 **编辑功能设置** 以便能够编辑中的值 **最大授权内容大小（字节）** 字段。
+1. 通过以下方式打开IIS： **[!UICONTROL Start > (Control panel) > Administration tools]** 菜单。
+1. 在 **连接** 窗格，选择为Adobe安装创建的站点，然后双击 **请求筛选** 在主窗格中。
+1. 在 **操作** 窗格，选择 **编辑功能设置** 能够编辑中的值 **最大授权内容大小（字节）** 字段。
 
-   例如，要授权上传50 MB的文件，您必须指定一个大于“52428800”字节的值。
+   例如，要授权上传50 MB的文件，必须指定大于“52428800”字节的值。
 
 >[!NOTE]
 >

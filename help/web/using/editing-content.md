@@ -2,13 +2,13 @@
 product: campaign
 title: 编辑内容
 description: 编辑内容
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 您可以指定网页元素的可见性条件：仅当满足该条件时，此元素才可见。
 
-要添加可见性条件，请选择一个块，然后在 **[!UICONTROL Visibility condition]** 使用表达式编辑器的字段。
+要添加可见性条件，请选择块并在 **[!UICONTROL Visibility condition]** 使用表达式编辑器的字段。
 
 ![](assets/dce_add_condition.png)
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-这些条件采用XTK表达式语法(例如 **ctx.recipient.@电子邮件 != &quot;&quot;** 或 **ctx.recipient.@status==&quot;0&quot;**)。 默认情况下，所有字段均可见。
+这些条件采用XTK表达式语法(例如 **ctx.recipient.@电子邮件 !=“”** 或 **ctx.recipient.@status==“0”**)。 默认情况下，所有字段均可见。
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ### 更改表单的数据属性 {#changing-the-data-properties-for-a-form}
 
-可以将数据库字段与输入区域、单选按钮或复选框类型块链接。
+您可以将数据库字段与输入区域、单选按钮或复选框类型块链接在一起。
 
 ![](assets/dce_sidebar_field.png)
 
@@ -65,25 +65,25 @@ ht-degree: 1%
 
 ![](assets/dce_field_selection.png)
 
-此 **必填字段** 选项允许您仅在用户填写字段时才授权页面审批。 如果未填写必填字段，则会显示错误消息。
+此 **必填字段** 选项允许您仅在用户填写字段后才授权页面审批。 如果未填写必填字段，则会显示错误消息。
 
 对于单选按钮和复选框， **需要其他配置**.
 
-事实上，如果使用的模板在默认情况下不包含值，则必须在编辑器中完成该设置。
+事实上，如果所用的模板在默认情况下不包含值，则必须在编辑器中完成该设置。
 
 操作步骤：
 
 * 单击 **[!UICONTROL Edit]** 图标。
 
-   ![](assets/dce_sidebar_options.png)
+  ![](assets/dce_sidebar_options.png)
 
-* 将明细列表值（由所选字段定义）输入到 **[!UICONTROL Value]** 字段。
+* 将明细列表值（由所选字段定义）输入 **[!UICONTROL Value]** 字段。
 
-   ![](assets/dce_sidebar_completeoptionradio.png)
+  ![](assets/dce_sidebar_completeoptionradio.png)
 
 ### 修改表单字段 {#modifying-form-fields}
 
-单选按钮、输入区域、下拉列表等表单字段。 可以从其工具栏中修改。
+表单字段，例如单选按钮、输入区域、下拉列表等。 可以从其工具栏进行修改。
 
 这意味着您可以：
 
@@ -91,7 +91,7 @@ ht-degree: 1%
 * 通过使用创建新块来复制所选字段 **[!UICONTROL Duplicate]** 图标。
 * 编辑 **[!UICONTROL Form data]** 窗口将数据库字段链接到表单区域，使用 **[!UICONTROL Edit]** 图标。
 
-   ![](assets/dce_toolbar_formblock_edition.png)
+  ![](assets/dce_toolbar_formblock_edition.png)
 
 ## 向按钮添加操作 {#adding-an-action-to-a-button}
 
@@ -115,7 +115,7 @@ ht-degree: 1%
 
 您可以将链接插入到任意页面元素中：图像、单词、单词组、文本块等。
 
-要实现此目的，请选择元素，然后使用弹出式菜单中的第一个图标。
+要实现此目的，请选择元素，然后使用弹出菜单中的第一个图标。
 
 ![](assets/dce_insertlink_icon.png)
 
@@ -127,7 +127,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->对于每种类型的链接，您可以配置打开模式：选择中的目标窗口 **Target** 下拉列表。 此值对应于 **`<target>`** HTML标记。
+>对于每种类型的链接，都可以配置打开模式：选择中的目标窗口 **Target** 下拉列表。 此值对应于 **`<target>`** HTML标记。
 >
 >可用列表 **目标** 如下所示：
 >
@@ -139,10 +139,9 @@ ht-degree: 1%
 >* 默认浏览器行为
 >
 
-
 ### 链接到URL {#link-to-a-url}
 
-此 **链接到外部URL** 选项允许您从源内容中打开任何URL。
+此 **链接到外部URL** 选项允许您从源内容打开任何URL。
 
 ![](assets/dce_toolbar_imgblock_externallink.png)
 
@@ -189,13 +188,13 @@ ht-degree: 1%
 
 * **放大字体** 图标：增加所选文本的大小(添加 `<span style="font size:">`)
 * **缩小字体** 图标：减小所选文本的大小(添加 `<span style="font size:">`)
-* **粗体** 图标：使所选文本变为粗体(文本换行 `<strong> </strong>` tag)
-* **斜体** 图标：将选定的文本变为斜体(文本换行  `<em> </em>` tag)
-* **下划线** 图标：使所选文本加下划线(文本换行 `<span style="text-decoration: underline;">` tag)
-* **左对齐** icon：将文本与选定块的左侧对齐(add style=&quot;text-align： left；&quot;)
-* **居中** 图标：将选定块的文本居中对齐(add style=&quot;text-align： center；&quot;)
-* **右对齐** icon：将文本与选定块的右侧对齐(add style=&quot;text-align： right；&quot;)
-* **更改背景颜色** 图标：用于更改所选块的背景颜色(add style=&quot;background-color： rgba(170， 86， 255， 0.87))
+* **粗体** 图标：将所选文本变为粗体（使用将文本换行） `<strong> </strong>` 标记)
+* **斜体** 图标：将选定的文本变为斜体(使用自动换行  `<em> </em>` 标记)
+* **下划线** 图标：将选定文本加下划线(文本换行 `<span style="text-decoration: underline;">` 标记)
+* **左对齐** 图标：将文本与选定块的左侧对齐（添加style=&quot;text-align： left；&quot;）
+* **居中** 图标：将选定块的文本居中（添加style=&quot;text-align： center；&quot;）
+* **右对齐** 图标：将文本与选定块的右侧对齐（添加style=&quot;text-align： right；&quot;）
+* **更改背景颜色** 图标：用于更改选定块的背景颜色(添加style=&quot;background-color： rgba(170， 86， 255， 0.87))
 * **更改文本颜色** 图标：用于更改选定块的文本颜色或仅更改选定文本(`<span style="color: #CODE">`)
 
 >[!NOTE]
@@ -204,10 +203,9 @@ ht-degree: 1%
 >
 >* **复制** 图标：复制块以及与该块相关的所有样式。
 
-
 ## 管理图像和动画 {#managing-images-and-animations}
 
-数字内容编辑器允许您处理 **任意类型的图像** 与浏览器兼容。
+使用数字内容编辑器，您可以 **任何类型的图像** 与浏览器兼容。
 
 >[!CAUTION]
 >
@@ -215,7 +213,7 @@ ht-degree: 1%
 
 ### 添加/删除/复制图像 {#adding---deleting---duplicating-an-image}
 
-要插入图像，请选择一个图像类型块，然后单击 **图像** 图标。
+要插入图像，请选择图像类型块，然后单击 **图像** 图标。
 
 ![](assets/dce_insert_image.png)
 
@@ -223,40 +221,40 @@ ht-degree: 1%
 
 ![](assets/dce_popup_imgupload.png)
 
-此 **删除** 图标删除包含图像的标记。
+此 **删除** 图标会删除包含图像的标记。
 
-此 **复制** 图标复制标记及其内容。
+此 **复制** 图标会复制标记及其内容。
 
 >[!CAUTION]
 >
->复制图像时，与新图像相关的标识符会被删除。
+>复制图像时，与新图像相关的标识符将被删除。
 
 ### 编辑图像属性 {#editing-image-properties}
 
 当您选择包含图像的块时，您可以访问以下属性：
 
-* **题注** 用于定义链接到图像的题注(对应于 **alt** HTML属性)。
+* **题注** 用于定义链接到图像的标题(对应于 **alt** HTML属性)。
 * **Dimension** 用于指定图像大小（以像素为单位）。
 
-   ![](assets/dce_popup_imgsize.png)
+  ![](assets/dce_popup_imgsize.png)
 
 ## 添加个性化内容 {#adding-personalization-content}
 
 ### 插入个性化字段 {#inserting-a-personalization-field}
 
-此 **个性化字段** 插入图标的选项允许您向内容中添加数据库字段，如收件人的姓名。 此选项仅适用于文本类型块。
+此 **个性化字段** 插入图标的选项允许您向内容添加数据库字段，如收件人的姓名。 此选项仅适用于文本类型块。
 
 ![](assets/dce_toolbar_textblock_persofield.png)
 
-默认情况下，提供的字段来自 **[!UICONTROL Recipient]** 表格。 必要时，编辑Web应用程序的属性以选择其他表。
+默认情况下，提供的字段来自 **[!UICONTROL Recipient]** 表格。 必要时，编辑Web应用程序属性以选择其他表。
 
 字段名称显示在编辑器中，以黄色突出显示。 在生成个性化设置时（例如，预览登陆页面时），它将被目标收件人的用户档案替换。
 
-以下示例介绍了 [插入个性化字段](creating-a-landing-page.md#inserting-a-personalization-field) 部分。
+有关示例，请参见 [插入个性化字段](creating-a-landing-page.md#inserting-a-personalization-field) 部分。
 
 ### 插入个性化块 {#inserting-a-personalization-block}
 
-此 **个性化块** 选项允许您将动态和个性化的块插入到内容中。 例如，您可以添加徽标或问候语。 它不可用于文本类型块。
+此 **个性化块** 选项允许您将动态和个性化的块插入到内容中。 例如，您可以添加徽标或问候语。 它不适用于文本类型块。
 
 ![](assets/dce_toolbar_textblock_persoblock.png)
 

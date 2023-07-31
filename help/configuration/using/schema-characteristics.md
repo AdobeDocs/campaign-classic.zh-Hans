@@ -2,12 +2,13 @@
 product: campaign
 title: 模式特性
 description: 模式特性
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Custom Resources
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '392'
 ht-degree: 2%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 2%
 
 
 
-引用现有表的架构的特性如下：
+引用现有表的方案的特性如下：
 
 * Adobe Campaign不得修改相对于现有表的SQL对象，
 * 必须显式指定表和列的名称，
@@ -28,15 +29,15 @@ ht-degree: 2%
 
 ## 视图属性 {#the-view-attribute}
 
-源架构接受 **视图** 属性 **srcSchema** 根元素。 在自定义表中处理Adobe Campaign时，必须使用该属性。 此 **view=&quot;true&quot;** 属性告知database structure update wizard忽略此模式。 因此，禁止应用程序将表、其列及其索引与相应的模式同步。
+源架构接受 **视图** 属性 **srcSchema** 根元素。 在自定义表中处理Adobe Campaign时，必须使用该字段。 此 **view=&quot;true&quot;** 属性告知数据库结构更新向导忽略此模式。 因此，禁止应用程序将表、其列及其索引与相应的模式同步。
 
 当此属性设置为 **true**，则架构仅用于生成SQL查询以访问此表的数据。
 
 ## 表和列的名称 {#names-of-tables-and-columns}
 
-当表由表更新向导创建时，表的名称和列名将根据相应架构和属性的名称自动生成。 但是，可以通过输入以下属性来强制使用SQL名称：
+当表由表更新向导创建时，会根据相应架构和属性的名称自动生成表和列的名称。 但是，可以通过输入以下属性来强制使用SQL名称：
 
-* **sqltable** 在架构的主元素中，要指定表，请执行以下操作
+* **sqltable** 在架构的主元素中，要指定表，请执行以下操作：
 * **sqlname** 在每个属性中，指定列。
 
 **示例**:
@@ -54,13 +55,13 @@ ht-degree: 2%
 </element>
 ```
 
-在此示例中，如果未显式指定表和列的名称，应用程序将使用 **自定义个人** 对于表格， **姓氏** 和 **名字** （对于列）。
+在本例中，如果未显式指定表和列的名称，应用程序将使用 **自定义个人** 在桌子上， **姓氏** 和 **名字** 用于列。
 
-在架构中，可以只填充现有表列的一部分。 用户无法访问未填充的列。
+在模式中，可以只填充现有表列的一部分。 用户无法访问未填充的列。
 
 ## 索引字段 {#indexed-fields}
 
-从客户端控制台对列表记录进行排序时，通过对索引字段进行排序，可以获得更好的性能。 在架构中声明索引时，控制台会在列标签左侧的排序顺序箭头下用红线显示索引字段，如下所示：
+从客户端控制台对列表记录进行排序时，通过对索引字段进行排序，可以获得更好的性能。 在架构中声明索引，使控制台在列标签左侧的排序顺序箭头下以红线显示索引字段，如下所示：
 
 ![](assets/s_ncs_integration_mapping_index.png)
 

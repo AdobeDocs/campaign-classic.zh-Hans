@@ -2,13 +2,13 @@
 product: campaign
 title: 个性化和隐私
 description: 了解隐私和个性化的安全最佳实践
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: URL Personalization, Privacy
+feature: Installation, Privacy, Privacy Tools, URL Personalization
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 2%
+source-wordcount: '852'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## URL个性化 {#url-personalization}
 
-向内容添加个性化链接时，请始终避免在URL的主机名部分进行任何个性化设置，以避免潜在的安全漏洞。 切勿在所有URL属性中使用以下示例&lt;`a href="">` 或 `<img src="">`：
+向内容添加个性化链接时，请始终避免在URL的主机名部分进行任何个性化设置，以避免潜在的安全缺口。 绝不应该在所有URL属性中使用以下示例&lt;`a href="">` 或 `<img src="">`：
 
 * `<%= url >`
 * `https://<%= url >`
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 ### 推荐
 
-要验证并确保未使用上述功能，请通过以下方式运行对跟踪URL表的查询： [Campaign通用查询编辑器](../../platform/using/steps-to-create-a-query.md) 或创建包含过滤条件的工作流 [查询活动](../../workflow/using/query.md).
+要验证并确保未使用上文，请通过以下方式运行跟踪URL表上的查询： [Campaign通用查询编辑器](../../platform/using/steps-to-create-a-query.md) 或者，使用中的筛选条件创建工作流 [查询活动](../../workflow/using/query.md).
 
 示例:
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
    `source URL starts with http://<% or source URL starts with https://<%`
 
-1. 运行工作流并检查是否存在结果。
+1. 运行工作流并检查结果是否存在。
 
 1. 如果是这样，请打开输出过渡以查看URL列表。
 
@@ -48,29 +48,29 @@ ht-degree: 2%
 
 ### URL签名
 
-为了提高安全性，引入了一种用于跟踪电子邮件中链接的签名机制。 该版本从19.1.4版(9032@3a9dc9c)和20.2版开始提供。此功能默认处于启用状态。
+为了提高安全性，引入了一种用于跟踪电子邮件中链接的签名机制。 它从19.1.4版(9032@3a9dc9c)和20.2版开始提供。此功能默认处于启用状态。
 
 >[!NOTE]
 >
->单击格式错误的签名URL时，返回此错误： `Requested URL '…' was not found.`
+>单击格式错误的签名URL时，将返回此错误： `Requested URL '…' was not found.`
 
 此外，您还可以使用增强功能来禁用在以前的内部版本中生成的URL。 默认情况下，此功能处于禁用状态。 您可以联系 [客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 以启用此功能。
 
-如果您在19.1.4内部版本上运行，则可能会遇到使用跟踪链接的推送通知投放或使用锚点标记的投放问题。 如果出现这种情况，建议您禁用URL签名。
+如果您在19.1.4内部版本上运行，则在使用跟踪链接或使用锚点标记进行投放时可能会遇到问题。 如果出现这种情况，建议您禁用URL签名。
 
 作为Campaign托管、托管Cloud Services或混合型客户，您必须联系 [客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) 禁用URL签名。
 
-如果您在混合架构中运行Campaign，则在启用URL签名之前，请确保已按如下方式升级托管的中间源实例：
+如果您在混合架构中运行Campaign，则在启用URL签名之前，请确保已如下所示升级托管的中源实例：
 
 * 首先是内部部署营销实例
 * 然后，升级到与内部部署营销实例相同的版本或略高的版本
 
 否则，可能会出现以下一些问题：
 
-* 在升级中间源实例之前，将通过此实例发送URL，而不进行签名。
-* 升级中间源实例并在两个实例上启用URL签名后，之前发送但未签名的URL将被拒绝。 原因是营销实例提供的跟踪文件需要签名。
+* 在升级中间源实例之前，将通过该实例发送URL，而不进行签名。
+* 升级中间源实例并在两个实例上启用URL签名后，先前未签名发送的URL将被拒绝。 原因是营销实例提供的跟踪文件需要签名。
 
-要禁用在以前的内部版本中生成的URL，请同时在所有Campaign服务器上执行以下步骤：
+要禁用以前内部版本中生成的URL，请同时在所有Campaign服务器上执行以下步骤：
 
 1. 在服务器配置文件中(`serverConf.xml`)，更改 **blockRedirectForUnsignedTrackingLink** 选项至 **true**.
 1. 重新启动 `nlserver` 服务。
@@ -84,7 +84,7 @@ ht-degree: 2%
 
 ## 数据限制
 
-您必须确保低权限验证用户无法访问加密的密码。 为此，请限制仅访问密码字段或访问整个实体（需要build >= 8770）。
+您必须确保低权限验证用户无法访问加密密码。 为此，应限制仅访问密码字段，或访问整个实体（需要build >= 8770）。
 
 此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 [了解详情](../../configuration/using/restricting-pii-view.md)。
 
@@ -100,7 +100,7 @@ ht-degree: 2%
 
 1. 在最后一个向导屏幕中，编辑新的“srcSchema”以限制对所有密码字段的访问：
 
-   您可以替换主元素(`<element name="extAccount" ... >`)：
+   您可以替换主元素(`<element name="extAccount" ... >`)，按照：
 
    ```sql
    <element name="extAccount">
@@ -153,20 +153,20 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >您可以替换 `$(loginId) = 0 or $(login) = 'admin'` 替换为 `hasNamedRight('admin')` 允许具有管理员权限的所有用户查看这些密码。
+   >您可以替换 `$(loginId) = 0 or $(login) = 'admin'` 替换为 `hasNamedRight('admin')` 允许所有具有管理员权限的用户查看这些密码。
 
 ## 带PI的Protect页面
 
 我们强烈建议内部部署客户保护可能包含个人信息(PI)的页面，如镜像页面、Web应用程序等。
 
-此过程的目标是防止对这些页面编制索引，从而避免潜在的安全风险。 以下是一些有用的文章：
+此过程的目标是防止对这些页编制索引，从而避免潜在的安全风险。 以下是一些有用的文章：
 
 * [https://developers.google.com/search/reference/robots_txt](https://developers.google.com/search/reference/robots_txt)
 * [https://developers.google.com/search/reference/robots_meta_tag](https://developers.google.com/search/reference/robots_meta_tag)
 
-要保护页面，请执行以下步骤：
+要保护您的页面，请执行以下步骤：
 
-1. 添加 `robots.txt` 文件，该文件位于Web服务器的根目录（Apache或IIS）。 以下是文件的内容：
+1. 添加 `robots.txt` 文件，该文件位于Web服务器的根目录下（Apache或IIS）。 以下是文件的内容：
 
    ```sql
    # Make changes for all web spiders
@@ -178,13 +178,13 @@ ht-degree: 2%
 
    对于Apache，您可以将该文件放入 **/var/www/robots.txt** (Debian)。
 
-1. 有时添加 **robots.txt** 文件的安全性不够。 例如，如果其他网站包含指向您的页面的链接，则它可能会显示在搜索结果中。
+1. 有时添加 **robots.txt** 文件的安全性不够。 例如，如果其他网站包含指向您的页面的链接，则该链接可能会显示在搜索结果中。
 
-   除了 **robots.txt** 文件，建议添加 **X-Robots-Tag** 标头。 您可以在Apache或IIS中执行此操作，以及在 **serverConf.xml** 配置文件。
+   除了 **robots.txt** 文件，建议添加 **X-Robots-Tag** 标题。 您可以在Apache或IIS中以及在 **serverConf.xml** 配置文件。
 
    有关更多信息，请参阅 [本文](https://developers.google.com/search/reference/robots_meta_tag).
 
 
 ## 隐私请求
 
-请参阅 [此页面](../../platform/using/privacy-management.md) 有关Adobe Campaign中的隐私管理概念和实施步骤的一般信息。 您还可以找到最佳实践以及用户流程和角色的概述。
+请参阅 [此页面](../../platform/using/privacy-management.md) 有关Adobe Campaign中隐私管理的概念和实施步骤的一般信息。 您还可以找到最佳实践以及用户流程和角色的概述。

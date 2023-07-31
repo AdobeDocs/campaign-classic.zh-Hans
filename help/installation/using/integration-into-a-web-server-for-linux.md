@@ -2,16 +2,17 @@
 product: campaign
 title: 集成到 Linux 版的 Web 服务器
 description: 了解如何将Campaign集成到Web服务器(Linux)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 5%
+source-wordcount: '579'
+ht-degree: 6%
 
 ---
 
@@ -25,18 +26,18 @@ Adobe Campaign包括Apache Tomcat，它通过HTTP（和SOAP）充当应用程序
 
 在本例中：
 
-* 默认侦听端口为8080。 要更改此名称，请参阅 [本节](configure-tomcat.md).
+* 默认侦听端口为8080。 要更改它，请参阅 [本节](configure-tomcat.md).
 * 然后，客户端控制台使用URL进行连接，例如：
 
-   ```
-   http://<computer>:8080
-   ```
+  ```
+  http://<computer>:8080
+  ```
 
-但是，出于安全和管理原因，我们建议使用专用的Web服务器作为HTTP流量的主要入口点，因为运行Adobe Campaign的计算机在Internet上公开并且您希望打开对网络外部控制台的访问。
+但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开访问网络外部的控制台时，我们建议使用专用的Web服务器作为HTTP流量的主要入口点。
 
 Web服务器还允许您通过HTTPs协议保证数据机密性。
 
-同样，当您希望使用跟踪功能时，必须使用Web服务器，该功能只能作为扩展模块提供给Web服务器。
+同样，当您希望使用跟踪功能时，必须使用Web服务器，该功能只能作为Web服务器的扩展模块使用。
 
 >[!NOTE]
 >
@@ -54,7 +55,7 @@ Web服务器还允许您通过HTTPs协议保证数据机密性。
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   确保 **别名**， **authz_host** 和 **MIME** 模块仍处于启用状态。 为此，请使用以下命令：
+   确保 **别名**， **authz_host** 和 **mime** 模块仍处于启用状态。 为此，请使用以下命令：
 
    ```
    a2enmod  alias authz_host mime
@@ -80,7 +81,7 @@ Web服务器还允许您通过HTTPs协议保证数据机密性。
     a2enmod nlsrv
    ```
 
-   如果您使用 **mod_rewrite** Adobe Campaign模块，您需要重命名 **nlsrv.load** 和 **nlsrv.conf** 文件到 **zz-nlsrv.load** 和 **zz-nlsrv.conf**. 要激活模块，请运行以下命令：
+   如果您使用 **mod_rewrite** 模块对于Adobe Campaign页面，您需要重命名 **nlsrv.load** 和 **nlsrv.conf** 文件到 **zz-nlsrv.load** 和 **zz-nlsrv.conf**. 要激活此模块，请运行以下命令：
 
    ```
    a2enmod zz-nlsrv
@@ -154,9 +155,9 @@ Web服务器还允许您通过HTTPs协议保证数据机密性。
    ForceLanguagePriority
    ```
 
-1. 在中创建Adobe Campaign特定的配置文件 `/etc/httpd/conf.d/` 文件夹。 例如 `CampaignApache.conf`
+1. 在中创建特定于Adobe Campaign的配置文件 `/etc/httpd/conf.d/` 文件夹。 例如 `CampaignApache.conf`
 
-1. 对象 **RHEL7**，请在文件中添加以下说明：
+1. 对象 **RHEL7**&#x200B;中，在文件中添加以下说明：
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
@@ -174,13 +175,13 @@ Web服务器还允许您通过HTTPs协议保证数据机密性。
    Environment=USERPATH=/usr/local/neolane LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib
    ```
 
-   更新systemd使用的模块：
+   更新系统使用的模块：
 
    ```
    systemctl daemon-reload
    ```
 
-1. 然后，通过运行以下命令，将Adobe Campaign运算符添加到Apache运算符组中，反之亦然：
+1. 然后通过运行以下命令，将Adobe Campaign运算符添加到Apache运算符组中（反之亦然）：
 
    ```
    usermod -a -G neolane apache

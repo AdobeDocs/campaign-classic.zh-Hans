@@ -2,12 +2,13 @@
 product: campaign
 title: 安装Campaign Classic内置软件包
 description: 了解如何安装Campaign内置软件包
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1278'
 ht-degree: 13%
 
 ---
@@ -18,17 +19,17 @@ ht-degree: 13%
 
 ## 关于内置软件包 {#campaign-standard-packages}
 
-内置软件包包含一组功能，可以根据您的需求和合同进行安装。 下面提供了Campaign内置包的完整列表。
+内置软件包包含一系列功能，可以根据您的需求和合同进行安装。 下面提供了Campaign内置软件包的完整列表。
 
 >[!CAUTION]
 >
 >您只能安装与许可协议中提到的选项对应的软件包。
 >
->安装新软件包可能会影响您的所有平台：在最终部署之前，必须对其进行测试和验证。
+>安装新包可能会影响您的所有平台：必须在最终部署之前测试和验证该包。
 >
 >软件包安装后，将无法卸载。
 >
->作为托管或混合型客户，请联系Adobe以部署新的内置软件包。
+>作为托管或混合型客户，请联系Adobe以部署新的内置包。
 
 要安装内置软件包，请执行以下操作：
 
@@ -37,14 +38,14 @@ ht-degree: 13%
 1. 在包列表中，选中要安装的包。
    >[!NOTE]
    >
-   >当包呈灰显状态时，表示已安装该包，或者该包与实例不兼容。 兼容性详见下表。
+   >当包呈灰显状态时，表示已安装或与实例不兼容。 兼容性详见下表。
 1. 单击 **[!UICONTROL Next]**，则 **[!UICONTROL Start]** 以开始软件包安装。
 
-   安装包后，进度条将显示 **100%** 并且您可以在安装日志中看到以下消息： **[!UICONTROL Installation of packages successful]**.
+   安装包后，进度栏会显示 **100%** 并且您可以在安装日志中看到以下消息： **[!UICONTROL Installation of packages successful]**.
 
 1. **[!UICONTROL Close]** 安装窗口。
 
-现已安装包。
+包现已安装。
 
 ### 现成软件包列表 {#list-of-standard-packages}
 
@@ -76,7 +77,7 @@ ht-degree: 13%
   </tr> 
   <tr> 
    <td> 优惠引擎（交互）<br /> </td> 
-   <td> 在与给定联系人（客户或目标）交互期间通过使其成为单个或多个自适应优惠实时响应。  可选。<a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">了解详情</a> <br /> </td> 
+   <td> 在与给定联系人（客户或目标）交互期间通过使其成为单个或数个自适应优惠实时响应。  可选。<a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">了解详情</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
@@ -86,7 +87,7 @@ ht-degree: 13%
   </tr> 
   <tr> 
    <td> 执行实例的优惠引擎。 可选。<br /> </td> 
-   <td> 要在选件引擎（交互）的执行实例上安装的包。 <a href="../../interaction/using/distributed-architectures.md">了解详情</a> </td> 
+   <td> 要在优惠引擎（交互）的执行实例上安装的包。 <a href="../../interaction/using/distributed-architectures.md">了解详情</a> </td> 
    <td> 中间，执行 <br /> </td>  
   </tr> 
   <!--tr> 
@@ -112,7 +113,7 @@ ht-degree: 13%
   </tr> 
   <tr> 
    <td> LINE 渠道<br /> </td> 
-   <td> 使用带有Adobe Campaign的LINE渠道发送投放。 可选。事务性消息传递（消息中心包）是必需的。 <a href="../../delivery/using/line-channel.md">了解详情</a> <br /> </td> 
+   <td> 在Adobe Campaign中使用LINE渠道发送投放。 可选。事务性消息传递（消息中心包）是必需的。 <a href="../../delivery/using/line-channel.md">了解详情</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
@@ -122,12 +123,12 @@ ht-degree: 13%
   </tr> 
   <tr> 
    <td> 移动频道 (SMS) <br /> </td> 
-   <td> 通过Adobe Campaign使用移动/短信渠道发送投放。 可选。<a href="../../delivery/using/sms-channel.md">了解详情</a> <br /> </td> 
+   <td> 使用带有Adobe Campaign的移动/短信渠道发送投放。 可选。<a href="../../delivery/using/sms-channel.md">了解详情</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
    <tr> 
    <td> 电话渠道<br /> </td> 
-   <td> 使用Adobe Campaign的电话渠道发送投放。 用于呼叫中心。 可选。<a href="../../delivery/using/communication-channels.md">了解详情</a> <br /> </td> 
+   <td> 在Adobe Campaign中使用电话渠道发送投放。 用于呼叫中心。 可选。<a href="../../delivery/using/communication-channels.md">了解详情</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
@@ -141,13 +142,13 @@ ht-degree: 13%
    <td> </td>
   </tr> 
   <tr> 
-   <td> 在线调查（调查管理器）<br /> </td> 
+   <td> 在线调查(Survey Manager)<br /> </td> 
    <td> 创建和管理在线表单，以添加或修改用户档案信息、订阅、取消订阅或竞争登录表单。 可选。<a href="../../surveys/using/about-surveys.md">了解详情</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
    <td> Marketing Analytics<br /> </td> 
-   <td> 用于分析和测量数据、计算统计信息、简化和优化报告创建和计算。 此外，您还可以创建报告并构建目标群体。 可选。<a href="../../reporting/using/ac-cubes.md">了解详情</a><br /> </td> 
+   <td> 用于分析和测量数据、计算统计数据、简化和优化报告创建和计算。 此外，您还可以创建报告并构建目标群体。 可选。<a href="../../reporting/using/ac-cubes.md">了解详情</a><br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -157,17 +158,17 @@ ht-degree: 13%
   </tr> 
   <tr> 
    <td> 访问外部数据（联合数据访问）<br /> </td> 
-   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，这样您就可以在不更改Adobe Campaign数据结构的情况下访问外部数据。  可选。<a href="../../workflow/using/accessing-an-external-database--fda-.md">了解详情</a> <br /> </td> 
+   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，以便您能够访问外部数据而不改变Adobe Campaign数据的结构。  可选。<a href="../../workflow/using/accessing-an-external-database--fda-.md">了解详情</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
    <td> 活动优化<br /> </td> 
-   <td> 控制、筛选和监控投放的发送，以便发送的消息最符合客户的需求和期望，同时遵守公司的通信政策。 可选。<a href="../../campaign-opt/using/about-campaign-typologies.md">了解详情</a> <br /> </td> 
+   <td> 控制、过滤和监控投放的发送，以使发送的消息最符合客户的需要和期望，同时遵守公司的通信政策。 可选。<a href="../../campaign-opt/using/about-campaign-typologies.md">了解详情</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
    <td> 可投放性监控（电子邮件可投放性）<br /> </td> 
-   <td> 衡量营销活动在未弹回或标记为垃圾邮件的情况下到达收件人的收件箱是否成功。 可选。<a href="../../delivery/using/about-deliverability.md">了解详情</a> <br /> </td> 
+   <td> 衡量营销活动在未退回或标记为垃圾邮件的情况下到达收件人的收件箱是否成功。 可选。<a href="../../delivery/using/about-deliverability.md">了解详情</a> <br /> </td> 
    <td> 所有 </td> 
   </tr> 
   <tr> 
@@ -177,12 +178,12 @@ ht-degree: 13%
   </tr> 
   <tr> 
    <td> 收件箱呈现(IR)<br /> </td> 
-   <td> 允许您预览在可能接收消息的不同上下文中发送的消息，并检查主要台式机和应用程序中的兼容性。 可选。<a href="../../delivery/using/inbox-rendering.md">了解详情</a><br /> </td> 
+   <td> 允许您预览在可能接收消息的不同上下文中发送的消息，并检查主要桌面和应用程序中的兼容性。 可选。<a href="../../delivery/using/inbox-rendering.md">了解详情</a><br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
    <td> 中央/本地营销（分布式营销）<br /> </td> 
-   <td> 实施中央实体（总部、营销部门等）之间的合作活动 实施协作营销活动。可选。<a href="../../distributed/using/about-distributed-marketing.md">了解详情</a><br /> </td> 
+   <td> 在中央实体（总部、营销部门等）之间实施合作活动 实施协作营销活动。可选。<a href="../../distributed/using/about-distributed-marketing.md">了解详情</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
@@ -212,7 +213,7 @@ ht-degree: 13%
   </tr> 
   <tr> 
    <td> 隐私数据保护规定<br /> </td> 
-   <td> 包含有助于在Campaign Classic中遵守隐私规定的其他功能。 <a href="https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html">了解详情</a> <br /> </td> 
+   <td> 包含可帮助在Campaign Classic中遵守隐私规定的其他功能。 <a href="https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html">了解详情</a> <br /> </td> 
    <td> 所有</td> 
   </tr> 
   <tr> 
@@ -222,7 +223,7 @@ ht-degree: 13%
   </tr> 
   <tr> 
    <td> 中间源平台<br /> </td> 
-   <td> 此配置是托管(ASP)配置和内部化之间的最佳中间解决方案。 在Adobe Campaign托管的“中间源”服务器上执行面向外部的执行组件。 可选。<a href="../../installation/using/mid-sourcing-server.md">了解详情</a> <br /> </td> 
+   <td> 此配置是托管(ASP)配置与内部化之间的最佳中间解决方案。 在Adobe Campaign托管的“中间源”服务器上执行面向外部的执行组件。 可选。<a href="../../installation/using/mid-sourcing-server.md">了解详情</a> <br /> </td> 
    <td> 中间源 </td> 
   </tr> 
   <tr> 
@@ -232,7 +233,7 @@ ht-degree: 13%
   </tr> 
   <tr> 
    <td> ACS连接器（已弃用）<br /> </td> 
-   <td> Bridges Adobe Campaign v7和Adobe Campaign Standard。 它是Campaign v7中的一项集成功能，可自动将数据复制到Campaign Standard，将两个应用程序的最佳功能整合在一起。 可选。<br /> </td> 
+   <td> 桥接器Adobe Campaign v7和Adobe Campaign Standard。 它是Campaign v7中的一项集成功能，可自动将数据复制到Campaign Standard，将两个应用程序的优点结合起来。 可选。<br /> </td> 
    <td> 营销 </td> 
   </tr> 
  </tbody> 
@@ -240,7 +241,7 @@ ht-degree: 13%
 
 ### 消息中心包 {#message-center-package}
 
-您必须安装投放渠道（电子邮件、移动渠道、移动应用程序渠道、LINE等） 安装事务性消息（消息中心包）之前。 如果您已启动仅用于电子邮件的消息中心项目，并且随后需要添加新渠道，则必须执行以下步骤：
+您必须安装投放渠道（电子邮件、移动设备渠道、移动设备应用程序渠道、LINE等） 安装事务性消息（消息中心包）之前。 如果您已启动仅用于电子邮件的消息中心项目，并且以后需要添加新渠道，则必须执行以下步骤：
 
 1. 安装新渠道，例如 **移动渠道**，使用资源包导入向导( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)。
 1. 导入文件( **[!UICONTROL Tools > Advanced > Import package > File]**)，然后选择：
@@ -256,13 +257,13 @@ ht-degree: 13%
 
 ### [!DNL LINE] 渠道设置{#line-package}
 
-要设置 [!DNL LINE] 渠道，您必须先安装 [!DNL LINE] 包。
+要设置 [!DNL LINE] 渠道之前，您必须先安装 [!DNL LINE] 包。
 
 在中间源配置的上下文中，您需要：
 
 * 安装 [!DNL LINE] 营销和MID实例上的包
 
-* 设置 [!DNL LINE] mkt实例上的外部帐户，以通过更改投放模式指向中间实例。 [了解详情](../../delivery/using/line-channel.md#configure-line-external)
+* 设置 [!DNL LINE] mkt实例上的外部帐户，以通过更改投放模式指向mid实例。 [了解详情](../../delivery/using/line-channel.md#configure-line-external)
 
 * 设置 [!DNL LINE] MID实例上的外部帐户中的凭据。
 

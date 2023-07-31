@@ -2,14 +2,14 @@
 product: campaign
 title: 累积报告
 description: 累积报告
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+feature: Reporting, Monitoring
 exl-id: e67748dd-fa50-4992-b85f-474389e876cf
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 8%
+source-wordcount: '81'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 
 
-您可以显示投放的累积报告。 为此，请选择要比较的投放以获取这些投放的报告列表。
+您可以显示投放的累积报告。 要实现此目的，请选择要比较的投放，以获取这些投放的报告列表。
 
 ![](assets/s_ncs_user_report_compare_tab.png)
 

@@ -2,15 +2,16 @@
 product: campaign
 title: 内部版本升级入门
 description: 了解升级到新内部版本的关键步骤
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2380'
 ht-degree: 3%
 
 ---
@@ -19,39 +20,39 @@ ht-degree: 3%
 
 
 
-此部分将向您深入介绍升级过程以及识别和解决冲突的步骤。
+本节将深入介绍升级过程以及识别和解决冲突的步骤。
 
-必须谨慎进行版本升级，必须事先充分考虑版本升级的影响，并且必须在完成升级程序时遵守高度的纪律。 要确保升级成功，请确保只有专家用户才能执行下面列出的步骤。 此外，我们强烈建议联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 在开始任何升级之前。
+版本升级必须谨慎进行，必须事先充分考虑其影响，并且必须在完成升级程序时遵守高度的纪律。 要确保升级成功，请确保只有专家用户才能执行下面列出的步骤。 此外，我们强烈建议联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 在开始任何升级之前。
 
 需要以下先决条件：
 
 * 了解Campaign架构
 * 系统和服务器端知识
-* 管理权限和权限
+* 管理权限
 
-您可以在这些部分中找到更多信息： [更新Adobe Campaign](../../production/using/upgrading.md)， [迁移到新版本](../../migration/using/about-migration.md).
+您可在以下部分找到更多信息： [更新Adobe Campaign](../../production/using/upgrading.md)， [迁移到新版本](../../migration/using/about-migration.md).
 
-对于托管实例和混合实例，您必须向Adobe技术运营团队请求版本升级。 有关更多信息，请参阅底部的“常见问题解答”部分（如果此页面出现此错误）。 另请参阅 [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md).
+对于托管实例和混合实例，您必须向Adobe技术运营团队请求版本升级。 有关更多信息，请参阅底部的“常见问题解答”部分（如果此页面）。 另请参阅 [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md).
 
 ## 准备升级
 
 ![](assets/do-not-localize/icon_planification.png)
 
 在开始内部版本升级之前，必须按照以下所述执行完整准备。
-一旦系统准备好升级，内部版本升级就需要 **至少** 2小时。
+一旦系统准备好进行升级，就需要内部版本升级 **至少** 2小时。
 
 内部版本升级过程需要以下资源：
 
 * Adobe架构师 — 了解数据库结构（现成的架构和已添加的任何其他架构、活动设计以及必须按特定顺序启动和测试的任何关键路径功能）。
 * 项目经理 — 如果版本升级涉及许多不同的实例（生产、暂存、测试）和其他第三方服务器和应用程序（数据库、SFTP站点、消息服务提供商），则由项目经理协调所有测试被视为最佳实践。
-* Adobe Campaign管理员 — 您的管理员知道服务器的配置，包括但不限于：安全性、文件夹布局、报告和导入\导出要求。 如果没有管理员，请不要执行内部版本升级。
-* Adobe Campaign操作员（营销用户） — 成功升级取决于用户是否能够成功执行其日常任务。 因此，在升级服务器的测试中应始终至少包含一个日常操作员。
+* Adobe Campaign管理员 — 您的管理员知道服务器的配置，包括但不限于：安全性、文件夹布局、报表以及导入\导出要求。 如果没有管理员，请不要执行内部版本升级。
+* Adobe Campaign操作员（营销用户） — 成功升级取决于用户成功执行其日常任务的能力。 因此，在升级服务器的测试中应始终至少包含一个每日操作员。
 
 ### 规划
 
 以下是如何规划内部版本升级的关键点：
 
-1. 至少保留2小时用于升级。
+1. 至少保留2个小时进行升级。
 1. 为Adobe和客户员工分发联系人详细信息。
 1. 对于托管实例：Adobe和客户员工将协调升级时间和执行人员。
 1. 对于内部部署实例：客户员工管理整个流程 — 如果需要测试自定义工作流和交付逻辑方面的帮助，则应引入咨询服务。
@@ -62,15 +63,15 @@ ht-degree: 3%
 
 内部版本升级过程需要以下人员参与：
 
-* Adobe架构师：对于托管或混合架构，架构师必须与Adobe Campaign客户关怀团队协调。
+* Adobe架构师：对于托管或混合架构，架构师必须与Adobe Campaign客户关怀团队进行协调。
 
 * 项目经理：
    * 对于内部部署：客户的内部项目负责人负责升级并管理生命周期测试。
 
-   * 对于托管安装：托管团队将与Adobe Campaign客户关怀团队和客户合作，协调所有实例的升级时间表。
+   * 对于托管安装：托管团队将与Adobe Campaign客户关怀团队和客户合作，协调所有实例的升级时间线。
 
 * Adobe Campaign管理员：
-   * 对于On Premise安装：管理员执行升级。
+   * 对于内部部署：管理员执行升级。
 
    * 对于托管安装：由托管团队执行升级。
 
@@ -103,11 +104,11 @@ ht-degree: 3%
 
 ![](assets/do-not-localize/icon_process.png)
 
-以下过程仅由以下人员执行 **内部部署** 客户。 对于托管客户，由托管团队负责。 要将Adobe Campaign更新到新的内部版本，请详述以下过程。
+以下过程仅由执行 **内部部署** 客户。 对于托管客户，由托管团队负责。 要将Adobe Campaign更新到新的内部版本，请详述以下过程。
 
 ### 复制环境
 
-下面是如何复制Adobe Campaign环境的，以便将源环境恢复到目标环境，从而生成两个完全相同的工作环境。
+下面是如何复制Adobe Campaign环境的，以便将源环境恢复到目标环境，从而生成两个相同的工作环境。
 
 为此请执行以下操作步骤：
 
@@ -121,26 +122,26 @@ ht-degree: 3%
    nlserverjavacsriptnms:freezeInstance.js–instance:<dev> -arg:run
    ```
 
-1. 检查按以下步骤的烧蚀：
+1. 检查烧灼情况，如下所示：
 
-   * 检查是否唯一的投放部分是ID设置为的投放部分 **0**：
+   * 检查是否唯一将ID设置为的投放部分 **0**：
 
-      ```
-      SELECT * FROM neolane.nmsdeliverypart;
-      ```
+     ```
+     SELECT * FROM neolane.nmsdeliverypart;
+     ```
 
    * 检查投放状态更新是否正确：
 
-      ```
-      SELECT iSate, count(*) FROM neolane.nmsdeliveryGroup By iProd;
-      ```
+     ```
+     SELECT iSate, count(*) FROM neolane.nmsdeliveryGroup By iProd;
+     ```
 
    * 检查工作流状态更新是否正确：
 
-      ```
-      SELECT iState, count (*) FROM neolane.xtkworkflowGROUP BY iState;
-      SELECT iStatus, count (*) FROM neolane.xtkworkflowGROUP BY iStatus;
-      ```
+     ```
+     SELECT iState, count (*) FROM neolane.xtkworkflowGROUP BY iState;
+     SELECT iStatus, count (*) FROM neolane.xtkworkflowGROUP BY iStatus;
+     ```
 
 ### 关闭服务
 
@@ -154,6 +155,7 @@ ht-degree: 3%
    >[!NOTE]
    >
    >请确保重定向服务器(webmdl)已停止，以便能够将IIS使用的nlsrvmod.dll文件替换为新版本。
+   >
 
 1. 通过运行 **nlserver pdump** 命令。 如果没有任务，则输出应类似于以下内容：
 
@@ -165,7 +167,7 @@ ht-degree: 3%
 
 ### 升级Adobe Campaign Server应用程序
 
-1. 运行 **Setup.exe** 文件。 如果需要下载此文件，请访问 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html).
+1. 运行 **Setup.exe** 文件。 如果您需要下载此文件，请访问 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html).
 
 1. 选择安装模式： **更新** 或 **修复**.
 
@@ -188,6 +190,7 @@ ht-degree: 3%
    >[!NOTE]
    >
    >此操作只应在nlserverweb应用程序服务器上执行一次。
+   >
 
    要仅同步一个数据库，请运行以下命令：
 
@@ -214,7 +217,7 @@ ht-degree: 3%
 Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 ```
 
-下次连接客户端控制台时，将显示一个窗口，通知用户有新的更新可用，并允许用户下载和安装更新。
+下次连接客户端控制台时，将显示一个窗口，通知用户有新的更新可用，并为用户提供下载和安装更新的可能性。
 
 ### 其他特定任务
 
@@ -231,18 +234,18 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 1. 导出资源包：
    * 使用客户端包导出工具导出包
    * 导入架构包
-   * 断开客户端连接并重新连接
+   * 断开并重新连接客户端
    * 更新数据库
-   * 断开连接并重新连接
+   * 断开并重新连接
    * 导入管理包
    * 导入内容包
    * 导入内容管理包
-   * 断开连接并重新连接
+   * 断开并重新连接
    * 对工作流执行快速健康检查
 
 1. 发布消息中心模板，以确保服务器与消息中心实例之间的接口正常工作。
 1. 运行测试以确保通过消息中心生产实例成功接收电子邮件。
-1. 在生产环境中运行工作流测试，以确保接收投放。
+1. 在生产环境中运行工作流测试以确保接收投放。
 
 #### 中间源
 
@@ -258,6 +261,7 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 >[!NOTE]
 >
 >中间源服务器必须始终运行与营销服务器相同的版本（或更高版本）。
+>
 
 ## 发生冲突时
 
@@ -265,7 +269,7 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 
 您需要检查同步结果。 此过程仅由内部部署客户执行。 对于托管客户，由托管团队负责。 查看同步结果的方法有两种：
 
-在命令行界面中，错误通过三个V形“>>>”实现，同步自动停止。 警告以双V形“>>”实现，同步完成后必须解决这些警告。 升级后结束时，命令提示符中会显示摘要。 它看起来可能像这样：
+在命令行界面中，错误通过三个V形“>>>”实现，同步自动停止。 警告以双V形“>>”具体化，同步完成后必须解决这些警告。 升级后结束时，命令提示符中会显示摘要。 它看上去可能如下所示：
 
 ```
 YYYY-MM-DD HH:MM:SS.749Z 00002E7A 1 info log =========Summary of the update==========
@@ -284,7 +288,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 **如何发现冲突？**
 
-相关服务器上的postupgrade.log或Campaign客户端界面（“管理”>“配置”>“包管理”>“编辑冲突”）中存在冲突。
+在相关服务器上的postupgrade.log或Campaign客户端界面（“管理”>“配置”>“包管理”>“编辑冲突”）中，可能会发现冲突。
 
 标识符为“stockOverview”且类型为“nms：webApp”的文档与新版本冲突。
 
@@ -293,26 +297,26 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 * 客户是否修改或自定义了对象？
 * 对象在产品中是否发生了更改？
 
-如果这些条件都不适用，则为误报。 如果这两个条件都适用，则表明存在实际冲突。
+如果这些条件都不适用，则为误报。 如果这两个条件都适用，则发现真正的冲突。
 
 **客户是否修改了对象？**
 
 1. 识别冲突对象。
 1. 询问客户是否修改了对象。
-1. 这个物体有什么不寻常的吗？
+1. 这个物体有什么不寻常的地方吗？
 1. 对象的代码中是否设置了上次修改日期？
 1. 从冲突中检查XML代码的“_conflict”属性。 它是否看起来像自定义？
 
 **对象在新内部版本中是否进行了更改？**
 
 1. 有“常见嫌犯”吗？ 内置Web应用程序或报告（例如：“deliveryValidation”、“deliveryOverview”、“budget”）。
-1. 检查更改日志中是否有任何更新。
+1. 检查更改日志是否有任何更新。
 1. 询问Adobe Campaign专家。
-1. 对代码执行“diff”。
+1. 对代码执行“差异”。
 
 ### 解决冲突
 
-要解决冲突，请应用以下进程：
+要解决冲突，请应用以下流程：
 
 1. 在Adobe Campaign资源管理器中，转到 **管理>配置>包管理>编辑冲突**.
 
@@ -334,38 +338,39 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 * 只能合并表单、报表和Web应用程序。
 * 某些次要合并无需了解代码即可得到解决。
-* 更复杂的合并应由具备相应技能和能力的人进行。
-* 参见 [执行合并](#perform-a-merge).
+* 更复杂的合并应由具有相应技能和能力的人进行。
+* 请参阅 [执行合并](#perform-a-merge).
 
 **如果我不理会冲突怎么办？**
 
-* 冲突将继续存在
+* 冲突将依然存在
 * 将不会升级该对象
 * 长期影响：版本不兼容，客户将无法从错误修复中受益。
 
 >[!IMPORTANT]
 >强烈建议解决冲突。
+>
 
 ### 执行合并{#perform-a-merge}
 
 有不同类型的合并：
 
-1. 轻松合并：自定义元素和新元素较小且没关系，无需编码。
-1. 无更改：接受新版本、仅上次更新日期已更改、仅注释、制表符、空格或新行。 示例：意外保存。
-1. 细微的更改：只更改了一行。 示例： xpathToLoad
-1. 复杂合并：需要编码时。 需要发展技能。 参见 [复杂合并](#complex-merges).
+1. 轻松合并：自定义元素和新元素很小且没关系，无需编码。
+1. 无更改：接受新版本，仅上次更新日期已更改，仅注释、制表符、空格或新行。 示例：意外保存。
+1. 细微的更改：仅更改了一行。 示例： xpathToLoad
+1. 复杂合并：需要编码时。 需要发展技能。 请参阅 [复杂合并](#complex-merges).
 
 #### 如何合并？
 
 1. 获取所有三个版本：原始版本、新版本和自定义版本。
-1. 运行原始版本与新版本之间的“差异”。
+1. 运行原始版本和新版本之间的“差异”。
 1. 隔离更改。
 1. 如果没有更改，请通过保留当前版本来解决。
 
-#### 在何处查找代码？
+#### 在哪里查找代码？
 
 1. 内置代码存储在datakit文件夹的XML文件中。 查找与冲突对象匹配的XML文件。 示例： installationDirectory\datakit\nms\fra\form\recipient.xml
-1. 检索原始版本：通过 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 或产品的其他未升级安装。
+1. 检索原始版本：通过 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 或产品的另一个未升级安装。
 1. 检索新版本：通过 [下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 或客户安装的文件。
 1. 检索自定义版本：从Campaign客户端中检索对象的源代码。
 
@@ -385,8 +390,8 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 如果选择手动解决冲突，请按以下步骤操作：
 
-1. 在窗口的下半部分，搜索 **_conflict_字符串_** 查找有冲突的图元。 与新版本一起安装的实体包含新参数，与先前版本匹配的实体包含自定义参数。
-1. 删除您不想保留的版本。 删除 **_conflict_argument_** 所保留实体的字符串。
+1. 在窗口的下部，搜索 **_冲突字符串_** 以查找具有冲突的图元。 与新版本一起安装的实体包含新参数，与先前版本匹配的实体包含自定义参数。
+1. 删除您不想保留的版本。 删除 **_conflict_argument_** 要保留的实体的字符串。
 1. 转到您已解决的冲突。 单击 **操作** 图标并选择 **声明为已解决**.
 1. 保存更改：冲突现已解决。
 
@@ -408,6 +413,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 >[!IMPORTANT]
 >执行复杂的合并需要具备开发技能。
+>
 
 **相关主题**
 

@@ -2,14 +2,15 @@
 product: campaign
 title: 配置对Sybase IQ的访问权限
 description: 了解如何在FDA中配置对Sybase IQ的访问权限
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 
 
-使用Campaign **联合数据访问** (FDA)用于处理存储在外部数据库中的信息的选项。 按照以下步骤配置对Sybase IQ的访问权限。
+使用营销活动 **联合数据访问** (FDA)用于处理存储在外部数据库中的信息的选项。 请按照以下步骤配置对Sybase IQ的访问权限。
 
 1. 配置 [sybase IQ数据库](#configuring-sybase)
 1. 配置Sybase IQ [外部帐户](#sybase-external) 在Campaign中
@@ -35,53 +36,53 @@ ht-degree: 0%
 
 1. 安装 **iq_client_common**. 安装结束时，可能会出现Java错误。 可以忽略此错误。
 
-1. 配置ODBC驱动程序。 可以在标准文件中执行配置：对于常规参数，请使用/etc/odbc.ini；对于声明驱动程序，请使用/etc/odbcinst.ini：
+1. 配置ODBC驱动程序。 配置可以在标准文件中执行： /etc/odbc.ini用于常规参数，/etc/odbcinst.ini用于声明驱动程序：
 
    * **/etc/odbc.ini** (替换类似于 `<server_alias>` 个字符)：
 
-      ```
-      [ODBC Data Sources]
-      <server_alias>=libdbodbc.so
-      
-      [<server_alias>]
-      Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
-      Description=<description>
-      Username=<username>
-      Password=<password>
-      ServerName=<server_name>
-      CommLinks=tcpip(host=<host>)
-      ```
+     ```
+     [ODBC Data Sources]
+     <server_alias>=libdbodbc.so
+     
+     [<server_alias>]
+     Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
+     Description=<description>
+     Username=<username>
+     Password=<password>
+     ServerName=<server_name>
+     CommLinks=tcpip(host=<host>)
+     ```
 
    * **/etc/odbcinst.ini**
 
-      ```
-      [ODBC DRIVERS]
-      SAP SybaseIQ=Installed
-      
-      [SAP SybaseIQ]
-      Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
-      ```
+     ```
+     [ODBC DRIVERS]
+     SAP SybaseIQ=Installed
+     
+     [SAP SybaseIQ]
+     Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
+     ```
 
 1. 在LD_LIBRARY_PATH变量中添加新libodbc16.so库的路径。 为此，请执行以下操作：
 
    * 如果使用customer.sh文件声明路径：为LD_LIBRARY_PATH变量添加路径/opt/sybase/IQ-16_0/lib64 。
-   * 否则，请使用Unix命令。
+   * 否则，使用Unix命令。
 
-## 外部帐户Sybase IQ {#sybase-external}
+## sybase IQ外部帐户 {#sybase-external}
 
-使用Sybase IQ外部帐户可将Campaign实例连接到Sybase IQ外部数据库。
+利用Sybase IQ外部帐户，可将Campaign实例连接到Sybase IQ外部数据库。
 
 1. 来自营销活动 **[!UICONTROL Explorer]**，单击 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. 单击 **[!UICONTROL New]** 并选择 **[!UICONTROL External database]** 作为 **[!UICONTROL Type]**.
 
-1. 要配置 **[!UICONTROL Sybase IQ]** 外部帐户，您必须指定：
+1. 配置 **[!UICONTROL Sybase IQ]** 外部帐户，您必须指定：
 
    * **[!UICONTROL Type]**：ODBC(Sybase ASE，Sybase IQ)
 
    * **[!UICONTROL Server]**：对应于ODBC连接(`<server_alias>`)。 不一定是服务器本身的名称。
 
-   * **[!UICONTROL Account]**：用户的名称
+   * **[!UICONTROL Account]**：用户名称
 
    * **[!UICONTROL Password]**：用户帐户密码
 

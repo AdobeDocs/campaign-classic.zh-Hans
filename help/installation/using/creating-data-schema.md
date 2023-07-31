@@ -2,12 +2,13 @@
 product: campaign
 title: 为FDA创建数据模式
 description: 了解如何为FDA创建数据架构
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 3%
+source-wordcount: '194'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 3%
 
    ![](assets/wf_new_schema_fda.png)
 
-1. 输入 **[!UICONTROL Namespace]** 和  **[!UICONTROL Name]** ，然后选择 **[!UICONTROL External account]** 将启用到数据库的连接。 这样即可访问外部库中可用的表列表。
+1. 输入 **[!UICONTROL Namespace]** 和  **[!UICONTROL Name]** 对于架构，选择 **[!UICONTROL External account]** 将启用到数据库的连接。 这将允许访问外部库中可用的表列表。
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
@@ -41,4 +42,4 @@ ht-degree: 3%
 
    ![](assets/wf_new_schema_generate_fda.png)
 
-映射表（标准映射或FDA映射）时会自动创建索引。
+映射表（标准或FDA映射）时会自动创建索引。

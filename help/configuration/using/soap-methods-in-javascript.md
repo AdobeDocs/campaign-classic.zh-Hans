@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: JavaScript 中的 SOAP 方法
+feature: Configuration, Instance Settings
 description: JavaScript 中的 SOAP 方法
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: 62020447-fe59-4363-994d-de4d8032bbd7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '143'
 ht-degree: 9%
 
 ---
@@ -17,9 +18,9 @@ ht-degree: 9%
 
 ## 静态方法 {#static-methods}
 
-静态SOAP方法可通过在表示模式的对象上调用方法来访问。 架构是“namespace”对象的属性。 这些命名空间是全局变量，因此，例如，xtk或nms变量表示相应的命名空间
+可通过在表示模式的对象上调用方法访问静态SOAP方法。 架构是“namespace”对象的属性。 这些命名空间是全局变量，因此，例如，xtk或nms变量表示相应的命名空间
 
-以下示例调用xtk：workflow架构的静态PostEvent方法：
+以下示例调用xtk：workflow模式的静态PostEvent方法：
 
 ```
 xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false) 
@@ -48,54 +49,54 @@ for each (var w in res.workflow)
 
 ## 示例 {#examples}
 
-* 使用“get”操作查询收件人表：
+* 使用“获取”操作查询收件人表：
 
-   ```
-   var query = xtk.queryDef.create(  
-     <queryDef schema="nms:recipient" operation="get">    
-       <select>      
-         <node expr="@firstName"/>      
-         <node expr="@lastName"/>      
-         <node expr="@email"/>    
-       </select>    
-       <where>      
-         <condition expr="@email = 'peter.martinez@adobe.com'"/>    
-       </where>  
-     </queryDef>)
-   
-   var recipient = query.ExecuteQuery()
-   
-   logInfo(recipient.@firstName)
-   logInfo(recipient.@lastName)
-   ```
+  ```
+  var query = xtk.queryDef.create(  
+    <queryDef schema="nms:recipient" operation="get">    
+      <select>      
+        <node expr="@firstName"/>      
+        <node expr="@lastName"/>      
+        <node expr="@email"/>    
+      </select>    
+      <where>      
+        <condition expr="@email = 'peter.martinez@adobe.com'"/>    
+      </where>  
+    </queryDef>)
+  
+  var recipient = query.ExecuteQuery()
+  
+  logInfo(recipient.@firstName)
+  logInfo(recipient.@lastName)
+  ```
 
 * 使用“选择”操作查询收件人表：
 
-   ```
-   var query = xtk.queryDef.create(  
-     <queryDef schema="nms:recipient" operation="select">    
-       <select>      
-         <node expr="@email"/>      
-         <node expr="@lastName"/>      
-         <node expr="@firstName"/>    
-       </select>    
-       <where>      
-         <condition expr="@age > 25"/>    
-       </where>    
-     </queryDef>)
-   
-   var res = query.ExecuteQuery()
-   
-   for each (var recipient in res.recipient) 
-   {  
-     logInfo(recipient.@email)  
-     logInfo(recipient.@firstName)  
-     logInfo(recipient.@lastName)
-   }
-   ```
+  ```
+  var query = xtk.queryDef.create(  
+    <queryDef schema="nms:recipient" operation="select">    
+      <select>      
+        <node expr="@email"/>      
+        <node expr="@lastName"/>      
+        <node expr="@firstName"/>    
+      </select>    
+      <where>      
+        <condition expr="@age > 25"/>    
+      </where>    
+    </queryDef>)
+  
+  var res = query.ExecuteQuery()
+  
+  for each (var recipient in res.recipient) 
+  {  
+    logInfo(recipient.@email)  
+    logInfo(recipient.@firstName)  
+    logInfo(recipient.@lastName)
+  }
+  ```
 
 * 将数据写入收件人表：
 
-   ```
-   xtk.session.Write(<recipient _operation="insert" lastName="Martinez" firstName="Peter" xtkschema="nms:recipient"/>);
-   ```
+  ```
+  xtk.session.Write(<recipient _operation="insert" lastName="Martinez" firstName="Peter" xtkschema="nms:recipient"/>);
+  ```

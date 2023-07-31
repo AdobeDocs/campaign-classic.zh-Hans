@@ -2,14 +2,14 @@
 product: campaign
 title: 内容编辑器界面
 description: 内容编辑器界面
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 3%
+source-wordcount: '545'
+ht-degree: 4%
 
 ---
 
@@ -23,9 +23,9 @@ DCE编辑窗口分为三个不同的部分。 它们允许您查看、修改和�
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. 此 **top** 部分是一个显示区域，用于显示发送给用户的消息。 这些消息指示Web应用程序状态或正在创建的投放的状态，以及与内容相关的警告和错误消息。 有关更多信息，请参阅 [HTML内容状态](content-editing-best-practices.md#html-content-statuses).
-1. 中的部分 **left** 用于编辑内容的区域。 在此区域中，用户可以使用弹出式工具栏直接与内容交互：在图像中插入链接、更改字体、删除字段等。 有关详细信息，请参阅 [编辑表单](editing-content.md#editing-forms).
-1. 中的部分 **右** 窗口的“控制面板”区域。 此区域对编辑器的不同选项进行分组，尤其是与配置页面标题和块的常规选项相关的选项：添加边框、将数据库字段与输入区域链接、访问Web页属性等。 有关详情，请参阅 [全局选项](#global-options) 和 [编辑内容](editing-content.md) 部分。
+1. 此 **top** 部分是显示发送给用户的消息的区域。 这些消息指示Web应用程序状态或正在创建的投放的状态，以及与内容相关的警告和错误消息。 有关详细信息，请参见 [HTML内容状态](content-editing-best-practices.md#html-content-statuses).
+1. 中的部分 **左侧** 是编辑内容的区域。 在此区域中，用户可以使用弹出式工具栏直接与内容交互：在图像中插入链接、更改字体、删除字段等。 有关详细信息，请参阅 [编辑表单](editing-content.md#editing-forms).
+1. 中的部分 **右** 控制面板区域。 此区域对编辑器的不同选项进行分组，尤其是与配置块的页面标题和常规选项相关的选项：添加边框、将数据库字段与输入区域链接、访问Web页属性等。 有关详细信息，请参见 [全局选项](#global-options) 和 [编辑内容](editing-content.md) 部分。
 
 ## 全局选项 {#global-options}
 
@@ -41,33 +41,33 @@ DCE编辑窗口分为三个不同的部分。 它们允许您查看、修改和�
 
 * 此 **选择其他内容** 图标允许用户从模板（现有模板或现成模板）加载新内容。
 
-   ![](assets/dce_popup_templatechoice.png)
+  ![](assets/dce_popup_templatechoice.png)
 
-   >[!CAUTION]
-   >
-   >选定的内容将替换当前内容。
+  >[!CAUTION]
+  >
+  >所选内容替换当前内容。
 
 * 此 **另存为模板** 图标用于将当前内容另存为模板。 必须输入模板的标签和内部名称。 模板存储在中 **[!UICONTROL Resources > Templates > Content templates]** 节点。
 
-   ![](assets/dce_popup_savetemplate.png)
+  ![](assets/dce_popup_savetemplate.png)
 
-   保存后，模板可用，并可在创建新内容时进行选择。
+  保存后，模板可用，并可在创建新内容时进行选择。
 
-   ![](assets/dce_create_fromtemplate.png)
+  ![](assets/dce_create_fromtemplate.png)
 
 * 此 **页面属性** 图标允许您选择HTML页面顶部的内容信息。
 
-   ![](assets/dce_popup_headerhtml.png)
+  ![](assets/dce_popup_headerhtml.png)
 
-   >[!NOTE]
-   >
-   >此信息对应于 **`<title>`** 和 **`<meta>`** 页面上的HTML标记。
-   >
-   >关键词必须以逗号分隔。
+  >[!NOTE]
+  >
+  >此信息对应于 **`<title>`** 和 **`<meta>`** 页面上的标签HTML。
+  >
+  >关键词必须以逗号分隔。
 
 ## 块选项 {#block-options}
 
-编辑器右侧的部分将主要选项分组，以便您对内容执行操作。 要显示这些选项，必须选择一个块：这些选项的性质取决于所选的块。
+编辑器右侧的部分对主要选项进行了分组，使您能够根据内容进行操作。 要显示这些选项，必须选择一个块：这些选项的性质取决于所选的块。
 
 ![](assets/dce_right_section.png)
 
@@ -82,8 +82,8 @@ DCE编辑窗口分为三个不同的部分。 它们允许您查看、修改和�
 
 ## 内容工具栏 {#content-toolbar}
 
-工具栏是 **弹出窗口元素** DCE接口中，根据选择的块显示不同的功能。
+工具栏是 **弹出元素** DCE接口，根据选择的块显示不同的功能。
 
 >[!CAUTION]
 >
->利用某些工具栏功能，可将 HTML 格式的格式化。但是，如果页面包含CSS样式表，则 **说明** 从样式表上可以看到 **优先级** 按照工具栏中指定的说明执行操作。
+>利用某些工具栏功能，可将 HTML 格式的格式化。但是，如果页面包含CSS样式表，则 **说明** 从样式表中可以看到 **优先级** 按照工具栏中指定的说明执行操作。

@@ -2,15 +2,16 @@
 product: campaign
 title: 更新数据
 description: 更新数据
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Data Management
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 86%
+source-wordcount: '712'
+ht-degree: 85%
 
 ---
 
@@ -34,7 +35,7 @@ ht-degree: 86%
 
 ### 大量更新 {#mass-update}
 
-要批量更新，请使用 **[!UICONTROL Action > Mass update of selected lines...]**. 向导可帮助您配置并运行更新。
+要成批更新，请使用 **[!UICONTROL Action > Mass update of selected lines...]**. 向导可帮助您配置并运行更新。
 
 向导的第一步是指定要更新的字段。
 
@@ -93,9 +94,9 @@ ht-degree: 86%
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   有关如何配置导出向导的更多信息，请参阅 [本节](../../platform/using/executing-export-jobs.md).
+   有关如何配置导出向导的详细信息，请参阅 [本节](../../platform/using/executing-export-jobs.md).
 
-## 订购服务 {#subscribing-to-a-service}
+## 订阅服务 {#subscribing-to-a-service}
 
 在大多数情況下，收件人可通过专用的登陆页来订阅新闻稿，如[本节所述](../../delivery/using/managing-subscriptions.md)。但是，过滤后的收件人用户档案可以手动订阅某个服务（新闻稿或传播服务）。操作步骤：
 
@@ -119,9 +120,9 @@ ht-degree: 86%
 
 可在窗口的上部监控该执行过程。可以通过 **[!UICONTROL Stop]** 按钮停止该过程。但是，已处理的收件人将被订阅。
 
-如果取消选中 **[!UICONTROL Do not keep a trace of this job in the database]** 选项，您可以选择（或创建）存储此进程信息的执行文件夹。
+如果您取消选中 **[!UICONTROL Do not keep a trace of this job in the database]** 选项，您可以选择（或创建）执行文件夹，其中将存储有关此进程的信息。
 
-要检查该流程，请转到 **[!UICONTROL Subscriptions]** 选项卡中列出的与此操作相关的收件人的用户档案，或 **[!UICONTROL Subscriptions]** 选项卡，通过 **[!UICONTROL Profiles and Targets > Services and Subscriptions]** 节点。
+要检查该流程，请转到 **[!UICONTROL Subscriptions]** 选项卡上或选项卡上与此操作相关的收件人的用户档案 **[!UICONTROL Subscriptions]** 选项卡，访问方式： **[!UICONTROL Profiles and Targets > Services and Subscriptions]** 节点。
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 

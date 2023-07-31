@@ -1,17 +1,18 @@
 ---
 product: campaign
 title: 监视作业执行
-description: 了解如何监视导入和导出作业执行
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: 了解如何监测导入和导出作业的执行
+feature: Monitoring
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 55%
+source-wordcount: '196'
+ht-degree: 53%
 
 ---
 
@@ -24,9 +25,9 @@ ht-degree: 55%
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * 此 **[!UICONTROL Journal]** 选项卡允许您查看有关执行的日志消息。
-* 此 **[!UICONTROL Rejects]** 选项卡包含被拒绝的记录。 请参阅[此小节](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
+* 此 **[!UICONTROL Rejects]** 选项卡包含被拒绝的记录。 请参阅[此章节](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
 
-在 **[!UICONTROL General]** 选项卡， **[!UICONTROL Status]** 字段指示作业的当前状态。
+在 **[!UICONTROL General]** 选项卡， **[!UICONTROL Status]** 字段表示作业的当前状态。
 
 每个状态都由一个特殊的图标和标签表示。状态及其图标如下：
 
@@ -34,36 +35,36 @@ ht-degree: 55%
 
 * **正在编辑**
 
-   正在创建作业。
+  正在创建作业。
 
 * **正在执行**
 
-   此作业正在执行。
+  此作业正在执行。
 
 * **取消**
 
-   单击 **[!UICONTROL Cancel]** 按钮：正在执行的作业已取消。
+  单击 **[!UICONTROL Cancel]** 按钮：正在执行的作业已取消。
 
 * **正在取消**
 
-   取消命令已接收并且正在取消作业。
+  取消命令已接收并且正在取消作业。
 
 * **正在暂停**
 
-   单击 **[!UICONTROL Pause]**：作业正在暂停。
+  单击 **[!UICONTROL Pause]**：作业正在暂停。
 
 * **已暂停**
 
-   单击 **[!UICONTROL Pause]**：作业已暂停。 可以通过单击重新启动 **[!UICONTROL Start]**.
+  单击 **[!UICONTROL Pause]**：作业已暂停。 单击可重新启动该活动 **[!UICONTROL Start]**.
 
 * **已完成**
 
-   作业的执行已完成。
+  作业的执行已完成。
 
 * **已完成且存在错误**
 
-   由于技术错误，该作业未执行。
+  由于技术错误，该作业未执行。
 
 * **正在关闭服务器**
 
-   正在进行的作业因 Adobe Campaign 服务器已关闭而中断。
+  正在进行的作业因 Adobe Campaign 服务器已关闭而中断。

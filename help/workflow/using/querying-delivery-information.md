@@ -2,12 +2,12 @@
 product: campaign
 title: 查询投放信息
 description: 了解如何查询投放信息
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+feature: Query Editor, Workflows
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1248'
 ht-degree: 1%
 
 ---
@@ -18,19 +18,19 @@ ht-degree: 1%
 
 ## 特定投放的点击次数 {#number-of-clicks-for-a-specific-delivery}
 
-在本例中，我们想要恢复特定投放的点击次数。 由于收件人跟踪日志记录了在给定时间段内进行的点击，因此记录了这些点击。 收件人通过其电子邮件地址进行标识。 此查询使用 **[!UICONTROL Recipient tracking logs]** 表格。
+在本例中，我们将恢复特定投放的点击数。 这些点击量会根据给定时间段内的收件人跟踪日志进行记录。 收件人通过其电子邮件地址进行标识。 此查询使用 **[!UICONTROL Recipient tracking logs]** 表格。
 
 * 需要选择哪个表？
 
-   收件人日志跟踪表(**[!UICONTROL nms:trackingLogRcp]**)
+  收件人日志跟踪表(**[!UICONTROL nms:trackingLogRcp]**)
 
 * 要为输出列选择的字段？
 
-   主键（含计数）和电子邮件
+  主键（含计数）和电子邮件
 
 * 信息过滤依据什么标准？
 
-   投放标签的特定期间和元素
+  投放标签的特定期间和元素
 
 要执行此示例，请应用以下步骤：
 
@@ -42,72 +42,72 @@ ht-degree: 1%
 
    操作步骤：
 
-   * 单击 **[!UICONTROL Add]** 图标右侧的 **[!UICONTROL Output columns]** 字段。 在 **[!UICONTROL Formula type]** 窗口中，选择 **[!UICONTROL Edit the formula using an expression]** 选项并单击 **[!UICONTROL Next]**. 在 **[!UICONTROL Field to select]** 窗口，单击 **[!UICONTROL Advanced selection]**.
+   * 单击 **[!UICONTROL Add]** 图标（位于页面右侧） **[!UICONTROL Output columns]** 字段。 在 **[!UICONTROL Formula type]** 窗口中，选择 **[!UICONTROL Edit the formula using an expression]** 选项并单击 **[!UICONTROL Next]**. 在 **[!UICONTROL Field to select]** 窗口，单击 **[!UICONTROL Advanced selection]**.
 
-      ![](assets/query_editor_tracklog_06.png)
+     ![](assets/query_editor_tracklog_06.png)
 
    * 在 **[!UICONTROL Formula type]** 窗口，对聚合函数运行进程。 此过程将为主键计数。
 
-      选择 **[!UICONTROL Process on an aggregate function]** 在 **[!UICONTROL Aggregate]** 部分并单击 **[!UICONTROL Count]**.
+     选择 **[!UICONTROL Process on an aggregate function]** 在 **[!UICONTROL Aggregate]** 部分并单击 **[!UICONTROL Count]**.
 
-      ![](assets/query_editor_nveau_18.png)
+     ![](assets/query_editor_nveau_18.png)
 
-      单击 **[!UICONTROL Next]**。
+     单击 **[!UICONTROL Next]**。
 
    * 选择 **[!UICONTROL Primary key (@id)]** 字段。 此 **[!UICONTROL count (primary key)]** 已配置输出列。
 
-      ![](assets/query_editor_nveau_19.png)
+     ![](assets/query_editor_nveau_19.png)
 
-1. 选择要显示在输出列中的其他字段。 在 **[!UICONTROL Available fields]** 列，打开 **[!UICONTROL Recipient]** 节点并选择 **[!UICONTROL Email]**. 查看 **[!UICONTROL Group]** 框至 **[!UICONTROL Yes]** 要按电子邮件地址对跟踪日志进行分组，请执行以下操作：此组将每个日志链接到其收件人。
+1. 选择要显示在输出列中的其他字段。 在 **[!UICONTROL Available fields]** 列，打开 **[!UICONTROL Recipient]** 节点并选择 **[!UICONTROL Email]**. 查看 **[!UICONTROL Group]** 框至 **[!UICONTROL Yes]** 要按电子邮件地址对跟踪日志进行分组：此组将每个日志链接到其收件人。
 
    ![](assets/query_editor_nveau_20.png)
 
-1. 配置列排序，以便首先显示最活跃的收件人（具有最多的跟踪日志）。 Check **[!UICONTROL Yes]** 在 **[!UICONTROL Descending sort]** 列。
+1. 配置列排序，以便最先显示最活跃的收件人（具有最多的跟踪日志）。 Check **[!UICONTROL Yes]** 在 **[!UICONTROL Descending sort]** 列。
 
    ![](assets/query_editor_nveau_64.png)
 
-1. 然后，您必须筛选出感兴趣的日志，即存在两周以下并与销售相关的投放有关的日志。
+1. 然后，您必须筛选出您感兴趣的日志，即存在时间少于2周并与销售相关投放相关的日志。
 
    操作步骤：
 
    * 配置数据筛选。 要执行此操作，请选择 **[!UICONTROL Filter conditions]** 然后单击 **[!UICONTROL Next]**.
 
-      ![](assets/query_editor_nveau_22.png)
+     ![](assets/query_editor_nveau_22.png)
 
-   * 在特定投放的给定时间段内恢复跟踪日志。 需要三个筛选条件：两个日期条件，用于将搜索期间设置为当前日期之前的2周和当前日期之前的1天；另一个条件，用于将搜索限制到特定投放。
+   * 在特定投放的给定时间段内恢复跟踪日志。 需要三个过滤条件：两个日期条件，用于将搜索时段设置在当前日期之前的2周和当前日期之前的1天之间；另一个条件，用于将搜索限制到特定投放。
 
-      在 **[!UICONTROL Target element]** 窗口中，配置开始将考虑跟踪日志的日期。 单击 **[!UICONTROL Add]**。将显示条件行。 编辑 **[!UICONTROL Expression]** 列进行标识 **[!UICONTROL Edit expression]** 函数。 在 **[!UICONTROL Field to select]** 窗口，选择 **[!UICONTROL Date (@logDate)]**.
+     在 **[!UICONTROL Target element]** 窗口中，配置将考虑跟踪日志的开始日期。 单击 **[!UICONTROL Add]**。将显示条件行。 编辑 **[!UICONTROL Expression]** 列，方法是单击 **[!UICONTROL Edit expression]** 函数。 在 **[!UICONTROL Field to select]** 窗口，选择 **[!UICONTROL Date (@logDate)]**.
 
-      ![](assets/query_editor_nveau_23.png)
+     ![](assets/query_editor_nveau_23.png)
 
-      选择 **[!UICONTROL greater than]** 运算符。 在 **[!UICONTROL Value]** 列，单击 **[!UICONTROL Edit expression]**、和中的 **[!UICONTROL Formula type]** 窗口，选择 **[!UICONTROL Process on dates]**. 最后，在 **[!UICONTROL Current date minus n days]**，输入“15”。
+     选择 **[!UICONTROL greater than]** 运算符。 在 **[!UICONTROL Value]** 列，单击 **[!UICONTROL Edit expression]**、和 **[!UICONTROL Formula type]** 窗口，选择 **[!UICONTROL Process on dates]**. 最后，在 **[!UICONTROL Current date minus n days]**，输入“15”。
 
-      单击 **[!UICONTROL Finish]**。
+     单击 **[!UICONTROL Finish]**。
 
-      ![](assets/query_editor_nveau_24.png)
+     ![](assets/query_editor_nveau_24.png)
 
-   * 要选择跟踪日志搜索结束日期，请通过单击创建第二个条件 **[!UICONTROL Add]**. 在 **[!UICONTROL Expression]** 列，选择 **[!UICONTROL Date (@logDate)]** 再来一次。
+   * 要选择跟踪日志搜索结束日期，请通过单击 **[!UICONTROL Add]**. 在 **[!UICONTROL Expression]** 列，选择 **[!UICONTROL Date (@logDate)]** 再来一次。
 
-      选择 **[!UICONTROL less than]** 运算符。 在 **[!UICONTROL Value]** 列，单击 **[!UICONTROL Edit expression]**. 要处理日期，请转到 **[!UICONTROL Formula type]** 窗口中，输入“1” **[!UICONTROL Current date minus n days]**.
+     选择 **[!UICONTROL less than]** 运算符。 在 **[!UICONTROL Value]** 列，单击 **[!UICONTROL Edit expression]**. 要处理日期，请转到 **[!UICONTROL Formula type]** 窗口中，输入“1” **[!UICONTROL Current date minus n days]**.
 
-      单击 **[!UICONTROL Finish]**。
+     单击 **[!UICONTROL Finish]**。
 
-      ![](assets/query_editor_nveau_65.png)
+     ![](assets/query_editor_nveau_65.png)
 
-      现在，我们要配置第三个筛选条件，即查询涉及的投放标签。
+     现在，我们要配置第三个筛选条件，即查询涉及的投放标签。
 
-   * 单击 **[!UICONTROL Add]** 函数来创建另一个筛选条件。 在 **[!UICONTROL Expression]** 列，单击 **[!UICONTROL Edit expression]**. 在 **[!UICONTROL Field to select]** 窗口，选择 **[!UICONTROL Label]** 在 **[!UICONTROL Delivery]** 节点。
+   * 单击 **[!UICONTROL Add]** 函数，以创建另一个筛选条件。 在 **[!UICONTROL Expression]** 列，单击 **[!UICONTROL Edit expression]**. 在 **[!UICONTROL Field to select]** 窗口，选择 **[!UICONTROL Label]** 在 **[!UICONTROL Delivery]** 节点。
 
-      单击 **[!UICONTROL Finish]**。
+     单击 **[!UICONTROL Finish]**。
 
-      ![](assets/query_editor_nveau_66.png)
+     ![](assets/query_editor_nveau_66.png)
 
-      查找包含“sales”一词的投放。 由于您不记得其确切标签，因此可以选择 **[!UICONTROL contains]** 运算符，并在中输入“sales” **[!UICONTROL Value]** 列。
+     查找包含“sales”一词的投放。 由于您不记得它的确切标签，因此可以选择 **[!UICONTROL contains]** 运算符，并在中输入“sales” **[!UICONTROL Value]** 列。
 
-      ![](assets/query_editor_nveau_25.png)
+     ![](assets/query_editor_nveau_25.png)
 
-1. 单击 **[!UICONTROL Next]** 直到您进入 **[!UICONTROL Data preview]** 窗口：此处不需要格式化。
-1. 在 **[!UICONTROL Data preview]** 窗口，单击 **[!UICONTROL Start the preview of the data]** 查看每个投放收件人的跟踪日志数。
+1. 单击 **[!UICONTROL Next]** 直到您到达 **[!UICONTROL Data preview]** 窗口：此处不需要设置格式。
+1. 在 **[!UICONTROL Data preview]** 窗口，单击 **[!UICONTROL Start the preview of the data]** 用于查看每个投放收件人的跟踪日志数量。
 
    结果按降序显示。
 
@@ -133,34 +133,34 @@ ht-degree: 1%
    ![](assets/query_open_1.png)
 
 1. 添加另一个表达式。 选择 **[!UICONTROL Type]** 在 **[!UICONTROL URL]** 类别。
-1. 然后，设置其 **[!UICONTROL Operator]** 到 **[!UICONTROL equal to]** 及其它 **[!UICONTROL Value]** 到 **[!UICONTROL Open]**.
+1. 然后，设置其 **[!UICONTROL Operator]** 到 **[!UICONTROL equal to]** 及其 **[!UICONTROL Value]** 到 **[!UICONTROL Open]**.
 
    ![](assets/query_open_2.png)
 
-1. 添加其他表达式并选择 **[!UICONTROL Date]**. **[!UICONTROL Operator]** 应设置为 **[!UICONTROL on or after]**.
+1. 添加另一个表达式并选择 **[!UICONTROL Date]**. **[!UICONTROL Operator]** 应设置为 **[!UICONTROL on or after]**.
 
    ![](assets/query_open_3.png)
 
-1. 要设置该值最近7天，请单击 **[!UICONTROL Edit expression]** 中的按钮 **[!UICONTROL Value]** 字段。
+1. 要设置最近7天的值，请单击 **[!UICONTROL Edit expression]** 中的按钮 **[!UICONTROL Value]** 字段。
 1. 在 **[!UICONTROL Function]** 类别，选择 **[!UICONTROL Current date minus n days]** 并添加要定位的天数。 这里，我们要定位过去7天。
 
    ![](assets/query_open_4.png)
 
 叫客过渡将包含过去7天内未打开电子邮件的收件人。
 
-相反，如果您希望筛选至少打开了一封电子邮件的收件人，则您的查询应如下所示。 请注意，在这种情况下， **[!UICONTROL Filtering dimension]** 应设置为 **[!UICONTROL Tracking logs (Recipients)]**.
+相反，如果您希望筛选至少打开了一封电子邮件的收件人，则您的查询应如下所示。 请注意，在本例中， **[!UICONTROL Filtering dimension]** 应设置为 **[!UICONTROL Tracking logs (Recipients)]**.
 
 ![](assets/query_open_5.png)
 
 ## 已打开投放的收件人 {#recipients-who-have-opened-a-delivery}
 
-以下示例显示如何定向最近2周内打开了投放的用户档案：
+以下示例显示如何定向最近2周内打开过投放的用户档案：
 
-1. 要定位已打开投放的用户档案，您需要使用跟踪日志。 它们存储在一个链接表中：首先，在 **[!UICONTROL Filtering dimension]** 字段，如下所示：
+1. 要定位已打开投放的用户档案，您需要使用跟踪日志。 它们存储在链接表中：首先从以下内容的下拉列表中选择此表： **[!UICONTROL Filtering dimension]** 字段，如下所示：
 
    ![](assets/s_advuser_query_sample1.0.png)
 
-1. 关于筛选条件，单击 **[!UICONTROL Edit expression]** 在跟踪日志的子树结构中显示的标准的图标。 选择 **[!UICONTROL Date]** 字段。
+1. 关于过滤条件，单击 **[!UICONTROL Edit expression]** 在跟踪日志的子树结构中显示的标准图标。 选择 **[!UICONTROL Date]** 字段。
 
    ![](assets/s_advuser_query_sample1.1.png)
 
@@ -170,31 +170,31 @@ ht-degree: 1%
 
    ![](assets/s_advuser_query_sample1.4.png)
 
-   然后单击 **[!UICONTROL Edit expression]** 中的图标 **[!UICONTROL Value]** 列，以定义要应用的计算公式。 选择 **[!UICONTROL Current date minus n days]** 公式，并在相关字段中输入15。
+   然后单击 **[!UICONTROL Edit expression]** 图标 **[!UICONTROL Value]** 列，以定义要应用的计算公式。 选择 **[!UICONTROL Current date minus n days]** 公式，并在相关字段中输入15。
 
    ![](assets/s_advuser_query_sample1.5.png)
 
-   单击 **[!UICONTROL Finish]** “公式”窗口的按钮。 在筛选窗口中，单击 **[!UICONTROL Preview]** 选项卡，以检查定位标准。
+   单击 **[!UICONTROL Finish]** 公式窗口的按钮。 在筛选窗口中，单击 **[!UICONTROL Preview]** 选项卡，以检查定位标准。
 
    ![](assets/s_advuser_query_sample1.6.png)
 
-## 筛选投放后的收件人行为 {#filtering-recipients--behavior-folllowing-a-delivery}
+## 过滤投放后的收件人行为 {#filtering-recipients--behavior-folllowing-a-delivery}
 
-在工作流中， **[!UICONTROL Query]** 和 **[!UICONTROL Split]** 框允许您选择上次投放后的行为。 此选择是通过 **[!UICONTROL Delivery recipient]** 筛选条件。
+在工作流中， **[!UICONTROL Query]** 和 **[!UICONTROL Split]** 允许您选择上一次投放后的行为。 此项选择是通过 **[!UICONTROL Delivery recipient]** 筛选。
 
 * 示例的目的
 
-   在投放工作流中，有几种方法可用于跟踪第一个电子邮件通信。 此类操作涉及使用 **[!UICONTROL Split]** 盒子。
+  在投放工作流中，有几种方法可跟进第一个电子邮件通信。 此类操作涉及使用 **[!UICONTROL Split]** 盒子。
 
 * 上下文
 
-   发送“夏季体育优惠”投放。 投放四天后，将发送其他两个投放。 其中一个是“水上运动选件”，另一个是第一个“夏季运动选件”的后续交付。
+  发送“夏季体育优惠”投放。 投放四天后，将发送其他两个投放。 其中一个是“水上运动优惠”，另一个是第一个“夏季运动优惠”的后续服务。
 
-   “水上运动选件”投放会发送给在首次投放中单击“水上运动”链接的收件人。 这些点击表明收件人对该主题感兴趣。 引导他们向类似的提议是有道理的。 但是，未单击“夏季体育优惠”的收件人将再次收到相同的内容。
+  “水上运动选件”投放会发送给在第一次投放中单击“水上运动”链接的收件人。 这些点击显示收件人对该主题感兴趣。 有必要引导他们接受类似的提议。 但是，未点击“夏季体育优惠”的收件人将再次收到相同的内容。
 
-以下步骤说明了如何配置 **[!UICONTROL Split]** 框中输入以下两种不同的行为：
+以下步骤说明了如何配置 **[!UICONTROL Split]** 框中的两个不同行为：
 
-1. 插入 **[!UICONTROL Split]** 框中。 此框将第一个投放的收件人划分为接下来的两个投放。 在首次投放期间，根据与收件人行为关联的筛选条件进行划分。
+1. 插入 **[!UICONTROL Split]** 框中。 此框将第一个投放的收件人划分为接下来的两个投放。 在首次投放期间，根据与收件人行为关联的筛选条件发生细分。
 
    ![](assets/query_editor_ex_09.png)
 
@@ -204,19 +204,19 @@ ht-degree: 1%
 
 1. 在 **[!UICONTROL Subsets]** 选项卡，定义第一个拆分分支。 例如，输入 **已单击** 此分支的标签。
 1. 选择 **[!UICONTROL Add a filtering condition on the incoming population]** 选项。 单击 **[!UICONTROL Edit]**。
-1. 在 **[!UICONTROL Targeting and filtering dimension]** 窗口中，双击 **[!UICONTROL Recipients of a delivery]** 筛选条件。
+1. 在 **[!UICONTROL Targeting and filtering dimension]** 窗口中，双击 **[!UICONTROL Recipients of a delivery]** 筛选。
 
    ![](assets/query_editor_ex_05.png)
 
 1. 在 **[!UICONTROL Target element]** 窗口中，选择要应用于此分支的行为： **[!UICONTROL Recipients having clicked (email)]**.
 
-   在下方，选择 **[!UICONTROL Delivery specified by the transition]** 选项。 此功能将自动恢复在首次投放期间定向的人员。
+   在下方，选择 **[!UICONTROL Delivery specified by the transition]** 选项。 此功能将在首次投放期间自动恢复目标人员。
 
    这是“水上运动选件”交付。
 
    ![](assets/query_editor_ex_08.png)
 
-1. 定义第二个分支。 此分支将包括跟进电子邮件，其内容与首次投放相同。 转到 **[!UICONTROL Subsets]** 选项卡，然后单击 **[!UICONTROL Add]** 创建它。
+1. 定义第二个分支。 此分支将包括跟进电子邮件，其内容与首次投放的内容相同。 转到 **[!UICONTROL Subsets]** 选项卡，然后单击 **[!UICONTROL Add]** 创建它。
 
    ![](assets/query_editor_ex_06.png)
 
@@ -228,7 +228,7 @@ ht-degree: 1%
 1. 单击 **[!UICONTROL Delivery recipients]** 在 **[!UICONTROL Targeting and filtering dimension]** 窗口。
 1. 在 **[!UICONTROL Target element]** 窗口中，选择 **[!UICONTROL Recipients who did not click (email)]** 行为。 选择 **[!UICONTROL Delivery specified by the transition]** 选项，如最后一个分支中所示。
 
-   此 **[!UICONTROL Split]** 框现在已完全配置。
+   此 **[!UICONTROL Split]** 框现已完全配置。
 
    ![](assets/query_editor_ex_03.png)
 
@@ -242,4 +242,4 @@ ht-degree: 1%
 * **[!UICONTROL Recipients who didn't open or click (email),]**
 * **[!UICONTROL Recipients who didn't click (email).]**
 
-   ![](assets/query_editor_ex_02.png)
+  ![](assets/query_editor_ex_02.png)

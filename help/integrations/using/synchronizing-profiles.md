@@ -2,14 +2,14 @@
 product: campaign
 title: 同步用户档案
 description: 了解如何将配置文件与ACS Connector同步
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 hide: true
 hidefromtoc: true
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1208'
 ht-degree: 3%
 
 ---
@@ -18,25 +18,25 @@ ht-degree: 3%
 
 
 
-ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7接收的数据可用于Campaign Standard以创建投放。 通过执行下面列出的操作，您可以查看配置文件的同步方式。
+ACS Connector会将数据从Campaign v7复制到Campaign Standard。 从Campaign v7接收的数据可用于Campaign Standard以创建投放。 您可以通过执行以下列出的操作来查看配置文件的同步方式。
 
-* **添加新收件人**：在Campaign v7中创建新收件人，并确认已将相应的用户档案复制到Campaign Standard。 参见 [创建新收件人](#creating-a-new-recipient).
-* **更新收件人**：在Campaign v7中编辑新收件人，并在Campaign Standard中查看相应的用户档案以确认已复制更新。 参见 [编辑收件人](#editing-a-recipient).
-* **在Campaign Standard中构建工作流**：在Campaign Standard中创建包含查询的工作流，该查询具有从Campaign v7复制的受众或用户档案。 参见 [创建工作流](#creating-a-workflow).
-* **在Campaign Standard中创建投放**：按照工作流完成以发送投放。 参见 [创建投放](#creating-a-delivery).
-* **验证退订链接**：使用Campaign v7 Web应用程序确保将收件人取消订阅服务的选择发送到Campaign v7数据库。 停止接收服务的选项将复制到Campaign Standard。 参见 [更改退订链接](#changing-the-unsubscription-link).
+* **添加新收件人**：在Campaign v7中创建新收件人，并确认已将相应的用户档案复制到Campaign Standard。 请参阅 [创建新收件人](#creating-a-new-recipient).
+* **更新收件人**：在Campaign v7中编辑新收件人，并在Campaign Standard中查看相应的用户档案以确认已复制更新。 请参阅 [编辑收件人](#editing-a-recipient).
+* **在Campaign Standard中构建工作流**：在Campaign Standard中创建一个工作流，该工作流包含一个具有一个或多个从Campaign v7复制的用户档案的查询。 请参阅 [创建工作流](#creating-a-workflow).
+* **在Campaign Standard中创建投放**：按照工作流完成以发送投放。 请参阅 [创建投放](#creating-a-delivery).
+* **验证退订链接**：使用Campaign v7 Web应用程序确保将收件人取消订阅服务的选择发送到Campaign v7数据库。 停止接收服务的选项将复制到Campaign Standard。 请参阅 [更改退订链接](#changing-the-unsubscription-link).
 
 ## 先决条件 {#prerequisites}
 
-以下部分介绍了ACS Connector如何帮助您在Campaign v7中添加和编辑收件人，然后在Campaign Standard投放中使用这些收件人。 ACS Connector要求满足以下条件：
+以下部分介绍ACS Connector如何帮助您在Campaign v7中添加和编辑收件人，然后在Campaign Standard投放中使用这些收件人。 ACS Connector要求满足以下条件：
 
 * Campaign v7中的收件人已复制到Campaign Standard。
-* 在Campaign v7和Campaign Standard中执行工作流的用户权限。
+* 用于在Campaign v7和Campaign Standard中执行工作流的用户权限。
 * 在Campaign Standard中创建和执行投放的用户权限。
 
 ## 更改退订链接 {#changing-the-unsubscription-link}
 
-当收件人单击由Campaign Standard发送的电子邮件中的退订链接时，Campaign Standard中的相应用户档案会更新。 要确保复制的用户档案包括用户退订服务的选择，必须将信息发送到Campaign v7而不是Campaign Standard。 为执行更改，退订服务将链接到Campaign v7 Web应用程序而不是Campaign Standard。
+当收件人单击Campaign Standard发送的电子邮件中的退订链接时，Campaign Standard中的相应用户档案会更新。 为了确保复制的用户档案包含用户退订服务的选择，必须将信息发送到Campaign v7而不是Campaign Standard。 为执行更改，退订服务将链接到Campaign v7 Web应用程序而不是Campaign Standard。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
 
 ## 创建新收件人 {#creating-a-new-recipient}
 
-1. 在Campaign v7中创建新收件人，以便复制到Campaign Standard。 输入尽可能多的信息，包括收件人的姓氏、名字、电子邮件地址和邮政地址。 但是，请勿选择 **[!UICONTROL Salutation]** 因为它将被添加到下一节， [编辑收件人](#editing-a-recipient). 有关详细信息，请参阅 [添加收件人](../../platform/using/adding-profiles.md).
+1. 在Campaign v7中创建新收件人，以复制到Campaign Standard。 输入尽可能多的信息，包括收件人的姓氏、名字、电子邮件地址和邮政地址。 但是，请勿选择 **[!UICONTROL Salutation]** 因为它将被添加到下一部分， [编辑收件人](#editing-a-recipient). 有关详细信息，请参阅 [添加收件人](../../platform/using/adding-profiles.md).
 
    ![](assets/acs_connect_profile_sync_01.png)
 
@@ -56,9 +56,9 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
 
 ## 编辑收件人 {#editing-a-recipient}
 
-以下更改单个数据点的步骤提供了一个简单示例，说明在使用数据复制时，Campaign v7如何成为Campaign Standard的主数据库。 修改或删除Campaign v7中的复制数据对Campaign Standard中相应数据具有相同的效果。
+以下更改单个数据点的步骤提供了一个简单示例，说明在使用数据复制时，Campaign v7如何成为用于Campaign Standard的主数据库。 修改或删除Campaign v7中的复制数据对Campaign Standard中的相应数据具有相同的效果。
 
-1. 从中选择新创建的收件人 [创建新收件人](#creating-a-new-recipient) 并编辑收件人的姓名。 例如，选择 **[!UICONTROL Salutation]** 收件人（例如先生或夫人）的权限。 有关详细信息，请参阅 [编辑用户档案](../../platform/using/editing-a-profile.md).
+1. 从中选择新创建的收件人 [创建新收件人](#creating-a-new-recipient) 并编辑收件人的姓名。 例如，选择 **[!UICONTROL Salutation]** 收件人（例如先生或夫人）。 有关详细信息，请参阅 [编辑用户档案](../../platform/using/editing-a-profile.md).
 
    ![](assets/acs_connect_profile_sync_03.png)
 
@@ -79,7 +79,7 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
 1. 单击 **[!UICONTROL Workflow]**。
 1. 单击 **[!UICONTROL New workflow]** 和 **[!UICONTROL Next]**.
 1. 在中输入工作流的名称 **[!UICONTROL Label]** 字段和其他信息（如果需要）。 单击 **[!UICONTROL Next]**。
-1. 起始日期 **[!UICONTROL Targeting]** 在左侧，拖动 **[!UICONTROL Query]** 定位到工作区。
+1. 从 **[!UICONTROL Targeting]** 在左侧，拖动 **[!UICONTROL Query]** 定位到工作区。
 
    ![](assets/acs_connect_profile_sync_05.png)
 
@@ -92,11 +92,11 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
 
 >[!NOTE]
 >
->有关创建投放的说明会继续执行工作流开始于 [创建工作流](#creating-a-workflow).
+>有关创建投放的说明会继续执行工作流开始时使用的 [创建工作流](#creating-a-workflow).
 
-数字营销人员可以利用Campaign v7 Web应用程序，确保将收件人取消订阅服务的选择发送到Campaign v7数据库。 收件人单击退订链接后，停止接收服务的选项将从Campaign v7复制到Campaign Standard。 有关其他详细信息，请参阅 [更改退订链接](#changing-the-unsubscription-link).
+数字营销人员可以利用Campaign v7 Web应用程序，确保将收件人取消订阅服务的选择发送到Campaign v7数据库。 收件人单击退订链接后，用于停止接收服务的选项将从Campaign v7复制到Campaign Standard。 有关其他详细信息，请参阅 [更改退订链接](#changing-the-unsubscription-link).
 
-按照以下步骤使用Campaign v7中创建的退订服务，将电子邮件投放添加到现有工作流。 有关Campaign Standard工作流的更多信息和完整说明，请参阅此 [文档](../../workflow/using/about-workflows.md).
+按照以下步骤使用Campaign v7中创建的退订服务将电子邮件投放添加到现有工作流。 有关Campaign Standard工作流的更多信息和完整说明，请参阅此 [文档](../../workflow/using/about-workflows.md).
 
 >[!NOTE]
 >
@@ -112,11 +112,11 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
 
    ![](assets/acs_connect_profile_sync_08.png)
 
-1. 在中输入投放的名称 **[!UICONTROL Label]** 字段和其他信息（如果需要）。 单击 **[!UICONTROL Next]**。
+1. 在中输入交货的名称 **[!UICONTROL Label]** 字段和其他信息（如果需要）。 单击 **[!UICONTROL Next]**。
 
    ![](assets/acs_connect_profile_sync_09.png)
 
-1. 在 **[!UICONTROL Subject]** 字段中，输入将显示在收件人电子邮件收件箱中的主题。
+1. 在 **[!UICONTROL Subject]** 字段中，输入要显示在收件人电子邮件收件箱中的主题。
 1. 单击 **[!UICONTROL Change content]** 以添加HTML模板。
 
    ![](assets/acs_connect_profile_sync_10.png)
@@ -125,7 +125,7 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
 
    ![](assets/acs_connect_profile_sync_11.png)
 
-1. 当前退订链接必须替换为使用您的顾问创建的Web应用程序的新链接。 在电子邮件内容的底部找到退订链接，然后单击一次。 单击垃圾桶图标以删除链接。
+1. 当前退订链接必须替换为使用您的顾问创建的Web应用程序的新链接。 在电子邮件内容底部找到退订链接，然后单击一次。 单击垃圾桶图标可删除链接。
 
    ![](assets/acs_connect_profile_sync_12.png)
 
@@ -161,7 +161,7 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
 
 ## 验证退订服务 {#verifying-the-unsubscription-service}
 
-按照中的说明操作 [创建工作流](#creating-a-workflow) 和 [创建投放](#creating-a-delivery) 然后再转到以下步骤。
+请按照 [创建工作流](#creating-a-workflow) 和 [创建投放](#creating-a-delivery) 然后再转到以下步骤。
 
 1. 收件人单击电子邮件投放中的退订链接。
 
@@ -175,6 +175,6 @@ ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. 转到Campaign Standard并打开收件人的配置文件详细信息。 确认旁边显示了一个复选框 **[!UICONTROL No longer contact (by any channel)]**. 要了解在Campaign Standard中在何处查找配置文件，请参阅 [导航基础知识](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=zh-Hans).
+1. 转到Campaign Standard并打开收件人的配置文件详细信息。 确认旁边显示复选框 **[!UICONTROL No longer contact (by any channel)]**. 要了解在Campaign Standard中在何处查找配置文件，请参阅 [导航基础知识](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=zh-Hans).
 
    ![](assets/acs_connect_profile_sync_23.png)

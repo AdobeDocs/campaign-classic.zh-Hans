@@ -2,14 +2,15 @@
 product: campaign
 title: 外部帐户
 description: 了解如何创建外部帐户
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Application Settings, External Account
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1837'
 ht-degree: 8%
 
 ---
@@ -35,7 +36,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
    ![](assets/ext_account_2.png)
 
 1. 输入 **[!UICONTROL Label]** 和 **[!UICONTROL Internal Name]**.
-1. 选择外部帐户 **[!UICONTROL Type]** 您希望创建哪一个。
+1. 选择外部帐户 **[!UICONTROL Type]** 您要创建哪个。
 1. 根据所选外部帐户类型指定凭据，以配置对帐户的访问权限。
 
    所连接服务器的提供者通常会提供必需的信息。
@@ -43,19 +44,19 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 1. 查看 **[!UICONTROL Enabled]** 用于激活连接的选项。
 1. 单击 **[!UICONTROL Save]**。
 
-创建外部帐户并将其添加到外部帐户列表。
+外部帐户已创建并添加到外部帐户列表。
 
-## Campaign特定的外部帐户
+## 特定于Campaign的外部帐户
 
 ### 退回邮件 {#bounce-mails-external-account}
 
 此 **退回邮件** 外部帐户指定要用于连接到电子邮件服务的外部POP3帐户。 有关此外部帐户的更多信息，请参阅此 [页面](../../workflow/using/inbound-emails.md).
 
-所有为POP3访问配置的服务器都可以用来接收回信。
+所有配置为POP3访问的服务器都可以接收回邮。
 
 ![](assets/ext_account_6.png)
 
-要配置 **[!UICONTROL Bounce mails (defaultPopAccount)]** 外部帐户：
+配置 **[!UICONTROL Bounce mails (defaultPopAccount)]** 外部帐户：
 
 * **[!UICONTROL Server]**
 
@@ -89,7 +90,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 * **[!UICONTROL Azure tenant]**
 
-  Azure ID(或目录（租户）ID)可在 **Essentials** Azure门户中应用程序概述的下拉列表。
+  可在以下位置找到Azure ID(或目录（租户）ID)： **Essentials** Azure门户中应用程序概述的下拉列表。
 
 * **[!UICONTROL Azure Client ID]**
 
@@ -97,17 +98,17 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 * **[!UICONTROL Azure Client secret]**
 
-  客户端密码ID可在 **客户端密码** 中的列 **证书和密钥** Azure门户中应用程序的菜单。
+  客户端密码ID可在 **客户端密钥** 中的列 **证书和密钥** Azure门户中应用程序的菜单。
 
 * **[!UICONTROL Azure Redirect URL]**
 
-  可以在以下位置找到重定向URL： **身份验证** Azure门户中应用程序的菜单。 它应以下列语法结尾 `nl/jsp/oauth.jsp`，例如 `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+  可在以下位置找到重定向URL： **身份验证** Azure门户中应用程序的菜单。 它应以下列语法结束 `nl/jsp/oauth.jsp`，例如 `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
 输入其他凭据后，您可以单击 **[!UICONTROL Setup the connection]** 以完成外部帐户配置。
 
 ### 路由{#routing-external-account}
 
-此 **[!UICONTROL Routing]** 外部帐户允许您根据安装的包来配置Adobe Campaign中可用的每个渠道。
+此 **[!UICONTROL Routing]** 外部帐户允许您根据安装的包配置Adobe Campaign中可用的每个渠道。
 
 ![](assets/ext_account_7.png)
 
@@ -126,7 +127,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 默认情况下，会根据您的配置提供电子邮件路由外部帐户。
 
-作为内部部署/混合部署客户，您可以按如下所述创建新的路由外部帐户或更新参数。 此配置仅供专家用户使用，可能会影响您的可投放性。 如有任何问题，请联系Adobe客户关怀团队或您的Adobe代表。
+作为内部部署/混合部署客户，您可以创建新的路由外部帐户或更新参数，如下所述。 此配置仅供专家用户使用，可能会影响您的可投放性。 如有任何问题，请联系Adobe客户关怀团队或您的Adobe代表。
 
 * 您可以使用 **中间源**， **外部** 路由，或 **批量** 投放路由类型。
 
@@ -138,7 +139,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 ### 执行实例  {#execution-instance-external-account}
 
-如果您有划分的体系结构，则需要指定链接到控制实例的执行实例并连接它们。 将事务性消息模板部署到执行实例。
+如果您具有分解的体系结构，则需要指定链接到控制实例的执行实例并将它们连接起来。 将事务性消息模板部署到执行实例。
 
 ![](assets/ext_account_13.png)
 
@@ -148,11 +149,11 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 * **[!UICONTROL Account]**
 
-  帐户的名称，它必须与operator文件夹中定义的消息中心代理匹配。
+  帐户的名称，它必须与操作员文件夹中定义的消息中心代理匹配。
 
 * **[!UICONTROL Password]**
 
-  运算符文件夹中定义的帐户的密码。
+  运算符文件夹中定义的帐户密码。
 
 有关此配置的更多信息，请参阅此 [页面](../../message-center/using/configuring-instances.md#control-instance).
 
@@ -196,7 +197,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL Server]**
 
-  sftp服务器的URL。
+  SFTP服务器的URL。
 
 * **[!UICONTROL Port]**
 
@@ -210,7 +211,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
   用于连接到SFTP服务器的密码。
 
-要在Windows上添加SSH密钥，请执行以下操作：
+在Windows上添加SSH密钥：
 
 1. 创建 **主页** 将值设置为安装目录的环境变量。
 
@@ -251,7 +252,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL IMS server]**
 
-  IMS服务器的URL。 确保暂存实例和生产实例指向相同的IMS生产端点。
+  IMS服务器的URL。 确保暂存实例和生产实例都指向同一个IMS生产端点。
 
 * **[!UICONTROL IMS scope]**
 
@@ -275,7 +276,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL Association mask]**
 
-  语法，允许Enterprise Dashboard中的配置名称与Adobe Campaign中的组同步。
+  语法允许Enterprise Dashboard中的配置名称与Adobe Campaign中的组同步。
 
 * **[!UICONTROL Server]**
 
@@ -289,7 +290,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 ## 网络分析 {#web-analytics-external-account}
 
-此 **[!UICONTROL Web Analytics]** 外部帐户允许您以区段的形式将数据从Adobe Analytics转发到Adobe Campaign。 反过来，它会将Adobe Campaign投放的电子邮件营销活动的指标和属性发送到Adobe Analytics连接器。
+此 **[!UICONTROL Web Analytics]** 外部帐户允许您以区段形式将数据从Adobe Analytics转发到Adobe Campaign。 反过来，它会将Adobe Campaign投放的电子邮件营销活动的指标和属性发送到Adobe Analytics连接器。
 
 ![](assets/ext_account_10.png)
 
@@ -325,7 +326,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 此 **[!UICONTROL Microsoft Dynamics CRM]** 外部帐户允许您将Microsoft Dynamics数据导入和导出到Adobe Campaign。
 
-通过此了解有关Campaign - Microsoft Dynamics CRM连接器的更多信息 [页面](../../platform/using/crm-ms-dynamics.md).
+请在此了解有关Campaign - Microsoft Dynamics CRM连接器的更多信息 [页面](../../platform/using/crm-ms-dynamics.md).
 
 替换为 **[!UICONTROL Web API]** 部署类型和 **[!UICONTROL Password credentials]** 身份验证，您需要提供以下详细信息：
 
@@ -343,7 +344,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL Client identifier]**
 
-  可以在Microsoft Azure管理门户中找到的客户端ID **[!UICONTROL Update your code]** 类别， **[!UICONTROL Client ID]** 字段。
+  可以在Microsoft Azure管理门户网站中找到的客户端ID **[!UICONTROL Update your code]** 类别， **[!UICONTROL Client ID]** 字段。
 
 * **[!UICONTROL CRM version]**
 
@@ -363,7 +364,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
   请注意，私钥需要编码为Base64。
 
-  为此，您可以使用Base64编码器帮助或使用命令行 `base64 -w0 private.key` 适用于Linux的。
+  为此，您可以使用Base64编码器帮助或使用命令行 `base64 -w0 private.key` 用于Linux。
 
 * **[!UICONTROL Custom Key identifier]**
 
@@ -371,7 +372,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL Client identifier]**
 
-  可以在Microsoft Azure管理门户中找到的客户端ID **[!UICONTROL Update your code]** 类别， **[!UICONTROL Client ID]** 字段。
+  可以在Microsoft Azure管理门户网站中找到的客户端ID **[!UICONTROL Update your code]** 类别， **[!UICONTROL Client ID]** 字段。
 
 * **[!UICONTROL CRM version]**
 
@@ -381,7 +382,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 ### Salesforce.com CRM  {#salesforce-crm-external-account}
 
-此 **[!UICONTROL Salesforce CRM]** 外部帐户允许您将Salesforce数据导入和导出到Adobe Campaign。
+此 **[!UICONTROL Salesforce CRM]** 外部帐户允许您将Salesforce数据导入和导出到Adobe Campaign中。
 
 ![](assets/ext_account_17.png)
 
@@ -389,7 +390,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL Account]**
 
-  用于登录到Salesforce CRM的帐户。
+  用于登录Salesforce CRM的帐户。
 
 * **[!UICONTROL Password]**
 
@@ -435,7 +436,7 @@ Amazon Simple Storage Service (S3)连接器可用于将数据导入或导出Adob
 
 * **[!UICONTROL Secret access key to AWS]**
 
-  要了解在何处查找您的AWS访问密钥，请参阅此 [页面](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+  要了解在何处查找AWS的秘密访问密钥，请参阅此 [页面](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
 * **[!UICONTROL AWS Region]**
 
@@ -443,7 +444,7 @@ Amazon Simple Storage Service (S3)连接器可用于将数据导入或导出Adob
 
 * 此 **[!UICONTROL Use server side encryption]** 复选框允许您以S3加密模式存储文件。
 
-要了解在何处查找访问密钥ID和秘密访问密钥，请参阅Amazon Web服务 [文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
+要了解在何处查找访问密钥ID和访问密钥，请参阅Amazon Web服务 [文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
 ### Azure Blob Storage {#azure-blob-external-account}
 
@@ -451,11 +452,11 @@ Amazon Simple Storage Service (S3)连接器可用于将数据导入或导出Adob
 
 ![](assets/ext_account_23.png)
 
-要配置 **[!UICONTROL Azure external account]** 要使用Adobe Campaign，您需要提供以下详细信息：
+配置 **[!UICONTROL Azure external account]** 要使用Adobe Campaign，您需要提供以下详细信息：
 
 * **[!UICONTROL Server]**
 
-  Azure Blob存储服务器的URL。
+  Azure Blob Storage服务器的URL。
 
 * **[!UICONTROL Encryption]**
 

@@ -2,14 +2,14 @@
 product: campaign
 title: Adobe Analytics连接器配置
 description: 了解有关Adobe Analytics连接器配置的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '653'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 
 产品配置文件确定用户对其他Analytics组件的访问级别。
 
-如果您已有Analytics产品配置文件，则仍应创建一个新的Adobe Analytics产品配置文件，专门用于Analytics连接器。 这将确保您的产品配置文件设置为具有此集成的正确权限。
+如果您已有Analytics产品配置文件，则仍应创建一个新的Adobe Analytics产品配置文件，专门用于Analytics连接器。 这将确保为您的产品配置文件设置此集成的正确权限。
 
 有关产品配置文件的详细信息，请参阅 [Admin console文档](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
 
@@ -52,23 +52,23 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 
    此 **[!UICONTROL Product profile]** 应仅用于Analytics Connector，以防止出现配置错误错误。
 
-1. 打开新创建的 **[!UICONTROL Product profile]** 并选择 **[!UICONTROL Permissions]** 选项卡。
+1. 打开您新创建的 **[!UICONTROL Product profile]** 并选择 **[!UICONTROL Permissions]** 选项卡。
 
    ![](assets/do-not-localize/triggers_3.png)
 
-1. 配置不同功能，单击 **[!UICONTROL Edit]** 并选择要分配给您的的权限 **[!UICONTROL Product profile]** 单击加号(+)图标。
+1. 配置不同的功能，单击 **[!UICONTROL Edit]** 并选择要分配给您的的权限 **[!UICONTROL Product profile]** 单击加号(+)图标。
 
    有关如何管理权限的更多信息，请参阅 [Admin console文档](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
 
-1. 对于 **[!UICONTROL Report Suites]** 功能，添加 **[!UICONTROL Report Suites]** 以后需要使用。
+1. 对于 **[!UICONTROL Report Suites]** 功能，添加 **[!UICONTROL Report Suites]** 稍后需要使用。
 
-   如果您没有任何报表包，则可以按以下方式创建报表包 [这些步骤](../../platform/using/adobe-analytics-connector.md#report-suite-analytics).
+   如果您没有任何报表包，则可以按以下方式创建它 [这些步骤](../../platform/using/adobe-analytics-connector.md#report-suite-analytics).
 
    ![](assets/do-not-localize/triggers_4.png)
 
 1. 对于 **[!UICONTROL Metrics]** 功能，添加 **[!UICONTROL Metrics]** 稍后您需要进行配置。
 
-   如果需要，您可以打开自动包含选项，该选项会将每个权限项添加到包含列表中，并自动添加新权限项。
+   如果需要，您可以打开自动包含选项，该选项会将每个权限项添加到已包含列表中，并自动添加新权限项。
 
    ![](assets/do-not-localize/triggers_13.png)
 
@@ -92,11 +92,11 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
    * **[!UICONTROL Calculated metric creation]**
    * **[!UICONTROL Segment creation]**
 
-您的产品配置文件现已配置。 然后，您需要创建Adobe I/O项目。
+您的产品配置文件现已配置完成。 然后，您需要创建Adobe I/O项目。
 
 ## 创建Adobe I/O项目 {#create-adobe-io}
 
-1. 访问Adobe I/O并登录身份 **系统管理员** ，属于您的组织。
+1. 访问Adobe I/O并以下列身份登录 **系统管理员** 您组织的名称。
 
    有关管理员角色的更多信息，请参阅此 [页面](https://helpx.adobe.com/enterprise/using/admin-roles.html).
 
@@ -126,7 +126,7 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 
    ![](assets/do-not-localize/triggers_10.png)
 
-1. 选择 **[!UICONTROL Product profile]** 在之前步骤中创建，详见此 [部分](#analytics-product-profile).
+1. 选择 **[!UICONTROL Product profile]** 在前面的步骤中创建，详见此 [部分](#analytics-product-profile).
 
 1. 然后，单击 **[!UICONTROL Save Configured API]**.
 
@@ -141,19 +141,19 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 
    ![](assets/do-not-localize/triggers_12.png)
 
-1. 使用步骤6中生成的私钥。
+1. 使用在步骤6中生成的私钥。
 
    如果您已使用这些凭据设置触发器，则此连接器配置的私钥必须相同。
 
-1. 使用以下命令对私钥进行编码： `base64 ./private.key > private.key.base64`. 这将将base64内容保存到新文件中 `private.key.base64`.
+1. 使用以下命令对私钥进行编码： `base64 ./private.key > private.key.base64`. 这会将base64内容保存到新文件中 `private.key.base64`.
 
    >[!NOTE]
    >
-   >复制/粘贴私钥时，有时会自动添加额外的行。 在编码私钥之前，请记住删除它。
+   >复制/粘贴私钥时，有时可以自动添加额外的行。 在编码私钥之前，请记得删除它。
 
 1. 复制文件中的内容 `private.key.base64`.
 
-1. 通过SSH登录到安装了Adobe Campaign实例的每个容器，并通过运行以下命令在Adobe Campaign中添加项目凭据： `neolane` 用户。 这将插入 **[!UICONTROL Technical Account]** 实例配置文件中的凭据。
+1. 通过SSH登录到安装了Adobe Campaign实例的每个容器，并通过运行以下命令（如下所示）在Adobe Campaign中添加项目凭据 `neolane` 用户。 这将插入 **[!UICONTROL Technical Account]** 实例配置文件中的凭据。
 
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>

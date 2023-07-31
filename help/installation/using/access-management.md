@@ -2,12 +2,12 @@
 product: campaign
 title: 访问管理
 description: 了解有关访问管理最佳实践的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Access Management, Permissions
+feature: Installation, Access Management, Permissions
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '383'
 ht-degree: 8%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 
 
-## Webapp运算符
+## Webapp操作员
 
 webApp操作员是开箱即用的管理员。 要提高安全性，请遵循以下准则：
 
@@ -34,18 +34,18 @@ webApp操作员是开箱即用的管理员。 要提高安全性，请遵循以�
 
 ## 安全组和管理员操作员
 
-创建足够的安全组，为操作员提供足够的权利，让他们执行所需操作，而不是提供更多的权限。
+创建足够的安全组，只向操作员授予足够的权利，让操作员能够执行所需操作，而不是执行更多操作。
 
 请勿使用管理员运算符（或不共享它）。 为每个物理用户创建一个操作员（以便进行准确的审核/日志记录）。 将新命名的管理员添加到管理员组。 如果您不使用管理员运算符，请不要删除它，也不要禁用它：此运算符在内部用于执行处理。 但你可以禁止 [对客户端控制台的访问权限](../../platform/using/access-management.md) 并限制其安全区域（本地主机）。
 
-避免在管理员组（或具有管理员命名权限）中添加过多操作员。 它们是功能非常强大的运算符（可以执行所有SQL语句、在服务器上执行命令等）。
+避免在管理员组中添加过多操作员（或具有管理员命名权限）。 它们是功能非常强大的运算符（它们可以执行所有SQL语句，在服务器上执行命令等）。
 
-Adobe Campaign通过以下方式提供三种高级权限： [已命名权限](../../platform/using/access-management.md#named-rights)：
+Adobe Campaign通过以下方式提供三种高级别权限： [已命名权限](../../platform/using/access-management.md#named-rights)：
 
-* **管理** （管理员）：允许访问所有内容，并允许执行所有操作，绕过所有命名的权限检查，因此它包括PROGRAM EXECUTION (createProcess)和SQL命名的权限
+* **管理** （管理员）：提供对所有内容的访问权限并允许执行所有操作，绕过所有命名的权限检查，因此它包括PROGRAM EXECUTION (createProcess)和SQL命名权限
 
 * **项目执行** (createProcess)：允许执行外部程序（在服务器上）
 
-* **SQL**：允许对数据库运行SQL脚本（以便绕过安全模型）。 注：如果需要执行复杂的计算（例如，过滤），可以要求数据库管理员创建SQL函数，并将它们添加到允许列表。 请参阅[此页面](../../installation/using/scripting-coding-guidelines.md)以了解详情。
+* **SQL**：允许对数据库运行SQL脚本（因此它可以绕过安全模型）。 注：如果需要执行复杂的计算（例如，过滤），可以要求数据库管理员创建一个SQL函数，并将它们添加到允许列表中。 请参阅[此页面](../../installation/using/scripting-coding-guidelines.md)以了解详情。
 
-* **将它们授予极少（且受信任）的操作员**
+* **将其授予极少（且受信任的）操作员**

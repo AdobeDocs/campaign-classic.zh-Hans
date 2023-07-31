@@ -2,11 +2,12 @@
 product: campaign
 title: 筛选模式
 description: 筛选模式
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 ## 系统筛选器 {#system-filters}
 
-您可以筛选对特定用户的架构访问权限，具体取决于其权限。 通过系统筛选器，您可以使用管理架构中详述的实体的读取和写入权限 **readAccess** 和 **writeraccess** 参数。
+您可以筛选对特定用户的架构访问权限，具体取决于其权限。 通过系统筛选器，您可以使用管理架构中详述的实体的读写权限 **readAccess** 和 **writeAccess** 参数。
 
 >[!NOTE]
 >
@@ -23,37 +24,37 @@ ht-degree: 1%
 
 * **readAccess**：提供对架构数据的只读访问权限。
 
-   **警告**  — 所有链接表都必须设置相同的限制。 此配置可能会影响性能。
+  **警告**  — 必须对所有链接表设置相同的限制。 此配置可能会影响性能。
 
-* **writeraccess**：提供对架构数据的写入权限。
+* **writeAccess**：提供对架构数据的写入权限。
 
-这些筛选器输入在主页面 **元素** 架构的级别和可以形成来限制访问，如以下示例所示。
+这些筛选器在主 **元素** 架构的级别，如以下示例中所示，可以形成来限制访问。
 
 * 限制写入权限
 
-   此处，过滤器用于禁止没有管理权限的运算符在架构上具有“写入”权限。 这意味着只有管理员才对此架构描述的实体具有写入权限。
+  此处，过滤器用于禁止没有“管理”权限的操作员在架构上具有“写入”权限。 这意味着只有管理员对此架构描述的实体具有写入权限。
 
-   ```
-   <sysFilter name="writeAccess">      
-    <condition enabledIf="hasNamedRight('admin')=false" expr="FALSE"/>    
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="writeAccess">      
+   <condition enabledIf="hasNamedRight('admin')=false" expr="FALSE"/>    
+  </sysFilter>
+  ```
 
 * 限制读取和写入权限：
 
-   此处，该过滤器用于禁止所有操作员在架构上同时具有“读取”和“写入”权限。 仅 **内部** 帐户，由表达式“$(loginId)”表示！=0”，具有这些权限。
+  此处，该过滤器用于禁止所有操作员在架构上同时具有“读取”和“写入”权限。 仅 **内部** 帐户，由表达式“$(loginId)”表示！=0”，具有这些权限。
 
-   ```
-   <sysFilter name="readAccess"> 
-    <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
-   </sysFilter>
-   
-   <sysFilter name="writeAccess">  
-    <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="readAccess"> 
+   <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
+  </sysFilter>
+  
+  <sysFilter name="writeAccess">  
+   <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
+  </sysFilter>
+  ```
 
-   可能 **表达式** 用于定义条件的属性值是TRUE或FALSE。
+  可能 **表达式** 用于定义条件的属性值是TRUE或FALSE。
 
 >[!NOTE]
 >
@@ -61,7 +62,7 @@ ht-degree: 1%
 
 ## Protect内置架构 {#protecting-built-in-schemas}
 
-默认情况下，只有具有管理权限的操作员才可以通过“写入”权限访问内置架构：
+默认情况下，只有具有ADMINISTRATION权限的操作员才可以通过WRITE权限访问内置架构：
 
 * ncm：publishing
 * nl：monitoring
@@ -100,12 +101,12 @@ ht-degree: 1%
 
 ## 修改内置模式的系统筛选器 {#modifying-system-filters-of-built-in-schemas}
 
-您仍然可以修改现成架构的系统筛选器，由于与旧版本的兼容性问题，这些筛选器默认受保护。
+您仍然可以修改现成模式的系统过滤器，由于与旧版本的兼容性问题，这些模式默认受保护。
 
 >[!NOTE]
 >
 >但是，Adobe建议您不要修改默认参数以确保最佳安全性。
 
 1. 为相关架构创建扩展或打开现有扩展。
-1. 添加子元素 **`<sysfilter name="<filter name>" _operation="delete"/>`** 在主元素中删除源架构中相同下的过滤器应用程序。
+1. 添加子元素 **`<sysfilter name="<filter name>" _operation="delete"/>`** 在主元素中删除应用程序下的筛选器，位于原始架构中的相同下。
 1. 如果需要，您可以添加新过滤器，如中所述 [系统筛选器](#system-filters).

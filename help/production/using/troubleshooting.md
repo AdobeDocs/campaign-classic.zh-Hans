@@ -2,14 +2,15 @@
 product: campaign
 title: 生产疑难解答
 description: 了解与Adobe Campaign配置、监控、升级过程、数据处理和数据库维护过程相关的生产故障排除过程
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring, Troubleshooting
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '226'
 ht-degree: 18%
 
 ---
@@ -18,21 +19,21 @@ ht-degree: 18%
 
 
 
-此部分包含与Adobe Campaign一般生产问题（如交付和工作流执行、监控、数据库维护、连接等）相关的故障排除过程。
+本节包含与Adobe Campaign常规生产问题（如交付和工作流执行、监控、数据库维护、连接等）相关的故障排除过程。
 
 ## 常见问题和一般问题 {#common-and-general-issues}
 
-* 此 [页面](../../production/using/modules-and-frequent-issues.md) 介绍列出的模块遇到的最常见问题。
+* 此 [页面](../../production/using/modules-and-frequent-issues.md) 显示列出的模块遇到的最常见问题。
 * 此 [页面](../../production/using/workflow-execution.md) 列出了在遇到工作流执行问题时应遵循的常见疑难解答过程。
 * 此 [页面](../../production/using/lost-password.md) 详细说明如何更改或恢复丢失的密码。
-* 此 [页面](../../production/using/console-update.md) 详细了解如果停用相应的选项，如何重新激活控制台更新请求。
+* 此 [页面](../../production/using/console-update.md) 详细介绍在停用相应选项时如何重新激活控制台更新请求。
 
 ## 投放疑难解答 {#delivery-troubleshooting}
 
-在投放过程中遇到问题时，可执行特定操作：
+当投放遇到问题时，可以执行特定操作：
 * [可投放性问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [图像显示问题](../../production/using/image-display-issues.md)
-* [图像缺失](../../production/using/images-missing.md)
+* [缺少图像](../../production/using/images-missing.md)
 * [临时文件问题](../../production/using/temporary-files.md) (*仅限内部部署托管模型*)
 
 **相关主题**：
@@ -55,7 +56,7 @@ ht-degree: 18%
 
 ## 连接改进 {#connection-improvements}
 
-如果您遇到连接问题，可通过以下几种方法来修复这些问题：
+如果您遇到连接问题，可通过以下几种方法修复这些问题：
 
 * [连接失败](../../production/using/failure-to-connect.md)
 * [连接阈值](../../production/using/connection-thresholds.md)

@@ -2,16 +2,17 @@
 product: campaign
 title: 用例
 description: 用例
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Subscriptions, Email, Data Management
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 3%
+source-wordcount: '269'
+ht-degree: 4%
 
 ---
 
@@ -25,11 +26,11 @@ ht-degree: 3%
 
 为此，我们需要使用预定义的文件管理器：这些过滤器链接到文档类型，并可通过 **[!UICONTROL Administration > Configuration > Predefined filters]** 节点。 这些数据过滤器可用于应用程序中的每种类型的编辑器（或文档）。
 
-数据筛选器的创建方式与预定义筛选器的创建方式相同，但有一个附加字段可用于选择将应用筛选器的文档类型。
+创建数据过滤器的方式与预定义过滤器的方式相同，但有一个附加字段可用于选择将应用过滤器的文档类型。
 
 应用以下步骤：
 
-1. 通过创建新过滤器 **[!UICONTROL Administration > Configuration > Predefined filters]** 节点。
+1. 通过以下方式创建新过滤器 **[!UICONTROL Administration > Configuration > Predefined filters]** 节点。
 1. 单击 **[!UICONTROL Select link]** 图标以选择相关文档：
 
    ![](assets/s_ncs_user_filter_choose_schema.png)
@@ -46,7 +47,7 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   您可以访问这些字段，以便在过滤器编辑器的正文中定义过滤器条件。 应用程序过滤器的定义方式与高级过滤器完全相同。 参见 [创建高级过滤器](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+   您可以访问这些字段，以便在过滤器编辑器的正文中定义过滤器条件。 应用程序过滤器的定义方式与高级过滤器的定义方式完全相同。 请参阅 [创建高级过滤器](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
 1. 在订阅上创建一个新的筛选器，以仅显示具有未定义电子邮件格式的订阅：
 

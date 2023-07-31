@@ -2,11 +2,12 @@
 product: campaign
 title: 其他Web跟踪参数
 description: 了解有关Web跟踪参数的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -18,9 +19,9 @@ ht-degree: 0%
 您的Adobe Campaign平台提供两个TRANSACTION类型的Web跟踪参数作为标准：
 
 * **数量**：表示交易金额，
-* **文章**：表示交易记录中的项目数。
+* **文章**：表示交易记录的项数。
 
-这些参数在 **nms：webTrackingLog** 模式，和是报表中看到的一些指标。
+这些参数在 **nms：webTrackingLog** 架构，和是报表中看到的一些指标。
 
 要定义其他参数，必须扩展此架构。
 
@@ -65,19 +66,19 @@ webTrackingParamSize="64"/>
 
 修改配置后，您必须：
 
-* 停止承载重定向模块（Apache、IIS等）的Web服务器，
+* 停止托管重定向模块的Web服务器（Apache、IIS等），
 * 停止Adobe Campaign服务器： **网络停止nlserver6** 在Windows中， **/etc/init.d/nlserver6停止** 在Linux中，
 
-   >[!NOTE]
-   >
-   >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl stop nlserver**
+  >[!NOTE]
+  >
+  >从20.1开始，我们建议改使用以下命令（对于Linux）： **systemctl stop nlserver**
 
-* 在Linux中，使用删除共享内存段 **ipcrm** 命令，
-* 重新启动Adobe Campaign服务器： **网络启动nlserver6** 在Windows中， **/etc/init.d/nlserver6启动** 在Linux中，
+* 在Linux中，使用 **ipcrm** 命令，
+* 重新启动Adobe Campaign服务器： **网络启动nlserver6** 在Windows中， **/etc/init.d/nlserver6 start** 在Linux中，
 
-   >[!NOTE]
-   >
-   >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl启动nlserver**
+  >[!NOTE]
+  >
+  >从20.1开始，我们建议改使用以下命令（对于Linux）： **systemctl启动nlserver**
 
 * 重新启动Web服务器。
 
@@ -107,4 +108,4 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->对于Linux，如果增加 **webTrackingParamSize** 或 **maxSharedLogs** 参数，您可能需要增加共享内存(SHM)的大小。
+>对于Linux，如果将 **webTrackingParamSize** 或 **maxSharedLogs** 参数，可能需要增加共享内存(SHM)的大小。

@@ -2,16 +2,17 @@
 product: campaign
 title: Campaign Classic数据库建议
 description: 数据库建议
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 1%
+source-wordcount: '302'
+ht-degree: 4%
 
 ---
 
@@ -29,11 +30,11 @@ ht-degree: 1%
 
 必须在Adobe Campaign应用程序服务器上安装本机客户端。
 
-您可以通过ODBC驱动程序配置面板检查服务器上的本机客户端，位于 **SQL Server Native Client 11.0**.
+您可以通过ODBC驱动程序配置面板（位于下）检查服务器上的本机客户端 **SQL Server Native Client 11.0**.
 
 必须存在以下访问DLL： **sqlncli11.dll**.
 
-访问DLL位于Microsoft网站上。
+访问DLL可在Microsoft网站上找到。
 
 >[!NOTE]
 >
@@ -45,7 +46,7 @@ ht-degree: 1%
 >
 >不支持具有多字节字符的列名。
 
-此 **NLS_NCHAR_CHARACTERSET** 和 **NLS_CHARACTERSET** 需要正确配置参数，数据库才能在Unicode或ANSI中工作。
+此 **NLS_NCHAR_CHARACTERSET** 和 **NLS_CHARACTERSET** 为了使数据库在Unicode或ANSI中工作，需要正确配置参数。
 
 Adobe Campaign使用默认的Oracle编码。 使用其他编码可能会触发兼容性问题：在这种情况下，请联系技术支持。
 
@@ -57,10 +58,10 @@ SELECT * FROM nls_database_parameters ;
 
 * 对于Unicode安装，支持的编码包括：
 
-   ```
-   NLS_NCHAR_CHARACTERSET         AL16UTF16
-   NLS_CHARACTERSET         AL32UTF8
-   ```
+  ```
+  NLS_NCHAR_CHARACTERSET         AL16UTF16
+  NLS_CHARACTERSET         AL32UTF8
+  ```
 
 * 对于ANSI安装（非unicode），仅支持以下编码：
 
@@ -84,4 +85,4 @@ sqlplus
 
 **相关主题**
 
-* [Adobe Campaign Classic表中的Unlogged选项](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Adobe Campaign Classic表格中的Unlogged选项](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)

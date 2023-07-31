@@ -2,16 +2,17 @@
 product: campaign
 title: 密码丢失
 description: 密码丢失
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Access Management
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 8%
+source-wordcount: '196'
+ht-degree: 12%
 
 ---
 
@@ -22,10 +23,10 @@ ht-degree: 8%
 您可以更改或恢复丢失的密码。
 有两种可能的情况：
 
-* [Adobe Campaign操作员丢失密码](#password-lost-by-campaign-operator)
+* [Adobe Campaign操作员密码丢失](#password-lost-by-campaign-operator)
 * [内部密码丢失](#internal-password-lost) （仅限内部部署客户）
 
-## Campaign操作员丢失密码 {#password-lost-by-campaign-operator}
+## Campaign操作员密码丢失 {#password-lost-by-campaign-operator}
 
 如果Adobe Campaign操作员丢失了密码，您可以更改密码。
 为此请执行以下操作步骤：
@@ -44,8 +45,8 @@ ht-degree: 8%
 >
 >此部分仅适用于内部部署客户。
 
-如果内部密码丢失，则必须重新初始化该密码。
-要执行此操作，请应用以下步骤：
+如果内部密码丢失，则必须重新初始化它。
+要实现此目的，请执行以下步骤：
 
 1. 编辑 **/usr/local/neolane/nl6/conf/serverConf.xml** 文件。
 
@@ -56,7 +57,7 @@ ht-degree: 8%
    <xtk internalPassword="myPassword"/>
    ```
 
-1. 删除引号中的字符串，在本例中为： **myPassword**
+1. 删除引号中的字符串，在此例中为： **我的密码**
 
    这样，您将获得以下行：
 

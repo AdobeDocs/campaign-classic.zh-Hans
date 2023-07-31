@@ -2,15 +2,16 @@
 product: campaign
 title: 使用工作流导入和导出数据
 description: 了解如何使用Campaign中的工作流导入和导出数据
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Data Management, Workflows
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '272'
 ht-degree: 31%
 
 ---
@@ -35,7 +36,7 @@ ht-degree: 31%
 
 可在工作流中处理的数据可从结构化文件中提取，以便将其导入Adobe Campaign。
 
-有关加载数据活动的描述，请参阅 [正在加载数据（文件）](../../workflow/using/data-loading--file-.md) 部分。
+有关加载数据活动的描述，请参阅 [数据加载（文件）](../../workflow/using/data-loading--file-.md) 部分。
 
 要导入的结构化文件示例：
 

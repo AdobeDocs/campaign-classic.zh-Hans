@@ -2,15 +2,16 @@
 product: campaign
 title: 通过 SOAP（服务器端）进行集成
 description: 通过 SOAP（服务器端）进行集成
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 3%
+source-wordcount: '325'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 3%
 
 
 
-为选件管理提供的SOAP Web服务与Adobe Campaign中通常使用的SOAP Web服务不同。 它们可以通过上一部分中所述的交互URL访问，并允许您提供或更新给定联系人的选件。
+为选件管理提供的SOAP Web服务与Adobe Campaign中通常使用的服务不同。 您可以通过上一节所述的交互URL访问选件，并让您提供或更新给定联系人的选件。
 
 ## 优惠建议 {#offer-proposition}
 
@@ -26,18 +27,18 @@ ht-degree: 3%
 
 * **targetId**：收件人的主键（可以是复合键）。
 * **maxCount**：指定联系人的优惠建议数量。
-* **上下文**：用于在空间架构中添加上下文信息。 如果使用的架构为 **nms：interaction**， **`<empty>`** 应添加。
+* **上下文**：用于在空间架构中添加上下文信息。 如果使用的架构为 **nms：interaction**， **`<empty>`** 应该添加的。
 * **类别**：指定选件必须属于的类别。
 * **主题**：指定选件必须属于的主题。
 * **uuid**：Adobe Campaign永久cookie的值(“uuid230”)。
 * **nli**：Adobe Campaign会话Cookie的值(“nlid”)。
-* **noProp**：使用“true”值可取消激活建议插入。
+* **noProp**：使用“true”值停用建议插入。
 
 >[!NOTE]
 >
->此 **targetId** 和 **maxCount** 设置是强制性的。 其他则是可选的。
+>此 **targetId** 和 **maxCount** 必须设置。 其他则是可选的。
 
-作为查询的响应，SOAP服务将返回以下参数：
+作为对该查询的响应，SOAP服务将返回以下参数：
 
 * **interactionId**：交互的ID。
 * **建议**： XML元素，包含建议列表，每个建议都有自己的ID和HTML表示形式。
@@ -47,8 +48,8 @@ ht-degree: 3%
 添加 **nms：interaction#UpdateStatus** 命令前往URL，然后是以下参数：
 
 * **建议**：字符串，它包含在优惠建议期间作为输出提供的建议ID。 请参阅 [优惠建议](#offer-proposition).
-* **状态**：字符串类型，它指定选件的新状态。 可能的值列在 **propositionstatus** 明细列表，在 **nms：common** 架构。 例如，开箱即用的数字3对应于 **已接受** 状态。
-* **上下文**：XML元素，用于在空间架构中添加上下文信息。 如果使用的架构为 **nms：interaction**， **`<empty>`** 应添加。
+* **状态**：字符串类型，它指定选件的新状态。 可能的值列在 **propositionStatus** 枚举，在 **nms：common** 架构。 例如，出厂预装的数字3对应于 **已接受** 状态。
+* **上下文**：XML元素，用于在空间架构中添加上下文信息。 如果使用的架构为 **nms：interaction**， **`<empty>`** 应该添加的。
 
 ## 使用SOAP调用的示例 {#example-using-a-soap-call}
 

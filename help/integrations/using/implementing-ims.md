@@ -2,16 +2,17 @@
 product: campaign
 title: 实施IMS
 description: 实施IMS
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Configuration
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 58552d6e-fbed-4944-85c4-9c14bf60d823
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 0%
+source-wordcount: '63'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 ## 启用IMS连接 {#enabling-the-ims-connection}
 
-1. 要启用通过IMS连接，请选中 **[!UICONTROL Connect with an Adobe ID]** 控制台的“连接”窗口中。
+1. 要启用通过IMS连接，请选中 **[!UICONTROL Connect with an Adobe ID]** 在控制台的连接窗口中。
 
    ![](assets/ims_1.png)
 

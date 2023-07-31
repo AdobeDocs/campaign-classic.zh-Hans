@@ -2,48 +2,50 @@
 product: campaign
 title: 关于 Campaign 集成
 description: 使用其他 Adobe 解决方案，并将其各种功能与 Campaign 相结合
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Overview
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '769'
 ht-degree: 12%
 
 ---
 
-# Adobe Campaign集成入门 {#about-campaign-integrations}
+# Adobe Campaign集成快速入门 {#about-campaign-integrations}
 
 
 
-Adobe Experience Cloud是一套业内最佳的综合性集成解决方案，它基于通用数据平台而构建，提供了一组功能强大的通用核心服务。
+Adobe Experience Cloud是一套业内最佳的综合性集成解决方案，它基于常用的数据平台而构建，提供了一组功能强大的通用核心服务。
 
-了解Adobe Campaign与之间可用的功能集成 [Adobe Experience Cloud解决方案](https://experienceleague.adobe.com/docs/core-services/interface/marketing-cloud-integrations.html) 和 [核心服务](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html). 然后，您可以使解决方案实施符合现代化要求并实施Experience Cloud，以便可以使用客户属性和受众等功能。
+了解Adobe Campaign与之间可用的功能集成 [Adobe Experience Cloud解决方案](https://experienceleague.adobe.com/docs/core-services/interface/marketing-cloud-integrations.html) 和 [核心服务](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html). 然后，您可以使解决方案实施符合现代化要求和实施Experience Cloud，以便能够使用客户属性和受众等功能。
 
 ![](assets/ExCloud-solutions.png)
 
-可与Adobe Campaign集成的Adobe解决方案和核心服务的完整列表以及相关文档可在 [本节](#experience-cloud-integrations).
+可与Adobe Campaign集成的Adobe解决方案和核心服务的完整列表以及相关文档位于 [本节](#experience-cloud-integrations).
 
 >[!CAUTION]
 >
 >这些集成中的大多数都需要实施AdobeIdentity Management System (IMS)，才能通过Adobe ID登录。 [请参阅此页面](../../integrations/using/about-adobe-id.md)以了解详情。
+>
 
 ## 关联您的解决方案 {#working-with-experience-cloud-solutions}
 
-可以将多个解决方案链接到Adobe Experience Cloud。 此 **组织** 是一个客户实体，它允许管理员配置组和用户，并控制Adobe Experience Cloud中的单点登录(SSO)。 该组织的作用类似于一个衔接所有Experience Cloud产品和解决方案的登录公司。 大多数情况下，组织是您的公司名称。但是，公司可以有许多组织。
+可以将多个解决方案链接到Adobe Experience Cloud。 此 **组织** 是一个客户实体，它允许管理员配置群组和用户，并控制Adobe Experience Cloud中的单点登录(SSO)。 该组织的作用类似于一个衔接所有Experience Cloud产品和解决方案的登录公司。 大多数情况下，组织是您的公司名称。但是，公司可以有许多组织。
 
 有关组织管理和关联Adobe Experience Cloud帐户的详情，请参见 [Adobe Experience Cloud帮助门户](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html).
 
 ## 身份和Cookie管理 {#id-and-cookies}
 
-在安装Adobe Campaign或将现有安装与Adobe Experience Cloud集成时， [Adobe Experience Cloud Identity服务](https://experienceleague.adobe.com/docs/id-service/using/home.html) 已启用。 此服务取代了Adobe Campaign首先用于跟踪功能的永久Cookie。
+安装Adobe Campaign或将现有安装与Adobe Experience Cloud集成时， [Adobe Experience Cloud Identity服务](https://experienceleague.adobe.com/docs/id-service/using/home.html) 已启用。 此服务取代了Adobe Campaign首先用于跟踪功能的永久Cookie。
 
 Adobe Experience Cloud Identity服务（ID服务）提供了一个通用的永久性ID，用于在Experience Cloud的所有解决方案中标识您的访客。
 
-将为生成跟踪日志的收件人分配一个唯一的访客ID。 此ID将保存在 **[!UICONTROL Requester UUID (@sourceID)]** 字段 **[!UICONTROL nms:trackingLogRcp]** 表格。 **因此，在实施访客ID服务之前存在的收件人的跟踪数据将不再可用**.
+独特访客ID将分配给生成跟踪日志的收件人。 此ID将保存在 **[!UICONTROL Requester UUID (@sourceID)]** 字段 **[!UICONTROL nms:trackingLogRcp]** 表格。 **因此，在实施访客ID服务之前存在的收件人的跟踪数据将不再可用**.
 
 随后，该ID将由具有相同CNAME的其他Adobe Experience Cloud解决方案识别。 [了解详情](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/cname.html)
 
@@ -76,7 +78,7 @@ Adobe Experience Cloud Identity服务（ID服务）提供了一个通用的永�
    <td> 允许您插入由动态计算的图像 <strong>Adobe Target</strong> 打开由Adobe Campaign创建和发送的电子邮件时。<br /> <p><a href="../../integrations/using/integrating-with-adobe-target.md">了解详情</a> 关于Adobe Campaign - Adobe Target集成。</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>人员核心服务</strong><br /> <strong>Adobe Audience Manager</strong><br /> </td> 
+   <td> <strong>People核心服务</strong><br /> <strong>Adobe Audience Manager</strong><br /> </td> 
    <td> 允许您在Adobe Experience Cloud解决方案和您使用的核心之间共享受众。<br /> <p><a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">了解详情</a> 关于Adobe Campaign — 人员核心服务和Adobe Audience Manager集成。</p><br /> </td> 
   </tr> 
   <tr> 
@@ -89,11 +91,11 @@ Adobe Experience Cloud Identity服务（ID服务）提供了一个通用的永�
   </tr> 
   <tr> 
    <td> <strong>Experience Cloud Triggers</strong><br /> </td> 
-   <td> 集成介于 <strong>触发核心服务</strong> 通过Adobe Campaign，您可以向客户发送个性化电子邮件，以对Adobe Analytics在您的网站上跟踪的特定行为作出反应。<br /> <p><a href="https://helpx.adobe.com/cn/campaign/kb/triggers-and-campaign.html">了解详情</a> 关于Adobe Campaign -Experience Cloud触发器集成。</p><br /> </td> 
+   <td> 集成介于 <strong>触发核心服务</strong> 和Adobe Campaign允许您向客户发送个性化电子邮件，以对Adobe Analytics在网站上跟踪的特定行为作出反应。<br /> <p><a href="https://helpx.adobe.com/cn/campaign/kb/triggers-and-campaign.html">了解详情</a> 关于Adobe Campaign -Experience Cloud触发器集成。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Analytics Connector</strong><br /> </td> 
-   <td> <strong>Adobe Analytics连接器</strong> 允许Adobe Campaign和Adobe Analytics通过关于电子邮件营销活动后用户行为的区段进行交互。 反过来，它会将 Adobe Campaign 投放的电子邮件营销活动的指标和属性发送到 Adobe Analytics。<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">了解详情</a> 关于Campaign - Analytics连接器集成。</p><br /> </td> 
+   <td> <strong>Adobe Analytics连接器</strong> 允许Adobe Campaign和Adobe Analytics在电子邮件营销活动后，通过有关用户行为的区段进行交互。 反过来，它会将 Adobe Campaign 投放的电子邮件营销活动的指标和属性发送到 Adobe Analytics。<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">了解详情</a> 关于Campaign - Analytics连接器集成。</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>

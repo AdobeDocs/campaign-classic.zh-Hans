@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: 同步 Web 应用程序
-description: 了解如何将Web应用程序与ACS连接器同步
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: 了解如何将Web应用程序与ACS Connector同步
 feature: ACS Connector
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 hide: true
 hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '808'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 1%
 
 
 
-在此使用案例中，我们将使用Campaign Standard发送包含指向Campaign v7 Web应用程序链接的通信。 当收件人单击电子邮件中的链接时，Web应用程序会显示一个表单，其中包含多个预加载了收件人数据的字段以及一个指向新闻稿的订阅链接。 收件人可以更新其数据并订阅该服务。 此用户档案将在Campaign v7中更新，并且此信息将在Campaign Standard中复制。
+在此使用案例中，我们将使用Campaign Standard发送包含指向Campaign v7 Web应用程序链接的通信。 当收件人单击电子邮件中的链接时，Web应用程序会显示一个表单，其中包含多个预加载了收件人数据的字段以及一个指向新闻稿的订阅链接。 收件人可以更新其数据并订阅该服务。 此用户档案将在Campaign v7中更新，并且信息将在Campaign Standard中复制。
 
-如果您在Campaign v7中有许多服务和Web应用程序，您可以选择不以Campaign Standard重新创建所有这些服务和Web应用程序。 ACS Connector允许您使用所有现有的Campaign v7 Web应用程序和服务，并将它们链接到Campaign Standard发送的投放。
+如果您在Campaign v7中有许多服务和Web应用程序，您可以选择不以Campaign Standard重新创建它们。 ACS Connector允许您使用所有现有的Campaign v7 Web应用程序和服务，并将它们链接到Campaign Standard发送的投放。
 
 ## 先决条件 {#prerequisites}
 
@@ -43,11 +43,11 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_2.png)
 
-1. 编辑 **[!UICONTROL Preloading]** 活动。 此 **[!UICONTROL Auto-load data referenced in the form]** 框已勾选，且 **[!UICONTROL Adobe Campaign encryption]** 选择了识别方法。 这将允许Web应用程序使用Adobe Campaign数据库中存储的数据预加载表单的字段。 参见 [本文档](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
+1. 编辑 **[!UICONTROL Preloading]** 活动。 此 **[!UICONTROL Auto-load data referenced in the form]** 复选框，并且 **[!UICONTROL Adobe Campaign encryption]** 选择了识别方法。 这将允许Web应用程序使用Adobe Campaign数据库中存储的数据预加载表单的字段。 请参阅 [本文档](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
 
    ![](assets/acs_connect_lp_4.png)
 
-1. 编辑 **[!UICONTROL Page]**. 其中包括三个字段（姓名、电子邮件和电话），以及一个用于邀请收件人订阅新闻稿的复选框(**[!UICONTROL Newsletter]** 服务)。
+1. 编辑 **[!UICONTROL Page]**. 其中包括三个字段（姓名、电子邮件和电话），以及一个复选框，用于邀请收件人订阅新闻稿(**[!UICONTROL Newsletter]** 服务)。
 
    ![](assets/acs_connect_lp_3.png)
 
@@ -55,13 +55,13 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_5.png)
 
-1. 转到 **[!UICONTROL Profiles and Targets > Recipient]** 并选择收件人。 您可以看到此用户档案尚未订阅该服务。
+1. 转到 **[!UICONTROL Profiles and Targets > Recipient]** 并选择收件人。 您可以看到此配置文件尚未订阅该服务。
 
    ![](assets/acs_connect_lp_6.png)
 
 ## 复制数据 {#replicating-the-data}
 
-为了在Campaign v7和Campaign Standard之间复制所需数据，提供了多个复制工作流模板。 此 **[!UICONTROL Profiles replication]** 工作流会自动将所有Campaign v7收件人复制到Campaign Standard。 参见 [技术和复制工作流](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). 此 **[!UICONTROL Landing pages replication]** 工作流可以复制我们想要在Campaign Standard中使用的Web应用程序。
+为了在Campaign v7和Campaign Standard之间复制所需的数据，提供了多个复制工作流模板。 此 **[!UICONTROL Profiles replication]** 工作流会自动将所有Campaign v7收件人复制到Campaign Standard。 请参阅 [技术和复制工作流](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). 此 **[!UICONTROL Landing pages replication]** 工作流可以复制我们想要在Campaign Standard中使用的Web应用程序。
 
 ![](assets/acs_connect_lp_1.png)
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_7.png)
 
-1. 搜索您的Campaign v7收件人，并检查该收件人是否出现在Campaign Standard中。
+1. 搜索您的Campaign v7收件人，并检查该收件人是否显示在Campaign Standard中。
 
    ![](assets/acs_connect_lp_8.png)
 
@@ -79,15 +79,15 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_9.png)
 
-1. 单击 **[!UICONTROL Adobe Campaign]** 徽标，在左上角，然后选择 **配置文件和受众>服务** 检查新闻稿服务是否也在那里。
+1. 单击 **[!UICONTROL Adobe Campaign]** 徽标，在左上角，然后选择 **“配置文件和受众”>“服务”** 检查新闻稿服务是否也存在。
 
    ![](assets/acs_connect_lp_10.png)
 
 ## 设计和发送电子邮件 {#designing-and-sending-the-email}
 
-在本部分中，我们将了解如何在Campaign Standard电子邮件中包含从Campaign v7 Web应用程序复制的登录页的链接。
+在本部分中，我们将了解如何在Campaign Standard电子邮件中包含指向从Campaign v7 Web应用程序复制的登陆页面的链接。
 
-创建、设计和发送电子邮件的步骤与经典电子邮件的步骤相同。 请参阅 [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=zh-Hans) 文档。
+创建、设计和发送电子邮件的步骤与创建传统电子邮件的步骤相同。 请参阅 [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=zh-Hans) 文档。
 
 1. 创建新电子邮件，然后选择一个或多个复制的用户档案作为受众。
 1. 编辑您的内容并插入 **[!UICONTROL Link to a landing page]**.
@@ -99,32 +99,32 @@ ht-degree: 1%
    ![](assets/acs_connect_lp_13.png)
 
 1. 准备电子邮件、发送校样并发送最终电子邮件。
-1. 其中一位收件人打开电子邮件，然后单击指向新闻稿订阅的链接。
+1. 其中一位收件人打开电子邮件并单击新闻稿订阅链接。
 
    ![](assets/acs_connect_lp_14.png)
 
-1. 此收件人添加一个电话号码并检查新闻稿订阅框。
+1. 此收件人会添加一个电话号码并检查新闻稿订阅框。
 
    ![](assets/acs_connect_lp_15.png)
 
-## 正在检索更新的信息 {#retrieving-the-updated-information}
+## 检索更新的信息 {#retrieving-the-updated-information}
 
-当收件人通过Web应用程序从更新数据时，Adobe Campaign v7会同步检索更新的信息。 然后，将该代码从Campaign v7复制到Campaign Standard。
+当收件人通过Web应用程序从更新其数据时，Adobe Campaign v7会同步检索更新的信息。 然后，将该代码从Campaign v7复制到Campaign Standard。
 
 1. 在Campaign v7中，转到 **[!UICONTROL Profiles and Target > Services and subscriptions]** 然后打开 **[!UICONTROL Newsletter]** 服务。 您可以看到收件人现在显示在订阅者列表中。
 
    ![](assets/acs_connect_lp_16.png)
 
-1. 转到 **[!UICONTROL Profiles and Targets > Recipient]** 并选择收件人。 您可以看到电话号码现在已存储。
+1. 转到 **[!UICONTROL Profiles and Targets > Recipient]** 并选择收件人。 您可以看到电话号码现已存储。
 
    ![](assets/acs_connect_lp_17.png)
 
-1. 在 **[!UICONTROL Subscriptions]** 选项卡，我们还可以看到此收件人订阅了Newsletter服务。
+1. 在 **[!UICONTROL Subscriptions]** 选项卡，我们还可以看到此收件人已订阅新闻稿服务。
 
    ![](assets/acs_connect_lp_18.png)
 
 1. 请等待几分钟，以便运行配置文件复制工作流。
-1. 在Campaign Standard中，访问您的收件人配置文件以检查更新的数据是否已从Campaign v7正确复制。
+1. 在Campaign Standard中，访问您的收件人配置文件，以检查更新数据是否已从Campaign v7正确复制。
 
    ![](assets/acs_connect_lp_19.png)
 
@@ -132,6 +132,6 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_20.png)
 
-1. 单击 **[!UICONTROL Subscriptions]** 选项卡。 此时将显示新闻稿服务。
+1. 单击 **[!UICONTROL Subscriptions]** 选项卡。 新闻稿服务现在将出现。
 
    ![](assets/acs_connect_lp_21.png)

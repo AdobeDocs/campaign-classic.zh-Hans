@@ -2,14 +2,15 @@
 product: campaign
 title: 网络、数据库和 SSL/TLS
 description: 了解有关网络、数据库和SSL/TLS配置最佳实践的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 2a66dfaa-7fff-48de-bdd4-62f3ebfbab19
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '142'
 ht-degree: 9%
 
 ---
@@ -25,7 +26,7 @@ ht-degree: 9%
 * 关闭外部IP上的Tomcat端口(8080)（必须在本地主机上工作）
 * 请勿将标准HTTP端口(80)映射到Tomcat端口(8080)
 
-如果可能，请使用安全渠道：使用POP3S而不是POP3（或TLS上的POP3）。
+如果可能，请使用安全渠道：改用POP3S而不是POP3（或通过TLS的POP3）。
 
 ## 数据库
 
@@ -51,7 +52,7 @@ openssl x509 -noout -subject -dates
 nmap --script ssl-enum-ciphers -p ${REMPORT} ${REMHOST}
 ```
 
-您也可以使用 [slyze](https://github.com/nabla-c0d3/sslyze/releases) python脚本，两者都执行。
+您也可以使用 [slyze](https://github.com/nabla-c0d3/sslyze/releases) python脚本，两者都有。
 
 ```
 python sslyze.py --sslv2 --sslv3 --tlsv1 --reneg --resum --certinfo=basic --hide_rejected_ciphers --sni=SNI myserver.com

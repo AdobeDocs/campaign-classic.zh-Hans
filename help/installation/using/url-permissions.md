@@ -2,15 +2,16 @@
 product: campaign
 title: 配置URL权限
 description: 了解如何配置URL权限
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings, Permissions
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '362'
 ht-degree: 29%
 
 ---
@@ -27,9 +28,10 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 >
 >此过程仅限于 **内部部署** 部署。
 >
->As a **托管** 客户，如果您可以访问 [营销活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，您可以使用URL权限自助服务界面。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hans)
+>作为 **托管** 客户，如果您可以访问 [营销活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，您可以使用URL权限自助服务界面。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hans)
 >
->其他 **混合/托管** 客户需要联系Adobe允许列表支持团队以将IP添加到。
+>其他 **混合/托管** 客户需要联系Adobe列入允许列表支持团队以将IP添加到。
+>
 
 对象 **混合** 和 **内部部署** 部署，管理员需要引用新的 **urlPermission** 在 **serverConf.xml** 文件。
 
@@ -37,8 +39,8 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 提供了三种连接保护模式：
 
 * **阻止**：阻止所有不属于允许列表的URL，并出现错误消息。 这是升级后默认模式。
-* **许可**&#x200B;允许列表 ：允许所有不属于的URL。
-* **警告**&#x200B;允许列表 ：允许所有不属于的URL，但JS解释器会发出警告，以便管理员可以收集这些URL。 此模式会添加JST-310027警告消息。
+* **许可**&#x200B;列入允许列表 ：允许所有不属于的URL。
+* **警告**：允许所有不属于JS允许列表的URL，但JS解释器会发出警告，以便管理员可以收集这些URL。 此模式会添加JST-310027警告消息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -52,7 +54,7 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 >
 >默认情况下，新实施使用 **阻止** 模式。
 >
->作为迁移的现有客户，您可以临时使用 **警告** 模式。 在允许URL之前分析出站流量。 允许列表定义允许的URL列表后，您可以将URL添加到并激活 **阻止** 模式。
+>作为迁移的现有客户，您可以临时使用 **警告** 模式。 在允许URL之前分析出站流量。 列入允许列表一旦定义了允许的URL列表，您就可以将URL添加到并激活 **阻止** 模式。
 
 有关更多信息，请参阅以下章节：
 
@@ -60,4 +62,4 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 * [托管模型](hosting-models.md)
 * [Campaign 服务器配置](configuring-campaign-server.md)
 * [Campaign服务器配置文件参数](the-server-configuration-file.md)
-* [安全和隐私检查列表](get-started-security-privacy.md)
+* [安全和隐私检查清单](get-started-security-privacy.md)

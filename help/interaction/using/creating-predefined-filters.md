@@ -2,14 +2,15 @@
 product: campaign
 title: 创建预定义过滤器
 description: 创建预定义过滤器
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 399e9468-bf70-425d-af0b-72c29636b513
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '103'
 ht-degree: 10%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 10%
 
 
 
-通过预定义过滤器，您可以为目标群体创建资格规则，以便在创建优惠期间轻松重复使用。 它们特定于每个环境，并将选件参数考虑在内。
+通过预定义过滤器，您可以为目标群体创建资格规则，以便在创建选件期间轻松重复使用。 它们特定于每个环境，并将选件参数考虑在内。
 
 要创建过滤器，请应用以下流程：
 
@@ -42,6 +43,6 @@ ht-degree: 10%
 
    ![](assets/offer_filter_create_004.png)
 
-1. 单击 **[!UICONTROL Preview]** 以查看筛选器的结果。
+1. 单击 **[!UICONTROL Preview]** 以查看筛选结果。
 
    ![](assets/offer_filter_create_006.png)

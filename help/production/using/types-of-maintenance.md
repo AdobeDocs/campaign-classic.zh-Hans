@@ -2,16 +2,17 @@
 product: campaign
 title: 维护类型
 description: 维护类型
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 2%
+source-wordcount: '519'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +25,7 @@ ht-degree: 2%
 Adobe Campaign提供了一个内置的工作流，可让您计划某些数据库维护任务： **数据库清理工作流**. 此工作流会执行以下任务：
 
 * 删除过期的记录，
-* 删除孤立的记录和重新初始化过期对象的状态，
+* 删除孤立的记录和重新初始化过期对象，
 * 更新数据库统计信息。
 
 >[!IMPORTANT]
@@ -33,7 +34,7 @@ Adobe Campaign提供了一个内置的工作流，可让您计划某些数据库
 
 ## 技术维护 {#technical-maintenance}
 
-数据库清理工作流不包括任何数据库维护工具：由您来组织维护。 要执行此操作，您可以：
+数据库清理工作流不包括任何数据库维护工具：由您来组织维护。 为此，您可以：
 
 * 与您的数据库管理员合作，使用第三方工具设置数据库维护，
 * 使用Adobe Campaign工作流引擎来计划和跟踪这些维护活动。
@@ -47,13 +48,13 @@ Adobe Campaign提供了一个内置的工作流，可让您计划某些数据库
 
 您需要找到适合执行这些维护活动的版块。 它们可能会严重影响运行时的数据库性能，甚至会阻止应用程序（由于锁定）。
 
-这些任务通常在活动较少期间每周运行一次，不会与备份、数据重新加载或聚合计算发生冲突。 一些要求较高的系统需要更频繁的维护。
+这些任务通常在活动较少期间每周运行一次，不会与备份、数据重新加载或聚合计算发生冲突。 有些系统要求频繁维护。
 
-更深入的维护，如完整表格重建，可以每月执行一次，最好是在应用程序完全停止的情况下执行，因为系统无论如何都不可用。
+更深入的维护，如完全表重建，可以每月执行一次，最好是应用程序完全停止，因为系统无论如何都不可用。
 
 ### 重建表 {#rebuilding-a-table}
 
-提供了多种策略：
+有几种策略可供使用：
 
 <table> 
  <thead> 
@@ -66,7 +67,7 @@ Adobe Campaign提供了一个内置的工作流，可让您计划某些数据库
  </thead> 
  <tbody> 
   <tr> 
-   <td> 在线碎片整理<br /> </td> 
+   <td> 联机碎片整理<br /> </td> 
    <td> 大多数数据库引擎都提供碎片整理方法。<br /> </td> 
    <td> 只需使用数据库碎片整理方法即可。 这些方法通常通过在碎片整理期间锁定数据来解决完整性问题。<br /> </td> 
    <td> 根据数据库的不同，这些碎片整理方法可以作为RDBMS选项(Oracle)提供，并且并不总是处理较大表的最有效方法。<br /> </td> 
@@ -75,11 +76,11 @@ Adobe Campaign提供了一个内置的工作流，可让您计划某些数据库
    <td> 转储和恢复<br /> </td> 
    <td> 将表转储到文件，删除数据库中的表并从转储中还原。<br /> </td> 
    <td> 这是对表进行碎片整理的最简单方法。 也是数据库几乎已满时的唯一解决方案。<br /> </td> 
-   <td> 由于表已被删除并重新创建，因此即使处于只读模式，应用程序也无法保持联机状态（在还原阶段该表不可用）。<br /> </td> 
+   <td> 由于表已被删除并重新创建，因此即使处于只读模式（在还原阶段表不可用），应用程序也无法保持联机。<br /> </td> 
   </tr> 
   <tr> 
    <td> 复制、重命名和删除<br /> </td> 
-   <td> 这将创建表及其索引的副本，然后删除现有副本，并重命名副本以替换现有副本。<br /> </td> 
+   <td> 此操作会创建表及其索引的副本，然后删除现有的副本，并重命名副本以替换现有副本。<br /> </td> 
    <td> 此方法比第一种方法速度快，因为它生成的IO较少（没有作为文件的副本并从此文件读取）。<br /> </td> 
    <td> 需要两倍的空间量。<br /> 必须停止在进程中写入表的所有活动进程。 但是，读取过程不会受到影响，因为表格在重建后的最后时刻会被交换。 <br /> </td> 
   </tr> 

@@ -2,11 +2,12 @@
 product: campaign
 title: 现有表的模式
 description: 现有表的模式
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '223'
 ht-degree: 10%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 10%
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   架构必须使用view=&quot;true&quot;属性填充 `<srcSchema>` 根元素，以便不生成表创建SQL脚本。
+   架构必须使用 `<srcSchema>` 根元素，以便不生成表创建SQL脚本。
 
 **示例** :
 
@@ -59,4 +60,4 @@ ht-degree: 10%
 
 此 **联合数据访问 — FDA** 选项使您可以访问存储在外部数据库中的数据。
 
-有关对架构进行配置以访问外部数据库中的数据的详情，请参见 [此页面](../../installation/using/creating-data-schema.md).
+有关在外部数据库中访问数据的架构上执行的配置的详情，请参见 [此页面](../../installation/using/creating-data-schema.md).

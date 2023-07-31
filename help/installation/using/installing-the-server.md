@@ -2,13 +2,14 @@
 product: campaign
 title: 安装服务器
 description: 安装服务器
+feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: b58edd9566d0f3d6aad5d2768706ead66e11e949
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 5%
@@ -19,7 +20,7 @@ ht-degree: 5%
 
 
 
-## 执行安装程序 {#executing-the-installation-program}
+## 正在执行安装程序 {#executing-the-installation-program}
 
 对于Windows 32位平台，请安装Adobe Campaign 32位。 对于Windows 64位平台，请安装Adobe Campaign 64位。
 
@@ -36,11 +37,11 @@ Adobe Campaign服务器的安装步骤如下：
    提供了几种安装类型：
 
    * **[!UICONTROL Installation of an application server]** ：安装Adobe Campaign应用程序服务器和客户端控制台。
-   * **[!UICONTROL Minimal installation (Network)]** ：从网络安装客户端计算机。 如有必要，计算机上只会安装有限数量的DLL，而其它所有组件都将从网络驱动器中使用。
+   * **[!UICONTROL Minimal installation (Network)]** ：从网络安装客户端计算机。 如有必要，计算机上只会安装有限数量的DLL，而所有其他组件都将从网络驱动器中使用。
    * **[!UICONTROL Installation of a client]** ：安装Adobe Campaign客户端所需的组件。
    * **[!UICONTROL Custom installation]** ：用户选择要安装的元素。
 
-   选择 **应用程序服务器的安装**，并完成不同的步骤，如下所示：
+   选择 **应用程序服务器的安装**，并完成如下所示的不同步骤：
 
    ![](assets/s_ncs_install_installer_02.png)
 
@@ -56,13 +57,13 @@ Adobe Campaign服务器的安装步骤如下：
 
    ![](assets/s_ncs_install_installer_05.png)
 
-   安装完成后，将显示一条消息，告知您：
+   安装完成后，将显示一条消息，通知您：
 
    ![](assets/s_ncs_install_installer_06.png)
 
    >[!NOTE]
    >
-   >服务器安装完成后，需要重新启动服务器以避免可能的网络问题。
+   >服务器安装完成后，需要重新启动服务器以避免可能出现的网络问题。
 
    安装完成后，启动Adobe Campaign以创建配置文件。 请参阅 [服务器的首次启动](#first-start-up-of-the-server).
 
@@ -74,7 +75,7 @@ Adobe Campaign服务器的安装步骤如下：
 nlserver pdump
 ```
 
-如果未启动Adobe Campaign，则响应为：
+如果Adobe Campaign未启动，则响应为：
 
 ```
 No task
@@ -82,7 +83,7 @@ No task
 
 ## 服务器的首次启动 {#first-start-up-of-the-server}
 
-安装测试完成后，通过 **[!UICONTROL Start > Programs > Adobe Campaign]** 并输入以下命令：
+安装测试完成后，打开命令提示符，通过 **[!UICONTROL Start > Programs > Adobe Campaign]** 菜单并输入以下命令：
 
 ```
 nlserver web
@@ -137,13 +138,13 @@ nlserver stop web
 
 ## 内部标识符的密码 {#password-for-the-internal-identifier}
 
-Adobe Campaign服务器定义一个名为的技术登录 **内部** 拥有所有实例的所有权限。 安装之后，登录没有密码。 必须定义一个。
+Adobe Campaign服务器定义的技术登录名为 **内部** 拥有所有实例的所有权限。 安装之后，登录没有密码。 必须定义一个。
 
 在[此章节](../../installation/using/configuring-campaign-server.md#internal-identifier)中了解更多信息。
 
 ## 启动Adobe Campaign服务 {#starting-adobe-campaign-services}
 
-要启动Adobe Campaign服务，您可以使用服务管理器或在命令行中输入以下内容（具有相应的权限）：
+要启动Adobe Campaign服务，您可以使用服务管理器或在命令行中输入以下内容（具有相应权限）：
 
 ```
 net start nlserver6
@@ -157,7 +158,7 @@ net stop nlserver6
 
 ## 安装LibreOffice {#installing-libreoffice}
 
-下载LibreOffice并按照常规安装步骤操作。
+下载LibreOffice并遵循常规安装步骤。
 
 添加以下环境变量：
 

@@ -2,13 +2,14 @@
 product: campaign
 title: 将Adobe Experience Platform区段引入Campaign
 description: 了解如何将Adobe Experience Platform受众纳入Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Platform Integration
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -17,15 +18,15 @@ ht-degree: 0%
 
 
 
-要将Adobe Experience Platform受众纳入Campaign并在您的工作流中使用它们，您首先需要连接Adobe Campaign as a Adobe Experience Platform **目标** 并使用要导出的区段对其进行配置。
+要将Adobe Experience Platform受众纳入Campaign并在您的工作流中使用它们，您首先需要将Adobe Campaign as a Adobe Experience Platform连接 **目标** 并使用要导出的区段对其进行配置。
 
-配置目标后，数据将导出到您的存储位置，您需要在Campaign Classic中构建一个专用工作流来摄取数据。
+目标配置完成后，数据将导出到您的存储位置，您将需要在Campaign Classic中构建专用工作流来摄取数据。
 
 ## 连接Adobe Campaign作为目标
 
 在Adobe Experience Platform中，通过为导出的区段选择存储位置来配置与Adobe Campaign的连接。 此步骤还允许您选择要导出的区段并指定要包含的其他XDM字段。
 
-有关详情，请参阅 [目标文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+有关详细信息，请参见 [目标文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
 配置目标后，Adobe Experience Platform会在您提供的存储位置创建一个以制表符分隔的.txt或.csv文件。 每24小时安排并执行一次此操作。
 
@@ -41,6 +42,6 @@ ht-degree: 0%
 
 然后，您可以根据需要构建工作流（使用区段数据更新数据库，向区段发送跨渠道投放等）
 
-例如，以下工作流每天从存储位置下载文件，然后使用区段数据更新Campaign数据库。
+例如，以下工作流每天从您的存储位置下载文件，然后使用区段数据更新Campaign数据库。
 
 ![](assets/rtcdp-workflow.png)

@@ -2,14 +2,14 @@
 product: campaign
 title: 配置 URL 跟踪选项
 description: 了解如何配置URL跟踪选项
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Monitoring, Email Design
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+feature: Monitoring, Email Design, Personalization
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 9%
+source-wordcount: '179'
+ht-degree: 10%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->此窗口中还配置了电子邮件中的图像管理。 参见 [添加图像](defining-the-email-content.md#adding-images).
+>此窗口中还配置了电子邮件中的图像管理。 请参阅 [添加图像](defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
@@ -29,19 +29,19 @@ ht-degree: 9%
 
 * 激活/取消激活所有邮件的URL跟踪。
 
-   >[!CAUTION]
-   >
-   >当投放上未激活跟踪时(即 **[!UICONTROL Activate tracking]** 选项)，与跟踪相关的报表和数据不可用：打开次数、热门点击次数和跟踪的URL报表不会显示任何数据，并且 **[!UICONTROL Tracking logs]** 不会为此投放显示选项卡。
+  >[!CAUTION]
+  >
+  >未在投放上激活跟踪时(即 **[!UICONTROL Activate tracking]** 选项未选中)，与跟踪相关的报表和数据不可用：打开、热点击和跟踪的URL报表不显示任何数据，并且 **[!UICONTROL Tracking logs]** 将不会显示此投放的选项卡。
 
-* 激活/取消激活消息打开的跟踪。
+* 激活/停用消息打开跟踪功能。
 
 ![](assets/s_ncs_user_email_del_tracking_param.png)
 
-跟踪的URL在中心窗口中以树形式列出。
+跟踪的URL以树形式列在中心窗口中。
 
-您可以为消息的每个URL分别激活或取消激活跟踪。 如需详细信息，请参阅[此部分](how-to-configure-tracked-links.md)。
+您可以为消息的每个URL单独激活或取消激活跟踪。 如需详细信息，请参阅[此部分](how-to-configure-tracked-links.md)。
 
-此 **[!UICONTROL Advanced]** 选项卡允许您个性化跟踪的URL和开始URL的计算公式。
+此 **[!UICONTROL Advanced]** 选项卡允许您个性化跟踪URL和开始URL的计算公式。
 
 ![](assets/s_ncs_user_email_del_tracking_param_adv.png)
 

@@ -2,15 +2,16 @@
 product: campaign
 title: 图像显示问题
 description: 图像显示问题
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 62fa491e-3e83-422b-bcde-2bae2c1b676e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 6%
+source-wordcount: '140'
+ht-degree: 7%
 
 ---
 
@@ -18,11 +19,11 @@ ht-degree: 6%
 
 
 
-如果您在发送的消息中存在面部图像显示问题，原因可能与错误位置有关：
+如果您在发送的消息中遇到图像显示问题，原因可能与错误位置有关：
 
 * 位置可能不匹配，或者图像可能未正确推送到重复的跟踪服务器：请检查您的配置。
-* 图像可能不在营销实例上的公共资源文件夹中：请将图像上传到资源文件夹以解决该问题。
-* 如果您在中间源架构中工作：发送验证时，检查图像正在上传且没有错误（信息显示在分析日志中）。
+* 图像可能不在营销实例的公共资源文件夹中：请将图像上传到资源文件夹以解决该问题。
+* 如果您在中间源架构中工作：发送验证时，检查图像上传且没有错误（分析日志中显示信息）。
 
 如何进行故障排除：
 

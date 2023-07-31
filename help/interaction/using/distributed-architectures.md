@@ -2,14 +2,15 @@
 product: campaign
 title: 分布式架构
 description: 分布式架构
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
@@ -22,18 +23,18 @@ ht-degree: 1%
 
 为了能够支持可扩展性并在入站渠道上提供全天候服务，您可以使用与分布式架构的交互。 此类型的架构已与Message Center一起使用，并且由多个实例组成：
 
-* 专用于出站渠道并包含营销和环境设计库的一个或多个控制实例
+* 一个或多个专用于出站渠道并包含营销和环境设计基础的控制实例
 * 专用于入站渠道的一个或多个执行实例
 
 ![](assets/interaction_powerbooster_schema.png)
 
 >[!NOTE]
 >
->控制实例专用于集客渠道，并包含目录的在线版本。 每个执行实例都是独立的，并且专用于一个联系区段（例如，每个国家/地区一个执行实例）。 必须直接对执行执行执行执行优惠引擎调用（每个执行实例一个特定URL）。 由于实例之间的同步不是自动的，因此来自同一联系人的交互必须通过同一实例发送。
+>控制实例专用于集客渠道，并包含目录的在线版本。 每个执行实例都是独立的，并且专用于一个联系区段（例如，每个国家/地区一个执行实例）。 必须直接在执行上执行优惠引擎调用（每个执行实例一个特定URL）。 由于实例之间的同步不是自动的，来自同一联系人的交互必须通过同一实例发送。
 
 ## 建议同步 {#proposition-synchronization}
 
-通过包执行选件同步。 在执行实例上，所有目录对象都使用外部帐户名称作为前缀。 这意味着可以在同一个执行实例上支持多个控制实例（例如开发和生产实例）。
+通过包执行选件同步。 在执行实例上，所有目录对象都使用外部帐户名称作为前缀。 这意味着可以在一个执行实例上支持多个控制实例（例如开发和生产实例）。
 
 >[!IMPORTANT]
 >
@@ -41,7 +42,7 @@ ht-degree: 1%
 
 选件会自动部署，然后在执行和控制实例上发布。
 
-所有联机实例上均禁用在设计环境中删除的选件。 在清除时段（在每个实例的部署助理中指定）和滑动时段（在传入命题的类型规则中指定）之后，所有实例上都会自动删除过时的命题和选件。
+在所有联机实例上，将禁用在设计环境中删除的选件。 在清除时段（在每个实例的部署助理中指定）和滑动时段（在传入命题的类型规则中指定）之后，所有实例上都会自动删除过时的命题和选件。
 
 ![](assets/interaction_powerbooster_schema2.png)
 
@@ -51,19 +52,19 @@ ht-degree: 1%
 
 * 如果您使用从匿名环境到已识别环境的回退函数，则这两个环境必须位于同一执行实例上。
 * 多个执行实例之间的同步不会实时执行。 同一联系人的交互必须发送到同一实例。 控制实例必须专用于出站渠道（非实时）。
-* 营销数据库不会自动同步。 在执行实例上，必须在权重和资格规则中使用的营销数据重复。 此过程并非标准流程，您必须在集成期间对其进行开发。
+* 营销数据库不会自动同步。 在执行实例上，必须在权重和资格规则中使用的营销数据重复。 此过程不符合标准，您必须在集成期间对其进行开发。
 * 建议同步仅通过FDA连接执行。
-* 如果在同一实例上使用交互和消息中心，则在这两种情况下都将通过FDA协议进行同步。
+* 如果您在同一实例上使用交互和消息中心，则在这两种情况下都将通过FDA协议进行同步。
 
 ## 包配置 {#packages-configuration}
 
 任何直接链接到的架构扩展 **互动** （优惠、建议、收件人等） 必须在执行实例上部署。
 
-必须在所有实例（控制和执行）上安装交互包。 提供了两个附加软件包：一个软件包将安装在控制实例上，另一个软件包将安装在每个执行实例上。
+必须在所有实例（控制和执行）上安装交互包。 另外提供了两个软件包：一个软件包将安装在控制实例上，另一个软件包将安装在每个执行实例上。
 
 >[!NOTE]
 >
->在安装软件包时， **长** 键入以下内容的字段： **nms：proposition** 表，例如建议ID，变为 **int64** 键入字段。 有关此类数据的详情，请参见 [本节](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>安装软件包时， **长** 键入字段 **nms：proposition** 表，例如建议ID， **int64** 键入字段。 有关此类数据的详情，请参见 [本节](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
 必须在每个实例上配置数据保留持续时间(通过 **[!UICONTROL Data purge]** 窗口)。 在执行实例上，此期间必须对应于要计算的分类规则（滑动期间）和资格规则所需的历史深度。
 
@@ -81,10 +82,11 @@ ht-degree: 1%
    * 检查使用的应用程序类型： **[!UICONTROL Message Center]**， **[!UICONTROL Interaction]**，或同时使用两者。
    * 输入使用的FDA帐户。 必须在执行实例上创建运算符，并且必须对相关实例的数据库具有以下读写权限：
 
-      ```
-      grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
-      grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
-      ```
+     ```
+     grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
+     grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
+     ```
+
    >[!NOTE]
    >
    >必须在执行实例上授权控制实例的IP地址。
@@ -94,11 +96,11 @@ ht-degree: 1%
    ![](assets/interaction_powerbooster2.png)
 
    * 添加执行实例列表。
-   * 对于每个同步周期，请指定同步周期和筛选条件（例如，按国家/地区）。
+   * 对于每个事件，指定同步周期和过滤条件（例如，按国家/地区）。
 
-      >[!NOTE]
-      >
-      >如果遇到错误，您可以查阅同步工作流和选件通知。 这些可在应用程序的技术工作流中找到。
+     >[!NOTE]
+     >
+     >如果遇到错误，您可以查阅同步工作流和选件通知。 您可以在应用程序的技术工作流中找到这些内容。
 
 如果出于优化原因，在执行实例上仅复制部分营销数据库，则可以指定链接到环境的受限架构，以允许用户仅使用执行实例上可用的数据。 您可以使用执行实例上不可用的数据创建选件。 要实现此目的，您必须通过在出站渠道上限制此规则(**[!UICONTROL Taken into account if]** 字段)。
 
@@ -122,14 +124,14 @@ ht-degree: 1%
 
 ## 软件包安装 {#packages-installation}
 
-如果您的实例之前没有交互包，则无需迁移。 默认情况下，安装包后，建议表将以64位为单位。
+如果您的实例之前没有交互包，则无需迁移。 默认情况下，安装包后，建议表将为64位。
 
 >[!IMPORTANT]
 >
 >根据实例中现有建议的数量，此操作可能需要花费一些时间。
 
 * 如果您的实例只有少量建议或没有建议，则无需手动修改建议表。 修改将在安装包时完成。
-* 如果您的实例具有大量建议，则最好在安装控制包并运行它们之前更改建议表的结构。 我们建议在低活动期间运行查询。
+* 如果您的实例有很多建议，则最好在安装控制包并运行它们之前更改建议表的结构。 我们建议在低活动期间运行查询。
 
 >[!NOTE]
 >
@@ -137,7 +139,7 @@ ht-degree: 1%
 
 ### PostgreSQL {#postgresql}
 
-有两种方法。 第一个（使用工作表）速度稍快。
+有两种方法。 第一个（使用工作表）的速度稍快。
 
 **工作表**
 
@@ -169,7 +171,7 @@ ALTER TABLE nmspropositionrcp
 
 编辑的大小 **数字** type不会导致值或索引被重写。 因此，这是当务之急。
 
-要执行的查询如下：
+要执行的查询如下所示：
 
 ```
 ALTER TABLE nmspropositionrcp MODIFY (

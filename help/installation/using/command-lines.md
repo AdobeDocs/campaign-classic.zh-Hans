@@ -2,14 +2,15 @@
 product: campaign
 title: 命令行
 description: 命令行
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '157'
 ht-degree: 4%
 
 ---
@@ -28,13 +29,13 @@ ht-degree: 4%
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-(其中 **英文** 和 **fra** 是以下各项的可能值： `[lang]` parameter)
+(其中 **英文** 和 **周五** 的值是 `[lang]` parameter)
 
-命令 **nlserver config -addinstance：instance1/demo&#42;/eng** 使您能够创建一个名为的实例 **instance1** 英语版的DNS掩码演示&#42;.
+命令 **nlserver config -addinstance：instance1/demo&#42;/eng** 使您能够创建名为的实例 **实例1** 英文版的DNS掩码演示&#42;.
 
 ## 声明数据库 {#declaring-a-database}
 
-可以使用以下语法，从命令行将现有数据库与实例相关联：
+可以使用以下语法将现有数据库与命令行中的实例相关联：
 
 ```
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
@@ -47,7 +48,7 @@ nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 * **mssql**：对于Microsoft SQL Server，
 * **DB2**：对于DB2引擎。
 
-以下命令配置 **演示** 具有称为的SQL类型服务器的实例 **基础6**，链接到 **营销活动** 帐户及其 **密码** 在 **dbsrv** 服务器：
+以下命令配置 **演示** 具有SQL类型服务器的实例，称为 **基础6**，链接到 **营销活动** 帐户及其 **密码** 在 **dbsrv** 服务器：
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo

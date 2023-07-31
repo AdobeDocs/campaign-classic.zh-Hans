@@ -2,15 +2,15 @@
 product: campaign
 title: 升级入门
 description: 详细了解 Campaign Classic 升级
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 97%
+source-wordcount: '939'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Campaign Classic 会定期发布产品更新，这些更新包括新增功
 
 | 状态 | 说明 |
 |---|---|
-| [!BADGE 一般可用性]{type=Positive} | 最新稳定版本，已在生产中验证并受到Adobe推荐。 |
+| [!BADGE 一般可用性]{type=Positive} | 最新的稳定版本，已在生产中验证并受到Adobe推荐。 |
 | [!BADGE 有限可用性]{type=Neutral} | 仅限按需部署。 |
 | [!BADGE 候选版本]{type=Informative} | 具有新功能的最新内部版本。 |
 | [!BADGE 不再可用]{type=Caution} | 无部署。 无错误修复。建议更新到较新的内部版本。 |

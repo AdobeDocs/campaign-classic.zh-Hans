@@ -2,13 +2,14 @@
 product: campaign
 title: Sources 与 Destinations 入门
 description: 详细了解Adobe Experience Platform Sources和Destinations
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Platform Integration
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: integrations
 content-type: reference
 exl-id: 8cee52c7-ea56-4701-8ebb-eb18afffea51
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '313'
 ht-degree: 15%
 
 ---
@@ -19,14 +20,14 @@ ht-degree: 15%
 
 ## 关于源和目标
 
-借助Adobe Experience Platform，您可以在Campaign Classic和Adobe Real-time Customer Data Platform (RTCDP)之间共享数据。 这允许您在营销活动工作流中定位Adobe Experience Platform受众，然后发送回Adobe Real-time Customer Data Platform与这些受众相关的数据，如发送、打开和点击。
+借助Adobe Experience Platform，您可以在Campaign Classic和Adobe Real-time Customer Data Platform (RTCDP)之间共享数据。 这允许您在营销活动工作流中定位Adobe Experience Platform受众，然后发送回Adobe Real-time Customer Data Platform与这些受众相关的数据，如发送、打开和单击。
 
-* 替换为 **目标**，将受众从Adobe Experience Platform摄取到Campaign Classic中。 这允许您为营销活动激活已知和未知数据。
-* 替换为 **源**，将Campaign Classic数据（例如发送、打开、单击）导出到Adobe Experience Platform。 这样，您就可以将从不同来源收集的数据集中到一个位置，并利用从中获得的见解做更多事情。
+* 替换为 **目标**，将受众从Adobe Experience Platform摄取到Campaign Classic中。 这样，您就可以为营销活动激活已知和未知数据。
+* 替换为 **源**，将Campaign Classic数据（例如发送、打开、单击）导出到Adobe Experience Platform。 这样，您就可以将从不同来源收集的数据集中到一个地方，并利用从中获得的见解做更多事情。
 
 >[!IMPORTANT]
 >
->在执行此集成时，请记住Adobe Campaign合同中规定的SFTP存储限制、数据库存储限制和活动配置文件限制。
+>在执行此集成时，请记住Adobe Campaign合同规定的SFTP存储限制、数据库存储限制和活动配置文件限制。
 
 有关Adobe Real-time Customer Data Platform、目标和源的更多详细概述，请参阅以下页面：
 

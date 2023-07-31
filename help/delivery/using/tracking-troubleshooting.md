@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: 跟踪故障排除
-description: 本节提供与Adobe Campaign中的跟踪配置和实施相关的常见问题
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Monitoring
+description: 本节提供了与Adobe Campaign中的跟踪配置和实施相关的常见问题
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+feature: Monitoring, Troubleshooting
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '770'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## 跟踪工作流失败 {#tracking-workflow-failing}
 
-我的跟踪工作流失败，如何检测跟踪文件中损坏的行？
+我的跟踪工作流失败，如何检测跟踪文件中的损坏行？
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ### 我知道损坏的行位于哪个文件中
 
-在这种情况下，可以在0x00000000000A0000.log文件中找到损坏的行，但相同的过程可以逐一应用于一组文件。
+在这种情况下，可以在0x00000000000A0000.log文件中找到损坏的行，但相同的过程可以应用到一组文件 — 一个一个文件。
 
 ```
 $ cd {install directory}/var/{instance name}/redir/log
@@ -49,7 +49,7 @@ $ cat 0x00000000000A0000.log | sed -nE '/^[[:alnum:]]{2}x[[:alnum:]]*\t[0-9T:\.-
    $ cat *.log | sed -nE '/^[[:alnum:]]{2}x[[:alnum:]]*\t[0-9T:\.-]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[[:alnum:]]*\t[[:alnum:]-]*\t[[:print:]]*\t[[:print:]]*\t[[:print:]]*\t([0-9a-fA-F\.:]*|[0-9a-fA-F\.:]*\t[[:print:]]*|[0-9a-fA-F\.:]*,[[:print:]]*)$/!p'
    ```
 
-1. 该命令列出所有损坏的行。 例如：
+1. 该命令列出了所有损坏的行。 例如：
 
    ```
    50x000000000FD7EC86 2017-06-24T21:00:50.96 1f506d71 1aeab4b6 1af77020 0 e5155671-4ab7-4ce4-a763-3b82dda6d881 h
@@ -58,7 +58,7 @@ $ cat 0x00000000000A0000.log | sed -nE '/^[[:alnum:]]{2}x[[:alnum:]]*\t[0-9T:\.-
 
    >[!NOTE]
    >
-   >已在用户代理之前添加了回车符，以便更好地读取，并且未反映有效渲染。
+   >已在用户代理之前添加了回车符，以便更好地读取，并且不会反映有效的渲染。
 
 1. 运行grep命令以查找相应的文件。
 
@@ -68,7 +68,7 @@ $ grep -Rn <Log Id>
 $ grep -Rn 50x000000000FD7EC86
 ```
 
-1. 找到包含文件名和行号的故障日志。 例如：
+1. 找到带有文件名和行号的错误日志。 例如：
 
    ```
    ./0x000000000FD7E000.log:3207:50x000000000FD7EC86 2017-06-24T21:00:50.96 1f506d71 1aeab4b6 1af77020 0 e5155671-4ab7-4ce4-a763-3b82dda6d881 h
@@ -77,7 +77,7 @@ $ grep -Rn 50x000000000FD7EC86
 
    >[!NOTE]
    >
-   >在User Agent之前添加了回车符，以便更好地阅读，并且没有反映有效渲染。
+   >已在用户代理之前添加了回车符，以便更好地读取，并且不反映有效渲染。
 
 然后，您可以停止跟踪工作流，删除损坏的行并重新启动工作流。
 
@@ -87,7 +87,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 `Requested URL '/r/ id=h787bc0,281a4d8,281a4da&amp;p1=1' cannot be found`
 
-1. 访问 &lt;redirection_server>/r/test URL并检查请求是否返回了内部版本号和localhost。
+1. 访问 &lt;redirection_server>/r/test URL并检查请求是否返回了内部版本号和本地主机。
 
 1. 检查serverConf.xml文件中用于跟踪服务器的spareServer配置。 此配置应处于重定向模式。
 
@@ -110,9 +110,9 @@ $ grep -Rn 50x000000000FD7EC86
 
 1. 检查相关的deliveryID投放中是否手动存在broadlogID。
 
-1. Check &lt;deliveryid>.xml文件权限……/nl6/var/&lt;instance_name>/redir/url/year目录。
+1. Check &lt;deliveryid>../nl6/var/中的.xml文件权限&lt;instance_name>/redir/url/year目录。
 
-   他们应具有至少644个权限，以便Apache可以读取跟踪URL以重定向请求的链接。
+   执行用户应具有至少644个权限，以便Apache可以读取跟踪url以将请求的链接重定向。
 
 ## 是否更新NmsTracking_Pointer选项？ {#updating-option}
 
@@ -140,24 +140,24 @@ $ grep -Rn 50x000000000FD7EC86
 
 * 语法不正确
 
-   ```
-   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
-   var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
-   if( $(urlstring).match(pattern) && delivery.FCP == false )
-   {
-   %>
-   &cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
-   ```
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {
+  %>
+  &cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
+  ```
 
 * 语法正确
 
-   ```
-   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
-   var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
-   if( $(urlstring).match(pattern) && delivery.FCP == false )
-   {
-   %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
-   ```
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {
+  %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
+  ```
 
 要了解额外换行符的位置，您可以使用固定字符串STRING替换JavaScript表达式。
 
@@ -174,26 +174,26 @@ STRING1&cid=STRING2&bid=STRING3
 
 * 语法不正确
 
-   ```
-   <%@ include option='NmsTracking_ClickFormula' %>
-   <% // Parameters expected by Adobe Analytics
-   var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
-   if( $(urlstring).match(pattern) && delivery.FCP == false )
-   {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
-   
-   %>
-   ```
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %>
+  <% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
+  
+  %>
+  ```
 
 * 语法正确
 
-   ```
-   <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
-   var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
-   if( $(urlstring).match(pattern) && delivery.FCP == false )
-   {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
-   
-   %>
-   ```
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
+  
+  %>
+  ```
 
 要了解额外换行符的位置，您可以使用固定字符串STRING替换JavaScript表达式。
 
@@ -207,7 +207,7 @@ STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 
 ## 跟踪日志检索速度太慢 {#slow-retrieval}
 
-当实例不直接检索跟踪日志，而是从远程的Adobe Campaign Classic服务器中检索日志时，将通过remoteTracking模式中定义的GetTrackingLogs SOAP调用来检索日志。
+当实例不直接检索跟踪日志，而是从远程的Adobe Campaign Classic服务器中检索日志时，将通过GetTrackingLogs SOAP调用（在remoteTracking模式中定义）来检索日志。
 
 serverConf.xml文件中的选项允许您设置通过此方法一次检索的日志数： logCountPerRequest。
 
@@ -215,14 +215,14 @@ logCountPerRequest的默认值为1000，在某些情况下，它可能会证明�
 
 ## 跟踪日志无法链接到收件人 {#link-recipients}
 
-在Adobe Campaign Classic中，目标映射在收件人架构与broadlog / trackinglog架构之间应该是唯一的。
+在Adobe Campaign Classic中，根据收件人架构与broadlog / trackinglog架构，目标映射应该是唯一的。
 
 ![](assets/tracking-troubleshooting.png)
 
-无法将多个定位架构与相同的trackinglog架构一起使用，因为跟踪工作流将无法协调数据与定位id。
+不能将多个定位架构与同一个trackinglog架构一起使用，因为跟踪工作流将无法协调数据与定位id。
 
 如果不希望将现成的目标映射与nms：recipient一起使用，我们建议使用以下方法：
 
 * 如果要使用自定义定位维度，则需要使用nms：broadlog作为模板创建自定义broadLog/trackingLog架构（例如nms：broadLogRcp、nms：broadLogSvc等）。
 
-* 如果要使用OOB trackingLogRcp/broadLogRcp，则定向维度需要是nms：recipient，而筛选维度可以是自定义架构。
+* 如果要使用OOB trackingLogRcp/broadLogRcp，则定向维度必须是nms：recipient，并且筛选维度可以是自定义架构。

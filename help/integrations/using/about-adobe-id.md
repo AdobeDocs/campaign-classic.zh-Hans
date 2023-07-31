@@ -2,22 +2,23 @@
 product: campaign
 title: 在Campaign中使用Adobe ID
 description: 了解有关Adobe IMS集成的更多信息
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Configuration
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 2bbcfbff3ce77501fb36457dc823c0ef86550bec
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 25%
+source-wordcount: '202'
+ht-degree: 24%
 
 ---
 
 # 关于Adobe ID{#about-adobe-id}
 
-AdobeIdentity Management System (IMS)可帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的AdobeID的更多信息，请参阅 [此页面](https://helpx.adobe.com/enterprise/using/identity.html).
+AdobeIdentity Management System (IMS)可帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的AdobeID的详细信息，请参阅 [此页面](https://helpx.adobe.com/enterprise/using/identity.html).
 
 Campaign用户可以使用其Adobe ID连接到Adobe Campaign控制台。 该集成具有以下优势︰
 
@@ -29,11 +30,11 @@ Campaign用户可以使用其Adobe ID连接到Adobe Campaign控制台。 该集�
 
 >[!IMPORTANT]
 >
->如果您是通过Adobe身份服务(IMS)连接到Campaign，则需要升级到最新内部版本才能在以下时间后连接到Campaign **2021年6月30日**. Campaign服务器和客户端控制台都必须进行此升级。
+>如果您是通过Adobe身份服务(IMS)连接到Campaign，则需要升级到最新内部版本，才能在以下时间后连接到Campaign **2021年6月30日**. Campaign服务器和客户端控制台都必须进行此升级。
 >
->根据您当前的版本，您必须升级到以下版本之一：
+>根据您的当前版本，您必须升级到以下版本之一：
 >
-> * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
+> * [营销活动 [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Campaign 21.1.4](../../rn/using/latest-release.md)
 >
 >[了解有关IMS更新的更多信息](../../technotes/using/ims-updates.md)

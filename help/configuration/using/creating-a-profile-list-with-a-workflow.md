@@ -2,13 +2,13 @@
 product: campaign
 title: 使用工作流创建用户档案列表
 description: 了解如何在工作流中创建用户档案列表
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Workflows
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+feature: Workflows, Profiles
 exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '195'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 
 
-创建 **[!UICONTROL List]** 根据新的收件人表键入列表，您需要创建一个定向工作流来生成列表。
+创建 **[!UICONTROL List]** 根据新的收件人表键入列表，您需要创建定向工作流以生成列表。
 
 有关Campaign中列表的详细信息，请参阅 [本节](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
 
@@ -25,7 +25,7 @@ ht-degree: 12%
 
 要在自定义收件人表中创建定位工作流并更新收件人，请执行以下步骤：
 
-1. 转到 **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** 浏览器的节点。
+1. 转到 **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** 资源管理器节点。
 1. 创建新的定位工作流。
 1. 放置 **查询** 活动后跟 **列表更新** 活动。
 
@@ -41,7 +41,7 @@ ht-degree: 12%
 
 1. 为新列表选择创建文件夹。
 1. 执行工作流以创建列表。
-1. 在树节点中查看结果，该树节点是您在 **[!UICONTROL List update]** 活动。
+1. 在树中查看您在以下期间选择的节点的结果： **[!UICONTROL List update]** 活动。
 
    仪表板指定列表所基于的架构，如下所示：
 

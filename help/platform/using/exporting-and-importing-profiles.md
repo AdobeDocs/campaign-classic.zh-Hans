@@ -2,15 +2,16 @@
 product: campaign
 title: 导出和导入用户档案
 description: 导出和导入用户档案
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Profiles
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 31%
+source-wordcount: '152'
+ht-degree: 30%
 
 ---
 
@@ -24,9 +25,9 @@ ht-degree: 31%
 
 ## 使用工作流{#use-workflows}
 
-导出和导入是在专用模板中配置的，专用模板通过导入和导出活动通过工作流执行。 它们可以根据计划自动重复，例如用于在多个信息系统之间自动交换数据。[了解详情](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
+导出和导入在专用模板中进行配置，通过导入和导出活动工作流执行。 它们可以根据计划自动重复，例如用于在多个信息系统之间自动交换数据。[了解详情](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
-如有必要，您可以通过 **[!UICONTROL Generic imports and exports]** 功能如下所述。
+如有必要，您可以通过以下方式创建临时导入或导出作业： **[!UICONTROL Generic imports and exports]** 功能如下所述。
 
 ## 创建作业{#create-jobs}
 
@@ -37,7 +38,7 @@ ht-degree: 31%
 
 ## 教程视频 {#import-profiles-video}
 
-此视频介绍如何在Adobe Campaign中导入用户档案以偶尔导入。
+本视频介绍如何在Adobe Campaign中导入用户档案以偶尔导入。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 

@@ -2,15 +2,16 @@
 product: campaign
 title: 配置对Vertica analytics的访问权限
 description: 了解如何在FDA中配置对Vertica analytics的访问权限
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 0%
+source-wordcount: '397'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 
 
-使用Campaign **联合数据访问** (FDA)用于处理存储在外部数据库中的信息的选项。 按照以下步骤配置对的访问权限 [!DNL Vertica Analytics].
+使用营销活动 **联合数据访问** (FDA)选项，用于处理存储在外部数据库中的信息。 按照以下步骤配置对的访问权限 [!DNL Vertica Analytics].
 
 1. 配置 [!DNL Vertica Analytics] 日期 [CentOS](#vertica-centos)， [Windows](#vertica-windows) 或 [Debian](#vertica-debian)
 1. 配置 [!DNL Vertica Analytics] [外部帐户](#vertica-external) 在Campaign中
@@ -27,7 +28,7 @@ ht-degree: 0%
 
 ## CentOS上的Vertica analytics {#vertica-centos}
 
-配置 [!DNL Vertica Analytics] 在CentOS上，请执行以下步骤：
+配置 [!DNL Vertica Analytics] 在CentOS上，执行以下步骤：
 
 1. 下载的ODBC驱动程序 [!DNL Vertica Analytics]. [单击此处](https://www.vertica.com/download/vertica/client-drivers/) 并下载最新的Linux RPM。
 
@@ -83,7 +84,7 @@ ht-degree: 0%
 
 1. 下载 [适用于Windows的ODBC驱动程序](https://www.vertica.com/download/vertica/client-drivers/). 要安装Windows驱动程序，您需要启用.NET Framework 3.5，否则安装向导将尝试自动启用并下载它。
 
-1. 在Windows中配置ODBC驱动程序。 有关更多信息，请参阅 [此页面](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
+1. 在Windows中配置ODBC驱动程序。 有关详细信息，请参见 [此页面](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 
 1. 然后，您可以在Adobe Campaign中配置 [!DNL Vertica Analytics] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [本节](#vertical-external).
 
@@ -157,7 +158,7 @@ ht-degree: 0%
 
    * **[!UICONTROL Server]**：的URL [!DNL Vertica Analytics] 服务器
 
-   * **[!UICONTROL Account]**：用户的名称
+   * **[!UICONTROL Account]**：用户名称
 
    * **[!UICONTROL Password]**：用户帐户密码
 

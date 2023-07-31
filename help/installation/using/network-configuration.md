@@ -1,17 +1,18 @@
 ---
 product: campaign
 title: 网络配置
-description: 了解系统通信准则
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+description: 学习系统通信准则
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 5%
+source-wordcount: '691'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 5%
 
 ## 进程之间的通信 {#communication-between-processes}
 
-应用程序的某些进程需要与他人通信或访问LAN和Internet。 这意味着需要为这些进程打开一些TCP端口。
+某些应用进程需要与他人通信或访问LAN和Internet。 这意味着这些进程需要打开某些TCP端口。
 
 使用嵌入式Apache Tomcat端口作为优先级（默认为8080），在Adobe Campaign平台的各种应用程序服务器之间进行内部通信。
 
@@ -38,13 +39,13 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
-   <td> 任何位置<br /> </td> 
+   <td> 随处<br /> </td> 
    <td> 用于电子邮件广播的SMTP流量。<br /> </td> 
   </tr> 
   <tr> 
    <td> 53/udp（域）<br /> </td> 
    <td> DNS服务器<br /> </td> 
-   <td> DNS查询<br /> </td> 
+   <td> dns查询。<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp （默认端口）<br /> </td> 
@@ -73,12 +74,12 @@ ht-degree: 5%
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
    <td> 内部邮件服务器<br /> </td> 
-   <td> 用于提取退回消息的POP3流量。<br /> </td> 
+   <td> 用于接收退回消息的POP3流量。<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
    <td> 内部邮件服务器<br /> </td> 
-   <td> 用于发送未由预定义规则自动处理的剩余退回邮件的SMTP流量。<br /> </td> 
+   <td> 用于发送未由预定义规则自动处理的剩余退回消息的SMTP流量。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -96,17 +97,17 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
-   <td> 任何位置<br /> </td> 
-   <td> HTTP或HTTPS流量（包括可投放性选件的）。<br /> </td> 
+   <td> 随处<br /> </td> 
+   <td> HTTP或HTTPS流量（包括可投放性选件）。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-当Adobe Campaign平台的多个应用程序服务器需要相互通信时，我们建议使用Apache Tomcat服务器的端口（默认为8080），而不是使用与重定向模块集成的Web服务器的HTTP端口的端口。 这意味着需要打开这些服务器之间的端口。
+当Adobe Campaign平台的多个应用程序服务器需要相互通信时，我们建议使用Apache Tomcat服务器的端口（默认为8080），而不是使用执行重定向模块集成的Web服务器的HTTP端口的端口。 这意味着需要打开这些服务器之间的端口。
 
 ### 短信投放状态 {#sms-delivery-status}
 
-要跟踪短信投放，请执行以下操作：**nlserver sms**)，必须打开以下端口：
+要跟踪短信投放，请执行以下操作(**nlserver sms**)，必须打开以下端口：
 
 <table> 
  <tbody> 
@@ -144,7 +145,7 @@ ht-degree: 5%
 
 ## 数据库访问 {#database-access}
 
-使用该数据库的所有组件都必须能够连接到该数据库。 大多数组件都是这种情况，但重定向服务器除外，它可单独工作，而瘦Win32客户端仅使用HTTP（或HTTPS）与应用程序服务器通信。
+使用该数据库的所有组件都必须能够连接到该数据库。 大多数组件都是这种情况，但重定向服务器和精简Win32客户端除外，前者可单独工作，后者仅使用HTTP（或HTTPS）与应用程序服务器通信。
 
 默认端口如下：
 
@@ -206,7 +207,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> 任何地方。 当直接从Adobe Campaign平台管理Web窗体或使用镜像页面时，必须执行此操作。<br /> </td> 
+   <td> 任何地方。 在直接从Adobe Campaign平台管理Web窗体或使用镜像页面时，此变量是必需的。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -252,6 +253,6 @@ ht-degree: 5%
 要考虑的网络配置的另一个关键参数。 它几乎总是出站，在电子邮件广播中非常受欢迎。 以下是一些基于我们经验的配置示例：
 
 * 1 Mb/s每小时10,000封电子邮件（平均大小为30 Kb）
-* 每小时100,000封电子邮件为8到10 Mb/s（平均大小为30 Kb）
+* 每小时100,000封电子邮件时为8到10 Mb/s（平均大小为30 Kb）
 
-如果您的带宽有限，则可以安排在需求较低的夜间运行活动。
+如果您的带宽受到限制，则可以安排在需求较低的夜间运行营销活动。
