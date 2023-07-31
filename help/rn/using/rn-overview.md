@@ -2,15 +2,15 @@
 product: campaign
 title: 升级入门
 description: 详细了解 Campaign Classic 升级
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '939'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ Adobe Campaign Classic 会定期发布产品更新，这些更新包括新增功
 
 | 状态 | 说明 |
 |---|---|
-| [!BADGE 一般可用性]{type=Positive} | 最新的稳定版本，已在生产中验证并受到Adobe推荐。 |
-| [!BADGE 有限可用性]{type=Neutral} | 仅限按需部署。 |
-| [!BADGE 候选版本]{type=Informative} | 具有新功能的最新内部版本。 |
-| [!BADGE 不再可用]{type=Caution} | 无部署。 无错误修复。建议更新到较新的内部版本。 |
-| [!BADGE 已弃用]{type=negative} | 无部署。 无错误修复。必须升级现有实施。 |
+| [!BADGE 正式发布版]{type=Positive} | 最新稳定版本，已在生产中验证并受到 Adobe 推荐。 |
+| [!BADGE 有限发布版]{type=Neutral} | 仅限按需部署。 |
+| [!BADGE 候选版本]{type=Informative} | 具有新功能的最新版本。 |
+| [!BADGE 不再可用]{type=Caution} | 无部署。无错误修复。建议更新到较新的内部版本。 |
+| [!BADGE 已弃用]{type=negative} | 无部署。无错误修复。必须升级现有实施。 |
 
 <!--
 ![](assets/do-not-localize/green3.png) **General Availability** (GA) - Latest stable build, validated in production, and recommended by Adobe. 
