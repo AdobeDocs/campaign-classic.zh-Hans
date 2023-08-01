@@ -2,11 +2,12 @@
 product: campaign
 title: 元素和属性 — 值元素
 description: 元素和属性
+feature: Schema Extension
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 4%
@@ -19,7 +20,7 @@ ht-degree: 4%
 
 ## 内容模型 {#content-model-16}
 
-值：==帮助
+value：==help
 
 ## 属性 {#attributes-16}
 
@@ -43,9 +44,9 @@ ht-degree: 4%
 
 利用此元素，可定义存储在枚举中的值。
 
-## 属性描述 {#attribute-description-16}
+## 属性说明 {#attribute-description-16}
 
-* **applicableIf（字符串）**：通过此属性，可将枚举值设为可选值。 它接收XTK表达式。
+* **appliedIf（字符串）**：通过此属性，可将枚举值设为可选值。 它接收一个XTK表达式。
 * **desc（字符串）**：枚举值的描述。
 * **enabledIf（字符串）**：激活枚举值的条件。
 * **img（字符串）**：链接到“namespace：image_name”表单中的枚举的图像。 必须将映像导入应用程序服务器。

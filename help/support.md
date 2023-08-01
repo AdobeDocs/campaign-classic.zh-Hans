@@ -2,9 +2,10 @@
 product: campaign
 title: Campaign Classic的帮助和支持选项
 description: 需要Campaign Classic支持？ 您找到了正确的地方！
+feature: Troubleshooting
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 69%
@@ -61,7 +62,7 @@ ht-degree: 69%
    <td valign="top">
         <ul>
         <li><a href="workflow/using/workflow-best-practices.md">工作流最佳实践</a></li>
-        <li><a href="workflow/using/monitoring-technical-workflows.md">技术工作流监控</a></li>
+        <li><a href="workflow/using/monitoring-technical-workflows.md">技术工作流监测</a></li>
         <li><a href="delivery/using/about-message-tracking.md">了解跟踪管理</a></li>
         <li><a href="production/using/monitoring-guidelines.md">发现监控工具</a></li>
         <li><a href="platform/using/import-export-workflows.md">使用工作流导入数据</a></li>
@@ -92,14 +93,14 @@ ht-degree: 69%
 
 ### 什么是控制面板？
 
-Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，从而帮助您作为Campaign Classic的产品管理员提高工作效率。
+Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，从而帮助身为Campaign Classic产品管理员的您提高工作效率。
 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)以了解更多信息。
 
 >[!NOTE]
 >
 >所有管理员用户都可访问控制面板。[此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
 >
->请注意，您的实例必须托管在AWS上，并使用最新的进行升级 [GA内部版本](rn/using/rn-overview.md). 在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
+>请注意，您的实例必须托管在AWS上，并使用最新版本升级 [GA内部版本](rn/using/rn-overview.md). 在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
 
 ### 如何访问控制面板？
 
@@ -111,7 +112,7 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 ### SFTP 管理
 
-在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。允许列表您可以监视其存储容量、管理SSH上的IP地址和公共SSH密钥。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以了解更多信息。
+在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监视其存储容量、管理允许列表上的IP地址和公共SSH密钥。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以了解更多信息。
 
 ### 子域和证书
 
@@ -123,7 +124,7 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 ### 实例设置
 
 了解如何在控制面板中管理Campaign Classic实例设置。 请参阅以下页面以了解详情：
-* [在允许列表上添加IP](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans) 访问Campaign实例
+* [在允许列表上添加IP](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans) 以访问您的Campaign实例
 * [管理URL权限](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hans)
 * [访问实例详细信息](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hans)
 * [管理用于数据加密的GPG密钥](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans)
@@ -146,4 +147,4 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 通过创建案例，您可以就您在使用 Adobe 产品的过程中遇到的任何问题联系 Adobe 客户支持团队。为帮助您解决问题或排除疑难，Adobe Admin Console 将支持您与 Adobe 客户支持团队聊天。
 
-要在该新系统中记录问题或启动聊天会话，请连接到 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. 请按照中所述的详细步骤进行操作 [此页面](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html){_blank}.
+要在该新系统中登记问题或启动聊天会话，请连接到 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. 请按照中所述的详细步骤进行操作 [此页面](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html){_blank}.

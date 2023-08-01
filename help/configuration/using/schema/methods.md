@@ -2,8 +2,9 @@
 product: campaign
 title: 架构元素和属性 — methods元素
 description: 方法元素
+feature: Schema Extension
 exl-id: f45e32ce-6534-4df2-ac7c-ba1134f0ffc8
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 11%
@@ -32,9 +33,9 @@ ht-degree: 11%
 
 ## 说明 {#description-11}
 
-利用此元素，可定义 `<method>`  元素。 声明方法时，它是必需的。
+利用此元素，可定义 `<method>`  元素。 声明方法时必须使用。
 
-## 属性描述 {#attribute-description-11}
+## 属性说明 {#attribute-description-11}
 
 此元素没有属性。
 

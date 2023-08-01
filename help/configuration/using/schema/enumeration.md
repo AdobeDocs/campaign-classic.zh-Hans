@@ -1,16 +1,17 @@
 ---
 product: campaign
 title: 架构元素和属性 — 枚举元素
-description: 明细列表元素
+description: 枚举元素
+feature: Schema Extension
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 6%
 
 ---
 
-# 明细列表元素 {#enumeration--element}
+# 枚举元素 {#enumeration--element}
 
 ![](../../../assets/v7-only.svg)
 
@@ -40,15 +41,15 @@ ht-degree: 6%
 
 此元素允许我们定义值枚举。 枚举属于在其中定义它的模式，但它可以通过另一个模式访问。
 
-## 使用和使用上下文 {#use-and-context-of-use-4}
+## 使用和使用环境 {#use-and-context-of-use-4}
 
 枚举是在架构的开头定义的（在定义主元素之前）。
 
-## 属性描述 {#attribute-description-5}
+## 属性说明 {#attribute-description-5}
 
 * **basetype（字符串）**：枚举中存储的值的类型。
 
-   可用类型列表：
+  可用类型列表：
 
    * 任何
    * 纸盒
@@ -56,12 +57,12 @@ ht-degree: 6%
    * 布尔值
    * 字节
    * CDATA
-   * datetime
+   * 日期时间
    * datetimetz
-   * datemenotz
+   * datetimenotz
    * date
    * DOMDocument
-   * DOMElement
+   * 圆顶元素
    * 多次
    * 枚举
    * 浮点数
@@ -69,7 +70,7 @@ ht-degree: 6%
    * int64
    * 链接
    * 长
-   * 备忘录
+   * 备忘
    * MNTOKEN
    * percent
    * 主密钥
