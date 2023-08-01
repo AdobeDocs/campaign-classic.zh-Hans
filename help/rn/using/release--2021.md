@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
-source-wordcount: '2595'
+source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+workflow-type: ht
+source-wordcount: '2549'
 ht-degree: 100%
 
 ---
@@ -268,9 +268,6 @@ Campaign 现在支持以下系统：
 * 现在可捕获所有类别的反馈，以实现完整且精确的报告。
 * “已投放”指标的计算现在以来自增强 MTA 的实时反馈为基础，以提高准确性和反应性。
 * EFS 通过同步软退信报告的方式解决了延迟问题。
-
-有关更多信息，请参阅[有详细说明的文档](../../delivery/using/sending-with-enhanced-mta.md#efs)。
-如果您有兴趣参与此私人测试版的试用，请填写此[表单](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u)，我们将回复您。
 
 **其他变更**
 
