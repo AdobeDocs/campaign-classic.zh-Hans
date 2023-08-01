@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 4c0c3007a03d4274fa1b436259cb2d302fcc8185
+source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
 workflow-type: tm+mt
-source-wordcount: '1736'
-ht-degree: 5%
+source-wordcount: '1352'
+ht-degree: 4%
 
 ---
 
@@ -116,10 +116,6 @@ Campaign投放吞吐量图表将不再向电子邮件收件人显示吞吐量。
 
 有关投放吞吐量的更多信息，请参阅 [本节](../../reporting/using/global-reports.md#delivery-throughput).
 
->[!NOTE]
->
->使用 [电子邮件反馈服务](#email-feedback-service) (EFS)功能（当前为测试版），Campaign投放吞吐量图仍显示电子邮件收件人的吞吐量。
-
 ### 重试
 
 Campaign不再使用投放中的重试设置。 软退回重试次数以及它们之间的时间长度由Enhanced MTA根据从消息的电子邮件域返回的退回响应的类型和严重性确定。
@@ -157,61 +153,13 @@ DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成�
 
 因此，您应等到有效期结束才能看到最终版本 **[!UICONTROL Success]** 百分比，以及最终实际数量 **[!UICONTROL Sent]** 和 **[!UICONTROL Failed]** 消息。
 
-<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
-
-### 电子邮件反馈服务（测试版） {#email-feedback-service}
-
-借助电子邮件反馈服务(EFS)功能，可以直接从Enhanced MTA（消息传输代理）获取反馈，从而准确报告每个电子邮件的状态。
-
->[!IMPORTANT]
->
->电子邮件反馈服务目前作为测试版功能提供。
->
->如果您有兴趣参与此Beta计划，请填写 [此表单](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) 我们会联系你的。
-
-投放开始后， **[!UICONTROL Success]** 消息成功从Campaign中继到增强MTA时的百分比。
-
-<!--![](assets/efs-sending.png)-->
-
-投放日志显示 **[!UICONTROL Taken into account by the service provider]** 每个目标地址的状态。
-
-<!--![](assets/efs-pending.png)-->
-
-当消息实际发送到目标用户档案后，一旦从增强型MTA实时报告此信息，投放日志将显示 **[!UICONTROL Sent]** 成功接收消息的每个地址的状态。 此 **[!UICONTROL Success]** 百分比会随着每次成功投放而相应增加。
-
-从Enhanced MTA报告硬退回消息时，其日志状态将从 **[!UICONTROL Taken into account by the service provider]** 到 **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
-
-从Enhanced MTA报告软退回消息时，其日志状态保持不变(**[!UICONTROL Taken into account by the service provider]**)：仅 [错误原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons) 已更新<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. 此 **[!UICONTROL Success]** 百分比保持不变。 然后，在整个投放过程中重试软退回消息 [有效期](steps-sending-the-delivery.md#defining-validity-period)：
-
-* 如果在有效期结束前重试成功，则消息状态将更改为 **[!UICONTROL Sent]** 和 **[!UICONTROL Success]** 百分比亦会相应增加。
-
-* 否则，状态将更改为 **[!UICONTROL Failed]**. 此 **[!UICONTROL Success]** <!--and **[!UICONTROL Bounces + errors]** -->百分比保持不变。
-
->[!NOTE]
->
->有关硬退信和软退信的更多信息，请参阅 [本节](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
->
->有关投放临时失败后重试的更多信息，请参阅 [本节](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
-
-
-下表显示了EFS功能引入的KPI和发送日志状态的变化。
-
-**电子邮件反馈服务**
-
-| 发送过程中的步骤 | KPI摘要 | 发送日志状态 |
-|--- |--- |--- |
-| 消息已成功从Campaign中继到增强型MTA | **[!UICONTROL Success]** 百分比不显示（从0%开始） | 由服务提供商考虑 |
-| 从Enhanced MTA返回硬退回消息 | 无更改 **[!UICONTROL Success]** 百分比 | 已失败 |
-| 从Enhanced MTA返回软退回消息 | 无更改 **[!UICONTROL Success]** 百分比 | 由服务提供商考虑 |
-| 软退回消息重试成功 | **[!UICONTROL Success]** 百分比亦相应增加 | 已发送 |
-| 软退回消息重试失败 | 无更改 **[!UICONTROL Success]** 百分比 | 已失败 |
-
-**无电子邮件反馈服务**
+下表显示了发送过程中的不同步骤以及相应的KPI和发送日志状态。
 
 | 发送过程中的步骤 | KPI摘要 | 发送日志状态 |
 |--- |--- |--- |
 | 消息已成功从Campaign中继到增强型MTA | **[!UICONTROL Success]** 百分比从100%开始 | 已发送 |
-| 从Enhanced MTA返回硬退回消息 | **[!UICONTROL Success]** 百分比将相应减少 | 已失败 |
-| 从Enhanced MTA返回软退回消息 | 无更改 **[!UICONTROL Success]** 百分比 | 已发送 |
-| 软退回消息重试成功 | 无更改 **[!UICONTROL Success]** 百分比 | 已发送 | **[!UICONTROL Success]** 百分比亦相应增加 | 已发送 |
-| 软退回消息重试失败 | **[!UICONTROL Success]** 百分比将相应减少 | 已失败 |
+| 从Enhanced MTA返回硬退回消息 | **[!UICONTROL Success]** 百分比将相应减少 | 已失败 |
+| 从Enhanced MTA返回软退回消息 | 无更改 **[!UICONTROL Success]** 百分比 | 已发送 |
+| 软退回消息重试成功 | 无更改 **[!UICONTROL Success]** 百分比 | 已发送 | **[!UICONTROL Success]** 百分比亦相应增加 | 已发送 |
+| 软退回消息重试失败 | **[!UICONTROL Success]** 百分比将相应减少 | 已失败 |
+
