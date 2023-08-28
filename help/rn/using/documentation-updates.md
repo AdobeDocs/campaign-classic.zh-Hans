@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 324e26ba1db14e10bb79eee60ba43ddc36e8e94f
 workflow-type: tm+mt
-source-wordcount: '3584'
-ht-degree: 100%
+source-wordcount: '3607'
+ht-degree: 99%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 100%
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
 ## 2023
+
+### 2023 年 8 月
+
+添加了限制，以指定无法使用Adobe Campaign解压缩大于4Gb的压缩文件。 [了解更多信息](../../platform/using/unzip-decrypt.md)
 
 ### 2023 年 4 月
 

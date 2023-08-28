@@ -9,22 +9,25 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 32c2ce24bdd62724e4b4ff66f4664e8faa259b4b
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '739'
 ht-degree: 11%
 
 ---
 
+
 # 解压缩或解密文件 {#unzipping-or-decrypting-a-file-before-processing}
-
-
 
 Adobe Campaign允许您导入压缩或加密文件。 在阅读文档之前 [数据加载（文件）](../../workflow/using/data-loading--file-.md) 活动，您可以定义解压缩或解密文件的预处理。
 
+>[!IMPORTANT]
+>
+>不能解压缩大于4Gb的压缩文件。
+
 要做到这一点，请执行以下操作：
 
-1. 使用 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) 以生成公钥/私钥对。
+1. 使用 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) 生成公钥/私钥对以允许文件解密。
 
    >[!NOTE]
    >
@@ -32,8 +35,9 @@ Adobe Campaign允许您导入压缩或加密文件。 在阅读文档之前 [数
    >
    >请注意，您的实例必须托管在AWS上，并使用进行升级 [最新GA版本](../../rn/using/rn-overview.md). 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
 
-1. 如果您安装的Adobe Campaign由Adobe托管，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 在服务器上安装必要的实用程序。
 1. 如果内部部署了Adobe Campaign，请在应用程序服务器上安装要使用的实用程序（例如：GPG、GZIP）以及必需的密钥（加密密钥）。
+
+   如果您安装的Adobe Campaign由Adobe托管，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 在服务器上安装必要的实用程序。
 
 然后，您可以在工作流中使用所需的预处理命令：
 
