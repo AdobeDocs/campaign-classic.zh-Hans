@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Adobe Campaign Classic中的增强MTA的S
+title: 在Adobe Campaign Classic中使用增强MTA发送
 description: 了解使用Adobe Campaign Enhanced MTA发送电子邮件的范围和特性
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+source-git-commit: e83d85a26a5c8dd26ea2468246ef448edf8fee9b
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 4%
