@@ -5,8 +5,9 @@ description: 了解使用Adobe Campaign Enhanced MTA发送电子邮件的范围�
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email
+role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: e83d85a26a5c8dd26ea2468246ef448edf8fee9b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 4%
@@ -14,8 +15,6 @@ ht-degree: 4%
 ---
 
 # 使用增强 MTA 发送 {#sending-with-enhanced-mta}
-
-
 
 此 **Adobe Campaign增强型MTA** （邮件传输代理）提供升级的发送基础架构，从而改进可投放性、信誉、吞吐量、报告、退回处理、IP提升和连接设置管理。
 

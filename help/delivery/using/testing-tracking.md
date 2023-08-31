@@ -2,40 +2,39 @@
 product: campaign
 title: 测试消息跟踪
 description: 了解如何测试邮件跟踪
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Monitoring
+role: User
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '268'
 ht-degree: 1%
 
 ---
 
 # 测试消息跟踪{#testing-tracking}
 
-
-
 您可以在镜像页面、电子邮件日志和链接上测试跟踪。 操作步骤：
 
-1. 创建新的用于测试的电子邮件投放。
+1. 创建新的电子邮件投放以用于测试。
 1. 指定将接收电子邮件的用户。 由于此用户必须打开电子邮件并单击它包含的链接，因此请确保选择您控制的测试收件人地址。
 1. 在电子邮件内容中添加镜像页面(MirrorPage)个性化块。
 1. 发送包含指向镜像页面链接的投放。
 1. 收到电子邮件后，打开它并单击镜像页面链接。
 1. 正确重定向到镜像页面后，访问 **管理>技术工作流** 文件夹并打开 **跟踪** 工作流。
-1. 启动工作流，右键单击 **调度程序** 活动和选择 **立即执行挂起任务**.
+1. 启动工作流，右键单击 **计划程序** 活动和选择 **立即执行待处理任务**.
 1. 等待大约30秒，然后选择 **审核** 选项卡。 确保至少找到一个跟踪日志记录。
 
    单击 **刷新** 如果您没有看到任何新日志。
 
-1. 转到用于测试的收件人的用户档案页面，然后选择 **跟踪** 选项卡。 某些记录应与 **镜像页面** 中的值 **类型** 列。
+1. 转到用于测试的收件人的用户档案页面，然后选择 **跟踪** 选项卡。 一些记录应与 **镜像页面** 中的值 **类型** 列。
 
    >[!NOTE]
    >
-   >收件人的配置文件页面位于 **配置文件和目标>收件人** 默认文件夹。
+   >收件人的配置文件页面位于 **“配置文件和目标”>“收件人”** 默认文件夹。
 
    要检查电子邮件日志跟踪，请查找值 **打开** 和 **[!UICONTROL Email click]** 在 **类型** 列。
 
-   如果未显示打开的日志，请转到投放并访问其 **属性** 以确保两者 **激活跟踪** 和 **[!UICONTROL Opens tracking]** 选项处于选中状态。
+   如果未显示打开的日志，请转到投放并访问其 **属性** 确保两者 **激活跟踪** 和 **[!UICONTROL Opens tracking]** 选项处于选中状态。

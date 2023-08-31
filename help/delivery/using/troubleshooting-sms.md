@@ -5,8 +5,9 @@ description: 详细了解如何对短信渠道进行故障排除
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: SMS, Troubleshooting
+role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '2756'
 ht-degree: 0%
@@ -14,8 +15,6 @@ ht-degree: 0%
 ---
 
 # 短信疑难解答 {#troubleshooting-sms}
-
-
 
 ## 不同外部帐户之间的冲突 {#external-account-conflict}
 
@@ -41,11 +40,9 @@ Adobe Campaign将外部帐户视为不相关的实体。
 
   帐户之间存在冲突。 如前所述，Adobe Campaign单独处理帐户，但提供商可能会将其视为单个帐户。
 
-   * 您在所有帐户之间使用不同的登录/密码组合。
-您必须联系提供程序以诊断其一方的潜在冲突。
+   * 您在所有帐户之间使用不同的登录/密码组合。您必须联系提供商以诊断其端的潜在冲突。
 
-   * 某些外部帐户共享相同的登录/密码组合。
-提供程序无法区分来自哪个外部帐户 `BIND PDU` 来自，因此它们将来自多个帐户的所有连接视为单个连接。 他们可能已将MO和SR随机路由到两个帐户，从而导致出现问题。
+   * 某些外部帐户共享相同的登录/密码组合。提供程序无法告知来自哪些外部帐户 `BIND PDU` ，因此它们会将多个帐户的所有连接视为一个。 他们可能已将MO和SR随机路由到两个帐户，从而导致出现问题。
 如果提供商支持同一登录/密码组合使用多个短代码，则必须询问提供商将短代码放在 `BIND PDU`. 请注意，此信息必须放在 `BIND PDU`，并且不在 `SUBMIT_SM`，由于 `BIND PDU` 是唯一允许正确路由MO的位置。
 请参阅 [各种PDU中的信息](sms-protocol.md#information-pdu) 部分了解中可用的字段 `BIND PDU`，通常您需要添加短代码 `address_range`，但这需要提供商的特殊支持。 联系他们，了解他们希望如何独立路由多个短代码。
 Adobe Campaign支持在同一外部帐户上处理多个短代码。
@@ -66,24 +63,24 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
   from nmsextaccount N0 LEFT JOIN xtkoperator X0 ON (N0.icreatedbyid=X0.ioperatorid) order by 8 DESC LIMIT 50;
   ```
 
-* 调查（在/postupgrade目录中）系统是否已升级以及何时升级
-* 调查影响短信的任何包最近是否升级过(/var/log/dpkg.log)。
+* 调查（在/postupgrade 目录中）是否升级了系统以及何时
+* 调查是否有影响 SMS 的程序包最近的升级（/var/log/dpkg.log）。
 
-## 中间源问题（托管）{#issue-mid-sourcing}
+## 中间源的问题（托管）{#issue-mid-sourcing}
 
 * 如果问题发生在中间源环境中，请确保在中间源服务器上正确创建和更新投放和广泛日志。 如果不是这种情况，则这不是短信问题。
 
-* 如果所有功能在中间服务器上都有效，并且短信发送正确，但营销实例未正确更新，则您可能会遇到中间同步问题。
+* 如果所有功能在中间服务器上都有效，并且短信已正确发送，但营销实例未正确更新，则您可能会遇到中间同步问题。
 
 ## 连接到提供商时出现问题 {#issue-provider}
 
-* 如果 `BIND PDU` 返回非零 `command_status` 代码，请咨询提供商以了解更多信息。
+* `BIND PDU`如果返回非零 `command_status` 代码，请询问提供者以了解更多信息。
 
-* 检查网络是否已正确配置，以便能够与提供商建立TCP连接。
+* 检查网络配置是否正确，以便可以将 TCP 连接到提供商。
 
-* 要求提供商检查他们是否正确将IP添加到Adobe Campaign实例的允许列表。
+* 要求提供商检查是否已正确地将 IPs 添加到 Adobe Campaign 实例的 allowlist。
 
-* Check **外部帐户** 设置。 询问提供商字段的值。
+* 检查 **外部帐户** 设置。 向提供者询问字段的值。
 
 * 如果连接成功但不稳定，请检查 [连接不稳定的问题](troubleshooting-sms.md#issues-unstable-connection) 部分。
 
@@ -145,9 +142,9 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 在重试时减少重复项数量：
 
-* 降低发送窗口。 发送窗口应足够大，以覆盖 `SUBMIT_SM_RESP` 延迟。 其值表示在窗口已满时发生错误时可复制的最大消息数。
+* 降低发送窗口。 发送时段应足够大，以满足 `SUBMIT_SM_RESP` 延迟。 如果在窗口已满时出现错误，则其值表示可以复制的最大消息数。
 
-## 处理SR（交货收货）时发货 {#issue-process-SR}
+## 处理 SR （投放回执）时出现问题 {#issue-process-SR}
 
 * 您需要启用SMPP跟踪才能进行任何类型的SR故障排除。
 
@@ -157,9 +154,9 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 如果 `DELIVER_SM PDU` 未成功确认，则应检查以下各项：
 
-* 在中检查与ID提取和错误处理相关的正则表达式 **外部帐户**. 您可能需要根据 `DELIVER_SM PDU`.
+* 在中检查与ID提取和错误处理相关的正则表达式 **外部帐户**. 您可能需要根据的 `DELIVER_SM PDU` 内容对其进行验证。
 
-* 检查错误是否正确配置在 `broadLogMsg` 表格。
+* 请检查是否在表中 `broadLogMsg` 正确设置了错误。
 
 如果 `DELIVER_SM PDU` 已由Adobe Campaign Classic扩展SMPP连接器确认，但broadLog未正确更新，请检查一节中描述的ID协调过程 [匹配MT、SR和broadlog条目](sms-protocol.md#matching-mt).
 
@@ -167,7 +164,7 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 ## 处理MO（和黑名单/自动回复）时的问题{#issue-process-MO}
 
-* 在测试期间启用SMPP跟踪。 如果不启用TLS，则在对移动问题进行故障排除时应该进行网络捕获，以检查PDU是否包含正确的信息以及格式是否正确。
+* 在测试期间启用 SMPP 跟踪。 如果未启用 TLS，则应在对 MO 进行故障诊断时执行网络捕获，以检查 Pdu 是否包含正确的信息并已正确设置格式。
 
 * 在捕获网络流量或分析SMPP跟踪时，请确保捕获与MO的整个会话及其回复MT（如果配置了回复）。
 
@@ -235,9 +232,9 @@ Unicode允许使用多种变体来显示相似字符，而Adobe Campaign无法�
 
 * 如果您引用消息、PDU或日志，请清楚地声明其时间戳以使其更易于查找。
 
-* 尝试在测试环境中重现问题。 如果不确定设置，请在测试环境中尝试此设置，并使用SMPP跟踪检查结果。 报告在测试环境中复制的问题通常比直接报告生产环境中的问题要好。
+* 尝试在测试环境中重现问题。 如果不确定设置，请在测试环境中尝试此设置，并使用SMPP跟踪检查结果。 与在生产环境中直接报告问题相比，在测试环境中报告复制的问题通常更好。
 
-* 包括在平台上所做的任何更改或调整。 此外，还包括提供商可能对他们所做的任何更改。
+* 包含对平台所做的任何更改或调整。 此外，还可以包含提供者在其侧执行的任何更改。
 
 ### 网络捕获 {#network-capture}
 
@@ -296,7 +293,7 @@ Unicode允许使用多种变体来显示相似字符，而Adobe Campaign无法�
 要检查容器上打开的连接的数量，可以使用此命令：
 
 ```
-(for pid in $(ss -neopts  | sed -n ‘s/^.*:3600[ \t].*users:(([0-9A-Za-z”]*,pid=\([0-9]*\),.*$/\1/p’ | sort ); do  cat /proc/$pid/cmdline; echo  ” $pid” ;done;) | uniq --count
+(for pid in $(ss -neopts  | sed -n 's/^.*:3600[ \t].*users:(([0-9A-Za-z"]*,pid=\([0-9]*\),.*$/\1/p' | sort ); do  cat /proc/$pid/cmdline; echo  " $pid" ;done;) | uniq --count
 ```
 
 这将列出为给定端口打开的连接数。 我们用的是端口3600。

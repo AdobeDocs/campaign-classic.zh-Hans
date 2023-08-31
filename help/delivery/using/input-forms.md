@@ -2,28 +2,27 @@
 product: campaign
 title: 输入表单
 description: 了解如何在Campaign中使用输入表单
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Data Management
+role: User, Developer
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
 
 # 输入表单{#input-forms}
 
-
-
 以下是有关在Adobe Campaign中使用输入表单的一些一般原则。
 
-有关Forms的详细信息，请参阅 [本节](../../configuration/using/identifying-a-form.md).
+有关Forms的详情，请参阅 [本节](../../configuration/using/identifying-a-form.md).
 
 ## 窗体结构 {#form-structure}
 
-输入表单的XML文档必须包含 **`<form>`** 根元素具有 **name** 和 **命名空间** 属性，分别填充表单名称及其命名空间。
+输入表单的XML文档必须包含 **`<form>`** 具有的根元素 **name** 和 **命名空间** 属性，分别填充表单名称及其命名空间。
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -62,7 +61,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 示例:
 
 * **@date**：选择名为“date”的属性
-* **chapter/@title**：选择“title”属性位于 `<chapter>` 元素
+* **chapter/@title**：选择“标题”属性位于 `<chapter>` 元素
 * **../@date**：从当前元素的父元素中选择日期
 
 编辑控件会自动适应对应的数据类型，并使用架构中定义的标签。
@@ -75,7 +74,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 ## 格式化 {#formatting}
 
-控制项相对于彼此的排列方式类似于HTML表中使用的排列方式，有可能将控制项划分为若干列、交错元素或指定可用空间的占用。 但是，请记住，格式设置仅授权分配比例；您不能为对象指定固定维度。
+控制项相对于彼此的排列方式与HTML表中使用的排列方式相似，有可能将控制项划分为若干列、交错元素或指定可用空间的占用。 但是，请记住，格式设置仅授权分配比例；您不能为对象指定固定维度。
 
 如需详细信息，请参阅[此部分](../../configuration/using/form-structure.md#formatting)。
 
@@ -85,7 +84,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 ### 列列表 {#column-list}
 
-此控件显示一个可编辑的列列表，其工具栏包含添加和删除按钮。
+此控件显示可编辑的列列表，工具栏包含添加和删除按钮。
 
 ![](assets/d_ncs_content_form4.png)
 
@@ -96,13 +95,13 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 </input>
 ```
 
-列表控件必须填写 **type=&quot;list&quot;** 属性，并且列表的路径必须引用收集要素。
+列表控件必须填写 **type=&quot;list&quot;** 属性，且列表的路径必须引用收集要素。
 
 列由子项声明 **`<input>`** 列表中的元素。
 
 >[!NOTE]
 >
->当出现以下情况时，会自动添加向上和向下排序箭头： **ordered=&quot;true&quot;** 数据架构中集合元素的属性已完成。
+>当出现以下情况时，会自动添加向上和向下排序箭头 **ordered=&quot;true&quot;** 数据架构中收集元素的属性已完成。
 
 默认情况下，工具栏按钮垂直对齐。 它们也可以水平对齐：
 
@@ -115,20 +114,20 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 </input>
 ```
 
-此 **toolbarCaption** 属性强制工具栏水平对齐，并填充列表上方的标题。
+此 **toolbarCaption** 属性强制水平对齐工具栏并填充列表上方的标题。
 
 >[!NOTE]
 >
->要使集合元素标签不显示在控件的左侧，请添加 **nolabel=&quot;true&quot;** 属性。
+>对于不显示在控件左侧的集合元素标签，请添加 **nolabel=&quot;true&quot;** 属性。
 
 #### 放大列表 {#zoom-in-a-list}
 
 列表数据的插入和编辑可以在单独的编辑表单中执行。
 
-在下列情况下使用编辑列表中的表单：
+在下列情况下，将使用列表中的编辑表单：
 
 * 为了便于信息输入，
-* 多线路控制项的存在，
+* 存在多线路控件，
 * 列表中的列仅包含主字段，表单将显示收集要素的所有字段。
 
 ![](assets/d_ncs_content_form7.png)
@@ -146,9 +145,9 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 </input>
 ```
 
-编辑表单的定义是通过 **`<form>`** 元素。 其结构与输入表单的结构相同。
+编辑表单的定义通过 **`<form>`** 元素。 其结构与输入表单的结构相同。
 
-A **[!UICONTROL Detail]** 按钮添加时 **zoom=&quot;true&quot;** 属性在列表定义中输入。 这允许您在选定行上打开编辑表单。
+A **[!UICONTROL Detail]** 按钮添加时机 **zoom=&quot;true&quot;** 属性在列表定义中输入。 这允许您在选定行上打开编辑表单。
 
 >[!NOTE]
 >
@@ -170,7 +169,7 @@ A **[!UICONTROL Detail]** 按钮添加时 **zoom=&quot;true&quot;** 属性在列
 </container>
 ```
 
-列表控件必须填写 **type=&quot;notebooklist&quot;** 属性，并且列表的路径必须引用收集要素。
+列表控件必须填写 **type=&quot;notebooklist&quot;** 属性，且列表的路径必须引用收集要素。
 
 选项卡的标题包含通过输入的数据的值 **xpath-label** 属性。
 
@@ -180,17 +179,17 @@ A **[!UICONTROL Detail]** 按钮添加时 **zoom=&quot;true&quot;** 属性在列
 
 >[!NOTE]
 >
->当满足以下条件时，将自动添加左右排序箭头： **ordered=&quot;true&quot;** 为数据架构中的收集元素填充属性。
+>当出现以下情况时，会自动添加左右排序箭头： **ordered=&quot;true&quot;** 为数据架构中的收集元素填充属性。
 
 ## 容器 {#containers}
 
-容器允许您对一组控件进行分组。 它们通过 **`<container>`** 元素。 它们已用于在多个列中格式化控件并用于选项卡列表的控件。
+容器允许您对一组控件进行分组。 它们通过以下方式存在 **`<container>`** 元素。 它们已用于格式化多个列中的控件以及选项卡列表的控件。
 
-有关容器以及如何在输入表单中使用容器的更多信息，请参阅 [本节](../../configuration/using/form-structure.md#containers).
+有关容器以及如何在输入表单中使用这些容器的更多信息，请参阅 [本节](../../configuration/using/form-structure.md#containers).
 
 ## 编辑窗体 {#editing-forms}
 
-编辑区域允许您输入输入表单的XML内容：
+通过编辑区域，您可以输入输入表单的XML内容：
 
 ![](assets/d_ncs_content_form12.png)
 

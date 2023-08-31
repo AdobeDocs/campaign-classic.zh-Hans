@@ -2,20 +2,19 @@
 product: campaign
 title: 创建和识别投放
 description: 创建和识别投放
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Channel Configuration
+role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '283'
 ht-degree: 5%
 
 ---
 
 # 创建和识别投放 {#create-and-identify-the-delivery}
-
-
 
 ## 创建投放 {#creating-the-delivery}
 
@@ -26,7 +25,7 @@ ht-degree: 5%
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
-为您安装的每个渠道提供了一个默认模板：直邮、电子邮件、传真、电话、移动渠道（短信）、Facebook、Twitter等。
+为您安装的每个渠道提供了一个默认模板：直邮、电子邮件、传真、电话、移动渠道(SMS)、Facebook、Twitter等。
 
 >[!NOTE]
 >
@@ -38,12 +37,12 @@ ht-degree: 5%
 
 您需要完成参数以标识投放。 操作步骤：
 
-1. 在中输入投放的名称 **[!UICONTROL Label]** 字段。
+1. 在中输入交货的名称 **[!UICONTROL Label]** 字段。
 
-   还可以为投放分配投放代码。 投放的名称及其代码会显示在投放列表中，但收件人无法看到。
+   您还可以为投放分配投放代码。 投放的名称及其代码会显示在投放列表中，但收件人无法看到。
 
 1. 在中添加描述 **[!UICONTROL Description]** 字段。
-1. 在相关字段中选择投放性质。 此信息对于投放跟踪很有用：您可以在投放列表中根据此条件进行筛选，或使用此选择条件构建查询。
+1. 在相关字段中选择投放性质。 此信息对于投放跟踪很有用：您可以在投放列表中根据此标准进行筛选，或使用此选择标准构建查询。
 
    ![](assets/s_ncs_user_email_del_nature.png)
 

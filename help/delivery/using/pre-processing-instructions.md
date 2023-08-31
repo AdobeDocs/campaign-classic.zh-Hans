@@ -1,25 +1,24 @@
 ---
 product: campaign
-title: 跟踪的URL的预处理指令
-description: 详细了解用于编写电子邮件URL脚本且仍对其进行跟踪的预处理指令
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+title: 用于跟踪URL的预处理指令
+description: 了解更多有关用于编写电子邮件URL脚本并且仍对其进行跟踪的预处理指令
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Monitoring
+role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '654'
 ht-degree: 2%
 
 ---
 
 # 预处理指令 {#pre-processing-instructions}
 
-
-
 您可以在投放内容中使用特定语法来添加说明，并为跟踪电子邮件的URL编写脚本。 &lt;%@说明不是JavaScript：此语法特定于Adobe Campaign。
 
-它们仅适用于投放内容的上下文。 这是为电子邮件的URL编写脚本但仍对其进行跟踪的唯一方法（除URL参数外）。 它们可以视为在检测要跟踪的链接之前投放分析期间应用的自动复制/粘贴。
+它们仅适用于投放内容的上下文。 这是为电子邮件的URL编写脚本并且仍对其进行跟踪的唯一方法（除URL参数外）。 它们可以看作是在投放分析期间应用的自动复制/粘贴，然后再检测要跟踪的链接。
 
 有三种类型的说明：
 
@@ -27,7 +26,7 @@ ht-degree: 2%
 * **[!DNL value]**：授予对投放字段、投放变量和投放中加载的自定义对象的访问权限。 [了解详情](#value)
 * **[!DNL foreach]**：循环加载为自定义对象的数组。 [了解详情](#foreach)
 
-可以直接从投放向导中测试它们。 它们适用于内容预览以及单击跟踪按钮以查看URL列表时。
+可以直接从投放向导中测试它们。 它们适用于内容预览以及单击跟踪按钮查看URL列表时。
 
 ## [!DNL include] {#include}
 
@@ -35,35 +34,35 @@ ht-degree: 2%
 
 * 包括镜像页面链接：
 
-   ```
-   <%@ include view="MirrorPage" %>  
-   ```
+  ```
+  <%@ include view="MirrorPage" %>  
+  ```
 
 * 镜像页面 URL:
 
-   ```
-   View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
-   ```
+  ```
+  View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
+  ```
 
-* 开箱即用的退订URL：
+* 现成的退订URL：
 
-   ```
-   <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
-   ```
+  ```
+  <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
+  ```
 
 * 其他示例：
 
-   ```
-   <%@ include file='http://www.google.com' %>
-   <%@ include file='file:///X:/france/service/test.html' %>
-   <%@ include option='NmsServer_URL' %>
-   ```
+  ```
+  <%@ include file='http://www.google.com' %>
+  <%@ include file='file:///X:/france/service/test.html' %>
+  <%@ include option='NmsServer_URL' %>
+  ```
 
-   使用投放向导中的个性化按钮获取正确的语法。
+  使用投放向导中的个性化按钮获取正确的语法。
 
 ## [!DNL value] {#value}
 
-本说明可让您访问对所有收件人都保持不变的投放参数。
+此说明允许访问对所有收件人都保持不变的投放参数。
 
 语法:
 
@@ -73,11 +72,11 @@ ht-degree: 2%
 
 其中：
 
-* **[!DNL object]**：对象的名称（例如：投放、提供程序等）。
+* **[!DNL object]**：对象的名称（例如：投放、提供者等）。
 对象可以是：
-   * **[!DNL delivery]**：适用于当前投放（请参阅下面子部分中的详细信息和限制）。
-   * **[!DNL provider]**：适用于当前投放提供商/路由(nms：externalAccount)。
-   * 额外的脚本对象：如果对象是通过以下方式加载到上下文中的： **属性** > **个性化** > **在执行上下文中添加对象**.
+   * **[!DNL delivery]**：对于当前投放（请参阅下面子部分中的详细信息和限制）。
+   * **[!DNL provider]**：对于当前投放提供商/路由(nms：externalAccount)。
+   * 额外的脚本对象：如果对象通过加载到上下文中： **属性** > **个性化** > **在执行上下文中添加对象**.
    * foreach循环的项目：请参见 [福雷阿赫](#foreach) 部分。
 * **[!DNL xpath]**：字段的xpath。
 * **[!DNL index]** （可选）：如果 **[!DNL object]** 是一个数组（用于额外的脚本对象），数组中的项索引（从0开始）。
@@ -88,17 +87,17 @@ ht-degree: 2%
 
 * 使用JavaScript：
 
-   ```
-   <%= delivery.myField %>`.
-   ```
+  ```
+  <%= delivery.myField %>`.
+  ```
 
-   在JavaScript对象投放中，不支持自定义字段。 它们可以在预览中使用，但不能在MTA中使用，因为MTA只能访问现成的投放模式。
+  在JavaScript对象投放中，不支持自定义字段。 它们可以在预览中使用，但不能在MTA中使用，因为MTA只能访问现成的投放模式。
 
 * 使用预处理：
 
-   ```
-   <%@ value object="delivery"
-   ```
+  ```
+  <%@ value object="delivery"
+  ```
 
 
 **注意**
@@ -143,16 +142,16 @@ ht-degree: 2%
 
 其中：
 
-* **[!DNL object]**：开始对象的名称，通常是额外的脚本对象，但也可以是投放。
+* **[!DNL object]**：要从中开始的对象的名称，通常是额外的脚本对象，但也可以是投放。
 * **[!DNL xpath]** （可选）：要循环的集合的xpath。 默认值为“。”，这意味着对象是要循环处理的数组。
 * **[!DNL index]** （可选）：如果xpath不是“。” 而对象本身是一个数组，即对象的项索引（从0开始）。
-* **[!DNL item]** （可选）：可在foreach循环中使用&lt;%@值访问的新对象的名称。 默认为架构中的链接名称。
+* **[!DNL item]** （可选）：可通过foreach循环中的&lt;%@值访问的新对象的名称。 在架构中具有链接名称的默认值。
 
 示例:
 
-在投放属性/个性化中，加载项目数组和收件人与项目之间的关系表。
+在投放属性/个性化中，加载项目数组，以及收件人和项目之间的关系表。
 
-显示指向这些文章的链接只需使用Javascript即可，如下所示：
+显示这些文章的链接可以简单地用Javascript完成，如下所示：
 
 ```
 <%
@@ -163,11 +162,11 @@ ht-degree: 2%
 %>
 ```
 
-使用该解决方案，可以不加区别地跟踪指向所有文章的链接。 您可以知道收件人点击了文章链接，但您无法知道是哪篇文章。
+使用该解决方案，可不加区分地跟踪所有文章的链接。 您可以知道收件人已点击文章链接，但您无法知道是哪篇文章。
 
 解决方案是：
 
-1. 在投放的额外脚本数组中预加载所有可能的文章 — articleList[]  — 这意味着必须有有限数量的可能项目。
+1. 在投放的额外脚本数组中预加载所有可能的文章 — articleList[]  — 表示必须有有限数量的可能条目。
 1. 在内容的开头编写JavaScript函数。
 
    ```
@@ -186,7 +185,7 @@ ht-degree: 2%
    <%@ value object='endScript' %>
    ```
 
-1. 通过调用函数来显示文章。
+1. 通过调用函数显示文章。
 
    ```
    <%

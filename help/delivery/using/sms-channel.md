@@ -2,27 +2,25 @@
 product: campaign
 title: 短信渠道入门
 description: 短信渠道入门
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: SMS
+role: User
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 4%
+source-wordcount: '166'
+ht-degree: 5%
 
 ---
 
 # 短信渠道入门{#sms-channel}
 
-
-
-
 使用Adobe Campaign发送个性化的短信消息。
 
 开始发送短信之前：
 
-* 确保收件人的配置文件中至少包含一部手机。
+* 确保收件人配置文件中至少包含一部手机。
 * 了解有关Adobe Campaign的更多信息 [投放最佳实践](delivery-best-practices.md).
 
 发送短信的关键步骤如下：
@@ -42,4 +40,4 @@ ht-degree: 4%
 >
 >Adobe Campaign还允许您通过其 **Adobe Campaign移动设备应用程序渠道(NMAC)** 选项。
 > 
->有关详情，请参阅 [移动应用程序渠道入门](about-mobile-app-channel.md) 部分。
+>有关详细信息，请参见 [移动应用程序渠道入门](about-mobile-app-channel.md) 部分。

@@ -2,22 +2,21 @@
 product: campaign
 title: SpamAssassin
 description: 了解如何使用SpamAssassin设置电子邮件垃圾邮件检测
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email, Deliverability
+role: User
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 6%
+source-wordcount: '267'
+ht-degree: 7%
 
 ---
 
 # SpamAssassin{#spamassassin}
 
-
-
-可以将Adobe Campaign配置为使用 [SpamAssassin](https://spamassassin.apache.org)，一种用于电子邮件垃圾邮件过滤的第三方服务。 这允许您对电子邮件进行评分，以确定邮件在接收时是否会被反垃圾邮件工具视为垃圾邮件。
+Adobe Campaign可以配置为与 [SpamAssassin](https://spamassassin.apache.org)，用于电子邮件垃圾邮件过滤的第三方服务。 这允许您对电子邮件进行评分，以确定邮件在接收时是否会被反垃圾邮件工具视为垃圾邮件。
 
 SpamAssassin利用多种垃圾邮件检测技术，包括：
 
@@ -25,7 +24,7 @@ SpamAssassin利用多种垃圾邮件检测技术，包括：
 * 贝叶斯滤波
 * 外部程序
 * 阻止列表
-* 联机数据库
+* 在线数据库
 
 >[!NOTE]
 >
@@ -40,7 +39,7 @@ SpamAssassin利用多种垃圾邮件检测技术，包括：
 有关创建和设计投放的更多信息，请参阅 [本节](about-email-channel.md).
 
 1. 转到 **[!UICONTROL Preview]** 选项卡。
-1. 选择收件人以预览投放。
+1. 选择一个收件人以预览您的投放。
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
 
@@ -48,7 +47,7 @@ SpamAssassin利用多种垃圾邮件检测技术，包括：
    >
    >如果不选择收件人，则无法执行反垃圾邮件检查。
 
-1. 出现警告消息，给出测试结果。 如果检测到高风险，则会显示以下警告消息：
+1. 出现警告消息，给出测试结果。 如果检测到高风险，将显示以下警告消息：
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
@@ -60,4 +59,4 @@ SpamAssassin利用多种垃圾邮件检测技术，包括：
 
 >[!NOTE]
 >
->每次单击 **[!UICONTROL Anti-spam checking]**，则调用SpamAssassin服务并再次分析消息以进行反垃圾邮件检测。 在再次运行反垃圾邮件分析之前，请确保更改了内容。
+>每次单击 **[!UICONTROL Anti-spam checking]**，调用SpamAssassin服务并再次分析消息以进行反垃圾邮件检测。 在再次运行反垃圾邮件分析之前，请确保已更改您的内容。
