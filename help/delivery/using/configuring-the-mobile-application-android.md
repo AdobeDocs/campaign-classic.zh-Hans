@@ -2,19 +2,18 @@
 product: campaign
 title: 在Adobe Campaign中配置Android移动应用程序
 description: 了解如何为Android设置移动应用程序
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Push
+role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '966'
 ht-degree: 4%
 
 ---
 
 # Android 配置步骤
-
-
 
 安装包后，您可以在Adobe Campaign Classic中定义Android应用程序设置。
 
@@ -26,7 +25,7 @@ ht-degree: 4%
 
 1. [配置Android外部帐户](#configuring-external-account-android)
 1. [配置Android服务](#configuring-android-service)
-1. [在营销活动中创建移动应用程序](#creating-android-app)
+1. [在Campaign中创建移动应用程序](#creating-android-app)
 1. [使用其他数据扩展应用程序架构](#extend-subscription-schema)
 
 然后，您将能够 [创建Android富通知](create-notifications-android.md).
@@ -35,7 +34,7 @@ ht-degree: 4%
 
 对于Android，提供了两个连接器：
 
-* 允许每个MTA子项一个连接的V1连接器。
+* V1连接器，允许每个MTA子级有一个连接。
 * V2连接器允许同时连接到FCM服务器以提高吞吐量。
 
 要选择要使用的连接器，请执行以下步骤：
@@ -54,7 +53,7 @@ ht-degree: 4%
 
 1. 对于Android V2，Adobe服务器配置文件(serverConf.xml)中还提供另一个参数：
 
-   * **maxGCMConnectPerChild**：每个子服务器向FCM发起的并行HTTP请求的最大限制（默认为8个）。
+   * **maxGCMConnectPerChild**：每个子服务器向FCM发出的并行HTTP请求的最大限制（默认为8个）。
 
 ## 配置Android服务 {#configuring-android-service}
 
@@ -69,7 +68,7 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >默认 **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** 目标映射链接到收件人表。 如果要使用其他目标映射，则需要创建一个新的目标映射，并在以下位置输入该映射： **[!UICONTROL Target mapping]** 服务的字段。 有关创建目标映射的更多信息，请参阅 [本节](../../configuration/using/about-custom-recipient-table.md).
+   >默认 **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** 目标映射已链接到收件人表。 如果要使用其他目标映射，则需要创建一个新的目标映射，并在 **[!UICONTROL Target mapping]** 服务的字段。 有关创建目标映射的详细信息，请参阅 [本节](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
@@ -103,7 +102,7 @@ ht-degree: 4%
 
 1. 单击 **[!UICONTROL Finish]**，然后单击 **[!UICONTROL Save]**。您的Android应用程序现在已准备好用于Campaign Classic。
 
-默认情况下，Adobe Campaign会将一个密钥保存在 **[!UICONTROL User identifier]** (@userKey)字段 **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** 表格。 利用此密钥，可将订阅链接到收件人。 要收集其他数据（如复杂的协调密钥），您需要应用以下配置：
+默认情况下，Adobe Campaign会在 **[!UICONTROL User identifier]** (@userKey)字段 **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** 表格。 利用此密钥，可将订阅链接到收件人。 要收集其他数据（如复杂的协调密钥），您需要应用以下配置：
 
 ### 选择API版本{#select-api-version}
 
@@ -118,7 +117,7 @@ ht-degree: 4%
 
 1. 在您的 **[!UICONTROL Mobile application creation wizard]** 窗口，选择 **[!UICONTROL HTTPV1]** 在 **[!UICONTROL API version]** 下拉菜单。
 
-1. 单击 **[!UICONTROL Load project json file to extract project details...]** 直接加载您的JSON密钥文件。 有关如何提取JSON文件的更多信息，请参阅 [此页面](https://firebase.google.com/docs/admin/setup#initialize-sdk).
+1. 单击 **[!UICONTROL Load project json file to extract project details...]** 直接加载JSON密钥文件。 有关如何提取JSON文件的更多信息，请参阅 [此页面](https://firebase.google.com/docs/admin/setup#initialize-sdk).
 
    您还可以手动输入以下详细信息：
    * **[!UICONTROL Project Id]**
@@ -139,23 +138,23 @@ ht-degree: 4%
 
 1. 单击 **[!UICONTROL Finish]**，然后单击 **[!UICONTROL Save]**。您的Android应用程序现在已准备好用于Campaign Classic。
 
-以下是FCM有效负载名称，可用于进一步个性化推送通知：
+以下是FCM有效负荷名称，用于进一步个性化您的推送通知：
 
 | 消息类型 | 可配置消息元素（FCM有效负荷名称） | 可配置选项（FCM有效负荷名称） |
 |:-:|:-:|:-:|
 | 数据消息 | N/A | validate_only |
-| 通知消息 | 标题，正文， android_channel_id，图标，声音，标记，颜色，点击操作，图像，滚动条，粘性，可见性，通知优先级，通知计数 <br> | validate_only |
+| 通知消息 | title，标题，正文， android_channel_id，图标，声音，标记，颜色， click_action，图像，滚动条，粘性，可见性， notification_priority，通知优先级， notification_count <br> | validate_only |
 
 <br>
 <br>
 
-#### 配置HTTP（旧版） API{#android-service-http}
+#### 配置HTTP（旧版）API{#android-service-http}
 
 要配置HTTP（旧版） API版本，请执行以下步骤：
 
 1. 在您的 **[!UICONTROL Mobile application creation wizard]** 窗口，选择 **[!UICONTROL HTTP (legacy)]** 在 **[!UICONTROL API version]** 下拉菜单。
 
-1. 输入 **[!UICONTROL Project key]** 移动应用程序的开发人员提供的本地代码。
+1. 输入 **[!UICONTROL Project key]** 移动应用程序开发人员提供的ID服务。
 
 1. 作为一个选项，您可以使用一些来扩充推送消息内容 **[!UICONTROL Application variables]** 如果需要。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 
@@ -165,7 +164,7 @@ ht-degree: 4%
 
 1. 单击 **[!UICONTROL Finish]**，然后单击 **[!UICONTROL Save]**。您的Android应用程序现在已准备好用于Campaign Classic。
 
-以下是FCM有效负载名称，可用于进一步个性化推送通知：
+以下是FCM有效负荷名称，用于进一步个性化您的推送通知：
 
 | 消息类型 | 可配置消息元素（FCM有效负荷名称） | 可配置选项（FCM有效负荷名称） |
 |:-:|:-:|:-:|
@@ -178,12 +177,12 @@ ht-degree: 4%
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中了解如何扩展appsubscriptionRcp架构](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
-您需要扩展 **appsubscriptionRcp** 定义新的附加字段，以将应用程序中的参数存储在Campaign数据库中。 例如，这些字段将用于个性化。 操作步骤：
+您需要扩展 **appsubscriptionRcp** 定义新的附加字段，以将来自应用程序的参数存储在Campaign数据库中。 例如，这些字段将用于个性化。 操作步骤：
 
-1. 创建 **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** 架构并定义新字段。 在中了解有关架构扩展的更多信息 [此页面](../../configuration/using/about-schema-edition.md)
+1. 创建 **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** 架构并定义新字段。 在中了解有关模式扩展的更多信息 [此页面](../../configuration/using/about-schema-edition.md)
 
 1. 在中定义映射 **[!UICONTROL Subscription parameters]** 选项卡。
 
    >[!CAUTION]
    >
-   >确保配置名称位于 **[!UICONTROL Subscription parameters]** 选项卡与移动应用程序代码中的选项卡相同。 请参阅[此小节](integrating-campaign-sdk-into-the-mobile-application.md)。
+   >请确保 **[!UICONTROL Subscription parameters]** 选项卡与移动应用程序代码中的选项卡相同。 请参阅[此小节](integrating-campaign-sdk-into-the-mobile-application.md)。

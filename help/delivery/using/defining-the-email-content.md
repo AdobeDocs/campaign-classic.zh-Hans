@@ -5,8 +5,9 @@ description: 了解如何在使用Adobe Campaign时定义电子邮件内容
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email Design
+role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 1%

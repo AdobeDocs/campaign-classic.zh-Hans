@@ -3,12 +3,13 @@ product: campaign
 title: Web 跟踪模式
 description: 了解如何选择Web跟踪模式
 feature: Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+role: Data Engineer, Developer
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: b0f30c1f-cdc9-4ad2-8a6c-19d5aae4feb3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 

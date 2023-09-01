@@ -2,13 +2,14 @@
 product: campaign
 title: Web 服务调用
 description: Web 服务调用
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: API
+role: Data Engineer, Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 1%
+source-wordcount: '929'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 1%
 
 * 从后台或事务系统执行同步警报、通知和实时投放模板，
 * 开发具有简化功能（Web界面等）的特殊界面，
-* 在数据库中馈送和查找数据，同时遵守交易规则，并与底层物理模型保持隔离。
+* 在数据库中馈送和查找数据，同时观察交易规则，并与底层物理模型保持隔离。
 
 ## Web服务的定义 {#definition-of-web-services}
 
@@ -43,15 +44,15 @@ Web服务在数据架构的语法中进行了描述，可从 **`<methods>`** 元
 </methods>
 ```
 
-这里我们有一个方法定义的示例，称为 **生成表单**.
+下面是方法的定义示例，名为 **生成表单**.
 
 此服务的描述以 `<method>` 元素。 方法的参数列表是从  `<parameters>` 元素。 每个参数由名称、类型（布尔值、字符串、DOMElement等）指定 和描述。 值为“out”的“inout”属性允许您指定“result”参数位于SOAP调用输出中。
 
-“static”属性（值为“true”）的存在将该方法描述为static，这意味着该方法的所有参数都必须声明。
+“static”属性（值为“true”）的存在将此方法描述为static，这意味着必须声明该方法的所有参数。
 
-“const”方法隐含地以关联架构格式的XML文档作为输入。
+“const”方法隐含地将XML文档格式为其关联架构作为输入。
 
-对的完整描述 `<method>` Adobe Campaign架构的元素在以下位置的“架构引用”章节中可用： [方法](../../configuration/using/schema/method.md)
+此功能的完整说明 `<method>` Adobe Campaign架构的元素在以下位置的“架构引用”章节中可用： [方法](../../configuration/using/schema/method.md)
 
 “xtk：queryDef”架构中的“const”类型“ExecuteQuery”方法的示例：
 
@@ -64,11 +65,11 @@ Web服务在数据架构的语法中进行了描述，可从 **`<methods>`** 元
 </method>
 ```
 
-此方法的输入参数是“xtk：queryDef”架构格式的XML文档。
+此方法的输入参数是采用“xtk：queryDef”架构格式的XML文档。
 
 ## Web服务描述：WSDL {#web-service-description--wsdl}
 
-每个服务都有一个WSDL（Web服务描述库）文件。 此XML文件使用元语言描述服务，并指定可用的方法、参数和要联系以执行服务的服务器。
+每个服务都有WSDL（Web服务描述库）文件。 此XML文件使用元语言描述服务，并指定可用的方法、参数以及要联系以执行服务的服务器。
 
 ### WSDL文件生成 {#wsdl-file-generation}
 
@@ -193,25 +194,25 @@ Adobe Campaign通过引入 [安全区域](../../installation/using/security-zone
 
 或者
 
-* **通过Adobe Campaign登录+密码** 创建一个会话令牌。 会话令牌在设定的时间段后自动过期。 不建议使用此模式，因此需要降低某些区域设置（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）的应用程序安全设置。
+* **通过Adobe Campaign登录+密码** 创建会话令牌的用户。 会话令牌会在设置的时间段后自动过期。 不建议使用此模式，因此需要减少某些区域设置（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）的应用程序安全设置。
 
 ### 会话令牌特性 {#session-token-characteristics}
 
 会话令牌具有以下特性：
 
-* x小时的生命周期（可在“serverConf.xml”文件中配置生命周期，默认时间段为24小时）
-* 随机结构（不再包含用户登录名和密码）
+* x小时生命周期（生命周期可在“serverConf.xml”文件中配置，默认期间为24小时）
+* 随机构造（不再包含用户登录名和密码）
 * 通过Web访问时：
 
-   * 会话令牌成为永久令牌，浏览器关闭后不会销毁
-   * 它放在HTTP-ONLY Cookie中（必须为运算符激活Cookie）
+   * 会话令牌将成为永久令牌，浏览器关闭后不会将其销毁
+   * 它放置在仅限HTTP的Cookie中（必须为操作员激活Cookie）
 
-### 安全令牌特征 {#security-token-characteristics}
+### 安全令牌特性 {#security-token-characteristics}
 
 安全令牌具有以下特性：
 
 * 它从会话令牌生成
-* 它的生命周期为24小时（可在“serverConf.xml”文件中配置，默认时间段为24小时）
+* 它的生命周期为24小时（可在“serverConf.xml”文件中配置，默认期间为24小时）
 * 它存储在Adobe Campaign控制台中
 * 通过Web访问时：
 
@@ -231,7 +232,7 @@ Adobe Campaign通过引入 [安全区域](../../installation/using/security-zone
 * 服务器使用令牌完成链接
 * 服务器向表单添加隐藏字段
 
-从SOAP调用：
+通过SOAP调用：
 
 * 将其添加到调用标头
 
@@ -274,7 +275,7 @@ Adobe Campaign通过引入 [安全区域](../../installation/using/security-zone
 
 >[!NOTE]
 >
->以下内容中使用的URL **HttpServletRequest** 调用需要在的url权限部分中允许列表 **serverConf.xml** 文件。 服务器本身的URL也是如此。
+>以下内容中使用的URL **HttpServletRequest** 调用需要在的url权限部分进行允许列表 **serverConf.xml** 文件。 对于服务器的URL本身也是如此。
 
 登录执行()：
 

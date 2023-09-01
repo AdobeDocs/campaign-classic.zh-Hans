@@ -3,12 +3,13 @@ product: campaign
 title: 添加其他 SQL 函数
 description: 了解如何定义其他SQL函数
 feature: Configuration, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+role: Data Engineer, Developer
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1030'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -28,7 +29,7 @@ Adobe Campaign允许用户定义 **他们自己的功能** 可以访问SQL函数
 
 要添加的函数位于 **XML格式的“包”文件**，其结构详见下段。
 
-要从控制台安装它，请选择 **Tools/Advanced/Import包** 选项，然后 **[!UICONTROL Install from file]** ，并按照导入向导中的说明操作。
+要从控制台安装它，请选择 **Tools/Advanced/Import软件包** 选项，然后 **[!UICONTROL Install from file]** ，并按照导入向导中的说明操作。
 
 >[!IMPORTANT]
 >

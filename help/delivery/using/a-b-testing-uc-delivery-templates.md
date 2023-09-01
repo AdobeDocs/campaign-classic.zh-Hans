@@ -2,20 +2,19 @@
 product: campaign
 title: 创建投放模板
 description: 了解如何通过专用用例执行A/B测试
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+role: User
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: A/B Testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 20%
+source-wordcount: '100'
+ht-degree: 16%
 
 ---
 
-# 创建投放模板 {#step-3--creating-two-delivery-templates}
-
-
+# AB测试：创建投放模板 {#step-3--creating-two-delivery-templates}
 
 现在，我们要创建两个投放模板。 每个模板都将在以下字段中引用： **[!UICONTROL Email delivery]** 活动链接到 **[!UICONTROL Split]** 活动。 如需详细信息，请参阅[此部分](about-templates.md)。
 

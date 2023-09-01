@@ -2,13 +2,14 @@
 product: campaign
 title: 应用分类规则
 description: 了解如何应用类型规则
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+role: User, Data Engineer
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Typology Rules, Campaigns
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '990'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 

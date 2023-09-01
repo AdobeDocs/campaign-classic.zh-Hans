@@ -2,12 +2,13 @@
 product: campaign
 title: 营销活动文档和投放概要
 description: 了解有关营销活动文档和投放概要的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -20,11 +21,11 @@ ht-degree: 1%
 >
 >此功能专为小型资产和文档保留。
 
-在营销策划中，您还可以参考其他项目，例如促销优惠券、与特定品牌或商店相关的特殊优惠等。 当这些元素包含在大纲中时，它们可以与直邮投放相关联。 参见 [关联和构建通过投放概要链接的资源](#associating-and-structuring-resources-linked-via-a-delivery-outline).
+在营销策划中，您还可以参考其他项目，如促销优惠券、与特定品牌或商店相关的特殊优惠等。 当这些元素包含在大纲中时，它们可以与直邮投放相关联。 请参阅 [关联并构建通过投放概要链接的资源](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 >[!NOTE]
 >
->如果您使用的是Campaign营销资源管理模块，则还可以管理营销资源库，该库可供多个用户协作使用。 [了解详情](../../mrm/using/managing-marketing-resources.md)。
+>如果您使用Campaign营销资源管理模块，则还可以管理营销资源库，该库可供多个用户协作使用。 [了解详情](../../mrm/using/managing-marketing-resources.md)。
 
 ## 添加文档 {#adding-documents}
 
@@ -53,17 +54,17 @@ ht-degree: 1%
 
 也可以从此视图编辑和修改它们。
 
-## 关联和构建通过投放概要链接的资源 {#associating-and-structuring-resources-linked-via-a-delivery-outline}
+## 关联并构建通过投放概要链接的资源 {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >
->投放大纲仅用于直邮营销活动。
+>投放大纲仅用于直邮营销活动的上下文。
 
-投放大纲表示一组结构化元素（文档、商店、促销优惠券等） 由公司和为特定营销活动创建。
+投放概要表示一组结构化元素（文档、商店、促销优惠券等） 由公司创建，并用于特定营销活动。
 
-这些元素在投放概要中进行分组，每个投放概要都将与一个投放关联；将在发送到的提取文件中引用该投放概要。 **服务提供商** 以便附加到投放中。 例如，您可以创建一个投放概要，其中引用分支及其使用的营销手册。
+这些元素在投放概要中进行分组，每个投放概要都将与一个投放关联；将在发送到的提取文件中引用该投放概要。 **服务提供商** 以附加到投放。 例如，您可以创建一个投放概要，其中引用分支及其使用的营销小册子。
 
-对于营销活动，利用投放概要，可根据特定条件构建要与投放关联的外部元素：相关分支、授予的促销优惠、本地活动邀请函等。
+对于营销活动，利用投放概要，可根据特定条件构建要与投放关联的外部元素：相关分支、授予的促销优惠、本地活动邀请等。
 
 ### 创建大纲 {#creating-an-outline}
 
@@ -71,7 +72,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果此选项卡不存在，则此功能不适用于此营销活动。 请参阅营销活动模板配置。
+>如果此选项卡不存在，则此功能不适用于此营销活动。 请参阅活动模板配置。
 >   
 >有关模板的更多信息，请参阅 [本节](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
@@ -84,49 +85,49 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_op_add_composition.png)
 
-大纲可以包含项目和个性化字段、资源和选件：
+大纲可包含项目和个性化字段、资源和选件：
 
-* 项目可以是物理文档，例如，此处引用和描述的文档，并将附加到投放。
-* 通过个性化字段，您可以创建与投放而非收件人相关的个性化元素。 因此，可以创建值以用于特定目标的投放（欢迎优惠、折扣等） 它们在Adobe Campaign中创建，并通过导入到大纲中 **[!UICONTROL Import personalization fields...]** 链接。
+* 项目可以是物理文档，例如，此处引用和描述的文档，将附加到投放。
+* 通过个性化字段，您可以创建与投放而不是收件人相关的个性化元素。 因此，可以创建值以用于特定目标的投放（欢迎优惠、折扣等） 它们在Adobe Campaign中创建，并通过导入大纲 **[!UICONTROL Import personalization fields...]** 链接。
 
-   ![](assets/s_ncs_user_op_add_composition_field.png)
+  ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   也可以通过单击 **[!UICONTROL Add]** 图标（位于列表区域的右侧）。
+  也可以通过单击 **[!UICONTROL Add]** 图标（位于列表区域的右侧）。
 
-   ![](assets/s_ncs_user_op_add_composition_field_button.png)
+  ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* 资源是营销资源仪表板中生成的营销资源，可通过访问 **[!UICONTROL Resources]** 链接 **[!UICONTROL Campaigns]** 选项卡。
+* 资源是在营销资源仪表板中生成的营销资源，可通过访问 **[!UICONTROL Resources]** 链接 **[!UICONTROL Campaigns]** 选项卡。
 
-   ![](assets/s_ncs_user_mkg_resource_ovv.png)
+  ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
-   >[!NOTE]
-   >
-   >有关营销资源的更多信息，请参阅 [本节](../../mrm/using/managing-marketing-resources.md).
+  >[!NOTE]
+  >
+  >有关营销资源的更多信息，请参阅 [本节](../../mrm/using/managing-marketing-resources.md).
 
 ### 选择大纲 {#selecting-an-outline}
 
-对于每个投放，您可以从为提取大纲保留的部分中选择要关联的大纲，如下例所示：
+对于每次投放，您可以从为提取大纲保留的节中选择要关联的大纲，如以下示例所示：
 
 ![](assets/s_ncs_user_op_select_composition.png)
 
-然后，所选轮廓将显示在窗口的下部。 可使用字段右侧的图标编辑或使用下拉列表进行更改：
+然后，所选轮廓将显示在窗口的下部。 可使用字段右侧的图标编辑或使用下拉列表更改它：
 
 ![](assets/s_ncs_user_op_select_composition_b.png)
 
-此 **[!UICONTROL Summary]** 投放的选项卡也会显示以下信息：
+此 **[!UICONTROL Summary]** 投放的选项卡还会显示以下信息：
 
 ![](assets/s_ncs_user_op_select_composition_c.png)
 
 ### 提取结果 {#extraction-result}
 
-在提取并发送到服务提供商的文件中，大纲的名称以及适当时其特征（成本、描述等） 根据与服务提供商关联的导出模板中的信息添加到内容中。
+在提取并发送到服务提供商的文件中，大纲的名称以及适当时其特征（成本、描述等） 根据与服务提供商关联的导出模板中的信息添加到内容。
 
 在以下示例中，与投放关联的大纲的标签、预计成本和描述将添加到提取文件中。
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-导出模型必须与为相关投放选择的服务提供商关联。 请参阅[此小节](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
+导出模型必须与为相关投放选择的服务提供商关联。 请参阅[此章节](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
 
 >[!NOTE]
 >
->有关导出的更多信息，请参阅 [本节](../../platform/using/get-started-data-import-export.md) 部分。
+>有关导出的详细信息，请参阅 [本节](../../platform/using/get-started-data-import-export.md) 部分。

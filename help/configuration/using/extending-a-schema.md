@@ -1,18 +1,19 @@
 ---
 product: campaign
-title: 扩展架构
+title: 扩展模式
 description: 了解如何扩展模式
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: Data Engineer, Developer
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 4%
+source-wordcount: '334'
+ht-degree: 6%
 
 ---
 
-# 扩展架构{#extending-a-schema}
+# 扩展模式{#extending-a-schema}
 
 >[!IMPORTANT]
 >
@@ -24,15 +25,15 @@ ht-degree: 4%
 扩展现有模式的方法有两种：
 
 1. 直接修改源架构。
-1. 创建另一个名称相同但命名空间不同的架构。 优点在于，无需修改原始模式即可扩展表。
+1. 创建另一个名称相同但命名空间不同的架构。 其优点是，无需修改原始模式即可扩展表。
 
-   架构的根元素必须包含 **extendedschema** 属性，其值为要扩展的架构的名称。
+   架构的根元素必须包含 **extendedschema** 属性，其值为要扩展的模式的名称。
 
-   扩展架构没有自己的架构：从源架构生成的架构将使用扩展架构的字段进行填充。
+   扩展架构没有自己的架构：从源架构生成的架构将填充扩展架构的字段。
 
    >[!IMPORTANT]
    >
-   >不允许修改应用程序的内置架构，但可以修改架构扩展机制。 否则，修改后的架构将不会在应用程序未来升级时更新。 这可能会导致使用Adobe Campaign时出现故障。
+   >您不得修改应用程序的内置架构，而不得修改架构扩展机制。 否则，修改后的架构将不会在应用程序未来升级时更新。 这可能会导致使用Adobe Campaign时出现问题。
 
    **示例**：的扩展 **nms：recipient** 架构。
 
@@ -54,11 +55,11 @@ ht-degree: 4%
    </schema>
    ```
 
-   此 **依赖模式** 架构的根元素上的属性引用对扩展架构的依赖关系。
+   此 **依赖模式** 架构的根元素上的属性引用扩展架构的依赖关系。
 
    此 **beystsTo** 字段上的属性会填充声明该属性的架构。
 
 >[!IMPORTANT]
 >
->要将这些修改考虑在内，您需要重新生成架构。 有关详细信息，请参见[此页面](../../configuration/using/regenerating-schemas.md)。\
+>要考虑修改，您需要重新生成模式。 有关详细信息，请参见[此页面](../../configuration/using/regenerating-schemas.md)。\
 >如果修改影响数据库的结构，则需要运行更新。 有关详细信息，请参见[此页面](../../configuration/using/updating-the-database-structure.md)。

@@ -2,22 +2,22 @@
 product: campaign
 title: Campaign投放最佳实践
 description: 了解设计和发送投放时的最佳实践
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Deliverability
+role: User
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 28%
+source-wordcount: '115'
+ht-degree: 26%
 
 ---
 
 # 投放最佳实践 {#delivery-best-practices}
 
 
-
-了解与Adobe Campaign的交付设计和发送相关的最佳实践。 使用以下链接可导航主题并查找指南。
+了解与使用Adobe Campaign进行交付设计和发送相关的最佳实践。 使用以下链接可导航浏览主题并查找指南。
 
 <table>
 <tr>
@@ -31,7 +31,7 @@ ht-degree: 28%
     </a>
     </div>
     <p>
-    <em>确保发送过程安全并优化</em>
+    <em>安全并优化发送过程</em>
     <p>
   </td>
    <td>
@@ -52,7 +52,9 @@ ht-degree: 28%
       <img alt="设计" src="assets/do-not-localize/custom.svg" width="60px"/>
     </a>
     <div>
-      <a href="design-and-personalize.md"><strong>个性化内容</strong></a>
+      <a href="design-and-personalize.md">
+    <strong>个性化内容</strong>
+    </a>
     </div>
     <p>
     <em>应用正确的设置</em>
@@ -108,4 +110,4 @@ ht-degree: 28%
 
 * [投放创建步骤](steps-about-delivery-creation-steps.md)
 
-* [安全和隐私检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)
+* [安全和隐私检查清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)

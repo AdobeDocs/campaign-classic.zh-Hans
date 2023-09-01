@@ -3,12 +3,13 @@ product: campaign
 title: 关于 Web 跟踪
 feature: Configuration, Instance Settings
 description: 关于 Web 跟踪
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+role: User, Data Engineer, Developer
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 91c31703-75e6-47a4-a877-35682dd687a9
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 

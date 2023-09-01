@@ -3,12 +3,13 @@ product: campaign
 title: 定义Web跟踪标记
 description: 定义Web跟踪标记
 feature: Application Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+role: Data Engineer, Developer
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 

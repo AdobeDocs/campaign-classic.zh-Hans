@@ -2,23 +2,24 @@
 product: campaign
 title: 面向业务的 API
 description: 面向业务的 API
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: API
+role: Data Engineer, Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 3%
+source-wordcount: '639'
+ht-degree: 4%
 
 ---
 
 # 面向业务的 API{#business-oriented-apis}
 
-业务API特定于每种类型的对象。 它们会对以下内容产生影响：
+业务API特定于每种类型的对象。 它们会影响：
 
 * 投放:
 
-   * 创建投放操作，请参阅 [SubmitDelivery (nms：delivery)](#submitdelivery--nms-delivery-)，
+   * 创建投放操作，请参阅 [提交投放(nms：delivery)](#submitdelivery--nms-delivery-)，
    * 发送营销活动（开始、暂停、停止、发送校样），
    * 恢复投放日志。
 
@@ -27,11 +28,11 @@ ht-degree: 3%
    * 启动工作流，
    * 验证进程等。
 
-      请参阅 [javascript中的SOAP方法](../../configuration/using/soap-methods-in-javascript.md).
+     请参阅 [javascript中的SOAP方法](../../configuration/using/soap-methods-in-javascript.md).
 
 * 内容管理
 * 订阅管理，请参阅 [订阅(nms：subscription)](#subscribe--nms-subscription-) 和 [取消订阅(nms：subscription)](#unsubscribe--nms-subscription-).
-* 数据过程：导入、导出。
+* 数据流程：导入、导出。
 
 本节详细说明了“Subscribe”、“Unsubscribe”和“SubmitDelivery”服务的使用。
 
@@ -48,7 +49,7 @@ ht-degree: 3%
 * 验证，
 * 订阅服务的内部名称，
 * 包含收件人信息的XML文档（来自“nms：recipient”模式），
-* 用于收件人创建的布尔值（如果尚不存在）。
+* 用于创建收件人的布尔值（如果尚无）。
 
 “nms：subscription”模式中“subscription”方法的描述：
 
@@ -84,37 +85,37 @@ ht-degree: 3%
 
 * 查询:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <m:Subscribe xmlns:m='urn:nms:subscription' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-         <sessiontoken xsi:type='xsd:string'/>
-         <service xsi:type='xsd:string'>SVC1</service>
-         <content xsi:type='' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
-           <recipient _key="@email" email= "john.doe@adobe.com/>
-         </content>
-         <create xsi:type='xsd:boolean'>true</create>
-       </m:Subscribe>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <m:Subscribe xmlns:m='urn:nms:subscription' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+        <sessiontoken xsi:type='xsd:string'/>
+        <service xsi:type='xsd:string'>SVC1</service>
+        <content xsi:type='' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
+          <recipient _key="@email" email= "john.doe@adobe.com/>
+        </content>
+        <create xsi:type='xsd:boolean'>true</create>
+      </m:Subscribe>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 * 响应:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <m:SubscribeResponse xmlns:m='urn:nms:subscription' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-       </m:SubscribeResponse>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <m:SubscribeResponse xmlns:m='urn:nms:subscription' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+      </m:SubscribeResponse>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 ## 取消订阅(nms：subscription) {#unsubscribe--nms-subscription-}
 
-此服务允许您从信息服务中取消订阅收件人并更新收件人用户档案。
+此服务允许您从信息服务中取消订阅收件人并更新收件人配置文件。
 
 调用服务需要以下参数：
 
@@ -122,7 +123,7 @@ ht-degree: 3%
 * 要取消订阅的服务的内部名称，
 * 包含收件人信息的XML文档（来自“nms：recipient”模式），
 
-“nms：subscription”模式中“Unsubscribe”方法的描述：
+“nms：subscription”模式中“Unsubscription”方法的描述：
 
 ```
 <method name="Unsubscribe" static="true">
@@ -135,11 +136,11 @@ ht-degree: 3%
 
 必须通过_key属性(位于 `<recipient>` XML文档的元素。 此属性的内容是以逗号分隔的XPath列表。
 
-如果收件人不在数据库中或未订阅有关的信息服务，该服务将不执行任何操作并且不生成错误。
+如果收件人不在数据库中，或者未订阅相关的信息服务，该服务将不执行任何操作并且不生成错误。
 
 >[!NOTE]
 >
->阻止列表如果未将服务名称指定为参数，则收件人将在(@blackList=&quot;1&quot;)时自动收到。
+>如果未将服务名称指定为参数，则收件人将在阻止列表时自动收到(@blackList=&quot;1&quot;)。
 
 此调用不会返回任何数据，错误除外。
 
@@ -173,7 +174,7 @@ ht-degree: 3%
 </SOAP-ENV:Envelope>
 ```
 
-## SubmitDelivery (nms：delivery) {#submitdelivery--nms-delivery-}
+## 提交投放(nms：delivery) {#submitdelivery--nms-delivery-}
 
 此服务允许您创建和提交投放操作。
 
@@ -185,7 +186,7 @@ ht-degree: 3%
 
 不应在卷中调用此API，因为您可能会遇到性能问题。
 
-方法在其模式中的描述：
+在其架构中方法的描述：
 
 ```
 <method name="SubmitDelivery" static="true">
@@ -198,13 +199,13 @@ ht-degree: 3%
 
 必须从Adobe Campaign客户端控制台创建投放模板。 它包含所有投放的通用参数（发件人地址或消息的有效期）。
 
-输入XML文档是符合“nms：delivery”模式结构的投放模板片段。 它将包含无法在投放模板中静态定义的所有附加数据（例如，要定位的收件人列表）。
+输入XML文档是符合“nms：delivery”模式结构的投放模板片段。 它将包含投放模板中无法静态定义的所有其他数据（例如，要定位的收件人列表）。
 
 此调用不会返回任何数据，错误除外。
 
 ### XML文档示例 {#xml-document-example}
 
-此示例基于来自外部数据源的自定义投放模板（此示例中是一个文件）。 投放模板中完整描述了配置，因此当调用发生时，仅需发送以下文件中的内容： `<externalsource>` 元素。
+此示例基于来自外部数据源（此示例中的文件）的自定义投放模板。 投放模板中完整描述了配置，因此，当调用发生时，剩下的所有待发送内容就是来自的文件内容。 `<externalsource>` 元素。
 
 ```
 <delivery>

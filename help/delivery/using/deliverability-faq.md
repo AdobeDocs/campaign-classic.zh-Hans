@@ -5,8 +5,9 @@ description: 了解在Adobe Campaign中管理可投放性时要检查的要点
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Deliverability, Troubleshooting
+role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
@@ -14,8 +15,6 @@ ht-degree: 2%
 ---
 
 # 可投放性故障排除{#deliverability-faq}
-
-
 
 您是否遇到过可投放性问题？ 您可以在此处找到解决方案。
 
@@ -56,7 +55,7 @@ ht-degree: 2%
 
 * **不同的隔离错误原因意味着什么？**
 
-  以下是10个可能的原因：未定义、用户未知、无效域、阻止列表时、被拒绝、错误被忽略、无法访问、帐户被禁用、邮箱已满、未连接。
+  以下是10个可能的原因：未定义、用户未知、域无效、阻止列表时、被拒绝、错误被忽略、无法访问、帐户被禁用、邮箱已满、未连接。
 
   有关此内容的更多信息，请参阅 [了解隔离管理](understanding-quarantine-management.md).
 

@@ -2,22 +2,21 @@
 product: campaign
 title: 关于Adobe Campaign Classic中的电子邮件渠道
 description: 本节提供特定于Adobe Campaign中电子邮件渠道的一般信息
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email
+role: User
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '148'
 ht-degree: 12%
 
 ---
 
 # 关于电子邮件渠道{#about-email-channel}
 
-
-
-Adobe Campaign可让您向目标群体批量投放个性化的电子消息。
+通过Adobe Campaign，您可以向目标群体批量投放个性化的电子消息。
 
 开始发送电子邮件之前：
 

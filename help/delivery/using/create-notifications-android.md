@@ -2,35 +2,34 @@
 product: campaign
 title: 为Android设备创建推送通知
 description: 了解如何为Android创建推送通知
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Push
+role: User, Developer, Data Engineer
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 1%
+source-wordcount: '720'
+ht-degree: 2%
 
 ---
 
 # 为Android创建通知{#create-notificaations-android}
 
+使用Adobe Campaign在Android设备上发送推送通知。 中介绍了有关投放创建的全局概念 [本节](steps-about-delivery-creation-steps.md).
 
-
-使用Adobe Campaign在Android设备上发送推送通知。 有关投放创建的全局概念，请参阅 [本节](steps-about-delivery-creation-steps.md).
-
-首先创建新投放。
+首先，创建新投放。
 
 ![](assets/nmac_delivery_1.png)
 
 使用Firebase Cloud Messaging，您可以选择两种类型的消息：
 
 * **[!UICONTROL Data message]**，由客户端应用程序处理。
-   <br>消息直接发送到移动应用程序，该应用程序将生成并向设备显示Android通知。 数据消息仅包含您的自定义应用程序变量。
+  <br>消息直接发送到移动应用程序，该应用程序将生成并向设备显示Android通知。 数据消息仅包含您的自定义应用程序变量。
 
 * **[!UICONTROL Notification message]**，由FCM SDK自动处理。
-   <br> FCM会代表客户端应用程序在用户的设备上自动显示消息。 通知消息包含预定义的一组参数和选项，但仍可以使用自定义应用程序变量进一步个性化。
+  <br> FCM会代表客户端应用程序在用户设备上自动显示消息。 通知消息包含预定义的一组参数和选项，但仍可以使用自定义应用程序变量进一步个性化。
 
-有关Firebase Cloud Messaging消息类型的更多信息，请参阅 [FCM文档](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages).
+有关Firebase Cloud Messaging消息类型的详细信息，请参阅 [FCM文档](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages).
 
 ## 创建数据消息 {#creating-data-message}
 
@@ -42,7 +41,7 @@ ht-degree: 1%
 
 1. 选择 **[!UICONTROL Deliver on Android (android)]** 在 **[!UICONTROL Delivery template]** 下拉菜单。 添加 **[!UICONTROL Label]** 到您的投放。
 
-1. 单击 **[!UICONTROL To]** 以定义要定位的群体。 默认情况下， **[!UICONTROL Subscriber application]** 已应用目标映射。 单击 **[!UICONTROL Add]** 以选择您的服务。
+1. 单击 **[!UICONTROL To]** 以定义要定位的群体。 默认情况下， **[!UICONTROL Subscriber application]** 目标映射已应用。 单击 **[!UICONTROL Add]** 以选择您的服务。
 
    ![](assets/nmac_android_7.png)
 
@@ -63,7 +62,7 @@ ht-degree: 1%
 
 1. 单击 **[!UICONTROL Save]** 并发送您的投放。
 
-当在订阅者的移动Android设备上接收时，图像和网页应显示在推送通知中。
+在订阅者的移动Android设备上接收时，推送通知中应显示图像和网页。
 
 ![](assets/nmac_android_4.png)
 
@@ -71,7 +70,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->通知消息的其他选项仅适用于HTTP v1 API配置。 有关更多信息，请参阅此](configuring-the-mobile-application-android.md#android-service-httpv1)章节[。
+>通知消息的其他选项仅在HTTP v1 API配置中可用。 有关更多信息，请参阅此](configuring-the-mobile-application-android.md#android-service-httpv1)章节[。
 
 ![](assets/do-not-localize/how-to-video.png) [了解如何在视频中创建Android推送通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources)
 
@@ -83,7 +82,7 @@ ht-degree: 1%
 
 1. 选择 **[!UICONTROL Deliver on Android (android)]** 在 **[!UICONTROL Delivery template]** 下拉菜单。 添加 **[!UICONTROL Label]** 到您的投放。
 
-1. 单击 **[!UICONTROL To]** 以定义要定位的群体。 默认情况下， **[!UICONTROL Subscriber application]** 已应用目标映射。 单击 **[!UICONTROL Add]** 以选择您的服务。
+1. 单击 **[!UICONTROL To]** 以定义要定位的群体。 默认情况下， **[!UICONTROL Subscriber application]** 目标映射已应用。 单击 **[!UICONTROL Add]** 以选择您的服务。
 
    ![](assets/nmac_android_7.png)
 
@@ -97,10 +96,10 @@ ht-degree: 1%
 
 1. 添加标题并编辑消息。 使用以下内容个性化您的推送通知 **[!UICONTROL Notification options]**：
 
-   * **[!UICONTROL Channel ID]**：设置通知的渠道ID。 在收到任何使用此渠道ID的通知之前，应用程序必须使用此渠道ID创建一个渠道。
+   * **[!UICONTROL Channel ID]**：设置通知的渠道ID。 在收到任何具有此渠道ID的通知之前，应用程序必须创建具有此渠道ID的渠道。
    * **[!UICONTROL Sound]**：设置设备收到通知时播放的声音。
    * **[!UICONTROL Color]**：设置通知的图标颜色。
-   * **[!UICONTROL Icon]**：将通知的图标设置为显示在用户档案的设备上。
+   * **[!UICONTROL Icon]**：将通知的图标设置为在用户档案的设备上显示。
    * **[!UICONTROL Tag]**：设置用于替换通知抽屉中现有通知的标识符。
    * **[!UICONTROL Click action]**：设置与用户单击您的通知关联的操作。
 
@@ -108,14 +107,14 @@ ht-degree: 1%
 
    ![](assets/nmac_android_8.png)
 
-1. 如果您的应用程序配置了HTTP v1 API协议，则可以使用以下内容进一步个性化推送通知 **[!UICONTROL HTTPV1 additional options]**：
+1. 如果您的应用程序配置了HTTP v1 API协议，则可以使用以下内容进一步将推送通知个性化 **[!UICONTROL HTTPV1 additional options]**：
 
    * **[!UICONTROL Ticker]**：设置通知的滚动条文本。 仅适用于设置为Android 5.0 Lollipop的设备。
-   * **[!UICONTROL Image]**：将图像的URL设置为显示在通知中。
+   * **[!UICONTROL Image]**：设置要在通知中显示的图像URL。
    * **[!UICONTROL Notification Count]**：设置直接显示在应用程序图标上的新未读信息数量。
-   * **[!UICONTROL Sticky]**：设置为true或false。 如果设置为false，则当用户单击通知时，该通知会自动被取消。 如果设置为true，则即使用户单击通知，也会显示通知。
-   * **[!UICONTROL Notification Priority]**：将通知的优先级设置为默认、最低、低或高。 有关更多信息，请参阅 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
-   * **[!UICONTROL Visibility]**：将通知的可见性级别设置为public、private或secret。 有关更多信息，请参阅 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
+   * **[!UICONTROL Sticky]**：设置为true或false。 如果设置为false，则当用户单击通知时，会自动取消通知。 如果设置为true，则即使用户单击通知，也会显示通知。
+   * **[!UICONTROL Notification Priority]**：将通知的优先级设置为“默认”、“最小”、“低”或“高”。 有关详细信息，请参见 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
+   * **[!UICONTROL Visibility]**：将通知的可见性级别设置为public、private或secret。 有关详细信息，请参见 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
 
    欲知详情，请参阅 **[!UICONTROL HTTP v1 additional options]** 以及如何填写这些字段，请参阅 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
 
@@ -125,4 +124,4 @@ ht-degree: 1%
 
 1. 单击 **[!UICONTROL Save]** 并发送您的投放。
 
-当在订阅者的移动Android设备上接收时，图像和网页应显示在推送通知中。
+在订阅者的移动Android设备上接收时，推送通知中应显示图像和网页。

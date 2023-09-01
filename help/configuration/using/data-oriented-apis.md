@@ -2,12 +2,13 @@
 product: campaign
 title: 面向数据的 API
 description: 面向数据的 API
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: API
+role: Data Engineer, Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1864'
 ht-degree: 1%
 
 ---
@@ -30,37 +31,37 @@ XML文档存储在数据库的MEMO类型字段中。
 
 您必须熟悉Adobe Campaign数据模型，才能在脚本中处理数据库的字段。
 
-有关数据模型的演示，请参阅 [Adobe Campaign数据模型描述](../../configuration/using/data-model-description.md).
+有关数据模型的演示，请参阅 [Adobe Campaign数据模型说明](../../configuration/using/data-model-description.md).
 
 ## 查询和编写器 {#query-and-writer}
 
-以下介绍模式详细介绍了数据库和客户(网页或Adobe Campaign客户端控制台)之间读取(ExecuteQuery)和写入(Writer)的低级交换。
+以下介绍模式详细介绍了数据库与客户(网页或Adobe Campaign客户端控制台)之间读取(ExecuteQuery)和写入(Writer)的低级交换。
 
 ![](assets/s_ncs_integration_webservices_schema_writer.png)
 
-### Executequery {#executequery}
+### 执行查询 {#executequery}
 
 对于列和条件，您可以使用查询。
 
-这使您可以隔离基础SQL。 查询语言不依赖于底层引擎：某些函数将重新映射，这可能会生成多个SELECT SQL顺序。
+这使您能够隔离基础SQL。 查询语言不依赖于底层引擎：某些函数将重新映射，这些函数可能会生成多个SELECT SQL顺序。
 
-有关更多信息，请参阅 [架构“xtk：queryDef”的“ExecuteQuery”方法示例](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+有关详细信息，请参见 [架构“xtk：queryDef”的“ExecuteQuery”方法示例](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-此 **Executequery** 方法在 [ExecuteQuery (xtk：queryDef)](#executequery--xtk-querydef-).
+此 **执行查询** 中介绍了方法 [ExecuteQuery (xtk：queryDef)](#executequery--xtk-querydef-).
 
 ### 写入 {#write}
 
-“写入”命令可让您编写简单或复杂的文档，并在基础的一个或多个表中包含条目。
+“写入”命令允许您编写简单或复杂的文档，这些文档在基础的一个或多个表中具有条目。
 
-事务型API允许您通过 **updateOrInsert** 命令：一个命令用于创建或更新数据。 您还可以配置修改合并(**merge**)：利用此操作模式，可授权进行部分更新。
+事务型API允许您通过 **updateOrInsert** 命令：一个命令用于创建或更新数据。 您还可以配置修改合并(**合并**)：利用此操作模式，可授权进行部分更新。
 
-XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结构。
+XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构。
 
-有关写入方法的介绍，请参见 [写入/写入收集(xtk：session)](#write---writecollection--xtk-session-).
+中介绍了写入方法 [写入/写入收集(xtk：session)](#write---writecollection--xtk-session-).
 
 ## ExecuteQuery (xtk：queryDef) {#executequery--xtk-querydef-}
 
-此方法允许您从与架构关联的数据执行查询。 它需要身份验证字符串（必须登录）和描述查询的XML文档，以作为参数提交。 return参数是一个XML文档，它以查询所引用的架构格式包含查询的结果。
+此方法允许您从与架构关联的数据执行查询。 它需要验证字符串（必须登录）和描述作为参数提交的查询的XML文档。 return参数是一个XML文档，它以查询所引用的架构格式包含查询的结果。
 
 “xtk：queryDef”架构中“ExecuteQuery”方法的定义：
 
@@ -110,7 +111,7 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 </queryDef>
 ```
 
-子查询( `<subquery>`  )可以在中定义  `<condition> `  元素。 的语法   `<subquery> `   元素基于    `<querydef>`.
+子查询( `<subquery>`  )可以在以下位置定义：  `<condition> `  元素。 的语法   `<subquery> `   元素基于    `<querydef>`.
 
 示例 `<subquery>  : </subquery>`
 
@@ -132,7 +133,7 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 
 所需的操作类型输入于 **操作** 属性并包含以下值之一：
 
-* **get**：从表中检索记录，如果数据不存在，则返回错误。
+* **get**：从表中检索记录，如果数据不存在，则返回错误，
 * **getIfExists**：从表中检索记录，如果数据不存在，则返回空文档，
 * **选择**：创建光标以返回多个记录，如果没有数据，则返回空文档，
 * **count**：返回数据计数。
@@ -141,7 +142,7 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 
 #### “获取”操作的示例 {#example-with-the--get--operation}
 
-检索在电子邮件上使用过滤器的收件人（“nms：recipient”模式）的姓氏和名字。
+检索在电子邮件上使用过滤器的收件人（“nms：recipient”架构）的姓氏和名字。
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -183,7 +184,7 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 </queryDef>
 ```
 
-表达式可以是简单字段或复杂表达式，例如算术运算或字符串连接。
+表达式可以是简单字段或复杂表达式，例如算术运算或字符串的连接。
 
 要限制返回的记录数，请添加 **行计数** 归因于 `<querydef>` 元素。
 
@@ -216,7 +217,7 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 
 >[!NOTE]
 >
->我们再次使用上一个示例中的条件。 此 `<select>` 和子句不使用。 `</select>`
+>我们再次使用上一个示例中的条件。 此 `<select>` 并且不使用子句。 `</select>`
 
 #### 数据分组 {#data-grouping}
 
@@ -242,7 +243,7 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 </queryDef>
 ```
 
-可以通过添加 **groupBy** 要分组的字段的属性：
+可以通过添加 **groupBy** 要分组的字段的直接属性：
 
 ```
 <select>
@@ -254,34 +255,34 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 >
 >不再需要填充 `<groupby>` 元素。
 
-#### 条件中的括号 {#bracketing-in-conditions}
+#### 在条件中括起来 {#bracketing-in-conditions}
 
-以下是两个在相同条件下使用方括号的示例。
+下面是两个在相同条件下使用方括号的示例。
 
 * 单个表达式中的简单版本：
 
-   ```
-   <where>
-     <condition expr="(@age > 15 or @age <= 45) and  (@city = 'Newton' or @city = 'Culver City') "/>
-   </where>
-   ```
+  ```
+  <where>
+    <condition expr="(@age > 15 or @age <= 45) and  (@city = 'Newton' or @city = 'Culver City') "/>
+  </where>
+  ```
 
 * 结构化版本，具有 `<condition>` 元素：
 
-   ```
-   <where>
-     <condition bool-operator="AND">
-       <condition expr="@age > 15" bool-operator="OR"/>
-       <condition expr="@age <= 45"/>
-     </condition>
-     <condition>
-       <condition expr="@city = 'Newton'" bool-operator="OR"/>
-       <condition expr="@city = 'Culver City'"/>
-     </condition>
-   </where>
-   ```
+  ```
+  <where>
+    <condition bool-operator="AND">
+      <condition expr="@age > 15" bool-operator="OR"/>
+      <condition expr="@age <= 45"/>
+    </condition>
+    <condition>
+      <condition expr="@city = 'Newton'" bool-operator="OR"/>
+      <condition expr="@city = 'Culver City'"/>
+    </condition>
+  </where>
+  ```
 
-当多个条件应用于同一字段时，可以用“IN”操作替换“OR”运算符：
+当多个条件应用于同一字段时，可以使用“IN”操作替换“OR”运算符：
 
 ```
 <where>
@@ -296,80 +297,80 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 
 #### 链接示例 {#examples-on-links}
 
-* 链接1-1或N1：当表具有外键（链接从表开始）时，可以直接筛选或检索链接表的字段。
+* 链接1-1或N1：当表具有外键（链接从表开始）时，可以直接过滤或检索链接表的字段。
 
-   文件夹标签上的过滤器示例：
+  文件夹标签上的过滤器示例：
 
-   ```
-   <where>
-     <condition expr="[folder/@label] like 'Segment%'"/>
-   </where>
-   ```
+  ```
+  <where>
+    <condition expr="[folder/@label] like 'Segment%'"/>
+  </where>
+  ```
 
-   要从“nms：recipient”模式中检索文件夹的字段，请执行以下操作：
+  要从“nms：recipient”模式中检索文件夹的字段，请执行以下操作：
 
-   ```
-   <select>
-     <!-- label of recipient folder -->
-     <node expr="[folder/@label]"/>
-     <!-- displays the string count of the folder -->
-     <node expr="partition"/>
-   </select>
-   ```
+  ```
+  <select>
+    <!-- label of recipient folder -->
+    <node expr="[folder/@label]"/>
+    <!-- displays the string count of the folder -->
+    <node expr="partition"/>
+  </select>
+  ```
 
 * 收藏集链接(1N)：必须通过 **存在** 或 **不存在** 运算符。
 
-   筛选已订阅“新闻稿”信息服务的收件人：
+  筛选已订阅“新闻稿”信息服务的收件人：
 
-   ```
-   <where>
-     <condition expr="subscription" setOperator="EXISTS">
-       <condition expr="@name = 'Newsletter'"/>
-     </condition>
-   </where>
-   ```
+  ```
+  <where>
+    <condition expr="subscription" setOperator="EXISTS">
+      <condition expr="@name = 'Newsletter'"/>
+    </condition>
+  </where>
+  ```
 
-   直接从检索集合链接的字段 `<select>` 不建议使用子句，因为查询返回基数product。 仅当链接表仅包含一个记录时才使用它(示例 `<node expr="">`)。
+  直接从检索集合链接的字段 `<select>` 不建议使用子句，因为查询返回基数乘积。 仅当链接表仅包含一个记录时才使用(示例 `<node expr="">`)。
 
-   “订阅”收藏集链接示例：
+  “订阅”收藏集链接示例：
 
-   ```
-   <select>
-     <node expr="subscription/@label"/>
-   </select>
-   ```
+  ```
+  <select>
+    <node expr="subscription/@label"/>
+  </select>
+  ```
 
-   可以在中检索包含集合链接元素的子列表 `<select>` 子句。 引用字段的XPath与收集元素中的上下文相关。
+  可以在以下位置检索包含收藏集链接元素的子列表： `<select>` 子句。 引用字段的XPath与收集元素相关。
 
-   筛选( `<orderby>`  )和限制(  `<where>`  )个元素。
+  筛选( `<orderby>`  )和限制(  `<where>`  )元素。
 
-   在本例中，对于每个收件人，查询将返回收件人订阅的电子邮件和信息服务的列表：
+  在此示例中，对于每个收件人，查询将返回收件人订阅的信息服务的电子邮件和列表：
 
-   ```
-   <queryDef schema="nms:recipient" operation="select">
-     <select>
-       <node expr="@email"/>
-   
-       <!-- collection table (unbound type) -->
-       <node expr="subscription">  
-         <node expr="[service/@label]"/>    
-         <!-- sub-condition on the collection table -->
-         <where>  
-           <condition expr="@expirationDate >= GetDate()"/>
-         </where>
-         <orderBy>
-           <node expr="@expirationDate"/> 
-         </orderBy>
-       </node>
-     </select> 
-   </queryDef>
-   ```
+  ```
+  <queryDef schema="nms:recipient" operation="select">
+    <select>
+      <node expr="@email"/>
+  
+      <!-- collection table (unbound type) -->
+      <node expr="subscription">  
+        <node expr="[service/@label]"/>    
+        <!-- sub-condition on the collection table -->
+        <where>  
+          <condition expr="@expirationDate >= GetDate()"/>
+        </where>
+        <orderBy>
+          <node expr="@expirationDate"/> 
+        </orderBy>
+      </node>
+    </select> 
+  </queryDef>
+  ```
 
 #### 绑定&#39;where&#39;和&#39;select&#39;子句的参数 {#binding-the-parameters-of-the--where--and--select--clause}
 
-参数的绑定允许引擎设置查询中使用的参数的值。 这非常有用，因为引擎负责转义值，而且对于要检索的参数来说，缓存还有额外的好处。
+参数的绑定允许引擎设置查询中使用的参数的值。 这非常有用，因为引擎负责转义值，并且对于要检索的参数还有缓存的额外好处。
 
-构建查询时，“绑定”值将替换为字符(？ 在ODBC中， `#[index]#` （在postgres...）中)。
+当构建查询时，“绑定”值将替换为字符(？ 在ODBC中， `#[index]#` （在postgres...）中)。
 
 ```
 <select>
@@ -388,7 +389,7 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 
 #### 查询生成提示： {#query-building-tip-}
 
-要帮助使用查询的语法，您可以使用Adobe Campaign客户端控制台中的通用查询编辑器来编写查询( **[!UICONTROL Tools/ Generic query editor...]** 菜单)。 操作步骤：
+要帮助处理查询的语法，您可以使用Adobe Campaign客户端控制台中的通用查询编辑器来编写查询( **[!UICONTROL Tools/ Generic query editor...]** 菜单)。 操作步骤：
 
 1. 选择要检索的数据：
 
@@ -398,21 +399,21 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 
    ![](assets/s_ncs_integration_webservices_queyr2.png)
 
-1. 执行查询并按CTRL+F4查看查询源代码。
+1. 执行查询并按CTRL+F4可查看查询源代码。
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
 ### 输出文档格式 {#output-document-format}
 
-返回参数是格式为与查询关联的架构的XML文档。
+返回参数是采用与查询关联的架构格式的XML文档。
 
-从“get”操作的“nms：recipient”模式返回的示例：
+从“nms：recipient”模式返回“get”操作的示例：
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
 ```
 
-在“选择”操作中，返回的文档是元素的明细列表：
+在“选择”操作中，返回的文档是元素的枚举：
 
 ```
 <!-- the name of the first element does not matter -->
@@ -461,55 +462,55 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 
 * 查询:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <ExecuteQuery xmlns='urn:xtk:queryDef' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-         <__sessiontoken xsi:type='xsd:string'/>
-         <entity xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
-           <queryDef operation="get" schema="nms:recipient" xtkschema="xtk:queryDef">
-             <select>
-               <node expr="@email"/>
-               <node expr="@lastName"/>
-               <node expr="@firstName"/>
-             </select>
-             <where>
-               <condition expr="@id = 3599"/>
-             </where>
-           </queryDef>
-         </entity>
-       </ExecuteQuery>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <ExecuteQuery xmlns='urn:xtk:queryDef' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+        <__sessiontoken xsi:type='xsd:string'/>
+        <entity xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
+          <queryDef operation="get" schema="nms:recipient" xtkschema="xtk:queryDef">
+            <select>
+              <node expr="@email"/>
+              <node expr="@lastName"/>
+              <node expr="@firstName"/>
+            </select>
+            <where>
+              <condition expr="@id = 3599"/>
+            </where>
+          </queryDef>
+        </entity>
+      </ExecuteQuery>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 * 响应:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <ExecuteQueryResponse xmlns='urn:xtk:queryDef' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-         <pdomOutput xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
-           <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
-         </pdomOutput>
-       </ExecuteQueryResponse>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <ExecuteQueryResponse xmlns='urn:xtk:queryDef' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+        <pdomOutput xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
+          <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
+        </pdomOutput>
+      </ExecuteQueryResponse>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 ## 写入/写入收集(xtk：session) {#write---writecollection--xtk-session-}
 
 这些服务用于插入、更新或删除实体（“写入”方法）或实体集合（“WriteCollection”方法）。
 
-要更新的实体与数据模式相关联。 输入参数是一个身份验证字符串（必须登录）和一个包含要更新的数据的XML文档。
+要更新的实体与数据模式相关联。 输入参数是身份验证字符串（必须登录）以及包含要更新的数据的XML文档。
 
-对本文档进行了补充，提供了有关配置写入过程的说明。
+本文档还附有配置写入过程的说明。
 
-调用未返回任何数据，错误除外。
+调用不会返回任何数据，错误除外。
 
-“xtk：session”模式中“Write”和“WriteCollection”方法的定义：
+“xtk：session”架构中“Write”和“WriteCollection”方法的定义：
 
 ```
 <method name="Write" static="true">
@@ -530,21 +531,21 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 
 ### 概述 {#overview}
 
-数据协调根据在关联架构中输入的键的定义运行。 写入过程根据输入文档中输入的数据查找第一个符合条件的键。 根据实体在数据库中的存在性插入或更新该实体。
+数据协调根据在关联模式中输入的键的定义运行。 写入过程根据输入文档中输入的数据查找第一个符合条件的键。 根据实体在数据库中的存在性插入或更新该实体。
 
-要更新的实体的架构的键已完成，该键基于 **xtkschema** 属性。
+要更新的实体架构的键是基于 **xtkschema** 属性。
 
-因此，可以通过强制使用合并关键项 **_key** 包含构成键的XPath列表的属性（用逗号分隔）。
+因此，可以使用强制使用合并关键项 **_key** 包含构成键的XPath列表的属性（用逗号分隔）。
 
-可以通过填充 **操作(_O)** 属性的下列值：
+可以通过填充 **操作(_O)** 属性的值：
 
 * **插入**：强制插入记录（不使用协调键），
-* **insertOrUpdate**：根据协调键（默认模式）更新或插入记录，
+* **insertOrUpdate**：根据协调键值（默认模式）更新或插入记录，
 * **更新**：更新记录；如果数据不存在，则不执行任何操作，
-* **delete**：删除记录，
-* **无**：仅用于链接协调，不会更新或插入。
+* **删除**：删除记录，
+* **无**：仅用于链接协调，无需更新或插入。
 
-### &#39;Write&#39;方法示例 {#example-with-the--write--method}
+### &#39;Write&#39;方法的示例 {#example-with-the--write--method}
 
 使用电子邮件地址、出生日期和城镇更新或插入收件人（隐式“insertOrUpdate”操作）：
 
@@ -562,11 +563,11 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 
 >[!NOTE]
 >
->对于删除操作，输入文档必须仅包含组成协调键的字段。
+>对于删除操作，输入文档必须仅包含组成协调键值的字段。
 
 ### &#39;WriteCollection&#39;方法的示例 {#example-with-the--writecollection--method}
 
-更新或插入多个收件人：
+多个收件人的更新或插入：
 
 ```
 <recipient-collection xtkschema="nms:recipient">    
@@ -594,11 +595,11 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 
 >[!NOTE]
 >
->在文件夹元素上输入的操作“none”定义了对文件夹的协调，无需更新或插入。
+>对文件夹元素输入的“none”操作定义了对文件夹的协调，无需更新或插入。
 
 #### 示例 2 {#example-2}
 
-从收件人更新公司（在“cus：company”模式中链接的表）：
+从收件人更新公司（在“cus：company”架构中链接的表）：
 
 ```
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -624,49 +625,49 @@ XML结构提供了数据的逻辑视图，并允许您绕过SQL表的物理结�
 
 ### XML收藏集元素 {#xml-collection-elements}
 
-默认情况下，必须填写所有收集要素才能更新XML收集要素。 数据库中的数据将被输入文档中的数据替换。 如果文档只包含要更新的元素，则必须在所有要更新的收集元素中填充“_operation”属性，以便强制与数据库的XML数据合并。
+默认情况下，必须填写所有收集要素才能更新XML收集要素。 来自数据库的数据将替换为来自输入文档的数据。 如果文档只包含要更新的元素，则必须在所有要更新的收集元素上填充“_operation”属性，以便强制与数据库的XML数据合并。
 
 ### SOAP消息示例 {#example-of-soap-messages-1}
 
 * 查询:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <Write xmlns='urn:xtk:persist' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-         <__sessiontoken xsi:type='xsd:string'/>
-         <domDoc xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
-           <recipient xtkschema="nms:recipient" email="rene.dupont@adobe.com" firstName="René" lastName="Dupont" _key="@email">
-         </domDoc>
-       </Write>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <Write xmlns='urn:xtk:persist' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+        <__sessiontoken xsi:type='xsd:string'/>
+        <domDoc xsi:type='ns:Element' SOAP-ENV:encodingStyle='http://xml.apache.org/xml-soap/literalxml'>
+          <recipient xtkschema="nms:recipient" email="rene.dupont@adobe.com" firstName="René" lastName="Dupont" _key="@email">
+        </domDoc>
+      </Write>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
 * 响应:
 
-   ```
-   <?xml version='1.0' encoding='ISO-8859-1'?>
-   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <WriteResponse xmlns='urn:' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
-       </WriteResponse>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0' encoding='ISO-8859-1'?>
+  <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <WriteResponse xmlns='urn:' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'>
+      </WriteResponse>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```
 
-   返回并出现错误：
+  返回错误：
 
-   ```
-   <?xml version='1.0'?>
-   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-     <SOAP-ENV:Body>
-       <SOAP-ENV:Fault>
-         <faultcode>SOAP-ENV:Server</faultcode>
-         <faultstring xsi:type="xsd:string">Error while executing the method 'Write' of service 'xtk:persist'.</faultstring>
-         <detail xsi:type="xsd:string">PostgreSQL error: ERROR:  duplicate key violates unique constraint &quot;nmsrecipient_id&quot;Impossible to save document of type 'Recipients (nms:recipient)'</detail>
-       </SOAP-ENV:Fault>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
-   ```
+  ```
+  <?xml version='1.0'?>
+  <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
+    <SOAP-ENV:Body>
+      <SOAP-ENV:Fault>
+        <faultcode>SOAP-ENV:Server</faultcode>
+        <faultstring xsi:type="xsd:string">Error while executing the method 'Write' of service 'xtk:persist'.</faultstring>
+        <detail xsi:type="xsd:string">PostgreSQL error: ERROR:  duplicate key violates unique constraint &quot;nmsrecipient_id&quot;Impossible to save document of type 'Recipients (nms:recipient)'</detail>
+      </SOAP-ENV:Fault>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  ```

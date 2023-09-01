@@ -3,10 +3,11 @@ product: campaign
 title: 配置接口
 description: 了解如何配置Campaign界面
 feature: Application Settings
+role: Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 1%
@@ -14,8 +15,6 @@ ht-degree: 1%
 ---
 
 # 配置接口{#configuring-the-interface}
-
-
 
 要在Adobe Campaign界面中查看新收件人表并与其对话，请应用以下步骤：
 

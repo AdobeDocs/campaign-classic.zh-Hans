@@ -2,13 +2,14 @@
 product: campaign
 title: 在Adobe Campaign中配置移动应用程序
 description: 了解如何开始使用移动应用程序配置
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Push
+role: User, Developer
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 10%
+source-wordcount: '313'
+ht-degree: 12%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 10%
 
 
 
-您可以在此部分找到基于销售在线假日软件包的公司进行配置的示例。 其移动应用程序(Neotrips)有两种版本可供客户使用：Neotrips for Android和Neotrips for iOS。
+您可以在此部分找到基于销售在线假日包公司的配置示例。 其移动应用程序(Neotrips)有两种版本：Neotrips适用于Android，Neotrips适用于iOS。
 
 要在Adobe Campaign中发送推送通知，您需要：
 
@@ -28,7 +29,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->转到 **[!UICONTROL Subscriptions]** 选项卡以查看服务的订阅者列表，即在其移动设备上安装了应用程序并同意接收通知的所有人员。
+>转到 **[!UICONTROL Subscriptions]** 服务的选项卡，用于查看服务的订阅者列表，即已在移动设备上安装应用程序并同意接收通知的所有人员。
 
 ## 安装包 {#installing-package-ios}
 
@@ -42,9 +43,9 @@ ht-degree: 10%
 
 >[!CAUTION]
 >
->在中详细了解Campaign内置包、最佳实践和建议 [此页面](../../installation/using/installing-campaign-standard-packages.md).
+>在中详细了解Campaign内置软件包、最佳实践和建议 [此页面](../../installation/using/installing-campaign-standard-packages.md).
 
-安装步骤包括：
+安装步骤为：
 
 1. 从访问资源包导入向导 **[!UICONTROL Tools > Advanced > Import package]** 在Adobe Campaign客户端控制台中。
 
@@ -58,7 +59,7 @@ ht-degree: 10%
 
 1. 单击 **[!UICONTROL Next]**，则 **[!UICONTROL Start]** 以开始软件包安装。
 
-   安装包后，进度条将显示 **100%** 并且您可以在安装日志中看到以下消息： **[!UICONTROL Installation of packages successful]**.
+   安装包后，进度栏会显示 **100%** 并且您可以在安装日志中看到以下消息： **[!UICONTROL Installation of packages successful]**.
 
    ![](assets/package_ios_3.png)
 

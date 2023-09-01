@@ -1,13 +1,14 @@
 ---
 product: campaign
 title: 压力规则
-description: 压力规则
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+description: 了解如何在Adobe Campaign中使用压力规则
+role: User, Data Engineer
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Fatigue Management, Typology Rules, Campaigns
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '3266'
+source-wordcount: '3274'
 ht-degree: 7%
 
 ---
@@ -356,7 +357,7 @@ ht-degree: 7%
    为了成功实施压力规则排除，请确保在联系日期和时间之前以及重新应用夜间仲裁之前设置提取日期和时间。 有关详细信息，请参见 [仲裁后排除](#exclusion-after-arbitration).
 
 1. 取消选择 **[!UICONTROL Confirm the delivery before sending]** 选项并保存更改。
-1. 对要发送的每个投放以类似方式继续。 确保为每个投放设置所需的权重。
+1. 对于要发送的每次投放，均以类似方式继续。 确保为每个投放设置所需的权重。
 1. 运行相关工作流以准备和发送投放。
 
 应用夜间仲裁时，将排除对同一收件人具有较低权重的投放。 只考虑具有最高权重的投放进行发送。 有关详细信息，请参见 [消息权重](#message-weight).

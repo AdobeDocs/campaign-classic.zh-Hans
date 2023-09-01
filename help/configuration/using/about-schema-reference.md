@@ -2,13 +2,14 @@
 product: campaign
 title: 关于Adobe Campaign Classic中的架构引用
 description: 了解如何配置扩展模式以扩展Adobe Campaign Classic数据库的概念数据模型
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Schema Extension
+role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 7%
+source-wordcount: '388'
+ht-degree: 9%
 
 ---
 
@@ -61,7 +62,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->实体的根元素与架构同名。
+>实体的根元素与架构具有相同的名称。
 
 ![](assets/s_ncs_configuration_schema_and_entity.png)
 
@@ -73,13 +74,13 @@ ht-degree: 7%
 
 命名空间允许您按感兴趣的区域对一组架构进行分组。 例如， **cus** 命名空间用于特定于客户的配置(**客户**)。
 
-架构的标识键是使用命名空间和用冒号分隔的名称构建的字符串；例如： **cus：recipient**.
+架构的标识键是使用命名空间和名称构建的字符串，名称之间用冒号分隔；例如： **cus：recipient**.
 
 >[!IMPORTANT]
 >
->命名空间名称必须简洁，并且根据XML命名规则只能包含经过授权的字符。
+>命名空间的名称必须简洁，并且根据XML命名规则只能包含授权字符。
 >
 >标识符不能以数字字符开头。
 >
->以下命名空间是为Adobe Campaign应用程序操作所需的系统实体的描述而保留的，不得使用： **xtk**， **nl**， **nms**， **ncm**， **临时**， **ncl**， **crm**， **xxl**.
+>以下命名空间是为运行Adobe Campaign应用程序所需的系统实体的描述而保留的，不得使用： **xtk**， **nl**， **nms**， **ncm**， **临时**， **ncl**， **crm**， **xxl**.
 

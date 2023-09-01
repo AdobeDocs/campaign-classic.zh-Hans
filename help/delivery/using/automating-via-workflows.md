@@ -2,26 +2,25 @@
 product: campaign
 title: 通过工作流实现自动化
 description: 了解如何通过工作流实现内容管理的自动化
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Workflows
+role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1202'
 ht-degree: 1%
 
 ---
 
 # 使用工作流实现自动化{#automating-via-workflows}
 
-
-
 ## 内容管理活动 {#content-management-activity}
 
 可以使用通过Adobe Campaign客户端界面配置的工作流，自动创建、编辑和发布内容。
 
-此 **内容管理** 活动可通过 **[!UICONTROL Tools]** 工作流图的工具栏。
+此 **内容管理** 通过访问活动 **[!UICONTROL Tools]** 工作流图的工具栏。
 
 活动属性分为四个步骤：
 
@@ -36,51 +35,51 @@ ht-degree: 1%
 
 * **由过渡指定**
 
-   要使用的内容是以前创建的。 进程将涉及由传入事件传播的内容实例。 通过事件的“contentId”变量访问内容标识符。
+  要使用的内容是以前创建的。 进程将涉及由传入事件传播的内容实例。 通过事件的“contentId”变量访问内容标识符。
 
 * **明确**
 
-   允许您选择之前创建的内容。
+  允许您选择之前创建的内容。
 
 * **由脚本计算**
 
-   基于JavaScript模板选择内容实例。 要评估的代码允许您检索内容标识符。
+  基于JavaScript模板选择内容实例。 要计算的代码允许您检索内容标识符。
 
 * **新建，通过发布模板创建**
 
-   通过发布模板创建新内容。 内容实例将保存在填充的“String”文件夹中。
+  通过发布模板创建新内容。 内容实例将保存在填充的“String”文件夹中。
 
 ### 更新内容 {#update-the-content}
 
 * **主题**
 
-   允许您在发布时修改投放操作的主题。
+  允许您在发布时修改投放操作的主题。
 
 * **从XML馈送访问数据**
 
-   内容是从外部源的XML馈送中更新的。 必须输入URL才能进行数据下载。
+  内容是从外部源的XML馈送中更新的。 必须输入URL才能进行数据下载。
 
-   XSL样式表可用于转换传入的XML数据。
+  XSL样式表可用于转换传入的XML数据。
 
 ### 要执行的操作 {#action-to-execute}
 
 * **保存**
 
-   保存创建或修改的内容。 保存内容的标识符会在传出事件的“contentId”变量中传播。
+  保存创建或修改的内容。 保存内容的标识符会在传出事件的“contentId”变量中传播。
 
 * **生成**
 
-   为具有“文件”类型发布的每个转换模板生成输出文件。 使用下列参数为每个生成的文件激活传出过渡：“contentId”变量中保存内容的标识符和“filename”变量中的文件名。
+  为具有“文件”类型发布的每个转换模板生成输出文件。 对于每个生成的文件，将使用以下参数激活传出过渡：“contentId”变量中保存内容的标识符和“filename”变量中的文件名。
 
 ### 过渡 {#transition}
 
-此 **生成输出过渡** 选项允许您将输出过渡添加到 **[!UICONTROL Content management]** 活动，用于将新活动链接到工作流执行。 选中此选项后，输入过渡的标签。
+此 **生成输出转换** 选项允许您将输出过渡添加到 **[!UICONTROL Content management]** 活动，用于将新活动链接到工作流执行。 选中此选项后，输入过渡的标签。
 
 ## 示例 {#examples}
 
 ### 自动化内容创建和交付 {#automating-content-creation-and-delivery}
 
-以下示例可自动创建和投放内容块。
+以下示例自动创建和投放内容块。
 
 ![](assets/d_ncs_content_workflow2.png)
 
@@ -90,7 +89,7 @@ ht-degree: 1%
 
 通过发布模型和内容字符串文件夹创建新内容实例。
 
-在我们的示例中，我们已重载投放主题。 它将会被列入考量，而不是在 **[!UICONTROL Delivery]** 模板。
+在我们的示例中，我们已重载投放主题。 此时将考虑它，而不是在 **[!UICONTROL Delivery]** 模板。
 
 内容由来自输入的URL的XML馈送自动填充：
 
@@ -103,7 +102,7 @@ ht-degree: 1%
 </book>
 ```
 
-数据格式与发布模板中输入的数据架构不匹配(**cus：book** 在我们的示例中)； **`<section>`** 元素必须替换为 **`<chapter>`** 元素。 我们需要应用“cus：book-workflow.xsl”样式表以进行必要的更改。
+数据格式与在发布模板中输入的数据架构不匹配(**cus：book** 在我们的示例中)； **`<section>`** 元素必须替换为 **`<chapter>`** 元素。 我们需要应用“cus：book-workflow.xsl”样式表以进行必要的更改。
 
 使用的XSLT样式表的源代码：
 
@@ -144,15 +143,15 @@ ht-degree: 1%
 
 定位是通过 **查询** 活动。
 
-An **AND — 连接** 添加了活动，以确保仅在完成目标查询和内容更新后开始投放。
+An **AND — 连接** 添加了活动，以确保仅在目标查询和内容更新完成后才开始投放。
 
-投放操作是通过 **投放** 活动：
+可通过配置投放操作 **投放** 活动：
 
 ![](assets/d_ncs_content_workflow4.png)
 
 基于模板创建新的投放操作。
 
-活动的投放模板用于选择发布模板的转换模板。 内容生成将考虑所有没有投放模板的HTML和文本模板，或者使用与活动相同的模板引用的模板。
+活动的投放模板用于选择发布模板的转换模板。 内容生成将考虑所有不含投放模板的HTML和文本模板，或者使用与活动相同的模板引用的模板。
 
 要投放的目标通过传入事件输入。
 
@@ -174,7 +173,7 @@ An **AND — 连接** 添加了活动，以确保仅在完成目标查询和内�
 >
 >此 **[!UICONTROL Publication]** “转换模板”窗口的选项卡中必须填入要生成的目标位置。
 
-添加了等待活动，以将下一个过渡暂停一周。
+添加了等待活动以暂停下一个过渡一周。
 
 ![](assets/d_ncs_content_workflow7.png)
 
@@ -186,15 +185,15 @@ An **AND — 连接** 添加了活动，以确保仅在完成目标查询和内�
 
 要发布的内容通过传入过渡输入。
 
-最后一步是通过强制发布目录来生成此内容。
+最终操作是通过强制发布目录来生成此内容。
 
-此 **JavaScript代码** activity会检索生成的每个文件的全名。
+此 **JavaScript代码** activity检索每个生成的文件的全名。
 
 ![](assets/d_ncs_content_workflow9.png)
 
 ### 创建投放及其内容 {#creating-the-delivery-and-its-content}
 
-此示例使用与第一个示例相同的概念，只是它在第一步中创建投放操作。
+此示例使用与第一个示例相同的概念，只是在第一步中创建投放操作。
 
 ![](assets/d_ncs_content_workflow10.png)
 
@@ -202,7 +201,7 @@ An **AND — 连接** 添加了活动，以确保仅在完成目标查询和内�
 
 利用分支活动，可并行启动Target计算和内容实例的创建。
 
-执行任务后，合并连接框将激活 **投放** 启动之前创建的内容和定位投放的任务。
+执行任务后，合并连接框将激活 **投放** 此任务用于启动之前创建的关于内容和定位的投放。
 
 ![](assets/d_ncs_content_workflow11.png)
 
@@ -212,7 +211,7 @@ An **AND — 连接** 添加了活动，以确保仅在完成目标查询和内�
 
 投放内容通过传入事件填充。
 
-活动的最后一步是准备和启动投放。
+活动的最终操作是准备和启动投放。
 
 ### 从FTP导入内容 {#importing-content-from-ftp}
 
@@ -224,17 +223,17 @@ An **AND — 连接** 添加了活动，以确保仅在完成目标查询和内�
 
 ## 半自动更新 {#semi-automatic-update}
 
-可在“半自动”模式下更新内容数据。 通过URL从XML馈送中恢复数据。
+可在“半自动”模式下更新内容数据。 数据是通过URL从XML馈送中恢复的。
 
 数据恢复的激活是通过输入表单手动执行的。
 
-目的是要宣布 **editBtn** type **`<input>`** 表单中的字段。 此控件包括编辑区域和用于启动处理的按钮。
+目的是要宣布一项收购 **editBtn** type **`<input>`** 字段。 此控件包括编辑区域和用于启动处理的按钮。
 
 通过编辑区域，可填充用于构造要检索的数据的XML馈送的URL的变量数据。
 
-按钮执行 **GetAndTransform** SOAP方法填充在 **`<input>`** 标记之前。
+按钮将执行 **GetAndTransform** SOAP方法填充在 **`<input>`** 标记之前。
 
-格式中的控制声明如下：
+表单中的控件声明如下：
 
 ```
 <input type="editbtn" xpath="<path>">
@@ -248,11 +247,11 @@ An **AND — 连接** 添加了活动，以确保仅在完成目标查询和内�
 </input>
 ```
 
-此 **GetAndTransform** 方法必须声明在 **`<enter>`** 元素 **`<input>`** 标记之前。 此标记将恢复来自动态构建的表达式的XML数据的URL作为参数。 函数的第二个参数是可选的，当传入的XML数据与内容的格式不同时，它会引用用于中间转换的样式表。
+此 **GetAndTransform** 方法必须声明于 **`<enter>`** 元素 **`<input>`** 标记之前。 此标记会将从动态构建的表达式中恢复XML数据的URL作为参数。 函数的第二个参数是可选的，当传入的XML数据与内容的格式不同时，它会引用用于中间转换的样式表。
 
-输出会根据在最后一个参数中输入的路径更新内容。
+输出根据在最后一个参数中输入的路径更新内容。
 
-**示例**：为了说明此示例，我们从“cus：book”模式开始。
+**示例**：为说明此示例，我们从“cus：book”架构开始。
 
 添加了半自动更新编辑控件输入表单：
 
@@ -274,4 +273,4 @@ An **AND — 连接** 添加了活动，以确保仅在完成目标查询和内�
 
 要检索的数据的格式与工作流自动化的示例1中的相同。 我们将使用在此示例中看到的“cus：book-workflow.xsl”样式表。
 
-作业执行的结果会从路径“。”更新内容实例。
+作业执行的结果将从路径“。”更新内容实例。

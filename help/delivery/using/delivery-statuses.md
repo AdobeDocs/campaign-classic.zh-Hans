@@ -1,14 +1,15 @@
 ---
 product: campaign
 title: 投放状态
-description: 详细了解投放仪表板上可用的状态
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: 了解有关投放仪表板上可用的状态的更多信息
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Monitoring, Deliverability
+role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '644'
 ht-degree: 8%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 8%
 
 ajouter screenshot -->
 
-发送投放后，投放仪表板会显示一个状态，允许您监控发送是否成功。 可能状态详见下节。
+发送投放后，投放仪表板会显示一个状态，允许您监测发送是否成功。 可能的状态详见下节。
 
 ![](assets/delivery-status.png)
 
@@ -45,7 +46,7 @@ ajouter screenshot -->
  <tbody> 
   <tr> 
    <td> 已发送<br /> </td> 
-   <td> 已将投放正确发送到消息提供商（但收件人不一定收到它）。<br /> </td> 
+   <td> 该投放已正确发送到消息提供商（但收件人不一定收到该投放）。<br /> </td> 
   </tr> 
   <tr> 
    <td> 已忽略<br /> </td> 
@@ -53,11 +54,11 @@ ajouter screenshot -->
   </tr> 
   <tr> 
    <td> 已失败<br /> </td> 
-   <td> 例如，由于地址无效或收件箱已满，投放无法到达收件人。 它还可以链接到个性化块的问题，因为它们可能会在架构与投放映射不匹配时生成错误。 参见 <a href="understanding-delivery-failures.md" target="_blank">了解投放失败</a><br /> </td> 
+   <td> 例如，由于地址无效或收件箱已满，投放无法到达收件人。 它还可能链接到个性化块的问题，因为它们可能会在架构与投放映射不匹配时生成错误。 请参阅 <a href="understanding-delivery-failures.md" target="_blank">了解投放失败</a><br /> </td> 
   </tr>
   <tr> 
    <td> 待处理<br /> </td> 
-   <td> 投放已准备好发送，将由投放服务器(MTA)处理。 参见 <a href="#pending-status" target="_blank">待处理状态</a>.<br /> </td> 
+   <td> 投放已准备好发送，将由投放服务器(MTA)处理。 请参阅 <a href="#pending-status" target="_blank">待处理状态</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> 不适用<br /> </td> 
@@ -65,11 +66,11 @@ ajouter screenshot -->
   </tr>  
   <tr> 
    <td> 投放已取消<br /> </td> 
-   <td> 操作员取消了投放。<br /> </td> 
+   <td> 操作员已取消投放。<br /> </td> 
   </tr> 
   <tr> 
    <td> 由服务提供商考虑<br /> </td> 
-   <td> SMS服务提供商已收到投放。<br /> 对于托管或混合安装，如果已升级到 <a href="sending-with-enhanced-mta.md" target="_blank">增强型MTA</a>，则消息已成功从Campaign中继到Enhanced MTA。</td> 
+   <td> SMS服务提供商已收到投放。<br /> 对于托管或混合安装，如果已升级到 <a href="sending-with-enhanced-mta.md" target="_blank">增强MTA</a>，则消息已成功从Campaign中继到增强型MTA。</td> 
   </tr> 
   <tr> 
    <td> 已在移动设备上接收<br /> </td> 
@@ -93,17 +94,17 @@ ajouter screenshot -->
 
 确认投放后，您可以看到投放状态为 **[!UICONTROL Pending]**. 此状态表示执行进程正在等待某些资源的可用性。
 
-此 **[!UICONTROL Pending]** 状态可以首先表示您的投放已计划并处于待定状态，直到给定日期。 有关详情，请参阅 [投放计划](steps-sending-the-delivery.md#scheduling-the-delivery-sending) 部分。
+此 **[!UICONTROL Pending]** 状态可以首先表示您的投放已计划并处于待定状态，直到给定日期。 有关详细信息，请参见 [投放计划](steps-sending-the-delivery.md#scheduling-the-delivery-sending) 部分。
 
-如果您的投放未发送，并且其状态保持不变 **[!UICONTROL Pending]**，这可能是以下各项的结果：
+如果您的投放未发送，并且其状态保持不变 **[!UICONTROL Pending]**，这可能是以下结果：
 
-* 在投放服务器上运行模块和进程并管理电子邮件发送的MTA（消息传输代理）可能尚未启动，或可能需要重新启动。
+* 在投放服务器上运行模块和进程并管理电子邮件发送的MTA（消息传输代理）可能尚未启动，或需要重新启动。
 
-   要选中此项，并在必要时启动模块，请应用以下步骤：
+  要选中此复选框，并在必要时启动模块，请应用以下步骤：
 
-   >[!NOTE]
-   >
-   >此操作可以使用 **内部部署** 或 **混合** 有权访问Campaign服务器的托管模型(请参阅 [托管模型](../../installation/using/hosting-models.md))。
+  >[!NOTE]
+  >
+  >此操作可以使用 **内部部署** 或 **混合** 有权访问Campaign服务器的托管模型(请参阅 [托管模型](../../installation/using/hosting-models.md))。
 
    1. 检查您的 `mta@<instance>` 模块在MTA服务器上启动。
 
@@ -123,17 +124,17 @@ ajouter screenshot -->
 
       >[!NOTE]
       >
-      >Replace `<instance-name>` 使用实例名称（生产、开发等）。 实例名称通过配置文件进行标识： `[path of application]nl6/conf/config-<instance-name>.xml`
+      >替换 `<instance-name>` 使用实例的名称（生产、开发等）。 实例名称通过配置文件进行标识： `[path of application]nl6/conf/config-<instance-name>.xml`
 
-* 投放可能使用未在发送服务器上配置的关联。
+* 投放可能使用未在发送服务器上配置的关联性。
 
-   在这种情况下，请检查流量管理（IP关联）的配置，并使用 **[!UICONTROL Managing affinities with IP addresses]** 用于将投放链接到管理关联性的MTA的字段。 欲知喜好关系的更多信息，请参见 [本节](../../installation/using/configure-delivery-settings.md).
+  在这种情况下，请检查流量管理（IP关联）的配置并使用 **[!UICONTROL Managing affinities with IP addresses]** 用于将投放链接到管理亲和度的MTA的字段。 有关关联的更多信息，请参阅 [本节](../../installation/using/configure-delivery-settings.md).
 
-* 当运行过多营销活动时，投放状态仍为“待处理”状态。
+* 当运行过多营销活动时，投放状态仍为“待定”状态。
 
-   在中定义了同时促销活动的限制 **[!UICONTROL NmsOperation_LimitConcurrency]** 选项。 默认值为 10。
+  在中定义了同时营销活动的限制 **[!UICONTROL NmsOperation_LimitConcurrency]** 选项。 默认值为 10。
 
-   了解中选项的更多信息 [此页面](../../installation/using/configuring-campaign-options.md).
+  了解更多有关选项的信息，请参阅 [此页面](../../installation/using/configuring-campaign-options.md).
 
 
 **相关主题：**

@@ -2,13 +2,14 @@
 product: campaign
 title: 关于 Web 服务
 description: 关于 Web 服务
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: API
+role: Data Engineer, Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 3%
+source-wordcount: '662'
+ht-degree: 5%
 
 ---
 
@@ -22,8 +23,8 @@ Adobe Campaign API在应用程序内的JavaScript中以及应用程序外的SOAP
 
 >[!IMPORTANT]
 >
->授权引擎每天的呼叫次数因您的许可合同而异。 有关详细信息，请参见[此页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
->所有API的列表，包括其完整描述，请参见 [此专用文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
+>每天授权引擎呼叫数因您的许可合同而异。 有关详细信息，请参见[此页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
+>所有API的列表，包括其完整说明，请参见 [此专用文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
 
 ## 先决条件 {#prerequisites}
 
@@ -40,19 +41,19 @@ Adobe Campaign使用两种类型的API：
 * 用于查询数据模型数据的通用数据访问API。 请参阅 [面向数据的API](../../configuration/using/data-oriented-apis.md).
 * 允许您对每个对象执行操作的特定于业务的API：投放、工作流、订阅等。 请参阅 [面向业务的API](../../configuration/using/business-oriented-apis.md).
 
-为了开发API并与Adobe Campaign交互，您需要熟悉数据模型。 Adobe Campaign允许您生成对基础的完整描述。 请参阅 [模型的描述](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+为了开发API并与Adobe Campaign交互，您需要熟悉您的数据模型。 Adobe Campaign允许您生成对基础的完整描述。 请参阅 [模型的描述](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
-## SOAP调用 {#soap-calls}
+## SOAP 调用 {#soap-calls}
 
-SOAP协议允许您通过富客户端、使用Web服务的第三方应用程序或本地使用这些方法的JSP调用API方法。
+SOAP协议允许您通过富客户端、使用Web服务的第三方应用程序或本地使用这些方法的JSP来调用API方法。
 
 ![](assets/s_ncs_configuration_architecture.png)
 
-SOAP消息的结构如下：
+SOAP消息的结构如下所示：
 
-* 一个信封，它定义了邮件的结构，
-* 可选标头，
-* 一个包含呼叫和响应信息的正文，
+* 定义消息结构的信封，
+* 可选标题，
+* 包含呼叫和响应信息的正文，
 * 定义错误条件的错误管理。
 
 ## 资源和交流 {#resources-and-exchanges}
@@ -69,7 +70,7 @@ SOAP消息的结构如下：
 
 >[!NOTE]
 >
->此服务的WSDL说明在以下示例中完成： [Web服务描述：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
+>此服务的WSDL描述在以下示例中完成： [Web服务描述：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 ### SOAP查询 {#soap-query}
 
@@ -89,13 +90,13 @@ SOAP消息的结构如下：
 </SOAP-ENV:Envelope>
 ```
 
-此 `<soap-env:envelope>` element是表示SOAP信封的消息中的第一个元素。
+此 `<soap-env:envelope>` 元素是表示SOAP信封的消息中的第一个元素。
 
-此 `<soap-env:body>` element是信封的第一个子元素。 它包含消息的描述，即查询或响应的内容。
+此 `<soap-env:body>` 元素是信封的第一个子元素。 它包含消息的描述，即查询或响应的内容。
 
-要调用的方法输入在 `<executequery>` 元素来标识SOAP消息正文。
+要调用的方法在 `<executequery>` 元素。
 
-在SOAP中，参数按外观顺序进行识别。 第一个参数， `<__sessiontoken>`，采用身份验证链，第二个参数是来自的查询的XML描述 `<querydef>` 元素。
+在SOAP中，参数按外观顺序进行识别。 第一个参数， `<__sessiontoken>`，采用身份验证链，第二个参数是来自的XML查询描述 `<querydef>` 元素。
 
 ### SOAP响应 {#soap-response}
 
@@ -112,7 +113,7 @@ SOAP消息的结构如下：
 </SOAP-ENV:Envelope>
 ```
 
-查询结果输入自 `<pdomoutput>` 元素。
+查询的结果输入自 `<pdomoutput>` 元素。
 
 ## 错误管理 {#error-management}
 
@@ -132,23 +133,23 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-此 `<soap-env:fault>` SOAP消息正文中的元素用于传递在处理Web服务期间产生的错误信号。 它由以下子元素组成：
+此 `<soap-env:fault>` SOAP消息正文中的元素用于传递在web服务处理期间产生的错误信号。 它由以下子元素组成：
 
 * `<faultcode>` ：指示错误类型。 错误类型包括：
 
-   * 如果与使用的SOAP版本不兼容，
-   * “MustUnderstand”表示如果消息标头出现问题，
-   * “客户端”在客户端缺少某些信息时，
-   * “Server”（在服务器执行处理时出现问题的情况下）。
+   * 如果与所使用的SOAP版本不兼容，
+   * “MustUnderstand”表示如果邮件标头出现问题，
+   * “客户端”在客户端丢失某些信息时，
+   * “服务器”（如果服务器在执行处理时遇到问题）。
 
 * `<faultstring>` ：描述错误的消息
 * `<detail>` ：长错误消息
 
-服务调用的成功或失败在以下情况下标识： `<faultcode>` 元素已验证。
+服务调用的成功或失败在 `<faultcode>` 元素已验证。
 
 >[!IMPORTANT]
 >
->所有Adobe Campaign Web服务都会处理错误。 因此，强烈建议测试每个调用，以处理返回的错误。
+>所有Adobe Campaign Web服务都会处理错误。 因此，强烈建议测试每个调用以处理返回的错误。
 
 C#中的错误处理示例：
 

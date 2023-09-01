@@ -2,10 +2,11 @@
 product: campaign
 title: 开始使用Campaign Classic数据模型
 description: 了解如何扩展 Campaign 数据模型、编辑模式、使用 API 等
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Data Model, Configuration
+role: Data Engineer, Developer
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 6%
@@ -36,7 +37,7 @@ Adobe Campaign依赖于包含链接在一起的表的关系数据库。 Adobe Ca
 
 投放日志是跨所有渠道发送给收件人或设备的所有消息。 主投放日志表(**NmsBroadLog**)包含所有收件人的投放日志。
 主跟踪日志表(**NmsTrackingLog**)存储所有收件人的跟踪日志。 跟踪日志是指收件人的反应，例如电子邮件打开次数和点击次数。 每个反应对应于一个跟踪日志。
-投放日志和跟踪日志会在特定时段后删除，该特定时段在Adobe Campaign中指定并且可以修改。 因此，强烈建议定期导出日志。
+投放日志和跟踪日志会在特定时段后删除，该特定时段在Adobe Campaign中指定并可进行修改。 因此，强烈建议定期导出日志。
 
 ### 技术表 {#technical-tables}
 

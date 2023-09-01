@@ -1,37 +1,36 @@
 ---
 product: campaign
 title: 移动应用程序渠道入门
-description: Adobe Campaign中的移动应用程序渠道入门
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: 开始使用Adobe Campaign中的移动应用程序渠道
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Push
+role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '677'
 ht-degree: 2%
 
 ---
 
 # 移动应用程序渠道入门{#about-mobile-app-channel}
 
-
-
-此 **移动应用程序渠道** 可让您使用Adobe Campaign平台通过应用程序向iOS和Android终端发送个性化的推送通知。
+此 **移动应用程序渠道** 允许您使用Adobe Campaign平台通过应用程序向iOS和Android终端发送个性化的推送通知。
 
 >[!CAUTION]
 >
->本文档详细介绍了将移动应用程序与Adobe Campaign平台集成的过程。 它不提供有关如何创建移动应用程序以及如何配置移动应用程序以管理通知的信息。 如果您想了解有关此内容的更多信息，请参阅官方的Apple [文档](https://developer.apple.com/) 和Android [文档](https://developer.android.com/index.html).
+>本文档详细介绍将移动应用程序与Adobe Campaign平台集成的过程。 它不提供有关如何创建移动应用程序以及如何配置移动应用程序以管理通知的信息。 如果您想了解有关此内容的更多信息，请参阅官方的Apple [文档](https://developer.apple.com/) 和Android [文档](https://developer.android.com/index.html).
 
 提供了两个投放渠道：
 
-* 一个iOS频道，用于向Apple移动设备发送通知。
+* 一种iOS渠道，可让您将通知发送到Apple移动设备。
 
-   ![](assets/nmac_intro_2.png)
+  ![](assets/nmac_intro_2.png)
 
-* 允许向Android移动设备发送数据消息的Android渠道。
+* 一种Android渠道，可让您将数据消息发送到Android移动设备。
 
-   ![](assets/nmac_intro_1.png)
+  ![](assets/nmac_intro_1.png)
 
 与这两个渠道相对应，活动工作流中有两个投放活动：
 
@@ -44,16 +43,15 @@ ht-degree: 2%
 
 您可以定义当用户激活通知以显示与应用程序上下文匹配的屏幕时的应用程序行为。 例如：
 
-* 系统会向客户发送通知，告知他们包裹已离开仓库。 激活通知将打开一个页面，其中包含与投放相关的信息。
-* 用户已将商品添加到购物车，但未完成购买就离开了应用程序。 将发送通知，告知他们购物车已被放弃。 当他们激活通知时，屏幕上会显示该项目。
+* 系统会向客户发送通知，告知他们包裹已离开仓库。 激活通知将打开一个页面，其中显示与投放相关的信息。
+* 用户已将商品添加到购物车，但未完成购买就离开了应用程序。 将发送通知，告知他们购物车已被放弃。 当他们激活通知时，屏幕上将显示该项目。
 
 >[!CAUTION]
 >
 >* 您需要确保发送到移动应用程序的通知符合Apple (Apple推送通知服务)和Google (Firebase Cloud Messaging)指定的先决条件和条件。
->* 警告：在某些国家，法律要求您向用户告知收集的数据类型移动应用程序及其处理目的。 你必须检查法律。
+>* 警告：在某些国家/地区，法律要求您向用户告知收集的数据类型移动应用程序及其处理目的。 你必须检查法律。
 
-
-此 **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)工作流会更新移动设备上的取消订阅通知。 有关此工作流的详细信息，请参阅 [技术工作流列表](../../workflow/using/about-technical-workflows.md).
+此 **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)工作流可更新移动设备上的取消订阅通知。 有关此工作流的详细信息，请参阅 [技术工作流列表](../../workflow/using/about-technical-workflows.md).
 
 Adobe Campaign与HTTP/2 APN兼容。 有关配置步骤的更多详细信息，请参阅 [本节](configuring-the-mobile-application.md) 部分。
 
@@ -71,13 +69,13 @@ Adobe Campaign与HTTP/2 APN兼容。 有关配置步骤的更多详细信息，�
 
 ### 步骤1：订阅收集 {#step-1--subscription-collection}
 
-用户从App Store或Google Play下载移动应用程序。 此应用程序包含连接设置(Android的iOS证书和项目密钥)和集成密钥。 首次打开应用程序时（取决于配置），可能会要求用户输入注册信息(例@userKey：电子邮件或帐号)。 同时，应用程序询问通知服务是否收集通知ID（推送ID）。 所有这些信息（连接设置、集成密钥、通知标识符、用户密钥）都会发送到Adobe Campaign。
+用户从App Store或Google Play下载移动应用程序。 此应用程序包含连接设置(Android的iOS证书和项目密钥)和集成密钥。 首次打开应用程序时（取决于配置），可能会要求用户输入注册信息(例@userKey：电子邮件或帐号)。 同时，应用程序询问通知服务是否收集通知ID（推送ID）。 所有这些信息（连接设置、集成密钥、通知标识符、userKey）都会发送到Adobe Campaign。
 
 ![](assets/nmac_register_view.png)
 
-### 步骤2：投放 {#step-2--delivery}
+### 步骤2：交付 {#step-2--delivery}
 
-营销人员定位应用程序订阅者。 投放过程会将连接设置发送到通知服务(适用于Android的iOS证书和项目密钥)、通知ID（推送ID）和通知内容。 通知服务向目标终端发送通知。
+营销人员定位应用程序订阅者。 投放过程将连接设置发送到通知服务(适用于Android的iOS证书和项目密钥)、通知ID（推送ID）和通知内容。 通知服务发送通知到目标终端。
 
 Adobe Campaign中提供了以下信息：
 
@@ -92,15 +90,15 @@ Adobe Campaign服务器必须能够与iOS HTTP/2连接器的443端口上的APNs�
 
 * 对于测试：
 
-   ```
-   api.development.push.apple.com:443
-   ```
+  ```
+  api.development.push.apple.com:443
+  ```
 
 * 生产中:
 
-   ```
-   api.push.apple.com:443
-   ```
+  ```
+  api.push.apple.com:443
+  ```
 
 使用iOS HTTP/2连接器时，MTA和Web服务器必须能够联系端口443上的APN。
 

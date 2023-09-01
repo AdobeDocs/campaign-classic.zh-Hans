@@ -2,30 +2,29 @@
 product: campaign
 title: AB测试用例
 description: 了解如何通过专用用例执行A/B测试
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: A/B Testing
+role: User
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 4%
+source-wordcount: '260'
+ht-degree: 5%
 
 ---
 
-# A/B测试此用例 {#ab-testing-use-case}
+# AB测试：A/B测试此用例 {#ab-testing-use-case}
 
-
-
-在此使用案例中，我们将通过定位工作流比较两个电子邮件投放内容。 消息和文本在两种投放中完全相同：只有布局会更改。
+在此使用案例中，我们将通过定位工作流比较两个电子邮件投放内容。 消息和文本在两种投放中都相同：只有布局发生变化。
 
 目标群体分为三类：两个测试群体和其余群体。 向每个测试组发送投放的不同版本。
 
-投放后，在收集最佳打开率的结果之前，会配置5天的等待期。 随后，脚本将恢复得分最高的投放内容，并将其发送给未用作测试组的群体。
+投放后，在收集最佳打开率结果之前会配置5天的等待期。 得分最高的投放内容随后由脚本恢复，并发送给未用作测试组的群体。
 
-请注意，决定哪个投放是最佳投放的标准可以根据您的需求进行更改。 它可以是打开率、点进率、订阅率、反应性等。
+请注意，可以更改用于确定哪个投放是最佳投放的标准，以满足您的需求。 它可以是打开率、点进率、订阅率、反应性等。
 
-此外，此用例中详述的测试仅与两个投放相关，但您可以测试所需数量的版本。 只需将活动添加到工作流中。
+此外，此用例中详述的测试仅与两个投放相关，但您可以测试所需数量的版本。 只需将活动添加到工作流即可。
 
 执行此用例的主要步骤包括：
 
