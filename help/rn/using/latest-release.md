@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '1869'
+ht-degree: 57%
 
 ---
 
@@ -18,9 +18,77 @@ ht-degree: 100%
 
 此页面列出了 **Campaign v7 最新版本**&#x200B;中的新增功能、改进和修复。每个新的内部版本都带有一个以颜色突出显示的状态。在[此页面](rn-overview.md)中了解有关 Campaign Classic v7 内部版本状态的更多信息。
 
-## 7.3.3 版 - 内部版本 9359 {#release-7-3-3}
+## 7.3.4 版 - 内部版本 9364 {#release-7-3-4}
 
 [!BADGE 正式发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
+
+>[!CAUTION]
+>
+>必须升级客户端控制台。在[此页面](../../installation/using/installing-the-client-console.md)中了解如何升级您的客户端控制台。
+>
+> 如果您使用 [Campaign - Microsoft Dynamics CRM连接器](../../platform/using/crm-connectors.md)，您必须使用此新内部版本升级营销和中间源服务器。
+
+_2023 年 9 月 7 日_
+
+**安全性增强**
+
+* IMS API中的安全性已得到改进。 已从URL参数中删除客户端敏感信息（即访问令牌）。 这些凭据现在以post数据或授权标头发送，确保通信过程更加安全。 (NEO-63045)
+* 提高了Web应用程序的安全性，以防止DDOS攻击。 (NEO-50757)
+* 增强了安全性，以防止在网络日志错误中公开PII数据。 (NEO-46827)
+* 安全性已经过优化，以防止安全令牌包含在Campaign主页URL中。 (NEO-38519)
+
+**兼容性更新**
+
+* 已将Tomcat更新到版本8.5.91
+* libexpat库已更新至2.5.0以提高安全性。 (NEO-51023)
+
+**改进**
+
+* 服务器配置文件(serverConf.xml)中的MaxWorkingSetMb参数已修改，以优化投放的内存分配。 (NEO-49204)
+* BigQuery外部帐户已通过用于设置GCloud SDK的新选项得到增强。 (NEO-63879) [阅读更多](../../installation/using/configure-fda-google-big-query.md#google-external)
+* 新 `cusHeader` 部分已添加到服务器配置文件(serverConf.xml)中。 它允许您在从外部服务器上传文件时添加自定义标头。 (NEO-58339) [阅读更多](../../installation/using/the-server-configuration-file.md#cusheaders).
+* 跟踪日志管理已得到改进，以避免lastMsgId出现负ID。 它已从int32更改为int64。 (NEO-52290)
+* 现成添加了中间源（投放统计数据）工作流。 此新工作流可将投放统计数据(nms：deliveryStat)从中间同步到营销实例。 (NEO-36802)
+
+**修补程序**
+
+* 修复了在服务请求调用身份验证使用服务令牌时，在IMS登录之前发出服务请求时可能发生的问题。 (NEO-64903)
+* 修复了在使用数字内容编辑器时可能导致滚动问题的回归问题。 (NEO-64671、NEO-59256)
+* 修复了将内容从Excel粘贴到数字内容编辑器时的回归问题。 (NEO-63287)
+* 修复了可能会导致Web应用程序在v5兼容模式下无法正确显示的问题。 (NEO-63174)
+* 修复了阻止非管理员操作员发送WebAnalytics投放的问题。 (NEO-62750)
+* 修复了在投放中使用条件内容时阻止浏览器添加额外空格的问题。 (NEO-62132)
+* 修复了使用与多个日志架构关联的目标架构时，导致活动联系人计算无法在计费工作流中正确工作的回归问题。 (NEO-61468)
+* 修复了在编辑投放内容时可能导致错误并阻止滚动的问题。 (NEO-61364)
+* 修复了在电子邮件内容编辑器中单击图像时导致弹出窗口打开的问题。 (NEO-60752)
+* 修复了可能导致投放的HTML内容中的特殊字符在多个浏览器中被错误编码的问题。 (NEO-60081)
+* 修复了在使用inSMS工作流活动时可能发生的同步问题。 (NEO-59544)
+* 修复了使用具有时间戳或日期时间字段的Big Query连接器时的问题。 (NEO-59502、NEO-49768)
+* 修复了阻止使用累积投放报告的问题。 (NEO-59211)
+* 修复了在与People核心服务共享受众时可能导致错误的问题。 (NEO-58637)
+* 修复了显示投放的镜像页面时的问题。 (NEO-58325)
+* 修复了XtkLibrary.Right() xtk表达式无法工作的问题。 (NEO-57870)
+* 修复了在数字内容编辑器中上传图像时导致body标记的样式属性更改的问题。 (NEO-57697)
+* 修复了使用CRM连接器活动执行批量导出时的特殊字符问题。 (NEO-54300)
+* 修复了在使用数据加载活动和Big Query连接器时，阻止批量加载处理“string”数据类型的问题。 (NEO-53748)
+* 修复了可能导致优惠呈现问题的缓存键问题。 (NEO-51516、NEO-49995)
+* 修复了在使用具有审批的targetMapping发送直邮投放时可能导致验证错误的问题。 (NEO-50758)
+* 修复了可能影响投放性能的查询管理问题。 (NEO-49991)
+* 修复了在营销活动工作流投放活动中使用外部帐户时，可能导致外部帐户配置问题的问题。 (NEO-49959)
+* 修复了发送推送通知时的性能问题。 (NEO-49953)修复了在导出报告时可能导致日语字符错误显示的问题(NEO-49308)。
+* 修复了导致Tomcat错误报告显示过多错误详细信息的问题。 (NEO-49029)
+* 修复了在使用大量选件时可能导致投放错误的问题。 (NEO-48807)
+* 修复了可能导致 **更新数据** 工作流活动无法正常工作。 (NEO-48140)
+* 修复了可能导致无法使用电子邮件以外的外部帐户为投放同步点击跟踪数据的问题。(NEO-47277)
+* 修复了可能导致实时跟踪日志无法在消息中心营销实例上同步的问题。 (NEO-42540)
+* 修复了导致在Snowflake数据库表的方案的发现窗口中无法显示工作区前缀的问题。 (NEO-40297)
+* 修复了导致无法正常工作的问题 `<img-amp>` 标记处理电子邮件内容。 (NEO-38685)
+* 修复了在使用HTTP中继时可能导致消息中心存档工作流失败的问题。 (NEO-33783)
+* 修复了可能导致电子邮件内容编辑器中的字体名称和大小错误的问题。 (NEO-61342)
+
+## 7.3.3 版 - 内部版本 9359 {#release-7-3-3}
+
+[!BADGE 有限发布版]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
 
 >[!CAUTION]
 >
