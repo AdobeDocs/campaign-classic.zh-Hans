@@ -3,14 +3,14 @@ product: campaign
 title: 内部版本升级常见问题解答
 description: 与Campaign内部版本升级相关的常见问题
 feature: Upgrade, Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '1998'
 ht-degree: 3%
 
 ---
@@ -57,7 +57,7 @@ Adobe Campaign 会定期更新。如果您熟悉我们发布的 [发行说明](.
 
 * 内部版本升级涉及从内部版本9342移动到任何大于9342的内部版本。 例如，v7.1内部版本9342到v7.1内部版本9342
 
-* 版本升级涉及从版本6移动到任何更新的版本。  例如：v6.1.1内部版本8666到v7.1内部版本9342。
+* 版本升级涉及从以前的主要版本移动到任何更新的版本。
 
 ## 我是否应在进行这些更新之前备份数据？
 

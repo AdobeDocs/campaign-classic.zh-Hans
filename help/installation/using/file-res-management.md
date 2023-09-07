@@ -3,16 +3,16 @@ product: campaign
 title: 文件和资源管理
 feature: Installation, Application Settings
 description: 了解如何在Campaign中配置文件和资源管理
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 2%
+source-wordcount: '664'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 此属性的默认值为 **.+** 并允许您上传任何文件类型。
 
-要限制可能的格式，请用有效的Java正则表达式替换属性值。 您可以输入多个值，方法是以逗号分隔。
+要限制可能的格式，请使用有效的Java正则表达式替换属性值。 您可以输入多个值，方法是以逗号分隔。
 
 例如： **uploadWhiteList=”。&#42;.png，.&#42;.jpg”** 允许您在服务器上上传PNG和JPG格式。 将不接受任何其他格式。
 
@@ -104,7 +104,7 @@ FTP/FTPS连接在proxyFTP参数中定义：
 
 如果对多种连接类型使用相同的代理，则仅在useSingleProxy设置为“1”或“true”的情况下定义proxyHTTP。
 
-如果有应通过代理的内部连接，请将其添加到覆盖参数中。
+如果您有不应通过代理的内部连接，请将它们添加到覆盖参数中。
 
 如果要临时禁用代理连接，请将enabled参数设置为“false”或“0”。
 

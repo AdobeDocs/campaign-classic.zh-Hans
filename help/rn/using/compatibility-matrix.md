@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
-source-wordcount: '809'
-ht-degree: 100%
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+workflow-type: tm+mt
+source-wordcount: '784'
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,6 @@ ht-degree: 100%
 <td>
 <p>7.x</p>
 <p><strong>重要说明：</strong>如果您使用的是 RHEL，则必须愿意禁用 SELinux，或者让架构师编写自定义 SELinux 规则来检查已启用的 SELinux 是否不会导致 Campaign 操作问题。</p>
-<p>8.x </br><strong>重要说明：</strong>CentOS Linux 8 将于 2021 年 12 月 31 日终止生命周期 (EOL)。有关更多信息，请参阅<a href="../../rn/using/deprecated-features.md">已弃用的功能</a>页面。</p>
 </td>
 </tr>
 <tr>
@@ -51,7 +50,6 @@ ht-degree: 100%
 <td>
 <p>11（从 Campaign v7.3 开始）</p>
 <p>10</p>
-<p>9</p>
 </td>
 </tr>
 <tr>
@@ -143,7 +141,6 @@ ht-degree: 100%
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
-<p>10.x</p>
 <p><strong>注意：</strong>您还可以将 Amazon RDS for PostgreSQL 与以上指定的版本配合使用。</p>
 </td>
 </tr>
@@ -217,7 +214,6 @@ ht-degree: 100%
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
-<p>10.x</p>
 </td>
 <td>最低版本为 7.0 19.1.4</td>
 </tr>
@@ -306,11 +302,8 @@ ht-degree: 100%
 <tr>
 <td>Teradata</td>
 <td>
-<p>17</p>
-<p>16.20</p>
-<p>16</p>
-<p>15.10</p>
-<p>15.0</p>
+<p>17.x</p>
+<p>16.x（最新版本）</p>
 </td>
 <td>最低版本为 7.0</td>
 </tr>

@@ -3,14 +3,14 @@ product: campaign
 title: 配置Campaign选项
 description: 了解如何配置Campaign选项
 feature: Installation, Application Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '4012'
+source-wordcount: '4004'
 ht-degree: 6%
 
 ---
@@ -696,7 +696,7 @@ ht-degree: 6%
     <ul> 
      <li> <p> <span class="uicontrol">数据类型：</span> 整数</p> </li> 
      <li> <p> <span class="uicontrol">值（文本）</span> ：1 </p> </li> 
-    </ul> 仅当现成的导航树发生了太多更改时，才应使用此选项。<br /> 有关详细信息，请参见 <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11">本节</a>.<br /> </td> 
+    </ul> 仅当现成的导航树发生了太多更改时，才应使用此选项。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 

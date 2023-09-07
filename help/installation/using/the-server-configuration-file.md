@@ -3,15 +3,15 @@ product: campaign
 title: 服务器配置文件
 description: 服务器配置文件
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '7962'
-ht-degree: 39%
+source-wordcount: '8056'
+ht-degree: 38%
 
 ---
 
@@ -43,6 +43,7 @@ Adobe Campaign的整体配置在中定义 **serverConf.xml** 文件，位于 **�
 * [proxyConfig](#proxyconfig)
 * [线程池](#threadpool)
 * [urlPermission](#urlpermission)
+* [cusHeaders](#cusheaders)
 * [xtkJobs](#xtkjobs)
 
 **其他参数**
@@ -998,6 +999,29 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
  </tbody> 
 </table>
 
+## cusHeaders {#cusheaders}
+
+利用此节点，可在从外部服务器上传文件时执行的请求中添加特定标头。 内容分发网络(CND)可以请求特定的标头以信任请求者。 这些标头可用于提高对Campaign请求的可信度，尤其是在投放执行步骤中下载每个收件人的个性化文档时。 大量资源下载请求可被解释为DDos攻击。 dnsPattern允许您根据不同CDN的域名为其设置特定的标头名称和值。
+
+```
+  <!-- List of custom headers added to request. 
+         -->
+    <cusHeaders>
+
+    <!-- Pattern of DNS name or domain 
+         value :  dnsPattern: All or part of the URL's domain to verify, * is a wild card Default:  -->
+      <dnsPattern value="">
+
+    <!-- Header Name and Value 
+           headerName :  Header Name 
+           headerValue :  Header Value -->
+        <headerDef headerName="" headerValue=""/>
+
+      </dnsPattern>
+
+    </cusHeaders> 
+```
+
 ### url {#url}
 
 为每个URL添加 **url** 节点包含以下参数：
@@ -1720,9 +1744,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  </tbody> 
 </table>
 
-### 主控 {#master}
+### 母版 {#master}
 
-在 **mta >主控** 节点，配置以下参数。 这是主服务器的配置。
+在 **mta >母版** 节点，配置以下参数。 这是主服务器的配置。
 
 有关其他信息，请参阅此 [部分](../../installation/using/configuring-campaign-server.md#mta-child-processes).
 

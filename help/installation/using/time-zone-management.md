@@ -3,16 +3,16 @@ product: campaign
 title: 时区管理
 description: 时区管理
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 2%
+source-wordcount: '978'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Campaign允许您根据时区来表示日期：这使得国际用户可以
 
 Adobe Campaign允许您以UTC（协调世界时）格式存储日期/时间。 数据公开后，将转换为运算符的本地日期/时间。 当数据库配置为UTC时会自动执行转换(请参阅 [配置](#configuration))。 如果未使用UTC配置数据库，则平台中日期的时区信息将存储在选项中。
 
-与时区管理相关的主要平台功能有：导入/导出数据、操作员以及工作流管理。 此 **继承概念** 可用于导入/导出或工作流。 默认情况下，它们是针对数据库服务器时区配置的，但您可以为工作流甚至单个活动重新定义新时区。
+与时区管理相关的主要平台功能包括：导入/导出数据、操作员以及工作流管理。 此 **继承概念** 可用于导入/导出或工作流。 默认情况下，它们是针对数据库服务器时区配置的，但您可以为工作流甚至单个活动重新定义新时区。
 
 **运算符** 可以在以下期间修改时区： **投放配置** 并且可以指定执行投放的特定时区。
 
@@ -99,6 +99,10 @@ Adobe Campaign允许您以UTC（协调世界时）格式存储日期/时间。 �
 
 * 欧洲/巴黎，
 * 欧洲/伦敦,
-* 美国/纽约等
+* 美洲/纽约等
 
   这些值取自tz (Olson)数据库。 有关更多信息，请参阅 [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+
+## oracle数据库和服务器时区
+
+对于主数据库，Campaign使用服务器时区设置数据库连接上的会话时区。 “WdbcTimeZone”选项没有影响。 因此，服务器时区应与Campaign使用的主数据库的时区匹配。 如果无法更改服务器时区，则可以通过在customer.sh中设置TZ环境变量来覆盖Campaign使用的时区。
