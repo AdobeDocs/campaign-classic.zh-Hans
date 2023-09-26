@@ -2,13 +2,13 @@
 product: campaign
 title: 循环投放
 description: 了解有关定期投放工作流活动的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 05210269da2a32310c19911a3bc32240c84dc7ad
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 17%
+source-wordcount: '277'
+ht-degree: 19%
 
 ---
 
@@ -34,9 +34,9 @@ A **[!UICONTROL Recurring delivery]** 利用活动，可配置特定于营销活
 
 有关正在使用的此活动的示例，请参阅此 [部分](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
-## 如何设置循环投放
+## 如何设置循环投放 {#set-up-recurring-delivery}
 
-A **循环投放** 每次执行时都会创建一个新的投放实例。 例如，如果工作流计划每周运行一次，那么一年后将产生 52 次投放。这也意味着广泛的日志和跟踪日志将由每个投放实例分隔。
+A **循环投放** 每次执行时都会创建一个新的投放实例。 例如，如果工作流计划每周运行一次，那么一年后将产生 52 次投放。这也意味着广义日志和跟踪日志将按每个投放实例进行分隔。
 
 ![循环投放](assets/delivery_recurring.jpg)
 
@@ -46,9 +46,9 @@ A **循环投放** 每次执行时都会创建一个新的投放实例。 例如
 >
 >无法发送来自 **[!UICONTROL Recurring delivery]** 键入activity。
 > 
->要通过活动工作流直接创建投放，请使用预配置的渠道特定活动(例如， **[!UICONTROL Email delivery]**)。
+>要通过活动工作流直接创建投放，请使用预配置的渠道特定活动(例如， **[!UICONTROL Recurring delivery]**)。
 
-## 教程视频(#recurring-delivery-video)
+## 教程视频 {#recurring-delivery-video}
 
 此视频介绍如何配置循环投放和调度程序活动。
 
