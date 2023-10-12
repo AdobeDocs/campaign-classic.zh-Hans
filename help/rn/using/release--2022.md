@@ -5,8 +5,9 @@ description: 详细了解 Campaign Classic 2022 版
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+exl-id: 28490323-41d0-4d61-b309-6892fb826d21
+source-git-commit: 2a1ba4b2d11eb953d2533d06786c1464c9cf64b6
+workflow-type: ht
 source-wordcount: '2025'
 ht-degree: 100%
 
@@ -161,7 +162,7 @@ Adobe Campaign 现在与 Windows Server 2019 兼容。请参阅 [Campaign 兼容
 * 修复了由于同时更新大量投放指标，可能导致 Oracle 上的跟踪工作流失败的问题 (NEO-39653)。
 * 修复了由于执行控制类型时出现错误而可能导致无法发送投放的问题 (NEO-39833)。
 * 修复了登陆页面中可能导致特殊字符无法在在线调查响应的 HTML 页面中正确显示的问题 (NEO-39438)。
-* 修复了右键单击“Explorer”选项卡中的任意文件夹时，可能导致 Campaign Classic 控制台无法工作的问题 (NEO-38884)。
+* 修复了右键单击“探索工具”选项卡中的任意文件夹时，可能导致 Campaign Classic 控制台无法工作的问题 (NEO-38884)。
 * 修复了在新投放中使用之前创建的链接到网站分析帐户的投放模板时缺失网站分析配置的错误。(NEO-28666)
 * 修复了可能导致您无法预览附加到工作流的移动投放的问题。
 * 修复了在启用跟踪链接的 URL 签名机制时导致个性化的跟踪 URL 无法重定向的错误。
