@@ -2,15 +2,15 @@
 product: campaign
 title: 将Adobe Experience Platform区段引入Campaign
 description: 了解如何将Adobe Experience Platform受众纳入Campaign Classic
-feature: Platform Integration
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+feature: Experience Platform Integration
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
 workflow-type: tm+mt
 source-wordcount: '310'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 连接Adobe Campaign作为目标
 
-在Adobe Experience Platform中，通过为导出的区段选择存储位置来配置与Adobe Campaign的连接。 此步骤还允许您选择要导出的区段并指定要包含的其他XDM字段。
+在AdobeExperience Platform中，通过为导出的区段选择存储位置来配置与Adobe Campaign的连接。 此步骤还允许您选择要导出的区段并指定要包含的其他XDM字段。
 
 有关详细信息，请参见 [目标文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 

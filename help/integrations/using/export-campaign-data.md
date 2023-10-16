@@ -2,15 +2,15 @@
 product: campaign
 title: 将数据从 Campaign 导出到 Adobe Experience Platform
 description: 了解如何将数据从Campaign Classic导出到Adobe Experience Platform
-feature: Platform Integration
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+feature: Experience Platform Integration
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 4%
 
 将S3或Azure Blob存储位置连接为 **来源** Adobe中的Experience Platform如下所列。 有关每个步骤的详细信息，请参见 [源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans).
 
-1. 在Adobe Experience Platform中 **[!UICONTROL Sources]** 菜单，创建到存储位置的连接：
+1. 在AdobeExperience Platform中 **[!UICONTROL Sources]** 菜单，创建到存储位置的连接：
 
    * [创建Amazon S3源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
    * [Azure Blob连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)
