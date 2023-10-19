@@ -4,10 +4,10 @@ product: campaign
 title: Adobe Campaign Classic v7产品文档
 feature: Overview
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: baa1cfe3b8e65daee7902c85c0ca3ef293b44657
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 62%
+source-wordcount: '171'
+ht-degree: 67%
 
 ---
 
@@ -17,13 +17,11 @@ ht-degree: 62%
 
 ## 新增功能
 
-* **[3月版已上线！](rn/using/latest-release.md)**<br/> 在发行说明中探索新功能、改进和修复
-
-* **[2022版计划](technotes/using/dc-migration.md)**<br/> 升级您的环境并改进安全性、基础架构和性能
+* **[9月版已上线！](rn/using/latest-release.md)**<br/> 在发行说明中探索新功能、改进和修复
 
 <!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
 
-* **[更新Adobe Experience Cloud Triggers集成](integrations/using/configuring-adobe-io.md)**<br/> 旧版oAuth身份验证服务的生命周期已终止：您必须迁移到Adobe I/O
+* **[更新Adobe Experience Cloud集成](integrations/using/configuring-adobe-io.md)**<br/> 旧版oAuth身份验证服务的生命周期已终止：您必须迁移到Adobe I/O
 
 [更多更新](rn/using/documentation-updates.md)
 
