@@ -2,14 +2,14 @@
 product: campaign
 title: 数据导入和导出入门
 description: 了解有关Campaign中的数据导入和导出的更多信息
-feature: Data Management
+feature: Data Management, Encryption
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 12%

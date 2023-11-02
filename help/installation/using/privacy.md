@@ -3,19 +3,16 @@ product: campaign
 title: 个性化和隐私
 description: 了解隐私和个性化的安全最佳实践
 feature: Installation, Privacy, Privacy Tools, URL Personalization
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # 个性化和隐私 {#privacy}
-
-
-
 
 ## URL个性化 {#url-personalization}
 
@@ -58,7 +55,7 @@ ht-degree: 3%
 
 如果您在19.1.4内部版本上运行，则在使用跟踪链接或使用锚点标记进行投放时可能会遇到问题。 如果出现这种情况，建议您禁用URL签名。
 
-作为Campaign托管、托管Cloud Services或混合型客户，您必须联系 [客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) 禁用URL签名。
+作为Campaign托管、托管Cloud Service或混合型客户，您必须联系 [客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) 禁用URL签名。
 
 如果您在混合架构中运行Campaign，则在启用URL签名之前，请确保已如下所示升级托管的中源实例：
 
@@ -88,7 +85,7 @@ ht-degree: 3%
 
 此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 [了解详情](../../configuration/using/restricting-pii-view.md)。
 
-要执行此操作，请执行以下步骤：
+要执行此操作，请按照以下步骤进行：
 
 1. 浏览至 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** Campaign资源管理器的文件夹。
 
