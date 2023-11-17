@@ -3,14 +3,14 @@ product: campaign
 title: 其他配置
 description: 了解如何在Adobe Campaign Classic中为事务性消息设置其他配置
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '812'
 ht-degree: 7%
 
 ---
@@ -92,6 +92,12 @@ Once the control and execution modules are installed on the same instance, you m
    * **[!UICONTROL Ignored by the delivery]** ：此状态复制于投放日志。 这意味着该投放被忽略。
    * **[!UICONTROL Delivery failed]** ：此状态复制于投放日志。 这意味着投放失败了。
    * **[!UICONTROL Event not taken into account]** ：无法将事件链接到消息模板。 将不会处理该事件。
+
+### 存档工作流计划
+
+避免修改 **存档工作流** 在控制实例上运行的计划。 否则，从执行实例中拉取的某些跟踪数据可能会丢失。
+
+如果您确实修改了存档工作流计划，则还必须更改 **跟踪工作流** 在执行实例上安排与控制实例上的存档工作流计划相匹配。
 
 ## 配置多品牌策略 {#configuring-multibranding}
 
