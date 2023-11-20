@@ -6,9 +6,9 @@ role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Typology Rules, Campaigns
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: a37e67ef3f348737a099dab00a84b6854bd52e57
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '776'
 ht-degree: 4%
 
 ---
@@ -44,14 +44,14 @@ Adobe Campaign通过营销活动类型中包含的一组规则，确保通信的
    >
    >可用性行仅供参考。 如果在达到容量限制时需要排除消息，请参阅 [本节](#exclude-messages-when-capacity-limit-reached).
 
-1. 将此规则与分类关联，然后将该分类引用到您的投放以应用此容量规则。 如需详细信息，请参阅[此部分](applying-rules.md#applying-a-typology-to-a-delivery)。
+1. 将此规则与分类关联，然后将该分类引用到您的投放以应用此容量规则。 如需详细信息，请参阅[此小节](applying-rules.md#applying-a-typology-to-a-delivery)。
 1. 您可以通过规则监控消耗量 **[!UICONTROL Consumptions]** 和 **[!UICONTROL Capacity]** 选项卡。
 
    在投放中使用规则时， **[!UICONTROL Consumed]** 和 **[!UICONTROL Remaining]** 列提供了有关负载的信息，如下所示：
 
    ![](assets/campaign_opt_create_capacity_03.png)
 
-   如需详细信息，请参阅[此部分](#monitoring-consumption)。
+   如需详细信息，请参阅[此小节](#monitoring-consumption)。
 
 ## 定义最大负载 {#defining-the-maximum-load}
 
@@ -101,7 +101,7 @@ Adobe Campaign通过营销活动类型中包含的一组规则，确保通信的
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-要处理的消息数在定义的可用性范围内平均细分。 这尤其与呼叫中心相关，因为它们每天的最大呼叫数是有限的。 如果是电子邮件投放，则 **[!UICONTROL Do not limit instantaneous delivery capacity]** 选项可让您忽略此可用性范围，并同时发送电子邮件。
+可处理的最大消息数在定义的可用性范围内平均细分。 这尤其与呼叫中心相关，因为它们每天的最大呼叫数是有限的。 如果是电子邮件投放，则 **[!UICONTROL Do not limit instantaneous delivery capacity]** 选项可让您忽略此可用性范围，并同时发送电子邮件。
 
 ![](assets/campaign_opt_create_capacity_05.png)
 
