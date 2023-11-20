@@ -2,21 +2,19 @@
 product: campaign
 title: Adobe Analytics连接器配置
 description: 了解有关Adobe Analytics连接器配置的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 2%
+source-wordcount: '673'
+ht-degree: 3%
 
 ---
 
 # Adobe Analytics Connector 配置 {#adobe-analytics-connector-provisioning}
-
-
 
 >[!IMPORTANT]
 >
@@ -31,6 +29,12 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 * 如果您正在实施新连接器，实施Adobe IMS是可选的。 如果没有Adobe ID用户，Adobe Campaign将使用技术用户与Adobe Analytics同步。
 
 为使这种集成正常工作，您必须创建专门用于Analytics连接器的Adobe Analytics产品配置文件。 然后，您需要创建一个Adobe I/O项目。
+
+<!--
+>[!AVAILABILITY]
+>
+> JWT (JSON Web Tokens) is currently in the process of depreciation and is being replaced with OAuth. The transition is being carried out progressively within Campaign's upcoming releases and documentation will be updated to reflect these updates.
+-->
 
 ## 创建Adobe Analytics产品配置文件 {#analytics-product-profile}
 
@@ -72,7 +76,9 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. 对于 **[!UICONTROL Dimensions]** 功能，添加 **[!UICONTROL Dimensions]** 稍后您需要进行配置。
+1. 对于 **[!UICONTROL Dimensions]** 功能，添加 **[!UICONTROL Dimensions]** 未来配置需要。
+
+   确保所选的Dimension与中要配置的规则相匹配 [外部帐户](adobe-analytics-connector.md#external-account-classic) 并与中的相应eVar编号保持一致 [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success).
 
 1. 对于 **[!UICONTROL Report Suite Tools]** 功能，添加以下权限：
 
