@@ -7,9 +7,9 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
+source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '710'
 ht-degree: 3%
 
 ---
@@ -30,11 +30,9 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 
 为使这种集成正常工作，您必须创建专门用于Analytics连接器的Adobe Analytics产品配置文件。 然后，您需要创建一个Adobe I/O项目。
 
-<!--
 >[!AVAILABILITY]
 >
-> JWT (JSON Web Tokens) is currently in the process of depreciation and is being replaced with OAuth. The transition is being carried out progressively within Campaign's upcoming releases and documentation will be updated to reflect these updates.
--->
+> JWT（JSON Web令牌）当前正在进行折旧，并将由OAuth替换。 此过渡将在Campaign的即将发布的版本中逐步执行，文档将进行更新以反映这些更新。
 
 ## 创建Adobe Analytics产品配置文件 {#analytics-product-profile}
 

@@ -3,23 +3,21 @@ product: campaign
 title: 为 Adobe Experience Cloud 触发器配置 Adobe I/O
 description: 了解如何为Adobe Experience Cloud Triggers配置Adobe I/O
 feature: Triggers
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: integrations
 content-type: reference
 index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 4%
+source-wordcount: '761'
+ht-degree: 5%
 
 ---
 
 # 为 Adobe Experience Cloud 触发器配置 Adobe I/O {#configuring-adobe-io}
-
-
 
 >[!CAUTION]
 >
@@ -39,11 +37,11 @@ ht-degree: 4%
 
 ## 步骤1：创建/更新Adobe I/O项目 {#creating-adobe-io-project}
 
-1. 访问 [!DNL Adobe I/O] 并使用贵组织的开发人员访问权限登录。
+>[!AVAILABILITY]
+>
+> JWT（JSON Web令牌）当前正在进行折旧，并将由OAuth替换。 此过渡将在Campaign的即将发布的版本中逐步执行，文档将进行更新以反映这些更新。
 
-   >[!NOTE]
-   >
-   > 确保您已登录到正确的组织门户。
+1. 访问 [!DNL Adobe I/O] 并使用贵组织的开发人员访问权限登录。 确保您已登录到正确的组织门户。
 
 1. 从实例配置文件ims/authIMSTAClientId中提取现有集成客户端标识符（客户端ID）。 不存在或空属性表示未配置客户端标识符。
 

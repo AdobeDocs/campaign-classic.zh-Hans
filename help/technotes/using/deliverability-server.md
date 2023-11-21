@@ -4,9 +4,9 @@ title: 更新到新的可投放性服务器
 description: 了解如何更新到新的Campaign可投放性服务器
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1356'
 ht-degree: 3%
 
 ---
@@ -40,12 +40,15 @@ ht-degree: 3%
 
 ## 实施步骤 {#implementation-steps}
 
-作为新的可投放性服务器集成的一部分，Campaign需要通过基于Identity Management Service (IMS)的身份验证与AdobeShared Services进行通信。 首选方式是使用基于Adobe Developer的网关令牌(也称为技术帐户令牌或AdobeIO JWT)。
-
 >[!WARNING]
 >
 >这些步骤只应针对混合和内部部署实施执行。
+
+作为新的可投放性服务器集成的一部分，Campaign需要通过基于Identity Management Service (IMS)的身份验证与AdobeShared Services进行通信。 首选方式是使用基于Adobe Developer的网关令牌(也称为技术帐户令牌或AdobeIO JWT)。
+
+>[!AVAILABILITY]
 >
+> JWT（JSON Web令牌）当前正在进行折旧，并将由OAuth替换。 此过渡将在Campaign的即将发布的版本中逐步执行，文档将进行更新以反映这些更新。
 
 ### 先决条件{#prerequisites}
 
@@ -60,7 +63,7 @@ ht-degree: 3%
 
    必须在您的所有Campaign实例(MKT、MID、RT、EXEC)上使用正确的值填充此选项。 作为混合型客户，请联系Adobe以在MID、RT和EXEC实例上设置选项。
 
-作为内部部署客户，您还必须检查Campaign **[!UICONTROL Product profile]** 适用于您的组织。 要执行此操作，请执行以下步骤：
+作为内部部署客户，您还必须检查Campaign **[!UICONTROL Product profile]** 适用于您的组织。 要执行此操作，请按照以下步骤进行：
 
 1. 作为管理员，连接到 [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. 访问 **产品和服务** 部分和检查 **Adobe Campaign** 列出。
