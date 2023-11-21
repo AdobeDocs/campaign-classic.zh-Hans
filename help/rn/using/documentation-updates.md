@@ -7,22 +7,24 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 324e26ba1db14e10bb79eee60ba43ddc36e8e94f
+source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 100%
+source-wordcount: '3645'
+ht-degree: 98%
 
 ---
 
 # 文档更新{#documentation-updates}
-
-
 
 本页列出了每月所有新增功能和文档更新以及 Campaign 版本。
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
 ## 2023
+
+### 2023 年 11 月
+
+JWT（JSON Web令牌）当前正在进行折旧，并将由OAuth替换。 此过渡将在Campaign的即将发布的版本中逐步执行，文档将进行更新以反映这些更新。
 
 ### 2023 年 8 月
 
@@ -183,7 +185,7 @@ LINE 渠道增强 - [了解详情](../../delivery/using/line-channel.md)
 
 新的 Google BigQuery FDA 连接器 - [了解详情](../../installation/using/configure-fda-google-big-query.md)
 
-“计费 (billing)”技术工作流描述现在包括原来由“活跃计费用户档案数 (billingActiveContactCount)”执行的任务。[阅读更多](../../workflow/using/about-technical-workflows.md)
+“计费(billing)”技术工作流描述现在包括原来由“活跃计费用户档案数(billingActiveContactCount)”执行的任务。 [了解更多信息](../../workflow/using/about-technical-workflows.md)
 
 ## 2021 年 5 月 {#may-2021}
 
@@ -400,9 +402,9 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 “隐私和同意”部分已得到增强，其中包含更多详细信息和有用的链接。[阅读更多](../../platform/using/privacy-and-recommendations.md)
 
-“Campaign Classic 中的隐私管理”页面已更新，其中包含有关“规定”字段的信息，现在在使用允许设置自动隐私请求流程的 API 时，该字段可用。[阅读更多](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+“Campaign Classic 中的隐私管理”页面已更新，其中包含有关“规定”字段的信息，现在在使用允许设置自动隐私请求流程的 API 时，该字段可用。[了解更多信息](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-“隐私管理概述”页面已更新，包含有关泰国的个人数据保护法 (PDPA) 和巴西的 Lei Geral de Proteção de Dados(LGPD) 的信息。[阅读更多](../../platform/using/privacy-and-recommendations.md)
+“隐私管理概述”页面已更新，包含有关泰国的个人数据保护法 (PDPA) 和巴西的 Lei Geral de Proteção de Dados (LGPD) 的信息。[了解更多信息](../../platform/using/privacy-and-recommendations.md)
 
 添加了有关子工作流日志和行为的信息，以防出错。[阅读更多](../../workflow/using/sub-workflow.md)
 
