@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
-workflow-type: ht
-source-wordcount: '2529'
-ht-degree: 100%
+source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
+workflow-type: tm+mt
+source-wordcount: '2532'
+ht-degree: 99%
 
 ---
 
@@ -652,6 +652,7 @@ ht-degree: 100%
          + [最佳实践和限制](installation/using/fda-best-practices.md)
          + 配置准则 {#config-databases}
             + [配置步骤](installation/using/configure-fda.md)
+            + [配置Amazon Redshift](installation/using/configure-fda-redshift.md)
             + [配置 Azure Synapse](installation/using/configure-fda-synapse.md)
             + [配置 Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [配置 Hadoop](installation/using/configure-fda-hadoop.md)
@@ -785,8 +786,8 @@ ht-degree: 100%
       + [JavaScript 中的 SOAP 方法](configuration/using/soap-methods-in-javascript.md)
       + [添加其他 SQL 函数](configuration/using/adding-additional-sql-functions.md)
    + 导航层级 {#navigation-hierarchy}
-      + [配置资源管理器层级](configuration/using/configuration.md)
-      + [编辑资源管理器层级](configuration/using/edition.md)
+      + [配置探索工具层级](configuration/using/configuration.md)
+      + [编辑探索工具层级](configuration/using/edition.md)
    + 使用自定义收件人表 {#use-a-custom-recipient-table}
       + [关于自定义收件人表](configuration/using/about-custom-recipient-table.md)
       + [模式特性](configuration/using/schema-characteristics.md)

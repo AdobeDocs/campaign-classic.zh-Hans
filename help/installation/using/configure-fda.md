@@ -3,15 +3,15 @@ product: campaign
 title: 配置FDA连接器
 description: 了解FDA的配置步骤
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 5%
+source-wordcount: '354'
+ht-degree: 7%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 5%
 1. 在Adobe Campaign中创建外部数据库的模式。 这允许您标识外部数据库的数据结构。 [了解详情](../../installation/using/creating-data-schema.md)
 1. 如果需要，请从之前创建的模式创建新的目标映射。 如果投放的收件人来自外部数据库，则需要此字段。 此实施附带与消息个性化相关的限制。 [了解详情](../../installation/using/defining-data-mapping.md)
 
-创建数据架构后，便可以在Adobe Campaign工作流中处理数据。 如需详细信息，请参阅[此部分](../../workflow/using/accessing-an-external-database--fda-.md)。
+创建数据架构后，便可以在Adobe Campaign工作流中处理数据。 如需详细信息，请参阅[此小节](../../workflow/using/accessing-an-external-database--fda-.md)。
 
 ## 数据库特定配置 {#fda-specific-configuration}
 
@@ -45,6 +45,7 @@ ht-degree: 5%
 
 请访问以下链接以了解更多信息：
 
+* 连接Campaign和 [Amazon Redshift](../../installation/using/configure-fda-redshift.md)
 * 连接Campaign和 [azure synapse](../../installation/using/configure-fda-synapse.md)
 * 连接Campaign和 [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 * 连接Campaign和 [hadoop](../../installation/using/configure-fda-hadoop.md)
