@@ -9,10 +9,10 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e6a2986e5355b32164386e1f6d64f52dc6977632
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 3%
+source-wordcount: '582'
+ht-degree: 4%
 
 ---
 
@@ -30,6 +30,10 @@ ht-degree: 3%
 >[!IMPORTANT]
 >
 >如果您使用Demdex域并遵循以下语法 **ftp-out.demdex.com** 对于导入外部帐户和 **ftp-in.demdex.com** 对于导出外部帐户，您需要相应地调整实施，并转到Amazon Simple Storage Service (S3)连接器以导入或导出数据。 有关如何使用Amazon S3配置外部帐户的更多信息，请参阅此 [部分](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
+
+下图详细说明此集成的工作方式。在此，AAM表示Adobe Audience Manager，AC表示Adobe Campaign。
+
+![](assets/aam_diagram.png){align="center"}
 
 ## 步骤1：在Adobe Campaign中配置或检查外部帐户 {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
@@ -87,10 +91,16 @@ ht-degree: 3%
 
 要配置与People核心服务或Audience Manager的集成，我们还需要配置Campaign跟踪服务器。
 
-您需要确保已在域(CNAME)上注册Campaign跟踪服务器。 有关域名委派的更多信息，请参阅 [本文](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans).
+要使共享受众能够与访客ID配合使用，跟踪服务器域应该是已单击URL的子域或主网站。
+
+>[!IMPORTANT]
+>
+>您需要确保已在域(CNAME)上注册Campaign跟踪服务器。 有关域名委派的更多信息，请参阅 [本文](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans).
 
 ## 步骤4：配置访客ID服务 {#step-4--configure-the-visitor-id-service}
 
 如果从未在您的Web资产或网站上配置过访客ID服务，请参阅以下内容 [文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) 了解如何配置服务或以下内容 [视频](https://helpx.adobe.com/cn/marketing-cloud/how-to/email-marketing.html#step-two).
+
+使用同步客户标识符与声明的ID `setCustomerID` 函数(位于包含集成代码的Experience CloudID服务中)： `AdobeCampaignID`. 此 `AdobeCampaignID` 应该与在中配置的收件人数据源中设置的协调键值匹配 [步骤2：配置数据源](#step-2--configure-the-data-sources).
 
 您的配置和配置已完成，集成现在可用于导入和导出受众或区段。
