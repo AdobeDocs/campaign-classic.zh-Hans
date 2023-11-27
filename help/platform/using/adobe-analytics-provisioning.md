@@ -8,10 +8,10 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 26d1b0bc9886988ff636d322c781a23f95a9bcd0
+source-git-commit: d690a5c4b9779ccd90b50bfbc74df18f0ac60d14
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '761'
+ht-degree: 9%
 
 ---
 
@@ -25,7 +25,11 @@ ht-degree: 0%
 
 Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeIdentity Management服务(IMS)：
 
-* 如果您正在管理已迁移的外部帐户，则必须实施Adobe IMS并通过Adobe ID连接到Adobe Campaign。 通过Adobe ID IMS登录的用户应当是 **数据连接器** Adobe Analytics帐户，并且拥有对的一组权限 **产品配置文件** 如下所述。
+* 如果您正在管理已迁移的外部帐户，则必须实施Adobe IMS并通过Adobe ID连接到Adobe Campaign。
+
+  请注意，通过Adobe ID IMS登录的用户必须是 **数据连接器** Adobe Analytics帐户并拥有对的权限 **产品配置文件** 已提及 [以下](#analytics-product-profile).
+
+问题是Data Connector的所有者不是登录Campaign并尝试与Analytics集成的用户。
 
 * 如果您正在实施新连接器，实施Adobe IMS是可选的。 如果没有Adobe ID用户，Adobe Campaign将使用技术用户与Adobe Analytics同步。
 
@@ -33,7 +37,7 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 
 >[!AVAILABILITY]
 >
-> JWT（JSON Web令牌）当前正在进行折旧，并将由OAuth替换。 此过渡将在Campaign的即将发布的版本中逐步执行，文档将进行更新以反映这些更新。
+> JWT（JSON Web 令牌）目前正在被逐步停用，它将被 OAuth 取代。此项转换工作将在 Campaign 的后续版本中逐步执行，会对文档进行更新以反映这些变化。
 
 ## 创建Adobe Analytics产品配置文件 {#analytics-product-profile}
 
