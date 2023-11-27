@@ -3,12 +3,12 @@ product: campaign
 title: 数据库清理工作流
 description: 了解如何自动清理过时的数据
 feature: Monitoring, Workflows
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 624978901943b4c74f50c20298c9596f73b25b1b
 workflow-type: tm+mt
 source-wordcount: '2830'
 ht-degree: 0%
@@ -282,7 +282,7 @@ ht-degree: 0%
 1. 名称以开头的表的列表 **wkDlv_** 首先使用以下查询(postgresql)恢复：
 
    ```sql
-   SELECT relname FROM pg_class WHERE relname LIKE Lower('wkDlv_') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
+   SELECT relname FROM pg_class WHERE relname LIKE Lower('wkDlv_%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
 1. 随后将排除正在进行的工作流使用的表。 为此，使用以下查询可恢复正在进行的投放列表：
@@ -323,7 +323,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->为中的每个工作流指定历史记录的清除频率 **历史记录（天）** 字段（默认值为30天）。 此字段可在以下位置找到 **执行** 选项卡中列出的工作流属性。 如需详细信息，请参阅[此部分](../../workflow/using/workflow-properties.md#execution)。
+>为中的每个工作流指定历史记录的清除频率 **历史记录（天）** 字段（默认值为30天）。 此字段可在以下位置找到 **执行** 选项卡中列出的工作流属性。 如需详细信息，请参阅[此小节](../../workflow/using/workflow-properties.md#execution)。
 
 1. 要恢复要删除的工作流列表，请使用以下查询：
 
