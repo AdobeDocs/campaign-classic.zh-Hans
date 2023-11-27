@@ -7,9 +7,9 @@ user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2532'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -652,7 +652,7 @@ ht-degree: 99%
          + [最佳实践和限制](installation/using/fda-best-practices.md)
          + 配置准则 {#config-databases}
             + [配置步骤](installation/using/configure-fda.md)
-            + [配置Amazon Redshift](installation/using/configure-fda-redshift.md)
+            + [配置 Amazon Redshift](installation/using/configure-fda-redshift.md)
             + [配置 Azure Synapse](installation/using/configure-fda-synapse.md)
             + [配置 Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [配置 Hadoop](installation/using/configure-fda-hadoop.md)
