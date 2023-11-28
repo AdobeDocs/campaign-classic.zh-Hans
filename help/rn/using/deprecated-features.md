@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
-source-wordcount: '1515'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </tr>
 <tr>
  <td>通过 Facebook 进行社交媒体营销</td>
- <td>通过 Facebook 进行社交媒体营销的功能现已弃用。您可以使用 Twitter 集成在社交媒体上发布内容，或与 Adobe 合作创建自定义渠道。
+ <td>通过 Facebook 进行社交媒体营销的功能现已弃用。您可以使用X(以前称为Twitter)集成在社交媒体上发布内容，或与Adobe合作创建自定义渠道。
  <p></p>
   <p>目标移除日期：2023 年底</p>
   </td>
@@ -247,7 +247,7 @@ Campaign Classic 与以下联合数据访问 (FDA) 服务器不兼容。请使�
 从 20.2 版本开始，弃用旧版短信连接器。Adobe Campaign 不兼容：
 
 * 通用 SMPP（支持二进制模式的 SMPP 版本 3.4）
-* Sybase365 (SAP SMS 365)
+* Sybase365 (SAP短信365)
 * CLX 通信
 * Tele2
 * O2

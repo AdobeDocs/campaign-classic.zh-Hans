@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
-workflow-type: ht
-source-wordcount: '1869'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '1873'
+ht-degree: 98%
 
 ---
 
@@ -62,7 +62,7 @@ _2023 年 9 月 7 日_
 * 修复了在编辑投放内容时可能导致出现错误且无法滚动的问题。(NEO-61364)
 * 修复了在电子邮件内容编辑器中单击图像时导致打开弹出窗口的问题。(NEO-60752)
 * 修复了可能导致投放的 HTML 内容中的特殊字符在多个浏览器中被错误编码的问题。(NEO-60081)
-* 修复了在使用 inSMS 工作流活动时可能发生的同步问题。(NEO-59544)
+* 修复了在使用 in短信工作流活动时可能发生的同步问题。(NEO-59544)
 * 修复了使用具有时间戳或日期时间字段的 Big Query 连接器时的问题。(NEO-59502、NEO-49768)
 * 修复了导致无法使用累积投放报告的问题。(NEO-59211)
 * 修复了在与 People 核心服务共享受众时可能导致错误的问题。(NEO-58637)
@@ -141,7 +141,7 @@ _2022 年 11 月 21 日_
 
 **已弃用的功能**
 
-* 通过 Facebook 进行社交媒体营销的功能现已弃用。您可以使用 Twitter 集成在社交媒体上发布内容，或与 Adobe 合作创建自定义渠道。
+* 通过 Facebook 进行社交媒体营销的功能现已弃用。您可以使用X(以前称为Twitter)集成在社交媒体上发布内容，或与Adobe合作创建自定义渠道。
 * ACS 连接器（高级服务）现已弃用。您可以使用 Campaign 的导出/导入功能来从两款产品中提取数据或向其中插入数据。
 
 在[已弃用和已删除的功能页面](deprecated-features.md)中了解详情。

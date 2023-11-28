@@ -6,9 +6,9 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '5974'
+source-wordcount: '5978'
 ht-degree: 4%
 
 ---
@@ -119,7 +119,7 @@ Learn more about [Interaction](../../interaction/using/interaction-and-offer-man
 
 +++**渠道**
 
-信道是用来发送通信的介质。 Adobe Campaign中的内置渠道包括电子邮件、短信、直邮、推送通知、LINE和Twitter。 可以针对非标准渠道要求实施自定义渠道。
+信道是用来发送通信的介质。 Adobe Campaign中的内置渠道包括电子邮件、短信、直邮、推送通知、LINE和X(以前称为Twitter)。 可以针对非标准渠道要求实施自定义渠道。
 
 了解有关 [渠道](../../delivery/using/communication-channels.md).
 +++
@@ -813,7 +813,7 @@ Learn more about [Predictive Engagement Scoring](../../platform/using/creating-f
 
 +++**用户档案**
 
-用户档案是代表最终客户、潜在客户或潜在客户的信息记录。 每个用户档案对应于nmsRecipient表或外部表中的记录，该记录包含cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息。
+用户档案是代表最终客户、潜在客户或潜在客户的信息记录。 每个配置文件对应于nmsRecipient表或外部表中的记录，该记录包含cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息。
 
 了解有关 [配置文件](../../platform/using/about-profiles.md).
 +++
@@ -1007,7 +1007,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 了解有关 [跟踪日志](../../delivery/using/accessing-the-tracking-logs.md).
 +++
 
-+++**事务性消息传递**
++++**交易型消息传递**
 
 事务性消息传递是一个Campaign模块，旨在管理从外部信息系统发送的事件生成的自定义触发器通知。 事务型消息是由提供程序（如网站）实时发送的单个且唯一的通信。 由于它包含收件人要检查或确认的重要信息，因此尤其需要使用。
 

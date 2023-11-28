@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 feature: Data Model
 role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2385'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ Adobe Campaign依赖于包含链接在一起的表的关系数据库。
 
 iFolderId字段是将收件人链接到其执行文件夹的外键。 有关此内容的更多信息，请参阅 [XtkFolder](#XtkFolder).
 
-sCountryCode字段是与收件人关联的国家/地区3166-1 Alpha 2 ISO代码（2个字符）。 此字段实际上是国家/地区参考表(NmsCountry)上的外键，包含国家/地区标签和其他国家/地区代码数据。 如果未填充国家/地区，则存储“XX”值（并用它来代替零ID记录）。
+sCountryCode字段是与收件人关联的国家/地区的3166-1Alpha2 ISO代码（2个字符）。 此字段实际上是国家/地区参考表(NmsCountry)上的外键，包含国家/地区标签和其他国家/地区代码数据。 如果未填充国家/地区，则存储“XX”值（并用它来代替零ID记录）。
 
 有关“收件人”表的详细信息，请参阅 [本节](../../configuration/using/about-data-model.md#default-recipient-table).
 
@@ -261,12 +261,12 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 ## 社交营销模块 {#social-marketing-module}
 
-这组表链接到 **管理社交网络** 模块，允许通过Facebook和Twitter与客户和潜在客户进行交互。 有关此内容的更多信息，请参阅 [关于社交媒体营销](../../social/using/about-social-marketing.md).
+这组表链接到 **管理社交网络** 模块，允许通过Facebook和X(以前称为Twitter)与客户和潜在客户进行交互。 有关此内容的更多信息，请参阅 [关于社交媒体营销](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
 * **NmsVisitor**：此表匹配 **nms：visitor** 架构。 它包含有关访客的信息。
-* **NmsVisitorSub**：此表匹配 **nms：visitorSub** 架构。 它允许您将访客关联到他们订阅的服务(Twitter或Facebook)。
+* **NmsVisitorSub**：此表匹配 **nms：visitorSub** 架构。 它允许您将访客关联到他们订阅的服务(X或Facebook)。
 * **NmsFriendShipRel**：此表匹配 **nms：friendshipRel** 架构。 它使您能够在Facebook服务的上下文中将访客与其朋友链接到一起。
 * **NmsVisitorInterestRel**：此表匹配 **nms：visitorInterestRel** 架构。 它使您能够链接访客及其兴趣。
 * **NmsInterest**：此表匹配 **nms：interest** 架构。 它包含每个访客的兴趣列表。

@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1120'
 ht-degree: 2%
 
 ---
@@ -51,11 +51,11 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_services_add.png)
 
-* 在中输入服务的名称 **[!UICONTROL Label]** 字段并选择投放渠道：电子邮件、移动设备、Facebook、Twitter或移动应用程序。
+* 在中输入服务的名称 **[!UICONTROL Label]** 字段并选择投放渠道：电子邮件、移动设备、Facebook、X(以前称为Twitter)或移动设备应用程序。
 
   >[!NOTE]
   >
-  >facebook和Twitter订阅详情，请参见 [本节](../../social/using/about-social-marketing.md). 有关移动应用程序订阅的详情，请参见 [关于移动应用程序渠道](about-mobile-app-channel.md).
+  >facebook和X订阅详情，请参见 [本节](../../social/using/about-social-marketing.md). 有关移动应用程序订阅的详情，请参见 [关于移动应用程序渠道](about-mobile-app-channel.md).
 
 * 对于电子邮件类型服务，选择 **投放模式**. 可能的模式包括： **[!UICONTROL Newsletter]** 或 **[!UICONTROL Viral]**.
 * 您可以发送 **确认消息** 用于订阅或退订。 要实现此目的，请选择投放模板，以从中创建相应的投放 **[!UICONTROL Subscription]** 和 **[!UICONTROL Unsubscription]** 字段。 这些模板必须配置有 **[!UICONTROL Subscription]** 键入目标映射，但未定义目标。 请参阅部分 [关于电子邮件渠道](about-email-channel.md).
@@ -129,11 +129,11 @@ ht-degree: 2%
 * 自动为一组收件人订阅此服务。 收件人列表可以来自筛选操作、组、文件夹、导入或使用鼠标直接选择。 要订阅这些收件人，请选择用户档案并右键单击。 选择 **[!UICONTROL Actions > Subscribe selection to a service...]**，选择相关的服务，然后启动操作。
 * 导入收件人并自动为其订阅信息服务。 要执行此操作，请在导入向导的最后一步中选择相关的服务。
 
-  如需详细信息，请参阅[此部分](../../platform/using/executing-import-jobs.md)。
+  如需详细信息，请参阅[此小节](../../platform/using/executing-import-jobs.md)。
 
 * 使用Web窗体，以便收件人可以订阅服务。
 
-  如需详细信息，请参阅[此部分](../../web/using/about-web-applications.md)。
+  如需详细信息，请参阅[此小节](../../web/using/about-web-applications.md)。
 
 * 创建定位工作流并使用 **[!UICONTROL Subscription service]** 盒子。
 

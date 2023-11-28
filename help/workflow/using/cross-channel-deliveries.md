@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: 跨渠道投放
-description: 了解有关跨渠道投放的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: 了解关于跨渠道投放的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 8%
+source-wordcount: '294'
+ht-degree: 10%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 8%
 * [电子邮件](../../delivery/using/about-email-channel.md)
 * [直邮](../../delivery/using/about-direct-mail-channel.md)
 * [手机](../../delivery/using/sms-channel.md)
-* [Twitter](../../social/using/about-social-marketing.md)
+* [X(以前称为Twitter)](../../social/using/about-social-marketing.md)
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [Android](../../delivery/using/create-notifications-android.md)
 
@@ -31,7 +31,7 @@ ht-degree: 8%
 
 您可以使用不同的定向活动，在工作流上游指定投放目标。
 
-在下面的示例中，我们将创建一个工作流，以便在一周后为推送通知订阅者发送电子邮件或短信，然后发送推送通知。 操作步骤：
+在下面的示例中，我们将创建一个工作流，以向推送通知订阅者发送电子邮件或短信，然后在一周后发送推送通知。 操作步骤：
 
 1. 创建营销策划.
 1. 在 **[!UICONTROL Targeting and workflows]** 选项卡，添加 **[!UICONTROL Query]** 到您的工作流。
@@ -50,17 +50,17 @@ ht-degree: 8%
 1. 添加 **[!UICONTROL Split]** 活动到您的工作流，以划分具有手机号码的收件人和具有电子邮件地址的收件人。
 1. 在 **[!UICONTROL Delivery]** 选项卡，为每个目标选择一个投放。
 
-   通过双击工作流中的投放活动，以与使用经典投放向导相同的方式创建投放。 有关详细信息，请参见此 [ 页面](../../delivery/using/about-email-channel.md)。
+   通过双击工作流中的投放活动，使用与使用经典投放向导相同的方式创建投放。 有关详细信息，请参见此 [ 页面](../../delivery/using/about-email-channel.md)。
 
    ![](assets/cross_channel_delivery_3.png)
 
 1. 添加和配置 **[!UICONTROL Wait]** 活动，以便收件人不会一次收到太多投放。
-1. 添加 **[!UICONTROL Split]** 活动以划分iOS或Android移动应用程序的订阅者。
+1. 添加 **[!UICONTROL Split]** 此活动用于划分iOS或Android移动应用程序的订阅者。
 
    为每个操作系统选择服务。 有关创建服务的详细信息，请参阅此 [页面](../../delivery/using/configuring-the-mobile-application.md).
 
    ![](assets/cross_channel_delivery_4.png)
 
-1. 为每个操作系统选择并配置移动应用程序投放。
+1. 选择并配置每个操作系统的移动应用程序投放。
 
    ![](assets/cross_channel_delivery_5.png)

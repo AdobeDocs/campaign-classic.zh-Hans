@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 100%
+source-wordcount: '1791'
+ht-degree: 98%
 
 ---
 
@@ -164,7 +164,7 @@ _2019 年 12 月 17 日_
 
 内部版本 9032@d6b8062 包含以下修复：
 
-* 修复了以下通信渠道上的跟踪问题：移动（SMS 或 MMS）、推送（iOS 或 Android）和社交网络（Facebook 或 Twitter）。(NEO-19595)
+* 修复了以下通信渠道上的跟踪问题：移动(SMS、MMS)、推送(iOS、Android)和社交网络(Facebook、X — 以前称为Twitter)。 (NEO-19595)
 
 ### [!DNL Gold Standard] 4 版本{#gs-4}
 

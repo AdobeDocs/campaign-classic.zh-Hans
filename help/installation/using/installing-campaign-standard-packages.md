@@ -3,13 +3,13 @@ product: campaign
 title: 安装Campaign Classic内置软件包
 description: 了解如何安装Campaign内置软件包
 feature: Installation, Application Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 13%
+source-wordcount: '1282'
+ht-degree: 14%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 13%
   </tr--> 
   <tr> 
    <td> 社交网络（社交营销） <br /> </td> 
-   <td> 将Adobe Campaign与Twitter和Facebook同步。 <a href="../../social/using/about-social-marketing.md">了解详情</a> <br /> </td> 
+   <td> 将Adobe Campaign与X(以前称为Twitter)和Facebook同步。 <a href="../../social/using/about-social-marketing.md">了解详情</a> <br /> </td> 
    <td> 所有</td> 
   </tr> 
   <tr> 

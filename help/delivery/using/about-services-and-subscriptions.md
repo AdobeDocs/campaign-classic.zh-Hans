@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Subscriptions
 role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 6%
+source-wordcount: '170'
+ht-degree: 5%
 
 ---
 
@@ -22,4 +22,4 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->此功能作为Adobe Campaign的标准功能提供。 通过可选的社交营销应用程序，您可以通过Facebook和Twitter联系客户和潜在客户。
+>此功能作为Adobe Campaign的标准功能提供。 通过可选的社交营销应用程序，您可以通过Facebook和X(以前称为Twitter)联系客户和潜在客户。

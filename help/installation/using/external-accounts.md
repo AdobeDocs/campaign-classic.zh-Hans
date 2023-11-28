@@ -3,15 +3,15 @@ product: campaign
 title: 外部帐户
 description: 了解如何创建外部帐户
 feature: Installation, Application Settings, External Account
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1837'
-ht-degree: 8%
+source-wordcount: '1841'
+ht-degree: 9%
 
 ---
 
@@ -119,7 +119,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 * [电话](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [直邮](../../delivery/using/about-direct-mail-channel.md)
 * [代理](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
-* [Twitter](../../social/using/about-social-marketing.md)
+* [X(以前称为Twitter)](../../social/using/about-social-marketing.md)
 * [iOS 渠道](../../delivery/using/configuring-the-mobile-application.md)
 * [Android 渠道](../../delivery/using/configuring-the-mobile-application-android.md)
 

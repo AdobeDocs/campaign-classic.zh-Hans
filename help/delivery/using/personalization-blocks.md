@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '877'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 个性化块是动态的、个性化的，并包含您可以插入到投放中的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。 请参阅 [插入个性化块](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png)[ 在视频中发现此功能](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png)[ 通过观看视频了解此功能](#personalization-blocks-video)
 
 通过以下方式访问个性化块： **[!UICONTROL Resources > Campaign Management > Personalization blocks]** Adobe Campaign节点。 默认情况下，有多个块可用(请参阅 [现成的个性化块](#out-of-the-box-personalization-blocks))。
 
@@ -115,7 +115,7 @@ HTML源代码将插入到投放内容中。 例如， **[!UICONTROL Greetings]**
   >此块只能在仅针对访客的投放中使用。
 
 * **[!UICONTROL Registration confirmation]** ：插入用于确认订阅的链接。
-* **[!UICONTROL Social network sharing links]** ：插入一些按钮，以便收件人能够与电子邮件客户端、Facebook、Twitter和LinkedIn共享指向镜像页面内容的链接(请参阅 [病毒式营销：转发给朋友](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
+* **[!UICONTROL Social network sharing links]** ：插入一些按钮，以便收件人能够与电子邮件客户端、Facebook、X(以前称为Twitter)和LinkedIn共享指向镜像页面内容的链接(请参阅 [病毒式营销：转发给朋友](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend))。
 * **[!UICONTROL Style of content emails]** 和 **[!UICONTROL Notification style]** ：生成使用预定义的HTML样式设置电子邮件格式的代码。 这些块必须插入到投放的源代码中，位于 **[!UICONTROL ...]** 部分，到 **`<style>...</style>`** 标记之间。
 * **[!UICONTROL Offer acceptance URL in unitary mode]** ：插入一个URL，以用于将交互选件设置为 **[!UICONTROL Accepted]** (请参阅 [本节](../../interaction/using/offer-analysis-report.md))。
 
