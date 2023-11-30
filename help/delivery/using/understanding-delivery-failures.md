@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
 workflow-type: tm+mt
-source-wordcount: '2624'
+source-wordcount: '2573'
 ht-degree: 17%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 17%
    <td> 收件人的地址是控制组的一部分。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 双精度型 </td> 
+   <td> 双精度 </td> 
    <td> 已忽略 </td> 
    <td> 10 </td> 
    <td> 收件人的地址已在此投放中。<br /> </td> 
@@ -220,7 +220,7 @@ Adobe Campaign平台允许您通过退回邮件功能管理电子邮件投放失
 
 >[!IMPORTANT]
 >
->对于托管或混合安装，如果已升级到 [增强MTA](sending-with-enhanced-mta.md)，不再使用大多数电子邮件管理规则。 有关更多信息，请参阅[此章节](#email-management-rules)。
+>对于托管或混合安装，如果已升级到 [增强MTA](sending-with-enhanced-mta.md)，不再使用大多数电子邮件管理规则。 有关更多信息，请参阅[此小节](#email-management-rules)。
 
 ### 退回邮件鉴别 {#bounce-mail-qualification}
 
@@ -287,11 +287,13 @@ Adobe Campaign过滤此消息以删除变量内容（如ID、日期、电子邮�
 
 #### 入站电子邮件 {#inbound-email}
 
->[!IMPORTANT]
->
->对于托管或混合安装，如果已升级到 [增强MTA](sending-with-enhanced-mta.md)，并且如果您的实例具有 **Webhooks** 功能， **[!UICONTROL Inbound email]** 规则不再用于同步投放失败错误消息。 有关更多信息，请参阅[此章节](#bounce-mail-qualification)。
+<!--
+STATEMENT ONLY TRUE with Momentum and EFS+:
+For hosted or hybrid installations, if you have upgraded to the [Enhanced MTA](sending-with-enhanced-mta.md), and if your instance has **Webhooks** functionality, the **[!UICONTROL Inbound email]** rules are no longer used for synchronous delivery failure error messages. For more on this, see [this section](#bounce-mail-qualification).
 
-对于使用旧版Campaign MTA的内部部署和托管/混合安装，这些规则包含可由远程服务器返回的字符串列表，并可让您限定错误(**硬**， **柔光** 或 **已忽略**)。
+For on-premise installations and hosted/hybrid installations using the legacy Campaign MTA, these rules contain the list of character strings which can be returned by remote servers and which let you qualify the error (**Hard**, **Soft** or **Ignored**).-->
+
+此 **[!UICONTROL Inbound email]** 规则包含可由远程服务器返回的字符串列表，并可让您鉴别错误(**硬**， **柔光** 或 **已忽略**)。
 
 当电子邮件失败时，远程服务器会向中指定的地址返回退回消息。 [平台参数](../../installation/using/deploying-an-instance.md). Adobe Campaign会将每个退回邮件的内容与规则列表中的字符串进行比较，然后为其分配三个退回邮件之一 [错误类型](#delivery-failure-types-and-reasons).
 
@@ -312,7 +314,7 @@ Adobe Campaign过滤此消息以删除变量内容（如ID、日期、电子邮�
 <!--![](assets/tech_quarant_domain_rules_02.png)-->
 
 * 您可以选择是否激活某些标识标准和加密密钥以检查域名，例如 **发件人标识**， **域密钥**， **DKIM**、和 **S/MIME**.
-* 此 **SMTP中继** 参数允许您为特定域配置中继服务器的IP地址和端口。 有关更多信息，请参阅[此章节](../../installation/using/configuring-campaign-server.md#smtp-relay)。
+* 此 **SMTP中继** 参数允许您为特定域配置中继服务器的IP地址和端口。 有关更多信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#smtp-relay)。
 
 如果邮件在Outlook中显示为 **[!UICONTROL on behalf of]** 在发件人地址中，确保未在电子邮件上使用 **发件人标识**，这是Microsoft过时的专有电子邮件身份验证标准。 如果 **[!UICONTROL Sender ID]** 选项，取消选中相应的框并联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). 您的可投放性不会受到影响。
 
