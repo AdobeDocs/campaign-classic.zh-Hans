@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1677'
 ht-degree: 8%
 
 ---
@@ -92,7 +92,7 @@ ht-degree: 8%
 
 * **[!UICONTROL Label and code of the delivery]** ：此部分中的选项用于在投放分析阶段计算这些字段的值。 此 **[!UICONTROL Compute the execution folder during the delivery analysis]** 字段计算分析阶段将包含此投放操作的文件夹的名称。
 * **[!UICONTROL Approval mode]** ：利用此字段，可定义分析完成后手动或自动投放。 中给出了验证模式 [更改审批模式](#changing-the-approval-mode) 部分。
-* **[!UICONTROL Prepare the delivery parts in the database]** ：利用此选项可改进投放分析性能。 有关更多信息，请参阅[此章节](#improving-delivery-analysis)。
+* **[!UICONTROL Prepare the delivery parts in the database]** ：利用此选项可改进投放分析性能。 有关更多信息，请参阅[此小节](#improving-delivery-analysis)。
 * **[!UICONTROL Prepare the personalization data with a workflow]** ：利用此选项可在自动工作流中准备投放中包含的个性化数据，从而显着提升执行个性化的性能。 有关此内容的更多信息，请参阅 [优化个性化](personalization-fields.md#optimizing-personalization).
 * **[!UICONTROL Start job in a detached process]** ：利用此选项，可在单独的进程中启动投放分析。 默认情况下，分析函数使用Adobe Campaign应用程序服务器进程(web nlserver)。 通过选择此选项，可以确保即使在应用程序服务器出现故障时也能完成分析。
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** ：此选项在分析阶段将SQL查询日志添加到投放日志。
@@ -133,13 +133,16 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->* 有关可用验证模式的详情，请参见 [更改审批模式](steps-validating-the-delivery.md#changing-the-approval-mode).
->* 中说明了验证目标的配置 [定义特定验证目标](steps-defining-the-target-population.md#defining-a-specific-proof-target).
->
+>有关可用验证模式的详情，请参见 [更改审批模式](steps-validating-the-delivery.md#changing-the-approval-mode).
 
 要发送校样，请执行以下步骤：
 
 1. 确保已按照中所述配置验证目标 [定义特定验证目标](steps-defining-the-target-population.md#defining-a-specific-proof-target).
+
+   >[!CAUTION]
+   >
+   >[定期投放](../../workflow/using/recurring-delivery.md) 不支持发送校样，包括 [目标数据](../../workflow/using/data-life-cycle.md#target-data) 个性化元素。
+
 1. 单击 **[!UICONTROL Send a proof]** 在投放向导的顶部栏中。
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
@@ -206,7 +209,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** 类型类型用于销售压力管理的框架中。 如需详细信息，请参阅[此部分](../../mrm/using/about-marketing-resource-management.md)。
+>**[!UICONTROL Arbitration]** 类型类型用于销售压力管理的框架中。 如需详细信息，请参阅[此小节](../../mrm/using/about-marketing-resource-management.md)。
 
 ## 更改审批模式 {#changing-the-approval-mode}
 
