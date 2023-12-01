@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
+source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1665'
 ht-degree: 8%
 
 ---
@@ -138,10 +138,6 @@ ht-degree: 8%
 要发送校样，请执行以下步骤：
 
 1. 确保已按照中所述配置验证目标 [定义特定验证目标](steps-defining-the-target-population.md#defining-a-specific-proof-target).
-
-   >[!CAUTION]
-   >
-   >[定期投放](../../workflow/using/recurring-delivery.md) 不支持发送校样，包括 [目标数据](../../workflow/using/data-life-cycle.md#target-data) 个性化元素。
 
 1. 单击 **[!UICONTROL Send a proof]** 在投放向导的顶部栏中。
 

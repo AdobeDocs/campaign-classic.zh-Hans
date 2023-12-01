@@ -5,9 +5,9 @@ description: 了解有关定期投放工作流活动的更多信息
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
+source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '292'
 ht-degree: 12%
 
 ---
@@ -32,7 +32,7 @@ A **[!UICONTROL Recurring delivery]** 利用活动，可配置特定于营销活
 
 >[!CAUTION]
 >
->定期投放不支持发送校样，包括 [目标数据](../../workflow/using/data-life-cycle.md#target-data) 个性化元素。
+>定期投放不支持预览内容或发送校样，包括 [目标数据](../../workflow/using/data-life-cycle.md#target-data) 个性化元素。
 
 有关正在使用的此活动的示例，请参阅此 [部分](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
