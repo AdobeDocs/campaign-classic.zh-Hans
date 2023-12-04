@@ -4,10 +4,10 @@ title: 更新到新的可投放性服务器
 description: 了解如何更新到新的Campaign可投放性服务器
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
+source-git-commit: eea3657f1cffa215e1fc1cb1eb8782b83321aae4
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 3%
+source-wordcount: '1252'
+ht-degree: 4%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 3%
 
 >[!AVAILABILITY]
 >
-> JWT（JSON Web令牌）当前正在进行折旧，并将由OAuth替换。 此过渡将在Campaign的即将发布的版本中逐步执行，文档将进行更新以反映这些更新。
+> JWT（JSON Web 令牌）目前正在被逐步停用，它将被 OAuth 取代。此项转换工作将在 Campaign 的后续版本中逐步执行，会对文档进行更新以反映这些变化。
 
 ### 先决条件{#prerequisites}
 
@@ -145,15 +145,7 @@ ht-degree: 3%
 
 1. 您必须停止然后重新启动服务器，以便考虑修改。 您还可以运行 `config -reload` 命令。
 
-### 步骤3：启用新的可投放性服务器
-
-您现在可以启用新的可投放性服务器。 要执行此操作，请执行以下操作：
-
-1. 打开客户端控制台，并以管理员身份登录到Adobe Campaign。
-1. 浏览至 **管理>平台>选项**.
-1. 访问 `NewDeliverabilityServer_FeatureFlag` 选项并将值设置为 `1`. 此配置应在您的所有Campaign实例(MKT、MID、RT、EXEC)上执行。 作为混合型客户，请联系Adobe以在MID、RT和EXEC实例上设置选项。
-
-### 步骤4：验证配置
+### 步骤3：验证配置
 
 要检查集成是否成功，请执行以下步骤：
 
