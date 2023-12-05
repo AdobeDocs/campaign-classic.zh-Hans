@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
-workflow-type: ht
-source-wordcount: '3645'
-ht-degree: 100%
+source-git-commit: 38cd50072bdedbac566eb3a56d86328d1e5e1883
+workflow-type: tm+mt
+source-wordcount: '3648'
+ht-degree: 99%
 
 ---
 
@@ -22,9 +22,11 @@ ht-degree: 100%
 
 ## 2023
 
-### 2023 年 11 月
+### 2023 年 12 月
 
 JWT（JSON Web 令牌）目前正在被逐步停用，它将被 OAuth 取代。此项转换工作将在 Campaign 的后续版本中逐步执行，会对文档进行更新以反映这些变化。
+
+添加了适用于Amazon Redshift的FDA外部帐户配置。 [了解更多信息](../../installation/using/configure-fda-redshift.md)
 
 ### 2023 年 8 月
 
@@ -284,7 +286,7 @@ Oracle On Demand API 现在作为与 Campaign 连接的 CRM 已弃用。[阅读�
 
 添加了关于如何使用 **[!UICONTROL Deduplication]** 活动的合并功能的用例。[阅读更多](../../workflow/using/deduplication-merge.md)
 
-现在，[此处](../../delivery/using/sms-protocol.md)提供 SMS 连接器协议和设置页面的完整说明。
+现在，[此处](../../delivery/using/sms-protocol.md)提供短信连接器协议和设置页面的完整说明。
 
 向&#x200B;**事务性消息传递**&#x200B;部分中添加了注释，用于警告不得将事件文件夹设置为执行实例上的视图，以避免出现访问权限问题。[阅读更多](../../message-center/using/about-event-processing.md#event-collection)
 
