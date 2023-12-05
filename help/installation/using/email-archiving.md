@@ -3,15 +3,15 @@ product: campaign
 title: 电子邮件存档
 description: 电子邮件存档
 feature: Installation, Instance Settings, Email
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e808e71ccf949bdaf735cdb2895389f03638bd71
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 5%
+source-wordcount: '1218'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 您可以配置Adobe Campaign以保留从您的平台发送的电子邮件副本。
 
-但是，Adobe Campaign本身并不管理存档文件。 它使您能够将您选择的消息发送到一个专用地址，可以从该地址使用外部系统处理和存档这些消息。
+但是，Adobe Campaign本身并不管理存档文件。 它使您能够将选择的消息发送到一个专用地址，可以从该地址使用外部系统处理和存档这些消息。
 
 为此，将与所发送电子邮件相对应的.eml文件传输到远程服务器，如SMTP电子邮件服务器。 存档目标是您必须指定的密送电子邮件地址（投放收件人不可见）。
 
@@ -31,7 +31,7 @@ ht-degree: 5%
 * 对象 **托管和混合体系结构**，请联系您的帐户管理员以将其激活。 您选择的密件抄送电子邮件地址必须提供给将为您配置该地址的Adobe团队。
 * 对象 **内部部署安装**，请遵循以下准则来激活它 — 请参阅 [正在激活电子邮件密送（内部部署）](#activating-email-archiving--on-premise-) 和 [配置密件抄送电子邮件地址（内部部署）](#configuring-the-bcc-email-address--on-premise-) 部分。
 * 您只能使用一个密件抄送电子邮件地址。
-* 配置电子邮件密送后，请确保在投放模板中或通过 **[!UICONTROL Email BCC]** 选项。 有关更多信息，请参阅[此章节](../../delivery/using/sending-messages.md#archiving-emails)。
+* 配置电子邮件密送后，请确保在投放模板中或通过 **[!UICONTROL Email BCC]** 选项。 有关更多信息，请参阅[此小节](../../delivery/using/sending-messages.md#archiving-emails)。
 * 仅考虑成功发送的电子邮件，不考虑退回。
 * 电子邮件归档系统随Adobe Campaign 17.2（内部版本8795）发生了更改。 如果您已经在使用电子邮件存档，则必须手动升级到新的电子邮件密件抄送系统。 有关此方面的更多信息，请参见 [迁移至新的电子邮件密送](#updated-email-archiving-system--bcc-) 部分。
 
@@ -80,7 +80,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 ```
 <archiving autoStart="false" compressionFormat="0" compressBatchSize="10000"
-           archivingType="0" expirationDelay="2" purgeArchivesDelay="7"
+           archivingType="1" expirationDelay="2" purgeArchivesDelay="7"
            pollDelay="600" acquireLimit="5000" smtpNbConnection="2"/>
 ```
 
@@ -91,11 +91,12 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
   **1**：压缩（.zip格式）
 
 * **compressBatchSize**：添加到存档的.eml文件数（.zip文件）。
-* **archivingType**：要使用的归档策略。 可能的值包括：
 
-  **0**：已发送电子邮件的原始副本以.eml格式保存到 **数据日志路径** 文件夹（默认值）。 的归档副本 **`<deliveryid>-<broadlogid>-sent.eml`** 文件将保存到 **dataLogPath/archives** 文件夹。 已发送的电子邮件文件路径将变为 **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
 
-  **1**：已发送电子邮件的原始副本以.eml格式保存到 **数据日志路径** 文件夹的文件和文件将通过SMTP发送到密件抄送电子邮件地址。 将电子邮件副本发送到密件抄送地址后，存档文件名将变为 **`<deliveryid>-<broadlogid>-sent-archived.eml`** 文件将移至 **dataLogPath/archives** 文件夹。 已发送和密件抄送归档的电子邮件文件路径为 **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+* **archivingType**：要使用的归档策略。 唯一可能的值是 **1**. 已发送电子邮件的原始副本以.eml格式保存到 **数据日志路径** 文件夹的文件和文件将通过SMTP发送到密件抄送电子邮件地址。 将电子邮件副本发送到密件抄送地址后，存档文件名将变为 **`<deliveryid>-<broadlogid>-sent-archived.eml`** 文件将移至 **dataLogPath/archives** 文件夹。 已发送和密件抄送归档的电子邮件文件路径为 **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+
+  <!--
+  **0**: raw copies of sent emails are saved in .eml format to the **dataLogPath** folder (default value). An archiving copy of the **`<deliveryid>-<broadlogid>-sent.eml`** file is saved to the **dataLogPath/archives** folder. The sent email file path becomes **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.-->
 
 * **expirationDelay**：保留用于归档的.eml文件的天数。 在该延迟后，它们会自动移至 **dataLogPath/archives** 用于压缩的文件夹。 默认情况下， .eml文件会在两天后过期。
 * **purgeArchivesDelay**：存档在中保留的天数 **dataLogPath/`<archives>`** 文件夹。 在此期限之后，它们将永久删除。 清除MTA启动时开始。 默认情况下，每7天执行一次。
@@ -131,23 +132,23 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 >
 >此外，中继器会分配 **[!UICONTROL Sent]** 所有电子邮件的状态，包括未发送的电子邮件。 因此，所有消息都会被存档。
 
-## 迁移至新的电子邮件密送 {#updated-email-archiving-system--bcc-}
+<!--
+## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE 内部部署和混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"}
-
-
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
->电子邮件归档系统(BCC)随Adobe Campaign 17.2（内部版本8795）发生了更改。 如果您从旧内部版本升级，并且已经在使用电子邮件存档功能，则必须手动升级到新的电子邮件存档系统（密件抄送）。
+>The email archiving system (BCC) changed with Adobe Campaign 17.2 (build 8795). If you are upgrading from an older build and were already using email archiving capabilities, you must upgrade manually to the new email archiving system (BCC).
 
-为此，请对 **`config-<instance>.xml`** 文件：
+To do this, make the following changes to the **`config-<instance>.xml`** file:
 
-1. 删除 **zip路径** 来自的参数 **`<archiving>`** 节点。
-1. 设置 **压缩格式** 参数至 **1** 如果需要。
-1. 设置 **archivingType** 参数至 **1**.
+1. Remove the **zipPath** parameter from the **`<archiving>`** node.
+1. Set the **compressionFormat** parameter to **1** if needed.
+1. Set the **archivingType** parameter to **1**.
 
-配置电子邮件密件抄送后，请确保选择 **[!UICONTROL Email BCC]** 投放模板或投放中的选项。 有关更多信息，请参阅[此章节](../../delivery/using/sending-messages.md#archiving-emails)。
+Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]** option in the delivery template or the delivery. For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
+-->
 
 ## 电子邮件密送最佳实践 {#best-practices}
 
