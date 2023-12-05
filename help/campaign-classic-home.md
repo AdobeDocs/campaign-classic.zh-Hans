@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 93d6ffc4ac3047ab6a9a41859bed48f6ffac605b
+source-git-commit: 41dcf70724761237a8230bad04322bd3322c0e6f
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 6%
+source-wordcount: '314'
+ht-degree: 5%
 
 ---
 
@@ -20,17 +20,24 @@ ht-degree: 6%
 
 >[!BEGINTABS]
 
->[!TAB 更新Adobe Experience Cloud集成]
 
-旧版oAuth身份验证服务的生命周期已终止：您必须迁移到Adobe I/O
+>[!TAB 12月版本已上线！]
 
-[![图像](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
-
->[!TAB 9月版已上线！]
-
-了解此新版本带来的安全和兼容性更新、改进和修补程序。
+了解Campaign Classicv7.3.5中的更新、改进和修补程序。
 
 [![图像](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
+
+>[!TAB 移动到AdobeIdentity Management服务]
+
+为了增强安全性和身份验证过程，Adobe Campaign强烈建议将最终用户身份验证模式从登录/密码本机身份验证迁移到AdobeIdentity Management System (IMS)。
+
+[![图像](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
+
+>[!TAB 更新Adobe Experience Cloud集成]
+
+旧版oAuth身份验证服务的生命周期已终止：您必须迁移到Adobe I/O。
+
+[![图像](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
 
 >[!ENDTABS]
 
