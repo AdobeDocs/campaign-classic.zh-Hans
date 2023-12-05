@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
-workflow-type: ht
-source-wordcount: '2532'
-ht-degree: 100%
+source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
+workflow-type: tm+mt
+source-wordcount: '2544'
+ht-degree: 99%
 
 ---
 
@@ -144,7 +144,7 @@ ht-degree: 100%
       + [配置短信渠道](delivery/using/sms-set-up.md)
       + [创建短信](delivery/using/sms-create.md)
       + [发送和跟踪短信](delivery/using/sms-send.md)
-      + [SMS 连接器协议和设置](delivery/using/sms-protocol.md)
+      + [短信连接器协议和设置](delivery/using/sms-protocol.md)
       + [短信故障排除](delivery/using/troubleshooting-sms.md)
       + [迁移到扩展通用 SMPP 连接器](delivery/using/unsupported-connector-migration.md)
    + [发送 LINE 消息](delivery/using/line-channel.md)
@@ -820,6 +820,9 @@ ht-degree: 100%
    + [回滚过程](migration/using/about-rollback.md)
 + 技术说明 {#technotes}
    + [硬件大小调整建议](technotes/using/hardware-sizing.md)
+   + 升级到IMS{#ims}
+      + [将用户迁移到IMS](technotes/using/migrate-users-to-ims.md)
+      + [将技术操作员迁移到开发人员控制台](technotes/using/ims-migration.md)
    + 升级和兼容性{#technote-migration}
       + [技术说明](technotes/using/technote.md)
       + [启用 Microsoft Edge Chromium](technotes/using/edge-chromium.md)

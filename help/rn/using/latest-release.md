@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: f2e6db9e198f96e1e0250d461b419ac00e39bf45
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 98%
+source-wordcount: '2221'
+ht-degree: 88%
 
 ---
 
@@ -18,9 +18,35 @@ ht-degree: 98%
 
 此页面列出了 **Campaign v7 最新版本**&#x200B;中的新增功能、改进和修复。每个新的内部版本都带有一个以颜色突出显示的状态。在[此页面](rn-overview.md)中了解有关 Campaign Classic v7 内部版本状态的更多信息。
 
-## 7.3.4 版 - 内部版本 9364 {#release-7-3-4}
+## 7.3.5 版 - 内部版本 9368 {#release-7-3-5}
 
 [!BADGE 正式发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
+
+
+_2023年12月5日_
+
+
+**安全性增强**
+
+
+* 使用Campaign Classicv7.3.5，身份验证过程已得到改进并受到保护。 技术操作员现在应使用AdobeIdentity Management System (IMS)连接到Campaign。 了解如何在中迁移现有技术帐户 [此技术说明](../../technotes/using/ims-migration.md).
+
+* 此外，作为加强安全和身份验证过程的一部分，Adobe Campaign强烈建议将最终用户身份验证模式从登录/密码本机身份验证迁移到AdobeIdentity Management System (IMS)。 了解如何在中迁移操作员 [此技术说明](../../technotes/using/migrate-users-to-ims.md).
+
+**修补程序**
+
+* 修复了使用来自Google大查询数据库的数据并更新Oracle数据库中的数据时的问题：所有键都设置为 `0` 在工作流临时表中。 (NEO-65091)
+* 修复了将Google Big Query数据库上的两个查询合并到时导致工作流执行失败的问题。 **并集** 工作流活动。 (NEO-63705)
+* 修复了在单击 `Back` 按钮。 (NEO-65087)
+* 修复了数据库清理工作流中发生的错误，该错误发生在投放在其投放验证之前被删除时。 (NEO-48114)
+* 修复了连接到客户端控制台时的问题：最近对TLS验证的更新导致连接错误。 (NEO-50488)
+* 修复了Campaign升级到7.3.1后HTTP代理身份验证的问题。活动工作流中的HTTP请求失败，原因是 `error 407 – proxy auth required is returned`. (NEO-49624)
+* 修复了中的GPG解密间歇性故障 **脚本** 工作流活动。 关联的错误消息为： `gpg: decryption failed: No secret key`. (NEO-50257)
+  <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
+
+## 7.3.4 版 - 内部版本 9364 {#release-7-3-4}
+
+[!BADGE 有限发布版]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
 
 >[!CAUTION]
 >
