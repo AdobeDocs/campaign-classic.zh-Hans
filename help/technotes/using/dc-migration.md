@@ -2,12 +2,14 @@
 product: campaign
 title: 迁移到公共云
 description: 了解有关Campaign Classic迁移到公共云的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Technote, Upgrade
 role: User
 level: Beginner
+solution: Campaign
+version: Classic v7
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 87a27eb96fe9fbcb68a5e961b95cb4588eee85e3
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 2%
@@ -20,7 +22,7 @@ ht-degree: 2%
 
 ## 上下文
 
-作为尊贵的Adobe Campaign Classic客户，我们致力于为您提供最佳的体验和价值。 多年来，我们认识到在云中托管客户的价值和可靠性。  作为我们的 [年度升级计划](../../rn/using/rn-overview.md#yearly-upgrade)，我们正在将所有客户转移到Adobe Managed Services (AWS上的Public Cloud)以提供更好、更可靠的服务。
+作为尊贵的Adobe Campaign Classic客户，我们致力于为您提供最佳的体验和价值。 多年来，我们认识到在云中托管客户的价值和可靠性。  作为我们的 [年度升级计划](../../rn/using/rn-overview.md#yearly-upgrade)，我们正在将所有客户转移到AdobeManaged Services (AWS上的Public Cloud)中，以提供更好、更可靠的服务。
 
 该计划有三个主要目标：
 
@@ -38,7 +40,7 @@ ht-degree: 2%
 
 
 >[!NOTE]
->将Campaign Classicv7迁移到公共云会影响客户使用 **Adobe Managed Services** 仅限。
+>将Campaign Classicv7迁移到公共云会影响客户使用 **AdobeManaged Services** 仅限。
 
 
 ## 好处
@@ -85,7 +87,7 @@ ht-degree: 2%
 
 迁移到云的过程是 **的第一步 [年度升级计划](../../rn/using/rn-overview.md#yearly-upgrade)** Adobe Campaign的URL值。 如果您托管的数据中心不是公共云(AWS)，则必须进行此迁移。
 
-Adobe Managed Services云托管在Amazon Web Services (AWS)上，这是一个现代化、安全和优化的环境。 [了解有关AWS的更多信息](https://aws.amazon.com/application-hosting/benefits/).
+Managed Services云Adobe托管在Amazon Web Services (AWS)上，它是一个现代化、安全和优化的环境。 [了解有关AWS的更多信息](https://aws.amazon.com/application-hosting/benefits/).
 
 Adobe计划停用旧式数据中心，在该数据中心运行的Adobe Campaign实例必须转移到新的参考数据中心AWS。
 
@@ -208,6 +210,6 @@ Adobe将在新数据中心上配置相同数量的IP。
 
 ## 支持以及其他有用链接{#support}
 
-* [迁移到Adobe Managed Services （公共云）常见问题解答](dc-migration-faq.md)
+* [迁移到AdobeManaged Services (Public Cloud)常见问题解答](dc-migration-faq.md)
 * [Campaign年度升级](../../rn/using/rn-overview.md)
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)
