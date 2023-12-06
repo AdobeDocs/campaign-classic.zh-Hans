@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2553'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -291,7 +291,7 @@ Campaign 现在支持以下系统：
 * 修复了在执行投放分析时，可能会减少服务器内存使用的问题。
 * 修复了在尝试运行特定的复杂查询时，可能会阻止实例工作的问题。
 * 修复了可能会阻止&#x200B;**同步 Twitter 页面**&#x200B;技术工作流运行的问题。(NEO-28634)
-* 修复了尝试使用在X(以前称为Twitter)上发布时，可能会显示与decryptPassword函数相关的错误消息的问题 **Tweet(twitter)** 投放模板。 (NEO-28216)
+* 修复了尝试使用 **Tweet (twitter)** 投放模板在 X（以前称为 Twitter）上发布时，可能会显示与 decryptPassword 函数相关的错误消息的问题。(NEO-28216)
 * 修复了在工作流中使用 **Javascript** 活动发出 HTTP 请求时出现的问题。在主机名称中定义端口号后，调用会失败，并出现以下错误 (NEO-29146)：
 
 ```
