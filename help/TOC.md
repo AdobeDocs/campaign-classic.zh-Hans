@@ -7,9 +7,9 @@ user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2544'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -763,7 +763,7 @@ ht-degree: 99%
          + [值](configuration/using/schema/value.md)
    + 编辑模式 {#editing-schemas}
       + [关于模式版本](configuration/using/about-schema-edition.md)
-      + [数据模式](configuration/using/data-schemas.md)
+      + [数据架构](configuration/using/data-schemas.md)
       + [现有表的模式](configuration/using/schema-of-an-existing-table.md)
       + [扩展模式](configuration/using/extending-a-schema.md)
       + [筛选模式](configuration/using/filtering-schemas.md)
@@ -820,9 +820,9 @@ ht-degree: 99%
    + [回滚过程](migration/using/about-rollback.md)
 + 技术说明 {#technotes}
    + [硬件大小调整建议](technotes/using/hardware-sizing.md)
-   + 升级到IMS{#ims}
-      + [将用户迁移到IMS](technotes/using/migrate-users-to-ims.md)
-      + [将技术操作员迁移到开发人员控制台](technotes/using/ims-migration.md)
+   + 升级到 IMS{#ims}
+      + [将用户迁移到 IMS](technotes/using/migrate-users-to-ims.md)
+      + [将技术操作员迁移到 Developer Console](technotes/using/ims-migration.md)
    + 升级和兼容性{#technote-migration}
       + [技术说明](technotes/using/technote.md)
       + [启用 Microsoft Edge Chromium](technotes/using/edge-chromium.md)
