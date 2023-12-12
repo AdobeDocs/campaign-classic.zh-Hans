@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: cc6d85bcf822ba9be99e39cf459a5aa20cc2d4fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3648'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 
 JWT（JSON Web 令牌）目前正在被逐步停用，它将被 OAuth 取代。此项转换工作将在 Campaign 的后续版本中逐步执行，会对文档进行更新以反映这些变化。
 
-添加了适用于Amazon Redshift的FDA外部帐户配置。 [了解更多信息](../../installation/using/configure-fda-redshift.md)
+添加了适用于 Amazon Redshift 的 FDA 外部帐户配置。[了解更多信息](../../installation/using/configure-fda-redshift.md)
 
 ### 2023 年 8 月 {#aug-2023}
 
