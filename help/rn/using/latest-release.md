@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: f2e6db9e198f96e1e0250d461b419ac00e39bf45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2221'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -23,25 +23,25 @@ ht-degree: 88%
 [!BADGE 正式发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
 
 
-_2023年12月5日_
+_2023 年 12 月 5 日_
 
 
 **安全性增强**
 
 
-* 使用Campaign Classicv7.3.5，身份验证过程已得到改进并受到保护。 技术操作员现在应使用AdobeIdentity Management System (IMS)连接到Campaign。 了解如何在中迁移现有技术帐户 [此技术说明](../../technotes/using/ims-migration.md).
+* 在 Campaign Classic v7.3.5 中，身份验证过程已得到改进并受保护。现在，技术操作员应使用 Adobe Identity Management System (IMS) 连接到 Campaign。请阅读[此技术说明](../../technotes/using/ims-migration.md)，了解如何迁移现有技术帐户。
 
-* 此外，作为加强安全和身份验证过程的一部分，Adobe Campaign强烈建议将最终用户身份验证模式从登录/密码本机身份验证迁移到AdobeIdentity Management System (IMS)。 了解如何在中迁移操作员 [此技术说明](../../technotes/using/migrate-users-to-ims.md).
+* 此外，作为加强安全和身份验证过程的一部分，Adobe Campaign 强烈建议将终端用户身份验证模式从登录/密码本机身份验证迁移到 Adobe Identity Management System (IMS)。请阅读[此技术说明](../../technotes/using/migrate-users-to-ims.md)，了解如何迁移操作员。
 
 **修补程序**
 
-* 修复了使用来自Google大查询数据库的数据并更新Oracle数据库中的数据时的问题：所有键都设置为 `0` 在工作流临时表中。 (NEO-65091)
-* 修复了将Google Big Query数据库上的两个查询合并到时导致工作流执行失败的问题。 **并集** 工作流活动。 (NEO-63705)
-* 修复了在单击 `Back` 按钮。 (NEO-65087)
-* 修复了数据库清理工作流中发生的错误，该错误发生在投放在其投放验证之前被删除时。 (NEO-48114)
-* 修复了连接到客户端控制台时的问题：最近对TLS验证的更新导致连接错误。 (NEO-50488)
-* 修复了Campaign升级到7.3.1后HTTP代理身份验证的问题。活动工作流中的HTTP请求失败，原因是 `error 407 – proxy auth required is returned`. (NEO-49624)
-* 修复了中的GPG解密间歇性故障 **脚本** 工作流活动。 关联的错误消息为： `gpg: decryption failed: No secret key`. (NEO-50257)
+* 修复了使用 Google Big Query 数据库中的数据和更新 Oracle 数据库中的数据时出现的问题：在工作流临时表中，将所有键都设置为 `0`。(NEO-65091)
+* 修复了当 Google Big Query 数据库上的两个查询合并到 **Union** 工作流活动中时导致工作流执行失败的问题。(NEO-63705)
+* 修复了在 Campaign 报告中单击 `Back` 按钮时请求用户重新进行身份验证的问题。(NEO-65087)
+* 修复了数据库清理工作流中发生的错误，在投放证明前删除投放时会发生该错误。(NEO-48114)
+* 修复了连接到客户端控制台时的问题：最近对 TLS 验证的更新导致连接错误。(NEO-50488)
+* 修复了 Campaign 升级到 7.3.1 后 HTTP 代理身份验证的问题。活动工作流中的 HTTP 请求失败，并出现 `error 407 – proxy auth required is returned`。(NEO-49624)
+* 修复了&#x200B;**脚本**&#x200B;工作流活动中 GPG 解密的间歇性故障。相关的错误消息为：`gpg: decryption failed: No secret key`。(NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
 ## 7.3.4 版 - 内部版本 9364 {#release-7-3-4}
@@ -167,7 +167,7 @@ _2022 年 11 月 21 日_
 
 **已弃用的功能**
 
-* 通过 Facebook 进行社交媒体营销的功能现已弃用。您可以使用X(以前称为Twitter)集成在社交媒体上发布内容，或与Adobe合作创建自定义渠道。
+* 通过 Facebook 进行社交媒体营销的功能现已弃用。您可以使用 X（以前称为 Twitter）集成在社交媒体上发布内容，或与 Adobe 合作创建自定义渠道。
 * ACS 连接器（高级服务）现已弃用。您可以使用 Campaign 的导出/导入功能来从两款产品中提取数据或向其中插入数据。
 
 在[已弃用和已删除的功能页面](deprecated-features.md)中了解详情。
@@ -183,7 +183,7 @@ _2022 年 11 月 21 日_
 **修补程序**
 
 * 修复了会导致用户无法使用&#x200B;**合并所选行**&#x200B;工作流选项的问题。(NEO-48488)
-* 修复了在使用 Adobe Campaign 增强 MTA 时，无法正确更新 **Success** 投放指标的问题。(NEO-50462)
+* 修复了在使用 Adobe Campaign 增强 MTA 时，无法正确更新 **Success** 传递指示器的问题。(NEO-50462)
 * 修复了在电子邮件投放中重置内容批准时出现的问题，此问题会导致您无法进行重新批准。(NEO-44259)
 * 修复了可能导致&#x200B;**投放批准**&#x200B;按钮无法显示的问题。(NEO-47547)
 * 修复了投放的 HTML 选项卡的性能问题，该问题可能会在大型 HTML 代码中出现。(NEO-47440)
