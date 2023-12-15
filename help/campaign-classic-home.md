@@ -3,9 +3,9 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 92c79e7050124bc707f4d6b87c7952016586002c
+source-git-commit: 6dd2a2343c0204c01dd0fa4910299efa15c29849
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '342'
 ht-degree: 4%
 
 ---
@@ -27,14 +27,14 @@ ht-degree: 4%
 
 [![图像](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
->[!TAB 移动到AdobeIdentity Management System]
+>[!TAB 移动到Adobe IMS]
 
 为了增强安全性和身份验证过程，Adobe Campaign强烈建议将最终用户身份验证模式从登录/密码本机身份验证迁移到AdobeIdentity Management System (IMS)。
 
 [![图像](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
 
 
->[!TAB 推送渠道即将更改]
+>[!TAB 推送渠道更改]
 
 Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响Adobe Campaign实施。 您可能需要更新Android推送消息的订阅服务配置才能支持此更改。 您已经可以检查并执行操作。
 
