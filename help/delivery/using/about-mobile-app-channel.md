@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+source-git-commit: 92c79e7050124bc707f4d6b87c7952016586002c
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 2%
@@ -30,7 +30,7 @@ ht-degree: 2%
 
   >[!IMPORTANT]
   >
-  >Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响Adobe Campaign实施。 您可能需要更新Android推送消息的订阅服务配置才能支持此更改。 您已经可以检查并执行操作。 在本节中了解详情 [Adobe Campaign v8技术说明](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+  >Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响Adobe Campaign实施。 您可能需要更新Android推送消息的订阅服务配置才能支持此更改。 您已经可以检查并执行操作。 在本节中了解详情 [Adobe Campaign v8技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
 
 与这两个渠道相对应，活动工作流中有两个投放活动。 两个事务性消息模板也可用于事务性消息传递。
 
