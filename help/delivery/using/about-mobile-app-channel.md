@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '684'
 ht-degree: 2%
 
 ---
@@ -17,10 +17,6 @@ ht-degree: 2%
 # 移动应用程序渠道入门{#about-mobile-app-channel}
 
 此 **移动应用程序渠道** 允许您使用Adobe Campaign平台通过应用程序向iOS和Android终端发送个性化的推送通知。
-
->[!CAUTION]
->
->本文档详细介绍将移动应用程序与Adobe Campaign平台集成的过程。 它不提供有关如何创建移动应用程序以及如何配置移动应用程序以管理通知的信息。 如果您想了解有关此内容的更多信息，请参阅官方的Apple [文档](https://developer.apple.com/) 和Android [文档](https://developer.android.com/index.html).
 
 提供了两个投放渠道：
 
@@ -32,14 +28,14 @@ ht-degree: 2%
 
   ![](assets/nmac_intro_1.png)
 
-与这两个渠道相对应，活动工作流中有两个投放活动：
+  >[!IMPORTANT]
+  >
+  >Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响Adobe Campaign实施。 您可能需要更新Android推送消息的订阅服务配置才能支持此更改。 您已经可以检查并执行操作。 在本节中了解详情 [Adobe Campaign v8技术说明](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+
+与这两个渠道相对应，活动工作流中有两个投放活动。 两个事务性消息模板也可用于事务性消息传递。
 
 ![](assets/nmac_intro_3.png)
 
-
->[!NOTE]
->
->两个事务性消息模板也可用于事务性消息传递。
 
 您可以定义当用户激活通知以显示与应用程序上下文匹配的屏幕时的应用程序行为。 例如：
 
@@ -94,7 +90,7 @@ Adobe Campaign服务器必须能够与iOS HTTP/2连接器的443端口上的APNs�
   api.development.push.apple.com:443
   ```
 
-* 生产中:
+* 生产中：
 
   ```
   api.push.apple.com:443

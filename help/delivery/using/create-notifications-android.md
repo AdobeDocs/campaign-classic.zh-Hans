@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 feature: Push
 role: User, Developer, Data Engineer
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 2%
+source-wordcount: '654'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 2%
 * **[!UICONTROL Notification message]**，由FCM SDK自动处理。
   <br> FCM会代表客户端应用程序在用户设备上自动显示消息。 通知消息包含预定义的一组参数和选项，但仍可以使用自定义应用程序变量进一步个性化。
 
-有关Firebase Cloud Messaging消息类型的详细信息，请参阅 [FCM文档](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages).
+有关Firebase Cloud Messaging消息类型的详细信息，请参阅 [FCM文档](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages){target="_blank"}.
+
 
 ## 创建数据消息 {#creating-data-message}
 
@@ -68,11 +69,7 @@ ht-degree: 2%
 
 ## 创建通知消息 {#creating-notification-message}
 
->[!NOTE]
->
->通知消息的其他选项仅在HTTP v1 API配置中可用。 有关更多信息，请参阅此](configuring-the-mobile-application-android.md#android-service-httpv1)章节[。
-
-![](assets/do-not-localize/how-to-video.png) [了解如何在视频中创建Android推送通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources)
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频中创建Android推送通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}.
 
 1. 转到 **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
@@ -103,7 +100,7 @@ ht-degree: 2%
    * **[!UICONTROL Tag]**：设置用于替换通知抽屉中现有通知的标识符。
    * **[!UICONTROL Click action]**：设置与用户单击您的通知关联的操作。
 
-   欲知详情，请参阅 **[!UICONTROL Notification options]** 以及如何填写这些字段，请参阅 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
+   欲知详情，请参阅 **[!UICONTROL Notification options]** 以及如何填写这些字段，请参阅 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
 
    ![](assets/nmac_android_8.png)
 
@@ -116,7 +113,7 @@ ht-degree: 2%
    * **[!UICONTROL Notification Priority]**：将通知的优先级设置为“默认”、“最小”、“低”或“高”。 有关详细信息，请参见 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
    * **[!UICONTROL Visibility]**：将通知的可见性级别设置为public、private或secret。 有关详细信息，请参见 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
 
-   欲知详情，请参阅 **[!UICONTROL HTTP v1 additional options]** 以及如何填写这些字段，请参阅 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
+   欲知详情，请参阅 **[!UICONTROL HTTP v1 additional options]** 以及如何填写这些字段，请参阅 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
 
    ![](assets/nmac_android_9.png)
 

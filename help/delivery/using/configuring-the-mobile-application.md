@@ -6,22 +6,16 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 7%
+source-wordcount: '621'
+ht-degree: 4%
 
 ---
 
 # iOS 配置步骤 {#configuring-the-mobile-application-in-adobe-campaign-ios}
 
-
-
 安装包后，您可以在Adobe Campaign Classic中定义iOS应用程序设置。
-
->[!NOTE]
->
->要了解如何为Android配置应用程序以及如何为Android创建投放，请参阅此 [部分](configuring-the-mobile-application-android.md).
 
 关键步骤包括：
 
@@ -30,7 +24,6 @@ ht-degree: 7%
 1. [在Campaign中集成iOS移动应用程序](#creating-ios-app)
 
 然后，您将能够 [为iOS设备创建推送通知](create-notifications-ios.md).
-
 
 ## 配置iOS外部帐户 {#configuring-external-account-ios}
 
@@ -102,7 +95,7 @@ ht-degree: 7%
 
 1. 单击 **[!UICONTROL Next]** 以开始配置开发应用程序。
 
-1. 确保相同 **[!UICONTROL Integration key]** 在Adobe Campaign中以及通过SDK在应用程序代码中定义。 有关详细信息，请参见[此页面](integrating-campaign-sdk-into-the-mobile-application.md)。此集成键特定于每个应用程序，允许您将移动应用程序链接到Adobe Campaign平台。
+1. 确保相同 **[!UICONTROL Integration key]** 在Adobe Campaign中以及通过SDK在应用程序代码中定义。 有关详细信息，请参见 [此页面](integrating-campaign-sdk-into-the-mobile-application.md). 此集成键特定于每个应用程序，允许您将移动应用程序链接到Adobe Campaign平台。
 
    >[!NOTE]
    >

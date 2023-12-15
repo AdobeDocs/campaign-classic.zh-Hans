@@ -3,7 +3,8 @@ title: 将技术用户迁移到Adobe Developer控制台
 description: 了解如何将Campaign技术操作员迁移到Adobe Developer控制台上的技术帐户
 feature: Technote
 role: Admin
-source-git-commit: 68d1f5ae0089a0c447acf67c28c27f4e1069a218
+exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
+source-git-commit: bc9367d598474b7971f25c27980ff25dd93bf87a
 workflow-type: tm+mt
 source-wordcount: '1646'
 ht-degree: 0%
