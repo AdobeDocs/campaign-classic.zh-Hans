@@ -7,7 +7,7 @@ user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户�
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2544'
 ht-degree: 100%
 
