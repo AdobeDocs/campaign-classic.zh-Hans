@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f2e6db9e198f96e1e0250d461b419ac00e39bf45
-workflow-type: ht
-source-wordcount: '2221'
-ht-degree: 100%
+source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
+workflow-type: tm+mt
+source-wordcount: '2258'
+ht-degree: 97%
 
 ---
 
@@ -20,20 +20,20 @@ ht-degree: 100%
 
 ## 7.3.5 版 - 内部版本 9368 {#release-7-3-5}
 
-[!BADGE 正式发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
+[!BADGE 正式发布版]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
 
 
 _2023 年 12 月 5 日_
 
 
-**安全性增强**
+### 安全性增强 {#release-7-3-5-security}
 
 
 * 在 Campaign Classic v7.3.5 中，身份验证过程已得到改进并受保护。现在，技术操作员应使用 Adobe Identity Management System (IMS) 连接到 Campaign。请阅读[此技术说明](../../technotes/using/ims-migration.md)，了解如何迁移现有技术帐户。
 
 * 此外，作为加强安全和身份验证过程的一部分，Adobe Campaign 强烈建议将终端用户身份验证模式从登录/密码本机身份验证迁移到 Adobe Identity Management System (IMS)。请阅读[此技术说明](../../technotes/using/migrate-users-to-ims.md)，了解如何迁移操作员。
 
-**修补程序**
+### 修补程序 {#release-7-3-5-patches}
 
 * 修复了使用 Google Big Query 数据库中的数据和更新 Oracle 数据库中的数据时出现的问题：在工作流临时表中，将所有键都设置为 `0`。(NEO-65091)
 * 修复了当 Google Big Query 数据库上的两个查询合并到 **Union** 工作流活动中时导致工作流执行失败的问题。(NEO-63705)
@@ -48,27 +48,28 @@ _2023 年 12 月 5 日_
 
 [!BADGE 有限发布版]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
 
+
 >[!CAUTION]
 >
 >必须升级客户端控制台。在[此页面](../../installation/using/installing-the-client-console.md)中了解如何升级您的客户端控制台。
 >
-> 如果您使用 [Campaign - Microsoft Dynamics CRM 连接器](../../platform/using/crm-connectors.md)，您必须使用此全新内部版本升级营销和中间源服务器。
+>如果您使用 [Campaign - Microsoft Dynamics CRM 连接器](../../platform/using/crm-connectors.md)，您必须使用此全新内部版本升级营销和中间源服务器。
 
 _2023 年 9 月 7 日_
 
-**安全性增强**
+### 安全性增强 {#release-7-3-4-security}
 
 * 提高了 IMS API 的安全性。已从 URL 参数中移除客户端敏感信息（即访问令牌）。 这些凭据现在以 POST 数据或授权标头的形式发送，确保通信过程更加安全。(NEO-63045)
 * 提高了 Web 应用程序的安全性，以防止 DDOS 攻击。(NEO-50757)
 * 增强了安全性，以防止在 Web 日志错误中暴露 PII 数据。(NEO-46827)
 * 安全性已得到优化，以防止安全令牌包含在 Campaign 主页 URL 中。(NEO-38519)
 
-**兼容性更新**
+### 兼容性更新  {#release-7-3-4-compat}
 
 * Tomcat 已更新至 8.5.91 版
 * libexpat 库已更新至 2.5.0 以提高安全性。(NEO-51023)
 
-**改进**
+### 改进 {#release-7-3-4-improvements}
 
 * 修改了服务器配置文件 (serverConf.xml) 中的 MaxWorkingSetMb 参数，以优化投放的内存分配。(NEO-49204)
 * BigQuery 外部帐户已通过用于设置 GCloud SDK 的新选项得到增强。(NEO-63879) [阅读更多](../../installation/using/configure-fda-google-big-query.md#google-external)
@@ -76,7 +77,7 @@ _2023 年 9 月 7 日_
 * 跟踪日志管理得到了改进，以避免 lastMsgId 出现负 ID。已从 int32 更改为 int64。(NEO-52290)
 * 增添了开箱即用的中间源（投放统计数据）工作流程。这一新工作流可将投放统计数据 (nms:deliveryStat) 从中间实例同步到营销实例。(NEO-36802)
 
-**修补程序**
+### 修补程序 {#release-7-3-4-patches}
 
 * 修复了如果服务请求调用身份验证正在使用服务令牌，在 IMS 登录之前发出服务请求时可能发生的问题。(NEO-64903)
 * 修复了在使用数字内容编辑器时可能导致出现滚动问题的回退问题。(NEO-64671、NEO-59256)
@@ -117,17 +118,21 @@ _2023 年 9 月 7 日_
 
 [!BADGE 有限发布版]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
 
->[!CAUTION]
+>[!AVAILABILITY]
 >
->必须升级客户端控制台。在[此页面](../../installation/using/installing-the-client-console.md)中了解如何升级您的客户端控制台。
+>特定的Campaign v7.3.3.IMS修补程序升级适用于此版本 — 如果未将其他修补程序应用于您的环境。 它带来了 [Adobev7.3.5附带的Identity Management System (IMS)安全更新](#release-7-3-5-security) 到现有v7.3.3环境。
+
 
 _2023 年 3 月 20 日_
 
-**安全性增强**
+
+### 安全性增强 {#release-7-3-3-security}
 
 * 为了优化安全性，已将 Tomca 版本从 8.5.81 更新到 8.5.85。(NEO-56936)
 
-**改进**
+
+
+### 改进 {#release-7-3-3-improvements}
 
 * 改进了计费工作流以优化性能。(NEO-47658)
 * 改进了跟踪工作流程，从而优化在投放大小较高时的性能。(NEO-45064)
@@ -135,7 +140,11 @@ _2023 年 3 月 20 日_
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
-**修补程序**
+>[!CAUTION]
+>
+>必须升级客户端控制台。在[此页面](../../installation/using/installing-the-client-console.md)中了解如何升级您的客户端控制台。
+
+### 修补程序 {#release-7-3-3-patches}
 
 * 修复了一个可能导致无法从控制实例（事务性消息传递上下文）发送 iOS 验证推送通知的问题。(NEO-54713)
 * 修复了可能导致无法在数字内容编辑器 (DCE) 的&#x200B;**编辑**&#x200B;选项卡中滚动的问题。(NEO-54474)
@@ -145,13 +154,14 @@ _2023 年 3 月 20 日_
 
 [!BADGE 有限发布版]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
 
+<!--
+>[!AVAILABILITY]
+>
+>A specific Campaign v7.3.2.IMS patch upgrade is available for this version - if no other patch has been applied to your environment. It brings [Adobe Identity Management System (IMS) security updates coming with v7.3.5](#release-7-3-5-security) to existing v7.3.3 environments.-->
+
 _2022 年 11 月 21 日_
 
->[!CAUTION]
->
->必须升级客户端控制台。在[此页面](../../installation/using/installing-the-client-console.md)中了解如何升级您的客户端控制台。
-
-**兼容性更新**
+### 兼容性更新 {#release-7-3-2-compat}
 
 * Adobe Campaign 现与 PostgreSQL 14 兼容。有关更多信息，请参见此[技术说明](../../technotes/using/tech-stack-upgrade.md)。
 
@@ -159,20 +169,24 @@ _2022 年 11 月 21 日_
 
 在 [Campaign 兼容性矩阵](../../rn/using/compatibility-matrix.md#RDBMSservers)中了解详情。
 
-**改进**
+>[!CAUTION]
+>
+>必须升级客户端控制台。在[此页面](../../installation/using/installing-the-client-console.md)中了解如何升级您的客户端控制台。
+
+### 改进 {#release-7-3-2-improvements}
 
 * Google BigQuery 连接器现在完全支持布尔字段。(NEO-49181)
 * 您现在可以在 serverConf.xml 文件的 `Configuration for the redirection service` 部分配置 IMS Cookie 的有效期。这适用于以下 Cookie：`uuid230`、`nllastdelid` 和 `AMCV_` (NEO-42541)
 * 现在通过在 serverConf.xml 文件的重定向节点中将 `showSourceIP` 设置为“false”，可将 IP 在“/r/test”请求中隐藏。[了解更多信息](../../installation/using/the-server-configuration-file.md#redirection-redirection) (NEO-46656)
 
-**已弃用的功能**
+### 已弃用的功能  {#release-7-3-2-deprecated}
 
 * 通过 Facebook 进行社交媒体营销的功能现已弃用。您可以使用 X（以前称为 Twitter）集成在社交媒体上发布内容，或与 Adobe 合作创建自定义渠道。
 * ACS 连接器（高级服务）现已弃用。您可以使用 Campaign 的导出/导入功能来从两款产品中提取数据或向其中插入数据。
 
 在[已弃用和已删除的功能页面](deprecated-features.md)中了解详情。
 
-**其他变更**
+### 其他变更  {#release-7-3-2-other}
 
 * 网络日志已改进：`logonEscalation` 警告信息现在仅会向拥有管理员权限的用户显示。(NEO-47167)
 * 为避免出现错误，**为热图服务收集数据** (collectDataHeatMapService) 工作流现在会默认处于停止状态。(NEO-33959)
@@ -180,7 +194,7 @@ _2022 年 11 月 21 日_
 * 为防止出现崩溃，loadLibraryDebug JS 方法已被移除。(NEO-46968)
 * 对 log4j 库的其余引用已从 Windows 上的 Campaign 安装中移除。(NEO-44851)
 
-**修补程序**
+### 修补程序 {#release-7-3-2-patches}
 
 * 修复了会导致用户无法使用&#x200B;**合并所选行**&#x200B;工作流选项的问题。(NEO-48488)
 * 修复了在使用 Adobe Campaign 增强 MTA 时，无法正确更新 **Success** 传递指示器的问题。(NEO-50462)

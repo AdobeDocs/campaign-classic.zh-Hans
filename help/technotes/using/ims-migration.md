@@ -4,9 +4,9 @@ description: 了解如何将Campaign技术操作员迁移到Adobe Developer控�
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: bc9367d598474b7971f25c27980ff25dd93bf87a
+source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 如果您从Campaign外部的系统向Campaign营销实例或实时消息中心实例进行API调用，Adobe强烈建议您通过Adobe Developer控制台将技术操作员迁移到技术帐户，如下所述。
 
-此更改适用于Campaign Classicv7.3.5，并且 **必需** 以迁移到Adobe Campaign v8。
+此更改适用于从Campaign Classicv7.3.5(和最新的 [IMS迁移兼容版本](#ims-versions-tech))，并且是 **必需** 以迁移到Adobe Campaign v8。
 
 ## 迁移过程 {#ims-migration-procedure}
 
@@ -36,13 +36,24 @@ ht-degree: 0%
 * 更新API以使用新创建的技术帐户凭据
 * 从Campaign实例中删除旧版技术运算符
 
+
+### IMS迁移兼容版本 {#ims-versions-tech}
+
+此迁移的先决条件是将您的环境升级到以下产品版本之一：
+
+* Campaign v7.3.5（推荐）
+* Campaign v7.3.3.IMS
+  <!--* Campaign v7.3.2.IMS-->
+
+有关这些Campaign版本的详情，请参见 [发行说明](../../rn/using/latest-release.md).
+
 ### 迁移的先决条件{#ims-migration-prerequisites}
 
 <!--To be able to create the technical accounts which replace the technical operators, the prerequisite that the proper Campaign Product Profiles exist within the Admin Console for all Campaign instances need to be validated. You can learn more about Product Profiles within the Adobe Console in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.-->
 
 * Campaign托管客户和Managed Services客户
 
-  对于进入消息中心实例的API调用，在升级到Campaign v7.3.5期间或配置实例期间应已创建产品配置文件。 此产品配置文件的名称为：
+  对于进入消息中心实例的API调用，在升级到Campaign v7.3.5（或其他）期间应已创建产品配置文件 [IMS迁移兼容版本](#ims-versions-tech))，或在配置实例期间。 此产品配置文件的名称为：
 
   `campaign - <your campaign instance> - messagecenter`
 
@@ -227,7 +238,7 @@ You can now add your Campaign product profile to the project, as detailed below:
 
    ![](assets/do-not-translate/ims-updates-07.png)
 
-   在“凭据”屏幕中，向下滚动以找到**技术帐户电子邮件**，然后单击 **复制** 按钮。
+   在 **凭据详细信息** 选项卡，向下滚动以找到 **技术帐户电子邮件** 然后单击 **复制** 按钮。
 
    ![](assets/do-not-translate/ims-updates-08.png)
 

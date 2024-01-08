@@ -2,9 +2,9 @@
 title: 将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 description: 了解如何将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: bc9367d598474b7971f25c27980ff25dd93bf87a
+source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1221'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 请注意，在Campaign v8中，将不再允许使用用户/密码（又称本机身份验证）连接。 **Adobe建议在Campaign v7.3.5中执行此迁移，以便能够顺利迁移到Campaign v8。**
 
-本文详细介绍了将技术操作员迁移到Adobe Developer控制台上的技术帐户所需的步骤。
+
 
 ## 更改了哪些内容？{#move-to-ims-changes}
 
@@ -24,6 +24,8 @@ ht-degree: 2%
 此外，作为加强安全和身份验证过程的一部分，Adobe Campaign客户端应用程序现在使用IMS技术帐户令牌直接调用Campaign API。 有关技术操作员的迁移详情，请参阅中提供的专门文章 [此页面](ims-migration.md).
 
 此更改已在Campaign Classicv7中适用，并且将 **必需** 以迁移到Campaign v8。
+
+Adobe在此迁移工作中支持您。 您可以在下面文章中找到详细的上下文和分步指南。
 
 ## 您是否受影响？{#migrate-ims-impacts}
 
@@ -39,11 +41,21 @@ ht-degree: 2%
 
 在开始迁移过程之前，您必须联系Adobe过渡经理(适用于Managed Services客户)，或Adobe客户关怀（适用于其他托管客户），以便Adobe技术团队可以迁移现有操作员组和已命名权限，以AdobeIdentity Management System (IMS)。
 
+### IMS迁移兼容版本 {#ims-versions}
+
+此迁移的先决条件是将您的环境升级到以下产品版本之一：
+
+* Campaign v7.3.5（推荐）
+* Campaign v7.3.3.IMS
+  <!--* Campaign v7.3.2.IMS-->
+
+有关这些Campaign版本的详情，请参见 [发行说明](../../rn/using/latest-release.md).
+
 ### 关键步骤 {#ims-migration-steps}
 
 下面列出了此迁移的关键步骤：
 
-1. Adobe将您的环境升级到Campaign v7.3.5。
+1. Adobe将您的环境升级到Campaign v7.3.5(或者 [IMS迁移兼容版本](#ims-versions))。
 1. 升级后，您仍然可以使用这两种方法创建新用户，即作为本机用户或者使用IMS。
 1. 您的内部Campaign管理员必须向Campaign客户端控制台上的所有本地用户添加唯一的电子邮件，并在完成后向您的Adobe代表/客户关怀部门确认。  此步骤详见 [本节](#ims-migration-id).
 1. 与您的Adobe代表/客户关怀团队合作，确定Adobe运行非技术用户（操作员）和产品配置文件自动迁移的日期。 此步骤需要一个小时窗口，您的任何服务都不会出现停机。
@@ -58,7 +70,7 @@ ht-degree: 2%
 
 下面列出了此迁移的关键步骤：
 
-1. 将您的环境升级到Campaign v7.3.5。
+1. 将您的环境升级到Campaign v7.3.5(或者 [IMS迁移兼容版本](#ims-versions))。
 1. 升级后，您仍然可以使用这两种方法创建新用户，即作为本机用户或者使用IMS。
 1. 您的内部Campaign管理员必须配置Adobe IMS，如中所述 [本节](../../integrations/using/configuring-ims.md).
 1. 然后，将唯一的电子邮件添加到Campaign客户端控制台上的所有本机用户。 此步骤详见 [本节](#ims-migration-id).
@@ -73,13 +85,13 @@ ht-degree: 2%
 
 ### 我何时可以开始迁移？ {#ims-migration-start}
 
-迁移到的建议 [AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 是将您的环境升级到Campaign Classicv7.3.5。
+迁移到的建议 [AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 是将您的环境升级到Campaign Classicv7.3.5(或者 [IMS迁移兼容版本](#ims-versions))。
 
-升级到Campaign Classicv7.3.5后，您可以在暂存环境中启动IMS迁移，并相应地规划生产环境。
+升级到最新版本后，您可以在暂存环境中启动IMS迁移，并相应地规划生产环境。
 
 ### 将内部版本升级到Campaign Classicv7.3.5后会发生什么？ {#ims-migration-after-upgrade}
 
-环境升级到Campaign Classicv7.3.5后，您可以开始过渡到 [AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}.
+在您的环境升级到Campaign Classicv7.3.5后(或 [IMS迁移兼容版本](#ims-versions))，您可以启动过渡到 [AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}.
 
 ### 迁移何时完成？ {#ims-migration-end}
 
@@ -87,7 +99,7 @@ ht-degree: 2%
 
 ### 如何在迁移后创建用户？ {#ims-migration-native}
 
-Adobe建议在升级到Campaign Classic v7.3.5后仅创建IMS用户。
+Adobe建议在升级到Campaign Classic v7.3.5后仅创建IMS用户(或者 [IMS迁移兼容版本](#ims-versions))。
 
 作为Campaign管理员，您可以通过Adobe Admin Console和Campaign Client Console向组织用户授予权限。 用户使用其Adobe ID登录到Adobe Campaign。 了解如何在中使用IMS设置权限 [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html){target="_blank"}.
 
