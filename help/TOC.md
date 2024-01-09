@@ -3,18 +3,18 @@ audience: end-user
 breadcrumb-title: Campaign Classic v7 文档
 product: campaign
 title: Campaign Classic v7 指南
-user-guide-description: 借助 Adobe Campaign，您可以使用丰富的客户数据创建、协调和提供客户真正想要的动态营销活动，通过电子邮件、移动设备、线下渠道等方式进行投放。
+user-guide-description: Adobe Campaign Classic v7的产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
+source-git-commit: cb1f079fbb7af6bb6645aae86261ca723fd97c3a
 workflow-type: tm+mt
-source-wordcount: '2544'
-ht-degree: 100%
+source-wordcount: '2524'
+ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic v7 文档 {#using}
+# Adobe Campaign Classic v7文档 {#using}
 
 + [Campaign v7 文档](campaign-classic-home.md)
 + [最近更新](rn/using/documentation-updates.md)
@@ -841,3 +841,7 @@ ht-degree: 100%
       + [迁移到公共云](technotes/using/dc-migration.md)
       + [常见问题解答](technotes/using/dc-migration-faq.md)
 + [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
+
+<!--
+With Adobe Campaign Classic v7, you can use rich customer data to create, coordinate, and deliver dynamic campaigns that customers actually want — through email, mobile, offline channels, and more.
+-->
