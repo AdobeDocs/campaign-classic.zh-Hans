@@ -4,23 +4,22 @@ title: IMS 故障排除
 description: IMS 故障排除
 feature: Configuration
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 49271e291953483ee14709b26ec053217a336718
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 2%
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
 
 # IMS 故障排除{#ims-troubleshooting}
 
 
-
-以下故障诊断提示将有所帮助 **内部部署** 客户可以解决使用IMS集成时最常见的问题。 对象 **托管** 客户，请联系Adobe。
+以下故障诊断提示将有所帮助 **内部部署** 和 **混合** 客户可以解决使用IMS集成时最常见的问题。 对象 **托管** 客户，请联系Adobe。
 
 **外部帐户**
 
