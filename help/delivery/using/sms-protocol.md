@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: SMS 连接器协议和设置
+title: 短信连接器协议和设置
 description: 了解关于短信连接器和配置方法的更多信息
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 73fd678d54ba1db647c1c188e8064b28466b3cd2
 workflow-type: tm+mt
-source-wordcount: '8458'
+source-wordcount: '8448'
 ht-degree: 1%
 
 ---
 
-# SMS 连接器协议和设置 {#sms-connector-protocol}
+# 短信连接器协议和设置 {#sms-connector-protocol}
 
 >[!NOTE]
 >
@@ -358,7 +358,7 @@ SMS消息使用特殊的7位编码，通常称为GSM7编码。
 
 | 编码 | 常用数据编码 | 消息大小（字符） | 多部分短信的部分大小 | 可用字符 |
 |:-:|:-:|:-:|:-:|:-:|
-| GSM 7 | 0 | 160 | 152 | GSM7基本字符集+扩展（扩展字符占2个字符） |
+| GSM7 | 0 | 160 | 152 | GSM7基本字符集+扩展（扩展字符占2个字符） |
 | Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode（因手机而异） |
 
@@ -412,7 +412,7 @@ Adobe Campaign Classic Extended SMPP连接器可以控制每个MTA子级的连�
 
 对于Adobe Campaign Classic，可能存在其他数量的接收器和发射器连接：
 
-* **发射器连接数= MTA子连接数* MTA子进程数* MTA数 </br> （如果设置了自动回复）+ MTA子连接数**
+* **发射器连接= MTA子连接数* MTA子进程数* MTA数（如果已设置自动回复） * MTA子连接数**
 
 如上所述，如果启用了自动回复，Adobe Campaign Classic短信进程将打开更多发送器连接。 这些额外的连接用于发送自动回复。
 
@@ -547,7 +547,7 @@ TCP连接尝试与 `BIND_*_RESP` 回复。 如果超时，连接将被Adobe Camp
 
 `enquire_link` 是一种特殊类型的PDU，发送后可保持连接处于活动状态。 此时间段以秒为单位。 Campaign连接器仅发送 `enquire_link` 连接空闲以节省带宽时。 如果在此时间段后两次未收到RESP，则连接将被视为无效，并触发重新连接过程。
 
-### SMSC 详情 {#SMSC-specifics}
+### SMSC详情 {#SMSC-specifics}
 
 这些设置是高级设置，可使Adobe Campaign连接器适应大多数SMPP实施特点。
 
@@ -603,8 +603,8 @@ MTA将尝试使用列表中的第一个编码进行编码。 如果失败，则�
 您可以在三个不同的证书验证值之间进行选择：
 
 * 完整的认证检查（包括主机名），默认。
-* 跳过主机名验证.
-* 跳过证书验证.
+* 跳过主机名验证。
+* 跳过证书验证。
 
 #### 绑定TON/NPI {#bind-ton-npi}
 
@@ -676,7 +676,7 @@ SMPP协议规范未严格强制实施SR格式。 它只是中描述的建议 [�
 
 这表示捕获的ID的格式 `Extraction` sr中ID的正则表达式。 值与上述MT中的格式具有相同的含义和行为。
 
-**可选字段中的 SR ID 或错误代码**
+**可选字段中的SR ID或错误代码**
 
 >[!NOTE]
 >
@@ -702,7 +702,7 @@ SMPP协议规范未严格强制实施SR格式。 它只是中描述的建议 [�
 >
 >您只能捕获具有文本(ASCII/UTF-8)值的可选字段。 具体而言，使用当前的正则表达式系统无法可靠地捕获二进制字段。
 
-**文本字段中的 SR ID 或错误代码**
+**文本字段中的SR ID或错误代码**
 
 如果选中， **文本** 字段将在处理SR的状态文本期间保留。
 
@@ -716,7 +716,7 @@ SMPP协议规范未严格强制实施SR格式。 它只是中描述的建议 [�
 
 此设置仅允许每条消息添加一个TLV选项。
 
-### 发送给 MO 的自动回复 {#automatic-reply}
+### 自动回复发送至 MO {#automatic-reply}
 
 >[!IMPORTANT]
 >
