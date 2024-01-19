@@ -7,14 +7,14 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: cb1f079fbb7af6bb6645aae86261ca723fd97c3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Adobe Campaign Classic v7文档 {#using}
+# Adobe Campaign Classic v7 文档 {#using}
 
 + [Campaign v7 文档](campaign-classic-home.md)
 + [最近更新](rn/using/documentation-updates.md)
