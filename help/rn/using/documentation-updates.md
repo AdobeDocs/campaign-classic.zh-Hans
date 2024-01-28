@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 31705e7dd0ecb4e66fe4a22369995384d3ce39d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3680'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 
 ### 2024 年 1 月 {#jan-2024}
 
-新增了有关如何定义直邮的默认邮政地址字段以及确保地址完整的重要原因的信息。 [了解更多信息](../../delivery/using/about-direct-mail-channel.md)
+添加了有关如何定义直邮的默认 postalAddress 字段以及为什么确保地址完整很重要的信息。[了解更多信息](../../delivery/using/about-direct-mail-channel.md)
 
 ## 2023
 
