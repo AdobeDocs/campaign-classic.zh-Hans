@@ -7,14 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: SMS
 role: User, Developer, Admin
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 34%
+source-wordcount: '1751'
+ht-degree: 27%
 
 ---
 
-# 配置短信渠道 {#setting-up-sms-channel}
+# 在独立实例上配置短信渠道 {#setting-up-sms-channel}
 
 要发送到手机，您需要：
 
@@ -75,7 +75,7 @@ ht-degree: 34%
 
    ![](assets/extended_smpp_transliteration.png)
 
-   如需详细信息，请参阅[此部分](#about-character-transliteration)。
+   如需详细信息，请参阅[此小节](#about-character-transliteration)。
 
 1. 在 **[!UICONTROL Throughput and delays]** 选项卡上，您可以指定叫客消息(“MT”，Mobile Terminated)的最大吞吐量，以每秒MT为单位。 如果在对应的字段中输入“0”，则吞吐量将没有限制。
 
@@ -83,7 +83,7 @@ ht-degree: 34%
 
 1. 在 **[!UICONTROL Mapping of encodings]** 选项卡，您可以定义编码。
 
-   如需详细信息，请参阅[此部分](#about-text-encodings)。
+   如需详细信息，请参阅[此小节](#about-text-encodings)。
 
 1. 在 **[!UICONTROL SMSC specificities]** 选项卡， **[!UICONTROL Send full phone number]** 选项默认处于禁用状态。 如果要遵守SMPP协议，并且只向SMS提供商(SMSC)的服务器传输数字，请勿启用此项。
 
@@ -93,7 +93,7 @@ ht-degree: 34%
 
 1. 如果您正在配置 **[!UICONTROL Extended generic SMPP]** 连接器，您可以设置自动回复。
 
-   如需详细信息，请参阅[此部分](#automatic-reply)。
+   如需详细信息，请参阅[此小节](#automatic-reply)。
 
 ## 短信字符音译 {#about-character-transliteration}
 
@@ -106,13 +106,13 @@ ht-degree: 34%
 
 >[!IMPORTANT]
 >
->将个性化字段插入短信消息内容，可能会引入 GSM 编码无法识别的字符。
+>将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。
 
 默认情况下，字符音译处于禁用状态。如果您希望将短信消息中的所有字符都按原样保留，以免名称等内容被错误地更改，我们建议您不要启用此选项。
 
 但是，如果短信消息包含大量会生成 Unicode 消息的字符，则可以选择加入此选项以限制发送消息的成本。
 
-下表列出了GSM标准可识别的字符。 除下方所列的字符外，插入消息正文的所有其他字符都会导致整个消息被转换为二进制格式 (Unicode)，从而使其长度限制变成 70 个字符。
+下表列出了GSM标准可识别的字符。 除下面提及的字符外，插入消息正文的所有其他字符都会将整个消息转换为二进制格式(Unicode)，因此将其限制为70个字符。
 
 **基本字符**
 
@@ -123,15 +123,15 @@ ht-degree: 34%
    <td> <img height="21px" src="assets/delta.png" /> </td> 
    <td> SP </td> 
    <td> 0 </td> 
-   <td> ¡ </td> 
+   <td> ¡AEM </td> 
    <td> P </td> 
-   <td> ¿ </td> 
+   <td> ？ </td> 
    <td> p </td> 
   </tr> 
   <tr> 
    <td> £ </td> 
    <td> _ </td> 
-   <td> ! </td> 
+   <td> ！ </td> 
    <td> 1 </td> 
    <td> A </td> 
    <td> Q </td> 
@@ -149,7 +149,7 @@ ht-degree: 34%
    <td> r </td> 
   </tr> 
   <tr> 
-   <td> ¥ </td> 
+   <td> £ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> # </td> 
    <td> 3 </td> 
@@ -159,9 +159,9 @@ ht-degree: 34%
    <td> s </td> 
   </tr> 
   <tr> 
-   <td> è </td> 
+   <td> e </td> 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
-   <td> ¤ </td> 
+   <td> ¤AEM </td> 
    <td> 4 </td> 
    <td> D </td> 
    <td> T </td> 
@@ -179,9 +179,9 @@ ht-degree: 34%
    <td> u </td> 
   </tr> 
   <tr> 
-   <td> ù </td> 
+   <td> u </td> 
    <td> <img height="21px" src="assets/pi.png" /> </td> 
-   <td> &amp; </td> 
+   <td> 和 </td> 
    <td> 6 </td> 
    <td> F </td> 
    <td> V </td> 
@@ -189,9 +189,9 @@ ht-degree: 34%
    <td> v </td> 
   </tr> 
   <tr> 
-   <td> ì </td> 
+   <td> i </td> 
    <td> <img height="21px" src="assets/psi.png" /> </td> 
-   <td> ' </td> 
+   <td> ’ </td> 
    <td> 7 </td> 
    <td> G </td> 
    <td> W </td> 
@@ -199,7 +199,7 @@ ht-degree: 34%
    <td> w </td> 
   </tr> 
   <tr> 
-   <td> ò </td> 
+   <td> ö </td> 
    <td> <img height="21px" src="assets/sigma.png" /> </td> 
    <td> ( </td> 
    <td> 8 </td> 
@@ -209,7 +209,7 @@ ht-degree: 34%
    <td> x </td> 
   </tr> 
   <tr> 
-   <td> Ç </td> 
+   <td> C </td> 
    <td> <img height="21px" src="assets/theta.png" /> </td> 
    <td> ) </td> 
    <td> 9 </td> 
@@ -219,10 +219,10 @@ ht-degree: 34%
    <td> y </td> 
   </tr> 
   <tr> 
-   <td> LF </td> 
+   <td> 换行 </td> 
    <td> <img height="21px" src="assets/xi.png" /> </td> 
    <td> * </td> 
-   <td> : </td> 
+   <td> ： </td> 
    <td> J </td> 
    <td> Z </td> 
    <td> j </td> 
@@ -232,16 +232,16 @@ ht-degree: 34%
    <td> Ø </td> 
    <td> ESC </td> 
    <td> + </td> 
-   <td> ; </td> 
+   <td> ； </td> 
    <td> K </td> 
-   <td> Ä </td> 
+   <td> 一 </td> 
    <td> k </td> 
-   <td> ä </td> 
+   <td> a </td> 
   </tr> 
   <tr> 
    <td> ø </td> 
-   <td> Æ </td> 
-   <td> , </td> 
+   <td> AE </td> 
+   <td> ， </td> 
    <td> &lt; </td> 
    <td> L </td> 
    <td> Ö </td> 
@@ -249,14 +249,14 @@ ht-degree: 34%
    <td> ö </td> 
   </tr> 
   <tr> 
-   <td> CR </td> 
-   <td> æ </td> 
+   <td> 回车 </td> 
+   <td> “ ”标签 </td> 
    <td> - </td> 
    <td> = </td> 
    <td> M </td> 
-   <td> Ñ </td> 
+   <td> 否 </td> 
    <td> m </td> 
-   <td> ñ </td> 
+   <td> n </td> 
   </tr> 
   <tr> 
    <td> Å </td> 
@@ -264,18 +264,18 @@ ht-degree: 34%
    <td> 。 </td> 
    <td> &gt; </td> 
    <td> N </td> 
-   <td> Ü </td> 
+   <td> U </td> 
    <td> n </td> 
-   <td> ü </td> 
+   <td> u </td> 
   </tr> 
   <tr> 
-   <td> å </td> 
+   <td> a </td> 
    <td> É </td> 
    <td> / </td> 
    <td> ? </td> 
    <td> O </td> 
    <td> § </td> 
-   <td> o </td> 
+   <td> ö </td> 
    <td> à </td> 
   </tr> 
  </tbody> 

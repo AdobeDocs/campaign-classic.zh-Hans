@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: cb1f079fbb7af6bb6645aae86261ca723fd97c3a
-workflow-type: ht
-source-wordcount: '2524'
-ht-degree: 100%
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
+workflow-type: tm+mt
+source-wordcount: '2536'
+ht-degree: 99%
 
 ---
 
@@ -141,7 +141,9 @@ ht-degree: 100%
       + [附加文件](delivery/using/attaching-files.md)
    + 发送短信 {#sending-messages-on-mobiles}
       + [短信入门](delivery/using/sms-channel.md)
-      + [配置短信渠道](delivery/using/sms-set-up.md)
+      + 配置短信渠道 {#sms-set-up}
+         + [在独立实例上配置短信](delivery/using/sms-set-up.md)
+         + [在中间源基础设施上配置短信](delivery/using/sms-set-up-mid.md)
       + [创建短信](delivery/using/sms-create.md)
       + [发送和跟踪短信](delivery/using/sms-send.md)
       + [短信连接器协议和设置](delivery/using/sms-protocol.md)
