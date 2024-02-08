@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3699'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 
 添加了有关如何定义直邮的默认 postalAddress 字段以及为什么确保地址完整很重要的信息。[了解更多信息](../../delivery/using/about-direct-mail-channel.md)
 
-添加了有关如何在中间源基础架构上的Campaign中配置短信渠道的新页面。 [了解更多信息](../../delivery/using/sms-set-up-mid.md)
+添加了有关如何在中间源基础架构上的 Campaign 中配置短信渠道的新页面。[了解更多信息](../../delivery/using/sms-set-up-mid.md)
 
 ## 2023
 
