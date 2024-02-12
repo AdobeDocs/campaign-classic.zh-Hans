@@ -2,9 +2,9 @@
 title: 将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 description: 了解如何将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
+source-git-commit: 1879fe179381be654bad876de2423d25049db43c
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1280'
 ht-degree: 2%
 
 ---
@@ -132,6 +132,24 @@ Adobe强烈建议在迁移时段注销所有用户。
 此迁移包括两个方面：最终用户迁移（以及产品配置文件）和技术用户迁移（用于自定义代码中的API）。
 
 如果所有用户（Campaign操作员）都在IMS上，则仍需要联系Adobe代表/客户支持以计划产品配置文件迁移。 您还需要迁移可能在自定义代码中使用的技术用户。 请参阅[此页面](ims-migration.md)以了解详情。
+
+### 如何查看操作员的身份验证类型？
+
+了解如何在Campaign中查看操作员的身份验证类型：
+
+1. 从 **资源管理器**，访问 **管理** `>` **访问管理** `>` **运算符**.
+
+1. 右键单击标题行并选择 **配置列表** 菜单。
+
+   ![](assets/ims_2.png)
+
+1. 添加 **帐户已禁用** 和 **身份验证类型** 作为 **输出列**.
+
+   ![](assets/ims_1.png)
+
+您现在可以看到您的 **运算符** 和他们的 **身份验证类型**.
+
+![](assets/ims_3.png)
 
 ## 有用的链接 {#ims-useful-links}
 
