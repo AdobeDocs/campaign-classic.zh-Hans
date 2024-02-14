@@ -9,16 +9,14 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: a2106e55617209f28da42c50008d16188563b2da
+source-git-commit: 58998fa2480a33776507a434ed846541ac19e58b
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 8%
+source-wordcount: '517'
+ht-degree: 5%
 
 ---
 
 # 压缩或加密文件 {#zipping-or-encrypting-a-file}
-
-
 
 Adobe Campaign允许您导出压缩或加密文件。 通过定义导出时 **[!UICONTROL Data extraction (file)]** 活动，您可以将后处理定义为zip或加密文件。
 
@@ -45,7 +43,7 @@ Adobe Campaign允许您导出压缩或加密文件。 通过定义导出时 **[!
 
 在此使用案例中，我们将构建一个工作流，以便使用安装在控制面板上的密钥加密和导出数据。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#video)
 
 执行此用例的步骤如下：
 
@@ -60,7 +58,7 @@ Adobe Campaign允许您导出压缩或加密文件。 通过定义导出时 **[!
    * **[!UICONTROL JavaScript code]** 活动：加密要提取的数据。
    * **[!UICONTROL File transfer]** 活动：将数据发送到外部源（在本例中为SFTP服务器）。
 
-1. 配置 **[!UICONTROL Query]** 活动，从数据库中定位所需的数据。 如需详细信息，请参阅[此部分](../../workflow/using/query.md)。
+1. 配置 **[!UICONTROL Query]** 活动，从数据库中定位所需的数据。 如需详细信息，请参阅[此小节](../../workflow/using/query.md)。
 
 1. 打开 **[!UICONTROL Data extraction (file)]** 活动，然后根据需要进行配置。 有关如何配置活动的全局概念，请参见 [本节](../../workflow/using/extraction--file-.md).
 
