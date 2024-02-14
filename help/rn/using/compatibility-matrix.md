@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 3db5242e2074c6d0530258073ae83c11164d7365
-workflow-type: ht
-source-wordcount: '772'
-ht-degree: 100%
+source-git-commit: e430978dd182eaea082122ef748118e5210b05d5
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 96%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 100%
 <tr> 
 <td>CentOs</td>
 <td>
+<p>8.x（仅适用于混合环境）</p>
 <p>7.x</p>
 <p><strong>重要说明：</strong>如果您使用的是 RHEL，则必须愿意禁用 SELinux，或者让架构师编写自定义 SELinux 规则来检查已启用的 SELinux 是否不会导致 Campaign 操作问题。</p>
 </td>
@@ -77,7 +78,7 @@ ht-degree: 100%
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>10.0 on Windows Server 2016和 2019</p>
+<p>Windows Server 2016和2019上的10.0</p>
 </td>
 </tr>
 <tr>
@@ -353,7 +354,7 @@ ht-degree: 100%
 
 ### Microsoft WebView2 运行时
 
-Microsoft Edge WebView2 运行时要使用 Campaign 客户端控制台，必须安装最新版本。
+Microsoft Edge WebView2运行时最新版本是Campaign客户端控制台的必需版本。
 
 从 [Microsoft 开发人员网站](https://www.adobe.com/go/acc-ms-webview2-runtime-download)下载 Microsoft Edge WebView2。
 
