@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 9%
+source-wordcount: '668'
+ht-degree: 7%
 
 ---
 
@@ -61,13 +61,13 @@ Adobe Campaign提供了多种工具来跟踪和改进平台的可投放性性能
 * [投放最佳实践](delivery-best-practices.md)
 * [控制电子邮件内容](control-message-content.md)
 * [收件箱呈现](inbox-rendering.md)
-* [发送验证](steps-validating-the-delivery.md#sending-a-proof)
+* [发送校样](steps-validating-the-delivery.md#sending-a-proof)
 
 ### 通过双重选择加入验证同意 {#double-opt-in}
 
 为避免将消息发送到无效地址、限制不当通信并提高发件人信誉，Adobe建议实施双重选择加入机制。 此方法使您能够确保收件人有意订阅。
 
-有关此内容的更多信息，请参阅[使用双重选择加入创建订阅表单](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)。
+有关此内容的更多信息，请参阅[使用双重选择加入创建订阅表单](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in)。
 
 有关从客户那里收集数据时的最佳实践的更多信息，请参阅 [Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene).
 

@@ -9,9 +9,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '344'
 ht-degree: 68%
 
 ---
@@ -34,9 +34,9 @@ ht-degree: 68%
 通过查看以下用例和示例，进一步了解 Adobe Campaign：
 
 * [根据订阅者的电子邮件格式创建过滤器](../../platform/using/use-case.md#creating-a-filter-on-the-email-format-of-subscribers)：了解如何根据收件人的电子邮件格式创建过滤器，从而排序新闻稿订阅。
-* [使用双重选择加入选项创建订阅窗体](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)：了解如何发送订阅确认请求，以创建双重选择加入，确保收件人是有意订阅内容。
-* [创建电子邮件投放内容](../../web/using/use-case--creating-an-email-delivery.md)：了解如何使用 Digital Content Editor 创建电子邮件投放内容。
-* [创建概要](../../web/using/use-cases--creating-overviews.md)：创建概要类型的 Web 应用程序，以显示数据库中的所有 Web 应用程序。
+* [使用双重选择加入选项创建订阅窗体](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in)：了解如何发送订阅确认请求，以创建双重选择加入，确保收件人是有意订阅内容。
+* [创建电子邮件投放内容](../../web/using/use-case-creating-an-email-delivery.md)：了解如何使用 Digital Content Editor 创建电子邮件投放内容。
+* [创建概要](../../web/using/use-cases-creating-overviews.md)：创建概要类型的 Web 应用程序，以显示数据库中的所有 Web 应用程序。
 * [工作流用例](../../workflow/using/about-workflow-use-cases.md)：通过这些用例了解工作流的不同使用方法。
 
 ## 自助 {#how-to-videos}

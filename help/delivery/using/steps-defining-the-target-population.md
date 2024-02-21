@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 3%
+source-wordcount: '1605'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 ## 选择投放的主要收件人 {#selecting-the-main-target}
 
-在大多数情况下，主目标会从Adobe Campaign数据库（默认模式）中提取。 但是，收件人也可以存储在外部文件中。 在[此章节](steps-defining-the-target-population.md#selecting-external-recipients)中了解更多信息。
+在大多数情况下，主目标会从Adobe Campaign数据库（默认模式）中提取。 但是，收件人也可以存储在外部文件中。 可在[此部分](steps-defining-the-target-population.md#selecting-external-recipients)中了解详情。
 
 要选择投放的收件人，请执行以下步骤：
 
@@ -163,7 +163,7 @@ ht-degree: 3%
 
 校样是一种特殊消息，允许您在将投放发送到主目标之前对其进行测试。 校样收件人负责审批消息的表单和内容。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#seeds-and-proofs-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#seeds-and-proofs-video)
 
 
 要选择校样目标，请执行以下步骤：
@@ -222,11 +222,11 @@ ht-degree: 3%
 
 您可以将特定验证目标的定义和种子地址的用法结合使用，使用 **[!UICONTROL Specific target and Seed addresses]** 选项。 随后，将在两个单独的子选项卡中定义相关配置。
 
-另请参阅:
+另请参阅：
 
 * [选择验证目标](#selecting-the-proof-target)
 * [关于种子地址](about-seed-addresses.md)
-* [用例：根据条件选择种子地址](use-case--selecting-seed-addresses-on-criteria.md)
+* [用例：根据条件选择种子地址](use-case-selecting-seed-addresses-on-criteria.md)
 
 ## 教程视频 {#seeds-and-proofs-video}
 

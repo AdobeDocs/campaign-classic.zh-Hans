@@ -6,10 +6,10 @@ role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Fatigue Management, Typology Rules, Campaigns
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '3274'
-ht-degree: 7%
+source-wordcount: '3343'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 根据定义的阈值和消息权重选择营销活动。
 
 * 阈值是在给定时段内为给定收件人授权的最大投放数量。 它可以为set或variable。 在分类规则设置中对其进行设置或计算。 请参阅 [最大消息数](#maximum-number-of-messages).
-* 利用投放权重，您可以确定压力管理框架内的优先级最高的投放。具有最高权重的消息优先。请参阅 [消息权重](#message-weight).
+* 利用投放权重，您可以确定压力管理框架内的优先级最高的投放。具有最高权重的消息具有优先级。 请参阅 [消息权重](#message-weight).
 
 仲裁包括确保权重大于正在进行的营销活动的计划营销活动不会导致过多的用户档案请求：如果是这种情况，则将从投放中排除用户档案。
 
@@ -107,13 +107,13 @@ ht-degree: 7%
 >
 >正在进入 **0** 作为阈值，会阻止在所考虑时段内向目标群体投放所有内容。
 
-**示例:**
+**示例：**
 
 您可以根据收件人所属的区段索引授权消息的数量。 这意味着属于Web区段的收件人可能会收到比其他收件人更多的消息。 An **[!UICONTROL Iif (@origin='Web', 5, 3)]** type formula授权向收件人投放5条消息，为其他区段投放3条消息。 配置将如下所示：
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-要定义阈值，您可以使用链接到定向维度的维度：例如，要包含投放到访客表中存储的收件人用户档案的消息(有关访客表的更多信息，请参阅 [本节](../../surveys/using/use-case--creating-a-refer-a-friend-form.md))，或避免每周向同一家庭发送多条消息（可能指多个电子邮件地址），这些消息在与收件人链接的维度中识别。
+要定义阈值，您可以使用链接到定向维度的维度：例如，要包含投放到访客表中存储的收件人用户档案的消息(有关访客表的更多信息，请参阅 [本节](../../surveys/using/use-case-creating-a-refer-a-friend-form.md))，或避免每周向同一家庭发送多条消息（可能指多个电子邮件地址），这些消息在与收件人链接的维度中识别。
 
 要执行此操作，请选择 **[!UICONTROL Count messages on a linked dimension]** 选项，然后选择访客或contact表。
 
@@ -128,7 +128,7 @@ ht-degree: 7%
 >对于每种投放，在类型规则中定义的权重可单独过载，具体情况如下： **[!UICONTROL Properties]** 选项卡。 单击 **[!UICONTROL Typology]** 选项卡以选择营销活动类型，并根据需要指定要应用的权重。\
 >但是，在A分类规则中声明的权重不会用于计算B分类规则：此权重将仅涉及使用A规则的投放。
 
-**示例:**
+**示例：**
 
 在以下示例中，我们希望将新闻稿在音乐中的权重与其收件人的倾向分数关联起来。 操作步骤：
 
@@ -170,7 +170,7 @@ ht-degree: 7%
 
 当时段高于0（例如1）时，计算阈值可能会考虑前天的投放。 因此，如果前一天对应于上一个日历周，并且所选的期间类型是“按日历周分组”，则将考虑所有上一周的计算阈值。
 
-**示例:**
+**示例：**
 
 我们希望创建一个压力规则，将每两周的请求限制为3条消息，并将分组限制在日历月份。
 
@@ -337,7 +337,7 @@ ht-degree: 7%
 
 现在，为要应用压力规则的每个投放创建和配置工作流。
 
-1. 创建营销策划. 如需详细信息，请参阅[此部分](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
+1. 创建营销策划。 如需详细信息，请参阅[此小节](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在 **[!UICONTROL Targeting and workflows]** 选项卡，添加 **查询** 活动添加到工作流。 有关使用此活动的更多信息，请参阅 [本节](../../workflow/using/query.md).
 1. 添加 **[!UICONTROL Email delivery]** 活动以打开工作流。 有关使用此活动的更多信息，请参阅 [本节](../../workflow/using/delivery.md).
 1. 转到 **[!UICONTROL Approvals]** 选项卡 **[!UICONTROL Delivery properties]** 并禁用所有审批。
@@ -369,7 +369,7 @@ ht-degree: 7%
   <tr> 
    <th> 投放<br /> </th> 
    <th> 审批<br /> </th> 
-   <th> 权重<br /> </th> 
+   <th> 粗细<br /> </th> 
    <th> 提取日期/时间<br /> </th> 
    <th> 联系日期<br /> </th> 
    <th> 投放开始日期/时间<br /> </th> 
@@ -383,9 +383,9 @@ ht-degree: 7%
    <td> 投放1<br /> </td> 
    <td> 已禁用<br /> </td> 
    <td> 5<br /> </td> 
-   <td> 3pm<br /> </td> 
+   <td> 下午3点<br /> </td> 
    <td> 上午8点（第二天）<br /> </td> 
-   <td> 2pm<br /> </td> 
+   <td> 下午2点<br /> </td> 
    <td> 每晚<br /> </td> 
    <td> 已排除<br /> </td> 
    <td> 已排除<br /> </td> 
@@ -394,9 +394,9 @@ ht-degree: 7%
    <td> 交付2<br /> </td> 
    <td> 已禁用<br /> </td> 
    <td> 10<br /> </td> 
-   <td> 4pm<br /> </td> 
+   <td> 下午4点<br /> </td> 
    <td> 上午9:00（第二天）<br /> </td> 
-   <td> 2pm<br /> </td> 
+   <td> 下午2点<br /> </td> 
    <td> 每晚<br /> </td> 
    <td> 已发送<br /> </td> 
    <td> 上午9:00（第二天）<br /> </td> 

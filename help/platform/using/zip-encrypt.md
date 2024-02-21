@@ -9,7 +9,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 58998fa2480a33776507a434ed846541ac19e58b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 5%
@@ -37,7 +37,7 @@ Adobe Campaign允许您导出压缩或加密文件。 通过定义导出时 **[!
 **相关主题：**
 
 * [在处理之前解压缩或解密文件](../../platform/using/unzip-decrypt.md)
-* [数据提取（文件）活动](../../workflow/using/extraction--file-.md).
+* [数据提取（文件）活动](../../workflow/using/extraction-file.md).
 
 ## 用例：使用安装在控制面板上的密钥加密和导出数据 {#use-case-gpg-encrypt}
 
@@ -60,7 +60,7 @@ Adobe Campaign允许您导出压缩或加密文件。 通过定义导出时 **[!
 
 1. 配置 **[!UICONTROL Query]** 活动，从数据库中定位所需的数据。 如需详细信息，请参阅[此小节](../../workflow/using/query.md)。
 
-1. 打开 **[!UICONTROL Data extraction (file)]** 活动，然后根据需要进行配置。 有关如何配置活动的全局概念，请参见 [本节](../../workflow/using/extraction--file-.md).
+1. 打开 **[!UICONTROL Data extraction (file)]** 活动，然后根据需要进行配置。 有关如何配置活动的全局概念，请参见 [本节](../../workflow/using/extraction-file.md).
 
    ![](assets/gpg-data-extraction.png)
 

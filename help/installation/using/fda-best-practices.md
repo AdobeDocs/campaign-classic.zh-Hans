@@ -3,15 +3,15 @@ product: campaign
 title: Campaign FDA最佳实践和限制
 description: 了解使用外部数据库(FDA)时的最佳实践和限制
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 7%
 
 * **创建子集** - [Split](../../workflow/using/split.md) 利用活动，可创建子集。 您可以使用外部数据来定义要使用的筛选条件。 有关详细信息，请参见[此页面](../../workflow/using/split.md)。
 
-* **加载外部数据库**  — 您可以使用中的外部数据 [正在加载数据](../../workflow/using/data-loading--rdbms-.md) (RDBMS)活动。 请参阅[此页面](../../workflow/using/data-loading--rdbms-.md)以了解详情。
+* **加载外部数据库**  — 您可以使用中的外部数据 [正在加载数据](../../workflow/using/data-loading-rdbms.md) (RDBMS)活动。 请参阅[此页面](../../workflow/using/data-loading-rdbms.md)以了解详情。
 
 * **添加信息和链接** - [扩充](../../workflow/using/enrichment.md) 利用活动，可向工作流的工作表添加其他数据，以及指向外部表的链接。 在这种情况下，它可以使用来自外部数据库的数据。 请参阅[此页面](../../workflow/using/enrichment.md)以了解详情。
 

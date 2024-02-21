@@ -1,0 +1,33 @@
+---
+product: campaign
+title: 跳转（开始点和结束点）
+description: 跳转（开始点和结束点）
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
+feature: Workflows
+exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 20%
+
+---
+
+# 跳转（开始点和结束点）{#jump-start-point-and-end-point}
+
+
+
+**[!UICONTROL Jump]** -type图形对象用于提高复杂图（尤其是具有交叉过渡的图）的可读性。
+
+跳跃是没有箭头的过渡。
+
+它们从一个活动转到另一个活动，如以下示例所示：
+
+![](assets/s_user_segmentation_jump_sample.png)
+
+对于每个“起点”类型的过渡，必须定位“终点”类型的过渡。
+
+可在同一工作流中插入多个起点和终点跳转。 它们由必须在参数中输入的数字标识：
+
+![](assets/s_user_segmentation_jump_in.png)
+
+为了提高图的可读性，您可以更改与跳转关联的图像以显示相关编号。 请参阅 [更改活动图像](managing-activity-images.md).

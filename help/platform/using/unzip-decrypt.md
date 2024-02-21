@@ -9,17 +9,17 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: a2106e55617209f28da42c50008d16188563b2da
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 11%
+source-wordcount: '702'
+ht-degree: 9%
 
 ---
 
 
 # 解压缩或解密文件 {#unzipping-or-decrypting-a-file-before-processing}
 
-Adobe Campaign允许您导入压缩或加密文件。 在阅读文档之前 [数据加载（文件）](../../workflow/using/data-loading--file-.md) 活动，您可以定义解压缩或解密文件的预处理。
+Adobe Campaign允许您导入压缩或加密文件。 在阅读文档之前 [数据加载（文件）](../../workflow/using/data-loading-file.md) 活动，您可以定义解压缩或解密文件的预处理。
 
 >[!IMPORTANT]
 >
@@ -52,14 +52,14 @@ Adobe Campaign允许您导入压缩或加密文件。 在阅读文档之前 [数
 
 **相关主题：**
 
-* [数据加载（文件）活动](../../workflow/using/data-loading--file-.md).
+* [数据加载（文件）活动](../../workflow/using/data-loading-file.md).
 * [压缩或加密文件](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ## 用例：导入使用控制面板生成的密钥加密的数据 {#use-case-gpg-decrypt}
 
 在此使用案例中，我们将构建一个工作流，以使用在控制面板中生成的密钥导入已在外部系统中加密的数据。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#video)
 
 执行此用例的步骤如下：
 
@@ -85,7 +85,7 @@ Adobe Campaign允许您导入压缩或加密文件。 在阅读文档之前 [数
 
    有关如何配置活动的全局概念，请参见 [本节](../../workflow/using/file-transfer.md).
 
-1. 打开 **[!UICONTROL Data loading (file)]** 活动，然后根据需要进行配置。 有关如何配置活动的全局概念，请参见 [本节](../../workflow/using/data-loading--file-.md).
+1. 打开 **[!UICONTROL Data loading (file)]** 活动，然后根据需要进行配置。 有关如何配置活动的全局概念，请参见 [本节](../../workflow/using/data-loading-file.md).
 
    为活动添加预处理阶段，以便解密传入数据。 要执行此操作，请选择 **[!UICONTROL Pre-process the file]** 选项，然后将此解密命令复制并粘贴到 **[!UICONTROL Command]** 字段：
 

@@ -3,15 +3,15 @@ product: campaign
 title: 邮件设计常见问题解答
 description: Campaign Classic 常见问题解答
 feature: Audiences, Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,13 +41,13 @@ ht-degree: 98%
 
 ## 如何使用 Campaign DCE 创建电子邮件内容？ {#how-to-use-campaign-dce-to-create-an-email-content-}
 
-[使用 Campaign 数字内容编辑器设计电子邮件](../../web/using/use-case--creating-an-email-delivery.md)：通过一个示例了解如何使用 Campaign DCE 设计电子邮件。
+[使用 Campaign 数字内容编辑器设计电子邮件](../../web/using/use-case-creating-an-email-delivery.md)：通过一个示例了解如何使用 Campaign DCE 设计电子邮件。
 
 ## 如何在 Campaign 中创建基于订阅的新闻稿？ {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 
 [创建新闻稿服务](../../delivery/using/managing-subscriptions.md)：创建新闻稿和管理订阅的重要步骤。
 
-## 如何个性化各种邮件？ {#how-can-i-personalize-messages-}
+## 如何个性化各种消息？ {#how-can-i-personalize-messages-}
 
 通过 Adobe Campaign 投放的邮件可通过几种不同的方式进行个性化，涉及邮件的内容或外观。根据基于收件人用户档案的特定标准，可以将这些方式结合使用。一般而言，Adobe Campaign 允许您：
 

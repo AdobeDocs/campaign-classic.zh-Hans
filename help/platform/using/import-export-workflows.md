@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 31%
+ht-degree: 23%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 31%
 
 ## 收集数据 {#collecting-data-workflows}
 
-工作流程可以用来自动执行某些导入过程。无论是从本地文件还是从 SFTP 导入数据，都可以使用工作流程来标准化数据管理过程。
+工作流可能是自动执行某些导入流程的有用方法。 无论是从本地文件还是从 SFTP 导入数据，都可以使用工作流程来标准化数据管理过程。
 
 ### 使用列表中的数据：读取列表 {#using-data-from-a-list--read-list}
 
@@ -36,7 +36,7 @@ ht-degree: 31%
 
 可在工作流中处理的数据可从结构化文件中提取，以便将其导入Adobe Campaign。
 
-有关加载数据活动的描述，请参阅 [数据加载（文件）](../../workflow/using/data-loading--file-.md) 部分。
+有关加载数据活动的描述，请参阅 [数据加载（文件）](../../workflow/using/data-loading-file.md) 部分。
 
 要导入的结构化文件示例：
 
@@ -54,4 +54,4 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 在使用可用于转换数据的一些可用数据管理活动之后，可以使用工作流程来自动执行某些导出过程或导出精确数据集。
 
-使用执行导出操作 **[!UICONTROL Data extraction (file) activity]**. 有关如何配置和使用活动的更多信息，请参阅 [此页面](../../workflow/using/extraction--file-.md).
+使用执行导出操作 **[!UICONTROL Data extraction (file) activity]**. 有关如何配置和使用活动的更多信息，请参阅 [此页面](../../workflow/using/extraction-file.md).

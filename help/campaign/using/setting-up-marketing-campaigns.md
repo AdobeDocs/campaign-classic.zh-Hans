@@ -6,9 +6,9 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1260'
+source-wordcount: '1255'
 ht-degree: 6%
 
 ---
@@ -29,9 +29,9 @@ ht-degree: 6%
 
 1. 批准投放。 [了解详情](../../campaign/using/marketing-campaign-approval.md)。
 
-1. 监测投放. [了解详情](../../campaign/using/marketing-campaign-monitoring.md)。
+1. 监测投放。 [了解详情](../../campaign/using/marketing-campaign-monitoring.md)。
 
-1. 计划活动和相关成本。 [了解详情](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
+1. 计划活动和相关成本。 [了解详情](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
 
 完成这些步骤后，您可以开始投放(请参阅 [本节](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery))，检查与投放相关的数据、流程和信息，并在必要时管理相关文档(请参阅 [本节](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents))。 您还可以跟踪活动和投放的处理阶段的执行(请参阅 [本节](../../campaign/using/marketing-campaign-monitoring.md))。
 
@@ -55,7 +55,7 @@ ht-degree: 6%
 1. 右键单击新创建的计划并选择 **创建新的“Program”文件夹**.
 1. 重复上述步骤以重命名新的程序文件夹及其内部名称。
 
-## 创建营销策划 {#creating-a-campaign}
+## 创建营销活动 {#creating-a-campaign}
 
 ### 添加营销活动 {#adding-a-campaign}
 
@@ -125,7 +125,7 @@ ht-degree: 6%
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-执行计划的配置模式与 **[!UICONTROL Scheduler]** 工作流对象。 如需详细信息，请参阅[此部分](../../workflow/using/architecture.md)。
+执行计划的配置模式与 **[!UICONTROL Scheduler]** 工作流对象。 如需详细信息，请参阅[此小节](../../workflow/using/architecture.md)。
 
 >[!IMPORTANT]
 >

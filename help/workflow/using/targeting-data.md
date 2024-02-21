@@ -2,12 +2,12 @@
 product: campaign
 title: 定位数据
 description: 了解有关在工作流中定位数据的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1926'
 ht-degree: 4%
 
 ---
@@ -178,9 +178,9 @@ A **[!UICONTROL Query]** 通过活动，可选择基本数据以构建目标群�
 
    有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-   ![](assets/do-not-localize/v7.jpeg)[Campaign v7 文档](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+   ![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
 
 然后，我们需要添加新子集：
 
@@ -198,7 +198,7 @@ A **[!UICONTROL Query]** 通过活动，可选择基本数据以构建目标群�
 
    >[!NOTE]
    >
-   >如果您已获得 **联合数据访问** 选项，您可以根据外部库中的信息创建子集。 要实现此目的，请在 **[!UICONTROL Targeting dimension]** 字段。 有关详细信息，请参见 [访问外部数据库（联合数据访问）](accessing-an-external-database--fda-.md).
+   >如果您已获得 **联合数据访问** 选项，您可以根据外部库中的信息创建子集。 要实现此目的，请在 **[!UICONTROL Targeting dimension]** 字段。 有关详细信息，请参见 [访问外部数据库（联合数据访问）](accessing-an-external-database-fda.md).
 
 创建子集后，默认情况下，拆分活动显示的输出过渡与子集一样多：
 
@@ -240,7 +240,7 @@ A **[!UICONTROL Query]** 通过活动，可选择基本数据以构建目标群�
 
 为了实施这些操作，Adobe Campaign提供：
 
-* 数据收集活动： [文件传输](file-transfer.md)， [数据加载（文件）](data-loading--file-.md)， [数据加载(RDBMS)](data-loading--rdbms-.md)， [更新数据](update-data.md). 收集数据的第一个步骤是准备数据，以便在其他活动中处理这些数据。 为了确保工作流正确执行并提供预期结果，需要监控多个参数。 例如，在导入数据时，此数据的主键(Pkey)对于每个记录都必须是唯一的。
+* 数据收集活动： [文件传输](file-transfer.md)， [数据加载（文件）](data-loading-file.md)， [数据加载(RDBMS)](data-loading-rdbms.md)， [更新数据](update-data.md). 收集数据的第一个步骤是准备数据，以便在其他活动中处理这些数据。 为了确保工作流正确执行并提供预期结果，需要监控多个参数。 例如，在导入数据时，此数据的主键(Pkey)对于每个记录都必须是唯一的。
 * 已使用数据管理选项扩充定向活动： [查询](query.md)， [并集](union.md)， [交叉](intersection.md)， [Split](split.md). 这允许您在来自多个不同定向维的数据之间配置并集或交集，只要能够协调数据即可。
 * 数据转换活动： [扩充](enrichment.md)， [更改维度](change-dimension.md).
 

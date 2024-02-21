@@ -6,10 +6,10 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1206'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -142,7 +142,7 @@ Adobe Campaign允许您创建、配置、执行和分析营销活动。 所有�
 营销活动是通过营销活动模板创建的。 您可以配置已选择某些选项且已保存其他设置的可重用模板。 对于每个活动，都提供了以下功能：
 
 * 引用 [文档和资源](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)：您可以将文档与营销活动关联（简介、报告、图像等）。 支持所有文档格式。
-* 定义成本：对于每个促销活动，Adobe Campaign允许您定义 [成本录入和成本计算结构](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) 在创建营销活动时可以使用的区段。 例如：印刷费、使用外部机构、房间租金。
+* 定义成本：对于每个促销活动，Adobe Campaign允许您定义 [成本录入和成本计算结构](../../campaign/using/providers-stocks-and-budgets.md#defining-cost-categories) 在创建营销活动时可以使用的区段。 例如：印刷费、使用外部机构、房间租金。
 * 定义目标：您可以定义促销活动的可量化目标，例如订户数、业务量等。 此信息稍后将在营销活动报表中使用。
 * 管理 [种子地址](../../delivery/using/about-seed-addresses.md) 和 [对照组](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 * 管理审批：您可以选择要批准的处理，并根据需要选择审核操作员或操作员组。 [了解详情](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)

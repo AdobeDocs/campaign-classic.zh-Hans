@@ -6,8 +6,8 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
-workflow-type: ht
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 100%
 
@@ -23,8 +23,8 @@ ht-degree: 100%
    + [最新版本](rn/using/latest-release.md)
    + 之前版本 {#previous-releases}
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
-      + [2021](rn/using/release--2021.md)
-      + [2022](rn/using/release--2022.md)
+      + [2021](rn/using/release-2021.md)
+      + [2022](rn/using/release-2022.md)
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
 + 入门 {#getting-started}
@@ -184,8 +184,8 @@ ht-degree: 100%
       + [创建种子地址](delivery/using/creating-seed-addresses.md)
       + [添加种子地址](delivery/using/adding-seed-addresses.md)
       + [使用外部收件人表](delivery/using/using-an-external-recipient-table.md)
-      + [用例：根据条件选择种子地址](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
-      + [用例：配置字段替换](delivery/using/use-case--configuring-the-field-substitution.md)
+      + [用例：根据条件选择种子地址](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
+      + [用例：配置字段替换](delivery/using/use-case-configuring-the-field-substitution.md)
    + A/B 测试 {#a-b-testing}
       + [A/B 测试入门](delivery/using/get-started-a-b-testing.md)
       + [配置 A/B 测试](delivery/using/configuring-a-b-testing.md)
@@ -233,7 +233,7 @@ ht-degree: 100%
    + 内容管理模块 {#content-management}
       + [关于内容管理](delivery/using/about-content-management.md)
       + [内容管理者资源和原则](delivery/using/content-manager-resources-and-principles.md)
-      + [用例：创建内容管理](delivery/using/use-case--creating-content-management.md)
+      + [用例：创建内容管理](delivery/using/use-case-creating-content-management.md)
       + [数据架构](delivery/using/data-schemas.md)
       + [输入窗体](delivery/using/input-forms.md)
       + [格式化](delivery/using/formatting.md)
@@ -253,7 +253,7 @@ ht-degree: 100%
       + [管理文档和资产](campaign/using/marketing-campaign-assets.md)
       + [设置和管理审批](campaign/using/marketing-campaign-approval.md)
       + [监测活动](campaign/using/marketing-campaign-monitoring.md)
-      + [供应商、库存和预算](campaign/using/providers--stocks-and-budgets.md)
+      + [供应商、库存和预算](campaign/using/providers-stocks-and-budgets.md)
    + 活动优化 {#campaign-optimization}
       + [关于活动类型](campaign-opt/using/about-campaign-typologies.md)
       + [压力规则](campaign-opt/using/pressure-rules.md)
@@ -320,7 +320,7 @@ ht-degree: 100%
       + [Web 应用程序入门](web/using/about-web-applications.md)
       + [创建新 Web 应用程序](web/using/creating-a-new-web-application.md)
       + [设计 Web 应用程序](web/using/designing-a-web-application.md)
-      + [用例：创建概述](web/using/use-cases--creating-overviews.md)
+      + [用例：创建概述](web/using/use-cases-creating-overviews.md)
       + [解释 Web 应用程序](web/using/translating-a-web-application.md)
       + [跟踪 Web 应用程序访问](web/using/tracking-a-web-application.md)
       + [选择退出 Web 应用程序跟踪](web/using/web-application-tracking-opt-out.md)
@@ -331,7 +331,7 @@ ht-degree: 100%
       + [编辑内容](web/using/editing-content.md)
       + [内容编辑最佳实践](web/using/content-editing-best-practices.md)
       + [创建登陆页面](web/using/creating-a-landing-page.md)
-      + [用例：创建电子邮件投放](web/using/use-case--creating-an-email-delivery.md)
+      + [用例：创建电子邮件投放](web/using/use-case-creating-an-email-delivery.md)
    + Web 窗体 {#web-forms}
       + [Web 窗体入门](web/using/about-web-forms.md)
       + [使用 Web 窗体模板](web/using/using-a-web-form-template.md)
@@ -344,16 +344,16 @@ ht-degree: 100%
       + [发布 Web 窗体](web/using/publishing-a-web-form.md)
       + [定义 Web 窗体属性](web/using/defining-web-forms-properties.md)
       + [解释 Web 窗体](web/using/translating-a-web-form.md)
-      + [用例：Web 窗体](web/using/use-cases--web-forms.md)
+      + [用例：Web 窗体](web/using/use-cases-web-forms.md)
 + 创建在线调查{#online-surveys}
    + [调查入门](surveys/using/about-surveys.md)
    + [创建调查的关键步骤](surveys/using/getting-started-with-surveys.md)
    + [设计调查](surveys/using/building-a-survey.md)
    + [管理答案](surveys/using/managing-answers.md)
-   + [发布、跟踪和使用收集的数据](surveys/using/publish--track-and-use-collected-data.md)
+   + [发布、跟踪和使用收集的数据](surveys/using/publish-track-and-use-collected-data.md)
    + [配置调查](surveys/using/configuring-surveys.md)
-   + [用例：创建引用窗体](surveys/using/use-case--creating-a-refer-a-friend-form.md)
-   + [用例：显示在线调查的答案报告](surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
+   + [用例：创建引用窗体](surveys/using/use-case-creating-a-refer-a-friend-form.md)
+   + [用例：显示在线调查的答案报告](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + 与 Adobe Experience Cloud 集成 {#integrating-with-adobe-experience-cloud}
    + [关于 Campaign 集成](integrations/using/about-campaign-integrations.md)
    + 受众共享 {#audience-sharing}
@@ -437,7 +437,7 @@ ht-degree: 100%
       + [等待](workflow/using/wait.md)
       + [时间约束](workflow/using/time-constraint.md)
       + [子工作流](workflow/using/sub-workflow.md)
-      + [跳转（开始点和结束点）](workflow/using/jump--start-point-and-end-point-.md)
+      + [跳转（开始点和结束点）](workflow/using/jump-start-point-and-end-point.md)
       + [外部信号](workflow/using/external-signal.md)
       + [审批](workflow/using/approval.md)
       + [警报](workflow/using/alert.md)
@@ -450,11 +450,11 @@ ht-degree: 100%
       + [循环投放](workflow/using/recurring-delivery.md)
       + [跨渠道投放](workflow/using/cross-channel-deliveries.md)
       + [本地审批](workflow/using/local-approval.md)
-      + [数据加载 (RDBMS)](workflow/using/data-loading--rdbms-.md)
-      + [加载 (SOAP)](workflow/using/loading--soap-.md)
-      + [数据加载（文件）](workflow/using/data-loading--file-.md)
+      + [数据加载 (RDBMS)](workflow/using/data-loading-rdbms.md)
+      + [加载 (SOAP)](workflow/using/loading-soap.md)
+      + [数据加载（文件）](workflow/using/data-loading-file.md)
       + [内容管理](workflow/using/content-management.md)
-      + [数据提取（文件）](workflow/using/extraction--file-.md)
+      + [数据提取（文件）](workflow/using/extraction-file.md)
       + [SQL 代码和 JavaScript 代码](workflow/using/sql-code-and-javascript-code.md)
       + [SQL 数据管理](workflow/using/sql-data-management.md)
       + [Nlserver 模块](workflow/using/nlserver-module.md)
@@ -505,7 +505,7 @@ ht-degree: 100%
       + [高级参数](workflow/using/advanced-parameters.md)
       + [JavaScript 脚本和模板](workflow/using/javascript-scripts-and-templates.md)
       + [工作流中的 JavaScript 代码示例](workflow/using/javascript-in-workflows.md)
-      + [访问外部数据库](workflow/using/accessing-an-external-database--fda-.md)
+      + [访问外部数据库](workflow/using/accessing-an-external-database-fda.md)
       + [管理权限](workflow/using/managing-rights.md)
       + [更改活动图像](workflow/using/managing-activity-images.md)
       + [管理时区](workflow/using/managing-time-zones.md)
@@ -543,8 +543,8 @@ ht-degree: 100%
       + [通过工作流集成优惠](interaction/using/integrating-an-offer-via-a-workflow.md)
    + 单一互动{#unitary-interactions}
       + [关于入站渠道](interaction/using/about-inbound-channels.md)
-      + [通过 JavaScript 集成（客户端）](interaction/using/integration-via-javascript--client-side-.md)
-      + [通过 SOAP（服务器端）进行集成](interaction/using/integration-via-soap--server-side-.md)
+      + [通过 JavaScript 集成（客户端）](interaction/using/integration-via-javascript-client-side.md)
+      + [通过 SOAP（服务器端）进行集成](interaction/using/integration-via-soap-server-side.md)
       + [匿名互动](interaction/using/anonymous-interactions.md)
    + 跟踪优惠{#tracking-offers}
       + [优惠建议历史](interaction/using/offer-proposition-history.md)
@@ -556,7 +556,7 @@ ht-degree: 100%
       + [创建测试环境](interaction/using/creating-a-test-environment.md)
       + [修改标准引擎行为](interaction/using/hooks.md)
       + [分布式架构](interaction/using/distributed-architectures.md)
-      + [数据缓冲区配置](installation/using/interaction---data-buffer.md)
+      + [数据缓冲区配置](installation/using/interaction-data-buffer.md)
    + 用例 {#case-study}
       + [呈现规则](interaction/using/presentation-rules.md)
       + [入站渠道优惠](interaction/using/offers-on-an-inbound-channel.md)
@@ -590,7 +590,7 @@ ht-degree: 100%
       + 托管模型{#hosting-models-lp}
          + [活动托管模式](installation/using/hosting-models.md)
          + [功能矩阵](installation/using/capability-matrix.md)
-   + 部署类型 {#deployment-types-}
+   + 部署类型 {#deployment-types}
       + [关于部署类型](installation/using/about-deployment-types.md)
       + [独立部署](installation/using/standalone-deployment.md)
       + [标准部署](installation/using/standard-deployment.md)
@@ -611,12 +611,12 @@ ht-degree: 100%
          + [应用程序服务器](installation/using/application-server.md)
          + [消息服务器](installation/using/messaging-server.md)
          + [网络配置](installation/using/network-configuration.md)
-      + Windows 上的 Campaign{#installing-campaign-in-windows-}
+      + Windows 上的 Campaign{#installing-campaign-in-windows}
          + [入门](installation/using/prerequisites-of-campaign-installation-in-windows.md)
          + [安装服务器](installation/using/installing-the-server.md)
          + [集成到 Web 服务器 (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
          + [适用于 Windows 的客户端控制台可用性](installation/using/client-console-availability-for-windows.md)
-      + Linux 上的 Campaign {#installing-campaign-in-linux-}
+      + Linux 上的 Campaign {#installing-campaign-in-linux}
          + [先决条件](installation/using/prerequisites-of-campaign-installation-in-linux.md)
          + [安装包](installation/using/installing-packages-with-linux.md)
          + [集成到 Web 服务器](installation/using/integration-into-a-web-server-for-linux.md)
@@ -803,7 +803,7 @@ ht-degree: 100%
    + 设置 Web 跟踪 {#setting-up-web-tracking}
       + [关于 Web 跟踪](configuration/using/about-web-tracking.md)
       + [Web 跟踪模式](configuration/using/web-tracking-mode.md)
-      + [Web 跟踪标记：定义](configuration/using/web-tracking-tag--definition.md)
+      + [Web 跟踪标记：定义](configuration/using/web-tracking-tag-definition.md)
       + [设置阶段](configuration/using/setup-stages.md)
       + [其他参数](configuration/using/additional-parameters.md)
       + [创建 Web 跟踪标记](configuration/using/creating-web-tracking-tags.md)

@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Seed Address
 role: User
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 5%
@@ -30,7 +30,7 @@ ht-degree: 5%
 
 1. 导入地址模板并根据您的需求对其进行调整。
 
-   要执行此操作，请单击 **[!UICONTROL Import seed templates...]** 链接并选择包含地址模板的文件夹。 如需详细信息，请参阅[此部分](creating-seed-addresses.md#creating-seed-address-templates)。
+   要执行此操作，请单击 **[!UICONTROL Import seed templates...]** 链接并选择包含地址模板的文件夹。 如需详细信息，请参阅[此小节](creating-seed-addresses.md#creating-seed-address-templates)。
 
    如有必要，在添加这些组件后，您可以双击它们或单击 **[!UICONTROL Detail...]** 按钮以调整每个地址的内容。
 
@@ -38,7 +38,7 @@ ht-degree: 5%
 
    要执行此操作，请单击 **[!UICONTROL Edit the dynamic condition...]** 链接，然后输入种子地址选择参数。 例如，您可以包括特定文件夹中包含的所有种子地址，或属于贵组织特定部门的种子地址。
 
-   此部分的示例如下： [用例：根据条件选择种子地址](use-case--selecting-seed-addresses-on-criteria.md).
+   此部分的示例如下： [用例：根据条件选择种子地址](use-case-selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >

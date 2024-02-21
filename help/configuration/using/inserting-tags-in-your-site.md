@@ -6,9 +6,9 @@ feature: Configuration
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '336'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 >
 >此方法使用Web浏览器发送的Cookie来识别收件人，并且并非100%可靠。
 
-**示例**:
+**示例**：
 
 ```
 <img height='0' width='0' alt='' src='https://localhost/r/12343?tagid=home'
@@ -126,7 +126,7 @@ ht-degree: 2%
 
 如果您希望控制发送到重定向服务器的信息，最可靠的方法是使用页面生成语言自己同步执行HTTP查询。
 
-您构建的URL必须遵循中定义的语法规则 [Web跟踪标记：定义](../../configuration/using/web-tracking-tag--definition.md).
+您构建的URL必须遵循中定义的语法规则 [Web跟踪标记：定义](../../configuration/using/web-tracking-tag-definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

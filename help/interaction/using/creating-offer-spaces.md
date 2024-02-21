@@ -3,14 +3,14 @@ product: campaign
 title: 创建优惠空间
 description: 创建优惠空间
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 目录选件的内容是在选件空间中配置的。 默认情况下，内容可包含以下字段： **[!UICONTROL Title]**， **[!UICONTROL Destination URL]**， **[!UICONTROL Image URL]**， **[!UICONTROL HTML content]** 和 **[!UICONTROL Text content]**. 字段序列在选件空间中配置。
 
-高级参数允许您指定联系人标识键（例如，可同时由各种元素、名称和电子邮件字段组成）。 有关详细信息，请参见 [呈现已识别的优惠](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) 部分。
+高级参数允许您指定联系人标识键（例如，可同时由各种元素、名称和电子邮件字段组成）。 有关详细信息，请参见 [呈现已识别的优惠](../../interaction/using/integration-via-javascript-client-side.md#presenting-an-identified-offer) 部分。
 
 HTML或XML渲染是通过渲染函数创建的。 渲染函数中定义的字段序列必须与内容中配置的序列相同。
 

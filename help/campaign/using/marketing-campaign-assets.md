@@ -6,7 +6,7 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 1%
@@ -126,7 +126,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-导出模型必须与为相关投放选择的服务提供商关联。 请参阅[此章节](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
+导出模型必须与为相关投放选择的服务提供商关联。 请参阅 [本节](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >

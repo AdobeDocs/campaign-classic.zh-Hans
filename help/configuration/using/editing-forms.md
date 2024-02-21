@@ -7,7 +7,7 @@ role: Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 2%
@@ -54,7 +54,7 @@ Forms是以下实体 `xtk:form` 类型。 您可以在以下位置查看输入�
 
 * 内容管理
 
-  使用此表单类型进行内容管理。 查看此 [用例](../../delivery/using/use-case--creating-content-management.md).
+  使用此表单类型进行内容管理。 查看此 [用例](../../delivery/using/use-case-creating-content-management.md).
 
   ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
@@ -154,7 +154,7 @@ Forms是以下实体 `xtk:form` 类型。 您可以在以下位置查看输入�
 
 要将图像与表单中的元素（例如图标）相关联，可以添加对图像的引用。 使用 `img` 属性，例如 `<container>` 元素。
 
-语法: `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
+语法： `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
 
 此示例显示对 `book.png` 和 `detail.png` 图像来自 `ncm` 命名空间：
 
@@ -255,7 +255,7 @@ Forms是以下实体 `xtk:form` 类型。 您可以在以下位置查看输入�
    | `<container>` | `type="visibleGroup" visibleIf="`*edit-expr*`"` | 有条件地显示一组字段 |
    | `<container>` | `type="enabledGroup" enabledIf="`*edit-expr*`"` | 有条件地启用一组字段 |
 
-   示例:
+   例如：
 
    ```xml
    <container type="enabledGroup" enabledIf="@gender=1">
@@ -496,7 +496,7 @@ Forms是以下实体 `xtk:form` 类型。 您可以在以下位置查看输入�
 
 1. 在JS文件中创建验证函数。
 
-   示例:
+   例如：
 
    ```js
    function nms_recipient_checkValue(value)

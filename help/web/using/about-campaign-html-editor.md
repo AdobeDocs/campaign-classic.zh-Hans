@@ -6,7 +6,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 1%
@@ -50,11 +50,11 @@ ht-degree: 1%
 
 创建 **电子邮件投放**，您需要：
 
-1. 从DCE模板创建投放 —  [了解详情](use-case--creating-an-email-delivery.md)
+1. 从DCE模板创建投放 —  [了解详情](use-case-creating-an-email-delivery.md)
 1. 选择现有内容或从创建内容 [标准模板](template-management.md)
 1. 编辑和配置在线内容
 1. 发送投放 —  [了解详情](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->有关电子邮件投放上下文中的完整实施示例，请参阅 [此用例](use-case--creating-an-email-delivery.md).
+>有关电子邮件投放上下文中的完整实施示例，请参阅 [此用例](use-case-creating-an-email-delivery.md).

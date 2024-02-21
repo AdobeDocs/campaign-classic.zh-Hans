@@ -3,14 +3,14 @@ product: campaign
 title: 控制成本
 description: 了解如何控制成本
 feature: Resource Management
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2495'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 定义成本计算方法
 
-   为服务提供商定义成本结构。 请参阅 [创建服务提供商及其成本类别](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+   为服务提供商定义成本结构。 请参阅 [创建服务提供商及其成本类别](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 1. 定义活动成本（投放/任务）
 
@@ -170,7 +170,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->成本类别及结构呈列于 [创建服务提供商及其成本类别](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+>成本类别及结构呈列于 [创建服务提供商及其成本类别](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 ## 成本承诺、计算及计费 {#cost-commitment--calculation-and-charging}
 
@@ -233,7 +233,7 @@ ht-degree: 0%
 
 #### 第2步 — 配置服务提供商并定义成本结构 {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. 从创建服务提供商和服务模板及其成本结构 **[!UICONTROL Administration > Campaigns]** 节点。 有关详细信息，请参见 [创建服务提供商及其成本类别](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+1. 从创建服务提供商和服务模板及其成本结构 **[!UICONTROL Administration > Campaigns]** 节点。 有关详细信息，请参见 [创建服务提供商及其成本类别](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
    对于直邮投放，创建成本类别 **[!UICONTROL Envelopes]** （类型114x229和162x229）， **[!UICONTROL Postage]** 和 **[!UICONTROL Print]** （类型A3和A4）。 然后，创建以下成本结构：
 

@@ -7,29 +7,29 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1961'
 ht-degree: 1%
 
 ---
 
 # 定义电子邮件的内容 {#defining-the-email-content}
 
-## 寄件者 {#sender}
+## 发件人 {#sender}
 
 要定义将出现在已发送邮件标题中的发件人姓名和地址，请单击 **[!UICONTROL From]** 链接。
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
-在此窗口中，您可以输入创建电子邮件标头所需的所有信息。 此信息可以个性化。要实现此目的，请使用输入字段右侧的按钮插入个性化字段。
+在此窗口中，您可以输入创建电子邮件标头所需的所有信息。 此信息可以个性化。 要实现此目的，请使用输入字段右侧的按钮插入个性化字段。
 
 要了解如何插入和使用个性化字段，请参阅 [关于个性化](about-personalization.md) 部分。
 
 >[!NOTE]
 >
 >* 默认情况下，使用发件人的地址进行回复。
->* 标头参数不能为空。 默认情况下，它们包含配置部署向导时输入的值。 在[此章节](../../installation/using/deploying-an-instance.md)中了解更多信息。
+>* 标头参数不能为空。 默认情况下，它们包含配置部署向导时输入的值。 可在[此部分](../../installation/using/deploying-an-instance.md)中了解详情。
 >* 发件人的地址是允许发送电子邮件的必备项（RFC标准）。
 >* Adobe Campaign检查所输入电子邮件地址的语法。
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 * 要导入HTML内容，请使用 **[!UICONTROL Open]** 按钮。 您还可以将源代码直接粘贴到 **[!UICONTROL Source]** 子选项卡。
 
-  如果您使用 [数字内容编辑器](../../web/using/about-campaign-html-editor.md) (DCE)，请参阅 [选择内容模板](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+  如果您使用 [数字内容编辑器](../../web/using/about-campaign-html-editor.md) (DCE)，请参阅 [选择内容模板](../../web/using/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
@@ -114,7 +114,7 @@ ht-degree: 1%
 
 Adobe Campaign允许您尝试新的交互式 [电子邮件AMP](https://amp.dev/about/email/) 格式，允许在特定条件下发送动态电子邮件。
 
-有关更多信息，请参阅[此章节](defining-interactive-content.md)。
+有关更多信息，请参阅[此小节](defining-interactive-content.md)。
 
 ## 使用内容管理 {#using-content-management}
 

@@ -9,7 +9,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 4%
@@ -34,4 +34,4 @@ ht-degree: 4%
 
   ![](assets/s_ncs_configuration_offer_context.png)
 
-* 配置SOAP调用时，插入 **上下文** 用于引用在交互架构中添加的上下文信息的XML元素。 欲知更多信息，请参见 [通过SOAP（服务器端）进行集成](../../interaction/using/integration-via-soap--server-side-.md).
+* 配置SOAP调用时，插入 **上下文** 用于引用在交互架构中添加的上下文信息的XML元素。 欲知更多信息，请参见 [通过SOAP（服务器端）进行集成](../../interaction/using/integration-via-soap-server-side.md).

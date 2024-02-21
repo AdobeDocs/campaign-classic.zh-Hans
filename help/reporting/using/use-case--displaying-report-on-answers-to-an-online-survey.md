@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: "用例：显示在线调查的答案报告"
-description: "用例：显示在线调查的答案报告"
+title: “用例：显示在线调查的答案报告”
+description: “用例：显示在线调查的答案报告”
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 6%
+source-wordcount: '490'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 6%
 
 要收集调查的答案，请应用以下步骤：
 
-1. 创建工作流并放置 **[!UICONTROL Answers to a survey]** 活动。 有关使用此活动的更多信息，请参阅 [本节](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. 创建工作流并放置 **[!UICONTROL Answers to a survey]** 活动。 有关使用此活动的更多信息，请参阅 [本节](../../surveys/using/publish-track-and-use-collected-data.md#using-the-collected-data).
 1. 编辑活动并选择要分析其答案的调查。
 1. 启用 **[!UICONTROL Select all the answer data]** 用于收集所有信息的选项。
 

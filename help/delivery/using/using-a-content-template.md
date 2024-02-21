@@ -2,13 +2,13 @@
 product: campaign
 title: 使用内容模板
 description: 使用内容模板
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '439'
 ht-degree: 3%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 3%
 
 可以直接在投放中引用和使用内容模板。 请参阅 [通过内容管理创建投放](#creating-a-delivery-via-content-management)
 
-它们还可用于创建内容实例。 创建实例后，这些实例即可交付(请参阅 [交付内容实例](#delivering-a-content-instance))或导出(请参阅 [创建内容实例](#creating-a-content-instance))。
+它们还可用于创建内容实例。 创建实例后，即可交付这些实例(请参阅 [交付内容实例](#delivering-a-content-instance))或导出(请参阅 [创建内容实例](#creating-a-content-instance))。
 
 ## 通过内容管理创建投放 {#creating-a-delivery-via-content-management}
 
-考虑到使用输入字段输入内容，您可以在投放中引用内容模板。 在投放向导中添加了一个用于定义投放内容的附加选项卡。
+考虑到使用输入字段输入内容，您可以在投放中引用内容模板。 在投放向导中添加了一个附加选项卡，用于定义投放内容。
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
@@ -33,11 +33,11 @@ ht-degree: 3%
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-有关更多信息，请参阅完整实施示例： [在投放向导中创建内容](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
+有关更多信息，请参阅完整实施示例： [在投放向导中创建内容](use-case-creating-content-management.md#creating-content-in-the-delivery-wizard).
 
 ## 创建内容实例 {#creating-a-content-instance}
 
-您可以直接在Adobe Campaign树中创建内容，以在工作流中使用、导出或直接插入新投放中。
+您可以直接在Adobe Campaign树中创建内容，以在工作流中使用，或者直接导出或插入新投放中。
 
 应用以下步骤：
 
@@ -45,11 +45,11 @@ ht-degree: 3%
 
    ![](assets/s_ncs_content_folder_properties.png)
 
-1. 选择将对此文件夹处于活动状态的发布模板。
+1. 选择将在此文件夹中处于活动状态的发布模板。
 
    ![](assets/s_ncs_content_folder_templates.png)
 
-1. 您现在可以使用来创建新内容 **[!UICONTROL New]** 按钮时，不会显示警告消息。
+1. 您现在可以使用来创建新内容 **[!UICONTROL New]** 按钮进行标记。
 
    ![](assets/s_ncs_content_folder_create_a_template.png)
 
@@ -57,7 +57,7 @@ ht-degree: 3%
 
    ![](assets/s_ncs_content_folder_use_a_template.png)
 
-1. 然后单击 **[!UICONTROL HTML preview]** 选项卡以查看渲染。 此处不输入从数据库获取的个性化字段。
+1. 然后单击 **[!UICONTROL HTML preview]** 选项卡以查看渲染。 此处，不输入从数据库获取的个性化字段。
 
    ![](assets/s_ncs_content_folder_use_a_template_preview.png)
 
@@ -71,13 +71,13 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >您可以授权生成未批准的内容。 为此，请更改发布模板中的相关选项。 有关更多信息，请参阅 [创建和配置模板](publication-templates.md#creating-and-configuring-the-template).
+   >您可以授权生成未批准的内容。 为此，请更改发布模板中的相关选项。 有关详细信息，请参见 [创建和配置模板](publication-templates.md#creating-and-configuring-the-template).
 
-   默认情况下，HTML和文本内容生成于 **发布** Adobe Campaign实例的文件夹。 您可以更改发布文件夹，这要归功于 **NcmPublishingDir** 选项。
+   默认情况下，HTML和文本内容会在 **发布** Adobe Campaign实例的文件夹。 您可以更改发布文件夹，这要归功于 **NcmPublishingDir** 选项。
 
 ## 交付内容实例 {#delivering-a-content-instance}
 
-要创建并投放内容实例，投放模板需要链接到用于生成此内容的发布模板。 有关更多信息，请参阅 [投放](publication-templates.md#delivery).
+要创建并投放内容实例，投放模板需要链接到用于生成此内容的发布模板。 有关详细信息，请参见 [投放](publication-templates.md#delivery).
 
 此外，内容存储文件夹必须专用于从此发布模板中获取的内容（当内容文件夹允许您生成多种类型的内容时，无法自动创建投放）。
 

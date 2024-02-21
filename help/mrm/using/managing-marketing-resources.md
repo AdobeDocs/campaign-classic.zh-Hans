@@ -3,12 +3,12 @@ product: campaign
 title: 管理营销资源
 description: 了解如何管理营销资源
 feature: Resource Management
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1393'
 ht-degree: 1%
@@ -195,7 +195,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关Adobe Campaign中库存管理的更多信息，请参阅 [库存管理](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
+>有关Adobe Campaign中库存管理的更多信息，请参阅 [库存管理](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
 
 要将营销资源与股票相关联，请编辑股票映射并编辑或创建股票。 添加库存行并选择相应的营销资源。
 

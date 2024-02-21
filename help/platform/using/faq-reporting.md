@@ -3,15 +3,15 @@ product: campaign
 title: 报告常见问题解答
 description: Campaign Classic 常见问题解答
 feature: Troubleshooting, Reporting
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -49,8 +49,8 @@ Adobe Campaign 不是专门的报告创建工具：在 Adobe Campaign 中创建�
 
 ## 我能利用在线调查的回答创建报告吗？ {#can-i-create-a-report-from-answers-to-an-online-survey-}
 
-参阅[此用例](../../surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md)，了解如何设计报告来显示在线调查的回答。
+参阅[此用例](../../surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)，了解如何设计报告来显示在线调查的回答。
 
-## 如何在 Campaign 界面中共享对报告的访问权限？  {#how-can-i-share-access-to-my-report}
+## 如何在Campaign界面中共享对报告的访问权限？ {#how-can-i-share-access-to-my-report}
 
 您可以定义报告在 Adobe Campaign UI 中显示的上下文。如需有关报告访问权限的详细信息，请参阅[此部分](../../reporting/using/configuring-access-to-the-report.md)。

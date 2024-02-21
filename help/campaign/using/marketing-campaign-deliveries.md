@@ -6,10 +6,10 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 3%
+source-wordcount: '1492'
+ht-degree: 1%
 
 ---
 
@@ -112,11 +112,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->有关成本计算和库存管理的详细信息，请参阅 [供应商、库存和预算](../../campaign/using/providers--stocks-and-budgets.md).
+>有关成本计算和库存管理的详细信息，请参阅 [供应商、库存和预算](../../campaign/using/providers-stocks-and-budgets.md).
 
 ## 管理关联文档 {#managing-associated-documents}
 
-您可以将各种文档与活动关联起来：报表、照片、网页、图表等。这些文档可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、AcrobatPDF等)。 了解如何将文档与营销活动关联 [在此部分中](../../campaign/using/marketing-campaign-assets.md).
+您可以将各种文档与活动关联：报表、照片、网页、图表等。 这些文档可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、AcrobatPDF等)。 了解如何将文档与营销活动关联 [在此部分中](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >
@@ -227,7 +227,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-导出模型必须与为相关投放选择的服务提供商关联。 请参阅 [创建服务提供商及其成本结构](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+导出模型必须与为相关投放选择的服务提供商关联。 请参阅 [创建服务提供商及其成本结构](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >

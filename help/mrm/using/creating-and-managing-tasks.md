@@ -3,15 +3,15 @@ product: campaign
 title: 创建和管理任务
 description: 创建和管理任务
 feature: Resource Management
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '3736'
-ht-degree: 1%
+source-wordcount: '3750'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 
 
-Adobe Campaign 让您可以直接在应用程序中创建任务并管理其完整的生命周期. 项目和营销策划实施可以划分为分配给Adobe Campaign操作员或外部服务提供商的任务。 这种操作模式允许您创建包括所有项目参与者和外部参与者的开放协作环境。
+Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的生命周期。 项目和营销策划实施可以划分为分配给Adobe Campaign操作员或外部服务提供商的任务。 这种操作模式允许您创建包括所有项目参与者和外部参与者的开放协作环境。
 
 可以从任务列表或活动仪表板创建、查看和监控任务。 还可以在营销计划、项目和营销策划的时间表中查看和跟踪这些指标。
 
@@ -195,7 +195,7 @@ Adobe Campaign 让您可以直接在应用程序中创建任务并管理其完�
 
 为此，请编辑任务属性并选择相关的服务提供商。 与服务提供商关联的成本类别会自动列在窗口的中央部分。
 
-有关详细信息，请参见 [创建服务提供商及其成本类别](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+有关详细信息，请参见 [创建服务提供商及其成本类别](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 选择与任务执行相关的成本类别。 要执行此操作，请选择成本类型，并在必要时添加附加费金额。
 
@@ -270,8 +270,8 @@ Adobe Campaign 让您可以直接在应用程序中创建任务并管理其完�
 可以计划以下任务：
 
 * [控制任务](#control-tasks)，
-* [分组任务](#grouping-task),
-* [分组任务](#grouping-task),
+* [分组任务](#grouping-task)，
+* [分组任务](#grouping-task)，
 * [通知任务](#notification-task).
 
 >[!NOTE]
@@ -460,7 +460,7 @@ A **[!UICONTROL Control task]** 链接到投放审批：审批定位、内容、
 
    创建和计划未来任务时，其状态为 **[!UICONTROL Scheduled]**.
 
-1. 在任务开始日期时，负责人和参与者会收到通知，告知他们任务已开始。 其状态更改为 **[!UICONTROL In progress]**.
+1. 在任务开始日期时，负责人和参与者将收到通知，告知他们任务已开始。 其状态更改为 **[!UICONTROL In progress]**.
 1. 完成分配给他们的部分后，参与者可以通过以下任一方式批准任务：
 
    * 通过通知电子邮件。
