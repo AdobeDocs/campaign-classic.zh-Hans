@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '1519'
+source-git-commit: f3dc9d56c693f334923d627a28a9e45b92b1c0c3
+workflow-type: tm+mt
+source-wordcount: '1558'
 ht-degree: 100%
 
 ---
@@ -48,13 +48,13 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
  <td>通过 Facebook 进行社交媒体营销</td>
  <td>通过 Facebook 进行社交媒体营销的功能现已弃用。您可以使用 X（以前称为 Twitter）集成在社交媒体上发布内容，或与 Adobe 合作创建自定义渠道。
  <p></p>
-  <p>目标移除日期：2023 年底</p>
+  <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
 <tr>
  <td>ACS 连接器</td>
  <td>ACS 连接器（高级服务）现已弃用。您可以使用 Campaign 的导出/导入功能来从两款产品中提取数据或向其中插入数据。<p></p>
-  <p>目标移除日期：2023 年底</p>
+  <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
  </tbody> 
