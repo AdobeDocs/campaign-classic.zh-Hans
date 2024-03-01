@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 6dd2a2343c0204c01dd0fa4910299efa15c29849
+source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 4%
+source-wordcount: '354'
+ht-degree: 11%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 ## 新增功能
 
-大致了解Adobe Campaign Classic v7产品和文档中的最新增强功能！ 有关功能、改进和修复的完整列表，请查看详细信息 [发行说明](rn/using/latest-release.md).  请访问我们的网站，及时了解我们文档的最新更改 [文档更新页面](rn/using/documentation-updates.md).
+大致了解Adobe Campaign Classic v7产品和文档中的最新增强功能！ 有关功能、改进和修复的完整列表，请查看详细信息 [发行说明](rn/using/latest-release.md).  请访问[文档更新页面](rn/using/documentation-updates.md)，及时了解我们文档的最新变化。
 
 >[!BEGINTABS]
 
@@ -25,13 +25,13 @@ ht-degree: 4%
 
 了解Campaign Classicv7.3.5中的更新、改进和修补程序。
 
-[![图像](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
+[![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
 >[!TAB 移动到Adobe IMS]
 
 为了增强安全性和身份验证过程，Adobe Campaign强烈建议将最终用户身份验证模式从登录/密码本机身份验证迁移到AdobeIdentity Management System (IMS)。
 
-[![图像](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
+[![image](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
 
 
 >[!TAB 推送渠道更改]
@@ -106,7 +106,7 @@ Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年�
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>开发人员资源</strong><br/><a href="configuration/using/about-data-model.md">数据模型描述</a> - <a href="configuration/using/about-schema-reference.md">模式结构</a> - <a href="configuration/using/editing-forms.md">模式结构</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="configuration/using/about-custom-recipient-table.md">自定义收件人表</a>
+      <strong>开发人员资源</strong><br/><a href="configuration/using/about-data-model.md">数据模型描述</a> - <a href="configuration/using/about-schema-reference.md">模式结构</a> - <a href="configuration/using/editing-forms.md">模式结构</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html&gt;JSAPI参考文档&lt;/a&gt; - &lt;a href=&quot;&quot;&gt;" configuration/using/about-custom-recipient-table.md">自定义收件人表</a>
     </td>
   </tr>
 </table>

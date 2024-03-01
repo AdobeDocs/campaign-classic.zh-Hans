@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
-workflow-type: ht
-source-wordcount: '2295'
+source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
+workflow-type: tm+mt
+source-wordcount: '2278'
 ht-degree: 100%
 
 ---
@@ -188,7 +188,7 @@ _2022 年 11 月 21 日_
 
 ### 其他变更  {#release-7-3-2-other}
 
-* 网络日志已改进：`logonEscalation` 警告信息现在仅会向拥有管理员权限的用户显示。(NEO-47167)
+<!--* Web logs have been improved: `logonEscalation` warnings are now only displayed for users with admin privileges. (NEO-47167)-->
 * 为避免出现错误，**为热图服务收集数据** (collectDataHeatMapService) 工作流现在会默认处于停止状态。(NEO-33959)
 * 实施了各种旨在优化活动仪表板的 CPU 使用率的改进。(NEO-46417)
 * 为防止出现崩溃，loadLibraryDebug JS 方法已被移除。(NEO-46968)
