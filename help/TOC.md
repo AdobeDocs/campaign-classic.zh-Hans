@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
+source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
 workflow-type: tm+mt
-source-wordcount: '2538'
+source-wordcount: '2542'
 ht-degree: 99%
 
 ---
@@ -744,6 +744,8 @@ ht-degree: 99%
       + [架构入门](configuration/using/about-schema-reference.md)
       + [模式结构](configuration/using/schema-structure.md)
       + [数据库映射](configuration/using/database-mapping.md)
+      + [密钥管理](configuration/using/database-keys.md)
+      + [链接管理](configuration/using/database-links.md)
       + 元素和属性 {#elements-attributes}
          + [简介](configuration/using/schema-introduction.md)
          + [属性](configuration/using/schema/attribute.md)
