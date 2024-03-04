@@ -5,7 +5,7 @@ description: 了解数据架构中的密钥管理
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
-source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
+source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
@@ -28,7 +28,6 @@ ht-degree: 2%
 ```
 
 当键是架构中第一个要填充的键时，或者如果键包含 `internal` 属性设置为“true”。
-
 
 以下规则适用于键：
 
