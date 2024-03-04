@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: 关于Adobe Campaign Classic中的架构引用
-description: 了解如何配置扩展模式以扩展Adobe Campaign Classic数据库的概念数据模型
+title: 开始使用Adobe Campaign中的架构
+description: 了解如何使用架构并扩展Adobe Campaign数据库的概念数据模型
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 9%
+source-wordcount: '376'
+ht-degree: 2%
 
 ---
 
-# 关于模式参考{#about-schema-reference}
+# 架构入门 {#about-schema-reference}
+
+## 什么是架构 {#what-is-a-schema}
 
 本章介绍如何配置扩展模式以扩展Adobe Campaign数据库的概念数据模型。
 
-要更好地了解Campaign内置表及其交互，请参阅 [Campaign Classic数据模型](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html).
+要更好地了解Campaign内置表及其交互，请参阅 [Campaign Classic数据模型](about-data-model.md).
 
-应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循Adobe Campaign特有的语法，称为 **架构**.
-
-架构是与数据库表关联的XML文档。 它定义数据结构并描述表的SQL定义：
+在Adobe Campaign中，应用程序中所承载数据的物理和逻辑结构以XML形式进行描述。 A **架构** 是与数据库表关联的XML文档。 它定义数据结构并描述表的SQL定义：
 
 * 表的名称
 * 字段

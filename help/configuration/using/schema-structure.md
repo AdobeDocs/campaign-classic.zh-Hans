@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 模式结构
+title: 了解Adobe Campaign中的架构结构
 description: 模式结构
 feature: Custom Resources
 role: Data Engineer, Developer
@@ -9,18 +9,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 2%
+source-wordcount: '1496'
+ht-degree: 1%
 
 ---
 
-# 模式结构{#schema-structure}
+# 了解架构结构 {#schema-structure}
 
-的基本结构 `<srcschema>` 如下所示：
+架构的基本结构如下所述。
 
-```
+## 数据架构  {#data-schema}
+
+对于 `<srcschema>`，其结构如下所示：
+
+```sql
 <srcSchema>
     <enumeration>
         ...          //definition of enumerations
@@ -63,7 +67,7 @@ ht-degree: 2%
 
 数据架构的XML文档必须包含 **`<srcschema>`** 具有的根元素 **name** 和 **命名空间** 属性，用于填充架构名称及其命名空间。
 
-```
+```sql
 <srcSchema name="schema_name" namespace="namespace">
 ...
 </srcSchema>
@@ -71,7 +75,7 @@ ht-degree: 2%
 
 让我们使用以下XML内容来说明数据模式的结构：
 
-```
+```sql
 <recipient email="John.doe@aol.com" created="2009/03/12" gender="1"> 
   <location city="London"/>
 </recipient>
@@ -79,7 +83,7 @@ ht-degree: 2%
 
 及其相应的数据架构：
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email"/>
@@ -102,11 +106,11 @@ ht-degree: 2%
 <element name="recipient">
 ```
 
-元素 **`<attribute>`** 和 **`<element>`** 在主元素之后定义数据项在XML结构的位置和名称。
+此 **`<attribute>`** 和 **`<element>`** 主元素后面的元素用于定义XML结构中数据项的位置和名称。
 
 在我们的示例模式中，这些规则包括：
 
-```
+```sql
 <attribute name="email"/>
 <attribute name="created"/>
 <attribute name="gender"/>
@@ -115,13 +119,13 @@ ht-degree: 2%
 </element>
 ```
 
-必须遵循以下规则：
+以下规则适用：
 
 * 每个 **`<element>`** 和 **`<attribute>`** 必须通过名称进行标识 **name** 属性。
 
   >[!IMPORTANT]
   >
-  >元素的名称应简洁，最好是英文，并且仅包括符合XML命名规则的授权字符。
+  >元素的名称应简洁，最好是英文，并且仅包括XML命名规则中允许的字符。
 
 * 仅 **`<element>`** 元素可以包含 **`<attribute>`** 元素和 **`<element>`** XML结构中的元素。
 * An **`<attribute>`** 元素在 **`<element>`**.
@@ -131,7 +135,7 @@ ht-degree: 2%
 
 数据类型是通过 **type** 中的属性 **`<attribute>`** 和 **`<element>`** 元素。
 
-详细列表可在的描述中找到 [`<attribute>` 元素](../../configuration/using/schema/attribute.md) 和 [`<element>` 元素](../../configuration/using/schema/element.md))。
+详细列表可在的描述中找到 [`<attribute>` 元素](../../configuration/using/schema/attribute.md) 和 [`<element>` 元素](../../configuration/using/schema/element.md).
 
 如果未填充此属性， **字符串** 是默认数据类型，除非元素包含子元素。 如果是，则它仅用于按层级结构元素(**`<location>`** 元素)。
 
@@ -152,11 +156,11 @@ ht-degree: 2%
 
   >[!NOTE]
   >
-  >包含 **uuid** 字段，而非Microsoft SQL Server引擎中的“newuuid()”函数则必须添加并使用其默认值完成。
+  >包含 **uuid** 除Microsoft SQL Server外，RDBMS中的字段， `the newuuid()` 函数必须添加并使用其默认值完成。
 
 以下是输入的类型的模式示例：
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email" type="string" length="80"/>
@@ -178,92 +182,77 @@ ht-degree: 2%
   <tr> 
    <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
-   <td> <strong>Oracle</strong><br /> </td> 
-   <td> <strong>MS SQL</strong><br /> </td> 
+   <td> <strong>oracle</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> 字符串<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2（如果是unicode，则为NVARCHAR2）<br /> </td> 
-   <td> VARCHAR （NVARCHAR，如果是unicode）<br /> </td> 
   </tr> 
   <tr> 
-   <td> 布尔值<br /> </td> 
+   <td> 布尔型<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> 数字(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> 字节<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> 数字(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
-   <td> 短整型<br /> </td> 
+   <td> 短<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> 数字(5)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
   </tr> 
   <tr> 
-   <td> 双精度型<br /> </td> 
+   <td> 多次<br /> </td> 
    <td> 双精度<br /> </td> 
    <td> 浮动<br /> </td> 
-   <td> 浮动<br /> </td> 
   </tr> 
   <tr> 
-   <td> 长整型<br /> </td> 
+   <td> 长<br /> </td> 
    <td> 整数<br /> </td> 
    <td> 数字(10)<br /> </td> 
-   <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGINT<br /> </td> 
    <td> 数字(20)<br /> </td> 
-   <td> BIGINT<br /> </td> 
   </tr> 
   <tr> 
    <td> 日期<br /> </td> 
    <td> 日期<br /> </td> 
    <td> 日期<br /> </td> 
-   <td> 日期时间<br /> </td> 
   </tr> 
   <tr> 
    <td> 时间<br /> </td> 
    <td> 时间<br /> </td> 
-   <td> 浮动<br /> </td> 
    <td> 浮动<br /> </td> 
   </tr> 
   <tr> 
    <td> 日期时间<br /> </td> 
    <td> 时间戳<br /> </td> 
    <td> 日期<br /> </td> 
-   <td> MS SQL &lt; 2008：日期时间<br /> MS SQL &gt;= 2012： DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> 时间戳<br /> </td> 
    <td> 日期<br /> </td> 
-   <td> MS SQL &lt; 2008：日期时间<br /> MS SQL &gt;= 2012： DATETIME2<br /> </td> 
   </tr> 
   <tr> 
    <td> 时间跨度<br /> </td> 
    <td> 双精度<br /> </td> 
-   <td> 浮动<br /> </td> 
    <td> 浮动<br /> </td> 
   </tr> 
   <tr> 
    <td> 备注<br /> </td> 
    <td> 文本<br /> </td> 
    <td> CLOB（Unicode时为NCLOB）<br /> </td> 
-   <td> TEXT（Unicode时为NTEXT）<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> 图像<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -280,37 +269,37 @@ ht-degree: 2%
   >
   >标签与实例的当前语言关联。
 
-  **示例**:
+  **示例**：
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  从Adobe Campaign客户端控制台输入表单中可以看到标签：
+  标签显示在Adobe Campaign客户端控制台输入表单中：
 
   ![](assets/d_ncs_integration_schema_label.png)
 
 * 此 **desc** 属性允许您输入详细说明。
 
-  可从Adobe Campaign客户端控制台主窗口状态栏中的输入表单看到描述。
+  该描述将显示在Adobe Campaign客户端控制台主窗口状态栏的输入表单中。
 
   >[!NOTE]
   >
   >该描述与实例的当前语言相关联。
 
-  **示例**:
+  **示例**：
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
   ```
 
 ### 默认值 {#default-values}
 
-此 **默认** 属性允许您定义在创建内容时返回默认值的表达式。
+使用 **默认** 属性，用于定义在创建内容时返回默认值的表达式。
 
 该值必须是符合XPath语言的表达式。 有关详细信息，请参见 [使用XPath引用](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
-**示例**:
+**示例**：
 
 * 当前日期： **default=&quot;GetDate()&quot;**
 * 计数器： **default=&quot;&#39;FRM&#39;+CounterValue(&#39;myCounter&#39;)&quot;**
@@ -319,9 +308,9 @@ ht-degree: 2%
 
   >[!NOTE]
   >
-  >在Adobe Campaign客户端控制台中， **[!UICONTROL Administration>Counters]** 节点用于管理计数器。
+  >在Adobe Campaign客户端控制台中，浏览 **[!UICONTROL Administration > Counters]** 用于管理计数器的资源管理器文件夹。
 
-要将默认值链接到字段，您可以使用 `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+要将默认值链接到字段，您可以使用 `<default>`  或  `<sqldefault>`   字段。
 
 `<default>` ：用于在创建实体时使用默认值预填字段。 该值将不会是默认的SQL值。
 
@@ -329,13 +318,13 @@ ht-degree: 2%
 
 ### 明细列表 {#enumerations}
 
-#### 自由枚举 {#free-enumeration}
+#### 打开明细列表 {#free-enumeration}
 
-此 **userEnum** 属性允许您定义一个自由枚举来记忆和显示通过此字段输入的值。 语法如下：
+此 **userEnum** 属性允许您定义一个打开的明细列表，以存储和显示通过此字段输入的值。
 
-**userEnum=&quot;枚举的名称&quot;**
+语法如下：
 
-为枚举指定的名称可以自由选择并与其他字段共享。
+`userEnum="name of enumeration"`
 
 这些值显示在输入表单的下拉列表中：
 
@@ -343,7 +332,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->在Adobe Campaign客户端控制台中， **[!UICONTROL Administration > Enumerations]** 节点用于管理枚举。
+>在Adobe Campaign客户端控制台中，浏览 **[!UICONTROL Administration > Enumerations]** 用于管理枚举的资源管理器文件夹。
 
 #### 设置明细列表 {#set-enumeration}
 
@@ -357,7 +346,7 @@ ht-degree: 2%
 
 数据架构中的枚举声明示例：
 
-```
+```sql
 <enumeration name="gender" basetype="byte" default="0">    
   <value name="unknown" label="Not specified" value="0"/>    
   <value name="male" label="male" value="1"/>   
@@ -369,33 +358,31 @@ ht-degree: 2%
 
 枚举属性如下：
 
-* **基类型**：与值关联的数据类型，
-* **标签**：枚举的描述，
-* **name**：枚举的名称，
-* **默认**：枚举的默认值。
+* **基类型**：与值关联的数据类型
+* **标签**：明细列表的说明
+* **name**：枚举的名称
+* **默认**：枚举的默认值
 
 枚举值在 **`<value>`** 元素具有以下属性：
 
-* **name**：内部存储的值的名称，
-* **标签**：通过图形界面显示的标签。
+* **name**：内部存储的值的名称
+* **标签**：图形界面中显示的标签
 
 #### dbenum枚举 {#dbenum-enumeration}
 
-* 此 **德伯南** 属性允许您定义其属性与 **枚举** 属性。
+*此 **德伯南** 属性允许您定义其属性与 **枚举** 属性。
 
-  但是， **name** attribute不会将值存储在内部，而是会存储一个代码，通过该代码可以扩展相关的表，而无需修改其模式。
+但是， **name** attribute不会将值存储在内部，而是会存储一个代码，通过该代码可以扩展相关的表，而无需修改其模式。
 
-  值是通过 **[!UICONTROL Administration>Enumerations]** 节点。
+例如，此枚举用于指定营销活动的性质。
 
-  例如，此枚举用于指定营销活动的性质。
-
-  ![](assets/d_ncs_configuration_schema_dbenum.png)
+![](assets/d_ncs_configuration_schema_dbenum.png)
 
 ### 示例 {#example}
 
 以下是填充了属性的架构示例：
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -422,7 +409,7 @@ ht-degree: 2%
 
 **示例**：的定义 **`<group>`** 架构中的收藏集元素。
 
-```
+```sql
 <element name="group" unbound="true" label="List of groups">
   <attribute name="label" type="string" label="Label"/>
 </element>
@@ -430,7 +417,7 @@ ht-degree: 2%
 
 使用XML内容的投影：
 
-```
+```sql
 <group label="Group1"/>
 <group label="Group2"/>
 ```
@@ -443,7 +430,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 元素由名称指定，属性由名称指定，名称前面加有字符“@”。
 
-**示例**:
+**示例**：
 
 * **@email**：选择电子邮件，
 * **location/@city**：选择“城市”属性位于 **`<location>`** 元素
@@ -470,11 +457,11 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 ![](assets/d_ncs_integration_schema_function.png)
 
-**示例**:
+**示例**：
 
 * **GetDate()**：返回当前日期
-* **年(@created)**：返回“已创建”属性中包含的日期的年份。
-* **GetEmailDomain(@email)**：返回电子邮件地址的域。
+* **年(@created)**：返回“已创建”属性中包含的日期的年份
+* **GetEmailDomain(@email)**：返回电子邮件地址的域
 
 ## 通过计算字符串构建字符串 {#building-a-string-via-the-compute-string}
 
@@ -484,7 +471,7 @@ A **计算字符串** 是一个XPath表达式，用于构造一个字符串，�
 
 **示例**：收件人表的计算字符串。
 
-```
+```sql
 <srcSchema name="recipient" namespace="nms">  
   <element name="recipient">
     <compute-string expr="@lastName + ' ' + @firstName +' (' + @email + ')' "/>

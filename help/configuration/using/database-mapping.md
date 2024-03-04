@@ -6,18 +6,18 @@ feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 1%
+source-wordcount: '1984'
+ht-degree: 0%
 
 ---
 
 # 数据库映射{#database-mapping}
 
-示例架构的SQL映射提供了以下XML文档：
+描述的示例架构的SQL映射 [本页内容](schema-structure.md) 生成以下XML文档：
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
   <enumeration basetype="byte" name="gender">    
     <value label="Not specified" name="unknown" value="0"/>    
@@ -38,27 +38,27 @@ ht-degree: 1%
 
 ## 说明 {#description}
 
-架构的根元素不再是 **`<srcschema>`**，但 **`<schema>`**.
+架构的根元素已更改为 **`<srcschema>`** 到 **`<schema>`**.
 
-这会将我们带到另一种类型的文档，它自动从源架构生成，简称为架构。 Adobe Campaign应用程序将使用此架构。
+此其他类型的文档自动从源架构生成，简称为架构。
 
 SQL名称是根据元素名称和类型自动确定的。
 
 SQL命名规则如下：
 
-* 表：架构命名空间和名称的连接
+* **表**：架构命名空间和名称的连接
 
   在本例中，表的名称是通过以下位置的架构主元素输入的： **sqltable** 属性：
 
-  ```
+  ```sql
   <element name="recipient" sqltable="CusRecipient">
   ```
 
-* 字段：前面有根据类型定义的前缀的元素名称（例如，“i”表示整数，“d”表示双精度，“s”表示字符串，“ts”表示日期等）
+* **字段**：前面有前缀的元素的名称，前缀根据类型定义：“i”表示整数，“d”表示双精度，“s”表示字符串，“ts”表示日期等。
 
   字段名称是通过 **sqlname** 每种类型属性 **`<attribute>`** 和 **`<element>`**：
 
-  ```
+  ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
   ```
 
@@ -68,7 +68,7 @@ SQL命名规则如下：
 
 用于创建从扩展模式生成的表的SQL脚本如下所示：
 
-```
+```sql
 CREATE TABLE CusRecipient(
   iGender NUMERIC(3) NOT NULL Default 0,   
   sCity VARCHAR(50),   
@@ -78,12 +78,12 @@ CREATE TABLE CusRecipient(
 
 SQL字段约束如下：
 
-* 数字和日期字段中没有空值，
-* 数值字段被初始化为0。
+* 数字和日期字段中没有空值
+* 数值字段已初始化为0
 
 ## XML字段 {#xml-fields}
 
-默认情况下，任何键入的 **`<attribute>`** 和 **`<element>`** 元素映射到数据架构表的SQL字段。 但是，您可以用XML而不是SQL引用此字段，这意味着数据存储在包含所有XML字段值的表的备注字段(“mData”)中。 这些数据的存储是一个观察模式结构的XML文档。
+默认情况下，任意  **`<attribute>`** 和 **`<element>`** -typed元素映射到数据架构表的SQL字段。 但是，您可以用XML而不是SQL引用此字段，这意味着数据存储在包含所有XML字段值的表的备注字段(“mData”)中。 这些数据的存储是一个观察模式结构的XML文档。
 
 要在XML中填充字段，您必须添加 **xml** 对于相关元素，属性值为“true”。
 
@@ -91,21 +91,19 @@ SQL字段约束如下：
 
 * 多行评论字段：
 
-  ```
+  ```sql
   <element name="comment" xml="true" type="memo" label="Comment"/>
   ```
 
 * HTML格式的数据描述：
 
-  ```
+  ```sql
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
   通过“html”类型，您可以将HTML内容存储在CDATA标记中，并在Adobe Campaign客户端界面中显示特殊的HTML编辑检查。
 
-通过使用XML字段，您无需修改数据库的物理结构即可添加字段。 另一个优点是，您使用的资源较少（分配给SQL字段的大小、每个表的字段数限制等）。
-
-主要缺点是无法索引或过滤XML字段。
+使用XML字段添加新字段，而无需修改数据库的物理结构。 另一个优点是，您使用的资源较少（分配给SQL字段的大小、每个表的字段数限制等）。 但是，请注意，不能索引或过滤XML字段。
 
 ## 索引字段 {#indexed-fields}
 
@@ -113,7 +111,7 @@ SQL字段约束如下：
 
 从数据架构的主元素声明索引。
 
-```
+```sql
 <dbindex name="name_of_index" unique="true/false">
   <keyfield xpath="xpath_of_field1"/>
   <keyfield xpath="xpath_of_field2"/>
@@ -123,23 +121,21 @@ SQL字段约束如下：
 
 索引遵循以下规则：
 
-* 索引可以引用表中的一个或多个字段。
-* 在以下情况下，索引可以在所有字段中是唯一的（以避免重复） **独特** 属性包含值“true”。
-* 索引的SQL名称由表的SQL名称和索引的名称确定。
+* 索引可以引用表中的一个或多个字段
+* 在以下情况下，索引可以在所有字段中是唯一的（以避免重复） **独特** 属性包含值“true”
+* 索引的SQL名称由表的SQL名称和索引的名称确定
 
 >[!NOTE]
 >
->作为标准，索引是从架构的主元素声明的第一个元素。
-
->[!NOTE]
+>* 作为标准，索引是从架构的主元素声明的第一个元素。
 >
->在表映射期间（标准或FDA）自动创建索引。
+>* 在表映射期间（标准或FDA）自动创建索引。
 
-**示例**:
+**示例**：
 
 * 向电子邮件地址和城市添加索引：
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <dbindex name="email">
@@ -157,7 +153,7 @@ SQL字段约束如下：
 
 * 向“id”名称字段添加唯一索引：
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <dbindex name="id" unique="true">
@@ -180,7 +176,7 @@ SQL字段约束如下：
 
 从数据架构的主元素中声明了一个键。
 
-```
+```sql
 <key name="name_of_key">
   <keyfield xpath="xpath_of_field1"/>
   <keyfield xpath="xpath_of_field2"/>
@@ -188,25 +184,23 @@ SQL字段约束如下：
 </key>
 ```
 
-键值遵循以下规则：
+以下规则适用于键：
 
-* 键可以引用表中的一个或多个字段。
-* 当某个键是架构中第一个要填充的键或包含 **内部** 值为“true”的属性。
-* 为每个键定义隐式声明唯一索引。 可以通过添加以下内容来阻止在键上创建索引 **noDbIndex** 值为“true”的属性。
-
->[!NOTE]
->
->作为标准，键是在定义索引后从架构的主元素声明的元素。
+* 键可以引用表中的一个或多个字段
+* 当某个键是架构中第一个要填充的键或包含 **内部** 值为“true”的属性
+* 为每个键定义隐式声明唯一索引。 可以通过添加以下内容来阻止在键上创建索引 **noDbIndex** 值为“true”的属性
 
 >[!NOTE]
 >
->键是在表映射（标准或FDA）期间创建的，Adobe Campaign查找唯一的索引。
+>* 作为标准，键是在定义索引后从架构的主元素声明的元素。
+>
+>* 键是在表映射（标准或FDA）期间创建的，Adobe Campaign查找唯一的索引。
 
-**示例**:
+**示例**：
 
 * 向电子邮件地址和城市添加密钥：
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <key name="email">
@@ -224,7 +218,7 @@ SQL字段约束如下：
 
   生成的架构：
 
-  ```
+  ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
     <element name="recipient" sqltable="CusRecipient">    
      <dbindex name="email" unique="true">      
@@ -247,7 +241,7 @@ SQL字段约束如下：
 
 * 在“id”名称字段中添加主键或内部键：
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <key name="id" internal="true">
@@ -266,7 +260,7 @@ SQL字段约束如下：
 
   生成的架构：
 
-  ```
+  ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
     <element name="recipient" sqltable="CusRecipient">    
       <key name="email">      
@@ -307,11 +301,11 @@ SQL字段约束如下：
 
 要声明唯一键，请填充 **autopk** 属性（值为“true”）。
 
-**示例**:
+**示例**：
 
 在源模式中声明增量密钥：
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient" autopk="true">
   ...
@@ -321,7 +315,7 @@ SQL字段约束如下：
 
 生成的架构：
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" autopk="true" pkSequence="XtkNewId" sqltable="CusRecipient"> 
     <dbindex name="id" unique="true">
@@ -370,7 +364,7 @@ SQL字段约束如下：
 
 必须在包含通过主元素链接的表的外键的架构中声明链接：
 
-```
+```sql
 <element name="name_of_link" type="link" target="key_of_destination_schema">
   <join xpath-dst="xpath_of_field1_destination_table" xpath-src="xpath_of_field1_source_table"/>
   <join xpath-dst="xpath_of_field2_destination_table" xpath-src="xpath_of_field2_source_table"/>
@@ -408,11 +402,11 @@ SQL字段约束如下：
 >
 >作为标准，链接是在架构末尾声明的元素。
 
-### 示例 1 {#example-1}
+### 示例1 {#example-1}
 
 与“cus：company”架构表相关的1-N关系：
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     ...
@@ -423,7 +417,7 @@ SQL字段约束如下：
 
 生成的架构：
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" sqltable="CusRecipient"> 
     <dbindex name="companyId">      
@@ -444,7 +438,7 @@ SQL字段约束如下：
 
 目标(“cus：company”)的扩展架构：
 
-```
+```sql
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
   <element name="company" sqltable="CusCompany" autopk="true"> 
     <dbindex name="id" unique="true">     
@@ -471,11 +465,11 @@ SQL字段约束如下：
 * **未绑定**：链接声明为1-N基数的收集要素（默认情况下）
 * **完整性**：默认情况下，“定义”（可以在源架构上的链接定义中使用“revIntegrity”属性强制执行）。
 
-### 示例 2 {#example-2}
+### 示例2 {#example-2}
 
 在本例中，我们将声明指向“nms：address”模式表的链接。 连接是外部连接，使用收件人的电子邮件地址和链接表的“@address”字段(“nms：address”)显式填充。
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient"> 
     ...
@@ -486,29 +480,29 @@ SQL字段约束如下：
 </srcSchema>
 ```
 
-### 示例 3 {#example-3}
+### 示例3 {#example-3}
 
 与“cus：extension”架构表的1-1关系：
 
-```
+```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### 示例 4 {#example-4}
+### 示例4 {#example-4}
 
 链接到文件夹（“xtk：folder”架构）：
 
-```
+```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
 默认值返回在“DefaultFolder(&#39;nmsFolder&#39;)”函数中输入的第一个符合条件的参数类型文件的标识符。
 
-### 示例 5 {#example-5}
+### 示例5 {#example-5}
 
 在本例中，我们希望使用在链接（“company”到“cus：company”架构）上创建键 **xlink** （“电子邮件”）表的属性和字段：
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <key name="companyEmail"> 
@@ -524,7 +518,7 @@ SQL字段约束如下：
 
 生成的架构：
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" sqltable="CusRecipient"> 
     <dbindex name="companyId">      
