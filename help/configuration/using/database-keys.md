@@ -5,10 +5,10 @@ description: 了解数据架构中的密钥管理
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 1%
+source-wordcount: '625'
+ht-degree: 2%
 
 ---
 
@@ -180,3 +180,13 @@ Adobe Campaign架构中引用的序列(**NmsTrackingLogId** 例如)必须与返�
 >
 >创建表时，主键设置为0的记录会自动插入。 此记录用于避免外部联接，这对于卷表无效。 默认情况下，所有外键都使用值0进行初始化，这样，当数据项未填充时，就始终可以在连接上返回结果。
 
+
+## 了解详情
+
+浏览以下链接以了解更多信息：
+
+* [架构入门](about-schema-reference.md)
+* [模式结构](schema-structure.md)
+* [数据库映射](database-mapping.md)
+* [链接管理](database-links.md)
+* [Campaign 数据模型](about-data-model.md)
