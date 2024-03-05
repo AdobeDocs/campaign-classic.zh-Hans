@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
+source-git-commit: 517f09e508207b14e6b870f926753b2d9a547262
 workflow-type: tm+mt
-source-wordcount: '2278'
-ht-degree: 100%
+source-wordcount: '2319'
+ht-degree: 98%
 
 ---
 
@@ -32,6 +32,8 @@ _2023 年 12 月 5 日_
 * 在 Campaign Classic v7.3.5 中，身份验证过程已得到改进并受保护。现在，技术操作员应使用 Adobe Identity Management System (IMS) 连接到 Campaign。请阅读[此技术说明](../../technotes/using/ims-migration.md)，了解如何迁移现有技术帐户。
 
 * 此外，作为加强安全和身份验证过程的一部分，Adobe Campaign 强烈建议将终端用户身份验证模式从登录/密码本机身份验证迁移到 Adobe Identity Management System (IMS)。请阅读[此技术说明](../../technotes/using/migrate-users-to-ims.md)，了解如何迁移操作员。
+
+* 现在，当Web窗体具有 **待发布** 状态，它不会自动处于活动状态。 为防止出现安全问题，必须先发布该报告，然后才能发布 **在线** 并可通过Web浏览器中的Web窗体URL访问。 [了解更多信息](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 
 ### 修补程序 {#release-7-3-5-patches}
 
