@@ -4,9 +4,9 @@ description: 了解如何将Campaign技术操作员迁移到Adobe Developer控�
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: b2c37e2426d3b6ba5174d4a446320e0f50485a76
+source-git-commit: 17a43a6e2e3ee7a3a2b81545bf96d766e6e97a05
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1734'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 0%
 作为加强安全和身份验证流程工作的一部分，从Campaign Classicv7.3.5开始，对Campaign Classic的身份验证流程正在得到改进。 技术操作员现在应使用 [AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **Adobe建议在Campaign v7.3.5中执行此迁移，以便能够顺利迁移到Campaign v8。**
 
 技术操作员是为API集成明确创建的Campaign用户配置文件。 本文详细介绍了通过Adobe Developer控制台将技术操作员迁移到技术帐户所需的步骤。
-
 
 ## 您是否受影响？{#ims-impacts}
 
@@ -53,7 +52,7 @@ ht-degree: 0%
 
 * Campaign托管客户和Managed Services客户
 
-  对于进入消息中心实例的API调用，在升级到Campaign v7.3.5（或其他）期间应已创建产品配置文件 [IMS迁移兼容版本](#ims-versions-tech))，或在配置实例期间。 此产品配置文件的名称为：
+  对于进入消息中心实例的API调用，在升级到Campaign v7.3.5（或其他）期间应创建产品配置文件（如下所述） [IMS迁移兼容版本](#ims-versions-tech))，或在配置实例期间。 请注意，如果您看不到产品配置文件，请在开始IMS迁移之前联系过渡经理或客户支持部门以获取已创建的产品配置文件。 此产品配置文件的名称为：
 
   `campaign - <your campaign instance> - messagecenter`
 
