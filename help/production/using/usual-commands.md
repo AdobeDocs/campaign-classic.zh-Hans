@@ -3,16 +3,16 @@ product: campaign
 title: 常用命令
 description: 常用命令
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 6%
+source-wordcount: '421'
+ht-degree: 5%
 
 ---
 
@@ -156,7 +156,7 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 >[!IMPORTANT]
 >
->要使用 **内部** 标识符，则需要预先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+>要使用 **内部** 标识符，则需要预先定义密码。 如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 >[!NOTE]
 >
@@ -164,5 +164,5 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 >* 要获取参数列表，请使用 **-？** 参数： **nlserver配置 — ？**
 >* 对于Oracle数据库，不能指定帐户。 语法如下所示：
 >
->  nlserver配置 — setdblogin:Oracle:test6@dbserver
+>  `nlserver config -setdblogin:Oracle:test6@dbserver`
 >

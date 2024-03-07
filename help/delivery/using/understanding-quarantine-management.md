@@ -7,16 +7,16 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '3009'
-ht-degree: 12%
+source-wordcount: '2990'
+ht-degree: 8%
 
 ---
 
 # 了解隔离管理{#understanding-quarantine-management}
 
-Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认情况下会将其地址已被隔离的收件人排除在外，不会将其设为目标。举例来说，信箱已满或地址不存在时，可以隔离某个电子邮件地址。无论如何，隔离程序都符合下述具体规则。
+Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认情况下会将其地址已被隔离的收件人排除在外，不会将其设为目标。例如，当邮箱已满或地址不存在时，可以隔离电子邮件地址。 无论如何，隔离程序都符合下述具体规则。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 
 * 位于 **阻止列表**&#x200B;另一方面，将导致 **个人资料** 不再被投放定向，如针对给定渠道的退订（选择退出）后。 例如，如果电子邮件渠道阻止列表上的用户档案有两个电子邮件地址，则这两个地址都将排除在投放之外。
 
-  您可以检查配置文件是否在阻止列表中 **[!UICONTROL No longer contact]** 用户档案的部分 **[!UICONTROL General]** 选项卡。 请参阅[此章节](../../platform/using/editing-a-profile.md#general-tab)。
+  您可以检查配置文件是否在阻止列表中 **[!UICONTROL No longer contact]** 用户档案的部分 **[!UICONTROL General]** 选项卡。 请参阅[此小节](../../platform/using/editing-a-profile.md#general-tab)。
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 >
 >第1年年末：(1&#42;0.33)/(1+0.5)=22%。
 >
->第2年年末：((1.22)&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
+第2年年末：((1.22)&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
 
 ### 在投放报告中确定隔离的地址 {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -97,7 +97,7 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 ![](assets/tech_quarant_recipients_filter.png)
 
 
-## 将地址加入隔离的条件 {#conditions-for-sending-an-address-to-quarantine}
+## 将地址添加到隔离的条件 {#conditions-for-sending-an-address-to-quarantine}
 
 Adobe Campaign根据投放失败类型和错误消息鉴别期间分配的原因管理隔离(请参阅 [退回邮件鉴别](understanding-delivery-failures.md#bounce-mail-qualification) 和 [投放失败类型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons))。
 
@@ -109,7 +109,7 @@ Adobe Campaign根据投放失败类型和错误消息鉴别期间分配的原因
 
 >[!NOTE]
 >
->Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式导入电子邮件地址，这样以后就不会重新定向这些地址。
+Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式导入电子邮件地址，这样以后就不会重新定向这些地址。
 
 在隔离地址列表中(请参阅 [确定整个平台的隔离地址](#identifying-quarantined-addresses-for-the-entire-platform))，则 **[!UICONTROL Error reason]** 字段指示将选定地址置于隔离状态的原因。
 
@@ -145,7 +145,7 @@ Adobe Campaign根据投放失败类型和错误消息鉴别期间分配的原因
 
 >[!IMPORTANT]
 >
->地址在中的收件人 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 即使他们收到电子邮件，状态也不会被删除。
+地址在中的收件人 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 即使他们收到电子邮件，状态也不会被删除。
 
 ### 手动更新 {#unquarantine-manual}
 
@@ -165,8 +165,8 @@ Adobe Campaign根据投放失败类型和错误消息鉴别期间分配的原因
 
    * **错误文本（隔离文本）** 包含“Momen_Code10_InvalidRecipient”
    * **电子邮件域(@domain)** 等于domain1.com或 **电子邮件域(@domain)** 等于domain2.com或 **电子邮件域(@domain)** 等于domain3.com
-   * **更新状态(@lastModified)** YYYY/MM/DD HH当天或之后:MM:SS AM
-   * **更新状态(@lastModified)** 在MM/DD/YYYY HH或之前:MM:SS PM
+   * **更新状态(@lastModified)** 在或晚于 `MM/DD/YYYY HH:MM:SS AM`
+   * **更新状态(@lastModified)** 早于 `MM/DD/YYYY HH:MM:SS PM`
 
 * 对于包含SMTP退回响应信息的Campaign Classicv7实例 **[!UICONTROL Error text]** 隔离列表的字段：
 
@@ -174,8 +174,8 @@ Adobe Campaign根据投放失败类型和错误消息鉴别期间分配的原因
 
   其中“support.ISP.com”可以是：例如“support.apple.com”或“support.google.com”
 
-   * **更新状态(@lastModified)** YYYY/MM/DD HH当天或之后:MM:SS AM
-   * **更新状态(@lastModified)** 在MM/DD/YYYY HH或之前:MM:SS PM
+   * **更新状态(@lastModified)** 在或晚于 `MM/DD/YYYY HH:MM:SS AM`
+   * **更新状态(@lastModified)** 早于  `MM/DD/YYYY HH:MM:SS PM`
 
 获得受影响的收件人列表后，添加 **[!UICONTROL Update data]** 活动，将其电子邮件地址状态设置为 **[!UICONTROL Valid]** 因此它们将被从隔离列表中删除 **[!UICONTROL Database cleanup]** 工作流。 也可以直接从隔离表中删除它们。
 
@@ -292,13 +292,13 @@ HTTP/V2协议允许直接反馈每个推送投放的状态。 如果使用HTTP/V
 
 >[!NOTE]
 >
->对于使用百度连接器的客户，以下是不同类型的错误：
+对于使用百度连接器的客户，以下是不同类型的错误：
 >
->* 投放开始时的连接问题：失败类型 **[!UICONTROL Undefined]**，失败原因 **[!UICONTROL Unreachable]**，将执行重试。
->* 投放期间连接丢失：软错误、失败原因 **[!UICONTROL Refused]**，将执行重试。
->* 百度在发送过程中返回的同步错误：硬错误、失败原因 **[!UICONTROL Refused]**，则不执行重试。
+* 投放开始时的连接问题：失败类型 **[!UICONTROL Undefined]**，失败原因 **[!UICONTROL Unreachable]**，将执行重试。
+* 投放期间连接丢失：软错误、失败原因 **[!UICONTROL Refused]**，将执行重试。
+* 百度在发送过程中返回的同步错误：硬错误、失败原因 **[!UICONTROL Refused]**，则不执行重试。
 >
->Adobe Campaign每10分钟联系百度服务器以检索发送消息的状态，并更新broadlog。 如果消息被声明为已发送，则broadlogs中消息的状态将设置为 **[!UICONTROL Received]**. 如果百度声明错误，则状态设置为 **[!UICONTROL Failed]**.
+Adobe Campaign每10分钟联系百度服务器以检索发送消息的状态，并更新broadlog。 如果消息被声明为已发送，则broadlogs中消息的状态将设置为 **[!UICONTROL Received]**. 如果百度声明错误，则状态设置为 **[!UICONTROL Failed]**.
 
 **适用于Android V2**
 
@@ -517,7 +517,7 @@ SMS消息的隔离机制在全局上与常规流程相同。 请参阅 [关于�
 
 >[!NOTE]
 >
->此 **[!UICONTROL Delivery log qualification]** 表不适用于 **扩展的通用SMPP** 连接器。
+此 **[!UICONTROL Delivery log qualification]** 表不适用于 **扩展的通用SMPP** 连接器。
 
 <table> 
  <tbody> 
@@ -576,9 +576,9 @@ SMPP连接器从使用正则表达式（正则表达式）返回的SR（状态�
 
 >[!NOTE]
 >
->失败类型和失败原因与电子邮件相同。 请参阅 [投放失败类型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+失败类型和失败原因与电子邮件相同。 请参阅 [投放失败类型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
->请向您的提供商索取状态和错误代码列表，以便在投放日志资格表中设置正确的失败类型和失败原因。
+请向您的提供商索取状态和错误代码列表，以便在投放日志资格表中设置正确的失败类型和失败原因。
 
 生成的消息示例：
 

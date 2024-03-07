@@ -3,11 +3,11 @@ product: campaign
 title: CRM连接器数据同步
 description: 管理Campaign和您的CRM之间的数据
 feature: Microsoft CRM Integration, Salesforce Integration
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1536'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,7 @@ Adobe Campaign和CRM之间的数据同步是通过专用工作流活动执行的
 >
 >此注释仅适用于通用部件 **[!UICONTROL CRM Connector]** 活动。 对于其他CRM活动，该流程是自动的。
 >
->此选项必须手动创建并填充到 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. 它必须是文本选项，其值需要匹配以下格式： **yyyy/MM/dd hh:mm:ss**.
+>此选项必须手动创建并填充到 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. 它必须是文本选项，其值需要匹配以下格式： **`yyyy/MM/dd hh:mm:ss`**.
 > 
 >您需要手动更新此选项以进行任何进一步的导入。
 
@@ -112,7 +112,7 @@ Adobe Campaign和CRM之间的数据同步是通过专用工作流活动执行的
 
   >[!NOTE]
   >
-  >这些日期以下列格式显示： **yyyy/MM/dd hh:mm:ss**.
+  >这些日期以下列格式显示： **`yyyy/MM/dd hh:mm:ss`**.
 
 ### 筛选数据 {#filtering-data}
 

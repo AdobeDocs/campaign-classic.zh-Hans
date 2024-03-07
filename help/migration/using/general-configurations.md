@@ -3,16 +3,16 @@ product: campaign
 title: 常规配置
 description: 常规配置
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '2632'
+source-wordcount: '2607'
 ht-degree: 1%
 
 ---
@@ -118,7 +118,7 @@ nlserver config -internalpassword
 
 * 如果密码为空，则跟踪不再有效。 如果是这种情况，将显示一条错误消息，让您知道并要求您重新配置它。
 * 用户密码不再存储在 **xtk：sessionInfo** 架构。
-* 现在需要管理权限才能使用 **xtk:builder:EvaluateJavaScript** 和 **xtk:builder:EvaluateJavaScriptTemplate** 函数。
+* 现在需要管理权限才能使用 **`xtk:builder:EvaluateJavaScript`** 和 **`xtk:builder:EvaluateJavaScriptTemplate`** 函数。
 
 某些开箱即用的架构已修改，现在默认情况下只能通过具有的运算符的写入访问权限进行访问 **管理员** 权限：
 
@@ -396,7 +396,7 @@ allowSQLInjection="false"
 
 在 `<subQuery>` 元素，以引用主字段的 `<queryDef>`   元素，请使用以下语法： `[../@field]`
 
-示例:
+例如：
 
 ```
 <queryDef operation="select" schema="xtk:jobLog" startPath="/" xtkschema="xtk:queryDef">
@@ -461,7 +461,7 @@ allowSQLInjection="false"
 
   >[!IMPORTANT]
   >
-  >如果选择此解决模式，则可能会丢失新版本中的修补程序。 因此，强烈建议不要使用此选项，或者仅将此选项保留给专家操作员。
+  如果选择此解决模式，则可能会丢失新版本中的修补程序。 因此，强烈建议不要使用此选项，或者仅将此选项保留给专家操作员。
 
 如果选择手动解决冲突，请按以下步骤操作：
 
@@ -490,7 +490,7 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/jsp-api.jar
 $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 ```
 
-## 互动 {#interaction}
+## 交互 {#interaction}
 
 ### 先决条件 {#prerequisites}
 
@@ -508,13 +508,13 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 
 >[!IMPORTANT]
 >
->如果某些使用已配置选件的投放在迁移后发送，则必须在v7中删除并重新创建所有这些投放。 如果无法这样做，则会提供“兼容模式”。 不建议使用此模式，因为您将无法从Interaction v7中的所有新增功能中受益。 这是一种过渡模式，允许您在实际6.1迁移之前完成正在进行的营销活动。 有关此模式的更多信息，请与我们联系。
+如果某些使用已配置选件的投放在迁移后发送，则必须在v7中删除并重新创建所有这些投放。 如果无法这样做，则会提供“兼容模式”。 不建议使用此模式，因为您将无法从Interaction v7中的所有新增功能中受益。 这是一种过渡模式，允许您在实际6.1迁移之前完成正在进行的营销活动。 有关此模式的更多信息，请与我们联系。
 
 移动脚本示例(**interactionTo610_full_XX.js**)在中可用 **迁移** Adobe Campaign文件夹中。 此文件显示了一个客户端脚本示例，该脚本对每个选件使用单个电子邮件表示形式( **[!UICONTROL htmlSource]** 和 **[!UICONTROL textSource]** 字段)。 中的内容 **NmsEmailOfferView** 已将表移至选件表。
 
 >[!NOTE]
 >
->使用此脚本将使您无法从“内容管理”和“渲染函数”选项中获益。 要受益于这些功能，您必须重新思考目录选件，特别是选件内容和配置空间。
+使用此脚本将使您无法从“内容管理”和“渲染函数”选项中获益。 要受益于这些功能，您必须重新思考目录选件，特别是选件内容和配置空间。
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -614,7 +614,7 @@ logInfo("Done");
 
    >[!NOTE]
    >
-   >联机类别和选件的名称在启用后会进行修改。 在传入渠道上，更新所有对优惠和类别的引用。
+   联机类别和选件的名称在启用后会进行修改。 在传入渠道上，更新所有对优惠和类别的引用。
 
 ## 报告 {#reports}
 

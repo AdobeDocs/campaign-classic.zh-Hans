@@ -3,15 +3,15 @@ product: campaign
 title: Web服务器配置
 description: 了解有关Web服务器配置主要最佳实践的更多信息
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 0%
+source-wordcount: '294'
+ht-degree: 3%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 0%
 
   **在Apache上**，编辑/etc/apache2/mods-available/ssl.conf。 示例如下：
 
-   * SSLProtocol all -SSLv2 -SSLv3 -TLSv1
-   * SSLCipherSuite高:MEDIUM:！aNULL：！MD5：！SSLv3：！SSLv2：！TLSv1
+   * `SSLProtocol all -SSLv2 -SSLv3 -TLSv1`
+   * `SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1`
 
   **在IIS上** (请参阅 [文档](https://support.microsoft.com/en-us/kb/245030))，执行以下配置：
 

@@ -9,10 +9,10 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 1%
+source-wordcount: '1013'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 在 **[!UICONTROL Offer presentation]** 选项卡，必须为演示文稿规则指定与在环境中配置的维度相同的维度。
 
-此 **[!UICONTROL Targeting dimension]** 与将接收优惠建议的收件人表（默认为nms：recipients）一致。 此 **[!UICONTROL Storage dimension]** 与包含链接到定向维度的建议历史记录的表一致（默认情况下）:nms:propositionRcp)。
+此 **[!UICONTROL Targeting dimension]** 与收件人表一致(默认情况下： `nms:recipients`)，他们将会收到优惠建议。 此 **[!UICONTROL Storage dimension]** 与包含链接到定向维度的建议历史记录的表一致(默认情况下： `nms:propositionRcp`)。
 
 ![](assets/offer_typology_009.png)
 

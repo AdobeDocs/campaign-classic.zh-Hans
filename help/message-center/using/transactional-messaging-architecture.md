@@ -3,12 +3,12 @@ product: campaign
 title: 事务性消息传递架构
 description: 此部分介绍Adobe Campaign Classic事务性消息架构以及投放事务性消息的可用渠道
 feature: Transactional Messaging, Message Center, Architecture
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 1%
+source-wordcount: '1110'
+ht-degree: 2%
 
 ---
 
@@ -157,7 +157,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
          <urn:domEvent>
 
               <rtEvent wishedChannel="41" type="DELIVERY" registrationToken="2cefnefzef758398493srefzefkzq483974">
-                <mobileApp _operation=”none” uuid="com.adobe.NeoMiles"/>
+                <mobileApp _operation="none" uuid="com.adobe.NeoMiles"/>
                 <ctx>
                     <deliveryTime>1:30 PM</deliveryTime>
                     <url>http://www.adobe.com</url>
@@ -222,7 +222,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
    * **[!UICONTROL Server]** ：输入营销活动的执行实例的服务器URL。
    * **[!UICONTROL Account]** ：输入用于访问执行实例的帐户。
    * **[!UICONTROL Password]** ：输入用于访问执行实例的帐户的密码。
-   * **[!UICONTROL Data Source]** ：输入以下语法 **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
+   * **[!UICONTROL Data Source]** ：输入以下语法 **`nms:extAccount:ID`** 外部数据库帐户的ID值。
 
 1. 创建 **[!UICONTROL Execution instance]** 您的外部帐户 **营销** 实例使用以下配置创建数据同步工作流：
 

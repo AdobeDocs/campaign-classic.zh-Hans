@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '1791'
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+workflow-type: tm+mt
+source-wordcount: '1781'
 ht-degree: 100%
 
 ---
@@ -466,7 +466,7 @@ _2019 年 8 月 13 日_
 
 ### 客户端控制台 {#ClientConsoleoperatingsystems}
 
-:warning:警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
+`:warning:`警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
 
 #### 操作系统
 

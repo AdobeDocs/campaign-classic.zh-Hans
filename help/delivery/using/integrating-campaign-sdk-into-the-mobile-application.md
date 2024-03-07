@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 feature: Mobile SDK Integration, Push
 role: User, Developer
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 1%
+source-wordcount: '993'
+ht-degree: 0%
 
 ---
 
@@ -297,7 +297,7 @@ ht-degree: 1%
 
   >[!NOTE]
   >
-  >从版本7.0开始， **应用程序:didReceiveRemoteNotification:fetchCompletionHandler** 函数实现，操作系统仅调用此函数。 此 **application：didReceiveRemoteNotification** 因此不调用函数。
+  >从版本7.0开始， **`application:didReceiveRemoteNotification:fetchCompletionHandler`** 函数实现，操作系统仅调用此函数。 此 **`application:didReceiveRemoteNotification`** 因此不调用函数。
 
 +++
 
