@@ -4,7 +4,7 @@ title: 中间源基础设施的入站SMS工作流活动
 description: 中间源基础设施的入站SMS工作流活动
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
-source-git-commit: 5667cb6b45742638f8c984d7eb9633660f64fc0f
+source-git-commit: 85adfe3515480bed559091427ff1acec14a70320
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 1. 将扩展添加到 `nms:inSMS` 架构的位置。 该扩展会将新属性添加到 `nms:inSMS` 架构并跟踪来自中间源实例的inSMS记录主键。
 
-   ```
+   ```xml
    <element img="nms:miniatures/mini-sms.png" label="Incoming SMS"
           labelSingular="Incoming SMS" name="inSMS">
    <dbindex name="midInSMSId" unique="false">
@@ -55,7 +55,7 @@ ht-degree: 2%
 
    更换下面的块。 请注意，如果您之前自定义了此代码，则此脚本可能会有所不同。
 
-   ```
+   ```Javascript
    var lastSynchKey = getOption('SMS_MO_INDEX_WKF1105_inSmsUS_smsmidus');
    
    var smsId = application.getNewIds(1);
@@ -70,7 +70,8 @@ ht-degree: 2%
    ```
 
    使用以下新的自定义脚本，根据复合密钥更新inSMS数据，结合中间源记录的主密钥和营销短信路由的外部帐户ID。
-请遵循以下先决条件：
+
+   请遵循以下先决条件：
 
    * 输入实际值 `<EXTERNAL_ACCOUNT_ID>`，例如， `var iExtAccountId=72733155`.
    * 确保在自定义脚本中保留以下元素：
@@ -111,7 +112,7 @@ ht-degree: 2%
 
    该脚本会将主键指针重置为24小时前的。 该工作流将尝试在之前的24小时内重新处理来自中间源实例的所有inSMS数据，并将任何缺失的数据添加到营销实例。
 
-   ```
+   ```Javascript
    // please enter real external account ID to replace <EXTERNAL_ACCOUNT_ID>
    // please enter real pointer option name to replace '<POINTER_OPTION_NAME>'
    // OPTION NAME format: SMS_MO_INDEX_{internal name of the workflow}_inSms_{internal name of the external account to access the mid}
