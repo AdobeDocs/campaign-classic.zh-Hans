@@ -7,14 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: bc6f5d569d0c8a5eba4499a854af370258ce83a2
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 4%
+source-wordcount: '1380'
+ht-degree: 1%
 
 ---
 
-# 使用增强 MTA 发送 {#sending-with-enhanced-mta}
+# 使用增强MTA发送 {#sending-with-enhanced-mta}
 
 此 **Adobe Campaign增强型MTA** （邮件传输代理）提供升级的发送基础架构，从而改进可投放性、信誉、吞吐量、报告、退回处理、IP提升和连接设置管理。
 
@@ -109,6 +109,10 @@ Campaign中的退回鉴别 **[!UICONTROL Delivery log qualification]** 表不再
 
 有关退回鉴别的更多信息，请参阅 [本节](understanding-delivery-failures.md#bounce-mail-qualification).
 
+### 投放
+
+投放一旦传输到增强型MTA后，即无法停止 — 即使它与 **[!UICONTROL Stopped]** Campaign中的状态。
+
 ### 投放吞吐量
 
 Campaign投放吞吐量图表将不再向电子邮件收件人显示吞吐量。 该图表现在将显示消息从Campaign中继到Enhanced MTA的吞吐量速度。
@@ -127,7 +131,7 @@ Campaign不再使用投放中的重试设置。 软退回重试次数以及它�
 
 例如，如果在Campaign中将有效期设置为默认值5天，则软退回消息将进入Enhanced MTA重试队列，并从该消息达到Enhanced MTA时起最多重试3.5天。 在这种情况下，将不使用Campaign中设置的值。
 
-消息在 Enhanced MTA 队列中停留 3.5 天且投放失败后，该消息将超时，在投放日志中的状态将从 **[!UICONTROL Sent]** 更新为 **[!UICONTROL Failed]**。
+消息在Enhanced MTA队列中停留3.5天且投放失败后，该消息将超时，其状态将从 **[!UICONTROL Sent]** 到 **[!UICONTROL Failed]** 在投放日志中。
 
 有关有效期的更多信息，请参阅 [本节](steps-sending-the-delivery.md#defining-validity-period).
 
