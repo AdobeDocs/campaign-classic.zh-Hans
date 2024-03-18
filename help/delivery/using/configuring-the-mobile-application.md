@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+source-git-commit: 466f04bce8f4c62b5dbb0e9d15150ab0c3bf2fbd
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '603'
 ht-degree: 4%
 
 ---
@@ -103,21 +103,24 @@ ht-degree: 4%
 
 1. 从以下图标中选择一个现成的图标： **[!UICONTROL Application icon]** 字段，用于将服务中的移动应用程序个性化。
 
-1. 选择 **[!UICONTROL Authentication mode]**。请注意，您以后始终可以在 **[!UICONTROL Certificate]** 选项卡中。
+1. 选择 **[!UICONTROL Authentication mode]**。
+
+   ![](assets/nmac_ios_5.png)
+
+   提供了两种模式：
+
+   * （推荐） **[!UICONTROL Token-based authentication]**：填写APN连接设置 **[!UICONTROL Key Id]**， **[!UICONTROL Team Id]** 和 **[!UICONTROL Bundle Id]** 然后，通过单击 **[!UICONTROL Enter the private key...]**. 有关更多详细信息 **[!UICONTROL Token-based authentication]**，请参阅 [Apple文档](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+
    * **[!UICONTROL Certificate-based authentication]**：单击 **[!UICONTROL Enter the certificate...]**  然后选择您的p12密钥并输入由移动应用程序开发人员提供的密码。
-   * **[!UICONTROL Token-based authentication]**：填写连接设置 **[!UICONTROL Key ID]**， **[!UICONTROL Team ID]** 和 **[!UICONTROL Bundle ID]** 然后，通过单击 **[!UICONTROL Enter the private key]**. 有关更多详细信息 **[!UICONTROL Token-based authentication]**，请参阅 [Apple文档](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns).
 
    >[!NOTE]
    >
-   > Adobe建议使用 **[!UICONTROL Token-based authentication]** 用于iOS配置，因为此身份验证模式更安全，并且不会绑定到证书过期。
+   > Adobe建议使用 **[!UICONTROL Token-based authentication]** 用于iOS配置，因为P8身份验证密钥更新且更安全。
 
-   ![](assets/nmac_ios_4.png)
-
-1. 您可以单击 **[!UICONTROL Test the connection]** 肯定是成功的。
+1. 使用 **[!UICONTROL Test the connection]** 按钮以验证您的配置。
 
 1. 单击 **[!UICONTROL Next]** 以开始配置生产应用程序，并按照上面详述的相同步骤操作。
 
-   ![](assets/nmac_ios_5.png)
 
 1. 单击 **[!UICONTROL Finish]**。
 
