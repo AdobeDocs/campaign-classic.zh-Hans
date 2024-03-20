@@ -5,10 +5,10 @@ description: 了解有关数据加载（文件）工作流活动的更多信息
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
+source-git-commit: 229844437770c460d958724e2dc15941e35939a6
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 15%
+source-wordcount: '1147'
+ht-degree: 14%
 
 ---
 
@@ -28,11 +28,17 @@ ht-degree: 15%
 
 ![](assets/s_advuser_wf_etl_file.png)
 
-您可以定义在文件导入期间要执行的预处理过程，例如，不必在服务器上解压缩文件（从而节省解压缩文件的空间），而要在文件处理中包括解压缩。 选择 **[!UICONTROL Pre-process the file]** 选项并从3个选项中选择一个： **[!UICONTROL None]**， **[!UICONTROL Decompression]** (zcat)或 **[!UICONTROL Decrypt]** (gpg)。
+## 应用预处理阶段 {#pre-processing}
+
+您可以定义在文件导入期间要执行的预处理过程，例如，不必在服务器上解压缩文件（从而节省解压缩文件的空间），而要在文件处理中包括解压缩。 [了解在处理之前如何解压缩或解密文件](../../platform/using/unzip-decrypt.md).
+
+要执行此操作，请选择 **[!UICONTROL Pre-process the file]** 选项并从3个选项中选择一个： **[!UICONTROL None]**， **[!UICONTROL Decompression]** (zcat)或 **[!UICONTROL Decrypt]** (gpg)。
 
 ![](assets/preprocessing-dataloading.png)
 
-有关更多信息，请参阅此章节： [在处理之前解压缩或解密文件](../../platform/using/unzip-decrypt.md).
+>[!CAUTION]
+>
+>如果您使用的是混合或内部部署，则预处理命令可能无法立即使用，因为其默认配置使用“zcat”，而后者在Windows上不可用。 在这种情况下，您需要调整 **preProcessCommand** 节点以满足您的需要。 [了解如何在服务器配置文件中配置预处理命令](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 ## 定义文件格式 {#defining-the-file-format}
 
