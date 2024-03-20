@@ -7,9 +7,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 834d6c02536187b348842e6d524c4a83d02b355d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 99%
    + [升级入门](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
    + 之前版本 {#previous-releases}
-      + [2022版](rn/using/release-2022.md)
+      + [2022 版](rn/using/release-2022.md)
       + [2021 版](rn/using/release-2021.md)
-      + [[!DNL Gold Standard] 版本](rn/using/gold-standard.md)
+      + [[!DNL Gold Standard] 版](rn/using/gold-standard.md)
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
    + [文档更新](rn/using/documentation-updates.md)
@@ -741,7 +741,7 @@ ht-degree: 99%
       + [数据模型描述](configuration/using/data-model-description.md)
       + [最佳实践](configuration/using/data-model-best-practices.md)
    + 使用模式 {#schema-reference}
-      + [架构入门](configuration/using/about-schema-reference.md)
+      + [模式入门](configuration/using/about-schema-reference.md)
       + [模式结构](configuration/using/schema-structure.md)
       + [数据库映射](configuration/using/database-mapping.md)
       + [密钥管理](configuration/using/database-keys.md)
@@ -824,7 +824,7 @@ ht-degree: 99%
    + [回滚过程](migration/using/about-rollback.md)
 + 技术说明 {#technotes}
    + [硬件大小调整建议](technotes/using/hardware-sizing.md)
-   + [中间源基础设施的入站SMS工作流活动](technotes/using/inbound-SMS.md)
+   + [中间源基础架构的入站短信工作流活动](technotes/using/inbound-SMS.md)
    + 升级到 IMS{#ims}
       + [将用户迁移到 IMS](technotes/using/migrate-users-to-ims.md)
       + [将技术操作员迁移到 Developer Console](technotes/using/ims-migration.md)

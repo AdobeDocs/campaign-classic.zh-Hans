@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 517f09e508207b14e6b870f926753b2d9a547262
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2319'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ _2023 年 12 月 5 日_
 
 * 此外，作为加强安全和身份验证过程的一部分，Adobe Campaign 强烈建议将终端用户身份验证模式从登录/密码本机身份验证迁移到 Adobe Identity Management System (IMS)。请阅读[此技术说明](../../technotes/using/migrate-users-to-ims.md)，了解如何迁移操作员。
 
-* 现在，当Web窗体具有 **待发布** 状态，它不会自动处于活动状态。 为防止出现安全问题，必须先发布该报告，然后才能发布 **在线** 并可通过Web浏览器中的Web窗体URL访问。 [了解更多信息](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+* 现在，如果 Web 窗体有&#x200B;**待发布**&#x200B;状态，它不会自动上线。为防止出现安全问题，必须先将其发布，然后才能使其&#x200B;**上线**&#x200B;并通过 Web 浏览器中的 Web 窗体 URL 访问它。[了解更多信息](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 
 ### 修补程序 {#release-7-3-5-patches}
 
