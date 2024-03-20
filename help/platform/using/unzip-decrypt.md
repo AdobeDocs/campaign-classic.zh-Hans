@@ -9,9 +9,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '703'
 ht-degree: 9%
 
 ---
@@ -44,7 +44,7 @@ Adobe Campaign允许您导入压缩或加密文件。 在阅读文档之前 [数
 1. 添加和配置 **[!UICONTROL File transfer]** 活动。
 1. 添加 **[!UICONTROL Data loading (file)]** 活动，并定义文件格式。
 1. 勾选 **[!UICONTROL Pre-process the file]** 选项。
-1. 指定要应用的预处理命令。
+1. 选择要应用的预处理命令。
 1. 添加其他活动以管理来自文件的数据。
 1. 保存并执行工作流。
 
@@ -87,17 +87,15 @@ Adobe Campaign允许您导入压缩或加密文件。 在阅读文档之前 [数
 
 1. 打开 **[!UICONTROL Data loading (file)]** 活动，然后根据需要进行配置。 有关如何配置活动的全局概念，请参见 [本节](../../workflow/using/data-loading-file.md).
 
-   为活动添加预处理阶段，以便解密传入数据。 要执行此操作，请选择 **[!UICONTROL Pre-process the file]** 选项，然后将此解密命令复制并粘贴到 **[!UICONTROL Command]** 字段：
-
-   `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
+   为活动添加预处理阶段，以便解密传入数据。 要执行此操作，请选择 **[!UICONTROL Pre-process the file]** 选项，然后选择 **[!UICONTROL Decrypt]** 从 **[!UICONTROL Command]** 下拉列表：
 
    ![](assets/gpg_load.png)
 
-   >[!CAUTION]
+   >[!NOTE]
    >
-   >在本例中，我们使用控制面板默认使用的密码短语“passphrase”。
+   >如果需要对可用命令进行更改，您可以联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 调整preProcessCommand设置。
    >
-   >如果您过去通过客户关怀请求在实例上安装了GPG密钥，则密码可能已更改，并且默认情况下与密码不同。
+   >如果使用的是混合部署，可以直接从服务器配置文件(serverConf.xml)配置这些命令。 [了解如何在服务器配置文件中配置预处理命令](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 1. 单击 **[!UICONTROL OK]** 以确认活动配置。
 
