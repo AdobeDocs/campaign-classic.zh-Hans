@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: be29827280592991e876e158f03a986bd000a4ad
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2550'
 ht-degree: 99%
 
 ---
@@ -108,10 +108,8 @@ ht-degree: 99%
          + [与 CRM 同步数据](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
          + [Adobe Analytics Connector入门](platform/using/gs-aa.md)
-         + [Adobe Analytics Connector 集成](platform/using/adobe-analytics-connector.md)
          + [Adobe Analytics Connector 配置](platform/using/adobe-analytics-provisioning.md)
          + [如何迁移到 Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
-         + [Adobe Analytics 数据连接器](platform/using/adobe-analytics-data-connector-legacy.md)
    + [帮助和支持选项](support.md)
 + 创建和发送消息{#sending-messages}
    + [消息入门](delivery/using/communication-channels.md)
