@@ -9,10 +9,10 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 12%
+source-wordcount: '736'
+ht-degree: 7%
 
 ---
 
@@ -35,7 +35,7 @@ Adobe Experience Cloud是一套业内最佳的综合性集成解决方案，它�
 
 ## 关联您的解决方案 {#working-with-experience-cloud-solutions}
 
-可以将多个解决方案链接到Adobe Experience Cloud。 此 **组织** 是一个客户实体，它允许管理员配置群组和用户，并控制Adobe Experience Cloud中的单点登录(SSO)。 该组织的作用类似于一个衔接所有Experience Cloud产品和解决方案的登录公司。 大多数情况下，组织是您的公司名称。但是，公司可以有许多组织。
+可以将多个解决方案链接到Adobe Experience Cloud。 此 **组织** 是一个客户实体，它允许管理员配置群组和用户，并控制Adobe Experience Cloud中的单点登录(SSO)。 该组织的作用类似于一个衔接所有Experience Cloud产品和解决方案的登录公司。 大多数情况下，组织是您的公司名称。但是，公司可以具有多个组织。
 
 有关组织管理和关联Adobe Experience Cloud帐户的详情，请参见 [Adobe Experience Cloud帮助门户](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html).
 
@@ -90,12 +90,12 @@ Adobe Experience Cloud Identity服务（ID服务）提供了一个通用的永�
    <td> 允许您从插入资产 <strong>AEM Assets</strong> 库中的电子邮件和在Adobe Campaign中创建的登陆页面。<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">了解详情</a> 关于Adobe Campaign - AEM Assets集成。</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Experience Cloud Triggers</strong><br /> </td> 
+   <td> <strong>Experience Cloud触发器</strong><br /> </td> 
    <td> 集成介于 <strong>触发核心服务</strong> 和Adobe Campaign允许您向客户发送个性化电子邮件，以对Adobe Analytics在网站上跟踪的特定行为作出反应。<br /> <p><a href="https://helpx.adobe.com/cn/campaign/kb/triggers-and-campaign.html">了解详情</a> 关于Adobe Campaign -Experience Cloud触发器集成。</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Adobe Analytics Connector</strong><br /> </td> 
-   <td> <strong>Adobe Analytics连接器</strong> 允许Adobe Campaign和Adobe Analytics在电子邮件营销活动后，通过有关用户行为的区段进行交互。 反过来，它会将 Adobe Campaign 投放的电子邮件营销活动的指标和属性发送到 Adobe Analytics。<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">了解详情</a> 关于Campaign - Analytics连接器集成。</p><br /> </td> 
+   <td> <strong>Adobe Analytics连接器</strong><br /> </td> 
+   <td> <strong>Adobe Analytics连接器</strong> 允许Adobe Campaign和Adobe Analytics在电子邮件营销活动后，通过有关用户行为的区段进行交互。 反过来，它会将Adobe Campaign投放的电子邮件营销活动的指标和属性发送到Adobe Analytics。<br /> <p><a href="../../platform/using/gs-aa.md">了解详情</a> 关于Campaign - Analytics连接器集成。</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>

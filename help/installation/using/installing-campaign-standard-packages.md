@@ -6,7 +6,7 @@ feature: Installation, Application Settings
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 4%
@@ -183,7 +183,7 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td> 中央/本地营销（分布式营销）<br /> </td> 
-   <td> 在中央实体（总部、营销部门等）之间实施合作活动 实施协作营销活动。可选。 <a href="../../distributed/using/about-distributed-marketing.md">了解详情</a><br /> </td> 
+   <td> 在中央实体（总部、营销部门等）之间实施合作活动 和地方实体（销售点、区域机构等）之间实施协作营销活动。可选。 <a href="../../distributed/using/about-distributed-marketing.md">了解详情</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
@@ -193,7 +193,7 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td> 网站分析连接器<br /> </td> 
-   <td> 允许Adobe Campaign和Adobe Analytics通过Web Analytics连接器包进行交互。 与事务性消息传递（消息中心包）不兼容。 <a href="../../platform/using/adobe-analytics-connector.md">了解详情</a><br /> </td> 
+   <td> 允许Adobe Campaign和Adobe Analytics通过Web Analytics连接器包进行交互。 与事务性消息传递（消息中心包）不兼容。 <a href="../../platform/using/gs-aa.md">了解详情</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 

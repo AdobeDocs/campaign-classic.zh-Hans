@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
 source-wordcount: '1980'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -79,9 +79,9 @@ Adobe Campaign 是 Adobe Experience Cloud 解决方案的一部分。Campaign �
 
 在管理隐私时，必须明确应当谨慎处理哪些数据以及由谁处理。
 * **个人数据**&#x200B;是指可以直接或间接识别生命个体的信息。
-* **敏感个人数据**&#x200B;是与个人的种族、政治观点、宗教信仰、犯罪背景、遗传信息、健康数据、性取向、生物识别信息以及贸易同盟会员资格相关的信息。
+* **敏感个人数据**&#x200B;是与个人的种族、政治观点、宗教信仰、犯罪背景、遗传信息、健康数据、性取向、生物识别信息以及贸易联盟会员资格相关的信息。
 
-在将 Campaign 与可将受众一个系统转移到另一个系统的其他 Experience Cloud 解决方案（例如 [Adobe Analytics](../../platform/using/adobe-analytics-connector.md)、[Audience Manager 或 People 核心服务](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)、[Campaign Standard](../../integrations/using/synchronizing-audiences.md)）集成时，或通过 [CRM 连接器](../../platform/using/crm-connectors.md)将 Campaign 与其他解决方案集成时，需要格外注意个人数据保护。
+在将 Campaign 与可将受众一个系统转移到另一个系统的其他 Experience Cloud 解决方案（例如 [Adobe Analytics](../../platform/using/gs-aa.md)、[Audience Manager 或 People 核心服务](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)、[Campaign Standard](../../integrations/using/synchronizing-audiences.md)）集成时，或通过 [CRM 连接器](../../platform/using/crm-connectors.md)将 Campaign 与其他解决方案集成时，需要格外注意个人数据保护。
 
 [主要法规](#privacy-regulations)是指管理数据的不同实体，如下所示：
 * **数据控制者**&#x200B;是确定收集、使用和共享个人数据的方式和目的权威。
@@ -100,7 +100,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解决方案的一部分。Campaign �
 
 * **Laura** 是&#x200B;**数据主体**。她是接收来自航空公司的消息的收件人。Laura 可能是飞行常客，但在某个时刻可能会决定，她不希望航空公司提供任何个性化的广告或营销消息。她将要求航空公司（根据其流程）删除她的飞行常客编号。
 
-* **Anne** 是航空公司的&#x200B;**数据控制者**。她收到 Laura 的请求，检索为识别数据主体而请求的有用 ID，并在 Adobe Campaign 中提交请求。
+* **Anne** 是航空公司的&#x200B;**数据控制者**。她收到Laura的请求，检索为识别数据主体而请求的有用ID，并在Adobe Campaign中提交请求。
 
 * **Adobe Campaign** 是&#x200B;**数据处理者**。
 

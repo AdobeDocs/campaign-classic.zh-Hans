@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 49271e291953483ee14709b26ec053217a336718
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 20%
+source-wordcount: '176'
+ht-degree: 16%
 
 ---
 
@@ -25,6 +25,11 @@ Campaign用户可以使用其Adobe ID连接到Adobe Campaign控制台，而不�
 * 使用具有不同集成的Adobe Campaign时，将保留连接。
 * 密码管理策略比本机登录/密码更安全。
 * 使用联合 ID 帐户（外部 ID 提供商）。
+
+>[!IMPORTANT]
+>
+> 请注意，在Campaign v8中，不允许使用用户/密码（又称本机身份验证）连接。 **Adobe建议在Campaign v7.3.5中执行此迁移，以便能够顺利迁移到Campaign v8。**
+
 
 <!--
 >[!IMPORTANT]

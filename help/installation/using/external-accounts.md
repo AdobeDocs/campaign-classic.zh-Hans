@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '1841'
-ht-degree: 9%
+source-wordcount: '1794'
+ht-degree: 8%
 
 ---
 
@@ -288,13 +288,13 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 有关此配置的更多信息，请参阅 [此页面](../../integrations/using/configuring-ims.md).
 
-## 网络分析 {#web-analytics-external-account}
+## Web 分析 {#web-analytics-external-account}
 
 此 **[!UICONTROL Web Analytics]** 外部帐户允许您以区段形式将数据从Adobe Analytics转发到Adobe Campaign。 反过来，它会将Adobe Campaign投放的电子邮件营销活动的指标和属性发送到Adobe Analytics连接器。
 
 ![](assets/ext_account_10.png)
 
-对于此外部帐户，必须扩充跟踪URL的计算公式，并且必须批准两个解决方案之间的连接。 有关详细信息，请参见此 [ 页面](../../platform/using/adobe-analytics-connector.md#external-account-classic)。
+对于此外部帐户，必须扩充跟踪URL的计算公式，并且必须批准两个解决方案之间的连接。 有关详细信息，请参见此 [ 页面](../../platform/using/gs-aa.md)。
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 

@@ -2,16 +2,15 @@
 product: campaign
 title: Adobe Analytics连接器配置
 description: 了解有关Adobe Analytics连接器配置的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
-badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于v7内部部署和混合部署"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: d690a5c4b9779ccd90b50bfbc74df18f0ac60d14
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 9%
+source-wordcount: '728'
+ht-degree: 6%
 
 ---
 
@@ -69,7 +68,7 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 
 1. 对于 **[!UICONTROL Report Suites]** 功能，添加 **[!UICONTROL Report Suites]** 稍后需要使用。
 
-   如果您没有任何报表包，则可以按以下方式创建它 [这些步骤](../../platform/using/adobe-analytics-connector.md#report-suite-analytics).
+   如果您没有任何报表包，则可以按以下方式创建它 [这些步骤](../../platform/using/gs-aa.md).
 
    ![](assets/do-not-localize/triggers_4.png)
 
@@ -81,7 +80,7 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 
 1. 对于 **[!UICONTROL Dimensions]** 功能，添加 **[!UICONTROL Dimensions]** 未来配置需要。
 
-   确保所选的Dimension与中要配置的规则相匹配 [外部帐户](adobe-analytics-connector.md#external-account-classic) 并与中的相应eVar编号保持一致 [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success).
+   确保所选的Dimension与要在外部帐户中配置的帐户匹配，并与Adobe Analytics中对应的eVar编号一致。
 
 1. 对于 **[!UICONTROL Report Suite Tools]** 功能，添加以下权限：
 

@@ -6,10 +6,12 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1489'
 ht-degree: 89%
 
 ---
@@ -121,7 +123,7 @@ To set up the Adobe Analytics/Adobe Campaign Classic integration, you must conne
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   要了解如何配置 **[!UICONTROL Success events]**，请参阅此[部分](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools)。
+   了解如何配置 **[!UICONTROL Success events]**，请参阅此 [部分](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools).
 
    >[!NOTE]
    >
@@ -213,7 +215,7 @@ To set up the Adobe Analytics/Adobe Campaign Classic integration, you must conne
 
 ### 网站分析流程的技术工作流 {#technical-workflows-of-web-analytics-processes}
 
-Adobe Campaign 和 Adobe Analytics 之间的数据交换由作为后台任务运行的四个技术工作流处理。
+Adobe Campaign 和 Adobe Analytics 之间的数据交换由作为背景任务运行的四个技术工作流处理。
 
 它们位于 Adobe Campaign 树的 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]** 文件夹下。
 
