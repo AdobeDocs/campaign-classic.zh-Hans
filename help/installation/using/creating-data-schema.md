@@ -3,16 +3,16 @@ product: campaign
 title: 为FDA创建数据模式
 description: 了解如何为FDA创建数据架构
 feature: Installation, Instance Settings, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 4%
+source-wordcount: '190'
+ht-degree: 3%
 
 ---
 
-# 创建数据模式 {#creating-the-data-schema}
+# 创建数据架构 {#creating-the-data-schema}
 
 
 
@@ -32,7 +32,7 @@ ht-degree: 4%
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. 单击 **[!UICONTROL OK]** 确认。Adobe Campaign会自动检测选定表的结构并生成逻辑架构。 请注意，Adobe Campaign不生成链接。
+1. 单击 **[!UICONTROL OK]** 以确认。 Adobe Campaign会自动检测选定表的结构并生成逻辑架构。 请注意，Adobe Campaign不生成链接。
 
 1. 单击 **[!UICONTROL Save]** 以确认创建。
 

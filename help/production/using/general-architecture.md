@@ -3,15 +3,15 @@ product: campaign
 title: 一般架构
 description: 一般架构
 feature: Monitoring, Architecture
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 4%
+source-wordcount: '193'
+ht-degree: 7%
 
 ---
 

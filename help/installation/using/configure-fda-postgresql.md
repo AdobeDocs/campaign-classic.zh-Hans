@@ -3,12 +3,12 @@ product: campaign
 title: 配置对PostgreSQL的访问权限
 description: 了解如何配置对PostgreSQL的访问权限
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 2%
+source-wordcount: '343'
+ht-degree: 4%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 2%
 
 连接器支持以下选项：
 
-| Option | 说明 |
+| 选项 | 说明 |
 |:-:|:-:|
 | PGSQL_CONNECT_超时 | 最长等待连接时间（以秒为单位）。 <br>有关详细信息，请参见 [PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT). |
 | PGSQL_KEEPALIVES_IDLE | TCP应该向服务器发送keepalive消息之后处于非活动状态的秒数。 <br>有关详细信息，请参见 [PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-IDLE). |

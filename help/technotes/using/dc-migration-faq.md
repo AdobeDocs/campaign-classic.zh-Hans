@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: 迁移到Adobe Managed Services （公共云）常见问题解答
+title: 迁移到AdobeManaged Services (Public Cloud)常见问题解答
 description: Campaign Classic迁移到公共云常见问题解答
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2211'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 * **迁移是否会影响与外部帐户的连接？**
 
-  是. 例如，第三方集成（短信提供商）应将新的Adobe Campaign列入允许列表应用程序服务器IP地址添加到。
+  是的。 例如，第三方集成（短信提供商）应将新的Adobe Campaign列入允许列表应用程序服务器IP地址添加到。
 
 * **迁移是否会影响到Adobe Analytics与Genesis连接器的连接？ 列入允许列表如何将Campaign IP地址添加到Adobe Analytics端的？**
 
@@ -280,6 +280,6 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 ## 支持以及其他有用链接{#support}
 
-* [迁移到Adobe Managed Services （公共云）](dc-migration.md)
+* [迁移到AdobeManaged Services (Public Cloud)](dc-migration.md)
 * [Campaign年度升级](../../rn/using/rn-overview.md#yeary-upgrade)
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)

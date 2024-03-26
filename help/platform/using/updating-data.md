@@ -3,7 +3,7 @@ product: campaign
 title: 更新数据
 description: 更新数据
 feature: Data Management
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: profile-management
@@ -11,7 +11,7 @@ exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 85%
+ht-degree: 35%
 
 ---
 
@@ -23,15 +23,15 @@ ht-degree: 85%
 
 ## 设置自动更新 {#setting-up-an-automatic-update}
 
-可通过工作流配置自动更新。如需详细信息，请参阅[此部分](../../workflow/using/update-data.md)。
+可以通过工作流配置自动更新。 如需详细信息，请参阅[此小节](../../workflow/using/update-data.md)。
 
 ## 执行批量更新 {#performing-a-mass-update}
 
-要执行手动更新，请在所选的收件人上单击鼠标右键并使用 **[!UICONTROL Actions]** 快捷菜单，或使用 **[!UICONTROL Actions]** 图标。
+要执行手动更新，请右键单击选定的收件人以使用 **[!UICONTROL Actions]** 快捷菜单，或使用 **[!UICONTROL Actions]** 图标。
 
 ![](assets/s_ncs_user_action_icon.png)
 
-更新类型有两种：大量更新一组收件人，以及两个用户档案之间的数据合并。对于这两种操作，向导可帮助您配置更新工作。
+有两种类型的更新：对一组收件人进行批量更新，以及在两个用户档案之间合并数据。 对于这两种操作，向导可帮助您配置更新工作。
 
 ### 大量更新 {#mass-update}
 
@@ -39,58 +39,58 @@ ht-degree: 85%
 
 向导的第一步是指定要更新的字段。
 
-向导的左侧会显示可用字段的列表。使用 **[!UICONTROL Find]** 可搜索字段。按下 **Enter** 键可浏览列表。符合您所输入条件的字段名称会以粗体显示，如下所示。
+向导的左侧部分显示可用字段列表。 使用 **[!UICONTROL Find]** 字段以运行对这些字段的搜索。 按 **输入** 键浏览列表。 符合您所输入条件的字段名称会以粗体显示，如下所示。
 
 双击要更新的字段，从而在向导的右侧显示它们。
 
 ![](assets/s_ncs_user_update_wizard01_1.png)
 
-如果发生错误，可使用 **[!UICONTROL Delete]** 按钮从要更新的字段列表中删除某个字段。
+如果出现错误，请使用 **[!UICONTROL Delete]** 按钮从要更新的字段列表中删除字段。
 
 选择或输入值，从而将其应用到需更新的用户档案。
 
 ![](assets/s_ncs_user_update_wizard01_12.png)
 
-可单击 **[!UICONTROL Distribution of values]** 显示当前文件夹中所含收件人（不只是受更新影响的收件人）的选定字段的各个值分布情况。
+您可以单击 **[!UICONTROL Distribution of values]** 为当前文件夹中存在的收件人（不仅是受更新影响的收件人）显示所选字段的值分布。
 
 ![](assets/s_ncs_user_update_wizard01_2.png)
 
-您可定义过滤器，以显示此窗口中的值分布，或改变当前文件夹，以显示另一个文件夹中的值分布。这些操作都是只读的，不会影响所定义更新的配置。
+您可以定义筛选器以显示此窗口中的值分布，或修改当前文件夹以显示另一个文件夹中的值分布。 这些操作都是只读的，不会影响所定义更新的配置。
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
-关闭此窗口，然后单击 **[!UICONTROL Next]**，显示第二个更新向导步骤。在此步骤中，可单击 **[!UICONTROL Start]** 开始更新。
+关闭此窗口并单击 **[!UICONTROL Next]** 以显示第二个更新向导步骤。 在此步骤中，您可以通过单击 **[!UICONTROL Start]**.
 
 ![](assets/s_ncs_user_update_wizard01_4.png)
 
 有关更新执行的信息会显示在向导的上部。
 
-您可以使用 **[!UICONTROL Stop]** 取消更新，但某些记录可能已更新，而且停止该过程并不会取消这些更新。进度条会显示目前操作的进度。
+此 **[!UICONTROL Stop]** 允许您取消更新，但某些记录可能已更新，停止进程将不会取消这些更新。 进度条会显示目前操作的进度。
 
 ### 合并数据 {#merge-data}
 
-选择 **[!UICONTROL Merge selected lines...]** 以启动两个收件人用户档案的合并。 选择该选项之前，必须选择要合并的用户档案。使用向导来配置和开始合并操作。
+选择 **[!UICONTROL Merge selected lines...]** 以启动两个收件人用户档案的合并。 在选择选项之前，必须选择要合并的配置文件。 使用向导来配置和开始合并操作。
 
-向导会显示一个或多个来源用户档案中每个已完成字段的提取內容。如果要合并的用户档案中的一个或多个字段具有不同的值，则会在 **[!UICONTROL List of conflicts]** 部分中显示这些值。您可使用列表下方的单选按钮来选择默认的用户档案，如以下示例所示：
+向导显示在一个或其他源配置文件中完成的每个字段要检索的值。 如果要合并的用户档案中的一个或多个字段具有不同的值，则它们将显示在 **[!UICONTROL List of conflicts]** 部分。 您可使用列表下方的单选按钮来选择默认的用户档案，如以下示例所示：
 
 ![](assets/s_ncs_user_merge_wizard01_1.png)
 
-单击 **[!UICONTROL Compute]** 显示您选择的结果。
+单击 **[!UICONTROL Compute]** 以显示您选择的结果。
 
 ![](assets/s_ncs_user_merge_wizard01_2.png)
 
-检查窗口两个部分中的 **[!UICONTROL Result]** 列，然后单击 **[!UICONTROL Finish]** 执行合并。
+查看 **[!UICONTROL Result]** 窗口两个部分的列，然后单击 **[!UICONTROL Finish]** 以运行合并。
 
 ## 导出数据 {#exporting-data}
 
-可以导出列表的內容。要配置并执行导出：
+列表的内容可以导出。 要配置并执行导出：
 
 1. 选择要导出的记录。
 1. 右键单击并选择 **[!UICONTROL Export...]**.
 
    ![](assets/s_ncs_user_export_list.png)
 
-1. 然后选择要提取的数据。默认情况下，会将显示的所有列都添加到输出列中。
+1. 然后选择要提取的数据。 默认情况下，会将显示的所有列都添加到输出列中。
 
    ![](assets/s_ncs_user_export_list_start.png)
 
@@ -98,27 +98,27 @@ ht-degree: 85%
 
 ## 订阅服务 {#subscribing-to-a-service}
 
-在大多数情況下，收件人可通过专用的登陆页来订阅新闻稿，如[本节所述](../../delivery/using/managing-subscriptions.md)。但是，过滤后的收件人用户档案可以手动订阅某个服务（新闻稿或传播服务）。操作步骤：
+在大多数情况下，收件人会通过专用的登陆页面订阅新闻稿，如中所述 [本节](../../delivery/using/managing-subscriptions.md). 但是，可以手动订阅服务（新闻稿或病毒式服务）的已过滤收件人的用户档案。 操作步骤：
 
 1. 选择您想要订阅的收件人，然后单击鼠标右键。
 1. 选择 **[!UICONTROL Actions > Subscribe selection to a service]**。
 
    ![](assets/s_ncs_user_selection_subscribe_service.png)
 
-1. 选择所需的服务，然后单击 **[!UICONTROL Next]**：
+1. 选择所需的服务并单击 **[!UICONTROL Next]**：
 
    ![](assets/s_ncs_user_selection_subscribe_service_2.png)
 
    >[!NOTE]
    >
-   >此编辑器允许您创建新的服务：单击 **[!UICONTROL Create]** 按钮。
+   >此编辑器允许您创建新服务：单击 **[!UICONTROL Create]** 按钮。
 
 1. 您可以 **[!UICONTROL Send a confirmation message]** 发送给收件人。 可在链接到所选服务的订阅场景中配置此消息的內容。
-1. 单击 **[!UICONTROL Start]** 按钮执行订阅过程。
+1. 单击 **[!UICONTROL Start]** 按钮以运行订阅进程。
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
 
-可在窗口的上部监控该执行过程。可以通过 **[!UICONTROL Stop]** 按钮停止该过程。但是，已处理的收件人将被订阅。
+通过窗口的上半部分，您可以监视执行过程。 此 **[!UICONTROL Stop]** 按钮允许您停止进程。 但是，已处理的收件人将被订阅。
 
 如果您取消选中 **[!UICONTROL Do not keep a trace of this job in the database]** 选项，您可以选择（或创建）执行文件夹，其中将存储有关此进程的信息。
 

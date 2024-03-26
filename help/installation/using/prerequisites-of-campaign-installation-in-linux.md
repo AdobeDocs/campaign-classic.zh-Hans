@@ -1,28 +1,28 @@
 ---
 product: campaign
-title: 在 Linux 中安装 Campaign 的先决条件
-description: 在 Linux 中安装 Campaign 的先决条件
+title: 在Linux中安装Campaign的先决条件
+description: 在Linux中安装Campaign的先决条件
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
-badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
+badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于本地和混合部署"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 2%
+source-wordcount: '923'
+ht-degree: 1%
 
 ---
 
-# 在Linux上安装Campaign的先决条件{#prerequisites-of-campaign-installation-in-linux}
+# 在 Linux 上安装 Campaign 的先决条件{#prerequisites-of-campaign-installation-in-linux}
 
 
 
 ## 软件先决条件 {#software-prerequisites}
 
-本节详细介绍在安装Adobe Campaign之前所需的初步配置步骤。
+本节详细介绍了安装 Adobe Campaign 之前所需的初步配置步骤。
 
 有关安装Adobe Campaign所需的技术和软件配置的详情，请参见 [兼容性矩阵](../../rn/using/compatibility-matrix.md).
 
@@ -43,9 +43,9 @@ ht-degree: 2%
 
 要在Linux中安装Adobe Campaign，请确保您拥有所需的库。
 
-* 库C必须能够支持TLS（线程本地存储）模式。 在大多数情况下，此模式处于活动状态，但禁用了Xen支持的某些内核除外。
+* 库 C 必须能够支持 TLS（线程本地存储）模式。 此模式在大多数情况下处于活动状态，但某些已禁用 Xen 支持的内核除外。
 
-  要检查此项，您可以使用 **uname -a |希腊xen** 命令为例。
+  例如，要检查这一点，您可以使用 **uname -a | grep xen** 命令。
 
   如果命令未返回任何内容（空行），则表示配置正确。
 
@@ -53,15 +53,15 @@ ht-degree: 2%
 
   对于RHEL 7/8分发，需要1.0版本的OpenSSL。
 
-* 要使用Adobe Campaign，您需要拥有 **利比库** 库已安装。
+* 要使用 Adobe Campaign，您需要安装 **libicu** 库。
 
-  以下版本的 **利比库** 受支持（32位或64位）：
+  支持以下版本的 **libicu** （32 位或 64 位）：
 
-   * RHEL 7/8，CentOS 7：libicu50
+   * RHEL 7/8， CentOS 7： libicu50
    * Debian 8： libicu52
    * Debian 9： libicu57
 
-  要使用Adobe Campaign，您需要安装libc-ares库。 在RHEL/CentOS上，运行以下命令：
+  要使用 Adobe Campaign，您需要安装 libc-ares 库。 在RHEL/CentOS上，运行以下命令：
 
   ```
   yum install c-ares
@@ -103,7 +103,7 @@ SELINUX=disabled
 
 ### MTA统计数据的字体 {#fonts-for-mta-statistics}
 
-为了正确显示MTA统计数据(nms/fra/jsp/stat.jsp)，请添加字体。
+要正确显示有关 MTA 统计信息的报告 （nms/fra/jsp/stat.jsp），请添加字体。
 
 在Debian中，添加命令：
 
@@ -125,7 +125,7 @@ aptitude install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
   dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
   ```
 
-### 日语实例的字体 {#fonts-for-japanese-instances}
+### 适用于日语实例的字体 {#fonts-for-japanese-instances}
 
 要将报表导出为PDF格式，日语实例需要特定字符的字体。
 
@@ -167,7 +167,7 @@ aptitude install fonts-ipafont
 
 ### 安装LibreOffice for CentOS {#installing-libreoffice-for-centos}
 
-CentOS需要以下配置：
+CentOS 需要以下配置：
 
 ```
 yum install libreoffice-headless libreoffice-writer libreoffice-calc
@@ -183,15 +183,15 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign支持版本7.2中的所有PostgreSQL客户端库版本： (**libpq.so.5**， **libpq.so.4**， **libpq.so.3.2** 和 **libpq.so.3.1**)。
+Adobe Campaign 支持版本 7.2 起的所有版本的 PostgreSQL 客户端库（libpq.so.5 **、** libpq.so.4 **、** libpq.so.3.2 **和** libpq.so.3.1 ****）。
 
-将PostgreSQL与Adobe Campaign结合使用还需要安装相应的 **pgcrypto** 库。
+将 PostgreSQL 与 Adobe Campaign 结合使用还需要安装相应的 **pgcrypto** 库。
 
 ### Oracle {#oracle}
 
-检索64位Debian的库版本，即： **libclntsh.so**， **libclntsh.so.11.1** 和 **libclntsh.so.10.1**.
+检索 64 位 Debian 的库版本，即： **libclntsh.so**、 **libclntsh.so.11.1** 和 **libclntsh.so.10.1**。
 
-您可以从Oracle技术网获取Linux RPM软件包。
+您可以从 Oracle 技术网络获取 Linux RPM 软件包。
 
 >[!NOTE]
 >
@@ -225,7 +225,7 @@ Adobe Campaign支持版本7.2中的所有PostgreSQL客户端库版本： (**libp
 
 本章介绍了安装过程。 安装步骤如下：
 
-* 步骤1：安装应用程序服务器，请参阅 [在Linux中安装包](../../installation/using/installing-packages-with-linux.md).
-* 步骤2：与Web服务器集成（可选，具体取决于部署的组件）。
+* 第 1 步：安装应用服务器，请参阅 [使用 Linux](../../installation/using/installing-packages-with-linux.md) 安装软件包。
+* 步骤 2：与 Web 服务器集成（可选，具体取决于部署的组件）。
 
-完成安装步骤后，您需要配置实例、数据库和服务器。 有关详细信息，请参见 [关于初始配置](../../installation/using/about-initial-configuration.md).
+安装步骤完成后，您需要配置实例、数据库和服务器。 有关这方面的更多信息，请参阅 [关于初始配置](../../installation/using/about-initial-configuration.md)。

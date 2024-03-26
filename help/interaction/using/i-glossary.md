@@ -3,7 +3,7 @@ product: campaign
 title: Campaign集成术语表
 description: Campaign集成术语表
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview

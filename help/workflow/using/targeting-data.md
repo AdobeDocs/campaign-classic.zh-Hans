@@ -180,7 +180,7 @@ A **[!UICONTROL Query]** 通过活动，可选择基本数据以构建目标群�
 
    ![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+   ![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans)
 
 然后，我们需要添加新子集：
 

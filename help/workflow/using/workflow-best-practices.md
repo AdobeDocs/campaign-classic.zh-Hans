@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
 source-git-commit: 1baf424138c95b16add37d9d556e3a2566a869c2
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 15%
+source-wordcount: '1388'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ JavaScript方法 **[!UICONTROL logInfo()]** 是用于调试工作流的绝佳解
 
 另外还有两种解决方案可提供帮助：
 
-* **保留两次执行之间的临时群体结果**
+* **保留两次执行之间的临时人口结果**
 
   此选项在两次执行工作流之间保留临时表。 它可以在工作流属性中使用 **[!UICONTROL General]** 选项卡，并可用于开发和测试目的，以监测数据并检查结果。 您可以在开发环境中使用此选项，但切勿在生产环境中使用。保留临时表可能会导致数据库的大小显著增加并最终达到大小限制。此外，这还将减慢备份速度。
 
@@ -38,7 +38,7 @@ JavaScript方法 **[!UICONTROL logInfo()]** 是用于调试工作流的绝佳解
   >
   >不得在生产工作流中勾选此选项。此选项用于分析结果，并且是仅为测试目的而设计，因此只能用于开发或暂存环境。
 
-* **在日志中记录 SQL 查询**
+* **在日志中记录SQL查询**
 
   中提供 **[!UICONTROL Execution]** 选项卡中，此选项将记录工具从不同活动生成的所有SQL查询。 这是查看平台实际执行操作的好方法。 但是，此选项应仅在开发期间临时使用，而不在生产环境中激活。
 
@@ -123,7 +123,7 @@ Adobe 建议为工作流赋予正确的名称和标签，这样工作流没有�
 ### 第一个和最后一个活动 {#first-and-last-activities}
 
 * 始终使用开始工作流 **[!UICONTROL Start]** 活动或 **[!UICONTROL Scheduler]** 活动。 在相关时，您还可以使用 **[!UICONTROL External signal]** 活动。
-* 在构建工作流时，只能使用一个 **[!UICONTROL Scheduler]** 每个分支的活动。 如果工作流的同一分支具有多个调度程序（相互链接），则要执行的任务数量将呈指数级增长，这将使数据库严重过载。此规则还适用于具有的所有活动 **[!UICONTROL Scheduling & History]** 选项卡。 详细了解 [正在计划](scheduler.md).
+* 在构建工作流时，只能使用一个 **[!UICONTROL Scheduler]** 每个分支的活动。 如果工作流的同一分支具有多个调度程序（相互链接），则要执行的任务数量将呈指数级增长，这将使数据库严重过载。 此规则还适用于具有的所有活动 **[!UICONTROL Scheduling & History]** 选项卡。 详细了解 [正在计划](scheduler.md).
 
   ![](assets/wf-scheduler.png)
 

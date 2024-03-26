@@ -3,15 +3,15 @@ product: campaign
 title: 服务器安全配置
 description: 了解有关服务器配置最佳实践的更多信息
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 4%
+source-wordcount: '632'
+ht-degree: 5%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 4%
 
 在serverConf/shared/datastore/@uploadAllowlist（有效的java正则表达式）中添加所有这些变量。 请参阅[此页面](../../installation/using/file-res-management.md)以了解详情。
 
-Adobe Campaign不限制文件大小。 但您可以通过配置IIS/Apache来实现这一点。 在[此章节](../../installation/using/web-server-configuration.md)中了解更多信息。
+Adobe Campaign不限制文件大小。 但您可以通过配置IIS/Apache来实现这一点。 可在[此部分](../../installation/using/web-server-configuration.md)中了解详情。
 
 ## 中继
 

@@ -3,15 +3,15 @@ product: campaign
 title: 导出和导入用户档案
 description: 导出和导入用户档案
 feature: Profiles
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 30%
+source-wordcount: '147'
+ht-degree: 34%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 30%
 
 您可以 [使用工作流](#use-workflows) 将收件人用户档案导入或导出到Adobe Campaign数据库，或进行设置 [通用导入或导出作业](#create-jobs).
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#import-profiles-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#import-profiles-video)
 
 ## 使用工作流{#use-workflows}
 

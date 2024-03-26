@@ -10,7 +10,7 @@ topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '967'
 ht-degree: 2%
 
 ---
@@ -186,7 +186,7 @@ ht-degree: 2%
 
 1. 配置 [!DNL Google BigQuery] 外部帐户，您必须指定：
 
-   * **[!UICONTROL Type]**: [!DNL Google BigQuery]
+   * **[!UICONTROL Type]**： [!DNL Google BigQuery]
 
    * **[!UICONTROL Service account]**：您的电子邮件 **[!UICONTROL Service account]**. 有关详情，请参阅 [Google Cloud文档](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
@@ -203,7 +203,7 @@ ht-degree: 2%
 
 连接器支持以下选项：
 
-| Option | 说明 |
+| 选项 | 说明 |
 |:-:|:-:|
 | 代理类型 | 用于通过ODBC和SDK连接器连接到BigQuery的代理类型。 </br>当前支持HTTP（默认）、http_no_tunnel、socks4和socks5。 |
 | 代理主机 | 可访问代理的主机名或IP地址。 |

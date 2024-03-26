@@ -11,7 +11,7 @@ exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 **从Adobe Experience Manager：**
 
-1. 在您的AEM创作实例中，单击 **Adobe Experience** 徽标，然后选择 **[!UICONTROL Sites]**.
+1. 在您的AEM创作实例中，单击 **Adobe体验** 徽标，然后选择 **[!UICONTROL Sites]**.
 
    ![](assets/aem_uc_1.png)
 

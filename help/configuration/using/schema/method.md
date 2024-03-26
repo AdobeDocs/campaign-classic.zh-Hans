@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## 内容模型 {#content-model-10}
 
-方法：==(帮助 |参数)
+方法：==(帮助 | 参数)
 
 ## 属性 {#attributes-10}
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 ## 父项 {#parents-10}
 
-`<methods>`  ,  `<interface />`
+`<methods>`  ，  `<interface />`
 
 ## 子项 {#children-10}
 

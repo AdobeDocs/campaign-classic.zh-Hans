@@ -3,7 +3,7 @@ product: campaign
 title: 操作原则
 description: 操作原则
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '512'
 ht-degree: 4%
 
 ---
@@ -82,7 +82,7 @@ Adobe Campaign模块有很多。 有些是连续运行的，而有些则偶尔�
 
 使用以下命令显示模块用法及其参数的语法： **nlserver `[module]` -？**
 
-示例:
+例如：
 
 **nlserver配置 — ？**
 

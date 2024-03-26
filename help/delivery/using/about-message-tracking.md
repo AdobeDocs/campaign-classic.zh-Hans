@@ -10,7 +10,7 @@ exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '695'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 10%
 
 借助其跟踪功能，Adobe Campaign使您能够跟踪发送的消息并检查收件人的行为：打开、单击链接、退订等。
 
-此信息可在 **[!UICONTROL Tracking]** 每个投放收件人用户档案的选项卡。 此选项卡显示从列表中选择的收件人跟踪和点击的所有URL链接。 这是投放中跟踪的仍存在于投放屏幕中的所有URL的累积。 该列表可以配置，通常包含：点击的URL、点击的日期和时间以及在其中找到URL的文档。 如需详细信息，请参阅[此部分](../../platform/using/editing-a-profile.md#tracking-tab)。
+此信息可在 **[!UICONTROL Tracking]** 每个投放收件人用户档案的选项卡。 此选项卡显示从列表中选择的收件人跟踪和点击的所有URL链接。 这是投放中跟踪的仍存在于投放屏幕中的所有URL的累积。 该列表可以配置，通常包含：点击的URL、点击的日期和时间以及在其中找到URL的文档。 如需详细信息，请参阅[此小节](../../platform/using/editing-a-profile.md#tracking-tab)。
 
 此 **投放仪表板** 对于监控投放以及在发送消息期间遇到的最终问题也很关键。 有关详细信息，请参阅 [本节](delivery-dashboard.md).
 
@@ -84,7 +84,7 @@ Campaign Classic跟踪功能允许您在电子邮件中添加可个性化并支�
 
 <img src="assets/do-not-localize/icon_monitor.svg" width="60px">
 
-**跟踪统计信息**
+**跟踪统计数据**
 
 此报表提供了有关打开、点击和交易的统计数据，并允许您跟踪投放对营销的影响。 [了解详情](../../reporting/using/delivery-reports.md#tracking-statistics)
 

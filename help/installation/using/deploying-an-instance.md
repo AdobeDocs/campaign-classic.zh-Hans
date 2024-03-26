@@ -3,7 +3,7 @@ product: campaign
 title: 部署实例
 description: 了解有关Campaign部署向导的更多信息
 feature: Installation, Instance Settings, Deployment
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3391'
-ht-degree: 3%
+source-wordcount: '3395'
+ht-degree: 2%
 
 ---
 
@@ -125,7 +125,7 @@ Adobe Campaign提供了一个图形助手(可在Adobe Campaign客户端控制台
 
 >[!NOTE]
 >
->对于托管或混合安装，如果已升级到 [增强MTA](../../delivery/using/sending-with-enhanced-mta.md)， **[!UICONTROL Delivery duration of the messages]** 仅在设置为时使用 **3.5天或以下**. 如果定义的值超过 3.5 天，则不会将其考虑在内。
+>对于托管或混合安装，如果已升级到 [增强MTA](../../delivery/using/sending-with-enhanced-mta.md)， **[!UICONTROL Delivery duration of the messages]** 仅在设置为时使用 **3.5天或以下**. 如果定义的值超过3.5天，则不会将其考虑在内。
 
 ### 重试参数 {#retry-parameters}
 

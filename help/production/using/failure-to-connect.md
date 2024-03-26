@@ -3,7 +3,7 @@ product: campaign
 title: 连接失败
 description: 连接失败
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 6%
+source-wordcount: '377'
+ht-degree: 4%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 6%
 <thead> 
 <tr> 
 <th>支票<br /> </th> 
-<th>解决方法<br /> </th> 
+<th>分辨率<br /> </th> 
 </tr> 
 </thead> 
 <tbody> 

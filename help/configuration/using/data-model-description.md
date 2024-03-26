@@ -8,8 +8,8 @@ role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2385'
-ht-degree: 2%
+source-wordcount: '2406'
+ht-degree: 1%
 
 ---
 
@@ -181,9 +181,9 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 * 对照组的响应率： **dProofReactedRate**. 假设验证对照组的响应率。
 * 已联系人口的总收入： **dContactReactedTotalAmount**. 假设验证中目标联系人的总收入。
 * 对照组的平均收入： **dContactReactedAvgAmount**. 假设验证中目标对照组联系人的平均收入。
-* 对照组的总收入： **dProofReactedTotalAmount**. 假设验证对照组的总收入.
+* 对照组的总收入： **dProofReactedTotalAmount**. 假设验证对照组的总收入。
 * 对照组的平均收入： **dProofReactedAvgAmount**. 假设验证对照组的平均收入。
-* 每次联系的总利润： **dContactReactedTotalMargin**. 假设验证中针对的每次联系的总利润.
+* 每次联系的总利润： **dContactReactedTotalMargin**. 假设验证中针对的每次联系的总利润。
 * 每次联系的平均利润： **dContactReactedAvgMargin**. 假设验证中针对的每次联系的平均利润。
 * 对照组的总利润： **dProofReactedTotalMargin**. 假设验证中针对的对照组的总利润。
 * 对照组的平均利润： **dProofReactedAvgMargin**. 假设验证中针对的对照组的平均利润。

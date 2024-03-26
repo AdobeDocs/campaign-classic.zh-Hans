@@ -3,13 +3,13 @@ product: campaign
 title: 多维数据集的最佳实践
 description: 多维数据集的最佳实践
 feature: Reporting, Monitoring
-badge: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1506'
 ht-degree: 1%
 
 ---
@@ -171,7 +171,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 1. 如有必要，根据运算符选择操作涉及的表达式。
 
-   此 **[!UICONTROL Advanced selection]** 按钮允许您创建复杂的计算公式。 如需详细信息，请参阅[此部分](../../platform/using/about-queries-in-campaign.md)。
+   此 **[!UICONTROL Advanced selection]** 按钮允许您创建复杂的计算公式。 如需详细信息，请参阅[此小节](../../platform/using/about-queries-in-campaign.md)。
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 

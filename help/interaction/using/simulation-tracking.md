@@ -32,6 +32,6 @@ ht-degree: 10%
 
 数据透视表可快速查看每个排名的选件细分。 与Adobe Campaign中的所有报告一样，您可以在Web浏览器中导出、打印、存档或显示报告。
 
-如需详细信息，请参阅[此部分](../../reporting/using/actions-on-reports.md)。
+如需详细信息，请参阅[此小节](../../reporting/using/actions-on-reports.md)。
 
 ![](assets/offer_simulation_013.png)

@@ -10,8 +10,8 @@ content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 4%
+source-wordcount: '509'
+ht-degree: 2%
 
 ---
 
@@ -124,7 +124,7 @@ ht-degree: 4%
 
 1. Adobe Experience Manager Adobe Campaign通过配置专用的 **Cloud Service**.
 
-   要了解如何通过Cloud Services连接两个解决方案，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
+   要了解如何通过Cloud Service连接两个解决方案，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
 
 1. 配置 **Externalizer服务**.
 

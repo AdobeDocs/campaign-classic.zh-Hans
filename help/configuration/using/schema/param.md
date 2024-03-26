@@ -60,27 +60,27 @@ param：==help
    * 布尔值
    * 字节
    * CDATA
-   * 日期时间
+   * datetime
    * datetimetz
    * datetimenotz
-   * date
+   * 日期
    * DOMDocument
    * 圆顶元素
-   * 多次
+   * double
    * 枚举
-   * 浮点数
+   * float
    * html
    * int64
    * 链接
    * 长
    * 备忘
    * MNTOKEN
-   * percent
+   * 百分比
    * 主密钥
    * 短
    * 字符串
-   * 时间
-   * 时间跨度
+   * time
+   * timespan
    * uuid
 
 ## 示例 {#examples-9}

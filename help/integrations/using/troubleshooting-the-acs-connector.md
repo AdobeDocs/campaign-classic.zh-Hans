@@ -3,7 +3,7 @@ product: campaign
 title: ACS连接器故障排除
 description: ACS连接器故障排除
 feature: ACS Connector, Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 1%
+source-wordcount: '879'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> 操作<br /> </td> 
-   <td> 活动<br /> </td> 
+   <td> 营销活动<br /> </td> 
   </tr> 
   <tr> 
    <td> Web应用程序<br /> </td> 

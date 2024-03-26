@@ -6,7 +6,7 @@ feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 内容模型 {#content-model-4}
 
-元素：==(属性 |计算字符串 | dbindex |默认 |元素 |帮助 |加入 |键 | sysFilter |已翻译默认值)
+元素：==(属性 | 计算字符串 | dbindex | 默认 | 元素 | 帮助 | 加入 | 键 | sysFilter | translateddefault)
 
 ## 属性 {#attributes-4}
 
@@ -181,25 +181,25 @@ _operation (string)、advanced (boolean)、aggregate (string)、applicateIf (str
    * 布尔值
    * 字节
    * CDATA
-   * 日期时间
+   * datetime
    * datetimetz
    * datetimenotz
-   * date
-   * 多次
+   * 日期
+   * double
    * 枚举
-   * 浮点数
+   * float
    * html
    * int64
    * 链接
    * 长
    * 备忘
    * MNTOKEN
-   * percent
+   * 百分比
    * 主密钥
    * 短
    * 字符串
-   * 时间
-   * 时间跨度
+   * time
+   * timespan
    * uuid
 
 * **未绑定（布尔型）**：如果激活了属性(unbound=&quot;true&quot;)，则该链接将声明为1-N基数的收集元素。

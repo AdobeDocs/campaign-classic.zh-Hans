@@ -3,7 +3,7 @@ product: campaign
 title: 消息中心事件的历史
 description: 了解有关消息中心事件历史报告的更多信息
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: reports
@@ -11,7 +11,7 @@ exl-id: 04d4791b-a1dd-4361-a469-6f5aff0f41b8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 

@@ -8,8 +8,8 @@ role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 8%
+source-wordcount: '1013'
+ht-degree: 7%
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Campaign使用数据架构来：
 
 枚举先于架构的主元素之前定义。 它们允许您在列表中显示值，以限制用户对给定字段的选择。
 
-示例:
+例如：
 
 ```
 <enumeration basetype="byte" name="exTransactionTypeEnum" default="store">
@@ -66,7 +66,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 它们可以唯一也可以不唯一，并引用一个或多个字段。
 
-示例:
+示例：
 
 ```
 <dbindex name="email" unique="true">
@@ -95,7 +95,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 也可使用定义主键 **内部** 属性。
 
-示例:
+例如：
 
 ```
 <key name="householdId" internal="true">
@@ -132,7 +132,7 @@ type="string" enum="exTransactionTypeEnum"/>
 * **@required**
 * **@ref**
 * **@xml**
-* **@类型**
+* **@type**
 
   要查看一个表，其中列出了Adobe Campaign为各种数据库管理系统生成的数据类型的映射，请参阅 [映射Adobe Campaign/DBMS数据的类型](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) 部分。
 

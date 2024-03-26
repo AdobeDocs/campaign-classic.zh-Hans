@@ -3,7 +3,7 @@ product: campaign
 title: 将Microsoft Windows平台迁移到Adobe Campaign v7
 description: 了解如何将Microsoft Windows平台迁移到Adobe Campaign v7
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
@@ -12,7 +12,7 @@ hidefromtoc: true
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -351,7 +351,7 @@ If you are migrating from v6.02 or earlier, you must configure your security zon
 在下列每台服务器上启动IIS和Adobe Campaign服务：
 
 1. 跟踪和重定向服务器。
-1. 中间源服务器.
+1. 中间源服务器。
 1. 营销服务器。
 
 在继续下一步之前，对新安装运行全面测试，确保没有回归，并且一切正常。

@@ -3,7 +3,7 @@ product: campaign
 title: 升级到新内部版本
 description: 了解升级到新内部版本的技术步骤
 feature: Monitoring, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 4%
+source-wordcount: '1133'
+ht-degree: 2%
 
 ---
 
@@ -75,8 +75,8 @@ ht-degree: 4%
    要下载此文件，请连接到 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 使用您的用户凭据。 在中了解有关软件分发的更多信息 [此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans).
 
 1. 选择安装模式：选择 **[!UICONTROL Update or repair]**
-1. 单击 **[!UICONTROL Next]**。
-1. 单击 **[!UICONTROL Finish]**。
+1. 单击 **[!UICONTROL Next]** .
+1. 单击 **[!UICONTROL Finish]** .
 
    然后，安装程序将复制新文件。
 

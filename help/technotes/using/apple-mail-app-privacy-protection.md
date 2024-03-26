@@ -6,7 +6,7 @@ description: 了解Apple的邮件隐私保护功能可能会对您的营销活�
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2064'
 ht-degree: 1%
 
 ---
@@ -373,7 +373,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 * S3
 * Azure Blob
 
-##### 实施
+##### 实现
 
 此示例说明如何从Adobe Campaign导出跟踪数据。
 

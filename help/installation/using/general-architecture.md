@@ -3,7 +3,7 @@ product: campaign
 title: Campaign Classic通用架构
 description: 了解如何安装和配置Campaign Classic
 feature: Installation, Architecture
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models

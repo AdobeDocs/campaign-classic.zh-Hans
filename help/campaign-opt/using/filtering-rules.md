@@ -57,7 +57,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->可以在工作流的中使用类型和筛选规则 **[!UICONTROL Delivery outline]** 活动。 如需详细信息，请参阅[此部分](../../workflow/using/delivery-outline.md)。
+>可以在工作流的中使用类型和筛选规则 **[!UICONTROL Delivery outline]** 活动。 如需详细信息，请参阅[此小节](../../workflow/using/delivery-outline.md)。
 
 ## 创建和使用过滤类型 {#creating-and-using-a-filtering-typology}
 

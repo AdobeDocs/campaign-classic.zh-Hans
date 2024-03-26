@@ -9,8 +9,8 @@ role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 20%
+source-wordcount: '1217'
+ht-degree: 15%
 
 ---
 
@@ -22,16 +22,16 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->Adobe Campaign提供了一组工具来监控投放能力并优化电子邮件发送。 在[此章节](about-deliverability.md)中了解更多信息。
+>Adobe Campaign提供了一组工具来监控投放能力并优化电子邮件发送。 可在[此部分](about-deliverability.md)中了解详情。
 
 通过在工作流中准备投放和/或发送投放，可以自动进行投放发送。 有关工作流中投放类型活动的更多信息，请参阅 [本节](../../workflow/using/about-action-activities.md).
 
 Adobe Campaign提供以下交付渠道：
 
 1. **电子邮件渠道**：电子邮件投放可让您向目标群体发送个性化电子邮件。请参阅 [关于电子邮件渠道](about-email-channel.md).
-1. **直邮渠道**：直邮投放允许您生成包含目标群体数据的提取文件。请参阅 [关于直邮渠道](about-direct-mail-channel.md).
+1. **直邮渠道**：直邮投放允许您生成包含目标群体数据的提取文件。 请参阅 [关于直邮渠道](about-direct-mail-channel.md).
 1. **移动渠道**：移动渠道中的投放可让您向目标群体发送个性化的SMS或LINE消息。 请参阅 [短信渠道](sms-channel.md).
-1. **移动应用程序渠道**：移动应用程序投放可让您向 iOS 和 Android 系统发送通知。请参阅 [移动应用程序渠道](about-mobile-app-channel.md) 章节。
+1. **移动应用程序渠道**：移动应用程序投放可让您向iOS和Android系统发送通知。 请参阅 [移动应用程序渠道](about-mobile-app-channel.md) 章节。
 
    有关其他渠道的介绍，请参见 [此页面](steps-about-delivery-creation-steps.md#other-channels).
 
@@ -81,7 +81,7 @@ Adobe Campaign允许您发送个性化和分段的 [推送通知](about-mobile-a
 
 ## 直邮 {#direct-mail}
 
-[直邮是一种线下渠道，用于生成直邮提供商所需的个性化文件。](about-direct-mail-channel.md)利用这种手段，可将线上和线下渠道有机地结合，用在客户历程中。
+[直邮](about-direct-mail-channel.md) 是一个离线渠道，允许您个性化和生成直邮提供商所需的文件。 利用这种手段，可将线上和线下渠道有机地结合，用在客户历程中。
 
 利用线上渠道，可创建消息（电子邮件、短信、移动应用投放等）并直接从 Adobe Campaign 发送至受众。线下渠道则不同。在准备直邮投放时，Adobe Campaign 会生成一个文件，其中包含了所有定向的用户档案和选定的联系信息（例如邮政地址）。然后，您可以将此文件发送给直邮提供商，由其负责发送纸质信函。
 

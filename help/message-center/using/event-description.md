@@ -3,15 +3,15 @@ product: campaign
 title: 事件描述
 description: 了解如何使用SOAP方法在Adobe Campaign Classic中管理事务性消息传递事件
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 0%
+source-wordcount: '756'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 这两种方法都包含 **`<urn:sessiontoken>`** 用于登录到事务性消息传递模块的元素。 我们建议使用通过受信任的IP地址进行标识的方法。 要检索会话令牌，请执行登录SOAP调用，然后执行get令牌和注销。 对多个RT调用使用相同的令牌。 此部分中包含的示例正在使用会话令牌方法，建议使用此方法。
 
-如果您使用的是负载平衡服务器，则可以使用用户/密码身份验证（在RT消息的级别）。 示例:
+如果您使用的是负载平衡服务器，则可以使用用户/密码身份验证（在RT消息的级别）。 例如：
 
 ```
 <PushEvent xmlns="urn:nms:rtEvent">

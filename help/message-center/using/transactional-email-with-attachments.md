@@ -3,12 +3,12 @@ product: campaign
 title: 发送带有附件的事务性电子邮件
 description: 了解如何使用Adobe Campaign发送带有个人和/或个性化附件的事务性电子邮件
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '670'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -55,9 +55,9 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
 >[!NOTE]
 >
->为了避免出现性能问题，建议每封电子邮件不要附加多个附件。可以从以下位置配置建议的阈值 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
+>为了避免出现性能问题，建议每封电子邮件不要包含多个附件。 可以从以下位置配置建议的阈值 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
 
-## 实施 {#implementation}
+## 实现 {#implementation}
 
 下图显示了实施此方案时的不同步骤：
 
@@ -65,7 +65,7 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
 要即时向事务型消息添加电子邮件附件，请执行以下步骤：
 
-1. 从设计附件开始。 有关更多信息，请参阅[此章节](../../delivery/using/attaching-files.md#attach-a-personalized-file)。
+1. 从设计附件开始。 有关更多信息，请参阅[此小节](../../delivery/using/attaching-files.md#attach-a-personalized-file)。
 
    这样，您可以将文件附加到电子邮件，即使它们不是在执行实例上托管。
 

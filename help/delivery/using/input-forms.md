@@ -58,7 +58,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 元素由名称指定，属性由名称指定，名称前面加有字符“@”。
 
-示例:
+示例：
 
 * **@date**：选择名为“date”的属性
 * **chapter/@title**：选择“标题”属性位于 `<chapter>` 元素
@@ -76,7 +76,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 控制项相对于彼此的排列方式与HTML表中使用的排列方式相似，有可能将控制项划分为若干列、交错元素或指定可用空间的占用。 但是，请记住，格式设置仅授权分配比例；您不能为对象指定固定维度。
 
-如需详细信息，请参阅[此部分](../../configuration/using/form-structure.md#formatting)。
+如需详细信息，请参阅[此小节](../../configuration/using/form-structure.md#formatting)。
 
 ## 列表类型控件 {#list-type-controls}
 

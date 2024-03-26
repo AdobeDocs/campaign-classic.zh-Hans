@@ -10,7 +10,7 @@ exl-id: 7f44e732-4257-4d2a-800c-bde847e20f52
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '110'
-ht-degree: 16%
+ht-degree: 15%
 
 ---
 
@@ -27,5 +27,5 @@ ht-degree: 16%
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
-1. 使用标签、代码和描述标识投放。 如需详细信息，请参阅[此部分](steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
+1. 使用标签、代码和描述标识投放。 如需详细信息，请参阅[此小节](steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
 1. 单击 **继续** 以确认此信息并显示消息配置窗口。

@@ -11,7 +11,7 @@ topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1390'
 ht-degree: 2%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 2%
 
   ![](assets/response_measurement_001.png)
 
-  如果这个假设是动态启动的，那么如果想立即触发它，它将被迫引发。 否则，它会根据配置的计算结束日期（基于假设创建日期）自动触发。 [了解详情](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)).
+  如果这个假设是动态启动的，那么如果想立即触发它，它将被迫引发。 否则，它会根据配置的计算结束日期（基于假设创建日期）自动触发。 [了解详情](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery))。
 
 * **[!UICONTROL Transaction/Margin amount]**：这些字段是可选字段，用于自动计算人员调整指标。 [了解详情](hypothesis-tracking.md#indicators)
 * **[!UICONTROL Unit amount]**：用于设置计算收入的金额。 [了解详情](hypothesis-tracking.md#indicators)
@@ -235,6 +235,6 @@ ht-degree: 2%
 
    ![](assets/response_hypothesis_model_example_011.png)
 
-   这样创建的模板允许您对购买表中的产品或文章运行假设。
+   这样，创建的模板允许您对购买表中的产品或文章运行假设。
 
 1. 单击 **[!UICONTROL Save]** 录制模板。

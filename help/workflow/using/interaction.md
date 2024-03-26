@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 互动
-description: 互动
+title: 交互
+description: 交互
 feature: Workflows, Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '167'
 ht-degree: 7%
 
 ---
 
 
-# 互动{#interaction}
+# 交互{#interaction}
 
 
 
@@ -20,9 +20,9 @@ ht-degree: 7%
 
 有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-![](assets/do-not-localize/v7.jpeg)[Campaign v7 文档](../../interaction/using/interaction-and-offer-management.md)
+![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../interaction/using/interaction-and-offer-management.md)
 
-![](assets/do-not-localize/v8.png)[Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
 
 
 <table> 

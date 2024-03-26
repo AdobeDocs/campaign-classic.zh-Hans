@@ -9,8 +9,8 @@ topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 1%
+source-wordcount: '1558'
+ht-degree: 0%
 
 ---
 
@@ -137,25 +137,25 @@ _operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement
    * 布尔值
    * 字节
    * CDATA
-   * 日期时间
+   * datetime
    * datetimetz
    * datetimenotz
-   * date
-   * 多次
+   * 日期
+   * double
    * 枚举
-   * 浮点数
+   * float
    * html
    * int64
    * 链接
    * 长
    * 备忘
    * MNTOKEN
-   * percent
+   * 百分比
    * 主密钥
    * 短
    * 字符串
-   * 时间
-   * 时间跨度
+   * time
+   * timespan
    * uuid
 
   如果“@type”属性留空，默认情况下，Adobe Campaign会将长度为100的字符串（字符串）链接到字段。

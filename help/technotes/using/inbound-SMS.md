@@ -1,17 +1,18 @@
 ---
 product: campaign
-title: 中间源基础设施的入站SMS工作流活动
-description: 中间源基础设施的入站SMS工作流活动
+title: 中间源基础架构的入站短信工作流活动
+description: 中间源基础架构的入站短信工作流活动
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
-source-git-commit: 85adfe3515480bed559091427ff1acec14a70320
+exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
+source-git-commit: f9a17541596ba2afa96502dc99408b6f99d2cb2b
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
-# 中间源基础设施的入站SMS工作流活动 {#inbound-sms}
+# 中间源基础架构的入站短信工作流活动 {#inbound-sms}
 
 ## 限制 {#limitations}
 
@@ -145,5 +146,3 @@ ht-degree: 2%
    > * 如果每个中间源实例有多个inSMS工作流，则可能会发生重复数据删除，因为中间源SMS ID保持不变，而外部帐户ID则有所不同。
 
 1. 保存并重新启动工作流。
-
-

@@ -1,35 +1,35 @@
 ---
 product: campaign
-title: 创建实例并登陆
-description: 创建实例并登陆
+title: 创建实例并登录
+description: 创建实例并登录
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 5%
+source-wordcount: '593'
+ht-degree: 2%
 
 ---
 
-# 创建实例并登陆{#creating-an-instance-and-logging-on}
+# 创建实例并登录{#creating-an-instance-and-logging-on}
 
 
 
-要创建新实例和Adobe Campaign数据库，请应用以下流程：
+要创建新的实例和 Adobe Campaign 数据库，请应用以下过程：
 
 1. 创建连接。
 1. 登录以创建相关实例。
-1. 创建和配置数据库.
+1. 创建和配置数据库。
 
 >[!NOTE]
 >
->仅 **内部** 标识符可以执行这些操作。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+>**只有内部**&#x200B;标识符才能执行这些操作。如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
-启动Adobe Campaign控制台后，您将访问登录页面。
+启动 Adobe Campaign 控制台后，您将访问一个登录页面。
 
 要创建新实例，请执行以下步骤：
 
@@ -41,17 +41,17 @@ ht-degree: 5%
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
-1. 通过URL指定与Adobe Campaign应用程序服务器的连接。 使用计算机的DNS或别名或IP地址。
+1. 通过URL指定与Adobe Campaign应用程序服务器的连接。 使用 DNS 或计算机的别名，或者您的 IP 地址。
 
-   例如，您可以使用 `https://<machine>.<domain>.com` 键入URL。
+   例如，可以使用 `https://<machine>.<domain>.com` URL 类型。
 
    >[!CAUTION]
    >
-   >对于连接URL，仅使用以下字符： `[a-z]`， `[A-Z]`， `[0-9]` 和短划线(-)或句号。
+   >对于连接 URL，仅使用以下字符： `[a-z]`、 `[A-Z]`、、 `[0-9]` 短划线 （-） 或句号。
 
-1. 单击 **[!UICONTROL Ok]** 要确认设置，请执行以下操作：您现在可以从实例创建过程开始。
-1. 在 **[!UICONTROL Connection settings]** 窗口，输入 **内部** 用于连接到Adobe Campaign应用程序服务器的登录名及其密码。 连接后，即可访问实例创建向导以声明新实例
-1. 在 **[!UICONTROL Name]** 字段中，输入 **实例名称**. 由于此名称用于生成配置文件 **config-`<instance>`.xml** 和在命令行参数中使用来标识实例，请确保选择不带特殊字符的短名称。 例如： **eMarketing**.
+1. 单击 **[!UICONTROL Ok]** 以确认设置：您现在可以开始实例创建过程。
+1. 在 **[!UICONTROL Connection settings]** 窗口中，输入 **内部** 登录名及其密码以连接到 Adobe Campaign 应用程序服务器。 连接后，您可以访问实例创建向导以声明新实例
+1. 在 **[!UICONTROL Name]** 字段中，输入 **实例名称**。 由于此名称用于生成配置文件 **config-`<instance>`.xml** ，并在命令行参数中用于标识实例，因此请确保选择不含特殊字符的短名称。 例如： **eMarketing**.
 
    ![](assets/s_ncs_install_create_instance.png)
 
@@ -61,11 +61,11 @@ ht-degree: 5%
 
    主机名包含在字符串之间 **https://** 和第一个斜杠字符 **/** 服务器地址的。
 
-   您可以定义以逗号分隔的值列表。
+   您可以定义一个以逗号分隔的值列表。
 
-   此 ? 和 &#42; 字符可用作通配符以替换一个或多个字符（DNS、端口等）。 例如， **演示&#42;** 值将与“https://demo”配合使用，就像与“https://demo:8080”甚至“https://demo2”配合使用一样。
+   的 ？ 字符 &#42; 可用作通配符来替换一个或多个字符（DNS、端口等）。 例如， **演示&#42;** 值将与“https://demo”一起使用，就像与“https://demo:8080”甚至“https://demo2”一起使用一样。
 
-   使用的名称必须在DNS中定义。 您还可以将DNS名称与IP地址之间的通信告知给 **c：/windows/system32/drivers/etc/hosts** 在Windows和 **/etc/hosts** 文件。 因此，您必须修改连接设置以使用此DNS名称，才能连接到您选择的实例。
+   必须在您的 DNS 中定义使用的名称。 您还可以在 Windows 的 c：/windows/system32/drivers/etc/hosts **文件和** Linux 的 /etc/hosts **文件中通知 DNS 名称和 IP 地址**&#x200B;之间的对应关系。因此，您必须修改连接设置以使用此 DNS 名称才能连接到所选实例。
 
    服务器必须由此名称标识，尤其是在电子邮件中上传图像时。
 
@@ -79,8 +79,8 @@ ht-degree: 5%
    >
    >在此步骤之后无法修改实例语言。 Adobe Campaign实例不是多语言的：您无法将界面从一种语言切换到另一种语言。
 
-1. 单击 **[!UICONTROL Ok]** 确认实例声明。 注销并重新登录以声明数据库。
+1. 单击 **[!UICONTROL Ok]** 以确认实例声明。 注销并重新登录以声明数据库。
 
    >[!NOTE]
    >
-   >可以从命令行创建实例。 有关详细信息，请参见 [命令行](../../installation/using/command-lines.md).
+   >可以从命令行创建实例。 有关此内容的更多信息，请参阅 [命令行](../../installation/using/command-lines.md)。

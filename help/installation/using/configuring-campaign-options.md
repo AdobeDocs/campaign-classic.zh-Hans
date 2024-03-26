@@ -10,12 +10,12 @@ topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '4004'
-ht-degree: 6%
+source-wordcount: '3838'
+ht-degree: 1%
 
 ---
 
-# Campaign Classic 选项列表{#configuring-campaign-options}
+# Campaign Classic选项列表{#configuring-campaign-options}
 
 此 **[!UICONTROL Administration / Platform / Options]** 节点允许您配置Adobe Campaign选项。 其中一些是在安装Campaign时内置的，而其他则可以在需要时手动添加。 可用选项因随实例一起安装的软件包而异。
 
@@ -58,7 +58,7 @@ ht-degree: 6%
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> 允许您允许负责投放的操作员确认发送，如果指定了特定操作员或操作员组来在投放的属性中开始投放。</p><p> 要执行此操作，请通过输入“1”作为值激活选项。 要停用此选项，请输入“0”。</p><p> 然后，发送确认流程将默认运行：只有投放属性中为发送指定的操作员或操作员组（或管理员）才能确认并执行发送。 请参阅<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">此章节</a>。</p> </td> 
+   <td><p> 允许您允许负责投放的操作员确认发送，如果指定了特定操作员或操作员组来在投放的属性中开始投放。</p><p> 要执行此操作，请通过输入“1”作为值激活选项。 要停用此选项，请输入“0”。</p><p> 然后，发送确认流程将默认运行：只有投放属性中为发送指定的操作员或操作员组（或管理员）才能确认并执行发送。 请参阅<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">此小节</a>。</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数据库(nms：recipient)进行对话。<br /> 选项值必须对应于与外部收件人表匹配的架构的名称。<br /> </td> 
@@ -125,7 +125,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_PublishingScript</span> <br /> </td> 
-   <td> 发布脚本.<br /> </td> 
+   <td> 发布脚本。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_NoCountBroadLogMsgPush</span> <br /> </td> 
@@ -149,7 +149,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> 客户的常用名称. 用于向收件人显示的某些警告消息中。<br /> “您收到此消息是因为您与‘组织’或关联公司有联系。 不再接收来自“组织”的消息<br /> </td> 
+   <td> 客户的公用名称。 用于向收件人显示的某些警告消息中。<br /> “您收到此消息是因为您与‘组织’或关联公司有联系。 不再接收来自“组织”的消息<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -288,23 +288,23 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NcmResourcesDir</span> <br /> </td> 
-   <td> 在Adobe Campaign客户端控制台中发布资源的位置。 请参阅<a href="../../delivery/using/formatting.md#image-referencing">此章节</a>。<br /> </td> 
+   <td> 在Adobe Campaign客户端控制台中发布资源的位置。 请参阅 <a href="../../delivery/using/formatting.md#image-referencing">本节</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmResourcesDirPreview</span> <br /> </td> 
-   <td> 在Adobe Campaign客户端控制台中用于预览的资源位置。 请参阅<a href="../../delivery/using/formatting.md#image-referencing">此章节</a>。<br /> </td> 
+   <td> 在Adobe Campaign客户端控制台中用于预览的资源位置。 请参阅 <a href="../../delivery/using/formatting.md#image-referencing">本节</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
-   <td> 上传期间跳过的图像的 URL 掩码列表.<br /> </td> 
+   <td> 上载期间跳过的图像的URL掩码列表。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
-   <td> 图像上传的配置. 该值可以为无/跟踪/脚本/列表（可以由运算符的可选设置覆盖）。 </td> 
+   <td> 图像上传的配置。 该值可以为无/跟踪/脚本/列表（可以由运算符的可选设置覆盖）。 </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
-   <td> 要将服务器上的图像存储到的文件夹.<br /> </td> 
+   <td> 服务器上要存储图像的文件夹。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LogoPath</span> <br /> </td> 
@@ -336,7 +336,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkFileRes_Public_URL</span> <br /> </td> 
-   <td> 公共资源文件的新 URL.<br /> </td> 
+   <td> 公共资源文件的新URL。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -495,7 +495,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueAlert</span> <br /> </td> 
-   <td> 已排队实时事件的平均数目的警报阈值。<br /> </td> 
+   <td> 平均已排队实时事件数的警报阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeAlert</span> <br /> </td> 
@@ -535,7 +535,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueAlert</span> <br /> </td> 
-   <td> 待处理实时事件队列的严重情况前阈值。<br /> </td> 
+   <td> 待处理实时事件队列的严重情况之前的阈值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueWarning</span> <br /> </td> 
@@ -656,7 +656,7 @@ ht-degree: 6%
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> 允许您为Microsoft SQL Server上的工作表配置单独的数据库，以优化备份和复制。 该选项对应于临时数据库的名称：如果指定，将在此数据库中写入工作表。 示例： 'tempdb.dbo.' （请注意，名称必须以点结尾）。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">了解更多信息</a> <br /> </td> 
+   <td> 允许您为Microsoft SQL Server上的工作表配置单独的数据库，以优化备份和复制。 该选项对应于临时数据库的名称：如果指定，将在此数据库中写入工作表。 示例： 'tempdb.dbo.' （请注意，名称必须以点结尾）。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">了解更多</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
@@ -676,7 +676,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkInstancePrefix</span> <br /> </td> 
-   <td> 已添加到自动生成的内部名称的前缀.<br /> </td> 
+   <td> 添加到自动生成的内部名称的前缀。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkQuery_Schema_LineCount</span> <br /> </td> 
@@ -741,11 +741,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> 用于集成的Adobe Target服务器。 默认情况下已选中此选项。 此值对应于Adobe Target Domain Server，后跟值/m2。 例如：tt.omtrdc.net/m2。<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> 请参阅此章节</a>.<br /> </td> 
+   <td> 用于集成的Adobe Target服务器。 默认情况下已选中此选项。 此值对应于Adobe Target Domain Server，后跟值/m2。 例如：tt.omtrdc.net/m2。<br /> 请参阅 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">本节</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Adobe Target组织名称。 此值对应于Adobe Target客户端的名称。<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> 请参阅此章节</a>.<br /> </td> 
+   <td> Adobe Target组织名称。 此值对应于Adobe Target客户端的名称。<br /> 请参阅 <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">本节</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -766,7 +766,7 @@ ht-degree: 6%
  </tbody> 
 </table>
 
-## 选件 {#offers}
+## 优惠 {#offers}
 
 <table> 
  <thead> 
@@ -815,11 +815,11 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NmsExecutionInstanceId</span> <br /> </td> 
-   <td> 执行实例标识符.<br /> </td> 
+   <td> 执行实例标识符。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_CustomerId</span> <br /> </td> 
-   <td> 发送账单报告时使用的客户标识符.<br /> </td> 
+   <td> 发送计费报告时使用的客户标识符。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_IntranetURL</span> <br /> </td> 
@@ -856,7 +856,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ClickFormula</span> <br /> </td> 
-   <td> 跟踪的 URL 计算脚本.<br /> </td> 
+   <td> 跟踪的URL计算脚本。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ExtAccount</span> <br /> </td> 
@@ -872,7 +872,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_OpenFormula</span> <br /> </td> 
-   <td> 打开 URL 计算脚本.<br /> </td> 
+   <td> 打开URL计算脚本。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Password</span> <br /> </td> 
@@ -986,7 +986,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchScope</span> <br /> </td> 
-   <td> 搜索范围.<br /> </td> 
+   <td> 搜索范围。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Mechanism</span> <br /> </td> 
@@ -1014,7 +1014,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsScope</span> <br /> </td> 
-   <td> 搜索范围.<br /> </td> 
+   <td> 搜索范围。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Server</span> <br /> </td> 
@@ -1023,7 +1023,7 @@ ht-degree: 6%
  </tbody> 
 </table>
 
-## Web 窗体 {#web-forms}
+## Web窗体 {#web-forms}
 
 <table> 
  <thead> 
@@ -1047,7 +1047,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> 允许您指定 Web 窗体失效模式的选项：默认情况下为本地，如果选项为“跟踪”，则使用跟踪服务器，并使用带有“其他服务器”选项的个性化列表。<br /> </td> 
+   <td> 允许您指定Web窗体失效模式的选项：默认情况下为本地，如果选项为“跟踪”，则使用跟踪服务器，并使用带有“其他服务器”选项的个性化列表。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURLs</span> <br /> </td> 

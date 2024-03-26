@@ -6,8 +6,8 @@ feature: Technote, Upgrade
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 9%
+source-wordcount: '502'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Campaign基础架构依赖于第三方系统，这些系统必须定期使用最新版本和修复进行更新。 必须执行这些更新，以确保服务的连续性，并确保Campaign环境免受安全风险的影响。 此外，需要升级Campaign，以确保与第三方系统更改兼容。
 
-作为 **托管或托管Cloud Services客户**，Adobe会通知您何时需要这些升级。 您将需要根据建议升级环境以确保法规遵从性。
+作为 **托管或托管Cloud Service客户**，Adobe会通知您何时需要这些升级。 您将需要根据建议升级环境以确保法规遵从性。
 
 作为 **内部部署或混合型客户**，Adobe强烈建议您根据同一日程表升级系统版本和Campaign版本。
 
@@ -23,7 +23,7 @@ Campaign基础架构依赖于第三方系统，这些系统必须定期使用最
 
 >[!NOTE]
 >
->有关这些更改的任何问题，请联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。另请参阅 [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md).
+>有关这些更改的任何问题，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). 另请参阅 [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md).
 >
 
 ## Campaign内部版本升级 {#ac-upgrade}
@@ -34,7 +34,7 @@ Campaign基础架构依赖于第三方系统，这些系统必须定期使用最
 
 **如何更新？**
 
-* 作为托管或托管Cloud Services的客户，Adobe将联系您并升级您的Campaign版本。
+* 作为托管或托管Cloud Service的客户，Adobe将联系您并升级您的Campaign版本。
 * 作为混合型客户，Adobe将通知您中间源环境的计划内部版本升级日期。 您还必须将营销环境升级到同一版本。
 * 作为内部部署客户，您需要将Campaign环境升级到最新的7.3.2内部版本。
 
@@ -47,7 +47,7 @@ Campaign基础架构依赖于第三方系统，这些系统必须定期使用最
 
 **如何更新？**
 
-* 作为托管或托管Cloud Services的客户，Adobe将与您联系并升级您的环境。
+* 作为托管或托管Cloud Service的客户，Adobe将与您联系并升级您的环境。
 * 作为混合型客户，Adobe将通知您中间源环境的计划升级日期。 如果您的营销环境也在Debian上运行，则还必须将其升级到Debian 11。
 * 作为内部部署客户，您需要将环境升级到Debian 11。
 
@@ -59,7 +59,7 @@ Campaign基础架构依赖于第三方系统，这些系统必须定期使用最
 
 **如何更新？**
 
-* 作为托管或托管Cloud Services客户，Adobe将与您联系，并将您的数据库系统从PostgreSQL 11升级到PostgreSQL 14。
+* 作为托管或托管Cloud Service客户，Adobe将与您联系，并将您的数据库系统从PostgreSQL 11升级到PostgreSQL 14。
 * 作为混合型客户，如果您的营销数据库系统是PostgreSQL，则必须将其升级到PostgreSQL 14。
 * 作为内部部署客户，您需要将数据库系统升级到PostgreSQL 14。
 

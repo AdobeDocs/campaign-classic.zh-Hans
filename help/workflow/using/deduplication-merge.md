@@ -1,17 +1,17 @@
 ---
-title: 使用重复数据删除活动的合并功能
+title: 使用外部重复数据删除活动的合并功能
 description: 了解如何使用重复数据删除活动的合并功能
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 8%
+source-wordcount: '577'
+ht-degree: 6%
 
 ---
 
-# 使用重复数据删除活动的合并功能 {#deduplication-merge}
+# 使用外部重复数据删除活动的合并功能 {#deduplication-merge}
 
 
 
@@ -19,17 +19,17 @@ ht-degree: 8%
 
 此用例描述了如何使用 **[!UICONTROL Merge]** 中的功能 **[!UICONTROL Deduplication]** 活动。
 
-有关此功能的更多信息，请参阅 [本节](deduplication.md#merging-fields-into-single-record).
+有关此功能的详细信息，请参阅 [本节](deduplication.md#merging-fields-into-single-record).
 
-此 **[!UICONTROL Deduplication]** activity用于从数据集中删除重复行。 在此使用案例中，根据“电子邮件”字段复制了以下显示的数据。
+此 **[!UICONTROL Deduplication]** activity用于从数据集中删除重复行。 在此使用案例中，根据Email字段重复了以下显示的数据。
 
 | 上次修改日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
 |-----|------------|-----------|-------|--------------|------|
-| 5/19/2020 | 罗伯特 | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
-| 7/22/2020 | 鲍比 | Tisner | bob@mycompany.com |  | 777-777-7777 |
-| 10/03/2020 | 鲍勃 |  | bob@mycompany.com |  | 888-888-8888 |
+| 5/19/2020 | 罗伯特 | 提斯纳 | bob@mycompany.com | 444-444-444 | 777-777-7777 |
+| 7/22/2020 | 鲍比 | 提斯纳 | bob@mycompany.com | | 777-777-7777 |
+| 10/03/2020 | 鲍勃 |  | bob@mycompany.com | | 888-888-8888 |
 
-利用重复数据删除活动的 **[!UICONTROL Merge]** 通过功能，您可以为重复数据删除配置一组规则，以定义要合并到单个结果数据记录中的一组字段。 例如，如果有一组重复记录，您可以选择保留最早的电话号码或最近的名称。
+利用重复数据删除活动的 **[!UICONTROL Merge]** 通过功能，您可以为重复数据删除配置一组规则，以定义要合并到单个结果数据记录中的一组字段。 例如，如果有一组重复记录，则可以选择保留最早的电话号码或最近的名称。
 
 ## 激活合并功能 {#activating-merge}
 
@@ -38,7 +38,7 @@ ht-degree: 8%
 
 1. 打开活动，然后单击 **[编辑配置]** 链接。
 
-1. 选择要用于重复数据删除的协调字段，然后单击 **[!UICONTROL Next]**. 在本例中，我们要根据电子邮件字段进行重复数据删除。
+1. 选择要用于重复数据删除的协调字段，然后单击 **[!UICONTROL Next]**. 在本例中，我们要根据电子邮件字段删除重复项。
 
    ![](assets/uc_merge_edit.png)
 
@@ -67,7 +67,7 @@ ht-degree: 8%
 
    ![](assets/uc_merge_identifier.png)
 
-1. 指示选择要考虑的记录的条件。
+1. 指明选择要考虑的记录的条件。
 
    ![](assets/uc_merge_filter.png)
 
@@ -79,7 +79,7 @@ ht-degree: 8%
 
    ![](assets/uc_merge_keep.png)
 
-1. 这些字段将添加到要合并的数据集，并且工作流架构中添加了一个新元素。
+1. 这些字段将添加到要合并的数据集，并且新元素将添加到工作流架构。
 
    重复这些步骤以配置手机和电话字段。
 
@@ -93,18 +93,18 @@ ht-degree: 8%
 
 | 修改日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
 |-----|------------|-----------|-------|--------------|------|
-| 5/19/2020 | 罗伯特 | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
-| 7/22/2020 | 鲍比 | Tisner | bob@mycompany.com |  | 777-777-7777 |
-| 10/03/2020 | 鲍勃 |  | bob@mycompany.com |  | 888-888-8888 |
+| 5/19/2020 | 罗伯特 | 提斯纳 | bob@mycompany.com | 444-444-444 | 777-777-7777 |
+| 7/22/2020 | 鲍比 | 提斯纳 | bob@mycompany.com | | 777-777-7777 |
+| 10/03/2020 | 鲍勃 |  | bob@mycompany.com | | 888-888-8888 |
 
-根据之前配置的规则，从三个记录中合并结果。 经过比较，得出使用最新姓名和手机以及原始电话号码的结论。
+根据之前配置的规则，从这三条记录中合并结果。 经过比较，得出使用最新姓名、手机以及原始电话号码的结论。
 
 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
 |------------|-----------|-------|--------------|------|
-| 鲍比 | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+| 鲍比 | 提斯纳 | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
 >[!NOTE]
 >
-> 请注意，已合并的名字是“Bobby”，因为我们配置了一个由名字和姓氏字段组成的“Name”规则。
+> 请注意，已合并的名字是“Bobby”，因为我们已经配置了由名字和姓氏字段组成的“Name”规则。
 >
->因此，无法考虑“Bob”（最近的名字），因为其关联的姓氏字段为空。 名字和姓氏的最新组合合并到最终记录中。
+>因此，无法考虑“Bob”（最近的名字），因为其关联的姓氏字段为空。 最新的名字和姓氏组合被合并到最终记录中。

@@ -9,12 +9,12 @@ role: User
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 3%
+source-wordcount: '452'
+ht-degree: 2%
 
 ---
 
-# 跟踪和监测 {#track-and-monitor}
+# 跟踪和监视 {#track-and-monitor}
 
 您已单击 **发送** 按钮？ 让我们看看会发生什么。 发送投放后，借助Adobe Campaign，您可以跟踪已发送的消息，并了解收件人对投放的反应。 这将帮助您改进未来发送并优化下一个营销活动。
 

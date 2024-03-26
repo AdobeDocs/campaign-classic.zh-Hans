@@ -13,7 +13,7 @@ ht-degree: 6%
 
 ---
 
-# Campaign 数据模型快速入门{#about-data-model}
+# 开始使用 Campaign 数据模型{#about-data-model}
 
 Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间的交互组成。本页中列出了主要表格和概念。
 
@@ -103,7 +103,7 @@ Adobe Campaign中内置的收件人表为构建数据模型提供了一个良好
 
 >[!IMPORTANT]
 >
->自定义收件人表是为高级用户保留的，并且受某些限制。 有关更多信息，请参阅[此章节](../../configuration/using/about-custom-recipient-table.md)。
+>自定义收件人表是为高级用户保留的，并且受某些限制。 有关更多信息，请参阅[此小节](../../configuration/using/about-custom-recipient-table.md)。
 
 ## 相关主题
 

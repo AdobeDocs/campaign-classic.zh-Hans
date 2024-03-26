@@ -3,14 +3,14 @@ product: campaign
 title: 标准部署
 description: 标准部署
 feature: Installation, Architecture, Deployment
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '843'
 ht-degree: 3%
 
 ---
@@ -62,7 +62,7 @@ LAN中的应用程序服务器为最终用户提供服务，并执行所有循�
 
 按照从Adobe Campaign应用程序服务器安装独立实例到创建数据库的步骤操作（步骤12）。 请参阅 [安装和配置（单机）](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
-由于计算机不是跟踪服务器，因此请不要考虑与Web服务器的集成。
+由于计算机不是跟踪服务器，因此不要考虑与Web服务器的集成。
 
 在以下示例中，实例的参数包括：
 
@@ -110,7 +110,7 @@ LAN中的应用程序服务器为最终用户提供服务，并执行所有循�
 
 1. 更改 **内部** 与应用程序服务器相同。
 
-   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+   如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 1. 将数据库链接到实例：
 
@@ -120,7 +120,7 @@ LAN中的应用程序服务器为最终用户提供服务，并执行所有循�
 
 1. 在 **config-default.xml** 和 **config-demo.xml** 文件，启用 **Web**， **trackinglogd** 和 **mta** 模块。
 
-   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#enabling-processes)。
+   如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 1. 编辑 **serverConf.xml** 文件并填充：
 
@@ -132,7 +132,7 @@ LAN中的应用程序服务器为最终用户提供服务，并执行所有循�
 
      >[!NOTE]
      >
-     >此 **名称服务器** 参数仅在Windows中使用。
+     >此 **nameServer** 参数仅在Windows中使用。
 
      有关详细信息，请参见 [投放设置](configure-delivery-settings.md).
 

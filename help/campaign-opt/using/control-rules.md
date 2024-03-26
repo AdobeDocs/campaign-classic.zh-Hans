@@ -8,7 +8,7 @@ feature: Typology Rules, Campaigns
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '371'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 4%
 
 可以创建新的控制规则以满足您的需求。 为此，请创建 **[!UICONTROL Control]** 类型规则，然后在 **[!UICONTROL Code]** 选项卡。
 
-**示例:**
+**示例：**
 
 在以下示例中，我们将创建一个规则，以防止将短信选件发送给100个以上的收件人。 此规则将链接到活动类型，然后链接到相关选件可用的短信投放。
 

@@ -157,7 +157,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->您可以创建新报告并将它们添加到提供的报告中。 如需详细信息，请参阅[此部分](../../reporting/using/about-adobe-campaign-reporting-tools.md)。
+>您可以创建新报告并将它们添加到提供的报告中。 如需详细信息，请参阅[此小节](../../reporting/using/about-adobe-campaign-reporting-tools.md)。
 
 要访问报表，请单击 **[!UICONTROL Reports]** 目标模拟在其功能板上的链接。
 
@@ -171,7 +171,7 @@ ht-degree: 2%
 
 要比较结果，您需要使用报告。 事实上，Adobe Campaign允许您保存报表历史记录，以便稍后再次查看。 该历史记录将在模拟的生命周期中保存。
 
-**示例:**
+**示例：**
 
 1. 创建对投放的模拟，投放采用哪种类型 **A** 应用于。
 1. 在 **[!UICONTROL Reports]** 选项卡，编辑其中一个可用报表，例如 **[!UICONTROL Detail of simulation exclusions]** 例如。
@@ -195,7 +195,7 @@ ht-degree: 2%
 >我们建议在模拟模板中定义计算轴，而不是为每个模拟分别定义计算轴。\
 >模拟模板保存在中 **[!UICONTROL Resources > Templates > Simulation templates]** Adobe Campaign树的节点。
 
-**示例:**
+**示例：**
 
 在下面的示例中，我们要根据收件人的状态（“客户”、“潜在客户”或无）创建一个额外的报表轴。
 

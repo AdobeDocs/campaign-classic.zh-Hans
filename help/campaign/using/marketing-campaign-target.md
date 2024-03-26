@@ -9,7 +9,7 @@ exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1492'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -218,7 +218,7 @@ ht-degree: 3%
 要提取控制组，请为活动或投放启用控制组，然后选择以下选项之一： **[!UICONTROL Activate random sampling]** 或 **[!UICONTROL Keep only the first records after sorting]**.
 
 * **[!UICONTROL Activate random sampling]** ：此选项将随机取样应用于目标群体中的收件人。 如果您随后将阈值设置为100，则控制组将由从目标群体中随机选择的100个收件人组成。 随机取样取决于数据库引擎。
-* **[!UICONTROL Keep only the first records after sorting]**：通过此选项可根据一个或多个排序顺序定义限制。如果您选择 **[!UICONTROL Age]** 字段作为排序条件，然后定义100作为阈值，控制组将由100个最年轻的收件人组成。 例如，定义包含很少购买的收件人或频繁购买的收件人的控制组，并将其行为与联系的收件人的行为进行比较，这可能很有趣。
+* **[!UICONTROL Keep only the first records after sorting]** ：通过此选项可根据一个或多个排序顺序定义限制。 如果您选择 **[!UICONTROL Age]** 字段作为排序条件，然后定义100作为阈值，控制组将由100个最年轻的收件人组成。 例如，定义包含很少购买的收件人或频繁购买的收件人的控制组，并将其行为与联系的收件人的行为进行比较，这可能很有趣。
 
 单击 **[!UICONTROL Next]** 以定义排序顺序（如有必要）并选择收件人限制模式。
 

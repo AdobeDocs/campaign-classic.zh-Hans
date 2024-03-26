@@ -3,7 +3,7 @@ product: campaign
 title: 创建和配置数据库
 description: 创建和配置数据库
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 3%
+source-wordcount: '1335'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 3%
 >
 >数据库、用户和架构的名称不能以数字开头或包含特殊字符。
 >
->仅 **内部** 标识符可以执行这些操作。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+>仅 **内部** 标识符可以执行这些操作。 如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 ## 案例1：创建/回收数据库 {#case-1--creating-recycling-a-database}
 

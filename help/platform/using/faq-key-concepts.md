@@ -3,15 +3,15 @@ product: campaign
 title: 重要概念
 description: Campaign Classic 常见问题解答
 feature: Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 97%
+source-wordcount: '835'
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块及其配置
 
 [单击此处了解有关](../../platform/using/access-management.md)用户权限的更多信息。
 
-## 如何确保 Campaign 的隐私合规性? {#how-to-be-gdpr-compliant-with-campaign-}
+## 如何确保Campaign的隐私合规性？ {#how-to-be-gdpr-compliant-with-campaign-}
 
 Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数据保护条例》(GDPR) 和《加州消费者隐私法案》(CCPA) 的隐私政策。
 
@@ -66,7 +66,7 @@ Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数�
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现 Campaign 工作区](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
-## 如何选择邮件的受众？ {#how-can-i-select-the-target-population-of-my-messages-}
+## 如何选择消息的受众？ {#how-can-i-select-the-target-population-of-my-messages-}
 
 凭借 Adobe Campaign，您可以使用不同策略来创建受众，并选择目标收件人。
 
@@ -90,7 +90,7 @@ Adobe Campaign 包括在不同的应用程序服务器模块之间编排所有�
 
 ## 如何发送 SMS 消息？ {#how-to-send-sms-messages-}
 
-在[此部分](../../delivery/using/sms-channel.md)中了解如何配置您的平台以及发送 SMS 消息。
+在[此部分](../../delivery/using/sms-channel.md)中了解如何配置您的平台以及发送短信消息。
 
 ## 如何发送推送通知？ {#how-to-send-push-notifications-}
 

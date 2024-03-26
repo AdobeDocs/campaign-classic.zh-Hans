@@ -9,14 +9,14 @@ role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 11%
+source-wordcount: '390'
+ht-degree: 7%
 
 ---
 
 # 创建投放模板{#creating-a-delivery-template}
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#delivery-template-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#delivery-template-video)
 
 ## 将现有投放转换为模板 {#converting-an-existing-delivery-to-a-template}
 
@@ -65,7 +65,7 @@ ht-degree: 11%
 
    ![](assets/delivery_template_5.png)
 
-1. 单击&#x200B;**保存**。您的模板现已准备就绪，可用于投放。
+1. 单击 **保存**. 您的模板现已准备就绪，可用于投放。
 
 
 ## 教程视频 {#delivery-template-video}

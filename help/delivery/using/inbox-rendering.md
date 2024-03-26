@@ -9,8 +9,8 @@ role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 9%
+source-wordcount: '842'
+ht-degree: 7%
 
 ---
 
@@ -47,9 +47,9 @@ Litmus是一款功能丰富的电子邮件验证和预览应用程序。 它允�
 1. 按如下方式设置外部帐户参数：
    * **[!UICONTROL Label]**：可投放性服务器信息
    * **[!UICONTROL Internal name]**：deliverabilityInstance
-   * **[!UICONTROL Type]**: HTTP
+   * **[!UICONTROL Type]**： HTTP
    * **[!UICONTROL Server]**： https://deliverability-app.neolane.net/deliverability
-   * **[!UICONTROL Encryption]**: 无
+   * **[!UICONTROL Encryption]**：无
    * 勾选 **[!UICONTROL Enabled]** 选项。
 
    ![](assets/s_tn_inbox_rendering_external-account.png)

@@ -5,13 +5,13 @@ description: 了解数据架构中的密钥管理
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
-source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
+exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
+source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # 架构中的密钥管理 {#management-of-keys}
 
@@ -184,7 +184,7 @@ Adobe Campaign架构中引用的序列(**NmsTrackingLogId** 例如)必须与返�
 
 浏览以下链接以了解更多信息：
 
-* [架构入门](about-schema-reference.md)
+* [模式入门](about-schema-reference.md)
 * [模式结构](schema-structure.md)
 * [数据库映射](database-mapping.md)
 * [链接管理](database-links.md)

@@ -3,7 +3,7 @@ product: campaign
 title: 测试和发送常见问题解答
 description: Campaign Classic 常见问题解答
 feature: Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
@@ -11,7 +11,7 @@ exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 97%
 
 了解在发送邮件前，如何在 Adobe Campaign 中执行测试和验证步骤。
 
-### 什么是投放分析? {#what-is-the-delivery-analysis-}
+### 什么是投放分析？ {#what-is-the-delivery-analysis-}
 
 投放分析是指计算目标群体以及准备投放内容的阶段。完成该阶段后便可发送投放内容了。查阅日志可确保所有事项都正确无误。
 
@@ -106,7 +106,7 @@ Adobe Campaign 随附了一组报告，用于监视投放并跟踪邮件。
 
 [单击此处了解有关内置报告的更多信息](../../reporting/using/delivery-reports.md)。
 
-### Adobe Campaign 如何确定和管理隔离地址？ {#how-does-adobe-campaign-qualify-and-manage-quarantine-addresses-}
+### Adobe Campaign如何确定和管理隔离地址？ {#how-does-adobe-campaign-qualify-and-manage-quarantine-addresses-}
 
 Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认情况下会将其地址已被隔离的收件人排除在外，不会将其设为目标。举例来说，信箱已满或地址不存在时，可以隔离某个电子邮件地址。
 

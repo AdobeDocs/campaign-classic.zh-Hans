@@ -3,7 +3,7 @@ product: campaign
 title: 挂钩
 description: 挂钩
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
@@ -50,7 +50,7 @@ ht-degree: 2%
 >
 >此 **xmlInteraction** 参数包含调用数据以及由现成查询加载的联系人的配置文件。
 
-**示例:**
+**示例：**
 
 ```
 // Call an external system to get additional data for the target
@@ -95,7 +95,7 @@ ht-degree: 2%
 * 已修改建议列表（挂接的第一个参数）
 * 已修改的交互节点
 
-**示例:**
+**示例：**
 
 ```
 var aReturnedProps = [];
@@ -144,7 +144,7 @@ return aReturnedProps;
 >
 >系统会检查输入参数和返回参数的选件ID是否相同。
 
-**示例:**
+**示例：**
 
 ```
 var product = getUrl("https://EXTERNAL_SYSTEM?offerCode=" + encodeURIComponent(xmlOffer.@code));

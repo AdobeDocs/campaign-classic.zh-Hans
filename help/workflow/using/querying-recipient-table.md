@@ -2,13 +2,13 @@
 product: campaign
 title: 查询收件人表
 description: 了解如何查询收件人表
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Query Editor, Workflows
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 

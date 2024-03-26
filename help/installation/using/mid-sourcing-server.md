@@ -3,7 +3,7 @@ product: campaign
 title: 在Campaign中安装中间源服务器
 description: 本节详细介绍Campaign中中间源服务器的安装和配置
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 2%
+source-wordcount: '1013'
+ht-degree: 1%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 2%
   </serverconf>
   ```
 
-  如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#enabling-processes)。
+  如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 * 步骤 **6**， **9** 和 **10** 没有必要。
 * 在步骤中 **12** 和 **13**，您需要在连接URL中指定8080端口（因为控制台直接与Tomcat通信，而不是通过Web服务器通信）。 URL将变为 `http://console.campaign.net:8080`. 步骤期间 **13**，选择 **[!UICONTROL Issue towards Mid-sourcing]** 包以及要安装的包。

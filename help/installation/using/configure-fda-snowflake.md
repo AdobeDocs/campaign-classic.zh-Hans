@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
 source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 8%
+source-wordcount: '499'
+ht-degree: 3%
 
 ---
 
@@ -115,13 +115,13 @@ ht-degree: 8%
 
 连接器支持以下选项：
 
-| Option | 说明 |
+| 选项 | 说明 |
 |---|---|
 | 工作模式 | 用于工作表的数据库模式 |
 | 仓库 | 要使用的默认仓库的名称。 它将覆盖用户的默认值。 |
-| 时区名称 | 默认情况下为空，这意味着使用Campaign Classic应用程序服务器的系统时区。 选项可用于强制使用时区会话参数。 <br>有关详细信息，请参见[此页面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
-| weekstart | WEEK_START会话参数。 默认设置为0。 <br>有关详细信息，请参见[此页面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)。 |
-| UseCachedResult | USE_CACHED_RESULTS会话参数。 默认设置为TRUE。 此选项可用于禁用Snowflake缓存的结果。 <br>有关详细信息，请参见[此页面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
+| 时区名称 | 默认情况下为空，这意味着使用Campaign Classic应用程序服务器的系统时区。 选项可用于强制使用时区会话参数。 <br>有关详细信息，请参见 [此页面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
+| weekstart | WEEK_START会话参数。 默认设置为0。 <br>有关详细信息，请参见 [此页面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
+| UseCachedResult | USE_CACHED_RESULTS会话参数。 默认设置为TRUE。 此选项可用于禁用Snowflake缓存的结果。 <br>有关详细信息，请参见 [此页面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
 | bulkthreads | 用于Snowflake批量加载器的线程数，线程越多，批量加载越大，性能越好。 默认设置为1。 根据计算机线程数，可以调整该数字。 |
 | chunkSize | 确定批量加载程序块的文件大小。 默认设置为128MB。 当与bulkThreads一起使用时，可以修改以获得更佳的性能。 更多并发活动线程意味着更好的性能。 <br>有关详细信息，请参见 [Snowflake文档](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
 | 阶段名称 | 预配置的内部阶段的名称。 它将用于批量加载，而不是创建新的临时阶段。 |

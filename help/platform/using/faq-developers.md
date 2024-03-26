@@ -3,15 +3,15 @@ product: campaign
 title: 开发人员常见问题解答
 description: 开发人员常见问题解答
 feature: Troubleshooting, Configuration
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 95%
+source-wordcount: '515'
+ht-degree: 92%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 作为一个开放式解决方案，Adobe Campaign 可进行自定义，并进行高级应用程序开发。
 
-## 什么是 Campaign 数据模型？  {#what-is-the-campaign-data-model}
+## 什么是Campaign数据模型？ {#what-is-the-campaign-data-model}
 
 Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间的交互组成。应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循 Adobe Campaign 特有的语法，称为模式。有关 Adobe Campaign 模式的详细信息，[请参阅本部分](../../configuration/using/about-schema-edition.md)。
 
@@ -65,6 +65,6 @@ Adobe Campaign 查询编辑器是一款功能强大的工具，可用于探索�
 
 [单击此处](../../platform/using/working-with-data-packages.md)了解如何使用数据包导入和导出 Campaign 配置。
 
-## 在哪里可以找到 Campaign Classic API 的列表？  {#where-can-i-find-the-list-of-campaign-classic-apis}
+## 在哪里可以找到Campaign ClassicAPI的列表？ {#where-can-i-find-the-list-of-campaign-classic-apis}
 
 所有 Campaign API（包括其完整说明）均在此[专用文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)中提供。

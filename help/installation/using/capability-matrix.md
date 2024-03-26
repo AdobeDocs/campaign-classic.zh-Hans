@@ -3,11 +3,11 @@ product: campaign
 title: Campaign本地、混合和托管功能矩阵
 description: 了解托管部署和内部部署之间的主要差异
 feature: Installation, Architecture
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '294'
 ht-degree: 28%
 
 ---
@@ -26,7 +26,7 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 
 | 功能 | 托管 | 混合 | 内部部署 | 详细信息 |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 配置 Campaign 服务器 | On-demand | 可用 | 可用 | [了解详情](../../installation/using/the-server-configuration-file.md) |
+| 配置Campaign服务器 | On-demand | 可用 | 可用 | [了解详情](../../installation/using/the-server-configuration-file.md) |
 | 电子邮件密件抄送 | On-demand | On-demand | 可用 | [了解详情](../../installation/using/email-archiving.md) |
 | 管理消息中心执行实例 | On-demand | On-demand | 可用 | [了解详情](../../message-center/using/about-transactional-messaging.md) |
 | 管理中间源平台 | On-demand | On-demand | 可用 | [了解详情](../../installation/using/mid-sourcing-server.md) |
@@ -55,4 +55,4 @@ Adobe Campaign提供 **联合数据访问** (FDA)选项，用于处理存储在�
 * [发行说明](../../rn/using/latest-release.md)
 * [Campaign Classic升级](../../rn/using/rn-overview.md)
 * [已弃用和已移除的功能](../../rn/using/deprecated-features.md)
-* [[!DNL Gold Standard] 版本](../../rn/using/gold-standard.md)
+* [[!DNL Gold Standard] 版](../../rn/using/gold-standard.md)

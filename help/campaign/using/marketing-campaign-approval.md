@@ -8,8 +8,8 @@ feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '2445'
-ht-degree: 2%
+source-wordcount: '2444'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 可以为营销活动模板、单独为每个营销活动或投放启用批准。
 
-在活动模板中选择所有需要审批的作业( **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]** 选项卡)，负责审批的操作员也是如此（除非未启用此选项，否则他们将收到通知）。 如需详细信息，请参阅[此部分](#approving-processes)。
+在活动模板中选择所有需要审批的作业( **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]** 选项卡)，负责审批的操作员也是如此（除非未启用此选项，否则他们将收到通知）。 如需详细信息，请参阅[此小节](#approving-processes)。
 
 可以覆盖使用此模板创建的每个活动的这些设置，也可以分别覆盖每个活动投放的这些设置：单击 **[!UICONTROL Properties]** 按钮，然后 **[!UICONTROL Approvals]** 选项卡。
 
@@ -170,7 +170,7 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
 
 对于直邮投放，Adobe Campaign操作员可以在提取文件发送到路由器之前查看该文件，如有必要，他们可以更改格式并重新执行提取。 请参阅 [批准提取文件](#approving-an-extraction-file).
 
-对于每个活动，您可以批准投放目标、内容(请参阅 [批准内容](#approving-content))和成本。 负责审批工作的 Adobe Campaign 操作员收到电子邮件通知后，可通过控制台或 Web 连接批准或拒绝批准相关请求。请参阅 [批准投放的步骤](#approving-processes).
+对于每个活动，您可以批准投放目标、内容(请参阅 [批准内容](#approving-content))和成本。 负责批准工作的Adobe Campaign操作员收到电子邮件通知后，可通过控制台或Web连接批准或拒绝批准相关请求。 请参阅 [批准投放的步骤](#approving-processes).
 
 完成这些验证阶段后，可以启动投放。 [了解详情](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)。
 

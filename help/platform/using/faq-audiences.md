@@ -3,15 +3,15 @@ product: campaign
 title: 用户档案和受众常见问题解答
 description: Campaign Classic 常见问题解答
 feature: Audiences, Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ba8bf610-cbac-41e9-8b6e-130deb8b97e2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 90%
+source-wordcount: '261'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 90%
 
 您可以使用 Campaign 客户端控制台导入或手动创建收件人。阅读[此部分](../../platform/using/about-profiles.md)，并了解如何在 Campaign 中创建和管理用户档案。
 
-## 如何导入用户档案? {#how-to-import-profiles-}
+## 如何导入用户档案？ {#how-to-import-profiles-}
 
 探索在数据库中[导入用户档案](../../platform/using/import-operations-samples.md)的轻松用例。
 

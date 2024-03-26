@@ -3,7 +3,7 @@ product: campaign
 title: Campaign投放设置配置
 description: 了解如何配置Campaign投放设置
 feature: Installation, Channel Configuration
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '482'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 6%
 
   >[!NOTE]
   >
-  >此 **名称服务器** 参数对于Windows中的安装至关重要。 对于Linux中的安装，必须将其留空。
+  >此 **nameServer** 参数对于Windows中的安装至关重要。 对于Linux中的安装，必须将其留空。
 
   ```
   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
@@ -74,7 +74,7 @@ MTA模块充当用于SMTP广播（端口25）的本机邮件传输代理。
 
    一个关联可以有多个不同的名称：要分隔它们，请使用 **；** 字符。
 
-   示例:
+   例如：
 
    ```
     IPAffinity name="mid.Server;WWserver;local.Server">

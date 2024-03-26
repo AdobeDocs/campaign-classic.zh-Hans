@@ -9,8 +9,8 @@ role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 1%
+source-wordcount: '1200'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 
   要使用的内容是以前创建的。 进程将涉及由传入事件传播的内容实例。 通过事件的“contentId”变量访问内容标识符。
 
-* **明确**
+* **显式**
 
   允许您选择之前创建的内容。
 

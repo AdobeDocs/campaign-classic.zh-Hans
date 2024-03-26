@@ -7,7 +7,7 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 ## 内容模型 {#content-model-5}
 
-枚举：==（help|值）
+明细列表：==(help| value)
 
 ## 属性 {#attributes-5}
 
@@ -57,27 +57,27 @@ ht-degree: 6%
    * 布尔值
    * 字节
    * CDATA
-   * 日期时间
+   * datetime
    * datetimetz
    * datetimenotz
-   * date
+   * 日期
    * DOMDocument
    * 圆顶元素
-   * 多次
+   * double
    * 枚举
-   * 浮点数
+   * float
    * html
    * int64
    * 链接
    * 长
    * 备忘
    * MNTOKEN
-   * percent
+   * 百分比
    * 主密钥
    * 短
    * 字符串
-   * 时间
-   * 时间跨度
+   * time
+   * timespan
    * uuid
 
 * **默认（字符串）**：默认值。 默认值也可以是枚举中定义的值之一。

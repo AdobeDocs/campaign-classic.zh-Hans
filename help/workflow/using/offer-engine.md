@@ -2,13 +2,13 @@
 product: campaign
 title: 优惠引擎
 description: 优惠引擎
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows, Interaction
 exl-id: 8db4b04f-7754-4a49-ab72-afc916888ebb
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 4%
+source-wordcount: '143'
+ht-degree: 9%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 4%
 配置查询后(请参阅此 [部分](query.md))：
 
 1. 添加并打开 **[!UICONTROL Offer engine]** 活动。
-1. 填写各种可用字段以指定对优惠引擎参数的调用（优惠空间、类别或主题、联系日期、要保留的优惠数量）。 引擎将根据这些参数自动计算要添加的选件。
+1. 填写各种可用字段以指定调用选件引擎参数（选件空间、类别或主题、联系日期、要保留的选件数）。 引擎将根据这些参数自动计算要添加的选件。
 
    >[!CAUTION]
    >

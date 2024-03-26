@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Campaign操作员入门
-description: 了解如何创建和管理营销活动用户
-badge: label="v7" type="信息性" tooltip="仅适用于Campaign Classicv7"
+description: 了解如何创建和管理活动用户
+badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1152'
 ht-degree: 2%
 
 ---
@@ -26,15 +26,15 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_list_operators.png)
 
-可以在现有LDAP目录上手动创建或映射运算符。
+操作符可以手动创建，也可以在现有LDAP目录上映射。
 
 有关创建运算符的完整过程，请参见 [此页面](#creating-an-operator).
 
-有关Adobe Campaign和LDAP集成的更多信息，请参阅 [此页面](../../installation/using/connecting-through-ldap.md).
+有关Adobe Campaign与LDAP集成的详细信息，请参阅 [此页面](../../installation/using/connecting-through-ldap.md).
 
 >[!IMPORTANT]
 >
->操作员需要链接到安全区域才能登录到实例。 有关Adobe Campaign中安全区域的详细信息，请参阅 [此页面](../../installation/using/security-zones.md).
+>操作员需要链接到安全区域才能登录到实例。 有关Adobe Campaign中安全区域的更多信息，请参阅 [此页面](../../installation/using/security-zones.md).
 
 用户还可以使用其Adobe ID直接连接到Adobe Campaign。 有关详细信息，请参见此 [ 页面](../../integrations/using/about-adobe-id.md)。
 
@@ -48,9 +48,9 @@ ht-degree: 2%
 
 1. 指定 **[!UICONTROL Identification parameters]** 用户的名称：其登录名、密码和名称。 操作员将使用登录名和密码登录到Adobe Campaign。 用户登录后，他们可以通过更改密码 **[!UICONTROL Tools > Change password]** 菜单。 操作员的电子邮件至关重要，因为它使操作员能够接收通知，例如，在处理审批时。
 
-   利用此部分，还可以将操作员链接到组织实体。 有关详情，请参阅 [此页面](../../distributed/using/about-distributed-marketing.md).
+   利用此部分，还可以将操作员链接到组织实体。 有关详细信息，请参见 [此页面](../../distributed/using/about-distributed-marketing.md).
 
-1. 选择授予操作员的权限 **[!UICONTROL Operator access rights]** 部分。
+1. 在中选择授予操作员的权限 **[!UICONTROL Operator access rights]** 部分。
 
    要向操作员分配权限，请单击 **[!UICONTROL Add]** 按钮，然后从可用组列表中选择一组操作员：
 
@@ -76,9 +76,9 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->此 **[!UICONTROL Session timeout]** 字段允许您调整FDA会话超时之前的延迟。 有关更多信息，请参阅 [关于联合数据访问](../../installation/using/about-fda.md).
+>此 **[!UICONTROL Session timeout]** 字段允许您调整FDA会话超时前的延迟。 有关详细信息，请参见 [关于联合数据访问](../../installation/using/about-fda.md).
 
-## 定义操作员的时区 {#time-zone-of-the-operator}
+## 定义运算符的时区 {#time-zone-of-the-operator}
 
 在 **[!UICONTROL General]** 选项卡中，您可以选择运算符的时区。 默认情况下，运算符在服务器时区工作。 但是，可以使用下拉列表选择其他时区。
 
@@ -86,11 +86,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->不同时区内的协作需要以UTC格式存储日期。 在以下上下文中，日期会以适当的时区进行转换：当日期以用户时区显示时、导入和导出文件时、计划电子邮件投放时、在工作流中计划活动时（计划程序、等待、时间约束等）
+>不同时区内的协作需要以UTC格式存储日期。 在以下上下文中，日期将以适当的时区进行转换：日期以用户时区显示时、导入和导出文件时、计划电子邮件投放时、在工作流中计划活动时（计划程序、等待、时间约束等）
 >
 >与这些上下文关联的限制和建议在Adobe Campaign文档的相关部分中介绍。
 
-此外， **[!UICONTROL Regional settings]** 下拉列表允许您选择显示日期和数字的格式。
+此外， **[!UICONTROL Regional settings]** 通过下拉列表，可选择显示日期和数字的格式。
 
 ## 添加权限 {#access-rights-options}
 
@@ -98,53 +98,53 @@ ht-degree: 2%
 
 ![](assets/operator_profile_security_options.png)
 
-此 **[!UICONTROL Edit the access parameters...]** 链接可让您访问以下选项：
+此 **[!UICONTROL Edit the access parameters...]** 链接允许您访问以下选项：
 
 * 此 **[!UICONTROL Disable account]** 选项允许您禁用操作员的帐户：此用户将不再访问Adobe Campaign。
 
-   >[!NOTE]
-   >
-   >即使他们的帐户被禁用，操作员仍可以从Campaign接收警报或通知。 要停止向此操作员发送Campaign通知，Adobe建议您从其用户档案中删除电子邮件地址。
+  >[!NOTE]
+  >
+  >即使其帐户被禁用，操作员仍可以从Campaign接收警报或通知。 要停止向此运营商发送Campaign通知，Adobe建议您从其用户档案中删除电子邮件地址。
 
 * 此 **[!UICONTROL Forbid access from the rich client]** 选项允许您将使用Adobe Campaign限制为 [Web访问](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) 或通过API：无法再访问Adobe Campaign客户端控制台。
 * 可以将安全区链接到操作员。 有关详细信息，请参见[此页面](../../installation/using/security-zones.md)。
 * 您还可以使用相应的链接定义受信任的IP掩码。
 
-   如果操作员的IP地址位于此列表中，则操作员无需输入密码即可连接到Adobe Campaign。
+  如果操作员的IP地址在此列表中，则操作员无需输入密码即可连接到Adobe Campaign。
 
-   您还可以指定一组IP地址，这些地址将被授权在不使用密码的情况下连接，如以下示例中所示：
+  您还可以指定一组IP地址，这些地址将被授权无需密码即可连接，如以下示例所示：
 
-   ![](assets/operator_trustip.png)
+  ![](assets/operator_trustip.png)
 
-   >[!NOTE]
-   >
-   >要安全地访问您的平台，必须谨慎使用此选项。
+  >[!NOTE]
+  >
+  >要安全地访问您的平台，必须谨慎使用此选项。
 
-* 此 **[!UICONTROL Restrict to information found in sub-folders of:]** 选项允许您限制归属于文件夹运算符的权限。 只有在该选项中指定的节点的子文件夹对用户可见：
+* 此 **[!UICONTROL Restrict to information found in sub-folders of:]** 选项允许您限制归属于文件夹操作员的权限。 只有在该选项中指定的节点的子文件夹对用户可见：
 
-   ![](assets/s_ncs_user_restrictions_operators.png)
+  ![](assets/s_ncs_user_restrictions_operators.png)
 
-   >[!IMPORTANT]
-   >
-   >这是一个非常严格的限制，必须小心使用。 使用此类权限登录的操作员只能查看指定文件夹的内容，而无法通过资源管理器访问树的任何其他节点。 但是，根据此操作员有权访问的功能（例如：工作流），用户可以显示通常存储在无法访问节点中的数据。
+  >[!IMPORTANT]
+  >
+  >这是一个非常严格的限制，必须谨慎使用。 使用此类型权限登录的操作员只能查看指定文件夹的内容，而不能通过资源管理器访问树的任何其他节点。 但是，根据此操作员有权访问的功能（例如：工作流），用户可以显示通常存储在无法访问中的节点中的数据。
 
 ### 检查设置 {#check-settings}
 
-此 **[!UICONTROL Audit]** 选项卡用于查看与运算符相关的信息。 根据操作员的干预区域中定义的设置，自动将各种选项卡添加到。
+此 **[!UICONTROL Audit]** 选项卡允许您查看与运算符相关的信息。 各种选项卡会根据操作员的干预区域中定义的设置自动添加到。
 
 您可以访问：
 
 * 链接到运算符的文件夹的权限列表。
 
-   ![](assets/operator_folder_permissions.png)
+  ![](assets/operator_folder_permissions.png)
 
-   >[!NOTE]
-   >
-   >有关更多信息，请参阅 [文件夹访问管理](#folder-access-management).
+  >[!NOTE]
+  >
+  >有关详细信息，请参见 [文件夹访问管理](#folder-access-management).
 
 * 操作员审批日志。
 
-   ![](assets/operator_profile_validations.png)
+  ![](assets/operator_profile_validations.png)
 
 * 他们订阅的讨论区列表。
 * 日历中的活动。
@@ -152,15 +152,15 @@ ht-degree: 2%
 
 ## 默认运算符 {#default-operators}
 
-Adobe Campaign使用具有默认配置的用户档案的技术操作员：管理员（“管理员”）、计费（“计费”）、监控、Web应用程序代理(“webapp”)等。 其中一些操作取决于平台上安装的应用程序和选项：例如，“central”和“local”运算符仅在安装了分布式营销选项的情况下可见。
+Adobe Campaign使用具有默认配置的用户档案的技术操作员：管理员（“管理员”）、计费（“计费”）、监控、Web应用程序代理(“webapp”)等。 其中一些取决于平台上安装的应用程序和选项：例如，“central”和“local”运算符仅在安装了“Distributed Marketing”（分布式营销）选项时才可见。
 
 >[!IMPORTANT]
 >
 >默认情况下，当平台返回信息消息时，会通知这些技术操作员。 我们强烈建议向他们提供联系电子邮件。
 >
->为确保Web应用程序正确运行，我们还建议不要为“webapp”运算符定义特定的区域设置。
+>为确保Web应用程序正常运行，我们还建议不要为“webapp”运算符定义特定的区域设置。
 
-默认情况下，“webapp”技术操作员具有指定的ADMINISTRATION权限，这可能会导致安全风险。 要解决此问题，我们建议删除此权限。 操作步骤：
+默认情况下，“webapp”技术操作员具有指定的“管理”权限，这可能会导致安全风险。 要解决此问题，我们建议删除此权限。 操作步骤：
 
 1. 从 **[!UICONTROL Administration > Access management > Named rights]** 节点，单击 **[!UICONTROL New]** 创建权限并将其命名为WEBAPP。
 
@@ -168,13 +168,13 @@ Adobe Campaign使用具有默认配置的用户档案的技术操作员：管理
 
    有关已命名权限的详情，请参见 [已命名权限](#named-rights) 部分。
 
-1. 从 **[!UICONTROL Administration > Access management > Operators]** 节点，选择Web应用程序代理运算符(“webapp”)。
+1. 从 **[!UICONTROL Administration > Access management > Operators]** 节点，选择Web应用程序代理操作员(“webapp”)。
 
-   选择 **[!UICONTROL Edit]** 选项卡，然后 **[!UICONTROL Access rights]** 制表并从列表中删除命名权限。
+   选择 **[!UICONTROL Edit]** 选项卡，然后 **[!UICONTROL Access rights]** 制表符并从列表中删除命名权限。
 
    ![](assets/s_ncs_default_operators_webapp_admin_right.png)
 
-   单击 **[!UICONTROL Add]** 并选择您刚刚创建的WEBAPP，然后保存您所做的更改。
+   单击 **[!UICONTROL Add]** 并选择您刚刚创建的WEBAPP，然后保存更改。
 
    ![](assets/s_ncs_default_operators_webapp_webapp_right.png)
 
@@ -182,7 +182,7 @@ Adobe Campaign使用具有默认配置的用户档案的技术操作员：管理
 
    ![](assets/s_ncs_default_operators_webapp_folder_access.png)
 
-   有关对树文件夹的修改权限的详情，请参见 [文件夹访问管理](#folder-access-management) 部分。
+   有关修改树文件夹的权限的详情，请参见 [文件夹访问管理](#folder-access-management) 部分。
 
 >[!NOTE]
 >

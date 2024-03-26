@@ -2,13 +2,13 @@
 product: campaign
 title: SQL 数据管理
 description: 了解有关SQL数据管理工作流活动的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 4%
+source-wordcount: '419'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 
 
-此 **sql数据管理** 活动允许您编写自己的SQL脚本来创建和填充工作表。
+此 **SQL数据管理** 通过活动，您可以编写自己的SQL脚本来创建和填充工作表。
 
 ## 先决条件 {#prerequisites}
 
@@ -24,13 +24,13 @@ ht-degree: 4%
 
 * 该活动仅适用于远程数据源。 此 **[!UICONTROL FDA]** 因此，必须在实例上安装（联合数据访问）软件包。 [了解详情](../../installation/using/about-fda.md)。
 
-   有关更多信息（取决于您的Campaign版本），请参阅以下章节：
+  有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-   ![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文档](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+  ![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans)
 
-* 出站模式必须存在于数据库中，并且链接到FDA数据库。
+* 出站模式必须存在于数据库中并链接到FDA数据库。
 * 执行工作流的操作员必须具有 **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** 指明权限。 [了解详情](../../platform/using/access-management-named-rights.md)。
 
 ## 配置SQL数据管理活动 {#configuring-the-sql-data-management-activity}
@@ -46,7 +46,7 @@ ht-degree: 4%
 
    >[!CAUTION]
    >
-   >SQL脚本编写者负责确保SQL脚本正常运行，并且其引用（字段名称等） 与出站模式一致。
+   >SQL脚本编写者负责确保SQL脚本正常工作及其引用（字段名称等） 符合出站模式。
 
    如果要加载现有SQL代码，请选择 **[!UICONTROL The SQL script is contained in an entity stored in the database]** 选项。 SQL脚本必须创建并存储在 **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** 菜单。
 
@@ -57,22 +57,22 @@ ht-degree: 4%
    利用活动，可在脚本中使用以下变量：
 
    * **activity.tableName**：出站工作表的SQL名称。
-   * **task.incomingTransitionByName(&#39;name&#39;)。tableName**：传入过渡所承载要使用的工作表的SQL名称（过渡由其名称标识）。
+   * **task.incomingTransitionByName(&#39;name&#39;)。tableName**：要使用的传入过渡所承载的工作表的SQL名称（过渡由其名称标识）。
 
-      >[!NOTE]
-      >
-      >(&#39;name&#39;)值对应于 **[!UICONTROL Name]** 字段。
+     >[!NOTE]
+     >
+     >(&#39;name&#39;)值对应于 **[!UICONTROL Name]** 字段。
 
-1. 如果SQL脚本已经包含用于创建出站工作表的命令，请取消选择 **[!UICONTROL Automatically create work table]** 选项。 否则，工作流执行后将自动创建工作表。
+1. 如果SQL脚本已包含用于创建出站工作表的命令，请取消选择 **[!UICONTROL Automatically create work table]** 选项。 否则，工作流执行后将自动创建工作表。
 1. 单击 **[!UICONTROL Ok]** 以确认活动配置。
 
-活动现已配置。 它可以在工作流中执行。
+现已配置该活动。工作流中可以随时执行该操作。
 
 >[!CAUTION]
 >
->执行活动后，出站过渡记录计数仅具有指示性。 它可能会因SQL脚本的复杂性级别而有所不同。
+>执行活动后，叫客过渡记录计数仅为指示性的。 它可能会根据SQL脚本的复杂性级别而有所不同。
 >  
->如果活动重新启动，则无论脚本的执行状态如何，都会从头开始执行整个脚本。
+>如果活动重新启动，则将从头开始执行整个脚本，而不管其执行状态如何。
 
 ## SQL脚本示例 {#sql-script-samples}
 

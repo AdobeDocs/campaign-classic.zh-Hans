@@ -8,7 +8,7 @@ role: User, Developer, Data Engineer
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '978'
 ht-degree: 8%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 8%
 
 1. 从 **[!UICONTROL Application variables]** 选项卡，您的 **[!UICONTROL Application variables]** 都会自动添加。 它们允许您定义通知行为，例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
 
-   如需详细信息，请参阅[此部分](configuring-the-mobile-application.md)。
+   如需详细信息，请参阅[此小节](configuring-the-mobile-application.md)。
 
 1. 从 **[!UICONTROL Advanced]** 选项卡，可以编辑以下常规选项：
 
@@ -165,7 +165,7 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >应用程序变量必须在移动应用程序的代码中定义，并在服务创建期间输入。 如需详细信息，请参阅[此部分](configuring-the-mobile-application.md)。
+   >应用程序变量必须在移动应用程序的代码中定义，并在服务创建期间输入。 如需详细信息，请参阅[此小节](configuring-the-mobile-application.md)。
 
    ![](assets/nmac_ios_10.png)
 

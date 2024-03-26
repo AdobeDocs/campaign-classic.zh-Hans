@@ -11,7 +11,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '567'
 ht-degree: 98%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 98%
 
    ![](assets/privacy-ccpa-3.png)
 
-1. 单击资源管理器的 **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** 节点。在“通用包” **[!UICONTROL Recipient (nms)]** 下，添加一个 `<input>` 元素，并使用步骤 2 中定义的相对路径作为 xpath 值。有关识别表单的更多信息，请参阅[此小节](../../configuration/using/identifying-a-form.md)。
+1. 单击探索工具的 **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** 节点。在“通用包” **[!UICONTROL Recipient (nms)]** 下，添加一个 `<input>` 元素，并使用步骤 2 中定义的相对路径作为 xpath 值。有关识别表单的更多信息，请参阅[此小节](../../configuration/using/identifying-a-form.md)。
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>

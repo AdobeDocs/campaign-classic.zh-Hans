@@ -52,6 +52,6 @@ ht-degree: 8%
 
 1. 选择 **[!UICONTROL Enable default transition]** 以添加过渡，以防不满足其中一个配置的条件。
 
-   如需详细信息，请参阅[此部分](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display)。
+   如需详细信息，请参阅[此小节](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display)。
 
 A **[!UICONTROL Test]** 活动可以放置在图表的开头，以根据上下文或操作员个人资料等条件限定显示。

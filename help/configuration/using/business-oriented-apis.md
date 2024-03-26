@@ -8,8 +8,8 @@ role: Data Engineer, Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 4%
+source-wordcount: '636'
+ht-degree: 3%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 4%
 
 业务API特定于每种类型的对象。 它们会影响：
 
-* 投放:
+* 投放：
 
    * 创建投放操作，请参阅 [提交投放(nms：delivery)](#submitdelivery--nms-delivery-)，
    * 发送营销活动（开始、暂停、停止、发送校样），
    * 恢复投放日志。
 
-* 工作流:
+* 工作流：
 
    * 启动工作流，
    * 验证进程等。
@@ -83,7 +83,7 @@ ht-degree: 4%
 
 ### SOAP消息示例 {#example-of-soap-messages}
 
-* 查询:
+* 查询：
 
   ```
   <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -101,7 +101,7 @@ ht-degree: 4%
   </SOAP-ENV:Envelope>
   ```
 
-* 响应:
+* 响应：
 
   ```
   <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -146,7 +146,7 @@ ht-degree: 4%
 
 ### SOAP消息示例 {#example-of-soap-messages-1}
 
-查询:
+查询：
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -162,7 +162,7 @@ ht-degree: 4%
 </SOAP-ENV:Body>
 ```
 
-响应:
+响应：
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>

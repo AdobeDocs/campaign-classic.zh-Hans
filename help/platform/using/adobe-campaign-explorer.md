@@ -3,15 +3,15 @@ product: campaign
 title: 使用Adobe Campaign资源管理器
 description: 了解如何使用Campaign Explorer
 feature: Overview
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 34%
+source-wordcount: '454'
+ht-degree: 15%
 
 ---
 
@@ -19,17 +19,17 @@ ht-degree: 34%
 
 
 
-可通过工具栏图标访问 Adobe Campaign Explorer。它可用于访问 Adobe Campaign、所有 Adobe Campaign 功能、配置屏幕以及部分平台元素的更详细视图。
+可通过工具栏图标访问Adobe Campaign资源管理器。 它可用于访问 Adobe Campaign、所有 Adobe Campaign 功能、配置屏幕以及部分平台元素的更详细视图。
 
-**[!UICONTROL Explorer]** 工作区分成三个区域：
+此 **[!UICONTROL Explorer]** 工作区分为三个区域：
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - 树状结构**：您可以个性化树状结构的内容（添加、移动或删除节点）。此程序仅适用于专家级用户。有关详细信息，请参见  [本节](#about-navigation-hierarchy).)。
+**1 — 树**：您可以个性化树的内容（添加、移动或删除节点）。 此过程仅适用于专家用户。 有关详细信息，请参见  [本节](#about-navigation-hierarchy).)。
 
-**2 - 列表**：您可以过滤列表、执行搜索、添加信息或排序数据。[了解详情](adobe-campaign-ui-lists.md)。
+**2 — 列表**：您可以筛选此列表、运行搜索、添加信息或排序数据。 [了解详情](adobe-campaign-ui-lists.md)。
 
-**3 - 详细信息**：您可以显示所选元素的详细信息。您可以使用右上角的图标以全屏形式显示这些信息。
+**3 — 详细信息**：可显示选定元素的详细信息。 您可以使用右上角的图标以全屏形式显示这些信息。
 
 ## 文件夹和导航树{#about-navigation-hierarchy}
 
@@ -78,7 +78,7 @@ ht-degree: 34%
 >
 >Adobe Campaign不支持小于1600x900像素的分辨率。
 
-在 **[!UICONTROL Explorer]** 工作区中，如果出现部分 **[!UICONTROL Details]** 区域被截断，可通过区域顶端的箭头或单击 **[!UICONTROL Enlarge]** 按钮展开该区域。
+在 **[!UICONTROL Explorer]** 工作区，如果 **[!UICONTROL Details]** 区域似乎已被截断，请使用区域顶部的箭头展开它，或单击 **[!UICONTROL Enlarge]** 按钮。
 
 ![](assets/s_ncs_user_resolution.png)
 

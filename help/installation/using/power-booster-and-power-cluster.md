@@ -3,14 +3,14 @@ product: campaign
 title: Power Booster 和 Power Cluster
 description: Power Booster 和 Power Cluster
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '416'
 ht-degree: 7%
 
 ---
@@ -84,7 +84,7 @@ Power Booster和Power Cluster选项可用于以下应用程序：
  </tbody> 
 </table>
 
-## 推荐 {#recommendations}
+## 推荐做法 {#recommendations}
 
 * 执行实例必须专用于服务。 您无法为尚未订阅的服务安装包。 例如，如果您订阅 **Power Booster** 的选项 **消息中心** 服务，您只能安装 **[!UICONTROL Execution of transactional messages]** 包进行调试。 请核实您的许可协议。
 * 由于专用实例（或集群）是Adobe Campaign实例，因此建议案与主实例的建议案相同。 有关详细信息，请参见 [本文档](../../production/using/foreword.md).

@@ -107,7 +107,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->如果报告打算以Excel格式导出，我们建议不要使用复杂的HTML格式。 有关详细信息，请参见 [导出报告](../../reporting/using/actions-on-reports.md#exporting-a-report).
+>如果报告预定以Excel格式导出，我们建议不要使用复杂的HTML格式。 有关详细信息，请参见 [导出报告](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 A **[!UICONTROL Page]** 可以包括以下元素：
 

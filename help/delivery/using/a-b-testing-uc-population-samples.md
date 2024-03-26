@@ -9,8 +9,8 @@ role: User
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 6%
+source-wordcount: '186'
+ht-degree: 4%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 6%
 
   ![](assets/use_case_abtesting_createrecipients_003.png)
 
-## 配置拆分活动 {#configuring-the-split-activity}
+## 配置“拆分”活动 {#configuring-the-split-activity}
 
 利用此活动，可创建多个群体：接收投放A的群体、接收投放B的群体和其余群体。 通过使用随机选择，您可以只定向每次投放的部分群体。
 
@@ -80,4 +80,4 @@ ht-degree: 6%
 
      ![](assets/use_case_abtesting_createrecipients_013.png)
 
-您现在可以创建这两个投放模板。 [了解详情](a-b-testing-uc-delivery-templates.md)).
+您现在可以创建这两个投放模板。 [了解详情](a-b-testing-uc-delivery-templates.md))。

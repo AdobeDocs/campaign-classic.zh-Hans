@@ -8,8 +8,8 @@ feature: Typology Rules, Campaigns
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 20%
+source-wordcount: '470'
+ht-degree: 17%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 20%
 
 Campaign Optimization是一个Adobe Campaign模块，可让您控制、过滤和监控投放的发送。 为了避免活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这可确保所发送的邮件符合客户的需求与期望以及公司的通信政策。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#typologies-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#typologies-video)
 
 >[!NOTE]
 >
@@ -56,10 +56,10 @@ Campaign Optimization是一个Adobe Campaign模块，可让您控制、过滤和
 
    可通过访问分类 **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** 节点。
 
-1. 配置投放以使用创建的分类。 如需详细信息，请参阅[此部分](applying-rules.md#applying-a-typology-to-a-delivery)。
+1. 配置投放以使用创建的分类。 如需详细信息，请参阅[此小节](applying-rules.md#applying-a-typology-to-a-delivery)。
 1. 通过活动模拟测试和控制行为。 有关活动模拟的详细信息，请参阅 [本节](campaign-simulations.md).
 
-在投放准备期间，当满足条件时，将排除收件人。 您可以检查日志以监视排除情况。有关压力类型规则的示例用例，请参见 [此页面](pressure-rules.md#use-cases-on-pressure-rules).
+在投放准备期间，当满足条件时，将排除收件人。 您可以检查日志以监控排除情况。 有关压力类型规则的示例用例，请参见 [此页面](pressure-rules.md#use-cases-on-pressure-rules).
 
 ## 教程视频 {#typologies-video}
 

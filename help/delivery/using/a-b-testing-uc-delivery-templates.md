@@ -10,13 +10,13 @@ exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 16%
+ht-degree: 15%
 
 ---
 
 # AB测试：创建投放模板 {#step-3--creating-two-delivery-templates}
 
-现在，我们要创建两个投放模板。 每个模板都将在以下字段中引用： **[!UICONTROL Email delivery]** 活动链接到 **[!UICONTROL Split]** 活动。 如需详细信息，请参阅[此部分](about-templates.md)。
+现在，我们要创建两个投放模板。 每个模板都将在以下字段中引用： **[!UICONTROL Email delivery]** 活动链接到 **[!UICONTROL Split]** 活动。 如需详细信息，请参阅[此小节](about-templates.md)。
 
 1. 浏览至 **[!UICONTROL Resources > Delivery template]** 文件夹。
 1. 复制 **[!UICONTROL Email]** 投放模板。

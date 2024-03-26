@@ -3,12 +3,12 @@ product: campaign
 title: 技术说明 — 更新您的环境以使用IMS连接到Adobe Campaign
 description: Campaign - IMS更新
 feature: Technote, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 9%
+source-wordcount: '569'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 
 
-2021年6月30日，已对 [AdobeIdentity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS)登录功能，这可能会影响您继续使用Adobe Campaign的能力。 了解如何确保继续不间断地使用Adobe Campaign Classic v7。
+2021年6月30日，已对 [AdobeIdentity Management System](https://helpx.adobe.com/cn/enterprise/using/identity.html) (IMS)登录功能，这可能会影响您继续使用Adobe Campaign的能力。 了解如何确保继续不间断地使用Adobe Campaign Classic v7。
 
 ## 更改了哪些内容？
 

@@ -8,8 +8,8 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 1%
+source-wordcount: '1230'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-这些条件采用XTK表达式语法(例如 **ctx.recipient.@电子邮件 !=“”** 或 **ctx.recipient.@status==“0”**)。 默认情况下，所有字段均可见。
+这些条件采用XTK表达式语法(例如 **ctx.recipient.@email！=“”** 或 **ctx.recipient.@status==“0”**)。 默认情况下，所有字段均可见。
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ ht-degree: 1%
 
 ### 插入个性化块 {#inserting-a-personalization-block}
 
-此 **个性化块** 选项允许您将动态和个性化的块插入到内容中。 例如，您可以添加徽标或问候语。 它不适用于文本类型块。
+此 **个性化块** 选项允许您将动态块和个性化块插入到内容中。 例如，您可以添加徽标或问候语。 它不适用于文本类型块。
 
 ![](assets/dce_toolbar_textblock_persoblock.png)
 

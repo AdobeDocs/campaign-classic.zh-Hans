@@ -9,8 +9,8 @@ role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 2%
+source-wordcount: '656'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 2%
   <%@ include view="MirrorPage" %>  
   ```
 
-* 镜像页面 URL:
+* 镜像页面URL：
 
   ```
   View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 此说明允许访问对所有收件人都保持不变的投放参数。
 
-语法:
+语法：
 
 ```
 <%@ value object="myObject" xpath="@myField" index="1" %>
@@ -134,7 +134,7 @@ ht-degree: 2%
 
 此指令允许对投放中加载的对象数组进行迭代，以跟踪与对象相关的各个链接。
 
-语法:
+语法：
 
 ```
 <%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
@@ -147,7 +147,7 @@ ht-degree: 2%
 * **[!DNL index]** （可选）：如果xpath不是“。” 而对象本身是一个数组，即对象的项索引（从0开始）。
 * **[!DNL item]** （可选）：可通过foreach循环中的&lt;%@值访问的新对象的名称。 在架构中具有链接名称的默认值。
 
-示例:
+例如：
 
 在投放属性/个性化中，加载项目数组，以及收件人和项目之间的关系表。
 

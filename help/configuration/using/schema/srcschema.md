@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 内容模型 {#content-model-14}
 
-srcSchema：==(属性 |创建者 |数据 |元素 |明细列表 |帮助 |界面 |方法 |修改者)
+srcSchema：==(属性 | createdby | 数据 | 元素 | 明细列表 | 帮助 | 界面 | 方法 | modifiedby)
 
 ## 属性 {#attributes-14}
 

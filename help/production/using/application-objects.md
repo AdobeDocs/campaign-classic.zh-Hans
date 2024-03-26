@@ -3,15 +3,15 @@ product: campaign
 title: 应用程序对象
 description: 应用程序对象
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 4%
+source-wordcount: '473'
+ht-degree: 5%
 
 ---
 
@@ -41,7 +41,7 @@ Adobe Campaign使用必须相应地使用的ID序列： **xtkNewId**. 如果序�
 
 ## 投放 {#deliveries}
 
-实例上的投放随时应少于1000个。 大量投放会占用数据库空间并产生问题。 每天创建10个以上投放的实例必须根据业务需求进行检查。 考虑使用连续投放来减少投放。 如需详细信息，请参阅[此部分](../../workflow/using/continuous-delivery.md)。
+实例上的投放随时应少于1000个。 大量投放会占用数据库空间并产生问题。 每天创建10个以上投放的实例必须根据业务需求进行检查。 考虑使用连续投放来减少投放。 如需详细信息，请参阅[此小节](../../workflow/using/continuous-delivery.md)。
 
 应从实例中清除超过两年的投放。
 

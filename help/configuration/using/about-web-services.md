@@ -8,8 +8,8 @@ role: Data Engineer, Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 5%
+source-wordcount: '649'
+ht-degree: 4%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Campaign API在应用程序内的JavaScript中以及应用程序外的SOAP
 
 在使用Adobe Campaign API之前，您需要熟悉以下主题：
 
-* Javascript
+* JavaScript
 * SOAP协议
 * Adobe Campaign数据模型
 

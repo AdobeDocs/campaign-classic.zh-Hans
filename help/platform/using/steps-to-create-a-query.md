@@ -11,7 +11,7 @@ topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '868'
 ht-degree: 2%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 2%
 
 * 此 **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** 函数允许您“分组依据”并选择已分组的内容（“具有”）。 此函数应用于输出列中的所有字段。 例如，此选项允许您对输出列的所有选择进行分组，并恢复特定类型的信息，例如介于35和50之间的收件人。
 
-  如需详细信息，请参阅[此部分](../../workflow/using/querying-using-grouping-management.md)。
+  如需详细信息，请参阅[此小节](../../workflow/using/querying-using-grouping-management.md)。
 
 * 此 **[!UICONTROL Remove duplicate rows (DISTINCT)]** 函数允许您删除在输出列中获得的相同结果的重复项。 例如，如果选择输出列中的“姓氏”、“名字”和“电子邮件”字段进行人口普查，则数据相同的联系人将被删除，因为这意味着同一联系人已在数据库中输入多次：只考虑一个结果。
 
@@ -125,7 +125,7 @@ ht-degree: 2%
 此 **[!UICONTROL Transformation]** 列用于将列标签更改为大写或小写。 选择列并单击 **[!UICONTROL Transformation]** 列。 您可以选择：
 
 * **[!UICONTROL Switch to lower case]**，
-* **[!UICONTROL Switch to upper case]**,
+* **[!UICONTROL Switch to upper case]**，
 * **[!UICONTROL First letter in upper case]**.
 
 ![](assets/query_editor_nveau_42.png)

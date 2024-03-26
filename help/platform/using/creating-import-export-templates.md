@@ -12,7 +12,7 @@ exl-id: 1180e664-5ead-4d5d-b1c3-6fe397c1f3a2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 22%
+ht-degree: 7%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 22%
 
 导入和导出模板存储在中 **[!UICONTROL Resources > Templates > Job templates]** Adobe Campaign树的目录。
 
-默认情况下，此目录中存在三个导入模板和一个导出模板。不得更改它们。
+默认情况下，此目录中存在三个导入模板和一个导出模板。 不得更改它们。
 
 * 本机模板 **[!UICONTROL Import denylist]** 列入阻止列表已配置为导入添加到的电子邮件地址列表。
 

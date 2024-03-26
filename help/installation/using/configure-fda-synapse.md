@@ -3,15 +3,15 @@ product: campaign
 title: 配置对Synapse的访问
 description: 了解如何在FDA中配置对Synapse的访问权限
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 2%
+source-wordcount: '742'
+ht-degree: 3%
 
 ---
 
@@ -131,7 +131,7 @@ ht-degree: 2%
 
 ## DebianAzure synapse {#azure-debian}
 
-**先决条件:**
+**先决条件：**
 
 * 您需要具有root权限才能安装ODBC驱动程序。
 * 安装msodbcsql包需要curl。 如果未安装该软件，请运行以下命令：
@@ -238,6 +238,6 @@ ht-degree: 2%
 
 连接器支持以下选项：
 
-| Option | 说明 |
+| 选项 | 说明 |
 |---|---|
 | 身份验证 | 连接器支持的身份验证类型。 当前支持的值： ActiveDirectoryMSI。 </br>有关更多信息，请参阅 [SQL文档](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) （连接字符串n°8示例）。 |

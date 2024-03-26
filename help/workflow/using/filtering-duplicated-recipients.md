@@ -2,13 +2,13 @@
 product: campaign
 title: 筛选重复的收件人
 description: 了解如何筛选重复的收件人
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 exl-id: 7cbabbae-375f-4336-9afa-6356f37a79d0
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 4%
+source-wordcount: '154'
+ht-degree: 8%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 
 
-在本例中，我们希望筛选在投放中出现两次或更多次的收件人，以恢复重复的用户档案。
+在本例中，我们要筛选在投放中出现两次或更多次的收件人，以恢复重复的用户档案。
 
 要创建此示例，请应用以下步骤：
 
@@ -25,11 +25,11 @@ ht-degree: 4%
 
    ![](assets/query_recipients_1.png)
 
-1. 定义以下筛选条件，以定位投放日志中存在的收件人。 选择 **收件人投放日志(broadlog)** 在 **表达式** 列，选择 **存在，例如** 在 **运算符** 列。
+1. 定义以下筛选条件，以定向投放日志中存在的收件人。 选择 **收件人投放日志(broadlog)** 在 **表达式** 列，选择 **存在，例如** 在 **运算符** 列。
 
    ![](assets/query_recipients_2.png)
 
-1. 定义以下筛选条件以定向投放。 选择 **[!UICONTROL Internal name]** 在“表达式”列和 **[!UICONTROL equal to]** 在运算符列中。
+1. 定义以下筛选条件以定向投放。 选择 **[!UICONTROL Internal name]** 在“表达式”列中和 **[!UICONTROL equal to]** 在“运算符”列中。
 1. 在值列中，添加目标投放的内部名称。
 
    ![](assets/query_recipients_3.png)
@@ -38,4 +38,4 @@ ht-degree: 4%
 
    ![](assets/query_recipients_4.png)
 
-叫客过渡包含投放中针对的重复收件人。
+叫客过渡包含投放中定向的重复收件人。

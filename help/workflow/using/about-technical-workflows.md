@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 4%
+source-wordcount: '1711'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 4%
 
 有关如何监控技术工作流的详细信息，请参阅 [专用部分](monitoring-technical-workflows.md).
 
-## 技术工作流的列表 {#list-technical-workflows}
+## 技术工作流列表 {#list-technical-workflows}
 
 | 技术工作流 | 包 | 说明 |
 |------|--------|-----------|
@@ -39,16 +39,16 @@ ht-degree: 4%
 | **计算Twitter统计数据** (statsTwitter) | 社交网络（社交营销） — 仅限Campaign v7 | 此工作流用于计算链接到X上的转推和访问(以前称为Twitter)的统计数据。 |
 | **营销活动作业** (operationMgt) | 营销活动（营销活动） | 此工作流用于管理营销活动（启动项定位、文件提取等）的作业。 它还创建与循环和定期活动相关的工作流。 |
 | **为HeatMap服务收集数据** (collectDataHeatMapService) | 默认安装 | 此工作流可检索HeatMap服务所需的数据。 |
-| **收集隐私请求** (collectPrivacyRequests) | 隐私数据保护规定 | 此工作流会生成存储在Adobe Campaign中的收件人数据，并在隐私请求屏幕中提供下载。 |
+| **收集隐私请求** (collectPrivacyRequests) | 隐私数据保护条例 | 此工作流会生成存储在Adobe Campaign中的收件人数据，并在隐私请求屏幕中提供下载。 |
 | **成本计算** (budgetMgt) | 营销活动（营销活动） | 此工作流可开始计算预算、计划、方案、营销策划、投放和任务中的费用和成本行。 |
 | **数据库清理** (cleanup) | 投放 | 此工作流是数据库维护工作流：它根据统计和进程进行不同的计算，并根据部署助理中定义的配置从数据库中删除过时的数据。 默认情况下，此工作流于每日凌晨4点触发。 有关详细信息，请参见[此页面](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic)。 |
 | **删除被阻止的LINE用户** (deleteBlockedLineUsersV2) | LINE 渠道 | 此工作流可确保在阻止LINE正式帐户180天后，删除LINE V2用户的数据。 |
-| **删除隐私请求数据** (deletePrivacyRequestsData) | 隐私数据保护规定 | 此工作流会删除存储在Adobe Campaign中的收件人数据。 |
+| **删除隐私请求数据** (deletePrivacyRequestsData) | 隐私数据保护条例 | 此工作流会删除存储在Adobe Campaign中的收件人数据。 |
 | **投放指标** (deliveryIndicator) | 中间源平台 | 此工作流可更新投放的投放跟踪指示器。 默认情况下，此工作流每小时触发一次。 |
 | **讨论论坛进程** (newsgroupMgt) | 营销资源(MRM) | 此工作流用于管理来自讨论论坛的通知投放。 在收到批准信号时触发 |
 | **分布式营销流程** (centralLocalmgt) | 中央/本地营销（分布式营销） | 此工作流开始处理与使用分布式营销模块相关。 它可启动本地营销策划的创建，并管理与订单和营销策划包可用性相关的通知。 |
 | **事件清除** (webAnalyticsPurgeWebEvents) | 网站分析连接器 | 利用此工作流，可根据生命周期字段中配置的时段，从数据库字段删除每个事件。 |
-| **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流可将受众作为共享受众/区段导出。 您可在所用的不同 Adobe Experience Cloud 解决方案中使用这些受众。 |
+| **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流可将受众作为共享受众/区段导出。 这些受众可在您使用的其他Adobe Experience Cloud解决方案中使用。 |
 | **预测** （预测） | 投放 | 此工作流会分析保存在临时日历中的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。 |
 | **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流可更新优惠建议多维数据集的完全聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合可捕获以下维度：渠道、投放、营销选件和日期。 然后，使用优惠建议多维数据集根据优惠生成报表。 有关多维数据集的更多信息，请参阅 [本节](../../reporting/using/ac-cubes.md). |
 | **已转换联系人的标识** (webAnalyticsFindConverted) | 网站分析连接器 | 此工作流对再营销活动后完成购买的网站访客编制索引。 可以在再营销效率报表中访问通过此工作流恢复的数据（请参阅此页面）。 |
@@ -65,7 +65,7 @@ ht-degree: 4%
 | **NMAC选择退出管理** (mobileAppOptOutMgt) | 移动应用程序渠道 | 此工作流可更新移动设备上的取消订阅通知。 从凌晨1点到午夜，每6小时触发一次。 有关更多详细信息，请参阅 [本节](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |
 | **优惠通知** (offerMgt) | 投放 | 此工作流可将已批准的优惠以及优惠目录中包含的每个类别部署到在线环境中。 |
 | **暂停的工作流清理** (cleanupPausedWorkflows) | 投放 | 此工作流会分析严重性设置为正常的暂停工作流，并在暂停时间过长时触发警告和通知。 一个月后，暂停的技术工作流将无条件停止。 默认情况下，此工作流于每周一凌晨5点触发。 有关更多信息，请参阅 [处理暂停的工作流](monitoring-workflow-execution.md#handling-of-paused-workflows). |
-| **隐私请求清理** (cleanupPrivacyRequest) | 隐私数据保护规定 | 此工作流会清除90天以前的访问请求文件。 |
+| **隐私请求清理** (cleanupPrivacyRequest) | 隐私数据保护条例 | 此工作流会清除90天以前的访问请求文件。 |
 | **处理批处理事件** (batchEventsProcessing) | 事务性消息执行（消息中心 — 执行） | 利用此工作流，可在将批量事件与消息模板关联之前将其放入队列中。 |
 | **处理实时事件** (rtEventsProcessing) | 事务性消息执行（消息中心 — 执行） | 通过此工作流，在将实时事件与消息模板关联之前，您可以先将它们放入队列中。 |
 | **建议同步** (propositionSynch) | 使用执行实例控制优惠引擎 | 此工作流在营销实例和用于交互的执行实例之间同步建议。 |

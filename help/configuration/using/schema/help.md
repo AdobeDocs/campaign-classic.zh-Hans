@@ -25,7 +25,7 @@ help：==EMPTY
 
 ## 父项 {#parents-6}
 
-`<srcschema>`  ,  `<element>`   ,   `<attribute>`    ,    `<enumeration>`     ,     `<value>`      ,     `<param />`,      `<method />`
+`<srcschema>`  ，  `<element>`   ，   `<attribute>`    ，    `<enumeration>`     ，     `<value>`      ，     `<param />`，      `<method />`
 
 ## 子项 {#children-6}
 

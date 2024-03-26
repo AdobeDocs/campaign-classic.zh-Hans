@@ -9,8 +9,8 @@ role: User
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 3%
+source-wordcount: '449'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 3%
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. 使用标签、代码和描述标识投放。 如需详细信息，请参阅[此部分](steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
+1. 使用标签、代码和描述标识投放。 如需详细信息，请参阅[此小节](steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
 1. 单击 **[!UICONTROL Continue]** 以确认此信息并显示消息配置窗口。
 
 ## 定义短信内容 {#defining-the-sms-content}

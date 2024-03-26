@@ -7,8 +7,8 @@ hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 69%
+source-wordcount: '657'
+ht-degree: 64%
 
 ---
 
@@ -73,14 +73,14 @@ ht-degree: 69%
     </td>
     <td valign="top">
         <ul>
-        <li><a href="production/using/build-upgrade.md">升级到最新版本</a></li>
+        <li><a href="production/using/build-upgrade.md">升级到最新内部版本</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">内部版本升级常见问题解答</a></li>
         <li><a href="delivery/using/about-delivery-monitoring.md">监测投放</a></li>
         <li><a href="delivery/using/understanding-quarantine-management.md">了解隔离管理</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">安全和隐私检查清单</a></li>
         <li><a href="platform/using/privacy-management.md">隐私和同意管理</a></li>
         <li><a href="platform/using/steps-to-create-a-query.md">设计查询</a></li>
-        <li><a href="workflow/using/querying-recipient-table.md">查询样例</a></li>
+        <li><a href="workflow/using/querying-recipient-table.md">查询示例</a></li>
         <li><a href="workflow/using/building-a-workflow.md">构建工作流</a></li>
         </ul>
     </td>

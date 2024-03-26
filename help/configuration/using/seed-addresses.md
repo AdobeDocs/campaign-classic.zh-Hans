@@ -24,7 +24,7 @@ ht-degree: 8%
 
 有关使用种子地址的详细信息，请参阅 [本节](../../delivery/using/about-seed-addresses.md).
 
-## 实施 {#implementation}
+## 实现 {#implementation}
 
 此 **nms：seedMember** 现成的架构和链接表单经过扩展可用于客户配置，以引用所有必需的字段。 架构定义包含详细说明其配置模式的注释。
 
@@ -45,7 +45,7 @@ ht-degree: 8%
 
 应用以下步骤：
 
-1. 创建 **nms：seedMember** 架构。 如需详细信息，请参阅[此部分](../../configuration/using/extending-a-schema.md)。
+1. 创建 **nms：seedMember** 架构。 如需详细信息，请参阅[此小节](../../configuration/using/extending-a-schema.md)。
 1. 在此新扩展中，在的根目录下添加新元素 **[!UICONTROL seedMember]** ，并使用以下参数：
 
    ```

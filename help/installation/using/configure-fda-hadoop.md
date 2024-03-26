@@ -3,15 +3,15 @@ product: campaign
 title: 配置对Hadoop的访问权限
 description: 了解如何在FDA中配置对Hadoop的访问权限
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 1%
+source-wordcount: '590'
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 1%
 
    * **[!UICONTROL Database]**：如果未在DSN中指定数据库的名称。 如果在DSN中指定，它可以留空
 
-   * **[!UICONTROL Time zone]**: 服务器时区
+   * **[!UICONTROL Time zone]**：服务器时区
 
    ![](assets/hadoop3.png)
 

@@ -12,7 +12,7 @@ exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
 source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
 source-wordcount: '1517'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -491,7 +491,7 @@ A **计算字符串** 是一个XPath表达式，用于构造一个字符串，�
 
 浏览以下链接以了解更多信息：
 
-* [架构入门](about-schema-reference.md)
+* [模式入门](about-schema-reference.md)
 * [数据库映射](database-mapping.md)
 * [链接管理](database-links.md)
 * [密钥管理](database-keys.md)

@@ -9,7 +9,7 @@ exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 13%
+ht-degree: 10%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 13%
 * 字段及其在XML结构中的位置：仅填写应用程序中使用的字段，
 * 链接：如果与基的其他表有连接。
 
-## 实施 {#implementation}
+## 实现 {#implementation}
 
 要创建相应的方案，请应用以下阶段：
 
@@ -44,7 +44,7 @@ ht-degree: 13%
 
    架构必须使用 `<srcSchema>` 根元素，以便不生成表创建SQL脚本。
 
-**示例** :
+**示例** ：
 
 ```
 <srcSchema name="recipient" namespace="cus" view="true">

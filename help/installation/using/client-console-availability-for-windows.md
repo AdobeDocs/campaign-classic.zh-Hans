@@ -3,7 +3,7 @@ product: campaign
 title: 适用于 Windows 的客户端控制台可用性
 description: 适用于 Windows 的客户端控制台可用性
 feature: Installation, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 7%
+source-wordcount: '345'
+ht-degree: 6%
 
 ---
 

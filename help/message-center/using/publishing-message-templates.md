@@ -3,15 +3,15 @@ product: campaign
 title: 发布消息模板
 description: 了解Adobe Campaign Classic中的事务性消息模板发布和取消发布
 feature: Transactional Messaging, Message Center, Templates
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 1d55f42b-64bf-4b1f-a317-c1f7456aa5b3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 2%
+source-wordcount: '502'
+ht-degree: 3%
 
 ---
 

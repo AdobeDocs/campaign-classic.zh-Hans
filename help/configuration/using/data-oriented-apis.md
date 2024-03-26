@@ -8,7 +8,7 @@ role: Data Engineer, Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1871'
 ht-degree: 1%
 
 ---
@@ -444,7 +444,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 </queryDef>
 ```
 
-返回值:
+返回：
 
 ```
 <recipient My_folder="Recipients" First name ="John" lastName="Doe"/>
@@ -460,7 +460,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 
 ### SOAP消息示例 {#example-of-soap-messages}
 
-* 查询:
+* 查询：
 
   ```
   <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -485,7 +485,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
   </SOAP-ENV:Envelope>
   ```
 
-* 响应:
+* 响应：
 
   ```
   <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -579,7 +579,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 
 ### 链接示例 {#example-on-links}
 
-#### 示例 1 {#example-1}
+#### 示例1 {#example-1}
 
 根据文件夹的内部名称(@name)将其与收件人关联。
 
@@ -597,7 +597,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 >
 >对文件夹元素输入的“none”操作定义了对文件夹的协调，无需更新或插入。
 
-#### 示例 2 {#example-2}
+#### 示例2 {#example-2}
 
 从收件人更新公司（在“cus：company”架构中链接的表）：
 
@@ -607,7 +607,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 </recipient>
 ```
 
-#### 示例 3 {#example-3}
+#### 示例3 {#example-3}
 
 使用组关系表(“nms：rcpGrpRel”)将收件人添加到组：
 
@@ -629,7 +629,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 
 ### SOAP消息示例 {#example-of-soap-messages-1}
 
-* 查询:
+* 查询：
 
   ```
   <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -645,7 +645,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
   </SOAP-ENV:Envelope>
   ```
 
-* 响应:
+* 响应：
 
   ```
   <?xml version='1.0' encoding='ISO-8859-1'?>

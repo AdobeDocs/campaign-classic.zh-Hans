@@ -3,12 +3,12 @@ product: campaign
 title: 事务性消息传递入门
 description: 详细了解Adobe Campaign Classic事务型消息传递的工作原理和关键步骤
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 6%
+source-wordcount: '647'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 * **什么时候到期？** 由于此消息包含重要信息，因此用户希望实时发送该消息。 因此，触发的事件与收到消息之间的延迟必须非常短。
 
-* **为什么这很重要？** 通常，事务型消息的打开率较高。 因此，它应进行谨慎设计，因为它在定义客户关系时可能会对客户行为产生强烈的影响。
+* **为什么这很重要？** 通常，事务型消息的打开率较高。 因此，应仔细设计，因为它在定义客户关系时可能会对客户行为产生强烈的影响。
 
 * **例如？** 它可能是创建帐户后的欢迎消息、确认订单已发运的消息、发票、确认密码更改的消息、客户浏览您的网站后的通知、产品不可用通信、帐户对帐单等。
 

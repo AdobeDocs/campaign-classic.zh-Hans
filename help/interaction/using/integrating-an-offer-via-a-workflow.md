@@ -3,7 +3,7 @@ product: campaign
 title: 通过工作流集成优惠
 description: 通过工作流集成优惠
 feature: Interaction, Offers, Workflows
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
@@ -11,7 +11,7 @@ exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 3%
 配置查询后(请参阅 [工作流指南](../../workflow/using/query.md))：
 
 1. 添加并打开扩充活动。
-1. 在 **[!UICONTROL Enrichment]** 选项卡中，选择 **[!UICONTROL Add data]**。
+1. 在 **[!UICONTROL Enrichment]** 选项卡，选择 **[!UICONTROL Add data]**.
 1. 选择 **[!UICONTROL An offer proposition]** 在要添加的数据类型中。
 
    ![](assets/int_enrichment_offer2.png)

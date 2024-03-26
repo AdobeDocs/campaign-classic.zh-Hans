@@ -3,12 +3,12 @@ product: campaign
 title: 多维数据集入门
 description: 多维数据集入门
 feature: Reporting, Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 24%
+source-wordcount: '343'
+ht-degree: 26%
 
 ---
 
@@ -46,4 +46,4 @@ ht-degree: 24%
 1. 使用立方中计算和聚合的数据构建查询。
 1. 识别群体并在列表中引用它们。
 
-了解如何在中创建和使用多维数据集 [Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target="_blank"}.
+了解如何在中创建和使用多维数据集 [Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=zh-Hans){target="_blank"}.

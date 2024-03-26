@@ -3,7 +3,7 @@ product: campaign
 title: 日志精度
 description: 日志精度
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: troubleshooting
 exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '333'
 ht-degree: 4%
 
 ---
@@ -51,8 +51,8 @@ Adobe Campaign可以使用两个级别的日志进行操作：
    >[!NOTE]
    >
    >如果您使用 **tracefilter：&#42;**，所有日志类型均已激活：ncm、rdr、nms、jst、timing、wdbc、ldap、soap、xtk、xtkquery、session、xtkwriter、network、pop3、inmail\
-   >最有用的日志类型包括： **wdbc** （显示所有SQL查询）、 **soap** （显示所有SOAP调用）， **ldap** （在验证后显示所有LDAP查询）， **xtkquery** （显示所有querydef列表）。\
-   >您可以单独使用它们(**tracefilter：soap，wdbc** 例如)。 您还可以全部激活它们，然后选择排除某些其他节点： **-tracefilter：&#42;，！soap**
+   最有用的日志类型包括： **wdbc** （显示所有SQL查询）、 **soap** （显示所有SOAP调用）， **ldap** （在验证后显示所有LDAP查询）， **xtkquery** （显示所有querydef列表）。\
+   您可以单独使用它们(**tracefilter：soap，wdbc** 例如)。 您还可以全部激活它们，然后选择排除某些其他节点： **-tracefilter：&#42;，！soap**
 
    检查是否确实发生了错误，然后以正常方式重新启动该过程：
 
@@ -62,7 +62,7 @@ Adobe Campaign可以使用两个级别的日志进行操作：
 
 >[!IMPORTANT]
 >
->这些命令的日志存储在模块的日志文件中。
+这些命令的日志存储在模块的日志文件中。
 
 以下是特定于Web模块的示例。 其它模块按上述方式运行。
 
@@ -86,12 +86,12 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 
 >[!NOTE]
 >
->此 **追踪文件** 模式允许您保存日志。 在上面的示例中，日志保存在 **var/`<instance-name>`/mta_debug.log** 和 **var/default/web_debug.log** 文件。
+此 **追踪文件** 模式允许您保存日志。 在上面的示例中，日志保存在 **var/`<instance-name>`/mta_debug.log** 和 **var/default/web_debug.log** 文件。
 
 >[!IMPORTANT]
 >
->在Windows中，不要添加LD_PRELOAD选项。 以下命令就足够了：\
->nlserver web -tomcat -verbose -tracefilter：&#42;
+在Windows中，不要添加LD_PRELOAD选项。 以下命令就足够了：\
+nlserver web -tomcat -verbose -tracefilter：&#42;
 
 检查问题是否再次出现，然后重新启动模块：
 

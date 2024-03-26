@@ -8,7 +8,7 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '613'
 ht-degree: 4%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 4%
 
    ![](assets/reporting_custom_js.png)
 
-要在客户端正常执行，引用的脚本必须使用JavaScript编写，并且需要与常用浏览器兼容。 如需详细信息，请参阅[此部分](../../web/using/web-forms-answers.md)。
+要在客户端正常执行，引用的脚本必须使用JavaScript编写，并且需要与常用浏览器兼容。 如需详细信息，请参阅[此小节](../../web/using/web-forms-answers.md)。
 
 ### 添加脚本活动 {#script-activity}
 
@@ -67,7 +67,7 @@ if( ctx.@_historyId.toString().length == 0 )
 
 ## 添加URL参数 {#defining-additional-settings}
 
-此 **[!UICONTROL Parameters]** 选项卡 [报表属性](../../reporting/using/properties-of-the-report.md) 可让您定义报表的其他设置：这些设置将在调用期间传递到URL中。
+此 **[!UICONTROL Parameters]** 选项卡 [报表属性](../../reporting/using/properties-of-the-report.md) 允许您定义报表的其他设置：这些设置将在调用期间传递到URL。
 
 >[!CAUTION]
 >

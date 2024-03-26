@@ -3,7 +3,7 @@ product: campaign
 title: 回滚到以前的版本
 description: 了解如何回滚到以前的版本
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: rollback
@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 5120a7c4-3760-48d9-94da-d587d333e8d8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 0%
+source-wordcount: '131'
+ht-degree: 5%
 
 ---
 

@@ -10,7 +10,7 @@ exl-id: db65e83e-276f-4163-98c3-3658a48acffc
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '978'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->为了避免出现性能问题，建议每封电子邮件不要附加多个附件。可以从以下位置配置建议的阈值 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
+>为了避免出现性能问题，建议每封电子邮件不要包含多个附件。 可以从以下位置配置建议的阈值 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
 
 可能存在两种情况：
 

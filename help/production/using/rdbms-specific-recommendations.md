@@ -11,8 +11,8 @@ topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
 source-git-commit: 624978901943b4c74f50c20298c9596f73b25b1b
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 3%
+source-wordcount: '1249'
+ht-degree: 1%
 
 ---
 
@@ -146,7 +146,7 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 >* Adobe建议您添加特定于数据模型的表，这些表可能会进行重大更新。 这种情况可能适用于 **NmsRecipient** 如果您有大量的每日数据复制流程，
 >* VACUUM语句将锁定表，在进行维护时会暂停某些进程。
 >* 对于非常大的表（通常大于5 Gb）， VACUUM FULL语句可能会变得非常低效，并且需要很长时间。 Adobe不建议将其用于 **YyynmsBroadLogXxx** 表格。
->* 此维护操作可以通过Adobe Campaign工作流来实施，使用 **[!UICONTROL SQL]** 活动。 如需详细信息，请参阅[此小节](../../workflow/using/architecture.md)。确保安排在活动时间较短时进行维护，以免与备份窗口发生冲突。
+>* 此维护操作可以通过Adobe Campaign工作流来实施，使用 **[!UICONTROL SQL]** 活动。 有关详细信息，请参见 [本节](../../workflow/using/architecture.md). 确保安排在活动时间较短时进行维护，以免与备份窗口发生冲突。
 >
 
 ### 重建数据库 {#rebuilding-a-database}

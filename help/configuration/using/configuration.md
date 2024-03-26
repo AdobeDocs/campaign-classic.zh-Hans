@@ -8,8 +8,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 1%
+source-wordcount: '1193'
+ht-degree: 0%
 
 ---
 
@@ -97,7 +97,7 @@ A **`<command>`** 元素可以包含 **`<command>`** 子元素。 在这种情�
 
 初始化时，表单上下文可从以下位置更新： **`<enter>`** 标记之前。 有关此标记的详细信息，请参阅有关输入表单的文档。
 
-**示例**:
+**示例**：
 
 * 用于启动“xtk：import”表单的全局命令的声明：
 
@@ -270,7 +270,7 @@ A **`<command>`** 元素可以包含 **`<command>`** 子元素。 在这种情�
 
 初始化时，可以通过以下方式更新表单上下文： **`<enter>`** 标记之前。 有关此标记的详细信息，请参阅输入表单文档。
 
-**示例**:
+**示例**：
 
 ```
 <command desc="Cancel execution of the job" enabledIf="EV(@status, 'running')"

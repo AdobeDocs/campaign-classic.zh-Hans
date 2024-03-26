@@ -2,12 +2,12 @@
 product: campaign
 title: 消息中心（控制）
 description: 消息中心（控制）
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 12%
+source-wordcount: '152'
+ht-degree: 5%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 12%
 
 
 
-下面详细介绍的工作流计划每小时运行一次。 它随一起安装 **消息中心 — 控制** 默认模块。
+下面详细介绍的工作流计划每小时运行一次。 它与 **消息中心 — 控制** 默认模块。
 
 
-有关更多信息（取决于您的Campaign版本），请参阅以下章节：
+有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-![](assets/do-not-localize/v7.jpeg)[  Campaign v7 文档](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 
 <table> 

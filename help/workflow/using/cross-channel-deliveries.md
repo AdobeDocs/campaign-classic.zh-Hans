@@ -8,7 +8,7 @@ exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 10%
 
 * [电子邮件](../../delivery/using/about-email-channel.md)
 * [直邮](../../delivery/using/about-direct-mail-channel.md)
-* [手机](../../delivery/using/sms-channel.md)
+* [移动](../../delivery/using/sms-channel.md)
 * [X(以前称为Twitter)](../../social/using/about-social-marketing.md)
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [Android](../../delivery/using/create-notifications-android.md)
@@ -33,7 +33,7 @@ ht-degree: 10%
 
 在下面的示例中，我们将创建一个工作流，以向推送通知订阅者发送电子邮件或短信，然后在一周后发送推送通知。 操作步骤：
 
-1. 创建营销策划.
+1. 创建营销策划。
 1. 在 **[!UICONTROL Targeting and workflows]** 选项卡，添加 **[!UICONTROL Query]** 到您的工作流。
 1. 配置查询。 例如，在本例中，我们选择订阅了推送通知的收件人作为目标维度。
 

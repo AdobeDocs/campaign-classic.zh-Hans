@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 关于 Campaign 内置报告
-description: 关于 Campaign 内置报告
+title: 关于Campaign内置报告
+description: 关于Campaign内置报告
 feature: Reporting, Monitoring
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
@@ -9,11 +9,11 @@ exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
-# 关于 Campaign 内置报告{#about-campaign-built-in-reports}
+# 关于Campaign内置报告{#about-campaign-built-in-reports}
 
 
 

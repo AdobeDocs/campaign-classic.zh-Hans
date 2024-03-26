@@ -10,8 +10,8 @@ content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 2%
+source-wordcount: '1209'
+ht-degree: 1%
 
 ---
 
@@ -64,7 +64,7 @@ function processPipelineMessage(xmlTrigger) {}
 * **[!UICONTROL @offset]** 是消息的“指针”。 它指示消息在队列中的顺序。
 * **[!UICONTROL @partition]** 是队列中的消息容器。 偏移相对于分区。 <br>队列中有大约15个分区。
 
-示例:
+例如：
 
 ```
 <trigger offset="1500435" partition="4" triggerId="LogoUpload_1_Visits_from_specific_Channel_or_ppp">
@@ -86,7 +86,7 @@ function processPipelineMessage(xmlTrigger) {}
 
 * **[!UICONTROL timeGMT]** 可以在Adobe Analytics端以纪元格式包含触发器的时间（自UTC时间01/01/1970以来的秒数）。
 
-示例:
+例如：
 
 ```
 {
@@ -205,11 +205,11 @@ triggerType字段标识数据来源的触发器。
 
 | 属性 | 类型 | 标签 | 说明 |
 |:-:|:-:|:-:|:-:|
-| pipelineEventId | 长整型 | 主键 | 触发器的内部主键。 |
+| pipelineEventId | 长 | 主键 | 触发器的内部主键。 |
 | 数据 | 备注 | 触发数据 | XML格式的触发器数据的完整内容。 用于调试和审核。 |
 | triggerType | 字符串50 | TriggerType | 触发器的名称。 标识客户在网站上的行为。 |
 | shopper_id | 字符串32 | shopper_id | 购物者的内部标识符。 由协调工作流设置。 如果为0，则表示在Campaign中未知该客户。 |
-| shopper_key | 长整型 | shopper_key | 购物者的Analytics捕获的外部标识符。 |
+| shopper_key | 长 | shopper_key | 购物者的Analytics捕获的外部标识符。 |
 | 已创建 | 日期时间 | 已创建 | 在Campaign中创建事件的时间。 |
 | lastModified | 日期时间 | 上次修改时间 | 上次在Adobe中修改事件的时间。 |
 | 时间GMT | 日期时间 | 时间戳 | 在Analytics中生成事件的时间。 |

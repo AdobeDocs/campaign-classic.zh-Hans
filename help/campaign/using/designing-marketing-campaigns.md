@@ -8,8 +8,8 @@ feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 23%
+source-wordcount: '445'
+ht-degree: 21%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 23%
 
 Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。 Adobe Campaign就像一个营销策略的统一订单和执行中心。 有关详细信息，请参见 [访问活动](../../distributed/using/accessing-campaigns.md) 和 [创建营销活动](../../campaign/using/setting-up-marketing-campaigns.md).
 
-此外， **营销资源管理(MRM)** 模块允许您在协作模式下控制营销活动，方法是提供相关的任务、预算和营销资源的完整管理和实时跟踪。 利用营销资源管理，您可以优化和规范对内部和外部流程、资源和营销活动以及第三方关系（代理、打印机等）的管理。 如需详细信息，请参阅[此部分](../../mrm/using/about-marketing-resource-management.md)。
+此外， **营销资源管理(MRM)** 模块允许您在协作模式下控制营销活动，方法是提供相关的任务、预算和营销资源的完整管理和实时跟踪。 利用营销资源管理，您可以优化和规范对内部和外部流程、资源和营销活动以及第三方关系（代理、打印机等）的管理。 如需详细信息，请参阅[此小节](../../mrm/using/about-marketing-resource-management.md)。
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。
 
   活动工作流包含与所有工作流相同的活动，但特定于活动。 它允许您为所有可用渠道创建和配置投放。
 
-  如需详细信息，请参阅[此部分](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。
+  如需详细信息，请参阅[此小节](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)。
 
 * **目标**
 
@@ -61,7 +61,7 @@ Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。
 
   投放概要是投放的结构化描述。 每次投放都可以引用投放概要，其中包含相关选件、要附加的文档或商店链接等。 可以根据所选的投放概要在投放中引用某个选件。
 
-  如需详细信息，请参阅[此部分](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
+  如需详细信息，请参阅[此小节](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
 ## 教程 {#video}
 

@@ -9,7 +9,7 @@ exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 13%
+ht-degree: 4%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 13%
 
 
 
-Adobe Campaign 提供响应管理附加功能，可让您衡量营销活动的成功性和盈利能力，还可提供跨通信渠道（电子邮件、移动设备、直邮等）的优惠建议。
+Adobe Campaign提供了响应管理附加功能，可让您衡量营销活动的成功性和盈利能力，还可提供跨通信渠道（电子邮件、移动设备、直邮等）的优惠建议。
 
 ## 假设验证 {#hypothesis-concept}
 

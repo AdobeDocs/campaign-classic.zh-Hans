@@ -3,12 +3,12 @@ product: campaign
 title: 收集数据进行分析
 description: 收集数据进行分析
 feature: Reporting, Monitoring
-badge: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 

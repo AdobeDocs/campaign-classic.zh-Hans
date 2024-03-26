@@ -3,14 +3,14 @@ product: campaign
 title: ACS连接器入门
 description: ACS Connector原则和数据周期
 feature: ACS Connector
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2045'
-ht-degree: 2%
+source-wordcount: '2043'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +45,7 @@ ACS连接器用于连接Adobe Campaign v7和Adobe Campaign Standard。 它是Cam
 >
 >ACS Connector根据许可协议包含在Campaign v7中。 要使用ACS Connector，请确保可在Campaign v7和Campaign Standard之间切换。 如果您不确定您的版本及其包含的功能，请联系您的管理员。
 
-## 印刷色 {#process}
+## 进程 {#process}
 
 ### 数据复制 {#data-replication}
 
@@ -107,7 +107,7 @@ Campaign Standard和Campaign v7可以使用复制的用户档案来定位营销�
 
 您选择的发送投放应用程序、Campaign v7或Campaign Standard不影响计费。 计费信息在Campaign v7和Campaign Standard之间进行协调。 因此，如果您使用两个应用程序将投放内容发送给同一收件人，则仍会将其计为一个活动用户档案。
 
-## 实施 {#implementation}
+## 实现 {#implementation}
 
 ACS连接器存在两种类型的实施。 这两项工作始终由Adobe Campaign咨询团队执行。
 
@@ -170,7 +170,7 @@ ACS连接器存在两种类型的实施。 这两项工作始终由Adobe Campaig
    <td> <strong>内部名称</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 源 Id<br /> </td> 
+   <td> 源ID<br /> </td> 
    <td> @sourceId<br /> </td> 
   </tr> 
   <tr> 
@@ -183,7 +183,7 @@ ACS连接器存在两种类型的实施。 这两项工作始终由Adobe Campaig
   </tr> 
   <tr> 
    <td> 电子邮件<br /> </td> 
-   <td> @电子邮件<br /> </td> 
+   <td> @email<br /> </td> 
   </tr> 
   <tr> 
    <td> 姓氏<br /> </td> 
@@ -198,7 +198,7 @@ ACS连接器存在两种类型的实施。 这两项工作始终由Adobe Campaig
    <td> @middleName<br /> </td> 
   </tr> 
   <tr> 
-   <td> 手机<br /> </td> 
+   <td> 移动设备<br /> </td> 
    <td> @mobilePhone<br /> </td> 
   </tr> 
   <tr> 
@@ -218,7 +218,7 @@ ACS连接器存在两种类型的实施。 这两项工作始终由Adobe Campaig
    <td> @blackList<br /> </td> 
   </tr> 
   <tr> 
-   <td> 不再电子邮件联系<br /> </td> 
+   <td> 不再通过电子邮件联系<br /> </td> 
    <td> @blackListEmail<br /> </td> 
   </tr> 
   <tr> 
@@ -234,15 +234,15 @@ ACS连接器存在两种类型的实施。 这两项工作始终由Adobe Campaig
    <td> @fax<br /> </td> 
   </tr> 
   <tr> 
-   <td> 地址 1（公寓）<br /> </td> 
+   <td> 地址1（公寓）<br /> </td> 
    <td> [location/@address1]<br /> </td> 
   </tr> 
   <tr> 
-   <td> 地址 2<br /> </td> 
+   <td> 地址2<br /> </td> 
    <td> [location/@address2]<br /> </td> 
   </tr> 
   <tr> 
-   <td> 地址 3（号码和街道）<br /> </td> 
+   <td> 地址3（号码和街道）<br /> </td> 
    <td> [location/@address3]<br /> </td> 
   </tr> 
   <tr> 

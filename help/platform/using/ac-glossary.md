@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '5978'
-ht-degree: 4%
+source-wordcount: '5959'
+ht-degree: 2%
 
 ---
 
@@ -51,7 +51,7 @@ Learn more about [ACS Connector](../../integrations/using/acs-connector-principl
 
 +++**活动配置文件**
 
-如果用户档案在过去 12 个月中通过任何渠道被定向或与其联系，则视为处于活动状态。根据您的合同，您的每个Campaign实例都会配置特定数量的活动用户档案，并对这些活动用户档案进行计数以计费。
+如果用户档案在过去12个月中通过任何渠道被定向或与其联系，则视为处于活动状态。 根据您的合同，您的每个Campaign实例都会配置特定数量的活动用户档案，并对这些活动用户档案进行计数以计费。
 
 了解有关 [活动用户档案](../../platform/using/about-profiles.md#active-profiles).
 +++
@@ -263,7 +263,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *上下文：分布式营销*
 
-分布式营销附加组件为Campaign操作员提供了一个协作工作区，用于在中央实体（总部、营销部门等）和本地实体（商店、区域代理等）之间 实施协作营销活动。此合作基于共享工作区，称为 **Campaign包列表**，向本地实体提供集中创建的活动模板和实例。
+分布式营销附加组件为Campaign操作员提供了一个协作工作区，用于在中央实体（总部、营销部门等）和本地实体（商店、区域代理等）之间 和地方实体（销售点、区域机构等）之间实施协作营销活动。此合作基于共享工作区，称为 **Campaign包列表**，向本地实体提供集中创建的活动模板和实例。
 
 了解有关 [分布式营销](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -311,7 +311,7 @@ E4X是Adobe Campaign Classic中使用的Javascript版本。 它有时称为ECMAS
 了解有关 [互动](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**电子邮件密件抄送**
++++**电子邮件密送**
 
 电子邮件密件抄送功能会以EML格式发送相应已投放电子邮件的精确副本，该副本将保存到专用的密件抄送电子邮件地址，发件人可以在外部系统中处理和存档电子邮件。
 
@@ -371,7 +371,7 @@ An engine call is a server call that starts real-time processing on server side 
 了解有关 [疲劳管理](../../campaign-opt/using/pressure-rules.md).
 +++
 
-+++**联合数据访问 (FDA)**
++++**联合数据访问(FDA)**
 
 联合数据访问支持扩展客户端数据模型以包括第三方数据库。 它将自动检测目标表的结构，并使用来自SQL源的数据。 您可以访问外部数据，而无需更改Adobe Campaign数据的结构。
 
@@ -708,7 +708,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 了解有关 [优惠权重](../../interaction/using/creating-an-offer.md#offer-weight).
 +++
 
-+++**操作员**
++++**运算符**
 
 操作员是具有登录和执行操作权限的Adobe Campaign用户。 操作员与操作员组相关联，并继承这些组的权限。 您还可以将命名权限直接归因于运算符。
 
@@ -745,14 +745,14 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 了解有关 [资源包导出/导入](../../platform/using/working-with-data-packages.md).
 +++
 
-+++**面板**
++++**调色板**
 
 工作流面板显示了可添加到工作流的可用活动。 此组件以选项卡形式显示，其中工作流活动按其使用进行逻辑分组。 面板上可用的活动由已安装在Campaign实例中的加载项以及显示工作流的上下文决定。
 
 了解有关 [调色板](../../workflow/using/building-a-workflow.md#adding-and-linking-activities).
 +++
 
-+++**性能监测**
++++**性能监控**
 
 性能监视信息显示在“监视”选项卡上。 它显示底层系统的度量，如内存和CPU使用率、SMTP服务器统计信息、服务器进程及其他相关信息。
 
@@ -905,7 +905,7 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 了解有关 [服务](../../delivery/using/about-services-and-subscriptions.md).
 +++
 
-+++**SFTP 管理**
++++**SFTP管理**
 
 在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。控制面板允许您对SFTP服务器执行各种操作，如监视存储容量、管理IP地址允许列表和管理公共SSH密钥。
 
@@ -1015,7 +1015,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 +++
 
 &lt;!-------在这里很有用??----->
-+++**已触发营销活动**
++++**触发的营销活动**
 
 触发的活动是在工作流中收到API请求时执行的活动。 API调用由启动工作流执行的工作流中的信号活动使用。
 
@@ -1061,7 +1061,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 了解有关 [单一模式](../../interaction/using/about-inbound-channels.md).
 +++
 
-+++**Web 应用程序**
++++**Web应用程序**
 
 Web应用程序是由Campaign实例托管的动态和交互式应用程序页面。 它们包含来自数据库的数据和适应所连接用户的权限的内容。 例如，可在外联网上创建编辑表单，或创建通知表单，包括来自具有表、图表、输入表单等内容的数据库的数据。 此功能允许您设计和发布网页，用户可以在其中查找或输入信息。
 

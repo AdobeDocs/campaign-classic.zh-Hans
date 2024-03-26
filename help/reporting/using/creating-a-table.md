@@ -8,7 +8,7 @@ feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2507'
+source-wordcount: '2515'
 ht-degree: 1%
 
 ---
@@ -408,7 +408,7 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 1. 在 **[!UICONTROL Data]** 选项卡，按如下方式调整表：
 
    * 在右侧添加两列。
-   * 在详细信息行的第一个单元格中，添加 **[!UICONTROL rowNum()-1]** 用于计算行数的表达式。 然后更改单元格的格式：在 **[!UICONTROL Extra]** 选项卡，选择 **[!UICONTROL Color tab]** 并单击 **[!UICONTROL Ok]**.
+   * 在详细信息行的第一个单元格中，添加 **[!UICONTROL rowNum()-1]** 用于计算行数的表达式。 然后，更改单元格的格式：在 **[!UICONTROL Extra]** 选项卡，选择 **[!UICONTROL Color tab]** 并单击 **[!UICONTROL Ok]**.
 
      ![](assets/s_advuser_report_listgroup_018.png)
 
@@ -421,7 +421,7 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
 1. 使用右键单击菜单将饼图添加到页面中，并分配 **电子邮件域** 标记到其中。 有关更多信息，请参阅 [图表类型和变量](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
 1. 单击 **[!UICONTROL Variants]** 链接并取消选择 **[!UICONTROL Display label]** 和 **[!UICONTROL Display caption]** 选项。
-1. 检查是否未配置值排序。 如需详细信息，请参阅[此部分](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report)。
+1. 检查是否未配置值排序。 如需详细信息，请参阅[此小节](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report)。
 
    ![](assets/s_advuser_report_listgroup_0191.png)
 

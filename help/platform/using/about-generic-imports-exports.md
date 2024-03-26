@@ -2,15 +2,15 @@
 product: campaign
 title: 关于通用导入和导出
 description: 了解有关一般导入和导出的更多信息
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '129'
 ht-degree: 4%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 4%
 
 
 
-Adobe Campaign Classic提供通用导入和导出功能。 例如，您可以使用它们提取随后将成为目标群体一部分的客户或潜在客户列表，或者使用外部文件提供数据库数据。
+Adobe Campaign Classic提供通用导入和导出功能。 例如，您可以使用它们提取随后将成为目标群体一部分的客户或潜在客户列表，或向数据库提供来自外部文件的数据。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
 
 通用导入和导出由管理 **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** Adobe Campaign树的节点。
 

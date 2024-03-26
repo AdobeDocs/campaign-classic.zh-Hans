@@ -6,7 +6,8 @@ badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: SMS
 role: User, Developer, Admin
-source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
+exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
+source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 8%
@@ -187,4 +188,3 @@ Adobe Campaign提供了位于以下位置的移动投放模板： **[!UICONTROL 
 * [短信字符音译](sms-set-up.md#about-character-transliteration)
 * [文本编码](sms-set-up.md#about-text-encodings)
 * [自动回复](sms-set-up.md#automatic-reply)
-

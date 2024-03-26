@@ -3,13 +3,13 @@ product: campaign
 title: 同步受众
 description: 了解如何将受众与ACS连接器同步
 feature: ACS Connector
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1117'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_query7.png)
 
-1. 保存工作流。下一部分将演示如何与ACS共享群体。
+1. 保存工作流。 下一部分将演示如何与ACS共享群体。
 
 ## 与Campaign Standard共享目标 {#share-the-target-with-campaign-standard}
 

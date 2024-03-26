@@ -3,7 +3,7 @@ product: campaign
 title: 操作员用户档案
 description: 操作员用户档案
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
@@ -11,7 +11,7 @@ exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 9%
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 9%
 * **[!UICONTROL Offer manager]** ：创建和维护选件。 请注意，如果在工作流中使用选件，则运算符需要位于 **[!UICONTROL Administrator]** 或 **[!UICONTROL Offer managers]** 操作员组，以执行工作流。
 * **[!UICONTROL Delivery manager]** ：批准和使用选件
 
-创建特定于交互的运算符的步骤与创建平台上所有其他运算符的步骤相同。 如需详细信息，请参阅[此部分](../../platform/using/access-management.md)。权限是在创建操作员期间配置的。
+创建特定于交互的运算符的步骤与创建平台上所有其他运算符的步骤相同。 有关详细信息，请参见 [本节](../../platform/using/access-management.md). 权限是在创建操作员期间配置的。
 
 ## 选件管理器 {#offer-manager}
 
@@ -39,7 +39,7 @@ ht-degree: 9%
 * 视图 **[!UICONTROL Live]** 环境。
 * 配置管理函数（预定义空格和过滤器）。
 * 创建和更改类别。
-* 创建优惠.
+* 创建选件。
 * 配置优惠资格。
 * 批准选件。
 

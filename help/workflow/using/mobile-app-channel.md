@@ -2,12 +2,12 @@
 product: campaign
 title: 移动应用程序渠道
 description: 移动应用程序渠道
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 21%
+source-wordcount: '72'
+ht-degree: 13%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 21%
 
 
 
-下面详述的工作流随 **移动应用程序渠道** 默认模块。 有关此模块的更多信息，请参阅此 [部分](../../delivery/using/about-mobile-app-channel.md).
+下面详细介绍的工作流随 **移动应用程序渠道** 默认模块。 有关此模块的更多信息，请参阅此 [部分](../../delivery/using/about-mobile-app-channel.md).
 
 <table> 
  <tbody> 

@@ -3,7 +3,7 @@ product: campaign
 title: 工作流常见问题解答
 description: Campaign Classic 常见问题解答
 feature: Troubleshooting, Workflows
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
@@ -11,7 +11,7 @@ exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 

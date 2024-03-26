@@ -10,7 +10,7 @@ exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
@@ -104,7 +104,7 @@ ht-degree: 4%
 
 ### 使用分类
 
-您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。例如，您可以筛选新闻稿目标中的未成年收件人。 了解详情 [在此示例中](../../campaign-opt/using/filtering-rules.md).
+您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。 例如，您可以筛选新闻稿目标中的未成年收件人。 了解详情 [在此示例中](../../campaign-opt/using/filtering-rules.md).
 
 ### 避免使用附件
 

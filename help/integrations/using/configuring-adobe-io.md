@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 为 Adobe Experience Cloud 触发器配置 Adobe I/O
+title: 为Adobe Experience Cloud Triggers配置Adobe I/O
 description: 了解如何为Adobe Experience Cloud Triggers配置Adobe I/O
 feature: Triggers
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
@@ -12,12 +12,12 @@ snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 5%
+source-wordcount: '753'
+ht-degree: 6%
 
 ---
 
-# 为 Adobe Experience Cloud 触发器配置 Adobe I/O {#configuring-adobe-io}
+# 为Adobe Experience Cloud Triggers配置Adobe I/O {#configuring-adobe-io}
 
 >[!CAUTION]
 >
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
-> JWT（JSON Web令牌）当前正在进行折旧，并将由OAuth替换。 此过渡将在Campaign的即将发布的版本中逐步执行，文档将进行更新以反映这些更新。
+> JWT（JSON Web 令牌）目前正在被逐步停用，它将被 OAuth 取代。此项转换工作将在 Campaign 的后续版本中逐步执行，会对文档进行更新以反映这些变化。
 
 1. 访问 [!DNL Adobe I/O] 并使用贵组织的开发人员访问权限登录。 确保您已登录到正确的组织门户。
 

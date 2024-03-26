@@ -10,7 +10,7 @@ exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 16%
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 16%
 
 对于每个投放，都提供一个专用仪表板。 它允许您监控在发送期间遇到的最终问题以及有关投放的各种类型的信息：报告、镜像页面、排除项、跟踪日志、呈现等。
 
-* [访问传递的列表](list-of-deliveries.md)
+* [访问投放列表](list-of-deliveries.md)
 * [投放仪表板](delivery-dashboard.md)
 
 <img src="assets/do-not-localize/icon_guidelines.svg" width="60px">

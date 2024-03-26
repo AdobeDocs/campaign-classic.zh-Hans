@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 访问传递的列表
+title: 访问投放列表
 description: 了解如何访问已创建投放的列表
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
@@ -10,11 +10,11 @@ exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 10%
+ht-degree: 4%
 
 ---
 
-# 访问传递的列表 {#list-of-deliveries}
+# 访问投放列表 {#list-of-deliveries}
 
 
 

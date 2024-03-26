@@ -3,15 +3,15 @@ product: campaign
 title: 企业部署
 description: 企业部署
 feature: Installation, Architecture, Deployment
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 3%
+source-wordcount: '1225'
+ht-degree: 4%
 
 ---
 
@@ -115,7 +115,7 @@ ht-degree: 3%
    nlserver config -internalpassword
    ```
 
-   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+   如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 1. 创建 **演示** 具有DNS掩码的实例进行跟踪(在本例中， **tracking.campaign.net**)和对客户端控制台的访问权限(在本例中， **console.campaign.net**)。 可通过两种方式来做到这一点：
 
@@ -153,7 +153,7 @@ ht-degree: 3%
    </serverconf>
    ```
 
-   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#enabling-processes)。
+   如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 1. 编辑 **serverConf.xml** 文件并指定投放域，然后指定MTA模块用于响应MX类型DNS查询的DNS服务器的IP（或主机）地址。
 
@@ -163,7 +163,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >此 **名称服务器** 参数仅在Windows中使用。
+   >此 **nameServer** 参数仅在Windows中使用。
 
    有关详细信息，请参见 [Campaign服务器配置](../../installation/using/configuring-campaign-server.md).
 
@@ -231,7 +231,7 @@ ht-degree: 3%
    </serverconf>
    ```
 
-   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#enabling-processes)。
+   如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 1. 编辑 **serverConf.xml** 文件和填充MTA模块的DNS配置：
 
@@ -241,7 +241,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >此 **名称服务器** 参数仅在Windows中使用。
+   >此 **nameServer** 参数仅在Windows中使用。
 
    有关详细信息，请参见 [Campaign服务器配置](../../installation/using/configuring-campaign-server.md).
 

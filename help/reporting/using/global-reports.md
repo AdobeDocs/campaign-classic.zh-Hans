@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2308'
-ht-degree: 8%
+source-wordcount: '2292'
+ht-degree: 7%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 8%
 >
 >所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
 >
->请注意，您的实例必须升级为最新的 [Gold Standard](../../rn/using/gold-standard.md) 内部版本或 [最新GA版本(21.1.3)](../../rn/using/latest-release.md). 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。
+>请注意，您的实例必须升级为最新的 [Gold Standard](../../rn/using/gold-standard.md) 内部版本或 [最新GA版本(21.1.3)](../../rn/using/latest-release.md). 了解如何在中签入您的版本 [本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## 用户活动 {#user-activities}
 
@@ -126,7 +126,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->此报告中显示的域名在多维数据集级别定义。 要更改这些值，请编辑 **[!UICONTROL Delivery logs (broadlogrcp)]** 多维数据集。 如需详细信息，请参阅[此小节](../../reporting/using/ac-cubes.md)。此 **[!UICONTROL Others]** 类别包括不属于特定类的域名。
+>此报告中显示的域名在多维数据集级别定义。 要更改这些值，请编辑 **[!UICONTROL Delivery logs (broadlogrcp)]** 多维数据集。 有关详细信息，请参见 [本节](../../reporting/using/ac-cubes.md). 此 **[!UICONTROL Others]** 类别包括不属于特定类的域名。
 
 ## 浏览器 {#browsers}
 

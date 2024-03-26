@@ -8,7 +8,7 @@ feature: Reporting, Monitoring
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '736'
 ht-degree: 9%
 
 ---
@@ -149,7 +149,7 @@ Henry执行的打开和4次点击显示在以下日志中：
 | 亨利 | +1 | +4 | +1 |
 | 中间总计 | 2 | 6 | 3 |
 
-## 概要 {#summary}
+## 摘要 {#summary}
 
 在投放级别，我们有以下结果：
 

@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: 定义审批
-description: 通过批准，操作员可以做出管理工作流的决策或确认工作流是否继续执行
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: 通过批准，操作员能够做出管理工作流的决策或确认工作流的继续执行
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 2%
+source-wordcount: '849'
+ht-degree: 3%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 2%
 
 通过批准，操作员能够做出管理工作流的决策或确认工作流的继续执行情况。
 
-消息将发送给一组操作员，工作流会等待响应后再继续。 工作流不会停止，并且可能会执行其他操作。 例如，可能有多个同时审批待处理。
+消息将发送给一组操作员，工作流会等待响应后再继续。 工作流不会停止，并且可能会执行其他操作。 例如，可能有多个同步审批待处理。
 
-批准可以包含多个选项供操作员选择。 但是，可以将选择数量限制为一个，以便向操作员提交要执行的任务，例如执行定位。 执行任务后，操作员可以响应（然后恢复进程）。 以下示例说明了这些类型的批准：
+批准可以包含多个选项供操作员选择。 但是，可以将选择数量限制为一个，以便向操作员提交要执行的任务，例如执行定位。 执行任务后，操作员可以响应（然后恢复流程）。 以下示例说明了这些类型的批准：
 
 ![](assets/validation-1.png)
 
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 操作员管理详见此 [部分](../../platform/using/access-management.md).
 
-批准电子邮件会持续发送。 默认投放模板为 **[!UICONTROL notifyAssignee]**：它保存在中 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 文件夹。 此方案可以自定义，还建议创建一个副本，并更改每个活动的模板。
+批准电子邮件会持续发送。 默认投放模板为 **[!UICONTROL notifyAssignee]**：它保存在中 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 文件夹。 此方案可以自定义，也建议制作副本并更改每个活动的模板。
 
 通过此模板创建的投放存储在 **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** 文件夹。
 
@@ -54,62 +54,62 @@ ht-degree: 2%
 
 ![](assets/validation-node.png)
 
-## 组 {#groups}
+## 群组 {#groups}
 
 批准被分配给通过筛选条件选择的一组操作员、单个操作员或一组操作员。
 
-1. 对于最简单的批准形式，操作员响应后任务即完成。 尝试响应的任何其他操作员都会收到通知，表明有人已经完成此操作。
+1. 对于最简单的批准形式，操作员作出响应后任务即告完成。 尝试响应的任何其他操作员都会收到通知，表明有人已经执行该操作。
 1. 要获得多个批准，请参阅 [多重审批](#multiple-approval).
 
-要审批的操作员组应指定为角色或职能，而不是指名个人。 例如，“营销活动预算”组比“哈里组”更可取。 我们建议一个组中至少有两个可批准任务的人员。 这样，如果其中一个组件缺席，另一个组件可以响应。
+要审批的操作员组应指定为角色或功能，而不是指名的人员。 例如，“营销活动预算”组比“哈里组”更可取。 我们建议一个组中至少有两名可批准任务的人员。 这样，如果其中一个组件缺席，另一个组件就可以做出回应。
 
 ## 过期时间 {#expirations}
 
-过期是各种活动类型中使用的特定过渡，尤其是在审批中使用的特定过渡。 您可以使用过期时间在给定时间后触发操作，而无需响应。 例如，也可以使用它来追踪工作流并将审批分配给其他组。
+过期是不同类型的活动（尤其是批准）中使用的特定过渡。 您可以使用过期时间在给定时间后触发操作，而无需响应。 例如，也可以使用此工作流来追踪工作流并将审批分配给其他组。
 
-利用活动审批属性中的第二个选项卡，可定义一个或多个过期时间。 事实上，您可以定义多种到期类型。
+利用活动审批属性中的第二个选项卡，可定义一个或多个过期。 事实上，您可以定义多种到期类型。
 
 ![](assets/expiration.png)
 
-要添加新的过期时间，请单击 **[!UICONTROL Add]**. 将向创建的每个过期日期添加一个过渡。 您可以：
+要添加新的过期时间，请单击 **[!UICONTROL Add]**. 创建的每个过期都将添加一个过渡。 您可以：
 
-* 通过单击列表中的单元格（或按F2）直接修改典型参数，
+* 通过单击列表中的单元格（或按F2）直接修改典型参数。
 * 或者通过单击 **[!UICONTROL Detail...]** 按钮。
 
 >[!NOTE]
 >
->无需指定过期顺序，因为它们是按时间顺序处理的。
+>无需指定过期顺序，因为过期时间按时间顺序处理。
 
-此 **[!UICONTROL Do not terminate the task]** 选项在延迟超限时使审批处于活动状态。 利用此模式，可以在保持审批活动的情况下管理提醒：操作员仍然可以响应。 此选项默认处于禁用状态，这意味着任务在过期时被视为已完成，并且操作员可能不再响应。
+此 **[!UICONTROL Do not terminate the task]** 选项在延迟超出时使审批处于活动状态。 利用此模式，可以在保持审批活动的情况下管理提醒：操作员仍然可以响应。 此选项默认处于禁用状态，这意味着任务在过期时被视为已完成，并且操作员可能不再响应。
 
-您可以创建四种类型的过期时间：
+您可以创建四种类型的过期日期：
 
-* **任务开始后延迟**：过期时间计算方式为将指定的时间长度添加到激活审批的日期。
-* **在给定日期后延迟**：计算过期时间的方法是向指定的日期添加一个时间长度。
-* **在给定日期之前延迟**：通过从指定的日期减去时间长度来计算到期时间。
+* **任务开始后延迟**：计算到期日的方法为将指定的时间长度添加到激活审批的日期。
+* **在给定日期后延迟**：计算过期时间的方法为将时间长度添加到您指定的日期。
+* **在给定日期之前延迟**：通过从指定的日期中减去某个时间长度来计算到期时间。
 * **脚本计算的到期时间**：使用JavaScript计算到期时间。
 
-   以下示例计算开始投放的日期之前24小时的过期时间(标识为 **vars.deliveryId**)：
+  以下示例计算开始投放日期之前24小时的过期时间(由 **vars.deliveryId**)：
 
-   ```
-   var delivery = nms.delivery.get(vars.deliveryId)
-   var expiration = delivery.scheduling.contactDate
-   var oneDay = 1000*60*60*24
-   expiration.setTime(expiration.getTime() - oneDay)
-   return expiration
-   ```
+  ```
+  var delivery = nms.delivery.get(vars.deliveryId)
+  var expiration = delivery.scheduling.contactDate
+  var oneDay = 1000*60*60*24
+  expiration.setTime(expiration.getTime() - oneDay)
+  return expiration
+  ```
 
 ## 多重审批 {#multiple-approval}
 
-多重批准是一种允许所有批准操作员做出响应的机制。 将为每个响应激活一个过渡。
+多重批准是一种机制，它允许所有批准操作员做出响应。 为每个响应激活过渡。
 
-多重批准对于投票或调查机制非常有用。 您可以通过添加截止日期来计数答案，并在给定时间段后处理其结果。
+多重批准对投票或调查机制很有用。 您可以通过添加截止日期来计数答案并在给定时间段后处理其结果。
 
 ## 所需权限 {#required-rights}
 
-组中的操作员必须至少具有以下权限，才能对批准请求做出响应：
+组中的操作员必须至少具有以下权限才能响应审批请求：
 
 * 工作流的写入权限。
-* 包含待批准任务的文件夹的读写权限。
+* 包含要批准的任务的文件夹的读写权限。
 
 “工作流执行”组具有这些权限。 添加到此组的操作员有权响应审批请求。

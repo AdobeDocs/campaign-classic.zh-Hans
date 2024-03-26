@@ -3,15 +3,15 @@ product: campaign
 title: 配置对Netezza的访问权限
 description: 了解如何在FDA中配置对Netezza的访问权限
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 0%
+source-wordcount: '376'
+ht-degree: 1%
 
 ---
 
@@ -81,7 +81,7 @@ netezza外部帐户允许您将Campaign实例连接到Netezza外部数据库。
 
 1. 配置 **[!UICONTROL Netezza]** 外部帐户，您必须指定：
 
-   * **[!UICONTROL Type]**: Netezza
+   * **[!UICONTROL Type]**：Netezza
 
    * **[!UICONTROL Server]**：Netezza服务器的URL
 

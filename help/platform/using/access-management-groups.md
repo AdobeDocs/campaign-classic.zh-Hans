@@ -1,16 +1,16 @@
 ---
 product: campaign
 title: 创建和管理操作员组
-description: 了解如何授予操作员组的访问权限
-badge: label="v7" type="信息性" tooltip="仅适用于Campaign Classicv7"
+description: 了解如何授予操作员组访问权限
+badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 1%
 
 ---
 
@@ -24,19 +24,19 @@ ht-degree: 0%
 
 要创建新的运算符组，请应用以下步骤：
 
-1. 单击 **[!UICONTROL New]** 组列表右侧的按钮，或者右键单击列表并选择 **[!UICONTROL New]**.
-1. 在下部窗口中，从 **[!UICONTROL General]** 选项卡，在相应字段中输入此组的名称和描述。
+1. 单击 **[!UICONTROL New]** 按钮进行编辑，或者右键单击列表并选择 **[!UICONTROL New]**.
+1. 在下部窗口中，从 **[!UICONTROL General]** 选项卡，在相应字段中输入此组的名称和说明。
 
    ![](assets/s_ncs_user_create_operator_gp.png)
 
-1. 单击 **[!UICONTROL Content]** 选项卡，以定义此组的授权。
+1. 单击 **[!UICONTROL Content]** 选项卡定义此组的授权。
 1. 单击 **[!UICONTROL Add]** 按钮以选择要与组关联的指定权限或操作员。
-1. 单击下拉列表或 **[!UICONTROL Folder]** 字段，用于查找要与此组关联的指定权限或操作员。
+1. 单击下拉列表或 **[!UICONTROL Folder]** 用于查找要与此组关联的指定权限或操作员的字段。
 1. 选择要添加的权限或运算符，然后单击 **[!UICONTROL OK]** 进行验证。
 
    ![](assets/s_ncs_user_create_operator_gp03.png)
 
-   重复此操作可添加其他权限或操作员。
+   重复此操作以添加其他权限或操作员。
 
 1. 单击 **[!UICONTROL Save]** 按钮以将组添加到列表。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Administrator]**
 
-   此组中的操作员对此实例具有完全访问权限。 管理员是可以访问界面中最技术部分的用户。 他们持有 **[!UICONTROL Administration]** 角色并确保平台已全部设置。
+   此组中的操作员具有实例的完全访问权限。 管理员是可以访问界面中技术含量最高的部分的用户。 他们持有 **[!UICONTROL Administration]** 角色并确保平台已全部设置。
 
    此组包含以下已命名权限：
 
@@ -63,27 +63,28 @@ ht-degree: 0%
 
 1. **[!UICONTROL Campaign managers]**
 
-   此组中的操作员可以管理营销活动：通过此组，您可以访问链接到营销活动的对象（计划、项目、工作流、预算等） 在架构内 **[!UICONTROL Campaign]** (可选Adobe Campaign模块)。
+   此组中的操作员可以管理营销活动：通过此组，您可以访问链接到营销活动的对象（计划、项目、工作流、预算等） 在 **[!UICONTROL Campaign]** (可选Adobe Campaign模块)。
 
    此组包含以下已命名权限：
 
    * **[!UICONTROL INSERT FOLDERS]**：有权将文件夹插入Adobe Campaign树（前提是您对有关分支具有编辑权限），
    * **[!UICONTROL WORKFLOW]**：使用工作流的权限。
+
    >[!NOTE]
    >
    >此组不允许操作员开始投放。
 
 1. **[!UICONTROL Content contributors]**
 
-   此组中的操作员可以在的框架内访问内容文件夹 **[!UICONTROL Content management]** (可选Adobe Campaign模块)。 此组不授予任何附加权限。
+   此组中的操作员可在的框架内访问内容文件夹 **[!UICONTROL Content management]** (可选Adobe Campaign模块)。 此组不授予任何其他权限。
 
 1. **[!UICONTROL Access to reports]**
 
-   此组是为外部操作员保留的，用于通过Web访问访问投放报告。
+   此组为外部操作员保留，以通过Web访问访问投放报告。
 
 1. **[!UICONTROL Workflow execution]**
 
-   通过此组，您可以为操作员分配管理与营销活动无关的工作流的权限。
+   通过此组，您可以分配操作员以管理与营销活动无关的工作流。
 
 1. **[!UICONTROL Workflow supervisors]**
 
@@ -95,8 +96,8 @@ ht-degree: 0%
 
 1. **[!UICONTROL Offer managers]**
 
-   此组中的操作员可以创建和维护优惠。 有关此内容的更多信息，请参阅此 [页面](../../interaction/using/operator-profiles.md).
+   此组中的操作员可以创建和维护选件。 有关详细信息，请参阅此 [页面](../../interaction/using/operator-profiles.md).
 此组包含以下已命名权限：
 
    * **[!UICONTROL INSERT FOLDERS]**：有权将文件夹插入Adobe Campaign树（前提是您对有关分支具有编辑权限），
-   * **[!UICONTROL EDIT FOLDERS]**：更改文件夹属性（如内部名称、标签、关联的图像、子文件夹顺序等）的权利。
+   * **[!UICONTROL EDIT FOLDERS]**：有权更改文件夹属性，如内部名称、标签、关联的图像、子文件夹顺序等。

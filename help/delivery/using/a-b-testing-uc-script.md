@@ -10,7 +10,7 @@ exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 ## 脚本示例 {#example-of-a-script}
 
-以下脚本可在定位工作流中按原样使用。 如需详细信息，请参阅[此部分](#implementation)。
+以下脚本可在定位工作流中按原样使用。 如需详细信息，请参阅[此小节](#implementation)。
 
 ```
  // query the database to find the winner (best open rate)
@@ -69,7 +69,7 @@ ht-degree: 5%
 
 有关脚本的详细说明，请参阅 [本节](#details-of-the-script).
 
-## 实施 {#implementation}
+## 实现 {#implementation}
 
 1. 打开您的 **[!UICONTROL JavaScript code]** 活动。
 1. 复制中提供的脚本 [脚本示例](#example-of-a-script) 到 **[!UICONTROL JavaScript code]** 窗口。
@@ -168,6 +168,6 @@ ht-degree: 5%
 * 最高转化率： `[indicators/@transactionRatio]`，
 * 收到消息后访问的页面数： `[indicators/@totalWebPage]`，
 * 最低退订率： `[indicators/@optOutRatio]`，
-* 交易金额: `[indicators/@amount]`.
+* 交易金额： `[indicators/@amount]`.
 
 您现在可以定义最终投放。 [了解详情](a-b-testing-uc-final-delivery.md)。

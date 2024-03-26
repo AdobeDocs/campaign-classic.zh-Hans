@@ -3,15 +3,15 @@ product: campaign
 title: 配置对Vertica analytics的访问权限
 description: 了解如何在FDA中配置对Vertica analytics的访问权限
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 1%
+source-wordcount: '376'
+ht-degree: 2%
 
 ---
 
@@ -154,7 +154,7 @@ ht-degree: 1%
 
 1. 配置 **[!UICONTROL Vertica Analytics]** 外部帐户，您必须指定：
 
-   * **[!UICONTROL Type]**: [!DNL Vertica Analytics]
+   * **[!UICONTROL Type]**： [!DNL Vertica Analytics]
 
    * **[!UICONTROL Server]**：的URL [!DNL Vertica Analytics] 服务器
 
@@ -168,7 +168,7 @@ ht-degree: 1%
 
 连接器支持以下选项：
 
-| Option | 说明 |
+| 选项 | 说明 |
 |---|---|
 | 时区名称 | 默认情况下为空，这意味着使用Campaign Classic应用程序服务器的系统时区。 选项可用于强制使用时区会话参数。 |
 

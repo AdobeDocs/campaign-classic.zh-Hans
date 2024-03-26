@@ -2,13 +2,13 @@
 product: campaign
 title: 读取列表
 description: 了解有关读取列表工作流活动的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 0%
+source-wordcount: '495'
+ht-degree: 2%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 0%
 
 
 
-工作流中处理的数据可能来自事先准备或构建数据的列表（在之前分段或文件上传之后）。
+在工作流中处理的数据可以来自事先准备或结构化数据的列表（在之前分段或文件上传之后）。
 
-此 **[!UICONTROL Read list]** 活动允许您从工作流工作表中的列表复制数据，例如来自查询的数据。 然后，即可在整个工作流中访问该区域。
+此 **[!UICONTROL Read list]** 通过活动，您可以从工作流工作表中的列表复制数据，例如来自查询的数据。 然后，即可在整个工作流中访问它。
 
-要处理的列表可以显式指定、由脚本计算或动态本地化，具体取决于所选的选项和在中定义的参数。 **[!UICONTROL Read list]** 活动。
+要处理的列表可以显式指定、由脚本计算或根据所选选项和中定义的参数进行动态本地化。 **[!UICONTROL Read list]** 活动。
 
 ![](assets/list_edit_select_option_01.png)
 
-如果未显式指定该列表，则必须提供要用作模板的列表，才能找到其结构。
+如果未显式指定该列表，则必须提供一个列表以用作模板来查找其结构。
 
 ![](assets/s_advuser_list_template_select.png)
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 >要在读取列表活动中创建过滤器，相关列表必须是“文件”类型。
 
-列表可直接在Adobe Campaign中创建，方法是使用 **[!UICONTROL Profiles and Targets > Lists]** 主页的链接。 还可以在工作流中使用 **[!UICONTROL List update]** 活动。
+可通过以下方式直接在Adobe Campaign中创建列表 **[!UICONTROL Profiles and Targets > Lists]** 主页的链接。 还可以在工作流中使用 **[!UICONTROL List update]** 活动。
 
 **示例：排除发送地址列表**
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ![](assets/s_advuser_list_read_sample_1.png)
 
-包含在 **新建联系人** 文件夹必须由投放操作定向。 要从目标中排除的电子邮件地址存储在外部列表中。 在我们的示例中，只需电子邮件地址上的信息即可排除。
+中包含的配置文件 **新建联系人** 文件夹必须由投放操作定向。 要从目标中排除的电子邮件地址存储在外部列表中。 在我们的示例中，只有电子邮件地址上的信息才需要被排除。
 
 1. 此 **新建联系人** 文件夹选择查询必须允许您加载所选用户档案的电子邮件地址，以便与列表中的信息保持一致。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
    ![](assets/s_advuser_list_read_sample_2.png)
 
-1. 要从主目标中排除外部列表的电子邮件地址，必须配置排除活动并指定 **新建联系人** 文件夹包含要保留的数据。 将从目标中删除此集与排除活动中的任何其他集客集之间的联合数据。
+1. 要从主目标中排除外部列表的电子邮件地址，必须配置排除活动并指定 **新建联系人** 文件夹中包含要保留的数据。 将从目标中删除此集与排除活动中任何其他集客集的联合数据。
 
    ![](assets/s_advuser_list_read_sample_3.png)
 
@@ -68,4 +68,4 @@ ht-degree: 0%
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
-1. 然后，选择与两组（源和目标）中的电子邮件地址对应的字段。 然后，将链接各列，并从目标中排除其电子邮件地址位于导入地址列表中的收件人。
+1. 然后，选择与两组（“源”和“目标”）中的电子邮件地址对应的字段。 随后将链接各列，并从目标中排除其电子邮件地址位于导入地址列表中的收件人。

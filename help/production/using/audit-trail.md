@@ -3,12 +3,12 @@ product: campaign
 title: 审核跟踪
 description: 了解如何使用Campaign审核记录监控实例
 feature: Audit Trail, Monitoring, Workflows
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 3%
+source-wordcount: '471'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 3%
    * 暂停
    * 停止
    * 重新启动
-   * 清除 等于操作清除历史记录
+   * 清除等于操作清除历史记录
    * 模拟在模拟模式下等于操作“开始”的项
    * 唤醒等于操作立即执行待处理任务
    * 无条件停止
@@ -105,4 +105,4 @@ ht-degree: 3%
 
    ![](assets/audit_trail_6.png)
 
-1. 单击 **[!UICONTROL Save]**。
+1. 单击 **[!UICONTROL Save]** .

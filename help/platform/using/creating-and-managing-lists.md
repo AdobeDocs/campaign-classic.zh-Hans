@@ -2,15 +2,15 @@
 product: campaign
 title: 创建和管理列表
 description: 了解如何创建和管理列表
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Profiles
 role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 65%
+source-wordcount: '806'
+ht-degree: 28%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 65%
 
 ## 什么是列表？ {#about-lists-in-adobe-campaign}
 
-列表是一组静态用户档案，用于在投放操作期间提供定位目标，或在导入操作或工作流执行期间进行更新。例如，通过查询从数据库中提取出的一组数据即可形成一个列表。
+列表是一组静态用户档案，用于在投放操作期间提供定位目标，或在导入操作或工作流执行期间进行更新。 例如，通过查询从数据库中提取出的一组数据即可形成一个列表。
 
 列表是通过 **[!UICONTROL Lists]** 中的链接 **[!UICONTROL Profiles and targets]** 选项卡。
 
@@ -28,49 +28,49 @@ ht-degree: 65%
 
 Adobe Campaign 提供两类列表：
 
-* **[!UICONTROL Group]** 类型： **[!UICONTROL Group]** 类型列表属于 **静态** 根据特定条件选择的人员列表。 此列表就像一组用户档案的快照。请注意，将用户档案添加到数据库时，列表不会自动更新。
+* **[!UICONTROL Group]** 类型： **[!UICONTROL Group]** 类型列表属于 **静态** 根据特定条件选择的人员列表。 该列表就像一组配置文件的快照。 请注意，将用户档案添加到数据库时，列表不会自动更新。
 
-   有关如何创建 **[!UICONTROL Group]** 类型列表，请参阅此 [页面](#creating-a-profile-list-from-a-group).
+  有关如何创建 **[!UICONTROL Group]** 类型列表，请参阅此 [页面](#creating-a-profile-list-from-a-group).
 
-* **[!UICONTROL List]** 类型： **[!UICONTROL List]** 类型列表允许您使用工作流创建和管理列表。 这些将由数据导入生成的特定列表，可通过专用的 **[!UICONTROL List update]** 工作流活动。
+* **[!UICONTROL List]** 类型： **[!UICONTROL List]** 类型列表允许您使用工作流创建和管理列表。 这些将由数据导入生成的特定列表，可通过专用渠道进行更新 **[!UICONTROL List update]** 工作流活动。
 
-   不像 **[!UICONTROL Group]** 类型列表，此类型列表可以使用 **[!UICONTROL Scheduler]** 活动。 请注意，有关如何创建的示例 **[!UICONTROL List]** 类型列表，请参阅 [此页面](../../workflow/using/list-update.md).
+  不像 **[!UICONTROL Group]** 类型列表，此类型列表可以使用 **[!UICONTROL Scheduler]** 活动。 请注意，有关如何创建的示例 **[!UICONTROL List]** 类型列表，请参阅 [此页面](../../workflow/using/list-update.md).
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#create-list-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#create-list-video)
 
 ## 从组创建配置文件列表 {#creating-a-profile-list-from-a-group}
 
-**[!UICONTROL Group]** 键入通过创建的列表 **[!UICONTROL Profiles and targets]** 链接必须基于默认的Adobe Campaign用户档案表(nms：recipient)。
+**[!UICONTROL Group]** 键入通过创建的列表 **[!UICONTROL Profiles and targets]** 链接必须基于默认的Adobe Campaign配置文件表(nms：recipient)。
 
 >[!NOTE]
 >
->要创建包含其他类型数据的列表，您必须执行某个工作流。例如，通过在访客表上运行查询并更新列表，您可以创建一个访客列表。如需有关此工作流的详细信息，请参阅[本章节](../../workflow/using/about-workflows.md)。
+>要创建包含其他类型数据的列表，必须运行工作流。 例如，通过在访客表上使用查询，然后更新列表，您可以创建访客列表。 如需有关此工作流的详细信息，请参阅[本章节](../../workflow/using/about-workflows.md)。
 
-新建 **[!UICONTROL Group]** 键入list ，然后应用以下步骤：
+新建 **[!UICONTROL Group]** 键入list，应用以下步骤：
 
 1. 单击 **[!UICONTROL Create]** 按钮并选择 **[!UICONTROL New list]**.
 
    ![](assets/s_ncs_user_new_group.png)
 
-1. 在列表创建窗口的 **[!UICONTROL Edit]** 选项卡中输入信息。
+1. 在 **[!UICONTROL Edit]** 列表创建窗口的选项卡。
 
-   * 在 **[!UICONTROL Label]** 字段中输入列表名，如有必要，更改內部名称。
+   * 在 **[!UICONTROL Label]** 字段，并根据需要更改内部名称。
    * 添加此列表的描述。
    * 可指定失效日期：达到此日期后，会清空并自动删除此列表。
 
-      ![](assets/list_expiration_date.png)
+     ![](assets/list_expiration_date.png)
 
-1. 在 **[!UICONTROL Content]** 选项卡中，单击 **[!UICONTROL Add]** 选择哪些用户档案属于此列表。
+1. 在 **[!UICONTROL Content]** 选项卡，单击 **[!UICONTROL Add]** 以选择属于该列表的用户档案。
 
    ![](assets/s_ncs_user_add_group.png)
 
-1. 单击 **[!UICONTROL Save]** 保存列表。然后系统会将其添加到列表概要中。
+1. 单击 **[!UICONTROL Save]** 以保存列表。 然后系统会将其添加到列表概要中。
 
-您可单击 **[!UICONTROL Create]** 直接从“Add profiles”窗口创建新的用户档案。该用户档案也会被添加到数据库中。
+您可以通过单击直接从“添加配置文件”窗口创建新配置文件 **[!UICONTROL Create]**. 该用户档案也会被添加到数据库中。
 
 ![](assets/s_ncs_user_new_recipient_from_group.png)
 
-与其他列表一样，也可以配置该用户档案列表。请参阅[此小节](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
+配置文件列表可以像其他列表一样进行配置。 请参阅[此小节](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
 
 ## 将数据链接到列表 {#linking-data-to-a-list}
 
@@ -78,14 +78,14 @@ Adobe Campaign 提供两类列表：
 >
 >只能使用将数据链接到列表 **[!UICONTROL Group]** 类型列表。
 
-可对一组用户档案进行过滤并将得到的用户档案链接到列表。然后可将投放操作发送到此列表，从而定位用户档案。要分组用户档案：
+可以过滤一组用户档案的用户档案并将其链接到列表。 然后，可以将投放操作发送到此列表，以定向用户档案。 要分组用户档案：
 
 1. 选择用户档案并单击鼠标右键。
 1. 选择 **[!UICONTROL Actions > Associate selection with a list...]**。
 
    ![](assets/s_ncs_user_add_selection_to_group.png)
 
-1. 选择所需的列表或使用 **[!UICONTROL Create]** 按钮创建新列表，然后单击 **[!UICONTROL Next]**。
+1. 选择所需的列表或使用创建新列表 **[!UICONTROL Create]** 按钮，然后单击 **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_user_add_selection_to_group_2.png)
 
@@ -93,17 +93,17 @@ Adobe Campaign 提供两类列表：
 
    ![](assets/s_ncs_user_add_selection_to_group_3.png)
 
-此 **[!UICONTROL Recreate the list]** 选项从列表中删除较早的内容。 此模式已进行了优化，因为无需通过查询来确认用户档案是否已链接到列表。
+此 **[!UICONTROL Recreate the list]** 选项会从列表中删除较早的内容。 此模式已进行了优化，因为无需通过查询来确认用户档案是否已链接到列表。
 
-如果取消选中 **[!UICONTROL No trace of this job is saved in the database]** 选项，您可以选择（或创建）执行文件夹，链接到此进程的信息将存储在该文件夹中。
+如果您取消选中 **[!UICONTROL No trace of this job is saved in the database]** 选项，您可以选择（或创建）执行文件夹，其中将存储链接到该进程的信息。
 
-可在窗口的上半部监控该执行过程。可以通过 **[!UICONTROL Stop]** 按钮停止该过程。已处理的联系人将会链接到列表。
+通过窗口的上半部分，您可以监视执行情况。 此 **[!UICONTROL Stop]** 按钮允许您停止进程。 已处理的联系人将会链接到列表。
 
-可通过此操作所处理的用户档案上的 **[!UICONTROL Lists]** 选项卡监控该过程：
+您可以通过以下方式监控此过程： **[!UICONTROL Lists]** 选项卡上与此操作有关的配置文件：
 
 ![](assets/s_ncs_user_add_selection_to_group_4.png)
 
-也可通过 Adobe Campaign 主页编辑列表：单击 **[!UICONTROL Profiles and Targets > Lists]** 菜单，然后选择相关的列表。**[!UICONTROL Content]** 选项卡会显示已链接到此列表的用户档案。
+您还可以通过Adobe Campaign主页编辑列表：单击 **[!UICONTROL Profiles and Targets > Lists]** 菜单并选择相关列表。 此 **[!UICONTROL Content]** 选项卡显示链接到此列表的用户档案。
 
 ![](assets/s_ncs_user_add_selection_to_group_5.png)
 
@@ -111,17 +111,17 @@ Adobe Campaign 提供两类列表：
 
 要从列表中删除用户档案，您可以：
 
-* 编辑列表，在 **[!UICONTROL Content]** 选项卡中选择用户档案，然后单击 **[!UICONTROL Delete]** 图标。
+* 编辑列表，选择中的配置文件 **[!UICONTROL Content]** 选项卡，然后单击 **[!UICONTROL Delete]** 图标。
 
-   ![](assets/list_remove_a_recipient.png)
+  ![](assets/list_remove_a_recipient.png)
 
-* 编辑用户档案，单击 **[!UICONTROL List]** 选项卡，然后单击 **[!UICONTROL Delete]** 图标。
+* 编辑配置文件，单击 **[!UICONTROL List]** 选项卡，然后单击 **[!UICONTROL Delete]** 图标。
 
-   ![](assets/recipient_remove_a_list.png)
+  ![](assets/recipient_remove_a_list.png)
 
 ## 删除配置文件列表 {#deleting-a-list-of-profiles}
 
-您可以从 Adobe Campaign 树状结构的组列表中删除一个或多个列表。为此可通过 Adobe Campaign 主页中的 **[!UICONTROL Advanced > Explorer]** 链接编辑树状结构。选择相关的组，然后单击鼠标右键。选择 **[!UICONTROL Delete]**。警告消息会要求您确认此删除操作。
+您可以从Adobe Campaign树的组列表中删除一个或多个列表。 要实现此目的，请通过 **[!UICONTROL Advanced > Explorer]** Adobe Campaign主页中的链接。 选择相关组并右键单击。 选择 **[!UICONTROL Delete]**。警告消息会要求您确认此删除操作。
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Adobe Campaign 提供两类列表：
 
 ### 如何使用工作流创建收件人列表 {#create-list-in-a-wf-video}
 
-了解如何创建工作流以定位收件人，以及如何在电子邮件目标中使用列表之前使其重复执行。
+了解如何在电子邮件目标中使用列表之前创建工作流以定位收件人，以及如何使其重复执行。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 

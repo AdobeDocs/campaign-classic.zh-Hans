@@ -9,8 +9,8 @@ role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 10%
+source-wordcount: '894'
+ht-degree: 9%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 10%
 
 例如，个性化字段具有 **&lt;%= recipient.LastName %>** 语法会告知Adobe Campaign将收件人的名称插入数据库(recipient table)。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#personalization-fields-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#personalization-fields-video)
 
 >[!CAUTION]
 >
@@ -72,7 +72,7 @@ ht-degree: 10%
 
    >[!NOTE]
    >
-   >当投放属于工作流的一部分时，您可以使用临时工作流表中的数据。 此数据分组在 **[!UICONTROL Target extension]** 菜单。 如需详细信息，请参阅[此部分](../../workflow/using/data-life-cycle.md#target-data)。
+   >当投放属于工作流的一部分时，您可以使用临时工作流表中的数据。 此数据分组在 **[!UICONTROL Target extension]** 菜单。 如需详细信息，请参阅[此小节](../../workflow/using/data-life-cycle.md#target-data)。
 
 ## 优化个性化 {#optimizing-personalization}
 
@@ -86,7 +86,7 @@ ht-degree: 10%
 
 要使用此选项，请执行以下步骤：
 
-1. 创建营销策划. 如需详细信息，请参阅[此部分](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
+1. 创建营销策划。 如需详细信息，请参阅[此小节](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在 **[!UICONTROL Targeting and workflows]** 选项卡，添加 **查询** 活动添加到工作流。 有关使用此活动的更多信息，请参阅 [本节](../../workflow/using/query.md).
 1. 添加 **[!UICONTROL Email delivery]** 活动以打开工作流。 有关使用此活动的更多信息，请参阅 [本节](../../workflow/using/delivery.md).
 1. 转到 **[!UICONTROL Analysis]** 选项卡 **[!UICONTROL Delivery properties]** 并选择 **[!UICONTROL Prepare the personalization data with a workflow]** 选项。

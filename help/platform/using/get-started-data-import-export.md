@@ -12,7 +12,7 @@ exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
 source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 12%
+ht-degree: 10%
 
 ---
 
@@ -34,7 +34,7 @@ Adobe Campaign Classic提供数据管理功能，允许您导入和导出数据�
 
 利用工作流，可以根据计划自动重复导入和导出操作，例如自动在几个信息系统之间交换数据。
 
-如需详细信息，请参阅[此部分](../../platform/using/import-export-workflows.md)。
+如需详细信息，请参阅[此小节](../../platform/using/import-export-workflows.md)。
 
 ## 一般导入和导出 {#generic-import-export}
 
@@ -62,7 +62,7 @@ Campaign Classic允许您导入压缩或加密文件，以及导出压缩或加�
 * [解压缩或解密文件](../../platform/using/unzip-decrypt.md)
 * [压缩或加密文件](../../platform/using/zip-encrypt.md)
 
-## 最佳实践和故障排除 {#best-practices-troubleshooting}
+## 最佳实践和疑难解答 {#best-practices-troubleshooting}
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 

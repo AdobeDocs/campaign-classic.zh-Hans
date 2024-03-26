@@ -9,8 +9,8 @@ role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 7%
+source-wordcount: '1296'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 确保消息内容设计正确，以避免出现任何错误，这些错误通常与个性化相关。
 
-**提示**：在来自第三方供应商提供的外部文件的个性化字段中，外部HTML内容可能有误。 要避免此问题，请检查语法、标记的使用和字符等。 例如，Adobe Campaign个性化标记始终具有以下形式： &lt;%=table.field%>。 有关更多信息，请参阅[此章节](about-personalization.md)。
+**提示**：在来自第三方供应商提供的外部文件的个性化字段中，外部HTML内容可能有误。 要避免此问题，请检查语法、标记的使用和字符等。 例如，Adobe Campaign个性化标记始终具有以下形式： &lt;%=table.field%>。 有关更多信息，请参阅[此小节](about-personalization.md)。
 
 在个性化块中错误使用参数可能是个问题。 例如，JavaScript中的变量应按以下方式使用：
 
@@ -93,9 +93,9 @@ ht-degree: 7%
 
 ### 短信长度
 
-默认情况下，短信的字符数应符合 GSM（全球移动通信系统）标准。使用 GSM 编码的短信消息长度上限为 160 个字符，而对于分段发送的消息，每段短信的长度上限为 153 个字符。
+默认情况下，短信的字符数应符合GSM（全球移动通信系统）标准。 使用 GSM 编码的短信消息长度上限为 160 个字符，而对于分段发送的消息，每段短信的长度上限为 153 个字符。
 
-音译指的是，如果 GSM 标准无法识别某个短信字符，则会用另一个字符替换该字符。请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。 您可以通过选中对应的 **[!UICONTROL External account]**.
+音译指的是，如果GSM标准无法识别某个短信字符，则会用另一个字符替换该字符。 请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。 您可以通过选中对应的 **[!UICONTROL External account]**.
 了解详情 [在此部分中](sms-set-up.md#creating-an-smpp-external-account).
 
 **提示**：

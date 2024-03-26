@@ -12,7 +12,7 @@ exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 53%
+ht-degree: 34%
 
 ---
 
@@ -25,11 +25,11 @@ ht-degree: 53%
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * 此 **[!UICONTROL Journal]** 选项卡允许您查看有关执行的日志消息。
-* 此 **[!UICONTROL Rejects]** 选项卡包含被拒绝的记录。 请参阅[此章节](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
+* 此 **[!UICONTROL Rejects]** 选项卡包含被拒绝的记录。 请参阅[此小节](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
 
 在 **[!UICONTROL General]** 选项卡， **[!UICONTROL Status]** 字段表示作业的当前状态。
 
-每个状态都由一个特殊的图标和标签表示。状态及其图标如下：
+每个状态都由一个特殊的图标和标签表示。 状态及其图标如下：
 
 ![](assets/s_ncs_user_export_status.png)
 
@@ -61,10 +61,10 @@ ht-degree: 53%
 
   作业的执行已完成。
 
-* **已完成且存在错误**
+* **已完成，但出现错误**
 
   由于技术错误，该作业未执行。
 
-* **正在关闭服务器**
+* **服务器正在关闭**
 
   正在进行的作业因 Adobe Campaign 服务器已关闭而中断。

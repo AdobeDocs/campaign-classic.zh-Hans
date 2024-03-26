@@ -2,13 +2,13 @@
 product: campaign
 title: 使用分组管理进行查询
 description: 了解如何使用分组管理执行查询
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Query Editor, Workflows
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 4%
+source-wordcount: '263'
+ht-degree: 6%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 4%
 
    ![](assets/query_editor_nveau_70.png)
 
-1. 在 **[!UICONTROL Data filtering]** 中，选择 **[!UICONTROL Filtering conditions]**。转到 **[!UICONTROL Target elements]** 窗口，然后单击 **[!UICONTROL Next]**.
+1. 在 **[!UICONTROL Data filtering]**，选择 **[!UICONTROL Filtering conditions]**. 转到 **[!UICONTROL Target elements]** 窗口，然后单击 **[!UICONTROL Next]**.
 1. 在 **[!UICONTROL Data grouping]** 窗口中，选择 **[!UICONTROL Email domain]** 通过单击 **[!UICONTROL Add]**.
 
    此数据分组窗口仅在 **[!UICONTROL Handle groupings (GROUP BY + HAVING]**)框已被选中。

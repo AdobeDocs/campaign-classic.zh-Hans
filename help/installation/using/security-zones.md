@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '1475'
-ht-degree: 2%
+source-wordcount: '1458'
+ht-degree: 1%
 
 ---
 
@@ -223,7 +223,7 @@ ht-degree: 2%
 
 
 
-## 推荐
+## 推荐做法
 
 * 确保在subNetwork中不允许使用反向代理。 如果是这种情况， **所有** 将检测到来自此本地IP的流量，因此将信任该流量。
 

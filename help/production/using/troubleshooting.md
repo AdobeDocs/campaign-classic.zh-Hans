@@ -3,7 +3,7 @@ product: campaign
 title: 生产疑难解答
 description: 了解与Adobe Campaign配置、监控、升级过程、数据处理和数据库维护过程相关的生产故障排除过程
 feature: Monitoring, Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
@@ -11,7 +11,7 @@ exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 18%
+ht-degree: 15%
 
 ---
 

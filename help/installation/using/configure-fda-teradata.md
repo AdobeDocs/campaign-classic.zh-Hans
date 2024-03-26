@@ -3,14 +3,14 @@ product: campaign
 title: 配置对Teradata的访问权限
 description: 了解如何在FDA中配置对Teradata的访问权限
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1636'
 ht-degree: 1%
 
 ---
@@ -101,12 +101,12 @@ ht-degree: 1%
 
 连接器支持以下选项：
 
-| Option | 说明 |
+| 选项 | 说明 |
 |---|---|
 | TD_MAX_SESSIONS | 指定Teradata并行传输程序可以为操作员作业获取的最大登录会话数。 |
 | 时区名称 | 服务器时区的名称。 |
-| 字符集 | 用于配置Teradata字符集。 <br>[有关更多信息，请参阅此页面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
-| IANAAppCodePage | ODBC应用程序代码页。 <br>[有关更多信息，请参阅此页面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
+| 字符集 | 用于配置Teradata字符集。 <br>有关详细信息，请参见 [此页面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
+| IANAAppCodePage | ODBC应用程序代码页。 <br>有关详细信息，请参见 [此页面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
 
 ### 添加其他ODBC外部帐户 {#add-external}
 

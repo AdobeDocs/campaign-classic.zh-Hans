@@ -3,7 +3,7 @@ product: campaign
 title: 测试迁移
 description: 测试迁移
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 4%
+source-wordcount: '722'
+ht-degree: 1%
 
 ---
 
@@ -165,7 +165,7 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> 错误<br /> </td> 
-   <td> Microsoft CRM、Salesforce、Oracle CRM On Demand 操作活动不再可用。要配置Adobe Campaign与CRM系统之间的数据同步，您需要使用 <a href="../../workflow/using/crm-connector.md" target="_blank">CRM连接器</a> 定位活动。<br /> </td>
+   <td> Microsoft CRM、Salesforce、OracleCRM按需操作活动不再可用。 要配置Adobe Campaign与CRM系统之间的数据同步，您需要使用 <a href="../../workflow/using/crm-connector.md" target="_blank">CRM连接器</a> 定位活动。<br /> </td>
   </tr> 
  </tbody> 
 </table>

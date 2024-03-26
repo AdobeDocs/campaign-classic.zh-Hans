@@ -9,7 +9,7 @@ exl-id: 728b509f-2755-48df-8b12-449b7044e317
 source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -172,7 +172,7 @@ SQL字段约束如下：
 
 浏览以下链接以了解更多信息：
 
-* [架构入门](about-schema-reference.md)
+* [模式入门](about-schema-reference.md)
 * [模式结构](schema-structure.md)
 * [密钥管理](database-keys.md)
 * [链接管理](database-links.md)

@@ -10,8 +10,8 @@ content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 2%
+source-wordcount: '920'
+ht-degree: 1%
 
 ---
 
@@ -128,13 +128,13 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 
 可选参数列表如下所示：
 
-| Option | 说明 |
+| 选项 | 说明 |
 |:-:|:-:|
 | appName（旧版） | 在上传公钥的旧版Oath应用程序中注册的OAuth应用程序的AppID。 有关更多信息，请参阅此[页面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
-| authGatewayEndpoint（旧版） | 用于获取网关令牌的URL。 默认: ```https://api.omniture.com``` |
+| authGatewayEndpoint（旧版） | 用于获取网关令牌的URL。 默认： ```https://api.omniture.com``` |
 | authPrivateKey（旧版） | 旧版Oath应用程序中上传的私钥、公共部分，使用XtkKey选项加密的AES： ```cryptString("PRIVATE_KEY")``` |
 | disableAuth（旧版） | 禁用身份验证，只有某些开发管道端点接受不使用网关令牌进行连接。 |
-| discoverPipelineEndpoint | 用于查找要用于此租户的管道服务端点的URL。 默认: ```https://producer-pipeline-pnw.adobe.net``` |
+| discoverPipelineEndpoint | 用于查找要用于此租户的管道服务端点的URL。 默认： ```https://producer-pipeline-pnw.adobe.net``` |
 | dumpStatePeriodSec | 中的两个内部状态进程转储之间的周期 ```var/INSTANCE/pipelined.json.``` <br> 内部状态也可在此处按需访问： ```http://INSTANCE:7781/pipelined/status``` |
 | forcedPipelineEndpoint | 禁用检测PipelineServicesEndpoint以强制执行该操作 |
 | monitorServerPort | 管道化进程将侦听此端口，以在此处提供内部状态进程： ```http://INSTANCE:PORT/pipelined/status```. <br>默认为7781 |

@@ -8,7 +8,7 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '554'
 ht-degree: 3%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 3%
 * 报表不必使用在单元格级别定义的特定格式。 最好使用 **[!UICONTROL Form rendering]** 定义表中单元格的格式。 此 **[!UICONTROL Form rendering]** 可通过 **[!UICONTROL Administration > Configuration > Form rendering]**.
 * 我们不建议插入HTML内容。
 * 如果报告包含多个表格、图表等， 键入元素，它们将被一个导出到另一个下。
-* 您可以在单元格中强制回车：此配置将保留在Excel中。 如需详细信息，请参阅[此部分](../../reporting/using/creating-a-table.md#defining-cell-format)。
+* 您可以在单元格中强制回车：此配置将保留在Excel中。 如需详细信息，请参阅[此小节](../../reporting/using/creating-a-table.md#defining-cell-format)。
 
 ### 延迟导出 {#postpone-the-export}
 

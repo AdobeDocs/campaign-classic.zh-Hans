@@ -8,8 +8,8 @@ feature: Typology Rules, Campaigns
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 10%
+source-wordcount: '994'
+ht-degree: 8%
 
 ---
 
@@ -81,10 +81,10 @@ ht-degree: 10%
    * 筛选用户定义的规则。
    * 地址或标识符上的重复数据删除规则（如有必要，应用）。
 
-1. 压力规则.
+1. 压力规则。
 1. 容量规则。
 1. 控制规则（如果在定向结束时应用）。
-1. 控制规则（如果在开始个性化时应用）。如果用户规则（过滤/压力/电容）已过期且需要重新计算，则将在此步骤中应用这些规则。
+1. 控制规则（如果在开始个性化时应用）。 如果用户规则（过滤/压力/电容）已过期且需要重新计算，则将在此步骤中应用这些规则。
 1. 控制规则（如果在个性化结束时应用）。
 
 >[!NOTE]
@@ -132,7 +132,7 @@ ht-degree: 10%
 >[!NOTE]
 >
 >关联管理不适用于 **[!UICONTROL Filtering]** 类型。\
->相关性在Adobe Campaign服务器上的实例配置文件中定义。 如需详细信息，请参阅[此部分](../../installation/using/about-initial-configuration.md)。
+>相关性在Adobe Campaign服务器上的实例配置文件中定义。 如需详细信息，请参阅[此小节](../../installation/using/about-initial-configuration.md)。
 
 ### 活动优化和分布式营销 {#campaign-optimization-and-distributed-marketing}
 

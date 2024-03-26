@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 数据模式
+title: 数据架构
 description: Campaign数据架构入门
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Schema Extension
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 ---
 
-# 数据模式{#data-schemas}
+# 数据架构{#data-schemas}
 
 ## 原则 {#principles}
 

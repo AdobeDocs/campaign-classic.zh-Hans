@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 配置并发送投放
+title: 配置和发送投放
 description: 了解如何配置和发送投放
 badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
 badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
@@ -9,12 +9,12 @@ role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 12%
+source-wordcount: '1527'
+ht-degree: 11%
 
 ---
 
-# 配置并发送投放 {#configuring-and-sending-the-delivery}
+# 配置和发送投放 {#configuring-and-sending-the-delivery}
 
 ## 权限{#delivery-permissions}
 
@@ -64,7 +64,7 @@ ht-degree: 12%
 * [了解投放失败](understanding-delivery-failures.md)
 * [关于邮件跟踪](about-message-tracking.md)
 
-## 计划投放发送 {#scheduling-the-delivery-sending}
+## 安排发送投放 {#scheduling-the-delivery-sending}
 
 您可以通过计划投放来延迟消息发送。
 
@@ -141,7 +141,7 @@ ht-degree: 12%
    >
    >确保最后批次不超过投放截止日期，投放截止日期在中定义 **[!UICONTROL Validity]** 选项卡。 否则，某些消息可能不会发送。
    >
-   >在配置最后批次时，还必须留出足够的时间进行重试。 请参阅[此章节](steps-sending-the-delivery.md#configuring-retries)。
+   >在配置最后批次时，还必须留出足够的时间进行重试。 请参阅[此小节](steps-sending-the-delivery.md#configuring-retries)。
 
 1. 要监控您的发送，请转到投放日志。 请参阅[此页](delivery-dashboard.md#delivery-logs-and-history)。
 
@@ -195,7 +195,7 @@ ht-degree: 12%
 
   >[!IMPORTANT]
   >
-  >对于托管或混合安装，如果已升级到 [增强MTA](sending-with-enhanced-mta.md)， **[!UICONTROL Delivery duration]** 只有将设置为时，才会使用Campaign电子邮件投放中的设置 **3.5天或以下**. 如果定义的值超过 3.5 天，则不会将其考虑在内。
+  >对于托管或混合安装，如果已升级到 [增强MTA](sending-with-enhanced-mta.md)， **[!UICONTROL Delivery duration]** 只有将设置为时，才会使用Campaign电子邮件投放中的设置 **3.5天或以下**. 如果定义的值超过3.5天，则不会将其考虑在内。
 
 * **资源的有效期限**：和 **[!UICONTROL Validity limit]** 字段用于已上传的资源，主要用于镜像页面和图像。 本页上的资源仅在限制时间内有效（以节省磁盘空间）。
 

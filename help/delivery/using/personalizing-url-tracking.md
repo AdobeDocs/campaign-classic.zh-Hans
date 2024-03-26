@@ -10,7 +10,7 @@ exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 10%
 
 跟踪的URL以树形式列在中心窗口中。
 
-您可以为消息的每个URL单独激活或取消激活跟踪。 如需详细信息，请参阅[此部分](how-to-configure-tracked-links.md)。
+您可以为消息的每个URL单独激活或取消激活跟踪。 如需详细信息，请参阅[此小节](how-to-configure-tracked-links.md)。
 
 此 **[!UICONTROL Advanced]** 选项卡允许您个性化跟踪URL和开始URL的计算公式。
 

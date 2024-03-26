@@ -9,7 +9,7 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2401'
 ht-degree: 0%
 
 ---
@@ -667,7 +667,7 @@ SOAP方法执行可以从填充的 **`<leave>`** 标签进行标记。
 
 此 **exprIn** 属性包含作为参数传递的数据的位置。
 
-**示例**:
+**示例**：
 
 ```xml
 <leave>

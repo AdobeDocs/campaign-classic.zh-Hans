@@ -3,12 +3,12 @@ product: campaign
 title: 配置对Microsoft SQL Server的访问权限
 description: 了解如何配置对Microsoft SQL Server的访问权限
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 1%
+source-wordcount: '471'
+ht-degree: 2%
 
 ---
 
@@ -111,7 +111,7 @@ ht-degree: 1%
 
 连接器支持以下选项：
 
-| Option | 说明 |
+| 选项 | 说明 |
 |---|---|
 | 身份验证 | 连接器支持的身份验证类型。 当前支持的值： ActiveDirectoryMSI。 <br> 有关更多信息，请参阅示例8 [Microsoft文档](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
 | 加密 | 指定连接是否通过网络使用TLS加密。 可能的值包括 **是/必需（18.0及更高版本）**， **no/optional（18.0及更高版本）**、和 **strict（18.0及更高版本）**. 默认值设置为 **是** 版本18.0及更高版本中的 **否** 在以前的版本中。 <br>有关详细信息，请参见 [Microsoft文档](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |

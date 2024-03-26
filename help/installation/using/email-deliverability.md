@@ -3,7 +3,7 @@ product: campaign
 title: 技术电子邮件配置
 description: 了解如何配置Campaign以在投放电子邮件时控制实例的输出
 feature: Installation, Deliverability
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 1%
+source-wordcount: '3100'
+ht-degree: 0%
 
 ---
 
@@ -372,7 +372,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 对于每个 **IPAffinity** 元素，您需要声明可用于计算机的IP地址。
 
-示例:
+例如：
 
 ```
 <IPAffinity localDomain="<domain>" name="default">
@@ -396,14 +396,14 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 在上一个示例中，在正常条件下，地址将按如下方式进行分配：
 
-    * &quot;1&quot;: 5 / (5+5+1) = 45%
-    * &quot;2&quot;: 5 / (5+5+1) = 45%
-    * &quot;3&quot;: 1 / (5+5+1) = 10%
+    * “1”：5 / (5+5+1) = 45%
+    * “2”：5 / (5+5+1) = 45%
+    * “3”：1 / (5+5+1) = 10%
 
 例如，如果第一个地址不能用于特定MX，则将按如下方式发送消息：
 
-    * &quot;2&quot;: 5 / (5+1) = 83%
-    * &quot;3&quot;: 1 / (5+1) = 17%
+    * “2”：5 / (5+1) = 83%
+    * “3”：1 / (5+1) = 17%
 
 * **includeDomains**：用于为属于特定域的电子邮件保留此IP地址。 这是一个掩码列表，其中可以包含一个或多个通配符(&#39;&#42;&#39;)。 如果未指定属性，则所有域都可以使用此IP地址。
 

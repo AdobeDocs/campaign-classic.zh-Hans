@@ -9,8 +9,8 @@ role: User
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 3%
+source-wordcount: '1164'
+ht-degree: 2%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 3%
 
    ![](assets/line_message_01.png)
 
-1. 使用标识投放 **[!UICONTROL Label]**， **[!UICONTROL Delivery code]**、和  **[!UICONTROL Description]**. 如需详细信息，请参阅[此部分](steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
+1. 使用标识投放 **[!UICONTROL Label]**， **[!UICONTROL Delivery code]**、和  **[!UICONTROL Description]**. 如需详细信息，请参阅[此小节](steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
 
 1. 单击 **[!UICONTROL Continue]** 以创建您的投放。
 
@@ -164,7 +164,7 @@ An **[!UICONTROL Image and link]** [!DNL LINE] 投放是以图像的形式发送
 
 您可以使用：
 
-* a **[!UICONTROL Personalized image]**,
+* a **[!UICONTROL Personalized image]**，
 
   >[!NOTE]
   >
@@ -180,11 +180,11 @@ An **[!UICONTROL Image and link]** [!DNL LINE] 投放是以图像的形式发送
 
   可根据屏幕大小定义图像：
 
-   * 1040px
-   * 700px
-   * 460px
-   * 300px
-   * 240px
+   * 1040像素
+   * 700像素
+   * 460像素
+   * 300像素
+   * 240像素
 
   >[!CAUTION]
   >

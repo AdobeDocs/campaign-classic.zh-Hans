@@ -2,13 +2,13 @@
 product: campaign
 title: 开始和结束
 description: 了解有关开始和结束工作流活动的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 exl-id: 56dfbaf3-93de-4ade-b4ad-9b54d239c7a5
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 4%
+source-wordcount: '140'
+ht-degree: 9%
 
 ---
 
@@ -20,16 +20,16 @@ ht-degree: 4%
 
 * **[!UICONTROL Start]**
 
-   执行工作流时，会从没有集客过渡的活动和开始类型活动开始。
+  执行工作流时，会从没有集客过渡的活动和开始类型活动开始。
 
-   ![](assets/s_user_segmentation_start_stop.png)
+  ![](assets/s_user_segmentation_start_stop.png)
 
 * **[!UICONTROL End]**
 
-   您可以配置 **[!UICONTROL End]** 活动以中断所有正在进行的任务。 要实现此目的，请双击该活动以显示其属性，然后选中相应的选项。
+  您可以配置 **[!UICONTROL End]** 活动以中断所有正在进行的任务。 要实现此目的，请双击活动以显示其属性，然后选中相应的选项。
 
-   ![](assets/s_user_segmentation_end.png)
+  ![](assets/s_user_segmentation_end.png)
 
-   启用结束活动后，将自动删除工作表中的数据。 如果这不是必需的，并且为了避免不必要的加载，您可以选择在最后一个活动输出中禁用过渡。 例如，在投放输出中，如果未计划任何进程，请取消选中相关选项，如下所示：
+  启用结束活动后，将自动删除工作表中的数据。 如果不需要此操作，并且为了避免不必要的加载，您可以选择在最后一个活动输出中禁用过渡。 例如，在投放输出中，如果未计划任何流程，则取消选中相关选项，如下所示：
 
-   ![](assets/s_advuser_delivery_option_no_output.png)
+  ![](assets/s_advuser_delivery_option_no_output.png)

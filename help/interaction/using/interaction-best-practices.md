@@ -3,15 +3,15 @@ product: campaign
 title: Adobe Campaign Classic交互最佳实践
 description: 此部分介绍在Adobe Campaign Classic中管理“交互”模块的最佳实践方法
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 0%
+source-wordcount: '1207'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Adobe Campaign中的交互需要仔细管理才能高效运行。 您必须在联系人数量与优惠类别和优惠数量之间找到平衡。 如果不仔细处理这些因素，您的Adobe Campaign实例可能会遇到问题。
 
-### 实施 {#implementation}
+### 实现 {#implementation}
 
 下面列出了实施和配置交互时应牢记的重要元素。
 
@@ -74,7 +74,7 @@ Adobe Campaign中的交互需要仔细管理才能高效运行。 您必须在�
 
 如果您在投放中选择的选件空间未设置HTML渲染功能，则您将不会在投放菜单中看到该选件，并且将无法选择它。 同样，这与在扩充活动中选择的优惠空间无关。
 
-在下面的示例中，HTML呈现函数在下拉列表中可用，因为投放中选择的选件空间具有呈现函数：
+在下面的示例中，HTML渲染函数在下拉列表中可用，因为投放中选择的选件空间具有渲染函数：
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 

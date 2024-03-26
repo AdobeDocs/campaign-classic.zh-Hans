@@ -1,9 +1,9 @@
 ---
 product: campaign
-title: 卸载 Campaign
+title: 卸载Campaign
 description: 了解如何卸载Campaign
 feature: Installation
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 ---
 
-# 卸载 Campaign{#uninstalling-campaign}
+# 卸载Campaign{#uninstalling-campaign}
 
 
 
@@ -23,7 +23,7 @@ ht-degree: 18%
 >
 >这些步骤将永久卸载Adobe Campaign。 所有数据都将丢失。
 
-**RHEL:**
+**RHEL：**
 
 ```
 rpm -e nlserver6-v7
@@ -32,7 +32,7 @@ groupdel neolane
 rm -rf /user/local/neolane
 ```
 
-**Debian:**
+**Debian：**
 
 ```
 apt purge nlserver6-v7

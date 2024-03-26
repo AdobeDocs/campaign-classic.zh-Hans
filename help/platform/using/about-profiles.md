@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 开始使用用户档案
+title: 开始使用配置文件
 description: 在Adobe Campaign中使用用户档案
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Profiles, Audiences
@@ -9,12 +9,12 @@ level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 60%
+source-wordcount: '839'
+ht-degree: 42%
 
 ---
 
-# 开始使用用户档案{#about-profiles}
+# 开始使用配置文件{#about-profiles}
 
 
 
@@ -30,15 +30,15 @@ ht-degree: 60%
 
 您可以使用 Adobe Campaign 管理用户档案的整个生命周期：创建、导入、定位、操作跟踪、更新等。
 
-每个用户档案都对应一个数据库条目。其中包含了定位、限定和跟踪个人所需的所有必要信息。
+每个概要文件都与一个数据库条目匹配。 其中包含了定位、限定和跟踪个人所需的所有必要信息。
 
-可根据存储空间来识别用户档案。这意味着可根据收件人、访客、操作员、订阅者、潜在客户等来识别用户档案。
+可以根据存储空间识别配置文件。 这意味着配置文件可以匹配：收件人、访客、操作员、订阅者、潜在客户等。
 
 ## 收件人用户档案 {#recipient-profiles}
 
 投放工作的收件人会以用户档案的形式存储在数据库中，并包含其所链接的信息，如姓氏、名字、地址、订阅、投放项目等。创建活动时，可以根据简单或高级标准从数据库中选定投放工作的目标客户。
 
-也可以针对其用户档案存储于文件（而非数据库）中的收件人创建活动。这些称为“外部”投放。如需有关此类投放的详细信息，请参阅[此页面](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)。
+您还可以创建针对其用户档案存储在数据库中而非文件中的收件人的营销活动。 这些称为“外部”投放。 如需有关此类投放的详细信息，请参阅[此页面](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)。
 
 创建收件人用户档案的主要方法如下：
 
@@ -52,7 +52,7 @@ ht-degree: 60%
 
 ## 用户档案和目标 {#profiles-and-targets}
 
-此 **[!UICONTROL Profiles and targets]** 利用链接，可显示存储在Adobe Campaign数据库中的收件人。 您可以创建新的收件人、编辑现有的收件人以及访问其用户档案。有关详细信息，请参见[此页面](../../platform/using/editing-a-profile.md)。
+此 **[!UICONTROL Profiles and targets]** 利用链接，可显示存储在Adobe Campaign数据库中的收件人。 您可以创建新收件人、编辑现有收件人并访问其配置文件。 有关详细信息，请参见[此页面](../../platform/using/editing-a-profile.md)。
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
@@ -66,7 +66,7 @@ ht-degree: 60%
 
 收件人页面允许您对用户档案执行常见的操作：编辑、更新、添加、删除、排序。
 
-如需更多高级用户档案操作，您需要编辑 Adobe Campaign 树状结构。为此可单击 Adobe Campaign 主页上的 **[!UICONTROL Explorer]** 链接。
+如需进行更高级的配置文件操作，您需要编辑Adobe Campaign树。 要执行此操作，请单击 **[!UICONTROL Explorer]** Adobe Campaign主页上的链接。
 
 默认情况下，收件人存储在 **[!UICONTROL Profiles and Targets > Recipients]** 树节点。 您可通过此视图创建收件人，以及：
 
@@ -76,7 +76,7 @@ ht-degree: 60%
 * 导出收件人 —  [了解详情](../../platform/using/exporting-and-importing-profiles.md)
 * 创建收件人组 —  [了解详情](../../platform/using/creating-and-managing-lists.md)
 
-要访问各种高级功能和配置，需单击 **[!UICONTROL Explorer]** 图标。
+要访问高级功能和配置，您需要单击 **[!UICONTROL Explorer]** 图标。
 
 ![](assets/d_ncs_user_interface01.png)
 
@@ -84,15 +84,15 @@ Adobe Campaign Explorer的常规布局显示在中 [此页面](../../platform/us
 
 >[!NOTE]
 >
->也可以单击 **[!UICONTROL Profiles and targets > Recipients]** 链接，从 Adobe Campaign 树状结构中显示该列表的高级视图。可根据您的需求配置列表的显示。您可以添加或删除列、定义列顺序、对数据排序等。 有关列表显示配置的说明，请参见 [此页面](../../platform/using/adobe-campaign-ui-lists.md).
+>Adobe Campaign您还可以通过单击 **[!UICONTROL Profiles and targets > Recipients]** 链接。 列表显示可以根据您的需求进行配置。 您可以添加或删除列、定义列顺序、对数据排序等。 有关列表显示配置的说明，请参见 [此页面](../../platform/using/adobe-campaign-ui-lists.md).
 >
->您也可以定义收件人视图。有关此功能的更多信息，请参阅 [本节](../../platform/using/access-management-folders.md).
+>您还可以定义收件人视图。 有关此功能的更多信息，请参阅 [本节](../../platform/using/access-management-folders.md).
 
 ## 使用中的用户档案 {#active-profiles}
 
 使用中的用户档案是指可计费开立账单的用户档案。
 
-计费账单的开立仅会考虑&#x200B;**使用中**&#x200B;的用户档案。如果用户档案在过去 12 个月通过任何渠道被定位或进行了传输，则该用户档案被视为使用中。
+计费仅涉及以下用户档案： **活动**. 如果用户档案在过去 12 个月通过任何渠道被定位或进行了传输，则该用户档案被视为使用中。
 
 被多次投放定向的用户档案只会被计数一次。
 

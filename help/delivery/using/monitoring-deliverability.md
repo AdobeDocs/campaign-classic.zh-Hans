@@ -9,8 +9,8 @@ role: User, Admin
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 2%
+source-wordcount: '547'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 您还可以使用以下工具：
 
-* 此 **[!UICONTROL Delivery throughput]** 报告提供给定时段内整个平台的吞吐量概览。 有关更多信息，请参阅[此章节](../../reporting/using/global-reports.md#delivery-throughput)。
+* 此 **[!UICONTROL Delivery throughput]** 报告提供给定时段内整个平台的吞吐量概览。 有关更多信息，请参阅[此小节](../../reporting/using/global-reports.md#delivery-throughput)。
 * 每个投放为不同的Internet服务提供商(ISP)生成广播统计报告。 其中显示了一些可能会影响您的可投放性的数据质量和信誉指标，包括以下数字：
    * **[!UICONTROL Hard bounces]** 指示数据质量。 此数字应小于2%。
    * **[!UICONTROL Soft bounces]** 指示信誉。 对于任何给定的ISP，此数字不应大于10%。

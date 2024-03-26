@@ -2,13 +2,13 @@
 product: campaign
 title: 优惠引擎控制
 description: 优惠引擎控制
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows, Offers
 topic-tags: technical-workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 30%
+source-wordcount: '59'
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 30%
 
 
 
-下面详述的工作流随 **使用执行实例控制优惠引擎** 默认模块。
+下面详细介绍的工作流随 **使用执行实例控制优惠引擎** 默认模块。
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ ht-degree: 30%
   <tr> 
    <td> <span class="uicontrol">建议同步</span> <br /> </td> 
    <td> <span class="uicontrol">propositionSynch</span> <br /> </td> 
-   <td> 此工作流可在营销实例和用于交互的执行实例之间同步建议。<br /> </td> 
+   <td> 此工作流在营销实例和用于交互的执行实例之间同步建议。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

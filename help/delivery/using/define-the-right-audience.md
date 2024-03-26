@@ -34,7 +34,7 @@ ht-degree: 4%
 
 这些映射将呈现 [在此部分中](selecting-a-target-mapping.md).
 
-您还可以创建和使用自定义的目标映射。 如需详细信息，请参阅[此部分](../../configuration/using/target-mapping.md)。
+您还可以创建和使用自定义的目标映射。 如需详细信息，请参阅[此小节](../../configuration/using/target-mapping.md)。
 
 ## 外部收件人 {#external-recipients}
 

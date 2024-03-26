@@ -10,7 +10,7 @@ exl-id: 099161b4-b4cb-433c-aed6-71157269a536
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '392'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 2%
 * **sqltable** 在架构的主元素中，要指定表，请执行以下操作：
 * **sqlname** 在每个属性中，指定列。
 
-**示例**:
+**示例**：
 
 ```
 <element label="Individual" name="individual" sqltable="individual">
@@ -80,7 +80,7 @@ ht-degree: 2%
 
 为源架构的每个键和链接声明隐式声明索引。 可以通过指定 **noDbIndex=&quot;true&quot;** 属性：
 
-**示例**:
+**示例**：
 
 ```
 <key internal="true" name="customer" noDbIndex="true">

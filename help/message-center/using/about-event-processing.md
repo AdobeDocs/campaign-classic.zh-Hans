@@ -3,15 +3,15 @@ product: campaign
 title: 事件处理
 description: 了解如何在Adobe Campaign Classic中处理事务性消息传递事件
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 2%
+source-wordcount: '700'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 在事务型消息的上下文中，事件由外部信息系统生成，并通过发送到Adobe Campaign **[!UICONTROL PushEvent]** 和 **[!UICONTROL PushEvents]** 方法(请参阅 [事件描述](../../message-center/using/event-description.md))。
 
-此事件包含链接到事件的数据，如其 [type](../../message-center/using/creating-event-types.md) （订单确认、网站帐户创建等）、电子邮件地址或手机号码以及其他允许您在投放前扩充和个性化事务型消息的信息（客户联系信息、消息语言、电子邮件格式等）。
+此事件包含链接到事件的数据，如其 [type](../../message-center/using/creating-event-types.md) （订单确认、在网站上创建帐户等）、电子邮件地址或手机号码以及其他允许您在投放前扩充和个性化事务型消息的信息（客户联系信息、消息语言、电子邮件格式等）。
 
 事件数据示例：
 

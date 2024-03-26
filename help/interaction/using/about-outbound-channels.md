@@ -3,12 +3,12 @@ product: campaign
 title: 关于出站渠道
 description: 关于出站渠道
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 6e32dadc-097f-4380-b931-88468f3cb3b1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 5%
+source-wordcount: '154'
+ht-degree: 10%
 
 ---
 

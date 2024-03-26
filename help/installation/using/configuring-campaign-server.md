@@ -1,9 +1,9 @@
 ---
 product: campaign
-title: 配置 Campaign 服务器
-description: 配置 Campaign 服务器
+title: 配置Campaign服务器
+description: 配置Campaign服务器
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 3%
+source-wordcount: '1575'
+ht-degree: 1%
 
 ---
 
@@ -167,7 +167,7 @@ Adobe Campaign使用以下JSP页：
 * nms/mobile/1/registerIOS.jssp
 * nms/mobile/1/registerAndroid.jssp
 
-**示例:**
+**示例：**
 
 可以防止从外部进行客户端计算机连接。 要实现此目的，只需限制执行 **soaprouter.jsp** 并且仅授权执行镜像页面、病毒链接、Web窗体和公共资源。
 
@@ -266,7 +266,7 @@ sh
 
 必须在重定向配置中通过指定冗余服务器的URL **serverConf.xml** 文件。
 
-**示例:**
+**示例：**
 
 ```
 <spareserver enabledIf="$(hostname)!='front_srv1'" id="1" url="http://front_srv1:8080" />

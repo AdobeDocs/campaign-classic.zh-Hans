@@ -9,8 +9,8 @@ role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
 workflow-type: tm+mt
-source-wordcount: '2573'
-ht-degree: 17%
+source-wordcount: '2570'
+ht-degree: 12%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 17%
    <td> 地址被隔离。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 未指定地址 </td> 
+   <td> 地址未指定 </td> 
    <td> 硬 </td> 
    <td> 7 </td> 
    <td> 没有给收件人地址。<br /> </td> 
@@ -118,7 +118,7 @@ ht-degree: 17%
    <td> 无效域 </td> 
    <td> 柔光 </td> 
    <td> 2 </td> 
-   <td> 电子邮件地址的域不正确或不再存在。 此用户档案将被重新定向，直到错误计数达到 5 为止。此后，该记录将设置为隔离状态，并且以后不会再进行重试。<br /> </td> 
+   <td> 电子邮件地址的域不正确或不再存在。 此用户档案将被重新定向，直到错误计数达到 5 为止。之后，该记录将设置为隔离状态，并且以后不会再重试。<br /> </td> 
   </tr> 
   <tr> 
    <td> 邮箱已满 </td> 
@@ -136,7 +136,7 @@ ht-degree: 17%
    <td> 未定义 </td> 
    <td> 未定义 </td> 
    <td> 0 </td> 
-   <td> 地址正在进行鉴别，因为错误尚未递增。 当服务器发送新的错误消息时，会发生此类错误： 这可能是一个孤立的错误，但如果再次发生，则错误计数会增加，从而提醒技术团队。然后，他们可以通过以下方式执行报文分析并确定此错误的资格： <span class="uicontrol">管理</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">不可交付结果管理</span> 树结构中的节点。<br /> </td> 
+   <td> 地址正在进行鉴别，因为错误尚未递增。 当服务器发送新错误消息时，会发生此类错误：它可能是孤立的错误，但如果再次发生，错误计数会增加，这会提醒技术团队。 然后，他们可以通过以下方式执行报文分析并确定此错误的资格： <span class="uicontrol">管理</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">不可交付结果管理</span> 树结构中的节点。<br /> </td> 
   </tr> 
   <tr> 
    <td> 不符合优惠资格 </td> 
@@ -160,7 +160,7 @@ ht-degree: 17%
    <td> 不合格地址 </td> 
    <td> 已忽略 </td> 
    <td> 15 </td> 
-   <td> 邮寄地址不合格.<br /> </td> 
+   <td> 邮寄地址不合格。<br /> </td> 
   </tr> 
   <tr> 
    <td> 不可到达 </td> 
@@ -172,12 +172,12 @@ ht-degree: 17%
    <td> 用户未知 </td> 
    <td> 硬 </td> 
    <td> 1 </td> 
-   <td> 地址不存在。 不再尝试对该用户档案进行投放。<br /> </td> 
+   <td> 地址不存在。 不再尝试对此用户档案进行投放。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 在投放临时失败后重试 {#retries-after-a-delivery-temporary-failure}
+## 投放临时失败后重试 {#retries-after-a-delivery-temporary-failure}
 
 如果消息因 **柔光** 或 **已忽略** 错误是暂时性的，在投放持续期间将执行重试。
 
@@ -198,7 +198,7 @@ ht-degree: 17%
 消息在发送后可能会立即失败（同步错误），或稍后失败（异步错误）。
 
 * 同步错误：Adobe Campaign投放服务器联系的远程邮件服务器立即返回错误消息，不允许将投放发送到用户档案服务器。 Adobe Campaign会对每个错误进行鉴别，以确定是否应隔离相关的电子邮件地址。 请参阅[退回邮件鉴别](#bounce-mail-qualification)。
-* 异步错误：接收服务器会在迟些时间发送退回邮件或重新发送 SR。此邮件已加载到应用程序用来标记有错误邮件的技术邮箱中。 最晚的异步错误，可能发生在发送投放的一周之后。
+* 异步错误：接收服务器稍后会重新发送退回邮件或重新发送SR。 此邮件已加载到应用程序用来标记有错误邮件的技术邮箱中。 最晚的异步错误，可能发生在发送投放的一周之后。
 
   >[!NOTE]
   >
@@ -230,7 +230,7 @@ Adobe Campaign平台允许您通过退回邮件功能管理电子邮件投放失
 >
 >* 中的退回鉴别 **[!UICONTROL Delivery log qualification]** 表不再用于 **同步** 投放失败错误消息。 增强型MTA可确定退回类型并进行鉴别，然后将该信息发回至Campaign。
 >
->* ****&#x200B;异步退回仍然由 inMail 流程通过 **[!UICONTROL Inbound email]** 规则进行鉴别。有关此内容的更多信息，请参阅 [电子邮件管理规则](#email-management-rules).
+>* **异步** 退件仍由inMail流程通过 **[!UICONTROL Inbound email]** 规则。 有关此内容的更多信息，请参阅 [电子邮件管理规则](#email-management-rules).
 >
 >* 对于使用增强MTA的实例 **不使用Webhook**， **[!UICONTROL Inbound email]** 规则还将用于处理来自Enhanced MTA的同步退回电子邮件，使用的电子邮件地址与异步退回电子邮件相同。
 

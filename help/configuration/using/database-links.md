@@ -5,13 +5,13 @@ description: 数据库映射
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
-source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
+exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
+source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 2%
 
 ---
-
 
 # 链接管理 {#links--relation-between-tables}
 
@@ -227,7 +227,7 @@ ht-degree: 2%
 
 浏览以下链接以了解更多信息：
 
-* [架构入门](about-schema-reference.md)
+* [模式入门](about-schema-reference.md)
 * [模式结构](schema-structure.md)
 * [数据库映射](database-mapping.md)
 * [密钥管理](database-keys.md)

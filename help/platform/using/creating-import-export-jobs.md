@@ -37,7 +37,7 @@ ht-degree: 8%
   ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
 
 
-所有这些打开的数据导入或导出向导。 这些部分详细说明了这些术语：
+所有这些打开的数据导入或导出向导。 要了解详情，请参阅以下部分：
 
 * [配置导入作业](../../platform/using/executing-import-jobs.md)
 * [配置导出作业](../../platform/using/executing-export-jobs.md)

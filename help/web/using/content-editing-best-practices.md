@@ -8,8 +8,8 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 7%
+source-wordcount: '566'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 * 早于 **导入HTML页模板** 在Adobe Campaign中，请确保模板打开并在各种浏览器中正确显示。
 * 如果HTML页包含 **javascript脚本**，则需要执行 **无错误** 在编辑器外。
-* 在构建模板时，我们建议向标记添加 **&#39;type’** 属性。`<input>`配置Web应用程序时，编辑器将处理此信息，并帮助用户将数据库的字段链接到表单的字段。
+* 在构建模板时，我们建议添加 **&#39;类型&#39;** 属性至 `<input>` 标记之间。 配置Web应用程序时，编辑器将处理此信息，并帮助用户将数据库的字段链接到表单的字段。
 
   模板中的 HTML 代码示例：
 

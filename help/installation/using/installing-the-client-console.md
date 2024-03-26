@@ -3,15 +3,15 @@ product: campaign
 title: 安装客户端控制台
 description: 了解如何安装客户端控制台
 feature: Installation, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 4%
+source-wordcount: '1131'
+ht-degree: 2%
 
 ---
 
@@ -167,7 +167,7 @@ Adobe建议保留选项 **[!UICONTROL No longer ask this question]** 未选中�
 
 **相关主题**
 
-* [创建实例并登陆](../../installation/using/creating-an-instance-and-logging-on.md).
+* [创建实例并登录](../../installation/using/creating-an-instance-and-logging-on.md).
 * [兼容性矩阵](https://helpx.adobe.com/cn/campaign/kb/compatibility-matrix.html)
 
 ## 教程视频

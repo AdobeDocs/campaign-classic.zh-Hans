@@ -3,7 +3,7 @@ product: campaign
 title: 独立部署
 description: 独立部署
 feature: Installation, Architecture, Deployment
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
@@ -35,8 +35,8 @@ ht-degree: 3%
 此类配置可在管理少于100,000个收件人的列表时运行，例如，可通过以下软件层运行：
 
 * Linux，
-* Apache,
-* PostgreSQL,
+* Apache
+* PostgreSQL，
 * Qmail。
 
 随着卷的增长，此体系结构的一种变体将数据库服务器移动到另一台计算机，以获得更好的性能。
@@ -114,7 +114,7 @@ ht-degree: 3%
    nlserver config -internalpassword
    ```
 
-   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+   如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 1. 创建 **演示** 具有DNS掩码的实例进行跟踪(在本例中， **tracking.campaign.net**)和对客户端控制台的访问权限(在本例中， **console.campaign.net**)。 可通过两种方式来做到这一点：
 
@@ -152,7 +152,7 @@ ht-degree: 3%
    </serverconf>
    ```
 
-   如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#enabling-processes)。
+   如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
 1. 编辑 **serverConf.xml** 文件并指定投放域，然后指定MTA模块用于响应MX类型DNS查询的DNS服务器的IP（或主机）地址。
 

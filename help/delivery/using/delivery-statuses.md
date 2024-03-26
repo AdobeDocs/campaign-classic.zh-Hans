@@ -9,8 +9,8 @@ role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 8%
+source-wordcount: '640'
+ht-degree: 3%
 
 ---
 
@@ -53,7 +53,7 @@ ajouter screenshot -->
    <td> 由于收件人地址错误，该投放未发送给收件人。 该文件被阻止列表、隔离、未提供或重复。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> 已失败<br /> </td> 
+   <td> 失败<br /> </td> 
    <td> 例如，由于地址无效或收件箱已满，投放无法到达收件人。 它还可能链接到个性化块的问题，因为它们可能会在架构与投放映射不匹配时生成错误。 请参阅 <a href="understanding-delivery-failures.md" target="_blank">了解投放失败</a><br /> </td> 
   </tr>
   <tr> 

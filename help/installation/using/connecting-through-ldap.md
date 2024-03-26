@@ -1,9 +1,9 @@
 ---
 product: campaign
-title: 通过 LDAP 连接
+title: 通过LDAP连接
 description: 了解如何使用LDAP登录Campaign
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: installation
 content-type: reference
@@ -11,12 +11,12 @@ topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 2%
+source-wordcount: '1027'
+ht-degree: 1%
 
 ---
 
-# 通过 LDAP 连接{#connecting-through-ldap}
+# 通过LDAP连接{#connecting-through-ldap}
 
 ## 配置Campaign和LDAP {#configuring-campaign-and-ldap}
 

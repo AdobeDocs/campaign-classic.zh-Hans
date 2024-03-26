@@ -1,30 +1,30 @@
 ---
 product: campaign
 title: 关于工作流用例
-description: 了解关于您可以使用Campaign Classic工作流执行的用例的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: 了解关于可使用Campaign Classic工作流执行的用例的更多信息
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 66%
+source-wordcount: '213'
+ht-degree: 30%
 
 ---
 
-# 工作流用例 {#about-workflow-use-cases}
+# 工作流使用案例 {#about-workflow-use-cases}
 
 
 
 在此部分中，您将找到各种利用Campaign工作流功能的用例。
 
-它们将帮助您发现可在其中使用工作流的不同上下文并响应您的需求。
+它们将帮助您发现可使用工作流的不同上下文并响应您的需求。
 
 ## 投放 {#deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
-* [使用本地批准活动](using-the-local-approval-activity.md)
+* [使用本地审批活动](using-the-local-approval-activity.md)
 * [A/B 测试](../../delivery/using/a-b-testing-use-case.md)
 * [发送生日电子邮件](sending-a-birthday-email.md)
 * [加载投放内容](loading-delivery-content.md)
@@ -32,7 +32,7 @@ ht-degree: 66%
 * [具有自定义日期字段的电子邮件扩充](email-enrichment-with-custom-date-fields.md)
 * [自动完成内容创建、编辑和发布](../../delivery/using/automating-via-workflows.md#examples)
 
-## 监测 {#monitoring}
+## 监控 {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
@@ -50,12 +50,12 @@ ht-degree: 66%
 * [丰富数据](enriching-data.md)
 * [使用聚合](using-aggregates.md)
 * [导入使用控制面板生成的密钥加密的数据](../../platform/using/unzip-decrypt.md)
-* [使用安装在控制面板上的密钥加密和导出数据](how-to-use-workflow-data.md#use-case-gpg-encrypt)
+* [使用控制面板上安装的密钥加密和导出数据](how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [使用增量查询每季度更新列表](quarterly-list-update.md)
 * [使用外部重复数据删除活动的合并功能](deduplication-merge.md)
 * [设置循环导入工作流](recurring-import-workflow.md)
 
-## 设定目标 {#designing-queries}
+## 定位 {#designing-queries}
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 

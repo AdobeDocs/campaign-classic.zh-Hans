@@ -3,7 +3,7 @@ product: campaign
 title: 投放执行
 description: 了解有关事务性消息投放执行和监控的更多信息
 feature: Transactional Messaging, Message Center, Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
@@ -11,7 +11,7 @@ exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '240'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->对于托管或混合安装，如果已升级到 [增强MTA](../../delivery/using/sending-with-enhanced-mta.md)，所有事务型消息也可通过Adobe Campaign Enhanced MTA发送，以提升投放能力、吞吐量和退件处理。 所有方面都与标准营销消息相同。
+>对于托管或混合安装，如果已升级到 [增强MTA](../../delivery/using/sending-with-enhanced-mta.md)，所有事务型消息也可通过Adobe Campaign Enhanced MTA发送，以提升投放能力、吞吐量和退件处理。 所有影响与标准营销消息的影响相同。
 
 ## 事务性消息监测 {#transactional-message-monitoring}
 

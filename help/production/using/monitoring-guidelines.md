@@ -3,12 +3,12 @@ product: campaign
 title: 监测准则
 description: 了解监控 Campaign 实例和流程的准则和最佳实践
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 21%
+source-wordcount: '750'
+ht-degree: 18%
 
 ---
 
@@ -126,7 +126,7 @@ SMTP报告按域显示投放统计信息和SMTP错误。 [了解详情](../../pr
 
 *仅限内部部署和混合托管模型*
 
-为了避免在机器上发生问题（无论是物理问题还是系统相关问题）时丢失数据，备份是必不可少的。 [单击此处](../../production/using/backup.md)以了解更多信息。有关恢复过程的说明，请参见 [本节](../../production/using/restoration.md).
+为了避免在机器上发生问题（无论是物理问题还是系统相关问题）时丢失数据，备份是必不可少的。 [单击此处](../../production/using/backup.md) 以了解更多信息。 有关恢复过程的说明，请参见 [本节](../../production/using/restoration.md).
 
 ## Campaign Classic技术原则 {#campaign-classic-technical-principles}
 

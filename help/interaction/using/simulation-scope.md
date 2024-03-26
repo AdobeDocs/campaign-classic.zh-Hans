@@ -11,8 +11,8 @@ topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 5%
+source-wordcount: '250'
+ht-degree: 2%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 5%
 以下项目为必备项：
 
 * 环境或选件类别。
-* 优惠空间.
-* 联系日期. 在联系日期不符合条件的优惠不会考虑在内。
-* 目标群体.
+* 优惠空间。
+* 联系日期。 在联系日期不符合条件的优惠不会考虑在内。
+* 目标人群。
 
   如果您没有在目标上配置过滤器，则将考虑整个收件人表。
 

@@ -3,7 +3,7 @@ product: campaign
 title: 监控流程
 description: 了解如何监测Campaign流程
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3623'
-ht-degree: 1%
+source-wordcount: '3649'
+ht-degree: 0%
 
 ---
 
@@ -155,7 +155,7 @@ ht-degree: 1%
 
   **[!UICONTROL Alert]**：当文件数等于1时，显示此指示器。
 
-  当由于崩溃而缺少进程时，该进程将以红色显示在进程列表中，并由自动重新启动 **监视程序** Adobe Campaign提供的流程。
+  当由于崩溃而缺少某个进程时，该进程将以红色显示在进程列表中，并由自动重新启动 **监视程序** Adobe Campaign提供的流程。
 
 * **[!UICONTROL Number of shared memory segments]**：有关所有Adobe Campaign进程共享的内存区段的信息。
 
@@ -267,7 +267,7 @@ SMTP投放监视报告已集成到Adobe Campaign平台中。 可以通过控制�
 
 此报告的指标列表如下图所示。
 
-1. 发送的消息总数.
+1. 发送的消息总数。
 1. 表示输入/输出消息：
 
    * 蓝线：通过Shaper到达的准备发送的消息，即发送SMTP之前的最后一个阶段（与传入数据一致）。
@@ -436,7 +436,7 @@ Adobe Campaign支持各种部署配置(有关更多信息，请参阅 [本节](.
  <thead> 
   <tr> 
    <th> 部署类型 </th> 
-   <th> 监测 </th> 
+   <th> 监控 </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -490,7 +490,7 @@ Adobe Campaign可提供实例监控工具(netreport)，允许您通过电子邮�
 * 您必须拥有 **netreport.tgz** （Linux安装）或 **netreport.zip** （Windows安装）文件，
 * 我们强烈建议您不要在要监视的计算机上安装监视，
 * 它必须安装在具有JRE或JDK的计算机上，
-* 在Linux中，要监视的计算机必须具有 **bc** 包。 如需详细信息，请参阅[此部分](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages)。
+* 在Linux中，要监视的计算机必须具有 **bc** 包。 如需详细信息，请参阅[此小节](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages)。
 
 ### 安装过程 {#installation-procedure}
 

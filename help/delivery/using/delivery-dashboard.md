@@ -9,8 +9,8 @@ role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 7%
+source-wordcount: '1189'
+ht-degree: 5%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 7%
 
 ## 投放跟踪日志和历史记录 {#tracking-logs}
 
-此 **[!UICONTROL Tracking]** 选项卡列出了此投放的跟踪历史记录。 此选项卡显示已发送消息的跟踪数据，即由 Adobe Campaign 跟踪的所有 URL。跟踪数据每小时更新一次。
+此 **[!UICONTROL Tracking]** 选项卡列出了此投放的跟踪历史记录。 此选项卡显示已发送消息的跟踪数据，即所有受Adobe Campaign跟踪的URL。 跟踪数据每小时更新一次。
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ ht-degree: 7%
 
 跟踪配置在投放向导的相应阶段执行。 请参阅 [如何配置跟踪的链接](how-to-configure-tracked-links.md).
 
-**[!UICONTROL Tracking]** 数据会在投放报告中得到说明。 请参阅[此章节](../../reporting/using/delivery-reports.md)。
+**[!UICONTROL Tracking]** 数据会在投放报告中得到说明。 请参阅[此小节](../../reporting/using/delivery-reports.md)。
 
 ![](assets/s_ncs_user_delivery_tracking_tab.png)
 

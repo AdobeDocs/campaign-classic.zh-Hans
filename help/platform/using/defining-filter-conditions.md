@@ -11,8 +11,8 @@ topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3241'
-ht-degree: 37%
+source-wordcount: '3307'
+ht-degree: 34%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 37%
    <td> <strong>等于“英语”的语言(@language)</strong>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">开始于</span> <br /> </td> 
+   <td> <span class="uicontrol">开头为</span> <br /> </td> 
    <td> 返回以输入值开头的结果。<br /> </td> 
    <td> <strong>帐户# (@account)以“32010”开头。</strong><br /> </td> 
   </tr> 
@@ -94,7 +94,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">不相似</span> <br /> </td> 
-   <td> 与 <span class="uicontrol">相似</span>相同。用于不恢复输入的值。 在本例中，输入的值也必须包含 <span class="uicontrol">%</span> 个通配符字段。<br /> </td> 
+   <td> 类似于 <span class="uicontrol">点赞</span> . 用于不恢复输入的值。 在本例中，输入的值也必须包含 <span class="uicontrol">%</span> 个通配符字段。<br /> </td> 
    <td> <strong>姓氏(@lastName)不像“Smi%h”</strong>. 在此，将不会返回姓氏为“Smi%h”的收件人。<br /> </td> 
   </tr> 
   <tr> 
@@ -210,7 +210,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_48.png" /> </td> 
-   <td> 主键. 此SQL字段用于标识表中的记录。<br /> </td> 
+   <td> 主键。 此SQL字段用于标识表中的记录。<br /> </td> 
    <td> 标识符收件人为主键，标识符按定义是唯一的。<br /> </td> 
   </tr> 
   <tr> 
@@ -220,7 +220,7 @@ ht-degree: 37%
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_46.png" /> </td> 
-   <td> 计算字段. 根据请求，使用数据库中的值计算此类型的字段。<br /> </td> 
+   <td> 计算字段。 根据请求，使用数据库中的值计算此类型的字段。<br /> </td> 
    <td> 年龄、电子邮件域等<br /> </td> 
   </tr> 
   <tr> 
@@ -371,32 +371,32 @@ ht-degree: 37%
   <tr> 
    <td> <strong>平均</strong><br /> </td> 
    <td> 返回数字类型列的平均值<br /> </td> 
-   <td> Avg(&lt;值&gt;)<br /></td> 
+   <td> 平均(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>计数</strong><br /> </td> 
    <td> 计算列的非空值<br /> </td> 
-   <td> Count(&lt;值&gt;)<br /></td>  
+   <td> Count(&lt;value&gt;)<br /></td>  
   </tr> 
   <tr> 
-   <td> <strong>CountAll</strong><br /> </td> 
+   <td> <strong>全部计数</strong><br /> </td> 
    <td> 计算返回的值（所有字段）<br /> </td> 
    <td> CountAll()<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Countdistinct</strong><br /> </td> 
    <td> 计算列的不同非空值<br /> </td> 
-   <td> Countdistinct(&lt;值&gt;)<br /></td> 
+   <td> Countdistinct(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>最大值</strong><br /> </td> 
+   <td> <strong>Max</strong><br /> </td> 
    <td> 返回数字、字符串或日期类型列的最大值<br /> </td> 
-   <td> Max(&lt;值&gt;)<br /></td>  
+   <td> Max(&lt;value&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>最小值</strong><br /> </td> 
    <td> 返回数字、字符串或日期类型列的最小值<br /> </td> 
-   <td> Min(&lt;值&gt;)<br /></td> 
+   <td> Min(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>标准开发</strong><br /> </td> 
@@ -406,7 +406,7 @@ ht-degree: 37%
   <tr> 
    <td> <strong>总和</strong><br /> </td> 
    <td> 返回数字、字符串或日期类型列的值的总和<br /> </td> 
-   <td> Sum(&lt;值&gt;)<br /></td> 
+   <td> Sum(&lt;value&gt;)<br /></td> 
   </tr> 
  </tbody> 
 </table>
@@ -423,37 +423,37 @@ ht-degree: 37%
   <tr> 
    <td> <strong>AllNonNull2</strong><br /> </td> 
    <td> 指示所有参数是否为非 null 且不为空<br /> </td> 
-   <td> AllNonNull2(&lt;字符串&gt;, &lt;字符串&gt;)<br /></td> 
+   <td> AllNonNull2(&lt;string&gt;， &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>AllNonNull3</strong><br /> </td> 
    <td> 指示所有参数是否为非 null 且不为空<br /> </td> 
-   <td> AllNonNull3(&lt;字符串&gt;, &lt;字符串&gt;, &lt;字符串&gt;)<br /></td> 
+   <td> AllNonNull3(&lt;string&gt;， &lt;string&gt;， &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Ascii</strong><br /> </td> 
-   <td> 返回字符串中第一个字符的 ASCII 值.<br /> </td> 
-   <td> Ascii(&lt;字符串&gt;)<br /></td> 
+   <td> 返回字符串中第一个字符的ASCII值。<br /> </td> 
+   <td> Ascii(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Char</strong><br /> </td> 
    <td> 返回与 ASCII 代码"n"对应的字符<br /> </td> 
-   <td> Char(&lt;数字&gt;)<br /></td>  
+   <td> Char(&lt;number&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Charindex</strong><br /> </td> 
-   <td> 返回字符串 1 中字符串 2 的位置.<br /> </td> 
-   <td> Charindex(&lt;字符串&gt;, &lt;字符串&gt;)<br /></td> 
+   <td> 返回字符串1中字符串2的位置。<br /> </td> 
+   <td> Charindex(&lt;string&gt;， &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>GetLine</strong><br /> </td> 
    <td> 返回字符串的 n（从 1 到 n）行<br /> </td> 
-   <td> GetLine(&lt;字符串&gt;)<br /></td> 
+   <td> GetLine(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>IfEquals</strong><br /> </td> 
    <td> 如果前两个参数相等，则返回第三个参数。 如果不能，则返回最后一个参数<br /> </td> 
-   <td> IfEquals(&lt;字符串&gt;, &lt;字符串&gt;, &lt;字符串&gt;, &lt;字符串&gt;)<br /></td> 
+   <td> IfEquals(&lt;string&gt;， &lt;string&gt;， &lt;string&gt;， &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>IsMemoNull</strong><br /> </td> 
@@ -463,12 +463,12 @@ ht-degree: 37%
   <tr> 
    <td> <strong>JuxtWords</strong><br /> </td> 
    <td> 将作为参数传递的字符串连接起来。 如有必要，在字符串之间添加空格。<br /> </td> 
-   <td> JuxtWords(&lt;字符串&gt;, &lt;字符串&gt;)<br /></td> 
+   <td> JuxtWords(&lt;string&gt;， &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>JuxtWords3</strong><br /> </td> 
    <td> 将作为参数传递的字符串连接起来。 如有必要，在字符串之间添加空格<br /> </td> 
-   <td> JuxtWords3(&lt;字符串&gt;, &lt;字符串&gt;, &lt;字符串&gt;)<br /></td>  
+   <td> JuxtWords3(&lt;string&gt;， &lt;string&gt;， &lt;string&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>LPad</strong><br /> </td> 
@@ -478,37 +478,37 @@ ht-degree: 37%
   <tr> 
    <td> <strong>Left</strong><br /> </td> 
    <td> 返回字符串的前 n 个字符<br /> </td> 
-   <td> Left(&lt;字符串&gt;, &lt;数字&gt;)<br /></td> 
+   <td> Left(&lt;string&gt;， &lt;number&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Length</strong><br /> </td> 
    <td> 返回字符串的长度<br /> </td> 
-   <td> Length(&lt;字符串&gt;)<br /></td> 
+   <td> Length(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Lower</strong><br /> </td> 
    <td> 以小写形式返回字符串<br /> </td> 
-   <td> Lower(&lt;字符串&gt;)<br /></td> 
+   <td> Lower(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Ltrim</strong><br /> </td> 
    <td> 删除字符串左侧的空格<br /> </td> 
-   <td> Ltrim(&lt;字符串&gt;)<br /></td> 
+   <td> Ltrim(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Md5Digest</strong><br /> </td> 
    <td> 返回字符串以十六进制表示的 MD5 键值<br /> </td> 
-   <td> Md5Digest(&lt;字符串&gt;)<br /></td> 
+   <td> Md5Digest(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>MemoContains</strong><br /> </td> 
    <td> 指定 Memo 是否包含作为参数传递的字符串<br /> </td> 
-   <td> MemoContains(&lt;memo&gt;, &lt;字符串&gt;)<br /></td> 
+   <td> MemoContains(&lt;memo&gt;， &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>RPad</strong><br /> </td> 
    <td> 返回右侧的已完成字符串<br /> </td> 
-   <td> RPad(&lt;字符串&gt;, &lt;数字&gt;, &lt;字符&gt;)<br /></td> 
+   <td> RPad(&lt;string&gt;， &lt;number&gt;， &lt;character&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Right</strong><br /> </td> 
@@ -893,7 +893,7 @@ ht-degree: 37%
  </tbody> 
 </table>
 
-**地理位置营销**
+**地理营销**
 
 <table> 
  <tbody> 

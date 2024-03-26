@@ -3,12 +3,12 @@ product: campaign
 title: Campaign - Microsoft Dynamics CRM连接器
 description: 了解如何连接Campaign和Microsoft Dynamics
 feature: Microsoft CRM Integration
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 4%
+source-wordcount: '1111'
+ht-degree: 3%
 
 ---
 
@@ -150,7 +150,7 @@ Campaign Classic：
 1. 分配 **应用程序Id** 对象 [您之前创建的应用程序](#get-client-id-microsoft).
 1. 单击 **管理角色** 并选择 **系统管理员** 角色到用户。
 
-## 配置 Campaign {#configure-acc-for-microsoft}
+## 配置营销活动 {#configure-acc-for-microsoft}
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ Campaign Classic：
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 
-1. 单击 **[!UICONTROL Microsoft CRM configuration wizard...]** 链接。Adobe Campaign会自动从Microsoft Dynamics数据模板中检测表。
+1. 单击 **[!UICONTROL Microsoft CRM configuration wizard...]** 链接。 Adobe Campaign会自动从Microsoft Dynamics数据模板中检测表。
 
    ![](assets/crm_connectors_msdynamics_02.png)
 

@@ -3,7 +3,7 @@ product: campaign
 title: 配置原则
 description: 配置原则
 feature: Monitoring, Configuration
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: production-procedures
 exl-id: 03d7e579-8678-44b8-bbe7-cf4204bffb25
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '298'
 ht-degree: 7%
 
 ---
@@ -28,7 +28,7 @@ Adobe Campaign平台基于实例的概念，与Apache使用的虚拟主机概念
 
   >[!IMPORTANT]
   >
-  >要使用 **内部** 标识符，则需要预先定义密码。 如需详细信息，请参阅[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+  >要使用 **内部** 标识符，则需要预先定义密码。 如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 * 多个技术服务器配置：在实例的特定配置中，这些配置都可以过载。
 

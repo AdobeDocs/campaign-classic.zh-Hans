@@ -2,13 +2,13 @@
 product: campaign
 title: 单元格
 description: 单元格
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 8%
+source-wordcount: '134'
+ht-degree: 13%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 8%
 
 ![](assets/wf_split_cells.png)
 
-可将此活动配置为根据用户需求输入特定参数。 默认情况下，每个子集的详细信息都会在专用窗口中通过 **[!UICONTROL Selection]** 和 **[!UICONTROL Advanced]** 选项卡。 在以下示例中，表单已修改： **[!UICONTROL Data]** 添加了选项卡，以启用优惠与每个子集的优先级之间的关联。
+此活动可配置为根据用户需求输入特定参数。 默认情况下，每个子集的详细信息都会在专用窗口中通过 **[!UICONTROL Selection]** 和 **[!UICONTROL Advanced]** 选项卡。 在以下示例中，表单已修改： **[!UICONTROL Data]** 添加了选项卡，以启用选件与每个子集的优先级之间的关联。
 
 ![](assets/wf_split_cells_with_customization.png)
 
-对于此配置，以下信息已添加到工作流表单(在 **[!UICONTROL Administration > Configurations > Input forms]** Adobe Campaign节点)：
+对于此配置，已将以下信息添加到工作流表单(在 **[!UICONTROL Administration > Configurations > Input forms]** Adobe Campaign节点)：
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">

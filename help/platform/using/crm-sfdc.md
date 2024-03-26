@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Campaign - Salesforce CRM连接器
-description: 了解如何连接Campaign和Salesforce
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: 了解如何关联Campaign和Salesforce
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 0%
+source-wordcount: '328'
+ht-degree: 3%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 在本页中，您将了解如何将Campaign Classic连接到 **Salesforce**.
 
-数据同步是通过专用工作流活动执行的。 [了解详情](../../platform/using/crm-data-sync.md)。
+数据同步通过专用工作流活动执行。 [了解详情](../../platform/using/crm-data-sync.md)。
 
 
-外部帐户允许您将Salesforce数据导入和导出到Adobe Campaign。
-要配置CRM Connector for Salesforce，请执行以下步骤：
+外部帐户允许您将Salesforce数据导入和导出到Adobe Campaign中。
+要为Salesforce配置CRM连接器，请执行以下步骤：
 
 1. 通过创建新的外部帐户 **[!UICONTROL Administration > Platform > External accounts]** Adobe Campaign树的节点。
 1. 选择 **[!UICONTROL Salesforce.com]**。
@@ -33,7 +33,7 @@ ht-degree: 0%
    要将Salesforce CRM外部帐户配置为与Adobe Campaign配合使用，您需要提供以下详细信息：
 
    * **[!UICONTROL Account]**
-用于登录到Salesforce CRM的帐户。
+用于登录Salesforce CRM的帐户。
 
    * **[!UICONTROL Password]**
 用于登录到Salesforce CRM的密码。
@@ -54,7 +54,7 @@ ht-degree: 0%
    >
    >要批准设置，您需要注销并重新登录到Adobe Campaign控制台。
 
-1. 在中检查Adobe Campaign中生成的架构 **[!UICONTROL Administration > Configuration > Data schemas]** 节点。
+1. 在中检查在Adobe Campaign中生成的架构 **[!UICONTROL Administration > Configuration > Data schemas]** 节点。
 
    示例 **Salesforce** 架构：
 
@@ -89,4 +89,4 @@ Campaign和Salesforce.com现已连接。 您可以设置两个系统之间的数
 
 ![](assets/crm_connectors_sfdc_wf.png)
 
-了解有关数据同步的更多信息 [本页内容](../../platform/using/crm-data-sync.md).
+了解有关数据同步的详细信息 [本页内容](../../platform/using/crm-data-sync.md).

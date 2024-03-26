@@ -3,7 +3,7 @@ product: campaign
 title: 管理明细列表
 description: 管理明细列表
 feature: Data Management
-badge: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics

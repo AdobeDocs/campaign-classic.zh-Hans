@@ -11,7 +11,7 @@ topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '506'
 ht-degree: 2%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 2%
 
 
 
-此部分详细介绍在Adobe Campaign中使用集成功能与Assets核心服务或Adobe Experience Manager Assets (AEM Assets)库所需的配置步骤。
+此部分详细介绍在Adobe Campaign中使用与Assets核心服务或Adobe Experience Manager Assets (AEM Assets)库集成的功能所需的配置步骤。
 
 >[!CAUTION]
 >
 >这些集成是并发的。 在进行任何配置之前，请仔细阅读以下信息。
 
 * 与集成 **Experience Cloud资源**：此集成允许您从Adobe Experience Cloud库插入图像。 必须安装 **[!UICONTROL Integration with the Adobe Experience Cloud]** Adobe Campaign中的内置包。
-* 与集成 **AEM Assets**：利用此集成，可插入Adobe Experience Manager Assets库中的图像。 必须安装 **[!UICONTROL AEM Integration]** Adobe Campaign中的内置包。 请注意，从Adobe Experience Manager 6.4开始，此集成不再可用。
+* 与集成 **AEM Assets**：此集成允许您从Adobe Experience Manager Assets库插入图像。 必须安装 **[!UICONTROL AEM Integration]** Adobe Campaign中的内置包。 请注意，从Adobe Experience Manager 6.4开始，此集成不再可用。
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ ht-degree: 2%
 
    ![](assets/dam_aem_assets1.png)
 
-在基于此模板将图像插入投放的内容时， **[!UICONTROL Select a shared asset]** 选项后，您将能够浏览AEM Assets库中的图像。 在[此章节](../../integrations/using/inserting-a-shared-asset.md)中了解更多信息。
+在基于此模板将图像插入投放的内容时， **[!UICONTROL Select a shared asset]** 选项后，您将能够浏览AEM Assets库中的图像。 可在[此部分](../../integrations/using/inserting-a-shared-asset.md)中了解详情。
 
 >[!NOTE]
 >

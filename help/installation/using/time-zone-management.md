@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 3%
+source-wordcount: '957'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Campaign允许您以UTC（协调世界时）格式存储日期/时间。 �
 
 当Adobe Campaign平台不需要时区管理时，您可以保留具有特定链接时区的本地格式存储模式。
 
-## 推荐 {#recommendations}
+## 推荐做法 {#recommendations}
 
 时区结合了多种现实情况：该表达式可能描述了与UTC日期相同的恒定时间延迟，或区域每年可能更改两次的时间（夏令时）。
 
@@ -98,7 +98,7 @@ Adobe Campaign允许您以UTC（协调世界时）格式存储日期/时间。 �
 可能值的示例：
 
 * 欧洲/巴黎，
-* 欧洲/伦敦,
+* 欧洲/伦敦，
 * 美洲/纽约等
 
   这些值取自tz (Olson)数据库。 有关更多信息，请参阅 [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).

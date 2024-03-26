@@ -10,7 +10,7 @@ exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 12%
+ht-degree: 11%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 12%
 
 有关Campaign中列表的详细信息，请参阅 [本节](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
 
 要在自定义收件人表中创建定位工作流并更新收件人，请执行以下步骤：
 

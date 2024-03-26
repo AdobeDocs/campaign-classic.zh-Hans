@@ -3,7 +3,7 @@ product: campaign
 title: 其他数据
 description: 其他数据
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
@@ -11,7 +11,7 @@ exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '724'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 
 
-在调用交互引擎期间，您可以传输上下文附加信息。 该数据可以来自存储在工作流工作表中的目标数据（出站频道）或网站在呼叫（入站频道）期间发送的呼叫数据。 您可以在资格规则、选件个性化中使用这些附加数据，还可以将其存储在建议表中。
+在调用交互引擎期间，您可以传输上下文附加信息。 该数据可以来自存储在工作流工作表中的目标数据（出站频道），也可以来自网站在呼叫（入站频道）期间发送的呼叫数据。 您可以在资格规则、选件个性化中使用这些附加数据，还可以将其存储在建议表中。
 
 对于入站渠道，取回诸如咨询选件的人员的浏览器语言或呼叫中心代理姓名之类的信息可能很有用。 然后，您可以在资格规则中使用此调用数据，仅向使用法文或英语查看网页的人提供优惠。
 

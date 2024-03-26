@@ -9,8 +9,8 @@ role: User
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 26%
+source-wordcount: '111'
+ht-degree: 7%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 26%
     </a>
     <div>
       <a href="design-and-personalize.md">
-    <strong>个性化内容</strong>
+    <strong>使内容个性化</strong>
     </a>
     </div>
     <p>
@@ -94,7 +94,7 @@ ht-degree: 26%
     </a>
     <div>
       <a href="track-and-monitor.md">
-    <strong>跟踪和监测</strong>
+    <strong>跟踪和监视</strong>
     </a>
     </div>
     <p>
@@ -104,7 +104,7 @@ ht-degree: 26%
 </tr>
 </table>
 
-另请参阅:
+另请参阅：
 
 * [可投放性入门](about-deliverability.md)
 

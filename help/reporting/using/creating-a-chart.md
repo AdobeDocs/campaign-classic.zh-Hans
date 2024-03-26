@@ -8,7 +8,7 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '541'
 ht-degree: 3%
 
 ---
@@ -137,4 +137,4 @@ Adobe Campaign提供各种类型的图形表示。 详情见下文。
 
 ![](assets/reporting_add_statistics.png)
 
-如需详细信息，请参阅[此部分](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation)。
+如需详细信息，请参阅[此小节](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation)。

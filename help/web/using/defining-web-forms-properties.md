@@ -2,24 +2,24 @@
 product: campaign
 title: 定义 Web 窗体属性
 description: 定义 Web 窗体属性
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1223'
 ht-degree: 1%
 
 ---
 
-# 定义 Web 窗体属性{#defining-web-forms-properties}
+# 定义Web窗体属性{#defining-web-forms-properties}
 
 
 
 您可以完全配置和个性化Web窗体，以满足您的要求。 必须在属性窗口中输入参数。
 
-属性窗口可通过 **[!UICONTROL Properties]** 按钮。 通过此窗口，您可以访问特定于Web表单的一系列设置。 某些设置可能源自模板配置。
+属性窗口可通过以下方式访问： **[!UICONTROL Properties]** 按钮。 通过此窗口，您可以访问特定于Web窗体的一系列设置。 某些设置可能来自模板配置。
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
@@ -33,13 +33,13 @@ ht-degree: 1%
 
 ## 表单数据存储 {#form-data-storage}
 
-默认情况下，Web窗体的字段存储在收件人表中。 通过从中选择新表，可以更改使用的表 **[!UICONTROL Document type]** 字段。 此 **[!UICONTROL Zoom]** 图标用于查看选定表的内容。
+默认情况下，Web窗体的字段存储在收件人表中。 您可以更改所使用的表，方法是从 **[!UICONTROL Document type]** 字段。 此 **[!UICONTROL Zoom]** 图标用于查看选定表的内容。
 
 默认情况下，答案存储在 **对收件人表单的答复** 表格。
 
 ## 设置错误页面 {#setting-up-an-error-page}
 
-您可以配置错误页面：如果在执行表单时出错，将显示此页面。
+您可以配置错误页面：如果在执行表单的过程中出现错误，将显示此页面。
 
 错误页面在表单属性窗口的相应选项卡中定义。
 
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 此 **[!UICONTROL Localization]** 选项卡允许您选择Web窗体的设计和显示语言。
 
-参见 [翻译Web窗体](translating-a-web-form.md).
+请参阅 [翻译Web窗体](translating-a-web-form.md).
 
 ## 表单浏览和渲染 {#form-browsing-and-rendering}
 
@@ -67,9 +67,9 @@ ht-degree: 1%
 
 默认情况下，按钮是导航元素。 它们允许您执行以下操作：
 
-* 通过单击批准当前页面并显示下一页 **[!UICONTROL Next]**. 此按钮将显示在所有页面上，但最后一个页面除外。
-* 通过单击显示上一页 **[!UICONTROL Previous]**. 此按钮显示在除第一个按钮之外的所有页面上。
-* 通过单击 **[!UICONTROL Approve]** 按钮。 此按钮仅显示在最后一页。
+* 批准当前页面并通过单击显示下一页 **[!UICONTROL Next]**. 此按钮将显示在所有页面上，但最后一个页面除外。
+* 通过单击显示上一页 **[!UICONTROL Previous]**. 此按钮将显示在除第一个按钮之外的所有页面上。
+* 通过单击 **[!UICONTROL Approve]** 按钮。 此按钮仅在最后一页显示。
 
 这些元素显示在每个页面的底部。 他们的立场可以改变。 要执行此操作，必须修改样式表。
 
@@ -79,21 +79,21 @@ ht-degree: 1%
 
 此 **[!UICONTROL Template]** 字段 **[!UICONTROL Rendering]** 选项卡允许您从可用的主题中选择主题。
 
-主题保存在中 **[!UICONTROL Administration>Configuration>Form rendering]** 树节点。 参见 [选择表单渲染模板](form-rendering.md#selecting-the-form-rendering-template)
+主题保存在中 **[!UICONTROL Administration>Configuration>Form rendering]** 树节点。 请参阅 [选择表单渲染模板](form-rendering.md#selecting-the-form-rendering-template)
 
-“属性”窗口的下半部分将显示一个示例渲染。 此 **[!UICONTROL Edit link]** 图标用于查看选定主题的配置。
+示例渲染显示在属性窗口的下部。 此 **[!UICONTROL Edit link]** 图标允许您查看选定主题的配置。
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
 
 ## 表单中的文本 {#texts-in-the-form}
 
-此 **[!UICONTROL Page]** 选项卡允许您定义表单页眉和页脚的内容。 参见 [定义页眉和页脚](form-rendering.md#defining-headers-and-footers).
+此 **[!UICONTROL Page]** 选项卡允许您定义表单页眉和页脚的内容。 请参阅 [定义页眉和页脚](form-rendering.md#defining-headers-and-footers).
 
-它还允许您管理翻译。 参见 [翻译Web窗体](translating-a-web-form.md).
+它还允许您管理翻译。 请参阅 [翻译Web窗体](translating-a-web-form.md).
 
 ## 表单的辅助功能 {#accessibility-of-the-form}
 
-Web表单在以下情况下可供用户访问： **[!UICONTROL Online]** 以及当期在有效期内的。 表单的状态会在发布阶段进行修改(请参阅 [发布表单](publishing-a-web-form.md#publishing-a-form))。 状态显示在 **项目** 部分 **[!UICONTROL General]** 属性窗口的选项卡。
+Web表单在以下情况下可供用户访问： **[!UICONTROL Online]** 如果当前日期在其有效期内，则视为有效日期。 表单的状态会在发布阶段进行修改(请参阅 [发布表单](publishing-a-web-form.md#publishing-a-form))。 状态显示在 **项目** 的部分 **[!UICONTROL General]** 属性窗口的选项卡。
 
 有效期从 **[!UICONTROL Start]** 结束日期 **[!UICONTROL End date]**. 如果未在这些字段中指定日期，则表单具有永久有效性。
 
@@ -101,13 +101,13 @@ Web表单在以下情况下可供用户访问： **[!UICONTROL Online]** 以及�
 
 >[!NOTE]
 >
->如果表单已关闭，因此其有效期尚未达到或已过期，或者，如果表单由Adobe Campaign操作员关闭，则当用户尝试访问它时会显示一条消息。 您可以通过单击 **[!UICONTROL Personalize the message displayed if the form is closed...]**.
+>如果表单已关闭，因此其有效期未达到或已过期，或者，如果表单由Adobe Campaign操作员关闭，则在用户尝试访问它时会显示一条消息。 您可以通过单击 **[!UICONTROL Personalize the message displayed if the form is closed...]**.
 
 ## 表单访问控制 {#form-access-control}
 
-默认情况下，对Web窗体的访问以匿名模式执行：所有访问窗体的操作员都分配有WebApp操作员权限。
+默认情况下，对Web窗体的访问以匿名模式执行：访问窗体的所有操作员都分配有WebApp操作员权限。
 
-您可以为表单显示启用访问控制，例如在Intranet站点上提交表单时，以便对用户进行身份验证。 要执行此操作，请显示 **[!UICONTROL Properties]** 窗体的窗口，然后单击 **[!UICONTROL Enable access control]** 选项，如下所示：
+您可以对表单显示启用访问控制，例如在Intranet站点上提交表单时，以便对用户进行身份验证。 要执行此操作，请显示 **[!UICONTROL Properties]** 窗体的窗口，然后单击 **[!UICONTROL Enable access control]** 选项，如下所示：
 
 ![](assets/s_ncs_admin_survey_access_ctrl.png)
 
@@ -115,7 +115,7 @@ Web表单在以下情况下可供用户访问： **[!UICONTROL Online]** 以及�
 
 ![](assets/s_ncs_admin_survey_access_login.png)
 
-登录名和密码由Adobe Campaign操作员使用。 如需详细信息，请参阅[此部分](../../platform/using/access-management.md)。
+登录名和密码由Adobe Campaign操作员使用。 如需详细信息，请参阅[此小节](../../platform/using/access-management.md)。
 
 此 **[!UICONTROL Use a specific account]** 选项允许您限制访问表单的操作员的读取或写入权限。 使用下拉框选择将负责授予这些权限的操作员或操作员组。
 
@@ -125,7 +125,7 @@ Web表单在以下情况下可供用户访问： **[!UICONTROL Online]** 以及�
 
 您可以在表单的URL中添加其他参数，以个性化其内容并初始化上下文（语言、加密的收件人ID、公司、存储在变量中的计算公式等）。 这样，您就可以通过多个不同的URL来授予对一个表单的访问权限，并根据URL中指示的参数值来个性化页面内容。
 
-默认情况下，Adobe Campaign提供用于预览表单和检查错误的参数。 您可以创建链接到表单的新设置，这些设置可能使用数据库中字段的值或局部变量的值。
+默认情况下，Adobe Campaign提供用于预览表单和检查错误的参数。 您可以创建链接到表单的新设置，这些设置可能使用数据库中字段或本地变量的值。
 
 ## 标准参数 {#standard-parameters}
 
@@ -136,27 +136,27 @@ Web表单在以下情况下可供用户访问： **[!UICONTROL Online]** 以及�
 * **来源** 指定受访者的来源。
 * **_uuid** 启用发布前的表单查看和错误跟踪。 此参数供内部使用（创建和调试）：通过此URL访问Web窗体时，创建的记录不会包含在跟踪（报表）中。 源被强制到 **[!UICONTROL Adobe Campaign]** 值。
 
-   它与 **预览(_P)** 参数和/或 **调试(_D)**：
+  它与 **预览(_P)** 参数和/或 **调试(_D)**：
 
-   **预览(_P)** 以显示上次保存的版本。 此参数必须仅在测试阶段使用。
+  **预览(_P)** 以显示上次保存的版本。 此参数必须仅在测试阶段使用。
 
-   **调试(_D)** 在表单的页面中显示输入或计算的数据的跟踪。 用于获取有关错误的更多信息，包括发布表单后。
+  **调试(_D)** 在表单的页面中显示输入或计算的数据的跟踪。 用于获取有关错误的更多信息，包括发布表单后的信息。
 
-   >[!CAUTION]
-   >
-   >通过带有以下内容的URL显示表单时： **_uuid** 参数，值 **[!UICONTROL origin]** 参数被强制为 **Adobe Campaign**.
+  >[!CAUTION]
+  >
+  >当通过带有以下内容的URL显示表单时： **_uuid** 参数，值 **[!UICONTROL origin]** 参数被强制为 **Adobe Campaign**.
 
 ## 添加参数 {#adding-parameters}
 
-可以通过以下方式添加参数 **[!UICONTROL Parameters...]** 选项卡。 可以将它们设为强制性的，如下所示：
+可以通过添加参数 **[!UICONTROL Parameters...]** 选项卡。 可以将它们设为必选项，如下所示：
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-您必须指定从中检索参数值的存储位置。 要执行此操作，请选择其中一个存储选项，然后单击 **[!UICONTROL Storage]** 选项卡以选择相关字段或变量。 有关存储选项的详情，请参见 [响应存储字段](web-forms-answers.md#response-storage-fields).
+您必须指定从中检索参数值的存储位置。 要执行此操作，请选择其中一个存储选项，然后单击 **[!UICONTROL Storage]** 选项卡以选择相关的字段或变量。 有关存储选项的详情，请参见 [响应存储字段](web-forms-answers.md#response-storage-fields).
 
 然后，可以将响应者状态（0、1或任何其他值）添加到用于访问表单的URL中。 此信息可在表单页面或测试框中重复使用。 显示的页面可以根据上下文的值设置条件，如下所示：
 
-1. 客户主页(**status=1**)：
+1. 客户主页(**状态=1**)：
 
    ![](assets/s_ncs_admin_survey_test_client.png)
 
@@ -164,7 +164,7 @@ Web表单在以下情况下可供用户访问： **[!UICONTROL Online]** 以及�
 
    ![](assets/s_ncs_admin_survey_test_prospect.png)
 
-1. 其他配置文件的主页(例如， **status=12**)：
+1. 其他配置文件的主页(例如， **状态=12**)：
 
    ![](assets/s_ncs_admin_survey_test_other.png)
 
@@ -172,6 +172,6 @@ Web表单在以下情况下可供用户访问： **[!UICONTROL Online]** 以及�
 
 ![](assets/s_ncs_admin_survey_test.png)
 
-通过测试框可配置页面排序条件：
+利用测试框，可配置页面排序条件：
 
 ![](assets/s_ncs_admin_survey_test_box.png)

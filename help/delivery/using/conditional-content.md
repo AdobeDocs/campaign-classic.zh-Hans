@@ -9,8 +9,8 @@ role: User
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 7%
+source-wordcount: '497'
+ht-degree: 6%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 通过配置条件内容字段，您可以根据收件人的用户档案创建动态个性化。 当满足特定条件时，替换文本块和/或图像。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#conditionnal-content-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#conditionnal-content-video)
 
 
 ## 在电子邮件中使用条件 {#using-conditions-in-an-email}

@@ -3,7 +3,7 @@ product: campaign
 title: 调整配置
 description: 了解在迁移到Campaign v7之前和之后如何调整配置
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 3%
+source-wordcount: '475'
+ht-degree: 4%
 
 ---
 
@@ -136,7 +136,7 @@ Adobe Campaign v7中的某些主要更改需要特定配置。 在迁移之前�
 
 -->
 
-* 互动
+* 交互
 
   如果您使用 **互动**&#x200B;中，您必须在迁移后调整任何参数。
 

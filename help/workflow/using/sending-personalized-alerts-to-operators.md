@@ -2,13 +2,13 @@
 product: campaign
 title: 向操作员发送个性化提醒
 description: 了解如何向运营商发送个性化提醒
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 2%
+source-wordcount: '351'
+ht-degree: 4%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 2%
 
 
 
-在本例中，我们希望向操作员发送警报，该操作员将包含打开了新闻稿但未单击新闻稿所包含链接的用户档案的名称。
+在本例中，我们希望向操作员发送警报，该警报将包含打开了新闻稿但未单击新闻稿所包含链接的用户档案名称。
 
-用户档案的名字和姓氏字段链接到 **[!UICONTROL Recipients]** 定位维度，而 **[!UICONTROL Alert]** 活动链接到 **[!UICONTROL Operator]** 定位维度。 因此，两个定向维度之间没有可用字段来执行协调，检索名字和姓氏字段并在警报活动中显示它们。
+用户档案的名字和姓氏字段链接到 **[!UICONTROL Recipients]** 定位维度，而 **[!UICONTROL Alert]** 活动链接到 **[!UICONTROL Operator]** 定位维度。 因此，两个定向维度之间没有可用的字段来执行协调，检索名字和姓氏字段并在警报活动中显示它们。
 
 该过程将构建一个工作流，如下所示：
 
-1. 使用 **[!UICONTROL Query]** 活动以定位数据。
-1. 添加 **[!UICONTROL JavaScript code]** 活动添加到工作流中，以将群体从查询保存到实例变量。
+1. 使用 **[!UICONTROL Query]** 活动，以定位数据。
+1. 添加 **[!UICONTROL JavaScript code]** 活动添加到工作流中，以将查询中的群体保存到实例变量。
 1. 使用 **[!UICONTROL Test]** 用于检查群体计数的活动。
-1. 使用 **[!UICONTROL Alert]** 活动向操作员发送警报，具体取决于 **[!UICONTROL Test]** 活动结果。
+1. 使用 **[!UICONTROL Alert]** 活动，向操作员发送警报，具体取决于 **[!UICONTROL Test]** 活动结果。
 
 ![](assets/uc_operator_1.png)
 
@@ -47,8 +47,8 @@ var query = xtk.queryDef.create(
 
 确保Javascript代码与您的工作流信息相对应：
 
-* 此 **[!UICONTROL queryDef schema]** 标记应对应于查询活动中使用的定向维度的名称。
-* 此 **[!UICONTROL node expr]** 标记应该对应于要检索的字段的名称。
+* 此 **[!UICONTROL queryDef schema]** 标记应与查询活动中使用的定向维度的名称相对应。
+* 此 **[!UICONTROL node expr]** 标记应该与要检索的字段的名称相对应。
 
 ![](assets/uc_operator_3.png)
 
@@ -78,7 +78,7 @@ var.recCount>0
 
 ## 设置警报 {#setting-up-the-alert}
 
-现在，群体已通过所需字段添加到实例变量中，您可以将这些信息添加到 **[!UICONTROL Alert]** 活动。
+现在，群体已使用所需字段添加到实例变量中，接下来您可以将这些信息添加到 **[!UICONTROL Alert]** 活动。
 
 为此，请将添加到 **[!UICONTROL Source]** 选项卡下面的代码：
 

@@ -8,8 +8,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Clas
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 5%
+source-wordcount: '426'
+ht-degree: 4%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 5%
 
 此名称与“JavaScript代码”类型实体的名称（以及命名空间）一致。
 
-示例:
+例如：
 
 testLog(msg)方法在nms：recipient扩展中声明
 
@@ -72,7 +72,7 @@ SOAP方法以JavaScript函数的形式实现，该函数分组在表示库的脚
  <schema-namespace>_<schema-name>_<method-name>
 ```
 
-示例:
+例如：
 
 以下JavaScript函数是上述方法的实现。 它应使用&quot;cus：test&quot;名称在&quot;JavaScript Code&quot;类型实体中定义。
 
@@ -108,7 +108,7 @@ function nms_recipient_setLastName(self, name)
 
 要返回多个值时，必须在表中显示它们。
 
-示例:
+例如：
 
 ```
 function nms_recipient_getKey(self)

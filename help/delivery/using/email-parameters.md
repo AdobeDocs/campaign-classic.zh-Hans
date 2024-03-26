@@ -9,8 +9,8 @@ role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 14%
+source-wordcount: '915'
+ht-degree: 10%
 
 ---
 
@@ -80,9 +80,9 @@ ht-degree: 14%
 
 ## 生成镜像页面 {#generating-mirror-page}
 
-镜像页面是可通过 Web 浏览器在线访问的 HTML 页面。其内容与电子邮件的内容相同。
+镜像页面是可通过 Web 浏览器在线访问的 HTML 页面。其内容与电子邮件相同。
 
-默认情况下，如果将链接插入到电子邮件内容中，则会生成镜像页面。有关个性化块插入的更多信息，请参阅 [个性化块](personalization-blocks.md).
+默认情况下，如果将链接插入到邮件内容中，则会生成镜像页面。 有关个性化块插入的更多信息，请参阅 [个性化块](personalization-blocks.md).
 
 在投放属性中， **[!UICONTROL Mode]** 字段 **[!UICONTROL Validity]** 选项卡用于修改此页面的生成模式。
 
@@ -134,6 +134,6 @@ ht-degree: 14%
 
 >[!IMPORTANT]
 >
->高级用户可随时添加脚本以插入其他 SMTP 标头。
+>高级用户可随时添加脚本以插入其他SMTP标头。
 >
 >此脚本的语法必须符合此内容类型的要求：没有未使用的空格，没有空行等。

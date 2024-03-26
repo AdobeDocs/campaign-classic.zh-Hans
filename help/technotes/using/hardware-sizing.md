@@ -3,11 +3,11 @@ product: campaign
 title: 针对Campaign Classicv7的硬件大小调整建议
 description: 针对Campaign Classicv7的硬件大小调整建议
 feature: Technote
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2576'
 ht-degree: 1%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 1%
 >
 >本文仅作为一般示例指南提供。 在开始Campaign项目之前，您必须与Adobe Campaign客户成功经理接洽，以测量部署的确切大小。 **不要** 获取或部署任何基础架构或硬件，直到完成此操作。
 
-本文档提供了在内部部署数据中心或虚拟化云环境部署Adobe Campaign Classic v7的一般建议。 这种类型的部署，称为 **混合** 或 **中间源**，将Campaign营销实例和营销数据库置于您的操作控制之下，同时使用AdobeCloud Messaging服务发送电子邮件、短信或SMPP消息，并收集电子邮件打开、退回和点击跟踪数据。
+本文档提供了在内部部署数据中心或虚拟化云环境中部署Adobe Campaign Classic v7的一般建议。 这种类型的部署，称为 **混合** 或 **中间源**，将Campaign营销实例和营销数据库置于您的操作控制之下，同时使用AdobeCloud Messaging服务发送电子邮件、短信或SMPP消息，并收集电子邮件打开、退回和点击跟踪数据。
 
 营销实例是Adobe Campaign架构的一部分，它驱动着所有营销活动，并存储着营销活动返回的所有收件人数据和分析数据。 营销实例是一组运行Adobe Campaign服务的内部部署服务器和关系数据库。
 
 >[!CAUTION]
 >
->如果您使用完全托管的Adobe Campaign实例(在AdobeCloud Services中部署)，本文档中的信息不适用。
+>如果您使用完全托管的Adobe Campaign实例(在AdobeCloud Service中部署)，本文档中的信息不适用。
 
 有关软件兼容性的详情，请参见 [兼容性矩阵](../../rn/using/compatibility-matrix.md).
 
@@ -219,7 +219,7 @@ Web服务器托管Campaign Web应用程序，支持系统中的1000万活动收�
 活动收件人需要存储空间和数据库缓冲区空间，因此更多的收件人通常需要数据库服务器上的更多内存和CPU容量。 收件人本身的存储增加相对较小，但对于为电子邮件促销活动保留的事件跟踪数据而言，可能会具有重要意义。
 
 * **电子邮件营销活动大小**
-活动启动的频率会影响数据库服务器CPU要求。 与直接邮寄、入站交互和其他工作流相结合，电子邮件营销活动的分段操作给数据库服务器带来了相当大的负载。
+活动启动的频率会影响数据库服务器CPU要求。 与直接邮寄、入站交互和其他工作流相结合，电子邮件营销活动的分段操作给数据库服务器带来了沉重的负载。
 
 * **直邮频率**
 直接邮寄的频率会影响数据库服务器CPU要求。 与促销活动启动和其他工作流相结合，直接邮件的分段操作会给数据库服务器带来大量负载。

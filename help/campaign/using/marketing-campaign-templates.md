@@ -9,7 +9,7 @@ exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1135'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 5%
 
 1. 完成 **标签** 字段并单击 **确定**.
 1. 根据您的要求创建工作流。
-1. 单击&#x200B;**保存**。您的模板现在已准备好在营销活动中使用。
+1. 单击 **保存**. 您的模板现在已准备好在营销活动中使用。
 
 您还可以 **重复** 默认模板以重复使用并调整其配置。
 
@@ -111,7 +111,7 @@ ht-degree: 5%
 
   ![](assets/s_ncs_user_op_template_activate_3.png)
 
-* **概要**
+* **大纲**
 
   选择此模块时， **[!UICONTROL Delivery outlines]** 子选项卡将添加到 **[!UICONTROL Documents]** 选项卡，以定义营销活动的投放概要。 要了解有关投放概要的更多信息，请参阅 [本节](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
@@ -137,7 +137,7 @@ ht-degree: 5%
 
   必须将审阅人操作员或操作员组与每个启用的审批关联。
 
-* **非劳动成本和目标**
+* **费用和目标**
 
   选择此模块时， **[!UICONTROL Budget]** 选项卡会添加到基于此模板的模板和营销活动的详细信息，以便可以选择关联的预算。
 

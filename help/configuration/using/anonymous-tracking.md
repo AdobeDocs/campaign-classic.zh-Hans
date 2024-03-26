@@ -20,7 +20,7 @@ ht-degree: 8%
 >[!IMPORTANT]
 >
 >在网站上设置匿名跟踪可能会触发收集大量跟踪日志，从而影响数据库操作。 请仔细配置。\
->跟踪日志将保存在数据库中，直到清除跟踪数据为止。 使用部署向导配置清除频率。 如需详细信息，请参阅[此部分](../../installation/using/deploying-an-instance.md#purging-data)。
+>跟踪日志将保存在数据库中，直到清除跟踪数据为止。 使用部署向导配置清除频率。 如需详细信息，请参阅[此小节](../../installation/using/deploying-an-instance.md#purging-data)。
 
 要在实例上启用匿名Web跟踪，必须配置以下元素：
 

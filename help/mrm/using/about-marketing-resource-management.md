@@ -3,7 +3,7 @@ product: campaign
 title: 营销资源管理快速入门
 description: 发现营销资源管理
 feature: Resource Management
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
@@ -11,7 +11,7 @@ exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -57,6 +57,6 @@ Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具
 
 * **预算管理**. [了解详情](../../mrm/using/controlling-costs.md)
 
-* **任务管理**. [了解详情](../../mrm/using/creating-and-managing-tasks.md)
+* **任务管理**。[了解详情](../../mrm/using/creating-and-managing-tasks.md)
 
 * **资源管理**. [了解详情](../../mrm/using/managing-marketing-resources.md)

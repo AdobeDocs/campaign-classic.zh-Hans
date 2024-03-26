@@ -8,8 +8,8 @@ feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 7%
+source-wordcount: '1464'
+ht-degree: 9%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 7%
 **[!UICONTROL 1. Delivery statistics]**
 
 * **[!UICONTROL Messages to deliver]** ：投放分析后要投放的消息总数。
-* **[!UICONTROL Success]** : 成功处理的消息数.
+* **[!UICONTROL Success]** ：成功处理的消息数。
 
 **[!UICONTROL 2. Reception statistics]**
 
@@ -87,7 +87,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->此报告中显示的域名在多维数据集级别使用的明细列表中定义。 要更改、添加或删除默认域，请编辑 **[!UICONTROL Domains]** 逐项列出并修改值和别名。 如需详细信息，请参阅[此部分](../../platform/using/managing-enumerations.md)。此 **[!UICONTROL Others]** 类别包括不属于明细列表任何值的域名。
+>此报告中显示的域名在多维数据集级别使用的明细列表中定义。 要更改、添加或删除默认域，请编辑 **[!UICONTROL Domains]** 逐项列出并修改值和别名。 有关详细信息，请参见 [本节](../../platform/using/managing-enumerations.md). 此 **[!UICONTROL Others]** 类别包括不属于明细列表任何值的域名。
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -170,9 +170,9 @@ ht-degree: 7%
 本节包括以下指标：
 
 * **[!UICONTROL Messages to be delivered]** ：投放分析后要投放的消息总数。
-* **[!UICONTROL Success]** ：成功处理的消息数。 关联速率是指与要投放的消息数量之比。
-* **[!UICONTROL Errors]** ：投放和自动回弹处理期间累计的错误总数。 关联速率是指与要投放的消息数量之比。
-* **[!UICONTROL New quarantines]** ：投放失败（用户未知，域无效）后隔离的地址数。 关联速率是指与要投放的消息数量之比。
+* **[!UICONTROL Success]** ：成功处理的消息数。 关联比率是与要投放的消息数量的比率。
+* **[!UICONTROL Errors]** ：投放和自动回弹处理期间累计的错误总数。 关联比率是与要投放的消息数量的比率。
+* **[!UICONTROL New quarantines]** ：投放失败（用户未知，域无效）后隔离的地址数。 关联比率是与要投放的消息数量的比率。
 
 ## 热门点击 {#hot-clicks}
 

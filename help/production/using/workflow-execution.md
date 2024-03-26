@@ -3,7 +3,7 @@ product: campaign
 title: 工作流执行
 description: 工作流执行
 feature: Monitoring, Workflows
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 5%
+source-wordcount: '650'
+ht-degree: 4%
 
 ---
 
@@ -120,5 +120,5 @@ ht-degree: 5%
 如果工作流失败，请执行以下步骤：
 
 1. 检查工作流日志。 有关详细信息，请参见 [监控工作流执行](../../workflow/using/monitoring-workflow-execution.md) 和 [显示日志](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) 部分。
-1. 监测技术工作流. 欲知详情，请参阅 [本节](../../workflow/using/monitoring-technical-workflows.md).
+1. 监控技术工作流。 欲知详情，请参阅 [本节](../../workflow/using/monitoring-technical-workflows.md).
 1. 查找单个工作流活动上的失败。

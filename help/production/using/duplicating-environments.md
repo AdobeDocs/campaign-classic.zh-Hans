@@ -3,7 +3,7 @@ product: campaign
 title: 复制环境
 description: 复制环境
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1317'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 2%
 
 为了使此过程正常工作，源环境和目标环境必须具有相同的实例数、相同的用途（营销实例、投放实例）和类似的配置。 技术配置必须符合软件先决条件。 必须在两个环境中安装相同的组件。
 
-## 实施 {#implementation}
+## 实现 {#implementation}
 
 ### 传输过程 {#transfer-procedure}
 

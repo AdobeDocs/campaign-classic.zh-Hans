@@ -3,7 +3,7 @@ product: campaign
 title: 管理
 description: 管理
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '431'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,7 @@ Adobe Campaign模块的自动启动(**Web**， **mta**， **wfserver**、等) �
 
   您也可以使用 **nlserver重新启动`<module>[@<instance>]`** 命令重新启动模块。
 
-  示例:
+  例如：
 
   **nlserver start web**
 
@@ -84,7 +84,7 @@ Adobe Campaign模块的自动启动(**Web**， **mta**， **wfserver**、等) �
   >* 使用 **-noconsole** 选项，以确保启动的模块不会在控制台上显示任何内容。 其日志将通过 **syslogd** 模块。
   >* 使用 **-verbose** 选项，以显示有关流程操作的其他信息。
   >
-  >   示例:
+  >   例如：
   >
   >   **nlserver restart web -verbose**
   >

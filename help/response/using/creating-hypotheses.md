@@ -145,7 +145,7 @@ ht-degree: 3%
 
 在本例中，我们要创建一个与投放相关的假设验证。 此假设将基于之前创建的模型。 [了解详情](hypothesis-templates.md#example--creating-a-hypothesis-template-on-a-delivery)
 
-然后，我们将优化从模型继承的查询，以针对购买表的特定文章提出假设。
+然后，我们将优化从模型继承的查询，以对购买表的特定文章进行假设。
 
 1. 创建活动和投放。 [了解详情](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)
 

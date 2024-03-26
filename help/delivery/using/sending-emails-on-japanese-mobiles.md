@@ -9,7 +9,7 @@ role: User
 exl-id: 44634227-2340-49c4-b330-740c739ea551
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Adobe Campaign允许您检查消息格式是否适合发送到日本移动设备
 
 此分类规则允许您确保投放遵守 [格式约束](#limitations-and-recommendations) 由日语运算符定义，特别是相对于电子邮件的总大小、HTML和文本部分的大小、消息中的图像数量以及HTML内容中的标记。
 
-###   发送验证 {#sending-proofs}
+### 发送校样 {#sending-proofs}
 
 您可以发送校样以测试您的投放。 发送验证时，如果使用替换地址，请输入与所用用户档案的电子邮件格式对应的地址。
 

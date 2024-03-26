@@ -3,12 +3,12 @@ product: campaign
 title: 与Adobe Experience Cloud解决方案工作流的集成
 description: 详细了解与Adobe Experience Cloud解决方案工作流的集成
 feature: Workflows, Audiences, People Core Service Integration
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 topic-tags: technical-workflows
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 16%
+ht-degree: 13%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 16%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">从 Adobe Experience Cloud 导入受众</span> <br /> </td> 
+   <td> <span class="uicontrol">从Adobe Experience Cloud导入受众</span> <br /> </td> 
    <td> <span class="uicontrol">importSharedAudience</span> <br /> </td> 
    <td> 利用此工作流，可将不同Adobe Experience Cloud解决方案的受众/区段导入Adobe Campaign。<br /> </td> 
   </tr> 

@@ -3,7 +3,7 @@ product: campaign
 title: 优惠目录概述
 description: 详细了解Campaign中的优惠目录
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
@@ -11,7 +11,7 @@ exl-id: 464a6548-1b91-4e09-b620-3b820ef69653
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 

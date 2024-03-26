@@ -9,7 +9,7 @@ exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '359'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 要定义其他参数，必须扩展此架构。
 
-**示例**:
+**示例**：
 
 ```
 <srcSchema extendedSchema="nms:webTrackingLog" label="Web Tracking"
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 为此，请修改 **webTrackingParamSize** 的属性 **`<trackinglogd>`** 中的元素 **serverConf.xml** 文件。 此文件保存在 **会议** Adobe Campaign安装目录的子目录。
 
-**示例**:
+**示例**：
 
 默认值为64个字符。 通过此值，可将 **数量** 和 **文章** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxx&quot;)标准参数。
 

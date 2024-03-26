@@ -9,8 +9,8 @@ role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 2%
+source-wordcount: '660'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
    * 状态 **[!UICONTROL Quarantined]** 是软退回或硬退回的结果。
 
-  有关更多信息，请参阅[此章节](understanding-quarantine-management.md#quarantine-vs-denylist)。
+  有关更多信息，请参阅[此小节](understanding-quarantine-management.md#quarantine-vs-denylist)。
 
 * **不同的隔离错误原因意味着什么？**
 

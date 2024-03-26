@@ -2,14 +2,14 @@
 product: campaign
 title: 向 Web 窗体添加字段
 description: 向 Web 窗体添加字段
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
+badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2368'
-ht-degree: 1%
+source-wordcount: '2376'
+ht-degree: 0%
 
 ---
 
@@ -25,24 +25,24 @@ ht-degree: 1%
 
 使用工具栏中的按钮时，选择要添加的字段类型。
 
-可使用以下类型的字段：
+以下类型的字段可用：
 
-* 文本/数字输入。 参见 [添加输入字段](#adding-input-fields).
-* 下拉列表选择。 参见 [添加下拉列表](#adding-drop-down-lists).
-* 通过复选框进行多项选择。 参见 [添加复选框](#adding-checkboxes).
-* 通过单选按钮进行独占选择。 参见 [添加单选按钮](#adding-radio-buttons).
-* 在选项网格中投票。 参见 [添加网格](#adding-grids).
-* 数字和日期。 参见 [添加日期和数字](#adding-dates-and-numbers).
-* 订阅/退订信息服务。 参见 [“订阅”复选框](#subscription-checkboxes).
-* 验证码验证。 参见 [插入验证码](#inserting-a-captcha).
+* 文本/数字输入。 请参阅 [添加输入字段](#adding-input-fields).
+* 下拉列表选择。 请参阅 [添加下拉列表](#adding-drop-down-lists).
+* 通过复选框进行多项选择。 请参阅 [添加复选框](#adding-checkboxes).
+* 通过单选按钮进行独占选择。 请参阅 [添加单选按钮](#adding-radio-buttons).
+* 在选项网格中投票。 请参阅 [添加网格](#adding-grids).
+* 数字和日期。 请参阅 [添加日期和数字](#adding-dates-and-numbers).
+* 订阅/退订信息服务。 请参阅 [“订阅”复选框](#subscription-checkboxes).
+* 验证码验证。 请参阅 [插入验证码](#inserting-a-captcha).
 * 下载按钮。 [上传文件](#uploading-a-file).
-* 隐藏常量。 参见 [插入隐藏的常量](#inserting-a-hidden-constant).
+* 隐藏常量。 请参阅 [插入隐藏的常量](#inserting-a-hidden-constant).
 
-请指定响应存储模式：更新数据库中的字段（仅存储上次保存的值）或存储在变量中（未存储答案）。 有关更多信息，请参阅 [响应存储字段](web-forms-answers.md#response-storage-fields).
+请指定响应存储模式：更新数据库中的字段（仅存储上次保存的值）或存储在变量中（未存储答案）。 有关详细信息，请参见 [响应存储字段](web-forms-answers.md#response-storage-fields).
 
 >[!NOTE]
 >
->默认情况下，该字段会插入到当前树的底部。 使用工具栏中的箭头可将其向上或向下移动。
+>默认情况下，该字段会插入到当前树的底部。 使用工具栏中的箭头可将其上下移动。
 
 ## 字段创建向导 {#field-creation-wizard}
 
@@ -50,61 +50,62 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
-选择要创建的字段类型：可选择在数据库中添加字段、变量或导入一组在其他表单中创建并在容器中收集的字段。
+选择要创建的字段类型：您可以选择在数据库中添加字段、添加变量，或者导入一组在其他表单中创建并在容器中收集的字段。
 
-单击 **[!UICONTROL Next]** 并选择存储字段或变量，或要导入的容器。
+单击 **[!UICONTROL Next]** 并选择要导入的存储字段或变量，或容器。
 
 ![](assets/s_ncs_admin_webform_wz_confirm_db.png)
 
-单击 **[!UICONTROL Finish]** 以将所选字段插入页面。
+单击 **[!UICONTROL Finish]** 将所选字段插入页面。
 
 ![](assets/s_ncs_admin_webform_wz_insert_field.png)
 
 ## 添加输入字段 {#adding-input-fields}
 
-要添加输入字段，请单击 **[!UICONTROL Input control]** 按钮，并选择要添加的字段类型。
+要添加输入字段，请单击 **[!UICONTROL Input control]** 按钮并选择您要添加的字段类型。
 
 ![](assets/s_ncs_admin_webform_select_field.png)
 
-### 输入字段类型 {#types-of-input-fields}
+### 输入字段的类型 {#types-of-input-fields}
 
 可以将五种不同类型的文本字段插入到表单页面中：
 
 * **文本**：允许用户在一行中输入文本。
 
-   ![](assets/s_ncs_admin_survey_txt_ex.png)
+  ![](assets/s_ncs_admin_survey_txt_ex.png)
 
-* **数字**：允许用户在一行中输入数字。 有关更多信息，请参阅 [添加数字](#adding-numbers).
+* **数字**：允许用户在一行中输入数字。 有关详情，请参阅 [添加数字](#adding-numbers).
 
-   页面获得批准后，将检查字段内容，以确保输入的值与字段兼容。 有关更多信息，请参阅 [定义控制设置](form-rendering.md#defining-control-settings).
+  页面获得批准后，将检查字段内容，确保输入的值与字段兼容。 有关详细信息，请参见 [定义控制设置](form-rendering.md#defining-control-settings).
 
-* **密码**：允许用户在一行中输入文本。 在文本输入期间，字符会被替换为句点：
+* **密码**：允许用户在一行中输入文本。 在文本输入过程中，字符会被替换为句点：
 
-   ![](assets/s_ncs_admin_survey_passwd_ex.png)
+  ![](assets/s_ncs_admin_survey_passwd_ex.png)
 
-   >[!CAUTION]
-   >
-   >口令以未加密的方式存储在数据库中。
+  >[!CAUTION]
+  >
+  >口令以未加密的方式存储在数据库中。
 
 * **多行文本**：允许用户在多行中输入文本。
 
-   ![](assets/s_ncs_admin_survey_txtmulti_ex.png)
+  ![](assets/s_ncs_admin_survey_txtmulti_ex.png)
 
-   >[!CAUTION]
-   >
-   >多行文本字段是可以包含回车符的特定字段。 它们的存储空间必须与映射到XML元素的字段相关联，而不是XML属性。
+  >[!CAUTION]
+  >
+  >多行文本字段是可以包含回车符的特定字段。 它们的存储空间必须与映射到XML元素的字段关联，而不是XML属性。
+  >   
 
-* **丰富的多行文本**：允许用户输入布局为的文本，该布局将以HTML格式存储。
+* **丰富的多行文本**：允许用户输入布局为文本，该布局将以HTML格式存储。
 
-   ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
+  ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
 
-   您可以选择提供给用户的编辑器类型。 要执行此操作，请使用 **[!UICONTROL HTML editor]** 中的字段 **[!UICONTROL Advanced]** 选项卡。
+  您可以选择提供给用户的编辑器类型。 要执行此操作，请使用 **[!UICONTROL HTML editor]** 中的字段 **[!UICONTROL Advanced]** 选项卡。
 
-   ![](assets/webapp_enrich_text_type.png)
+  ![](assets/webapp_enrich_text_type.png)
 
-   显示的图标数量因编辑器类型而异。 对于 **[!UICONTROL Advanced]** 编辑器中，渲染将如下所示：
+  显示的图标数因编辑器类型而异。 对于 **[!UICONTROL Advanced]** 编辑器中，渲染将如下所示：
 
-   ![](assets/webapp_enrich_text_max.png)
+  ![](assets/webapp_enrich_text_max.png)
 
 ### 配置输入字段 {#configure-input-fields}
 
@@ -112,7 +113,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_txt_param.png)
 
-此 **[!UICONTROL General]** 选项卡允许您输入字段的名称，并根据需要为其指定默认值。
+此 **[!UICONTROL General]** 选项卡允许您输入字段的名称，并在必要时为其指定默认值。
 
 答案存储模式可通过 **[!UICONTROL Edit storage...]** 链接。 值可以存储在数据库的现有字段中；也可以选择不在数据库中保存信息（使用局部变量）。
 
@@ -120,21 +121,21 @@ ht-degree: 1%
 >
 >有关存储模式的详情，请参见 [响应存储字段](web-forms-answers.md#response-storage-fields)
 
-此 **[!UICONTROL Advanced]** 选项卡用于定义字段的显示参数（标签位置、对齐方式等）。 参见 [定义Web窗体布局](defining-web-forms-layout.md).
+此 **[!UICONTROL Advanced]** 选项卡允许您定义字段的显示参数（标签的位置、对齐方式等）。 请参阅 [定义Web窗体布局](defining-web-forms-layout.md).
 
 ## 添加下拉列表 {#adding-drop-down-lists}
 
-您可以在调查页面中插入下拉列表。 这允许用户在下拉菜单中选择选件中的值。
+您可以在调查页面中插入下拉列表。 这允许用户在下拉菜单中选择选件上的值。
 
 ![](assets/s_ncs_admin_survey_dropdown_sample.png)
 
-要将下拉框添加到表单页面，请单击 **[!UICONTROL Selection controls > Drop-down list]** 按钮时，才能看到页面编辑器的图标。
+要将下拉框添加到表单页面，请单击 **[!UICONTROL Selection controls > Drop-down list]** 按钮进行编辑。
 
 ![](assets/s_ncs_admin_survey_create_dropdown.png)
 
 选择答案存储模式并确认您的选择。
 
-在列表的下部定义标签和值 **[!UICONTROL General]** 选项卡。 如果信息存储在数据库的现有字段中，并且它是一个枚举字段，则可以通过单击自动填写值 **[!UICONTROL Initialize the list of values from the database]** ，如下所示：
+在列表的下部定义列表的标签和值 **[!UICONTROL General]** 选项卡。 如果信息存储在数据库的现有字段中，并且它是一个枚举字段，则可以通过单击自动填写值 **[!UICONTROL Initialize the list of values from the database]** ，如下所示：
 
 ![](assets/s_ncs_admin_survey_database_values.png)
 
@@ -142,7 +143,7 @@ ht-degree: 1%
 >
 >使用值列表右侧的箭头可更改其顺序。
 
-如果数据存储在链接表中，则可以选择保存列表中要建议的值的字段。 例如，如果选择国家/地区表，请单击 **[!UICONTROL Initialize the list of values from the database...]** 并选择所需的字段。
+如果数据存储在链接表中，则可以选择保存列表中建议值的字段。 例如，如果选择国家/地区表，请单击 **[!UICONTROL Initialize the list of values from the database...]** 并选择所需的字段。
 
 ![](assets/s_ncs_admin_survey_preload_values.png)
 
@@ -160,17 +161,17 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_check_box.png)
 
-要将复选框添加到表单，请单击 **[!UICONTROL Selection controls > Checkbox...]** 图标。
+要将复选框添加到表单，请单击 **[!UICONTROL Selection controls > Checkbox...]** 图标（位于页面编辑器工具栏中）。
 
 选择答案存储模式并确认您的选择。
 
-在中输入框的标签 **[!UICONTROL Label]** 字段 **[!UICONTROL General]** 选项卡。
+在 **[!UICONTROL Label]** 字段 **[!UICONTROL General]** 选项卡。
 
 ![](assets/s_ncs_admin_survey_check_box_edit.png)
 
-通过复选框，可根据是否选中该框为存储字段（或值）分配值。 此 **[!UICONTROL Values]** 部分，可让您输入如果选中此框时要分配的值(在 **[!UICONTROL Value]** 字段)，以及未选中时要分配的值(在 **[!UICONTROL Empty value]** 字段)。 这些值取决于数据存储格式。
+复选框允许您向存储字段（或值）分配值，具体取决于是否勾选该复选框。 此 **[!UICONTROL Values]** 部分，可让您输入如果选中此框时要分配的值(在 **[!UICONTROL Value]** 字段)，以及未选中时要分配的值(在 **[!UICONTROL Empty value]** 字段)。 这些值取决于数据存储格式。
 
-如果存储字段（或变量）是布尔值，则将自动推导未选中该框时要分配的值。 在此例中，仅 **[!UICONTROL Value if checked]** 字段中提供了相应的字段，如下所示：
+如果存储字段（或变量）是布尔值，那么如果未勾选该框，则将自动推导出要分配的值。 在这种情况下，仅 **[!UICONTROL Value if checked]** 中提供了字段，如下所示：
 
 ![](assets/s_ncs_admin_survey_check_box_enum.png)
 
@@ -180,7 +181,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_check_box_ex.png)
 
-该信息将上载到数据库并放入现有字段(在本例中， **[!UICONTROL Comment]** 字段)：
+信息将上载到数据库并上载到现有字段(在本例中， **[!UICONTROL Comment]** 字段)：
 
 ![](assets/s_ncs_admin_survey_check_box_ex_list.png)
 
@@ -190,7 +191,7 @@ ht-degree: 1%
 
 ## 添加单选按钮 {#adding-radio-buttons}
 
-通过单选按钮，可为用户提供一系列独占选项供用户选择。 这些是同一字段的不同值。
+通过单选按钮，您可以为用户提供一系列独占选项以供选择。 这些是同一字段的不同值。
 
 ![](assets/s_ncs_admin_survey_radio_button.png)
 
@@ -206,7 +207,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_radio_button_sample.png)
 
-单选按钮的配置方式与复选框类似(请参阅 [添加复选框](#adding-checkboxes))。 但是，如果未选择该选项，则不会分配任何值。 为了使多个按钮相互依赖（即选择一个按钮会自动取消选择其他按钮），必须将它们存储在同一字段中。 如果它们未存储在数据库中，则必须使用相同的本地变量进行临时存储。 参见 [响应存储字段](web-forms-answers.md#response-storage-fields).
+单选按钮的配置方式与复选框类似(请参阅 [添加复选框](#adding-checkboxes))。 但是，如果未选择该选项，则不会分配任何值。 为了使多个按钮相互依赖（即选择一个按钮会自动取消选择其他按钮），它们必须存储在同一字段中。 如果它们未存储在数据库中，则必须使用相同的本地变量进行临时存储。 请参阅 [响应存储字段](web-forms-answers.md#response-storage-fields).
 
 ### 添加按钮列表 {#add-a-list-of-buttons}
 
@@ -214,16 +215,16 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_radio_button_sample2.png)
 
-添加标签数量相同的单选按钮。 此功能的优势在于，您可以从现有字段（如果为分项字段）导入值，并让用户选择一个选项。 但是，按钮的布局不太灵活。
+添加任意数量的单选按钮和标签。 此功能的优势在于，您可以从现有字段（如果为分项字段）导入值，并让用户选择一个选项。 但是，按钮的布局不太灵活。
 
 >[!NOTE]
 >
->无法在Web应用程序中启用多选功能。
+>无法在Web应用程序中启用多选。
 >但是，可以插入 **[!UICONTROL Multiple choice]** 在Web应用程序中键入字段，但这不会使用户能够选择多个值。
 
 ## 添加网格 {#adding-grids}
 
-在Web应用程序中，使用网格来设计投票页。 这样，您就可以提供用于回答调查或评估类型Web窗体的单选按钮列表，如下所示：
+网格用于在Web应用程序中设计投票页。 这样，您就可以提供用于回答调查或评估类型Web窗体的单选按钮列表，如下所示：
 
 ![](assets/s_ncs_admin_survey_vote_param.png)
 
@@ -231,7 +232,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_vote_sample.png)
 
-网格每行中的单选按钮数量与在简单网格中定义的值数量匹配。
+网格每行的单选按钮数量与在简单网格中定义的值的数量匹配。
 
 ![](assets/s_ncs_admin_survey_vote_ex.png)
 
@@ -239,7 +240,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在我们的示例中，网格的标签是隐藏的。 为此，请转到 **[!UICONTROL Advanced]** 选项卡， **[!UICONTROL Label position]** 显示定义为 **[!UICONTROL Hidden]** . 参见 [定义标签的位置](defining-web-forms-layout.md#defining-the-position-of-labels).
+>在我们的示例中，网格的标签是隐藏的。 为此，请转到 **[!UICONTROL Advanced]** 选项卡， **[!UICONTROL Label position]** 显示定义为 **[!UICONTROL Hidden]** . 请参阅 [定义标签位置](defining-web-forms-layout.md#defining-the-position-of-labels).
 
 ## 添加日期和数字 {#adding-dates-and-numbers}
 
@@ -255,7 +256,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_date_edit.png)
 
-窗口的下半部分允许您为此字段中存储的值选择日期和时间格式。
+窗口的下部允许您为此字段中存储的值选择日期和时间格式。
 
 ![](assets/s_ncs_admin_survey_date_edit_values.png)
 
@@ -265,7 +266,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->默认情况下，表单中使用的日期是通过日历输入的。 对于多语言表单，请检查日历是否以使用的所有语言提供。 参见 [翻译Web窗体](translating-a-web-form.md).
+>默认情况下，表单中使用的日期是通过日历输入的。 对于多语言表单，请检查日历是否以使用的所有语言提供。 请参阅 [翻译Web窗体](translating-a-web-form.md).
 
 但是，在某些情况下（例如，输入出生日期），使用下拉列表可能更容易。
 
@@ -293,7 +294,7 @@ ht-degree: 1%
 
 默认值为发布表单时字段中显示的值。 用户可对其进行更正。
 
-您可以通过，向数值字段添加前缀和/或后缀， **[!UICONTROL Advanced]** 选项卡，如下所示：
+您可以通过以下方式向数值字段添加前缀和/或后缀： **[!UICONTROL Advanced]** 选项卡，如下所示：
 
 ![](assets/s_ncs_admin_survey_number_ex_conf.png)
 
@@ -309,7 +310,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_subscription_edit.png)
 
-指示复选框的标签，并使用 **[!UICONTROL Service]** 下拉框。
+指定复选框的标签，然后使用 **[!UICONTROL Service]** 下拉框。
 
 >[!NOTE]
 >
@@ -321,7 +322,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->如果用户已经订阅了信息服务，并且在他们批准表单时未选中链接到此服务的框，则将取消订阅这些服务。
+>如果用户已经订阅了信息服务，并且在批准表单时未选中链接到此服务的框，则将取消订阅这些服务。
 
 ## 插入验证码 {#inserting-a-captcha}
 
@@ -329,13 +330,13 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->如果您的表单包含多个页面，则必须始终将验证码放在最后一页（紧靠存储盒之前），以防止任何安全措施被绕过。
+>如果您的表单包含多个页面，则必须始终将验证码放在最后一页（紧靠存储盒之前），以防止安全措施的任何绕过。
 
-要将验证码插入到表单中，请单击工具栏上的第一个按钮并选择 **[!UICONTROL Advanced controls>Captcha]**.
+要将验证码插入到表单中，请单击工具栏上的第一个按钮，然后选择 **[!UICONTROL Advanced controls>Captcha]**.
 
 ![](assets/s_ncs_admin_survey_add_captcha.png)
 
-输入字段的标签。 此标签将显示在Captcha显示区域的前面。 您可以更改此标签在 **[!UICONTROL Advanced]** 选项卡。
+输入字段的标签。 此标签将显示在验证码显示区域的前面。 您可以更改此标签在 **[!UICONTROL Advanced]** 选项卡。
 
 ![](assets/s_ncs_admin_survey_captcha_adv.png)
 
@@ -343,15 +344,15 @@ ht-degree: 1%
 >
 >对象 **[!UICONTROL captcha]** 类型控件，无需指示存储字段或变量。
 
-将验证码插入到页面中，并将输入字段置于视觉效果下方。 这两个元素不可分，在页面布局中会视为单个项目（它们占用一个单元格）。
+将验证码插入到页面中，并将输入字段置于视觉效果下方。 这两个元素不可分，在页面布局中会被视为单个项目（它们占用一个单元格）。
 
 ![](assets/s_ncs_admin_survey_captcha_sample.png)
 
-确认页面后，如果输入的验证码内容不正确，则输入字段以红色显示。
+确认页面后，如果输入的验证码内容不正确，则输入字段将以红色显示。
 
 ![](assets/s_ncs_admin_survey_captcha_error.png)
 
-您可以创建一个要显示的错误消息。 为此，请使用 **[!UICONTROL Personalize the message]** 中的链接 **[!UICONTROL General]** 选项卡。
+您可以创建一个要显示的错误消息。 要实现此目的，请使用 **[!UICONTROL Personalize the message]** 中的链接 **[!UICONTROL General]** 选项卡。
 
 ![](assets/s_ncs_admin_survey_captcha_error_msg.png)
 
@@ -367,18 +368,17 @@ ht-degree: 1%
 
 要将上传字段插入表单页面，请选择 **[!UICONTROL Advanced controls > File...]** 页面编辑器工具栏中的菜单。
 
-默认情况下，上传的文件存储在可通过访问的资源文件中 **[!UICONTROL Resources > Online > Public resources]** 菜单。 您可以使用脚本更改此行为。 此脚本可以使用中定义的函数 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)，包括与文件操纵有关的内容。
+默认情况下，上传的文件存储在可通过访问的资源文件中 **[!UICONTROL Resources > Online > Public resources]** 菜单。 您可以使用脚本更改此行为。 此脚本可以使用中定义的函数 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)，包括与文件操纵相关的内容。
 
 可以将指向这些文件的链接存储在本地变量或数据库字段中。 例如，您可以扩展收件人模式以添加指向基于文件的资源的链接。
 
 >[!CAUTION]
 >
 >* 必须为具有安全访问权限（使用凭据）的表单保留此类型的文件。
->* Adobe Campaign不控制上传的资源大小或类型：因此，强烈建议仅对安全类型的intranet站点使用上传字段。
->* 如果多个服务器链接到实例（负载平衡架构），则需要确保对Web窗体的调用到达同一服务器。
+>* Adobe Campaign不控制上传的资源的大小或类型：因此，我们强烈建议仅对安全类型的Intranet站点使用上传字段。
+>* 如果多个服务器链接到实例（负载平衡架构），则需要确保对Web表单的调用到达同一服务器。
 >* 这些实施需要Adobe Campaign咨询团队的协助。
 >
-
 
 ## 插入隐藏的常量 {#inserting-a-hidden-constant}
 
@@ -388,6 +388,6 @@ ht-degree: 1%
 
 为此，请放置 **常量** ，并指定值和存储位置。
 
-在以下示例中， **来源** 当用户批准此页面时，将自动填写收件人用户档案的字段。 该常量不显示在页面上。
+在以下示例中， **来源** 用户批准此页面时，会自动填写收件人用户档案的字段。 该常量不显示在页面上。
 
 ![](assets/s_ncs_admin_survey_constante.png)

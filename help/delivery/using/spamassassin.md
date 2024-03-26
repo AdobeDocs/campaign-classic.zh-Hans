@@ -9,8 +9,8 @@ role: User
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 7%
+source-wordcount: '266'
+ht-degree: 5%
 
 ---
 
@@ -28,7 +28,7 @@ SpamAssassin利用多种垃圾邮件检测技术，包括：
 
 >[!NOTE]
 >
->必须在Adobe Campaign应用程序服务器上安装和配置SpamAssassin。 如需详细信息，请参阅[此部分](../../installation/using/configuring-spamassassin.md)。
+>必须在Adobe Campaign应用程序服务器上安装和配置SpamAssassin。 如需详细信息，请参阅[此小节](../../installation/using/configuring-spamassassin.md)。
 >
 >控制元素是否为垃圾邮件的规则通过SpamAssassin进行管理，并且可由具有权限的管理员编辑。
 

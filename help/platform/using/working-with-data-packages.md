@@ -11,8 +11,8 @@ topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2454'
-ht-degree: 3%
+source-wordcount: '2477'
+ht-degree: 2%
 
 ---
 
@@ -348,7 +348,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 >
 >有关设置工作流以自动导出包的更多信息，请参阅 [此页面](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html).
 
-### 推荐 {#data-package-recommendations}
+### 推荐做法 {#data-package-recommendations}
 
 始终在同一平台版本中导入。 您必须检查是否在具有相同内部版本的两个实例之间部署包。 切勿强制导入，并始终先更新平台（如果内部版本不同）。
 

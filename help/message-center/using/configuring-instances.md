@@ -3,15 +3,15 @@ product: campaign
 title: 配置实例
 description: 了解如何在Adobe Campaign Classic中配置事务性消息传递控制和执行实例
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 1%
+source-wordcount: '1243'
+ht-degree: 2%
 
 ---
 
@@ -131,7 +131,7 @@ ht-degree: 1%
 
 为了使控制实例能够连接到执行实例而无需提供密码，只需在中输入控制实例的IP地址 **消息中心** “访问权限”部分。 但是，默认情况下禁止空密码。
 
-要使用空密码，请转至执行实例并定义一个安全区域，该区域限制为发送事件的信息系统的IP地址。 此安全区域必须允许空密码并接受 `<identifier> / <password>` 键入connections。 如需详细信息，请参阅[此部分](../../installation/using/security-zones.md)。
+要使用空密码，请转至执行实例并定义一个安全区域，该区域限制为发送事件的信息系统的IP地址。 此安全区域必须允许空密码并接受 `<identifier> / <password>` 键入connections。 如需详细信息，请参阅[此小节](../../installation/using/security-zones.md)。
 
 >[!NOTE]
 >
@@ -196,7 +196,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >**mc1** 和 **mc2** 操作员必须具有 **[!UICONTROL Message Center execution]** 这些用户无权访问Adobe Campaign客户端控制台。 运算符必须始终与安全区域链接。 如需详细信息，请参阅[此部分](../../installation/using/security-zones.md)。
+   >**mc1** 和 **mc2** 操作员必须具有 **[!UICONTROL Message Center execution]** 这些用户无权访问Adobe Campaign客户端控制台。 运算符必须始终与安全区域链接。 如需详细信息，请参阅[此小节](../../installation/using/security-zones.md)。
 
 1. 对于每个运算符，选中 **[!UICONTROL Restrict to information found in sub-folders of]** 框，然后选择相关的文件夹(**文件夹1** 对于 **mc1** 运算符和 **文件夹2** 对于 **mc2** 运算符)。
 

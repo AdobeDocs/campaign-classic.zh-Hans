@@ -3,12 +3,12 @@ product: campaign
 title: 报告最佳实践
 description: Campaign报告最佳实践
 feature: Reporting, Monitoring
-badge: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 0%
+source-wordcount: '851'
+ht-degree: 5%
 
 ---
 
@@ -30,15 +30,15 @@ ht-degree: 0%
 
    例如，您可以：
 
-   * 浏览数据库中的数据并定义测量。 了解详情 [在此部分中](../../reporting/using/ac-cubes.md)
-   * 向现有报告添加指标。 了解详情 [在此部分中](../../reporting/using/about-reports-creation-in-campaign.md)
-   * 查看数据库中的数据。 了解详情 [在此部分中](../../reporting/using/about-descriptive-analysis.md)
+   * 浏览数据库中的数据并定义测量。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。
+   * 向现有报告添加指标。 可在[此小节](../../reporting/using/about-reports-creation-in-campaign.md)中了解详情。
+   * 查看数据库中的数据。 可在[此小节](../../reporting/using/about-descriptive-analysis.md)中了解详情。
    * 创建新的投放报告。 了解详情 [在此部分中](../../reporting/using/about-reports-creation-in-campaign.md))，
    * 从Adobe Campaign数据库导出数据(通过工作流，请参阅 [本节](../../workflow/using/about-workflows.md)
-   * 创建数据透视表。 了解详情 [在此部分中](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * 浏览汇总的数据。 了解详情 [在此部分中](../../reporting/using/ac-cubes.md)
-   * 使用向导分析数据。 了解详情 [在此部分中](../../reporting/using/about-descriptive-analysis.md)
-   * 分析大量数据。 了解详情 [在此部分中](../../reporting/using/about-reports-creation-in-campaign.md)
+   * 创建数据透视表。 可在[此小节](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)中了解详情。
+   * 浏览汇总的数据。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。
+   * 使用向导分析数据。 可在[此小节](../../reporting/using/about-descriptive-analysis.md)中了解详情。
+   * 分析大量数据。 可在[此小节](../../reporting/using/about-reports-creation-in-campaign.md)中了解详情。
 
 1. 确定目标人群
 
@@ -111,6 +111,6 @@ if(string(ctx@_historyId)!==""))
 
   有关清理和数据保留的更多信息，请参阅 [本节](../../configuration/using/data-model-best-practices.md#data-retention).
 
-### 导出报告 {#exporting-reports}
+### 导出您的报告 {#exporting-reports}
 
 有关专门用于导出报告的Recommendations的详细信息，请参见 [本节](../../reporting/using/actions-on-reports.md#exporting-a-report).

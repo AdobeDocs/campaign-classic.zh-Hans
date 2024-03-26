@@ -9,8 +9,8 @@ role: User
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1511'
-ht-degree: 4%
+source-wordcount: '1425'
+ht-degree: 3%
 
 ---
 
@@ -44,7 +44,7 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，�
 
 有关AMP for Email格式、规范和要求的更多信息，请参见 [AMP开发人员文档](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email).
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#amp-email-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#amp-email-video)
 
 ## 在Adobe Campaign中使用AMP for Email的关键步骤 {#key-steps-to-use-amp}
 

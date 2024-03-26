@@ -3,7 +3,7 @@ product: campaign
 title: 配置与Adobe Target的集成
 description: 了解如何配置与Adobe Target的集成
 feature: Target Integration
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
@@ -11,7 +11,7 @@ exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 

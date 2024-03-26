@@ -9,8 +9,8 @@ badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 1%
+source-wordcount: '316'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数�
 
 1. 转到 **[!UICONTROL Administration>Platform>Options]** 资源管理器节点。
 1. 更改 **Nms_DefaultRcpSchema** 变量，其模式名称与外部收件人表匹配（在本例中为：cus：individual）。
-1. 保存更改.
+1. 保存更改。
 
 ## 创建新表单 {#creating-a-new-form-}
 

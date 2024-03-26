@@ -3,7 +3,7 @@ product: campaign
 title: 将Linux平台迁移到Adobe Campaign v7
 description: 了解如何将Linux平台迁移到Adobe Campaign v7
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 0%
+source-wordcount: '498'
+ht-degree: 1%
 
 ---
 
@@ -671,7 +671,7 @@ Fully test the new installation, check that it does not regress and make sure th
 在下列每台服务器上启动Apache和Adobe Campaign服务：
 
 1. 跟踪和重定向服务器。
-1. 中间源服务器.
+1. 中间源服务器。
 1. 营销服务器。
 
 全面测试新安装，检查它是否不会回退并确保一切正常运行。

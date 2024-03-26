@@ -3,7 +3,7 @@ product: campaign
 title: 要维护的表
 description: 要维护的表
 feature: Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 badge-v7-prem: label="内部部署和混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 audience: production
 content-type: reference
@@ -11,8 +11,8 @@ topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 3%
+source-wordcount: '1146'
+ht-degree: 1%
 
 ---
 
@@ -97,7 +97,7 @@ ht-degree: 3%
    <td> NmsBroadLog<br /> </td> 
    <td> 最大<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 这是系统中最大的表。 每条发送的消息都有一条记录，这些记录会被插入、更新以跟踪投放状态，并在历史记录被清除时删除。 <br /> </td> 
+   <td> 这是系统中最大的表。 每条发送的消息都有一条记录，这些记录会被插入、更新以跟踪投放状态，并在历史记录清除后删除。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLog<br /> </td> 
@@ -121,13 +121,13 @@ ht-degree: 3%
    <td> NmsBroadLogMid（在中间源实例上）<br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 仅当5.10（或更高版本）实例用作中间源实例时。 这是数据库中最大的表之一。 每条发送的消息都有一条记录，这些记录会被插入、更新以跟踪投放状态，并在历史记录被清除时删除。 使用中间源时，建议限制历史记录（通常少于两个月），因此此表大小合理（对于6000万行，数据加索引，小于30 Go），但偶尔重建非常重要。 <br /> </td> 
+   <td> 仅当5.10（或更高版本）实例用作中间源实例时。 这是数据库中最大的表之一。 每条发送的消息都有一条记录，这些记录会被插入、更新以跟踪投放状态，并在历史记录清除后删除。 使用中间源时，建议限制历史记录（通常少于两个月），因此此表大小合理（对于6000万行，数据加索引，小于30 Go），但偶尔重建非常重要。 <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLogRcp（当使用NmsRecipient表时） <br /> </td> 
    <td> 大<br /> </td> 
    <td> 插入、更新、删除<br /> </td> 
-   <td> 这是系统中最大的表。 每条发送的消息都有一条记录，这些记录会被插入、更新以跟踪投放状态，并在历史记录被清除时删除。 请注意，在5.10中，此表比4.05中的等效表(NmsBroadLog)小，因为5.10版本的NmsBroadLogMsg表中已分解SMTP消息文本。 但是，仍必须定期（开始为每隔一周）重新索引此表，并不时地完全重建它（每月一次，或者当性能受到影响时）。 <br /> </td> 
+   <td> 这是系统中最大的表。 每条发送的消息都有一条记录，这些记录会被插入、更新以跟踪投放状态，并在历史记录清除后删除。 请注意，在5.10中，此表比4.05中的等效表(NmsBroadLog)小，因为5.10版本的NmsBroadLogMsg表中已分解SMTP消息文本。 但是，仍必须定期（开始为每隔一周）重新索引此表，并不时地完全重建它（每月一次，或者当性能受到影响时）。 <br /> </td> 
   </tr> 
   <tr> 
    <td> YyyyBroadLogXxx（使用外部收件人表时）<br /> </td> 

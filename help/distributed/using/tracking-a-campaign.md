@@ -2,13 +2,13 @@
 product: campaign
 title: 跟踪活动
 description: 了解如何使用Campaign分布式营销跟踪营销活动
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 1%
+source-wordcount: '423'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 筛选包 {#filter-packages}
 
-从 **[!UICONTROL Campaigns]** 选项卡中，您可以显示 **[!UICONTROL Campaign packages]** ，可重组所有现有的分布式营销活动。 您可以筛选此列表，使其仅显示已发布、延迟、未决批准等的营销活动。 要执行此操作，请单击此视图上部的链接，或使用 **[!UICONTROL Filter list]** 链接并选择要显示的促销活动包状态。
+从 **[!UICONTROL Campaigns]** 选项卡上，您可以显示 **[!UICONTROL Campaign packages]** ，可重组所有现有的分布式营销活动。 您可以筛选此列表，使其仅显示已发布、延迟、未决批准等的营销活动。 要执行此操作，请单击此视图上部的链接，或使用 **[!UICONTROL Filter list]** 链接并选择要显示的营销活动包状态。
 
 ![](assets/mkg_dist_catalog_filter.png)
 
@@ -39,11 +39,11 @@ ht-degree: 1%
 
 单击包名称可对其进行编辑。 您还可以按其本地实体和状态查看订单。
 
-此信息还可在以下位置提供： **[!UICONTROL Campaign orders]** 查看其中列出了所有订单的信息。
+此信息还可参见 **[!UICONTROL Campaign orders]** 查看其中列出了所有订单的信息。
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
-中心操作员可以编辑顺序。 有两种方法可以做到这一点：
+中央操作员可以编辑顺序。 可通过两种方式来做到这一点：
 
 1. 操作员可以单击订单名称对其进行编辑：这将显示订单详细信息。
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ## 取消包 {#cancel-a-package}
 
-中央实体可以随时取消营销活动包。
+中央实体可随时取消营销活动包。
 
 单击 **[!UICONTROL Cancel]** 在营销活动包中 **[!UICONTROL Dashboard]**.
 
@@ -69,9 +69,9 @@ ht-degree: 1%
 
 对象 **本地营销活动**，取消资源包会将其从可用营销活动列表中删除。
 
-对象 **协作活动**，取消包会触发许多操作：
+对象 **协作活动**，取消资源包会触发许多操作：
 
-1. 与此程序包相关的任何订单均被取消，
+1. 与此包相关的任何订单都将被取消，
 
    ![](assets/mkg_dist_mutual_op_cancelled.png)
 
@@ -83,22 +83,22 @@ ht-degree: 1%
 
    ![](assets/mkg_dist_mutual_op_cancelled2.png)
 
-如有必要，中央实体（请参阅下文）仍可以访问和重新初始化已取消的包。 它们只有在获得批准并启动后，才会再次提供给本地实体。 软件包重新初始化过程如下所示。
+如有必要，中央实体仍可以访问和重新初始化已取消的包（请参阅下文）。 它们仅在获得批准并启动后，才会再次提供给本地实体。 软件包重新初始化过程如下所示。
 
 ## 重新初始化包 {#reinitializing-a-package}
 
-已发布的营销活动包可以重新初始化、修改并对本地实体可用。
+已发布的营销活动包可以重新初始化、修改并提供给本地实体。
 
 1. 选择相关的包。
 1. 单击 **[!UICONTROL Reinitialize the package to reuse it]** 链接并单击 **[!UICONTROL OK]**.
 
    ![](assets/mkg_dist_mutual_op_reinit.png)
 
-1. 单击 **[!UICONTROL Save]** 按钮批准包的重新初始化。
+1. 单击 **[!UICONTROL Save]** 按钮批准包重新初始化。
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
-1. 包状态更改为 **[!UICONTROL Being edited]**. 再次修改、批准并发布它，以将其还原到Campaign包列表。
+1. 程序包状态将更改为 **[!UICONTROL Being edited]**. 再次修改、批准并发布它，以将其恢复到Campaign包的列表。
 
 >[!NOTE]
 >

@@ -26,7 +26,7 @@ keyfield：==EMPTY
 
 ## 父项 {#parents-9}
 
-`<key>`  ,  `<dbindex />`
+`<key>`  ，  `<dbindex />`
 
 ## 子项 {#children-9}
 

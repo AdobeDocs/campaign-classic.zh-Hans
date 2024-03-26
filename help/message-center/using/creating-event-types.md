@@ -3,7 +3,7 @@ product: campaign
 title: 创建事件类型
 description: 了解如何创建与您要在Adobe Campaign Classic中发送的事务型消息匹配的事件类型
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于Campaign Classicv7"
+badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
@@ -11,7 +11,7 @@ exl-id: 98b7c827-f31d-46a6-a28d-40a78a4b4248
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '176'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
