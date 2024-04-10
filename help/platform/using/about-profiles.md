@@ -7,10 +7,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: c4fa3ea6d5a9d9acae267fc1ca27cf3bc140683c
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 42%
+source-wordcount: '912'
+ht-degree: 33%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 42%
 
 用户档案集中存储在Adobe Campaign数据库中。 有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助Adobe Campaign，您可以将营销历史、购买信息、偏好、CRM数据和任何相关的PI数据整合到一个整合视图中，以便进行分析并采取行动。
 
-“**用户档案**”是指代表最终客户或潜在客户的信息记录（例如 nmsRecipient 表或外部表中的记录，包含 cookie ID、客户 ID、移动标识符或与特定渠道相关的其他信息）。
+&quot;**个人资料**“是指代表最终客户、潜在客户或潜在客户的信息记录（例如：nmsRecipient表或外部表中的记录，包含cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息）。
 
 在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、短信等）所定位的默认用户档案。通过存储在数据库中的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
 
@@ -90,21 +90,19 @@ Adobe Campaign Explorer的常规布局显示在中 [此页面](../../platform/us
 
 ## 使用中的用户档案 {#active-profiles}
 
-使用中的用户档案是指可计费开立账单的用户档案。
+活动用户档案是客户在过去12个月内尝试通过任何渠道与之通信的用户档案。
 
-计费仅涉及以下用户档案： **活动**. 如果用户档案在过去 12 个月通过任何渠道被定位或进行了传输，则该用户档案被视为使用中。
+根据您的合同，您的每个 Campaign 实例都会配置特定数量的活动用户档案，并对这些活动用户档案进行计数以计费。请参阅您的最新合同，了解已购买的活动用户档案的数量。 了解详情，请参阅 [Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-被多次投放定向的用户档案只会被计数一次。
+您可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参见 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
->[!NOTE]
->
->facebook和X(以前称为Twitter)渠道不包含在内。
+以下护栏和限制适用：
 
-活动用户档案计数可用于 **营销实例** 仅限。 它不适用于执行实例，即MID （中间源）和RT （消息中心/实时消息传递）实例。
+* 被多次投放定向的用户档案只会被计数一次。
+* 在X(Twitter)或Facebook的社交营销上下文中定位的用户档案不会计为活动用户档案。
+* 活动用户档案计数可用于 **营销实例** 仅限。 它不适用于执行实例，即MID （中间源）和RT （消息中心/实时消息传递）实例。
+* 计数基于收件人主键。 因此，如果某个用户档案存在于两个不同的收件人表中，则它可能会被计算为活动用户档案两次。
 
->[!NOTE]
->
->您还可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参见 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 ## 教程视频 {#create-profiles-video}
 
