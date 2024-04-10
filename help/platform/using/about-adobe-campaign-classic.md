@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 776560c5f9ba91a5864a7dc950fd7499ceb37d1b
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 91%
+source-wordcount: '919'
+ht-degree: 90%
 
 ---
 
@@ -68,7 +68,7 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 
 ## 核心功能及附加组件 {#core-capabilities-and-add-ons}
 
-根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。此处提供了详细的产品说明：[Adobe Campaign Classic 产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-classic---product-description.html)。
+根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。此处提供了详细的产品说明： [Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 下列功能可供使用。根据您的许可协议，某些功能可能无法使用或者不在您的实例中。
 
