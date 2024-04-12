@@ -2,16 +2,15 @@
 product: campaign
 title: 关于通用导入和导出
 description: 了解有关一般导入和导出的更多信息
-badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 4%
+source-wordcount: '126'
+ht-degree: 3%
 
 ---
 

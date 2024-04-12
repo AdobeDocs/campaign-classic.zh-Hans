@@ -2,14 +2,13 @@
 product: campaign
 title: 投放状态
 description: 了解有关投放仪表板上可用的状态的更多信息
-badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '637'
 ht-degree: 3%
 
 ---

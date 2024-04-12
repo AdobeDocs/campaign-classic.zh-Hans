@@ -3,15 +3,14 @@ product: campaign
 title: 假设验证模板
 description: 了解如何在Campaign响应管理器中创建假设验证模板
 feature: Campaigns, Templates
-badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1387'
 ht-degree: 2%
 
 ---

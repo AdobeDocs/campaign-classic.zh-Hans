@@ -2,14 +2,13 @@
 product: campaign
 title: AB测试用例
 description: 了解如何通过专用用例执行A/B测试
-badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: A/B Testing
 role: User
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '265'
 ht-degree: 4%
 
 ---

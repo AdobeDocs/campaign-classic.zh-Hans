@@ -3,15 +3,14 @@ product: campaign
 title: 在Adobe Campaign中配置共享受众集成
 description: 了解如何配置共享受众集成
 feature: Audiences, People Core Service Integration
-badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: e6a2986e5355b32164386e1f6d64f52dc6977632
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---

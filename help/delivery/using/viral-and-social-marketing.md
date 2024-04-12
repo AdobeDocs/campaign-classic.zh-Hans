@@ -3,12 +3,11 @@ product: campaign
 title: 病毒式营销和社交媒体营销
 description: 病毒式营销和社交媒体营销
 feature: Social Marketing
-badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '574'
 ht-degree: 2%
 
 ---

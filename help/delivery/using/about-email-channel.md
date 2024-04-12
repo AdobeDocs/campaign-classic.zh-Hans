@@ -2,15 +2,14 @@
 product: campaign
 title: 关于Adobe Campaign Classic中的电子邮件渠道
 description: 本节提供特定于Adobe Campaign中电子邮件渠道的一般信息
-badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email
 role: User
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 9%
+source-wordcount: '140'
+ht-degree: 8%
 
 ---
 

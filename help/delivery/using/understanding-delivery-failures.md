@@ -2,14 +2,13 @@
 product: campaign
 title: 了解投放失败
 description: 了解如何了解投放失败
-badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '2570'
+source-wordcount: '2567'
 ht-degree: 12%
 
 ---

@@ -2,13 +2,12 @@
 product: campaign
 title: 发布 Web 窗体
 description: 发布 Web 窗体
-badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 8bb839bd0118010ac8e3e4bde88f6f3972786ed0
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1284'
 ht-degree: 1%
 
 ---

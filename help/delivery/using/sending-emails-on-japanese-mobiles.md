@@ -2,14 +2,13 @@
 product: campaign
 title: 使用Adobe Campaign Classic在日本手机上发送电子邮件
 description: 了解如何配置、设计和发送将在日语移动设备上阅读的电子邮件
-badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email, Email Design
 role: User
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---

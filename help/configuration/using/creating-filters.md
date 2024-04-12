@@ -4,13 +4,12 @@ title: 创建过滤器
 description: 了解如何为自定义表创建过滤器
 feature: Profiles, Custom Resources
 role: Data Engineer, Developer
-badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 4%
+source-wordcount: '105'
+ht-degree: 3%
 
 ---
 

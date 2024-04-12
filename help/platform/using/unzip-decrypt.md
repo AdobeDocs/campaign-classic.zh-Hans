@@ -3,15 +3,14 @@ product: campaign
 title: 解压缩或解密文件
 description: 了解在处理之前如何在Campaign中解压缩或解密文件
 feature: Workflows, Encryption
-badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '700'
 ht-degree: 9%
 
 ---

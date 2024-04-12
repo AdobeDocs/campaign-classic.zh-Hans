@@ -2,14 +2,13 @@
 product: campaign
 title: 短信故障排除
 description: 详细了解如何对短信渠道进行故障排除
-badge-v7: label="v7" type="Informative" tooltip="适用于Campaign Classicv7"
-badge-v8: label="v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '2767'
+source-wordcount: '2764'
 ht-degree: 0%
 
 ---
@@ -38,18 +37,17 @@ Adobe Campaign将外部帐户视为不相关的实体。
 
 * **在任何时候只有一个帐户处于活动状态时，问题未出现**
 
-  帐户之间存在冲突。 如前所述，Adobe Campaign单独处理帐户，但提供商可能会将其视为单个帐户。
+  帐户之间存在冲突。 如前所述，Adobe Campaign 会单独处理帐户，但提供商可能会将其视为单个帐户。
 
    * 您在所有帐户之间使用不同的登录名/密码组合。您必须联系提供商以诊断他们方面的潜在冲突。
 
    * 某些外部帐户共享相同的登录名/密码组合。提供商无法判断来自哪个外部帐户 `BIND PDU` ，因此他们将来自多个帐户的所有连接视为单个帐户。 他们可能已将MO和SR随机路由到两个帐户，从而导致出现问题。
 如果提供商支持同一登录/密码组合使用多个短代码，则必须询问提供商将短代码放在 `BIND PDU`. 请注意，此信息必须放在 `BIND PDU`，并且不在 `SUBMIT_SM`，由于 `BIND PDU` 是唯一允许正确路由MO的位置。
-请参阅 [各种PDU中的信息](sms-protocol.md#information-pdu) 部分了解中可用的字段 `BIND PDU`，通常您需要添加短代码 `address_range`，但这需要提供商的特殊支持。 联系他们，了解他们希望如何独立路由多个短代码。
-Adobe Campaign支持在同一外部帐户上处理多个短代码。
+请参阅 [各种PDU中的信息](sms-protocol.md#information-pdu) 部分了解中可用的字段 `BIND PDU`，通常您需要添加短代码 `address_range`，但这需要提供商的特殊支持。 与他们联系，了解他们希望如何独立路由多个短代码。Adobe Campaign 支持在同一外部帐户上处理多个短代码。
 
-## 外部帐户一般问题 {#external-account-issues}
+## 外部帐户的一般问题 {#external-account-issues}
 
-* 调查连接器最近是否发生了更改以及更改者（检查外部帐户作为组）。
+* 调查连接器最近是否已更改以及由谁更改（将外部帐户作为一个组检查）。
 
   ```
   select saccount, (sserver ||':'||sport) as serverPort, iextaccountid, CASE WHEN N0.iactive=1 THEN 'Yes' ELSE 'No' END as "(x) Enabled",
@@ -66,7 +64,7 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
 * 调查（在 /postupgrade 目录中）系统是否已升级以及何时升级
 * 调查最近是否有任何影响 SMS 的程序包可能已升级 （/var/log/dpkg.log）。
 
-## 中源问题（托管）{#issue-mid-sourcing}
+## 中间源问题（托管）{#issue-mid-sourcing}
 
 * 如果问题发生在中间源环境中，请确保在中间源服务器上正确创建和更新投放和广泛日志。 如果不是这种情况，则这不是短信问题。
 
@@ -74,13 +72,13 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 ## 连接到提供商时出现问题 {#issue-provider}
 
-* 如果 返回 `BIND PDU` 非零 `command_status` 代码，请向提供程序询问详细信息。
+* 如果 `BIND PDU` 返回非零 `command_status` 代码，请咨询提供商以了解更多信息。
 
-* 检查网络配置是否正确，以便可以与提供商建立 TCP 连接。
+* 检查网络是否已正确配置，以便能够与提供商建立TCP连接。
 
-* 要求提供商检查他们是否正确地将 IP 添加到了 Adobe Campaign 实例的允许列表中。
+* 要求提供商检查他们是否正确将IP添加到Adobe Campaign实例的允许列表。
 
-* 检查 **外部帐户** 设置。 询问提供商字段的值。
+* Check **外部帐户** 设置。 询问提供商字段的值。
 
 * 如果连接成功但不稳定，请检查 [连接不稳定的问题](troubleshooting-sms.md#issues-unstable-connection) 部分。
 
@@ -140,21 +138,21 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 * 如果您看到许多 `BIND/UNBIND`，则表示您的连接不稳定。 请参阅[连接不稳定的问题](troubleshooting-sms.md#issues-unstable-connection) 部分，了解在尝试解决重复消息问题之前的解决方案。
 
-在重试时减少重复项数量：
+在重试时降低重复项数：
 
 * 降低发送窗口。 发送窗口应足够大以覆盖 `SUBMIT_SM_RESP` 延迟。 其值表示在窗口已满时发生错误时可以复制的最大消息数。
 
-## 处理 SR（交货收据）时出现问题 {#issue-process-SR}
+## 处理SR（交货收货）时发货 {#issue-process-SR}
 
 * 您需要启用SMPP跟踪才能进行任何类型的SR故障排除。
 
 * 检查 `DELIVER_SM PDU` 来自提供商，并且格式正确。
 
-* 检查Adobe Campaign是否回复成功 `DELIVER_SM_RESP PDU` 以及时。 在Adobe Campaign Classic上，这可保证SR已插入 `providerMsgId` 用于短信进程延迟处理的表。
+* 检查 Adobe Campaign 回复是否及时成功 `DELIVER_SM_RESP PDU` 。 在 Adobe Campaign Classic 上，这可以保证 SR 已插入到 `providerMsgId` 表中，以便 SMS 进程进行延迟处理。
 
-如果 `DELIVER_SM PDU` 未成功确认，则应检查以下各项：
+`DELIVER_SM PDU`如果未成功确认，则应检查以下内容：
 
-* 在中检查与ID提取和错误处理相关的正则表达式 **外部帐户**. 您可能需要根据 的内容 `DELIVER_SM PDU`验证它们。
+* 检查与外部帐户&#x200B;**中的** id 提取和错误处理相关的正则表达式。您可能需要根据 的内容 `DELIVER_SM PDU`验证它们。
 
 * 检查表中是否正确预配 `broadLogMsg` 了错误。
 
@@ -164,7 +162,7 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 ## 处理MO（和黑名单/自动回复）时的问题{#issue-process-MO}
 
-* 在测试期间启用 SMPP 跟踪。 如果未启用 TLS，则应在对 MO 进行故障排除时执行网络捕获，以检查 PDU 是否包含正确的信息以及格式是否正确。
+* 在测试期间启用SMPP跟踪。 如果不启用TLS，则在对移动问题进行故障排除时应该进行网络捕获，以检查PDU是否包含正确的信息以及格式是否正确。
 
 * 在捕获网络流量或分析SMPP跟踪时，请确保捕获与MO的整个会话及其回复MT（如果配置了回复）。
 
@@ -242,7 +240,7 @@ Unicode允许使用多种变体来显示相似字符，而Adobe Campaign无法�
 
 * 连接有问题，但详细消息未显示任何 `BIND_RESP PDU`.
 
-* 无法解释的断开连接没有错误信息，这是连接器检测到低级协议错误时的常规行为。
+* 无法解释的断开连接，没有错误消息，连接器检测到低级别协议错误时的通常行为。
 
 * 提供程序抱怨解除bind/断开连接的过程。
 
