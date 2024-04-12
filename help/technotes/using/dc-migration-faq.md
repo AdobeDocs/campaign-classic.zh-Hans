@@ -2,14 +2,13 @@
 product: campaign
 title: 迁移到AdobeManaged Services (Public Cloud)常见问题解答
 description: Campaign Classic迁移到公共云常见问题解答
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2204'
 ht-degree: 0%
 
 ---

@@ -2,13 +2,12 @@
 product: campaign
 title: 定义审批
 description: 通过批准，操作员能够做出管理工作流的决策或确认工作流的继续执行
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 3%
+source-wordcount: '842'
+ht-degree: 2%
 
 ---
 

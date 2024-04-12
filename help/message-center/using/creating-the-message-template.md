@@ -3,12 +3,11 @@ product: campaign
 title: 设计事务性消息模板
 description: 了解如何在Adobe Campaign Classic中创建和设计事务性消息模板
 feature: Transactional Messaging, Message Center, Templates
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '498'
+ht-degree: 0%
 
 ---
 

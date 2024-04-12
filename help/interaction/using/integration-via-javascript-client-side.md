@@ -3,15 +3,14 @@ product: campaign
 title: 通过 JavaScript 集成（客户端）
 description: 通过 JavaScript 集成（客户端）
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 3%
+source-wordcount: '1139'
+ht-degree: 2%
 
 ---
 

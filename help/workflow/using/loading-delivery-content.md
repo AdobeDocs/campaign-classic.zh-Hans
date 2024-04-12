@@ -2,13 +2,12 @@
 product: campaign
 title: 加载投放内容
 description: 加载投放内容
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: 81d12ac055536fbe097466ad737bf7fee1b593ad
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 4%
+source-wordcount: '317'
+ht-degree: 2%
 
 ---
 

@@ -4,12 +4,11 @@ title: 现有表的模式
 description: 现有表的模式
 feature: Custom Resources
 role: Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 10%
+source-wordcount: '216'
+ht-degree: 7%
 
 ---
 

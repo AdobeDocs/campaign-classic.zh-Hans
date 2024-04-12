@@ -2,12 +2,11 @@
 product: campaign
 title: 数据加载（文件）
 description: 了解有关数据加载（文件）工作流活动的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 229844437770c460d958724e2dc15941e35939a6
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1140'
 ht-degree: 14%
 
 ---

@@ -2,13 +2,12 @@
 product: campaign
 title: 开始和结束
 description: 了解有关开始和结束工作流活动的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 exl-id: 56dfbaf3-93de-4ade-b4ad-9b54d239c7a5
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 9%
+source-wordcount: '133'
+ht-degree: 4%
 
 ---
 

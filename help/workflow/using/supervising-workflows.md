@@ -2,13 +2,12 @@
 product: campaign
 title: 监督工作流
 description: 了解如何监督活动工作流
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 1%
+source-wordcount: '650'
+ht-degree: 0%
 
 ---
 

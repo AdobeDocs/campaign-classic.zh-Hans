@@ -4,12 +4,11 @@ title: 数据架构中的密钥管理
 description: 了解数据架构中的密钥管理
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
-source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 3%
+source-wordcount: '618'
+ht-degree: 2%
 
 ---
 

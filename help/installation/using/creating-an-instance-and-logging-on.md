@@ -3,15 +3,14 @@ product: campaign
 title: 创建实例并登录
 description: 创建实例并登录
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 2%
+source-wordcount: '586'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 2%
 
 
 
-要创建新的实例和 Adobe Campaign 数据库，请应用以下过程：
+要创建新实例和Adobe Campaign数据库，请应用以下流程：
 
 1. 创建连接。
 1. 登录以创建相关实例。
@@ -31,9 +30,9 @@ ht-degree: 2%
 
 启动 Adobe Campaign 控制台后，您将访问一个登录页面。
 
-要创建新实例，请执行以下步骤：
+如需创建新实例，请执行以下步骤：
 
-1. 单击凭据字段右上角的链接可访问连接配置窗口。 此链接可以是 **[!UICONTROL New...]** 或现有实例名称。
+1. 单击凭据字段右上角的链接以访问连接配置窗口。 此链接可以是 **[!UICONTROL New...]** 或现有实例名称。
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
@@ -41,9 +40,9 @@ ht-degree: 2%
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
-1. 通过URL指定与Adobe Campaign应用程序服务器的连接。 使用 DNS 或计算机的别名，或者您的 IP 地址。
+1. 通过URL指定与Adobe Campaign应用程序服务器的连接。 使用计算机的DNS或别名或IP地址。
 
-   例如，可以使用 `https://<machine>.<domain>.com` URL 类型。
+   例如，您可以使用 `https://<machine>.<domain>.com` 键入URL。
 
    >[!CAUTION]
    >
@@ -51,27 +50,27 @@ ht-degree: 2%
 
 1. 单击 **[!UICONTROL Ok]** 以确认设置：您现在可以开始实例创建过程。
 1. 在 **[!UICONTROL Connection settings]** 窗口中，输入 **内部** 登录名及其密码以连接到 Adobe Campaign 应用程序服务器。 连接后，您可以访问实例创建向导以声明新实例
-1. 在 **[!UICONTROL Name]** 字段中，输入 **实例名称**。 由于此名称用于生成配置文件 **config-`<instance>`.xml** ，并在命令行参数中用于标识实例，因此请确保选择不含特殊字符的短名称。 例如： **eMarketing**.
+1. 在 **[!UICONTROL Name]** 字段中，输入 **实例名称**。 由于此名称用于生成配置文件 **config-`<instance>`.xml** ，并在命令行参数中用于标识实例，因此请确保选择不含特殊字符的短名称。 例如： **电子营销**。
 
    ![](assets/s_ncs_install_create_instance.png)
 
-   添加到域名的实例名称不能超过40个字符。 这样，您就可以限制“Message-ID”标头的大小，并防止将邮件视为垃圾邮件，尤其是SpamAssassin等工具。
+   添加到域名的实例名称不得超过40个字符。 这使您可以限制“邮件 ID”标头的大小，并防止邮件被视为垃圾邮件，尤其是通过 SpamAssassin 等工具。
 
-1. 在 **[!UICONTROL DNS masks]** 字段，输入 **DNS掩码列表** 实例应附加到的对象。 Adobe Campaign服务器使用HTTP请求中显示的主机名来确定要访问的实例。
+1. 在 **[!UICONTROL DNS masks]** 字段中，输入 **实例应附加到的 DNS 掩码** 列表。 Adobe Campaign服务器使用HTTP请求中显示的主机名来确定要访问的实例。
 
    主机名包含在字符串之间 **https://** 和第一个斜杠字符 **/** 服务器地址的。
 
-   您可以定义一个以逗号分隔的值列表。
+   您可以定义以逗号分隔的值列表。
 
-   的 ？ 字符 &#42; 可用作通配符来替换一个或多个字符（DNS、端口等）。 例如， **演示&#42;** 值将与“https://demo”一起使用，就像与“https://demo:8080”甚至“https://demo2”一起使用一样。
+   是？ 字符 &#42; 可用作通配符来替换一个或多个字符（DNS、端口等）。 例如， **演示&#42;** 值将与“https://demo”一起使用，就像与“https://demo:8080”甚至“https://demo2”一起使用一样。
 
    必须在您的 DNS 中定义使用的名称。 您还可以在 Windows 的 c：/windows/system32/drivers/etc/hosts **文件和** Linux 的 /etc/hosts **文件中通知 DNS 名称和 IP 地址**&#x200B;之间的对应关系。因此，您必须修改连接设置以使用此 DNS 名称才能连接到所选实例。
 
-   服务器必须由此名称标识，尤其是在电子邮件中上传图像时。
+   服务器必须使用此名称进行标识，尤其是在电子邮件中上传图像时。
 
-   此外，服务器必须能够使用此名称与自身连接，如果可能，还必须使用环回地址127.0.0.1，尤其是要允许以PDF格式导出报告。
+   此外，服务器必须能够通过此名称连接到自身，如果可能的话，还可以通过环回地址 - 127.0.0.1 -进行连接，特别是为了允许以 PDF 格式导出报告。
 
-1. 在 **[!UICONTROL Language]** 下拉列表，选择 **实例语言**：英语（美国）、英语（英国）、法语或日语。
+1. 在 **[!UICONTROL Language]** 下拉列表中，选择 **实例语言**：英语（美国）、英语（英国）、法语或日语。
 
    美式英语与英式英语的区别详见 [本节](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
@@ -79,7 +78,7 @@ ht-degree: 2%
    >
    >在此步骤之后无法修改实例语言。 Adobe Campaign实例不是多语言的：您无法将界面从一种语言切换到另一种语言。
 
-1. 单击 **[!UICONTROL Ok]** 以确认实例声明。 注销并重新登录以声明数据库。
+1. 单击 **[!UICONTROL Ok]** 确认实例声明。 注销并重新登录以声明数据库。
 
    >[!NOTE]
    >

@@ -3,14 +3,13 @@ product: campaign
 title: Sources 与 Destinations 入门
 description: 详细了解Adobe Experience Platform Sources和Destinations
 feature: Experience Platform Integration
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 8cee52c7-ea56-4701-8ebb-eb18afffea51
-source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 12%
+source-wordcount: '291'
+ht-degree: 10%
 
 ---
 

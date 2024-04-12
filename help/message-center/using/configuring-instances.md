@@ -3,15 +3,14 @@ product: campaign
 title: 配置实例
 description: 了解如何在Adobe Campaign Classic中配置事务性消息传递控制和执行实例
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 2%
+source-wordcount: '1236'
+ht-degree: 1%
 
 ---
 

@@ -3,13 +3,12 @@ product: campaign
 title: 营销活动投放
 description: 了解有关营销活动投放的更多信息
 role: User
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 1%
+source-wordcount: '1485'
+ht-degree: 0%
 
 ---
 

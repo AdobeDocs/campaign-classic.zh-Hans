@@ -2,13 +2,12 @@
 product: campaign
 title: 工作流属性
 description: 了解关于Campaign工作流属性的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 39%
+source-wordcount: '553'
+ht-degree: 38%
 
 ---
 

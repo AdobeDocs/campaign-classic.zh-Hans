@@ -2,13 +2,12 @@
 product: campaign
 title: 更改活动图像
 description: 了解如何更改活动图像
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 7%
+source-wordcount: '158'
+ht-degree: 3%
 
 ---
 

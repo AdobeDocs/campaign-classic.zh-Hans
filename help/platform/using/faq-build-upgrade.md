@@ -3,15 +3,14 @@ product: campaign
 title: 内部版本升级常见问题解答
 description: 与Campaign内部版本升级相关的常见问题
 feature: Upgrade, Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '2003'
-ht-degree: 1%
+source-wordcount: '1996'
+ht-degree: 0%
 
 ---
 

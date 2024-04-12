@@ -3,14 +3,13 @@ product: campaign
 title: 服务器配置文件
 description: 服务器配置文件
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '8075'
+source-wordcount: '8068'
 ht-degree: 3%
 
 ---

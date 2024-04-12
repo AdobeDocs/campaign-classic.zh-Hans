@@ -2,12 +2,11 @@
 product: campaign
 title: 投放
 description: 了解有关默认投放工作流的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 6%
+source-wordcount: '324'
+ht-degree: 4%
 
 ---
 

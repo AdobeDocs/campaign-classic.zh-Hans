@@ -2,12 +2,11 @@
 product: campaign
 title: 社交媒体营销
 description: 了解有关社交营销技术工作流的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
-source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 11%
+source-wordcount: '122'
+ht-degree: 6%
 
 ---
 

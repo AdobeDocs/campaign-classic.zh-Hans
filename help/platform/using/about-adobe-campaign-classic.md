@@ -2,14 +2,13 @@
 product: campaign
 title: 关于 Adobe Campaign Classic
 description: 探索关键功能、用户界面和全局指南
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 776560c5f9ba91a5864a7dc950fd7499ceb37d1b
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '912'
 ht-degree: 90%
 
 ---

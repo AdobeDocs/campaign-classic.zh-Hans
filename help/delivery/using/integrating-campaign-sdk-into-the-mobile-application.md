@@ -2,13 +2,12 @@
 product: campaign
 title: 集成Campaign SDK
 description: 了解如何将Campaign SDK集成到您的移动应用程序
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Mobile SDK Integration, Push
 role: User, Developer
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---

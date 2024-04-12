@@ -3,17 +3,16 @@ product: campaign
 title: 开始迁移前
 description: 开始迁移前
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 4%
+source-wordcount: '322'
+ht-degree: 2%
 
 ---
 

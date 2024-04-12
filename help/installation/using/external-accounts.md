@@ -3,14 +3,13 @@ product: campaign
 title: 外部帐户
 description: 了解如何创建外部帐户
 feature: Installation, Application Settings, External Account
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1794'
+source-wordcount: '1787'
 ht-degree: 8%
 
 ---

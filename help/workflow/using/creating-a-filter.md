@@ -2,13 +2,12 @@
 product: campaign
 title: 创建筛选
 description: 了解如何在执行查询时创建过滤器
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Query Editor, Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 5%
+source-wordcount: '213'
+ht-degree: 2%
 
 ---
 

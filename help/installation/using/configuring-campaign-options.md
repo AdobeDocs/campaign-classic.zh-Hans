@@ -3,14 +3,13 @@ product: campaign
 title: 配置Campaign选项
 description: 了解如何配置Campaign选项
 feature: Installation, Application Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '3838'
+source-wordcount: '3831'
 ht-degree: 1%
 
 ---

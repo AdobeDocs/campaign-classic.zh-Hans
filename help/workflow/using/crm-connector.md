@@ -1,13 +1,12 @@
 ---
 title: CRM 连接器
 description: 了解有关CRM连接器的更多信息并配置数据同步
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 15%
+source-wordcount: '113'
+ht-degree: 10%
 
 ---
 

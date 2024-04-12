@@ -2,13 +2,12 @@
 product: campaign
 title: 子工作流
 description: 了解有关子工作流活动的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows
 exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 2%
+source-wordcount: '419'
+ht-degree: 0%
 
 ---
 

@@ -2,13 +2,12 @@
 product: campaign
 title: 关于工作流用例
 description: 了解关于可使用Campaign Classic工作流执行的用例的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 30%
+source-wordcount: '206'
+ht-degree: 28%
 
 ---
 

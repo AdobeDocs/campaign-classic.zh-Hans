@@ -2,13 +2,12 @@
 product: campaign
 title: 更新数据
 description: 了解有关更新数据工作流活动的更多信息
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows, Targeting Activity, Data Management
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 2%
+source-wordcount: '852'
+ht-degree: 4%
 
 ---
 
@@ -81,7 +80,7 @@ An **更新数据**-type活动对数据库中的字段执行批量更新。
 
 **[!UICONTROL Generate an outbound transition for the rejects]**
 
-创建一个叫客过渡，其中包含更新后未正确处理的记录（例如，如果存在重复项）。 更新通常标记定向工作流的结尾，因此默认情况下不激活选项。
+创建一个叫客过渡，其中包含更新后未正确处理的记录（例如，如果存在重复项）。 更新通常标志着定位工作流的结束，因此默认情况下不会激活该选项。
 
 ## 更新和合并收藏集 {#updating-and-merging-collections}
 

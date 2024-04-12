@@ -3,14 +3,13 @@ product: campaign
 title: 重要概念
 description: Campaign Classic 常见问题解答
 feature: Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '828'
 ht-degree: 96%
 
 ---
@@ -40,7 +39,7 @@ ht-degree: 96%
 
 Adobe Campaign Classic 随附了一组模块和选项。这些模块及其配置的可用性可能取决于安装的[部署类型](../../installation/using/hosting-models.md)：托管（托管服务）、混合或本地。
 
-[单击此处了解更多信息](../../installation/using/capability-matrix.md)。
+[单击此处以了解详情](../../installation/using/capability-matrix.md)。
 
 ## 如何设置用户权限? {#how-can-i-set-up-user-permissions-}
 

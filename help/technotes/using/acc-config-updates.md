@@ -3,13 +3,12 @@ product: campaign
 title: 技术说明 — Adobe Campaign配置更新
 description: Adobe Campaign配置更新
 feature: Technote, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1103'
 ht-degree: 8%
 
 ---

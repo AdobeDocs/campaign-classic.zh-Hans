@@ -3,14 +3,13 @@ product: campaign
 title: 将Adobe Experience Platform区段引入Campaign
 description: 了解如何将Adobe Experience Platform受众纳入Campaign Classic
 feature: Experience Platform Integration
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 2%
+source-wordcount: '296'
+ht-degree: 0%
 
 ---
 

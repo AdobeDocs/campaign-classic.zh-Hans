@@ -2,13 +2,12 @@
 product: campaign
 title: 关于工作流
 description: 利用工作流实现流程自动化、管理数据和受众、发送消息等
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 38%
+source-wordcount: '650'
+ht-degree: 37%
 
 ---
 

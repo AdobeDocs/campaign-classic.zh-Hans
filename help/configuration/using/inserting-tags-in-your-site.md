@@ -4,12 +4,11 @@ title: 在站点中插入Web跟踪标记
 description: 了解如何在您的网站中插入Web跟踪标记
 feature: Configuration
 role: Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 2%
+source-wordcount: '329'
+ht-degree: 0%
 
 ---
 

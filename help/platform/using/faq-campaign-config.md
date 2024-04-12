@@ -3,14 +3,13 @@ product: campaign
 title: Campaign 设置常见问题解答
 description: Campaign Classic 常见问题解答
 feature: Troubleshooting, Application Settings
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '752'
 ht-degree: 87%
 
 ---
@@ -45,7 +44,7 @@ Adobe Campaign 目前提供英语、法语、德语和日语共 4 种语言的�
 
 除了 [Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)，阅读可投放性技术建议，了解如何配置实例以最大程度地提升Campaign投放能力。
 
-[单击此处了解更多信息](../../delivery/using/about-deliverability.md)。
+[单击此处以了解详情](../../delivery/using/about-deliverability.md)。
 
 ## 如何实施内容批准？ {#how-can-i-implement-content-approval-}
 

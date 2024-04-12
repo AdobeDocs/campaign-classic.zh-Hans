@@ -3,15 +3,14 @@ product: campaign
 title: 配置对Teradata的访问权限
 description: 了解如何在FDA中配置对Teradata的访问权限
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 1%
+source-wordcount: '1629'
+ht-degree: 0%
 
 ---
 

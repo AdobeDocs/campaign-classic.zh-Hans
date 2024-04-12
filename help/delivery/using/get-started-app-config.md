@@ -2,14 +2,13 @@
 product: campaign
 title: 在Adobe Campaign中配置移动应用程序
 description: 了解如何开始使用移动应用程序配置
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Push
 role: User, Developer
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 8%
+source-wordcount: '285'
+ht-degree: 5%
 
 ---
 

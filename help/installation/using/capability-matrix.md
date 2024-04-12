@@ -3,12 +3,11 @@ product: campaign
 title: Campaign本地、混合和托管功能矩阵
 description: 了解托管部署和内部部署之间的主要差异
 feature: Installation, Architecture
-badge-v7-only: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 28%
+source-wordcount: '287'
+ht-degree: 26%
 
 ---
 
