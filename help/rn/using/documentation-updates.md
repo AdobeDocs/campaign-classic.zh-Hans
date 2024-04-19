@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3709'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 ### 2024 年 3 月 {#mar-2024}
 
-已更新移动应用程序配置部分，以便基于令牌将iOS连接到APN。 [了解更多信息](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app)
+移动应用配置部分已更新，以便基于 iOS 令牌连接到 APN。[了解更多信息](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app)
 
 ### 2024 年 1 月 {#jan-2024}
 
