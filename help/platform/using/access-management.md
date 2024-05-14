@@ -5,15 +5,23 @@ description: 了解如何授予对Campaign功能的访问权限
 badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 7%
+source-wordcount: '342'
+ht-degree: 5%
 
 ---
 
 # 权限入门{#access-management}
 
+
+>[!CAUTION]
+>
+>从Campaign Classicv7.3.1开始，所有操作员都应使用 [AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 以连接到Campaign。
+>
+>作为加强安全和身份验证过程的一部分，Adobe Campaign强烈建议将所有现有的操作员身份验证模式从登录/密码本机身份验证迁移到AdobeIdentity Management System (IMS)。 了解如何在中迁移操作员 [此页面](../../technotes/using/migrate-users-to-ims.md).
+> 
+>进行此迁移后，请注意，以下部分不再适用。  了解如何在中使用Adobe IMS设置权限 [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hans){target="_blank"}.
 
 
 Adobe Campaign允许您定义和管理分配给各种操作员的权限。 这些权限是一组授权或拒绝的权限和限制：
