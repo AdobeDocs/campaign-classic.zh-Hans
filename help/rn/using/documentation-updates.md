@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '3709'
-ht-degree: 100%
+source-git-commit: c736ac1cda9490548f1e4b56142d61fccaca5c4a
+workflow-type: tm+mt
+source-wordcount: '3764'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,14 @@ ht-degree: 100%
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
 ## 2024
+
+### 2024 年 4 月 {#apr-2024}
+
+已添加有关使用AdobeIdentity Management System (IMS)创建用户的警告说明。 [了解更多信息](../../platform/using/access-management.md)
+
+添加了Web下载工作流活动缺少的选项。 [了解更多信息](../../workflow/using/web-download.md)
+
+已向 **更改维度** 和 **更改数据源** 有关其在工作流中的使用的活动。 [了解更多信息](../../workflow/using/change-data-source.md)
 
 ### 2024 年 3 月 {#mar-2024}
 
