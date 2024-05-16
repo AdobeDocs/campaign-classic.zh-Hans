@@ -2,9 +2,9 @@
 title: 将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 description: 了解如何将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: c8cd1ef5e79e14c3ce804c32be0e995408d9358c
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1279'
 ht-degree: 2%
 
 ---
@@ -77,6 +77,7 @@ Adobe在此迁移工作中支持您。 您可以在下面文章中找到详细�
 1. 为您的连接实施Adobe IMS，如中所述 [此页面](../../integrations/using/implementing-ims.md).
 
 您还可以将技术操作员迁移到Adobe Developer控制台，如中所述 [此技术说明](ims-migration.md).
+
 
 
 ## 常见问题解答 {#ims-migration-faq}
@@ -152,5 +153,5 @@ Adobe强烈建议在迁移时段注销所有用户。
 ## 有用的链接 {#ims-useful-links}
 
 * [将技术用户迁移到Adobe Developer控制台](ims-migration.md)
-* [Adobe Campaign v8发行说明](../../rn/using/latest-release.md)
+* [Adobe Campaign Classic v7发行说明](../../rn/using/latest-release.md)
 * [什么是AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}
