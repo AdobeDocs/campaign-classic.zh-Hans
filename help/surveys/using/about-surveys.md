@@ -5,18 +5,21 @@ description: Campaign调查入门
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '554'
 ht-degree: 3%
 
 ---
 
 # 调查入门{#about-surveys}
 
-
-
 Adobe Campaign包括一个用于定义和发布Web应用程序的图形模块。 这用于创建页面，例如外部网上的编辑表单或通知表单，其中包含来自具有表、图表、输入表单等数据库的数据。 使用此功能可以设计和发布用户可以在其中查找或输入信息的网页。
+
+>[!AVAILABILITY]
+>
+>在企业(FFDA)部署的Campaign v8中，调查管理不可用。 了解详情，请参阅 [Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+
 
 可选 **调查** 通过插件，您可以创建一种新类型的Web应用程序来创建和管理在线调查表，例如用于添加或修改用户档案信息、订阅或取消订阅信息服务或竞争情况录入表单的表单。 收集完答案后，它们会存储在数据库中或本地变量中。 数据模型可以通过问卷回答进行动态扩展。 您可以实时查看结果、筛选响应并使用专用图表分析它们。
 

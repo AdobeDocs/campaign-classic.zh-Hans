@@ -6,9 +6,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Personalization
 role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '911'
 ht-degree: 1%
 
 ---
@@ -17,15 +17,17 @@ ht-degree: 1%
 
 向投放添加优惠券可增强收件人的产品和服务价值。 您可以使用Campaign优惠券模块创建一组优惠券，并预计将其添加到即将推出的营销优惠中。 当您准备好创建投放时，请分配适用的优惠券。 由于优惠券在特定时段内有效，因此分配的优惠券将唯一链接到其投放消息。 此外，Campaign会确认在发送投放之前有足够的邮件数优惠券。
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->优惠券管理是必须安装的软件包。 要确认您拥有优惠券管理，请选中 **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
->
->优惠券数据可以使用CSV和XML格式导入和导出。 有关导入和导出的详细信息，请参阅 [本节](../../platform/using/get-started-data-import-export.md).
+>优惠券管理在Campaign v8的企业(FFDA)部署上下文中不可用。 了解详情，请参阅 [Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+
+优惠券管理依赖于必须安装的包。 要确认您拥有优惠券管理，请选中 **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
+
+优惠券数据可以使用CSV和XML格式导入和导出。 [了解详情](../../platform/using/get-started-data-import-export.md)。
 
 ## 创建优惠券 {#creating-a-coupon}
 
-创建优惠券时，优惠券模块为您提供了两个选项：
+创建优惠券时，“优惠券管理”模块为您提供了两个选项：
 
 * **匿名**：用于选择收件人或收件人列表的通用优惠券。
 * **个人**：为选定收件人提供的个性化优惠券。
