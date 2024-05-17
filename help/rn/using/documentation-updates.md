@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: c736ac1cda9490548f1e4b56142d61fccaca5c4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3764'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 98%
 
 ### 2024 年 4 月 {#apr-2024}
 
-已添加有关使用AdobeIdentity Management System (IMS)创建用户的警告说明。 [了解更多信息](../../platform/using/access-management.md)
+添加了有关使用 Adobe Identity Management System (IMS) 创建用户的警告说明。[了解更多信息](../../platform/using/access-management.md)
 
-添加了Web下载工作流活动缺少的选项。 [了解更多信息](../../workflow/using/web-download.md)
+添加了与“Web 下载”工作流活动有关的缺失选项。[了解更多信息](../../workflow/using/web-download.md)
 
-已向 **更改维度** 和 **更改数据源** 有关其在工作流中的使用的活动。 [了解更多信息](../../workflow/using/change-data-source.md)
+向&#x200B;**更改维度**&#x200B;和&#x200B;**更改数据源**&#x200B;活动添加了有关其在工作流中的使用情况的警告说明。[了解更多信息](../../workflow/using/change-data-source.md)
 
 ### 2024 年 3 月 {#mar-2024}
 
