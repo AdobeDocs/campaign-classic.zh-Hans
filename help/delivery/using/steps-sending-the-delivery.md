@@ -6,9 +6,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Channel Configuration
 role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1526'
 ht-degree: 11%
 
 ---
@@ -160,9 +160,9 @@ ht-degree: 11%
 
 * **涉及呼叫中心的营销活动**
 
-  在管理电话忠诚度促销活动时，贵组织处理致电订阅者的能力有限。
+  通过电话管理忠诚度促销活动时，贵组织处理致电订阅者的能力有限。
 
-  使用批次，您可以将每天的消息数量限制为20，这是呼叫中心的每日处理能力。
+  使用批次，您可以将消息数量限制为每天20条，例如，考虑呼叫中心的每日处理能力。
 
   要执行此操作，请选择 **[!UICONTROL Schedule multiple waves of the same size]** 选项。 输入 **[!UICONTROL 20]** 因为波浪的大小和 **[!UICONTROL 1d]** 在 **[!UICONTROL Period]** 字段。
 

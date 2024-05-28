@@ -5,7 +5,7 @@ description: 了解如何将Campaign SDK集成到您的移动应用程序
 feature: Mobile SDK Integration, Push
 role: User, Developer
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
   Neolane.getInstance().setTrackingHost("https://yourTrackingHost:yourTrackingPort/");
   ```
 
-  以下权限允许您恢复电话的唯一ID：
+  以下权限允许您恢复移动设备的唯一ID：
 
   ```
   <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
