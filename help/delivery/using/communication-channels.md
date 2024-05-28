@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 15%
@@ -32,7 +32,7 @@ Adobe Campaign提供以下交付渠道：
 1. **移动渠道**：移动渠道中的投放可让您向目标群体发送个性化的SMS或LINE消息。 请参阅 [短信渠道](sms-channel.md).
 1. **移动应用程序渠道**：移动应用程序投放可让您向iOS和Android系统发送通知。 请参阅 [移动应用程序渠道](about-mobile-app-channel.md) 章节。
 
-   有关其他渠道的介绍，请参见 [此页面](steps-about-delivery-creation-steps.md#other-channels).
+   有关其他渠道的介绍，请参见 [本节](#other-channels).
 
    >[!NOTE]
    >

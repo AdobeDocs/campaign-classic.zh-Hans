@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 8%
@@ -15,8 +15,6 @@ ht-degree: 8%
 ---
 
 # 外部帐户{#external-accounts}
-
-
 
 Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系统的连接，您可以创建新的外部帐户。
 
@@ -115,9 +113,9 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 * [电子邮件](#email-routing-external-account)
 * [手机（短信）](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
-* [电话](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
+* [电话](../../delivery/using/communication-channels.md#other-channels)
 * [直邮](../../delivery/using/about-direct-mail-channel.md)
-* [代理](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
+* [代理](../../delivery/using/communication-channels.md#other-channels)
 * [X(以前称为Twitter)](../../social/using/about-social-marketing.md)
 * [iOS 渠道](../../delivery/using/configuring-the-mobile-application.md)
 * [Android 渠道](../../delivery/using/configuring-the-mobile-application-android.md)
