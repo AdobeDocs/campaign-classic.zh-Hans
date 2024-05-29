@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: ef7f3888e010cbe331b5e06cd1ea5e07127a47d2
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 7%
+source-wordcount: '209'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,12 @@ ht-degree: 7%
 ## Campaign操作员密码丢失 {#password-lost-by-campaign-operator}
 
 如果Adobe Campaign操作员丢失了密码，您可以更改密码。
-为此请执行以下操作步骤：
+
+>[!NOTE]
+>
+>此过程仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证的信息，请参阅 [本文档](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
+
+要重置Campaign密码，请执行以下步骤：
 
 1. 通过具有管理员权限的操作员连接。
 1. 右键单击运算符。
@@ -45,31 +50,32 @@ ht-degree: 7%
 >此部分仅适用于内部部署客户。
 
 如果内部密码丢失，则必须重新初始化它。
+
 要实现此目的，请执行以下步骤：
 
 1. 编辑 **/usr/local/neolane/nl6/conf/serverConf.xml** 文件。
 
 1. 转到 **internalPsword** 行。
 
-   ```
+   ```xml
    <!-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword="myPassword"/>
    ```
 
-1. 删除引号中的字符串，在此例中为： **我的密码**
+1. 删除引号中的字符串，在此例中为： `myPassword`. 您将获得以下行：
 
-   这样，您将获得以下行：
-
-   ```
-   !-- XTK authentication mode internalPassword : Password of internal account -->
-   <xtk internalPassword=""/
+   ```xml
+   <!-- XTK authentication mode internalPassword : Password of internal account -->
+   <xtk internalPassword=""/>
    ```
 
 1. 保存更改并关闭文件。
 
+1. 停止 `nlserver` 进程
+
 1. 配置新密码。 为此，请输入以下命令：
 
-   ```
+   ```javascript
    nlserver config -internalpassword
    HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    Enter current password.
@@ -78,5 +84,7 @@ ht-degree: 7%
    Password: 
    Confirmation 
    ```
+
+1. 启动 `nlserver` 进程
 
 1. 您现在可以使用新密码进行连接 **内部** 模式。
