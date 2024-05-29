@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 4%
@@ -24,7 +24,7 @@ ht-degree: 4%
 
 实例创建可以使用命令行执行，语法为：
 
-```
+```sql
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
@@ -36,7 +36,7 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 可以使用以下语法将现有数据库与命令行中的实例相关联：
 
-```
+```sql
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
@@ -49,6 +49,6 @@ nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 
 以下命令配置 **演示** 具有SQL类型服务器的实例，称为 **基础6**，链接到 **营销活动** 帐户及其 **密码** 在 **dbsrv** 服务器：
 
-```
+```sql
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
 ```

@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: ef7f3888e010cbe331b5e06cd1ea5e07127a47d2
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 3%
@@ -71,7 +71,7 @@ ht-degree: 3%
 
 1. 保存更改并关闭文件。
 
-1. 停止 `nlserver` 进程
+1. 停止 `nlserver` 进程。
 
 1. 配置新密码。 为此，请输入以下命令：
 
@@ -85,6 +85,6 @@ ht-degree: 3%
    Confirmation 
    ```
 
-1. 启动 `nlserver` 进程
+1. 启动 `nlserver` 进程。
 
 1. 您现在可以使用新密码进行连接 **内部** 模式。

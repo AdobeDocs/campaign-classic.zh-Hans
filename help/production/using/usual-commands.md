@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '408'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 4%
 
 您可以添加参数 **-who** 列出正在进行的连接（数据库和应用程序）。
 
-```
+```sql
 nlserver pdump -who
 HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 web@default (9984) - 50.1 Mo
@@ -65,7 +65,7 @@ default xxxxx myserver myprovider test400
 
 您可以添加参数 **-missing** 列出不存在的模块（模块出错、模块关闭等）
 
-```
+```sql
 nlserver monitor -missing
 HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 inMail@test
@@ -79,11 +79,11 @@ wfserver@test
 
 Launch模块的语法仍将具有以下格式：
 
-```
+```sql
 nlserver start <module>@<INSTANCE>
 ```
 
-```
+```sql
 nlserver stop <module>@<INSTANCE>
 ```
 
@@ -99,7 +99,7 @@ nlserver stop <module>@<INSTANCE>
 
    * 在Linux中：
 
-     ```
+     ```sql
      /etc/init.d/nlserver6 stop
      ```
 
@@ -109,13 +109,13 @@ nlserver stop <module>@<INSTANCE>
 
    * 在Windows中：
 
-     ```
+     ```sql
      net stop nlserver6
      ```
 
 * 如果没有，则在Adobe Campaign帐户中：
 
-  ```
+  ```sql
   nlserver shutdown 
   ```
 
@@ -125,13 +125,13 @@ nlserver stop <module>@<INSTANCE>
 
 * 如果您具有root或管理员访问权限：
 
-   * 在Linux中：/etc/init.d/nlserver6 start
+   * 在Linux中： `/etc/init.d/nlserver6 start`
 
      >[!NOTE]
      >
      >从20.1开始，我们建议改使用以下命令（对于Linux）： **systemctl启动nlserver**
 
-   * 在Windows中：net start nlserver6
+   * 在Windows中： `net start nlserver6`
 
 * 否则，在Adobe Campaign帐户中： **nlserver watchdog -svc -noconsole**
 
@@ -141,11 +141,11 @@ nlserver stop <module>@<INSTANCE>
 
 使用 **config** 命令 **nlserver** 可执行文件 **-setdblogin** 参数。
 
-```
+```sql
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
 ```
 
-```
+```sql
 nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 ```
 

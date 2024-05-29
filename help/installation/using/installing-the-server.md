@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
@@ -16,8 +16,6 @@ ht-degree: 1%
 ---
 
 # 安装服务器{#installing-the-server}
-
-
 
 ## 正在执行安装程序 {#executing-the-installation-program}
 
@@ -70,13 +68,13 @@ Adobe Campaign服务器的安装步骤如下：
 
 可以使用以下命令测试初始安装：
 
-```
+```sql
 nlserver pdump
 ```
 
 如果Adobe Campaign未启动，则响应为：
 
-```
+```sql
 No task
 ```
 
@@ -84,7 +82,7 @@ No task
 
 安装测试完成后，打开命令提示符，通过 **[!UICONTROL Start > Programs > Adobe Campaign]** 菜单并输入以下命令：
 
-```
+```sql
 nlserver web
 ```
 
@@ -104,13 +102,13 @@ nlserver web
 
 按 **Ctrl+C** 要停止该进程，请输入以下命令：
 
-```
+```sql
 nlserver start web
 ```
 
 将显示以下信息：
 
-```
+```sql
 12:17:21 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 12:17:21 >   Start of the 'web@default' ('nlserver web -tracefile:web@default -instance:default -detach -tomcat -autorepair') task in a new process 
 12:17:21 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -122,13 +120,13 @@ nlserver start web
 
 要停止此操作，请输入：
 
-```
+```sql
 nlserver stop web
 ```
 
 将显示以下信息：
 
-```
+```sql
 12:18:31 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 12:18:31 >   Stop requested for 'web@default' ('nlserver web -tracefile:web@default -instance:default -detach -tomcat -autorepair', pid=29188, tid=-1224824320)...
 12:18:31 >   Stop requested (pid=29188)
@@ -145,13 +143,13 @@ Adobe Campaign服务器定义的技术登录名为 **内部** 拥有所有实例
 
 要启动Adobe Campaign服务，您可以使用服务管理器或在命令行中输入以下内容（具有相应权限）：
 
-```
+```sql
 net start nlserver6
 ```
 
 如果您稍后需要停止Adobe Campaign进程，请使用命令：
 
-```
+```sql
 net stop nlserver6
 ```
 
@@ -161,6 +159,6 @@ net stop nlserver6
 
 添加以下环境变量：
 
-```
+```sql
 OOO_BASIS_INSTALL_DIR="C:\Program Files (x86)\LibreOffice 6\"
 ```
