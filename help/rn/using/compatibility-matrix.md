@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '757'
+source-git-commit: b7339512d85a7bd0c5aae24af46739daafb1ba51
+workflow-type: tm+mt
+source-wordcount: '753'
 ht-degree: 100%
 
 ---
@@ -148,7 +148,6 @@ ht-degree: 100%
 <p>2017</p>
 <p>2016</p>
 <p>2014</p>
-<p>2012 - SP1 和 SP2</p>
 <p><strong>重要提示：</strong>当 Campaign 服务器在 Linux 上运行时，不支持将 Microsoft SQL Server 作为主数据库。<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux/prerequisites-of-campaign-installation-in-linux.html?lang=zh-Hans#database-access-layers">了解详情</a>。</p>
 </td>
 </tr>

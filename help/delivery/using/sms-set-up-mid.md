@@ -2,13 +2,12 @@
 product: campaign
 title: 在中间源基础设施上配置Campaign短信渠道
 description: 了解如何在中间源基础设施上在Campaign中配置短信渠道
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: SMS
 role: User, Developer, Admin
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b7339512d85a7bd0c5aae24af46739daafb1ba51
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '981'
 ht-degree: 8%
 
 ---
@@ -27,7 +26,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
-> 对于短信投放，分类应使用在中创建的特定SMS亲和度 **一** 专用应用程序服务器容器。 [了解详情](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+> 对于短信投放，分类应使用在中创建的特定SMS亲和度 **一** 专用应用程序服务器容器。 [了解更多信息](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 ## 在中间服务器上创建短信运算符 {#create-sms-operator}
 
