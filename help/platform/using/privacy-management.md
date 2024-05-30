@@ -8,20 +8,20 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 98%
+source-wordcount: '905'
+ht-degree: 80%
 
 ---
 
 # 隐私管理 {#privacy-management}
 
 
-
 Adobe Campaign 提供一套工具来帮助您遵守[隐私法规](#privacy-management-regulations)（包括 GDPR、CCPA、PDPA、LGPD）。
 
-以下是 Adobe Campaign 为确保 GDPR 和其他隐私法规就绪性而提供的五大主要功能：
+以下是Adobe Campaign为确保隐私法规就绪性而提供的五大主要功能：
+
 * **访问权**
 * **删除权**
 * **同意管理**
@@ -40,18 +40,20 @@ It also contains information on important features to manage Privacy ([Consent, 
 
 Adobe Campaign 功能帮助您遵守以下法规：
 
-* **GDPR**（[通用数据保护条例](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en)）是一项欧盟 (EU) 隐私法律，旨在协调欧盟国家或地区的数据保护要求并使之现代化。
-* **CCPA**（[加州消费者隐私法案](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=)）为加利福尼亚州居民提供与其个人信息有关的新权利，并要求在加利福尼亚开展业务的特定实体承担数据保护责任。
-* **PDPA**（[个人数据保护法案](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/)）是一项新的隐私法律，旨在协调泰国的数据保护要求并使之现代化。
-* **LGPD** ([Lei Geral de Proteção de Dados](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf)) 将从 2021 年初生效，适用于巴西境内所有收集或处理个人数据的公司。
+* **GDPR** （通用数据保护条例）是一项欧盟(EU)隐私法律，旨在协调欧盟国家或地区的数据保护要求并使之现代化。
+* **CCPA** （加州消费者隐私法案）为加利福尼亚州居民提供了与其个人信息有关的新权利，并要求在加利福尼亚开展业务的特定实体承担数据保护责任。
+* **PDPA** （个人数据保护法案）是一项隐私法律，旨在协调泰国的数据保护要求并使之现代化。
+* **LGPD** (Lei Geral de Proteção de Dados)适用于巴西境内所有收集或处理个人数据的公司。
+* **CASL** （加拿大反垃圾邮件法）涵盖发送到或离开加拿大的所有邮件，但不包括通过加拿大路由的邮件，
+* **VCDPA** （弗吉尼亚消费者数据保护法案）和 **CPA** （科罗拉多州隐私法）适用于在这些州内开展业务或锁定居民的所有公司。
 
-所有这些法规均适用于为居住在上述地区或国家（欧盟、加利福尼亚、泰国、巴西）的持有数据主体的数据的 Adobe Campaign 客户。
+所有这些法规均适用于为居住在上述地区或国家/地区的数据主体持有数据的Adobe Campaign客户。
 
 <!--Several Privacy capabilities are available in Adobe Campaign, including consent management, data retention settings, and rights management. See [Consent, Retention and Roles](#consent-retention-roles). In addition to this, Adobe Campaign helps facilitate your readiness as Data Controller for certain Privacy requests. See [Right to Access and Right to be Forgotten](#right-access-forgotten).-->
 
 >[!NOTE]
 >
->有关个人数据以及管理数据的不同实体（数据控制者、数据处理者和数据主体）的更多信息，请参阅[个人数据和角色](../../platform/using/privacy-and-recommendations.md#personal-data)。
+>有关个人数据以及管理数据的不同实体（数据控制者、数据处理方和数据主体）的更多信息，请参阅[个人数据和角色](../../platform/using/privacy-and-recommendations.md#personal-data)。
 
 ## 访问权与被遗忘权 {#right-access-forgotten}
 
