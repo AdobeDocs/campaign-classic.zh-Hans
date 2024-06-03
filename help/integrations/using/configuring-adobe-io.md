@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a08b386ff73fd9a2e9b3909c8f8de5e419104ce4
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 6%
+source-wordcount: '874'
+ht-degree: 0%
 
 ---
 
@@ -31,14 +31,18 @@ ht-degree: 6%
 
 在开始此实施之前，请检查您是否拥有：
 
-* 有效的 **组织标识符**：组织ID是Adobe Experience Cloud中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans)
+* 有效的 **组织标识符**：组织ID是Adobe Experience Cloud中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解更多信息](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans)
 * a **开发人员访问权限** 添加到您的组织。 组织的系统管理员需要遵循 **将开发人员添加到单个产品配置文件** 详细过程 [本页内容](https://helpx.adobe.com/enterprise/using/manage-developers.html) 为提供开发人员访问权限 `Analytics - {tenantID}` 与触发器关联的Adobe Analytics产品的产品配置文件。
 
 ## 步骤1：创建/更新Adobe I/O项目 {#creating-adobe-io-project}
 
 >[!AVAILABILITY]
 >
-> JWT（JSON Web 令牌）目前正在被逐步停用，它将被 OAuth 取代。此项转换工作将在 Campaign 的后续版本中逐步执行，会对文档进行更新以反映这些变化。
+> Adobe已弃用服务帐户(JWT)凭据，Campaign与Adobe解决方案和应用程序的集成现在必须依赖OAuth服务器到服务器凭据。 </br>
+>
+> * 如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如本文档所述。 现有服务账户(JWT)凭证将继续使用至2025年1月27日。 此外，从2024年6月3日开始，在开发人员控制台中创建新的服务帐户(JWT)凭据不再可能。 在此日期之后，无法创建新的服务帐户(JWT)凭据或将其添加到项目中。 </br>
+>
+> * 如果您实施了叫客集成，如Campaign-Analytics集成或Experience Cloud Triggers集成，则在2025年1月27日之前它们将继续工作。 但是，在该日期之前，您必须将Campaign环境升级到v7.4.1，并将技术帐户迁移到oAuth。 自2024年6月3日起，在开发人员控制台中不再可能创建新的服务帐户(JWT)凭据，因此，在此日期之后，您无法依赖JWT创建新的出站集成
 
 1. 访问 [!DNL Adobe I/O] 并使用贵组织的开发人员访问权限登录。 确保您已登录到正确的组织门户。
 
