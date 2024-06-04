@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Templates
 role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 1%
@@ -77,7 +77,7 @@ ht-degree: 1%
 
   默认情况下，文件名的构造格式使用“@name”和“@date”字段上的变量：
 
-  ```
+  ```xml
   ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
   ```
 
@@ -117,7 +117,7 @@ ht-degree: 1%
 
 相应的样式表(“cus：book.xsl”)如下所示：
 
-```
+```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -140,7 +140,7 @@ ht-degree: 1%
 
 需要第二个样式表(“cus：chapter.xsl”)来生成章节的详细信息：
 
-```
+```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -167,7 +167,7 @@ ht-degree: 1%
 
 分区标记填充在页面的开头处，以包含在要生成的文件中。
 
-```
+```xml
 <xsl:comment> #nl:output_replace($(path)/<xsl:value-of select="@id"/>.htm)</xsl:comment>
 ```
 

@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 5d107e03ec572838dc2010446233c3bc5debf27e
+source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '751'
 ht-degree: 98%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 98%
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>有关JDK和Campaign的更多信息，请参阅 <a href="../../installation/using/application-server.md#java-development-kit---jdk">此页面</a>.</p>
+<p>有关JDK和Campaign的更多信息，请参阅 <a href="https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/deployment-guidelines/application-server#java-development-kit---jdk" target="_blank">此页面</a>.</p>
 </td>
 </tr>
 <tr>
@@ -148,7 +148,7 @@ ht-degree: 98%
 <p>2017</p>
 <p>2016</p>
 <p>2014</p>
-<p><strong>重要提示：</strong>当 Campaign 服务器在 Linux 上运行时，不支持将 Microsoft SQL Server 作为主数据库。<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux/prerequisites-of-campaign-installation-in-linux.html?lang=zh-Hans#database-access-layers">了解详情</a>。</p>
+<p><strong>重要提示：</strong>当 Campaign 服务器在 Linux 上运行时，不支持将 Microsoft SQL Server 作为主数据库。<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux/prerequisites-of-campaign-installation-in-linux.html?lang=zh-Hans#database-access-layers" target="_blank">了解详情</a>。</p>
 </td>
 </tr>
 </tbody>
