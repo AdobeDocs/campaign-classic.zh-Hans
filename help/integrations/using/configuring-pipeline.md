@@ -1,60 +1,50 @@
 ---
 product: campaign
 title: 配置管道
-description: 了解如何配置管道
+description: 了解如何为Campaign — 触发器集成配置管道
 feature: Triggers
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '875'
 ht-degree: 1%
 
 ---
 
 # 配置管道 {#configuring-pipeline}
 
-
-
 在实例配置文件中配置身份验证参数，例如客户ID、私钥和身份验证端点。
+
 要处理的触发器列表是通过JSON格式的选项配置的。
+
 触发器由发送电子邮件的活动工作流用于定位。 活动设置为让具有两个触发事件的客户收到电子邮件。
 
 ## 先决条件 {#prerequisites}
 
-在开始此配置之前，请检查您是否使用：
+在开始此配置之前，请检查您是否拥有：
 
-* 最少，需要以下Adobe Campaign构建之一：
-   * 19.1.8.9039
-   * 19.1.4.9032 - Gold Standard 11
-   * 20.2.4.9187
-   * 20.3.1
-* Adobe Analytics Standard版本
-
-您还需要：
-
-* Adobe I/O项目身份验证
-* 有效的组织ID — 要查找您的组织ID，请参阅 [此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}
+* Adobe Developer项目
+* 有效的组织ID — 要查找您的组织ID，请参阅 [此页面](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * 具有组织访问权限的开发人员
-* 在Adobe Analytics中完成触发器配置
+* Adobe Analytics中的有效触发器配置
 
 ## 身份验证和配置文件 {#authentication-configuration}
 
-由于管道托管在Adobe Experience Cloud中，因此需要进行身份验证。
-它使用一对公钥和私钥。 此进程与用户/密码具有相同的功能，但更加安全。
-Marketing Cloud支持通过Adobe I/O项目进行身份验证。
+由于管道托管在Adobe Experience Cloud中，因此需要进行身份验证。 它使用一对公钥和私钥。 此进程与用户/密码具有相同的功能，但更加安全。 Marketing Cloud支持通过Adobe Developer项目进行身份验证。
 
-## 步骤1：创建/更新Adobe I/O项目 {#creating-adobe-io-project}
+## 步骤1：创建/更新您的Adobe Developer项目 {#creating-adobe-io-project}
 
-对于托管客户，您可以创建客户关怀票证，以便为贵组织启用Triggers集成的Adobe I/O技术帐户令牌。
+对于托管客户，请与您的Adobe代表/客户关怀团队合作，为贵组织启用Adobe Developer帐户令牌以进行Triggers集成。
 
-对于内部部署客户，请参阅 [为Adobe Experience Cloud Triggers配置Adobe I/O](../../integrations/using/configuring-adobe-io.md) 页面。 请注意，您需要选择 **[!UICONTROL Adobe Analytics]** 将API添加到Adobe I/O凭据时。
+对于内部部署/混合部署客户，请参阅 [为Adobe Experience Cloud Triggers配置Adobe I/O](../../integrations/using/configuring-adobe-io.md) 页面。 请注意，您需要选择 **[!UICONTROL Adobe Analytics]** 将API添加到Adobe Developer凭据时。
 
-## 步骤2：配置NmsPipeline_Config管道选项 {#configuring-nmspipeline}
+## 步骤2：配置管道选项 {#configuring-nmspipeline}
 
 设置身份验证后，管道将检索事件。 它只会处理在Adobe Campaign中配置的触发器。 触发器必须从Adobe Analytics生成，并推送到管道，该管道仅处理在Adobe Campaign中配置的触发器。
+
 也可以使用通配符配置选项，以捕获所有触发器，而不管其名称如何。
 
 1. 在Adobe Campaign中，访问 **[!UICONTROL Administration]** > **[!UICONTROL Platform]**  > **[!UICONTROL Options]** 在 **[!UICONTROL Explorer]**.
@@ -63,7 +53,7 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 
 1. 在 **[!UICONTROL Value (long text)]** 字段中，可以粘贴以下JSON代码，该代码指定了两个触发器。 您需要确保删除注释。
 
-   ```
+   ```json
    {
    "topics": [ // list of "topics" that the pipelined is listening to.
       {
@@ -85,7 +75,7 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 
 1. 您还可以选择粘贴以下捕获所有触发器的JSON代码。
 
-   ```
+   ```json
    {
    "topics": [
      {
@@ -102,7 +92,7 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
    }
    ```
 
-### Consumer参数 {#consumer-parameter}
+### 设置Consumer参数 {#consumer-parameter}
 
 管道的工作方式与供应商和消费者模型类似。 消息仅供个人消费者使用：每个消费者均可获得其自己的消息副本。
 
@@ -114,18 +104,18 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 
 要配置管道选项，您应该遵循以下建议：
 
-* 在下面添加或编辑触发器 **[!UICONTROL Triggers]**，则不应编辑其余部分。
-* 确保JSON有效。 您可以使用JSON验证器，请参阅此 [网站](https://jsonlint.com/) 例如。
-* “name”对应于触发器ID。 通配符“*”将捕获所有触发器。
-* “消费者”对应于调用实例或应用程序的名称。
-* 管道化还支持“别名”主题。
-* 进行更改后，应始终重新启动管道。
+* 在下面添加或编辑触发器 **[!UICONTROL Triggers]**.
+* 确保JSON有效。
+* 此 **名称** 参数对应于触发器ID。 通配符“*”将捕获所有触发器。
+* 此 **消费者** 参数对应于调用实例或应用程序的名称。
+* 该 `pipelined`进程还支持“别名”主题。
+* 您应始终重新启动 `pipelined`进行更改后的进程。
 
 ## 步骤3：可选配置 {#step-optional}
 
-您可以根据负载要求更改某些内部参数，但请确保在将这些参数投入生产之前对其进行测试。
+您可以根据负载要求更改某些内部参数，但请确保在将它们应用于生产环境之前对其进行测试。
 
-可选参数列表如下所示：
+可选参数列表为：
 
 | 选项 | 说明 |
 |:-:|:-:|
@@ -146,11 +136,11 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 
 ### 流水线进程自动启动 {#pipelined-process-autostart}
 
-管道化进程需要自动启动。
+此 `pipelined` 进程需要自动启动。
 
-为此，请将配置文件中的&lt;pipelined >元素设置为autostart=&quot;true&quot;：
+为此，请设置 `<`流水线`>` 元素(to autostart=&quot;true&quot;)：
 
-```
+```sql
  <pipelined autoStart="true" ... "/>
 ```
 
@@ -158,7 +148,7 @@ Marketing Cloud支持通过Adobe I/O项目进行身份验证。
 
 需要重新启动才能使更改生效：
 
-```
+```sql
 nlserver restart pipelined@instance
 ```
 
@@ -166,6 +156,6 @@ nlserver restart pipelined@instance
 
 要验证用于配置的管道设置，请执行以下步骤：
 
-* 确保 [!DNL pipelined] 进程正在运行。
-* 检查pipelined.log以查看管道连接日志。
+* 确保 `pipelined` 进程正在运行。
+* 查看 `pipelined.log` 用于管道连接日志。
 * 验证连接以及是否接收到ping。 托管客户可以从客户端控制台使用监控。
