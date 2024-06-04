@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 30670fba2fb84b968ef2e8a8f24746c81cc05f57
+source-git-commit: 7e1c3b256cf43232e49d9daa0bf44d1e114b565b
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '622'
 ht-degree: 1%
 
 ---
@@ -32,28 +32,28 @@ Java开发工具包（简称JDK）是一个软件开发工具包。 它是实现
 Campaign中详细介绍了支持的版本 [兼容性矩阵](../../rn/using/compatibility-matrix.md).
 
 
-
 ### 推荐做法
 
-Java开发套件可以使用计算机上其他应用程序已使用的相应JDK版本进行安装。
+安装和升级Java Development Kit时，请应用以下建议：
 
-安装JDK时，不需要与Web浏览器集成。
+* Java开发套件可以使用计算机上其他应用程序已使用的相应JDK版本进行安装。
 
-在仅执行投放代理的计算机上(**nlserver mta** process)或工作流服务器(**nlserver wfserver** 进程)，无需安装JDK。
+* 安装JDK时，不需要与Web浏览器集成。
 
+* 在仅执行投放代理的计算机上(**nlserver mta** process)或工作流服务器(**nlserver wfserver** 进程)，无需安装JDK。
 
->[!CAUTION]
->
-> 要保留平台操作性能并确保与已安装的版本兼容，您必须在Windows和Linux中禁用自动JDK更新功能。
->
-> 升级Java版本时，首先需要卸载以前的版本。 安装在同一台计算机上的两个Java版本都可能会导致冲突。
+* 要保留平台操作性能并确保与已安装的版本兼容，您必须在Windows和Linux中禁用自动JDK更新功能。
+
+* 升级Java版本时，首先需要卸载以前的版本。 安装在同一台计算机上的两个Java版本都可能会导致冲突。
+
+  作为内部部署客户，您可以检查 `LD_LIBRARY_PATH` [环境变量](installing-packages-with-linux.md#environment-variables) 设置为最新版本(例如， java11)。 如果设置为以前的版本(例如， Java8)，则需要更新。 对于JDK 11，查找JDK库的路径为 `/usr/lib/jvm/java-11-openjdk-amd64/lib`.
 
 
 ### 安装步骤
 
 Java开发工具包特定于平台：每个操作系统都需要单独的安装程序。
 
-要下载Java JDK，请连接到 [oracle网站](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
+要下载JDK，请连接到 [oracle网站](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -73,6 +73,7 @@ aptitude install openjdk-8-jdk
 ```sql
 yum install java-1.8.0-openjdk
 ```
+
 
 ## OpenSSL {#openssl}
 
