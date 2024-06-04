@@ -8,20 +8,20 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 30670fba2fb84b968ef2e8a8f24746c81cc05f57
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '565'
 ht-degree: 1%
 
 ---
 
 # 应用程序服务器{#application-server}
 
-
-
 必须在服务器上安装所需的数据库访问层，并可从Adobe Campaign帐户访问。
 
 ## Java开发工具包 — JDK {#java-development-kit---jdk}
+
+Java开发工具包（简称JDK）是一个软件开发工具包。 它是实现Java应用程序和Java小程序开发的基础组件。
 
 动态网页生成器采用JSP 1.2技术。 为此，应用程序中包含一个Tomcat引擎（来自Apache）。 它要求在所有安装了Adobe Campaign应用程序的服务器上安装Java开发工具包(JDK)。
 
@@ -31,33 +31,46 @@ ht-degree: 1%
 
 Campaign中详细介绍了支持的版本 [兼容性矩阵](../../rn/using/compatibility-matrix.md).
 
->[!NOTE]
->
->可以使用计算机上其他应用程序已使用的相应JDK版本来安装它。
->  
->安装时，您无需与Web浏览器执行集成。
->
->在仅执行投放代理的计算机上(**nlserver mta** process)或工作流服务器(**nlserver wfserver** 进程)，则无需安装JDK。
 
-要下载Java JDK，请连接到： [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
-**警告：您必须下载JDK，而不是JRE。**
+### 推荐做法
+
+Java开发套件可以使用计算机上其他应用程序已使用的相应JDK版本进行安装。
+
+安装JDK时，不需要与Web浏览器集成。
+
+在仅执行投放代理的计算机上(**nlserver mta** process)或工作流服务器(**nlserver wfserver** 进程)，无需安装JDK。
+
 
 >[!CAUTION]
 >
->要保留平台操作性能并确保与已安装的版本兼容，您必须在Windows和Linux中禁用自动JDK更新功能。
+> 要保留平台操作性能并确保与已安装的版本兼容，您必须在Windows和Linux中禁用自动JDK更新功能。
+>
+> 升级Java版本时，首先需要卸载以前的版本。 安装在同一台计算机上的两个Java版本都可能会导致冲突。
 
-要在Linux环境中安装JDSL，最好使用包管理器。
 
-在Debian 8和9中，使用以下命令：
+### 安装步骤
 
-```
+Java开发工具包特定于平台：每个操作系统都需要单独的安装程序。
+
+要下载Java JDK，请连接到 [oracle网站](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
+
+>[!CAUTION]
+>
+> 请确保下载的是Java开发工具包(JDK)，而不是Java运行时环境(JRE)。
+
+
+要在Linux环境中安装JDSL，Adobe建议使用包管理器。
+
+对于Debian，使用以下命令：
+
+```sql
 aptitude install openjdk-8-jdk
 ```
 
-对于RHEL 7，使用以下命令：
+对于RHEL，请使用以下命令：
 
-```
+```sql
 yum install java-1.8.0-openjdk
 ```
 
@@ -67,7 +80,11 @@ yum install java-1.8.0-openjdk
 
 ## 导出报告 {#exporting-reports}
 
-通过Adobe Campaign，您可以将Platform报表导出为Microsoft Excel和Adobe PDF格式。 对于Microsoft Excel格式，Adobe Campaign使用 **LibreOffice**. 对于Adobe PDF格式，Adobe Campaign使用 **PhantomJS** 转化因素。 PhantomJs包含在工厂软件包中，LibreOffice必须安装在执行Adobe Campaign应用程序服务器的计算机上(**nlserver web** 流程)。
+您可以使用Adobe Campaign将报表导出到Microsoft Excel和Adobe PDF。
+
+* 对于Microsoft Excel格式，Adobe Campaign依赖于 **LibreOffice**.
+
+* 对于Adobe PDF格式，Adobe Campaign使用 **PhantomJS** 转化因素。 PhantomJs包含在工厂软件包中，LibreOffice必须安装在执行Adobe Campaign应用程序服务器的计算机上(**nlserver web** 流程)。
 
 >[!NOTE]
 >
