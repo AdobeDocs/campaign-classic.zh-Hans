@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 991ad88101468c3e7f5d676586dfdd05d63e7c6d
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -121,6 +121,10 @@ Adobe将在进行任何更改之前备份系统。 但是，如果您的非生�
 ## 在升级过程中是否可以访问实例？
 
 没有。服务器在升级期间关闭，以确保在产品升级期间保持数据完整性。 完成后，它会重新启动，并且所有服务都会恢复。
+
+## 在升级过程中，我是否仍可以使用Campaign实例？
+
+没有。Adobe建议在维护期间禁用Campaign中的任何操作，以避免丢失或丢失任何数据。 在升级过程中，不得创建或部署任何营销活动、查询、工作流或投放。
 
 ## 在升级过程中，是否会继续从消息中心发送电子邮件？
 
