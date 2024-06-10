@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
+source-git-commit: 0e88ac270423ad419237264e562a03ab0c42efb5
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 98%
+source-wordcount: '856'
+ht-degree: 86%
 
 ---
 
@@ -33,7 +33,10 @@ ht-degree: 98%
 >
 >此矩阵通过添加新的受支持项目并移除已弃用项目定期更新。
 
-## 操作系统{#OperatingSystems}
+## 操作系统 {#OperatingSystems}
+
+作为内部部署/混合部署客户，您必须在下面列出的操作系统之一中安装Adobe Campaign。 在中了解有关Campaign Classicv7安装步骤的更多信息 [此页面](../../installation/using/application-server.md).
+
 
 <table> 
 <tbody> 
@@ -71,7 +74,9 @@ ht-degree: 98%
 >
 >如果使用的是 RHEL，则必须愿意禁用 SELinux，或者让架构师编写自定义 SELinux 规则来检查已启用的 SELinux 是否不会导致 Campaign 操作问题。
 
-## Web 服务器{#WebServers}
+## Web 服务器 {#WebServers}
+
+作为内部部署/混合部署客户，根据您的操作系统，您必须将Campaign集成到下面列出的其中一个Web服务器。 在中了解有关Web服务器配置步骤的更多信息 [此页面](../../installation/using/integration-into-a-web-server-for-windows.md) （适用于Windows）和 [此页面](../../installation/using/integration-into-a-web-server-for-linux.md) （适用于Linux） 。
 
 <table>
 <tbody>
@@ -90,7 +95,9 @@ ht-degree: 98%
 </tbody>
 </table>
 
-## 工具{#Tools}
+## 工具 {#Tools}
+
+作为内部部署/混合部署客户，您必须安装和配置下面列出的工具。 [了解详情](../../installation/using/application-server.md)。
 
 <table>
 <tbody>
@@ -119,6 +126,9 @@ ht-degree: 98%
 </table>
 
 ## 关系数据库管理系统 (RDBMS){#RDBMSservers}
+
+作为内部部署/混合部署客户，您必须安装和配置下列数据库之一。 [了解详情](../../installation/using/database.md)。
+
 
 <table>
 <tbody>
@@ -158,7 +168,7 @@ ht-degree: 98%
 >
 >* RDBMS 驱动程序必须与 RDBMS 服务器版本匹配。
 >
->* PostgreSQL 是用于托管环境的 RDBMS。
+>* PostgreSQL是用于托管/托管Cloud Service环境的RDBMS。
 
 ## CRM 连接器{#CRMconnectors}
 
@@ -394,7 +404,7 @@ Microsoft Edge WebView2 运行时最新版本是 Campaign 客户端控制台的�
 
 
 
-## 更多此类内容{#Morelikethis}
+## 更多此类内容 {#Morelikethis}
 
 * [Campaign Classic 发行说明](../../rn/using/latest-release.md)
 * [Campaign 一般架构](../../installation/using/general-architecture.md)

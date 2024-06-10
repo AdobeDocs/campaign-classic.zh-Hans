@@ -8,15 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0e88ac270423ad419237264e562a03ab0c42efb5
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 2%
 
 ---
 
-# 集成到Linux版Web服务器{#integration-into-a-web-server-for-linux}
-
+# 集成到Linux版Web服务器 {#integration-into-a-web-server-for-linux}
 
 
 Adobe Campaign包括Apache Tomcat，它通过HTTP（和SOAP）充当应用程序服务器中的入口点。
@@ -29,7 +28,7 @@ Adobe Campaign包括Apache Tomcat，它通过HTTP（和SOAP）充当应用程序
 * 然后，客户端控制台使用URL进行连接，例如：
 
   ```
-  http://<computer>:8080
+  https://<computer>:8080
   ```
 
 但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开访问网络外部的控制台时，我们建议使用专用的Web服务器作为HTTP流量的主要入口点。
