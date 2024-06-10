@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
+source-git-commit: ef6a864c76c04ac94383c1c2ad74095dd5ef63a1
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1757'
 ht-degree: 8%
 
 ---
@@ -208,13 +208,14 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
   用于连接到SFTP服务器的密码。
 
-在Windows上添加SSH密钥：
+<!--To add SSH keys on Windows:
 
-1. 创建 **主页** 将值设置为安装目录的环境变量。
+1. Create the **HOME** environment variable with value set as the installation directory.
 
-2. 将您的私钥添加到 `/$HOME/.ssh/id_rsa` 文件夹。
+2. Add your private key to the `/$HOME/.ssh/id_rsa` folder.
 
-3. 重新启动Adobe Campaign服务。
+3. Restart the Adobe Campaign services.
+-->
 
 ### 外部数据库（联合数据访问） {#external-database-external-account}
 
