@@ -5,9 +5,9 @@ description: 定义 Web 窗体属性
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 1d4990917fea54e67ed23cd0771295de03a4f01a
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1375'
 ht-degree: 1%
 
 ---
@@ -83,6 +83,32 @@ ht-degree: 1%
 示例渲染显示在属性窗口的下部。 此 **[!UICONTROL Edit link]** 图标允许您查看选定主题的配置。
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
+
+## 表单中的徽标 {#logo-in-the-form}
+
+您可以按自己的徽标更改表单中使用的徽标。
+
+在 **[!UICONTROL Rendering]** 选项卡 **[!UICONTROL Properties]** 的，单击模板的玻璃图标：
+
+![](assets/logo_glass.png)
+
+在新窗口中，单击 **[!UICONTROL Page layout]** 链接：
+
+![](assets/logo_pagelayout.png)
+
+您可以在此处更改徽标图像的路径：
+
+![](assets/logo_path.png)
+
+可用的图像位于 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]**. 您可以在此处添加徽标。
+
+这些图像被放置在实例的后端目录中 *datakit\nms\fra\img\activities* 或 *datakit\nms\eng\img\activities* （eng或fra，具体取决于实例的语言）。
+
+要在此目录（以及图像中）中使用新图像，请联系Adobe支持部门以更改后端目录。
+
+对于内部部署实例，您可以自己将图像添加到Datakit。
+
+不必从Campaign客户端看到上传的图像。 正确的路径足以用作新徽标。
 
 ## 表单中的文本 {#texts-in-the-form}
 
