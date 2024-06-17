@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 28302b40d4fa43b400a3e1b6dd3e133976a01418
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '856'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 86%
 
 ## 操作系统 {#OperatingSystems}
 
-作为内部部署/混合部署客户，您必须在下面列出的操作系统之一中安装Adobe Campaign。 在中了解有关Campaign Classicv7安装步骤的更多信息 [此页面](../../installation/using/application-server.md).
+作为内部部署/混合部署客户，您必须在以下列出的操作系统之一中安装 Adobe Campaign。在[此页面](../../installation/using/application-server.md)中了解有关 Campaign Classic v7 内部版本状态的更多信息。
 
 
 <table> 
@@ -76,7 +76,7 @@ ht-degree: 86%
 
 ## Web 服务器 {#WebServers}
 
-作为内部部署/混合部署客户，根据您的操作系统，您必须将Campaign集成到下面列出的其中一个Web服务器。 在中了解有关Web服务器配置步骤的更多信息 [此页面](../../installation/using/integration-into-a-web-server-for-windows.md) （适用于Windows）和 [此页面](../../installation/using/integration-into-a-web-server-for-linux.md) （适用于Linux） 。
+作为内部部署/混合部署客户，根据您的操作系统，您必须在以下列出的一个 Web 服务器中集成 Campaign。在[此页面](../../installation/using/integration-into-a-web-server-for-windows.md)（适用于Windows）和[此页面](../../installation/using/integration-into-a-web-server-for-linux.md)（适用于Linux）中了解有关 Web 服务器配置步骤的更多信息。
 
 <table>
 <tbody>
@@ -97,7 +97,7 @@ ht-degree: 86%
 
 ## 工具 {#Tools}
 
-作为内部部署/混合部署客户，您必须安装和配置下面列出的工具。 [了解详情](../../installation/using/application-server.md)。
+作为内部部署/混合部署客户，您必须安装和配置以下列出的工具。[了解详情](../../installation/using/application-server.md)。
 
 <table>
 <tbody>
@@ -107,7 +107,7 @@ ht-degree: 86%
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>有关JDK和Campaign的更多信息，请参阅 <a href="https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/deployment-guidelines/application-server#java-development-kit---jdk" target="_blank">此页面</a>.</p>
+<p>请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/deployment-guidelines/application-server#java-development-kit---jdk" target="_blank">此页面</a>以了解有关 JDK 和 Campaign 的更多信息。</p>
 </td>
 </tr>
 <tr>
@@ -127,7 +127,7 @@ ht-degree: 86%
 
 ## 关系数据库管理系统 (RDBMS){#RDBMSservers}
 
-作为内部部署/混合部署客户，您必须安装和配置下列数据库之一。 [了解详情](../../installation/using/creating-and-configuring-the-database.md)。
+作为内部部署/混合部署客户，您必须安装和配置以下数据库之一。[了解详情](../../installation/using/creating-and-configuring-the-database.md)。
 
 
 <table>
@@ -168,7 +168,7 @@ ht-degree: 86%
 >
 >* RDBMS 驱动程序必须与 RDBMS 服务器版本匹配。
 >
->* PostgreSQL是用于托管/托管Cloud Service环境的RDBMS。
+>* PostgreSQL 是用于托管/管理云服务环境的 RDBMS。
 
 ## CRM 连接器{#CRMconnectors}
 
