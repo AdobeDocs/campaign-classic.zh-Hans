@@ -7,9 +7,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '398'
 ht-degree: 7%
 
 ---
@@ -37,4 +37,26 @@ ht-degree: 7%
 
 此 [!DNL pipelined] 进程使用身份验证服务登录到Experience Cloud并发送私钥。 身份验证服务返回一个令牌。 令牌用于在检索事件时进行身份验证。
 
-有关身份验证的详细信息，请参阅此 [页面](../../integrations/using/configuring-adobe-io.md).
+## 先决条件 {#adobe-io-prerequisites}
+
+在开始此实施之前，请检查您是否拥有：
+
+* 有效的 **组织标识符**：组织ID是Adobe Experience Cloud中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解更多信息](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans)
+* a **开发人员访问权限** 添加到您的组织。 组织的系统管理员需要遵循 **将开发人员添加到单个产品配置文件** 详细过程 [本页内容](https://helpx.adobe.com/enterprise/using/manage-developers.html) 为提供开发人员访问权限 `Analytics - {tenantID}` 与触发器关联的Adobe Analytics产品的产品配置文件。
+
+## 实施步骤 {#implement}
+
+要实施Campaign和Experience Cloud触发器，请执行以下步骤：
+
+1. 创建OAuth项目。 [了解更多信息](oauth-technical-account.md#oauth-service)
+
+1. 在Adobe Campaign中添加您的OAuth项目凭据。 [了解更多信息](oauth-technical-account.md#add-credentials)
+
+1. 在配置文件中将身份验证类型更新为开发人员控制台项目 **config-&lt; instance-name >.xml** 如下所示：
+
+   ```
+   <pipelined ... authType="imsJwtToken"  ... />
+   ```
+
+   然后，运行 `config -reload` 以及重启 [!DNL pipelined] 以考虑更改。
+

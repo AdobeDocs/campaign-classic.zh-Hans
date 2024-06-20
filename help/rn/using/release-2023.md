@@ -6,14 +6,46 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: ac086604b17df96355563308c3dec3096b407542
-workflow-type: ht
-source-wordcount: '1973'
-ht-degree: 100%
+source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
+workflow-type: tm+mt
+source-wordcount: '2337'
+ht-degree: 97%
 
 ---
 
 # 2023 版{#release-2023}
+
+## 7.3.5 版 - 内部版本 9368 {#release-7-3-5}
+
+[!BADGE 有限发布版]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
+
+_2023 年 12 月 5 日_
+
+### 安全性增强 {#release-7-3-5-security}
+
+
+* 在 Campaign Classic v7.3.5 中，身份验证过程已得到改进并受保护。现在，技术操作员应使用 Adobe Identity Management System (IMS) 连接到 Campaign。请阅读[此技术说明](../../technotes/using/ims-migration.md)，了解如何迁移现有技术帐户。
+
+* 此外，作为加强安全和身份验证过程的一部分，Adobe Campaign 强烈建议将终端用户身份验证模式从登录/密码本机身份验证迁移到 Adobe Identity Management System (IMS)。请阅读[此技术说明](../../technotes/using/migrate-users-to-ims.md)，了解如何迁移操作员。
+
+* 现在，如果 Web 窗体有&#x200B;**待发布**&#x200B;状态，它不会自动上线。为防止出现安全问题，必须先将其发布，然后才能使其&#x200B;**上线**&#x200B;并通过 Web 浏览器中的 Web 窗体 URL 访问它。[了解更多信息](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+
+### 其他增强功能 {#release-7-3-5-other}
+
+从此版本开始，在升级过程中，已发送电子邮件上的跟踪链接仍将有效。 [了解更多信息](../../platform/using/faq-build-upgrade.md)
+
+### 修补程序 {#release-7-3-5-patches}
+
+* 修复了使用 Google Big Query 数据库中的数据和更新 Oracle 数据库中的数据时出现的问题：在工作流临时表中，将所有键都设置为 `0`。(NEO-65091)
+* 修复了当 Google Big Query 数据库上的两个查询合并到 **Union** 工作流活动中时导致工作流执行失败的问题。(NEO-63705)
+* 修复了在 Campaign 报告中单击 `Back` 按钮时请求用户重新进行身份验证的问题。(NEO-65087)
+* 修复了数据库清理工作流中发生的错误，在投放证明前删除投放时会发生该错误。(NEO-48114)
+* 修复了连接到客户端控制台时的问题：最近对 TLS 验证的更新导致连接错误。(NEO-50488)
+* 修复了 Campaign 升级到 7.3.1 后 HTTP 代理身份验证的问题。活动工作流中的 HTTP 请求失败，并出现 `error 407 – proxy auth required is returned`。(NEO-49624)
+* 修复了&#x200B;**脚本**&#x200B;工作流活动中 GPG 解密的间歇性故障。相关的错误消息为：`gpg: decryption failed: No secret key`。(NEO-50257)
+  <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
+
+
 
 
 ## 7.3.4 版 - 内部版本 9364 {#release-7-3-4}
@@ -103,12 +135,12 @@ _2023 年 3 月 20 日_
 * 为了优化安全性，已将 Tomca 版本从 8.5.81 更新到 8.5.85。(NEO-56936)
 
 
-
 ### 改进 {#release-7-3-3-improvements}
 
 * 改进了计费工作流以优化性能。(NEO-47658)
 * 改进了跟踪工作流程，从而优化在投放大小较高时的性能。(NEO-45064)
 * 改进了跟踪管理，以修复 URL 中动态参数可能存在的问题。跟踪管理 v3 现在可以处理 AJAX 类型的 URL（在“#”后面带有参数）并可阻止第三方工具修改跟踪 URL。要应用此更改，请联系 Adobe。(NEO-46535)
+* 从此版本开始，在升级过程中，已发送电子邮件上的跟踪链接仍将有效。 [了解更多信息](../../platform/using/faq-build-upgrade.md)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
@@ -150,6 +182,8 @@ _2022 年 11 月 21 日_
 * Google BigQuery 连接器现在完全支持布尔字段。(NEO-49181)
 * 您现在可以在 serverConf.xml 文件的 `Configuration for the redirection service` 部分配置 IMS Cookie 的有效期。这适用于以下 Cookie：`uuid230`、`nllastdelid` 和 `AMCV_` (NEO-42541)
 * 现在通过在 serverConf.xml 文件的重定向节点中将 `showSourceIP` 设置为“false”，可将 IP 在“/r/test”请求中隐藏。[了解更多信息](../../installation/using/the-server-configuration-file.md#redirection-redirection) (NEO-46656)
+* 从此版本开始，在升级过程中，已发送电子邮件上的跟踪链接仍将有效。 [了解更多信息](../../platform/using/faq-build-upgrade.md)
+
 
 ### 已弃用的功能  {#release-7-3-2-deprecated}
 

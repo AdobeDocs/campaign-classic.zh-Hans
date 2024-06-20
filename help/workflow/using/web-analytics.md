@@ -3,7 +3,7 @@ product: campaign
 title: Web 分析
 description: 了解关于网站分析包的更多信息
 feature: Workflows, Analytics Integration
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 
 
-下面详细介绍的工作流将随 **网站分析连接器** 默认模块。 有关此模块的更多信息，请参阅此 [部分](../../platform/using/gs-aa.md).
+下面详细介绍的工作流将随 **网站分析连接器** 默认模块。 有关此模块的更多信息，请参阅此 [部分](../../integrations/using/gs-aa.md).
 
 <table> 
  <tbody> 

@@ -5,7 +5,9 @@ description: Campaign - Analytics连接器常见问题解答
 feature: Technote, Analytics Integration
 badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于v7内部部署和混合部署"
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+hide: true
+hidefromtoc: true
+source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 2%
@@ -14,13 +16,11 @@ ht-degree: 2%
 
 # 如何将现有Genesis集成迁移到Adobe Analytics连接器 {#acc-aa-faq}
 
-
-
-从Campaign Classicv7 21.1.3版本开始，弃用Adobe Analytics Data Connector。 [了解详情](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
+从Campaign Classicv7 21.1.3版本开始，弃用Adobe Analytics Data Connector。 [了解更多信息](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
 2021年8月1日，Adobe Campaign Classic已从旧版Data Connectors UI中删除，但是，在2022年8月17日之前，现有Campaign集成将继续收集数据并传递到Adobe Analytics。 在此日期之后，集成将停止收集数据并传递到Adobe Analytics。
 
-您 **必须实施** Adobe交换上新的Adobe Analytics Connector集成，它取代了旧版Data Connectors集成。 要了解有关Adobe Analytics Connector的更多信息，请参阅 [此页面](../../platform/using/gs-aa.md).
+您 **必须实施** Adobe Exchange上新的Adobe Analytics Connector集成，它取代了旧版Data Connectors集成。 要了解有关Adobe Analytics Connector的更多信息，请参阅 [此页面](../../integrations/using/gs-aa.md).
 
 有关这些更改的任何问题，请阅读 [常见问题解答](#faq-aa). 有关详细信息，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
@@ -40,13 +40,13 @@ Campaign Classic v7与Adobe Analytics之间的新集成现已可用。 下面列
 
 * 请注意 `nlserver` 应使用IMS技术帐户用户配置进程，以使新连接器正常工作。 此更改必须由Adobe完成。 要实施此功能，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
-* 如果您在自定义工作流程中是Adobe Genesis API，用于从Adobe Analytics提取和推送数据，则现在需要使用新的Adobe Analytics 1.4/2.0 API。 [了解详情](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360047148832-Replacements-for-Data-Connector-API-calls)
+* 如果您在自定义工作流程中是Adobe Genesis API，用于从Adobe Analytics提取和推送数据，则现在需要使用新的Adobe Analytics 1.4/2.0 API。 [了解更多信息](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360047148832-Replacements-for-Data-Connector-API-calls)
 
 ## 您是否受影响？
 
 如果您使用现有的Adobe Analytics Data Connector(以前称为Genesis集成)，并且集成是在低于Campaign 21.1.3的内部版本上实现的，则您会受到影响。
 
-了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+了解如何检查您的版本 [在此部分中](../../integrations/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## 如何更新？
 
@@ -55,7 +55,7 @@ Campaign Classic v7与Adobe Analytics之间的新集成现已可用。 下面列
 作为托管客户，Adobe将与您合作，将您的实例升级到新版本。 然后，您将能够使用 [Adobe Analytics连接器](../../platform/using/gs-aa.md).
 
 作为内部部署/混合部署客户，您需要升级到较新版本之一以从新集成中受益。
-升级所有实例后，您将能够 [实施新的集成](../../platform/using/adobe-analytics-provisioning.md) 到Adobe Analytics连接器，并确保无缝过渡。
+升级所有实例后，您将能够 [实施新的集成](../../integrations/using/adobe-analytics-provisioning.md) 到Adobe Analytics连接器，并确保无缝过渡。
 
 ## 常见问题解答{#faq-aa}
 

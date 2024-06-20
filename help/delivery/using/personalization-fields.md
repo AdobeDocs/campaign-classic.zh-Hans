@@ -6,10 +6,10 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0cf7f249f366a6ef0e9bd0326ec14131fcf7dc18
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 9%
+source-wordcount: '1024'
+ht-degree: 8%
 
 ---
 
@@ -115,6 +115,26 @@ ht-degree: 9%
 默认值为5秒。
 
 如果将此选项设置为0，则个性化阶段将没有时间限制。
+
+## “个性化”选项卡 {#personalization-tab}
+
+在投放属性中，您有一个个性化选项卡。
+
+您可以单击 **“编辑收件人用户档案加载查询”**. 您可以使用直接在表达式中提取的数据来提取您真正需要的内容。 这些数据将被添加到上下文中。
+
+![](assets/persotab-edit.png){zoomable="yes"}
+
+如果要添加的数据不在定向维度中，您可以单击 **“在脚本的执行上下文中添加对象”**.
+
+![](assets/persotab_addobjects.png){zoomable="yes"}
+
+您可以在此处选择所需的对象架构，然后在Javascript代码中使用这些数据，这些数据将在投放准备期间执行。
+
+![](assets/persotab_addobjects_articles.png){zoomable="yes"}
+
+通过添加对象架构，您可以选择要添加到上下文的字段：
+
+![](assets/persotab_addobjects_fields.png){zoomable="yes"}
 
 ## 教程视频 {#personalization-fields-video}
 

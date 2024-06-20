@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 97%
+source-wordcount: '1907'
+ht-degree: 95%
 
 ---
 
@@ -68,11 +68,14 @@ Adobe Campaign 是 Adobe Experience Cloud 解决方案的一部分。Campaign �
 * **个人数据**&#x200B;是指可以直接或间接识别生命个体的信息。
 * **敏感个人数据**&#x200B;是与个人的种族、政治观点、宗教信仰、犯罪背景、遗传信息、健康数据、性取向、生物识别信息以及贸易联盟会员资格相关的信息。
 
-在将 Campaign 与可将受众一个系统转移到另一个系统的其他 Experience Cloud 解决方案（例如 [Adobe Analytics](../../platform/using/gs-aa.md)、[Audience Manager 或 People 核心服务](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)、[Campaign Standard](../../integrations/using/synchronizing-audiences.md)）集成时，或通过 [CRM 连接器](../../platform/using/crm-connectors.md)将 Campaign 与其他解决方案集成时，需要格外注意个人数据保护。
+将Campaign与其他Experience Cloud解决方案集成时，如果受众可以从一个系统转移到另一个系统，例如 [Adobe Analytics](../../integrations/using/gs-aa.md)， [Experience Cloud受众](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)， [Campaign Standard](../../integrations/using/synchronizing-audiences.md)，或通过其他解决方案提供 [CRM连接器](../../platform/using/crm-connectors.md)，您需要格外注意个人数据保护。
 
 [主要法规](#privacy-regulations)是指管理数据的不同实体，如下所示：
+
 * **数据控制者**&#x200B;是确定收集、使用和共享个人数据的方式和目的权威。
+
 * **数据处理者**&#x200B;是按照数据控制者的指示收集、使用或共享个人数据的任何个人或一方。
+
 * **数据主体**&#x200B;是指对其个人数据进行收集、使用或共享，并可通过参考该个人数据来直接或间接进行识别的任何生命个体。
 
 因此，作为收集和共享个人数据的公司，您是数据控制者，您的客户是数据主体，Adobe Campaign 在按照您的指示处理其个人数据时充当数据处理者。请注意，作为数据控制者，您责任处理与数据主体的关系，例如管理[隐私请求](#privacy-requests)。

@@ -6,10 +6,10 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 8%
+source-wordcount: '772'
+ht-degree: 7%
 
 ---
 
@@ -51,6 +51,12 @@ ht-degree: 8%
 Adobe Campaign与HTTP/2 APN兼容。 有关配置步骤的更多详细信息，请参阅 [本节](configuring-the-mobile-application.md) 部分。
 
 有关如何创建投放的全局信息，请参阅 [本节](steps-about-delivery-creation-steps.md).
+
+
+## 配置推送通知渠道 {#push-notification-configuration}
+
+要使用Adobe Campaign发送推送通知，您必须先配置环境和应用程序。 在开始使用Adobe Campaign发送推送通知之前，您需要确保移动应用程序和Adobe Experience Platform中的标记已具有配置和集成。 Adobe Experience Platform Mobile SDK通过与Android和iOS兼容的SDK为您的移动设备提供客户端集成API。 SDK配置通过数据收集UI进行管理，以实现灵活配置和基于规则的可扩展集成。 了解详情，请参阅 [Adobe Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings).
+
 
 ## 数据路径 {#data-path}
 

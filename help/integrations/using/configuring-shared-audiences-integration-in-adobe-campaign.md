@@ -2,21 +2,20 @@
 product: campaign
 title: 在Adobe Campaign中配置共享受众集成
 description: 了解如何配置共享受众集成
-feature: Audiences, People Core Service Integration
+feature: Audiences
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
 
 # 在Adobe Campaign中配置共享受众集成{#configuring-shared-audiences-integration-in-adobe-campaign}
-
 
 
 提交此请求后，Adobe将继续为您预配集成，并联系您以提供完成配置所需的详细信息和信息：
@@ -88,7 +87,7 @@ ht-degree: 0%
 
 ## 步骤3：配置Campaign跟踪服务器 {#step-3--configure-campaign-tracking-server}
 
-要配置与People核心服务或Audience Manager的集成，我们还需要配置Campaign跟踪服务器。
+要配置与Audience Manager的集成，我们还需要配置Campaign跟踪服务器。
 
 要使共享受众能够与访客ID配合使用，跟踪服务器域应该是已单击URL的子域或主网站。
 

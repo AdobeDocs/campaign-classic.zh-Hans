@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
-source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '145'
 ht-degree: 4%
 
 ---
@@ -45,7 +45,6 @@ nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 * **postgresql**：对于PostgreSQL，
 * **oracle**：对于Oracle，
 * **mssql**：对于Microsoft SQL Server，
-* **DB2**：对于DB2引擎。
 
 以下命令配置 **演示** 具有SQL类型服务器的实例，称为 **基础6**，链接到 **营销活动** 帐户及其 **密码** 在 **dbsrv** 服务器：
 

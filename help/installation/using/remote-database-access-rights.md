@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 1%
+source-wordcount: '923'
+ht-degree: 0%
 
 ---
 
@@ -64,16 +64,16 @@ ht-degree: 1%
 | **访问客户端数据** | 选择（将来）表或视图权限 | SELECT权限 | 选择或选择任何表权限 | 选择权限 | SELECT权限 | SELECT权限 |
 | **访问元数据** | SELECT on INFORMATION_SCHEMA方案权限 | SELECT权限 | 使用DESCRIBE语句不需要特权 | 查看定义权限 | 使用“\d table”命令不需要权限 | SELECT权限 |
 
-|   | DB2 UDB | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | AsterData |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **正在连接到远程数据库** | CONNECT权限 | CONNECT权限 | 创建与具有ALL PRIVILEGES的远程主机绑定的用户 | 使用CONNECT语句无需权限 | 无需权限 | CONNECT权限 |
-| **创建表** | CREATETAB权限 | CREATE TABLE或TABLE关键字 | CREATE权限 | 资源权限和CREATE权限 | TABLE权限 | CREATE权限 |
-| **创建索引** | INDEX权限 | CREATE INDEX或INDEX关键字 | INDEX权限 | 资源权限和CREATE权限 | INDEX权限 | CREATE权限 |
-| **创建函数** | IMPLICIT_SCHEMA权限或CREATEIN权限 | CREATE FUNCTION或FUNCTION关键字 | CREATE ROUTINE权限 | Java函数的RESOURCE权限或DBA权限 | FUNCTION权限 | CREATE函数权限 |
-| **创建过程** | IMPLICIT_SCHEMA权限或CREATEIN权限 | CREATE PROCEDURE或PROCEDURE关键字 | CREATE ROUTINE权限 | RESOURCE权限 | PROCEDURE权限 | CREATE函数权限 |
-| **删除对象（表、索引、函数、过程）** | DROPIN权限或CONTROL权限，或拥有对象 | DROP &lt; object >或对象相关关键字 | DROP权限 | 拥有对象或DBA权限 | DROP权限 | 拥有对象 |
-| **监视执行** | 说明权限 | 使用EXPLAIN语句不需要特权 | SELECT权限 | 只有系统管理员可以执行sp_showplan | 使用EXPLAIN语句不需要特权 | 使用EXPLAIN语句不需要特权 |
-| **写入数据** | INSERT和UPDATE权限或DATACCESS权限 | INSERT and UPDATE权限 | INSERT and UPDATE权限 | INSERT和UPDATE权限 | INSERT and UPDATE权限 | INSERT and UPDATE权限 |
-| **将数据加载到表中** | LOAD权限 | SELECT和INSERT权限分别使用COPY TO和COPY FROM语句 | FILE权限 | 是表的所有者或ALTER权限。 根据 — gl选项的不同，可能只有在用户具有DBA权限时才执行LOAD TABLE | SELECT和INSERT权限 | SELECT和INSERT权限 |
-| **访问客户端数据** | INSERT/UPDATE权限或DATACCESS权限 | SELECT权限 | SELECT权限 | 选择权限 | SELECT权限 | SELECT权限 |
-| **访问元数据** | 使用DESCRIBE语句无需授权 | 显示权限 | SELECT权限 | 使用DESCRIBE语句无需权限 | 使用“\d table”命令不需要权限 | 使用SHOW命令不需要任何特权 |
+|   | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | AsterData |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| **正在连接到远程数据库** | CONNECT权限 | 创建与具有ALL PRIVILEGES的远程主机绑定的用户 | 使用CONNECT语句无需权限 | 无需权限 | CONNECT权限 |
+| **创建表** | CREATE TABLE或TABLE关键字 | CREATE权限 | 资源权限和CREATE权限 | TABLE权限 | CREATE权限 |
+| **创建索引** | CREATE INDEX或INDEX关键字 | INDEX权限 | 资源权限和CREATE权限 | INDEX权限 | CREATE权限 |
+| **创建函数** | CREATE FUNCTION或FUNCTION关键字 | CREATE ROUTINE权限 | Java函数的RESOURCE权限或DBA权限 | FUNCTION权限 | CREATE函数权限 |
+| **创建过程** | CREATE PROCEDURE或PROCEDURE关键字 | CREATE ROUTINE权限 | RESOURCE权限 | PROCEDURE权限 | CREATE函数权限 |
+| **删除对象（表、索引、函数、过程）** | DROP &lt; object >或对象相关关键字 | DROP权限 | 拥有对象或DBA权限 | DROP权限 | 拥有对象 |
+| **监视执行** | 使用EXPLAIN语句不需要特权 | SELECT权限 | 只有系统管理员可以执行sp_showplan | 使用EXPLAIN语句不需要特权 | 使用EXPLAIN语句不需要特权 |
+| **写入数据** | INSERT and UPDATE权限 | INSERT and UPDATE权限 | INSERT和UPDATE权限 | INSERT and UPDATE权限 | INSERT and UPDATE权限 |
+| **将数据加载到表中** | SELECT和INSERT权限分别使用COPY TO和COPY FROM语句 | FILE权限 | 是表的所有者或ALTER权限。 根据 — gl选项的不同，可能只有在用户具有DBA权限时才执行LOAD TABLE | SELECT和INSERT权限 | SELECT和INSERT权限 |
+| **访问客户端数据** | SELECT权限 | 选择权限 | SELECT权限 | SELECT权限 |
+| **访问元数据** | 显示权限 | SELECT权限 | 使用DESCRIBE语句无需权限 | 使用“\d table”命令不需要权限 | 使用SHOW命令不需要任何特权 |

@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '1077'
 ht-degree: 3%
@@ -89,7 +89,7 @@ ht-degree: 3%
 
 1. 安装Adobe Campaign服务器后，使用命令启动应用程序服务器(web) **nlserver web -tomcat** （通过Web模块，您可以以独立Web服务器模式在端口8080上侦听以启动Tomcat），并确保Tomcat正确启动：
 
-   ```
+   ```sql
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    12:08:18 >   Starting Web server module (pid=28505, tid=-1225184768)...
    12:08:18 >   Tomcat started
@@ -191,7 +191,7 @@ ht-degree: 3%
    >
    >从20.1开始，我们建议改使用以下命令（对于Linux）： **systemctl启动nlserver**
 
-   ```
+   ```sql
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    syslogd@default (7611) - 9.2 MB
    stat@demo (5988) - 1.5 MB

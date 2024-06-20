@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7 产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: b74ae2335fa5ba7a2cc4c3a0fdb375d7698dcd81
-workflow-type: ht
-source-wordcount: '346'
-ht-degree: 100%
+source-git-commit: fb19195c7331a2adc0bcf7a37ae7678078dce5e6
+workflow-type: tm+mt
+source-wordcount: '353'
+ht-degree: 91%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 100%
 >[!BEGINTABS]
 
 
->[!TAB 12 月版本已上线！]
+>[!TAB 6月版已上线！]
 
-了解 Campaign Classic v7.3.5 中的更新、改进和修补程序。
+了解Campaign Classicv7.4.1中的更新、改进和修补程序。
 
 [![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 为了加强安全和身份验证过程，Adobe Campaign 强烈建议将终端用户身份验证模式从登录/密码本机身份验证迁移到 Adobe Identity Management System (IMS)。
 
-[![image](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
+[![image](assets/do-not-localize/learn-more-button.svg)](technotes/using/ac-ims.md)
 
 
 >[!TAB 推送渠道更改]
@@ -113,4 +113,4 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
 
 ## 其他资源
 
-[错误消息列表](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans) - [Adobe Campaign 产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Compatibility matrix](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans){target="_blank"} - [Control Panel for Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}
+[错误消息列表](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans) - [Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [兼容性矩阵](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans){target="_blank"} - [Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}

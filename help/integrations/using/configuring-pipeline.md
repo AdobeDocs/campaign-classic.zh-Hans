@@ -7,9 +7,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -31,19 +31,17 @@ ht-degree: 1%
 * 具有组织访问权限的开发人员
 * Adobe Analytics中的有效触发器配置
 
-## 身份验证和配置文件 {#authentication-configuration}
-
-由于管道托管在Adobe Experience Cloud中，因此需要进行身份验证。 它使用一对公钥和私钥。 此进程与用户/密码具有相同的功能，但更加安全。 Marketing Cloud支持通过Adobe Developer项目进行身份验证。
+由于管道托管在Adobe Experience Cloud中，因此需要进行身份验证。 它使用通过Adobe Developer项目支持的身份验证。
 
 ## 步骤1：创建/更新您的Adobe Developer项目 {#creating-adobe-io-project}
 
-对于托管客户，请与您的Adobe代表/客户关怀团队合作，为贵组织启用Adobe Developer帐户令牌以进行Triggers集成。
+您必须为组织启用触发器集成的Adobe Developer帐户令牌。
 
-对于内部部署/混合部署客户，请参阅 [为Adobe Experience Cloud Triggers配置Adobe I/O](../../integrations/using/configuring-adobe-io.md) 页面。 请注意，您需要选择 **[!UICONTROL Adobe Analytics]** 将API添加到Adobe Developer凭据时。
+了解如何在中创建您的Adobe技术帐户 [此页面](../../integrations/using/oauth-technical-account.md). 请注意，您需要选择 **[!UICONTROL Adobe Analytics]** 将API添加到Adobe Developer凭据时。
 
 ## 步骤2：配置管道选项 {#configuring-nmspipeline}
 
-设置身份验证后，管道将检索事件。 它只会处理在Adobe Campaign中配置的触发器。 触发器必须从Adobe Analytics生成，并推送到管道，该管道仅处理在Adobe Campaign中配置的触发器。
+设置身份验证后，管道将检索事件。 它仅处理Adobe Campaign中配置的触发器。 触发器必须从Adobe Analytics生成，并推送到管道，该管道仅处理在Adobe Campaign中配置的触发器。
 
 也可以使用通配符配置选项，以捕获所有触发器，而不管其名称如何。
 
@@ -51,7 +49,7 @@ ht-degree: 1%
 
 1. 选择 **[!UICONTROL NmsPipeline_Config]** 选项。
 
-1. 在 **[!UICONTROL Value (long text)]** 字段中，可以粘贴以下JSON代码，该代码指定了两个触发器。 您需要确保删除注释。
+1. 在 **[!UICONTROL Value (long text)]** 字段中，可以粘贴以下JSON代码，该代码指定了两个触发器。 确保删除注释。
 
    ```json
    {
@@ -111,7 +109,7 @@ ht-degree: 1%
 * 该 `pipelined`进程还支持“别名”主题。
 * 您应始终重新启动 `pipelined`进行更改后的进程。
 
-## 步骤3：可选配置 {#step-optional}
+## （可选）步骤3：其他配置 {#step-optional}
 
 您可以根据负载要求更改某些内部参数，但请确保在将它们应用于生产环境之前对其进行测试。
 

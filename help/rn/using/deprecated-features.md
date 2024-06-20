@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '1551'
-ht-degree: 100%
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+workflow-type: tm+mt
+source-wordcount: '1637'
+ht-degree: 93%
 
 ---
 
@@ -43,16 +43,21 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <td><strong>功能</strong></td>
    <td><strong>详细信息</strong></td>
   </tr>
+  <tr>
+ <td>Campaign (Neolane)旧版SDK</td>
+ <td><p>现已弃用适用于移动应用程序的Campaign (Neolane) SDK。 请通过在数据收集UI中配置Adobe Experience Platform扩展来使用Adobe Campaign Mobile SDK。 Adobe Experience Platform Mobile SDK有助于在移动设备应用程序中支持Adobe的Experience Cloud解决方案和服务。 SDK配置通过数据收集UI进行管理，以实现灵活配置和基于规则的可扩展集成。 了解如何在中配置移动应用程序渠道 <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8文档</a>.</p>
+<p>目标移除日期：2024 年底 </p>
+</td>
+</tr>
 <tr>
  <td>通过 Facebook 进行社交媒体营销</td>
- <td>通过 Facebook 进行社交媒体营销的功能现已弃用。您可以使用 X（以前称为 Twitter）集成在社交媒体上发布内容，或与 Adobe 合作创建自定义渠道。
- <p></p>
+ <td><p>通过 Facebook 进行社交媒体营销的功能现已弃用。您可以使用 X（以前称为 Twitter）集成在社交媒体上发布内容，或与 Adobe 合作创建自定义渠道。</p>
   <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
 <tr>
  <td>ACS 连接器</td>
- <td>ACS 连接器（高级服务）现已弃用。您可以使用 Campaign 的导出/导入功能来从两款产品中提取数据或向其中插入数据。<p></p>
+ <td><p>ACS 连接器（高级服务）现已弃用。您可以使用 Campaign 的导出/导入功能来从两款产品中提取数据或向其中插入数据。</p>
   <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
@@ -72,7 +77,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
       <tr>
   <td>Adobe Analytics Data Connector<br></td>
    <td><p>已于 2022 年 8 月 17 日删除 Adobe Analytics Data Connector。 Campaign 21.1.3 版本已将其弃用。</p>
-   <p>如果您使用的是此连接器，则需要相应地调整实施。<a href="../../platform/using/gs-aa.md">了解详情</a></p>
+   <p>如果您使用的是此连接器，则需要相应地调整实施。<a href="../../integrations/using/gs-aa.md">了解详情</a></p>
   </td>
  </tr>
     <tr>
@@ -83,8 +88,8 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
  </tr>
   <tr>
   <td>OAuth 身份验证（OAuth 和 JWT）<br></td>
-  <td><p> 最初基于 oAUTH 身份验证设置、用于访问管道的触发器集成身份验证现已更改，并移至 Adobe I/O。Campaign 20.3 版本已弃用此身份验证模式。<p>
-  <p>如果正在使用触发器集成，请在<a href="../../integrations/using/configuring-adobe-io.md">本页</a>了解如何调整实施。</p> 
+  <td><p> 最初基于OAuth身份验证设置来访问管道的Triggers集成身份验证现已更改并移至Adobe I/O。Campaign 20.3版本已弃用此身份验证模式。<p>
+  <p>如果正在使用触发器集成，请在<a href="../../integrations/using/about-triggers.md#implement">本页</a>了解如何调整实施。</p> 
   <p>有关 Oauth 身份验证折旧的详细信息，请参阅此<a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">页面</a></p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
   </td>

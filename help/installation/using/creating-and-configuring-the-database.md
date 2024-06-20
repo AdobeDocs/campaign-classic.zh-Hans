@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1306'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Campaign中列出了受支持的数据库 [兼容性矩阵](../../rn/using/compa
 根据所选数据库引擎，服务器标识信息可能会有所不同。
 
 * 对于 **oracle** 引擎，填充 **TNS名称** 已为应用程序服务器定义。
-* 对于 **PostgreSQL** 或 **DB2** 引擎，必须指定在应用程序服务器上定义的DNS名称（或IP地址）才能访问数据库服务器。
+* 对于 **PostgreSQL** 引擎，必须指定在应用程序服务器上定义的DNS名称（或IP地址）才能访问数据库服务器。
 * 对于 **Microsoft SQL Server** 引擎，则必须定义：在应用程序服务器上定义的DNS名称（或IP地址）以访问数据库服务器： **DNS** 或 **DNS`\<instance>`** （实例模式），
 
   >[!CAUTION]
@@ -78,7 +78,6 @@ Campaign中列出了受支持的数据库 [兼容性矩阵](../../rn/using/compa
 * **系统** 对于Oracle数据库，
 * **sa** 对于Microsoft SQL Server数据库，
 * **postgres** 对于PostgreSQL数据库，
-* **db2inst1** DB2数据库。
 
 ### 步骤3 — 数据库的连接和特征 {#step-3---connection-and-characteristics-of-the-database}
 
@@ -89,11 +88,6 @@ Campaign中列出了受支持的数据库 [兼容性矩阵](../../rn/using/compa
 您需要定义以下设置：
 
 * 指定要创建的数据库的名称。
-
-  >[!NOTE]
-  >
-  >对于DB2数据库，数据库的名称不能超过8个字符。
-
 * 输入链接到该数据库的帐户的密码。
 * 指示数据库是否必须采用Unicode。
 
@@ -182,7 +176,7 @@ Campaign中列出了受支持的数据库 [兼容性矩阵](../../rn/using/compa
 根据所选数据库引擎，服务器标识信息可能会有所不同。
 
 * 对于 **oracle** 引擎，填充 **TNS名称** 已为应用程序服务器定义。
-* 对于 **PostgreSQL** 或 **DB2** 引擎，必须指定在应用程序服务器上定义的DNS名称（或IP地址）才能访问数据库服务器。
+* 对于 **PostgreSQL** 引擎，必须指定在应用程序服务器上定义的DNS名称（或IP地址）才能访问数据库服务器。
 * 对于 **Microsoft SQL Server** 引擎，您必须定义：
 
    1. 在应用程序服务器上定义用于访问数据库服务器的DNS名称（或IP地址），

@@ -7,16 +7,18 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 4e99ec73f99264e91ca427542e29bd42da88a3f9
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
 
 # 创建和管理操作员组 {#operator-groups}
 
-
+>[!NOTE]
+>
+>这些步骤仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证的信息，请参阅 [本文档](https://helpx.adobe.com/cn/enterprise/using/user-groups.html).
 
 操作员组是通过 **[!UICONTROL Administration > Access management > Operator groups]** 树中的节点。
 

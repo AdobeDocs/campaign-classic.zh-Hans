@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: c736ac1cda9490548f1e4b56142d61fccaca5c4a
-workflow-type: ht
-source-wordcount: '3764'
-ht-degree: 100%
+source-git-commit: 98859f6452b5f1008a19a48b9b77edd9acf49261
+workflow-type: tm+mt
+source-wordcount: '3746'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 100%
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
 
 ## 2024
+
+### 2024 年 6 月 {#june-2024}
+
+已添加注释，以指定在重新启动工作流时如何清除实例变量。 [了解更多信息](../../workflow/using/starting-a-workflow.md)
 
 ### 2024 年 4 月 {#apr-2024}
 
@@ -78,7 +82,7 @@ JWT（JSON Web 令牌）目前正在被逐步停用，它将被 OAuth 取代。�
 
 ## 2022 年 7 月 {#july-2022}
 
-有关过渡到新的可交付性服务器的详情，请参阅新技术说明。[了解更多信息](../../technotes/using/deliverability-server.md)
+<!--Transition to the new deliverability server is detailed in a new technote. [Read more](../../technotes/using/deliverability-server.md)-->
 
 **随 7.3.1 版提供的文档更新**
 
@@ -151,11 +155,9 @@ CentOs 8 的生命周期已终止，现已在 Adobe Campaign Classic 中弃用�
 
 更新了 CRM 连接器部署的迁移过程日志详细信息。[了解更多信息](../../migration/using/testing-the-migration.md#verification-process)
 
-添加了有关实施 Adobe Campaign-Adobe Analytics 集成的 IMS 权限的要求。[了解更多信息](../../platform/using/adobe-analytics-provisioning.md)
+添加了有关实施 Adobe Campaign-Adobe Analytics 集成的 IMS 权限的要求。[了解更多信息](../../integrations/using/adobe-analytics-provisioning.md)
 
 将 Adobe Analytics 数据连接器的生命周期终止日期从 2022 年 3 月 1 日更新为 2022 年 8 月 17 日。[了解更多信息](deprecated-features.md)
-
-添加了 Adobe Experience Platform 移动 SDK 文档的链接，以了解如何在 Adobe Launch 中配置 Campaign 扩展程序。[了解更多信息](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
 
 添加了有关如何使用 JavaScript 计算值、交换数据以及使用 SOAP 调用执行特定操作的部分。[了解更多信息](../../workflow/using/javascript-scripts-and-templates.md)
 
@@ -346,7 +348,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 [!DNL Gold Standard] 版本的发行说明和兼容性矩阵现在可在专门页面中获取。
 [阅读更多](../../rn/using/gold-standard.md)。
 
-最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成现已更改并移至 Adobe I/O。[阅读更多](../../integrations/using/configuring-adobe-io.md)
+最初基于 oAUTH 身份验证设置来访问管道的 Triggers 集成现已更改并移至 Adobe I/O。[阅读更多](../../integrations/using/about-triggers.md#implement)
 
 **其他更新**
 

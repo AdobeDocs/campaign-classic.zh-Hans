@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 * 在中检查您的系统和工具与Adobe Campaign的兼容性 [兼容性矩阵](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 * 获取Campaign服务器URL
 * 获取您的用户凭据
-* 在您的系统上安装Microsoft Edge Webview2运行时(来自Campaign Classic7.3内部版本号)。 [了解详情](#webview)
+* 在您的系统上安装Microsoft Edge Webview2运行时(来自Campaign Classic7.3内部版本号)。 [了解更多信息](#webview)
 
 安装或更新客户端控制台的过程因您实施的Adobe Campaign Classic而异。
 请查看以下详细信息以了解实施所需的内容。

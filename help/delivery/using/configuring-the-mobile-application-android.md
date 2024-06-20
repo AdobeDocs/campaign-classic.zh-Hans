@@ -5,10 +5,10 @@ description: 了解如何为Android设置移动应用程序
 feature: Push
 role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 11%
+source-wordcount: '837'
+ht-degree: 10%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 11%
 
    ![](assets/nmac_android.png)
 
-1. 确保相同 **[!UICONTROL Integration key]** 在Adobe Campaign中以及通过SDK在应用程序代码中定义。 如需详细信息，请参阅[此小节](integrating-campaign-sdk-into-the-mobile-application.md)。
+1. 确保相同 **[!UICONTROL Integration key]** 在Adobe Campaign中以及通过SDK在应用程序代码中定义。 <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
 
    >[!NOTE]
    >
@@ -156,4 +156,4 @@ ht-degree: 11%
 
    >[!CAUTION]
    >
-   >请确保 **[!UICONTROL Subscription parameters]** 选项卡与移动应用程序代码中的选项卡相同。 请参阅[此小节](integrating-campaign-sdk-into-the-mobile-application.md)。
+   >请确保 **[!UICONTROL Subscription parameters]** 选项卡与移动应用程序代码中的选项卡相同。 <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->

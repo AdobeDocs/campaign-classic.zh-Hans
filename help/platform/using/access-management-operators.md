@@ -7,9 +7,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1259'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,11 @@ ht-degree: 2%
 >进行此迁移后，请注意，以下部分不再适用。  了解如何在中使用Adobe IMS设置权限 [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hans){target="_blank"}.
 
 
-## Campaign操作员入门  {#about-operators}
+## Campaign操作员入门 {#about-operators}
+
+>[!NOTE]
+>
+>这些步骤仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证的信息，请参阅 [本文档](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
 
 操作员是具有登录和执行操作权限的Adobe Campaign用户。
 

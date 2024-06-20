@@ -8,18 +8,16 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '501'
 ht-degree: 2%
 
 ---
 
-# 配置对资产的访问权限{#configuring-access-to-assets}
+# 配置对资产的访问权限 {#configuring-access-to-assets}
 
-
-
-此部分详细介绍在Adobe Campaign中使用与Assets核心服务或Adobe Experience Manager Assets (AEM Assets)库集成的功能所需的配置步骤。
+此部分详细介绍在Adobe Campaign中使用与Assets或Adobe Experience Manager Assets (AEM Assets)库的集成功能所需的配置步骤。
 
 >[!CAUTION]
 >

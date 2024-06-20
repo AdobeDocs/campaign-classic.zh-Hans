@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 3%
@@ -89,7 +89,7 @@ ht-degree: 3%
 
 1. 安装Adobe Campaign服务器后，使用命令启动应用程序服务器(web) **nlserver web -tomcat** （通过Web模块，您可以以独立Web服务器模式在端口8080上侦听以启动Tomcat），并确保Tomcat正确启动：
 
-   ```
+   ```sql
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    12:08:18 >   Starting Web server module (pid=28505, tid=-1225184768)...
    12:08:18 >   Tomcat started
@@ -136,7 +136,7 @@ ht-degree: 3%
 
 1. 编辑 **config-demo.xml** 文件(通过上一命令创建，位于 **config-default.xml** 文件)，检查 **mta** （投放）， **wfserver** （工作流）， **inMail** （回弹邮件）和 **stat** (statistics)启用进程，然后配置进程的 **应用程序** 统计服务器：
 
-   ```
+   ```xml
    <?xml version='1.0'?>
    <serverconf>  
      <shared>    
@@ -156,7 +156,7 @@ ht-degree: 3%
 
 1. 编辑 **serverConf.xml** 文件并指定投放域，然后指定MTA模块用于响应MX类型DNS查询的DNS服务器的IP（或主机）地址。
 
-   ```
+   ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
    ```
 
@@ -175,7 +175,7 @@ ht-degree: 3%
    >从20.1开始，我们建议改使用以下命令（对于Linux）： **systemctl启动nlserver**
 
 
-   ```
+   ```sql
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    syslogd@default (7611) - 9.2 MB
    stat@demo (5988) - 1.5 MB
@@ -214,7 +214,7 @@ ht-degree: 3%
 
 1. 编辑 **config-demo.xml** 文件(通过上一命令创建，位于 **config-default.xml** 文件)，检查 **mta** （投放）， **wfserver** （工作流）， **inMail** （回弹邮件）和 **stat** (statistics)启用进程，然后配置进程的 **应用程序** 统计服务器：
 
-   ```
+   ```xml
    <?xml version='1.0'?>
    <serverconf>  
      <shared>    
@@ -234,7 +234,7 @@ ht-degree: 3%
 
 1. 编辑 **serverConf.xml** 文件和填充MTA模块的DNS配置：
 
-   ```
+   ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
    ```
 
@@ -266,7 +266,7 @@ ht-degree: 3%
 1. 复制 **config-demo.xml** 和 **serverConf.xml** 文件是在安装期间创建的。 在 **config-demo.xml** 文件，激活 **trackinglogd** 处理并取消激活 **mta**， **inmail**， **wfserver** 和 **stat** 进程。
 1. 编辑 **serverConf.xml** 并在重定向的参数中填充冗余跟踪服务器：
 
-   ```
+   ```xml
    <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
    <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
    ```
@@ -275,13 +275,13 @@ ht-degree: 3%
 
    浏览器应显示以下消息（具体取决于负载平衡器重定向的URL）：
 
-   ```
+   ```xml
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv1"/>
    ```
 
    或者
 
-   ```
+   ```xml
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv2"/>
    ```
 

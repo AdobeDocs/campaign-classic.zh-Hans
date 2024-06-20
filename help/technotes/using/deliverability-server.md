@@ -3,10 +3,12 @@ product: campaign
 title: 更新到新的可投放性服务器
 description: 了解如何更新到新的Campaign可投放性服务器
 feature: Technote, Deliverability
+hide: true
+hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 514f390b5615a504f3805de68f882af54e0c3949
+source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -50,9 +52,9 @@ ht-degree: 1%
 >
 > Adobe已弃用服务帐户(JWT)凭据，Campaign与Adobe解决方案和应用程序的集成现在必须依赖OAuth服务器到服务器凭据。 </br>
 >
-> * 如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如中所述 [本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). 现有服务账户(JWT)凭证将继续使用至2025年1月27日。 此外，从2024年6月3日开始，在开发人员控制台中创建新的服务帐户(JWT)凭据不再可能。 在此日期之后，无法创建新的服务帐户(JWT)凭据或将其添加到项目中。 </br>
+> * 如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如中所述 [本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). 现有服务账户(JWT)凭证将继续使用至2025年1月27日。 </br>
 >
-> * 如果您实施了叫客集成，如Campaign-Analytics集成或Experience Cloud Triggers集成，则在2025年1月27日之前它们将继续工作。 但是，在该日期之前，您必须将Campaign环境升级到v7.4.1，并将技术帐户迁移到oAuth。 自2024年6月3日起，在开发人员控制台中不再可能创建新的服务帐户(JWT)凭据，因此，在此日期之后，您无法依赖JWT创建新的出站集成
+> * 如果您实施了叫客集成，如Campaign-Analytics集成或Experience Cloud Triggers集成，则在2025年1月27日之前它们将继续工作。 但是，在该日期之前，您必须将Campaign环境升级到v7.4.1，并将技术帐户迁移到oAuth。
 
 ### 先决条件{#prerequisites}
 
@@ -85,69 +87,13 @@ ht-degree: 1%
 
 ### 步骤1：创建/更新您的Adobe Developer项目 {#adobe-io-project}
 
-1. 访问 [Adobe Developer控制台](https://developer.adobe.com/console/home) 并使用贵组织的开发人员访问权限登录。 确保您已登录到正确的组织门户。
-   **注意**：如果您有多个组织，请确保选择正确的组织。 了解有关组织的更多信息 [本页内容](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
-1. 选择 **[!UICONTROL Create new project]**。
-   ![](assets/New-Project.png)
+要继续配置Adobe Analytics连接器，请访问Adobe Developer控制台并创建您的OAuth服务器到服务器项目。
 
-   >[!CAUTION]
-   >
-   >如果您已在将AdobeIO JWT身份验证功能用于其他集成，例如Analytics连接器或Adobe触发器，则必须通过添加以下内容来更新项目 **Campaign API** 加入那个项目。
-
-1. 选择 **[!UICONTROL Add API]**.
-   ![](assets/Add-API.png)
-1. 在 **[!UICONTROL Add an API]** 窗口，选择 **[!UICONTROL Adobe Campaign]**.
-   ![](assets/AC-API.png)
-1. 如果您的客户端ID为空，请选择 **[!UICONTROL Generate a key pair]** 创建公钥和私钥对。
-   ![](assets/Generate-a-key-pair.png)
-
-   随后，这些密钥将自动下载，默认到期日期为365天。 过期后，您将需要创建新密钥对并在配置文件中更新集成。 利用选项2，您可以选择手动创建和上传 **[!UICONTROL Public key]** 到期日期更长的。
-   ![](assets/New-key-pair.png)
-
-   >[!CAUTION]
-   >
-   >您应该保存 `config.zip` 文件下载提示出现，因为您将无法再次下载。
-
-1. 单击 **[!UICONTROL Next]**。
-1. 选择任何现有的 **[!UICONTROL Product profile]** 或根据需要创建一个新版本。 无需权限 **[!UICONTROL Product profile]**. 有关的详细信息 **[!UICONTROL Product Profiles]**，请参阅 [此页面](https://helpx.adobe.com/enterprise/using/manage-developers.html){_blank}.
-   ![](assets/Product-Profile-API.png)
-
-   然后，单击 **[!UICONTROL Save configured API]**.
-
-1. 从项目中，选择 **[!UICONTROL Adobe Campaign]** 并将以下信息复制到 **[!UICONTROL Service Account (JWT)]**
-
-   ![](assets/Config-API.png)
-
-   * **[!UICONTROL Client ID]**
-   * **[!UICONTROL Client Secret]**
-   * **[!UICONTROL Technical account ID]**
-   * **[!UICONTROL Organization ID]**
-
->[!CAUTION]
->
->Adobe Developer证书将在12个月后过期。 您需要每年生成一个新的密钥对。
+请参阅 [此页面](../../integrations/using/oauth-technical-account.md#oauth-service) 以了解详细文档。
 
 ### 步骤2：在Adobe Campaign中添加项目凭据 {#add-credentials-campaign}
 
-私钥应采用base64 UTF-8格式编码。
-
-为实现此操作，请执行以下步骤：
-
-1. 使用上述步骤中生成的私钥。
-1. 使用以下命令对私钥进行编码： `base64 ./private.key > private.key.base64`. 这会将base64内容保存到新文件中 `private.key.base64`.
-
-   >[!NOTE]
-   >
-   >复制/粘贴私钥时，有时可以自动添加额外的行。 在编码私钥之前，请记得删除它。
-
-1. 复制文件中的内容 `private.key.base64`.
-1. 通过SSH登录到安装了Adobe Campaign实例的每个容器，并通过运行以下命令（如下所示）在Adobe Campaign中添加项目凭据 `neolane` 用户。 这将插入 **[!UICONTROL Technical Account]** 实例配置文件中的凭据。
-
-   ```sql
-   nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
-   ```
-
-1. 您必须停止然后重新启动服务器，以便考虑修改。 您还可以运行 `config -reload` 命令。
+请按照中详述的步骤操作 [此页面](../../integrations/using/oauth-technical-account.md#add-credentials) 以在Adobe Campaign中添加您的OAuth项目凭据。
 
 ### 步骤3：验证配置
 

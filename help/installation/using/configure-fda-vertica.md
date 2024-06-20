@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: 配置对Vertica analytics的访问权限
-description: 了解如何在FDA中配置对Vertica analytics的访问权限
+title: 配置对  [!DNL Vertica Analytics] 的访问
+description: 了解如何配置对的访问权限 [!DNL Vertica Analytics] 在FDA中
 feature: Installation, Federated Data Access
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: fcc42e84817277ad46218165b5acef370747c1ca
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 0%
+source-wordcount: '355'
+ht-degree: 1%
 
 ---
 
-# 配置对Vertica analytics的访问权限 {#configure-fda-vertica}
+# 配置对的访问权限 [!DNL Vertica Analytics] {#configure-fda-vertica}
 
 
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ![](assets/snowflake_3.png)
 
-## CentOS上的Vertica analytics {#vertica-centos}
+## [!DNL Vertica Analytics] 在CentOS上 {#vertica-centos}
 
 配置 [!DNL Vertica Analytics] 在CentOS上，执行以下步骤：
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 1. 然后，您可以在Adobe Campaign中配置 [!DNL Vertica Analytics] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [本节](#vertica-external).
 
-## Windows上的Vertica analytics {#vertica-windows}
+## [!DNL Vertica Analytics] 在Windows上 {#vertica-windows}
 
 1. 下载 [适用于Windows的ODBC驱动程序](https://www.vertica.com/download/vertica/client-drivers/). 要安装Windows驱动程序，您需要启用.NET Framework 3.5，否则安装向导将尝试自动启用并下载它。
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 1. 然后，您可以在Adobe Campaign中配置 [!DNL Vertica Analytics] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [本节](#vertical-external).
 
-## DebianVertica analytics {#vertica-debian}
+## [!DNL Vertica Analytics] 关于Debian {#vertica-debian}
 
 1. 下载的ODBC驱动程序 [!DNL Vertica Analytics]. [单击此处](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) 开始下载。
 
@@ -141,7 +141,7 @@ ht-degree: 0%
 
 1. 然后，您可以在Adobe Campaign中配置 [!DNL Vertica Analytics] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [本节](#vertica-external).
 
-## vertica analytics外部帐户 {#vertica-external}
+## [!DNL Vertica Analytics] 外部帐户 {#vertica-external}
 
 您需要创建 [!DNL Vertica Analytics] 用于将Campaign实例连接到 [!DNL Vertica Analytics] 外部数据库。
 

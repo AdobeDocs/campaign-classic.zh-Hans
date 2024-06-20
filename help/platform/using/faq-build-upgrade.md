@@ -7,15 +7,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 991ad88101468c3e7f5d676586dfdd05d63e7c6d
+source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2026'
 ht-degree: 0%
 
 ---
 
 # 内部版本升级常见问题解答 {#build-upgrade-faq}
-
 
 
 Adobe Campaign 会定期更新。如果您熟悉我们发布的 [发行说明](../../rn/using/rn-overview.md)，您可能已经意识到每年平均会发布三分之二包含新增功能、改进和修复的次要版本。 此外，我们还定期发布仅包含累积修复的内部版本。 这种定期更新的目的是为了让您掌握最新、最充分的信息，保持环境的完全安全，并明显改善您对我们产品的体验。
@@ -136,7 +135,7 @@ Adobe将在进行任何更改之前备份系统。 但是，如果您的非生�
 
 ## 升级期间我的跟踪链接是否仍然有效？
 
-在升级期间，已发送电子邮件上的跟踪链接将无法正常运行，因为所有服务器都已停止。 升级完成且服务器重新启动后，它们将再次运行。
+从Campaign Classicv7.3.5开始，在升级期间跟踪已发送电子邮件上的链接仍然有效。
 
 ## 在内部版本升级过程中是否需要我可用？
 

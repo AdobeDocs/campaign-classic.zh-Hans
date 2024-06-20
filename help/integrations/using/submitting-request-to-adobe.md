@@ -2,34 +2,32 @@
 product: campaign
 title: 向Adobe提交请求
 description: 向Adobe提交请求
-feature: Audiences, People Core Service Integration
+feature: Audiences
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '130'
 ht-degree: 2%
 
 ---
 
 # 向Adobe提交请求{#submitting-request-to-adobe}
 
-
-
 >[!NOTE]
 >
 >作为v7用户，为了能够继续下一步操作，请确保在您的系统上启用了AdobeIdentity Management System (IMS) 。 [了解详情](../../integrations/using/about-adobe-id.md)。
 
-为您的组织启用IMS后，您可以请求配置人员核心服务/Audience Manager与Campaign的集成。 为此，请发送电子邮件至 [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) ，并提供以下信息：
+为您的组织启用AdobeIdentity Management服务(IMS)后，您可以请求配置 [Experience Cloud受众](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} 与Campaign集成。 为此，请发送电子邮件至 [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) ，并提供以下信息：
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>请求类型</strong><br /> </td> 
-   <td> 配置AAM/People核心服务 — Campaign集成 </td> 
+   <td> 配置Audience - Campaign集成 </td> 
   </tr> 
   <tr> 
    <td> <strong>组织名称</strong><br /> </td> 
@@ -43,10 +41,10 @@ ht-degree: 2%
    <td> <strong>环境</strong><br /> </td> 
    <td> 示例：生产 </td> 
   </tr> 
-  <tr> 
-   <td> <strong>AAM或人员服务</strong><br /> </td> 
-   <td> 示例：Adobe Audience Manager。 请务必说明您是否拥有Audience Manager许可证。</td> 
-  </tr> 
+  <!--tr> 
+   <td> <strong>AAM or People Service</strong><br /> </td> 
+   <td> Example: Adobe Audience Manager. Make sure to mention whether or not you own Audience Manager license.</td> 
+  </tr--> 
   <tr> 
    <td> <strong>声明的ID或访客ID</strong><br /> </td> 
    <td> 示例：声明的ID </td> 

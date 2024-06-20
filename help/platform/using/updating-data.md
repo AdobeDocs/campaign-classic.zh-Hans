@@ -7,16 +7,18 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 34%
+source-wordcount: '717'
+ht-degree: 33%
 
 ---
 
 # 更新数据{#updating-data}
 
-
+>[!NOTE]
+>
+>此页面仅适用于使用本机身份验证连接到Campaign的操作员。
 
 可以手动或自动更新已链接至收件人用户档案的数据。
 

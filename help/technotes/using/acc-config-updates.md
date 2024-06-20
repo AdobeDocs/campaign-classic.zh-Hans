@@ -6,7 +6,7 @@ feature: Technote, Upgrade
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 8%
@@ -38,8 +38,8 @@ ht-degree: 8%
 
 如果您的环境所在的内部版本低于下面列出的内部版本，则您将受到影响：
 
-* Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
-* Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
+* Gold Standard 11。 [了解更多信息](../../rn/using/gold-standard.md)
+* Campaign 21.1.1版本。 [了解更多信息](../../rn/using/latest-release.md)
 * Campaign 20.2.5版本。
 * Campaign 20.1.4版本。
 * Campaign 19.2.4版本。
@@ -66,7 +66,7 @@ ht-degree: 8%
 
 此 **现已推出** 应安装以下控制台版本以解决最近发现的回归。 这种回归方法禁止使用客户端控制台的某些组件，如投放中的日期选取器和图像管理。 **控制台升级** 为必填项。
 
-* 最新的Gold Standard 11内部版本9032@10c2709。 [了解详情](../../rn/using/gold-standard.md)
+* 最新的Gold Standard 11内部版本9032@10c2709。 [了解更多信息](../../rn/using/gold-standard.md)
 * Campaign 20.1.4版本。
 * Campaign 19.2.4版本。
 * Campaign 19.1.8版本。
@@ -81,8 +81,8 @@ Adobe标识服务(IMS)将从以下位置停止支持旧的Internet Explorer版�
 
 如果您要连接到Campaign [通过Adobe ID](../../integrations/using/about-adobe-id.md)通过AdobeIdentity Management服务(IMS)，必须升级到下面列出的新版本之一：
 
-* Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
-* Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
+* Gold Standard 11。 [了解更多信息](../../rn/using/gold-standard.md)
+* Campaign 21.1.1版本。 [了解更多信息](../../rn/using/latest-release.md)
 * Campaign 20.2.5版本。
 * Campaign 20.1.4版本。
 * Campaign 19.2.4版本。
@@ -114,8 +114,8 @@ Adobe标识服务(IMS)将从以下位置停止支持旧的Internet Explorer版�
 
 必须升级到下列新版本之一：
 
-* Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
-* Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
+* Gold Standard 11。 [了解更多信息](../../rn/using/gold-standard.md)
+* Campaign 21.1.1版本。 [了解更多信息](../../rn/using/latest-release.md)
 * Campaign 20.2.5版本。
 * Campaign 19.1.8版本。
 
@@ -123,17 +123,17 @@ Adobe标识服务(IMS)将从以下位置停止支持旧的Internet Explorer版�
 
 **如何更新？**
 
-一旦实例升级到较新版本，所有客户就需要遵循 [过程移至新身份验证模式](../../integrations/using/configuring-adobe-io.md). 这需要您生成新的Adobe I/O令牌并在实施中使用它。  
+一旦实例升级到较新版本，所有客户就需要遵循 [过程移至新身份验证模式](../../integrations/using/about-triggers.md#implement). 这需要您生成新的Adobe I/O令牌并在实施中使用它。  
 
 此外，对于混合环境，客户需要确保在中间源实例上配置管道。 [了解详情](../../integrations/using/configuring-pipeline.md)。
 
-[了解如何迁移到Adobe I/O](../../integrations/using/configuring-adobe-io.md).
+[了解如何迁移到Adobe I/O](../../integrations/using/about-triggers.md#implement).
 
 ## APNs更新 {#acc-apns-updates}
 
 ### 基于HTTP/2的APNs提供程序API
 
-从 **2021年3月31日**，Apple推送通知服务(APN)不再支持旧版二进制协议。 [阅读更多](https://developer.apple.com/news/?id=c88acm2b)。
+从 **2021年3月31日**，Apple推送通知服务(APN)不再支持旧版二进制协议。 [了解更多信息](https://developer.apple.com/news/?id=c88acm2b)。
 
 **您是否受影响？**
 

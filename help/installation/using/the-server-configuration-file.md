@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '8068'
+source-wordcount: '8067'
 ht-degree: 3%
 
 ---
@@ -337,7 +337,7 @@ Adobe Campaign的整体配置在中定义 **serverConf.xml** 文件，位于 **�
   </tr> 
   <tr> 
    <td> 提供程序<br /> </td> 
-   <td> 类型（枚举）。 可能的值包括“Oracle”、“MSSQL”(Microsoft SQL Server)、“PostgreSQL”(PostgreSQL)、“Teradata”、“DB2”、“MySQL”、“Netezza”、“AsterData”、“SAPHANA”(SAP HANA)、“RedShift”(Amazon Redshift)、“ODBC”(ODBC(Sybase ASE、Sybase IQ))、“中继”（到远程数据库的HTTP中继）。<br /> </td> 
+   <td> 类型（枚举）。 可能的值包括“Oracle”、“MSSQL”(Microsoft SQL Server)、“PostgreSQL”(PostgreSQL)、“Teradata”、“MySQL”、“Netezza”、“AsterData”、“SAPHANA”(SAP HANA)、“RedShift”(Amazon Redshift)、“ODBC”(ODBC(Sybase ASE，Sybase IQ)、“中继”（到远程数据库的HTTP中继）。<br /> </td> 
    <td> 字符串<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -2984,18 +2984,18 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 此 **web > jsp >类路径** 节点包含启动JVM时要使用的所有类路径的列表。 以下是默认配置：
 
 ```
-'$(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/bin/tomcat-juli.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat-coyote.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat-util.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/servlet-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/jsp-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/annotations-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/catalina.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/websocket-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat7-websocket.jar
+'$(XTK_INSTALL_DIR)/tomcat-X/bin/bootstrap.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/bin/tomcat-juli.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/tomcat-coyote.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/tomcat-util.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/tomcat-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/servlet-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/jsp-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/annotations-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/catalina.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/websocket-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-X/lib/tomcat7-websocket.jar
           $(XTK_INSTALL_DIR)/java/lib/pdfbox-2.0.4.jar
           $(XTK_INSTALL_DIR)/java/lib/FontBox-0.1.0.jar
           $(XTK_INSTALL_DIR)/java/lib/AGJavaEndpoint.22.jar

@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
-workflow-type: ht
-source-wordcount: '2548'
-ht-degree: 100%
+source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
+workflow-type: tm+mt
+source-wordcount: '2552'
+ht-degree: 99%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 100%
    + [升级入门](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
    + 之前版本 {#previous-releases}
+      + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
       + [2022](rn/using/release-2022.md)
       + [2021](rn/using/release-2021.md)
@@ -36,6 +37,7 @@ ht-degree: 100%
          + [Campaign UI 入门](platform/using/adobe-campaign-workspace.md)
          + [使用 Campaign Explorer](platform/using/adobe-campaign-explorer.md)
          + [浏览和自定义列表](platform/using/adobe-campaign-ui-lists.md)
+      + [Campaign连接器](platform/using/about-connectors.md)
       + 常见问题解答 {#faq}
          + [最常见问题](platform/using/common-questions.md)
          + [全局概念](platform/using/faq-key-concepts.md)
@@ -100,17 +102,11 @@ ht-degree: 100%
    + 数据包和明细列表{#administration-basics}
       + [数据包](platform/using/working-with-data-packages.md)
       + [明细列表](platform/using/managing-enumerations.md)
-   + 连接器 {#connectors}
-      + [关于连接器](platform/using/about-connectors.md)
-      + CRM 连接器{#crm-connectors}
-         + [CRM 连接器入门](platform/using/crm-connectors.md)
-         + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
-         + [与 Salesforce.com 连接](platform/using/crm-sfdc.md)
-         + [与 CRM 同步数据](platform/using/crm-data-sync.md)
-      + Adobe Analytics Connector{#analytics-connector}
-         + [Adobe Analytics Connector 入门](platform/using/gs-aa.md)
-         + [Adobe Analytics Connector 配置](platform/using/adobe-analytics-provisioning.md)
-         + [如何迁移到 Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
+   + CRM连接器 {#connectors}
+      + [CRM 连接器入门](platform/using/crm-connectors.md)
+      + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
+      + [与 Salesforce.com 连接](platform/using/crm-sfdc.md)
+      + [与 CRM 同步数据](platform/using/crm-data-sync.md)
    + [帮助和支持选项](support.md)
 + 创建和发送消息{#sending-messages}
    + [消息入门](delivery/using/communication-channels.md)
@@ -355,7 +351,21 @@ ht-degree: 100%
    + [用例：创建引用窗体](surveys/using/use-case-creating-a-refer-a-friend-form.md)
    + [用例：显示在线调查的答案报告](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + 与 Adobe Experience Cloud 集成 {#integrating-with-adobe-experience-cloud}
-   + [关于 Campaign 集成](integrations/using/about-campaign-integrations.md)
+   + [Campaign 集成入门](integrations/using/about-campaign-integrations.md)
+   + [创建您的Adobe技术帐户](integrations/using/oauth-technical-account.md)
+   + Adobe Experience Cloud 触发器 {#experience-triggers}
+      + [使用  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [配置管道](integrations/using/configuring-pipeline.md)
+      + [为自定义实施配置事件](integrations/using/events.md)
+      + [管道监测](integrations/using/pipeline-monitoring.md)
+      + [管道故障排除](integrations/using/pipeline-troubleshooting.md)
+   + Adobe Experience Platform Sources 与 Destinations{#aep-sources-destinations}
+      + [使用源和目标](integrations/using/get-started-sources-destinations.md)
+      + [将 Adobe Experience Platform 受众引入 Campaign](integrations/using/ingest-aep-data.md)
+      + [将数据从 Campaign 导出到 Adobe Experience Platform](integrations/using/export-campaign-data.md)
+   + Adobe Analytics Connector{#analytics-connector}
+      + [Adobe Analytics Connector 入门](integrations/using/gs-aa.md)
+      + [Adobe Analytics Connector 配置](integrations/using/adobe-analytics-provisioning.md)
    + 受众共享 {#audience-sharing}
       + [与  [!DNL Adobe Experience Cloud] 共享受众](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [向 Adobe 提交请求](integrations/using/submitting-request-to-adobe.md)
@@ -380,17 +390,6 @@ ht-degree: 100%
       + [同步受众](integrations/using/synchronizing-audiences.md)
       + [同步 Web 应用程序](integrations/using/synchronizing-web-applications.md)
       + [对  [!DNL ACS Connector] 进行故障排除](integrations/using/troubleshooting-the-acs-connector.md)
-   + Adobe Experience Cloud 触发器 {#experience-triggers}
-      + [使用  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
-      + [配置管道](integrations/using/configuring-pipeline.md)
-      + [为  [!DNL Experience Cloud Triggers] 配置 Adobe I/O](integrations/using/configuring-adobe-io.md)
-      + [为自定义实施配置事件](integrations/using/events.md)
-      + [管道监测](integrations/using/pipeline-monitoring.md)
-      + [管道故障排除](integrations/using/pipeline-troubleshooting.md)
-   + Adobe Experience Platform Sources 与 Destinations{#aep-sources-destinations}
-      + [使用源和目标](integrations/using/get-started-sources-destinations.md)
-      + [将 Adobe Experience Platform 受众引入 Campaign](integrations/using/ingest-aep-data.md)
-      + [将数据从 Campaign 导出到 Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
    + 工作流入门 {#introduction}
       + [关于工作流](workflow/using/about-workflows.md)
@@ -824,10 +823,12 @@ ht-degree: 100%
    + [回滚过程](migration/using/about-rollback.md)
 + 技术说明 {#technotes}
    + [硬件大小调整建议](technotes/using/hardware-sizing.md)
-   + [中间源基础架构的入站短信工作流活动](technotes/using/inbound-SMS.md)
+   + [中间源基础架构的入站短信工作流活动](technotes/using/inbound-sms-wf.md)
    + 升级到 IMS{#ims}
+      + [过渡到Adobe IMS](technotes/using/ac-ims.md)
       + [将用户迁移到 IMS](technotes/using/migrate-users-to-ims.md)
       + [将技术操作员迁移到 Developer Console](technotes/using/ims-migration.md)
+      + [IMS迁移后的界面影响](technotes/using/impact-ims-migration.md)
    + 升级和兼容性{#technote-migration}
       + [技术说明](technotes/using/technote.md)
       + [启用 Microsoft Edge Chromium](technotes/using/edge-chromium.md)

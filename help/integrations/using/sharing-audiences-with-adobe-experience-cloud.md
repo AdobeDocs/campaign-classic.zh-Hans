@@ -2,32 +2,31 @@
 product: campaign
 title: 与Adobe Experience Cloud共享受众
 description: 与Adobe Experience Cloud共享受众
-feature: Audiences, People Core Service Integration
+feature: Audiences
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 63%
+source-wordcount: '242'
+ht-degree: 50%
 
 ---
 
-# 与Adobe Experience Cloud共享受众{#sharing-audiences-with-adobe-experience-cloud}
-
+# 与Adobe Experience Cloud共享受众 {#sharing-audiences-with-adobe-experience-cloud}
 
 
 >[!CAUTION]
 >
 >要与Adobe Experience Cloud解决方案共享受众，您需要实施AdobeIdentity Management System。 [了解有关IMS的更多信息](../../integrations/using/about-adobe-id.md).
 
-通过Adobe Campaign，您可以与Adobe Experience Cloud解决方案和核心服务共享受众和区段。 提供了两个选项：
+通过Adobe Campaign，您可以与Adobe Experience Cloud服务共享受众和区段。 提供了两个选项：
 
-1. 将Adobe Experience Platform区段数据发送到Adobe Campaign。 要实施此集成，您需要将Real-time Customer Data Platform连接到Campaign (RTCDP)。 [在此章节中了解详情](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
+1. 将Adobe Experience Platform区段数据发送到Adobe Campaign。 要实施此集成，您需要将Real-time Customer Data Platform连接到Campaign (RTCDP)。 [在本节中了解详情](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html){target="_blank"}.
 
-1. 集成 **Adobe Campaign** 替换为 **People核心服务** (也称为 **配置文件和受众核心服务**)或Adobe Audience Manager。 然后，您将能够：
+1. 集成 **Adobe Campaign** 替换为  **Experience Cloud受众** 或 **Adobe Audience Manager**. 然后，您将能够：
 
    * 从不同的 Adobe Experience Cloud 解决方案导入共享受众/区段到 Adobe Campaign 中。 可通过 Adobe Campaign 中的列表导入受众。
 
@@ -40,6 +39,5 @@ ht-degree: 63%
 
   >[!NOTE]
   >
-  > 声明的 ID 数据源现在还可以与 People 核心服务集成一起使用。
+  > 声明的ID数据源现在还可以与Experience Cloud Assets集成一起使用。
   >
-  >如果您使用 People 核心服务集成，并想要添加 Audience Manager 集成，则需要 Adobe Audience Manager 顾问的帮助，以避免在 Adobe Audience Manager 环境中转换为使用此声明的 ID 数据源时收集的所有 ID 同步丢失。

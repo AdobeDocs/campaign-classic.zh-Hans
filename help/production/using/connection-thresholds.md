@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 4ee05559-e719-4e6e-b42c-1e82df428871
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 757e3a5395f24e0bdd04737aba0458881e4ea780
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '168'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 4%
 
    * **Tomcat** 侧：所有查询实际都到达了Adobe Campaign Tomcat客户端。
 
-     此阈值配置于 **nl6/tomcat-8/conf/server.xml** 文件。 此 **maxThreads** 属性允许您提高一次处理的查询数量的阈值。 例如，可以将其更改为250。
+     此阈值配置于 **nl6/tomcat-X/conf/server.xml** 文件。 此 **maxThreads** 属性允许您提高一次处理的查询数量的阈值。 例如，可以将其更改为250。
 
      ```
      <Connector protocol="HTTP/1.1" port="8080"

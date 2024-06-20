@@ -5,9 +5,9 @@ description: 了解如何为iOS设置移动应用程序
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '588'
 ht-degree: 3%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 3%
 
 1. 单击 **[!UICONTROL Next]** 以开始配置开发应用程序。
 
-1. 确保相同 **[!UICONTROL Integration key]** 在Adobe Campaign中以及通过SDK在应用程序代码中定义。 有关详细信息，请参见 [此页面](integrating-campaign-sdk-into-the-mobile-application.md). 此集成键特定于每个应用程序，允许您将移动应用程序链接到Adobe Campaign平台。
+1. 确保相同 **[!UICONTROL Integration key]** 在Adobe Campaign中以及通过SDK在应用程序代码中定义。 <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> 此集成键特定于每个应用程序，允许您将移动应用程序链接到Adobe Campaign平台。
 
    >[!NOTE]
    >

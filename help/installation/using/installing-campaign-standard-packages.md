@@ -5,9 +5,9 @@ description: 了解如何安装Campaign内置软件包
 feature: Installation, Application Settings
 badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1264'
 ht-degree: 3%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 3%
  <tbody> 
   <tr> 
    <td> 投放<br /> </td> 
-   <td> 监视投放以及在发送消息时遇到的最终问题。 <a href="../../delivery/using/about-delivery-monitoring.md">了解详情</a><br /> </td> 
+   <td> 监视投放以及在发送消息时遇到的最终问题。 <a href="../../delivery/using/about-delivery-monitoring.md">了解更多信息</a><br /> </td> 
    <td> 全部</td> 
   </tr> 
   <tr> 
@@ -192,7 +192,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 网站分析连接器<br /> </td> 
-   <td> 允许Adobe Campaign和Adobe Analytics通过Web Analytics连接器包进行交互。 与事务性消息传递（消息中心包）不兼容。 <a href="../../platform/using/gs-aa.md">了解详情</a><br /> </td> 
+   <td> 允许Adobe Campaign和Adobe Analytics通过Web Analytics连接器包进行交互。 与事务性消息传递（消息中心包）不兼容。 <a href="../../integrations/using/gs-aa.md">了解详情</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
@@ -202,7 +202,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> Adobe Experience Cloud共享受众集成<br /> </td> 
-   <td> 允许您与Adobe Experience Cloud解决方案和核心服务交换和共享受众/区段。 需要IMS。 <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">了解详情</a> <br /> </td> 
+   <td> 允许您与Adobe Experience Cloud解决方案和应用程序交换和共享受众/区段。 需要IMS。 <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">了解详情</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -262,7 +262,7 @@ ht-degree: 3%
 
 * 安装 [!DNL LINE] 营销和MID实例上的包
 
-* 设置 [!DNL LINE] mkt实例上的外部帐户，以通过更改投放模式指向mid实例。 [了解详情](../../delivery/using/line-channel.md#configure-line-external)
+* 设置 [!DNL LINE] mkt实例上的外部帐户，以通过更改投放模式指向mid实例。 [了解更多信息](../../delivery/using/line-channel.md#configure-line-external)
 
 * 设置 [!DNL LINE] MID实例上的外部帐户中的凭据。
 

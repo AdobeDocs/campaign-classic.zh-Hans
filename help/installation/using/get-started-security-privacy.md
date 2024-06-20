@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '445'
 ht-degree: 7%
 
 ---
@@ -69,9 +69,6 @@ ht-degree: 7%
 
 [了解更多信息](../../installation/using/network-database.md)
 
->[!CAUTION]
->
->从2021年7月14日开始，任何不支持TLS 1.2协议的客户端系统将无法访问所有Adobe产品和服务。 在此日期之前，请确保所有用户和客户端系统都符合TLS 1.2。 [了解详情](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)
 
 ## 服务器配置
 
