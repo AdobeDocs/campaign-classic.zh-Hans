@@ -4,10 +4,10 @@ title: 开始工作流
 description: 了解如何启动工作流和发现工作流操作工具栏和右键单击菜单
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -64,6 +64,16 @@ ht-degree: 1%
   此操作将停止，然后重新启动工作流。 在大多数情况下，它可以更快地重新启动。 当停止需要一定时间时，自动重新启动也很有用：这是因为在工作流停止时，“Stop”命令不可用。
 
   此 **[!UICONTROL Start / Pause / Stop / Restart]** 也可以通过工具栏中的执行图标执行操作。 有关更多信息，请参阅此](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow)章节[。
+
+  请注意 **重新启动** 操作不会清除与之比较的工作流实例变量 **执行**， **停止**、和 **开始** 操作（实例变量在启动操作时清除）。 重新启动工作流时，实例变量仍可用于保留值。 要清除它们，您可以：
+   * 执行 **停止** 和 **开始** 操作。
+   * 在工作流执行结束时，添加以下javascript代码：
+
+     ```
+     var wkf = xtk.workflow.load(instance.id)
+     wkf.variables='<variables/>'
+     wkf.save()
+     ```
 
 * **[!UICONTROL Purge history]**
 
