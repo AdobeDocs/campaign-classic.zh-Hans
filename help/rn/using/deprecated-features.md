@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 33d06c00ca9c7cd0ff077341df2b5b52ddf747a4
 workflow-type: tm+mt
 source-wordcount: '1636'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -44,8 +44,8 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <td><strong>详细信息</strong></td>
   </tr>
   <tr>
- <td>Campaign (Neolane)旧版SDK</td>
- <td><p>现已弃用适用于移动应用程序的Campaign (Neolane) SDK。 请通过在数据收集UI中配置Adobe Experience Platform扩展来使用Adobe Campaign Mobile SDK。 Adobe Experience Platform Mobile SDK有助于在移动设备应用程序中支持Adobe的Experience Cloud解决方案和服务。 SDK配置通过数据收集UI进行管理，以实现灵活配置和基于规则的可扩展集成。 了解如何在中配置移动应用程序渠道 <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8文档</a>.</p>
+ <td>Campaign (Neolane) 旧版 SDK</td>
+ <td><p>现已弃用适用于移动应用程序的 Campaign (Neolane) SDK。相反，可通过在“数据收集”UI 中配置 Adobe Campaign 扩展使用 Adobe Experience Platform Mobile SDK。Adobe Experience Platform Mobile SDK 有助于在移动设备应用程序中支持 Adobe 的 Experience Cloud 解决方案和服务。 SDK 配置通过数据收集 UI 进行管理，以实现灵活配置和基于规则的可扩展集成。 有关如何配置移动应用程序频道，请参阅 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8 文档</a>。</p>
 <p>目标移除日期：2025年夏天 </p>
 </td>
 </tr>
@@ -88,7 +88,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
  </tr>
   <tr>
   <td>OAuth 身份验证（OAuth 和 JWT）<br></td>
-  <td><p> 最初基于OAuth身份验证设置来访问管道的Triggers集成身份验证现已更改并移至Adobe I/O。Campaign 20.3版本已弃用此身份验证模式。<p>
+  <td><p> 已更改最初基于 OAUTH 身份验证设置、用于访问管道的触发器集成身份验证现已移至 Adobe I/O。Campaign 20.3 版本已弃用此身份验证模式。<p>
   <p>如果正在使用触发器集成，请在<a href="../../integrations/using/about-triggers.md#implement">本页</a>了解如何调整实施。</p> 
   <p>有关 Oauth 身份验证折旧的详细信息，请参阅此<a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">页面</a></p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
