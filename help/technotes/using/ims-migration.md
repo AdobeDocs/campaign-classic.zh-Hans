@@ -4,16 +4,16 @@ description: 了解如何将Campaign技术操作员迁移到Adobe Developer控�
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: c8ff250c1e4013d4c8271a3a388ddbabcfaeea38
+source-git-commit: af811b2df325efcaee38a967252b6952e67680d1
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1775'
 ht-degree: 0%
 
 ---
 
 # 将Campaign技术操作员迁移到Adobe Developer控制台 {#migrate-tech-users-to-ims}
 
-作为加强安全和身份验证流程工作的一部分，从Campaign Classicv7.3.5开始，对Campaign Classic的身份验证流程正在得到改进。 技术操作员现在应使用 [AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **Adobe建议在Campaign v7.3.5中执行此迁移，以便能够顺利迁移到Campaign v8。**
+作为加强安全和身份验证流程工作的一部分，从Campaign Classicv7.3.5开始，对Campaign Classic的身份验证流程正在得到改进。 技术操作员现在应使用 [AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 以连接到Campaign。 了解中关于新服务器到服务器身份验证过程的更多信息 [Adobe Developer控制台文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **Adobe建议在v7中执行此迁移，以便能够顺利迁移到Campaign v8。**
 
 技术操作员是为API集成明确创建的Campaign用户配置文件。 本文详细介绍了通过Adobe Developer控制台将技术操作员迁移到技术帐户所需的步骤。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 如果您从Campaign外部的系统向Campaign营销实例或实时消息中心实例进行API调用，Adobe强烈建议您通过Adobe Developer控制台将技术操作员迁移到技术帐户，如下所述。
 
-此更改适用于从Campaign Classicv7.3.5(和最新的 [IMS迁移兼容版本](#ims-versions-tech))，并且是 **必需** 以迁移到Adobe Campaign v8。
+此更改适用于从Campaign Classicv7.3.5(和最新的 [IMS迁移兼容版本](ac-ims.md#ims-versions))，并且是 **必需** 以迁移到Adobe Campaign v8。
 
 ## 迁移过程 {#ims-migration-procedure}
 
@@ -32,19 +32,9 @@ ht-degree: 0%
 * 在Adobe Developer控制台中创建项目
 * 为新创建的项目分配相应的API
 * 将所需的Campaign产品配置文件授予项目
-* 更新API以使用新创建的技术帐户凭据
+* 更新您的API以使用新创建的技术帐户凭据
 * 从Campaign实例中删除旧版技术运算符
 
-
-### IMS迁移兼容版本 {#ims-versions-tech}
-
-此迁移的先决条件是将您的环境升级到以下产品版本之一：
-
-* Campaign v7.3.5（推荐）
-* Campaign v7.3.3.IMS
-* Campaign v7.3.2.IMS
-
-有关这些Campaign版本的详情，请参见 [发行说明](../../rn/using/latest-release.md).
 
 ### 迁移的先决条件{#ims-migration-prerequisites}
 
@@ -52,7 +42,7 @@ ht-degree: 0%
 
 * Campaign托管客户和Managed Services客户
 
-  对于进入消息中心实例的API调用，在升级到Campaign v7.3.5（或其他）期间应创建产品配置文件（如下所述） [IMS迁移兼容版本](#ims-versions-tech))，或在配置实例期间。 请注意，如果您看不到产品配置文件，请在开始IMS迁移之前联系过渡经理或客户支持部门以获取已创建的产品配置文件。 此产品配置文件的名称为：
+  对于进入消息中心实例的API调用，在升级到Campaign v7.4.1（或其他）期间应创建产品配置文件（如下所述） [IMS迁移兼容版本](ac-ims.md#ims-versions))，或在配置实例期间。 请注意，如果您看不到产品配置文件，请在开始IMS迁移之前联系过渡经理或客户支持部门以获取已创建的产品配置文件。 此产品配置文件的名称为：
 
   `campaign - <your campaign marketing instance> - messagecenter`
 
@@ -169,6 +159,12 @@ You can now add your Campaign product profile to the project, as detailed below:
 您现在必须更新所有对Adobe Campaign进行调用的API集成，才能使用新创建的技术帐户。
 
 有关API集成步骤的详细信息，请参阅下面的代码示例。
+
+使用AdobeIdentity Management System (IMS)身份验证时，要生成WSDL文件，应添加Authorization： Bearer &lt;ims_technical_token_token> 在postman调用中：
+
+```
+curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent' \--header 'Authorization: Bearer <Technical account access token>'
+```
 
 >[!BEGINTABS]
 
@@ -489,3 +485,12 @@ response = requests.post(url, headers=headers, data=xml_data)
 在迁移所有第三方系统以将新的技术帐户用于IMS身份验证后，您可以从Campaign客户端控制台中删除旧的技术操作员。
 
 为此，请登录Campaign客户端控制台，导航至 **管理>访问管理>运算符** 并查找并删除旧的技术用户。
+
+
+>[!MORELIKETHIS]
+>
+>* [将最终用户迁移到IMS](migrate-users-to-ims.md)
+>* [在IMS迁移后更新Campaign界面](impact-ims-migration.md)
+>* [Adobe Campaign Classic v7最新发行说明](../../rn/using/latest-release.md)
+>* [什么是AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}
+

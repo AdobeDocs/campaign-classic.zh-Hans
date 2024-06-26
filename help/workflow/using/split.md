@@ -4,26 +4,26 @@ title: 拆分
 description: 了解有关拆分工作流活动的更多信息
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
 
 # 拆分{#split}
 
-
-
 A **Split**-type活动允许您将目标拆分为多个子集。 使用所有接收结果构建目标：因此，必须完成所有先前的活动才能执行此活动。
 
 此活动不会触发集客群体的联合。 如果多个过渡登陆一个拆分活动，我们建议插入 **[!UICONTROL Union]** 前面的活动。
 
-有关正在使用的拆分活动的示例，请参阅 [使用拆分活动创建子集](targeting-data.md#creating-subsets-using-the-split-activity).
+>[!NOTE]
+>
+>不能对具有不同源的表执行拆分操作。 为此，您需要添加 **扩充** 之前的活动 **Split** 活动。
 
-有关说明如何使用拆分活动通过过滤条件将目标分段为不同群体的示例，请参见 [本节](cross-channel-delivery-workflow.md).
-
-有关如何在拆分活动中使用实例变量的示例，请参见 [本节](javascript-scripts-and-templates.md).
+* 有关正在使用的拆分活动的示例，请参阅 [使用拆分活动创建子集](targeting-data.md#creating-subsets-using-the-split-activity).
+* 有关说明如何使用拆分活动通过过滤条件将目标分段为不同群体的示例，请参见 [本节](cross-channel-delivery-workflow.md).
+* 有关如何在拆分活动中使用实例变量的示例，请参见 [本节](javascript-scripts-and-templates.md).
 
 要配置此活动，请在 **[!UICONTROL Subsets]** 选项卡，然后在中选择目标维度 **[!UICONTROL General]** 选项卡。
 
@@ -224,14 +224,14 @@ A **Split**-type活动允许您将目标拆分为多个子集。 使用所有接
 ## 输入参数 {#input-parameters}
 
 * 表名
-* 架构
+* 模式
 
 每个入站事件必须指定由这些参数定义的目标。
 
 ## 输出参数 {#output-parameters}
 
 * 表名
-* 架构
+* 模式
 * recCount
 
 这组三个值可标识排除项导致的目标。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms：recipient）和 **[!UICONTROL recCount]** 是表中的元素数。
