@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 98859f6452b5f1008a19a48b9b77edd9acf49261
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3746'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 ### 2024 年 6 月 {#june-2024}
 
-已添加注释，以指定在重新启动工作流时如何清除实例变量。 [了解更多信息](../../workflow/using/starting-a-workflow.md)
+添加了说明在重新启动工作流时如何清除实例变量的注释。[了解更多信息](../../workflow/using/starting-a-workflow.md)
 
 ### 2024 年 4 月 {#apr-2024}
 

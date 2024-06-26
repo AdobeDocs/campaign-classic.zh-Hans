@@ -7,21 +7,21 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: b23632d0718d62d61e94e636937b93aa39bbe43f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # 兼容性矩阵 {#compatibility-matrix}
 
-在 [最新版本](../../rn/using/latest-release.md)，Adobe Campaign Classic v7与本页中列出的所有系统和工具都兼容。 随着这些第三方系统和工具的特定版本到达其各自创建者的终止生命周期 (EOL)，Adobe Campaign 将不再与这些版本兼容，并将在后续产品发布中从兼容性矩阵中移除。请确保您使用的是此兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。 要了解有关已弃用项目的更多信息，请访问[此页面](../../rn/using/deprecated-features.md)。
+在其[最新内部版本](../../rn/using/latest-release.md)中，Adobe Campaign Classic v7 与本页中列出的所有系统和工具都兼容。随着这些第三方系统和工具的特定版本到达其各自创建者设定的终止生命周期 (EOL)，Adobe Campaign 将不再与这些版本兼容，并将在后续产品发布中从兼容性矩阵中移除。请确保使用兼容性矩阵中列出的任何系统的受支持版本，以免出现任何问题。要了解有关已弃用项目的更多信息，请访问[此页面](../../rn/using/deprecated-features.md)。
 
 除非另有说明，否则支持所有次要版本。
 
 >[!CAUTION]
 >
->此矩阵会定期更新，以添加和删除新的受支持系统和工具，并且会弃用。
+>会定期更新此矩阵，添加新的支持系统和工具，并移除已弃用系统和工具。
 
 ## 操作系统 {#OperatingSystems}
 
@@ -31,7 +31,7 @@ ht-degree: 64%
 <tbody> 
 <td><strong>操作系统</strong></td>
 <td><strong>操作系统版本</strong></td>
-<td><strong>最低Campaign版本</strong></td>
+<td><strong>最低 Campaign 版本</strong></td>
 <tr> 
 <td>CentOs</td>
 <td>
@@ -83,7 +83,7 @@ ht-degree: 64%
 
 >[!IMPORTANT]
 >
->如果您使用的是RHEL，则必须愿意禁用 [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) 或者让架构师编写自定义SELinux规则来检查已启用的SELinux是否不会导致Campaign操作问题。
+>如果使用 RHEL，则必须愿意禁用 [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux)，或者让架构师编写自定义 SELinux 规则检查已启用的 SELinux，确定其不会造成 Campaign 操作问题。
 
 ## Web 服务器 {#WebServers}
 
@@ -94,7 +94,7 @@ ht-degree: 64%
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>Windows Server上的10.0</p>
+<p>Windows Server 2016 上的 10.0 版</p>
 </td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ ht-degree: 64%
 <tbody>
 <td><strong>工具</strong></td>
 <td><strong>版本</strong></td>
-<td><strong>Minium Campaign版本</strong></td>
+<td><strong>最低 Campaign 版本</strong></td>
 <tr>
 <td><p>Java 开发工具包 (JDK)</p>
 <p>请参阅<a href="../../installation/using/application-server.md#jdk" target="_blank">此页面</a>以了解详情。</p>
@@ -126,9 +126,9 @@ ht-degree: 64%
 <p></p>
 </td>
 <td>
-<p>从v7.4.1开始需要</p>
-<p>截止到v7.4.1</p>
-<p>截止到v7.4.1</p>
+<p>自 v7.4.1 起必需</p>
+<p>截至 v7.4.1</p>
+<p>截至 v7.4.1</p>
 </tr>
 <tr>
 <td><p>Libre Office</p></td>
@@ -159,7 +159,7 @@ ht-degree: 64%
 <tbody>
 <td><strong>数据库系统</strong></td>
 <td><strong>数据库版本</strong></td>
-<td><strong>最低Campaign版本</strong></td>
+<td><strong>最低 Campaign 版本</strong></td>
 <tr>
 <td>Oracle</td>
 <td>
@@ -193,7 +193,7 @@ ht-degree: 64%
 </td>
 </tr>
 <tr>
-<td>Microsoft SQL 服务器</td>
+<td>Microsoft SQL Server</td>
 <td>
 <p>2022</p>
 <p>2019</p>
@@ -214,11 +214,11 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->* RDBMS驱动程序必须与RDBMS服务器版本匹配。
+>* RDBMS 驱动程序必须与 RDBMS 服务器版本匹配。
 >
->* 当Campaign服务器在Linux上运行时，不支持将Microsoft SQL Server作为主数据库。 [了解详情](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。
+>* Campaign 服务器在 Linux 上运行时，不支持将 Microsoft SQL Server 作为主数据库。[了解详情](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers)。
 >
->* 您还可以将Amazon RDS for PostgreSQL与以上指定的版本配合使用。
+>* 还可以将 Amazon RDS for PostgreSQL 与以上指定的版本配合使用。
 >
 >* PostgreSQL 是用于托管/管理云服务环境的 RDBMS。
 
@@ -254,7 +254,7 @@ ht-degree: 64%
 <tbody>
 <td><strong>数据库系统</strong></td>
 <td><strong>数据库版本</strong></td>
-<td><strong>最低Campaign版本</strong></td>
+<td><strong>最低 Campaign 版本</strong></td>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
@@ -295,7 +295,7 @@ ht-degree: 64%
 <tbody>
 <td><strong>数据库系统</strong></td>
 <td><strong>数据库版本</strong></td>
-<td><strong>最低Campaign版本</strong></td>
+<td><strong>最低 Campaign 版本</strong></td>
 <tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
@@ -344,7 +344,7 @@ ht-degree: 64%
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>2022年（从Campaign v7.4开始）</p>
+<p>2022（从 Campaign v7.4 开始）</p>
 <p>2019</p>
 <p>2017</p>
 <p>2016</p>
@@ -391,7 +391,7 @@ ht-degree: 64%
 <tbody>
 <td><strong>系统</strong></td>
 <td><strong>操作系统版本</strong></td>
-<td><strong>Minium Campaign版本</strong></td>
+<td><strong>最低 Campaign 版本</strong></td>
 <tr>
 <td>Microsoft Windows</td>
 <td>
@@ -424,11 +424,11 @@ Microsoft Edge WebView2 运行时最新版本是 Campaign 客户端控制台的�
 从 [Microsoft 开发人员网站](https://www.adobe.com/go/acc-ms-webview2-runtime-download)下载 Microsoft Edge WebView2。
 
 
-## 移动 SDK {#MobileSDK}
+## Mobile SDK {#MobileSDK}
 
-您可以使用Campaign执行以下操作 [发送推送通知](../../delivery/using/about-mobile-app-channel.md)，通过在数据收集UI中配置Adobe Experience Platform扩展来使用Adobe Campaign 。
+可以通过在“数据收集”UI 中配置 Adobe Campaign 扩展，使用 Campaign 通过 Adobe Experience Platform Mobile SDK [发送推送通知](../../delivery/using/about-mobile-app-channel.md)。
 
-Campaign SDK是 [已弃用](deprecated-features.md) 从Campaign v7.4开始。要确保现有实施平稳过渡到AEP Mobile SDK，您仍然可以在下面列出的操作系统上使用它<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
+从 Campaign v7.4 开始[弃用](deprecated-features.md) Campaign SDK。但仍可在以下列出的操作系统中使用它，以确保将现有实施平稳过渡到 AEP Mobile SDK<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->。
 
 
 <table>
@@ -438,8 +438,8 @@ Campaign SDK是 [已弃用](deprecated-features.md) 从Campaign v7.4开始。要
 <td>
 <p>7 - 14</p>
 <p>带有移动 SDK 内部版本 1.1.1。</p>
-<p>从Campaign v7.4开始支持Android 13和14。</p>
-<p>从Campaign v7.3开始支持Android 12。</p>
+<p>从 Campaign v7.4 开始支持 Android 13 和 14。</p>
+<p>从 Campaign v7.3 开始支持 Android 12</p>
 </td>
 </tr>
 <tr>
@@ -447,8 +447,8 @@ Campaign SDK是 [已弃用](deprecated-features.md) 从Campaign v7.4开始。要
 <td>
 <p>iOS 9 - 17</p>
 <p>带有移动 SDK 内部版本 1.0.26。</p>
-<p>从Campaign v7.3开始支持Apple iOS 15。 </p>
-<p>从Campaign v7.4开始支持Apple iOS 16和17。</p>
+<p>Campaign v7.3 及更高版本支持 Apple iOS 15。 </p>
+<p>从 Campaign v7.4 开始支持 Apple iOS 16 和 17。</p>
 </td>
 </tr>
 </tbody>
@@ -468,7 +468,7 @@ Campaign SDK是 [已弃用](deprecated-features.md) 从Campaign v7.4开始。要
 >[!MORELIKETHIS]
 >
 >* [Campaign Classic 发行说明](../../rn/using/latest-release.md)
->* [Campaign一般架构](../../installation/using/general-architecture.md)
+>* [Campaign 一般架构](../../installation/using/general-architecture.md)
 >* [硬件大小调整建议](../../technotes/using/hardware-sizing.md)
 >* [已弃用的功能和系统](../../rn/using/deprecated-features.md)
 >* [内部版本升级过程](../../production/using/build-upgrade.md)

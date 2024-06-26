@@ -7,9 +7,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 99%
          + [Campaign UI 入门](platform/using/adobe-campaign-workspace.md)
          + [使用 Campaign Explorer](platform/using/adobe-campaign-explorer.md)
          + [浏览和自定义列表](platform/using/adobe-campaign-ui-lists.md)
-      + [Campaign连接器](platform/using/about-connectors.md)
+      + [Campaign 连接器](platform/using/about-connectors.md)
       + 常见问题解答 {#faq}
          + [最常见问题](platform/using/common-questions.md)
          + [全局概念](platform/using/faq-key-concepts.md)
@@ -102,7 +102,7 @@ ht-degree: 99%
    + 数据包和明细列表{#administration-basics}
       + [数据包](platform/using/working-with-data-packages.md)
       + [明细列表](platform/using/managing-enumerations.md)
-   + CRM连接器 {#connectors}
+   + CRM 连接器{#connectors}
       + [CRM 连接器入门](platform/using/crm-connectors.md)
       + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
       + [与 Salesforce.com 连接](platform/using/crm-sfdc.md)
@@ -352,7 +352,7 @@ ht-degree: 99%
    + [用例：显示在线调查的答案报告](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + 与 Adobe Experience Cloud 集成 {#integrating-with-adobe-experience-cloud}
    + [Campaign 集成入门](integrations/using/about-campaign-integrations.md)
-   + [创建您的Adobe技术帐户](integrations/using/oauth-technical-account.md)
+   + [创建您的 Adobe 技术帐户](integrations/using/oauth-technical-account.md)
    + Adobe Experience Cloud 触发器 {#experience-triggers}
       + [使用  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [配置管道](integrations/using/configuring-pipeline.md)
@@ -825,10 +825,10 @@ ht-degree: 99%
    + [硬件大小调整建议](technotes/using/hardware-sizing.md)
    + [中间源基础架构的入站短信工作流活动](technotes/using/inbound-sms-wf.md)
    + 升级到 IMS{#ims}
-      + [过渡到Adobe IMS](technotes/using/ac-ims.md)
+      + [过渡至 Adobe IMS](technotes/using/ac-ims.md)
       + [将用户迁移到 IMS](technotes/using/migrate-users-to-ims.md)
       + [将技术操作员迁移到 Developer Console](technotes/using/ims-migration.md)
-      + [IMS迁移后的界面影响](technotes/using/impact-ims-migration.md)
+      + [IMS 迁移后的界面影响](technotes/using/impact-ims-migration.md)
    + 升级和兼容性{#technote-migration}
       + [技术说明](technotes/using/technote.md)
       + [启用 Microsoft Edge Chromium](technotes/using/edge-chromium.md)

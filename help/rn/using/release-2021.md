@@ -8,9 +8,9 @@ level: Beginner
 hidefromtoc: true
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2584'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -185,7 +185,7 @@ Campaign 现在支持以下系统：
 
 **已弃用的功能**
 
-* 从 Campaign 21.1 版本开始，弃用 Adobe Analytics Data Connector。如果您使用的是此连接器，则需要使用新连接器Adobe Analytics连接器相应地调整实施。
+* 从 Campaign 21.1 版本开始，弃用 Adobe Analytics Data Connector。如果使用此连接器，则需要使用新连接器 Adobe Analytics Connector 相应地调整实施。
 * 现已弃用对 Debian 8 的支持。
 * 随着在 20.3 版中弃用 OracleCRM，已从界面中删除相关的外部帐户。
 

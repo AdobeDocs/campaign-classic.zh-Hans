@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2337'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ _2023 年 12 月 5 日_
 
 ### 其他增强功能 {#release-7-3-5-other}
 
-从此版本开始，在升级过程中，已发送电子邮件上的跟踪链接仍将有效。 [了解更多信息](../../platform/using/faq-build-upgrade.md)
+从此版本开始，已发送电子邮件上的跟踪链接在升级过程中仍有效。[了解更多信息](../../platform/using/faq-build-upgrade.md)
 
 ### 修补程序 {#release-7-3-5-patches}
 
@@ -140,7 +140,7 @@ _2023 年 3 月 20 日_
 * 改进了计费工作流以优化性能。(NEO-47658)
 * 改进了跟踪工作流程，从而优化在投放大小较高时的性能。(NEO-45064)
 * 改进了跟踪管理，以修复 URL 中动态参数可能存在的问题。跟踪管理 v3 现在可以处理 AJAX 类型的 URL（在“#”后面带有参数）并可阻止第三方工具修改跟踪 URL。要应用此更改，请联系 Adobe。(NEO-46535)
-* 从此版本开始，在升级过程中，已发送电子邮件上的跟踪链接仍将有效。 [了解更多信息](../../platform/using/faq-build-upgrade.md)
+* 从此版本开始，已发送电子邮件上的跟踪链接在升级过程中仍有效。[了解更多信息](../../platform/using/faq-build-upgrade.md)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
@@ -182,7 +182,7 @@ _2022 年 11 月 21 日_
 * Google BigQuery 连接器现在完全支持布尔字段。(NEO-49181)
 * 您现在可以在 serverConf.xml 文件的 `Configuration for the redirection service` 部分配置 IMS Cookie 的有效期。这适用于以下 Cookie：`uuid230`、`nllastdelid` 和 `AMCV_` (NEO-42541)
 * 现在通过在 serverConf.xml 文件的重定向节点中将 `showSourceIP` 设置为“false”，可将 IP 在“/r/test”请求中隐藏。[了解更多信息](../../installation/using/the-server-configuration-file.md#redirection-redirection) (NEO-46656)
-* 从此版本开始，在升级过程中，已发送电子邮件上的跟踪链接仍将有效。 [了解更多信息](../../platform/using/faq-build-upgrade.md)
+* 从此版本开始，已发送电子邮件上的跟踪链接在升级过程中仍有效。[了解更多信息](../../platform/using/faq-build-upgrade.md)
 
 
 ### 已弃用的功能  {#release-7-3-2-deprecated}

@@ -9,9 +9,9 @@ hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ _2021 年 4 月 14 日_
 >
 > * 如果您要通过 Adobe Identity Management Service (IMS) 使用 Adobe ID 连接到 Campaign，则必须升级 Campaign 服务器和客户端控制台才能在 **2021 年 6 月 30 日**&#x200B;后连接到 Campaign。[了解详情](../../technotes/using/ims-updates.md)
 > * 此版本附带[安全修复](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果您是通过OAuth身份验证使用Experience Cloud触发器集成，则需要按照所述移至Adobe I/O [本页内容](../../integrations/using/about-triggers.md#implement). Campaign 的旧版 oAuth 身份验证模式已于 **2021 年 9 月**[停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。托管环境的支持时间可延长至 **2022 年 2 月 23 日**。作为内部部署或混合型部署客户，请联系 Adobe 客户关怀团队，将支持延长至 2022 年 2 月。您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
+> * 如果是通过 OAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/about-triggers.md#implement)中的说明移至 Adobe I/O。Campaign 的旧版 oAuth 身份验证模式已于 **2021 年 9 月**[停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。托管环境的支持时间可延长至 **2022 年 2 月 23 日**。作为内部部署或混合型部署客户，请联系 Adobe 客户关怀团队，将支持延长至 2022 年 2 月。您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 >
 >在[[!DNL Gold Standard] 本节](../../rn/using/gold-standard.md)中了解详情
 
@@ -222,7 +222,7 @@ _2019 年 8 月 13 日_
 >[!CAUTION]
 >除非另有说明，否则支持所有次要版本。
 >
->Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。随着这些第三方系统和工具的特定版本到达其各自创建者的终止生命周期 (EOL)，Adobe Campaign 将不再与这些版本兼容，并将在后续产品发布中从兼容性矩阵中移除。请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
+>Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。随着这些第三方系统和工具的特定版本到达其各自创建者设定的终止生命周期 (EOL)，Adobe Campaign 将不再与这些版本兼容，并将在后续产品发布中从兼容性矩阵中移除。请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
 >
 
 ### 操作系统{#OperatingSystems-gs}
@@ -505,7 +505,7 @@ _2019 年 8 月 13 日_
 </tbody>
 </table>
 
-### 移动 SDK{#MobileSDK}
+### Mobile SDK{#MobileSDK}
 
 <table>
 <tbody>
