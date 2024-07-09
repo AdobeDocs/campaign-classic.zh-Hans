@@ -8,9 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: b02089bd205de58c6af86fc8de3d5b3294ec9975
+source-git-commit: e40331266f34e2d6aa7b7720948d0cf26d4c6009
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1066'
 ht-degree: 21%
 
 ---
@@ -43,11 +43,11 @@ SFTP服务器旨在作为临时存储空间，您可以在其上控制文件的�
 
 >[!NOTE]
 >
->您可以使用Campaign Classic监控SFTP服务器存储 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
+>* 您可以使用Campaign Classic监控SFTP服务器存储 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
 >
->所有管理员用户均可访问控制面板。授予用户管理员访问权限的步骤详见 [此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel){target="_blank"}.
+>* 所有管理员用户均可访问控制面板。授予用户管理员访问权限的步骤详见 [此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel){target="_blank"}.
 >
->请注意，您的实例必须使用 [最新GA版本](../../rn/using/rn-overview.md). 了解如何在中签入您的版本 [本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
+>* 请注意，您的实例必须使用 [最新GA版本](../../rn/using/rn-overview.md). 了解如何在中签入您的版本 [本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
 
 * 服务器大小功能因您的许可证而异。 在任何情况下，尽量保持最小数据，并且只在需要的时间内保留数据（15 天是最长时间限制）。
 
@@ -72,13 +72,13 @@ SFTP服务器旨在作为临时存储空间，您可以在其上控制文件的�
 
 1. 检查您的实例是否正在运行。 为此，请打开浏览器，然后制作 **[!UICONTROL GET]** 在实例上调用 **[!UICONTROL /r/test]** 端点：
 
-   ```
+   ```xml
    https://instanceUrl/r/test
    ```
 
    如果实例正在运行，您应该得到这种类型的响应：
 
-   ```
+   ```xml
    <redir status='OK' date='YYYY-MM-DD HH:MM:SS' build='XXXX' instance='instance-name'
    sourceIP='AAA.BB.CCC.DD' host='instanceUrl' localHost='instance-name'/>
    ```
@@ -87,7 +87,7 @@ SFTP服务器旨在作为临时存储空间，您可以在其上控制文件的�
 
 1. 检查在尝试启动SFTP连接的站点上是否打开了出站端口22。 为此，请使用以下命令：
 
-   ```
+   ```xml
    bash-3.2$ nc -vz <SFTP_URL> 22
    # Replace the SFTP_URL with actual SFTP instance URL
    # If the port 22 is opened you will see output similar to the below one
@@ -109,7 +109,7 @@ SFTP服务器旨在作为临时存储空间，您可以在其上控制文件的�
 
 工作流日志显示以下日志：
 
-```
+```xml
 16/05/2016 12:49:03    fileTransfer    Upload error in cURL
 16/05/2016 12:49:03    fileTransfer    Couldn't resolve host name
 16/05/2016 12:49:03    fileTransfer    Couldn't resolve host name
@@ -144,7 +144,7 @@ SFTP服务器旨在作为临时存储空间，您可以在其上控制文件的�
 
    否则，请验证：
 
-   * 密码不包含“@”。 如果密码中存在“@”，则连接失败。
+   * 密码不包含 `@` 字符。 如果存在 `@` 字符。
    * 没有防火墙问题会阻碍Adobe Campaign应用程序服务器与SFTP服务器之间的通信。
    * 从campaign服务器向sftp运行tracert和telnet命令，以查看是否存在任何连接问题。
    * 不存在通信协议问题。
