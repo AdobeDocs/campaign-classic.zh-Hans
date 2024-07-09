@@ -6,9 +6,9 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '2204'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,10 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 * **如何处理子域委派？**
 
   现有子域将从旧数据中心移至公共云(AWS)。 此部分将在迁移过程中由Adobe可交付性团队处理。
+
+  >[!NOTE]
+  >
+  >可交付性团队的参与基于合同，客户应联系其Adobe代表以获取与可交付性参与相关的信息。
 
   Adobe将指导客户完成所需的测试，以确保配置在迁移后的新公共云(AWS)服务器上启动并运行。
 
