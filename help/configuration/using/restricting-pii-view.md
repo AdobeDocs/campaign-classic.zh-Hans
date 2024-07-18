@@ -5,10 +5,10 @@ description: 了解如何限制PI视图
 feature: PI
 role: Data Engineer, Developer
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: e198defd60f4b12681025b04b12a1498df015047
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 2%
+source-wordcount: '439'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## 实现 {#implementation}
 
-架构中添加了可应用于任何元素或属性的新属性，它补充了现有属性 **[!UICONTROL visibleIf]** . 此属性为： **[!UICONTROL accessibleIf]** . 当包含与当前用户上下文相关的XTK表达式时，它可以利用 **[!UICONTROL HasNamedRight]** 或 **[!UICONTROL $(login)]** 例如，
+架构中添加了可应用于任何元素或属性的新属性，它补充了现有属性&#x200B;**[!UICONTROL visibleIf]** 。 此属性是： **[!UICONTROL accessibleIf]** 。 当包含与当前用户上下文相关的XTK表达式时，它可以利用&#x200B;**[!UICONTROL HasNamedRight]**&#x200B;或&#x200B;**[!UICONTROL $(login)]**，例如。
 
 您可以找到收件人模式扩展的示例，该示例显示了以下用法：
 
@@ -39,8 +39,8 @@ ht-degree: 2%
 
 主要属性包括：
 
-* **[!UICONTROL visibleIf]** ：隐藏元数据中的字段，因此在架构视图、列选择或表达式生成器中无法访问这些字段。 但这不会隐藏任何数据，如果手动在表达式中输入字段名称，则会显示值。
-* **[!UICONTROL accessibleIf]** ：隐藏生成查询的数据（将其替换为空值）。 如果visibleIf为空，则它将获得与相同的表达式 **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL visibleIf]** ：隐藏元数据中的字段，因此无法在架构视图、列选择或表达式生成器中访问它们。 但这不会隐藏任何数据，如果手动在表达式中输入字段名称，则会显示值。
+* **[!UICONTROL accessibleIf]** ：隐藏生成的查询中的数据（用空值替换）。 如果visibleIf为空，则它将获得与&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的表达式。
 
 以下是在Campaign中使用此属性的后果：
 
@@ -53,9 +53,13 @@ ht-degree: 2%
 * 当将目标群体存储在组（列表）中时，所存储的字段的特征与数据源相同。
 * 默认情况下，JS代码无法访问数据。
 
+>[!IMPORTANT]
+>
+>对关键参数（如组合键中的参数）使用&#x200B;**accessibleIf**&#x200B;属性可能会导致用户因隐藏数据而无法读取数据的错误。 这可能会导致查询失败或意外行为。 确保可以访问基本参数以防止出现中断。
+
 ## 推荐做法 {#recommendations}
 
-在每次投放中，电子邮件地址都会复制到 **[!UICONTROL broadLog]** 和 **[!UICONTROL forecastLog]** 表：因此，这些字段也需要受保护。
+在每次投放中，电子邮件地址都会复制到&#x200B;**[!UICONTROL broadLog]**&#x200B;和&#x200B;**[!UICONTROL forecastLog]**&#x200B;表中：因此，这些字段也需要受到保护。
 
 以下是实施此操作的日志表扩展示例：
 
