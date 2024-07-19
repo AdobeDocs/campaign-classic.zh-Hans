@@ -23,7 +23,7 @@ ht-degree: 0%
 要始终在推荐中包含类别，请应用以下步骤：
 
 1. 打开资源管理器，然后单击树结构中的选件目录。
-1. 单击 **[!UICONTROL Eligibility]** 按Tab并勾选 **[!UICONTROL Always include this category in the recommendations]** 盒子。
-1. 通过单击完成并批准 **[!UICONTROL Save]**.
+1. 单击&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡并勾选&#x200B;**[!UICONTROL Always include this category in the recommendations]**&#x200B;框。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;完成并批准。
 
    ![](assets/offer_cat_default_001.png)

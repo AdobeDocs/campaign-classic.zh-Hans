@@ -38,13 +38,13 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
-   <td> 随处<br /> </td> 
-   <td> 用于电子邮件广播的SMTP流量。<br /> </td> 
+   <td> Anywhere<br /> </td> 
+   <td> 电子邮件广播的SMTP流量。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 53/udp（域）<br /> </td> 
+   <td> 53/udp （域）<br /> </td> 
    <td> DNS服务器<br /> </td> 
-   <td> dns查询。<br /> </td> 
+   <td> DNS查询。<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp （默认端口）<br /> </td> 
@@ -54,14 +54,14 @@ ht-degree: 1%
   <tr> 
    <td> 7777/udp<br /> </td> 
    <td> 统计服务器<br /> </td> 
-   <td> 访问统计服务器。<br /> </td> 
+   <td> 正在访问统计信息服务器。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 入站邮件 {#inbound-mail}
 
-对于入站邮件恢复过程(**nlserver inMail**)，必须打开以下端口：
+对于入站邮件恢复进程(**nlserver inMail**)，必须打开以下端口：
 
 <table> 
  <tbody> 
@@ -73,12 +73,12 @@ ht-degree: 1%
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
    <td> 内部邮件服务器<br /> </td> 
-   <td> 用于接收退回消息的POP3流量。<br /> </td> 
+   <td> 接收退回邮件的POP3流量。<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
    <td> 内部邮件服务器<br /> </td> 
-   <td> 用于发送未由预定义规则自动处理的剩余退回消息的SMTP流量。<br /> </td> 
+   <td> 用于发送未由预定义规则自动处理的剩余退回邮件的SMTP流量。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -96,7 +96,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
-   <td> 随处<br /> </td> 
+   <td> Anywhere<br /> </td> 
    <td> HTTP或HTTPS流量（包括可投放性选件）。<br /> </td> 
   </tr> 
  </tbody> 
@@ -106,7 +106,7 @@ ht-degree: 1%
 
 ### 短信投放状态 {#sms-delivery-status}
 
-要跟踪短信投放，请执行以下操作(**nlserver sms**)，必须打开以下端口：
+要跟踪SMS投放(**nlserver sms**)，必须打开以下端口：
 
 <table> 
  <tbody> 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 ### 富客户端 {#rich-client}
 
-对于Adobe Campaign富客户端(**nlclient**)，必须打开以下端口：
+对于Adobe Campaign Rich Client (**nlclient**)，必须打开以下端口：
 
 <table> 
  <tbody> 
@@ -156,7 +156,7 @@ ht-degree: 1%
    <td> 目标<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>oracle</strong><br /> </td> 
+   <td> <strong>Oracle</strong><br /> </td> 
    <td> 1521/tcp<br /> </td> 
    <td> 数据库服务器<br /> </td> 
   </tr> 
@@ -185,7 +185,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> 任何地方。 每次单击跟踪的链接时，都会在服务器上生成一个HTTP请求。<br /> </td> 
+   <td> 任何地方。 每次点击跟踪的链接会在服务器上生成一个HTTP请求。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -202,7 +202,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> 任何地方。 在直接从Adobe Campaign平台管理Web窗体或使用镜像页面时，此变量是必需的。<br /> </td> 
+   <td> 任何地方。 直接从Adobe Campaign平台管理Web窗体或使用镜像页时必需。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -224,7 +224,7 @@ ht-degree: 1%
 
 ## 与Adobe Experience Manager集成 {#integration-with-adobe-experience-manager}
 
-如果安装是“内部部署”的，则Adobe Campaign与Adobe Experience Manager之间的集成需要打开多个端口。 有关配置此集成的更多信息，请参阅 [详细文档](../../integrations/using/about-adobe-experience-manager.md).
+如果安装是“内部部署”的，则Adobe Campaign与Adobe Experience Manager之间的集成需要打开多个端口。 有关配置此集成的更多信息，请参阅[详细文档](../../integrations/using/about-adobe-experience-manager.md)。
 
 <table> 
  <tbody> 
@@ -234,7 +234,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> 80<br /> </td> 
-   <td> AEM与Adobe Campaign的连接<br /> </td> 
+   <td> AEM与Adobe Campaign<br />的连接 </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 

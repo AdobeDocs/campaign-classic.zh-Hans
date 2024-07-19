@@ -21,13 +21,13 @@ ht-degree: 7%
 
 配置模板后，可以在Adobe Campaign的多个上下文中启动导入和导出操作。
 
-* 在 **[!UICONTROL Profiles and targets]** Adobe Campaign部分，单击 **[!UICONTROL Jobs]** 链接：这会将您转到现有导入和导出列表。
+* 在Adobe Campaign工作区的&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;部分中，单击&#x200B;**[!UICONTROL Jobs]**&#x200B;链接：这会将您转到现有导入和导出列表。
 
-  单击 **[!UICONTROL Create]** 按钮，并选择要执行的作业类型。
+  单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮并选择要执行的作业类型。
 
   ![](assets/s_ncs_user_import_from_home.png)
 
-* 您还可以从以下位置启动导入和导出： **[!UICONTROL Monitoring]** 部分：两个专用链接允许您直接启动导入或导出。
+* 您还可以从工作区的&#x200B;**[!UICONTROL Monitoring]**&#x200B;部分启动导入和导出：两个专用链接允许您直接启动导入或导出。
 
   ![](assets/s_ncs_user_import_from_production.png)
 

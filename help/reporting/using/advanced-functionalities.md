@@ -16,13 +16,13 @@ ht-degree: 4%
 
 
 
-作为技术用户，以及 [常规属性](../../reporting/using/properties-of-the-report.md)，您可以利用高级功能来配置报表，例如：
+作为技术用户，除了[常规属性](../../reporting/using/properties-of-the-report.md)之外，您还可以利用高级功能来配置报告，例如：
 
-* 创建复杂查询以在 **脚本** 活动。 [了解详情](#script-activity)
+* 创建复杂查询以处理&#x200B;**脚本**&#x200B;活动中的数据。 [了解详情](#script-activity)
 
 * 添加要在服务器或客户端上执行的外部脚本。 [了解详情](#external-script)
 
-* 调用具有的报表 **跳转** 活动。 [了解详情](#calling-up-another-report)
+* 调用具有&#x200B;**跳转**&#x200B;活动的报告。 [了解详情](#calling-up-another-report)
 
 * 为报表添加一个URL参数，使其更易于访问。 [了解详情](#calling-up-another-report)
 
@@ -32,12 +32,12 @@ ht-degree: 4%
 
 ### 引用外部脚本 {#external-script}
 
-您可以引用调用报表页面时将在客户端和/或服务器端执行的JavaScript代码。
+您可以引用在调用报表页面时将在客户端和/或服务器端执行的JavaScript代码。
 
 操作步骤：
 
-1. 编辑 [报表属性](../../reporting/using/properties-of-the-report.md) 然后单击 **[!UICONTROL Scripts]**.
-1. 单击 **[!UICONTROL Add]** 并选择要引用的脚本。
+1. 编辑[报告属性](../../reporting/using/properties-of-the-report.md)并单击&#x200B;**[!UICONTROL Scripts]**。
+1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择要引用的脚本。
 1. 然后选择执行模式。
 
    如果添加多个脚本，请使用工具栏的箭头来定义其执行顺序。
@@ -48,9 +48,9 @@ ht-degree: 4%
 
 ### 添加脚本活动 {#script-activity}
 
-时间 [设计报告](../../reporting/using/creating-a-new-report.md#modelizing-the-chart)，使用 **[!UICONTROL Script]** 活动处理数据，并轻松创建不启用SQL语言的复杂查询。 您可以在脚本窗口中直接输入查询。
+在[设计报表](../../reporting/using/creating-a-new-report.md#modelizing-the-chart)时，请使用&#x200B;**[!UICONTROL Script]**&#x200B;活动来处理数据并轻松创建不启用SQL语言的复杂查询。 您可以在脚本窗口中直接输入查询。
 
-此 **[!UICONTROL Texts]** 制表符用于定义文本字符串。 然后可以使用以下语法： **$（标识符）**. 有关使用文本的详细信息，请参阅 [添加页眉和页脚](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
+**[!UICONTROL Texts]**&#x200B;选项卡允许您定义文本字符串。 然后可以使用以下语法： **$(Identifier)**。 有关使用文本的详细信息，请参阅[添加页眉和页脚](../../reporting/using/element-layout.md#adding-a-header-and-a-footer)。
 
 >[!CAUTION]
 >
@@ -66,7 +66,7 @@ if( ctx.@_historyId.toString().length == 0 )
 
 ## 添加URL参数 {#defining-additional-settings}
 
-此 **[!UICONTROL Parameters]** 选项卡 [报表属性](../../reporting/using/properties-of-the-report.md) 允许您定义报表的其他设置：这些设置将在调用期间传递到URL。
+[报告属性](../../reporting/using/properties-of-the-report.md)的&#x200B;**[!UICONTROL Parameters]**&#x200B;选项卡允许您为报告定义其他设置：这些设置将在调用期间传递到URL。
 
 >[!CAUTION]
 >
@@ -74,37 +74,37 @@ if( ctx.@_historyId.toString().length == 0 )
 
 要创建新设置，请执行以下操作：
 
-1. 单击 **[!UICONTROL Add]** 按钮并输入设置的名称。
+1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并输入设置的名称。
 
    ![](assets/s_ncs_advuser_report_properties_09a.png)
 
 1. 如有必要，请指定是否强制使用该设置。
 
-1. 选择要创建的设置类型： **[!UICONTROL Filter]** 或 **[!UICONTROL Variable]**.
+1. 选择要创建的设置的类型： **[!UICONTROL Filter]**&#x200B;或&#x200B;**[!UICONTROL Variable]**。
 
-   此 **[!UICONTROL Filter entities]** 选项允许您将数据库的字段用作参数。
+   **[!UICONTROL Filter entities]**&#x200B;选项允许您使用数据库的字段作为参数。
 
    ![](assets/s_ncs_advuser_report_properties_09b.png)
 
-   数据直接在实体级别恢复： **ctx/recipient/@account**.
+   数据直接在实体级别恢复： **ctx/recipient/@account**。
 
-   此 **[!UICONTROL Variable]** 选项允许您创建或选择一个变量，该变量将作为URL的参数传递，并可在过滤器中使用。
+   **[!UICONTROL Variable]**&#x200B;选项允许您创建或选择将作为URL参数传递的变量，该变量可用于过滤器。
 
-此 **[!UICONTROL Response HTTP headers]** 可让您在使用iframe的HTML页面中包含报表页面时阻止点击劫持。 要避免点击劫持，您可以选择 **[!UICONTROL X-Frame-options header]** 行为：
+通过&#x200B;**[!UICONTROL Response HTTP headers]**，您可以在使用iframe的HTML页面中包含报表页面时阻止点击劫持。 要避免点击劫持，可以选择&#x200B;**[!UICONTROL X-Frame-options header]**&#x200B;行为：
 
-* **[!UICONTROL None]**：报表将没有 **[!UICONTROL X-Frame-options header]**.
-* **[!UICONTROL Same as origin]**：默认为新报表和重新发布报表设置。 主机名将与报告的URL相同。
-* **[!UICONTROL Deny]**：报表不能包含在使用iframe的HTML页面中。
+* **[!UICONTROL None]**：报告将没有&#x200B;**[!UICONTROL X-Frame-options header]**。
+* **[!UICONTROL Same as origin]**：默认为新报告和重新发布的报告设置。 主机名将与报告的URL相同。
+* **[!UICONTROL Deny]**：该报告不能包含在使用iframe的HTML页中。
 
 ![](assets/s_ncs_advuser_report_properties_09c.png)
 
 ## 添加变量 {#adding-variables}
 
-此 **[!UICONTROL Variables]** 选项卡包含报告中配置的变量列表。 这些变量将在报表的上下文中显示，并可用于计算。
+**[!UICONTROL Variables]**&#x200B;选项卡包含报告中配置的变量列表。 这些变量将在报表的上下文中显示，并可用于计算。
 
-单击 **[!UICONTROL Add]** 按钮以创建新变量。
+单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以创建新变量。
 
-要查看变量的定义，请选择该变量并单击 **[!UICONTROL Detail...]** 按钮。
+要查看变量的定义，请选择该变量并单击&#x200B;**[!UICONTROL Detail...]**&#x200B;按钮。
 
 ![](assets/s_ncs_advuser_report_properties_10.png)
 
@@ -118,4 +118,4 @@ if( ctx.@_historyId.toString().length == 0 )
 
 ## 调用另一报表 {#calling-up-another-report}
 
-A **跳转** 活动就像一个没有箭头的过渡：通过它，您可以从一个活动转到另一个活动或访问其他报表。
+**跳转**&#x200B;活动就像一个没有箭头的过渡：它允许您从一个活动转到另一个活动或访问另一个报告。

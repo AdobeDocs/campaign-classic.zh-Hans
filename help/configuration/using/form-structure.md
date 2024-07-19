@@ -17,9 +17,9 @@ ht-degree: 0%
 
 
 
-表单的描述是遵循表单架构语法的结构化XML文档 **xtk：form**.
+表单的描述是遵循表单架构&#x200B;**xtk：form**&#x200B;语法的结构化XML文档。
 
-输入表单的XML文档必须包含 `<form>` 具有的根元素 **name** 和 **命名空间** 属性填充表单名称和命名空间。
+输入表单的XML文档必须包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200B;属性的`<form>`根元素，才能填充表单名称和命名空间。
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -27,7 +27,7 @@ ht-degree: 0%
 </form>
 ```
 
-默认情况下，表单与具有相同名称和命名空间的数据架构关联。 要将表单与其他名称相关联，请设置 **entity-schema** 的属性 `<form>` 元素到架构键的名称。 为了说明输入表单的结构，让我们使用“cus：recipient”示例模式描述一个接口：
+默认情况下，表单与具有相同名称和命名空间的数据架构关联。 要将表单与不同的名称关联，请将`<form>`元素的&#x200B;**entity-schema**&#x200B;属性设置为架构键的名称。 为了说明输入表单的结构，让我们使用“cus：recipient”示例模式描述一个接口：
 
 ```xml
 <srcSchema name="recipient" namespace="cus">
@@ -57,13 +57,13 @@ ht-degree: 0%
 </form>
 ```
 
-编辑控件的说明从 `<form>` 根元素。 编辑控件输入于 **`<input>`** 元素和 **xpath** 包含字段在其架构中的路径的属性。
+编辑控件的说明从`<form>`根元素开始。 在具有&#x200B;**xpath**&#x200B;属性的&#x200B;**`<input>`**&#x200B;元素中输入编辑控件，该属性包含其架构中的字段路径。
 
 编辑控件会自动适应对应的数据类型，并使用架构中定义的标签。
 
 >[!NOTE]
 >
->您可以通过添加 **标签** 归因于 `<input>` 元素：\
+>您可以通过将&#x200B;**label**&#x200B;属性添加到`<input>`元素来重载在其数据架构中定义的标签：\
 >`<input label="Email address" xpath="@name" />`
 
 默认情况下，每个字段显示在一行中，并占用所有可用空间，具体取决于数据类型。
@@ -86,9 +86,9 @@ ht-degree: 0%
 </form>
 ```
 
-此 **`<container>`** 元素和 **colcount** 属性允许将子控件的显示强制到两列上。
+具有&#x200B;**colcount**&#x200B;属性的&#x200B;**`<container>`**&#x200B;元素允许您强制将子控件的显示强制到两列上。
 
-此 **colspan** 控件的属性按其值中输入的列数来扩展控件：
+控件上的&#x200B;**colspan**&#x200B;属性将控件扩展为在其值中输入的列数：
 
 ![](assets/d_ncs_integration_form_exemple3.png)
 
@@ -102,7 +102,7 @@ ht-degree: 0%
 </form> 
 ```
 
-通过填充 **type=&quot;frame&quot;** 属性，容器会在子控件周围添加一个框架，其标签包含在 **标签** 属性：
+通过填充&#x200B;**type=&quot;frame&quot;**&#x200B;属性，容器将使用&#x200B;**label**&#x200B;属性中包含的标签在子控件周围添加一个框架：
 
 ![](assets/d_ncs_integration_form_exemple4.png)
 
@@ -116,7 +116,7 @@ ht-degree: 0%
 </form>
 ```
 
-A **`<static>`** 元素可用于设置输入表单的格式：
+**`<static>`**&#x200B;元素可用于设置输入表单的格式：
 
 ![](assets/d_ncs_integration_form_exemple5.png)
 
@@ -130,15 +130,15 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </form>
 ```
 
-此 **`<static>`** 标记和 **分隔符** type用于添加分隔条，其标签包含在 **标签** 属性。
+具有&#x200B;**分隔符**&#x200B;类型的&#x200B;**`<static>`**&#x200B;标记允许您添加分隔条，该分隔条具有包含在&#x200B;**标签**&#x200B;属性中的标签。
 
-帮助文本已使用 `<static>` 标记和帮助类型。 文本的内容输入于 **标签** 属性。
+已使用带有帮助类型的`<static>`标记添加帮助文本。 文本的内容在&#x200B;**标签**&#x200B;属性中输入。
 
 ## 容器 {#containers}
 
-容器允许您对一组控件进行分组。 他们由 **`<container>`** 元素。 上面使用它们来格式化跨越多个列的控件。
+容器允许您对一组控件进行分组。 它们由&#x200B;**`<container>`**&#x200B;元素表示。 上面使用它们来格式化跨越多个列的控件。
 
-此 **xpath** 上的属性 `<container>` 允许您简化子控件的引用。 然后，控件的引用将相对于父项 `<container>` 元素。
+`<container>`上的&#x200B;**xpath**&#x200B;属性允许您简化子控件的引用。 然后，控件的引用相对于父`<container>`元素。
 
 不带“xpath”的容器示例：
 
@@ -181,13 +181,13 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </container>
 ```
 
-主容器由 **type=&quot;notebook&quot;** 属性。 选项卡在子容器中进行声明，选项卡的标签填充自 **标签** 属性。
+主容器由&#x200B;**type=&quot;notebook&quot;**&#x200B;属性定义。 选项卡在子容器中声明，选项卡的标签由&#x200B;**标签**&#x200B;属性填充。
 
 ![](assets/d_ncs_integration_form_exemple7.png)
 
 >[!NOTE]
 >
->A **style=&quot;down|up**（默认情况下）**&quot;** 特征强制将标签标签垂直定位在控件下方或上方。 此功能属于可选功能。
+>**style=&quot;down|up**（默认情况下）**&quot;**功能强制将选项卡标签垂直定位在控件下方或上方。 此功能属于可选功能。
 >`<container style="down" type="notebook">  … </container>`
 
 #### 图标列表 {#icon-list}
@@ -209,11 +209,11 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </container>
 ```
 
-主容器由 **type=&quot;iconbox&quot;** 属性。 在子容器中声明与图标关联的页面。 图标的标签填充自 **标签** 属性。
+主容器由&#x200B;**type=&quot;iconbox&quot;**&#x200B;属性定义。 在子容器中声明与图标关联的页面。 图标的标签由&#x200B;**标签**&#x200B;属性填充。
 
-页面的图标填充自 `img="<image>"` 属性，其中 `<image>` 是与由名称和命名空间组成的键对应的图像的名称（例如“xtk：properties.png”）。
+页面的图标是从`img="<image>"`属性中填充的，其中`<image>`是与由名称和命名空间组成的键对应的图像名称（例如“xtk：properties.png”）。
 
-这些图像可从 **[!UICONTROL Administration > Configuration > Images]** 节点。
+**[!UICONTROL Administration > Configuration > Images]**&#x200B;节点中的图像可用。
 
 #### 可见性容器 {#visibility-container}
 
@@ -230,13 +230,13 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </container>
 ```
 
-可见性容器由属性定义 **type=&quot;visibleGroup&quot;**. 此 **visibleIf** 属性包含可见性条件。
+可见性容器由属性&#x200B;**type=&quot;visibleGroup&quot;**&#x200B;定义。 **visibleIf**&#x200B;属性包含可见性条件。
 
 条件语法的示例：
 
-* **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**：测试字符串类型数据的相等性。 比较值必须用引号括起来。
-* **visibleIf=&quot;@gender >= 1和@gender！= 2英寸**：数字值的条件。
-* **visibleIf=&quot;@boolean1=true或@boolean2=false&quot;**：测试布尔字段。
+* **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**：测试字符串类型数据的等同性。 比较值必须用引号括起来。
+* **visibleIf=&quot;@gender >= 1和@gender！= 2&quot;**：数值的条件。
+* **visibleIf=&quot;@boolean1=true或@boolean2=false&quot;**：对布尔字段进行测试。
 
 #### 正在启用容器 {#enabling-container}
 
@@ -251,7 +251,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </container>
 ```
 
-启用容器由定义 **type=&quot;enabledGroup&quot;** 属性。 此 **enabledIf** 属性包含激活条件。
+启用容器由&#x200B;**type=&quot;enabledGroup&quot;**&#x200B;属性定义。 **enabledIf**&#x200B;属性包含激活条件。
 
 ## 编辑链接 {#editing-a-link}
 
@@ -269,17 +269,17 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 <input xpath="company"/>
 ```
 
-可通过编辑字段访问目标选择。 通过提前键入辅助输入，以便可以轻松地从输入的前几个字符找到目标元素。 然后，搜索将基于 **计算字符串** 在目标架构中定义。 如果架构在控件中验证后不存在，则会显示即时目标创建的确认消息。 确认会在目标表中创建新记录并将其与链接关联。
+可通过编辑字段访问目标选择。 通过提前键入辅助输入，以便可以轻松地从输入的前几个字符找到目标元素。 然后，搜索基于目标架构中定义的&#x200B;**计算字符串**。 如果架构在控件中验证后不存在，则会显示即时目标创建的确认消息。 确认会在目标表中创建新记录并将其与链接关联。
 
 下拉列表用于从已创建的记录列表中选择目标元素。
 
-此 **[!UICONTROL Modify the link]** （文件夹）图标启动一个选择表单，其中包含目标元素列表和筛选区域：
+**[!UICONTROL Modify the link]** （文件夹）图标将启动一个选择表单，其中包含目标元素列表和筛选区域：
 
 ![](assets/d_ncs_integration_form_exemple10.png)
 
-此 **[!UICONTROL Edit link]** （放大镜）图标将启动链接元素的编辑表单。 默认情况下，使用的形式是在目标架构的键上推导的。 此 **表单** 属性允许您强制使用编辑表单的名称（例如“cus：company2”）。
+**[!UICONTROL Edit link]** （放大镜）图标可启动链接元素的编辑表单。 默认情况下，使用的形式是在目标架构的键上推导的。 **表单**&#x200B;属性允许您强制使用编辑表单的名称（例如“cus：company2”）。
 
-您可以通过添加 **`<sysfilter>`** 元素（位于输入表单的链接定义中）：
+您可以通过从输入表单中的链接定义添加&#x200B;**`<sysfilter>`**&#x200B;元素来限制目标元素的选择：
 
 ```xml
 <input xpath="company">
@@ -289,7 +289,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </input>
 ```
 
-您还可以使用对列表进行排序 **`<orderby>`** 元素：
+您还可以使用&#x200B;**`<orderby>`**&#x200B;元素对列表进行排序：
 
 ```xml
 <input xpath="company">
@@ -304,9 +304,9 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 * **noAutoComplete**：禁用提前键入（值为“true”）
 * **createMode**：如果链接不存在，则即时创建该链接。 可能的值包括：
 
-   * **无**：禁用创建。 如果链接不存在，则显示错误消息
-   * **内嵌**：在编辑字段中创建包含内容的链接
-   * **版本**：在链接上显示编辑表单。 验证表单后，数据即会保存（默认模式）
+   * **none**：禁用创建。 如果链接不存在，则显示错误消息
+   * **inline**：创建包含编辑字段中的内容的链接
+   * **edition**：在链接上显示编辑表单。 验证表单后，数据即会保存（默认模式）
 
 * **noZoom**：链接上无编辑表单（值为“true”）
 * **表单**：重载目标元素的编辑表单
@@ -336,17 +336,17 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </input>
 ```
 
-列表控件由 **type=&quot;linklist&quot;** 属性。 列表路径必须引用收藏集链接。
+列表控件由&#x200B;**type=&quot;linklist&quot;**&#x200B;属性定义。 列表路径必须引用收藏集链接。
 
-列是通过 **`<input>`** 列表中的元素。 此 **xpath** 属性是指目标架构中字段的路径。
+这些列通过列表的&#x200B;**`<input>`**&#x200B;元素进行声明。 **xpath**&#x200B;属性引用目标架构中字段的路径。
 
 带有标签（在架构中的链接上定义）的工具栏会自动置于列表上方。
 
-列表可通过以下方式过滤 **[!UICONTROL Filters]** 按钮并配置为添加和排序列。
+可以通过&#x200B;**[!UICONTROL Filters]**&#x200B;按钮筛选列表，并将其配置为添加列并对列进行排序。
 
-此 **[!UICONTROL Add]** 和 **[!UICONTROL Delete]** 按钮允许您添加和删除链接中的收藏集元素。 默认情况下，添加元素会启动目标架构的编辑表单。
+通过&#x200B;**[!UICONTROL Add]**&#x200B;和&#x200B;**[!UICONTROL Delete]**&#x200B;按钮，您可以在链接中添加和删除收藏集元素。 默认情况下，添加元素会启动目标架构的编辑表单。
 
-此 **[!UICONTROL Detail]** 按钮添加时机 **zoom=&quot;true&quot;** 属性完成于 **`<input>`** 列表的标记：用于启动所选行的编辑表单。
+在列表的&#x200B;**`<input>`**&#x200B;标记上完成&#x200B;**zoom=&quot;true&quot;**&#x200B;属性后，将自动添加&#x200B;**[!UICONTROL Detail]**&#x200B;按钮：它允许您启动所选行的编辑表单。
 
 在加载列表时可以应用筛选和排序：
 
@@ -389,11 +389,11 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </input>
 ```
 
-此 **Xpatchoicetarget** 属性允许您从输入的链接启动选择表单。 创建关系表记录将自动更新指向当前收件人和所选服务的链接。
+**xpathChoiceTarget**&#x200B;属性允许您从输入的链接启动选择表单。 创建关系表记录将自动更新指向当前收件人和所选服务的链接。
 
 >[!NOTE]
 >
->此 **xpathEditTarget** 属性允许您在输入的链接上强制编辑所选行。
+>**xpathEditTarget**&#x200B;属性允许您强制编辑所输入链接上的选定行。
 
 ### 列表属性 {#list-properties}
 
@@ -402,9 +402,9 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 * **toolbarAlign**：修改工具栏的垂直或水平几何（可能的值：“垂直”|“水平”）
 * **img**：显示与列表关联的图像
 * **表单**：重载目标元素的编辑表单
-* **缩放**：添加 **[!UICONTROL Zoom]** 按钮以编辑目标元素
-* **xpathEditTarget**：在输入的链接上设置编辑
-* **Xpatchoicetarget**：此外，会在输入的链接上启动选择表单
+* **缩放**：添加&#x200B;**[!UICONTROL Zoom]**&#x200B;按钮以编辑目标元素
+* **xpathEditTarget**：设置对输入的链接进行编辑
+* **xpathChoiceTarget**：若要添加其他内容，请针对输入的链接启动选择表单
 
 ## 内存列表控件 {#memory-list-controls}
 
@@ -425,13 +425,13 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </input>
 ```
 
-列表控件必须填写 **type=&quot;list&quot;** 属性，且列表的路径必须引用收集要素。
+列表控件必须使用&#x200B;**type=&quot;list&quot;**&#x200B;属性填充，且列表的路径必须引用集合元素。
 
-这些列在子项中声明 **`<input>`** 列表的标记。 列标签和大小可以使用 **标签** 和 **colSize** 属性。
+这些列在列表的&#x200B;**`<input>`**&#x200B;子标记中声明。 可以使用&#x200B;**label**&#x200B;和&#x200B;**colSize**&#x200B;属性强制使用列标签和大小。
 
 >[!NOTE]
 >
->排序顺序箭头会在 **ordered=&quot;true&quot;** 属性将添加到数据架构的收藏集元素中。
+>当向数据架构中的集合元素添加&#x200B;**ordered=&quot;true&quot;**&#x200B;属性时，会自动添加排序顺序箭头。
 
 工具栏按钮可以水平对齐：
 
@@ -444,7 +444,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </input>
 ```
 
-此 **toolbarCaption** 属性强制水平对齐工具栏并输入列表上方的标题。
+**toolbarCaption**&#x200B;属性强制工具栏水平对齐，并输入列表上方的标题。
 
 #### 放大列表 {#zoom-in-a-list}
 
@@ -464,26 +464,26 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </input>
 ```
 
-编辑表单的完成日期为 `<form>` 个元素。 其结构与输入表单的结构相同。 此 **[!UICONTROL Detail]** 按钮会在 **zoom=&quot;true&quot;** 属性完成于 **`<input>`** 列表的标记。 此属性允许您启动所选行的编辑表单。
+编辑表单从列表定义下的`<form>`元素中完成。 其结构与输入表单的结构相同。 当在列表的&#x200B;**`<input>`**&#x200B;标记上完成&#x200B;**zoom=&quot;true&quot;**&#x200B;属性时，将自动添加&#x200B;**[!UICONTROL Detail]**&#x200B;按钮。 此属性允许您启动所选行的编辑表单。
 
 >[!NOTE]
 >
->添加 **zoomOnAdd=&quot;true&quot;** 属性强制在插入列表元素时调用编辑表单。
+>添加&#x200B;**zoomOnAdd=&quot;true&quot;**&#x200B;属性会强制在插入列表元素时调用编辑表单。
 
 ### 列表属性 {#list-properties-1}
 
 * **noToolbar**：隐藏工具栏（值为“true”）
 * **toolbarCaption**：重载工具栏标签
-* **toolbarAlign**：修改工具栏的位置（可能的值： &quot;vertical&quot;|&quot;horizontal&quot;）
+* **toolbarAlign**：修改工具栏的位置（可能的值：“垂直”|“水平”）
 * **img**：显示与列表关联的图像
 * **表单**：重载目标元素的编辑表单
-* **缩放**：添加 **[!UICONTROL Zoom]** 按钮以编辑目标元素
+* **缩放**：添加&#x200B;**[!UICONTROL Zoom]**&#x200B;按钮以编辑目标元素
 * **zoomOnAdd**：启动添加项的编辑表单
-* **Xpatchoicetarget**：此外，会在输入的链接上启动选择表单
+* **xpathChoiceTarget**：若要添加其他内容，请针对输入的链接启动选择表单
 
 ## 不可编辑的字段 {#non-editable-fields}
 
-要显示字段并阻止编辑它，请使用 **`<value>`** 标记或完成 **readOnly=&quot;true&quot;** 上的属性 **`<input>`** 标记之前。
+要显示字段并阻止对其进行编辑，请使用&#x200B;**`<value>`**&#x200B;标记或完成&#x200B;**`<input>`**&#x200B;标记上的&#x200B;**readOnly=&quot;true&quot;**&#x200B;属性。
 
 “性别”字段示例：
 
@@ -496,7 +496,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ## 单选按钮 {#radio-button}
 
-单选按钮允许您从多个选项中进行选择。 此 **`<input>`** 标记用于列出可能的选项，以及 **checkedvalue** attribute指定与选项关联的值。
+单选按钮允许您从多个选项中进行选择。 **`<input>`**&#x200B;标记用于列出可能的选项，**checkedValue**&#x200B;属性指定与选项关联的值。
 
 “性别”字段示例：
 
@@ -510,7 +510,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ## 复选框 {#checkbox}
 
-复选框反映布尔状态（选中或未选中）。 默认情况下，此控件由“Boolean”(true/false)字段使用。 接受默认值0或1的变量可以与此按钮关联。 此值可以通过 **checkvalue** 属性。
+复选框反映布尔状态（选中或未选中）。 默认情况下，此控件由“Boolean”(true/false)字段使用。 接受默认值0或1的变量可以与此按钮关联。 此值可通过&#x200B;**checkValue**&#x200B;属性过载。
 
 ```xml
 <input xpath="@boolean1"/>
@@ -527,7 +527,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 此控件在要编辑的一组字段上构建树。
 
-要编辑的控件将分组在 **`<container>`** 输入于 **`<input>`** 树控件的标记：
+要编辑的控件将分组到在树控件的&#x200B;**`<input>`**&#x200B;标记下输入的&#x200B;**`<container>`**&#x200B;中：
 
 ```xml
 <input nolabel="true" type="treeEdit">
@@ -546,7 +546,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ## 表达式字段 {#expression-field}
 
-表达式字段通过表达式动态更新字段； **`<input>`** 标记用于 **xpath** 属性，输入要更新的字段的路径以及 **expo** 包含更新表达式的属性。
+表达式字段通过表达式动态更新字段；**`<input>`**&#x200B;标记与&#x200B;**xpath**&#x200B;属性一起使用，以输入要更新的字段的路径以及包含更新表达式的&#x200B;**expo**&#x200B;属性。
 
 ```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
@@ -560,16 +560,16 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ### 更新上下文 {#updating-the-context}
 
-要修改表单的上下文，请使用 `<set expr="<value>" xpath="<field>"/>` 标记，其中 `<field>` 是目标字段，并且 `<value>` 是更新表达式或值。
+要修改表单的上下文，请使用`<set expr="<value>" xpath="<field>"/>`标记，其中`<field>`是目标字段，`<value>`是更新表达式或值。
 
-使用示例 `<set>` 标记：
+`<set>`标记的使用示例：
 
 * **`<set expr="'Test'" xpath="/tmp/@test" />`**：将“Test”值放置在临时位置/tmp/@test1
 * **`<set expr="'Test'" xpath="@lastName" />`**：使用“Test”值更新“lastName”属性上的实体
 * **`<set expr="true" xpath="@boolean1" />`**：将“boolean1”字段的值设置为“true”
-* **`<set expr="@lastName" xpath="/tmp/@test" />`**：使用“lastName”属性的内容进行更新
+* **`<set expr="@lastName" xpath="/tmp/@test" />`**：“lastName”属性的内容更新
 
-通过初始化和关闭表单时，可以更新表单的上下文 **`<enter>`** 和 **`<leave>`** 标记之间。
+通过&#x200B;**`<enter>`**&#x200B;和&#x200B;**`<leave>`**&#x200B;标记初始化和关闭表单时，可以更新表单的上下文。
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -585,13 +585,13 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 >[!NOTE]
 >
->此 `<enter>` 和 `<leave>` 标记可用于 `<container>` （“notebook”和“iconbox”类型）。
+>`<enter>`和`<leave>`标记可用于页面（“notebook”和“iconbox”类型）的`<container>`上。
 
 ### 表达式语言 {#expression-language-}
 
 可以在表单定义中使用宏语言来执行条件测试。
 
-此 **`<if expr="<expression>" />`** 如果验证了表达式，则标记执行在标记下指定的指令：
+如果表达式已验证，**`<if expr="<expression>" />`**&#x200B;标记将执行在标记下指定的指令：
 
 ```xml
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
@@ -599,7 +599,7 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 </if>
 ```
 
-此 **`<check expr="<condition>" />`** 标记与 **`<error>`** 标记阻止表单验证，如果不满足以下条件，则显示错误消息：
+与&#x200B;**`<error>`**&#x200B;标记结合使用的&#x200B;**`<check expr="<condition>" />`**&#x200B;标记阻止表单验证，如果不满足条件，则显示错误消息：
 
 ```xml
 <leave>
@@ -632,15 +632,15 @@ A **`<static>`** 元素可用于设置输入表单的格式：
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-存在 **type=&quot;wizard&quot;** 上的属性 `<form>` 元素允许您在表单构建中定义向导模式。 页面完成日期为 `<container>` 元素，是的子项 `<form>` 元素。 此 `<container>` 页面的元素使用标题的标题属性和描述进行填充，以在页面标题下显示描述。 此 **[!UICONTROL Previous]** 和 **[!UICONTROL Next]** 会自动添加按钮以允许在不同页面之间浏览。
+`<form>`元素上存在&#x200B;**type=&quot;wizard&quot;**&#x200B;属性，允许您在表单构造中定义向导模式。 这些页面是从`<container>`元素完成的，这些元素是`<form>`元素的子元素。 使用标题和描述的标题属性填充页面的`<container>`元素，以在页面标题下显示描述。 已自动添加&#x200B;**[!UICONTROL Previous]**&#x200B;和&#x200B;**[!UICONTROL Next]**&#x200B;按钮，以允许在不同页面之间浏览。
 
-此 **[!UICONTROL Finish]** 按钮保存输入的数据并关闭表单。
+“**[!UICONTROL Finish]**”按钮保存输入的数据并关闭表单。
 
 ### SOAP方法 {#soap-methods}
 
-SOAP方法执行可以从填充的 **`<leave>`** 标签进行标记。
+SOAP方法执行可以从页面末尾填充的&#x200B;**`<leave>`**&#x200B;标记中启动。
 
-此 **`<soapcall>`** 标记包含对方法的调用，并具有以下输入参数：
+**`<soapcall>`**&#x200B;标记包含对方法的调用，并具有以下输入参数：
 
 ```xml
 <soapCall name="<name>" service="<schema>">
@@ -649,22 +649,22 @@ SOAP方法执行可以从填充的 **`<leave>`** 标签进行标记。
 </soapCall>
 ```
 
-服务的名称及其实施架构可通过以下方式输入 **name** 和 **服务** 属性 **`<soapcall>`** 标记之前。
+服务的名称及其实现架构是通过&#x200B;**`<soapcall>`**&#x200B;标记的&#x200B;**name**&#x200B;和&#x200B;**service**&#x200B;属性输入的。
 
-有关输入参数的说明，请参见 **`<param>`** 下的元素 **`<soapcall>`** 标记之前。
+输入参数在&#x200B;**`<soapcall>`**&#x200B;标记下的&#x200B;**`<param>`**&#x200B;元素中进行了描述。
 
-参数类型必须通过 **type** 属性。 可能的类型如下所示：
+必须通过&#x200B;**type**&#x200B;特性指定参数类型。 可能的类型如下所示：
 
 * **字符串**：字符串
-* **布尔型**：布尔型
-* **字节**：8位整数
-* **短**：16位整数
-* **长**：32位整数
-* **短**：16位整数
-* **多次**：双精度浮点数
-* **圆顶元素**：元素类型节点
+* **布尔值**：布尔值
+* **字节**： 8位整数
+* **短**： 16位整数
+* **long**： 32位整数
+* **短**： 16位整数
+* **double**：双精度浮点数
+* **DOMElement**：元素类型节点
 
-此 **exprIn** 属性包含作为参数传递的数据的位置。
+**exprIn**&#x200B;属性包含要作为参数传递的数据的位置。
 
 **示例**：
 

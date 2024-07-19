@@ -28,22 +28,22 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->如果增量查询的结果等于 **0** 在其执行之一期间，工作流将暂停，直到查询下一次程序化执行。 因此，在后续执行之前，不会处理增量查询之后的过渡和活动。
+>如果增量查询的结果在其中一个执行期间等于&#x200B;**0**，则工作流将暂停，直到查询下一次程序化执行。 因此，在后续执行之前，不会处理增量查询之后的过渡和活动。
 
 操作步骤：
 
-1. 在 **[!UICONTROL Scheduling & History]** 选项卡，选择 **[!UICONTROL Schedule execution]** 选项。 创建任务后，该任务将保持活动状态，并且仅在计划指定的执行查询的时间触发。 但是，如果该选项被禁用，则会立即执行查询 **就这么一次**.
+1. 在&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Schedule execution]**&#x200B;选项。 创建任务后，该任务将保持活动状态，并且仅在计划指定的执行查询的时间触发。 但是，如果该选项被禁用，则查询将立即执行&#x200B;**并且一次执行**。
 1. 单击 **[!UICONTROL Change]** 按钮。
 
-   在 **[!UICONTROL Schedule editing wizard]** 窗口中，可以配置频率类型、事件重复周期和事件有效期。
+   在&#x200B;**[!UICONTROL Schedule editing wizard]**&#x200B;窗口中，可以配置频率类型、事件重复周期和事件有效期。
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. 单击 **[!UICONTROL Finish]** 以保存计划。
+1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;保存计划。
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
-1. 的下部 **[!UICONTROL Scheduling & History]** 选项卡允许您选择要在历史记录中考虑的天数。
+1. **[!UICONTROL Scheduling & History]**&#x200B;选项卡的下部允许您选择要在历史记录中考虑的天数。
 
    ![](assets/edit_request_inc.png)
 
@@ -62,7 +62,7 @@ ht-degree: 3%
 ## 输出参数 {#output-parameters}
 
 * 表名
-* 架构
+* 模式
 * recCount
 
-这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms：recipient）和 **[!UICONTROL recCount]** 是表中的元素数。
+这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。

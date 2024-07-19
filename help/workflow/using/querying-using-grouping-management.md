@@ -27,40 +27,40 @@ ht-degree: 3%
 
 * 数据分组？
 
-  基于主键数超过30的电子邮件域。 此操作是通过 **[!UICONTROL Group by + Having]** 选项。 **[!UICONTROL Group by + Having]** 允许您分组数据（“分组依据”），并选择已分组的内容（“具有”）。
+  基于主键数超过30的电子邮件域。 此操作使用&#x200B;**[!UICONTROL Group by + Having]**&#x200B;选项执行。 **[!UICONTROL Group by + Having]**&#x200B;允许您对数据进行分组（“分组依据”），并选择已分组的内容（“具有”）。
 
 要创建此示例，请应用以下步骤：
 
-1. 打开 **[!UICONTROL Generic query editor]** 并选择收件人表(**nms：recipient**)。
+1. 打开&#x200B;**[!UICONTROL Generic query editor]**&#x200B;并选择收件人表(**nms：recipient**)。
 
    ![](assets/query_editor_02.png)
 
-1. 在 **[!UICONTROL Data to extract]** 窗口中，选择 **[!UICONTROL Email domain]** 和 **[!UICONTROL Primary key]** 字段。 对运行计数 **[!UICONTROL Primary key]** 字段。
+1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Email domain]**&#x200B;和&#x200B;**[!UICONTROL Primary key]**&#x200B;字段。 对&#x200B;**[!UICONTROL Primary key]**&#x200B;字段运行计数。
 
-   有关主键计数的详细信息，请参阅 [本节](../../platform/using/defining-filter-conditions.md#building-expressions).
+   有关主键计数的详细信息，请参阅[此部分](../../platform/using/defining-filter-conditions.md#building-expressions)。
 
-1. 查看 **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** 盒子。
+1. 选中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING)]**&#x200B;框。
 
    ![](assets/query_editor_nveau_29.png)
 
-1. 在 **[!UICONTROL Sorting]** 窗口，按降序对电子邮件域进行排序。 为此，请选中 **[!UICONTROL Yes]** 在 **[!UICONTROL Descending sort]** 列。 单击 **[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;窗口中，按降序对电子邮件域进行排序。 为此，请检查&#x200B;**[!UICONTROL Descending sort]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**。 单击 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_nveau_70.png)
 
-1. 在 **[!UICONTROL Data filtering]**，选择 **[!UICONTROL Filtering conditions]**. 转到 **[!UICONTROL Target elements]** 窗口，然后单击 **[!UICONTROL Next]**.
-1. 在 **[!UICONTROL Data grouping]** 窗口中，选择 **[!UICONTROL Email domain]** 通过单击 **[!UICONTROL Add]**.
+1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;中，选择&#x200B;**[!UICONTROL Filtering conditions]**。 转到&#x200B;**[!UICONTROL Target elements]**&#x200B;窗口并单击&#x200B;**[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Data grouping]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择&#x200B;**[!UICONTROL Email domain]**。
 
-   此数据分组窗口仅在 **[!UICONTROL Handle groupings (GROUP BY + HAVING]**)框已被选中。
+   此数据分组窗口仅在选中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING]**)框时显示。
 
    ![](assets/query_editor_blocklist_04.png)
 
-1. 在 **[!UICONTROL Grouping condition]** 窗口，指示大于30的主键计数，因为我们希望目标电子邮件域作为结果返回超过30次。
+1. 在&#x200B;**[!UICONTROL Grouping condition]**&#x200B;窗口中，指示大于30的主键计数，因为我们希望目标值超过30次的电子邮件域仅作为结果返回。
 
-   此窗口出现于 **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** 复选框：这是过滤(HAVING)分组结果的地方。
+   勾选&#x200B;**[!UICONTROL Manage groupings (GROUP BY + HAVING)]**&#x200B;框后将显示此窗口：这是筛选分组结果(HAVING)的地方。
 
    ![](assets/query_editor_blocklist_05.png)
 
-1. 在 **[!UICONTROL Data formatting]** 窗口，单击 **[!UICONTROL Next]**：此处无需设置格式。
-1. 在数据预览窗口中，单击 **[!UICONTROL Launch data preview]**：在本例中，将返回三个定位时间超过30次的不同电子邮件域。
+1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Next]**：此处不需要格式化。
+1. 在数据预览窗口中，单击&#x200B;**[!UICONTROL Launch data preview]**：在此处，将返回三个目标发送次数超过30次的不同电子邮件域。
 
    ![](assets/query_editor_blocklist_06.png)

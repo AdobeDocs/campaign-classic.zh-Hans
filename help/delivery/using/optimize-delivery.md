@@ -23,21 +23,21 @@ ht-degree: 4%
 
 有几个因素会直接影响服务器性能并拖慢平台运行速度：
 
-* 个性化元素的数量和类型：电子邮件中的个性化会从数据库中提取每个收件人的数据。 如果存在许多个性化元素，这会增加准备投放所需的数据量。  在中了解有关个性化的更多信息 [本节](about-personalization.md)
+* 个性化元素的数量和类型：电子邮件中的个性化会从数据库中提取每个收件人的数据。 如果存在许多个性化元素，这会增加准备投放所需的数据量。  在[本节](about-personalization.md)中了解有关个性化的更多信息
 
 * 服务器负载：当营销服务器同时处理多个不同的任务时，可能会降低性能。 营销服务器需要协调所有投放的所有传入和传出数据，以确保数据正确且及时。
 
-  **提示**  — 要避免这种情况，请与团队的其他成员协调投放计划，以确保最佳性能。
+  **提示** — 要避免这种情况，请与团队的其他成员协调投放计划，以确保最佳性能。
 
-* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循列出的准则 [在本文档中](../../workflow/using/workflow-best-practices.md#execution-and-performance).
+* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准则[。
 
-* 如果您符合条件，则可以利用 [Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans) 要监控您的平台，请使用 [性能监测](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hans) 功能。
+* 如果您符合条件，则可以利用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)，通过[性能监控](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hans)功能来监控您的平台。
 
 ## 检查网络配置 {#network-config}
 
 要在处理大量电子邮件时优化投放并避免误认为垃圾邮件发送者，请确保您具有合法的网络配置，不会试图隐藏服务器的身份。
 
-**提示**：使用与您品牌网站对应的透明发件人地址。 例如，旅行社公司经营瓦伦蒂诺连锁酒店。 其网站拥有valentino.com域。 为了推广巴黎的Valentino酒店，它使用paris.valentino.com子域。 因此，相关发件人地址可以是hotel@paris.valentino.com。
+**提示**：使用与品牌网站对应的透明发件人地址。 例如，旅行社公司经营瓦伦蒂诺连锁酒店。 其网站拥有valentino.com域。 为了推广巴黎的Valentino酒店，它使用paris.valentino.com子域。 因此，相关发件人地址可以是hotel@paris.valentino.com。
 
 ## 可投放性管理 {#deliverability-management}
 
@@ -47,9 +47,9 @@ ht-degree: 4%
 
    * 它是指电子邮件中的因素，这些因素决定了其被收件人服务器接受的能力。 ISP（Internet服务提供商）会过滤掉标识为垃圾邮件的电子邮件，或阻止下载图像。 如果他们确定某个域发送的电子邮件过多，则会限制将接受来自该发件人的电子邮件数量。
 
-   * 在检查电子邮件的可投放性时，您需要重点关注四个主要类别：数据质量、邮件和内容、发送基础架构和信誉。 有关此主题的更深入探讨，请参阅 [本节](about-deliverability.md).
+   * 在检查电子邮件的可投放性时，您需要重点关注四个主要类别：数据质量、邮件和内容、发送基础架构和信誉。 有关此主题的更深入探讨，请参阅[此部分](about-deliverability.md)。
 
-* 详细应用建议 [在本文档中](about-deliverability.md).
+* 应用此文档](about-deliverability.md)中详细[的建议。
 
 * 请联系您的Adobe代表寻求帮助。
 
@@ -61,7 +61,7 @@ ht-degree: 4%
 
 **提示**
 
-* 如果存在无效地址列表，Adobe建议通过以下方式将其导入隔离表 **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
+* 如果存在无效地址列表，Adobe建议通过&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**&#x200B;将其导入隔离表。
 
 * 在投放分析过程中，默认情况下会排除其地址被隔离的收件人：这些收件人未定位。 这样可加快投放速度，因为错误率对投放速度有显着的影响。 例如，当收件箱已满或地址不存在时，可以隔离电子邮件地址。 [了解详情](#identifying-quarantined-addresses-for-a-delivery)
 
@@ -76,4 +76,4 @@ ht-degree: 4%
 
 为避免将消息发送到无效地址、限制不当通信并提高发件人信誉，Adobe建议对订阅后确认实施双重选择加入机制。 这有助于确保收件人有意订阅。
 
-有关实施此机制的详细信息，请参见 [本节](../../web/using/use-cases-web-forms.md).
+[此部分](../../web/using/use-cases-web-forms.md)中概述了实现此机制的详细信息。

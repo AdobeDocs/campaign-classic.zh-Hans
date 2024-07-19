@@ -25,13 +25,13 @@ ht-degree: 3%
 
 * **外部帐户**
 
-  在 **[!UICONTROL Administration > Platform > External accounts]**，确保正确配置了以下外部SFTP帐户。 提及的SFTP服务器应由您的顾问在Adobe Experience Cloud中进行配置。
+  在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中，确保正确配置了以下外部SFTP帐户。 提及的SFTP服务器应由您的顾问在Adobe Experience Cloud中进行配置。
 
    * **[!UICONTROL importSharedAudience]** ：专门用于导入受众的SFTP帐户。
    * **[!UICONTROL exportSharedAudience]** ：专门用于导出受众的SFTP帐户。
 
 * **AMC数据源**
 
-  在 **[!UICONTROL Administration > Platform > AMC Data sources]**，请检查AMC数据源是否设置正确。
+  在&#x200B;**[!UICONTROL Administration > Platform > AMC Data sources]**&#x200B;中，检查是否正确设置了AMC数据源。
 
 在通过Experience Cloud受众共享受众或导入受众时，可能会丢失某些数据。 只传输ID（“访客ID”或“声明的ID”）能够与用户档案维度协调的记录。 Adobe Campaign无法识别的区段中的ID将不会导入。

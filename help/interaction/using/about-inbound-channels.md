@@ -17,9 +17,9 @@ ht-degree: 4%
 
 可以使用入站或出站渠道将优惠显示在各种优惠空间中。 本章详细介绍了入站渠道的一些特定功能。
 
-![](assets/do-not-localize/how-to-video.png) 您也可以观看此视频 [视频](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) 该信息详细说明了如何在入站渠道中提供优惠。
+![](assets/do-not-localize/how-to-video.png)您还可以观看此[视频](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html)，其中详细介绍如何在入站渠道中提供优惠。
 
-要由优惠引擎选择优惠，它必须获得批准并在实时环境中可用。有关更多信息，请参阅 [批准和激活优惠](../../interaction/using/approving-and-activating-an-offer.md).
+要由优惠引擎选择优惠，该优惠必须获得批准并在实时环境中可用。有关详细信息，请参阅[批准和激活优惠](../../interaction/using/approving-and-activating-an-offer.md)。
 
 当联系人入站时，可能会出现两种结果：网站是否可以识别正在浏览页面的用户。 优惠引擎根据是否识别用户来显示不同的优惠。
 
@@ -29,4 +29,4 @@ ht-degree: 4%
 >
 >对于入站交互，您必须专门配置选件引擎以呈现和更新一个或多个选件。
 >
->您还必须在优惠空间上启用单一模式。 有关详细信息，请参见 [创建优惠空间](../../interaction/using/creating-offer-spaces.md) 部分。
+>您还必须在优惠空间上启用单一模式。 有关更多信息，请参阅[创建优惠空间](../../interaction/using/creating-offer-spaces.md)部分。

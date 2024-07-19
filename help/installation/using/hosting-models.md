@@ -21,7 +21,7 @@ Adobe Campaign提供了三种托管模型供您选择，它们提供了灵活性
 
 >[!NOTE]
 >
->对于Adobe托管的环境，主要安装和配置步骤只能由Adobe执行，例如配置服务器和自定义实例配置文件。 要详细了解部署模式之间的主要差异，请参阅 [此页面](../../installation/using/capability-matrix.md).
+>对于Adobe托管的环境，主要安装和配置步骤只能由Adobe执行，例如配置服务器和自定义实例配置文件。 要了解有关部署模式之间主要差异的更多信息，请参阅[此页面](../../installation/using/capability-matrix.md)。
 
 ## Managed Services/托管
 
@@ -31,11 +31,11 @@ Adobe Campaign可以as a Managed Service部署：Adobe Campaign的所有组件�
 
 作为托管客户，大部分安装和配置步骤都由Adobe执行。 您可以访问以下部分以自定义实施：
 
-* 为每个品牌配置跟踪和镜像页面URL。 有关事务型消息，请参阅 [至此部分](../../message-center/using/additional-configurations.md#configuring-multibranding).
-* 安装客户端控制台：请参阅 [至此部分](../../installation/using/installing-the-client-console.md).
-* 通过阅读 [详细文档](../../delivery/using/about-deliverability.md).
-* 配置Campaign选项：请参阅 [至此部分](../../installation/using/configuring-campaign-options.md).
-* 配置CRM连接器：请参阅 [至此部分](../../platform/using/crm-connectors.md).
+* 为每个品牌配置跟踪和镜像页面URL。 有关事务型消息，请参阅[此章节](../../message-center/using/additional-configurations.md#configuring-multibranding)。
+* 安装客户端控制台：请参阅[本节内容](../../installation/using/installing-the-client-console.md)。
+* 通过阅读[详细文档](../../delivery/using/about-deliverability.md)，了解有关可投放性工具和最佳实践的更多信息。
+* 配置Campaign选项：请参阅[本节内容](../../installation/using/configuring-campaign-options.md)。
+* 配置CRM连接器：请参阅[本节内容](../../platform/using/crm-connectors.md)。
 
 ## 内部部署
 
@@ -45,13 +45,13 @@ Adobe Campaign可以内部部署：Adobe Campaign的所有组件（包括用户�
 
 作为内部部署客户，在开始部署Campaign Classic之前，请注意以下先决条件和建议：
 
-* 阅读 [兼容性矩阵](../../rn/using/compatibility-matrix.md) 其中列出了Adobe Campaign支持的所有系统和组件版本。
-* 根据您的环境，阅读 [Windows先决条件](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) 和 [Linux先决条件](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
-* 了解与数据库引擎相关的建议 [在此部分中](../../installation/using/database.md).
+* 阅读[兼容性矩阵](../../rn/using/compatibility-matrix.md)，其中列出了Adobe Campaign支持的所有系统和组件版本。
+* 根据您的环境，阅读Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)的[先决条件和Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)的[先决条件。
+* 在此部分](../../installation/using/database.md)中了解与数据库引擎[相关的建议。
 * 检查服务器上是否安装了所需的数据库访问层，以及是否可从Adobe Campaign帐户访问。 [了解详情](../../installation/using/application-server.md)。
-* 根据某些进程需要与其他进程通信或访问LAN和Internet来配置网络。 这意味着这些进程需要打开某些TCP端口。 [了解详情](../../installation/using/network-configuration.md) 关于网络配置要求。
-* 读取 [Campaign安全和隐私检查清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html).
-* 查看用于评估内部部署的硬件需求的一般准则 [本文内容](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html).
+* 根据某些进程需要与其他进程通信或访问LAN和Internet来配置网络。 这意味着这些进程需要打开某些TCP端口。 [了解有关](../../installation/using/network-configuration.md)网络配置要求的更多信息。
+* 阅读[Campaign安全和隐私检查清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)。
+* 请参阅本文](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)中有关估算内部部署[的硬件要求的一般准则。
 
 ## 混合
 
@@ -61,12 +61,12 @@ Adobe Campaign可以内部部署：Adobe Campaign的所有组件（包括用户�
 
 作为混合型客户，大部分安装和配置步骤都由Adobe执行。 您可以访问以下部分以自定义实施：
 
-* 配置事务型消息：请参阅 [至此部分](../../message-center/using/transactional-messaging-architecture.md).
-* 为每个品牌配置跟踪和镜像页面URL。 有关事务型消息，请参阅 [至此部分](../../message-center/using/additional-configurations.md#configuring-multibranding).
-* 安装客户端控制台：请参阅 [至此部分](../../installation/using/installing-the-client-console.md).
-* 安装内置软件包：请参阅 [至此部分](../../installation/using/installing-campaign-standard-packages.md).
-* 可交付性：配置 [MX规则](../../installation/using/email-deliverability.md#mx-configuration) 和 [电子邮件格式](../../installation/using/email-deliverability.md#managing-email-formats). 通过阅读 [详细文档](../../delivery/using/about-deliverability.md).
-* 配置Campaign选项：请参阅 [至此部分](../../installation/using/configuring-campaign-options.md).
-* 配置外部数据库（联合数据访问）：请参阅 [至此部分](../../installation/using/about-fda.md).
-* 配置CRM连接器：请参阅 [至此部分](../../platform/using/crm-connectors.md).
-* 要了解有关中间源部署原则的更多信息，请参阅 [至此部分](../../installation/using/mid-sourcing-deployment.md).
+* 配置事务性消息：请参阅[本节内容](../../message-center/using/transactional-messaging-architecture.md)。
+* 为每个品牌配置跟踪和镜像页面URL。 有关事务型消息，请参阅[此章节](../../message-center/using/additional-configurations.md#configuring-multibranding)。
+* 安装客户端控制台：请参阅[本节内容](../../installation/using/installing-the-client-console.md)。
+* 安装内置包：请参阅[本节内容](../../installation/using/installing-campaign-standard-packages.md)。
+* 可投放性：配置[MX规则](../../installation/using/email-deliverability.md#mx-configuration)和[电子邮件格式](../../installation/using/email-deliverability.md#managing-email-formats)。 通过阅读[详细文档](../../delivery/using/about-deliverability.md)，了解有关可投放性工具和最佳实践的更多信息。
+* 配置Campaign选项：请参阅[本节内容](../../installation/using/configuring-campaign-options.md)。
+* 配置外部数据库（联合数据访问）：请参阅[本节内容](../../installation/using/about-fda.md)。
+* 正在配置CRM连接器：请参阅[本节内容](../../platform/using/crm-connectors.md)。
+* 要了解有关中间源部署原则的更多信息，请参阅[本节内容](../../installation/using/mid-sourcing-deployment.md)。

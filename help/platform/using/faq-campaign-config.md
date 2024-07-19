@@ -42,7 +42,7 @@ Adobe Campaign 目前提供英语、法语、德语和日语共 4 种语言的�
 
 ## 如何配置电子邮件可投放性? {#how-to-configure-email-deliverability-}
 
-除了 [Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)，阅读可投放性技术建议，了解如何配置实例以最大程度地提升Campaign投放能力。
+除了[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)之外，请阅读可投放性技术建议，以了解如何配置实例以最大限度地提升Campaign投放能力。
 
 [单击此处以了解详情](../../delivery/using/about-deliverability.md)。
 
@@ -76,7 +76,7 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 请参阅[配置 CRM 连接器](../../platform/using/crm-connectors.md)，了解如何将 CRM 工具与 Adobe Campaign 同步。
 
-![](assets/do-not-localize/how-to-video.png) 观看此用例视频，网址为 [Adobe Campaign与Microsoft Dynamics 365集成](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+![](assets/do-not-localize/how-to-video.png)观看有关[Adobe Campaign与Microsoft Dynamics 365集成](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)的用例视频。
 
 ## 对于特定于计算机或用户的问题，如何执行软缓存清除？ {#perform-soft-cache-clear}
 

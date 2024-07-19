@@ -15,7 +15,7 @@ ht-degree: 1%
 
 
 
-下面详细介绍的工作流将随 **传输到中间源** 默认模块。 有关此模块的更多信息，请参阅 [《Campaign Classicv7安装指南》](../../installation/using/mid-sourcing-deployment.md).
+默认情况下，下面详述的工作流随&#x200B;**传输到中间源**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅[Campaign Classicv7安装指南](../../installation/using/mid-sourcing-deployment.md)。
 
 <table> 
  <tbody> 
@@ -32,7 +32,7 @@ ht-degree: 1%
   <tr> 
    <td> <span class="uicontrol">中间源（投放日志）</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
-   <td> 此工作流在中间源服务器上收集投放日志。 默认情况下，每小时触发一次。<br /> </td> 
+   <td> 此工作流在中间源服务器上收集投放日志。 默认情况下每小时触发一次。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

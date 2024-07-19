@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ## 发送短信消息 {#sending-sms-messages}
 
-要批准您的消息并将其发送给正在创建的投放的收件人，请单击 **[!UICONTROL Send]**.
+要批准您的邮件并将其发送给正在创建的投放的收件人，请单击&#x200B;**[!UICONTROL Send]**。
 
 验证和发送投放时的详细流程将在以下部分中介绍：
 
@@ -26,11 +26,11 @@ ht-degree: 3%
 
 ## 高级参数 {#advanced-parameters}
 
-此 **[!UICONTROL Properties]** 按钮提供了对高级投放参数的访问权限。 专用于短信投放的参数位于 **[!UICONTROL SMS parameters]** 的部分 **[!UICONTROL Delivery]** 选项卡。
+通过&#x200B;**[!UICONTROL Properties]**&#x200B;按钮可访问高级投放参数。 专用于短信投放的参数位于&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡的&#x200B;**[!UICONTROL SMS parameters]**&#x200B;部分。
 
 可以使用以下选项：
 
-* **发件人地址**：可让您使用限制为11个字符的字母数字字符串将投放发件人的名称个性化。 字段不能仅由数字组成。 您可以定义一个要显示的条件，例如，根据收件人的区号显示不同的名称：
+* **发件人地址**：允许您使用限制为11个字符的字母数字字符串，对投放发件人的名称进行个性化设置。 字段不能仅由数字组成。 您可以定义一个要显示的条件，例如，根据收件人的区号显示不同的名称：
 
   ```
   <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
@@ -41,20 +41,20 @@ ht-degree: 3%
   >查看您所在国家/地区有关编辑发件人姓名的法律。 您还应与操作员确认他们是否提供此功能。
 
 * **传输模式**：通过短信传输消息。
-* **优先级**：分配给消息的重要性级别。 **[!UICONTROL Normal]** 默认情况下，优先级处于选中状态。 询问您的服务提供商发送短信的费用 **[!UICONTROL High]** 优先级。
-* **应用程序类型**：选择要分配给短信投放的应用程序。 此 **[!UICONTROL Direct Marketing]** 默认情况下选中该选项，并且是最常用的选项。
+* **优先级**：分配给消息的重要性级别。 默认情况下已选择&#x200B;**[!UICONTROL Normal]**&#x200B;优先级。 询问您的服务提供商有关按&#x200B;**[!UICONTROL High]**&#x200B;优先级发送的短信的成本。
+* **应用程序类型**：选择要分配给短信投放的应用程序。 默认情况下已选中&#x200B;**[!UICONTROL Direct Marketing]**&#x200B;选项，该选项是最常用的选项。
 
-**NetSize连接器特定的参数**
+**特定于NetSize连接器的参数**
 
 ![](assets/s_user_mobile_sms_adv_netsize.png)
 
-* **为单个消息使用多个短信**：利用此功能，您可以通过多条短信消息发送长度超过160个字符的消息。
+* **为单个消息使用多个短信**：这允许您通过多个短信消息发送长度超过160个字符的消息。
 
-**SMPP连接器特定的参数**
+**特定于SMPP连接器的参数**
 
 ![](assets/s_user_mobile_sms_adv_smpp.png)
 
-* **每条消息的最大短信数**：利用此选项可设置用于发送消息的短信数量。 如果数字设置为0，则可以使用短信传递消息。 例如，如果短信数量设置为1或2，而消息超过此阈值，则不会发送该消息。
+* **每条消息的最大短信数**：此选项允许您设置用于发送消息的短信数。 如果数字设置为0，则可以使用短信传递消息。 例如，如果短信数量设置为1或2，而消息超过此阈值，则不会发送该消息。
 
 ## 监控和跟踪短信 {#monitoring-and-tracking-sms-deliveries}
 
@@ -66,9 +66,9 @@ ht-degree: 3%
 
 ## 处理入站消息 {#processing-inbound-messages}
 
-此 **nlserver sms** 模块定期查询短信路由器。 这允许Adobe Campaign跟踪投放的进度，并处理状态报告和收件人退订请求。
+**nlserver sms**&#x200B;模块定期查询SMS路由器。 这允许Adobe Campaign跟踪投放的进度，并处理状态报告和收件人退订请求。
 
-* **状态报表**：查看投放日志以检查消息的状态。
+* **状态报告**：查看投放日志以检查消息的状态。
 
   >[!NOTE]
   >
@@ -77,19 +77,19 @@ ht-degree: 3%
   > * 来自已删除的外部SMS帐户的状态报表无法正确处理。
   > * 短信帐户只能链接到单个外部帐户，以确保状态报表被归因于正确的帐户
 
-* **退订**：希望停止接收短信投放的收件人可以返回包含单词STOP的消息。 如果提供商根据合同条款允许，贵机构可通过以下方式检索报文 **入站SMS** 工作流活动，然后创建查询以启用 **不再联系此收件人** 相关收件人的选项。
+* **取消订阅**：希望停止接收短信投放的收件人可以返回包含STOP一词的消息。 如果提供商根据合同条款允许，则您可通过&#x200B;**入站SMS**&#x200B;工作流活动检索消息，然后创建查询以启用相关收件人的&#x200B;**不再联系此收件人**&#x200B;选项。
 
-  请参阅 [工作流](../../workflow/using/architecture.md) 指南。
+  请参阅[工作流](../../workflow/using/architecture.md)指南。
 
 ## InSMS模式 {#insms-schema}
 
 InSMS模式包含与传入的短信相关的信息。 这些字段的描述可通过desc属性获得。
 
-* **message**：收到的短信的内容。
-* **来源**：消息原点的手机号码。
-* **providerId**：SMSC（消息中心）返回消息的标识符。
-* **已创建**：将传入消息插入Adobe Campaign的日期。
-* **extAccount**：Adobe Campaign外部帐户。
+* **消息**：收到的短信内容。
+* **origin**：消息来源的手机号码。
+* **providerId**： SMSC（消息中心）返回的消息的标识符。
+* **已创建**：将传入消息插入到Adobe Campaign中的日期。
+* **extAccount**： Adobe Campaign外部帐户。
 
   >[!IMPORTANT]
   >
@@ -98,14 +98,14 @@ InSMS模式包含与传入的短信相关的信息。 这些字段的描述可�
   >如果使用的运算符不是NetSize，则这些字段被视为空。
 
 * **别名**：传入消息的别名。
-* **分隔符**：消息别名和正文之间的分隔符。
-* **messagedate**：操作员给定的消息日期。
-* **receivalDate**：SMSC（消息中心）收到来自操作员的消息日期。
+* **分隔符**：邮件别名和正文之间的分隔符。
+* **messageDate**：操作员提供的消息日期。
+* **receivalDate**： SMSC（消息中心）收到来自操作员的消息日期。
 * **deliveryDate**：由SMSC（消息中心）发送的日期消息。
-* **largeAccount**：链接到传入短信的客户帐户代码。
-* **countryCode**：运算符国家/地区代码。
-* **operatorcode**：运营商网络代码。
-* **linkedSmsId**：链接到传出短信的Adobe Campaign标识符(broadlogId)，其中该SMS是响应。
+* **largeAccount**：链接到传入SMS的客户帐户代码。
+* **国家/地区代码**：操作员国家/地区代码。
+* **operatorCode**：操作员网络代码。
+* **linkedSmsId**：链接到传出短信的Adobe Campaign标识符(broadlogId)，其中此短信是响应。
 
 ## 管理自动回复（美国法规） {#managing-automatic-replies--american-regulation-}
 
@@ -117,7 +117,7 @@ InSMS模式包含与传入的短信相关的信息。 这些字段的描述可�
 
 >[!IMPORTANT]
 >
->以下详细过程仅对SMPP连接器有效，扩展通用SMPP连接器除外。 有关详细信息，请参见 [创建SMPP外部帐户](sms-set-up.md#creating-an-smpp-external-account) 部分。
+>以下详细过程仅对SMPP连接器有效，扩展通用SMPP连接器除外。 有关更多信息，请参阅[创建SMPP外部帐户](sms-set-up.md#creating-an-smpp-external-account)部分。
 >
 >它构成了美国运营商在美国开展营销活动的认证流程的一部分。 对订户包含关键字的短信消息的这些回复必须在收到订户的消息后立即发送回订户。
 
@@ -139,9 +139,9 @@ InSMS模式包含与传入的短信相关的信息。 这些字段的描述可�
    </autoreply>
    ```
 
-1. 对于 **name** 的属性 **`<shortcode>`** 标签，指定将出现在邮件发件人名称位置的短代码。
+1. 对于&#x200B;**`<shortcode>`**&#x200B;标记的&#x200B;**name**&#x200B;属性，指定将在邮件发件人名称位置显示的短代码。
 
-   在每个 **`<reply>`** 标签，输入 **关键词** 具有关键字的属性以及 **文本** 属性中显示的消息，您要为该关键字发送该消息。
+   在每个&#x200B;**`<reply>`**&#x200B;标记中，输入带有关键字的&#x200B;**关键字**&#x200B;属性，以及带有要为该关键字发送的消息的&#x200B;**文本**&#x200B;属性。
 
    >[!NOTE]
    >
@@ -156,11 +156,11 @@ InSMS模式包含与传入的短信相关的信息。 这些字段的描述可�
    <reply keyword="QUIT" text="You will not receive SMS anymore" />
    ```
 
-1. 完成后，以名称保存此文件 **smsAutoReply.xml**.
+1. 完成后，以名称&#x200B;**smsAutoReply.xml**&#x200B;保存此文件。
 
    请注意，在Linux中，文件名称区分大小写。
 
-1. 将此文件复制到 **会议** Adobe Campaign目录，与Web服务器位于同一位置。
+1. 将此文件复制到Adobe Campaign中的&#x200B;**conf**&#x200B;目录中，与Web服务器位于同一位置。
 
 >[!IMPORTANT]
 >

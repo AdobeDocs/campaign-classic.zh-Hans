@@ -23,15 +23,15 @@ ht-degree: 4%
 
 有三种不同的阈值：
 
-* 此 **Web连接阈值**，已在Web服务器中配置。 要修改它，请与系统管理员联系。
+* 在Web服务器中配置的&#x200B;**Web连接阈值**。 要修改它，请与系统管理员联系。
 
-* 此 **数据库连接阈值**. 要修改它，请与数据库管理员联系。
+* **数据库连接阈值**。 要修改它，请与数据库管理员联系。
 
-* 此 **Adobe Campaign连接阈值**，可在以下两个位置使用：
+* **Adobe Campaign连接阈值**&#x200B;在以下两个位置可用：
 
-   * **Tomcat** 侧：所有查询实际都到达了Adobe Campaign Tomcat客户端。
+   * **Tomcat**&#x200B;端：所有查询实际都到达了Adobe Campaign Tomcat客户端。
 
-     此阈值配置于 **nl6/tomcat-X/conf/server.xml** 文件。 此 **maxThreads** 属性允许您提高一次处理的查询数量的阈值。 例如，可以将其更改为250。
+     此阈值在&#x200B;**nl6/tomcat-X/conf/server.xml**&#x200B;文件中配置。 **maxThreads**&#x200B;属性允许您提高一次处理的查询数量的阈值。 例如，可以将其更改为250。
 
      ```
      <Connector protocol="HTTP/1.1" port="8080"
@@ -47,7 +47,7 @@ ht-degree: 4%
 
    * **数据库**：由进程在数据库上同时打开的所有连接集。
 
-     此阈值在文件中配置 **nl6/conf/serverConf.xml**. 此 **maxCnx** 属性位于 **数据源池** 可让您提高同时处理的查询的阈值。
+     此阈值在文件&#x200B;**nl6/conf/serverConf.xml**&#x200B;中配置。 位于&#x200B;**数据源池**&#x200B;中的&#x200B;**maxCnx**&#x200B;属性允许您提高同时处理的查询的阈值。
 
      ```
          <!-- Data source

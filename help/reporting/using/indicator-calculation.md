@@ -23,13 +23,13 @@ ht-degree: 3%
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> 打开次数<br /> </td> 
+   <td> 打开<br /> </td> 
    <td> @opens<br /> </td> 
    <td> URL主键等于1的所有@totalClicks的总和。<br /> </td> 
    <td> sum(Iif([@url-id]=1， @totalClicks， 0))<br /> </td> 
@@ -41,7 +41,7 @@ ht-degree: 3%
    <td> sum(Iif([url/@type]=1， @totalClicks， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 交易<br /> </td> 
+   <td> 事务<br /> </td> 
    <td> @transactions<br /> </td> 
    <td> URL类型等于“Transaction”的所有@totalClicks的总和。<br /> </td> 
    <td> sum(Iif([url/@type]=5， @totalClicks， 0))<br /> </td> 
@@ -49,20 +49,20 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-此报表基于 **[!UICONTROL Consolidated tracking]** 表(nms：trackingStats)。 显示报表时，出于性能原因，使用此汇总表代替 **[!UICONTROL Recipient tracking logs]** 表(nms：trackingLogRcp)，并且不会实时计算它。 该表将在检索跟踪日志后几分钟生成。 如果指标是最新的，则结果将与以下各项指标相同： **跟踪指标** 报告。 @totalclicks指示器表示5分钟内的点击总数。
+此报表基于&#x200B;**[!UICONTROL Consolidated tracking]**&#x200B;表(nms：trackingStats)。 在显示报表时，出于性能原因，使用此聚合表代替&#x200B;**[!UICONTROL Recipient tracking logs]**&#x200B;表(nms：trackingLogRcp)，并且不会实时计算它。 该表将在检索跟踪日志后几分钟生成。 如果指标是最新的，则结果将与&#x200B;**跟踪指标**&#x200B;报告的指标相同。 @totalclicks指示器表示5分钟内的点击总数。
 
 ## 无法投放项和退回 {#non-deliverables-and-bounces-1}
 
-**按错误类型细分**
+**按错误类型划分**
 
-此报表基于 **[!UICONTROL Delivery and tracking statistics]** 表(nms：deliveryLogStats)。
+此报表基于&#x200B;**[!UICONTROL Delivery and tracking statistics]**&#x200B;表(nms：deliveryLogStats)。
 
 <table> 
  <thead> 
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
@@ -76,25 +76,25 @@ ht-degree: 3%
   <tr> 
    <td> 用户未知<br /> </td> 
    <td> @unknownUser<br /> </td> 
-   <td> 状态等于“失败”且原因等于“用户未知”的所有消息计数。 <br /> </td> 
+   <td> 状态等于“失败”且原因等于“用户未知”的所有消息计数。<br /> </td> 
    <td> Count(@status=2和msg/@failureReason=1)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 不可到达 <br /> </td> 
+   <td> 无法访问<br /> </td> 
    <td> @unreachable<br /> </td> 
-   <td> 状态等于“失败”且原因等于“不可访问”的所有消息计数。 <br /> </td> 
+   <td> 状态等于“失败”且原因等于“不可访问”的所有消息计数。<br /> </td> 
    <td> Count(@status=2和msg/@failureReason=3)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 被拒绝<br /> </td> 
+   <td> 已拒绝<br /> </td> 
    <td> @refused<br /> </td> 
-   <td> 状态等于“失败”且原因等于“已拒绝”的所有邮件计数。 <br /> </td> 
+   <td> 状态等于“失败”且原因等于“已拒绝”的所有邮件计数。<br /> </td> 
    <td> Count(@status=2和msg/@failureReason=20)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 无效域<br /> </td> 
+   <td> 域<br />无效 </td> 
    <td> @invalidDomain<br /> </td> 
-   <td> 状态等于“失败”且原因等于“无效域”的所有消息计数。 <br /> </td> 
+   <td> 状态等于“失败”且原因等于“无效域”的所有消息计数。<br /> </td> 
    <td> Count(@status=2和msg/@failureReason=2)<br /> </td> 
   </tr> 
   <tr> 
@@ -106,13 +106,13 @@ ht-degree: 3%
   <tr> 
    <td> 收件箱已满<br /> </td> 
    <td> @mailBoxFull<br /> </td> 
-   <td> 状态等于“失败”且原因等于“收件箱已满”的所有邮件计数。 <br /> </td> 
+   <td> 状态等于“失败”且原因等于“收件箱已满”的所有邮件计数。<br /> </td> 
    <td> Count(@status=2和msg/@failureReason=5)<br /> </td> 
   </tr> 
   <tr> 
    <td> 错误<br /> </td> 
    <td> @value<br /> </td> 
-   <td> 此类错误的失败消息数。<br /> </td> 
+   <td> 此错误类型的失败消息数。<br /> </td> 
    <td> Count(@status=2且msg/@failureReason="错误类型的值")<br /> </td> 
   </tr> 
   <tr> 
@@ -122,7 +122,7 @@ ht-degree: 3%
    <td> percent(@value，@totalErrors)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 细分<br /> </td> 
+   <td> 划分<br /> </td> 
    <td> -<br /> </td> 
    <td> 相对于已处理消息总数的此类型错误百分比。<br /> </td> 
    <td> percent(@value，@totalProcessed)<br /> </td> 
@@ -130,13 +130,13 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-**按域细分**
+**按域划分**
 
-报告的第二部分详细列出了按Internet域而非错误类型划分的失败消息。 链接到 **错误** 在此例中，指示器(@value)为：Count(@status=2和@domain=&quot;Value of the domain name&quot;)，即此域的所有状态为失败的消息计数。
+报告的第二部分详细列出了按Internet域而非错误类型划分的失败消息。 在此例中，链接到&#x200B;**Error**&#x200B;指示器(@value)的公式为：Count(@status=2和@domain=&quot;Value of the domain name&quot;)，即此域的所有状态为失败的消息计数。
 
 ## 浏览器 {#browsers-1}
 
-此报表基于 **[!UICONTROL Internet Browser Statistics]** 表(nms：userAgentsStats)。
+此报表基于&#x200B;**[!UICONTROL Internet Browser Statistics]**&#x200B;表(nms：userAgentsStats)。
 
 **全局统计信息**
 
@@ -145,7 +145,7 @@ ht-degree: 3%
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
@@ -154,31 +154,31 @@ ht-degree: 3%
    <td> 访客<br /> </td> 
    <td> @totalVisitors<br /> </td> 
    <td> 此浏览器中至少点击过一次投放的目标收件人总数。<br /> </td> 
-   <td> @visitors总计<br /> </td> 
+   <td> 总@visitors<br /> </td> 
   </tr> 
   <tr> 
    <td> 页面查看次数<br /> </td> 
    <td> @totalPages<br /> </td> 
    <td> 对于所有投放，使用此浏览器的投放链接的总点击次数。<br /> </td> 
-   <td> @pages总计 <br /> </td> 
+   <td> 总@pages<br /> </td> 
   </tr> 
   <tr> 
    <td> 使用率<br /> </td> 
    <td> -<br /> </td> 
-   <td> 相对于访客总数的该浏览器的访客百分比。<br /> </td> 
-   <td> 百分比(@totalVisitors， sum(@totalVisitors)) <br /> </td> 
+   <td> 此浏览器的访客相对于访客总数的百分比。<br /> </td> 
+   <td> percent(@totalVisitors， sum(@totalVisitors)) <br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**每个浏览器的统计信息**
+每个浏览器的&#x200B;**统计信息**
 
 <table> 
  <thead> 
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
@@ -186,34 +186,34 @@ ht-degree: 3%
   <tr> 
    <td> 使用率<br /> </td> 
    <td> @visitors<br /> </td> 
-   <td> 每日使用此浏览器的访客数与当天访问次数最多的访客数的百分比。<br /> </td> 
-   <td> 百分比(sum(@visitors)，max(@visitorsOfTheDay))<br /> </td> 
+   <td> 每日使用此浏览器的访客数与当天测量访问次数最多的访客数的百分比。<br /> </td> 
+   <td> percent(sum(@visitors)，max(@visitorsOfTheDay))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 全局比率<br /> </td> 
+   <td> 全局速率<br /> </td> 
    <td> -<br /> </td> 
-   <td> 相较于使用所有浏览器的访客总数，此版本的访客百分比。<br /> </td> 
-   <td> percent(@totalVisitors， @globalVisitors)<br /> </td> 
+   <td> 与使用所有浏览器的访客总数相比，此版本的访客百分比。<br /> </td> 
+   <td> 百分比(@totalVisitors， @globalVisitors)<br /> </td> 
   </tr> 
   <tr> 
    <td> 相对权重<br /> </td> 
    <td> -<br /> </td> 
-   <td> 相较于使用此浏览器的访客总数，此版本的访客百分比。<br /> </td> 
-   <td> 百分比(@totalVisitors， sum(@totalVisitors)) <br /> </td> 
+   <td> 此版本的访客与使用此浏览器的访客总数相比的百分比。<br /> </td> 
+   <td> percent(@totalVisitors， sum(@totalVisitors)) <br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 分享到社交网络 {#sharing-to-social-networks-1}
 
-此报表基于 **[!UICONTROL Delivery]** (nms：delivery)， **[!UICONTROL Consolidated tracking]** (nms：trackingStats)，和 **[!UICONTROL Web tracking]** (nms：webTrackingLog)表。
+此报表基于&#x200B;**[!UICONTROL Delivery]** (nms：delivery)、**[!UICONTROL Consolidated tracking]** (nms：trackingStats)和&#x200B;**[!UICONTROL Web tracking]** (nms：webTrackingLog)表。
 
 <table> 
  <thead> 
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
@@ -221,13 +221,13 @@ ht-degree: 3%
   <tr> 
    <td> 要投放的消息数<br /> </td> 
    <td> @totalTarget<br /> </td> 
-   <td> 投放分析期间处理的消息总数。<br /> </td> 
-   <td> sum([属性/@totalTarget])<br /> </td> 
+   <td> 传递分析期间处理的邮件总数。<br /> </td> 
+   <td> sum([properties/@totalTarget])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 成功投放的次数<br /> </td> 
+   <td> 成功投放的数量<br /> </td> 
    <td> @success<br /> </td> 
-   <td> 已成功处理的消息数 <br /> </td> 
+   <td> 已成功处理的邮件数<br /> </td> 
    <td> sum([indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
@@ -282,22 +282,22 @@ ht-degree: 3%
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> 股份数量<br /> </td> 
+   <td> 共享数量<br /> </td> 
    <td> @forward<br /> </td> 
    <td> 在此社交网络上共享的邮件总数。<br /> </td> 
    <td> Sum(iIf([url/@category]="社交网络类型的值"，@totalClicks，0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 细分<br /> </td> 
+   <td> 划分<br /> </td> 
    <td> @percent<br /> </td> 
    <td> 此社交网络上的股份数相对于股份总数的百分比。<br /> </td> 
-   <td> 百分比(@forward， sum(@forward))<br /> </td> 
+   <td> percent(@forward， sum(@forward))<br /> </td> 
   </tr> 
   <tr> 
    <td> 共享率<br /> </td> 
@@ -315,27 +315,27 @@ ht-degree: 3%
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> 打开次数 <br /> </td> 
+   <td> 打开次数<br /> </td> 
    <td> @open<br /> </td> 
    <td> Web跟踪表中的跟踪行总数。<br /> </td> 
    <td> 计数<br /> </td> 
   </tr> 
   <tr> 
-   <td> 细分<br /> </td> 
+   <td> 划分<br /> </td> 
    <td> @percentOpen<br /> </td> 
-   <td> 此社交网络上的打开数占总打开数的百分比。<br /> </td> 
-   <td> 百分比(@open， sum(@open))<br /> </td> 
+   <td> 此社交网络上的打开数相对于打开总数的百分比。<br /> </td> 
+   <td> percent(@open， sum(@open))<br /> </td> 
   </tr> 
   <tr> 
    <td> 打开率<br /> </td> 
    <td> @rateOpen<br /> </td> 
-   <td> 相较于要投放的消息总数，此社交网络上的打开数。<br /> </td> 
+   <td> 与要发送的邮件总数相比，此社交网络上的打开数。<br /> </td> 
    <td> @open / @totalTarget<br /> </td> 
   </tr> 
  </tbody> 
@@ -343,14 +343,14 @@ ht-degree: 3%
 
 ## 共享活动统计信息 {#statistics-on-sharing-activities-1}
 
-此报表基于 **[!UICONTROL Delivery]** (nms：delivery)， **[!UICONTROL Consolidated tracking]** (nms：trackingStats)，和 **[!UICONTROL Web tracking]** (nms：webTrackingLog)表。
+此报表基于&#x200B;**[!UICONTROL Delivery]** (nms：delivery)、**[!UICONTROL Consolidated tracking]** (nms：trackingStats)和&#x200B;**[!UICONTROL Web tracking]** (nms：webTrackingLog)表。
 
 <table> 
  <thead> 
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
@@ -358,27 +358,27 @@ ht-degree: 3%
   <tr> 
    <td> 新联系人<br /> </td> 
    <td> @newContacts<br /> </td> 
-   <td> 链接到收件人的访客总数。<br /> </td> 
-   <td> 公式： count(@id)<br /> 筛选器：@recipient-id！= 0<br /> </td> 
+   <td> 链接到收件人的访客计数。<br /> </td> 
+   <td> 公式： count(@id)<br />筛选器： @recipient-id！= 0<br /> </td> 
   </tr> 
   <tr> 
-   <td> 打开次数<br /> </td> 
+   <td> 打开<br /> </td> 
    <td> @opened<br /> </td> 
-   <td> URL类型等于“Open”的所有@ids计数。<br /> </td> 
+   <td> URL类型等于“Open”的所有@ids的计数。<br /> </td> 
    <td> count (Iif([url/@type] = 2， @id， 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> 共享<br /> </td> 
    <td> @shared<br /> </td> 
-   <td> “电子邮件”、“facebook”、“twitter”、“美味”、“digg”、“google”、“linkedin”中包含的URL类别<br /> URL类别等于“email”、“facebook”、“twitter”、“delicious”、“digg”、“google”或“linkedin”的所有@totalClicks计数。<br /> </td> 
-   <td> count (Iif([url/@category] IN (email' 、 'facebook' 、 'twitter' 、 'delicious' 、 'digg' 、 'google' 、 'linkedin')， @totalClicks， 0))<br /> </td> 
+   <td> 包含在“email”、“facebook”、“twitter”、“delicious”、“digg”、“google”、“linkedin”中的URL类别数<br />所有URL类别等于“email”、“facebook”、“twitter”、“delicious”、“digg”、“google”或“linkedin”的@totalClicks数。<br /> </td> 
+   <td> count (Iif([url/@category] IN (email' ， 'facebook' ， 'twitter' ， 'delicious' ， 'digg' ， 'google' ， 'linkedin')， @totalClicks， 0))<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 操作系统 {#operating-systems-1}
 
-此报表基于 **[!UICONTROL Internet Browser Statistics]** 表(nms：userAgentsStats)。
+此报表基于&#x200B;**[!UICONTROL Internet Browser Statistics]**&#x200B;表(nms：userAgentsStats)。
 
 **全局统计信息**
 
@@ -387,7 +387,7 @@ ht-degree: 3%
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
@@ -395,20 +395,20 @@ ht-degree: 3%
   <tr> 
    <td> 访客<br /> </td> 
    <td> @totalVisitors / @days<br /> </td> 
-   <td> 操作系统所定向的、至少单击过一次投放的收件人每日平均总数。<br /> </td> 
-   <td> @visitors总计<br /> </td> 
+   <td> 操作系统所定向的收件人中至少点击过一次投放的每日平均总数。<br /> </td> 
+   <td> 总@visitors<br /> </td> 
   </tr> 
   <tr> 
    <td> 已查看的页面<br /> </td> 
    <td> @totalPages / @days<br /> </td> 
-   <td> 每日平均数，是指所有投放中每个操作系统的投放链接点击总数。<br /> </td> 
-   <td> @pages总计<br /> </td> 
+   <td> 所有投放的每个操作系统上的投放链接每日平均点击总数。<br /> </td> 
+   <td> 总@pages<br /> </td> 
   </tr> 
   <tr> 
    <td> 使用率<br /> </td> 
    <td> -<br /> </td> 
    <td> 与访客总数相比，每个操作系统的访客细分。<br /> </td> 
-   <td> 百分比(@totalVisitors， sum(@totalVisitors))<br /> </td> 
+   <td> percent(@totalVisitors， sum(@totalVisitors))<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -420,7 +420,7 @@ ht-degree: 3%
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
@@ -428,34 +428,34 @@ ht-degree: 3%
   <tr> 
    <td> 使用率<br /> </td> 
    <td> @visitors<br /> </td> 
-   <td> 此操作系统上每天的访客数与访问次数最多的当天测量的访客数的百分比。<br /> </td> 
-   <td> percent(@visitors)， max(@visitorsOfTheDay)<br /> </td> 
+   <td> 该操作系统上每天的访客数与当天测量访问次数最多的访客数的百分比。<br /> </td> 
+   <td> percent(sum(@visitors)， max(@visitorsOfTheDay))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 全局比率<br /> </td> 
+   <td> 全局速率<br /> </td> 
    <td> -<br /> </td> 
    <td> 与所有操作系统上的访客总数相比，每个版本的访客百分比。<br /> </td> 
-   <td> percent(@totalVisitors， @globalVisitors)<br /> </td> 
+   <td> 百分比(@totalVisitors， @globalVisitors)<br /> </td> 
   </tr> 
   <tr> 
    <td> 相对比率<br /> </td> 
    <td> -<br /> </td> 
-   <td> 每个版本的访客数与使用此操作系统的访客总数的百分比。<br /> </td> 
-   <td> 百分比(@totalVisitors， sum(@totalVisitors))<br /> </td> 
+   <td> 与使用此操作系统的访客总数相比，每个版本的访客百分比。<br /> </td> 
+   <td> percent(@totalVisitors， sum(@totalVisitors))<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 订阅跟踪 {#subscription-tracking-1}
 
-此报表基于 **[!UICONTROL Services]** 表(nms：service)。
+此报表基于&#x200B;**[!UICONTROL Services]**&#x200B;表(nms：service)。
 
 <table> 
  <thead> 
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
@@ -469,7 +469,7 @@ ht-degree: 3%
   <tr> 
    <td> 订阅<br /> </td> 
    <td> @_subscription<br /> </td> 
-   <td> 前一天订阅的次数(@action = 1)。<br /> </td> 
+   <td> 前一天的订阅计数(@action = 1)。<br /> </td> 
    <td> sum(Iif(@action = 1和@date &gt; addDays(getDate()， (-1))， 1， 0))<br /> </td> 
   </tr> 
   <tr> 
@@ -481,37 +481,37 @@ ht-degree: 3%
   <tr> 
    <td> 演变<br /> </td> 
    <td> -<br /> </td> 
-   <td> 订阅数减去退订数。 根据订阅者总数计算比率。<br /> </td> 
-   <td> Iif(number(@_subscription) &gt; number(@_unsubscription)， '+'， ")+format(@_subscription - @_unsubscription， 'number'， '# ##0')+ Iif(@_subscriber&gt;0，' (' + format(100*percent(@_subscription - @_unsubscription， @_subscriber)， 'number'， '#，##0.00')+ '%)'，")<br /> </td> 
+   <td> 订阅数减去退订数。 比率是相对于订阅者总数计算的。<br /> </td> 
+   <td> Iif(number(@_subscription) &gt; number(@_unsubscription)， '+'， ")+format(@_subscription - @_unsubscription， 'number'， '# ##0')+ Iif(@_subscriber&gt;0，' (' +格式(100*percent(@_subscription - @_unsubscription， @_subscriber)， 'number'， '#，##0.00')+ '%)'，")<br /> </td> 
   </tr> 
   <tr> 
    <td> 忠诚度<br /> </td> 
    <td> -<br /> </td> 
    <td> 相关期间的订阅者忠诚度比率。<br /> </td> 
-   <td> 1%(@_unsubscription，@_subscriber+@_subscription-@_unsubscription)<br /> </td> 
+   <td> 百分之1(@_unsubscription，@_subscriber+@_subscription-@_unsubscription)<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 跟踪指标 {#tracking-indicators-1}
 
-此报表基于 **[!UICONTROL Delivery and tracking statistics]** (nms：deliveryLogStats)和 **[!UICONTROL Consolidated tracking]** (nms：trackingStats)表。
+此报表基于&#x200B;**[!UICONTROL Delivery and tracking statistics]** (nms：deliveryLogStats)和&#x200B;**[!UICONTROL Consolidated tracking]** (nms：trackingStats)表。
 
 <table> 
  <thead> 
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> 要投放的消息<br /> </td> 
+   <td> 要传递的消息<br /> </td> 
    <td> @toDeliver<br /> </td> 
-   <td> 目标分析后的broadLog数量的计数。<br /> </td> 
-   <td> sum([属性/@toDeliver])<br /> </td> 
+   <td> 目标分析后的broadLog数量计数。<br /> </td> 
+   <td> sum([properties/@toDeliver])<br /> </td> 
   </tr> 
   <tr> 
    <td> 成功<br /> </td> 
@@ -520,9 +520,9 @@ ht-degree: 3%
    <td> sum([indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 所到达群体的不同打开次数<br /> </td> 
+   <td> 到达的群体<br />上存在不同的打开次数 </td> 
    <td> @estimatedRecipientOpen<br /> </td> 
-   <td> 根据html格式电子邮件的不同打开数推断所有电子邮件的不同打开数。<br /> </td> 
+   <td> 根据html格式的电子邮件非重复打开数推断所有电子邮件的非重复打开数。<br /> </td> 
    <td> Iif(([@toDeliver] - [@text]) = 0， 0， round(toDouble(@recipientOpen) * [@toDeliver] / ([@toDeliver] - [@text])， 0))<br /> </td> 
   </tr> 
   <tr> 
@@ -540,13 +540,13 @@ ht-degree: 3%
   <tr> 
    <td> 单击指向镜像页面的链接<br /> </td> 
    <td> @mirrorPage<br /> </td> 
-   <td> URL类别等于“Mirror page”的所有@ids计数。<br /> </td> 
+   <td> URL类别等于“镜像页面”的所有@ids计数。<br /> </td> 
    <td> count(Iif([url/@type]=6， @id， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 转发数量估计<br /> </td> 
+   <td> 转发的估计<br /> </td> 
    <td> @forward<br /> </td> 
-   <td> 不同用户数与至少点击一次电子邮件不同的收件人数之间的差异。<br /> </td> 
+   <td> 不同人员数与至少点击一次电子邮件的不同收件人数之间的差异。<br /> </td> 
    <td> @personClick - @recipientClick<br /> </td> 
   </tr> 
   <tr> 
@@ -562,7 +562,7 @@ ht-degree: 3%
    <td> Count(@status=2和msg/@failureReason=8)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 打开次数<br /> </td> 
+   <td> 打开<br /> </td> 
    <td> @recipientOpen<br /> </td> 
    <td> 所有跟踪日志中的所有@broadLog-ids计数。<br /> </td> 
    <td> Countdistinct ([@broadLog-id])<br /> </td> 
@@ -570,11 +570,11 @@ ht-degree: 3%
   <tr> 
    <td> 点击次数<br /> </td> 
    <td> @recipientClick<br /> </td> 
-   <td> URL类型等于“Email click”的@broadLog-ids的不同计数。 <br /> </td> 
+   <td> URL类型等于“Email click”的@broadLog-ids的不同计数。<br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1， @broadLog-id， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 原始反应度<br /> </td> 
+   <td> 原始反应性<br /> </td> 
    <td> -<br /> </td> 
    <td> 与至少打开一次投放的收件人数量相比，至少点击一次投放的收件人数量的百分比。<br /> </td> 
    <td> percent(@recipientClick，@recipientOpen)<br /> </td> 
@@ -582,26 +582,26 @@ ht-degree: 3%
   <tr> 
    <td> 达到的群体的不同点击次数<br /> </td> 
    <td> @personClick<br /> </td> 
-   <td> URL类别等于“Email click”的所有@source-ids计数。<br /> </td> 
+   <td> URL类别等于“Email click”的所有@source-ids的计数。<br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1， @source-id， 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> 累计点击次数<br /> </td> 
    <td> @totalRecipientClick<br /> </td> 
-   <td> URL类别等于“Email click”的所有@ids计数。<br /> </td> 
+   <td> URL类别等于“电子邮件点击”的所有@ids计数。<br /> </td> 
    <td> count(Iif([url/@type]=1， @id， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 收件人点击次数<br /> </td> 
+   <td> 收件人点击<br /> </td> 
    <td> @recipientClick<br /> </td> 
-   <td> URL类型等于“电子邮件点击”的@broadLog-ids的非重复计数。<br /> </td> 
+   <td> URL类型等于“Email click”的@broadLog-ids的非重复计数。<br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1， @broadLog-id， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 预计的反应性<br /> </td> 
+   <td> 估计的反应性<br /> </td> 
    <td> -<br /> </td> 
-   <td> 与至少打开一次投放的收件人估计人数相比，已单击一次投放的收件人人数的比率。<br /> </td> 
-   <td> percent(@recipientClick， @estimatedRecipientOpen<br /> </td> 
+   <td> 与至少打开一次投放的收件人估计人数相比，已至少点击一次投放的收件人人数的比率。<br /> </td> 
+   <td> 百分比(@recipientClick， @estimatedRecipientOpen<br /> </td> 
   </tr> 
   <tr> 
    <td> 已访问页面<br /> </td> 
@@ -610,21 +610,21 @@ ht-degree: 3%
    <td> count(Iif([url/@type]=4或[url/@type]=5， @id， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 交易<br /> </td> 
+   <td> 事务<br /> </td> 
    <td> @transaction<br /> </td> 
-   <td> URL类型等于“Transaction”的所有@ids计数。<br /> </td> 
+   <td> URL类型等于“Transaction”的所有@ids的计数。<br /> </td> 
    <td> count(Iif([url/@type]=5， @id， 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> 总金额<br /> </td> 
    <td> @amount<br /> </td> 
-   <td> URL类型等于“Transaction”的webTrackingLog/@amounts的总和。 <br /> </td> 
+   <td> URL类型等于“Transaction”的webTrackingLog/@amounts的总和。<br /> </td> 
    <td> Sum(Iif([url/@type]=5， webTrackingLog/@amount， 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> 平均交易金额<br /> </td> 
    <td> -<br /> </td> 
-   <td> 总金额与交易数量之比。<br /> </td> 
+   <td> 总金额与交易数之比。<br /> </td> 
    <td> div(@amount， @transaction)<br /> </td> 
   </tr> 
   <tr> 
@@ -636,11 +636,11 @@ ht-degree: 3%
   <tr> 
    <td> 每笔交易的平均项目数<br /> </td> 
    <td> -<br /> </td> 
-   <td> 项数与交易数之比。<br /> </td> 
+   <td> 项数与事务数的比率。<br /> </td> 
    <td> div(@article， @transaction)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 每条消息的平均金额<br /> </td> 
+   <td> 每封邮件的平均数量<br /> </td> 
    <td> -<br /> </td> 
    <td> 总金额与要投放的消息数之比。<br /> </td> 
    <td> div(@amount， @toDeliver)<br /> </td> 
@@ -692,14 +692,14 @@ ht-degree: 3%
 
 ## URL 和点击流 {#urls-and-click-streams-1}
 
-此报表基于 **[!UICONTROL Delivery]** 表(nms：delivery)。
+此报表基于&#x200B;**[!UICONTROL Delivery]**&#x200B;表(nms：delivery)。
 
 <table> 
  <thead> 
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
@@ -707,46 +707,46 @@ ht-degree: 3%
   <tr> 
    <td> 反应性<br /> </td> 
    <td> @reactivity<br /> </td> 
-   <td> 与至少打开一次投放的目标收件人的估计数量相比，已点击至少一次投放的目标收件人的数量。<br /> </td> 
-   <td> percent([指示器/@recipientClick]， [指示器/@estimatedRecipientOpen])<br /> </td> 
+   <td> 与至少打开一次投放的目标收件人的估计数量相比，已至少点击一次投放的目标收件人数量比率。<br /> </td> 
+   <td> percent([indicators/@recipientClick]， [indicators/@estimatedRecipientOpen])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 不同点击次数<br /> </td> 
+   <td> 非重复点击<br /> </td> 
    <td> @distinctClicks<br /> </td> 
-   <td> 与成功投放的消息数相比，已至少单击一次投放的不同用户数的比率。<br /> </td> 
-   <td> percent([指示器/@personClick]， [指示器/@success])<br /> </td> 
+   <td> 与成功投放的消息数相比，已至少点击一次投放的不同用户数的比率。<br /> </td> 
+   <td> percent([indicators/@personClick]， [indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
    <td> 累计点击次数<br /> </td> 
    <td> @totalClicks<br /> </td> 
-   <td> 目标收件人点击总数与成功投放邮件数之间的比率。<br /> </td> 
-   <td> percent([指示器/@totalRecipientClick]， [指示器/@success])<br /> </td> 
+   <td> 目标收件人的点击总数与成功传递的邮件数的比率。<br /> </td> 
+   <td> percent([indicators/@totalRecipientClick]， [indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
    <td> 点击次数<br /> </td> 
    <td> @_click<br /> </td> 
-   <td> URL主键与1不同的所有@totalClicks的计数<br /> </td> 
+   <td> URL主键不同于1<br />的所有@totalClicks的计数 </td> 
    <td> count(Iif([@url-id] ！= 1， @totalClicks， 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> 点击次数(%)<br /> </td> 
    <td> -<br /> </td> 
    <td> 点击数相对于累计点击总数的百分比。<br /> </td> 
-   <td> percent(@_click， @_total)<br /> </td> 
+   <td> 百分比(@_click， @_total)<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 投放摘要 {#delivery-summary-1}
 
-此报表基于 **[!UICONTROL Delivery]** 表(nms：delivery)。
+此报表基于&#x200B;**[!UICONTROL Delivery]**&#x200B;表(nms：delivery)。
 
 <table> 
  <thead> 
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
@@ -754,20 +754,20 @@ ht-degree: 3%
   <tr> 
    <td> 初始群体<br /> </td> 
    <td> @totalTarget<br /> </td> 
-   <td> 投放所定向的收件人总数。<br /> </td> 
-   <td> sum([属性/@totalTarget])<br /> </td> 
+   <td> 投放定向的收件人总数。<br /> </td> 
+   <td> sum([properties/@totalTarget])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 规则拒绝的消息<br /> </td> 
+   <td> 规则<br />拒绝的消息 </td> 
    <td> @reject<br /> </td> 
-   <td> 根据分类规则在分析期间忽略的地址数：未指定地址、已隔离、阻止列表时等。<br /> </td> 
-   <td> sum([属性/@reject])<br /> </td> 
+   <td> 根据类型规则在分析期间忽略的地址数：未指定地址、已隔离、阻止列表时忽略的地址等。<br /> </td> 
+   <td> sum([properties/@reject])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 要投放的消息<br /> </td> 
+   <td> 要传递的消息<br /> </td> 
    <td> @toDeliver<br /> </td> 
    <td> 投放分析后要投放的消息总数。<br /> </td> 
-   <td> sum([属性/@toDeliver])<br /> </td> 
+   <td> sum([properties/@toDeliver])<br /> </td> 
   </tr> 
   <tr> 
    <td> 成功<br /> </td> 
@@ -782,9 +782,9 @@ ht-degree: 3%
    <td> sum([indicators/@error])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 新隔离<br /> </td> 
+   <td> 新建隔离<br /> </td> 
    <td> @newQuarantine<br /> </td> 
-   <td> 投放失败（用户未知，域无效）后隔离的地址数。<br /> </td> 
+   <td> 投放失败（用户未知，无效域）后隔离的地址数。<br /> </td> 
    <td> sum([indicators/@newQuarantine])<br /> </td> 
   </tr> 
  </tbody> 
@@ -792,26 +792,26 @@ ht-degree: 3%
 
 ## 热门点击 {#hot-clicks-1}
 
-此报表基于投放(nms：delivery)和 **[!UICONTROL Consolidated tracking]** (nms：trackingStats)表。
+此报表基于Delivery(nms：delivery)和&#x200B;**[!UICONTROL Consolidated tracking]** (nms：trackingStats)表。
 
 此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。个性化块退订链接和镜像页面链接在总累计点击量中会被考虑在内，但不会显示在报表中。
 
-## 跟踪统计信息 {#tracking-statistics-1}
+## 跟踪统计数据 {#tracking-statistics-1}
 
-此报表基于 **[!UICONTROL Delivery]** 表(nms：delivery)。
+此报表基于&#x200B;**[!UICONTROL Delivery]**&#x200B;表(nms：delivery)。
 
 <table> 
  <thead> 
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> 交易<br /> </td> 
+   <td> 事务<br /> </td> 
    <td> @transactions<br /> </td> 
    <td> URL类型等于“Transaction”的所有@totalClicks的总和。<br /> </td> 
    <td> sum(Iif([url/@type] = 5， @totalClicks， 0))<br /> </td> 
@@ -833,28 +833,28 @@ ht-degree: 3%
 
 ## 投放统计信息 {#delivery-statistics-1}
 
-此报表基于 **[!UICONTROL Delivery and tracking statistics]** 表(nms：deliveryLogStats)。
+此报表基于&#x200B;**[!UICONTROL Delivery and tracking statistics]**&#x200B;表(nms：deliveryLogStats)。
 
 <table> 
  <thead> 
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> 已处理的电子邮件<br /> </td> 
+   <td> 已处理电子邮件<br /> </td> 
    <td> @processed<br /> </td> 
-   <td> 状态等于“就绪”、“已发送”或“失败”的消息总数。<br /> </td> 
+   <td> 状态为“就绪”、“已发送”或“失败”的消息总数。<br /> </td> 
    <td> @prepared + @error + @success<br /> </td> 
   </tr> 
   <tr> 
    <td> 已投放<br /> </td> 
    <td> @success<br /> </td> 
-   <td> 成功处理的消息数。<br /> </td> 
+   <td> 已成功处理的消息数。<br /> </td> 
    <td> 指示器/@success<br /> </td> 
   </tr> 
   <tr> 
@@ -866,11 +866,11 @@ ht-degree: 3%
   <tr> 
    <td> 软退回<br /> </td> 
    <td> @softBounce<br /> </td> 
-   <td> 状态等于“失败”且原因等于“无法联系”、“收件箱已满”、“无效域”、“帐户已禁用”、“未连接”或“已拒绝”的所有邮件总数<br /> </td> 
+   <td> 状态等于“失败”且原因等于“不可访问”、“收件箱已满”、“无效域”、“帐户已禁用”、“未连接”或“已拒绝”的所有邮件总数<br /> </td> 
    <td> @unreachable + @mailBoxFull + @invalidDomain + @disabled + @notConnected + @refused<br /> </td> 
   </tr> 
   <tr> 
-   <td> 打开次数<br /> </td> 
+   <td> 打开<br /> </td> 
    <td> @recipientOpen<br /> </td> 
    <td> 跟踪日志中的@broadLog-ids总数。<br /> </td> 
    <td> Countdistinct ([@broadLog-id])<br /> </td> 
@@ -878,7 +878,7 @@ ht-degree: 3%
   <tr> 
    <td> 点击次数<br /> </td> 
    <td> @personClick<br /> </td> 
-   <td> URL类别等于“Email click”的@source-ids件总数。 <br /> </td> 
+   <td> URL类别等于“Email click”的@source-ids件总数。<br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1， @source-id， 0)) <br /> </td> 
   </tr> 
   <tr> 
@@ -892,22 +892,22 @@ ht-degree: 3%
 
 ## 打开的细分 {#breakdown-of-opens-1}
 
-此报表基于 **投放** (nms：delivery)和 **跟踪日志** (nms：trackingLogRcp)表。
+此报表基于&#x200B;**投放** (nms：delivery)和&#x200B;**跟踪日志** (nms：trackingLogRcp)表。
 
 <table> 
  <thead> 
   <tr> 
    <th> <strong>标签</strong> <br /> </th> 
    <th> <strong>字段名称</strong> <br /> </th> 
-   <th> <strong>指示器描述</strong> <br /> </th> 
+   <th> <strong>指示器说明</strong> <br /> </th> 
    <th> <strong>指标计算公式</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> 打开次数<br /> </td> 
+   <td> 打开<br /> </td> 
    <td> @totalRecipientOpen<br /> </td> 
-   <td> URL主键等于1（打开）的所有@id的总和。 <br /> </td> 
+   <td> URL主键等于1（打开）的所有@id的总和。<br /> </td> 
    <td> count(Iif([@url-id] = 1， @id， 0))<br /> </td> 
   </tr> 
  </tbody> 
@@ -915,11 +915,11 @@ ht-degree: 3%
 
 ## 其他指标 {#other-indicators}
 
-此 **已发送** 指示器(@sent)，通过 **投放(nms：delivery) >指标** 节点对应于发送到服务提供商的SMS总数。 此指示器仅用于短信投放，不得用于其他类型的投放(切勿与 **@success** 和 **@processed** 指标)。
+通过&#x200B;**投放(nms：delivery) > Indicators**&#x200B;节点访问的&#x200B;**已发送**&#x200B;指示器(@sent)对应于发送到服务提供商的SMS总数。 此指示器仅用于SMS投放，不得用于其他类型的投放(不要与&#x200B;**@success**&#x200B;和&#x200B;**@processed**&#x200B;指示器混淆)。
 
 ## 指示器同步 {#indicator-synchronization}
 
-如果某些指标出现去同步或不一致情况，请在Adobe Campaign资源管理器中选择相关的投放，右键单击并选择 **[!UICONTROL Action>Recompute delivery and tracking indicators]**. 单击 **[!UICONTROL Next]**，然后单击 **[!UICONTROL Finish]**.
+如果某些指标出现去同步或不一致情况，请在Adobe Campaign资源管理器中选择相关投放，右键单击并选择&#x200B;**[!UICONTROL Action>Recompute delivery and tracking indicators]**。 单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Finish]**。
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 

@@ -15,6 +15,6 @@ ht-degree: 27%
 
 
 
-An **nlserver模块** 活动使用在中心窗口中指定的参数启动nlserver模块。
+**nlserver模块**&#x200B;活动使用中央窗口中指定的参数启动一个nlserver模块。
 
 ![](assets/nlserver_module_edit.png)

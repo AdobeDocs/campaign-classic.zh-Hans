@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## 范围的定义 {#definition-of-the-scope}
 
-打开 **[!UICONTROL Scope]** 选项卡以选择您的设置。
+打开&#x200B;**[!UICONTROL Scope]**&#x200B;选项卡以选择您的设置。
 
 以下项目为必备项：
 
@@ -48,8 +48,8 @@ ht-degree: 2%
 
 ## 添加报告轴 {#adding-reporting-axes}
 
-您可以通过在目标系统上添加报告轴或选件本身来增强模拟分析，方法是 **[!UICONTROL Calculations]** 选项卡。
+您可以通过&#x200B;**[!UICONTROL Calculations]**&#x200B;选项卡在目标上添加报告轴或选件本身来增强模拟分析。
 
-要执行此操作，请单击 **[!UICONTROL Add]** 按钮并选择相应的字段。 轴将用于计算模拟，并显示在分析报告中。 有关详细信息，请参见 [模拟跟踪](../../interaction/using/simulation-tracking.md).
+为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择相应的字段。 轴将用于计算模拟，并显示在分析报告中。 有关详细信息，请参阅[模拟跟踪](../../interaction/using/simulation-tracking.md)。
 
 ![](assets/offer_simulation_011.png)

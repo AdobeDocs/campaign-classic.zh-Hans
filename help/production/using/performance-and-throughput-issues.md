@@ -19,19 +19,19 @@ ht-degree: 2%
 
 首先，您应该检查是否已安装最新版本。 这可确保您拥有最新的功能和错误修复。
 
-请参阅 [发行说明](../../rn/using/latest-release.md) 以了解有关每个版本内容的更多信息。
+有关每个版本内容的更多信息，请参阅[发行说明](../../rn/using/latest-release.md)。
 
 ## 硬件和基础架构 {#hardware-and-infrastructure}
 
-关于本地Campaign Classic的硬件要求的一般准则详述于此 [页面](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html).
+此[页面](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)上详细说明了本地Campaign Classic的硬件要求的一般准则。
 
-咨询团队可以为托管客户提供一个工具，让您轻松查看数据库中各种类型的表使用的空间量以及SFTP站点上使用的空间。 此外，它还提供了一些工具，允许您清除不必要的数据。 联系人 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 如果您需要实施此工具。 以下是使用此工具需要检查的一些重要事项：
+咨询团队可以为托管客户提供一个工具，让您轻松查看数据库中各种类型的表使用的空间量以及SFTP站点上使用的空间。 此外，它还提供了一些工具，允许您清除不必要的数据。 如果您需要实施此工具，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 以下是使用此工具需要检查的一些重要事项：
 
 * 如果索引大小大于表大小，则需要使用真空。
 * 检查具有最大膨胀量的表。 如果这些表经常使用，则需要对其进行吸尘。
 * 数据库阻止可能会导致电子邮件停止发送。
 
-Adobe Campaign还提供 [工具](../../production/using/monitoring-processes.md#manual-monitoring) 检查CPU和RAM使用情况。 使用此工具并查看特定指标，例如： **内存**， **交换内存**， **磁盘**， **活动进程**. 如果值过高，您可以尝试减少工作流的数量，或安排工作流在不同时间启动。
+Adobe Campaign还提供了[工具](../../production/using/monitoring-processes.md#manual-monitoring)来检查CPU和RAM使用情况。 使用此工具并查看特定指示符，例如： **内存**、**交换内存**、**磁盘**、**活动进程**。 如果值过高，您可以尝试减少工作流的数量，或安排工作流在不同时间启动。
 
 ## 数据库检查 {#database-performances}
 
@@ -44,14 +44,14 @@ Adobe Campaign还提供 [工具](../../production/using/monitoring-processes.md#
 
 >[!NOTE]
 >
->有关更多信息，请参阅此章节： [数据库性能](../../production/using/database-performances.md).
+>有关详细信息，请参阅以下部分：[数据库性能](../../production/using/database-performances.md)。
 
 ## 应用程序配置 {#application-configuration}
 
 以下是有关应用程序配置最佳实践的文章列表：
 
-* MTA和MTAChild进程和内存： **mta** 模块将消息分发到其 **matachild** 子模块。 每个 **matachild** 在请求统计服务器的授权并发送之前准备消息。 请参阅此 [页面](../../installation/using/email-deliverability.md) 以了解更多信息。
-* TLS配置：不建议全局启用TLS，因为它可能会降低吞吐量。 相反，由可投放性团队管理的每个域的TLS设置应根据需要进行调整。 请参阅此 [页面](../../installation/using/email-deliverability.md#mx-configuration) 以了解更多信息。
+* MTA和MTAChild进程和内存： **mta**&#x200B;模块将消息分发到其&#x200B;**mtachild**&#x200B;子模块。 每个&#x200B;**mtachild**&#x200B;在请求统计服务器的授权并发送之前准备邮件。 有关详细信息，请参阅此[页面](../../installation/using/email-deliverability.md)。
+* TLS配置：不建议全局启用TLS，因为它可能会降低吞吐量。 相反，由可投放性团队管理的每个域的TLS设置应根据需要进行调整。 有关详细信息，请参阅此[页面](../../installation/using/email-deliverability.md#mx-configuration)。
 
   >[!NOTE]
   >
@@ -63,18 +63,18 @@ Adobe Campaign还提供 [工具](../../production/using/monitoring-processes.md#
 
 以下是与可投放性相关的最佳实践和文章列表：
 
-* IP信誉：如果IP信誉不够好，将会影响性能。 此 **投放能力监控** 模块提供了多种工具来跟踪平台的可交付性性能。 请参阅此 [页面](../../delivery/using/monitoring-deliverability.md).
+* IP信誉：如果IP信誉不够好，将会影响性能。 **可投放性监控**&#x200B;模块提供了多种工具来跟踪平台的可投放性性能。 请参阅此[页面](../../delivery/using/monitoring-deliverability.md)。
 * IP预热： IP预热由可投放性团队执行。 这包括在几周内通过新IP逐渐增加电子邮件数量。
 
   >[!NOTE]
   >
   >可交付性团队的参与基于合同，客户应联系其Adobe代表以获取与可交付性参与相关的信息。
 
-* IP关联设置：错误的IP关联设置可能会完全停止电子邮件（配置中的运算符/关联名称不正确）或降低吞吐量（关联中的IP数量较少）。 请参阅此 [页面](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* 电子邮件大小：电子邮件大小在吞吐量中起着重要作用。 建议的最大电子邮件大小为60 KB。 请参阅此 [页面](https://helpx.adobe.com/legal/product-descriptions/campaign.html). 在 [投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput) 报告，检查按小时传输的字节数。
+* IP关联设置：错误的IP关联设置可能会完全停止电子邮件（配置中的运算符/关联名称不正确）或降低吞吐量（关联中的IP数量较少）。 请参阅此[页面](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)。
+* 电子邮件大小：电子邮件大小在吞吐量中起着重要作用。 建议的最大电子邮件大小为60 KB。 请参阅此[页面](https://helpx.adobe.com/legal/product-descriptions/campaign.html)。 在[投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)报告中，检查按小时传输的字节数。
 * 大量无效收件人：当存在大量无效收件人时，可能会影响吞吐量。 MTA不断重试向无效收件人发送电子邮件。 请确保您的数据库得到了妥善维护。
 * 个性化程度：如果投放持续处于“Personalization正在进行中”状态，请检查个性化块中使用的JavaScript 。
 
 >[!NOTE]
 >
->另请参阅 [可投放性](../../delivery/using/about-deliverability.md) 部分。 要更深入地了解可投放性，请参阅 [Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans).
+>另请参阅[可投放性](../../delivery/using/about-deliverability.md)部分。 有关投放能力的更深入探讨，请参阅[Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。

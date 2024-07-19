@@ -18,7 +18,7 @@ ht-degree: 30%
 
 
 
-您可以 [使用工作流](#use-workflows) 将收件人用户档案导入或导出到Adobe Campaign数据库，或进行设置 [通用导入或导出作业](#create-jobs).
+您可以[使用工作流](#use-workflows)将收件人配置文件导入或导出到Adobe Campaign数据库，或者设置[通用导入或导出作业](#create-jobs)。
 
 ![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#import-profiles-video)
 
@@ -26,11 +26,11 @@ ht-degree: 30%
 
 导出和导入在专用模板中进行配置，通过导入和导出活动工作流执行。 它们可以根据计划自动重复，例如用于在多个信息系统之间自动交换数据。[了解详情](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
-如有必要，您可以通过以下方式创建临时导入或导出作业： **[!UICONTROL Generic imports and exports]** 功能如下所述。
+如有必要，您可以通过下面描述的&#x200B;**[!UICONTROL Generic imports and exports]**&#x200B;功能创建临时导入或导出作业。
 
 ## 创建作业{#create-jobs}
 
-要配置和执行数据导入和导出作业，请转到 **[!UICONTROL Profiles and targets]** 选项卡，然后单击 **[!UICONTROL Jobs]** 链接。 [了解详情](../../platform/using/about-generic-imports-exports.md)
+要配置和执行数据导入和导出作业，请转到&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Jobs]**&#x200B;链接。 [了解详情](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
@@ -41,4 +41,4 @@ ht-degree: 30%
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-提供了其他Campaign Classic操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
+[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。

@@ -15,7 +15,7 @@ ht-degree: 3%
 
 
 
-下面详细介绍的工作流随 **中间源平台** 默认模块。 有关此模块的更多信息，请参阅此 [部分](../../installation/using/mid-sourcing-deployment.md).
+默认情况下，下面详细介绍的工作流随&#x200B;**中间源平台**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[部分](../../installation/using/mid-sourcing-deployment.md)。
 
 <table> 
  <tbody> 
@@ -25,7 +25,7 @@ ht-degree: 3%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">投放指标</span> <br /> </td> 
+   <td> <span class="uicontrol">传递指示器</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryIndicators</span> <br /> </td> 
    <td> 此工作流可更新投放的投放跟踪指示器。 默认情况下，此工作流每小时触发一次。<br /> </td> 
   </tr> 

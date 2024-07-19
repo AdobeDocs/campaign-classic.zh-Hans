@@ -17,13 +17,13 @@ ht-degree: 0%
 
 # 找到Tomcat版本{#locate-tomcat-version}
 
-Adobe Campaign使用 **称为Apache Tomcat的嵌入式Web servlet** 在应用程序和任何外部界面（包括客户端控制台、跟踪的URL链接、SOAP调用等）之间处理HTTP/HTTPS请求。 对于任何面向外部的Adobe Campaign实例，它前面通常有一个外部Web服务器（通常是IIS或Apache）。
+Adobe Campaign使用名为Apache Tomcat **的**&#x200B;嵌入式Web servlet处理应用程序和任何外部接口(包括客户端控制台、跟踪的URL链接、SOAP调用等)之间的HTTP/HTTPS请求。 对于任何面向外部的Adobe Campaign实例，它前面通常有一个外部Web服务器（通常是IIS或Apache）。
 
-请按照以下步骤查找中使用的确切版本的Tomcat **Campaign Classic内部部署实例** 以帮助解决问题。
+请按照以下步骤查找&#x200B;**Campaign Classic内部部署实例**&#x200B;中使用的Tomcat的确切版本，以帮助解决问题。
 
 ## Adobe Campaign中使用的Tomcat
 
-Tomcat在Java上运行，需要安装JDK。 有关更多信息，请参阅 [Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md) 部分。
+Tomcat在Java上运行，需要安装JDK。 有关详细信息，请参阅[Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md)部分中的Java开发工具包(JDK)。
 
 Adobe Campaign中使用的Tomcat是一个自定义的嵌入版本，它没有使用Tomcat的完整正式发行版本的所有功能，并且可能不会遭受完整版本的所有漏洞。 Tomcat也不应该向外部Internet公开，并且公开的任何Adobe Campaign实例都应该具有外部Web服务器（IIS、Apache等） 在Tomcat前保护它。
 
@@ -41,19 +41,19 @@ Tomcat嵌入式版本的新版本或升级版本仅随Adobe Campaign本身的新
 
 >[!NOTE]
 >
->您必须有权访问您需要检查的Adobe Campaign服务器上的文件。 以下所述过程仅适用于 **内部部署托管模型**.
+>您必须有权访问您需要检查的Adobe Campaign服务器上的文件。 下面描述的过程仅适用于&#x200B;**内部部署托管模型**。
 
-1. 导航至 *\tomcat-11\lib* Adobe Campaign安装文件夹中的子文件夹(例如， *C:\Program Files\ [安装文件夹]* 在Windows中，或者 */usr/local/neolane/nl6* 在Linux中)。
+1. 导航到Adobe Campaign安装文件夹中的&#x200B;*\tomcat-11\lib*&#x200B;子文件夹(例如，Windows中的&#x200B;*C:\Program Files\ [Installation_folder]*&#x200B;或Linux中的&#x200B;*/usr/local/neolane/nl6*)。
 
-1. 复制文件 *catalina.jar* 到外部临时文件夹（例如，桌面），并将扩展名从.jar重命名为.zip。
+1. 将文件&#x200B;*catalina.jar*&#x200B;复制到外部临时文件夹（例如，桌面），并将扩展名从.jar重命名为.zip。
 
 1. 解压缩复制的文件。 这会生成许多子文件夹和文件。
 
-1. 在解压缩的文件/文件夹中，使用文本编辑器打开或读取以下包含的文件： *org/apache/catalina/util/ServerInfo.properties*. 您可能需要添加.txt扩展名以方便使用文本编辑器打开。
+1. 在解压缩的文件/文件夹中，使用文本编辑器打开或读取以下包含的文件： *org/apache/catalina/util/ServerInfo.properties*。 您可能需要添加.txt扩展名以方便使用文本编辑器打开。
 
 1. 完成后，如果该文件位于服务器计算机上，请删除您创建的临时文件。
 
-例如， *服务器信息。属性* Adobe Campaign的文件包含以下信息，指示Tomcat v11.X：
+例如，Adobe Campaign的&#x200B;*ServerInfo.properties*&#x200B;文件包含以下信息，表示Tomcat v11.X：
 
 *`server.info=Apache Tomcat/11.X`*
 

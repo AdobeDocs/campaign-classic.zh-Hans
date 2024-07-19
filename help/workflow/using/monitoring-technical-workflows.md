@@ -17,11 +17,11 @@ ht-degree: 5%
 
 需要对技术工作流进行监控，并在工作流失败时采取行动。
 
-中介绍了监测不同Campaign流程的其他方法 [此页面](../../production/using/monitoring-guidelines.md).
+[此页面](../../production/using/monitoring-guidelines.md)中介绍了监视不同Campaign进程的其他方法。
 
 ## 实例监视仪表板 {#instance-monitoring-dashboard}
 
-可以通过访问实例监控仪表板 **[!UICONTROL Monitoring]** 选项卡。
+可通过&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡访问实例监视仪表板。
 
 ![](assets/monitoring_technical_workflows1.png)
 
@@ -33,34 +33,34 @@ ht-degree: 5%
 
 ## 技术工作流 {#technical-workflows}
 
-技术工作流可从以下位置获取： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+技术工作流可从&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**&#x200B;获得。
 
 根据技术工作流，请按照下面详述的步骤操作，以确保一切都按预期运行。
 
-要更好地了解每个技术工作流的功能，请参阅此 [部分](about-technical-workflows.md).
+要更好地了解每个技术工作流应该做什么，请参阅此[部分](about-technical-workflows.md)。
 
-对象 **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**：
+对于&#x200B;**[!UICONTROL Database Cleanup workflow (‘cleanup’)]**：
 
-1. 检查 **[!UICONTROL Database Cleanup]** 工作流每天都运行并成功完成。 有关详细信息，请参阅此 [页面](../../production/using/database-cleanup-workflow.md)..
+1. 检查&#x200B;**[!UICONTROL Database Cleanup]**&#x200B;工作流是否每天运行并成功完成。 有关详细信息，请参阅此[页面](../../production/using/database-cleanup-workflow.md)。
 1. 查看日志以验证所用的时间在一段时间内相对稳定，不会干扰其他工作流。
 
-对象 **[!UICONTROL Tracking workflow (‘tracking’)]**：
+对于&#x200B;**[!UICONTROL Tracking workflow (‘tracking’)]**：
 
 检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此](delivery.md)章节[。
 
-对象 **[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**：
+对于&#x200B;**[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**：
 
-1. 检查 **[!UICONTROL Refresh for Deliverability]** 工作流每天都运行并成功完成。
+1. 检查&#x200B;**[!UICONTROL Refresh for Deliverability]**&#x200B;工作流是否每天运行并成功完成。
 1. 在日志中验证规则是否定期更新。
 
-对象 **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**：
+对于&#x200B;**[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**：
 
-1. 查看 **[!UICONTROL Campaign process]** 文件夹。 有关详细信息，请参见此 [ 页面](about-technical-workflows.md)。
+1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;文件夹下的所有工作流。 有关详细信息，请参见此 [ 页面](about-technical-workflows.md)。
 1. 检查工作流是否按计划运行，以及日记帐是否未突出显示重复出现的错误。
 
 ## 工作流监督 {#workflow-supervision}
 
-此 **[!UICONTROL Workflow supervisors]** 组应包含需要随时了解失败情况并且可以及时采取操作的操作员。
+**[!UICONTROL Workflow supervisors]**&#x200B;组应包含需要随时通知失败情况的操作员以及可以及时采取操作的操作员。
 
 ![](assets/monitoring_technical_workflows3.png)
 

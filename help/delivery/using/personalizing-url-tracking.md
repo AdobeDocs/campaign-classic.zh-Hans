@@ -15,11 +15,11 @@ ht-degree: 9%
 
 # 配置 URL 跟踪选项{#personalizing-url-tracking}
 
-可通过访问高级邮件跟踪设置 **[!UICONTROL Tracking & Images]** 图标（位于投放向导的工具栏中）。
+可通过投放向导工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;图标访问高级邮件跟踪设置。
 
 >[!NOTE]
 >
->此窗口中还配置了电子邮件中的图像管理。 请参阅 [添加图像](defining-the-email-content.md#adding-images).
+>此窗口中还配置了电子邮件中的图像管理。 请参阅[添加图像](defining-the-email-content.md#adding-images)。
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
@@ -29,7 +29,7 @@ ht-degree: 9%
 
   >[!CAUTION]
   >
-  >未在投放上激活跟踪时(即 **[!UICONTROL Activate tracking]** 选项未选中)，与跟踪相关的报表和数据不可用：打开、热点击和跟踪的URL报表不显示任何数据，并且 **[!UICONTROL Tracking logs]** 将不会显示此投放的选项卡。
+  >未在投放上激活跟踪（即未选择&#x200B;**[!UICONTROL Activate tracking]**&#x200B;选项）时，与跟踪相关的报表和数据不可用：打开、热门点击和跟踪的URL报表不会显示任何数据，也不会显示此投放的&#x200B;**[!UICONTROL Tracking logs]**&#x200B;选项卡。
 
 * 激活/停用消息打开跟踪功能。
 
@@ -39,7 +39,7 @@ ht-degree: 9%
 
 您可以为消息的每个URL单独激活或取消激活跟踪。 如需详细信息，请参阅[此小节](how-to-configure-tracked-links.md)。
 
-此 **[!UICONTROL Advanced]** 选项卡允许您个性化跟踪URL和开始URL的计算公式。
+通过&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡，可将跟踪URL和开始URL的计算公式个性化。
 
 ![](assets/s_ncs_user_email_del_tracking_param_adv.png)
 

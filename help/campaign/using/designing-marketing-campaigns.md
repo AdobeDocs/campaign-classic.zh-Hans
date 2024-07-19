@@ -15,16 +15,16 @@ ht-degree: 20%
 # 设计和执行营销活动{#designing-marketing-campaigns}
 
 
-Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。 Adobe Campaign就像一个营销策略的统一订单和执行中心。 有关详细信息，请参见 [访问活动](../../distributed/using/accessing-campaigns.md) 和 [创建营销活动](../../campaign/using/setting-up-marketing-campaigns.md).
+Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。 Adobe Campaign就像一个营销策略的统一订单和执行中心。 有关详细信息，请参阅[访问营销活动](../../distributed/using/accessing-campaigns.md)和[创建营销活动](../../campaign/using/setting-up-marketing-campaigns.md)。
 
-此外， **营销资源管理(MRM)** 模块允许您在协作模式下控制营销活动，方法是提供相关的任务、预算和营销资源的完整管理和实时跟踪。 利用营销资源管理，您可以优化和规范对内部和外部流程、资源和营销活动以及第三方关系（代理、打印机等）的管理。 如需详细信息，请参阅[此小节](../../mrm/using/about-marketing-resource-management.md)。
+此外，**营销资源管理(MRM)**&#x200B;模块允许您在协作模式下控制营销操作，方法是提供所涉及的任务、预算和营销资源的完整管理和实时跟踪。 利用营销资源管理，您可以优化和规范对内部和外部流程、资源和营销活动以及第三方关系（代理、打印机等）的管理。 如需详细信息，请参阅[此小节](../../mrm/using/about-marketing-resource-management.md)。
 
 >[!NOTE]
 >
->有关Adobe Campaign核心功能的更多信息，请参阅 [本节](../../platform/using/about-adobe-campaign-classic.md) 部分。\
->有关各种渠道上群体定位、消息个性化和消息投放的详细功能，请参见 [本节](../../delivery/using/steps-about-delivery-creation-steps.md).
+>有关Adobe Campaign核心功能的详细信息，请参阅[此部分](../../platform/using/about-adobe-campaign-classic.md)部分。\
+>[此部分](../../delivery/using/steps-about-delivery-creation-steps.md)中详细介绍了与各种渠道上的群体定位、消息个性化和消息投放相关的功能。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现营销活动关键概念](#video)
+![](assets/do-not-localize/how-to-video.png) [在视频中发现营销活动密钥概念](#video)
 
 ## 核心概念 {#core-concepts}
 
@@ -34,7 +34,7 @@ Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。
 
   营销策划可集中与营销策划相关的所有元素：投放、定位规则、成本、导出文件、相关文档等。 每个活动都附属于项目。
 
-  有关详细信息，请参见 [添加营销活动](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
+  有关详情，请参阅[添加营销活动](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign)。
 
 * **项目**
 
@@ -44,7 +44,7 @@ Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。
 
   营销计划可包含多个项目。 它链接到日历期间，有分配的预算，也可以链接到文档和目标。
 
-  有关详细信息，请参见 [营销活动日历](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
+  有关详细信息，请参阅[促销活动日历](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar)。
 
 * **工作流**
 
@@ -68,4 +68,4 @@ Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-提供了其他Campaign Classic操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
+[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。

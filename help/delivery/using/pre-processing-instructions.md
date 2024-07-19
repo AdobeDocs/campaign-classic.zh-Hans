@@ -22,8 +22,8 @@ ht-degree: 1%
 有三种类型的说明：
 
 * **[!DNL include]**：主要用于分解选项、个性化块、外部文件或页面中的某些代码。 [了解详情](#include)
-* **[!DNL value]**：授予对投放字段、投放变量和投放中加载的自定义对象的访问权限。 [了解详情](#value)
-* **[!DNL foreach]**：循环加载为自定义对象的数组。 [了解详情](#foreach)
+* **[!DNL value]**：授予投放字段、投放变量和投放中加载的自定义对象的访问权限。 [了解详情](#value)
+* **[!DNL foreach]**：循环作为自定义对象加载的数组。 [了解详情](#foreach)
 
 可以直接从投放向导中测试它们。 它们适用于内容预览以及单击跟踪按钮查看URL列表时。
 
@@ -71,16 +71,16 @@ ht-degree: 1%
 
 其中：
 
-* **[!DNL object]**：对象的名称（例如：投放、提供者等）。
+* **[!DNL object]**：对象的名称（例如：投放、提供程序等）。
 对象可以是：
-   * **[!DNL delivery]**：对于当前投放（请参阅下面子部分中的详细信息和限制）。
-   * **[!DNL provider]**：对于当前投放提供商/路由(nms：externalAccount)。
-   * 额外的脚本对象：如果对象通过加载到上下文中： **属性** > **个性化** > **在执行上下文中添加对象**.
-   * foreach循环的项目：请参见 [福雷阿赫](#foreach) 部分。
+   * **[!DNL delivery]**：当前投放（请参阅以下子部分中的详细信息和限制）。
+   * **[!DNL provider]**：用于当前传递提供程序/路由(nms：externalAccount)。
+   * 额外的脚本对象：如果对象是通过&#x200B;**属性** > **Personalization** > **在执行上下文中添加对象**&#x200B;加载到上下文中的。
+   * foreach循环的项：请参阅下面的[Foreach](#foreach)部分。
 * **[!DNL xpath]**：字段的xpath。
-* **[!DNL index]** （可选）：如果 **[!DNL object]** 是一个数组（用于额外的脚本对象），数组中的项索引（从0开始）。
+* **[!DNL index]** （可选）：如果&#x200B;**[!DNL object]**&#x200B;是一个数组（用于额外的脚本对象），则数组中的项索引（从0开始）。
 
-### [!DNL delivery] 对象 {#delivery-object}
+### [!DNL delivery]对象 {#delivery-object}
 
 对于电子邮件个性化，可通过两种方式访问投放对象：
 
@@ -90,7 +90,7 @@ ht-degree: 1%
   <%= delivery.myField %>`.
   ```
 
-  在JavaScript对象投放中，不支持自定义字段。 它们可以在预览中使用，但不能在MTA中使用，因为MTA只能访问现成的投放模式。
+  在JavaScript中，不支持对象投放自定义字段。 它们可以在预览中使用，但不能在MTA中使用，因为MTA只能访问现成的投放模式。
 
 * 使用预处理：
 
@@ -99,9 +99,9 @@ ht-degree: 1%
   ```
 
 
-**注意**
+**警告**
 
-如果您对通过中间源发送的投放使用以下说明，则自定义字段 **@myCustomField** 必须添加到营销和中间源平台上的nms：delivery模式中：
+如果您对通过中间源发送的投放使用以下说明，则必须将自定义字段&#x200B;**@myCustomField**&#x200B;添加到营销和中间源平台上的nms：delivery架构中：
 
 ```
 <%@ value object="delivery" xpath="@myCustomField" %>
@@ -113,7 +113,7 @@ ht-degree: 1%
 <%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
 ```
 
-### [!DNL value] 在Javascript部分中 {#value-in-javascript}
+### Javascript部分中的[!DNL value] {#value-in-javascript}
 
 要允许在Javascript部分中使用&lt;%@值，请将两个特殊对象替换为&lt;%和%>：
 
@@ -141,7 +141,7 @@ ht-degree: 1%
 
 其中：
 
-* **[!DNL object]**：要从中开始的对象的名称，通常是额外的脚本对象，但也可以是投放。
+* **[!DNL object]**：开始对象的名称，通常是额外的脚本对象，但也可以是投放。
 * **[!DNL xpath]** （可选）：要循环的集合的xpath。 默认值为“。”，这意味着对象是要循环处理的数组。
 * **[!DNL index]** （可选）：如果xpath不是“。” 而对象本身是一个数组，即对象的项索引（从0开始）。
 * **[!DNL item]** （可选）：可通过foreach循环中的&lt;%@值访问的新对象的名称。 在架构中具有链接名称的默认值。
@@ -165,7 +165,7 @@ ht-degree: 1%
 
 解决方案是：
 
-1. 在投放的额外脚本数组中预加载所有可能的文章 — articleList[]  — 表示必须有有限数量的可能条目。
+1. 在投放的额外脚本数组(articleList[])中预加载所有可能的文章，这意味着可能的文章数必须是有限的。
 1. 在内容的开头编写JavaScript函数。
 
    ```

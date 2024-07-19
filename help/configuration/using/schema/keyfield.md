@@ -26,7 +26,7 @@ keyfield：==EMPTY
 
 ## 父项 {#parents-9}
 
-`<key>`  ，  `<dbindex />`
+`<key>` ， `<dbindex />`
 
 ## 子项 {#children-9}
 
@@ -38,8 +38,8 @@ keyfield：==EMPTY
 
 ## 属性说明 {#attribute-description-9}
 
-* **xlink (MNTOKEN)**：用于自动引用在关系表的连接中定义的外键（N-N链接）。
-* **xpath (MNTOKEN)**：索引或键的定义 `<attribute>`  元素。 此属性接收一个Xpath，它定义定义定义键或索引的架构属性的路径。
+* **xlink (MNTOKEN)**：允许您自动引用关系表（N-N链接）的联接中定义的外键。
+* **xpath (MNTOKEN)**： `<attribute>`元素上索引或键的定义。 此属性接收一个Xpath，它定义定义定义键或索引的架构属性的路径。
 
 ## 示例 {#examples-}
 

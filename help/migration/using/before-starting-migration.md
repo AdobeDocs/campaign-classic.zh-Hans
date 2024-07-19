@@ -20,7 +20,7 @@ ht-degree: 2%
 
 
 
-本页列出了在开始迁移过程之前要执行的特定步骤。 您还必须参考 [此页面](about-migration.md) 以获取更多指导。
+本页列出了在开始迁移过程之前要执行的特定步骤。 有关更多指导，您还必须参考[此页面](about-migration.md)。
 
 >[!NOTE]
 >
@@ -32,17 +32,17 @@ ht-degree: 2%
 
 ## 迁移步骤 {#migration-steps}
 
-必须执行迁移过程于 **所有** 按特定顺序执行操作。
+迁移过程必须在&#x200B;**所有**&#x200B;服务器上按特定顺序执行。
 
-* 在a **独立平台** （单机模式），则整个应用程序都将迁移。
-* 在a **标准平台** （企业），迁移步骤如下：
+* 在&#x200B;**独立平台**（单机模式）的情况下，将迁移整个应用程序。
+* 对于&#x200B;**标准平台** （企业），迁移步骤如下：
 
    1. 迁移营销服务器。
    1. 迁移邮件服务器(mta)。
    1. 迁移重定向和跟踪服务器(Apache / IIS)。
 
-* 在a **云消息平台**，则执行服务器托管在Adobe Campaign上。 请联系Adobe Campaign以协调不同服务器之间的迁移。
-* 在a **Power Booster或Power Cluster平台**，迁移步骤如下所示：
+* 在&#x200B;**Cloud Messaging平台**&#x200B;中，执行服务器托管在Adobe Campaign。 请联系Adobe Campaign以协调不同服务器之间的迁移。
+* 对于&#x200B;**Power Booster或Power Cluster平台**，迁移步骤如下：
 
    1. 迁移重定向和跟踪服务器(Apache / IIS)。
    1. 迁移Power Booster/Cluster服务器
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 ## 用户密码 {#user-passwords}
 
-在v7中， **内部** 和 **管理员** 运算符连接必须使用密码进行保护。 我们强烈建议为这些帐户和所有操作员帐户分配密码， **迁移前**. 如果尚未指定密码 **内部**，您将无法连接。 要将密码分配给 **内部**，输入以下命令：
+在v7中，**内部**&#x200B;和&#x200B;**管理员**&#x200B;操作员连接必须使用密码进行保护。 强烈建议在迁移&#x200B;**前，为这些帐户和所有操作员帐户分配密码**。 如果您没有为&#x200B;**内部**&#x200B;指定密码，您将无法连接。 要为&#x200B;**internal**&#x200B;分配密码，请输入以下命令：
 
 ```
 nlserver config -internalpassword
@@ -58,4 +58,4 @@ nlserver config -internalpassword
 
 >[!CAUTION]
 >
->此 **内部** 所有跟踪服务器的密码必须相同。 欲了解更多信息，请参见 [内部标识符](../../installation/using/configuring-campaign-server.md#internal-identifier) 和 [权限](../../platform/using/access-management.md) 部分。
+>对于所有跟踪服务器，**内部**&#x200B;密码必须相同。 有关详细信息，请参阅[内部标识符](../../installation/using/configuring-campaign-server.md#internal-identifier)和[权限](../../platform/using/access-management.md)部分。

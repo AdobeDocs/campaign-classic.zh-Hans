@@ -46,7 +46,7 @@ Adobe Campaign由多个模块组成，这些模块可以在多台计算机上进
 
 >[!NOTE]
 >
->有关各种体系结构的更多信息，请参阅 [本节](../../installation/using/general-architecture.md).
+>有关各种体系结构的详细信息，请参阅[此章节](../../installation/using/general-architecture.md)。
 
 ## 打开的端口列表 {#list-of-open-ports}
 

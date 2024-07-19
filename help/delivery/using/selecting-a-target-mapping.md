@@ -15,7 +15,7 @@ ht-degree: 12%
 
 # 选择目标映射{#selecting-a-target-mapping}
 
-默认情况下，投放模板目标 **[!UICONTROL Recipients]**. 因此，其目标映射使用 **nms：recipient** 表格。 Adobe Campaign为您的投放提供了其他目标映射，可根据您的需求使用。
+默认情况下，投放模板以&#x200B;**[!UICONTROL Recipients]**&#x200B;为目标。 因此，它们的目标映射使用&#x200B;**nms：recipient**&#x200B;表的字段。 Adobe Campaign为您的投放提供了其他目标映射，可根据您的需求使用。
 
 ![](assets/delivery_select_mapping.png)
 
@@ -27,7 +27,7 @@ ht-degree: 12%
 | 访客 | 向通过反向链接（病毒式营销）或社交网络(例如Facebook， X — 以前称为Twitter)收集用户档案的访客投放。 | mns：visitor |
 | 订阅 | 发送给订阅了新闻稿等信息服务的收件人 | nms：subscription |
 | 访客订阅 | 向订阅了信息服务的访客投放 | nms：visitorSub |
-| 服务 | 发布到X帐户或Facebook页面 | nms：service |
+| 服务 | Publish到X帐户或Facebook页面 | nms：service |
 | 运算符 | 交付给Adobe Campaign操作员 | nms：operator |
 | 外部文件 | 通过包含投放所需所有信息的文件投放 | 无链接架构，未输入目标 |
 

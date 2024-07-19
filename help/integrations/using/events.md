@@ -26,19 +26,19 @@ ht-degree: 1%
 
 由于编辑Javascript代码需要技术技能，因此在没有适当了解的情况下请勿尝试这样做。
 
-## 在JavaScript中处理事件 {#events-javascript}
+## JavaScript中的处理事件 {#events-javascript}
 
 ### JavaScript文件 {#file-js}
 
-Pipeline使用JavaScript函数处理每条消息。 此函数由用户定义。
+Pipeline使用JavaScript函数来处理每条消息。 此函数由用户定义。
 
-它可在中进行配置 **[!UICONTROL NmsPipeline_Config]** “JSConnector”属性下的选项。 每次收到事件时都会调用此JavaScript。 它由 [!DNL pipelined] 进程。
+在“JSConnector”属性下的&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;选项中配置它。 每次收到事件时都会调用此JavaScript。 它由[!DNL pipelined]进程运行。
 
 示例Javascript文件为cus：triggers.js。
 
 ### JavaScript 函数 {#function-js}
 
-此 [!DNL pipelined] Javascript必须以特定函数开头。
+[!DNL pipelined] Javascript必须以特定函数开头。
 
 此函数为每个事件调用一次：
 
@@ -52,16 +52,16 @@ function processPipelineMessage(xmlTrigger) {}
 <undefined/>
 ```
 
-您应该重新启动 [!DNL pipelined] 在编辑Javascript之后。
+您应该在编辑Javascript后重新启动[!DNL pipelined]。
 
 ### 触发数据格式 {#trigger-format}
 
-此 [!DNL trigger] 数据以XML格式传递到JS函数。
+[!DNL trigger]数据以XML格式传递到JS函数。
 
-* 此 **[!UICONTROL @triggerId]** 属性包含 [!DNL trigger].
-* 此 **丰富** JSON格式的元素包含Adobe Analytics生成的数据，并附加到触发器。
-* **[!UICONTROL @offset]** 是消息的“指针”。 它指示消息在队列中的顺序。
-* **[!UICONTROL @partition]** 是队列中的消息容器。 偏移相对于分区。 <br>队列中有大约15个分区。
+* **[!UICONTROL @triggerId]**&#x200B;属性包含[!DNL trigger]的名称。
+* JSON格式的&#x200B;**扩充**&#x200B;元素包含Adobe Analytics生成的数据并附加到触发器。
+* **[!UICONTROL @offset]**&#x200B;是消息的“指针”。 它指示消息在队列中的顺序。
+* **[!UICONTROL @partition]**&#x200B;是队列中的消息容器。 偏移相对于分区。 <br>队列中有大约15个分区。
 
 例如：
 
@@ -81,9 +81,9 @@ function processPipelineMessage(xmlTrigger) {}
 在Adobe Analytics中为每个触发器定义了JSON格式的内容。
 例如，在触发器LogoUpload_uploading_Visits中：
 
-* **[!UICONTROL eVar01]** 可以包含字符串格式的购物者ID，此ID用于与Adobe Campaign收件人进行协调。 <br>必须对其进行协调才能找到购物者ID，它是主键。
+* **[!UICONTROL eVar01]**&#x200B;可以包含字符串格式的购物者ID，此ID用于与Adobe Campaign收件人进行协调。 <br>必须对其进行协调才能查找购物者ID，它是主键。
 
-* **[!UICONTROL timeGMT]** 可以在Adobe Analytics端以纪元格式包含触发器的时间（自UTC时间01/01/1970以来的秒数）。
+* **[!UICONTROL timeGMT]**&#x200B;可以在Adobe Analytics端包含触发器的时间（以UTC纪元格式表示）（自01/01/1970 UTC以来的秒数）。
 
 例如：
 
@@ -111,20 +111,20 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 事件处理顺序{#order-events}
 
-按偏移量顺序逐个处理事件。 每个线程的 [!DNL pipelined] 处理不同的分区。
+按偏移量顺序逐个处理事件。 [!DNL pipelined]的每个线程处理不同的分区。
 
 检索的最后一个事件的“offset”存储在数据库中。 因此，如果进程停止，它会从上一条消息重新启动。 此数据存储在内置模式xtk：pipelineOffset中。
 
 此指针特定于每个实例和每个使用者。 因此，当多个实例使用不同的使用者访问同一管道时，它们都会按相同的顺序获取所有消息。
 
-此 **消费者** 管线选项的参数标识调用实例。
+管道选项的&#x200B;**consumer**&#x200B;参数标识调用实例。
 
 目前，无法为单独的环境（例如“暂存”或“开发”）设置不同的队列。
 
 ### 日志记录和错误处理 {#logging-error-handling}
 
-诸如logInfo()之类的日志将被定向到 [!DNL pipelined] 日志。 诸如logError()之类的错误将写入 [!DNL pipelined] 记录并使该事件被放入重试队列。 在这种情况下，您应该检查管道化日志。
-出错的消息会在中设置的持续时间内重试多次 [!DNL pipelined] 选项。
+诸如logInfo()之类的日志被定向到[!DNL pipelined]日志。 诸如logError()之类的错误已写入[!DNL pipelined]日志，并导致该事件被放入重试队列。 在这种情况下，您应该检查管道化日志。
+在[!DNL pipelined]选项中设置的持续时间内，错误消息会重试多次。
 
 出于调试和监控目的，完整的触发器数据以XML格式写入“数据”字段的触发器表中。 或者，包含触发器数据的logInfo()也可达到相同目的。
 
@@ -209,7 +209,7 @@ triggerType字段标识数据来源的触发器。
 | triggerType | 字符串50 | TriggerType | 触发器的名称。 标识客户在网站上的行为。 |
 | shopper_id | 字符串32 | shopper_id | 购物者的内部标识符。 由协调工作流设置。 如果为0，则表示在Campaign中未知该客户。 |
 | shopper_key | 长 | shopper_key | 购物者的Analytics捕获的外部标识符。 |
-| 已创建 | 日期时间 | 已创建 | 在Campaign中创建事件的时间。 |
+| 已创建 | 日期时间 | 创建时间 | 在Campaign中创建事件的时间。 |
 | lastModified | 日期时间 | 上次修改时间 | 上次在Adobe中修改事件的时间。 |
 | 时间GMT | 日期时间 | 时间戳 | 在Analytics中生成事件的时间。 |
 
@@ -219,7 +219,7 @@ triggerType字段标识数据来源的触发器。
 
 >[!NOTE]
 >
->管道事件节点不是内置节点，需要添加，并且需要在Campaign中创建相关表单。 这些操作仅限专家用户执行。 有关更多信息，请参阅以下章节： [导航层次结构](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). 和 [编辑表单](../../configuration/using/editing-forms.md).
+>管道事件节点不是内置节点，需要添加，并且需要在Campaign中创建相关表单。 这些操作仅限专家用户执行。 有关详细信息，请参阅以下部分： [导航层次结构](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)。 和[编辑表单](../../configuration/using/editing-forms.md)。
 
 ![](assets/triggers_7.png)
 
@@ -232,7 +232,7 @@ triggerType字段标识数据来源的触发器。
 出于性能原因，必须通过工作流以批处理模式进行匹配。
 频率必须设置为15分钟以优化工作负载。 因此，在Adobe Campaign中接收事件到营销工作流处理该事件之间的延迟最长为15分钟。
 
-### JavaScript中单元协调的选项 {#options-unit-reconciliation}
+### JavaScript中用于单元协调的选项 {#options-unit-reconciliation}
 
 可以在JavaScript中为每个触发器运行协调查询。 它有更高的性能影响并提供更快的结果。 对于需要反应性的特定用例，可能需要此参数。
 

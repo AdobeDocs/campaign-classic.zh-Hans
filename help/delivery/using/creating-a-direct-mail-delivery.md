@@ -19,12 +19,12 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->中介绍了有关投放创建的全局概念 [本节](steps-about-delivery-creation-steps.md).
+>有关投放创建的全局概念在[此部分](steps-about-delivery-creation-steps.md)中介绍。
 
 1. 创建新投放，例如从投放仪表板。
-1. 选择投放模板 **通过直邮（纸张）投放**.
+1. 选择投放模板&#x200B;**通过直邮（纸张）投放**。
 
    ![](assets/direct_mail.png)
 
-1. 使用标签、代码和描述标识投放。 有关详细信息，请参见 [本节](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
-1. 单击 **继续** 以确认此信息并显示消息配置窗口。
+1. 使用标签、代码和描述标识投放。 有关详细信息，请参阅[此部分](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
+1. 单击&#x200B;**继续**&#x200B;以确认此信息并显示消息配置窗口。

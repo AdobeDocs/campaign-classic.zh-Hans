@@ -20,7 +20,7 @@ ht-degree: 4%
 
 ## 脚本
 
-有关更多详细信息，请参阅 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans).
+有关详细信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)。
 
 如果您使用工作流、Web应用程序和jssp编写脚本，请遵循以下最佳实践：
 
@@ -55,9 +55,9 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->如果您使用的版本低于8140，则 **XtkPassUnknownSQLFunctionsToRDBMS** 选项可能设置为“1”。 如果要保护数据库，请删除此选项（或将其设置为“0”）。
+>如果您使用的版本低于8140，则&#x200B;**XtkPassUnknownSQLFunctionsToRDBMS**&#x200B;选项可能会设置为“1”。 如果要保护数据库，请删除此选项（或将其设置为“0”）。
 
-如果您使用用户输入在查询或SQL语句中构建过滤器，则始终必须转义它们(请参阅 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)  — 数据保护：转义功能)。 这些函数包括：
+如果您使用用户输入在查询或SQL语句中构建过滤器，则始终必须转义它们（请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans) — 数据保护：转义函数）。 这些函数包括：
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -77,7 +77,7 @@ ht-degree: 4%
 
 除了基于文件夹的安全模型之外，您还可以使用已命名权限来限制操作员操作：
 
-* 您可以添加一些系统筛选器(sysFilter)，以防止读取/写入数据(请参阅 [此页面](../../configuration/using/filtering-schemas.md))。
+* 您可以添加一些系统筛选器(sysFilter)以防止读取/写入您的数据（请参阅[此页面](../../configuration/using/filtering-schemas.md)）。
 
   ```
   <sysFilter name="writeAccess">    
@@ -85,7 +85,7 @@ ht-degree: 4%
   </sysFilter>
   ```
 
-* 您还可以保护架构中定义的某些操作（SOAP方法）。 只需将具有相应命名权限的access属性设置为值即可。
+* 您还可以保护架构中定义的某些操作(SOAP方法)。 只需将具有相应命名权限的access属性设置为值即可。
 
   ```
   <method name="grantVIPAccess" access="myNewRole">
@@ -105,23 +105,23 @@ ht-degree: 4%
 
 如果您需要根据操作员的访问级别保护机密数据（模式的一部分），请勿在表单定义（enabledIf/visibleIf条件）中隐藏这些数据。
 
-整个实体由屏幕加载，您还可以在列定义中显示它们。 为此，必须创建一个溢出表。 参考 [此页面](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
+整个实体由屏幕加载，您还可以在列定义中显示它们。 为此，必须创建一个溢出表。 请参阅[此页面](../../configuration/using/examples-of-schemas-edition.md#overflow-table)。
 
 ## 在Web应用程序中添加captcha
 
 好的做法是在公共登陆页面/订阅页面中添加验证码。 不幸的是，在DCE（数字内容编辑器）页面中添加验证码并不容易。 我们将向您说明如何添加v5验证码或Google reCAPTCHA。
 
-在DCE中添加验证码的常规方法是创建个性化块，以轻松地将其包含在页面内容中。 您必须添加 **脚本** 活动和 **测试**.
+在DCE中添加验证码的常规方法是创建个性化块，以轻松地将其包含在页面内容中。 您必须添加&#x200B;**脚本**&#x200B;活动和&#x200B;**测试**。
 
 ### 个性化块
 
-1. 转到 **[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]** 并创建一个新实例。
+1. 转到&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]**&#x200B;并创建一个新帐户。
 
-1. 使用 **[!UICONTROL Web application]** 内容类型和检查 **[!UICONTROL Visible in the customization menus]**.
+1. 使用&#x200B;**[!UICONTROL Web application]**&#x200B;内容类型并检查&#x200B;**[!UICONTROL Visible in the customization menus]**。
 
    有关详细信息，请参见[此页面](../../delivery/using/personalization-blocks.md)。
 
-   以下是 **营销活动验证码**：
+   以下是&#x200B;**营销活动验证码**&#x200B;的示例：
 
    ```javascript
    <%
@@ -148,27 +148,27 @@ ht-degree: 4%
 
      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
 
-   您应该能够禁用“验证”按钮，但由于我们没有任何标准按钮/链接，因此最好在HTML中禁用该按钮/链接。 要了解如何执行此操作，请参阅 [此页面](https://developers.google.com/recaptcha/).
+   您应该能够禁用“验证”按钮，但由于我们没有任何标准按钮/链接，因此最好在HTML中禁用该按钮/链接。 要了解如何执行此操作，请参阅[此页面](https://developers.google.com/recaptcha/)。
 
 ### 更新Web应用程序
 
-1. 访问Web应用程序的属性以添加名为的布尔变量 **captchavalid**.
+1. 访问Web应用程序的属性以添加名为&#x200B;**captchaValid**&#x200B;的布尔变量。
 
    ![](assets/scripting-captcha.png)
 
-1. 在最后一页和 **[!UICONTROL Storage]** 活动，添加 **[!UICONTROL Script]** 和 **[!UICONTROL Test]**.
+1. 在最后一页和&#x200B;**[!UICONTROL Storage]**&#x200B;活动之间，添加&#x200B;**[!UICONTROL Script]**&#x200B;和&#x200B;**[!UICONTROL Test]**。
 
-   插入分支 **[!UICONTROL True]** 到 **[!UICONTROL Storage]** 另一个将带有验证码。
+   将分支&#x200B;**[!UICONTROL True]**&#x200B;插入&#x200B;**[!UICONTROL Storage]**，将另一个分支插入具有验证码的页面。
 
    ![](assets/scripting-captcha2.png)
 
-1. 使用编辑分支条件True `"[vars/captchaValid]"` 等于True。
+1. 编辑分支True的条件，其中`"[vars/captchaValid]"`等于True。
 
    ![](assets/scripting-captcha3.png)
 
-1. 编辑 **[!UICONTROL Script]** 活动。 内容将取决于所选的验证码引擎。
+1. 编辑&#x200B;**[!UICONTROL Script]**&#x200B;活动。 内容将取决于所选的验证码引擎。
 
-1. 最后，您可以在页面中添加个性化块：请参阅 [此页面](../../web/using/editing-content.md).
+1. 最后，您可以在页面中添加个性化块：请参阅[此页面](../../web/using/editing-content.md)。
 
    ![](assets/scripting-captcha4.png)
 
@@ -176,7 +176,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->要实现reCAPTCHA集成，您必须在HTML(位于 `<head>...</head>`)：
+>对于reCAPTCHA集成，您必须在HTML中添加客户端JavaScript（在`<head>...</head>`中）：
 >
 >`<script src="https://www.google.com/recaptcha/api.js" async defer></script>`
 
@@ -200,7 +200,7 @@ else
 
 ### Google recaptcha
 
-请参阅 [官方文档](https://developers.google.com/recaptcha/docs/verify).
+请参阅[官方文档](https://developers.google.com/recaptcha/docs/verify)。
 
 ```javascript
 ctx.vars.captchaValid = false

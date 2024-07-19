@@ -16,9 +16,9 @@ ht-degree: 0%
 
 作为专家级用户，您可以在资源管理器树中添加文件夹并对其进行自定义。
 
-了解有关Campaign浏览器和导航层次结构的更多信息 [在此部分中](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+在本节](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)中了解有关Campaign浏览器和导航层次结构[的更多信息。
 
-导航列表使用的文件夹类型在遵循语法的XML文档中进行了说明 **xtk：navtree** 架构。
+导航列表使用的文件夹类型在遵循&#x200B;**xtk：navtree**&#x200B;架构语法的XML文档中进行了说明。
 
 XML文档的结构如下所示：
 
@@ -42,17 +42,17 @@ XML文档的结构如下所示：
 </navtree>
 ```
 
-XML文档包含 **`<navtree>`** 具有的根元素 **name** 和 **命名空间** 属性来指定文档名称和命名空间。 名称和命名空间构成了文档标识键。
+XML文档包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200B;属性的&#x200B;**`<navtree>`**&#x200B;根元素，用于指定文档名称和命名空间。 名称和命名空间构成了文档标识键。
 
-应用程序的全局命令在文档中声明，来自 **`<commands>`** 元素。
+应用程序的全局命令在文档中的&#x200B;**`<commands>`**&#x200B;元素中声明。
 
-文件类型声明在文档中具有以下元素： **`<model>`** 和 **`<nodemodel>`**.
+文件类型声明在文档中具有以下元素： **`<model>`**&#x200B;和&#x200B;**`<nodemodel>`**。
 
 ## 全局命令 {#global-commands}
 
 使用全局命令可启动操作。 此操作可以是输入表单或SOAP调用。
 
-全局命令可从主命令访问 **[!UICONTROL Tools]** 菜单。
+可从主&#x200B;**[!UICONTROL Tools]**&#x200B;菜单访问全局命令。
 
 命令配置结构如下所示：
 
@@ -77,24 +77,24 @@ XML文档包含 **`<navtree>`** 具有的根元素 **name** 和 **命名空间**
 </commands>
 ```
 
-全局命令的说明输入于 **`<command>`** 元素具有以下属性：
+全局命令的描述输入到具有以下属性的&#x200B;**`<command>`**&#x200B;元素中：
 
-* **name**：命令的内部名称：名称必须输入且唯一
+* **name**：命令的内部名称：该名称必须输入且唯一
 * **标签**：命令的标签。
 * **desc**：从主屏幕的状态栏中显示的描述。
 * **表单**：要启动的表单：要输入的值是输入表单的标识键（例如“cus：recipient”）
-* **权限**：允许访问此命令的已命名权限列表（以逗号分隔）。 可用权限列表可从 **[!UICONTROL Administration > Access management > Named rights]** 文件夹。
+* **权限**：允许访问此命令的已命名权限列表（以逗号分隔）。 可从&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;文件夹访问可用权限列表。
 * **promptLabel**：在执行命令之前显示确认框。
 
-A **`<command>`** 元素可以包含 **`<command>`** 子元素。 在这种情况下，父元素允许您显示由这些子元素组成的子菜单。
+**`<command>`**&#x200B;元素可以包含&#x200B;**`<command>`**&#x200B;个子元素。 在这种情况下，父元素允许您显示由这些子元素组成的子菜单。
 
 这些命令的显示顺序与它们在XML文档中声明的顺序相同。
 
-命令分隔符允许您在命令之间显示分隔条。 它由 **&#39;-&#39;** 命令标签中包含的值。
+命令分隔符允许您在命令之间显示分隔条。 它由命令标签中包含的&#x200B;**&#39;-&#39;**&#x200B;值标识。
 
-可选存在 **`<soapcall>`** 标记及其输入参数定义要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans).
+**`<soapcall>`**&#x200B;标记及其输入参数的可选存在性定义了要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)。
 
-初始化时，表单上下文可从以下位置更新： **`<enter>`** 标记之前。 有关此标记的详细信息，请参阅有关输入表单的文档。
+初始化时可以从&#x200B;**`<enter>`**&#x200B;标记更新表单上下文。 有关此标记的详细信息，请参阅有关输入表单的文档。
 
 **示例**：
 
@@ -104,7 +104,7 @@ A **`<command>`** 元素可以包含 **`<command>`** 子元素。 在这种情�
   <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
   ```
 
-  在“I”字符上声明键盘快捷键，因为存在 **和** 在命令标签中。
+  由于命令标签中存在&#x200B;**&amp;**，因此在“I”字符上声明了键盘快捷键。
 
 * 带分隔符的子菜单示例：
 
@@ -154,33 +154,33 @@ A **`<command>`** 元素可以包含 **`<command>`** 子元素。 在这种情�
 </model>
 ```
 
-文件夹类型声明必须输入在 **`<model>`** 元素。 利用此元素，您可以定义可从以下位置查看的层次结构： **[!UICONTROL Add new folder]** 菜单。 A **`<model>`** 元素必须包含 **`<nodemodel>`** 元素和其他 **`<model>`** 元素。
+必须在&#x200B;**`<model>`**&#x200B;元素下输入文件夹类型声明。 此元素允许您定义从&#x200B;**[!UICONTROL Add new folder]**&#x200B;菜单可见的分层组织。 **`<model>`**&#x200B;元素必须包含&#x200B;**`<nodemodel>`**&#x200B;个元素和其他&#x200B;**`<model>`**&#x200B;个元素。
 
-此 **name** 和 **标签** 属性会填充元素的内部名称以及 **[!UICONTROL Add new folder]** 菜单。
+**name**&#x200B;和&#x200B;**label**&#x200B;属性填充&#x200B;**[!UICONTROL Add new folder]**&#x200B;菜单中显示的元素和标签的内部名称。
 
-此 **`<nodemodel>`** 元素包含文件夹类型的描述，具有以下属性：
+**`<nodemodel>`**&#x200B;元素包含具有以下属性的文件夹类型描述：
 
-* **name**：内部名称
-* **标签**：中使用的标签 **[!UICONTROL Add new folder]** 菜单和作为默认标签。
-* **img**：文件夹插入时的默认图像。
-* **hiddenCommand**：要遮罩的命令列表（以逗号分隔）。 可能的值： “adbnew”、“adbsave”、“adbcancel”和“adbdup”。
-* **newFolderShortCut**：模型上的快捷键列表(**`<nodemodel>`** （以逗号分隔）。
-* **插入右侧**， **编辑右侧**， **deleteRight**：插入、编辑和删除文件夹的权限。
+* **名称**：内部名称
+* **label**： **[!UICONTROL Add new folder]**&#x200B;菜单中使用的标签，在插入文件夹时用作默认标签。
+* **img**：文件夹插入中的默认图像。
+* **hiddenCommands**：要遮罩的命令列表（以逗号分隔）。 可能的值： “adbnew”、“adbsave”、“adbcancel”和“adbdup”。
+* **newFolderShortCuts**：文件夹创建中的模型快捷方式列表（**`<nodemodel>`**，用逗号分隔）。
+* **insertRight**，**editRight**，**deleteRight**：插入、编辑和删除文件夹的权限。
 
-此 **`<view>`** 下的元素 **`<nodemodel>`** 元素包含与视图关联的列表的配置。 列表的架构输入于 **架构** 的属性 **`<view>`** 元素。
+**`<nodemodel>`**&#x200B;元素下的&#x200B;**`<view>`**&#x200B;元素包含与视图关联的列表的配置。 在&#x200B;**`<view>`**&#x200B;元素的&#x200B;**架构**&#x200B;属性中输入了列表的架构。
 
-要编辑列表的记录，隐式使用与列表架构同名的输入表单。 此 **type** 上的属性 **`<view>`** 元素会影响表单的显示。 可能的值包括：
+要编辑列表的记录，隐式使用与列表架构同名的输入表单。 **`<view>`**&#x200B;元素上的&#x200B;**type**&#x200B;属性影响表单的显示。 可能的值包括：
 
-* **列表代**：在列表底部显示表单。
+* **listdet**：在列表底部显示表单。
 * **列表**：单独显示列表。 通过双击或通过选择列表时的菜单中的“打开”来启动表单。
 * **表单**：显示只读表单。
 * **editForm**：在编辑模式下显示表单。
 
 >[!NOTE]
 >
->输入输入表单的名称可通过输入 **表单** 中的属性 **`<view>`** 元素。
+>通过在&#x200B;**`<view>`**&#x200B;元素中输入&#x200B;**form**&#x200B;属性，可以重载输入表单的名称。
 
-列表列的默认配置是通过 **`<columns>`** 元素。 列是在上声明的 **`<node>`** 元素包含 **xpath** 属性，其模式中要引用的字段作为其值。
+列表列的默认配置通过&#x200B;**`<columns>`**&#x200B;元素输入。 在包含&#x200B;**xpath**&#x200B;属性的&#x200B;**`<node>`**&#x200B;元素上声明了列，该属性的架构中要引用的字段作为其值。
 
 **示例**：在“nms：recipient”架构上声明文件夹类型。
 
@@ -227,7 +227,7 @@ A **`<command>`** 元素可以包含 **`<command>`** 子元素。 在这种情�
 
 使用快捷方式命令可在选择列表时启动操作。 该操作可以是输入表单或SOAP调用。
 
-命令可从以下位置访问 **[!UICONTROL Action]** 菜单或关联的菜单按钮。
+可从列表的&#x200B;**[!UICONTROL Action]**&#x200B;菜单或关联的菜单按钮访问命令。
 
 命令配置结构如下所示：
 
@@ -246,28 +246,28 @@ A **`<command>`** 元素可以包含 **`<command>`** 子元素。 在这种情�
 </nodeModel>
 ```
 
-命令说明输入在 **`<command>`** 元素具有以下属性：
+在具有以下属性的&#x200B;**`<command>`**&#x200B;元素上输入了命令的描述：
 
-* **name**：命令的内部名称：名称必须输入且唯一。
+* **name**：命令的内部名称：该名称必须输入且唯一。
 * **标签**：命令的标签。
 * **desc**：从主屏幕的状态栏中显示的描述。
 * **表单**：要启动的表单：要输入的值是输入表单的标识键（例如“cus：recipient”）。
-* **权限**：允许访问此命令的已命名权限列表（以逗号分隔）。 可用权限列表可从 **[!UICONTROL Administration > Access management > Named rights]** 文件夹。
+* **权限**：允许访问此命令的已命名权限列表（以逗号分隔）。 可从&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;文件夹访问可用权限列表。
 * **promptLabel**：在执行命令之前显示确认框
-* **单选**：强制进行单选（默认情况下为多选）。
-* **refreshview**：强制在执行命令后重新加载列表。
-* **enabledIf**：根据输入的表达式激活命令。
+* **monoSelection**：强制进行单选（默认为多选）。
+* **refreshView**：执行命令后强制重新加载列表。
+* **enabledIf**：根据输入的表达式激活该命令。
 * **img**：输入允许从列表工具栏访问命令的图像。
 
-A **`<command>`** 元素可以包含 **`<command>`** 子元素。 在这种情况下，父元素允许您显示由这些子元素组成的子菜单。
+**`<command>`**&#x200B;元素可以包含&#x200B;**`<command>`**&#x200B;个子元素。 在这种情况下，父元素允许您显示由这些子元素组成的子菜单。
 
 这些命令的显示顺序与它们在XML文档中声明的顺序相同。
 
-命令分隔符允许您在命令之间显示分隔条。 它由 **&#39;-&#39;** 命令标签中包含的值。
+命令分隔符允许您在命令之间显示分隔条。 它由命令标签中包含的&#x200B;**&#39;-&#39;**&#x200B;值标识。
 
-可选存在 **`<soapcall>`** 标记及其输入参数定义要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅 [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans).
+**`<soapcall>`**&#x200B;标记及其输入参数的可选存在性定义了要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)。
 
-初始化时，可以通过以下方式更新表单上下文： **`<enter>`** 标记之前。 有关此标记的详细信息，请参阅输入表单文档。
+初始化时可以通过&#x200B;**`<enter>`**&#x200B;标记更新表单上下文。 有关此标记的详细信息，请参阅输入表单文档。
 
 **示例**：
 
@@ -293,7 +293,7 @@ A **`<command>`** 元素可以包含 **`<command>`** 子元素。 在这种情�
 1. 此文件夹是一个视图：列表显示与架构关联的所有记录，并可能在文件夹属性中输入系统筛选。
 1. 已链接文件夹：列表中的记录已在文件夹链接上隐式筛选。
 
-对于链接的文件夹， **folderlink** 上的属性 **`<nodemodel>`** 必须填充元素。 此属性包含在数据架构中配置的文件夹上链接的名称。
+对于链接的文件夹，必须填充&#x200B;**`<nodemodel>`**&#x200B;元素上的&#x200B;**folderLink**&#x200B;属性。 此属性包含在数据架构中配置的文件夹上链接的名称。
 
 数据架构中链接文件夹的声明示例：
 
@@ -301,7 +301,7 @@ A **`<command>`** 元素可以包含 **`<command>`** 子元素。 在这种情�
 <element default="DefaultFolder('nmsFolder', [@_folder-id])" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="define" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
-的配置 **`<nodemodel>`** 文件夹上名为“folder”的链接如下所示：
+名为“folder”的文件夹的链接上&#x200B;**`<nodemodel>`**&#x200B;的配置如下：
 
 ```
 <nodeModel deleteRight="folderDelete" editRight="folderEdit" folderLink="folder"

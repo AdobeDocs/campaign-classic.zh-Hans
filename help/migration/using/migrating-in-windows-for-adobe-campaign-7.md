@@ -22,24 +22,24 @@ ht-degree: 0%
 
 对于Microsoft Windows环境，迁移步骤如下：
 
-1. 停止所有服务 —  [了解详情](#service-stop).
-1. 备份数据库 —  [了解详情](#back-up-the-database).
-1. 迁移平台 —  [了解详情](#deploying-adobe-campaign-v7).
-1. 迁移重定向服务器(IIS) - [了解详情](#migrating-the-redirection-server--iis-).
-1. 重新启动服务 —  [了解详情](#re-starting-the-services).
-1. 删除并清除以前的Adobe Campaign版本 —  [了解详情](#deleting-and-cleansing-adobe-campaign-previous-version).
+1. 停止所有服务 — [了解更多](#service-stop)。
+1. 备份数据库 — [了解更多](#back-up-the-database)。
+1. 迁移平台 — [了解更多](#deploying-adobe-campaign-v7)。
+1. 迁移重定向服务器(IIS) - [了解更多](#migrating-the-redirection-server--iis-)。
+1. 重新启动服务 — [了解更多](#re-starting-the-services)。
+1. 删除并清除以前的Adobe Campaign版本 — [了解更多](#deleting-and-cleansing-adobe-campaign-previous-version)。
 
 ## 服务停止 {#service-stop}
 
 首先，停止在所有相关计算机上访问数据库的所有进程。
 
-1. 所有使用重定向模块的服务器(**webmdl** 必须停止。 对于IIS，请运行以下命令：
+1. 必须停止所有使用重定向模块（**webmdl**&#x200B;服务）的服务器。 对于IIS，请运行以下命令：
 
    ```
    iisreset /stop
    ```
 
-1. 此 **mta** 模块及其子模块(**matachild**)必须使用以下命令停止：
+1. 必须使用以下命令停止&#x200B;**mta**&#x200B;模块及其子模块(**mtachild**)：
 
    ```
    nlserver stop mta@<instance name>
@@ -180,7 +180,7 @@ ht-degree: 0%
 -->
 
 1. 备份Adobe Campaign数据库。
-1. 备份 **Adobe Campaign v6** 目录：
+1. 使用以下命令备份&#x200B;**Adobe Campaign v6**&#x200B;目录：
 
    ```
    ren "Adobe Campaign v6" "Adobe Campaign v6.back"
@@ -188,7 +188,7 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >为以防万一，我们建议您压缩 **Adobe Campaign v6.back** 文件夹并将其保存在服务器以外的其他安全位置。
+   >为以防万一，我们建议您压缩&#x200B;**Adobe Campaign v6.back**&#x200B;文件夹，并将其保存在服务器以外的其他安全位置。
 
 1. 在Windows服务管理控制台中，禁用6.11应用程序服务器服务的自动启动。 也可以使用以下命令：
 
@@ -205,19 +205,19 @@ ht-degree: 0%
 
 要部署Adobe Campaign，请应用以下步骤：
 
-1. Adobe Campaign通过运行 **setup.exe** 安装文件。 有关在Windows中安装Adobe Campaign服务器的详细信息，请参阅 [本节](../../installation/using/installing-the-server.md).
+1. 通过运行&#x200B;**setup.exe**&#x200B;安装文件安装最新的Adobe Campaign v7内部版本。 有关在Windows中安装Adobe Campaign服务器的详细信息，请参阅[此部分](../../installation/using/installing-the-server.md)。
 
    ![](assets/migration_wizard_1_7.png)
 
    >[!NOTE]
    >
-   >Adobe Campaign v7默认安装在中 **C:\Program Files\Adobe\Adobe Campaign v7** 目录。
+   >Adobe Campaign v7默认安装在&#x200B;**C:\Program Files\Adobe\Adobe Campaign v7**&#x200B;目录中。
 
-1. 要使客户端控制台安装程序可用，请复制 **setup-client-7.0.XXXX.exe** 文件到Adobe Campaign安装目录中： **C:\Program Files\Adobe\Adobe营销活动v7\datakit\nl\eng\jsp**.
+1. 若要使客户端控制台安装程序可用，请将&#x200B;**setup-client-7.0.XXXX.exe**&#x200B;文件复制到Adobe Campaign安装目录： **C:\Program Files\Adobe\Adobe Campaign v7\datakit\nl\eng\jsp**。
 
    >[!NOTE]
    >
-   >有关在Windows中安装Adobe Campaign的更多信息，请参阅 [本节](../../installation/using/installing-the-server.md).
+   >有关在Windows中安装Adobe Campaign的详细信息，请参阅[此部分](../../installation/using/installing-the-server.md)。
 
 1. 通过以下命令启动实例以供首次使用：
 
@@ -228,9 +228,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >这些命令允许您创建Adobe Campaign v7内部文件系统： **会议** 目录(包含 **config-default.xml** 和 **serverConf.xml** 文件)， **变量** 目录等。
+   >这些命令允许您创建Adobe Campaign v7内部文件系统： **conf**&#x200B;目录（包含&#x200B;**config-default.xml**&#x200B;和&#x200B;**serverConf.xml**&#x200B;文件）、**var**&#x200B;目录等。
 
-1. 通过以下方式复制并粘贴（覆盖）每个实例的配置文件和子文件夹 **Neolane v5.back**， **Neolane v6.back** 或 **Adobe Campaign v6.back** 备份文件(取决于您要从中迁移的版本 — 请参阅 [本节](#back-up-the-database-and-the-current-installation))。
+1. 通过&#x200B;**Neolane v5.back**、**Neolane v6.back**&#x200B;或&#x200B;**Adobe Campaign v6.back**&#x200B;备份文件，复制并粘贴（覆盖）每个实例的配置文件和子文件夹（具体取决于您从中迁移的版本 — 请参阅[此部分](#back-up-the-database-and-the-current-installation)）。
 1. 根据要迁移的来源版本，执行以下命令：
 
    ```
@@ -253,9 +253,9 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >对于上面的第一个命令，请勿复制 **config-default.xml** 文件。
+   >对于上述第一个命令，请勿复制&#x200B;**config-default.xml**&#x200B;文件。
 
-1. 在 **serverConf.xml** 和 **config-default.xml** 在Adobe Campaign v7的文件中，应用您在Adobe Campaign早期版本中拥有的特定配置。 对于 **serverConf.xml** 文件，使用 **Neolane v5/conf/serverConf.xml.diff**， **Neolane v6/conf/serverConf.xml.diff** 或 **Adobe Campaign v6/conf/serverConf.xml.diff** 文件。
+1. 在Adobe Campaign v7的&#x200B;**serverConf.xml**&#x200B;和&#x200B;**config-default.xml**&#x200B;文件中，应用您在Adobe Campaign早期版本中拥有的特定配置。 对于&#x200B;**serverConf.xml**&#x200B;文件，请使用&#x200B;**Neolane v5/conf/serverConf.xml.diff**、**Neolane v6/conf/serverConf.xml.diff**&#x200B;或&#x200B;**Adobe Campaign v6/conf/serverConf.xml.diff**&#x200B;文件。
 
    >[!NOTE]
    >
@@ -279,13 +279,13 @@ ht-degree: 0%
 
 ## 迁移重定向服务器 {#migrating-the-redirection-server--iis-}
 
-在此阶段，必须停止IIS服务器。 请参阅 [服务停止](#service-stop).
+在此阶段，必须停止IIS服务器。 请参阅[服务停止](#service-stop)。
 
-1. 打开 **Internet Information Services (IIS)管理器** 控制台。
+1. 打开&#x200B;**Internet信息服务(IIS)管理器**&#x200B;控制台。
 1. 更改用于Adobe Campaign早期版本的站点的绑定（侦听端口）：
 
-   * 右键单击用于Adobe Campaign以前版本的网站，然后选择 **[!UICONTROL Edit bindings]**.
-   * 对于每种类型的侦听端口(**[!UICONTROL http]** 和/或 **[!UICONTROL https]**)，选择相应的行并单击 **[!UICONTROL Edit]**.
+   * 右键单击用于Adobe Campaign早期版本的网站，然后选择&#x200B;**[!UICONTROL Edit bindings]**。
+   * 对于每个类型的侦听端口（**[!UICONTROL http]**&#x200B;和/或&#x200B;**[!UICONTROL https]**），选择适当的行并单击&#x200B;**[!UICONTROL Edit]**。
    * 输入其他端口。 默认情况下，http的侦听端口为80，https的侦听端口为443。 检查新端口是否可用。
 
      ![](assets/_migration_iis_3_611.png)
@@ -296,32 +296,32 @@ ht-degree: 0%
 
 1. 为Adobe Campaign v7创建新网站：
 
-   * 右键单击 **[!UICONTROL Sites]** 文件夹并选择 **[!UICONTROL Add Web Site...]**.
+   * 右键单击&#x200B;**[!UICONTROL Sites]**&#x200B;文件夹并选择&#x200B;**[!UICONTROL Add Web Site...]**。
 
      ![](assets/_migration_iis_4.png)
 
-   * 输入站点名称， **Adobe Campaign v7** 例如。
-   * 不会使用指向网站基本目录的访问路径，但是 **[!UICONTROL Physical access path]** 必须输入字段。 输入默认的IIS访问路径： **C:\inetpub\wwwroot**.
-   * 单击 **[!UICONTROL Connect as...]** 作为按钮，并确保 **[!UICONTROL Application user]** 已选中选项。
-   * 您可以将默认值保留在 **[!UICONTROL IP address]** 和 **[!UICONTROL Port]** 字段。 如果要使用其他值，请确保IP地址和/或端口可用。
-   * 查看 **[!UICONTROL Start Web site immediately]** 盒子。
+   * 为实例输入网站名称&#x200B;**Adobe Campaign v7**。
+   * 未使用指向网站基本目录的访问路径，但必须输入&#x200B;**[!UICONTROL Physical access path]**&#x200B;字段。 输入默认的IIS访问路径： **C:\inetpub\wwwroot**。
+   * 单击&#x200B;**[!UICONTROL Connect as...]**&#x200B;作为按钮，并确保已选择&#x200B;**[!UICONTROL Application user]**&#x200B;选项。
+   * 您可以在&#x200B;**[!UICONTROL IP address]**&#x200B;和&#x200B;**[!UICONTROL Port]**&#x200B;字段中保留默认值。 如果要使用其他值，请确保IP地址和/或端口可用。
+   * 选中&#x200B;**[!UICONTROL Start Web site immediately]**&#x200B;框。
 
      ![](assets/_migration_iis_5_7.png)
 
-1. 执行 **iis_neolane_setup.vbs** 用于在之前创建的虚拟目录上自动配置Adobe Campaign服务器使用的资源的脚本。
+1. 执行&#x200B;**iis_neolane_setup.vbs**&#x200B;脚本，在之前创建的虚拟目录上自动配置Adobe Campaign服务器使用的资源。
 
-   * 此文件可在 **`[Adobe Campaign v7]`\conf** 目录，其中 **`[Adobe Campaign v7]`** 是Adobe Campaign安装目录的访问路径。 用于执行脚本的命令如下所示（对于管理员）：
+   * 此文件位于&#x200B;**`[Adobe Campaign v7]`\conf**&#x200B;目录中，其中&#x200B;**`[Adobe Campaign v7]`**&#x200B;是Adobe Campaign安装目录的访问路径。 用于执行脚本的命令如下所示（对于管理员）：
 
      ```
      cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\conf
      cscript iis_neolane_setup.vbs
      ```
 
-   * 单击 **[!UICONTROL OK]** 以确认脚本执行。
+   * 单击&#x200B;**[!UICONTROL OK]**&#x200B;确认脚本执行。
 
      ![](assets/s_ncs_install_iis7_parameters_step2_7.png)
 
-   * 输入之前为Adobe Campaign v7创建的网站编号，然后单击 **[!UICONTROL OK]**.
+   * 输入之前为Adobe Campaign v7创建的网站编号，然后单击&#x200B;**[!UICONTROL OK]**。
 
      ![](assets/s_ncs_install_iis7_parameters_step3_7.png)
 
@@ -329,7 +329,7 @@ ht-degree: 0%
 
      ![](assets/s_ncs_install_iis7_parameters_step7_7.png)
 
-   * 在 **[!UICONTROL Content view]** 选项卡中，确保已使用Adobe Campaign资源正确配置网站配置：
+   * 在&#x200B;**[!UICONTROL Content view]**&#x200B;选项卡中，确保已使用Adobe Campaign资源正确配置网站配置：
 
      ![](assets/s_ncs_install_iis7_parameters_step6_7.png)
 
@@ -337,7 +337,7 @@ ht-degree: 0%
      >
      >如果未显示树结构，请重新启动IIS。
      >
-     >中详细介绍了以下IIS配置步骤 [本节](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
+     >[此部分](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server)中详细说明了以下IIS配置步骤。
 
 <!--
 ## Security zones {#security-zones}
@@ -404,8 +404,8 @@ Before you delete and cleanse the Adobe Campaign v6.02 installation, you must ap
 * 让功能团队对新安装运行全面检查。
 * 只有在您确定无需回滚后，才卸载Adobe Campaign v6。
 
-1. 在IIS中，删除 **Adobe Campaign v6** 网站，然后 **Adobe Campaign v6** 应用程序池。
-1. 重命名 **Adobe Campaign v6.back** 文件夹为 **Adobe Campaign v6**.
+1. 在IIS中，删除&#x200B;**Adobe Campaign v6**&#x200B;网站，然后删除&#x200B;**Adobe Campaign v6**&#x200B;应用程序池。
+1. 将&#x200B;**Adobe Campaign 6.back**&#x200B;文件夹重命名为&#x200B;**Adobe Campaign 6**。
 1. 使用“添加/删除组件”向导卸载Adobe Campaign v6。
 
    ![](assets/migration_wizard_2.png)

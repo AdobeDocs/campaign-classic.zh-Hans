@@ -27,7 +27,7 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_001.png)
 
-1. 编辑电子邮件投放，然后单击 **[!UICONTROL Offers]** 图标。
+1. 编辑电子邮件投放并单击&#x200B;**[!UICONTROL Offers]**&#x200B;图标。
 
    ![](assets/offer_delivery_example_002.png)
 
@@ -55,18 +55,18 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_008.png)
 
-1. 单击 **[!UICONTROL Preview]** 要在投放中预览优惠，请选择收件人以预览其接收优惠。
+1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;以预览投放中的优惠，然后选择收件人以预览其接收优惠。
 
    ![](assets/offer_delivery_example_009.png)
 
 1. 保存投放并启动定向工作流。
-1. 打开您的投放，然后单击 **[!UICONTROL Audit]** 投放的选项卡：您可以看到优惠引擎已从目录中的各种优惠中选择了要提出的主张。
+1. 打开您的投放，然后单击投放的&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡：您可以看到优惠引擎已从目录中的各种优惠中选择要提出的主张。
 
    ![](assets/offer_delivery_example_010.png)
 
 ## 执行优惠模拟 {#perform-an-offer-simulation}
 
-1. 在 **[!UICONTROL Profiles and Targets]** 选项卡，单击 **[!UICONTROL Simulations]** 链接，然后单击 **[!UICONTROL Create]** 按钮。
+1. 在&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Simulations]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
 
    ![](assets/offer_simulation_001.png)
 
@@ -78,7 +78,7 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_003.png)
 
-1. 单击 **[!UICONTROL Edit]** 选项卡，然后 **[!UICONTROL Scope]**.
+1. 单击&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Scope]**。
 
    ![](assets/offer_simulation_example_004.png)
 
@@ -93,7 +93,7 @@ ht-degree: 3%
 1. 输入有效日期。 您必须至少输入开始日期。 这允许优惠引擎筛选优惠，并选择在给定日期有效的优惠。
 1. 如有必要，请指定一个或多个主题，以将选件数量限制为设置中包含此关键字的选件。
 
-   在我们的示例中， **旅游** 类别包含两个子类别，这两个子类别具有两个单独的主题。 我们希望使用对优惠进行模拟 **客户>1年** 主题。
+   在我们的示例中，**Travel**&#x200B;类别包含两个子类别，这两个子类别具有两个单独的主题。 我们希望对主题为&#x200B;**客户>1年**&#x200B;的优惠运行模拟。
 
    ![](assets/offer_simulation_example_007.png)
 
@@ -107,21 +107,21 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_009.png)
 
-1. 保存设置，然后单击 **[!UICONTROL Start]** 在 **[!UICONTROL Dashboard]** 选项卡运行模拟。
+1. 保存设置，然后单击&#x200B;**[!UICONTROL Dashboard]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Start]**&#x200B;以运行模拟。
 
    ![](assets/offer_simulation_example_010.png)
 
-1. 模拟完成后，请查阅 **[!UICONTROL Results]** 以了解每个选件的建议详细细分。
+1. 模拟完成后，请参阅&#x200B;**[!UICONTROL Results]**&#x200B;以了解每个选件的建议详细细分。
 
    在我们的示例中，优惠引擎将优惠划分基于3个建议。
 
    ![](assets/offer_simulation_example_011.png)
 
-1. 显示 **[!UICONTROL Breakdown of offers by rank]** 以查看优惠引擎选择的优惠列表。
+1. 显示&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;以查看选件引擎选择的选件列表。
 
    ![](assets/offer_simulation_example_012.png)
 
-1. 如有必要，可以更改范围设置并通过单击再次运行模拟 **[!UICONTROL Start simulation]**.
+1. 如有必要，您可以通过单击&#x200B;**[!UICONTROL Start simulation]**&#x200B;来更改范围设置并再次运行模拟。
 
    ![](assets/offer_simulation_example_010.png)
 

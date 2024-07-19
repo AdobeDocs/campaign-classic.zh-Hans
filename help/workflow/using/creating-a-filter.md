@@ -19,19 +19,19 @@ Adobe Campaign中可用的过滤器是通过使用与查询相同的操作模式
 
 >[!NOTE]
 >
->有关创建过滤器的更多信息，请参阅 [本节](../../platform/using/filtering-options.md).
+>有关创建筛选器的更多信息，请参阅[此章节](../../platform/using/filtering-options.md)。
 
-此 **[!UICONTROL Administration > Configuration > Predefined filters]** 节点包含列表和概述中使用的所有筛选器。
+**[!UICONTROL Administration > Configuration > Predefined filters]**&#x200B;节点包含列表和概述中使用的所有筛选器。
 
-例如，可以按以下方式筛选运算符列表 **[!UICONTROL Active accounts]**：
+例如，运算符列表可按&#x200B;**[!UICONTROL Active accounts]**&#x200B;筛选：
 
 ![](assets/query_editor_filter_sample_1.png)
 
-匹配筛选器包含对以下项的查询： **[!UICONTROL Account disabled]** 的值 **[!UICONTROL Operators]** 架构：
+匹配筛选器包含对&#x200B;**[!UICONTROL Operators]**&#x200B;架构的&#x200B;**[!UICONTROL Account disabled]**&#x200B;值的查询：
 
 ![](assets/query_editor_filter_sample_2.png)
 
-对于同一列表， **[!UICONTROL By login or label]** 过滤器允许您根据在过滤器字段中输入的值过滤列表上的数据：
+对于同一列表，**[!UICONTROL By login or label]**&#x200B;筛选器允许您根据在筛选器字段中输入的值筛选列表上的数据：
 
 ![](assets/query_editor_filter_sample_3.png)
 
@@ -47,12 +47,12 @@ Adobe Campaign中可用的过滤器是通过使用与查询相同的操作模式
 
 >[!NOTE]
 >
->此 **[!UICONTROL Upper]** 函数中，您可以停用区分大小写的函数。
+>**[!UICONTROL Upper]**&#x200B;函数允许您停用区分大小写的函数。
 
-此 **[!UICONTROL Taken into account if]** 列允许您定义这些过滤条件的应用条件。 在此， **$(/tmp/@text)** 字符表示链接到过滤器的输入字段的内容：
+**[!UICONTROL Taken into account if]**&#x200B;列允许您为这些筛选条件定义应用条件。 此处，**$(/tmp/@text)**&#x200B;字符表示链接到筛选器的输入字段的内容：
 
 ![](assets/query_editor_filter_sample_5.png)
 
-此处， **$(/tmp/@text)=&#39;代理&#39;**
+此处，**$(/tmp/@text)=&#39;代理&#39;**
 
-此 **$(/tmp/@text)！=&quot;** 表达式在输入字段不为空时应用每个条件。
+**$(/tmp/@text)！=“**”表达式在输入字段不为空时应用每个条件。

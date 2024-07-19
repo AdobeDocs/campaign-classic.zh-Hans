@@ -17,9 +17,9 @@ ht-degree: 2%
 
 ## 扩展表 {#extending-a-table}
 
-要扩展 **nms：recipient** 模式收件人表，请按照以下步骤进行操作：
+要扩展&#x200B;**nms：recipient**&#x200B;架构收件人表，请应用以下过程：
 
-1. 创建扩展架构(**cus：extension**)，并使用以下数据：
+1. 使用以下数据创建扩展架构(**cus：extension**)：
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -40,13 +40,13 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   在此示例中，索引字段(**保真**)，并且 **位置** 元素(已存在于 **nms：recipient** schema)后附加一个枚举字段(**区域**)。
+   在此示例中，添加了索引字段(**fidelity**)，并且&#x200B;**位置**&#x200B;元素（已存在于&#x200B;**nms：recipient**&#x200B;架构中）附有枚举字段(**area**)。
 
    >[!IMPORTANT]
    >
-   >请记得添加 **extendedschema** 属性，以引用扩展架构。
+   >请记得添加&#x200B;**extendedSchema**&#x200B;属性以引用扩展架构。
 
-1. 检查扩展架构是否 **nms：recipient** 架构中是否存在其他数据：
+1. 检查扩展架构是否为&#x200B;**nms：recipient**&#x200B;架构，以及是否存在其他数据：
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -101,7 +101,7 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-表类型为 **autopk** 以创建一个自动生成的主键，供链接到收件人表的链接使用。
+表类型是&#x200B;**autopk**，以便创建自动生成的主键，供链接到收件人表的链接使用。
 
 已生成架构：
 
@@ -153,7 +153,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 扩展表的目的是避免对表中支持的字段数的限制，或者优化数据占用的空间（按需使用）。
 
-创建扩展表架构(**cus：feature**)：
+正在创建扩展表架构(**cus：feature**)：
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -203,7 +203,7 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 溢出表包含要扩展的表的外键。 因此，不会修改要扩展的表。 两个表之间的关系是要扩展的表的主键值。
 
-创建溢出表模式(**cus：overflow**)：
+正在创建溢出表架构(**cus：overflow**)：
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -235,9 +235,9 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 关系表允许您链接两个具有基数N-N的表。此表只包含要链接的表的外键。
 
-组间关系表的示例(**nms：group**)和收件人(**nms：recipient**)。
+组(**nms：group**)和收件人(**nms：recipient**)之间的关系表示例。
 
-关系表的源架构：
+关系表的Source架构：
 
 ```
 <srcSchema name="rcpGrpRel" namespace="cus">
@@ -301,7 +301,7 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 此用例演示如何使用现有引用表作为内置Adobe Campaign枚举机制（enum、userEnum或dbEnum）的替代方法。
 
-您还可以在架构中使用现有引用表作为枚举。 这可以通过在表和参考表之间创建链接以及添加属性来实现 **displayAsField=&quot;true&quot;**.
+您还可以在架构中使用现有引用表作为枚举。 这可以通过在表和参考表之间创建链接以及添加属性&#x200B;**displayAsField=&quot;true&quot;**&#x200B;来实现。
 
 在本例中，参考表包含银行名称和标识符的列表：
 
@@ -319,7 +319,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-在使用此参考表的任何表中，定义链接并添加 **displayAsField=&quot;true&quot;** 属性。
+在使用此参考表的任何表中，定义链接并添加&#x200B;**displayAsField=&quot;true&quot;**&#x200B;属性。
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -331,7 +331,7 @@ xtkschema="xtk:srcSchema">
 
 * 为了使其自动完成，必须在参考表中定义计算字符串。
 
-* 添加 **noDbIndex=&quot;true&quot;** 属性，以防止Adobe Campaign对链接源表中存储的值创建索引。
+* 在链接定义中添加&#x200B;**noDbIndex=&quot;true&quot;**&#x200B;属性，以防止Adobe Campaign对链接源表中存储的值创建索引。
 
 ## 相关主题
 

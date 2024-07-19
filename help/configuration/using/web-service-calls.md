@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## 一般信息 {#general-information}
 
-所有API方法都以Web服务的形式提供。 这使您能够通过SOAP调用管理所有Adobe Campaign函数，这是Adobe Campaign应用程序服务器的本机入口点。 Adobe Campaign控制台本身仅使用SOAP调用。
+所有API方法都以Web服务的形式提供。 这使您能够通过SOAP调用管理所有Adobe Campaign功能，这是Adobe Campaign应用程序服务器的本机入口点。 Adobe Campaign控制台本身仅使用SOAP调用。
 
 通过Web服务，您可以从第三方系统创建许多应用程序：
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 在Adobe Campaign应用程序服务器中实现的Web服务的定义可从数据架构中获取。
 
-Web服务在数据架构的语法中进行了描述，可从 **`<methods>`** 元素。
+Web服务在数据架构的语法中进行描述，可从&#x200B;**`<methods>`**&#x200B;元素获得。
 
 ```
 <methods>
@@ -43,15 +43,15 @@ Web服务在数据架构的语法中进行了描述，可从 **`<methods>`** 元
 </methods>
 ```
 
-下面是方法的定义示例，名为 **生成表单**.
+下面是名为&#x200B;**GenerateForm**&#x200B;的方法的定义示例。
 
-此服务的描述以 `<method>` 元素。 方法的参数列表是从  `<parameters>` 元素。 每个参数由名称、类型（布尔值、字符串、DOMElement等）指定 和描述。 值为“out”的“inout”属性允许您指定“result”参数位于SOAP调用输出中。
+服务的描述以`<method>`元素开头。 已从`<parameters>`元素完成方法的参数列表。 每个参数由名称、类型（布尔值、字符串、DOMElement等）指定 和描述。 值为“out”的“inout”属性允许您指定“result”参数位于SOAP调用输出中。
 
 “static”属性（值为“true”）的存在将此方法描述为static，这意味着必须声明该方法的所有参数。
 
 “const”方法隐含地将XML文档格式为其关联架构作为输入。
 
-此功能的完整说明 `<method>` Adobe Campaign架构的元素在以下位置的“架构引用”章节中可用： [方法](../../configuration/using/schema/method.md)
+在[方法](../../configuration/using/schema/method.md)下的“架构引用”章节中，提供了Adobe Campaign架构的`<method>`元素的完整说明
 
 “xtk：queryDef”架构中的“const”类型“ExecuteQuery”方法的示例：
 
@@ -78,7 +78,7 @@ https://`<server>`/nl/jsp/schemawsdl.jsp？schema=`<schema>`
 
 替换为：
 
-* **`<server>`**：Adobe Campaign应用程序服务器(nlserver web)
+* **`<server>`**： Adobe Campaign应用程序服务器(nlserver web)
 * **`<schema>`**：架构标识键(namespace：schema_name)
 
 ### 架构“xtk：queryDef”的“ExecuteQuery”方法示例 {#example-on-the--executequery--method-of-schema--xtk-querydef-}
@@ -91,7 +91,7 @@ WSDL描述首先定义用于形成消息的类型，这些消息在“端口”�
 
 #### 类型 {#types}
 
-类型定义基于XML架构。 在我们的示例中，“ExecuteQuery”方法采用“s：string”字符串和XML文档(`<s:complextype>`)作为参数。 方法(“ExecuteQueryResponse”)的返回值是XML文档(  `<s:complextype>`)。
+类型定义基于XML架构。 在我们的示例中，“ExecuteQuery”方法将“s：string”字符串和XML文档(`<s:complextype>`)作为参数。 方法(“ExecuteQueryResponse”)的返回值是XML文档(`<s:complextype>`)。
 
 ```
 <types>
@@ -127,7 +127,7 @@ WSDL描述首先定义用于形成消息的类型，这些消息在“端口”�
 
 #### 消息 {#messages}
 
-此 `<message>` 描述要发送的一组字段的名称和类型。 方法使用两条消息作为参数(“ExecuteQueryIn”)和返回值(“ExecuteQueryOut”)进行传递。
+`<message>`描述了要发送的一组字段的名称和类型。 方法使用两条消息作为参数(“ExecuteQueryIn”)和返回值(“ExecuteQueryOut”)进行传递。
 
 ```
 <message name="ExecuteQueryIn">
@@ -141,7 +141,7 @@ WSDL描述首先定义用于形成消息的类型，这些消息在“端口”�
 
 #### 端口类型 {#porttype}
 
-此 `<porttype>` 关联由生成响应（“输出”）的查询（“输入”）触发的“ExecuteQuery”操作上的消息。
+`<porttype>`关联由生成响应（“输出”）的查询（“输入”）触发的“ExecuteQuery”操作的消息。
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -154,7 +154,7 @@ WSDL描述首先定义用于形成消息的类型，这些消息在“端口”�
 
 #### 绑定 {#binding}
 
-此 `<binding>` 部分指定SOAP通信协议( `<soap:binding>` )、HTTP中的数据传输（“transport”属性的值）和“ExecuteQuery”操作的数据格式。 SOAP信封的正文直接包含消息段，而不进行转换。
+`<binding>`部分指定SOAP通信协议(`<soap:binding>`)、HTTP中的数据传输（“transport”属性的值）以及“ExecuteQuery”操作的数据格式。 SOAP信封的正文直接包含消息段，而不进行转换。
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -173,7 +173,7 @@ WSDL描述首先定义用于形成消息的类型，这些消息在“端口”�
 
 #### 服务 {#service}
 
-此 `<service>` 部分介绍“XtkQueryDef”服务，其URI位于Adobe Campaign应用程序服务器的URL上。
+`<service>`部分描述了“XtkQueryDef”服务，其URI位于Adobe Campaign应用程序服务器的URL上。
 
 ```
 <service name="XtkQueryDef">
@@ -185,15 +185,15 @@ WSDL描述首先定义用于形成消息的类型，这些消息在“端口”�
 
 ## 连接性 {#connectivity}
 
-Adobe Campaign通过引入 [安全区域](../../installation/using/security-zones.md) 和会话管理设置。
+通过引入[安全区域](../../installation/using/security-zones.md)和会话管理设置，Adobe Campaign提高了身份验证机制的安全性。
 
 有两种身份验证模式可用：
 
-* **通过调用登录方法()**. 此模式会生成会话令牌和安全令牌。 这是最安全的模式，因此是最推荐的模式。
+* **通过调用登录方法()**。 此模式会生成会话令牌和安全令牌。 这是最安全的模式，因此是最推荐的模式。
 
 或者
 
-* **通过Adobe Campaign登录+密码** 创建会话令牌的用户。 会话令牌会在设置的时间段后自动过期。 不建议使用此模式，因此需要减少某些区域设置（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）的应用程序安全设置。
+* 通过Adobe Campaign登录+密码&#x200B;**创建会话令牌**。 会话令牌会在设置的时间段后自动过期。 不建议使用此模式，因此需要减少某些区域设置（allowUserPassword=&quot;true&quot;和sessionTokenOnly=&quot;true&quot;）的应用程序安全设置。
 
 ### 会话令牌特性 {#session-token-characteristics}
 
@@ -231,13 +231,13 @@ Adobe Campaign通过引入 [安全区域](../../installation/using/security-zone
 * 服务器使用令牌完成链接
 * 服务器向表单添加隐藏字段
 
-通过SOAP调用：
+从SOAP调用：
 
 * 将其添加到调用标头
 
 ### 调用示例 {#call-examples}
 
-* 使用 **HttpSoapConnection/SoapService**：
+* 使用&#x200B;**HttpSoapConnection/SoapService**：
 
 ```
   
@@ -270,11 +270,11 @@ Adobe Campaign通过引入 [安全区域](../../installation/using/security-zone
   logInfo(queryRes[0].toXMLString())
 ```
 
-* 使用 **HttpServletRequest**：
+* 使用&#x200B;**HttpServletRequest**：
 
 >[!NOTE]
 >
->以下内容中使用的URL **HttpServletRequest** 调用需要在的url权限部分进行允许列表 **serverConf.xml** 文件。 对于服务器的URL本身也是如此。
+>以下&#x200B;**HttpServletRequest**&#x200B;调用中使用的URL需要在&#x200B;**serverConf.xml**&#x200B;文件的URL权限部分中允许列表。 对于服务器的URL本身也是如此。
 
 登录执行()：
 

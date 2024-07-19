@@ -20,13 +20,13 @@ Adobe Campaign使用数据架构来：
 * 定义 Campaign 应用程序中不同数据对象之间的链接。
 * 定义并描述每个对象中包含的个别字段。
 
-要更好地了解Campaign内置表及其交互，请参阅 [本节](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html).
+要更好地了解Campaign内置表及其交互，请参阅[此部分](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html)。
 
 ## 扩展或创建模式 {#extending-or-creating-schemas}
 
-要将字段或索引或其他元素添加到Campaign中的某个核心数据架构(如收件人表(nms：recipient))，您必须扩展该架构。 有关详细信息，请参见 [扩展模式](../../configuration/using/extending-a-schema.md) 部分。
+要将字段或索引或其他元素添加到Campaign中的某个核心数据架构(如收件人表(nms：recipient))，您必须扩展该架构。 有关详细信息，请参阅[扩展架构](../../configuration/using/extending-a-schema.md)部分。
 
-要添加在Adobe Campaign中现成不存在的全新类型数据（例如合同表），您可以直接创建自定义架构。 有关详细信息，请参见 [数据架构](../../configuration/using/data-schemas.md) 部分。
+要添加在Adobe Campaign中现成不存在的全新类型数据（例如合同表），您可以直接创建自定义架构。 有关详细信息，请参阅[数据架构](../../configuration/using/data-schemas.md)部分。
 
 ![](assets/schemaextension_getting_started_1.png)
 
@@ -55,9 +55,9 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->您还可以使用用户管理的枚举(通常位于 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** )，指定给定字段的值。 这些实际上是全局枚举，如果您可以在所使用的特定架构之外使用枚举，则最好选择它们。
+>您还可以使用用户管理的枚举（通常在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]**&#x200B;下）来指定给定字段的值。 这些实际上是全局枚举，如果您可以在所使用的特定架构之外使用枚举，则最好选择它们。
 
-要了解有关明细列表的详细信息，请参阅 [明细列表](../../configuration/using/schema-structure.md#enumerations) 和 [`<enumeration>` 元素](../../configuration/using/schema/enumeration.md) 部分。
+要了解有关枚举的更多信息，请参阅[枚举](../../configuration/using/schema-structure.md#enumerations)和[`<enumeration>`元素](../../configuration/using/schema/enumeration.md)部分。
 
 ## 索引 {#index}
 
@@ -80,19 +80,19 @@ type="string" enum="exTransactionTypeEnum"/>
 </dbindex>
 ```
 
-此 **xpath** 属性指向架构中要编制索引的字段。
+**xpath**&#x200B;属性指向架构中要索引的字段。
 
 >[!IMPORTANT]
 >
 >请务必记住，索引提供的SQL查询读取性能提高也会在写入记录时带来性能下降。 因此，应谨慎使用索引。
 
-有关索引的更多信息，请参阅 [索引字段](../../configuration/using/database-mapping.md#indexed-fields) 部分。
+有关索引的更多信息，请参阅[索引字段](../../configuration/using/database-mapping.md#indexed-fields)部分。
 
 ## 键 {#keys}
 
-每个表必须至少有一个键，通常使用在架构的主元素中自动建立它 **@autopk=true** 属性设置为“true”。
+每个表必须至少有一个键，通常使用设置为“true”的&#x200B;**@autopk=true**&#x200B;属性在架构的主元素中自动建立该键。
 
-也可使用定义主键 **内部** 属性。
+也可使用&#x200B;**internal**&#x200B;属性定义主键。
 
 例如：
 
@@ -102,21 +102,21 @@ type="string" enum="exTransactionTypeEnum"/>
 </key>
 ```
 
-在此示例中，不要让 **@autopk** 属性创建一个名为“id”的默认主键，我们将指定自己的“householdId”主键。
+在此示例中，我们指定自己的“householdId”主键，而不是让&#x200B;**@autopk**&#x200B;属性创建一个名为“id”的默认主键。
 
 >[!IMPORTANT]
 >
 >创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
-要了解有关密钥的更多信息，请参阅 [密钥管理](../../configuration/using/database-mapping.md#management-of-keys) 部分。
+要了解有关密钥的更多信息，请参阅[密钥管理](../../configuration/using/database-mapping.md#management-of-keys)部分。
 
 ## 属性（字段） {#attributes--fields-}
 
-属性允许您定义组成数据对象的字段。 您可以使用 **[!UICONTROL Insert]** 模式版工具栏中的按钮，将空属性模板拖放到光标所在的XML中。 有关详细信息，请参见 [数据架构](../../configuration/using/data-schemas.md) 部分。
+属性允许您定义组成数据对象的字段。 您可以使用架构版工具栏中的&#x200B;**[!UICONTROL Insert]**&#x200B;按钮，将空属性模板拖放到光标所在的XML中。 有关详细信息，请参阅[数据架构](../../configuration/using/data-schemas.md)部分。
 
 ![](assets/schemaextension_getting_started_2.png)
 
-完整的属性列表可在 [`<attribute>` 元素](../../configuration/using/schema/attribute.md) 部分。 以下是一些更常用的属性：
+[`<attribute>`元素](../../configuration/using/schema/attribute.md)部分中提供了属性的完整列表。 以下是一些更常用的属性：
 
 * **@advanced**
 * **@dataPolicy**
@@ -133,9 +133,9 @@ type="string" enum="exTransactionTypeEnum"/>
 * **@xml**
 * **@type**
 
-  要查看一个表，其中列出了Adobe Campaign为各种数据库管理系统生成的数据类型的映射，请参阅 [映射Adobe Campaign/DBMS数据的类型](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) 部分。
+  要查看列出Adobe Campaign为不同的数据库管理系统生成的数据类型映射的表，请参阅[映射Adobe Campaign/DBMS数据的类型](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)部分。
 
-有关每个属性的详细信息，请参阅 [属性说明](../../configuration/using/schema/attribute.md) 部分。
+有关每个属性的详细信息，请参阅[属性说明](../../configuration/using/schema/attribute.md)部分。
 
 ### 示例 {#examples}
 
@@ -151,13 +151,13 @@ type="string" enum="exTransactionTypeEnum"/>
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
 ```
 
-使用隐藏的计算字段示例 **@advanced** 属性：
+使用&#x200B;**@advanced**&#x200B;属性隐藏的计算字段示例：
 
 ```
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
 ```
 
-XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属性。
+XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolicy**&#x200B;属性。
 
 ```
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
@@ -173,7 +173,7 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 链接是架构主元素的最后几个元素之一。 它们定义实例中所有不同的架构如何相互关联。
 
-在包含 **外键** 所链接到的表的URL值。
+在包含链接到的表的&#x200B;**外键**&#x200B;的架构中声明链接。
 
 基数有三种类型：1-1、1-N和N-N。默认使用1-N类型。
 
@@ -201,7 +201,7 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 此处，“xpath-dst”对应于目标架构中的主键，“xpath-src”对应于源架构中的外键。
 
-## 审核跟踪 {#audit-trail}
+## 审核记录 {#audit-trail}
 
 架构底部可能想要包含一个有用元素，即跟踪元素（审核跟踪）。
 
@@ -221,4 +221,4 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 >[!NOTE]
 >
->当修改不会影响数据库结构时，只需重新生成模式即可。 要执行此操作，请选择要更新的架构，右键单击并选择 **[!UICONTROL Actions > Regenerate selected schemas...]** . 有关详细信息，请参见 [重新生成模式](../../configuration/using/regenerating-schemas.md) 部分。
+>当修改不会影响数据库结构时，只需重新生成模式即可。 为此，请选择要更新的架构，右键单击并选择&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]** 。 有关详细信息，请参阅[重新生成架构](../../configuration/using/regenerating-schemas.md)部分。

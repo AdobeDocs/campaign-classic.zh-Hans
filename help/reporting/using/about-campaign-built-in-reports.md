@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您还可以了解如何将自己的报告添加到 **[!UICONTROL Reports]** 选项卡。 有关更多信息，请参阅此 [页面](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options).
+>您还可以了解如何将自己的报告添加到&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。 有关详细信息，请参阅此[页面](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options)。
 
 这些报告及其内容在与其所关注的功能相关的文档中详细介绍。
 
@@ -28,15 +28,15 @@ Adobe Campaign提供了多种类型的报表，可通过客户控制台或Intern
 
 可以使用以下类型的报表：
 
-* 有关整个平台的报告，请参阅 [全局报告](../../reporting/using/global-reports.md).
-* 投放报告，请参阅 [投放报告](../../reporting/using/delivery-reports.md).
-* 累积报告，请参见 [累积报告](../../reporting/using/cumulative-reports.md).
+* 有关整个平台的报告，请参阅[全局报告](../../reporting/using/global-reports.md)。
+* 传递报告，请参阅[传递报告](../../reporting/using/delivery-reports.md)。
+* 累积报告，请参阅[累积报告](../../reporting/using/cumulative-reports.md)。
 
-您可以从客户端控制台主页、报告仪表板或投放列表访问报告。 报告的显示模式取决于其上下文。 主报告的列表可在主页上找到，并允许您快速访问投放数据。 此列表可以根据您的需求进行更改。 请参阅 [本节](../../reporting/using/about-reports-creation-in-campaign.md) 以了解更多信息。
+您可以从客户端控制台主页、报告仪表板或投放列表访问报告。 报告的显示模式取决于其上下文。 主报告的列表可在主页上找到，并允许您快速访问投放数据。 此列表可以根据您的需求进行更改。 有关详细信息，请参阅[此部分](../../reporting/using/about-reports-creation-in-campaign.md)。
 
 要访问Campaign内置报告，请执行以下操作：
 
-1. 选择 **[!UICONTROL Reports]** Adobe Campaign选项卡。
+1. 选择Adobe Campaign界面的&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。
 
    ![](assets/reporting_access_from_home.png)
 
@@ -46,11 +46,11 @@ Adobe Campaign提供了多种类型的报表，可通过客户控制台或Intern
 
    ![](assets/reporting_edit_a_report.png)
 
-1. 单击 **[!UICONTROL Back]** 屏幕顶部的链接会将您转到报告列表。
+1. 单击屏幕顶部的&#x200B;**[!UICONTROL Back]**&#x200B;链接可返回到报告列表。
 
    ![](assets/reporting_back_button.png)
 
-有关对正在编辑的报表执行的其他可能操作，请参见 [此页面](../../reporting/using/actions-on-reports.md).
+有关对正在编辑的报告的其他可能操作，请参见[此页面](../../reporting/using/actions-on-reports.md)。
 
 特定于活动或投放的报告可通过其各自的仪表板访问。
 

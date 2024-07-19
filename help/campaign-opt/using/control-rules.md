@@ -24,14 +24,14 @@ ht-degree: 2%
 * **[!UICONTROL URL label approval]** （电子邮件）：检查每个跟踪URL是否都有标签。
 * **[!UICONTROL URL approval]** （电子邮件）：检查跟踪URL（存在“&amp;”字符）。
 * **[!UICONTROL Message size approval]** （移动设备）：检查SMS消息的大小。
-* **[!UICONTROL Validity period check]** （电子邮件）：检查投放的有效期是否足以发送所有消息。
+* **[!UICONTROL Validity period check]** （电子邮件）：检查投放的有效期是否足以发送所有邮件。
 * **[!UICONTROL Proof size check]** （所有渠道）：如果验证目标群体超过100个收件人，则生成错误消息。
-* **[!UICONTROL Wave scheduling check]** （电子邮件）：检查如果投放被细分为多个阶段，则计划的最后一波投放是否在有效期结束前开始。
+* **[!UICONTROL Wave scheduling check]** （电子邮件）：如果投放被细分为多个阶段，则检查是否计划在有效期结束前开始最后一波投放。
 * **[!UICONTROL Unsubscription link approval]** （电子邮件）：检查每个内容(HTML和文本)中是否存在至少一个退订（选择退出）URL。
 
 ## 创建控制规则 {#creating-a-control-rule}
 
-可以创建新的控制规则以满足您的需求。 为此，请创建 **[!UICONTROL Control]** 类型规则，然后在 **[!UICONTROL Code]** 选项卡。
+可以创建新的控制规则以满足您的需求。 为此，请创建一个&#x200B;**[!UICONTROL Control]**&#x200B;分类规则，并在&#x200B;**[!UICONTROL Code]**&#x200B;选项卡的SQL中输入控制公式。
 
 **示例：**
 
@@ -39,11 +39,11 @@ ht-degree: 2%
 
 应用以下步骤：
 
-1. 创建 **[!UICONTROL Control]** 类型规则。 选择 **[!UICONTROL Warning]** 警报级别。
+1. 创建&#x200B;**[!UICONTROL Control]**&#x200B;分类规则。 选择&#x200B;**[!UICONTROL Warning]**&#x200B;警报级别。
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. 在 **[!UICONTROL Code]** 选项卡，输入脚本以应用所需的阈值，如下所示：
+1. 在&#x200B;**[!UICONTROL Code]**&#x200B;选项卡中，输入脚本以应用所需的阈值，如下所示：
 
    ![](assets/campaign_opt_create_control_02.png)
 
@@ -67,6 +67,6 @@ ht-degree: 2%
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   在分析结束时， **[!UICONTROL Confirm delivery]** 按钮将不可用。
+   分析结束时，**[!UICONTROL Confirm delivery]**&#x200B;按钮将不可用。
 
    ![](assets/campaign_opt_create_control_06.png)

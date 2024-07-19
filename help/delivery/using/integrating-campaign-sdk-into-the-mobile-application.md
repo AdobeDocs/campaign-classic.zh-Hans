@@ -10,7 +10,7 @@ exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
 source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -18,17 +18,17 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Adobe强烈建议通过在数据收集UI中配置Adobe Experience Platform扩展来使用Adobe Campaign Mobile SDK。 Adobe Experience Platform Mobile SDK有助于在移动设备应用程序中支持Adobe的Experience Cloud解决方案和服务。 SDK配置通过数据收集UI进行管理，以实现灵活配置和基于规则的可扩展集成。 [请参阅Adobe Developer文档以了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>Adobe强烈建议通过在数据收集UI中配置Adobe Experience Platform扩展来使用Adobe Campaign Mobile SDK。 Adobe Experience Platform Mobile SDK 有助于在移动设备应用程序中支持 Adobe 的 Experience Cloud 解决方案和服务。 SDK 配置通过数据收集 UI 进行管理，以实现灵活配置和基于规则的可扩展集成。 [在Adobe Developer文档中了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}。
 
-要获取Campaign SDK（以前称为Neolane SDK），请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
+要获取Campaign SDK（以前称为Neolane SDK），请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}。
 
-要了解有关支持的各种Android和iOS版本的更多信息，请参阅 [兼容性矩阵](../../rn/using/compatibility-matrix.md#MobileSDK).
+要了解有关支持的其他Android和iOS版本的更多信息，请参阅[兼容性矩阵](../../rn/using/compatibility-matrix.md#MobileSDK)。
 
 您可以在下面找到Campaign SDK的集成步骤。
 
-+++**加载Campaign SDK**
++++**正在加载Campaign SDK**
 
-* **在Android中**：和 **neolane_sdk-release.aar** 文件必须链接到项目。
+* **在Android**&#x200B;中： **neolane_sdk-release.aar**&#x200B;文件必须链接到项目。
 
   以下权限授予对Adobe Campaign服务器的访问权限：
 
@@ -48,11 +48,11 @@ ht-degree: 0%
 
   从SDK版本1.0.26开始，不再使用此权限。
 
-* **在iOS中**：和 **libNeolaneSDK.a** 和 **Neolane_SDK.h** 文件必须链接到项目。 从SDK版本1.0.24开始，选项 **ENABLE_BITCODE** 已激活。
+* **在iOS**&#x200B;中： **libNeolaneSDK.a**&#x200B;和&#x200B;**Neolane_SDK.h**&#x200B;文件必须链接到项目。 从SDK 1.0.24版本开始，激活选项&#x200B;**ENABLE_BITCODE**。
 
   >[!NOTE]
   >
-  >对于SDK版本1.0.25，中提供了四种体系结构 **Neolane_SDK.h** 文件。
+  >对于SDK版本1.0.25，**Neolane_SDK.h**&#x200B;文件中提供了四种体系结构。
 
 +++
 
@@ -60,16 +60,16 @@ ht-degree: 0%
 
 要将Campaign SDK集成到移动应用程序，功能管理员必须向开发人员提供以下信息：
 
-* **集成密钥**：启用Adobe Campaign平台以标识移动应用程序。
+* **集成键**：用于启用Adobe Campaign平台以识别移动应用程序。
 
   >[!NOTE]
   >
-  >此集成键可在Adobe Campaign控制台中的以下位置输入： **[!UICONTROL Information]** 专用于移动应用程序的服务的选项卡。 请参阅 [在Adobe Campaign中配置移动应用程序](configuring-the-mobile-application.md).
+  >此集成密钥输入到Adobe Campaign控制台中，该控制台位于专用于移动应用程序的服务的&#x200B;**[!UICONTROL Information]**&#x200B;选项卡中。 请参阅[在Adobe Campaign中配置移动应用程序](configuring-the-mobile-application.md)。
 
 * **跟踪URL**：与Adobe Campaign跟踪服务器的地址匹配。
-* **营销URL**：启用订阅收藏集。
+* **营销URL**：启用订阅集合。
 
-* **在Android中**：
+* 在Android **中**：
 
   ```
   Neolane.getInstance().setIntegrationKey("your Adobe mobile app integration key");
@@ -77,7 +77,7 @@ ht-degree: 0%
   Neolane.getInstance().setTrackingHost("https://yourTrackingHost:yourTrackingPort/"); 
   ```
 
-* **在iOS中**：
+* 在iOS **中**：
 
   ```
   Neolane_SDK *nl = [Neolane_SDK getInstance];
@@ -88,14 +88,14 @@ ht-degree: 0%
 
 +++
 
-+++**注册功能**
++++**注册函数**
 
 注册功能使您能够：
 
 * 将通知ID或推送ID(iOS的deviceToken和Android的注册ID)发送到Adobe Campaign。
 * 恢复协调密钥或userKey（例如，电子邮件或帐号）
 
-* **在Android中**：
+* 在Android **中**：
 
   ```
   void registerInNeolane(String registrationId, String userKey, Context context)
@@ -110,7 +110,7 @@ ht-degree: 0%
   }
   ```
 
-  如果您使用FCM(Firebase Cloud Messaging)，我们建议您使用 **registerDevice** 函数调用 **onTokenRefresh** 函数，用于在用户的移动设备令牌发生更改时通知Adobe Campaign。
+  如果您使用FCM (Firebase Cloud Messaging)，我们建议您在调用&#x200B;**onTokenRefresh**&#x200B;函数时使用&#x200B;**registerDevice**&#x200B;函数来通知Adobe Campaign用户的移动设备令牌发生了更改。
 
   ```
   public class NeoTripFirebaseInstanceIDService extends FirebaseInstanceIdService {
@@ -132,7 +132,7 @@ ht-degree: 0%
   }
   ```
 
-* **在iOS中**：
+* 在iOS **中**：
 
   ```
   // Callback called on successful registration to the APNs
@@ -148,11 +148,11 @@ ht-degree: 0%
 
 +++**跟踪函数**
 
-* **在Android中**：
+* 在Android **中**：
 
   利用跟踪函数，可跟踪通知激活（打开）和通知显示（屏幕快照）。
 
-  跟踪通知显示(通过调用 **notifyreceive** 函数)，请遵循以下实施。 请注意，如果您使用FCM(Firebase Cloud Messaging)，我们建议您使用 **notifyreceive** 函数当 **onMessageReceived** 函数由Android系统调用。
+  要跟踪通知显示（通过调用SDK的&#x200B;**notifyReceive**&#x200B;函数来完成），请遵循以下实施。 请注意，如果您使用FCM (Firebase Cloud Messaging)，我们建议您在Android系统调用&#x200B;**onMessageReceived**&#x200B;函数时使用&#x200B;**notifyReceive**&#x200B;函数。
 
   ```
   package com.android.YourApplication;
@@ -248,7 +248,7 @@ ht-degree: 0%
   }
   ```
 
-  以下是跟踪通知打开(通过调用 **notifyOpening** 函数)。 此 **通知活动** 类对应于用于创建 **notifIntent** 对象。
+  以下是跟踪通知打开的实施示例（通过调用SDK的&#x200B;**notifyOpening**&#x200B;函数来执行）。 **NotificationActivity**&#x200B;类对应于上一个示例中用于创建&#x200B;**notifIntent**&#x200B;对象的类。
 
   ```
   public class NotificationActivity extends Activity {
@@ -279,7 +279,7 @@ ht-degree: 0%
   }
   ```
 
-* **在iOS中**：
+* 在iOS **中**：
 
   跟踪函数允许您跟踪何时激活通知（打开）。
 
@@ -296,7 +296,7 @@ ht-degree: 0%
 
   >[!NOTE]
   >
-  >从版本7.0开始， **`application:didReceiveRemoteNotification:fetchCompletionHandler`** 函数实现，操作系统仅调用此函数。 此 **`application:didReceiveRemoteNotification`** 因此不调用函数。
+  >从版本7.0开始，一旦实现&#x200B;**`application:didReceiveRemoteNotification:fetchCompletionHandler`**&#x200B;函数，操作系统将仅调用此函数。 因此，未调用&#x200B;**`application:didReceiveRemoteNotification`**&#x200B;函数。
 
 +++
 
@@ -342,67 +342,67 @@ iOS允许您发送静默通知、通知或数据，这些信息或数据将直�
 
 +++
 
-+++**RegisterDeviceStatus委派**
++++**RegisterDeviceStatus委托**
 
 >[!NOTE]
 >
 >请注意，这仅供iOS使用。
 
-在iOS中，委派协议允许您获取 **registerDevice** 调用，并且可用于了解注册期间是否出现错误。
+在iOS中，委派协议允许您获取&#x200B;**registerDevice**&#x200B;调用的结果，并可用于了解注册过程中是否出现错误。
 
-此 **registerDeviceStatus** 原型为：
+**registerDeviceStatus**&#x200B;原型为：
 
 ```
 - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status:(NSString *) errorReason;
 ```
 
-**状态** 让您知道注册是否成功或发生错误。
+**状态**&#x200B;允许您知道注册是否成功或发生错误。
 
-**错误原因** 为您提供有关所发生错误的更多信息。 有关可用错误及其说明的更多信息，请参阅下表。
+**ErrorReason**&#x200B;为您提供有关所发生错误的详细信息。 有关可用错误及其说明的更多信息，请参阅下表。
 
 <table> 
  <thead>
   <tr>
    <th> 状态<br /> </th>
    <th> 说明<br /> </th>
-   <th> 错误原因<br /> </th>
+   <th> ErrorReason<br /> </th>
   </tr>
  </thead>
  <tbody>
   <tr>
    <td> ACCRegisterDeviceStatusSuccess <br /> </td>
    <td> 注册成功<br /> </td>
-   <td> EMPTY<br /> </td>
+   <td> 空<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty <br /> </td>
    <td> ACC营销服务器主机名为空或未设置。<br /> </td>
-   <td> EMPTY<br /> </td>
+   <td> 空<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureIntegrationKeyEmpty <br /> </td>
    <td> 集成键为空或未设置。<br /> </td>
-   <td> EMPTY<br /> </td>
+   <td> 空<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureConnectionIssue<br /> </td>
-   <td> 与ACC的连接问题<br /> </td>
-   <td> 更多信息（以操作系统当前语言提供）<br /> </td>
+   <td> 与ACC<br />的连接问题 </td>
+   <td> 更多信息（以操作系统当前语言表示）<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureUnknownUUID<br /> </td>
    <td> 提供的UUID（集成密钥）未知。<br /> </td>
-   <td> EMPTY<br /> </td>
+   <td> 空<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureUnexpectedError<br /> </td>
-   <td> ACC服务器返回意外错误。<br /> </td>
+   <td> 返回到ACC服务器的意外错误。<br /> </td>
    <td> 错误消息返回到ACC。<br /> </td>
   </tr>
  </tbody>
 </table>
 
-**Neolane_SDKDelegate** 协议和 **registerDeviceStatus** 委托定义如下：
+**Neolane_SDKDelegate**&#x200B;协议和&#x200B;**registerDeviceStatus**&#x200B;委托定义如下：
 
 ```
 //  Neolane_SDK.h
@@ -434,9 +434,9 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 @end
 ```
 
-实施 **registerDeviceStatus** 委派，请执行以下步骤：
+要实施&#x200B;**registerDeviceStatus**&#x200B;委派，请执行以下步骤：
 
-1. 实施 **setDelegate** 在SDK初始化期间。
+1. 在SDK初始化期间实施&#x200B;**setDelegate**。
 
    ```
    // AppDelegate.m
@@ -465,7 +465,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
    }
    ```
 
-1. 将协议添加到 **@interface** 您班级的。
+1. 在类的&#x200B;**@interface**&#x200B;中添加协议。
 
    ```
    //  AppDelegate.h
@@ -487,7 +487,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
    }
    ```
 
-1. 在中实施委托 **AppDelegate**.
+1. 在&#x200B;**AppDelegate**&#x200B;中实施委托。
 
    ```
    //  AppDelegate.m
@@ -542,9 +542,9 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 +++**变量**
 
-利用变量，可定义在收到通知后的移动应用程序行为。 必须在移动设备应用程序代码以及Adobe Campaign控制台的中，定义这些变量 **[!UICONTROL Variables]** 选项卡(请参阅 [在Adobe Campaign中配置移动应用程序](configuring-the-mobile-application.md))。 下面是一个代码示例，该代码允许移动应用程序收集通知中添加的任何变量。 在我们的示例中，我们使用“VAR”变量。
+利用变量，可定义在收到通知后的移动应用程序行为。 必须在移动设备应用程序代码和Adobe Campaign控制台中，在专用移动设备应用程序的&#x200B;**[!UICONTROL Variables]**&#x200B;选项卡中定义这些变量(请参阅[在Adobe Campaign中配置移动设备应用程序](configuring-the-mobile-application.md))。 下面是一个代码示例，该代码允许移动应用程序收集通知中添加的任何变量。 在我们的示例中，我们使用“VAR”变量。
 
-* **在Android中**：
+* 在Android **中**：
 
   ```
   public void onReceive(Context context, Intent intent) {
@@ -554,7 +554,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
   }
   ```
 
-* **在iOS中**：
+* 在iOS **中**：
 
   ```
   - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -586,13 +586,13 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 >[!CAUTION]
 >
->Adobe建议选择短变量名称，因为对于iOS和Android，通知大小限制为4kB。
+>Adobe建议选择短变量名称，因为iOS和Android的通知大小限制为4kB。
 
 +++
 
 +++**通知服务扩展**
 
-**适用于iOS的**
+用于iOS的&#x200B;****
 
 介质必须在通知服务扩展级别下载。
 
@@ -628,17 +628,17 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 +++**通知内容扩展**
 
-**适用于iOS的**
+用于iOS的&#x200B;****
 
 在此级别，您需要：
 
 * 将您的内容扩展关联到Adobe Campaign发送的类别：
 
-  如果您希望移动设备应用程序显示图像，则可以在Adobe Campaign中将类别值设置为“图像”，并且在移动设备应用程序中，可以使用 **UNNotificationExtensionCategory** 参数设置为“image”。 当在设备上收到推送通知时，根据定义的类别值调用扩展。
+  如果您希望移动设备应用程序显示图像，则可以在Adobe Campaign中将类别值设置为“图像”，并在移动设备应用程序中创建将&#x200B;**UNNotificationExtensionCategory**&#x200B;参数设置为“图像”的通知扩展。 当在设备上收到推送通知时，根据定义的类别值调用扩展。
 
 * 定义通知布局
 
-  您需要使用相关构件定义布局。 对于图像，将命名构件 **UImageView**.
+  您需要使用相关构件定义布局。 对于图像，该构件名为&#x200B;**UIImageView**。
 
 * 显示您的媒体
 

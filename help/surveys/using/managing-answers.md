@@ -22,17 +22,17 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->此选项可用于 **调查** 仅键入Web应用程序。 它不适用于其他类型的Web窗体。
+>此选项仅适用于&#x200B;**调查**&#x200B;类型的Web应用程序。 它不适用于其他类型的Web窗体。
 
 ### 存储在已存档字段中 {#storing-in-an-archived-field}
 
-通过添加新的存储空间以保存调查中提供的响应，可以轻松扩展数据模板。 要执行此操作，请选择 **[!UICONTROL Store answers to a question]** 选项。 单击 **[!UICONTROL New field...]** 链接并提供其属性：
+通过添加新的存储空间以保存调查中提供的响应，可以轻松扩展数据模板。 为此，请在创建输入字段时选择&#x200B;**[!UICONTROL Store answers to a question]**&#x200B;选项。 单击&#x200B;**[!UICONTROL New field...]**&#x200B;链接并提供其属性：
 
 ![](assets/s_ncs_admin_survey_new_space.png)
 
 输入字段的标签和名称，然后选择字段类型：文本、布尔值、整数或小数、日期等。
 
-所选字段类型涉及用户输入响应时的数据控制。 对象 **文本** 字段，可以添加约束（大小写、格式）或指向现有枚举的链接以强制进行选择。
+所选字段类型涉及用户输入响应时的数据控制。 对于&#x200B;**文本**&#x200B;字段，您可以添加约束（大小写、格式）或指向现有枚举的链接以强制选择。
 
 要添加约束条件，请从下拉列表中选择它。 有两种类型的约束：
 
@@ -42,25 +42,25 @@ ht-degree: 1%
 
 1. 数据格式
 
-如果将此字段用于列表中，则可以使用在值表中自动检索枚举的值 **[!UICONTROL Initialize the list of values from the database]** 值列表上方的链接。
+如果在列表中使用此字段，则可以使用值列表上方的&#x200B;**[!UICONTROL Initialize the list of values from the database]**&#x200B;链接在值表中自动检索枚举的值。
 
-例如，您可以创建一个下拉列表，让用户选择其母语。 相应的已存档字段可以与 **语言** 包含语言列表的枚举：
+例如，您可以创建一个下拉列表，让用户选择其母语。 对应的已存档字段可以与包含语言列表的&#x200B;**语言**&#x200B;枚举关联：
 
 ![](assets/s_ncs_admin_survey_database_values_2b.png)
 
-此 **[!UICONTROL Edit link]** 通过位于字段右侧的图标，可以编辑此枚举的内容：
+通过位于字段右侧的&#x200B;**[!UICONTROL Edit link]**&#x200B;图标，可以编辑此枚举的内容：
 
 ![](assets/s_ncs_admin_survey_database_values_2c.png)
 
-在 **[!UICONTROL General]** 字段的选项卡中， **[!UICONTROL Initialize the list of values from the database]** 链接允许您自动输入提供的标签列表。
+在字段的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，**[!UICONTROL Initialize the list of values from the database]**&#x200B;链接允许您自动输入提供的标签列表。
 
 ![](assets/s_ncs_admin_survey_database_values_2.png)
 
-**示例**：在一个字段中存储收件人的合同
+**示例**：将收件人的合同存储在一个字段中
 
-要在一个字段中存储不同类型的合同，请创建 **[!UICONTROL Text]** 输入字段并选择 **[!UICONTROL Store answers to a question]** 选项。
+若要在一个字段中存储不同类型的约定，请创建一个&#x200B;**[!UICONTROL Text]**&#x200B;输入字段并选择&#x200B;**[!UICONTROL Store answers to a question]**&#x200B;选项。
 
-单击 **[!UICONTROL New field...]** 链接并输入字段属性。 选择 **[!UICONTROL Multiple values]** 用于启用多个值存储的选项。
+单击&#x200B;**[!UICONTROL New field...]**&#x200B;链接并输入字段属性。 选择&#x200B;**[!UICONTROL Multiple values]**&#x200B;选项以启用多个要存储的值。
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex1.png)
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex2.png)
 
-用户批准调查后，其答案将存储在 **[!UICONTROL Contracts]** 字段。
+当用户批准调查时，其答案将存储在&#x200B;**[!UICONTROL Contracts]**&#x200B;字段中。
 
 在我们的示例中，对于以下答案：
 
@@ -76,11 +76,11 @@ ht-degree: 1%
 
 答辩人的简介将包含所输入的四份合同。
 
-它们可在以下位置查看： **[!UICONTROL Answers]** 通过显示相关列而显示的调查选项卡。
+可以通过显示相关列在调查的&#x200B;**[!UICONTROL Answers]**&#x200B;选项卡中查看这些项目。
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex4.png)
 
-您还可以根据答案过滤收件人，以仅显示您感兴趣的用户。 为此，请创建定位工作流并使用 **[!UICONTROL Survey responses]** 盒子。
+您还可以根据答案过滤收件人，以仅显示您感兴趣的用户。 为此，请创建定位工作流并使用&#x200B;**[!UICONTROL Survey responses]**&#x200B;框。
 
 ![](assets/s_ncs_admin_survey_read_responses_wf.png)
 
@@ -96,7 +96,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->对于其他类型的字段，中详细介绍了其语法 [本节](../../platform/using/about-queries-in-campaign.md).
+>对于其他类型的字段，语法在[此部分](../../platform/using/about-queries-in-campaign.md)中有详细说明。
 
 ### 存储设置 {#storage-settings}
 
@@ -108,12 +108,12 @@ ht-degree: 1%
 
 操作步骤：
 
-* 编辑调查属性 **[!UICONTROL Properties]** 的按钮 **[!UICONTROL Edit]** 选项卡。
-* 单击 **[!UICONTROL Advanced parameters]** 链接并查看 **[!UICONTROL Save a copy of raw answers]** 选项。
+* 通过&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡的&#x200B;**[!UICONTROL Properties]**&#x200B;按钮编辑调查属性。
+* 单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接并选中&#x200B;**[!UICONTROL Save a copy of raw answers]**&#x200B;选项。
 
 ![](assets/s_ncs_admin_survey_xml_archive_option.png)
 
-您可以为所有调查默认启用此选项（发布调查时应用此选项）。 为此，请创建 **[!UICONTROL NmsWebApp_XmlBackup]** 选项并分配值 **[!UICONTROL 1]** ，如下所示：
+您可以为所有调查默认启用此选项（发布调查时应用此选项）。 为此，请创建&#x200B;**[!UICONTROL NmsWebApp_XmlBackup]**&#x200B;选项并为其分配值&#x200B;**[!UICONTROL 1]**，如下所示：
 
 ![](assets/s_ncs_admin_survey_xml_global_option.png)
 
@@ -123,7 +123,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_score_create.png)
 
-当页面得到确认时，即当用户单击 **[!UICONTROL Next]** 或 **[!UICONTROL Finish]** 按钮。
+当页面得到确认时，即当用户单击&#x200B;**[!UICONTROL Next]**&#x200B;或&#x200B;**[!UICONTROL Finish]**&#x200B;按钮时，将在服务器端累计并保存得分。
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ ht-degree: 1%
 >
 >不能在位于同一页面上的字段的可见性条件中使用分数。 但是，它们可以在后续页面中使用。
 
-* 要在测试中使用得分，请使用 **[!UICONTROL Score]** 字段中的值，如下所示：
+* 要在测试中使用得分，请使用测试计算公式中的&#x200B;**[!UICONTROL Score]**&#x200B;字段，如下所示：
 
   ![](assets/s_ncs_admin_survey_score_in_a_test.png)
 
@@ -151,7 +151,7 @@ ht-degree: 1%
 
   ![](assets/s_ncs_admin_survey_score_exb.png)
 
-* 当用户单击 **[!UICONTROL Next]** 按钮时，两个值相加。
+* 当用户单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮时，两个值相加。
 
   ![](assets/s_ncs_admin_survey_score_exe.png)
 

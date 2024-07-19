@@ -17,7 +17,7 @@ ht-degree: 5%
 
 
 
-1. 单击 **[!UICONTROL Start]** 工作流。
+1. 单击&#x200B;**[!UICONTROL Start]**&#x200B;工作流。
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 

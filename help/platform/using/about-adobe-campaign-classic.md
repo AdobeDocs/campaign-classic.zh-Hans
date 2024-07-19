@@ -21,9 +21,9 @@ ht-degree: 90%
 
 >[!AVAILABILITY]
 >
->* 本系列中的帮助资料适用于其中的Campaign Classicv7 [最新版本](../../rn/using/latest-release.md). 当部分也适用于Campaign v8时，可提供特定徽章。
+>* 此集合中的帮助资料适用于其[最新内部版本](../../rn/using/latest-release.md)中的Campaign Classicv7。 当部分也适用于Campaign v8时，可提供特定徽章。
 >
->* 提供了Adobe Campaign v8文档 [此处](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hans).
+>* [此处](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hans)提供了Adobe Campaign v8文档。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现主要特性和功能](#video)
 
@@ -67,7 +67,7 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 
 ## 核心功能及附加组件 {#core-capabilities-and-add-ons}
 
-根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。此处提供了详细的产品说明： [Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。此处提供了详细的产品说明： [Adobe Campaign产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}。
 
 下列功能可供使用。根据您的许可协议，某些功能可能无法使用或者不在您的实例中。
 
@@ -76,7 +76,7 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 * [MRM](../../mrm/using/about-marketing-resource-management.md) - 管理营销资源和预算，
 * [互动](../../interaction/using/interaction-and-offer-management.md) - 通过 Campaign 管理优惠方案，
 * [消息中心](../../message-center/using/about-transactional-messaging.md) - 通过电子邮件、短信或在移动应用程序上发送事务性消息，
-* [社交媒体营销](../../social/using/about-social-marketing.md)  — 在社交媒体上交流：Facebook、X(以前称为Twitter)、
+* [社交营销](../../social/using/about-social-marketing.md) — 在Facebook、X(以前称为Twitter)等社交媒体上交流，
 * [工作流](../../workflow/using/about-workflows.md) / 数据管理 - 通过工作流自动化各个流程并管理数据，
 * [Web 应用程序](../../web/using/about-web-applications.md) - 创建网页和窗体，
 * [调查管理器](../../surveys/using/about-surveys.md) - 创建在线调查和投票，
@@ -93,4 +93,4 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-提供了其他Campaign Classic操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
+[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。

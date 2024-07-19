@@ -23,7 +23,7 @@ ht-degree: 0%
 
 要优化电子邮件内容，您可以在Adobe Target中创建重定向选件，然后使用Adobe Campaign管理电子邮件选件。 例如，您可以为男性收件人和女性收件人显示不同的选件。
 
-该集成在电子邮件打开时发生。 客户打开电子邮件时，会对Target发起调用，并显示内容的动态版本。 内容包含所有浏览器都支持的静态图像。 Target会跟踪受众或会话级别对选件的反应，并且这些数据会在Target报表中可用。 [请参阅Adobe Target文档以了解详情](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html).
+该集成在电子邮件打开时发生。 客户打开电子邮件时，会对Target发起调用，并显示内容的动态版本。 内容包含所有浏览器都支持的静态图像。 Target会跟踪受众或会话级别对选件的反应，并且这些数据会在Target报表中可用。 [请参阅Adobe Target文档以了解详情](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html)。
 
 
 >[!NOTE]

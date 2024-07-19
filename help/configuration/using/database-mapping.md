@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 数据库映射{#database-mapping}
 
-描述的示例架构的SQL映射 [本页内容](schema-structure.md) 生成以下XML文档：
+此页面](schema-structure.md)中描述的示例架构[的SQL映射生成以下XML文档：
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -35,7 +35,7 @@ ht-degree: 3%
 </schema>
 ```
 
-架构的根元素已更改为 **`<srcschema>`** 到 **`<schema>`**.
+架构的根元素更改为&#x200B;**`<srcschema>`**&#x200B;至&#x200B;**`<schema>`**。
 
 此其他类型的文档自动从源架构生成，简称为架构。
 
@@ -45,15 +45,15 @@ SQL命名规则如下：
 
 * **表**：架构命名空间和名称的连接
 
-  在本例中，表的名称是通过以下位置的架构主元素输入的： **sqltable** 属性：
+  在我们的示例中，表的名称是通过&#x200B;**sqltable**&#x200B;属性中架构的主元素输入的：
 
   ```sql
   <element name="recipient" sqltable="CusRecipient">
   ```
 
-* **字段**：前面有前缀的元素的名称，前缀根据类型定义：“i”表示整数，“d”表示双精度，“s”表示字符串，“ts”表示日期等。
+* **字段**：前面有根据类型定义的前缀的元素名称：“i”表示整数，“d”表示双精度，“s”表示字符串，“ts”表示日期等。
 
-  字段名称是通过 **sqlname** 每种类型属性 **`<attribute>`** 和 **`<element>`**：
+  字段名称通过每个键入的&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;的&#x200B;**sqlname**&#x200B;属性输入：
 
   ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -80,11 +80,11 @@ SQL字段约束如下：
 
 ## XML字段 {#xml-fields}
 
-默认情况下，任意  **`<attribute>`** 和 **`<element>`** -typed元素映射到数据架构表的SQL字段。 但是，您可以用XML而不是SQL引用此字段，这意味着数据存储在包含所有XML字段值的表的备注字段(“mData”)中。 这些数据的存储是一个观察模式结构的XML文档。
+默认情况下，任何&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;类型元素均映射到数据架构表的SQL字段。 但是，您可以用XML而不是SQL引用此字段，这意味着数据存储在包含所有XML字段值的表的备注字段(“mData”)中。 这些数据的存储是一个观察模式结构的XML文档。
 
-要在XML中填充字段，您必须添加 **xml** 对于相关元素，属性值为“true”。
+要在XML中填充字段，您必须将值为“true”的&#x200B;**xml**&#x200B;特性添加到相关元素。
 
-**示例**：以下是两个XML字段用法的示例。
+**示例**：以下是两个XML字段用法示例。
 
 * 多行评论字段：
 
@@ -119,7 +119,7 @@ SQL字段约束如下：
 索引遵循以下规则：
 
 * 索引可以引用表中的一个或多个字段
-* 在以下情况下，索引可以在所有字段中是唯一的（以避免重复） **独特** 属性包含值“true”
+* 如果&#x200B;**unique**&#x200B;属性包含值“true”，则所有字段中的索引都可以是唯一的（以避免重复）
 * 索引的SQL名称由表的SQL名称和索引的名称确定
 
 >[!NOTE]

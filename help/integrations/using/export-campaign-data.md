@@ -19,7 +19,7 @@ ht-degree: 3%
 
 要将Campaign Classic数据导出到Adobe Real-time Customer Data Platform (RTCDP)，您首先需要在Campaign Classic中构建一个工作流，以将要共享的数据导出到S3或Azure Blob存储位置。
 
-配置工作流并将数据发送到存储位置后，您需要将S3或Azure Blob存储位置连接为 **来源** 在AdobeExperience Platform中。
+配置工作流并将数据发送到存储位置后，您需要将S3或Azure Blob存储位置作为Adobe Experience Platform中的&#x200B;**Source**&#x200B;进行连接。
 
 >[!NOTE]
 >
@@ -31,11 +31,11 @@ ht-degree: 3%
 
 为此，请添加并配置：
 
-* An **[!UICONTROL Data extraction (file)]** 活动将目标数据提取到CSV文件中。 有关如何配置此活动的更多信息，请参阅 [本节](../../workflow/using/extraction-file.md).
+* 将目标数据提取到CSV文件中的&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动。 有关如何配置此活动的详细信息，请参阅[此部分](../../workflow/using/extraction-file.md)。
 
   ![](assets/rtcdp-extract-file.png)
 
-* A **[!UICONTROL File transfer]** 将CSV文件传输到存储位置的活动。 有关如何配置此活动的更多信息，请参阅 [本节](../../workflow/using/file-transfer.md).
+* 用于将CSV文件传输到存储位置的&#x200B;**[!UICONTROL File transfer]**&#x200B;活动。 有关如何配置此活动的详细信息，请参阅[此部分](../../workflow/using/file-transfer.md)。
 
   ![](assets/rtcdp-file-transfer.png)
 
@@ -43,11 +43,11 @@ ht-degree: 3%
 
 ![](assets/aep-export.png)
 
-## 将存储位置作为源连接
+## 将存储位置连接为Source
 
-将S3或Azure Blob存储位置连接为 **来源** Adobe中的Experience Platform如下所列。 有关每个步骤的详细信息，请参见 [源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans).
+下面列出了在Adobe Experience Platform中将S3或Azure Blob存储位置连接为&#x200B;**Source**&#x200B;的主要步骤。 有关每个步骤的详细信息，请参阅[Source连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans)。
 
-1. 在AdobeExperience Platform中 **[!UICONTROL Sources]** 菜单，创建到存储位置的连接：
+1. 在AdobeExperience Platform **[!UICONTROL Sources]**&#x200B;菜单中，创建与存储位置的连接：
 
    * [创建Amazon S3源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
    * [Azure Blob连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)
@@ -60,10 +60,10 @@ ht-degree: 3%
 
 1. 为云存储批处理连接配置数据流。 数据流是一种计划任务，用于在存储位置检索数据并将其摄取到Adobe Experience Platform数据集。 此步骤允许您从存储位置配置数据摄取，包括数据选择和CSV字段到XDM架构的映射。
 
-   有关详细信息，请参阅 [此页面](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html).
+   [此页面](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html)中提供了详细信息。
 
    ![](assets/rtcdp-map-xdm.png)
 
-1. 配置源后，Adobe Experience Platform将从您提供的存储位置导入文件。
+1. 配置Source后，Adobe Experience Platform将从您提供的存储位置导入文件。
 
    可以根据您的需要计划此操作。 我们建议每天执行导出多达6次，具体取决于实例中已存在的负载。

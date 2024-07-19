@@ -27,12 +27,12 @@ Adobe Analytics Connector 允许 Adobe Campaign 和 Adobe Analytics 通过 **[!U
 
 * 必须通过专用软件包在您的环境中安装Web Analytics连接器加载项。
 
-   * 对于混合和内部部署实施，请确保遵循此中详述的配置步骤 [页面](adobe-analytics-provisioning.md).
+   * 对于混合和内部部署实施，请确保遵循此[页面](adobe-analytics-provisioning.md)中详述的配置步骤。
    * 作为托管或托管Cloud Service用户，请联系Adobe以将Campaign与Adobe Experience Cloud服务和解决方案配合使用。
 
 
 ## 配置和使用情况 {#adobe-analytics-connector-usage}
 
-要启用此集成，您必须创建您的Adobe技术帐户，如中所述 [此页面](oauth-technical-account.md).
+要启用此集成，必须创建您的Adobe技术帐户，如[此页面](oauth-technical-account.md)中所详述。
 
-了解如何在中使用Adobe Campaign和Adobe Analytics [Adobe Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.
+请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}以了解如何使用Adobe Campaign和Adobe Analytics。

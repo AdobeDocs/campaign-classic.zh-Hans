@@ -25,21 +25,21 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 
 >[!NOTE]
 >
->此过程仅限于 **内部部署** 部署。
+>此过程仅限于&#x200B;**内部部署**。
 >
->作为 **托管** 客户，如果您可以访问 [营销活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，您可以使用URL权限自助服务界面。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hans)
+>作为&#x200B;**托管**&#x200B;客户，如果您可以访问[Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，则可以使用URL权限自助服务界面。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hans)
 >
->其他 **混合/托管** 客户需要联系Adobe列入允许列表支持团队以将IP添加到。
+>其他&#x200B;**混合/托管**&#x200B;客户需要联系Adobe列入允许列表支持团队以将IP添加到。
 >
 
-对象 **混合** 和 **内部部署** 部署，管理员需要引用新的 **urlPermission** 在 **serverConf.xml** 文件。
+对于&#x200B;**混合**&#x200B;和&#x200B;**内部部署**&#x200B;部署，管理员需要在&#x200B;**serverConf.xml**&#x200B;文件中引用新的&#x200B;**urlPermission**。
 
 
 提供了三种连接保护模式：
 
-* **阻止**：阻止所有不属于允许列表的URL，并出现错误消息。 这是升级后默认模式。
-* **许可**&#x200B;列入允许列表 ：允许所有不属于的URL。
-* **警告**：允许所有不属于JS允许列表的URL，但JS解释器会发出警告，以便管理员可以收集这些URL。 此模式会添加JST-310027警告消息。
+* 列入允许列表 **阻止**：所有不属于的URL都将被阻止，并出现错误消息。 这是升级后默认模式。
+* 列入允许列表 **允许**：允许所有不属于的URL。
+* 列入允许列表 **警告**：允许所有不属于的URL，但JS解释器会发出警告，以便管理员可以收集这些URL。 此模式会添加JST-310027警告消息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -51,9 +51,9 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）调用的
 
 >[!IMPORTANT]
 >
->默认情况下，新实施使用 **阻止** 模式。
+>默认情况下，新实施使用&#x200B;**阻止**&#x200B;模式。
 >
->作为迁移的现有客户，您可以临时使用 **警告** 模式。 在允许URL之前分析出站流量。 列入允许列表一旦定义了允许的URL列表，您就可以将URL添加到并激活 **阻止** 模式。
+>作为来自迁移的现有客户，您可以临时使用&#x200B;**警告**&#x200B;模式。 在允许URL之前分析出站流量。 列入允许列表定义允许的URL列表后，您可以将URL添加到并激活&#x200B;**阻止**&#x200B;模式。
 
 有关更多信息，请参阅以下章节：
 

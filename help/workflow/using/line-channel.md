@@ -15,7 +15,7 @@ ht-degree: 2%
 
 
 
-下面详细介绍的工作流将随 **LINE渠道** 默认模块。 有关此模块的更多信息，请参阅此 [部分](../../delivery/using/line-channel.md).
+默认情况下，下面详细介绍的工作流与&#x200B;**LINE通道**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[部分](../../delivery/using/line-channel.md)。
 
 <table> 
  <tbody> 
@@ -32,12 +32,12 @@ ht-degree: 2%
   <tr> 
    <td> <span class="uicontrol">删除被阻止的LINE用户</span> <br /> </td> 
    <td> <span class="uicontrol">deleteBlockedLineUsersV2</span> <br /> </td> 
-   <td> 此工作流可确保在阻止LINE正式帐户180天后，删除LINE V2用户的数据。<br /> </td> 
+   <td> 此工作流可确保在阻止LINE正式帐户180天之后，删除LINE V2用户数据。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">MID到LineUserID迁移</span> <br /> </td> 
+   <td> <span class="uicontrol">MID到LineUserID的迁移</span> <br /> </td> 
    <td> <span class="uicontrol">MIDToUserIDMigration</span> <br /> </td> 
-   <td> 此工作流会生成LINE V2用户ID，以便从LINE V1迁移到LINE V2。<br /> </td> 
+   <td> 此工作流生成要从LINE V1迁移到LINE V2的LINE V2用户ID。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

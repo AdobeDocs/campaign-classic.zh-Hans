@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 响应存储字段 {#response-storage-fields}
 
-表单的答案可以保存在数据库的字段中，也可以暂时保存在本地变量中。 答案的存储模式是在字段创建期间选择的。 它可以通过以下方式进行编辑： **[!UICONTROL Edit storage...]** 链接。
+表单的答案可以保存在数据库的字段中，也可以暂时保存在本地变量中。 答案的存储模式是在字段创建期间选择的。 可以通过&#x200B;**[!UICONTROL Edit storage...]**&#x200B;链接进行编辑。
 
 对于表单中的每个输入字段，可以使用以下存储选项：
 
@@ -25,21 +25,21 @@ ht-degree: 0%
 
 * **[!UICONTROL Edit a recipient]**
 
-  您可以选择数据库的字段：用户的回答将存储在此字段中。 对于每个用户，仅保存最后输入的值：即将其添加到其个人资料：请参阅 [将数据存储在数据库中](#storing-data-in-the-database).
+  您可以选择数据库的字段：用户的回答将存储在此字段中。 对于每个用户，仅保存最后输入的值：已添加到其配置文件中：请参阅[将数据存储在数据库中](#storing-data-in-the-database)。
 
 * **[!UICONTROL Variable]**
 
-  如果不想在数据库中存储信息，则可以使用变量。 可以上游声明局部变量。 请参阅 [将数据存储在局部变量中](#storing-data-in-a-local-variable).
+  如果不想在数据库中存储信息，则可以使用变量。 可以上游声明局部变量。 请参阅[将数据存储在局部变量中](#storing-data-in-a-local-variable)。
 
 ### 将数据存储在数据库中 {#storing-data-in-the-database}
 
-要将数据保存在数据库的现有字段中，请单击 **[!UICONTROL Edit expression]** 图标并从可用字段列表中选择它。
+要将数据保存在数据库的现有字段中，请单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;图标，然后从可用字段列表中选择该数据。
 
 ![](assets/s_ncs_admin_survey_storage_type1.png)
 
 >[!NOTE]
 >
->默认参考文档为 **nms：recipient** 架构。 要查看或选择新表单，请从列表中选择表单，然后单击 **[!UICONTROL Properties]** 按钮。
+>默认参考文档是&#x200B;**nms：recipient**&#x200B;架构。 要查看它或选择新表单，请从列表中选择该表单，然后单击&#x200B;**[!UICONTROL Properties]**&#x200B;按钮。
 
 ### 将数据存储在局部变量中 {#storing-data-in-a-local-variable}
 
@@ -49,11 +49,11 @@ ht-degree: 0%
 
 ![](assets/s_ncs_admin_survey_no_storage_variable.png)
 
-它存储在变量中，创建下拉框时或通过 **[!UICONTROL Edit storage...]** 链接。
+它存储在变量中，创建下拉框或通过&#x200B;**[!UICONTROL Edit storage...]**&#x200B;链接时必须选择该变量。
 
 ![](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
-您可以显示现有变量，并通过以下方式创建新变量 **[!UICONTROL Edit variables...]** 链接。 单击 **[!UICONTROL Add]** 按钮以创建新变量。
+您可以通过&#x200B;**[!UICONTROL Edit variables...]**&#x200B;链接显示现有变量和创建新变量。 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以创建新变量。
 
 ![](assets/s_ncs_admin_survey_add_a_variable.png)
 
@@ -61,11 +61,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->对于每个表单，均可在上游创建变量。 要执行此操作，请选择表单并单击 **[!UICONTROL Properties]** 按钮。 此 **[!UICONTROL Variables]** 选项卡包含表单的局部变量。
+>对于每个表单，均可在上游创建变量。 为此，请选择该表单并单击&#x200B;**[!UICONTROL Properties]**&#x200B;按钮。 **[!UICONTROL Variables]**&#x200B;选项卡包含表单的局部变量。
 
-**带调节的本地存储示例**
+**具有条件约束的本地存储示例**
 
-在上例中，仅当满足以下条件时，才会显示包含有关私人车辆的数据的容器： **[!UICONTROL Private]** 从下拉列表中选择选项，如可见性条件中所示：
+在上述示例中，仅当从下拉列表中选择&#x200B;**[!UICONTROL Private]**&#x200B;选项时，才会显示包含有关私家车数据的容器，如可见性条件中所示：
 
 ![](assets/s_ncs_admin_survey_add_a_condition.png)
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
   >[!NOTE]
   >
-  >与其他字段不同， `<%=` 使用转义字符替换字符，HTML内容将按原样保存 `<%==` 语法。
+  >与其`<%=`字符被转义字符替换的其他字段不同，HTML内容使用`<%==`语法按原样保存。
 
 ## 保存Web窗体答案 {#saving-web-forms-answers}
 
@@ -115,9 +115,9 @@ ht-degree: 0%
 
 可通过两种方式使用此框：
 
-* 如果通过电子邮件中发送的链接访问Web窗体，并且访问应用程序的用户已在数据库中，则可以检查 **[!UICONTROL Update the preloaded record]** 选项。 有关详细信息，请参见 [通过电子邮件投放表单](publishing-a-web-form.md#delivering-a-form-via-email).
+* 如果通过电子邮件中发送的链接访问Web窗体，并且访问应用程序的用户已在数据库中，则可以选中&#x200B;**[!UICONTROL Update the preloaded record]**&#x200B;选项。 有关详情，请参阅[通过电子邮件传递表单](publishing-a-web-form.md#delivering-a-form-via-email)。
 
-  在这种情况下，Adobe Campaign使用用户配置文件的加密主密钥，即Adobe Campaign分配给每个配置文件的唯一标识符。 您需要通过预加载框将信息配置为预加载。 有关详细信息，请参见 [预加载表单数据](publishing-a-web-form.md#pre-loading-the-form-data).
+  在这种情况下，Adobe Campaign使用用户配置文件的加密主密钥，即Adobe Campaign分配给每个配置文件的唯一标识符。 您需要通过预加载框将信息配置为预加载。 有关详细信息，请参阅[预加载表单数据](publishing-a-web-form.md#pre-loading-the-form-data)。
 
   >[!CAUTION]
   >
@@ -127,7 +127,7 @@ ht-degree: 0%
 
   ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
-默认情况下，数据由导入数据库 **[!UICONTROL Update or insertion]** 操作：如果数据库中存在元素，则会更新元素（例如，所选新闻稿或输入的电子邮件地址）。 如果该文件不存在，则会添加该信息。
+默认情况下，数据通过&#x200B;**[!UICONTROL Update or insertion]**&#x200B;操作导入数据库：如果数据库中存在该数据，则会更新元素（例如，所选新闻稿或输入的电子邮件地址）。 如果该文件不存在，则会添加该信息。
 
 但是，您可以更改此行为。 为此，请选择元素的根并从下拉列表中选择要执行的操作：
 
@@ -137,6 +137,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->可能的操作包括： **[!UICONTROL Simple reconciliation]**， **[!UICONTROL Update or insertion]**， **[!UICONTROL Insertion]**， **[!UICONTROL Update]**， **[!UICONTROL Deletion]**.\
+>可能的操作包括： **[!UICONTROL Simple reconciliation]**、**[!UICONTROL Update or insertion]**、**[!UICONTROL Insertion]**、**[!UICONTROL Update]**、**[!UICONTROL Deletion]**。\
 >运算符的默认文件夹是运算符具有写入权限的第一个文件夹。\
 >请参阅[此小节](../../platform/using/access-management.md)。

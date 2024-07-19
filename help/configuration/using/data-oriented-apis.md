@@ -30,7 +30,7 @@ XML文档存储在数据库的MEMO类型字段中。
 
 您必须熟悉Adobe Campaign数据模型，才能在脚本中处理数据库的字段。
 
-有关数据模型的演示，请参阅 [Adobe Campaign数据模型说明](../../configuration/using/data-model-description.md).
+有关数据模型的演示，请参阅[Adobe Campaign数据模型说明](../../configuration/using/data-model-description.md)。
 
 ## 查询和编写器 {#query-and-writer}
 
@@ -44,19 +44,19 @@ XML文档存储在数据库的MEMO类型字段中。
 
 这使您能够隔离基础SQL。 查询语言不依赖于底层引擎：某些函数将重新映射，这些函数可能会生成多个SELECT SQL顺序。
 
-有关详细信息，请参见 [架构“xtk：queryDef”的“ExecuteQuery”方法示例](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+有关详细信息，请参阅架构“xtk：queryDef”](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的“ExecuteQuery”方法的[示例。
 
-此 **执行查询** 中介绍了方法 [ExecuteQuery (xtk：queryDef)](#executequery--xtk-querydef-).
+**ExecuteQuery**&#x200B;方法出现在[ExecuteQuery (xtk：queryDef)](#executequery--xtk-querydef-)中。
 
 ### 写入 {#write}
 
 “写入”命令允许您编写简单或复杂的文档，这些文档在基础的一个或多个表中具有条目。
 
-事务型API允许您通过 **updateOrInsert** 命令：一个命令用于创建或更新数据。 您还可以配置修改合并(**合并**)：利用此操作模式，可授权进行部分更新。
+事务型API允许您通过&#x200B;**updateOrInsert**&#x200B;命令管理协调：一个命令允许您创建或更新数据。 您还可以配置修改合并(**merge**)：此操作模式允许您授权部分更新。
 
 XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构。
 
-中介绍了写入方法 [写入/写入收集(xtk：session)](#write---writecollection--xtk-session-).
+Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--xtk-session-)中显示。
 
 ## ExecuteQuery (xtk：queryDef) {#executequery--xtk-querydef-}
 
@@ -110,9 +110,9 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 </queryDef>
 ```
 
-子查询( `<subquery>`  )可以在以下位置定义：  `<condition> `  元素。 的语法   `<subquery> `   元素基于    `<querydef>`.
+可以在`<condition> `元素中定义子查询(`<subquery>`)。 的语法   `<subquery> `   元素基于    `<querydef>`。
 
-示例 `<subquery>  : </subquery>`
+`<subquery>  : </subquery>`示例
 
 ```
 <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
@@ -128,16 +128,16 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
   
 ```
 
-查询必须引用以下项的开始架构： **架构** 属性。
+查询必须引用&#x200B;**架构**&#x200B;属性的开始架构。
 
-所需的操作类型输入于 **操作** 属性并包含以下值之一：
+所需操作的类型输入到&#x200B;**operation**&#x200B;属性中，并包含以下值之一：
 
-* **get**：从表中检索记录，如果数据不存在，则返回错误，
-* **getIfExists**：从表中检索记录，如果数据不存在，则返回空文档，
-* **选择**：创建光标以返回多个记录，如果没有数据，则返回空文档，
+* **get**：从表中检索记录，如果数据不存在，则返回错误。
+* **getIfExists**：从表中检索记录，如果数据不存在，则返回空文档。
+* **select**：创建光标以返回多个记录，如果没有数据，则返回空文档，
 * **count**：返回数据计数。
 
-此 **XPath** 语法用于根据输入架构定位数据。 有关XPath的更多信息，请参阅 [数据架构](../../configuration/using/data-schemas.md).
+**XPath**&#x200B;语法用于根据输入架构查找数据。 有关XPath的详细信息，请参阅[数据架构](../../configuration/using/data-schemas.md)。
 
 #### “获取”操作的示例 {#example-with-the--get--operation}
 
@@ -185,7 +185,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 
 表达式可以是简单字段或复杂表达式，例如算术运算或字符串的连接。
 
-要限制返回的记录数，请添加 **行计数** 归因于 `<querydef>` 元素。
+要限制要返回的记录数，请将&#x200B;**lineCount**&#x200B;属性添加到`<querydef>`元素。
 
 要将查询返回的记录数限制为100，请执行以下操作：
 
@@ -194,7 +194,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 ...
 ```
 
-要检索接下来的100条记录，请再次运行相同的查询，添加 **startLine** 属性。
+要检索下100条记录，请再次运行同一查询，添加&#x200B;**startLine**&#x200B;属性。
 
 ```
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
@@ -216,7 +216,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 
 >[!NOTE]
 >
->我们再次使用上一个示例中的条件。 此 `<select>` 并且不使用子句。 `</select>`
+>我们再次使用上一个示例中的条件。 未使用`<select>`和子句。`</select>`
 
 #### 数据分组 {#data-grouping}
 
@@ -242,7 +242,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 </queryDef>
 ```
 
-可以通过添加 **groupBy** 要分组的字段的直接属性：
+通过将&#x200B;**groupBy**&#x200B;属性直接添加到要分组的字段，可以简化查询：
 
 ```
 <select>
@@ -252,7 +252,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 
 >[!NOTE]
 >
->不再需要填充 `<groupby>` 元素。
+>不再需要填充`<groupby>`元素。
 
 #### 在条件中括起来 {#bracketing-in-conditions}
 
@@ -266,7 +266,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
   </where>
   ```
 
-* 结构化版本，具有 `<condition>` 元素：
+* 包含`<condition>`个元素的结构化版本：
 
   ```
   <where>
@@ -317,7 +317,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
   </select>
   ```
 
-* 收藏集链接(1N)：必须通过 **存在** 或 **不存在** 运算符。
+* 集合链接(1N)：必须通过&#x200B;**EXISTS**&#x200B;或&#x200B;**NOT EXISTS**&#x200B;运算符对集合表的字段进行筛选。
 
   筛选已订阅“新闻稿”信息服务的收件人：
 
@@ -329,7 +329,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
   </where>
   ```
 
-  直接从检索集合链接的字段 `<select>` 不建议使用子句，因为查询返回基数乘积。 仅当链接表仅包含一个记录时才使用(示例 `<node expr="">`)。
+  不建议从`<select>`子句中直接检索集合链接的字段，因为查询返回基数产品。 仅当链接表仅包含一个记录（示例`<node expr="">`）时才使用。
 
   “订阅”收藏集链接示例：
 
@@ -339,9 +339,9 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
   </select>
   ```
 
-  可以在以下位置检索包含收藏集链接元素的子列表： `<select>` 子句。 引用字段的XPath与收集元素相关。
+  可以在`<select>`子句中检索包含集合链接元素的子列表。 引用字段的XPath与收集元素相关。
 
-  筛选( `<orderby>`  )和限制(  `<where>`  )元素。
+  筛选( `<orderby>` )和限制( `<where>` )元素可以添加到集合元素中。
 
   在此示例中，对于每个收件人，查询将返回收件人订阅的信息服务的电子邮件和列表：
 
@@ -369,7 +369,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 
 参数的绑定允许引擎设置查询中使用的参数的值。 这非常有用，因为引擎负责转义值，并且对于要检索的参数还有缓存的额外好处。
 
-当构建查询时，“绑定”值将替换为字符(？ 在ODBC中， `#[index]#` （在postgres...）中)。
+当构建查询时，“绑定”值将替换为字符(？ 在ODBC中，`#[index]#`在SQL查询正文中。
 
 ```
 <select>
@@ -388,7 +388,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 
 #### 查询生成提示： {#query-building-tip-}
 
-要帮助处理查询的语法，您可以使用Adobe Campaign客户端控制台中的通用查询编辑器来编写查询( **[!UICONTROL Tools/ Generic query editor...]** 菜单)。 操作步骤：
+为了帮助使用查询的语法，您可以使用Adobe Campaign客户端控制台（**[!UICONTROL Tools/ Generic query editor...]**&#x200B;菜单）中的通用查询编辑器来编写查询。 操作步骤：
 
 1. 选择要检索的数据：
 
@@ -431,7 +431,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 
 #### 别名 {#alias}
 
-别名允许您修改输出文档中数据的位置。 此 **别名** 属性必须在相应的字段中指定XPath。
+别名允许您修改输出文档中数据的位置。 **别名**&#x200B;属性必须在相应的字段中指定XPath。
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -532,17 +532,17 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 
 数据协调根据在关联模式中输入的键的定义运行。 写入过程根据输入文档中输入的数据查找第一个符合条件的键。 根据实体在数据库中的存在性插入或更新该实体。
 
-要更新的实体架构的键是基于 **xtkschema** 属性。
+要更新的实体的架构键是根据&#x200B;**xtkschema**&#x200B;属性完成的。
 
-因此，可以使用强制使用合并关键项 **_key** 包含构成键的XPath列表的属性（用逗号分隔）。
+因此，可以使用包含组成协调键的XPath列表（用逗号分隔）的&#x200B;**_key**&#x200B;属性强制执行该协调键。
 
-可以通过填充 **操作(_O)** 属性的值：
+可以通过使用以下值填充&#x200B;**_operation**&#x200B;特性来强制执行该操作类型：
 
-* **插入**：强制插入记录（不使用协调键），
-* **insertOrUpdate**：根据协调键值（默认模式）更新或插入记录，
+* **insert**：强制插入记录（未使用协调密钥），
+* **insertOrUpdate**：根据协调密钥（默认模式）更新或插入记录，
 * **更新**：更新记录；如果数据不存在，则不执行任何操作，
 * **删除**：删除记录，
-* **无**：仅用于链接协调，无需更新或插入。
+* **none**：仅用于链接协调，无需更新或插入。
 
 ### &#39;Write&#39;方法的示例 {#example-with-the--write--method}
 
@@ -590,7 +590,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 
 可以在链接的元素上输入“_key”和“_operation”属性。 此元素上的行为与输入架构的主元素上的行为相同。
 
-主实体(“nms：recipient”)的键的定义由链接表（元素）中的字段组成 `<folder>`  架构“xtk：folder”)和电子邮件。
+主实体(“nms：recipient”)的键的定义由链接表（元素`<folder>`架构“xtk：folder”）中的字段和电子邮件组成。
 
 >[!NOTE]
 >
@@ -620,7 +620,7 @@ XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构�
 
 >[!NOTE]
 >
->键的定义未输入到 `<rcpgroup>` 元素，因为在“nms：group”架构中定义了基于组名称的隐式键。
+>未在`<rcpgroup>`元素中输入键的定义，因为在“nms：group”架构中定义了基于组名称的隐式键。
 
 ### XML收藏集元素 {#xml-collection-elements}
 

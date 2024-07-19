@@ -17,7 +17,7 @@ ht-degree: 9%
 
 重复数据删除会从集客活动的结果中删除重复项。 可以对电子邮件地址、电话号码或其他字段执行重复数据删除。
 
-此 **[!UICONTROL Deduplication]** activity用于从数据集中删除重复行。 例如，下面的记录可能被视为重复，因为它们具有相同的电子邮件地址和相同的手机和/或家庭电话。
+**[!UICONTROL Deduplication]**&#x200B;活动用于从数据集中删除重复行。 例如，下面的记录可能被视为重复，因为它们具有相同的电子邮件地址和相同的手机和/或家庭电话。
 
 | 上次修改日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
 -----|------------|-----------|-------|--------------|------
@@ -25,7 +25,7 @@ ht-degree: 9%
 | 05/19/2020 | 罗伯特 | 提斯纳 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 07/22/2020 | 鲍比 | 提斯纳 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
-此 **[!UICONTROL Deduplication]** activity能够在识别出重复项后，将整行作为唯一记录保留。 例如，在上述用例中，如果活动配置为仅保留具有最旧记录的记录 **[!UICONTROL Date]**，结果为：
+**[!UICONTROL Deduplication]**&#x200B;活动能够在识别重复项后保留整行作为唯一记录。 例如，在上述用例中，如果活动配置为仅保留具有最旧&#x200B;**[!UICONTROL Date]**&#x200B;的记录，则结果将为：
 
 | 日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
 -----|----------|------------|-------|--------------|------
@@ -46,8 +46,8 @@ ht-degree: 9%
 
 这个问题需要以下述方式解决：
 
-* 创建 **并集** 活动以统一每个入站流。
-* 创建 **删除重复项** 活动之后 **并集** 活动。
+* 创建一个&#x200B;**Union**&#x200B;活动以统一每个入站流。
+* 在&#x200B;**合并**&#x200B;活动之后创建&#x200B;**重复数据删除**&#x200B;活动。
 
 ![](assets/dedup_bonnepratique.png)
 
@@ -55,7 +55,7 @@ ht-degree: 9%
 
 要配置重复数据删除，请输入其标签、方法和重复数据删除标准，以及有关结果的选项。
 
-1. 单击 **[!UICONTROL Edit configuration...]** 用于定义重复数据删除模式的链接。
+1. 单击&#x200B;**[!UICONTROL Edit configuration...]**&#x200B;链接以定义重复数据删除模式。
 
    ![](assets/s_user_segmentation_dedup_param.png)
 
@@ -63,13 +63,13 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >如果使用外部数据作为输入（例如从外部文件），请确保选择 **[!UICONTROL Temporary schema]** 选项。
+   >如果您使用外部数据作为输入（例如从外部文件），请确保选择&#x200B;**[!UICONTROL Temporary schema]**&#x200B;选项。
    >
-   >在下一步中， **[!UICONTROL Other]** 选项允许您选择要使用的标准或标准：
+   >在下一步中，**[!UICONTROL Other]**&#x200B;选项允许您选择要使用的条件或条件：
 
    ![](assets/s_user_segmentation_dedup_param2.png)
 
-1. 在下一步中， **[!UICONTROL Other]** 选项允许您选择在值相同的情况下要使用的标准或标准。
+1. 在下一步中，**[!UICONTROL Other]**&#x200B;选项允许您选择在值相同的情况下使用的标准或条件。
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -88,15 +88,15 @@ ht-degree: 9%
 
      ![](assets/s_user_segmentation_dedup_param6.png)
 
-   * **[!UICONTROL Using an expression]**：用于保留具有给定表达式中最低（或最高）值的记录。
+   * **[!UICONTROL Using an expression]**：允许您保留具有给定表达式的最低（或最高）值的记录。
 
      ![](assets/s_user_segmentation_dedup_param7.png)
 
    >[!NOTE]
    >
-   >此 **[!UICONTROL Merge]** 功能，可通过 **[!UICONTROL Advanced parameters]** 链接，允许您配置一组规则，以将字段或字段组合并到单个结果数据记录中。 有关此内容的更多信息，请参阅 [将字段合并到单个记录中](#merging-fields-into-single-record).
+   >通过&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接访问的&#x200B;**[!UICONTROL Merge]**&#x200B;功能允许您配置一组规则，以便将字段或字段组合并到单个结果数据记录中。 有关详细信息，请参阅[将字段合并到单个记录中](#merging-fields-into-single-record)。
 
-1. 单击 **[!UICONTROL Finish]** 以批准选定的重复数据删除方法。
+1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;以批准选定的重复数据删除方法。
 
    窗口的中间部分总结了定义的配置。
 
@@ -104,7 +104,7 @@ ht-degree: 9%
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-1. 查看 **[!UICONTROL Generate complement]** 选项。 补充包含所有重复项。 随后将向活动添加其他过渡，如下所示：
+1. 如果要利用剩余群体，请选中&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补充包含所有重复项。 随后将向活动添加其他过渡，如下所示：
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
@@ -120,59 +120,59 @@ ht-degree: 9%
 
 1. 添加并链接工作流运行所需的各种活动，如上所示。
 
-   此处使用合并活动将三个查询“统一”为一个过渡。 因此，重复数据删除不适用于单独的查询，而适用于整个查询。 有关此主题的更多信息，请参阅 [最佳实践](#best-practices).
+   此处使用合并活动将三个查询“统一”为一个过渡。 因此，重复数据删除不适用于单独的查询，而适用于整个查询。 有关此主题的更多信息，请参阅[最佳实践](#best-practices)。
 
-1. 打开重复数据删除活动，然后单击 **[!UICONTROL Edit configuration...]** 用于定义重复数据删除模式的链接。
-1. 在新窗口中，选择 **[!UICONTROL Database schema]**.
-1. 选择 **收件人** 作为定位和筛选维度。
-1. 选择的ID字段 **[!UICONTROL Email]** 重复，以仅向每个电子邮件地址发送一次投放，然后单击 **[!UICONTROL Next]**.
+1. 打开重复数据删除活动，然后单击&#x200B;**[!UICONTROL Edit configuration...]**&#x200B;链接以定义重复数据删除模式。
+1. 在新窗口中，选择&#x200B;**[!UICONTROL Database schema]**。
+1. 选择&#x200B;**收件人**&#x200B;作为定位和筛选维度。
+1. 选择&#x200B;**[!UICONTROL Email]**&#x200B;重复项的ID字段，以仅向每个电子邮件地址发送一次投放，然后单击&#x200B;**[!UICONTROL Next]**。
 
-   如果您希望复制ID基于特定字段，请选择 **[!UICONTROL Other]** 以访问可用字段列表。
+   如果您希望复制ID基于特定字段，请选择&#x200B;**[!UICONTROL Other]**&#x200B;以访问可用字段列表。
 
 1. 选择此项以在为多个收件人标识了同一电子邮件地址时仅保留一个条目。
-1. 选择 **[!UICONTROL Choose for me]** 重复数据删除模式，以便随机选择在已识别重复项的情况下保存的记录，然后单击 **[!UICONTROL Finish]**.
+1. 选择&#x200B;**[!UICONTROL Choose for me]**&#x200B;重复数据删除模式，以便随机选择在已识别重复项时保存的记录，然后单击&#x200B;**[!UICONTROL Finish]**。
 
 运行工作流时，将从结果（以及投放）中排除所有标识为重复项的收件人，并将其添加到重复项列表中。 此列表可再次使用，而不必重新识别重复项。
 
 ## 将字段合并到单个数据记录中 {#merging-fields-into-single-record}
 
-此 **[!UICONTROL Merge]** 利用功能，可配置重复数据删除的一组规则，以定义要合并到单个结果数据记录中的字段或字段组。
+利用&#x200B;**[!UICONTROL Merge]**&#x200B;功能，可为重复数据删除配置一组规则，以定义要合并到单个结果数据记录中的字段或字段组。
 
 例如，如果有一组重复记录，则可以选择保留最早的电话号码或最近的名称。
 
-中提供了利用此功能的用例 [本节](deduplication-merge.md).
+[此部分](deduplication-merge.md)中提供了利用此功能的用例。
 
 为此，请执行以下步骤：
 
-1. 在 **[!UICONTROL Deduplication method]** 选择步骤，单击 **[!UICONTROL Advanced Parameters]** 链接。
+1. 在&#x200B;**[!UICONTROL Deduplication method]**&#x200B;选择步骤中，单击&#x200B;**[!UICONTROL Advanced Parameters]**&#x200B;链接。
 
    ![](assets/dedup1.png)
 
-1. 选择 **[!UICONTROL Merge records]** 选项以激活该功能。
+1. 选择&#x200B;**[!UICONTROL Merge records]**&#x200B;选项以激活该功能。
 
-   如果要对每个合并条件中的多个数据字段进行分组，请激活 **[!UICONTROL Use several record merging criteria]** 选项。
+   如果要对每个合并条件中的多个数据字段进行分组，请激活&#x200B;**[!UICONTROL Use several record merging criteria]**&#x200B;选项。
 
    ![](assets/dedup2.png)
 
-1. 激活功能后， **[!UICONTROL Merge]** 选项卡将添加到 **[!UICONTROL Deduplication]** 活动。 它允许您定义要合并的字段组及其关联的规则。
+1. 激活功能后，**[!UICONTROL Merge]**&#x200B;选项卡将添加到&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动中。 它允许您定义要合并的字段组及其关联的规则。
 
-   有关更多信息，请参阅中提供的专用用例 [本节](deduplication-merge.md).
+   有关详细信息，请参阅[此部分](deduplication-merge.md)中提供的专用用例。
 
    ![](assets/dedup3.png)
 
 ## 输入参数 {#input-parameters}
 
 * 表名
-* 架构
+* 模式
 
 每个入站事件必须指定由这些参数定义的目标。
 
 ## 输出参数 {#output-parameters}
 
 * 表名
-* 架构
+* 模式
 * recCount
 
-这组三个值可标识重复数据删除产生的目标。 **[!UICONTROL tableName]** 是保存目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms：recipient）和 **[!UICONTROL recCount]** 是表中的元素数。
+这组三个值可标识重复数据删除产生的目标。 **[!UICONTROL tableName]**&#x200B;是保存目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
 
 与补充关联的转换具有相同的参数。

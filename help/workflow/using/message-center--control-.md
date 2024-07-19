@@ -15,7 +15,7 @@ ht-degree: 1%
 
 
 
-下面详细介绍的工作流计划每小时运行一次。 它与 **消息中心 — 控制** 默认模块。
+下面详细介绍的工作流计划每小时运行一次。 默认情况下，它与&#x200B;**消息中心 — Control**&#x200B;模块一起安装。
 
 
 有关更多信息，根据您的Campaign版本，请参阅以下章节：
@@ -33,8 +33,8 @@ ht-degree: 1%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 消息中心 &lt;external_account_name&gt;<br /> </td> 
-   <td> mcSynch_&lt;external_account_name&gt;<br /> </td> 
+   <td> 消息中心&lt;external_account_name&gt;<br /> </td> 
+   <td> mcSynch_&lt;外部帐户名称&gt;<br /> </td> 
    <td> 此工作流：<br /> 
     <ul> 
      <li> <p>恢复操作处理的事件列表。</p> </li> 

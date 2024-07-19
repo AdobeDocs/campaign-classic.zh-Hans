@@ -24,8 +24,8 @@ ht-degree: 1%
 
 ## 先决条件 {#prerequisites}
 
-* 您必须具有Adobe Experience Cloud组织名称和ID。 要查找您的组织ID，请参阅 [此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}.
-* 您必须在Experience Cloud中添加用户。 有关详细信息，请参见 [此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
+* 您必须具有Adobe Experience Cloud组织名称和ID。 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}。
+* 您必须在Experience Cloud中添加用户。 有关详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}。
 
 >[!NOTE]
 >
@@ -37,23 +37,23 @@ ht-degree: 1%
 
 ## 安装包 {#installing-the-package}
 
-您必须安装内置 **[!UICONTROL Integration with the Adobe Experience Cloud]** 包。 安装集成包与安装标准包相同，具体详见 [此页面](../../installation/using/installing-campaign-standard-packages.md).
+您必须安装内置&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;包。 安装集成包与安装标准包相同，[此页面](../../installation/using/installing-campaign-standard-packages.md)中对此进行了详细介绍。
 
 ![](assets/ims_6.png)
 
 ## 配置外部帐户 {#configuring-the-external-account}
 
-配置 **Adobe Experience Cloud** 外部帐户位于 **[!UICONTROL Administration > Platform > External accounts]**.
+在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中配置&#x200B;**Adobe Experience Cloud**&#x200B;外部帐户。
 
 ![](assets/ims_5.png)
 
 输入以下信息：
 
-* 使用的IMS服务器的连接信息（ID和密码）。 此信息由Adobe客户关怀团队提供。 欲了解更多信息，请参见 [Adobe Experience Cloud管理员常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
+* 使用的IMS服务器的连接信息（ID和密码）。 此信息由Adobe客户关怀团队提供。 有关详细信息，请参阅[Adobe Experience Cloud管理员常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html)。
 
-  此 **[!UICONTROL Callback server]** 地址必须指定于 **https**. 此字段对应于Adobe Campaign实例的访问URL。
+  必须在&#x200B;**https**&#x200B;中指定&#x200B;**[!UICONTROL Callback server]**&#x200B;地址。 此字段对应于Adobe Campaign实例的访问URL。
 
-* 组织ID：要查找您的组织ID，请参阅 [此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}.
+* 组织ID：要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}。
 
 * 关联掩码：此字段允许您定义语法，以允许将Enterprise Dashboard中的配置名称与Adobe Campaign中的组同步。 如果您使用语法“Campaign - tenant_id - (.&#42;)”，则在Adobe Campaign中创建的安全组将链接到Enterprise Dashboard中的配置名称“Campaign - tenant_id - internal_name”。
 

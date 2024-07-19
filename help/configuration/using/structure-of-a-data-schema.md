@@ -14,7 +14,7 @@ ht-degree: 10%
 
 # 数据模式的结构{#structure-of-a-data-schema}
 
-数据模式的结构以树结构的形式显示。 要在Adobe Campaign客户端控制台中以图形方式查看架构，请选择目标架构并单击 **[!UICONTROL Structure]** 子选项卡。
+数据模式的结构以树结构的形式显示。 要在Adobe Campaign客户端控制台中以图形方式查看架构，请选择目标架构并单击&#x200B;**[!UICONTROL Structure]**&#x200B;子选项卡。
 
 ![](assets/d_ncs_integration_schema_arbo.png)
 

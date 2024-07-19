@@ -18,7 +18,7 @@ ht-degree: 2%
 
 * 投放：
 
-   * 创建投放操作，请参阅 [提交投放(nms：delivery)](#submitdelivery--nms-delivery-)，
+   * 创建投放操作，请参阅[SubmitDelivery (nms：delivery)](#submitdelivery--nms-delivery-)，
    * 发送营销活动（开始、暂停、停止、发送校样），
    * 恢复投放日志。
 
@@ -27,17 +27,17 @@ ht-degree: 2%
    * 启动工作流，
    * 验证进程等。
 
-     请参阅 [javascript中的SOAP方法](../../configuration/using/soap-methods-in-javascript.md).
+     请参阅JavaScript](../../configuration/using/soap-methods-in-javascript.md)中的[SOAP方法。
 
 * 内容管理
-* 订阅管理，请参阅 [订阅(nms：subscription)](#subscribe--nms-subscription-) 和 [取消订阅(nms：subscription)](#unsubscribe--nms-subscription-).
+* 订阅管理，请参阅[订阅(nms：subscription)](#subscribe--nms-subscription-)和[取消订阅(nms：subscription)](#unsubscribe--nms-subscription-)。
 * 数据流程：导入、导出。
 
 本节详细说明了“Subscribe”、“Unsubscribe”和“SubmitDelivery”服务的使用。
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans) 包含有关在Adobe Campaign中SOAP调用和使用Javascript的其他信息，以及对应用程序中使用的所有方法和函数的完整引用。
+>[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)包含有关Adobe Campaign中的SOAP调用和使用Javascript的其他信息，以及对该应用程序中使用的所有方法和函数的完整引用。
 
 ## 订阅(nms：subscription) {#subscribe--nms-subscription-}
 
@@ -62,7 +62,7 @@ ht-degree: 2%
 </method>
 ```
 
-必须通过_输入协调键值的定义&#x200B;**键** 上的属性 `<recipient>` XML文档的元素。 此属性的内容是以逗号分隔的XPath列表。
+必须通过XML文档的`<recipient>`元素上的_**key**&#x200B;属性输入协调键的定义。 此属性的内容是以逗号分隔的XPath列表。
 
 此调用不会返回任何数据，错误除外。
 
@@ -133,7 +133,7 @@ ht-degree: 2%
 </method>
 ```
 
-必须通过_key属性(位于 `<recipient>` XML文档的元素。 此属性的内容是以逗号分隔的XPath列表。
+必须通过XML文档的`<recipient>`元素上的_key属性输入协调键的定义。 此属性的内容是以逗号分隔的XPath列表。
 
 如果收件人不在数据库中，或者未订阅相关的信息服务，该服务将不执行任何操作并且不生成错误。
 
@@ -204,7 +204,7 @@ ht-degree: 2%
 
 ### XML文档示例 {#xml-document-example}
 
-此示例基于来自外部数据源（此示例中的文件）的自定义投放模板。 投放模板中完整描述了配置，因此，当调用发生时，剩下的所有待发送内容就是来自的文件内容。 `<externalsource>` 元素。
+此示例基于来自外部数据源（此示例中的文件）的自定义投放模板。 投放模板中完整描述了配置，因此，当调用发生时，剩下的所有待发送内容是来自`<externalsource>`元素的文件内容。
 
 ```
 <delivery>

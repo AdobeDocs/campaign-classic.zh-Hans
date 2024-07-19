@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 跟踪和监视 {#track-and-monitor}
 
-您已单击 **发送** 按钮？ 让我们看看会发生什么。 发送投放后，借助Adobe Campaign，您可以跟踪已发送的消息，并了解收件人对投放的反应。 这将帮助您改进未来发送并优化下一个营销活动。
+您已单击&#x200B;**发送**&#x200B;按钮？ 让我们看看会发生什么。 发送投放后，借助Adobe Campaign，您可以跟踪已发送的消息，并了解收件人对投放的反应。 这将帮助您改进未来发送并优化下一个营销活动。
 
 ## 监测投放 {#monitoring-deliveries}
 
@@ -24,7 +24,7 @@ ht-degree: 2%
 在Campaign投放仪表板中，您可以检查已处理的消息和投放审核日志。
 您还可以控制投放日志中消息的状态。 [了解详情](about-delivery-monitoring.md)。
 
-如果未发送投放并且其状态保持不变，该怎么办 **待处理**？
+如果未发送投放且其状态仍为&#x200B;**待处理**，该怎么办？
 
 * 执行过程正在等待某些资源的可用性。 MTA可能尚未启动。
 检查您的mta@instance模块是否已在MTA服务器上启动，并根据需要启动MTA模块。 [了解详情](../../production/using/administration.md)。
@@ -40,13 +40,13 @@ ht-degree: 2%
 
 为了更好地了解收件人的行为，您可以跟踪他们对投放的反应：接收、打开、单击链接、取消订阅等。 在Campaign Classic中，此信息显示在投放所定向的收件人的Tracking选项卡和投放的Tracking选项卡中。
 
-**提示**：默认启用消息跟踪。 要配置URL，请选择投放向导下方的显示URL选项。 对于消息的每个URL，您可以选择是否激活跟踪。
+**提示**：默认情况下启用邮件跟踪。 要配置URL，请选择投放向导下方的显示URL选项。 对于消息的每个URL，您可以选择是否激活跟踪。
 
-有关详细信息，请参见 [配置跟踪](how-to-configure-tracked-links.md) 部分和 [跟踪指标](../../reporting/using/delivery-reports.md#tracking-indicators) 描述。
+有关详细信息，请参阅[配置跟踪](how-to-configure-tracked-links.md)部分和[跟踪指示器](../../reporting/using/delivery-reports.md#tracking-indicators)说明。
 
 ## 投放性能 {#delivery-performances}
 
-要测量消息投放的速度，您可以控制投放吞吐量。 标准是每小时发送的消息数以及消息的大小（以位/秒为单位）。 有关此内容的更多信息，请参阅 [投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput).
+要测量消息投放的速度，您可以控制投放吞吐量。 标准是每小时发送的消息数以及消息的大小（以位/秒为单位）。 有关此内容的详细信息，请参阅[投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)。
 
 **提示**：
 
@@ -66,4 +66,4 @@ ht-degree: 2%
 
 * [投放性能问题](delivery-performances.md)
 
-* [临时文件问题](../../production/using/temporary-files.md) - *仅限内部部署客户*
+* [临时文件问题](../../production/using/temporary-files.md) — 仅&#x200B;*内部部署客户*

@@ -7,7 +7,7 @@ exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 2%
 
 
 
-A **订阅服务**-type活动允许您为过渡中指定的群体创建或删除对信息服务的订阅。
+**订阅服务**&#x200B;类型活动允许您为过渡中指定的群体创建或删除对信息服务的订阅。
 
 要对其进行配置，请编辑活动并输入其标签，然后选择要执行的操作（订阅或退订）以及相关的服务，如以下示例所示：
 
 ![](assets/edit_service_inscription.png)
 
 1. 输入活动的标签。
-1. 选择 **[!UICONTROL Generate an outbound transition]** 如果您希望在执行结束时创建过渡。
+1. 如果希望在执行结束时创建过渡，请选择&#x200B;**[!UICONTROL Generate an outbound transition]**。
 
    通常，目标对信息服务的订阅会标记定位工作流的结尾，这也是默认情况下不激活该选项的原因。
 
-1. 单击 **[!UICONTROL Subscription]** 或 **[!UICONTROL Unsubscription]** 您想要为选定的信息服务订阅或取消订阅指定的群体。
-1. 选择 **[!UICONTROL Send a confirmation message]** 通知收件人已订阅或取消订阅服务。
+1. 如果要订阅或取消订阅选定信息服务的指定群体，请单击&#x200B;**[!UICONTROL Subscription]**&#x200B;或&#x200B;**[!UICONTROL Unsubscription]**。
+1. 选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;以通知收件人已订阅或取消订阅服务。
 
    在与信息服务相关的投放模板中指定此消息的内容。 有关更多信息，请参阅此](../../delivery/using/managing-subscriptions.md)章节[。
 
@@ -52,20 +52,20 @@ A **订阅服务**-type活动允许您为过渡中指定的群体创建或删除
 1. 添加交叉引用不同结果的交叉点活动。
 1. 如果需要，可插入列表更新，以使最新订阅者的列表保持最新。
 1. 插入订阅服务活动，然后双击此项进行配置。
-1. 输入活动标签并选择 **[!UICONTROL Subscription]**.
+1. 输入活动标签并选择&#x200B;**[!UICONTROL Subscription]**。
 
-   如有需要，您可以通过查看 **[!UICONTROL Send a confirmation message]** 盒子。
+   如果您愿意，可以通过选中&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;框将订阅的新闻稿通知收件人。
 
 1. 选择新闻稿所在的文件夹，然后从显示的列表中选择新闻稿。
-1. 离开 **[!UICONTROL Generate outbound transition]** 已取消选中，以便此活动将标记工作流的结尾，然后单击 **[!UICONTROL Ok]**.
+1. 取消选中&#x200B;**[!UICONTROL Generate outbound transition]**，以便此活动将标记工作流结尾，然后单击&#x200B;**[!UICONTROL Ok]**。
 
 在执行工作流期间，与所有三个查询相对应的收件人将添加到列表并订阅新闻稿。
 
-您可以通过转到 **[!UICONTROL Subscription]** 选项卡。
+您可以通过转到收件人的&#x200B;**[!UICONTROL Subscription]**&#x200B;选项卡来检查订阅是否成功。
 
 ## 输入参数 {#input-parameters}
 
 * 表名
-* 架构
+* 模式
 
 每个入站事件必须指定由这些参数定义的目标。

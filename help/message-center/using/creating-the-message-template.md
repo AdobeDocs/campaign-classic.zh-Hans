@@ -19,15 +19,15 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->事件类型需要预先创建。 有关详细信息，请参见 [创建事件类型](../../message-center/using/creating-event-types.md).
+>事件类型需要预先创建。 有关详细信息，请参阅[创建事件类型](../../message-center/using/creating-event-types.md)。
 
-事务型消息模板包含个性化事务型消息所需的信息。 您还可以使用模板测试消息预览，并在将消息交付到最终目标之前使用种子地址发送校样。 有关此内容的更多信息，请参阅 [测试事务性消息模板](../../message-center/using/testing-message-templates.md).
+事务型消息模板包含个性化事务型消息所需的信息。 您还可以使用模板测试消息预览，并在将消息交付到最终目标之前使用种子地址发送校样。 有关详细信息，请参阅[测试事务型消息模板](../../message-center/using/testing-message-templates.md)。
 
 ## 创建消息模板 {#creating-message-template}
 
-1. 转到 **[!UICONTROL Message Center >Transactional message templates]** Adobe Campaign树中的文件夹。
+1. 转到Adobe Campaign树中的&#x200B;**[!UICONTROL Message Center >Transactional message templates]**&#x200B;文件夹。
 
-1. 在事务性消息模板的列表中，右键单击并选择 **[!UICONTROL New]** 在下拉菜单中，或单击 **[!UICONTROL New]** 按钮进行标记。
+1. 在事务性消息模板列表中，右键单击并在下拉菜单中选择&#x200B;**[!UICONTROL New]**，或单击事务性消息模板列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -41,24 +41,24 @@ ht-degree: 0%
 
    ![](assets/messagecenter_create_model_003.png)
 
-   事件类型需要在控制台中预先创建。 有关详细信息，请参见 [创建事件类型](../../message-center/using/creating-event-types.md).
+   事件类型需要在控制台中预先创建。 有关详细信息，请参阅[创建事件类型](../../message-center/using/creating-event-types.md)。
 
    >[!IMPORTANT]
    >
    >事件类型无法链接到多个模板。
 
-1. 输入性质和说明，然后单击 **[!UICONTROL Continue]** 创建消息正文(请参阅 [创建消息内容](#creating-message-content))。
+1. 输入性质和描述，然后单击&#x200B;**[!UICONTROL Continue]**&#x200B;以创建邮件正文（请参阅[创建邮件内容](#creating-message-content)）。
 
    ![](assets/messagecenter_create_model_004.png)
 
 ## 创建消息内容 {#creating-message-content}
 
-事务型消息内容的定义与Adobe Campaign中的常规投放相同。 例如，对于电子邮件投放，您可以创建HTML或文本格式的内容、添加附件或个性化投放对象。 有关详细信息，请参见 [电子邮件投放](../../delivery/using/about-email-channel.md) 章节。
+事务型消息内容的定义与Adobe Campaign中的常规投放相同。 例如，对于电子邮件投放，您可以创建HTML或文本格式的内容、添加附件或个性化投放对象。 有关详细信息，请参阅[电子邮件投放](../../delivery/using/about-email-channel.md)一章。
 
 >[!IMPORTANT]
 >
 >消息中包含的图像必须可公开访问。 Adobe Campaign没有为事务性消息提供任何图像上传机制。\
->与JSSP或webApp不同， `<%=` 没有任何默认转义。
+>与JSSP或webApp不同，`<%=`没有任何默认转义。
 >
 >在这种情况下，必须正确对来自事件的每个数据进行转义。 此转义取决于此字段的使用方式。 例如，在URL中，请使用encodeURIComponent。 要显示在HTML中，您可以使用escapeXMLString。
 
@@ -75,14 +75,14 @@ ht-degree: 0%
 
 1. 输入消息正文。
 
-1. 在文本正文中，使用插入标记 **[!UICONTROL Real time events > Event XML]** 菜单。
+1. 在文本正文中，使用&#x200B;**[!UICONTROL Real time events > Event XML]**&#x200B;菜单插入标记。
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. 使用以下语法填写标记： **元素名称**.@**属性名称** 如下所示。
+1. 使用以下语法填写标记： **element name**。@**属性名称**，如下所示。
 
    ![](assets/messagecenter_create_custo_003.png)
 
 1. 保存您的内容。
 
-您的消息现已准备就绪 [已测试](../../message-center/using/testing-message-templates.md).
+您的消息现已准备就绪，可[测试](../../message-center/using/testing-message-templates.md)。

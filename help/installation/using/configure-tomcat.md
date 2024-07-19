@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # 配置Apache Tomcat {#configuring-tomcat}
 
-Adobe Campaign使用 **称为Apache Tomcat的嵌入式Web servlet** 在应用程序和任何外部界面（包括客户端控制台、跟踪的URL链接、SOAP调用等）之间处理HTTP/HTTPS请求。 对于任何面向外部的Adobe Campaign实例，它前面通常有一个外部Web服务器（通常是IIS或Apache）。
+Adobe Campaign使用名为Apache Tomcat **的**&#x200B;嵌入式Web servlet处理应用程序和任何外部接口(包括客户端控制台、跟踪的URL链接、SOAP调用等)之间的HTTP/HTTPS请求。 对于任何面向外部的Adobe Campaign实例，它前面通常有一个外部Web服务器（通常是IIS或Apache）。
 
-详细了解Campaign中的Tomcat以及如何在中找到您的Tomcat版本 [此页面](../../production/using/locate-tomcat-version.md).
+在[此页面](../../production/using/locate-tomcat-version.md)中了解有关Campaign中的Tomcat以及如何找到您的Tomcat版本的更多信息。
 
 >[!AVAILABILITY]
 >
@@ -32,12 +32,12 @@ Adobe Campaign使用 **称为Apache Tomcat的嵌入式Web servlet** 在应用程
 
 >[!NOTE]
 >
->此过程仅限于 **内部部署** 部署。
+>此过程仅限于&#x200B;**内部部署**。
 >
 
-当Tomcat服务器的8080侦听端口已在使用您的配置所需的其他应用程序时，您需要将8080端口替换为空闲端口（例如8090）。 要更改它，请编辑 **server.xml** 文件保存在 **/tomcat-X/conf** Adobe Campaign安装文件夹的目录。
+当Tomcat服务器的8080侦听端口已在使用您的配置所需的其他应用程序时，您需要将8080端口替换为空闲端口（例如8090）。 要更改它，请编辑保存在Adobe Campaign安装文件夹的&#x200B;**/tomcat-X/conf**&#x200B;目录中的&#x200B;**server.xml**&#x200B;文件。
 
-然后修改JSP中继页的端口。 为此，请更改 **serverConf.xml** 文件保存在 **/conf** Adobe Campaign安装目录的目录。
+然后修改JSP中继页的端口。 为此，请更改保存在Adobe Campaign安装目录的&#x200B;**/conf**&#x200B;目录中的&#x200B;**serverConf.xml**&#x200B;文件。
 
 ```xml
 <serverConf>
@@ -51,10 +51,10 @@ Adobe Campaign使用 **称为Apache Tomcat的嵌入式Web servlet** 在应用程
 
 >[!NOTE]
 >
->此过程仅限于 **内部部署** 部署。
+>此过程仅限于&#x200B;**内部部署**。
 >
 
-要定义特定于客户的设置，您可以创建 **user_contexts.xml** 中的文件 **/tomcat-X/conf** 文件夹，其中还包含 **contexts.xml** 文件。
+要定义特定于客户的设置，您可以在&#x200B;**/tomcat-X/conf**&#x200B;文件夹中创建一个&#x200B;**user_contexts.xml**&#x200B;文件，该文件还包含&#x200B;**contexts.xml**&#x200B;文件。
 
 此文件将包含以下类型的信息：
 
@@ -69,14 +69,14 @@ Adobe Campaign使用 **称为Apache Tomcat的嵌入式Web servlet** 在应用程
 
 >[!NOTE]
 >
->此过程仅限于 **内部部署** 部署。
+>此过程仅限于&#x200B;**内部部署**。
 >
 >从Campaign v7.4.1开始，不再需要此更改。
 >
 
 出于安全原因，我们强烈建议您隐藏Tomcat错误报告。 执行以下步骤：
 
-1. 打开 **server.xml** 文件位于 **/tomcat-X/conf** Adobe Campaign安装文件夹的目录：  `/usr/local/neolane/nl6/tomcat-X/conf`
+1. 打开位于Adobe Campaign安装文件夹的&#x200B;**/tomcat-X/conf**&#x200B;目录中的&#x200B;**server.xml**&#x200B;文件： `/usr/local/neolane/nl6/tomcat-X/conf`
 1. 在所有现有上下文元素后添加以下元素：
 
    ```xml

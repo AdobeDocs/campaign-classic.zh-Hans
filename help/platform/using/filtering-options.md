@@ -29,14 +29,14 @@ ht-degree: 3%
 
 有多种方法可以过滤要显示的数据。 如有必要，这些组件可以一起使用：
 
-* 对文件夹进行过滤，请参阅 [按文件夹筛选](#filter-by-folder)，
-* 按状态筛选，请参阅 [按状态筛选](#filter-by-status)，
-* 数据排序，请参阅 [排序方式](#order-by)，
-* 搜索，请参阅 [快速搜索](#quick-search).
+* 在文件夹上筛选，请参阅[按文件夹筛选](#filter-by-folder)，
+* 按状态筛选，请参阅[按状态筛选](#filter-by-status)，
+* 数据排序，请参阅[排序依据](#order-by)，
+* 搜索，请参阅[快速搜索](#quick-search)。
 
 ## 按文件夹筛选 {#filter-by-folder}
 
-单击 **[!UICONTROL Folder]** 图标，以选择包含要显示的数据的文件夹。
+单击&#x200B;**[!UICONTROL Folder]**&#x200B;图标可选择包含要显示的数据的文件夹。
 
 ![](assets/filter_web_select_folder.png)
 

@@ -24,9 +24,9 @@ ht-degree: 7%
 
 您可以添加特定的预处理指令来编写URL的脚本并对其进行跟踪。 [了解详情](pre-processing-instructions.md)
 
-对于跟踪检测，Adobe Campaign会嵌入 [整洁](https://www.html-tidy.org/) 分析HTML源并检测模式。 其中列出了内容的所有URL，以便可以单独对其进行跟踪。 Adobe Campaign再次使用Tidy替换URL (`http://myurl.com`)，其URL指向Adobe Campaign重定向服务器。
+对于跟踪检测，Adobe Campaign嵌入[Tidy](https://www.html-tidy.org/)以解析HTML源并检测模式。 其中列出了内容的所有URL，以便可以单独对其进行跟踪。 Adobe Campaign再次使用Tidy将URL (`http://myurl.com`)替换为指向Adobe Campaign重定向服务器的URL。
 
-例如，在初始内容中： `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` 被替换为一个特定收件人： `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
+例如，在初始内容中： `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>`被替换为一个特定收件人： `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
 
 其中：
 

@@ -16,25 +16,25 @@ ht-degree: 3%
 
 
 
-您可以根据自己的需求，对报表进行充分的个性化和配置。 为此，请编辑其属性。 通过访问报告属性 **[!UICONTROL Properties]** 按钮进行查看。
+您可以根据自己的需求，对报表进行充分的个性化和配置。 为此，请编辑其属性。 通过活动序列图上方的&#x200B;**[!UICONTROL Properties]**&#x200B;按钮访问报表属性。
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-常规属性如下所述。 在中配置的高级功能 **[!UICONTROL Parameters]**， **[!UICONTROL Variables]** 和 **[!UICONTROL Scripts]** 选项卡说明 [在此部分中](../../reporting/using/advanced-functionalities.md).
+常规属性如下所述。 此部分](../../reporting/using/advanced-functionalities.md)中介绍了&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;选项卡中配置的高级功能[。
 
 ## 常规属性 {#overall-properties}
 
-在 **[!UICONTROL General]** 选项卡中，您可以编辑下面列出的设置：
+在报表属性的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，您可以编辑下面列出的设置：
 
-* 报告的标签和内部名称。 此 **[!UICONTROL Internal name]** 在报表最终URL中使用。 在创建报告后不应对其进行更改。
+* 报告的标签和内部名称。 **[!UICONTROL Internal name]**&#x200B;在报告最终URL中使用。 在创建报告后不应对其进行更改。
 
-* 报告 **文件夹** 在创建报告期间选择。 最佳实践是为自定义报表创建专用文件夹，以便它们不会与混合 [内置报告](../../reporting/using/about-campaign-built-in-reports.md).
+* 在创建报告期间选择了报告&#x200B;**文件夹**。 最佳做法是为自定义报告创建专用文件夹，以便它们不会与[内置报告](../../reporting/using/about-campaign-built-in-reports.md)混合。
 
-* 此 **存储** 在创建报告时选择。 要更改报表的数据表，请单击 **[!UICONTROL Select link]** 图标（位于页面右侧） **[!UICONTROL Document type]** 字段。
+* 创建报告时选择了&#x200B;**存储**。 要更改报告的数据表，请单击&#x200B;**[!UICONTROL Document type]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Select link]**&#x200B;图标。
 
   ![](assets/s_ncs_advuser_report_properties_02.png)
 
-* 此 **访问控制** 参数。 这些设置如下所述。
+* **访问控制**&#x200B;参数。 这些设置如下所述。
 
 ## 控制对报告的访问 {#report-accessibility}
 
@@ -44,16 +44,16 @@ ht-degree: 3%
 
 可能的选项为：
 
-* **[!UICONTROL Anonymous access]**：此选项启用对报表的无限制访问。 但是，操作是不可能的。
+* **[!UICONTROL Anonymous access]**：此选项启用对报告的无限制访问。 但是，操作是不可能的。
 
-  “webapp”技术操作员的权限用于显示报表元素。 了解详情 [在此部分中](../../platform/using/access-management-operators.md).
+  “webapp”技术操作员的权限用于显示报表元素。 在本节](../../platform/using/access-management-operators.md)中了解更多[。
 
 * **[!UICONTROL Access control]**：此选项允许Adobe Campaign操作员在登录后访问它。
-* **[!UICONTROL Specific account]**：利用此选项可在 **[!UICONTROL Operator]** 字段。
+* **[!UICONTROL Specific account]**：此选项允许您使用在&#x200B;**[!UICONTROL Operator]**&#x200B;字段中选择的操作员的权限执行报告。
 
 ## 翻译报告 {#report-localization}
 
-您可以配置希望将报告翻译成的语言。 要执行此操作，请单击 **[!UICONTROL Localization]** 选项卡。
+您可以配置希望将报告翻译成的语言。 为此，请单击&#x200B;**[!UICONTROL Localization]**&#x200B;选项卡。
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 
@@ -63,11 +63,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->有关Campaign中网页本地化的更多信息，请参阅 [本节](../../web/using/translating-a-web-form.md).
+>有关Campaign中网页本地化的详细信息，请参阅[此部分](../../web/using/translating-a-web-form.md)。
 
 ## 个性化HTML呈现 {#personalizing-html-rendering}
 
-在 **[!UICONTROL Rendering]** 选项卡上，您可以个性化页面的数据显示模式。 您可以选择：
+在&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡中，您可以个性化页面的数据显示模式。 您可以选择：
 
 * 报表中的导航类型：通过按钮或链接。
 * 报表元素标签的默认位置。 可针对每个元素重载此位置。
@@ -77,8 +77,8 @@ ht-degree: 3%
 
 ## 个性化错误页面 {#personalizing-the-error-page}
 
-此 **[!UICONTROL Error page]** 选项卡允许您配置在报表显示中出现错误时将显示的消息。
+通过&#x200B;**[!UICONTROL Error page]**&#x200B;选项卡，可配置在报告显示中发生错误时将显示的消息。
 
-您可以定义文本并将它们链接到特定标识符，以管理报告本地化。 有关详细信息，请参见 [添加页眉和页脚](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
+您可以定义文本并将它们链接到特定标识符，以管理报告本地化。 有关详情，请参阅[添加页眉和页脚](../../reporting/using/element-layout.md#adding-a-header-and-a-footer)。
 
 ![](assets/s_ncs_advuser_report_properties_11.png)

@@ -30,17 +30,17 @@ ht-degree: 2%
 
 文件分为以下几个类别：
 
-* 配置文件，存储在 **nl6/conf**，使您能够快速重新配置Adobe Campaign。
+* 配置文件存储在&#x200B;**nl6/conf**&#x200B;中，使您能够快速重新配置Adobe Campaign。
 
-* 重定向文件，存储在  **nl6/var/`<instance-name>`/redir**，位于跟踪（通常称为“前端”）服务器上，并且包括所有以前的营销活动重定向。 它们仍由以前的营销活动使用。
+* 存储在&#x200B;**nl6/var/`<instance-name>`/redir**&#x200B;中的重定向文件位于跟踪（通常称为“前端”）服务器上，并包括所有以前的营销活动重定向。 它们仍由以前的营销活动使用。
 
-* 日志文件，存储在 **nl6/var/`<instance-name>`/log**，可用于跟踪问题。
+* 存储在&#x200B;**nl6/var/`<instance-name>`/log**&#x200B;中的日志文件可用于跟踪问题。
 
 因此，要备份的目录包括：
 
 * nl6/conf
 
-* nl6/var/`<instance-name>`/redir（对于每个实例）
+* nl6/var/`<instance-name>`/redir（针对每个实例）
 
 * nl6/var/`<instance-name>`/log （可选）
 

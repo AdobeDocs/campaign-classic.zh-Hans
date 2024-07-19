@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Adobe Campaign服务器的安装步骤如下：
 
-1. 执行文件 **setup.exe**.
+1. 执行文件&#x200B;**setup.exe**。
 
    ![](assets/s_ncs_install_installer_01.png)
 
@@ -38,7 +38,7 @@ Adobe Campaign服务器的安装步骤如下：
    * **[!UICONTROL Installation of a client]** ：安装Adobe Campaign客户端所需的组件。
    * **[!UICONTROL Custom installation]** ：用户选择要安装的元素。
 
-   选择 **应用程序服务器的安装**，并完成如下所示的不同步骤：
+   选择&#x200B;**应用程序服务器的安装**，然后执行如下所示的不同步骤：
 
    ![](assets/s_ncs_install_installer_02.png)
 
@@ -46,7 +46,7 @@ Adobe Campaign服务器的安装步骤如下：
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. 单击 **[!UICONTROL Finish]** 要开始安装，请执行以下操作：
+1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;开始安装：
 
    ![](assets/s_ncs_install_installer_04.png)
 
@@ -62,7 +62,7 @@ Adobe Campaign服务器的安装步骤如下：
    >
    >服务器安装完成后，需要重新启动服务器以避免可能出现的网络问题。
 
-   安装完成后，启动Adobe Campaign以创建配置文件。 请参阅 [服务器的首次启动](#first-start-up-of-the-server).
+   安装完成后，启动Adobe Campaign以创建配置文件。 请参阅[服务器的首次启动](#first-start-up-of-the-server)。
 
 ## 摘要安装测试 {#summary-installation-testing}
 
@@ -80,7 +80,7 @@ No task
 
 ## 服务器的首次启动 {#first-start-up-of-the-server}
 
-安装测试完成后，打开命令提示符，通过 **[!UICONTROL Start > Programs > Adobe Campaign]** 菜单并输入以下命令：
+安装测试完成后，通过&#x200B;**[!UICONTROL Start > Programs > Adobe Campaign]**&#x200B;菜单打开命令提示符并输入以下命令：
 
 ```sql
 nlserver web
@@ -100,7 +100,7 @@ nlserver web
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-按 **Ctrl+C** 要停止该进程，请输入以下命令：
+按&#x200B;**Ctrl+C**&#x200B;停止该进程，然后输入以下命令：
 
 ```sql
 nlserver start web
@@ -135,7 +135,7 @@ nlserver stop web
 
 ## 内部标识符的密码 {#password-for-the-internal-identifier}
 
-Adobe Campaign服务器定义的技术登录名为 **内部** 拥有所有实例的所有权限。 安装之后，登录没有密码。 必须定义一个。
+Adobe Campaign服务器定义了一个名为&#x200B;**internal**&#x200B;的技术登录名，该登录名对所有实例具有所有权限。 安装之后，登录没有密码。 必须定义一个。
 
 可在[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)中了解详情。
 

@@ -17,11 +17,11 @@ ht-degree: 2%
 
 以下是有关在Adobe Campaign中使用输入表单的一些一般原则。
 
-有关Forms的详情，请参阅 [本节](../../configuration/using/identifying-a-form.md).
+在[此部分](../../configuration/using/identifying-a-form.md)中详细介绍了Forms。
 
 ## 窗体结构 {#form-structure}
 
-输入表单的XML文档必须包含 **`<form>`** 具有的根元素 **name** 和 **命名空间** 属性，分别填充表单名称及其命名空间。
+输入表单的XML文档必须包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200B;属性的&#x200B;**`<form>`**&#x200B;根元素，才能分别填充表单名称及其命名空间。
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -29,7 +29,7 @@ ht-degree: 2%
 </form>
 ```
 
-默认情况下，表单与具有相同名称和命名空间的数据架构关联。 要将表单与其他名称相关联，请在 **entity-schema** 的属性 **`<form>`** 元素。
+默认情况下，表单与具有相同名称和命名空间的数据架构关联。 若要将表单与其他名称关联，请在&#x200B;**`<form>`**&#x200B;元素的&#x200B;**entity-schema**&#x200B;属性中输入架构键。
 
 为了说明输入表单的结构，我们基于示例模式“cus：book”描述了一个接口：
 
@@ -45,9 +45,9 @@ ht-degree: 2%
 </form>
 ```
 
-编辑元素的描述以 **`<form>`** 根元素。
+编辑元素的描述以&#x200B;**`<form>`**&#x200B;根元素开头。
 
-编辑控件输入于 **`<input>`** 元素和 **xpath** 包含字段在其架构中的路径的属性。
+在具有&#x200B;**xpath**&#x200B;属性的&#x200B;**`<input>`**&#x200B;元素中输入编辑控件，该属性包含其架构中的字段路径。
 
 **有关XPath语法的提醒：**
 
@@ -60,7 +60,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 示例：
 
 * **@date**：选择名为“date”的属性
-* **chapter/@title**：选择“标题”属性位于 `<chapter>` 元素
+* **chapter/@title**：选择`<chapter>`元素下的“title”属性
 * **../@date**：从当前元素的父元素中选择日期
 
 编辑控件会自动适应对应的数据类型，并使用架构中定义的标签。
@@ -69,7 +69,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 >[!CAUTION]
 >
->输入表单必须引用 **type=&quot;contentForm&quot;** 上的属性 **`<form>`** 元素，用于自动添加输入内容所需的框架。
+>输入表单必须引用&#x200B;**`<form>`**&#x200B;元素上的&#x200B;**type=&quot;contentForm&quot;**&#x200B;属性，才能自动添加输入内容所需的框架。
 
 ## 格式化 {#formatting}
 
@@ -94,13 +94,13 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 </input>
 ```
 
-列表控件必须填写 **type=&quot;list&quot;** 属性，且列表的路径必须引用收集要素。
+列表控件必须使用&#x200B;**type=&quot;list&quot;**&#x200B;属性填充，且列表的路径必须引用集合元素。
 
-列由子项声明 **`<input>`** 列表中的元素。
+这些列由列表的子元素&#x200B;**`<input>`**&#x200B;声明。
 
 >[!NOTE]
 >
->当出现以下情况时，会自动添加向上和向下排序箭头 **ordered=&quot;true&quot;** 数据架构中收集元素的属性已完成。
+>在数据架构中的集合元素完成&#x200B;**ordered=&quot;true&quot;**&#x200B;属性时，会自动添加向上和向下排序箭头。
 
 默认情况下，工具栏按钮垂直对齐。 它们也可以水平对齐：
 
@@ -113,11 +113,11 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 </input>
 ```
 
-此 **toolbarCaption** 属性强制水平对齐工具栏并填充列表上方的标题。
+**toolbarCaption**&#x200B;属性强制工具栏水平对齐，并填充列表上方的标题。
 
 >[!NOTE]
 >
->对于不显示在控件左侧的集合元素标签，请添加 **nolabel=&quot;true&quot;** 属性。
+>要使集合元素标签不显示在控件的左侧，请添加&#x200B;**nolabel=&quot;true&quot;**&#x200B;属性。
 
 #### 放大列表 {#zoom-in-a-list}
 
@@ -144,13 +144,13 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 </input>
 ```
 
-编辑表单的定义通过 **`<form>`** 元素。 其结构与输入表单的结构相同。
+编辑表单的定义通过list元素下的&#x200B;**`<form>`**&#x200B;元素指定。 其结构与输入表单的结构相同。
 
-A **[!UICONTROL Detail]** 按钮添加时机 **zoom=&quot;true&quot;** 属性在列表定义中输入。 这允许您在选定行上打开编辑表单。
+在列表定义中输入&#x200B;**zoom=&quot;true&quot;**&#x200B;属性时，将自动添加&#x200B;**[!UICONTROL Detail]**&#x200B;按钮。 这允许您在选定行上打开编辑表单。
 
 >[!NOTE]
 >
->添加 **zoomOnAdd=&quot;true&quot;** 属性强制在插入列表的元素时调用编辑表单。
+>添加&#x200B;**zoomOnAdd=&quot;true&quot;**&#x200B;属性会强制在插入列表的元素时调用编辑表单。
 
 ### 选项卡列表 {#tab-list}
 
@@ -168,23 +168,23 @@ A **[!UICONTROL Detail]** 按钮添加时机 **zoom=&quot;true&quot;** 属性在
 </container>
 ```
 
-列表控件必须填写 **type=&quot;notebooklist&quot;** 属性，且列表的路径必须引用收集要素。
+列表控件必须使用&#x200B;**type=&quot;notebooklist&quot;**&#x200B;属性填充，并且列表的路径必须引用收藏集元素。
 
-选项卡的标题包含通过输入的数据的值 **xpath-label** 属性。
+选项卡的标题包含通过&#x200B;**xpath-label**&#x200B;属性输入的数据值。
 
-编辑控件必须在 **`<container>`** 元素是列表控件的子项。
+编辑控件必须在&#x200B;**`<container>`**&#x200B;元素（列表控件的子项）下声明。
 
 使用工具栏按钮添加或删除列表元素。
 
 >[!NOTE]
 >
->当出现以下情况时，会自动添加左右排序箭头： **ordered=&quot;true&quot;** 为数据架构中的收集元素填充属性。
+>在数据架构中为集合元素填充&#x200B;**ordered=&quot;true&quot;**&#x200B;属性时，会自动添加左右排序箭头。
 
 ## 容器 {#containers}
 
-容器允许您对一组控件进行分组。 它们通过以下方式存在 **`<container>`** 元素。 它们已用于格式化多个列中的控件以及选项卡列表的控件。
+容器允许您对一组控件进行分组。 它们通过&#x200B;**`<container>`**&#x200B;元素存在。 它们已用于格式化多个列中的控件以及选项卡列表的控件。
 
-有关容器以及如何在输入表单中使用这些容器的更多信息，请参阅 [本节](../../configuration/using/form-structure.md#containers).
+有关容器以及如何在输入表单中使用这些容器的详细信息，请参阅[此部分](../../configuration/using/form-structure.md#containers)。
 
 ## 编辑窗体 {#editing-forms}
 
@@ -192,8 +192,8 @@ A **[!UICONTROL Detail]** 按钮添加时机 **zoom=&quot;true&quot;** 属性在
 
 ![](assets/d_ncs_content_form12.png)
 
-此 **[!UICONTROL Preview]** 选项卡用于查看输入表单：
+**[!UICONTROL Preview]**&#x200B;选项卡允许您查看输入表单：
 
 ![](assets/d_ncs_content_form13.png)
 
-详细了解 [编辑表单](../../configuration/using/editing-forms.md) 和 [窗体结构](../../configuration/using/form-structure.md).
+阅读有关[编辑表单](../../configuration/using/editing-forms.md)和[表单结构](../../configuration/using/form-structure.md)的更多信息。

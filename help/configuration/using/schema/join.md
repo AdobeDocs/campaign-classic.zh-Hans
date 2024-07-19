@@ -39,19 +39,19 @@ join：==EMPTY
 
 ## 使用和使用环境 {#use-and-context-of-use-5}
 
-A `<join>`  仅当父项为  `<element>`  元素为“link”类型。 这意味着父元素必须声明“@type=link”属性。
+仅当父`<element>`元素为“link”类型时，才能使用`<join>`元素。 这意味着父元素必须声明“@type=link”属性。
 
-不需要在 `<join>`  元素。 它们需要在父级中指定  `<element>`.
+不必在`<join>`元素中指定远程表的名称和命名空间。 它们需要在父`<element>`中指定。
 
 按照惯例，链接在架构结束时定义。
 
-如果 `<join>` 定义链接类型元素时，未指定元素，链接将自动置于两个表的主键上。
+如果定义链接类型元素时未指定`<join>`元素，则链接将自动置于两个表的主键上。
 
 ## 属性说明 {#attribute-description-7}
 
-* **dstFilterExpr（字符串）**：利用此属性可限制远程表中符合条件的值的数量。
-* **xpath-dst（字符串）**：此属性接收Xpath(远程表@name属性)。
-* **xpath-src（字符串）**：此属性接收Xpath(当前架构中的@name属性)。
+* **dstFilterExpr （字符串）**：此属性允许您限制远程表中符合条件的值的数量。
+* **xpath-dst （字符串）**：此属性接收Xpath(远程表的@name属性)。
+* **xpath-src （字符串）**：此属性接收Xpath(当前架构中的@name属性)。
 
 ## 示例 {#examples-6}
 

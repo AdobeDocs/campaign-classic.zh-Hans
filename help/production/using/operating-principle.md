@@ -25,17 +25,17 @@ Adobe Campaign模块有很多。 有些是连续运行的，而有些则偶尔�
 
 有三种类型的Adobe Campaign模块：
 
-* 多实例模块：针对所有实例运行单个进程。 这适用于以下模块： **Web**， **syslogd**， **trackinglogd** 和 **监视程序** (活动来自 **config-default.xml** 文件)。
-* 单实例模块：每个实例运行一个进程。 这适用于以下模块： **mta**， **wfserver**， **inMail**， **短信** 和 **stat** (活动来自 **config-`<instance>`.xml** 文件)。
-* 实用程序模块：这些模块偶尔运行以执行偶尔或重复性的操作(**cleanup**， **config**、下载跟踪日志等)。
+* 多实例模块：针对所有实例运行单个进程。 这适用于以下模块：**web**、**syslogd**、**trackinglogd**&#x200B;和&#x200B;**watchdog**（来自&#x200B;**config-default.xml**&#x200B;文件的活动）。
+* 单实例模块：每个实例运行一个进程。 这适用于以下模块：**mta**、**wfserver**、**inMail**、**sms**&#x200B;和&#x200B;**stat**（来自&#x200B;**config-`<instance>`.xml**&#x200B;文件的活动）。
+* 实用工具模块：这些模块是偶尔运行以执行偶尔或经常性操作的模块（**清理**、**配置**、下载跟踪日志等）。
 
-使用命令行工具执行模块管理 **nlserver** 安装在 **纸盒** 安装文件夹的目录。
+使用安装文件夹的&#x200B;**bin**&#x200B;目录中安装的命令行工具&#x200B;**nlserver**&#x200B;执行模块管理。
 
-的常规语法 **nlserver** 工具如下所示：
+**nlserver**&#x200B;工具的一般语法如下：
 
 **nlserver `<command>``<command arguments>`**
 
-要获取可用模块的列表，请使用 **nlserver** 命令。
+要获取可用模块的列表，请使用&#x200B;**nlserver**&#x200B;命令。
 
 下表详细列出了可用的模块：
 
@@ -50,7 +50,7 @@ Adobe Campaign模块有很多。 有些是连续运行的，而有些则偶尔�
 | 导入 | 导入到命令行：用于将在Adobe Campaign客户端控制台中创建的导入模型发送到命令行。 |
 | inMail | 入站邮件分析器 |
 | installset | 客户安装文件的可用性 |
-| javascript | 执行可访问SOAP API的JavaScript脚本。 |
+| javascript | 执行JavaScript脚本，并访问SOAP API。 |
 | 作业 | 命令行处理 |
 | 合并 | 表单合并 |
 | midSourcing | 中间源模式下的投放信息的恢复 |
@@ -72,7 +72,7 @@ Adobe Campaign模块有很多。 有些是连续运行的，而有些则偶尔�
 | 跟踪 | 整合和检索跟踪日志 |
 | trackinglogd | 跟踪日志写入和清除服务器 |
 | 监视程序 | 启动和监视实例 |
-| Web | 应用程序服务器（HTTP和SOAP） |
+| Web | 应用程序服务器(HTTP和SOAP) |
 | wfserver | 工作流服务器 |
 
 >[!IMPORTANT]

@@ -16,7 +16,7 @@ ht-degree: 3%
 
 
 
-下面详细介绍的工作流随 **使用执行实例控制优惠引擎** 默认模块。
+默认情况下，下面详细介绍的工作流与具有执行实例&#x200B;**模块的选件引擎的**&#x200B;控件一起安装。
 
 <table> 
  <tbody> 
@@ -28,7 +28,7 @@ ht-degree: 3%
   <tr> 
    <td> <span class="uicontrol">建议同步</span> <br /> </td> 
    <td> <span class="uicontrol">propositionSynch</span> <br /> </td> 
-   <td> 此工作流在营销实例和用于交互的执行实例之间同步建议。<br /> </td> 
+   <td> 此工作流在营销实例与用于交互的执行实例之间同步建议。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

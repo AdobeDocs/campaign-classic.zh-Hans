@@ -15,7 +15,7 @@ ht-degree: 15%
 
 
 
-**[!UICONTROL Jump]** -type图形对象用于提高复杂图（尤其是具有交叉过渡的图）的可读性。
+**[!UICONTROL Jump]** — 类型的图形对象用于提高复杂图的可读性，尤其是具有交叉过渡的图。
 
 跳跃是没有箭头的过渡。
 
@@ -29,4 +29,4 @@ ht-degree: 15%
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-为了提高图的可读性，您可以更改与跳转关联的图像以显示相关编号。 请参阅 [更改活动图像](managing-activity-images.md).
+为了提高图的可读性，您可以更改与跳转关联的图像以显示相关编号。 查看[更改活动图像](managing-activity-images.md)。

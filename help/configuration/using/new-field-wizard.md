@@ -15,7 +15,7 @@ ht-degree: 4%
 # 新建字段向导{#new-field-wizard}
 
 
-可通过访问的向导 **[!UICONTROL Tools > Advanced > Add new fields]** 用于向数据库中的表添加一个或多个字段。
+通过&#x200B;**[!UICONTROL Tools > Advanced > Add new fields]**&#x200B;访问的向导允许您向数据库中的表添加一个或多个字段。
 
 验证向导将更新要扩展的表的扩展模式，并启动SQL脚本以修改数据库的物理结构。
 
@@ -33,7 +33,7 @@ ht-degree: 4%
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. 要确认更改，请单击 **[!UICONTROL Finish]** 按钮。
+1. 要确认更改，请单击&#x200B;**[!UICONTROL Finish]**&#x200B;按钮。
 
 在本例中，我们将自动创建一个名为“cus：recipient”的扩展文件，并执行相应的SQL脚本：
 
@@ -47,4 +47,4 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->默认情况下，添加的字段使用属性声明 **用户** （值为“true”）。 这使您可以使用“treeEdit”类型的控件（请参阅输入表单）在扩展架构的输入表单中显示和编辑字段。
+>默认情况下，添加的字段声明为属性&#x200B;**user**（值为“true”）。 这使您可以使用“treeEdit”类型的控件（请参阅输入表单）在扩展架构的输入表单中显示和编辑字段。

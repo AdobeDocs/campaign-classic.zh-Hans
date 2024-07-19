@@ -30,7 +30,7 @@ ht-degree: 0%
 1. 备份开发环境数据库。
 1. 停止开发实例上的所有Adobe Campaign进程。
 1. 制作生产环境数据库的备份，并将其恢复为开发环境。
-1. 在启动Adobe Campaign服务之前，请运行 **freezeInstance.js** 烧灼脚本，用于清除启动备份时正在运行的任何对象的数据库。
+1. 在启动Adobe Campaign服务之前，请运行&#x200B;**freezeInstance.js**&#x200B;烧灼脚本，该脚本允许您清除启动备份时正在运行的任何对象的数据库。
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -38,7 +38,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >该命令默认在中启动 **干燥** 模式，并列出该命令执行的所有请求，而不启动它们。 要执行烧灼请求，请使用 **运行** 在命令中。
+   >该命令默认以&#x200B;**干**&#x200B;模式启动，并列出该命令执行的所有请求，而不启动它们。 要执行烧灼请求，请在命令中使用&#x200B;**run**。
 
 1. 尝试恢复备份以确保其正确。 确保您可以访问数据库、表格、数据等。
 1. 在开发环境中测试迁移过程。
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 您可以使用各种选项衡量迁移的影响并确定潜在问题。 将执行以下选项：
 
-* 在 **config** 命令：
+* 在&#x200B;**config**&#x200B;命令中：
 
   ```
   nlserver.exe config <option> -instance:<instance-name>
@@ -67,12 +67,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->* 您必须使用 **-instance：`<instanceame>`** 选项。 我们不建议使用 **-allinstances** 选项。
->* Adobe Campaign update命令(**升级后**)用于同步资源并更新架构和数据库。 此操作只能在应用程序服务器上执行一次。 同步资源后， **升级后** 命令用于检测同步是否生成任何错误或警告。
+>* 您必须使用&#x200B;**— 实例：`<instanceame>`**&#x200B;选项。 我们不建议使用&#x200B;**-allinstances**&#x200B;选项。
+>* Adobe Campaign update命令（**升级后**）允许您同步资源并更新架构和数据库。 此操作只能在应用程序服务器上执行一次。 同步资源后，**postupgrade**&#x200B;命令允许您检测同步是否生成任何错误或警告。
 
 ### 非标准或缺少对象
 
-* 此 **-showCustomEntities** 选项显示所有非标准对象的列表：
+* **-showCustomEntities**&#x200B;选项显示所有非标准对象的列表：
 
   ```
   nlserver.exe config -showCustomEntities -instance:<instance-name>
@@ -84,7 +84,7 @@ ht-degree: 0%
   xtk_migration:opsecurity2 xtk:entity
   ```
 
-* 此 **-showDeletedEntities** 选项显示数据库或文件系统中缺少的所有标准对象的列表。 对于每个缺少的对象，指定路径。
+* **-showDeletedEntities**&#x200B;选项显示数据库或文件系统中缺少的所有标准对象的列表。 对于每个缺少的对象，指定路径。
 
   ```
   nlserver.exe config -showDeletedEntities -instance:<instance-name>
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 ### 验证过程 {#verification-process}
 
-在升级后命令中作为标准流程集成，此过程允许您显示可能导致迁移失败的警告和错误。 **如果显示错误，则表示尚未执行迁移。** 如果发生这种情况，请更正所有错误，然后重新启动升级后。
+在升级后命令中作为标准流程集成，此过程允许您显示可能导致迁移失败的警告和错误。 **如果显示错误，则表示迁移尚未执行。**&#x200B;如果发生这种情况，请更正所有错误，然后重新启动升级后。
 
 您可以使用命令自行启动验证过程（无需迁移）：
 
@@ -126,7 +126,7 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 投放个性化中不再支持此类语法。 <br /> </td> 
+   <td> 投放个性化中不再支持此类语法。<br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -141,10 +141,10 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
    <td> 必须不再使用此连接方法。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 新SoapMethodCall(<br /> </td> 
+   <td> 新SoapMethodCall(<br />) </td> 
    <td> PU-0004<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 仅当在的安全区域中执行的JavaScript代码中使用此函数时，才支持使用此函数。 <strong>sessionTokenOnly</strong> 模式。<br /> </td> 
+   <td> 仅当此函数用于从<strong>sessionTokenOnly</strong>模式下的安全区域执行的JavaScript代码时，才支持此函数。<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -157,14 +157,14 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
    <td> PU-0007<br /> </td> 
    <td> 错误<br /> </td> 
    <td> 不再支持此类型的部署。 Office 365和内部部署Microsoft CRM连接器部署类型现已弃用。 
-   </br>如果您在外部帐户中使用这些已弃用的部署类型之一，则应删除此外部帐户，然后运行 <b>升级后</b> 命令。 
-   </br>要更改为Web API部署，请参阅 <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Web应用程序</a>.<br /> </td>
+   </br>如果在外部帐户中使用这些已弃用的部署类型之一，应删除此外部帐户，然后应运行<b>升级后</b>命令。 
+   </br>若要更改为Web API部署，请参阅<a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Web应用程序</a>。<br /> </td>
   </tr> 
   <tr> 
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> 错误<br /> </td> 
-   <td> Microsoft CRM、Salesforce、OracleCRM按需操作活动不再可用。 要配置Adobe Campaign与CRM系统之间的数据同步，您需要使用 <a href="../../workflow/using/crm-connector.md" target="_blank">CRM连接器</a> 定位活动。<br /> </td>
+   <td> Microsoft CRM、Salesforce、OracleCRM按需操作活动不再可用。 要配置Adobe Campaign与CRM系统之间的数据同步，您需要使用<a href="../../workflow/using/crm-connector.md" target="_blank">CRM连接器</a>定位活动。<br /> </td>
   </tr> 
  </tbody> 
 </table>

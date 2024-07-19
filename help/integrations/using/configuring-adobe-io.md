@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 为Adobe Experience Cloud Triggers配置开发人员控制台
-description: 了解如何配置开发人员控制台Adobe Experience Cloud Triggers
+title: 为Adobe Experience Cloud Triggers配置Developer Console
+description: 了解如何配置Developer Console Adobe Experience Cloud Triggers
 feature: Triggers
 audience: integrations
 content-type: reference
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ---
 
-# 为Adobe Experience Cloud Triggers配置开发人员控制台 {#configuring-adobe-io}
+# 为Adobe Experience Cloud Triggers配置Developer Console {#configuring-adobe-io}
 
 <!--
 >[!CAUTION]
@@ -37,8 +37,8 @@ This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1
 
 在开始此实施之前，请检查您是否拥有：
 
-* 有效的 **组织标识符**：组织ID是Adobe Experience Cloud中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解更多信息](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans)
-* a **开发人员访问权限** 添加到您的组织。 组织的系统管理员需要遵循 **将开发人员添加到单个产品配置文件** 详细过程 [本页内容](https://helpx.adobe.com/enterprise/using/manage-developers.html) 为提供开发人员访问权限 `Analytics - {tenantID}` 与触发器关联的Adobe Analytics产品的产品配置文件。
+* 有效的&#x200B;**组织标识符**：组织ID是Adobe Experience Cloud中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans)
+* 您组织的&#x200B;**开发人员访问权限**。 组织的系统管理员需要遵循此页面](https://helpx.adobe.com/enterprise/using/manage-developers.html)中详细的[的&#x200B;**将开发人员添加到单个产品配置文件**&#x200B;过程，以便为与触发器关联的Adobe Analytics产品的`Analytics - {tenantID}`产品配置文件提供开发人员访问权限。
 
 ## 步骤1：创建/更新OAuth项目 {#creating-adobe-io-project}
 
@@ -46,24 +46,24 @@ This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1
 >
 > Adobe已弃用服务帐户(JWT)凭据，Campaign与Adobe解决方案和应用程序的集成现在必须依赖OAuth服务器到服务器凭据。 </br>
 >
-> * 如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如中所述 [本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). 现有服务账户(JWT)凭证将继续使用至2025年1月27日。</br>
+> * 如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如[本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank)中所述。 现有服务帐户(JWT)凭据将继续工作到2025年1月27日。</br>
 >
 > * 如果您实施了叫客集成，如Campaign-Analytics集成或Experience Cloud Triggers集成，则在2025年1月27日之前它们将继续工作。 但是，在该日期之前，您必须将Campaign环境升级到v7.4.1，并将技术帐户迁移到oAuth。
 
 要继续配置Adobe Analytics连接器，请访问Adobe Developer控制台并创建您的OAuth服务器到服务器项目。
 
-请参阅 [此页面](oauth-technical-account.md#oauth-service) 以了解详细文档。
+有关详细信息，请参阅[此页面](oauth-technical-account.md#oauth-service)。
 
 ## 步骤2：在Adobe Campaign中添加项目凭据 {#add-credentials-campaign}
 
-请按照中详述的步骤操作 [此页面](oauth-technical-account.md#add-credentials) 以在Adobe Campaign中添加您的OAuth项目凭据。
+按照[此页面](oauth-technical-account.md#add-credentials)中详述的步骤进行操作，以在Adobe Campaign中添加您的OAuth项目凭据。
 
 ## 步骤3：更新管道标记 {#update-pipelined-tag}
 
-更新 [!DNL pipelined] 标记，您需要将身份验证类型更新到配置文件中的开发人员控制台项目 **config-&lt; instance-name >.xml** 如下所示：
+要更新[!DNL pipelined]标记，您需要将身份验证类型更新到配置文件&#x200B;**config-&lt; instance-name >.xml**&#x200B;中的开发人员控制台项目，如下所示：
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
 ```
 
-然后，运行 `config -reload` 以及重启 [!DNL pipelined] 以考虑更改。
+然后，运行`config -reload`并重新启动[!DNL pipelined]以考虑更改。

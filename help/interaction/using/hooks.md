@@ -18,13 +18,13 @@ ht-degree: 1%
 
 
 
-“交互”中的挂接允许您修改 **标准引擎行为**.
+交互中的挂接允许您修改&#x200B;**标准引擎行为**。
 
-此 **[!UICONTROL Target loading]** 和 **[!UICONTROL Proposition post-processing]** 在Adobe Campaign中，可在选件空间中配置挂钩：
+在Adobe Campaign的选件空间中配置了&#x200B;**[!UICONTROL Target loading]**&#x200B;和&#x200B;**[!UICONTROL Proposition post-processing]**&#x200B;挂钩：
 
 ![](assets/interaction_hooks_1.png)
 
-此 **[!UICONTROL Dynamic offer]** 在Adobe Campaign中，使用选件权重配置了挂接：
+在Adobe Campaign中，**[!UICONTROL Dynamic offer]**&#x200B;挂接配置了选件权重：
 
 ![](assets/interaction_hooks_2.png)
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->此 **xmlInteraction** 参数包含调用数据以及由现成查询加载的联系人的配置文件。
+>**xmlInteraction**&#x200B;参数包含调用数据和由现成查询加载的联系人的配置文件。
 
 **示例：**
 
@@ -120,7 +120,7 @@ return aReturnedProps;
 
 此挂接允许您调用外部引擎以选择链接到优惠的产品列表。 它是在资格规则之后、类型规则应用程序之前在选件中配置的。
 
-集成商应预先扩展建议 **建议Rcp** 架构中的产品附加信息。 要指定此数据的存储位置，请 **[!UICONTROL Proposition being processed]** 链接位于 **[!UICONTROL Storage]** 空间选项卡
+之前，集成商应使用产品上的附加信息来扩展建议&#x200B;**PropositionRcp**&#x200B;架构。 要指定此数据的存储位置，可在空间的&#x200B;**[!UICONTROL Storage]**&#x200B;选项卡中使用&#x200B;**[!UICONTROL Proposition being processed]**&#x200B;链接
 
 ![](assets/interaction_hooks_3.png)
 

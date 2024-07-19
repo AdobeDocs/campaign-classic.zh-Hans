@@ -85,7 +85,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 `Requested URL '/r/ id=h787bc0,281a4d8,281a4da&amp;p1=1' cannot be found`
 
-1. 访问 &lt;redirection_server>/r/test URL并检查请求是否返回了内部版本号和本地主机。
+1. 访问&lt;redirection_server>/r/test URL并检查请求是否返回了内部版本号和localhost。
 
 1. 检查serverConf.xml文件中用于跟踪服务器的spareServer配置。 此配置应处于重定向模式。
 
@@ -102,13 +102,13 @@ $ grep -Rn 50x000000000FD7EC86
    </redirection>
    ```
 
-1. 手动检查 &lt;deliveryid>.xml文件存在于计算机中……/nl6/var/&lt;instance_name>/redir/url/&lt;yyyy> 目录（YYYY代表交货年度）。
+1. 手动检查计算机上是否存在……/nl6/var/&lt;instance_name>/redir/url/&lt;YYYY>目录中的&lt;deliveryID>.xml文件（YYYY表示投放年份）。
 
-1. 手动检查是否 &lt;trackingurlid> 可在以下位置找到： &lt;deliveryid>.xml文件。
+1. 手动检查是否在&lt;deliveryID>.xml文件中找到&lt;trackingUrlId>。
 
 1. 检查相关的deliveryID投放中是否手动存在broadlogID。
 
-1. Check &lt;deliveryid>../nl6/var/中的.xml文件权限&lt;instance_name>/redir/url/year目录。
+1. 检查……/nl6/var/&lt;实例名称>/redir/url/year目录中的&lt;deliveryID>.xml文件权限。
 
    执行用户应具有至少644个权限，以便Apache可以读取跟踪url以将请求的链接重定向。
 
@@ -130,7 +130,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 您可以自定义点击跟踪公式并指定自定义Adobe Analytics跟踪公式。
 
-此类自定义需要谨慎进行，以避免添加额外的换行符。 在JavaScript表达式之外出现的所有换行字符都将出现在最终公式中。
+此类自定义需要谨慎进行，以避免添加额外的换行符。 JavaScript表达式外部存在的所有换行字符都将出现在最终公式中。
 
 跟踪URL中这种额外的换行字符将导致某些webMail（AOL、GMail等）中出现问题。
 

@@ -21,16 +21,16 @@ ht-degree: 0%
 
 本节详细介绍在安装Adobe Campaign之前所需的初步配置步骤。
 
-有关安装Adobe Campaign所需的技术和软件配置的详情，请参见 [兼容性矩阵](../../rn/using/compatibility-matrix.md).
+安装Adobe Campaign所需的技术和软件配置在[兼容性矩阵](../../rn/using/compatibility-matrix.md)中有详细说明。
 
 提醒一下，需要安装和正确配置以下组件：
 
-* Apache，请参阅 [兼容性矩阵](../../rn/using/compatibility-matrix.md)，
-* Java JDK和OpenJDK，请参阅 [Java开发工具包 — JDK](../../installation/using/application-server.md#jdk)，
-* 库，请参阅 [库](#libraries)，
-* 数据库访问层，请参阅 [数据库访问层](#database-access-layers)，
-* LibreOffice，请参阅 [安装LibreOffice for Debian](#installing-libreoffice-for-debian) 和 [安装LibreOffice for CentOS](#installing-libreoffice-for-centos)，
-* 字体，请参阅 [MTA统计数据的字体](#fonts-for-mta-statistics) 和 [日语实例的字体](#fonts-for-japanese-instances).
+* Apache，请参阅[兼容性矩阵](../../rn/using/compatibility-matrix.md)，
+* Java JDK和OpenJDK，请参阅[Java开发工具包 — JDK](../../installation/using/application-server.md#jdk)，
+* 库，请参阅[库](#libraries)，
+* 数据库访问层，请参阅[数据库访问层](#database-access-layers)，
+* LibreOffice，请参阅[安装LibreOffice for Debian](#installing-libreoffice-for-debian)和[安装LibreOffice for CentOS](#installing-libreoffice-for-centos)，
+* 字体，请参阅用于MTA统计的[字体](#fonts-for-mta-statistics)和用于日语实例的[字体](#fonts-for-japanese-instances)。
 
 
 ### 图书馆 {#libraries}
@@ -43,11 +43,11 @@ ht-degree: 0%
 
   如果命令不返回空行，则表示配置正确。
 
-* 您必须具有OpenSSL版本 **1.0.2** 或更高。
+* 您必须具有OpenSSL版本&#x200B;**1.0.2**&#x200B;或更高版本。
 
   对于RHEL分发，需要1.0版本的OpenSSL。
 
-* 要使用Adobe Campaign，您需要拥有 **利比库** 库已安装。
+* 要使用Adobe Campaign，您需要安装&#x200B;**libicu**&#x200B;库。
 
 ### SELinux {#selinux}
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 echo 0 >/selinux/enforce
 ```
 
-除此之外，在 **/etc/sysconfig/httpd** 文件，添加了以下行以引用Adobe Campaign环境配置脚本：
+此外，在&#x200B;**/etc/sysconfig/httpd**&#x200B;文件中，添加了以下行以引用Adobe Campaign环境配置脚本：
 
 ```
 . ~neolane/nl6/env.sh
@@ -67,9 +67,9 @@ echo 0 >/selinux/enforce
 
 在RHEL和CentOS中，启用SELinux时会发现数据库客户端层存在兼容性问题。 为确保Adobe Campaign能够正常运行，我们建议禁用SELinux。
 
-**应用以下流程：**
+**应用以下进程：**
 
-* 编辑文件 **/etc/selinux/config**
+* 编辑文件&#x200B;**/etc/selinux/config**
 
 * 按如下方式修改SELINUX行：
 
@@ -138,15 +138,15 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 您正在使用的数据库引擎的访问层必须安装在您的服务器上，并且可以通过 Adobe Campaign 帐户进行访问。 版本和安装模式可能会因所使用的数据库引擎而异。
 
-有关支持的试点版本详情，请参见 [兼容性矩阵](../../rn/using/compatibility-matrix.md).
+在[兼容性矩阵](../../rn/using/compatibility-matrix.md)中详细列出了支持的引导版本。
 
-同时检查常规 [数据库](../../installation/using/database.md) 部分。
+还要检查常规[数据库](../../installation/using/database.md)部分。
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign支持版本9.6中的PostgreSQL客户端库的所有版本： **libpq.so.5**.
+Adobe Campaign支持版本9.6中所有版本的PostgreSQL客户端库： **libpq.so.5**。
 
-将PostgreSQL与Adobe Campaign结合使用还需要安装相应的 **pgcrypto** 库。
+将PostgreSQL与Adobe Campaign结合使用还需要安装相应的&#x200B;**pgcrypto**&#x200B;库。
 
 ### Oracle {#oracle}
 
@@ -164,7 +164,7 @@ Adobe Campaign支持版本9.6中的PostgreSQL客户端库的所有版本： **li
 
 如果您在客户端控制台上注意到日志、工作流上次处理、下次处理等操作中存在意外的时间延迟（一个或多个小时），则Oracle客户端的库与Oracle服务器之间可能存在问题。 避免此类问题
 
-1. 确保使用 **完整客户端**.
+1. 确保使用&#x200B;**完整客户端**。
 
    在使用 Oracle 即时客户端版本时发现了各种问题。 此外，无法在即时客户端上更改时区文件。
 
@@ -174,7 +174,7 @@ Adobe Campaign支持版本9.6中的PostgreSQL客户端库的所有版本： **li
 
    此外，请检查ORACLE_HOME值以确保它指向预期的客户端版本（如果计算机上安装了多个版本）。
 
-1. 确保客户端和服务器使用相同的 **时区文件**.
+1. 确保客户端和服务器使用相同的&#x200B;**时区文件**。
 
 ## 实施步骤 {#implementation-steps}
 
@@ -182,7 +182,7 @@ Adobe Campaign支持版本9.6中的PostgreSQL客户端库的所有版本： **li
 
 本章介绍了安装过程。 安装步骤如下：
 
-* 步骤1：安装应用程序服务器，请参阅 [在Linux中安装包](../../installation/using/installing-packages-with-linux.md).
+* 步骤1：安装应用程序服务器，请参阅[使用Linux安装包](../../installation/using/installing-packages-with-linux.md)。
 * 步骤2：与Web服务器集成（可选，具体取决于部署的组件）。
 
-完成安装步骤后，您需要配置实例、数据库和服务器。 有关详细信息，请参见 [关于初始配置](../../installation/using/about-initial-configuration.md).
+完成安装步骤后，您需要配置实例、数据库和服务器。 有关详细信息，请参阅[关于初始配置](../../installation/using/about-initial-configuration.md)。

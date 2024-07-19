@@ -25,7 +25,7 @@ ht-degree: 1%
 
 此步骤允许您检测可能的错误，并在将其交付到主目标之前修复它们。
 
-介绍了验证投放的步骤 [在此部分中](steps-validating-the-delivery.md).
+本节](steps-validating-the-delivery.md)中介绍了验证投放的步骤[。
 
 ## 收件箱呈现 {#inbox-and-email-rendering}
 
@@ -37,13 +37,13 @@ ht-degree: 1%
 
 * 收件箱呈现功能对于确定电子邮件促销活动是否成功超越主要ISP（Internet服务提供商）和Web邮件服务的过滤器至关重要。 此类工具会将电子邮件的预检副本发送到测试收件箱网络，以便您了解消息在这些服务中的显示或呈现方式。 它们可能还包括报表和代码更正选项，帮助您快速识别并进行修复以改善可投放性。
 
-了解详情 [在此部分中](inbox-rendering.md).
+在本节](inbox-rendering.md)中了解更多[。
 
 ## 验证消息 {#proof-messages}
 
 通过发送校样，可检查选择退出链接、镜像页面和任何其他链接、验证消息、验证是否显示图像、检测可能存在的错误等。 您可能还希望检查您的设计和在不同设备上的渲染。
 
-了解详情 [在此部分中](steps-validating-the-delivery.md#sending-a-proof).
+在本节](steps-validating-the-delivery.md#sending-a-proof)中了解更多[。
 
 ## 设置A/B测试投放 {#a-b-testing-deliveries}
 
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 * 选择成功率最高的项目并将其发送到目标的其余部分
 
-了解详情 [在此部分中](get-started-a-b-testing.md).
+在本节](get-started-a-b-testing.md)中了解更多[。
 
 ## 确保您的消息已投放 {#make-sure-your-message-is-delivered}
 
@@ -63,19 +63,19 @@ ht-degree: 1%
 
 ### 进行验证过程
 
-您可以定义涉及Adobe Campaign操作员和组的完整验证流程，以验证目标和消息内容。 这将确保全面监测和控制营销活动的各个流程：定位、内容、预算、提取和发送证明。 根据用户的权限，用户将收到通知、接收校样并能够验证或拒绝消息。 了解详情 [在此部分中](../../campaign/using/marketing-campaign-approval.md).
+您可以定义涉及Adobe Campaign操作员和组的完整验证流程，以验证目标和消息内容。 这将确保全面监测和控制营销活动的各个流程：定位、内容、预算、提取和发送证明。 根据用户的权限，用户将收到通知、接收校样并能够验证或拒绝消息。 在本节](../../campaign/using/marketing-campaign-approval.md)中了解更多[。
 
 ### 使用批次
 
-您可以逐步增加使用批次发送的数量。 这将避免您的邮件被标记为垃圾邮件或您想要限制每天的邮件数。 利用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 了解详情 [在此部分中](steps-sending-the-delivery.md#sending-using-multiple-waves).
+您可以逐步增加使用批次发送的数量。 这将避免您的邮件被标记为垃圾邮件或您想要限制每天的邮件数。 利用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 在本节](steps-sending-the-delivery.md#sending-using-multiple-waves)中了解更多[。
 
 ### 排定消息优先级
 
 您可以通过指明优先级来设置投放的发送顺序。 为实现此操作，请执行以下步骤：
 
-1. 编辑投放属性，然后选择 **[!UICONTROL Delivery]** 选项卡。
+1. 编辑投放属性，然后选择&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡。
 
-1. 从开始按比例定义投放的优先级 **[!UICONTROL Very low]** 到 **[!UICONTROL Very high]**.
+1. 按从&#x200B;**[!UICONTROL Very low]**&#x200B;到&#x200B;**[!UICONTROL Very high]**&#x200B;的比例定义投放的优先级。
 
 >[!NOTE]
 >
@@ -91,11 +91,11 @@ ht-degree: 1%
 
 * 对于每个IPAffinity元素，声明可以使用的IP地址。 [了解详情](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* 在 [类型](../../campaign-opt/using/about-campaign-typologies.md) 您选择的，请使用 **[!UICONTROL Managing affinities with IP addresses]** 用于将投放链接到管理所述关联的投放服务器(MTA)的字段。 [了解详情](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic)。
+* 在您选择的[类型](../../campaign-opt/using/about-campaign-typologies.md)中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;字段将投放链接到管理该关联的投放服务器(MTA)。 [了解详情](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic)。
 
 * 发送电子邮件后，检查标头以验证发送投放的IP地址。 您的电子邮件管理员应帮助您获取标头信息。
 
-* 对于短信投放，请确保短信渠道的专用亲和度限制为 **一** 应用程序服务器容器。 [了解详情](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+* 对于SMS投放，确保SMS渠道的专用关联限制为&#x200B;**一个**&#x200B;应用程序服务器容器。 [了解详情](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ ht-degree: 1%
 
 ### 使用分类
 
-您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。 例如，您可以筛选新闻稿目标中的未成年收件人。 了解详情 [在此示例中](../../campaign-opt/using/filtering-rules.md).
+您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。 例如，您可以筛选新闻稿目标中的未成年收件人。 在此示例](../../campaign-opt/using/filtering-rules.md)中了解更多[。
 
 ### 避免使用附件
 

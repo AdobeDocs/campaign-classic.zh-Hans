@@ -19,7 +19,7 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 
 本页显示托管(Managed Services)部署与内部部署之间的主要差异。 混合部署的具体情况取决于Adobe托管并在您的场所中托管的元素。
 
-介绍了不同的托管模型 [在此部分中](../../installation/using/hosting-models.md).
+在此部分](../../installation/using/hosting-models.md)中引入了不同的托管模型[。
 
 ## 每个部署模型的可用性 {#capability-matrix}
 
@@ -41,11 +41,11 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 
 ## 联合数据访问{#fda}
 
-Adobe Campaign提供 **联合数据访问** (FDA)选项，用于处理存储在一个或多个外部数据库中的信息：无需更改Adobe Campaign数据的结构即可访问外部数据。 [了解详情](../../installation/using/about-fda.md)
+Adobe Campaign提供了&#x200B;**联合数据访问** (FDA)选项，以便处理存储在一个或多个外部数据库中的信息：无需更改Adobe Campaign数据的结构即可访问外部数据。 [了解详情](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->兼容的外部数据库系统取决于您的托管模型。 了解详情，请参阅 [Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md).
+>兼容的外部数据库系统取决于您的托管模型。 请参阅[Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md)以了解详情。
 >
 
 **另请参阅**

@@ -20,11 +20,11 @@ Adobe Campaign提供了多种类型的报表，可通过客户控制台或Intern
 
 可以使用以下类型的报表：
 
-* 有关整个平台的报告，请参阅 [全局报告](../../reporting/using/global-reports.md).
-* 投放报告，请参阅 [投放报告](../../reporting/using/delivery-reports.md).
-* 累积报告，请参见 [累积报告](../../reporting/using/cumulative-reports.md).
+* 有关整个平台的报告，请参阅[全局报告](../../reporting/using/global-reports.md)。
+* 传递报告，请参阅[传递报告](../../reporting/using/delivery-reports.md)。
+* 累积报告，请参阅[累积报告](../../reporting/using/cumulative-reports.md)。
 
-您可以从客户端控制台主页、报告仪表板或投放列表访问报告。 报告的显示模式取决于其上下文。 主报告的列表可在主页上找到，并允许您快速访问投放数据。 此列表可以根据您的需求进行更改。 请参阅 [本节](../../reporting/using/about-reports-creation-in-campaign.md) 以了解更多信息。
+您可以从客户端控制台主页、报告仪表板或投放列表访问报告。 报告的显示模式取决于其上下文。 主报告的列表可在主页上找到，并允许您快速访问投放数据。 此列表可以根据您的需求进行更改。 有关详细信息，请参阅[此部分](../../reporting/using/about-reports-creation-in-campaign.md)。
 
 
 可通过报表仪表板使用搜索字段快速访问列表中的某个报表。
@@ -47,4 +47,4 @@ Adobe Campaign提供了多种类型的报表，可通过客户控制台或Intern
 >
 >有些报告提供特征图表（曲线、条形、漏斗等）。 将光标移动到图表上以显示其值。
 
-有关这些选项的更多信息，请参阅 [本节](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+有关这些选项的更多信息，请参阅[此章节](../../reporting/using/about-adobe-campaign-reporting-tools.md)。

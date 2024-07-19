@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
-在Campaign概述中，营销策划仍可通过以下网址访问： **[!UICONTROL Campaigns]** 主页的链接。
+通过主页上的&#x200B;**[!UICONTROL Campaigns]**&#x200B;链接，仍可在Campaign概述中访问该营销活动。
 
 ## 可用设置 {#available-settings}
 

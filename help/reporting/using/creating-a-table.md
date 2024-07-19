@@ -22,11 +22,11 @@ ht-degree: 1%
 
 ## 创建包含组的列表 {#creating-a-list-with-group}
 
-A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并生成有关该数据的统计信息。 例如，您可以创建数据的总计和小计。 每个组都有自己的页眉、详细信息和页脚行。
+**[!UICONTROL List with group]**&#x200B;类型表允许您对表中的数据进行分组并生成有关该表的统计信息。 例如，您可以创建数据的总计和小计。 每个组都有自己的页眉、详细信息和页脚行。
 
 >[!CAUTION]
 >
->此 **[!UICONTROL Page]** 包含该表的活动前面必须加上 **[!UICONTROL Query]** 或 **[!UICONTROL Script]** 收集要在报表中分析的数据的活动。 有关这些活动的更多信息，请参阅 [收集数据进行分析](../../reporting/using/collecting-data-to-analyze.md) 和 [脚本活动](../../reporting/using/advanced-functionalities.md#script-activity).
+>包含该表的&#x200B;**[!UICONTROL Page]**&#x200B;活动前面必须有&#x200B;**[!UICONTROL Query]**&#x200B;或&#x200B;**[!UICONTROL Script]**&#x200B;活动，才能收集要在报告中分析的数据。 有关这些活动的详细信息，请参阅[收集数据以分析](../../reporting/using/collecting-data-to-analyze.md)和[编写活动脚本](../../reporting/using/advanced-functionalities.md#script-activity)。
 
 ### 操作原则 {#operating-principle}
 
@@ -34,34 +34,34 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
 在以下示例中，组显示了数据库中的所有营销活动、投放，以及每个投放和每个营销活动发送的消息数。
 
-它允许您列出营销活动(**[!UICONTROL Label (Campaign)]**，投放列表(**[!UICONTROL Label]** )，并允许您计算每次投放发送的消息数(**[!UICONTROL Processed)]**，然后为每个促销活动添加这些参数(**[!UICONTROL Sum(@processed)]** )。
+它可让您列出营销活动(**[!UICONTROL Label (Campaign)]**，链接到此营销活动的投放列表(**[!UICONTROL Label]**)，并让您在为每个营销活动添加每个投放(**[!UICONTROL Sum(@processed)]**)之前，计算每个投放发送的消息数(**[!UICONTROL Processed)]**)。
 
 ![](assets/s_advuser_ergo_listgroup_005.png)
 
 ### 实施步骤 {#implementation-steps}
 
-此处提供了完整的实施示例： [用例：创建包含组列表的报告](#use-case--create-a-report-with-a-group-list).
+此处提供了完整的实施示例：[用例：创建包含组列表](#use-case--create-a-report-with-a-group-list)的报告。
 
 请注意以下步骤以创建“List with group”类型表：
 
-1. 转到报告图表并放置 **[!UICONTROL Query]** 活动。 请参阅 [收集数据进行分析](../../reporting/using/collecting-data-to-analyze.md).
+1. 转到报告图表并放置&#x200B;**[!UICONTROL Query]**&#x200B;活动。 请参阅[收集数据以进行分析](../../reporting/using/collecting-data-to-analyze.md)。
 1. 填写源表并选择统计信息将关注的表的字段。
-1. 放置 **[!UICONTROL Page]** 活动。 有关详细信息，请参见 [静态元素](../../reporting/using/creating-a-new-report.md#static-elements).
-1. 插入 **[!UICONTROL List with group]** 在页面中键入表。
+1. 将&#x200B;**[!UICONTROL Page]**&#x200B;活动放入图表中。 有关详细信息，请参阅[静态元素](../../reporting/using/creating-a-new-report.md#static-elements)。
+1. 在页面中插入&#x200B;**[!UICONTROL List with group]**&#x200B;类型表。
 1. 指定数据路径，或指定在查询中选择作为数据源的表。
 
    如果以后要恢复源表中的字段并将它们插入到表的单元格中，则必须执行此步骤。
 
 1. 创建表及其内容。
-1. 在中显示最终报告 **[!UICONTROL Preview]** 选项卡。 然后，您可以发布报表，并在必要时将其导出为其他格式。 有关详细信息，请参见 [导出报告](../../reporting/using/actions-on-reports.md#exporting-a-report).
+1. 在&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡中显示最终报告。 然后，您可以发布报表，并在必要时将其导出为其他格式。 有关详细信息，请参阅[导出报告](../../reporting/using/actions-on-reports.md#exporting-a-report)。
 
 ### 添加行和列 {#adding-lines-and-columns}
 
-默认情况下， **[!UICONTROL List with group]** 类型表包括页眉、明细行和页脚行。
+默认情况下，**[!UICONTROL List with group]**&#x200B;类型表包括页眉、详细信息行和页脚行。
 
 组本身包括页眉、详细信息和页脚行。
 
-* **标题行**：通过此行可以为表的列指定标题。
+* **标题行**：此行允许您为表的列提供一个标题。
 
   ![](assets/s_advuser_ergo_listgroup_003a.png)
 
@@ -69,7 +69,7 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
   ![](assets/s_advuser_ergo_listgroup_004.png)
 
-* **页脚行**：通过此行可显示总值。
+* **页脚行**：此行允许您显示总值。
 
   ![](assets/s_advuser_ergo_listgroup_003.png)
 
@@ -79,17 +79,17 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
 ![](assets/s_advuser_ergo_listgroup_019.png)
 
-**行和列**：要添加或删除行或列，请转到现有行或列，然后使用右键单击菜单。
+**行和列**：若要添加或删除行或列，请转到现有的行或列并使用右键单击菜单。
 
 ![](assets/s_advuser_ergo_listgroup_006.png)
 
-所添加直线的性质取决于光标的位置。 例如，要添加标题行，请将游标放在标题上，然后单击 **[!UICONTROL Add > A line above/below]**.
+所添加直线的性质取决于光标的位置。 例如，要添加标题行，请将游标放在标题上，然后单击&#x200B;**[!UICONTROL Add > A line above/below]**。
 
 ![](assets/s_advuser_ergo_listgroup_006a.png)
 
-列的宽度可以通过以下方式修改 **[!UICONTROL Column format]** 项目。
+列的宽度可以通过&#x200B;**[!UICONTROL Column format]**&#x200B;项进行修改。
 
-**组**：要添加组，请转到行，然后在下拉菜单中选择匹配项。
+**组**：要添加组，请转到一行并在下拉菜单中选择匹配项。
 
 ![](assets/s_advuser_ergo_listgroup_007.png)
 
@@ -97,7 +97,7 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
 要编辑表的单元格并定义其内容和格式，请转到该单元格并使用右键单击菜单。
 
-使用 **[!UICONTROL Expression]** 选择要显示的值的菜单项。
+使用&#x200B;**[!UICONTROL Expression]**&#x200B;菜单项选择要显示的值。
 
 ![](assets/s_advuser_ergo_listgroup_010.png)
 
@@ -109,11 +109,11 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
 * 输入单元格的标签，例如标题。
 
-  要执行此操作，请使用与将字段插入数据库的过程相同的过程，但不要选择表达式。 在 **[!UICONTROL Label]** 字段。 它将按原样显示。
+  要执行此操作，请使用与将字段插入数据库的过程相同的过程，但不要选择表达式。 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入标签。 它将按原样显示。
 
 * 计算聚合（平均值、总和等） 并显示在单元格中。
 
-  要执行此操作，请使用 **[!UICONTROL Aggregates]** 菜单条目并选择所需的营销活动。
+  为此，请使用&#x200B;**[!UICONTROL Aggregates]**&#x200B;菜单项并选择所需的营销活动。
 
   ![](assets/s_advuser_ergo_listgroup_008.png)
 
@@ -121,24 +121,24 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
-要定义单元格格式，请 **[!UICONTROL Cell format...]** 菜单可让您访问选定单元格可用的所有格式选项。
+要定义单元格格式，可使用&#x200B;**[!UICONTROL Cell format...]**&#x200B;菜单访问选定单元格可用的所有格式选项。
 
 利用这些选项，可个性化报表的最终呈现，并使其更容易阅读信息。
 
-使用 **[!UICONTROL Carriage return]** 将数据导出到Excel时显示的字段：选择 **[!UICONTROL Yes]** 值强制回车。 导出时将保留此值。 有关详细信息，请参见 [导出报告](../../reporting/using/actions-on-reports.md#exporting-a-report).
+将数据导出到Excel时使用&#x200B;**[!UICONTROL Carriage return]**&#x200B;字段：选择&#x200B;**[!UICONTROL Yes]**&#x200B;值以强制回车。 导出时将保留此值。 有关详细信息，请参阅[导出报告](../../reporting/using/actions-on-reports.md#exporting-a-report)。
 
-此 **[!UICONTROL Cell format]** 窗口可访问以下选项卡：
+**[!UICONTROL Cell format]**&#x200B;窗口允许您访问以下选项卡：
 
-* 此 **[!UICONTROL Value]** 选项卡
-* 此 **[!UICONTROL Borders]** 选项卡
-* 此 **[!UICONTROL Click]** 选项卡
-* 此 **[!UICONTROL Extra]** 选项卡
+* **[!UICONTROL Value]**&#x200B;选项卡
+* **[!UICONTROL Borders]**&#x200B;选项卡
+* **[!UICONTROL Click]**&#x200B;选项卡
+* **[!UICONTROL Extra]**&#x200B;选项卡
 
-此 **[!UICONTROL Value]** 选项卡允许您更改字体和各种值属性，或根据它们的性质定义格式。
+**[!UICONTROL Value]**&#x200B;选项卡允许您更改字体和各种值属性，或根据它们的性质定义格式。
 
 ![](assets/s_advuser_ergo_listgroup_009.png)
 
-格式会更改数据的显示：例如， **[!UICONTROL Number]**， **[!UICONTROL Monetary]** 和 **[!UICONTROL Percentage]** 格式允许您对齐右侧的数字并显示小数点。
+格式更改了数据显示：例如，**[!UICONTROL Number]**、**[!UICONTROL Monetary]**&#x200B;和&#x200B;**[!UICONTROL Percentage]**&#x200B;格式允许您对齐右侧的数字并显示小数点。
 
 如何配置货币格式的示例：您可以指定值的表示货币，选择是否分隔千位，并以红色显示负值。 货币符号的位置取决于其配置文件中定义的运算符的语言。
 
@@ -148,11 +148,11 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
 ![](assets/s_advuser_ergo_listgroup_013.png)
 
-此 **边框** 选项卡允许您将边框添加到表中的行和列中。 将大型报表导出到Excel中时，向单元格添加边框可能会导致性能问题。
+**边框**&#x200B;选项卡允许您向表中的行和列添加边框。 将大型报表导出到Excel中时，向单元格添加边框可能会导致性能问题。
 
 ![](assets/s_advuser_ergo_listgroup_014.png)
 
-如有必要，您可以在表模板中定义边框(**[!UICONTROL Administration > Configuration > Form rendering]** )。
+如有必要，您可以在表模板(**[!UICONTROL Administration > Configuration > Form rendering]**)中定义边框。
 
 在这种情况下，您将具有以下语法：
 
@@ -186,13 +186,13 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
  </style> 
 ```
 
-此 **[!UICONTROL Click]** 选项卡允许您在用户单击单元格或表的内容时定义操作。
+**[!UICONTROL Click]**&#x200B;选项卡允许您在用户单击单元格或表的内容时定义操作。
 
 在下面的示例中，单击单元格中的值可显示报表的第二页：它包含有关单元格中投放的信息。
 
 ![](assets/s_advuser_ergo_listgroup_015.png)
 
-此 **额外** 制表符用于将可视化图表链接到数据，例如彩色标记或值栏。 当表在图表中显示为图例时，将使用彩色标记。 有关更多信息，请参阅实施示例： [步骤5 — 创建第二个页面](#step-5---create-the-second-page)
+通过&#x200B;**额外**&#x200B;选项卡，您可以将可视化图表链接到数据，例如彩色标记或值栏。 当表在图表中显示为图例时，将使用彩色标记。 有关更多信息，请参阅实施示例：[步骤5 — 创建第二页](#step-5---create-the-second-page)
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
@@ -204,11 +204,11 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
 ### 第1步 — 创建报表 {#step-1---create-a-report}
 
-创建与营销活动模式相关的新报表， **[!UICONTROL Campaigns (nms)]**.
+创建与营销活动架构&#x200B;**[!UICONTROL Campaigns (nms)]**&#x200B;相关的新报告。
 
 ![](assets/s_advuser_report_listgroup_001.png)
 
-单击 **[!UICONTROL Save]** 以创建报表。
+单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建报告。
 
 转到图表并添加用于设计报表内容的第一个组件：第一个查询和第一个页面。
 
@@ -220,8 +220,8 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
 双击第一个查询进行编辑，然后应用以下步骤对其进行配置：
 
-1. 首先，更改应用查询源的架构：选择 **[!UICONTROL Deliveries (nms)]** 架构。
-1. 单击 **[!UICONTROL Edit query]** 链接并显示高级字段。
+1. 首先更改应用查询源的架构：选择&#x200B;**[!UICONTROL Deliveries (nms)]**&#x200B;架构。
+1. 单击&#x200B;**[!UICONTROL Edit query]**&#x200B;链接并显示高级字段。
 
    ![](assets/reporting_quick_start_query-1.png)
 
@@ -244,10 +244,10 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
    * 主键： **@deliveryId**
    * 标签（营销活动）： **@label1**
    * 已处理： **@processed**
-   * &#39;营销活动&#39;链接的外键（&#39;id&#39;字段）： **@operationId**
+   * &#39;营销活动&#39; （&#39;id&#39;字段）链接的外键： **@operationId**
    * 错误率： **@errorRatio**
 
-1. 单击 **[!UICONTROL Next]** 按钮两次以进入 **[!UICONTROL Data filtering]** 步骤。
+1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮两次以进入&#x200B;**[!UICONTROL Data filtering]**&#x200B;步骤。
 
    添加筛选条件以仅收集链接到营销活动的投放。
 
@@ -255,13 +255,13 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
    ![](assets/reporting_quick_start_query_filter.png)
 
-1. 单击 **[!UICONTROL Finish]** 要保存这些条件，请单击 **[!UICONTROL Ok]** 以关闭查询编辑器。
+1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;保存这些条件，然后单击&#x200B;**[!UICONTROL Ok]**&#x200B;关闭查询编辑器。
 
 ### 步骤3：创建第一页 {#step-3--create-the-first-page}
 
 在此步骤中，我们将配置报表的第一页。 要对其进行配置，请应用以下步骤：
 
-1. 打开 **[!UICONTROL Page]** 活动并输入其标题，例如 **投放** 这种情况下。
+1. 打开&#x200B;**[!UICONTROL Page]**&#x200B;活动并输入其标题，在本例中为&#x200B;**投放**。
 
    ![](assets/s_advuser_report_listgroup_003.png)
 
@@ -269,11 +269,11 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
    ![](assets/s_advuser_report_listgroup_004.png)
 
-1. 单击 **[!UICONTROL Table data XPath...]** 链接并选择投放链接，即 `[query/delivery]`.
+1. 单击&#x200B;**[!UICONTROL Table data XPath...]**&#x200B;链接并选择传递链接，即`[query/delivery]`。
 
    ![](assets/s_advuser_report_listgroup_005.png)
 
-1. 单击 **[!UICONTROL Data]** 制表符并更改表的布局：在右侧添加三列。
+1. 单击&#x200B;**[!UICONTROL Data]**&#x200B;选项卡并更改表的布局：在右侧添加三列。
 
    ![](assets/s_advuser_report_listgroup_006.png)
 
@@ -283,35 +283,35 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
    通过此组，可将营销活动和与其关联的投放分组。
 
-1. 在组窗口中，引用 **&#39;营销活动&#39;链接的外键** 然后关闭窗户。
+1. 在组窗口中，引用&#39;Campaign&#39;链接&#x200B;**的**&#x200B;外键并关闭窗口。
 
    ![](assets/s_advuser_report_listgroup_007.png)
 
-1. 编辑组标题的第一个单元格并插入 **[!UICONTROL Label]** 以表达式表示的营销活动字段。
+1. 编辑组标题的第一个单元格，并将营销活动的&#x200B;**[!UICONTROL Label]**&#x200B;字段作为表达式插入。
 
    ![](assets/s_advuser_report_listgroup_009.png)
 
-1. 编辑详细信息行的第二个单元格并选择投放 **[!UICONTROL Label]**.
+1. 编辑详细信息行的第二个单元格并选择投放&#x200B;**[!UICONTROL Label]**。
 
    ![](assets/s_advuser_report_listgroup_011.png)
 
-1. 编辑此单元格的格式并打开 **[!UICONTROL Click]** 选项卡。 配置适当的选项，以便当用户单击投放名称时，该投放将在同一窗口中打开。
+1. 编辑此单元格的格式并打开&#x200B;**[!UICONTROL Click]**&#x200B;选项卡。 配置适当的选项，以便当用户单击投放名称时，该投放将在同一窗口中打开。
 
    ![](assets/s_advuser_report_listgroup_0111.png)
 
-   要执行此操作，请选择 **[!UICONTROL Next page]** 键入操作并选择 **[!UICONTROL In the same window]** 作为打开选项。
+   为此，请选择一个&#x200B;**[!UICONTROL Next page]**&#x200B;类型操作并选择&#x200B;**[!UICONTROL In the same window]**&#x200B;作为打开选项。
 
    ![](assets/s_advuser_report_listgroup_0112.png)
 
-1. 在窗口的下部，单击 **[!UICONTROL Add]** 并指定 **`/vars/selectedDelivery`** 路径和 **[!UICONTROL @deliveryId]** 与投放主键的别名匹配的表达式，如之前创建的查询中所定义。 通过此公式，可访问选定的投放。
+1. 在窗口的下半部分，单击&#x200B;**[!UICONTROL Add]**&#x200B;并指定与投放主键的别名匹配的&#x200B;**`/vars/selectedDelivery`**&#x200B;路径和&#x200B;**[!UICONTROL @deliveryId]**&#x200B;表达式，如之前创建的查询中所定义。 通过此公式，可访问选定的投放。
 
    ![](assets/s_advuser_report_listgroup_010.png)
 
-1. 编辑组的页脚行的第二个单元格并输入 **[!UICONTROL Total per campaign]** 作为标签。
+1. 编辑组的页脚行的第二个单元格并输入&#x200B;**[!UICONTROL Total per campaign]**&#x200B;作为标签。
 
    ![](assets/s_advuser_report_listgroup_012.png)
 
-1. 编辑组标题行的第三个单元格并输入 **[!UICONTROL Number of messages sent]** 作为标签。
+1. 编辑组标题行的第三个单元格并输入&#x200B;**[!UICONTROL Number of messages sent]**&#x200B;作为标签。
 
    ![](assets/s_advuser_report_listgroup_013.png)
 
@@ -321,31 +321,31 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
    ![](assets/s_advuser_report_listgroup_014.png)
 
-1. 编辑组页脚行的第三个单元格，选择已处理的投放指示器并应用 **[!UICONTROL Sum]** 聚合到其中。
+1. 编辑组页脚行的第三个单元格，选择已处理的投放指示器并对其应用&#x200B;**[!UICONTROL Sum]**&#x200B;聚合。
 
    ![](assets/s_advuser_report_listgroup_015.png)
 
-1. 编辑明细行的第四个单元格，并选择 **错误投放错误率** 作为表达式。
+1. 编辑详细信息行的第四个单元格，并选择&#x200B;**错误投放错误率**&#x200B;作为表达式。
 
    ![](assets/s_advuser_report_listgroup_016.png)
 
 1. 选择此单元格以显示表示投放错误率的值栏。
 
-   要执行此操作，请访问单元格格式，然后转到 **[!UICONTROL More]** 选项卡。 选择 **[!UICONTROL Value bar]** 条目，然后选择 **[!UICONTROL Hide the cell value]** 选项。
+   为此，请访问单元格格式，然后转到&#x200B;**[!UICONTROL More]**&#x200B;选项卡。 在下拉列表中选择&#x200B;**[!UICONTROL Value bar]**&#x200B;条目，然后选择&#x200B;**[!UICONTROL Hide the cell value]**&#x200B;选项。
 
    ![](assets/s_advuser_report_listgroup_023.png)
 
-   您现在可以查看报表的呈现。 单击 **[!UICONTROL Preview]** 选项卡，然后选择 **[!UICONTROL Global]** 选项：显示Adobe Campaign数据库中链接到营销活动的所有投放的列表。
+   您现在可以查看报表的呈现。 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Global]**&#x200B;选项：这将显示Adobe Campaign数据库中链接到营销活动的所有投放的列表。
 
    ![](assets/s_advuser_report_listgroup_025.png)
 
-   我们建议使用 **[!UICONTROL Preview]** 选项卡以确保正确选择和配置表中的数据。 完成此操作后，您可以继续设置表格的格式。
+   我们建议使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以确保正确选择和配置表中的数据。 完成此操作后，您可以继续设置表格的格式。
 
-1. 应用 **[!UICONTROL Bold]** 显示每个营销活动总计和已处理消息总数的单元格样式。
+1. 将&#x200B;**[!UICONTROL Bold]**&#x200B;样式应用于显示每个营销活动总计和已处理消息总数的单元格。
 
    ![](assets/s_advuser_report_listgroup_024.png)
 
-1. 单击组标题行（显示促销活动名称的单元格）的第1个单元格，然后选择 **[!UICONTROL Edit > Merge to right]**.
+1. 单击组标题行（显示促销活动名称的单元格）的第一个单元格，然后选择&#x200B;**[!UICONTROL Edit > Merge to right]**。
 
    ![](assets/s_advuser_report_listgroup_026.png)
 
@@ -361,7 +361,7 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
 我们希望添加第二个查询和第二个页面，以在报告用户单击某个投放时显示该投放的详细信息。 添加查询之前，请编辑已创建的页面并启用传出过渡，以便将其链接到查询。
 
-1. 在之后添加新查询 **[!UICONTROL Page]** 活动并编辑其架构：选择 **[!UICONTROL Recipient delivery logs]** 架构。
+1. 在&#x200B;**[!UICONTROL Page]**&#x200B;活动后添加新查询并编辑其架构：选择&#x200B;**[!UICONTROL Recipient delivery logs]**&#x200B;架构。
 
    ![](assets/reporting_quick_start_query-2.png)
 
@@ -371,7 +371,7 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
      ![](assets/reporting_quick_start_query-2_count.png)
 
-   * 在此字段上收集收件人电子邮件域和组信息：为此，请选择 **[!UICONTROL Group]** 选项。
+   * 收集此字段的收件人电子邮件域和组信息：为此，请在域名列中选择&#x200B;**[!UICONTROL Group]**&#x200B;选项。
 
    ![](assets/reporting_quick_start_query-2_filter.png)
 
@@ -382,11 +382,11 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
      ![](assets/reporting_quick_start_query-2_alias.png)
 
-1. 单击 **[!UICONTROL Next]** 按钮两次：这会将您转到 **[!UICONTROL Data filtering]** 步骤。
+1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮两次：这会将您转到&#x200B;**[!UICONTROL Data filtering]**&#x200B;步骤。
 
    添加筛选条件以仅收集链接到选定投放的信息。
 
-   语法如下：“投放”链接的外键等于设置的值 `$([vars/selectedDelivery])`
+   语法如下：“投放”链接的外键等于设置`$([vars/selectedDelivery])`的值
 
    ![](assets/s_advuser_report_listgroup_017.png)
 
@@ -394,50 +394,50 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
 ### 步骤5 — 创建第二个页面 {#step-5---create-the-second-page}
 
-1. 编辑页面并输入其标签： **电子邮件域**.
-1. 取消选中 **[!UICONTROL Enable output transitions]** 选项：这是报告的最后一页，不会紧接着进行其他活动。
+1. 编辑页面并输入其标签： **电子邮件域**。
+1. 取消选中&#x200B;**[!UICONTROL Enable output transitions]**&#x200B;选项：这是报告的最后一页，不会后跟其他活动。
 
    ![](assets/s_advuser_report_listgroup_028.png)
 
-1. 使用右键单击菜单添加带有组的新列表并调用它 **每个收件人的电子邮件域**.
-1. 单击 **[!UICONTROL Table data XPath...]** 并选择 **[!UICONTROL Recipient delivery logs]** 链接。
+1. 使用右键单击菜单添加带有组的新列表，并将其命名为&#x200B;**每个收件人的电子邮件域**。
+1. 单击&#x200B;**[!UICONTROL Table data XPath...]**&#x200B;并选择&#x200B;**[!UICONTROL Recipient delivery logs]**&#x200B;链接。
 
    ![](assets/s_advuser_report_listgroup_029.png)
 
-1. 在 **[!UICONTROL Data]** 选项卡，按如下方式调整表：
+1. 在&#x200B;**[!UICONTROL Data]**&#x200B;选项卡中，按如下方式调整表：
 
    * 在右侧添加两列。
-   * 在详细信息行的第一个单元格中，添加 **[!UICONTROL rowNum()-1]** 用于计算行数的表达式。 然后，更改单元格的格式：在 **[!UICONTROL Extra]** 选项卡，选择 **[!UICONTROL Color tab]** 并单击 **[!UICONTROL Ok]**.
+   * 在详细信息行的第一个单元格中，添加&#x200B;**[!UICONTROL rowNum()-1]**&#x200B;表达式以计算行数。 然后更改单元格的格式：在&#x200B;**[!UICONTROL Extra]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Color tab]**&#x200B;并单击&#x200B;**[!UICONTROL Ok]**。
 
      ![](assets/s_advuser_report_listgroup_018.png)
 
      通过此配置，您可以将表用作图表的标题。
 
-   * 在详细信息行的第二个单元格中，添加 **[!UICONTROL Email domain(Recipient)]** 表达式。
-   * 在详细信息行的第三个单元格中，添加 **[!UICONTROL count(primary key)]** 表达式。
+   * 在详细信息行的第二个单元格中，添加&#x200B;**[!UICONTROL Email domain(Recipient)]**&#x200B;表达式。
+   * 在详细信息行的第三个单元格中，添加&#x200B;**[!UICONTROL count(primary key)]**&#x200B;表达式。
 
    ![](assets/s_advuser_report_listgroup_019.png)
 
-1. 使用右键单击菜单将饼图添加到页面中，并分配 **电子邮件域** 标记到其中。 有关更多信息，请参阅 [图表类型和变量](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
-1. 单击 **[!UICONTROL Variants]** 链接并取消选择 **[!UICONTROL Display label]** 和 **[!UICONTROL Display caption]** 选项。
+1. 使用右键单击菜单将饼图添加到页面中，并为其分配&#x200B;**电子邮件域**&#x200B;标签。 有关详细信息，请参阅[图表类型和变体](../../reporting/using/creating-a-chart.md#chart-types-and-variants)。
+1. 单击&#x200B;**[!UICONTROL Variants]**&#x200B;链接并取消选择&#x200B;**[!UICONTROL Display label]**&#x200B;和&#x200B;**[!UICONTROL Display caption]**&#x200B;选项。
 1. 检查是否未配置值排序。 如需详细信息，请参阅[此小节](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report)。
 
    ![](assets/s_advuser_report_listgroup_0191.png)
 
-1. 在 **[!UICONTROL Data]** 选项卡，更改数据源：选择 **[!UICONTROL Context data]** 下拉列表中。
+1. 在&#x200B;**[!UICONTROL Data]**&#x200B;选项卡中，更改数据源：从下拉列表中选择&#x200B;**[!UICONTROL Context data]**。
 
    ![](assets/s_advuser_report_listgroup_020.png)
 
-1. 然后单击 **[!UICONTROL Advanced settings]** 并选择指向收件人投放日志的链接。
+1. 然后单击&#x200B;**[!UICONTROL Advanced settings]**&#x200B;并选择指向收件人投放日志的链接。
 
    ![](assets/s_advuser_report_listgroup_0201.png)
 
-1. 在 **[!UICONTROL Chart type]** 部分，选择 **[!UICONTROL Email domain]** 变量。
+1. 在&#x200B;**[!UICONTROL Chart type]**&#x200B;部分中，选择&#x200B;**[!UICONTROL Email domain]**&#x200B;变量。
 1. 然后添加要执行的计算：选择总和作为运算符。
 
    ![](assets/s_advuser_report_listgroup_0202.png)
 
-1. 单击 **[!UICONTROL Detail]** 按钮以选择计数将关注的字段，然后关闭配置窗口。
+1. 单击&#x200B;**[!UICONTROL Detail]**&#x200B;按钮以选择计数将关注的字段，然后关闭配置窗口。
 
    ![](assets/s_advuser_report_listgroup_030.png)
 
@@ -447,7 +447,7 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
 ### 第6步 — 查看报表 {#step-6---viewing-the-report}
 
-要查看此配置的结果，请单击 **[!UICONTROL Preview]** 选项卡，然后选择 **[!UICONTROL Global]** 选项。
+要查看此配置的结果，请单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Global]**&#x200B;选项。
 
 报表的第一页详细介绍了数据库中包含的所有投放的列表。
 
@@ -463,4 +463,4 @@ A **[!UICONTROL List with group]** 使用类型表可以分组表中的数据并
 
 这些类型报表的配置与描述性分析向导使用的配置类似。 有关详细信息，请参见[此页面](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)。
 
-有关创建数据透视表的详细信息，请参阅 [本节](../../reporting/using/ac-cubes.md).
+有关创建数据透视表的详细信息，请参阅[此节](../../reporting/using/ac-cubes.md)。

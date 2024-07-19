@@ -18,10 +18,10 @@ ht-degree: 0%
 
 
 
-使用营销活动 **联合数据访问** (FDA)用于处理存储在外部数据库中的信息的选项。 请按照以下步骤配置对Sybase IQ的访问权限。
+使用Campaign **联合数据访问** (FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对Sybase IQ的访问权限。
 
-1. 配置 [sybase IQ数据库](#configuring-sybase)
-1. 配置Sybase IQ [外部帐户](#sybase-external) 在Campaign中
+1. 配置[Sybase IQ数据库](#configuring-sybase)
+1. 在Campaign中配置Sybase IQ[外部帐户](#sybase-external)
 
 ## sybase IQ配置 {#configuring-sybase}
 
@@ -29,15 +29,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->开始之前，请确保 **unixodbc** 包位于服务器上。
+>开始之前，请确保&#x200B;**unixodbc**&#x200B;包位于服务器上。
 
-1. 安装 **iq_odbc**. 安装结束时可能会出错。 可以忽略此错误。
+1. 安装&#x200B;**iq_odbc**。 安装结束时可能会出错。 可以忽略此错误。
 
-1. 安装 **iq_client_common**. 安装结束时，可能会出现Java错误。 可以忽略此错误。
+1. 安装&#x200B;**iq_client_common**。 安装结束时，可能会出现Java错误。 可以忽略此错误。
 
 1. 配置ODBC驱动程序。 配置可以在标准文件中执行： /etc/odbc.ini用于常规参数，/etc/odbcinst.ini用于声明驱动程序：
 
-   * **/etc/odbc.ini** (替换类似于 `<server_alias>` 个字符)：
+   * **/etc/odbc.ini** （将诸如`<server_alias>`个字符之类的值替换为您自己的值）：
 
      ```
      [ODBC Data Sources]
@@ -71,17 +71,17 @@ ht-degree: 0%
 
 利用Sybase IQ外部帐户，可将Campaign实例连接到Sybase IQ外部数据库。
 
-1. 来自营销活动 **[!UICONTROL Explorer]**，单击 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. 在营销活动&#x200B;**[!UICONTROL Explorer]**&#x200B;中，单击&#x200B;**[!UICONTROL Administration]**“>”**[!UICONTROL Platform]**“>”**[!UICONTROL External accounts]**。
 
-1. 单击 **[!UICONTROL New]** 并选择 **[!UICONTROL External database]** 作为 **[!UICONTROL Type]**.
+1. 单击&#x200B;**[!UICONTROL New]**&#x200B;并选择&#x200B;**[!UICONTROL External database]**&#x200B;作为&#x200B;**[!UICONTROL Type]**。
 
-1. 配置 **[!UICONTROL Sybase IQ]** 外部帐户，您必须指定：
+1. 要配置&#x200B;**[!UICONTROL Sybase IQ]**&#x200B;外部帐户，您必须指定：
 
-   * **[!UICONTROL Type]**：ODBC(Sybase ASE，Sybase IQ)
+   * **[!UICONTROL Type]**： ODBC (Sybase ASE，Sybase IQ)
 
-   * **[!UICONTROL Server]**：对应于ODBC连接(`<server_alias>`)。 不一定是服务器本身的名称。
+   * **[!UICONTROL Server]**：对应于步骤5中定义的ODBC连接(`<server_alias>`)。 不一定是服务器本身的名称。
 
-   * **[!UICONTROL Account]**：用户名称
+   * **[!UICONTROL Account]**：用户的名称
 
    * **[!UICONTROL Password]**：用户帐户密码
 

@@ -33,8 +33,8 @@ ht-degree: 5%
    * 浏览数据库中的数据并定义测量。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。
    * 向现有报告添加指标。 可在[此小节](../../reporting/using/about-reports-creation-in-campaign.md)中了解详情。
    * 查看数据库中的数据。 可在[此小节](../../reporting/using/about-descriptive-analysis.md)中了解详情。
-   * 创建新的投放报告。 了解详情 [在此部分中](../../reporting/using/about-reports-creation-in-campaign.md))，
-   * 从Adobe Campaign数据库导出数据(通过工作流，请参阅 [本节](../../workflow/using/about-workflows.md)
+   * 创建新的投放报告。 在本节](../../reporting/using/about-reports-creation-in-campaign.md)中了解更多[，
+   * 从Adobe Campaign数据库导出数据(通过工作流，请参阅[此部分](../../workflow/using/about-workflows.md)
    * 创建数据透视表。 可在[此小节](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)中了解详情。
    * 浏览汇总的数据。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。
    * 使用向导分析数据。 可在[此小节](../../reporting/using/about-descriptive-analysis.md)中了解详情。
@@ -101,7 +101,7 @@ if(string(ctx@_historyId)!==""))
 
   要快速查找已编制索引的字段，请在Adobe Campaign界面中查看列的名称：如果字段已编制索引，排序箭头将以红色加下划线。
 
-  有关索引的更多信息，请参阅 [本节](../../configuration/using/data-model-best-practices.md#indexes).
+  有关索引的更多信息，请参阅[此章节](../../configuration/using/data-model-best-practices.md#indexes)。
 
 * 确保报告可扩展：数据量可能会随着时间的推移而显着增加。
 
@@ -109,8 +109,8 @@ if(string(ctx@_historyId)!==""))
 
   最后，需要知道数据清除延迟，并在必要时对其进行调整以方便数据操作。
 
-  有关清理和数据保留的更多信息，请参阅 [本节](../../configuration/using/data-model-best-practices.md#data-retention).
+  有关清理和数据保留的更多信息，请参阅[此部分](../../configuration/using/data-model-best-practices.md#data-retention)。
 
 ### 导出您的报告 {#exporting-reports}
 
-有关专门用于导出报告的Recommendations的详细信息，请参见 [本节](../../reporting/using/actions-on-reports.md#exporting-a-report).
+[此部分](../../reporting/using/actions-on-reports.md#exporting-a-report)中详细介绍了特定于导出报告的Recommendations。

@@ -20,27 +20,27 @@ ht-degree: 2%
 
 Marketing Analytics使创建报告以及通过多维数据集识别和选择数据库中的数据变得更轻松。 这使您能够：
 
-* 根据多维数据集创建报告。 此处详细说明了此过程： [在报表中浏览数据](#exploring-the-data-in-a-report).
-* 收集数据库中的数据，并将其分组到列表中，例如，识别和构建目标和投放。 有关详细信息，请参见 [构建目标群体](#building-a-target-population).
-* 将透视表插入报表中，引用其中的现有多维数据集。 有关详细信息，请参见 [在报表中插入数据透视表](#inserting-a-pivot-table-into-a-report).
+* 根据多维数据集创建报告。 此处详细介绍此过程：[浏览报告中的数据](#exploring-the-data-in-a-report)。
+* 收集数据库中的数据，并将其分组到列表中，例如，识别和构建目标和投放。 有关详细信息，请参阅[生成目标群体](#building-a-target-population)。
+* 将透视表插入报表中，引用其中的现有多维数据集。 有关详细信息，请参阅[将透视表插入报表](#inserting-a-pivot-table-into-a-report)。
 
 >[!NOTE]
 >
->要创建或修改多维数据集，必须使用Marketing Analytics。 有关详细信息，请参见 [关于多维数据集](../../reporting/using/ac-cubes.md).
+>要创建或修改多维数据集，必须使用Marketing Analytics。 有关详细信息，请参阅[关于多维数据集](../../reporting/using/ac-cubes.md)。
 
 ## 在报表中浏览数据 {#exploring-the-data-in-a-report}
 
 ### 第1步 — 基于多维数据集创建报告 {#step-1---creating-a-report-based-on-a-cube}
 
-要基于多维数据集创建报表，请单击 **[!UICONTROL Create]** 中的按钮 **[!UICONTROL Reports]** 选项卡，然后选择要使用的立方。
+要基于多维数据集创建报告，请单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Create]**&#x200B;按钮，然后选择要使用的多维数据集。
 
-此处详细说明了此过程： [基于多维数据集创建报告](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
+此处详细描述了此过程：[基于多维数据集创建报告](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube)。
 
 ### 第2步 — 选择行和列 {#step-2---selecting-lines-and-columns}
 
 默认显示显示多维数据集的前两个维（在本例中是年龄和城市）。
 
-此 **[!UICONTROL Add]** 每个轴上的按钮允许您添加维度。
+每个轴上的&#x200B;**[!UICONTROL Add]**&#x200B;按钮允许您添加维度。
 
 ![](assets/s_advuser_cube_in_report_03.png)
 
@@ -55,7 +55,7 @@ Marketing Analytics使创建报告以及通过多维数据集识别和选择数�
 
    参数取决于所选维的数据类型。
 
-   例如，对于日期，可以使用多个级别。 有关详细信息，请参见 [显示度量](../../reporting/using/concepts-and-methodology.md#displaying-measures).
+   例如，对于日期，可以使用多个级别。 有关详细信息，请参阅[显示度量](../../reporting/using/concepts-and-methodology.md#displaying-measures)。
 
    在此案例中，提供了以下选项：
 
@@ -69,9 +69,9 @@ Marketing Analytics使创建报告以及通过多维数据集识别和选择数�
    * 按升序(a-z， 0-9)或降序(z-a， 9-0)显示值。
    * 更改加载时要显示的列数（默认情况下： 200）。
 
-1. 单击 **[!UICONTROL Ok]** 确认：将维添加到现有维。
+1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;确认：该维度已添加到现有维度。
 
-   表格上方的黄色横幅显示您已进行更改：单击 **[!UICONTROL Save]** 按钮以保存它们。
+   表上方的黄色横幅显示您已进行更改：单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮进行保存。
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
@@ -85,7 +85,7 @@ Marketing Analytics使创建报告以及通过多维数据集识别和选择数�
 
    ![](assets/s_advuser_cube_in_report_05.png)
 
-1. 此 **[!UICONTROL Use a measure]** 按钮允许您选择现有度量之一。
+1. 使用&#x200B;**[!UICONTROL Use a measure]**&#x200B;按钮可选择现有度量之一。
 
    ![](assets/s_advuser_cube_in_report_08.png)
 
@@ -93,13 +93,13 @@ Marketing Analytics使创建报告以及通过多维数据集识别和选择数�
 
    ![](assets/s_advuser_cube_in_report_09.png)
 
-   您还可以通过以下方式配置整体测量 **[!UICONTROL Edit the configuration of the pivot table]** 图标。
+   通过标题中的&#x200B;**[!UICONTROL Edit the configuration of the pivot table]**&#x200B;图标，还可以使用整体度量值配置。
 
    ![](assets/s_advuser_cube_in_report_config_02.png)
 
-   然后，您可以选择是否显示度量标签。 有关详细信息，请参见 [配置显示](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
+   然后，您可以选择是否显示度量标签。 有关详情，请参阅[配置显示区](../../reporting/using/concepts-and-methodology.md#configuring-the-display)。
 
-1. 可以用现有的措施建立新的措施。 为此，请单击 **[!UICONTROL Create a measure]** 并进行配置。
+1. 可以用现有的措施建立新的措施。 为此，请单击&#x200B;**[!UICONTROL Create a measure]**&#x200B;并进行配置。
 
    ![](assets/s_advuser_cube_in_report_config_02a.png)
 
@@ -117,9 +117,9 @@ Marketing Analytics使创建报告以及通过多维数据集识别和选择数�
 
    ![](assets/s_advuser_cube_in_report_config_02b.png)
 
-   创建测量后，可以对其进行编辑，并在必要时更改其配置。 要执行此操作，请单击 **[!UICONTROL Measures]** 按钮，然后转到要编辑的度量的选项卡。
+   创建测量后，可以对其进行编辑，并在必要时更改其配置。 为此，请单击&#x200B;**[!UICONTROL Measures]**&#x200B;按钮，然后转到要编辑的度量的选项卡。
 
-   然后单击 **[!UICONTROL Edit the dynamic measure]** 以访问设置菜单。
+   然后单击&#x200B;**[!UICONTROL Edit the dynamic measure]**&#x200B;以访问设置菜单。
 
 ## 构建目标群体 {#building-a-target-population}
 
@@ -129,23 +129,23 @@ Marketing Analytics使创建报告以及通过多维数据集识别和选择数�
 
 要将群体分组到列表中，请应用以下步骤：
 
-1. 单击包含要收集的群体的单元格以将其选定，然后单击 **[!UICONTROL Add to cart]** 图标。
+1. 单击包含要收集的群体的单元格以选择它们，然后单击&#x200B;**[!UICONTROL Add to cart]**&#x200B;图标。
 
    ![](assets/s_advuser_cube_in_report_config_02c.png)
 
    为此，可根据需要多次收集各种用户档案
 
-1. 单击 **[!UICONTROL Show cart]** 按钮以在运行导出之前查看其内容。
+1. 单击&#x200B;**[!UICONTROL Show cart]**&#x200B;按钮以查看其内容，然后再运行导出。
 
    ![](assets/s_advuser_cube_in_report_config_02d.png)
 
-1. 此 **[!UICONTROL Export]** 按钮允许您将购物车中的项目分组到列表中。
+1. 通过&#x200B;**[!UICONTROL Export]**&#x200B;按钮，可将购物车中的项目分组到列表中。
 
    您需要指定列表名称和要执行的导出类型。
 
    ![](assets/s-advuser_cube_in_report_config_02e.png)
 
-   单击 **[!UICONTROL Start]** 以运行导出。
+   单击&#x200B;**[!UICONTROL Start]**&#x200B;以运行导出。
 
 1. 导出完成后，将显示一条消息，确认其执行和已处理的记录数。
 
@@ -153,7 +153,7 @@ Marketing Analytics使创建报告以及通过多维数据集识别和选择数�
 
    您可以保存购物车的内容或将其清空。
 
-   相关列表可通过 **[!UICONTROL Profiles and targets]** 选项卡。
+   通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡访问相关列表。
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
@@ -165,8 +165,8 @@ Marketing Analytics使创建报告以及通过多维数据集识别和选择数�
 
    ![](assets/s_advuser_cube_in_report_01.png)
 
-1. 在 **[!UICONTROL Data]** 选项卡中，选择一个立方以处理它包含的维并显示计算的度量。
+1. 在该页的&#x200B;**[!UICONTROL Data]**&#x200B;选项卡中，选择一个多维数据集以处理它包含的维并显示计算的度量。
 
    ![](assets/s_advuser_cube_in_report_02.png)
 
-   这样，您就可以构建要显示的报表。 有关详细信息，请参见 [第2步 — 选择行和列](#step-2---selecting-lines-and-columns).
+   这样，您就可以构建要显示的报表。 有关详细信息，请参阅[第2步 — 选择行和列](#step-2---selecting-lines-and-columns)。

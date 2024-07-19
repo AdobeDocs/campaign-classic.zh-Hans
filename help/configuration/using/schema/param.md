@@ -7,7 +7,7 @@ exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -45,12 +45,12 @@ param：==help
 
 ## 属性说明 {#attribute-description-12}
 
-* **desc（字符串）**：与 `<param>` 元素。
-* **inout（字符串）**：此属性定义参数是否在SOAP调用的输入(in)或输出(out)。 如果未指定此属性，则默认参数为输入(&quot;@inout=in&quot;)。
-* **标签（字符串）**： `<param>` 标签
-* **可本地化（字符串）**：如果激活，则此属性会告知收集工具恢复“@label”属性的值以供翻译（内部使用）。
-* **名称(MNTOKEN)**：的内部名称 `<param>`
-* **类型（字符串）**：此属性定义 `<param>` 元素
+* **desc （字符串）**：与`<param>`元素有关的描述。
+* **inout （字符串）**：此属性定义参数是否在SOAP调用的输入(in)或输出(out)处。 如果未指定此属性，则默认参数为输入(&quot;@inout=in&quot;)。
+* **标签（字符串）**： `<param>`标签
+* **可本地化（字符串）**：如果激活此属性，则此属性会告知收藏集工具恢复“@label”属性的值以进行翻译（内部使用）。
+* **name (MNTOKEN)**： `<param>`的内部名称
+* **类型（字符串）**：此属性定义`<param>`元素的类型
 
   可用类型列表：
 

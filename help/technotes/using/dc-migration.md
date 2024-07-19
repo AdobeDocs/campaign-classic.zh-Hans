@@ -19,25 +19,25 @@ ht-degree: 2%
 
 ## 上下文
 
-作为尊贵的Adobe Campaign Classic客户，我们致力于为您提供最佳的体验和价值。 多年来，我们认识到在云中托管客户的价值和可靠性。  作为我们的 [年度升级计划](../../rn/using/rn-overview.md#yearly-upgrade)，我们正在将所有客户转移到AdobeManaged Services (AWS上的Public Cloud)中，以提供更好、更可靠的服务。
+作为尊贵的Adobe Campaign Classic客户，我们致力于为您提供最佳的体验和价值。 多年来，我们认识到在云中托管客户的价值和可靠性。  作为我们[年度升级计划](../../rn/using/rn-overview.md#yearly-upgrade)的一部分，我们正在将所有客户转移到AdobeManaged Services (AWS上的公共云)以提供更好、更可靠的服务。
 
 该计划有三个主要目标：
 
 * 通过将基础架构迁移到安全的现代化环境(AWS)，解决已识别的安全漏洞。
-* 消除潜在的繁琐扩展过程，提供对以下内容的访问： [增强的MTA](../../delivery/using//sending-with-enhanced-mta.md) 并改进所有维护服务级别。
+* 消除潜在的繁琐扩展过程，提供对我们[增强型MTA](../../delivery/using//sending-with-enhanced-mta.md)的访问权限，并提高所有维护服务级别。
 * 为实例做好准备，以迎接未来的Adobe Campaign Classic，包括更自动化、更定期的升级，这些升级不需要那么多的资源，也不需要那么多的时间。
 
 ### 词汇表
 
-* **内部版本升级**  — 当Adobe Campaign Classic软件更新到最新的安全内部版本号时，但它将保持相同的主/次内部版本级别。 例如：Campaign v7 20.2.3内部版本9182到Campaign v7 21.2.5内部版本9188。 [了解详情](../../platform/using/faq-build-upgrade.md)。
-* **MID/RT**  — 在Adobe云上托管的消息执行服务器（MID用于批量活动，RT用于实时单一消息）
-* **年度升级计划**  — 此计划可提供更高的安全性、更好的支持、增强的维护和稳定性。 它还可以使未来的升级更轻松，并允许访问Campaign中的新功能。  [了解详情](../../rn/using/rn-overview.md#yearly-upgrade)。
+* **内部版本升级** — 当Adobe Campaign Classic软件更新到最新的安全内部版本号时，但仍保留相同的主/次内部版本级别。 例如：Campaign v7 20.2.3内部版本9182到Campaign v7 21.2.5内部版本9188。 [了解详情](../../platform/using/faq-build-upgrade.md)。
+* **MID/RT** — 托管在Adobe云上的消息执行服务器（MID用于批处理活动，RT用于实时单一消息）
+* **年度升级计划** — 此计划提供了改进的安全性、改进的支持、增强的维护和稳定性。 它还可以使未来的升级更轻松，并允许访问Campaign中的新功能。  [了解详情](../../rn/using/rn-overview.md#yearly-upgrade)。
 * **AWS** - Amazon Web Services (Amazon Public Cloud)
-* **SFTP**  — 安全文件传输协议。 [了解详情](../../platform/using/sftp-server-usage.md)。
+* **SFTP** — 安全文件传输协议。 [了解详情](../../platform/using/sftp-server-usage.md)。
 
 
 >[!NOTE]
->将Campaign Classicv7迁移到公共云会影响客户使用 **AdobeManaged Services** 仅限。
+>将Campaign Classicv7迁移到公共云仅会影响使用&#x200B;**AdobeManaged Services**&#x200B;的客户。
 
 
 ## 好处
@@ -67,7 +67,7 @@ ht-degree: 2%
 1. 更高的电子邮件发送容量。 在新数据中心托管的实例将可能受益于电子邮件交付的专用基础设施。 这可能会导致电子邮件投放速度加快或允许使用更少的发送IP。
 1. 更好的硬件可扩展性。 增加硬件资源的速度可以快得多。 从技术上讲，这大约是1小时数量级，而不是几天数量级。
 
-**每年升级使未来的升级更轻松**
+**每年升级使未来的升级更容易**
 
 1. 您的组织等待升级的时间越长，升级过程就越复杂，并且面临漏洞的可能性也会增加（尤其是在从旧版本迁移时）。
 1. 借助Campaign年度升级（曾经是Gold Standard计划），您的实例将会实现现代化，并准备好接收更多自动化和定期的更新，无需过多的手动干预和过多的资源。
@@ -78,24 +78,24 @@ ht-degree: 2%
 
 为了开始这一工作，需要此迁移的帐户将收到Adobe的电子邮件通信，其中提供了时间表和文档访问权限。 这将通知您计划迁移您的帐户。
 
-迁移可以由以下方式启动 [打开新的客户关怀支持票证](https://experienceleague.adobe.com/?support-solution=Campaign#support). 使用主题行“迁移到AWS”。
+可以通过[打开新的客户关怀支持票证](https://experienceleague.adobe.com/?support-solution=Campaign#support)来启动迁移。 使用主题行“迁移到AWS”。
 
 ### 此迁移是否为强制性的？
 
-迁移到云的过程是 **的第一步 [年度升级计划](../../rn/using/rn-overview.md#yearly-upgrade)** Adobe Campaign的URL值。 如果您托管的数据中心不是公共云(AWS)，则必须进行此迁移。
+向云的迁移是&#x200B;**执行Adobe Campaign实例的[年度升级计划](../../rn/using/rn-overview.md#yearly-upgrade)**&#x200B;的第一步。 如果您托管的数据中心不是公共云(AWS)，则必须进行此迁移。
 
-Managed Services云Adobe托管在Amazon Web Services (AWS)上，它是一个现代化、安全和优化的环境。 [了解有关AWS的更多信息](https://aws.amazon.com/application-hosting/benefits/).
+Managed Services云Adobe托管在Amazon Web Services (AWS)上，它是一个现代化、安全和优化的环境。 [进一步了解AWS](https://aws.amazon.com/application-hosting/benefits/)。
 
 Adobe计划停用旧式数据中心，在该数据中心运行的Adobe Campaign实例必须转移到新的参考数据中心AWS。
 
-这是前进的重要途径，因为您的当前位置可能会显示给 **安全和性能漏洞**.
+这是向前发展的关键途径，因为当前位置可能会出现&#x200B;**安全和性能漏洞**。
 
-此外，此迁移现在是 **任何未来版本升级的先决条件** 您的Adobe Campaign的。 旧式数据中心不再可以进行内部版本升级。
+此外，此迁移现在是Adobe Campaign任何未来内部版本升级&#x200B;**的**&#x200B;先决条件。 旧式数据中心不再可以进行内部版本升级。
 
 Adobe致力于保护您的数据安全，并帮助您走上Adobe Campaign的未来。 我们需要您的合作，共同取得成功！
 
 
-**我们组织了一个团队** ，其中包括专业的客户关怀代表、客户成功经理、产品经理、工程师、技术运营专家以及产品顾问，他们可提供帮助并确保实现流畅而顺畅的体验。 我们致力于确保您拥有相关项目和联系信息。
+**我们已组织了一支由专业的客户关怀代表、客户成功经理、产品经理、工程师、技术运营专家以及产品顾问组成的团队**，以提供帮助并确保流畅而顺畅的体验。 我们致力于确保您拥有相关项目和联系信息。
 
 我们投入了巨大的精力开发技术，以便实现快速、无缝和安全的迁移。
 
@@ -105,7 +105,7 @@ Adobe致力于保护您的数据安全，并帮助您走上Adobe Campaign的未�
 * 数据集成的IP更改。
 * 新发送IP的可投放性提升。 不过，该计划旨在让这一业务运营变得透明，不同于在上线期间的最初升级。
 
-请参阅Campaign迁移至以了解详情 [公共云常见问题解答](dc-migration-faq.md).
+请参阅Campaign迁移到[公共云常见问题解答](dc-migration-faq.md)以了解详情。
 
 
 ## 迁移到公共云的路径

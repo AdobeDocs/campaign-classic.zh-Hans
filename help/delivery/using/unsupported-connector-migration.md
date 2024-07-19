@@ -33,33 +33,33 @@ ht-degree: 1%
 * **[!UICONTROL O2]**
 * **[!UICONTROL iOS]**
 
-已弃用的功能仍然可用并受支持，但不会进一步增强它们。 我们建议使用 **[!UICONTROL Extended generic SMPP]** 连接器。
+已弃用的功能仍然可用并受支持，但不会进一步增强它们。 我们建议使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器。
 
-有关已弃用和已删除功能的详细信息，请参阅此 [页面](../../rn/using/deprecated-features.md).
+有关已弃用和已删除功能的详细信息，请参阅此[页面](../../rn/using/deprecated-features.md)。
 
-旧的SMS连接器使用的Java SMS连接器会重载Web进程。 迁移到新 **[!UICONTROL Extended Generic SMPP]** 连接器会将此负载移动到可以支持它的MTA。
+旧的SMS连接器使用的Java SMS连接器会重载Web进程。 迁移到新&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;连接器会将此负载移动到可以支持它的MTA。
 
 ## 迁移到扩展的通用SMPP连接器 {#migrating-extended-generic-smpp}
 
 >[!CAUTION]
 >
->即使您可以调换参数，配置 **[!UICONTROL Extended Generic SMPP]** 连接器要求您与提供商联系，提供商将为您提供填写其余参数所需的信息。 有关详细信息，请参见此 [ 页面](sms-protocol.md)。
+>即使您可以转换参数，配置&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;连接器也需要与提供商联系，提供商将为您提供填写其余参数所需的信息。 有关详细信息，请参见此 [ 页面](sms-protocol.md)。
 
-首先，您需要创建一个 **[!UICONTROL Extended Generic SMPP]** 然后，您或许能够转置某些参数。 您可以在此处找到详细步骤 [页面](sms-set-up.md#creating-an-smpp-external-account).
+首先，您需要创建一个新的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;外部帐户，然后您可能能够转置某些参数。 您可以在此[页面](sms-set-up.md#creating-an-smpp-external-account)中找到详细步骤。
 
-现在，您需要填写 **[!UICONTROL Mobile]** 新创建的选项卡 **[!UICONTROL Extended Generic SMPP]** 外部帐户，具体取决于您之前的连接器。
+现在，您需要从新创建的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;外部帐户的&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中填写参数，具体取决于您之前的连接器。
 
 ### 从通用连接器 {#from-generic-connector}
 
-当选择 **[!UICONTROL Generic]** 连接器时，您应该具有适应各种情况的自定义JavaScript连接器。
+选择&#x200B;**[!UICONTROL Generic]**&#x200B;连接器时，您应该具有适应各种情况的自定义JavaScript连接器。
 
-如果您知道此连接器已在使用SMPP协议，则可以迁移到 **[!UICONTROL Extended Generic SMPP]** 连接器。 如果不支持，请与您的提供商联系，了解他们是否支持SMPP协议，并在顾问的帮助下设置新连接器。
+如果您知道此连接器已在使用SMPP协议，则可以迁移到&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;连接器。 如果不支持，请与您的提供商联系，了解他们是否支持SMPP协议，并在顾问的帮助下设置新连接器。
 
-来自您的 **[!UICONTROL Generic]** 连接器，您可以调换到新创建的 **[!UICONTROL Extended SMPP]** 帐户：
+通过您的&#x200B;**[!UICONTROL Generic]**&#x200B;连接器，您可以转接到新创建的&#x200B;**[!UICONTROL Extended SMPP]**&#x200B;帐户：
 
 ![](assets/smpp_generic.png)
 
-在 **[!UICONTROL Connection Settings]** 选项卡：
+在&#x200B;**[!UICONTROL Connection Settings]**&#x200B;选项卡中：
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -68,11 +68,11 @@ ht-degree: 1%
 
 ### 来自通用SMPP连接器 {#from-generic-smpp-connector}
 
-来自您的 **[!UICONTROL Generic SMPP]** 连接器，您可以调换到新创建的 **[!UICONTROL Extended SMPP]** 帐户：
+通过您的&#x200B;**[!UICONTROL Generic SMPP]**&#x200B;连接器，您可以转接到新创建的&#x200B;**[!UICONTROL Extended SMPP]**&#x200B;帐户：
 
 ![](assets/smpp_generic_2.png)
 
-在 **[!UICONTROL Connection Settings]** 选项卡：
+在&#x200B;**[!UICONTROL Connection Settings]**&#x200B;选项卡中：
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -80,7 +80,7 @@ ht-degree: 1%
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-在 **[!UICONTROL SMPP Channel Settings]** 选项卡：
+在&#x200B;**[!UICONTROL SMPP Channel Settings]**&#x200B;选项卡中：
 
 * **[!UICONTROL Source number]**
 * **[!UICONTROL Source NPI]**
@@ -88,22 +88,22 @@ ht-degree: 1%
 * **[!UICONTROL Source TON]**
 * **[!UICONTROL Destination TON]**
 
-在 **[!UICONTROL Mapping of Encoding]** 选项卡：
+在&#x200B;**[!UICONTROL Mapping of Encoding]**&#x200B;选项卡中：
 
 * **[!UICONTROL Outbound SMS coding]**
 
-在 **[!UICONTROL SMSC specificities]** 选项卡：
+在&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;选项卡中：
 
-* **[!UICONTROL Coding when sending]** 对应于 **[!UICONTROL ID Format in MT acknowledgement]**
-* **[!UICONTROL Coding when receiving]** 对应于 **[!UICONTROL ID Format in the SR]**
+* **[!UICONTROL Coding when sending]**&#x200B;对应于&#x200B;**[!UICONTROL ID Format in MT acknowledgement]**
+* **[!UICONTROL Coding when receiving]**&#x200B;对应于&#x200B;**[!UICONTROL ID Format in the SR]**
 
 ### 从Sybase365连接器 {#from-sybase}
 
-来自您的 **[!UICONTROL Sybase365]** 连接器，您可以调换到新创建的 **[!UICONTROL Extended SMPP]** 帐户：
+通过您的&#x200B;**[!UICONTROL Sybase365]**&#x200B;连接器，您可以转接到新创建的&#x200B;**[!UICONTROL Extended SMPP]**&#x200B;帐户：
 
 ![](assets/smpp_3.png)
 
-在 **[!UICONTROL Connection Settings]** 选项卡：
+在&#x200B;**[!UICONTROL Connection Settings]**&#x200B;选项卡中：
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -113,11 +113,11 @@ ht-degree: 1%
 
 ### 来自CLX连接器 {#from-clx}
 
-来自您的 **[!UICONTROL CLX]** 连接器，您可以调换到新创建的 **[!UICONTROL Extended SMPP]** 帐户：
+通过您的&#x200B;**[!UICONTROL CLX]**&#x200B;连接器，您可以转接到新创建的&#x200B;**[!UICONTROL Extended SMPP]**&#x200B;帐户：
 
 ![](assets/smpp_4.png)
 
-在 **[!UICONTROL Connection Settings]** 选项卡：
+在&#x200B;**[!UICONTROL Connection Settings]**&#x200B;选项卡中：
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -125,22 +125,22 @@ ht-degree: 1%
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-在 **[!UICONTROL SMPP Channel Settings]** 选项卡：
+在&#x200B;**[!UICONTROL SMPP Channel Settings]**&#x200B;选项卡中：
 
 * **[!UICONTROL Source number]**
 
-在 **[!UICONTROL SMSC specificities]** 选项卡：
+在&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;选项卡中：
 
-* **[!UICONTROL Coding when sending]** 对应于 **[!UICONTROL ID Format in MT acknowledgement]**
-* **[!UICONTROL Coding when receiving]** 对应于 **[!UICONTROL ID Format in the SR]**
+* **[!UICONTROL Coding when sending]**&#x200B;对应于&#x200B;**[!UICONTROL ID Format in MT acknowledgement]**
+* **[!UICONTROL Coding when receiving]**&#x200B;对应于&#x200B;**[!UICONTROL ID Format in the SR]**
 
 ### 从Tele2连接器 {#from-tele2}
 
-来自您的 **[!UICONTROL Tele2]** 连接器，您可以调换到新创建的 **[!UICONTROL Extended SMPP]** 帐户：
+通过您的&#x200B;**[!UICONTROL Tele2]**&#x200B;连接器，您可以转接到新创建的&#x200B;**[!UICONTROL Extended SMPP]**&#x200B;帐户：
 
 ![](assets/smpp_6.png)
 
-在 **[!UICONTROL Connection Settings]** 选项卡：
+在&#x200B;**[!UICONTROL Connection Settings]**&#x200B;选项卡中：
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -148,24 +148,24 @@ ht-degree: 1%
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-在 **[!UICONTROL SMPP Channel Settings]** 选项卡：
+在&#x200B;**[!UICONTROL SMPP Channel Settings]**&#x200B;选项卡中：
 
 * **[!UICONTROL Source number]**
 * **[!UICONTROL Source NPI]**
 * **[!UICONTROL Destination NPI]**
 * **[!UICONTROL Source TON]**
 
-在 **[!UICONTROL Mapping of Encoding]** 选项卡：
+在&#x200B;**[!UICONTROL Mapping of Encoding]**&#x200B;选项卡中：
 
 * **[!UICONTROL Outbound SMS coding]**
 
 ### 从O2连接器 {#from-O2}
 
-来自您的 **[!UICONTROL O2]** 连接器，您可以调换到新创建的 **[!UICONTROL Extended SMPP]** 帐户：
+通过您的&#x200B;**[!UICONTROL O2]**&#x200B;连接器，您可以转接到新创建的&#x200B;**[!UICONTROL Extended SMPP]**&#x200B;帐户：
 
 ![](assets/smpp_5.png)
 
-在 **[!UICONTROL Connection Settings]** 选项卡：
+在&#x200B;**[!UICONTROL Connection Settings]**&#x200B;选项卡中：
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -173,7 +173,7 @@ ht-degree: 1%
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-在 **[!UICONTROL SMPP Channel Settings]** 选项卡：
+在&#x200B;**[!UICONTROL SMPP Channel Settings]**&#x200B;选项卡中：
 
 * **[!UICONTROL Source number]**
 * **[!UICONTROL Source NPI]**

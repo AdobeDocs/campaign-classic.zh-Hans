@@ -30,19 +30,19 @@ ht-degree: 2%
 
 要在Adobe Campaign中配置此集成，请执行以下步骤：
 
-1. 安装 **[!UICONTROL Integration with the Adobe Experience Cloud]** 内置包。 [了解详情](../../platform/using/working-with-data-packages.md#importing-packages)
+1. 安装&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;内置包。 [了解详情](../../platform/using/working-with-data-packages.md#importing-packages)
 
    通过此包，您可以通过Digital Asset Manager访问共享资产。
 
 1. 启用通过IMS(Adobe ID连接服务)的连接，以在您的电子邮件中使用通过Adobe Experience Cloud共享的图像。 [了解详情](../../integrations/using/about-adobe-id.md)
-1. 浏览至 **[!UICONTROL Administration > Platform > Options]** 要为Adobe Target配置服务器和组织（租户）选项，请执行以下操作：
+1. 浏览到&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;以配置Adobe Target的服务器和组织（租户）选项：
 
    ![](assets/tar_options.png)
 
-   * **[!UICONTROL TNT_EdgeServer]** ：用于集成的Adobe Target服务器。 默认情况下已选中此选项。 此值对应于Adobe Target **[!UICONTROL Domain Server]**，后跟值 **/m2**. 例如： **tt.omtrdc.net/m2**.
-   * **[!UICONTROL TNT_TenantName]** ：Adobe Target组织名称。 此值对应于Adobe Target的名称 **[!UICONTROL Client]**.
+   * **[!UICONTROL TNT_EdgeServer]** ：用于集成的Adobe Target服务器。 默认情况下已选中此选项。 此值对应于Adobe Target **[!UICONTROL Domain Server]**，后跟值&#x200B;**/m2**。 例如： **tt.omtrdc.net/m2**。
+   * **[!UICONTROL TNT_TenantName]** ：Adobe Target组织名称。 此值对应于Adobe Target **[!UICONTROL Client]**&#x200B;的名称。
 
 
 >[!CAUTION]
 >
->对于混合和托管体系结构，必须在所有服务器上设置这些选项，包括 [中间源服务器](../../installation/using/mid-sourcing-server.md) 和 [执行实例](../../message-center/using/configuring-instances.md#execution-instance).
+>对于混合和托管架构，必须在所有服务器上设置这些选项，包括[中间源服务器](../../installation/using/mid-sourcing-server.md)和[执行实例](../../message-center/using/configuring-instances.md#execution-instance)。

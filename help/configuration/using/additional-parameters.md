@@ -18,10 +18,10 @@ ht-degree: 0%
 
 您的Adobe Campaign平台提供两个TRANSACTION类型的Web跟踪参数作为标准：
 
-* **数量**：表示交易金额，
-* **文章**：表示交易记录的项数。
+* **amount**：表示交易金额，
+* **article**：表示事务中的项目数。
 
-这些参数在 **nms：webTrackingLog** 架构，和是报表中看到的一些指标。
+这些参数在&#x200B;**nms：webTrackingLog**&#x200B;架构中定义，是报表中看到的一些指标。
 
 要定义其他参数，必须扩展此架构。
 
@@ -49,11 +49,11 @@ ht-degree: 0%
 >
 >增加要考虑的最大字符数可能会影响平台的Web跟踪性能。
 
-为此，请修改 **webTrackingParamSize** 的属性 **`<trackinglogd>`** 中的元素 **serverConf.xml** 文件。 此文件保存在 **会议** Adobe Campaign安装目录的子目录。
+为此，请修改&#x200B;**serverConf.xml**&#x200B;文件中&#x200B;**`<trackinglogd>`**&#x200B;元素的&#x200B;**webTrackingParamSize**&#x200B;属性。 此文件保存在Adobe Campaign安装目录的&#x200B;**conf**&#x200B;子目录中。
 
 **示例**：
 
-默认值为64个字符。 通过此值，可将 **数量** 和 **文章** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxx&quot;)标准参数。
+默认值为64个字符。 此值允许您考虑&#x200B;**amount**&#x200B;和&#x200B;**article** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxx&quot;)标准参数。
 
 通过考虑上述扩展架构示例中指示的两个参数（名称大小+值大小），您可以修改配置以考虑100个字符(&quot;amount=xxxxxxxx&amp;article=xxxxxxxx&amp;mode=xxxxxxxxxx&amp;code=xxxxx&quot;)。
 
@@ -67,22 +67,22 @@ webTrackingParamSize="64"/>
 修改配置后，您必须：
 
 * 停止托管重定向模块的Web服务器（Apache、IIS等），
-* 停止Adobe Campaign服务器： **网络停止nlserver6** 在Windows中， **/etc/init.d/nlserver6停止** 在Linux中，
+* 停止Adobe Campaign服务器：在Windows中为&#x200B;**net stop nlserver6**，在Linux中为&#x200B;**/etc/init.d/nlserver6 stop**，
 
   >[!NOTE]
   >
-  >从20.1开始，我们建议改使用以下命令（对于Linux）： **systemctl stop nlserver**
+  >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl stop nlserver**
 
-* 在Linux中，使用 **ipcrm** 命令，
-* 重新启动Adobe Campaign服务器： **网络启动nlserver6** 在Windows中， **/etc/init.d/nlserver6 start** 在Linux中，
+* 在Linux中，使用&#x200B;**ipcrm**&#x200B;命令删除共享内存段，
+* 重新启动Adobe Campaign服务器：在Windows中重新启动&#x200B;**net start nlserver6**，在Linux中重新启动&#x200B;**/etc/init.d/nlserver6 start**，
 
   >[!NOTE]
   >
-  >从20.1开始，我们建议改使用以下命令（对于Linux）： **systemctl启动nlserver**
+  >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl start nlserver**
 
 * 重新启动Web服务器。
 
-**示例**：考虑Linux下的配置。
+**示例**：考虑了Linux下的配置。
 
 ```
 adobe@selma:~$ systemctl stop nlserver
@@ -108,4 +108,4 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->对于Linux，如果将 **webTrackingParamSize** 或 **maxSharedLogs** 参数，可能需要增加共享内存(SHM)的大小。
+>对于Linux，如果增加&#x200B;**webTrackingParamSize**&#x200B;或&#x200B;**maxSharedLogs**&#x200B;参数的大小，则可能需要增加共享内存(SHM)的大小。

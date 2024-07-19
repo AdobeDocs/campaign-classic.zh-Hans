@@ -20,22 +20,22 @@ ht-degree: 2%
 
 有两种类型的操作员使用交互：优惠经理和投放经理。 每个用户都具有特定的权限，这些权限仅允许他们访问树的某些部分和平台。
 
-* **[!UICONTROL Offer manager]** ：创建和维护选件。 请注意，如果在工作流中使用选件，则运算符需要位于 **[!UICONTROL Administrator]** 或 **[!UICONTROL Offer managers]** 操作员组，以执行工作流。
-* **[!UICONTROL Delivery manager]** ：批准和使用选件
+* **[!UICONTROL Offer manager]** ：创建和维护优惠。 请注意，如果在工作流中使用选件，则运算符需要位于&#x200B;**[!UICONTROL Administrator]**&#x200B;或&#x200B;**[!UICONTROL Offer managers]**&#x200B;运算符组中才能执行工作流。
+* **[!UICONTROL Delivery manager]** ：批准和使用优惠
 
-创建特定于交互的运算符的步骤与创建平台上所有其他运算符的步骤相同。 有关详细信息，请参见 [本节](../../platform/using/access-management.md). 权限是在创建操作员期间配置的。
+创建特定于交互的运算符的步骤与创建平台上所有其他运算符的步骤相同。 有关详细信息，请参阅[此部分](../../platform/using/access-management.md)。 权限是在创建操作员期间配置的。
 
 ## 选件管理器 {#offer-manager}
 
 1. 创建新运算符。
-1. 转到 **[!UICONTROL Groups and named rights]** 窗口，单击 **[!UICONTROL Add]** 并选择 **[!UICONTROL Offer manager]** 组。
+1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Offer manager]**&#x200B;组。
 
    ![](assets/offer_operators_create_001.png)
 
 分配给选件管理器的权限允许他们执行以下任务：
 
-* 修改 **[!UICONTROL Design]** 环境。
-* 视图 **[!UICONTROL Live]** 环境。
+* 修改&#x200B;**[!UICONTROL Design]**&#x200B;环境。
+* 查看&#x200B;**[!UICONTROL Live]**&#x200B;环境。
 * 配置管理函数（预定义空格和过滤器）。
 * 创建和更改类别。
 * 创建选件。
@@ -49,13 +49,13 @@ ht-degree: 2%
 ## 投放管理器 {#delivery-manager}
 
 1. 创建新运算符。
-1. 转到 **[!UICONTROL Groups and named rights]** 窗口，单击 **[!UICONTROL Add]** 并选择 **[!UICONTROL Delivery manager]** 组。
+1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Delivery manager]**&#x200B;组。
 
    ![](assets/offer_operators_create_002.png)
 
 分配给投放经理的权限允许他们执行以下任务：
 
-* 显示 **[!UICONTROL Live]** 环境。
+* 显示&#x200B;**[!UICONTROL Live]**&#x200B;环境。
 * 显示和修改优惠类别。
 * 批准选件（如果将此投放管理器指定为其审阅者之一）。
 
@@ -69,8 +69,8 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>选件管理器（编辑）</strong><br /> </td> 
-   <td> <strong>Offer Manager（正式启用）</strong><br /> </td> 
+   <td> <strong>选件管理器（正在编辑）</strong><br /> </td> 
+   <td> <strong>选件管理器（启动）</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>树结构级别</strong><br /> </td> 
@@ -129,8 +129,8 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>投放管理器（编辑）</strong><br /> </td> 
-   <td> <strong>Delivery manager（正式启用）</strong><br /> </td> 
+   <td> <strong>投放管理器（正在编辑）</strong><br /> </td> 
+   <td> <strong>投放管理器（启动）</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>树结构级别</strong><br /> </td> 

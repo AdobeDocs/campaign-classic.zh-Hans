@@ -25,8 +25,8 @@ ht-degree: 0%
 
 ## 创建和引用优惠呈现规则 {#creating-and-referencing-an-offer-presentation-rule}
 
-1. 转到 **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** 节点。
-1. 创建分类规则并选择 **[!UICONTROL Offer presentation]** 类型。
+1. 转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**&#x200B;节点。
+1. 创建分类规则并选择&#x200B;**[!UICONTROL Offer presentation]**&#x200B;类型。
 
    ![](assets/offer_typology_001.png)
 
@@ -34,8 +34,8 @@ ht-degree: 0%
 
    ![](assets/offer_typology_002.png)
 
-1. 配置规则的应用条件。 有关详细信息，请参见 [推荐规则设置](#presentation-rule-settings).
-1. 转到 **[!UICONTROL Administration]** > **[!UICONTROL Campaign execution]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typologies]** 节点，并创建将分组所有 **[!UICONTROL Offer presentation]** 键入规则。
+1. 配置规则的应用条件。 有关详细信息，请参阅[演示规则设置](#presentation-rule-settings)。
+1. 转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign execution]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typologies]**&#x200B;节点并创建将分组所有&#x200B;**[!UICONTROL Offer presentation]**&#x200B;类型规则的分类。
 
    ![](assets/offer_typology_003.png)
 
@@ -51,9 +51,9 @@ ht-degree: 0%
 
 ### 申请条件 {#application-criteria-}
 
-中可用的应用程序条件 **[!UICONTROL General]** 选项卡允许您指定演示文稿规则将应用于的选件。 要实现此目的，您需要创建查询并选择相关选件，如下所述。
+**[!UICONTROL General]**&#x200B;选项卡中可用的应用程序条件允许您指定演示文稿规则将应用于的选件。 要实现此目的，您需要创建查询并选择相关选件，如下所述。
 
-1. 在分类规则中，单击 **[!UICONTROL Edit the rule application conditions...]** 链接以创建您的查询。
+1. 在分类规则中，单击&#x200B;**[!UICONTROL Edit the rule application conditions...]**&#x200B;链接以创建查询。
 
    ![](assets/offer_typology_006.png)
 
@@ -65,21 +65,21 @@ ht-degree: 0%
 
 ### 优惠维度 {#offer-dimensions}
 
-在 **[!UICONTROL Offer presentation]** 选项卡，必须为演示文稿规则指定与在环境中配置的维度相同的维度。
+在&#x200B;**[!UICONTROL Offer presentation]**&#x200B;选项卡中，必须为演示文稿规则指定与环境中配置的维度相同的维度。
 
-此 **[!UICONTROL Targeting dimension]** 与收件人表一致(默认情况下： `nms:recipients`)，他们将会收到优惠建议。 此 **[!UICONTROL Storage dimension]** 与包含链接到定向维度的建议历史记录的表一致(默认情况下： `nms:propositionRcp`)。
+**[!UICONTROL Targeting dimension]**&#x200B;与将接收优惠建议的收件人表（默认为： `nms:recipients`）重合。 **[!UICONTROL Storage dimension]**&#x200B;与包含链接到定向维度的建议历史记录的表一致（默认情况下： `nms:propositionRcp`）。
 
 ![](assets/offer_typology_009.png)
 
 >[!NOTE]
 >
->您也可以使用非标准表。 如果要使用特定的定向维度，则需要使用目标映射创建表以及专用环境。 有关详细信息，请参见 [创建优惠环境](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+>您也可以使用非标准表。 如果要使用特定的定向维度，则需要使用目标映射创建表以及专用环境。 有关详细信息，请参阅[创建优惠环境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
 
 ### 期间 {#period}
 
 这是一个从优惠展示日期开始的滑动时段。 它规定了优惠建议有效性的时间限制。 该规则不适用于在此期限之后提出的优惠建议。
 
-期间开始 **n** 建议日期和结束日期前的天数 **n** 几天后，其中 **n** 对应于在 **[!UICONTROL Period considered]** 字段：
+期间从建议日期之前的&#x200B;**n**&#x200B;天开始，并在建议日期之后的&#x200B;**n**&#x200B;天结束，其中&#x200B;**n**&#x200B;对应于在&#x200B;**[!UICONTROL Period considered]**&#x200B;字段中输入的数字：
 
 * 对于入站空间，建议日期是优惠展示日期。
 * 对于出站空间，建议日期是投放联系日期（例如，在定位工作流中输入的投放日期）。
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 ## 定义建议和收件人 {#defining-propositions-and-recipients}
 
-此 **[!UICONTROL Propositions to count]** 部分允许您指定接收者和建议，这会导致排除中定义的优惠。 **[!UICONTROL General]** 选项卡（如果它们在建议历史记录中出现特定次数）。
+通过&#x200B;**[!UICONTROL Propositions to count]**&#x200B;部分，您可以指定收件人和建议，如果&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义的优惠在建议历史记录中出现特定次数，则会导致排除这些优惠。
 
 ### 筛选建议 {#filtering-propositions}
 
@@ -106,33 +106,33 @@ ht-degree: 0%
 
 ![](assets/offer_typology_014.png)
 
-这些标准代表了呈现规则最常见的应用。 要使用其他标准，您可以使用 **[!UICONTROL Limit propositions...]** 链接。 有关详细信息，请参见 [创建建议查询](#creating-a-query-on-propositions) 部分。
+这些标准代表了呈现规则最常见的应用。 要使用其他条件，您可以使用&#x200B;**[!UICONTROL Limit propositions...]**&#x200B;链接创建查询。 有关详细信息，请参阅[创建对命题的查询](#creating-a-query-on-propositions)部分。
 
-* **在渠道上筛选**
+* **渠道筛选器**
 
-  **[!UICONTROL On the same channel only]** ：用于在 **[!UICONTROL General]** 选项卡。
+  **[!UICONTROL On the same channel only]** ：用于排除在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中指定的渠道上的优惠建议。
 
-  例如，在中为规则指定的渠道 **[!UICONTROL General]** 选项卡为电子邮件。 如果到目前为止，规则适用的优惠仅在Web渠道中提供，则交互引擎可以在电子邮件投放中提供这些优惠。 但是，一旦通过电子邮件显示优惠，交互引擎将选择其他渠道来显示优惠。
+  例如，在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中为规则指定的渠道是电子邮件。 如果到目前为止，规则适用的优惠仅在Web渠道中提供，则交互引擎可以在电子邮件投放中提供这些优惠。 但是，一旦通过电子邮件显示优惠，交互引擎将选择其他渠道来显示优惠。
 
   >[!NOTE]
   >
   >我们谈论的是频道，而不是空间。 如果规则必须排除Web渠道上的选件，则原本要显示在网站上的选件（例如，在横幅和页面正文中）不能显示在网站上（如果之前已显示选件）。
   >
-  >对于涉及优惠呈现的工作流，仅当在上配置规则时，才会正确考虑这些规则 **[!UICONTROL All channels]**.
+  >对于涉及优惠呈现的工作流，只有在&#x200B;**[!UICONTROL All channels]**&#x200B;上配置了规则时，才会正确考虑这些规则。
 
-* **在选件上过滤**
+* **筛选选件**
 
   此筛选器允许您将要计数的选件建议限制为一组特定的选件。
 
   **[!UICONTROL All offers]** ：默认值。 没有过滤器应用于选件。
 
-  **[!UICONTROL Offer being presented]** ：中指定的选件 **[!UICONTROL General]** 选项卡会被排除（如果已显示）。
+  **[!UICONTROL Offer being presented]** ：如果已提供在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中指定的选件，则会排除该选件。
 
-  **[!UICONTROL Offers from the same category]** ：如果已提供同一类别中的选件，则会排除该选件。
+  **[!UICONTROL Offers from the same category]** ：如果已提供来自同一类别的优惠，则会排除该优惠。
 
-  **[!UICONTROL The offers which the rule applies to]** ：在中定义多个选件时 **[!UICONTROL General]** 选项卡，将考虑此优惠集中的每个优惠建议，如果达到建议阈值，则将以排除所有优惠结束。
+  **[!UICONTROL The offers which the rule applies to]** ：在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义多个优惠时，此优惠集中的每个优惠建议都将被考虑在内，如果达到建议阈值，则以排除所有优惠结束。
 
-  例如，选件2、3和5定义于 **[!UICONTROL General]** 选项卡。 建议的最大数量设置为2。 如果选件2和5均呈现一次，则计算出的建议数量将为2。 因此，我们永远不会提供选件3。
+  例如，在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义了选件2、3和5。 建议的最大数量设置为2。 如果选件2和5均呈现一次，则计算出的建议数量将为2。 因此，我们永远不会提供选件3。
 
 * **根据建议状态进行筛选**
 
@@ -140,22 +140,22 @@ ht-degree: 0%
 
   **[!UICONTROL Regardless of the proposition status]** ：默认值。 没有过滤器应用于建议状态。
 
-  **[!UICONTROL Accepted or rejected propositions]** ：用于排除之前显示的、已接受或已拒绝的优惠。
+  **[!UICONTROL Accepted or rejected propositions]** ：用于排除之前已接受或拒绝的优惠。
 
   **[!UICONTROL Accepted propositions]** ：用于排除之前已接受的优惠。
 
-  **[!UICONTROL Rejected propositions]** ：用于排除之前显示且已被拒绝的优惠。
+  **[!UICONTROL Rejected propositions]** ：用于排除之前显示的、已被拒绝的优惠。
 
 ### 定义收件人 {#defining-recipients}
 
-要指定收件人，请单击 **[!UICONTROL Edit the query from the targeting dimension...]** 链接并选择规则关注的收件人。
+要指定收件人，请单击&#x200B;**[!UICONTROL Edit the query from the targeting dimension...]**&#x200B;链接并选择规则涉及的收件人。
 
 ![](assets/offer_typology_012.png)
 
 ### 创建建议查询 {#creating-a-query-on-propositions}
 
-要指定通过查询计算的建议，请单击 **[!UICONTROL Limit propositions...]** 链接并指定要考虑的条件。
+要指定通过查询计算的建议，请单击&#x200B;**[!UICONTROL Limit propositions...]**&#x200B;链接并指定要考虑的条件。
 
-在以下示例中，要在两个演示之后计数的建议是 **特别优惠** 类别，用于 **呼叫中心** 空格，重量在下 **20**.
+在以下示例中，两个演示之后要计数的建议是&#x200B;**呼叫中心**&#x200B;空间的&#x200B;**特殊优惠**&#x200B;类别中的建议，其权重低于&#x200B;**20**。
 
 ![](assets/offer_typology_013.png)

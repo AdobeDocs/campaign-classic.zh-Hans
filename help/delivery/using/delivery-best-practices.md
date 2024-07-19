@@ -30,7 +30,7 @@ ht-degree: 6%
     </a>
     </div>
     <p>
-    <em>安全并优化发送过程</em>
+    <em>安全并优化发送进程</em>
     <p>
   </td>
    <td>
@@ -43,7 +43,7 @@ ht-degree: 6%
     </a>
     </div>
     <p>
-    <em>加速和固定新投放</em>
+    <em>促进并固定新投放</em>
     <p>
   </td>
   <td>
@@ -52,7 +52,7 @@ ht-degree: 6%
     </a>
     <div>
       <a href="design-and-personalize.md">
-    <strong>使内容个性化</strong>
+    <strong>个性化内容</strong>
     </a>
     </div>
     <p>
@@ -71,7 +71,7 @@ ht-degree: 6%
     </a>
     </div>
     <p>
-    <em>目标群体是关键</em>
+    <em>目标群体是键</em>
     <p>
   </td>
    <td>
@@ -97,7 +97,7 @@ ht-degree: 6%
     </a>
     </div>
     <p>
-    <em>控制发送和故障排除</em>
+    <em>控制发送并排除故障</em>
     <p>
   </td>
 </tr>

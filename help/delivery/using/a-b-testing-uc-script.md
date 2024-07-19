@@ -66,16 +66,16 @@ ht-degree: 3%
    vars.deliveryId = delivery.id
 ```
 
-有关脚本的详细说明，请参阅 [本节](#details-of-the-script).
+有关脚本的详细说明，请参阅[此部分](#details-of-the-script)。
 
 ## 实现 {#implementation}
 
-1. 打开您的 **[!UICONTROL JavaScript code]** 活动。
-1. 复制中提供的脚本 [脚本示例](#example-of-a-script) 到 **[!UICONTROL JavaScript code]** 窗口。
+1. 打开您的&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动。
+1. 将[脚本示例](#example-of-a-script)中提供的脚本复制到&#x200B;**[!UICONTROL JavaScript code]**&#x200B;窗口中。
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. 在 **[!UICONTROL Label]** 字段中，输入脚本的名称，即
+1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中，输入脚本的名称，即
 
    ```
    <%= vars.deliveryId %>
@@ -83,14 +83,14 @@ ht-degree: 3%
 
    ![](assets/use_case_abtesting_configscript_003.png)
 
-1. 关闭 **[!UICONTROL JavaScript code]** 活动。
+1. 关闭&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动。
 1. 保存您的工作流。
 
 ## 脚本的详细信息 {#details-of-the-script}
 
 此部分详细介绍脚本的各个部分及其操作模式。
 
-* 脚本的第一部分是查询。 此 **queryDef** 命令允许您从 **NmsDelivery** 对通过执行定位工作流创建的投放进行表，并根据预计的打开率对它们进行排序，然后恢复打开率最高的投放中的信息。
+* 脚本的第一部分是查询。 通过&#x200B;**queryDef**&#x200B;命令，您可以从&#x200B;**NmsDelivery**&#x200B;表中恢复通过执行定向工作流创建的投放，并根据它们的预计打开率对它们进行排序，然后恢复打开率最高的投放中的信息。
 
   ```
   // query the database to find the winner (best open rate)
@@ -119,7 +119,7 @@ ht-degree: 3%
   delivery.Duplicate("nms:delivery|" + winner.@id)
   ```
 
-* 已复制投放的标签已修改，并且单词 **最终** 会添加到其中。
+* 已修改重复投放的标签，并在其中添加了&#x200B;**final**&#x200B;一词。
 
   ```
   // append 'final' to the delivery label
@@ -162,11 +162,11 @@ ht-degree: 3%
 以上示例允许您根据电子邮件打开率选择投放的内容。 您可以根据其他特定于投放的指标对其进行调整：
 
 * 最佳点击吞吐量： `[indicators/@recipientClickRatio]`，
-* 最高反应率（电子邮件打开数和邮件点击数）： `[indicators/@reactivity]`，
+* 最高反应率（电子邮件打开和邮件点击次数）： `[indicators/@reactivity]`，
 * 最低投诉率： `[indicators/@refusedRatio]` （对sortDesc属性使用false值），
 * 最高转化率： `[indicators/@transactionRatio]`，
-* 收到消息后访问的页面数： `[indicators/@totalWebPage]`，
-* 最低退订率： `[indicators/@optOutRatio]`，
-* 交易金额： `[indicators/@amount]`.
+* 收到邮件后访问的页面数： `[indicators/@totalWebPage]`，
+* 最低取消订阅率： `[indicators/@optOutRatio]`，
+* 交易金额： `[indicators/@amount]`。
 
 您现在可以定义最终投放。 [了解详情](a-b-testing-uc-final-delivery.md)。

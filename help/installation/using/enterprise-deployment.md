@@ -62,7 +62,7 @@ ht-degree: 3%
    * 第一台服务器向公众开放，用于跟踪和指向虚拟IP地址(VIP)上的负载平衡器，然后将其分发到两个前端服务器，
    * 第二个通过控制台向内部用户公开，用于访问，并指向虚拟IP地址(VIP)上的负载平衡器，然后将其分发到两个应用程序服务器。
 
-* 防火墙配置为打开STMP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL (1521(Oracle)、5432(PostgreSQL)等) 端口。 有关更多信息，请参阅一节 [数据库访问](../../installation/using/network-configuration.md#database-access).
+* 防火墙配置为打开STMP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL (1521(Oracle)、5432(PostgreSQL)等) 端口。 有关详细信息，请参阅[数据库访问](../../installation/using/network-configuration.md#database-access)部分。
 
 >[!CAUTION]
 >
@@ -77,17 +77,17 @@ ht-degree: 3%
 在以下示例中，实例的参数包括：
 
 * 实例名称：演示
-* DNS掩码： tracking.campaign.net&#42;， console.campaign.net&#42; （应用程序服务器为客户端控制台连接和报告以及镜像页面和退订页面处理URL）
+* DNS掩码： tracking.campaign.net&#42;， console.campaign.net&#42; （应用程序服务器处理客户端控制台连接和报告以及镜像页面和退订页面的URL）
 * 语言：英语
 * 数据库： campaign：demo@dbsrv
 
 安装第一台服务器的步骤如下：
 
-1. 请按照Adobe Campaign服务器的安装过程操作： **nlserver** Linux或 **setup.exe** 在Windows上。
+1. 请按照Adobe Campaign服务器的安装过程操作：**nlserver** package（在Linux上）或&#x200B;**setup.exe**（在Windows上）。
 
-   有关详细信息，请参见 [在Linux中安装Campaign的先决条件](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux)和 [在Windows中安装Campaign的先决条件](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows)。
+   有关详细信息，请参阅[在Linux中安装Campaign的先决条件](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux)和[在Windows中安装Campaign的先决条件](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows)。
 
-1. 安装Adobe Campaign服务器后，使用命令启动应用程序服务器(web) **nlserver web -tomcat** （通过Web模块，您可以以独立Web服务器模式在端口8080上侦听以启动Tomcat），并确保Tomcat正确启动：
+1. 安装Adobe Campaign服务器后，使用命令&#x200B;**nlserver web -tomcat**&#x200B;启动应用程序服务器(web)（通过Web模块，您可以在侦听端口8080的独立Web服务器模式下启动Tomcat），并确保Tomcat正确启动：
 
    ```sql
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -99,16 +99,16 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >首次执行Web模块时，它会创建 **config-default.xml** 和 **serverConf.xml** 中的文件 **会议** 目录。 中所有可用的参数，请参见 **serverConf.xml** 中列出 [部分](../../installation/using/the-server-configuration-file.md).
+   >首次执行Web模块时，会在安装文件夹下的&#x200B;**conf**&#x200B;目录中创建&#x200B;**config-default.xml**&#x200B;和&#x200B;**serverConf.xml**&#x200B;文件。 **serverConf.xml**&#x200B;中的所有可用参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
 
-   按 **Ctrl+C** 停止服务器。
+   按&#x200B;**Ctrl+C**&#x200B;停止服务器。
 
    有关更多信息，请参阅以下章节：
 
    * 对于Linux： [服务器的首次启动](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
    * 对于Windows： [服务器的首次启动](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
-1. 更改 **内部** 使用命令的密码：
+1. 使用以下命令更改&#x200B;**internal**&#x200B;密码：
 
    ```
    nlserver config -internalpassword
@@ -116,13 +116,13 @@ ht-degree: 3%
 
    如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
-1. 创建 **演示** 具有DNS掩码的实例进行跟踪(在本例中， **tracking.campaign.net**)和对客户端控制台的访问权限(在本例中， **console.campaign.net**)。 可通过两种方式来做到这一点：
+1. 创建具有DNS掩码的&#x200B;**demo**&#x200B;实例，以便跟踪（在本例中为&#x200B;**tracking.campaign.net**）和访问客户端控制台（在本例中为&#x200B;**console.campaign.net**）。 可通过两种方式来做到这一点：
 
    * 通过控制台创建实例：
 
      ![](assets/install_create_new_connexion.png)
 
-     有关详细信息，请参见 [创建实例并登录](../../installation/using/creating-an-instance-and-logging-on.md).
+     有关详细信息，请参阅[创建实例并登录](../../installation/using/creating-an-instance-and-logging-on.md)。
 
      或者
 
@@ -132,9 +132,9 @@ ht-degree: 3%
      nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
      ```
 
-     有关详细信息，请参见 [创建实例](../../installation/using/command-lines.md#creating-an-instance).
+     有关详细信息，请参阅[创建实例](../../installation/using/command-lines.md#creating-an-instance)。
 
-1. 编辑 **config-demo.xml** 文件(通过上一命令创建，位于 **config-default.xml** 文件)，检查 **mta** （投放）， **wfserver** （工作流）， **inMail** （回弹邮件）和 **stat** (statistics)启用进程，然后配置进程的 **应用程序** 统计服务器：
+1. 编辑&#x200B;**config-demo.xml**&#x200B;文件（通过以前的命令创建，位于&#x200B;**config-default.xml**&#x200B;文件旁边），检查是否已启用&#x200B;**mta**（投放）、**wfserver**（工作流）、**inMail**（退回邮件）和&#x200B;**stat**（统计信息）进程，然后配置&#x200B;**应用程序**&#x200B;统计信息服务器的地址：
 
    ```xml
    <?xml version='1.0'?>
@@ -154,7 +154,7 @@ ht-degree: 3%
 
    如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
-1. 编辑 **serverConf.xml** 文件并指定投放域，然后指定MTA模块用于响应MX类型DNS查询的DNS服务器的IP（或主机）地址。
+1. 编辑&#x200B;**serverConf.xml**&#x200B;文件并指定投放域，然后指定MTA模块用于响应MX类型DNS查询的DNS服务器的IP（或主机）地址。
 
    ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
@@ -162,17 +162,17 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >此 **nameServer** 参数仅在Windows中使用。
+   >**nameServers**&#x200B;参数仅在Windows中使用。
 
-   有关详细信息，请参见 [Campaign服务器配置](../../installation/using/configuring-campaign-server.md).
+   有关详细信息，请参阅[Campaign服务器配置](../../installation/using/configuring-campaign-server.md)。
 
-1. 复制客户端控制台安装程序 **setup-client-7.XX**， **YYYY.exe** 到 **/datakit/nl/eng/jsp** 文件夹。 [了解详情](../../installation/using/client-console-availability-for-windows.md)。
+1. 将客户端控制台安装程序&#x200B;**setup-client-7.XX**、**YYYY.exe**&#x200B;复制到&#x200B;**/datakit/nl/eng/jsp**&#x200B;文件夹。 [了解详情](../../installation/using/client-console-availability-for-windows.md)。
 
-1. 启动Adobe Campaign服务器(**网络启动nlserver6** 在Windows中， **/etc/init.d/nlserver6 start** （在Linux中）并运行命令 **nlserver pdump** 再次检查所有启用的模块是否存在。
+1. 启动Adobe Campaign服务器(在Windows中为&#x200B;**net start nlserver6**，在Linux中为&#x200B;**/etc/init.d/nlserver6 start**)，然后再次运行命令&#x200B;**nlserver pdump**&#x200B;以检查是否存在所有启用的模块。
 
    >[!NOTE]
    >
-   >从20.1开始，我们建议改使用以下命令（对于Linux）： **systemctl启动nlserver**
+   >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl start nlserver**
 
 
    ```sql
@@ -188,11 +188,11 @@ ht-degree: 3%
 
    此命令还可让您知道计算机上安装的Adobe Campaign服务器的版本号和内部版本号。
 
-1. 测试 **nlserver web** 模块使用URL： [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
+1. 使用URL [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test)测试&#x200B;**nlserver web**&#x200B;模块。
 
    此URL允许您访问客户端设置程序的下载页面。 [了解详情](../../installation/using/client-console-availability-for-windows.md)。
 
-   输入 **内部** 登录和关联的密码。
+   在到达访问控制页面时，输入&#x200B;**内部**&#x200B;登录名和相关密码。
 
    ![](assets/s_ncs_install_access_client.png)
 
@@ -205,14 +205,14 @@ ht-degree: 3%
 
    我们保留与应用程序服务器1相同的实例名称。
 
-1. 更改 **内部** 与应用程序服务器1相同。
+1. 将&#x200B;**internal**&#x200B;更改为与应用程序服务器1相同。
 1. 将数据库链接到实例：
 
    ```
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. 编辑 **config-demo.xml** 文件(通过上一命令创建，位于 **config-default.xml** 文件)，检查 **mta** （投放）， **wfserver** （工作流）， **inMail** （回弹邮件）和 **stat** (statistics)启用进程，然后配置进程的 **应用程序** 统计服务器：
+1. 编辑&#x200B;**config-demo.xml**&#x200B;文件（通过以前的命令创建，位于&#x200B;**config-default.xml**&#x200B;文件旁边），检查是否已启用&#x200B;**mta**（投放）、**wfserver**（工作流）、**inMail**（退回邮件）和&#x200B;**stat**（统计信息）进程，然后配置&#x200B;**应用程序**&#x200B;统计信息服务器的地址：
 
    ```xml
    <?xml version='1.0'?>
@@ -232,7 +232,7 @@ ht-degree: 3%
 
    如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
-1. 编辑 **serverConf.xml** 文件和填充MTA模块的DNS配置：
+1. 编辑&#x200B;**serverConf.xml**&#x200B;文件并填充MTA模块的DNS配置：
 
    ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
@@ -240,9 +240,9 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >此 **nameServer** 参数仅在Windows中使用。
+   >**nameServers**&#x200B;参数仅在Windows中使用。
 
-   有关详细信息，请参见 [Campaign服务器配置](../../installation/using/configuring-campaign-server.md).
+   有关详细信息，请参阅[Campaign服务器配置](../../installation/using/configuring-campaign-server.md)。
 
 1. 启动Adobe Campaign服务器。
 
@@ -260,18 +260,18 @@ ht-degree: 3%
 1. 安装Adobe Campaign服务器，
 1. 请遵循以下部分中描述的Web服务器集成过程(IIS、Apache)：
 
-   * 对于Linux： [集成到Linux版Web服务器](../../installation/using/integration-into-a-web-server-for-linux.md)，
-   * 对于Windows： [集成到Windows版Web服务器](../../installation/using/integration-into-a-web-server-for-windows.md).
+   * 对于Linux： [集成到Linux的Web服务器](../../installation/using/integration-into-a-web-server-for-linux.md)，
+   * 对于Windows： [集成到Windows的Web服务器](../../installation/using/integration-into-a-web-server-for-windows.md)。
 
-1. 复制 **config-demo.xml** 和 **serverConf.xml** 文件是在安装期间创建的。 在 **config-demo.xml** 文件，激活 **trackinglogd** 处理并取消激活 **mta**， **inmail**， **wfserver** 和 **stat** 进程。
-1. 编辑 **serverConf.xml** 并在重定向的参数中填充冗余跟踪服务器：
+1. 复制安装期间创建的&#x200B;**config-demo.xml**&#x200B;和&#x200B;**serverConf.xml**&#x200B;文件。 在&#x200B;**config-demo.xml**&#x200B;文件中，激活&#x200B;**trackinglogd**&#x200B;进程并停用&#x200B;**mta**、**inmail**、**wfserver**&#x200B;和&#x200B;**stat**&#x200B;进程。
+1. 编辑&#x200B;**serverConf.xml**&#x200B;文件并在重定向的参数中填充冗余跟踪服务器：
 
    ```xml
    <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
    <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
    ```
 
-1. 启动网站并测试从URL的重定向： [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test)
+1. 启动网站并从URL测试重定向： [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test)
 
    浏览器应显示以下消息（具体取决于负载平衡器重定向的URL）：
 
@@ -287,7 +287,7 @@ ht-degree: 3%
 
    有关更多信息，请参阅以下章节：
 
-   * 对于Linux： [启动Web服务器并测试配置](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)，
-   * 对于Windows： [启动Web服务器并测试配置](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
+   * 对于Linux： [正在启动Web服务器并测试配置](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)，
+   * 对于Windows： [正在启动Web服务器并测试配置](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)。
 
 1. 启动Adobe Campaign服务器。

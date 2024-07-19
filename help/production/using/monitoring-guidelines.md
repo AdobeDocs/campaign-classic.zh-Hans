@@ -17,7 +17,7 @@ ht-degree: 18%
 
 ## 实例监视仪表板 {#instance-monitoring-dashboard}
 
-此 **[!UICONTROL Monitoring]** 选项卡，可从Campaign Classic主页访问，是帮助您监视实例的主要入口点。
+**[!UICONTROL Monitoring]**&#x200B;选项卡(可从Campaign Classic主页访问)是帮助您监视实例的主要入口点。
 
 它提供实例上所发生情况的仪表板：其状态（内部版本号、已安装的包等）、系统指示器、日志、当前运行的工作流、上次发送投放的状态等。
 
@@ -44,7 +44,7 @@ ht-degree: 18%
 
 可以使用几种自动方法。 以帮助您监控实例。 例如，您可以设置包含检测到的异常的电子邮件报表，以XML格式检索指示器列表等。 [单击此处](../../production/using/monitoring-processes.md#automatic-monitoring)以了解更多信息。
 
-**审核跟踪**
+**审核记录**
 
 审计追踪允许您可视化与实例中的选项、工作流和架构相关的更改的完整历史记录。 [单击此处](../../production/using/audit-trail.md)以了解更多信息。
 
@@ -56,7 +56,7 @@ ht-degree: 18%
 >
 >所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
 >
->请注意，您的实例必须托管在AWS上，并使用进行升级 [最新GA版本](../../rn/using/rn-overview.md). 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
+>请注意，您的实例必须托管在AWS上，并使用[最新GA内部版本](../../rn/using/rn-overview.md)进行升级。 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
 
 ### 监控工作流 {#monitoring-workflows}
 
@@ -66,15 +66,15 @@ ht-degree: 18%
 
 工作流热图提供了实例上运行的所有工作流的可视化表示形式。 它允许您轻松监控实例的负载并相应地计划工作流。 [单击此处](../../workflow/using/heatmap.md)以了解更多信息。
 
-**审核跟踪**
+**审核记录**
 
-利用审核跟踪，可可视化在工作流中所做的所有修改及其当前状态。 [单击此处](../../production/using/audit-trail.md).
+利用审核跟踪，可可视化在工作流中所做的所有修改及其当前状态。 [单击此处](../../production/using/audit-trail.md)。
 
 **工作流疑难解答**
 
-遇到工作流执行问题时，可以执行特定操作。 [单击此处](../../production/using/workflow-execution.md) 了解更多信息
+遇到工作流执行问题时，可以执行特定操作。 [单击此处](../../production/using/workflow-execution.md)以了解更多信息
 
-**工作流状态监测**
+**工作流状态监控**
 
 除了热图之外，您还可以创建工作流，用于监视一组工作流的状态并向主管发送定期消息。 [单击此处](../../workflow/using/supervising-workflows.md)以了解更多信息。
 
@@ -94,14 +94,14 @@ SMTP报告按域显示投放统计信息和SMTP错误。 [了解详情](../../pr
 
 **最佳做法**
 
-[投放发送和设计的最佳实践](../../delivery/using/delivery-best-practices.md) 可以帮助您提高他们的性能。
+[投放发送和设计的最佳实践](../../delivery/using/delivery-best-practices.md)可以帮助您改进其性能。
 
-**投放疑难解答**
+**传递疑难解答**
 遇到投放问题时，可以执行特定操作：
 * [可投放性问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [图像显示问题](../../production/using/image-display-issues.md)
 * [投放性能问题](../../delivery/using/delivery-performances.md)
-* [临时文件问题](../../production/using/temporary-files.md) - *仅限内部部署托管模型*
+* [临时文件问题](../../production/using/temporary-files.md) - *仅限本地托管模型*
 
 ### 监视数据库 {#monitoring-database}
 
@@ -121,11 +121,11 @@ SMTP报告按域显示投放统计信息和SMTP错误。 [了解详情](../../pr
 
 我们建议您定期执行数据库维护，以避免过度消耗磁盘空间，从而影响数据库访问。 [单击此处](../../production/using/recommendations.md)以了解更多信息。
 
-**备份和恢复**
+**备份和还原**
 
 *仅限内部部署和混合托管模型*
 
-为了避免在机器上发生问题（无论是物理问题还是系统相关问题）时丢失数据，备份是必不可少的。 [单击此处](../../production/using/backup.md) 以了解更多信息。 有关恢复过程的说明，请参见 [本节](../../production/using/restoration.md).
+为了避免在机器上发生问题（无论是物理问题还是系统相关问题）时丢失数据，备份是必不可少的。 [单击此处](../../production/using/backup.md)以了解详细信息。 [本节](../../production/using/restoration.md)中介绍了还原过程。
 
 ## Campaign Classic技术原则 {#campaign-classic-technical-principles}
 

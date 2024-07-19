@@ -28,7 +28,7 @@ Adobe Campaign 包含一个工作流模块，允许您在应用程序服务器�
 Adobe Campaign使用工作流执行以下操作：
 
 * 开展定位活动。 [了解详情](building-a-workflow.md#implementation-steps-)
-* 构建营销活动：对于每个营销活动， **[!UICONTROL Workflow]** 选项卡允许您构建目标和创建投放。 [了解详情](building-a-workflow.md#campaign-workflows)
+* 构建营销活动：对于每个营销活动，**[!UICONTROL Workflow]**&#x200B;选项卡允许您构建目标和创建投放。 [了解详情](building-a-workflow.md#campaign-workflows)
 * 执行技术流程：清理、收集跟踪信息或临时计算。 [了解详情](building-a-workflow.md#technical-workflows)
 
 工作流可以是指流程定义（工作流模型，用于表示应该发生的情况）以及此流程的实例（工作流实例，用于表示实际发生的情况）。
@@ -41,11 +41,11 @@ Adobe Campaign使用工作流执行以下操作：
 
 * **[!UICONTROL Activities]**
 
-  活动描述了任务模板。 可用的各种活动在图中由图标表示。每种类型都有通用属性和特定属性。 例如，虽然所有活动都有名称和标签，但只有 **[!UICONTROL Approval]** 活动具有分配。
+  活动描述了任务模板。 可用的各种活动在图中由图标表示。每种类型都有通用属性和特定属性。 例如，虽然所有活动都有名称和标签，但只有&#x200B;**[!UICONTROL Approval]**&#x200B;活动有分配。
 
   在工作流图中，给定活动可以生成多个任务，尤其是当存在循环或循环（定期）操作时。
 
-  中列出了所有工作流活动 [本节](about-activities.md)，包括用例和示例。
+  [此部分](about-activities.md)列出了所有工作流活动，包括用例和示例。
 
 * **[!UICONTROL Transitions]**
 
@@ -57,22 +57,22 @@ Adobe Campaign使用工作流执行以下操作：
   >
   >包含未终止过渡的工作流仍可以执行：将生成警告消息，工作流在到达过渡后将暂停，但不会生成错误。 因此，可以在不完成工作流的情况下启动该工作流，并在工作流中添加工作流。
 
-  有关如何构建工作流的更多信息，请参阅 [本节](building-a-workflow.md).
+  有关如何构建工作流的详细信息，请参阅[此部分](building-a-workflow.md)。
 
 * **[!UICONTROL Worktables]**
 
   工作台包含由过渡承载的所有信息。 每个工作流均使用多个工作表。只要不清除这些表中的数据，就可以在整个工作流的生命周期中加速和使用这些数据。 实际上，每次工作流被钝化时以及可能在执行最大工作流期间，都会清除不需要的表，以避免服务器过载。
 
-  在中了解有关工作流数据和表的更多信息 [本节](how-to-use-workflow-data.md).
+  在[本节](how-to-use-workflow-data.md)中了解关于工作流数据和表的更多信息。
 
 ## 主要原则和最佳实践{#principles-workflows}
 
 请参阅以下部分，查找使用工作流自动化流程的指导和最佳实践：
 
-* 在中了解有关工作流活动的更多信息 [此页面](how-to-use-workflow-data.md).
-* 了解如何在中构建工作流 [本节](building-a-workflow.md).
-* 在中了解如何使用工作流导入Campaign中的数据 [本节](../../platform/using/import-export-workflows.md).
-* 有关工作流最佳实践的详情，请参阅 [此页面](workflow-best-practices.md).
-* 在中查找有关工作流执行的指导 [本节](starting-a-workflow.md).
-* 了解如何在中监测工作流 [此页面](monitoring-workflow-execution.md).
-* 了解如何向用户授予访问权限，以在中使用工作流 [此页面](managing-rights.md).
+* 在[此页面](how-to-use-workflow-data.md)中了解有关工作流活动的更多信息。
+* 在[本节](building-a-workflow.md)中了解如何构建工作流。
+* 在[此部分](../../platform/using/import-export-workflows.md)中了解如何使用工作流导入Campaign中的数据。
+* [此页面](workflow-best-practices.md)中详细介绍了工作流最佳实践。
+* 在[此部分](starting-a-workflow.md)中查找有关工作流执行的指导。
+* 了解如何在[此页面](monitoring-workflow-execution.md)中监视工作流。
+* 在[此页面](managing-rights.md)中了解如何向用户授予使用工作流的访问权限。

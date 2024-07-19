@@ -17,15 +17,15 @@ ht-degree: 4%
 
 ## 配置查询活动 {#configuring-the-query-activity}
 
-* 双击 **[!UICONTROL Query]** 活动。
+* 双击&#x200B;**[!UICONTROL Query]**&#x200B;活动。
 
   ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* 单击 **[!UICONTROL Edit query]** 链接并选择要定位的收件人。
+* 单击&#x200B;**[!UICONTROL Edit query]**&#x200B;链接并选择要定位的收件人。
 
   ![](assets/use_case_abtesting_createrecipients_002.png)
 
-* 链接 **[!UICONTROL Query]** 的活动 **[!UICONTROL Split]** 活动。
+* 将&#x200B;**[!UICONTROL Query]**&#x200B;活动链接到&#x200B;**[!UICONTROL Split]**&#x200B;活动。
 
   ![](assets/use_case_abtesting_createrecipients_003.png)
 
@@ -35,7 +35,7 @@ ht-degree: 4%
 
 1. 创建群体A：
 
-   * 双击 **[!UICONTROL Split]** 活动。
+   * 双击&#x200B;**[!UICONTROL Split]**&#x200B;活动。
 
      ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -43,21 +43,21 @@ ht-degree: 4%
 
      ![](assets/use_case_abtesting_createrecipients_005.png)
 
-   * 选择 **[!UICONTROL Limit the selected records]** 选项。
+   * 选择&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;选项。
 
      ![](assets/use_case_abtesting_createrecipients_006.png)
 
-   * 单击 **[!UICONTROL Edit]** 链接，选择 **[!UICONTROL Activate random sampling]**，然后单击 **[!UICONTROL Next]**.
+   * 单击&#x200B;**[!UICONTROL Edit]**&#x200B;链接，选择&#x200B;**[!UICONTROL Activate random sampling]**，然后单击&#x200B;**[!UICONTROL Next]**。
 
      ![](assets/use_case_abtesting_createrecipients_007.png)
 
-   * 将阈值设置为10%，然后单击 **[!UICONTROL Finish]**.
+   * 将阈值设置为10%，然后单击&#x200B;**[!UICONTROL Finish]**。
 
      ![](assets/use_case_abtesting_createrecipients_008.png)
 
 1. 创建群体B：
 
-   * 单击 **[!UICONTROL Add]** 为群体B创建新选项卡。
+   * 单击&#x200B;**[!UICONTROL Add]**&#x200B;为群体B创建新选项卡。
 
      ![](assets/use_case_abtesting_createrecipients_009.png)
 
@@ -67,7 +67,7 @@ ht-degree: 4%
 
 1. 创建剩余群体：
 
-   * 转到 **[!UICONTROL General]** 选项卡。
+   * 转到&#x200B;**[!UICONTROL General]**&#x200B;选项卡。
 
      ![](assets/use_case_abtesting_createrecipients_011.png)
 
@@ -75,7 +75,7 @@ ht-degree: 4%
 
      ![](assets/use_case_abtesting_createrecipients_012.png)
 
-   * 更改标签以指定此群体既不包括A也不包括B，然后单击 **[!UICONTROL OK]** 以关闭活动。
+   * 更改标签以指定此群体既不包括A也不包括B，然后单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭活动。
 
      ![](assets/use_case_abtesting_createrecipients_013.png)
 

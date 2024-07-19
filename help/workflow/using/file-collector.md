@@ -15,7 +15,7 @@ ht-degree: 0%
 
 
 
-此 **文件收集器** 监视目录中的一个或多个文件的到达，并为收到的每个文件激活其过渡。 对于每个事件， **[!UICONTROL filename]** 变量包含所接收文件的全名。 收集的文件将移动到另一个目录以进行存档，并确保只计数一次。
+**文件收集器**&#x200B;监视目录中的一个或多个文件的到达，并为收到的每个文件激活其转换。 对于每个事件，**[!UICONTROL filename]**&#x200B;变量都包含所接收文件的全名。 收集的文件将移动到另一个目录以进行存档，并确保只计数一次。
 
 默认情况下，文件收集器是一个持续性任务，它会在计划指定的时间测试文件的存在。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 属性 {#properties}
 
-的第一个选项卡 **[!UICONTROL File collector]** 通过活动，您可以选择源目录，并在必要时筛选收集的文件。 有关其他选项卡的详情，请参见 [入站电子邮件](inbound-emails.md) (**[!UICONTROL Schedule]** 和 **[!UICONTROL Expiry]** 选项卡)。
+**[!UICONTROL File collector]**&#x200B;活动的第一个选项卡允许您选择源目录，并在必要时筛选收集的文件。 其他选项卡在[入站电子邮件](inbound-emails.md)中详细介绍（**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;选项卡）。
 
 ![](assets/file_collect_edit.png)
 
@@ -35,17 +35,17 @@ ht-degree: 0%
 
    * **[!UICONTROL Filter]**
 
-     只考虑与此筛选器匹配的文件。 将忽略目录中的其他文件。 如果过滤器为空，则考虑目录中的所有文件。 过滤器示例： **&#42;.zip**， **导入 — &#42;.txt**.
+     只考虑与此筛选器匹配的文件。 将忽略目录中的其他文件。 如果过滤器为空，则考虑目录中的所有文件。 筛选器示例： **&#42;.zip**，**import-&#42;.txt**。
 
    * **[!UICONTROL Stop as soon as a file has been processed]**
 
      如果启用此选项，则任务将在收到第一个文件后结束。 如果目录中存在多个与过滤器对应的文件，则只考虑一个文件。 此选项确保只发送一个事件。 考虑的文件是列表中的第一个文件，按字母顺序排列。
 
-     对于未计划的活动，如果在指定的目录中未找到与过滤器匹配的文件，并且 **[!UICONTROL Process file nonexistence]** 选项未启用，将会引发错误。
+     对于未计划的活动，如果在指定的目录中未找到与筛选器匹配的文件，并且未启用&#x200B;**[!UICONTROL Process file nonexistence]**&#x200B;选项，则会引发错误。
 
    * **[!UICONTROL Execution schedule]**
 
-     通过 **[!UICONTROL Schedule]** 选项卡。
+     通过&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡的参数确定文件存在检查的频率。
 
 1. **错误处理**
 
@@ -67,9 +67,9 @@ ht-degree: 0%
 
 1. **历史化**
 
-   请参阅 **[!UICONTROL File historization]** 步骤： [Web下载](web-download.md).
+   请参阅下面的&#x200B;**[!UICONTROL File historization]**&#x200B;步骤：[Web下载](web-download.md)。
 
-无法确定文件处理顺序。 要按顺序处理一组文件，请使用 **[!UICONTROL Stop as soon as a file has been processed]** 选项并创建循环。 在这种情况下，将按字母顺序处理文件。 此 **[!UICONTROL Process file nonexistence]** 选项允许您完成迭代。
+无法确定文件处理顺序。 要按顺序处理一组文件，请使用&#x200B;**[!UICONTROL Stop as soon as a file has been processed]**&#x200B;选项并创建一个循环。 在这种情况下，将按字母顺序处理文件。 **[!UICONTROL Process file nonexistence]**&#x200B;选项允许您完成迭代。
 
 ![](assets/file_collect_loop.png)
 

@@ -67,7 +67,7 @@ Adobe Campaign中的交互需要仔细管理才能高效运行。 您必须在�
 
 在扩充活动中选择选件时，您可以选择要使用的选件空间。 但是，无论所选优惠空间如何，投放自定义菜单都取决于投放中设置的优惠空间。
 
-在以下示例中，投放中选择的优惠空间为 **[!UICONTROL Email (Environment - Recipient)]**：
+在以下示例中，投放中选择的优惠空间为&#x200B;**[!UICONTROL Email (Environment - Recipient)]**：
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
@@ -77,9 +77,9 @@ Adobe Campaign中的交互需要仔细管理才能高效运行。 您必须在�
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
-此函数插入代码，例如： `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
+此函数插入代码，例如： `<%@ include proposition="targetData.proposition" view="rendering/html" %>`。
 
-当您选择建议时， **[!UICONTROL view]** 属性如下所示：
+当您选择建议时，**[!UICONTROL view]**&#x200B;属性的值如下：
 * &quot;rendering/html&quot;： html rendering. 它使用HTML渲染函数。
 * &quot;offer/view/html&quot;： html内容。 它不使用HTML渲染函数。 它仅包括HTML字段。
 
@@ -109,7 +109,7 @@ Adobe Campaign中的交互需要仔细管理才能高效运行。 您必须在�
 
 由于建议表中有一个名为@rank的字段，因此将复制工作流临时表中的值。
 
-有关在建议表中存储其他字段的更多信息，请参见 [通过工作流集成优惠](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
+有关在建议表中存储其他字段的详细信息，请参阅[通过工作流集成优惠](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights)。
 
 对于具有交互功能的叫客优惠，在选择了多个优惠且希望记录它们在电子邮件中的显示顺序时，此功能非常有用。
 
@@ -124,7 +124,7 @@ Adobe Campaign中的交互需要仔细管理才能高效运行。 您必须在�
 ### 扩展nms：offer模式 {#extending-nms-offer-schema}
 
 扩展nms：offer模式时，请确保遵循已设置的现成结构：
-* 为下的内容存储定义任何新字段 `<element name="view">`.
+* 为`<element name="view">`下的内容存储定义任何新字段。
 * 每个新字段需要定义两次。 一次作为常规XML字段，一次作为CDATA XML字段，并在名称后附加“_jst”。 例如：
 
   ```
@@ -132,4 +132,4 @@ Adobe Campaign中的交互需要仔细管理才能高效运行。 您必须在�
   <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
   ```
 
-* 包含要跟踪的URL的任何字段都必须放在 `<element name="trackedUrls">` ，位于 `<element name="view" >`.
+* 包含要跟踪的URL的任何字段必须放在`<element name="trackedUrls">`下，可在`<element name="view" >`下找到。

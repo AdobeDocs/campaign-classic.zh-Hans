@@ -29,24 +29,24 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 ### 评估对活动触发程序的影响
 
-评估这些更改如何影响您当前的Campaign触发器。 识别其电子邮件打开次数用作分段、定位或重新定位标准的工作流。 阅读 [提示和技巧](#find-email-open-tracking).
+评估这些更改如何影响您当前的Campaign触发器。 识别其电子邮件打开次数用作分段、定位或重新定位标准的工作流。 阅读[提示和技巧](#find-email-open-tracking)。
 
 ### 保留您的数据
 
-保留您的数据并整合您当前的设备知识。 您可以将关键绩效指标(KPI)基于用户代理。 例如，您可以根据使用iOS和Apple邮件应用程序的用户的配置文件构建KPI。 阅读 [提示和技巧](#preserve-tracking-data).
+保留您的数据并整合您当前的设备知识。 您可以将关键绩效指标(KPI)基于用户代理。 例如，您可以根据使用iOS和Apple邮件应用程序的用户的配置文件构建KPI。 阅读[提示和技巧](#preserve-tracking-data)。
 
 ### 在保留期之后存档您的跟踪日志
 
 在Adobe Campaign的保留期过后存档您的跟踪日志：
 
 1. 检查营销活动实例中保留期的持续时间。
-1. 双击活动目标映射。 除了现成的用户档案表之外，还确定您是否使用自定义用户档案表(`nmsRecipient`)。
+1. 双击活动目标映射。 确定除了现成的用户档案表(`nmsRecipient`)之外，是否还使用自定义用户档案表。
 1. 从Adobe Campaign导出跟踪日志。 包括包含有关用户代理和操作系统的数据的日志。
 
 ### 评估公开利率的当前趋势
 
 确定在iOS设备上使用Apple邮件应用程序的受众比例。
-使用此评估，您可以确定潜在的异常差距及其原因。 您可以确定差距是由于Campaign性能问题还是Apple的隐私保护功能所致。 阅读 [提示和技巧](#measure-ios-footprint).
+使用此评估，您可以确定潜在的异常差距及其原因。 您可以确定差距是由于Campaign性能问题还是Apple的隐私保护功能所致。 阅读[提示和技巧](#measure-ios-footprint)。
 
 ### 重新评估您的营销活动策略和绩效指标
 
@@ -60,9 +60,9 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 要从Adobe Campaign数据收集见解，您可以使用现成的报表：
 
-* **[!UICONTROL Operating Systems]** 报告
+* **[!UICONTROL Operating Systems]**&#x200B;报告
 
-  要确定每个操作系统和每个版本的访客比例，请使用此报表。 [阅读更多](../../reporting/using/global-reports.md#operating-systems)。
+  要确定每个操作系统和每个版本的访客比例，请使用此报表。 [了解更多信息](../../reporting/using/global-reports.md#operating-systems)。
 
   您可以查看每个操作系统的访客相对于访客总数的细分情况。
 
@@ -72,9 +72,9 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
   ![](../../reporting/using/assets/s_ncs_user_os_report2.png)
 
-* **[!UICONTROL Breakdown of opens]** 报告
+* **[!UICONTROL Breakdown of opens]**&#x200B;报告
 
-  要确定每个操作系统的电子邮件打开比例，请使用此报表。 [阅读更多](../../reporting/using/global-reports.md#breakdown-of-opens)。
+  要确定每个操作系统的电子邮件打开比例，请使用此报表。 [了解更多信息](../../reporting/using/global-reports.md#breakdown-of-opens)。
 
   ![](../../reporting/using/assets/dlv_useragent_report.png)
 
@@ -82,7 +82,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 您可以确定工作流，其中电子邮件打开次数用作分段、定位和重新定位的标准。
 
-为此，您可以使用 **[!UICONTROL type]** 跟踪的链接URL的属性(**[!UICONTROL url/@type]**)。 对于电子邮件打开，此属性设置为 **[!UICONTROL Open]**. 此属性可从查询编辑器 **[!UICONTROL Query]** 活动以及预定义过滤器。 您可以将此属性用作营销活动的定位标准。
+为此，您可以使用跟踪链接URL (**[!UICONTROL url/@type]**)的&#x200B;**[!UICONTROL type]**&#x200B;属性。 对于电子邮件打开，此属性设置为&#x200B;**[!UICONTROL Open]**。 此属性可从查询编辑器、工作流中的&#x200B;**[!UICONTROL Query]**&#x200B;活动以及预定义过滤器中使用。 您可以将此属性用作营销活动的定位标准。
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -90,7 +90,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 * 可在查询中使用电子邮件打开次数作为定位条件。
 
-  您可以指定将特定投放的跟踪日志的URL类型设置为作为筛选条件 **[!UICONTROL Open]**.
+  您可以指定将特定投放的跟踪日志的URL类型设置为&#x200B;**[!UICONTROL Open]**&#x200B;作为筛选条件。
 
   ![](assets/identify-email-open-tracking-2.png)
 
@@ -106,7 +106,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
   >
   >在工作流中，您无法查看预定义过滤器的定位标准。
 
-要检索电子邮件打开次数用作定位条件的工作流列表，您必须查询 `xtk:workflow` 架构。 工作流的内容存储在 **[!UICONTROL XML memo (data)]** XML格式的字段。
+要检索电子邮件打开次数用作定位条件的工作流列表，必须查询`xtk:workflow`架构。 工作流的内容以XML格式存储在&#x200B;**[!UICONTROL XML memo (data)]**&#x200B;字段中。
 
 ![](assets/identify-email-open-tracking-5.png)
 
@@ -114,7 +114,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 `expr="[url/@type] = 2"`
 
-此定位标准意味着必须将跟踪的URL的类型设置为 **[!UICONTROL Open]**.
+此定位条件意味着跟踪的URL的类型必须设置为&#x200B;**[!UICONTROL Open]**。
 
 ![](assets/identify-email-open-tracking-6.png)
 
@@ -139,13 +139,13 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 >
 >我们强烈建议您在非生产环境中测试和验证此包。
 
-下载 [示例包](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) 并安装。 [了解详情](../../platform/using/working-with-data-packages.md#importing-packages)。
+下载[示例包](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml)并安装它。 [了解详情](../../platform/using/working-with-data-packages.md#importing-packages)。
 
 安装资源包后，您可以从实例中包含现成技术工作流的文件夹访问工作流：
 
 `/Administration/Production/Technical workflows/nmsTechnicalWorkflow`
 
-从用户界面中选择 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+从用户界面中选择&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**。
 
 ![](assets/identify-email-open-tracking-8.png)
 
@@ -159,7 +159,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 该工作流包含以下详细步骤：
 
-1. 初始活动是中的查询活动 `xtk:workflow` 架构。 此活动用于在相应的实例中查找包括电子邮件打开作为定位条件的显式工作流查询。
+1. 初始活动是`xtk:workflow`架构中的查询活动。 此活动用于在相应的实例中查找包括电子邮件打开作为定位条件的显式工作流查询。
 
    ![](assets/identify-email-open-tracking-9.png)
 
@@ -327,7 +327,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 * 此数据会由Adobe Campaign保留一段有限的时间。 保留期会因实例配置而异。
 
-  检查实例的设置。 [阅读更多](../../platform/using/privacy-management.md#data-retention)。
+  检查实例的设置。 [了解更多信息](../../platform/using/privacy-management.md#data-retention)。
 
 * 除了Apple最近的更改之外，您还可以使用跟踪数据来增加巨大的价值，从而促进受众的参与。
 * Apple可能会对其本机邮件应用程序及其邮件隐私保护功能进行进一步更改。
@@ -336,17 +336,17 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 #### 如何保留跟踪数据？
 
-要保留跟踪数据，必须将其从Adobe Campaign导出到您的信息系统。 [阅读更多](../../platform/using/get-started-data-import-export.md)。
+要保留跟踪数据，必须将其从Adobe Campaign导出到您的信息系统。 [了解更多信息](../../platform/using/get-started-data-import-export.md)。
 
 >[!IMPORTANT]
 >
->以下示例侧重于现成可用的 `nms:Recipient` 架构，这是默认的配置文件架构。 如果您使用附加到自定义用户档案的其他自定义目标映射，我们建议您将此导出策略扩展到所有自定义日志表。 [阅读更多](../../configuration/using/target-mapping.md)。
+>以下示例侧重于现成的`nms:Recipient`架构，该架构是默认的配置文件架构。 如果您使用附加到自定义用户档案的其他自定义目标映射，我们建议您将此导出策略扩展到所有自定义日志表。 [了解更多信息](../../configuration/using/target-mapping.md)。
 
 ##### 原则
 
-默认情况下， `nms:Recipient` 架构已链接到三个必须导出的架构：
+默认情况下，`nms:Recipient`架构链接到必须导出的三个架构：
 
-| 架构 | 内容 |
+| 模式 | 内容 |
 | --- | --- |
 | nms：trackingLogRcp | 跟踪数据，对用户、时间和相关消息进行跟踪 |
 | nms：trackingUrl | 有关链接的详细信息，包括性质，例如打开的电子邮件或点进 |
@@ -362,7 +362,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 您可以使用链接架构中的有用信息扩充此数据：
 
-| 架构 | 内容 |
+| 模式 | 内容 |
 | --- | --- |
 | nms：Recipient | 与用户档案相关的详细信息 |
 | nms：Deliver | 有关用户响应的消息的信息 |
@@ -382,11 +382,11 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
    初始查询用于检索过去三个月的跟踪日志。
 您可以使用增量查询仅提取尚未导出的记录。
 
-   从添加所有必需的信息 **[!UICONTROL Additional data]** 节点。
+   从&#x200B;**[!UICONTROL Additional data]**&#x200B;节点添加所有必需的信息。
 
    ![](assets/export-tracking-data-2.png)
 
-1. 添加 **[!UICONTROL Data extraction (file)]** 活动。 将查询中的所有数据映射到提取文件格式。
+1. 添加&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动。 将查询中的所有数据映射到提取文件格式。
 
    ![](assets/export-tracking-data-3.png)
 
@@ -425,14 +425,14 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 * 第一个示例工作流包含以下活动：
 
-   1. 初始 **[!UICONTROL Query]** 活动用于选择过去三个月打开的所有电子邮件。
-   1. A **[!UICONTROL Split]** 活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分选择。
+   1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活动用于选择过去三个月打开的所有电子邮件。
+   1. **[!UICONTROL Split]**&#x200B;活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分选定内容。
 
-   1. A **[!UICONTROL Deduplication]** 活动遵循每个 **[!UICONTROL Split]** 活动。 此 **[!UICONTROL Deduplication]** 活动用于删除重复的电子邮件地址。
+   1. 每个&#x200B;**[!UICONTROL Split]**&#x200B;活动后面都有一个&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动。 **[!UICONTROL Deduplication]**&#x200B;活动用于删除重复的电子邮件地址。
 
-      此 **[!UICONTROL Deduplication]** 活动位于 **[!UICONTROL Split]** 活动，以避免丢失有关使用各种设备的收件人的信息。
+      **[!UICONTROL Deduplication]**&#x200B;活动位于&#x200B;**[!UICONTROL Split]**&#x200B;活动之后，以避免丢失有关使用各种设备的收件人的信息。
 
-   1. An **[!UICONTROL End]** 活动遵循每个 **[!UICONTROL Deduplication]** 活动。
+   1. 每个&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动后面都有一个&#x200B;**[!UICONTROL End]**&#x200B;活动。
 
   如果仅将收件人存储在现成可用的收件人表中以进行定位，则此类工作流非常有用。
 
@@ -440,14 +440,14 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 * 第二个示例工作流包含以下活动：
 
-   1. 初始 **[!UICONTROL Query]** 活动用于选择过去三个月打开的所有电子邮件。
-   1. A **[!UICONTROL Deduplication]** 活动用于删除重复的电子邮件地址。
-   1. A **[!UICONTROL Fork]** 活动用于：
+   1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活动用于选择过去三个月打开的所有电子邮件。
+   1. **[!UICONTROL Deduplication]**&#x200B;活动用于删除重复的电子邮件地址。
+   1. **[!UICONTROL Fork]**&#x200B;活动已使用：
 
-      * 在一个过渡中， **[!UICONTROL Change dimension]** 活动用于查找跟踪日志引用的收件人。
-      * 在另一个过渡中， **[!UICONTROL Split]** 活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分选择。
+      * 在一个过渡中，**[!UICONTROL Change dimension]**&#x200B;活动用于查找跟踪日志引用的收件人。
+      * 在另一个过渡中，**[!UICONTROL Split]**&#x200B;活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分选择。
 
-   1. An **[!UICONTROL End]** 活动跟在 **[!UICONTROL Split]** 活动。
+   1. **[!UICONTROL Split]**&#x200B;活动之后的每个过渡都有&#x200B;**[!UICONTROL End]**&#x200B;活动。
 
   如果您将收件人存储在现成收件人表以外的表中，则此类工作流会很有用。
 

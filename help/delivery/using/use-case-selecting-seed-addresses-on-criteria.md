@@ -15,9 +15,9 @@ ht-degree: 2%
 # 用例：根据条件选择种子地址{#use-case-selecting-seed-addresses-on-criteria}
 
 
-在投放或营销策划的框架内， **[!UICONTROL Edit the dynamic condition...]** 链接允许您根据特定的选择条件选择种子地址。
+在投放或营销策划的框架内，**[!UICONTROL Edit the dynamic condition...]**&#x200B;链接允许您根据特定的选择条件选择种子地址。
 
-在此用例中，站点 **我的联机库** 想要根据客户的文学品味打造个性化的电子报。
+在此使用案例中，网站&#x200B;**我的在线图书馆**&#x200B;希望根据客户的文学品味，将其新闻稿个性化。
 
 负责递送的用户与购买部门合作，为购买警察小说的订阅者制作了一本通讯。
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 ## 步骤1 — 创建投放 {#step-1---creating-a-delivery}
 
-有关创建投放的详细步骤，请参见 [创建电子邮件投放](creating-an-email-delivery.md) 部分。
+有关创建投放的详细步骤，请参见[创建电子邮件投放](creating-an-email-delivery.md)一节。
 
 在本例中，投放经理已创建新闻稿并选择收件人。
 
@@ -38,18 +38,18 @@ ht-degree: 2%
 
 ## 第2步 — 创建公共值 {#step-2---creating-a-common-value}
 
-要创建与我们示例（采购部门）中相同的公用值，您必须先扩展 **数据架构** 并编辑关联的输入表单。
+若要创建类似于示例（采购部门）中的通用值，您必须首先扩展种子地址的&#x200B;**数据架构**，并编辑关联的输入表单。
 
 ### 扩展数据架构 {#extending-the-data-schema}
 
-有关架构扩展的详细信息，请参阅 [本节](../../configuration/using/data-schemas.md).
+有关架构扩展的详细信息，请参阅[此部分](../../configuration/using/data-schemas.md)。
 
-1. 在 **[!UICONTROL Administration > Configuration > Data schemas]** 节点，单击 **[!UICONTROL New]** 图标。
-1. 在 **[!UICONTROL Creation of a data schema]** 窗口中，选择 **[!UICONTROL Extension of a schema]** 选项并单击 **[!UICONTROL Next]**.
+1. 在&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点中，单击&#x200B;**[!UICONTROL New]**&#x200B;图标。
+1. 在&#x200B;**[!UICONTROL Creation of a data schema]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Extension of a schema]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/dlv_seeds_usecase_09.png)
 
-1. 选择 **[!UICONTROL Seed addresses]** 源架构，输入 **文档** 作为 **[!UICONTROL Namespace]** 并单击 **[!UICONTROL Ok]**.
+1. 选择&#x200B;**[!UICONTROL Seed addresses]**&#x200B;源架构，输入&#x200B;**doc**&#x200B;作为&#x200B;**[!UICONTROL Namespace]**，然后单击&#x200B;**[!UICONTROL Ok]**。
 
    ![](assets/dlv_seeds_usecase_10.png)
 
@@ -67,7 +67,7 @@ ht-degree: 2%
 
    ![](assets/dlv_seeds_usecase_20.png)
 
-   然后，复制以下行并将其粘贴到 **[!UICONTROL Seed to insert in the export files]** 元素。
+   然后，复制以下行并将其粘贴到&#x200B;**[!UICONTROL Seed to insert in the export files]**&#x200B;元素下。
 
    ```
        <element aggregate="doc:seedMember:common">
@@ -76,14 +76,14 @@ ht-degree: 2%
 
    ![](assets/dlv_seeds_usecase_29.png)
 
-   在这种情况下，您将指定名为 **[!UICONTROL Department]** 已在种子地址表中创建，并且它基于标准 **[!UICONTROL @company]** 枚举模板（在名称下标记） **公司** （在种子地址表单中）。
+   在这种情况下，您正在指定已在种子地址表中创建了名为&#x200B;**[!UICONTROL Department]**&#x200B;的新枚举，该枚举基于标准&#x200B;**[!UICONTROL @company]**&#x200B;枚举模板（在种子地址表单中的名称&#x200B;**Company**&#x200B;下标记）。
 
 1. 单击 **[!UICONTROL Save]**。
-1. 在 **[!UICONTROL Tools > Advanced]** 菜单，选择 **[!UICONTROL Update database structure]** 选项。
+1. 在&#x200B;**[!UICONTROL Tools > Advanced]**&#x200B;菜单中，选择&#x200B;**[!UICONTROL Update database structure]**&#x200B;选项。
 
    ![](assets/dlv_seeds_usecase_12.png)
 
-1. 显示更新向导时，单击 **[!UICONTROL Next]** 按钮访问“编辑表”窗口：在种子地址数据模式中执行的更改需要结构更新。
+1. 显示更新向导时，单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮以访问“编辑表”窗口：在种子地址数据架构中执行的更改需要结构更新。
 
    ![](assets/dlv_seeds_usecase_13.png)
 
@@ -93,17 +93,17 @@ ht-degree: 2%
 
    更新完成后，可以关闭向导。
 
-1. 断开连接，然后重新连接到Adobe Campaign。 现在，在种子地址数据架构中所做的更改生效。 为了使其在种子地址屏幕中可见，您必须更新关联的 **[!UICONTROL Input form]**. 请参阅 [更新输入表单](#updating-the-input-form) 部分。
+1. 断开连接，然后重新连接到Adobe Campaign。 现在，在种子地址数据架构中所做的更改生效。 为了从种子地址屏幕中可见，您必须更新关联的&#x200B;**[!UICONTROL Input form]**。 请参阅[更新输入表单](#updating-the-input-form)部分。
 
 #### 从链接表扩展数据模式 {#extending-the-data-schema-from-a-linked-table}
 
 种子地址数据模式可以使用链接到收件人数据模式 — 收件人(nms)的表中的值。
 
-例如，用户希望将 **[!UICONTROL Internet Extension]** 可在 **[!UICONTROL Country]** 链接到收件人模式的表。
+例如，用户希望集成在链接到收件人架构的&#x200B;**[!UICONTROL Country]**&#x200B;表中找到的&#x200B;**[!UICONTROL Internet Extension]**。
 
 ![](assets/dlv_seeds_usecase_06.png)
 
-因此，他们必须扩展种子地址数据模式，如部分所述。 但是，要集成到的代码行位于 **步骤4** 如下所示：
+因此，他们必须扩展种子地址数据模式，如部分所述。 但是，要在&#x200B;**步骤4**&#x200B;中集成的代码行如下：
 
 ```
 <element name="country">
@@ -116,28 +116,28 @@ ht-degree: 2%
 
 它们表示：
 
-* 用户希望创建一个名为的新元素 **[!UICONTROL Internet Extension]**，
-* 此元素来自 **[!UICONTROL Country]** 表格。
+* 用户想要创建一个名为&#x200B;**[!UICONTROL Internet Extension]**&#x200B;的新元素，
+* 此元素来自&#x200B;**[!UICONTROL Country]**&#x200B;表。
 
 >[!CAUTION]
 >
->在链接表名称中，必须指定 **xpath-dst** 的链接。
+>在链接表名称中，必须指定该链接表的&#x200B;**xpath-dst**。
 >
->这可以在 **[!UICONTROL Country]** 元素。
+>这可以在收件人表的&#x200B;**[!UICONTROL Country]**&#x200B;元素中找到。
 
 ![](assets/dlv_seeds_usecase_07.png)
 
-然后，用户可以从以下位置关注 **步骤5** 部分，并更新 **[!UICONTROL Input form]** 种子地址的。
+然后，用户可以按照该部分的&#x200B;**步骤5**&#x200B;进行操作，并更新种子地址的&#x200B;**[!UICONTROL Input form]**。
 
-请参阅 [更新输入表单](#updating-the-input-form) 部分。
+请参阅[更新输入表单](#updating-the-input-form)部分。
 
 #### 更新输入表单 {#updating-the-input-form}
 
-1. 在 **[!UICONTROL Administration > Configuration > Input forms]** 节点，查找种子地址输入表单。
+1. 在&#x200B;**[!UICONTROL Administration > Configuration > Input forms]**&#x200B;节点中，查找种子地址输入表单。
 
    ![](assets/dlv_seeds_usecase_19.png)
 
-1. 编辑表单并将以下行插入到 **[!UICONTROL Recipient]** 容器。
+1. 编辑表单并在&#x200B;**[!UICONTROL Recipient]**&#x200B;容器中插入以下行。
 
    ```
    <input xpath="@workField"/>
@@ -146,11 +146,11 @@ ht-degree: 2%
    ![](assets/dlv_seeds_usecase_21.png)
 
 1. 保存您的更改。
-1. 打开种子地址。 此 **[!UICONTROL Department]** 字段，请参见 **[!UICONTROL Recipient]** 表格。
+1. 打开种子地址。 **[!UICONTROL Department]**&#x200B;字段出现在&#x200B;**[!UICONTROL Recipient]**&#x200B;表中。
 
    ![](assets/dlv_seeds_usecase_22.png)
 
-1. 编辑要用于投放的种子地址并输入 **采购** 作为 **[!UICONTROL Department]** 字段。
+1. 编辑要用于投放的种子地址，并在&#x200B;**[!UICONTROL Department]**&#x200B;字段中输入&#x200B;**Purchasing**&#x200B;作为值。
 
 ## 步骤3 — 定义条件 {#step-3---defining-the-condition}
 
@@ -160,36 +160,36 @@ ht-degree: 2%
 
    ![](assets/dlv_seeds_usecase_01.png)
 
-1. 单击 **[!UICONTROL To]** 链接然后 **[!UICONTROL Seed addresses]** 选项卡访问 **[!UICONTROL Edit the dynamic condition...]** 链接。
+1. 单击&#x200B;**[!UICONTROL To]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Seed addresses]**&#x200B;选项卡以访问&#x200B;**[!UICONTROL Edit the dynamic condition...]**&#x200B;链接。
 
    ![](assets/dlv_seeds_usecase_02.png)
 
-1. 选择用于选择所需种子地址的表达式。 在此处，用户选择 **[!UICONTROL Department (@workField)]** 表达式。
+1. 选择用于选择所需种子地址的表达式。 在此处，用户选择&#x200B;**[!UICONTROL Department (@workField)]**&#x200B;表达式。
 
    ![](assets/dlv_seeds_usecase_03.png)
 
-1. 选择所需的值。 在此示例中，用户选择 **采购** 的值下拉列表中的部门。
+1. 选择所需的值。 在此示例中，用户从下拉值列表中选择&#x200B;**采购**&#x200B;部门。
 
    ![](assets/dlv_seeds_usecase_17.png)
 
    >[!NOTE]
    >
-   >之前创建的架构扩展来自 **收件人** 架构。 上述屏幕上显示的值来自 **收件人** 架构。
+   >之前创建的架构扩展来自&#x200B;**收件人**&#x200B;架构。 上述屏幕上显示的值来自&#x200B;**收件人**&#x200B;架构的枚举。
 
 1. 单击 **[!UICONTROL Ok]**。
 
-   查询显示在 **[!UICONTROL Select target]** 窗口。
+   查询显示在&#x200B;**[!UICONTROL Select target]**&#x200B;窗口中。
 
    ![](assets/dlv_seeds_usecase_04.png)
 
-1. 单击 **[!UICONTROL Ok]** 以批准查询。
-1. 分析您的投放，然后单击 **[!UICONTROL Delivery]** 选项卡访问投放日志。
+1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;批准查询。
+1. 分析您的投放，然后单击&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡以访问投放日志。
 
    采购部门的种子地址将显示为待定投放，与收件人或其他种子地址类似。
 
    ![](assets/dlv_seeds_usecase_05.png)
 
-1. 单击 **[!UICONTROL Send]** 按钮开始投放。
+1. 单击&#x200B;**[!UICONTROL Send]**&#x200B;按钮开始投放。
 
    购买部门的成员构成了您的种子地址的一部分，您将在其电子邮件收件箱中接收投放。
 

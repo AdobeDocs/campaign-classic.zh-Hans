@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 编辑Campaign资源管理器导航树{#edition}
 
-用于创建和配置导航层次结构配置文档的屏幕可通过 **[!UICONTROL Administration > Configuration > Navigation hierarchies]** 节点：
+用于创建和配置导航层次结构配置文档的屏幕可通过&#x200B;**[!UICONTROL Administration > Configuration > Navigation hierarchies]**&#x200B;节点访问：
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->“名称”编辑控件允许您输入包含名称和命名空间的文档密钥。 的“名称”和“命名空间”属性 **`<navtree>`** 元素会在架构的XML编辑字段中自动更新。
+>“名称”编辑控件允许您输入包含名称和命名空间的文档密钥。 **`<navtree>`**&#x200B;元素的“name”和“namespace”属性在架构的XML编辑字段中自动更新。
 
 预览会自动生成包含完整配置的合并文档：
 

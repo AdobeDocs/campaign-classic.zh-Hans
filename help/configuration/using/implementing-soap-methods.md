@@ -20,7 +20,7 @@ ht-degree: 3%
 
 可以在JavaScript中创建SOAP方法。 该功能简单实现了应用过程，避免了开发JSP和表单中对JSP的调用。
 
-这些SOAP方法的行为方式与应用程序中本地定义的方法相同。 支持相同的属性：静态、仅键和常量。
+这些SOAP方法的行为方式与应用程序中本机定义的方法相同。 支持相同的属性：静态、仅键和常量。
 
 ## 定义方法库 {#defining-a-method-library}
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ### 声明 {#declaration}
 
-首先在架构中声明方法(有关如何创建和编辑架构的更多信息，请参阅 [本节](../../configuration/using/about-schema-edition.md))。
+首先，声明架构中的方法（有关如何创建和编辑架构的详细信息，请参阅[此部分](../../configuration/using/about-schema-edition.md)）。
 
 它们的声明与本机方法的声明类似，不同之处在于，您需要添加“library”属性来指定定义所在的方法库的名称。
 
@@ -55,7 +55,7 @@ testLog(msg)方法在nms：recipient扩展中声明
 
 ### 条件 {#definition}
 
-SOAP方法以JavaScript函数的形式实现，该函数分组在表示库的脚本中。
+SOAP方法以分组到表示库的脚本中的JavaScript函数的形式实现。
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ SOAP方法以JavaScript函数的形式实现，该函数分组在表示库的脚
 
 例如：
 
-以下JavaScript函数是上述方法的实现。 它应使用&quot;cus：test&quot;名称在&quot;JavaScript Code&quot;类型实体中定义。
+以下JavaScript函数是上述方法的实现。 应使用&quot;cus：test&quot;名称在&quot;JavaScript Code&quot;类型实体中定义。
 
 ```
 function nms_recipient_testLog(message)
@@ -82,16 +82,16 @@ function nms_recipient_testLog(message)
  }
 ```
 
-**2. 签名**
+**2。 签名**
 
 函数的签名必须为声明的每个“in”或“inout”参数包含一个参数。
 
 具体案例：
 
-* **非静态方法**：函数必须首先包含一个额外的参数，与以“xml”(E4X)类型对象的形式传递的XML实体相一致。
-* **&quot;only&quot; type methods**：函数必须首先包含一个额外的参数，与以字符串形式传递的键值一致。
+* **非静态方法**：函数必须首先包含一个附加参数，这与以“xml”(E4X)类型对象的形式传递的XML实体一致。
+* **“仅键”类型方法**：函数必须首先包含一个附加参数，该参数应与以字符串形式传递的键一致。
 
-**3. 返回的值**
+**3。 返回的值**
 
 该函数必须为每个“out”或“inout”类型参数返回一个值。 特定案例：如果在声明方法时未使用任何“static”、“key only”或“const”属性，则第一个返回值必须与修改的实体一致。 可以返回新对象或返回第一个修改的参数。
 

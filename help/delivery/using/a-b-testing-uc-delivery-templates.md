@@ -15,10 +15,10 @@ ht-degree: 14%
 
 # AB测试：创建投放模板 {#step-3--creating-two-delivery-templates}
 
-现在，我们要创建两个投放模板。 每个模板都将在以下字段中引用： **[!UICONTROL Email delivery]** 活动链接到 **[!UICONTROL Split]** 活动。 如需详细信息，请参阅[此小节](about-templates.md)。
+现在，我们要创建两个投放模板。 每个模板都将在链接到&#x200B;**[!UICONTROL Split]**&#x200B;活动的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动中引用。 如需详细信息，请参阅[此小节](about-templates.md)。
 
-1. 浏览至 **[!UICONTROL Resources > Delivery template]** 文件夹。
-1. 复制 **[!UICONTROL Email]** 投放模板。
+1. 浏览到&#x200B;**[!UICONTROL Resources > Delivery template]**&#x200B;文件夹。
+1. 复制&#x200B;**[!UICONTROL Email]**&#x200B;投放模板。
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 

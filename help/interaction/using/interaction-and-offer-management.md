@@ -25,12 +25,12 @@ ht-degree: 6%
 
 ![](assets/Offermgt2.png)
 
-![](assets/do-not-localize/how-to-video.png) 要熟悉Campaign交互中使用的交互功能和术语，请观看 [此视频](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com).
+![](assets/do-not-localize/how-to-video.png)要熟悉Campaign交互中使用的交互功能和术语，请观看[此视频](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)。
 
 ## 相关主题
 
 | 有用页面 | 其他资源 |
 |---|---|
-| [交互实施步骤](../../interaction/using/implementation-steps.md) | [测试选件分发](../../interaction/using/about-offers-simulation.md) |
+| [交互实施步骤](../../interaction/using/implementation-steps.md) | [正在测试选件分发](../../interaction/using/about-offers-simulation.md) |
 | [实时/设计环境](../../interaction/using/live-design-environments.md) | [在电子邮件中添加选件](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
 | [创建优惠空间](../../interaction/using/creating-offer-spaces.md) | [用例：在网站中添加选件](../../interaction/using/offers-on-an-inbound-channel.md) |

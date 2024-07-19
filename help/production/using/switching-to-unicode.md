@@ -19,7 +19,7 @@ ht-degree: 0%
 
 
 
-对于现有 **prod** 在Linux/PostgreSQL实例中，切换到unicode的步骤如下所示：
+对于Linux/PostgreSQL中的现有&#x200B;**prod**&#x200B;实例，切换到Unicode的步骤如下：
 
 1. 停止写入数据库的进程：
 
@@ -62,7 +62,7 @@ ht-degree: 0%
    vi config-prod.xml
    ```
 
-   添加 **u** 与数据库标识符相关的值前面的字符(**databaseId**)：
+   在与数据库标识符(**databaseId**)相关的值前添加&#x200B;**u**&#x200B;字符：
 
    ```
    <web>

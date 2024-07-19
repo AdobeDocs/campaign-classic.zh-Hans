@@ -16,9 +16,9 @@ ht-degree: 15%
 
 # 关于Adobe ID {#about-adobe-id}
 
-AdobeIdentity Management System (IMS)可帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的AdobeID的详细信息，请参阅 [此页面](https://helpx.adobe.com/cn/enterprise/using/identity.html).
+AdobeIdentity Management System (IMS)可帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的AdobeID的详细信息，请参阅[此页面](https://helpx.adobe.com/cn/enterprise/using/identity.html)。
 
-Campaign用户可以使用其Adobe ID连接到Adobe Campaign控制台，而不是 [本地用户/密码身份验证](../../platform/using/access-management-operators.md). 此实施具有以下优势：
+Campaign用户可以使用其Adobe ID连接到Adobe Campaign控制台，而不是[本机用户/密码身份验证](../../platform/using/access-management-operators.md)。 此实施具有以下优势：
 
 * 所有 Experience Cloud 解决方案都可以使用相同的 ID。
 * 使用具有不同集成的Adobe Campaign时，将保留连接。
@@ -27,9 +27,9 @@ Campaign用户可以使用其Adobe ID连接到Adobe Campaign控制台，而不�
 
 >[!IMPORTANT]
 >
-> 请注意，在Campaign v8中，不允许使用用户/密码（又称本机身份验证）连接。 **Adobe建议从Campaign v7.3.5开始执行此迁移，以便能够顺利迁移到Campaign v8。**
+> 请注意，在Campaign v8中，不允许使用用户/密码（又称本机身份验证）连接。 **Adobe建议从Campaign v7.3.5开始执行此迁移以便能够顺利迁移到Campaign v8。**
 >
->了解如何在中迁移到Adobe IMS [本节](../../technotes/using/ac-ims.md).
+>在[本节](../../technotes/using/ac-ims.md)中了解如何迁移到Adobe IMS。
 >
 
 
@@ -51,5 +51,5 @@ Campaign用户可以使用其Adobe ID连接到Adobe Campaign控制台，而不�
 | 有用页面 | 其他资源 |
 |---|---|
 | [配置IMS](../../integrations/using/configuring-ims.md) | [Experience Cloud常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
-| [实施IMS](../../integrations/using/implementing-ims.md) | [访问管理](../../platform/using/access-management.md) |
-| [IMS疑难解答](../../integrations/using/ims-troubleshooting.md) | [安装Campaign包](../../installation/using/installing-campaign-standard-packages.md) |
+| [正在实施IMS](../../integrations/using/implementing-ims.md) | [访问管理](../../platform/using/access-management.md) |
+| [IMS疑难解答](../../integrations/using/ims-troubleshooting.md) | [正在安装Campaign包](../../installation/using/installing-campaign-standard-packages.md) |

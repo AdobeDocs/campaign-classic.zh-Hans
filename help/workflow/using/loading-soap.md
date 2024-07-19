@@ -17,9 +17,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->此 **加载(SOAP)** 仅当具有 **联合数据访问(FDA)** 模块已安装。 请核实您的许可协议。
+>仅当您安装了&#x200B;**FDA（联合数据访问）**&#x200B;模块时，**加载(SOAP)**&#x200B;活动才可用。 请核实您的许可协议。
 
-此 **加载(SOAP)** 除了活动之外， **数据加载(RDBMS)** 活动。
+如果无法在外部数据库中直接通过FDA收集数据，则除了&#x200B;**数据加载(RDBMS)**&#x200B;活动之外，还会使用&#x200B;**加载(SOAP)**&#x200B;活动。
 
 操作如下：
 
@@ -35,13 +35,13 @@ ht-degree: 4%
 
    ![](assets/soap_load_003.png)
 
-1. 选择 **[!UICONTROL Click here to view and edit analysis results]** 以指定每个已标识的列。
+1. 选择&#x200B;**[!UICONTROL Click here to view and edit analysis results]**&#x200B;以指定每个已识别的列。
 
    ![](assets/soap_load_001.png)
 
-   如果要更新示例，请选择 **[!UICONTROL Re-analyze the example]**.
+   如果要更新示例，请选择&#x200B;**[!UICONTROL Re-analyze the example]**。
 
-   您还可以通过以下方式个性化列数据的格式 **[!UICONTROL Advanced parameters]** 链接。 有关格式化导入数据的详细信息，请参阅此 [部分](../../platform/using/executing-import-jobs.md).
+   您还可以通过&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接将列数据的格式个性化。 有关格式化导入数据的详细信息，请参阅此[部分](../../platform/using/executing-import-jobs.md)。
 
 1. 您可以使用行号作为标识符和/或指定SOAP调用返回多个元素。
 1. 根据功能输入以下选项卡脚本：

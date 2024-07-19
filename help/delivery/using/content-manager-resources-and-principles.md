@@ -26,11 +26,11 @@ ht-degree: 4%
 
 内容配置需要以下资源：
 
-* 数据架构： XML内容结构的描述。 有关详细信息，请参见 [数据架构](data-schemas.md).
-* 数据输入表单：构建数据输入屏幕。 有关详细信息，请参见 [输入表单](input-forms.md).
-* 图像：数据输入表单中使用的图像。 有关详细信息，请参见 [映像管理](formatting.md#image-management).
-* 样式表：使用XSLT语言设置输出文档的格式。 有关详细信息，请参见 [格式化](formatting.md).
-* JavaScript模板：使用JavaScript语言设置输出文档的格式。 有关详细信息，请参见 [发布模板](publication-templates.md).
-* JavaScript代码：用于数据聚合的JavaScript代码。 有关详细信息，请参见 [汇总](publication-templates.md#aggregator).
-* 发布模板：发布模板的定义。 有关详细信息，请参见 [发布模板](publication-templates.md).
-* 内容：要创建和发布的内容实例。 有关详细信息，请参见 [使用内容模板](using-a-content-template.md).
+* 数据架构： XML内容结构的描述。 有关详细信息，请参阅[数据架构](data-schemas.md)。
+* 数据输入表单：构建数据输入屏幕。 有关详细信息，请参阅[输入表单](input-forms.md)。
+* 图像：数据输入表单中使用的图像。 有关详情，请参阅[映像管理](formatting.md#image-management)。
+* 样式表：使用XSLT语言设置输出文档的格式。 有关详细信息，请参阅[格式化](formatting.md)。
+* JavaScript模板：使用JavaScript语言设置输出文档的格式。 有关详细信息，请参阅[发布模板](publication-templates.md)。
+* JavaScript代码：用于数据聚合的JavaScript代码。 有关详细信息，请参阅[汇总](publication-templates.md#aggregator)。
+* 发布模板：发布模板的定义。 有关详细信息，请参阅[发布模板](publication-templates.md)。
+* 内容：要创建和发布的内容实例。 有关详细信息，请参阅[使用内容模板](using-a-content-template.md)。

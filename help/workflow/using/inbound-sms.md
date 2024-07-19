@@ -15,15 +15,15 @@ ht-degree: 4%
 
 
 
-此 **入站SMS** 利用活动，可从外部帐户下载并处理短信。
+**入站SMS**&#x200B;活动允许您从外部帐户下载和处理短信。
 
 ## 属性 {#properties}
 
 ![](assets/sms_rec_edit.png)
 
-的第一个选项卡 **入站SMS** 利用活动，可输入SMS消息的路由参数，并输入接收每条消息时要执行的脚本。 第二个选项卡用于为活动分配计划，第三个选项卡用于定义活动的到期条件。
+**入站SMS**&#x200B;活动的第一个选项卡允许您输入SMS消息的路由参数，并输入接收每条消息时要执行的脚本。 第二个选项卡用于为活动分配计划，第三个选项卡用于定义活动的到期条件。
 
-1. **[!UICONTROL SMS routing]**：选择要用于短信恢复的外部帐户。 外部帐户是通过 **[!UICONTROL Administration > Platform > External accounts]** 树节点。
+1. **[!UICONTROL SMS routing]**：选择要用于短信恢复的外部帐户。 通过树的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点配置外部帐户。
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 
@@ -31,4 +31,4 @@ ht-degree: 4%
 
 1. **[!UICONTROL Expiration]**
 
-此 **[!UICONTROL Script]**， **[!UICONTROL Schedule]** 和 **[!UICONTROL Expiry]** 有关选项卡的详情，请参阅 [入站电子邮件](inbound-emails.md).
+[入站电子邮件](inbound-emails.md)中详细介绍了&#x200B;**[!UICONTROL Script]**、**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;选项卡。

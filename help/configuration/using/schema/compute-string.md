@@ -33,15 +33,15 @@ compute-string：==EMPTY
 
 ## 说明 {#description-1}
 
-此 `<compute-string>` 元素允许您生成基于XTK表达式的字符串，以根据多个值在界面中显示“构建”标签。
+通过`<compute-string>`元素，可生成基于XTK表达式的字符串，以根据多个值在界面中显示“生成”标签。
 
 ## 使用和使用环境 {#use-and-context-of-use-1}
 
-当 `<compute-string>` 定义， `<compute-string>` 默认情况下，输入元素时包含架构中的主键值。
+如果未定义`<compute-string>`，则默认情况下将输入架构中主键值的`<compute-string>`元素。
 
 ## 属性说明 {#attribute-description-1}
 
-* **expr（字符串）**： XTK和/或Xpath表达式
+* **expr （字符串）**： XTK和/或Xpath表达式
 
 ## 示例 {#examples-1}
 

@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # 个性化和隐私 {#privacy}
 
-## URL个性化 {#url-personalization}
+## URL PERSONALIZATION {#url-personalization}
 
-向内容添加个性化链接时，请始终避免在URL的主机名部分进行任何个性化设置，以避免潜在的安全缺口。 绝不应该在所有URL属性中使用以下示例&lt;`a href="">` 或 `<img src="">`：
+向内容添加个性化链接时，请始终避免在URL的主机名部分进行任何个性化设置，以避免潜在的安全缺口。 绝不应该在所有URL属性&lt;`a href="">`或`<img src="">`中使用以下示例：
 
 * `<%= url >`
 * `https://<%= url >`
@@ -25,13 +25,13 @@ ht-degree: 2%
 
 ### 推荐
 
-要验证并确保未使用上文，请通过以下方式运行跟踪URL表上的查询： [Campaign通用查询编辑器](../../platform/using/steps-to-create-a-query.md) 或者，使用中的筛选条件创建工作流 [查询活动](../../workflow/using/query.md).
+要验证并确保您未使用以上内容，请通过[Campaign通用查询编辑器](../../platform/using/steps-to-create-a-query.md)对跟踪URL表运行查询，或在[查询活动](../../workflow/using/query.md)中创建具有筛选条件的工作流。
 
 例如：
 
-1. 创建工作流并添加 **查询** 活动。 [了解详情](../../workflow/using/query.md)。
+1. 创建工作流并添加&#x200B;**查询**&#x200B;活动。 [了解详情](../../workflow/using/query.md)。
 
-1. 打开 **查询** 活动，并根据以下内容创建过滤器： `nmsTrackingUrl` 表如下：
+1. 打开&#x200B;**查询**&#x200B;活动并在`nmsTrackingUrl`表上创建筛选器，如下所示：
 
    `source URL starts with http://<% or source URL starts with https://<%`
 
@@ -48,13 +48,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->单击格式错误的签名URL时，将返回此错误： `Requested URL '…' was not found.`
+>单击格式错误的签名URL时，返回此错误： `Requested URL '…' was not found.`
 
-此外，您还可以使用增强功能来禁用在以前的内部版本中生成的URL。 默认情况下，此功能处于禁用状态。 您可以联系 [客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 以启用此功能。
+此外，您还可以使用增强功能来禁用在以前的内部版本中生成的URL。 默认情况下，此功能处于禁用状态。 您可以联系[客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以启用此功能。
 
 如果您在19.1.4内部版本上运行，则在使用跟踪链接或使用锚点标记进行投放时可能会遇到问题。 如果出现这种情况，建议您禁用URL签名。
 
-作为Campaign托管、托管Cloud Service或混合型客户，您必须联系 [客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) 禁用URL签名。
+作为Campaign托管、托管Cloud Service或混合型客户，您必须联系[客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)以禁用URL签名。
 
 如果您在混合架构中运行Campaign，则在启用URL签名之前，请确保已如下所示升级托管的中源实例：
 
@@ -68,15 +68,15 @@ ht-degree: 2%
 
 要禁用以前内部版本中生成的URL，请同时在所有Campaign服务器上执行以下步骤：
 
-1. 在服务器配置文件中(`serverConf.xml`)，更改 **blockRedirectForUnsignedTrackingLink** 选项至 **true**.
-1. 重新启动 `nlserver` 服务。
-1. 在 `tracking` 服务器，重新启动 `web` 服务器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
+1. 在服务器配置文件(`serverConf.xml`)中，将&#x200B;**blockRedirectForUnsignedTrackingLink**&#x200B;选项更改为&#x200B;**true**。
+1. 重新启动`nlserver`服务。
+1. 在`tracking`服务器上，重新启动`web`服务器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
 要启用URL签名，请同时在所有Campaign服务器上执行以下步骤：
 
-1. 在服务器配置文件中(`serverConf.xml`)，更改 **signEmailLinks** 选项，至 **true**.
-1. 重新启动 **nlserver** 服务。
-1. 在 `tracking` 服务器，重新启动 `web` 服务器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
+1. 在服务器配置文件(`serverConf.xml`)中，将&#x200B;**signEmailLinks**&#x200B;选项更改为&#x200B;**true**。
+1. 重新启动&#x200B;**nlserver**&#x200B;服务。
+1. 在`tracking`服务器上，重新启动`web`服务器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
 ## 数据限制
 
@@ -86,17 +86,17 @@ ht-degree: 2%
 
 要执行此操作，请按照以下步骤进行：
 
-1. 浏览至 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** Campaign资源管理器的文件夹。
+1. 浏览到Campaign资源管理器的&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**&#x200B;文件夹。
 
-1. 创建数据架构，作为 **[!UICONTROL Extension of a schema]**.
+1. 创建数据架构，作为&#x200B;**[!UICONTROL Extension of a schema]**。
 
    ![](assets/privacy-data-restriction.png)
 
-1. 选择 **[!UICONTROL External Account]** (extAccount)。
+1. 选择&#x200B;**[!UICONTROL External Account]** (extAccount)。
 
 1. 在最后一个向导屏幕中，编辑新的“srcSchema”以限制对所有密码字段的访问：
 
-   您可以替换主元素(`<element name="extAccount" ... >`)，按照：
+   您可以通过以下方式替换主元素(`<element name="extAccount" ... >`)：
 
    ```sql
    <element name="extAccount">
@@ -149,7 +149,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >您可以替换 `$(loginId) = 0 or $(login) = 'admin'` 替换为 `hasNamedRight('admin')` 允许所有具有管理员权限的用户查看这些密码。
+   >您可以将`$(loginId) = 0 or $(login) = 'admin'`替换为`hasNamedRight('admin')`，以允许所有具有管理员权限的用户查看这些密码。
 
 ## 带PI的Protect页面
 
@@ -162,7 +162,7 @@ ht-degree: 2%
 
 要保护您的页面，请执行以下步骤：
 
-1. 添加 `robots.txt` 文件，该文件位于Web服务器的根目录下（Apache或IIS）。 以下是文件的内容：
+1. 在Web服务器（Apache或IIS）的根目录下添加`robots.txt`文件。 以下是文件的内容：
 
    ```sql
    # Make changes for all web spiders
@@ -170,17 +170,17 @@ ht-degree: 2%
    *Disallow: /
    ```
 
-   对于IIS，请参阅 [此页面](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
+   对于IIS，请参阅[此页面](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files)。
 
-   对于Apache，您可以将该文件放入 **/var/www/robots.txt** (Debian)。
+   对于Apache，您可以将文件放在&#x200B;**/var/www/robots.txt** (Debian)中。
 
-1. 有时添加 **robots.txt** 文件的安全性不够。 例如，如果其他网站包含指向您的页面的链接，则该链接可能会显示在搜索结果中。
+1. 有时添加&#x200B;**robots.txt**&#x200B;文件的安全性不够。 例如，如果其他网站包含指向您的页面的链接，则该链接可能会显示在搜索结果中。
 
-   除了 **robots.txt** 文件，建议添加 **X-Robots-Tag** 标题。 您可以在Apache或IIS中以及在 **serverConf.xml** 配置文件。
+   除了&#x200B;**robots.txt**&#x200B;文件外，还建议添加&#x200B;**X-Robots-Tag**&#x200B;标头。 您可以在Apache或IIS以及&#x200B;**serverConf.xml**&#x200B;配置文件中执行该操作。
 
-   有关更多信息，请参阅 [本文](https://developers.google.com/search/reference/robots_meta_tag).
+   有关详细信息，请参阅[本文](https://developers.google.com/search/reference/robots_meta_tag)。
 
 
 ## 隐私请求
 
-请参阅 [此页面](../../platform/using/privacy-management.md) 有关Adobe Campaign中隐私管理的概念和实施步骤的一般信息。 您还可以找到最佳实践以及用户流程和角色的概述。
+请参阅[此页面](../../platform/using/privacy-management.md)，了解有关隐私管理概念以及Adobe Campaign中实施步骤的一般信息。 您还可以找到最佳实践以及用户流程和角色的概述。

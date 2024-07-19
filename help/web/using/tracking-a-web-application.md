@@ -35,9 +35,9 @@ Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序
 
    * **转化率**：显示导航路径所有步骤的人数。
    * **跳出率**：仅显示第一步的人数
-   * **转化漏斗**：每一步的丢失率。
+   * **转化漏斗**：每一步之间的丢失率。
 
-  此外， **扇区** 类型图根据人口来源显示人口。
+  此外，**扇区**&#x200B;类型图表根据源显示群体。
 
 ## 识别流量源 {#identifying-the-traffic-source}
 
@@ -60,7 +60,7 @@ Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序
 
 ## 使用数字内容编辑器(DCE)设计的Web应用程序 {#web-applications-designed-with-digital-content-editor--dce-}
 
-使用HTML内容编辑器创建Web应用程序时 —  **数字内容编辑器(DCE)**  — 跟踪标记插入自 **[!UICONTROL Properties]** 选项卡中。 有关数字内容编辑器(DCE)的更多信息，请参阅 [本节](about-campaign-html-editor.md).
+使用HTML内容编辑器 — **数字内容编辑器(DCE)**&#x200B;创建Web应用程序时 — 将从编辑器的&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡插入跟踪标记。 有关数字内容编辑器(DCE)的详细信息，请参阅[此部分](about-campaign-html-editor.md)。
 
 ![](assets/trackers_2.png)
 
@@ -68,6 +68,6 @@ Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序
 
 ![](assets/trackers_3.png)
 
-此 **[!UICONTROL Display blocks]** 图标允许您查看为页面定义的跟踪标记数量。
+通过&#x200B;**[!UICONTROL Display blocks]**&#x200B;图标，可查看为页面定义的跟踪标记数量。
 
 ![](assets/trackers_4.png)

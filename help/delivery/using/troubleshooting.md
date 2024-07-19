@@ -27,4 +27,4 @@ HTTP/2连接器：必须允许与以下服务器之间的通信：
 
 >[!NOTE]
 >
->有关两个连接器的详细信息，请参阅 [在Adobe Campaign中配置移动应用程序](configuring-the-mobile-application.md).
+>有关这两个连接器的更多信息，请参阅[在Adobe Campaign中配置移动应用程序](configuring-the-mobile-application.md)。

@@ -18,13 +18,13 @@ ht-degree: 1%
 
 ## 更改syslogd侦听端口 {#changing-the-syslogd-listening-port}
 
-默认情况下， **syslogd** 侦听端口为666 (udp)。 您可以根据需要使用环境变量对其进行更改。
+默认情况下，**syslogd**&#x200B;侦听端口为666 (udp)。 您可以根据需要使用环境变量对其进行更改。
 
 配置此变量后，所有Adobe Campaign模块都会考虑该变量。
 
 ### 在Linux中 {#in-linux}
 
-编辑 **customer.sh** 并添加以下行：
+编辑&#x200B;**customer.sh**&#x200B;文件并添加以下行：
 
 ```
 export TRACE_ADDR=localhost:<listening port>
@@ -32,7 +32,7 @@ export TRACE_ADDR=localhost:<listening port>
 
 ### 在Windows中 {#in-windows}
 
-您需要创建 **TRACE地址** 环境变量 **localhost** 值： **`<listening port="" />`**.
+您需要创建具有&#x200B;**localhost**&#x200B;值&#x200B;**`<listening port="" />`**&#x200B;的&#x200B;**TRACE_ADDR**&#x200B;环境变量。
 
 >[!IMPORTANT]
 >
@@ -40,8 +40,8 @@ export TRACE_ADDR=localhost:<listening port>
 
 ## 配置安全区域 {#configuring-security-zones}
 
-每个运算符都需要链接到区域才能登录到实例，并且运算符IP必须包含在安全区域中定义的地址或地址集中。 技术区域配置在Adobe Campaign服务器的配置文件中执行。 必须在控制台中定义运算符与安全区域的链接( **[!UICONTROL Administration > Access management > Operators]** 节点)。
+每个运算符都需要链接到区域才能登录到实例，并且运算符IP必须包含在安全区域中定义的地址或地址集中。 技术区域配置在Adobe Campaign服务器的配置文件中执行。 必须在控制台（**[!UICONTROL Administration > Access management > Operators]**&#x200B;节点）中定义运算符到安全区域的链接。
 
 >[!NOTE]
 >
->有关配置安全区域的详细信息，请参阅 [本节](../../installation/using/security-zones.md).
+>有关配置安全区域的详细信息，请参阅[本节](../../installation/using/security-zones.md)。

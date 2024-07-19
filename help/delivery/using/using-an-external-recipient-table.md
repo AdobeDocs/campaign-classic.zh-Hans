@@ -16,7 +16,7 @@ ht-degree: 16%
 
 
 
-如果投放表是外部表，则需要执行其他配置。 此 **[!UICONTROL nms:seedmember]** 必须扩展架构。 向种子地址添加制表符以定义适当的字段，如下所示：
+如果投放表是外部表，则需要执行其他配置。 必须扩展&#x200B;**[!UICONTROL nms:seedmember]**&#x200B;架构。 向种子地址添加制表符以定义适当的字段，如下所示：
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -24,4 +24,4 @@ ht-degree: 16%
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-此 **nms：seedMember** 模式扩展为 [本节](../../configuration/using/seed-addresses.md).
+**nms：seedMember**&#x200B;架构扩展为[此节](../../configuration/using/seed-addresses.md)。

@@ -28,7 +28,7 @@ ht-degree: 21%
 * [明细列表](schema/enumeration.md)
 * [帮助](schema/help.md)
 * [加入](schema/join.md)
-* [密钥](schema/key.md)
+* [键](schema/key.md)
 * [Keyfield](schema/keyfield.md)
 * [方法](schema/method.md)
 * [方法](schema/methods.md)

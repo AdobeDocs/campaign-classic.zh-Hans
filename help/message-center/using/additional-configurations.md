@@ -20,13 +20,13 @@ ht-degree: 6%
 
 ## 监测阈值 {#monitoring-thresholds}
 
-您可以配置出现在以下位置的指示器的警告阈值（橙色）和警报阈值（红色）： **消息中心服务级别** 和 **消息中心处理时间** 报表(请参阅 [访问事务性消息报告](../../message-center/using/about-transactional-messaging-reports.md))。
+您可以配置在&#x200B;**消息中心服务级别**&#x200B;和&#x200B;**消息中心处理时间**&#x200B;报告中出现的指示器的警告阈值（橙色）和警报阈值（红色）（请参阅[访问事务性消息报告](../../message-center/using/about-transactional-messaging-reports.md)）。
 
 为此请执行以下操作步骤：
 
-1. 在上打开部署向导 **执行实例**.
+1. 在&#x200B;**执行实例**&#x200B;上打开部署向导。
 
-1. 转到 **[!UICONTROL Message Center]** 页面。
+1. 转到&#x200B;**[!UICONTROL Message Center]**&#x200B;页面。
 
 1. 使用箭头可更改阈值。
 
@@ -34,13 +34,13 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->队列中待处理的事件数显示在 [系统指示器](../../production/using/monitoring-processes.md#system-indicators) Adobe Campaign进程监视页面的部分。 有关部署向导的详细信息，请参阅 [本节](../../installation/using/deploying-an-instance.md#deployment-wizard).
+>队列中待处理的事件数显示在Adobe Campaign进程监视页面的[系统指示器](../../production/using/monitoring-processes.md#system-indicators)部分中。 有关部署向导的详细信息，请参阅[此部分](../../installation/using/deploying-an-instance.md#deployment-wizard)。
 
 ## 清除事件 {#purging-events}
 
-您可以使用 [部署向导](../../production/using/database-cleanup-workflow.md#deployment-wizard) 配置数据在数据库中存储的时长。
+您可以使用[部署向导](../../production/using/database-cleanup-workflow.md#deployment-wizard)配置数据在数据库中存储的时长。
 
-事件清除由自动执行 [数据库清理工作流](../../production/using/database-cleanup-workflow.md). 此工作流会清除在执行实例上接收并存储的事件，以及在控制实例上存档的事件。
+事件清除由[数据库清理工作流](../../production/using/database-cleanup-workflow.md)自动执行。 此工作流会清除在执行实例上接收并存储的事件，以及在控制实例上存档的事件。
 
 根据需要使用箭头来更改清除设置。
 
@@ -52,7 +52,7 @@ ht-degree: 6%
 
 ![](assets/messagecenter_delete_events_002.png)
 
-有关数据库清理工作流的详细信息，请参见 [本节](../../production/using/database-cleanup-workflow.md).
+有关数据库清理工作流的详细信息，请参阅[此部分](../../production/using/database-cleanup-workflow.md)。
 
 
 ## 技术工作流 {#technical-workflows}
@@ -63,11 +63,11 @@ ht-degree: 6%
 
 ### 控制实例工作流 {#control-instance-workflows}
 
-在控制实例上，无论您注册了一个还是多个执行实例，都必须为每个实例创建一个存档工作流 **[!UICONTROL Message Center execution instance]** 外部帐户。 单击 **[!UICONTROL Create the archiving workflow]** 按钮创建和启动工作流。
+在控制实例上，无论您注册了一个还是多个执行实例，都必须为每个&#x200B;**[!UICONTROL Message Center execution instance]**&#x200B;外部帐户创建一个存档工作流。 单击&#x200B;**[!UICONTROL Create the archiving workflow]**&#x200B;按钮以创建并启动工作流。
 
 ![](assets/messagecenter_archiving_002.png)
 
-然后，可以从访问这些工作流 **管理>生产>消息中心** 文件夹。 创建后，存档工作流将自动启动。
+然后，可以从&#x200B;**管理>生产>消息中心**&#x200B;文件夹访问这些工作流。 创建后，存档工作流将自动启动。
 
 <!--**Minimal architecture**
 
@@ -77,11 +77,11 @@ Once the control and execution modules are installed on the same instance, you m
 
 ### 执行实例工作流 {#execution-instance-workflows}
 
-在执行实例上，可以从访问事务性消息传递的技术工作流 **管理>生产>消息中心** 文件夹。 你只要启动它们就行了。 列表中的工作流包括：
+在执行实例上，可以从&#x200B;**管理>生产>消息中心**&#x200B;文件夹访问事务性消息传递的技术工作流。 你只要启动它们就行了。 列表中的工作流包括：
 
-* **[!UICONTROL Processing batch events]** (内部名称： **[!UICONTROL batchEventsProcessing]** )：利用此工作流，可在将队列中的批量事件链接到消息模板之前对其进行划分。
-* **[!UICONTROL Processing real time events]** (内部名称： **[!UICONTROL rtEventsProcessing]** )：利用此工作流，可在将队列中的实时事件链接到消息模板之前对其进行划分。
-* **[!UICONTROL Update event status]** (内部名称： **[!UICONTROL updateEventStatus]** )：利用此工作流，可将状态归因于事件。
+* **[!UICONTROL Processing batch events]** （内部名称： **[!UICONTROL batchEventsProcessing]** ）：利用此工作流，可在批次事件链接到消息模板之前划分队列中的批次事件。
+* **[!UICONTROL Processing real time events]** （内部名称： **[!UICONTROL rtEventsProcessing]** ）：利用此工作流，可在将队列中的实时事件链接到消息模板之前对其进行划分。
+* **[!UICONTROL Update event status]** （内部名称： **[!UICONTROL updateEventStatus]** ）：此工作流允许您将状态归因于事件。
 
   可以使用以下事件状态：
 
@@ -94,9 +94,9 @@ Once the control and execution modules are installed on the same instance, you m
 
 ### 存档工作流计划
 
-避免修改 **存档工作流** 在控制实例上运行的计划。 否则，从执行实例中拉取的某些跟踪数据可能会丢失。
+避免修改在控制实例上运行的&#x200B;**存档工作流**&#x200B;计划。 否则，从执行实例中拉取的某些跟踪数据可能会丢失。
 
-如果您确实修改了存档工作流计划，则还必须更改 **跟踪工作流** 在执行实例上安排与控制实例上的存档工作流计划相匹配。
+如果您确实修改了存档工作流计划，则还必须更改执行实例上的&#x200B;**跟踪工作流**&#x200B;计划，以匹配控制实例上的存档工作流计划。
 
 ## 配置多品牌策略 {#configuring-multibranding}
 
@@ -104,7 +104,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 ### 先决条件 {#prerequisites}
 
-* 所有主机都必须添加到实例的配置文件中(`config-<instance>.xml`)。
+* 所有主机都必须添加到实例(`config-<instance>.xml`)的配置文件中。
 * 必须为每个品牌分配一个子域。
 * 如果在HTTPS页面上完成Web跟踪，则您必须拥有适用于所有品牌的HTTPS证书。
 
@@ -118,7 +118,7 @@ Once the control and execution modules are installed on the same instance, you m
 
    >[!NOTE]
    >
-   >了解如何在中创建执行实例类型外部帐户 [本节](../../message-center/using/configuring-instances.md#control-instance).
+   >在[此部分](../../message-center/using/configuring-instances.md#control-instance)中了解如何创建执行实例类型外部帐户。
 
 1. 扩展nms：extAccount架构以添加跟踪URL：
 
@@ -129,7 +129,7 @@ Once the control and execution modules are installed on the same instance, you m
 
    >[!NOTE]
    >
-   >了解如何在中扩展现有架构 [扩展模式](../../configuration/using/extending-a-schema.md) 部分。
+   >在[扩展架构](../../configuration/using/extending-a-schema.md)部分中了解如何扩展现有架构。
 
 1. 修改nms：extAccount表单：
 
@@ -167,12 +167,12 @@ Once the control and execution modules are installed on the same instance, you m
 
 为此请执行以下操作步骤：
 
-1. 为每个品牌创建一个外部帐户，该帐户的内部名称与 [执行实例](#execution-instance) （步骤1）。
+1. 为每个品牌创建一个与[执行实例](#execution-instance)上定义的内部名称相同的外部帐户（步骤1）。
 
 1. 为每个品牌创建一个默认投放模板。
 
    >[!NOTE]
    >
-   >    了解如何在中创建投放模板 [本节](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template).
+   >    在[本节](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template)中了解如何创建投放模板。
 
-1. 在投放模板的 **[!UICONTROL Properties]**，设置品牌外部帐户的路由。
+1. 在投放模板的&#x200B;**[!UICONTROL Properties]**&#x200B;中，将路由设置为品牌的外部帐户。

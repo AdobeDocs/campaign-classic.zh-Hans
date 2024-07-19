@@ -33,7 +33,7 @@ Adobe Campaign不限制文件大小。 但您可以通过配置IIS/Apache来实�
 
 ## 中继
 
-请参阅 [此页面](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) 以了解更多信息。
+有关详细信息，请参阅[此页面](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays)。
 
 默认情况下，所有动态页面都会自动中继到启动Web模块的计算机的本地Tomcat服务器。 你可以选择不转送其中一些。 如果您没有使用某些Adobe Campaign模块（如webapp、交互、某些jsp），则可以从中继规则中删除它们。
 
@@ -43,13 +43,13 @@ Adobe Campaign不限制文件大小。 但您可以通过配置IIS/Apache来实�
 
 ## 外连接保护
 
-Campaign Classic 实例可以通过 JavaScript 代码（工作流等）受限。 要允许新URL，管理员需要在 [serverConf.xml文件](../../installation/using/the-server-configuration-file.md).
+Campaign Classic 实例可以通过 JavaScript 代码（工作流等）受限。 若要允许新URL，管理员需要在[serverConf.xml文件](../../installation/using/the-server-configuration-file.md)中引用它。
 
 存在三种连接保护模式：
 
 * **阻止** ：阻止所有不属于允许列表的URL，并出现错误消息。 这是升级后默认模式。
-* **许可** 列入允许列表 ：允许所有不属于的URL。
-* **警告** 列入允许列表 ：允许不在上的所有URL，但JS解释器会发出警告，以便管理员可以收集。 此模式会添加JST-310027警告消息。
+* 列入允许列表 **允许** ：允许所有不属于的URL。
+* 列入允许列表 **警告** ：允许不在上的所有URL，但JS解释器会发出警告，以便管理员可以收集这些URL。 此模式会添加JST-310027警告消息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -65,11 +65,11 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）受限。
 
 ## 命令限制（服务器端）
 
-阻止列表中包含多个命令，不能使用execCommand函数执行。 专用Unix用户为执行外部命令提供了额外的安全性。 对于托管安装，此限制将自动应用。 对于内部部署，您可以按照中的说明手动设置此限制 [此页面](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). 另外， **[!UICONTROL Script]** 和 **[!UICONTROL External task]** 工作流活动不可用（新安装的实例）。
+阻止列表中包含多个命令，不能使用execCommand函数执行。 专用Unix用户为执行外部命令提供了额外的安全性。 对于托管安装，此限制将自动应用。 对于内部部署，您可以按照[此页面](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands)中的说明手动设置此限制。 此外，**[!UICONTROL Script]**&#x200B;和&#x200B;**[!UICONTROL External task]**&#x200B;工作流活动不可用（新安装的实例）。
 
 ## 其他配置
 
-您可以为所有页面添加额外的HTTP标头(有关更多信息，请参阅 [此页面](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands))：
+您可以为所有页面添加额外的HTTP标头（有关详细信息，请参阅[此页面](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands)）：
 
 * 您可以添加其他标头，如HSTS、X-FRAMEOPTIONS、CSP...
 * 您必须在测试环境中测试这些组件，然后才能将其应用于生产环境。
@@ -78,10 +78,10 @@ Campaign Classic 实例可以通过 JavaScript 代码（工作流等）受限。
   >
   >可以通过添加某些标头来破坏Adobe Campaign。
 
-Adobe Campaign允许您在中设置普通密码 `<dbcnx .../>` 元素。 请勿使用此功能。
+Adobe Campaign允许您在`<dbcnx .../>`元素中设置纯密码。 请勿使用此功能。
 
-默认情况下，Adobe Campaign不会将会话附加到特定IP，但您可以将其激活以防止会话被盗。 为此，请在 [serverConf.xml文件](../../installation/using/the-server-configuration-file.md)，将checkIPConsistent属性设置为 **true** 在 `<authentication>` 节点。
+默认情况下，Adobe Campaign不会将会话附加到特定IP，但您可以将其激活以防止会话被盗。 为此，在[serverConf.xml文件](../../installation/using/the-server-configuration-file.md)中，将`<authentication>`节点中的checkIPConsistent属性设置为&#x200B;**true**。
 
-默认情况下，Adobe Campaign的MTA不使用安全连接将内容发送到SMTP服务器。 您必须启用此功能（可能会降低投放速度）。 为此，请设置 **enableTLS** 到 **true** 在 `<smtp ...>` 节点。
+默认情况下，Adobe Campaign的MTA不使用安全连接将内容发送到SMTP服务器。 您必须启用此功能（可能会降低投放速度）。 为此，请在`<smtp ...>`节点中将&#x200B;**enableTLS**&#x200B;设置为&#x200B;**true**。
 
 您可以缩短身份验证节点中会话的生命周期（sessionTimeOutSec属性）。

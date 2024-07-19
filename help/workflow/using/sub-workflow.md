@@ -7,7 +7,7 @@ exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '419'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,39 +15,39 @@ ht-degree: 0%
 
 
 
-此 **[!UICONTROL Sub-workflow]** 利用活动，可触发另一个工作流的执行并恢复结果。 通过此活动，您可在使用简化界面的同时使用复杂的工作流。
+**[!UICONTROL Sub-workflow]**&#x200B;活动允许您触发另一个工作流的执行并恢复结果。 通过此活动，您可在使用简化界面的同时使用复杂的工作流。
 
 您可以在单个工作流中调用多个子工作流。 子工作流被同步执行。
 
-在下面的示例中，主工作流使用跳转调用子工作流。 有关跳转类型图形对象的详细信息，请参见 [本节](jump-start-point-and-end-point.md).
+在下面的示例中，主工作流使用跳转调用子工作流。 有关跳转类型图形对象的详细信息，请参阅[本节](jump-start-point-and-end-point.md)。
 
 1. 创建要用作另一个工作流中的子工作流的工作流。
-1. 插入 **[!UICONTROL Jump (end point)]** 工作流开头优先级为1的活动。 如果您有多个“端点”类型跳转，Adobe Campaign将使用编号最低的“端点”跳转。
-1. 插入 **[!UICONTROL Jump (start point)]** 工作流结束时优先级为2的活动。 如果您有多个“起点”类型跳转，Adobe Campaign将使用具有最高数字的“起点”跳转。
+1. 在工作流开头插入优先级为1的&#x200B;**[!UICONTROL Jump (end point)]**&#x200B;活动。 如果您有多个“端点”类型跳转，Adobe Campaign将使用编号最低的“端点”跳转。
+1. 在工作流末尾插入优先级为2的&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活动。 如果您有多个“起点”类型跳转，Adobe Campaign将使用具有最高数字的“起点”跳转。
 
    ![](assets/subworkflow_jumps.png)
 
    >[!NOTE]
    >
-   >如果子工作流活动引用的工作流具有多个 **[!UICONTROL Jump]** 活动，子工作流在编号最低的“端点”类型跳转和编号最高的“起点”类型跳转之间执行。
+   >如果子工作流活动引用具有多个&#x200B;**[!UICONTROL Jump]**&#x200B;活动的工作流，则子工作流将在编号最低的“端点”类型跳转和编号最高的“起点”类型跳转之间执行。
    >
    >要使子工作流正确运行，必须只有一个编号最低的“终点”类型跳转，并且只有一个编号最高的“起点”类型跳转。
 
 1. 完成并保存此“子工作流”。
 1. 创建主工作流。
-1. 插入 **[!UICONTROL Sub-workflow]** 活动并打开它。
-1. 从中选择要使用的工作流 **[!UICONTROL Workflow template]** 下拉列表。
+1. 插入&#x200B;**[!UICONTROL Sub-workflow]**&#x200B;活动并将其打开。
+1. 从&#x200B;**[!UICONTROL Workflow template]**&#x200B;下拉列表中选择您要使用的工作流。
 
    ![](assets/subworkflow_selection.png)
 
 1. 您还可以添加配置脚本以更改引用的工作流。
-1. 单击 **[!UICONTROL Ok]**。它会自动创建一个叫客过渡，其标签为 **[!UICONTROL Jump (start point)]** 活动。
+1. 单击 **[!UICONTROL Ok]**。它会从所选工作流中自动创建标签为&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活动的叫客过渡。
 
    ![](assets/subworkflow_outbound.png)
 
 1. 运行工作流。
 
-运行后，作为子工作流调用的工作流将保留在 **[!UICONTROL Being edited]** 状态，表示以下内容：
+运行后，被调用为子工作流的工作流将保持&#x200B;**[!UICONTROL Being edited]**&#x200B;状态，这意味着以下内容：
 
 * 无法右键单击过渡来显示目标。
 * 无法显示中间群体的计数。
@@ -62,16 +62,16 @@ ht-degree: 0%
 ## 输入参数（可选） {#input-parameters--optional-}
 
 * 表名
-* 架构
+* 模式
 
 每个入站事件必须指定由这些参数定义的目标。
 
 ## 输出参数 {#output-parameters}
 
 * 表名
-* 架构
+* 模式
 * recCount
 
-这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms：recipient）和 **[!UICONTROL recCount]** 是表中的元素数。
+这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
 
-* targetSchema：此值是工作表的架构。 此参数对于以下类型的所有过渡有效： **[!UICONTROL tableName]** 和 **[!UICONTROL schema]**.
+* targetSchema：此值是工作表的架构。 此参数对于具有&#x200B;**[!UICONTROL tableName]**&#x200B;和&#x200B;**[!UICONTROL schema]**&#x200B;的所有过渡都有效。

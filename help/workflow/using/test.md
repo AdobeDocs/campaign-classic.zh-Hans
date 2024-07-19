@@ -15,15 +15,15 @@ ht-degree: 1%
 
 
 
-A **测试** type activity可激活满足与其关联的条件的第一个过渡。 若不满足任何条件且 **[!UICONTROL Use the default fork]** 选项，则将激活默认过渡。
+**Test**&#x200B;类型活动激活满足与其关联的条件的第一个过渡。 如果未满足任何条件，并且激活了&#x200B;**[!UICONTROL Use the default fork]**&#x200B;选项，则将激活默认过渡。
 
-条件是一个JavaScript表达式，必须将其计算为“true”或“false”。 要输入表达式，请单击条件名称右侧的图标，然后选择 **[!UICONTROL Edit...]**.
+条件是一个JavaScript表达式，其计算结果必须为“true”或“false”。 要输入表达式，请单击条件名称右侧的图标，然后选择&#x200B;**[!UICONTROL Edit...]**。
 
 ![](assets/edit_test.png)
 
-有关通过工作流JavaScript访问的应用服务器的所有其他JavaScript函数和SOAP方法的详细信息，请参阅 [JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans).
+有关通过工作流JavaScript访问的应用服务器的所有其他JavaScript函数和SOAP方法的详细信息，请参阅[JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)。
 
-您还可以直接从此编辑器插入变量。 有关如何使用变量的更多信息，请参阅 [本节](javascript-scripts-and-templates.md#variables).
+您还可以直接从此编辑器插入变量。 有关如何使用变量的更多信息，请参阅[此章节](javascript-scripts-and-templates.md#variables)。
 
 可以从活动属性编辑窗口中添加、删除或排序条件，也可以从过渡中修改条件。
 

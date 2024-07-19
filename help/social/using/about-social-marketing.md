@@ -16,10 +16,10 @@ ht-degree: 7%
 
 # 关于社交媒体营销{#about-social-marketing}
 
-此 **管理社交网络** （社交营销）旨在管理社交网络的应用程序允许您通过X(以前称为Twitter)与客户和潜在客户进行交互。
+用于管理社交网络的&#x200B;**管理社交网络** （社交营销）应用程序允许您通过X (以前称为Twitter)与客户和潜在客户进行交互。
 
-了解在中集成Campaign和X的关键步骤 [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html?lang=zh-Hans){target="_blank"}.
+在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html?lang=zh-Hans){target="_blank"}中了解集成Campaign和X的关键步骤。
 
-作为内部部署或混合型部署客户，必须配置并启用您的X外部帐户。 对于混合配置， **中间源** 此外，还必须通过到中间源平台的活动连接来设置选项卡。
+作为内部部署或混合型部署客户，必须配置并启用您的X外部帐户。 对于混合配置，**中间源**&#x200B;选项卡也必须设置为与中间源平台的活动连接。
 
 ![](assets/tw-external-account.png)

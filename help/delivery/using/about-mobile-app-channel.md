@@ -9,13 +9,13 @@ exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
 source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
 # 移动应用程序渠道入门{#about-mobile-app-channel}
 
-此 **移动应用程序渠道** 允许您使用Adobe Campaign平台通过应用程序向iOS和Android终端发送个性化的推送通知。
+**移动应用程序频道**&#x200B;允许您使用Adobe Campaign平台通过应用程序向iOS和Android终端发送个性化的推送通知。
 
 提供了两个投放渠道：
 
@@ -29,7 +29,7 @@ ht-degree: 7%
 
   >[!IMPORTANT]
   >
-  >Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 年发布，并将影响您的 Adobe Campaign 实施。您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。您已经可以检查并执行操作。 在本节中了解详情 [Adobe Campaign v8技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hans){target="_blank"}.
+  >Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 年发布，并将影响您的 Adobe Campaign 实施。您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。您已经可以检查并执行操作。 请参阅此[Adobe Campaign v8技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hans){target="_blank"}以了解详情。
 
 与这两个渠道相对应，活动工作流中有两个投放活动。 两个事务性消息模板也可用于事务性消息传递。
 
@@ -46,16 +46,16 @@ ht-degree: 7%
 >* 您需要确保发送到移动应用程序的通知符合Apple (Apple推送通知服务)和Google (Firebase Cloud Messaging)指定的先决条件和条件。
 >* 警告：在某些国家/地区，法律要求您向用户告知收集的数据类型移动应用程序及其处理目的。 你必须检查法律。
 
-此 **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)工作流可更新移动设备上的取消订阅通知。 有关此工作流的详细信息，请参阅 [技术工作流列表](../../workflow/using/about-technical-workflows.md).
+**[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)工作流可更新移动设备上的通知取消订阅。 有关此工作流的详细信息，请参阅[技术工作流列表](../../workflow/using/about-technical-workflows.md)。
 
-Adobe Campaign与HTTP/2 APN兼容。 有关配置步骤的更多详细信息，请参阅 [本节](configuring-the-mobile-application.md) 部分。
+Adobe Campaign与HTTP/2 APN兼容。 有关配置步骤的更多详细信息，请参阅[此部分](configuring-the-mobile-application.md)部分。
 
-有关如何创建投放的全局信息，请参阅 [本节](steps-about-delivery-creation-steps.md).
+有关如何创建投放的全局信息，请参阅[此章节](steps-about-delivery-creation-steps.md)。
 
 
 ## 配置推送通知渠道 {#push-notification-configuration}
 
-要使用Adobe Campaign发送推送通知，您必须先配置环境和应用程序。 在开始使用Adobe Campaign发送推送通知之前，您需要确保移动应用程序和Adobe Experience Platform中的标记已具有配置和集成。 Adobe Experience Platform Mobile SDK通过与Android和iOS兼容的SDK为您的移动设备提供客户端集成API。 SDK配置通过数据收集UI进行管理，以实现灵活配置和基于规则的可扩展集成。 了解详情，请参阅 [Adobe Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings).
+要使用Adobe Campaign发送推送通知，您必须先配置环境和应用程序。 在开始使用Adobe Campaign发送推送通知之前，您需要确保移动应用程序和Adobe Experience Platform中的标记已具有配置和集成。 Adobe Experience Platform Mobile SDK通过与Android和iOS兼容的SDK，为您的移动设备提供客户端集成API。 SDK 配置通过数据收集 UI 进行管理，以实现灵活配置和基于规则的可扩展集成。 请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/push-settings)以了解详情。
 
 
 ## 数据路径 {#data-path}
@@ -76,7 +76,7 @@ Adobe Campaign与HTTP/2 APN兼容。 有关配置步骤的更多详细信息，�
 
 ### 步骤2：交付 {#step-2--delivery}
 
-营销人员定位应用程序订阅者。 投放过程将连接设置发送到通知服务(适用于Android的iOS证书和项目密钥)、通知ID（推送ID）和通知内容。 通知服务发送通知到目标终端。
+营销人员定位应用程序订阅者。 投放过程将连接设置发送到通知服务(Android的iOS证书和项目密钥)、通知ID（推送ID）和通知的内容。 通知服务发送通知到目标终端。
 
 Adobe Campaign中提供了以下信息：
 
@@ -103,4 +103,4 @@ Adobe Campaign服务器必须能够与iOS HTTP/2连接器的443端口上的APNs�
 
 使用iOS HTTP/2连接器时，MTA和Web服务器必须能够联系端口443上的APN。
 
-如果您需要通过代理使用iOS HTTP/2连接器，请参阅此 [页面](../../installation/using/file-res-management.md#proxy-connection-configuration).
+如果您需要通过代理使用iOS HTTP/2连接器，请参阅此[页面](../../installation/using/file-res-management.md#proxy-connection-configuration)。

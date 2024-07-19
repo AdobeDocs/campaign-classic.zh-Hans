@@ -15,11 +15,11 @@ ht-degree: 2%
 
 # 关于内容管理{#about-content-management}
 
-Adobe Campaign Content Manager模块是一个特定Campaign Classic [内置包](../../installation/using/installing-campaign-standard-packages.md) 进行安装以创建定期新闻稿或网站。 它可以帮助您创建、验证和发布消息。
+Adobe Campaign Content Manager模块是特定的Campaign Classic[内置包](../../installation/using/installing-campaign-standard-packages.md)，可以安装该模块以创建定期新闻稿或网站。 它可以帮助您创建、验证和发布消息。
 
 >[!NOTE]
 >
->本节介绍内容管理模块。 有关如何设计电子邮件投放内容的更多信息，请参阅 [本节](defining-the-email-content.md).
+>本节介绍内容管理模块。 有关如何设计电子邮件投放内容的更多信息，请参阅[此章节](defining-the-email-content.md)。
 
 内容管理模块结合了工作组、工作流和内容聚合功能。 这允许自动设置消息的格式：电子邮件、邮件、短信、Web等。
 
@@ -37,7 +37,7 @@ Adobe Campaign Content Manager模块是一个特定Campaign Classic [内置包](
 * 分离数据内容及其呈现方式（以XML格式生成），
 * 以多种格式（html、txt、XML等）生成文档 基于样式表，以确保符合图形字符的要求，
 * 恢复和自动聚合外部内容流，
-* 与工作流协作以进行数据验证和检查。
+* Collaboration具有用于数据验证和检查的工作流。
 
 但是，这种内容创建模式确实涉及一些限制，具体包括：
 

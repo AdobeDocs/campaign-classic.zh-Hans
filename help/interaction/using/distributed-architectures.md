@@ -57,15 +57,15 @@ ht-degree: 1%
 
 ## 包配置 {#packages-configuration}
 
-任何直接链接到的架构扩展 **互动** （优惠、建议、收件人等） 必须在执行实例上部署。
+直接链接到&#x200B;**交互**&#x200B;的任何架构扩展（优惠、建议、收件人等） 必须在执行实例上部署。
 
 必须在所有实例（控制和执行）上安装交互包。 另外提供了两个软件包：一个软件包将安装在控制实例上，另一个软件包将安装在每个执行实例上。
 
 >[!NOTE]
 >
->安装软件包时， **长** 键入字段 **nms：proposition** 表，例如建议ID， **int64** 键入字段。 有关此类数据的详情，请参见 [本节](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>在安装包时，**nms：proposition**&#x200B;表的&#x200B;**long**&#x200B;类型字段（如建议ID）将变为&#x200B;**int64**&#x200B;类型字段。 此类型的数据在[此部分](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)中有详细说明。
 
-必须在每个实例上配置数据保留持续时间(通过 **[!UICONTROL Data purge]** 窗口)。 在执行实例上，此期间必须对应于要计算的分类规则（滑动期间）和资格规则所需的历史深度。
+必须在每个实例上配置数据保留持续时间（通过部署向导中的&#x200B;**[!UICONTROL Data purge]**&#x200B;窗口）。 在执行实例上，此期间必须对应于要计算的分类规则（滑动期间）和资格规则所需的历史深度。
 
 在控制实例上：
 
@@ -77,8 +77,8 @@ ht-degree: 1%
    * 选择 **[!UICONTROL Execution instance]**。
    * 勾选 **[!UICONTROL Enabled]** 选项。
    * 完成执行实例的连接参数。
-   * 每个执行实例都必须链接到一个ID。 此ID是在您单击 **[!UICONTROL Initialize connection]** 按钮。
-   * 检查使用的应用程序类型： **[!UICONTROL Message Center]**， **[!UICONTROL Interaction]**，或同时使用两者。
+   * 每个执行实例都必须链接到一个ID。 此ID是在您单击&#x200B;**[!UICONTROL Initialize connection]**&#x200B;按钮时分配的。
+   * 检查使用的应用程序类型： **[!UICONTROL Message Center]**、**[!UICONTROL Interaction]**&#x200B;或两者。
    * 输入使用的FDA帐户。 必须在执行实例上创建运算符，并且必须对相关实例的数据库具有以下读写权限：
 
      ```
@@ -101,7 +101,7 @@ ht-degree: 1%
      >
      >如果遇到错误，您可以查阅同步工作流和选件通知。 您可以在应用程序的技术工作流中找到这些内容。
 
-如果出于优化原因，在执行实例上仅复制部分营销数据库，则可以指定链接到环境的受限架构，以允许用户仅使用执行实例上可用的数据。 您可以使用执行实例上不可用的数据创建选件。 要实现此目的，您必须通过在出站渠道上限制此规则(**[!UICONTROL Taken into account if]** 字段)。
+如果出于优化原因，在执行实例上仅复制部分营销数据库，则可以指定链接到环境的受限架构，以允许用户仅使用执行实例上可用的数据。 您可以使用执行实例上不可用的数据创建选件。 为此，您必须通过在出站频道（**[!UICONTROL Taken into account if]**&#x200B;字段）上限制此规则，在其他频道上取消激活该规则。
 
 ![](assets/ita_filtering.png)
 
@@ -113,13 +113,13 @@ ht-degree: 1%
 >
 >这些选项只能用于特定的维护案例。
 
-* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**：环境在给定实例上同步的最后日期。
+* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**：在给定实例上同步环境的上次日期。
 * **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**：给定架构中的建议从一个实例同步到另一个实例的上次日期。
-* **`NmsInteraction_MapWorkflowId`**：一个选项，其中包含生成的所有同步工作流的列表。
+* **`NmsInteraction_MapWorkflowId`**：包含生成的所有同步工作流的列表的选项。
 
 以下选项在执行实例上可用：
 
-**NmsExecutionInstanceId**：包含实例ID的选项。
+**NmsExecutionInstanceId**：选项包含实例ID。
 
 ## 软件包安装 {#packages-installation}
 
@@ -168,7 +168,7 @@ ALTER TABLE nmspropositionrcp
 
 ### Oracle {#oracle}
 
-编辑的大小 **数字** type不会导致值或索引被重写。 因此，这是当务之急。
+编辑&#x200B;**Number**&#x200B;类型的大小不会导致值或索引被重写。 因此，这是当务之急。
 
 要执行的查询如下所示：
 

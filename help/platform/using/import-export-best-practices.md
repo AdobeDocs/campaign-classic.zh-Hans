@@ -23,15 +23,15 @@ ht-degree: 2%
 
 ## 使用工作流模板 {#using-import-templates}
 
-大多数旨在导入数据的工作流应包含以下活动： **[!UICONTROL Load file]**， **[!UICONTROL Reconciliation]**， **[!UICONTROL Segmentation]**， **[!UICONTROL Deduplication]**， **[!UICONTROL Update data]**.
+大多数旨在导入数据的工作流应包含以下活动： **[!UICONTROL Load file]**、**[!UICONTROL Reconciliation]**、**[!UICONTROL Segmentation]**、**[!UICONTROL Deduplication]**、**[!UICONTROL Update data]**。
 
 使用工作流模板可以非常方便地准备类似的导入并确保数据库内的数据一致性。
 
-在许多项目中，导入是在没有 **[!UICONTROL Deduplication]** 活动，因为项目中使用的文件没有重复项。 导入不同文件时有时会出现重复项。 然后，重复数据消除就变得非常困难。 因此，在所有导入工作流中，重复数据删除步骤都是很好的预防措施。
+在许多项目中，生成的导入没有&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动，因为项目中使用的文件没有重复项。 导入不同文件时有时会出现重复项。 然后，重复数据消除就变得非常困难。 因此，在所有导入工作流中，重复数据删除步骤都是很好的预防措施。
 
 请勿假定传入的数据是一致和正确的，或者IT部门或Adobe Campaign主管会处理此数据。 在项目进行期间，请牢记数据清理。 在导入数据时执行重复数据删除、协调和维护一致性。
 
-有关为导入数据而设计的通用工作流模板的示例，请参阅 [示例：用于导入数据的工作流模板](../../platform/using/creating-import-export-templates.md) 部分。
+在[示例：用于导入数据的工作流模板](../../platform/using/creating-import-export-templates.md)部分中提供了为导入数据而设计的通用工作流模板的示例。
 
 ## 使用平面文件格式 {#using-flat-file-formats}
 
@@ -56,7 +56,7 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 ## 使用压缩 {#using-compression}
 
-尽可能将压缩文件用于导入和导出。 默认支持GZIP。 在导入文件时，可添加预处理；在提取数据时，可添加后处理，分别位于 **[!UICONTROL Load file]** 和 **[!UICONTROL Extract file]** 工作流活动。
+尽可能将压缩文件用于导入和导出。 默认支持GZIP。 分别在&#x200B;**[!UICONTROL Load file]**&#x200B;和&#x200B;**[!UICONTROL Extract file]**&#x200B;工作流活动中导入文件时添加预处理，提取数据时添加后处理。
 
 **相关主题：**
 
@@ -74,7 +74,7 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 要维护Adobe Campaign数据库中的数据一致性，请遵循以下原则：
 
 * 如果导入的数据与Adobe Campaign中的引用表匹配，则应将其与工作流中的该表进行协调。 应拒绝不匹配的记录。
-* 确保导入的数据始终 **“已标准化”** （电子邮件、电话号码、直邮地址），并且此标准化是可靠的，并且不会随着时间推移而改变。 如果不是这种情况，数据库中可能会出现一些重复项，并且由于Adobe Campaign不提供进行“模糊”匹配的工具，因此将很难管理和删除它们。
+* 确保导入的数据始终是&#x200B;**“规范化”**（电子邮件、电话号码、直邮地址），并且此规范化是可靠的，不会随着年月而改变。 如果不是这种情况，数据库中可能会出现一些重复项，并且由于Adobe Campaign不提供进行“模糊”匹配的工具，因此将很难管理和删除它们。
 * 事务型数据应具有协调键值，并与现有数据进行协调，以避免创建重复项。
-* **按顺序导入相关文件**. 如果导入由多个相互依赖的文件组成，则工作流应确保这些文件按正确的顺序导入。 当文件失败时，不会导入其他文件。
-* **删除重复项**，在导入数据时协调并保持一致性。
+* **按顺序**&#x200B;导入相关文件。 如果导入由多个相互依赖的文件组成，则工作流应确保这些文件按正确的顺序导入。 当文件失败时，不会导入其他文件。
+* 在导入数据时，**删除重复项**，协调并保持一致性。

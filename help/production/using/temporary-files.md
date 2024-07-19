@@ -21,11 +21,11 @@ ht-degree: 4%
 
 系统投入生产时，可能会显示如下错误消息（特别是在投放日志中）：
 
-*无法将文件&#39;/tmp/tmp0000.tmp&#39;重命名为/usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml ；(errno=18， Invalid cross-device link) (iRc=-52)*
+*无法将文件“/tmp/tmp0000.tmp”重命名为/usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml ；（errno=18，无效的跨设备链接）(iRc=-52)*
 
 原因如下：
 
-Adobe Campaign在下生成临时文件 **/tmp**，然后重命名它们以将其移动到 **/usr/local/neolane/nl6/var**. 当两个文件夹(**/tmp** 和 **/usr/local/neolane/nl6/var**，实际上是指向的符号链接 **/var/nl6**)对应不同的设备。 此 **df** 命令用于验证。
+Adobe Campaign在&#x200B;**/tmp**&#x200B;下生成临时文件，然后将其重命名以将其移动到&#x200B;**/usr/local/neolane/nl6/var**。 当两个文件夹（**/tmp**&#x200B;和&#x200B;**/usr/local/neolane/nl6/var**，实际上是指向&#x200B;**/var/nl6**&#x200B;的符号链接）都对应到不同的设备时，会发生此错误。 **df**&#x200B;命令用于验证。
 
 要更正此问题，必须在与目标相同的设备上生成临时文件。
 

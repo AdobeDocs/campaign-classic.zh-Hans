@@ -22,7 +22,7 @@ Adobe Campaign允许您停止跟踪通过Cookie或Web信标选择退出行为跟
 
 >[!NOTE]
 >
->当脚本编写始终遵循中所述的准则时 [安全和隐私检查清单](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>当脚本编写始终遵循[安全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中所述的准则时。
 
 ## 配置横幅 {#configuring-the-banner-}
 
@@ -34,7 +34,7 @@ Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调
 >
 >要创建您自己的横幅，必须个性化现成的横幅。
 
-要激活横幅，您必须配置Web应用程序属性。 请参阅 [设计Web应用程序](designing-a-web-application.md) 部分。
+要激活横幅，您必须配置Web应用程序属性。 请参阅[设计Web应用程序](designing-a-web-application.md)部分。
 
 如果激活了Web跟踪，则您可以：
 
@@ -63,7 +63,7 @@ Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调
       
 ```
 
-您必须更换 **请在此处插入您的消息** 包含跟踪信息的块。 此替换应在与选择退出横幅相关的新个性化块中执行。
+必须将&#x200B;**请在此插入消息**&#x200B;替换为包含跟踪信息的块。 此替换应在与选择退出横幅相关的新个性化块中执行。
 
 横幅使用特定的CSS交付。 但是，您可以在创建和配置网页时覆盖样式。 请参见[此页面](content-editor-interface.md)。
 
@@ -71,7 +71,7 @@ Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调
 
 Adobe Campaign附带的API允许您管理Cookie值并检索用户首选项。
 
-Cookie名称为 **acoptout**. 通用值包括：
+Cookie名称为&#x200B;**acoptout**。 通用值包括：
 
 * 0：用户已允许Web跟踪（默认值）
 * 1：用户已禁止进行Web跟踪
@@ -81,9 +81,9 @@ Cookie名称为 **acoptout**. 通用值包括：
 
 * **NL.ClientWebTracking.allow()**：设置选择退出Cookie值以允许Web跟踪。 默认情况下，允许Web跟踪。
 * **NL.ClientWebTracking.forbid()**：设置选择退出Cookie值以禁止Web跟踪。 Web跟踪需要禁止用户输入。
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**：在用户单击接受或拒绝按钮后，关闭选择退出Cookie横幅。 （在单击事件冒泡阶段期间）
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**：在用户单击“接受”或“拒绝”按钮后，关闭选择退出Cookie横幅。 （在单击事件冒泡阶段期间）
 
-  bannerDomElt {DOMElement} 需要删除的Cookie横幅的根DOM元素
+  bannerDomElt {DOMElement}需要删除的Cookie横幅的根DOM元素
 
 * **NL.ClientWebTracking.hasUserPrefs()**：如果用户已选择他们的Web跟踪首选项，则返回true。
 * **NL.ClientWebTracking.getUserPrefs()**：返回定义用户首选项的选择退出Cookie值。
@@ -92,7 +92,7 @@ Cookie名称为 **acoptout**. 通用值包括：
 
 * **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**：为要插入到JSSP页面中的选择退出横幅生成标记
 
-  **escapeJs {Boolean}**：当生成的标记需要转义以便在JavaScript中使用时，返回true。
+  **escapeJs {Boolean}**：当生成的标记需要转义以便在JavaScript中使用时，则为true。
 
   它会返回需要在页面中打印的选择退出横幅标记的HTML。
 
@@ -108,7 +108,7 @@ Cookie名称为 **acoptout**. 通用值包括：
 
   通过将选择退出横幅插入JSSP页面来呈现该横幅的标记。 此函数在Jssp中为&lt;% %>之间，按原样调用
 
-  **escapeJs {Boolean}**：当生成的标记需要转义以便在JavaScript中使用时，为true
+  **escapeJs {Boolean}**：当生成的标记需要转义以便在JavaScript中使用时，返回true
 
 JSSP示例：
 

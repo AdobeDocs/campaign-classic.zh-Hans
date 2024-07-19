@@ -22,13 +22,13 @@ ht-degree: 2%
 
 本文档详细介绍迁移的先决条件，以及迁移到Adobe Campaign Classic v7的步骤。 步骤和可选设置取决于您的配置。
 
-移徙进程必须谨慎进行，必须事先充分考虑其影响，必须严格执行这一程序。 必须仅由专家用户执行。 我们强烈建议您联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ，然后再开始任何迁移过程。
+移徙进程必须谨慎进行，必须事先充分考虑其影响，必须严格执行这一程序。 必须仅由专家用户执行。 我们强烈建议在开始任何迁移过程之前联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 必须预先在测试/暂存环境中测试迁移，以确保其顺利运行且无任何错误。 只有在迁移的测试环境经过完全验证后，才能迁移生产环境。
 
 >[!NOTE]
 >
->有关Adobe Campaign v7的新增功能和改进的详情，请参见 [发行说明](../../rn/using/latest-release.md).
+>在[发行说明](../../rn/using/latest-release.md)中详细介绍了Adobe Campaign v7的新增功能和改进。
 
 
 ## 先决条件
@@ -36,11 +36,11 @@ ht-degree: 2%
 * 迁移过程必须由专家用户执行。 您必须至少获得Adobe Campaign的数据库专家、系统管理员和应用程序开发人员的协助。
 * 在开始迁移之前，请检查您使用的系统和系统组件是否与v7兼容。 [了解详情](../../rn/using/compatibility-matrix.md)。
 * 如果您使用Adobe Campaign Cloud Messaging（中间源部署），请在开始之前联系Adobe客户关怀部门。
-* 在开始迁移过程之前，您 **必须** 备份您的数据。
+* 在开始迁移过程之前，您&#x200B;**必须**&#x200B;备份您的数据。
 * 迁移过程可能需要几天才能完成。
 * Adobe Campaign v7比以前的版本更安全：这将影响配置准则，以避免数据损坏之类的问题并保持数据库中的数据完整性。 作为客户，您负责测试所有配置，包括工作流。
 
-有关更多先决条件，请参阅 [此页面](../../migration/using/before-starting-migration.md).
+[此页面](../../migration/using/before-starting-migration.md)中提供了更多先决条件。
 
 
 ## 现代化环境 {#modernizing-your-environment}
@@ -49,11 +49,11 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->有关Adobe Campaign v7支持的版本的更多信息，请参阅 [兼容性矩阵](../../rn/using/compatibility-matrix.md).
+>有关Adobe Campaign v7支持的版本的更多信息，请参阅[兼容性矩阵](../../rn/using/compatibility-matrix.md)。
 
 ## 关键迁移步骤 {#key-migration-steps}
 
-有关迁移到Adobe Campaign v7的详细过程，请参见 [此页面](../../migration/using/before-starting-migration.md).
+有关迁移到Adobe Campaign v7的一般过程，请参见[此页面](../../migration/using/before-starting-migration.md)。
 
 
 ## 特定配置 {#specific-configurations}

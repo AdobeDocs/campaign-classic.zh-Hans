@@ -33,11 +33,11 @@ parameters：==param
 
 ## 说明 {#description-13}
 
-此元素定义了一组 `<parameter>`  元素。
+此元素定义了一组`<parameter>`元素。
 
 ## 使用和使用环境 {#use-and-context-of-use-8}
 
-此元素是必需的，即使对于单个元素 `<param>` 的子元素 `<method>`  元素。
+此元素是必需的，即使对于`<method>`元素的单个`<param>`子元素也是如此。
 
 ## 属性说明 {#attribute-description-13}
 

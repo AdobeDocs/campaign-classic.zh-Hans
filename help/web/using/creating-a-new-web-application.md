@@ -18,19 +18,19 @@ ht-degree: 20%
 
 在创建过程中选择Web应用程序类型。
 
-转到 **营销活动** 选项卡，然后选择 **[!UICONTROL Web Applications]** 菜单。 单击 **[!UICONTROL Create]** 按钮。选择要使用的Web应用程序模板：
+转到&#x200B;**营销活动**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Web Applications]**&#x200B;菜单。 单击 **[!UICONTROL Create]** 按钮。选择要使用的Web应用程序模板：
 
 ![](assets/webapp_create_from_campaign.png)
 
 >[!NOTE]
 >
->始终保护可能包含个人信息的页面。 请参阅 [安全和隐私检查清单](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
+>始终保护可能包含个人信息的页面。 请参阅[安全和隐私检查清单](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
 
 此模板确定Web应用程序的类型。 您可以创建：
 
 1. Web窗体（+配置文件修改）
 
-   通过Web窗体，您可以为网页提供输入或选择字段：用户输入的信息可以存储在Adobe Campaign数据库中。 有关详细信息，请参见 [Web窗体](about-web-forms.md).
+   通过Web窗体，您可以为网页提供输入或选择字段：用户输入的信息可以存储在Adobe Campaign数据库中。 有关详细信息，请参阅[Web窗体](about-web-forms.md)。
 
 1. Web 应用程序
 
@@ -42,18 +42,18 @@ ht-degree: 20%
 
 1. 调查
 
-   Adobe Campaign使您能够 **调查管理器** 选项，用于设计和管理在线调查并处理其结果：动态字段创建、得分管理、答案导出和专用报告。 如需详细信息，请参阅[此小节](../../surveys/using/about-surveys.md)。
+   Adobe Campaign允许您通过&#x200B;**调查管理器**&#x200B;选项设计和管理在线调查并处理其结果：动态字段创建、得分管理、答案导出和专用报告。 如需详细信息，请参阅[此小节](../../surveys/using/about-surveys.md)。
 
    >[!CAUTION]
    >
-   >**调查管理器** 是一个可选的Adobe Campaign模块。 请核实您的许可协议。
+   >**调查管理器**&#x200B;是可选的Adobe Campaign模块。 请核实您的许可协议。
 
 1. facebook应用程序
 
-   多亏了 **社交媒体营销** 选项，Adobe Campaign允许您在Facebook应用程序中发布个性化内容。 如需详细信息，请参阅[此小节](../../social/using/about-social-marketing.md)。
+   借助&#x200B;**社交营销**&#x200B;选项，Adobe Campaign允许您在Facebook应用程序中发布个性化内容。 如需详细信息，请参阅[此小节](../../social/using/about-social-marketing.md)。
 
    >[!CAUTION]
    >
-   >**社交媒体营销** 是一个可选的Adobe Campaign模块。 请核实您的许可协议。
+   >**社交营销**&#x200B;是一个可选的Adobe Campaign模块。 请核实您的许可协议。
 
 对于多种Web应用程序类型，页面配置模式以及可用配置可以相同。 如需详细信息，请参阅[此小节](about-web-forms.md)。

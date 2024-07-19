@@ -28,8 +28,8 @@ ht-degree: 7%
 
 要创建相应的方案，请应用以下阶段：
 
-1. 编辑 **[!UICONTROL Administration>Configuration>Data schemas]** Adobe Campaign节点，然后单击 **[!UICONTROL New]** .
-1. 选择 **[!UICONTROL Access data from an existing table or an SQL view]** 选项并单击 **[!UICONTROL Next]** .
+1. 编辑Adobe Campaign树的&#x200B;**[!UICONTROL Administration>Configuration>Data schemas]**&#x200B;节点，然后单击&#x200B;**[!UICONTROL New]** 。
+1. 选择&#x200B;**[!UICONTROL Access data from an existing table or an SQL view]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]** 。
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -41,9 +41,9 @@ ht-degree: 7%
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   架构必须使用 `<srcSchema>` 根元素，以便不生成表创建SQL脚本。
+   必须在`<srcSchema>`根元素上使用view=&quot;true&quot;属性填充架构，才能生成表创建SQL脚本。
 
-**示例** ：
+**示例**：
 
 ```
 <srcSchema name="recipient" namespace="cus" view="true">
@@ -58,6 +58,6 @@ ht-degree: 7%
 
 ## 访问外部数据库 {#accessing-an-external-database}
 
-此 **联合数据访问 — FDA** 选项使您可以访问存储在外部数据库中的数据。
+通过&#x200B;**联合数据访问 — FDA**&#x200B;选项，您可以访问存储在外部数据库中的数据。
 
-有关在外部数据库中访问数据的架构上执行的配置的详情，请参见 [此页面](../../installation/using/creating-data-schema.md).
+[此页面](../../installation/using/creating-data-schema.md)中详细描述了要用于架构访问外部数据库中的数据的配置。

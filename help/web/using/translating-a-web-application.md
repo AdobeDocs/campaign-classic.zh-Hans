@@ -18,11 +18,11 @@ ht-degree: 5%
 
 您可以翻译使用Adobe Campaign数字内容编辑器(DCE)创建的Web应用程序页面。
 
-如果您通过 **[!UICONTROL Localization]** 选项卡 **[!UICONTROL Properties]** 在用DCE编辑的页面中添加HTML内容块时，Web应用程序的新选项将变为可用。
+如果通过Web应用程序的&#x200B;**[!UICONTROL Properties]**&#x200B;中的&#x200B;**[!UICONTROL Localization]**&#x200B;选项卡至少选择一种其他语言，则在使用DCE编辑的页面中添加HTML内容块时，将有一个新选项可用。
 
 利用此选项，可指示是否必须翻译块内容。
 
-要翻译的字符串的收集方式与Web应用程序的其他字符串相同，方法是通过 **[!UICONTROL Translations]** 选项卡中。 有关详细信息，请参见[此页面](translating-a-web-form.md)。
+要翻译的字符串的收集方式与Web应用程序的其他字符串相同，方法是通过应用程序的&#x200B;**[!UICONTROL Translations]**&#x200B;选项卡。 有关详细信息，请参见[此页面](translating-a-web-form.md)。
 
 标记要翻译的字符串：
 
@@ -31,7 +31,7 @@ ht-degree: 5%
    ![](assets/dce_translation_3.png)
 
 1. 选择HTML块。
-1. 在右侧的参数块中， **[!UICONTROL Localization]** 选项允许您标记选定块的内容。 默认情况下，只翻译页面标题。
+1. 在右侧的参数块中，**[!UICONTROL Localization]**&#x200B;选项允许您标记所选块的内容。 默认情况下，只翻译页面标题。
 
    ![](assets/dce_translation_1.png)
 
@@ -50,7 +50,7 @@ ht-degree: 5%
 
      ![](assets/dce_translation_2.png)
 
-1. 完成字符串的标记后，返回到Web应用程序并选择 **[!UICONTROL Translations]** 选项卡。
+1. 完成字符串的标记后，返回到Web应用程序并选择&#x200B;**[!UICONTROL Translations]**&#x200B;选项卡。
 1. 选择 **[!UICONTROL Collect the strings to translate]**。在DCE中标记的字符串将添加到Web应用程序的字符串中。
 
    >[!NOTE]
@@ -59,4 +59,4 @@ ht-degree: 5%
 
 1. 翻译并批准字符串。
 
-   然后，您可以通过从中选择所需的语言来预览翻译 **[!UICONTROL Preview]** 选项卡。
+   然后，您可以通过从Web应用程序的&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡中选择所需的语言来预览翻译。

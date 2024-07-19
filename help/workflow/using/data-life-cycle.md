@@ -27,11 +27,11 @@ ht-degree: 5%
 
 * 显示目标
 
-  此菜单显示目标群体的可用数据以及工作表的结构(**[!UICONTROL Schema]** 选项卡)。
+  此菜单显示目标群体的可用数据以及工作表（**[!UICONTROL Schema]**&#x200B;选项卡）的结构。
 
   ![](assets/wf-right-click-display.png)
 
-  有关详细信息，请参见 [工作表和工作流模式](monitoring-workflow-execution.md#worktables-and-workflow-schema).
+  有关详细信息，请参阅[工作表和工作流架构](monitoring-workflow-execution.md#worktables-and-workflow-schema)。
 
 * 分析目标
 
@@ -39,7 +39,7 @@ ht-degree: 5%
 
   有关更多信息，请参阅此](../../reporting/using/using-the-descriptive-analysis-wizard.md)章节[。
 
-在执行工作流时清除目标数据。 只能访问最后一个工作表。 您可以配置工作流，使所有工作表保持可访问状态：选中 **[!UICONTROL Keep the result of interim populations between two executions]** 选项。
+在执行工作流时清除目标数据。 只能访问最后一个工作表。 您可以配置工作流以使所有工作表保持可访问状态：选中工作流属性中的&#x200B;**[!UICONTROL Keep the result of interim populations between two executions]**&#x200B;选项。
 
 但是，我们建议您避免在出现大量数据时激活此选项。
 
@@ -55,9 +55,9 @@ ht-degree: 5%
 %= targetData.FIELD %
 ```
 
-**[!UICONTROL Target extension]** (targetData)类型个性化元素不适用于定位工作流。 必须在工作流中构建投放目标，并在投放的集客过渡中指定。
+**[!UICONTROL Target extension]** (targetData)类型个性化元素不可用于定位工作流。 必须在工作流中构建投放目标，并在投放的集客过渡中指定。
 
-如果要创建投放验证，则需要基于构建验证目标 **[!UICONTROL Address substitution]** 模式，以便输入个性化数据。 有关更多信息，请参阅此](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof)章节[。
+如果要创建投放验证，则需要基于&#x200B;**[!UICONTROL Address substitution]**&#x200B;模式构建验证目标，以便输入个性化数据。 有关更多信息，请参阅此](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof)章节[。
 
 在以下示例中，我们将收集客户信息列表，以便在个性化电子邮件中使用。
 
@@ -83,23 +83,23 @@ ht-degree: 5%
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. 配置 **[!UICONTROL Enrichment]** 键入activity ，将收集的数据与Adobe Campaign数据库中已有的数据进行协调。
+1. 配置&#x200B;**[!UICONTROL Enrichment]**&#x200B;类型活动以将收集的数据与Adobe Campaign数据库中已存在的数据进行协调。
 
    在此，对帐密钥是帐号：
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. 然后配置 **[!UICONTROL Delivery]**：工作流基于模板创建，收件人由集客过渡指定。
+1. 然后配置&#x200B;**[!UICONTROL Delivery]**：它是基于模板创建的，收件人由集客过渡指定。
 
    ![](assets/wf-targetdata-sample-4.png)
 
    >[!CAUTION]
    >
-   >只能使用过渡中包含的数据来个性化投放。 **targetdata** 类型个性化字段仅适用于的集客群体 **[!UICONTROL Delivery]** 活动。
+   >只能使用过渡中包含的数据来个性化投放。 **targetData**&#x200B;类型个性化字段仅可用于&#x200B;**[!UICONTROL Delivery]**&#x200B;活动的入站群体。
 
 1. 在投放模板中，使用在工作流中收集的字段。
 
-   要执行此操作，请插入 **[!UICONTROL Target extension]** 键入个性化字段。
+   为此，请插入&#x200B;**[!UICONTROL Target extension]**&#x200B;类型个性化字段。
 
    ![](assets/wf-targetdata-sample-5.png)
 

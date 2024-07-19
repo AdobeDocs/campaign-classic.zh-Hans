@@ -19,12 +19,12 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->中介绍了有关投放创建的全局概念 [本节](steps-about-delivery-creation-steps.md).
+>有关投放创建的全局概念在[此部分](steps-about-delivery-creation-steps.md)中介绍。
 
 1. 创建新投放，例如从投放仪表板。
-1. 选择投放模板 **电子邮件投放（邮件）** 或您创建的任何电子邮件投放模板。 有关投放模板的详细信息，请参阅 [本节](about-templates.md).
+1. 选择投放模板&#x200B;**电子邮件投放（邮件）**&#x200B;或您创建的任何电子邮件投放模板。 有关投放模板的更多信息，请参阅[此章节](about-templates.md)。
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
 1. 使用标签、代码和描述标识投放。 如需详细信息，请参阅[此小节](steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
-1. 单击 **继续** 以确认此信息并显示消息配置窗口。
+1. 单击&#x200B;**继续**&#x200B;以确认此信息并显示消息配置窗口。

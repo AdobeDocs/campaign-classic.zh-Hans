@@ -47,22 +47,22 @@ ht-degree: 3%
 
 在Adobe Campaign中，可通过两种方式将动态图像从Target插入到电子邮件中：
 
-* 如果您使用的是数字内容编辑器，请选择现有图像并选择 **[!UICONTROL Insert]** > **[!UICONTROL Dynamic image served by Adobe Target]** 工具栏中。
+* 如果您使用的是数字内容编辑器，请选择现有图像，然后从工具栏中选择&#x200B;**[!UICONTROL Insert]** > **[!UICONTROL Dynamic image served by Adobe Target]**。
 
   ![](assets/target_5.png)
 
-* 如果使用标准编辑器，请将光标置于要插入图像的位置，然后选择 **[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]** 从个性化下拉菜单中。
+* 如果您使用的是标准编辑器，请将光标放在要插入图像的位置，然后从个性化下拉菜单中选择&#x200B;**[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]**。
 
   ![](assets/target_12.png)
 
 ### 定义图像参数 {#defining-image-parameters}
 
-* 此 **[!UICONTROL Default image]**&#x200B;的URL：在任何条件都不满足时将显示的图像。 您还可以从资源库中选择图像。
-* 此 **[!UICONTROL Target location]**：输入动态选件位置的名称。 您必须在Target活动中选择此位置。
-* 此 **[!UICONTROL Landing Page]**：如果您希望将默认图像重定向到默认登陆页面。 此URL仅适用于默认图像显示在最终电子邮件中的情况，并且是可选的。
-* 此 **[!UICONTROL Additional decision parameters]**：指定Adobe Target区段中定义的字段与Adobe Campaign字段之间的映射。 使用的Adobe Campaign字段必须在rawbox中指定。 在我们的示例中，我们添加了“国家/地区”字段。
+* **[!UICONTROL Default image]**&#x200B;的URL：未满足任何条件时将显示的图像。 您还可以从Assets库中选择图像。
+* **[!UICONTROL Target location]**：输入动态选件位置的名称。 您必须在Target活动中选择此位置。
+* **[!UICONTROL Landing Page]**：如果您希望将默认图像重定向到默认登陆页面。 此URL仅适用于默认图像显示在最终电子邮件中的情况，并且是可选的。
+* **[!UICONTROL Additional decision parameters]**：指定在Adobe Target区段中定义的字段与Adobe Campaign字段之间的映射。 使用的Adobe Campaign字段必须在rawbox中指定。 在我们的示例中，我们添加了“国家/地区”字段。
 
-如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 在中了解有关Target企业权限的更多信息 [此页面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 在[此页面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html)中了解有关Target企业权限的更多信息。
 
 ![](assets/target_13.png)
 
@@ -72,7 +72,7 @@ ht-degree: 3%
 
 在我们的示例中，我们需要两个重定向选件，第三个选件（默认选件）将在Adobe Campaign中定义。
 
-1. 要在Target Standard中创建新重定向选件，请通过 **[!UICONTROL Content]** 选项卡，单击 **[!UICONTROL Code offers]**.
+1. 要在Target Standard中创建新重定向选件，请在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中单击&#x200B;**[!UICONTROL Code offers]**。
 
 1. 单击 **[!UICONTROL Create]**，然后单击 **[!UICONTROL Redirect Offer]**。
 
@@ -88,7 +88,7 @@ ht-degree: 3%
 
 在Target中，您需要创建两个受众，对于要交付的不同内容，您的选件访问者将分类到该两个受众中。 为每个受众添加规则以定义能够查看选件的人员。
 
-1. 要在Target中创建新受众，请执行以下操作： **[!UICONTROL Audiences]** 选项卡，单击 **[!UICONTROL Create Audience]**.
+1. 要在Target中创建新受众，请在&#x200B;**[!UICONTROL Audiences]**&#x200B;选项卡中单击&#x200B;**[!UICONTROL Create Audience]**。
 
    ![](assets/audiences_1.png)
 
@@ -96,7 +96,7 @@ ht-degree: 3%
 
    ![](assets/audiences_2.png)
 
-1. 单击 **[!UICONTROL Add a rule]** 并选择类别。 规则使用特定标准来定位访客。 您可以通过添加条件或其他类别中创建新规则来优化规则。
+1. 单击&#x200B;**[!UICONTROL Add a rule]**&#x200B;并选择类别。 规则使用特定标准来定位访客。 您可以通过添加条件或其他类别中创建新规则来优化规则。
 
 1. 对其余受众执行相同的过程。
 
@@ -106,13 +106,13 @@ ht-degree: 3%
 
 ### 定义受众 {#defining-the-audience}
 
-1. 要创建体验定位活动，请从 **[!UICONTROL Activities]** 选项卡，单击 **[!UICONTROL Create Activity]** 则 **[!UICONTROL Experience Targeting]**.
+1. 要创建体验定位活动，请从&#x200B;**[!UICONTROL Activities]**&#x200B;选项卡中单击&#x200B;**[!UICONTROL Create Activity]**，然后单击&#x200B;**[!UICONTROL Experience Targeting]**。
 
    ![](assets/target_10.png)
 
-1. 选择 **[!UICONTROL Form]** 作为 **[!UICONTROL Experience Composer]**.
+1. 选择&#x200B;**[!UICONTROL Form]**&#x200B;作为&#x200B;**[!UICONTROL Experience Composer]**。
 
-1. 通过单击 **[!UICONTROL Change audience]** 按钮。
+1. 通过单击&#x200B;**[!UICONTROL Change audience]**&#x200B;按钮选择受众。
 
    ![](assets/target_10_2.png)
 
@@ -120,7 +120,7 @@ ht-degree: 3%
 
    ![](assets/target_10_3.png)
 
-1. 通过单击创建其他体验 **[!UICONTROL Add Experience Targeting]**.
+1. 通过单击&#x200B;**[!UICONTROL Add Experience Targeting]**&#x200B;创建其他体验。
 
 ### 定义位置和内容 {#defining-location-content}
 
@@ -130,7 +130,7 @@ ht-degree: 3%
 
    ![](assets/target_15.png)
 
-1. 单击下拉按钮并选择 **[!UICONTROL Change Redirect Offer]**.
+1. 单击下拉按钮并选择&#x200B;**[!UICONTROL Change Redirect Offer]**。
 
    ![](assets/target_content.png)
 
@@ -142,19 +142,19 @@ ht-degree: 3%
 
 ### 定义活动 {#defining-activity}
 
-此 **[!UICONTROL Target]** 窗口将汇总您的活动。 如有必要，您可以添加其他体验。
+**[!UICONTROL Target]**&#x200B;窗口汇总了您的活动。 如有必要，您可以添加其他体验。
 
 ![](assets/target_experience.png)
 
-此 **[!UICONTROL Goal & Settings]** 窗口允许您通过设置优先级、目标或持续时间来个性化活动。
+**[!UICONTROL Goal & Settings]**&#x200B;窗口允许您通过设置优先级、目标或持续时间来个性化活动。
 
-此 **[!UICONTROL Reporting Settings]** 部分允许您选择操作并编辑将决定何时实现目标的参数。
+**[!UICONTROL Reporting Settings]**&#x200B;部分允许您选择操作并编辑将决定何时实现目标的参数。
 
 ![](assets/target_experience_2.png)
 
 ## 预览并发送电子邮件 {#preview-send-email}
 
-在Adobe Campaign中，您现在可以预览电子邮件并测试其针对不同收件人的呈现方式。 您会注意到图像会根据创建的不同体验而发生更改。 要了解有关电子邮件创建的更多信息，请参阅此 [页面](../../delivery/using/defining-the-email-content.md).
+在Adobe Campaign中，您现在可以预览电子邮件并测试其针对不同收件人的呈现方式。 您会注意到图像会根据创建的不同体验而发生更改。 要了解有关电子邮件创建的更多信息，请参阅此[页面](../../delivery/using/defining-the-email-content.md)。
 
 您现在可以发送包含Target动态选件的电子邮件。
 

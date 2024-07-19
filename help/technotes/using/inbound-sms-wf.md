@@ -21,7 +21,7 @@ ht-degree: 5%
 
 ## 实现 {#implementation}
 
-1. 将扩展添加到 `nms:inSMS` 架构的位置。 该扩展会将新属性添加到 `nms:inSMS` 架构并跟踪来自中间源实例的inSMS记录主键。
+1. 向营销实例上的`nms:inSMS`架构添加扩展。 该扩展将向`nms:inSMS`架构添加新属性，并跟踪来自中间源实例的inSMS记录主键。
 
    ```xml
    <element img="nms:miniatures/mini-sms.png" label="Incoming SMS"
@@ -35,23 +35,23 @@ ht-degree: 5%
    </element>
    ```
 
-1. 要应用对架构所做的修改，请启动数据库更新向导。 可通过访问此向导 **工具** > **高级** > **更新数据库结构**. 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。 [了解更多信息](../../configuration/using/updating-the-database-structure.md)
+1. 要应用对架构所做的修改，请启动数据库更新向导。 此向导可通过&#x200B;**工具** > **高级** > **更新数据库结构**&#x200B;访问。 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。 [了解详情](../../configuration/using/updating-the-database-structure.md)
 
-1. 停止并备份包含以下内容的工作流 **入站SMS活动**.
+1. 停止并备份包含&#x200B;**入站SMS活动**&#x200B;的工作流。
 
-   使用以下格式备份相应的选项指针 `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
+   使用以下格式备份对应的选项指针`SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`。
 
 [了解有关备份的详细信息](../../production/using/backup.md)
 
-1. (**可选**)如果您已在使用调度程序活动，请打开工作流并按如下方式重新配置：
+1. （**可选**）如果您已在使用调度程序活动，请打开工作流并按如下方式重新配置它：
 
-   1. 从复制当前设置 **计划** 选项卡 **入站SMS** 活动到外部 **计划程序** 活动。
+   1. 将&#x200B;**入站SMS**&#x200B;活动的&#x200B;**计划**&#x200B;选项卡中的当前设置复制到外部&#x200B;**调度程序**&#x200B;活动中。
 
-   1. 在中禁用当前设置 **计划** 选项卡/ **入站SMS** 活动。
+   1. 在&#x200B;**入站SMS**&#x200B;活动的&#x200B;**计划**&#x200B;选项卡中禁用当前设置。
 
       ![](assets/inbound_sms_1.png)
 
-1. 更新 **入站SMS** 自定义脚本。
+1. 更新&#x200B;**入站短信**&#x200B;自定义脚本。
 
    更换下面的块。 请注意，如果您之前自定义了此代码，则此脚本可能会有所不同。
 
@@ -73,7 +73,7 @@ ht-degree: 5%
 
    请遵循以下先决条件：
 
-   * 输入实际值 `<EXTERNAL_ACCOUNT_ID>`，例如， `var iExtAccountId=72733155`.
+   * 输入`<EXTERNAL_ACCOUNT_ID>`的实际值，如`var iExtAccountId=72733155`。
    * 确保在自定义脚本中保留以下元素：
       * `_operation="insertOrUpdate"`
       * `_key="@midInSMSId,@extAccount-id"`

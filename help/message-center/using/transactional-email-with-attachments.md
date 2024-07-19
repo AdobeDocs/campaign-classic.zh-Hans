@@ -39,11 +39,11 @@ ht-degree: 2%
 
 ## Recommendations和护栏 {#important-notes}
 
-为避免性能问题，电子邮件中包含的图像不能超过100 KB。 默认设置的此限制可以从 `NmsDelivery_MaxDownloadedImageSize` 选项。 但是，Adobe强烈建议避免在电子邮件投放中使用大型图像。
+为避免性能问题，电子邮件中包含的图像不能超过100 KB。 默认设置的此限制可以从`NmsDelivery_MaxDownloadedImageSize`选项更改。 但是，Adobe强烈建议避免在电子邮件投放中使用大型图像。
 
-Adobe还建议限制附加文件的大小和数量。 默认情况下，您只能将一个文件作为附件添加到电子邮件中。 此阈值可以从以下位置配置： `NmsDelivery_MaxRecommendedAttachments` 选项。
+Adobe还建议限制附加文件的大小和数量。 默认情况下，您只能将一个文件作为附件添加到电子邮件中。 可通过`NmsDelivery_MaxRecommendedAttachments`选项配置此阈值。
 
-了解详情，请参阅 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
+在[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中了解详情。
 
 在实施此方案之前，请仔细阅读以下准则：
 
@@ -54,7 +54,7 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
 >[!NOTE]
 >
->为了避免出现性能问题，建议每封电子邮件不要包含多个附件。 可以从以下位置配置建议的阈值 [Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery).
+>为了避免出现性能问题，建议每封电子邮件不要包含多个附件。 可以从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置建议的阈值。
 
 ## 实现 {#implementation}
 
@@ -68,13 +68,13 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
    这样，您可以将文件附加到电子邮件，即使它们不是在执行实例上托管。
 
-1. 您可以通过SOAP消息触发器发送电子邮件。 在SOAP调用中，有一个URL参数(attachmentURL)。
+1. 您可以通过SOAP消息触发器发送电子邮件。 在SOAP调用中有一个URL参数(attachmentURL)。
 
-   有关SOAP请求的详细信息，请参见 [事件描述](../../message-center/using/event-description.md).
+   有关SOAP请求的更多信息，请参阅[事件描述](../../message-center/using/event-description.md)。
 
-1. 设计电子邮件时，单击 **[!UICONTROL Attachment]**.
+1. 设计电子邮件时，单击&#x200B;**[!UICONTROL Attachment]**。
 
-1. 在 **[!UICONTROL Attachment definition]** 屏幕中，输入SOAP附件参数：
+1. 在&#x200B;**[!UICONTROL Attachment definition]**&#x200B;屏幕中，输入SOAP附件参数：
 
    ```
    <%= rtEvent.ctx.attachmentUrl %>
@@ -82,6 +82,6 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
 1. 处理消息时，系统会从远程位置（第三方服务器）获取文件，并将其附加到单个消息。
 
-   由于此参数可以是变量，因此它应该接受文件的格式完整的远程URL变量，该变量通过SOAP调用发送。
+   由于此参数可以是变量，因此它应该接受文件的格式完整的远程URL变量，该变量将通过SOAP调用发送。
 
    ![](assets/message-center-uc2.png)

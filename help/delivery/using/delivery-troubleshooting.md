@@ -17,7 +17,7 @@ ht-degree: 1%
 
 此部分列出了发送投放时可能遇到的常见问题以及如何排除这些问题。
 
-此外，请确保遵循中详述的最佳实践和核对清单 [此页面](delivery-performances.md) 以确保您的交付正常运行。
+此外，请确保遵循[此页面](delivery-performances.md)中详述的最佳实践和核对清单，以确保您的交付正常运行。
 
 **相关主题：**
 
@@ -27,17 +27,17 @@ ht-degree: 1%
 
 ## 缓慢投放 {#slow-deliveries}
 
-单击 **[!UICONTROL Send]** 按钮，您的交付时间似乎比平常要长。 这可能是由于不同的元素导致的：
+单击&#x200B;**[!UICONTROL Send]**&#x200B;按钮后，您的投放似乎需要比平常更长的时间。 这可能是由于不同的元素导致的：
 
-* 某些电子邮件提供商可能已将您的IP地址添加到阻止列表。 在这种情况下，请检查您的broadlog并查阅 [本节](about-deliverability.md).
+* 某些电子邮件提供商可能已将您的IP地址添加到阻止列表。 在这种情况下，请检查您的broadlog并查阅[此部分](about-deliverability.md)。
 
-* 您的投放可能太大，无法快速处理，这可能会在JavaScript个性化较高或您的投放重量超过60 KB时发生。 请参阅Adobe Campaign [投放最佳实践](delivery-best-practices.md) 以了解内容准则。
+* 您的投放可能太大，无法快速处理，这可能与高度的JavaScript个性化有关，或者如果您的投放超过60 KB。 请参阅Adobe Campaign [投放最佳实践](delivery-best-practices.md)，了解有关内容准则的信息。
 
 * 在Adobe Campaign MTA中可能已发生限制。 这是由以下原因造成的：
 
-   * 挂起的消息(**[!UICONTROL quotas met]** message)：已满足Campaign中定义的声明MX规则声明的配额。 有关此消息的更多信息，请参阅 [此页面](deliverability-faq.md). 要了解有关MX规则的更多信息，请参阅 [本节](../../installation/using/email-deliverability.md#about-mx-rules).
+   * 挂起的消息（**[!UICONTROL quotas met]**&#x200B;消息）：已满足Campaign中定义的声明MX规则声明的配额。 有关此邮件的详细信息，请参阅[此页面](deliverability-faq.md)。 要了解有关MX规则的更多信息，请参阅[此章节](../../installation/using/email-deliverability.md#about-mx-rules)。
 
-   * 挂起的消息(**[!UICONTROL dynamic flow control]** message)：Campaign MTA在尝试为给定ISP投放消息时遇到错误，这会导致速度变慢以避免错误密度过大，从而面临潜在阻止列表。
+   * 挂起的消息（**[!UICONTROL dynamic flow control]**&#x200B;消息）： Campaign MTA在尝试为给定ISP投放消息时遇到错误，这会导致速度变慢以避免错误密度过大，从而面临潜在的阻止列表。
 
 * 系统问题可能会阻止服务器相互交互：这可能会减慢整个发送过程。 检查服务器，以确保在获取个性化数据（例如）的过程中没有可能会影响Campaign的内存或资源问题。
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ## 失败状态 {#failed-status}
 
-如果电子邮件投放的状态为 **[!UICONTROL Failed]**，它可以链接到个性化块的问题。 例如，当架构与投放映射不匹配时，投放中的个性化块可能会生成错误。
+如果电子邮件投放的状态为&#x200B;**[!UICONTROL Failed]**，则它可以链接到个性化块的问题。 例如，当架构与投放映射不匹配时，投放中的个性化块可能会生成错误。
 
 投放日志是了解投放失败原因的关键。 您可以从投放日志中检测以下可能的错误：
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
   原因与性能问题相关。 这意味着营销实例在将数据发送到中间源服务器之前会花费太多时间构建数据。
 
-  要解决此问题，我们建议对数据库执行真空并重新索引。 有关数据库维护的详细信息，请参阅 [本节](../../production/using/recommendations.md).
+  要解决此问题，我们建议对数据库执行真空并重新索引。 有关数据库维护的详细信息，请参阅[本节](../../production/using/recommendations.md)。
 
   您还应该重新启动所有具有计划活动的工作流，以及所有处于失败状态的工作流。 请参阅[此小节](../../workflow/using/scheduler.md)。
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
   通常，此错误意味着电子邮件中存在为收件人具有多个值的个性化字段或块。 正在使用个性化块，并且正在为特定收件人获取多个记录。
 
-  要解决此问题，请检查使用的个性化数据，然后检查目标，以查找具有多个条目的收件人（用于其中任何字段）。 您也可以使用 **[!UICONTROL Deduplication]** 活动之前，定向工作流中的活动，以检查一次只有一个个性化字段。 有关重复数据删除的详细信息，请参阅 [此页面](../../workflow/using/deduplication.md).
+  要解决此问题，请检查使用的个性化数据，然后检查目标，以查找具有多个条目的收件人（用于其中任何字段）。 您还可以在投放活动之前的定位工作流中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动，以检查一次只有一个个性化字段。 有关重复数据删除的详细信息，请参阅[此页面](../../workflow/using/deduplication.md)。
 
 * 某些投放可能会失败，并出现“Unreachable”（无法访问）错误，并指出：
 

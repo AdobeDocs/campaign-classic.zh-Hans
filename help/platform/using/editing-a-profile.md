@@ -30,7 +30,7 @@ ht-degree: 52%
 
 >[!CAUTION]
 >
->XML架构和与用户档案表格中的字段有关的表单可通过 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign树的节点。 只有专家用户才能改变这些模式。
+>通过Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点访问XML架构和与配置文件表中的字段有关的表单。 只有专家用户才能改变这些模式。
 >
 >如需详细信息，请参阅[此页面](../../configuration/using/about-schema-edition.md)。
 
@@ -42,7 +42,7 @@ ht-degree: 52%
 
 >[!NOTE]
 >
->当 **[!UICONTROL No longer contact (by any channel)]** 列入阻止列表选项，这意味着用户档案处于订阅状态，即用户档案已表示不希望被联系（例如，通过单击新闻稿中的退订链接）。 他们不再成为任何渠道（电子邮件、直邮等）上的投放的目标。 有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
+>列入阻止列表选择&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;选项时，这意味着配置文件处于状态，即配置文件已表示不希望被联系（例如，通过单击新闻稿中的退订链接）。 他们不再成为任何渠道（电子邮件、直邮等）上的投放的目标。 有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
 
 ## “联系人信息”选项卡 {#contact-information-tab}
 
@@ -54,7 +54,7 @@ ht-degree: 52%
 
 ## “其他”选项卡 {#other-tab}
 
-此屏幕包含可根据需要进行个性化的用户定义的字段。 您还可以更改字段的名称并定义其格式，方法是 **[!UICONTROL Field properties...]**，如下所示：
+此屏幕包含可根据需要进行个性化的用户定义的字段。 您还可以通过&#x200B;**[!UICONTROL Field properties...]**&#x200B;更改字段的名称并定义其格式，如下所示：
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
@@ -64,11 +64,11 @@ ht-degree: 52%
 
 ## “列表”选项卡 {#lists-tab}
 
-此屏幕显示选定配置文件所属的组。 单击 **[!UICONTROL Add]** 将配置文件订阅到列表。 单击 **[!UICONTROL Detail]** 在选定的列表中显示说明和配置文件列表。
+此屏幕显示选定配置文件所属的组。 单击&#x200B;**[!UICONTROL Add]**&#x200B;将配置文件订阅到列表。 单击&#x200B;**[!UICONTROL Detail]**&#x200B;以显示说明和所选列表中的配置文件列表。
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-有关详细信息，请参见 [创建和管理列表](../../platform/using/creating-and-managing-lists.md).
+有关详细信息，请参阅[创建和管理列表](../../platform/using/creating-and-managing-lists.md)。
 
 ## “订阅”选项卡 {#subscriptions-tab}
 
@@ -76,7 +76,7 @@ ht-degree: 52%
 
 ![](assets/s_ncs_user_profile_subscript_tab_details.png)
 
-此 **[!UICONTROL Detail]** 按钮显示所选订阅的属性。 此 **[!UICONTROL Add]** 按钮用于手动添加新订阅。
+**[!UICONTROL Detail]**&#x200B;按钮显示所选订阅的属性。 **[!UICONTROL Add]**&#x200B;按钮用于手动添加新订阅。
 
 有关详细信息，请参见[此页面](../../delivery/using/managing-subscriptions.md)。
 

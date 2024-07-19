@@ -23,11 +23,11 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->电子邮件内容中包含个性化的链接需要跟踪特定语法。 有关如何添加可个性化并支持跟踪的电子邮件链接的更多信息，请参阅 [本节](tracking-personalized-links.md).
+>电子邮件内容中包含个性化的链接需要跟踪特定语法。 有关如何在电子邮件中添加可个性化并支持跟踪的链接的详细信息，请参阅[此部分](tracking-personalized-links.md)。
 
-我们强烈建议您在 **[!UICONTROL Text content]** 选项卡。 Adobe Campaign会使用您在此选项卡中输入的URL分隔符来标识字符串中的URL。 您可以使用以下分隔符对：
+我们强烈建议您在应用跟踪公式之前，将URL用分隔符包含在&#x200B;**[!UICONTROL Text content]**&#x200B;选项卡中。 Adobe Campaign会使用您在此选项卡中输入的URL分隔符来标识字符串中的URL。 您可以使用以下分隔符对：
 * 圆括号( )
-* 括号 [ ]
+* 括号[ ]
 * 大括号{ }
 
 在此示例中，URL https://www.adobe.com后跟一个分号。 收件人电子邮件客户端可能会将分号解释为URL的一部分。 因此，链接可能会断开。 要避免出现此问题，您可以通过以下方式之一以分隔符括住URL：
@@ -37,7 +37,7 @@ ht-degree: 10%
 
 默认启用消息跟踪。 要个性化URL的跟踪方式，请执行以下步骤：
 
-1. 选择 **[!UICONTROL Display URLs]** 选项，该选项位于投放向导中消息内容下方的部分。
+1. 选择投放向导下部、消息内容下的&#x200B;**[!UICONTROL Display URLs]**&#x200B;选项。
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -59,7 +59,7 @@ ht-degree: 10%
    >
    >可修改跟踪的URL和标签的标签以简化跟踪投放时信息的读取。 计算点击计数时，会将两个具有相同名称的URL或两个标签添加到一起。
 
-1. 如果需要，请更改跟踪模式，然后在 **[!UICONTROL Tracking]** 与定向链接匹配的列，如下所示：
+1. 如果需要，请更改跟踪模式，在&#x200B;**[!UICONTROL Tracking]**&#x200B;列中选择与目标链接匹配的新模式，如下所示：
 
    ![](assets/s_ncs_user_select_tracking_mode.png)
 
@@ -70,6 +70,6 @@ ht-degree: 10%
    * **[!UICONTROL Always enabled]** ：始终激活此URL的跟踪。 保存此信息，以便下次如果URL再次出现在将来的消息内容中，则会自动激活其跟踪。
    * **[!UICONTROL Never tracked]** ：从不激活此URL的跟踪。 保存此信息，以便下次如果URL再次出现在将来的消息中，则会自动停用其跟踪。
    * **[!UICONTROL Opt-out]** ：将此URL视为选择退出或退订URL。
-   * **[!UICONTROL Mirror page]** ：将此URL视为镜像页面URL。
+   * **[!UICONTROL Mirror page]** ：认为此URL是镜像页面URL。
 
-1. 此外，还可以在的下拉列表中选择每个跟踪URL的类别 **[!UICONTROL Category]** 列。 这些类别可以显示报表，例如 **[!UICONTROL URLs and click streams]** (请参阅 [本节](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams))。 类别在特定枚举中定义： **[!UICONTROL urlCategory]** (请参阅 [管理明细列表](../../platform/using/managing-enumerations.md))。
+1. 此外，您还可以在&#x200B;**[!UICONTROL Category]**&#x200B;列的下拉列表中选择每个跟踪URL的类别。 这些类别可以显示报表，例如在&#x200B;**[!UICONTROL URLs and click streams]**&#x200B;中（请参阅[此部分](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)）。 类别是在特定枚举中定义的： **[!UICONTROL urlCategory]** （请参阅[管理枚举](../../platform/using/managing-enumerations.md)）。

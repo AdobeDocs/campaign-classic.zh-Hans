@@ -30,33 +30,33 @@ ht-degree: 0%
 
 1. 定义预算
 
-   有关详细信息，请参见 [创建预算](#creating-a-budget).
+   有关详情，请参阅[创建预算](#creating-a-budget)。
 
 1. 定义成本计算方法
 
-   为服务提供商定义成本结构。 请参阅 [创建服务提供商及其成本类别](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+   为服务提供商定义成本结构。 请参阅[创建服务提供商及其成本类别](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)。
 
 1. 定义活动成本（投放/任务）
 
-   投放和任务产生的成本是单独或全局为活动模板输入的。 请参阅 [成本和库存的计算](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
+   投放和任务产生的成本是单独或全局为活动模板输入的。 请参阅[成本和库存的计算](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks)。
 
 1. 整合
 
    根据任务、投放和营销活动的进度状态，计算成本并将其传递到相应的预算。
 
-   当营销活动创建足够高级时，营销活动预算的进度状态可以更改为 **[!UICONTROL Specified]**. 然后，将自动输入项目的计算成本以及营销策划上计算的成本。 请参阅 [成本承诺、计算及计费](#cost-commitment--calculation-and-charging).
+   当营销活动创建足够高级时，营销活动预算的进度状态可以更改为&#x200B;**[!UICONTROL Specified]**。 然后，将自动输入项目的计算成本以及营销策划上计算的成本。 查看[成本承诺、计算和计费](#cost-commitment--calculation-and-charging)。
 
 ## 创建预算 {#creating-a-budget}
 
-预算在地图中创建，通过 **[!UICONTROL Campaign management > Budgets]** 节点。 此 **[!UICONTROL New]** 工具栏中的按钮允许您创建预算。
+预算是通过&#x200B;**[!UICONTROL Campaign management > Budgets]**&#x200B;节点在映射中创建的。 工具栏中的&#x200B;**[!UICONTROL New]**&#x200B;按钮允许您创建预算。
 
 * 添加新预算
 
-  单击 **[!UICONTROL New]** 图标，命名并保存预算。
+  单击&#x200B;**[!UICONTROL New]**&#x200B;图标，命名并保存预算。
 
 * 输入初始金额
 
-  在相关字段中指示分配金额。 其它金额会自动输入。 请参阅 [计算金额](#calculating-amounts).
+  在相关字段中指示分配金额。 其它金额会自动输入。 请参阅[计算金额](#calculating-amounts)。
 
 * 定义有效期
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 * 费用
 
-  创建费用类别，将营销活动、任务等的成本分配到此预算。 可以链接。 请参阅 [费用类别](#expense-categories).
+  创建费用类别，将营销活动、任务等的成本分配到此预算。 可以链接。 查看[费用类别](#expense-categories)。
 
   ![](assets/s_ncs_user_budget_create_and_save.png)
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 >
 >您可以选择相关预算。
 >
->有关详细信息，请参见 [将预算链接到另一个预算](#linking-a-budget-to-another).
+>有关详细信息，请参阅[将预算链接到另一个](#linking-a-budget-to-another)。
 
 ### 计算金额 {#calculating-amounts}
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->为类别输入的金额必须与中定义的预算信封匹配 **[!UICONTROL Allocated]** 字段。
+>为类别输入的金额必须与&#x200B;**[!UICONTROL Allocated]**&#x200B;字段中定义的预算信封匹配。
 
 对于营销活动，可以根据承诺级别，计划、承诺或预留成本供未来操作使用。
 
@@ -88,28 +88,28 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->创建营销活动时，进度状态位于 **[!UICONTROL Budget]** 必须设置为 **[!UICONTROL Defined]** 执行时要考虑的成本。 如果状态为 **[!UICONTROL Being edited]**，则不会合并成本。
+>创建营销活动时，**[!UICONTROL Budget]**&#x200B;中的进度状态必须设置为&#x200B;**[!UICONTROL Defined]**，才能在执行时将成本考虑在内。 如果状态为&#x200B;**[!UICONTROL Being edited]**，则不会合并成本。
 >   
->选项 **[!UICONTROL Commitment level]** 表示在将成本计入预算之前对未来成本的预测。 根据活动、任务或投放的进度，您可以决定分配更高或更低的承诺级别(1)。 计划中，按2。 保留，3。 已提交)。
+>选项&#x200B;**[!UICONTROL Commitment level]**&#x200B;表示在将成本计入预算之前对未来成本的预测。 根据活动、任务或投放的进度，您可以决定分配更高或更低的承诺级别(1)。 计划中，按2。 保留，3。 已提交)。
 
 例如，一个Web营销活动的预计计划成本为45,000欧元。
 
 ![](assets/s_user_edit_budget_node_impact_0.png)
 
-对于市场活动，当预算创建状态设置为 **[!UICONTROL Defined]**，促销活动的实际成本（如果没有计算成本，则计算成本）将转入预算总额中。
+对于营销活动，当预算创建状态设置为&#x200B;**[!UICONTROL Defined]**&#x200B;时，营销活动的实际成本（或者，如果没有，则计算成本）将转入预算总数中。
 
 ![](assets/s_user_budget_in_op_a.png)
 
-根据营销活动预算的承诺水平，此金额将输入 **[!UICONTROL Planned]**， **[!UICONTROL Reserved]** 或 **[!UICONTROL Committed]** 字段。
+根据营销活动预算的承诺级别，将在&#x200B;**[!UICONTROL Planned]**、**[!UICONTROL Reserved]**&#x200B;或&#x200B;**[!UICONTROL Committed]**&#x200B;字段中输入金额。
 
 可以修改承诺级别：
 
-* 在 **营销活动** 级别，在 **[!UICONTROL Budget]** 窗口，可在 **[!UICONTROL Edit]** 选项卡。 这是配置预算、成本和支出的位置。
-* 在 **任务** 级别，在 **[!UICONTROL Expenses and revenues]** 窗口。
+* 在&#x200B;**营销活动**&#x200B;级别的&#x200B;**[!UICONTROL Budget]**&#x200B;窗口中，在&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中找到。 这是配置预算、成本和支出的位置。
+* 在&#x200B;**任务**&#x200B;级别的&#x200B;**[!UICONTROL Expenses and revenues]**&#x200B;窗口中。
 
 ![](assets/s_user_op_engagement_level_costs.png)
 
-当预算为 **[!UICONTROL Reserved]**，则自动为计费的预算执行更新。
+当预算为&#x200B;**[!UICONTROL Reserved]**&#x200B;时，将自动为计费预算执行更新。
 
 ![](assets/s_user_edit_budget_node_impact_2.png)
 
@@ -117,13 +117,13 @@ ht-degree: 0%
 
 ![](assets/s_user_edit_budget_node_impact_task.png)
 
-当支出产生发票且发票已支付时，其金额将输入到 **[!UICONTROL Invoiced]** 字段。
+当支出产生发票且发票已付时，其金额随后输入到&#x200B;**[!UICONTROL Invoiced]**&#x200B;字段中。
 
 ### 费用类别 {#expense-categories}
 
-这些金额可以分为若干费用类别，以提高数据的可读性，并更详细地报告营销投资。 支出类别是在预算创建期间通过 **[!UICONTROL Budgets]** 树节点。
+这些金额可以分为若干费用类别，以提高数据的可读性，并更详细地报告营销投资。 费用类别是在预算创建期间通过树的&#x200B;**[!UICONTROL Budgets]**&#x200B;节点定义的。
 
-要添加类别，请单击 **[!UICONTROL Add]** 按钮来打开窗口。
+要添加类别，请单击窗口下半部分的&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 
 ![](assets/s_user_budget_category.png)
 
@@ -131,7 +131,7 @@ ht-degree: 0%
 
 ### 将预算链接到另一个预算 {#linking-a-budget-to-another}
 
-您可以将预算链接到主预算。 要实现此目的，请在主预算的 **[!UICONTROL related budget]** 辅助预算的字段。
+您可以将预算链接到主预算。 为此，请在辅助预算的&#x200B;**[!UICONTROL related budget]**&#x200B;字段中选择主预算。
 
 ![](assets/budget_link.png)
 
@@ -157,7 +157,7 @@ ht-degree: 0%
 * 相应的发票行（仅限MRM）
 * 按成本类别计算的成本列表（如果存在成本结构）
 
-在上面的示例中，编辑的费用行包含为计算的成本 **新卡片** 的投放 **忠诚度春季套餐** 营销活动。 编辑投放时， **[!UICONTROL Direct Mail]** 选项卡让您查看费用行的计算方式。
+在上述示例中，编辑的费用行包含为&#x200B;**忠诚度春季套餐**&#x200B;营销活动的&#x200B;**新卡片**&#x200B;投放计算的成本。 编辑投放时，**[!UICONTROL Direct Mail]**&#x200B;选项卡允许您查看费用行的计算方式。
 
 此投放的成本计算基于为相关服务提供商选择的成本类别：
 
@@ -169,7 +169,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->成本类别及结构呈列于 [创建服务提供商及其成本类别](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+>在[创建服务提供商及其成本类别](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)中显示了成本类别和结构。
 
 ## 成本承诺、计算及计费 {#cost-commitment--calculation-and-charging}
 
@@ -181,9 +181,9 @@ ht-degree: 0%
 
 1. 估计临时费用
 
-   估计临时费用是活动进程的估计费用。 只要正在编辑，输入的数额就不会合并。 它必须有 **[!UICONTROL Specified]** 计算时要考虑的金额输入的状态。
+   估计临时费用是活动进程的估计费用。 只要正在编辑，输入的数额就不会合并。 输入的金额必须具有&#x200B;**[!UICONTROL Specified]**&#x200B;状态才能在计算中考虑在内。
 
-   此金额是手动输入的，可划分为多个费用类别。 要降低成本，请单击 **[!UICONTROL Breakdown...]** 链接，然后 **[!UICONTROL Add]** 按钮以定义新金额。
+   此金额是手动输入的，可划分为多个费用类别。 若要计算成本，请单击&#x200B;**[!UICONTROL Breakdown...]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以定义新金额。
 
    ![](assets/s_user_edit_budget_tab_ventil.png)
 
@@ -202,7 +202,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >此 **[!UICONTROL Breakdown]** 链接允许您查看计算的详细信息和上次成本计算日期。
+   >**[!UICONTROL Breakdown]**&#x200B;链接允许您查看计算的详细信息和上次成本计算日期。
 
 1. 实际成本
 
@@ -212,7 +212,7 @@ ht-degree: 0%
 
 成本通过成本结构进行计算，并计入相关营销活动、投放或任务中选择的预算。
 
-可以通过预算审批对承诺给营销活动的金额执行检查。 可以在营销活动中创建其他检查点样式任务，以设置其他批准。 请参阅 [任务类型](../../mrm/using/creating-and-managing-tasks.md#types-of-task).
+可以通过预算审批对承诺给营销活动的金额执行检查。 可以在营销活动中创建其他检查点样式任务，以设置其他批准。 查看[任务类型](../../mrm/using/creating-and-managing-tasks.md#types-of-task)。
 
 ### 示例 {#example}
 
@@ -224,17 +224,17 @@ ht-degree: 0%
 
 #### 第1步 — 创建预算 {#step-1---creating-the-budget}
 
-1. 通过以下方式创建新的预算 **[!UICONTROL Campaign management > Budgets]** 节点。
+1. 通过&#x200B;**[!UICONTROL Campaign management > Budgets]**&#x200B;节点创建新预算。
 
-1. 在“ ”中定义1万欧元的预算 **[!UICONTROL Allocated]** 字段 **[!UICONTROL Amounts]** 部分。 在窗口的下半部分添加两个费用类别：
+1. 在&#x200B;**[!UICONTROL Amounts]**&#x200B;部分的&#x200B;**[!UICONTROL Allocated]**&#x200B;字段中定义10,000欧元的预算。 在窗口的下半部分添加两个费用类别：
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 
 #### 第2步 — 配置服务提供商并定义成本结构 {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. 从创建服务提供商和服务模板及其成本结构 **[!UICONTROL Administration > Campaigns]** 节点。 有关详细信息，请参见 [创建服务提供商及其成本类别](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+1. 从&#x200B;**[!UICONTROL Administration > Campaigns]**&#x200B;节点创建具有成本结构的服务提供程序和服务模板。 有关详情，请参阅[创建服务提供商及其成本类别](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)。
 
-   对于直邮投放，创建成本类别 **[!UICONTROL Envelopes]** （类型114x229和162x229）， **[!UICONTROL Postage]** 和 **[!UICONTROL Print]** （类型A3和A4）。 然后，创建以下成本结构：
+   对于直邮投放，创建成本类别&#x200B;**[!UICONTROL Envelopes]** （类型114x229和162x229）、**[!UICONTROL Postage]**&#x200B;和&#x200B;**[!UICONTROL Print]** （类型A3和A4）。 然后，创建以下成本结构：
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 
@@ -244,11 +244,11 @@ ht-degree: 0%
 
    对于任务，创建以下两个成本类别：
 
-   * **[!UICONTROL Room reservation]** （小房间和大房间），带 **固定** 费用结构300欧元和500欧元：
+   * **[!UICONTROL Room reservation]** （小房间和大房间），具有&#x200B;**固定**&#x200B;成本结构，金额分别为300欧元和500欧元：
 
    ![](assets/s_user_cost_mgmt_sample_6.png)
 
-   * **[!UICONTROL Creation]** (**内容模板** type)，带 **每日** 费用结构300欧元：
+   * **[!UICONTROL Creation]** （**内容模板**&#x200B;类型），**每日**&#x200B;成本结构为300欧元：
 
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
@@ -266,7 +266,7 @@ ht-degree: 0%
 
    ![](assets/s_user_cost_mgmt_sample_9.png)
 
-1. 单击 **[!UICONTROL Ok]** 然后 **[!UICONTROL Save]** 以确认此信息。 然后，使用估计的临时成本更新活动的计算成本。
+1. 单击&#x200B;**[!UICONTROL Ok]**，然后单击&#x200B;**[!UICONTROL Save]**&#x200B;以确认此信息。 然后，使用估计的临时成本更新活动的计算成本。
 
 #### 步骤4 — 创建直邮投放 {#step-4---creating-the-direct-mail-delivery}
 
@@ -290,7 +290,7 @@ ht-degree: 0%
 
    ![](assets/s_user_cost_mgmt_sample_10b.png)
 
-有关投放的支出行已添加到 **[!UICONTROL Edit > Budget]** 的选项卡。 编辑它以查看计算的详细信息。
+有关投放的费用行已添加到营销活动的&#x200B;**[!UICONTROL Edit > Budget]**&#x200B;选项卡中。 编辑它以查看计算的详细信息。
 
 ![](assets/s_user_cost_mgmt_sample_11.png)
 
@@ -302,21 +302,21 @@ ht-degree: 0%
 
 #### 步骤5 — 创建任务 {#step-5---creating-tasks}
 
-对于此活动，我们将添加之前为其创建成本结构的两个任务(请参阅 [第2步 — 配置服务提供商并定义成本结构](#step-2---configuring-the-service-provider-and-defining-the-cost-structures))。 要实现此目的，请在营销活动仪表板中，单击 **[!UICONTROL Add a task]** 按钮。 命名任务并单击 **[!UICONTROL Save]**.
+对于此营销活动，我们将添加之前为其创建成本结构的两个任务（请参阅[步骤2 — 配置服务提供商并定义成本结构](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)）。 为此，请在营销活动信息板中单击&#x200B;**[!UICONTROL Add a task]**&#x200B;按钮。 命名任务并单击&#x200B;**[!UICONTROL Save]**。
 
 1. 然后将任务添加到任务列表中。 必须编辑它才能进行配置。
 
-1. 在 **[!UICONTROL Properties]** 选项卡，选择服务和相应的成本类别：
+1. 在&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡中，选择服务和相应的成本类别：
 
    ![](assets/s_user_cost_mgmt_sample_14.png)
 
-1. 接下来，单击 **[!UICONTROL Expenses and revenue]** 图标，并指定预计临时成本。
+1. 接下来，单击任务的&#x200B;**[!UICONTROL Expenses and revenue]**&#x200B;图标并指定预计临时成本。
 
    ![](assets/s_user_cost_mgmt_sample_15.png)
 
    当保存任务后，计算成本将随为估计临时成本输入的值一起指定。
 
-   任务完成时(状态 **[!UICONTROL Finished]** )，计算出的成本将自动更新为在其成本结构中输入的大房间成本。 在细分中，此成本也会显示在此类别中。
+   任务完成后（状态&#x200B;**[!UICONTROL Finished]** ），计算出的成本将自动更新为大房间成本，如其成本结构中所输入。 在细分中，此成本也会显示在此类别中。
 
 1. 接下来，根据相同的过程创建第二个任务；计划时间超过五天，并与之前创建的成本结构相关。
 
@@ -328,7 +328,7 @@ ht-degree: 0%
 
 #### 步骤6 — 更新营销活动预算状态 {#step-6---update-the-campaign-budget-status}
 
-配置活动后，可以通过将其设置为来更新其状态 **[!UICONTROL Specified]**. 然后，活动的计算成本将指示投放的计算成本与活动的任务的总和：
+配置营销活动后，可以通过将其设置为&#x200B;**[!UICONTROL Specified]**&#x200B;来更新其状态。 然后，活动的计算成本将指示投放的计算成本与活动的任务的总和：
 
 ![](assets/s_user_cost_mgmt_sample_18.png)
 
@@ -348,7 +348,7 @@ ht-degree: 0%
 
 ### 订单创建 {#order-creation}
 
-要保存服务提供商的新订单，请单击 **[!UICONTROL MRM > Orders]** 节点，然后单击 **[!UICONTROL New]** 按钮。
+要保存服务提供商的新订单，请单击树的&#x200B;**[!UICONTROL MRM > Orders]**&#x200B;节点，然后单击&#x200B;**[!UICONTROL New]**&#x200B;按钮。
 
 指定订单编号、相关的服务提供商以及订单的总金额。
 
@@ -358,18 +358,18 @@ ht-degree: 0%
 
 对于每个服务提供商，您可以保存发票，并定义其状态和计费的预算。
 
-发票创建并存储在 **[!UICONTROL MRM > Invoices]** Adobe Campaign树的节点。
+在Adobe Campaign树的&#x200B;**[!UICONTROL MRM > Invoices]**&#x200B;节点中创建并存储发票。
 
 ![](assets/s_user_cost_create_invoice.png)
 
-发票由发票行组成，发票行的合计允许自动计算金额。 这些行是手动创建的 **[!UICONTROL Invoice lines]** 选项卡。 它们可以与订单相关联，以将信息上传到订单。
+发票由发票行组成，发票行的合计允许自动计算金额。 这些行是从&#x200B;**[!UICONTROL Invoice lines]**&#x200B;选项卡手动创建的。 它们可以与订单相关联，以将信息上传到订单。
 
 ![](assets/s_user_cost_invoice_add_line.png)
 
-每个服务提供商的发票均显示在 **[!UICONTROL Invoices]** 配置文件的选项卡：
+每个服务提供商的发票都显示在配置文件的&#x200B;**[!UICONTROL Invoices]**&#x200B;选项卡中：
 
 ![](assets/s_ncs_user_invoice_from_supplier.png)
 
-此 **[!UICONTROL Details]** 选项卡用于显示发票的内容。
+**[!UICONTROL Details]**&#x200B;选项卡允许您显示发票的内容。
 
-单击 **[!UICONTROL Add]** 以创建新发票。
+单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建新发票。

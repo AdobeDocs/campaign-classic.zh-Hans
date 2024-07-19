@@ -27,7 +27,7 @@ ht-degree: 0%
 以下是从v7恢复v6.1的过程。
 
 1. 恢复数据库的备份并恢复它。
-1. 恢复 **Adobe Campaign v6.back** 文件夹(**nl6.back** 在Linux中)，将其重命名为 **Adobe Campaign v6** (**nl6** （在Linux中）并将其还原到原始位置。
+1. 恢复&#x200B;**Adobe Campaign v6.back**&#x200B;文件夹（在Linux中为&#x200B;**nl6.back**），将其重命名为&#x200B;**Adobe Campaign v6**（在Linux中为&#x200B;**nl6**），并将其还原到其原始位置。
 1. 通过重新分配侦听端口来重新配置IIS，以便在IIS网站级别重新建立Adobe Campaign v6.1的集成。
 1. 停止Adobe Campaign v7服务。
 1. 重新启动IIS。

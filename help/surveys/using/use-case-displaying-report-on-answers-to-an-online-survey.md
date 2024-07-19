@@ -30,15 +30,15 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->只有在您获得 **调查管理器** 选项。 请核实您的许可协议。
+>仅当您获得&#x200B;**调查管理器**&#x200B;选项时，才能实施此用例。 请核实您的许可协议。
 
 ## 步骤1 — 创建数据收集和存储工作流 {#step-1---creating-the-data-collection-and-storage-workflow}
 
 要收集调查的答案，请应用以下步骤：
 
-1. 创建工作流并放置 **[!UICONTROL Answers to a survey]** 活动。 有关使用此活动的更多信息，请参阅 [本节](../../surveys/using/publish-track-and-use-collected-data.md#using-the-collected-data).
+1. 创建工作流并放置&#x200B;**[!UICONTROL Answers to a survey]**&#x200B;活动。 有关使用此活动的详细信息，请参阅[此部分](../../surveys/using/publish-track-and-use-collected-data.md#using-the-collected-data)。
 1. 编辑活动并选择要分析其答案的调查。
-1. 启用 **[!UICONTROL Select all the answer data]** 用于收集所有信息的选项。
+1. 启用&#x200B;**[!UICONTROL Select all the answer data]**&#x200B;选项以收集所有信息。
 
    ![](assets/reporting_usecase_1_01.png)
 
@@ -46,11 +46,11 @@ ht-degree: 1%
 
    ![](assets/reporting_usecase_1_02.png)
 
-1. 配置应答收集框后，将 **[!UICONTROL List update]** 键入activity以保存数据。
+1. 配置应答收集框后，放置&#x200B;**[!UICONTROL List update]**&#x200B;类型活动以保存数据。
 
    ![](assets/reporting_usecase_1_04.png)
 
-   在此活动中，指定要更新的列表并取消选中 **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]** 选项：向现有表添加答案。 此选项将允许您引用多维数据集中的列表。 每次更新都不会重新生成链接到列表的架构，这保证了使用此列表的多维数据集的完整性。
+   在此活动中，指定要更新的列表并取消选中&#x200B;**[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**&#x200B;选项：将答案添加到现有表中。 此选项将允许您引用多维数据集中的列表。 每次更新都不会重新生成链接到列表的架构，这保证了使用此列表的多维数据集的完整性。
 
    ![](assets/reporting_usecase_1_03.png)
 
@@ -62,11 +62,11 @@ ht-degree: 1%
 
 1. 添加调度程序以自动每日收集答案并更新列表。
 
-   此 **[!UICONTROL List update]** 和 **[!UICONTROL Scheduler]** 有关活动的详情，请参阅。
+   中详细介绍了&#x200B;**[!UICONTROL List update]**&#x200B;和&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动。
 
 ## 步骤2 — 创建多维数据集、其度量及其指示器 {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-然后，可以创建立方并配置其度量：它们将用于创建将在报告中显示的指示器。 有关创建和配置多维数据集的更多信息，请参阅 [关于多维数据集](../../reporting/using/ac-cubes.md).
+然后，可以创建立方并配置其度量：它们将用于创建将在报告中显示的指示器。 有关创建和配置多维数据集的详细信息，请参阅[关于多维数据集](../../reporting/using/ac-cubes.md)。
 
 在本例中，多维数据集基于先前创建的工作流馈送的列表中的数据。
 
@@ -76,7 +76,7 @@ ht-degree: 1%
 
 ![](assets/reporting_usecase_2_02.png)
 
-此 **[!UICONTROL Preview]** 选项卡允许您控制报告的呈现。
+**[!UICONTROL Preview]**&#x200B;选项卡允许您控制报告的呈现。
 
 ## 第3步 — 创建报表并配置表中的数据布局 {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
 

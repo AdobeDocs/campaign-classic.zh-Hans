@@ -15,17 +15,17 @@ ht-degree: 1%
 
 
 
-此 **入站电子邮件** 通过活动，可从POP3邮件服务器下载和处理电子邮件。
+通过&#x200B;**入站电子邮件**&#x200B;活动，可从POP3邮件服务器下载和处理电子邮件。
 
 ![](assets/email_rec_edit_1.png)
 
-的第一个选项卡 **入站电子邮件** 通过活动，您可以输入POP3服务器的参数，并输入在收到每条消息时要执行的脚本。 第二个选项卡用于为活动分配计划，第三个选项卡用于定义活动到期条件。
+**入站电子邮件**&#x200B;活动的第一个选项卡允许您输入POP3服务器的参数，并输入在收到每封邮件时要执行的脚本。 第二个选项卡用于为活动分配计划，第三个选项卡用于定义活动到期条件。
 
 1. **[!UICONTROL Inbound Emails]**
 
    * **[!UICONTROL Use an external account]**
 
-     激活此选项后，您可以选择外部POP3帐户，而不是输入连接参数。 此 **[!UICONTROL External account]** 字段指定用于连接到电子邮件服务的外部POP3帐户。 仅当“使用外部帐户”选项启用时，此字段才可见。
+     激活此选项后，您可以选择外部POP3帐户，而不是输入连接参数。 **[!UICONTROL External account]**&#x200B;字段指定要用于连接到电子邮件服务的外部POP3帐户。 仅当“使用外部帐户”选项启用时，此字段才可见。
 
      如果未选择此选项，则必须指定以下参数：
 
@@ -62,18 +62,18 @@ ht-degree: 1%
    * 3 — 从服务器删除消息。
    * 4 — 在服务器上保留消息。
 
-   可从全局访问消息的内容 **[!UICONTROL mailMessage]** 变量。
+   可从全局&#x200B;**[!UICONTROL mailMessage]**&#x200B;变量访问消息的内容。
 
 1. **[!UICONTROL Schedule]**
 
-   要定义活动的计划，请单击 **[!UICONTROL Scheduling]** 制表符和勾选 **[!UICONTROL Plan execution]**. 单击 **[!UICONTROL Change]** 按钮以配置计划。
+   要为活动定义计划，请单击&#x200B;**[!UICONTROL Scheduling]**&#x200B;选项卡并选中&#x200B;**[!UICONTROL Plan execution]**。 单击&#x200B;**[!UICONTROL Change]**&#x200B;按钮配置计划。
 
-   计划配置与计划活动相同。 请参阅 [计划程序](scheduler.md).
+   计划配置与计划活动相同。 请参阅[计划程序](scheduler.md)。
 
 1. **[!UICONTROL Expiration]**
 
-   您可以通过以下方式定义到期延迟 **[!UICONTROL Expiration]** 选项卡。
+   您可以通过&#x200B;**[!UICONTROL Expiration]**&#x200B;选项卡定义到期延迟。
 
    ![](assets/email_rec_edit_3.png)
 
-   配置与计划活动相同。 请参阅 [过期时间](defining-approvals.md).
+   配置与计划活动相同。 请参阅[过期时间](defining-approvals.md)。

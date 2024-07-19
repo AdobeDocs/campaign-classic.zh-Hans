@@ -20,8 +20,8 @@ ht-degree: 8%
 开始发送电子邮件之前：
 
 * 确保收件人用户档案至少包含电子邮件地址。
-* 了解有关Adobe Campaign的更多信息 [投放最佳实践](delivery-best-practices.md).
-* 请阅读以下部分，了解有关可投放性的更多信息： [Campaign中的可投放性管理](about-deliverability.md) 和 [可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans).
+* 了解有关Adobe Campaign [投放最佳实践](delivery-best-practices.md)的更多信息。
+* 请阅读这些部分，了解有关可投放性的更多信息：[Campaign中的可投放性管理](about-deliverability.md)和[可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
 
 发送电子邮件的关键步骤如下：
 
@@ -31,4 +31,4 @@ ht-degree: 8%
 * [发送电子邮件](sending-messages.md)
 * [监测投放](about-delivery-monitoring.md)
 
-以下部分提供了特定于电子邮件渠道的信息。 有关如何创建投放的全局信息，请参阅 [本节](steps-about-delivery-creation-steps.md).
+以下部分提供了特定于电子邮件渠道的信息。 有关如何创建投放的全局信息，请参阅[此章节](steps-about-delivery-creation-steps.md)。

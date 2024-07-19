@@ -17,7 +17,7 @@ ht-degree: 5%
 
 这些活动的主要任务包括等待事件。 例如，它可以是接收文件、电子邮件或程序发送的信号。
 
-* 文件收集器：监视目录中的一个或多个文件的到达，并为每个接收的文件启用转换。 请参阅 [文件收集器](file-collector.md).
-* 文件传输：将文件传输到服务器。 请参阅 [文件传输](file-transfer.md).
-* Web下载：从Web下载文件。 请参阅 [Web下载](web-download.md).
-* 短信和电子邮件接收：恢复和处理电子邮件或短信。 请参阅 [入站SMS](inbound-sms.md) 和 [入站电子邮件](inbound-emails.md).
+* 文件收集器：监视目录中的一个或多个文件的到达，并为每个接收的文件启用转换。 请参阅[文件收集器](file-collector.md)。
+* 文件传输：将文件传输到服务器。 请参阅[文件传输](file-transfer.md)。
+* Web下载：从Web下载文件。 请参阅[Web下载](web-download.md)。
+* 短信和电子邮件接收：恢复和处理电子邮件或短信。 请参阅[入站短信](inbound-sms.md)和[入站电子邮件](inbound-emails.md)。

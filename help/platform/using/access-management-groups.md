@@ -18,29 +18,29 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->这些步骤仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证的信息，请参阅 [本文档](https://helpx.adobe.com/cn/enterprise/using/user-groups.html).
+>这些步骤仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证，请参阅[此文档](https://helpx.adobe.com/cn/enterprise/using/user-groups.html)。
 
-操作员组是通过 **[!UICONTROL Administration > Access management > Operator groups]** 树中的节点。
+操作员组通过树中的&#x200B;**[!UICONTROL Administration > Access management > Operator groups]**&#x200B;节点创建。
 
 ## 创建新的操作员组 {#creating-a-new-operator-group}
 
 要创建新的运算符组，请应用以下步骤：
 
-1. 单击 **[!UICONTROL New]** 按钮进行编辑，或者右键单击列表并选择 **[!UICONTROL New]**.
-1. 在下部窗口中，从 **[!UICONTROL General]** 选项卡，在相应字段中输入此组的名称和说明。
+1. 单击组列表右侧的&#x200B;**[!UICONTROL New]**&#x200B;按钮，或右键单击列表并选择&#x200B;**[!UICONTROL New]**。
+1. 在下部窗口中，从&#x200B;**[!UICONTROL General]**&#x200B;选项卡，在相应字段中输入此组的名称和描述。
 
    ![](assets/s_ncs_user_create_operator_gp.png)
 
-1. 单击 **[!UICONTROL Content]** 选项卡定义此组的授权。
-1. 单击 **[!UICONTROL Add]** 按钮以选择要与组关联的指定权限或操作员。
-1. 单击下拉列表或 **[!UICONTROL Folder]** 用于查找要与此组关联的指定权限或操作员的字段。
-1. 选择要添加的权限或运算符，然后单击 **[!UICONTROL OK]** 进行验证。
+1. 单击&#x200B;**[!UICONTROL Content]**&#x200B;选项卡以定义此组的授权。
+1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以选择要与组关联的指定权限或操作员。
+1. 单击&#x200B;**[!UICONTROL Folder]**&#x200B;字段右侧的下拉列表或文件夹，找到要与此组关联的指定权限或操作员。
+1. 选择要添加的权限或运算符，然后单击&#x200B;**[!UICONTROL OK]**&#x200B;进行验证。
 
    ![](assets/s_ncs_user_create_operator_gp03.png)
 
    重复此操作以添加其他权限或操作员。
 
-1. 单击 **[!UICONTROL Save]** 按钮以将组添加到列表。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮以将组添加到列表。
 
 ## 默认组 {#default-groups}
 
@@ -48,11 +48,11 @@ ht-degree: 1%
 
 1. **[!UICONTROL Administrator]**
 
-   此组中的操作员具有实例的完全访问权限。 管理员是可以访问界面中技术含量最高的部分的用户。 他们持有 **[!UICONTROL Administration]** 角色并确保平台已全部设置。
+   此组中的操作员具有实例的完全访问权限。 管理员是可以访问界面中技术含量最高的部分的用户。 他们担任&#x200B;**[!UICONTROL Administration]**&#x200B;角色，并确保平台已全部设置。
 
    此组包含以下已命名权限：
 
-   * **[!UICONTROL ADMINISTRATION]**：有权执行/创建/编辑/删除任何对象，例如工作流、投放、脚本等
+   * **[!UICONTROL ADMINISTRATION]**：有权执行/创建/编辑/删除任何对象，如工作流、投放、脚本等。
 
 1. **[!UICONTROL Delivery operators]**
 
@@ -60,16 +60,16 @@ ht-degree: 1%
 
    此组包含以下已命名权限：
 
-   * **[!UICONTROL PREPARE DELIVERIES]**：有权创建、编辑和开始投放分析，
-   * **[!UICONTROL START DELIVERIES]**：有权批准之前分析的投放。
+   * **[!UICONTROL PREPARE DELIVERIES]**：有权创建、编辑和启动投放分析，
+   * **[!UICONTROL START DELIVERIES]**：有权批准以前分析的投放。
 
 1. **[!UICONTROL Campaign managers]**
 
-   此组中的操作员可以管理营销活动：通过此组，您可以访问链接到营销活动的对象（计划、项目、工作流、预算等） 在 **[!UICONTROL Campaign]** (可选Adobe Campaign模块)。
+   此组中的操作员可以管理营销活动：通过此组，您可以访问链接到营销活动的对象（计划、项目、工作流、预算等） 在&#x200B;**[!UICONTROL Campaign]**&#x200B;的框架内(可选Adobe Campaign模块)。
 
    此组包含以下已命名权限：
 
-   * **[!UICONTROL INSERT FOLDERS]**：有权将文件夹插入Adobe Campaign树（前提是您对有关分支具有编辑权限），
+   * **[!UICONTROL INSERT FOLDERS]**：有权将文件夹插入到Adobe Campaign树中（前提是您对有关分支具有编辑权限），
    * **[!UICONTROL WORKFLOW]**：使用工作流的权限。
 
    >[!NOTE]
@@ -78,7 +78,7 @@ ht-degree: 1%
 
 1. **[!UICONTROL Content contributors]**
 
-   此组中的操作员可在的框架内访问内容文件夹 **[!UICONTROL Content management]** (可选Adobe Campaign模块)。 此组不授予任何其他权限。
+   此组中的操作员可以在&#x200B;**[!UICONTROL Content management]**&#x200B;的框架内访问内容文件夹(可选Adobe Campaign模块)。 此组不授予任何其他权限。
 
 1. **[!UICONTROL Access to reports]**
 
@@ -94,12 +94,12 @@ ht-degree: 1%
 
 1. 本地/中央管理
 
-   这些组允许您使用 **[!UICONTROL Distributed marketing]** (可选Adobe Campaign模块)。
+   这些组允许您使用&#x200B;**[!UICONTROL Distributed marketing]**(可选Adobe Campaign模块)。
 
 1. **[!UICONTROL Offer managers]**
 
-   此组中的操作员可以创建和维护选件。 有关详细信息，请参阅此 [页面](../../interaction/using/operator-profiles.md).
+   此组中的操作员可以创建和维护选件。 有关此内容的详细信息，请参阅此[页面](../../interaction/using/operator-profiles.md)。
 此组包含以下已命名权限：
 
-   * **[!UICONTROL INSERT FOLDERS]**：有权将文件夹插入Adobe Campaign树（前提是您对有关分支具有编辑权限），
-   * **[!UICONTROL EDIT FOLDERS]**：有权更改文件夹属性，如内部名称、标签、关联的图像、子文件夹顺序等。
+   * **[!UICONTROL INSERT FOLDERS]**：有权将文件夹插入到Adobe Campaign树中（前提是您对有关分支具有编辑权限），
+   * **[!UICONTROL EDIT FOLDERS]**：更改文件夹属性（如内部名称、标签、关联的图像、子文件夹顺序等）的权限。

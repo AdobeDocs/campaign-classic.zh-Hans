@@ -19,9 +19,9 @@ ht-degree: 9%
 
 借助其跟踪功能，Adobe Campaign使您能够跟踪发送的消息并检查收件人的行为：打开、单击链接、退订等。
 
-此信息可在 **[!UICONTROL Tracking]** 每个投放收件人用户档案的选项卡。 此选项卡显示从列表中选择的收件人跟踪和点击的所有URL链接。 这是投放中跟踪的仍存在于投放屏幕中的所有URL的累积。 该列表可以配置，通常包含：点击的URL、点击的日期和时间以及在其中找到URL的文档。 如需详细信息，请参阅[此小节](../../platform/using/editing-a-profile.md#tracking-tab)。
+此信息在投放的每个收件人用户档案的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡中检索。 此选项卡显示从列表中选择的收件人跟踪和点击的所有URL链接。 这是投放中跟踪的仍存在于投放屏幕中的所有URL的累积。 该列表可以配置，通常包含：点击的URL、点击的日期和时间以及在其中找到URL的文档。 如需详细信息，请参阅[此小节](../../platform/using/editing-a-profile.md#tracking-tab)。
 
-此 **投放仪表板** 对于监控投放以及在发送消息期间遇到的最终问题也很关键。 有关详细信息，请参阅 [本节](delivery-dashboard.md).
+**投放仪表板**&#x200B;也是监测您的投放以及在发送消息期间遇到的最终问题的关键。 有关详细信息，请参阅[此部分](delivery-dashboard.md)。
 
 下图显示了用户与各种服务器之间的对话阶段。
 
@@ -107,7 +107,7 @@ Campaign Classic跟踪功能允许您在电子邮件中添加可个性化并支�
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-以下故障排除提示将帮助您解决在Adobe Campaign Classic中使用跟踪时最常见的问题。 有关更高级的疑难解答，请参阅 [本节](tracking-troubleshooting.md).
+以下故障排除提示将帮助您解决在Adobe Campaign Classic中使用跟踪时最常见的问题。 有关更高级的疑难解答，请参阅[此章节](tracking-troubleshooting.md)。
 
 * 检查trackinglogd进程是否正在运行
 

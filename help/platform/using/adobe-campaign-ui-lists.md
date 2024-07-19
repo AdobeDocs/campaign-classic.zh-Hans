@@ -21,19 +21,19 @@ ht-degree: 32%
 
 默认情况下，Adobe Campaign会加载列表的前200条记录。 这意味着显示不一定显示您正在查看的表的所有记录。 您可以统计列表中的记录数量并加载更多记录。
 
-在列表屏幕的右下角， **[!UICONTROL counter]** 显示已加载的记录数以及数据库中的记录总数（应用任何过滤器后）：
+在列表屏幕的右下方，**[!UICONTROL counter]**&#x200B;显示已加载的记录数以及数据库中的记录总数（应用任何筛选器后）：
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
-如果&quot;**？**“”而不是右侧的数字，请单击计数器开始计算。
+如果是“**”？将显示“**”而不是右侧的数字，请单击计数器以启动计算。
 
 ### 加载更多记录 {#loading-more-records}
 
-要加载（并因此显示）附加记录（默认为200行），请单击 **[!UICONTROL Continue loading]**.
+要加载（并因此显示）其他记录（默认为200行），请单击&#x200B;**[!UICONTROL Continue loading]**。
 
 ![](assets/s_ncs_user_load_list.png)
 
-要加载所有记录，请右键单击列表并选择 **[!UICONTROL Load all]**.
+要加载所有记录，请右键单击列表并选择&#x200B;**[!UICONTROL Load all]**。
 
 >[!CAUTION]
 >
@@ -41,11 +41,11 @@ ht-degree: 32%
 
 ### 更改默认的记录数 {#change-default-number-of-records}
 
-要更改加载的默认记录数，请单击 **[!UICONTROL Configure list]** 在列表的右下角。
+要更改加载的默认记录数，请单击列表右下角的&#x200B;**[!UICONTROL Configure list]**。
 
 ![](assets/s_ncs_user_configure_list.png)
 
-在列表配置窗口中，单击 **[!UICONTROL Advanced parameters]** （左下方）并更改要检索的行数。
+在列表配置窗口中，单击&#x200B;**[!UICONTROL Advanced parameters]** （左下方）并更改要检索的行数。
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
@@ -66,11 +66,11 @@ ht-degree: 32%
 
 添加列的另一种方法（例如，如果要显示未在详细信息屏幕上显示的数据）是使用列表配置窗口。 操作步骤：
 
-1. 单击 **[!UICONTROL Configure list]** 列表右下方。
+1. 单击列表右下方的&#x200B;**[!UICONTROL Configure list]**。
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. 在列表配置窗口中，双击要添加到 **[!UICONTROL Available fields]** 列表以将其添加到 **[!UICONTROL Output columns]**.
+1. 在列表配置窗口中，双击要添加到&#x200B;**[!UICONTROL Available fields]**&#x200B;列表中的字段以将其添加到&#x200B;**[!UICONTROL Output columns]**。
 
    ![](assets/s_ncs_user_configurelist.png)
 
@@ -80,41 +80,41 @@ ht-degree: 32%
    >
    >会按照数据库表，然后按字母顺序显示各个标签。
    >
-   >使用 **Search** 字段，以在可用字段中运行搜索。 欲知更多信息，请参见 [本节](#sorting-a-list).
+   >使用&#x200B;**搜索**&#x200B;字段在可用字段中运行搜索。 有关详细信息，请参阅[此部分](#sorting-a-list)。
    >
    >字段由特定图标标识：SQL字段、链接表、计算字段等。 对于每个选定的字段，描述都显示在可用字段列表下。 [了解详情](#configuring-lists)。
    >
    >您还可以对数据进行排序和过滤。 请参阅[此小节](../../platform/using/filtering-options.md)。
 
 1. 对要显示的每个列重复此步骤。
-1. 使用箭头修改 **显示顺序**. 值最高的列将显示在记录列表的左侧。
+1. 使用箭头修改&#x200B;**显示顺序**。 值最高的列将显示在记录列表的左侧。
 
    ![](assets/s_ncs_user_columns_order_down.png)
 
-1. 如果需要，您可以单击 **[!UICONTROL Distribution of values]** 查看当前文件夹中所选字段值的重新分区。
+1. 如果需要，可以单击&#x200B;**[!UICONTROL Distribution of values]**&#x200B;查看当前文件夹中选定字段的值的重新分区。
 
    ![](assets/s_ncs_user_configurelist_values.png)
 
-1. 单击 **[!UICONTROL OK]** 以确认配置并显示结果。
+1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以确认配置并显示结果。
 
 ### 新建列 {#create-a-new-column}
 
 您可以创建新列以在列表中显示附加字段。 操作步骤：
 
-1. 单击 **[!UICONTROL Configure the list]** 位于列表下方和右侧。
-1. 单击 **[!UICONTROL Add]** 以在列表中显示新字段。
+1. 单击列表右侧下方的&#x200B;**[!UICONTROL Configure the list]**。
+1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;以在列表中显示新字段。
 
 ### 移除列 {#remove-a-column}
 
-您可以使用对记录列表中的一列或多列进行掩码 **[!UICONTROL Configure list]** 位于列表右下方。
+您可以使用位于列表下方和右侧的&#x200B;**[!UICONTROL Configure list]**&#x200B;来屏蔽记录列表中的一列或多列。
 
 ![](assets/s_ncs_user_configure_list.png)
 
-在列表配置窗口中，选择要遮罩的列 **[!UICONTROL Output columns]** 区域，然后单击“删除”按钮。
+在列表配置窗口中，从&#x200B;**[!UICONTROL Output columns]**&#x200B;区域中选择要遮罩的列，然后单击删除按钮。
 
 ![](assets/s_ncs_user_removecolumn_icon.png)
 
-对要遮罩的每一列重复此操作。 单击 **[!UICONTROL OK]** 以确认配置并显示结果。
+对要遮罩的每一列重复此操作。 单击&#x200B;**[!UICONTROL OK]**&#x200B;以确认配置并显示结果。
 
 ### 调整列宽 {#adjust-column-width}
 
@@ -127,7 +127,7 @@ ht-degree: 32%
 * 仅包含在所选文件夹中的记录，
 * 或是所选文件夹及其子文件夹中的记录。
 
-要从一种显示模式切换到另一种显示模式，请单击 **[!UICONTROL Display sub-levels]** 工具栏中。
+要从一种显示模式切换到另一种显示模式，请单击工具栏中的&#x200B;**[!UICONTROL Display sub-levels]**。
 
 ![](assets/s_ncs_user_display_children_icon.png)
 
@@ -147,25 +147,25 @@ ht-degree: 32%
 
 1. 右键单击其中包含已显示数据的文件夹。
 1. 选择 **[!UICONTROL Properties]**。
-1. 单击 **[!UICONTROL Advanced settings]** 然后在 **[!UICONTROL Configuration]** 字段。
+1. 单击&#x200B;**[!UICONTROL Advanced settings]**，然后在&#x200B;**[!UICONTROL Configuration]**&#x200B;字段中指定名称。
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. 单击 **[!UICONTROL OK]** 然后单击 **[!UICONTROL Save]**.
+1. 单击&#x200B;**[!UICONTROL OK]**，然后单击&#x200B;**[!UICONTROL Save]**。
 
 然后可将此配置应用到另一个 **Delivery** 文件夹：
 
 ![](assets/s_ncs_user_folder_save_config_3.png)
 
-单击 **[!UICONTROL Save]** 在文件夹属性窗口中。 此时会修改列表显示，以符合所指定的配置：
+在文件夹属性窗口中单击&#x200B;**[!UICONTROL Save]**。 此时会修改列表显示，以符合所指定的配置：
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
 ## 导出列表 {#exporting-a-list}
 
-要从列表中导出数据，必须使用导出向导。 要访问它，请从列表中选择要导出的元素，右键单击并选择 **[!UICONTROL Export...]**.
+要从列表中导出数据，必须使用导出向导。 要访问它，请从列表中选择要导出的元素，右键单击并选择&#x200B;**[!UICONTROL Export...]**。
 
-有关导入和导出功能的使用说明，请参见 [通用导入和导出](../../platform/using/about-generic-imports-exports.md).
+在[通用导入和导出](../../platform/using/about-generic-imports-exports.md)中说明了导入和导出函数的使用。
 
 >[!CAUTION]
 >
@@ -179,11 +179,11 @@ ht-degree: 32%
 
 您还可以配置排序或组合排序标准。 为此请执行以下操作步骤：
 
-1. **[!UICONTROL Configure list]** 列表右下方。
+1. 列表右侧的下方&#x200B;**[!UICONTROL Configure list]**。
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. 在列表配置窗口中，单击 **[!UICONTROL Sorting]** 选项卡。
+1. 在列表配置窗口中，单击&#x200B;**[!UICONTROL Sorting]**&#x200B;选项卡。
 1. 选择要排序的字段以及排序方向（升序或降序）。
 
    ![](assets/s_ncs_user_configurelist_sort.png)
@@ -194,11 +194,11 @@ ht-degree: 32%
 
    排序优先级不会影响列表中各类的显示情况。
 
-1. 单击 **[!UICONTROL Ok]** 以确认此配置并在列表中显示结果。
+1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;以确认此配置并在列表中显示结果。
 
 ### 搜索元素 {#running-a-search}
 
-您可以使用在编辑器中运行可用字段的搜索 **[!UICONTROL Search]** 字段列表上方的字段。 按 **输入** 在键盘上或浏览列表。 符合搜索内容的字段将以粗体标签显示。
+您可以使用位于字段列表上方的&#x200B;**[!UICONTROL Search]**&#x200B;字段在编辑器中运行可用字段的搜索。 按键盘上的&#x200B;**Enter**&#x200B;键或浏览列表。 符合搜索内容的字段将以粗体标签显示。
 
 >[!NOTE]
 >

@@ -27,28 +27,28 @@ ht-degree: 1%
 
 这意味着连接可以使用MX规则而不成功发送电子邮件。 在这种情况下，具有IP或信誉较低的域的配置在发送电子邮件之前必须尝试多个连接。 对于每次尝试，将使用每小时信用的消息。 因此，营销活动效果将受显着影响。
 
-因此，“满足配额”不仅是一个配置问题，还可以与信誉相关联。 分析中的错误消息很重要 [SMTP日志](../../production/using/monitoring-processes.md#smtp-errors-per-domain).
+因此，“满足配额”不仅是一个配置问题，还可以与信誉相关联。 在[SMTP日志](../../production/using/monitoring-processes.md#smtp-errors-per-domain)中分析错误消息很重要。
 
-有关MX配置的更多信息，请参见 [本节](../../installation/using/email-deliverability.md#mx-configuration).
+有关MX配置的详细信息，请参阅[此部分](../../installation/using/email-deliverability.md#mx-configuration)。
 
 ## ISP的同一错误消息 {#same-error-for-an-isp}
 
 **为什么我总是收到针对特定ISP的相同错误消息？**
 
 如果您总是收到与ISP相同的错误消息，则您的电子邮件或IP可能被ISP检测到为故障。 执行以下建议：
-* 检查您是否收到大量与不存在电子邮件地址关联的故障(**用户未知** 失败)。
+* 检查您是否收到大量与不存在电子邮件地址关联的故障（**用户未知**&#x200B;个故障）。
 * 更新您的订阅表单，以检测输入的域名中是否有任何错误(例如：gmaul.com或yaho.com)。
 * 如果您发现错误，指出您的邮件被声明为垃圾邮件，或您的邮件被持续阻止，请尝试排除过去12个月内未打开或单击您邮件之一的收件人，使其离开目标。
 
-如果问题仍然存在，请与商业或可投放性服务部门联系， [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+如果问题仍然存在，请与商业或可交付性服务部门联系，[Adobe客户关怀团队](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 ## 阻止列表与隔离 {#denylist-versus-quarantine}
 
-* **阻止列表上的电子邮件地址与隔离的电子邮件地址之间有何区别？**
+* **阻止列表的电子邮件地址与隔离的电子邮件地址有何区别？**
 
-   * 状态 **[!UICONTROL Denylisted]** 是反馈循环（当个人将邮件报告为垃圾邮件时）的结果。
+   * 状态&#x200B;**[!UICONTROL Denylisted]**&#x200B;是反馈循环（当某人报告邮件为垃圾邮件时）的结果。
 
-   * 状态 **[!UICONTROL Quarantined]** 是软退回或硬退回的结果。
+   * 状态&#x200B;**[!UICONTROL Quarantined]**&#x200B;是软退回或硬退回的结果。
 
   有关更多信息，请参阅[此小节](understanding-quarantine-management.md#quarantine-vs-denylist)。
 
@@ -56,20 +56,20 @@ ht-degree: 1%
 
   以下是10个可能的原因：未定义、用户未知、域无效、阻止列表时、被拒绝、错误被忽略、无法访问、帐户被禁用、邮箱已满、未连接。
 
-  有关此内容的更多信息，请参阅 [了解隔离管理](understanding-quarantine-management.md).
+  有关此内容的详细信息，请参阅[了解隔离管理](understanding-quarantine-management.md)。
 
 ## 从阻止列表中删除 {#remove-from-denylist}
 
-* **我的一名收件人被错误地添加到阻止列表中。 如何将其从拒绝列表中删除，以便可以重新开始向其发送消息？**
+* **我的一名收件人被错误地添加到阻止列表。 如何将其从阻止列表中移除，以便可以重新向他们发送消息？**
 
-   * 转到 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
-   * 在对应的记录的详细信息中，设置 **[!UICONTROL Status]** 字段至 **[!UICONTROL Valid]**.
+   * 转到&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
+   * 在对应的记录的详细信息中，将&#x200B;**[!UICONTROL Status]**&#x200B;字段的值设置为&#x200B;**[!UICONTROL Valid]**。
    * 保存记录。
 
-* **如何确定我的IP之一是否位于阻止列表上？ 如何从阻止列表中删除我的IP？**
+* 列入阻止列表 **如何确定我的IP是否位于上？ 如何从阻止列表中删除我的IP？**
 
   要检查您的IP地址是否位于阻止列表上，您可以使用各种网站对其进行验证，例如：
-   * [MX Toolbox](https://mxtoolbox.com/)
+   * [MX工具箱](https://mxtoolbox.com/)
    * [我的IP地址是什么](https://whatismyipaddress.com)
 
   列入阻止列表通常，IP地址检查的结果将返回一个列表，其中包含IP地址的详细信息，以及拒绝IP地址的网站的名称。

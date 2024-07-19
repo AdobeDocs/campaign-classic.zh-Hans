@@ -24,8 +24,8 @@ ht-degree: 4%
 
 选件管理通过Adobe Campaign中的文件夹树来执行。
 
-在创建选件之前，必须首先指定环境(请参阅 [环境概述](../../interaction/using/environments-overview.md))。 它将包含一组优惠的所有特征（资格、目标限制、呈现规则），按类别进行排序以及它们的空间列表。
+在创建选件之前，必须首先指定环境（请参阅[环境概述](../../interaction/using/environments-overview.md)）。 它将包含一组优惠的所有特征（资格、目标限制、呈现规则），按类别进行排序以及它们的空间列表。
 
 >[!IMPORTANT]
 >
->创建优惠目录（即类别和优惠）是的责任 **[!UICONTROL Offer manager]**.
+>创建优惠目录（即类别和优惠）是&#x200B;**[!UICONTROL Offer manager]**&#x200B;的责任。

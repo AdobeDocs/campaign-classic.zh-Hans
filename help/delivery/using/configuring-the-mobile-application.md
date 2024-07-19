@@ -22,7 +22,7 @@ ht-degree: 3%
 1. [配置iOS服务](#configuring-ios-service)
 1. [在Campaign中集成iOS移动应用程序](#creating-ios-app)
 
-然后，您将能够 [为iOS设备创建推送通知](create-notifications-ios.md).
+然后，您将能够[为iOS设备](create-notifications-ios.md)创建推送通知。
 
 ## 配置iOS外部帐户 {#configuring-external-account-ios}
 
@@ -30,9 +30,9 @@ ht-degree: 3%
 
 要配置此连接器，请执行以下步骤：
 
-1. 转到 **[!UICONTROL Administration > Platform > External accounts]**.
-1. 选择 **[!UICONTROL iOS routing]** 外部帐户。
-1. 在 **[!UICONTROL Connector]** 选项卡，填写 **[!UICONTROL Access URL of the connector]** 字段，带有以下URL： ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
+1. 转到&#x200B;**[!UICONTROL Administration > Platform > External accounts]**。
+1. 选择&#x200B;**[!UICONTROL iOS routing]**&#x200B;外部帐户。
+1. 在&#x200B;**[!UICONTROL Connector]**&#x200B;选项卡中，使用以下URL填写&#x200B;**[!UICONTROL Access URL of the connector]**&#x200B;字段： ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
 
    ![](assets/nmac_connectors.png)
 
@@ -46,22 +46,22 @@ ht-degree: 3%
 >
 >在与AdobeSDK进行任何集成之前，必须已为“推送”操作配置应用程序。
 >
->如果不是这种情况，请参阅 [此页面](https://developer.apple.com/documentation/usernotifications).
+>如果不是这种情况，请参阅[此页面](https://developer.apple.com/documentation/usernotifications)。
 
-1. 转到 **[!UICONTROL Profiles and Targets > Services and subscriptions]** 节点并单击 **[!UICONTROL New]**.
+1. 转到&#x200B;**[!UICONTROL Profiles and Targets > Services and subscriptions]**&#x200B;节点并单击&#x200B;**[!UICONTROL New]**。
 
    ![](assets/nmac_service_1.png)
 
-1. 定义 **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]**.
-1. 转到 **[!UICONTROL Type]** 字段并选择 **[!UICONTROL Mobile application]**.
+1. 定义&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Internal name]**。
+1. 转到&#x200B;**[!UICONTROL Type]**&#x200B;字段并选择&#x200B;**[!UICONTROL Mobile application]**。
 
    >[!NOTE]
    >
-   >默认 **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** 目标映射已链接到收件人表。 如果要使用其他目标映射，则需要创建一个新的目标映射，并在 **[!UICONTROL Target mapping]** 服务的字段。 有关创建目标映射的详细信息，请参阅 [配置指南](../../configuration/using/about-custom-recipient-table.md).
+   >默认&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;目标映射已链接到收件人表。 如果要使用其他目标映射，则需要创建一个新的目标映射，并在服务的&#x200B;**[!UICONTROL Target mapping]**&#x200B;字段中输入该映射。 有关创建目标映射的详细信息，请参阅[配置指南](../../configuration/using/about-custom-recipient-table.md)。
 
    ![](assets/nmac_ios.png)
 
-1. 然后单击 **[!UICONTROL Add]** 按钮选择应用程序类型。
+1. 然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮选择应用程序类型。
 
    ![](assets/nmac_service_2.png)
 
@@ -71,36 +71,36 @@ ht-degree: 3%
 
 创建服务后，在Campaign中创建您的iOS应用程序。 按照下面的步骤进行操作：
 
-1. 在新创建的服务中，单击 **[!UICONTROL Add]** 按钮选择应用程序类型。
+1. 在新创建的服务中，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以选择应用程序类型。
 
    ![](assets/nmac_service_2.png)
 
-1. 出现以下窗口。 选择 **[!UICONTROL Create an iOS application]** 首先输入 **[!UICONTROL Label]**.
+1. 出现以下窗口。 选择&#x200B;**[!UICONTROL Create an iOS application]**，并首先输入&#x200B;**[!UICONTROL Label]**。
 
    ![](assets/nmac_ios_2.png)
 
-1. 作为一个选项，您可以使用一些来扩充推送消息内容 **[!UICONTROL Application variables]** 如果需要。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
-在以下示例中，我们添加 **mediaURl** 和 **mediaExt** 以创建富推送通知，然后为应用程序提供要在通知中显示的图像。
+1. 作为一个选项，您可以根据需要使用大约&#x200B;**[!UICONTROL Application variables]**扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
+在以下示例中，我们添加**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;以创建富推送通知，然后为应用程序提供要在通知中显示的图像。
 
    ![](assets/nmac_ios_3.png)
 
-1. 此 **[!UICONTROL Subscription parameters]** 选项卡允许您定义扩展为的映射 **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** 架构。
+1. **[!UICONTROL Subscription parameters]**&#x200B;选项卡允许您使用&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;架构的扩展名定义映射。
 
    >[!NOTE]
    >
    >请确保不要将相同的证书用于应用程序的开发版本（沙盒）和生产版本。
 
-1. 此 **[!UICONTROL Sounds]** 选项卡允许您指定要播放的声音。 单击 **[!UICONTROL Add]** 和填充 **[!UICONTROL Internal name]** 字段，其中必须包含嵌入在应用程序中的文件的名称或系统声音的名称。
+1. **[!UICONTROL Sounds]**&#x200B;选项卡允许您指定要播放的声音。 单击&#x200B;**[!UICONTROL Add]**&#x200B;并填写&#x200B;**[!UICONTROL Internal name]**&#x200B;字段，该字段必须包含嵌入在应用程序中的文件的名称或系统声音的名称。
 
-1. 单击 **[!UICONTROL Next]** 以开始配置开发应用程序。
+1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;开始配置开发应用程序。
 
-1. 确保相同 **[!UICONTROL Integration key]** 在Adobe Campaign中以及通过SDK在应用程序代码中定义。 <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> 此集成键特定于每个应用程序，允许您将移动应用程序链接到Adobe Campaign平台。
+1. 确保通过SDK在Adobe Campaign和应用程序代码中定义了相同的&#x200B;**[!UICONTROL Integration key]**。 <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).-->此集成密钥（特定于每个应用程序）允许您将移动应用程序链接到Adobe Campaign平台。
 
    >[!NOTE]
    >
-   > 此 **[!UICONTROL Integration key]** 可使用字符串值完全自定义，但需要与SDK中指定的值完全相同。
+   > **[!UICONTROL Integration key]**&#x200B;可使用字符串值完全自定义，但需要与SDK中指定的值完全相同。
 
-1. 从以下图标中选择一个现成的图标： **[!UICONTROL Application icon]** 字段，用于将服务中的移动应用程序个性化。
+1. 从&#x200B;**[!UICONTROL Application icon]**&#x200B;字段中选择一个现成的图标，以个性化服务中的移动应用程序。
 
 1. 选择 **[!UICONTROL Authentication mode]**。
 
@@ -108,17 +108,17 @@ ht-degree: 3%
 
    提供了两种模式：
 
-   * （推荐） **[!UICONTROL Token-based authentication]**：填写APN连接设置 **[!UICONTROL Key Id]**， **[!UICONTROL Team Id]** 和 **[!UICONTROL Bundle Id]** 然后，通过单击 **[!UICONTROL Enter the private key...]**. 有关更多详细信息 **[!UICONTROL Token-based authentication]**，请参阅 [Apple文档](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+   * （推荐） **[!UICONTROL Token-based authentication]**：填写APNs连接设置&#x200B;**[!UICONTROL Key Id]**、**[!UICONTROL Team Id]**&#x200B;和&#x200B;**[!UICONTROL Bundle Id]**，然后单击&#x200B;**[!UICONTROL Enter the private key...]**&#x200B;选择您的p8证书。 有关&#x200B;**[!UICONTROL Token-based authentication]**&#x200B;的详细信息，请参阅[Apple文档](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}。
 
-   * **[!UICONTROL Certificate-based authentication]**：单击 **[!UICONTROL Enter the certificate...]**  然后选择您的p12密钥并输入由移动应用程序开发人员提供的密码。
+   * **[!UICONTROL Certificate-based authentication]**：单击&#x200B;**[!UICONTROL Enter the certificate...]**，然后选择p12密钥并输入移动应用程序开发人员提供的密码。
 
    >[!NOTE]
    >
-   > Adobe建议使用 **[!UICONTROL Token-based authentication]** 用于iOS配置，因为P8身份验证密钥更新且更安全。
+   > Adobe建议对您的iOS配置使用&#x200B;**[!UICONTROL Token-based authentication]**，因为P8身份验证密钥更新且更安全。
 
-1. 使用 **[!UICONTROL Test the connection]** 按钮以验证您的配置。
+1. 使用&#x200B;**[!UICONTROL Test the connection]**&#x200B;按钮验证您的配置。
 
-1. 单击 **[!UICONTROL Next]** 以开始配置生产应用程序，并按照上面详述的相同步骤操作。
+1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;开始配置生产应用程序，并遵循上面详述的相同步骤。
 
 
 1. 单击 **[!UICONTROL Finish]**。

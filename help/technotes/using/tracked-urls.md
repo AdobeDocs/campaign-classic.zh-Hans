@@ -25,7 +25,7 @@ ht-degree: 30%
 
 **您是否受影响？**
 
-为了提高安全性，中引入了用于跟踪电子邮件中链接的签名机制。 [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - 2020年4月 — 默认情况下为从Build 19.1.4 (9032@3a9dc9c)和Campaign 20.2开始的所有客户启用和。
+为了提高安全性，用于跟踪电子邮件中链接的签名机制已引入到[Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - 2020年4月 — 并默认对从Build 19.1.4 (9032@3a9dc9c)和Campaign 20.2开始的所有客户启用。
 
 如果您的环境在下面列出的某个版本上运行，则可能会受到影响：
 
@@ -38,18 +38,18 @@ ht-degree: 30%
 * Campaign 19.1.5（内部版本9033）到19.1.7（内部版本9036）版本。
 
 
-了解如何检查您的版本 [在此部分中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+在本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本[。
 
 **如何更新？**
 
-作为 **托管客户**，Adobe将很快与您合作以更新您的配置。
+作为&#x200B;**托管客户**，Adobe将很快与您合作更新您的配置。
 
-作为 **内部部署/混合部署客户**，您需要更新配置。
+作为&#x200B;**内部部署/混合部署客户**，您需要更新配置。
 
 请按照以下步骤操作：
 
-1. 在 [服务器配置文件](../../installation/using/the-server-configuration-file.md) (serverConf.xml)，更改 **signEmailLinks** 到 **false**.
-1. 重新启动 **nlserver** 服务。
+1. 在[服务器配置文件](../../installation/using/the-server-configuration-file.md) (serverConf.xml)中，将&#x200B;**signEmailLinks**&#x200B;更改为&#x200B;**false**。
+1. 重新启动&#x200B;**nlserver**&#x200B;服务。
 1. 在跟踪服务器上，重新启动Web服务器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
    ```
@@ -58,7 +58,7 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->此 **config-`<instance>`.xml** 文件覆盖 **serverConf.xml** 设置。 如果 **signEmailLinks** 中存在于  **config-`<instance>`.xml** (其中 **实例** 是实例的名称)，还必须将其转换为 **false**.
+>**config-`<instance>`.xml**&#x200B;文件覆盖&#x200B;**serverConf.xml**&#x200B;设置。 如果&#x200B;**signEmailLinks**&#x200B;存在于&#x200B;**config-`<instance>`.xml**&#x200B;中（其中&#x200B;**实例**&#x200B;是您的实例的名称），则还必须将其转换为&#x200B;**false**。
 >
 
 **会有什么影响？**

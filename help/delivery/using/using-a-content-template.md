@@ -18,9 +18,9 @@ ht-degree: 3%
 
 ## 关于内容模板 {#about-content-templates}
 
-可以直接在投放中引用和使用内容模板。 请参阅 [通过内容管理创建投放](#creating-a-delivery-via-content-management)
+可以直接在投放中引用和使用内容模板。 请参阅[通过内容管理创建投放](#creating-a-delivery-via-content-management)
 
-它们还可用于创建内容实例。 创建实例后，即可交付这些实例(请参阅 [交付内容实例](#delivering-a-content-instance))或导出(请参阅 [创建内容实例](#creating-a-content-instance))。
+它们还可用于创建内容实例。 创建实例后，这些实例就可以交付了（请参阅[交付内容实例](#delivering-a-content-instance)）或导出（请参阅[创建内容实例](#creating-a-content-instance)）。
 
 ## 通过内容管理创建投放 {#creating-a-delivery-via-content-management}
 
@@ -28,11 +28,11 @@ ht-degree: 3%
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
-将根据所选设置自动应用布局。 要查看它，请单击 **[!UICONTROL HTML preview]** (或 **[!UICONTROL Text preview]** )，并选择一个收件人以测试个性化元素。
+将根据所选设置自动应用布局。 要查看它，请单击&#x200B;**[!UICONTROL HTML preview]** （或&#x200B;**[!UICONTROL Text preview]** ）并选择收件人以测试个性化元素。
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-有关更多信息，请参阅完整实施示例： [在投放向导中创建内容](use-case-creating-content-management.md#creating-content-in-the-delivery-wizard).
+有关详细信息，请参阅完整的实施示例：[在投放向导](use-case-creating-content-management.md#creating-content-in-the-delivery-wizard)中创建内容。
 
 ## 创建内容实例 {#creating-a-content-instance}
 
@@ -40,7 +40,7 @@ ht-degree: 3%
 
 应用以下步骤：
 
-1. 选择 **[!UICONTROL Resources > Contents]** 节点，右键单击并选择 **[!UICONTROL Properties]**.
+1. 选择树的&#x200B;**[!UICONTROL Resources > Contents]**&#x200B;节点，右键单击并选择&#x200B;**[!UICONTROL Properties]**。
 
    ![](assets/s_ncs_content_folder_properties.png)
 
@@ -48,7 +48,7 @@ ht-degree: 3%
 
    ![](assets/s_ncs_content_folder_templates.png)
 
-1. 您现在可以使用来创建新内容 **[!UICONTROL New]** 按钮进行标记。
+1. 您现在可以使用内容列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮创建新内容。
 
    ![](assets/s_ncs_content_folder_create_a_template.png)
 
@@ -56,11 +56,11 @@ ht-degree: 3%
 
    ![](assets/s_ncs_content_folder_use_a_template.png)
 
-1. 然后单击 **[!UICONTROL HTML preview]** 选项卡以查看渲染。 此处，不输入从数据库获取的个性化字段。
+1. 然后单击&#x200B;**[!UICONTROL HTML preview]**&#x200B;选项卡以查看渲染。 此处，不输入从数据库获取的个性化字段。
 
    ![](assets/s_ncs_content_folder_use_a_template_preview.png)
 
-1. 创建后，该内容即添加到可用内容列表中。 单击 **[!UICONTROL Properties]** 用于更改其标签、状态或查看其历史记录的链接。
+1. 创建后，该内容即添加到可用内容列表中。 单击&#x200B;**[!UICONTROL Properties]**&#x200B;链接以更改其标签、状态或查看其历史记录。
 
    ![](assets/s_ncs_content_folder_template_properties.png)
 
@@ -70,17 +70,17 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >您可以授权生成未批准的内容。 为此，请更改发布模板中的相关选项。 有关详细信息，请参见 [创建和配置模板](publication-templates.md#creating-and-configuring-the-template).
+   >您可以授权生成未批准的内容。 为此，请更改发布模板中的相关选项。 有关详细信息，请参阅[创建和配置模板](publication-templates.md#creating-and-configuring-the-template)。
 
-   默认情况下，HTML和文本内容会在 **发布** Adobe Campaign实例的文件夹。 您可以更改发布文件夹，这要归功于 **NcmPublishingDir** 选项。
+   默认情况下，HTML和文本内容在Adobe Campaign实例的&#x200B;**发布**&#x200B;文件夹中生成。 您可以通过&#x200B;**NcmPublishingDir**&#x200B;选项更改发布文件夹。
 
 ## 交付内容实例 {#delivering-a-content-instance}
 
-要创建并投放内容实例，投放模板需要链接到用于生成此内容的发布模板。 有关详细信息，请参见 [投放](publication-templates.md#delivery).
+要创建并投放内容实例，投放模板需要链接到用于生成此内容的发布模板。 有关详情，请参阅[投放](publication-templates.md#delivery)。
 
 此外，内容存储文件夹必须专用于从此发布模板中获取的内容（当内容文件夹允许您生成多种类型的内容时，无法自动创建投放）。
 
-要根据所选内容自动创建投放，请单击 **[!UICONTROL Delivery]** 图标并选择模板。
+要根据所选内容自动创建投放，请单击&#x200B;**[!UICONTROL Delivery]**&#x200B;图标并选择模板。
 
 ![](assets/s_ncs_content_folder_create_the_delivery.png)
 

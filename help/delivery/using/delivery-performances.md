@@ -37,7 +37,7 @@ ht-degree: 5%
 
 * 大型投放（如投放100多万收件人）在发送队列中需要空格。 这本身对于服务器来说并不是问题，但是当与同时发送的大量其他大型投放一起发送时，可能会造成发送延迟。
 
-* 电子邮件中的个性化可为每个收件人从数据库中提取数据。 如果存在许多个性化元素，这会增加准备投放所需的数据量。
+* 电子邮件中的Personalization会从数据库中提取每个收件人的数据。 如果存在许多个性化元素，这会增加准备投放所需的数据量。
 
 * 索引地址。 为了优化应用程序中使用的SQL查询的性能，可以从数据架构的主元素声明索引。
 
@@ -50,7 +50,7 @@ ht-degree: 5%
 如果投放性能不佳，您可以检查：
 
 * **投放的大小**：大型投放可能需要更长的时间才能完成。 MTA子级配置为处理默认的批次大小，这适用于大多数实例，但在投放速度持续缓慢时需要检查。
-* **投放目标**：软退回错误会影响投放性能，根据重试配置可处理这些错误。 错误数越多，所需的重试次数就越多。
-* **整个平台负载**：发送多个大型投放时，整个平台可能会受到影响。 您还可以检查IP信誉和投放问题。 有关详细信息，请参见 [本节](about-deliverability.md) 和 [Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans).
+* **投放目标**：投放性能禁止受软退回错误的影响，软退回错误根据重试配置进行处理。 错误数越多，所需的重试次数就越多。
+* **整个平台负载**：发送多个大型投放时，整个平台可能会受到影响。 您还可以检查IP信誉和投放问题。 有关详细信息，请参阅[此部分](about-deliverability.md)和[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
 
 平台和数据库维护也会影响投放发送性能。 有关详细信息，请参见[此页面](../../production/using/database-performances.md)。

@@ -26,12 +26,12 @@ ht-degree: 2%
 </key>
 ```
 
-当键是架构中第一个要填充的键时，或者如果键包含 `internal` 属性设置为“true”。
+如果某个键是架构中第一个要填充的键，或者包含设置为“true”的`internal`属性，则该键被称为“主键”。
 
 以下规则适用于键：
 
 * 键可以引用表中的一个或多个字段
-* 为每个键定义隐式声明唯一索引。 可以通过设置 `noDbIndex` 属性为“true”。
+* 为每个键定义隐式声明唯一索引。 通过将`noDbIndex`属性设置为“true”，可以阻止在键上创建索引。
 
 >[!NOTE]
 >
@@ -126,21 +126,21 @@ ht-degree: 2%
 
 ## 自动增量键 {#auto-incremental-key}
 
-大多数Adobe Campaign表的主键是由数据库引擎自动生成的32位长整数。 键值的计算取决于序列(默认情况下， **XtkNewId** SQL函数)生成在整个数据库中唯一的编号。 在插入记录时自动输入密钥的内容。
+大多数Adobe Campaign表的主键是由数据库引擎自动生成的32位长整数。 键值的计算取决于序列（默认情况下，**XtkNewId** SQL函数），该序列生成的数字在整个数据库中是唯一的。 在插入记录时自动输入密钥的内容。
 
 增量键的优点在于，它为表之间的连接提供了不可修改的技术键。 此外，此键不会占用太多内存，因为它使用双字节整数。
 
-您可以在源架构中指定要与配合使用的序列的名称 **pk序列** 属性。 如果源架构中未提供此属性，则 **XtkNewId** 将使用默认序列。 应用程序使用专用序列来 **nms：broadLog** 和 **nms：trackingLog** 架构(**NmsBroadLogId** 和 **NmsTrackingLogId** 分别)，因为这些是包含最多记录的表。
+您可以在源架构中指定要与&#x200B;**pkSequence**&#x200B;属性一起使用的序列的名称。 如果源架构中未提供此属性，则将使用&#x200B;**XtkNewId**&#x200B;默认序列。 应用程序对&#x200B;**nms：broadLog**&#x200B;和&#x200B;**nms：trackingLog**&#x200B;架构使用专用序列（分别为&#x200B;**NmsBroadLogId**&#x200B;和&#x200B;**NmsTrackingLogId**），因为这些是包含最多记录的表。
 
-从ACC 18.10， **XtkNewId** 不再是现成架构中序列的默认值。 您现在可以使用专用序列构建模式或扩展现有模式。
+从ACC 18.10开始，**XtkNewId**&#x200B;不再是现成架构中序列的默认值。 您现在可以使用专用序列构建模式或扩展现有模式。
 
 >[!IMPORTANT]
 >
 >创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
-Adobe Campaign架构中引用的序列(**NmsTrackingLogId** 例如)必须与返回参数中ID数的SQL函数关联（用逗号分隔）。 必须调用此函数 **GetNew** XXX **Id**，其中 **XXX** 是序列的名称(**GetNewNmsTrackingLogIds** 例如)。 查看 **postgres-nms.sql**， **mssql-nms.sql** 或 **oracle-nms.sql** 随应用程序提供的文件 **datakit/nms/eng/sql/** 目录，以恢复为每个数据库引擎创建“NmsTrackingLogId”序列的示例。
+在Adobe Campaign架构中引用的序列（例如&#x200B;**NmsTrackingLogId**）必须与返回参数中ID数的SQL函数关联，并以逗号分隔。 此函数必须调用&#x200B;**GetNew** XXX **Ids**，其中&#x200B;**XXX**&#x200B;是序列的名称（例如&#x200B;**GetNewNmsTrackingLogIds**）。 查看&#x200B;**datakit/nms/eng/sql/**&#x200B;目录中随应用程序提供的&#x200B;**postgres-nms.sql**、**mssql-nms.sql**&#x200B;或&#x200B;**oracle-nms.sql**&#x200B;文件，以恢复为每个数据库引擎创建“NmsTrackingLogId”序列的示例。
 
-要声明唯一键，请填充 **autopk** 属性（值为“true”）。
+要声明唯一键，请在数据架构的主元素中填充&#x200B;**autopk**&#x200B;属性（值为“true”）。
 
 **示例**：
 

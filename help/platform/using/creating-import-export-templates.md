@@ -19,17 +19,17 @@ ht-degree: 7%
 
 
 
-导入和导出模板存储在中 **[!UICONTROL Resources > Templates > Job templates]** Adobe Campaign树的目录。
+导入和导出模板存储在Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Templates > Job templates]**&#x200B;目录中。
 
 默认情况下，此目录中存在三个导入模板和一个导出模板。 不得更改它们。
 
-* 本机模板 **[!UICONTROL Import denylist]** 列入阻止列表已配置为导入添加到的电子邮件地址列表。
+* 列入阻止列表本机模板&#x200B;**[!UICONTROL Import denylist]**&#x200B;已配置为导入添加到的电子邮件地址列表。
 
-* 此 **[!UICONTROL New text import]** 和 **[!UICONTROL New text export]** 模板允许您从头开始配置导入或导出。
+* **[!UICONTROL New text import]**&#x200B;和&#x200B;**[!UICONTROL New text export]**&#x200B;模板允许您从头开始配置导入或导出。
 
 ![](assets/s_ncs_user_export_wizard_template_create.png)
 
-您可以复制现有模板以创建自己的模板，或通过创建新模板 **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** 菜单。
+您可以复制现有模板以创建自己的模板，或通过&#x200B;**[!UICONTROL New > Import template]** / **[!UICONTROL Export template]**&#x200B;菜单创建新模板。
 
 然后，配置模板的过程与以下部分中显示的过程相同：
 

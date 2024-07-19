@@ -18,12 +18,12 @@ ht-degree: 3%
 
 Adobe Campaign应用程序服务器旨在实现开放性，便于与日益多样化和复杂的公司信息系统集成。
 
-Adobe Campaign API在应用程序内的JavaScript中以及应用程序外的SOAP中使用。 它们构成了可以扩充的通用函数库。 欲知更多信息，请参见 [实现SOAP方法](../../configuration/using/implementing-soap-methods.md).
+Adobe Campaign API在应用程序内的JavaScript中以及在应用程序外的SOAP中使用。 它们构成了可以扩充的通用函数库。 有关详细信息，请参阅[实现SOAP方法](../../configuration/using/implementing-soap-methods.md)。
 
 >[!IMPORTANT]
 >
 >每天授权引擎呼叫数因您的许可合同而异。 有关详细信息，请参见[此页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
->所有API的列表，包括其完整说明，请参见 [此专用文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
+>[此专用文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)中提供了所有API的列表，包括其完整说明。
 
 ## 先决条件 {#prerequisites}
 
@@ -37,10 +37,10 @@ Adobe Campaign API在应用程序内的JavaScript中以及应用程序外的SOAP
 
 Adobe Campaign使用两种类型的API：
 
-* 用于查询数据模型数据的通用数据访问API。 请参阅 [面向数据的API](../../configuration/using/data-oriented-apis.md).
-* 允许您对每个对象执行操作的特定于业务的API：投放、工作流、订阅等。 请参阅 [面向业务的API](../../configuration/using/business-oriented-apis.md).
+* 用于查询数据模型数据的通用数据访问API。 请参阅[面向数据的API](../../configuration/using/data-oriented-apis.md)。
+* 允许您对每个对象执行操作的特定于业务的API：投放、工作流、订阅等。 请参阅[面向业务的API](../../configuration/using/business-oriented-apis.md)。
 
-为了开发API并与Adobe Campaign交互，您需要熟悉您的数据模型。 Adobe Campaign允许您生成对基础的完整描述。 请参阅 [模型的描述](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+为了开发API并与Adobe Campaign交互，您需要熟悉您的数据模型。 Adobe Campaign允许您生成对基础的完整描述。 请参阅[模型](../../configuration/using/data-oriented-apis.md#description-of-the-model)的说明。
 
 ## SOAP 调用 {#soap-calls}
 
@@ -65,11 +65,11 @@ SOAP消息的结构如下所示：
 
 在此示例中，SOAP查询调用“ExecuteQuery”方法，该方法将字符串作为用于身份验证（会话令牌）的参数，并将XML内容作为要执行的查询的说明。
 
-欲知更多信息，请参见 [ExecuteQuery (xtk：queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
+有关详细信息，请参阅[ExecuteQuery (xtk：queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-)。
 
 >[!NOTE]
 >
->此服务的WSDL描述在以下示例中完成： [Web服务描述：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
+>此服务的WSDL描述在以下示例中完成： [Web服务描述：WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl)。
 
 ### SOAP查询 {#soap-query}
 
@@ -89,13 +89,13 @@ SOAP消息的结构如下所示：
 </SOAP-ENV:Envelope>
 ```
 
-此 `<soap-env:envelope>` 元素是表示SOAP信封的消息中的第一个元素。
+`<soap-env:envelope>`元素是表示SOAP信封的消息中的第一个元素。
 
-此 `<soap-env:body>` 元素是信封的第一个子元素。 它包含消息的描述，即查询或响应的内容。
+`<soap-env:body>`元素是信封的第一个子元素。 它包含消息的描述，即查询或响应的内容。
 
-要调用的方法在 `<executequery>` 元素。
+要调用的方法在SOAP消息正文中的`<executequery>`元素中输入。
 
-在SOAP中，参数按外观顺序进行识别。 第一个参数， `<__sessiontoken>`，采用身份验证链，第二个参数是来自的XML查询描述 `<querydef>` 元素。
+在SOAP中，参数按外观顺序进行识别。 第一个参数`<__sessiontoken>`采用身份验证链，第二个参数是来自`<querydef>`元素的查询的XML描述。
 
 ### SOAP响应 {#soap-response}
 
@@ -112,7 +112,7 @@ SOAP消息的结构如下所示：
 </SOAP-ENV:Envelope>
 ```
 
-查询的结果输入自 `<pdomoutput>` 元素。
+从`<pdomoutput>`元素输入了查询结果。
 
 ## 错误管理 {#error-management}
 
@@ -132,7 +132,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-此 `<soap-env:fault>` SOAP消息正文中的元素用于传递在web服务处理期间产生的错误信号。 它由以下子元素组成：
+SOAP消息正文中的`<soap-env:fault>`元素用于传递在处理Web服务期间产生的错误信号。 它由以下子元素组成：
 
 * `<faultcode>` ：指示错误类型。 错误类型包括：
 
@@ -144,7 +144,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 * `<faultstring>` ：描述错误的消息
 * `<detail>` ：长错误消息
 
-服务调用的成功或失败在 `<faultcode>` 元素已验证。
+在验证`<faultcode>`元素时，将确定服务调用的成功或失败。
 
 >[!IMPORTANT]
 >
@@ -174,4 +174,4 @@ catch (SoapException e)
 
 https://serverName/nl/jsp/soaprouter.jsp
 
-替换为 **`<server>`** Adobe Campaign应用程序服务器(**nlserver web**)。
+使用&#x200B;**`<server>`** Adobe Campaign应用程序服务器(**nlserver web**)。

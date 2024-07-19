@@ -15,11 +15,11 @@ ht-degree: 4%
 
 
 
-An **更新数据**-type活动对数据库中的字段执行批量更新。
+**更新数据**&#x200B;类型的活动对数据库中的字段执行批量更新。
 
 ## 操作类型 {#operation-type}
 
-此 **[!UICONTROL Operation type]** 字段用于选择要对数据库中的数据执行的流程：
+**[!UICONTROL Operation type]**&#x200B;字段允许您选择要对数据库中的数据执行的进程：
 
 * **[!UICONTROL Insert or update]**：添加数据或更新数据（如果已添加）。
 * **[!UICONTROL Insert]**：仅添加数据。
@@ -29,15 +29,15 @@ An **更新数据**-type活动对数据库中的字段执行批量更新。
 
 ![](assets/s_advuser_update_data_1.png)
 
-此 **[!UICONTROL Batch size]** 字段允许您选择要更新的集客过渡元素数量。 例如，如果您声明500，则处理的前500条记录将被更新。
+**[!UICONTROL Batch size]**&#x200B;字段允许您选择要更新的集客过渡元素数量。 例如，如果您声明500，则处理的前500条记录将被更新。
 
 ## 记录标识 {#record-identification}
 
 指定如何识别数据库中的记录：
 
-* 如果数据条目与现有的定向维度相关，请选择 **[!UICONTROL By directly using the targeting dimension]** 选项，然后在以下位置选择它： **[!UICONTROL Updated dimension]** 字段。
+* 如果数据条目与现有定向维度相关，请选择&#x200B;**[!UICONTROL By directly using the targeting dimension]**&#x200B;选项并在&#x200B;**[!UICONTROL Updated dimension]**&#x200B;字段中选择它。
 
-  您可以使用以下图标显示所选维度的字段： **[!UICONTROL Edit this link]** 放大镜按钮。
+  您可以使用&#x200B;**[!UICONTROL Edit this link]**&#x200B;放大镜按钮显示选定维度的字段。
 
 * 否则，请指定一个或多个链接，这些链接将允许识别数据库中的数据或直接使用协调键。
 
@@ -45,11 +45,11 @@ An **更新数据**-type活动对数据库中的字段执行批量更新。
 
 ## 选择要更新的字段 {#selecting-the-fields-to-be-updated}
 
-使用 **[!UICONTROL Automatically associate fields with the same name]** 选项，以便Adobe Campaign自动标识要更新的字段。
+使用&#x200B;**[!UICONTROL Automatically associate fields with the same name]**&#x200B;选项，以便Adobe Campaign自动标识要更新的字段。
 
 ![](assets/s_advuser_update_data_3b.png)
 
-您也可以使用 **[!UICONTROL Insert]** 图标以手动选择要更新的数据库字段。
+您还可以使用&#x200B;**[!UICONTROL Insert]**&#x200B;图标手动选择要更新的数据库字段。
 
 ![](assets/s_advuser_update_data_3.png)
 
@@ -57,22 +57,22 @@ An **更新数据**-type活动对数据库中的字段执行批量更新。
 
 您可以多次使用同一目标字段。
 
-在 **[!UICONTROL Insert or update]** 操作中，您可以单独选择要应用的营销策划，或为每个字段选择要应用的营销策划。 要实现此目的，请在 **[!UICONTROL Operation]** 列。
+在&#x200B;**[!UICONTROL Insert or update]**&#x200B;操作中，您可以单独或为每个字段选择要应用的营销活动。 为此，请在&#x200B;**[!UICONTROL Operation]**&#x200B;列中选择所需的值。
 
 ![](assets/s_advuser_update_data_5.png)
 
-此 **[!UICONTROL modifiedDate]**， **[!UICONTROL modifiedBy]**， **[!UICONTROL createdDate]** 和 **[!UICONTROL createdBy]** 字段在数据更新期间自动更新，除非在字段更新表中专门配置了它们的管理模式。
+**[!UICONTROL modifiedDate]**、**[!UICONTROL modifiedBy]**、**[!UICONTROL createdDate]**&#x200B;和&#x200B;**[!UICONTROL createdBy]**&#x200B;字段在数据更新期间自动更新，除非在字段更新表中专门配置了它们的管理模式。
 
 仅对至少包含一个差异的记录执行记录更新。 如果值相同，则不执行更新。
 
-此 **[!UICONTROL Advanced parameters]** 链接允许您指定其他选项以处理数据更新和管理重复项。 您还可以：
+**[!UICONTROL Advanced parameters]**&#x200B;链接允许您指定其他选项以处理数据更新和管理重复项。 您还可以：
 
-* **[!UICONTROL Disable automatic key management]**.
-* **[!UICONTROL Disable audit]**.
-* **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**. 此选项默认处于自动选中状态。
-* **[!UICONTROL Update all columns with matching names]**.
-* 指定考虑源元素的条件，在 **[!UICONTROL Enabled if]** 字段。
-* 使用表达式指定考虑重复项的条件。 如果您检查 **[!UICONTROL Ignore records which concern the same target]** 选项，则只考虑表达式列表中的第一个。
+* **[!UICONTROL Disable automatic key management]**。
+* **[!UICONTROL Disable audit]**。
+* **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**。 此选项默认处于自动选中状态。
+* **[!UICONTROL Update all columns with matching names]**。
+* 在&#x200B;**[!UICONTROL Enabled if]**&#x200B;字段中指定考虑源元素的条件。
+* 使用表达式指定考虑重复项的条件。 如果选中&#x200B;**[!UICONTROL Ignore records which concern the same target]**&#x200B;选项，则只考虑表达式列表中的第一个表达式。
 
 **[!UICONTROL Generate an outbound transition]**
 
@@ -90,7 +90,7 @@ An **更新数据**-type活动对数据库中的字段执行批量更新。
 >
 >通过此选项，还可处理对工作流工作表(targetWorkflow)、投放(targetDelivery)和列表(targetList)中辅助记录的引用。 如果需要，这些链接会显示在您选择字段和集合的列表中。
 
-1. 选择 **[!UICONTROL Update and merge collections]** 操作。
+1. 选择&#x200B;**[!UICONTROL Update and merge collections]**&#x200B;操作。
 
    ![](assets/update_and_merge_collections1.png)
 
@@ -100,7 +100,7 @@ An **更新数据**-type活动对数据库中的字段执行批量更新。
 
 1. 选择要移动到主记录的收藏集和要更新的字段。
 
-   输入在标识一个或多个辅助记录后应用于这些记录的规则。 为此，您可以使用表达式生成器。 有关详细信息，请参阅此 [部分](../../platform/using/defining-filter-conditions.md#building-expressions). 例如，通过指定该值是必须保留的所有不同记录中最近更新的值。
+   输入在标识一个或多个辅助记录后应用于这些记录的规则。 为此，您可以使用表达式生成器。 有关详细信息，请参阅此[部分](../../platform/using/defining-filter-conditions.md#building-expressions)。 例如，通过指定该值是必须保留的所有不同记录中最近更新的值。
 
    然后，输入规则要考虑的条件。
 
@@ -108,7 +108,7 @@ An **更新数据**-type活动对数据库中的字段执行批量更新。
 
    例如，您可以配置包含异构数据（如收件人的订阅列表）的集合的合并。 使用规则，您还可以从辅助记录订阅创建新的订阅历史记录，甚至可以将订阅列表从辅助记录移动到主记录。
 
-1. 通过选择，指定您希望处理辅助记录的顺序 **[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**.
+1. 通过选择&#x200B;**[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**，指定您希望处理辅助记录的顺序。
 
    ![](assets/update_and_merge_collections3.png)
 
@@ -116,11 +116,11 @@ An **更新数据**-type活动对数据库中的字段执行批量更新。
 
 ## 示例：在扩充后更新数据 {#example--update-data-following-an-enrichment}
 
-此 [步骤2：将扩充数据写入“购买”表](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) 用例中详细说明创建回顾列表的部分提供了扩充活动后数据更新的示例。
+[步骤2：将扩充数据写入详细创建摘要列表的用例的“购买”表](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table)部分，提供了扩充活动后数据更新的示例。
 
 ## 输入参数 {#input-parameters}
 
 * 表名
-* 架构
+* 模式
 
 每个入站事件必须指定由这些参数定义的目标。

@@ -17,7 +17,7 @@ ht-degree: 1%
 
 投放配置可以保存在投放模板中以便重复使用。 模板可能包含投放的完整或部分配置。
 
-可以按照本章所述或根据事件（在设置时间启动、在文件到达服务器时启动等）手动执行投放模板。 投放模板可通过以下方式配置 **[!UICONTROL Resources > Templates > Delivery templates]** 树中的节点。
+可以按照本章所述或根据事件（在设置时间启动、在文件到达服务器时启动等）手动执行投放模板。 可以通过树中的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点配置投放模板。
 
 ![](assets/s_user_template_list.png)
 
@@ -33,4 +33,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->可用的模板取决于您的访问权限、实例配置和上下文。 例如，在创建信息服务时，可以链接确认消息的投放模板：然后只能访问其目标映射为订阅映射的模板。 有关详细信息，请参见 [选择目标映射](selecting-a-target-mapping.md) 和 [服务和订阅](about-services-and-subscriptions.md).
+>可用的模板取决于您的访问权限、实例配置和上下文。 例如，在创建信息服务时，可以链接确认消息的投放模板：然后只能访问其目标映射为订阅映射的模板。 有关详细信息，请参阅[选择目标映射](selecting-a-target-mapping.md)和[服务和订阅](about-services-and-subscriptions.md)。

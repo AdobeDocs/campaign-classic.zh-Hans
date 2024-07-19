@@ -78,7 +78,8 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`：`<port
                               <p>URL parameter</p> 
                            </td>
                            <td>
-                              <p>如果没有会话Cookie时要使用的投放标识符。 此值以十六进制表示。
+                              <p>如果没有会话Cookie时要使用的投放标识符。 此值将为
+                                 以十六进制表示。
                               </p> 
                            </td> 
                         </tr>
@@ -90,7 +91,9 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`：`<port
                               <p>URL parameter</p> 
                            </td>
                            <td>
-                              <p>用于标识Internet用户的参数。 此参数的格式为“name=value”，其中名称是收件人模式的字段。 此参数的优先级高于会话Cookie中包含的标识符。
+                              <p>用于标识Internet用户的参数。 此参数的格式为“name=value”，
+                                 其中，名称是收件人模式的字段。 此参数的优先级高于
+                                 会话Cookie中包含的标识符。
                               </p> 
                            </td> 
                         </tr> 
@@ -127,5 +130,5 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`：`<port
 
 可以使用以下方法：
 
-* 在中插入URL **&quot;src&quot;** HTML的属性 **`<img>`** 标记已合并到要跟踪的网页中。
+* 在合并到要跟踪的网页中的HTML **`<img>`**&#x200B;标记的&#x200B;**&quot;src&quot;**&#x200B;属性中插入URL。
 * 在生成要跟踪的网页时，直接调用重定向服务器。

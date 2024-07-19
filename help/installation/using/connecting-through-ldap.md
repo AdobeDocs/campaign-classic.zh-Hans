@@ -23,16 +23,16 @@ ht-degree: 0%
 >
 >LDAP配置仅适用于内部部署或混合安装。
 
-LDAP配置在部署向导中执行。 此 **[!UICONTROL LDAP integration]** 必须在第一个配置步骤中选择选项。 请参阅 [部署向导](../../installation/using/deploying-an-instance.md#deployment-wizard).
+LDAP配置在部署向导中执行。 必须在第一个配置步骤中选择&#x200B;**[!UICONTROL LDAP integration]**&#x200B;选项。 请参阅[部署向导](../../installation/using/deploying-an-instance.md#deployment-wizard)。
 
 通过窗口，您可以通过指定的LDAP目录配置Adobe Campaign用户的标识。
 
 ![](assets/s_ncs_install_deployment_wiz_ldap_01.png)
 
-* 在中指定LDAP服务器的地址 **[!UICONTROL LDAP server]** 字段。 您可以添加端口号。 默认情况下，使用的端口为389。
+* 在&#x200B;**[!UICONTROL LDAP server]**&#x200B;字段中指定LDAP服务器的地址。 您可以添加端口号。 默认情况下，使用的端口为389。
 * 在下拉列表中，选择用户的身份验证方法：
 
-   * 加密的密码(**md5**)
+   * 加密密码(**md5**)
 
      默认模式。
 
@@ -46,17 +46,17 @@ LDAP配置在部署向导中执行。 此 **[!UICONTROL LDAP integration]** 必�
 
    * Windows NT LAN管理器(**NTLM**)
 
-     专有Windows身份验证。 此 **[!UICONTROL Unique identifier]** 仅用于域名。
+     专有Windows身份验证。 **[!UICONTROL Unique identifier]**&#x200B;仅用于域名。
 
    * 分布式密码身份验证(**DPA**)
 
-     专有Windows身份验证。 此 **[!UICONTROL Unique identifier]** 仅用于域名(domain.com)。
+     专有Windows身份验证。 **[!UICONTROL Unique identifier]**&#x200B;仅用于域名(domain.com)。
 
    * 纯文本密码
 
      不加密（仅用于测试阶段）。
 
-* 选择用户身份验证模式： **[!UICONTROL Automatically compute the unique user identifier]** （请参阅步骤） [可分辨名称计算](#distinguished-name-calculation))或 **[!UICONTROL Search the unique user identifier in the directory]** （请参阅步骤） [搜索标识符](#searching-for-identifiers))。
+* 选择用户身份验证模式： **[!UICONTROL Automatically compute the unique user identifier]** （请参阅步骤[可分辨名称计算](#distinguished-name-calculation)）或&#x200B;**[!UICONTROL Search the unique user identifier in the directory]** （请参阅步骤[搜索标识符](#searching-for-identifiers)）。
 
 ## 兼容性 {#compatibility}
 
@@ -67,7 +67,7 @@ LDAP配置在部署向导中执行。 此 **[!UICONTROL LDAP integration]** 必�
   <tr> 
    <th> </th> 
    <th> OpenLDAP<br /> </th> 
-   <th> 活动目录<br /> </th> 
+   <th> Active Directory<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -100,17 +100,17 @@ LDAP配置在部署向导中执行。 此 **[!UICONTROL LDAP integration]** 必�
 
 ![](assets/s_ncs_install_deployment_wiz_ldap_02.png)
 
-* 在中指定目录中的用户的唯一标识符（可分辨名称 — DN） **[!UICONTROL Distinguished Name]** 字段。
+* 在&#x200B;**[!UICONTROL Distinguished Name]**&#x200B;字段中指定目录中的用户的唯一标识符（可分辨名称 — DN）。
 
-  **[!UICONTROL (login)]** 将替换为Adobe Campaign运算符的标识符。
+  **[!UICONTROL (login)]**&#x200B;将被替换为Adobe Campaign运算符的标识符。
 
   >[!CAUTION]
   >
-  >此 **[!UICONTROL dc]** 设置必须为小写。
+  >**[!UICONTROL dc]**&#x200B;设置必须为小写。
 
-* 选择选项 **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** 以同步LDAP目录中的组和用户关联以及Adobe Campaign中的组和用户关联。
+* 选择选项&#x200B;**[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]**&#x200B;以同步LDAP目录中的组和用户关联以及Adobe Campaign中的组和用户关联。
 
-  选择此选项时， **[!UICONTROL Application level DN used for the search]** 和 **[!UICONTROL Password of the application login]** 已启用。
+  选择此选项时，将启用&#x200B;**[!UICONTROL Application level DN used for the search]**&#x200B;和&#x200B;**[!UICONTROL Password of the application login]**。
 
   如果您填充这两个字段，Adobe Campaign将使用其自己的登录名和密码连接到LDAP服务器。 如果它们为空，Adobe Campaign将匿名连接到服务器。
 
@@ -118,54 +118,54 @@ LDAP配置在部署向导中执行。 此 **[!UICONTROL LDAP integration]** 必�
 
 如果选择搜索标识符，部署向导允许您配置搜索。
 
-* 在 **[!UICONTROL Application level DN used for the search]** 和 **[!UICONTROL Password of the application login]** 字段中，提供Adobe Campaign连接以搜索标识符的标识符和密码。 如果它们为空，Adobe Campaign将匿名连接到服务器。
-* 指定 **[!UICONTROL Base identifier]** 和 **[!UICONTROL Search scope]** 字段，以确定从中开始搜索的LDAP目录的子集。
+* 在&#x200B;**[!UICONTROL Application level DN used for the search]**&#x200B;和&#x200B;**[!UICONTROL Password of the application login]**&#x200B;字段中，提供Adobe Campaign将连接以搜索标识符的标识符和密码。 如果它们为空，Adobe Campaign将匿名连接到服务器。
+* 指定&#x200B;**[!UICONTROL Base identifier]**&#x200B;和&#x200B;**[!UICONTROL Search scope]**&#x200B;字段以确定要开始搜索的LDAP目录的子集。
 
   在下拉列表中选择所需的模式：
 
   ![](assets/s_ncs_install_deployment_wiz_ldap_03.png)
 
-   1. **[!UICONTROL Recursive (default mode)]**.
+   1. **[!UICONTROL Recursive (default mode)]**。
 
       从给定级别开始完全搜索LDAP目录。
 
-   1. **[!UICONTROL Limited to the base]**.
+   1. **[!UICONTROL Limited to the base]**。
 
       所有属性都包含在搜索中。
 
-   1. **[!UICONTROL Limited to the first sub-level of the base]**.
+   1. **[!UICONTROL Limited to the first sub-level of the base]**。
 
       对目录的所有属性执行搜索，并从属性的第一级开始。
 
-* 此 **[!UICONTROL Filter]** 字段可让您指定元素以限定搜索范围。
+* 通过&#x200B;**[!UICONTROL Filter]**&#x200B;字段，可指定元素以细化搜索范围。
 
 ## 配置LDAP授权 {#configuring-ldap-authorizations}
 
-当您选择 **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** 选项。
+当您选择&#x200B;**[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]**&#x200B;选项时，将显示此窗口。
 
 ![](assets/s_ncs_install_deployment_wiz_ldap_04.png)
 
 您必须指定几个参数才能查找用户所属的组或组及其相应权限，即：
 
-* 该 **[!UICONTROL Database identifier]** 字段，
-* 该 **[!UICONTROL Search scope]** 字段，
+* **[!UICONTROL Database identifier]**&#x200B;字段，
+* **[!UICONTROL Search scope]**&#x200B;字段，
 
   >[!NOTE]
   >
-  >如果已选择搜索DN，则可以选择 **[!UICONTROL Reuse the DN search parameters]** 以延续上个屏幕中为DN和搜索范围选择的值。
+  >如果您已选择搜索DN，则可以选择&#x200B;**[!UICONTROL Reuse the DN search parameters]**&#x200B;以结转在上一个屏幕中为DN和搜索范围选择的值。
 
-* 该 **[!UICONTROL Rights search filter]** 字段，根据登录名和用户的唯一判别名，
-* 该 **[!UICONTROL Attribute containing the group or authorization name]** 有关用户的字段，
-* 该 **[!UICONTROL Association mask]** 字段，用于在Adobe Campaign中提取组名称及其相关权限。 您可以使用正则表达式来搜索名称。
-* 选择 **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** 以便自动授予用户连接访问权限。
+* **[!UICONTROL Rights search filter]**&#x200B;字段，基于登录名和用户的可分辨名称，
+* 有关用户的&#x200B;**[!UICONTROL Attribute containing the group or authorization name]**&#x200B;字段，
+* 用于在Adobe Campaign中提取组名及其相关权限的&#x200B;**[!UICONTROL Association mask]**&#x200B;字段。 您可以使用正则表达式来搜索名称。
+* 选择&#x200B;**[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]**&#x200B;以便自动授予用户连接访问权限。
 
-单击 **[!UICONTROL Save]** 以完成实例的配置。
+单击&#x200B;**[!UICONTROL Save]**&#x200B;以完成实例的配置。
 
 ## 管理操作员 {#managing-operators}
 
 确认配置后，必须定义通过LDAP目录管理哪些Adobe Campaign运算符。
 
-要使用LDAP目录来验证操作员，请编辑相应的配置文件并单击 **[!UICONTROL Edit the access parameters]** 链接。 选择 **[!UICONTROL Use LDAP for authentication]** 选项： **[!UICONTROL Password]** 字段对于此运算符显示为灰色。
+要使用LDAP目录来验证操作员，请编辑相应的配置文件并单击&#x200B;**[!UICONTROL Edit the access parameters]**&#x200B;链接。 选择&#x200B;**[!UICONTROL Use LDAP for authentication]**&#x200B;选项： **[!UICONTROL Password]**&#x200B;字段对于此运算符显示为灰色。
 
 ![](assets/s_ncs_install_operator_in_ldap.png)
 
@@ -175,7 +175,7 @@ LDAP配置在部署向导中执行。 此 **[!UICONTROL LDAP integration]** 必�
 
 1. 已在LDAP目录中创建用户，但未在Adobe Campaign中创建用户。
 
-   可以配置Adobe Campaign，以便用户通过其LDAP身份验证访问平台。 Adobe Campaign需要能够控制LDAP目录中ID/密码组合的有效性，以便可以在Adobe Campaign中动态创建运算符。 要执行此操作，请查看 **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** 选项。 在这种情况下，还需要配置组同步： **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** 需要选择选项。
+   可以配置Adobe Campaign，以便用户通过其LDAP身份验证访问平台。 Adobe Campaign需要能够控制LDAP目录中ID/密码组合的有效性，以便可以在Adobe Campaign中动态创建运算符。 为此，请选中&#x200B;**[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]**&#x200B;选项。 在这种情况下，还需要配置组同步：需要选择&#x200B;**[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]**&#x200B;选项。
 
 1. 用户已在Adobe Campaign中创建，但未在LDAP目录中创建。
 
@@ -183,7 +183,7 @@ LDAP配置在部署向导中执行。 此 **[!UICONTROL LDAP integration]** 必�
 
 1. LDAP目录中存在一个在Adobe Campaign中不存在的组。
 
-   此组将不会在Adobe Campaign中创建。 您需要创建组并同步这些组，以通过 **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** 选项。
+   此组将不会在Adobe Campaign中创建。 您需要创建组并同步这些组，以通过&#x200B;**[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]**&#x200B;选项启用匹配。
 
 1. 组存在于Adobe Campaign中，并且在事件后激活LDAP目录： Adobe Campaign中的用户组不会自动替换为LDAP组的内容。 同样，如果某个组仅存在于Adobe Campaign中，则在该组已创建并在LDAP中同步之前，不能向该组添加LDAP用户。
 

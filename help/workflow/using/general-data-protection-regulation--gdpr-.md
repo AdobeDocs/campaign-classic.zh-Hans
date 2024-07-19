@@ -15,7 +15,7 @@ ht-degree: 2%
 
 
 
-下面详细介绍的工作流将随 **隐私数据保护条例** 默认模块。 有关此模块的更多信息，请参阅此 [文章](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html).
+默认情况下，下面详细介绍的工作流将与&#x200B;**隐私数据保护条例**&#x200B;模块一起安装。 有关此模块的详细信息，请参阅此[文章](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)。
 
 <table> 
  <tbody> 
@@ -26,7 +26,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">收集隐私请求</span> <br /> </td> 
-   <td> <span class="uicontrol">Collectprivacyrequests</span> <br /> </td> 
+   <td> <span class="uicontrol">collectPrivacyRequests</span> <br /> </td> 
    <td> 此工作流会生成存储在Adobe Campaign中的收件人数据，并在隐私请求屏幕中提供下载。<br /> </td> 
   </tr> 
   <tr> 

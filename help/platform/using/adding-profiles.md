@@ -17,10 +17,10 @@ ht-degree: 31%
 
 
 
-在大多数情况下，用户档案是 [通过工作流导入到Campaign](../../platform/using/import-export-workflows.md). 但是，您可以通过单击 **[!UICONTROL Create]** 按钮。 然后系统会将它们添加到数据库中。
+在大多数情况下，用户档案是[通过工作流](../../platform/using/import-export-workflows.md)导入到Campaign的。 但是，您可以通过单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮，直接从界面添加一个或多个配置文件。 然后系统会将它们添加到数据库中。
 
 ![](assets/s_ncs_user_profile_add.png)
 
-输入此用户档案的信息。 有关要填写的选项卡和字段的说明，请参见 [编辑用户档案](../../platform/using/editing-a-profile.md).
+输入此用户档案的信息。 [编辑配置文件](../../platform/using/editing-a-profile.md)中介绍了要完成的选项卡和字段。
 
-单击 **[!UICONTROL Save]** 以验证用户档案的创建。 然后系统会将该用户档案添加到 Adobe Campaign 数据库中。
+单击&#x200B;**[!UICONTROL Save]**&#x200B;以验证配置文件创建。 然后系统会将该用户档案添加到 Adobe Campaign 数据库中。

@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 3位数浏览器版本对Campaign Web组件的影响 {#version-100}
 
-Google和Mozilla警告称，Chrome和Firefox可能因其即将推出的3位数版本而破坏某些网站。
+Google和Mozilla警告说，Chrome和Firefox可能因其即将推出的3位数版本而破坏某些网站。
 
-Chrome v100的发行日期为 **2022年3月29日**&#x200B;上的和Firefox v100 **2022年5月3日**.
+Chrome v100设置为在&#x200B;**2022年3月29日**&#x200B;发布，Firefox v100设置为&#x200B;**2022年5月3日**。
 
 Microsoft于2022年3月早些时候发布了Edge v100。
 
@@ -43,8 +43,8 @@ Adobe建议您测试Campaign Web应用程序（包括Web窗体及调查），以
 
 要使用Mozilla Firefox 100测试网页，您可以通过手动更改用户代理字符串来模拟即将对Web应用程序进行的用户代理更改。
 
-1. 打开Firefox，输入 `about:config` ，然后按Enter。
-1. 搜索 `general.useragent.override`.
+1. 打开Firefox，在地址栏中输入`about:config`，然后按Enter。
+1. 搜索`general.useragent.override`。
 1. 选择“字符串”，然后单击加号(+)。
 
    ![](assets/force-user-agent-firefox.png)
@@ -58,33 +58,33 @@ Adobe建议您测试Campaign Web应用程序（包括Web窗体及调查），以
 1. 单击蓝色复选标记按钮以保存设置。
 1. 关闭并重新启动浏览器。
 
-要将用户代理更改回其默认值，只需返回到 `about:config` 和搜索 `general.useragent.override` 再次设置。  出现时，单击垃圾桶图标以删除设置，然后重新启动浏览器。
+若要将用户代理更改回其默认值，只需返回`about:config`并再次搜索`general.useragent.override`设置即可。  出现时，单击垃圾桶图标以删除设置，然后重新启动浏览器。
 
 ### 使用Chrome 100进行测试{#test-chrome-100}
 
 要在您自己的Web应用程序上测试Google Chrome 100用户代理，可以使用以下步骤启用此测试：
 
-1. 打开Chrome，输入 `chrome://flags` ，然后按Enter。
-1. Search `Force major version to 100 in User-Agent` ，并启用该功能，如下所示。
+1. 打开Chrome，在地址栏中输入`chrome://flags`，然后按Enter键。
+1. 在搜索字段中搜索`Force major version to 100 in User-Agent`，并将其启用，如下所示。
 
    ![](assets/force-user-agent-chrome.png)
 
 1. 重新启动浏览器。
-1. 关闭 `chrome://flags` 选项卡。
+1. 关闭`chrome://flags`选项卡。
 
-要将用户代理更改回其默认值，只需按照此流程并将标记设置更改为 `Default` 然后重新启动浏览器。
+若要将用户代理更改回其默认值，只需按照此流程并将标志设置更改为`Default`并重新启动浏览器即可。
 
 
 ### 使用Microsoft Edge 100进行测试{#test-ms-edge-100}
 
-从v97开始，站点所有者可以通过启用试验标志来模拟此版本  `#force-major-version-to-100` 在 `edge://flags`.
+从v97开始，站点所有者可以通过在`edge://flags`中启用试验标志`#force-major-version-to-100`来模拟此版本。
 
-1. 打开Microsoft Edge，输入 `edge://flags` ，然后按Enter。
-1. 搜索 `force-major-version-to-100` 字段，并将其启用，如下所示。
+1. 打开Microsoft Edge，在地址栏中输入`edge://flags`，然后按Enter键。
+1. 搜索`force-major-version-to-100`字段，并将其启用，如下所示。
 
    ![](assets/force-user-agent-edge.png)
 
 1. 重新启动浏览器。
-1. 关闭 `edge://flags` 选项卡。
+1. 关闭`edge://flags`选项卡。
 
-要将用户代理更改回其默认值，只需按照此流程并将标记设置更改为 `Default` 然后重新启动浏览器。
+若要将用户代理更改回其默认值，只需按照此流程并将标志设置更改为`Default`并重新启动浏览器即可。

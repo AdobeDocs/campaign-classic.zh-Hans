@@ -18,7 +18,7 @@ ht-degree: 9%
 
 ## 静态方法 {#static-methods}
 
-可通过在表示模式的对象上调用方法访问静态SOAP方法。 架构是“namespace”对象的属性。 这些命名空间是全局变量，因此，例如，xtk或nms变量表示相应的命名空间
+静态SOAP方法可通过在表示模式的对象上调用方法来进行访问。 架构是“namespace”对象的属性。 这些命名空间是全局变量，因此，例如，xtk或nms变量表示相应的命名空间
 
 以下示例调用xtk：workflow模式的静态PostEvent方法：
 

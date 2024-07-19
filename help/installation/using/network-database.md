@@ -20,7 +20,7 @@ ht-degree: 9%
 
 ## 网络配置
 
-在部署内部部署类型的体系结构时，需要检查的一件非常重要的事情是 [网络配置](../../installation/using/network-configuration.md). 确保Tomcat服务器无法在服务器外部直接访问：
+部署内部部署类型的架构时要检查的非常重要的事项是[网络配置](../../installation/using/network-configuration.md)。 确保Tomcat服务器无法在服务器外部直接访问：
 
 * 关闭外部IP上的Tomcat端口(8080)（必须在本地主机上工作）
 * 请勿将标准HTTP端口(80)映射到Tomcat端口(8080)
@@ -51,7 +51,7 @@ openssl x509 -noout -subject -dates
 nmap --script ssl-enum-ciphers -p ${REMPORT} ${REMHOST}
 ```
 
-您也可以使用 [slyze](https://github.com/nabla-c0d3/sslyze/releases) python脚本，两者都有。
+您也可以使用同时执行这两项操作的[sslyze](https://github.com/nabla-c0d3/sslyze/releases) python脚本。
 
 ```
 python sslyze.py --sslv2 --sslv3 --tlsv1 --reneg --resum --certinfo=basic --hide_rejected_ciphers --sni=SNI myserver.com

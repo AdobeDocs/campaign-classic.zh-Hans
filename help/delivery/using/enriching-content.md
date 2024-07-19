@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ## 常规查询 {#generic-queries}
 
-可通过中的发布模板配置查询 **[!UICONTROL Aggregator]** 选项卡。
+查询是通过&#x200B;**[!UICONTROL Aggregator]**&#x200B;选项卡中的发布模板配置的。
 
 检索的数据将通过其主元素扩充XML输出文档。
 
-从查询返回收件人模式的示例(**nms：recipient**)：
+从收件人模式(**nms：recipient**)上的查询返回的示例：
 
 ```
 <book name="Content Management">
@@ -35,7 +35,7 @@ ht-degree: 0%
 </book>
 ```
 
-此 **`<collection-recipient>`** 元素表示从查询生成的文档的输入元素。 检索的数据将在此元素下返回；在我们的示例中，是收件人列表。
+**`<collection-recipient>`**&#x200B;元素表示从查询生成的文档的输入元素。 检索的数据将在此元素下返回；在我们的示例中，是收件人列表。
 
 ### 添加查询 {#adding-a-query}
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >编辑字段 **路径** 用于重命名查询输出元素。
+   >编辑字段&#x200B;**Path**&#x200B;用于重命名查询输出元素。
 
 1. 下一页允许您选择要检索的数据。
 
@@ -78,9 +78,9 @@ ht-degree: 0%
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-链接的定义填充在 **字符串**-type **`<element>`**，和 **expandschematarget** 属性引用目标架构（在我们的示例中为“cus：chapter”）。 引用的架构必须是内容架构。
+链接的定义填充在&#x200B;**字符串**&#x200B;类型&#x200B;**`<element>`**&#x200B;上，**expandSchemaTarget**&#x200B;属性引用目标架构（在我们的示例中为“cus：chapter”）。 引用的架构必须是内容架构。
 
-目标元素的内容丰富了链接元素，即 **`<chapter>`** 元素：
+目标元素的内容丰富了链接元素，即示例架构中的&#x200B;**`<chapter>`**&#x200B;元素：
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此 **计算字符串** 的链接，可从 **计算字符串** 属性。
+>链接的&#x200B;**计算字符串**&#x200B;是从&#x200B;**computeString**&#x200B;属性提供的。
 
 在输入表单中，链接的编辑控件声明如下：
 
@@ -100,11 +100,11 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link.png)
 
-此 **[!UICONTROL Magnifier]** 图标可让您打开链接元素的编辑表单。
+通过&#x200B;**[!UICONTROL Magnifier]**&#x200B;图标，可打开链接元素的编辑表单。
 
 #### 链接收藏集 {#link-collection}
 
-要填充链接集合，请添加 **unbound=&quot;true&quot;** 数据架构中链接元素定义的属性：
+要填充链接集合，请将&#x200B;**unbound=&quot;true&quot;**&#x200B;属性添加到数据架构中链接元素的定义中：
 
 ```
 <element expandSchemaTarget="cus:chapter" label="List of chapters" name="chapter"  ordered="true" unbound="true"/>
@@ -126,7 +126,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link2.png)
 
-将显示默认列以查看 **计算字符串** 目标元素的ID。
+将显示默认列，以查看目标元素的&#x200B;**计算字符串**。
 
 ### 外部表的链接 {#links-to-external-tables}
 
@@ -136,11 +136,11 @@ ht-degree: 0%
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-链接的定义填充在 **链接**-type **`<element>`**，和 **目标** 属性引用目标架构（在我们的示例中为“nms：recipient”）。
+链接的定义填充在&#x200B;**链接**&#x200B;类型&#x200B;**`<element>`**&#x200B;上，**target**&#x200B;属性引用目标架构（在我们的示例中为“nms：recipient”）。
 
 按照惯例，必须从数据架构的主元素声明链接。
 
-此 **计算字符串** 而目标元素的键会丰富 **`<name>-id`** 和 **`<name>-cs`** 属性。
+目标元素的&#x200B;**计算字符串**&#x200B;和键丰富了主元素上的&#x200B;**`<name>-id`**&#x200B;和&#x200B;**`<name>-cs`**&#x200B;属性。
 
 在我们的示例中，链接填充在“cus：book”模式中，链接数据的内容包含在“mainContact-id”和“mainContact-cs”属性中：
 
@@ -156,7 +156,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_content_link3.png)
 
-您可以通过添加 **`<sysfilter>`** 元素（通过输入表单中的链接定义）：
+您可以通过输入表单中的链接定义添加&#x200B;**`<sysfilter>`**&#x200B;元素来限制目标元素的选择：
 
 ```
 <input xpath="mainContact">
@@ -204,11 +204,11 @@ ht-degree: 0%
 
 #### 链路聚合 {#link-aggregation}
 
-每个引用链接的内容仅限于内部键和 **计算字符串** 目标元素的ID。
+引用每个链接的内容仅限于内部键和目标元素的&#x200B;**计算字符串**。
 
 JavaScript脚本用于通过SOAP查询扩充链接的内容。
 
-**示例**：将收件人姓名添加到“mainContact”链接和“contact”收藏集链接：
+**示例**：将收件人名称添加到“mainContact”链接和“contact”收藏集链接：
 
 ```
 // Update <mainContact> link
@@ -255,6 +255,6 @@ for each(var contact in content.contact)
 <contact id="11504982510" lastName="Martinez" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/> 
 ```
 
-JavaScript代码的内容是通过 **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** 文件夹，并且必须在每个转换的发布模板中填充。
+JavaScript代码的内容是通过&#x200B;**[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]**&#x200B;文件夹添加的，并且必须在每个转换的发布模板中填充。
 
 ![](assets/d_ncs_content_link5.png)

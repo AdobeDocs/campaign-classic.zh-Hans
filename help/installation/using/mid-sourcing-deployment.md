@@ -65,4 +65,4 @@ ht-degree: 2%
 
 ### 安装和配置（中间源部署） {#installing-and-configuring--mid-sourcing-deployment-}
 
-请参阅 [中间源服务器](../../installation/using/mid-sourcing-server.md).
+请参阅[中间源服务器](../../installation/using/mid-sourcing-server.md)。

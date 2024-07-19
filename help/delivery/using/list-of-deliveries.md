@@ -17,19 +17,19 @@ ht-degree: 3%
 
 
 
-您可以从投放列表中访问投放，方法是通过 **[!UICONTROL Campaign Management > Deliveries]** 树节点。
+您可以通过树的&#x200B;**[!UICONTROL Campaign Management > Deliveries]**&#x200B;节点，从投放列表访问投放。
 
 ![](assets/deliveries-list.png)
 
 默认情况下，投放列表包含在所选节点中创建的投放的名称和状态。 它还显示成功发送、处理和发送的消息数。
 
-* 的数量 **[!UICONTROL Messages to send]** 对应于分析后和投放前定向的收件人数量。
-* 中的消息数 **[!UICONTROL Success]** 列对应于服务器发送和收件人接收的消息数。
-* 的数量 **[!UICONTROL Processed]** messages对应于已接收的消息数加上有错误的消息数。
+* **[!UICONTROL Messages to send]**&#x200B;的数量对应于分析后和投放前定向的收件人数量。
+* **[!UICONTROL Success]**&#x200B;列中的邮件数与服务器发送和收件人接收的邮件数相对应。
+* **[!UICONTROL Processed]**&#x200B;条消息的数量对应于已接收的消息数加上有错误的消息数。
 
 >[!NOTE]
 >
->对于大型投放，您可能希望更新这些值。 要实现此目的，请选择相关投放，然后右键单击它。 选择 **[!UICONTROL Action > Recompute delivery and tracking indicators...]** 然后使用向导更新此信息。
+>对于大型投放，您可能希望更新这些值。 要实现此目的，请选择相关投放，然后右键单击它。 选择&#x200B;**[!UICONTROL Action > Recompute delivery and tracking indicators...]**，然后使用该向导更新此信息。
 
 **相关主题：**
 

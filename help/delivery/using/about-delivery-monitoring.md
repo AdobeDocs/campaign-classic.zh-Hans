@@ -21,7 +21,7 @@ ht-degree: 11%
 
 <img src="assets/do-not-localize/icon_monitor.svg" width="60px">
 
-**监测投放**
+**监视您的投放**
 
 通过投放列表，您可以将所有创建的投放查看到一个位置。
 
@@ -32,7 +32,7 @@ ht-degree: 11%
 
 <img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
 
-**安全投放性能**
+**安全传递性能**
 
 为了确保您的投放正常运行，应遵循一些准则。 此外，您还可以利用在发送投放时可能遇到的常见问题来帮助您高效地发送投放。
 
@@ -45,7 +45,7 @@ ht-degree: 11%
 
 当消息无法发送到用户档案时，远程服务器会自动发送错误消息，该消息会被Adobe Campaign平台拾取并进行鉴别，从而确定是否应隔离电子邮件地址或电话号码。
 
-[了解投放失败](understanding-delivery-failures.md) 是帮助您改进营销活动的关键步骤。
+[了解投放失败](understanding-delivery-failures.md)是帮助您改进营销活动的关键步骤。
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 
@@ -53,4 +53,4 @@ ht-degree: 11%
 
 Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认情况下会将其地址已被隔离的收件人排除在外，不会将其设为目标。
 
-在 [本节](understanding-quarantine-management.md)中，您可以找到有关如何识别和管理隔离地址的信息，并详细了解将地址添加到隔离的条件。
+在[此部分](understanding-quarantine-management.md)中，您将找到有关如何识别和管理隔离地址的信息，并了解有关将地址添加到隔离的条件方面的更多信息。

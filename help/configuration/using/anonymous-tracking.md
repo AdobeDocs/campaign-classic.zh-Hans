@@ -23,8 +23,8 @@ ht-degree: 5%
 
 要在实例上启用匿名Web跟踪，必须配置以下元素：
 
-* 此 **trackWebVisitors** 的参数 **重定向** 元素 **serverConf.xml** 必须将跟踪服务器的文件设置为&#39;**true**`，以放置永久Cookie(**uuid230**)，这些浏览器包含访问网站的未知Internet用户。
-* 此 **匿名Web跟踪** 必须在部署向导的跟踪配置屏幕中选择模式。
+* 跟踪服务器的&#x200B;**serverConf.xml**&#x200B;文件的&#x200B;**重定向**&#x200B;元素的&#x200B;**trackWebVisitors**&#x200B;参数必须设置为“**true**”，以便在访问网站的未知Internet用户的浏览器中放置永久Cookie (**uuid230**)。
+* 必须在部署向导的跟踪配置屏幕中选择&#x200B;**匿名Web跟踪**&#x200B;模式。
 
   ![](assets/webtracking_anonymous_set.png)
 

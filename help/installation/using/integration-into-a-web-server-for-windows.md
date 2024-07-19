@@ -17,14 +17,14 @@ ht-degree: 2%
 
 # 集成到Windows版Web服务器 {#integration-into-a-web-server-for-windows}
 
-Adobe Campaign包括Apache Tomcat，它通过HTTP（和SOAP）充当应用程序服务器中的入口点。
+Adobe Campaign包括Apache Tomcat，后者通过HTTP(和SOAP)充当应用程序服务器中的入口点。
 
 您可以使用此集成的Tomcat服务器来处理HTTP请求。
 
 在本例中：
 
-* 默认侦听端口为8080。 要更改它，请参阅 [本节](../../installation/using/configure-tomcat.md).
-* 然后，客户端控制台使用URL进行连接，例如 ```https:// `<computer>`:8080```.
+* 默认侦听端口为8080。 要更改它，请参阅[此部分](../../installation/using/configure-tomcat.md)。
+* 然后，客户端控制台使用URL（如```https:// `<computer>`:8080```）进行连接。
 
 但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开访问网络外部的控制台时，我们建议使用专用的Web服务器作为HTTP流量的主要入口点。
 
@@ -52,17 +52,17 @@ Microsoft IIS Web服务器的配置过程大部分是图形化的。 它涉及�
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. A **VBS** 脚本允许您在我们刚刚创建的虚拟目录上自动配置Adobe Campaign服务器使用的资源。 要启动它，请双击 **iis_neolane_setup.vbs** 文件位于 `[INSTALL]\conf` 文件夹，其中 `[INSTALL]` 是访问Adobe Campaign安装文件夹的路径。
+1. 通过&#x200B;**VBS**&#x200B;脚本，可自动在我们刚刚创建的虚拟目录中配置Adobe Campaign服务器使用的资源。 要启动它，请双击位于`[INSTALL]\conf`文件夹中的&#x200B;**iis_neolane_setup.vbs**&#x200B;文件，其中`[INSTALL]`是访问Adobe Campaign安装文件夹的路径。
 
    >[!NOTE]
    >
    >您必须以管理员身份登录才能运行VBS脚本或以管理员身份执行脚本。
 
-   单击 **[!UICONTROL OK]** 如果将Web服务器用作跟踪重定向服务器，则单击 **[!UICONTROL Cancel]**.
+   如果Web服务器用作跟踪重定向服务器，请单击&#x200B;**[!UICONTROL OK]**，否则请单击&#x200B;**[!UICONTROL Cancel]**。
 
-   当Web服务器上已配置了多个站点时，将显示一个中间页面，用于指定安装应用于哪个网站：输入链接到该站点的编号，然后单击 **[!UICONTROL OK]**.
+   当Web服务器上已配置了多个站点时，将显示一个中间页面，以指定安装应用于哪个网站：输入链接到该站点的编号，然后单击&#x200B;**[!UICONTROL OK]**。
 
-1. 在 **[!UICONTROL Content View]** 选项卡上，确保使用Adobe Campaign资源正确配置了网站：
+1. 在&#x200B;**[!UICONTROL Content View]**&#x200B;选项卡中，确保已使用Adobe Campaign资源正确配置网站：
 
    如果未显示该树，请重新启动Microsoft IIS。
 
@@ -72,11 +72,11 @@ Microsoft IIS Web服务器的配置过程大部分是图形化的。 它涉及�
 
 要执行此操作，请应用以下步骤：
 
-1. 选择 **[!UICONTROL Features View]** 选项卡，并双击 **身份验证** 链接。
+1. 选择&#x200B;**[!UICONTROL Features View]**&#x200B;选项卡并双击&#x200B;**身份验证**&#x200B;链接。
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
-1. 在 **目录安全** 选项卡中，确保已启用匿名访问。 如有必要，请单击 **[!UICONTROL Edit]** 用于更改设置的链接。
+1. 在网站的&#x200B;**目录安全性**&#x200B;选项卡中，确保已启用匿名访问。 如有必要，请单击&#x200B;**[!UICONTROL Edit]**&#x200B;链接以更改设置。
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
@@ -86,7 +86,7 @@ Microsoft IIS Web服务器的配置过程大部分是图形化的。 它涉及�
 
 要实现此目的，请执行以下步骤：
 
-1. 使用重新启动Microsoft IIS服务器 **iisreset** 命令行。
+1. 使用&#x200B;**iisreset**&#x200B;命令行重新启动Microsoft IIS服务器。
 
 1. 启动Adobe Campaign服务，然后确保该服务正在运行。
 
@@ -119,7 +119,7 @@ webmdl@default (1644) - 18.2 Mo
 
 要执行此操作，请应用以下步骤：
 
-1. Adobe Campaign通过单击 **[!UICONTROL Driver mapping]** 图标。
+1. 通过单击&#x200B;**[!UICONTROL Driver mapping]**&#x200B;图标，编辑Adobe Campaign网站的ISAPI过滤器。
 1. 检查ISAPI过滤器的内容。
 
 
@@ -129,9 +129,9 @@ webmdl@default (1644) - 18.2 Mo
 
 这可能会在Adobe Campaign中造成影响，特别是当您要上传大于此限制的文件时。
 
-例如，如果您使用 **数据加载（文件）** 在工作流中键入活动以导入50 MB的文件，如果出现错误，工作流将无法正确执行。
+例如，如果您在工作流中使用&#x200B;**数据加载（文件）**&#x200B;类型活动导入50 MB的文件，则会出现错误，导致工作流无法正确执行。
 
 在这种情况下，您必须提高此限制。
 
-有关此Microsoft IIS选项的更多信息，请参阅 [Microsoft文档](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}.
+有关此Microsoft IIS选项的更多信息，请参阅[Microsoft文档](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}的“操作方法”部分。
 

@@ -23,25 +23,25 @@ Adobe Campaign平台基于实例的概念，与Apache使用的虚拟主机概念
 
 对于给定的服务器，有两个元素是所有Adobe Campaign实例所共有的：
 
-* 此 **内部** 密码：这是常规管理员密码。 它对于特定应用程序服务器的所有实例都是通用的。
+* **内部**&#x200B;密码：这是常规管理员密码。 它对于特定应用程序服务器的所有实例都是通用的。
 
   >[!IMPORTANT]
   >
-  >要使用 **内部** 标识符，则需要预先定义密码。 如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+  >要使用&#x200B;**内部**&#x200B;标识符登录，您需要预先定义密码。 如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 * 多个技术服务器配置：在实例的特定配置中，这些配置都可以过载。
 
-配置文件保存在 **会议** 安装目录的目录。 该配置分为三个文件：
+配置文件保存在安装目录的&#x200B;**conf**&#x200B;目录中。 该配置分为三个文件：
 
 * **serverConf.xml**：所有实例的整体配置。
-* **config-**`<instance>`**.xml** (其中 **`<instance>`** 为实例名称)：实例的特定配置。
+* **config-**`<instance>`**.xml** （其中&#x200B;**`<instance>`**&#x200B;是实例名称）：实例的特定配置。
 * **serverConf.xml.diff**：初始配置与当前配置之间的增量。 此文件由应用程序自动生成，不得手动修改。 它用于在更新内部版本时自动传播用户修改。
 
 按如下方式加载实例配置：
 
-* 模块加载 **serverConf.xml** 文件，以获取所有实例共享的参数。
-* 然后加载 **config-**`<instance>`**.xml** 文件。 在此文件中找到的值的优先级高于中包含的值 **serverConf.xml**.
+* 模块加载&#x200B;**serverConf.xml**&#x200B;文件以获取所有实例共享的参数。
+* 然后加载&#x200B;**config-**`<instance>`**.xml**&#x200B;文件。 在此文件中找到的值的优先级高于&#x200B;**serverConf.xml**&#x200B;中包含的值。
 
-  这两个文件的格式相同。 中的任何值 **serverConf.xml** 可以在以下位置为给定实例重载： **config-`<instance>`.xml** 文件。
+  这两个文件的格式相同。 可以为&#x200B;**config-`<instance>`.xml**&#x200B;文件中的给定实例重载&#x200B;**serverConf.xml**&#x200B;中的任何值。
 
 此操作模式为配置提供了极大的灵活性。

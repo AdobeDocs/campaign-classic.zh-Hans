@@ -19,8 +19,8 @@ ht-degree: 3%
 
 这些过滤器将在目标选择窗口中提供，且具有与收件人区段相同的功能（使用参数输入表单、文件夹等）。
 
-1. 转到 **[!UICONTROL Administration > Configuration > Predefined filters]** 节点。
+1. 转到&#x200B;**[!UICONTROL Administration > Configuration > Predefined filters]**&#x200B;节点。
 1. 创建新筛选器。
-1. 输入 **[!UICONTROL Label]** ，然后选择与中的外部收件人表匹配的模式 **[!UICONTROL Document type]** 字段。
-1. 创建您的 **[!UICONTROL filtering conditions]** 基于架构的字段。
+1. 输入筛选器的&#x200B;**[!UICONTROL Label]**，然后在&#x200B;**[!UICONTROL Document type]**&#x200B;字段中选择与外部收件人表匹配的架构。
+1. 根据架构的字段创建您的&#x200B;**[!UICONTROL filtering conditions]**。
 1. 保存过滤器。

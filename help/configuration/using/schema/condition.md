@@ -39,13 +39,13 @@ condition：==EMPTY
 
 ## 使用和使用环境 {#use-and-context-of-use-2}
 
-一 `<sysfiler>`  元素可以包含多个过滤条件。
+一个`<sysfiler>`元素可以包含多个筛选条件。
 
 ## 属性说明 {#attribute-description-2}
 
-* **boolOperator（字符串）**：如果多个 `<conditions>` 在同一个  `<sysfilter>` 元素，此属性允许您组合它们。 默认情况下，逻辑链路介于 `<condition>` 元素为“AND”。 “@boolOperator”属性允许您组合“OR”和“AND”类型链接。
-* **enabledIf（字符串）**：条件激活测试。
-* **expr（字符串）**：XTK表达式。
+* **boolOperator （字符串）**：如果在同一`<sysfilter>`元素中定义了多个`<conditions>`，则通过此属性可组合它们。 默认情况下，逻辑链接介于`<condition>`个元素之间为“AND”。 “@boolOperator”属性允许您组合“OR”和“AND”类型链接。
+* **enabledIf （字符串）**：条件激活测试。
+* **expr （字符串）**： XTK表达式。
 
 ## 示例 {#examples-2}
 

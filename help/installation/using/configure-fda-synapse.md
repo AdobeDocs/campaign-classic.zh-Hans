@@ -18,10 +18,10 @@ ht-degree: 2%
 
 
 
-使用营销活动 [联合数据访问](../../installation/using/about-fda.md) (FDA)用于处理存储在外部数据库中的信息的选项。 按照以下步骤配置对的访问权限 **MicrosoftAzure synapse分析**.
+使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)选项处理存储在外部数据库中的信息。 按照以下步骤配置对&#x200B;**MicrosoftAzure synapse分析**&#x200B;的访问权限。
 
-1. 配置Azure synapse [CentOS](#azure-centos)， [Windows](#azure-windows) 或 [Debian](#azure-debian)
-1. 配置Azure synapse [外部帐户](#azure-external) 在Campaign中
+1. 在[CentOS](#azure-centos)、[Windows](#azure-windows)或[Debian](#azure-debian)上配置Azure synapse
+1. 在Campaign中配置Azure synapse[外部帐户](#azure-external)
 
 ## 在CentOS上Azure synapse {#azure-centos}
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 要在CentOS上配置Azure synapse，请执行以下步骤：
 
-1. 首先，安装ODBC驱动程序。 您可以在此处找到它 [页面](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
+1. 首先，安装ODBC驱动程序。 您可以在此[页面](https://www.microsoft.com/en-us/download/details.aspx?id=50420)中找到它。
 
    >[!NOTE]
    >
@@ -87,7 +87,7 @@ ht-degree: 2%
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. 然后，您可以在Campaign中配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [本节](#azure-external).
+1. 然后，您可以在Campaign中配置[!DNL Azure Synapse]外部帐户。 有关如何配置外部帐户的更多信息，请参阅[此部分](#azure-external)。
 
 1. 由于Azure synapseAnalytics通过TCP 1433端口进行通信，因此需要在防火墙上打开此端口。 使用以下命令：
 
@@ -98,7 +98,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >要允许来自Azure synapse列入允许列表 Analytics端的通信，您可能需要将公共IP添加到。 要执行此操作，请参阅 [Azure文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >要允许来自Azure synapse列入允许列表 Analytics端的通信，您可能需要将公共IP添加到。 为此，请参阅[Azure文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
 1. 如果是iptables，请运行以下命令：
 
@@ -114,7 +114,7 @@ ht-degree: 2%
 
 要在Windows上配置Azure synapse，请执行以下操作：
 
-1. 首先，安装Microsoft ODBC驱动程序。 您可以在以下位置找到它 [此页面](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
+1. 首先，安装Microsoft ODBC驱动程序。 您可以在[此页面](https://www.microsoft.com/en-us/download/details.aspx?id=50420)中找到它。
 
 1. 选择要安装的以下文件：
 
@@ -124,9 +124,9 @@ ht-degree: 2%
 
 1. 安装ODBC驱动程序后，您可以根据需要对其进行测试。 有关详细信息，请参见此 [ 页面](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server)。
 
-1. 然后，您可以在Campaign Classic中配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [本节](#azure-external).
+1. 在Campaign Classic中，您可以配置[!DNL Azure Synapse]外部帐户。 有关如何配置外部帐户的更多信息，请参阅[此部分](#azure-external)。
 
-1. 由于Azure synapseAnalytics通过TCP 1433端口进行通信，因此您需要在Windows Defender防火墙上打开此端口。 有关详细信息，请参见 [Windows文档](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
+1. 由于Azure synapseAnalytics通过TCP 1433端口进行通信，因此您需要在Windows Defender防火墙上打开此端口。 有关详细信息，请参阅[Windows文档](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule)。
 
 ## DebianAzure synapse {#azure-debian}
 
@@ -152,7 +152,7 @@ ht-degree: 2%
    sudo ACCEPT_EULA=Y apt-get install msodbcsql
    ```
 
-1. 如果出现以下错误 **“找不到方法驱动程序/usr/lib/apt/methods/https”** 调用时 **sudo apt-get更新**，您应该运行命令：
+1. 如果您收到以下错误&#x200B;**“在调用** sudo apt-get update **时找不到方法驱动程序/usr/lib/apt/methods/https”**，您应该运行该命令：
 
    ```
    sudo apt-get install apt-transport-https ca-certificates
@@ -179,7 +179,7 @@ ht-degree: 2%
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. 在Campaign Classic中，您现在可以配置 [!DNL Azure Synapse] 外部帐户。 有关如何配置外部帐户的更多信息，请参阅 [本节](#azure-external).
+1. 在Campaign Classic中，您现在可以配置[!DNL Azure Synapse]外部帐户。 有关如何配置外部帐户的更多信息，请参阅[此部分](#azure-external)。
 
 1. 要在Debian上配置iptables以确保与Azure synapseAnalytics的连接，请使用以下命令为主机名启用出站TCP 1433端口：
 
@@ -189,33 +189,33 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >要允许来自Azure synapse列入允许列表 Analytics端的通信，您可能需要将公共IP添加到。 要执行此操作，请参阅 [Azure文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >要允许来自Azure synapse列入允许列表 Analytics端的通信，您可能需要将公共IP添加到。 为此，请参阅[Azure文档](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)。
 
 ## azure synapse外部帐户 {#azure-external}
 
-此 [!DNL Azure Synapse] 外部帐户允许您将Campaign实例连接到Azure synapse外部数据库。
+[!DNL Azure Synapse]外部帐户允许您将Campaign实例连接到Azure synapse外部数据库。
 
-要创建您的 [!DNL Azure Synapse] 外部帐户请执行以下步骤：
+要创建您的[!DNL Azure Synapse]外部帐户，请执行以下步骤：
 
-1. 来自营销活动 **[!UICONTROL Explorer]**，单击 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. 在营销活动&#x200B;**[!UICONTROL Explorer]**&#x200B;中，单击&#x200B;**[!UICONTROL Administration]**“>”**[!UICONTROL Platform]**“>”**[!UICONTROL External accounts]**。
 
 1. 单击 **[!UICONTROL New]**。
 
-1. 选择 **[!UICONTROL External database]** 作为外部帐户的 **[!UICONTROL Type]**.
+1. 选择&#x200B;**[!UICONTROL External database]**&#x200B;作为外部帐户的&#x200B;**[!UICONTROL Type]**。
 
    ![](assets/azure_1.png)
 
-1. 下 **[!UICONTROL Configuration]**，选择 **[!UICONTROL Azure Synapse Analytics]** 从 **[!UICONTROL Type]** 下拉菜单。
+1. 在&#x200B;**[!UICONTROL Configuration]**&#x200B;下，从&#x200B;**[!UICONTROL Type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Azure Synapse Analytics]**。
 
    ![](assets/azure_2.png)
 
-1. 配置 [!DNL Azure Synapse] 外部帐户：
+1. 配置[!DNL Azure Synapse]外部帐户：
 
    * 对于标准身份验证，您必须指定：
 
       * **[!UICONTROL Server]**：Azure synapse服务器的URL
 
-      * **[!UICONTROL Account]**：用户名称
+      * **[!UICONTROL Account]**：用户的名称
 
       * **[!UICONTROL Password]**：用户帐户密码
 
@@ -229,7 +229,7 @@ ht-degree: 2%
 
       * **[!UICONTROL Database]**：数据库的名称
 
-      * **[!UICONTROL Options]**：添加以下语法 `Authentication=ActiveDirectoryMsi`
+      * **[!UICONTROL Options]**：添加以下语法`Authentication=ActiveDirectoryMsi`
 
      ![](assets/azure_4.png)
 
@@ -239,4 +239,4 @@ ht-degree: 2%
 
 | 选项 | 说明 |
 |---|---|
-| 身份验证 | 连接器支持的身份验证类型。 当前支持的值： ActiveDirectoryMSI。 </br>有关更多信息，请参阅 [SQL文档](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) （连接字符串n°8示例）。 |
+| 身份验证 | 连接器支持的身份验证类型。 当前支持的值： ActiveDirectoryMSI。 </br>有关详细信息，请参阅[SQL doc](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings)（连接字符串n°8示例）。 |

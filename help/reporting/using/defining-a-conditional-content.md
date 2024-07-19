@@ -18,9 +18,9 @@ ht-degree: 7%
 
 您可以对特定报表项或页面的显示进行限制。
 
-要使特定项目具有条件，请调整其可见性设置。 有关详细信息，请参见 [条件项显示](#conditioning-item-display).
+要使特定项目具有条件，请调整其可见性设置。 有关详细信息，请参阅[条件项显示](#conditioning-item-display)。
 
-要使一个或多个页面的显示符合条件，请使用 **[!UICONTROL Test]** 键入activity。 有关详细信息，请参见 [条件页面显示](#conditioning-page-display).
+若要使一个或多个页面的显示具有条件，请使用&#x200B;**[!UICONTROL Test]**&#x200B;类型活动。 有关详细信息，请参阅[条件页面显示](#conditioning-page-display)。
 
 ## 条件项显示 {#conditioning-item-display}
 
@@ -28,7 +28,7 @@ ht-degree: 7%
 
 可见性条件可能取决于操作员状态、在报告页面中选择或输入的项目。
 
-有关显示页面上项目的条件显示的示例，请参见 [本节](../../web/using/form-rendering.md#defining-fields-conditional-display).
+[此部分](../../web/using/form-rendering.md#defining-fields-conditional-display)中提供了显示页面上项目的条件显示的示例。
 
 在以下示例中，显示条件取决于语言：
 
@@ -36,21 +36,21 @@ ht-degree: 7%
 
 ## 条件页面显示 {#conditioning-page-display}
 
-在报表的图表中， **[!UICONTROL Test]** 通过活动，可根据一个或多个条件更改页面顺序。
+在报表的图表中，**[!UICONTROL Test]**&#x200B;活动允许您根据一个或多个条件更改页面顺序。
 
 本练习基于以下工作原理：
 
-1. 放置 **[!UICONTROL Test]** 在图表中对其进行编辑。
-1. 单击 **[!UICONTROL Add]** 按钮创建各种可能的情况。
+1. 将&#x200B;**[!UICONTROL Test]**&#x200B;放入图表并进行编辑。
+1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以创建各种可能的情况。
 
    ![](assets/reporting_test_sample.png)
 
-   对于每种情况，输出转换将添加到 **[!UICONTROL Test]** 活动。
+   对于每种情况，都会向&#x200B;**[!UICONTROL Test]**&#x200B;活动添加输出转换。
 
    ![](assets/reporting_test_transitions.png)
 
-1. 选择 **[!UICONTROL Enable default transition]** 以添加过渡，以防不满足其中一个配置的条件。
+1. 选择&#x200B;**[!UICONTROL Enable default transition]**&#x200B;以添加过渡，以防不满足其中一个配置的条件。
 
    如需详细信息，请参阅[此小节](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display)。
 
-A **[!UICONTROL Test]** 活动可以放置在图表的开头，以根据上下文或操作员个人资料等条件限定显示。
+可以将&#x200B;**[!UICONTROL Test]**&#x200B;活动放在图表的开头处，以根据实例的上下文或操作员配置文件对显示进行条件。

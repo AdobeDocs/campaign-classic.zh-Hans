@@ -15,13 +15,13 @@ ht-degree: 1%
 
 
 
-Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部等）开展合作活动的申请 和地方实体（销售点、区域机构等）之间实施协作营销活动。此合作基于共享工作区，称为 **[!UICONTROL list of campaign packages]**，向本地实体提供集中创建的活动模板和实例。
+Adobe Campaign提供了一个&#x200B;**分布式营销**&#x200B;应用程序，用于在中心实体（总部、营销部门等）和本地实体（商店、区域代理等）之间 和地方实体（销售点、区域机构等）之间实施协作营销活动。此合作基于称为&#x200B;**[!UICONTROL list of campaign packages]**&#x200B;的共享工作区，在该工作区中，集中创建的活动模板和实例将提供给本地实体。
 
 中央实体提供本地实体可以使用的营销策划。 营销活动由表示本地或协作营销活动的包实现。 要使用营销活动，必须由本地实体对其进行订购，并且订单必须获得批准。
 
 >[!CAUTION]
 >
->分布式营销模块是一个 **营销活动** 选项。 请核实您的许可协议。
+>分布式营销模块是一个&#x200B;**营销活动**&#x200B;选项。 请核实您的许可协议。
 
 ## 术语 {#terminology}
 
@@ -50,36 +50,36 @@ Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部等）
 
   营销活动包列表包含对本地实体可用的营销活动。
 
-* **Campaign包**
+* **营销活动包**
 
   由中央实体创建的模板（或营销活动实例），可供一组本地实体使用。
 
 * **本地营销活动**
 
-  本地营销活动是从列表中引用的模板创建的实例 **[!UICONTROL campaign packages]** 带有 **特定执行计划**. 其目标是使用由中央实体设置和配置的活动模板满足本地通信需求。
+  本地营销活动是从包含&#x200B;**特定执行计划**&#x200B;的&#x200B;**[!UICONTROL campaign packages]**&#x200B;列表中引用的模板创建的实例。 其目标是使用由中央实体设置和配置的活动模板满足本地通信需求。
 
   本地实体的自治程度取决于所使用的实现。
 
-  请参阅 [创建本地活动](creating-a-local-campaign.md).
+  请参阅[创建本地营销活动](creating-a-local-campaign.md)。
 
 * **协作营销活动**
 
-  协作营销活动是指满足以下条件的营销活动 **执行计划已定义** 由中央实体提供，本地实体可使用该中央实体。 每个本地实体的内容保持不变，但成本是分担的。 要参加该活动，本地实体需订阅协作活动。
+  协作营销活动是一个营销活动，其&#x200B;**执行计划由中央实体定义**，本地实体可以使用该中央实体。 每个本地实体的内容保持不变，但成本是分担的。 要参加该活动，本地实体需订阅协作活动。
 
-   * **[!UICONTROL Collaborative campaign (by form)]**：建议用于涉及最多300个本地实体的活动。 本地实体可以在Web表单中输入用于定位和内容个性化的预定义参数。 表单可以是Adobe Campaign表单或外部表单（外联网客户端）。 功能管理员可以根据集成商定义的表单模板定义和配置表单。 要订购营销活动，本地实体只需要具有Web访问权限。
-   * **[!UICONTROL Collaborative campaign (by campaign)]**：建议用于针对数十个本地实体的营销活动。 此类营销活动会为每个本地实体创建子营销活动。 一旦 **[!UICONTROL collaborative campaign (by campaign)]** 经中央实体批准，营销策划将提供给本地实体，本地实体可以对其进行修改。 执行会在父营销活动和子营销活动之间自动同步。 本地实体必须有权访问实例，才能订购活动并参与活动。
-   * **[!UICONTROL Collaborative campaign (by target approval)]**：建议开展针对数千个地方实体的活动。 本地实体接收由中央实体预定义的联系人列表。 本地实体通过Web表单根据促销活动内容决定是否保留某些联系人。 从选定联系人的列表中推导出本地实体。 要参与该活动，本地实体只需要拥有Web访问权限。
-   * **[!UICONTROL Collaborative campaign (simple)]**：此模式确保与以前版本的特定执行过程兼容。
+   * **[!UICONTROL Collaborative campaign (by form)]**：建议用于涉及最多300个本地实体的营销活动。 本地实体可以在Web表单中输入用于定位和内容个性化的预定义参数。 表单可以是Adobe Campaign表单或外部表单（外联网客户端）。 功能管理员可以根据集成商定义的表单模板定义和配置表单。 要订购营销活动，本地实体只需要具有Web访问权限。
+   * **[!UICONTROL Collaborative campaign (by campaign)]**：建议用于针对数十个本地实体的营销活动。 此类营销活动会为每个本地实体创建子营销活动。 中央实体批准&#x200B;**[!UICONTROL collaborative campaign (by campaign)]**&#x200B;后，该营销活动即可用于本地实体，该实体可以对其进行修改。 执行会在父营销活动和子营销活动之间自动同步。 本地实体必须有权访问实例，才能订购活动并参与活动。
+   * **[!UICONTROL Collaborative campaign (by target approval)]**：建议用于针对数千个本地实体的营销活动。 本地实体接收由中央实体预定义的联系人列表。 本地实体通过Web表单根据促销活动内容决定是否保留某些联系人。 从选定联系人的列表中推导出本地实体。 要参与该活动，本地实体只需要拥有Web访问权限。
+   * **[!UICONTROL Collaborative campaign (simple)]**：此模式确保与以前版本的特定执行进程兼容。
 
-  请参阅 [创建协作活动](creating-a-collaborative-campaign.md).
+  请参阅[创建协作营销活动](creating-a-collaborative-campaign.md)。
 
-**订购营销活动程序包**
+**订购促销活动程序包**
 
 如果本地实体注册了促销活动，则会按照顺序生成该订单，以重组与促销活动本地化相关的所有信息。
 
 ## 工作区 {#workspace}
 
-营销活动包的列表可从以下位置访问： **营销活动** 选项卡：单击 **[!UICONTROL Campaign packages]** 链接。
+可从&#x200B;**营销活动**&#x200B;选项卡访问营销活动包列表：单击&#x200B;**[!UICONTROL Campaign packages]**&#x200B;链接。
 
 ![](assets/mkg_dist_home_local_op.png)
 
@@ -89,7 +89,7 @@ Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部等）
 
 ## 操作员和实体 {#operators-and-entities}
 
-首先，通过 **[!UICONTROL Access management]** 文件夹。
+首先通过&#x200B;**[!UICONTROL Access management]**&#x200B;文件夹指定中央和本地实体运算符。
 
 ![](assets/s_advuser_mkg_dist_tree.png)
 
@@ -97,19 +97,19 @@ Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部等）
 
 您需要创建中央和本地运算符。
 
-中心运算符必须属于 **[!UICONTROL Central management]** 操作员组或具有 **[!UICONTROL CENTRAL]** 指明权限。
+中心运算符必须属于&#x200B;**[!UICONTROL Central management]**&#x200B;运算符组或具有&#x200B;**[!UICONTROL CENTRAL]**&#x200B;命名权限。
 
-本地运算符必须属于 **[!UICONTROL Local management]** 操作员组或具有 **[!UICONTROL LOCAL]** 指明权限。 它们还必须链接到其本地实体。
+本地操作员必须属于&#x200B;**[!UICONTROL Local management]**&#x200B;操作员组或具有&#x200B;**[!UICONTROL LOCAL]**&#x200B;命名权限。 它们还必须链接到其本地实体。
 
 ![](assets/s_advuser_mkg_dist_local_create.png)
 
 ### 组织实体 {#organizational-entities}
 
-要创建组织实体，请单击 **[!UICONTROL Administration > Access management > Organizational entities]** 节点，然后单击 **[!UICONTROL New]** 图标（在实体列表上方）。
+要创建组织实体，请单击&#x200B;**[!UICONTROL Administration > Access management > Organizational entities]**&#x200B;节点，然后单击实体列表上方的&#x200B;**[!UICONTROL New]**&#x200B;图标。
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 
-每个组织实体都包含标识信息（标签、内部名称、联系信息等） 和订单审批流程中涉及的组。 在中定义 **[!UICONTROL Notifications and approvals]** 此部分包含在 **[!UICONTROL General]** 选项卡。
+每个组织实体都包含标识信息（标签、内部名称、联系信息等） 和订单审批流程中涉及的组。 这些在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Notifications and approvals]**&#x200B;部分中定义。
 
 * 定义包通知组：每当将新包添加到营销活动包列表以及营销活动变得可用时，此组中的操作员都会收到通知。
 * 选择负责批准订单的审阅人组，即负责批准由本地实体订购的营销活动的审阅人。
@@ -117,7 +117,7 @@ Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部等）
 
 >[!NOTE]
 >
->审批流程将呈列在 [审批流程](creating-a-local-campaign.md#approval-process) 部分。
+>审批流程显示在[审批流程](creating-a-local-campaign.md#approval-process)部分。
 
 ## 实现 {#implementation}
 
@@ -137,12 +137,12 @@ Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部等）
 
    * 目标定义和最大大小，
    * 内容定义，
-   * 执行计划（联系日期和提取日期）， **仅用于本地运算符**，
+   * 执行计划（联系日期和提取日期），**仅限本地操作员**，
    * 具有所有必需附加字段的订单模式扩展。
 
 1. 创建Web窗体(Adobe或外联网)，以便显示本地化参数、评估目标和预算，以及预览内容和批准订单。
 
-   对象 **协作营销活动（按目标审批）**，创建用于保存每个本地实体的审批的表。
+   对于&#x200B;**协作营销活动（按目标审批）**，创建将保存每个本地实体的审批的表。
 
 ### 功能管理员任务 {#functional-administrator-side}
 
@@ -151,7 +151,7 @@ Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部等）
 1. 使用用于营销活动本地化的字段更新表单。
 1. 从相应的活动模板（协作活动）创建实例，或复制活动模板（本地活动）。
 1. 使用本地化字段和表单引用配置营销活动。
-1. 发布营销活动。
+1. Publish营销活动。
 
 ### 本地操作员任务 {#local-operator-side}
 

@@ -17,10 +17,10 @@ ht-degree: 4%
 
 ## 创建投放 {#creating-the-delivery}
 
-您可以通过概述或通过 **[!UICONTROL Create > Delivery]** 菜单。
+您可以通过概述或&#x200B;**[!UICONTROL Create > Delivery]**&#x200B;菜单创建投放。
 
 
-要创建投放，请单击 **[!UICONTROL Create]** 在投放列表上方。 创建新投放时，必须指示使用的投放渠道。 要实现此目的，请从 **[!UICONTROL Delivery template]** 字段。
+要创建投放，请单击投放列表上方的&#x200B;**[!UICONTROL Create]**。 创建新投放时，必须指示使用的投放渠道。 为此，请从&#x200B;**[!UICONTROL Delivery template]**&#x200B;字段的下拉列表中选择相应的投放模板。
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
@@ -30,22 +30,22 @@ ht-degree: 4%
 >
 >列表中提供的渠道取决于您的许可协议。
 
-您可以创建新的投放模板，以预配置特定参数以满足您的需求。 有关模板的更多信息，请参阅 [本节](about-templates.md).
+您可以创建新的投放模板，以预配置特定参数以满足您的需求。 有关模板的更多信息，请参阅[此章节](about-templates.md)。
 
 ## 识别投放 {#identifying-the-delivery}
 
 您需要完成参数以标识投放。 操作步骤：
 
-1. 在中输入交货的名称 **[!UICONTROL Label]** 字段。
+1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入投放名称。
 
    您还可以为投放分配投放代码。 投放的名称及其代码会显示在投放列表中，但收件人无法看到。
 
-1. 在中添加描述 **[!UICONTROL Description]** 字段。
+1. 在&#x200B;**[!UICONTROL Description]**&#x200B;字段中添加描述。
 1. 在相关字段中选择投放性质。 此信息对于投放跟踪很有用：您可以在投放列表中根据此标准进行筛选，或使用此选择标准构建查询。
 
    ![](assets/s_ncs_user_email_del_nature.png)
 
-1. 单击 **[!UICONTROL Continue]** 以确认此信息并显示消息配置窗口。
+1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;以确认此信息并显示消息配置窗口。
 
 投放内容已准备好进行配置。 投放内容定义特定于每个渠道。 有关更多信息，请参阅专述章节：
 

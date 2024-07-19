@@ -15,7 +15,7 @@ ht-degree: 25%
 
 
 
-探索数据库中的数据是通过 **Marketing Analytics** 模块。 它使您能够分析和测量数据，计算统计数据，简化和优化报告创建和计算。 除此之外，Marketing Analytics还允许您创建报表和构建目标群体。 标识这些内容后，它们会存储在可在Adobe Campaign中使用的列表中（定位、分段等）。
+通过&#x200B;**Marketing Analytics**&#x200B;模块提供对数据库中数据的探索。 它使您能够分析和测量数据，计算统计数据，简化和优化报告创建和计算。 除此之外，Marketing Analytics还允许您创建报表和构建目标群体。 标识这些内容后，它们会存储在可在Adobe Campaign中使用的列表中（定位、分段等）。
 
 多维数据集用于生成某些内置报告，包括投放报告（投放跟踪、点击次数、打开次数等）。 基于多维数据集的报告只能用作500万条事实线以下的数据量的标准。
 
@@ -25,7 +25,7 @@ ht-degree: 25%
 
 >[!CAUTION]
 >
->**Marketing Analytics** 是一个Adobe Campaign模块。 它需要安装在您的实例上，这样您才能使用下述功能。
+>**Marketing Analytics**&#x200B;是一个Adobe Campaign模块。 它需要安装在您的实例上，这样您才能使用下述功能。
 
 使用Campaign Marketing Analytics模块可以：
 
@@ -45,4 +45,4 @@ ht-degree: 25%
 1. 使用立方中计算和聚合的数据构建查询。
 1. 识别群体并在列表中引用它们。
 
-了解如何在中创建和使用多维数据集 [Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=zh-Hans){target="_blank"}.
+请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=zh-Hans){target="_blank"}以了解如何创建和使用多维数据集。

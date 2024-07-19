@@ -19,12 +19,12 @@ ht-degree: 0%
 
 可以使用通过Adobe Campaign客户端界面配置的工作流，自动创建、编辑和发布内容。
 
-此 **内容管理** 通过访问活动 **[!UICONTROL Tools]** 工作流图的工具栏。
+通过工作流图的&#x200B;**[!UICONTROL Tools]**&#x200B;工具栏访问&#x200B;**内容管理**&#x200B;活动。
 
 活动属性分为四个步骤：
 
-* **[!UICONTROL Content]** ：用于输入现有内容或创建内容，
-* **[!UICONTROL Update content]** ：用于修改内容的主题或通过XML数据流量更新内容，
+* **[!UICONTROL Content]** ：允许您输入现有内容或创建内容，
+* **[!UICONTROL Update content]** ：允许您修改内容的主题或通过XML数据流量更新内容，
 * **[!UICONTROL Action to execute]** ：用于保存或生成内容，
 * **[!UICONTROL Transition]** ：用于选择是否生成输出过渡并为其命名。
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 ### 过渡 {#transition}
 
-此 **生成输出转换** 选项允许您将输出过渡添加到 **[!UICONTROL Content management]** 活动，用于将新活动链接到工作流执行。 选中此选项后，输入过渡的标签。
+通过&#x200B;**生成输出过渡**&#x200B;选项，可将输出过渡添加到&#x200B;**[!UICONTROL Content management]**&#x200B;活动，以将新活动链接到工作流执行。 选中此选项后，输入过渡的标签。
 
 ## 示例 {#examples}
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 通过发布模型和内容字符串文件夹创建新内容实例。
 
-在我们的示例中，我们已重载投放主题。 此时将考虑它，而不是在 **[!UICONTROL Delivery]** 模板。
+在我们的示例中，我们已重载投放主题。 它将被考虑在内，而不是&#x200B;**[!UICONTROL Delivery]**&#x200B;模板中输入的内容。
 
 内容由来自输入的URL的XML馈送自动填充：
 
@@ -101,9 +101,9 @@ ht-degree: 0%
 </book>
 ```
 
-数据格式与在发布模板中输入的数据架构不匹配(**cus：book** 在我们的示例中)； **`<section>`** 元素必须替换为 **`<chapter>`** 元素。 我们需要应用“cus：book-workflow.xsl”样式表以进行必要的更改。
+数据格式与发布模板中输入的数据架构不匹配（在本例中为&#x200B;**cus：book**）；**`<section>`**&#x200B;元素必须替换为&#x200B;**`<chapter>`**&#x200B;元素。 我们需要应用“cus：book-workflow.xsl”样式表以进行必要的更改。
 
-使用的XSLT样式表的源代码：
+使用的XSLT样式表的Source代码：
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -140,11 +140,11 @@ ht-degree: 0%
 
 活动的最终操作是保存内容实例并继续执行下一个任务。
 
-定位是通过 **查询** 活动。
+定位是通过&#x200B;**查询**&#x200B;活动执行的。
 
-An **AND — 连接** 添加了活动，以确保仅在目标查询和内容更新完成后才开始投放。
+添加了&#x200B;**AND-join**&#x200B;活动，以确保仅在完成目标查询和内容更新后开始投放。
 
-可通过配置投放操作 **投放** 活动：
+传递操作是通过&#x200B;**传递**&#x200B;活动配置的：
 
 ![](assets/d_ncs_content_workflow4.png)
 
@@ -164,13 +164,13 @@ An **AND — 连接** 添加了活动，以确保仅在目标查询和内容更�
 
 ![](assets/d_ncs_content_workflow5.png)
 
-第一个 **内容管理** 任务创建内容实例。
+第一个&#x200B;**内容管理**&#x200B;任务创建一个内容实例。
 
 ![](assets/d_ncs_content_workflow6.png)
 
 >[!NOTE]
 >
->此 **[!UICONTROL Publication]** “转换模板”窗口的选项卡中必须填入要生成的目标位置。
+>必须使用要生成的目标位置填充转换模板窗口的&#x200B;**[!UICONTROL Publication]**&#x200B;选项卡。
 
 添加了等待活动以暂停下一个过渡一周。
 
@@ -186,7 +186,7 @@ An **AND — 连接** 添加了活动，以确保仅在目标查询和内容更�
 
 最终操作是通过强制发布目录来生成此内容。
 
-此 **JavaScript代码** activity检索每个生成的文件的全名。
+**JavaScript Code**&#x200B;活动可检索生成的每个文件的全名。
 
 ![](assets/d_ncs_content_workflow9.png)
 
@@ -196,11 +196,11 @@ An **AND — 连接** 添加了活动，以确保仅在目标查询和内容更�
 
 ![](assets/d_ncs_content_workflow10.png)
 
-第一个 **创建投放** 任务创建投放操作。
+第一个&#x200B;**创建投放**&#x200B;任务创建投放操作。
 
 利用分支活动，可并行启动Target计算和内容实例的创建。
 
-执行任务后，合并连接框将激活 **投放** 此任务用于启动之前创建的关于内容和定位的投放。
+执行任务后，合并连接框将激活&#x200B;**投放**&#x200B;任务，以启动之前创建的内容和定位投放。
 
 ![](assets/d_ncs_content_workflow11.png)
 
@@ -214,11 +214,11 @@ An **AND — 连接** 添加了活动，以确保仅在目标查询和内容更�
 
 ### 从FTP导入内容 {#importing-content-from-ftp}
 
-如果您的投放内容位于FTP或SFTP服务器上的HTML文件中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参阅 [此示例](../../workflow/using/loading-delivery-content.md).
+如果您的投放内容位于FTP或SFTP服务器上的HTML文件中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参阅[此示例](../../workflow/using/loading-delivery-content.md)。
 
 ### 从Amazon Simple Storage Service (S3)连接器导入内容 {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-如果您的投放内容位于Amazon Simple Storage Service (S3)存储桶中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参阅 [此示例](../../workflow/using/loading-delivery-content.md).
+如果您的投放内容位于Amazon Simple Storage Service (S3)存储桶中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参阅[此示例](../../workflow/using/loading-delivery-content.md)。
 
 ## 半自动更新 {#semi-automatic-update}
 
@@ -226,11 +226,11 @@ An **AND — 连接** 添加了活动，以确保仅在目标查询和内容更�
 
 数据恢复的激活是通过输入表单手动执行的。
 
-目的是要宣布一项收购 **editBtn** type **`<input>`** 字段。 此控件包括编辑区域和用于启动处理的按钮。
+目标是声明表单中的&#x200B;**editBtn**&#x200B;类型&#x200B;**`<input>`**&#x200B;字段。 此控件包括编辑区域和用于启动处理的按钮。
 
 通过编辑区域，可填充用于构造要检索的数据的XML馈送的URL的变量数据。
 
-按钮将执行 **GetAndTransform** SOAP方法填充在 **`<input>`** 标记之前。
+按钮执行在&#x200B;**`<input>`**&#x200B;标记下填充的&#x200B;**GetAndTransform** SOAP方法。
 
 表单中的控件声明如下：
 
@@ -246,7 +246,7 @@ An **AND — 连接** 添加了活动，以确保仅在目标查询和内容更�
 </input>
 ```
 
-此 **GetAndTransform** 方法必须声明于 **`<enter>`** 元素 **`<input>`** 标记之前。 此标记会将从动态构建的表达式中恢复XML数据的URL作为参数。 函数的第二个参数是可选的，当传入的XML数据与内容的格式不同时，它会引用用于中间转换的样式表。
+必须在&#x200B;**`<input>`**&#x200B;标记的&#x200B;**`<enter>`**&#x200B;元素下声明&#x200B;**GetAndTransform**&#x200B;方法。 此标记会将从动态构建的表达式中恢复XML数据的URL作为参数。 函数的第二个参数是可选的，当传入的XML数据与内容的格式不同时，它会引用用于中间转换的样式表。
 
 输出根据在最后一个参数中输入的路径更新内容。
 
