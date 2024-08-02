@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: 7b4fbefe0f6bd26ee9260d15e8303f716af7ac96
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >作为v7用户，为了能够继续下一步操作，请确保在您的系统上启用了AdobeIdentity Management System (IMS) 。 [了解详情](../../integrations/using/about-adobe-id.md)。
 
-为您的组织启用AdobeIdentity Management服务(IMS)后，您可以请求配置[Experience Cloud受众](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"}与Campaign的集成。 为此，请向[Digital-Request@adobe.com](mailto:Digital-Request@adobe.com)发送一封电子邮件，其中包含以下信息：
+为您的组织启用AdobeIdentity Management服务(IMS)后，您可以请求配置[Experience Cloud受众](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"}与Campaign的集成。 为此，请联系您的Adobe代表并提供以下信息：
 
 <table> 
  <tbody> 
