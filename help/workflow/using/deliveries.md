@@ -3,7 +3,7 @@ product: campaign
 title: 投放
 description: 了解有关默认投放工作流的更多信息
 feature: Workflows
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 7b4fbefe0f6bd26ee9260d15e8303f716af7ac96
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 4%

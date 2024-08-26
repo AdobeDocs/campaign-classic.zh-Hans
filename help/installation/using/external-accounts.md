@@ -45,7 +45,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 ## 特定于Campaign的外部帐户
 
-### 退回邮件 {#bounce-mails-external-account}
+### 退回电子邮件 {#bounce-mails-external-account}
 
 **退回邮件**&#x200B;外部帐户指定要用于连接到电子邮件服务的外部POP3帐户。 有关此外部帐户的详细信息，请参阅此[页面](../../workflow/using/inbound-emails.md)。
 
@@ -270,7 +270,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL IMS organization ID]**
 
-  您组织的ID。 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}。
+  您组织的ID。 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hans){_blank}。
 
 * **[!UICONTROL Association mask]**
 

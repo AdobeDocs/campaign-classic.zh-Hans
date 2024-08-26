@@ -26,7 +26,7 @@ ht-degree: 0%
 
 1. 选择条形码类型。
 
-   * 对于1D格式，Adobe Campaign提供以下类型：Codabar、代码128、GS1-128（以前称为EAN-128）、UPC-A、UPC-E、ISBN、EAN-8、代码39、交错码2（共5个）、POSTNET和皇家邮件(RM4SCC)。
+   * 对于1D格式，Adobe Campaign提供以下类型：Codabar、代码128、GS1-128（以前称为EAN-128）、UPC-A、UPC-E、ISBN、EAN-8、代码39、交错式2（共5个）、POSTNET和皇家邮件(RM4SCC)。
 
      1D条形码示例：
 

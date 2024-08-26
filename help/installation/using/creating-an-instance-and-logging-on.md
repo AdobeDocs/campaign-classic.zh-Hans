@@ -28,9 +28,9 @@ ht-degree: 1%
 >
 >**只有内部**&#x200B;标识符才能执行这些操作。如需详细信息，请参阅[此小节](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
-启动Adobe Campaign控制台后，您可以访问登录页面。
+启动 Adobe Campaign 控制台后，您将访问一个登录页面。
 
-要创建新实例，请按照以下步骤操作：
+如需创建新实例，请执行以下步骤：
 
 1. 单击凭据字段右上角的链接以访问连接配置窗口。 此链接可以是&#x200B;**[!UICONTROL New...]**&#x200B;或现有的实例名称。
 
@@ -46,15 +46,15 @@ ht-degree: 1%
 
    >[!CAUTION]
    >
-   >对于连接 URL，仅使用以下字符： `[a-z]`、 `[A-Z]`、 `[0-9]` 短划线 （-） 或句号。
+   >对于连接 URL，仅使用以下字符： `[a-z]`、 `[A-Z]`、、 `[0-9]` 短划线 （-） 或句号。
 
-1. 单击以 **[!UICONTROL Ok]** 确认设置：您现在可以开始实例创建过程。
-1. 在 **[!UICONTROL Connection settings]** 窗口中，输入 **内部** 登录名及其密码以连接到Adobe Campaign应用程序服务器。 连接后，您可以访问实例创建向导以声明新实例
-1. 在字段中 **[!UICONTROL Name]** ，输入 **实例名称**。 由于此名称用于生成配置文件 **config-`<instance>`.xml** ，并在命令行参数中用于标识实例，因此请确保选择一个不带特殊字符的短名称。 例如： **eMarketing**.
+1. 单击 **[!UICONTROL Ok]** 以确认设置：您现在可以开始实例创建过程。
+1. 在 **[!UICONTROL Connection settings]** 窗口中，输入 **内部** 登录名及其密码以连接到 Adobe Campaign 应用程序服务器。 连接后，您可以访问实例创建向导以声明新实例
+1. 在 **[!UICONTROL Name]** 字段中，输入 **实例名称**。 由于此名称用于生成配置文件 **config-`<instance>`.xml** ，并在命令行参数中用于标识实例，因此请确保选择不含特殊字符的短名称。 例如： **电子营销**。
 
    ![](assets/s_ncs_install_create_instance.png)
 
-   添加到域名中的实例名称不得超过 40 个字符。 这使您可以限制“Message-ID”标头的大小，并防止邮件被视为垃圾邮件，尤其是 SpamAssassin 等工具。
+   添加到域名的实例名称不得超过40个字符。 这使您可以限制“邮件 ID”标头的大小，并防止邮件被视为垃圾邮件，尤其是通过 SpamAssassin 等工具。
 
 1. 在 **[!UICONTROL DNS masks]** 字段中，输入 **实例应附加到的 DNS 掩码** 列表。 Adobe Campaign服务器使用HTTP请求中显示的主机名来确定要访问的实例。
 
@@ -62,15 +62,15 @@ ht-degree: 1%
 
    您可以定义以逗号分隔的值列表。
 
-   是？ &#42;字符可以用作通配符来替换一个或多个字符（DNS、端口等）。例如， **demo&#42;** 值将与“https://demo”一起使用，就像它适用于“https://demo:8080”甚至“https://demo2”。
+   是？ 字符 &#42; 可用作通配符来替换一个或多个字符（DNS、端口等）。 例如， **演示&#42;** 值将与“https://demo”一起使用，就像与“https://demo:8080”甚至“https://demo2”一起使用一样。
 
-   使用的名称必须在 DNS 中定义。 您还可以在 **Windows 的 c：/windows/system32/drivers/etc/hosts** 文件和 **Linux 的 /etc/hosts** 文件中通知 DNS 名称和 IP 地址之间的对应关系。 因此，您必须修改连接设置以使用此 DNS 名称，才能连接到您选择的实例。
+   必须在您的 DNS 中定义使用的名称。 您还可以在 Windows 的 c：/windows/system32/drivers/etc/hosts **文件和** Linux 的 /etc/hosts **文件中通知 DNS 名称和 IP 地址**&#x200B;之间的对应关系。因此，您必须修改连接设置以使用此 DNS 名称才能连接到所选实例。
 
    服务器必须使用此名称进行标识，尤其是在电子邮件中上传图像时。
 
-   此外，服务器必须能够通过此名称连接到自身，如果可能的话，还可以通过环回地址 - 127.0.0.1 - 连接到自身，特别是允许以 PDF 格式导出报告。
+   此外，服务器必须能够通过此名称连接到自身，如果可能的话，还可以通过环回地址 - 127.0.0.1 -进行连接，特别是为了允许以 PDF 格式导出报告。
 
-1. 在下拉列表中&#x200B;**[!UICONTROL Language]****，选择实例语言**：英语（美国）、英语（英国）、法语或日语。
+1. 在 **[!UICONTROL Language]** 下拉列表中，选择 **实例语言**：英语（美国）、英语（英国）、法语或日语。
 
    美式英语和英国英语之间的差异在[本节](../../platform/using/adobe-campaign-workspace.md#date-and-time)中进行了说明。
 
@@ -82,4 +82,4 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >可以从命令行创建实例。 有关更多信息，请参阅 [命令行](../../installation/using/command-lines.md)。
+   >可以从命令行创建实例。 有关此内容的更多信息，请参阅 [命令行](../../installation/using/command-lines.md)。

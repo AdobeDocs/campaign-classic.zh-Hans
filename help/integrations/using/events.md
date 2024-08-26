@@ -209,7 +209,7 @@ triggerType字段标识数据来源的触发器。
 | triggerType | 字符串50 | TriggerType | 触发器的名称。 标识客户在网站上的行为。 |
 | shopper_id | 字符串32 | shopper_id | 购物者的内部标识符。 由协调工作流设置。 如果为0，则表示在Campaign中未知该客户。 |
 | shopper_key | 长 | shopper_key | 购物者的Analytics捕获的外部标识符。 |
-| 已创建 | 日期时间 | 创建时间 | 在Campaign中创建事件的时间。 |
+| 已创建 | 日期时间 | 已创建 | 在Campaign中创建事件的时间。 |
 | lastModified | 日期时间 | 上次修改时间 | 上次在Adobe中修改事件的时间。 |
 | 时间GMT | 日期时间 | 时间戳 | 在Analytics中生成事件的时间。 |
 

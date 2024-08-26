@@ -36,7 +36,7 @@ ht-degree: 0%
 
 1. 检查在serverConf.xml中是否设置了组织ID (ImsOrgId)。
 1. 检查实例配置文件中的空组织ID是否可以覆盖默认组织ID。 如果是，请删除它。
-1. 检查组织ID是否正确。 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}
+1. 检查组织ID是否正确。 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hans){_blank}
 
 **管道化失败，出现“无效键”**
 

@@ -68,7 +68,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->可以在Analytics界面中找到特定触发器名称的[!DNL Trigger] UID值，作为Triggers界面中URL查询字符串参数的一部分。 triggerType UID在管道数据流中传递，并且代码可以写入pipeline.JS中，以将触发器UID映射到用户友好标签，该标签可以存储在pipelineEvents架构的“触发器名称”列中。
+>可以在Analytics界面中找到特定触发器名称的[!DNL Trigger] UID值，作为Triggers界面中URL查询字符串参数的一部分。 triggerType UID在管道数据流中传递，并且代码可以写入pipeline.JS中，以将触发器UID映射到用户友好的标签，该标签可以存储在pipelineEvents架构的“触发器名称”列中。
 
 ## 使用者参数 {#consumer-parameter}
 

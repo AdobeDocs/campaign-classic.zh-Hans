@@ -37,7 +37,7 @@ This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1
 
 在开始此实施之前，请检查您是否拥有：
 
-* 有效的&#x200B;**组织标识符**：组织ID是Adobe Experience Cloud中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans)
+* 有效的&#x200B;**组织标识符**：组织ID是Adobe Experience Cloud中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hans)
 * 您组织的&#x200B;**开发人员访问权限**。 组织的系统管理员需要遵循此页面](https://helpx.adobe.com/enterprise/using/manage-developers.html)中详细的[的&#x200B;**将开发人员添加到单个产品配置文件**&#x200B;过程，以便为与触发器关联的Adobe Analytics产品的`Analytics - {tenantID}`产品配置文件提供开发人员访问权限。
 
 ## 步骤1：创建/更新OAuth项目 {#creating-adobe-io-project}
