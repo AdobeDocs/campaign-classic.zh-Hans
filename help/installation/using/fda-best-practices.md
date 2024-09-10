@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 586456f27dbc039ecb39cc8bd1f6dbdf8af823be
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '456'
 ht-degree: 7%
 
 ---
@@ -38,11 +38,13 @@ ht-degree: 7%
 
 * **添加信息和链接** - [扩充](../../workflow/using/enrichment.md)活动允许您向工作流的工作表添加其他数据，以及指向外部表的链接。 在这种情况下，它可以使用来自外部数据库的数据。 请参阅[此页面](../../workflow/using/enrichment.md)以了解详情。
 
-## FDA限制 {#limitations}
+## 护栏和限制 {#fda-limitations}
 
-FDA选项可用于在工作流中以批处理模式处理外部数据库中的数据。 为了避免出现性能问题，建议不要在单一操作的上下文中使用FDA模块，例如：个性化、交互、实时消息传送等。
+FDA选项用于在工作流中以批处理模式处理外部数据库中的数据。 为了避免出现性能问题，建议不要在单一操作的上下文中使用FDA模块，例如：个性化、交互、实时消息传送等。
 
-尽可能避免需要同时使用Adobe Campaign和外部数据库的操作。 为此，您可以：
+不支持定位一个数据库中的数据并使用属于另一个数据库的过滤维度过滤结果。 不能在一个查询中连接位于不同数据源上的表。 您可以使用其他工作流活动（如更改维度）来克服此限制。
+
+尽可能避免需要同时使用Adobe Campaign和外部数据库的操作。 最佳实践是：
 
 * 将Adobe Campaign数据库导出到外部数据库，并仅在将结果重新导入Adobe Campaign之前从外部数据库执行操作。
 
