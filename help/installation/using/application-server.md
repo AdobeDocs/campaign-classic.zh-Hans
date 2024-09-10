@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '635'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md)中详细介�
 
 >[!AVAILABILITY]
 >
->* 从v7.4.1开始，Campaign至少需要Java JDK 11。 如果Campaign服务器安装在Windows环境中，则必须生成JRE，因为默认情况下不再提供它。
+>* 从v7.4.1开始，Campaign至少需要Java JDK 11。 如果Campaign服务器安装在Windows环境中，则必须生成JRE，因为默认情况下不再提供它。 要找到Java运行时DLL (jvm.dll)，需要JRE_HOME环境变量。
 >
 >* 从v7.4.1开始，Tomcat 10.1是默认版本。
 >
