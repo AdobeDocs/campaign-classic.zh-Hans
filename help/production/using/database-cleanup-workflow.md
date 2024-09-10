@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 6c85ca9d50dd970915b7c46939f88f4d7fdf07d8
 workflow-type: tm+mt
 source-wordcount: '2827'
 ht-degree: 0%
@@ -47,9 +47,9 @@ ht-degree: 0%
 >
 >为了使&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流在调度程序中定义的日期和时间启动，必须启动工作流引擎(wfserver)。
 
-### 部署向导 {#deployment-wizard}
+### 部署向导 {#deployment-assistant}
 
-通过&#x200B;**[!UICONTROL Tools > Advanced]**&#x200B;菜单访问&#x200B;**[!UICONTROL Deployment wizard]**，可配置保存数据的时间。 值以天为单位表示。 如果未更改这些值，工作流将使用默认值。
+通过&#x200B;**[!UICONTROL Tools > Advanced]**&#x200B;菜单访问&#x200B;**[!UICONTROL deployment wizard]**，可配置保存数据的时间。 值以天为单位表示。 如果未更改这些值，工作流将使用默认值。
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 此任务会清除要删除或回收的所有投放。
 
-1. **[!UICONTROL Database cleanup]**&#x200B;工作流会选择其值为&#x200B;**[!UICONTROL Yes]**&#x200B;或&#x200B;**[!UICONTROL Recycled]**&#x200B;的&#x200B;**deleteStatus**&#x200B;字段的所有投放，这些投放的删除日期早于部署向导的&#x200B;**[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**)字段中定义的时间段。 有关详细信息，请参阅[部署向导](#deployment-wizard)。 此时间段根据当前服务器日期计算。
+1. **[!UICONTROL Database cleanup]**&#x200B;工作流会选择其值为&#x200B;**[!UICONTROL Yes]**&#x200B;或&#x200B;**[!UICONTROL Recycled]**&#x200B;的&#x200B;**deleteStatus**&#x200B;字段的所有投放，这些投放的删除日期早于部署向导的&#x200B;**[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**)字段中定义的时间段。 有关详细信息，请参阅[部署向导](#deployment-assistant)。 此时间段根据当前服务器日期计算。
 1. 对于每个中间源服务器，该任务会选择要删除的投放列表。
 1. **[!UICONTROL Database cleanup]**&#x200B;工作流会删除投放日志、附件、镜像页面信息和所有其他相关数据。
 1. 永久删除投放之前，工作流会清除下表中的链接信息：
@@ -308,7 +308,7 @@ ht-degree: 0%
    DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l)
    ```
 
-   其中`$(curDate)`是当前服务器日期，我们从其中减去为&#x200B;**NmsCleanup_RejectsPurgeDelay**&#x200B;选项（请参阅[部署向导](#deployment-wizard)）定义的时间段，`$(l)`是批量删除的最大记录数。
+   其中`$(curDate)`是当前服务器日期，我们从其中减去为&#x200B;**NmsCleanup_RejectsPurgeDelay**&#x200B;选项（请参阅[部署向导](#deployment-assistant)）定义的时间段，`$(l)`是批量删除的最大记录数。
 
 1. 然后，使用以下查询删除所有孤立拒绝：
 
@@ -395,7 +395,7 @@ SELECT iGroupId FROM NmsGroup WHERE iType>0"
 
 ### 访客清理 {#cleanup-of-visitors}
 
-此任务使用批量删除从访客表中删除过时的记录。 过时记录是指其最后一次修改早于部署向导中定义的保留期的记录（请参阅[部署向导](#deployment-wizard)）。 使用以下查询：
+此任务使用批量删除从访客表中删除过时的记录。 过时记录是指其上次修改早于部署向导中定义的保留期的记录（请参阅[部署向导](#deployment-assistant)）。 使用以下查询：
 
 ```sql
 DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
@@ -423,7 +423,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 ### 清理跟踪日志 {#cleanup-of-tracking-logs}
 
-此任务从跟踪和Web跟踪日志表中删除过时的记录。 过时记录是指早于部署向导中定义的保留期的记录（请参阅[部署向导](#deployment-wizard)）。
+此任务从跟踪和Web跟踪日志表中删除过时的记录。 过时记录是指早于部署向导中定义的保留期的记录（请参阅[部署向导](#deployment-assistant)）。
 
 1. 首先，使用以下查询恢复跟踪日志表的列表：
 
@@ -464,7 +464,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
    DELETE FROM $(tableName) WHERE iBroadLogId IN (SELECT iBroadLogId FROM $(tableName) WHERE tsLastModified < $(option) LIMIT 5000) 
    ```
 
-   其中`$(tableName)`是架构列表中每个表的名称，`$(option)`是为&#x200B;**NmsCleanup_BroadLogPurgeDelay**&#x200B;选项定义的日期（请参阅[部署向导](#deployment-wizard)）。
+   其中`$(tableName)`是架构列表中每个表的名称，`$(option)`是为&#x200B;**NmsCleanup_BroadLogPurgeDelay**&#x200B;选项定义的日期（请参阅[部署向导](#deployment-assistant)）。
 
 1. 最后，工作流检查&#x200B;**NmsProviderMsgId**&#x200B;表是否存在。 如果是，则使用以下查询删除所有过时数据：
 
@@ -472,7 +472,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
    ```
 
-   其中`$(option)`与为&#x200B;**NmsCleanup_BroadLogPurgeDelay**&#x200B;选项定义的日期匹配（请参阅[部署向导](#deployment-wizard)）。
+   其中`$(option)`与为&#x200B;**NmsCleanup_BroadLogPurgeDelay**&#x200B;选项定义的日期匹配（请参阅[部署向导](#deployment-assistant)）。
 
 ### 清理NmsEmailErrorStat表 {#cleanup-of-the-nmsemailerrorstat-table-}
 
@@ -552,7 +552,7 @@ DELETE FROM NmsMxDomain WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailE
 DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FROM NmsPropositionXxx WHERE tsLastModified < $(option) LIMIT 5000) 
 ```
 
-其中`$(option)`是为&#x200B;**NmsCleanup_PropositionPurgeDelay**&#x200B;选项定义的日期（请参阅[部署向导](#deployment-wizard)）。
+其中`$(option)`是为&#x200B;**NmsCleanup_PropositionPurgeDelay**&#x200B;选项定义的日期（请参阅[部署向导](#deployment-assistant)）。
 
 ### 模拟表的清理 {#cleanup-of-simulation-tables}
 
