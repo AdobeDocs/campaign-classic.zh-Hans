@@ -5,7 +5,7 @@ description: 使用分析报表
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 1%
@@ -126,11 +126,11 @@ ht-degree: 1%
 
 ## 重复利用现有报告和分析 {#re-using-existing-reports-and-analyses}
 
-您可以使用已存储在Adobe Campaign中的现有报表创建关于数据的描述性分析报表。 在保存分析或创建报告并将其配置为可通过描述性分析向导访问时，可以使用此模式。
+您可以使用已存储在Adobe Campaign中的现有报表创建关于数据的描述性分析报表。 在保存分析或创建报告并将其配置为可通过描述性分析助手访问时，可以使用此模式。
 
 要了解如何保存描述性分析，请参阅[保存分析报告](#saving-an-analysis-report)。
 
-要创建描述性分析报告，必须通过工作流过渡或&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;菜单执行描述性分析向导。
+要创建描述性分析报告，必须通过工作流过渡或&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;菜单执行描述性分析助手。
 
 1. 选择 **[!UICONTROL Existing analyses and reports]** 并单击 **[!UICONTROL Next]**。
 1. 通过此选项可访问可用报告的列表。 选择要生成的报告。
@@ -143,7 +143,7 @@ ht-degree: 1%
 
 要创建历史记录，请应用以下步骤：
 
-1. 打开现有的分析或创建新的描述性分析向导。
+1. 打开现有的分析或创建新的描述性分析助手。
 1. 在报表显示页面中，单击按钮以在工具栏中创建历史记录，然后进行确认，如下所示：
 
    ![](assets/reporting_descriptive_historize_icon.png)

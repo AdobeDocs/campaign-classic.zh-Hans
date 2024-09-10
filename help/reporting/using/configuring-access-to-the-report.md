@@ -5,7 +5,7 @@ description: 配置对报告的访问权限
 feature: Reporting, Monitoring
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 2%
@@ -82,7 +82,7 @@ ht-degree: 2%
 
 例如，我们将创建指向报告的链接，以便通过收件人列表访问该链接。
 
-1. 单击&#x200B;**[!UICONTROL New]**&#x200B;并在报告创建向导中选择&#x200B;**[!UICONTROL Create a link to an existing report]**。
+1. 单击&#x200B;**[!UICONTROL New]**&#x200B;并在报告创建助手中选择&#x200B;**[!UICONTROL Create a link to an existing report]**。
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
@@ -126,7 +126,7 @@ ht-degree: 2%
 
 必须发布报告，以便与其他操作员共享报告并在可用报告列表中显示它们（另请参阅[报告显示上下文](#report-display-context)）。 每次更改报告时必须再次执行此操作。
 
-1. 单击工具栏中的&#x200B;**[!UICONTROL Publish]**&#x200B;打开发布向导。
+1. 单击工具栏中的&#x200B;**[!UICONTROL Publish]**&#x200B;打开发布助手。
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 

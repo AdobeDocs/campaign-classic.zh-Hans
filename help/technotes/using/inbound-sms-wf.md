@@ -4,7 +4,7 @@ title: 中间源基础架构的入站短信工作流活动
 description: 中间源基础架构的入站短信工作流活动
 feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
-source-git-commit: 5c42ff45b4d0bc4d61f4fccdba4518801ea4c9da
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 5%
@@ -35,7 +35,7 @@ ht-degree: 5%
    </element>
    ```
 
-1. 要应用对架构所做的修改，请启动数据库更新向导。 此向导可通过&#x200B;**工具** > **高级** > **更新数据库结构**&#x200B;访问。 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。 [了解详情](../../configuration/using/updating-the-database-structure.md)
+1. 要应用对架构所做的修改，请启动数据库更新助手。 此助理可通过&#x200B;**工具** > **高级** > **更新数据库结构**&#x200B;访问。 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。 [了解详情](../../configuration/using/updating-the-database-structure.md)
 
 1. 停止并备份包含&#x200B;**入站SMS活动**&#x200B;的工作流。
 

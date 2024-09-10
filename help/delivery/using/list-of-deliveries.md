@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Monitoring
 role: User
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 3%
@@ -29,7 +29,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->对于大型投放，您可能希望更新这些值。 要实现此目的，请选择相关投放，然后右键单击它。 选择&#x200B;**[!UICONTROL Action > Recompute delivery and tracking indicators...]**，然后使用该向导更新此信息。
+>对于大型投放，您可能希望更新这些值。 要实现此目的，请选择相关投放，然后右键单击它。 选择&#x200B;**[!UICONTROL Action > Recompute delivery and tracking indicators...]**，然后使用该助理更新此信息。
 
 **相关主题：**
 

@@ -5,7 +5,7 @@ description: “用例：创建概述”
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -94,7 +94,7 @@ ht-degree: 0%
    >
    >**nms：webApp**&#x200B;与Web应用程序架构一致。
    >
-   >**nms：newWebApp**&#x200B;与新的Web应用程序创建向导一致。
+   >**nms：newWebApp**&#x200B;与新的Web应用程序创建助手一致。
 
 1. 选择以在同一窗口中显示URL。
 1. 在图像字段中添加Web应用程序图标： **/nms/img/webApp.png**。

@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 2%
@@ -126,7 +126,7 @@ ht-degree: 2%
   有关详细信息，请参阅[本节](../../platform/using/editing-a-profile.md)中关于配置文件编辑的章节。
 
 * 自动为一组收件人订阅此服务。 收件人列表可以来自筛选操作、组、文件夹、导入或使用鼠标直接选择。 要订阅这些收件人，请选择用户档案并右键单击。 选择&#x200B;**[!UICONTROL Actions > Subscribe selection to a service...]**，选择相关的服务，然后启动操作。
-* 导入收件人并自动为其订阅信息服务。 要执行此操作，请在导入向导的最后一步中选择相关的服务。
+* 导入收件人并自动为其订阅信息服务。 为此，请在导入助理的最后一步中选择相关的服务。
 
   如需详细信息，请参阅[此小节](../../platform/using/executing-import-jobs.md)。
 
@@ -146,7 +146,7 @@ ht-degree: 2%
 
 根据法律，电子邮件投放必须包含退订链接。 收件人可以单击此链接以更新其用户档案，并将其从未来投放的目标中排除。
 
-默认退订链接通过投放向导中提供的内容编辑器工具栏中的最后一个按钮插入（请参阅[关于个性化](about-personalization.md)）。 当收件人单击此链接时，会将用户档案添加到（选择退出）阻止列表，这意味着任何投放操作都将不再以该收件人为目标。
+默认退订链接通过投放助理中提供的内容编辑器工具栏中的最后一个按钮插入（请参阅[关于个性化](about-personalization.md)）。 当收件人单击此链接时，会将用户档案添加到（选择退出）阻止列表，这意味着任何投放操作都将不再以该收件人为目标。
 
 但是，收件人可以选择取消订阅服务而不取消订阅所有服务。 要允许此操作，您可以使用Web窗体（请参阅[此章节](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)）或插入个性化的取消订阅链接（请参阅[个性化块](personalization-blocks.md)）。
 

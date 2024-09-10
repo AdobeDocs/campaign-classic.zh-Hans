@@ -5,7 +5,7 @@ description: 了解设计调查的关键步骤
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 ## 添加字段 {#adding-fields}
 
-表单中的字段使用户能够输入信息并选择选项。 对于表单中的每个页面，它们是使用&#x200B;**[!UICONTROL Add using the wizard]**&#x200B;菜单通过工具栏中的第一个按钮创建的。
+表单中的字段使用户能够输入信息并选择选项。 对于表单中的每个页面，它们是使用&#x200B;**[!UICONTROL Add using the assistant]**&#x200B;菜单通过工具栏中的第一个按钮创建的。
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

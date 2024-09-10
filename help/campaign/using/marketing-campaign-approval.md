@@ -5,7 +5,7 @@ description: 了解如何管理营销活动的批准
 role: User
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2437'
 ht-degree: 1%
@@ -321,7 +321,7 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
 
    ![](assets/s_ncs_user_validation_submit_content_notif.png)
 
-1. 然后，他们可以登录到控制台，打开投放并使用简化的向导进行编辑，以更改主题、HTML和文本内容，并发送校样。
+1. 然后，他们可以登录到控制台，打开投放并使用简化的助手进行编辑，以更改主题、HTML和文本内容，并发送校样。
 
    ![](assets/s_user_validation_content_edition.png)
 

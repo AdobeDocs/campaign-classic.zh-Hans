@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Monitoring, Email Design, Personalization
 role: User
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 # 配置 URL 跟踪选项{#personalizing-url-tracking}
 
-可通过投放向导工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;图标访问高级邮件跟踪设置。
+可通过投放助理工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;图标访问高级邮件跟踪设置。
 
 >[!NOTE]
 >

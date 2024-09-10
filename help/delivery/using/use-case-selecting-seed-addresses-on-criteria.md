@@ -5,7 +5,7 @@ description: “用例：根据条件选择种子地址”
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 2%
@@ -83,15 +83,15 @@ ht-degree: 2%
 
    ![](assets/dlv_seeds_usecase_12.png)
 
-1. 显示更新向导时，单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮以访问“编辑表”窗口：在种子地址数据架构中执行的更改需要结构更新。
+1. 显示更新助手时，单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮以访问“编辑表”窗口：在种子地址数据架构中执行的更改需要结构更新。
 
    ![](assets/dlv_seeds_usecase_13.png)
 
-1. 按照向导操作，直到您进入页面运行更新。 单击 **[!UICONTROL Start]** 按钮。
+1. 请按照该助手操作，直到您进入页面运行更新为止。 单击 **[!UICONTROL Start]** 按钮。
 
    ![](assets/dlv_seeds_usecase_14.png)
 
-   更新完成后，可以关闭向导。
+   更新完成后，可以关闭该助手。
 
 1. 断开连接，然后重新连接到Adobe Campaign。 现在，在种子地址数据架构中所做的更改生效。 为了从种子地址屏幕中可见，您必须更新关联的&#x200B;**[!UICONTROL Input form]**。 请参阅[更新输入表单](#updating-the-input-form)部分。
 

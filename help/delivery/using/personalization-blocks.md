@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 2%
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 要在消息中插入个性化块，请执行以下步骤：
 
-1. 在投放向导的内容编辑器中，单击个性化字段图标并选择&#x200B;**[!UICONTROL Include]**&#x200B;菜单。
+1. 在投放助理的内容编辑器中，单击个性化字段图标并选择&#x200B;**[!UICONTROL Include]**&#x200B;菜单。
 1. 从列表中选择一个个性化块（该列表显示10个上次使用的块），或单击&#x200B;**[!UICONTROL Other...]**&#x200B;菜单访问完整列表。
 
    ![](assets/s_ncs_user_personalized_block01.png)
@@ -71,7 +71,7 @@ HTML源代码将插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
 >有关生成镜像页面的详细信息，请参阅[生成镜像页面](sending-messages.md#generating-the-mirror-page)。
 
 1. 创建新投放或打开现有的电子邮件类型投放。
-1. 在投放向导中，单击&#x200B;**[!UICONTROL Subject]**&#x200B;编辑邮件的主题并输入主题。
+1. 在传递助理中，单击&#x200B;**[!UICONTROL Subject]**&#x200B;编辑邮件的主题并输入主题。
 1. 在消息正文中插入个性化块。 为此，请单击邮件内容，单击个性化字段图标并选择&#x200B;**[!UICONTROL Include]**&#x200B;菜单。
 1. 选择要插入的第一个块。 续订过程以包含其他两个块。
 

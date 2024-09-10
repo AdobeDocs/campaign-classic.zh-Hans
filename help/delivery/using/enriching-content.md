@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Data Management
 role: User, Developer, Data Engineer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ### 添加查询 {#adding-a-query}
 
-使用向导编辑查询参数。
+使用助理编辑查询参数。
 
 1. 在第一页中，指定标签和包含要检索的数据的架构。
 

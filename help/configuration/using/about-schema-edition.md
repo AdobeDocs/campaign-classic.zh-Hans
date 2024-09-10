@@ -5,7 +5,7 @@ description: 架构版本入门
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 6%
@@ -213,7 +213,7 @@ XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolic
 
 ## 更新数据库结构 {#updating-the-database-structure}
 
-完成并保存更改后，任何可能影响SQL结构的更改都需要应用到数据库。 要执行此操作，请使用数据库更新向导。
+完成并保存更改后，任何可能影响SQL结构的更改都需要应用到数据库。 为此，请使用数据库更新助手。
 
 ![](assets/schemaextension_getting_started_3.png)
 

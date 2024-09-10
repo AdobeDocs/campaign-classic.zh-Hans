@@ -5,7 +5,7 @@ description: 使用Campaign创建您的第一个调查
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 * **添加输入字段**
 
-  要创建页面的内容，必须对其进行编辑：要执行此操作，请双击&#x200B;**[!UICONTROL Page]**&#x200B;对象。 单击工具栏中的第一个图标以打开字段创建向导。 要为要存储在收件人配置文件的匹配字段中的用户名创建输入字段，请选择&#x200B;**[!UICONTROL Edit a recipient]**。
+  要创建页面的内容，必须对其进行编辑：要执行此操作，请双击&#x200B;**[!UICONTROL Page]**&#x200B;对象。 单击工具栏中的第一个图标以打开字段创建助手。 要为要存储在收件人配置文件的匹配字段中的用户名创建输入字段，请选择&#x200B;**[!UICONTROL Edit a recipient]**。
 
   ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -130,7 +130,7 @@ ht-degree: 1%
 要使用户能够访问HTML页，应用程序必须可用。 它必须不再处于编辑阶段，而是处于生产阶段。 要将调查置于生产环境中，必须发布它。 操作步骤：
 
 * 单击位于调查仪表板上方的&#x200B;**[!UICONTROL Publish]**&#x200B;按钮。
-* 单击&#x200B;**[!UICONTROL Start]**&#x200B;启动发布并关闭向导。
+* 单击&#x200B;**[!UICONTROL Start]**&#x200B;启动发布并关闭助手。
 
   ![](assets/s_ncs_admin_survey_start_publ.png)
 

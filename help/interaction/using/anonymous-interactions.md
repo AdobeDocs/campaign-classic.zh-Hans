@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 1%
@@ -22,9 +22,9 @@ ht-degree: 1%
 
 ## 为匿名交互定位和存储环境 {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
-默认情况下，交互附带预配置的环境，以定向收件人表（已识别的选件）。 如果要定位其他表（匿名选件的访客表或特定的收件人表），则需要使用目标映射向导创建环境。 有关此内容的详细信息，请参阅[创建优惠环境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
+默认情况下，交互附带预配置的环境，以定向收件人表（已识别的选件）。 如果要定位另一个表（匿名选件的访客表或特定的收件人表），则需要使用目标映射助手创建环境。 有关此内容的详细信息，请参阅[创建优惠环境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
 
-通过映射创建向导创建匿名环境时，会自动在环境的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中选中&#x200B;**[!UICONTROL Environment dedicated to incoming anonymous interactions]**&#x200B;框。
+通过映射创建助手创建匿名环境时，将在环境的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中自动选中&#x200B;**[!UICONTROL Environment dedicated to incoming anonymous interactions]**&#x200B;框。
 
 **[!UICONTROL Targeting dimension]**&#x200B;自动完成。 默认情况下，该链接会链接到访客表。
 

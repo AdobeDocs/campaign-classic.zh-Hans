@@ -5,7 +5,7 @@ description: Campaign报告最佳实践
 feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 5%
@@ -37,7 +37,7 @@ ht-degree: 5%
    * 从Adobe Campaign数据库导出数据(通过工作流，请参阅[此部分](../../workflow/using/about-workflows.md)
    * 创建数据透视表。 可在[此小节](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)中了解详情。
    * 浏览汇总的数据。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。
-   * 使用向导分析数据。 可在[此小节](../../reporting/using/about-descriptive-analysis.md)中了解详情。
+   * 使用助理分析数据。 可在[此小节](../../reporting/using/about-descriptive-analysis.md)中了解详情。
    * 分析大量数据。 可在[此小节](../../reporting/using/about-reports-creation-in-campaign.md)中了解详情。
 
 1. 确定目标人群

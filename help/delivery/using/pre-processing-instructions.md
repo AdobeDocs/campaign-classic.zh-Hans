@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Monitoring
 role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 * **[!DNL value]**：授予投放字段、投放变量和投放中加载的自定义对象的访问权限。 [了解详情](#value)
 * **[!DNL foreach]**：循环作为自定义对象加载的数组。 [了解详情](#foreach)
 
-可以直接从投放向导中测试它们。 它们适用于内容预览以及单击跟踪按钮查看URL列表时。
+可以直接从投放助手中进行测试。 它们适用于内容预览以及单击跟踪按钮查看URL列表时。
 
 ## [!DNL include] {#include}
 
@@ -57,7 +57,7 @@ ht-degree: 1%
   <%@ include option='NmsServer_URL' %>
   ```
 
-  使用投放向导中的个性化按钮获取正确的语法。
+  使用投放助手中的个性化按钮可获取正确的语法。
 
 ## [!DNL value] {#value}
 

@@ -8,7 +8,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 490ebbea-9bdc-453e-8a02-c02b095e55e9
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 9%
@@ -25,7 +25,7 @@ ht-degree: 9%
 
 您可以保存这些结果，并在必要时通过创建结果的描述性分析导出这些结果。 要执行此操作，请在结果窗口中单击相应的链接。
 
-有关描述性分析向导的详细信息，请参阅[本节](../../reporting/using/about-descriptive-analysis.md)。
+有关描述性分析助理的详细信息，请参阅[本节](../../reporting/using/about-descriptive-analysis.md)。
 
 ![](assets/offer_simulation_012.png)
 

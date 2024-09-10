@@ -5,7 +5,7 @@ description: 投放报告
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1461'
 ht-degree: 8%
@@ -67,7 +67,7 @@ ht-degree: 8%
 * **[!UICONTROL Distinct opens for the population reached]** ：估计已打开消息至少一次的目标收件人的数量。 由于必须打开电子邮件才能单击链接，因此会考虑对跟踪URL的点击量。
 * **[!UICONTROL Sum of opens for the population reached]** ：估计目标收件人打开的总数。
 * **[!UICONTROL Clicks on opt-out link]** ：取消订阅链接的点击次数。
-* **[!UICONTROL Clicks on the mirror page link]** ：单击镜像页面链接的次数。 要将其考虑在内，必须在投放向导（跟踪的URL）中定义链接。 请参阅此[页面](../../delivery/using/about-delivery-monitoring.md)。
+* **[!UICONTROL Clicks on the mirror page link]** ：单击镜像页面链接的次数。 要考虑的因素，必须在投放助手（跟踪的URL）中定义链接。 请参阅此[页面](../../delivery/using/about-delivery-monitoring.md)。
 * **[!UICONTROL Estimation of forwards]** ：目标收件人转发的电子邮件数量的估计。 此值计算方式为减去点击电子邮件的不同人员的数量和不同收件人的数量。
 
   >[!NOTE]

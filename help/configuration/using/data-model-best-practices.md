@@ -4,7 +4,7 @@ title: 数据模型最佳实践
 description: 了解如何使用Campaign Classic数据模型
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 1%
@@ -90,7 +90,7 @@ Adobe Campaign默认数据模型在[此文档](../../configuration/using/data-mo
 
 使用方案中的“表空间”属性可以为表指定专用表空间。
 
-安装向导允许您按类型（数据、临时和索引）存储对象。
+安装助手允许您按类型（数据、临时和索引）存储对象。
 
 专用表空间更适合分区、安全规则，并允许灵活流畅的管理、更好的优化和性能。
 

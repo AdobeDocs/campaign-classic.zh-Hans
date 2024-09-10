@@ -4,7 +4,7 @@ title: 调度程序
 description: 了解有关调度程序工作流活动的更多信息
 feature: Workflows
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 10%
@@ -37,7 +37,7 @@ ht-degree: 10%
 
 ![](assets/s_user_segmentation_scheduler.png)
 
-通过向导，可定义活动的频率和有效期。 配置步骤如下：
+借助助手，可定义活动的频度和有效期。 配置步骤如下：
 
 1. 选择激活频率，然后单击&#x200B;**[!UICONTROL Next]**。
 

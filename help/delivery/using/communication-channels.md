@@ -6,10 +6,10 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 62%
 
 借助Adobe Campaign，您可以发送跨渠道营销活动，包括电子邮件、短信、LINE消息、推送通知和直邮，并使用各种专门的[报告](../../reporting/using/delivery-reports.md)衡量其有效性。 这些消息通过投放设计和发送，并且可以针对每个收件人进行个性化。
 
-核心功能包括定位、消息定义和个性化、通信执行和相关的运营报告。主要功能访问点是投放向导。 此接入点可导向 Adobe Campaign 涵盖的多种功能。
+核心功能包括定位、消息定义和个性化、通信执行和相关的运营报告。主要功能接入点是投放助手。此接入点可导向 Adobe Campaign 涵盖的多种功能。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Adobe Campaign提供以下交付渠道：
 根据渠道的不同，投放模式可以是：
 
 * 通过Adobe Campaign直接批量投放（电子邮件渠道的默认模式）。
-* 通过专家操作员进行外部投放，操作员将获得投放向导生成的输出文件（直邮渠道的默认模式）。
+* 通过专家操作员进行外部投放，操作员将获得投放助手生成的输出文件（直邮渠道的默认模式）。
 
 外部帐户是通过&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点配置的。 此配置应仅由专家用户执行。
 

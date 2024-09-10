@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 1%
@@ -49,7 +49,7 @@ ht-degree: 1%
    >对于连接 URL，仅使用以下字符： `[a-z]`、 `[A-Z]`、、 `[0-9]` 短划线 （-） 或句号。
 
 1. 单击 **[!UICONTROL Ok]** 以确认设置：您现在可以开始实例创建过程。
-1. 在 **[!UICONTROL Connection settings]** 窗口中，输入 **内部** 登录名及其密码以连接到 Adobe Campaign 应用程序服务器。 连接后，您可以访问实例创建向导以声明新实例
+1. 在 **[!UICONTROL Connection settings]** 窗口中，输入 **内部** 登录名及其密码以连接到 Adobe Campaign 应用程序服务器。 连接后，您可以访问实例创建助手以声明新实例
 1. 在 **[!UICONTROL Name]** 字段中，输入 **实例名称**。 由于此名称用于生成配置文件 **config-`<instance>`.xml** ，并在命令行参数中用于标识实例，因此请确保选择不含特殊字符的短名称。 例如： **电子营销**。
 
    ![](assets/s_ncs_install_create_instance.png)

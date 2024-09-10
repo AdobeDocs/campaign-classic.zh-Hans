@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2973'
-ht-degree: 34%
+ht-degree: 32%
 
 ---
 
@@ -25,9 +25,9 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 >
 >您可以使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函数导入数据，而无需将其与数据库数据进行映射。 然后，可以通过&#x200B;**[!UICONTROL Read list]**&#x200B;对象在工作流中专门使用该数据。 有关详细信息，请参见[此页面](../../workflow/using/read-list.md)。
 
-导入向导允许您配置导入、定义导入的选项（如数据转换）并启动执行。 它是一系列屏幕，其内容取决于导入类型（简单或多个）和操作员权限。
+导入助手允许您配置导入、定义其选项（如数据转换）并启动执行。 它是一系列屏幕，其内容取决于导入类型（简单或多个）和操作员权限。
 
-创建新导入作业后，将显示导入向导（请参阅[创建导入和导出作业](../../platform/using/creating-import-export-jobs.md)）。
+创建新导入作业后，将显示导入助手（请参阅[创建导入和导出作业](../../platform/using/creating-import-export-jobs.md)）。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 ## 第1步 — 选择导入模板 {#step-1---choosing-the-import-template}
 
-在启动导入向导时，您必须首先选择一个模板。 例如，要配置导入收到简报的收件人，请按照以下步骤操作：
+启动导入助理时，必须首先选择模板。 例如，要配置导入收到简报的收件人，请按照以下步骤操作：
 
 1. 选择&#x200B;**[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**&#x200B;文件夹。
 1. 点击 **New**，然后点击 **Import** 以创建导入模板。
@@ -53,7 +53,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入此导入的名称。 您可以添加描述。
 1. 在相应的字段中选择导入类型。 有两种可能的导入类型：**[!UICONTROL Simple import]**&#x200B;用于仅导入一个文件，而&#x200B;**[!UICONTROL Multiple import]**&#x200B;用于在单次执行中导入多个文件。
 
-   对于多次导入，请从导入向导的第一个屏幕中的&#x200B;**[!UICONTROL Import type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Multiple import]**。
+   对于多次导入，从导入助理第一个屏幕中的&#x200B;**[!UICONTROL Import type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Multiple import]**。
 
    ![](assets/s_ncs_user_import_wizard01_2.png)
 
@@ -61,7 +61,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
    ![](assets/s_ncs_user_import_wizard01_3.png)
 
-   每次添加文件时，都会显示&#x200B;**[!UICONTROL File to import]**&#x200B;向导的屏幕。 请参阅[第2步 — Source文件选择](#step-2---source-file-selection)部分，并按照向导中的步骤将导入选项定义为简单导入。
+   每次添加文件时，都会显示&#x200B;**[!UICONTROL File to import]**&#x200B;助理的屏幕。 请参阅第[步 — 选择Source文件](#step-2---source-file-selection)部分，并按照助手中的步骤将导入选项定义为简单导入。
 
    >[!NOTE]
    >
@@ -175,7 +175,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 ## 第 4 步 – 调解 {#step-4---reconciliation}
 
-利用导入向导的协调步骤，可定义文件数据与数据库中现有数据的协调模式，并设置文件数据与数据库数据之间的优先级规则。 配置窗口如下所示：
+通过import assistant的协调步骤，可定义文件数据与数据库中现有数据的协调模式，并设置文件数据与数据库数据之间的优先级规则。 配置窗口如下所示：
 
 ![](assets/s_ncs_user_import_wizard04_1.png)
 
@@ -277,7 +277,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 ## 第 5 步 - 导入收件人时的附加步骤 {#step-5---additional-step-when-importing-recipients}
 
-导入向导的下一步允许您选择或创建将导入数据的文件夹，自动将导入的收件人映射到（新的或现有的）清单，将收件人订阅映射到服务。
+在import assistant的下一个步骤中，您可以选择或创建数据将导入到的文件夹，自动将导入的收件人映射到（新的或现有的）列表，并将收件人订阅服务。
 
 ![](assets/s_ncs_user_import_wizard05_1.png)
 
@@ -333,7 +333,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 ## 步骤6 — 启动导入 {#step-6---launching-the-import}
 
-向导的最后一步允许您启动数据导入。 为此，请单击&#x200B;**[!UICONTROL Start]**&#x200B;按钮。
+利用该助理的最后一步可以启动数据导入。 为此，请单击&#x200B;**[!UICONTROL Start]**&#x200B;按钮。
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 

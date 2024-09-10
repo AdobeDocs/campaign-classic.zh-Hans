@@ -4,7 +4,7 @@ title: 审核记录
 description: 了解如何使用Campaign审核记录监控实例
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 2%
@@ -78,7 +78,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->默认情况下，**[!UICONTROL Audit logs]**&#x200B;的保留期设置为180天。 有关如何更改保留期的更多信息，请参阅此[页面](../../production/using/database-cleanup-workflow.md#deployment-wizard)。
+>默认情况下，**[!UICONTROL Audit logs]**&#x200B;的保留期设置为180天。 有关如何更改保留期的更多信息，请参阅此[页面](../../production/using/database-cleanup-workflow.md#deployment-assistant)。
 
 ## 启用/禁用审核跟踪 {#enable-disable-audit-trail}
 

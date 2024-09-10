@@ -5,7 +5,7 @@ description: 了解如何开始使用移动应用程序配置
 feature: Push
 role: User, Developer
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 5%
@@ -46,7 +46,7 @@ ht-degree: 5%
 
 安装步骤为：
 
-1. 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;访问包导入向导。
+1. 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;访问包导入助手。
 
    ![](assets/package_ios.png)
 

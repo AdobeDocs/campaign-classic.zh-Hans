@@ -5,7 +5,7 @@ description: 描述性分析入门
 feature: Reporting, Monitoring
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 
 
-为了生成有关数据库中数据的统计信息，请使用专用向导创建描述性分析报告，并根据您的需要调整其内容和演示。
+为了生成关于数据库中数据的统计数据，请使用专用助理创建描述性分析报告，并根据您的需要调整其内容和演示。
 
 这些报告涉及人口，应当仅用于分析小数据量。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ![](assets/reporting_descriptive_quantitative_sample.png)
 
-这些报告通过描述性分析向导创建，该向导基于各种步骤，可让您选择要创建的报告类型以及数据和布局。 报表将显示在最后一步。 如有必要，可以发布报告并与其他操作员共享，以Excel、PDF或OpenDocument格式打印、导出。
+这些报告通过描述性分析助手创建，该助手基于各种步骤，可让您选择要创建的报告类型以及数据和布局。 报表将显示在最后一步。 如有必要，可以发布报告并与其他操作员共享，以Excel、PDF或OpenDocument格式打印、导出。
 
 描述性分析向导不如Adobe Campaign报表强大，但它们可以快速概述数据库内容或数据选择。
 

@@ -5,7 +5,7 @@ description: 了解创建报告的关键步骤
 feature: Reporting, Monitoring
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -28,5 +28,5 @@ ht-degree: 0%
 1. 收集要分析的数据：请参阅[收集要分析的数据](../../reporting/using/collecting-data-to-analyze.md)和[使用上下文](../../reporting/using/using-the-context.md)，
 1. 定义包含活动及其容器的报表内容：请参阅[创建表](../../reporting/using/creating-a-table.md)、[创建图表](../../reporting/using/creating-a-chart.md)和[元素布局](../../reporting/using/element-layout.md)，
 1. 配置显示选项：显示类型、共享报告：请参阅[报告显示上下文](../../reporting/using/configuring-access-to-the-report.md#report-display-context)、[定义条件内容](../../reporting/using/defining-a-conditional-content.md)和[配置对报告的访问权限](../../reporting/using/configuring-access-to-the-report.md)，
-1. Publish报表（发布向导）：请参阅[Publish报表](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report)，
+1. Publish报告（发布助手）：请参阅[Publish报告](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report)，
 1. 转换报告：导出、历史记录、在浏览器中显示：请参阅[对报告的操作](../../reporting/using/actions-on-reports.md)。

@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Email Design, Personalization
 role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 4%
@@ -149,7 +149,7 @@ ht-degree: 4%
 
 * 您可以检查实例配置是否启用公共资源管理。 [了解详情](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* 从投放向导中，您可以导入包含图像的HTML页面，或直接使用HTML编辑器通过&#x200B;**[!UICONTROL Image]**&#x200B;图标插入图像。 [了解详情](defining-the-email-content.md#adding-images)
+* 通过投放助手，您可以导入包含图像的HTML页面，或直接使用HTML编辑器通过&#x200B;**[!UICONTROL Image]**&#x200B;图标插入图像。 [了解详情](defining-the-email-content.md#adding-images)
 
 * 如果未显示图像，请检查图像在服务器上是否可用。 为此，请单击投放中的Source选项卡。 在Web浏览器中查找图像并复制粘贴每个图像的URL。 如果未显示图像，请联系您的IT管理员或提供投放内容的第三方供应商。
 
@@ -157,6 +157,6 @@ ht-degree: 4%
 
 Adobe建议预览您的消息以检查其个性化设置以及收件人如何看到您的投放。
 
-* 在投放向导中，**[!UICONTROL Preview]**&#x200B;子选项卡允许您查看收件人的每个内容的呈现。 将内容的个性化字段和条件元素替换为所选用户档案的相应信息。 [了解详情](defining-the-email-content.md#message-content)
+* 在投放助手中，**[!UICONTROL Preview]**&#x200B;子选项卡允许您查看收件人的每个内容的呈现。 将内容的个性化字段和条件元素替换为所选用户档案的相应信息。 [了解详情](defining-the-email-content.md#message-content)
 
 * 在每次预览期间执行自动反垃圾邮件检查。 在&#x200B;**[!UICONTROL Preview]**&#x200B;子选项卡中，检查[SpamAssassin](spamassassin.md)垃圾邮件评分。  单击&#x200B;**[!UICONTROL More...]**&#x200B;了解有关警告的详细信息。  在执行此操作之前，请确保已在Adobe Campaign应用程序服务器上正确安装和配置SpamAssassin。 [了解详情](../../installation/using/configuring-spamassassin.md)

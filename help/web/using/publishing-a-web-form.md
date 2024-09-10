@@ -5,7 +5,7 @@ description: 发布 Web 窗体
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 1%
@@ -140,7 +140,7 @@ ht-degree: 1%
 
 ### 通过电子邮件投放表单 {#delivering-a-form-via-email}
 
-当您通过电子邮件发送邀请时，可以使用&#x200B;**[!UICONTROL Adobe Campaign Encryption]**&#x200B;选项进行数据协调。 为此，请转到投放向导，并通过添加以下参数将链接调整为表单：
+当您通过电子邮件发送邀请时，可以使用&#x200B;**[!UICONTROL Adobe Campaign Encryption]**&#x200B;选项进行数据协调。 为此，请转到投放助手，并通过添加以下参数将链接调整为表单：
 
 ```
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">

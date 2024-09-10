@@ -5,7 +5,7 @@ description: 了解如何为iOS创建推送通知
 feature: Push
 role: User, Developer, Data Engineer
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 8%
@@ -56,7 +56,7 @@ ht-degree: 8%
 
 1. 您可以添加iOS通知有效负载的subtitle参数的&#x200B;**[!UICONTROL Subtitle]**&#x200B;值。 请参阅[此部分](configuring-the-mobile-application.md)。
 
-1. 在向导的&#x200B;**[!UICONTROL Message content]**&#x200B;部分中输入消息的内容。 个性化字段的使用显示在[关于个性化](about-personalization.md)部分。
+1. 在助理的&#x200B;**[!UICONTROL Message content]**&#x200B;部分输入消息的内容。 个性化字段的使用显示在[关于个性化](about-personalization.md)部分。
 
    ![](assets/nmac_delivery_ios_5.png)
 

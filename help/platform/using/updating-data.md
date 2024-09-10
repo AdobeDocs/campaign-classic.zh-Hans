@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '717'
-ht-degree: 33%
+ht-degree: 23%
 
 ---
 
@@ -32,17 +32,17 @@ ht-degree: 33%
 
 ![](assets/s_ncs_user_action_icon.png)
 
-有两种类型的更新：对一组收件人进行批量更新，以及在两个用户档案之间合并数据。 对于这两种操作，向导可帮助您配置更新工作。
+有两种类型的更新：对一组收件人进行批量更新，以及在两个用户档案之间合并数据。 对于每个操作，都可使用助手配置更新。
 
 ### 大量更新 {#mass-update}
 
-若要进行批量更新，请使用&#x200B;**[!UICONTROL Action > Mass update of selected lines...]**。 向导可帮助您配置并运行更新。
+若要进行批量更新，请使用&#x200B;**[!UICONTROL Action > Mass update of selected lines...]**。 助手可帮助您配置和运行更新。
 
-向导的第一步是指定要更新的字段。
+助理的第一步是指定要更新的字段。
 
-向导的左侧部分显示可用字段列表。 使用&#x200B;**[!UICONTROL Find]**&#x200B;字段对这些字段进行搜索。 按&#x200B;**Enter**&#x200B;键浏览列表。 符合您所输入条件的字段名称会以粗体显示，如下所示。
+助理的左侧部分显示可用字段列表。 使用&#x200B;**[!UICONTROL Find]**&#x200B;字段对这些字段进行搜索。 按&#x200B;**Enter**&#x200B;键浏览列表。 符合您所输入条件的字段名称会以粗体显示，如下所示。
 
-双击要更新的字段，从而在向导的右侧显示它们。
+双击要更新的字段以在助理的右侧部分显示它们。
 
 ![](assets/s_ncs_user_update_wizard01_1.png)
 
@@ -60,19 +60,19 @@ ht-degree: 33%
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
-关闭此窗口并单击&#x200B;**[!UICONTROL Next]**&#x200B;以显示第二个更新向导步骤。 在此步骤中，您可以通过单击&#x200B;**[!UICONTROL Start]**&#x200B;来启动更新。
+关闭此窗口并单击&#x200B;**[!UICONTROL Next]**&#x200B;以显示第二个更新助理步骤。 在此步骤中，您可以通过单击&#x200B;**[!UICONTROL Start]**&#x200B;来启动更新。
 
 ![](assets/s_ncs_user_update_wizard01_4.png)
 
-有关更新执行的信息会显示在向导的上部。
+有关更新执行的信息显示在助理的上部。
 
 **[!UICONTROL Stop]**&#x200B;允许您取消更新，但某些记录可能已更新，停止进程将不会取消这些更新。 进度条会显示目前操作的进度。
 
 ### 合并数据 {#merge-data}
 
-选择&#x200B;**[!UICONTROL Merge selected lines...]**&#x200B;以启动两个收件人配置文件的合并。 在选择选项之前，必须选择要合并的配置文件。 使用向导来配置和开始合并操作。
+选择&#x200B;**[!UICONTROL Merge selected lines...]**&#x200B;以启动两个收件人配置文件的合并。 在选择选项之前，必须选择要合并的配置文件。 可使用助手配置和启动合并。
 
-向导显示在一个或其他源配置文件中完成的每个字段要检索的值。 如果要合并的用户档案中的一个或多个字段具有不同的值，则它们将显示在&#x200B;**[!UICONTROL List of conflicts]**&#x200B;部分中。 您可使用列表下方的单选按钮来选择默认的用户档案，如以下示例所示：
+该助理显示要检索的用于在一个或其它源配置文件中完成的每个字段的值。 如果要合并的用户档案中的一个或多个字段具有不同的值，则它们将显示在&#x200B;**[!UICONTROL List of conflicts]**&#x200B;部分中。 您可使用列表下方的单选按钮来选择默认的用户档案，如以下示例所示：
 
 ![](assets/s_ncs_user_merge_wizard01_1.png)
 
@@ -95,7 +95,7 @@ ht-degree: 33%
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   有关如何配置导出向导的详细信息，请参阅[此部分](../../platform/using/executing-export-jobs.md)。
+   有关如何配置导出助理的详细信息，请参阅[此部分](../../platform/using/executing-export-jobs.md)。
 
 ## 订阅服务 {#subscribing-to-a-service}
 

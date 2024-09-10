@@ -6,7 +6,7 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 * 如果您使用的收件人表不是Adobe Campaign提供的表，
 * 如果您配置的筛选维度与“目标映射”屏幕上的标准定向维度不同。
 
-目标映射创建向导将帮助您创建使用自定义表所需的所有架构。
+目标映射创建助手将帮助您创建使用自定义表所需的所有架构。
 
 ## 创建和配置链接到自定义表的架构 {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
@@ -83,7 +83,7 @@ ht-degree: 2%
    ```
 
 1. 单击&#x200B;**[!UICONTROL Administration > Campaign management > Target mappings]**&#x200B;节点。
-1. 单击&#x200B;**新建**&#x200B;按钮以打开目标映射创建向导。
+1. 单击&#x200B;**新建**&#x200B;按钮以打开目标映射创建助手。
 1. 输入&#x200B;**标签**&#x200B;字段并选择您刚刚在&#x200B;**定向维度**&#x200B;字段中创建的架构。
 
    ![](assets/mapping_diffusion_wizard_1.png)
@@ -110,9 +110,9 @@ ht-degree: 2%
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. 单击&#x200B;**保存**&#x200B;按钮关闭向导。
+1. 单击&#x200B;**保存**&#x200B;按钮关闭助手。
 
-   向导使用启动架构创建使新目标映射工作所需的所有其他架构。
+   该助理使用启动模式来创建使新目标映射工作所需的所有其他模式。
 
    ![](assets/mapping_schema_list.png)
 

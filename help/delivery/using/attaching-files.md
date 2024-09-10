@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Email
 role: User
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
 
-您还可以直接将文件拖放到投放&#x200B;**[!UICONTROL Attachments]**&#x200B;字段中，或使用投放向导工具栏中的&#x200B;**[!UICONTROL Attach]**&#x200B;图标，
+您还可以直接将文件拖放到投放&#x200B;**[!UICONTROL Attachments]**&#x200B;字段中，或使用投放助理工具栏中的&#x200B;**[!UICONTROL Attach]**&#x200B;图标，
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 

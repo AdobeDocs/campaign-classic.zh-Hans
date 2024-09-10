@@ -6,7 +6,7 @@ feature: Custom Resources
 role: Data Engineer, Developer
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 1%
@@ -29,13 +29,13 @@ ht-degree: 1%
 
 ## 视图属性 {#the-view-attribute}
 
-Source架构接受&#x200B;**srcSchema**&#x200B;根元素的&#x200B;**view**&#x200B;属性。 在自定义表中处理Adobe Campaign时，必须使用该字段。 **view=&quot;true&quot;**&#x200B;属性告知数据库结构更新向导忽略此架构。 因此，禁止应用程序将表、其列及其索引与相应的模式同步。
+Source架构接受&#x200B;**srcSchema**&#x200B;根元素的&#x200B;**view**&#x200B;属性。 在自定义表中处理Adobe Campaign时，必须使用该字段。 **view=&quot;true&quot;**&#x200B;属性告知数据库结构更新助手忽略此架构。 因此，禁止应用程序将表、其列及其索引与相应的模式同步。
 
 当此属性设置为&#x200B;**true**&#x200B;时，架构仅用于生成SQL查询以访问此表的数据。
 
 ## 表和列的名称 {#names-of-tables-and-columns}
 
-当表由表更新向导创建时，会根据相应架构和属性的名称自动生成表和列的名称。 但是，可以通过输入以下属性来强制使用SQL名称：
+当通过表更新助手创建表时，会根据相应架构和属性的名称自动生成表和列的名称。 但是，可以通过输入以下属性来强制使用SQL名称：
 
 * 架构的主元素中的&#x200B;**sqltable**，要指定表，
 * 每个属性中的&#x200B;**sqlname**，用于指定列。

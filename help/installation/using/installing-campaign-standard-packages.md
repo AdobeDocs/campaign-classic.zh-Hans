@@ -5,7 +5,7 @@ description: 了解如何安装Campaign内置软件包
 feature: Installation, Application Settings
 badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 3%
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 要安装内置软件包，请执行以下操作：
 
-1. 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;访问包导入向导。
+1. 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;访问包导入助手。
 1. 选择 **[!UICONTROL Install a standard package]**。
 1. 在包列表中，选中要安装的包。
    >[!NOTE]
@@ -242,7 +242,7 @@ ht-degree: 3%
 
 您必须安装投放渠道（电子邮件、移动设备渠道、移动设备应用程序渠道、LINE等） 安装事务性消息（消息中心包）之前。 如果您已启动仅用于电子邮件的消息中心项目，并且以后需要添加新渠道，则必须执行以下步骤：
 
-1. 使用包导入向导(**[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安装新渠道，例如&#x200B;**移动渠道**。
+1. 使用包导入助手(**[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安装新频道，例如&#x200B;**Mobile频道**。
 1. 导入文件( **[!UICONTROL Tools > Advanced > Import package > File]**)，然后选择：
 
    ```

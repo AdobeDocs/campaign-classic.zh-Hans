@@ -4,7 +4,7 @@ title: 定位数据
 description: 了解有关在工作流中定位数据的更多信息
 feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 4%
@@ -47,7 +47,7 @@ ht-degree: 4%
 
 子元素将显示在其所映射到的集合的子树中。
 
-收藏集显示在&#x200B;**[!UICONTROL Collections]**&#x200B;子选项卡中。 您可以通过单击所选收藏集的&#x200B;**[!UICONTROL Detail]**&#x200B;图标来筛选收集的元素。 过滤器向导允许您选择收集的数据并指定要应用于集合中数据的过滤条件。
+收藏集显示在&#x200B;**[!UICONTROL Collections]**&#x200B;子选项卡中。 您可以通过单击所选收藏集的&#x200B;**[!UICONTROL Detail]**&#x200B;图标来筛选收集的元素。 过滤器助手允许您选择收集的数据并指定要应用于收集中数据的过滤条件。
 
 ![](assets/query_add_columns_collection.png)
 

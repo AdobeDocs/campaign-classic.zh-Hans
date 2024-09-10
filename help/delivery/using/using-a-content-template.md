@@ -5,7 +5,7 @@ description: 使用内容模板
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 ## 通过内容管理创建投放 {#creating-a-delivery-via-content-management}
 
-考虑到使用输入字段输入内容，您可以在投放中引用内容模板。 在投放向导中添加了一个附加选项卡，用于定义投放内容。
+考虑到使用输入字段输入内容，您可以在投放中引用内容模板。 向投放助手添加了其他选项卡，用于定义投放内容。
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-有关详细信息，请参阅完整的实施示例：[在投放向导](use-case-creating-content-management.md#creating-content-in-the-delivery-wizard)中创建内容。
+有关更多信息，请参阅完整的实施示例：[在投放助理中创建内容](use-case-creating-content-management.md#creating-content-in-the-delivery-assistant)。
 
 ## 创建内容实例 {#creating-a-content-instance}
 

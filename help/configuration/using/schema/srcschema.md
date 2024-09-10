@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 1%
@@ -57,7 +57,7 @@ created(datetime)、createdBy-id(long)、desc(string)、entitySchema(string)、e
 * **desc （字符串）**：架构描述
 * **entitySchema （字符串）**：语法和审批所基于的基本架构(对于Adobe Campaign，默认为：xtk：srcSchema)。 保存当前架构时，Adobe Campaign将批准其语法，并在@xtkschema属性中声明架构。
 * **extendedSchema (string)**：接收当前架构扩展所基于的现成架构的名称。 格式为“namespace：name”。
-* **img （字符串）**：链接到架构的图标（可以在架构创建向导中定义）。
+* **img （字符串）**：链接到架构的图标（可以在架构创建助手中定义）。
 * **标签（字符串）**：架构标签。
 * **labelSingular （字符串）**：在界面中显示的标签（单数）。
 * **lastModified (datetime)**：此属性提供有关上次修改的日期和时间的信息。 它具有“日期时间”表单。 显示的值取自服务器。 时间以UTC格式显示。
@@ -73,7 +73,7 @@ created(datetime)、createdBy-id(long)、desc(string)、entitySchema(string)、e
 * **名称（字符串）**：唯一的架构名称。
 * **命名空间（字符串）**：架构的命名空间（默认： nms、xtk、nl）。 在为项目创建新架构时，我们建议您使用专用命名空间。
 * **useRecycleBin （布尔值）**：激活应用程序中的垃圾桶功能。 删除的记录将在最终删除之前放入垃圾桶中。 此函数仅在“交付”模式下可用。
-* **视图（布尔值）**：如果激活(@view=&quot;true&quot;)，则架构将用作视图。 数据库结构更新向导不考虑架构。 此选项主要用于引用外部表。
+* **视图（布尔值）**：如果激活(@view=&quot;true&quot;)，则架构将用作视图。 数据库结构更新助手不会将模式考虑在内。 此选项主要用于引用外部表。
 * **xtkschema （字符串）**：定义架构语法的架构的名称（默认为xtk：srcSchema）。
 
 ## 示例 {#examples-11}

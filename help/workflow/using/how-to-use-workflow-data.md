@@ -4,7 +4,7 @@ title: 如何使用工作流数据
 description: 了解如何使用工作流数据
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Adobe Campaign数据库和现有列表的数据可以使用两个专用活动进
 
 ![](assets/s_advuser_add_data_postal_mail.png)
 
-除了常规个性化字段之外，您还可以将个性化字段从工作流阶段添加到投放内容。 工作流活动中定义的其他数据可在投放向导中保留并可访问，如以下示例所示，用于在直邮投放框架内定义输出文件的名称：
+除了常规个性化字段之外，您还可以将个性化字段从工作流阶段添加到投放内容。 工作流活动中定义的其他数据可在投放助手中保留并可访问，如以下示例所示，用于在直邮投放框架内定义输出文件的名称：
 
 ![](assets/s_advuser_using_additional_data.png)
 

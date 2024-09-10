@@ -5,7 +5,7 @@ description: 了解如何发布、跟踪和使用调查中收集的数据
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 2%
@@ -94,7 +94,7 @@ ht-degree: 2%
 
    然后输入要导出的信息和存储文件。
 
-   您可以在导出向导中配置输出文件的内容和格式。
+   您可以在导出助理中配置输出文件的内容和格式。
 
    这允许您：
 

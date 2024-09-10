@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 1. 根据您使用的操作系统安装用于SAP HANA的ODBC驱动程序：
 
    * 适用于Linux的&#x200B;**hdb_client_linux.tgz**。 解压后，启动hdbinst命令并按照说明完成驱动程序的安装。
-   * 适用于Windows的&#x200B;**hdb_client_windows.zip**。 解压缩文件并启动可执行文件： **hdbinst.exe**。 按照向导说明完成驱动程序的安装。
+   * 适用于Windows的&#x200B;**hdb_client_windows.zip**。 解压缩文件并启动可执行文件： **hdbinst.exe**。 按照助理说明完成驱动程序的安装。
 
 1. 配置ODBC驱动程序。 配置可以在标准文件中执行：/etc/odbc.ini用于常规参数，/etc/odbcinst.ini用于声明驱动程序。
 

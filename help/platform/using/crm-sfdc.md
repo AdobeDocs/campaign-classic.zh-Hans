@@ -4,7 +4,7 @@ title: Campaign - Salesforce CRM连接器
 description: 了解如何关联Campaign和Salesforce
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
    * **[!UICONTROL API version]**
 选择API的版本。
-1. 运行配置向导以生成可用的CRM表：配置向导允许您收集表并创建匹配的架构。
+1. 运行Configuration Assistant以生成可用的CRM表：Configuration Assistant允许您收集表并创建匹配的架构。
 
    ![](assets/crm_connectors_sfdc_launch.png)
 

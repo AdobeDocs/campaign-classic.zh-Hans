@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Channel Configuration
 role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 11%
@@ -55,7 +55,7 @@ ht-degree: 11%
 
 完成后，单击&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;以启动邮件的投放。
 
-然后，您可以关闭投放向导，并从&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中跟踪投放的执行情况，可通过此投放的详细信息或投放列表访问该选项卡。
+然后，您可以关闭投放助手，并从&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中跟踪投放的执行情况，可通过此投放的详细信息或投放列表访问该选项卡。
 
 发送消息后，您可以监控和跟踪投放。 有关更多信息，请参阅一下章节。
 

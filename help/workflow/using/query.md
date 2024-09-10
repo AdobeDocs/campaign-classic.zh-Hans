@@ -4,7 +4,7 @@ title: 查询
 description: 了解有关查询工作流活动的更多信息
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
 
    ![](assets/query_temporary_table.png)
 
-1. 使用向导定义群体。 要输入的字段可以因目标类型而异。 您可以使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡预览符合当前条件的目标群体。
+1. 使用助理定义群体。 要输入的字段可以因目标类型而异。 您可以使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡预览符合当前条件的目标群体。
 
    有关创建和使用筛选器或查询的详细信息，请参阅此[部分](../../platform/using/filtering-options.md)。
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 要添加链接到目标群体的信息集合，请执行以下操作：
 
-1. 在向导的第一步，选择&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;选项：
+1. 在助理的第一步，选择&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;选项：
 1. 选择包含要收集信息的表，然后单击&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/wf_add_data_linked_table.png)

@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->要定位其他表（匿名选件的访客表或特定的收件人表），您需要使用目标映射向导创建环境。 有关详细信息，请参阅[创建优惠环境](#creating-an-offer-environment)。
+>要定位其他表（匿名选件的访客表或特定的收件人表），您需要使用目标映射助手创建环境。 有关详细信息，请参阅[创建优惠环境](#creating-an-offer-environment)。
 
 ![](assets/offer_environments_overview_002.png)
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;以进入向导中的下一个屏幕，选中&#x200B;**[!UICONTROL Generate a storage schema for propositions]**&#x200B;框并单击&#x200B;**[!UICONTROL Save]**。
+1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;以进入助理中的下一个屏幕，选中&#x200B;**[!UICONTROL Generate a storage schema for propositions]**&#x200B;框并单击&#x200B;**[!UICONTROL Save]**。
 
    ![](assets/offer_env_anonymous_002.png)
 

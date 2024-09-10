@@ -6,7 +6,7 @@ feature: Configuration
 role: Data Engineer, Developer
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1707'
 ht-degree: 2%
@@ -57,7 +57,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 
   ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
-* 向导
+* 助理
 
   此形式包括按特定顺序排序的多个浮动屏幕。 用户从一个屏幕导航到下一个屏幕。 [了解更多信息](form-structure.md#wizards)。
 

@@ -4,7 +4,7 @@ title: 跨渠道投放
 description: 了解关于跨渠道投放的更多信息
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 7%
@@ -49,7 +49,7 @@ ht-degree: 7%
 1. 将&#x200B;**[!UICONTROL Split]**&#x200B;活动添加到您的工作流中，以划分具有手机号码的收件人和具有电子邮件地址的收件人。
 1. 在&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中，为每个目标选择一个投放。
 
-   通过双击工作流中的投放活动，使用与使用经典投放向导相同的方式创建投放。 有关详细信息，请参见此 [ 页面](../../delivery/using/about-email-channel.md)。
+   通过双击工作流中的投放活动，以与使用经典投放助手相同的方式创建投放。 有关详细信息，请参见此 [ 页面](../../delivery/using/about-email-channel.md)。
 
    ![](assets/cross_channel_delivery_3.png)
 

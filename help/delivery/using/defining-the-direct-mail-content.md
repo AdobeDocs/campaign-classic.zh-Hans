@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Direct Mail
 role: User
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 10%
@@ -27,7 +27,7 @@ ht-degree: 10%
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
-利用此链接，可访问提取向导并定义要导出到输出文件中的信息（列）。
+利用此链接，可访问提取助理并定义要导出到输出文件中的信息（列）。
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
@@ -35,4 +35,4 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->此向导包含导出向导的步骤，详情请参阅[快速入门](../../platform/using/executing-export-jobs.md)部分。
+>此助理包括导出助理的步骤，详见[快速入门](../../platform/using/executing-export-jobs.md)部分。

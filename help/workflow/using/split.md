@@ -4,7 +4,7 @@ title: 拆分
 description: 了解有关拆分工作流活动的更多信息
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 3%
@@ -44,7 +44,7 @@ ht-degree: 3%
 
 1. 您可以指定从目标提取的最大记录数以创建子集。 为此，请选中&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;选项并单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接。
 
-   向导允许您为此子集的记录选择模式。 可以在[限制子集记录数](#limiting-the-number-of-subset-records)中找到这些步骤。
+   借助助手，可选择此子集记录的选择模式。 可以在[限制子集记录数](#limiting-the-number-of-subset-records)中找到这些步骤。
 
    ![](assets/s_user_segmentation_partage4.png)
 

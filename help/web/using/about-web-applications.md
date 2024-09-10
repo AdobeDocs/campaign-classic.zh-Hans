@@ -5,7 +5,7 @@ description: 创建和共享动态Web应用程序、登陆页和调查
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 20%
@@ -94,7 +94,7 @@ Web应用程序存储在Adobe Campaign树的&#x200B;**[!UICONTROL Resources > On
 
 您可以通过Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Templates > Web Application templates]**&#x200B;节点创建新模板。
 
-创建向导允许您选择要启用的选项，如下所示。
+创建助手允许您选择要启用的选项，如下所示。
 
 ![](assets/webapp_create_template.png)
 

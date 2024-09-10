@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1979'
 ht-degree: 1%
@@ -204,7 +204,7 @@ Adobe Campaign中有以下过滤器类型：
 
 您可以通过保存高级筛选器来创建&#x200B;**应用程序筛选器**：可通过在任何列表中右键单击或通过位于列表上方的&#x200B;**[!UICONTROL Filters]**&#x200B;按钮重复使用该筛选器。
 
-也可以通过目标选择阶段中的投放向导直接访问这些筛选器（有关创建投放的更多信息，请参阅[此章节](../../delivery/using/creating-an-email-delivery.md)）。 要创建应用程序过滤器，您可以：
+在目标选择阶段，也可以通过投放助手直接访问这些过滤器（有关创建投放的更多信息，请参阅[此章节](../../delivery/using/creating-an-email-delivery.md)）。 要创建应用程序过滤器，您可以：
 
 * 将高级筛选器转换为应用程序筛选器。 要执行此操作，请在关闭高级筛选器编辑器之前单击&#x200B;**[!UICONTROL Save]**。
 
@@ -376,6 +376,6 @@ Adobe Campaign中有以下过滤器类型：
 
   如果要阻止用户覆盖此筛选器，请选择&#x200B;**[!UICONTROL Do not restrict the filter]**&#x200B;选项。
 
-  为投放向导中提供的“投放的收件人”和“属于文件夹的投放的收件人”过滤器启用此选项，这些过滤器无法过载。
+  为投放助手中提供的、无法重载的“投放的收件人”和“属于文件夹的投放的收件人”过滤器启用此选项。
 
   ![](assets/s_ncs_user_filter_advanced_param.png)

@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 0654046f7e8271377e38b21a7b2e48f3859353f0
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1243'
 ht-degree: 1%
@@ -417,7 +417,7 @@ function sqlGetMemo(strSql)
 以下示例涉及Microsoft SQL Server 2005。 如果您使用的是其他版本，请与数据库管理员联系以了解有关维护过程的信息。
 
 1. 首先，使用具有管理员权限的登录名连接到Microsoft SQL Server Management Studio。
-1. 转到&#x200B;**[!UICONTROL Management > Maintenance Plans]**&#x200B;文件夹，右键单击该文件夹并选择&#x200B;**[!UICONTROL Maintenance Plan Wizard]**。
+1. 转到&#x200B;**[!UICONTROL Management > Maintenance Plans]**&#x200B;文件夹，右键单击该文件夹并选择&#x200B;**[!UICONTROL Maintenance Plan Assistant]**。
 1. 当第一页出现时，单击&#x200B;**[!UICONTROL Next]**。
 1. 选择要创建的维护计划类型（每个任务有单独的时间表或整个计划的单个时间表），然后单击&#x200B;**[!UICONTROL Change...]**&#x200B;按钮。
 1. 在&#x200B;**[!UICONTROL Job schedule properties]**&#x200B;窗口中，选择所需的执行设置并单击&#x200B;**[!UICONTROL OK]**，然后单击&#x200B;**[!UICONTROL Next]**。

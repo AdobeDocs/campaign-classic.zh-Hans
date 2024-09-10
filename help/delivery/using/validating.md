@@ -5,7 +5,7 @@ description: 验证
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Direct Mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 1%
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
-然后，您可以关闭向导，并通过&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡（可通过投放详细信息访问）查看投放日志。
+然后，您可以关闭此助手，并通过&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡查看投放日志，可通过投放详细信息访问选项卡。
 
 您可以从投放属性的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡配置投放日志检索模式。
 

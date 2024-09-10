@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1662'
 ht-degree: 8%
@@ -138,7 +138,7 @@ ht-degree: 8%
 
 1. 确保已按照[定义特定验证目标](steps-defining-the-target-population.md#defining-a-specific-proof-target)中所述配置验证目标。
 
-1. 单击投放向导顶部栏上的&#x200B;**[!UICONTROL Send a proof]**。
+1. 单击投放助理顶部栏上的&#x200B;**[!UICONTROL Send a proof]**。
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
 
@@ -171,7 +171,7 @@ ht-degree: 8%
 
 * 第一个选项可让您保留双重验证。
 * 以下两个选项均可让您将处于阻止列表状态的收件人和地址保留在隔离状态。 在[自定义排除设置](steps-defining-the-target-population.md#customizing-exclusion-settings)中查看主目标的这些选项的说明。 与默认情况下排除这些地址的投放目标不同，默认情况下会为验证目标保留这些地址。
-* 使用&#x200B;**[!UICONTROL Keep the delivery code for the proof]**&#x200B;选项，您可以为验证提供与其相关投放定义的相同投放代码。 此代码在投放向导的第一步中指定。
+* 使用&#x200B;**[!UICONTROL Keep the delivery code for the proof]**&#x200B;选项，您可以为验证提供与其相关投放定义的相同投放代码。 此代码在投放助手的第一步中指定。
 * 默认情况下，验证的主题的前缀为“Proof #”，其中#是验证的编号。 您可以在&#x200B;**[!UICONTROL Label prefix]**&#x200B;字段中更改此前缀。
 
 ## 具有类型的验证过程 {#validation-process-with-typologies}

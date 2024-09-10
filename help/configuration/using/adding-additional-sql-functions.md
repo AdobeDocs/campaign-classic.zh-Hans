@@ -5,7 +5,7 @@ description: 了解如何定义其他SQL函数
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Adobe Campaign允许用户定义&#x200B;**他们自己的函数**，这些函数
 
 要添加的函数位于XML格式&#x200B;**的**&quot;package&quot;文件中，其结构详见以下段落。
 
-要从控制台安装包，请从菜单中选择&#x200B;**工具/高级/导入包**&#x200B;选项，然后选择&#x200B;**[!UICONTROL Install from file]**，然后按照导入向导中的说明操作。
+要从控制台安装包，请从菜单中选择&#x200B;**工具/高级/导入包**&#x200B;选项，然后选择&#x200B;**[!UICONTROL Install from file]**，然后按照导入助手中的说明操作。
 
 >[!IMPORTANT]
 >

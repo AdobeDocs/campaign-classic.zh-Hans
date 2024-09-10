@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 5%
@@ -76,7 +76,7 @@ ht-degree: 5%
 >
 >如果未为投放启用跟踪，则不会显示此选项卡。
 
-跟踪配置在投放向导的相应阶段执行。 请参阅[如何配置跟踪的链接](how-to-configure-tracked-links.md)。
+跟踪配置在投放助理的相应阶段执行。 请参阅[如何配置跟踪的链接](how-to-configure-tracked-links.md)。
 
 **[!UICONTROL Tracking]**&#x200B;数据在投放报告中被解释。 请参阅[此小节](../../reporting/using/delivery-reports.md)。
 

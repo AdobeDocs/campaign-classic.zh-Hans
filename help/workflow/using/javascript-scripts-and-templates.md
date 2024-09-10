@@ -4,7 +4,7 @@ title: JavaScript 脚本和模板
 description: JavaScript 脚本和模板
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 2%
@@ -59,7 +59,7 @@ logInfo("Start date: " + task.creationDate)
 
 **[!UICONTROL logInfo(message)]**&#x200B;函数在日志中插入消息。
 
-单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭创建向导，然后使用工作流列表右上角的操作按钮启动工作流。 在执行结束时，请查阅日志。 您应该会看到两条对应于脚本的消息：一条显示工作流的标签，另一条显示激活脚本的日期。
+单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭创建助手，然后使用工作流列表右上角的操作按钮启动工作流。 在执行结束时，请查阅日志。 您应该会看到两条对应于脚本的消息：一条显示工作流的标签，另一条显示激活脚本的日期。
 
 ## 变量 {#variables}
 

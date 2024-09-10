@@ -8,7 +8,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2097'
 ht-degree: 1%
@@ -197,7 +197,7 @@ Neobank公司希望为两个不同的目标创建营销选件。 它希望为其
 
 ### 为匿名联系人创建环境 {#creating-an-environment-for-anonymous-contacts}
 
-1. 通过投放映射向导（**访客**&#x200B;映射）为匿名入站交互创建优惠环境。 有关详细信息，请参阅[创建优惠环境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
+1. 通过投放映射助手（**访客**&#x200B;映射）为匿名入站交互创建优惠环境。 有关详细信息，请参阅[创建优惠环境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
 
    ![](assets/offer_env_anonymous_003.png)
 

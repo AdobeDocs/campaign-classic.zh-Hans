@@ -5,7 +5,7 @@ description: 更新数据库结构
 feature: Configuration
 role: Data Engineer, Developer
 exl-id: 6c1e061b-8636-4285-8d83-97474544d252
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 8%
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 
 
-要应用对架构所做的修改，请启动数据库更新向导。 可通过&#x200B;**[!UICONTROL Tools > Advanced > Update database structure]**&#x200B;访问此向导。 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。
+要应用对架构所做的修改，请启动数据库更新助手。 可以通过&#x200B;**[!UICONTROL Tools > Advanced > Update database structure]**&#x200B;访问此助手。 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。
 
 ![](assets/d_ncs_integration_schema_update.png)
 

@@ -5,7 +5,7 @@ description: 了解如何使用Adobe Campaign中的筛选规则
 role: User, Data Engineer
 feature: Typology Rules, Campaigns
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 2%
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-选择目标后，这些特定分类可以链接到投放：在投放向导中，单击&#x200B;**[!UICONTROL To]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Exclusions]**&#x200B;选项卡。
+选择目标后，这些特定分类可以链接到投放：在投放助手中，单击&#x200B;**[!UICONTROL To]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Exclusions]**&#x200B;选项卡。
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 

@@ -5,7 +5,7 @@ description: 向 Web 窗体添加字段
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 在Web窗体中，字段使用户能够输入信息并选择选项。 Web窗体可以提供输入字段、选择字段、静态和高级内容（字幕、订阅等）。
 
-使用向导添加字段时，将根据所选字段或存储变量自动检测字段类型。 您可以使用&#x200B;**[!UICONTROL General]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Type]**&#x200B;下拉框对其进行编辑。
+使用助理添加字段时，将根据所选字段或存储变量自动检测字段类型。 您可以使用&#x200B;**[!UICONTROL General]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Type]**&#x200B;下拉框对其进行编辑。
 
 ![](assets/s_ncs_admin_webform_change_type.png)
 
@@ -43,9 +43,9 @@ ht-degree: 0%
 >
 >默认情况下，该字段会插入到当前树的底部。 使用工具栏中的箭头可将其上下移动。
 
-## 字段创建向导 {#field-creation-wizard}
+## 字段创建助手 {#field-creation-assistant}
 
-对于表单的每个页面，您可以通过工具栏中的第一个按钮添加字段。 为此，请转到&#x200B;**[!UICONTROL Add using the wizard]**&#x200B;菜单。
+对于表单的每个页面，您可以通过工具栏中的第一个按钮添加字段。 为此，请转到&#x200B;**[!UICONTROL Add using the assistant]**&#x200B;菜单。
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

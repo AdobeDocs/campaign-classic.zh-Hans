@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 0cf7f249f366a6ef0e9bd0326ec14131fcf7dc18
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 8%
@@ -49,7 +49,7 @@ ht-degree: 8%
 我们将创建一封电子邮件，其中首先插入收件人的姓名，然后在邮件正文中添加用户档案创建日期。 操作步骤：
 
 1. 创建新投放或打开现有的电子邮件类型投放。
-1. 在投放向导中，单击&#x200B;**[!UICONTROL Subject]**&#x200B;编辑邮件的主题并输入主题。
+1. 在传递助理中，单击&#x200B;**[!UICONTROL Subject]**&#x200B;编辑邮件的主题并输入主题。
 1. 输入“ **[!UICONTROL Special offer for]**”并使用工具栏中的按钮插入个性化字段。 选择 **[!UICONTROL Recipients>Title]**。
 
    ![](assets/s_ncs_user_insert_custom_field.png)

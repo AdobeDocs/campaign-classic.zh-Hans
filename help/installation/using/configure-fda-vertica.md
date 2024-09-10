@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
-source-git-commit: fcc42e84817277ad46218165b5acef370747c1ca
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 ## Windows上的[!DNL Vertica Analytics] {#vertica-windows}
 
-1. 下载适用于Windows](https://www.vertica.com/download/vertica/client-drivers/)的[ODBC驱动程序。 要安装Windows驱动程序，您需要启用.NET Framework 3.5，否则安装向导将尝试自动启用并下载它。
+1. 下载适用于Windows](https://www.vertica.com/download/vertica/client-drivers/)的[ODBC驱动程序。 要安装Windows驱动程序，您需要启用.NET Framework 3.5，否则安装助理将尝试自动启用并下载该驱动程序。
 
 1. 在Windows中配置ODBC驱动程序。 有关详细信息，请参见[此页面](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 

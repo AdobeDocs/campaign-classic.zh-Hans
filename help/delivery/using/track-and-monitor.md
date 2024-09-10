@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Monitoring, Reporting
 role: User
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 2%
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 为了更好地了解收件人的行为，您可以跟踪他们对投放的反应：接收、打开、单击链接、取消订阅等。 在Campaign Classic中，此信息显示在投放所定向的收件人的Tracking选项卡和投放的Tracking选项卡中。
 
-**提示**：默认情况下启用邮件跟踪。 要配置URL，请选择投放向导下方的显示URL选项。 对于消息的每个URL，您可以选择是否激活跟踪。
+**提示**：默认情况下启用邮件跟踪。 要配置URL，请选择投放助手下方的显示URL选项。 对于消息的每个URL，您可以选择是否激活跟踪。
 
 有关详细信息，请参阅[配置跟踪](how-to-configure-tracked-links.md)部分和[跟踪指示器](../../reporting/using/delivery-reports.md#tracking-indicators)说明。
 

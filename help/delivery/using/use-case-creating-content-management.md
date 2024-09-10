@@ -5,7 +5,7 @@ description: "用例：创建内容管理"
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -382,7 +382,7 @@ ht-degree: 0%
 >
 >有关创建内容的详细信息，请参阅[使用内容模板](using-a-content-template.md)。
 
-### 在投放向导中创建内容 {#creating-content-in-the-delivery-wizard}
+### 在投放助手中创建内容 {#creating-content-in-the-delivery-assistant}
 
 要直接在投放中创建内容，请应用以下步骤：
 
@@ -390,7 +390,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_content_in_delivery.png)
 
-   向投放向导中添加了一个附加选项卡，以便通过内容管理表单定义内容。
+   为了通过内容管理表单定义内容，还向投放助手添加了其他选项卡。
 
 1. 输入新闻稿的变量信息。
 

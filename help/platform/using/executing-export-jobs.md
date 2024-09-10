@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 29%
@@ -23,13 +23,13 @@ ht-degree: 29%
 
 例如，使用营销活动跟踪数据（跟踪历史记录等）会很有用 在电子表格中。 输出数据可以是 txt、CSV、TAB 或 XML 格式。
 
-导出向导允许您配置导出、定义其选项并启动执行。 它是一系列屏幕，其内容取决于导出类型（简单或多个）和操作员的权限。
+导出助手允许您配置导出、定义其选项并启动执行。 它是一系列屏幕，其内容取决于导出类型（简单或多个）和操作员的权限。
 
-创建新导出作业后，将显示导出向导（请参阅[创建导入和导出作业](../../platform/using/creating-import-export-jobs.md)）。
+创建新导出作业后，将显示导出助手（请参阅[创建导入和导出作业](../../platform/using/creating-import-export-jobs.md)）。
 
 ## 第1步 — 选择导出模板 {#step-1---choosing-the-export-template}
 
-在启动导出向导时，必须首先选择一个模板。 例如，要配置最近注册的收件人的导出，请按照以下步骤操作：
+启动导出助理时，必须首先选择模板。 例如，要配置最近注册的收件人的导出，请按照以下步骤操作：
 
 1. 选择&#x200B;**[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**&#x200B;文件夹。
 1. 点击 **New**，然后点击 **Export** 以创建导出模板。
@@ -95,7 +95,7 @@ ht-degree: 29%
 
 ## 第 6 步 - 筛选条件 {#step-6---filter-conditions-}
 
-可添加筛选条件以避免导出所有数据。 此筛选的配置与投放向导中的收件人定位相同。 请参见[此页面](../../delivery/using/steps-defining-the-target-population.md)。
+可添加筛选条件以避免导出所有数据。 此筛选的配置与投放助手中的收件人定位相同。 请参见[此页面](../../delivery/using/steps-defining-the-target-population.md)。
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
@@ -125,7 +125,7 @@ ht-degree: 29%
 
 ![](assets/s_ncs_user_export_wizard07.png)
 
-单击向导底部的选项卡，从列中的结果预览切换到XML中的结果。 您还可以查看生成的 SQL 查询。
+单击助理器底部的选项卡，从列结果预览切换到XML结果。 您还可以查看生成的 SQL 查询。
 
 ## 步骤9 — 启动导出 {#step-9---launching-the-export}
 

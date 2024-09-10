@@ -5,7 +5,7 @@ description: Campaign数据架构入门
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 1%
@@ -61,7 +61,7 @@ ht-degree: 1%
    >
    >默认情况下，用户创建的架构存储在“cus”命名空间中。 有关详细信息，请参阅[架构标识](../../configuration/using/about-schema-reference.md#identification-of-a-schema)。
 
-1. 创建表的内容。 我们建议使用登录向导以确保没有缺少设置。 为此，请单击&#x200B;**[!UICONTROL Insert]**&#x200B;按钮并选择要添加的设置类型。
+1. 创建表的内容。 我们建议使用登录助手以确保未丢失任何设置。 为此，请单击&#x200B;**[!UICONTROL Insert]**&#x200B;按钮并选择要添加的设置类型。
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 

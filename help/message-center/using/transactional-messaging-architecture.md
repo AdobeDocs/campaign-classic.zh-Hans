@@ -4,7 +4,7 @@ title: 事务性消息传递架构
 description: 此部分介绍Adobe Campaign Classic事务性消息架构以及投放事务性消息的可用渠道
 feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 1%
@@ -85,7 +85,7 @@ Adobe建议您在安装事务型消息包&#x200B;**之前**&#x200B;始终添加�
 >
 >此过程仅适用于使用安装在同一台计算机上的Windows NLServer的客户。
 
-1. 使用包导入向导(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)安装所需的渠道，例如&#x200B;**移动渠道**。
+1. 使用包导入助手(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)安装所需的频道，例如&#x200B;**Mobile频道**。
 1. 执行文件导入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，并选择&#x200B;**datakitnms **`[Your language]`**packagemessageCenter.xml**&#x200B;文件。
 1. 在&#x200B;**[!UICONTROL XML content of the data to import]**&#x200B;中，仅保留与所添加渠道对应的投放模板。 例如，如果您添加了&#x200B;**移动渠道**，则仅保留与&#x200B;**[!UICONTROL Mobile transactional message]** (smsTriggerMessage)相对应的&#x200B;**实体**&#x200B;元素。 如果您已添加&#x200B;**移动应用程序渠道**，请仅保留&#x200B;**iOS事务型消息** (iosTriggerMessage)和&#x200B;**Android事务型消息** (androidTriggerMessage)。
 

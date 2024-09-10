@@ -4,7 +4,7 @@ title: 管理和自定义列表
 description: 了解如何浏览和配置列表
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 32%
@@ -163,7 +163,7 @@ ht-degree: 32%
 
 ## 导出列表 {#exporting-a-list}
 
-要从列表中导出数据，必须使用导出向导。 要访问它，请从列表中选择要导出的元素，右键单击并选择&#x200B;**[!UICONTROL Export...]**。
+要从列表中导出数据，必须使用导出助手。 要访问它，请从列表中选择要导出的元素，右键单击并选择&#x200B;**[!UICONTROL Export...]**。
 
 在[通用导入和导出](../../platform/using/about-generic-imports-exports.md)中说明了导入和导出函数的使用。
 

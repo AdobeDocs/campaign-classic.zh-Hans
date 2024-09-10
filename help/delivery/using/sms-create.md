@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: SMS
 role: User
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 要创建短信的内容，请执行以下步骤：
 
-1. 在向导的&#x200B;**[!UICONTROL Text content]**&#x200B;部分中输入消息的内容。 使用工具栏按钮可以在内容中导入、保存或搜索。 最后按钮用于插入个性化字段。
+1. 在助理的&#x200B;**[!UICONTROL Text content]**&#x200B;部分输入消息的内容。 使用工具栏按钮可以在内容中导入、保存或搜索。 最后按钮用于插入个性化字段。
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 

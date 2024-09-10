@@ -5,7 +5,7 @@ description: 架构引用列表
 feature: Custom Resources
 role: Data Engineer, Developer
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 21%
@@ -14,7 +14,7 @@ ht-degree: 21%
 
 # 架构引用 {#schema-reference}
 
-编辑架构时，基于源架构(xtk：srcSchema)的审批系统可用。 使用“数据库结构更新……”向导更新数据库时，也可能会发现一些错误。
+编辑架构时，基于源架构(xtk：srcSchema)的审批系统可用。 使用“数据库结构更新……”助手更新数据库时，也可能会发现一些错误。
 
 默认情况下，在Adobe Campaign架构中，所有布尔类型属性均为“false”。 要激活它们，您需要在架构中指定属性并将其值设置为“true”。
 

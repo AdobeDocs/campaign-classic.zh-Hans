@@ -4,7 +4,7 @@ title: 增量查询
 description: 了解有关增量查询工作流活动的更多信息
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 3%
@@ -35,7 +35,7 @@ ht-degree: 3%
 1. 在&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Schedule execution]**&#x200B;选项。 创建任务后，该任务将保持活动状态，并且仅在计划指定的执行查询的时间触发。 但是，如果该选项被禁用，则查询将立即执行&#x200B;**并且一次执行**。
 1. 单击 **[!UICONTROL Change]** 按钮。
 
-   在&#x200B;**[!UICONTROL Schedule editing wizard]**&#x200B;窗口中，可以配置频率类型、事件重复周期和事件有效期。
+   在&#x200B;**[!UICONTROL Schedule editing assistant]**&#x200B;窗口中，可以配置频率类型、事件重复周期和事件有效期。
 
    ![](assets/s_user_segmentation_wizard_11.png)
 

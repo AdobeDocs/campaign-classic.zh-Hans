@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 2%
@@ -91,7 +91,7 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开始和结束。 后续
 
 可通过三种不同的方式导出资源包：
 
-* **[!UICONTROL Package Export Wizard]**&#x200B;允许您导出单个包中的一组对象。 有关详细信息，请参阅[导出包中的一组对象](#exporting-a-set-of-objects-in-a-package)
+* **[!UICONTROL Package Export Assistant]**&#x200B;允许您导出单个包中的一组对象。 有关详细信息，请参阅[导出包中的一组对象](#exporting-a-set-of-objects-in-a-package)
 * 通过右键单击单个对象&#x200B;**并选择&#x200B;**[!UICONTROL Actions > Export in a package]**，可以直接将其导出到包中。**
 * **包定义**&#x200B;允许您创建包结构，在其中添加稍后将在包中导出的对象。 有关详细信息，请参阅[管理包定义](#managing-package-definitions)
 
@@ -99,11 +99,11 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开始和结束。 后续
 
 ### 导出资源包中的一组对象 {#exporting-a-set-of-objects-in-a-package}
 
-可通过Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Export package...]**&#x200B;菜单访问包导出向导。
+可通过Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Tools > Advanced > Export package...]**&#x200B;菜单访问包导出助手。
 
 ![](assets/ncs_datapackage_typepackage.png)
 
-对于三种类型的包，向导提供了以下步骤：
+对于三种类型的资源包，助理提供了以下步骤：
 
 1. 按文档类型列出要导出的实体：
 
@@ -139,7 +139,7 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开始和结束。 后续
 
    ![](assets/ncs_datapackage_export6.png)
 
-1. 资源包导出向导的最后一页允许您启动导出。 该数据将存储在&#x200B;**[!UICONTROL File]**&#x200B;字段中指示的文件中。
+1. 利用资源包导出助手的最后一页，可开始导出。 该数据将存储在&#x200B;**[!UICONTROL File]**&#x200B;字段中指示的文件中。
 
    ![](assets/ncs_datapackage_export7.png)
 
@@ -303,7 +303,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ## 导入包 {#importing-packages}
 
-可通过Adobe Campaign客户端控制台的主菜单&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;访问包导入向导。
+可通过Adobe Campaign客户端控制台的主菜单&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;访问包导入助手。
 
 您可以从先前执行的导出导入包，例如从其他Adobe Campaign实例或[内置包](../../installation/using/installing-campaign-standard-packages.md)，具体取决于您的许可条款。
 

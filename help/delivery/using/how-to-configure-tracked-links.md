@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Monitoring
 role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 10%
@@ -37,7 +37,7 @@ ht-degree: 10%
 
 默认启用消息跟踪。 要个性化URL的跟踪方式，请执行以下步骤：
 
-1. 选择投放向导下部、消息内容下的&#x200B;**[!UICONTROL Display URLs]**&#x200B;选项。
+1. 选择投放助理下部消息内容下的&#x200B;**[!UICONTROL Display URLs]**&#x200B;选项。
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
