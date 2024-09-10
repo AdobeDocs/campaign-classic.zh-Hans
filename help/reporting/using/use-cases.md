@@ -5,7 +5,7 @@ description: 报告用例
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 分析人群 {#analyzing-a-population}
 
-以下示例允许您使用描述性分析向导浏览一组新闻稿所定向的群体。
+以下示例允许您使用描述性分析助手浏览一组新闻稿所定向的群体。
 
 下面将详细介绍实施步骤，而本章其他部分提供了有关各个选项和描述的详尽列表。
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 ### 定义显示格式 {#defining-the-display-format}
 
-向导的下一步允许您选择要生成的图表类型。
+利用该助理的下一步，可以选择要生成的图表类型。
 
 在这种情况下，选择直方图。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ### 配置要计算的统计信息 {#configuring-the-statistic-to-calculate}
 
-然后指定要应用于收集数据的计算。 默认情况下，描述性分析向导会执行值的简单计数。
+然后指定要应用于收集数据的计算。 默认情况下，描述性分析助理执行值的简单计数。
 
 利用此窗口，可定义要计算的统计信息的列表。
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 ### 查看和使用报告 {#viewing-and-using-the-report}
 
-向导的最后一步将显示表和图表。
+助理的最后一步显示表和图表。
 
 您可以使用表格上方的工具栏存储、导出或打印数据。 有关详细信息，请参阅[处理报表](../../reporting/using/processing-a-report.md)。
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 **目标**：生成有关潜在客户或客户位置的分析报告。
 
-1. 打开描述性分析向导并仅选择&#x200B;**[!UICONTROL Chart]**。
+1. 打开描述性分析助手，仅选择&#x200B;**[!UICONTROL Chart]**。
 
    ![](assets/s_ncs_user_report_wizard_05a.png)
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 **目标**：分析公司电子邮件域。
 
-1. 打开描述性分析向导，仅选择&#x200B;**[!UICONTROL Array]**&#x200B;显示模式。
+1. 打开描述性分析助手，仅选择&#x200B;**[!UICONTROL Array]**&#x200B;显示模式。
 
    ![](assets/s_ncs_user_report_wizard_03a.png)
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 **目标**：生成收件人年龄的定量分析报告
 
-1. 打开描述性分析向导并从下拉列表中选择&#x200B;**[!UICONTROL Quantitative distribution]**。
+1. 打开描述性分析助手，然后从下拉列表中选择&#x200B;**[!UICONTROL Quantitative distribution]**。
 
    ![](assets/s_ncs_user_report_wizard_011a.png)
 
@@ -191,7 +191,7 @@ ht-degree: 0%
 
 分析工作流中的群体时，需要群体仍然存在于过渡中。 如果启动工作流，则可能会从过渡中清除与群体有关的结果。 要运行分析，您可以：
 
-* 将过渡从其目标活动分离并启动工作流以使其处于活动状态。 一旦过渡开始闪烁，请按常规方式启动向导。
+* 将过渡从其目标活动分离并启动工作流以使其处于活动状态。 一旦过渡开始闪烁，请按常规方式启动助手。
 
   ![](assets/s_ncs_user_report_wizard_018.png)
 
@@ -199,7 +199,7 @@ ht-degree: 0%
 
   ![](assets/s_ncs_user_report_wizard_020.png)
 
-  如果从过渡中清除群体，则会显示一条错误消息，要求您在启动描述性分析向导之前选择相关选项。
+  如果从过渡中清除群体，则会显示一条错误消息，要求您在启动描述性分析助手之前选择相关选项。
 
   ![](assets/s_ncs_user_report_wizard_019.png)
 
@@ -210,13 +210,13 @@ ht-degree: 0%
 
 ## 分析收件人跟踪日志 {#analyzing-recipient-tracking-logs}
 
-描述性分析向导可以生成有关其他工作表的报表。 这意味着您可以通过创建专用报告来分析投放日志。
+描述性分析助理可以生成有关其他工作表的报告。 这意味着您可以通过创建专用报告来分析投放日志。
 
 在本例中，我们要分析新闻稿收件人的反应率。
 
 要执行此操作，请应用以下步骤：
 
-1. 通过&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;菜单打开描述性分析向导，并更改默认工作表。 选择&#x200B;**[!UICONTROL Recipient tracking log]**&#x200B;并添加筛选器以排除验证并包含新闻稿。
+1. 通过&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;菜单打开描述性分析助手，并更改默认工作表。 选择&#x200B;**[!UICONTROL Recipient tracking log]**&#x200B;并添加筛选器以排除验证并包含新闻稿。
 
    ![](assets/reporting_descriptive_sample_tracking_1.png)
 
@@ -276,7 +276,7 @@ ht-degree: 0%
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 
-这会将您转到描述性分析向导，分析将涉及收件人排除日志。
+这会将您带到描述性分析助手，分析将涉及收件人排除日志。
 
 例如，您可以显示所有排除地址的域，并按排除日期对它们进行排序。
 

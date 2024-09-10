@@ -1,30 +1,30 @@
 ---
 product: campaign
-title: 使用描述性分析向导
-description: 使用描述性分析向导
+title: 使用描述性分析助手
+description: 使用描述性分析助手
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '1570'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# 使用描述性分析向导{#using-the-descriptive-analysis-wizard}
+# 使用描述性分析助手{#using-the-descriptive-analysis-wizard}
 
 
 
-要创建描述性分析报表，请使用专用向导。 配置取决于要分析的数据以及所需的渲染。
+要创建描述性分析报告，请使用专用助手。 配置取决于要分析的数据以及所需的渲染。
 
 ## 分析数据库中的数据 {#analyzing-data-in-the-database}
 
-可以通过&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;菜单启动描述性分析向导：在这种情况下，分析默认涉及收件人(**nms：recipient**)。 它适用于Adobe Campaign数据库中的所有数据。
+描述性分析助理可以通过&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;菜单启动：在这种情况下，分析默认涉及收件人(**nms：recipient**)。 它适用于Adobe Campaign数据库中的所有数据。
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-要分析标准收件人以外的表(**nms：recipient**)，请单击向导最后阶段中的&#x200B;**[!UICONTROL Advanced settings...]**&#x200B;链接，然后选择与您的设置相匹配的表，在本例中为&#x200B;**cus：individual**：
+要分析标准收件人以外的表(**nms：recipient**)，请单击助理的最后一个阶段中的&#x200B;**[!UICONTROL Advanced settings...]**&#x200B;链接，然后选择与您的设置相匹配的表，在本例中为&#x200B;**cus：individual**：
 
 ![](assets/reporting_descriptive_other_schema.png)
 
@@ -36,11 +36,11 @@ ht-degree: 1%
 
 ## 分析一组数据 {#analyzing-a-set-of-data}
 
-您可以通过不同的上下文使用描述性分析向导：列表、工作流过渡、一个或多个投放、收件人选择等。
+您可以通过不同的上下文使用描述性分析助手：列表、工作流过渡、一个或多个投放、收件人选择等。
 
 它可通过Adobe Campaign树中指向收件人表的多个节点访问。
 
-通过选择项目并右键单击以打开描述性分析向导。 将只分析选定的数据。
+通过选择项目并右键单击以打开描述性分析助手。 将只分析选定的数据。
 
 ![](assets/reporting_descriptive_from_recipients.png)
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 
 通过&#x200B;**[!UICONTROL Qualitative distribution]**&#x200B;模板创建的报告可用的配置选项在[在表中显示数据](#displaying-data-in-the-table)中有详细说明。 [分析群体](../../reporting/using/use-cases.md#analyzing-a-population)中详细说明了完整示例。
 
-使用描述性分析向导分析数据时，可用的选项取决于所选的设置。 下文将详细介绍这些内容。
+使用描述性分析助手分析数据时，可用的选项取决于所选的设置。 下文将详细介绍这些内容。
 
 ### 数据量化 {#data-binning}
 
@@ -119,7 +119,7 @@ ht-degree: 1%
 
 ### 在图表中显示数据 {#displaying-data-in-the-chart}
 
-在描述性分析向导的第一步中，您可以选择仅以图表形式显示数据，而不显示表格。 在这种情况下，配置图形时必须选择变量。 您必须首先选择要显示的变量数量，然后从相关数据库中选择字段。
+在描述性分析助手的第一步中，您可以选择仅以图表形式显示数据，而不显示表格。 在这种情况下，配置图形时必须选择变量。 您必须首先选择要显示的变量数量，然后从相关数据库中选择字段。
 
 ![](assets/s_ncs_user_report_wizard_023.png)
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 ### 统计计算 {#statistics-calculation}
 
-使用描述性分析向导，您可以计算有关数据的多种类型的统计信息。 默认情况下，仅配置一个简单计数。
+描述性分析助手允许您计算有关数据的多种类型的统计信息。 默认情况下，仅配置一个简单计数。
 
 单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建新的统计信息。
 
@@ -183,7 +183,7 @@ ht-degree: 1%
 
 ### 显示报表 {#displaying-the-report}
 
-向导的最后一步允许您显示报表，即配置的表或图表。
+利用此助理的最后一步可以显示报表，即配置的表或图表。
 
 当报表包含表格时，计算结果单元格会着色。 结果越高，颜色就越强烈。
 
@@ -205,7 +205,7 @@ ht-degree: 1%
 
 实施示例[定量数据分析](../../reporting/using/use-cases.md#quantitative-data-analysis)中详细描述了通过&#x200B;**[!UICONTROL Quantitative distribution]**&#x200B;模板创建的分析报告的配置模式。
 
-使用描述性分析向导创建定量报告时可用的选项详述如下。
+使用描述性分析助手创建定量报告时可用的选项详述如下。
 
 首先，选择计算涉及的变量：
 
@@ -229,7 +229,7 @@ ht-degree: 1%
 
   ![](assets/s_ncs_user_report_wizard_030.png)
 
-  向导的最后一步将显示定量分析报告。
+  该辅助工具的最后一步显示定量分析报告。
 
   ![](assets/reporting_descriptive_view_report.png)
 

@@ -5,7 +5,7 @@ description: 创建表
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
@@ -461,6 +461,6 @@ ht-degree: 1%
 
 通过此类表，可显示根据数据库中的数据计算的统计信息。
 
-这些类型报表的配置与描述性分析向导使用的配置类似。 有关详细信息，请参见[此页面](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)。
+这些类型报告的配置类似于描述性分析助理使用的报告。 有关详细信息，请参见[此页面](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)。
 
 有关创建数据透视表的详细信息，请参阅[此节](../../reporting/using/ac-cubes.md)。

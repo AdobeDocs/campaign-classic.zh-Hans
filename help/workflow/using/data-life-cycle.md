@@ -4,7 +4,7 @@ title: 数据生命周期
 description: 了解有关工作流中数据生命周期的更多信息
 feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 5%
@@ -35,7 +35,7 @@ ht-degree: 5%
 
 * 分析目标
 
-  通过此菜单，您可以访问描述性分析向导，该向导允许您生成有关过渡数据的统计和报告。
+  利用此菜单，可访问描述性分析助手，该助手可让您生成有关过渡数据的统计和报告。
 
   有关更多信息，请参阅此](../../reporting/using/using-the-descriptive-analysis-wizard.md)章节[。
 
