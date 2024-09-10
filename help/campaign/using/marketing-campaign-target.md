@@ -5,9 +5,9 @@ description: 了解如何定义营销活动的受众
 role: User
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1492'
 ht-degree: 1%
 
 ---
@@ -166,6 +166,10 @@ ht-degree: 1%
   您可以通过单击&#x200B;**[!UICONTROL Actions]**&#x200B;图标并选择&#x200B;**[!UICONTROL Unconditional]**&#x200B;停止来无条件停止工作流。 此操作终止您的营销活动工作流。
 
   ![](assets/s_user_segmentation_stop_unconditional.png)
+
+  >[!CAUTION]
+  >
+  >仅限管理员用户无条件停止。
 
 ## 添加对照组 {#defining-a-control-group}
 
