@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 1%
@@ -117,7 +117,7 @@ Adobe Campaign允许您尝试新的交互式[AMP for Email](https://amp.dev/abou
 
 ## 使用内容管理 {#using-content-management}
 
-您可以使用内容管理表单，直接在投放向导中定义投放的内容。 为此，必须在投放属性的&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中引用要使用的内容管理的发布模板。
+您可以使用内容管理表单，直接在投放助手中定义投放的内容。 为此，必须在投放属性的&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中引用要使用的内容管理的发布模板。
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -144,7 +144,7 @@ Adobe Campaign允许您尝试新的交互式[AMP for Email](https://amp.dev/abou
 
 ## 添加图像 {#adding-images}
 
-HTML格式的电子邮件投放可以包含图像。 从投放向导中，您可以导入包含图像的HTML页面，或直接使用HTML编辑器通过&#x200B;**[!UICONTROL Image]**&#x200B;图标插入图像。
+HTML格式的电子邮件投放可以包含图像。 通过投放助手，您可以导入包含图像的HTML页面，或直接使用HTML编辑器通过&#x200B;**[!UICONTROL Image]**&#x200B;图标插入图像。
 
 
 ### 护栏 {#img-guardrails}
@@ -166,7 +166,7 @@ HTML格式的电子邮件投放可以包含图像。 从投放向导中，您可
 
 ### 插入和管理图像 {#manage-images}
 
-利用投放向导，可将本地图像或存储在库中的图像添加到消息的内容中。 为此，请单击HTML内容工具栏中的&#x200B;**[!UICONTROL Image]**&#x200B;按钮。
+利用投放助手，可将本地图像或存储在库中的图像添加到消息的内容中。 为此，请单击HTML内容工具栏中的&#x200B;**[!UICONTROL Image]**&#x200B;按钮。
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -174,7 +174,7 @@ HTML格式的电子邮件投放可以包含图像。 从投放向导中，您可
 >
 >为了使收件人能够查看他们收到的邮件中包含的图像，这些邮件必须在可从外部访问的服务器上可用。
 
-要通过投放向导管理图像，请执行以下操作：
+要通过投放助手管理图像，请执行以下操作：
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**图标。
    ![](assets/s_ncs_user_email_del_img_param.png)
@@ -184,9 +184,9 @@ HTML格式的电子邮件投放可以包含图像。 从投放向导中，您可
    ![](assets/s_ncs_user_email_del_img_upload.png)
 
 * 您可以手动上传图像，而无需等待投放分析阶段。 为此，请单击&#x200B;**[!UICONTROL Upload the images straightaway...]**&#x200B;链接。
-* 您可以指定其他路径来访问跟踪服务器上的图像。 为此，请在&#x200B;**[!UICONTROL Images URL]**&#x200B;字段中输入它。 此值将覆盖安装向导的参数中定义的值。
+* 您可以指定其他路径来访问跟踪服务器上的图像。 为此，请在&#x200B;**[!UICONTROL Images URL]**&#x200B;字段中输入它。 此值将覆盖安装助手参数中定义的值。
 
-在投放向导中打开包含图像的HTML内容时，将会显示一条消息，根据投放参数，为您提供立即上传图像的选项。
+在投放助手中打开包含图像的HTML内容时，会显示一条消息，根据投放参数，为您提供立即上传图像的选项。
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 

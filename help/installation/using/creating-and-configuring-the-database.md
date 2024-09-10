@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 1%
@@ -133,13 +133,13 @@ Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出了�
 
 ### 步骤6 — 创建数据库 {#step-6---creating-the-database}
 
-利用该向导的最后一个阶段，可以创建数据库。 单击 **[!UICONTROL Start]** 确认。
+利用此辅助程序的最后一个阶段，可以创建数据库。 单击 **[!UICONTROL Start]** 确认。
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 创建数据库后，可以重新连接以完成实例配置。
 
-现在必须启动部署向导才能完成实例配置。 请参阅[部署向导](../../installation/using/deploying-an-instance.md#deployment-wizard)。
+现在必须启动部署向导才能完成实例配置。 请参阅[部署向导](../../installation/using/deploying-an-instance.md#deployment-assistant)。
 
 链接到实例的数据库的连接设置存储在Adobe Campaign安装目录中的文件&#x200B;**`/conf/config-<instance>.xml`**&#x200B;中。
 
@@ -224,13 +224,13 @@ Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出了�
 
 ### 步骤5 — 创建数据库 {#step-5---creating-the-database}
 
-利用该向导的最后一个阶段，可以创建数据库。 单击 **[!UICONTROL Start]** 确认。
+利用此辅助程序的最后一个阶段，可以创建数据库。 单击 **[!UICONTROL Start]** 确认。
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 数据库创建完成后，可以重新连接以完成实例配置。
 
-现在必须启动部署向导才能完成实例配置。 请参阅[部署向导](../../installation/using/deploying-an-instance.md#deployment-wizard)。
+现在必须启动部署向导才能完成实例配置。 请参阅[部署向导](../../installation/using/deploying-an-instance.md#deployment-assistant)。
 
 链接到实例的数据库的连接设置存储在Adobe Campaign安装目录中的文件&#x200B;**`/conf/config-<instance>.xml`**&#x200B;中。
 

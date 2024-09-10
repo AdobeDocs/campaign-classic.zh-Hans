@@ -6,7 +6,7 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '2398'
 ht-degree: 0%
@@ -613,12 +613,12 @@ ht-degree: 0%
 
 ## 向导 {#wizards}
 
-向导会以页面的形式引导您完成一系列数据输入步骤。 验证表单时，会保存输入的数据。
+助理会以页面的形式引导您完成一组数据输入步骤。 验证表单时，会保存输入的数据。
 
-向导具有以下结构：
+助理具有以下结构：
 
 ```xml
-<form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
+<form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Assistant example" entity-schema="nms:recipient">
   <container title="Title of page 1" desc="Long description of page 1">
     <input xpath="@lastName"/>
     <input xpath="comment"/>
@@ -632,7 +632,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-`<form>`元素上存在&#x200B;**type=&quot;wizard&quot;**&#x200B;属性，允许您在表单构造中定义向导模式。 这些页面是从`<container>`元素完成的，这些元素是`<form>`元素的子元素。 使用标题和描述的标题属性填充页面的`<container>`元素，以在页面标题下显示描述。 已自动添加&#x200B;**[!UICONTROL Previous]**&#x200B;和&#x200B;**[!UICONTROL Next]**&#x200B;按钮，以允许在不同页面之间浏览。
+`<form>`元素上存在&#x200B;**type=&quot;wizard&quot;**&#x200B;属性，允许您定义表单构建中的助理模式。 这些页面是从`<container>`元素完成的，这些元素是`<form>`元素的子元素。 使用标题和描述的标题属性填充页面的`<container>`元素，以在页面标题下显示描述。 已自动添加&#x200B;**[!UICONTROL Previous]**&#x200B;和&#x200B;**[!UICONTROL Next]**&#x200B;按钮，以允许在不同页面之间浏览。
 
 “**[!UICONTROL Finish]**”按钮保存输入的数据并关闭表单。
 

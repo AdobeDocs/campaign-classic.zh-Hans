@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '3389'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >对于由Adobe托管的部署，只能由Adobe执行服务器端配置。 要了解有关不同部署的更多信息，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[此页面](../../installation/using/capability-matrix.md)。
 
-## 部署向导 {#deployment-wizard}
+## 部署向导 {#deployment-assistant}
 
 Adobe Campaign提供了一个图形助手(可在Adobe Campaign客户端控制台中使用)，用于定义要连接的实例的参数。
 
@@ -396,11 +396,11 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台上
 您可以使用逗号指定多个URL掩码来分隔每个URL掩码。
 
 * 有关在电子邮件中使用和管理图像的信息，请参阅[此章节](../../delivery/using/defining-the-email-content.md#adding-images)。
-* 在投放向导中，从这些URL调用的图像将具有“已忽略”状态。
+* 在投放助手中，从这些URL调用的图像将具有“已忽略”状态。
 
 ### 发布模式 {#publication-modes}
 
-向导的下半部分允许您选择公共资源和图像的发布选项。
+该助理的下半部分允许您选择公共资源和图像的发布选项。
 
 可以使用以下发布模式：
 

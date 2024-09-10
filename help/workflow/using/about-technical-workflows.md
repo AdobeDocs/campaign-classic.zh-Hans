@@ -4,7 +4,7 @@ title: 技术工作流
 description: 了解有关Campaign Classic包中可用的技术工作流的更多信息
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%
@@ -40,7 +40,7 @@ ht-degree: 1%
 | **为HeatMap服务** (collectDataHeatMapService)收集数据 | 默认安装 | 此工作流可检索HeatMap服务所需的数据。 |
 | **收集隐私请求** (collectPrivacyRequests) | 隐私数据保护条例 | 此工作流会生成存储在Adobe Campaign中的收件人数据，并在隐私请求屏幕中提供下载。 |
 | **成本计算** (budgetMgt) | 营销活动（营销活动） | 此工作流可开始计算预算、计划、方案、营销策划、投放和任务中的费用和成本行。 |
-| **数据库清理** （清理） | 投放 | 此工作流是数据库维护工作流：它根据统计和进程进行不同的计算，并根据部署助理中定义的配置从数据库中删除过时的数据。 默认情况下，此工作流于每日凌晨4点触发。 有关详细信息，请参见[此页面](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic)。 |
+| **数据库清理** （清理） | 投放 | 此工作流是数据库维护工作流：它进行的计算与统计和进程不同，并根据部署向导中定义的配置从数据库中删除过时的数据。 默认情况下，此工作流于每日凌晨4点触发。 有关详细信息，请参见[此页面](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic)。 |
 | **删除阻止的LINE用户** (deleteBlockedLineUsersV2) | LINE 渠道 | 此工作流可确保在阻止LINE正式帐户180天后，删除LINE V2用户的数据。 |
 | **删除隐私请求数据** (deletePrivacyRequestsData) | 隐私数据保护条例 | 此工作流会删除存储在Adobe Campaign中的收件人数据。 |
 | **传递指示器** (deliveryIndicators) | 中间源平台 | 此工作流可更新投放的投放跟踪指示器。 默认情况下，此工作流每小时触发一次。 |

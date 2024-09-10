@@ -8,22 +8,25 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
 
-# 通过LDAP连接{#connecting-through-ldap}
+# 通过LDAP连接 {#connecting-through-ldap}
 
 ## 配置Campaign和LDAP {#configuring-campaign-and-ldap}
 
 >[!NOTE]
 >
->LDAP配置仅适用于内部部署或混合安装。
+>* LDAP配置仅适用于内部部署或混合安装。
+>
+>* 确保您的系统和您的openssl版本与[兼容性矩阵](../../rn/using/compatibility-matrix.md)中的Campaign兼容。 过时的版本可能会影响您的LDAP身份验证。
+>
 
-LDAP配置在部署向导中执行。 必须在第一个配置步骤中选择&#x200B;**[!UICONTROL LDAP integration]**&#x200B;选项。 请参阅[部署向导](../../installation/using/deploying-an-instance.md#deployment-wizard)。
+LDAP配置在部署向导中执行。 必须在第一个配置步骤中选择&#x200B;**[!UICONTROL LDAP integration]**&#x200B;选项。 请参阅[部署向导](../../installation/using/deploying-an-instance.md#deployment-assistant)。
 
 通过窗口，您可以通过指定的LDAP目录配置Adobe Campaign用户的标识。
 
@@ -32,29 +35,19 @@ LDAP配置在部署向导中执行。 必须在第一个配置步骤中选择&#x
 * 在&#x200B;**[!UICONTROL LDAP server]**&#x200B;字段中指定LDAP服务器的地址。 您可以添加端口号。 默认情况下，使用的端口为389。
 * 在下拉列表中，选择用户的身份验证方法：
 
-   * 加密密码(**md5**)
+   * 加密密码(**md5**) — 默认模式。
 
-     默认模式。
-
-   * 纯文本密码+ SSL (**TLS**)
-
-     整个身份验证过程（包括密码）都经过加密。 在此模式下不得使用安全端口636： Adobe Campaign会自动切换到安全模式。
+   * 纯文本密码+ SSL (**TLS**) — 整个身份验证过程（包括密码）都经过加密。 在此模式下不得使用安全端口636： Adobe Campaign会自动切换到安全模式。
 
      使用此身份验证模式时，在Linux中，证书由openLDAP客户端库验证。 我们建议使用有效的SSL证书，以便对身份验证过程进行加密。 否则，信息将以纯文本形式显示。
 
      该证书在Windows中也经过验证。
 
-   * Windows NT LAN管理器(**NTLM**)
+   * Windows NT LAN管理器(**NTLM**) — 专有Windows身份验证。 **[!UICONTROL Unique identifier]**&#x200B;仅用于域名。
 
-     专有Windows身份验证。 **[!UICONTROL Unique identifier]**&#x200B;仅用于域名。
+   * 分布式密码身份验证(**DPA**) — 专有Windows身份验证。 **[!UICONTROL Unique identifier]**&#x200B;仅用于域名(domain.com)。
 
-   * 分布式密码身份验证(**DPA**)
-
-     专有Windows身份验证。 **[!UICONTROL Unique identifier]**&#x200B;仅用于域名(domain.com)。
-
-   * 纯文本密码
-
-     不加密（仅用于测试阶段）。
+   * 纯文本密码 — 不加密（仅用于测试阶段）。
 
 * 选择用户身份验证模式： **[!UICONTROL Automatically compute the unique user identifier]** （请参阅步骤[可分辨名称计算](#distinguished-name-calculation)）或&#x200B;**[!UICONTROL Search the unique user identifier in the directory]** （请参阅步骤[搜索标识符](#searching-for-identifiers)）。
 

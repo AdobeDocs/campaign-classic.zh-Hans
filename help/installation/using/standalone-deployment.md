@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1077'
 ht-degree: 3%
@@ -216,11 +216,11 @@ ht-degree: 3%
 
    请参阅[此页面](../../installation/using/creating-an-instance-and-logging-on.md)和[此部分](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
-   首次登录时将显示数据库创建向导：
+   首次登录时将显示数据库创建助手：
 
    ![](assets/s_ncs_install_db_oracle_creation01.png)
 
-   按照向导中的步骤创建与连接实例关联的数据库。
+   按照Assistant中的步骤创建与连接实例关联的数据库。
 
    有关详细信息，请参阅[创建和配置数据库](../../installation/using/creating-and-configuring-the-database.md)。
 

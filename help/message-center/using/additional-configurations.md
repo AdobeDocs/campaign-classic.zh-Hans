@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 6%
@@ -34,11 +34,11 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->队列中待处理的事件数显示在Adobe Campaign进程监视页面的[系统指示器](../../production/using/monitoring-processes.md#system-indicators)部分中。 有关部署向导的详细信息，请参阅[此部分](../../installation/using/deploying-an-instance.md#deployment-wizard)。
+>队列中待处理的事件数显示在Adobe Campaign进程监视页面的[系统指示器](../../production/using/monitoring-processes.md#system-indicators)部分中。 有关部署向导的详细信息，请参阅[此部分](../../installation/using/deploying-an-instance.md#deployment-assistant)。
 
 ## 清除事件 {#purging-events}
 
-您可以使用[部署向导](../../production/using/database-cleanup-workflow.md#deployment-wizard)配置数据在数据库中存储的时长。
+您可以使用[部署向导](../../production/using/database-cleanup-workflow.md#deployment-assistant)配置数据在数据库中存储的时长。
 
 事件清除由[数据库清理工作流](../../production/using/database-cleanup-workflow.md)自动执行。 此工作流会清除在执行实例上接收并存储的事件，以及在控制实例上存档的事件。
 
