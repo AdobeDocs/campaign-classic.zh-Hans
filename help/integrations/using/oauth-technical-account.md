@@ -5,10 +5,10 @@ description: 详细了解如何创建AdobeAPI帐户
 role: User, Admin
 level: Beginner
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-source-git-commit: 8eadea9f9cc0a44522726024bfbc825e3b4cad98
+source-git-commit: 9516101771899e132dbd3d1344c833e82714f775
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 7%
+source-wordcount: '324'
+ht-degree: 6%
 
 ---
 
@@ -61,9 +61,16 @@ Adobe正在弃用服务帐户(JWT)凭据。 Campaign与Adobe解决方案和应�
    * **[!UICONTROL Technical account ID]**
    * **[!UICONTROL Organization ID]**
 
-## 在Adobe Campaign中添加Oauth项目凭据 {#add-credentials}
+## 在Campaign中添加OAuth项目凭据 {#add-credentials}
 
-请按照以下步骤在Adobe Campaign中添加OAuth项目凭据：
+执行上述步骤后，在Adobe Campaign中添加您的OAuth项目凭据。
+
+>[!NOTE]
+>
+>作为托管或托管Cloud Service客户，不需要执行此步骤：Adobe已将您的OAuth项目凭据添加到您的环境中。
+>
+
+对于内部部署或混合型客户，请执行以下步骤：
 
 1. 通过SSH登录到安装了Adobe Campaign实例的每个容器。
 
