@@ -6,7 +6,7 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
 workflow-type: tm+mt
 source-wordcount: '5959'
 ht-degree: 2%
@@ -249,7 +249,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 部署向导定义Campaign实例的参数，如默认命名空间、数据库清理计划、数据保留期和其他技术设置。
 
-了解有关[部署向导](../../installation/using/deploying-an-instance.md#deployment-wizard)的详细信息。
+了解有关[部署向导](../../installation/using/deploying-an-instance.md#deployment-assistant)的详细信息。
 +++
 
 +++**描述性分析**
@@ -484,7 +484,7 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 +++**实例设置**
 
-实例设置是Adobe Campaign实例的配置详细信息。 这些设置是在“部署向导”（“工具”>“高级”>“部署向导”）中或在服务器和/或实例配置文件中定义的。
+实例设置是Adobe Campaign实例的配置详细信息。 这些设置是在部署向导（“工具”>“高级”>“部署向导”）中或在服务器和/或实例配置文件中定义的。
 
 了解有关[实例设置](../../installation/using/about-initial-configuration.md)的详细信息。
 
@@ -492,7 +492,7 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 +++**作业（导入和导出）**
 
-作业由向导系统管理，该向导系统简化了数据在产品中的导入和导出。 作业使用模板系统以简化和保持一致性，并且可以定义为按计划执行。
+作业由辅助系统管理，这简化了数据导入和导出到产品的过程。 作业使用模板系统以简化和保持一致性，并且可以定义为按计划执行。
 
 了解有关[导入和导出作业](../../platform/using/get-started-data-import-export.md)的详细信息。
 +++

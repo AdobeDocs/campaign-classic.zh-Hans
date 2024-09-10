@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
+source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
 workflow-type: tm+mt
 source-wordcount: '2552'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -294,7 +294,7 @@ ht-degree: 100%
       + [人员和收件人](reporting/using/person-people-recipients.md)
    + 分析人群{#analyzing-populations}
       + [关于描述性分析](reporting/using/about-descriptive-analysis.md)
-      + [使用描述性分析向导](reporting/using/using-the-descriptive-analysis-wizard.md)
+      + [使用描述性分析助手](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [报告设置](reporting/using/processing-a-report.md)
       + [用例](reporting/using/use-cases.md)
    + 创建新报告{#creating-new-reports}
@@ -538,7 +538,7 @@ ht-degree: 100%
       + [模拟跟踪](interaction/using/simulation-tracking.md)
    + 投放优惠{#delivering-an-offer}
       + [关于出站渠道](interaction/using/about-outbound-channels.md)
-      + [通过向导集成优惠](interaction/using/integrating-an-offer-via-the-wizard.md)
+      + [通过助理集成优惠](interaction/using/integrating-an-offer-via-the-wizard.md)
       + [通过工作流集成优惠](interaction/using/integrating-an-offer-via-a-workflow.md)
    + 单一互动{#unitary-interactions}
       + [关于入站渠道](interaction/using/about-inbound-channels.md)
@@ -772,7 +772,7 @@ ht-degree: 100%
       + [筛选模式](configuration/using/filtering-schemas.md)
       + [限制 PII 视图](configuration/using/restricting-pii-view.md)
       + [更新数据库结构](configuration/using/updating-the-database-structure.md)
-      + [新建字段向导](configuration/using/new-field-wizard.md)
+      + [新的外地助理](configuration/using/new-field-wizard.md)
       + [数据模式的结构](configuration/using/structure-of-a-data-schema.md)
       + [重新生成模式](configuration/using/regenerating-schemas.md)
       + [模式版本示例](configuration/using/examples-of-schemas-edition.md)
