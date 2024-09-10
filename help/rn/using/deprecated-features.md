@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 33d06c00ca9c7cd0ff077341df2b5b52ddf747a4
-workflow-type: ht
-source-wordcount: '1636'
-ht-degree: 100%
+source-git-commit: ef89551952cfbfd525a4dff716fe4676c1252d05
+workflow-type: tm+mt
+source-wordcount: '1653'
+ht-degree: 98%
 
 ---
 
@@ -172,6 +172,7 @@ Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因
 
 ### 操作系统 {#o-s-eol}
 
+* 从7.3.1版本开始，Adobe Campaign不再兼容Windows 8和Windows Server 2012。
 
 * 从 22.1 版本开始，Adobe Campaign 不再兼容 CentOs 8.x（64 位）。 CentOS Linux 8 将于 2021 年 12 月 31 日终止生命周期 (EOL)。[了解详情](https://www.centos.org/centos-linux-eol/)。
 
