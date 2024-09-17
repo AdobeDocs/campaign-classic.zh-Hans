@@ -5,9 +5,9 @@ description: 面向数据的 API
 feature: API
 role: Data Engineer, Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9d84c01b217579b5a291d5761a5dd2f8f8960df8
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1811'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 “xtk：queryDef”架构中“ExecuteQuery”方法的定义：
 
-```
+```xml
 <method name="ExecuteQuery" const="true">
   <parameters>
     <param desc="Output XML document" name="output" type="DOMDocument" inout="out"/>
@@ -80,7 +80,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 查询的XML文档的结构在“xtk：queryDef”模式中描述。 本文档介绍了SQL查询的子句：“select”、“where”、“order by”、“group by”、“having”。
 
-```
+```xml
 <queryDef schema="schema_key" operation="operation_type">
   <select>
     <node expr="expression1">
@@ -114,7 +114,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 `<subquery>  : </subquery>`示例
 
-```
+```xml
 <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
   <subQuery schema="xtk:operatorGroup">
      <select>
@@ -143,7 +143,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 检索在电子邮件上使用过滤器的收件人（“nms：recipient”架构）的姓氏和名字。
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="get">
   <!-- fields to retrieve -->
   <select>
@@ -162,7 +162,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 返回按文件夹和电子邮件域过滤的收件人列表，并按出生日期的降序排序。
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select">
   <select>
     <node expr="@email"/>
@@ -189,14 +189,14 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 要将查询返回的记录数限制为100，请执行以下操作：
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select" lineCount="100">
 ...
 ```
 
 要检索下100条记录，请再次运行同一查询，添加&#x200B;**startLine**&#x200B;属性。
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
 ...
 ```
@@ -205,7 +205,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 要计算查询中的记录数，请执行以下操作：
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="count"">
   <!-- condition on the folder and domain of the email -->
   <where>  
@@ -222,7 +222,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 要检索多次引用的电子邮件地址，请执行以下操作：
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select">
   <select>
     <node expr="@email"/>
@@ -244,7 +244,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 通过将&#x200B;**groupBy**&#x200B;属性直接添加到要分组的字段，可以简化查询：
 
-```
+```xml
 <select>
   <node expr="@email" groupBy="true"/>
 </select>
@@ -260,7 +260,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 * 单个表达式中的简单版本：
 
-  ```
+  ```xml
   <where>
     <condition expr="(@age > 15 or @age <= 45) and  (@city = 'Newton' or @city = 'Culver City') "/>
   </where>
@@ -268,7 +268,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 * 包含`<condition>`个元素的结构化版本：
 
-  ```
+  ```xml
   <where>
     <condition bool-operator="AND">
       <condition expr="@age > 15" bool-operator="OR"/>
@@ -283,7 +283,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 当多个条件应用于同一字段时，可以使用“IN”操作替换“OR”运算符：
 
-```
+```xml
 <where>
   <condition>
     <condition expr="@age IN (15, 45)"/>
@@ -300,7 +300,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
   文件夹标签上的过滤器示例：
 
-  ```
+  ```xml
   <where>
     <condition expr="[folder/@label] like 'Segment%'"/>
   </where>
@@ -308,7 +308,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
   要从“nms：recipient”模式中检索文件夹的字段，请执行以下操作：
 
-  ```
+  ```xml
   <select>
     <!-- label of recipient folder -->
     <node expr="[folder/@label]"/>
@@ -321,7 +321,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
   筛选已订阅“新闻稿”信息服务的收件人：
 
-  ```
+  ```xml
   <where>
     <condition expr="subscription" setOperator="EXISTS">
       <condition expr="@name = 'Newsletter'"/>
@@ -333,7 +333,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
   “订阅”收藏集链接示例：
 
-  ```
+  ```xml
   <select>
     <node expr="subscription/@label"/>
   </select>
@@ -345,7 +345,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
   在此示例中，对于每个收件人，查询将返回收件人订阅的信息服务的电子邮件和列表：
 
-  ```
+  ```xml
   <queryDef schema="nms:recipient" operation="select">
     <select>
       <node expr="@email"/>
@@ -371,7 +371,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 当构建查询时，“绑定”值将替换为字符(？ 在ODBC中，`#[index]#`在SQL查询正文中。
 
-```
+```xml
 <select>
   <!--the value will be bound by the engine -->
   <node expr="@startDate = #2002/02/01#"/>                   
@@ -386,21 +386,6 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 >
 >如果查询包含“order-by”或“group-by”指令，则数据库引擎将无法“绑定”值。 您必须将@noSqlBind=&quot;true&quot;属性放置在查询的&quot;select&quot;和/或&quot;where&quot;指令上。
 
-#### 查询生成提示： {#query-building-tip-}
-
-为了帮助使用查询的语法，您可以使用Adobe Campaign客户端控制台（**[!UICONTROL Tools/ Generic query editor...]**&#x200B;菜单）中的通用查询编辑器来编写查询。 操作步骤：
-
-1. 选择要检索的数据：
-
-   ![](assets/s_ncs_integration_webservices_queyr1.png)
-
-1. 定义筛选条件：
-
-   ![](assets/s_ncs_integration_webservices_queyr2.png)
-
-1. 执行查询并按CTRL+F4可查看查询源代码。
-
-   ![](assets/s_ncs_integration_webservices_queyr3.png)
 
 ### 输出文档格式 {#output-document-format}
 
@@ -414,7 +399,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 在“选择”操作中，返回的文档是元素的枚举：
 
-```
+```xml
 <!-- the name of the first element does not matter -->
 <recipient-collection>   
   <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
@@ -425,7 +410,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 为“count”类型操作返回的文档示例：
 
-```
+```xml
 <recipient count="3"/>
 ```
 
@@ -433,7 +418,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 别名允许您修改输出文档中数据的位置。 **别名**&#x200B;属性必须在相应的字段中指定XPath。
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="get">
   <select>
     <node expr="@firstName" alias="@firstName"/>
@@ -445,13 +430,13 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 返回：
 
-```
+```xml
 <recipient My_folder="Recipients" First name ="John" lastName="Doe"/>
 ```
 
 而非：
 
-```
+```xml
 <recipient firstName="John" lastName="Doe">
   <folder label="Recipients"/>
 </recipient>
@@ -461,7 +446,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 * 查询：
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -486,7 +471,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 * 响应：
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -511,7 +496,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 “xtk：session”架构中“Write”和“WriteCollection”方法的定义：
 
-```
+```xml
 <method name="Write" static="true">
   <parameters>
     <param name="doc" type="DOMDocument" desc="Difference document"/>
@@ -548,7 +533,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 使用电子邮件地址、出生日期和城镇更新或插入收件人（隐式“insertOrUpdate”操作）：
 
-```
+```xml
 <recipient xtkschema="nms:recipient" email="john.doe@adobe.com" birthDate="1956/05/04" folder-id=1203 _key="@email, [@folder-id]">
   <location city="Newton"/>
 </recipient>
@@ -556,7 +541,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 删除收件人：
 
-```
+```xml
 <recipient xtkschema="nms:recipient" _operation="delete" email="rene.dupont@adobe.com" folder-id=1203 _key="@email, [@folder-id]"/>
 ```
 
@@ -568,7 +553,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 多个收件人的更新或插入：
 
-```
+```xml
 <recipient-collection xtkschema="nms:recipient">    
   <recipient email="john.doe@adobe.com" firstName="John" lastName="Doe" _key="@email"/>
   <recipient email="peter.martinez@adobe.com" firstName="Peter" lastName="Martinez" _key="@email"/>
@@ -582,7 +567,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 根据文件夹的内部名称(@name)将其与收件人关联。
 
-```
+```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
   <folder name="Folder2" _operation="none"/>
 </recipient>
@@ -600,7 +585,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 从收件人更新公司（在“cus：company”架构中链接的表）：
 
-```
+```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
   <company name="adobe" code="ERT12T" _key="@name" _operation="update"/>
 </recipient>
@@ -610,7 +595,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 使用组关系表(“nms：rcpGrpRel”)将收件人添加到组：
 
-```
+```xml
 <recipient _key="@email" email="martin.ledger@adobe.net" xtkschema="nms:recipient">
   <rcpGrpRel _key="[rcpGroup/@name]">
     <rcpGroup name="GRP1"/>
@@ -630,7 +615,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 * 查询：
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -646,7 +631,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 * 响应：
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -658,7 +643,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
   返回错误：
 
-  ```
+  ```xml
   <?xml version='1.0'?>
   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
