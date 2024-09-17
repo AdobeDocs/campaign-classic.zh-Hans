@@ -7,7 +7,7 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
+source-git-commit: 8d15a5666b5768bc0f17a4391061c4fcb9f76811
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 >
 > Adobe已弃用服务帐户(JWT)凭据，Campaign与Adobe解决方案和应用程序的集成现在必须依赖OAuth服务器到服务器凭据。 </br>
 >
-> * 如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如[本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank)中所述。 现有服务帐户(JWT)凭据将继续工作到2025年1月27日。</br>
+> * 如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如[本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank)中所述。 现有的[服务帐户(JWT)凭据](oauth-technical-account.md)将继续工作到2025年1月27日。</br>
 >
 > * 如果您实施了叫客集成，如Campaign-Analytics集成或Experience Cloud Triggers集成，则在2025年1月27日之前它们将继续工作。 但是，在该日期之前，您必须将Campaign环境升级到v7.4.1，并将您的技术帐户迁移到OAuth。
 
