@@ -5,16 +5,16 @@ description: 面向数据的 API
 feature: API
 role: Data Engineer, Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 9d84c01b217579b5a291d5761a5dd2f8f8960df8
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1813'
 ht-degree: 0%
 
 ---
 
 # 面向数据的 API{#data-oriented-apis}
 
-面向数据的API允许您处理整个数据模型。
+面向数据的API使您能够处理整个数据模型。
 
 ## 数据模型概述 {#overview-of-the-datamodel}
 

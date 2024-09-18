@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -205,4 +205,4 @@ ht-degree: 0%
 
 ## Customer表 {#customer-tables}
 
-除了上述列表之外，包含在平台设置期间由客户创建的表(在Adobe Campaign数据模型中不存在)也可能会出现碎片，尤其是如果这些表在数据加载或同步过程中频繁更新。 这些表可以是默认Adobe Campaign数据模型的一部分（例如&#x200B;**NmsRecipient**）。 在这种情况下，Adobe Campaign平台管理员需要对其特定数据库模型进行审核，以查找这些自定义表。 在我们的维护过程中不一定明确地提到这些表。
+除了上述列表之外，包含在平台设置期间由客户创建的表(在Adobe Campaign数据模型中不存在)也可能会出现碎片，尤其是当这些表在数据加载或同步过程中频繁更新时。 这些表可以是默认Adobe Campaign数据模型的一部分（例如&#x200B;**NmsRecipient**）。 在这种情况下，Adobe Campaign平台管理员需要对其特定数据库模型进行审核，以查找这些自定义表。 在我们的维护过程中不一定明确地提到这些表。
