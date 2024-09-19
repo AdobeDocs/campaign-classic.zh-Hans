@@ -7,9 +7,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -538,7 +538,7 @@ ht-degree: 99%
       + [模拟跟踪](interaction/using/simulation-tracking.md)
    + 投放优惠{#delivering-an-offer}
       + [关于出站渠道](interaction/using/about-outbound-channels.md)
-      + [通过助理集成优惠](interaction/using/integrating-an-offer-via-the-wizard.md)
+      + [通过助手集成优惠](interaction/using/integrating-an-offer-via-the-wizard.md)
       + [通过工作流集成优惠](interaction/using/integrating-an-offer-via-a-workflow.md)
    + 单一互动{#unitary-interactions}
       + [关于入站渠道](interaction/using/about-inbound-channels.md)
@@ -772,7 +772,7 @@ ht-degree: 99%
       + [筛选模式](configuration/using/filtering-schemas.md)
       + [限制 PII 视图](configuration/using/restricting-pii-view.md)
       + [更新数据库结构](configuration/using/updating-the-database-structure.md)
-      + [新的外地助理](configuration/using/new-field-wizard.md)
+      + [新建字段助手](configuration/using/new-field-wizard.md)
       + [数据模式的结构](configuration/using/structure-of-a-data-schema.md)
       + [重新生成模式](configuration/using/regenerating-schemas.md)
       + [模式版本示例](configuration/using/examples-of-schemas-edition.md)

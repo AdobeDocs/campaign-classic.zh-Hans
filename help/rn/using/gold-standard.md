@@ -9,9 +9,9 @@ hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -208,7 +208,7 @@ _2019 年 8 月 13 日_
 
 初始 19.1.4 内部版本包含以下修复：
 
-* 修复了在助理配置期间调度程序活动生成不需要的错误消息的问题。 NEO-11662 中的“还原更新”。(NEO-17097)
+* 修复了调度程序活动在助手配置期间生成不需要的错误消息的问题。NEO-11662 中的“还原更新”。(NEO-17097)
 * 修复了 NEO-12727 引起的回归，该回归可能导致在执行两次测试活动时停止工作流。(NEO-16835)
 * 修复了在 API 调用中使用无效或过期的会话令牌时导致返回错误的 HTTP 代码（HTTP 200 OK 而非 HTTP 403 Forbidden）的问题。(NEO-16826)
 * 修复了 DKIM 密钥的问题，该密钥不再嵌入到电子邮件中，从而导致投放能力问题。(NEO-16804)
