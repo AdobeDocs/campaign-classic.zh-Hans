@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: fee880f4b200b322c2b2a0034f17975993c862b3
+source-git-commit: b4ab1fe5e98211c2b1bcdb319f10777c032831c7
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 0%
@@ -18,8 +18,6 @@ ht-degree: 0%
 # 在Linux中安装包{#installing-packages-with-linux}
 
 Adobe Campaign附带了&#x200B;**nlserver**&#x200B;包，其中包含给定版本的二进制文件和配置文件。
-
-
 
 安装命令使您能够：
 
