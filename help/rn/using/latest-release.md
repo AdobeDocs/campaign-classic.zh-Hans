@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: d31aa28da06e65664da655b6b082563767b35f7a
+source-git-commit: 4be5bf54362240aac1b77298b08b14d3e5542f52
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 100%
+source-wordcount: '385'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,6 @@ _2024 年 6 月 18 日_
 * [将 Campaign 技术操作员迁移到 Developer Console](../../technotes/using/ims-migration.md) 并[过渡到用于进行最终用户身份验证的 IMS](../../technotes/using/migrate-users-to-ims.md) 后，您现在可以启用用户界面和 API 限制，以移除特定于原生身份验证的选项和功能。[了解详情](../../technotes/using/impact-ims-migration.md)
 
 
-
 ### 兼容性更新 {#release-7-4-1-compat}
 
 更新了 [Adobe Campaign 兼容性矩阵](compatibility-matrix.md)，以反映这一新版本中的变化，如下所列。
@@ -48,6 +47,9 @@ _2024 年 6 月 18 日_
    * 适用于 iOS 的新 Campaign SDK 1.0.27（兼容 iOS 16 和17），以及最新版本 [Apple iOS 隐私请求要求](https://developer.apple.com/news/?id=r1henawx){target="_blank"}。
    * 适用于 Android 14 的新 Campaign SDK。
 
+### 其他变更 {#release-7-4-1-other}
+
+从v7.4.1开始，Campaign中不再包含适用于RPM Linux包的XML库。 作为内部部署或混合型部署客户，您的管理员必须安装这些库。
 
 ### 修补程序 {#release-7-4-1-patches}
 
