@@ -6,7 +6,7 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 100%
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 7.3.5 版 - 内部版本 9368 {#release-7-3-5}
 
-[!BADGE 有限发布版]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
+[!BADGE 有限发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
 
 _2023 年 12 月 5 日_
 
@@ -50,7 +50,7 @@ _2023 年 12 月 5 日_
 
 ## 7.3.4 版 - 内部版本 9364 {#release-7-3-4}
 
-[!BADGE 有限发布版]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
+[!BADGE 有限发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
 
 
 >[!CAUTION]
@@ -120,7 +120,7 @@ _2023 年 9 月 7 日_
 
 ## 7.3.3 版 - 内部版本 9359 {#release-7-3-3}
 
-[!BADGE 有限发布版]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
+[!BADGE 有限发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
 
 >[!AVAILABILITY]
 >
@@ -156,7 +156,7 @@ _2023 年 3 月 20 日_
 
 ## 7.3.2 版 - 内部版本 9356 {#release-7-3-2}
 
-[!BADGE 有限发布版]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
+[!BADGE 有限发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
 
 
 >[!AVAILABILITY]

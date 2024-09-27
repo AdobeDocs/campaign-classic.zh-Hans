@@ -4,9 +4,9 @@ title: 架构元素和属性 — 元素元素
 description: 元素元素
 feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Adobe Campaign中有四种类型的`<element>`元素：
 * **dbEnum （字符串）**：接收“已关闭”枚举的内部名称。 必须在`<srcschema>`中定义枚举值。
 * **defOnDuplicate （布尔值）**：如果激活此属性，则在复制记录时，默认值(在@default中定义)将自动重新应用于记录。
 * **默认（字符串）**：用于定义元素行为（调用函数，默认值）。 此属性接收XTK表达式。
-* **desc （字符串）**：允许您插入元素的说明。 此描述将显示在界面的状态栏中。
+* **desc （字符串）**：允许您插入元素的说明。 此描述用于了解元素的含义及其用途。 您可以在表单中显示它。
 * **displayAsField （布尔值）**：如果激活此属性，则“链接”类型`<element>`将作为字段显示在架构的树视图中（“结构”选项卡）。 这样，便可以将链接显示为本地字段，并在查询期间更改其行为。 当在查询的SELECT中找到元素时，将使用链接目标的值。 在查询的WHERE中找到元素时，将使用链接的基础键。
 * **编辑（字符串）**：此属性指定将在链接到架构的表单中使用的输入类型。
 * **枚举（字符串）**：接收链接到该字段的枚举的名称。 枚举可以插入到同一模式或远程模式中。

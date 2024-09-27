@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1573'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ _operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement
 * **dbEnum （字符串）**：接收“已关闭”枚举的内部名称。 必须在`<srcschema>`中定义枚举值。
 * **defOnDuplicate （布尔值）**：如果激活此属性，则在复制记录时，默认值(在@default中定义)将自动重新应用于记录。
 * **默认（字符串）**：用于定义默认字段的值（调用函数，默认值）。 此属性接收XTK表达式。
-* **desc （字符串）**：允许您插入属性的描述。 此描述将显示在界面的状态栏中。
+* **desc （字符串）**：允许您插入属性的描述。 此描述用于了解元素的含义及其用途。 您可以在表单中显示它。
 * **编辑（字符串）**：此属性指定将在链接到架构的表单中使用的输入类型。
 * **枚举（字符串）**：接收链接到该字段的枚举的名称。 枚举可以插入到同一模式或远程模式中。
 * **expr （字符串）**：定义字段预计算表达式。 此属性接收Xpath或XTK表达式。
@@ -90,7 +90,7 @@ _operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement
    * 专用： `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * 已共享：`Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
-  有两种类型的特征字段：简单oà¹字段仅授权一个特征值；以及oà¹多选字段，其中特征与可能包含多个值的收集要素相关联。
+  有两种类型的特征字段：简单的oà<sup>1</sup>字段，其中在特征上授权了一个值；以及oà<sup>1</sup>多选字段，其中特征链接到可能包含多个值的集合元素。
 
   在架构中定义特征时，此架构必须具有基于单个字段的主键（复合键未授权）。
 
