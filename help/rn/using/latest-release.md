@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 9526d466dc4613410905d9d7265c6471cd1df599
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ _2024 年 6 月 18 日_
 
 ### 其他变更 {#release-7-4-1-other}
 
-从v7.4.1开始，Campaign中不再包含适用于RPM Linux包的XML库。 作为内部部署或混合型部署客户，您的管理员必须安装这些库。 [了解详情](../../installation/using/installing-packages-with-linux.md)
+从 v7.4.1 开始，Campaign 中不再包含 RPM Linux 包的 XML 库。作为内部部署或混合型部署客户，您的管理员必须安装这些库。 [了解详情](../../installation/using/installing-packages-with-linux.md)
 
 ### 修补程序 {#release-7-4-1-patches}
 
