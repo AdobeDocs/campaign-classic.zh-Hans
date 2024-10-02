@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
+source-git-commit: cc614ed608f1e8229c0ef1ccf35dbac6cb9dddd3
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 2%
@@ -170,7 +170,9 @@ ht-degree: 2%
   nlserver6-v7                    x86_64        XXXX.0.0-1                 @commandline         63 M
   ```
 
-  如果您读取的是`Removing:`而不是`Upgrading:`，请取消该命令。 可能有一些错误（如上面所列）解释了删除操作。 在这种情况下，请通过更新/安装列出的缺失依赖项来更正这些错误，然后再次尝试运行该命令。
+  >[!IMPORTANT]
+  >
+  >如果您读取的是`Removing:`而不是`Upgrading:`，请取消该命令。 可能有一些错误（如上面所列）解释了删除操作。 在这种情况下，请通过更新/安装列出的缺失依赖项来更正这些错误，然后再次尝试运行该命令。
 
 * 基于DEB的分发(Debian)
 
