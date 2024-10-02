@@ -9,7 +9,7 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
+source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
 workflow-type: tm+mt
 source-wordcount: '2558'
 ht-degree: 0%
@@ -429,12 +429,12 @@ allowSQLInjection="false"
 * 在命令行界面中，错误由三个V形&#x200B;**>>**&#x200B;实现，同步自动停止。 警告以双V形&#x200B;**>>**&#x200B;实现，同步完成后必须解决这些警告。 升级后结束时，命令提示符中会显示摘要。 例如：
 
   ```
-  2013-04-09 07:48:39.749Z        00002E7A          1     info    log     =========Summary of the update==========
-  2013-04-09 07:48:39.749Z        00002E7A          1     info    log     test instance, 6 warning(s) and 0 error(s) during the update.
-  2013-04-09 07:48:39.749Z        00002E7A          1     warning log     The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
-  2013-04-09 07:48:39.749Z        00002E7A          1     warning log     The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
-  2013-04-09 07:48:39.750Z        00002E7A          1     warning log     The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
-  2013-04-09 07:48:39.750Z        00002E7A          1     warning log     Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
+  AAAA-MM-DD HH:MM:SS.749Z        00002E7A          1     info    log     =========Summary of the update==========
+  AAAA-MM-DD HH:MM:SS.749Z        00002E7A          1     info    log     test instance, 6 warning(s) and 0 error(s) during the update.
+  AAAA-MM-DD HH:MM:SS.749Z        00002E7A          1     warning log     The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
+  AAAA-MM-DD HH:MM:SS.749Z        00002E7A          1     warning log     The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
+  AAAA-MM-DD HH:MM:SS.750Z        00002E7A          1     warning log     The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
+  AAAA-MM-DD HH:MM:SS.750Z        00002E7A          1     warning log     Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
   ```
 
   如果警告与资源冲突有关，则操作员需要注意解决该冲突。

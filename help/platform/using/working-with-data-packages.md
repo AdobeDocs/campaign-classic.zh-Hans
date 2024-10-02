@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 2%
@@ -169,10 +169,10 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开始和结束。 后续
 <package author="Administrator (admin)" buildNumber="7974" buildVersion="7.1" img=""
 label="" name="" namespace="" vendor="">
  <desc></desc>
- <version buildDate="2013-01-09 10:30:18.954Z"/>
+ <version buildDate="AAAA-MM-DD HH:MM:SS.954Z"/>
  <entities schema="nms:operation">
-  <operation duration="432000" end="2013-01-14" internalName="OP1" label="MyCampaign"
-  modelName="opEmpty" start="2013-01-09">
+  <operation duration="432000" end="AAAA-MM-DD" internalName="OP1" label="MyCampaign"
+  modelName="opEmpty" start="AAAA-MM-DD">
    <controlGroup>
     <where filteringSchema=""/>
    </controlGroup>
@@ -188,7 +188,7 @@ label="" name="" namespace="" vendor="">
    </fcpSeed>
    <owner _operation="none" name="admin" type="0"/>
    <program _operation="none" name="nmsOperations"/>
-   <task end="2013-01-17 10:07:51.000Z" label="MyTask" name="TSK2" start="2013-01-16 10:07:51.000Z"
+   <task end="2023-01-17 10:07:51.000Z" label="MyTask" name="TSK2" start="2023-01-16 10:07:51.000Z"
    status="1">
     <owner _operation="none" name="admin" type="0"/>
     <operation _operation="none" internalName="OP1"/>
@@ -354,7 +354,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 >[!IMPORTANT]
 >
 >Adobe不支持在不同版本之间导入。
-<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
+<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won't be able to help you resolve any issues you encounter.-->
 
 注意架构和数据库结构。 导入带架构的包后必须生成架构。
 
@@ -369,7 +369,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 * 您可以将实体同时视为“管理员”和“平台”元素。
 * 在Campaign实例上上传包时，包中不应包含多个实体。
 
-<!--Nothing “works” alone. An entity package does not have a specific role or objective.-->
+<!--Nothing "works" alone. An entity package does not have a specific role or objective.-->
 
 如果您需要在新实例上部署配置，则可以导入所有实体包。
 
