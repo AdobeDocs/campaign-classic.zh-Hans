@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '903'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Aligned with this naming, Campaign has 3 types of upgrades:
 | 状态 | 说明 |
 |---|---|
 | [!BADGE 正式发布版]{type=Positive} | 最新稳定版本，已在生产中验证并受到 Adobe 推荐。 |
-| [!BADGE 有限可用性]{type=Informational} | 仅限按需部署。 |
+| [!BADGE 有限发布版]{type=Informative} | 仅限按需部署。 |
 | [!BADGE 已弃用]{type=negative} | 无部署。无错误修复。必须升级现有实施。 |
 
 ## 发行周期{#rn-cycle}

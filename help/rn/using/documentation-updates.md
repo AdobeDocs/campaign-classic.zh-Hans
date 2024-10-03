@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 3f6bbf2766a61580c4f232d3919fe955d82a7881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3782'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 99%
 
 ## 2024
 
-### 2024年9月 {#sept-2024}
+### 2024 年 9 月 {#sept-2024}
 
-减少了版本状态并简化了版本。 [了解更多信息](rn-overview.md)
+版本状态已减少并简化。[了解更多信息](rn-overview.md)
 
-已针对v7.4.1更新Linux包安装。[了解更多](../../installation/using/installing-packages-with-linux.md)
+已针对 v7.4.1 更新 Linux 包安装。[了解更多信息](../../installation/using/installing-packages-with-linux.md)
 
 ### 2024 年 6 月 {#june-2024}
 
-更新了发行说明部分，更新内容包括7.4.1改进、兼容性更新和修补程序。 [了解更多信息](latest-release.md)
+更新了“发行说明”部分，其中包含 7.4.1 改进、兼容性更新和修补程序。[了解更多信息](latest-release.md)
 
 添加了说明在重新启动工作流时如何清除实例变量的注释。[了解更多信息](../../workflow/using/starting-a-workflow.md)
 
