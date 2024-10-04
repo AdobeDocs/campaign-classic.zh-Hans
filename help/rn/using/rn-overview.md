@@ -6,14 +6,14 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
-workflow-type: ht
+source-git-commit: 7b71cac6f4c2fc2e8d30683130adb27eff757b73
+workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 100%
 
 ---
 
-# 版本更新{#rn-overview}
+# 版本更新 {#rn-overview}
 
 Adobe Campaign Classic 会定期发布产品更新，这些更新包括新增功能、错误修复、性能改进、安全性提升及可用性增强。这些更新会作为&#x200B;**产品内部版本**&#x200B;发布。有关每个新的内部版本的详细信息，请参阅[发行说明](latest-release.md)。
 
@@ -34,10 +34,9 @@ Aligned with this naming, Campaign has 3 types of upgrades:
 1. Patch Upgrades - A patch upgrade includes fixes only (ex: 8.5.1 to 8.5.2)
 -->
 
-## 版本状态{#rn-statuses}
+## 版本状态 {#rn-statuses}
 
 在[发行说明](latest-release.md)中，每个新的内部版本都带有一个以颜色来分辨的状态。
-
 
 | 状态 | 说明 |
 |---|---|
@@ -45,7 +44,7 @@ Aligned with this naming, Campaign has 3 types of upgrades:
 | [!BADGE 有限发布版]{type=Informative} | 仅限按需部署。 |
 | [!BADGE 已弃用]{type=negative} | 无部署。无错误修复。必须升级现有实施。 |
 
-## 发行周期{#rn-cycle}
+## 发行周期 {#rn-cycle}
 
 Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、最充分的信息，保持环境的安全，并改进您对我们产品的体验。
 
@@ -53,7 +52,7 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 
 作为托管客户，您无需采取任何操作即可通过稳定的最新版本自动从升级中受益。在[年度升级部分](#yearly-upgrade)中了解详情。如果您从旧版本进行迁移，Adobe 建议您先升级到此版本。
 
-## 推荐{#recommendations}
+## 推荐 {#rn-recommendations}
 
 为确保配置稳定，Adobe 建议您在使用相同客户端配置运行的所有服务器上安装&#x200B;**相同的版本**。
 
