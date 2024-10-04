@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: cc614ed608f1e8229c0ef1ccf35dbac6cb9dddd3
+source-git-commit: e5468f2aa5dc18c2b24c3e80e416e423ad0e13c9
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1233'
 ht-degree: 2%
 
 ---
@@ -132,22 +132,6 @@ ht-degree: 2%
 
 * 基于RPM的分发(RedHat、SuSe)
 
-  要安装它们，请以root身份执行：
-
-  ```
-  yum install ./nlserver6-v7-XXXX.rpm
-  ```
-
-  其中XXX是文件的版本。
-
-  rpm文件依赖于可在CentOS/Red Hat分发中找到的软件包。 如果不想使用某些依赖关系，则可能需要使用rpm的“nodeps”选项：
-
-  ```
-  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
-  ```
-
-  请注意，大多数依赖项是必需的，如果没有安装，`nlserver`将无法启动。 唯一的例外是openjdk，如果需要，您可以安装另一个JDK。
-
   如果未安装`epel-release`包，请安装它。 要执行此操作，请以root身份输入以下命令：
 
   ```
@@ -173,6 +157,14 @@ ht-degree: 2%
   >[!IMPORTANT]
   >
   >如果您读取的是`Removing:`而不是`Upgrading:`，请取消该命令。 可能有一些错误（如上面所列）解释了删除操作。 在这种情况下，请通过更新/安装列出的缺失依赖项来更正这些错误，然后再次尝试运行该命令。
+
+  rpm文件依赖于可在CentOS/Red Hat分发中找到的软件包。 如果不想使用某些依赖关系，则可能需要使用rpm的“nodeps”选项：
+
+  ```
+  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+  ```
+
+  请注意，大多数依赖项是必需的，如果没有安装，`nlserver`将无法启动。 唯一的例外是openjdk，如果需要，您可以安装另一个JDK。
 
 * 基于DEB的分发(Debian)
 
