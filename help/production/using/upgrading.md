@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: e5468f2aa5dc18c2b24c3e80e416e423ad0e13c9
+source-git-commit: 0da7fb912a909af222d796652efba4b30e39dc1c
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1220'
 ht-degree: 2%
 
 ---
@@ -194,7 +194,7 @@ ht-degree: 2%
 >* 您的脚本可能名为&#x200B;**httpd**，而不是&#x200B;**apache**。
 >* 必须执行此命令，直到获得以下回复为止：
 >
->   Apache需要此操作才能应用新库。
+>   `This operation is required in order for Apache to apply the new library.`
 
 然后重新启动Apache：
 
