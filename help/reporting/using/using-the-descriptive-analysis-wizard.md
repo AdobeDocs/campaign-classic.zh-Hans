@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: 使用描述性分析助手
-description: 使用描述性分析助手
+title: 创建您的第一个描述性分析报表
+description: 了解如何使用助手创建您的第一个描述性分析报告
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1580'
 ht-degree: 0%
 
 ---
 
-# 使用描述性分析助手{#using-the-descriptive-analysis-wizard}
-
-
+# 创建您的第一个描述性分析报表 {#using-the-descriptive-analysis-wizard}
 
 要创建描述性分析报告，请使用专用助手。 配置取决于要分析的数据以及所需的渲染。
 

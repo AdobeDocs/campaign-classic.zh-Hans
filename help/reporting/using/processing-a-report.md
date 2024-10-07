@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: 使用分析报表
-description: 使用分析报表
+title: 管理和配置分析报告
+description: 管理和配置分析报告
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
 
-# 使用分析报表{#processing-a-report}
-
-
+# 管理和配置分析报告 {#processing-a-report}
 
 ## 保存分析报告 {#saving-an-analysis-report}
 

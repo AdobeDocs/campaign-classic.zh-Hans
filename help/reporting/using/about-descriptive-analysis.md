@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: 描述性分析入门
-description: 描述性分析入门
+title: 什么是描述性分析
+description: 使用描述性分析报告分析人群
 feature: Reporting, Monitoring
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
-# 描述性分析入门{#about-descriptive-analysis}
-
-
+# 什么是描述性分析 {#about-descriptive-analysis}
 
 为了生成关于数据库中数据的统计数据，请使用专用助理创建描述性分析报告，并根据您的需要调整其内容和演示。
 

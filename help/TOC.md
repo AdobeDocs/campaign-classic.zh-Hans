@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
-workflow-type: ht
-source-wordcount: '2552'
-ht-degree: 100%
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
+workflow-type: tm+mt
+source-wordcount: '2560'
+ht-degree: 99%
 
 ---
 
@@ -293,10 +293,10 @@ ht-degree: 100%
       + [指标计算](reporting/using/indicator-calculation.md)
       + [人员和收件人](reporting/using/person-people-recipients.md)
    + 分析人群{#analyzing-populations}
-      + [关于描述性分析](reporting/using/about-descriptive-analysis.md)
-      + [使用描述性分析助手](reporting/using/using-the-descriptive-analysis-wizard.md)
-      + [报告设置](reporting/using/processing-a-report.md)
-      + [用例](reporting/using/use-cases.md)
+      + [什么是描述性分析](reporting/using/about-descriptive-analysis.md)
+      + [创建您的第一个描述性分析报表](reporting/using/using-the-descriptive-analysis-wizard.md)
+      + [管理和配置分析报告](reporting/using/processing-a-report.md)
+      + [Analysis报告用例](reporting/using/use-cases.md)
    + 创建新报告{#creating-new-reports}
       + [设计报告的关键步骤](reporting/using/about-reports-creation-in-campaign.md)
       + [创建新报告](reporting/using/creating-a-new-report.md)
