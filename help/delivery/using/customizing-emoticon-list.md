@@ -6,9 +6,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Email, Push
 role: User, Data Engineer
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 287d1bf60b39e9e2b389701097995dbea962dec9
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '448'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,8 @@ ht-degree: 3%
 
 弹出式窗口中显示的表情符号列表由枚举规则，允许您在列表中显示值，以限制用户对给定字段的选择。
 表情符号列表顺序可以自定义，您也可以向列表添加其他表情符号。
-请参阅此[页面](defining-the-email-content.md#inserting-emoticons)中的表情符号以通过电子邮件和推送获取详细信息。
+
+请注意，表情符号仅可用于电子邮件和推送。 有关详细信息，请参阅此[页面](defining-the-email-content.md#inserting-emoticons)。
 
 ## 添加新表情符号 {#add-new-emoticon}
 
