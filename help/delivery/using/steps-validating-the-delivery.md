@@ -2,13 +2,12 @@
 product: campaign
 title: 验证投放
 description: 了解如何验证投放
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1653'
 ht-degree: 8%
 
 ---
@@ -126,9 +125,9 @@ ht-degree: 8%
 >
 >为了确保较大的投放分析不会减慢工作流的进度，您可以通过勾选&#x200B;**[!UICONTROL Schedule execution for a time of low activity]**&#x200B;来计划其执行。
 
-## 发送验证 {#sending-a-proof}
+## 发送校样 {#sending-a-proof}
 
-为了检测邮件配置中可能出现的错误，Adobe 强烈建议您设置投放验证周期。尽可能频繁地向测试收件人发送验证内容，确保内容已获得批准。每次进行变更时都应发送验证内容，以批准内容。
+为了检测邮件配置中可能出现的错误，Adobe 强烈建议您设置投放验证周期。反复向测试收件人发送校样，确保内容已获得批准。每次进行变更时都应发送校样，以批准内容。
 
 >[!NOTE]
 >

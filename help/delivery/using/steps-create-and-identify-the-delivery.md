@@ -2,14 +2,13 @@
 product: campaign
 title: 创建和识别投放
 description: 创建和识别投放
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Channel Configuration
 role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 4%
+source-wordcount: '275'
+ht-degree: 5%
 
 ---
 

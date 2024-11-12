@@ -2,13 +2,12 @@
 product: campaign
 title: 短信连接器协议和设置
 description: 了解关于短信连接器和配置方法的更多信息
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '8466'
+source-wordcount: '8457'
 ht-degree: 1%
 
 ---
@@ -844,7 +843,7 @@ SMS进程仅处理SR，它连接到提供商并保持连接打开。 该进程�
 检查您是否更改了投放提供商名称。 在生产环境中，投放日志绝不应该包含**SR Generic**。
 
 * **检查是否已处理MO**
-如果需要处理MO（自动回复、将MO存储在数据库中等）， 试着做些测试。 为所有自动回复关键字发送几条短信，并检查回复是否足够快，不超过几秒。
+如果需要处理MO（自动回复、将MO存储在数据库中等），请尝试进行一些测试。 为所有自动回复关键字发送几条短信，并检查回复是否足够快，不超过几秒。
 在日志中检查Adobe Campaign是否成功回复了`DELIVER_SM_RESP` (command_status=0)。
 
 ### 检查PDU {#check-pdus}

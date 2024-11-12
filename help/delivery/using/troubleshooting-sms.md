@@ -2,13 +2,12 @@
 product: campaign
 title: 短信故障排除
 description: 详细了解如何对短信渠道进行故障排除
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '2764'
+source-wordcount: '2755'
 ht-degree: 0%
 
 ---
@@ -37,15 +36,15 @@ Adobe Campaign将外部帐户视为不相关的实体。
 
 * **在任何时候只有一个帐户处于活动状态时，问题未出现**
 
-  帐户之间存在冲突。 如前所述，Adobe Campaign 会单独处理帐户，但提供商可能会将其视为单个帐户。
+  帐户之间存在冲突。 如前所述，Adobe Campaign单独处理帐户，但提供商可能会将其视为单个帐户。
 
-   * 您在所有帐户之间使用不同的登录名/密码组合。您必须联系提供商以诊断他们方面的潜在冲突。
+   * 您在所有帐户之间使用不同的登录/密码组合。
+您必须联系提供程序以诊断其一方的潜在冲突。
 
-   * 某些外部帐户共享相同的登录名/密码组合。提供商无法判断来自哪个外部帐户 `BIND PDU` ，因此他们将来自多个帐户的所有连接视为单个帐户。 他们可能已将MO和SR随机路由到两个帐户，从而导致出现问题。
-如果提供程序支持同一登录/密码组合使用多个短代码，则必须询问他们将短代码放在`BIND PDU`中的什么位置。 请注意，此信息必须放在`BIND PDU`中，而不是放在`SUBMIT_SM`中，因为`BIND PDU`是唯一允许正确路由MO的位置。
-请参阅上面各种PDU](sms-protocol.md#information-pdu)部分中的[信息以了解`BIND PDU`中可用的字段，通常是在`address_range`中添加短代码，但这需要提供程序的特别支持。 与他们联系，了解他们希望如何独立路由多个短代码。Adobe Campaign 支持在同一外部帐户上处理多个短代码。
+   * 某些外部帐户共享相同的登录名/密码组合。提供商无法判断来自哪个外部帐户 `BIND PDU` ，因此他们将来自多个帐户的所有连接视为单个帐户。 他们可能通过这两个帐户随机路由 MO 和 SR，从而导致问题。如果提供商支持同一登录名/密码组合的多个短代码，则必须询问他们将该短代码 `BIND PDU`放在 中的什么位置。 请注意，这条信息必须放在 中 `BIND PDU`，而不是 `SUBMIT_SM`放在 中，因为 是唯一 `BIND PDU` 允许正确路由 MO 的地方。请参阅上面各种PDU](sms-protocol.md#information-pdu)部分中的[信息以了解`BIND PDU`中可用的字段，通常是在`address_range`中添加短代码，但这需要提供程序的特别支持。 联系他们，了解他们希望如何独立路由多个短代码。
+Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
-## 外部帐户的一般问题 {#external-account-issues}
+## 外部帐户一般问题 {#external-account-issues}
 
 * 调查连接器最近是否已更改以及由谁更改（将外部帐户作为一个组检查）。
 
@@ -64,9 +63,9 @@ Adobe Campaign将外部帐户视为不相关的实体。
 * 调查（在 /postupgrade 目录中）系统是否已升级以及何时升级
 * 调查最近是否有任何影响 SMS 的程序包可能已升级 （/var/log/dpkg.log）。
 
-## 中间源问题（托管）{#issue-mid-sourcing}
+## 中源问题（托管）{#issue-mid-sourcing}
 
-* 如果问题发生在中间源环境中，请确保在中间源服务器上正确创建和更新投放和广泛日志。 如果不是这种情况，则这不是短信问题。
+* 如果问题发生在中间源环境中，请确保在中间源服务器上正确创建和更新传递日志和广泛日志。 如果不是这种情况，这不是短信问题。
 
 * 如果所有功能在中间服务器上都有效，并且短信已正确发送，但营销实例未正确更新，则您可能会遇到中间同步问题。
 
@@ -138,17 +137,17 @@ Adobe Campaign将外部帐户视为不相关的实体。
 
 * 如果您看到许多`BIND/UNBIND`，则表示您的连接不稳定。 在尝试解决重复消息问题之前，请查看不稳定的连接的[问题](troubleshooting-sms.md#issues-unstable-connection)部分以获取解决方案。
 
-在重试时降低重复项数：
+在重试时减少重复项数量：
 
-* 降低发送窗口。 发送窗口应足够大以覆盖 `SUBMIT_SM_RESP` 延迟。 其值表示在窗口已满时发生错误时可以复制的最大消息数。
+* 降低发送窗口。 发送窗口应足够大，以涵盖`SUBMIT_SM_RESP`延迟。 其值表示在窗口已满时发生错误时可以复制的最大消息数。
 
-## 处理SR（交货收货）时发货 {#issue-process-SR}
+## 处理 SR（交货收据）时出现问题 {#issue-process-SR}
 
-* 您需要启用SMPP跟踪才能进行任何类型的SR故障排除。
+* 您需要启用 SMPP 跟踪才能执行任何类型的 SR 故障排除。
 
 * 检查`DELIVER_SM PDU`是否来自提供程序并且格式正确。
 
-* 检查 Adobe Campaign 回复是否及时成功 `DELIVER_SM_RESP PDU` 。 在 Adobe Campaign Classic 上，这可以保证 SR 已插入到 `providerMsgId` 表中，以便 SMS 进程进行延迟处理。
+* 检查Adobe Campaign是否及时回复并成功回复了`DELIVER_SM_RESP PDU`。 在Adobe Campaign Classic上，这可保证SR已插入`providerMsgId`表，以供SMS进程延迟处理。
 
 `DELIVER_SM PDU`如果未成功确认，则应检查以下内容：
 
@@ -156,9 +155,9 @@ Adobe Campaign将外部帐户视为不相关的实体。
 
 * 检查表中是否正确预配 `broadLogMsg` 了错误。
 
-如果`DELIVER_SM PDU`已由Adobe Campaign Classic扩展SMPP连接器确认，但broadLog未正确更新，请检查[匹配MT、SR和broadlog条目](sms-protocol.md#matching-mt)部分中描述的ID协调过程。
+如果 已通过 Adobe Campaign Classic 扩展 SMPP 连接器确认，`DELIVER_SM PDU`但 broadLog 未正确更新，请检查匹配 MT、SR 和 broadlog 条目](sms-protocol.md#matching-mt)部分中[描述的 ID 协调过程。
 
-如果您修复了所有问题，但某些无效SR仍在提供程序的缓冲区中，则可以使用“无效ID确认计数”选项跳过它们。 应谨慎使用此项，并在清除缓冲区后尽快将其重置为0。
+如果您修复了所有内容，但一些无效的 SR 仍在提供程序的缓冲区中，则可以使用“无效的 ID 确认计数”选项跳过它们。 应谨慎使用，并在缓冲区清理后尽快重置为 0。
 
 ## 处理MO（和黑名单/自动回复）时的问题{#issue-process-MO}
 
@@ -230,21 +229,21 @@ Unicode允许使用多种变体来显示相似字符，而Adobe Campaign无法�
 
 * 如果您引用消息、PDU或日志，请清楚地声明其时间戳以使其更易于查找。
 
-* 尝试在测试环境中重现问题。 如果不确定设置，请在测试环境中尝试此设置，并使用SMPP跟踪检查结果。 报告在测试环境中复制的问题通常比直接报告生产环境中的问题更好。
+* 尝试在测试环境中重现问题。 如果不确定设置，请在测试环境中尝试此设置，并使用SMPP跟踪检查结果。 报告在测试环境中复制的问题通常比直接报告生产环境中的问题要好。
 
-* 包括在平台上所做的任何更改或调整。 此外，还包括提供商可能在其方面所做的任何更改。
+* 包括在平台上所做的任何更改或调整。 此外，还包括提供商可能对他们所做的任何更改。
 
 ### 网络捕获 {#network-capture}
 
-并不总是需要网络捕获，通常冗长的SMPP消息就足够了。 下面是一些准则，可帮助您确定是否需要网络捕获：
+并不总是需要网络捕获，通常冗长的 SMPP 消息就足够了。 下面是一些准则，可帮助您确定是否需要网络捕获：
 
 * 连接有问题，但详细消息未显示任何`BIND_RESP PDU`。
 
-* 无法解释的断开连接，没有错误消息，连接器检测到低级别协议错误时的通常行为。
+* 无法解释的断开连接没有错误信息，这是连接器检测到低级协议错误时的常规行为。
 
 * 提供程序抱怨解除bind/断开连接的过程。
 
-* 可选TLV字段中存在编码问题。
+* 可选 TLV 字段中的编码问题。
 
 * 怀疑不同连接之间混合了流量。
 

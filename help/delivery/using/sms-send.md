@@ -2,14 +2,13 @@
 product: campaign
 title: 发送、监控和跟踪短信
 description: 了解如何在Campaign中发送、监控和跟踪短信
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 3%
+source-wordcount: '962'
+ht-degree: 4%
 
 ---
 
@@ -56,7 +55,7 @@ ht-degree: 3%
 
 * **每条消息的最大短信数**：此选项允许您设置用于发送消息的短信数。 如果数字设置为0，则可以使用短信传递消息。 例如，如果短信数量设置为1或2，而消息超过此阈值，则不会发送该消息。
 
-## 监控和跟踪短信 {#monitoring-and-tracking-sms-deliveries}
+## 监测和跟踪短信 {#monitoring-and-tracking-sms-deliveries}
 
 发送消息后，您可以监控和跟踪投放。 有关更多信息，请参阅一下章节。
 

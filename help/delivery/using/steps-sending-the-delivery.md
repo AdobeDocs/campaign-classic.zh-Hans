@@ -2,13 +2,12 @@
 product: campaign
 title: 配置和发送投放
 description: 了解如何配置和发送投放
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Channel Configuration
 role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1517'
 ht-degree: 11%
 
 ---

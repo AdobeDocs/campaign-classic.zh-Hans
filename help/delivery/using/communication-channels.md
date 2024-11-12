@@ -2,14 +2,13 @@
 product: campaign
 title: 通信渠道
 description: 创建投放，在不同渠道上发送个性化信息
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 63%
+source-wordcount: '1205'
+ht-degree: 61%
 
 ---
 
@@ -82,7 +81,7 @@ Adobe Campaign允许您通过专用应用程序在iOS和Android移动设备上�
 
 [直邮](about-direct-mail-channel.md)是脱机渠道，允许您个性化并生成直邮提供商所需的文件。 利用这种手段，可将线上和线下渠道有机地结合，用在客户历程中。
 
-利用线上渠道，可创建消息（电子邮件、短信、移动应用投放等）并直接从 Adobe Campaign 发送至受众。线下渠道则不同。在准备直邮投放时，Adobe Campaign 会生成一个文件，其中包含了所有定向的用户档案和选定的联系信息（例如邮政地址）。然后，您可以将此文件发送给直邮提供商，由其负责发送纸质信函。
+利用在线渠道，可创建消息（电子邮件、短信、移动应用程序投放等），并直接从Adobe Campaign将其发送给受众。 线下渠道则不同。在准备直邮投放时，Adobe Campaign 会生成一个文件，其中包含了所有定向的用户档案和选定的联系信息（例如邮政地址）。然后，您可以将此文件发送给直邮提供商，由其负责发送纸质信函。
 
 ## 其他渠道 {#other-channels}
 

@@ -2,13 +2,12 @@
 product: campaign
 title: 定义目标群体
 description: 了解如何定义目标群体
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1593'
 ht-degree: 2%
 
 ---
