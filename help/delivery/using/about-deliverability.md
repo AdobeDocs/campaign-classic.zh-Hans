@@ -6,9 +6,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '654'
 ht-degree: 7%
 
 ---
@@ -40,9 +40,8 @@ ht-degree: 7%
 使用Adobe Campaign时，可投放性比率取决于多种因素，特别是：
 
 * 实例的正确配置：请联系您的Adobe代表寻求帮助。
-* 合法的网络配置：请参阅[此部分](optimize-delivery.md#network-config)和[域设置和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy)。
+* 合法的网络配置：请参阅[域设置和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy)。
 * 您的IP地址信誉：请参阅[IP策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy)。
-* 目标地址的质量：请参阅[隔离管理](optimize-delivery.md#quarantine-management)。
 * 低[投诉](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html)和[硬退回](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces)率。
 * 您的邮件内容：请参阅[控制电子邮件内容](control-message-content.md)。
 * 消息身份验证(SPF、DKIM、DMARC)：请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。

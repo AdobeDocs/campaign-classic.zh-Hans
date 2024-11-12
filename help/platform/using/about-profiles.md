@@ -6,9 +6,9 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '896'
 ht-degree: 33%
 
 ---
@@ -117,10 +117,6 @@ Adobe Campaign资源管理器的常规布局显示在[此页面](../../platform/
 
 * Campaign中的[隐私管理](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)
 
-* [定义目标群体](../../delivery/using/define-the-right-audience.md)
-
 * [在工作流中创建查询和区段数据](../../workflow/using/targeting-data.md)
 
 * [选择目标映射](../../delivery/using/selecting-a-target-mapping.md)
-
-* [定义受众 — 最佳实践](../../delivery/using/define-the-right-audience.md)

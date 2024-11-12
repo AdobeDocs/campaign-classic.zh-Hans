@@ -6,8 +6,8 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: ht
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+workflow-type: tm+mt
 source-wordcount: '2560'
 ht-degree: 100%
 
@@ -116,8 +116,8 @@ ht-degree: 100%
       + [定义受众](delivery/using/steps-defining-the-target-population.md)
       + [验证投放](delivery/using/steps-validating-the-delivery.md)
       + [发送投放](delivery/using/steps-sending-the-delivery.md)
+      + [投放最佳实践](delivery/using/delivery-best-practices.md)
       + 投放最佳实践 {#delivery-bestpractices}
-         + [学习良好实践](delivery/using/delivery-best-practices.md)
          + [优化投放](delivery/using/optimize-delivery.md)
          + [使用模板](delivery/using/use-templates.md)
          + [生成个性化内容](delivery/using/design-and-personalize.md)

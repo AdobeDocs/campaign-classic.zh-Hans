@@ -6,9 +6,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: de6e86eb2304a88e836c5759b87d7f38446ed357
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '748'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->有关编辑电子邮件内容的详细信息，请参阅[定义电子邮件内容](defining-the-email-content.md)和[生成个性化内容](design-and-personalize.md)。
+>有关编辑电子邮件内容的详细信息，请参阅[定义电子邮件内容](defining-the-email-content.md)。
 
 ## 发件人地址 {#sender-address}
 
@@ -44,8 +44,6 @@ ht-degree: 6%
 为了改善收件人的体验并让他们打开您的电子邮件，Adobe Campaign允许您个性化您的消息。
 
 有关在Adobe Campaign中使用个性化字段的更多信息，请参阅[此部分](personalization-fields.md)。
-
-[此部分](design-and-personalize.md#optimize-personalization)中介绍了在构建内容时优化个性化的一些提示。
 
 ## 选择退出链接和表单 {#opt-out}
 
