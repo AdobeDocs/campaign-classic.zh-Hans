@@ -2,13 +2,14 @@
 product: campaign
 title: 创建投放模板
 description: 创建投放模板
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Delivery Templates
+hide: true
+hidefromtoc: true
 role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '378'
 ht-degree: 7%
 
 ---

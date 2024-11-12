@@ -2,14 +2,15 @@
 product: campaign
 title: 选择目标映射
 description: 了解如何定位映射
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Delivery Templates
+hide: true
+hidefromtoc: true
 role: User
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 12%
+source-wordcount: '184'
+ht-degree: 13%
 
 ---
 
