@@ -6,7 +6,7 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
 source-wordcount: '5959'
 ht-degree: 2%
@@ -188,7 +188,7 @@ Campaign数据模型是一组架构，用于定义数据类型及其关系（链
 
 *Context: Transactional Messaging*
 
-Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The “Per-Dedicated Server” designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
+Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The "Per-Dedicated Server" designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
 
 Learn more about [Transactional Messaging](../../message-center/using/about-transactional-messaging.md).
 +++
@@ -240,7 +240,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *上下文：直邮*
 
-投放概要是一组结构化的元素（文档、商店、促销优惠券等） 由公司创建，并用于特定营销活动。 它在直邮投放的上下文中使用。
+投放概要是由公司为特定营销活动创建的一组结构化元素（文档、商店、促销优惠券等）。 它在直邮投放的上下文中使用。
 
 了解有关[直邮](../../delivery/using/about-direct-mail-channel.md)的更多信息。
 +++
@@ -263,12 +263,12 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *上下文：分布式营销*
 
-分布式营销附加组件为Campaign操作员提供了一个协作工作区，用于在中央实体（总部、营销部门等）和本地实体（商店、区域代理等）之间 和地方实体（销售点、区域机构等）之间实施协作营销活动。此合作基于称为&#x200B;**Campaign包列表**&#x200B;的共享工作区，在该工作区中，集中创建的活动模板和实例将提供给本地实体。
+分布式营销附加组件为Campaign操作员提供了一个协作工作区，用于在中央实体（总部、营销部门等）和地方实体（销售点、区域机构等）之间实施营销活动。 此合作基于称为&#x200B;**Campaign包列表**&#x200B;的共享工作区，在该工作区中，集中创建的活动模板和实例将提供给本地实体。
 
 了解有关[分布式营销](../../distributed/using/about-distributed-marketing.md)的更多信息
 +++
 
-+++**值分布**
++++**值的分布**
 
 值分布是一种工具，它显示当前存在于数据库中的方案属性的值分布。 这有助于您确定哪些值可用、其计数和百分比，并在创建查询或表达式时避免出现大写和拼写值问题。
 
@@ -460,7 +460,7 @@ Campaign热图是一个显示24小时期间的工作流执行信息的表。 它
 ----NOT USEFUL HERE?----
 +++**Image serving**
 
-The functionality that supplies the images embedded in emails to the delivery’s recipients. The insertion of the images based on an emails system’s “download images” functionality is what generates an “open” entry in Campaign’s tracking logs.
+The functionality that supplies the images embedded in emails to the delivery's recipients. The insertion of the images based on an emails system's "download images" functionality is what generates an "open" entry in Campaign's tracking logs.
 
 Learn more about [Image serving](../../delivery/using/defining-the-email-content.md#adding-images).
 +++
@@ -676,7 +676,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 *上下文： Campaign交互*
 
-通过优惠模拟，操作员可以测试定义范围（投放日期、目标区段、优惠数量、主题等）内的优惠分发 才实际发送选件。 它可用于调整优惠优先级和资格规则，以最大限度地提高优惠有效性。
+通过选件模拟，操作员可在实际发送选件之前测试定义范围（投放日期、目标区段、选件数量、主题等）内的选件分发。 它可用于调整优惠优先级和资格规则，以最大限度地提高优惠有效性。
 
 了解有关[优惠模拟](../../interaction/using/about-offers-simulation.md)的详细信息。
 +++
@@ -845,7 +845,7 @@ Adobe Campaign中的公共资源文件夹包含由应用程序服务器托管的
 
 +++**收件人**
 
-在Adobe Campaign中，收件人是发送投放内容（电子邮件、短信等）所定位的默认用户档案 给您的客户。 通过存储在数据库中的收件人数据，可筛选目标并添加个性化数据。 通常，这些信息包括个人、联系人、人口统计和事务性信息，但也可以是支持营销和分析的任何类型的信息。
+在Adobe Campaign中，收件人是指向客户发送投放内容（电子邮件、短信等）所定位的默认用户档案。 通过存储在数据库中的收件人数据，可筛选目标并添加个性化数据。 通常，这些信息包括个人、联系人、人口统计和事务性信息，但也可以是支持营销和分析的任何类型的信息。
 
 了解有关[收件人](../../configuration/using/about-data-model.md)的更多信息。
 +++
@@ -939,7 +939,7 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 
 目标映射是投放渠道到特定数据类型的映射。 目标映射定义不同投放渠道如何链接到架构的数据字段。 它定义Campaign如何使用特定字段或表达式发送到该数据类型。
 
-了解有关[目标映射](../../delivery/using/selecting-a-target-mapping.md)的详细信息。
+了解有关[目标映射](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)的详细信息。
 +++
 
 +++**定位活动**
@@ -984,7 +984,7 @@ Learn more about [Tasks](../../workflow/using/about-workflows.md).
 -----ACS -> SEEDS IN ACC-----
 +++**Test profiles**
 
-Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
+Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message's audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
 
 Learn more about [Test profiles](../../workflow/using/about-workflows.md).
 +++

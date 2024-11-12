@@ -5,10 +5,10 @@ description: 了解如何定义目标群体
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
-source-wordcount: '1593'
-ht-degree: 2%
+source-wordcount: '1729'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 1. 在&#x200B;**[!UICONTROL Target mapping]**&#x200B;下拉列表中选择目标映射。 Adobe Campaign默认目标映射为&#x200B;**[!UICONTROL Recipients]**，基于&#x200B;**nms：recipient**&#x200B;架构。
 
-   可以使用其他目标映射，其中一些映射可能与您的特定配置相关。 有关目标映射的详细信息，请参阅[选择目标映射](selecting-a-target-mapping.md)。
+   可以使用其他目标映射，其中一些映射可能与您的特定配置相关。[了解详情](#select-a-target-mapping)。
 
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以定义限制筛选器。
 
@@ -93,7 +93,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. 默认情况下，会在数据库中导入收件人。 您必须选择&#x200B;**[!UICONTROL Target mapping]**。 有关目标映射的详细信息，请参阅[选择目标映射](selecting-a-target-mapping.md)
+1. 默认情况下，会在数据库中导入收件人。 您必须选择&#x200B;**[!UICONTROL Target mapping]**。 [了解详情](#select-a-target-mapping)
 
    您还可以选择&#x200B;**[!UICONTROL Do not import the recipients into the database]**。
 
@@ -225,6 +225,25 @@ ht-degree: 2%
 * [选择验证目标](#selecting-the-proof-target)
 * [关于种子地址](about-seed-addresses.md)
 * [用例：根据条件选择种子地址](use-case-selecting-seed-addresses-on-criteria.md)
+
+## 选择目标映射 {#select-a-target-mapping}
+
+默认情况下，投放模板以&#x200B;**[!UICONTROL Recipients]**&#x200B;为目标。 因此，它们的目标映射使用&#x200B;**nms：recipient**&#x200B;表的字段。 Adobe Campaign为您的投放提供了其他目标映射，可根据您的需求使用。
+
+![](assets/delivery_select_mapping.png)
+
+这些映射如下所示：
+
+| 名称 | 使用 | 标准架构 |
+|---|---|---|
+| 收件人 | 投放给Adobe Campaign数据库的收件人 | nms：recipient |
+| 访客 | 向通过反向链接（病毒式营销）或社交网络(例如Facebook， X — 以前称为Twitter)收集用户档案的访客投放。 | mns：visitor |
+| 订阅 | 发送给订阅了新闻稿等信息服务的收件人 | nms：subscription |
+| 访客订阅 | 向订阅了信息服务的访客投放 | nms：visitorSub |
+| 服务 | Publish到X帐户或Facebook页面 | nms：service |
+| 运算符 | 交付给Adobe Campaign操作员 | nms：operator |
+| 外部文件 | 通过包含投放所需所有信息的文件投放 | 无链接架构，未输入目标 |
+
 
 ## 教程视频 {#seeds-and-proofs-video}
 

@@ -7,7 +7,7 @@ feature: Delivery Templates
 hide: true
 hidefromtoc: true
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 1%
@@ -20,11 +20,11 @@ ht-degree: 1%
 
 通过为最常见的活动类型提供现成的方案，交付模板可以提高效率。 借助模板，营销人员可以在更短的时间内部署具有最小自定义的新营销活动。
 
-在[本节](creating-a-delivery-template.md)中了解有关投放模板的更多信息。
+在[本节](about-templates.md)中了解有关投放模板的更多信息。
 
 ## 投放模板入门 {#gs-templates}
 
-[投放模板](creating-a-delivery-template.md)允许您定义一组技术和功能属性，这些属性既适合您的需求，又可用于将来投放。 然后，您可以节省时间并在需要时标准化交付。
+[投放模板](about-templates.md)允许您定义一组技术和功能属性，这些属性既适合您的需求，又可用于将来投放。 然后，您可以节省时间并在需要时标准化交付。
 
 在Adobe Campaign中管理多个品牌时，Adobe建议每个品牌具有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，则其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每个子域拥有一个投放模板，让您能够始终为每个品牌使用正确的预配置参数，从而避免错误并节省您的时间。
 
@@ -44,7 +44,7 @@ ht-degree: 1%
 
 要在Campaign界面中配置地址，请执行以下步骤：
 
-1. 在[投放模板](creating-a-delivery-template.md)中，单击&#x200B;**[!UICONTROL From]**&#x200B;链接。 在&#x200B;**[!UICONTROL Email header parameters]**&#x200B;窗口中，填写以下字段：
+1. 在[投放模板](about-templates.md)中，单击&#x200B;**[!UICONTROL From]**&#x200B;链接。 在&#x200B;**[!UICONTROL Email header parameters]**&#x200B;窗口中，填写以下字段：
 
    ![](assets/d_best_practices_email_header.png)
 

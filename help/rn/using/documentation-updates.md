@@ -6,8 +6,8 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 3f6bbf2766a61580c4f232d3919fe955d82a7881
-workflow-type: ht
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+workflow-type: tm+mt
 source-wordcount: '3782'
 ht-degree: 100%
 
@@ -398,7 +398,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 * [如何创建包含条件内容的多语言新闻稿](../../delivery/using/conditional-content.md)
 
-* [如何配置和部署投放模板](../../delivery/using/creating-a-delivery-template.md)
+* [如何配置和部署投放模板](../../delivery/using/about-templates.md)
 
 * [如何激活和使用 AMP 处理电子邮件](../../delivery/using/defining-interactive-content.md)
 
@@ -406,7 +406,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 * [如何使用个性化字段个性化电子邮件](../../delivery/using/personalization-fields.md)
 
-* [如何在电子邮件中管理种子和验证](../../delivery/using/steps-defining-the-target-population.md)
+* [如何在电子邮件中管理种子和校样](../../delivery/using/steps-defining-the-target-population.md)
 
 * [如何设置循环投放](../../workflow/using/recurring-delivery.md)
 

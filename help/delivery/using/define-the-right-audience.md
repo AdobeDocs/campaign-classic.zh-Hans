@@ -8,7 +8,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 4%
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 例如，您可以向通过社交网络收集用户档案的访客或订阅了信息服务的访客投放。
 
-此部分](selecting-a-target-mapping.md)中提供了这些映射[。
+此部分](steps-defining-the-target-population.md#select-a-target-mapping)中提供了这些映射[。
 
 您还可以创建和使用自定义的目标映射。 如需详细信息，请参阅[此小节](../../configuration/using/target-mapping.md)。
 

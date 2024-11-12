@@ -6,7 +6,7 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 2%
@@ -14,8 +14,6 @@ ht-degree: 2%
 ---
 
 # 目标映射{#target-mapping}
-
-
 
 在以下两种情况下，需要创建目标映射：
 

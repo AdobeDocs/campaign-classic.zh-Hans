@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '793'
 ht-degree: 6%
 
 ---
@@ -169,10 +169,6 @@ Once the control and execution modules are installed on the same instance, you m
 
 1. 为每个品牌创建一个与[执行实例](#execution-instance)上定义的内部名称相同的外部帐户（步骤1）。
 
-1. 为每个品牌创建一个默认投放模板。
-
-   >[!NOTE]
-   >
-   >    在[本节](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template)中了解如何创建投放模板。
+1. 为每个品牌创建[投放模板](../../delivery/using/about-templates.md)。
 
 1. 在投放模板的&#x200B;**[!UICONTROL Properties]**&#x200B;中，将路由设置为品牌的外部帐户。

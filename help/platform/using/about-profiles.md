@@ -6,7 +6,7 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 33%
@@ -119,4 +119,4 @@ Adobe Campaign资源管理器的常规布局显示在[此页面](../../platform/
 
 * [在工作流中创建查询和区段数据](../../workflow/using/targeting-data.md)
 
-* [选择目标映射](../../delivery/using/selecting-a-target-mapping.md)
+* [选择目标映射](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)
