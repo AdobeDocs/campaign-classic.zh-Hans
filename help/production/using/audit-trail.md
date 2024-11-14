@@ -4,16 +4,18 @@ title: 审核记录
 description: 了解如何使用Campaign审核记录监控实例
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 6d94ca01f23f7f2409fbdcb4e4c4716d694d527f
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '420'
 ht-degree: 2%
 
 ---
 
 # 审核记录{#audit-trail}
 
-
+>[!INFO]
+>
+>请参阅Adobe Campaign v8文档以了解有关审核记录功能的更多信息。
 
 在Adobe Campaign中，**[!UICONTROL Audit trail]**&#x200B;可让您访问实例中所做更改的完整历史记录。
 
@@ -24,13 +26,15 @@ ht-degree: 2%
 >Adobe Campaign不会审核在用户权限、模板、个性化或营销活动中所做的更改。\
 >审核记录只能由实例的管理员管理。
 
-审核记录包括三个组件：
+![](assets/audit_trail_2.png)
 
-* **架构审核跟踪**：检查您的架构的活动和上次所做的修改。
++++ 了解有关审核记录可用实体的更多信息
+
+* **架构审核跟踪**：允许您浏览对架构所做的更改，并识别进行这些修改的人员和时间。
 
   有关架构的详细信息，请参阅此[页面](../../configuration/using/data-schemas.md)。
 
-* **工作流审核跟踪**：检查活动和上次对工作流所做的修改，以及工作流的状态，例如：
+* **工作流审核跟踪**&#x200B;跟踪与您的工作流相关的所有操作，包括：
 
    * 开始
    * 暂停
@@ -45,63 +49,32 @@ ht-degree: 2%
 
   有关如何监视工作流的详细信息，请参阅[专用部分](../../workflow/using/monitoring-workflow-execution.md)。
 
-* **选项审核跟踪**：检查您的选项的活动和上次所做的修改。
+* **选项审核记录**&#x200B;允许您检查活动和对选项所做的最后修改。
 
   有关选项的更多信息，请参阅此[页面](../../installation/using/configuring-campaign-options.md)。
 
-## 访问审核记录 {#accessing-audit-trail}
+* **投放审核跟踪**&#x200B;允许您检查投放的活动和上次所做的修改。
 
-要访问实例的&#x200B;**[!UICONTROL Audit trail]**，请执行以下操作：
+  有关投放的详细信息，请参阅此[页面](../../delivery/using/communication-channels.md)。
 
-1. 访问实例的&#x200B;**[!UICONTROL Explorer]**&#x200B;菜单。
-1. 在&#x200B;**[!UICONTROL Administration]**&#x200B;菜单下，选择&#x200B;**[!UICONTROL Audit]** 。
+* **外部帐户**&#x200B;允许您检查对外部帐户所做的修改，这些修改由技术工作流或活动工作流等技术流程使用。
 
-   ![](assets/audit_trail_1.png)
+  有关外部帐户的详细信息，请参阅此[页面](../../installation/using/external-accounts.md)。
 
-1. 此时将打开&#x200B;**[!UICONTROL Audit trail]**&#x200B;窗口，其中包含您的实体列表。 Adobe Campaign将审核工作流、选项和架构的创建、编辑和删除操作。
+* **投放映射**&#x200B;允许您监视活动以及最近对投放映射所做的修改。
 
-   选择其中一个实体以了解有关上次修改的更多信息。
+  有关投放映射的详细信息，请参阅此[页面](../../configuration/using/target-mapping.md)。
 
-   ![](assets/audit_trail_2.png)
+* **Web应用程序**&#x200B;允许您检查Campaign V8中对Web窗体所做的修改，该窗体用于创建具有输入和选择字段的页面，并且可能包含来自数据库的数据。
 
-1. **[!UICONTROL Audit entity]**&#x200B;窗口为您提供有关所选实体的更多详细信息，例如：
+  有关Web应用程序的详细信息，请参阅此[页面](../../web/using/about-web-applications.md)。
 
-   * **[!UICONTROL Type]** ：工作流、选项或架构。
-   * **[!UICONTROL Entity]** ：活动的内部名称。
-   * **[!UICONTROL Modified by]** ：上次修改此实体的人员的用户名。
-   * **[!UICONTROL Action]** ：对此实体执行的最后一个操作，已创建、已编辑或已删除。
-   * **[!UICONTROL Modification date]** ：对此实体执行的上次操作的日期。
+* **选件**&#x200B;允许您检查活动和对选件所做的最后修改。
 
-   代码块为您提供了有关实体中确切更改的更多信息。
+  有关选件的详细信息，请参阅此[页面](../../interaction/using/interaction-and-offer-management.md)。
 
-   ![](assets/audit_trail_3.png)
+* 通过&#x200B;**操作员**，您可以监视操作员的活动和最近所做的修改。
 
->[!NOTE]
->
->默认情况下，**[!UICONTROL Audit logs]**&#x200B;的保留期设置为180天。 有关如何更改保留期的更多信息，请参阅此[页面](../../production/using/database-cleanup-workflow.md#deployment-assistant)。
+  有关运算符的详细信息，请参阅此[页面](../../platform/using/access-management-operators.md)。
 
-## 启用/禁用审核跟踪 {#enable-disable-audit-trail}
-
-例如，如果您想在数据库上节省一些空间，则可以轻松地为特定活动激活或停用审核跟踪。
-
-为实现此操作，请执行以下步骤：
-
-1. 访问实例的&#x200B;**[!UICONTROL Explorer]**&#x200B;菜单。
-1. 在&#x200B;**[!UICONTROL Administration]**&#x200B;菜单下，选择&#x200B;**[!UICONTROL Platform]**，然后选择&#x200B;**[!UICONTROL Options]** 。
-
-   ![](assets/audit_trail_4.png)
-
-1. 根据要激活/取消激活的实体，选择以下选项之一：
-
-   * 对于工作流： **[!UICONTROL XtkAudit_Workflows]**
-   * 对于架构： **[!UICONTROL XtkAudit_DataSchema]**
-   * 选项： **[!UICONTROL XtkAudit_Option]**
-   * 对于每个实体： **[!UICONTROL XtkAudit_Enable_All]**
-
-   ![](assets/audit_trail_5.png)
-
-1. 如果要启用该实体，请将&#x200B;**[!UICONTROL Value]**&#x200B;更改为1；如果要禁用该实体，请将其更改为0。
-
-   ![](assets/audit_trail_6.png)
-
-1. 单击&#x200B;**[!UICONTROL Save]** 。
++++
