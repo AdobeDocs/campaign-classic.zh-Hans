@@ -4,9 +4,9 @@ title: 审核记录
 description: 了解如何使用Campaign审核记录监控实例
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 6d94ca01f23f7f2409fbdcb4e4c4716d694d527f
+source-git-commit: 3d1ed85dcafc5afc4088db98c09d78fb7e9c0a39
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '421'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->请参阅Adobe Campaign v8文档以了解有关审核记录功能的更多信息。
+>请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail)以了解有关审核记录功能的更多信息。
 
 在Adobe Campaign中，**[!UICONTROL Audit trail]**&#x200B;可让您访问实例中所做更改的完整历史记录。
 
