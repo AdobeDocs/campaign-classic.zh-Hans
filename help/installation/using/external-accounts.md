@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 8180f77c2824f9b54ae3c924b1cc45532675cf85
 workflow-type: tm+mt
-source-wordcount: '1757'
+source-wordcount: '1784'
 ht-degree: 8%
 
 ---
@@ -100,6 +100,8 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 * **[!UICONTROL Azure Redirect URL]**
 
   可在Azure门户中应用程序的&#x200B;**身份验证**&#x200B;菜单中找到重定向URL。 它应使用以下语法`nl/jsp/oauth.jsp`结束，如`https://redirect.adobe.net/nl/jsp/oauth.jsp`。
+
+安装和使用客户端控制台中的&#x200B;**[!UICONTROL Test Connection]**&#x200B;按钮需要Internet访问。 设置完成后，inMail进程可以与Microsoft服务器通信，而无需互联网。
 
 输入其他凭据后，可单击&#x200B;**[!UICONTROL Setup the connection]**&#x200B;以完成外部帐户配置。
 
@@ -322,9 +324,9 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 >
 > **[!UICONTROL On-premise]**&#x200B;和&#x200B;**[!UICONTROL Office 365]**&#x200B;部署类型现已弃用。 [了解详情](../../rn/using/deprecated-features.md)。
 
-**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户允许您将Microsoft Dynamics数据导入和导出到Adobe Campaign。
+**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户允许您将Microsoft Dynamics数据导入和导出到Adobe Campaign中。
 
-在此[页](../../platform/using/crm-ms-dynamics.md)中了解有关Campaign - Microsoft Dynamics CRM连接器的更多信息。
+在此[页面](../../platform/using/crm-ms-dynamics.md)中了解有关Campaign - Microsoft Dynamics CRM连接器的更多信息。
 
 对于&#x200B;**[!UICONTROL Web API]**&#x200B;部署类型和&#x200B;**[!UICONTROL Password credentials]**&#x200B;身份验证，您需要提供以下详细信息：
 
@@ -380,7 +382,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 ### Salesforce.com CRM  {#salesforce-crm-external-account}
 
-**[!UICONTROL Salesforce CRM]**&#x200B;外部帐户允许您将Salesforce数据导入和导出到Adobe Campaign。
+**[!UICONTROL Salesforce CRM]**&#x200B;外部帐户允许您将Salesforce数据导入和导出到Adobe Campaign中。
 
 ![](assets/ext_account_17.png)
 
@@ -388,7 +390,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL Account]**
 
-  用于登录Salesforce CRM的帐户。
+  用于登录到Salesforce CRM的帐户。
 
 * **[!UICONTROL Password]**
 
