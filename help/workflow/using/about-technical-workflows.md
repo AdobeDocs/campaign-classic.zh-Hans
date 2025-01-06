@@ -4,7 +4,7 @@ title: 技术工作流
 description: 了解有关Campaign Classic包中可用的技术工作流的更多信息
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%

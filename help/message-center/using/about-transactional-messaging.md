@@ -4,7 +4,7 @@ title: 事务性消息传递入门
 description: 详细了解Adobe Campaign Classic事务型消息传递的工作原理和关键步骤
 feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 4%

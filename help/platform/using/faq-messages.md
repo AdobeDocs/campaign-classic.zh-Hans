@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 95%
@@ -30,7 +30,7 @@ ht-degree: 95%
 
 ### 为何要创建验证？ {#why-should-i-create-proofs-}
 
-Adobe 强烈建议您先创建验证邮件，在将邮件发送到主目标前先行在审批组上测试投放。然后可以确认邮件内容、个性化和投放参数。
+Adobe 强烈建议您先创建校样邮件，在将邮件发送到主目标前先行在审批组上测试投放。然后可以确认邮件内容、个性化和投放参数。
 
 [单击此处了解更多信息](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
@@ -40,14 +40,14 @@ Adobe 强烈建议您先创建验证邮件，在将邮件发送到主目标前�
 
 这样做有以下好处：
 
-* 使用收件人用户档案中的数据随机替代字段：例如，您可以在种子地址部分中仅输入电子邮件地址。
+* 使用收件人轮廓中的数据随机替代字段：例如，您可以在种子地址部分中仅输入电子邮件地址。
 * 使用具有数据管理功能的工作流时，可在种子地址级别输入投放中已处理的其他数据，以强制使用该值：这可以作为随机值替代的另一做法。
 
 [单击此处了解有关种子地址的更多信息](../../delivery/using/about-seed-addresses.md)。
 
 ### 如何设置发送邮件前的批准流程？ {#how-can-i-set-up-an-approval-process-before-sending-messages-}
 
-为了检测邮件配置中可能出现的错误，Adobe 强烈建议您设置投放验证周期。尽可能频繁地向测试收件人发送验证内容，确保内容已获得批准。每次进行变更时都应发送验证内容，以批准内容。
+为了检测邮件配置中可能出现的错误，Adobe 强烈建议您设置投放验证周期。反复向测试收件人发送校样，确保内容已获得批准。每次进行变更时都应发送校样，以批准内容。
 
 [单击此处了解更多信息](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 

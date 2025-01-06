@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -175,4 +175,4 @@ Adobe建议取消选择选项&#x200B;**[!UICONTROL No longer ask this question]*
 
 >[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

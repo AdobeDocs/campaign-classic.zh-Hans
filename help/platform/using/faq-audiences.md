@@ -1,32 +1,32 @@
 ---
 product: campaign
-title: 用户档案和受众常见问题解答
+title: 轮廓和受众常见问题解答
 description: Campaign Classic 常见问题解答
 feature: Audiences, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ba8bf610-cbac-41e9-8b6e-130deb8b97e2
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 98%
 
 ---
 
-# 用户档案和受众常见问题解答 {#audiences-faq}
+# 轮廓和受众常见问题解答 {#audiences-faq}
 
 
 
-了解如何使用 Adobe Campaign 定位群体并管理受众。
+了解如何使用 Adobe Campaign 锁定群体并管理受众。
 
 ## 如何创建收件人？ {#how-to-create-recipients-}
 
-您可以使用 Campaign 客户端控制台导入或手动创建收件人。阅读[此部分](../../platform/using/about-profiles.md)，并了解如何在 Campaign 中创建和管理用户档案。
+您可以使用 Campaign 客户端控制台导入或手动创建收件人。阅读[此部分](../../platform/using/about-profiles.md)，并了解如何在 Campaign 中创建和管理轮廓。
 
 ## 如何导入用户档案？ {#how-to-import-profiles-}
 
-探索在数据库中[导入用户档案](../../platform/using/import-operations-samples.md)的轻松用例。
+探索在数据库中[导入轮廓](../../platform/using/import-operations-samples.md)的轻松用例。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
 
@@ -55,4 +55,4 @@ ht-degree: 98%
 
 ## 从目标群体中排除用户档案的最佳实践是什么？ {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-请参阅[此页面](../../workflow/using/read-list.md)，了解如何从目标群体中排除一个用户档案列表。
+请参阅[此页面](../../workflow/using/read-list.md)，了解如何从目标群体中排除一个轮廓列表。

@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '3389'
 ht-degree: 2%
@@ -237,7 +237,7 @@ Adobe Campaign提供了一个图形助手(可在Adobe Campaign客户端控制台
 
 1. **在现有实例中添加跟踪支持**
 
-   如果实例是为其他需求（MTA服务器等）而创建的，则此选项适用 ，用于作为跟踪服务器。
+   如果在将用作跟踪服务器的服务器上已针对其他需求（MTA服务器等）创建了实例，则此选项适用。
 
    ![](assets/s_ncs_install_deployment_wiz_11.png)
 

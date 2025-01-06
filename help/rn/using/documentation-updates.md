@@ -6,8 +6,8 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
-workflow-type: ht
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+workflow-type: tm+mt
 source-wordcount: '3782'
 ht-degree: 100%
 
@@ -216,7 +216,7 @@ LINE 渠道增强 - [了解详情](../../delivery/using/line-channel.md)
 
 新的 Google BigQuery FDA 连接器 - [了解详情](../../installation/using/configure-fda-google-big-query.md)
 
-“计费 (billing)”技术工作流描述现在包括原来由“活跃计费用户档案数 (billingActiveContactCount)”执行的任务。[了解更多信息](../../workflow/using/about-technical-workflows.md)
+“计费 (billing)”技术工作流描述现在包括原来由“活跃计费轮廓数 (billingActiveContactCount)”执行的任务。[了解更多信息](../../workflow/using/about-technical-workflows.md)
 
 ## 2021 年 5 月 {#may-2021}
 
@@ -378,7 +378,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 ## 2020 年 9 月 {#september-2020}
 
-已添加注释来指定“有效用户档案”计数仅适用于营销实例。[阅读更多](../../platform/using/about-profiles.md#active-profiles)
+已添加注释来指定“有效轮廓”计数仅适用于营销实例。[阅读更多](../../platform/using/about-profiles.md#active-profiles)
 
 已添加有关模式版本的新示例来将字段链接到现有引用表。[阅读更多](../../configuration/using/examples-of-schemas-edition.md#uc-link)
 

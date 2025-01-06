@@ -5,10 +5,10 @@ description: 了解如何定义目标群体
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1729'
-ht-degree: 3%
+ht-degree: 23%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 3%
 
 ## 选择投放的主要收件人 {#selecting-the-main-target}
 
-在大多数情况下，主目标会从Adobe Campaign数据库（默认模式）中提取。 但是，收件人也可以存储在外部文件中。 可在[此部分](steps-defining-the-target-population.md#selecting-external-recipients)中了解详情。
+在大多数情况下，会从 Adobe Campaign 数据库中提取主要目标（默认模式）。但是，收件人也可以存储在外部文件中。 可在[此部分](steps-defining-the-target-population.md#selecting-external-recipients)中了解详情。
 
 要选择投放的收件人，请执行以下步骤：
 
-1. 在投放编辑器中，选择&#x200B;**[!UICONTROL To]**。
+1. 在投放编辑器中，选择 **[!UICONTROL To]**。
 1. 如果收件人存储在数据库中，请选择第一个选项。
 
    ![](assets/s_ncs_user_wizard_email02a.png)
@@ -36,7 +36,7 @@ ht-degree: 3%
 
    可以使用其他目标映射，其中一些映射可能与您的特定配置相关。[了解详情](#select-a-target-mapping)。
 
-1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以定义限制筛选器。
+1. 单击 **[!UICONTROL Add]** 按钮以定义限制筛选条件。
 
    然后，您可以选择要应用的筛选类型：
 
@@ -47,7 +47,7 @@ ht-degree: 3%
    默认情况下，提供以下目标类型：
 
    * **[!UICONTROL Filtering conditions]** ：利用此选项可定义查询并显示结果。 [此部分](../../platform/using/creating-filters.md#creating-an-advanced-filter)中介绍了定义查询的方法。
-   * **[!UICONTROL Subscribers of an information service]** ：通过此选项，可选择新闻稿，收件人必须订阅新闻稿才能成为所创建投放的目标。
+   * **[!UICONTROL Subscribers of an information service]**：通过此选项，可选择新闻稿，收件人必须订阅新闻稿才能成为所创建投放的目标。
 
      ![](assets/s_ncs_user_wizard_email02c.png)
 
@@ -59,26 +59,26 @@ ht-degree: 3%
 
      ![](assets/s_ncs_user_wizard_email02e.png)
 
-     您可以从下拉列表中选择，以筛选收件人的行为：
+     您可以从下拉列表中进行选择，以筛选收件人的行为：
 
      ![](assets/s_ncs_user_wizard_email02f.png)
 
      >[!NOTE]
      >
-     >**[!UICONTROL Include sub-folders]**&#x200B;选项还允许您定位所选节点下位于树结构中的文件夹中所包含的投放。
+     >通过 **[!UICONTROL Include sub-folders]** 选项，还可以锁定所选节点下树结构中文件夹包含的投放。
 
    * **[!UICONTROL Recipients included in a folder]** ：利用此选项可定向树的特定文件夹中包含的配置文件。
    * **[!UICONTROL A recipient]** ：通过此选项，您可以从数据库中的用户档案中选择特定收件人。
    * **[!UICONTROL A list of recipients]** ：通过此选项可定向收件人列表。 列表显示在[此部分](../../platform/using/creating-and-managing-lists.md)中。
-   * **[!UICONTROL User filters]** ：利用此选项可访问预配置的筛选器，以将其用作数据库中用户档案的筛选条件。 预配置的筛选器显示在[此部分](../../platform/using/creating-filters.md#saving-a-filter)中。
-   * 利用选项&#x200B;**[!UICONTROL Exclude recipients corresponding to this segment]**，可定向不符合所定义的目标条件的收件人。 要使用此选项，请选择相应的框，然后按照之前的定义应用定位以排除生成的配置文件。
+   * **[!UICONTROL User filters]** ：利用此选项可访问预配置的筛选器，以将其用作数据库中用户档案的筛选条件。 要查看预配置的筛选条件，请参阅[此部分](../../platform/using/creating-filters.md#saving-a-filter)。
+   * 利用选项&#x200B;**[!UICONTROL Exclude recipients corresponding to this segment]**，可定向不符合所定义的目标条件的收件人。 要使用此选项，请选择相应的框，然后按照之前所述应用目标选择，以排除生成的用户档案。
 
      ![](assets/s_ncs_user_wizard_email02g.png)
 
-1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入此目标的名称。 默认情况下，标签将是第一个定位标准的标签。 对于组合，最好使用显式名称。
+1. 在 **[!UICONTROL Label]** 字段中输入此目标的名称。 默认情况下，标签将是第一个定位标准的标签。 对于组合，最好使用显式名称。
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;以验证配置的定位。
 
-   定义的目标标准在主目标配置选项卡的中心部分中进行了摘要。 单击条件可查看其内容（配置和预览）。 要删除某个条件，请单击其标签后面的十字线。
+   在“主要目标配置”选项卡的中心部分中概述了定义的目标选择标准。单击标准可查看其内容（配置和预览）。要删除某个标准，请单击其标签后面的十字线。
 
    ![](assets/s_ncs_user_wizard_email02h.png)
 
@@ -88,8 +88,8 @@ ht-degree: 3%
 
 操作步骤：
 
-1. 单击&#x200B;**[!UICONTROL To]**&#x200B;链接以选择投放的收件人。
-1. 选择&#x200B;**[!UICONTROL Defined in an external file]**&#x200B;选项。
+1. 单击 **[!UICONTROL To]** 链接以选择投放的收件人。
+1. 选择 **[!UICONTROL Defined in an external file]** 选项。
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
@@ -97,11 +97,11 @@ ht-degree: 3%
 
    您还可以选择&#x200B;**[!UICONTROL Do not import the recipients into the database]**。
 
-1. 导入收件人时，单击&#x200B;**[!UICONTROL File format definition...]**&#x200B;链接以选择和配置外部文件。
+1. 导入收件人时，单击 **[!UICONTROL File format definition...]** 链接以选择和配置外部文件。
 
    有关数据导入的详细信息，请参阅[此部分](../../platform/using/executing-import-jobs.md#step-2---source-file-selection)。
 
-1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;并将您的投放配置为标准投放。
+1. 单击 **[!UICONTROL Finish]** 并将您的投放配置为标准投放。
 
 >[!CAUTION]
 >
@@ -111,7 +111,7 @@ ht-degree: 3%
 
 地址错误和质量等级由服务提供商(IAP)提供。 此信息会在投放操作后自动更新到收件人配置文件中，并会更新服务提供商返回的文件。 可以在配置文件中只读查看它。
 
-您可以选择排除已达到一定数量的连续错误或其质量等级低于此窗口中指定的阈值的地址。 您还可以选择是否授权未返回数据的非限定地址。
+您可以选择排除已达到一定数量的连续错误或其质量等级低于此窗口中指定的阈值的地址。 您还可以选择是否授权未返回数据的不符合条件的地址。
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->建议使用默认参数，但您可以根据需要调整设置。 但是，这些选项只应由专家用户更改，以避免任何误用和错误。
+>建议使用默认参数，但您可以根据需要调整设置。但是，这些选项只应由专家用户更改，以避免误用和错误。
 
 单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接以修改默认配置。
 
@@ -142,14 +142,14 @@ ht-degree: 3%
 
      ![](assets/s_ncs_user_wizard_email02j.png)
 
-* 列入阻止列表 **[!UICONTROL Exclude recipients who no longer want to be contacted]** ，即电子邮件地址处于状态（“选择退出”）的收件人。 必须继续选择这一选项，以遵守电子营销的职业道德和电子商务相关法律。
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]**，即电子邮件地址处于拒绝列表状态（选择退出）的收件人。必须继续选择这一选项，以遵守电子营销的职业道德和电子商务相关法律。
 * **[!UICONTROL Exclude quarantined recipients]**。 利用此选项，可从目标中排除其地址未响应的任何用户档案。 我们强烈建议保持选中此选项。
 
   >[!NOTE]
   >
   >有关隔离管理的详细信息，请参阅[了解隔离管理](understanding-quarantine-management.md)。
 
-* **[!UICONTROL Limit delivery]**&#x200B;到给定的消息数。 使用此选项可输入要发送的最大消息数。 如果目标的内容超过指示的消息数，则随机选择将应用于目标。
+* 给定消息数的 **[!UICONTROL Limit delivery]**。使用此选项可输入要发送的最大消息数。如果目标的内容超过指示的消息数，则随机选择将应用于目标。
 
 ### 缩小目标群体大小 {#reducing-the-size-of-the-target-population}
 
@@ -157,7 +157,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_user_edit_del_exe_tab.png)
 
-## 选择验证消息的收件人 {#selecting-the-proof-target}
+## 选择校样消息的收件人 {#selecting-the-proof-target}
 
 校样是一种特殊消息，允许您在将投放发送到主目标之前对其进行测试。 校样收件人负责审批消息的表单和内容。
 
@@ -247,8 +247,8 @@ ht-degree: 3%
 
 ## 教程视频 {#seeds-and-proofs-video}
 
-在本视频中，您将了解如何向现有电子邮件添加种子和验证，以及如何发送该电子邮件。
+在本视频中，您将了解如何向现有电子邮件添加种子和校样，以及如何进行发送。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

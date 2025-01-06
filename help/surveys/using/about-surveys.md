@@ -5,7 +5,7 @@ description: Campaign调查入门
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 3%
@@ -43,7 +43,7 @@ Adobe Campaign包括一个用于定义和发布Web应用程序的图形模块。
 * 添加个性化和定义字段位置，
 * 根据答案显示调查字段的条件，
 * 条件页面显示，
-* 在批准之前检查信息，具体取决于预期的数据类型（数字、电子邮件地址、日期等） 和必填字段，
+* 在批准之前检查信息，具体取决于预期的数据类型（数字、电子邮件地址、日期等）和必填字段，
 * 发送电子邮件邀请/通知，
 * 个性化错误和结束页面，
 * 在表单中添加图像、视频、超文本链接、验证码等

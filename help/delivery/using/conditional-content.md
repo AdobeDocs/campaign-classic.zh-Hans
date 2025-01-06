@@ -6,10 +6,10 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Personalization, Multilingual Messages
 role: User
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -113,4 +113,4 @@ ht-degree: 6%
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

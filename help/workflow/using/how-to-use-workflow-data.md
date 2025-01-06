@@ -4,7 +4,7 @@ title: 如何使用工作流数据
 description: 了解如何使用工作流数据
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 更新数据库 {#updating-the-database}
 
-所有收集的数据都可用于更新数据库或在投放中使用。 例如，您可以丰富消息内容个性化可能性（包括消息中的合同数、指定去年的平均购物车数量等） 或详细群体定位（向合同共同所有者发送消息，定向1,000个在线服务最佳订阅者等）。 此数据还可以在列表中导出或存档。
+所有收集的数据都可用于更新数据库或在投放中使用。 例如，您可以丰富消息内容个性化的可能性（包括消息中的合同数量，指定去年的平均购物车数等）或详细信息群体定位（向合同共同所有者发送消息，以在线服务的1,000个最佳订阅者为目标等）。 此数据还可以在列表中导出或存档。
 
 ### 列表和直接更新 {#lists-and-direct-updates}
 

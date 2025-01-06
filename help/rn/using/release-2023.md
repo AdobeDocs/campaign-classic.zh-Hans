@@ -6,8 +6,8 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
-workflow-type: ht
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ _2023 年 12 月 5 日_
 * 修复了使用 Google Big Query 数据库中的数据和更新 Oracle 数据库中的数据时出现的问题：在工作流临时表中，将所有键都设置为 `0`。(NEO-65091)
 * 修复了当 Google Big Query 数据库上的两个查询合并到 **Union** 工作流活动中时导致工作流执行失败的问题。(NEO-63705)
 * 修复了在 Campaign 报告中单击 `Back` 按钮时请求用户重新进行身份验证的问题。(NEO-65087)
-* 修复了数据库清理工作流中发生的错误，在投放证明前删除投放时会发生该错误。(NEO-48114)
+* 修复了数据库清理工作流中发生的错误，在投放校对前删除投放时会发生该错误。(NEO-48114)
 * 修复了连接到客户端控制台时的问题：最近对 TLS 验证的更新导致连接错误。(NEO-50488)
 * 修复了 Campaign 升级到 7.3.1 后 HTTP 代理身份验证的问题。活动工作流中的 HTTP 请求失败，并出现 `error 407 – proxy auth required is returned`。(NEO-49624)
 * 修复了&#x200B;**脚本**&#x200B;工作流活动中 GPG 解密的间歇性故障。相关的错误消息为：`gpg: decryption failed: No secret key`。(NEO-50257)
@@ -150,7 +150,7 @@ _2023 年 3 月 20 日_
 
 ### 修补程序 {#release-7-3-3-patches}
 
-* 修复了一个可能导致无法从控制实例（事务性消息传递上下文）发送 iOS 验证推送通知的问题。(NEO-54713)
+* 修复了一个可能导致无法从控制实例（事务性消息传递上下文）发送 iOS 校对推送通知的问题。(NEO-54713)
 * 修复了可能导致无法在数字内容编辑器 (DCE) 的&#x200B;**编辑**&#x200B;选项卡中滚动的问题。(NEO-54474)
 * 修复了两个扩充活动在其链接中使用相同名称标识符时导致第二个扩充活动使用第一个活动的链接的问题。(NEO-48851)
 

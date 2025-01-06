@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '3094'
 ht-degree: 0%
@@ -51,7 +51,7 @@ ht-degree: 0%
 步骤如下：
 
 1. **mta**&#x200B;选择符合条件的邮件并为其分配可用的&#x200B;**mtachild**。
-1. **mtachild**&#x200B;加载生成邮件所需的所有信息（内容、个性化元素、附件、图像等） 并将邮件转发到&#x200B;**电子邮件流量生成器**。
+1. **mtachild**&#x200B;加载生成邮件所需的所有信息（内容、个性化元素、附件、图像等），并将邮件转发到&#x200B;**电子邮件流量整形器**。
 1. 一旦电子邮件流量生成器收到统计服务器的授权(**smtp stat**)，邮件就会发送给收件人。
 
 ![](assets/s_ncs_install_email_traffic_shaper.png)
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 已放弃的消息返回到&#x200B;**mta**，不再由&#x200B;**mtachild**&#x200B;管理。
 
-**mta**&#x200B;决定此邮件的过程（恢复、放弃、隔离等） 取决于响应代码和规则。
+**mta**&#x200B;根据响应代码和规则决定此邮件的过程（恢复、放弃、隔离等）。
 
 ### 消息待定 {#message-pending}
 

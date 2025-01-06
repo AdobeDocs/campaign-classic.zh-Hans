@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '2987'
 ht-degree: 8%
@@ -241,7 +241,7 @@ HTTP/V2协议允许直接反馈每个推送投放的状态。 如果使用HTTP/V
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
-   <td> 证书问题（密码、损坏等） 并测试与APNs问题<br />的连接 </td> 
+   <td> 证书问题（密码、损坏等）和测试与APNs的连接问题<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 根据错误<br />显示各种错误消息 </td> 
    <td> 软<br /> </td> 

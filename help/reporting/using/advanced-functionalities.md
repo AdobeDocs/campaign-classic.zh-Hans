@@ -5,7 +5,7 @@ description: 了解有关使用报告时高级功能的更多信息
 feature: Reporting, Monitoring
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 4%

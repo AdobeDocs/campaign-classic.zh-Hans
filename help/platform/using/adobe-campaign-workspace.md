@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '916'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 
@@ -99,7 +99,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 通过每个核心功能部分，可在可用元素之间浏览。 为此，请使用&#x200B;**[!UICONTROL Browsing]**&#x200B;部分中的快捷方式。 **[!UICONTROL Other choices]**&#x200B;链接允许您访问所有其他页面，无论环境如何。
 
-您可以创建新元素（投放、Web应用程序、工作流等） 使用屏幕左侧&#x200B;**[!UICONTROL Create]**&#x200B;部分中的快捷方式。 使用列表上方的&#x200B;**[!UICONTROL Create]**&#x200B;按钮向列表添加新元素。
+您可以使用屏幕左侧&#x200B;**[!UICONTROL Create]**&#x200B;部分中的快捷方式创建新元素（投放、Web应用程序、工作流等）。 使用列表上方的&#x200B;**[!UICONTROL Create]**&#x200B;按钮向列表添加新元素。
 
 例如，在投放页面上，使用&#x200B;**[!UICONTROL Create]**&#x200B;按钮创建新投放。
 
@@ -172,4 +172,4 @@ Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: "[!DNL Gold Standard] 版本"
+title: '[!DNL Gold Standard] 版本'
 description: Campaign Classic  [!DNL Gold Standard] 的发行说明和兼容性矩阵
 feature: Release Notes
 role: User
@@ -8,10 +8,10 @@ level: Beginner
 hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ _2021 年 8 月 27 日_
 
 版本 9032@99a3894 包含以下修复：
 
-* 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、互联网浏览器等）链接的方式出现错误处理特殊字符。URL 参数现已经过编码。
+* 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、互联网浏览器等）处理特殊字符的方式相关的错误。 URL 参数现已经过编码。
 * 修复了日期选取器的问题，该问题可能导致控制台显示阻止程序错误消息。(NEO-36345)
 
 ### [!DNL Gold Standard] 11 版本{#gs-11}

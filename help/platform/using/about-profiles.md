@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: 开始使用配置文件
+title: 开始使用轮廓
 description: 在Adobe Campaign中使用用户档案
 feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 33%
+ht-degree: 34%
 
 ---
 
-# 开始使用配置文件{#about-profiles}
+# 开始使用轮廓{#about-profiles}
 
 
 
-用户档案集中存储在Adobe Campaign数据库中。 有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助Adobe Campaign，您可以将营销历史、购买信息、偏好、CRM数据和任何相关的PI数据整合到一个整合视图中，以便进行分析并采取行动。
+用户档案集中存储在Adobe Campaign数据库中。 有许多可能的机制可获取轮廓并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助Adobe Campaign，您可以将营销历史、购买信息、偏好、CRM数据和任何相关的PI数据整合到一个整合视图中，以便进行分析并采取行动。
 
 **用户档案**”是指代表最终客户、潜在客户或潜在客户的信息记录（例如：nmsRecipient表或外部表中的记录，包含cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息）。
 
-在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、短信等）所定位的默认用户档案。通过存储在数据库中的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
+在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、短信等）所定位的默认轮廓。通过存储在数据库中的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的轮廓。这些用户档案是针对不同用途而设计的。例如，种子轮廓用于在将投放内容发送给最终目标前测试该投放内容。
 
 ![](assets/do-not-localize/how-to-video.png) [了解视频中配置文件的概念](#create-profiles-video)
 
@@ -87,11 +87,11 @@ Adobe Campaign资源管理器的常规布局显示在[此页面](../../platform/
 >
 >您还可以定义收件人视图。 有关此功能的详细信息，请参阅[此部分](../../platform/using/access-management-folders.md)。
 
-## 使用中的用户档案 {#active-profiles}
+## 使用中的轮廓 {#active-profiles}
 
 活动用户档案是客户在过去12个月内尝试通过任何渠道与之通信的用户档案。
 
-根据您的合同，您的每个 Campaign 实例都会配置特定数量的活动用户档案，并对这些活动用户档案进行计数以计费。请参阅您的最新合同，了解已购买的活动用户档案的数量。 在[Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}中了解详情。
+根据您的合同，您的每个 Campaign 实例都会配置特定数量的活动轮廓，并对这些活动轮廓进行计数以计费。请参阅您的最新合同，了解已购买的活动用户档案的数量。 在[Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}中了解详情。
 
 您可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参阅[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}。
 
@@ -105,13 +105,13 @@ Adobe Campaign资源管理器的常规布局显示在[此页面](../../platform/
 
 ## 教程视频 {#create-profiles-video}
 
-了解如何访问用户档案数据、对用户档案进行排序和筛选以及手动创建和管理用户档案。
+了解如何访问轮廓数据、对轮廓进行排序和筛选以及手动创建和管理轮廓。
 
 此视频还介绍了Adobe Campaign Classic对《一般数据保护条例》的合规性。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。
 
 **另请参阅**
 

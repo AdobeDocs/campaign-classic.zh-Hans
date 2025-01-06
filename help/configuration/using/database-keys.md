@@ -5,10 +5,10 @@ description: 了解数据架构中的密钥管理
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -187,4 +187,4 @@ ht-degree: 1%
 * [模式结构](schema-structure.md)
 * [数据库映射](database-mapping.md)
 * [链接管理](database-links.md)
-* [Campaign数据模型](about-data-model.md)
+* [Campaign 数据模型](about-data-model.md)

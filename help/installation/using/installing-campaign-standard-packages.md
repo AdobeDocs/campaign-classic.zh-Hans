@@ -5,10 +5,10 @@ description: 了解如何安装Campaign内置软件包
 feature: Installation, Application Settings
 badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1264'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -182,7 +182,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 中央/本地营销（分布式营销）<br /> </td> 
-   <td> 在中央实体（总部、营销部门等）之间实施合作活动 和地方实体（销售点、区域机构等）之间实施协作营销活动。可选。 <a href="../../distributed/using/about-distributed-marketing.md">了解更多</a><br /> </td> 
+   <td> 实施中央实体（总部、营销部门等）与地方实体（销售点、区域机构等）之间的合作活动。 可选。 <a href="../../distributed/using/about-distributed-marketing.md">了解更多</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
@@ -240,7 +240,7 @@ ht-degree: 3%
 
 ### 消息中心包 {#message-center-package}
 
-您必须安装投放渠道（电子邮件、移动设备渠道、移动设备应用程序渠道、LINE等） 安装事务性消息（消息中心包）之前。 如果您已启动仅用于电子邮件的消息中心项目，并且以后需要添加新渠道，则必须执行以下步骤：
+在安装事务性消息（消息中心包）之前，必须安装投放渠道（电子邮件、移动渠道、移动应用程序渠道、LINE等）。 如果您已启动仅用于电子邮件的消息中心项目，并且以后需要添加新渠道，则必须执行以下步骤：
 
 1. 使用包导入助手(**[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安装新频道，例如&#x200B;**Mobile频道**。
 1. 导入文件( **[!UICONTROL Tools > Advanced > Import package > File]**)，然后选择：
