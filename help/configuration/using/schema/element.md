@@ -4,7 +4,7 @@ title: 架构元素和属性 — 元素元素
 description: 元素元素
 feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '2029'
 ht-degree: 0%
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 # 元素元素 {#element--element}
 
-![](../../../assets/v7-only.svg)
 
 ## 内容模型 {#content-model-4}
 
@@ -21,7 +20,7 @@ ht-degree: 0%
 
 ## 属性 {#attributes-4}
 
-_operation (string)、advanced (boolean)、aggregate (string)、applicateIf (string)、autopk (boolean)、fellsTo (string)、convDate (string)、dataPolicy (string)、dataSource (string)、dbEnum (string)、defOnDuplicate (boolean)、default (string)、desc (string)、displayAsField (boolean)、doesNotDiff (boolean)、edit (string)、edit (string)、emptyKeyValue (string)、enum (string(string)、enum (string(string) target （字符串）、expr （字符串）、externalJoin （布尔值）、feature （字符串）、featureDate （布尔值）、filterPath （字符串）、folderLink （字符串）、folderModel （字符串）、folderProcess （字符串）、fullLoad （布尔值）、hierarchical （布尔值）、hierarchicalPath （字符串）、img （字符串）、inout （字符串）、完整性（字符串）、label （字符串）、labelSingular （字符串）、length （字符串）、localizable （布尔值）、name (布尔值（布尔值）、name (MNTOKEN)、NODbIndex （布尔值）、NOKeY （布尔值） 、OVERFLOWTABLE （布尔值）、PKSeQUENCE （字符串）、PKGStATUS （字符串）、REF （字符串）、REVAdVANCED （布尔值）、REVCarDINALITY （字符串）、REVDeSC （字符串）、REVExTERNALJoIN （布尔值）、REVIntEGRITY （字符串）、REVLABEL （字符串）、REVVisIBLEIf （字符串）、SQL （布尔值）、SQLNAME （字符串）、SQLTABLE （字符串）、TABLESpACE （字符串）、TABLESpACEIndex （字符串）、TARGET (MNING （字符串）、TARGET (目标(MNNN TOKEN)、TEMPLATE（字符串）、TEMPLATETABLE（布尔值）、TRANSLATEDDefAULT（字符串）、TRANSLATEDExPR（字符串）、TYPE(MNTOKEN)、unbound（布尔值）、user（布尔值）、userEnum（字符串）、visibleIf（字符串）、xml（布尔值）、xmlChildren（布尔值）
+_operation (string)、advanced (boolean)、aggregate (string)、applicateIf (string)、autopk (boolean)、fellsTo (string)、convDate (string)、dataPolicy (string)、dataSource (string)、dbEnum (string)、defOnDuplicate (boolean)、default (string)、desc (string)、displayAsField (boolean)、doesNotDiff (boolean)、edit (string)、edit (string)、emptyKeyValue (string)、enum (string(string)、enum (string(string) target （字符串）、expr （字符串）、externalJoin （布尔值）、feature （字符串）、featureDate （布尔值）、filterPath （字符串）、folderLink （字符串）、folderModel （字符串）、folderProcess （字符串）、fullLoad （布尔值）、hierarchical （布尔值）、hierarchicalPath （字符串）、img （字符串）、inout （字符串）、完整性（字符串）、label （字符串）、labelSingular （字符串）、length （字符串）、localizable （布尔值）、name (布尔值（布尔值）、name (MNTOKEN)、NODbIndex （布尔值）、NOKeY （布尔值）、NOKeY （布尔值） （布尔值）、OVERFLOWTABLE （布尔值）、PKSeQUENCE （字符串）、PKGStATUS （字符串）、REF （字符串）、REQUIRED （布尔值）、REVAdVANCED （布尔值）、REVCarDINALITY （字符串）、REVDeSC （字符串）、REVExTERNALJoIN （布尔值）、REVIntEGRITY （字符串）、REVLABEL （字符串）、REVVisIBLEIf （字符串）、SQL （布尔值）、SQLNAME （字符串）、SQLTABLE（字符串）、TABLESpACE （字符串）、TABLEIndex （字符串）、TABLEIndex （字符串）、TARGET MNTOKEN)、TEMPLATE（字符串）、TEMPORARYTABLE（布尔值）、TRANSLATEDDefAULT（字符串）、TRANSLATEDExPR（字符串）、TYPE(MNTOKEN)、unbound（布尔值）、user（布尔值）、userEnum（字符串）、visibleIf（字符串）、xml（布尔值）、xmlChildren（布尔值）
 
 ## 父项 {#parents-4}
 

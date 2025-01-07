@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 1%
@@ -16,7 +16,6 @@ ht-degree: 1%
 
 # attribute element {#attribute--element}
 
-![](../../../assets/v7-only.svg)
 
 ## 内容模型 {#content-model}
 
@@ -24,7 +23,7 @@ attribute：==help
 
 ## 属性 {#attributes}
 
-_operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement (boolean)、fallsTo (string)、dataPolicy (string)、dbEnum (string)、defOnDuplicate (boolean)、default (string)、desc (string)、edit (string)、enum (string)、expr (string)、featureDate (boolean)、img (string)、inout (string)、label (string)、length (string)、localizable (boolean)、name (MNTOKEN (NTOKEN)、NOT (not)、not (not (boolean)、notNull (boolean)、pkgStatus (string (boolean) ref)、ref（字符串）、required（布尔值）、sql（布尔值）、sqlDefault（字符串）、sqlname（字符串）、sqltable（字符串）、target(MNTOKEN)、template（字符串）、translatedDefault（字符串）、translatedExpr（字符串）、type(MNTOKEN)、user（布尔值）、userEnum（字符串）、visibleIf（字符串）、xml（布尔值）
+_operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement (boolean)、fallsTo (string)、dataPolicy (string)、dbEnum (string)、defOnDuplicate (boolean)、default (string)、desc (string)、edit (string)、enum (string)、expr (string)、featureDate (boolean)、img (string)、inout (string)、label (string)、length (string)、localizable (boolean)、name (ntoken (MNTOKEN)、not (not)、not (not (not (boolean)、pkgNull (boolean) (string)、ref (string)、required (boolean)、sql (boolean)、sqlDefault (string)、sqlname (string)、sqltable (string)、target (MNTOKEN)、template (string)、translatedDefault (string)、translatedExpr (string)、type (MNTOKEN)、user (boolean)、userEnum (string)、visibleIf (string)、xml (boolean)
 
 ## 父项 {#parents}
 
