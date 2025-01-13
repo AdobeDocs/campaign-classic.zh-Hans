@@ -9,9 +9,9 @@ hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ _2021 年 8 月 27 日_
 
 版本 9032@99a3894 包含以下修复：
 
-* 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、互联网浏览器等）处理特殊字符的方式相关的错误。 URL 参数现已经过编码。
+* 已对跟踪签名功能进行改进，以防止出现与第三方工具（电子邮件客户端、Internet 浏览器等）处理特殊字符的方式相关的错误。URL 参数现已经过编码。
 * 修复了日期选取器的问题，该问题可能导致控制台显示阻止程序错误消息。(NEO-36345)
 
 ### [!DNL Gold Standard] 11 版本{#gs-11}

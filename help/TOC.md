@@ -7,7 +7,7 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2562'
 ht-degree: 100%
 
@@ -60,13 +60,13 @@ ht-degree: 100%
          + [创建和管理隐私请求](platform/using/privacy-requests-ui.md)
          + [自动隐私请求流程](platform/using/privacy-requests-api.md)
          + [选择禁用个人信息销售](platform/using/privacy-requests-ccpa.md)
-   + 用户档案管理 {#profile-management}
-      + [关于用户档案](platform/using/about-profiles.md)
-      + [编辑用户档案](platform/using/editing-a-profile.md)
-      + [添加用户档案](platform/using/adding-profiles.md)
-      + [管理用户档案](platform/using/managing-profiles.md)
+   + 轮廓管理 {#profile-management}
+      + [关于轮廓](platform/using/about-profiles.md)
+      + [编辑轮廓](platform/using/editing-a-profile.md)
+      + [添加轮廓](platform/using/adding-profiles.md)
+      + [管理轮廓](platform/using/managing-profiles.md)
       + [更新数据](platform/using/updating-data.md)
-      + [导入和导出用户档案](platform/using/exporting-and-importing-profiles.md)
+      + [导入和导出轮廓](platform/using/exporting-and-importing-profiles.md)
       + [创建和管理列表](platform/using/creating-and-managing-lists.md)
    + 导入和导出数据{#importing-and-exporting-data}
       + [数据导入和导出入门](platform/using/get-started-data-import-export.md)
@@ -386,7 +386,7 @@ ht-degree: 100%
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
    + ACS 连接器 {#acs-connector}
       + [ [!DNL ACS Connector] 入门](integrations/using/acs-connector-principles-and-data-cycle.md)
-      + [同步用户档案](integrations/using/synchronizing-profiles.md)
+      + [同步轮廓](integrations/using/synchronizing-profiles.md)
       + [同步受众](integrations/using/synchronizing-audiences.md)
       + [同步 Web 应用程序](integrations/using/synchronizing-web-applications.md)
       + [对  [!DNL ACS Connector] 进行故障排除](integrations/using/troubleshooting-the-acs-connector.md)
@@ -519,7 +519,7 @@ ht-degree: 100%
       + [基本原则](interaction/using/fundamental-principles.md)
    + 管理环境{#managing-environments}
       + [环境概述](interaction/using/environments-overview.md)
-      + [操作员用户档案](interaction/using/operator-profiles.md)
+      + [操作员轮廓](interaction/using/operator-profiles.md)
       + [实时/设计环境](interaction/using/live-design-environments.md)
       + [创建优惠空间](interaction/using/creating-offer-spaces.md)
       + [创建预定义过滤器](interaction/using/creating-predefined-filters.md)
@@ -798,7 +798,7 @@ ht-degree: 100%
       + [配置接口](configuration/using/configuring-the-interface.md)
       + [种子地址](configuration/using/seed-addresses.md)
       + [创建过滤器](configuration/using/creating-filters.md)
-      + [使用工作流创建用户档案列表](configuration/using/creating-a-profile-list-with-a-workflow.md)
+      + [使用工作流创建轮廓列表](configuration/using/creating-a-profile-list-with-a-workflow.md)
       + [管理工作流](configuration/using/managing-workflows.md)
       + [管理报告](configuration/using/managing-reports.md)
    + 设置 Web 跟踪 {#setting-up-web-tracking}
