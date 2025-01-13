@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b500b2cbf68fd46bd84ddbfa71cf9431c6b60060
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1005'
 ht-degree: 1%
 
 ---
@@ -125,7 +125,7 @@ ht-degree: 1%
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. 使用以下命令重新启动Web模块： **nlserver重新启动web**。
+1. 使用以下命令重新启动Web模块： ** web**。
 
 您必须更改serverConf.xml文件中的中间源服务器设置。 必须将以下行添加到“使用IP地址管理关联性”部分的现有行下：
 

@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 32a1e16c3c085c0d928b4223e1b46ed6545122d3
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 2%
+source-wordcount: '1110'
+ht-degree: 1%
 
 ---
 
@@ -50,13 +50,13 @@ Adobe Campaign附带了&#x200B;**nlserver**&#x200B;包，其中包含给定版�
 
 1. 要安装它，请以&#x200B;**root**&#x200B;身份连接并执行以下命令，其中&#x200B;**XXXX**&#x200B;是Adobe Campaign内部版本号：
 
-   ```
+   ```sql
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
    rpm文件依赖于可在CentOS/Red Hat分发中找到的软件包。 如果您不想使用其中的某些依赖项(例如，如果要使用OracleJDK而不是OpenJDK)，则可能需要使用rpm的“nodeps”选项：
 
-   ```
+   ```sql
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
@@ -66,8 +66,27 @@ Adobe Campaign附带了&#x200B;**nlserver**&#x200B;包，其中包含给定版�
 
 对于CentOS，您必须安装bc.x86_64程序包：以&#x200B;**root**&#x200B;身份连接并运行以下命令：
 
-```
+```sql
 yum install bc.x86_64
+```
+
+
+### 用于内部部署的RHEL 9 {#rhel-9-update}
+
+使用Campaign v7.4.1时，作为使用RHEL 9的内部部署客户，如果您要使用DKIM/域密钥，则必须更新系统设置。
+
+要执行此操作，请执行以下步骤：
+
+1. 以root用户身份执行以下命令：
+
+```sql
+update-crypto-policies --set LEGACY
+```
+
+1. 重新启动MTA模块：
+
+```sql
+nlserver restart mta@<instance-name>
 ```
 
 ## 基于APT(Debian)的分配 {#distribution-based-on-apt--debian-}
@@ -82,7 +101,7 @@ yum install bc.x86_64
 
 1. 要安装它，请以&#x200B;**root**&#x200B;身份连接并执行以下命令，其中&#x200B;**XXXX**&#x200B;是Adobe Campaign内部版本号：
 
-   ```
+   ```sql
    apt install ./nlserver6-v7-XXXX-linux-2.6-amd64.deb
    ```
 
@@ -95,7 +114,7 @@ yum install bc.x86_64
 
 创建并确保它拥有执行权限。 如果不是这种情况，请输入以下命令：
 
-```
+```sql
 chmod +x /usr/local/neolane/nl6/customer.sh
 ```
 
@@ -111,7 +130,7 @@ chmod +x /usr/local/neolane/nl6/customer.sh
 
 要启用UTF-8环境，请使用以下命令：
 
-```
+```sql
 mkdir -p /usr/local/neolane/nl6 
 touch /usr/local/neolane/nl6/unicodeenv
 ```
@@ -126,7 +145,7 @@ touch /usr/local/neolane/nl6/unicodeenv
 
 * 对于Oracle客户端：
 
-  ```
+  ```sql
   export ORACLE_HOME=/usr/local/instantclient_10_2
   export TNS_ADMIN=/etc/oracle
   export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
@@ -144,7 +163,7 @@ touch /usr/local/neolane/nl6/unicodeenv
 
      提供了OOO_INSTALL_DIR和OOO_BASIS_INSTALL_DIR的默认值。 如果LibreOffice安装的布局不同，则可以在&#x200B;**customer.sh**&#x200B;中覆盖它们：
 
-     ```
+     ```sql
      export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
      export OOO_INSTALL_DIR=/usr/lib/libreoffice/
      ```
@@ -153,7 +172,7 @@ touch /usr/local/neolane/nl6/unicodeenv
 
      使用以下默认值：
 
-     ```
+     ```sql
      export OOO_BASIS_INSTALL_DIR=/usr/lib64/libreoffice/
      export OOO_INSTALL_DIR=/usr/lib64/libreoffice/
      ```
@@ -162,7 +181,7 @@ touch /usr/local/neolane/nl6/unicodeenv
 
   默认情况下，Adobe Campaign环境(`~/nl6/env.sh`)的配置脚本将搜索JDK安装目录。 但是，建议指定需要使用的JDK。 为此，您可以使用以下命令强制&#x200B;**JDK_HOME**&#x200B;环境变量：
 
-  ```
+  ```sql
   export JDK_HOME=/usr/java/jdkX.Y.Z
   ```
 
@@ -172,7 +191,7 @@ touch /usr/local/neolane/nl6/unicodeenv
 
   要测试JDK配置，请使用以下命令以Adobe Campaign系统用户身份登录：
 
-  ```
+  ```sql
   su - neolane
   ```
 
@@ -180,7 +199,7 @@ touch /usr/local/neolane/nl6/unicodeenv
 
 命令如下：
 
-```
+```sql
 systemctl stop nlserver
 systemctl start nlserver
 ```
@@ -194,7 +213,7 @@ systemctl start nlserver
 
   必须在安装阶段添加TNS定义。 为此，请使用以下命令：
 
-  ```
+  ```sql
   cd /etc
   mkdir oracle
   cd oracle
@@ -211,7 +230,7 @@ systemctl start nlserver
 
   为此，请使用以下命令：
 
-  ```
+  ```sql
   cd /usr/lib/oracle/10.2.0.4/client/lib
   ln -s libclntsh.so.10.1 libclntsh.so
   ```
@@ -222,14 +241,14 @@ systemctl start nlserver
 
 现在可以使用以下命令执行初始安装测试：
 
-```
+```sql
 su - neolane
 nlserver pdump
 ```
 
 当Adobe Campaign未启动时，响应为：
 
-```
+```sql
 no task
 ```
 
@@ -237,7 +256,7 @@ no task
 
 安装测试完成后，输入以下命令：
 
-```
+```sql
 nlserver web
 ```
 
@@ -257,7 +276,7 @@ nlserver web
 
 按&#x200B;**Ctrl+C**&#x200B;停止该进程，然后输入以下命令：
 
-```
+```sql
 nlserver start web
 ```
 
@@ -275,7 +294,7 @@ nlserver start web
 
 要停止此操作，请输入：
 
-```
+```sql
 nlserver stop web
 ```
 
