@@ -6,7 +6,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Email
 role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f7da066d32391341e449397d64853fcbae639a59
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 10%
@@ -33,7 +33,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->如果您使用具有增强MTA的电子邮件密送，则会为所有投放自动启用此选项。
+>如果您使用带有[Enhanced MTA](ending-with-enhanced-mta.md)的电子邮件密件抄送，则会为所有投放自动启用此选项。
 
 要为电子邮件投放模板启用电子邮件密送，请执行以下步骤：
 
