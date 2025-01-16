@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: 934185053bea08ea1fa6f52dec1d86a5ced02c11
+source-git-commit: ab38c7fd45513c6f7a8ecf7ef8601f0b5a4b5757
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1113'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ yum install bc.x86_64
 
 ### 用于内部部署的RHEL 9 {#rhel-9-update}
 
-使用Campaign v7.4.1时，作为使用RHEL 9的内部部署客户，如果您要使用DKIM/域密钥，则必须更新系统设置。
+通过使用Campaign v7.4.1，作为使用RHEL 9的内部部署客户，如果您要使用DKIM (Domain Keys Identified Mail)身份验证，您必须更新系统设置。
 
 要执行此操作，请执行以下步骤：
 

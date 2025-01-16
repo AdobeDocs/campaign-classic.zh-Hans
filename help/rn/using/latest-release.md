@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: b500b2cbf68fd46bd84ddbfa71cf9431c6b60060
+source-git-commit: ab38c7fd45513c6f7a8ecf7ef8601f0b5a4b5757
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 88%
+source-wordcount: '424'
+ht-degree: 87%
 
 ---
 
@@ -39,7 +39,7 @@ _2024 年 6 月 18 日_
 
   >[!CAUTION]
   >
-  >作为使用RHEL 9的内部部署客户，如果您要使用DKIM/域密钥，则必须更新系统设置，如[此部分](../../installation/using/installing-packages-with-linux.md#rhel-9-update)所述。
+  >作为使用RHEL 9的内部部署客户，如果要使用DKIM (Domain Keys Identified Mail)身份验证，必须按照[此部分](../../installation/using/installing-packages-with-linux.md#rhel-9-update)中的详细说明更新系统设置。
 
 
 * Adobe Campaign 现在兼容 **Microsoft SQL Server 2022** 和 **Oracle23c**（用作关系数据库管理系统），并兼容联合数据访问 (FDA)。
