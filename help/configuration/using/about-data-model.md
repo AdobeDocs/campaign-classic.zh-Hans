@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 开始使用Campaign Classic数据模型
-description: 了解如何扩展 Campaign 数据模型、编辑模式、使用 API 等
+description: 了解如何扩展 Campaign 数据模型、编辑架构、使用 API 等
 feature: Data Model, Configuration
 role: Data Engineer, Developer
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
@@ -115,6 +115,6 @@ Adobe Campaign中内置的收件人表为构建数据模型提供了一个良好
   ![](assets/data-model_documentation-tab.png)
 
 
-* **Campaign架构** — 应用程序中承载的数据的物理和逻辑结构以XML形式描述。 它遵循 Adobe Campaign 特有的语法，称为模式。有关Adobe Campaign架构的详细信息，请阅读[此部分](../../configuration/using/about-schema-reference.md)。
+* **Campaign架构** — 应用程序中承载的数据的物理和逻辑结构以XML形式描述。 它遵循 Adobe Campaign 特有的语法，称为架构。有关Adobe Campaign架构的详细信息，请阅读[此部分](../../configuration/using/about-schema-reference.md)。
 
 * **数据模型最佳实践** — 在[此部分](../../configuration/using/data-model-best-practices.md#data-model-architecture)中了解Campaign数据模型架构和相关最佳实践。
