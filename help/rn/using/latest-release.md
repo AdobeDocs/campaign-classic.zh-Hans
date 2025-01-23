@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: ab38c7fd45513c6f7a8ecf7ef8601f0b5a4b5757
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -34,12 +34,12 @@ _2024 年 6 月 18 日_
 
 更新了 [Adobe Campaign 兼容性矩阵](compatibility-matrix.md)，以反映这一新版本中的变化，如下所列。
 
-* Adobe Campaign现在与&#x200B;**Microsoft Server 2022**&#x200B;兼容，用作操作系统。
-* Adobe Campaign现在与&#x200B;**RHEL 9**&#x200B;兼容，用作操作系统。
+* Adobe Campaign 现在兼容 **Microsoft Server 2022** 操作系统。
+* Adobe Campaign 现在兼容 **RHEL 9** 操作系统。
 
   >[!CAUTION]
   >
-  >作为使用RHEL 9的内部部署客户，如果要使用DKIM (Domain Keys Identified Mail)身份验证，必须按照[此部分](../../installation/using/installing-packages-with-linux.md#rhel-9-update)中的详细说明更新系统设置。
+  >作为使用 RHEL 9 的内部部署客户，如果要使用 DKIM（域密钥识别邮件）身份验证，则必须更新系统设置，详情请参阅[本部分](../../installation/using/installing-packages-with-linux.md#rhel-9-update)。
 
 
 * Adobe Campaign 现在兼容 **Microsoft SQL Server 2022** 和 **Oracle23c**（用作关系数据库管理系统），并兼容联合数据访问 (FDA)。
