@@ -5,9 +5,11 @@ description: 了解如何控制成本
 feature: Resource Management
 audience: campaign
 content-type: reference
+hide: true
+hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
 workflow-type: tm+mt
 source-wordcount: '2488'
 ht-degree: 0%
@@ -191,7 +193,7 @@ ht-degree: 0%
 
 1. 计算成本
 
-   计算出的成本取决于相关的元素（活动、投放、任务等） 及其状态（正在编辑、正在进行、已完成）。 在任何情况下，如果指定了实际成本，则计算成本将使用此金额。
+   计算成本取决于相关元素（活动、投放、任务等）及其状态（正在编辑、进行中、已完成）。 在任何情况下，如果指定了实际成本，则计算成本将使用此金额。
 
    如果未提供实际成本，则应用以下规则：
 
