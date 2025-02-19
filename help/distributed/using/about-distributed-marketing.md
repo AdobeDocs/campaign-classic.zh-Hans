@@ -4,10 +4,10 @@ title: 分布式营销入门
 description: 分布式营销入门
 feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 1%
+source-wordcount: '136'
+ht-degree: 3%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 
 
-Adobe Campaign提供了一个&#x200B;**分布式营销**&#x200B;应用程序，用于在中心实体（总部、营销部门等）和本地实体（商店、区域代理等）之间 和地方实体（销售点、区域机构等）之间实施协作营销活动。此合作基于称为&#x200B;**[!UICONTROL list of campaign packages]**&#x200B;的共享工作区，在该工作区中，集中创建的活动模板和实例将提供给本地实体。
+Adobe Campaign提供&#x200B;**分布式营销**&#x200B;应用程序，用于在中央实体（总部、营销部门等）与本地实体（销售点、区域机构等）之间实施合作活动。 此合作基于称为&#x200B;**[!UICONTROL list of campaign packages]**&#x200B;的共享工作区，在该工作区中，集中创建的活动模板和实例将提供给本地实体。
 
 中央实体提供本地实体可以使用的营销策划。 营销活动由表示本地或协作营销活动的包实现。 要使用营销活动，必须由本地实体对其进行订购，并且订单必须获得批准。
 
@@ -23,141 +23,146 @@ Adobe Campaign提供了一个&#x200B;**分布式营销**&#x200B;应用程序，�
 >
 >分布式营销模块是一个&#x200B;**营销活动**&#x200B;选项。 请核实您的许可协议。
 
-## 术语 {#terminology}
+>[!NOTE]
+>
+>要了解有关Adobe Campaign的分布式营销及其使用方式的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}。
 
-* **中央实体**
+<!--
+## Terminology {#terminology}
 
-  中央实体由营销运营商组成，负责指定通信并协助地方实体开展营销活动。
+* **Central entities**
 
-  分布式营销模块允许中央实体：
+   Central entities are made up of marketing operators in charge of specifying communications and assisting local entities in executing their marketing campaign.
 
-   * 为本地实体设置营销活动包，
-   * 提高本地实体在客户/潜在客户通信、定位、内容等选择方面的自主程度。
-   * 管理和控制成本，
-   * 处理机构网络。
+   The distributed marketing module allows the central entity to:
 
-* **本地实体**
+   * set up marketing campaign packages for local entities,
+   * increase local entities' degree of autonomy regarding their choice in customer/prospect communication, targeting, content, etc.
+   * manage and control costs, 
+   * handle a network of agencies.
 
-  本地实体可以是代理、商店或特定的本地运营者组（国家或地区经理、品牌经理等）。
+* **Local entities**
 
-  分布式营销允许本地实体拥有更多自主权，同时优化执行成本。
+   Local entities can be agencies, stores or groups of specific local operators (country or regional managers, brand managers, etc.).
 
-* **本地化**
+   Distributed Marketing allows local entities to have more autonomy while optimizing execution costs.
 
-  本地化是本地实体修改营销活动目标和内容的能力。 可能的本地化级别取决于活动的类型及其实施。
+* **Localization**
 
-* **营销活动包列表**
+   Localization is the capacity for a local entity to modify the target and content of a campaign. The possible level of localization depends on the type of campaign and its implementation.
 
-  营销活动包列表包含对本地实体可用的营销活动。
+* **List of campaign packages**
 
-* **营销活动包**
+   The list of campaign packages contains the campaigns available to local entities.
 
-  由中央实体创建的模板（或营销活动实例），可供一组本地实体使用。
+* **Campaign package**
 
-* **本地营销活动**
+   Template (or campaign instance) created by a central entity and made available to a set of local entities.
 
-  本地营销活动是从包含&#x200B;**特定执行计划**&#x200B;的&#x200B;**[!UICONTROL campaign packages]**&#x200B;列表中引用的模板创建的实例。 其目标是使用由中央实体设置和配置的活动模板满足本地通信需求。
+* **Local campaign**
 
-  本地实体的自治程度取决于所使用的实现。
+   A local campaign is an instance created from a template referenced in the list of **[!UICONTROL campaign packages]** with a **specific execution schedule**. Its aim is to meet a local communication need using a campaign template that was set up and configured by the central entity.
 
-  请参阅[创建本地营销活动](creating-a-local-campaign.md)。
+   The local entity's degree of autonomy depends on the implementation used.
 
-* **协作营销活动**
+   Refer to [Creating a local campaign](creating-a-local-campaign.md).
 
-  协作营销活动是一个营销活动，其&#x200B;**执行计划由中央实体定义**，本地实体可以使用该中央实体。 每个本地实体的内容保持不变，但成本是分担的。 要参加该活动，本地实体需订阅协作活动。
+* **Collaborative campaign**
 
-   * **[!UICONTROL Collaborative campaign (by form)]**：建议用于涉及最多300个本地实体的营销活动。 本地实体可以在Web表单中输入用于定位和内容个性化的预定义参数。 表单可以是Adobe Campaign表单或外部表单（外联网客户端）。 功能管理员可以根据集成商定义的表单模板定义和配置表单。 要订购营销活动，本地实体只需要具有Web访问权限。
-   * **[!UICONTROL Collaborative campaign (by campaign)]**：建议用于针对数十个本地实体的营销活动。 此类营销活动会为每个本地实体创建子营销活动。 中央实体批准&#x200B;**[!UICONTROL collaborative campaign (by campaign)]**&#x200B;后，该营销活动即可用于本地实体，该实体可以对其进行修改。 执行会在父营销活动和子营销活动之间自动同步。 本地实体必须有权访问实例，才能订购活动并参与活动。
-   * **[!UICONTROL Collaborative campaign (by target approval)]**：建议用于针对数千个本地实体的营销活动。 本地实体接收由中央实体预定义的联系人列表。 本地实体通过Web表单根据促销活动内容决定是否保留某些联系人。 从选定联系人的列表中推导出本地实体。 要参与该活动，本地实体只需要拥有Web访问权限。
-   * **[!UICONTROL Collaborative campaign (simple)]**：此模式确保与以前版本的特定执行进程兼容。
+   A collaborative campaign is a campaign whose **execution schedule is defined** by the central entity, which the local entity may use. The content remains the same for each local entity but costs are shared. To take part, local entities subscribe to the collaborative campaign.
 
-  请参阅[创建协作营销活动](creating-a-collaborative-campaign.md)。
+   * **[!UICONTROL Collaborative campaign (by form)]**: recommended for campaigns involving up to 300 local entities. The local entity can enter predefined parameters for targeting and content personalization in a web form. The form can be an Adobe Campaign form or an external form (extranet client). A functional administrator can define and configure the form based on a form template defined by the integrator. To order the campaign, the local entity just needs web access.
+   * **[!UICONTROL Collaborative campaign (by campaign)]**: recommended for campaigns aimed at dozens of local entities. This type of campaign creates child campaigns for each local entity. Once the **[!UICONTROL collaborative campaign (by campaign)]** is approved by the central entity, the campaign is made available to the local entity, who can modify it. Execution is automatically synched between parent and child campaigns. The local entity must have access to an instance to order a campaign and participate in it.
+   * **[!UICONTROL Collaborative campaign (by target approval)]**: recommended for campaigns aimed at several thousand local entities. Local entity receives a contact list that has been predefined by the central entity. The local entity decides whether or not to keep certain contacts based on the campaign content, via a web form. Local entities are deduced from the list of selected contacts. To participate in the campaign, the local entity just needs web access.
+   * **[!UICONTROL Collaborative campaign (simple)]**: this mode ensures compatibility with the specific execution processes of previous versions.
 
-**订购促销活动程序包**
+   Refer to [Creating a collaborative campaign](creating-a-collaborative-campaign.md).
 
-如果本地实体注册了促销活动，则会按照顺序生成该订单，以重组与促销活动本地化相关的所有信息。
+**Ordering campaign packages**
 
-## 工作区 {#workspace}
+   If a local entity registers for a campaign this is made into an order which regroups all information relative to the campaign localization.
 
-可从&#x200B;**营销活动**&#x200B;选项卡访问营销活动包列表：单击&#x200B;**[!UICONTROL Campaign packages]**&#x200B;链接。
+## Workspace {#workspace}
+
+The list of campaign packages can be accessed from the **Campaigns** tab: click the **[!UICONTROL Campaign packages]** link.
 
 ![](assets/mkg_dist_home_local_op.png)
 
-此窗口允许所有本地运营商查看其本地代理可用的营销活动。
+This window allows all local operators to view the campaigns available for their local agency.
 
-对于中央机构，此窗口会显示营销活动包列表中可用的所有包，并提供用于编辑列表的附加链接。
+In the case of central agencies, this window displays all packages available in the list of campaign packages and offers additional links for editing the list.
 
-## 操作员和实体 {#operators-and-entities}
+## Operators and entities {#operators-and-entities}
 
-首先通过&#x200B;**[!UICONTROL Access management]**&#x200B;文件夹指定中央和本地实体运算符。
+Start by specifying the central and local entity operators via the **[!UICONTROL Access management]** folder.
 
 ![](assets/s_advuser_mkg_dist_tree.png)
 
-### 运算符 {#operators}
+### Operators {#operators}
 
-您需要创建中央和本地运算符。
+You need to create central and local operators.
 
-中心运算符必须属于&#x200B;**[!UICONTROL Central management]**&#x200B;运算符组或具有&#x200B;**[!UICONTROL CENTRAL]**&#x200B;命名权限。
+Central operators must belong to the **[!UICONTROL Central management]** operator group or have the **[!UICONTROL CENTRAL]** named right.
 
-本地操作员必须属于&#x200B;**[!UICONTROL Local management]**&#x200B;操作员组或具有&#x200B;**[!UICONTROL LOCAL]**&#x200B;命名权限。 它们还必须链接到其本地实体。
+Local operators must belong to the **[!UICONTROL Local management]** operator group or have the **[!UICONTROL LOCAL]** named right. They must also be linked to their local entity.
 
 ![](assets/s_advuser_mkg_dist_local_create.png)
 
-### 组织实体 {#organizational-entities}
+### Organizational entities {#organizational-entities}
 
-要创建组织实体，请单击&#x200B;**[!UICONTROL Administration > Access management > Organizational entities]**&#x200B;节点，然后单击实体列表上方的&#x200B;**[!UICONTROL New]**&#x200B;图标。
+To create an organizational entity, click the **[!UICONTROL Administration > Access management > Organizational entities]** node and click the **[!UICONTROL New]** icon above the list of entities.
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 
-每个组织实体都包含标识信息（标签、内部名称、联系信息等） 和订单审批流程中涉及的组。 这些在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Notifications and approvals]**&#x200B;部分中定义。
+Each organizational entity contains identification information (label, internal name, contact information, etc.) and groups involved in the order approval process. These are defined in the **[!UICONTROL Notifications and approvals]** section found in the **[!UICONTROL General]** tab.
 
-* 定义包通知组：每当将新包添加到营销活动包列表以及营销活动变得可用时，此组中的操作员都会收到通知。
-* 选择负责批准订单的审阅人组，即负责批准由本地实体订购的营销活动的审阅人。
-* 最后，选择负责批准本地营销活动（目标、内容、预算等）的审阅人组。 在订购营销活动时，此组可能会被添加到，具体取决于模板。
+* Define a package notification group: operators in this group will receive a notification each time a new package is added to the list of campaign packages and each time a campaign becomes available.
+* Select the group of reviewers in charge of approving orders, i.e. those in charge of approving campaigns ordered by the local entity.
+* Finally, select the group of reviewers in charge of approving the local campaign (target, content, budget, etc.). This group may be added to when ordering a campaign, depending on the template.
 
 >[!NOTE]
 >
->审批流程显示在[审批流程](creating-a-local-campaign.md#approval-process)部分。
+>The approval process is presented in the [Approval process](creating-a-local-campaign.md#approval-process) section.
 
-## 实现 {#implementation}
+## Implementation {#implementation}
 
-分布式营销活动由中央实体创建和发布。 如果需要，它们可以由本地和中央实体使用。
+Distributed Marketing campaigns are created and published by the central entity. They may be used by both local and central entities as needed.
 
-实施过程取决于使用的活动包类型和本地实体委派级别。
+The implementation procedure depends on the type of campaign package used and the local entity delegation levels.
 
-### Integrator任务 {#integrator-side}
+### Integrator tasks {#integrator-side}
 
-1. 创建本地实体。
-1. 将收件人与管理本地实体的操作员关联起来。
+1. Create local entities.
+1. Link recipients with the operators that manage local entities.
 
    ![](assets/mkg_dist_local_entity_association.png)
 
-1. 指定本地实体的权限和浏览规则
-1. 指定营销活动本地化所需的字段集：
+1. Specify rights and browsing rules for local entities
+1. Specify the set of fields necessary for campaign localization:
 
-   * 目标定义和最大大小，
-   * 内容定义，
-   * 执行计划（联系日期和提取日期），**仅限本地操作员**，
-   * 具有所有必需附加字段的订单模式扩展。
+    * target definition and maximum size,
+    * content definition,
+    * execution schedule (contact date and extraction date), **for local operators only**,
+    * extension of order schema with all necessary additional fields.
 
-1. 创建Web窗体(Adobe或外联网)，以便显示本地化参数、评估目标和预算，以及预览内容和批准订单。
+1. Create a web form (Adobe or extranet) that allows you to display localization parameters, evaluate the target and budget, as well as preview the content and approve the order.
 
-   对于&#x200B;**协作营销活动（按目标审批）**，创建将保存每个本地实体的审批的表。
+   For **collaborative campaigns (by target approval)**, create the table where the approvals for each local entity will be saved.
 
-### 功能管理员任务 {#functional-administrator-side}
+### Functional administrator tasks {#functional-administrator-side}
 
-创建每个营销策划时，必须执行这些步骤。
+These steps must be carried out when creating each campaign.
 
-1. 使用用于营销活动本地化的字段更新表单。
-1. 从相应的活动模板（协作活动）创建实例，或复制活动模板（本地活动）。
-1. 使用本地化字段和表单引用配置营销活动。
-1. Publish营销活动。
+1. Update the form with the fields used for campaign localization.
+1. Create an instance from an appropriate campaign template (collaborative campaign) or duplicate the campaign template (local campaign).
+1. Configure the campaign with the localization fields and the form reference.
+1. Publish the campaign.
 
-### 本地操作员任务 {#local-operator-side}
+### Local operator tasks {#local-operator-side}
 
-必须为每个活动执行这些步骤。
+These steps must be carried out for each campaign.
 
-1. 收到Campaign包可用性的通知后，请指定营销活动的位置（可选）。
-1. 评估目标、预算等。
-1. 预览促销活动内容。
-1. 订购营销活动。
+1. Once you receive notification of the campaign package's availability, specify the campaign's location (optional).
+1. Evaluate the target, the budget, etc.
+1. Preview campaign content.
+1. Order the campaign. --!>

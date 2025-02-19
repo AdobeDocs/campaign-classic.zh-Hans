@@ -3,8 +3,10 @@ product: campaign
 title: 创建本地活动
 description: 创建本地活动
 feature: Distributed Marketing
+hide: true
+hidefromtoc: true
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
@@ -105,7 +107,7 @@ Web界面对应于本地实体在订购营销活动时要填充的表单。
 
 ### 文档 {#documents}
 
-您可以允许本地实体运算符链接文档（文本文件、电子表格、图像、营销活动描述等） 到本地营销活动。 **[!UICONTROL Advanced parameters for campaign entry...]**&#x200B;链接允许您限制文档数量。 要实现此目的，只需在&#x200B;**[!UICONTROL Number of documents]**&#x200B;字段中输入允许的最大数量即可。
+在创建订单时，您可以允许本地实体操作员将文档（文本文件、电子表格、图像、促销活动描述等）链接到本地促销活动。 **[!UICONTROL Advanced parameters for campaign entry...]**&#x200B;链接允许您限制文档数量。 要实现此目的，只需在&#x200B;**[!UICONTROL Number of documents]**&#x200B;字段中输入允许的最大数量即可。
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 

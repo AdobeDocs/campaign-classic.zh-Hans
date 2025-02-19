@@ -3,8 +3,10 @@ product: campaign
 title: 分布式营销示例
 description: 分布式营销示例
 feature: Distributed Marketing
+hide: true
+hidefromtoc: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 0%
@@ -96,7 +98,7 @@ ht-degree: 0%
 
 1. 创建&#x200B;**[!UICONTROL Data distribution]**&#x200B;活动。
 1. 创建协作活动。
-1. Publish营销活动。
+1. 发布营销活动。
 
 ### 本地实体侧 {#local-entity-side}
 
@@ -157,7 +159,7 @@ ht-degree: 0%
 
 1. 保存您的记录。
 
-#### Publish营销活动 {#publishing-the-campaign}
+#### 发布营销活动 {#publishing-the-campaign}
 
 您现在可以从&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡添加&#x200B;**营销活动包**。
 
