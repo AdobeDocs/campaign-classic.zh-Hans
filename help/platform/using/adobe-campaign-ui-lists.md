@@ -4,10 +4,10 @@ title: 管理和自定义列表
 description: 了解如何浏览和配置列表
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: f43b15e61fb286a612f057d8d3bf5a1ff6ecb253
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 32%
+source-wordcount: '66'
+ht-degree: 0%
 
 ---
 
@@ -15,191 +15,197 @@ ht-degree: 32%
 
 
 
-您可以使用资源管理器访问Campaign数据库中的记录列表。 您可以筛选这些列表、运行搜索、添加信息、筛选和排序数据。
+在Campaign客户端控制台中，数据显示在列表中。 您可以根据自己的需求调整这些列表。 例如，您可以添加列、过滤数据、计算记录、保存和共享设置。
 
-## 对记录计数 {#counting-records}
+>[!NOTE]
+>
+>要了解如何在Adobe Campaign中管理和自定义列表，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}。
 
-默认情况下，Adobe Campaign会加载列表的前200条记录。 这意味着显示不一定显示您正在查看的表的所有记录。 您可以统计列表中的记录数量并加载更多记录。
+<!--
+## Count records {#counting-records}
 
-在列表屏幕的右下方，**[!UICONTROL counter]**&#x200B;显示已加载的记录数以及数据库中的记录总数（应用任何筛选器后）：
+By default, Adobe Campaign loads the first 200 records of a list. This means that the display does not necessarily show all the records of the table you are viewing. You can run a count of the number of records in the list and load more records.
+
+In the lower right-hand part of the list screen, a **[!UICONTROL counter]** shows how many records have been loaded and the total number of records in the database (after applying any filters):
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
-如果是“**”？将显示“**”而不是右侧的数字，请单击计数器以启动计算。
+If a "**?**" appears instead of the number on the right, click the counter to launch the calculation.
 
-### 加载更多记录 {#loading-more-records}
+### Load more records {#loading-more-records}
 
-要加载（并因此显示）其他记录（默认为200行），请单击&#x200B;**[!UICONTROL Continue loading]**。
+To load (and therefore display) additional records (200 lines by default) click **[!UICONTROL Continue loading]**.
 
 ![](assets/s_ncs_user_load_list.png)
 
-要加载所有记录，请右键单击列表并选择&#x200B;**[!UICONTROL Load all]**。
+To load all the records, right-click the list and select **[!UICONTROL Load all]**.
 
 >[!CAUTION]
 >
->根据记录数，加载完整列表的时间可能会很长。
+>Depending on the number of records, the time for loading the full list can be long.
 
-### 更改默认的记录数 {#change-default-number-of-records}
+### Change default number of records {#change-default-number-of-records}
 
-要更改加载的默认记录数，请单击列表右下角的&#x200B;**[!UICONTROL Configure list]**。
+To change the default number of records loaded, click **[!UICONTROL Configure list]** in the bottom right-hand corner of the list.
 
 ![](assets/s_ncs_user_configure_list.png)
 
-在列表配置窗口中，单击&#x200B;**[!UICONTROL Advanced parameters]** （左下方）并更改要检索的行数。
+In the list configuration window, click **[!UICONTROL Advanced parameters]** (bottom left) and change the number of lines to retrieve.
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-## 配置列表 {#configuring-lists}
+## Configure lists {#configuring-lists}
 
-### 添加列 {#add-columns}
+### Add columns {#add-columns}
 
-在列表中添加列有两种方法。
+There are two ways to add a column in a list.
 
-您可以从记录的详细信息中快速向列表中添加列。 操作步骤：
+You can quickly add a column to a list from the detail of a record. To do this:
 
-1. 在详细信息屏幕中，右键单击要在列中显示的字段。
-1. 选择 **[!UICONTROL Add in the list]**。
+1. From a detail screen, right-click the field you want to display in a column.
+1. Select **[!UICONTROL Add in the list]**.
 
-   该列会添加到现有列的右侧。
+   The column is added to the right of the existing columns.
 
 ![](assets/s_ncs_user_add_in_list.png)
 
-添加列的另一种方法（例如，如果要显示未在详细信息屏幕上显示的数据）是使用列表配置窗口。 操作步骤：
+Another way to add columns, for example if you want to display data which is not displayed on the detail screen, is to use the list configuration window. To do this:
 
-1. 单击列表右下方的&#x200B;**[!UICONTROL Configure list]**。
+1. Click **[!UICONTROL Configure list]** below and to the right of the list.
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. 在列表配置窗口中，双击要添加到&#x200B;**[!UICONTROL Available fields]**&#x200B;列表中的字段以将其添加到&#x200B;**[!UICONTROL Output columns]**。
+1. In the list configuration window, double-click the field to be added in the **[!UICONTROL Available fields]** list in order to add it to the **[!UICONTROL Output columns]**. 
 
    ![](assets/s_ncs_user_configurelist.png)
 
    >[!NOTE]
    >
-   >默认情况下，不显示高级字段。 要显示它们，请单击可用字段列表右下方的 **Display advanced fields**。
+   >By default, advanced fields are not displayed. To display them, click **Display advanced fields** below and to the right of the list of available fields.
    >
-   >会按照数据库表，然后按字母顺序显示各个标签。
+   >The labels are displayed by table and then in alphabetical order.
    >
-   >使用&#x200B;**搜索**&#x200B;字段在可用字段中运行搜索。 有关详细信息，请参阅[此部分](#sorting-a-list)。
+   >Use the **Search** field to run a search in the available fields. For further information, refer to [this section](#sorting-a-list).
    >
-   >字段由特定图标标识：SQL字段、链接表、计算字段等。 对于每个选定的字段，描述都显示在可用字段列表下。 [了解详情](#configuring-lists)。
+   >Fields are identified by specific icons: SQL fields, linked tables, calculated fields, etc. For each field selected, the description is displayed under the list of available fields. [Learn more](#configuring-lists).  
    >
-   >您还可以对数据进行排序和过滤。 请参阅[此小节](../../platform/using/filtering-options.md)。
+   >You can also sort and filter data. See [this section](../../platform/using/filtering-options.md).
 
-1. 对要显示的每个列重复此步骤。
-1. 使用箭头修改&#x200B;**显示顺序**。 值最高的列将显示在记录列表的左侧。
+1. Repeat for each column to be displayed.
+1. Use the arrows to modify the **display order**. The highest column will be on the left in the list of records.
 
    ![](assets/s_ncs_user_columns_order_down.png)
 
-1. 如果需要，可以单击&#x200B;**[!UICONTROL Distribution of values]**&#x200B;查看当前文件夹中选定字段的值的重新分区。
+1. If you need, you can click **[!UICONTROL Distribution of values]** to view the repartition of values for the selected field in the current folder.
 
    ![](assets/s_ncs_user_configurelist_values.png)
 
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以确认配置并显示结果。
+1. Click **[!UICONTROL OK]** to confirm the configuration and display the result.
 
-### 新建列 {#create-a-new-column}
+### Create a new column {#create-a-new-column}
 
-您可以创建新列以在列表中显示附加字段。 操作步骤：
+You can create new columns to display additional fields in the list. To do this:
 
-1. 单击列表右侧下方的&#x200B;**[!UICONTROL Configure the list]**。
-1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;以在列表中显示新字段。
+1. Click **[!UICONTROL Configure the list]** at below and to the right of the list.
+1. Click **[!UICONTROL Add]** to display a new field in the list.
 
-### 移除列 {#remove-a-column}
+### Remove a column {#remove-a-column}
 
-您可以使用位于列表下方和右侧的&#x200B;**[!UICONTROL Configure list]**&#x200B;来屏蔽记录列表中的一列或多列。
+You can mask one or more columns in a list of records using **[!UICONTROL Configure list]** located below and to the right of the list.
 
 ![](assets/s_ncs_user_configure_list.png)
 
-在列表配置窗口中，从&#x200B;**[!UICONTROL Output columns]**&#x200B;区域中选择要遮罩的列，然后单击删除按钮。
+In the list configuration window, select the column to be masked from the **[!UICONTROL Output columns]** zone, and click the delete button.
 
 ![](assets/s_ncs_user_removecolumn_icon.png)
 
-对要遮罩的每一列重复此操作。 单击&#x200B;**[!UICONTROL OK]**&#x200B;以确认配置并显示结果。
+Repeat for each column to be masked. Click **[!UICONTROL OK]** to confirm the configuration and display the result.
 
-### 调整列宽 {#adjust-column-width}
+### Adjust column width {#adjust-column-width}
 
-当列表处于活动状态（即至少选择了一行）时，您可以使用F9调整列的宽度，以使所有列都可以在屏幕上显示。
+When a list is active, i.e. at least one line is selected, you can use F9 to adjust the width of the columns so that all the columns can be displayed on screen.
 
-### 在子文件夹中显示数据 {#display-sub-folders-records}
+### Display data in sub-folders {#display-sub-folders-records}
 
-列表可显示：
+Lists can display:
 
-* 仅包含在所选文件夹中的记录，
-* 或是所选文件夹及其子文件夹中的记录。
+* Either the records contained in the selected folder only,
+* Or the records in the selected folder AND its sub-folders.
 
-要从一种显示模式切换到另一种显示模式，请单击工具栏中的&#x200B;**[!UICONTROL Display sub-levels]**。
+To switch from one display mode to the other, click **[!UICONTROL Display sub-levels]** in the toolbar.
 
 ![](assets/s_ncs_user_display_children_icon.png)
 
-## 保存列表配置 {#saving-a-list-configuration}
+## Save a list configuration {#saving-a-list-configuration}
 
-列表配置是在工作站级别本地定义的。 清空本地缓存时，本地配置被禁用。
+The list configurations are defined locally at the workstation level. When the local cache is cleared, local configurations are disabled.
 
-默认情况下，定义的显示参数适用于具有相应文件夹类型的所有列表。 因此，当您从文件夹修改收件人列表显示方式时，这个配置将应用到所有其他收件人文件夹。
+By default, the defined display parameters apply to all lists with the corresponding folder type. Thus, when you modify how the list of recipients is displayed from a folder, this configuration will be applied to all the other recipient folders.
 
-但是，可以保存多个要应用于相同类型的不同文件夹的配置。 该配置会随包含数据的文件夹的属性一同保存，并可重新应用。
+It is, however, possible to save more than one configuration to be applied to different folders of the same type. The configuration is saved with the properties of the folder containing the data and can be reapplied.
 
-例如，对于投放文件夹，可以配置以下显示：
+For example, for a delivery folder, it is possible to configure the following display:
 
 ![](assets/s_ncs_user_folder_save_config_1.png)
 
-要保存此列表配置，使其可重复使用，可执行以下操作：
+To save this list configuration so that it can be reused, follow the steps below:
 
-1. 右键单击其中包含已显示数据的文件夹。
-1. 选择 **[!UICONTROL Properties]**。
-1. 单击&#x200B;**[!UICONTROL Advanced settings]**，然后在&#x200B;**[!UICONTROL Configuration]**&#x200B;字段中指定名称。
+1. Right click the folder containing the displayed data.
+1. Select **[!UICONTROL Properties]**.
+1. Click **[!UICONTROL Advanced settings]** and then specify a name in the **[!UICONTROL Configuration]** field. 
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. 单击&#x200B;**[!UICONTROL OK]**，然后单击&#x200B;**[!UICONTROL Save]**。
+1. Click **[!UICONTROL OK]** and then click **[!UICONTROL Save]**.
 
-然后可将此配置应用到另一个 **Delivery** 文件夹：
+You can then apply this configuration to another **Delivery** folder:
 
 ![](assets/s_ncs_user_folder_save_config_3.png)
 
-在文件夹属性窗口中单击&#x200B;**[!UICONTROL Save]**。 此时会修改列表显示，以符合所指定的配置：
+Click **[!UICONTROL Save]** in the folder properties window. The list display is modified to match the specified configuration:
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-## 导出列表 {#exporting-a-list}
+## Export a list {#exporting-a-list}
 
-要从列表中导出数据，必须使用导出助手。 要访问它，请从列表中选择要导出的元素，右键单击并选择&#x200B;**[!UICONTROL Export...]**。
+To export data from a list, you must use an export assistant. To access it, select the elements to be exported from the list, right-click and select **[!UICONTROL Export...]**.
 
-在[通用导入和导出](../../platform/using/about-generic-imports-exports.md)中说明了导入和导出函数的使用。
+The use of the import and export functions is explained in [Generic imports and exports](../../platform/using/about-generic-imports-exports.md).
 
 >[!CAUTION]
 >
->不得使用“复制/粘贴”功能从列表中导出元素。
+>Elements from a list must not be exported using the Copy/Paste function.
 
-## 对列表排序 {#sorting-a-list}
+## Sort a list {#sorting-a-list}
 
-列表可能包含大量数据。 您可以对这些数据进行排序，或者应用简单或高级过滤器。 排序允许您按升序或降序显示数据。 您可以利用过滤器来定义并组合各种标准，从而仅显示所选的数据。
+Lists can contain a large amount of data. You can sort these data or apply simple or advanced filters. Sorting lets you display data in ascending or descending order. Filters let you define and combine criteria to display selected data only.
 
-单击列标题可应用升序或降序排序，或取消数据排序。 活动排序状态和排序顺序在列标签之前用蓝色箭头指示。 列标签前面的红色短划线表示排序应用于从数据库索引的数据。 此排序方法用于优化排序作业。
+Click the column header to apply an ascending or descending sort, or to cancel data sorting. Active sort status and sorting order are indicated by a blue arrow before the column label. A red dash before the column label means that the sort is applied to data indexed from the database. This sorting method is used to optimize sort jobs.
 
-您还可以配置排序或组合排序标准。 为此请执行以下操作步骤：
+You can also configure sorting or combine sort criteria. To do this, follow the steps below:
 
-1. 列表右侧的下方&#x200B;**[!UICONTROL Configure list]**。
+1. **[!UICONTROL Configure list]** below and to the right of the list. 
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. 在列表配置窗口中，单击&#x200B;**[!UICONTROL Sorting]**&#x200B;选项卡。
-1. 选择要排序的字段以及排序方向（升序或降序）。
+1. In the list configuration window, click the **[!UICONTROL Sorting]** tab.
+1. Select the fields to sort and the sort direction (ascending or descending).
 
    ![](assets/s_ncs_user_configurelist_sort.png)
 
-1. 排序优先级由排序列的顺序定义。 要改变优先级，可使用适当的图标改变各列的顺序。
+1. Sort priority is defined by the order of the sort columns. To change the priority, use the appropriate icons to change the order of the columns.
 
    ![](assets/s_ncs_user_configurelist_move.png)
 
-   排序优先级不会影响列表中各类的显示情况。
+   Sort priority does not affect the display of the columns in the list.
 
-1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;以确认此配置并在列表中显示结果。
+1. Click **[!UICONTROL Ok]** to confirm this configuration and display the result in the list.
 
-### 搜索元素 {#running-a-search}
+### Searching elements {#running-a-search}
 
-您可以使用位于字段列表上方的&#x200B;**[!UICONTROL Search]**&#x200B;字段在编辑器中运行可用字段的搜索。 按键盘上的&#x200B;**Enter**&#x200B;键或浏览列表。 符合搜索内容的字段将以粗体标签显示。
+You can run a search of the available fields in an editor using the **[!UICONTROL Search]** field located above the list of fields. Press **Enter** on the keyboard or browse the list. The fields that match your search will have bold labels.
 
 >[!NOTE]
 >
->您可以创建过滤器以仅显示列表中的某些数据。 [了解详情](../../platform/using/creating-filters.md)。
+>You can create filters to display only some of the data in a list. [Learn more](../../platform/using/creating-filters.md).
+-->
