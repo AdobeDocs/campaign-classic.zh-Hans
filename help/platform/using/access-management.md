@@ -5,7 +5,7 @@ description: 了解如何授予对Campaign功能的访问权限
 badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
+source-git-commit: 2759d65150299e4fa679ea986df8136cd9525370
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 5%
@@ -17,9 +17,9 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->从Campaign Classicv7.3.1开始，所有操作员都应使用[AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}连接到Campaign。
+>从Campaign Classic v7.3.1开始，所有操作员都应使用[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}连接到Campaign。
 >
->作为加强安全和身份验证过程的一部分，Adobe Campaign强烈建议将所有现有的操作员身份验证模式从登录/密码本机身份验证迁移到AdobeIdentity Management System (IMS)。 在[此页面](../../technotes/using/migrate-users-to-ims.md)中了解如何迁移操作员。
+>作为加强安全和身份验证过程的一部分，Adobe Campaign强烈建议将所有现有的操作员身份验证模式从登录/密码本机身份验证迁移到Adobe Identity Management System (IMS)。 在[此页面](../../technotes/using/migrate-users-to-ims.md)中了解如何迁移操作员。
 > 
 >进行此迁移后，请注意，以下部分不再适用。  请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hans){target="_blank"}以了解如何使用Adobe IMS设置权限。
 
@@ -42,7 +42,7 @@ Adobe Campaign允许您定义和管理分配给各种操作员的权限。 这�
 
 >[!NOTE]
 >
->在开始定义权限之前，Adobe建议您阅读[安全配置核对清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)。
+>在开始定义权限之前，Adobe建议您先阅读[安全配置核对清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)。
 
 请参阅以下部分以了解如何授予访问权限和设置权限：
 
