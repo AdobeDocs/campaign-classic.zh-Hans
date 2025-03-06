@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
-workflow-type: ht
-source-wordcount: '2562'
-ht-degree: 100%
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+workflow-type: tm+mt
+source-wordcount: '2571'
+ht-degree: 99%
 
 ---
 
@@ -172,7 +172,7 @@ ht-degree: 100%
       + [个性化字段](delivery/using/personalization-fields.md)
       + [个性化块](delivery/using/personalization-blocks.md)
       + [条件内容](delivery/using/conditional-content.md)
-      + [个性化优惠券](delivery/using/personalized-coupons.md)
+      + [个性化产品建议券](delivery/using/personalized-coupons.md)
       + [生成个性化 PDF 文档](delivery/using/generating-personalized-pdf-documents.md)
       + [自定义表情符号列表](delivery/using/customizing-emoticon-list.md)
    + 使用种子地址{#using-seed-addresses}
@@ -238,6 +238,8 @@ ht-degree: 100%
       + [丰富内容](delivery/using/enriching-content.md)
       + [通过工作流实现自动化](delivery/using/automating-via-workflows.md)
 + 编排营销活动 {#orchestrating-campaigns}
+   + [关于营销活动](campaign/using/about-marketing-campaigns.md)
+   + [关于活动优化](campaign-opt/using/about-campaign-optimization.md)
    + 关于营销活动 {#about-marketing-campaigns}
       + [设计营销活动](campaign/using/designing-marketing-campaigns.md)
       + [访问营销活动](campaign/using/accessing-marketing-campaigns.md)
@@ -250,14 +252,14 @@ ht-degree: 100%
       + [设置和管理审批](campaign/using/marketing-campaign-approval.md)
       + [监测活动](campaign/using/marketing-campaign-monitoring.md)
       + [供应商、库存和预算](campaign/using/providers-stocks-and-budgets.md)
-   + 活动优化 {#campaign-optimization}
-      + [关于活动类型](campaign-opt/using/about-campaign-typologies.md)
-      + [压力规则](campaign-opt/using/pressure-rules.md)
-      + [一致性规则](campaign-opt/using/consistency-rules.md)
-      + [控制规则](campaign-opt/using/control-rules.md)
-      + [筛选规则](campaign-opt/using/filtering-rules.md)
-      + [应用规则](campaign-opt/using/applying-rules.md)
-      + [活动模拟](campaign-opt/using/campaign-simulations.md)
+      + 活动优化 {#campaign-optimization}
+         + [关于活动类型](campaign-opt/using/about-campaign-typologies.md)
+         + [压力规则](campaign-opt/using/pressure-rules.md)
+         + [一致性规则](campaign-opt/using/consistency-rules.md)
+         + [控制规则](campaign-opt/using/control-rules.md)
+         + [筛选规则](campaign-opt/using/filtering-rules.md)
+         + [应用规则](campaign-opt/using/applying-rules.md)
+         + [活动模拟](campaign-opt/using/campaign-simulations.md)
 + 营销资源管理{#mrm}
    + [关于营销资源管理](mrm/using/about-marketing-resource-management.md)
    + [创建和管理任务](mrm/using/creating-and-managing-tasks.md)
@@ -391,6 +393,7 @@ ht-degree: 100%
       + [同步 Web 应用程序](integrations/using/synchronizing-web-applications.md)
       + [对  [!DNL ACS Connector] 进行故障排除](integrations/using/troubleshooting-the-acs-connector.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
+   + [关于工作流自动化](workflow/using/about-workflow-automation.md)
    + 工作流入门 {#introduction}
       + [关于工作流](workflow/using/about-workflows.md)
       + [关于活动](workflow/using/about-activities.md)
@@ -414,11 +417,11 @@ ht-degree: 100%
       + [排除](workflow/using/exclusion.md)
       + [拆分](workflow/using/split.md)
       + [单元格](workflow/using/cells.md)
-      + [单元格优惠](workflow/using/offers-by-cell.md)
+      + [单元格产品建议](workflow/using/offers-by-cell.md)
       + [投放概要](workflow/using/delivery-outline.md)
       + [扩充](workflow/using/enrichment.md)
       + [编辑架构](workflow/using/edit-schema.md)
-      + [优惠引擎](workflow/using/offer-engine.md)
+      + [产品建议引擎](workflow/using/offer-engine.md)
       + [重复数据删除](workflow/using/deduplication.md)
       + [更改维度](workflow/using/change-dimension.md)
       + [列表更新](workflow/using/list-update.md)
@@ -509,9 +512,9 @@ ht-degree: 100%
       + [更改活动图像](workflow/using/managing-activity-images.md)
       + [管理时区](workflow/using/managing-time-zones.md)
       + [技术工作流](workflow/using/about-technical-workflows.md)
-+ 管理优惠{#managing-offers}
++ 管理产品建议{#managing-offers}
    + 互动入门 {#interaction-overview}
-      + [互动和优惠管理](interaction/using/interaction-and-offer-management.md)
+      + [互动和产品建议管理](interaction/using/interaction-and-offer-management.md)
       + [词汇表](interaction/using/i-glossary.md)
       + [互动最佳实践](interaction/using/interaction-best-practices.md)
    + 一般操作 {#general-operation}
@@ -521,33 +524,33 @@ ht-degree: 100%
       + [环境概述](interaction/using/environments-overview.md)
       + [操作员轮廓](interaction/using/operator-profiles.md)
       + [实时/设计环境](interaction/using/live-design-environments.md)
-      + [创建优惠空间](interaction/using/creating-offer-spaces.md)
+      + [创建产品建议空间](interaction/using/creating-offer-spaces.md)
       + [创建预定义过滤器](interaction/using/creating-predefined-filters.md)
-   + 管理优惠目录 {#managing-an-offer-catalog}
-      + [优惠目录概述](interaction/using/offer-catalog-overview.md)
-      + [创建优惠类别](interaction/using/creating-offer-categories.md)
+   + 管理产品建议目录 {#managing-an-offer-catalog}
+      + [产品建议目录概述](interaction/using/offer-catalog-overview.md)
+      + [创建产品建议类别](interaction/using/creating-offer-categories.md)
       + [推荐类别](interaction/using/recommending-a-category.md)
-      + [创建优惠](interaction/using/creating-an-offer.md)
-      + [批准和激活优惠](interaction/using/approving-and-activating-an-offer.md)
-      + [管理优惠模板](interaction/using/managing-offer-templates.md)
-      + [管理优惠演示](interaction/using/managing-offer-presentation.md)
-   + 优惠模拟{#simulating-offers}
-      + [关于优惠模拟](interaction/using/about-offers-simulation.md)
+      + [创建产品建议](interaction/using/creating-an-offer.md)
+      + [批准和激活产品建议](interaction/using/approving-and-activating-an-offer.md)
+      + [管理产品建议模板](interaction/using/managing-offer-templates.md)
+      + [管理产品建议演示](interaction/using/managing-offer-presentation.md)
+   + 产品建议模拟{#simulating-offers}
+      + [关于产品建议模拟](interaction/using/about-offers-simulation.md)
       + [执行设置](interaction/using/execution-settings.md)
       + [模拟范围](interaction/using/simulation-scope.md)
       + [模拟跟踪](interaction/using/simulation-tracking.md)
-   + 投放优惠{#delivering-an-offer}
+   + 投放产品建议{#delivering-an-offer}
       + [关于出站渠道](interaction/using/about-outbound-channels.md)
-      + [通过助手集成优惠](interaction/using/integrating-an-offer-via-the-wizard.md)
-      + [通过工作流集成优惠](interaction/using/integrating-an-offer-via-a-workflow.md)
+      + [通过助手集成产品建议](interaction/using/integrating-an-offer-via-the-wizard.md)
+      + [通过工作流集成产品建议](interaction/using/integrating-an-offer-via-a-workflow.md)
    + 单一互动{#unitary-interactions}
       + [关于入站渠道](interaction/using/about-inbound-channels.md)
       + [通过 JavaScript 集成（客户端）](interaction/using/integration-via-javascript-client-side.md)
       + [通过 SOAP（服务器端）进行集成](interaction/using/integration-via-soap-server-side.md)
       + [匿名互动](interaction/using/anonymous-interactions.md)
-   + 跟踪优惠{#tracking-offers}
-      + [优惠建议历史](interaction/using/offer-proposition-history.md)
-      + [优惠分析报告](interaction/using/offer-analysis-report.md)
+   + 跟踪产品建议{#tracking-offers}
+      + [产品建议提议历史](interaction/using/offer-proposition-history.md)
+      + [产品建议分析报告](interaction/using/offer-analysis-report.md)
    + 高级参数 {#advanced-parameters}
       + [使用高级参数](interaction/using/using-advanced-parameters.md)
       + [其他数据](interaction/using/additional-data.md)
@@ -558,8 +561,8 @@ ht-degree: 100%
       + [数据缓冲区配置](installation/using/interaction-data-buffer.md)
    + 用例 {#case-study}
       + [呈现规则](interaction/using/presentation-rules.md)
-      + [入站渠道优惠](interaction/using/offers-on-an-inbound-channel.md)
-      + [出站渠道优惠](interaction/using/offers-on-an-outbound-channel.md)
+      + [入站渠道产品建议](interaction/using/offers-on-an-inbound-channel.md)
+      + [出站渠道产品建议](interaction/using/offers-on-an-outbound-channel.md)
 + 事务性消息传递 {#transactional-messaging}
    + [事务性消息传递入门](message-center/using/about-transactional-messaging.md)
    + 配置事务性消息传递{#configure-transactional-messaging}
@@ -739,9 +742,9 @@ ht-degree: 100%
       + [关于数据模型](configuration/using/about-data-model.md)
       + [数据模型描述](configuration/using/data-model-description.md)
       + [最佳实践](configuration/using/data-model-best-practices.md)
-   + 使用模式 {#schema-reference}
-      + [模式入门](configuration/using/about-schema-reference.md)
-      + [模式结构](configuration/using/schema-structure.md)
+   + 使用架构 {#schema-reference}
+      + [架构入门](configuration/using/about-schema-reference.md)
+      + [架构结构](configuration/using/schema-structure.md)
       + [数据库映射](configuration/using/database-mapping.md)
       + [密钥管理](configuration/using/database-keys.md)
       + [链接管理](configuration/using/database-links.md)
@@ -764,18 +767,18 @@ ht-degree: 100%
          + [SrcSchema](configuration/using/schema/srcschema.md)
          + [Sysfilter](configuration/using/schema/sysfilter.md)
          + [值](configuration/using/schema/value.md)
-   + 编辑模式 {#editing-schemas}
-      + [关于模式版本](configuration/using/about-schema-edition.md)
+   + 编辑架构 {#editing-schemas}
+      + [关于架构版本](configuration/using/about-schema-edition.md)
       + [数据架构](configuration/using/data-schemas.md)
-      + [现有表的模式](configuration/using/schema-of-an-existing-table.md)
-      + [扩展模式](configuration/using/extending-a-schema.md)
-      + [筛选模式](configuration/using/filtering-schemas.md)
+      + [现有表的架构](configuration/using/schema-of-an-existing-table.md)
+      + [扩展架构](configuration/using/extending-a-schema.md)
+      + [筛选架构](configuration/using/filtering-schemas.md)
       + [限制 PII 视图](configuration/using/restricting-pii-view.md)
       + [更新数据库结构](configuration/using/updating-the-database-structure.md)
       + [新建字段助手](configuration/using/new-field-wizard.md)
-      + [数据模式的结构](configuration/using/structure-of-a-data-schema.md)
-      + [重新生成模式](configuration/using/regenerating-schemas.md)
-      + [模式版本示例](configuration/using/examples-of-schemas-edition.md)
+      + [数据架构的结构](configuration/using/structure-of-a-data-schema.md)
+      + [重新生成架构](configuration/using/regenerating-schemas.md)
+      + [架构版本示例](configuration/using/examples-of-schemas-edition.md)
    + 输入窗体 {#input-forms}
       + [识别表单](configuration/using/identifying-a-form.md)
       + [编辑表单](configuration/using/editing-forms.md)
@@ -793,7 +796,7 @@ ht-degree: 100%
       + [编辑探索工具层级](configuration/using/edition.md)
    + 使用自定义收件人表 {#use-a-custom-recipient-table}
       + [关于自定义收件人表](configuration/using/about-custom-recipient-table.md)
-      + [模式特性](configuration/using/schema-characteristics.md)
+      + [架构特性](configuration/using/schema-characteristics.md)
       + [目标映射](configuration/using/target-mapping.md)
       + [配置接口](configuration/using/configuring-the-interface.md)
       + [种子地址](configuration/using/seed-addresses.md)

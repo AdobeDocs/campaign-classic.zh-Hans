@@ -2,8 +2,10 @@
 product: campaign
 title: 隐私数据保护条例工作流
 description: 了解有关隐私数据保护条例工作流的更多信息
+hide: true
+hidefromtoc: true
 feature: Workflows, Privacy
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 2%

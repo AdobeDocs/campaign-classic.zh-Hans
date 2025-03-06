@@ -3,8 +3,10 @@ product: campaign
 title: SQL 数据管理
 description: 了解有关SQL数据管理工作流活动的更多信息
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 4%
@@ -45,7 +47,7 @@ ht-degree: 4%
 
    >[!CAUTION]
    >
-   >SQL脚本编写者负责确保SQL脚本正常工作及其引用（字段名称等） 符合出站模式。
+   >SQL脚本编写者负责确保SQL脚本正常运行，并且其引用（字段名称等）与出站架构一致。
 
    如果要加载现有SQL代码，请选择&#x200B;**[!UICONTROL The SQL script is contained in an entity stored in the database]**&#x200B;选项。 必须在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**&#x200B;菜单中创建和存储SQL脚本。
 

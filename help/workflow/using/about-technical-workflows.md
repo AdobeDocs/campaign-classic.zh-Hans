@@ -3,8 +3,10 @@ product: campaign
 title: 技术工作流
 description: 了解有关Campaign Classic包中可用的技术工作流的更多信息
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%
@@ -35,7 +37,7 @@ ht-degree: 1%
 |------|--------|-----------|
 | **别名清理** (aliasCleansing) | 投放 | 此工作流可标准化枚举值。 默认情况下，此工作流于每日凌晨3点触发。 |
 | **帐单** （帐单） | 投放 | 此工作流会通过电子邮件将系统活动报告发送给“billing”操作员。 它在每月25日在营销实例上触发。 |
-| **Twitter统计信息的计算** (statsTwitter) | 社交网络（社交营销） — 仅限Campaign v7 | 此工作流用于计算链接到X上的转推和访问(以前称为Twitter)的统计数据。 |
+| **计算Twitter统计数据** (statsTwitter) | 社交网络（社交营销） — 仅限Campaign v7 | 此工作流用于计算与X（以前称为Twitter）上的转推和访问量相关的统计数据。 |
 | **营销活动作业** (operationMgt) | 营销活动（营销活动） | 此工作流用于管理营销活动（启动项定位、文件提取等）的作业。 它还创建与循环和定期活动相关的工作流。 |
 | **为HeatMap服务** (collectDataHeatMapService)收集数据 | 默认安装 | 此工作流可检索HeatMap服务所需的数据。 |
 | **收集隐私请求** (collectPrivacyRequests) | 隐私数据保护条例 | 此工作流会生成存储在Adobe Campaign中的收件人数据，并在隐私请求屏幕中提供下载。 |
@@ -70,10 +72,10 @@ ht-degree: 1%
 | **建议同步** (propositionSynch) | 使用执行实例控制优惠引擎 | 此工作流在营销实例和用于交互的执行实例之间同步建议。 |
 | **恢复Web事件** (webAnalyticsGetWebEvents) | 网站分析连接器 | 每小时，此工作流会下载给定网站上的Internet用户行为区段，将它们放入Adobe Campaign数据库并启动再营销工作流。 |
 | **报告聚合** (reportingAggregates) | 投放 | 此工作流可更新报告中使用的聚合。 默认情况下，此工作流于每日凌晨2点触发。 |
-| **发送指标和营销活动属性** (webAnalyticsSendMetrics) | 网站分析连接器 | 此工作流可让您通过Adobe® Analytics连接器，将电子邮件营销活动指标从Adobe Campaign发送到Adobe Experience Cloud套件。 相关指示器如下所示： Sent (iSent)、打开总数(iTotalRecipientOpen)、点击的收件人总数(iTotalRecipientClick)、错误(iError)、选择退出（选择退出）(iOptOut)。 |
+| **发送指标和营销活动属性** (webAnalyticsSendMetrics) | 网站分析连接器 | 此工作流可让您通过Adobe® Analytics连接器，将电子邮件营销活动指标从Adobe Campaign发送到Adobe Experience Cloud Suite。 相关指示器如下所示： Sent (iSent)、打开总数(iTotalRecipientOpen)、点击的收件人总数(iTotalRecipientClick)、错误(iError)、选择退出（选择退出）(iOptOut)。 |
 | **Stock：订单和警报** (stockMgt) | 营销活动（营销活动） | 此工作流可启动订单行上的库存计算，并管理警告警报阈值。 |
-| **同步Facebook粉丝** (syncFacebookFans) | 社交网络（社交营销） — 仅限Campaign v7 | 此工作流可在每天早上7点将Facebook粉丝导入Adobe Campaign。 |
-| **同步Facebook页面** (syncFacebook) | 社交网络（社交营销） — 仅限Campaign v7 | 此工作流每天早上7:00与Adobe Campaign同步Facebook页面。 |
+| **正在同步Facebook粉丝** (syncFacebookFans) | 社交网络（社交营销） — 仅限Campaign v7 | 此工作流可在每天早上7点将Facebook粉丝导入Adobe Campaign。 |
+| **同步Facebook页面** (syncFacebook) | 社交网络（社交营销） — 仅限Campaign v7 | 此工作流可在每天早上7点将Facebook页面与Adobe Campaign同步。 |
 | **同步Twitter页面** (syncTwitter) | 社交网络（社交营销） — 仅限Campaign v7 | 此工作流每天早上7:00将X关注者导入Adobe Campaign。 |
 | **任务通知** (taskMgt) | 营销资源(MRM) — 仅限Campaign v7 | 利用此工作流，可发送与营销活动中的任务相关的通知消息。 |
 | **跟踪** （跟踪） | 投放 | 此工作流执行跟踪信息的恢复和整合。 它还确保重新计算跟踪和投放统计数据，特别是消息中心归档工作流使用的统计数据。 默认情况下，每小时触发一次。 |

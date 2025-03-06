@@ -3,11 +3,13 @@ product: campaign
 title: 创建摘要列表
 description: 创建摘要列表
 feature: Workflows, Data Management
+hide: true
+hidefromtoc: true
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '978'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -87,7 +89,7 @@ Phone;500;London 5
 
    ![](assets/uc2_enrich_enrich2.png)
 
-1. 选择&#x200B;**[!UICONTROL Define a collection]**&#x200B;选项。
+1. 选择 **[!UICONTROL Define a collection]** 选项。
 1. 选择“存储”架构作为目标。
 
    ![](assets/uc2_enrich_enrich3.png)
@@ -175,7 +177,7 @@ Phone;500;London 5
 最后一步是将所有扩充数据写入列表。
 
 1. 将&#x200B;**列表更新**&#x200B;活动添加到工作流。 此活动必须链接到第二个扩充活动的叫客过渡。
-1. 选择&#x200B;**[!UICONTROL Create the list if necessary (Calculated name)]**&#x200B;选项。
+1. 选择 **[!UICONTROL Create the list if necessary (Calculated name)]** 选项。
 1. 为计算名称选择一个值。 为列表选择的标签为当前日期： &lt;%= formatDate(new Date()，“%2D/%2M/%2Y”) %>。
 
 执行工作流后，列表将包括：

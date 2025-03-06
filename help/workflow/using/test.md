@@ -3,8 +3,10 @@ product: campaign
 title: 测试
 description: 了解有关测试工作流活动的更多信息
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 1%
@@ -21,7 +23,7 @@ ht-degree: 1%
 
 ![](assets/edit_test.png)
 
-有关通过工作流JavaScript访问的应用服务器的所有其他JavaScript函数和SOAP方法的详细信息，请参阅[JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)。
+有关通过工作流JavaScript访问的应用服务器的所有其他JavaScript函数和SOAP方法的更多信息，请参阅[JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)。
 
 您还可以直接从此编辑器插入变量。 有关如何使用变量的更多信息，请参阅[此章节](javascript-scripts-and-templates.md#variables)。
 

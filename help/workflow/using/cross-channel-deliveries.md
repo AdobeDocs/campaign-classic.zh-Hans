@@ -3,8 +3,10 @@ product: campaign
 title: 跨渠道投放
 description: 了解关于跨渠道投放的更多信息
 feature: Workflows, Channels Activity
+hide: true
+hidefromtoc: true
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 7%
@@ -21,8 +23,8 @@ ht-degree: 7%
 
 * [电子邮件](../../delivery/using/about-email-channel.md)
 * [直邮](../../delivery/using/about-direct-mail-channel.md)
-* [移动](../../delivery/using/sms-channel.md)
-* [X(以前称为Twitter)](../../social/using/about-social-marketing.md)
+* [移动设备](../../delivery/using/sms-channel.md)
+* [X（以前称为Twitter）](../../social/using/about-social-marketing.md)
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [Android](../../delivery/using/create-notifications-android.md)
 

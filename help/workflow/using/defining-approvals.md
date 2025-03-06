@@ -3,8 +3,10 @@ product: campaign
 title: 定义审批
 description: 通过批准，操作员能够做出管理工作流的决策或确认工作流的继续执行
 feature: Approvals
+hide: true
+hidefromtoc: true
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 2%

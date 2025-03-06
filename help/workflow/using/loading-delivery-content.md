@@ -3,8 +3,10 @@ product: campaign
 title: 加载投放内容
 description: 加载投放内容
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 
 
-如果您的投放内容位于Amazon S3、FTP或SFTP服务器上的HTML文件中，则可以轻松地将此内容加载到Adobe Campaign投放中。
+如果您的交付内容位于Amazon S3、FTP或SFTP服务器上的HTML文件中，则可以轻松地将此内容加载到Adobe Campaign交付中。
 
 操作步骤：
 

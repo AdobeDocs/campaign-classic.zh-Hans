@@ -3,8 +3,10 @@ product: campaign
 title: 工作流属性
 description: 了解关于Campaign工作流属性的更多信息
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 38%
@@ -39,7 +41,7 @@ ht-degree: 38%
 
   如果您的安装包括多个工作流服务器，请使用此字段选择将要执行工作流的计算机。如果此字段中定义的值在任何服务器上都不存在，则工作流将保持待处理状态。
 
-  请参阅此[Campaign Classicv7安装指南](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)。
+  请参阅此[Campaign Classic v7安装指南](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)。
 
 * **[!UICONTROL History in days]**
 

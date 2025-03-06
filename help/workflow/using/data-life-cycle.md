@@ -3,8 +3,10 @@ product: campaign
 title: 数据生命周期
 description: 了解有关工作流中数据生命周期的更多信息
 feature: Workflows, Data Management
+hide: true
+hidefromtoc: true
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 5%

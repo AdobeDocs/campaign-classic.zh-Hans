@@ -3,8 +3,10 @@ product: campaign
 title: 定位数据
 description: 了解有关在工作流中定位数据的更多信息
 feature: Query Editor, Data Management, Workflows
+hide: true
+hidefromtoc: true
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 4%

@@ -3,8 +3,10 @@ product: campaign
 title: 工作流中的 JavaScript 代码示例
 description: 这些示例说明如何在工作流中使用JavaScript代码
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1695'
 ht-degree: 3%

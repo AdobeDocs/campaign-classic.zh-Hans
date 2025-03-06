@@ -3,8 +3,10 @@ product: campaign
 title: 向列表发送报告
 description: 了解如何使用工作流将报告发送到列表
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 1%
@@ -117,7 +119,7 @@ ht-degree: 1%
      >
      >文件必须保存在服务器上。 您必须在已计算附件的编辑窗口的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中输入相同的路径和名称（请参阅： [步骤2：创建投放模板](#step-2--creating-the-delivery-template)）。
 
-   * **var exportFormat**：输入文件的导出格式(PDF)。
+   * **var exportFormat**：输入文件的导出格式(“PDF”)。
    * **var _ctx**（上下文）：在这种情况下，我们在其全局上下文中使用&#x200B;**[!UICONTROL Tracking indicators]**&#x200B;报告。
 
 1. 通过使用以下选项添加&#x200B;**[!UICONTROL Delivery]**&#x200B;类型活动来完成：

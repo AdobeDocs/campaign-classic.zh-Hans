@@ -3,8 +3,10 @@ product: campaign
 title: 发送生日电子邮件
 description: 了解如何使用工作流发送生日电子邮件
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 2%

@@ -3,8 +3,10 @@ product: campaign
 title: 工作流生命周期
 description: 了解有关工作流生命周期的更多信息
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: fceb5752-dc73-4386-8c18-c4f3e6110ca5
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 2%

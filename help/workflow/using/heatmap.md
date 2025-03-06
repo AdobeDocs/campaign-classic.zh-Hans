@@ -3,8 +3,10 @@ product: campaign
 title: Campaign工作流热图
 description: 使用Workflow HeatMap监控工作流
 feature: Workflows, Heatmap
+hide: true
+hidefromtoc: true
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 3%
@@ -139,7 +141,7 @@ Campaign Workflow HeatMap是从左上到右下自然可读的网格，允许查�
    ![](assets/wkf_monitoring_long_duration.png)
 
 1. 通过减少&#x200B;**[!UICONTROL Min duration]**&#x200B;筛选器包含更多结果。
-1. 浏览结果以找出最长的工作流，这些工作流可能会对服务器和数据库资源（CPU、RAM、网络、IOPS等）产生更大的影响。
+1. 浏览结果以找出最长的工作流，这些工作流可能会对服务器和数据库资源(CPU、RAM、网络、IOPS等)产生更大的影响。
 1. 采取适当措施：
 
    * 建议营销用户拆分最长的工作流，以减少处理时间。

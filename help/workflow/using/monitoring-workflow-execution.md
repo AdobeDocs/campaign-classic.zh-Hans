@@ -3,8 +3,10 @@ product: campaign
 title: 监测工作流执行
 description: 监测工作流执行
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 2%
@@ -19,9 +21,9 @@ ht-degree: 2%
 
 [本节](supervising-workflows.md#supervising-workflows)中还提供了有关如何创建工作流以允许您监视一组“已暂停”、“已停止”或“出现错误”的工作流状态的用例。
 
-此外，实例的管理员可以使用&#x200B;**审核跟踪**&#x200B;来检查活动和上次对工作流所做的修改，以及工作流的状态。 有关详细信息，请参阅[Campaign Classicv7生产指南](../../production/using/audit-trail.md)。
+此外，实例的管理员可以使用&#x200B;**审核跟踪**&#x200B;来检查活动和上次对工作流所做的修改，以及工作流的状态。 有关详细信息，请参阅[Campaign Classic v7生产指南](../../production/using/audit-trail.md)。
 
-[Campaign Classicv7生产指南](../../production/using/monitoring-guidelines.md)中介绍了监视各种Campaign进程的其他方法。
+[Campaign Classic v7 Production Guide](../../production/using/monitoring-guidelines.md)中介绍了监视不同Campaign进程的其他方法。
 
 ## 显示进度 {#displaying-progress}
 
@@ -141,7 +143,7 @@ ht-degree: 2%
 >
 >您可以为每个活动单独应用此配置。 为此，请编辑活动属性并在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中选择错误管理模式。
 
-有关工作流执行疑难解答的更多信息，请参阅[Campaign Classicv7生产指南](../../production/using/workflow-execution.md)。
+有关工作流执行疑难解答的更多信息，请参阅[Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md)。
 
 ## 处理错误 {#processing-errors}
 
@@ -234,9 +236,9 @@ instance.vars.isRunning = false
 
 工作流使用许多工作表，这些工作表占用空间，如果不进行维护，最终会导致整个平台速度变慢。 有关数据库维护的详细信息，请参阅此[部分](../../production/using/tables-to-maintain.md)。
 
-可通过&#x200B;**管理>生产>技术工作流**&#x200B;节点访问&#x200B;**数据库清理**&#x200B;工作流，可让您删除过时的数据，以避免数据库呈指数增长。 工作流将自动触发，无需用户干预。 请参阅[Campaign Classicv7生产指南](../../production/using/database-cleanup-workflow.md)。
+可通过&#x200B;**管理>生产>技术工作流**&#x200B;节点访问&#x200B;**数据库清理**&#x200B;工作流，可让您删除过时的数据，以避免数据库呈指数增长。 工作流将自动触发，无需用户干预。 请参阅[Campaign Classic v7 Production Guide](../../production/using/database-cleanup-workflow.md)。
 
-您还可以创建特定的技术工作流以清除不必要的占用空间的数据。 请参阅[Campaign Classicv7生产指南](../../production/using/application-objects.md)和此[部分](#purging-the-logs)。
+您还可以创建特定的技术工作流以清除不必要的占用空间的数据。 请参阅[Campaign Classic v7生产指南](../../production/using/application-objects.md)和此[部分](#purging-the-logs)。
 
 ## 处理暂停的工作流 {#handling-of-paused-workflows}
 
@@ -259,7 +261,7 @@ Campaign Classic界面允许您使用预定义的&#x200B;**视图**&#x200B;监�
 * **[!UICONTROL Running]**：列出所有正在运行的工作流。
 * **[!UICONTROL Paused]**：列出所有暂停的工作流。
 * **[!UICONTROL Failed]**：列出所有失败的工作流。
-* **[!UICONTROL Start Pending]**：列出所有等待由operationMgt进程启动的工作流。 此视图仅适用于&#x200B;**营销活动**&#x200B;包。 请参阅[Campaign Classicv7安装指南](../../installation/using/installing-campaign-standard-packages.md)以了解详情。
+* **[!UICONTROL Start Pending]**：列出所有等待由operationMgt进程启动的工作流。 此视图仅适用于&#x200B;**营销活动**&#x200B;包。 请参阅[Campaign Classic v7安装指南](../../installation/using/installing-campaign-standard-packages.md)以了解详情。
 
 ![](assets/workflow-monitoring-views.png)
 

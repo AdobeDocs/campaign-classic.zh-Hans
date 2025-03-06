@@ -3,8 +3,10 @@ product: campaign
 title: 使用多对多关系进行查询
 description: 了解如何使用多对多关系执行查询
 feature: Query Editor, Workflows
+hide: true
+hidefromtoc: true
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 1%

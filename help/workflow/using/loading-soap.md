@@ -3,8 +3,10 @@ product: campaign
 title: 加载 (SOAP)
 description: 加载 (SOAP)
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 20414e73-2ba9-44f9-8e16-cb6604933ee0
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
@@ -17,7 +19,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->仅当您安装了&#x200B;**FDA（联合数据访问）**&#x200B;模块时，**加载(SOAP)**&#x200B;活动才可用。 请核实您的许可协议。
+>仅当您安装了&#x200B;**FDA（联合数据访问）**&#x200B;模块时，**正在加载(SOAP)**&#x200B;活动才可用。 请核实您的许可协议。
 
 如果无法在外部数据库中直接通过FDA收集数据，则除了&#x200B;**数据加载(RDBMS)**&#x200B;活动之外，还会使用&#x200B;**加载(SOAP)**&#x200B;活动。
 
@@ -43,7 +45,7 @@ ht-degree: 4%
 
    您还可以通过&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接将列数据的格式个性化。 有关格式化导入数据的详细信息，请参阅此[部分](../../platform/using/executing-import-jobs.md)。
 
-1. 您可以使用行号作为标识符和/或指定SOAP调用返回多个元素。
+1. 您可以将行号用作标识符和/或指定SOAP调用返回多个元素。
 1. 根据功能输入以下选项卡脚本：
 
    * **[!UICONTROL Initialization]**：建立SOAP连接。

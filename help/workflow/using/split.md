@@ -3,8 +3,10 @@ product: campaign
 title: 拆分
 description: 了解有关拆分工作流活动的更多信息
 feature: Workflows, Targeting Activity
+hide: true
+hidefromtoc: true
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 3%
@@ -212,7 +214,7 @@ ht-degree: 3%
 
 要使此选项正常工作，集客数据必须具有主键。
 
-例如，如果直接通过&#x200B;**[!UICONTROL Data loading (RDBMS)]**&#x200B;活动从外部数据库(如Netezza，不支持索引的概念)读取数据，则&#x200B;**[!UICONTROL Split]**&#x200B;活动生成的补数将不正确。
+例如，如果通过&#x200B;**[!UICONTROL Data loading (RDBMS)]**&#x200B;活动直接从外部数据库(如Netezza，它不支持索引的概念)读取数据，则&#x200B;**[!UICONTROL Split]**&#x200B;活动生成的补码将不正确。
 
 为避免这种情况，您可以将&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动拖放到&#x200B;**[!UICONTROL Split]**&#x200B;活动之前。 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动中，检查&#x200B;**[!UICONTROL Keep all additional data from the main set]**&#x200B;并在附加数据中指定要用于配置&#x200B;**[!UICONTROL Split]**&#x200B;活动的筛选器的列。 来自&#x200B;**[!UICONTROL Split]**&#x200B;活动的集客过渡的数据随后将本地存储在Adobe Campaign服务器上的临时表中，并且可正确生成补码。
 
@@ -224,14 +226,14 @@ ht-degree: 3%
 ## 输入参数 {#input-parameters}
 
 * 表名
-* 模式
+* 架构
 
 每个入站事件必须指定由这些参数定义的目标。
 
 ## 输出参数 {#output-parameters}
 
 * 表名
-* 模式
+* 架构
 * recCount
 
 这组三个值可标识排除项导致的目标。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。

@@ -3,8 +3,10 @@ product: campaign
 title: 工作流最佳实践
 description: 了解Campaign工作流最佳实践
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 11%
@@ -19,7 +21,7 @@ ht-degree: 11%
 
 下面列出了有关优化Campaign性能的常规准则，包括适用于您的工作流的最佳实践。
 
-[Campaign Classicv7生产指南](../../production/using/workflow-execution.md)中还提供了与工作流执行相关的故障排除指南。
+[Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md)中还提供了与工作流执行相关的故障排除指南。
 
 ### 日志 {#logs}
 

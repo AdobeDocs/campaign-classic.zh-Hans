@@ -3,8 +3,10 @@ product: campaign
 title: 数据加载（文件）
 description: 了解有关数据加载（文件）工作流活动的更多信息
 feature: Workflows, Data Management Activity
+hide: true
+hidefromtoc: true
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 14%
@@ -94,7 +96,7 @@ ht-degree: 14%
 
 1. 使用文件收集器，可根据指定的频率恢复存储在目录中的文件。
 
-   **[!UICONTROL Directory]**&#x200B;选项卡包含有关要恢复的文件的信息。 在我们的示例中，将恢复名称中包含“customers”一词且存储在服务器的tmp/Adobe/数据/文件目录中的所有文本格式文件。
+   **[!UICONTROL Directory]**&#x200B;选项卡包含有关要恢复的文件的信息。 在我们的示例中，将恢复名称中包含“customers”一词且存储在服务器的tmp/Adobe/Data/files目录中的所有文本格式文件。
 
    [文件收集器](file-collector.md)部分中详细介绍了使用&#x200B;**[!UICONTROL File collector]**&#x200B;的情况。
 
