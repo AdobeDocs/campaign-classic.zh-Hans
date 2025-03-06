@@ -4,8 +4,10 @@ title: 创建营销活动
 description: 了解如何创建和执行营销活动
 role: User
 feature: Campaigns, Cross Channel Orchestration, Programs
+hide: true
+hidefromtoc: true
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 5%
@@ -40,7 +42,7 @@ ht-degree: 5%
 
 1. 单击主页上的&#x200B;**资源管理器**&#x200B;图标。
 1. 右键单击要在其中创建计划的文件夹。
-1. 选择&#x200B;**添加新文件夹> Campaign Management >计划**。
+1. 选择&#x200B;**添加新文件夹>促销活动管理>计划**。
 
    ![](assets/create_plan_1.png)
 

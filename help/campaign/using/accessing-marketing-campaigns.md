@@ -4,8 +4,10 @@ title: 访问营销活动
 description: 访问营销活动
 role: User
 feature: Campaigns, Cross Channel Orchestration
+hide: true
+hidefromtoc: true
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 2%
@@ -174,7 +176,7 @@ Adobe Campaign允许您创建、配置、执行和分析营销活动。 所有�
 | 活动、投放、优惠等列表。 | 删除列表项 |
 | 营销活动 | 取消营销活动 |
 | 投放 | 批准投放内容和目标<br/>提交投放内容<br/>确认投放<br/>暂停并停止投放 |
-| Web 应用程序 | 创建Web应用程序<br/>编辑应用程序内容和属性<br/>将应用程序内容另存为模板<br/>Publish应用程序 |
+| Web 应用程序 | 创建Web应用程序<br/>编辑应用程序内容和属性<br/>将应用程序内容另存为模板<br/>发布应用程序 |
 | 优惠 | 批准选件内容和资格<br/>禁用联机选件 |
 | 任务 | 完成任务<br/>取消任务 |
 | 营销资源 | 批准资源<br/>锁定并解锁资源 |

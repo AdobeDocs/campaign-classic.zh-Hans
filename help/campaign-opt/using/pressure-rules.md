@@ -4,8 +4,10 @@ title: 压力规则
 description: 了解如何在Adobe Campaign中使用压力规则
 role: User, Data Engineer
 feature: Fatigue Management, Typology Rules, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '3336'
 ht-degree: 6%
@@ -148,7 +150,7 @@ ht-degree: 6%
 
 例如，如果压力规则规定每周发送2条消息的阈值并对每个日历月进行分组，则将阻止在同一周内和同一日历月内发送超过2条消息。 警告：如果时段与两个月重叠，则计算阈值将考虑这两个日历月内的投放情况，因此可能会阻止第二个月内的所有新投放情况。
 
-请注意，默认情况下，计算阈值时只考虑已发送的投放。 在Campaign Classicv7中，如果您还希望考虑在相关时段内计划的投放，请选中&#x200B;**[!UICONTROL Take the deliveries into account in the provisional calendar]**&#x200B;选项。 在这种情况下，考虑的时段会加倍，以便将未来投放与之前投放整合在一起。
+请注意，默认情况下，计算阈值时只考虑已发送的投放。 在Campaign Classic v7中，如果您还希望考虑在相关时段内计划的投放，请选中&#x200B;**[!UICONTROL Take the deliveries into account in the provisional calendar]**&#x200B;选项。 在这种情况下，考虑的时段会加倍，以便将未来投放与之前投放整合在一起。
 
 要将考虑的投放限制在2周内，您可以：
 

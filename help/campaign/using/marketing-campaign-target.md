@@ -4,8 +4,10 @@ title: 营销活动目标受众
 description: 了解如何定义营销活动的受众
 role: User
 feature: Campaigns, Audiences
+hide: true
+hidefromtoc: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 1%
@@ -91,7 +93,7 @@ ht-degree: 1%
 
 可以编程该定位以根据计划（调度器）或事件（外部信号、文件导入等）自动执行。
 
-与执行定位工作流相关的操作（启动、停止、暂停等） 是&#x200B;**异步**&#x200B;进程：该命令已保存，一旦服务器可供应用，该命令将立即生效。
+与执行定位工作流相关的操作（启动、停止、暂停等）是&#x200B;**异步**&#x200B;进程：命令已保存，一旦服务器可以应用它就会生效。
 
 利用工具栏图标，可采取有关执行定向工作流的操作。
 
@@ -186,7 +188,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
-1. 选择&#x200B;**[!UICONTROL Enable and edit control group configuration]**&#x200B;选项。
+1. 选择 **[!UICONTROL Enable and edit control group configuration]** 选项。
 1. 单击&#x200B;**[!UICONTROL Edit...]**&#x200B;配置控制组。
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)

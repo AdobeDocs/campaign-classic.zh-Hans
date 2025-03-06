@@ -4,11 +4,13 @@ title: 设计和执行营销活动
 description: 定义、优化、执行和分析营销活动
 role: User
 feature: Campaigns
+hide: true
+hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
@@ -68,4 +70,4 @@ Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

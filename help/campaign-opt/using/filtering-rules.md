@@ -4,8 +4,10 @@ title: 筛选规则
 description: 了解如何使用Adobe Campaign中的筛选规则
 role: User, Data Engineer
 feature: Typology Rules, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 2%
@@ -16,7 +18,7 @@ ht-degree: 2%
 
 过滤规则允许您根据查询中定义的条件定义要排除的消息。 这些规则链接到定向维度。
 
-筛选规则可以链接到其他类型的规则（控制、压力等） 分类中进行分类，或分组到专用的&#x200B;**筛选**&#x200B;分类中。 有关详情，请参阅[创建和使用过滤类型](#creating-and-using-a-filtering-typology)。
+筛选规则可以链接到类型中的其他类型的规则（控制、压力等），或分组到专用的&#x200B;**筛选**&#x200B;类型中。 有关详情，请参阅[创建和使用过滤类型](#creating-and-using-a-filtering-typology)。
 
 ## 创建筛选规则 {#creating-a-filtering-rule}
 
