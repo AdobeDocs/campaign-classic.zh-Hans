@@ -7,10 +7,10 @@ feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 16%
+source-wordcount: '104'
+ht-degree: 50%
 
 ---
 
@@ -20,66 +20,71 @@ Campaign Optimization是一个Adobe Campaign模块，可让您控制、过滤和
 
 ![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#typologies-video)
 
+根据您的产品/服务，可包含Campaign Optimization或附加组件。 请核实您的许可协议。
+
 >[!NOTE]
 >
->根据您的产品/服务，可包含Campaign Optimization或附加组件。 请核实您的许可协议。
+>要了解有关Adobe Campaign的Campaign优化及其使用方法的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target=_blank}。
 
-## 类型规则 {#typology-rules}
+<!--
 
-通过Adobe Campaign，您可以设计和应用四种类型的分类规则：
+## Typology rules {#typology-rules}
 
-* **正在筛选**&#x200B;规则，该规则允许您根据条件排除部分目标。 有关详细信息，请参阅[筛选规则](filtering-rules.md)。
-* 允许您控制营销疲劳的&#x200B;**压力**&#x200B;规则。 有关详细信息，请参阅[压力规则](pressure-rules.md)。
-* **容量**&#x200B;规则，允许您限制负载以确保最佳处理条件。 有关详情，请参阅[控制容量](consistency-rules.md#controlling-capacity)。
-* **控制**&#x200B;规则，允许您在发送消息之前检查消息的有效性。 有关详细信息，请参阅[控制规则](control-rules.md)。
+With Adobe Campaign you can design and apply four types of typology rules:
 
-创建后，分类规则将分组到在投放中引用的活动分类。 请参阅[应用分类](#applying-typologies)。
+* **Filtering** rules which let you exclude part of the target based on criteria. For more on this, refer to [Filtering rules](filtering-rules.md).
+* **Pressure** rules which let you control marketing fatigue. For more on this, refer to [Pressure rules](pressure-rules.md).
+* **Capacity** rules which let you limit loads to guarantee optimal processing conditions. For more on this, refer to [Controlling capacity](consistency-rules.md#controlling-capacity).
+* **Control** rules which let you check the validity of messages before they are sent. For more on this, refer to [Control rules](control-rules.md).
 
-## 类型 {#typologies}
+Once they have been created, typology rules are grouped in campaign typologies which are referenced in deliveries. See [Applying typologies](#applying-typologies).
 
-活动类型可以包含多个[类型规则](#typology-rules)，但投放只能引用一个类型。
+## Typologies {#typologies}
 
-**[!UICONTROL Rules]**&#x200B;选项卡允许您添加、删除或查看要应用的分类规则。
+A campaign typology can contain several [typology rules](#typology-rules), but a delivery can only reference one typology.
+
+The **[!UICONTROL Rules]** tab lets you add, delete or view the typology rules to apply.
 
 ![](assets/campaign_opt_rules_tab.png)
 
-## 应用分类 {#applying-typologies}
+## Applying typologies {#applying-typologies}
 
-下面列出了创建分类并将其应用于投放的步骤：
+Steps to create and apply a typology to your deliveries are listed below:
 
-1. 创建分类规则。
+1. Create typology rules.
 
-   在&#x200B;**[!UICONTROL Administration > Campaign management > Typology management > Typology rules]**&#x200B;节点中找到分类规则。
+   Typology rules are found in the **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** node.
 
-   以下各节介绍了Campaign中可用的不同规则：[销售压力规则](pressure-rules.md)、[容量规则](consistency-rules.md#controlling-capacity)、[控制规则](control-rules.md)和[筛选规则](filtering-rules.md)。
+   Different rules available in Campaign are described in the following sections: [sales pressure rules](pressure-rules.md), [capacity rules](consistency-rules.md#controlling-capacity), [control rules](control-rules.md) and [filtering rules](filtering-rules.md).
 
-1. 创建分类并在其中引用之前创建的规则。
+1. Create a typology and reference the rules you created into it.
 
-   可通过&#x200B;**[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]**&#x200B;节点访问分类。
+   Typologies are accessed via the **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** node. 
 
-1. 配置投放以使用创建的分类。 如需详细信息，请参阅[此小节](applying-rules.md#applying-a-typology-to-a-delivery)。
-1. 通过活动模拟测试和控制行为。 有关活动模拟的详细信息，请参阅[此部分](campaign-simulations.md)。
+1. Configure your delivery to use the typology you created. For more on this, refer to [this section](applying-rules.md#applying-a-typology-to-a-delivery).
+1. Test and control the behavior through campaign simulations. For more on campaign simulations, refer to [this section](campaign-simulations.md).
 
-在投放准备期间，当满足条件时，将排除收件人。 您可以检查日志以监控排除情况。 [此页面](pressure-rules.md#use-cases-on-pressure-rules)中提供了有关压力类型规则的示例用例。
+During delivery preparation, recipients are excluded when criterion is met. You can check logs to monitor exclusions. Sample use cases on pressure typology rules are available in [this page](pressure-rules.md#use-cases-on-pressure-rules).
 
-## 教程视频 {#typologies-video}
+## Tutorial videos {#typologies-video}
 
-### 如何使用类型规则设置疲劳管理
+### How to set up fatigue management using typology rules
 
-此视频介绍如何在Adobe Campaign中利用类型规则实施疲劳管理。
+This video explains how to implement fatigue management in Adobe Campaign by leveraging typology rules.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
-### 如何使用预定义过滤器设置疲劳管理
+### How to set up fatigue management using predefined filters
 
-疲劳管理控制消息传送的频度和数量，以避免过度招徕收件人。如果您的活动实例中没有活动优化模块，则可以配置一个预定义过滤器，以收到的消息数过滤目标群体
-此视频介绍如何使用过滤器在Adobe Campaign Classic中实施疲劳管理。
+Fatigue management controls frequency and quantity of messaging to avoid over-solicitation of recipients. If you do not have the campaign optimization module in your campaign instance, you may configure a predefined filter that will filter the target population by the number of messages received
+This video explains how to implement fatigue management in Adobe Campaign Classic by using filters.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。
+Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
-**相关主题**
+**Related topic**
 
-* [类型和疲劳管理入门](pressure-rules.md)
+* [Get started with typologies and fatigue management](pressure-rules.md)
 
+-->

@@ -3,18 +3,15 @@ product: campaign
 title: 关于工作流
 description: 利用工作流实现流程自动化、管理数据和受众、发送消息等
 feature: Workflows, Data Management
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+exl-id: 024a7344-9376-4ff3-926a-003148229f9f
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 92%
+source-wordcount: '274'
+ht-degree: 59%
 
 ---
 
-# 工作流入门{#gs-workflows}
-
-
-
-## 关于工作流{#about-workflows}
+# 使用工作流实现自动化 {#gs-workflows}
 
 Adobe Campaign 包含一个工作流模块，允许您在应用程序服务器的不同模块之间编排所有流程和任务。您可以利用这个全面的图形环境设计各式流程，包括部分划分、活动执行、文件处理、人员参与等。工作流引擎会执行并跟踪这些流程。
 
@@ -24,9 +21,21 @@ Adobe Campaign 包含一个工作流模块，允许您在应用程序服务器�
 
 工作流在营销活动管理流程的不同上下文和阶段中出现。
 
->[!NOTE]
->
->要了解有关工作流管理的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target=_blank}。
+要了解有关工作流管理的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target=_blank}。
+
+![](assets/do-not-localize/workflow.jpg){width="40%"}
+
+了解与工作流管理相关的关键步骤：
+
+* [工作流活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=zh-Hans){target=_blank}：活动描述了任务模板。 工作流包括定位、流量控制、操作和事件活动。
+
+* [构建工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target=_blank}：了解如何创建和运行定位、营销活动和技术工作流。
+
+* [最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}：了解优化活动工作流性能、改进工作流设计和选择正确设置的准则。
+
+* [监视工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}：了解如何监视工作流执行以确保所有内容都正确运行。
+
+* [工作流用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}：了解可以在其中使用工作流的不同上下文以及如何通过端到端用例实施工作流。
 
 <!--
 
