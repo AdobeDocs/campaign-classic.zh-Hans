@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7 产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: fb19195c7331a2adc0bcf7a37ae7678078dce5e6
+source-git-commit: ec39e513a3474bdcdcf39be7b5e184d62b98f7a2
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 100%
+source-wordcount: '357'
+ht-degree: 94%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 100%
 >[!BEGINTABS]
 
 
->[!TAB 6 月版本已上线！]
+>[!TAB 2025年3月版本已上线！]
 
-了解 Campaign Classic v7.4.1 中的更新、改进和修补程序。
+了解Campaign Classic v7.4.2中的更新、改进和修复 — 2025年3月版。
 
 [![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -53,7 +53,7 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     </td>
     <td>
     <a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
-    <div><strong>添加和管理用户档案</strong><br/>探索如何轻松地在 Adobe Campaign v7 数据库中进行用户档案管理。手动或通过导入添加用户档案，轻松优化客户数据和自定义营销活动。</div>
+    <div><strong>添加和管理轮廓</strong><br/>探索如何轻松地在 Adobe Campaign v7 数据库中进行轮廓管理。手动或通过导入添加轮廓，轻松优化客户数据和自定义营销活动。</div>
     </td>
     <td>
     <a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
@@ -84,19 +84,19 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>客户体验</strong><br/><a href="workflow/using/about-workflows.md">使用工作流实现自动化</a> - <a href="campaign/using/setting-up-marketing-campaigns.md">营销活动</a> - <a href="interaction/using/interaction-and-offer-management.md">互动和优惠管理</a> - <a href="delivery/using/about-personalization.md">个性化</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">报告</a>
+      <strong>客户体验</strong><br/><a href="workflow/using/about-workflows.md">使用工作流实现自动化</a> - <a href="campaign/using/setting-up-marketing-campaigns.md">营销活动</a> - <a href="interaction/using/interaction-and-offer-management.md">互动和产品建议管理</a> - <a href="delivery/using/about-personalization.md">个性化</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">报告</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>发送消息</strong><br/><a href="delivery/using/communication-channels.md">通信渠道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">发送验证</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 测试</a> - <a href="delivery/using/about-message-tracking.md">消息跟踪</a> - <a href="delivery/using/about-deliverability.md">可投放性</a> - <a href="message-center/using/about-transactional-messaging.md">事务性消息传递</a>
+      <strong>发送消息</strong><br/><a href="delivery/using/communication-channels.md">通信渠道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">发送校样</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 测试</a> - <a href="delivery/using/about-message-tracking.md">消息跟踪</a> - <a href="delivery/using/about-deliverability.md">可投放性</a> - <a href="message-center/using/about-transactional-messaging.md">事务性消息传递</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
-      <strong>用户档案和受众</strong><br/><a href="platform/using/adding-profiles.md">添加用户档案</a> - <a href="platform/using/creating-and-managing-lists.md">创建列表</a> - <a href="delivery/using/about-services-and-subscriptions.md">服务和订阅</a> - <a href="platform/using/privacy-management.md">隐私和同意</a>
+      <strong>轮廓和受众</strong><br/><a href="platform/using/adding-profiles.md">添加轮廓</a> - <a href="platform/using/creating-and-managing-lists.md">创建列表</a> - <a href="delivery/using/about-services-and-subscriptions.md">服务和订阅</a> - <a href="platform/using/privacy-management.md">隐私和同意</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">
@@ -106,7 +106,7 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>开发人员资源</strong><br/><a href="configuration/using/about-data-model.md">数据模型描述</a> - <a href="configuration/using/about-schema-reference.md">模式结构</a> - <a href="configuration/using/editing-forms.md">模式结构</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans">JSAPI 参考文档</a> - <a href="configuration/using/about-custom-recipient-table.md">自定义收件人表</a>
+      <strong>开发人员资源</strong><br/><a href="configuration/using/about-data-model.md">数据模型描述</a> - <a href="configuration/using/about-schema-reference.md">架构结构</a> - <a href="configuration/using/editing-forms.md">架构结构</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans">JSAPI 参考文档</a> - <a href="configuration/using/about-custom-recipient-table.md">自定义收件人表</a>
     </td>
   </tr>
 </table>
