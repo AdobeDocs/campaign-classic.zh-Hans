@@ -4,9 +4,9 @@ product: campaign
 title: Adobe Campaign Classic v7 产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: ec39e513a3474bdcdcf39be7b5e184d62b98f7a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 94%
 >[!BEGINTABS]
 
 
->[!TAB 2025年3月版本已上线！]
+>[!TAB 2025 年 3 月版已上线！]
 
-了解Campaign Classic v7.4.2中的更新、改进和修复 — 2025年3月版。
+了解 Campaign Classic v7.4.2（2025 年 3 月版）中的更新、改进和修复。
 
 [![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 

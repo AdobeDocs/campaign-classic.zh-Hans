@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 631188b5974eaa4cd1bf667c5df9f2ff0f983cf0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '251'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 27%
 
 [!BADGE 有限发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
 
-_2025年3月21日_
+_2025 年 3 月 21 日_
 
 >[!AVAILABILITY]
 >
->此版本为&#x200B;**有限发布版** (LA)。它仅限于Hosted/Managed Services用户。 此版本将很快向混合和内部部署客户提供。
+>此版本为&#x200B;**有限发布版** (LA)。仅限于托管/管理服务用户。不久将面向混合和内部部署客户提供此版本。
 
 <!--
 ### Compatibility updates {#comp-7-4-2}
@@ -39,29 +39,29 @@ This release comes with the following compatibility updates:
 
 ### 安全性改进 {#security-7-4-2}
 
-此版本附带多个安全修复。
+此版本附带多项安全性修复。
 
-已更新通过&#x200B;**[!UICONTROL Adobe Experience Cloud]**&#x200B;外部帐户与Adobe解决方案和应用程序的连接，以加强安全性。
+通过 **[!UICONTROL Adobe Experience Cloud]** 外部帐户与 Adobe 解决方案和应用程序的连接已更新，以加强安全性。
 
 ### 修复 {#release-7-4-2-fixes}
 
 此版本附带以下主要修复：
 
-* TLS/SMPP连接 — 修复了SMPP稳定性问题
+* TLS / SMPP 连接 - 修复了 SMPP 稳定性问题
 
-* Google BigQuery修复：
+* Google BigQuery 修复：
 
-   * 修复了BOOLEAN数据类型的回归
+   * 修复了 BOOLEAN 数据类型的回归
    * 修复了代理设置问题
-   * 修复了DATETIME数据类型的回归
-   * 固定批量负载稳定性
-   * 改进了ODBC版本上的内部测试
-   * 修复了连接字符串中存在特殊字符的问题
-   * 删除了Google BigQuery查询的默认超时（5分钟）
+   * 修复了 DATETIME 数据类型的回归
+   * 修复了批量加载稳定性
+   * 改进了 ODBC 版本的内部测试
+   * 修复了连接字符串的特殊字符问题
+   * 移除了 Google BigQuery 查询的默认超时（5 分钟）
 
-* 邮件传输代理(MTA) — 固定孤立的MTA子级停留在&#x200B;**[!UICONTROL Start pending]**&#x200B;状态。
+* 邮件传输代理 (MTA) - 修复了孤立 MTA 子项停留在 **[!UICONTROL Start pending]** 状态。
 
 此版本中还修复了以下问题：
 
-NEO-47269、NEO-59059、NEO-62455、NEO-65774、NEO-66462、NEO-66989、NEO-77898、NEO-78843、NEO-79373、NEO-79598、NEO-80145、NEO-80245、NEO-80434、NEO-80683、NEO-81222、NEO-81433、NEO-81864、NEO-82351、NEO-82781、NEO-82838、NEO-82923、NEO-83252 ID-83809 83826 84024 84553 85150
+NEO-47269、NEO-59059、NEO-62455、NEO-65774、NEO-66462、NEO-66989、NEO-77898、NEO-78843、NEO-79373、NEO-79598、NEO-80145、NEO-80245、NEO-80434、NEO-80683、NEO-81222、NEO-81433、NEO-81864、NEO-82351、NEO-82781、NEO-82838、NEO-82923、NEO-83252、NEO-83809、NEO-83826、NEO-84024、NEO-84553、NEO-85150
 
