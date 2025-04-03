@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3daf88e14792bfc675cd4cbec6571377c9aa9392
+source-git-commit: 1a23e55190ae26edd7193838600a803137f13201
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2571'
 ht-degree: 100%
 
 ---
@@ -237,28 +237,29 @@ ht-degree: 100%
       + [使用内容模板](delivery/using/using-a-content-template.md)
       + [丰富内容](delivery/using/enriching-content.md)
       + [通过工作流实现自动化](delivery/using/automating-via-workflows.md)
-+ [编排营销活动](campaign/using/about-marketing-campaigns.md)
++ 编排营销活动 {#orchestrating-campaigns}
+   + [编排营销活动](campaign/using/about-marketing-campaigns.md)
    + [关于活动优化](campaign-opt/using/about-campaign-optimization.md)
-      + 关于营销活动 {#about-marketing-campaigns}
-         + [设计营销活动](campaign/using/designing-marketing-campaigns.md)
-         + [访问营销活动](campaign/using/accessing-marketing-campaigns.md)
-      + 编排活动 {#orchestrate-campaigns}
-         + [营销活动入门](campaign/using/setting-up-marketing-campaigns.md)
-         + [创建和配置模板](campaign/using/marketing-campaign-templates.md)
-         + [添加投放](campaign/using/marketing-campaign-deliveries.md)
-         + [选择受众](campaign/using/marketing-campaign-target.md)
-         + [管理文档和资产](campaign/using/marketing-campaign-assets.md)
-         + [设置和管理审批](campaign/using/marketing-campaign-approval.md)
-         + [监测活动](campaign/using/marketing-campaign-monitoring.md)
-         + [供应商、库存和预算](campaign/using/providers-stocks-and-budgets.md)
-      + 活动优化 {#campaign-optimization}
-         + [关于活动类型](campaign-opt/using/about-campaign-typologies.md)
-         + [压力规则](campaign-opt/using/pressure-rules.md)
-         + [一致性规则](campaign-opt/using/consistency-rules.md)
-         + [控制规则](campaign-opt/using/control-rules.md)
-         + [筛选规则](campaign-opt/using/filtering-rules.md)
-         + [应用规则](campaign-opt/using/applying-rules.md)
-         + [活动模拟](campaign-opt/using/campaign-simulations.md)
+   + 关于营销活动 {#about-marketing-campaigns}
+      + [设计营销活动](campaign/using/designing-marketing-campaigns.md)
+      + [访问营销活动](campaign/using/accessing-marketing-campaigns.md)
+   + 编排活动 {#orchestrate-campaigns}
+      + [营销活动入门](campaign/using/setting-up-marketing-campaigns.md)
+      + [创建和配置模板](campaign/using/marketing-campaign-templates.md)
+      + [添加投放](campaign/using/marketing-campaign-deliveries.md)
+      + [选择受众](campaign/using/marketing-campaign-target.md)
+      + [管理文档和资产](campaign/using/marketing-campaign-assets.md)
+      + [设置和管理审批](campaign/using/marketing-campaign-approval.md)
+      + [监测活动](campaign/using/marketing-campaign-monitoring.md)
+      + [供应商、库存和预算](campaign/using/providers-stocks-and-budgets.md)
+   + 活动优化 {#campaign-optimization}
+      + [关于活动类型](campaign-opt/using/about-campaign-typologies.md)
+      + [压力规则](campaign-opt/using/pressure-rules.md)
+      + [一致性规则](campaign-opt/using/consistency-rules.md)
+      + [控制规则](campaign-opt/using/control-rules.md)
+      + [筛选规则](campaign-opt/using/filtering-rules.md)
+      + [应用规则](campaign-opt/using/applying-rules.md)
+      + [活动模拟](campaign-opt/using/campaign-simulations.md)
 + 营销资源管理{#mrm}
    + [关于营销资源管理](mrm/using/about-marketing-resource-management.md)
    + [创建和管理任务](mrm/using/creating-and-managing-tasks.md)
