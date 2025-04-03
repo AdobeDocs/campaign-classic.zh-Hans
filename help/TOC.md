@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 98bc76dce83abcd3ce39648d554ee92841fd7327
+source-git-commit: efeb6c7d0969c66ec9bd63f4bf424224c8ca222b
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2571'
 ht-degree: 100%
 
 ---
@@ -239,7 +239,6 @@ ht-degree: 100%
       + [通过工作流实现自动化](delivery/using/automating-via-workflows.md)
 + [编排营销活动](campaign/using/about-marketing-campaigns.md)
 + 编排营销活动 {#orchestrating-campaigns}
-   + [编排营销活动](campaign/using/about-marketing-campaigns.md)
    + [关于活动优化](campaign-opt/using/about-campaign-optimization.md)
    + 关于营销活动 {#about-marketing-campaigns}
       + [设计营销活动](campaign/using/designing-marketing-campaigns.md)
