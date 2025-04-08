@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '3782'
-ht-degree: 100%
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
+workflow-type: tm+mt
+source-wordcount: '3864'
+ht-degree: 97%
 
 ---
 
@@ -18,6 +18,17 @@ ht-degree: 100%
 本页列出了每月所有新增功能和文档更新以及 Campaign 版本。
 
 有关与版本相关的更新，请参阅《[Adobe Campaign Classic 发行说明](../../rn/using/latest-release.md)》。
+
+## 2025
+
+### 2025 年 3 月 {#march-2025}
+
+作为Campaign v8促销活动的一部分，我们已开始重新组织Campaign Classic文档集。 在7.4.2中，我们将发布第一个里程碑。 以下指南已替换为登陆页面，包括指向v8文档的链接：
+
+* 编排营销活动：本指南已替换为[登陆页面](../../campaign/using/about-marketing-campaigns.md)。
+* 营销资源管理：本指南已被删除。
+* 分布式营销：本指南已被删除。
+* 使用工作流实现自动化：本指南已替换为[登陆页面](../../workflow/using/about-workflow-automation.md)
 
 ## 2024
 
@@ -204,7 +215,7 @@ CentOs 8 的生命周期已终止，现已在 Adobe Campaign Classic 中弃用�
 
 ## 2021 年 6 月 {#june-2021}
 
-**事务性消息传递**&#x200B;部分经过了重新组织，并通过新的“入门”部分进行了说明，包括[增强模式](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，从而帮助更好地了解该流程。[阅读更多](../../message-center/using/about-transactional-messaging.md)
+**事务性消息传递**&#x200B;部分经过了重新组织，并通过新的“入门”部分进行了说明，包括[增强架构](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，从而帮助更好地了解该流程。[阅读更多](../../message-center/using/about-transactional-messaging.md)
 
 **随 21.1.3 版提供的文档更新**
 
@@ -232,7 +243,7 @@ LINE 渠道增强 - [了解详情](../../delivery/using/line-channel.md)
 
 新增的一个小节介绍了如何使用 Adobe Experience Platform Sources 与 Destinations 在 Campaign Classic 和 Adobe 实时客户数据平台 (RTCDP) 之间共享数据。[阅读更多](../../integrations/using/get-started-sources-destinations.md)
 
-已创建一条新的技术说明，以说明如何在 ISP 中断后更新弹回限定条件。[阅读更多](../../delivery/using/update-bounce-qualification.md)
+已创建一条新的技术说明，以说明如何在 ISP 中断后更新退回鉴定。[阅读更多](../../delivery/using/update-bounce-qualification.md)
 
 ## 2021 年 3 月 {#march-2021}
 
@@ -380,7 +391,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 已添加注释来指定“有效轮廓”计数仅适用于营销实例。[阅读更多](../../platform/using/about-profiles.md#active-profiles)
 
-已添加有关模式版本的新示例来将字段链接到现有引用表。[阅读更多](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+已添加有关架构版本的新示例来将字段链接到现有引用表。[阅读更多](../../configuration/using/examples-of-schemas-edition.md#uc-link)
 
 已添加关于在投放中对种子地址使用额外数据的说明。[阅读更多](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
@@ -505,7 +516,7 @@ Spam Assassin 安装部分已更新为新的安装文件名。[了解详情](../
 
 工作流用例已更新并重新组织为主题部分。[阅读更多](../../workflow/using/about-workflow-use-cases.md)
 
-[弹回邮件资格](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) 和[电子邮件管理规则](../../delivery/using/understanding-delivery-failures.md#email-management-rules)部分已改进并增加了更新的信息。
+[退回邮件鉴定](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) 和[电子邮件管理规则](../../delivery/using/understanding-delivery-failures.md#email-management-rules)部分已改进并增加了更新的信息。
 
 Adobe Campaign 增强 MTA 文章已更新。现在只适用于 Campaign Classic。[阅读更多](https://helpx.adobe.com/cn/campaign/kb/acc-campaign-enhanced-mta.html)
 
@@ -517,7 +528,7 @@ Adobe Campaign 增强 MTA 文章已更新。现在只适用于 Campaign Classic�
 
 其他关键链接已添加到文档主页。[阅读更多](../../campaign-classic-home.md)
 
-已添加一个用例，说明如何将动态优惠从 Adobe Target 集成到 Adobe Campaign 的电子邮件中。[阅读更多](../../integrations/using/inserting-a-dynamic-image.md)
+已添加一个用例，说明如何将动态产品建议从 Adobe Target 集成到 Adobe Campaign 的电子邮件中。[阅读更多](../../integrations/using/inserting-a-dynamic-image.md)
 
 现在提供了详细介绍 Adobe Campaign 中不同语言的新部分。[阅读更多](../../platform/using/adobe-campaign-workspace.md#languages)
 
@@ -585,9 +596,9 @@ Adobe Campaign 增强 MTA 文章已更新，其中包含有关在未向每封邮
 
 与查询设计相关的用例已重新组织为单独的部分。[阅读更多](../../workflow/using/querying-recipient-table.md)
 
-增加了有关管理优惠和使用 Adobe Campaign Classic 中的交互模块的提示和技巧的新部分。[阅读更多](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
+增加了有关管理产品建议和使用 Adobe Campaign Classic 中的交互模块的提示和技巧的新部分。[阅读更多](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
 
-“交互”文档中增加了指向多个视频的链接，这些视频有助于更好地了解如何管理优惠。[阅读更多](../../interaction/using/interaction-and-offer-management.md)
+“交互”文档中增加了指向多个视频的链接，这些视频有助于更好地了解如何管理产品建议。[阅读更多](../../interaction/using/interaction-and-offer-management.md)
 
 有关如何优化实例上运行的查询的最佳实践文章已集成到文档中。[阅读更多](../../workflow/using/query.md#optimizing-queries)
 

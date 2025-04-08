@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: e40331266f34e2d6aa7b7720948d0cf26d4c6009
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 21%
+source-wordcount: '1075'
+ht-degree: 19%
 
 ---
 
@@ -37,13 +37,13 @@ ht-degree: 21%
 
 SFTP服务器旨在作为临时存储空间，您可以在其上控制文件的保留和删除。
 
-如果未正确使用或监控，这些空间会快速填充服务器上可用的物理空间，并导致文件在后续上传时被截断。 一旦空间饱和，即可触发自动清除并从 SFTP 存储器中删除最旧的文件。
+如果未正确使用或监控，这些空间会快速填充服务器上可用的物理空间，并导致文件在后续上传时被截断。 在Adobe托管的SFTP服务器中，如果SFTP存储达到80%阈值，则会压缩文件。 此过程由Adobe监控系统自动触发和触发。
 
 为避免此类问题，Adobe建议遵循以下最佳实践。
 
 >[!NOTE]
 >
->* 您可以使用Campaign Classic[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}监视SFTP服务器存储。
+>* 您可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}监视SFTP服务器存储。
 >
 >* 所有管理员用户均可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel){target="_blank"}中详细说明了授予用户管理员访问权限的步骤。
 >
@@ -68,7 +68,7 @@ SFTP服务器旨在作为临时存储空间，您可以在其上控制文件的�
 
 ## Adobe托管的SFTP服务器的连接问题 {#sftp-server-troubleshooting}
 
-以下部分列出了在遇到Adobe托管的SFTP服务器连接问题时，要通过[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}检查并向Adobe支持团队提供的信息。
+以下部分列出了在遇到Adobe托管的SFTP服务器连接问题时要检查的信息，并通过[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}提供给Adobe支持团队。
 
 1. 检查您的实例是否正在运行。 为此，请打开浏览器，然后在实例&#x200B;**[!UICONTROL /r/test]**&#x200B;端点上进行&#x200B;**[!UICONTROL GET]**&#x200B;调用：
 
@@ -98,9 +98,9 @@ SFTP服务器旨在作为临时存储空间，您可以在其上控制文件的�
 
    如果未打开端口，请确保在侧打开出站连接，然后重试。 如果您仍然遇到连接问题，请与[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)团队共享命令输出。
 
-1. 检查您尝试启动SFTP连接的公共IP是否就是您向Adobe支持部门提供的IP，以便进行SFTP列入允许列表。
+1. 检查您尝试启动SFTP连接的公共IP是否就是您提供给Adobe支持部门用于允许列表的IP。
 1. 如果使用基于密码的身份验证，则密码可能已过期（密码的有效期为90天）。 因此，我们强烈建议使用基于密钥的身份验证（请参阅[SFTP服务器最佳实践](#sftp-server-best-practices)）。
-1. 如果您使用基于密钥的身份验证，请检查您使用的密钥是否与为[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)团队提供的用于实例配置的密钥相同。
+1. 如果您使用基于密钥的身份验证，请检查您使用的密钥是否与针对实例配置提供给[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)团队的密钥相同。
 1. 如果您使用的是 FileZilla 或类似的 FTP 工具，请在支持票证中提供联机日志详细信息。
 
 ## “无法解析主机名”错误
@@ -140,7 +140,7 @@ SFTP服务器旨在作为临时存储空间，您可以在其上控制文件的�
 
    1. 转到工作流审核并检查日志是否显示“无法解析主机名”错误。
 
-1. 如果SFTP服务器由Adobe列入允许列表托管，请联系客户关怀部门以检查IP是否已添加到。
+1. 如果SFTP服务器由Adobe列入允许列表托管，请联系客户关怀团队以检查IP是否已添加到。
 
    否则，请验证：
 
