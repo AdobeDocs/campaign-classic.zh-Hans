@@ -1,11 +1,12 @@
 ---
 product: campaign
-title: “用例：创建概述”
-description: “用例：创建概述”
+title: 用例：创建概述
+description: 用例：创建概述
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Apps
+level: Intermediate, Experienced
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -198,7 +199,7 @@ ht-degree: 0%
    * **表达式：**“创建者”链接的外键
    * **运算符：**&#x200B;等于
    * **值：**&#x200B;变量（变量）
-   * **考虑条件：**“$(var2/@id)”！=”
+   * **考虑条件：**“$(var2/@id)”!=
 
    ![](assets/s_ncs_configuration_webapp_filter002.png)
 

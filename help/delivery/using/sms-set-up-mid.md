@@ -1,34 +1,35 @@
 ---
 product: campaign
-title: 在中间源基础设施上配置Campaign短信渠道
-description: 了解如何在中间源基础设施上在Campaign中配置短信渠道
+title: 在中间源基础设施上配置Campaign SMS渠道
+description: 了解如何在中端来源基础设施上配置Campaign中的SMS渠道
 feature: SMS
 role: User, Developer, Admin
+level: Experienced
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
-source-git-commit: b7339512d85a7bd0c5aae24af46739daafb1ba51
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 8%
 
 ---
 
-# 在中间源基础设施上配置短信渠道 {#setting-up-sms-channel}
+# 在中端源基础设施上配置SMS渠道 {#setting-up-sms-channel}
 
 要发送到带有中间服务器的手机，您需要：
 
 1. 在中间服务器上创建的SMS操作员，用于在Marketing服务器上创建的SMS外部帐户。
 
-1. 营销服务器上的外部帐户，用于指定渠道和投放模式。
+1. 市场营销服务器上的外部帐户，指定“渠道”和“交付”模式。
 
-1. 中间服务器上的外部帐户，详细说明连接器和消息类型。
+1. Mid服务器上的外部帐户，详述连接器和消息类型。
 
-1. 引用外部帐户以简化发送过程的投放模板。
+1. 引用外部帐户以简化发送流程的交付模板。
 
 >[!NOTE]
 >
-> 对于SMS投放，类型应使用在&#x200B;**one**&#x200B;专用应用程序服务器容器中创建的特定SMS关联。 [了解详情](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+> 对于SMS传递，类型应使用在&#x200B;**one**&#x200B;专用应用程序服务器容器中创建的特定SMS关联。 [了解详情](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
-## 在中间服务器上创建短信运算符 {#create-sms-operator}
+## 在中端服务器上创建SMS操作员 {#create-sms-operator}
 
 要开始配置过程，必须在中间服务器上专门为外部帐户创建短信运算符。
 
@@ -56,13 +57,13 @@ ht-degree: 8%
 
 ## 在营销服务器上创建短信外部帐户 {#create-accound-mkt}
 
-要将短信发送到具有中间服务器的手机，您首先需要在营销服务器上创建短信外部帐户。
+要将SMS发送到带有Mid服务器的手机，您首先需要在营销服务器上创建SMS外部帐户。
 
 1. 在树的&#x200B;**[!UICONTROL Platform]** > **[!UICONTROL External accounts]**&#x200B;节点中，单击&#x200B;**[!UICONTROL New]**&#x200B;图标。
 
    ![](assets/mid_external_account_2.png)
 
-1. 键入您的&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Internal name]**。 请注意，内部名称稍后将用于命名中间服务器中的SMPP外部帐户。
+1. 键入&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Internal name]**。 请注意，稍后将使用“内部”名称在Mid服务器中命名您的SMPP外部帐户。
 
 1. 将帐户类型定义为&#x200B;**[!UICONTROL Routing]**，渠道定义为&#x200B;**[!UICONTROL Mobile (SMS)]**，投放模式定义为&#x200B;**[!UICONTROL Mid-sourcing]**。
 
@@ -70,19 +71,19 @@ ht-degree: 8%
 
 1. 在&#x200B;**[!UICONTROL Mid-Sourcing]**&#x200B;选项卡中，指定中间源服务器连接参数。
 
-   在&#x200B;**[!UICONTROL Account]**&#x200B;和&#x200B;**[!UICONTROL Password]**&#x200B;字段中输入[之前创建的SMS连接器](#create-sms-operator)的详细信息。
+   在&#x200B;**[!UICONTROL Account]**&#x200B;和&#x200B;**[!UICONTROL Password]**&#x200B;字段中输入[以前创建的SMS连接器](#create-sms-operator)的详细信息。
 
    ![](assets/mid_external_account_7.png)
 
-1. 单击&#x200B;**[!UICONTROL Test the connection]**&#x200B;确认配置。
+1. 单击“**[!UICONTROL Test the connection]**”以确认配置。
 
 1. 单击 **[!UICONTROL Save]**。
 
-## 在中间服务器上创建SMPP外部帐户 {#creating-smpp-mid}
+## 在Mid服务器上创建SMPP外部帐户 {#creating-smpp-mid}
 
 >[!IMPORTANT]
 >
->对多个外部SMS帐户使用相同的帐户和密码可能会导致帐户之间的冲突和重叠。 请参阅[短信疑难解答页面](troubleshooting-sms.md#external-account-conflict)。
+>对多个外部SMS帐户使用相同的帐户和密码可能会导致帐户之间的冲突和重叠。 请参阅[SMS疑难解答页面](troubleshooting-sms.md#external-account-conflict)。
 
 在营销服务器上成功设置短信外部帐户后，下一步是在中间服务器上建立SMPP外部帐户。
 
@@ -115,7 +116,7 @@ ht-degree: 8%
 
 1. 请与您的SMS服务提供商联系，提供商将向您说明如何填写&#x200B;**[!UICONTROL Connection settings]**&#x200B;选项卡中的不同外部帐户字段。
 
-   然后，根据所选提供商，联系您的提供商，提供商将为您提供进入&#x200B;**[!UICONTROL SMSC implementation name]**&#x200B;字段的值。
+   然后，根据所选提供商，联系您的提供商，他们将为您提供在&#x200B;**[!UICONTROL SMSC implementation name]**&#x200B;字段中输入的值。
 
    您可以定义每个MTA子级与提供程序的连接数。 默认情况下，设置为1。
 
@@ -151,21 +152,21 @@ ht-degree: 8%
 
    如需详细信息，请参阅[此小节](sms-set-up.md#automatic-reply)。
 
-## 更改投放模板 {#changing-the-delivery-template}
+## 更改交付模板 {#changing-the-delivery-template}
 
-Adobe Campaign提供了一个位于&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中的移动投放模板。 有关详细信息，请参阅[关于模板](about-templates.md)部分。
+Adobe Campaign提供了一个位于&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中的移动投放模板。 有关此方面的更多信息，请参阅[关于模板](about-templates.md)部分。
 
 要通过短信渠道发送消息，您必须创建包含渠道连接器引用的模板。
 
-要保留本机投放模板，我们建议您复制该模板并对其进行配置。
+要保留本机交付模板，我们建议您复制它，然后对其进行配置。
 
-在下面的示例中，我们生成了一个模板，以方便通过之前创建的SMPP帐户投放消息。 操作步骤：
+在下面的示例中，我们生成了一个模板以方便通过之前创建的SMPP帐户传送报文。 操作步骤：
 
-1. 在树的&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**&#x200B;节点中，右键单击&#x200B;**[!UICONTROL Send to mobiles]**&#x200B;模板并选择&#x200B;**[!UICONTROL Duplicate]**。
+1. 在树的&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**&#x200B;节点中，右键单击&#x200B;**[!UICONTROL Send to mobiles]**&#x200B;模板，然后选择&#x200B;**[!UICONTROL Duplicate]**。
 
    ![](assets/delivery_template_mid_1.png)
 
-1. 更改模板的标签，例如&#x200B;**发送到手机(SMPP)**。
+1. 更改模板的标签，例如&#x200B;**发送到移动设备(SMPP)**。
 
    ![](assets/delivery_template_mid_2.png)
 

@@ -4,15 +4,16 @@ title: 开始使用Adobe Campaign中的架构
 description: 了解如何使用架构并扩展Adobe Campaign数据库的概念数据模型
 feature: Schema Extension
 role: Data Engineer, Developer
+level: Intermediate, Experienced
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 44c40bbd8bff16cbe220d3af3a7bb2847762f58b
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
 
 ---
 
-# 模式入门 {#about-schema-reference}
+# 架构入门 {#about-schema-reference}
 
 ## 什么是架构 {#what-is-a-schema}
 

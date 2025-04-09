@@ -5,12 +5,13 @@ description: Campaign Classic 常见问题解答
 feature: Troubleshooting, Application Settings
 audience: platform
 content-type: reference
+level: Beginner, Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 84%
+ht-degree: 82%
 
 ---
 
@@ -42,7 +43,7 @@ Adobe Campaign 目前提供英语、法语、德语和日语共 4 种语言的�
 
 ## 如何配置电子邮件可投放性? {#how-to-configure-email-deliverability-}
 
-除了[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)之外，请阅读可投放性技术建议，以了解如何配置实例以最大限度地提升Campaign投放能力。
+除了[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)之外，请阅读可投放性技术建议，以了解如何配置实例以最大程度地提升Campaign投放能力。
 
 [单击此处以了解详情](../../delivery/using/about-deliverability.md)。
 
@@ -86,7 +87,7 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 ![](assets/faq_soft_cache.png)
 
-如果仍然无效，请尝试通过执行以下步骤清除硬缓存。
+如果仍然没有帮助，请尝试通过执行以下步骤来清除硬缓存。
 
 ## 对于特定于计算机或用户的问题，如何执行硬缓存清除？ {#perform-hard-cache-clear}
 

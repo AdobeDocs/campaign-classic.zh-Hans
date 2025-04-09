@@ -5,9 +5,10 @@ description: 开发人员常见问题解答
 feature: Troubleshooting, Configuration
 audience: platform
 content-type: reference
+level: Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 90%
@@ -22,7 +23,7 @@ ht-degree: 90%
 
 ## 什么是Campaign数据模型？ {#what-is-the-campaign-data-model}
 
-Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间的交互组成。应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循 Adobe Campaign 特有的语法，称为模式。有关 Adobe Campaign 模式的详细信息，[请参阅本部分](../../configuration/using/about-schema-edition.md)。
+Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间的交互组成。应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循 Adobe Campaign 特有的语法，称为架构。有关 Adobe Campaign 架构的详细信息，[请参阅本部分](../../configuration/using/about-schema-edition.md)。
 
 [单击此处了解有关Campaign数据模型的更多信息](https://helpx.adobe.com/cn/campaign/kb/acc-datamodel.html)。
 
@@ -30,13 +31,13 @@ Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间�
 
 ## 如何使用 Campaign 模式？ {#how-to-work-with-campaign-schemas-}
 
-在 Adobe Campaign 中，数据模式用于：
+在 Adobe Campaign 中，数据架构用于：
 
 * 定义应用程序内的数据对象如何与底层数据库表的联系起来。
 * 定义 Campaign 应用程序中不同数据对象之间的链接。
 * 定义并描述每个对象中包含的个别字段。
 
-阅读[表和模式入门](../../configuration/using/about-schema-edition.md)，了解如何使用数据模式、扩展和自定义 Campaign 来满足您的需求。
+阅读[表和架构入门](../../configuration/using/about-schema-edition.md)，了解如何使用数据架构、扩展和自定义 Campaign 来满足您的需求。
 
 ## 如何使用自定义收件人表？ {#how-to-use-a-custom-recipient-table-}
 
@@ -64,6 +65,6 @@ Adobe Campaign 查询编辑器是一款功能强大的工具，可用于探索�
 
 [单击此处](../../platform/using/working-with-data-packages.md)了解如何使用数据包导入和导出 Campaign 配置。
 
-## 在哪里可以找到Campaign ClassicAPI的列表？ {#where-can-i-find-the-list-of-campaign-classic-apis}
+## 在哪里可以找到Campaign Classic API的列表？ {#where-can-i-find-the-list-of-campaign-classic-apis}
 
 所有 Campaign API（包括其完整说明）均在此[专用文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)中提供。

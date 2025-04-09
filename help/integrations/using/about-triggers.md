@@ -6,8 +6,9 @@ feature: Triggers
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
+level: Intermediate, Experienced
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 7%
@@ -27,7 +28,7 @@ ht-degree: 7%
 由于配置很少且没有第三方参与，因此它允许更敏捷的集成。
 它还支持高流量而不影响营销活动的性能。 例如，集成每小时可处理100万个触发器。
 
-![](assets/do-not-localize/book.png)了解如何[创建Experience Cloud触发器](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html)，识别、定义并监视关键消费者行为。
+![](assets/do-not-localize/book.png)了解如何[创建Experience Cloud触发器](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html)，识别、定义并监视关键客户行为。
 
 ## [!DNL Triggers]架构 {#triggers-architecture}
 
@@ -46,7 +47,7 @@ ht-degree: 7%
 
 ## 实施步骤 {#implement}
 
-要实施Campaign和Experience Cloud触发器，请执行以下步骤：
+要实施Campaign和Experience Cloud Triggers，请执行以下步骤：
 
 1. 创建OAuth项目。 [了解详情](oauth-technical-account.md#oauth-service)
 

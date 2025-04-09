@@ -4,8 +4,9 @@ title: 在Adobe Campaign中配置iOS移动应用程序
 description: 了解如何为iOS设置移动应用程序
 feature: Push
 role: User, Developer
+level: Intermediate, Experienced
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 3%
@@ -44,7 +45,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->在与AdobeSDK进行任何集成之前，必须已为“推送”操作配置应用程序。
+>在与Adobe SDK进行任何集成之前，必须为推送操作配置应用程序。
 >
 >如果不是这种情况，请参阅[此页面](https://developer.apple.com/documentation/usernotifications)。
 
@@ -94,7 +95,7 @@ ht-degree: 3%
 
 1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;开始配置开发应用程序。
 
-1. 确保通过SDK在Adobe Campaign和应用程序代码中定义了相同的&#x200B;**[!UICONTROL Integration key]**。 <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).-->此集成密钥（特定于每个应用程序）允许您将移动应用程序链接到Adobe Campaign平台。
+1. 确保通过SDK在Adobe Campaign和应用程序代码中定义相同的&#x200B;**[!UICONTROL Integration key]**。 <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).-->此集成密钥（特定于每个应用程序）允许您将移动应用程序链接到Adobe Campaign平台。
 
    >[!NOTE]
    >
@@ -123,4 +124,4 @@ ht-degree: 3%
 
 1. 单击 **[!UICONTROL Finish]**。
 
-您的iOS应用程序现在已准备好用于Campaign Classic。
+您的iOS应用程序现在可以在Campaign Classic中使用。

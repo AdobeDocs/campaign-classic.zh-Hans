@@ -4,8 +4,9 @@ title: 在Adobe Campaign中配置Android移动应用程序
 description: 了解如何为Android设置移动应用程序
 feature: Push
 role: User, Developer
+level: Intermediate, Experienced
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 10%
@@ -27,7 +28,7 @@ ht-degree: 10%
 
 >[!IMPORTANT]
 >
->Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 年发布，并将影响您的 Adobe Campaign 实施。您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。您已经可以检查并执行操作。 请参阅此[Adobe Campaign v8技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hans){target="_blank"}以了解详情。
+>Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 年发布，并将影响您的 Adobe Campaign 实施。您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。您已经可以检查并执行操作。 在此[Adobe Campaign v8技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hans){target="_blank"}中了解详情。
 
 
 ## 配置Android外部帐户 {#configuring-external-account-android}
@@ -51,13 +52,13 @@ ht-degree: 10%
 
    ![](assets/nmac_connectors3.png)
 
-1. 对于Android V2，Adobe服务器配置文件(serverConf.xml)中还提供另一个参数：
+1. 对于Android V2，Adobe Server配置文件(serverConf.xml)中还提供了另一个参数：
 
    * **maxGCMConnectPerChild**：每个子服务器向FCM发出的并行HTTP请求的最大限制（默认为8）。
 
 ## 配置Android服务 {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [了解如何在视频中配置Android服务](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}。
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}中配置Android服务。
 
 1. 转到&#x200B;**[!UICONTROL Profiles and Targets > Services and subscriptions]**&#x200B;节点并单击&#x200B;**[!UICONTROL New]**。
 
@@ -100,7 +101,7 @@ ht-degree: 10%
 
 1. 填写&#x200B;**[!UICONTROL Firebase Cloud Messaging the Android connection settings]**&#x200B;字段。
 
-1. 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Save]**。 您的Android应用程序现在已准备好用于Campaign Classic。
+1. 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Save]**。 您的Android应用程序现在可以在Campaign Classic中使用。
 
 默认情况下，Adobe Campaign会在&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;表的&#x200B;**[!UICONTROL User identifier]** (@userKey)字段中保存一个键。 利用此密钥，可将订阅链接到收件人。 要收集其他数据（如复杂的协调密钥），您需要应用以下配置：
 
@@ -108,7 +109,7 @@ ht-degree: 10%
 
 >[!IMPORTANT]
 >
->Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 年发布，并将影响您的 Adobe Campaign 实施。作为Google不断努力改进其服务的一部分，旧版FCM API将于2024年6月20日&#x200B;**终止**。 请参阅此[Adobe Campaign v8技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hans){target="_blank"}以了解详情。
+>Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 年发布，并将影响您的 Adobe Campaign 实施。作为Google不断努力改进其服务的一部分，旧版FCM API将于2024年6月20日&#x200B;**终止**。 在此[Adobe Campaign v8技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hans){target="_blank"}中了解详情。
 
 在创建服务和新的移动应用程序后，您需要配置移动应用程序。 不应选择&#x200B;**HTTP（旧版）** API，因为它已被Google弃用。
 
@@ -135,7 +136,7 @@ ht-degree: 10%
 
 1. 作为一个选项，您可以根据需要使用大约&#x200B;**[!UICONTROL Application variables]**&#x200B;扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 
-1. 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Save]**。 您的Android应用程序现在已准备好用于Campaign Classic。
+1. 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Save]**。 您的Android应用程序现在可以在Campaign Classic中使用。
 
 以下是FCM有效负荷名称，用于进一步个性化您的推送通知：
 

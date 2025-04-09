@@ -1,32 +1,33 @@
 ---
 product: campaign
-title: 创建报告的关键步骤
-description: 了解创建报告的关键步骤
+title: Key steps to create a report
+description: Learn key steps to create a report
 feature: Reporting, Monitoring
+level: Intermediate, Experienced
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
 
 ---
 
-# 创建报告的关键步骤{#key-steps-to-create-a-report}
+# Key steps to create a report{#key-steps-to-create-a-report}
 
 
 
-要生成有关Campaign数据库中数据的统计数据，您可以创建报告并根据需要调整其内容和布局。 这些报告可以与其他操作员共享。
+To produce statistics on the data in your Campaign database, you can create reports and adapt their content and layout based on your needs. These reports can be shared with other operators.
 
 >[!NOTE]
 >
->只有高级用户才有权创建这些报表。
+>Only advanced users are authorized to create these reports.
 
-要创建、发布和提交数据分析报表，请执行以下步骤：
+To create, publish and deliver an analysis report on your data, apply the following steps:
 
-1. 创建新报告：请参阅[创建新报告](../../reporting/using/creating-a-new-report.md)，
-1. 收集要分析的数据：请参阅[收集要分析的数据](../../reporting/using/collecting-data-to-analyze.md)和[使用上下文](../../reporting/using/using-the-context.md)，
-1. 定义包含活动及其容器的报表内容：请参阅[创建表](../../reporting/using/creating-a-table.md)、[创建图表](../../reporting/using/creating-a-chart.md)和[元素布局](../../reporting/using/element-layout.md)，
-1. 配置显示选项：显示类型、共享报告：请参阅[报告显示上下文](../../reporting/using/configuring-access-to-the-report.md#report-display-context)、[定义条件内容](../../reporting/using/defining-a-conditional-content.md)和[配置对报告的访问权限](../../reporting/using/configuring-access-to-the-report.md)，
-1. Publish报告（发布助手）：请参阅[Publish报告](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report)，
-1. 转换报告：导出、历史记录、在浏览器中显示：请参阅[对报告的操作](../../reporting/using/actions-on-reports.md)。
+1. Create a new report: refer to [Create a new report](../../reporting/using/creating-a-new-report.md),
+1. Collect the data to analyze: refer to [Collect data to analyze](../../reporting/using/collecting-data-to-analyze.md) and [Use the context](../../reporting/using/using-the-context.md),
+1. Define the content of the report with the activities and their containers: refer to [Create a table](../../reporting/using/creating-a-table.md), [Creating a chart](../../reporting/using/creating-a-chart.md) and [Element layout](../../reporting/using/element-layout.md),
+1. Configure the display options: display type, shared reports: refer to [Report display context](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [Define a conditional content](../../reporting/using/defining-a-conditional-content.md) and [Configure access to the report](../../reporting/using/configuring-access-to-the-report.md),
+1. Publish the report (publication assistant): refer to [Publish the report](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
+1. Convert the report: export, history, display in a browser: refer to [Actions on reports](../../reporting/using/actions-on-reports.md).

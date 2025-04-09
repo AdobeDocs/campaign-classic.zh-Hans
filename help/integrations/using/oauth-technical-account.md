@@ -1,11 +1,11 @@
 ---
 product: campaign
 title: 为API创建和配置您的Adobe技术帐户
-description: 详细了解如何创建AdobeAPI帐户
+description: 详细了解如何创建Adobe API帐户
 role: User, Admin
-level: Beginner
+level: Intermediate, Experienced
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-source-git-commit: 5352426fc68cbcb6519127e5c89c1e9f8619ca6b
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 6%
@@ -18,15 +18,15 @@ ht-degree: 6%
 
 ## 迁移现有集成 {#migrate-jwt}
 
-Adobe正在弃用服务帐户(JWT)凭据。 Campaign与Adobe解决方案和应用程序的集成现在必须依赖OAuth服务器到服务器凭据。
+Adobe将弃用服务帐户(JWT)凭据。 Campaign与Adobe解决方案和应用程序的集成现在必须依赖OAuth服务器到服务器凭据。
 
-如果您在2024年6月之前实施了入站或出站与Campaign的集成，则必须将Campaign环境升级到v7.4.1，并将您的技术帐户迁移到oAuth，如本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}中所述。 [**2025 年 1 月 27 日**&#x200B;前，现有服务帐户 (JWT) 凭据仍将有效。
+如果您在2024年6月之前实施了Campaign入站或出站集成，则必须将Campaign环境升级到v7.4.1，并将技术帐户迁移到oAuth，如本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)中所述。 [**2025 年 1 月 27 日**&#x200B;前，现有服务帐户 (JWT) 凭据仍将有效。
 
 迁移完成后，您必须按照[此部分](#add-credentials)中的说明将新凭据关联到Campaign。
 
 ## 为新集成创建新的OAuth技术帐户 {#oauth-service}
 
-要为新集成创建您的OAuth技术帐户，请执行以下步骤：
+To create your OAuth technical account for new integrations, follow these steps:
 
 1. 访问Adobe Developer控制台并以您组织的&#x200B;**系统管理员**&#x200B;身份登录。
 
@@ -61,13 +61,13 @@ Adobe正在弃用服务帐户(JWT)凭据。 Campaign与Adobe解决方案和应�
    * **[!UICONTROL Technical account ID]**
    * **[!UICONTROL Organization ID]**
 
-## 在Campaign中添加OAuth项目凭据 {#add-credentials}
+## Add OAuth project credentials in Campaign {#add-credentials}
 
 执行上述步骤后，在Adobe Campaign中添加您的OAuth项目凭据。
 
 >[!NOTE]
 >
->作为托管或托管Cloud Service客户，不需要执行此步骤：Adobe已将您的OAuth项目凭据添加到您的环境中。
+>作为托管或托管式云服务客户，不需要执行此步骤： Adobe已将您的OAuth项目凭据添加到您的环境中。
 >
 
 对于内部部署或混合型客户，请执行以下步骤：

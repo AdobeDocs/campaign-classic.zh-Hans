@@ -4,8 +4,9 @@ title: 配置Campaign短信渠道
 description: 了解如何在Campaign配置短信渠道
 feature: SMS
 role: User, Developer, Admin
+level: Experienced
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 27%
@@ -49,13 +50,13 @@ ht-degree: 27%
 
    >[!CAUTION]
    >
-   > 从版本20.2开始，旧版连接器已弃用，并且不受支持。 我们建议使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器。 有关如何迁移到推荐连接器的更多信息，请参阅此[页面](unsupported-connector-migration.md)。
+   > As of release 20.2, legacy connectors are deprecated and not supported. 我们建议使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器。 有关如何迁移到推荐连接器的更多信息，请参阅此[页面](unsupported-connector-migration.md)。
 
 1. 使用&#x200B;**[!UICONTROL Enable verbose SMPP traces in the log file]**&#x200B;选项可将所有SMPP通信转储到日志文件中。 必须启用此选项才能对连接器进行故障诊断，并与提供商的通信记录进行对比。
 
-1. 请与您的SMS服务提供商联系，提供商将向您说明如何填写&#x200B;**[!UICONTROL Connection settings]**&#x200B;选项卡中的不同外部帐户字段。
+1. 请与SMS服务提供商联系，他们将向您介绍如何从&#x200B;**[!UICONTROL Connection settings]**&#x200B;选项卡中填写不同的外部帐户字段。
 
-   然后，根据所选提供商，联系您的提供商，提供商将为您提供进入&#x200B;**[!UICONTROL SMSC implementation name]**&#x200B;字段的值。
+   然后，根据所选提供商，联系您的提供商，他们将为您提供在&#x200B;**[!UICONTROL SMSC implementation name]**&#x200B;字段中输入的值。
 
    您可以定义每个MTA子级与提供程序的连接数。 默认情况下，设置为1。
 
@@ -65,9 +66,9 @@ ht-degree: 27%
 
    >[!NOTE]
    >
-   >某些字符会被计为两个字符（大括号、方括号、欧元符号等）。
+   >某些字符计为两个（大括号、方括号、欧元符号等）。
    >
-   >可用GSM字符的列表如下所示。
+   >下面列出了可用的GSM字符列表。
 
    如果需要，您可通过勾选对应的方框来授权字符音译。
 
@@ -75,7 +76,7 @@ ht-degree: 27%
 
    如需详细信息，请参阅[此小节](#about-character-transliteration)。
 
-1. 在&#x200B;**[!UICONTROL Throughput and delays]**&#x200B;选项卡中，您可以指定出站消息(“MT”，Mobile Terminated)的最大吞吐量，以每秒MT为单位。 如果在对应的字段中输入“0”，则吞吐量将没有限制。
+1. 在&#x200B;**[!UICONTROL Throughput and delays]**&#x200B;选项卡中，您可以指定出站报文的最大吞吐量（以MT为单位，移动端已终止）（以每秒的MT为单位）。 如果在对应的字段中输入“0”，则吞吐量将没有限制。
 
    对应于持续时间的所有字段值，都必须填写以秒为单位的值。
 
@@ -147,7 +148,7 @@ ht-degree: 27%
    <td> r </td> 
   </tr> 
   <tr> 
-   <td> £ </td> 
+   <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> # </td> 
    <td> 3 </td> 
@@ -189,7 +190,7 @@ ht-degree: 27%
   <tr> 
    <td> i </td> 
    <td> <img height="21px" src="assets/psi.png" /> </td> 
-   <td> ’ </td> 
+   <td> ‘ </td> 
    <td> 7 </td> 
    <td> G </td> 
    <td> W </td> 
@@ -244,7 +245,7 @@ ht-degree: 27%
    <td> L </td> 
    <td> Ö </td> 
    <td> l </td> 
-   <td> ö </td> 
+   <td> o </td> 
   </tr> 
   <tr> 
    <td> 回车 </td> 
@@ -252,9 +253,9 @@ ht-degree: 27%
    <td> - </td> 
    <td> = </td> 
    <td> M </td> 
-   <td> 否 </td> 
+   <td> Ñ </td> 
    <td> m </td> 
-   <td> n </td> 
+   <td> ñ </td> 
   </tr> 
   <tr> 
    <td> Å </td> 
@@ -332,7 +333,7 @@ CR：回车
 
 ![](assets/extended_smpp_reply.png)
 
-如果将&#x200B;**[!UICONTROL Remove from quarantine]**&#x200B;操作链接到自动响应，则发送相应关键字的收件人会自动从隔离中删除。
+If you link the **[!UICONTROL Remove from quarantine]** action to an automatic response, the recipients sending the corresponding keyword are automatically removed from quarantine.
 
 收件人列在可通过&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**&#x200B;菜单访问的&#x200B;**[!UICONTROL Non deliverables and addresses]**&#x200B;表中。
 
@@ -358,10 +359,10 @@ Adobe Campaign为您提供了一个用于向移动设备交付内容的模板。
 
 要保留本机投放模板，我们建议您复制该模板并对其进行配置。
 
-在下面的示例中，我们创建一个模板，以便通过之前启用的SMPP帐户来传递消息。 操作步骤：
+In the example below, we create a template to deliver messages via the SMPP account enabled earlier. 操作步骤：
 
-1. 转到&#x200B;**[!UICONTROL Delivery templates]**&#x200B;节点。
-1. 右键单击&#x200B;**[!UICONTROL Send to mobiles]**&#x200B;模板，然后选择&#x200B;**[!UICONTROL Duplicate]**。
+1. Go to the **[!UICONTROL Delivery templates]** node.
+1. Right-click the **[!UICONTROL Send to mobiles]** template, and select **[!UICONTROL Duplicate]**.
 
    ![](assets/s_user_mobile_template_change_01.png)
 
@@ -370,7 +371,7 @@ Adobe Campaign为您提供了一个用于向移动设备交付内容的模板。
    ![](assets/s_user_mobile_template_change_02.png)
 
 1. 单击 **[!UICONTROL Properties]**。
-1. 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，选择与您在前面步骤中创建的外部帐户对应的路由模式。
+1. 在“**[!UICONTROL General]**”选项卡中，选择一种路由模式，该模式与您在上一步中创建的外部帐户相对应。
 
    ![](assets/s_user_mobile_template_change_03.png)
 

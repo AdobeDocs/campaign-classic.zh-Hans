@@ -6,10 +6,11 @@ feature: Triggers
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
+level: Intermediate, Experienced
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '832'
 ht-degree: 1%
 
 ---
@@ -47,7 +48,7 @@ ht-degree: 1%
 
 1. 在Adobe Campaign中，访问&#x200B;**[!UICONTROL Explorer]**&#x200B;中&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**&#x200B;下的选项菜单。
 
-1. 选择&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;选项。
+1. 选择 **[!UICONTROL NmsPipeline_Config]** 选项。
 
 1. 在&#x200B;**[!UICONTROL Value (long text)]**&#x200B;字段中，可以粘贴以下JSON代码，该代码指定两个触发器。 确保删除注释。
 

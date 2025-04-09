@@ -1,13 +1,14 @@
 ---
 product: campaign
-title: Campaign Classic通用架构
+title: Campaign Classic常规架构
 description: 了解如何安装和配置Campaign Classic
 feature: Installation, Architecture
 audience: installation
 content-type: reference
+level: Intermediate, Experienced
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 0%
@@ -36,7 +37,7 @@ Adobe Campaign基于面向服务的架构(SOA)，由多个功能模块组成。 
 
 >[!NOTE]
 >
->作为软件供应商，我们指定兼容的硬件和软件基础架构。 此处提供的硬件建议仅供参考，并且基于我们的经验。 Adobe对据此作出的任何决定概不负责。 它还将取决于您的业务规则和惯例以及项目的关键性和所需的性能级别。
+>作为软件供应商，我们指定兼容的硬件和软件基础架构。 此处提供的硬件建议仅供参考，并且基于我们的经验。 Adobe对据此作出的决定不承担任何责任。 它还将取决于您的业务规则和惯例以及项目的关键性和所需的性能级别。
 
 ![](assets/s_ncs_install_architecture.png)
 
@@ -62,7 +63,7 @@ Adobe Campaign依赖一组可共同工作的服务器端进程。
 
 **应用程序服务器** (nlserver web)
 
-此进程通过Web服务API (SOAP - HTTP + XML)公开所有Adobe Campaign功能。 此外，它可以动态生成用于基于HTML的访问（报表、Web窗体等）的网页。 为实现此目的，此过程包括一个Apache Tomcat JSP服务器。 这是控制台连接的进程。
+此流程通过Web服务API (SOAP - HTTP + XML)公开所有Adobe Campaign功能。 此外，它可以动态生成用于基于HTML的访问的网页（报表、Web窗体等）。 为实现此目的，此过程包括一个Apache Tomcat JSP服务器。 这是控制台连接的进程。
 
 **工作流引擎** (nlserver wfserver)
 
@@ -84,13 +85,13 @@ Adobe Campaign具有本机电子邮件广播功能。 此过程可充当SMTP邮�
 
 对于电子邮件，Adobe Campaign会自动处理打开和点击跟踪（还可能在网站级别进行事务性跟踪）。 要实现此目的，将重写电子邮件中纳入的URL，以便指向此模块，该模块会注册Internet用户的传递，然后再将用户重定向到所需的URL。
 
-为了保证最高可用性，此过程完全独立于数据库：其他服务器进程仅使用SOAP调用(HTTP、HTTP(S)和XML)与其通信。 从技术上讲，此功能是在HTTP服务器的扩展模块（IIS中的ISAPI扩展或DSO Apache模块等）中实现的 和仅在Windows中可用。
+为了保证最高可用性，此过程完全独立于数据库：其他服务器进程仅使用SOAP调用(HTTP、HTTP(S)和XML)与其通信。 从技术上讲，此功能是在HTTP服务器的扩展模块（IIS中的ISAPI扩展或DSO Apache模块等）中实现的，并且仅在Windows中可用。
 
 其他更技术性的流程也可使用：
 
 **管理退回电子邮件** (nlserver inMail)
 
-通过此过程，您可以从配置为接收在投放失败时返回的退回邮件的邮箱自动选取电子邮件。 然后，这些邮件将进行基于规则的处理，以确定未投放的原因（未知收件人、超出配额等） 和更新数据库中的投放状态。
+通过此过程，您可以从配置为接收在投放失败时返回的退回邮件的邮箱自动选取电子邮件。 然后，这些消息将进行基于规则的处理，以确定未投放的原因（未知收件人、超出配额等）并更新数据库中的投放状态。
 
 所有这些操作都是完全自动且已预配置的。
 
@@ -124,7 +125,7 @@ Adobe Campaign具有本机电子邮件广播功能。 此过程可充当SMTP邮�
 
 ## 持久层 {#persistence-layer}
 
-该数据库用作持久层，包含几乎所有由Adobe Campaign管理的信息。 这包括功能数据（用户档案、订阅、内容等）、技术数据（投放作业和日志、跟踪日志等） 和工作数据（购买、商机）。
+该数据库用作持久层，包含几乎所有由Adobe Campaign管理的信息。 这包括功能数据（用户档案、订阅、内容等）、技术数据（投放作业和日志、跟踪日志等）和工作数据（购买、商机）。
 
 数据库的可靠性至关重要，因为大多数Adobe Campaign组件都需要访问数据库才能执行其任务（重定向模块显着除外）。
 

@@ -1,14 +1,15 @@
 ---
 product: campaign
 title: 了解Adobe Campaign中的架构结构
-description: 模式结构
+description: 架构结构
 feature: Custom Resources
 role: Data Engineer, Developer
 audience: configuration
 content-type: reference
+level: Intermediate, Experienced
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 1%
@@ -19,7 +20,7 @@ ht-degree: 1%
 
 架构的基本结构如下所述。
 
-## 数据架构  {#data-schema}
+## 数据架构 {#data-schema}
 
 对于`<srcschema>`，结构如下：
 
@@ -490,7 +491,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 浏览以下链接以了解更多信息：
 
-* [模式入门](about-schema-reference.md)
+* [架构入门](about-schema-reference.md)
 * [数据库映射](database-mapping.md)
 * [链接管理](database-links.md)
 * [密钥管理](database-keys.md)
