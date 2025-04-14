@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3864'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ ht-degree: 97%
 
 ### 2025 年 3 月 {#march-2025}
 
-作为Campaign v8促销活动的一部分，我们已开始重新组织Campaign Classic文档集。 在7.4.2中，我们将发布第一个里程碑。 以下指南已替换为登陆页面，包括指向v8文档的链接：
+作为 Campaign v8 推广计划的一部分，我们已开始重新组织 Campaign Classic 文档集。在 7.4.2 中，我们将发布第一个里程碑式进展。以下指南已被替换为包含 v 8文档链接的登陆页面：
 
-* 编排营销活动：本指南已替换为[登陆页面](../../campaign/using/about-marketing-campaigns.md)。
-* 营销资源管理：本指南已被删除。
-* 分布式营销：本指南已被删除。
-* 使用工作流实现自动化：本指南已替换为[登陆页面](../../workflow/using/about-workflow-automation.md)
+* 编排营销活动：此指南已被替换为一个[登陆页面](../../campaign/using/about-marketing-campaigns.md)。
+* 营销资源管理：此指南已移除。
+* 分布式营销：此指南已移除。
+* 使用工作流实现自动化：此指南已替换为一个[登陆页面](../../workflow/using/about-workflow-automation.md)
 
 ## 2024
 
