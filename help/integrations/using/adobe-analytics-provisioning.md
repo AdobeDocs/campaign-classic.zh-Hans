@@ -7,9 +7,9 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 8d15a5666b5768bc0f17a4391061c4fcb9f76811
+source-git-commit: 84e6b2fad97f0ca5d6621cff4648e0be0bef7521
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 >
 >对于Hosted和Campaign Managed Services实施，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)团队。
 
-Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeIdentity Management服务(IMS)：
+Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持Adobe Identity Management服务(IMS)：
 
 * 如果您正在管理已迁移的外部帐户，则必须实施Adobe IMS并通过Adobe ID连接到Adobe Campaign。
 
@@ -38,9 +38,9 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 >
 > Adobe已弃用服务帐户(JWT)凭据，Campaign与Adobe解决方案和应用程序的集成现在必须依赖OAuth服务器到服务器凭据。 </br>
 >
-> * 如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如[本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank)中所述。 现有的[服务帐户(JWT)凭据](oauth-technical-account.md)将继续工作到2025年1月27日。</br>
+> * 如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如[本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank)中所述。 现有[服务帐户(JWT)凭据](oauth-technical-account.md)将继续工作直至2025年6月30日。</br>
 >
-> * 如果您实施了叫客集成，如Campaign-Analytics集成或Experience Cloud Triggers集成，则在2025年1月27日之前它们将继续工作。 但是，在该日期之前，您必须将Campaign环境升级到v7.4.1，并将您的技术帐户迁移到OAuth。
+> * 如果您实施了叫客集成，如Campaign-Analytics集成或Experience Cloud Triggers集成，则在2025年6月30日之前它们将继续工作。 但是，在该日期之前，您必须将Campaign环境升级到v7.4.1，并将您的技术帐户迁移到OAuth。
 
 ## 创建Adobe Analytics产品配置文件 {#analytics-product-profile}
 
@@ -84,7 +84,7 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持AdobeId
 
 1. 对于&#x200B;**[!UICONTROL Dimensions]**&#x200B;功能，添加未来配置所需的&#x200B;**[!UICONTROL Dimensions]**。
 
-   确保所选的Dimension与要在外部帐户中配置的帐户匹配，并与Adobe Analytics中对应的eVar编号一致。
+   确保所选维度与要在外部帐户中配置的维度匹配，并与Adobe Analytics中的相应eVar编号一致。
 
 1. 对于&#x200B;**[!UICONTROL Report Suite Tools]**&#x200B;功能，添加以下权限：
 
