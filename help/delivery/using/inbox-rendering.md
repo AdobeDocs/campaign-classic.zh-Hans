@@ -6,9 +6,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9b93603a076b007d66aad52b05e560e17e316eeb
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '854'
 ht-degree: 7%
 
 ---
@@ -37,7 +37,7 @@ Litmus是一款功能丰富的电子邮件验证和预览应用程序。 它允�
 
 [!BADGE 内部部署和混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"}
 
-对于托管和混合客户端，由Adobe技术支持和顾问在实例上配置收件箱呈现。 有关更多信息，请与您的Adobe客户经理联系。
+对于托管和混合客户端，收件箱呈现由Adobe技术支持和顾问在您的实例上配置。 有关更多信息，请与您的Adobe客户经理联系。
 
 对于内部部署，请按照以下步骤配置收件箱呈现。
 
@@ -90,11 +90,11 @@ Litmus是一款功能丰富的电子邮件验证和预览应用程序。 它允�
 >* 对于同一投放，如果再次生成收件箱渲染，则可用令牌的数量将再次减少生成的渲染的数量。
 >
 
-剩余可用令牌的数量显示在[收件箱呈现报告](#inbox-rendering-report)的&#x200B;**[!UICONTROL General summary]**&#x200B;中。
+剩余可用令牌的数量显示在[收件箱呈现报告](#inbox-rendering-report)中。
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
-通常，收件箱呈现功能用于测试新设计的电子邮件的HTML框架。 每次渲染大约需要70个令牌（具体取决于通常测试的环境数量）。 但是，在某些情况下，您可能需要多个收件箱呈现报告才能完全测试您的投放。 因此，可能需要更多令牌才能完成多项检查。
+通常，收件箱呈现功能用于测试新设计电子邮件的HTML框架。 每次渲染大约需要70个令牌（具体取决于通常测试的环境数量）。 但是，在某些情况下，您可能需要多个收件箱呈现报告才能完全测试您的投放。 因此，可能需要更多令牌才能完成多项检查。
 
 ## 访问收件箱呈现报告 {#accessing-the-inbox-rendering-report}
 
@@ -123,13 +123,13 @@ Litmus是一款功能丰富的电子邮件验证和预览应用程序。 它允�
 
 此报告按照收件人的外观显示收件箱呈现。 根据收件人打开电子邮件投放的方式，渲染可能会有所不同：在浏览器中、移动设备上或通过电子邮件应用程序。
 
-**[!UICONTROL General summary]**&#x200B;将已接收、无需（垃圾邮件）、未接收或待接收的邮件数显示为列表并通过图形颜色编码表示法显示。
+顶部部分通过图形颜色编码表示表示对接收的消息、不需要的（垃圾邮件）、未接收的消息或待接收的消息的数量进行重新分区。
 
-![](assets/s_tn_inbox_rendering_summary.png)
+![](assets/s_tn_inbox_rendering_summary.png){width="40%" align="left"}
 
-将鼠标悬停在图表上以显示每种颜色的详细信息。
+将鼠标悬停在图表上以显示每种颜色的详细信息。 单击列表上的项目可隐藏或显示图表中的相应类别。
 
-报告正文分为三部分： **[!UICONTROL Mobile]**、**[!UICONTROL Messaging clients]**&#x200B;和&#x200B;**[!UICONTROL Webmails]**。 向下滚动报告，可显示分组到这三个类别中的所有渲染。
+报告正文分为三部分： **[!UICONTROL Mobile]**、**[!UICONTROL Desktop]**&#x200B;和&#x200B;**[!UICONTROL Webmails]**。 向下滚动报告，可显示分组到这三个类别中的所有渲染。
 
 ![](assets/s_tn_inbox_rendering_report.png)
 
