@@ -28,7 +28,7 @@ ht-degree: 98%
 
 探索在数据库中[导入轮廓](../../platform/using/import-operations-samples.md)的轻松用例。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html?lang=zh-Hans)
 
 ## 如何定义营销活动的目标群体？ {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -41,7 +41,7 @@ ht-degree: 98%
 
 [单击此处了解更多信息](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。
 
-![](assets/do-not-localize/how-to-video.png) [在此视频中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html)和[在其他视频中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)发现此功能
+![](assets/do-not-localize/how-to-video.png) [在此视频中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html?lang=zh-Hans)和[在其他视频中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html?lang=zh-Hans)发现此功能
 
 ## 如何在发送邮件前删除重复的群体？ {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 

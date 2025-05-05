@@ -26,7 +26,7 @@ Adobe Campaign团队将在2022年6月15日之前执行Apache版本安全升级�
 
 此升级预计在正常工作时间之外自动运行，以便您能够继续使用Campaign服务而不会造成任何中断。
 
-您的非生产实例将首先由Adobe升级，然后您的生产实例将升级。 由于这是由Adobe拥有的自动升级过程，因此无需您执行任何操作。 但是，如果您遇到任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
+您的非生产实例将首先由Adobe升级，然后您的生产实例将升级。 由于这是由Adobe拥有的自动升级过程，因此无需您执行任何操作。 但是，如果您遇到任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)。
 
 
 >[!NOTE]
@@ -57,7 +57,7 @@ Adobe Campaign团队将在2022年6月15日之前执行Apache版本安全升级�
 
 * **客户需要运行哪些验证？**
 
-  此安全升级不需要任何特定测试。 如果发现任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
+  此安全升级不需要任何特定测试。 如果发现任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)。
 
 
 * **我可以请求更改计划的安全升级槽的日期/时间吗？**
@@ -65,4 +65,4 @@ Adobe Campaign团队将在2022年6月15日之前执行Apache版本安全升级�
   由于这是安全修复，因此我们强烈建议您调整到现有计划。
 
 
-如有任何其他问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
+如有任何其他问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)。

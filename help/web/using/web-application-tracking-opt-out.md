@@ -22,7 +22,7 @@ Adobe Campaign允许您停止跟踪通过Cookie或Web信标选择退出行为跟
 
 >[!NOTE]
 >
->当脚本编写始终遵循[安全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中所述的准则时。
+>当脚本编写始终遵循[安全和隐私核对清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#dev)中所述的准则时。
 
 ## 配置横幅 {#configuring-the-banner-}
 

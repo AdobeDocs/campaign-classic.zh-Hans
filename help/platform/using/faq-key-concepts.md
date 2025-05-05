@@ -63,7 +63,7 @@ Adobe Campaign 提供一套工具，可帮助您确保符合《欧盟通用数�
 
 请参阅[此部分](../../platform/using/adobe-campaign-workspace.md)，了解有关 Adobe Campaign 工作区基本知识的更多信息。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现 Campaign 工作区](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [在视频中发现 Campaign 工作区](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html?lang=zh-Hans)
 
 ## 如何选择消息的受众？ {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -85,7 +85,7 @@ Adobe Campaign 包括在不同的应用程序服务器模块之间编排所有�
 
 [单击此处了解更多信息](../../delivery/using/about-email-channel.md)。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此内容](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此内容](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=zh-Hans)
 
 ## 如何发送 SMS 消息？ {#how-to-send-sms-messages-}
 
@@ -131,6 +131,6 @@ Adobe 会持续评估产品功能，不断使用更强大的版本替换旧功�
 
 ## 是否发布了新的文档更新和帮助材料？ {#are-there-new-documentation-updates-and-help-materials-released-}
 
-[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html)中列出了最新的 Campaign Classic 文档更新。
+[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html?lang=zh-Hans)中列出了最新的 Campaign Classic 文档更新。
 
 您也可以参照[此页面](https://helpx.adobe.com/cn/campaign/kb/article-list.html)中列出的最新的技术说明。

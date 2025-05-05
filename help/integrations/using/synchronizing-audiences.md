@@ -123,7 +123,7 @@ ht-degree: 1%
 
    此活动用于检索所选受众的数据。 如果需要，您还可以使用此活动的相应选项卡应用额外的&#x200B;**[!UICONTROL Source Filtering]**。
 
-1. 添加&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动，并将其配置为任何其他[电子邮件投放活动](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html)。
+1. 添加&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动，并将其配置为任何其他[电子邮件投放活动](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html?lang=zh-Hans)。
 1. 打开投放内容。
 1. 添加个性化字段。从弹出窗口中，找到&#x200B;**[!UICONTROL Additional data (targetData)]**&#x200B;节点。 此节点包含在初始定位工作流中计算的受众附加数据。 您可以像使用任何其他个性化字段一样使用它们。
 
@@ -145,9 +145,9 @@ ht-degree: 1%
 1. 在投放仪表板中，手动确认可以发送投放。
 1. 监测投放的报告和日志：
 
-   * **Campaign Standard**：与任何投放一样，访问与该投放相关的[报告](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html)和[日志](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html)。
+   * **Campaign Standard**：与任何投放一样，访问与该投放相关的[报告](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html?lang=zh-Hans)和[日志](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=zh-Hans)。
    * Campaign v7和Campaign Standard **中的**：投放ID、电子邮件广泛日志和电子邮件跟踪日志已同步到Campaign v7。 然后，您可以从Campaign v7全面了解营销活动。
 
      隔离会自动同步回Campaign v7。 这允许将无法投放的信息考虑在内，以便在Campaign v7中执行下一个定位。
 
-     您可以在[此部分](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html)的Campaign Standard中找到有关隔离管理的更多信息。
+     您可以在[此部分](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=zh-Hans)的Campaign Standard中找到有关隔离管理的更多信息。

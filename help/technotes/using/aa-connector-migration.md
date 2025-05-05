@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # 如何将现有Genesis集成迁移到Adobe Analytics连接器 {#acc-aa-faq}
 
-从Campaign Classicv7 21.1.3版本开始，弃用Adobe Analytics Data Connector。 [了解详情](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
+从Campaign Classicv7 21.1.3版本开始，弃用Adobe Analytics Data Connector。 [了解详情](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html?lang=zh-Hans)
 
 2021年8月1日，Adobe Campaign Classic已从旧版Data Connectors UI中删除，但是，在2022年8月17日之前，现有Campaign集成将继续收集数据并传递到Adobe Analytics。 在此日期之后，集成将停止收集数据并传递到Adobe Analytics。
 

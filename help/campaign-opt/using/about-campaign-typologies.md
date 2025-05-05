@@ -24,7 +24,7 @@ Campaign Optimization是一个Adobe Campaign模块，可让您控制、过滤和
 
 >[!NOTE]
 >
->要了解有关Adobe Campaign的Campaign优化及其使用方法的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target=_blank}。
+>要了解有关Adobe Campaign的Campaign优化及其使用方法的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-optimization/campaign-typologies){target=_blank}。
 
 <!--
 
@@ -81,7 +81,7 @@ This video explains how to implement fatigue management in Adobe Campaign Classi
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
 
 **Related topic**
 

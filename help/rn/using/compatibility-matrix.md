@@ -437,7 +437,7 @@ ht-degree: 100%
 
 Microsoft Edge WebView2 运行时最新版本是 Campaign 客户端控制台的必需版本。
 
-从 [Microsoft 开发人员网站](https://www.adobe.com/go/acc-ms-webview2-runtime-download)下载 Microsoft Edge WebView2。
+从 [Microsoft 开发人员网站](https://www.adobe.com/go/acc-ms-webview2-runtime-download_cn)下载 Microsoft Edge WebView2。
 
 
 ## Mobile SDK {#MobileSDK}

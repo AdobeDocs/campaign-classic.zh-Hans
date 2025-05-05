@@ -30,7 +30,7 @@ Adobe将弃用服务帐户(JWT)凭据。 Campaign与Adobe解决方案和应用�
 
 1. 访问Adobe Developer控制台并以您组织的&#x200B;**系统管理员**&#x200B;身份登录。
 
-   有关管理员角色的更多信息，请参阅此[页面](https://helpx.adobe.com/enterprise/using/admin-roles.html)。
+   有关管理员角色的更多信息，请参阅此[页面](https://helpx.adobe.com/cn/enterprise/using/admin-roles.html)。
 
 1. 单击 **[!UICONTROL Create a new project]**。
 
@@ -48,7 +48,7 @@ Adobe将弃用服务帐户(JWT)凭据。 Campaign与Adobe解决方案和应用�
 
 1. 选择项目的&#x200B;**[!UICONTROL Product profile]**&#x200B;链接。
 
-   如果需要，您可以创建新插件。 [了解详情](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)
+   如果需要，您可以创建新插件。 [了解详情](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)
 
 1. 然后，单击&#x200B;**[!UICONTROL Save Configured API]**。
 

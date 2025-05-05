@@ -21,7 +21,7 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 以下是一组有关此项目的常见问题、对您的Campaign环境的影响以及其他有用资源。
 
-如有任何其他问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
+如有任何其他问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)。
 
 ## 对基础架构的影响
 
@@ -51,7 +51,7 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 * **解决迁移后问题的计划是什么？**
 
-  在迁移生产系统之前，将执行大量测试。 但是，如果出现任何问题，[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)仍将是主要联系人。 Adobe已经成立了一个专家团队，在需要时提供高级支持。
+  在迁移生产系统之前，将执行大量测试。 但是，如果出现任何问题，[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)仍将是主要联系人。 Adobe已经成立了一个专家团队，在需要时提供高级支持。
 
 ## 可投放性影响
 
@@ -97,7 +97,7 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
   首先，Adobe可交付性将评估平台的可交付性状态，并推荐切换到新IP的计划
 
-  迁移后不需要热身。 可能会出现异常，在这种情况下，[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)将与客户联系。
+  迁移后不需要热身。 可能会出现异常，在这种情况下，[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)将与客户联系。
 
   不过，该计划旨在让这一业务运营变得透明，不同于在上线期间的最初升级。
 

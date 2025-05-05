@@ -20,7 +20,7 @@ ht-degree: 4%
 
 Adobe Experience Cloud是一组一流的集成式解决方案，构建在通用数据平台之上，具有一组通用的强大解决方案和应用程序。
 
-在[此页面](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/integrations){_blank}中了解有关Adobe Campaign与Adobe Experience Cloud解决方案之间可用功能集成的更多信息。
+在[此页面](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/integrations){_blank}中了解有关Adobe Campaign与Adobe Experience Cloud解决方案之间可用功能集成的更多信息。
 
 [此部分](#experience-cloud-integrations)中提供了可与Adobe集成的Adobe Campaign解决方案和应用程序服务的完整列表以及相关文档。
 
@@ -33,17 +33,17 @@ Adobe Experience Cloud是一组一流的集成式解决方案，构建在通用�
 
 可将多个解决方案链接到Adobe Experience Cloud。 **组织**&#x200B;是一个客户实体，它允许管理员配置组和用户，并控制Adobe Experience Cloud中的单点登录(SSO)。 公司的行为就像一家登录公司，负责处理所有Experience Cloud产品和解决方案。 大多数情况下，组织是您的公司名称。但是，一家公司可以有多个组织。
 
-[Adobe Experience Cloud帮助门户](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations){_blank}中详细介绍了组织管理和关联Adobe Experience Cloud帐户。
+[Adobe Experience Cloud帮助门户](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations){_blank}中详细介绍了组织管理和关联Adobe Experience Cloud帐户。
 
 ## 身份和Cookie管理 {#id-and-cookies}
 
-在安装Adobe Campaign或将现有安装与Adobe Experience Cloud集成时，将启用[Adobe Experience Cloud Identity服务](https://experienceleague.adobe.com/en/docs/id-service/using/home){_blank}。 此服务取代了Adobe Campaign首先用于跟踪功能的永久Cookie。
+在安装Adobe Campaign或将现有安装与Adobe Experience Cloud集成时，将启用[Adobe Experience Cloud Identity服务](https://experienceleague.adobe.com/zh-hans/docs/id-service/using/home){_blank}。 此服务取代了Adobe Campaign首先用于跟踪功能的永久Cookie。
 
 Adobe Experience Cloud身份服务（ID服务）提供一个通用的持久ID，用于在Experience Cloud中的所有解决方案中标识您的访问者。
 
 一个唯一的访客ID将被分配给生成跟踪日志的收件人。 此ID将保存在&#x200B;**[!UICONTROL nms:trackingLogRcp]**&#x200B;表的&#x200B;**[!UICONTROL Requester UUID (@sourceID)]**&#x200B;字段中。 **因此，在实现访客ID服务之前存在的收件人的跟踪数据将不再可用**。
 
-该ID随后将被具有相同CNAME的其他Adobe Experience Cloud解决方案识别。 [了解详情](https://experienceleague.adobe.com/en/docs/id-service/using/reference/analytics-reference/cname){_blank}。
+该ID随后将被具有相同CNAME的其他Adobe Experience Cloud解决方案识别。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/id-service/using/reference/analytics-reference/cname){_blank}。
 
 ## Experience Cloud 集成 {#experience-cloud-integrations}
 

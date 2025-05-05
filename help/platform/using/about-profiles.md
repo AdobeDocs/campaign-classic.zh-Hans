@@ -93,7 +93,7 @@ Adobe Campaign资源管理器的常规布局显示在[此页面](../../platform/
 
 根据您的合同，您的每个 Campaign 实例都会配置特定数量的活动轮廓，并对这些活动轮廓进行计数以计费。请参阅您的最新合同，了解已购买的活动用户档案的数量。 在[Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}中了解详情。
 
-您可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参阅[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}。
+您可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参阅[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=zh-Hans){target="_blank"}。
 
 以下护栏和限制适用：
 

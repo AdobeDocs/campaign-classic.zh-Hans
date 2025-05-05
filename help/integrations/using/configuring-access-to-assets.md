@@ -51,7 +51,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->此功能已从Adobe Experience Manager 6.4开始停用。[了解详情](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
+>此功能已从Adobe Experience Manager 6.4开始停用。[了解详情](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=zh-Hans#removed-features)
 
 要将AEM Assets与Adobe Campaign集成，您必须首先配置Adobe Experience Manager与Adobe Campaign之间的集成。 此配置主要需要：
 

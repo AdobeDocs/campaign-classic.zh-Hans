@@ -21,7 +21,7 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 
 要做到这一点，请执行以下操作：
 
-1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)为实例安装GPG密钥对。
+1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans#encrypting-data)为实例安装GPG密钥对。
 
    >[!NOTE]
    >
@@ -46,7 +46,7 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 
 执行此用例的步骤如下：
 
-1. 使用GPG实用程序生成GPG密钥对（公共/私有），然后将公共密钥安装到控制面板上。 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)中提供了详细步骤。
+1. 使用GPG实用程序生成GPG密钥对（公共/私有），然后将公共密钥安装到控制面板上。 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans#encrypting-data)中提供了详细步骤。
 
 1. 在Campaign Classic中，构建一个工作流以导出数据，并使用已通过控制面板安装的私钥对其进行加密。 为此，我们将构建一个工作流，如下所示：
 

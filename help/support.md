@@ -112,7 +112,7 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 ### SFTP 管理
 
-在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监视其存储容量、管理允许列表上的IP地址和公共SSH密钥。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以了解更多信息。
+在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监视其存储容量、管理允许列表上的IP地址和公共SSH密钥。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans)以了解更多信息。
 
 ### 子域和证书
 

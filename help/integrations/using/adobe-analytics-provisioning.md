@@ -114,4 +114,4 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持Adobe I
 
 ## 配置和使用情况 {#adobe-analytics-connector-usage}
 
-请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}以了解如何使用Adobe Campaign和Adobe Analytics。
+请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}以了解如何使用Adobe Campaign和Adobe Analytics。

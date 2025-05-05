@@ -18,7 +18,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->此页面仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证，请参阅[此文档](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html)。
+>此页面仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证，请参阅[此文档](https://helpx.adobe.com/cn/enterprise/using/manage-permissions-and-roles.html)。
 
 默认情况下，Adobe Campaign建议一组已命名权限，用于定义分配给操作员和操作员组的授权。 可以从树的&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;节点编辑这些权限。
 
@@ -76,4 +76,4 @@ ht-degree: 5%
 
 [此处](/help/platform/using/assets/access-rights-matrix.pdf)提供Adobe Campaign访问权限矩阵。
 
-[![图像](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
+[![图像](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=zh-Hans)

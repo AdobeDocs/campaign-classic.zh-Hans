@@ -26,7 +26,7 @@ Adobe Campaign允许您导入压缩或加密文件。 在[数据加载（文件�
 
 要做到这一点，请执行以下操作：
 
-1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)生成公钥/私钥对，以允许文件解密。
+1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans#decrypting-data)生成公钥/私钥对，以允许文件解密。
 
    >[!NOTE]
    >
@@ -62,7 +62,7 @@ Adobe Campaign允许您导入压缩或加密文件。 在[数据加载（文件�
 
 执行此用例的步骤如下：
 
-1. 使用控制面板生成密钥对（公共/私有）。 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)中提供了详细步骤。
+1. 使用控制面板生成密钥对（公共/私有）。 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans#decrypting-data)中提供了详细步骤。
 
    * 公共密钥将与外部系统共享，外部系统将使用它来加密要发送到Campaign的数据。
    * Campaign Classic将使用私钥对传入的加密数据进行解密。

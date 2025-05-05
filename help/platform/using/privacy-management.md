@@ -64,7 +64,7 @@ Adobe Campaign 功能帮助您遵守以下法规：
 
 要了解如何创建&#x200B;**访问**&#x200B;和&#x200B;**删除**&#x200B;请求以及 Adobe Campaign 如何处理这些请求，请参阅[实施步骤](../../platform/using/privacy-requests.md)。
 
-<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
+<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=zh-Hans).
 https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html-->
 
 ## 同意、保留和角色 {#consent-retention-roles}

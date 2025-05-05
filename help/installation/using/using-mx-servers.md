@@ -91,4 +91,4 @@ MX规则具有6个不同的吞吐量级别，主要在启动过程中使用：
 * [MX配置](../../installation/using/email-deliverability.md#mx-configuration)
 * [技术电子邮件配置](../../installation/using/email-deliverability.md)
 * [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
-* [Campaign Classic — 技术Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)
+* [Campaign Classic — 技术Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans)

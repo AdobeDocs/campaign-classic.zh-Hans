@@ -94,7 +94,7 @@ ht-degree: 1%
 
 因此，客户端控制台中已禁用这些操作。
 
-操作员的管理集中在Adobe Admin Console中，以下任务现在只能通过此控制台进行管理。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}以了解如何创建用户和分配权限。
+操作员的管理集中在Adobe Admin Console中，以下任务现在只能通过此控制台进行管理。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}以了解如何创建用户和分配权限。
 
 ### 不可用选项 {#unavailable-migration}
 

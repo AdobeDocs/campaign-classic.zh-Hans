@@ -19,7 +19,7 @@ ht-degree: 1%
 
 >[!AVAILABILITY]
 >
->优惠券管理在Campaign v8的企业(FFDA)部署上下文中不可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}以了解详情。
+>优惠券管理在Campaign v8的企业(FFDA)部署上下文中不可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}以了解详情。
 
 优惠券管理依赖于必须安装的包。 要确认您拥有优惠券管理，请选中&#x200B;**[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 

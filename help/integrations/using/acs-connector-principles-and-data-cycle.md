@@ -83,7 +83,7 @@ ACS Connector会定期将以下项目从Campaign Standard复制到Campaign v7：
 
 ACS Connector在Campaign v7和Campaign Standard之间同步隔离。
 
-例如，从Campaign v7复制到Campaign Standard的用户档案包括电子邮件地址。 如果Campaign Standard隔离了电子邮件地址，则数据将在下次同步期间传递到Campaign v7。 有关隔离的详细信息，请参阅[隔离管理](../../delivery/using/understanding-quarantine-management.md)和[Campaign Standard隔离](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html)。
+例如，从Campaign v7复制到Campaign Standard的用户档案包括电子邮件地址。 如果Campaign Standard隔离了电子邮件地址，则数据将在下次同步期间传递到Campaign v7。 有关隔离的详细信息，请参阅[隔离管理](../../delivery/using/understanding-quarantine-management.md)和[Campaign Standard隔离](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=zh-Hans)。
 
 ### 使用已复制的用户档案 {#using-replicated-profiles}
 

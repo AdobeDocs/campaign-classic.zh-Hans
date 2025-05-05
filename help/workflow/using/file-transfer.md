@@ -18,7 +18,7 @@ ht-degree: 1%
 
 
 **文件传输**&#x200B;活动允许您接收或发送文件、测试文件是否存在或列出服务器上的文件。 使用的协议为Azure Blob Storage、Amazon Simple Storage Service (S3)、FTP或SFTP。
-通过S3、Azure Blob Storage或SFTP连接，您还可以将区段数据导入Adobe实时客户数据平台的Adobe Campaign。 有关详细信息，请参阅此[文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
+通过S3、Azure Blob Storage或SFTP连接，您还可以将区段数据导入Adobe实时客户数据平台的Adobe Campaign。 有关详细信息，请参阅此[文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=zh-Hans)。
 
 >[!NOTE]
 >

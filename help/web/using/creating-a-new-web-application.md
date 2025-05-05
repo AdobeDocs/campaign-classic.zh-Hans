@@ -24,7 +24,7 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->始终保护可能包含个人信息的页面。 请参阅[安全和隐私检查清单](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
+>始终保护可能包含个人信息的页面。 请参阅[安全和隐私检查清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#privacy)。
 
 此模板确定Web应用程序的类型。 您可以创建：
 

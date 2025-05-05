@@ -78,7 +78,7 @@ ht-degree: 2%
 
 为了开始这一工作，需要此迁移的帐户将收到Adobe的电子邮件通信，其中提供了时间表和文档访问权限。 这将通知您计划迁移您的帐户。
 
-可以通过[打开新的客户关怀支持票证](https://experienceleague.adobe.com/?support-solution=Campaign#support)来启动迁移。 使用主题行“迁移到AWS”。
+可以通过[打开新的客户关怀支持票证](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)来启动迁移。 使用主题行“迁移到AWS”。
 
 ### 此迁移是否为强制性的？
 

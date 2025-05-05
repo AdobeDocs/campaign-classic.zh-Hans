@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 与Adobe Experience Cloud共享资源{#sharing-assets-with-adobe-experience-cloud}
 
-[Experience CloudAssets](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"}提供单个集中式存储库，其中包含可在解决方案间共享的营销就绪资源。 资产是数字文档、图像、视频或音频文件。
+[Experience CloudAssets](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/audiences/overview){target="_blank"}提供单个集中式存储库，其中包含可在解决方案间共享的营销就绪资源。 资产是数字文档、图像、视频或音频文件。
 
 资源服务包括：
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 在Adobe Campaign中编辑电子邮件投放或登陆页面时，您可以放置Adobe Experience Cloud库中的资源。 根据您使用的解决方案，这些资源可以存储在Assets或Adobe Experience Manager Assets中。
 
-[此文档](https://experienceleague.adobe.com/en/docs/core-services/interface/services/assets/experience-cloud-assets){target="_blank"}中详细介绍了各种可用库。
+[此文档](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/assets/experience-cloud-assets){target="_blank"}中详细介绍了各种可用库。
 
 请参阅[配置对Assets的访问权限](../../integrations/using/configuring-access-to-assets.md)部分，了解有关链接到每个库的详细信息。
 

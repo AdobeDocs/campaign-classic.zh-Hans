@@ -23,7 +23,7 @@ Adobe Campaign API在应用程序内的JavaScript中以及在应用程序外的S
 >[!IMPORTANT]
 >
 >每天授权引擎呼叫数因您的许可合同而异。 有关详细信息，请参见[此页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
->[此专用文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)中提供了所有API的列表，包括其完整说明。
+>[此专用文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)中提供了所有API的列表，包括其完整说明。
 
 ## 先决条件 {#prerequisites}
 

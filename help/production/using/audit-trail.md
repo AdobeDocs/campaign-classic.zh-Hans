@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail)以了解有关审核记录功能的更多信息。
+>请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/audit-trail)以了解有关审核记录功能的更多信息。
 
 在Adobe Campaign中，**[!UICONTROL Audit trail]**&#x200B;可让您访问实例中所做更改的完整历史记录。
 

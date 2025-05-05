@@ -79,7 +79,7 @@ Adobe Campaign提供了一个图形助手(可在Adobe Campaign客户端控制台
 指示以下参数：
 
 * **[!UICONTROL Sender name]** ：输入发件人的名称。
-* **[!UICONTROL Sender address]** ：输入发件人的电子邮件地址。 从Adobe Campaign发送电子邮件时，不会监控&#x200B;**发件人地址**&#x200B;邮箱，因此营销用户无法访问此邮箱。 Adobe Campaign也不提供自动回复或自动转发此邮箱中接收的电子邮件的功能。 请参阅此文档[&#128279;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}以了解有关可投放性最佳实践的更多信息。
+* **[!UICONTROL Sender address]** ：输入发件人的电子邮件地址。 从Adobe Campaign发送电子邮件时，不会监控&#x200B;**发件人地址**&#x200B;邮箱，因此营销用户无法访问此邮箱。 Adobe Campaign也不提供自动回复或自动转发此邮箱中接收的电子邮件的功能。 请参阅此文档[&#128279;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html?lang=zh-Hans){_blank}以了解有关可投放性最佳实践的更多信息。
 
 * **[!UICONTROL Reply address text]** ：输入收件人单击&#x200B;**[!UICONTROL Reply]**&#x200B;按钮时使用的名称。
 * **[!UICONTROL Reply address]** ：输入收件人单击电子邮件客户端软件中的&#x200B;**[!UICONTROL Reply]**&#x200B;按钮时要使用的电子邮件地址。 **回复地址**&#x200B;字段的用途是您希望收件人回复到&#x200B;**发件人地址**&#x200B;以外的其他地址。  此地址必须是有效的电子邮件地址，链接到受监视的邮箱，并由客户托管。  它可以是支持邮箱，例如`customer-care@customer.com`，在其中读取和响应电子邮件。

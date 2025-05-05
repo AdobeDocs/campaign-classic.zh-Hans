@@ -25,7 +25,7 @@ ht-degree: 1%
 ## 先决条件 {#prerequisites}
 
 * 您必须具有Adobe Experience Cloud组织名称和ID。 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hans){_blank}。
-* 您必须在Experience Cloud中添加用户。 有关详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}。
+* 您必须在Experience Cloud中添加用户。 有关详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hans){_blank}。
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 输入以下信息：
 
-* 使用的IMS服务器的连接信息（ID和密码）。 此信息由Adobe客户关怀团队提供。 有关详细信息，请参阅[Adobe Experience Cloud管理员常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html)。
+* 使用的IMS服务器的连接信息（ID和密码）。 此信息由Adobe客户关怀团队提供。 有关详细信息，请参阅[Adobe Experience Cloud管理员常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=zh-Hans)。
 
   必须在&#x200B;**https**&#x200B;中指定&#x200B;**[!UICONTROL Callback server]**&#x200B;地址。 此字段对应于Adobe Campaign实例的访问URL。
 

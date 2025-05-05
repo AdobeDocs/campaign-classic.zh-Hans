@@ -24,7 +24,7 @@ ht-degree: 68%
 参阅我们直观的逐步指南，开始使用 Adobe Campaign。
 
 * [隐私管理](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)：在使用我们的服务时，了解Adobe Campaign Classic可为您提供的隐私合规性方面的帮助。
-* [在电子邮件中集成动态内容](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)：了解 Campaign Classic 和 Target Standard 集成的基本知识。
+* [在电子邮件中集成动态内容](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html?lang=zh-Hans)：了解 Campaign Classic 和 Target Standard 集成的基本知识。
 * [管理可投放性](../../delivery/using/about-deliverability.md)：了解与可投放性相关的概念和最佳实践，以及 Adobe Campaign Classic 提供的工具，从而最佳地发送您的投放内容。
 * [投放最佳实践](../../delivery/using/delivery-best-practices.md)：了解有关使用 Adobe Campaign Classic 设计投放内容并发送内容的最佳实践。
 * [执行构建版升级](https://helpx.adobe.com/cn/campaign/kb/acc-build-upgrade.html)：本指南会显示执行 Campaign Classic 构建版升级的重要步骤和最佳实践。
@@ -52,4 +52,4 @@ ht-degree: 68%
 
 ### Experience League课程
 
-您还可以访问针对Adobe Campaign Classic的[推荐课程](https://experienceleague.adobe.com/#dashboard/learning)：课程是专业策划的课程集合，可帮助您快速获得技能和知识。
+您还可以访问针对Adobe Campaign Classic的[推荐课程](https://experienceleague.adobe.com/zh-hans#dashboard/learning)：课程是专业策划的课程集合，可帮助您快速获得技能和知识。

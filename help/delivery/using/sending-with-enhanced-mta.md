@@ -137,7 +137,7 @@ Campaign不再使用投放中的重试设置。 软退回重试次数以及它�
 ### DKIM签名
 
 DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成。 作为增强MTA升级的一部分，本机Campaign MTA的DKIM签名将在域管理表中关闭。
-有关DKIM的详细信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
+有关DKIM的详细信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication)。
 
 ### 投放成功报告
 

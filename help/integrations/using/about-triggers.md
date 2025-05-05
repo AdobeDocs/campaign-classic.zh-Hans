@@ -28,7 +28,7 @@ ht-degree: 7%
 由于配置很少且没有第三方参与，因此它允许更敏捷的集成。
 它还支持高流量而不影响营销活动的性能。 例如，集成每小时可处理100万个触发器。
 
-![](assets/do-not-localize/book.png)了解如何[创建Experience Cloud触发器](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html)，识别、定义并监视关键客户行为。
+![](assets/do-not-localize/book.png)了解如何[创建Experience Cloud触发器](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=zh-Hans)，识别、定义并监视关键客户行为。
 
 ## [!DNL Triggers]架构 {#triggers-architecture}
 
@@ -43,7 +43,7 @@ ht-degree: 7%
 在开始此实施之前，请检查您是否拥有：
 
 * 有效的&#x200B;**组织标识符**：组织ID是Adobe Experience Cloud中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hans)
-* 您组织的&#x200B;**开发人员访问权限**。 组织的系统管理员需要遵循此页面[&#128279;](https://helpx.adobe.com/enterprise/using/manage-developers.html)中详细的的&#x200B;**将开发人员添加到单个产品配置文件**&#x200B;过程，以便为与触发器关联的Adobe Analytics产品的`Analytics - {tenantID}`产品配置文件提供开发人员访问权限。
+* 您组织的&#x200B;**开发人员访问权限**。 组织的系统管理员需要遵循此页面[&#128279;](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html)中详细的的&#x200B;**将开发人员添加到单个产品配置文件**&#x200B;过程，以便为与触发器关联的Adobe Analytics产品的`Analytics - {tenantID}`产品配置文件提供开发人员访问权限。
 
 ## 实施步骤 {#implement}
 

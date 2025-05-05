@@ -32,4 +32,4 @@ Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具
 
 >[!NOTE]
 >
->要了解有关Adobe Campaign MRM及其使用方法的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}。
+>要了解有关Adobe Campaign MRM及其使用方法的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}。

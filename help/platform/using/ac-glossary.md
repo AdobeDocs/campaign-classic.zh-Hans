@@ -909,7 +909,7 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 
 在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。控制面板允许您对SFTP服务器执行各种操作，如监视存储容量、管理IP地址允许列表和管理公共SSH密钥。
 
-了解有关[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)的更多信息。
+了解有关[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans)的更多信息。
 +++
 
 +++**订阅服务活动**

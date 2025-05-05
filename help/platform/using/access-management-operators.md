@@ -29,7 +29,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->这些步骤仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证，请参阅[此文档](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank)。
+>这些步骤仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证，请参阅[此文档](https://helpx.adobe.com/cn/enterprise/using/manage-users-individually.html#_blank)。
 
 操作员是具有登录和执行操作权限的Adobe Campaign用户。
 

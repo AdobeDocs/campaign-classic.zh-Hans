@@ -24,7 +24,7 @@ ht-degree: 50%
 
 通过Adobe Campaign，您可以与Adobe Experience Cloud服务共享受众和区段。 提供了两个选项：
 
-1. 将Adobe Experience Platform区段数据发送到Adobe Campaign。 要实施此集成，您需要将Real-time Customer Data Platform连接到Campaign (RTCDP)。 [在本节中了解详情](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html){target="_blank"}。
+1. 将Adobe Experience Platform区段数据发送到Adobe Campaign。 要实施此集成，您需要将Real-time Customer Data Platform连接到Campaign (RTCDP)。 [在本节中了解详情](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=zh-Hans){target="_blank"}。
 
 1. 将&#x200B;**Adobe Campaign**&#x200B;与&#x200B;**Experience Cloud受众**&#x200B;或&#x200B;**Adobe Audience Manager**&#x200B;集成。 然后，您将能够：
 

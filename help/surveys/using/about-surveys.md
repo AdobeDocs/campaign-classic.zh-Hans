@@ -18,7 +18,7 @@ Adobe Campaign包括一个用于定义和发布Web应用程序的图形模块。
 
 >[!AVAILABILITY]
 >
->在企业(FFDA)部署的Campaign v8中，调查管理不可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}以了解详情。
+>在企业(FFDA)部署的Campaign v8中，调查管理不可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}以了解详情。
 
 
 可选的&#x200B;**调查**&#x200B;加载项允许您创建新的类型的Web应用程序来创建和管理联机调查表，例如用于添加或修改配置文件信息、订阅或取消订阅信息服务或竞争登录表单的表单。 收集完答案后，它们会存储在数据库中或本地变量中。 数据模型可以通过问卷回答进行动态扩展。 您可以实时查看结果、筛选响应并使用专用图表分析它们。

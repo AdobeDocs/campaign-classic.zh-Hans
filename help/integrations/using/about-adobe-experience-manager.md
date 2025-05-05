@@ -32,4 +32,4 @@ Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe 
 * Adobe Experience Manager **发布**&#x200B;实例。
 * Adobe Campaign实例。
 
-有关详细信息，请参阅[Adobe Experience Manager文档](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)
+有关详细信息，请参阅[Adobe Experience Manager文档](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html?lang=zh-Hans)

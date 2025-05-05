@@ -50,7 +50,7 @@ ht-degree: 0%
 >
 >如果您要将受众从Adobe Analytics导入Adobe Campaign，则需要首先在Audience Manager中共享这些受众。 此过程需要12-24小时，必须将其添加到与Campaign的24-36小时同步中。
 >
->在该特定情况下，受众共享时间范围最长可达60小时。 有关在Audience Manager中共享Adobe Analytics受众的更多信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html){target="_blank"}。
+>在该特定情况下，受众共享时间范围最长可达60小时。 有关在Audience Manager中共享Adobe Analytics受众的更多信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hans){target="_blank"}。
 
 每次同步受众数据时，受众数据都会被完全替换。 只能导入区段。 不支持包含键值对、特征和规则的粒度数据。
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 随后将导出受众。 保存受众活动有两个叫客过渡。 主过渡包含已成功导出的收件人。 额外的过渡包含无法映射为访客ID或声明的ID的收件人。
 
-解决方案之间的同步需要24 - 36个小时。 在此时段后，您将能够找到新受众，并在其他Adobe Experience Cloud解决方案中重复使用它。 有关使用Adobe Campaign共享受众的更多信息，请参阅此[文档](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/create){target="_blank"}。
+解决方案之间的同步需要24 - 36个小时。 在此时段后，您将能够找到新受众，并在其他Adobe Experience Cloud解决方案中重复使用它。 有关使用Adobe Campaign共享受众的更多信息，请参阅此[文档](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/audiences/create){target="_blank"}。
 
 >[!NOTE]
 >

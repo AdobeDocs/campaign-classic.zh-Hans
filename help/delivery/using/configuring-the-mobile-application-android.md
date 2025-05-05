@@ -58,7 +58,7 @@ ht-degree: 10%
 
 ## 配置Android服务 {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [了解如何在视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}中配置Android服务。
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=zh-Hans#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}中配置Android服务。
 
 1. 转到&#x200B;**[!UICONTROL Profiles and Targets > Services and subscriptions]**&#x200B;节点并单击&#x200B;**[!UICONTROL New]**。
 
@@ -147,7 +147,7 @@ ht-degree: 10%
 
 ## 扩展appsubscriptionRcp架构 {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [了解如何在视频中扩展appsubscriptionRcp架构](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频中扩展appsubscriptionRcp架构](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=zh-Hans#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
 您需要扩展&#x200B;**appsubscriptionRcp**，以定义新的附加字段来将应用程序中的参数存储在Campaign数据库中。 例如，这些字段用于个性化。 操作步骤：
 

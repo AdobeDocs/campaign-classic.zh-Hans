@@ -15,7 +15,7 @@ ht-degree: 7%
 
 # 什么是可投放性{#about-deliverability}
 
-通过可投放性，您可以衡量营销活动在到达收件人的收件箱时成功与否，而不会出现退回或标记为垃圾邮件的情况。 [了解可投放性重要的原因](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters)。
+通过可投放性，您可以衡量营销活动在到达收件人的收件箱时成功与否，而不会出现退回或标记为垃圾邮件的情况。 [了解可投放性重要的原因](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=zh-Hans#why-deliverability-matters)。
 
 更准确地说，电子邮件可投放性指一组特征，这些特征决定消息在短时间内通过个人电子邮件地址到达其目的地的能力，以及在内容和格式方面达到预期质量。
 
@@ -25,7 +25,7 @@ ht-degree: 7%
 
 可投放性问题通常与Internet服务提供商和邮件服务器管理员实施的垃圾邮件防护措施有关。
 
-* 有关如何设计成功的电子邮件营销活动的一般建议，请参阅[可投放性策略和定义](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html)。
+* 有关如何设计成功的电子邮件营销活动的一般建议，请参阅[可投放性策略和定义](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=zh-Hans)。
 
 * 有关如何优化Adobe Campaign电子邮件投放能力的更具体建议，Adobe建议使用本节中列出的最佳实践。
 
@@ -40,12 +40,12 @@ ht-degree: 7%
 使用Adobe Campaign时，可投放性比率取决于多种因素，特别是：
 
 * 实例的正确配置：请联系您的Adobe代表寻求帮助。
-* 合法的网络配置：请参阅[域设置和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy)。
-* 您的IP地址信誉：请参阅[IP策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy)。
-* 低[投诉](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html)和[硬退回](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces)率。
+* 合法的网络配置：请参阅[域设置和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#domain-setup-and-strategy)。
+* 您的IP地址信誉：请参阅[IP策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#ip-strategy)。
+* 低[投诉](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html?lang=zh-Hans)和[硬退回](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=zh-Hans#hard-bounces)率。
 * 您的邮件内容：请参阅[控制电子邮件内容](control-message-content.md)。
-* 消息身份验证(SPF、DKIM、DMARC)：请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
-* 发件人信誉：要了解主要ISP如何评估发件人信誉，请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html)。
+* 消息身份验证(SPF、DKIM、DMARC)：请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication)。
+* 发件人信誉：要了解主要ISP如何评估发件人信誉，请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html?lang=zh-Hans)。
 
 ## Campaign投放工具 {#deliverability-tools}
 
@@ -67,7 +67,7 @@ Adobe Campaign提供了多种工具来跟踪和改进平台的可投放性性能
 
 有关此内容的更多信息，请参阅[使用双重选择加入创建订阅表单](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in)。
 
-有关从客户收集数据时的最佳实践的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene)。
+有关从客户收集数据时的最佳实践的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html?lang=zh-Hans#data-quality-and-hygiene)。
 
 ### 利用隔离管理
 

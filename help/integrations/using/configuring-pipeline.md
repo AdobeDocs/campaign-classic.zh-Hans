@@ -28,7 +28,7 @@ ht-degree: 1%
 在开始此配置之前，请检查您是否拥有：
 
 * Adobe Developer项目
-* 有效的组织ID — 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* 有效的组织ID — 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * 具有组织访问权限的开发人员
 * Adobe Analytics中的有效触发器配置
 

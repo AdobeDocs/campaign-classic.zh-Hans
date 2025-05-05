@@ -157,7 +157,7 @@ Adobe Campaign 提供其他功能来促使您作为数据控制者为特定隐�
 * **会话** Cookie：**nlid** Cookie 包含发送到联系人的电子邮件的标识符 (**broadlogId**)，以及消息模板的标识符 (**deliveryId**)。联系人单击由 Adobe Campaign 发送的电子邮件中包含的 URL 后即可添加标识符，让您能够跟踪他们在网络上的行为。关闭浏览器时，将自动擦除会话 Cookie。联系人可以将浏览器配置为拒绝 Cookie。
 
 * 两种&#x200B;**永久** Cookie：
-   * **UUID**（通用唯一标识符）Cookie 在 Adobe Experience Cloud 解决方案之间共享。它仅会被设置一次并直到生成新值时才从客户端浏览器中消失。通过使用这种 Cookie，您可以识别访问网站时与 Experience Cloud 解决方案发生交互的用户。它可以通过登陆页（将未知客户活动关联到收件人）或投放进行存放。这种 Cookie 的说明可在[此页面](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html#ec-cookies)中找到。
+   * **UUID**（通用唯一标识符）Cookie 在 Adobe Experience Cloud 解决方案之间共享。它仅会被设置一次并直到生成新值时才从客户端浏览器中消失。通过使用这种 Cookie，您可以识别访问网站时与 Experience Cloud 解决方案发生交互的用户。它可以通过登陆页（将未知客户活动关联到收件人）或投放进行存放。这种 Cookie 的说明可在[此页面](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=zh-Hans#ec-cookies)中找到。
    * **nllastdelid** Cookie（在 Campaign Classic 20.3 中引入）是永久 Cookie，包含用户在其中单击了链接的上一次投放的 **deliveryId**。当缺失会话 Cookie 时，会使用此 Cookie 来标识将使用的跟踪表。
 
 《通用数据保护条例》(GDPR) 等法规规定，公司在安装任何 Cookie 之前必须获得网站用户的同意。

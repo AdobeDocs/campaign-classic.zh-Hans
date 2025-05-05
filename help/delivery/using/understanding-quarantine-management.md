@@ -104,7 +104,7 @@ Adobe Campaign根据投放失败类型和错误消息鉴别期间分配的原因
 * **硬错误**：相应的电子邮件地址会立即添加到隔离。
 * **软错误**：软错误不会立即将地址添加到隔离，但会增加错误计数。有关此内容的详细信息，请参阅[软错误管理](#soft-error-management)。
 
-如果用户将电子邮件标记为垃圾邮件（[反馈循环](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)），则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅适用于地址，用户档案不在阻止列表上，因此用户可继续接收短信和推送通知。
+如果用户将电子邮件标记为垃圾邮件（[反馈循环](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#feedback-loops)），则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅适用于地址，用户档案不在阻止列表上，因此用户可继续接收短信和推送通知。
 
 >[!NOTE]
 >

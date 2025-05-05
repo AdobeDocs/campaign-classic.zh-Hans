@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->要了解如何在Adobe Campaign中管理和自定义列表，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}。
+>要了解如何在Adobe Campaign中管理和自定义列表，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}。
 
 <!--
 ## Count records {#counting-records}

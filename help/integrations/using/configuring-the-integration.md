@@ -28,7 +28,7 @@ ht-degree: 2%
 1. [配置外部帐户](#configure-the-external-account)
 1. [配置AEM资源筛选](#configure-aem-resources-filtering)
 
-用于高级配置，例如管理个性化字段和块。 请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html)。
+用于高级配置，例如管理个性化字段和块。 请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/cn/experience-manager/6-5/sites/administering/using/campaignonpremise.html)。
 
 ### 在Adobe Campaign中安装AEM集成包 {#install-the-aem-integration-package-in-adobe-campaign}
 
@@ -119,12 +119,12 @@ ht-degree: 2%
 
 1. 将&#x200B;**replication**&#x200B;配置为从AEM创作实例复制到AEM发布实例。
 
-   要了解如何配置复制，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html)。
+   要了解如何配置复制，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/cn/experience-manager/6-5/sites/deploying/using/replication.html)。
 
 1. 通过配置专用的&#x200B;**Cloud Service**&#x200B;将Adobe Experience Manager连接到Adobe Campaign。
 
-   要了解如何通过Cloud Service连接两个解决方案，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
+   要了解如何通过Cloud Service连接两个解决方案，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/cn/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
 
 1. 配置&#x200B;**外部化器服务**。
 
-   要了解如何配置它，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html)。
+   要了解如何配置它，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/cn/experience-manager/6-5/sites/developing/using/externalizer.html)。

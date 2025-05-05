@@ -73,7 +73,7 @@ ht-degree: 8%
 
 ## AdobeIdentity Management System (IMS)更新
 
-Adobe标识服务(IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet Explorer版本**。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+Adobe标识服务(IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet Explorer版本**。 [了解详情](https://helpx.adobe.com/cn/x-productkb/global/update-operating-system-and-browser.html)。
 
 需要升级Campaign客户端控制台，以确保与Adobe IMS兼容。
 

@@ -14,4 +14,4 @@ ht-degree: 8%
 
 # 投放最佳实践 {#delivery-best-practices}
 
-有关使用Adobe Campaign进行投放设计和发送的最佳实践，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}。
+有关使用Adobe Campaign进行投放设计和发送的最佳实践，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}。

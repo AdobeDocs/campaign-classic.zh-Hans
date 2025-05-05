@@ -35,4 +35,4 @@ Adobe Analytics Connector 允许 Adobe Campaign 和 Adobe Analytics 通过 **[!U
 
 要启用此集成，必须创建您的Adobe技术帐户，如[此页面](oauth-technical-account.md)中所详述。
 
-请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}以了解如何使用Adobe Campaign和Adobe Analytics。
+请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}以了解如何使用Adobe Campaign和Adobe Analytics。
