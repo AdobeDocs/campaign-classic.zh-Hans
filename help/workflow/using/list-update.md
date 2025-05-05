@@ -73,6 +73,6 @@ ht-degree: 3%
 
 本视频说明如何从资源管理器创建收件人列表。
 
->[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/27505?captions=chi_hans)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

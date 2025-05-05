@@ -173,6 +173,6 @@ Adobe建议取消选择选项&#x200B;**[!UICONTROL No longer ask this question]*
 
 本视频说明如何安装和设置Adobe Campaign客户端。
 
->[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/38266?quality=12&captions=chi_hans)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

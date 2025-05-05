@@ -91,6 +91,6 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 
 此视频介绍Campaign Classic的主要特性和功能。
 
->[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/39518?quality=12&captions=chi_hans)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。

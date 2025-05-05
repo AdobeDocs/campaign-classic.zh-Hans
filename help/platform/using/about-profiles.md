@@ -109,7 +109,7 @@ Adobe Campaign资源管理器的常规布局显示在[此页面](../../platform/
 
 此视频还介绍了Adobe Campaign Classic对《一般数据保护条例》的合规性。
 
->[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/326753?quality=12&captions=chi_hans)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。
 
