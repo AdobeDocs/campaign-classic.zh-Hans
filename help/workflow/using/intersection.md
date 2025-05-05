@@ -19,7 +19,7 @@ ht-degree: 13%
 >id="ac_workflow_intersection"
 >title="交集活动"
 >abstract="交集类型活动从收到的目标的交集创建目标。交集允许您仅提取所有入站活动结果共有的群体。"
->additional-url="https://video.tv.adobe.com/v/329373" text="观看演示视频"
+>additional-url="https://video.tv.adobe.com/v/341363?captions=chi_hans" text="观看演示视频"
 
 
 
