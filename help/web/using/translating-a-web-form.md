@@ -52,7 +52,7 @@ Adobe Campaign包含用于翻译和管理多语言翻译的工具。 通过此�
 
 首次打开此选项卡时，它将不包含任何数据。 单击&#x200B;**[!UICONTROL Collect the strings to translate]**&#x200B;链接以更新Web应用程序中的字符串。
 
-Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200B;选项卡中定义的字段和字符串的标签：HTML块、Javascript等。 静态元素在Web窗体](static-elements-in-a-web-form.md)的[静态元素中详细。
+Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200B;选项卡中定义的字段和字符串的标签：HTML块、Javascript等。 静态元素在Web窗体[&#128279;](static-elements-in-a-web-form.md)的静态元素中详细。
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 

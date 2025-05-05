@@ -21,7 +21,7 @@ ht-degree: 5%
 
 要在Adobe Campaign中发送推送通知，您需要：
 
-* 为Neotrips移动应用程序创建&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型信息服务。 请参阅iOS](configuring-the-mobile-application.md#configuring-ios-service)的[此部分。 和[Android](configuring-the-mobile-application-android.md#configuring-android-service)的此分区。
+* 为Neotrips移动应用程序创建&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型信息服务。 请参阅iOS[&#128279;](configuring-the-mobile-application.md#configuring-ios-service)的此部分。 和[Android](configuring-the-mobile-application-android.md#configuring-android-service)的此分区。
 * 将应用程序的iOS和Android版本添加到此服务。
 * 为[iOS](create-notifications-ios.md)和[Android](create-notifications-android.md)创建投放。
 

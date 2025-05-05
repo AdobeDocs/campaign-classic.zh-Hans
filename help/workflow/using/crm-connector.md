@@ -33,4 +33,4 @@ ht-degree: 10%
 
 ![](assets/crm_task_select_obj.png)
 
-此活动的配置取决于执行的流程。 本页](../../platform/using/crm-data-sync.md)中详细介绍了[的各种配置。
+此活动的配置取决于执行的流程。 本页[&#128279;](../../platform/using/crm-data-sync.md)中详细介绍了的各种配置。

@@ -27,7 +27,7 @@ ht-degree: 2%
    * 启动工作流，
    * 验证进程等。
 
-     请参阅JavaScript](../../configuration/using/soap-methods-in-javascript.md)中的[SOAP方法。
+     请参阅JavaScript[&#128279;](../../configuration/using/soap-methods-in-javascript.md)中的SOAP方法。
 
 * 内容管理
 * 订阅管理，请参阅[订阅(nms：subscription)](#subscribe--nms-subscription-)和[取消订阅(nms：subscription)](#unsubscribe--nms-subscription-)。
@@ -62,7 +62,7 @@ ht-degree: 2%
 </method>
 ```
 
-必须通过XML文档的`<recipient>`元素上的_**key**&#x200B;属性输入协调键的定义。 此属性的内容是以逗号分隔的XPath列表。
+必须通过XML文档的`<recipient>`元素上的_&#x200B;**key**&#x200B;属性输入协调键的定义。 此属性的内容是以逗号分隔的XPath列表。
 
 此调用不会返回任何数据，错误除外。
 

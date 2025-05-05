@@ -39,7 +39,7 @@ Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md)中详细介�
 
 ### 实施步骤 {#crm-implementation-steps}
 
-在本节](../../platform/using/crm-ms-dynamics.md)中了解连接Campaign和Microsoft Dynamics [的分步过程
+在本节[&#128279;](../../platform/using/crm-ms-dynamics.md)中了解连接Campaign和Microsoft Dynamics 的分步过程
 
 
-在本节](../../platform/using/crm-sfdc.md)中了解连接Campaign和Salesforce [的分步过程
+在本节[&#128279;](../../platform/using/crm-sfdc.md)中了解连接Campaign和Salesforce 的分步过程

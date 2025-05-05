@@ -61,7 +61,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 * 德语
 * 日语
 
-您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关更多信息，请参阅此](../../platform/using/adobe-campaign-workspace.md#date-and-time)章节[。
+您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关更多信息，请参阅此[&#128279;](../../platform/using/adobe-campaign-workspace.md#date-and-time)章节。
 
 有关如何创建实例的详细信息，请参阅此[页面](../../installation/using/creating-an-instance-and-logging-on.md)。
 

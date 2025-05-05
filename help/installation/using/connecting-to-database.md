@@ -34,7 +34,7 @@ ht-degree: 0%
 1. 单击&#x200B;**[!UICONTROL New]**&#x200B;按钮并选择&#x200B;**[!UICONTROL External database]**&#x200B;类型。
 1. 定义外部数据库的&#x200B;**[!UICONTROL Connection]**&#x200B;参数。
 
-   对于与&#x200B;**ODBC**&#x200B;类型数据库的连接，**[!UICONTROL Server]**&#x200B;字段必须包含ODBC数据源的名称，而不是服务器名称。 此外，根据所使用的数据库，可能还需要某些其他配置。 请参阅按数据库类型](../../installation/using/configure-fda.md)列出的[特定配置部分。
+   对于与&#x200B;**ODBC**&#x200B;类型数据库的连接，**[!UICONTROL Server]**&#x200B;字段必须包含ODBC数据源的名称，而不是服务器名称。 此外，根据所使用的数据库，可能还需要某些其他配置。 请参阅按数据库类型[&#128279;](../../installation/using/configure-fda.md)列出的特定配置部分。
 
 1. 输入参数后，单击&#x200B;**[!UICONTROL Test the connection]**&#x200B;按钮以批准它们。
 

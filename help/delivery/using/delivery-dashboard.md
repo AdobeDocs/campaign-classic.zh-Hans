@@ -120,7 +120,7 @@ ht-degree: 5%
 
 * 如果您的投放计数器不是最新中间源部署，请检查&#x200B;**[!UICONTROL Mid-Sourcing (Delivery counters)]**&#x200B;技术工作流是否正在运行。 有关详细信息，请参见此 [ 页面](../../installation/using/mid-sourcing-deployment.md)。
 
-您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此](../../reporting/using/delivery-reports.md)章节[。
+您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此[&#128279;](../../reporting/using/delivery-reports.md)章节。
 
 ## 用例：将发件人的IP地址添加到日志 {#use-case}
 

@@ -540,7 +540,7 @@ Adobe Campaign的整体配置在&#x200B;**serverConf.xml**&#x200B;文件中定�
 
 >[!NOTE]
 >
->**nameSevers**上的注释：默认情况下，使用网络
+>**nameSevers**&#x200B;上的注释：默认情况下，使用网络
 >在Windows中声明的第一个网络接口的参数
 >未在UNIX中定义。 定义域名服务器(DNS)
 >由MTA用来获取为声明的邮件交换器
@@ -1625,9 +1625,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> statServerAddress<br /> </td> 
    <td> 投放统计服务器的地址，以 
     &lt;dns或ip&gt; 
-      <code>[</code>： 
+      <code>&lbrack;</code>： 
      &lt;端口&gt; 
-       <code>]</code>。 请参阅 
+       <code>&rbrack;</code>。 请参阅 
       统计服务器</a>的<a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">坐标。 
       <br /> 
      </td> 

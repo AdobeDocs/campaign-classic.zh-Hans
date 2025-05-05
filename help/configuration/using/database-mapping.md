@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 数据库映射{#database-mapping}
 
-此页面](schema-structure.md)中描述的示例架构[的SQL映射生成以下XML文档：
+此页面[&#128279;](schema-structure.md)中描述的示例架构的SQL映射生成以下XML文档：
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">

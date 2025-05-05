@@ -48,7 +48,7 @@ ht-degree: 0%
 1. 在&#x200B;**[!UICONTROL Target type]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Subscribers of an Android mobile application]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
 
 1. 在&#x200B;**[!UICONTROL Service]**&#x200B;下拉列表中，选择您之前创建的服务，然后选择应用程序，并单击&#x200B;**[!UICONTROL Finish]**。
-根据配置步骤中添加的内容，自动添加**[!UICONTROL Application variables]**。
+根据配置步骤中添加的内容，自动添加&#x200B;**[!UICONTROL Application variables]**。
 
    ![](assets/nmac_android_6.png)
 

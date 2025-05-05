@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# 在Apple中断{#update-bounce-qualification.md}后更新不正确的硬退回
+# 在Apple中断后更新不正确的硬退回{#update-bounce-qualification.md}
 
 ## 上下文
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 作为专家级用户，您可以在资源管理器树中添加文件夹并对其进行自定义。
 
-在本节](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)中了解有关Campaign浏览器和导航层次结构[的更多信息。
+在本节[&#128279;](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)中了解有关Campaign浏览器和导航层次结构的更多信息。
 
 导航列表使用的文件夹类型在遵循&#x200B;**xtk：navtree**&#x200B;架构语法的XML文档中进行了说明。
 

@@ -64,7 +64,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >将&#x200B;**`<instance-name>`**替换为您的实例名称（生产、开发等）。 实例名称通过配置文件进行标识：
+   >将&#x200B;**`<instance-name>`**&#x200B;替换为您的实例名称（生产、开发等）。 实例名称通过配置文件进行标识：
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    有关如何重新启动模块的详细信息，请参阅[此部分](../../production/using/usual-commands.md#module-launch-commands)。
@@ -109,7 +109,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >将&#x200B;**`<instance-name>`**替换为您的实例名称（生产、开发等）。 实例名称通过配置文件进行标识：
+   >将&#x200B;**`<instance-name>`**&#x200B;替换为您的实例名称（生产、开发等）。 实例名称通过配置文件进行标识：
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    有关如何重新启动模块的详细信息，请参阅[此部分](../../production/using/usual-commands.md#module-launch-commands)。

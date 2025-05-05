@@ -31,7 +31,7 @@ ht-degree: 3%
 1. 如果要订阅或取消订阅选定信息服务的指定群体，请单击&#x200B;**[!UICONTROL Subscription]**&#x200B;或&#x200B;**[!UICONTROL Unsubscription]**。
 1. 选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;以通知收件人已订阅或取消订阅服务。
 
-   在与信息服务相关的投放模板中指定此消息的内容。 有关更多信息，请参阅此](../../delivery/using/managing-subscriptions.md)章节[。
+   在与信息服务相关的投放模板中指定此消息的内容。 有关更多信息，请参阅此[&#128279;](../../delivery/using/managing-subscriptions.md)章节。
 
 ## 示例：为新闻稿订阅收件人列表 {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 

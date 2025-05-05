@@ -150,7 +150,7 @@ Adobe Campaign支持版本9.6中所有版本的PostgreSQL客户端库： **libpq
 
 ### Oracle {#oracle}
 
-检索 64 位 Debian 的库版本，即：libclntsh.so、libclntsh.so.19.1 **、** libclntsh.so.18.1 **、** libclntsh.so.12.1 **、** libclntsh.so.11.1 **或** libclntsh.so.10.1 **。******
+检索 64 位 Debian 的库版本，即：libclntsh.so、libclntsh.so.19.1 **、** libclntsh.so.18.1 **、** libclntsh.so.12.1 **、** libclntsh.so.11.1 **或** libclntsh.so.10.1 **。**&#x200B;**&#x200B;**
 
 您可以从 Oracle 技术网络获取 Linux RPM 软件包。
 
@@ -168,7 +168,7 @@ Adobe Campaign支持版本9.6中所有版本的PostgreSQL客户端库： **libpq
 
    在使用 Oracle 即时客户端版本时发现了各种问题。 此外，无法在即时客户端上更改时区文件。
 
-1. 确保&#x200B;**客户端版本**&#x200B;和&#x200B;**数据库服务器版本**&#x200B;相同&#x200B;****。
+1. 确保&#x200B;**客户端版本**&#x200B;和&#x200B;**数据库服务器版本**&#x200B;相同&#x200B;**&#x200B;**。
 
    尽管Oracle的兼容性列表和调整客户端和服务器版本的建议都存在混用版本的情况，但已知会导致问题。
 

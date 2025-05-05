@@ -97,7 +97,7 @@ ht-degree: 8%
 
    >[!WARNING]
    >
-   >分配&#x200B;**[!UICONTROL Internal name]**时，请确保遵循指定的命名约定：
+   >分配&#x200B;**[!UICONTROL Internal name]**&#x200B;时，请确保遵循指定的命名约定：
    > </br>`SMS Operator Name_Internal Name of the Marketing SMS external account`
 
    ![](assets/mid_external_account_6.png)

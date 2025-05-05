@@ -19,7 +19,7 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 
 本页显示托管(Managed Services)部署与内部部署之间的主要差异。 混合部署的具体情况取决于Adobe托管并在您的场所中托管的元素。
 
-在此部分](../../installation/using/hosting-models.md)中引入了不同的托管模型[。
+在此部分[&#128279;](../../installation/using/hosting-models.md)中引入了不同的托管模型。
 
 ## 每个部署模型的可用性 {#capability-matrix}
 

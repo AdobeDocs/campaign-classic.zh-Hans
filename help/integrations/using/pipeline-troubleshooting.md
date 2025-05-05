@@ -27,8 +27,8 @@ ht-degree: 0%
 
 **管道化失败，出现“ aurait du commencer par `[` ou `{` (iRc=16384)”**
 
-未设置&#x200B;**NmsPipeline_Config**选项。 这实际上是一个JSON解析错误。
-在选项**NmsPipeline_Config**&#x200B;中设置JSON配置。 请参阅本页的“路由选项”。
+未设置&#x200B;**NmsPipeline_Config**&#x200B;选项。 这实际上是一个JSON解析错误。
+在选项&#x200B;**NmsPipeline_Config**&#x200B;中设置JSON配置。 请参阅本页的“路由选项”。
 
 **管道化失败，原因是“主题必须是有效的组织或客户端”**
 

@@ -17,7 +17,7 @@ ht-degree: 2%
 
 个性化块是动态的、个性化的，并包含您可以插入到投放中的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。 请参阅[插入个性化块](#inserting-personalization-blocks)。
 
-![](assets/do-not-localize/how-to-video.png)在视频](#personalization-blocks-video)中发现此功能[
+![](assets/do-not-localize/how-to-video.png)在视频[&#128279;](#personalization-blocks-video)中发现此功能
 
 通过Adobe Campaign资源管理器的&#x200B;**[!UICONTROL Resources > Campaign Management > Personalization blocks]**&#x200B;节点访问个性化块。 默认情况下，有多个块可用（请参阅[现成的个性化块](#out-of-the-box-personalization-blocks)）。
 

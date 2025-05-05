@@ -50,8 +50,8 @@ Adobe Campaign可以使用两个级别的日志进行操作：
    >[!NOTE]
    >
    >如果您使用&#x200B;**tracefilter：&#42;**，则会激活所有日志类型：ncm、rdr、nms、jst、timing、wdbc、ldap、soap、xtk、xtkquery、session、xtkwriter、network、pop3、inmail\
-   最有用的日志类型是： **wdbc** （显示所有SQL查询）、**soap** (显示所有SOAP调用)、**ldap** （在验证后显示所有LDAP查询）、**xtkquery** （显示所有querydef的列表）。\
-   您可以单独使用它们（例如&#x200B;**tracefilter：soap，wdbc**）。 您还可以全部激活它们，并选择排除某些其他项： **-tracefilter：&#42;，！soap**
+   >最有用的日志类型是： **wdbc** （显示所有SQL查询）、**soap** (显示所有SOAP调用)、**ldap** （在验证后显示所有LDAP查询）、**xtkquery** （显示所有querydef的列表）。\
+   >您可以单独使用它们（例如&#x200B;**tracefilter：soap，wdbc**）。 您还可以全部激活它们，并选择排除某些其他项： **-tracefilter：&#42;，！soap**
 
    检查是否确实发生了错误，然后以正常方式重新启动该过程：
 
@@ -61,7 +61,7 @@ Adobe Campaign可以使用两个级别的日志进行操作：
 
 >[!IMPORTANT]
 >
-这些命令的日志存储在模块的日志文件中。
+>这些命令的日志存储在模块的日志文件中。
 
 以下是特定于Web模块的示例。 其它模块按上述方式运行。
 
@@ -85,12 +85,12 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 
 >[!NOTE]
 >
-**跟踪文件**&#x200B;模式允许您保存日志。 在上述示例中，日志保存在&#x200B;**var/`<instance-name>`/mta_debug.log**&#x200B;和&#x200B;**var/default/web_debug.log**&#x200B;文件中。
+>**跟踪文件**&#x200B;模式允许您保存日志。 在上述示例中，日志保存在&#x200B;**var/`<instance-name>`/mta_debug.log**&#x200B;和&#x200B;**var/default/web_debug.log**&#x200B;文件中。
 
 >[!IMPORTANT]
 >
-在Windows中，不要添加LD_PRELOAD选项。 以下命令就足够了：\
-nlserver web -tomcat -verbose -tracefilter：&#42;
+>在Windows中，不要添加LD_PRELOAD选项。 以下命令就足够了：\
+>nlserver web -tomcat -verbose -tracefilter：&#42;
 
 检查问题是否再次出现，然后重新启动模块：
 

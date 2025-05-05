@@ -92,7 +92,7 @@ XML文档必须以&#x200B;**`<package>`**&#x200B;元素开始和结束。 后续
 可通过三种不同的方式导出资源包：
 
 * **[!UICONTROL Package Export Assistant]**&#x200B;允许您导出单个包中的一组对象。 有关详细信息，请参阅[导出包中的一组对象](#exporting-a-set-of-objects-in-a-package)
-* 通过右键单击单个对象&#x200B;**并选择&#x200B;**[!UICONTROL Actions > Export in a package]**，可以直接将其导出到包中。**
+* 通过右键单击单个对象&#x200B;**并选择&#x200B;**&#x200B;[!UICONTROL Actions > Export in a package]&#x200B;**，可以直接将其导出到包中。**
 * **包定义**&#x200B;允许您创建包结构，在其中添加稍后将在包中导出的对象。 有关详细信息，请参阅[管理包定义](#managing-package-definitions)
 
 导出资源包后，您将能够将其和所有添加的实体导入到另一个Campaign实例中。
@@ -442,6 +442,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
    * 已创建外部帐户。
    * 新包为： 5101 - 2 — 社交应用程序外部帐户(socialApplication_extAccount)。
    * 同时，101包将更新以添加到外部帐户，但未部署。
+
      ![](assets/ncs_datapackage_best-practices-1.png)
 
 #### 包文档 {#package-documentation}

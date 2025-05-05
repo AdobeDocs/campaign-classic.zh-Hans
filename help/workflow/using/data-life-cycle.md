@@ -39,7 +39,7 @@ ht-degree: 5%
 
   利用此菜单，可访问描述性分析助手，该助手可让您生成有关过渡数据的统计和报告。
 
-  有关更多信息，请参阅此](../../reporting/using/using-the-descriptive-analysis-wizard.md)章节[。
+  有关更多信息，请参阅此[&#128279;](../../reporting/using/using-the-descriptive-analysis-wizard.md)章节。
 
 在执行工作流时清除目标数据。 只能访问最后一个工作表。 您可以配置工作流以使所有工作表保持可访问状态：选中工作流属性中的&#x200B;**[!UICONTROL Keep the result of interim populations between two executions]**&#x200B;选项。
 
@@ -59,7 +59,7 @@ ht-degree: 5%
 
 **[!UICONTROL Target extension]** (targetData)类型个性化元素不可用于定位工作流。 必须在工作流中构建投放目标，并在投放的集客过渡中指定。
 
-如果要创建投放验证，则需要基于&#x200B;**[!UICONTROL Address substitution]**&#x200B;模式构建验证目标，以便输入个性化数据。 有关更多信息，请参阅此](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof)章节[。
+如果要创建投放验证，则需要基于&#x200B;**[!UICONTROL Address substitution]**&#x200B;模式构建验证目标，以便输入个性化数据。 有关更多信息，请参阅此[&#128279;](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof)章节。
 
 在以下示例中，我们将收集客户信息列表，以便在个性化电子邮件中使用。
 

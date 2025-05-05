@@ -73,7 +73,7 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 >
 >第1年年末： (1&#42;0.33)/(1+0.5)=22%。
 >
-第2年年末：((1.22&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
+>第2年年末：((1.22&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
 
 ### 在投放报告中确定隔离的地址 {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -108,7 +108,7 @@ Adobe Campaign根据投放失败类型和错误消息鉴别期间分配的原因
 
 >[!NOTE]
 >
-Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式导入电子邮件地址，这样以后就不会重新定向这些地址。
+>Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式导入电子邮件地址，这样以后就不会重新定向这些地址。
 
 在隔离地址列表中（请参阅[确定整个平台的隔离地址](#identifying-quarantined-addresses-for-the-entire-platform)），**[!UICONTROL Error reason]**&#x200B;字段指示将选定地址置于隔离状态的原因。
 
@@ -125,7 +125,7 @@ Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式�
 
 对于托管或混合安装，如果您已升级到[增强型MTA](sending-with-enhanced-mta.md)，则在&#x200B;**[!UICONTROL Erroneous]**&#x200B;状态的情况下要执行的最大重试次数和重试之间的最小延迟现在取决于IP在给定域名的历史和当前表现如何。
 
-对于使用旧版Campaign MTA的内部部署和托管/混合安装，您可以修改错误数以及两个错误之间的时间间隔。 为此，请更改[部署向导](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或投放级别](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)的[中的相应设置。
+对于使用旧版Campaign MTA的内部部署和托管/混合安装，您可以修改错误数以及两个错误之间的时间间隔。 为此，请更改[部署向导](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或投放级别[&#128279;](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)的中的相应设置。
 
 
 ## 从隔离中删除地址 {#removing-a-quarantined-address}
@@ -144,7 +144,7 @@ Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式�
 
 >[!IMPORTANT]
 >
-不会移除地址处于&#x200B;**[!UICONTROL Quarantine]**&#x200B;或&#x200B;**[!UICONTROL Denylisted]**&#x200B;状态的收件人，即使他们收到电子邮件也是如此。
+>不会移除地址处于&#x200B;**[!UICONTROL Quarantine]**&#x200B;或&#x200B;**[!UICONTROL Denylisted]**&#x200B;状态的收件人，即使他们收到电子邮件也是如此。
 
 ### 手动更新 {#unquarantine-manual}
 
@@ -291,13 +291,13 @@ HTTP/V2协议允许直接反馈每个推送投放的状态。 如果使用HTTP/V
 
 >[!NOTE]
 >
-对于使用百度连接器的客户，以下是不同类型的错误：
+>对于使用百度连接器的客户，以下是不同类型的错误：
 >
-* 投放开始时的连接问题：失败类型&#x200B;**[!UICONTROL Undefined]**，失败原因&#x200B;**[!UICONTROL Unreachable]**，已执行重试。
-* 传递期间连接丢失：软错误，失败原因&#x200B;**[!UICONTROL Refused]**，执行重试。
-* 百度在发送期间返回的同步错误：硬错误，失败原因&#x200B;**[!UICONTROL Refused]**，不执行重试。
+>* 投放开始时的连接问题：失败类型&#x200B;**[!UICONTROL Undefined]**，失败原因&#x200B;**[!UICONTROL Unreachable]**，已执行重试。
+>* 传递期间连接丢失：软错误，失败原因&#x200B;**[!UICONTROL Refused]**，执行重试。
+>* 百度在发送期间返回的同步错误：硬错误，失败原因&#x200B;**[!UICONTROL Refused]**，不执行重试。
 >
-Adobe Campaign每10分钟联系百度服务器以检索发送消息的状态，并更新broadlog。 如果消息被声明为已发送，则broadlogs中该消息的状态将设置为&#x200B;**[!UICONTROL Received]**。 如果百度声明错误，则状态设置为&#x200B;**[!UICONTROL Failed]**。
+>Adobe Campaign每10分钟联系百度服务器以检索发送消息的状态，并更新broadlog。 如果消息被声明为已发送，则broadlogs中该消息的状态将设置为&#x200B;**[!UICONTROL Received]**。 如果百度声明错误，则状态设置为&#x200B;**[!UICONTROL Failed]**。
 
 用于Android V2 **的**
 
@@ -516,7 +516,7 @@ SMS消息的隔离机制在全局上与常规流程相同。 请参阅[关于隔
 
 >[!NOTE]
 >
-**[!UICONTROL Delivery log qualification]**&#x200B;表不适用于&#x200B;**扩展通用SMPP**&#x200B;连接器。
+>**[!UICONTROL Delivery log qualification]**&#x200B;表不适用于&#x200B;**扩展通用SMPP**&#x200B;连接器。
 
 <table> 
  <tbody> 
@@ -565,7 +565,7 @@ SMS消息的隔离机制在全局上与常规流程相同。 请参阅[关于隔
  </tbody> 
 </table>
 
-扩展通用SMPP连接器的&#x200B;****
+扩展通用SMPP连接器的&#x200B;**&#x200B;**
 
 使用SMPP协议发送短信消息时，错误管理的处理方式不同。 有关扩展通用SMPP连接器的详细信息，请参阅[此页面](sms-set-up.md#creating-an-smpp-external-account)。
 
@@ -575,9 +575,9 @@ SMPP连接器从使用正则表达式（正则表达式）返回的SR（状态�
 
 >[!NOTE]
 >
-失败类型和失败原因与电子邮件相同。 请参阅[投放失败类型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
+>失败类型和失败原因与电子邮件相同。 请参阅[投放失败类型和原因](understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
 >
-请向您的提供商索取状态和错误代码列表，以便在投放日志资格表中设置正确的失败类型和失败原因。
+>请向您的提供商索取状态和错误代码列表，以便在投放日志资格表中设置正确的失败类型和失败原因。
 
 生成的消息示例：
 

@@ -33,7 +33,7 @@ ht-degree: 5%
    * 浏览数据库中的数据并定义测量。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。
    * 向现有报告添加指标。 可在[此小节](../../reporting/using/about-reports-creation-in-campaign.md)中了解详情。
    * 查看数据库中的数据。 可在[此小节](../../reporting/using/about-descriptive-analysis.md)中了解详情。
-   * 创建新的投放报告。 在本节](../../reporting/using/about-reports-creation-in-campaign.md)中了解更多[，
+   * 创建新的投放报告。 在本节[&#128279;](../../reporting/using/about-reports-creation-in-campaign.md)中了解更多，
    * 从Adobe Campaign数据库导出数据(通过工作流，请参阅[此部分](../../workflow/using/about-workflows.md)
    * 创建数据透视表。 可在[此小节](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)中了解详情。
    * 浏览汇总的数据。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。

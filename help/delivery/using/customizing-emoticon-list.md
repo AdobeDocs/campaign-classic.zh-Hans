@@ -60,7 +60,7 @@ ht-degree: 3%
 
 1. 您的新表情符号现已添加到&#x200B;**[!UICONTROL Insert emoticon list]**&#x200B;现成枚举。 您可以随时更改其&#x200B;**[!UICONTROL Display order]**，如果不再需要它，可将其移至商店。
 
-1. 要考虑您的更改，请断开连接，然后重新与Adobe Campaign Classic连接。 如果新的表情符号仍未出现在&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中，您可能需要清除缓存。 有关更多信息，请参阅此](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)章节[。
+1. 要考虑您的更改，请断开连接，然后重新与Adobe Campaign Classic连接。 如果新的表情符号仍未出现在&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中，您可能需要清除缓存。 有关更多信息，请参阅此[&#128279;](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)章节。
 
 1. 现在，您可以在投放的第61个位置的&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中找到新表情符号，如前面的步骤中所配置。 有关如何在投放中使用表情符号的更多信息，请参阅此[页面](defining-the-email-content.md#inserting-emoticons)。
 

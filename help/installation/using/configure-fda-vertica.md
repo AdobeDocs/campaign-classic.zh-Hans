@@ -81,7 +81,7 @@ ht-degree: 1%
 
 ## Windows上的[!DNL Vertica Analytics] {#vertica-windows}
 
-1. 下载适用于Windows](https://www.vertica.com/download/vertica/client-drivers/)的[ODBC驱动程序。 要安装Windows驱动程序，您需要启用.NET Framework 3.5，否则安装助理将尝试自动启用并下载该驱动程序。
+1. 下载适用于Windows[&#128279;](https://www.vertica.com/download/vertica/client-drivers/)的ODBC驱动程序。 要安装Windows驱动程序，您需要启用.NET Framework 3.5，否则安装助理将尝试自动启用并下载该驱动程序。
 
 1. 在Windows中配置ODBC驱动程序。 有关详细信息，请参见[此页面](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 

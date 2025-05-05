@@ -314,7 +314,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
   用于连接到Adobe Experience Manager创作实例的密码。
 
-有关更多信息，请参阅此](../../integrations/using/about-adobe-experience-manager.md)章节[。
+有关更多信息，请参阅此[&#128279;](../../integrations/using/about-adobe-experience-manager.md)章节。
 
 ## CRM连接器外部帐户
 
@@ -448,7 +448,7 @@ Amazon Simple Storage Service (S3)连接器可用于将数据导入或导出Adob
 
 ### Azure Blob Storage {#azure-blob-external-account}
 
-**Azure Blob Storage**&#x200B;外部帐户可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 有关更多信息，请参阅此](../../workflow/using/file-transfer.md)章节[。
+**Azure Blob Storage**&#x200B;外部帐户可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 有关更多信息，请参阅此[&#128279;](../../workflow/using/file-transfer.md)章节。
 
 ![](assets/ext_account_23.png)
 

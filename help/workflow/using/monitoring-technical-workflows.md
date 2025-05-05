@@ -48,7 +48,7 @@ ht-degree: 5%
 
 对于&#x200B;**[!UICONTROL Tracking workflow (‘tracking’)]**：
 
-检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此](delivery.md)章节[。
+检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此[&#128279;](delivery.md)章节。
 
 对于&#x200B;**[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**：
 

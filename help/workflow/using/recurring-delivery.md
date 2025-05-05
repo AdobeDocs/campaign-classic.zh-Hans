@@ -29,7 +29,7 @@ ht-degree: 11%
 
 1. 配置投放模板。
 
-此活动的配置过程与根据可用选项创建投放模板的过程类似。 有关更多信息，请参阅此](../../delivery/using/about-templates.md)章节[。
+此活动的配置过程与根据可用选项创建投放模板的过程类似。 有关更多信息，请参阅此[&#128279;](../../delivery/using/about-templates.md)章节。
 
 >[!CAUTION]
 >

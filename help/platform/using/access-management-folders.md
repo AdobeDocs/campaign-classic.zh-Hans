@@ -28,7 +28,7 @@ Explorer导航树的每个文件夹都具有附加的读、写和删除访问权
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-可以自定义Explorer导航树。 在本节](adobe-campaign-workspace.md)中了解配置步骤和最佳实践[。
+可以自定义Explorer导航树。 在本节[&#128279;](adobe-campaign-workspace.md)中了解配置步骤和最佳实践。
 
 ### 什么是视图 {#about-views}
 

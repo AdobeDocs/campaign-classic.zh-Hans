@@ -41,7 +41,7 @@ Adobe Campaign将外部帐户视为不相关的实体。
    * 您在所有帐户之间使用不同的登录/密码组合。
 您必须联系提供程序以诊断其一方的潜在冲突。
 
-   * 某些外部帐户共享相同的登录名/密码组合。提供商无法判断来自哪个外部帐户 `BIND PDU` ，因此他们将来自多个帐户的所有连接视为单个帐户。 他们可能通过这两个帐户随机路由 MO 和 SR，从而导致问题。如果提供商支持同一登录名/密码组合的多个短代码，则必须询问他们将该短代码 `BIND PDU`放在 中的什么位置。 请注意，这条信息必须放在 中 `BIND PDU`，而不是 `SUBMIT_SM`放在 中，因为 是唯一 `BIND PDU` 允许正确路由 MO 的地方。请参阅上面各种PDU](sms-protocol.md#information-pdu)部分中的[信息以了解`BIND PDU`中可用的字段，通常是在`address_range`中添加短代码，但这需要提供程序的特别支持。 联系他们，了解他们希望如何独立路由多个短代码。
+   * 某些外部帐户共享相同的登录名/密码组合。提供商无法判断来自哪个外部帐户 `BIND PDU` ，因此他们将来自多个帐户的所有连接视为单个帐户。 他们可能通过这两个帐户随机路由 MO 和 SR，从而导致问题。如果提供商支持同一登录名/密码组合的多个短代码，则必须询问他们将该短代码 `BIND PDU`放在 中的什么位置。 请注意，这条信息必须放在 中 `BIND PDU`，而不是 `SUBMIT_SM`放在 中，因为 是唯一 `BIND PDU` 允许正确路由 MO 的地方。请参阅上面各种PDU[&#128279;](sms-protocol.md#information-pdu)部分中的信息以了解`BIND PDU`中可用的字段，通常是在`address_range`中添加短代码，但这需要提供程序的特别支持。 联系他们，了解他们希望如何独立路由多个短代码。
 Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 ## 外部帐户一般问题 {#external-account-issues}
@@ -155,7 +155,7 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 * 检查表中是否正确预配 `broadLogMsg` 了错误。
 
-如果 已通过 Adobe Campaign Classic 扩展 SMPP 连接器确认，`DELIVER_SM PDU`但 broadLog 未正确更新，请检查匹配 MT、SR 和 broadlog 条目](sms-protocol.md#matching-mt)部分中[描述的 ID 协调过程。
+如果 已通过 Adobe Campaign Classic 扩展 SMPP 连接器确认，`DELIVER_SM PDU`但 broadLog 未正确更新，请检查匹配 MT、SR 和 broadlog 条目[&#128279;](sms-protocol.md#matching-mt)部分中描述的 ID 协调过程。
 
 如果您修复了所有内容，但一些无效的 SR 仍在提供程序的缓冲区中，则可以使用“无效的 ID 确认计数”选项跳过它们。 应谨慎使用，并在缓冲区清理后尽快重置为 0。
 

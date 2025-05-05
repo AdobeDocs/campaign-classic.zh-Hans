@@ -592,7 +592,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 +++**通知服务扩展**
 
-用于iOS的&#x200B;****
+用于iOS的&#x200B;**&#x200B;**
 
 介质必须在通知服务扩展级别下载。
 
@@ -628,7 +628,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 +++**通知内容扩展**
 
-用于iOS的&#x200B;****
+用于iOS的&#x200B;**&#x200B;**
 
 在此级别，您需要：
 

@@ -176,7 +176,7 @@ HTML格式的电子邮件投放可以包含图像。 通过投放助手，您可
 
 要通过投放助手管理图像，请执行以下操作：
 
-1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**图标。
+1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;图标。
    ![](assets/s_ncs_user_email_del_img_param.png)
 
 1. 在&#x200B;**[!UICONTROL Images]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Upload images]**。

@@ -28,7 +28,7 @@ ht-degree: 0%
 
 您需要安装驱动程序，以便实现Teradata与Campaign的连接。
 
-1. 为Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)安装[ODBC驱动程序。
+1. 为Teradata[&#128279;](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)安装ODBC驱动程序。
 
    它由三个软件包组成，这些软件包可按以下顺序安装在Red Hat（或CentOS）/Suse上：
 

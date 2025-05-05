@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ![](assets/offer_delivery_009.png)
 
-在本节](../../delivery/using/about-direct-mail-channel.md)中了解有关直邮投放[的更多信息。 在此部分](../../campaign/using/setting-up-marketing-campaigns.md)中了解有关营销活动[的更多信息。
+在本节[&#128279;](../../delivery/using/about-direct-mail-channel.md)中了解有关直邮投放[的更多信息。 在此部分](../../campaign/using/setting-up-marketing-campaigns.md)中了解有关营销活动的更多信息。
 
 ### 将选件插入投放的主要步骤 {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -53,11 +53,11 @@ ht-degree: 0%
 
    ![](assets/offer_delivery_005.png)
 
-1. 根据需要选择&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;选项。 有关详细信息，请参阅用于调用优惠引擎](#parameters-for-calling-offer-engine)的[参数。
+1. 根据需要选择&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;选项。 有关详细信息，请参阅用于调用优惠引擎[&#128279;](#parameters-for-calling-offer-engine)的参数。
 
    ![](assets/offer_delivery_006.png)
 
-1. 如有必要，请选择&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;选项。 有关详细信息，请参阅用于调用优惠引擎](#parameters-for-calling-offer-engine)的[参数。
+1. 如有必要，请选择&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;选项。 有关详细信息，请参阅用于调用优惠引擎[&#128279;](#parameters-for-calling-offer-engine)的参数。
 
    ![](assets/offer_delivery_007.png)
 

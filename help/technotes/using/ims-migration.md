@@ -85,7 +85,7 @@ For this migration, you must add below APIs in your project: **I/O Management AP
 
 要将API添加到项目中，请执行以下步骤：
 
-1. 单击&#x200B;**添加API**以选择要添加到项目中的API。
+1. 单击&#x200B;**添加API**&#x200B;以选择要添加到项目中的API。
    ![](assets/do-not-translate/ims-updates-01.png)
 1. 通过勾选Adobe Campaign卡片右上角的框，选择并将Adobe Campaign API添加到您的项目中，在将鼠标悬停在该卡片上时会显示该框
    ![](assets/do-not-translate/ims-updates-02.png)
@@ -452,7 +452,7 @@ response = requests.post(url, headers=headers, data=xml_data)
 
 此步骤是可选的，并且仅在营销实例中可用，不能在任何消息中心实例中使用。 如果已经为技术操作员定义了特定文件夹权限或已命名权限，但未通过分配的操作员组。 现在，您需要更新Admin Console中新创建的技术帐户用户，以授予所需的文件夹权限或命名权限。
 
-请注意，在对Campaign实例至少进行API调用后（IMS届时将在Campaign中创建用户），技术帐户用户才会存在于Adobe Campaign中。 如果您在Campaign中找不到技术用户，请确保能够成功发送API调用，如步骤7](#ims-migration-step-7)中所述[。
+请注意，在对Campaign实例至少进行API调用后（IMS届时将在Campaign中创建用户），技术帐户用户才会存在于Adobe Campaign中。 如果您在Campaign中找不到技术用户，请确保能够成功发送API调用，如步骤7[&#128279;](#ims-migration-step-7)中所述。
 
 1. 要应用新的技术帐户用户所需的更改，请按照电子邮件地址在Campaign客户端控制台中找到它们。 此电子邮件地址是在上述项目创建和身份验证步骤中创建的。
 

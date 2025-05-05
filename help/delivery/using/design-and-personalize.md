@@ -76,7 +76,7 @@ ht-degree: 4%
 
 **提示**：由于人为错误始终存在，因此请在每次发送前检查选择退出链接是否正常工作。 例如，在发送校样时，确保链接有效，表单处于联机状态且“不再联系此收件人”字段已更改为“是”。
 
-了解如何在此部分](personalization-blocks.md#personalization-blocks-example)中插入选择退出链接[。
+了解如何在此部分[&#128279;](personalization-blocks.md#personalization-blocks-example)中插入选择退出链接。
 
 ### 电子邮件大小
 
@@ -96,8 +96,8 @@ ht-degree: 4%
 
 默认情况下，短信的字符数应符合GSM（全球移动通信系统）标准。 使用 GSM 编码的短信消息长度上限为 160 个字符，而对于分段发送的消息，每段短信的长度上限为 153 个字符。
 
-音译指的是，如果GSM标准无法识别某个短信字符，则会用另一个字符替换该字符。 请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。 您可以通过选中对应&#x200B;**[!UICONTROL External account]**的SMPP渠道设置选项卡中的对应框来授权字符音译。
-在本节](sms-set-up.md#creating-an-smpp-external-account)中了解更多[。
+音译指的是，如果GSM标准无法识别某个短信字符，则会用另一个字符替换该字符。 请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。 您可以通过选中对应&#x200B;**[!UICONTROL External account]**&#x200B;的SMPP渠道设置选项卡中的对应框来授权字符音译。
+在本节[&#128279;](sms-set-up.md#creating-an-smpp-external-account)中了解更多。
 
 **提示**：
 
@@ -105,7 +105,7 @@ ht-degree: 4%
 
 * 但是，如果短信消息包含许多GSM标准无法识别的字符，请启用音译以限制发送消息的成本。
 
-在本节](sms-set-up.md#about-character-transliteration)中了解更多[。
+在本节[&#128279;](sms-set-up.md#about-character-transliteration)中了解更多。
 
 ## 处理格式设置 {#formatting}
 
@@ -113,7 +113,7 @@ ht-degree: 4%
 
 * 更正&#x200B;**日期格式**： Adobe Campaign为JavaScript模板和XSL样式表提供了日期格式功能。 [了解详情](formatting.md#date-display)
 
-* 在电子邮件中使用&#x200B;**授权字符**：电子邮件地址的有效字符列表在“XtkEmail_Characters”选项中定义。 在本节](../../installation/using/configuring-campaign-options.md)中了解如何访问Campaign选项[。 要正确处理特殊字符，需要使用Unicode安装Adobe Campaign。
+* 在电子邮件中使用&#x200B;**授权字符**：电子邮件地址的有效字符列表在“XtkEmail_Characters”选项中定义。 在本节[&#128279;](../../installation/using/configuring-campaign-options.md)中了解如何访问Campaign选项。 要正确处理特殊字符，需要使用Unicode安装Adobe Campaign。
 
 * **电子邮件身份验证**&#x200B;的配置：确保电子邮件标头包含DKIM签名。 通过DKIM（域密钥识别邮件）身份验证，接收电子邮件服务器可以验证邮件确实是由其声明发送该邮件的个人或实体发送的，以及邮件内容在最初发送（和DKIM“签名”）与接收之间是否发生了更改。 此标准通常使用发件人或发件人标头中的域。 有关详细信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 

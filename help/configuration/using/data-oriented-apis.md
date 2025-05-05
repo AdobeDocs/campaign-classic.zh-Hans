@@ -44,7 +44,7 @@ XML文档存储在数据库的MEMO类型字段中。
 
 这使您能够隔离基础SQL。 查询语言不依赖于底层引擎：某些函数将重新映射，这些函数可能会生成多个SELECT SQL顺序。
 
-有关详细信息，请参阅架构“xtk：queryDef”](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的“ExecuteQuery”方法的[示例。
+有关详细信息，请参阅架构“xtk：queryDef”[&#128279;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的“ExecuteQuery”方法的示例。
 
 **ExecuteQuery**&#x200B;方法出现在[ExecuteQuery (xtk：queryDef)](#executequery--xtk-querydef-)中。
 

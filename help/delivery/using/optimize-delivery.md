@@ -31,7 +31,7 @@ ht-degree: 4%
 
   **提示** — 要避免这种情况，请与团队的其他成员协调投放计划，以确保最佳性能。
 
-* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准则[。
+* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档[&#128279;](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准则。
 
 * 如果您符合条件，则可以利用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)，通过[性能监控](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hans)功能来监控您的平台。
 
@@ -51,7 +51,7 @@ ht-degree: 4%
 
    * 在检查电子邮件的可投放性时，您需要重点关注四个主要类别：数据质量、邮件和内容、发送基础架构和信誉。 有关此主题的更深入探讨，请参阅[此部分](about-deliverability.md)。
 
-* 应用此文档](about-deliverability.md)中详细[的建议。
+* 应用此文档[&#128279;](about-deliverability.md)中详细的建议。
 
 * 请联系您的Adobe代表寻求帮助。
 

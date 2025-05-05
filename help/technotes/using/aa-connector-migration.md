@@ -46,11 +46,11 @@ Campaign Classic v7与Adobe Analytics之间的新集成现已可用。 下面列
 
 如果您使用现有的Adobe Analytics Data Connector(以前称为Genesis集成)，并且集成是在低于Campaign 21.1.3的内部版本上实现的，则您会受到影响。
 
-在本节](../../integrations/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本[。
+在本节[&#128279;](../../integrations/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本。
 
 ## 如何更新？
 
-您需要在2022年8月17日之前升级到Campaign 21.1.3（或更高版本）****。
+您需要在2022年8月17日之前升级到Campaign 21.1.3（或更高版本）**&#x200B;**。
 
 作为托管客户，Adobe将与您合作，将您的实例升级到新版本。 然后，您将能够使用[Adobe Analytics连接器](../../platform/using/gs-aa.md)。
 

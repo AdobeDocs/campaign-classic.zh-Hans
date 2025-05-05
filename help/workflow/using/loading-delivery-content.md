@@ -56,4 +56,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关SFTP服务器使用情况的最佳实践和疑难解答详情，请参阅此页面[](../../platform/using/sftp-server-usage.md)。
+>有关SFTP服务器使用情况的最佳实践和疑难解答详情，请参阅此页面[&#128279;](../../platform/using/sftp-server-usage.md)。

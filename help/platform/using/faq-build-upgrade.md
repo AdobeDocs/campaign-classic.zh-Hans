@@ -27,7 +27,7 @@ Adobe Campaign 会定期更新。如果您熟悉我们发布的[发行说明](..
 
 当将Adobe Campaign Classic软件更新到最新的安全内部版本号，但保持相同的主/次内部版本级别时，即进行内部版本升级。 例如：将v7内部版本9026Campaign Classic到Campaign v7内部版本9032。
 
-在本节](../../rn/using/rn-overview.md)中了解更多[。
+在本节[&#128279;](../../rn/using/rn-overview.md)中了解更多。
 
 ## Adobe Campaign Classic的最新版本是什么？
 
@@ -37,13 +37,13 @@ Adobe Campaign 会定期更新。如果您熟悉我们发布的[发行说明](..
 
 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Help > About...]**&#x200B;菜单检查您的版本。 **[!UICONTROL About]**&#x200B;框包含有关控制台和服务器正在运行的版本和内部版本的详细信息。
 
-在本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解更多[。
+在本节[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解更多。
 
 ## 构建状态表示什么？
 
 从Campaign Classic19.2开始，状态与每个内部版本关联。
 
-在本节](../../rn/using/rn-overview.md)中了解更多[。
+在本节[&#128279;](../../rn/using/rn-overview.md)中了解更多。
 
 ## 内部版本升级与版本升级是否相同？
 

@@ -51,7 +51,7 @@ ht-degree: 6%
 
 在每次发送之前，必须检查选择退出链接是否正常工作。 例如，在发送校样时，请确保链接有效，表单处于联机状态，并且验证此操作会将&#x200B;**[!UICONTROL No longer contact this recipient]**&#x200B;字段的值更改为&#x200B;**[!UICONTROL Yes]**。 您应该系统地进行此检查，因为输入链接或更改表单时始终可能存在人为错误。
 
-了解如何在此部分](personalization-blocks.md#personalization-blocks-example)中插入选择退出链接[。
+了解如何在此部分[&#128279;](personalization-blocks.md#personalization-blocks-example)中插入选择退出链接。
 
 如果在开始投放后检测到有关退订的问题，则仍然可以为单击选择退出链接的收件人手动执行退订（例如使用批量更新功能），即使他们无法确认自己的选择。
 

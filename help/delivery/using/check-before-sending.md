@@ -27,7 +27,7 @@ ht-degree: 1%
 
 此步骤允许您检测可能的错误，并在将其交付到主目标之前修复它们。
 
-本节](steps-validating-the-delivery.md)中介绍了验证投放的步骤[。
+本节[&#128279;](steps-validating-the-delivery.md)中介绍了验证投放的步骤。
 
 ## 收件箱呈现 {#inbox-and-email-rendering}
 
@@ -39,13 +39,13 @@ ht-degree: 1%
 
 * 收件箱呈现功能对于确定电子邮件促销活动是否成功超越主要ISP（Internet服务提供商）和Web邮件服务的过滤器至关重要。 此类工具会将电子邮件的预检副本发送到测试收件箱网络，以便您了解消息在这些服务中的显示或呈现方式。 它们可能还包括报表和代码更正选项，帮助您快速识别并进行修复以改善可投放性。
 
-在本节](inbox-rendering.md)中了解更多[。
+在本节[&#128279;](inbox-rendering.md)中了解更多。
 
 ## 验证消息 {#proof-messages}
 
 通过发送校样，可检查选择退出链接、镜像页面和任何其他链接、验证消息、验证是否显示图像、检测可能存在的错误等。 您可能还希望检查您的设计和在不同设备上的渲染。
 
-在本节](steps-validating-the-delivery.md#sending-a-proof)中了解更多[。
+在本节[&#128279;](steps-validating-the-delivery.md#sending-a-proof)中了解更多。
 
 ## 设置A/B测试投放 {#a-b-testing-deliveries}
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 * 选择成功率最高的项目并将其发送到目标的其余部分
 
-在本节](get-started-a-b-testing.md)中了解更多[。
+在本节[&#128279;](get-started-a-b-testing.md)中了解更多。
 
 ## 确保您的消息已投放 {#make-sure-your-message-is-delivered}
 
@@ -65,11 +65,11 @@ ht-degree: 1%
 
 ### 进行验证过程
 
-您可以定义涉及Adobe Campaign操作员和组的完整验证流程，以验证目标和消息内容。 这将确保全面监测和控制营销活动的各个流程：定位、内容、预算、提取和发送证明。 根据用户的权限，用户将收到通知、接收校样并能够验证或拒绝消息。 在本节](../../campaign/using/marketing-campaign-approval.md)中了解更多[。
+您可以定义涉及Adobe Campaign操作员和组的完整验证流程，以验证目标和消息内容。 这将确保全面监测和控制营销活动的各个流程：定位、内容、预算、提取和发送证明。 根据用户的权限，用户将收到通知、接收校样并能够验证或拒绝消息。 在本节[&#128279;](../../campaign/using/marketing-campaign-approval.md)中了解更多。
 
 ### 使用批次
 
-您可以逐步增加使用批次发送的数量。 这将避免您的邮件被标记为垃圾邮件或您想要限制每天的邮件数。 利用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 在本节](steps-sending-the-delivery.md#sending-using-multiple-waves)中了解更多[。
+您可以逐步增加使用批次发送的数量。 这将避免您的邮件被标记为垃圾邮件或您想要限制每天的邮件数。 利用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 在本节[&#128279;](steps-sending-the-delivery.md#sending-using-multiple-waves)中了解更多。
 
 ### 排定消息优先级
 
@@ -105,7 +105,7 @@ ht-degree: 1%
 
 ### 使用分类
 
-您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。 例如，您可以筛选新闻稿目标中的未成年收件人。 在此示例](../../campaign-opt/using/filtering-rules.md)中了解更多[。
+您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。 例如，您可以筛选新闻稿目标中的未成年收件人。 在此示例[&#128279;](../../campaign-opt/using/filtering-rules.md)中了解更多。
 
 ### 避免使用附件
 

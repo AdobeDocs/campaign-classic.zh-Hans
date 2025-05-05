@@ -27,9 +27,9 @@ ht-degree: 4%
 
   有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-  ![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg) [Campaign v7文档](../../installation/using/about-fda.md)
 
-  ![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans)
+  ![](assets/do-not-localize/v8.png) [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans)
 
 * 出站模式必须存在于数据库中并链接到FDA数据库。
 * 执行工作流的运算符必须具有&#x200B;**[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**&#x200B;命名权限。 [了解详情](../../platform/using/access-management-named-rights.md)。

@@ -50,4 +50,4 @@ ht-degree: 8%
                 </container>
 ```
 
-Adobe Campaign中的登录表单个性化是为专家用户保留的。 有关更多信息，请参阅此](../../configuration/using/identifying-a-form.md)章节[。
+Adobe Campaign中的登录表单个性化是为专家用户保留的。 有关更多信息，请参阅此[&#128279;](../../configuration/using/identifying-a-form.md)章节。

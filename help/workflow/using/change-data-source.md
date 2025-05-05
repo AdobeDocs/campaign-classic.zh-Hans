@@ -20,11 +20,11 @@ ht-degree: 2%
 
 **[!UICONTROL Change data source]**&#x200B;活动允许您更改工作流&#x200B;**[!UICONTROL Working table]**&#x200B;的数据源。 这为跨不同数据源（如FDA、FFDA和本地数据库）管理数据提供了更大的灵活性。
 
-**[!UICONTROL Working table]**允许Adobe Campaign Classic工作流处理数据并与工作流活动共享数据。
+**[!UICONTROL Working table]**&#x200B;允许Adobe Campaign Classic工作流处理数据并与工作流活动共享数据。
 默认情况下，**[!UICONTROL Working table]**&#x200B;与我们查询的数据源在同一数据库中创建。
 
 例如，在查询存储在云数据库上的&#x200B;**[!UICONTROL Profiles]**&#x200B;表时，您将在同一云数据库上创建&#x200B;**[!UICONTROL Working table]**。
-若要更改此设置，您可以添加**[!UICONTROL Change Data Source]**&#x200B;活动以为&#x200B;**[!UICONTROL Working table]**&#x200B;选择其他数据源。
+若要更改此设置，您可以添加&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活动以为&#x200B;**[!UICONTROL Working table]**&#x200B;选择其他数据源。
 
 请注意，在使用&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活动时，您需要切换回云数据库以继续执行工作流。
 

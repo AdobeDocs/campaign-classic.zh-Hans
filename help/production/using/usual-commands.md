@@ -23,7 +23,7 @@ ht-degree: 4%
 
 命令&#x200B;**nlserver**&#x200B;是整个Adobe Campaign应用程序的输入命令。
 
-此命令具有以下语法： **nlserver **`<command>`****`<arguments>`****
+此命令具有以下语法： **nlserver &#x200B;**`<command>`**&#x200B;**`<arguments>`**&#x200B;**
 
 参数&#x200B;**`<command>`**&#x200B;对应于模块。
 
