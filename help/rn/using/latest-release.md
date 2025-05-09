@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 86bc3bdfe628cc694e47a4670e99225e05b3df1b
-workflow-type: ht
-source-wordcount: '224'
-ht-degree: 100%
+source-git-commit: 458821770c6233ec1893d4efe60169516b311bdd
+workflow-type: tm+mt
+source-wordcount: '865'
+ht-degree: 26%
 
 ---
 
@@ -39,7 +39,7 @@ This release comes with the following compatibility updates:
 
 通过 **[!UICONTROL Adobe Experience Cloud]** 外部帐户与 Adobe 解决方案和应用程序的连接已更新，以加强安全性。
 
-### 修复 {#release-7-4-2-fixes}
+### 主要修复 {#release-7-4-2-fixes}
 
 此版本附带以下主要修复：
 
@@ -57,7 +57,66 @@ This release comes with the following compatibility updates:
 
 * 邮件传输代理 (MTA) - 修复了孤立 MTA 子项停留在 **[!UICONTROL Start pending]** 状态。
 
+
+### 其他修复 {#release-7-4-2-other-fixes}
+
 此版本中还修复了以下问题：
 
-NEO-47269、NEO-59059、NEO-62455、NEO-65774、NEO-66462、NEO-66989、NEO-77898、NEO-78843、NEO-79373、NEO-79598、NEO-80145、NEO-80245、NEO-80434、NEO-80683、NEO-81222、NEO-81433、NEO-81864、NEO-82351、NEO-82781、NEO-82838、NEO-82923、NEO-83252、NEO-83809、NEO-83826、NEO-84024、NEO-84553、NEO-85150
+* 修复了&#x200B;**数据加载（文件）**&#x200B;活动无法将文件上载到服务器<!--after an upgrade to version 8.3.8-->的问题。 用户现在可以成功上传文件，而不会遇到进度停滞或控制台错误。 (NEO-47269)
+
+* 解决了Apache <!--following an upgrade to Adobe Campaign Classic 7.2.2 build 9349-->中的分段错误错误。 此修复可防止核心文件生成，并确保服务器稳定运行。 (NEO-59059)
+
+* 已解决Google BigQuery数据库<!--after upgrading to version 7.3.3 build 9359-->的连接问题。 用户现在可以使用GCP外部帐户成功测试连接。 (NEO-62455)
+
+* 增强了使用联合数据访问(FDA)的Google BigQuery表中布尔和日期时间列更新的兼容性。 此修复程序可确保在Insert/Update操作期间正确处理数据类型。 (NEO-65774)
+
+* 修复了允许攻击者将HTML元素注入电子邮件端点的资源注入漏洞。 此安全增强功能可防止未经授权的访问和网络钓鱼尝试。 (NEO-66462)
+
+* 解决了将数据插入Google BigQuery表时因HTTP内容或传输编码问题而导致的间歇性错误。 此修复可确保稳定的数据加载工作流。 (NEO-66989)
+
+* 解决了工作流中`File.list()`方法中的路径遍历漏洞。 此安全增强功能可防止未经授权的目录访问并保护敏感文件。 (NEO-77898)
+
+* 修复了SMS投放日志未正确更新为“在移动设备上接收”状态的问题。 此增强功能可确保准确的投放报告。 (NEO-78843)
+
+* 解决了使用Azure联合数据访问(FDA)时Adobe Campaign Classic中的登录错误。 用户现在可以通过客户端控制台成功登录。 (NEO-79373)
+
+* 修复了`CCurlAzureBlobStorage::UploadStream()`方法导致的工作流崩溃。 此增强功能可确保稳定的工作流执行。 (NEO-79598)
+
+* 在Windows上激活了两个关键编译标志（`ControlFlowGuard`和`StackProtection`），以增强产品安全性并降低利用漏洞的风险。 (NEO-80145)
+
+* 修复了broadlog处于失败状态时错误发送事件状态的问题。 此增强功能可确保进行准确的事件报告。 (NEO-80245)
+
+* POP3 OAuth刷新和访问令牌现在保存在数据库中，在刷新令牌过期后，`Authentication failure: unknown user name or bad password`错误不再出现。 (NEO-80683)
+
+* 现在将选项`XApiKey`用作客户端ID的值以连接到Adobe Analytics，而不是使用Marketing Cloud (MAC)外部帐户的客户端ID。 (NEO-80434)
+
+* 解决了inMail用户因令牌过期而遇到身份验证错误的问题。 用户现在可以测试连接并重新启动服务器以解决类似问题。 (NEO-80683)
+
+* 通过确保所有分析调用都使用一致的API密钥(Campaign1)进行身份验证（即使切换到随机客户端ID），改进了Analytics API功能。 这可确保无缝分析跟踪。 (NEO-80434)
+
+* 通过允许用户调整查询的超时期限，增强了BigQuery联合数据访问(FDA)连接器。 这项改进可防止长时间运行的查询出现超时错误。 (NEO-81222)
+
+* 更新了Campaign <!--7.4.1-->版本升级过程以包含所需的依赖项。 此增强功能简化了用户的升级过程。 (NEO-81433)
+
+* 修复了将子工作流与`enum`字段结合使用时的控制台崩溃问题。 此增强功能可确保稳定的工作流执行。 (NEO-81864)
+
+* 解决了MTA子进程卡住、阻止投放插槽的问题。 此修复确保推送和WhatsApp通信的顺利投放操作。 (NEO-82351)
+
+* 修复了由于投放活动暂停而导致投放卡在个性化待处理中的问题。 此增强功能可确保投放成功执行。 (NEO-82781)
+
+* 利用CampaignIO端点进行身份验证以增强IMS登录功能。 这一改进简化了登录过程。 (NEO-82838)
+
+* Readdressed Google BigQuery联合数据访问(FDA)超时错误，以确保稳定的查询执行后修补程序部署。 (NEO-82923)
+
+* 解决了将大数据卷加载到Teradata表中时的空间问题。 此增强功能可确保稳定的数据加载操作。 (NEO-83252)
+
+* 修复了由于日期和时间戳比较<!--after upgrading to version 9383-->不匹配导致GCP查询失败的问题。 此增强功能可确保查询兼容性。 (NEO-83826)
+
+* 解决了由于恢复暂停的投放活动而导致的投放故障。 此修复可确保投放成功执行。 (NEO-83809)
+
+* 修复了使用私钥身份验证时Snowflake联合数据访问(FDA)连接器的身份验证错误。 此增强功能可确保成功连接数据库。 (NEO-84024)
+
+* 实施了监视程序更改，以解决由进程停滞导致的MTA子插槽阻塞问题。 此增强功能可确保顺利投放操作。 (NEO-84553)
+
+* 增强的Javascript等待检查可解决由处于工作状态的进程导致的MTA子插槽阻塞问题。 此修复程序可确保稳定的投放操作。 (NEO-85150)
 
