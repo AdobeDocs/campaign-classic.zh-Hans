@@ -3,14 +3,15 @@ product: campaign
 title: 新的基于GCM的函数
 description: 新的基于GCM的函数
 feature: Technote
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
+exl-id: 154dee7a-a1e9-40a2-bfa5-3641382d0574
+source-git-commit: b6d64f66d287dba79be5eddec48ee852c2c7740c
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 基于GCM的函数 {#new-functions}
+# 基于 GCM 的函数 {#new-functions}
 
 为了提高安全性，我们不再将AES（高级加密标准）算法与CBC（密码块链接）模式一起用于加密操作。 引入了新的加密函数。 这些函数将AES与Galois/Counter Mode (AES-GCM)一起使用，从而提供了更安全的替代方案。 这些函数在JavaScript、JSP、SOAP API和XML架构中可用，允许客户从CBC过渡到GCM进行加密和解密。
 
@@ -37,7 +38,7 @@ ht-degree: 1%
 
 ```
             String 
-            encrypted = Encrypt (
+            encrypted = EncryptString (
             String       
             decrypted
             
@@ -85,7 +86,7 @@ ht-degree: 1%
 使用实例的键或任何其他键加密字符串。
 
 ```
-            cryptString (str [, key
+            encryptString (str [, key
       ] [, useSalt ])
          
 ```
@@ -114,7 +115,7 @@ ht-degree: 1%
 
 可用位置：
 
-* 内容管理
+* 内容管理 
 * 投放属性
 * 投放消息
 * 类型规则
@@ -126,7 +127,7 @@ ht-degree: 1%
 
 ### decryptString() {#decryptString-javascript}
 
-使用实例的键或任何其他键加密字符串。 此旧版函数可与GCM一起使用。 对于使用AES-CBC模式加密的密文解密，它已被弃用。
+使用实例的键或任何其他键对字符串进行解密。 此旧版函数可与GCM一起使用。 对于使用AES-CBC模式加密的密文解密，它已被弃用。
 
 ```
             decryptString (str [, key
@@ -161,7 +162,7 @@ ht-degree: 1%
 
 **备注**
 
-无法在工作流、Web应用程序、报表或投放中调用此函数。 可以在JSSP或SOAP调用实现中调用它。 例如：
+无法在工作流、Web应用程序、报表或投放中调用此函数。 可以在JSSP或SOAP调用实现中调用它。 示例：
 
 ```
         function nms_extAccount_LogonToRemoteInstance(remoteInstanceUrl, login, encryptedPassword) {
