@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 84e6b2fad97f0ca5d6621cff4648e0be0bef7521
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1652'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   <tr>
  <td>Campaign (Neolane) 旧版 SDK</td>
  <td><p>现已弃用适用于移动应用程序的 Campaign (Neolane) SDK。相反，可通过在“数据收集”UI 中配置 Adobe Campaign 扩展使用 Adobe Experience Platform Mobile SDK。Adobe Experience Platform Mobile SDK 有助于在移动设备应用程序中支持 Adobe 的 Experience Cloud 解决方案和服务。 SDK 配置通过数据收集 UI 进行管理，以实现灵活配置和基于规则的可扩展集成。 有关如何配置移动应用程序频道，请参阅 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8 文档</a>。</p>
-<p>目标移除日期：2025年7月31日 </p>
+<p>目标移除日期：2025 年 7 月 31 日 </p>
 </td>
 </tr>
 <tr>
@@ -83,7 +83,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
     <tr>
   <td>技术可投放性监测报告<br></td>
    <td><p>不再提供技术可投放性监测报告。Campaign 21.1.3 版本已将其弃用。</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -137,7 +137,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   <tr> 
    <td>decryptString API</td>
    <td><p>从 Campaign 18.6 版本开始，出于安全原因，<em>decryptString</em> API 在默认情况下不再可用于新安装。</p> 
-   <p>在之后升级到 18.6（及更高版本）的上下文中，此 API 不再激活，并由 <em>decryptPassword</em> 函数替换。<a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=zh-Hans&hl=decrypt">了解详情</a></p></td>
+   <p>在之后升级到 18.6（及更高版本）的上下文中，此 API 不再激活，并由 <em>decryptPassword</em> 函数替换。<a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">了解详情</a></p></td>
   </tr> 
    <tr> 
    <td>移动渠道 - MMS 和 WAP 推送消息</td>
