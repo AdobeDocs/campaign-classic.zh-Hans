@@ -25,7 +25,7 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->要了解有关使用工作流导入和导出数据的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}。
+>要了解有关使用工作流导入和导出数据的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}。
 
 
 <!--
