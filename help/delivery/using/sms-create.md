@@ -4,11 +4,13 @@ title: 使用Campaign创建短信
 description: 了解如何使用Campaign创建短信
 feature: SMS
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '437'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -30,7 +32,7 @@ ht-degree: 2%
 1. 使用标签、代码和描述标识投放。 如需详细信息，请参阅[此小节](steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
 1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;以确认此信息并显示消息配置窗口。
 
-## 定义短信内容 {#defining-the-sms-content}
+## 定义短信的内容 {#defining-the-sms-content}
 
 要创建短信的内容，请执行以下步骤：
 

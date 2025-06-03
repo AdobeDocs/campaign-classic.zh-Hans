@@ -7,10 +7,10 @@ feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 80%
+source-wordcount: '203'
+ht-degree: 69%
 
 ---
 
@@ -26,6 +26,8 @@ Adobe Campaign查询工具允许您使用专用助手（即通用查询编辑器
 
 使用所选表的字段或使用公式可以创建查询。
 
-[单击此处](../../workflow/using/query.md) ，了解 Campaign 查询编辑器。
+>[!NOTE]
+>
+>要了解有关查询以及如何创建查询的更多信息，请参阅[Campaign v8文档](../../workflow/using/query.md)。
 
-![](assets/query_recipients_4.png)
+![显示查询示例的屏幕截图。](assets/query_recipients_4.png)

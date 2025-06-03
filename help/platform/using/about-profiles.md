@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 34%
+source-wordcount: '234'
+ht-degree: 37%
 
 ---
 
@@ -23,100 +23,107 @@ ht-degree: 34%
 
 在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、短信等）所定位的默认轮廓。通过存储在数据库中的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的轮廓。这些用户档案是针对不同用途而设计的。例如，种子轮廓用于在将投放内容发送给最终目标前测试该投放内容。
 
-![](assets/do-not-localize/how-to-video.png) [了解视频中配置文件的概念](#create-profiles-video)
-
-## 用户档案类型 {#profile-types}
-
-您可以使用 Adobe Campaign 管理用户档案的整个生命周期：创建、导入、定位、操作跟踪、更新等。
-
-每个概要文件都与一个数据库条目匹配。 其中包含了定位、限定和跟踪个人所需的所有必要信息。
-
-可以根据存储空间识别配置文件。 这意味着配置文件可以匹配：收件人、访客、操作员、订阅者、潜在客户等。
-
-## 收件人用户档案 {#recipient-profiles}
-
-投放工作的收件人会以用户档案的形式存储在数据库中，并包含其所链接的信息，如姓氏、名字、地址、订阅、投放项目等。创建活动时，可以根据简单或高级标准从数据库中选定投放工作的目标客户。
-
-您还可以创建针对其用户档案存储在数据库中而非文件中的收件人的营销活动。 这些称为“外部”投放。 如需有关此类投放的详细信息，请参阅[此页面](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)。
-
-创建收件人用户档案的主要方法如下：
-
-* 在图形界面屏幕中直接输入、
-* 导入收件人列表、
-* 通过 Web 窗体在线收集。
+![显示哪些配置文件及其工作方式的视频](assets/do-not-localize/how-to-video.png) [了解视频中配置文件的概念](#create-profiles-video)
 
 >[!NOTE]
 >
->要了解文件和Web窗体的导入方式，请参阅[通用导入和导出](../../platform/using/get-started-data-import-export.md)。
+>要了解有关用户档案以及如何创建和编辑它们的更多信息，请参阅有关[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}的详细文档。
 
-## 用户档案和目标 {#profiles-and-targets}
+<!--
+## Profile types {#profile-types}
 
-通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;链接，可显示存储在Adobe Campaign数据库中的收件人。 您可以创建新收件人、编辑现有收件人并访问其配置文件。 有关详细信息，请参见[此页面](../../platform/using/editing-a-profile.md)。
+Adobe Campaign lets you manage profiles throughout their entire lifecycle: creation, import, targeting, action tracking, updates, etc.
+
+Each profile matches a database entry. They contain all the information required for targeting, qualifying and tracking individuals.
+
+Profiles can be identified based on storage space. This means that a profile can match: a recipient, a visitor, an operator, a subscriber, a prospect, etc.
+
+## Recipient profiles {#recipient-profiles}
+
+Delivery recipients are stored in the database as profiles containing the information linked to them: last name, first name, address, subscriptions, deliveries, etc. When you create campaigns, you can define the target of the deliveries to a selection of the profiles in the base according to simple or advanced criteria.
+
+You can also create campaigns aimed at recipients whose profiles are stored not in the database, but in files. These are known as "external" deliveries. For more information about this type of delivery, refer to [this page](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+
+The main methods for creating recipient profiles are as follows:
+
+* direct input in the graphical interface screens,
+* importing recipient lists,
+* on-line collection via web forms.
+
+>[!NOTE]
+>
+>To find out how files and web forms are imported, refer to [Generic imports and exports](../../platform/using/get-started-data-import-export.md).
+
+## Profiles and targets {#profiles-and-targets}
+
+The **[!UICONTROL Profiles and targets]** link lets you display recipients stored in Adobe Campaign database. You can create new recipient, edit an existing recipient and access its profile. For more on this, refer to [this page](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
-您还可以通过它访问：
+It also gives you access to:
 
-* 列表 — [了解详情](../../platform/using/creating-and-managing-lists.md)
-* 订阅服务 — [了解详情](../../delivery/using/managing-subscriptions.md)
-* Web应用程序 — [了解更多](../../web/using/about-web-applications.md)
-* 导入和导出（作业） - [了解详情](../../platform/using/about-generic-imports-exports.md)
-* 定位工作流 — [了解详情](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* lists - [Learn more](../../platform/using/creating-and-managing-lists.md)
+* subscription services - [Learn more](../../delivery/using/managing-subscriptions.md)
+* web applications - [Learn more](../../web/using/about-web-applications.md)
+* imports and exports (jobs) - [Learn more](../../platform/using/about-generic-imports-exports.md)
+* targeting workflows - [Learn more](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
-收件人页面允许您对用户档案执行常见的操作：编辑、更新、添加、删除、排序。
+The recipients page lets you perform frequent operations on profiles: edits, updates, adds, deletions, sorts.
 
-如需进行更高级的配置文件操作，您需要编辑Adobe Campaign树。 为此，请单击Adobe Campaign主页上的&#x200B;**[!UICONTROL Explorer]**&#x200B;链接。
+For more advanced profile manipulations, you need to edit the Adobe Campaign tree. To do this, click the **[!UICONTROL Explorer]** link on the Adobe Campaign home page.
 
-默认情况下，收件人存储在树的&#x200B;**[!UICONTROL Profiles and Targets > Recipients]**&#x200B;节点中。 您可通过此视图创建收件人，以及：
+By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Recipients]** node of the tree. You can create recipients from this view, as well as:
 
-* 对数据库的配置文件进行排序和筛选 — [了解更多](../../platform/using/filtering-options.md)
-* 从数据库中移动、复制或删除配置文件 — [了解更多](../../platform/using/managing-profiles.md)，
-* 更新配置文件 — [了解详情](../../platform/using/updating-data.md)
-* 导出收件人 — [了解详情](../../platform/using/exporting-and-importing-profiles.md)
-* 创建收件人组 — [了解更多](../../platform/using/creating-and-managing-lists.md)
+* sort and filter the profiles of the database - [Learn more](../../platform/using/filtering-options.md)
+* move, copy or delete profiles from the database - [Learn more](../../platform/using/managing-profiles.md),
+* update profiles - [Learn more](../../platform/using/updating-data.md)
+* export recipients - [Learn more](../../platform/using/exporting-and-importing-profiles.md)
+* create recipient groups - [Learn more](../../platform/using/creating-and-managing-lists.md)
 
-要访问高级功能和配置，您需要单击&#x200B;**[!UICONTROL Explorer]**&#x200B;图标。
+To access advanced functionalities and configurations, you need to click the **[!UICONTROL Explorer]** icon. 
 
 ![](assets/d_ncs_user_interface01.png)
 
-Adobe Campaign资源管理器的常规布局显示在[此页面](../../platform/using/adobe-campaign-explorer.md)中。
+The general layout of the Adobe Campaign explorer is presented in [this page](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
->您还可以通过单击&#x200B;**[!UICONTROL Profiles and targets > Recipients]**&#x200B;链接从Adobe Campaign树中显示此列表的高级视图。 列表显示可以根据您的需求进行配置。 您可以添加或删除列、定义列顺序、对数据排序等。 列表显示配置在[此页面](../../platform/using/adobe-campaign-ui-lists.md)中描述。
+>You can also display an advanced view of this list from the Adobe Campaign tree by clicking the **[!UICONTROL Profiles and targets > Recipients]** link. The list display can be configured to suit your needs. You can add or delete columns, define column order, sort data, etc. List display configuration is described in [this page](../../platform/using/adobe-campaign-ui-lists.md).  
 >
->您还可以定义收件人视图。 有关此功能的详细信息，请参阅[此部分](../../platform/using/access-management-folders.md)。
+>You can also define recipient views. For further information about this functionality, refer to [this section](../../platform/using/access-management-folders.md).
 
-## 使用中的轮廓 {#active-profiles}
+## Active profiles {#active-profiles}
 
-活动用户档案是客户在过去12个月内尝试通过任何渠道与之通信的用户档案。
+An active profile is a profile that customer has attempted to communicate with during the past 12 months via any channel.
 
-根据您的合同，您的每个 Campaign 实例都会配置特定数量的活动轮廓，并对这些活动轮廓进行计数以计费。请参阅您的最新合同，了解已购买的活动用户档案的数量。 在[Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}中了解详情。
+According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-您可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参阅[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=zh-Hans){target="_blank"}。
+You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
-以下护栏和限制适用：
+The following guardrails and limitations apply:
 
-* 被多次投放定向的用户档案只会被计数一次。
-* 在X(Twitter)或Facebook的社交营销上下文中定位的用户档案不会计为活动用户档案。
-* 活动用户档案的计数仅适用于&#x200B;**营销实例**。 它不适用于执行实例，即MID （中间源）和RT （消息中心/实时消息传递）实例。
-* 计数基于收件人主键。 因此，如果某个用户档案存在于两个不同的收件人表中，则它可能会被计算为活动用户档案两次。
+* A profile that has been targeted by several deliveries is counted only once. 
+* Profiles targeted in the context of Social marketing on X (Twitter) or Facebook are not taken into account as active profiles.
+* The count of active profiles is available for **Marketing instances** only. It is not available for Execution instances, meaning MID (mid sourcing) and RT (Message Center / Real-time messaging) instances.
+* The count is based on the recipient primary key. As a consequence, if a profile is present in two different recipient tables, it can be counted twice as an active profile.
 
 
-## 教程视频 {#create-profiles-video}
+## Tutorial video {#create-profiles-video}
 
-了解如何访问轮廓数据、对轮廓进行排序和筛选以及手动创建和管理轮廓。
+Learn how to access profile data, sort and filter profiles and manually create and manage profiles.
 
-此视频还介绍了Adobe Campaign Classic对《一般数据保护条例》的合规性。
+This video also explains the compliance of Adobe Campaign Classic with General Data Protection Regulations. 
 
->[!VIDEO](https://video.tv.adobe.com/v/326753?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
-**另请参阅**
+**See also**
 
-* Campaign中的[隐私管理](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)
+* [Privacy management in Campaign](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
 
-* [在工作流中创建查询和区段数据](../../workflow/using/targeting-data.md)
+* [Create queries and segment data in workflows](../../workflow/using/targeting-data.md)
 
-* [选择目标映射](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)
+* [Select target mapping](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)
+
+-->

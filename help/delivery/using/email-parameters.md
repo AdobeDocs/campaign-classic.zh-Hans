@@ -5,8 +5,10 @@ description: 了解特定于电子邮件投放的选项和设置
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email
 role: User, Developer, Data Engineer
+hide: true
+hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 09b79849fa9db15dd53d1ed56630a34915aa32ad
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 10%
@@ -71,7 +73,7 @@ ht-degree: 10%
 
 * **[!UICONTROL Send all messages in text format]**
 
-  消息以文本格式发送。 不会发送HTML格式，但仅当收件人单击消息时，才会将其用于镜像页面。
+  消息以文本格式发送。 HTML格式不会发送，但仅当收件人单击消息时，才会用于镜像页面。
 
 >[!NOTE]
 >
@@ -115,7 +117,7 @@ ht-degree: 10%
 
 投放参数的&#x200B;**[!UICONTROL SMTP]**&#x200B;选项卡允许您配置退回邮件的管理。
 
-默认情况下，平台[&#128279;](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)的默认错误框中会收到退回的电子邮件，但您可以为投放定义特定的错误地址。
+默认情况下，平台](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)的[默认错误框中会收到退回的电子邮件，但您可以为投放定义特定的错误地址。
 
 您还可以从此屏幕定义特定地址，以便调查应用程序无法自动限定这些邮件时退回邮件的原因。 对于每个字段，**添加个性化字段**&#x200B;图标允许您添加个性化参数。
 

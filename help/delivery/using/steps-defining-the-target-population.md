@@ -4,8 +4,10 @@ title: 定义目标群体
 description: 了解如何定义目标群体
 feature: Audiences, Proofs
 role: User
+hide: true
+hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 23%
@@ -237,10 +239,10 @@ ht-degree: 23%
 | 名称 | 使用 | 标准架构 |
 |---|---|---|
 | 收件人 | 投放给Adobe Campaign数据库的收件人 | nms：recipient |
-| 访客 | 向通过反向链接（病毒式营销）或社交网络(例如Facebook， X — 以前称为Twitter)收集用户档案的访客投放。 | mns：visitor |
+| 访客 | 向通过反向链接（病毒式营销）或社交网络（例如Facebook、X — 以前称为Twitter）收集用户档案的访客投放。 | mns：visitor |
 | 订阅 | 发送给订阅了新闻稿等信息服务的收件人 | nms：subscription |
 | 访客订阅 | 向订阅了信息服务的访客投放 | nms：visitorSub |
-| 服务 | Publish到X帐户或Facebook页面 | nms：service |
+| 服务 | 发布到X帐户或Facebook页面 | nms：service |
 | 运算符 | 交付给Adobe Campaign操作员 | nms：operator |
 | 外部文件 | 通过包含投放所需所有信息的文件投放 | 无链接架构，未输入目标 |
 
@@ -249,6 +251,6 @@ ht-degree: 23%
 
 在本视频中，您将了解如何向现有电子邮件添加种子和校样，以及如何进行发送。
 
->[!VIDEO](https://video.tv.adobe.com/v/35508?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

@@ -7,14 +7,14 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 52%
+source-wordcount: '115'
+ht-degree: 59%
 
 ---
 
-# 编辑用户档案{#editing-a-profile}
+# 编辑轮廓{#editing-a-profile}
 
 
 
@@ -34,68 +34,77 @@ ht-degree: 52%
 >
 >如需详细信息，请参阅[此页面](../../configuration/using/about-schema-edition.md)。
 
-## “一般”选项卡 {#general-tab}
+>[!NOTE]
+>
+>要了解有关如何编辑配置文件以及访问这些配置文件的更多信息，请参阅有关[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的详细文档。
 
-此屏幕包含有关选定配置文件的所有常规数据。 特別是其中包含姓氏、名字、电子邮件地址、电子邮件接收格式等。它看起来如下所示：
+
+
+<!--
+## General tab {#general-tab}
+
+This screen contains all general data about the selected profile. In particular, it contains the last name, first name, email address, email reception format, etc. It looks like this:
 
 ![](assets/s_ncs_user_profile_general_tab.png)
 
 >[!NOTE]
 >
->列入阻止列表选择&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;选项时，这意味着配置文件处于状态，即配置文件已表示不希望被联系（例如，通过单击新闻稿中的退订链接）。 他们不再成为任何渠道（电子邮件、直邮等）上的投放的目标。 有关详细信息，请参见[此页面](../../delivery/using/understanding-quarantine-management.md)。
+>When the **[!UICONTROL No longer contact (by any channel)]** option is selected, this means that the profile is on denylist, i.e. the profile has expressed a wish not to be contacted (for example, by clicking an unsubscription link in a newsletter). They will no longer be targeted by deliveries on any channel (email, direct mail, etc.). For more on this, refer to [this page](../../delivery/using/understanding-quarantine-management.md).
 
-## “联系人信息”选项卡 {#contact-information-tab}
+## Contact information tab {#contact-information-tab}
 
-此屏幕包含所选配置文件的直邮地址。 它看起来如下所示：
+This screen contains the direct mail address of the selected profile. It looks like this:
 
 ![](assets/s_ncs_user_profile_details_tab.png)
 
-此屏幕显示地址的质量索引，以及该地址包含多少错误。 邮递方根据先前投放过程中所找到的错误数量直接使用此信息，且无法手动修改。
+This screen shows the quality index of the address, as well as how many errors the address contains. This information is used directly by the mail carrier based on the number of errors found during previous deliveries, and is not modifiable manually.
 
-## “其他”选项卡 {#other-tab}
+## Other tab {#other-tab}
 
-此屏幕包含可根据需要进行个性化的用户定义的字段。 您还可以通过&#x200B;**[!UICONTROL Field properties...]**&#x200B;更改字段的名称并定义其格式，如下所示：
+This screen contains user-defined fields that can be personalized based on requirements. You can also change the names of the fields and define their format, via **[!UICONTROL Field properties...]**, as shown below:
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
 >[!NOTE]
 >
->如需有关字段属性和添加字段的详细信息，请参阅[此页面](../../configuration/using/new-field-wizard.md)。
+>For more on field properties and on adding fields, refer to [this page](../../configuration/using/new-field-wizard.md).
 
-## “列表”选项卡 {#lists-tab}
+## Lists tab {#lists-tab}
 
-此屏幕显示选定配置文件所属的组。 单击&#x200B;**[!UICONTROL Add]**&#x200B;将配置文件订阅到列表。 单击&#x200B;**[!UICONTROL Detail]**&#x200B;以显示说明和所选列表中的配置文件列表。
+This screen displays the group(s) to which the selected profile belongs. Click **[!UICONTROL Add]** to subscribe the profile to a list. Click **[!UICONTROL Detail]** to display the description and the list of profiles in the selected list.
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-有关详细信息，请参阅[创建和管理列表](../../platform/using/creating-and-managing-lists.md)。
+For more on this, refer to [Create and manage lists](../../platform/using/creating-and-managing-lists.md).
 
-## “订阅”选项卡 {#subscriptions-tab}
+## Subscriptions tab {#subscriptions-tab}
 
-此界面包含用户档案所订阅的信息服务。
+This screen contains the information services to which the profile has subscribed.
 
 ![](assets/s_ncs_user_profile_subscript_tab_details.png)
 
-**[!UICONTROL Detail]**&#x200B;按钮显示所选订阅的属性。 **[!UICONTROL Add]**&#x200B;按钮用于手动添加新订阅。
+The **[!UICONTROL Detail]** button displays the properties of the selected subscription. The **[!UICONTROL Add]** button is used to add a new subscription manually.
 
-有关详细信息，请参见[此页面](../../delivery/using/managing-subscriptions.md)。
+For more on this, refer to [this page](../../delivery/using/managing-subscriptions.md).
 
-## “投放”选项卡 {#deliveries-tab}
+## Deliveries tab {#deliveries-tab}
 
-此屏幕显示选定用户档案的投放日志。 您也可以显示通过所有渠道投放至用户档案的投放动作的标签、日期和状态。
+This screen displays the delivery logs for the selected profile. You can also display the labels, dates, and status of the delivery actions addressed to the profile via all channels.
 
 ![](assets/s_ncs_user_profile_delivery_tab.png)
 
-## “跟踪”选项卡 {#tracking-tab}
+## Tracking tab {#tracking-tab}
 
-在此屏幕中，您可以查看选定配置文件的跟踪日志。 此信息用于跟踪投放后用户档案的行为。
+This screen lets you view the tracking logs for the selected profile. This information is used to track profile behavior following deliveries.
 
 ![](assets/s_ncs_user_profile_tracking_tab.png)
 
-此选项卡显示在投放中所有被跟踪的 URL 累积数目。
+This tab shows the cumulative total of all URLs tracked in deliveries.
 
-可配置列表的内容，通常包含：所点击的 URL、点击日期与时间，以及包含 URL 的文档。
+The list is configurable, and usually contains: the URL clicked, date and time of click, and the document that contained the URL.
 
 >[!NOTE]
 >
->如需有关跟踪功能的详细信息，请参阅[此页面](../../delivery/using/delivery-dashboard.md)。
+>For more on tracking functionality, please refer to [this page](../../delivery/using/delivery-dashboard.md).
+
+-->

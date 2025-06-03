@@ -4,11 +4,13 @@ title: 关于Adobe Campaign中的投放创建步骤
 description: 了解Adobe Campaign中的主要投放创建步骤
 feature: Channel Configuration
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 12%
+ht-degree: 22%
 
 ---
 
@@ -18,7 +20,7 @@ ht-degree: 12%
 
 1. **创建并识别投放**。 [了解更多信息](steps-create-and-identify-the-delivery.md)
 
-1. **定义投放内容**。 投放内容定义特定于每个渠道。 有关更多信息，请参阅专述章节：
+1. **定义投放内容**。投放内容定义特定于每个渠道。 有关更多信息，请参阅专门的部分：
 
    * [电子邮件渠道](defining-the-email-content.md)
    * [短信渠道](sms-create.md#defining-the-sms-content)

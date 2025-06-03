@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 100%
+source-wordcount: '189'
+ht-degree: 92%
 
 ---
 
@@ -37,43 +37,46 @@ Adobe Campaign 为数据控制者提供两种执行隐私访问和删除请求�
 
 >[!NOTE]
 >
->有关个人数据以及管理数据的不同实体（数据控制者、数据处理方和数据主体）的更多信息，请参阅[个人数据和角色](privacy-and-recommendations.md#personal-data)。
+>* 有关个人数据以及管理数据的不同实体（数据控制者、数据处理方和数据主体）的更多信息，请参阅[个人数据和角色](privacy-and-recommendations.md#personal-data)。
+>* 要了解有关隐私请求的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy){target=_blank}。
 
-## 先决条件 {#prerequesites}
+<!--
+## Prerequisites {#prerequesites}
 
-Adobe Campaign 为数据控制者提供用于创建和处理 Adobe Campaign 中存储的数据的隐私请求的工具。但是，数据控制者负责处理与数据主体（电子邮件、客户关怀或 Web 门户）的关系。
+Adobe Campaign offers Data Controllers tools to create and process Privacy requests for data stored in Adobe Campaign. However, it is the Data Controller's responsibility to handle the relationship with the Data Subject (email, customer care or a web portal).
 
-因此，作为数据控制者，您的职责是确认发出请求的数据主体的身份，并确认返回给请求者的数据与数据主体有关。
+It is therefore your responsibility as a Data Controller to confirm the identity of the Data Subject making the request and to confirm that the data returned to the requester is about the Data Subject.
 
-## 安装隐私包 {#install-privacy-package}
+## Installing the Privacy package {#install-privacy-package}
 
-要使用此功能，您需要通过 **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** > **[!UICONTROL Adobe Campaign Package]**&#x200B;菜单安装 **[!UICONTROL Privacy Data Protection Regulation]** 包。有关如何安装隐私包的更多信息，请参阅[有详细说明的文档](../../installation/using/installing-campaign-standard-packages.md)。
+In order to use this feature, you need to install the **[!UICONTROL Privacy Data Protection Regulation]** package via the **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** > **[!UICONTROL Adobe Campaign Package]** menu. For more information on how to install packages, refer to the [detailed documentation](../../installation/using/installing-campaign-standard-packages.md).
 
-在 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** 下创建了两个专用于隐私的新文件夹：
+Two new folders, specific to Privacy, are created under **[!UICONTROL Administration]** > **[!UICONTROL Platform]**:
 
-* **[!UICONTROL Privacy Requests]**：您将在此处创建隐私请求并跟踪其演变。
-* **[!UICONTROL Namespaces]**：您将在此处定义用于识别 Adobe Campaign 数据库中的数据主体的字段。
+* **[!UICONTROL Privacy Requests]**: this is where you will create your Privacy requests and track their evolution.
+* **[!UICONTROL Namespaces]**: this is where you will define the field that will be used to identify the Data Subject in the Adobe Campaign database.
 
 ![](assets/privacy-folders.png)
 
-在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** 中，每天运行三个技术工作流以处理隐私请求。
+In **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**, three technical workflows run every day to process Privacy requests.
 
 ![](assets/privacy-workflows.png)
 
-* **[!UICONTROL Collect privacy requests]**：此工作流会生成存储在 Adobe Campaign 中的收件人数据，并在隐私请求屏幕中提供下载。
-* **[!UICONTROL Delete privacy requests data]**：此工作流会删除存储在 Adobe Campaign 中的收件人数据。
-* **[!UICONTROL Privacy request cleanup]**：此工作流会清除 90 天以前的访问请求文件。
+* **[!UICONTROL Collect privacy requests]**: this workflow generates the recipient's data stored in Adobe Campaign and makes it available for download in the privacy request's screen.
+* **[!UICONTROL Delete privacy requests data]**: this workflow deletes the recipient's data stored in Adobe Campaign.
+* **[!UICONTROL Privacy request cleanup]**: this workflow erases the access request files that are older than 90 days.
 
-在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UICONTROL Named rights]** 中，已添加 **[!UICONTROL Privacy Data Right]** 指明权限。数据控制者必须具有这项指明权限才能使用隐私工具。这使得他们可以创建新请求、跟踪其演变、使用 API 等。
+In **[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UICONTROL Named rights]**, the **[!UICONTROL Privacy Data Right]** named right has been added. This named right is required for Data Controllers in order for them to use privacy tools. This allows them to create new requests, track their evolution, use the API, etc.
 
 ![](assets/privacy-right.png)
 
-## 命名空间 {#namesspaces}
+## Namespaces {#namesspaces}
 
-在创建隐私请求之前，您需要定义将要使用的命名空间。这是将用于识别 Adobe Campaign 数据库中的数据主体的键。
+Before creating Privacy requests, you need to define the namespace you will use. This is the key that will be used to identify the Data Subject in the Adobe Campaign database.
 
-开箱即用的三种命名空间：电子邮件、电话和手机。如果您需要其他命名空间（例如，收件人自定义字段），则可以从 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]** 创建新命名空间。
+Three namespaces are available out-of-the-box: email, phone and mobile phone. If you need a different namespace (a recipient custom field, for example), you can create a new one from **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
 >[!NOTE]
 >
->为获得最佳性能，建议使用现成的命名空间。
+>For optimal performance, it is recommended to use out-of-the-box namespaces.
+-->

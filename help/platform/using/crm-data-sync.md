@@ -4,7 +4,9 @@ title: CRM连接器数据同步
 description: 管理Campaign和您的CRM之间的数据
 feature: Microsoft CRM Integration, Salesforce Integration
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+hide: true
+hidefromtoc: true
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 1%
@@ -21,7 +23,7 @@ Adobe Campaign与CRM之间的数据同步是通过专用工作流活动执行的
 
 ![](assets/crm_connectors_msdynamics_07.png)
 
-此工作流通过Microsoft Dynamics导入联系人，将其与现有Adobe Campaign数据同步，删除重复联系人，并更新Adobe Campaign数据库。
+此工作流通过Microsoft Dynamics导入联系人，将其与现有Adobe Campaign数据同步，删除重复的联系人，并更新Adobe Campaign数据库。
 
 需要配置&#x200B;**[!UICONTROL CRM Connector]**&#x200B;活动以同步数据。
 
@@ -131,7 +133,7 @@ Adobe Campaign与CRM之间的数据同步是通过专用工作流活动执行的
 
 ![](assets/crm_import_wrong_filter.png)
 
-### 排序方式 {#order-by}
+### 排序依据 {#order-by}
 
 在Microsoft Dynamics和Salesforce.com中，您可以按升序或降序对要导入的远程字段进行排序。
 

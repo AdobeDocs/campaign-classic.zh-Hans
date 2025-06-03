@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 26%
+source-wordcount: '134'
+ht-degree: 29%
 
 ---
 
@@ -28,24 +28,28 @@ ht-degree: 26%
 
 >[!NOTE]
 >
->要显示数据库中所有收件人的列表，您必须创建一个视图。 在[文件夹和视图](../../platform/using/access-management-folders.md)中了解详情。
+> * 要显示数据库中所有收件人的列表，您必须创建一个视图。 在[文件夹和视图](../../platform/using/access-management-folders.md)中了解详情。
+> * 要了解有关如何管理用户档案的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}。
 
-## 移动收件人 {#moving-recipients}
 
-您可以选择一个或多个收件人，将其从收件人列表中拖放到所需文件夹中。 警告消息会要求您确认此操作。
+<!--
+## Move recipients {#moving-recipients}
 
-## 复制收件人 {#copying-a-recipient}
+You can select one or more recipients, drag them from the recipient list, and drop them in the desired folder. A warning message asks you to confirm this action.
 
-通过右键单击所需的收件人并选择&#x200B;**[!UICONTROL Copy]**，您可以复制同一文件夹中的收件人。
+## Copy a recipient {#copying-a-recipient}
 
-## 删除收件人 {#deleting-recipients}
+You can copy a recipient in the same folder by right-clicking the desired recipient and selecting **[!UICONTROL Copy]**.
 
-要删除收件人，请将他们移至特定文件夹，然后清除该文件夹的内容。 在这种情况下，**强烈建议不要使用**&#x200B;的&#x200B;**[!UICONTROL Delete]**&#x200B;选项。
+## Delete recipients {#deleting-recipients}
 
-要清除文件夹，请使用&#x200B;**[!UICONTROL Actions > Purge folder]**&#x200B;菜单，可通过右键单击所需文件夹来访问。
+To delete recipients, move them to a specific folder and then purge the content of this folder. It is **strongly recommended not to use** the **[!UICONTROL Delete]** option in this case.
+
+To purge a folder, use the **[!UICONTROL Actions > Purge folder]** menu, accessed by right-clicking the desired folder.
 
 ![](assets/s_ncs_user_purge_folder.png)
 
-单击&#x200B;**[!UICONTROL Start]**&#x200B;启动操作。 窗口的中间会显示进度状态，如下所示：
+Click **[!UICONTROL Start]** to launch the operation. The middle section of the window displays the progress status, as shown below:
 
 ![](assets/s_ncs_user_purge_folder_start.png)
+-->

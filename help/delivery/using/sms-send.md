@@ -5,23 +5,25 @@ description: 了解如何在Campaign中发送、监控和跟踪短信
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 4%
+source-wordcount: '887'
+ht-degree: 1%
 
 ---
 
-# 发送、监控和跟踪短信投放{#sms-properties}
+# 其他配置{#sms-properties}
 
-## 发送短信消息 {#sending-sms-messages}
+<!--
+## Send SMS messages {#sending-sms-messages}
 
-要批准您的邮件并将其发送给正在创建的投放的收件人，请单击&#x200B;**[!UICONTROL Send]**。
+To approve your message and send it to the recipients of the delivery being created, click **[!UICONTROL Send]**.
 
-验证和发送投放时的详细流程将在以下部分中介绍：
+The detailed process when validating and sending a delivery is presented in the sections below:
 
-* [验证投放](steps-validating-the-delivery.md)
-* [发送投放](steps-sending-the-delivery.md)
+* [Validate the delivery](steps-validating-the-delivery.md)
+* [Send the delivery](steps-sending-the-delivery.md)
+-->
 
 ## 高级参数 {#advanced-parameters}
 
@@ -55,13 +57,15 @@ ht-degree: 4%
 
 * **每条消息的最大短信数**：此选项允许您设置用于发送消息的短信数。 如果数字设置为0，则可以使用短信传递消息。 例如，如果短信数量设置为1或2，而消息超过此阈值，则不会发送该消息。
 
-## 监测和跟踪短信 {#monitoring-and-tracking-sms-deliveries}
+<!--
+## Monitor and track SMS {#monitoring-and-tracking-sms-deliveries}
 
-发送消息后，您可以监控和跟踪投放。 有关更多信息，请参阅一下章节。
+After sending messages, you can monitor and track your deliveries. For more on this, refer to these sections:
 
-* [监测投放](about-delivery-monitoring.md)
-* [了解投放失败](understanding-delivery-failures.md)
-* [关于邮件跟踪](about-message-tracking.md)
+* [Monitor a delivery](about-delivery-monitoring.md)
+* [Understand delivery failures](understanding-delivery-failures.md)
+* [About message tracking](about-message-tracking.md)
+-->
 
 ## 处理入站消息 {#processing-inbound-messages}
 

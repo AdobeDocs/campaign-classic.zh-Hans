@@ -4,7 +4,9 @@ title: Campaign - Microsoft Dynamics CRM连接器
 description: 了解如何连接Campaign和Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+hide: true
+hidefromtoc: true
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 2%
@@ -17,7 +19,7 @@ ht-degree: 2%
 
 在本页中，您将了解如何将Campaign Classic连接到&#x200B;**Microsoft Dynamics CRM 365**。
 
-可能的部署是通过&#x200B;**Web API**（推荐）。 请参阅下面的[部分](#microsoft-dynamics-implementation-step)，了解设置与Microsoft Dynamics连接的步骤。
+可能的部署是通过&#x200B;**Web API**（推荐）。 请参阅下面的[部分](#microsoft-dynamics-implementation-step)，了解与Microsoft Dynamics建立连接的步骤。
 
 数据同步通过专用工作流活动执行。 [了解详情](../../platform/using/crm-data-sync.md)。
 
@@ -34,7 +36,7 @@ ht-degree: 2%
 
 [在本节中了解详情](#config-crm-microsoft)
 
-Campaign Classic：
+在Campaign Classic中：
 1. 创建新的外部帐户
 1. 使用Microsoft Dynamics设置配置外部帐户
 1. 使用Configuration Assistant映射表和同步枚举
@@ -88,7 +90,7 @@ Campaign Classic：
 
 1. 单击&#x200B;**清单**&#x200B;链接以获取&#x200B;**证书密钥标识符(customKeyIdentifier)**&#x200B;和&#x200B;**密钥ID (keyId)**。
 
-稍后将需要&#x200B;**证书密钥标识符(customKeyIdentifier)**&#x200B;和&#x200B;**密钥ID (keyId)**，才能使用证书&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;配置您的Microsoft Dynamics CRM外部帐户。
+稍后需要使用&#x200B;**证书密钥标识符(customKeyIdentifier)**&#x200B;和&#x200B;**密钥ID (keyId)**&#x200B;来使用证书&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;配置您的Microsoft Dynamics CRM外部帐户。
 
 ### 配置权限 {#config-permissions-microsoft}
 
@@ -153,7 +155,7 @@ Campaign Classic：
 
 >[!NOTE]
 >
-> 从Microsoft[&#128279;](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)停用RDS后，内部部署和Office 365类型的CRM部署不再与Campaign兼容。 Adobe Campaign现在仅支持CRM版本&#x200B;**Dynamic CRM 365**&#x200B;的Web API部署。 [了解详情](../../rn/using/deprecated-features.md#crm-connectors)。
+> 从Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)停用[RDS后，内部部署和Office 365类型的CRM部署不再与Campaign兼容。 Adobe Campaign现在仅支持CRM版本&#x200B;**Dynamic CRM 365**&#x200B;的Web API部署。 [了解详情](../../rn/using/deprecated-features.md#crm-connectors)。
 
 要连接Microsoft Dynamics 365和Campaign，您需要在Campaign中创建并配置专用的&#x200B;**[!UICONTROL External Account]**。
 
@@ -165,7 +167,7 @@ Campaign Classic：
 
    >[!NOTE]
    >
-   >此部分[&#128279;](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)中详细介绍了中每个&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;的Microsoft Dynamics CRM外部帐户配置。
+   >在此部分](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)中详细介绍了[中每个&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;的Microsoft Dynamics CRM外部帐户配置。
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 

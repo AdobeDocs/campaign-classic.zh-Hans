@@ -6,14 +6,14 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 31%
+source-wordcount: '61'
+ht-degree: 22%
 
 ---
 
-# 添加用户档案{#adding-profiles}
+# 添加轮廓{#adding-profiles}
 
 
 
@@ -21,6 +21,13 @@ ht-degree: 31%
 
 ![](assets/s_ncs_user_profile_add.png)
 
-输入此用户档案的信息。 [编辑配置文件](../../platform/using/editing-a-profile.md)中介绍了要完成的选项卡和字段。
+>[!NOTE]
+>
+>要了解有关如何在Adobe Campaign控制台中创建配置文件的更多信息，请参阅[Campaign v8文档。](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
-单击&#x200B;**[!UICONTROL Save]**&#x200B;以验证配置文件创建。 然后系统会将该用户档案添加到 Adobe Campaign 数据库中。
+
+<!--
+Enter the information for this profile. The tabs and fields to be completed are described in [Editing a profile](../../platform/using/editing-a-profile.md).
+
+Click **[!UICONTROL Save]** to validate profile creation. The profile is then added in Adobe Campaign database.
+-->

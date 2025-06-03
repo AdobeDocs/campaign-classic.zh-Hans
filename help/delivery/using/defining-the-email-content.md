@@ -5,8 +5,10 @@ description: 了解如何在使用Adobe Campaign时定义电子邮件内容
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 1%
@@ -64,7 +66,7 @@ ht-degree: 1%
 
 消息的内容在投放配置窗口的下半部分中定义。
 
-默认情况下，将根据收件人偏好设置，以HTML或文本格式发送消息。 我们建议创建两种格式的内容，以确保在任何邮件系统中均可正确显示消息。 有关详情，请参阅[选择消息格式](email-parameters.md#selecting-message-formats)。
+默认情况下，根据收件人偏好设置，消息将以HTML或文本格式发送。 我们建议创建两种格式的内容，以确保在任何邮件系统中均可正确显示消息。 有关详情，请参阅[选择消息格式](email-parameters.md#selecting-message-formats)。
 
 * 要导入HTML内容，请使用&#x200B;**[!UICONTROL Open]**&#x200B;按钮。 您还可以将源代码直接粘贴到&#x200B;**[!UICONTROL Source]**&#x200B;子选项卡中。
 
@@ -72,11 +74,11 @@ ht-degree: 1%
 
   >[!IMPORTANT]
   >
-  >必须预先创建HTML内容，然后将其导入Adobe Campaign。 HTML编辑器不是为创建内容而设计的。
+  >必须预先创建HTML内容，然后将其导入Adobe Campaign。 HTML编辑器不是为内容创建而设计的。
 
   **[!UICONTROL Preview]**&#x200B;子选项卡允许您查看收件人的每个内容的呈现。 将内容的个性化字段和条件元素替换为所选用户档案的相应信息。
 
-  通过工具栏按钮可访问“HTML”页面的标准操作和格式参数。
+  通过工具栏按钮可访问HTML页面的标准操作和格式参数。
 
   ![](assets/s_ncs_user_wizard_email01_138.png)
 
@@ -92,7 +94,7 @@ ht-degree: 1%
   >
   >个性化字段的使用显示在[关于个性化](about-personalization.md)中。
 
-  通过页面底部的选项卡，可显示正在创建的页面的HTML代码，并查看消息及其个性化呈现。 要启动此显示，请单击&#x200B;**[!UICONTROL Preview]**，然后使用工具栏中的&#x200B;**[!UICONTROL Test personalization]**&#x200B;按钮选择一个收件人。 您可以从定义的目标中选择收件人，也可以选择其他收件人。
+  通过页面底部的选项卡，可显示所创建页面的HTML代码，并查看消息及其个性化内容的呈现。 要启动此显示，请单击&#x200B;**[!UICONTROL Preview]**，然后使用工具栏中的&#x200B;**[!UICONTROL Test personalization]**&#x200B;按钮选择一个收件人。 您可以从定义的目标中选择收件人，也可以选择其他收件人。
 
   ![](assets/s_ncs_user_wizard_email01_139.png)
 
@@ -144,7 +146,7 @@ Adobe Campaign允许您尝试新的交互式[AMP for Email](https://amp.dev/abou
 
 ## 添加图像 {#adding-images}
 
-HTML格式的电子邮件投放可以包含图像。 通过投放助手，您可以导入包含图像的HTML页面，或直接使用HTML编辑器通过&#x200B;**[!UICONTROL Image]**&#x200B;图标插入图像。
+HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以导入包含图像的HTML页面，或直接使用HTML编辑器通过&#x200B;**[!UICONTROL Image]**&#x200B;图标插入图像。
 
 
 ### 护栏 {#img-guardrails}
@@ -176,7 +178,7 @@ HTML格式的电子邮件投放可以包含图像。 通过投放助手，您可
 
 要通过投放助手管理图像，请执行以下操作：
 
-1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;图标。
+1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**图标。
    ![](assets/s_ncs_user_email_del_img_param.png)
 
 1. 在&#x200B;**[!UICONTROL Images]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Upload images]**。
@@ -186,7 +188,7 @@ HTML格式的电子邮件投放可以包含图像。 通过投放助手，您可
 * 您可以手动上传图像，而无需等待投放分析阶段。 为此，请单击&#x200B;**[!UICONTROL Upload the images straightaway...]**&#x200B;链接。
 * 您可以指定其他路径来访问跟踪服务器上的图像。 为此，请在&#x200B;**[!UICONTROL Images URL]**&#x200B;字段中输入它。 此值将覆盖安装助手参数中定义的值。
 
-在投放助手中打开包含图像的HTML内容时，会显示一条消息，根据投放参数，为您提供立即上传图像的选项。
+在投放助手中打开包含图像的HTML内容时，将会显示一条消息，根据投放参数，为您提供立即上传图像的选项。
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 

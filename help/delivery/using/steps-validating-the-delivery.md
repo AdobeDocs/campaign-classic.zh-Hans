@@ -4,25 +4,27 @@ title: 验证投放
 description: 了解如何验证投放
 feature: Deliverability, Email Rendering, Proofs
 role: User
+hide: true
+hidefromtoc: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1653'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
 # 验证投放 {#validating-the-delivery}
 
-创建和配置投放后，您必须先验证该投放，然后再将其发送到主目标。
+创建和配置投放后，您必须先验证该投放，然后再将其发送给主要目标。
 
 操作步骤：
 
-1. **分析投放**：此步骤允许您准备要投放的消息。 [了解详情](#analyzing-the-delivery)。
+1. **分析投放**：通过此步骤可准备要投放的消息。[了解详情](#analyzing-the-delivery)。
 
    分析期间应用的规则在[此部分](#validation-process-with-typologies)中介绍。 有关可用验证模式的详情，请参阅[更改审批模式](#changing-the-approval-mode)一节。
 
-1. **发送校样**：此步骤允许您控制内容、URL、个性化等。 请参阅[发送校样](steps-validating-the-delivery.md#sending-a-proof)和[定义特定校样目标](steps-defining-the-target-population.md#defining-a-specific-proof-target)以了解详情。
+1. **发送校样**：通过此步骤可控制内容、URL、个性化等。请参阅[发送校样](steps-validating-the-delivery.md#sending-a-proof)和[定义特定校样目标](steps-defining-the-target-population.md#defining-a-specific-proof-target)以了解详情。
 
 >[!IMPORTANT]
 >
@@ -127,7 +129,7 @@ ht-degree: 8%
 
 ## 发送校样 {#sending-a-proof}
 
-为了检测邮件配置中可能出现的错误，Adobe 强烈建议您设置投放验证周期。反复向测试收件人发送校样，确保内容已获得批准。每次进行变更时都应发送校样，以批准内容。
+为了检测邮件配置中可能出现的错误，Adobe强烈建议设置投放验证周期。 反复向测试收件人发送校样，确保内容已获得批准。每次进行变更时都应发送校样，以批准内容。
 
 >[!NOTE]
 >

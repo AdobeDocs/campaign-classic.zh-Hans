@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 10%
+source-wordcount: '103'
+ht-degree: 13%
 
 ---
 
@@ -25,46 +25,53 @@ Adobe Campaign Classic提供数据管理功能，允许您导入和导出数据�
 >
 >在使用此功能时，请牢记根据Adobe Campaign合同规定的SFTP存储、数据库存储和活动配置文件限制。
 
-## 工作流 {#workflows}
+>[!NOTE]
+>
+>要了解有关如何将数据导入和导出到Campaign的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}。
+
+
+<!--
+## Workflows {#workflows}
 
 <img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
-**工作流**&#x200B;是自动执行导入流程的有用方法。 无论您是从本地文件还是从SFTP导入数据，它们都允许您标准化数据管理过程。
+**Workflows** are a useful way to automate your import processes. Whether you import data from a local file or from a SFTP, they allow you to standardize your data management procedures.
 
-利用工作流，可以根据计划自动重复导入和导出操作，例如自动在几个信息系统之间交换数据。
+With workflows, import and export operations can be repeated automatically according to a schedule, for example to automate data exchange between several information systems.
 
-如需详细信息，请参阅[此小节](../../platform/using/import-export-workflows.md)。
+For more on this, refer to [this section](../../platform/using/import-export-workflows.md).
 
-## 一般导入和导出 {#generic-import-export}
+## Generic imports and exports {#generic-import-export}
 
 <img src="assets/do-not-localize/icon_templates.svg" width="60px">
 
-此外，Campaign Classic还提供&#x200B;**通用导入和导出**，允许您创建临时导入或导出作业。
+Additionally, Campaign Classic provides **generic imports and exports** that allow you to create occasional import or export jobs.
 
-导入和导出在专用模板中进行配置，您可以配置并使用专用模板来启动和监控导入和导出作业。
+Imports and exports are configured in dedicated templates, that you can configure and use to launch and monitor import and export jobs.
 
-有关通用导入和导出的详细信息，请参阅[此部分](../../platform/using/about-generic-imports-exports.md)。
+For more on generic imports and exports, refer to [this section](../../platform/using/about-generic-imports-exports.md).
 
 >[!IMPORTANT]
->通用导入和导出应仅用于临时操作。 为确保数据一致性并提高效率，建议使用工作流执行导入和导出操作。
+>Generic imports and exports should be used for occasional operations only. To ensure data consistency and improve efficiency, it is recommended to perform your import and export operations using workflows.
 
-## 数据加密和压缩 {#data-encryption-compression}
+## Data encryption and compression {#data-encryption-compression}
 
 <img src="assets/do-not-localize/icon_encrypt.svg" width="60px">
 
-Campaign Classic允许您导入压缩或加密文件，以及导出压缩或加密文件。
+Campaign Classic allows you to import zipped or encrypted files, and export zipped or encrypted file.
 
-这些操作通过在工作流中执行，方法是将预处理阶段应用于要利用的数据。
+These operations are performed within workflows, by applying pre-processing stages to the data you want to leverage.
 
-有关更多信息，请参阅一下章节。
+For more on this, refer to these sections:
 
-* [解压缩或解密文件](../../platform/using/unzip-decrypt.md)
-* [压缩或加密文件](../../platform/using/zip-encrypt.md)
+* [Unzip or decrypt a file](../../platform/using/unzip-decrypt.md)
+* [Zip or encrypt a file](../../platform/using/zip-encrypt.md)
 
-## 最佳实践和疑难解答 {#best-practices-troubleshooting}
+## Best practices and troubleshooting {#best-practices-troubleshooting}
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 
-在执行导入和导出操作时，您应该遵循几个[最佳实践](../../platform/using/import-export-best-practices.md)，以确保数据库内的数据一致性，并避免在更新或导出操作期间出现常见错误。
+You should follow several [best practices](../../platform/using/import-export-best-practices.md) when performing import and export operations to ensure data consistency within the database and avoid common errors during update or export operations.
 
-此外，[此部分](../../platform/using/sftp-server-usage.md)中还提供了与SFTP服务器使用情况相关的建议和常见问题。
+Additionally, recommendations and common issues related to SFTP servers usage are available in [this section](../../platform/using/sftp-server-usage.md).
+-->

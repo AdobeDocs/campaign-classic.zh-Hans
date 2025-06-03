@@ -8,7 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: cf75a435-97e2-4d4f-8b9b-c30a57390deb
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+hide: true
+hidefromtoc: true
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 3%
@@ -46,13 +48,13 @@ ht-degree: 3%
 
 使用文件夹选择字段右侧的十字可返回到默认显示模式。
 
-## 按状态过滤 {#filter-by-status}
+## 按状态筛选 {#filter-by-status}
 
 根据显示的信息类型，您可以按状态或按状态应用过滤器。 例如，对于投放，您可以选择仅显示已完成的投放，如下所示：
 
 ![](assets/d_ncs_user_interface_filter_delivery.png)
 
-## 排序方式 {#order-by}
+## 排序依据 {#order-by}
 
 您可以通过“per folder”筛选字段右侧的下拉列表选择页面上提供的数据的排序顺序。 此字段的内容取决于页面上的数据类型。
 

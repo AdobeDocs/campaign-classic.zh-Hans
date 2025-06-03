@@ -5,8 +5,10 @@ description: 了解如何配置、设计和发送将在日语移动设备上阅�
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email, Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -33,8 +35,8 @@ Adobe Campaign为手机上的电子邮件管理三种特定的日文格式：**�
 
 因此，您必须：
 
-* 仅以JPEG或GIF格式使用图像
-* 创建包含严格小于10 000字节的文本和HTML部分的投放（对于KDDI AU和DoCoMo）
+* 仅使用JPEG或GIF格式的图像
+* 创建一个包含严格小于10 000字节的文本和HTML部分的投放（对于KDDI AU和DoCoMo）
 * 使用总大小（编码前）小于100 KB的图像
 * 每条消息使用的图像不超过20个
 * 使用缩小的HTML格式（每个运算符可用的标记数量有限）
@@ -54,7 +56,7 @@ Adobe Campaign允许您检查消息格式是否适合发送到日本移动设备
 
 在内容编辑窗口的&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL More... > Deco-mail diagnostic]**&#x200B;允许您：
 
-* 检查HTML内容标签是否符合日文格式限制
+* 检查HTML内容标记是否符合日语格式限制
 * 检查消息中的图像数量是否未超过格式所施加的限制（20个图像）
 * 检查邮件总大小（小于100kB）
 
@@ -68,7 +70,7 @@ Adobe Campaign允许您检查消息格式是否适合发送到日本移动设备
 >
 >仅当至少有一个收件人配置为接收&#x200B;**[!UICONTROL Deco-mail (DoCoMo)]**、**[!UICONTROL Decore Mail (Softbank)]**&#x200B;或&#x200B;**[!UICONTROL Decoration Mail (KDDI AU)]**&#x200B;格式的电子邮件时，才会执行此分类规则。
 
-利用此分类规则，可确保投放符合日语运算符定义的[格式约束](#limitations-and-recommendations)，尤其是相对于电子邮件的总大小、HTML和文本部分的大小、邮件中的图像数量以及HTML内容中的标记。
+通过此分类规则，您可以确保投放符合日语运算符定义的[格式约束](#limitations-and-recommendations)，尤其是相对于电子邮件的总大小、HTML和文本部分的大小、邮件中的图像数量以及HTML内容中的标记。
 
 ### 发送校样 {#sending-proofs}
 

@@ -5,8 +5,10 @@ description: 附加文件
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email
 role: User
+hide: true
+hidefromtoc: true
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -21,12 +23,12 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->为了避免出现性能问题，建议每封电子邮件不要包含多个附件。 可以从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置建议的阈值。
+>为了避免出现性能问题，建议每封电子邮件不要包含多个附件。 可从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置建议的阈值。
 
 可能存在两种情况：
 
 * 选择文件并按原样将其附加到投放。
-* 为每个收件人个性化附件内容。 在这种情况下，您需要创建一个&#x200B;**计算附件**：附件的名称是在每封邮件的传递时计算的，具体取决于收件人。 如果您有&#x200B;**可变数字打印**&#x200B;选项，则还可以在传递时个性化内容并将其转换为PDF格式。
+* 为每个收件人个性化附件内容。 在这种情况下，您需要创建一个&#x200B;**计算附件**：附件的名称是在每封邮件的传递时计算的，具体取决于收件人。 如果您有&#x200B;**可变数字打印**&#x200B;选项，则内容也可以在交付时个性化，并转换为PDF格式。
 
 >[!NOTE]
 >
@@ -79,7 +81,7 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 可以使用以下选项：
 
 * 创建投放模板时指定了&#x200B;**文件名**
-* **文件的内容已个性化，并在每封邮件的传递过程中转换为PDF**
+* **文件的内容已个性化，并在每封邮件的投放期间转换为PDF**
 * **文件名是在投放分析期间计算的（它不能依赖于收件人配置文件）**
 * **文件名是在每个收件人交付时计算的（它可以依赖于收件人）**
 
@@ -115,7 +117,7 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
 1. 分析您的投放，然后启动它。
 
-   每个收件人都会收到附加到投放的个性化PDF。
+   每个收件人都会收到一个附加到投放的个性化PDF。
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 

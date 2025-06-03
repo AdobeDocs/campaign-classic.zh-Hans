@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 2%
+source-wordcount: '147'
+ht-degree: 10%
 
 ---
 
@@ -30,113 +30,117 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->所有这些步骤在通用查询编辑器中均可用。 在另一个上下文中创建查询时，可能会省略一些步骤。\
+>* 所有这些步骤在通用查询编辑器中均可用。 在另一个上下文中创建查询时，可能会省略一些步骤。\
 >查询活动显示在[此部分](../../workflow/using/query.md)中。
+>* 要了解有关查询以及如何创建查询的更多信息，请参阅[Campaign v8文档](../../workflow/using/query.md)。
 
-## 第1步 — 选择表 {#step-1---choose-a-table}
+<!--
+## Step 1 - Choose a table {#step-1---choose-a-table}
 
-选择包含要在&#x200B;**[!UICONTROL Document type]**&#x200B;窗口中查询的数据的表。 如有必要，请使用筛选器字段或&#x200B;**[!UICONTROL Filters]**&#x200B;按钮筛选数据。
+Select the table containing the data you want to query in the **[!UICONTROL Document type]** window. If necessary, filter the data using the filter field or the **[!UICONTROL Filters]** button.
 
 ![](assets/query_editor_nveau_21.png)
 
-## 步骤2 — 选择要提取的数据 {#step-2---choose-data-to-extract}
+## Step 2 - Choose data to extract {#step-2---choose-data-to-extract}
 
-在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中，选择要显示的数据：这些字段将构成输出列。
+In the **[!UICONTROL Data to extract]** window, select the data to display: these fields will make up the output columns.
 
-例如，选择&#x200B;**[!UICONTROL Age]**、**[!UICONTROL Primary key]**、**[!UICONTROL Email domain]**&#x200B;和&#x200B;**[!UICONTROL City]**。 结果将根据此选择进行组织。 使用窗口右侧的蓝色箭头可更改列顺序。
+For example, select **[!UICONTROL Age]**, **[!UICONTROL Primary key]**, **[!UICONTROL Email domain]** and **[!UICONTROL City]**. The results will be organized based on this selection. Use the blue arrows to the right of the window to change the column order.
 
 ![](assets/query_editor_nveau_01.png)
 
-可以通过将公式插入表达式中或对聚合函数运行进程来编辑表达式。 为此，请单击&#x200B;**[!UICONTROL Expression]**&#x200B;列字段，然后选择&#x200B;**[!UICONTROL Edit expression]**。
+You can edit an expression by inserting a formula into it or running a process on an aggregate function. To do this, click the **[!UICONTROL Expression]** column field, then select **[!UICONTROL Edit expression]**.
 
 ![](assets/query_editor_nveau_97.png)
 
-可以分组输出列数据：为此，请检查&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口的&#x200B;**[!UICONTROL Group]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**。 此函数围绕选中的分组轴生成结果。 [此节](../../workflow/using/querying-delivery-information.md)中提供了包含分组的查询示例。
+It is possible to group output column data: to do this, check **[!UICONTROL Yes]** in the **[!UICONTROL Group]** column of the **[!UICONTROL Data to extract]** window. This function generates a result around the checked grouping axis. An example of a query with grouping is available in [this section](../../workflow/using/querying-delivery-information.md).
 
 ![](assets/query_editor_nveau_56.png)
 
-* **[!UICONTROL Handle groupings (GROUP BY + HAVING)]**&#x200B;函数允许您“分组依据”并选择已经分组的内容（“具有”）。 此函数应用于输出列中的所有字段。 例如，此选项允许您对输出列的所有选择进行分组，并恢复特定类型的信息，例如介于35和50之间的收件人。
+* The **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** function lets you "group by" and select what has been grouped ("having"). This function applies to all fields in the output column. For example, this option lets you group all choices of an output column and recover a specific type of information, such as recipients between 35 and 50.
 
-  如需详细信息，请参阅[此小节](../../workflow/using/querying-using-grouping-management.md)。
+  For more on this, refer to [this section](../../workflow/using/querying-using-grouping-management.md).
 
-* **[!UICONTROL Remove duplicate rows (DISTINCT)]**&#x200B;函数允许您删除在输出列中获得的相同结果的重复项。 例如，如果选择输出列中的“姓氏”、“名字”和“电子邮件”字段进行人口普查，则数据相同的联系人将被删除，因为这意味着同一联系人已在数据库中输入多次：只考虑一个结果。
+* The **[!UICONTROL Remove duplicate rows (DISTINCT)]** function lets you deduplicate identical results obtained in the output column. For example, if you take a census by selecting the Last name, First name and Email fields in the output column, those with identical data will be eliminated, since it means the same contact has been entered several times in the database: only one result will be taken into account.
 
-## 步骤3 — 排序数据 {#step-3---sort-data}
+## Step 3 - Sort data {#step-3---sort-data}
 
-**[!UICONTROL Sorting]**&#x200B;窗口允许您对列内容进行排序。 使用箭头可更改列顺序：
+The **[!UICONTROL Sorting]** window lets you sort column content. Use the arrows to change the column order:
 
-* **[!UICONTROL Sorting]**&#x200B;列启用简单排序并按从A到Z或升序排列列内容。
-* **[!UICONTROL Descending sort]**&#x200B;将内容从Z到A按降序排列。 这对于查看记录销售额非常有用，例如：最高数字显示在列表顶部。
+* The **[!UICONTROL Sorting]** column enables a simple sort and arranges column content from A to Z or in ascending order.
+* The **[!UICONTROL Descending sort]** arranges the content from Z to A and in descending order. This is useful for viewing record sales for example: the highest figures are shown at the top of the list.
 
-在此示例中，数据根据收件人年龄按升序排序。
+In this example, the data is sorted in ascending order based on recipient age.
 
 ![](assets/query_editor_nveau_57.png)
 
-## 第4步 — 筛选数据 {#step-4---filter-data}
+## Step 4 - Filter data {#step-4---filter-data}
 
-利用查询编辑器，可筛选数据以优化搜索。
+The query editor lets you filter data to refine your search.
 
-提供的过滤器取决于查询涉及的表。
+The filters offered depend on the table which the query concerns.
 
 ![](assets/query_editor_nveau_09.png)
 
-选择&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;后，您将访问&#x200B;**[!UICONTROL Target elements]**&#x200B;部分：这允许您定义如何筛选要收集的数据。
+Once you select the **[!UICONTROL Filtering conditions]** you will access the **[!UICONTROL Target elements]** section: this lets you define how to filter the data to collect.
 
-* 要创建新筛选器，请选择创建要验证的公式所需的字段、运算符和值，以便选择数据。 可以组合多个条件（有关更多信息，请参阅[定义筛选条件](../../platform/using/defining-filter-conditions.md)）。
-* 要使用以前保存的筛选器，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮打开下拉列表，单击&#x200B;**[!UICONTROL Predefined filter]**&#x200B;并选择所需的筛选器。
+* To create a new filter, select the fields, operators and values required for creating the formula to be verified in order for data to be selected. It's possible to combine several conditions (for more on this, refer to [Defining filter conditions](../../platform/using/defining-filter-conditions.md)).
+* To use previously saved filters, open the drop-down list by clicking the **[!UICONTROL Add]** button, click **[!UICONTROL Predefined filter]** and select the one you want.
 
   ![](assets/query_editor_15.png)
 
-* 在&#x200B;**[!UICONTROL Generic query editor]**&#x200B;中创建的筛选器可用于其他查询应用程序，反之亦然。 要保存筛选器，请单击&#x200B;**[!UICONTROL Save]**&#x200B;图标。
+* The filters created in the **[!UICONTROL Generic query editor]** are available in other query applications and vice versa. To save a filter, click the **[!UICONTROL Save]** icon.
 
   >[!NOTE]
   >
-  >有关创建和使用筛选器的详细信息，请参阅[筛选选项](../../platform/using/filtering-options.md)。
+  >For more on creating and using filters, refer to [Filtering options](../../platform/using/filtering-options.md).
 
-如以下示例所示，要恢复所有说英语的收件人，请选择“收件人语言&#x200B;**等于** EN”。
+As shown in the following example, to recover all English-speaking recipients, select: "recipient language **equal to** EN".
 
 ![](assets/query_editor_nveau_89.png)
 
 >[!NOTE]
 >
->您可以通过在&#x200B;**值**&#x200B;字段中键入以下公式来直接访问选项： **$(options：OPTION_NAME)**。
+>You can directly access an option by typing the following formula in the **Value** field: **$(options:OPTION_NAME)**.
 
-单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以查看筛选条件的结果。 在这种情况下，所有说英语的收件人都会显示其姓名、名字和电子邮件地址。
+Click the **[!UICONTROL Preview]** tab to view the result of the filtering condition. In this case, all English-speaking recipients are displayed with their name, first name and email address.
 
 ![](assets/query_editor_nveau_98.png)
 
-熟悉SQL语言的用户可以单击&#x200B;**[!UICONTROL Generate SQL query]**&#x200B;查看SQL中的查询。
+Users familiar with SQL language can click **[!UICONTROL Generate SQL query]** to view the query in SQL.
 
 ![](assets/query_editor_nveau_99.png)
 
-## 步骤5 — 设置数据格式 {#step-5---format-data}
+## Step 5 - Format data {#step-5---format-data}
 
-配置限制筛选器后，您将访问&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口。 通过此窗口，您可以重新排列输出列、转换数据以及更改列标签的大写/小写。 它还允许您使用计算字段将公式应用于最终结果。
+Once you have configured the restriction filters, you will access the **[!UICONTROL Data formatting]** window. This window lets you re-arrange output columns, transform data, and change the upper/lower case of the column labels. It also lets you apply a formula to the final result using a calculated field.
 
 >[!NOTE]
 >
->有关计算字段类型的详细信息，请参阅[创建计算字段](../../platform/using/defining-filter-conditions.md#creating-calculated-fields)。
+>For more information on the types of calculated fields, refer to [Creating calculated fields](../../platform/using/defining-filter-conditions.md#creating-calculated-fields).
 
-未选中的列将不会显示在数据预览窗口中。
+Unchecked columns will not be shown in the data preview window.
 
 ![](assets/query_editor_nveau_10.png)
 
-通过&#x200B;**[!UICONTROL Transformation]**&#x200B;列，可将列标签更改为大写或小写。 选择该列并单击&#x200B;**[!UICONTROL Transformation]**&#x200B;列中的。 您可以选择：
+The **[!UICONTROL Transformation]** column lets you change a column label to upper or lower case. Select the column and click in the **[!UICONTROL Transformation]** column. You can choose:
 
-* **[!UICONTROL Switch to lower case]**，
-* **[!UICONTROL Switch to upper case]**，
-* **[!UICONTROL First letter in upper case]**。
+* **[!UICONTROL Switch to lower case]**,
+* **[!UICONTROL Switch to upper case]**, 
+* **[!UICONTROL First letter in upper case]**.
 
 ![](assets/query_editor_nveau_42.png)
 
-## 步骤6 — 预览数据 {#step-6---preview-data}
+## Step 6 - Preview data {#step-6---preview-data}
 
-**[!UICONTROL Data preview]**&#x200B;窗口是最后一个阶段。 单击&#x200B;**[!UICONTROL Start the preview of the data]**&#x200B;以获取您的查询结果。 它以列或XML格式提供。 单击&#x200B;**[!UICONTROL Generated SQL queries]**&#x200B;选项卡以查看SQL格式的查询。
+The **[!UICONTROL Data preview]** window is the last stage. Click **[!UICONTROL Start the preview of the data]** to get your query result. It is available in columns or in XML format. Click the **[!UICONTROL Generated SQL queries]** tab to view the query in SQL format.
 
-在此示例中，数据根据收件人年龄按升序排序。
+In this example, data is sorted in ascending order based on recipient age.
 
 ![](assets/query_editor_nveau_11.png)
 
 >[!NOTE]
 >
->默认情况下，**[!UICONTROL Data preview]**&#x200B;窗口中仅显示前200行。 若要更改此设置，请在&#x200B;**[!UICONTROL Lines to display]**&#x200B;框中输入一个数字，然后单击&#x200B;**[!UICONTROL Start the preview of the data]**。
+>By default, only the first 200 lines are displayed in the **[!UICONTROL Data preview]** window. To change this, enter a number in the **[!UICONTROL Lines to display]** box and click **[!UICONTROL Start the preview of the data]**.
+
+-->

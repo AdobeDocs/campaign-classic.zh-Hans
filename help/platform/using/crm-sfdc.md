@@ -1,10 +1,12 @@
 ---
 product: campaign
 title: Campaign - Salesforce CRM连接器
-description: 了解如何关联Campaign和Salesforce
+description: 了解如何连接Campaign和Salesforce
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+hide: true
+hidefromtoc: true
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -32,7 +34,7 @@ ht-degree: 0%
    要将Salesforce CRM外部帐户配置为与Adobe Campaign配合使用，您需要提供以下详细信息：
 
    * **[!UICONTROL Account]**
-用于登录Salesforce CRM的帐户。
+用于登录到Salesforce CRM的帐户。
 
    * **[!UICONTROL Password]**
 用于登录到Salesforce CRM的密码。
@@ -55,7 +57,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点中检查Adobe Campaign中生成的架构。
 
-   **Salesforce**&#x200B;架构的示例：
+   **Salesforce**&#x200B;架构示例：
 
    ![](assets/crm_connectors_sfdc_table.png)
 
@@ -88,4 +90,4 @@ Campaign和Salesforce.com现已连接。 您可以设置两个系统之间的数
 
 ![](assets/crm_connectors_sfdc_wf.png)
 
-在此页面[&#128279;](../../platform/using/crm-data-sync.md)中了解有关数据同步的更多信息。
+在此页面](../../platform/using/crm-data-sync.md)中了解有关数据同步[的更多信息。
