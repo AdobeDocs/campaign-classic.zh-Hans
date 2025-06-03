@@ -18,13 +18,13 @@ ht-degree: 0%
 
 请参阅Campaign v8文档以了解与短信投放创建相关的关键步骤：
 
-* [短信渠道概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target="_blank"}：了解如何在移动设备上向客户发送短信。
-* [创建短信投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html){target="_blank"}：探索创建新短信投放所需的不同步骤。
-* [定义内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html){target="_blank"}：了解如何个性化短信消息的内容。
-* [选择受众](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html){target="_blank"}：主目标是从Adobe Campaign数据库提取的，也可以存储在外部文件中。
-* [发送短信校样](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html)：设置投放验证周期至关重要。 在将内容发送给受众之前，请确保内容已获批准。
+* [短信渠道概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=zh-Hans){target="_blank"}：了解如何在移动设备上向客户发送短信。
+* [创建短信投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html?lang=zh-Hans){target="_blank"}：探索创建新短信投放所需的不同步骤。
+* [定义内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html?lang=zh-Hans){target="_blank"}：了解如何个性化短信消息的内容。
+* [选择受众](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html?lang=zh-Hans){target="_blank"}：主目标是从Adobe Campaign数据库提取的，也可以存储在外部文件中。
+* [发送短信校样](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html?lang=zh-Hans)：设置投放验证周期至关重要。 在将内容发送给受众之前，请确保内容已获批准。
 * [发送给受众](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-send.html?lang=zh-Hans)：当您的短信通过验证时，您现在可以将其发送给受众。
-* [监控和跟踪SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html)：监控SMS投放，以确保营销活动有效。
+* [监控和跟踪SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html?lang=zh-Hans)：监控SMS投放，以确保营销活动有效。
 
 请参阅这些页面以了解有关配置的信息：
 

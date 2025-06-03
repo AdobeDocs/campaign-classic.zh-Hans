@@ -23,7 +23,7 @@ ht-degree: 57%
 >
 >* 此集合中的帮助资料适用于其[最新内部版本](../../rn/using/latest-release.md)中的Campaign Classic v7。 当部分也适用于Campaign v8时，可提供特定徽章。
 >
->* 要了解有关Adobe Campaign以及如何开始它的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}。
+>* 要了解有关Adobe Campaign以及如何开始它的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/get-started){target=_blank}。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现主要特性和功能](#video)
 
@@ -69,7 +69,7 @@ You can combine the delivery functionalities and advanced campaign management fu
 
 ## Core capabilities and add-ons {#core-capabilities-and-add-ons}
 
-Adobe Campaign offers a set of capabilities to help you implementing and optimizing the conversational marketing functionalities depending on your needs and your architecture. Some of them are core capabilities and some depend on the installation of a package and on your configuration. A detailed product description is available here: [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Adobe Campaign offers a set of capabilities to help you implementing and optimizing the conversational marketing functionalities depending on your needs and your architecture. Some of them are core capabilities and some depend on the installation of a package and on your configuration. A detailed product description is available here: [Adobe Campaign product description](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 The following capabilities are available. Depending on your license agreement, some of these capabilities can be available or not in your instance.
 
@@ -95,6 +95,6 @@ This video presents Campaign Classic main features and capabilities.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
 
 -->
