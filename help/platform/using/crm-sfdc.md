@@ -90,4 +90,4 @@ Campaign和Salesforce.com现已连接。 您可以设置两个系统之间的数
 
 ![](assets/crm_connectors_sfdc_wf.png)
 
-在此页面](../../platform/using/crm-data-sync.md)中了解有关数据同步[的更多信息。
+在此页面[&#128279;](../../platform/using/crm-data-sync.md)中了解有关数据同步的更多信息。

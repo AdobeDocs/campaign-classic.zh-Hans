@@ -142,7 +142,7 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，�
 * AMP MIME部分必须包含[有效的AMP文档](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_emails/?format=email)。
 * AMP MIME部分必须小于100KB。
 
-您还可以查阅Gmail](https://developers.google.com/gmail/ampemail/tips)文档的[提示和已知限制。
+您还可以查阅Gmail[&#128279;](https://developers.google.com/gmail/ampemail/tips)文档的提示和已知限制。
 
 ## 定位AMP电子邮件 {#targeting-amp-email}
 
@@ -150,7 +150,7 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，�
 
 1. Adobe Campaign允许您测试向经适当配置的选定电子邮件地址投放AMP支持的动态电子邮件，以验证其内容和行为。 请参阅[测试选定地址的AMP电子邮件投放](#testing-amp-delivery-for-selected-addresses)。
 
-1. 列入允许列表测试后，您可以通过向相关电子邮件提供商注册以将您的发件人域添加到，将投放或促销活动作为AMP for Email计划的一部分发送。 请参阅向电子邮件提供商](#delivering-amp-emails-by-registering)注册以传递AMP电子邮件[。
+1. 列入允许列表测试后，您可以通过向相关电子邮件提供商注册以将您的发件人域添加到，将投放或促销活动作为AMP for Email计划的一部分发送。 请参阅向电子邮件提供商[&#128279;](#delivering-amp-emails-by-registering)注册以传递AMP电子邮件。
 
 ### 测试选定地址的AMP电子邮件投放 {#testing-amp-delivery-for-selected-addresses}
 
