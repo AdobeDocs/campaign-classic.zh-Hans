@@ -38,11 +38,11 @@ Adobe Campaign 包含一个工作流模块，允许您在应用程序服务器�
 
 * [构建工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target=_blank}：了解如何创建和运行定位、营销活动和技术工作流。
 
-* [最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}：了解优化Campaign工作流性能、改进工作流设计和选择正确设置的准则。
+* [最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target=_blank}：了解优化Campaign工作流性能、改进工作流设计和选择正确设置的准则。
 
-* [监视工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}：了解如何监视工作流执行以确保所有内容正确运行。
+* [监视工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target=_blank}：了解如何监视工作流执行以确保所有内容正确运行。
 
-* [工作流用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}：了解可以在其中使用工作流以及如何通过端到端用例实施工作流的不同上下文。
+* [工作流用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=zh-Hans){target=_blank}：了解可以在其中使用工作流以及如何通过端到端用例实施工作流的不同上下文。
 
 
 >[!ENDTABS]
