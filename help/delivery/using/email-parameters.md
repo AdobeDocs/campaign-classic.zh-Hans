@@ -116,7 +116,7 @@ ht-degree: 10%
 
 投放参数的&#x200B;**[!UICONTROL SMTP]**&#x200B;选项卡允许您配置退回邮件的管理。
 
-默认情况下，平台](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)的[默认错误框中会收到退回的电子邮件，但您可以为投放定义特定的错误地址。
+默认情况下，平台[&#128279;](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)的默认错误框中会收到退回的电子邮件，但您可以为投放定义特定的错误地址。
 
 您还可以从此屏幕定义特定地址，以便调查应用程序无法自动限定这些邮件时退回邮件的原因。 对于每个字段，**添加个性化字段**&#x200B;图标允许您添加个性化参数。
 
