@@ -4,16 +4,16 @@ title: 关于工作流
 description: 利用工作流实现流程自动化、管理数据和受众、发送消息等
 feature: Workflows, Data Management
 exl-id: 024a7344-9376-4ff3-926a-003148229f9f
-source-git-commit: fd082d5427314fbc91966f89048da5f193658f87
+source-git-commit: b45cc49f15f51e3624c46713c95966f465b2e4da
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '233'
 ht-degree: 9%
 
 ---
 
 # 使用工作流实现自动化 {#gs-workflows}
 
-Adobe Campaign的工作流模块使您的团队可以简化和自动化整个平台的端到端业务流程。 借助直观的图形界面，您可以在一个位置设计和管理可协调任务（如数据分段、活动执行、文件处理，甚至用户批准）的工作流。
+通过Adobe Campaign的工作流，您的团队可以简化和自动化整个平台的端到端业务流程。 借助直观的图形界面，您可以在一个位置设计和管理可协调任务（例如数据分段、活动执行、文件处理，甚至用户批准）的工作流。
 
 例如，您可以自动执行从远程服务器检索文件、提取其内容并将数据无缝加载到Adobe Campaign服务器的过程，从而减少手动工作并提高运营效率。 工作流引擎可确保可靠地执行每个步骤，并跟踪每个步骤以便进行可视化和控制。
 
@@ -31,15 +31,15 @@ Adobe Campaign的工作流模块使您的团队可以简化和自动化整个平
 
 请参阅Campaign v8文档以了解与工作流管理相关的关键步骤：
 
-* [工作流活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=zh-Hans){target=_blank}：活动描述了任务模板。 工作流包括定位、流量控制、操作和事件活动。
+* [工作流活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=zh-Hans){target=_blank}：活动是任务模板。 工作流包括定位、流量控制、操作和事件活动。
 
 * [构建工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target=_blank}：了解如何创建和运行定位、营销活动和技术工作流。
 
-* [最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target=_blank}：了解优化Campaign工作流性能、改进工作流设计和选择正确设置的准则。
+* [最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}：了解优化活动工作流性能、改进工作流设计和定义正确设置的准则。
 
-* [监视工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target=_blank}：了解如何监视工作流执行以确保所有内容正确运行。
+* [监视工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}：了解如何监视工作流执行以确保所有内容正确运行。
 
-* [工作流用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=zh-Hans){target=_blank}：了解可以在其中使用工作流以及如何通过端到端用例实施工作流的不同上下文。
+* [工作流用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}：了解可在其中使用工作流的上下文以及如何通过端到端用例实施工作流。
 
 
 >[!ENDTABS]
