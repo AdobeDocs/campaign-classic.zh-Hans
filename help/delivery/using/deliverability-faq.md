@@ -2,13 +2,12 @@
 product: campaign
 title: 在Adobe Campaign Classic中管理可投放性时的要点
 description: 了解在Adobe Campaign中管理可投放性时要检查的要点
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Deliverability, Troubleshooting
 role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -40,7 +39,7 @@ ht-degree: 1%
 * 更新您的订阅表单，以检测输入的域名中是否有任何错误(例如：gmaul.com或yaho.com)。
 * 如果您发现错误，指出您的邮件被声明为垃圾邮件，或您的邮件被持续阻止，请尝试排除过去12个月内未打开或单击您邮件之一的收件人，使其离开目标。
 
-如果问题仍然存在，请与商业或可交付性服务部门联系，[Adobe客户关怀团队](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+如果问题仍然存在，请联系商业或可投放性服务，[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 ## 阻止列表与隔离 {#denylist-versus-quarantine}
 

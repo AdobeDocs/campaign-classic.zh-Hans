@@ -4,9 +4,9 @@ title: 关于工作流
 description: 利用工作流实现流程自动化、管理数据和受众、发送消息等
 feature: Workflows, Data Management
 exl-id: 024a7344-9376-4ff3-926a-003148229f9f
-source-git-commit: b45cc49f15f51e3624c46713c95966f465b2e4da
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '232'
 ht-degree: 9%
 
 ---
@@ -35,11 +35,11 @@ ht-degree: 9%
 
 * [构建工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target=_blank}：了解如何创建和运行定位、营销活动和技术工作流。
 
-* [最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target=_blank}：了解优化活动工作流性能、改进工作流设计和定义正确设置的准则。
+* [最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}：了解优化活动工作流性能、改进工作流设计和定义正确设置的准则。
 
-* [监视工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target=_blank}：了解如何监视工作流执行以确保所有内容正确运行。
+* [监视工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}：了解如何监视工作流执行以确保所有内容正确运行。
 
-* [工作流用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=zh-Hans){target=_blank}：了解可在其中使用工作流的上下文以及如何通过端到端用例实施工作流。
+* [工作流用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}：了解可在其中使用工作流的上下文以及如何通过端到端用例实施工作流。
 
 
 >[!ENDTABS]

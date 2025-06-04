@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '2574'
-ht-degree: 89%
+source-wordcount: '2573'
+ht-degree: 86%
 
 ---
 
@@ -125,27 +125,26 @@ ht-degree: 89%
          + [定义正确的受众](delivery/using/define-the-right-audience.md)
          + [发送前检查](delivery/using/check-before-sending.md)
          + [跟踪和监测](delivery/using/track-and-monitor.md)
-   + 发送电子邮件 {#sending-emails}
-      + [关于电子邮件渠道](delivery/using/about-email-channel.md)
-      + [创建电子邮件投放](delivery/using/creating-an-email-delivery.md)
-      + [定义电子邮件的内容](delivery/using/defining-the-email-content.md)
-      + [定义交互式内容](delivery/using/defining-interactive-content.md)
-      + [使用增强 MTA 发送](delivery/using/sending-with-enhanced-mta.md)
-      + 发送电子邮件投放 {#sending-an-email}
-         + [发送电子邮件的主要步骤](delivery/using/sending-messages.md)
-         + [电子邮件参数](delivery/using/email-parameters.md)
-         + [使用日本手机发送](delivery/using/sending-emails-on-japanese-mobiles.md)
-      + [附加文件](delivery/using/attaching-files.md)
-   + 发送短信 {#sending-messages-on-mobiles}
-      + [短信入门](delivery/using/sms-channel.md)
-      + 配置短信渠道 {#sms-set-up}
-         + [在独立实例上配置短信](delivery/using/sms-set-up.md)
-         + [在中间源基础结构上配置短信](delivery/using/sms-set-up-mid.md)
-         + [短信连接器协议和设置](delivery/using/sms-protocol.md)
-         + [其他配置](delivery/using/sms-send.md)
-         + [短信故障排除](delivery/using/troubleshooting-sms.md)
-      + [创建短信](delivery/using/sms-create.md)
-      + [迁移到扩展通用 SMPP 连接器](delivery/using/unsupported-connector-migration.md)
++ 发送电子邮件 {#sending-emails}
++ [创建电子邮件投放](delivery/using/creating-an-email-delivery.md)
++ [定义电子邮件内容](delivery/using/defining-the-email-content.md)
++ [定义交互式内容](delivery/using/defining-interactive-content.md)
++发送电子邮件投放{#sending-an-email}
++ [发送电子邮件的主要步骤](delivery/using/sending-messages.md)
++ [电子邮件参数](delivery/using/email-parameters.md)
++ [在日本手机上发送](delivery/using/sending-emails-on-japanese-mobiles.md)
++ [附加文件](delivery/using/attaching-files.md)
++ [发送电子邮件](delivery/using/about-email-channel.md)
++ 发送短信 {#sending-messages-on-mobiles}
++ [开始使用短信](delivery/using/sms-channel.md)
++配置短信渠道{#sms-set-up}
++ [在独立实例上配置短信](delivery/using/sms-set-up.md)
++ [在中间源基础架构上配置SMS](delivery/using/sms-set-up-mid.md)
++ [SMS连接器协议和设置](delivery/using/sms-protocol.md)
++ [其他配置](delivery/using/sms-send.md)
++ [SMS疑难解答](delivery/using/troubleshooting-sms.md)
++ [创建短信](delivery/using/sms-create.md)
++ [迁移到扩展通用SMPP连接器](delivery/using/unsupported-connector-migration.md)
    + [发送 LINE 消息](delivery/using/line-channel.md)
    + 发送推送通知 {#sending-push-notifications}
       + [移动应用程序渠道入门](delivery/using/about-mobile-app-channel.md)
@@ -841,6 +840,7 @@ ht-degree: 89%
       + [2023 年系统升级](technotes/using/tech-stack-upgrade.md)
       + [IMS 更新](technotes/using/ims-updates.md)
       + [TLS 1.0 和 1.1 支持生命周期终止](technotes/using/eol-tls-support.md)
+      + [使用增强 MTA 发送](delivery/using/sending-with-enhanced-mta.md)
    + 电子邮件和推送通知{#technotes-email}
       + [Apple iOS 上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
       + [如何更新错误的硬退回](delivery/using/update-bounce-qualification.md)
