@@ -4,10 +4,10 @@ title: 关于工作流
 description: 利用工作流实现流程自动化、管理数据和受众、发送消息等
 feature: Workflows, Data Management
 exl-id: 024a7344-9376-4ff3-926a-003148229f9f
-source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
+source-git-commit: 83874a31321c7d06411b393e46ce2ef43d43d6ed
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 59%
+source-wordcount: '219'
+ht-degree: 45%
 
 ---
 
@@ -17,25 +17,39 @@ Adobe Campaign 包含一个工作流模块，允许您在应用程序服务器�
 
 例如，您可以使用某个工作流从服务器下载文件、解压缩，然后将其中包含的记录导入 Adobe Campaign 数据库。
 
-此外，一个工作流也可能涉及到要通知一个或多个操作员，或者是可以作出决策和批准流程的相关人员。这样就可以创建一次投放行动，将内容相关任务指派给一位或多位操作员，指定目标并在开始投放前审批校样。
+![](assets/do-not-localize/workflow.jpg){width="40%" align="center"}
 
-工作流在营销活动管理流程的不同上下文和阶段中出现。
+
+>[!BEGINTABS]
+
+>[!TAB 工作流文档]
 
 要了解有关工作流管理的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target=_blank}。
 
-![](assets/do-not-localize/workflow.jpg){width="40%"}
 
-了解与工作流管理相关的关键步骤：
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target=_blank}
+
+
+>[!TAB 有用的链接]
+
+请参阅Campaign v8文档以了解与工作流管理相关的关键步骤：
 
 * [工作流活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=zh-Hans){target=_blank}：活动描述了任务模板。 工作流包括定位、流量控制、操作和事件活动。
 
 * [构建工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target=_blank}：了解如何创建和运行定位、营销活动和技术工作流。
 
-* [最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target=_blank}：了解优化活动工作流性能、改进工作流设计和选择正确设置的准则。
+* [最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}：了解优化Campaign工作流性能、改进工作流设计和选择正确设置的准则。
 
-* [监视工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target=_blank}：了解如何监视工作流执行以确保所有内容都正确运行。
+* [监视工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}：了解如何监视工作流执行以确保所有内容正确运行。
 
-* [工作流用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=zh-Hans){target=_blank}：了解可以在其中使用工作流的不同上下文以及如何通过端到端用例实施工作流。
+* [工作流用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}：了解可以在其中使用工作流以及如何通过端到端用例实施工作流的不同上下文。
+
+
+>[!ENDTABS]
+
+
+
+
 
 <!--
 
