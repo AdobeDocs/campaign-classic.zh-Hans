@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d2292711cf67332eda3fe9bed78248ab62ca1818
+source-git-commit: 1e88021c9209bd23c3c949380f553473e890a9ce
 workflow-type: tm+mt
-source-wordcount: '2575'
-ht-degree: 86%
+source-wordcount: '2571'
+ht-degree: 89%
 
 ---
 
@@ -52,13 +52,13 @@ ht-degree: 86%
          + [开发](platform/using/faq-developers.md)
          + [教程](platform/using/tutorials.md)
       + [词汇表](platform/using/ac-glossary.md)
-   + 隐私 {#privacy}
-      + [隐私和同意](platform/using/privacy-and-recommendations.md)
-      + [隐私管理](platform/using/privacy-management.md)
-      + 隐私请求 {#privacy-requests}
-         + [关于隐私请求](platform/using/privacy-requests.md)
-         + [创建和管理隐私请求](platform/using/privacy-requests-ui.md)
-         + [自动隐私请求流程](platform/using/privacy-requests-api.md)
+      + 隐私 {#privacy}
+         + [隐私和同意](platform/using/privacy-and-recommendations.md)
+         + [隐私管理](platform/using/privacy-management.md)
+         + 隐私请求 {#privacy-requests}
+            + [关于隐私请求](platform/using/privacy-requests.md)
+            + [创建和管理隐私请求](platform/using/privacy-requests-ui.md)
+            + [自动隐私请求流程](platform/using/privacy-requests-api.md)
          + [选择禁用个人信息销售](platform/using/privacy-requests-ccpa.md)
    + 用户档案管理 {#profile-management}
       + [关于轮廓](platform/using/about-profiles.md)
@@ -67,7 +67,7 @@ ht-degree: 86%
       + [管理轮廓](platform/using/managing-profiles.md)
       + [更新数据](platform/using/updating-data.md)
       + [导入和导出轮廓](platform/using/exporting-and-importing-profiles.md)
-      + [创建和管理列表](platform/using/creating-and-managing-lists.md)
+   + [创建和管理列表](platform/using/creating-and-managing-lists.md)
    + 导入和导出数据 {#importing-and-exporting-data}
       + [数据导入和导出入门](platform/using/get-started-data-import-export.md)
       + [使用工作流导入和导出数据](platform/using/import-export-workflows.md)
@@ -111,41 +111,41 @@ ht-degree: 86%
 + 创建和发送消息 {#sending-messages}
    + [开始使用消息功能](delivery/using/communication-channels.md)
    + [投放设置](delivery/using/delivery-settings.md)
-   + 创建投放时的关键步骤 {#key-steps-when-creating-a-delivery}
+   + 快速入门 {#key-steps-when-creating-a-delivery}
       + [投放入门](delivery/using/steps-about-delivery-creation-steps.md)
       + [创建和识别投放](delivery/using/steps-create-and-identify-the-delivery.md)
       + [定义受众](delivery/using/steps-defining-the-target-population.md)
       + [验证投放](delivery/using/steps-validating-the-delivery.md)
       + [发送投放](delivery/using/steps-sending-the-delivery.md)
       + [投放最佳实践](delivery/using/delivery-best-practices.md)
-      + 投放最佳实践 {#delivery-bestpractices}
-         + [优化投放](delivery/using/optimize-delivery.md)
-         + [使用模板](delivery/using/use-templates.md)
-         + [生成个性化内容](delivery/using/design-and-personalize.md)
-         + [定义正确的受众](delivery/using/define-the-right-audience.md)
-         + [发送前检查](delivery/using/check-before-sending.md)
-         + [跟踪和监测](delivery/using/track-and-monitor.md)
-+ 发送电子邮件 {#sending-emails}
-+ [电子邮件入门](delivery/using/about-email-channel.md)
-+ [使用增强的MTA发送](delivery/using/sending-with-enhanced-mta.md)
-+ [创建电子邮件投放](delivery/using/creating-an-email-delivery.md)
-+ [定义电子邮件内容](delivery/using/defining-the-email-content.md)
-+ [定义交互式内容](delivery/using/defining-interactive-content.md)
-+发送电子邮件投放{#sending-an-email}
-+ [发送电子邮件的主要步骤](delivery/using/sending-messages.md)
-+ [电子邮件参数](delivery/using/email-parameters.md)
-+ [在日本手机上发送](delivery/using/sending-emails-on-japanese-mobiles.md)
-+ [附加文件](delivery/using/attaching-files.md)
-+ 发送短信 {#sending-messages-on-mobiles}
-+ [开始使用短信](delivery/using/sms-channel.md)
-+配置短信渠道{#sms-set-up}
-+ [在独立实例上配置短信](delivery/using/sms-set-up.md)
-+ [在中间源基础架构上配置SMS](delivery/using/sms-set-up-mid.md)
-+ [SMS连接器协议和设置](delivery/using/sms-protocol.md)
-+ [其他配置](delivery/using/sms-send.md)
-+ [SMS疑难解答](delivery/using/troubleshooting-sms.md)
-+ [创建短信](delivery/using/sms-create.md)
-+ [迁移到扩展通用SMPP连接器](delivery/using/unsupported-connector-migration.md)
+   + 投放最佳实践 {#delivery-bestpractices}
+      + [优化投放](delivery/using/optimize-delivery.md)
+      + [使用模板](delivery/using/use-templates.md)
+      + [生成个性化内容](delivery/using/design-and-personalize.md)
+      + [定义正确的受众](delivery/using/define-the-right-audience.md)
+      + [发送前检查](delivery/using/check-before-sending.md)
+      + [跟踪和监测](delivery/using/track-and-monitor.md)
+   + 发送电子邮件 {#sending-emails}
+      + [开始使用电子邮件](delivery/using/about-email-channel.md)
+      + [使用增强 MTA 发送](delivery/using/sending-with-enhanced-mta.md)
+      + [创建电子邮件投放](delivery/using/creating-an-email-delivery.md)
+      + [定义电子邮件的内容](delivery/using/defining-the-email-content.md)
+      + [定义交互式内容](delivery/using/defining-interactive-content.md)
+      + 发送电子邮件投放 {#sending-an-email}
+         + [发送电子邮件的主要步骤](delivery/using/sending-messages.md)
+         + [电子邮件参数](delivery/using/email-parameters.md)
+         + [使用日本手机发送](delivery/using/sending-emails-on-japanese-mobiles.md)
+      + [附加文件](delivery/using/attaching-files.md)
+   + 发送短信 {#sending-messages-on-mobiles}
+      + [短信入门](delivery/using/sms-channel.md)
+      + 配置短信渠道 {#sms-set-up}
+         + [在独立实例上配置短信](delivery/using/sms-set-up.md)
+         + [在中间源基础结构上配置短信](delivery/using/sms-set-up-mid.md)
+         + [短信连接器协议和设置](delivery/using/sms-protocol.md)
+         + [其他配置](delivery/using/sms-send.md)
+         + [短信故障排除](delivery/using/troubleshooting-sms.md)
+      + [创建短信](delivery/using/sms-create.md)
+      + [迁移到扩展通用 SMPP 连接器](delivery/using/unsupported-connector-migration.md)
    + [发送 LINE 消息](delivery/using/line-channel.md)
    + 发送推送通知 {#sending-push-notifications}
       + [移动应用程序渠道入门](delivery/using/about-mobile-app-channel.md)
@@ -209,9 +209,9 @@ ht-degree: 86%
       + [投放状态](delivery/using/delivery-statuses.md)
       + [了解投放失败](delivery/using/understanding-delivery-failures.md)
       + [了解隔离管理](delivery/using/understanding-quarantine-management.md)
-   + 跟踪消息 {#tracking-messages}
-      + [关于邮件跟踪](delivery/using/about-message-tracking.md)
-      + [如何配置跟踪的链接](delivery/using/how-to-configure-tracked-links.md)
+      + 跟踪消息 {#tracking-messages}
+         + [关于邮件跟踪](delivery/using/about-message-tracking.md)
+         + [如何配置跟踪的链接](delivery/using/how-to-configure-tracked-links.md)
       + 跟踪个性化链接 {#tracking-personalized-links}
          + [个性化链接跟踪入门](delivery/using/tracking-personalized-links.md)
          + [检测跟踪 URL](delivery/using/detecting-tracking-urls.md)
@@ -477,28 +477,28 @@ ht-degree: 86%
          + [加载投放内容](workflow/using/loading-delivery-content.md)
          + [跨渠道投放工作流](workflow/using/cross-channel-delivery-workflow.md)
          + [具有自定义日期字段的电子邮件扩充](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + 监控 {#monitoring}
-         + [向列表发送报告](workflow/using/sending-a-report-to-a-list.md)
-         + [监督工作流](workflow/using/supervising-workflows.md)
-         + [向操作员发送个性化提醒](workflow/using/sending-personalized-alerts-to-operators.md)
-      + 数据管理 {#data-management}
-         + [协调数据更新](workflow/using/coordinating-data-updates.md)
-         + [创建摘要列表](workflow/using/creating-a-summary-list.md)
-         + [丰富数据](workflow/using/enriching-data.md)
-         + [使用聚合](workflow/using/using-aggregates.md)
-         + [使用重复数据删除活动的合并功能](workflow/using/deduplication-merge.md)
-         + [设置循环导入工作流](workflow/using/recurring-import-workflow.md)
-      + 设计查询 {#designing-queries}
-         + [使用增量查询每季度更新列表](workflow/using/quarterly-list-update.md)
-      + 查询和筛选 {#designing-queries}
-         + [查询收件人表](workflow/using/querying-recipient-table.md)
-         + [查询投放信息](workflow/using/querying-delivery-information.md)
-         + [执行聚合计算](workflow/using/performing-aggregate-computing.md)
-         + [使用分组管理进行查询](workflow/using/querying-using-grouping-management.md)
-         + [使用多对多关系进行查询](workflow/using/querying-using-many-to-many-relationship.md)
-         + [添加明细列表类型计算字段](workflow/using/adding-enumeration-type-calculated-field.md)
-         + [创建筛选](workflow/using/creating-a-filter.md)
-         + [筛选重复的收件人](workflow/using/filtering-duplicated-recipients.md)
+   + 监控 {#monitoring}
+      + [向列表发送报告](workflow/using/sending-a-report-to-a-list.md)
+      + [监督工作流](workflow/using/supervising-workflows.md)
+      + [向操作员发送个性化提醒](workflow/using/sending-personalized-alerts-to-operators.md)
+   + 数据管理 {#data-management}
+      + [协调数据更新](workflow/using/coordinating-data-updates.md)
+      + [创建摘要列表](workflow/using/creating-a-summary-list.md)
+      + [丰富数据](workflow/using/enriching-data.md)
+      + [使用聚合](workflow/using/using-aggregates.md)
+      + [使用重复数据删除活动的合并功能](workflow/using/deduplication-merge.md)
+      + [设置循环导入工作流](workflow/using/recurring-import-workflow.md)
+   + 设计查询 {#designing-queries}
+      + [使用增量查询每季度更新列表](workflow/using/quarterly-list-update.md)
+   + 查询和筛选 {#designing-queries}
+      + [查询收件人表](workflow/using/querying-recipient-table.md)
+      + [查询投放信息](workflow/using/querying-delivery-information.md)
+      + [执行聚合计算](workflow/using/performing-aggregate-computing.md)
+      + [使用分组管理进行查询](workflow/using/querying-using-grouping-management.md)
+      + [使用多对多关系进行查询](workflow/using/querying-using-many-to-many-relationship.md)
+      + [添加明细列表类型计算字段](workflow/using/adding-enumeration-type-calculated-field.md)
+      + [创建筛选](workflow/using/creating-a-filter.md)
+      + [筛选重复的收件人](workflow/using/filtering-duplicated-recipients.md)
    + 监测工作流 {#monitoring-workflows}
       + [监测工作流执行](workflow/using/monitoring-workflow-execution.md)
       + [监测技术工作流](workflow/using/monitoring-technical-workflows.md)
@@ -625,12 +625,12 @@ ht-degree: 86%
          + [集成到 Web 服务器](installation/using/integration-into-a-web-server-for-linux.md)
       + [时区管理](installation/using/time-zone-management.md)
       + [安装中间源服务器](installation/using/mid-sourcing-server.md)
-   + 部署Campaign（内部部署） {#initial-configuration}
-      + [关键步骤](installation/using/about-initial-configuration.md)
-      + [创建实例并登录](installation/using/creating-an-instance-and-logging-on.md)
-      + [创建和配置数据库](installation/using/creating-and-configuring-the-database.md)
-      + [部署实例](installation/using/deploying-an-instance.md)
-      + [安装内置包](installation/using/installing-campaign-standard-packages.md)
+      + 部署Campaign（内部部署） {#initial-configuration}
+         + [关键步骤](installation/using/about-initial-configuration.md)
+         + [创建实例并登录](installation/using/creating-an-instance-and-logging-on.md)
+         + [创建和配置数据库](installation/using/creating-and-configuring-the-database.md)
+         + [部署实例](installation/using/deploying-an-instance.md)
+         + [安装内置包](installation/using/installing-campaign-standard-packages.md)
    + 配置营销活动 {#additional-configurations}
       + [Campaign 服务器配置](installation/using/configuring-campaign-server.md)
       + [定义安全区域](installation/using/security-zones.md)
@@ -670,10 +670,10 @@ ht-degree: 86%
             + [配置 Sybase IQ](installation/using/configure-fda-sybase.md)
             + [配置 Teradata](installation/using/configure-fda-teradata.md)
             + [配置 Vertica Analytics](installation/using/configure-fda-vertica.md)
-         + [远程访问权限](installation/using/remote-database-access-rights.md)
-         + [连接到数据库](installation/using/connecting-to-database.md)
-         + [创建数据架构](installation/using/creating-data-schema.md)
-         + [定义数据映射](installation/using/defining-data-mapping.md)
+      + [远程访问权限](installation/using/remote-database-access-rights.md)
+      + [连接到数据库](installation/using/connecting-to-database.md)
+      + [创建数据架构](installation/using/creating-data-schema.md)
+      + [定义数据映射](installation/using/defining-data-mapping.md)
    + 附录 {#appendices}
       + [服务器配置文件](installation/using/the-server-configuration-file.md)
       + [Campaign 网络端点](installation/using/campaign-network-endpoints.md)
