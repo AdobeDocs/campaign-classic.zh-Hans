@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: 1e88021c9209bd23c3c949380f553473e890a9ce
 workflow-type: tm+mt
 source-wordcount: '2571'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 89%
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
    + [文档更新](rn/using/documentation-updates.md)
 + 快速入门 {#getting-started}
-   + 开始使用Adobe Campaign {#starting-with-adobe-campaign}
+   + 开始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
       + [启动 Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + Adobe Campaign 工作区{#campaign-workspace}
@@ -60,7 +60,7 @@ ht-degree: 89%
             + [创建和管理隐私请求](platform/using/privacy-requests-ui.md)
             + [自动隐私请求流程](platform/using/privacy-requests-api.md)
          + [选择禁用个人信息销售](platform/using/privacy-requests-ccpa.md)
-   + 用户档案管理 {#profile-management}
+   + 轮廓管理 {#profile-management}
       + [关于轮廓](platform/using/about-profiles.md)
       + [编辑轮廓](platform/using/editing-a-profile.md)
       + [添加轮廓](platform/using/adding-profiles.md)
@@ -82,7 +82,7 @@ ht-degree: 89%
       + 管理数据加密和压缩 {#managing-data-encryption-compression}
          + [在处理之前解压缩或解密文件](platform/using/unzip-decrypt.md)
          + [在处理之前压缩或加密文件](platform/using/zip-encrypt.md)
-      + 最佳实践和疑难解答 {#best-practices}
+      + 最佳实践和故障排除 {#best-practices}
          + [导入和导出最佳实践](platform/using/import-export-best-practices.md)
          + [SFTP 服务器最佳实践和故障排除](platform/using/sftp-server-usage.md)
    + 筛选数据 {#filtering-data}
@@ -109,7 +109,7 @@ ht-degree: 89%
       + [与 CRM 同步数据](platform/using/crm-data-sync.md)
    + [帮助和支持选项](support.md)
 + 创建和发送消息 {#sending-messages}
-   + [开始使用消息功能](delivery/using/communication-channels.md)
+   + [消息功能快速入门](delivery/using/communication-channels.md)
    + [投放设置](delivery/using/delivery-settings.md)
    + 快速入门 {#key-steps-when-creating-a-delivery}
       + [投放入门](delivery/using/steps-about-delivery-creation-steps.md)
@@ -205,7 +205,7 @@ ht-degree: 89%
       + [访问投放列表](delivery/using/list-of-deliveries.md)
       + [投放仪表板](delivery/using/delivery-dashboard.md)
       + [投放性能最佳实践](delivery/using/delivery-performances.md)
-      + [投放疑难解答](delivery/using/delivery-troubleshooting.md)
+      + [投放故障排除](delivery/using/delivery-troubleshooting.md)
       + [投放状态](delivery/using/delivery-statuses.md)
       + [了解投放失败](delivery/using/understanding-delivery-failures.md)
       + [了解隔离管理](delivery/using/understanding-quarantine-management.md)
@@ -232,7 +232,7 @@ ht-degree: 89%
       + [内容管理者资源和原则](delivery/using/content-manager-resources-and-principles.md)
       + [用例：创建内容管理](delivery/using/use-case-creating-content-management.md)
       + [数据架构](delivery/using/data-schemas.md)
-      + [输入窗体](delivery/using/input-forms.md)
+      + [输入表单](delivery/using/input-forms.md)
       + [格式化](delivery/using/formatting.md)
       + [发布模板](delivery/using/publication-templates.md)
       + [使用内容模板](delivery/using/using-a-content-template.md)
@@ -244,7 +244,7 @@ ht-degree: 89%
    + 关于营销活动 {#about-marketing-campaigns}
       + [设计营销活动](campaign/using/designing-marketing-campaigns.md)
       + [访问营销活动](campaign/using/accessing-marketing-campaigns.md)
-   + 编排活动 {#orchestrate-campaigns}
+   + 编排营销活动 {#orchestrate-campaigns}
       + [营销活动入门](campaign/using/setting-up-marketing-campaigns.md)
       + [创建和配置模板](campaign/using/marketing-campaign-templates.md)
       + [添加投放](campaign/using/marketing-campaign-deliveries.md)
@@ -282,7 +282,7 @@ ht-degree: 89%
    + [创建假设验证](response/using/creating-hypotheses.md)
    + [假设验证跟踪](response/using/hypothesis-tracking.md)
 + 设计和共享报告 {#reporting}
-   + 报告入门 {#reporting-in-adobe-campaign}
+   + 报告快速入门 {#reporting-in-adobe-campaign}
       + [报告工具](reporting/using/about-adobe-campaign-reporting-tools.md)
       + [报告最佳实践](reporting/using/best-practices.md)
    + 访问内置报告 {#accessing-built-in-reports}
@@ -314,7 +314,7 @@ ht-degree: 89%
       + [配置对报告的访问权限](reporting/using/configuring-access-to-the-report.md)
       + [对报告执行操作](reporting/using/actions-on-reports.md)
    + [设计包含多维数据集的报告](reporting/using/ac-cubes.md)
-+ 设计Web内容 {#designing-content}
++ 设计 Web 内容 {#designing-content}
    + Web 应用程序 {#web-applications}
       + [Web 应用程序入门](web/using/about-web-applications.md)
       + [创建新 Web 应用程序](web/using/creating-a-new-web-application.md)
@@ -323,7 +323,7 @@ ht-degree: 89%
       + [解释 Web 应用程序](web/using/translating-a-web-application.md)
       + [跟踪 Web 应用程序访问](web/using/tracking-a-web-application.md)
       + [选择退出 Web 应用程序跟踪](web/using/web-application-tracking-opt-out.md)
-   + 编辑HTML内容 {#editing-html-content}
+   + 编辑 HTML 内容 {#editing-html-content}
       + [HTML 编辑器入门](web/using/about-campaign-html-editor.md)
       + [模板管理](web/using/template-management.md)
       + [内容编辑器界面](web/using/content-editor-interface.md)
@@ -331,7 +331,7 @@ ht-degree: 89%
       + [内容编辑最佳实践](web/using/content-editing-best-practices.md)
       + [创建登陆页面](web/using/creating-a-landing-page.md)
       + [用例：创建电子邮件投放](web/using/use-case-creating-an-email-delivery.md)
-   + Web窗体 {#web-forms}
+   + Web 窗体 {#web-forms}
       + [Web 窗体入门](web/using/about-web-forms.md)
       + [使用 Web 窗体模板](web/using/using-a-web-form-template.md)
       + [向 Web 窗体添加字段](web/using/adding-fields-to-a-web-form.md)
@@ -353,7 +353,7 @@ ht-degree: 89%
    + [配置调查](surveys/using/configuring-surveys.md)
    + [用例：创建引用窗体](surveys/using/use-case-creating-a-refer-a-friend-form.md)
    + [用例：显示在线调查的答案报告](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
-+ 与Adobe Experience Cloud集成 {#integrating-with-adobe-experience-cloud}
++ 与 Adobe Experience Cloud 集成 {#integrating-with-adobe-experience-cloud}
    + [Campaign 集成入门](integrations/using/about-campaign-integrations.md)
    + [创建您的 Adobe 技术帐户](integrations/using/oauth-technical-account.md)
    + Adobe Experience Cloud Triggers {#experience-triggers}
@@ -362,20 +362,20 @@ ht-degree: 89%
       + [为自定义实施配置事件](integrations/using/events.md)
       + [管道监测](integrations/using/pipeline-monitoring.md)
       + [管道故障排除](integrations/using/pipeline-troubleshooting.md)
-   + Adobe Experience Platform Sources与Destinations {#aep-sources-destinations}
+   + Adobe Experience Platform Sources 与 Destinations {#aep-sources-destinations}
       + [使用源和目标](integrations/using/get-started-sources-destinations.md)
       + [将 Adobe Experience Platform 受众引入 Campaign](integrations/using/ingest-aep-data.md)
       + [将数据从 Campaign 导出到 Adobe Experience Platform](integrations/using/export-campaign-data.md)
    + Adobe Analytics Connector{#analytics-connector}
       + [Adobe Analytics Connector 入门](integrations/using/gs-aa.md)
       + [Adobe Analytics Connector 配置](integrations/using/adobe-analytics-provisioning.md)
-   + 受众共享  {#audience-sharing}
+   + 受众共享 {#audience-sharing}
       + [与  [!DNL Adobe Experience Cloud] 共享受众](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [向 Adobe 提交请求](integrations/using/submitting-request-to-adobe.md)
       + [在  [!DNL Adobe Campaign] 中配置共享受众集成](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [故障排除](integrations/using/troubleshooting.md)
       + [导入和导出受众](integrations/using/importing-and-exporting-audiences.md)
-   + 资产共享 {#asset-sharing}
+   + 资源共享 {#asset-sharing}
       + [与  [!DNL Adobe Experience Cloud] 共享资源](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
       + [配置对  [!DNL Assets] 的访问](integrations/using/configuring-access-to-assets.md)
       + [插入共享资源](integrations/using/inserting-a-shared-asset.md)
@@ -395,7 +395,7 @@ ht-degree: 89%
       + [对  [!DNL ACS Connector] 进行故障排除](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflow-automation.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
-   + 工作流入门 {#introduction}
+   + 工作流快速入门 {#introduction}
       + [关于工作流](workflow/using/about-workflows.md)
       + [关于活动](workflow/using/about-activities.md)
       + [构建工作流](workflow/using/building-a-workflow.md)
@@ -408,7 +408,7 @@ ht-degree: 89%
       + [数据生命周期](workflow/using/data-life-cycle.md)
       + [定义审批](workflow/using/defining-approvals.md)
       + [架构](workflow/using/architecture.md)
-   + 定位活动 {#targeting-activities}
+   + 目标选择活动 {#targeting-activities}
       + [关于定位活动](workflow/using/about-targeting-activities.md)
       + [查询](workflow/using/query.md)
       + [增量查询](workflow/using/incremental-query.md)
@@ -513,12 +513,12 @@ ht-degree: 89%
       + [更改活动图像](workflow/using/managing-activity-images.md)
       + [管理时区](workflow/using/managing-time-zones.md)
       + [技术工作流](workflow/using/about-technical-workflows.md)
-+ 管理优惠 {#managing-offers}
-   + 互动入门 {#interaction-overview}
++ 管理产品建议 {#managing-offers}
+   + 互动快速入门 {#interaction-overview}
       + [互动和产品建议管理](interaction/using/interaction-and-offer-management.md)
       + [词汇表](interaction/using/i-glossary.md)
       + [互动最佳实践](interaction/using/interaction-best-practices.md)
-   + 常规操作 {#general-operation}
+   + 一般操作 {#general-operation}
       + [实施步骤](interaction/using/implementation-steps.md)
       + [基本原则](interaction/using/fundamental-principles.md)
    + 管理环境 {#managing-environments}
@@ -527,7 +527,7 @@ ht-degree: 89%
       + [实时/设计环境](interaction/using/live-design-environments.md)
       + [创建产品建议空间](interaction/using/creating-offer-spaces.md)
       + [创建预定义过滤器](interaction/using/creating-predefined-filters.md)
-   + 管理优惠目录 {#managing-an-offer-catalog}
+   + 管理产品建议目录 {#managing-an-offer-catalog}
       + [产品建议目录概述](interaction/using/offer-catalog-overview.md)
       + [创建产品建议类别](interaction/using/creating-offer-categories.md)
       + [推荐类别](interaction/using/recommending-a-category.md)
@@ -535,12 +535,12 @@ ht-degree: 89%
       + [批准和激活产品建议](interaction/using/approving-and-activating-an-offer.md)
       + [管理产品建议模板](interaction/using/managing-offer-templates.md)
       + [管理产品建议演示](interaction/using/managing-offer-presentation.md)
-   + 优惠模拟{#simulating-offers}
+   + 产品建议模拟{#simulating-offers}
       + [关于产品建议模拟](interaction/using/about-offers-simulation.md)
       + [执行设置](interaction/using/execution-settings.md)
       + [模拟范围](interaction/using/simulation-scope.md)
       + [模拟跟踪](interaction/using/simulation-tracking.md)
-   + 投放优惠 {#delivering-an-offer}
+   + 投放产品建议 {#delivering-an-offer}
       + [关于出站渠道](interaction/using/about-outbound-channels.md)
       + [通过助手集成产品建议](interaction/using/integrating-an-offer-via-the-wizard.md)
       + [通过工作流集成产品建议](interaction/using/integrating-an-offer-via-a-workflow.md)
@@ -549,7 +549,7 @@ ht-degree: 89%
       + [通过 JavaScript 集成（客户端）](interaction/using/integration-via-javascript-client-side.md)
       + [通过 SOAP（服务器端）进行集成](interaction/using/integration-via-soap-server-side.md)
       + [匿名互动](interaction/using/anonymous-interactions.md)
-   + 跟踪优惠 {#tracking-offers}
+   + 跟踪产品建议 {#tracking-offers}
       + [产品建议提议历史](interaction/using/offer-proposition-history.md)
       + [产品建议分析报告](interaction/using/offer-analysis-report.md)
    + 高级参数 {#advanced-parameters}
@@ -565,7 +565,7 @@ ht-degree: 89%
       + [入站渠道产品建议](interaction/using/offers-on-an-inbound-channel.md)
       + [出站渠道产品建议](interaction/using/offers-on-an-outbound-channel.md)
 + 事务性消息 {#transactional-messaging}
-   + [事务性消息传递入门](message-center/using/about-transactional-messaging.md)
+   + [事务性消息传递快速入门](message-center/using/about-transactional-messaging.md)
    + 配置事务性消息传递 {#configure-transactional-messaging}
       + [事务性消息传递架构](message-center/using/transactional-messaging-architecture.md)
       + [配置实例](message-center/using/configuring-instances.md)
@@ -608,30 +608,30 @@ ht-degree: 89%
       + [网络、数据库和 SSL/TLS](installation/using/network-database.md)
       + [服务器安全设置](installation/using/server-configuration.md)
       + [Web 服务器安全设置](installation/using/web-server-configuration.md)
-   + 安装Campaign（内部部署）{#install-campaign-on-prem}
+   + 安装 Campaign（内部部署）{#install-campaign-on-prem}
       + 部署准则 {#deployment-guidelines}
          + [数据库服务器](installation/using/database.md)
          + [应用程序服务器](installation/using/application-server.md)
          + [消息服务器](installation/using/messaging-server.md)
          + [网络配置](installation/using/network-configuration.md)
-      + Windows上的Campaign {#installing-campaign-in-windows}
-         + [入门](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+      + Windows 上的 Campaign {#installing-campaign-in-windows}
+         + [快速入门](installation/using/prerequisites-of-campaign-installation-in-windows.md)
          + [安装服务器](installation/using/installing-the-server.md)
          + [集成到 Web 服务器 (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
          + [适用于 Windows 的客户端控制台可用性](installation/using/client-console-availability-for-windows.md)
-      + Linux上的Campaign {#installing-campaign-in-linux}
+      + Linux 上的 Campaign {#installing-campaign-in-linux}
          + [先决条件](installation/using/prerequisites-of-campaign-installation-in-linux.md)
          + [安装包](installation/using/installing-packages-with-linux.md)
          + [集成到 Web 服务器](installation/using/integration-into-a-web-server-for-linux.md)
       + [时区管理](installation/using/time-zone-management.md)
       + [安装中间源服务器](installation/using/mid-sourcing-server.md)
-      + 部署Campaign（内部部署） {#initial-configuration}
+      + 部署 Campaign（内部部署） {#initial-configuration}
          + [关键步骤](installation/using/about-initial-configuration.md)
          + [创建实例并登录](installation/using/creating-an-instance-and-logging-on.md)
          + [创建和配置数据库](installation/using/creating-and-configuring-the-database.md)
          + [部署实例](installation/using/deploying-an-instance.md)
          + [安装内置包](installation/using/installing-campaign-standard-packages.md)
-   + 配置营销活动 {#additional-configurations}
+   + 配置 Campaign {#additional-configurations}
       + [Campaign 服务器配置](installation/using/configuring-campaign-server.md)
       + [定义安全区域](installation/using/security-zones.md)
       + [设置 URL 权限](installation/using/url-permissions.md)
@@ -644,13 +644,13 @@ ht-degree: 89%
       + [配置 SpamAssassin](installation/using/configuring-spamassassin.md)
    + 连接到 Campaign{#connect-to-campaign}
       + [安装客户端控制台](installation/using/installing-the-client-console.md)
-      + 通过Adobe ID连接 {#connecting-via-an-adobe-id}
+      + 通过 Adobe ID 连接 {#connecting-via-an-adobe-id}
          + [关于  [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [配置 Adobe  [!DNL IMS]](integrations/using/configuring-ims.md)
          + [实施 Adobe  [!DNL IMS]](integrations/using/implementing-ims.md)
          + [IMS 故障排除](integrations/using/ims-troubleshooting.md)
       + [通过 LDAP 连接](installation/using/connecting-through-ldap.md)
-   + 将Campaign连接到外部系统 {#accessing-external-database}
+   + 将 Campaign 连接到外部系统 {#accessing-external-database}
       + [配置外部帐户](installation/using/external-accounts.md)
       + 配置联合数据访问{#configure-fda}
          + [联合数据访问入门](installation/using/about-fda.md)
@@ -682,7 +682,7 @@ ht-degree: 89%
       + [Campaign 选项列表](installation/using/configuring-campaign-options.md)
       + [卸载 Campaign](installation/using/uninstalling-campaign.md)
       + [安装新字体](installation/using/install-fonts.md)
-+ 监视指南 {#monitoring-campaign-classic}
++ 监控指南 {#monitoring-campaign-classic}
    + 简介 {#introduction}
       + [前言](production/using/foreword.md)
       + [一般架构](production/using/general-architecture.md)
@@ -701,7 +701,7 @@ ht-degree: 89%
       + [恢复](production/using/restoration.md)
       + [复制环境](production/using/duplicating-environments.md)
       + [数据库清理工作流](production/using/database-cleanup-workflow.md)
-   + 更新Adobe Campaign {#updating-adobe-campaign}
+   + 更新 Adobe Campaign {#updating-adobe-campaign}
       + [简介](production/using/introduction.md)
       + [执行内部版本升级](production/using/build-upgrade.md)
       + [升级流程（内部部署）](production/using/upgrading.md)
@@ -714,13 +714,13 @@ ht-degree: 89%
       + [RDBMS 特定建议](production/using/rdbms-specific-recommendations.md)
       + [应用程序对象](production/using/application-objects.md)
    + 故障排除 {#troubleshooting-toc}
-      + [生产疑难解答概述](production/using/troubleshooting.md)
+      + [生产方面的故障排除概述](production/using/troubleshooting.md)
       + 常见问题和一般问题 {#common-general-issues-toc}
          + [模块和常见问题](production/using/modules-and-frequent-issues.md)
          + [工作流执行](production/using/workflow-execution.md)
          + [密码丢失](production/using/lost-password.md)
          + [控制台更新](production/using/console-update.md)
-      + 投放疑难解答 {#delivery-troubleshooting-toc}
+      + 投放故障排除 {#delivery-troubleshooting-toc}
          + [性能和吞吐量问题](production/using/performance-and-throughput-issues.md)
          + [图像显示问题](production/using/image-display-issues.md)
          + [缺少图像](production/using/images-missing.md)
@@ -738,7 +738,7 @@ ht-degree: 89%
          + [Linux 中的堆栈跟踪](production/using/stack-trace-in-linux.md)
          + [JSP 行为](production/using/jsp-behavior.md)
          + [查找 Tomcat 版本](production/using/locate-tomcat-version.md)
-+ 开发人员指南 {#configuring-campaign-classic}
++ 开发者指南 {#configuring-campaign-classic}
    + 数据模型 {#data-model}
       + [关于数据模型](configuration/using/about-data-model.md)
       + [数据模型描述](configuration/using/data-model-description.md)
@@ -768,7 +768,7 @@ ht-degree: 89%
          + [SrcSchema](configuration/using/schema/srcschema.md)
          + [Sysfilter](configuration/using/schema/sysfilter.md)
          + [值](configuration/using/schema/value.md)
-   + 编辑模式 {#editing-schemas}
+   + 编辑架构 {#editing-schemas}
       + [关于架构版本](configuration/using/about-schema-edition.md)
       + [数据架构](configuration/using/data-schemas.md)
       + [现有表的架构](configuration/using/schema-of-an-existing-table.md)
@@ -805,7 +805,7 @@ ht-degree: 89%
       + [使用工作流创建轮廓列表](configuration/using/creating-a-profile-list-with-a-workflow.md)
       + [管理工作流](configuration/using/managing-workflows.md)
       + [管理报告](configuration/using/managing-reports.md)
-   + 设置Web跟踪 {#setting-up-web-tracking}
+   + 设置 Web 跟踪 {#setting-up-web-tracking}
       + [关于 Web 跟踪](configuration/using/about-web-tracking.md)
       + [Web 跟踪模式](configuration/using/web-tracking-mode.md)
       + [Web 跟踪标记：定义](configuration/using/web-tracking-tag-definition.md)
@@ -828,7 +828,7 @@ ht-degree: 89%
 + 技术说明 {#technotes}
    + [硬件大小调整建议](technotes/using/hardware-sizing.md)
    + [中间源基础架构的入站短信工作流活动](technotes/using/inbound-sms-wf.md)
-   + 升级到IMS{#ims}
+   + 升级到 IMS{#ims}
       + [过渡至 Adobe IMS](technotes/using/ac-ims.md)
       + [将用户迁移到 IMS](technotes/using/migrate-users-to-ims.md)
       + [将技术操作员迁移到 Developer Console](technotes/using/ims-migration.md)
@@ -847,7 +847,7 @@ ht-degree: 89%
       + [ISP 中断后更新错误的硬退回](delivery/using/update-bounces.md)
       + [iOS 证书更新](technotes/using/ios-certificate-update.md)
       + [跟踪的 URL 更新](technotes/using/tracked-urls.md)
-   + 迁移到Adobe Managed Services{#dc-migration}
+   + 迁移到 Adobe Managed Services{#dc-migration}
       + [迁移到公共云](technotes/using/dc-migration.md)
       + [常见问题解答](technotes/using/dc-migration-faq.md)
    + [基于 GCM 的函数](technotes/using/gcm-functions.md)
