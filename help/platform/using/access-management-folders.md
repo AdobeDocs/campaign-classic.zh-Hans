@@ -7,10 +7,10 @@ feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 6e83067cef2b08b5bee37610bfef515714756ada
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 1%
+source-wordcount: '517'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ Explorer导航树的每个文件夹都具有附加的读、写和删除访问权
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-可以自定义Explorer导航树。 在本节[&#128279;](adobe-campaign-workspace.md)中了解配置步骤和最佳实践。
+可以自定义Explorer导航树。 在本节](adobe-campaign-workspace.md)中了解配置步骤和最佳实践[。
 
 ### 什么是视图 {#about-views}
 
@@ -55,16 +55,21 @@ Explorer导航树的每个文件夹都具有附加的读、写和删除访问权
 
 ### 添加文件夹和创建视图 {#adding-folders-and-creating-views}
 
+>[!IMPORTANT]
+>
+>开箱即用的文件夹不应标记为视图。
+
+
 在下面的示例中，我们将创建新文件夹以显示特定数据：
 
 1. 创建新的&#x200B;**[!UICONTROL Deliveries]**&#x200B;类型文件夹，并将其命名为&#x200B;**投放France**。
 1. 右键单击此文件夹并选择&#x200B;**[!UICONTROL Properties...]**。
 
-   ![](assets/s_ncs_user_add_folder_exple.png)
+   ![屏幕截图显示右键单击属性](assets/s_ncs_user_add_folder_exple.png)
 
 1. 在&#x200B;**[!UICONTROL Restriction]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL This folder is a view]**。 随后将显示数据库中的所有投放。
 
-   ![](assets/s_ncs_user_add_folder_exple01.png)
+   ![显示正在检查的视图框的屏幕](assets/s_ncs_user_add_folder_exple01.png)
 
 1. 在窗口的中间部分通过查询编辑器定义投放过滤器条件：随后将显示与定义的过滤器对应的营销活动。
 
@@ -74,7 +79,7 @@ Explorer导航树的每个文件夹都具有附加的读、写和删除访问权
 
    过滤条件为：
 
-![](assets/s_ncs_user_add_folder_exple00.png)
+![显示不同筛选条件的屏幕截图](assets/s_ncs_user_add_folder_exple00.png)
 
 视图中将显示以下投放：
 
@@ -84,46 +89,48 @@ Explorer导航树的每个文件夹都具有附加的读、写和删除访问权
 >
 >管理[事务性消息传递](../../message-center/using/about-transactional-messaging.md)事件时，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹不能设置为执行实例上的视图，因为这会导致访问权限问题。 有关事件集合的详细信息，请参阅[此部分](../../message-center/using/about-event-processing.md#event-collection)。
 
-## 文件夹的权限
+<!--
+## Permissions on a folder
 
-### 编辑文件夹权限 {#edit-permissions-on-a-folder}
+### Edit permissions on a folder {#edit-permissions-on-a-folder}
 
-要编辑树中特定文件夹的权限，请执行以下步骤：
+To edit permissions on a specific folder of the tree, follow the steps below:
 
-1. 右键单击该文件夹并选择&#x200B;**[!UICONTROL Properties...]**。
+1. Right-click on the folder and select **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. 单击&#x200B;**[!UICONTROL Security]**&#x200B;选项卡可查看此文件夹的授权。
+1. Click the **[!UICONTROL Security]** tab to view authorizations on this folder.
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
-### 修改权限 {#modify-permissions}
+### Modify permissions {#modify-permissions}
 
-要修改权限，您可以：
+To modify permissions, you can:
 
-* **替换组或操作员**。 为此，请单击对该文件夹具有权限的组（或操作员）之一，然后从下拉列表中选择一个新组（或新操作员）：
+* **Replace a group or an operator**. To do this, click one of the groups (or operators) with rights to the folder, and select a new group (or a new operator) from the drop-down list:
 
   ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **授权组或操作员**。 为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后选择要为此文件夹分配授权的组或运算符。
-* **禁止群组或操作员**。 为此，请单击&#x200B;**[!UICONTROL Delete]**&#x200B;并选择要从中移除此文件夹授权的组或运算符。
-* **选择分配给组或操作员的权限**。 为此，请单击相关的组或操作员，然后选择要授予的访问权限并取消选择其他权限。
+* **Authorize a group or an operator**. To do this, click the **[!UICONTROL Add]** button and select the group or operator to which you want to assign authorizations for this folder.
+* **Forbid a group or an operator**. To do this, click **[!UICONTROL Delete]** and select the group or operator from which you want to remove authorization for this folder.
+* **Select the rights assigned to a group or an operator**. To do this, click the group or operator concerned, then select the access rights you want to grant and deselect the others.
 
   ![](assets/s_ncs_user_folder_properties_security03.png)
 
-### 传播权限 {#propagate-permissions}
+### Propagate permissions {#propagate-permissions}
 
-您可以传播授权和访问权限。 为此，请在文件夹属性中选择&#x200B;**[!UICONTROL Propagate]**&#x200B;选项。
+You can propagate authorizations and access rights. To do this, select the **[!UICONTROL Propagate]** option in the folder properties.
 
-此窗口中定义的授权随后将应用于当前节点的所有子文件夹。 然后，您可以对每个子文件夹重载这些授权。
+The authorizations defined in this window will then be applied to all the sub-folders of the current node. You can then overload these authorizations for each of the sub-folders.
 
 >[!NOTE]
 >
->为文件夹清除此选项不会自动为子文件夹清除它。 您必须为每个子文件夹显式清除它。
+>Clearing this option for a folder does not automatically clear it for the sub-folders. You must clear it explicitly for each of the sub-folders.
 
-### 向所有操作员授予访问权限 {#grant-access-to-all-operators}
+### Grant access to all operators {#grant-access-to-all-operators}
 
-在&#x200B;**[!UICONTROL Security]**&#x200B;选项卡中，如果选择&#x200B;**[!UICONTROL System folder]**&#x200B;选项，则所有操作员都将有权访问此数据，不论他们具有什么权限。 如果清除此选项，则必须将运算符（或其组）明确添加到授权列表，以便他们能够访问。
+In the **[!UICONTROL Security]** tab, if the **[!UICONTROL System folder]** option is selected, all operators will have access to this data, regardless of their rights. If this option is cleared, you must explicitly add the operator (or their group) to the list of authorizations in order for them to have access.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)
+-->
