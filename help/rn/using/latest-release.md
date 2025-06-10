@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: cdbcfc5aa0614e41ce76cb777fec58fbd01797d2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '903'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,18 +19,18 @@ ht-degree: 96%
 
 ## 版本 7.4.2  {#release-7-4-2}
 
-### 版本9391 {#build-9391}
+### 版本 9391 {#build-9391}
 
 [!BADGE 有限发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
 
-_2025年5月12日_
+_2025 年 5 月 12 日_
 
-此内部版本包含以下修复：
+此版本包含以下修复：
 
-* 修复了在非Oracle设置中遇到的升级后问题。 (NEO-87012)
-* 修复了影响客户端控制台和服务器的TLS/HTTPS后端问题。 (NEO-87432)
+* 修复了非 Oracle 设置中的升级后问题。(NEO-87012)
+* 修复了影响客户端控制台和服务器的 TLS/HTTPS 后端问题。(NEO-87432)
 
-### 版本9390 {#build-9390}
+### 版本 9390 {#build-9390}
 
 [!BADGE 正式发布版]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
 
