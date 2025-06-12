@@ -16,7 +16,7 @@ ht-degree: 0%
 
 使用Adobe Campaign向客户在其移动设备上发送短信。 您可以通过短信编辑器以文本格式创建、个性化和预览消息。
 
-短信是一个直接、高效的渠道，无论用户身在何处，都可与他们联系。 凭借高打开率和近乎即时的投放方式，短信非常适合用于时效性强的警报、事务性更新和简明的促销消息。 使用短信补充您的跨渠道策略，提供有影响力的实时通信。 请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target=_blank}以了解如何有效配置和使用短信渠道。
+短信是一个直接、高效的渠道，无论用户身在何处，都可与他们联系。 凭借高打开率和近乎即时的投放方式，短信非常适合用于时效性强的警报、事务性更新和简明的促销消息。 使用短信补充您的跨渠道策略，提供有影响力的实时通信。 请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=zh-Hans){target=_blank}以了解如何有效配置和使用短信渠道。
 
 作为Campaign v8促销活动的一部分，重组了Campaign Classic文档。 公共功能现在仅在Campaign v8文档集中可用。
 
@@ -24,23 +24,23 @@ ht-degree: 0%
 
 >[!TAB 短信渠道文档]
 
-要了解有关短信渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target=_blank}。
+要了解有关短信渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=zh-Hans){target=_blank}。
 
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=zh-Hans){target=_blank}
 
 
 >[!TAB 短信投放创建]
 
 请参阅Campaign v8文档以了解与短信投放创建相关的关键步骤：
 
-* [短信渠道概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target="_blank"}：了解如何在移动设备上向客户发送短信。
-* [创建短信投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html){target="_blank"}：探索创建新短信投放所需的不同步骤。
-* [定义内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html){target="_blank"}：了解如何个性化短信消息的内容。
-* [选择受众](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html){target="_blank"}：主目标是从Adobe Campaign数据库提取的，也可以存储在外部文件中。
-* [发送短信校样](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html)：设置投放验证周期至关重要。 在将内容发送给受众之前，请确保内容已获批准。
+* [短信渠道概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=zh-Hans){target="_blank"}：了解如何在移动设备上向客户发送短信。
+* [创建短信投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html?lang=zh-Hans){target="_blank"}：探索创建新短信投放所需的不同步骤。
+* [定义内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html?lang=zh-Hans){target="_blank"}：了解如何个性化短信消息的内容。
+* [选择受众](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html?lang=zh-Hans){target="_blank"}：主目标是从Adobe Campaign数据库提取的，也可以存储在外部文件中。
+* [发送短信校样](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html?lang=zh-Hans)：设置投放验证周期至关重要。 在将内容发送给受众之前，请确保内容已获批准。
 * [发送给受众](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-send.html?lang=zh-Hans)：当您的短信通过验证时，您现在可以将其发送给受众。
-* [监控和跟踪SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html)：监控SMS投放，以确保营销活动有效。
+* [监控和跟踪SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html?lang=zh-Hans)：监控SMS投放，以确保营销活动有效。
 
 
 >[!TAB 短信配置]
