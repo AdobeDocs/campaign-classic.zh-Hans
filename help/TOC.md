@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 1e88021c9209bd23c3c949380f553473e890a9ce
+source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2569'
 ht-degree: 99%
 
 ---
@@ -125,9 +125,8 @@ ht-degree: 99%
       + [定义正确的受众](delivery/using/define-the-right-audience.md)
       + [发送前检查](delivery/using/check-before-sending.md)
       + [跟踪和监测](delivery/using/track-and-monitor.md)
+   + [发送电子邮件](delivery/using/about-email-channel.md)
    + 发送电子邮件 {#sending-emails}
-      + [开始使用电子邮件](delivery/using/about-email-channel.md)
-      + [使用增强 MTA 发送](delivery/using/sending-with-enhanced-mta.md)
       + [创建电子邮件投放](delivery/using/creating-an-email-delivery.md)
       + [定义电子邮件的内容](delivery/using/defining-the-email-content.md)
       + [定义交互式内容](delivery/using/defining-interactive-content.md)
@@ -827,6 +826,7 @@ ht-degree: 99%
    + [回滚过程](migration/using/about-rollback.md)
 + 技术说明 {#technotes}
    + [硬件大小调整建议](technotes/using/hardware-sizing.md)
+   + [使用增强 MTA 发送](delivery/using/sending-with-enhanced-mta.md)
    + [中间源基础架构的入站短信工作流活动](technotes/using/inbound-sms-wf.md)
    + 升级到 IMS{#ims}
       + [过渡至 Adobe IMS](technotes/using/ac-ims.md)
