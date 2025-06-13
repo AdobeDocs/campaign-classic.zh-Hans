@@ -42,7 +42,7 @@ Adobe Campaign允许您定义和管理分配给各种操作员的权限。 这�
 
 要了解有关文件夹访问权限以及如何管理它们的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions?lang=en#_blank){target=_blank}。
 
-[![图像](../../assets/do-not-localize/learn-more-button.svg)]([![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}){target=_blank}
+[![图像](../../assets/do-not-localize/learn-more-button.svg)] ([![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}){target=_blank}
 
 >[!ENDTABS]
 
