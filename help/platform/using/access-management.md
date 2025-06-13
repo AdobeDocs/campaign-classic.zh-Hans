@@ -5,10 +5,10 @@ description: 了解如何授予对Campaign功能的访问权限
 badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: b27b85b126e002c0ea8b5d71da1ed60e1e817980
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 6%
+source-wordcount: '202'
+ht-degree: 9%
 
 ---
 
@@ -30,22 +30,37 @@ Adobe Campaign允许您定义和管理分配给各种操作员的权限。 这�
 * 访问特定记录，
 * 创建、修改和/或删除记录（操作、联系人、营销活动、组等）。
 
-这些权限适用于操作员配置文件或操作员组。
+>[!BEGINTABS]
 
-它们由安全参数完成，这些安全参数链接到操作员与Adobe Campaign的连接模式。 有关[此页面](../../installation/using/security-zones.md)中安全区域的详细信息。
+>[!TAB 权限文档]
 
-您可以向用户授予两种类型的权限：
+要了解有关Adobe Campaign中权限的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}。
 
-* 您可以定义赋予权限的运算符组，然后将运算符与一个或多个组关联。 这使您可以重复使用权限并使操作员配置文件更加一致。 它还便于用户档案的管理和维护。 [此部分](access-management-groups.md)中介绍了组的创建和管理。
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}
 
-* 您可以将命名权限直接归因于用户，在某些情况下，这会使通过组分配的权限过载。 这些权限显示在[此页面](access-management-named-rights.md)中。
+>[!TAB 管理文件夹访问权限]
+
+要了解有关文件夹访问权限以及如何管理它们的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions?lang=en#_blank){target=_blank}。
+
+[![图像](../../assets/do-not-localize/learn-more-button.svg)]([![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}){target=_blank}
+
+>[!ENDTABS]
+
+<!--
+The permissions apply to operator profiles or operator groups.
+
+They are completed by safety parameters linked to the operator's connection mode to Adobe Campaign. For more about security zones in [this page](../../installation/using/security-zones.md).
+
+There are two types of permissions you can grant to a user:
+
+* You can define groups of operators to which you attribute rights, then associate the operators with one or more groups. This enables you to reuse rights and make operator profiles more consistent. It also facilitates the management and maintenance of profiles. Group creation and management are presented in [this section](access-management-groups.md).
+
+* You can attribute named rights directly to users, in some cases to overload the rights allocated via groups. These rights are presented in [this page](access-management-named-rights.md).
 
 >[!NOTE]
 >
-> * 在开始定义权限之前，Adobe建议您先阅读[安全配置核对清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)。
-> * 要了解有关权限的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}上的详细说明。
-
-<!--
+> * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/campaign/kb/acc-security.html).
+> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
 Learn how to grant access and set up permissions in these sections:
 

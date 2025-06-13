@@ -7,7 +7,9 @@ feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 6e83067cef2b08b5bee37610bfef515714756ada
+hide: true
+hidefromtoc: true
+source-git-commit: b27b85b126e002c0ea8b5d71da1ed60e1e817980
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 2%
@@ -33,7 +35,7 @@ Explorer导航树的每个文件夹都具有附加的读、写和删除访问权
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-可以自定义Explorer导航树。 在本节[&#128279;](adobe-campaign-workspace.md)中了解配置步骤和最佳实践。
+可以自定义Explorer导航树。 在本节](adobe-campaign-workspace.md)中了解配置步骤和最佳实践[。
 
 ### 什么是视图 {#about-views}
 

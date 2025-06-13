@@ -7,10 +7,10 @@ feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 69%
+source-wordcount: '222'
+ht-degree: 64%
 
 ---
 
@@ -26,8 +26,22 @@ Adobe Campaign查询工具允许您使用专用助手（即通用查询编辑器
 
 使用所选表的字段或使用公式可以创建查询。
 
->[!NOTE]
->
->要了解有关查询以及如何创建查询的更多信息，请参阅[Campaign v8文档](../../workflow/using/query.md)。
+>[!BEGINTABS]
+
+>[!TAB 查询文档]
+
+要了解有关查询的更多信息，请参阅[Campaign v8文档。](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+
+
+>[!TAB 创建查询]
+
+在[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}中了解与查询创建相关的关键步骤。
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+
+>[!ENDTABS]
 
 ![显示查询示例的屏幕截图。](assets/query_recipients_4.png)
