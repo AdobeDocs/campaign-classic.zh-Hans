@@ -28,7 +28,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 >[!NOTE]
 >
-> 要了解如何安装和登录Adobe Campaign，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}上的详细演练。
+> 要了解如何安装和登录Adobe Campaign，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/connect){target=_blank}上的详细演练。
 
 <!--
 ## Start Adobe Campaign {#starting-adobe-campaign}
@@ -113,6 +113,6 @@ Whenever you reach out to Adobe Customer Care team, you need to provide the vers
 
 * [Adobe Campaign Help and Support options](../../support.md)
 * [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Adobe Experience Cloud Support and Expert sessions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Experience Cloud Support and Expert sessions](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 
 -->

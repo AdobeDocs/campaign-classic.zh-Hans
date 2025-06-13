@@ -30,17 +30,17 @@ Adobe Campaign查询工具允许您使用专用助手（即通用查询编辑器
 
 >[!TAB 查询文档]
 
-要了解有关查询的更多信息，请参阅[Campaign v8文档。](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+要了解有关查询的更多信息，请参阅[Campaign v8文档。](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
 
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
 
 
 >[!TAB 创建查询]
 
-在[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}中了解与查询创建相关的关键步骤。
+在[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}中了解与查询创建相关的关键步骤。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
 >[!ENDTABS]
 
