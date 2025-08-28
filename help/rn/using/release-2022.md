@@ -5,11 +5,13 @@ description: 详细了解 Campaign Classic 2022 版
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 100%
+source-wordcount: '2099'
+ht-degree: 99%
 
 ---
 
@@ -72,7 +74,7 @@ _2022 年 7 月 1 日_
 * 修复了可能导致崩溃并需要完全重启实例的问题。(NEO-44645)
 * 修复了可能导致工作流热图无法加载任何结果的问题。(NEO-43360)
 * 修复了使用 FDA 外部连接器时可能导致连接错误的问题。(NEO-42722)
-* 修复了使用地址替换和对照组排除时验证的问题。(NEO-39695)
+* 修复了使用地址替换和对照组排除时校样的问题。(NEO-39695)
 * 修复了由于 Snowflake 连接器问题而可能导致工作流失败的问题。(NEO-46299)
 * 修复了可能由于个性化块中的无效字符而冻结客户端控制台的问题。(NEO-45761)
 * 修复了为用作外部数据库的 Snowflake 创建外部帐户时可能导致连接错误的问题。(NEO-45744)
@@ -102,7 +104,7 @@ _2022 年 3 月 1 日_
 * 修复了在使用具有循环和连续投放的&#x200B;**网站分析**&#x200B;外部帐户时导致外部帐户中的数据部分丢失的问题。(NEO-38548)
 * 修复了更新 NmsActiveContact 表时升级后速度减慢的问题。(NEO-43206)
 * 修复了将现成文件夹从&#x200B;**管理**&#x200B;节点移动到任何其他位置时出现的升级后故障问题。(NEO-42875)
-* 修复了在使用&#x200B;**更新数据**&#x200B;工作流活动时，可能会导致无法使用 Google Cloud 外部数据库中的收件人数据更新收件人模式的问题。(NEO-42343)
+* 修复了在使用&#x200B;**更新数据**&#x200B;工作流活动时，可能会导致无法使用 Google Cloud 外部数据库中的收件人数据更新收件人架构的问题。(NEO-42343)
 * 修复了升级后与 Adobe Analytics 连接器相关的问题。(NEO-43318、NEO-38136)
 * 修复了升级后 CUID 被“VALUE_TO_CHANGE”覆盖的问题。(NEO-43267)
 * 修复了在多中间配置上同步中间源和营销实例时导致出现错误的问题。(NEO-10432)
@@ -145,7 +147,7 @@ Adobe Campaign 现在与 Windows Server 2019 兼容。请参阅 [Campaign 兼容
 **其他变更**
 
 * 弃用后，已从界面中移除 Microsoft CRM、Salesforce、Oracle CRM On Demand 操作活动。要配置 Adobe Campaign 与 CRM 系统之间的数据同步，您可以使用 CRM 连接器活动。[了解更多信息](../../workflow/using/crm-connector.md)
-* **[!UICONTROL Encrypted identifier]** 字段已添加至访客模式 (nms:visitor)。会计算该字段并将其用于 Web 应用程序。这适用于在中间源实例上配置 Line 渠道的情况。
+* **[!UICONTROL Encrypted identifier]**&#x200B;字段已添加到访客架构(nms:visitor)。 会计算该字段并将其用于 Web 应用程序。这适用于在中间源实例上配置 Line 渠道的情况。
 * CRM 数据源现在可以与&#x200B;**更改数据源**&#x200B;活动一起使用。
 * 在工作流活动的 **Error management** 属性中新增了一个选项：**Abort on error** 选项会自动停止工作流。之后您将无法重新启动它 (NEO-29661)。[了解更多信息](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * 现在，会使用专用序列来生成 nmsGroup 表的主键，该表格用于创建收件人的统计组。以前，使用的是 xtknewId 序列。(NEO-30832)

@@ -5,11 +5,13 @@ description: 详细了解 Campaign Classic 2023 版
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '2337'
-ht-degree: 100%
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
+workflow-type: tm+mt
+source-wordcount: '2336'
+ht-degree: 99%
 
 ---
 
@@ -79,7 +81,7 @@ _2023 年 9 月 7 日_
 * BigQuery 外部帐户已通过用于设置 GCloud SDK 的新选项得到增强。(NEO-63879) [阅读更多](../../installation/using/configure-fda-google-big-query.md#google-external)
 * 服务器配置文件 (serverConf.xml) 中添加了新的 `cusHeader` 部分。这允许您在从外部服务器上传文件时添加自定义标头。(NEO-58339) [阅读更多](../../installation/using/the-server-configuration-file.md#cusheaders)。
 * 跟踪日志管理得到了改进，以避免 lastMsgId 出现负 ID。已从 int32 更改为 int64。(NEO-52290)
-* 增添了开箱即用的中间源（投放统计数据）工作流程。这一新工作流可将投放统计数据 (nms:deliveryStat) 从中间实例同步到营销实例。(NEO-36802)
+* 增添了开箱即用的中间源（投放统计数据）工作流程。此新工作流将投放统计数据(nms:deliveryStat)从mid同步到营销实例。 (NEO-36802)
 
 ### 修补程序 {#release-7-3-4-patches}
 
@@ -89,7 +91,7 @@ _2023 年 9 月 7 日_
 * 修复了可能会导致 Web 应用程序在 v5 兼容模式下无法正确显示的问题。(NEO-63174)
 * 修复了导致非管理员操作员无法发送 WebAnalytics 投放的问题。(NEO-62750)
 * 修复了在投放中使用条件内容时导致浏览器无法添加额外空格的问题。(NEO-62132)
-* 修复了使用与多个日志模式关联的目标模式时，导致活跃联系人计算无法在计费工作流中正确工作的回退问题。(NEO-61468)
+* 修复了使用与多个日志架构关联的目标架构时，导致活跃联系人计算无法在计费工作流中正确工作的回退问题。(NEO-61468)
 * 修复了在编辑投放内容时可能导致出现错误且无法滚动的问题。(NEO-61364)
 * 修复了在电子邮件内容编辑器中单击图像时导致打开弹出窗口的问题。(NEO-60752)
 * 修复了可能导致投放的 HTML 内容中的特殊字符在多个浏览器中被错误编码的问题。(NEO-60081)
@@ -102,18 +104,18 @@ _2023 年 9 月 7 日_
 * 修复了在数字内容编辑器中上传图像时导致主体标记样式属性更改的问题。(NEO-57697)
 * 修复了使用 CRM 连接器活动执行批量导出时的特殊字符问题。(NEO-54300)
 * 修复了在使用数据加载活动和 Big Query 连接器时，导致批量加载功能无法处理“字符串”数据类型的问题。(NEO-53748)
-* 修复了可能导致优惠呈现问题的缓存键问题。(NEO-51516、NEO-49995)
+* 修复了可能导致产品建议呈现问题的缓存键问题。(NEO-51516、NEO-49995)
 * 修复了在使用获得批准的 targetMapping 发送直邮投放时可能导致验证错误的问题。(NEO-50758)
 * 修复了可能影响投放性能的查询管理问题。(NEO-49991)
 * 修复了在营销活动工作流投放活动中使用外部帐户时，可能导致外部帐户配置错误的问题。(NEO-49959)
 * 修复了发送推送通知时的性能问题。(NEO-49953)
 修复了在导出报告时可能导致日语字符错误显示的问题 (NEO-49308)。
 * 修复了导致 Tomcat 错误报告显示过多错误详细信息的问题。(NEO-49029)
-* 修复了在使用大量优惠时可能导致投放错误的问题。(NEO-48807)
+* 修复了在使用大量产品建议时可能导致投放错误的问题。(NEO-48807)
 * 修复了可能导致&#x200B;**更新数据**&#x200B;工作流活动无法正常工作的问题。(NEO-48140)
 * 修复了可能导致无法使用电子邮件以外的外部帐户为投放同步点击跟踪数据的问题。(NEO-47277)
 * 修复了可能导致实时跟踪日志无法在消息中心营销实例上同步的问题。(NEO-42540)
-* 修复了 Snowflake 数据库表的工作区前缀无法显示在模式的发现窗口中的问题。(NEO-40297)
+* 修复了 Snowflake 数据库表的工作区前缀无法显示在架构的发现窗口中的问题。(NEO-40297)
 * 修复了导致 `<img-amp>` 标记无法在电子邮件内容中正常工作的问题。(NEO-38685)
 * 修复了在使用 HTTP 中继时可能导致消息中心存档工作流失败的问题。(NEO-33783)
 * 修复了可能导致电子邮件内容编辑器中出现字体名称和大小错误的问题。(NEO-61342)
@@ -181,7 +183,7 @@ _2022 年 11 月 21 日_
 
 * Google BigQuery 连接器现在完全支持布尔字段。(NEO-49181)
 * 您现在可以在 serverConf.xml 文件的 `Configuration for the redirection service` 部分配置 IMS Cookie 的有效期。这适用于以下 Cookie：`uuid230`、`nllastdelid` 和 `AMCV_` (NEO-42541)
-* 现在通过在 serverConf.xml 文件的重定向节点中将 `showSourceIP` 设置为“false”，可将 IP 在“/r/test”请求中隐藏。[了解更多信息](../../installation/using/the-server-configuration-file.md#redirection-redirection) (NEO-46656)
+* 现在通过在 serverConf.xml 文件的重定向节点中将 `showSourceIP` 设置为“假”，可将 IP 在“/r/test”请求中隐藏。[了解更多信息](../../installation/using/the-server-configuration-file.md#redirection-redirection) (NEO-46656)
 * 从此版本开始，已发送电子邮件上的跟踪链接在升级过程中仍有效。[了解更多信息](../../platform/using/faq-build-upgrade.md)
 
 

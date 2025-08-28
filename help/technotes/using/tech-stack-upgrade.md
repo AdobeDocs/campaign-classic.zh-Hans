@@ -3,8 +3,10 @@ product: campaign
 title: 技术说明 — Adobe Campaign系统升级
 description: Adobe Campaign系统升级
 feature: Technote, Upgrade
+hide: true
+hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 4%
@@ -15,9 +17,9 @@ ht-degree: 4%
 
 Campaign基础架构依赖于第三方系统，这些系统必须定期使用最新版本和修复进行更新。 必须执行这些更新，以确保服务的连续性，并确保Campaign环境免受安全风险的影响。 此外，需要升级Campaign，以确保与第三方系统更改兼容。
 
-作为&#x200B;**托管或托管Cloud Service客户**，Adobe会在需要升级时通知您。 您将需要根据建议升级环境以确保法规遵从性。
+作为&#x200B;**托管或托管云服务客户**，Adobe会在需要升级时通知您。 您将需要根据建议升级环境以确保法规遵从性。
 
-作为&#x200B;**内部部署或混合型客户**，Adobe强烈建议您根据同一日历升级系统版本和Campaign版本。
+作为&#x200B;**内部部署或混合型客户**，Adobe强烈建议您根据同一日历升级您的系统版本和Campaign版本。
 
 出于安全原因，您必须[安装最新的Campaign内部版本](#ac-upgrade)，然后升级[操作系统](#os-upgrade)和/或[关系数据库管理系统(RDBMS)](#pg-upgrade)。
 
@@ -34,7 +36,7 @@ Campaign基础架构依赖于第三方系统，这些系统必须定期使用最
 
 **如何更新？**
 
-* 作为托管或托管Cloud Service的客户，Adobe将联系您并升级您的Campaign版本。
+* 作为托管或托管云服务的客户，Adobe将联系您并升级您的Campaign版本。
 * 作为混合型客户，Adobe将通知您中间源环境的计划内部版本升级日期。 您还必须将营销环境升级到同一版本。
 * 作为内部部署客户，您需要将Campaign环境升级到最新的7.3.2内部版本。
 
@@ -47,7 +49,7 @@ Campaign基础架构依赖于第三方系统，这些系统必须定期使用最
 
 **如何更新？**
 
-* 作为托管或托管Cloud Service的客户，Adobe将与您联系并升级您的环境。
+* 作为托管或托管式云服务客户，Adobe将与您联系并升级您的环境。
 * 作为混合型客户，Adobe将通知您中间源环境的计划升级日期。 如果您的营销环境也在Debian上运行，则还必须将其升级到Debian 11。
 * 作为内部部署客户，您需要将环境升级到Debian 11。
 
@@ -59,7 +61,7 @@ Campaign基础架构依赖于第三方系统，这些系统必须定期使用最
 
 **如何更新？**
 
-* 作为托管或托管Cloud Service客户，Adobe将与您联系，并将您的数据库系统从PostgreSQL 11升级到PostgreSQL 14。
+* 作为托管或托管式云服务客户，Adobe将与您联系，并将您的数据库系统从PostgreSQL 11升级到PostgreSQL 14。
 * 作为混合型客户，如果您的营销数据库系统是PostgreSQL，则必须将其升级到PostgreSQL 14。
 * 作为内部部署客户，您需要将数据库系统升级到PostgreSQL 14。
 
@@ -68,5 +70,5 @@ Campaign基础架构依赖于第三方系统，这些系统必须定期使用最
 
 * [升级环境](../../production/using/build-upgrade.md)
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)
-* [下载最新的Campaign Classic版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)
+* [下载最新的Campaign Classic内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/zh-hans/campaign.html)
 * [使用户可以使用新的客户端控制台](../../installation/using/client-console-availability-for-windows.md)
