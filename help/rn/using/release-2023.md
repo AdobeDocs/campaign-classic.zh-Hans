@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2336'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ _2023 年 9 月 7 日_
 * BigQuery 外部帐户已通过用于设置 GCloud SDK 的新选项得到增强。(NEO-63879) [阅读更多](../../installation/using/configure-fda-google-big-query.md#google-external)
 * 服务器配置文件 (serverConf.xml) 中添加了新的 `cusHeader` 部分。这允许您在从外部服务器上传文件时添加自定义标头。(NEO-58339) [阅读更多](../../installation/using/the-server-configuration-file.md#cusheaders)。
 * 跟踪日志管理得到了改进，以避免 lastMsgId 出现负 ID。已从 int32 更改为 int64。(NEO-52290)
-* 增添了开箱即用的中间源（投放统计数据）工作流程。此新工作流将投放统计数据(nms:deliveryStat)从mid同步到营销实例。 (NEO-36802)
+* 增添了开箱即用的中间源（投放统计数据）工作流程。这一新工作流程可将投放统计数据 (nms:deliveryStat) 从中间实例同步到营销实例。(NEO-36802)
 
 ### 修补程序 {#release-7-3-4-patches}
 

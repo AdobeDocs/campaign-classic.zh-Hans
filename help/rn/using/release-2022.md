@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
 source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2099'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -147,7 +147,7 @@ Adobe Campaign 现在与 Windows Server 2019 兼容。请参阅 [Campaign 兼容
 **其他变更**
 
 * 弃用后，已从界面中移除 Microsoft CRM、Salesforce、Oracle CRM On Demand 操作活动。要配置 Adobe Campaign 与 CRM 系统之间的数据同步，您可以使用 CRM 连接器活动。[了解更多信息](../../workflow/using/crm-connector.md)
-* **[!UICONTROL Encrypted identifier]**&#x200B;字段已添加到访客架构(nms:visitor)。 会计算该字段并将其用于 Web 应用程序。这适用于在中间源实例上配置 Line 渠道的情况。
+* **[!UICONTROL Encrypted identifier]** 字段已添加至访客架构 (nms:visitor)。会计算该字段并将其用于 Web 应用程序。这适用于在中间源实例上配置 Line 渠道的情况。
 * CRM 数据源现在可以与&#x200B;**更改数据源**&#x200B;活动一起使用。
 * 在工作流活动的 **Error management** 属性中新增了一个选项：**Abort on error** 选项会自动停止工作流。之后您将无法重新启动它 (NEO-29661)。[了解更多信息](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * 现在，会使用专用序列来生成 nmsGroup 表的主键，该表格用于创建收件人的统计组。以前，使用的是 xtknewId 序列。(NEO-30832)
