@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
-workflow-type: ht
-source-wordcount: '2569'
+source-git-commit: faed7f54dc72937b24ee1ece80d17150a513fa39
+workflow-type: tm+mt
+source-wordcount: '2565'
 ht-degree: 100%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 100%
          + [Campaign UI 入门](platform/using/adobe-campaign-workspace.md)
          + [使用 Campaign Explorer](platform/using/adobe-campaign-explorer.md)
          + [浏览和自定义列表](platform/using/adobe-campaign-ui-lists.md)
+         + [明细列表](platform/using/managing-enumerations.md)
       + [Campaign 连接器](platform/using/about-connectors.md)
       + 常见问题解答 {#faq}
          + [最常见问题](platform/using/common-questions.md)
@@ -99,9 +100,6 @@ ht-degree: 100%
       + [创建和管理组](platform/using/access-management-groups.md)
       + [使用已命名权限设置权限](platform/using/access-management-named-rights.md)
       + [管理对文件夹的访问](platform/using/access-management-folders.md)
-   + 数据包和明细列表 {#administration-basics}
-      + [数据包](platform/using/working-with-data-packages.md)
-      + [明细列表](platform/using/managing-enumerations.md)
    + CRM 连接器 {#connectors}
       + [CRM 连接器入门](platform/using/crm-connectors.md)
       + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
@@ -738,6 +736,7 @@ ht-degree: 100%
          + [JSP 行为](production/using/jsp-behavior.md)
          + [查找 Tomcat 版本](production/using/locate-tomcat-version.md)
 + 开发者指南 {#configuring-campaign-classic}
+   + [数据包](platform/using/working-with-data-packages.md)
    + 数据模型 {#data-model}
       + [关于数据模型](configuration/using/about-data-model.md)
       + [数据模型描述](configuration/using/data-model-description.md)
