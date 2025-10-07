@@ -5,9 +5,9 @@ description: 创建投放，在不同渠道上发送个性化信息
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '943'
 ht-degree: 14%
 
 ---
@@ -26,32 +26,36 @@ ht-degree: 14%
 
 >[!TAB 通信渠道文档]
 
-要了解有关通信渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hans){target=_blank}。
+要了解有关通信渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}。
 
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hans){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}
 
 
 >[!TAB 投放内容和受众]
 
 请参阅Campaign v8文档以了解与投放创建、内容和受众相关的关键步骤：
 
-* [创建投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#create-the-delivery){target="_blank"}：了解如何创建一次性投放。
-* [定义内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#content-of-the-delivery){target="_blank"}：配置特定于每个渠道的投放内容。
-* [指定受众](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#target-population){target="_blank"}：定义几种类型的目标：主受众、验证目标、种子地址和对照组。
+* [创建投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}：了解如何创建一次性投放。
+* [定义内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#content-of-the-delivery){target="_blank"}：配置特定于每个渠道的投放内容。
+* [指定受众](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}：定义几种类型的目标：主受众、验证目标、种子地址和对照组。
+* [使用投放模板](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}：了解如何定义模板以便于创建投放。
+
+
+
 
 
 >[!TAB 传递验证和发送]
 
 请参阅这些页面，以在Campaign v8文档中了解投放验证、发送和最佳实践：
 
-* [验证投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#validate-the-delivery){target="_blank"}：了解如何在将投放发送到主目标之前验证投放。
-* [发送投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#configuring-and-sending-the-delivery){target="_blank"}：配置投放设置并定义发送消息的方式。
-* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans){target="_blank"}：查阅与Campaign投放功能相关的最佳实践。
+* [验证投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#validate-the-delivery){target="_blank"}：了解如何在将投放发送到主目标之前验证投放。
+* [发送投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#configuring-and-sending-the-delivery){target="_blank"}：配置投放设置并定义发送消息的方式。
+* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}：查阅与Campaign投放功能相关的最佳实践。
 
 >[!ENDTABS]
 
-以下设置特定于Campaign Classic。 有关其他投放设置，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hans){target="_blank"}。
+以下设置特定于Campaign Classic。 有关其他投放设置，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}。
 
 +++ **投放分析**
 
@@ -64,8 +68,8 @@ ht-degree: 14%
 目前，仅当满足以下条件时，此选项才可用：
 
 * 投放必须是电子邮件。 目前不支持其他渠道。
-* 您不得使用中间源或外部路由，只能使用批量投放路由类型。 您可以检查&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中使用的路由。
-* 无法定位来自外部文件的群体。 对于单个投放，请单击&#x200B;**[!UICONTROL Email parameters]**&#x200B;中的&#x200B;**[!UICONTROL To]**&#x200B;链接，并检查是否选择了&#x200B;**[!UICONTROL Defined in the database]**&#x200B;选项。 对于工作流中使用的投放，检查&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中的收件人是否为&#x200B;**[!UICONTROL Specified by the inbound event(s)]**。
+* 您不得使用中间源或外部路由，只能使用批量投放路由类型。 您可以检查&#x200B;**[!UICONTROL General]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡中使用的路由。
+* 无法定位来自外部文件的群体。 对于单个投放，请单击&#x200B;**[!UICONTROL To]**&#x200B;中的&#x200B;**[!UICONTROL Email parameters]**&#x200B;链接，并检查是否选择了&#x200B;**[!UICONTROL Defined in the database]**&#x200B;选项。 对于工作流中使用的投放，检查&#x200B;**[!UICONTROL Specified by the inbound event(s)]**&#x200B;选项卡中的收件人是否为&#x200B;**[!UICONTROL Delivery]**。
 * 您必须使用PostgreSQL数据库。
 
 **配置分析优先级**
@@ -114,7 +118,7 @@ ht-degree: 14%
 
   >[!IMPORTANT]
   >
-  >对于托管或混合安装，如果您已升级到[Enhanced MTA](sending-with-enhanced-mta.md)，则仅当设置为&#x200B;**3.5天或更短时间时**，才会使用Campaign电子邮件投放中的&#x200B;**[!UICONTROL Delivery duration]**&#x200B;设置。 如果定义的值超过3.5天，则不会将其考虑在内。
+  >对于托管或混合安装，如果您已升级到[Enhanced MTA](sending-with-enhanced-mta.md)，则仅当设置为&#x200B;**[!UICONTROL Delivery duration]** 3.5天或更短时间时&#x200B;**，才会使用Campaign电子邮件投放中的**&#x200B;设置。 如果定义的值超过3.5天，则不会将其考虑在内。
 
 * **资源的有效性限制**： **[!UICONTROL Validity limit]**&#x200B;字段用于已上传的资源，主要用于镜像页面和图像。 本页上的资源仅在限制时间内有效（以节省磁盘空间）。
 
@@ -126,7 +130,7 @@ ht-degree: 14%
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
 
 >[!NOTE]
 >

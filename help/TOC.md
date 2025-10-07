@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: faed7f54dc72937b24ee1ece80d17150a513fa39
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '2565'
-ht-degree: 100%
+source-wordcount: '2561'
+ht-degree: 99%
 
 ---
 
@@ -144,8 +144,8 @@ ht-degree: 100%
       + [创建短信](delivery/using/sms-create.md)
       + [迁移到扩展通用 SMPP 连接器](delivery/using/unsupported-connector-migration.md)
    + [发送 LINE 消息](delivery/using/line-channel.md)
+   + [发送推送通知](delivery/using/about-mobile-app-channel.md)
    + 发送推送通知 {#sending-push-notifications}
-      + [移动应用程序渠道入门](delivery/using/about-mobile-app-channel.md)
       + [将 Campaign SDK 集成到移动应用程序](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + 配置移动应用程序{#configure-the-mobile-app}
          + [应用程序配置入门](delivery/using/get-started-app-config.md)
@@ -155,8 +155,8 @@ ht-degree: 100%
          + [创建 iOS 推送消息](delivery/using/create-notifications-ios.md)
          + [创建 Android 推送消息](delivery/using/create-notifications-android.md)
       + [故障排除](delivery/using/troubleshooting.md)
+   + [发送直邮](delivery/using/about-direct-mail-channel.md)
    + 发送直邮 {#sending-direct-mail}
-      + [关于直邮渠道](delivery/using/about-direct-mail-channel.md)
       + [创建直邮投放](delivery/using/creating-a-direct-mail-delivery.md)
       + [定义直邮内容](delivery/using/defining-the-direct-mail-content.md)
       + [验证](delivery/using/validating.md)

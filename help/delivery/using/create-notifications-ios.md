@@ -4,8 +4,10 @@ title: 为iOS设备创建推送通知
 description: 了解如何为iOS创建推送通知
 feature: Push
 role: User, Developer, Data Engineer
+hide: true
+hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 8%
@@ -42,7 +44,7 @@ ht-degree: 8%
 
    ![](assets/nmac_delivery_ios_3.png)
 
-1. 选择介于&#x200B;**[!UICONTROL General notification (Alert, Sound, Badge)]**&#x200B;或&#x200B;**[!UICONTROL Silent notification]**&#x200B;之间的&#x200B;**[!UICONTROL Notification type]**。
+1. 选择介于&#x200B;**[!UICONTROL Notification type]**&#x200B;或&#x200B;**[!UICONTROL General notification (Alert, Sound, Badge)]**&#x200B;之间的&#x200B;**[!UICONTROL Silent notification]**。
 
    ![](assets/nmac_delivery_ios_4.png)
 
@@ -144,7 +146,7 @@ ht-degree: 8%
 
    ![](assets/nmac_android_3.png)
 
-1. 在&#x200B;**[!UICONTROL Delivery template]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Deliver on iOS (ios)]**。 向投放添加&#x200B;**[!UICONTROL Label]**。
+1. 在&#x200B;**[!UICONTROL Deliver on iOS (ios)]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Delivery template]**。 向投放添加&#x200B;**[!UICONTROL Label]**。
 
 1. 单击&#x200B;**[!UICONTROL To]**&#x200B;以定义要定位的群体。 默认情况下，应用&#x200B;**[!UICONTROL Subscriber application]**&#x200B;目标映射。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择我们之前创建的服务。
 

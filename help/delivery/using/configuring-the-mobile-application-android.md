@@ -5,11 +5,13 @@ description: 了解如何为Android设置移动应用程序
 feature: Push
 role: User, Developer
 level: Intermediate, Experienced
+hide: true
+hidefromtoc: true
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 10%
+source-wordcount: '843'
+ht-degree: 9%
 
 ---
 
@@ -48,7 +50,7 @@ ht-degree: 10%
 
    >[!NOTE]
    >
-   > 您也可以按照https://localhost:8080/nms/jsp/androidPushConnector.js进行配置，但我们建议您使用连接器版本2。
+   > 也可以按照以下方式对其进行配置：https://localhost:8080/nms/jsp/androidPushConnector.js，但我们建议您使用连接器的版本2。
 
    ![](assets/nmac_connectors3.png)
 
@@ -58,7 +60,7 @@ ht-degree: 10%
 
 ## 配置Android服务 {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [了解如何在视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=zh-Hans#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}中配置Android服务。
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}中配置Android服务。
 
 1. 转到&#x200B;**[!UICONTROL Profiles and Targets > Services and subscriptions]**&#x200B;节点并单击&#x200B;**[!UICONTROL New]**。
 
@@ -103,7 +105,7 @@ ht-degree: 10%
 
 1. 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Save]**。 您的Android应用程序现在可以在Campaign Classic中使用。
 
-默认情况下，Adobe Campaign会在&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;表的&#x200B;**[!UICONTROL User identifier]** (@userKey)字段中保存一个键。 利用此密钥，可将订阅链接到收件人。 要收集其他数据（如复杂的协调密钥），您需要应用以下配置：
+默认情况下，Adobe Campaign会在&#x200B;**[!UICONTROL User identifier]**)**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp表的]** (@userKey)字段中保存一个键。 利用此密钥，可将订阅链接到收件人。 要收集其他数据（如复杂的协调密钥），您需要应用以下配置：
 
 ### 配置API版本{#select-api-version}
 
@@ -115,7 +117,7 @@ ht-degree: 10%
 
 要配置HTTP v1 API版本，请执行以下步骤：
 
-1. 在您的&#x200B;**[!UICONTROL Mobile application creation wizard]**&#x200B;窗口中，从&#x200B;**[!UICONTROL API version]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL HTTPV1]**。
+1. 在您的&#x200B;**[!UICONTROL Mobile application creation wizard]**&#x200B;窗口中，从&#x200B;**[!UICONTROL HTTPV1]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL API version]**。
 
 1. 单击&#x200B;**[!UICONTROL Load project json file to extract project details...]**&#x200B;直接加载您的JSON密钥文件。 有关如何提取JSON文件的详细信息，请参阅[此页面](https://firebase.google.com/docs/admin/setup#initialize-sdk)。
 
@@ -147,7 +149,7 @@ ht-degree: 10%
 
 ## 扩展appsubscriptionRcp架构 {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [了解如何在视频中扩展appsubscriptionRcp架构](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=zh-Hans#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频中扩展appsubscriptionRcp架构](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
 您需要扩展&#x200B;**appsubscriptionRcp**，以定义新的附加字段来将应用程序中的参数存储在Campaign数据库中。 例如，这些字段用于个性化。 操作步骤：
 

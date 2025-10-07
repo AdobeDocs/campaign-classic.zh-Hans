@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: 定义直邮内容
+title: 定义直邮的内容
 description: 了解如何定义直邮内容
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Direct Mail
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 10%
 
 ---
 
-# 定义直邮内容{#defining-the-direct-mail-content}
+# 定义直邮的内容{#defining-the-direct-mail-content}
 
 ## 提取文件 {#extraction-file}
 
