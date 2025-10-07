@@ -29,7 +29,7 @@ ht-degree: 14%
 
 使用Adobe Campaign，个性化您的投放，以发送与每个收件人的用户档案和兴趣匹配的消息。
 
-Personalization可帮助您使消息更具相关性和吸引力。 您可以使用收件人数据根据条件调整内容、添加动态字段或显示不同信息。 请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}以了解如何在投放中设置和使用个性化功能。
+Personalization可帮助您使消息更具相关性和吸引力。 您可以使用收件人数据根据条件调整内容、添加动态字段或显示不同信息。 请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=zh-Hans){target=_blank}以了解如何在投放中设置和使用个性化功能。
 
 作为Campaign v8促销活动的一部分，重组了Campaign Classic文档。 公共功能现在仅在Campaign v8文档集中可用。
 
@@ -37,30 +37,30 @@ Personalization可帮助您使消息更具相关性和吸引力。 您可以使�
 
 >[!TAB 内容个性化文档]
 
-要了解有关内容个性化的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}。
+要了解有关内容个性化的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=zh-Hans){target=_blank}。
 
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=zh-Hans){target=_blank}
 
 
 >[!TAB 电子邮件投放创建]
 
 请参阅Campaign v8文档以了解与创建电子邮件投放相关的关键步骤：
 
-* [创建电子邮件投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}：了解创建电子邮件投放所需的不同步骤。
-* [定义电子邮件内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}：定义您的电子邮件将包含的内容：发件人、主题、内容、图像。
-* [定义交互式内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}：使用交互式AMP for Email格式发送动态电子邮件。
-* [在日语手机上发送电子邮件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}：在手机上使用三种特定的日语格式之一发送电子邮件。
-* [将文件附加到电子邮件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}：了解将一个或多个文件附加到电子邮件的不同方法。
+* [创建电子邮件投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=zh-Hans){target="_blank"}：了解创建电子邮件投放所需的不同步骤。
+* [定义电子邮件内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans){target="_blank"}：定义您的电子邮件将包含的内容：发件人、主题、内容、图像。
+* [定义交互式内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=zh-Hans){target="_blank"}：使用交互式AMP for Email格式发送动态电子邮件。
+* [在日语手机上发送电子邮件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=zh-Hans){target="_blank"}：在手机上使用三种特定的日语格式之一发送电子邮件。
+* [将文件附加到电子邮件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=zh-Hans){target="_blank"}：了解将一个或多个文件附加到电子邮件的不同方法。
 
 
 >[!TAB 电子邮件参数]
 
 请参阅Campaign v8文档中的这些页面以了解电子邮件参数：
 
-* [链接到镜像页面](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}：配置镜像页面以确保您的客户端始终获得最佳的渲染体验。
-* [添加密件抄送地址](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}：配置Adobe Campaign以保留从您的平台发送的电子邮件副本。
-* [定义其他电子邮件参数](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html){target="_blank"}：了解有关投放属性中可用的选项和参数的更多信息。
+* [链接到镜像页面](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=zh-Hans){target="_blank"}：配置镜像页面以确保您的客户端始终获得最佳的渲染体验。
+* [添加密件抄送地址](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html?lang=zh-Hans){target="_blank"}：配置Adobe Campaign以保留从您的平台发送的电子邮件副本。
+* [定义其他电子邮件参数](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=zh-Hans){target="_blank"}：了解有关投放属性中可用的选项和参数的更多信息。
 
 另请参阅此[页面](sending-with-enhanced-mta.md)以了解有关增强型MTA的信息。
 
@@ -77,7 +77,7 @@ Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
 * Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans).
 
 The key steps to send an email are as follows:
 
