@@ -5,11 +5,13 @@ description: 了解如何使用个性化块
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
 workflow-type: tm+mt
 source-wordcount: '870'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -17,7 +19,7 @@ ht-degree: 2%
 
 个性化块是动态的、个性化的，并包含您可以插入到投放中的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。 请参阅[插入个性化块](#inserting-personalization-blocks)。
 
-![](assets/do-not-localize/how-to-video.png)在视频[&#128279;](#personalization-blocks-video)中发现此功能
+![](assets/do-not-localize/how-to-video.png)在视频[中发现此功能](#personalization-blocks-video)
 
 通过Adobe Campaign资源管理器的&#x200B;**[!UICONTROL Resources > Campaign Management > Personalization blocks]**&#x200B;节点访问个性化块。 默认情况下，有多个块可用（请参阅[现成的个性化块](#out-of-the-box-personalization-blocks)）。
 
@@ -52,7 +54,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_personalized_block05.png)
 
-HTML源代码将插入到投放内容中。 例如，**[!UICONTROL Greetings]**&#x200B;个性化块显示如下：
+HTML源代码会插入到投放内容中。 例如，**[!UICONTROL Greetings]**&#x200B;个性化块显示如下：
 
 ![](assets/s_ncs_user_personalized_block06.png)
 
@@ -114,7 +116,7 @@ HTML源代码将插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
   >此块只能在仅针对访客的投放中使用。
 
 * **[!UICONTROL Registration confirmation]** ：插入用于确认订阅的链接。
-* **[!UICONTROL Social network sharing links]** ：插入一些按钮，这些按钮允许收件人与电子邮件客户端、Facebook、X(以前称为Twitter)和LinkedIn共享指向镜像页面内容的链接（请参阅[病毒式营销：转发给朋友](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)）。
+* **[!UICONTROL Social network sharing links]** ：插入一些按钮，这些按钮允许收件人与电子邮件客户端、Facebook、X（以前称为Twitter）和LinkedIn共享指向镜像页面内容的链接（请参阅[病毒式营销：转发给朋友](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)）。
 * **[!UICONTROL Style of content emails]**&#x200B;和&#x200B;**[!UICONTROL Notification style]** ：生成使用预定义的HTML样式设置电子邮件格式的代码。 这些块必须插入投放的源代码（在&#x200B;**[!UICONTROL ...]**&#x200B;部分中）的&#x200B;**`<style>...</style>`**&#x200B;标记中。
 * **[!UICONTROL Offer acceptance URL in unitary mode]** ：插入一个URL，用于设置交互选件为&#x200B;**[!UICONTROL Accepted]**（请参阅[此部分](../../interaction/using/offer-analysis-report.md)）。
 
@@ -134,16 +136,16 @@ HTML源代码将插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
    * 选择&#x200B;**[!UICONTROL Visible in the customization menus]**&#x200B;以通过个性化字段插入图标访问此块。
    * 如有必要，请选择&#x200B;**[!UICONTROL The content of the personalization block depends upon the format]**&#x200B;以为HTML格式和文本格式的电子邮件定义两个单独的块。
 
-     然后，此编辑器的下部分会显示两个选项卡(HTML内容和文本内容)以定义相应的内容。
+     然后，此编辑器的下部将显示两个选项卡(HTML内容和文本内容)以定义相应的内容。
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * 输入内容(在HTML、文本、JavaScript等) 个性化块的，然后单击&#x200B;**[!UICONTROL Save]**。
+   * 输入个性化块的内容(在HTML、文本、JavaScript等)并单击&#x200B;**[!UICONTROL Save]**。
 
 ## 教程视频 {#personalization-blocks-video}
 
 了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放内容个性化。
 
->[!VIDEO](https://video.tv.adobe.com/v/27462?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

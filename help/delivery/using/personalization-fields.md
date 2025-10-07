@@ -5,11 +5,13 @@ description: 了解如何使用个性化字段
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -29,7 +31,7 @@ ht-degree: 8%
 
 根据所选的投放模式，个性化字段可以来自两种类型的数据源：
 
-* Adobe Campaign数据库是数据源。 这是最常见的情况，例如“收件人个性化字段”。 这些是收件人表中定义的所有字段，无论是标准字段（通常是：姓氏、名字、地址、城镇、出生日期等）， 或用户定义的字段。
+* Adobe Campaign数据库是数据源。 这是最常见的情况，例如“收件人个性化字段”。 这些是在收件人表中定义的所有字段，无论是标准字段（通常为：姓氏、名字、地址、城镇、出生日期等）还是用户定义的字段。
 * 外部文件是数据源。 这些是在使用外部文件中的数据进行投放期间作为输入呈现的文件列中定义的所有字段。
 
 >[!NOTE]
@@ -75,7 +77,7 @@ ht-degree: 8%
 
 ## 优化个性化 {#optimizing-personalization}
 
-您可以使用投放属性的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡中提供的专用选项&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;来优化个性化。 有关分析投放的详细信息，请参阅[此部分](steps-validating-the-delivery.md#analyzing-the-delivery)。
+您可以使用投放属性的&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项卡中提供的专用选项&#x200B;**[!UICONTROL Analysis]**&#x200B;来优化个性化。 有关分析投放的详细信息，请参阅[此部分](steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 在投放分析期间，此选项会自动创建和执行工作流，该工作流会将链接到目标的所有数据（包括来自FDA中链接的表的数据）存储在临时表中。
 
@@ -88,7 +90,7 @@ ht-degree: 8%
 1. 创建营销策划。 如需详细信息，请参阅[此小节](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，将&#x200B;**查询**&#x200B;活动添加到您的工作流。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/query.md)。
 1. 将&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动添加到工作流并打开它。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/delivery.md)。
-1. 转到&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项。
+1. 转到&#x200B;**[!UICONTROL Analysis]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项。
 
    ![](assets/perso_optimization.png)
 
@@ -106,7 +108,7 @@ ht-degree: 8%
 
 要改进投放保护，您可以为个性化阶段设置超时期限。
 
-在&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中，为&#x200B;**[!UICONTROL Maximum personalization run time]**&#x200B;选项选择最大值（以秒为单位）。
+在&#x200B;**[!UICONTROL Delivery]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡中，为&#x200B;**[!UICONTROL Maximum personalization run time]**&#x200B;选项选择最大值（以秒为单位）。
 
 在预览或发送期间，如果个性化阶段超过您在此字段中设置的最大时间，则流程将中止，并出现错误消息，投放将失败。
 
@@ -140,6 +142,6 @@ ht-degree: 8%
 
 了解如何在主题行中添加个性化字段，以及如何添加电子邮件投放的内容。
 
->[!VIDEO](https://video.tv.adobe.com/v/27467?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。
