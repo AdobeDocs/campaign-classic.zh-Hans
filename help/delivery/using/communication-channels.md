@@ -26,20 +26,20 @@ ht-degree: 14%
 
 >[!TAB 通信渠道文档]
 
-要了解有关通信渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}。
+要了解有关通信渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hans){target=_blank}。
 
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hans){target=_blank}
 
 
 >[!TAB 投放内容和受众]
 
 请参阅Campaign v8文档以了解与投放创建、内容和受众相关的关键步骤：
 
-* [创建投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}：了解如何创建一次性投放。
-* [定义内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#content-of-the-delivery){target="_blank"}：配置特定于每个渠道的投放内容。
-* [指定受众](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}：定义几种类型的目标：主受众、验证目标、种子地址和对照组。
-* [使用投放模板](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}：了解如何定义模板以便于创建投放。
+* [创建投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#create-the-delivery){target="_blank"}：了解如何创建一次性投放。
+* [定义内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#content-of-the-delivery){target="_blank"}：配置特定于每个渠道的投放内容。
+* [指定受众](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#target-population){target="_blank"}：定义几种类型的目标：主受众、验证目标、种子地址和对照组。
+* [使用投放模板](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}：了解如何定义模板以便于创建投放。
 
 
 
@@ -49,13 +49,13 @@ ht-degree: 14%
 
 请参阅这些页面，以在Campaign v8文档中了解投放验证、发送和最佳实践：
 
-* [验证投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#validate-the-delivery){target="_blank"}：了解如何在将投放发送到主目标之前验证投放。
-* [发送投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#configuring-and-sending-the-delivery){target="_blank"}：配置投放设置并定义发送消息的方式。
-* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}：查阅与Campaign投放功能相关的最佳实践。
+* [验证投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#validate-the-delivery){target="_blank"}：了解如何在将投放发送到主目标之前验证投放。
+* [发送投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#configuring-and-sending-the-delivery){target="_blank"}：配置投放设置并定义发送消息的方式。
+* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans){target="_blank"}：查阅与Campaign投放功能相关的最佳实践。
 
 >[!ENDTABS]
 
-以下设置特定于Campaign Classic。 有关其他投放设置，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}。
+以下设置特定于Campaign Classic。 有关其他投放设置，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hans){target="_blank"}。
 
 +++ **投放分析**
 
@@ -130,7 +130,7 @@ ht-degree: 14%
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}. 
 
 >[!NOTE]
 >
