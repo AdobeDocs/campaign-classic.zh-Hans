@@ -3,9 +3,9 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7 产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 961f056ca8bf201e8cedcddb3a2b1f1a4e32b08a
-workflow-type: ht
-source-wordcount: '357'
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+workflow-type: tm+mt
+source-wordcount: '342'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## 新增功能
 
-概要了解 Adobe Campaign Classic v7 产品和文档中的最新增强功能！有关功能、改进和修复的完整列表，请查看详细的[发行说明](rn/using/latest-release.md)。请访问[文档更新页面](rn/using/documentation-updates.md)，及时了解我们文档的最新变化。
+概要了解 Adobe Campaign Classic v7 产品和文档中的最新增强功能！有关功能、改进和修复的完整列表，请查看详细的[发行说明](rn/using/latest-release.md)。
 
 >[!BEGINTABS]
 

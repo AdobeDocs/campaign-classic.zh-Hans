@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 7b71cac6f4c2fc2e8d30683130adb27eff757b73
-workflow-type: ht
-source-wordcount: '903'
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+workflow-type: tm+mt
+source-wordcount: '894'
 ht-degree: 100%
 
 ---
@@ -152,8 +152,7 @@ Adobe 团队将引导和指导您的组织完成这一过程。
 * [查找您的 Campaign 版本](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
 * [帮助与支持](../../support.md)
 * [控制面板版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hans)
-* [最新文档更新](../../rn/using/documentation-updates.md)
-* [已弃用和已删除的功能](../../rn/using/deprecated-features.md)
+* [已弃用和已移除的功能](../../rn/using/deprecated-features.md)
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)
 
 要获悉新的 Experience Cloud 解决方案版本，请订阅 [Adobe 优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html)。

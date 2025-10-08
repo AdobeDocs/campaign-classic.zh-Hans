@@ -5,9 +5,9 @@ feature: Application Settings
 description: 了解如何配置Campaign Explorer导航树
 role: Data Engineer, Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 作为专家级用户，您可以在资源管理器树中添加文件夹并对其进行自定义。
 
-在本节[&#128279;](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)中了解有关Campaign浏览器和导航层次结构的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 
-导航列表使用的文件夹类型在遵循&#x200B;**xtk：navtree**&#x200B;架构语法的XML文档中进行了说明。
+导航列表使用的文件夹类型在遵循&#x200B;**xtk:navtree**&#x200B;架构语法的XML文档中进行了说明。
 
 XML文档的结构如下所示：
 
@@ -42,7 +42,7 @@ XML文档的结构如下所示：
 </navtree>
 ```
 
-XML文档包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200B;属性的&#x200B;**`<navtree>`**&#x200B;根元素，用于指定文档名称和命名空间。 名称和命名空间构成了文档标识键。
+XML文档包含具有&#x200B;**`<navtree>`**&#x200B;名称&#x200B;**和**&#x200B;命名空间&#x200B;**属性的**&#x200B;根元素，用于指定文档名称和命名空间。 名称和命名空间构成了文档标识键。
 
 应用程序的全局命令在文档中的&#x200B;**`<commands>`**&#x200B;元素中声明。
 
@@ -82,7 +82,7 @@ XML文档包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200
 * **name**：命令的内部名称：该名称必须输入且唯一
 * **标签**：命令的标签。
 * **desc**：从主屏幕的状态栏中显示的描述。
-* **表单**：要启动的表单：要输入的值是输入表单的标识键（例如“cus：recipient”）
+* **表单**：要启动的表单：要输入的值是输入表单的标识键（如“cus:recipient”）
 * **权限**：允许访问此命令的已命名权限列表（以逗号分隔）。 可从&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;文件夹访问可用权限列表。
 * **promptLabel**：在执行命令之前显示确认框。
 
@@ -98,7 +98,7 @@ XML文档包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200
 
 **示例**：
 
-* 用于启动“xtk：import”表单的全局命令的声明：
+* 用于启动“xtk:import”表单的全局命令的声明：
 
   ```
   <command desc="Start the data import assistant" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
@@ -167,9 +167,9 @@ XML文档包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200
 * **newFolderShortCuts**：文件夹创建中的模型快捷方式列表（**`<nodemodel>`**，用逗号分隔）。
 * **insertRight**，**editRight**，**deleteRight**：插入、编辑和删除文件夹的权限。
 
-**`<nodemodel>`**&#x200B;元素下的&#x200B;**`<view>`**&#x200B;元素包含与视图关联的列表的配置。 在&#x200B;**`<view>`**&#x200B;元素的&#x200B;**架构**&#x200B;属性中输入了列表的架构。
+**`<view>`**&#x200B;元素下的&#x200B;**`<nodemodel>`**&#x200B;元素包含与视图关联的列表的配置。 在&#x200B;**元素的**&#x200B;架构&#x200B;**`<view>`**&#x200B;属性中输入了列表的架构。
 
-要编辑列表的记录，隐式使用与列表架构同名的输入表单。 **`<view>`**&#x200B;元素上的&#x200B;**type**&#x200B;属性影响表单的显示。 可能的值包括：
+要编辑列表的记录，隐式使用与列表架构同名的输入表单。 **元素上的** type **`<view>`**&#x200B;属性影响表单的显示。 可能的值包括：
 
 * **listdet**：在列表底部显示表单。
 * **列表**：单独显示列表。 通过双击或通过选择列表时的菜单中的“打开”来启动表单。
@@ -178,11 +178,11 @@ XML文档包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200
 
 >[!NOTE]
 >
->通过在&#x200B;**`<view>`**&#x200B;元素中输入&#x200B;**form**&#x200B;属性，可以重载输入表单的名称。
+>通过在&#x200B;**元素中输入** form **`<view>`**&#x200B;属性，可以重载输入表单的名称。
 
-列表列的默认配置通过&#x200B;**`<columns>`**&#x200B;元素输入。 在包含&#x200B;**xpath**&#x200B;属性的&#x200B;**`<node>`**&#x200B;元素上声明了列，该属性的架构中要引用的字段作为其值。
+列表列的默认配置通过&#x200B;**`<columns>`**&#x200B;元素输入。 在包含&#x200B;**`<node>`** xpath **属性的**&#x200B;元素上声明了列，该属性的架构中要引用的字段作为其值。
 
-**示例**：在“nms：recipient”架构上声明文件夹类型。
+**示例**：“nms:recipient”架构上文件夹类型的声明。
 
 ```
 <model label="Profiles and targets" name="nmsProfiles">
@@ -251,7 +251,7 @@ XML文档包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200
 * **name**：命令的内部名称：该名称必须输入且唯一。
 * **标签**：命令的标签。
 * **desc**：从主屏幕的状态栏中显示的描述。
-* **表单**：要启动的表单：要输入的值是输入表单的标识键（例如“cus：recipient”）。
+* **表单**：要启动的表单：要输入的值是输入表单的标识键（例如“cus:recipient”）。
 * **权限**：允许访问此命令的已命名权限列表（以逗号分隔）。 可从&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;文件夹访问可用权限列表。
 * **promptLabel**：在执行命令之前显示确认框
 * **monoSelection**：强制进行单选（默认为多选）。
@@ -293,7 +293,7 @@ XML文档包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200
 1. 此文件夹是一个视图：列表显示与架构关联的所有记录，并可能在文件夹属性中输入系统筛选。
 1. 已链接文件夹：列表中的记录已在文件夹链接上隐式筛选。
 
-对于链接的文件夹，必须填充&#x200B;**`<nodemodel>`**&#x200B;元素上的&#x200B;**folderLink**&#x200B;属性。 此属性包含在数据架构中配置的文件夹上链接的名称。
+对于链接的文件夹，必须填充&#x200B;**元素上的** folderLink **`<nodemodel>`**&#x200B;属性。 此属性包含在数据架构中配置的文件夹上链接的名称。
 
 数据架构中链接文件夹的声明示例：
 

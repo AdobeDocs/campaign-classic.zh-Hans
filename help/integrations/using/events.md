@@ -3,23 +3,23 @@ product: campaign
 title: 配置事件
 description: 了解如何为自定义实施配置事件
 feature: Triggers
-badge-v8: label="也适用于v8" type="Positive" tooltip="同样适用于Campaign v8"
+badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: integrations
 content-type: reference
 level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1200'
 ht-degree: 1%
 
 ---
 
-# 配置自定义实现的事件 {#events}
+# 为自定义实施配置事件 {#events}
 
 
 
-此配置的某些部分是自定义开发，需要以下各项：
+此配置的组成部分是自定义开发，需要满足以下条件：
 
 * 了解Adobe Campaign中的JSON、XML和Javascript解析的工作知识。
 * QueryDef和Writer API的工作知识。
@@ -35,13 +35,13 @@ Pipeline使用JavaScript函数来处理每条消息。 此函数由用户定义�
 
 在“JSConnector”属性下的&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;选项中配置它。 每次收到事件时都会调用此JavaScript。 它由[!DNL pipelined]进程运行。
 
-示例Javascript文件为cus：triggers.js。
+示例Javascript文件为cus:triggers.js。
 
 ### JavaScript 函数 {#function-js}
 
 [!DNL pipelined] Javascript必须以特定函数开头。
 
-对于每个事件，此函数调用一次：
+此函数为每个事件调用一次：
 
 ```
 function processPipelineMessage(xmlTrigger) {}
@@ -64,7 +64,7 @@ function processPipelineMessage(xmlTrigger) {}
 * **[!UICONTROL @offset]**&#x200B;是消息的“指针”。 它指示消息在队列中的顺序。
 * **[!UICONTROL @partition]**&#x200B;是队列中的消息容器。 偏移相对于分区。 <br>队列中有大约15个分区。
 
-例如：
+示例：
 
 ```
 <trigger offset="1500435" partition="4" triggerId="LogoUpload_1_Visits_from_specific_Channel_or_ppp">
@@ -86,7 +86,7 @@ function processPipelineMessage(xmlTrigger) {}
 
 * **[!UICONTROL timeGMT]**&#x200B;可以在Adobe Analytics端包含触发器的时间（以UTC纪元格式表示）（自01/01/1970 UTC以来的秒数）。
 
-例如：
+示例：
 
 ```
 {
@@ -112,20 +112,20 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 事件处理顺序{#order-events}
 
-事件按偏移量顺序逐个处理。 [!DNL pipelined]的每个线程处理不同的分区。
+按偏移量顺序逐个处理事件。 [!DNL pipelined]的每个线程处理不同的分区。
 
-检索的最后一个事件的“offset”存储在数据库中。 因此，如果进程停止，它会从上一条消息重新启动。 此数据存储在内置模式xtk：pipelineOffset中。
+检索的最后一个事件的“offset”存储在数据库中。 因此，如果进程停止，它会从上一条消息重新启动。 此数据存储在内置模式xtk:pipelineOffset中。
 
 此指针特定于每个实例和每个使用者。 因此，当多个实例使用不同的使用者访问同一管道时，它们都会按相同的顺序获取所有消息。
 
 管道选项的&#x200B;**consumer**&#x200B;参数标识调用实例。
 
-目前，无法针对不同的环境（例如“暂存”或“开发”）使用不同的队列。
+目前，无法为单独的环境（例如“暂存”或“开发”）设置不同的队列。
 
 ### 日志记录和错误处理 {#logging-error-handling}
 
-诸如logInfo()的日志将被定向到[!DNL pipelined]日志。 诸如logError()之类的错误被写入[!DNL pipelined]日志，导致事件被放入重试队列。 在这种情况下，应检查流水线日志。
-在[!DNL pipelined]选项中设置的持续时间内，会重试几次出错的邮件。
+诸如logInfo()之类的日志被定向到[!DNL pipelined]日志。 诸如logError()之类的错误已写入[!DNL pipelined]日志，并导致该事件被放入重试队列。 在这种情况下，您应该检查管道化日志。
+在[!DNL pipelined]选项中设置的持续时间内，错误消息会重试多次。
 
 出于调试和监控目的，完整的触发器数据以XML格式写入“数据”字段的触发器表中。 或者，包含触发器数据的logInfo()也可达到相同目的。
 
@@ -157,7 +157,7 @@ function processPipelineMessage(xmlTrigger)
 
 >[!NOTE]
 >
->这是来自各种可能实现的特定示例。
+>这是来自各种可能实施的具体示例。
 
 此示例JS代码将触发器保存到数据库。
 
@@ -183,7 +183,7 @@ function processPipelineMessage(xmlTrigger)
 
 ### 约束 {#constraints}
 
-此代码的性能必须是最佳的，因为它以高频率运行，并且可能会对其他营销活动产生潜在的负面影响。 特别是在营销服务器上每小时处理超过100万个触发事件时，或者未正确调整时。
+此代码的性能必须最佳，因为它以高频率运行，可能会对其他营销活动产生潜在的负面影响。 特别是如果每小时在营销服务器上处理超过100万次会触发事件，或者未正确优化该服务器。
 
 此Javascript的上下文有限。 并非该API的所有函数都可用。 例如，getOption()或getCurrentdate()不起作用。
 
@@ -193,7 +193,7 @@ function processPipelineMessage(xmlTrigger)
 
 >[!NOTE]
 >
->这是来自各种可能实现的特定示例。
+>这是来自各种可能实施的具体示例。
 
 ### 管道事件架构 {#pipeline-event-schema}
 
@@ -206,11 +206,11 @@ triggerType字段标识数据来源的触发器。
 | 属性 | 类型 | 标签 | 说明 |
 |:-:|:-:|:-:|:-:|
 | pipelineEventId | 长 | 主键 | 触发器的内部主键。 |
-| 数据 | 备忘录 | 触发数据 | XML格式的触发器数据的完整内容。 用于调试和审核。 |
+| 数据 | 备注 | 触发数据 | XML格式的触发器数据的完整内容。 用于调试和审核。 |
 | triggerType | 字符串50 | TriggerType | 触发器的名称。 标识客户在网站上的行为。 |
-| 购物者_id | 字符串32 | 购物者_id | 购物者的内部标识符。 由协调工作流设置。 如果为0，则表示在Campaign中未知该客户。 |
+| shopper_id | 字符串32 | shopper_id | 购物者的内部标识符。 由协调工作流设置。 如果为0，则表示在Campaign中未知该客户。 |
 | shopper_key | 长 | shopper_key | 购物者的Analytics捕获的外部标识符。 |
-| 已创建 | 日期时间 | 已创建 | 在Campaign中创建事件的时间。 |
+| 已创建 | 日期时间 | 创建时间 | 在Campaign中创建事件的时间。 |
 | lastModified | 日期时间 | 上次修改时间 | 上次在Adobe中修改事件的时间。 |
 | 时间GMT | 日期时间 | 时间戳 | 在Analytics中生成事件的时间。 |
 
@@ -220,7 +220,7 @@ triggerType字段标识数据来源的触发器。
 
 >[!NOTE]
 >
->管道事件节点不是内置节点，需要添加，并且需要在Campaign中创建相关表单。 这些操作仅限专家用户执行。 有关详细信息，请参阅以下部分： [导航层次结构](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)。 和[编辑表单](../../configuration/using/editing-forms.md)。
+>管道事件节点不是内置节点，需要添加，并且需要在Campaign中创建相关表单。 这些操作仅限专家用户执行。 有关详细信息，请参阅[编辑表单](../../configuration/using/editing-forms.md)。
 
 ![](assets/triggers_7.png)
 
@@ -230,10 +230,10 @@ triggerType字段标识数据来源的触发器。
 
 协调是将客户从Adobe Analytics匹配到Adobe Campaign数据库的过程。 例如，匹配的条件可以是shopper_id。
 
-出于性能原因，工作流必须以批处理模式完成匹配。
-频率必须设置为15分钟才能优化工作负载。 因此，在Adobe Campaign中接收事件与营销工作流程处理事件之间的延迟最长为15分钟。
+出于性能原因，必须通过工作流以批处理模式进行匹配。
+频率必须设置为15分钟以优化工作负载。 因此，在Adobe Campaign中接收事件到营销工作流处理该事件之间的延迟最长为15分钟。
 
-### JavaScript中单元协调的选项 {#options-unit-reconciliation}
+### JavaScript中用于单元协调的选项 {#options-unit-reconciliation}
 
 可以在JavaScript中为每个触发器运行协调查询。 它有更高的性能影响并提供更快的结果。 对于需要反应性的特定用例，可能需要此参数。
 
@@ -241,7 +241,7 @@ triggerType字段标识数据来源的触发器。
 
 ### 清除工作流 {#purge-workflow}
 
-触发器将在小时内处理。 音量可达每小时100万个触发器。 它解释了必须建立清除工作流程的原因。 清除每天运行一次，并删除所有早于三天的触发器。
+触发器在小时内处理。 该数量大约可达每小时100万次触发。 它解释了必须设置清除工作流的原因。 清除每天运行一次，并删除所有超过三天的触发器。
 
 ### 活动工作流 {#campaign-workflow}
 

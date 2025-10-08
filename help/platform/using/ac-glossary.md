@@ -6,9 +6,9 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '5959'
+source-wordcount: '6002'
 ht-degree: 2%
 
 ---
@@ -119,7 +119,7 @@ Learn more about [Interaction](../../interaction/using/interaction-and-offer-man
 
 +++**频道**
 
-信道是用来发送通信的介质。 Adobe Campaign中的内置渠道包括电子邮件、短信、直邮、推送通知、LINE和X(以前称为Twitter)。 可以针对非标准渠道要求实施自定义渠道。
+信道是用来发送通信的介质。 Adobe Campaign中的内置渠道包括电子邮件、短信、直邮、推送通知、LINE和X（以前称为Twitter）。 可以针对非标准渠道要求实施自定义渠道。
 
 了解有关[渠道](../../delivery/using/communication-channels.md)的更多信息。
 +++
@@ -278,7 +278,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 +++**域委派**
 
 子域配置允许您配置域的子部分（技术上称为“DNS区域”）以与Adobe Campaign一起使用。
-域委派允许Adobe控制和维护DNS的所有方面，这些方面是传递、渲染和跟踪电子邮件营销活动所必需的。
+域委派使Adobe能够控制和维护发送、渲染和跟踪电子邮件营销活动所需的DNS的各个方面。
 
 了解有关[域委派](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans)的更多信息
 +++
@@ -345,14 +345,16 @@ An engine call is a server call that starts real-time processing on server side 
 
 枚举是在架构中或在Platform级别定义的数据类型，用于定义字段的有效输入值。 枚举作为选取列表显示在用户界面和查询构建器中。
 
-了解有关[枚举](../../platform/using/managing-enumerations.md)的详细信息。
+在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 +++
 
 +++**资源管理器视图**
 
 资源管理器视图是包含Adobe Campaign工件和数据的文件夹的分层显示。 请注意，Adobe Campaign中的文件夹系统的功能与典型的树状视图不同，因为每个文件夹都包含特定类型的数据，例如投放、工作流或选件。
 
-了解有关[资源管理器视图](../../platform/using/adobe-campaign-explorer.md)的详细信息。
+
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+
 +++
 
 +++**外部帐户**
@@ -398,14 +400,15 @@ An engine call is a server call that starts real-time processing on server side 
 
 文件夹是一个Explorer视图项，它保存特定数据类型的数据库记录。 用作组织元素的Generic文件夹类型例外，它本身不包含任何数据，仅包含其他文件夹。
 
-了解有关[文件夹](../../platform/using/adobe-campaign-explorer.md)的详细信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+
 +++
 
 +++**文件夹视图**
 
 “文件夹”视图是一种特殊的“资源管理器”文件夹类型，用于显示选定数据类型的所有记录，无论它属于哪个文件夹。 文件夹视图用作管理工具，以管理分布在多个文件夹中的分区数据或数据。
 
-了解有关[文件夹视图](../../platform/using/adobe-campaign-explorer.md)的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 +++
 
 +++**Forms**
@@ -558,7 +561,8 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 导航树是Adobe Campaign资源管理器视图中的主导航。 导航树的工作方式与文件浏览器类似（例如Windows资源管理器）。 文件夹可能包含子文件夹。 选择某个节点将显示与该节点对应的视图。 显示的视图是与架构关联的列表和用于编辑所选行的输入表单。 您可以自定义导航树并设置文件夹权限。
 
-了解有关[导航树](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch)的详细信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+
 +++
 
 +++**目标**
@@ -667,7 +671,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 *上下文： Campaign交互*
 
-优惠呈现是渠道用于显示优惠的信息。 优惠表示可以从其上表示优惠的空间或直接输入到界面(例如，在HTML块中)的呈现函数来构建。 优惠可以用空格表示。
+优惠呈现是渠道用于显示优惠的信息。 优惠表示可以由表示优惠的空间中的呈现函数构造，或直接输入到界面(例如，在HTML块中)中。 优惠可以用空格表示。
 
 了解有关[交互](../../interaction/using/interaction-and-offer-management.md)的详细信息。
 +++
@@ -752,9 +756,9 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 了解有关[调色板](../../workflow/using/building-a-workflow.md#adding-and-linking-activities)的详细信息。
 +++
 
-+++**性能监视**
++++**性能监控**
 
-性能监视信息显示在“监视”选项卡上。 它显示底层系统的度量，如内存和CPU使用率、SMTP服务器统计信息、服务器进程及其他相关信息。
+性能监视信息显示在“监视”选项卡上。 它显示底层系统的量度，如内存和CPU使用情况、SMTP服务器统计信息、服务器进程及其他相关信息。
 
 了解有关[性能监视](../../production/using/monitoring-processes.md)的详细信息。
 +++
@@ -811,7 +815,7 @@ Learn more about [Predictive Engagement Scoring](../../platform/using/creating-f
 了解有关[主键](../../configuration/using/schema/key.md)的更多信息。
 +++
 
-+++**用户档案**
++++**轮廓**
 
 用户档案是代表最终客户、潜在客户或潜在客户的信息记录。 每个配置文件对应于nmsRecipient表或外部表中的记录，该记录包含cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息。
 
@@ -836,7 +840,7 @@ Adobe Campaign中的公共资源文件夹包含由应用程序服务器托管的
 
 *上下文：移动应用频道*
 
-推送通知是移动应用程序收到的消息。 通过在移动应用程序中包含Experience PlatformSDK代码，将推送通知配置为与Adobe Campaign配合使用。 对于推送，有两个投放渠道可用：iOS和Android。
+推送通知是移动应用程序收到的消息。 通过在移动应用程序中包含Adobe Campaign SDK代码，将推送通知配置为与Experience Platform配合使用。 对于推送，有两个投放渠道可用：iOS和Android。
 
 了解有关[推送](../../delivery/using/about-mobile-app-channel.md)的更多信息。
 +++
@@ -854,7 +858,7 @@ Adobe Campaign中的公共资源文件夹包含由应用程序服务器托管的
 
 *上下文： Campaign交互*
 
-渲染函数在选件空间中定义。 它用于根据优惠中定义的属性构建其优惠表示形式。 呈现功能模式有三种：HTML、XML和文本。
+渲染函数在选件空间中定义。 它用于根据优惠中定义的属性构建其优惠表示形式。 渲染功能模式有三种：HTML、XML和文本。
 
 了解有关[渲染函数](../../interaction/using/creating-offer-spaces.md)的详细信息。
 +++
@@ -909,7 +913,7 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 
 在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。控制面板允许您对SFTP服务器执行各种操作，如监视存储容量、管理IP地址允许列表和管理公共SSH密钥。
 
-了解有关[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans)的更多信息。
+了解有关[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)的更多信息。
 +++
 
 +++**订阅服务活动**
