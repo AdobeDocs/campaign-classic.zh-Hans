@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 80%
+source-wordcount: '489'
+ht-degree: 82%
 
 ---
 
@@ -21,8 +21,6 @@ ht-degree: 80%
 在使用 Campaign Classic 时需要帮助？请阅读下列 10 大问题，以及该页面中的其他常见问题。您还可以：
 
 * [观看教程视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)
-* [浏览自助选项](../../platform/using/tutorials.md#how-to-videos)
-* [阅读入门和用例部分](../../platform/using/tutorials.md#step-by-step-guides)
 * 找不到答案？[咨询专家](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
 * 需要支持？[参考 Campaign 帮助和支持选项](../../support.md)
 
@@ -62,11 +60,11 @@ Adobe Campaign 提供了一组仪表板和工具来监视电子邮件投放。
 
 [单击此处了解更多信息](../../platform/using/launching-adobe-campaign.md)。
 
-## 7.哪些系统和组件Campaign Classic兼容？ {#which-systems-and-components-campaign-classic-is-compatible-with-}
+## 7.哪些系统和组件与Campaign Classic兼容？ {#which-systems-and-components-campaign-classic-is-compatible-with-}
 
 在 [Adobe Campaign Classic 兼容性表](../../rn/using/compatibility-matrix.md)中，您可以获得支持 Campaign 最新版本的所有系统和组件的列表。
 
-## 8.Campaign Classic的发行说明在哪里？ {#where-are-campaign-classic-release-notes-}
+## 8.在何处能找到Campaign Classic发行说明？ {#where-are-campaign-classic-release-notes-}
 
 您可在[此页面](../../rn/using/latest-release.md)中访问最新的 Campaign Classic 版本说明。
 

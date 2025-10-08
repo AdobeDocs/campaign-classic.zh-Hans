@@ -5,9 +5,9 @@ description: 了解如何发布、跟踪和使用调查中收集的数据
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '855'
 ht-degree: 2%
 
 ---
@@ -162,4 +162,4 @@ ht-degree: 2%
 
 ## 标准化数据 {#standardizing-data}
 
-可以在Adobe Campaign中为使用别名收集的数据设置标准化流程。 这使您能够标准化存储在数据库中的数据：为此，请在包含相关信息的明细列表中定义别名。 [了解详情](../../platform/using/managing-enumerations.md#about-enumerations)
+可以在Adobe Campaign中为使用别名收集的数据设置标准化流程。 这使您能够标准化存储在数据库中的数据：为此，请在包含相关信息的明细列表中定义别名。 在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。

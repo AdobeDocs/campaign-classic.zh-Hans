@@ -7,9 +7,9 @@ feature: Campaigns, Templates
 hide: true
 hidefromtoc: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1131'
 ht-degree: 3%
 
 ---
@@ -114,7 +114,7 @@ ht-degree: 3%
 
 * **大纲**
 
-  选择此模块后，将在&#x200B;**[!UICONTROL Documents]**&#x200B;选项卡中添加一个&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子选项卡，以定义营销活动的投放大纲。 在[本节](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)中了解有关投放概要的更多信息。
+  选择此模块后，将在&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;选项卡中添加一个&#x200B;**[!UICONTROL Documents]**&#x200B;子选项卡，以定义营销活动的投放大纲。 在[本节](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)中了解有关投放概要的更多信息。
 
   ![](assets/s_ncs_user_op_template_activate_4.png)
 
@@ -157,7 +157,7 @@ ht-degree: 3%
 
   >[!NOTE]
   >
-  >有关枚举的详细信息，请参阅[快速入门](../../platform/using/managing-enumerations.md)部分。
+  >在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 * 选择&#x200B;**类型的营销活动**：唯一、定期或定期。 默认情况下，营销活动模板适用于独特营销活动。 [此部分](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns)中详细介绍了循环和定期营销活动。
 * 指定营销活动的持续时间，即营销活动将发生的天数。 基于此模板创建营销活动时，将自动填充营销活动开始和结束日期。

@@ -1,25 +1,25 @@
 ---
 product: campaign
-title: 模式版本示例
-description: 模式版本示例
+title: 架构版本示例
+description: 架构版本示例
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '671'
 ht-degree: 2%
 
 ---
 
 
-# 模式版本示例{#examples-of-schemas-edition}
+# 架构版本示例{#examples-of-schemas-edition}
 
 ## 扩展表 {#extending-a-table}
 
-要扩展&#x200B;**nms：recipient**&#x200B;架构收件人表，请应用以下过程：
+要扩展&#x200B;**nms:recipient**&#x200B;架构收件人表，请应用以下过程：
 
-1. 使用以下数据创建扩展架构(**cus：extension**)：
+1. 使用以下数据创建扩展架构(**cus:extension**)：
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -40,13 +40,13 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   在此示例中，添加了索引字段(**fidelity**)，并且&#x200B;**位置**&#x200B;元素（已存在于&#x200B;**nms：recipient**&#x200B;架构中）附有枚举字段(**area**)。
+   在此示例中，添加了索引字段(**fidelity**)，并且&#x200B;**位置**&#x200B;元素（已存在于&#x200B;**nms:recipient**&#x200B;架构中）附有枚举字段(**area**)。
 
    >[!IMPORTANT]
    >
    >请记得添加&#x200B;**extendedSchema**&#x200B;属性以引用扩展架构。
 
-1. 检查扩展架构是否为&#x200B;**nms：recipient**&#x200B;架构，以及是否存在其他数据：
+1. 检查扩展架构是否为&#x200B;**nms:recipient**&#x200B;架构，以及是否存在其他数据：
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -153,7 +153,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 扩展表的目的是避免对表中支持的字段数的限制，或者优化数据占用的空间（按需使用）。
 
-正在创建扩展表架构(**cus：feature**)：
+正在创建扩展表架构(**cus:feature**)：
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -203,7 +203,7 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 溢出表包含要扩展的表的外键。 因此，不会修改要扩展的表。 两个表之间的关系是要扩展的表的主键值。
 
-正在创建溢出表架构(**cus：overflow**)：
+正在创建溢出表架构(**cus:overflow**)：
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -222,7 +222,7 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 >[!NOTE]
 >
->溢出表的主键是指向要扩展的表的链接（在本例中为“nms：recipient”模式）。
+>溢出表的主键是指向要扩展的表的链接（在本例中为“nms:recipient”架构）。
 
 表创建SQL脚本如下所示：
 
@@ -235,7 +235,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 关系表允许您链接两个具有基数N-N的表。此表只包含要链接的表的外键。
 
-组(**nms：group**)和收件人(**nms：recipient**)之间的关系表示例。
+组(**nms:group**)和收件人(**nms:recipient**)之间的关系表示例。
 
 关系表的Source架构：
 
@@ -335,8 +335,9 @@ xtkschema="xtk:srcSchema">
 
 ## 相关主题
 
-* [使用枚举](../../platform/using/managing-enumerations.md)
+* 在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 * [Campaign模式入门](../../configuration/using/about-schema-edition.md)
 
 * [更新数据库结构](../../configuration/using/updating-the-database-structure.md)
+
