@@ -4,7 +4,7 @@ title: 个性化和隐私
 description: 了解隐私和个性化的安全最佳实践
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 2%
@@ -25,9 +25,9 @@ ht-degree: 2%
 
 ### 推荐
 
-要验证并确保您未使用以上内容，请通过[Campaign通用查询编辑器](../../platform/using/steps-to-create-a-query.md)对跟踪URL表运行查询，或在[查询活动](../../workflow/using/query.md)中创建具有筛选条件的工作流。
+要验证并确保您未使用以上内容，请通过[Campaign通用查询编辑器](../../platform/using/about-queries-in-campaign.md)对跟踪URL表运行查询，或在[查询活动](../../workflow/using/query.md)中创建具有筛选条件的工作流。
 
-例如：
+示例：
 
 1. 创建工作流并添加&#x200B;**查询**&#x200B;活动。 [了解详情](../../workflow/using/query.md)。
 
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 如果您在19.1.4内部版本上运行，则在使用跟踪链接或使用锚点标记进行投放时可能会遇到问题。 如果出现这种情况，建议您禁用URL签名。
 
-作为Campaign托管、托管Cloud Service或混合型客户，您必须联系[客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)以禁用URL签名。
+作为活动托管、托管云服务或混合型客户，您必须联系[客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)以禁用URL签名。
 
 如果您在混合架构中运行Campaign，则在启用URL签名之前，请确保已如下所示升级托管的中源实例：
 
@@ -151,7 +151,7 @@ ht-degree: 2%
    >
    >您可以将`$(loginId) = 0 or $(login) = 'admin'`替换为`hasNamedRight('admin')`，以允许所有具有管理员权限的用户查看这些密码。
 
-## 带PI的Protect页面
+## 使用PI保护页面
 
 我们强烈建议内部部署客户保护可能包含个人信息(PI)的页面，如镜像页面、Web应用程序等。
 

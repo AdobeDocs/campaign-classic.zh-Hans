@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 2%
@@ -58,7 +58,7 @@ ht-degree: 2%
 
 您可以将过滤器应用于选件目标。
 
-为此，请单击&#x200B;**[!UICONTROL Edit query]**&#x200B;链接，然后选择要应用的筛选器。 （请参阅[此章节](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)）。
+为此，请单击&#x200B;**[!UICONTROL Edit query]**&#x200B;链接，然后选择要应用的筛选器。 请参阅[此小节](../../platform/using/about-adobe-campaign-classic.md)。
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -66,7 +66,7 @@ ht-degree: 2%
 
 ![](assets/offer_eligibility_create_004.png)
 
-### 优惠权重 {#offer-weight}
+### 产品建议权重 {#offer-weight}
 
 要使引擎能够在目标有资格使用的多个优惠之间做出决定，您需要为该优惠分配一个或多个权重。 如有必要，您还可以将过滤器应用于目标，或限制将应用权重的选件空间。 权重较高的选件优先于权重较低的选件。
 

@@ -6,7 +6,7 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 68%
@@ -80,7 +80,7 @@ ht-degree: 68%
         <li><a href="delivery/using/understanding-quarantine-management.md">了解隔离管理</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">安全和隐私检查清单</a></li>
         <li><a href="platform/using/privacy-management.md">隐私和同意管理</a></li>
-        <li><a href="platform/using/steps-to-create-a-query.md">设计查询</a></li>
+        <li><a href="platform/using/about-queries-in-campaign.md">设计查询</a></li>
         <li><a href="workflow/using/querying-recipient-table.md">查询示例</a></li>
         <li><a href="workflow/using/building-a-workflow.md">构建工作流</a></li>
         </ul>
@@ -113,7 +113,7 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 ### SFTP 管理
 
-在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监视其存储容量、管理允许列表上的IP地址和公共SSH密钥。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans)以了解更多信息。
+在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监视其存储容量、管理允许列表上的IP地址和公共SSH密钥。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以了解更多信息。
 
 ### 子域和证书
 
