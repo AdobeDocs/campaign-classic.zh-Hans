@@ -1,41 +1,41 @@
 ---
 product: campaign
-title: 同步用户档案
+title: 同步轮廓
 description: 了解如何将配置文件与ACS Connector同步
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1155'
 ht-degree: 1%
 
 ---
 
-# 同步用户档案{#synchronizing-profiles}
+# 同步轮廓{#synchronizing-profiles}
 
 
 
-ACS Connector会将数据从Campaign v7复制到Campaign Standard。 从Campaign v7接收的数据可用于Campaign Standard以创建投放。 您可以通过执行以下列出的操作来查看配置文件的同步方式。
+ACS Connector将数据从Campaign v7复制到Campaign Standard。 从Campaign v7接收的数据可用于Campaign Standard创建投放。 您可以通过执行以下列出的操作来查看配置文件的同步方式。
 
 * **添加新收件人**：在Campaign v7中创建新收件人，并确认已将相应的用户档案复制到Campaign Standard。 请参阅[创建新收件人](#creating-a-new-recipient)。
 * **更新收件人**：在Campaign v7中编辑新收件人，并在Campaign Standard中查看相应的用户档案以确认已复制更新。 请参阅[编辑收件人](#editing-a-recipient)。
 * **在Campaign Standard中构建工作流**：在Campaign Standard中创建包含查询的工作流，该查询具有从Campaign v7复制的受众或用户档案。 请参阅[创建工作流](#creating-a-workflow)。
 * **在Campaign Standard中创建投放**：按照工作流完成以发送投放。 请参阅[创建投放](#creating-a-delivery)。
-* **验证退订链接**：使用Campaign v7 Web应用程序确保将收件人退订服务的选择发送到Campaign v7数据库。 停止接收服务的选项将复制到Campaign Standard。 请参阅[更改退订链接](#changing-the-unsubscription-link)。
+* **验证退订链接**：使用Campaign v7 Web应用程序确保将收件人退订服务的选择发送到Campaign v7数据库。 停止接收服务的选项将会复制到Campaign Standard。 请参阅[更改退订链接](#changing-the-unsubscription-link)。
 
 ## 先决条件 {#prerequisites}
 
 以下部分介绍ACS Connector如何帮助您在Campaign v7中添加和编辑收件人，然后在Campaign Standard投放中使用这些收件人。 ACS Connector要求满足以下条件：
 
 * Campaign v7中的收件人已复制到Campaign Standard。
-* 用于在Campaign v7和Campaign Standard中执行工作流的用户权限。
+* 在Campaign v7和Campaign Standard中执行工作流的用户权限。
 * 在Campaign Standard中创建和执行投放的用户权限。
 
 ## 更改退订链接 {#changing-the-unsubscription-link}
 
-当收件人单击Campaign Standard发送的电子邮件中的退订链接时，Campaign Standard中的相应用户档案会更新。 为了确保复制的用户档案包含用户退订服务的选择，必须将信息发送到Campaign v7而不是Campaign Standard。 为执行更改，退订服务将链接到Campaign v7 Web应用程序而不是Campaign Standard。
+当收件人单击由Campaign Standard发送的电子邮件中的退订链接时，Campaign Standard中的相应用户档案会更新。 为了确保复制的用户档案包含用户退订服务的选择，必须将信息发送到Campaign v7而不是Campaign Standard。 为执行更改，退订服务将链接到Campaign v7 Web应用程序而不是Campaign Standard。
 
 >[!NOTE]
 >
@@ -43,11 +43,11 @@ ACS Connector会将数据从Campaign v7复制到Campaign Standard。 从Campaign
 
 ## 创建新收件人 {#creating-a-new-recipient}
 
-1. 在Campaign v7中创建新收件人，以复制到Campaign Standard。 输入尽可能多的信息，包括收件人的姓氏、名字、电子邮件地址和邮政地址。 但是，请勿选择&#x200B;**[!UICONTROL Salutation]**，因为它将添加到下一部分[编辑收件人](#editing-a-recipient)中。 有关详细信息，请参阅[添加收件人](../../platform/using/adding-profiles.md)。
+1. 在Campaign v7中创建新收件人，以复制到Campaign Standard。 输入尽可能多的信息，包括收件人的姓氏、名字、电子邮件地址和邮政地址。 但是，请勿选择&#x200B;**[!UICONTROL Salutation]**，因为它将添加到下一部分[编辑收件人](#editing-a-recipient)中。
 
    ![](assets/acs_connect_profile_sync_01.png)
 
-1. 确认新收件人已添加到Campaign Standard。 查看用户档案时，请确保您在Campaign v7中输入的数据也可在Campaign Standard中使用。 若要了解在Campaign Standard中在何处查找配置文件，请参阅[导航基础知识](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=zh-Hans)。
+1. 确认新收件人已添加到Campaign Standard。 查看用户档案时，请确保您在Campaign v7中输入的数据也在Campaign Standard中可用。 要了解在Campaign Standard中的何处查找配置文件，请参阅[导航基础知识](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=zh-Hans)。
 
    ![](assets/acs_connect_profile_sync_02.png)
 
@@ -55,13 +55,13 @@ ACS Connector会将数据从Campaign v7复制到Campaign Standard。 从Campaign
 
 ## 编辑收件人 {#editing-a-recipient}
 
-以下更改单个数据点的步骤提供了一个简单示例，说明在使用数据复制时，Campaign v7如何成为用于Campaign Standard的主数据库。 修改或删除Campaign v7中的复制数据对Campaign Standard中的相应数据具有相同的效果。
+以下更改单个数据点的步骤提供了一个简单示例，展示了在使用数据复制时，Campaign v7如何成为Campaign Standard的主数据库。 修改或删除Campaign v7中的复制数据对Campaign Standard中的相应数据具有相同的效果。
 
-1. 从[创建新收件人](#creating-a-new-recipient)并编辑收件人的名称。 例如，为收件人（如先生或太太）选择&#x200B;**[!UICONTROL Salutation]**。 有关详细信息，请参阅[编辑个人资料](../../platform/using/editing-a-profile.md)。
+1. 从[创建新收件人](#creating-a-new-recipient)并编辑收件人的名称。 例如，为收件人（如先生或太太）选择&#x200B;**[!UICONTROL Salutation]**。
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. 确认收件人的姓名已在Campaign Standard中更新。 若要了解在Campaign Standard中在何处查找配置文件，请参阅[导航基础知识](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=zh-Hans)。
+1. 确认收件人的姓名已在Campaign Standard中更新。 要了解在Campaign Standard中的何处查找配置文件，请参阅[导航基础知识](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=zh-Hans)。
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -69,7 +69,7 @@ ACS Connector会将数据从Campaign v7复制到Campaign Standard。 从Campaign
 
 ## 创建工作流 {#creating-a-workflow}
 
-从Campaign v7复制的用户档案和服务可供数字营销人员利用Campaign Standard中的丰富数据。 下面的说明演示了如何向Campaign Standard工作流添加查询，然后将其用于复制的数据库。
+从Campaign v7复制的用户档案和服务可供数字营销人员利用Campaign Standard中的丰富数据。 以下说明演示了如何将查询添加到Campaign Standard工作流，然后将其用于复制的数据库。
 
 有关Campaign Standard工作流的更多信息和完整说明，请参阅[工作流](../../workflow/using/about-workflows.md)。
 
@@ -170,10 +170,10 @@ ACS Connector会将数据从Campaign v7复制到Campaign Standard。 从Campaign
 
    ![](assets/acs_connect_profile_sync_21.png)
 
-1. Campaign v7中的收件人数据将更新，以反映用户已取消订阅。 确认已为收件人选中框&#x200B;**[!UICONTROL No longer contact (by any channel)]**。 若要了解如何在Campaign v7中查看收件人，请参阅[编辑用户档案](../../platform/using/editing-a-profile.md)。
+1. Campaign v7中的收件人数据将更新，以反映用户已取消订阅。 确认已为收件人选中框&#x200B;**[!UICONTROL No longer contact (by any channel)]**。
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. 转到Campaign Standard并打开收件人的配置文件详细信息。 确认&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;旁边显示复选框。 若要了解在Campaign Standard中在何处查找配置文件，请参阅[导航基础知识](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=zh-Hans)。
+1. 转到Campaign Standard并打开收件人的个人资料详细信息。 确认&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;旁边显示复选框。 要了解在Campaign Standard中的何处查找配置文件，请参阅[导航基础知识](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=zh-Hans)。
 
    ![](assets/acs_connect_profile_sync_23.png)

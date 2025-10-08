@@ -4,9 +4,9 @@ title: 数据模型最佳实践
 description: 了解如何使用Campaign Classic数据模型
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '4013'
+source-wordcount: '4005'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Adobe Campaign默认数据模型在[此文档](../../configuration/using/data-mo
 * **expr**&#x200B;属性允许将架构属性定义为计算字段而不是表中的物理集值。 这样，即可以不同格式（例如年龄和出生日期）访问信息，而无需存储这两个值。 这是避免字段重复的好方法。 例如，收件人表使用域表达式，该表达式已存在于电子邮件字段中。
 * 但是，当表达式计算复杂时，不建议使用&#x200B;**expr**&#x200B;属性，因为动态计算可能会影响查询的性能。
 * **XML**&#x200B;类型是避免创建过多字段的好方法。 但是，它也会占用磁盘空间，因为它使用数据库中的CLOB列。 它还可能导致复杂的SQL查询，并可能影响性能。
-* **字符串**&#x200B;字段的长度应始终使用列定义。 默认情况下，Adobe Campaign中的最大长度为255，但是Adobe建议，如果您已经知道字段大小不会超过更短的长度，则保持该字段更短。
+* **字符串**&#x200B;字段的长度应始终使用列定义。 默认情况下，Adobe Campaign中的最大长度为255，但是Adobe建议，如果您已经知道字段大小不会超过更短的长度，请缩短该字段。
 * 如果您确定源系统中的字段大小被高估而无法达到，则可以接受Adobe Campaign中的字段比源系统中的字段更短。 这可能意味着Adobe Campaign中的字符串长度更短，整数更小。
 
 ### 字段选择 {#choice-of-fields}
@@ -84,7 +84,7 @@ Adobe Campaign默认数据模型在[此文档](../../configuration/using/data-mo
 
 高效的密钥对于性能至关重要。 数值数据类型应始终作为表的键首选。
 
-对于SQLServer数据库，如果需要性能，可以考虑使用“聚簇索引”。 由于Adobe不处理此问题，因此您需要在SQL中创建它。
+对于SQLServer数据库，如果需要性能，可以考虑使用“聚簇索引”。 由于Adobe不处理此事务，因此您需要在SQL中创建它。
 
 ### 专用表空间 {#dedicated-tablespaces}
 
@@ -103,7 +103,7 @@ Adobe Campaign资源具有三个标识符，可以添加额外的标识符。
 | 标识符 | 说明 | 最佳实践 |
 |--- |--- |--- |
 | Id | <ul><li>ID是Adobe Campaign表的物理主键。 对于开箱即用的表，它是从序列生成的32位数字</li><li>此标识符通常特定于特定的Adobe Campaign实例。 </li><li>自动生成的ID可在架构定义中可见。 搜索&#x200B;*autopk=&quot;true&quot;*&#x200B;属性。</li></ul> | <ul><li>不应在工作流或包定义中将自动生成的标识符用作引用。</li><li>不应假设id将始终为递增数。</li><li>现成表格中的ID是32位数字，不应更改此类型。 此数字取自部分中包含的具有相同名称的“序列”。</li></ul> |
-| 名称（或内部名称） | <ul><li>此信息是表中记录的唯一标识符。 此值可手动更新，通常使用生成的名称。</li><li>当此标识符部署在Adobe Campaign的其他实例中时，会保留其值，并且它不应为空。</li></ul> | <ul><li>如果打算将对象从一个环境部署到另一个环境，请重命名Adobe Campaign生成的记录名称。</li><li>当对象具有命名空间属性（例如&#x200B;*架构*）时，此公用命名空间将在创建的所有自定义对象中使用。 不应使用某些保留的命名空间： *nms*、*xtk*、*nl*、*ncl*、*crm*、*xxl*。</li><li>当对象没有任何命名空间（例如&#x200B;*工作流*&#x200B;或&#x200B;*投放*）时，此命名空间概念将被添加为内部名称对象的前缀： *namespaceMyObjectName*。</li><li>请勿使用空格“ ”、分号“：”或连字符“ — ”等特殊字符。 所有这些字符都将替换为下划线“_”（允许的字符）。 例如，“abc-def”和“abc：def”将存储为“abc_def”并相互覆盖。</li></ul> |
+| 名称（或内部名称） | <ul><li>此信息是表中记录的唯一标识符。 此值可手动更新，通常使用生成的名称。</li><li>当此标识符部署在Adobe Campaign的其他实例中时，会保留其值，并且它不应为空。</li></ul> | <ul><li>如果打算将对象从一个环境部署到另一个环境，请重命名Adobe Campaign生成的记录名称。</li><li>当对象具有命名空间属性（例如&#x200B;*架构*）时，此公用命名空间将在创建的所有自定义对象中使用。 不应使用某些保留的命名空间： *nms*、*xtk*、*nl*、*ncl*、*crm*、*xxl*。</li><li>当对象没有任何命名空间（例如&#x200B;*工作流*&#x200B;或&#x200B;*投放*）时，此命名空间概念将被添加为内部名称对象的前缀： *namespaceMyObjectName*。</li><li>请勿使用空格“ ”、分号“：”或连字符“ — ”等特殊字符。 所有这些字符都将替换为下划线“_”（允许的字符）。 例如，“abc-def”和“abc:def”将存储为“abc_def”并相互覆盖。</li></ul> |
 | 标签 | <ul><li>标签是Adobe Campaign中对象或记录的业务标识符。</li><li>此对象允许使用空格和特殊字符。</li><li>它不能保证记录的唯一性。</li></ul> | <ul><li>建议确定对象标签的结构。</li><li>这是用于为Adobe Campaign用户标识记录或对象的最用户友好的解决方案。</li></ul> |
 
 ## 自定义内部键 {#custom-internal-keys}
@@ -146,7 +146,7 @@ Adobe Campaign主键是所有现成表自动生成的id，对于自定义表可�
 
 默认情况下，自定义序列的值介于+1,000和+2.1BB之间。 从技术上讲，通过启用负id可以获得整个4BB范围。 应谨慎使用此变量，当从负数转为正数时，将丢失一个id：Adobe Campaign通常会在生成的SQL查询中忽略记录0。
 
-有关序列消耗的详细信息，请观看[此视频](https://helpx.adobe.com/cn/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
+有关序列消耗的详细信息，请观看[此视频](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
 
 ## 索引 {#indexes}
 
@@ -165,12 +165,13 @@ Adobe建议定义其他索引，因为它可能会提高性能。
 * 仔细选择需要定义的索引。
 * 请勿从现成表中删除本机索引。
 
-<!--When you are performing an initial import with very high volumes of data insert in Adobe Campaign database, it is recommended to run that import without custom indexes at first. It will allow to accelerate the insertion process. Once you’ve completed this important import, it is possible to enable the index(es).-->
+<!--When you are performing an initial import with very high volumes of data insert in Adobe Campaign database, it is recommended to run that import without custom indexes at first. It will allow to accelerate the insertion process. Once you've completed this important import, it is possible to enable the index(es).-->
 
 ### 示例
 
 管理索引可能会变得非常复杂，因此了解它们的工作原理非常重要。 为了说明此复杂性，我们以一个基本示例为例，例如通过筛选名字和姓氏来搜索收件人。 操作步骤：
-1. 转到列出数据库中所有收件人的文件夹。 有关此内容的详细信息，请参阅[管理用户档案](../../platform/using/managing-profiles.md)。
+
+1. 浏览到列出数据库中所有收件人的文件夹。
 1. 右键单击&#x200B;**[!UICONTROL First name]**&#x200B;字段。
 1. 选择 **[!UICONTROL Filter on this field]**。
 
@@ -247,7 +248,7 @@ Adobe Campaign既不是Data Warehouse也不是报表工具。 因此，要确保
 
 在[Campaign隐私和安全准则](../../platform/using/privacy-and-recommendations.md)中了解有关数据保留的更多信息。
 
-在本节[&#128279;](../../production/using/database-cleanup-workflow.md)中了解有关Campaign数据库清理工作流的更多信息。
+在本节[中了解有关Campaign数据库清理工作流](../../production/using/database-cleanup-workflow.md)的更多信息。
 
 >[!IMPORTANT]
 >
@@ -298,10 +299,10 @@ Adobe Campaign依赖于第三方数据库引擎。 根据提供商的不同，�
 
 * **小型**&#x200B;表类似于投放表。
 * **中等大小**&#x200B;表与收件人表的大小相同。 每个客户都有一笔记录。
-* **large-size**&#x200B;表类似于Broad日志表。 每个客户都有许多记录。
+* **large-size**表类似于Broad日志表。 每个客户都有许多记录。
 例如，如果数据库包含1000万条收件人，则Broad日志表将包含约1亿到2亿条消息，而Delivery表将包含数千条记录。
 
-在PostgreSQL上，行不应超过8 KB，以避免[TOAST](https://wiki.postgresql.org/wiki/TOAST)机制。 因此，应尽量减少列数和每行大小，以保持系统的最佳性能（内存和CPU）。
+在PostgreSQL上，行不应超过8 KB，以避免[TOAST](https://wiki.postgresql.org/wiki/TOAST)机制。 因此，应尽量减少列数和每行大小，以保留系统的最佳性能(内存和CPU)。
 
 行数也会影响性能。 Adobe Campaign数据库的设计宗旨并非存储当前未用于定位或个性化目的的历史数据 — 这是一个操作数据库。
 

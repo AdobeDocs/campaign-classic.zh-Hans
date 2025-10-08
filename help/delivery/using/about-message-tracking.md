@@ -6,10 +6,10 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 9%
+source-wordcount: '684'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 借助其跟踪功能，Adobe Campaign使您能够跟踪发送的消息并检查收件人的行为：打开、单击链接、退订等。
 
-此信息在投放的每个收件人用户档案的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡中检索。 此选项卡显示从列表中选择的收件人跟踪和点击的所有URL链接。 这是投放中跟踪的仍存在于投放屏幕中的所有URL的累积。 该列表可以配置，通常包含：点击的URL、点击的日期和时间以及在其中找到URL的文档。 如需详细信息，请参阅[此小节](../../platform/using/editing-a-profile.md#tracking-tab)。
+此信息在投放的每个收件人用户档案的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡中检索。 此选项卡显示从列表中选择的收件人跟踪和点击的所有URL链接。 这是投放中跟踪的仍存在于投放屏幕中的所有URL的累积。 该列表可以配置，通常包含：点击的URL、点击的日期和时间以及在其中找到URL的文档。
 
 **投放仪表板**&#x200B;也是监测您的投放以及在发送消息期间遇到的最终问题的关键。 有关详细信息，请参阅[此部分](delivery-dashboard.md)。
 

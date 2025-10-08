@@ -6,10 +6,10 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '2987'
-ht-degree: 8%
+source-wordcount: '2984'
+ht-degree: 7%
 
 ---
 
@@ -41,8 +41,7 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 
 * 另一方面，如果位于&#x200B;**阻止列表**，则会导致&#x200B;**用户档案**&#x200B;不再被投放定位，例如在取消订阅（选择退出）给定渠道后。 例如，如果电子邮件渠道阻止列表上的用户档案有两个电子邮件地址，则这两个地址都将排除在投放之外。
 
-  您可以在配置文件的&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL No longer contact]**&#x200B;部分中检查配置文件是否正在阻止列表一个或多个渠道。 请参阅[此小节](../../platform/using/editing-a-profile.md#general-tab)。
-
+  您可以在配置文件的&#x200B;**[!UICONTROL No longer contact]**&#x200B;选项卡的&#x200B;**[!UICONTROL General]**&#x200B;部分中检查配置文件是否正在阻止列表一个或多个渠道。
 >[!NOTE]
 >
 >隔离包括&#x200B;**[!UICONTROL Denylisted]**&#x200B;状态，当收件人将您的邮件报告为垃圾邮件或回复带有“STOP”等关键字的短信邮件时，将应用该状态。 在这种情况下，会将用户档案中涉及的地址或电话号码添加到隔离，并显示&#x200B;**[!UICONTROL Denylisted]**&#x200B;状态。 有关管理STOP SMS消息的更多信息，请参阅[此章节](../../delivery/using/sms-send.md#processing-inbound-messages)。
@@ -104,7 +103,7 @@ Adobe Campaign根据投放失败类型和错误消息鉴别期间分配的原因
 * **硬错误**：相应的电子邮件地址会立即添加到隔离。
 * **软错误**：软错误不会立即将地址添加到隔离，但会增加错误计数。有关此内容的详细信息，请参阅[软错误管理](#soft-error-management)。
 
-如果用户将电子邮件标记为垃圾邮件（[反馈循环](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#feedback-loops)），则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅适用于地址，用户档案不在阻止列表上，因此用户可继续接收短信和推送通知。
+如果用户将电子邮件标记为垃圾邮件（[反馈循环](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)），则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅适用于地址，用户档案不在阻止列表上，因此用户可继续接收短信和推送通知。
 
 >[!NOTE]
 >
@@ -125,7 +124,7 @@ Adobe Campaign根据投放失败类型和错误消息鉴别期间分配的原因
 
 对于托管或混合安装，如果您已升级到[增强型MTA](sending-with-enhanced-mta.md)，则在&#x200B;**[!UICONTROL Erroneous]**&#x200B;状态的情况下要执行的最大重试次数和重试之间的最小延迟现在取决于IP在给定域名的历史和当前表现如何。
 
-对于使用旧版Campaign MTA的内部部署和托管/混合安装，您可以修改错误数以及两个错误之间的时间间隔。 为此，请更改[部署向导](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或投放级别[&#128279;](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)的中的相应设置。
+对于使用旧版Campaign MTA的内部部署和托管/混合安装，您可以修改错误数以及两个错误之间的时间间隔。 为此，请更改[部署向导](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或投放级别[的](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)中的相应设置。
 
 
 ## 从隔离中删除地址 {#removing-a-quarantined-address}
@@ -148,7 +147,7 @@ Adobe Campaign根据投放失败类型和错误消息鉴别期间分配的原因
 
 ### 手动更新 {#unquarantine-manual}
 
-您还可以手动取消隔离地址。 要从隔离列表中手动删除地址，请将其状态从&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**&#x200B;节点更改为&#x200B;**[!UICONTROL Valid]**。
+您还可以手动取消隔离地址。 要从隔离列表中手动删除地址，请将其状态从&#x200B;**[!UICONTROL Valid]**&#x200B;节点更改为&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
 
 ![](assets/tech_quarant_error_status.png)
 
@@ -160,21 +159,21 @@ Adobe Campaign根据投放失败类型和错误消息鉴别期间分配的原因
 
 以下是此查询的建议准则：
 
-* 对于在隔离列表的&#x200B;**[!UICONTROL Error text]**&#x200B;字段中包含入站电子邮件规则信息的Campaign Classicv7环境：
+* 对于在隔离列表的&#x200B;**[!UICONTROL Error text]**&#x200B;字段中包含入站电子邮件规则信息的Campaign Classic v7环境：
 
    * **错误文本（隔离文本）**&#x200B;包含“Momen_Code10_InvalidRecipient”
    * **电子邮件域(@domain)**&#x200B;等于domain1.com或&#x200B;**电子邮件域(@domain)**&#x200B;等于domain2.com或&#x200B;**电子邮件域(@domain)**&#x200B;等于domain3.com
    * **更新状态(@lastModified)**&#x200B;在`MM/DD/YYYY HH:MM:SS AM`或之后
-   * **在`MM/DD/YYYY HH:MM:SS PM`或之前更新状态(@lastModified)**
+   * **在**&#x200B;或之前更新状态(@lastModified)`MM/DD/YYYY HH:MM:SS PM`
 
-* 对于隔离列表的&#x200B;**[!UICONTROL Error text]**&#x200B;字段中包含SMTP退回响应信息的Campaign Classicv7实例：
+* 对于隔离列表的&#x200B;**[!UICONTROL Error text]**&#x200B;字段中包含SMTP退回响应信息的Campaign Classic v7实例：
 
    * **错误文本（隔离文本）**&#x200B;包含“550-5.1.1”且&#x200B;**错误文本（隔离文本）**&#x200B;包含“support.ISP.com”
 
   其中“support.ISP.com”可以是：例如“support.apple.com”或“support.google.com”
 
    * **更新状态(@lastModified)**&#x200B;在`MM/DD/YYYY HH:MM:SS AM`或之后
-   * **在`MM/DD/YYYY HH:MM:SS PM`或之前更新状态(@lastModified)**
+   * **在**&#x200B;或之前更新状态(@lastModified)`MM/DD/YYYY HH:MM:SS PM`
 
 获得受影响的收件人列表后，添加&#x200B;**[!UICONTROL Update data]**&#x200B;活动以将其电子邮件地址状态设置为&#x200B;**[!UICONTROL Valid]**，以便&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流将其从隔离列表中删除。 也可以直接从隔离表中删除它们。
 
@@ -279,7 +278,7 @@ HTTP/V2协议允许直接反馈每个推送投放的状态。 如果使用HTTP/V
 
 用于Android V1 **的**
 
-对于每个通知，Adobe Campaign都会直接从FCM服务器接收同步错误。 Adobe活动会即时处理这些错误，并根据错误的严重性生成硬错误或软错误，并且可以执行重试：
+对于每个通知，Adobe Campaign都会直接从FCM服务器接收同步错误。 Adobe Campaign即时处理这些错误，并根据错误的严重性生成硬错误或软错误，可以执行重试：
 
 * 已超出有效负载长度，连接问题，服务可用性问题：已执行重试，软错误，失败原因为&#x200B;**[!UICONTROL Refused]**。
 * 超出设备配额：无重试、软错误、失败原因为&#x200B;**[!UICONTROL Refused]**。
@@ -565,7 +564,7 @@ SMS消息的隔离机制在全局上与常规流程相同。 请参阅[关于隔
  </tbody> 
 </table>
 
-扩展通用SMPP连接器的&#x200B;**&#x200B;**
+扩展通用SMPP连接器的&#x200B;****
 
 使用SMPP协议发送短信消息时，错误管理的处理方式不同。 有关扩展通用SMPP连接器的详细信息，请参阅[此页面](sms-set-up.md#creating-an-smpp-external-account)。
 
@@ -604,6 +603,6 @@ SR Generic DELIVRD 000|#MESSAGE#
 
   默认情况下，正则表达式提取&#x200B;**SMPP 3.4规范**&#x200B;的&#x200B;**附录B**&#x200B;部分定义的&#x200B;**err：**&#x200B;字段。
 
-* 管道符号(|)之后的所有内容仅显示在&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;表的&#x200B;**[!UICONTROL First text]**&#x200B;列中。 在消息规范化后，此内容始终被&#x200B;**#MESSAGE#**&#x200B;替换。 此过程避免因类似错误而出现多个条目，与电子邮件的情况相同。 有关此内容的详细信息，请参阅[退回邮件鉴别](understanding-delivery-failures.md#bounce-mail-qualification)。
+* 管道符号(|)之后的所有内容仅显示在&#x200B;**[!UICONTROL First text]**&#x200B;表的&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;列中。 在消息规范化后，此内容始终被&#x200B;**#MESSAGE#**&#x200B;替换。 此过程避免因类似错误而出现多个条目，与电子邮件的情况相同。 有关此内容的详细信息，请参阅[退回邮件鉴别](understanding-delivery-failures.md#bounce-mail-qualification)。
 
 扩展通用SMPP连接器应用启发式来查找合理的默认值：如果状态以&#x200B;**DELIV**&#x200B;开头，则被视为成功，因为它与大多数提供商使用的通用状态&#x200B;**DELIVRD**&#x200B;或&#x200B;**DELIVERED**&#x200B;匹配。 任何其他状态都会导致硬故障。

@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 99%
+source-wordcount: '2566'
+ht-degree: 97%
 
 ---
 
@@ -60,12 +60,12 @@ ht-degree: 99%
       + [选择禁用个人信息销售](platform/using/privacy-requests-ccpa.md)
    + 轮廓管理 {#profile-management}
       + [关于轮廓](platform/using/about-profiles.md)
-      + [编辑轮廓](platform/using/editing-a-profile.md)
-      + [添加轮廓](platform/using/adding-profiles.md)
-      + [管理轮廓](platform/using/managing-profiles.md)
+      + [编辑个人资料 — 隐藏](platform/using/editing-a-profile.md)
+      + [添加配置文件 — 隐藏](platform/using/adding-profiles.md)
+      + [管理配置文件 — 隐藏](platform/using/managing-profiles.md)
       + [更新数据](platform/using/updating-data.md)
-      + [导入和导出轮廓](platform/using/exporting-and-importing-profiles.md)
-   + [创建和管理列表](platform/using/creating-and-managing-lists.md)
+      + [导入和导出用户档案 — 隐藏](platform/using/exporting-and-importing-profiles.md)
+      + [创建和管理列表](platform/using/creating-and-managing-lists.md)
    + 导入和导出数据 {#importing-and-exporting-data}
       + [数据导入和导出入门](platform/using/get-started-data-import-export.md)
       + [使用工作流导入和导出数据](platform/using/import-export-workflows.md)
@@ -382,11 +382,11 @@ ht-degree: 99%
       + [配置与  [!DNL Adobe Target] 的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
    + ACS 连接器 {#acs-connector}
-      + [&#x200B; [!DNL ACS Connector] 入门](integrations/using/acs-connector-principles-and-data-cycle.md)
-      + [同步轮廓](integrations/using/synchronizing-profiles.md)
-      + [同步受众](integrations/using/synchronizing-audiences.md)
-      + [同步 Web 应用程序](integrations/using/synchronizing-web-applications.md)
-      + [对  [!DNL ACS Connector] 进行故障排除](integrations/using/troubleshooting-the-acs-connector.md)
+      + [开始使用 [!DNL ACS Connector]  — 隐藏](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [同步用户档案 — 隐藏](integrations/using/synchronizing-profiles.md)
+      + [同步受众 — 隐藏](integrations/using/synchronizing-audiences.md)
+      + [同步Web应用程序 — 隐藏](integrations/using/synchronizing-web-applications.md)
+      + [ [!DNL ACS Connector]  — 隐藏疑难解答](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflow-automation.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
    + 工作流快速入门 {#introduction}
