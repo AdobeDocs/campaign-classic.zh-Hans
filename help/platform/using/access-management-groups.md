@@ -7,9 +7,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '574'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->这些步骤仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证，请参阅[此文档](https://helpx.adobe.com/cn/enterprise/using/user-groups.html)。
+>这些过程仅适用于使用旧版本机身份验证连接到Campaign的操作员。 从Campaign Classic v7.3.1开始，所有操作员都应使用[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}连接到Campaign。 [了解详情](../../technotes/using/migrate-users-to-ims.md)
+>
+>使用Adobe ID连接到Campaign时，以下部分不再适用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hans){target="_blank"}以了解如何使用Adobe IMS设置权限。
 
 操作员组通过树中的&#x200B;**[!UICONTROL Administration > Access management > Operator groups]**&#x200B;节点创建。
 
@@ -65,7 +67,7 @@ ht-degree: 1%
 
 1. **[!UICONTROL Campaign managers]**
 
-   此组中的操作员可以管理营销活动：通过此组，您可以访问链接到营销活动的对象（计划、项目、工作流、预算等） 在&#x200B;**[!UICONTROL Campaign]**&#x200B;的框架内(可选Adobe Campaign模块)。
+   此组中的操作员可以管理营销活动：通过此组，您可以访问&#x200B;**[!UICONTROL Campaign]**(可选Adobe Campaign模块)框架内链接到营销活动的对象（计划、项目、工作流、预算等）。
 
    此组包含以下已命名权限：
 

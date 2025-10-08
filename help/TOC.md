@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '2570'
+source-wordcount: '2574'
 ht-degree: 96%
 
 ---
@@ -92,10 +92,11 @@ ht-degree: 96%
    + [定义筛选条件 — 隐藏](platform/using/defining-filter-conditions.md)
    + 权限 {#permissions}
       + [权限入门](platform/using/access-management.md)
-      + [创建和管理操作员](platform/using/access-management-operators.md)
-      + [创建和管理组](platform/using/access-management-groups.md)
+      + 本机身份验证（旧版） {#native}
+         + [创建和管理操作员](platform/using/access-management-operators.md)
+         + [创建和管理组](platform/using/access-management-groups.md)
       + [使用已命名权限设置权限](platform/using/access-management-named-rights.md)
-      + [管理对文件夹的访问](platform/using/access-management-folders.md)
+      + [管理对文件夹的访问 — 隐藏](platform/using/access-management-folders.md)
    + CRM 连接器 {#connectors}
       + [CRM 连接器入门](platform/using/crm-connectors.md)
       + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
@@ -385,7 +386,7 @@ ht-degree: 96%
       + [同步用户档案 — 隐藏](integrations/using/synchronizing-profiles.md)
       + [同步受众 — 隐藏](integrations/using/synchronizing-audiences.md)
       + [同步Web应用程序 — 隐藏](integrations/using/synchronizing-web-applications.md)
-      + [&#x200B; [!DNL ACS Connector]  — 隐藏疑难解答](integrations/using/troubleshooting-the-acs-connector.md)
+      + [ [!DNL ACS Connector]  — 隐藏疑难解答](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflow-automation.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
    + 工作流快速入门 {#introduction}
