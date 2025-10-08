@@ -31,7 +31,6 @@ ht-degree: 29%
 >[!NOTE]
 >
 > * 要显示数据库中所有收件人的列表，您必须创建一个视图。 请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}以了解详情。
-
 > * 要了解有关如何管理用户档案的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}。
 
 
