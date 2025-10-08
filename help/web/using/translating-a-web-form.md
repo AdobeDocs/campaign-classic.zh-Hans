@@ -169,7 +169,7 @@ Web窗体以Web应用程序属性的&#x200B;**[!UICONTROL Localization]**&#x200B
 &lang=xx
 ```
 
-如果URL中的语言之前还有其他参数。 例如：**https://myserver/webApp/APP34?status=1&amp;lang=en**
+如果URL中的语言之前还有其他参数。 例如：**https://myserver/webApp/APP34?status=1&lang=en**
 
 下面列出了默认提供的翻译语言和词典。
 
@@ -430,7 +430,7 @@ Web窗体以Web应用程序属性的&#x200B;**[!UICONTROL Localization]**&#x200B
 >[!NOTE]
 >
 >如果此Web应用程序已经使用了其他参数，请添加&#x200B;**&amp;lang=**。\
->例如：**https://myserver/webApp/APP34?status=1&amp;lang=en**
+>例如：**https://myserver/webApp/APP34?status=1&lang=en**
 
 ## 高级翻译配置 {#advanced-translation-configuration}
 
