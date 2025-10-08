@@ -9,9 +9,9 @@ topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
 hide: true
 hidefromtoc: true
-source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '137'
 ht-degree: 29%
 
 ---
@@ -30,8 +30,9 @@ ht-degree: 29%
 
 >[!NOTE]
 >
-> * 要显示数据库中所有收件人的列表，您必须创建一个视图。 在[文件夹和视图](../../platform/using/access-management-folders.md)中了解详情。
-> * 要了解有关如何管理用户档案的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}。
+> * 要显示数据库中所有收件人的列表，您必须创建一个视图。 请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}以了解详情。
+
+> * 要了解有关如何管理用户档案的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}。
 
 
 <!--

@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '697'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->在执行实例上，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹不能设置为视图，因为这会导致访问权限问题。 有关将文件夹设置为视图的详细信息，请参阅[此部分](../../platform/using/access-management-folders.md)。
+>在执行实例上，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹不能设置为视图，因为这会导致访问权限问题。 有关将文件夹设置为视图的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}。
 
 ## 模板路由 {#routing-towards-a-template}
 
@@ -81,7 +81,7 @@ ht-degree: 2%
 
 ## 事件状态 {#event-statuses}
 
-在&#x200B;**[!UICONTROL Message Center]** > **[!UICONTROL Event history]**&#x200B;下的&#x200B;**事件历史记录**&#x200B;将所有已处理的事件分组到一个视图中。 它们可以按事件类型或&#x200B;**状态**&#x200B;分类。 这些状态为：
+在&#x200B;**>**&#x200B;下的&#x200B;**[!UICONTROL Message Center]**&#x200B;事件历史记录&#x200B;**[!UICONTROL Event history]**&#x200B;将所有已处理的事件分组到一个视图中。 它们可以按事件类型或&#x200B;**状态**&#x200B;分类。 这些状态为：
 
 * **挂起**：事件可以是：
 
@@ -101,4 +101,4 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->此步骤只能使用工作流执行，因此仅供专家用户使用。 有关更多信息，请与您的Adobe客户经理联系。
+>此步骤只能使用工作流执行，因此仅供专家用户使用。 有关更多信息，请联系您的Adobe客户经理。

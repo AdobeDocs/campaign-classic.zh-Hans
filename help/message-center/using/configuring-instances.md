@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1237'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ## 配置控制实例 {#control-instance}
 
-若要连接控制实例和执行实例，您首先需要在控制实例&#x200B;**上创建和配置&#x200B;**&#x200B;[!UICONTROL Execution instance]&#x200B;**类型的外部帐户**。 因此，一旦[发布](../../message-center/using/publishing-message-templates.md#template-publication)，事务性消息模板就可以部署到执行实例。
+若要连接控制实例和执行实例，您首先需要在控制实例&#x200B;**[!UICONTROL Execution instance]**&#x200B;上创建和配置&#x200B;**类型的外部帐户**。 因此，一旦[发布](../../message-center/using/publishing-message-templates.md#template-publication)，事务性消息模板就可以部署到执行实例。
 
 如果您使用多个执行实例，则必须创建与执行实例相同数量的外部帐户。
 
@@ -185,7 +185,7 @@ ht-degree: 1%
 
 要使用多个控制实例，必须在所有执行实例上执行此配置。
 
-1. 在&#x200B;**[!UICONTROL Administration > Production > Message Center]**&#x200B;节点中为每个运算符创建一个文件夹： **文件夹1**&#x200B;和&#x200B;**文件夹2**。 有关创建文件夹和视图的详细信息，请参阅[此页面](../../platform/using/access-management-folders.md)。
+1. 在&#x200B;**[!UICONTROL Administration > Production > Message Center]**&#x200B;节点中为每个运算符创建一个文件夹： **文件夹1**&#x200B;和&#x200B;**文件夹2**。 在[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}中了解有关文件夹和视图的详细信息。
 
    ![](assets/messagecenter_multi_control_3.png)
 

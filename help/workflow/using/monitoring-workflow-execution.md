@@ -6,9 +6,9 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2020'
 ht-degree: 2%
 
 ---
@@ -271,7 +271,7 @@ Campaign Classic界面允许您使用预定义的&#x200B;**视图**&#x200B;监�
 
 1. 右键单击要添加视图的文件夹。
 1. 在&#x200B;**[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**&#x200B;中，选择要添加的视图。
-1. 将文件夹添加到树后，请确保将其配置为视图，以便显示所有工作流，无论其原始文件夹是什么。有关如何配置视图的详细信息，请参阅[此部分](../../platform/using/access-management-folders.md)。
+1. 将文件夹添加到树后，请确保将其配置为视图，以便显示所有工作流，无论其原始文件夹是什么。 有关如何配置视图的详细信息，请参阅[此部分](../../platform/using/about-adobe-campaign-classic.md)。
 
 除了这些视图，您还可以设置过滤器文件夹，以允许您根据工作流的执行状态筛选工作流列表。 操作步骤：
 
