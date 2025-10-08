@@ -4,7 +4,9 @@ title: 管理和自定义列表
 description: 了解如何浏览和配置列表
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: f43b15e61fb286a612f057d8d3bf5a1ff6ecb253
+hide: true
+hidefromtoc: true
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
@@ -19,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->要了解如何在Adobe Campaign中管理和自定义列表，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}。
+>要了解如何在Adobe Campaign中管理和自定义列表，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}。
 
 <!--
 ## Count records {#counting-records}

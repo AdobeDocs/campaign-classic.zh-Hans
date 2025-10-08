@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '2561'
+source-wordcount: '2559'
 ht-degree: 99%
 
 ---
@@ -23,24 +23,22 @@ ht-degree: 99%
    + 之前版本  {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [2022](rn/using/release-2022.md)
-      + [2021](rn/using/release-2021.md)
-      + [[!DNL Gold Standard]](rn/using/gold-standard.md)
+      + [2022 — 隐藏](rn/using/release-2022.md)
+      + [2021 — 隐藏](rn/using/release-2021.md)
+      + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
-   + [文档更新](rn/using/documentation-updates.md)
+   + [文档更新 — 隐藏](rn/using/documentation-updates.md)
 + 快速入门 {#getting-started}
-   + 开始使用 Adobe Campaign {#starting-with-adobe-campaign}
-      + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
-      + [启动 Adobe Campaign](platform/using/launching-adobe-campaign.md)
-      + Adobe Campaign 工作区{#campaign-workspace}
-         + [Campaign UI 入门](platform/using/adobe-campaign-workspace.md)
-         + [使用 Campaign Explorer](platform/using/adobe-campaign-explorer.md)
-         + [浏览和自定义列表](platform/using/adobe-campaign-ui-lists.md)
-         + [明细列表](platform/using/managing-enumerations.md)
-      + [Campaign 连接器](platform/using/about-connectors.md)
-      + 常见问题解答 {#faq}
-         + [最常见问题](platform/using/common-questions.md)
+   + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
+   + [启动 Adobe Campaign](platform/using/launching-adobe-campaign.md)
+   + [Campaign UI 入门](platform/using/adobe-campaign-workspace.md)
+   + [使用Campaign Explorer — 隐藏](platform/using/adobe-campaign-explorer.md)
+   + [浏览和自定义列表 — 隐藏](platform/using/adobe-campaign-ui-lists.md)
+   + [枚举 — 隐藏](platform/using/managing-enumerations.md)
+   + [Campaign 连接器](platform/using/about-connectors.md)
+   + 常见问题解答 {#faq}
+      + [最常见问题](platform/using/common-questions.md)
          + [全局概念](platform/using/faq-key-concepts.md)
          + [内部版本升级](platform/using/faq-build-upgrade.md)
          + [隐私](platform/using/privacy-faq.md)
@@ -51,16 +49,15 @@ ht-degree: 99%
          + [配置](platform/using/faq-campaign-config.md)
          + [报告](platform/using/faq-reporting.md)
          + [开发](platform/using/faq-developers.md)
-         + [教程](platform/using/tutorials.md)
-      + [词汇表](platform/using/ac-glossary.md)
-      + 隐私 {#privacy}
-         + [隐私和同意](platform/using/privacy-and-recommendations.md)
-         + [隐私管理](platform/using/privacy-management.md)
-         + 隐私请求 {#privacy-requests}
-            + [关于隐私请求](platform/using/privacy-requests.md)
-            + [创建和管理隐私请求](platform/using/privacy-requests-ui.md)
-            + [自动隐私请求流程](platform/using/privacy-requests-api.md)
-         + [选择禁用个人信息销售](platform/using/privacy-requests-ccpa.md)
+   + [词汇表](platform/using/ac-glossary.md)
+   + 隐私 {#privacy}
+      + [隐私和同意](platform/using/privacy-and-recommendations.md)
+      + [隐私管理](platform/using/privacy-management.md)
+      + 隐私请求 {#privacy-requests}
+         + [关于隐私请求](platform/using/privacy-requests.md)
+         + [创建和管理隐私请求](platform/using/privacy-requests-ui.md)
+         + [自动隐私请求流程](platform/using/privacy-requests-api.md)
+      + [选择禁用个人信息销售](platform/using/privacy-requests-ccpa.md)
    + 轮廓管理 {#profile-management}
       + [关于轮廓](platform/using/about-profiles.md)
       + [编辑轮廓](platform/using/editing-a-profile.md)
@@ -385,7 +382,7 @@ ht-degree: 99%
       + [配置与  [!DNL Adobe Target] 的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
    + ACS 连接器 {#acs-connector}
-      + [&#x200B; [!DNL ACS Connector] 入门](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [ [!DNL ACS Connector] 入门](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [同步轮廓](integrations/using/synchronizing-profiles.md)
       + [同步受众](integrations/using/synchronizing-audiences.md)
       + [同步 Web 应用程序](integrations/using/synchronizing-web-applications.md)

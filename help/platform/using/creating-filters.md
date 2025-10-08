@@ -2,21 +2,15 @@
 product: campaign
 title: 创建过滤器
 description: 创建过滤器
-feature: Profiles
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
-audience: platform
-content-type: reference
-topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: 813ef65ff45407a92c5f9d7f3d07189972a5742b
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '158'
 ht-degree: 3%
 
 ---
 
 # 创建过滤器{#creating-filters}
-
 
 数据过滤是选择数据集的较小部分（仅限符合特定标准的记录），并将此子集用于特定操作（更新、受众创建）或分析的过程。
 
@@ -28,7 +22,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->要了解有关筛选器及其使用方法的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}。
+>要了解有关筛选器及其使用方法的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}。
 
 
 <!--

@@ -5,9 +5,11 @@ description: 本页列出了 Adobe Campaign Classic 文档中的所有新增功�
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: ht
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+workflow-type: tm+mt
 source-wordcount: '3864'
 ht-degree: 100%
 
