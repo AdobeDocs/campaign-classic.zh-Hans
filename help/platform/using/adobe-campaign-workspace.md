@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 1e0e75c6f0dd5a32584291205047f835e951ee9c
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 23%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 23%
 
 ## 探索Adobe Campaign界面 {#about-adobe-campaign-interface}
 
-连接到数据库后，即可访问 Adobe Campaign 主页，这是一个仪表板：其中包含允许您访问各种功能的链接和快捷方式，具体显示哪些取决于您的安装以及常规平台配置。
+连接到数据库后，即可访问Adobe Campaign主页。 此页面是您的仪表板：它由链接和快捷方式组成，允许您访问功能，具体取决于您的安装和常规平台配置。
 
-在主页的中央部分，可以使用链接访问 Campaign 在线文档门户网站、论坛及支持网站。
+从主页的中心部分，您可以使用链接访问Campaign文档门户、社区和Adobe客户关怀网站。
 
 ![](assets/d_ncs_user_interface_home.png)
 
@@ -51,7 +51,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 ![](assets/language.png)
 
-您可以在五种不同的语言之间进行选择：
+您可以选择以下两种语言：
 
 * 英语（英国）
 * 英语（美国）
@@ -59,7 +59,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 * 德语
 * 日语
 
-您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关详细信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
+您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关详细信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
 
 有关如何创建实例的详细信息，请参阅此[页面](../../installation/using/creating-an-instance-and-logging-on.md)。
 
@@ -110,7 +110,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 要了解有关Adobe Campaign Explorer的更多信息，请参阅Campaign v8（控制台）文档中的以下页面：
 
-* [Campaign用户界面概述](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Campaign用户界面概述](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Campaign UI设置](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -125,7 +125,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 >[!NOTE]
 >
->要了解如何访问、设计和共享过滤器，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}。
+>要了解如何访问、设计和共享过滤器，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 
 ## 使用列表 {#manage-and-customize-lists}
@@ -142,10 +142,10 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 定义后，值将显示在下拉列表中。 可以直接选择值，也可以使用预测输入输入输入值，这将会建议并完成匹配条目。 某些字段包括预定义枚举，如果需要，可以创建其他枚举。
 
-在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 ## 教程视频 {#video}
 
 本视频介绍Campaign Classic工作区。
 
->[!VIDEO](https://video.tv.adobe.com/v/39534?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
