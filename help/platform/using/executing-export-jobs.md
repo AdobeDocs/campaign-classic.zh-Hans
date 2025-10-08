@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 29%
@@ -21,7 +21,7 @@ ht-degree: 29%
 
 导出作业允许您访问数据库并从数据库中提取数据：联系人、客户端、列表、区段等。
 
-例如，使用营销活动跟踪数据（跟踪历史记录等）会很有用 在电子表格中。 输出数据可以是 txt、CSV、TAB 或 XML 格式。
+例如，在电子表格中使用促销活动跟踪数据（跟踪历史记录等）会很有用。 输出数据可以是 txt、CSV、TAB 或 XML 格式。
 
 导出助手允许您配置导出、定义其选项并启动执行。 它是一系列屏幕，其内容取决于导出类型（简单或多个）和操作员的权限。
 
@@ -74,7 +74,7 @@ ht-degree: 29%
 * 对于&#x200B;**[!UICONTROL Text]**&#x200B;格式，选择分隔符以分隔列（制表符、逗号、分号或自定义）和字符串（单引号、双引号或无）。
 * 对于&#x200B;**[!UICONTROL text]**&#x200B;和&#x200B;**[!UICONTROL CSV]**，您可以选择选项&#x200B;**[!UICONTROL Use first lines as column titles]**。
 * 指示日期格式和数字格式。 为此，请单击相关字段的&#x200B;**[!UICONTROL Edit]**&#x200B;按钮并使用编辑器。
-* 对于包含枚举值的字段，可以选择&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，标题可以以&#x200B;**1=Mr格式存储。**，**2=小姐**，**3=太太。**。 如果选择此选项，将导出 **Mr.**&#x200B;**、Miss** 和 **Mrs.**。
+* 对于包含枚举值的字段，可以选择&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，标题可以以&#x200B;**1=Mr格式存储。**，**2=小姐**，**3=太太。**。 如果选择此选项，将导出 **Mr.****、Miss** 和 **Mrs.**。
 
 ## 第 4 步 - 数据选择 {#step-4---data-selection}
 
@@ -85,7 +85,7 @@ ht-degree: 29%
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以调用函数。 有关详细信息，请参阅[函数列表](../../platform/using/defining-filter-conditions.md#list-of-functions)。
+1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以调用函数。 有关详细信息，请参阅[函数列表](../../platform/using/about-queries-in-campaign.md)。
 
 ## 步骤5 — 对列排序 {#step-5---sorting-columns}
 

@@ -5,9 +5,9 @@ description: 编辑内容
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[此页面](../../platform/using/defining-filter-conditions.md#list-of-functions)上提供了高级表达式编辑。
+>[此页面](../../platform/using/about-queries-in-campaign.md)上提供了高级表达式编辑。
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 **字段**&#x200B;输入区域允许您选择要与表单字段链接的数据库字段。
 
-默认情况下，提供的字段是&#x200B;**nms：recipient**&#x200B;表中的字段。
+默认情况下，提供的字段是&#x200B;**nms:recipient**&#x200B;表中的字段。
 
 ![](assets/dce_field_selection.png)
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 * 使用&#x200B;**[!UICONTROL Delete]**&#x200B;图标删除包含表单字段的块。
 * 通过使用&#x200B;**[!UICONTROL Duplicate]**&#x200B;图标创建新块来复制所选字段。
-* 使用&#x200B;**[!UICONTROL Edit]**&#x200B;图标编辑&#x200B;**[!UICONTROL Form data]**&#x200B;窗口以将数据库字段链接到表单区域。
+* 使用&#x200B;**[!UICONTROL Form data]**&#x200B;图标编辑&#x200B;**[!UICONTROL Edit]**&#x200B;窗口以将数据库字段链接到表单区域。
 
   ![](assets/dce_toolbar_formblock_edition.png)
 
@@ -208,7 +208,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->不能在HTML页的&#x200B;**脚本**&#x200B;标记中调用外部文件。 这些文件将不会导入到Adobe Campaign服务器上。
+>您不得在HTML页面的&#x200B;**脚本**&#x200B;标记中调用外部文件。 这些文件将不会导入到Adobe Campaign服务器上。
 
 ### 添加/删除/复制图像 {#adding---deleting---duplicating-an-image}
 
@@ -233,7 +233,7 @@ ht-degree: 0%
 当您选择包含图像的块时，您可以访问以下属性：
 
 * **题注**&#x200B;允许您定义链接到图像的题注(对应于&#x200B;**alt** HTML属性)。
-* **Dimension**&#x200B;允许您指定图像大小（像素）。
+* **尺寸**&#x200B;允许您指定图像大小（像素）。
 
   ![](assets/dce_popup_imgsize.png)
 

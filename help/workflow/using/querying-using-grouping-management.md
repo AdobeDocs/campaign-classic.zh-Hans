@@ -6,9 +6,9 @@ feature: Query Editor, Workflows
 hide: true
 hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '254'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 * 需要选择哪个表？
 
-  收件人表(nms：recipient)
+  收件人表(nms:recipient)
 
 * 要在输出列中选择的字段？
 
@@ -33,26 +33,26 @@ ht-degree: 3%
 
 要创建此示例，请应用以下步骤：
 
-1. 打开&#x200B;**[!UICONTROL Generic query editor]**&#x200B;并选择收件人表(**nms：recipient**)。
+1. 打开&#x200B;**[!UICONTROL Generic query editor]**&#x200B;并选择收件人表(**nms:recipient**)。
 
    ![](assets/query_editor_02.png)
 
 1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Email domain]**&#x200B;和&#x200B;**[!UICONTROL Primary key]**&#x200B;字段。 对&#x200B;**[!UICONTROL Primary key]**&#x200B;字段运行计数。
 
-   有关主键计数的详细信息，请参阅[此部分](../../platform/using/defining-filter-conditions.md#building-expressions)。
+   有关主键计数的详细信息，请参阅[此部分](../../platform/using/about-queries-in-campaign.md)。
 
 1. 选中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING)]**&#x200B;框。
 
    ![](assets/query_editor_nveau_29.png)
 
-1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;窗口中，按降序对电子邮件域进行排序。 为此，请检查&#x200B;**[!UICONTROL Descending sort]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**。 单击 **[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;窗口中，按降序对电子邮件域进行排序。 为此，请检查&#x200B;**[!UICONTROL Yes]**&#x200B;列中的&#x200B;**[!UICONTROL Descending sort]**。 单击 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_nveau_70.png)
 
 1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;中，选择&#x200B;**[!UICONTROL Filtering conditions]**。 转到&#x200B;**[!UICONTROL Target elements]**&#x200B;窗口并单击&#x200B;**[!UICONTROL Next]**。
-1. 在&#x200B;**[!UICONTROL Data grouping]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择&#x200B;**[!UICONTROL Email domain]**。
+1. 在&#x200B;**[!UICONTROL Data grouping]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Email domain]**&#x200B;以选择&#x200B;**[!UICONTROL Add]**。
 
-   此数据分组窗口仅在选中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING]**)框时显示。
+   此数据分组窗口仅在选中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING])**&#x200B;框时显示。
 
    ![](assets/query_editor_blocklist_04.png)
 

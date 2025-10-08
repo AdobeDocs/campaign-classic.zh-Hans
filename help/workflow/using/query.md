@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity, Query Editor
 hide: true
 hidefromtoc: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1630'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 
    您还可以通过选中相应的框来添加数据分组条件。 要实现此目的，筛选维度必须与查询的定向维度不同。 有关分组的详细信息，请参阅此[部分](querying-using-grouping-management.md)。
 
-   您也可以使用表达式生成器并将其与逻辑选项AND、OR和EXCEPT组合来添加更多标准。 然后，您可以预览条件组合的&#x200B;**[!UICONTROL Corresponding SQL query...]**。 有关详细信息，请参阅此[部分](../../platform/using/defining-filter-conditions.md#building-expressions)。
+   您也可以使用表达式生成器并将其与逻辑选项AND、OR和EXCEPT组合来添加更多标准。 然后，您可以预览条件组合的&#x200B;**[!UICONTROL Corresponding SQL query...]**。 有关详细信息，请参阅此[部分](../../platform/using/about-queries-in-campaign.md)。
 
    如果您希望稍后重复使用过滤器，请保存该过滤器。
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 1. 如有必要，请在&#x200B;**[!UICONTROL Data collected]**&#x200B;字段中选择一个值，以指定要保留的集合的元素数。 默认情况下，将恢复集合中的所有行，然后根据在以下步骤中指定的条件进行筛选。
 
-   * 如果集合的单个元素与此集合的过滤条件一致，请在&#x200B;**[!UICONTROL Data collected]**&#x200B;字段中选择&#x200B;**[!UICONTROL Single row]**。
+   * 如果集合的单个元素与此集合的过滤条件一致，请在&#x200B;**[!UICONTROL Single row]**&#x200B;字段中选择&#x200B;**[!UICONTROL Data collected]**。
 
      >[!IMPORTANT]
      >
@@ -163,7 +163,7 @@ ht-degree: 0%
 * 架构
 * recCount
 
-这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
+这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms:recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
 
 此值是工作表的模式。 此参数对于具有&#x200B;**[!UICONTROL tableName]**&#x200B;和&#x200B;**[!UICONTROL schema]**&#x200B;的所有过渡都有效。
 
@@ -188,16 +188,16 @@ ht-degree: 0%
 
   有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-  ![](assets/do-not-localize/v7.jpeg) [Campaign v7文档](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=zh-Hans)
+  ![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### 功能 {#functions}
 
 * 请注意类似`Lower(...)`的功能。 当使用Lower函数时，不使用Index。
 * 仔细检查使用“like”指令或“upper”或“lower”指令的查询。 将“Upper”应用于用户输入，而不是数据库字段。
 
-  有关函数的更多信息，请参阅[此章节](../../platform/using/defining-filter-conditions.md#list-of-functions)。
+  有关函数的更多信息，请参阅[此章节](../../platform/using/about-queries-in-campaign.md)。
 
 ### 过滤维度 {#filtering-dimensions}
 

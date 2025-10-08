@@ -6,7 +6,7 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
 source-wordcount: '6002'
 ht-degree: 2%
@@ -272,7 +272,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 值分布是一种工具，它显示当前存在于数据库中的方案属性的值分布。 这有助于您确定哪些值可用、其计数和百分比，并在创建查询或表达式时避免出现大写和拼写值问题。
 
-了解有关[值分布](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)的详细信息
+了解有关[值分布](../../platform/using/about-queries-in-campaign.md)的详细信息
 +++
 
 +++**域委派**
@@ -345,7 +345,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 枚举是在架构中或在Platform级别定义的数据类型，用于定义字段的有效输入值。 枚举作为选取列表显示在用户界面和查询构建器中。
 
-在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 +++
 
 +++**资源管理器视图**
@@ -353,7 +353,7 @@ An engine call is a server call that starts real-time processing on server side 
 资源管理器视图是包含Adobe Campaign工件和数据的文件夹的分层显示。 请注意，Adobe Campaign中的文件夹系统的功能与典型的树状视图不同，因为每个文件夹都包含特定类型的数据，例如投放、工作流或选件。
 
 
-请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 
 +++
 
@@ -400,7 +400,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 文件夹是一个Explorer视图项，它保存特定数据类型的数据库记录。 用作组织元素的Generic文件夹类型例外，它本身不包含任何数据，仅包含其他文件夹。
 
-请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 
 +++
 
@@ -408,7 +408,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 “文件夹”视图是一种特殊的“资源管理器”文件夹类型，用于显示选定数据类型的所有记录，无论它属于哪个文件夹。 文件夹视图用作管理工具，以管理分布在多个文件夹中的分区数据或数据。
 
-请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 +++
 
 +++**Forms**
@@ -561,7 +561,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 导航树是Adobe Campaign资源管理器视图中的主导航。 导航树的工作方式与文件浏览器类似（例如Windows资源管理器）。 文件夹可能包含子文件夹。 选择某个节点将显示与该节点对应的视图。 显示的视图是与架构关联的列表和用于编辑所选行的输入表单。 您可以自定义导航树并设置文件夹权限。
 
-请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 
 +++
 
@@ -913,7 +913,7 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 
 在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。控制面板允许您对SFTP服务器执行各种操作，如监视存储容量、管理IP地址允许列表和管理公共SSH密钥。
 
-了解有关[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans)的更多信息。
+了解有关[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)的更多信息。
 +++
 
 +++**订阅服务活动**
