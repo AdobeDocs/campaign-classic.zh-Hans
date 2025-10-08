@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
+source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
 workflow-type: tm+mt
-source-wordcount: '2559'
+source-wordcount: '2557'
 ht-degree: 99%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 99%
 + 快速入门 {#getting-started}
    + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
    + [启动 Adobe Campaign](platform/using/launching-adobe-campaign.md)
-   + [Campaign UI 入门](platform/using/adobe-campaign-workspace.md)
+   + [了解Campaign UI](platform/using/adobe-campaign-workspace.md)
    + [使用Campaign Explorer — 隐藏](platform/using/adobe-campaign-explorer.md)
    + [浏览和自定义列表 — 隐藏](platform/using/adobe-campaign-ui-lists.md)
    + [枚举 — 隐藏](platform/using/managing-enumerations.md)
@@ -382,7 +382,7 @@ ht-degree: 99%
       + [配置与  [!DNL Adobe Target] 的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
    + ACS 连接器 {#acs-connector}
-      + [&#x200B; [!DNL ACS Connector] 入门](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [ [!DNL ACS Connector] 入门](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [同步轮廓](integrations/using/synchronizing-profiles.md)
       + [同步受众](integrations/using/synchronizing-audiences.md)
       + [同步 Web 应用程序](integrations/using/synchronizing-web-applications.md)
