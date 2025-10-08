@@ -385,7 +385,7 @@ ht-degree: 97%
       + [同步用户档案 — 隐藏](integrations/using/synchronizing-profiles.md)
       + [同步受众 — 隐藏](integrations/using/synchronizing-audiences.md)
       + [同步Web应用程序 — 隐藏](integrations/using/synchronizing-web-applications.md)
-      + [ [!DNL ACS Connector]  — 隐藏疑难解答](integrations/using/troubleshooting-the-acs-connector.md)
+      + [&#x200B; [!DNL ACS Connector]  — 隐藏疑难解答](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflow-automation.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
    + 工作流快速入门 {#introduction}
