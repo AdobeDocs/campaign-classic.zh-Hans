@@ -7,8 +7,10 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 audience: platform
 content-type: reference
 topic-tags: creating-queries
+hide: true
+hidefromtoc: true
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
 source-wordcount: '3304'
 ht-degree: 34%
@@ -113,7 +115,7 @@ ht-degree: 34%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">未包含在</span> <br />中 </td> 
-   <td> 工作方式与</span>运算符中的<span class="uicontrol">Include类似。 在此，我们要根据输入的值排除收件人。<br /> </td> 
+   <td> 工作方式与<span class="uicontrol">运算符中的</span>Include类似。 在此，我们要根据输入的值排除收件人。<br /> </td> 
    <td> <strong>出生日期(@birthDate)不包含在'12/10/1979,12/10/1984'</strong>中。 与上一个示例不同，不会返回这些日期内出生的收件人。<br /> </td> 
   </tr> 
  </tbody> 
@@ -315,7 +317,7 @@ ht-degree: 34%
 
 应用以下步骤：
 
-1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中单击&#x200B;**[!UICONTROL Add]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择公式类型以输入表达式。
+1. 在&#x200B;**[!UICONTROL Add]**&#x200B;窗口中单击&#x200B;**[!UICONTROL Data to extract]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择公式类型以输入表达式。
 
    有多种类型的公式可用： **[!UICONTROL Field only]**、**[!UICONTROL Aggregate]**、**[!UICONTROL Expression]**。
 

@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 97%
 
 ---
@@ -87,10 +87,9 @@ ht-degree: 97%
       + [筛选选项](platform/using/filtering-options.md)
       + [创建过滤器](platform/using/creating-filters.md)
       + [用例](platform/using/use-case.md)
-   + 创建查询 {#creating-queries}
-      + [关于 Campaign 中的查询](platform/using/about-queries-in-campaign.md)
-      + [创建查询的步骤](platform/using/steps-to-create-a-query.md)
-      + [定义过滤器条件](platform/using/defining-filter-conditions.md)
+   + [在Campaign中创建查询](platform/using/about-queries-in-campaign.md)
+   + [创建查询的步骤 — 隐藏](platform/using/steps-to-create-a-query.md)
+   + [定义筛选条件 — 隐藏](platform/using/defining-filter-conditions.md)
    + 权限 {#permissions}
       + [权限入门](platform/using/access-management.md)
       + [创建和管理操作员](platform/using/access-management-operators.md)
@@ -102,7 +101,7 @@ ht-degree: 97%
       + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
       + [与 Salesforce.com 连接](platform/using/crm-sfdc.md)
       + [与 CRM 同步数据](platform/using/crm-data-sync.md)
-   + [帮助和支持选项](support.md)
+   + [帮助和支持选项 — 隐藏](support.md)
 + 创建和发送消息 {#sending-messages}
    + [消息功能快速入门](delivery/using/communication-channels.md)
    + [投放设置](delivery/using/delivery-settings.md)
@@ -386,7 +385,7 @@ ht-degree: 97%
       + [同步用户档案 — 隐藏](integrations/using/synchronizing-profiles.md)
       + [同步受众 — 隐藏](integrations/using/synchronizing-audiences.md)
       + [同步Web应用程序 — 隐藏](integrations/using/synchronizing-web-applications.md)
-      + [&#x200B; [!DNL ACS Connector]  — 隐藏疑难解答](integrations/using/troubleshooting-the-acs-connector.md)
+      + [ [!DNL ACS Connector]  — 隐藏疑难解答](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflow-automation.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
    + 工作流快速入门 {#introduction}

@@ -7,41 +7,45 @@ feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 64%
+source-wordcount: '216'
+ht-degree: 5%
 
 ---
 
 # 查询入门{#about-queries-in-campaign}
 
+查询工具在应用程序的各个级别可用，可用于定义目标群体、细分客户、提取和过滤跟踪日志、创建过滤器等。
 
+它提供了一个专用助手 — 通用查询编辑器 — 可从&#x200B;**[!UICONTROL Tools > Generic query editor...]**&#x200B;菜单访问。 此编辑器允许数据库查询提取、组织、分组和排序信息。 例如，它可以检索在给定时间段内点击新闻稿链接超过n次的收件人。
 
-您可在软件的多个级别上找到 Adobe Campaign 查询工具：创建目标群体、细分客户、提取和过滤跟踪日志、构建过滤器等。
+通用查询编辑器集中了所有查询功能。 它允许创建和存储限制过滤器，这些过滤器随后可以在其他上下文中重复使用，例如定位工作流的“查询”框。
 
-Adobe Campaign查询工具允许您使用专用助手（即通用查询编辑器）查询数据库。 通过&#x200B;**[!UICONTROL Tools > Generic query editor...]**&#x200B;菜单访问。 它可让您提取数据库中存储的信息，将其整理、分组、排序等。例如，用户可以找到在给定的期间内，在新闻稿的链接上点击超过 n 次的收件人。通过这个工具，您可根据自己的需求收集、排序和显示结果。
+![访问查询编辑器并选择表](assets/query_editor_nveau_21.png)
 
-此工具结合了 Adobe Campaign 所有可能的查询方式。例如，您可以创建和保存限制过滤器。这意味着在定位工作流等的 Query 框中可以使用在通用查询编辑器中创建的用户过滤器。
-
-使用所选表的字段或使用公式可以创建查询。
 
 >[!BEGINTABS]
 
->[!TAB 查询文档]
+>[!TAB 查询数据库]
 
-要了解有关查询的更多信息，请参阅[Campaign v8文档。](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
-
-
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+创建查询的步骤详见&#x200B;**[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
->[!TAB 创建查询]
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
 
-在[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}中了解与查询创建相关的关键步骤。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+>[!TAB 在工作流中添加查询]
+
+在&#x200B;**[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**&#x200B;中了解与工作流上下文中的查询创建相关的关键步骤
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+
+>[!TAB 筛选条件]
+
+要设计查询，必须在查询编辑器中选择筛选条件。 有关可用功能和用例的详情，请参阅&#x200B;**[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
 
 >[!ENDTABS]
 
-![显示查询示例的屏幕截图。](assets/query_recipients_4.png)

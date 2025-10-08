@@ -1,20 +1,21 @@
 ---
 product: campaign
 title: Campaign Classic的帮助和支持选项
-description: 需要Campaign Classic支持？ 您找到了正确的地方！
+description: 需要对Campaign Classic的支持？ 您找到了正确的地方！
 feature: Troubleshooting
 hidefromtoc: true
+hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 64%
+source-wordcount: '653'
+ht-degree: 68%
 
 ---
 
 # Campaign Classic的帮助和支持选项 {#help-support-options}
 
-需要Campaign Classic支持？ 您找到了正确的地方！
+需要对Campaign Classic的支持？ 您找到了正确的地方！
 
 使用我们的常见问题解答、最佳实践、在线资源和支持门户获取支持。您还可以加入 Campaign 社区、询问专家或登记问题。
 
@@ -112,7 +113,7 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 ### SFTP 管理
 
-在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监视其存储容量、管理允许列表上的IP地址和公共SSH密钥。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans)以了解更多信息。
+在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监视其存储容量、管理允许列表上的IP地址和公共SSH密钥。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以了解更多信息。
 
 ### 子域和证书
 
@@ -133,7 +134,7 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-新票证系统已通过[Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}启动。 新系统要求每个用户都有新的个人帐户，并具有正确的权限。如果您发现无法使用 Adobe ID 登录，请通过 Experience League 请求访问，客户关怀团队将尽快为您进行设置。[了解详情](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)
+新票证系统已通过[Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}启动。 新系统要求每个用户都有新的个人帐户，并具有正确的权限。如果您发现无法使用 Adobe ID 登录，请通过 Experience League 提出访问请求，客户关怀团队将尽快为您进行设置。[了解详情](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)
 
 ### 询问专家！
 
@@ -147,4 +148,4 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 通过创建案例，您可以就您在使用 Adobe 产品的过程中遇到的任何问题联系 Adobe 客户支持团队。为帮助您解决问题或排除疑难，Adobe Admin Console 将支持您与 Adobe 客户支持团队聊天。
 
-要在该新系统中记录问题或启动聊天会话，请连接到[Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 请按照[此页面](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html){_blank}中描述的详细过程操作。
+如需在新系统中登记问题或开始聊天会话，请连接到 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。请按照[本页面](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html){_blank}中所述的详细步骤进行操作。
