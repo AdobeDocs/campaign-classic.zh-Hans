@@ -23,7 +23,7 @@ ht-degree: 29%
 
 >[!NOTE]
 >
->要了解有关Adobe Campaign资源管理器的更多信息，请参阅Campaign v8文档中的以下页面：要了解有关[用户界面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}、其[设置](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}或[如何在资源管理器中管理文件夹和视图](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}的更多信息。
+>要了解有关Adobe Campaign资源管理器的更多信息，请参阅Campaign v8文档中的以下页面：要了解有关[用户界面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}、其[设置](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}或[如何在资源管理器中管理文件夹和视图](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}的更多信息。
 
 
 <!--

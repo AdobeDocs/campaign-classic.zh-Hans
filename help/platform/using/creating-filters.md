@@ -22,7 +22,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->要了解有关筛选器及其使用方法的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}。
+>要了解有关筛选器及其使用方法的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}。
 
 
 <!--
