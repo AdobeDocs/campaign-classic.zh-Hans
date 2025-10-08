@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
+source-git-commit: c38150aa8de90f314e1f2a43c6751d4db4059533
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '588'
 ht-degree: 9%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 9%
 
 1. 在&#x200B;**[!UICONTROL Language]**&#x200B;下拉列表中，选择&#x200B;**实例语言**：英语（美国）、英语（英国）、法语或日语。
 
-   美式英语和英国英语之间的差异在[Campaign v8 （控制台）文档] (.https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui)中进行了说明。
+   美式英语和英国英语之间的差异在[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui)中进行了说明。
 
    >[!CAUTION]
    >
