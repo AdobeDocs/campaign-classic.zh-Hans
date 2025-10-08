@@ -2,11 +2,13 @@
 product: campaign
 title: 创建过滤器
 description: 创建过滤器
+hide: true
+hidefromtoc: true
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 3%
+source-wordcount: '122'
+ht-degree: 4%
 
 ---
 
@@ -16,13 +18,7 @@ ht-degree: 3%
 
 在Adobe Campaign树中导航（从主页的&#x200B;**[!UICONTROL Explorer]**&#x200B;菜单）时，数据库中包含的数据将显示在列表中。 可以将这些列表配置为仅显示运算符所需的数据。 然后，可以对过滤的数据启动操作。 筛选器配置允许您从列表&#x200B;**[!UICONTROL dynamically]**&#x200B;中选择数据。 如果修改了数据，则更新过滤的数据。
 
->[!NOTE]
->
->用户界面配置设置在设备级别本地定义。 有时可能有必要清理此数据，尤其是在刷新数据时出现问题的情况下。 为此，请使用&#x200B;**[!UICONTROL File > Clear the local cache]**&#x200B;菜单。
-
->[!NOTE]
->
->要了解有关筛选器及其使用方法的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}。
+在&#x200B;**Campaign v8 （控制台）文档**&#x200B;中了解有关[筛选器及其使用方式的更多信息](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}。
 
 
 <!--

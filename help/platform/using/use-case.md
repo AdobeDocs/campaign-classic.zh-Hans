@@ -3,16 +3,15 @@ product: campaign
 title: 用例
 description: 用例
 feature: Subscriptions, Email, Data Management
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
 hide: true
 hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '264'
 ht-degree: 3%
 
 ---
@@ -36,7 +35,7 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_filter_choose_schema.png)
 
-1. 选择订阅架构(nms：subscription)并单击&#x200B;**[!UICONTROL OK]**。
+1. 选择订阅架构(nms:subscription)并单击&#x200B;**[!UICONTROL OK]**。
 
    ![](assets/s_ncs_user_filter_select_schema.png)
 
@@ -48,7 +47,8 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   您可以访问这些字段，以便在过滤器编辑器的正文中定义过滤器条件。 应用程序过滤器的定义方式与高级过滤器的定义方式完全相同。 请参阅[创建高级筛选器](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
+   您可以访问这些字段，以便在过滤器编辑器的正文中定义过滤器条件。 应用程序过滤器的定义方式与高级过滤器的定义方式完全相同。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+
 
 1. 在订阅上创建一个新的筛选器，以仅显示具有未定义电子邮件格式的订阅：
 

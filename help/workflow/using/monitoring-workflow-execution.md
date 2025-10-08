@@ -6,9 +6,9 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2019'
 ht-degree: 2%
 
 ---
@@ -133,7 +133,7 @@ ht-degree: 2%
 
 ![](assets/wf-notification_error-console.png)
 
-可以配置工作流，使其在发生错误时不暂停并继续执行。为此，请编辑工作流&#x200B;**[!UICONTROL Properties]**，然后在&#x200B;**[!UICONTROL Error management]**&#x200B;部分的&#x200B;**[!UICONTROL In case of error]**&#x200B;字段中选择&#x200B;**[!UICONTROL Ignore]**&#x200B;选项。 随后，您可以指定在流程暂停前可忽略的连续错误的数量。
+可以配置工作流，使其在发生错误时不暂停并继续执行。为此，请编辑工作流&#x200B;**[!UICONTROL Properties]**，然后在&#x200B;**[!UICONTROL Error management]**&#x200B;部分的&#x200B;**[!UICONTROL Ignore]**&#x200B;字段中选择&#x200B;**[!UICONTROL In case of error]**&#x200B;选项。 随后，您可以指定在流程暂停前可忽略的连续错误的数量。
 
 在这种情况下，错误任务将中止。 此模式特别适合用于稍后重新尝试营销活动（定期操作）的工作流。
 
@@ -207,7 +207,7 @@ ht-degree: 2%
 >
 >**isRunning**&#x200B;是为此示例选择的变量名称。 这不是内置变量。
 
-**是**&#x200B;分支中紧跟&#x200B;**[!UICONTROL Test]**&#x200B;之后的活动必须在其&#x200B;**初始化脚本**&#x200B;中设置实例变量：
+**[!UICONTROL Test]**&#x200B;是&#x200B;**分支中紧跟**&#x200B;之后的活动必须在其&#x200B;**初始化脚本**&#x200B;中设置实例变量：
 
 ```
 instance.vars.isRunning = true
@@ -281,7 +281,4 @@ Campaign Classic界面允许您使用预定义的&#x200B;**视图**&#x200B;监�
 
 ![](assets/workflow-monitoring-filter.png)
 
-有关更多信息，请参阅以下章节：
-
-* [创建高级过滤器](../../platform/using/creating-filters.md#creating-an-advanced-filter)
-* [保存筛选器](../../platform/using/creating-filters.md#saving-a-filter)
+有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。

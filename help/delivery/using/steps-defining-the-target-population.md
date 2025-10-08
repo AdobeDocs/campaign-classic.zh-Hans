@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1730'
 ht-degree: 23%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 23%
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. 在&#x200B;**[!UICONTROL Target mapping]**&#x200B;下拉列表中选择目标映射。 Adobe Campaign默认目标映射为&#x200B;**[!UICONTROL Recipients]**，基于&#x200B;**nms：recipient**&#x200B;架构。
+1. 在&#x200B;**[!UICONTROL Target mapping]**&#x200B;下拉列表中选择目标映射。 Adobe Campaign默认目标映射为&#x200B;**[!UICONTROL Recipients]**，基于&#x200B;**nms:recipient**&#x200B;架构。
 
    可以使用其他目标映射，其中一些映射可能与您的特定配置相关。[了解详情](#select-a-target-mapping)。
 
@@ -48,7 +48,7 @@ ht-degree: 23%
 
    默认情况下，提供以下目标类型：
 
-   * **[!UICONTROL Filtering conditions]** ：利用此选项可定义查询并显示结果。 [此部分](../../platform/using/creating-filters.md#creating-an-advanced-filter)中介绍了定义查询的方法。
+   * **[!UICONTROL Filtering conditions]** ：利用此选项可定义查询并显示结果。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
    * **[!UICONTROL Subscribers of an information service]**：通过此选项，可选择新闻稿，收件人必须订阅新闻稿才能成为所创建投放的目标。
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -72,7 +72,7 @@ ht-degree: 23%
    * **[!UICONTROL Recipients included in a folder]** ：利用此选项可定向树的特定文件夹中包含的配置文件。
    * **[!UICONTROL A recipient]** ：通过此选项，您可以从数据库中的用户档案中选择特定收件人。
    * **[!UICONTROL A list of recipients]** ：通过此选项可定向收件人列表。 列表显示在[此部分](../../platform/using/creating-and-managing-lists.md)中。
-   * **[!UICONTROL User filters]** ：利用此选项可访问预配置的筛选器，以将其用作数据库中用户档案的筛选条件。 要查看预配置的筛选条件，请参阅[此部分](../../platform/using/creating-filters.md#saving-a-filter)。
+   * **[!UICONTROL User filters]** ：利用此选项可访问预配置的筛选器，以将其用作数据库中用户档案的筛选条件。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
    * 利用选项&#x200B;**[!UICONTROL Exclude recipients corresponding to this segment]**，可定向不符合所定义的目标条件的收件人。 要使用此选项，请选择相应的框，然后按照之前所述应用目标选择，以排除生成的用户档案。
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -200,7 +200,7 @@ ht-degree: 23%
 
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;图标以定义替换。
 1. 输入要使用的收件人地址，或从列表中选择此地址。
-1. 选择要在验证中使用的配置文件：保存&#x200B;**[!UICONTROL Profile to use]**&#x200B;列中的&#x200B;**[!UICONTROL Random]**&#x200B;值以使用验证中目标的任意配置文件的数据。
+1. 选择要在验证中使用的配置文件：保存&#x200B;**[!UICONTROL Random]**&#x200B;列中的&#x200B;**[!UICONTROL Profile to use]**&#x200B;值以使用验证中目标的任意配置文件的数据。
 
    ![](assets/s_ncs_user_wizard_email_bat_substitute_choose.png)
 
@@ -230,7 +230,7 @@ ht-degree: 23%
 
 ## 选择目标映射 {#select-a-target-mapping}
 
-默认情况下，投放模板以&#x200B;**[!UICONTROL Recipients]**&#x200B;为目标。 因此，它们的目标映射使用&#x200B;**nms：recipient**&#x200B;表的字段。 Adobe Campaign为您的投放提供了其他目标映射，可根据您的需求使用。
+默认情况下，投放模板以&#x200B;**[!UICONTROL Recipients]**&#x200B;为目标。 因此，它们的目标映射使用&#x200B;**nms:recipient**&#x200B;表的字段。 Adobe Campaign为您的投放提供了其他目标映射，可根据您的需求使用。
 
 ![](assets/delivery_select_mapping.png)
 
@@ -238,12 +238,12 @@ ht-degree: 23%
 
 | 名称 | 使用 | 标准架构 |
 |---|---|---|
-| 收件人 | 投放给Adobe Campaign数据库的收件人 | nms：recipient |
-| 访客 | 向通过反向链接（病毒式营销）或社交网络（例如Facebook、X — 以前称为Twitter）收集用户档案的访客投放。 | mns：visitor |
-| 订阅 | 发送给订阅了新闻稿等信息服务的收件人 | nms：subscription |
-| 访客订阅 | 向订阅了信息服务的访客投放 | nms：visitorSub |
-| 服务 | 发布到X帐户或Facebook页面 | nms：service |
-| 运算符 | 交付给Adobe Campaign操作员 | nms：operator |
+| 收件人 | 投放给Adobe Campaign数据库的收件人 | nms:recipient |
+| 访客 | 向通过反向链接（病毒式营销）或社交网络（例如Facebook、X — 以前称为Twitter）收集用户档案的访客投放。 | mns:visitor |
+| 订阅 | 发送给订阅了新闻稿等信息服务的收件人 | nms:subscription |
+| 访客订阅 | 向订阅了信息服务的访客投放 | nms:visitorSub |
+| 服务 | 发布到X帐户或Facebook页面 | nms:service |
+| 运算符 | 交付给Adobe Campaign操作员 | nms:operator |
 | 外部文件 | 通过包含投放所需所有信息的文件投放 | 无链接架构，未输入目标 |
 
 
@@ -251,6 +251,6 @@ ht-degree: 23%
 
 在本视频中，您将了解如何向现有电子邮件添加种子和校样，以及如何进行发送。
 
->[!VIDEO](https://video.tv.adobe.com/v/35508?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

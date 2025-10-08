@@ -5,10 +5,10 @@ description: 解释 Web 窗体
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 1%
+source-wordcount: '1549'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ Adobe Campaign包含用于翻译和管理多语言翻译的工具。 通过此�
 
 首次打开此选项卡时，它将不包含任何数据。 单击&#x200B;**[!UICONTROL Collect the strings to translate]**&#x200B;链接以更新Web应用程序中的字符串。
 
-Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200B;选项卡中定义的字段和字符串的标签：HTML块、Javascript等。 静态元素在Web窗体[&#128279;](static-elements-in-a-web-form.md)的静态元素中详细。
+Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200B;选项卡中定义的字段和字符串的标签：HTML块、Javascript等。 静态元素在Web窗体[的](static-elements-in-a-web-form.md)静态元素中详细。
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -70,13 +70,13 @@ Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200
 
 ### 筛选字符串 {#filtering-strings}
 
-默认情况下，将显示Web应用程序的每种翻译语言。 有两种默认筛选器：语言和状态。 单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL By language or status]**&#x200B;以显示匹配的下拉框。 您还可以创建高级过滤器。 有关详细信息，请参见[此页面](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
+默认情况下，将显示Web应用程序的每种翻译语言。 有两种默认筛选器：语言和状态。 单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL By language or status]**&#x200B;以显示匹配的下拉框。 您还可以创建高级过滤器。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
 转到&#x200B;**[!UICONTROL Language]**&#x200B;下拉框以选择翻译语言。
 
-要仅显示未翻译的字符串，请在&#x200B;**[!UICONTROL Status]**&#x200B;下拉框中选择&#x200B;**[!UICONTROL To translate]**。 您还可以仅显示已翻译或已批准的字符串。
+要仅显示未翻译的字符串，请在&#x200B;**[!UICONTROL To translate]**&#x200B;下拉框中选择&#x200B;**[!UICONTROL Status]**。 您还可以仅显示已翻译或已批准的字符串。
 
 ### 翻译字符串 {#translating-strings}
 

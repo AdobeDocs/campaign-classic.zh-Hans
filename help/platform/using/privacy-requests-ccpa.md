@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 98%
+source-wordcount: '569'
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 98%
 
 联系人可以决定不允许通过您的系统将其个人信息出售给第三方。在 Adobe Campaign 中，您将能够存储和跟踪此信息。
 
-为使此功能正常工作，您需要扩展用户档案表并添加 **[!UICONTROL Opt-Out for CCPA]** 字段。
+为使此功能正常工作，您需要扩展轮廓表并添加 **[!UICONTROL Opt-Out for CCPA]** 字段。
 
 >[!IMPORTANT]
 >
@@ -39,11 +39,11 @@ ht-degree: 98%
 
 如果您使用自定义收件人表，也需要执行此操作。
 
-有关如何创建新字段的更多详细信息，请参阅[模式版文档](../../configuration/using/about-schema-edition.md)。
+有关如何创建新字段的更多详细信息，请参阅[架构版文档](../../configuration/using/about-schema-edition.md)。
 
 >[!IMPORTANT]
 >
->修改模式是一项敏感操作，必须仅由专家用户执行。
+>修改架构是一项敏感操作，必须仅由专家用户执行。
 
 1. 转至&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Add new fields]**，选择 **[!UICONTROL Recipients]** 作为 **[!UICONTROL Document type]** 并单击 **[!UICONTROL Next]**。有关向表单添加字段的更多信息，请参阅[此小节](../../configuration/using/new-field-wizard.md)。
 
@@ -53,7 +53,7 @@ ht-degree: 98%
 
    ![](assets/privacy-ccpa-2.png)
 
-   这将扩展或创建 **[!UICONTROL Recipient (cus)]** 模式。单击它可验证该字段是否已正确添加。
+   这将扩展或创建 **[!UICONTROL Recipient (cus)]** 架构。单击它可验证该字段是否已正确添加。
 
    ![](assets/privacy-ccpa-3.png)
 
@@ -73,11 +73,11 @@ ht-degree: 98%
 
 要填写值，可以使用以下几种方法：
 
-* 通过编辑收件人的详细信息，使用 Campaign 的界面
+* 通过编辑收件人的详细信息，使用Campaign的界面
 * 使用 API
 * 通过数据导入工作流
 
-然后，您应确保永远不要向已选择退出的任何第三方销售用户档案的个人信息。
+然后，您应确保永远不要向已选择退出的任何第三方销售轮廓的个人信息。
 
 1. 要更改选择退出状态，请转到 **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** 并选择收件人。在 **[!UICONTROL General]** 选项卡中，您会看到在上一节中配置的字段。
 
@@ -87,6 +87,7 @@ ht-degree: 98%
 
    ![](assets/privacy-ccpa-6.png)
 
-1. 您可以单击该列，以根据选择退出信息对收件人进行排序。您还可以创建一个筛选器以仅显示已选择退出的收件人。有关创建筛选器的更多信息，请参阅[此小节](../../platform/using/creating-filters.md)。
+1. 您可以单击该列，以根据选择退出信息对收件人进行排序。您还可以创建一个筛选器以仅显示已选择退出的收件人。有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+
 
    ![](assets/privacy-ccpa-7.png)

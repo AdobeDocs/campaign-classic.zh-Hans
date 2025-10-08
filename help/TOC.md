@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 97%
+source-wordcount: '2570'
+ht-degree: 96%
 
 ---
 
@@ -37,6 +37,7 @@ ht-degree: 97%
    + [浏览和自定义列表 — 隐藏](platform/using/adobe-campaign-ui-lists.md)
    + [枚举 — 隐藏](platform/using/managing-enumerations.md)
    + [Campaign 连接器](platform/using/about-connectors.md)
+   + [在Campaign中创建查询](platform/using/about-queries-in-campaign.md)
    + 常见问题解答 {#faq}
       + [最常见问题](platform/using/common-questions.md)
       + [全局概念](platform/using/faq-key-concepts.md)
@@ -84,10 +85,9 @@ ht-degree: 97%
          + [导入和导出最佳实践](platform/using/import-export-best-practices.md)
          + [SFTP 服务器最佳实践和故障排除](platform/using/sftp-server-usage.md)
    + 筛选数据 {#filtering-data}
-      + [筛选选项](platform/using/filtering-options.md)
-      + [创建过滤器](platform/using/creating-filters.md)
-      + [用例](platform/using/use-case.md)
-   + [在Campaign中创建查询](platform/using/about-queries-in-campaign.md)
+      + [筛选选项 — 隐藏](platform/using/filtering-options.md)
+      + [创建过滤器 — 隐藏](platform/using/creating-filters.md)
+      + [用例 — 隐藏](platform/using/use-case.md)
    + [创建查询的步骤 — 隐藏](platform/using/steps-to-create-a-query.md)
    + [定义筛选条件 — 隐藏](platform/using/defining-filter-conditions.md)
    + 权限 {#permissions}
@@ -385,7 +385,7 @@ ht-degree: 97%
       + [同步用户档案 — 隐藏](integrations/using/synchronizing-profiles.md)
       + [同步受众 — 隐藏](integrations/using/synchronizing-audiences.md)
       + [同步Web应用程序 — 隐藏](integrations/using/synchronizing-web-applications.md)
-      + [&#x200B; [!DNL ACS Connector]  — 隐藏疑难解答](integrations/using/troubleshooting-the-acs-connector.md)
+      + [ [!DNL ACS Connector]  — 隐藏疑难解答](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflow-automation.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
    + 工作流快速入门 {#introduction}
