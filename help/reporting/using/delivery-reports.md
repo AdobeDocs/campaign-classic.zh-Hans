@@ -5,10 +5,10 @@ description: 投放报告
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '1461'
-ht-degree: 8%
+source-wordcount: '1467'
+ht-degree: 9%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 8%
 * **[!UICONTROL Distinct opens for the population reached]** ：估计已打开消息至少一次的目标收件人的数量。 由于必须打开电子邮件才能单击链接，因此会考虑对跟踪URL的点击量。
 * **[!UICONTROL Sum of opens for the population reached]** ：估计目标收件人打开的总数。
 * **[!UICONTROL Clicks on opt-out link]** ：取消订阅链接的点击次数。
-* **[!UICONTROL Clicks on the mirror page link]** ：单击镜像页面链接的次数。 要考虑的因素，必须在投放助手（跟踪的URL）中定义链接。 请参阅此[页面](../../delivery/using/about-delivery-monitoring.md)。
+* **[!UICONTROL Clicks on the mirror page link]** ：单击镜像页面链接的次数。 要考虑的因素，必须在投放助手（跟踪的URL）中定义链接。 请参见[此页面](../../delivery/using/about-delivery-monitoring.md)。
 * **[!UICONTROL Estimation of forwards]** ：目标收件人转发的电子邮件数量的估计。 此值计算方式为减去点击电子邮件的不同人员的数量和不同收件人的数量。
 
   >[!NOTE]
@@ -86,7 +86,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->此报告中显示的域名在多维数据集级别使用的明细列表中定义。 要更改、添加或删除默认域，请编辑&#x200B;**[!UICONTROL Domains]**&#x200B;明细列表并修改值和别名。 有关详细信息，请参阅[此部分](../../platform/using/managing-enumerations.md)。 **[!UICONTROL Others]**&#x200B;类别包括不属于明细列表任何值的域名。
+>此报告中显示的域名在多维数据集级别使用的明细列表中定义。 要更改、添加或删除默认域，请编辑&#x200B;**[!UICONTROL Domains]**&#x200B;明细列表并修改值和别名。 在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。 **[!UICONTROL Others]**&#x200B;类别包括不属于明细列表任何值的域名。
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -123,7 +123,7 @@ ht-degree: 8%
 
 ![](assets/s_ncs_user_url_report.png)
 
-您可以通过选择：要显示的得分图表、时间过滤器（自操作启动以来、启动后的前6小时等）来配置此报告的内容 以及数据显示模式（按标签、按URL、按类别）。 单击&#x200B;**[!UICONTROL Refresh]**&#x200B;确认您的选择。
+您可以通过选择：要显示的得分图、时间过滤器（自操作启动以来、启动后的前6小时内等）和数据显示模式（按标签、按URL、按类别）来配置此报告的内容。 单击&#x200B;**[!UICONTROL Refresh]**&#x200B;确认您的选择。
 
 以下比率显示在报表的上半部分：
 
@@ -175,7 +175,7 @@ ht-degree: 8%
 
 ## 热门点击 {#hot-clicks}
 
-此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。个性化块退订链接、镜像页面链接和优惠链接将计入总累计点击次数，但不会显示在报告中。
+此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。个性化块退订链接、镜像页面链接和产品建议链接将计入总累计点击次数，但不会显示在报告中。
 
 >[!NOTE]
 >

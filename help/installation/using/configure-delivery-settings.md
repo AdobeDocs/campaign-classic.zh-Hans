@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '484'
 ht-degree: 5%
 
 ---
@@ -51,7 +51,7 @@ MTA模块充当用于SMTP广播（端口25）的本机邮件传输代理。
 
 ## MTA子进程 {#mta-child-processes}
 
-可以控制子进程（默认为2）的数量，以便根据服务器的CPU功率和可用的网络资源优化广播性能。 此配置将在每台计算机上的MTA配置的&#x200B;**`<master>`**&#x200B;部分中进行。
+可以控制子进程（默认为2）的数量，以便根据服务器的CPU功率和可用网络资源优化广播性能。 此配置将在每台计算机上的MTA配置的&#x200B;**`<master>`**&#x200B;部分中进行。
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
@@ -69,11 +69,11 @@ MTA模块充当用于SMTP广播（端口25）的本机邮件传输代理。
 
 要执行此操作，请应用以下步骤：
 
-1. 在&#x200B;**serverConf.xml**&#x200B;文件的&#x200B;**`<ipaffinity>`**&#x200B;部分中输入相关性。
+1. 在&#x200B;**`<ipaffinity>`** serverConf.xml **文件的**&#x200B;部分中输入相关性。
 
    一个关联可以有多个不同的名称：要分隔它们，请使用&#x200B;**；**&#x200B;字符。
 
-   例如：
+   示例：
 
    ```
     IPAffinity name="mid.Server;WWserver;local.Server">
@@ -88,7 +88,8 @@ MTA模块充当用于SMTP广播（端口25）的本机邮件传输代理。
 
    >[!NOTE]
    >
-   >[此文档](../../platform/using/managing-enumerations.md)中详细列出了枚举。
+   >在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+
 
    然后，您可以选择要使用的关联，如下面的分类所示：
 

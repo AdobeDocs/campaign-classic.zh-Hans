@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 98b7c827-f31d-46a6-a28d-40a78a4b4248
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '175'
 ht-degree: 3%
 
 ---
@@ -46,6 +46,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->了解有关[枚举管理](../../platform/using/managing-enumerations.md)中明细列表的详细信息。
+>在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+
 
 

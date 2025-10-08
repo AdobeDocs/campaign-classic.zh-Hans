@@ -6,7 +6,7 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
 source-wordcount: '2559'
 ht-degree: 99%
@@ -39,16 +39,16 @@ ht-degree: 99%
    + [Campaign 连接器](platform/using/about-connectors.md)
    + 常见问题解答 {#faq}
       + [最常见问题](platform/using/common-questions.md)
-         + [全局概念](platform/using/faq-key-concepts.md)
-         + [内部版本升级](platform/using/faq-build-upgrade.md)
-         + [隐私](platform/using/privacy-faq.md)
-         + [受众](platform/using/faq-audiences.md)
-         + [设计各种邮件](platform/using/faq-designing.md)
-         + [发送邮件](platform/using/faq-messages.md)
-         + [工作流](platform/using/faq-workflows.md)
-         + [配置](platform/using/faq-campaign-config.md)
-         + [报告](platform/using/faq-reporting.md)
-         + [开发](platform/using/faq-developers.md)
+      + [全局概念](platform/using/faq-key-concepts.md)
+      + [内部版本升级](platform/using/faq-build-upgrade.md)
+      + [隐私](platform/using/privacy-faq.md)
+      + [受众](platform/using/faq-audiences.md)
+      + [设计各种邮件](platform/using/faq-designing.md)
+      + [发送邮件](platform/using/faq-messages.md)
+      + [工作流](platform/using/faq-workflows.md)
+      + [配置](platform/using/faq-campaign-config.md)
+      + [报告](platform/using/faq-reporting.md)
+      + [开发](platform/using/faq-developers.md)
    + [词汇表](platform/using/ac-glossary.md)
    + 隐私 {#privacy}
       + [隐私和同意](platform/using/privacy-and-recommendations.md)
@@ -382,7 +382,7 @@ ht-degree: 99%
       + [配置与  [!DNL Adobe Target] 的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
    + ACS 连接器 {#acs-connector}
-      + [&#x200B; [!DNL ACS Connector] 入门](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [ [!DNL ACS Connector] 入门](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [同步轮廓](integrations/using/synchronizing-profiles.md)
       + [同步受众](integrations/using/synchronizing-audiences.md)
       + [同步 Web 应用程序](integrations/using/synchronizing-web-applications.md)

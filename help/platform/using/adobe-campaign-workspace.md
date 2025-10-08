@@ -6,16 +6,14 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 31%
+source-wordcount: '858'
+ht-degree: 25%
 
 ---
 
 # Adobe Campaign 工作区{#adobe-campaign-workspace}
-
-
 
 ## 探索Adobe Campaign界面 {#about-adobe-campaign-interface}
 
@@ -31,7 +29,7 @@ ht-degree: 31%
 >
 >实例上可用的Adobe Campaign功能取决于安装的模块和加载项。 根据您的权限及具体配置，部分功能可能无法使用。
 >
->在安装任何模块或插件之前，您需要查看许可协议或与Adobe客户经理联系。
+>在安装任何模块或加载项之前，您需要查看许可协议或联系Adobe客户经理。
 
 ### 控制台和 Web 访问 {#console-and-web-access}
 
@@ -61,7 +59,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 * 德语
 * 日语
 
-您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关更多信息，请参阅此[&#128279;](../../platform/using/adobe-campaign-workspace.md#date-and-time)章节。
+您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关详细信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
 
 有关如何创建实例的详细信息，请参阅此[页面](../../installation/using/creating-an-instance-and-logging-on.md)。
 
@@ -81,7 +79,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 每个功能包括一组基于任务相关需求和使用上下文的功能。 例如，通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;链接，您可以访问收件人列表、订阅服务、现有的定位工作流以及创建这些元素的快捷方式。
 
-这些列表可通过&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;界面左侧部分的&#x200B;**[!UICONTROL Lists]**&#x200B;链接获得。
+这些列表可通过&#x200B;**[!UICONTROL Lists]**&#x200B;界面左侧部分的&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;链接获得。
 
 ![](assets/recipient_list_overview.png)
 
@@ -101,75 +99,42 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 您可以使用屏幕左侧&#x200B;**[!UICONTROL Create]**&#x200B;部分中的快捷方式创建新元素（投放、Web应用程序、工作流等）。 使用列表上方的&#x200B;**[!UICONTROL Create]**&#x200B;按钮向列表添加新元素。
 
-例如，在投放页面上，使用&#x200B;**[!UICONTROL Create]**&#x200B;按钮创建新投放。
+例如，在投放页面上，使用 **[!UICONTROL Create]** 按钮创建新的投放。
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
 
-## 格式和单位 {#formats-and-units}
+## 使用Adobe Campaign Explorer {#using-adobe-campaign-explorer}
 
-### 日期和时间 {#date-and-time}
+可通过工具栏图标访问Adobe Campaign资源管理器。 它可用于访问 Adobe Campaign、所有 Adobe Campaign 功能、配置屏幕以及部分平台元素的更详细视图。
 
-Adobe Campaign Classic 实例的语言将会影响日期和时间格式。
+要了解有关Adobe Campaign Explorer的更多信息，请参阅Campaign v8（控制台）文档中的以下页面：
 
-安装Campaign时会选择语言，此后无法更改。 您可以选择：英语（美国）、英语（英语）、法语、德语或日语。 有关详细信息，请参见[此页面](../../installation/using/creating-an-instance-and-logging-on.md)。
+* [Campaign用户界面概述](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
-美式英语和英式英语的主要差别如下：
+* [Campaign UI设置](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-<table> 
- <thead> 
-  <tr> 
-   <th> 格式<br /> </th> 
-   <th> 英语（美国）<br /> </th> 
-   <th> 英语(EN)<br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-   <td> 日期<br /> </td> 
-   <td> 星期从星期日开始<br /> </td> 
-   <td> 星期从星期一<br />开始 </td> 
-  </tr> 
-  <tr> 
-   <td> 简短日期<br /> </td> 
-   <td> <p>%2M/%2D/%4Y</p><p><strong>示例：09/25/2018</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y</p><p><strong>示例：25/09/2018</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td> 具有时间的简短日期<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>例如：2018年9月25日10:47:25下午</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>例如： 2018年9月25日22:47:25</strong></p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [在资源管理器中管理文件夹和视图](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}。
 
-### 在枚举中添加值 {#add-values-in-an-enumeration}
 
-通过使用下拉列表的输入字段，您可以输入枚举值，该值可以存储下来，然后作为下拉列表中的选项提供。 例如，在收件人用户档案的&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL City]**&#x200B;字段中，您可以输入London。 当您按Enter键确认此值时，会出现一条消息，询问您是否要为与该字段关联的枚举保存此值。
+## 使用列表 {#manage-and-customize-lists}
 
-![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
-
-如果单击&#x200B;**[!UICONTROL Yes]**，此值将在相关字段的组合框中可用（在本例中为： **[!UICONTROL London]**）。
+在Campaign客户端控制台中，数据显示在列表中。 您可以根据自己的需求调整这些列表。 例如，您可以添加列、过滤数据、计算记录、保存和共享设置。
 
 >[!NOTE]
 >
->枚举（也称为“明细列表”）由管理员通过&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;部分管理。 有关详细信息，请参阅[管理枚举](../../platform/using/managing-enumerations.md)。
+>要了解如何在Adobe Campaign中管理和自定义列表，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}。
 
-### 默认单位 {#default-units}
+## 管理枚举{#managing-enumerations}
 
-在表示一段时间的字段中（例如，某次投放的资源的有效期、已批准的任务期限等），可采用以下&#x200B;**单位**&#x200B;表示该值：
+枚举（也称为明细列表）是预定义的值列表，可用于填写某些字段。 枚举有助于标准化字段值，使数据输入更加一致并简化查询。
 
-* **[!UICONTROL s]**&#x200B;表示秒，
-* **[!UICONTROL mn]**&#x200B;分钟，
-* **[!UICONTROL h]**&#x200B;表示小时，
-* **[!UICONTROL d]**&#x200B;天。
+定义后，值将显示在下拉列表中。 可以直接选择值，也可以使用预测输入输入输入值，这将会建议并完成匹配条目。 某些字段包括预定义枚举，如果需要，可以创建其他枚举。
 
-![](assets/enter_unit_sample.png)
+在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 ## 教程视频 {#video}
 
 本视频介绍Campaign Classic工作区。
 
->[!VIDEO](https://video.tv.adobe.com/v/39534?quality=12&captions=chi_hans)
-
-[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
