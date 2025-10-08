@@ -88,7 +88,7 @@ MTA模块充当用于SMTP广播（端口25）的本机邮件传输代理。
 
    >[!NOTE]
    >
-   >在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+   >在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 
    然后，您可以选择要使用的关联，如下面的分类所示：

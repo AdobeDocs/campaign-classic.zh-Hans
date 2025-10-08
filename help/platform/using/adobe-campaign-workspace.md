@@ -59,7 +59,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 * 德语
 * 日语
 
-您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关详细信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
+您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关详细信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
 
 有关如何创建实例的详细信息，请参阅此[页面](../../installation/using/creating-an-instance-and-logging-on.md)。
 
@@ -110,7 +110,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 要了解有关Adobe Campaign Explorer的更多信息，请参阅Campaign v8（控制台）文档中的以下页面：
 
-* [Campaign用户界面概述](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Campaign用户界面概述](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Campaign UI设置](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -131,7 +131,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 定义后，值将显示在下拉列表中。 可以直接选择值，也可以使用预测输入输入输入值，这将会建议并完成匹配条目。 某些字段包括预定义枚举，如果需要，可以创建其他枚举。
 
-在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 ## 教程视频 {#video}
 

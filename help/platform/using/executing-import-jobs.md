@@ -87,7 +87,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
    * **[!UICONTROL Do not update enumerations]**
 
-     选择此选项可避免扩充数据库中的枚举值列表。 在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+     选择此选项可避免扩充数据库中的枚举值列表。 在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 
 * **[!UICONTROL Variables]**&#x200B;选项卡

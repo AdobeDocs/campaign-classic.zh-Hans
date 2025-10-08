@@ -72,4 +72,4 @@ ht-degree: 10%
    * **[!UICONTROL Opt-out]** ：将此URL视为选择退出或退订URL。
    * **[!UICONTROL Mirror page]** ：认为此URL是镜像页面URL。
 
-1. 此外，您还可以在&#x200B;**[!UICONTROL Category]**&#x200B;列的下拉列表中选择每个跟踪URL的类别。 这些类别可以显示报表，例如在&#x200B;**[!UICONTROL URLs and click streams]**&#x200B;中（请参阅[此部分](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)）。 类别在特定枚举中定义。 在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+1. 此外，您还可以在&#x200B;**[!UICONTROL Category]**&#x200B;列的下拉列表中选择每个跟踪URL的类别。 这些类别可以显示报表，例如在&#x200B;**[!UICONTROL URLs and click streams]**&#x200B;中（请参阅[此部分](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)）。 类别在特定枚举中定义。 在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
