@@ -146,7 +146,7 @@ Adobe Campaign主键是所有现成表自动生成的id，对于自定义表可�
 
 默认情况下，自定义序列的值介于+1,000和+2.1BB之间。 从技术上讲，通过启用负id可以获得整个4BB范围。 应谨慎使用此变量，当从负数转为正数时，将丢失一个id：Adobe Campaign通常会在生成的SQL查询中忽略记录0。
 
-有关序列消耗的详细信息，请观看[此视频](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
+有关序列消耗的详细信息，请观看[此视频](https://helpx.adobe.com/cn/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
 
 ## 索引 {#indexes}
 
