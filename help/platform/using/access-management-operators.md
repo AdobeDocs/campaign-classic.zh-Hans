@@ -7,7 +7,7 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
+source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->这些过程仅适用于使用旧版本机身份验证连接到Campaign的操作员。 从Campaign Classic v7.3.1开始，所有操作员都应使用[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}连接到Campaign。 [了解详情](../../technotes/using/migrate-users-to-ims.md)
+>这些过程仅适用于使用&#x200B;**旧版本机身份验证**&#x200B;连接到Campaign的操作员。 从Campaign Classic v7.3.1开始，所有操作员都应使用[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}连接到Campaign。 [了解详情](../../technotes/using/migrate-users-to-ims.md)
 >
 >使用Adobe ID连接到Campaign时，以下部分不再适用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hans){target="_blank"}以了解如何使用Adobe IMS设置权限。
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->这些步骤仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证，请参阅[此文档](https://helpx.adobe.com/cn/enterprise/using/manage-users-individually.html#_blank)。
+>这些步骤仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证，请参阅[此文档](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank)。
 
 操作员是具有登录和执行操作权限的Adobe Campaign用户。
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 >
 >操作员需要链接到安全区域才能登录到实例。 有关Adobe Campaign中安全区域的详细信息，请参阅[此页面](../../installation/using/security-zones.md)。
 
-用户还可以使用其Adobe ID直接连接到Adobe Campaign。 有关详细信息，请参见此 [&#x200B; 页面](../../integrations/using/about-adobe-id.md)。
+用户还可以使用其Adobe ID直接连接到Adobe Campaign。 有关详细信息，请参见此 [ 页面](../../integrations/using/about-adobe-id.md)。
 
 ## 创建运算符 {#creating-an-operator}
 
