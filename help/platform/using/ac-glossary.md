@@ -795,7 +795,7 @@ Personalization变量是投放中的代码段，可根据收件人信息向不�
 
 预定义过滤器是已保存以供重复使用的查询。 使用预定义过滤器可以提高生产效率（因为它们只创建一次），有助于建立一致性（因为所有营销人员都可以使用它们）并降低营销人员所需的技能，因为他们可以使用他们自己可能无法创建的代码或逻辑。
 
-有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 +++
 
 <!--

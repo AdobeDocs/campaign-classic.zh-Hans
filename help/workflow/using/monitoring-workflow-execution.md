@@ -281,4 +281,4 @@ Campaign Classic界面允许您使用预定义的&#x200B;**视图**&#x200B;监�
 
 ![](assets/workflow-monitoring-filter.png)
 
-有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
